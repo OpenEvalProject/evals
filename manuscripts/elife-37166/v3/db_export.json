@@ -1,0 +1,1635 @@
+{
+  "submission": {
+    "id": "52812f8b-e7bc-44cf-8295-047e4e585f6e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:04:33.581227Z",
+    "updated_at": "2025-12-02T02:04:33.581227Z"
+  },
+  "content": [
+    {
+      "id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "submission_id": "52812f8b-e7bc-44cf-8295-047e4e585f6e",
+      "content_type": "manuscript",
+      "content_text": "# MAPLE (modular automated platform for large-scale experiments), a robot for integrated organism-handling and phenotyping\n\n## Authors\n\n- Tom Alisch<sup>1</sup> ([ORCID: 0000-0001-7884-7031](https://orcid.org/0000-0001-7884-7031))\n- James D Crall<sup>1</sup> ([ORCID: 0000-0002-8981-3782](https://orcid.org/0000-0002-8981-3782))\n- Albert B Kao<sup>1</sup>\n- Dave Zucker<sup>4</sup> ([ORCID: 0000-0003-0259-6293](https://orcid.org/0000-0003-0259-6293))\n- Benjamin L de Bivort<sup>1</sup> ([ORCID: 0000-0001-6165-7696](https://orcid.org/0000-0001-6165-7696)) \u2020\n\n### Affiliations\n\n1. Department of Organismic and Evolutionary Biology Harvard University Cambridge United States\n2. Center for Brain Science Harvard University Cambridge United States\n3. Planetary Health Alliance Harvard University Cambridge United States\n4. FlySorter LLC Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLab organisms are valuable in part because of large-scale experiments like screens, but performing such experiments over long time periods by hand is arduous and error-prone. Organism-handling robots could revolutionize large-scale experiments in the way that liquid-handling robots accelerated molecular biology. We developed a modular automated platform for large-scale experiments (MAPLE), an organism-handling robot capable of conducting lab tasks and experiments, and then deployed it to conduct common experiments in Saccharomyces cerevisiae, Caenorhabditis elegans, Physarum polycephalum, Bombus impatiens, and Drosophila melanogaster. Focusing on fruit flies, we developed a suite of experimental modules that permitted the automated collection of virgin females and execution of an intricate and laborious social behavior experiment. We discovered that (1) pairs of flies exhibit persistent idiosyncrasies in social behavior, which (2) require olfaction and vision, and (3) social interaction network structure is stable over days. These diverse examples demonstrate MAPLE\u2019s versatility for automating experimental biology.\n\n## Introduction\n\nGenetic model organisms are used to advance our biological understanding in numerous areas including disease and its treatment, basic cell biology, neuroscience and behavior. Species like Saccharomyces cerevisiae, Caenorhabditis elegans, and Drosophila melanogaster are desirable lab model organisms due to their rapid reproduction, ease of rearing, and especially their deep genetic toolkits comprising strains with varying genotypes and transgenic alterations that permit rapid, mechanistic inquiries. To take advantage of these toolkits, screen experiments quantify the phenotypes of hundreds (Vitaterna et al., 1994), thousands (Kain et al., 2012), tens of thousands (Ayroles et al., 2015; Buchanan et al., 2015; Churgin et al., 2017) or even hundreds of thousands of individual animals (Robie et al., 2017). With the ongoing improvement and widespread adoption of high-performance machine vision phenotyping (Branson et al., 2009; Dankert et al., 2009; Kabra et al., 2013; Kimura et al., 2014), the time needed to manually handle experimental animals remains the bottleneck limiting data collection.\n\nThe advent of liquid-handling robots has radically changed the face of molecular biology, enabling techniques and experiments that had long been imagined, but were too complex, lengthy, or tedious to have been previously realized. But there are no comparable systems for handling of experimental organisms that are larger than\u00a0~1 mm or cannot be suspended in liquid. There are large-scale systems that handle adult flies in vials, in the form of \u2018fly flipping\u2019 robots. However, these take up a whole room, generally in a core facility, and cost hundreds of thousands of dollars to purchase and maintain, and are therefore inaccessible to most labs. And while there are many examples of high-throughput phenotypic assays in Drosophila (Branson et al., 2009; Kabra et al., 2013; Kain et al., 2012; Buchanan et al., 2015; Geissmann et al., 2017), the systems that are not single-purpose still require human intervention to load and unload individual flies. Some researchers have used flies' natural tendency to climb up (negative gravitaxis) to isolate individuals for behavioral analysis (von Reyn et al., 2014), imaging (Medici et al., 2015), or microsurgery (Savall et al., 2015). But dependence on this particular behavior fundamentally caps throughput, inadvertently selects for a subset of a population, and limits eligible genotypes. An alternative approach, actively conveying flies with airflow (MacMillan and Hughson, 2014) permits moving animals on demand, and opens the door for increased throughput. The dearth of instruments for automating Drosophila experiments is representative of the situation for many other lab organisms, such as yeast and C. elegans, where there is no standard platform for automated handling of the organisms themselves.\n\nHere, we present an automated platform that is high-throughput and flexible enough to assist in conducting diverse experimental protocols in Drosophila and other species. Due to its modular design, the system can automate diverse assays in a wide variety of organisms (including yeast, C. elegans, the slime mold Physarum polycephalum, and the bumblebee Bombus impatiens, an assortment chosen to demonstrate the platform\u2019s versatility). For fruit flies, where we developed significant capabilities, this instrument can conduct numerous protocols, including loading of individual fruit flies for circadian rhythm (Pfeiffenberger et al., 2010; Geissmann et al., 2017) experiments, or aiding with lab chores like collecting virgin female flies for genetic crosses or passaging individual flies in controlled culture conditions for longevity assays. The physical platform of this instrument integrates animal husbandry and phenotyping, permitting end-to-end experimental protocols. Its low cost (~$3,500), programmability, and scalability permit large-scale experiments that take advantage of the many benefits lab model organisms offer, such as huge fly genetic libraries containing thousands of lines (Jenett et al., 2012; Thibault et al., 2004). After demonstrating MAPLE\u2019s breadth of utility across species, we highlight the depth of its capabilities with two particularly time- and manual labor-intensive fruit fly tasks: rapidly collecting virgin females, and large-scale longitudinal measurement of fly social networks and behavior. The latter experiment reveals previously unknown stability of Drosophila social interactions, and confirms that both olfaction and vision are required for dyad-specific social interactions in this context.\n\n## Results\n\n### MAPLE physical implementation\n\nWith the high level goals of modularity, scalability, and automatability in mind, we designed the MAPLE system with the following design constraints: (1) It features a large, flat experimental workspace with room for multiple flexibly-configurable experimental modules. (2) This workspace is physically open for user convenience, and transparent on the top and bottom for in situ optical phenotyping. (3) Multiple end-effectors can move throughout the workspace to handle organisms, capture images, and manipulate experimental modules. (4) It features failsafe mechanisms so that users can leave it unattended without worrying that it would damage itself or experimental modules. (5) It is relatively inexpensive and scalable.\n\nMAPLE (Figure 1, Figure 1\u2014figure supplement 1A) was built using extruded aluminum rails to support x-, y-, and z-carriages mounted on linear rails in a Cartesian configuration. We employed the CoreXY system (Moyer, 2012), which reduces the mass of the moving part of the X/Y gantry by fixing the stepper motors on the frame. (However, for the speeds at which we run MAPLE, which are roughly 80% as fast as human hands conducting experiments (Video 1), mounting the y-axis stepper motor on the x-axis carriage would likely not reduce performance.)\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of MAPLE with workspace dimensions indicated and an expanded schematic of the end effectors.\u00a0Colors indicate different robotic systems. (B\u2013F) Demonstrations of MAPLE experiments in yeast, C. elegans, Physarum polycephalum and fruit flies. (B1) Yeast colonies were automatically picked and transferred to fresh media plates in a pattern (B2), and then streaked to grow colonies from single cells (B2, B3). B3 is an image of GFP fluorescence in the colonies demarcated by the inset box of B2. (C1) Worm locomotion on standard culture plates with OP50 bacterial lawns was captured at 1 Hz using MAPLE\u2019s camera effector. (C2) Cropped view of one such image showing individual worms. (C3) Tracks of multiple worm motion across a plate over 8.5 min, showing the field of view MAPLE\u2019s camera and potential for motion phenotyping. (D1) Time-lapse movies of the movement of Physarum plasmodia were recorded in parallel for nine cultures at imaging rates of 0.017 Hz (one image/min) for 12 hr. (D2) Composite of plasmodia morphologies approximately 9.6 hr into the 12 hr recording. (D3) Time-coded image of the growth of a single plasmodium, overlaying images of the plasmodium over time in colors cycling over hues. (E1) Representative MAPLE procedure for moving fruit flies between a growth/storage module (left) and a phenotyping module (right) using the organism manipulator. (E2) Photo of flies in a FlyPlate single-housing storage module. See description below. (E3) Photo of flies in a social arena phenotyping module. See description below. (F) Bee Experimental Ethology Colony Hardware (BEECH): a MAPLE-derived robotic platform for imaging bumblebee behavior. BEECH was used to record bumblebee behavior in multiple colonies over long periods of time (up to 7 days). The end effectors of this robot were IR-sensitive cameras (right) for recording digital video of bees behaving. Bees were housed in acrylic colony boxes (G1) with a dark nest compartment and circadian-lit foraging compartment where they, respectively, reared developing young and collected nectar and pollen from feeders. (G2) Image acquired from the BEECH IR camera showing automatically tracked bees in the nest chamber. Inset box expanded in (G3) to illustrate workers (red ellipses), the queen (magenta ellipse), and nest structure (yellow overlay), all of which are tracked in BEECH data sets. This figure is also a target for an augmented reality view of MAPLE. Print the figure in portrait orientation on letter paper, place the printout on a horizontal surface like a bench or desk, and view it in scan mode in the \u2018Augment\u2019 mobile app to interact with a to-scale rendering of MAPLE.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** MAPLE has two major components.\u00a0First, animal-handling is mediated by a five-axis Cartesian robot with three end effectors on independent z-axes. Two of these, the object manipulator and the organism manipulator use pneumatics to manipulate module components like lids and individual flies, respectively. Secondly, handled animals move through an experimental workspace which contains reconfigurable experimental modules, and can interface with devices outside of MAPLE, e.g., the Fly Dispenser, using adapter modules.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** To-scale illustration of the MAPLE experimental workspace.The workspace plate contains cable pass-throughs (large circular cutouts) and evenly spaced peg holes for registering it with the MAPLE floor and frame. This example workspace is configured for a social arena array experiment, wherein flies can be brought into MAPLE from the Fly Dispenser, through the Fly Dispenser adapter, into the FlyPlate, into the social arena array for behavioral phenotyping, and then potentially back into the FlyPlate, as we did in the longitudinal social interaction network persistence experiments (Figure 5G\u2013J).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Close-up photograph of the fly tip for the organism manipulator end effector, showing the luer socket fitting (white), pneumatic opening (steel, bottom) and bellows-style silicone cuff, which provides a better seal against multi-position loading ports or FlyPlate well tops for more effective removal of flies in compartments (blue). (B) Macro view of the pneumatic opening, showing small diameter tubes inserted into the fly tip to provide a surface against which flies being sucked into the tip are caught, without greatly impeding airflow. (C) CAD models of the 3D-printed mold that was used to make the silicone cuff. (D) Photo of the fly vacuum tip and the yeast wooden applicator vacuum tip used to hold applicators for transferring yeast colonies.\n\n![Video 1.](https://cdn.elifesciences.org/articles/37166/elife-37166-video1.mp4.jpg)\n\n**Video 1.:** MAPLE is situated on a standard experimental bench.\u00a0The user controls its behavior through an attached PC. Real-time video shows that MAPLE moves at speeds similar to human fly experimentalists.\n\nWith respect to our design constraints: (1) the accessible experimental workspace measures 100 \u00d7 28.2\u00d77.5 cm on the x-, y-, and z-axes, respectively. Its floor is clear acrylic with cable/tubing pass-throughs. Locating brackets (laser cut out of 6 mm acrylic) were affixed to an interchangeable acrylic surface with the same footprint as the floor (a \u2018workspace plate\u2019), allowing experimental modules to be precisely and repeatably positioned within and removed from the workspace (Figure 1\u2014figure supplement 2). Interchanging workspace plates allows rapid reconfiguration of the workspace for different experimental procedures. (2) The sides, top, and bottom of MAPLE are open or made of clear acrylic, permitting the optical phenotyping of flies in experimental modules at all time points other than when the end-effector carriages are above the modules. (3) The end-effector assembly comprises three independent z-axes, each featuring a single tool (Figure 1A; Video 2): an object manipulator for picking up experimental module components like plastic lids using vacuum; a USB digital camera with LED illumination for acquiring high-resolution images for machine-vision; and an organism manipulator for handling small individual animals using vacuum, or, in the case of our yeast experiments, wooden applicators (Figure 1\u2014figure supplement 3). (4) All motion axes have physical limit switches and/or software limits preventing overtravel. The organism manipulator end effector, which is rigid and must align precisely with experimental modules at different heights, is equipped with a collision-detection switch to halt z-motion before the robot is damaged. This sensor can also be used to detect the height of rigid module components. It is safe to leave MAPLE unattended (Video 3). (5) MAPLE components cost approximately $3500. Its bill of materials (Supplementary file 1, assembly instructions (Supplementary file 2), and code libraries (see Materials\u00a0and\u00a0methods for links) have been made public under open source licenses. MAPLE measures 43.5 cm in the y-dimension permitting mounting in standardized 19\u2019 rack systems, so multiple robots can be arranged compactly.\n\n![Video 2.](https://cdn.elifesciences.org/articles/37166/elife-37166-video2.mp4.jpg)\n\n**Video 2.:** Time-lapse view from a wide-angle camera mounted on the x-axis assembly of MAPLE during a procedure to move flies from a 96-well plate into social arenas, providing a clear view of the action of all three z-assemblies and end effectors. Moments when MAPLE flashes multiple times successively in the same position reflect an algorithm to vary the exposure time for image acquisition to detect the opening of a multi-position loading port. This\u00a0video\u00a0is available on YouTube at https://youtu.be/wxEgbYfif_M. The viewing angle can be adjusted during playback in the YouTube viewer.\n\n![Video 3.](https://cdn.elifesciences.org/articles/37166/elife-37166-video3.mp4.jpg)\n\n**Video 3.:** Wide-angle movie acquired by mounting the camera on the y-assembly as MAPLE conducts a social arena array loading procedure. After starting the protocol, confirming that the camera stays attached and trimming some zip-tie tails from the camera mount, the operator\u00a0walks away while MAPLE continues the experiment.\n\n### MAPLE conducts experiments on numerous species\n\nWe first established that MAPLE can be used to automate experiments in a wide variety of lab organisms. Specifically, we implemented experimental MAPLE protocols for baker\u2019s yeast S. cerevisiae, the nematode C. elegans, the slime mold P. polycephalum, and the fruit fly D. melanogaster (Figure 1B\u2013E). For yeast, we programmed MAPLE to transfer yeast cells from a single colony on a source plate to target plates and streak the cells out to grow new colonies from single cells (Figure 1B, Video 4). For C. elegans, we used MAPLE\u2019s camera effector to record 1 Hz movies of worms foraging on a lawn of OP50 bacteria (normal C. elegans culture conditions; Figure 1C). We tracked these worms offline to produce Video 5, demonstrating that MAPLE\u2019s camera is of high enough fidelity to capture worm behavior on this spatial scale. Collecting such movies from multiple plates serially would allow MAPLE to conduct behavioral screens. Next, for the slime mold Physarum, we plated nine plasmodia on nine plates of 2% agar (Figure 1D). We programmed MAPLE to take a photo of each plate once per minute and recorded plasmodia movement over the next 12 hr (Video 6). From these images, we compiled a combined time-lapse (Video 7) of plasmodial outgrowth and motion, which contrasts the exploratory behaviors of the different individuals. Lastly, for fruit flies, we developed a variety of experimental modules that can be flexibly reconfigured to conduct numerous experiments. These are detailed in the rest of the paper, along with new scientific results obtained with them. Automated fruit fly experiments generally exploit MAPLE\u2019s organism manipulator to move individual flies between compartments where the flies are grown or housed and phenotyping compartments where experimental data are automatically collected (Figure 1E).\n\n![Video 4.](https://cdn.elifesciences.org/articles/37166/elife-37166-video4.mp4.jpg)\n\n**Video 4.:** Real-time video showing MAPLE load an applicator stick in its organism manipulator, pick a colony from a source plate, transfer those cells to a target plate in a known pattern, repeat this procedure for additional single colonies from the source plate, and finish by streaking out the last transferred colony.\n\n![Video 5.](https://cdn.elifesciences.org/articles/37166/elife-37166-video5.mp4.jpg)\n\n**Video 5.:** MAPLE collected 1 Hz video at 1944 \u00d7 2592 px resolution of worms foraging on a standard growth plate with a lawn of OP50 E. coli. Worm positions were recorded manually in Fiji, and the track overlays were added in MATLAB. Movie frames acquired at 1 Hz and played back at 30 fps.\n\n![Video 6.](https://cdn.elifesciences.org/articles/37166/elife-37166-video6.mp4.jpg)\n\n**Video 6.:** Real-time video of MAPLE traveling between plates of 2% agar inoculated with Physarum plasmodia, and taking an image of each plate at a rate of 1 image/min. MAPLE thus collected time-lapse movies (Video 7) of all the plasmodia in parallel.\n\n![Video 7.](https://cdn.elifesciences.org/articles/37166/elife-37166-video7.mp4.jpg)\n\n**Video 7.:** Movie frames acquired at 0.017 Hz and played back at 30fps, covering a recording period of 12 hr. Movies show outgrowth followed by exploratory motion growth as well as rhythmic cytosolic pumping.\n\nMAPLE\u2019s modularity, open-source design, and hierarchical software architecture also facilitates hardware modifications that expand its multi-species capabilities. We adapted the basic MAPLE design for high-throughput imaging of uniquely identified workers within colonies of the Common Eastern bumblebee (Bombus impatiens). In the Bee Experimental Ethology Colony Hardware (BEECH) system (Figure 1F,G), up to 12 colonies of\u00a0~50 bumblebees each are housed in acrylic colony boxes featuring a dark nest chamber (Video 8) and a circadian-lit foraging chamber, where bees are supplied with nectar and pollen. This MAPLE-derived two-dimensional Cartesian robot moves a multi-camera end-effector from colony to colony, recording high-resolution video of the nest and foraging chambers (Videos 8 and 9), which permits automated tracking of individual tagged\u00a0bees using machine vision (Crall et al., 2015) for up to several weeks. While replacing MAPLE\u2019s z-axis assembly with multiple cameras and extending all three dimensions of MAPLE\u2019s frame to accommodate the 12-colony box modules, BEECH employs identical construction and motion-control, demonstrating the versatility of the MAPLE design.\n\n![Video 8.](https://cdn.elifesciences.org/articles/37166/elife-37166-video8.mp4.jpg)\n\n**Video 8.:** Wide-angle movie acquired by mounting the camera inside a bumblebee colony box and placing into the BEECH platform for imaging. BEEtag spatial barcodes are visible on the backs of individual bees. Once BEECH begins to move, its camera and IR illuminator effectors periodically come into view above the nest chamber (e.g. at 3:05); in this movie, the normally visible-opaque next chamber roof has been replaced with clear acrylic. This\u00a0video is available on YouTube at https://youtu.be/crIb4ZfecYQ.\u00a0The viewing angle can be adjusted during playback in the YouTube viewer.\n\n![Video 9.](https://cdn.elifesciences.org/articles/37166/elife-37166-video9.mp4.jpg)\n\n**Video 9.:** Timelapse of a real BEECH experiment in which the camera end effectors are moved between bumble bee colony boxes to record brief videos in each successively.\n\n### MAPLE-handled flies exhibit normal behavior\n\nAn important step in adopting a new automated approach is confirming that the procedure generates similar data to prior manual experiments. To do this, we focused on fruit flies, and set out to confirm that handling by MAPLE did not damage flies or introduce discrepancies compared to experiments conducted manually. Specifically, we examined the locomotor performance of flies handled by MAPLE and unhandled flies. First, we manually aspirated 96 anesthetized flies into a FlyPlate (a modified 96-well plate for single fly storage. Detailed description below). After 2 hr of rest, half the flies (48) were subjected to repeated manual removal and replacement back into their well using the MAPLE organism manipulator, while the remaining flies (48) were left unhandled (Figure 2A,B). After this handling procedure, the entire plate was imaged in a backlit motion tracking rig (Buchanan et al., 2015). Handling and imaging were then repeated an additional four times to test for cumulative effects. Flies handled by MAPLE were statistically indistinguishable from unhandled flies both in the fraction that were active across imaging sessions (Figure 2C; b\u00a0=\u00a0\u22120.02, t(477) = \u22120.098, p=0.92 by multinomial logistic regression) and in their mean walking speed across imaging sessions (Figure 2D; F(4, 376)=0.51, p=0.73 by mixed-effects ANOVA).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig2-v3.jpg)\n\n**Figure 2.:** (A) Diagram of repeated MAPLE handling procedure.\u00a0Flies were removed from and replaced back into wells of a FlyPlate using MAPLE\u2019s organism manipulator. In between these handling events their activity was assessed by automated tracking. (B) Illustration of automatic tracking of flies in a FlyPlate through the nylon mesh covering the wells. (C) Percentage of flies exhibiting supra-threshold activity (mean speed\u00a0>0.1 mm/s) across handling sessions. Red line is MAPLE-handled flies, black line is matched unhandled flies. Gray area denotes 95% CI around unhandled flies. (D) Fly mean speed across handling sessions. (E) Illustration of MAPLE-assisted handedness phenotyping procedure. (F) Y-maze arena adapted for MAPLE use with a multi-position loading port allowing the deposition of awake flies into the behavioral arena. The hole in the rotatable lid can be aligned to the arena to load or unload flies, or to the wall surrounding the arena to trap flies in. (G) Distribution of fly mean speeds in MAPLE and manually loaded experiments. Distributions shown are kernel density estimates (KDEs). Gray area is 95% CI around manually loaded flies as estimated by bootstrap resampling of KDEs. (H) Distributions of fly turning bias (# right turns / # total turns) in MAPLE and manually loaded experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Experimental procedure by which MAPLE-loaded flies from a FlyPlate into a social arena array for automated behavioral phenotyping in a back-lit imaging box. (B) Flies were inserted into behavioral arenas via multi-position loading ports. (C) The distribution of mean fly walking speeds in these arenas was statistically indistinguishable between MAPLE- and manually handled flies. p=0.99 by KS-test. Distributions are estimated by KDE. Red indicates MAPLE-handled flies. Dark blue is manually handled flies; light blue area is the 95% CI of the manually-handled KDE as determined by bootstrap resampling. (D) The distribution of mean fly circling biases (tendency to turn clockwise or counterclockwise in their respective semi-circular arena compartment) was statistically indistinguishable between MAPLE- and manually handled flies, p=0.99 by KS-test. The circling bias metric was defined as \u00b5 score (Buchanan et al., 2015), which measures the average circumferential component of motion, with \u22121 indicating purely clockwise motion,+1 purely counterclockwise, and 0 equal portions clockwise and counterclockwise motion or inward/outward motion. Colors as in (C).\n\nSecond, we measured the locomotor bias of individual flies in Y-shaped mazes (Ayroles et al., 2015; Buchanan et al., 2015) configured with multi-position loading ports. Awake flies were loaded into these mazes from FlyPlates by either manual aspiration or MAPLE-handling (Figure 2E,F). The across-individual distribution of walking speeds was statistically indistinguishable between the manual and MAPLE-handled group (Figure 2G; p=0.61 by KS-test). Likewise, the across-individual distribution of turning bias (the tendency of individuals to turn left or right at the choice point in the center of the Y-maze) was indistinguishable between handling treatments (Figure 2H; p=0.74 by KS-test). The same was true for comparisons of manual and MAPLE-handled behavior in semi-circular arenas (Figure 2\u2014figure supplement 1).\n\n### An ecosystem of MAPLE experimental modules and software\n\nHaving confirmed that MAPLE does not obviously\u00a0distort fly behavioral data, we set out to create an ecosystem of reconfigurable modules that could be used combinatorially in the MAPLE workspace to conduct a large number of experimental protocols. We fabricated and deployed a number of modules, which fall into three categories (Figure 3): fly source, fly sink, and phenotyping modules. Fly source modules are repositories from which flies can be removed in a controlled fashion and transferred into downstream modules. These include the Fly Dispenser (FlySorter LLC), a small device that outputs single flies, on demand, from a standard plastic vial pre-loaded with many flies. It can be triggered to dispense a fly via a serial command sent over USB. A standard CO2 pad with a porous polyethylene surface, used to anesthetize flies manually at the start of a MAPLE session, serves as a source of flies. Using machine vision, MAPLE is capable of recognizing flies\u2019 positions on the pad. FlyPlates (FlySorter LLC) are modified 96-well plates in which the floor has been replaced with a metal mesh, allowing flies stored in the wells to feed on fly media below the plate. The lid features a nylon mesh with X-shaped slits cut above each well (Figure 2B), which allow an aspirator tip or the organism manipulator end-effector to enter the well, retrieve or deposit a fly, and leave the well without permitting the fly to escape. Because flies can be deposited in this module, it also falls in the category of fly sink modules.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig3-v3.jpg)\n\n**Figure 3.:** (A) Illustrations and brief descriptions of experimental MAPLE modules. Fly source modules can provide flies into the MAPLE system. Fly sink modules can receive flies. Phenotyping modules are used to collect experimental measurements. See Materials\u00a0and\u00a0methods for more extensive descriptions. Modules with names in (parentheses) are under development. (B) Simplified flowcharts illustrating a selection of tasks MAPLE is capable of performing using different combinations of modules. Green arrows indicate the flow of animals through the task, thin grey arrows the motion of the MAPLE end effectors. Tasks with names in (parentheses) are hypothetical and illustrate the scope of possibilities.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Illustrations of arena lids that can be rotated or slid to position an opening over a behavioral arena, or over a portion of inaccessible wall, corresponding to configurations that are, respectively, open or closed for MAPLE loading or unloading.\u00a0Arenas are shown for different experimental geometries: (A) social arena, (B) Y-maze arena, (E) linear (Drosophila Activity Monitor style) arena, (F) circular arena with rotating multi-position loading port, and (G) circular arena with linearly sliding multi-position loading port. (C,D) Photos of a Y-maze with its loading port rotated over the walls, closed to the loading or unloading of flies (C) or over the arena and open to the loading or unloading of flies (D).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Schematic of the organization of MAPLE software into experimental scripts, module class files, a high-level function library, a remote operation library, and the robot object which harbors functions for low-level robot operations. The generic experiment script indicates with color how each of these file types is called to generate a useful MAPLE procedure.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Flowchart for a high-level MAPLE experimental procedure, the collecting of virgin females in a FlyPlate from the Fly Dispenser. High-level functions such as this one depend on lower-level procedures, such as those illustrated in subsequent panels. (B) Flowchart for detecting the opening of multi-position loading ports (Figure 3\u2014figure supplement 1) using machine vision. (C) Flowchart for using the fly manipulator end effector to put a multi-position loading port into the open configuration. (D) Flowchart for using the camera end effector to detect if there is a moving fly within a behavioral arena.\n\nFly sink modules are destinations into which flies that have been handled by MAPLE can be deposited. In the case of the FlyPlate, deposited flies can be later removed. Other fly sink modules are one-way, including a morgue, a dish of slightly soapy water or 70% ethanol covered with a nylon mesh lid in the style of the FlyPlate. Standard fly culture media vials with nylon mesh loading adapters can be used to collect many flies after MAPLE handling for long-term storage.\n\nThe last category of modules is phenotyping modules, which produce experimental data. We have created a number of behavior phenotyping modules (Figure 3\u2014figure supplement 1), including arrays of circular open field arenas, arrays of Y-shaped mazes for measuring locomotor handedness (Buchanan et al., 2015), and social arena arrays, in which pairwise social interactions can be monitored. Phenotyping modules are not limited to collecting behavioral data. For example, flies can be loaded into standard 96-well plates outfitted with nylon mesh lids. From there, they are ready for molecular protocols, including use by liquid-handling robots. Flies in FlyPlates, which have access to food, can be used for circadian assays (Tataroglu and Emery, 2014), longevity (Stearns et al., 2000), or pharmacological experiments (Gasque et al., 2013). Modules such as the Fly Dispenser can be situated outside MAPLE\u2019s frame, receiving and delivering flies via air-flow tubing. 3D-printed adapter blocks connect these tubes into the MAPLE workspace and are situated with locating brackets.\n\nThe modularity of MAPLE\u2019s hardware is reflected in its software as well (Figure 3\u2014figure supplement 2). Each experimental procedure is associated with a Python experimental script file. These files call functions that (1) implement common multi-step robot actions (like retrieving a fly from a behavioral arena), (2) implement low-level elemental robot actions, (3) are specifically associated with the modules used in a particular experiment, and (4) mediate the remote control of MAPLE over the internet. This software architecture permits the rapid scripting of new experimental protocols at a high level (Figure 3\u2014figure supplement 3).\n\nTo demonstrate the experimental flexibility of this ecosystem of modules and software, we implemented a number of experimental procedures (Figure 3B). These include: (1) collecting virgin flies for genetic crosses by dispensing flies as they eclose and then distributing them into individual wells of FlyPlates where their isolation preserves their virgin status indefinitely; (2) loading flies into Y-shaped arenas to measure their locomotor biases, the time-consuming step of a routine assay in our lab; (3) loading flies from the Fly Dispenser into the FlyPlate wells for long-term culturing and circadian phenotyping; and (4) loading flies into social arenas to measure their pairwise interactions. Below we describe results from procedures (1) and (4) in detail, as well as the scientific findings obtained using the latter procedure.\n\n### MAPLE-assisted virgin picking is more efficient than manual methods\n\nWe tasked MAPLE with performing a tedious task that consumes great amounts of time in essentially all Drosophila labs: collecting virgin females for genetic crosses. Female D. melanogaster will not mate with males for approximately 6 hr after they eclose from the pupal case. In the first portion of this interval, they have morphological characteristics (puffy abdomens, translucent cuticle, and visible meconium in the gut) that correlate with their young age and are reliable, but conservative, indicators of virginity. In traditional manual virgin-picking, only females with these morphological correlates are collected. This means that many virgin females lacking morphological correlates in the latter portions of the 6 hr no-mating window are discarded, unless practitioners collect virgins from a stock vial or bottle at regular intervals at least three or four times a day.\n\nMAPLE has the potential to recover 100% of females as virgins by isolating them quickly after they eclose, and storing them individually to preclude mating. To implement this procedure, we devised a simple custom fly media vial in which the lower portion containing fly food is detachable. Parental generation flies lay eggs in this food, or food from another vial containing larval flies can be transferred into the custom vial. When flies in this experimental generation climb onto the walls of the vial and pupate, the food-containing portion is manually detached, and replaced with an empty vial-bottom (Video 10). This pupae-containing, foodless vial is then placed in the Fly Dispenser. Every 30 min, all newly eclosed flies are dispensed into MAPLE, which distributes them individually into the wells of a FlyPlate (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig4-v3.jpg)\n\n**Figure 4.:** (A) Diagram of modules and procedure employed in MAPLE virgin-collecting.\u00a0(B) Comparison of cumulative number of virgin females collected versus manual labor time required in MAPLE and conventional manual virgining procedures. Dotted lines indicate the maximum potential virgins that might have been collected in each approach. Thus the difference between the dotted and solid line indicates females that were \u2018lost\u2019 and not retained as virgins.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Representative illustration of the contents of the wells of a full FlyPlate after 3 days of virgin collecting. Outer circle color indicates the number of flies loaded. Inner circles indicate the sex of deposited flies. Stacked bars at right indicate the number of flies isolated by sex and virgin status.\n\n![Video 10.](https://cdn.elifesciences.org/articles/37166/elife-37166-video10.mp4.jpg)\n\n**Video 10.:** Animation illustrating the MAPLE procedure for efficiently collecting virgin female flies. See also Figure 4.\n\nThis process was not without error: at rates of\u00a0~3% a well was left empty, or\u00a0~8% a well was loaded with two flies. A representative outcome is shown in Figure 4\u2014figure supplement 1. To recover only the virgin females, fully loaded FlyPlates were removed from their media base, brought to traditional CO2 fly-pushing pads at dissecting microscopes, the flies were anesthetized through the wire mesh floor, and then the plate and pad assembly was inverted, leaving the flies on the CO2 pad in their respective positions from the wells. The sex of each fly was determined by eye, and females that had been stored either alone, or with no males were collected. In a head-to-head comparison of typical manual virgin-collecting (picking at the beginning and end of the work day from five vials) versus MAPLE virgin-collecting, virgin females were procured at a rate of 1.5/min (including the time needed to bring vials from the incubator, anesthetization, etc.) and 4.9/min using MAPLE (including the time to set up the pupa vial, load the dispenser, manually sex and sort the flies, etc.) (Figure 4B). In the future, we anticipate MAPLE will be able to sex flies without human intervention using the high-resolution imaging module, further decreasing manual work required.\n\n### MAPLE reveals persistent fly social interaction networks and their sensory basis\n\nLastly, we set out to see if MAPLE could conduct experiments that would be difficult using traditional manual methods. Specifically, we set out to measure social interaction networks (SINs; Schneider et al., 2012; Pasquaretta et al., 2016) between pairs of flies, and then determine if measures of pair-wise affiliation are preserved on the timescale of days (Figure 5). It is known from group behavioral experiments that individuals spend more time interacting with specific other individuals (Simon et al., 2012), and such interaction-based SINs remain stable over tens of minutes in fruit flies (Schneider et al., 2012). In other species, such as the forked fungus beetle Bolitotherus cornutus, these dyadic interactions are stable for days (Formica et al., 2017). Because it is challenging to perfectly maintain individual identity through experiments in which multiple individuals are in the same compartment and subsequently retrieved, stored and retested, it is unknown if dyad-specific affiliative measures are stable over longer periods of time in flies. To assess\u00a0this we devised a new high-throughput assay to measure affiliative behavior between pairs of flies (Figure 5A,B). This consisted of a 9 \u00d7 9 array of adjacent, approximately semi-circular arenas separated by an interchangeable barrier. MAPLE can load individual flies into each arena-half using a multi-position loading port (Video 11). We made four versions of the interchangeable barrier: an open-clear barrier was made of clear acrylic with grooves to connect the half-arenas, permitting flies to see and smell each other (Video 12); a solid-clear barrier permits flies to see each other but impedes airflow; an open-black barrier permits airflow but blocks visual cues; and a solid-black barrier blocks both airflow and visual cues. Flies in this assay are thus presented with the choice of interacting with a designated partner across the barrier, or not.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig5-v3.jpg)\n\n**Figure 5.:** (A) Diagram of MAPLE-assisted social interaction behavior phenotyping procedure.\u00a0(B) Schematic of one of 81 social arenas including interchangeable interaction barrier types (shown in side-on view to illustrate the channels along the bottom of some barriers that permit airflow). A multi-position loading port allows flies to be loaded or removed from either compartment independently. (C) Individual flies\u2019 distances to the interaction barrier over time in an example session. Colors correspond to distances illustrated in (B). (D) An example dyad interactivity index, calculated as the correlation between individual flies\u2019 interaction barrier distances. (E) Diagram of pairing schemes employed to form dyads. (F) Mean absolute interactivity indices across interaction barrier types and genotypes. Dyads were formed according to scheme 1. Patterns denote barrier type, outline colors denote genotype. Error bars correspond to\u00a0\u00b11 SEM. Mean absolute interactivity indices differ significantly across conditions, F(7, 853)=13.42, p<0.001. Asterisks indicate pair-wise comparisons that are significant by t-test. *: significance at \u0251\u00a0=\u00a00.05; **: significance at \u0251\u00a0=\u00a00.01; ***: significance at \u0251\u00a0=\u00a00.001. (G) Pearson correlation coefficient between dyad interactivity indices measured on successive days, over 6 days. Dyads were formed according to scheme 1. Point patterns denote barrier type, line colors denote genotype. Error bars correspond to\u00a0\u00b11 SEM. Asterisks denote significant two-tailed z-tests. (H) Scatter plot of interactivity indices of Canton-S (wild type) flies in arenas with open-clear barriers from measurements made across 2-\u00a0to\u00a04-day intervals. Dyads were formed according to scheme 2. Gray area is 95% CI of the linear regression line. Circles represent dyads; semi-circles denote individual flies forming a dyad; colors denote fly identity. Pearson correlation coefficient is statistically significant, r(99) = 0.32, p=0.005. N: 99 dyads, 20 flies. (I) As in (H) for two groups of 10 virgin female Canton-S forming 45 dyads each according to scheme 3 and tested on successive days, r(78) = 0.24, p=0.034. (J) Visualization of a Social Interaction Network (SIN) of 10 Canton-S (45 dyads) in arenas with open-clear barriers. Connections denote dyads exhibiting absolute interactivity index values greater than the average of the absolute values of the 1st and 4th quartiles (threshold: 0.031). Threshold was identical for day 2. Colors and numbers indicate fly identity on both days.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Interactivity index distributions of female-female (black), male-female (blue), and male-male (red) dyad compositions, visualized using kernel density estimation.\u00a0Female-female distribution is not significantly different from male-female (p=0.66 by KS-test) or male-male (p=0.14 by KS-test) distributions. Male-female distribution is significantly different from male-male distribution (p=0.0094 by KS-test). Distributions comprise 396, 474, and 132 dyads, respectively. Shaded regions indicate\u00a0\u00b11 standard error of the distribution estimate as determined by bootstrap resampling. (B) Observed (black) and expected (red) distributions of interactivity index from male-female and female-female dyads (n\u00a0=\u00a0870). The overdispersion of the observed distribution (standard deviation\u00a0=\u00a00.13) over the expected distribution (standard deviation\u00a0=\u00a00.096) indicates that dyads are exhibiting more strongly positive or negative interactivity indices than expected under the null hypothesis in which interactions between dyad partners are independent (F\u00a0=\u00a037.3, p<0.0001 by Levene\u2019s test; p<0.0001 by KS-test; p<0.0001 by \u03c72 test of variance). This null hypothesis was simulated in a resampling procedure by shuffling dyad partner identity and recomputing the interactivity index. Shaded region indicates\u00a0\u00b11 standard error of the distribution estimate as determined by bootstrap resampling. Observed distribution comprises 870 dyads. Bootstrapped shuffled dyad distribution was resampled 1000 times.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37166/elife-37166-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Schematic side view of a social arena showing in yellow the zone in which flies are scored as being at the barrier. (B) Position (x-axis) vs time (y-axis) of two flies interacting in a dyad. Thick lines indicate timepoints when the flies are in the at-barrier-zone (yellow). Black bars at right indicate intervals in which both flies are at the barrier. Each of these intervals represents one \u2018coincidental encounter\u2019. Coincidence index is defined as the number of coincidental encounters normalized for average dyad speed. (C) Diagram of pairing schemes employed to form dyads. (D) Pearson correlation coefficient between dyad coincidence indices measured on successive days, over 6 days. Dyads were formed according to scheme 1. Point patterns denote barrier type, line colors denote genotype. Error bars correspond to\u00a0\u00b11 SEM. Asterisks denote significant one-sample two-tailed z-tests. (E) Scatter plot of coincidence index of Canton-S (wild type) flies in arenas with open-clear barriers from measurements made across 2-\u00a0to\u00a04-day intervals. Dyads were formed according to scheme 2. Gray area is 95% CI of the linear regression line. Circles represent dyads; semi-circles denote individual flies forming a dyad; colors denote fly identity. Pearson correlation coefficient is not statistically significant, r(45) = 0.28, p=0.059. (F) As in (E) for two groups of 10 Canton-S flies forming 45 possible dyads each according to scheme three and tested on successive days, r(68) = 0.48, p=0.00035. (G) Visualization of a Social Interaction Network (SIN) of 10 Canton-S flies (45 dyads) in arenas with open-clear barriers. Connections denote dyads exhibiting coincidence indices greater than the average values of the 1st and 4th quartiles (threshold: 223). Threshold was identical for day 2. Colors and numbers indicate fly identity on both days.\n\n![Video 11.](https://cdn.elifesciences.org/articles/37166/elife-37166-video11.mp4.jpg)\n\n**Video 11.:** Time-lapse view from a wide-angle camera mounted on MAPLE\u2019s experimental workspace plate during a procedure to move flies from a 96-well plate into social arenas. Moments when MAPLE flashes multiple times successively in the same position reflect an algorithm to vary the exposure time for image acquisition to detect the opening of a multi-position loading port. This\u00a0video is available on YouTube at https://youtu.be/F9KdnkGfkhI.\u00a0The viewing angle can be adjusted during playback in the YouTube viewer.\n\n![Video 12.](https://cdn.elifesciences.org/articles/37166/elife-37166-video12.mp4.jpg)\n\n**Video 12.:** Six social arenas are seen with a fly loaded into each of the 12 semicircular compartments. These compartments are separated by open-clear barriers which are made of clear acrylic with horizontal channels allowing flies to both see and smell each other.\n\nAs a measure of social affiliation, we determined an \u2018interactivity index,\u2019 defined as the Pearson correlation coefficient between the distances of each fly to the barrier over time (Figure 5C,D). Either significantly positive or negative values of this index indicate social interaction. We found that male-female and female-female, although not male-male, dyads produced the same distribution of interactivity indices (Figure 5\u2014figure supplement 1A). Most social experiments were performed with virgin female-female dyads, although for some control groups we also included male-female dyads.\n\nWe programmed MAPLE to load pairs of flies from the FlyPlate into social arenas according to three different dyad schemes (Figure 5E). These varied from high-throughput (testing 162 flies at a time), with each fly tested in just a single dyad, to low-throughput (10 flies total) but saturated with respect to all possible dyadic pairings. Using the high-throughput scheme, we first measured the interactivity indices of wild type (Canton-S) flies separated by open-clear barriers. The observed distribution was significantly different compared to shuffled controls that scramble dyadic pairings (Figure 5\u2014figure supplement 1B; p<0.0001 by KS-test), indicating that interactions are dyad-specific.\n\nDyads separated by barriers that limit sensory cues exhibited significantly lower mean absolute interactivity indices (Figure 5F), indicating that both olfactory and especially visual cues drive differences in dyadic interactions. This is consistent with reports that visual cues can mediate social modulation of behavior (Kim et al., 2012). Consistently, anosmic Orco mutant flies (Vosshall and Hansson, 2011) showed a significant 65% reduced mean absolute interactivity index, even with open-clear barriers (p=0.00048 by t-test). Blind NorpA mutant flies (Kim et al., 1995) did not differ significantly from wild type flies in mean absolute interactivity index (p=0.26 by t-test). Flies with mutations in the white gene (w1118) have reduced visual acuity (Markow and Scavarda, 1977) but showed a 50% increase in absolute interactivity index which was statistically significant (p=0.013 by t-test), suggesting that social partner visual recognition does not require fine acuity (Justice et al., 2012). The increased inter-dyad variability seen in w1118 animals may be consistent with increased inter-individual variability in phototactic preference exhibited by this genotype (Kain et al., 2012). In a control experiment, w1118 flies separated by solid-black barriers had interactivity indices indistinguishable from Canton-S flies separated by solid-black barriers (p=0.48 by t-test).\n\nLastly, we set out to determine if social behavior is stable over long periods of time by measuring dyadic interactivity indices across days. Using our high-throughput dyad scheme, we measured interactivity indices from 91 dyads on each of 6 consecutive days. Interactivity indices across Canton-S dyads were statistically significantly correlated (0.31\u00a0<\u00a0r\u00a0<\u00a00.38, 0.0001\u00a0<\u00a0p\u00a0<\u00a00.04) between day one vs. day 2, day 2 vs. day 3 and day 3 vs. day 4 (Figure 5G), but not days 4 vs. 5 or 5 vs. 6. Thus, dyad-specific affiliative behavior appears to be stable over days-long timescales, though only for the first days of experiments. In control experiments, Canton-S flies with solid-black barriers and NorpA and Orco mutant flies exhibited no significant correlation in dyad interactivity indices across days. Significant correlation in interactivity index across dyads was observed in our two SIN dyad schemes as well (Figure 5H\u2013J) suggesting that SIN persistence can be measured in a variety of experimental formats. Other metrics of social interaction yielded qualitatively similar results to the interactivity index (Figure 5\u2014figure supplement 2; Supplementary methods).\n\n## Discussion\n\nWe developed MAPLE, a modular, automated platform for large-scale experiments, to expand automated experimental capabilities for lab model organisms (Figure 1). By design, MAPLE is versatile, scalable, and relatively inexpensive, with all components of the core fly-handling robot costing roughly $3500. We displayed the versatility of this system by adapting the MAPLE platform to detect, place, and streak out individual S. cerevisiae colonies (Figure 1B), autonomously record C. elegans behavior (Figure 1C) and P. polycephalum movement (Figure 1D), as well as automatically monitor the behavior of multiple bumblebee colonies over long periods (Figure 1F,G). We have made the design and code for MAPLE open access in the hope that it, or descendant approaches, will be adopted by our field.\n\nAfter demonstrating that MAPLE did not discernibly alter the baseline behavior of animals compared to manual handling (Figure 2), we developed a procedure by which MAPLE could help conduct a repetitive lab chore that nearly all Drosophila biologists are familiar with \u2014 collecting virgin females for genetic crosses. Using a Fly Dispenser, MAPLE collected individual animals as they eclosed from the pupal case and kept them in isolation, ensuring their virginity (Figure 4). To arrive at a final collection of virgin females, these singly-housed individuals were sexed by hand. Even with this manual step, virgins were procured at a much higher (~3 x) rate with MAPLE\u2019s assistance than without it (measured in terms of human labor time per virgin female).\n\nMAPLE\u2019s capacity to handle individual flies in combinatorially complex experimental designs (Figure 3), allowed us to demonstrate that dyadic fly social behavior relies on both visual and olfactory cues. Dependence of social behavior on visual (Mery et al., 2009; Simon et al., 2012) and olfactory cues (Schneider et al., 2012; Billeter and Levine, 2015) is known from experiments observing many flies simultaneously. We further found that individual differences in dyadic social behavior \u2014 as well as derived social interaction network topography \u2014 remain stable over days (Figure 5). Stability of social networks on short timescales (Schneider et al., 2012) is known, but long-term stability of social networks is a novel finding. This illustrates that MAPLE can (1) replicate known results without introducing significant behavioral confounds and (2) extend our knowledge by conducting complex, long-term experiments that are challenging for human experimentalists.\n\nTechnologies that automate experiments will particularly facilitate the phenotyping of individual animals, an approach that reveals underappreciated intragenotypic variability. Our group has shown that individual flies generally exhibit very different behaviors from one another even if they are reared in the same environment and have the same genotype, and that these differences persist across days (Kain et al., 2012; Buchanan et al., 2015; Ayroles et al., 2015; Kain et al., 2015; Todd et al., 2017). MAPLE allowed us to show that this extends to dyad-specific social interactions in flies (Figure 5H\u2013J). To our knowledge, this is the first demonstration that dyad-specific social interactions are persistent on days-long timescales in flies.\n\nAs the behavioral assay used here relies on physically separating individual flies, it is limited to examining visual and olfactory aspects of social interactions. To describe persistence of dyad-specific social interactions in flies more completely, further investigation including somatosensory and gustatory information exchange is necessary (Krstic et al., 2009; Schneider et al., 2012; Ramdya et al., 2015). Moreover, this assay presents flies with a choice to interact with a particular partner, or not. Assays with groups of flies, where the alternative to interacting with a particular fly includes interacting with potentially many other flies, may produce different results (Ramdya et al., 2017), although interaction networks in a group context are at least partially stable over the course of experiments (Schneider et al., 2012).\n\nMAPLE is designed to be a general purpose instrument, therefore it has some disadvantages compared to purpose-built devices that perform a single task. For example, while MAPLE\u2019s camera can be used to acquire time-lapse movies of yeast colony growth, Physarum plasmodium movement, or C. elegans locomotion, purpose-built worm imaging systems can provide comparable data with higher throughput (Churgin et al., 2017) or higher resolution (Stern et al., 2017). Likewise, purpose-built yeast colony picking robots (e.g. BioMatrix, S and P Robotics) achieve higher performance on specific tasks like transferring colonies, although typically at a higher price. MAPLE\u2019s open, modular design is meant to facilitate customization and prototyping, so it may be a good platform for the development of new organism-handling hardware, for\u00a0example, for the dissection and transfer of Physarum syncytium or individual worms. These and other experimental applications might rely on liquid-handling. MAPLE currently has no liquid-handling capabilities, but there are\u00a0open source liquid-handling robotic systems such as Opentrons (http://opentrons.com) which could be integrated with MAPLE. Specifically, liquid-handling effectors could be installed on MAPLE z-axes, replacing some or all of the current effectors.\n\nIn its current configuration, MAPLE has some drawbacks. Its effectors move slightly slower than the hands of a trained experimentalist, so its advantages derive from it not growing tired or losing focus. MAPLE does not execute every action with 100% success. For example, attempts to remove an awake fly from a behavioral arena, using vacuum through a loading port, succeed approximately 90% of the time. Given this error rate, the experimental procedures that include removing flies from arenas use the camera to inspect the arena after each attempt to confirm if the fly has been successfully removed. Similarly, our procedure to transfer yeast colonies used the collision-detector to confirm that the object manipulator had successfully removed petri dish lids. These checks reduce the efficiency of MAPLE-conducted experiments (particularly compared to manual experiments), but mean that the operator can walk away from the device confident that MAPLE will eventually get it right. Given its redundancies and fail-safes, MAPLE can work autonomously for long periods (e.g. 12 hr for the Physarum experiment) without getting stuck.\n\nA potential advantage of using MAPLE for fly experiments specifically is the option to avoid anaesthesia. The Fly Dispenser releases awake animals into the MAPLE system, and these can then be moved between the FlyPlate and behavioral arenas using the multi-position loading ports we developed. Avoiding anesthesia has multiple benefits, including reducing the distortion of behavioral (Bartholomew et al., 2015) and physiological measurements (Colinet and Renault, 2012), which, depending on the form of anaesthesia, can last for hours or days (MacMillan et al., 2017). Even seemingly benign manual aspiration can disrupt the expression of sensitive phenotypes (Trannoy et al., 2015). Automated, anesthesia-free animal-handling thus has the potential to standardize handling effects.\n\nMAPLE\u2019s modularity means that the platform's versatility and capabilities can be expanded in the future. As examples, we are developing fly sink modules for culturing thousands of animals in the style of population cages, facilitating selection experiments and experimental evolution. We are developing a high-resolution imaging source/sink module into which flies could be deposited, imaged in dorsal and ventral views, and released back into experimental workflows. This device is inspired by the Fly Catwalk system (Medici et al., 2015) but can be loaded with a fly on demand, rather than relying on flies to enter the imaging chamber on their own. The images from this module will allow machine-learning-based classification of morphological phenotypes, like sex and eye color, as well as quantification of fluorescent proteins; key genetic markers in flies.\n\nIn addition to conducting tedious or complex experiments, MAPLE\u2019s integrated format affords the opportunity to feed back the results of phenotypic assays into fly handling tasks. For example, MAPLE could be used to perform artificial selection, identifying individuals with a specific behavior or phenotype, and placing males and females together in wells of a FlyPlate, vials, or population cage. Likewise, multigeneration genetic crosses will be possible with our high resolution imaging module. Our current behavioral phenotyping relies on simple motion tracking, but behavioral assays employing thermogenetic or optogenetic stimulation, or sophisticated stimulus control could be implemented through custom modules. Unsupervised learning algorithms have been used to automatically phenotype flies (Berman et al., 2014; Todd et al., 2017), and with the capacity to store and access large numbers of flies individually, MAPLE could identify and isolate outliers within a population. MAPLE is compatible with such modern, automated approaches to fly experimentation, and brings automated animal-handling one step closer to the potential achieved by liquid-handling robots for molecular research.\n\n## Materials and methods\n\nCAD files for MAPLE can be found at https://github.com/FlySorterLLC/MAPLEHardware\u00a0(copy\u00a0archived\u00a0at\u00a0https://github.com/elifesciences-publications/MAPLEHardware).\u00a0Control software for MAPLE including scripts for the experiments described here can be found at https://github.com/FlySorterLLC/MAPLEControlSoftware (copy\u00a0archived\u00a0at https://github.com/elifesciences-publications/MAPLEControlSoftware).\u00a0Raw data and analysis scripts can be found at http://dx.doi.org/10.5281/zenodo.1119131.\u00a0These materials are also available at http://lab.debivort.org/MAPLE.\n\n### MAPLE technical specifications\n\nMAPLE\u2019s frame is a rectangular prism constructed from extruded aluminum struts (Misumi HFS-5 series in various sizes and lengths) and brackets (Misumi five series). The principal axes of the robot are Cartesian, that is to say linear and mutually orthogonal. The longest axis - designated the X axis - comprises two supported linear rails (IGUS Drylin AWUM-12), each with two housed bearings (IGUS drylin OJUM-6\u201312). The total of four housed bearings support a single, wide linear rail (IGUS WS-10\u2013120) that is the Y axis. A carriage made of two aluminum plates sandwiching four more bearing blocks (WJ200UM-01\u201310) slides along the Y axis. Suspended from this carriage is an assembly that houses the three independent Z axis slides (IGUS SLN-D740679-2). We deliberately chose sliding bearings (as opposed to ball bearing slides) for the three axes to avoid noise and vibrations that might confound behavioral experiments.\n\nThe first of the three end-effectors is an object manipulator. Made from an off-the-shelf vacuum cup connected to an air manifold, it can pick up and deposit lids or other small components from the workspace. A high-resolution digital camera and lens (The Imaging Source DFM 72BUC02-ML and TBL 9.6-2 C 3MP) is mounted to the second Z axis. Moving this Z carriage up and down focuses the camera. The third motorized Z slide holds a custom aspirator to move flies. Several short lengths of small diameter tubing (sections of needle tips, McMaster 75165A553 and 75165A682) are fixed approximately 4 mm inside a blunt, Luer-lock needle (McMaster 6710A61), forming a barrier to flies but allowing air to flow. A custom-molded silicone rubber boot surrounds the fly vacuum tip for the object manipulator, forming a better seal against apertures in modules and improving fly handling (Figure 1\u2014figure supplement 3).\n\nStepper motors (1.5 A NEMA 17 60 mm bipolar stepper motor, MNEMA17-60 from RobotDigg.com) mounted to the main frame drive two 6\u00a0mm-wide GT-2 belts arranged in a CoreXY configuration (Moyer, 2012), and these belts drive the motion in the X and Y directions. Each Z axis slide is driven by its own stepper motor, integral to the slide assembly. The maximum speed for the X and Y axes is 200 mm/s. The Z axes top out at 83.3 mm/s. Limit switches (Omron SS-5) are mounted to the frame for each axis, providing repeatable end stops for homing.\n\nMotion control, as well as the control of auxiliary devices such as the solenoid valves and the LED illumination, is handled by a Smoothieboard v1 PCBA, running custom Smoothieware firmware (included in our Github repository). G-code commands are sent from a PC connected via USB, interpreted on the Smoothieboard, and translated into electrical signals sent to each stepper motor. Scripts containing each experimental protocol, along with a common set of frequently\u00a0used subroutines, were written in Python 2.7 (or Matlab 2016a for BEECH) and executed on PCs running Windows 7.\n\n### Software\n\nEvery module has an associated Python 2.7 module class file (all MAPLE control software, including module class files, are available at https://github.com/FlySorterLLC/MAPLEControlSoftware; copy archived at https://github.com/elifesciences-publications/MAPLEControlSoftware). These files provide the 3D coordinates of key points on each module, including the sites of any ports or adapters through which flies are conveyed, as well as the z-clearance above the module needed so that the end-effectors do not collide with the modules in the workspace. These classes can be instantiated in Python files that represent workspace configurations (Examples/ExampleWorkspace1.py). Beyond the module class files, there is a master MAPLE class file (robotutil.py), which 1) establishes the communications connections between the experiment-coordinating computer and the motion control card and camera in MAPLE and 2) contains functions for all low-level robot operations, like returning to the 0,0,0 home position, moving to an arbitrary position, opening or closing the solenoid valves that control the vacuum flow in the end effectors, or acquiring a photo from the end-effector camera. There is also a file (commonFlyTasks.py) that contains subroutines for common usage tasks, like the combination of end effector movements, vacuum and air valve engagement, and Fly Dispenser serial commands required to retrieve a fly from the Fly Dispenser adapter on the workspace. Files of an additional type, experimental scripts, implement the actual experimental procedures (e.g., Figure 3\u2014figure supplement 3; Video 4). Each of these scripts load the class files for the modules used in their respective experiments, and procedurally calls the low- and mid-level functions of robotutil.py to implement each procedure. See Figure 3\u2014figure supplement 2 for a schematic of the software architecture. Lastly, to increase the convenience of using MAPLE, we implemented a remote control system in which representations of the current status of experiments (e.g. text reports and digital images) are posted to a dedicated email account. This account can also receive MAPLE commands by email to remotely trigger experimental procedures.\n\n### Workspace\n\nThe workspace refers to a 100 cm x 28.2 cm x 7.5 cm volume that can be accessed by all end-effectors. As specified, the workspace is attached to the same frame as the axis carriages, but could be mounted separately to isolate experimental modules from the vibrations of MAPLE\u2019s motors. The bottom of this volume is a clear acrylic floor with 5 mm holes organized in a grid (10 cm apart) and cable pass-throughs for easy organization of individual modules. The 5 mm holes can be used to affix an interchangeable acrylic plate (a \u2018workplate\u2019) to the acrylic workspace floor using nylon thumb screws. Workplates have locating brackets which define the positions of modules in a particular experimental configuration. Thus, every experimental script is associated with a physical workplate that locates the modules used in its experiment.\n\n### Modules\n\nModules were made by a variety of fabrication techniques, including\u00a0laser-cutting of acrylic. Vector outlines of module components were made in Autodesk Inventor or Adobe Illustrator and laser cut by way of CorelDraw. Acrylic components were joined together using Plastruct plastic weld. Phenotyping modules used to investigate affiliative behavior and locomotor handedness, that\u00a0is, social arena and y-maze arrays, measured 30 cm x 30 cm (Figure 3) and were fabricated from sheet acrylic using a laser cutter. Fly source modules were custom made (CO2 pad) or purchased from FlySorter LLC. Fly Dispenser dimensions are 22 cm x 15 cm, CO2 pad dimensions are 25 cm x 15 cm, and FlyPlate dimensions are 16 cm x 10 cm.\n\n### Fly dispenser\n\nThe Fly Dispenser isolates and outputs individual flies from an attached vial. Repeated knocking motion (which mimics the tapping gesture that people use to knock flies down in a vial) causes flies to fall from the vial into a funnel. At the bottom of the funnel, a pair of motorized, soft foam wheels acts as a valve, and a photo interrupter detects when one fly has passed by. The wheels are stopped, preventing other flies from passing through the valve, and an air pump transports the isolated fly out of a tube. The dispensing process can be remotely triggered and monitored by Python scripts via a USB serial interface.\n\n### Dispenser adaptor\n\nMAPLE interfaces with the Fly Dispenser through the dispenser adaptor logistics module. The dispenser adaptor is a 4 cm x 1.5 cm 3D-printed ABS block with two 5 mm diameter plastic Luer lock tube sockets attached on opposite sides. The Dispenser handpiece connects to the bottom side of the dispenser adaptor, while the MAPLE fly manipulator end effector aligns to the opening on the top of the adapter.\n\n### FlyPlate\n\nThe FlyPlate is a modified 96-well plate positioned on a food tray. Each well in the FlyPlate follows the 96-well plate standard for bottomless wells (7 mm in diameter and 10.9 mm deep). Wells have a stainless steel mesh floor that allows feeding but prevents escape. The plate lid has x-shaped laser-cut openings over each well, cut into a flexible nylon mesh, that allow MAPLE\u2019s individual fly manipulator (or a handheld aspirator) to penetrate to remove or deposit flies. The openings close back up once the aspirator/manipulator tip has been removed, keeping flies securely housed. Flies had free access to standard cornmeal diet on the food tray placed below. Food was replaced every 2 days to maintain adequate moisture and freshness and remove eggs and first instar larvae.\n\n### Morgue\n\nThe morgue fly sink module is a 10 cm diameter x 5 cm deep laser-cut acrylic cylinder covered by a detachable lid that allows quick disposal of its contents and is equipped with an nylon mesh adapter (in the style of the well coverings of the FlyPlate) that allows MAPLE to deposit flies into soapy water or ethanol that traps and euthanizes them.\n\n### Fly food vial\n\nThe fly food vial is a standard 2.6 cm x 10 cm vial equipped with a detachable lid that facilitates MAPLE fly depositing. A standard fly culture media vial can be placed into the fly food vial.\n\n### Behavior arena arrays\n\nBehavior phenotyping modules can receive flies in one of two different ways, depending on whether the flies are anesthetized or not. In a traditional experimental style (Ayroles et al., 2015; Buchanan et al., 2015), MAPLE can pick up anesthetized flies from the CO2 pad module with the organism manipulator, pick up the plastic lid covering a behavioral arena with the object manipulator, drop the fly in the arena, and replace the lid. In a MAPLE-optimized experimental style, awake flies are retrieved from the Fly Dispenser or FlyPlate and then transferred directly into the behavioral arena by sliding a multi-position loading port, a slidable clear lid with a 3.5 mm diameter opening through which flies can be deposited and removed, into place above the arena, dropping the fly, and then sliding the port so it is inaccessible to the fly (Figure 3\u2014figure supplement 1 and examples below).\n\n### Social arena array\n\nArenas used for affiliative behavior (Figure 5) and circling bias experiments (Figure 2\u2014figure supplement 1) are circular in shape with a 30 mm diameter and a height of 3 mm. Arenas are covered by a multi-position loading port. Two equal-sized semicircular compartments are formed by a 1.5-mm-thick interaction barrier. Interaction barriers refer to individually laser-cut blocks that can be placed into corresponding openings in the middle of the circular arena, allowing separation of flies into individual compartments. Barriers were laser-cut from either clear or black acrylic and were designed to be either solid or open. Solid barriers were flat on the bottom. Open barriers had 4\u00a0~\u00a00.25 mm horizontal channels connecting the two compartments (Figure 5B; Video 12). Open barriers presumably facilitate the exchange of odor cues between compartments. Barriers could be made of clear acrylic, facilitating visual cues, or black acrylic. A social arena array comprises 81 circular arenas, with 162 semicircular arenas in total.\n\n### Y-maze array\n\nLocomotor handedness was assessed using y-maze arenas (Buchanan et al., 2015). Individual arms of the symmetrical Y-shaped mazes are 15.5 mm long and 120\u00b0 apart. Arm ends are circular (5.2 mm) in shape, making it easier for flies to turn around and permitting loading and unloading flies via multi-position loading ports (Figures 1). Arenas are covered with identical lids as those in the social arena array. A y-maze array comprises 81 y-maze arenas arranged equidistantly in a nine-by-nine grid. All parts described were manufactured from either clear or black acrylic and cut into shape using a laser cutter.\n\n### Yeast\n\nYeast expressing GFP in mitochondria (genotype can1-100 leu2-3,112 his3-11,15 ura3-1 BUD4-S288C RAD5 TRP, mdh1::KAN) were streaked from frozen stocks onto complete supplement mixture media lacking adenine (CME-Ade) and cultured at 30\u00b0C for 1\u20132 days. Cells of this genotype express GFP in mitochondria, and are thus fluorescent under the dissecting scope. MAPLE touched single colonies on the CME-Ade plate and streaked this material onto empty yeast extract-peptone-dextrose (YPD) plates. These target plates were allowed to incubate overnight at 30\u00b0C prior to imaging.\n\n### Caenorhabditis\u00a0elegans\n\nWe imaged N2 worms of mixed sexes and ages on standard growth media plates consisting of nematode growth medium in 1.7% agar with an OP50 E. coli lawn. Locomotion was recorded at 1 Hz at room temperature (21\u00b0C).\n\n### Physarum\n\nWe inoculated petri dishes containing 2% agar in water with\u00a0~3 mm diameter excised pieces of an oatmeal-fed, actively growing Physarum plasmodium. These were allowed to recover from excision and plating for\u00a0~12 hr at 21\u00b0C prior to the collection of the 12 hr 0.017 Hz time-lapse movie in MAPLE, which was also conducted at 21\u00b0C.\n\n### Fly lines\n\nAll experiments were performed using Canton-S (wild type), Orco, NorpA, or w1118 lines. Mutant lines were homozygous. We raised flies on CalTech\u00a0formula cornmeal mediaunder 12 hr/12 hr light and dark cycle in an incubator at 25\u00b0C and 70% humidity. Flies were anesthetized using carbon dioxide (CO2) and housed in vials of 15 to 20 flies, unless otherwise specified. Five days post-eclosion, flies were aspirated into individual wells in the FlyPlate using CO2 and used for experimentation after at least 2 hr of recovery.\n\n### General fly experimental procedures\n\nAll experiments were conducted between 9AM and 9PM (ZT0-ZT12). Flies were loaded into individual arenas by MAPLE; arenas that remained empty after two iterations were loaded manually using an aspirator. Flies were later removed from their arenas in an identical fashion. FlyPlates, social arenas, and y-maze arrays were filled with 96, 162, and 81 flies, respectively. Flies were assayed using diffused white LED backlighting (Buchanan et al., 2015) in a temperature (23\u00b0C) and humidity (41%) controlled behavioral observation room. Fly movement was tracked for 1 hr. Fly tracks were analyzed using a custom MATLAB script. For longitudinal assaying, flies were moved back into the FlyPlate after phenotyping and allowed to feed and rest overnight or for 1 hr at minimum.\n\n### Behavior measurement\n\nFly movement was tracked at 29.9 fps using a custom real-time MATLAB script interfacing with a Firefly MV FMUV-13S2C USB-camera. Tracks were analyzed in MATLAB. In total, 3% of the data were discarded because flies were immobile as determined by mean speed thresholds.\n\n### Statistics\n\nUnless otherwise specified, all confidence intervals were computed by bootstrapping the data associated with individual flies or individual fly dyads (in the case of social interaction measurements) 1000 times, using custom MATLAB scripts. One standard deviation of the bootstrap estimates was our estimate of the standard error of the estimate. P-values reported were adjusted for multiple comparisons using the Bonferroni correction where applicable, and asterisks reflect post-correction significance.\n\n### Specific experimental procedures\n\n#### Activity and speed MAPLE handling control experiments\n\nFlies were loaded into a FlyPlate in accordance with general experimental procedures. MAPLE removed every second fly from its individual well and released it back after a 1 s delay 10 times in a row (48 flies total MAPLE-handled). This procedure was repeated three times so that every second fly was handled 30 times in total after 1 hr (Figure 2A\u2013D). Flies were then monitored according to general experimental procedures. The preceding steps constituted one handling session. There were five handling sessions lasting 10 hr in total.\n\n#### Manual vs MAPLE-handling control experiments\n\nFlies were loaded into the y-maze array according to general experimental procedures (Figure 2E\u2013H). MAPLE loaded a random arena compartment (81 flies total) of each arena in the social arena tray to prevent dyad-neighbors influencing circling behavior. Flies were observed as described in general experimental procedures. Flies were discarded into morgue fly sink module after phenotyping.\n\n#### Virgin-picking procedure\n\nTen male and 20 female CS between 5 and 7 days post-eclosion are placed in custom dispenser-type vials. These custom virgin-picking vials are 10 cm long x 4 cm in diameter open cylinders with a bottom that attaches by press-fit. Standard cornmeal diet was poured in the bottom portion and allowed to cool down prior to fly introduction. Flies were anaesthetized using CO2 and placed in the vial. After 2 days of egg-laying in the incubator (25\u00b0C), parental flies were discarded and the vial was placed back in the incubator. After 9 days, the bottom portion of the vial containing the food was removed from the container. The food was discarded and the container washed and reattached to the vial. The vial now only contained animals that pupated on the sides of the open cylindrical portion of the vial (Video 10).\n\nThe vial was then placed into the Fly Dispenser and MAPLE\u2019s virgin-picking subroutine was engaged. Every 30 min, the Fly Dispenser attempted to dispense any eclosed flies while MAPLE aligns its fly manipulator end effector to the fly dispenser adapter (Figure 3\u2014figure supplement 3A). If a fly was successfully dispensed, MAPLE deposited it into a FlyPlate in the workspace. If at any point no fly is dispensed, MAPLE and the Fly Dispenser paused for a 30-min waiting period before a new dispensing attempt was made. Over 3 days, MAPLE continued to load newly eclosed flies into individual FlyPlate wells until pupa were exhausted (Video 10). FlyPlate wells containing multiple flies were manually emptied with an aspirator. The remaining flies were manually anesthetized using CO2 and their sex assessed under a dissecting microscope. After sexing, flies were returned to their individual wells. The FlyPlate fly source module including food tray was removed from the workspace and placed inside a sealed plastic container. After 10 days, the food tray was examined for larvae, eggs, and newly hatched flies. When none were found, the single flies MAPLE placed into individual FlyPlate wells were considered virgins.\n\n#### Virgin-picking MAPLE/manual comparison\n\nTo allow a fair head-to-head comparison between manual virgin collection and MAPLE-assisted virgin collection, our approach was to start and end both procedures in identical circumstances (bottles of\u00a0parental flies, and vials containing virgin\u00a0progeny females, respectively). Two standard bottles containing 10 male and 20 female CS flies 5\u20137 days post-eclosion were allowed to mate and lay eggs for 3 days. After 3 days, flies were removed and egg- and larvae-containing agar was transferred with a spatula among five standard vials and one custom dispenser-type vial. The amount of virgin females automatically picked by MAPLE was assessed according to the virgin-picking procedure described above. Total time required was computed as the total time required for every step of the process, including preparation, manual sexing, and cleanup. Virgin female count, virgin female ratio, and time required for manual virgining was assessed by twice daily (9AM and 9PM) manual virgin-picking from five virgin-producing standard culture vials.\n\n#### Social interaction paradigm validation\n\nSocial arenas were prepared by manually inserting the appropriate interaction barrier type into the arena array prior to introducing flies. Flies were loaded into social arena arrays according to general experimental procedures. To minimize behavioral confounds caused by disparate loading times, one social arena compartment (i.e. all the left compartments) was filled first. This ensured that flies in social arenas loaded earlier were allowed minimal additional time to familiarize with or habituate to their dyad-neighbor. Phenotyping arrays were moved into behavior-recording boxes according to general experimental procedures. After assaying, flies were manually removed from trays and discarded.\n\n#### Social behavior day-to-day persistence (Scheme 1)\n\nFlies were loaded into social arena arrays, assayed, and deposited into FlyPlates after phenotyping according to general experimental procedures. Dyads were randomly determined on the first day. Flies were phenotyped once per day. Fly identity and dyad composition was maintained throughout 6\u00a0assaying days. Compartments and arenas were loaded in a randomized fashion each day. On the 7th day, Canton-S flies in the open-clear interaction barrier condition were randomly placed in social arena compartments to form physically shuffled dyads to complement computational shuffling for resampling statistics.\n\n#### Social behavior persistence (Scheme 2)\n\nFlies were loaded into social arena arrays, assayed, and deposited into FlyPlates after phenotyping according to general experimental procedures. Each fly was randomly assigned to be part of 10 dyads on the first day. Flies were assayed six times per day for 7 days. Fly identity was maintained throughout the experimental duration by storing flies individually. In total, each dyad was phenotyped four times. We averaged behavioral measures across the first and last two phenotyping sessions.\n\n#### Social interaction network (SIN) persistence (Scheme 3)\n\nFlies were born in the Fly Dispenser and deposited into FlyPlates according to the virgin-picking procedure. Two groups of 10 flies each were assayed and deposited back into FlyPlates after phenotyping according to general experimental procedures. Flies were assayed six times per day for 3 days to exhaust each possible dyad combination twice.\n\n### Social interaction analyses\n\n#### Interactivity index\n\nA dyad\u2019s interactivity index was defined as the correlation of dyad-neighbors\u2019 distances to the interaction barrier over the entire experimental duration (Figure 5B\u2013D). Distance was defined as the euclidean distance between a fly\u2019s centroid and the closest side of the interaction barrier.\n\n#### Coincidental approaches\n\nWe defined a coincidental approach as an interval in which both flies in a dyad were located within one body-length (3 mm) of the interaction barrier on the same frame. This definition of social interaction yielded qualitatively similar results to the interactivity index (Figure 5\u2014figure supplement 2). Distance to the barrier was defined as the euclidean distance between a fly\u2019s centroid and the nearest side of the barrier. A coincidental approach was scored as a single event irrespective of its duration. For each subsequent coincidental approach to be valid, at least one fly was required to leave and re-enter the 3 mm zone. Coincidental approaches were normalized for dyad mean speed over the experimental duration. Dyad mean speed was the grand mean of both dyad-neighbors\u2019 mean speed.\n\n#### SIN connection threshold\n\nIn the graph representation of social interactions, edges between flies in the network were retained if the absolute value of their interactivity index was greater than the mean of the first and third quartiles of all dyads\u2019 absolute interactivity indices. The same threshold was applied to both repetitions of the SIN measurement (Figure 5J).\n",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "ff940b21-9890-44de-ab1f-99505fcc6b64",
+      "submission_id": "52812f8b-e7bc-44cf-8295-047e4e585f6e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- Catharine H Rankin, University of British Columbia Canada\n- Giorgio F Gilestro, Imperial College London United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.37166.036](https://doi.org/10.7554/eLife.37166.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"MAPLE (Modular Automated Platform for Large-scale Experiments), a robot for integrated animal-handling and phenotyping\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ronald L Calabrese as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Giorgio F. Gilestro (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this Tools and Resources manuscript, the authors report on developing a multifunctional robot system for handling model organisms. Specifically, they developed a Modular Automated Platform for Largescale Experiments (MAPLE), an organism handling robot capable of conducting lab tasks and experiments, and then adapted it with different organism specific modules and used it to conduct common experimental procedures in Saccharomyces cerevisiae, Caenorhabditis elegans, Physarum polycephalum, Drosophila melanogaster, and Bombus impatiens. They focused on its applicability to D. melanogaster. They show in detail how it can be used to reduce the time commitment to virgin collection with high fidelity. They also use it to study dyadic social interactions. They replicate previous experimental results on the role of visual and olfactory cues and specificity of dyadic interaction and produce the novel result that dyadic interactions persist over multiple days. Thus, they demonstrate it's potential in the laboratory. They provide detailed methods and open source plans for producing a MAPLE, and they convincingly argue that the modular design will allow innovation and adaption to new organisms and experimental procedures. This should be a useful tool for many research labs.\n\nEssential revisions:\n\nThe discussion requested by reviewer #2 of potential liquid handling is important and should be directly addressed.\n\nThere is a specific concern about the social network biology raised by reviewer #2 that should be addressed.\n\nThere is a specific concern raised by reviewer #2 for comparisons to manual processes for animals other than flies that should be addressed.\n\nBoth reviewer #2 and #3 want a more thorough discussion of the limitations of MAPLE and provide clear indications of how to proceed in their comments.\n\nAll reviewers agree that the manuscript could be made more concise, especially given the extensive supplementary material.\n\nReviewer #2:\n\n- There is no comparison of MAPLE's capability to manual experimenters for any other organism making it difficult to determine if the initial feasibility demonstrations represent true advances in throughput with automation or automation alone. For example, measuring videos of multiple plates of C. elegans is a rather trivial advance, as switching plates on any standard behavior tracking system takes only a few seconds. A real advance for C. elegans would be the ability to pick (or liquid-transfer) or chunk populations of automatically maintained worms to new plates without damaging them for phenotypic analysis.\n\n- Does MAPLE have liquid-handling capabilities? If not, can it be adapted to? It would be ideal if a drug treatment and/or the same robot that handles animals could apply liquid or gaseous stimuli. For example, MAPLE could administer repeated doses of chemicals to a single fly at precise times over long time scales to see how this alters dyad behavioral structure. While it is likely beyond the scope of the present work to build in liquid-handling capabilities to MAPLE it would be beneficial to discuss this limitation and potential ways this important capacity might be incorporated into the system.\n\n- The authors present their social arena arrays as a solution to the problem of maintaining object ID during population-based social interaction assays. While it does solve the problem of maintaining object IDs, this experiment now gives the flies a choice between a partner and a wall, not a partner or another fly. While novel data presented here are convincing that individual flies prefer certain other flies consistently, it is still not clear whether this individual preference would be consistent if in a population of other interacting flies/potential partners. This limitation and implications for understanding Drosophila social architecture should be discussed.\n\n- There should be a succinct cross-species discussion and comparison of the extensive number of microfluidic devices designed for the same purpose as MAPLE. These systems allow for easy animal handling, automation and high-throughput phenotyping and are available for many of the organisms studied in this work. MAPLE offers several advantages of these systems that should be discussed. In addition, there should be a mention of caveats- of areas in which the system has limitations.\n\nReviewer #3:\n\nThe only weakness of this work is that it is not clearly stated what the limitations of the system are at this stage and how easily (if at all) they could be solved. The manuscript has a very general \"optimistic\" outlook and it is not clear for me as a reader whether MAPLE could work out of the box for my purposes, which may be quite different from the ones of the authors. The only reported weakness in the provided examples is the one shown in Figure 3. Perhaps the discussion could feature a more comprehensive analysis of strengths vs. weaknesses of the current system. Example of current weaknesses could be: can MAPLE set up crosses automatically beside collecting virgins? does it ever get stuck? what is the longest autonomous experiment in self-drive you performed? can multiple \"phenotyping modules\" operate at the same time?\n\nFinally: I usually do not comment on writing style because I do enjoy reading manuscripts with different, personal touches. However, in this particular case, I think the manuscript would benefit quite a bit from being shortened. The Introduction, for instance, is quite repetitive and uses too many words to stress an important but relatively easy concept. Some of the results could probably be moved to supplementary or not being shown at all (for instance, Figure 3B does not really add much \u2013 it's enough to know what the error rate is. Knowing the position of the wrong vials in that particular trial is too much information).\n\nThis is ultimately a joint author/editorial decision, but my recommendation would be to shorten the manuscript quite a bit.\n",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "00954f67-f26a-4278-b2d8-8fce66916182",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C1",
+      "claim": "MAPLE is a modular automated platform for large-scale experiments that is a robot for integrated organism-handling and phenotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "MAPLE (modular automated platform for large-scale experiments), a robot for integrated organism-handling and phenotyping",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the title of the manuscript and directly states what MAPLE is.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "ffb9a4b4-bcba-43d0-9130-d84e294331df",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C2",
+      "claim": "MAPLE can conduct common experiments in Saccharomyces cerevisiae, Caenorhabditis elegans, Physarum polycephalum, Bombus impatiens, and Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a modular automated platform for large-scale experiments (MAPLE), an organism-handling robot capable of conducting lab tasks and experiments, and then deployed it to conduct common experiments in Saccharomyces cerevisiae, Caenorhabditis elegans, Physarum polycephalum, Bombus impatiens, and Drosophila melanogaster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that MAPLE was deployed to conduct experiments in these five species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "5b99ec7f-6101-42c0-8972-8a45ccd34191",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C3",
+      "claim": "MAPLE developed a suite of experimental modules that permitted the automated collection of virgin females.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on fruit flies, we developed a suite of experimental modules that permitted the automated collection of virgin females and execution of an intricate and laborious social behavior experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that experimental modules were developed for automated virgin female collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "184b8090-dd1c-4586-9442-2d3c85dc798b",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C4",
+      "claim": "Pairs of flies exhibit persistent idiosyncrasies in social behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that (1) pairs of flies exhibit persistent idiosyncrasies in social behavior, which (2) require olfaction and vision, and (3) social interaction network structure is stable over days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly lists this as a discovery from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "33625b15-ddd0-4203-8f63-3b805c1a6582",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C5",
+      "claim": "Fly social behavior idiosyncrasies require olfaction and vision.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that (1) pairs of flies exhibit persistent idiosyncrasies in social behavior, which (2) require olfaction and vision, and (3) social interaction network structure is stable over days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that the social behavior idiosyncrasies require olfaction and vision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "2b891443-7971-409f-9ba1-7fc7fadbd7c3",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C6",
+      "claim": "Social interaction network structure is stable over days.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that (1) pairs of flies exhibit persistent idiosyncrasies in social behavior, which (2) require olfaction and vision, and (3) social interaction network structure is stable over days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a discovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7364c37e-ff93-47af-8caf-f6be5987c16f",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C7",
+      "claim": "Genetic model organisms are used to advance biological understanding in disease and its treatment, basic cell biology, neuroscience and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic model organisms are used to advance our biological understanding in numerous areas including disease and its treatment, basic cell biology, neuroscience and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "a4c8c89c-b0e8-47ff-b82e-7877fc2e7435",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C8",
+      "claim": "Saccharomyces cerevisiae, Caenorhabditis elegans, and Drosophila melanogaster are desirable lab model organisms due to their rapid reproduction, ease of rearing, and deep genetic toolkits.",
+      "claim_type": "EXPLICIT",
+      "source": "Species like Saccharomyces cerevisiae, Caenorhabditis elegans, and Drosophila melanogaster are desirable lab model organisms due to their rapid reproduction, ease of rearing, and especially their deep genetic toolkits comprising strains with varying genotypes and transgenic alterations that permit rapid, mechanistic inquiries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about model organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "bf9b4f04-5b4f-4fd4-862e-378262747e66",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C9",
+      "claim": "Screen experiments quantify the phenotypes of hundreds to hundreds of thousands of individual animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To take advantage of these toolkits, screen experiments quantify the phenotypes of hundreds (Vitaterna et al., 1994), thousands (Kain et al., 2012), tens of thousands (Ayroles et al., 2015; Buchanan et al., 2015; Churgin et al., 2017) or even hundreds of thousands of individual animals (Robie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7c7b393c-6b52-4c99-a439-315b44d15064",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C10",
+      "claim": "The time needed to manually handle experimental animals remains the bottleneck limiting data collection despite improvements in machine vision phenotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "With the ongoing improvement and widespread adoption of high-performance machine vision phenotyping (Branson et al., 2009; Dankert et al., 2009; Kabra et al., 2013; Kimura et al., 2014), the time needed to manually handle experimental animals remains the bottleneck limiting data collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current limitation in the field, supported by citations about machine vision.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "9252157d-9ac4-45ff-b22d-7af4ca9b8c45",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C11",
+      "claim": "Liquid-handling robots have radically changed the face of molecular biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of liquid-handling robots has radically changed the face of molecular biology, enabling techniques and experiments that had long been imagined, but were too complex, lengthy, or tedious to have been previously realized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the impact of liquid-handling robots.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "beadb58a-3d41-4201-b4d8-df1b0884c71e",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C12",
+      "claim": "There are no comparable systems for handling of experimental organisms that are larger than ~1 mm or cannot be suspended in liquid.",
+      "claim_type": "EXPLICIT",
+      "source": "But there are no comparable systems for handling of experimental organisms that are larger than ~1 mm or cannot be suspended in liquid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "08769e28-3ebb-4b6e-b3bb-258d58a8469d",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C13",
+      "claim": "Fly flipping robots exist but take up a whole room, cost hundreds of thousands of dollars, and are inaccessible to most labs.",
+      "claim_type": "EXPLICIT",
+      "source": "There are large-scale systems that handle adult flies in vials, in the form of 'fly flipping' robots. However, these take up a whole room, generally in a core facility, and cost hundreds of thousands of dollars to purchase and maintain, and are therefore inaccessible to most labs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes existing technology and its limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "79b59108-220a-4677-8045-d3e774027238",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C14",
+      "claim": "MAPLE costs approximately $3,500.",
+      "claim_type": "EXPLICIT",
+      "source": "Its low cost (~$3,500), programmability, and scalability permit large-scale experiments that take advantage of the many benefits lab model organisms offer, such as huge fly genetic libraries containing thousands of lines (Jenett et al., 2012; Thibault et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The cost is explicitly stated in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "bb2d93f4-b5dd-40f3-929d-6ee46e0936a8",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C15",
+      "claim": "MAPLE features a large, flat experimental workspace with room for multiple flexibly-configurable experimental modules.",
+      "claim_type": "EXPLICIT",
+      "source": "With the high level goals of modularity, scalability, and automatability in mind, we designed the MAPLE system with the following design constraints: (1) It features a large, flat experimental workspace with room for multiple flexibly-configurable experimental modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design constraint that was implemented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "736f9e5a-0e33-462f-9c6a-aff55d7e172f",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C16",
+      "claim": "MAPLE's workspace is physically open for user convenience, and transparent on the top and bottom for in situ optical phenotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) This workspace is physically open for user convenience, and transparent on the top and bottom for in situ optical phenotyping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design constraint that was implemented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "249f47b5-4e3f-401f-a52e-1805f16c375b",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C17",
+      "claim": "Multiple end-effectors can move throughout MAPLE's workspace to handle organisms, capture images, and manipulate experimental modules.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Multiple end-effectors can move throughout the workspace to handle organisms, capture images, and manipulate experimental modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design constraint that was implemented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "8640f8f4-7a1d-40af-b438-05335c7b5e42",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C18",
+      "claim": "MAPLE features failsafe mechanisms so that users can leave it unattended without worrying that it would damage itself or experimental modules.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) It features failsafe mechanisms so that users can leave it unattended without worrying that it would damage itself or experimental modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design constraint that was implemented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "157e4de8-5456-4d9e-94a5-dc6593336b74",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C19",
+      "claim": "MAPLE is relatively inexpensive and scalable.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) It is relatively inexpensive and scalable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design constraint that was implemented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "502a39d8-6003-46ea-a852-ef718301cff6",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C20",
+      "claim": "MAPLE was built using extruded aluminum rails to support x-, y-, and z-carriages mounted on linear rails in a Cartesian configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "MAPLE (Figure 1, Figure 1\u2014figure supplement 1A) was built using extruded aluminum rails to support x-, y-, and z-carriages mounted on linear rails in a Cartesian configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical construction of MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "30b80762-721e-4a1a-9627-588ecf34cf98",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C21",
+      "claim": "MAPLE employs the CoreXY system, which reduces the mass of the moving part of the X/Y gantry by fixing the stepper motors on the frame.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed the CoreXY system (Moyer, 2012), which reduces the mass of the moving part of the X/Y gantry by fixing the stepper motors on the frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific design choice with citation to the CoreXY system.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "962f7054-3e7e-436b-86e0-3e202d9a1b34",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C22",
+      "claim": "MAPLE moves at speeds roughly 80% as fast as human hands conducting experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "(However, for the speeds at which we run MAPLE, which are roughly 80% as fast as human hands conducting experiments (Video 1), mounting the y-axis stepper motor on the x-axis carriage would likely not reduce performance.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measured performance characteristic with reference to a video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7d4f16bb-5193-416f-957d-4bf8d159ce8f",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C23",
+      "claim": "MAPLE programmed to transfer yeast cells from a single colony on a source plate to target plates and streak the cells out to grow new colonies from single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For yeast, we programmed MAPLE to transfer yeast cells from a single colony on a source plate to target plates and streak the cells out to grow new colonies from single cells (Figure 1B, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental procedure performed with MAPLE, with reference to figure and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e45dc791-1eba-4106-a7fa-72fe3db571fe",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C24",
+      "claim": "MAPLE's camera is of high enough fidelity to capture C. elegans worm behavior on the spatial scale of foraging on bacterial lawns.",
+      "claim_type": "EXPLICIT",
+      "source": "For C. elegans, we used MAPLE's camera effector to record 1 Hz movies of worms foraging on a lawn of OP50 bacteria (normal C. elegans culture conditions; Figure 1C). We tracked these worms offline to produce Video 5, demonstrating that MAPLE's camera is of high enough fidelity to capture worm behavior on this spatial scale.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a demonstration of MAPLE's camera capabilities with reference to figure and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "829e7e97-6e00-40cb-b94d-4201162b9ecc",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C25",
+      "claim": "MAPLE recorded plasmodia movement over 12 hours by taking a photo of each plate once per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, for the slime mold Physarum, we plated nine plasmodia on nine plates of 2% agar (Figure 1D). We programmed MAPLE to take a photo of each plate once per minute and recorded plasmodia movement over the next 12 hr (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental procedure performed with MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "de019e54-763a-4002-a8b1-d72cd7bbf41a",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C26",
+      "claim": "MAPLE-handled flies were statistically indistinguishable from unhandled flies in the fraction that were active across imaging sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies handled by MAPLE were statistically indistinguishable from unhandled flies both in the fraction that were active across imaging sessions (Figure 2C; b = \u22120.02, t(477) = \u22120.098, p=0.92 by multinomial logistic regression) and in their mean walking speed across imaging sessions (Figure 2D; F(4, 376)=0.51, p=0.73 by mixed-effects ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from a control experiment comparing MAPLE-handled and unhandled flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "ece64aa5-90d4-4ab4-8c14-aed2c4a883c9",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C27",
+      "claim": "MAPLE-handled flies were statistically indistinguishable from unhandled flies in their mean walking speed across imaging sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies handled by MAPLE were statistically indistinguishable from unhandled flies both in the fraction that were active across imaging sessions (Figure 2C; b = \u22120.02, t(477) = \u22120.098, p=0.92 by multinomial logistic regression) and in their mean walking speed across imaging sessions (Figure 2D; F(4, 376)=0.51, p=0.73 by mixed-effects ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from a control experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "6bdc89ca-3769-4660-b2ba-f8eef3166d92",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C28",
+      "claim": "The across-individual distribution of walking speeds was statistically indistinguishable between manual and MAPLE-handled flies in Y-maze experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The across-individual distribution of walking speeds was statistically indistinguishable between the manual and MAPLE-handled group (Figure 2G; p=0.61 by KS-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from a control experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "80d6e87a-3246-40f4-94c9-77340fbb88a7",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C29",
+      "claim": "The across-individual distribution of turning bias was indistinguishable between manual and MAPLE-handled flies in Y-maze experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the across-individual distribution of turning bias (the tendency of individuals to turn left or right at the choice point in the center of the Y-maze) was indistinguishable between handling treatments (Figure 2H; p=0.74 by KS-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from a control experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "1501258c-fc05-45f4-91f4-1180179ba8f9",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C30",
+      "claim": "MAPLE components cost approximately $3500.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) MAPLE components cost approximately $3500.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement of the cost of MAPLE components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7b96744a-f76c-49b9-b43e-c59c0ee215b6",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C31",
+      "claim": "MAPLE's bill of materials, assembly instructions, and code libraries have been made public under open source licenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Its bill of materials (Supplementary file 1, assembly instructions (Supplementary file 2), and code libraries (see Materials and methods for links) have been made public under open source licenses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states that materials have been made publicly available.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "baea4352-da18-4acb-9ce0-379ebc520580",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C32",
+      "claim": "MAPLE measures 43.5 cm in the y-dimension permitting mounting in standardized 19' rack systems.",
+      "claim_type": "EXPLICIT",
+      "source": "MAPLE measures 43.5 cm in the y-dimension permitting mounting in standardized 19' rack systems, so multiple robots can be arranged compactly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physical specification of MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "9fdbc8c5-db37-4247-9e54-a2ad98cf2e64",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C33",
+      "claim": "The Fly Dispenser isolates and outputs individual flies from an attached vial.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fly Dispenser isolates and outputs individual flies from an attached vial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the function of the Fly Dispenser module.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "67f737eb-53c2-4f7b-968e-2658c698af8c",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C34",
+      "claim": "FlyPlates are modified 96-well plates in which the floor has been replaced with a metal mesh, allowing flies stored in the wells to feed on fly media below the plate.",
+      "claim_type": "EXPLICIT",
+      "source": "FlyPlates (FlySorter LLC) are modified 96-well plates in which the floor has been replaced with a metal mesh, allowing flies stored in the wells to feed on fly media below the plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the FlyPlate module.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "21877bc2-5369-4f96-93a8-64246bc7cb8e",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C35",
+      "claim": "Virgin females were procured at a rate of 1.5/min using manual virgin-collecting and 4.9/min using MAPLE virgin-collecting.",
+      "claim_type": "EXPLICIT",
+      "source": "In a head-to-head comparison of typical manual virgin-collecting (picking at the beginning and end of the work day from five vials) versus MAPLE virgin-collecting, virgin females were procured at a rate of 1.5/min (including the time needed to bring vials from the incubator, anesthetization, etc.) and 4.9/min using MAPLE (including the time to set up the pupa vial, load the dispenser, manually sex and sort the flies, etc.) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of manual vs MAPLE-assisted virgin collection rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "1293d01e-6dbd-4d19-bf6a-127d38d696a9",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C36",
+      "claim": "It is known from group behavioral experiments that individuals spend more time interacting with specific other individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known from group behavioral experiments that individuals spend more time interacting with specific other individuals (Simon et al., 2012), and such interaction-based SINs remain stable over tens of minutes in fruit flies (Schneider et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "6044a814-8028-4941-822e-ecb28cc6654e",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C37",
+      "claim": "Interaction-based social interaction networks remain stable over tens of minutes in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known from group behavioral experiments that individuals spend more time interacting with specific other individuals (Simon et al., 2012), and such interaction-based SINs remain stable over tens of minutes in fruit flies (Schneider et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "cea03b59-eafb-4248-9001-6a877931b49c",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C38",
+      "claim": "In the forked fungus beetle Bolitotherus cornutus, dyadic interactions are stable for days.",
+      "claim_type": "EXPLICIT",
+      "source": "In other species, such as the forked fungus beetle Bolitotherus cornutus, these dyadic interactions are stable for days (Formica et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "020102a6-2cfc-49a7-87ad-ea72cc33a107",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C39",
+      "claim": "It is unknown if dyad-specific affiliative measures are stable over longer periods of time in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it is challenging to perfectly maintain individual identity through experiments in which multiple individuals are in the same compartment and subsequently retrieved, stored and retested, it is unknown if dyad-specific affiliative measures are stable over longer periods of time in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states a gap in knowledge that motivated the experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "682bd1b9-54dc-451b-8ed0-bf7b358ef63c",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C40",
+      "claim": "Male-female and female-female dyads produced the same distribution of interactivity indices.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that male-female and female-female, although not male-male, dyads produced the same distribution of interactivity indices (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the social interaction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "8778410e-7eaf-45e0-a1bd-ab0f716ab33d",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C41",
+      "claim": "The observed distribution of interactivity indices was significantly different compared to shuffled controls that scramble dyadic pairings.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed distribution was significantly different compared to shuffled controls that scramble dyadic pairings (Figure 5\u2014figure supplement 1B; p<0.0001 by KS-test), indicating that interactions are dyad-specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result indicating dyad-specific interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7c9a75de-5887-4921-8ecc-c9cb3bcb4e1f",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C42",
+      "claim": "Dyads separated by barriers that limit sensory cues exhibited significantly lower mean absolute interactivity indices.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyads separated by barriers that limit sensory cues exhibited significantly lower mean absolute interactivity indices (Figure 5F), indicating that both olfactory and especially visual cues drive differences in dyadic interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments with different barrier types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "be18488a-e5b7-493d-ba24-97cd983ac18c",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C43",
+      "claim": "Visual cues can mediate social modulation of behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with reports that visual cues can mediate social modulation of behavior (Kim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as consistent with prior work, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "a9170ba6-4cdd-47ef-af18-b5c88a2ec04b",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C44",
+      "claim": "Anosmic Orco mutant flies showed a significant 65% reduced mean absolute interactivity index, even with open-clear barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, anosmic Orco mutant flies (Vosshall and Hansson, 2011) showed a significant 65% reduced mean absolute interactivity index, even with open-clear barriers (p=0.00048 by t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments with Orco mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "85575884-095f-4b22-93f4-43ccd5b0c220",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C45",
+      "claim": "Blind NorpA mutant flies did not differ significantly from wild type flies in mean absolute interactivity index.",
+      "claim_type": "EXPLICIT",
+      "source": "Blind NorpA mutant flies (Kim et al., 1995) did not differ significantly from wild type flies in mean absolute interactivity index (p=0.26 by t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experiments with NorpA mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "4fdb58e9-266c-4c5e-9911-962dafdbd4a3",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C46",
+      "claim": "Flies with mutations in the white gene (w1118) showed a 50% increase in absolute interactivity index which was statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies with mutations in the white gene (w1118) have reduced visual acuity (Markow and Scavarda, 1977) but showed a 50% increase in absolute interactivity index which was statistically significant (p=0.013 by t-test), suggesting that social partner visual recognition does not require fine acuity (Justice et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments with w1118 mutants, with citations to prior work on visual acuity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7295832e-a9d1-4b97-92c6-d93e4965b5d5",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C47",
+      "claim": "Interactivity indices across Canton-S dyads were statistically significantly correlated between day 1 vs. day 2, day 2 vs. day 3 and day 3 vs. day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactivity indices across Canton-S dyads were statistically significantly correlated (0.31 < r < 0.38, 0.0001 < p < 0.04) between day one vs. day 2, day 2 vs. day 3 and day 3 vs. day 4 (Figure 5G), but not days 4 vs. 5 or 5 vs. 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from longitudinal social interaction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "970efc0c-12e2-433c-b7ec-147882dabcf4",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C48",
+      "claim": "Dyad-specific affiliative behavior appears to be stable over days-long timescales, though only for the first days of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dyad-specific affiliative behavior appears to be stable over days-long timescales, though only for the first days of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation results across days.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7349491e-d1df-4445-9d5b-44a8ec1889aa",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C49",
+      "claim": "Canton-S flies with solid-black barriers exhibited no significant correlation in dyad interactivity indices across days.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments, Canton-S flies with solid-black barriers and NorpA and Orco mutant flies exhibited no significant correlation in dyad interactivity indices across days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "85fe9758-fcff-45d7-b4aa-f5ba82dcef28",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C50",
+      "claim": "NorpA mutant flies exhibited no significant correlation in dyad interactivity indices across days.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments, Canton-S flies with solid-black barriers and NorpA and Orco mutant flies exhibited no significant correlation in dyad interactivity indices across days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e56e983f-bcb0-4f41-8f4e-e974f4ad473e",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C51",
+      "claim": "Orco mutant flies exhibited no significant correlation in dyad interactivity indices across days.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments, Canton-S flies with solid-black barriers and NorpA and Orco mutant flies exhibited no significant correlation in dyad interactivity indices across days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "b70539a7-5ab1-486f-8380-150c9c9eab7a",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C52",
+      "claim": "MAPLE is versatile, scalable, and relatively inexpensive.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed MAPLE, a modular, automated platform for large-scale experiments, to expand automated experimental capabilities for lab model organisms (Figure 1). By design, MAPLE is versatile, scalable, and relatively inexpensive, with all components of the core fly-handling robot costing roughly $3500.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a design goal that was achieved.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e23c6204-221e-4db6-9813-5593080efb32",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C53",
+      "claim": "MAPLE can autonomously record C. elegans behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We displayed the versatility of this system by adapting the MAPLE platform to detect, place, and streak out individual S. cerevisiae colonies (Figure 1B), autonomously record C. elegans behavior (Figure 1C) and P. polycephalum movement (Figure 1D), as well as automatically monitor the behavior of multiple bumblebee colonies over long periods (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a demonstration of MAPLE's versatility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "0a0598c5-0f72-418a-bea9-5806289d49cb",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C54",
+      "claim": "MAPLE can autonomously record P. polycephalum movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We displayed the versatility of this system by adapting the MAPLE platform to detect, place, and streak out individual S. cerevisiae colonies (Figure 1B), autonomously record C. elegans behavior (Figure 1C) and P. polycephalum movement (Figure 1D), as well as automatically monitor the behavior of multiple bumblebee colonies over long periods (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a demonstration of MAPLE's versatility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "a130e402-8f98-43e1-8465-72315c3bd345",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C55",
+      "claim": "MAPLE can automatically monitor the behavior of multiple bumblebee colonies over long periods.",
+      "claim_type": "EXPLICIT",
+      "source": "We displayed the versatility of this system by adapting the MAPLE platform to detect, place, and streak out individual S. cerevisiae colonies (Figure 1B), autonomously record C. elegans behavior (Figure 1C) and P. polycephalum movement (Figure 1D), as well as automatically monitor the behavior of multiple bumblebee colonies over long periods (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a demonstration of MAPLE's versatility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e83cfcf5-011b-4e18-838c-b3dc044ac226",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C56",
+      "claim": "MAPLE did not discernibly alter the baseline behavior of animals compared to manual handling.",
+      "claim_type": "EXPLICIT",
+      "source": "After demonstrating that MAPLE did not discernibly alter the baseline behavior of animals compared to manual handling (Figure 2), we developed a procedure by which MAPLE could help conduct a repetitive lab chore that nearly all Drosophila biologists are familiar with \u2014 collecting virgin females for genetic crosses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "5c3d1ebb-5c57-43fe-89dd-ebbc1648e5df",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C57",
+      "claim": "Virgins were procured at a much higher (~3 x) rate with MAPLE's assistance than without it.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with this manual step, virgins were procured at a much higher (~3 x) rate with MAPLE's assistance than without it (measured in terms of human labor time per virgin female).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of virgin collection efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "89cb7c8e-9a8c-42f0-b44b-310977c54254",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C58",
+      "claim": "Dyadic fly social behavior relies on both visual and olfactory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "MAPLE's capacity to handle individual flies in combinatorially complex experimental designs (Figure 3), allowed us to demonstrate that dyadic fly social behavior relies on both visual and olfactory cues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the social interaction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "da7c0454-6c6a-4d32-ba84-d22e32a7554e",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C59",
+      "claim": "Dependence of social behavior on visual cues is known from experiments observing many flies simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Dependence of social behavior on visual (Mery et al., 2009; Simon et al., 2012) and olfactory cues (Schneider et al., 2012; Billeter and Levine, 2015) is known from experiments observing many flies simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "36e4e0cf-2a25-430b-9279-47b5b5c8efc3",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C60",
+      "claim": "Dependence of social behavior on olfactory cues is known from experiments observing many flies simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Dependence of social behavior on visual (Mery et al., 2009; Simon et al., 2012) and olfactory cues (Schneider et al., 2012; Billeter and Levine, 2015) is known from experiments observing many flies simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "40059817-9b44-4e5e-9965-b5285e0f15ff",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C61",
+      "claim": "Individual differences in dyadic social behavior remain stable over days.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that individual differences in dyadic social behavior \u2014 as well as derived social interaction network topography \u2014 remain stable over days (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the longitudinal experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7d22a25f-8d11-44fb-8161-6193090afbfe",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C62",
+      "claim": "Social interaction network topography remains stable over days.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that individual differences in dyadic social behavior \u2014 as well as derived social interaction network topography \u2014 remain stable over days (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the longitudinal experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "8b8e710e-c8ea-48bf-99d9-a138264cb6a4",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C63",
+      "claim": "Stability of social networks on short timescales is known.",
+      "claim_type": "EXPLICIT",
+      "source": "Stability of social networks on short timescales (Schneider et al., 2012) is known, but long-term stability of social networks is a novel finding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This contrasts prior knowledge with the novel finding.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "14707f58-07a4-4bf2-82f3-55ee53d0cf4d",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C64",
+      "claim": "Long-term stability of social networks is a novel finding.",
+      "claim_type": "EXPLICIT",
+      "source": "Stability of social networks on short timescales (Schneider et al., 2012) is known, but long-term stability of social networks is a novel finding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "f5f9f2af-7582-45b8-82f1-8b32c716436d",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C65",
+      "claim": "Individual flies generally exhibit very different behaviors from one another even if they are reared in the same environment and have the same genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Our group has shown that individual flies generally exhibit very different behaviors from one another even if they are reared in the same environment and have the same genotype, and that these differences persist across days (Kain et al., 2012; Buchanan et al., 2015; Ayroles et al., 2015; Kain et al., 2015; Todd et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work from the authors' group with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "1e1b1b02-5822-4f11-bcef-4e632aa902d3",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C66",
+      "claim": "Individual behavioral differences persist across days.",
+      "claim_type": "EXPLICIT",
+      "source": "Our group has shown that individual flies generally exhibit very different behaviors from one another even if they are reared in the same environment and have the same genotype, and that these differences persist across days (Kain et al., 2012; Buchanan et al., 2015; Ayroles et al., 2015; Kain et al., 2015; Todd et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work from the authors' group with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "a3b4f446-e74d-4b15-8d5e-8c0996235c36",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C67",
+      "claim": "This is the first demonstration that dyad-specific social interactions are persistent on days-long timescales in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first demonstration that dyad-specific social interactions are persistent on days-long timescales in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "12703d46-3ea1-4ff3-8f19-eac852c719f6",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C68",
+      "claim": "MAPLE's effectors move slightly slower than the hands of a trained experimentalist.",
+      "claim_type": "EXPLICIT",
+      "source": "In its current configuration, MAPLE has some drawbacks. Its effectors move slightly slower than the hands of a trained experimentalist, so its advantages derive from it not growing tired or losing focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current MAPLE implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "43d9325f-f833-4d46-b8a9-24fafb5fcafd",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C69",
+      "claim": "Attempts to remove an awake fly from a behavioral arena using vacuum through a loading port succeed approximately 90% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "MAPLE does not execute every action with 100% success. For example, attempts to remove an awake fly from a behavioral arena, using vacuum through a loading port, succeed approximately 90% of the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measured performance characteristic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "3104d077-c94e-4d62-a744-2e8b85570ac2",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C70",
+      "claim": "MAPLE can work autonomously for long periods (e.g. 12 hr for the Physarum experiment) without getting stuck.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its redundancies and fail-safes, MAPLE can work autonomously for long periods (e.g. 12 hr for the Physarum experiment) without getting stuck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of MAPLE with a specific example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "f1adaae2-283f-42b8-b4e4-d46d8541aa2c",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C71",
+      "claim": "Avoiding anesthesia has multiple benefits, including reducing the distortion of behavioral and physiological measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Avoiding anesthesia has multiple benefits, including reducing the distortion of behavioral (Bartholomew et al., 2015) and physiological measurements (Colinet and Renault, 2012), which, depending on the form of anaesthesia, can last for hours or days (MacMillan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "494bc6db-1af8-49c3-8613-c82d08192f06",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C72",
+      "claim": "Manual aspiration can disrupt the expression of sensitive phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Even seemingly benign manual aspiration can disrupt the expression of sensitive phenotypes (Trannoy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "c172c719-3a87-4e5e-9819-1acfec03f702",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C73",
+      "claim": "MAPLE's accessible experimental workspace measures 100 \u00d7 28.2\u00d77.5 cm on the x-, y-, and z-axes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to our design constraints: (1) the accessible experimental workspace measures 100 \u00d7 28.2\u00d77.5 cm on the x-, y-, and z-axes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a physical specification of MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "b4dbf0e5-f2cc-4370-b22d-e33e2598cbd7",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C74",
+      "claim": "The end-effector assembly comprises three independent z-axes, each featuring a single tool.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) The end-effector assembly comprises three independent z-axes, each featuring a single tool (Figure 1A; Video 2): an object manipulator for picking up experimental module components like plastic lids using vacuum; a USB digital camera with LED illumination for acquiring high-resolution images for machine-vision; and an organism manipulator for handling small individual animals using vacuum, or, in the case of our yeast experiments, wooden applicators (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the physical configuration of MAPLE's end effectors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "f3cdddfd-6a99-4fc3-8caf-ae5827491c20",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C75",
+      "claim": "All motion axes have physical limit switches and/or software limits preventing overtravel.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) All motion axes have physical limit switches and/or software limits preventing overtravel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a safety feature of MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "b4b29a32-6845-4174-b32d-435010431970",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C76",
+      "claim": "The organism manipulator end effector is equipped with a collision-detection switch to halt z-motion before the robot is damaged.",
+      "claim_type": "EXPLICIT",
+      "source": "The organism manipulator end effector, which is rigid and must align precisely with experimental modules at different heights, is equipped with a collision-detection switch to halt z-motion before the robot is damaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a safety feature of MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "7718e5d7-af4f-40dc-a948-d5c84f454af3",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C77",
+      "claim": "It is safe to leave MAPLE unattended.",
+      "claim_type": "EXPLICIT",
+      "source": "It is safe to leave MAPLE unattended (Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability with reference to a video demonstration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "ae0f87be-2389-44e9-87f9-12dfeee61fe2",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C78",
+      "claim": "BEECH employs identical construction and motion-control to MAPLE.",
+      "claim_type": "EXPLICIT",
+      "source": "While replacing MAPLE's z-axis assembly with multiple cameras and extending all three dimensions of MAPLE's frame to accommodate the 12-colony box modules, BEECH employs identical construction and motion-control, demonstrating the versatility of the MAPLE design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between BEECH and MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "2cb4c20e-499d-4065-a48d-c4a3996265d2",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C79",
+      "claim": "Female D. melanogaster will not mate with males for approximately 6 hr after they eclose from the pupal case.",
+      "claim_type": "EXPLICIT",
+      "source": "Female D. melanogaster will not mate with males for approximately 6 hr after they eclose from the pupal case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about fly biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e09c3b94-fdc0-457e-b394-3ca2f46da575",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C80",
+      "claim": "In the first portion of the 6 hr no-mating interval, female flies have morphological characteristics that correlate with their young age and are reliable, but conservative, indicators of virginity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first portion of this interval, they have morphological characteristics (puffy abdomens, translucent cuticle, and visible meconium in the gut) that correlate with their young age and are reliable, but conservative, indicators of virginity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about fly biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e80540aa-f222-48d2-b3bb-dc211012bca4",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C81",
+      "claim": "MAPLE has the potential to recover 100% of females as virgins by isolating them quickly after they eclose, and storing them individually to preclude mating.",
+      "claim_type": "EXPLICIT",
+      "source": "MAPLE has the potential to recover 100% of females as virgins by isolating them quickly after they eclose, and storing them individually to preclude mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential advantage of MAPLE.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "ed7bf20d-1707-493b-90ae-7195f47cabe7",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C82",
+      "claim": "At rates of ~3% a well was left empty during MAPLE virgin collection.",
+      "claim_type": "EXPLICIT",
+      "source": "This process was not without error: at rates of ~3% a well was left empty, or ~8% a well was loaded with two flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured error rate for MAPLE virgin collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "8a8426cf-eb28-4cc1-884b-d1fd38fc7f2f",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C83",
+      "claim": "At rates of ~8% a well was loaded with two flies during MAPLE virgin collection.",
+      "claim_type": "EXPLICIT",
+      "source": "This process was not without error: at rates of ~3% a well was left empty, or ~8% a well was loaded with two flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured error rate for MAPLE virgin collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "8d996a56-e4c4-4dd4-80de-016aee14e00e",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C84",
+      "claim": "The maximum speed for the X and Y axes is 200 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum speed for the X and Y axes is 200 mm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e3c47dd8-e031-400f-8216-4a9c9fd00431",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "claim_id": "C85",
+      "claim": "The Z axes top out at 83.3 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The Z axes top out at 83.3 mm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of MAPLE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MAPLE is a modular, automated robotic platform designed for large-scale organism handling and phenotyping experiments. The system costs approximately $3,500, features a 100\u00d728.2\u00d77.5 cm workspace with three independent end-effectors (object manipulator, camera, organism manipulator), operates at speeds ~80% of human experimentalists, includes safety features like limit switches and collision detection, and has been made open-source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C85 collectively provide comprehensive technical specifications, design features, and performance characteristics of MAPLE. The physical dimensions, cost, speed, safety features, and modular design are explicitly stated with specific measurements and values. The open-source availability is documented with references to supplementary materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MAPLE successfully conducted automated experiments across five different species: yeast colony transfer and streaking (S. cerevisiae), worm behavior recording (C. elegans), plasmodium movement tracking (P. polycephalum), fly handling (D. melanogaster), and bumblebee colony monitoring via the BEECH variant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23-C25, C53-C55, and C78 describe specific experimental procedures performed with MAPLE across multiple species, with references to figures and videos as evidence. Each experiment demonstrates a distinct capability (colony manipulation, behavioral recording, time-lapse imaging, individual tracking), supporting the platform's versatility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "13669fb4-7773-47ad-845d-c2b1ff94caff",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MAPLE-handled flies exhibit behavioral characteristics statistically indistinguishable from manually handled or unhandled control flies. Specifically, MAPLE handling did not significantly affect the fraction of active flies (p=0.92), mean walking speed (p=0.73), speed distribution in Y-mazes (p=0.61), or turning bias (p=0.74).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 and C56 present statistical comparisons with appropriate tests (logistic regression, ANOVA, KS-tests) and non-significant p-values, demonstrating that MAPLE handling does not introduce behavioral artifacts. The experimental design included proper controls (unhandled flies, manual handling) and multiple behavioral metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "a37b3fdd-d30b-4204-8565-facea533373c",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MAPLE enables automated virgin female fly collection at 4.9 virgins/min compared to 1.5/min for manual collection (~3\u00d7 improvement), using the Fly Dispenser to isolate newly eclosed flies into FlyPlates. The process has error rates of ~3% empty wells and ~8% double-loaded wells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C33-C35, C57, and C79-C83 describe the virgin collection procedure and provide quantitative performance data. The ~3\u00d7 efficiency improvement is explicitly stated with measured rates. Error rates are documented, and the biological basis (6-hour post-eclosion mating window) is established. However, the procedure still requires manual sexing, limiting full automation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "9f766a6c-18d8-4034-b423-f7b9502be88f",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pairs of Drosophila flies exhibit persistent, dyad-specific idiosyncrasies in social behavior that remain stable over days. The observed distribution of interactivity indices differs significantly from shuffled controls (p<0.0001), and interactivity indices show significant day-to-day correlations (0.31<r<0.38, p<0.04) for the first 3-4 days of experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C40-C41, C48, C61, and C67 present evidence for persistent dyad-specific social behavior using appropriate statistical tests (KS-test, correlation analysis). The shuffled control validates that interactions are dyad-specific rather than random. The temporal limitation (stability only in first days) is acknowledged. This represents a novel finding in fly social behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "f22d0f02-607e-4702-a4bd-14cec0bbd782",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dyadic fly social behavior requires both olfactory and visual cues. Barriers limiting sensory cues significantly reduced interactivity indices. Anosmic Orco mutants showed 65% reduced interactivity (p=0.00048), while blind NorpA mutants showed no significant difference (p=0.26). Flies with reduced visual acuity (w1118) showed 50% increased interactivity (p=0.013).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C46 and C58 present genetic and barrier experiments examining sensory requirements. The Orco result supports olfactory involvement, but the NorpA result (no effect) contradicts the claim that vision is required. The w1118 result is paradoxical\u2014flies with reduced visual acuity show increased social interaction, which is inconsistent with vision being required. The barrier experiments show effects but don't definitively separate visual from olfactory contributions. The interpretation that both modalities are required is not fully supported by the mutant data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Social interaction network (SIN) structure in Drosophila is stable over days, representing a novel finding. Canton-S flies with open-clear barriers showed significant correlations in interactivity indices between successive days (days 1-4), while control conditions (solid-black barriers, NorpA and Orco mutants) showed no significant correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47, C49-C51, C62-C64 demonstrate SIN stability through longitudinal measurements with appropriate controls. The correlation analysis shows temporal stability for wild-type flies with full sensory access, while controls lacking sensory cues or sensory function show no stability. The novelty claim (C64) is explicitly stated and contrasted with prior short-term stability findings (C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "39323a20-ed6a-4e06-99a3-25d466d9045e",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript establishes the scientific context and motivation for MAPLE: model organisms are valuable for biological research, but manual animal handling remains a bottleneck despite advances in machine vision. Existing automation (liquid-handling robots, fly-flipping robots) is either unsuitable for organisms >1mm or prohibitively expensive and inaccessible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 establish background knowledge and identify the gap MAPLE addresses. These claims are supported by appropriate citations and accurately represent the state of the field. The characterization of existing limitations (C12-C13) provides clear motivation for developing MAPLE.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "d5181b24-658a-44a5-a4cf-8674b746e5b2",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes the social behavior findings within prior literature on fly social interactions, individual behavioral variation, and the benefits of avoiding anesthesia in behavioral experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39, C59-C60, C65-C66, and C71-C72 accurately cite and represent prior work on social interactions, individual variation, and handling effects. These claims establish the knowledge gap (C39) that motivated the longitudinal social network experiments and provide context for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    },
+    {
+      "id": "bbe56257-730e-41d6-b357-b53840682fdb",
+      "content_id": "c5cc7882-e3a9-47a7-b1eb-e43b0702daf3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MAPLE has performance limitations: effectors move slightly slower than trained experimentalists, fly removal from arenas succeeds ~90% of the time, but the system can operate autonomously for extended periods (e.g., 12 hours) due to redundancies and fail-safes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 honestly report system limitations and capabilities. The ~90% success rate (C69) is explicitly stated, and the 12-hour autonomous operation (C70) is demonstrated with the Physarum experiment. These limitations are acknowledged in the Discussion section, providing a balanced assessment of MAPLE's performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:33.581227Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "00954f67-f26a-4278-b2d8-8fce66916182",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "79b59108-220a-4677-8045-d3e774027238",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "bb2d93f4-b5dd-40f3-929d-6ee46e0936a8",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "736f9e5a-0e33-462f-9c6a-aff55d7e172f",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "249f47b5-4e3f-401f-a52e-1805f16c375b",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "8640f8f4-7a1d-40af-b438-05335c7b5e42",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "157e4de8-5456-4d9e-94a5-dc6593336b74",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "502a39d8-6003-46ea-a852-ef718301cff6",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "30b80762-721e-4a1a-9627-588ecf34cf98",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "962f7054-3e7e-436b-86e0-3e202d9a1b34",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "1501258c-fc05-45f4-91f4-1180179ba8f9",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "7b96744a-f76c-49b9-b43e-c59c0ee215b6",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "baea4352-da18-4acb-9ce0-379ebc520580",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "b70539a7-5ab1-486f-8380-150c9c9eab7a",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "c172c719-3a87-4e5e-9819-1acfec03f702",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "b4dbf0e5-f2cc-4370-b22d-e33e2598cbd7",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "f3cdddfd-6a99-4fc3-8caf-ae5827491c20",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "b4b29a32-6845-4174-b32d-435010431970",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "7718e5d7-af4f-40dc-a948-d5c84f454af3",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "8d996a56-e4c4-4dd4-80de-016aee14e00e",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "e3c47dd8-e031-400f-8216-4a9c9fd00431",
+      "result_id": "4d1421c4-ee74-4bd3-a35f-9b54837d3a4d"
+    },
+    {
+      "claim_id": "ffb9a4b4-bcba-43d0-9130-d84e294331df",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "7d4f16bb-5193-416f-957d-4bf8d159ce8f",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "e45dc791-1eba-4106-a7fa-72fe3db571fe",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "829e7e97-6e00-40cb-b94d-4201162b9ecc",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "e23c6204-221e-4db6-9813-5593080efb32",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "0a0598c5-0f72-418a-bea9-5806289d49cb",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "a130e402-8f98-43e1-8465-72315c3bd345",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "ae0f87be-2389-44e9-87f9-12dfeee61fe2",
+      "result_id": "e7a1e3cf-9d7a-4e91-bba9-a4bdbd7f2fa0"
+    },
+    {
+      "claim_id": "de019e54-763a-4002-a8b1-d72cd7bbf41a",
+      "result_id": "13669fb4-7773-47ad-845d-c2b1ff94caff"
+    },
+    {
+      "claim_id": "ece64aa5-90d4-4ab4-8c14-aed2c4a883c9",
+      "result_id": "13669fb4-7773-47ad-845d-c2b1ff94caff"
+    },
+    {
+      "claim_id": "6bdc89ca-3769-4660-b2ba-f8eef3166d92",
+      "result_id": "13669fb4-7773-47ad-845d-c2b1ff94caff"
+    },
+    {
+      "claim_id": "80d6e87a-3246-40f4-94c9-77340fbb88a7",
+      "result_id": "13669fb4-7773-47ad-845d-c2b1ff94caff"
+    },
+    {
+      "claim_id": "e83cfcf5-011b-4e18-838c-b3dc044ac226",
+      "result_id": "13669fb4-7773-47ad-845d-c2b1ff94caff"
+    },
+    {
+      "claim_id": "5b99ec7f-6101-42c0-8972-8a45ccd34191",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "9fdbc8c5-db37-4247-9e54-a2ad98cf2e64",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "67f737eb-53c2-4f7b-968e-2658c698af8c",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "21877bc2-5369-4f96-93a8-64246bc7cb8e",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "5c3d1ebb-5c57-43fe-89dd-ebbc1648e5df",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "2cb4c20e-499d-4065-a48d-c4a3996265d2",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "e09c3b94-fdc0-457e-b394-3ca2f46da575",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "e80540aa-f222-48d2-b3bb-dc211012bca4",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "ed7bf20d-1707-493b-90ae-7195f47cabe7",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "8a8426cf-eb28-4cc1-884b-d1fd38fc7f2f",
+      "result_id": "a37b3fdd-d30b-4204-8565-facea533373c"
+    },
+    {
+      "claim_id": "184b8090-dd1c-4586-9442-2d3c85dc798b",
+      "result_id": "9f766a6c-18d8-4034-b423-f7b9502be88f"
+    },
+    {
+      "claim_id": "682bd1b9-54dc-451b-8ed0-bf7b358ef63c",
+      "result_id": "9f766a6c-18d8-4034-b423-f7b9502be88f"
+    },
+    {
+      "claim_id": "8778410e-7eaf-45e0-a1bd-ab0f716ab33d",
+      "result_id": "9f766a6c-18d8-4034-b423-f7b9502be88f"
+    },
+    {
+      "claim_id": "970efc0c-12e2-433c-b7ec-147882dabcf4",
+      "result_id": "9f766a6c-18d8-4034-b423-f7b9502be88f"
+    },
+    {
+      "claim_id": "40059817-9b44-4e5e-9965-b5285e0f15ff",
+      "result_id": "9f766a6c-18d8-4034-b423-f7b9502be88f"
+    },
+    {
+      "claim_id": "a3b4f446-e74d-4b15-8d5e-8c0996235c36",
+      "result_id": "9f766a6c-18d8-4034-b423-f7b9502be88f"
+    },
+    {
+      "claim_id": "33625b15-ddd0-4203-8f63-3b805c1a6582",
+      "result_id": "f22d0f02-607e-4702-a4bd-14cec0bbd782"
+    },
+    {
+      "claim_id": "7c9a75de-5887-4921-8ecc-c9cb3bcb4e1f",
+      "result_id": "f22d0f02-607e-4702-a4bd-14cec0bbd782"
+    },
+    {
+      "claim_id": "be18488a-e5b7-493d-ba24-97cd983ac18c",
+      "result_id": "f22d0f02-607e-4702-a4bd-14cec0bbd782"
+    },
+    {
+      "claim_id": "a9170ba6-4cdd-47ef-af18-b5c88a2ec04b",
+      "result_id": "f22d0f02-607e-4702-a4bd-14cec0bbd782"
+    },
+    {
+      "claim_id": "85575884-095f-4b22-93f4-43ccd5b0c220",
+      "result_id": "f22d0f02-607e-4702-a4bd-14cec0bbd782"
+    },
+    {
+      "claim_id": "4fdb58e9-266c-4c5e-9911-962dafdbd4a3",
+      "result_id": "f22d0f02-607e-4702-a4bd-14cec0bbd782"
+    },
+    {
+      "claim_id": "89cb7c8e-9a8c-42f0-b44b-310977c54254",
+      "result_id": "f22d0f02-607e-4702-a4bd-14cec0bbd782"
+    },
+    {
+      "claim_id": "2b891443-7971-409f-9ba1-7fc7fadbd7c3",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "7295832e-a9d1-4b97-92c6-d93e4965b5d5",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "7349491e-d1df-4445-9d5b-44a8ec1889aa",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "85fe9758-fcff-45d7-b4aa-f5ba82dcef28",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "e56e983f-bcb0-4f41-8f4e-e974f4ad473e",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "7d22a25f-8d11-44fb-8161-6193090afbfe",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "8b8e710e-c8ea-48bf-99d9-a138264cb6a4",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "14707f58-07a4-4bf2-82f3-55ee53d0cf4d",
+      "result_id": "d60cff9d-92a5-4a33-a4b7-536c9ed9ab76"
+    },
+    {
+      "claim_id": "7364c37e-ff93-47af-8caf-f6be5987c16f",
+      "result_id": "39323a20-ed6a-4e06-99a3-25d466d9045e"
+    },
+    {
+      "claim_id": "a4c8c89c-b0e8-47ff-b82e-7877fc2e7435",
+      "result_id": "39323a20-ed6a-4e06-99a3-25d466d9045e"
+    },
+    {
+      "claim_id": "bf9b4f04-5b4f-4fd4-862e-378262747e66",
+      "result_id": "39323a20-ed6a-4e06-99a3-25d466d9045e"
+    },
+    {
+      "claim_id": "7c7b393c-6b52-4c99-a439-315b44d15064",
+      "result_id": "39323a20-ed6a-4e06-99a3-25d466d9045e"
+    },
+    {
+      "claim_id": "9252157d-9ac4-45ff-b22d-7af4ca9b8c45",
+      "result_id": "39323a20-ed6a-4e06-99a3-25d466d9045e"
+    },
+    {
+      "claim_id": "beadb58a-3d41-4201-b4d8-df1b0884c71e",
+      "result_id": "39323a20-ed6a-4e06-99a3-25d466d9045e"
+    },
+    {
+      "claim_id": "08769e28-3ebb-4b6e-b3bb-258d58a8469d",
+      "result_id": "39323a20-ed6a-4e06-99a3-25d466d9045e"
+    },
+    {
+      "claim_id": "1293d01e-6dbd-4d19-bf6a-127d38d696a9",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "6044a814-8028-4941-822e-ecb28cc6654e",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "cea03b59-eafb-4248-9001-6a877931b49c",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "020102a6-2cfc-49a7-87ad-ea72cc33a107",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "da7c0454-6c6a-4d32-ba84-d22e32a7554e",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "36e4e0cf-2a25-430b-9279-47b5b5c8efc3",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "f5f9f2af-7582-45b8-82f1-8b32c716436d",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "1e1b1b02-5822-4f11-bcef-4e632aa902d3",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "f1adaae2-283f-42b8-b4e4-d46d8541aa2c",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "494bc6db-1af8-49c3-8613-c82d08192f06",
+      "result_id": "d5181b24-658a-44a5-a4cf-8674b746e5b2"
+    },
+    {
+      "claim_id": "12703d46-3ea1-4ff3-8f19-eac852c719f6",
+      "result_id": "bbe56257-730e-41d6-b357-b53840682fdb"
+    },
+    {
+      "claim_id": "43d9325f-f833-4d46-b8a9-24fafb5fcafd",
+      "result_id": "bbe56257-730e-41d6-b357-b53840682fdb"
+    },
+    {
+      "claim_id": "3104d077-c94e-4d62-a744-2e8b85570ac2",
+      "result_id": "bbe56257-730e-41d6-b357-b53840682fdb"
+    }
+  ],
+  "comparisons": []
+}

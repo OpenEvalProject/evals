@@ -1,0 +1,1765 @@
+{
+  "submission": {
+    "id": "65a24377-dd0a-4270-9c73-81de8a074bd0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:18:07.540929Z",
+    "updated_at": "2025-12-02T00:18:07.540929Z"
+  },
+  "content": [
+    {
+      "id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "submission_id": "65a24377-dd0a-4270-9c73-81de8a074bd0",
+      "content_type": "manuscript",
+      "content_text": "# Free-energy simulations reveal molecular mechanism for functional switch of a DNA helicase\n\n## Authors\n\n- Wen Ma<sup>1</sup> ([ORCID: 0000-0002-1123-5273](https://orcid.org/0000-0002-1123-5273))\n- Kevin D Whitley<sup>1</sup>\n- Yann R Chemla<sup>1</sup> ([ORCID: 0000-0001-9167-0234](https://orcid.org/0000-0001-9167-0234)) \u2020\n- Zaida Luthey-Schulten<sup>1</sup> ([ORCID: 0000-0001-9749-8367](https://orcid.org/0000-0001-9749-8367)) \u2020\n- Klaus Schulten<sup>1</sup>\n\n### Affiliations\n\n1. Center for the Physics of Living Cells University of Illinois at Urbana-Champaign Champaign United States\n2. Beckman Institute for Advanced Science and Technology Champaign United States\n3. Center for Biophysics and Computational Biology University of Illinois at Urbana-Champaign Champaign United States\n4. Department of Physics University of Illinois at Urbana-Champaign Champaign United States\n5. Department of Chemistry University of Illinois at Urbana-Champaign Champaign United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHelicases play key roles in genome maintenance, yet it remains elusive how these enzymes change conformations and how transitions between different conformational states regulate nucleic acid reshaping. Here, we developed a computational technique combining structural bioinformatics approaches and atomic-level free-energy simulations to characterize how the Escherichia coli DNA repair enzyme UvrD changes its conformation at the fork junction to switch its function from unwinding to rezipping DNA. The lowest free-energy path shows that UvrD opens the interface between two domains, allowing the bound ssDNA to escape. The simulation results predict a key metastable 'tilted' state during ssDNA strand switching. By simulating FRET distributions with fluorophores attached to UvrD, we show that the new state is supported quantitatively by single-molecule measurements. The present study deciphers key elements for the 'hyper-helicase' behavior of a mutant and provides an effective framework to characterize directly structure-function relationships in molecular machines.\n\n## Introduction\n\nHelicases are ubiquitous motor proteins that move along nucleic acids and separate duplex DNA or RNA into its component strands. This role is critical for various aspects of DNA and RNA metabolism; defects in helicase function in humans can lead to genomic instability and a predisposition to cancer (van Brabant et al., 2000; Brosh, 2013). Characterizing the atomistic mechanism for helicase function, although challenging, is crucial to link protein structure with their function and help engineering helicases with novel activities (Arslan et al., 2015).\n\nDNA helicases can unwind double-stranded DNA (dsDNA) into single-stranded DNA (ssDNA), which are later copied during DNA replication or modified in DNA repair processes (Wu and Spies, 2013; Lohman et al., 2008). They are classified into six superfamilies (SF), among which SF1 and SF2 helicases are the largest superfamilies and share many similar conserved motifs. The minimal functional units for SF1 and SF2 helicases are monomers that contain two RecA-like motor domains for ATP hydrolysis (Singleton et al., 2007). SF1 helicases can unwind dsDNA by translocating on a ssDNA strand as shown in Figure 1a. Such translocation happens in a stepwise manner, during which the chemical energy from ATP hydrolysis is used to break the bonds in dsDNA via conformational changes of the motor domains (Yang, 2010; Patel and Donmez, 2006). An exemplary Escherichia coli helicase, UvrD, belonging to SF1, has many cellular roles such as methyl-directed mismatch repair (Iyer et al., 2006; Spies and Fishel, 2015)\u00a0and nucleotide excision repair (Sancar, 1996) by unwinding duplex DNA. UvrD can also prevent deleterious recombination by removing RecA filaments from ssDNA (Lestini and Michel, 2007). Along with its homologous proteins PcrA and Rep, UvrD has been demonstrated in experiments to translocate on ssDNA progressively 3\u2019 to 5\u2019 (Matson, 1986; Mechanic et al., 1999; Dillingham et al., 2000; Myong et al., 2005; Fischer et al., 2004). Structures of UvrD-like SF1 helicase solved so far share a four-subdomain tertiary arrangement (1A/2A/1B/2B) (Singleton et al., 2007), including two RecA-like domains (1A/2A) which contain the ATP binding site and are proposed to function as the translocase (Dillingham et al., 2001; Lee and Yang, 2006), and a flexible domain (2B) which is believed to play a regulatory role in helicase activity (Lohman et al., 2008; Dillingham, 2011). In particular, the 2B domain is known to adopt different conformations (Velankar et al., 1999; Brendza et al., 2005; Jia et al., 2011; Nguyen et al., 2017) and has been proposed to act as a \u2018molecular switch\u2019 controlling UvrD unwinding (Comstock et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic illustration of unwinding by a DNA helicase (UvrD). The helicase uses chemical energy from ATP (hydrolyzed at the site labeled with a yellow ellipse between two motor domains) to unwind dsDNA. (b) A proposed model of UvrD functional switching at the fork junction. 1A, 2A, 1B and 2B domains are labeled in green, blue, gray and cyan, respectively. The UvrD conformation on the left represents the rezipping state whereas the conformation on the right represents the unwinding state. GIG motif (residues 414 to 422), drawn as a black dot, is important for UvrD interacting with dsDNA. (c) Crystal structures for apo UvrD (3LFU) and UvrD-DNA complex (2IS2, the closed state).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) The closed-state structure of UvrD (2IS2). The 2B domain is shown in cyan, whereas the remaining 1A/2A/1B domains are shown in gray. The fork junction is shown in orange. (b) The apo-state structure (3LFU) is aligned to the closed-state structure. Major clashes are detected between 2B of the apo state and the fork junction. (c) In a forced rotation simulation of the 2B domain at the DNA junction (DNA is free\u00a0to move), the change of RMSD from the apo state (calculated using C$_{\\alpha}$ atoms of the 2B domain) is shown. The plot shows a two-stages simulation: starting from RMSD\u00a0=\u00a035 \u00c5, the first stage is a targeted MD simulation driving UvrD to the apo state from the closed state in 50 ns; the second stage is an unbiased simulation which lasts 150 ns. Eventually UvrD returns to the closed state, indicating that the apo state is very unfavorable.\n\nCombining optical tweezers and single-molecule FRET, Comstock et al. (2015) demonstrated that UvrD can switch its activity from DNA unwinding to rezipping (measured by optical tweezers) by dramatically changing its conformation between two states\u00a0(detected by FRET). The transition from unwinding to rezipping activities was proposed to occur through switching ssDNA strands, accompanied by rotation of the 2B domain (see Figure 1b). In this model, the GIG motif on 2B serves as an anchor point on dsDNA above the fork junction, such that rotation of 2B can position the 1A/2A translocase domains on either ssDNA strand, leading to 3\u2019 to 5\u2019 UvrD translocation either toward (unwinding) or away from (rezipping) the DNA fork. Two crystal structures seem to support this strand-switching model (see Figure 1c): one structure of UvrD (pdb code: 2IS2) (Lee and Yang, 2006) bound to a dsDNA-ssDNA junction is expected to be the \u2018unwinding\u2019 state (defined here as the \u2018closed\u2019 state) because its 1A/2A domains would translocate UvrD into the DNA fork; the other structure (pdb code: 3LFU) (Jia et al., 2011) solved without DNA is expected to represent the \u2018rezipping\u2019 state (defined here as the apo state) because the 1A/2A domains presumably would be bound to the opposing strand, translocating UvrD away from the DNA fork. The structural differences between closed and apo states mainly involve a simple rotation of the 2B domain (Figure 1c).\n\nHowever, in order for the ssDNA strand-switching to happen, the rezipping state must adopt a conformation with a gap between the 1B and 2B domain that is large enough for the bound ssDNA to escape, whereas in both the closed and apo structures the four domains 1B-1A-2A-2B form a closed ring topologically. As we show here, contrary to the common assumption that the apo structure is a functional state of UvrD, the FRET signal simulated using real fluorophores attached to the apo-state structure does not match the experimentally observed signal of the rezipping state, nor the unwinding state. Furthermore, it has been reported that cross-linking the 2B and 1B domains of the SF1 helicase Rep can change it into a superhelicase (Arslan et al., 2015), capable of unwinding thousands of base pairs processively. What are the key regulatory factors for the functional switch and is it possible to design mutants with different activities?\n\nTo characterize the conformational states of UvrD at the fork junction and the transitions between those states, we use MD simulations, which are well-suited to study atomic-level mechanisms in conjunction with crystallography, single-molecule and biochemical techniques (Russel et al., 2009; Zhao et al., 2010; Arkhipov et al., 2013; Cheng et al., 2017; Latorraca et al., 2017). However, due to the very long time-scale of conformational changes, brute-force simulations are challenging in the case of large molecular motors such as UvrD. Here, we employed a novel computational approach which integrates advanced sampling simulations with bioinformatics tools that survey structural information from homologs. We were able to identify modes of motions for function switching from principal component analysis of a \u2018trajectory\u2019 derived from the alignment of various surveyed crystal structures. Using the first two principal components as reaction coordinates, the subsequent all-atom Hamiltonian replica exchange simulations (totaling 12$\\mu$s) predict a metastable \u2018tilted\u2019 conformation, which has significantly lower free energy than the apo state. The lowest free-energy path is determined to describe the transition between the closed state to the \u2018tilted\u2019 state. After the closed-to-tilted transition takes place, 2B and 1B domains are separated with enough distance from each other to enable strand-switching to happen. We demonstrate that ssDNA can be disengaged from the ssDNA binding domains of UvrD in the tilted state. Furthermore, the tilted UvrD structure is shown to be able to form stable interactions with the opposing strand after ssDNA strand switching has occurred. We also highlight the role of the GIG motif in assisting 2B domain diffusion along dsDNA during strand-switching. These findings suggest principles underlying mechanisms of related molecular machines beyond what we have known from existing structures.\n\nThe properties obtained from the transition pathway are consistent with the single-molecule data (Comstock et al., 2015) as well as mutagenesis studies (Meiners et al., 2014). Firstly, we carried out equilibrium simulations of UvrD site-specifically labeled with FRET dye pair AlexaF555/AlexaF647 for both the closed state and the tilted state. The calculated average FRET efficiencies for the two states are in good agreement with those for the unwinding and rezipping states measured in single-molecule experiments, respectively. These simulations also allow us to obtain key fluorophore conformations in the tilted state to explain the shape of the experimental FRET distribution. Secondly, we illustrate the molecular basis for hyper-helicase activity of a UvrD double mutant (D403A/D404A) for the first time. Finally, a physical model integrating the simulation results and the measured equilibrium constant from optical tweezers experiments is provided to explain the helicase function-switching mechanism.\n\n## Results\n\n### Structural bioinformatics analysis of conformational ensembles of UvrD-like proteins\n\nOur goal is to characterize UvrD conformational changes that switch its function. Recently, free-energy simulation methods have been successfully applied to study transitions between two functional conformational states of complex molecular machines (Moradi and Tajkhorshid, 2013; Ma and Schulten, 2015; Czub et al., 2017). However, for UvrD all the known structures bound to the DNA fork junction belong to the closed (unwinding) state (Figure 1c). It is unclear whether the apo state of UvrD could bind to the dsDNA-ssDNA junction. By aligning the apo state to the closed state, we found geometrical clashes between the fork junction and the apo state (Figure 1\u2014figure supplement 1b). We thus forced UvrD at the fork junction to rotate from the closed state to the apo state using targeted molecular dynamics (Schlitter et al., 1994) (see Figure 1\u2014figure supplement 1c for details). However, such an operation experienced large resistance (DNA was free to move), and the protein returned back to the vicinity of the closed state after the external force was released. We thus need to find new conformations that can represent the rezipping state.\n\nIn order to reach the rezipping state while bound to the fork junction, UvrD must reach some hidden metastable states, which can be far away from the 2B-domain-rotation pathway around the dsDNA axis. To identify such states, we developed an approach based\u00a0on surveying the pdb database (details in Materials\u00a0and\u00a0methods). We used protein-protein BLAST (basic local alignment search tool) to search the swissport database with the UvrD sequence as the query sequence. Then, we downloaded the pdb files of these homologs with 40% or more sequence identity. A subsequent principal component analysis (PCA) was carried out to find out the most significant degrees of structural variations among UvrD and its homologs. The coordinates of the homolog structures were then projected onto the first two principal components (PC1 and PC2) (Figure 2). Three distinguishable clusters are shown in Figure 2: one represents the canonical closed conformation, one represents the canonical apo state, and another one represents an interesting conformation (from the replication initiator protein) in which the 2B domain is tilted from the dsDNA axis. All the structures belonging to the apo state are without nucleic acids bound. The structure in the \u2018tilted\u2019 cluster only has ssDNA bound, and thus very likely it is not a functional state of UvrD because of the absence of dsDNA interactions. To characterize the functional state for rezipping, we need to carry out all-atom free-energy simulations (the next subsection).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig2-v2.jpg)\n\n**Figure 2.:** The structures were obtained through a pdb survey. The structures in the middle of the panel show three structural clusters of the 2B domain, labeled red (closed cluster), magenta (tilted cluster) and pink (apo cluster), respectively. The remaining three domains (1A/2A/2B), which are labeled in gray, only\u00a0have very small structural variation among the homologs. PC1 represents a rotation motion of the 2B domain around the z-axis, whereas PC2 represents a tilting motion away from the z-axis (see Figure 2\u2014figure supplement 1b).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Involvement co-efficiency of the first 10 PCs for the displacement between the closed cluster and the tilted cluster. (b) Directions of motions along the first two PCs shown on the closed state structure.\n\nWe next calculated the so-called involvement coefficients (Lei et al., 2009) (ICs), which are often used to show the contribution of individual modes to the overall structural displacement. For the displacement between the closed structure and the tilted structure, the ICs of the first two PCs are very high (see Figure 2\u2014figure supplement 1a), indicating that the first two PCs are sufficient to describe the protein conformational changes based on the available UvrD homolog structures. Directions of motions along the first two PCs are shown on the closed structure (Figure 2\u2014figure supplement 1b). We noted that PC1 is in a similar direction as the rotational movement between the closed and apo states. PC2 represents a tilting motion orthogonal to the rotation. Since the closed-to-apo rotation of the 2B domain cannot bring UvrD to the rezipping state due to steric clashes, we suspect that PC2 might make a very important contribution to UvrD conformational switching when bound to the junction.\n\n### Free-energy landscape of UvrD conformational ensembles when bound to the fork junction\n\nBased on the information revealed by the PCA analysis, we would like to find the UvrD conformation responsible for the rezipping state when bound to the dsDNA-ssDNA junction. For this purpose, extensive enhanced sampling simulations (12 $\\mu$s in total) were carried out to characterize the free-energy landscape of UvrD conformations and detect any interesting metastable states in it. See Materials and methods for the setup and simulation details.\n\nWe first characterized the 2D potential of mean force (PMF) using the first two PCs as coordinates (middle panel of Figure 3). We identified two conformations located in the two local minima of the 2D PMF map, respectively (right and left panels of Figure 3). These two conformations are defined as \u2018closed\u2019 and \u2018tilted\u2019 states. The tilted state has features that have not been found in any of the existing crystal structures, as we show in the following sections. The PDB file for the newly found tilted state is provided as Supplementary file 1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig3-v2.jpg)\n\n**Figure 3.:** The transition state (TS) and an intermediate state (IM) are located between the closed-to-tilted transition (the predicted tilted state PDB is provided as Supplementary file 1). Right and left panels: snapshots for the closed and tilted states are shown along with the gap size, which is defined by the minimal C$_{\\alpha}$ distance between 2B and 1B domains.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) 1D free-energy profile along the lowest free-energy path (LFEP) (Figure 3).\u00a0The x-axis is the index of the 120 data points (images) along the LFEP. The positions of the transition state TS and the intermediate state IM are labeled in the figure. (b) Conformations of UvrD-DNA complex during the closed to tilted transition.\n\nThe closed and tilted conformations served as the initial and final states for a transition path finding protocol, which was employed to find the lowest free-energy path between them (see Materials and methods). The most probable transition happens in two phases, during which the 2B domain undergoes coupled rotational and tilting motions. In the first phase (closed$\u2192$IM), 2B carries out a large-scale tilting motion along PC2, overcoming a 4.4 kcal/mol barrier before reaching an intermediate state IM. In the second phase (IM$\u2192$TS$\u2192$tilted), 2B performs mostly a rotational motion along PC1, overcoming a 1 kcal/mol barrier ($G_{TS}\u2212G_{IM}$) at the global transition state (TS) before reaching the tilted state. Thus, the rate-limiting step is the first phase, which involves mostly a tilting motion. Figure 3\u2014figure supplement 1 provides the PMF values and intermediate conformations along the lowest free-energy path. Video 1 shows the conformational changes of UvrD during the transition.\n\n![Video 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-video1.mp4.jpg)\n\nOne can notice that the region the apo structure represents has a high energy value, which is more than 8 kcal/mol higher than the initial state. This demonstrates that the apo state, which is connected to the closed state by 2B domain rotation, is very unfavorable at the dsDNA-ssDNA junction.\n\nWe took the representative protein structure in the final and initial states and measured the gap size, which is defined by the closest C$_{\\alpha}$ atom distance between the 2B and 1B domain. The extended ssDNA has a diameter around 10 \u00c5 (Landy et al., 2013). The initial closed state has a very small gap size of 6 \u00c5, through which the ssDNA cannot pass. The final tilted state has a gap size of 14 \u00c5, which is open enough for ssDNA to pass through.\n\nThe overall free-energy landscape projected along a progress variable $\\alpha$ is plotted in Figure 4. $\\alpha$ is proportional to the projection on PC1 and is scaled from 0 to 1.0 between the closed state and the tilted state. The free energy for the metastable tilted state is about 2.5 kcal/mol higher than that of the closed state. The system has to overcome a 4.2 kcal/mol energy barrier at the transition state (TS) to reach the tilted state.\n\n### Validation of the predicted tilted state\n\nWe first tested if the ssDNA can escape from the tilted structure. To accelerate the process, we used targeted molecular dynamics by adding a harmonic potential to the coordination number between UvrD and ssDNA. The targeted coordination number was forced\u00a0to change from an initial value of 18 to 0 in 30 ns. As shown in Video 2, the ssDNA is seen disengaged from the ssDNA binding domains of UvrD. The final interaction energy between ssDNA and the 1A/2A/1B domains of UvrD gradually drops to zeros (see Figure 5\u2014figure supplement 4). Further below, we also show that this tilted structure can bind stably to the opposing strand to complete the strand-switching process (Figure 8d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig4-v2.jpg)\n\n**Figure 4.:** Free energy projected along the progress variable $\\alpha$.The value\u00a0of\u00a0\u03b1 ranges from 0 to 1.0 (the closed state being 0 and the tilted state being 1.0).\u00a0The standard error is calculated by a bootstrapping error analysis procedure.\n\n![Video 2.](https://cdn.elifesciences.org/articles/34186/elife-34186-video2.mp4.jpg)\n\nTo quantitatively validate our simulation results against experimental data, we compared the FRET efficiency distributions predicted for the closed and tilted states computationally to those of the functional states measured experimentally. We first obtained the 1D FRET efficiency distributions for the unwinding and rezipping state based on the raw single-molecule data (see Materials and methods for details). The distributions, shown in Figure 5a, have peak positions at 0.66 and 0.29 for unwinding and rezipping, respectively. By explicitly simulating UvrD in the two states with fluorophore labels (AlexaFluor555/AlexaFluor647) as in the single-molecule experiments, we also determined FRET efficiencies for the closed and tilted states (Figure 5b). The simulations accumulated 500 ns for each state, and we considered the orientation factor of the fluorophores in determining the FRET efficiency (Materials and methods). The predicted FRET efficiency peak for the closed state is at 0.72, whereas the peak for the tilted state is around 0.31. The close agreement between experimental and simulated FRET distributions reaffirms that the tilted state should be the protein conformation responsible for rezipping. As a control, we simulated the apo-state structure with the fluorophore labels for 500 ns as well. The apo-state FRET distribution, which peaks at 0.16, is quite different from the rezipping-state distribution (Figure 5\u2014figure supplement 1), suggesting that the apo structure is not the conformation for UvrD rezipping at the junction.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig5-v2.jpg)\n\n**Figure 5.:** (a) Experimental distributions for the unwinding and rezipping states. The dotted lines show the peak positions for the two states. (b) Simulated FRET efficiency distribution for the closed and tilted states.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig5-figsupp2-v2.jpg)\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The averaged conformation of the pair at 0.3 FRET efficiency is shown in red. The averaged conformation of the pair at 0.6 FRET efficiency is shown in purple.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig5-figsupp4-v2.jpg)\n\nWe further examined the representative fluorophore pair conformations at the local maxima (FRET Efficiency\u00a0=\u00a00.3 and 0.6) of the tilted state FRET distribution (green curve in Figure 5b). It appears that the fluorophores have different conformations at the two different FRET values (Figure 5\u2014figure supplement 3), due to the conformational dynamics of the dyes with the long linkers. The \u2018shoulder\u2019 of the tilted-state FRET distribution curve at 0.6 efficiency is caused by a metastable conformation of AlexaFluor555 with different pair-distance and orientation comparing to the conformation at 0.3 efficiency.\n\n### UvrD diffusion along dsDNA\n\nIn the UvrD functional switching model, the 2B domain of UvrD has to maintain contact with dsDNA; otherwise the protein might disassociate from the fork junction during the ssDNA strand exchanging. It is known that the GIG motif (motif IVc) of UvrD plays a key role in interacting with dsDNA (Myong et al., 2005), and T422 (a representative residue of GIG) is important for UvrD activity (Lee and Yang, 2006). We thus monitored the changes in the interaction between GIG and dsDNA. Figure 6 shows a free-energy landscape plotted against the DNA base ID in contact with GIG and the distance between them. For each simulation frame, we calculated the distances between every DNA residue\u2019s O2P atom and the OG1 atom of T422. Then, the minimal distance and the corresponding DNA base ID were used as the two coordinates. Note the two strands of dsDNA share the same base ID here: for residue x in strand A (indexing according to pdb), the complementary residue in strand B has the same ID x. In the present case, frames with base ID 18 only involve strand A - T422 interaction; whereas frames with base ID 14 only involve strand B - T422 interaction.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig6-v2.jpg)\n\n**Figure 6.:** Here, we use the DNA base ID to represent the closest DNA residue in contact with T422 (part of the GIG motif) on strand A (red) or its complementary residue on strand B (blue).\u00a0T422 engages with the backbone phosphate of residue 18 of strand A in the closed state, whereas it engages with the phosphate of residue 14 of strand B in the tilted state.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig6-figsupp1-v2.jpg)\n\nIn the closed state, residue 18 of strand A contacts the GIG motif, whereas in the tilted state, residue 14 of strand B contacts the GIG motif. Thus, there is a diffusional motion along the dsDNA during the conformational change (see Figure 6). In such a way, UvrD is able to switch the binding dsDNA strand and finds an energetically favorable configuration for the ssDNA strand-switching that will happen in the next step. The diffusion happens in a way that the DNA and T422 are disengaged first, and T422 then re-engages with another DNA residue along the double strand. The base ID in contact with T422 during the transition path from the closed state to the tilted state is shown in Figure 6\u2014figure supplement 1. One can see that the 2B diffusion happens late during the transition. Although UvrD diffuses along dsDNA during the transition, there is no base pair unwound during the closed-to-tilted transition.\n\n### Molecular mechanism for the UvrD303 mutant\n\nOur simulations provide a molecular explanation for the hyper-activity reported for a mutant (UvrD303) that involves two important aspartic acid residues at the 2B-1B interface. Previous experimental work (Meiners et al., 2014) discovered that UvrD303 with substitution of two residues, 403 and 404 (both from Asp to Ala), in the 2B domain exhibits a \u2018hyper-helicase\u2019 unwinding activity in vitro. The authors suggested that such mutations will reduce the 1B-2B domain interactive contacts and thus yield an intermediate conformation instead of a closed conformation. Such an intermediate state they argued would result in the hyperactivity. However, this explanation is not consistent with the single-molecule measurements (Comstock et al., 2015) showing that the closed conformation is responsible for unwinding activity.\n\nTo reconcile the conflict, we estimated $\u0394\u0394G_{bind}$ for the binding free-energy between the 1B and 2B domains upon mutating D403 and D404 into alanine, based on our enhanced sampling trajectory. Here\u00a0$\u0394\u0394G_{bind}=\u0394G_{bind}^{mutant}\u2212\u0394G_{bind}^{WT}$, where $\u0394G_{bind}^{mutant}$ is the binding free-energy for the mutant and $\u0394G_{bind}^{WT}$ is that for the wild type. $\u0394\u0394G_{bind}$ calculated for the closed state is around $\u22122.85$ kcal/mol, showing a stabilization effect of the double alanine mutant. On the other hand, $\u0394\u0394G_{bind}$ calculated for the tilted state is around 0. This indicates that UvrD303 actually favors the closed conformation and thus will lead to better unwinding activity. The so-called MM/PBSA method (molecular mechanics Poisson-Bolzmann surface area) (Kollman et al., 2000; Homeyer and Gohlke, 2012) was used for calculating $\u0394G_{bind}$.\n\nFigure 7a shows the configuration of D403/D404 and key residues on 1B that contribute most significantly to the binding energy change upon the mutation in the closed state. The first five residues on 1B with the largest contribution to $\u0394\u0394G_{bind}$ are listed in Figure 7b (for the tilted state, all the individual residue contributions to $\u0394\u0394G_{bind}$ become zero). We noted that there are not many positively charged residues on 1B that are very close to D403/D404. The maximum number of hydrogen bonds formed between D403/D404 and the 1B domain is around two pairs during the simulations. Considering that there are also negatively charged residues of 1B (E118/E117) near D403/D404, mutating the two aspartic acid residues into alanine will not decrease but rather increase the interaction strength between 1B and 2B. We also found that there are significant numbers of nonpolar residues located around residues 403 and 404 (L186, A184, L114, I113, L122). Thus, mutating the two charged residues into hydrophobic residues instead increases the interaction strength between the nonpolar groups and the two alanine residues. Overall, the stabilization of the closed state of UvrD303 leads to consistent unwinding of UvrD helicase, reconciling the biochemical measurement (Meiners et al., 2014) with the single-molecule experiment (Comstock et al., 2015).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig7-v2.jpg)\n\n**Figure 7.:** (a)\u00a0The configuration of key residues involved in the interaction between D403/D404 (belonging to 2B) and the 1B domain. 2B is shown in cyan, whereas 1B is shown in gray. (b) A table showing the contribution to $\u0394\u0394G_{bind}$ from key residues of 1B upon the mutation. Only residues with\u00a0$|\u0394\u0394G_{bind,x}|>0.6$ kcal/mol are shown, where $x$ is the residue index. Positive values indicate destabilization effects of the mutation; negative values indicate stabilization effects.\n\n## Discussion\n\nWe have characterized the conformational dynamics and a key metastable state of UvrD at a fork junction with a hybrid computational approach. The transition pathway as well as the free-energy landscape for UvrD functional switching at the fork junction was obtained, and we found that the opening of the 2B domain involves a major tilting motion followed by a major rotational motion. Diffusion of 2B along the dsDNA happens in the late stage of the transition, during which the GIG motif switches its contact from one strand of dsDNA to the other strand. The transition leads to a gap opening between 2B and 1B, which enables the ssDNA to escape presumably allowing the motor domains to strand-switch.\n\n### A physical model for UvrD functional switching\n\nA schematic model can be established based on the simulation results (Figure 8a,b). The corresponding molecular models are shown in Figure 8d. The UvrD functional switching happens in a two-step manner. A first step is the opening of the 2B domain, followed by a second step of the switching of the bound ssDNA strand, in which the original ssDNA disengages from the 1A/2A/1B domain binding site and the other strand fills in.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig8-v2.jpg)\n\n**Figure 8.:** (a)\u00a0Illustration for the whole free-energy landscape of ssDNA strand switching enabled by UvrD conformational transition. (b)\u00a0Schematic representation showing the 2-step process of how UvrD switches the ssDNA strand along which the motor domain walks. (c) Dwell time distributions for the unwinding and rezipping states at 10 $\\mu$M and 2.5 $\\mu$M ATP concentration based on the measured traces from optical tweezers (Materials and methods). (d) The structural models for the unwinding, tilted and rezipping states are shown from left to right. The structural model for the rezipping state was obtained from the tilted state after the ssDNA strand switching as illustrated in Methods. Strands A and\u00a0B of the dsDNA are shown in red and blue, respectively.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Here, the UvrD structures with ATP or non-hydrolysable analog molecules bound are colored in red.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig8-figsupp2-v2.jpg)\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34186/elife-34186-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A) The tilted conformation obtained from the simulations. The 2B domain is shown in cyan, whereas 1A/2A/1B are shown in gray. Strands A and B of the dsDNA are shown in red and blue, respectively. (B) After aligning the apo structure to the tilted structure, geometric clashes between the apo 2B domain and the dsDNA of the tilted state are detected (shown in orange dotted circle).\n\nTo obtain the free-energy difference between the unwinding and rezipping states, we performed a dwell time analysis based on past single-molecule measurements (Comstock et al., 2015). The dwell times of the unwinding and rezipping states of UvrD monomers are plotted in a histogram and the calculated averaged rates for both transitions are almost equal ($k_{unwind\u2192rezip}$= 6.6 s-1 and $k_{rezip\u2192unwind}$ = 7.0 s-1) at 10 $\\mu$M ATP (see Figure 8c). Thus, the equilibrium constant is around one and the unwinding and the re-zipping conformations should have similar free energy. This is consistent with the picture that the tilted state is a little bit less favorable than the initial state but as soon as the ssDNA releases and the other ssDNA strand binds to the UvrD, the system returns to a lower free energy (the rezipping state) (Figure 8a). For the mutant UvrD303, the free energy for the closed state drops around 3 kcal/mol, whereas G$_{tilted}$ and G$_{rezip}$ remain the same. The relative stabilization of the closed state leads to more persistent unwinding.\n\nThe strand switching is mostly driven by Brownian motion and does not require energy from ATP hydrolysis. To address the possible effect of ATP on strand switching, we (1) analyzed additional data from the optical tweezers experiments and compared the switching rate at two different ATP concentrations and (2) also analyzed the X-ray structures of the closed state with and without ATP. The dwell time distributions at 10 $\\mu$M ATP and 2.5 $\\mu$M ATP concentration are plotted in Figure 8c. The equilibrium constants of switching measured for the two concentrations are very similar (both around 1), which suggests that strand switching is likely an ATP-independent process. Furthermore, although our simulated system is based on an ATP-free UvrD crystal structure (2IS2), our computational approach covered the structural information from ATP (or its analogs) bound structures (Figure 8\u2014figure supplement 1). One can see that the 2B motion between the ATP-substrate bound and empty UvrD in the closed state is small relative to the large closed-tilted conformational change. Therefore, it is not very likely that ATP binding has a noticeable impact on the closed-to-tilted transition.\n\n### DNA-UvrD conformation at the rezipping state\n\nTo explore the structure of the rezipping state further, we built a rezipping structure starting from the tilted conformation after ssDNA strand switching has occurred (see Figure 8d and Materials and methods). After a 100 ns equilibration simulation, the modeled system was stable and had a rmsd around 3 \u00c5 from the tilted state (Figure 8\u2014figure supplement 2). The newly obtained rezipping structure satisfies the following considerations: (1) The protein conformation is very similar to the tilted conformation. (2) The interaction configuration between 2B and dsDNA remains the same between the tilted state and the rezipping state. Note that during our simulations of the closed to tilted transition, the 2B domain changed its contact from one strand of dsDNA to the other (4 bp shift, from the red strand A to the blue strand B in Figure 6). (3) The ATPase domains 1A-2A are in the correct orientation along the ssDNA (3\u2019 to 5\u2019), pointing away from the junction. Such a conformation enables UvrD to translocate along ssDNA, allowing the duplex to rezip behind it. In examining the rezipping structure, we found a small loop forming between the dsDNA junction and the ssDNA-1A binding site. A similar feature was proposed by a translocation model of PcrA helicase in Park et al. (2010),\u00a0which suggested that PcrA can extrude a ssDNA loop while it attaches to dsDNA and translocates the 5\u2019 ssDNA tail in an open conformation.\n\nThe apo state seen in the crystal structures without DNA bound is likely not a functional state of UvrD at the fork junction. First, the simulated apo-structure FRET distribution is quite different from the rezipping-state FRET distribution. Upon completion of the ssDNA strand-switch, we expect the conformation of UvrD to stay close to the tilted structure. The FRET signal from the single-molecule experiment shows a clear two-state distribution, and our FRET distribution for the tilted state from simulations agrees very well with the experiment. Second, we aligned the apo state structure to the tilted state in Figure 8\u2014figure supplement 3, and there are serious clashes between the apo structure and the dsDNA. Thirdly, the apo state is highly unfavorable at the fork junction according to our simulations.\n\n### Functional insights for UvrD and its homologs\n\nOur simulations, backed by the single-molecule measurements, provide functional insights for UvrD in several important biological processes. For example, frequent strand switching of UvrD due to 2B conformational transition results in unwinding over short distances (Comstock et al., 2015), which is consistent with the small number of basepairs unwound during nucleotide excision repair (Kisker et al., 2013).\u00a0On the other hand, UvrD303 is associated with a recombination-deficient phenotype (Centore et al., 2009), possibly due to lacking such a structural transition as the closed state is over-stabilized. It has been reported that UvrD can dismantle RecA filaments from the ssDNA at a stalled replication fork (Veaute et al., 2005; Lestini and Michel, 2007). As RecA has a central role in homologous recombination (Cox, 2007), a population shift toward the closed state could enhance UvrD\u2019s ability to disrupting RecA-ssDNA filaments and impair recombinational repair.\n\nThe tilted state and related motions found here can possibly help connect structural information with function for other SF1 helicases. A highly homologous helicase, PcrA, is known to efficiently strip RecA filaments off ssDNA in an \u2018open\u2019conformation (Park et al., 2010).\u00a0The low-FRET \u2018open\u2019 conformation of PcrA could be similar to the tilted conformation revealed in this study. In this case, PcrA is anchored to the dsDNA and translocates the 5\u2019 ssDNA strand in the direction toward the junction. A different mode of PcrA is binding to the 3\u2019 ssDNA and the dsDNA while unwinding the duplex in the closed form (Velankar et al., 1999; Niedziela-Majka et al., 2007). Another UvrD homolog RecB, by mostly tilting its 2B domain from the putative closed state, forms interactions with other subunits in the RecBCD complex (Singleton et al., 2004; Wilkinson et al., 2016), which has a key role in initiating recombinational repair (Spies and Kowalczykowski, 2005).\n\nIt may be possible to engineer UvrD-like helicases with tunable unwinding activities. Experiments have shown that cross-linking Rep and PcrA in the closed form resulted in superhelicase activity (Arslan et al., 2015). We demonstrated that mutating the two aspartic acid residues into alanine on 2B domain stabilizes the UvrD closed conformation. The analysis of the binding free-energy change upon the mutation (Figure 7b) provides potential target residues to guide future experimental designs. For example, mutating some negatively charged residues on 1B might also result in hyper-helicase behavior. Our findings for the conformational dynamics of UvrD and the related computational strategy establish a foundation for future studies to reveal principles employed by other related helicase systems.\n\n## Materials\u00a0and\u00a0methods\n\n### Structural bioinformatics analysis of UvrD homologs\n\nOur computational study\u00a0starts\u00a0from analyzing the structural ensemble of UvrD homologs. There are two representative conformations for UvrD: one being the so-called \u2018closed\u2019 state (e.g. 2IS2); the other one being the apo state (e.g. 3LFU). As stated in Results, the apo state is likely not a functional structure of UvrD at the DNA fork junction. To explore the conformational space of UvrD as much as possible, we performed a structural survey for possible UvrD homologue conformations using bioinformatics sequence and structure alignment tools (Altschul et al., 1997; Cock et al., 2009; Bakan and Bahar, 2009; Bakan et al., 2014). The initial sequence alignments were obtained using NCBI blastp search (Altschul et al., 1997) of Protein Data Bank database sequences, with UvrD as the query sequence. Twenty-six structures were selected from the surveyed structures with sequence identity better than 40$%$ and query sequence coverage larger than 60$%$. The structure alignment was generated by ProDy (Bakan and Bahar, 2009; Bakan et al., 2014) from the pairwise sequence alignments by Biopython (Cock et al., 2009). The resulting 26 structures can be interpreted in terms of a \u2018trajectory\u2019 with the coordinates $r(k)\u2009=\u2009(r_{1}(k),r_{2}(k),...,r_{3N}(k))^{\u22a4}$, of which each frame $k$ ($k\u2009=\u20091,2,...,26$) contains $3N$ coordinates (from $N$ C$_{\\alpha}$ atoms) of the homologous structures that were mapped onto the original UvrD chain.\n\nWe then performed principal component analysis (PCA) (Garc\u00eda, 1992; Bakan and Bahar, 2009; Raveh et al., 2016) with ProDy to determine a number of modes for reducing the phase space of UvrD motion. Only the C$_{\\alpha}$ coordinates of the 2B domain were used for the PCA calculations, after aligning the 1A/2A/1B domains of all the 26 structures to those of the closed state structure (2IS2). The covariance matrix $\\sigma$ for PCA is determined via\u00a0$\\sigma=\u27e8(r(k)\u2212\u27e8r(k)\u27e9)(r(k)\u2212\u27e8r(k)\u27e9)^{T}\u27e9,$ where the angular brackets $\u27e8\u27e9$ denote the average over $k$ (all the frames). The eigenvectors $v_{i}$ (principal components or PCs) of the $\\sigma$ matrix are determined by\u00a0$\\lambda_{i}v_{i}=\\sigmav_{i}$. These PCs, which are ranked by their corresponding eigenvalues, represent different directions of conformational motion away from the original closed state.\n\nThe homologous structures were then projected$\\lambda_{i}v_{i}\u00a0=\u00a0\\sigmav_{i}$ onto the first two PCs with the largest eigenvalues. As stated in Results, a 'tilted' structure based on pdb 1UAA was found as an outstanding cluster among the homologous structures. To see the contributions\u00a0of different PCs to the displacement between the closed structure and tilted structure, we further calculated the involvement coefficiency $\u03b7_{i}$\u00a0(Ma and Karplus, 1997; Lei et al., 2009) of the $i$th PC. $\u03b7_{i}$ is defined as $|v_{i}\u22c5\u0394R|$, where $\u0394R$ is the unit vector describing the displacement from the closed structure to the tilted structure. Only the first two PCs contribute significantly to the overall motion (Figure 2\u2014figure supplement 1A). PC1 and PC2 are used later as coordinates to compute the free-energy landscape.\n\n### MD simulation setup\n\nOur simulations were initiated from the closed state (pdb 2IS2) of UvrD (see Figure 1c). The protein-DNA system was solvated in a 100 \u00c5 $\\times$100 \u00c5 $\\times$130 \u00c5 water box with 55 mM NaCl (the system had $\u223c$140K atoms in total). A 2$\\times$10$^{4}$-step energy minimization was carried out and the system was then heated to 310 K in\u00a030 ps, employing harmonic constraints with 1 kcal/(mol \u00c5$^{2}$) spring constant to the C$_{\\alpha}$ atoms. Keeping the spring constant, a 1 ns equilibration in the NPT ensemble (1 atm at 310 K) was performed with a Langevin thermostat for temperature coupling. This was followed by a 1 ns NVT-ensemble simulation, during which the spring constant was gradually decreased to zero. The system was then equilibrated for 60 ns, and the resulting configuration is referred to as the closed state. All MD simulations in our study were performed using NAMD 2.10 (Phillips et al., 2005) with the CHARMM36 force field (Best et al., 2012; Hart et al., 2012).\n\n### Free-energy simulation protocol\n\nTo determine the free-energy profile along a reaction coordinate, we employed the Hamiltonian replica-exchange (HREX) method (Park et al., 2012; Jiang et al., 2012; Jiang et al., 2014). HREX uses a series of replicas ($j\u2009=\u20091,$ 2,. .., M) of the system, which are simulated concurrently with slightly different Hamiltonians and are exchanged frequently among themselves based on the Metropolis exchange criterion (Sugita et al., 2000). HREX can be very powerful in reconstructing rugged free-energy landscapes by exchanging external biasing potentials, which, with different biasing parameters, are added to the replicas to enhance the sampling throughout the reaction coordinate (RC). The biasing potential (or the window potential) for each replica $j$ usually assumes the form of $U_{m}(\u03be_{j})\u2009=\u2009k_{m}(\u03be_{j}\u2009\u2212\u2009p_{m})^{2}/2$, where $\u03be_{j}$ is the current value of the reaction coordinate for replica $j$, $m$ ($m\u2009=\u20091,$ 2,. .., M) is the index for the biasing potentials (windows), $p_{m}$ is the preassigned parameter for the center of the harmonic potential, and $k_{m}$ is the spring constant. The centers of the biasing potentials ($p_{m}$) are selected as an ordered list of values ($p_{1}<p_{2}<...<p_{M}$) all over the RC to cover the reaction of interest fully. Exchanges between two neighboring replicas (replicas with neighboring $p_{m}$ values) are attempted periodically during the simulations. Without the replica-exchange strategy, this protocol reduces to the conventional umbrella sampling, which often suffers from the inefficient sampling of degrees of freedom orthogonal to the reaction coordinate (Jiang et al., 2012).\n\nThe present study chooses the projection on the first PC ($v_{1}$) as the reaction coordinate $\u03be$ and includes M\u00a0=\u00a0120 biasing windows between the closed state and the tilted state. The initial configurations for the M windows were generated through\u00a0a 5 ns targeted MD simulation (Schlitter et al., 1994), by driving UvrD from the closed state to the tilted state. An exchange between two neighboring replicas was attempted every 10 ps and the spring constant of the harmonic potential was set to 100 kcal/(mol \u00c5$^{2}$). The production run of each replica lasted 100 ns, and the total simulation time added up to 12 $\\mu$s (100 ns $\\times$ 120). Eventually the weighted histogram analysis method (WHAM) (Kumar et al., 1992) was applied to obtain the unbiased 1D and 2D free-energy landscapes in Figures 4 and 3. We performed the Monte Carlo bootstrap error analysis (Stine, 1989; Hub et al., 2010) to estimate the uncertainty along the reaction coordinate. The basic idea of bootstrapping is to obtain several estimates (we obtained 10 trials) for the free energy based on randomly generated subpopulations from the histogram in each window. Our simulations with HREX benefitted from a scalable multiple copy algorithm (Jiang et al., 2014) which enables simulating hundreds of replicas simultaneously on a petascale supercomputer.\n\nAs stated in Results, the tilted state structure was identified as one of the most important metastable states. Based on the free-energy landscape using the projections on the first two PCs, the lowest free-energy path describing the most probable reaction mechanism was localized between closed state and the tilted state using the optimization algorithm in (Ensing et al., 2005). The path was then smoothed and 120 images were chosen uniformly along the 2D pathway applying the curve-fitting protocol in (Ma and Schulten, 2015).\n\n### FRET efficiency calculation based on simulations with dye molecules\n\nTo check if the simulated closed and tilted states generate the FRET signals of the respective unwinding and rezipping states measured by the single-molecule experiments, we carried out equilibrium simulations with the actual dye molecules for both states. AlexaFluor555 and AlexaFluor647 maleimides (Molecular Probes, Eugene, OR) were modeled according to (Vrljic et al., 2010) and (Gust et al., 2014) (see Figure 5\u2014figure supplement 2). Then the two dyes were, respectively, attached to UvrD residues 473 and 100, which were mutated to cysteine from alanine. Force field parameters for the dyes linked to a cysteine residue were obtained from the CHARMM General Force Field (CGenFF) (Vanommeslaeghe et al., 2010) using the ParamChem server. The total charges were set to 0 and \u22123 for the two dyes respectively (Gust et al., 2014). Partial charges on the atoms were further refined by the Force Field Toolkit (ffTK) (Mayne et al., 2013) in VMD (Humphrey et al., 1996). Parameters for bonds, angles and dihedrals from CGenFF with high penalty scores were validated or refined by ffTK.\n\nTo sample dye dynamics efficiently, we launched 50 independent standard MD simulations with random initial velocity seeds for the closed, tilted and apo states. Every single simulation lasted 10 ns and a total 500 ns simulation time was accumulated for each state.\n\nThe FRET efficiency was determined by $E\u2009=\u2009R_{0}^{6}/(R^{6}+R_{0}^{6})$, where $R$ is the distance between the donor and acceptor, and $R_{0}$ is the F\u00f6ster radius (or the 50% energy transfer distance). $R_{0}$\u00a0is given by the relationship (Wu and Brand, 1994) $R_{0}\u2009=\u2009(8.79\\times10^{\u22125}\u2009n^{\u22124}\u03d5_{D}J\u03ba^{2})^{1/6}$, where $n$ is the index of refraction, $\u03d5_{D}$ is the donor quantum yield, $J$ is the spectral overlap integral, and $\u03ba^{2}$ is the orientation factor. $R_{0}$ is determined to be 51 \u00c5 when $\u03ba^{2}$ equals 2/3, assuming that the dyes randomize their orientations by rapid diffusion prior to energy transfer. Such an assumption can be problematic, and in the present study the orientation factor is calculated using $\u03ba^{2}\u2009=\u2009(cos\\theta_{T}\u2009\u2212\u20093cos\\theta_{D}cos\\theta_{A})^{2}$, where $\\theta_{T}$ is the angle between the donor and acceptor transition dipole moments and $\\theta_{D}$ and $\\theta_{A}$ are the angles between these two dipoles and the vector connecting the donor and acceptor (Corry and Jayatilaka, 2008). The transition dipole moments for AlexaFluor555/647 or very similar dyes have been determined in (Corry and Jayatilaka, 2008) and (Graen, 2009). The simulated FRET data were integrated to four ns per point to obtain its probability distribution using the density kernel estimation method (Parzen, 1962;\u00a0Comstock et al., 2015).\n\n### Analysis of single-molecule data\n\nTo validate our simulation results, analysis based on the raw data from single-molecule experiments was carried out. Comstock et al. (2015) combined optical tweezers (to detect UvrD unwinding activity) and single-molecule FRET (to detect UvrD conformation) measuring both simultaneously. Example raw time traces of UvrD activity and conformation are shown in\u00a0Fig.\u00a03 and Fig. S5 in Comstock et al. (2015) (at 10 $\\mu$M ATP concentration). Time traces from the optical tweezers were sampled at 267 Hz. Time traces for donor and acceptor intensities were integrated to 30\u201360 ms per data point. The time-dependent FRET efficiency $E(t)$ was calculated by $E(t)=1/(1+\\gamma(I_{D}(t)/I_{A}(t)))$ (Ha et al., 1999; Choi et al., 2010), where $I_{D}(t)$ and $I_{A}(t)$ are the measured donor and acceptor intensities, and $\\gamma$ is a correction factor accounting for the different detection efficiencies for the two dyes, and can be measured from photobleaching events. $\\gamma=\u0394I_{A}/\u0394I_{D}$\u00a0is determined to be 0.78 from 20 acceptor photobleaching events, where $\u0394I_{A}$ and $\u0394I_{D}$ are the acceptor and donorintensity changes upon acceptor photobleaching, respectively.\n\nTo measure the FRET efficiency distribution for the unwinding and rezipping states individually, we needed to assign each raw data point to the two states separately. Since the helicase velocity and FRET efficiency were measured concurrently, we used helicase velocity to define whether each data point in the traces belonged to unwinding or rezipping states (see Fig. S5 in [Comstock et al., 2015]). Time intervals were determined during which the helicase was either unwinding, rezipping, or paused (positive velocity indicates UvrD is in the unwinding state; negative velocity indicates rezipping; absolute unwinding velocity smaller than 20 bp/s indicates a pause). Paused states were not considered in the analysis. FRET efficiencies over each time interval were collected for the unwinding and rezipping states from 141 time intervals (13 molecules in total). We then used the density kernel estimation method to obtain the experimental FRET distribution (Parzen, 1962; Comstock et al., 2015). A density kernel plot is a summation of small Gaussians centered at each FRET data point. We used a standard deviation of 0.06 for the Gaussians.\n\nWe also analyzed the dwell times for both the unwinding state (high FRET) and the rezipping state (low FRET) of UvrD monomers. For this purpose, the duration of each time interval defined above was measured using the traces from optical tweezers measurements. We chose to select intervals and calculate the dwell time using the tweezers signal because it has a higher time resolution than the FRET signal (about one order of magnitude higher). The dwell time distribution was obtained by histogramming the collected duration values for the unwinding and rezipping state separately. In order to assess the effect of ATP concentration on UvrD functional switching, we analyzed optical tweezers data of UvrD activity at two different ATP concentrations. Figure 8c plots the distributions of dwell times at 10 $\\mu$M and 2.5 $\\mu$M ATP concentration. The rates of the transitions were estimated by the inverse of the averaged dwell times.\n\n### Modeling of the rezipping-state structure\n\nTo construct a structure of the rezipping state (after ssDNA strand switching) starting from the tilted conformation (Figure 8d), we consider the following constraints: (1) the 2B domain maintains contact with the dsDNA while the ssDNA binding domains (1A and 2A) disassociate from one ssDNA strand and bind to the other ssDNA strand. Otherwise, the entire protein would dissociate from DNA. (2) The interaction configuration between ssDNA and the motor domains (1A-2A) must remain the\u00a0same after strand switching. The motor domains move from 3\u2019 to 5\u2019 on the ssDNA in both the unwinding and rezipping modes. With these considerations, we created a structural model in which we repositioned the UvrD-bound ssDNA segment from the 3\u2019 ssDNA tail (strand A) to the 5\u2019 ssDNA tail (strand B) of the junction in the tilted state. This was achieved by attaching the 5\u2019 terminus of strand B to the 3\u2019 terminus of strand A, and by cutting the ssDNA (strand A) at the junction position. We then equilibrated the modeled system in a water box with 55 mM NaCl for 100 ns.\n",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "673520c0-cf09-4e44-a6dd-bbd374567a51",
+      "submission_id": "65a24377-dd0a-4270-9c73-81de8a074bd0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34186.030](https://doi.org/10.7554/eLife.34186.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Free energy simulations reveal molecular mechanism for functional switch of a DNA helicase\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Maria Spies (Reviewer #2) and Wei Yang (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this work the authors investigate the conformational change and the underlying energetics of UvrD, a prototypical SF1 DNA helicase, in switching translocating DNA strands. The authors combine molecular dynamics simulation, structural bioinformatics, and re-analysis of experimental data. The manuscript revealed a previously unknown metastable \"tilted\" UvrD conformation and showed how the so-called 2B domain embedded in the helicase motor core may assert direction control in the switch.\n\nEssential revisions:\n\nWhile the reviewers agree that this work merits publication in eLife, they raised several important issues that need to be addressed:\n\n1) To help the readers who are not familiar with DNA helicases, a general discussion of its function from a structural perspective should be added in the Introduction. A cartoon figure would be helpful.\n\n2) The authors used an Hamiltonian replica exchange method for the free energy calculation. The reliability of the calculation requires at least one structural replica to hop among essential window states with a \"round-trip\" manner. It is suggested that the authors demonstrate that in at least one single \"structural trajectory\", the important basins characterized on the free energy surface have been repeatedly visited. This would make the calculations more technically sound.\n\n3) More details should be presented in the main text concerning the retrospective analysis of the FRET states, since this analysis is not commonly performed and it is one of the interesting aspects of this work.\n\n4) A strong agreement between the computed FRET distributions for the \"tilted\" state and the experimental FRET distributions for the re-zipping state are consistent with the authors' proposal that the UvrD conformation during re-zipping resembles the \"tilted\" state. In a different part of the text, the authors also compare the free energies of the unwinding and re-zipping conformations, which they expect to be similar because UvrD spends equal amount of time in the two conformations. Since the energy of the tilted state is higher than the closed state (the authors even refer to it as a metastable state), it is unlikely to represent the re-zipping state. In fact, the authors introduce a distinct re-zipping state in the Discussion and in Figure 8A, but its structure is not discussed. Please reconcile the two arguments.\n\n5) The apo state of UvrD was ruled out as a re-zipping configuration due to the clashes with the DNA duplex. Please discuss whether these clashes can be removed by allowing the duplex part of the DNA substrate to move/tilt? Transition from the closed conformation into the tilted state results in a substantial movement of the duplex (obvious from Video 1). Perhaps, further movement of the duplex, or positioning of the motor domains on the 5'-terminated strand (which would be consistent with the re-zipping direction) may allow for the DNA bound apo-like state? Modeling such a structure may be beyond the scope of this paper, but some discussion may be informative.\n\n6) All the structures considered here were ATP free. Please state whether there is a reason to believe that the strand switching takes place in the nucleotide-free state?\n",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c398a6e-673e-400f-b167-1148578bca28",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C1",
+      "claim": "Helicases play key roles in genome maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Helicases play key roles in genome maintenance, yet it remains elusive how these enzymes change conformations and how transitions between different conformational states regulate nucleic acid reshaping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about helicase function that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "7daa9c9c-e962-4a21-bbf2-db92385be7d1",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C2",
+      "claim": "UvrD is an Escherichia coli DNA repair enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed a computational technique combining structural bioinformatics approaches and atomic-level free-energy simulations to characterize how the Escherichia coli DNA repair enzyme UvrD changes its conformation at the fork junction to switch its function from unwinding to rezipping DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is established knowledge about UvrD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "4fa92b2e-4358-4d56-8ae8-6f026af3c210",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C3",
+      "claim": "The lowest free-energy path shows that UvrD opens the interface between two domains, allowing the bound ssDNA to escape.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest free-energy path shows that UvrD opens the interface between two domains, allowing the bound ssDNA to escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulations performed in the study, specifically the free-energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "44c3a008-e702-42e0-a4b4-7cea3d87530f",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C4",
+      "claim": "The simulation results predict a key metastable 'tilted' state during ssDNA strand switching.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation results predict a key metastable 'tilted' state during ssDNA strand switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational simulations performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "0c8b45d5-13bb-41be-b3e5-e273523af8da",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C5",
+      "claim": "The new tilted state is supported quantitatively by single-molecule measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "By simulating FRET distributions with fluorophores attached to UvrD, we show that the new state is supported quantitatively by single-molecule measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of simulated FRET distributions with experimental single-molecule FRET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "a70f6eb1-09c3-448c-a9fe-ec1a434e6124",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C6",
+      "claim": "Defects in helicase function in humans can lead to genomic instability and a predisposition to cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This role is critical for various aspects of DNA and RNA metabolism; defects in helicase function in humans can lead to genomic instability and a predisposition to cancer (van Brabant et al., 2000; Brosh, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "b4317724-b516-4b34-99d8-9afd611eda6f",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C7",
+      "claim": "DNA helicases can unwind double-stranded DNA (dsDNA) into single-stranded DNA (ssDNA).",
+      "claim_type": "EXPLICIT",
+      "source": "DNA helicases can unwind double-stranded DNA (dsDNA) into single-stranded DNA (ssDNA), which are later copied during DNA replication or modified in DNA repair processes (Wu and Spies, 2013; Lohman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about helicase function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "80652187-58e8-4cc9-b65f-4441b350f9e9",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C8",
+      "claim": "SF1 and SF2 helicases are the largest superfamilies and share many similar conserved motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "They are classified into six superfamilies (SF), among which SF1 and SF2 helicases are the largest superfamilies and share many similar conserved motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about helicase classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "82e00d42-3750-40e1-b33e-72d892a3e2d4",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C9",
+      "claim": "The minimal functional units for SF1 and SF2 helicases are monomers that contain two RecA-like motor domains for ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimal functional units for SF1 and SF2 helicases are monomers that contain two RecA-like motor domains for ATP hydrolysis (Singleton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "8e6a5ca5-591c-4aa3-a706-996b7b6e4b16",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C10",
+      "claim": "SF1 helicases can unwind dsDNA by translocating on a ssDNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "SF1 helicases can unwind dsDNA by translocating on a ssDNA strand as shown in Figure 1a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1a which illustrates the mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "09e30cd0-ea9d-448c-b9f4-cdb2d395525f",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C11",
+      "claim": "UvrD has many cellular roles such as methyl-directed mismatch repair and nucleotide excision repair by unwinding duplex DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "An exemplary Escherichia coli helicase, UvrD, belonging to SF1, has many cellular roles such as methyl-directed mismatch repair (Iyer et al., 2006; Spies and Fishel, 2015) and nucleotide excision repair (Sancar, 1996) by unwinding duplex DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "209f368a-aca8-4b5f-a6e7-31e761edb5d5",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C12",
+      "claim": "UvrD can prevent deleterious recombination by removing RecA filaments from ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "UvrD can also prevent deleterious recombination by removing RecA filaments from ssDNA (Lestini and Michel, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "f280b98d-a7a7-4d3f-9f02-b04b304400d3",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C13",
+      "claim": "UvrD has been demonstrated in experiments to translocate on ssDNA progressively 3' to 5'.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with its homologous proteins PcrA and Rep, UvrD has been demonstrated in experiments to translocate on ssDNA progressively 3' to 5' (Matson, 1986; Mechanic et al., 1999; Dillingham et al., 2000; Myong et al., 2005; Fischer et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "56481579-9e6d-439b-ba1d-13010578ecb3",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C14",
+      "claim": "Structures of UvrD-like SF1 helicase solved so far share a four-subdomain tertiary arrangement (1A/2A/1B/2B).",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of UvrD-like SF1 helicase solved so far share a four-subdomain tertiary arrangement (1A/2A/1B/2B) (Singleton et al., 2007), including two RecA-like domains (1A/2A) which contain the ATP binding site and are proposed to function as the translocase (Dillingham et al., 2001; Lee and Yang, 2006), and a flexible domain (2B) which is believed to play a regulatory role in helicase activity (Lohman et al., 2008; Dillingham, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "dc97fd35-ec70-4a02-92be-d53322d15b4d",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C15",
+      "claim": "The 2B domain is known to adopt different conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the 2B domain is known to adopt different conformations (Velankar et al., 1999; Brendza et al., 2005; Jia et al., 2011; Nguyen et al., 2017) and has been proposed to act as a 'molecular switch' controlling UvrD unwinding (Comstock et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "da985f95-89f2-4190-b75d-b5cae18204bc",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C16",
+      "claim": "The 2B domain has been proposed to act as a 'molecular switch' controlling UvrD unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the 2B domain is known to adopt different conformations (Velankar et al., 1999; Brendza et al., 2005; Jia et al., 2011; Nguyen et al., 2017) and has been proposed to act as a 'molecular switch' controlling UvrD unwinding (Comstock et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "dd58f420-1fbf-425e-99ff-536f38ed0d24",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C17",
+      "claim": "Comstock et al. (2015) demonstrated that UvrD can switch its activity from DNA unwinding to rezipping by dramatically changing its conformation between two states.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining optical tweezers and single-molecule FRET, Comstock et al. (2015) demonstrated that UvrD can switch its activity from DNA unwinding to rezipping (measured by optical tweezers) by dramatically changing its conformation between two states (detected by FRET).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "7ab67680-eb5e-4fbc-8050-5672688239a2",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C18",
+      "claim": "The transition from unwinding to rezipping activities was proposed to occur through switching ssDNA strands, accompanied by rotation of the 2B domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from unwinding to rezipping activities was proposed to occur through switching ssDNA strands, accompanied by rotation of the 2B domain (see Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model from previous work, referenced in the text and illustrated in Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "ba7188da-b1f9-47a6-9f25-4d7d06198c64",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C19",
+      "claim": "The GIG motif on 2B serves as an anchor point on dsDNA above the fork junction.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the GIG motif on 2B serves as an anchor point on dsDNA above the fork junction, such that rotation of 2B can position the 1A/2A translocase domains on either ssDNA strand, leading to 3' to 5' UvrD translocation either toward (unwinding) or away from (rezipping) the DNA fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model for UvrD function switching.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "648b814e-fc94-4a29-9a87-2de20d4595a9",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C20",
+      "claim": "One structure of UvrD (pdb code: 2IS2) bound to a dsDNA-ssDNA junction is expected to be the 'unwinding' state (defined here as the 'closed' state).",
+      "claim_type": "EXPLICIT",
+      "source": "Two crystal structures seem to support this strand-switching model (see Figure 1c): one structure of UvrD (pdb code: 2IS2) (Lee and Yang, 2006) bound to a dsDNA-ssDNA junction is expected to be the 'unwinding' state (defined here as the 'closed' state) because its 1A/2A domains would translocate UvrD into the DNA fork",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on interpretation of a crystal structure with citation, and is illustrated in Figure 1c.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "57966e38-0ffd-4811-848f-9533c344b9c9",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C21",
+      "claim": "The other structure (pdb code: 3LFU) solved without DNA is expected to represent the 'rezipping' state (defined here as the apo state).",
+      "claim_type": "EXPLICIT",
+      "source": "the other structure (pdb code: 3LFU) (Jia et al., 2011) solved without DNA is expected to represent the 'rezipping' state (defined here as the apo state) because the 1A/2A domains presumably would be bound to the opposing strand, translocating UvrD away from the DNA fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of a crystal structure with citation, though the authors later challenge this interpretation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "1445a1bb-8992-4ad5-a27d-d991f69af1a7",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C22",
+      "claim": "The structural differences between closed and apo states mainly involve a simple rotation of the 2B domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural differences between closed and apo states mainly involve a simple rotation of the 2B domain (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing crystal structures, illustrated in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "916167c0-06ab-43e5-bd20-d6ba83a76daa",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C23",
+      "claim": "For ssDNA strand-switching to happen, the rezipping state must adopt a conformation with a gap between the 1B and 2B domain that is large enough for the bound ssDNA to escape.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in order for the ssDNA strand-switching to happen, the rezipping state must adopt a conformation with a gap between the 1B and 2B domain that is large enough for the bound ssDNA to escape, whereas in both the closed and apo structures the four domains 1B-1A-2A-2B form a closed ring topologically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the structural requirements for strand switching.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "4a5c2369-d997-43cc-83a8-47bf4927247b",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C24",
+      "claim": "In both the closed and apo structures the four domains 1B-1A-2A-2B form a closed ring topologically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in order for the ssDNA strand-switching to happen, the rezipping state must adopt a conformation with a gap between the 1B and 2B domain that is large enough for the bound ssDNA to escape, whereas in both the closed and apo structures the four domains 1B-1A-2A-2B form a closed ring topologically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "7129a115-c334-40fa-a5fc-30659b8149bb",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C25",
+      "claim": "The FRET signal simulated using real fluorophores attached to the apo-state structure does not match the experimentally observed signal of the rezipping state.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show here, contrary to the common assumption that the apo structure is a functional state of UvrD, the FRET signal simulated using real fluorophores attached to the apo-state structure does not match the experimentally observed signal of the rezipping state, nor the unwinding state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulations performed in the study comparing to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "72130af3-8fb0-47b9-9a40-cf8d0f71172b",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C26",
+      "claim": "Cross-linking the 2B and 1B domains of the SF1 helicase Rep can change it into a superhelicase.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been reported that cross-linking the 2B and 1B domains of the SF1 helicase Rep can change it into a superhelicase (Arslan et al., 2015), capable of unwinding thousands of base pairs processively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "3208dc4a-860c-4bda-bae5-4187727f141a",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C27",
+      "claim": "By aligning the apo state to the closed state, geometrical clashes were found between the fork junction and the apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "By aligning the apo state to the closed state, we found geometrical clashes between the fork junction and the apo state (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural alignment performed in the study, shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "1537e69b-6612-47ca-b07f-b1d20e70e765",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C28",
+      "claim": "When UvrD at the fork junction was forced to rotate from the closed state to the apo state using targeted molecular dynamics, the protein returned back to the vicinity of the closed state after the external force was released.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus forced UvrD at the fork junction to rotate from the closed state to the apo state using targeted molecular dynamics (Schlitter et al., 1994) (see Figure 1\u2014figure supplement 1c for details). However, such an operation experienced large resistance (DNA was free to move), and the protein returned back to the vicinity of the closed state after the external force was released.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from targeted MD simulations performed in the study, shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "ca31f36e-af83-43a5-b38b-793eb2e3640f",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C29",
+      "claim": "Principal component analysis was carried out to find out the most significant degrees of structural variations among UvrD and its homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "A subsequent principal component analysis (PCA) was carried out to find out the most significant degrees of structural variations among UvrD and its homologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "f77ec163-71e0-4c9e-b610-465c2b6cee1d",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C30",
+      "claim": "Three distinguishable clusters are shown in the PCA projection: one represents the canonical closed conformation, one represents the canonical apo state, and another one represents a 'tilted' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Three distinguishable clusters are shown in Figure 2: one represents the canonical closed conformation, one represents the canonical apo state, and another one represents an interesting conformation (from the replication initiator protein) in which the 2B domain is tilted from the dsDNA axis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the PCA analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "a3967ce1-5090-47bc-a442-38e6dd7c4dce",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C31",
+      "claim": "All the structures belonging to the apo state are without nucleic acids bound.",
+      "claim_type": "EXPLICIT",
+      "source": "All the structures belonging to the apo state are without nucleic acids bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the surveyed crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "ab7e799b-7663-451c-b050-0fd443c4a08f",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C32",
+      "claim": "The structure in the 'tilted' cluster only has ssDNA bound, and thus very likely it is not a functional state of UvrD because of the absence of dsDNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure in the 'tilted' cluster only has ssDNA bound, and thus very likely it is not a functional state of UvrD because of the absence of dsDNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observation from the PCA analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "2bedd8d0-1bce-4169-903f-3d4308b16a01",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C33",
+      "claim": "PC1 represents a rotation motion of the 2B domain around the z-axis, whereas PC2 represents a tilting motion away from the z-axis.",
+      "claim_type": "EXPLICIT",
+      "source": "PC1 represents a rotation motion of the 2B domain around the z-axis, whereas PC2 represents a tilting motion away from the z-axis (see Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the PCA results, illustrated in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "addfb5f2-f78c-4826-a79d-9f405d4db468",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C34",
+      "claim": "The ICs of the first two PCs are very high for the displacement between the closed structure and the tilted structure.",
+      "claim_type": "EXPLICIT",
+      "source": "For the displacement between the closed structure and the tilted structure, the ICs of the first two PCs are very high (see Figure 2\u2014figure supplement 1a), indicating that the first two PCs are sufficient to describe the protein conformational changes based on the available UvrD homolog structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the involvement coefficient analysis shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "d7ecbebd-c39f-4b38-b9e1-16f175a0ad2e",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C35",
+      "claim": "The first two PCs are sufficient to describe the protein conformational changes based on the available UvrD homolog structures.",
+      "claim_type": "EXPLICIT",
+      "source": "For the displacement between the closed structure and the tilted structure, the ICs of the first two PCs are very high (see Figure 2\u2014figure supplement 1a), indicating that the first two PCs are sufficient to describe the protein conformational changes based on the available UvrD homolog structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the high involvement coefficients shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "996d804e-0f7d-4c92-b7d1-f71fdbc51003",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C37",
+      "claim": "Two conformations were identified located in the two local minima of the 2D PMF map, defined as 'closed' and 'tilted' states.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two conformations located in the two local minima of the 2D PMF map, respectively (right and left panels of Figure 3). These two conformations are defined as 'closed' and 'tilted' states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the free-energy simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "9bfe31d3-efee-4323-8592-61202dc0c9ba",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C38",
+      "claim": "The tilted state has features that have not been found in any of the existing crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilted state has features that have not been found in any of the existing crystal structures, as we show in the following sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the tilted state structure predicted by the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "c3790765-f4a9-4baf-9f47-7c8bfdfa1a81",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C39",
+      "claim": "The most probable transition happens in two phases, during which the 2B domain undergoes coupled rotational and tilting motions.",
+      "claim_type": "EXPLICIT",
+      "source": "The most probable transition happens in two phases, during which the 2B domain undergoes coupled rotational and tilting motions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the transition path finding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "41485ffd-34ba-44ed-b736-f49c80bbb215",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C42",
+      "claim": "The rate-limiting step is the first phase, which involves mostly a tilting motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the rate-limiting step is the first phase, which involves mostly a tilting motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the energy barriers calculated for the two phases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "2196ba1f-7a55-4158-aba2-c5792df86b90",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C43",
+      "claim": "The region the apo structure represents has a high energy value, which is more than 8 kcal/mol higher than the initial state.",
+      "claim_type": "EXPLICIT",
+      "source": "One can notice that the region the apo structure represents has a high energy value, which is more than 8 kcal/mol higher than the initial state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the free-energy landscape shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "a1299c17-dc9d-4d5f-9011-31d89f520554",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C44",
+      "claim": "The apo state, which is connected to the closed state by 2B domain rotation, is very unfavorable at the dsDNA-ssDNA junction.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the apo state, which is connected to the closed state by 2B domain rotation, is very unfavorable at the dsDNA-ssDNA junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high free energy of the apo state region in the PMF.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "2567ba4f-96a1-4895-8183-5173a3ddc90e",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C45",
+      "claim": "The initial closed state has a very small gap size of 6 \u00c5, through which the ssDNA cannot pass.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial closed state has a very small gap size of 6 \u00c5, through which the ssDNA cannot pass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the simulated structures, with inference about ssDNA passage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "b603d716-64f7-4ea5-83fe-bf2c8036651f",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C46",
+      "claim": "The final tilted state has a gap size of 14 \u00c5, which is open enough for ssDNA to pass through.",
+      "claim_type": "EXPLICIT",
+      "source": "The final tilted state has a gap size of 14 \u00c5, which is open enough for ssDNA to pass through.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the simulated structures, with inference about ssDNA passage based on known ssDNA diameter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "e7be14eb-2cba-4843-bc82-191013fa4f24",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C47",
+      "claim": "The free energy for the metastable tilted state is about 2.5 kcal/mol higher than that of the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "The free energy for the metastable tilted state is about 2.5 kcal/mol higher than that of the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the free-energy calculations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "8d7ada16-6ca3-4aaf-a930-7a3806b4a409",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C48",
+      "claim": "The system has to overcome a 4.2 kcal/mol energy barrier at the transition state (TS) to reach the tilted state.",
+      "claim_type": "EXPLICIT",
+      "source": "The system has to overcome a 4.2 kcal/mol energy barrier at the transition state (TS) to reach the tilted state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the free-energy calculations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "68b1d5c1-9565-42e9-87ab-ce52cab179df",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C49",
+      "claim": "The ssDNA can be disengaged from the ssDNA binding domains of UvrD in the tilted state.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Video 2, the ssDNA is seen disengaged from the ssDNA binding domains of UvrD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by targeted MD simulations shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "896fb215-7ac0-4f2b-97eb-d2c0921c16bc",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C50",
+      "claim": "The tilted structure can bind stably to the opposing strand to complete the strand-switching process.",
+      "claim_type": "EXPLICIT",
+      "source": "Further below, we also show that this tilted structure can bind stably to the opposing strand to complete the strand-switching process (Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulations shown in Figure 8d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "c6cfec65-cb41-465f-8423-7a8affc86c9e",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C51",
+      "claim": "The FRET efficiency distributions have peak positions at 0.66 and 0.29 for unwinding and rezipping, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions, shown in Figure 5a, have peak positions at 0.66 and 0.29 for unwinding and rezipping, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from analysis of experimental single-molecule FRET data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "e35adbd4-1428-448b-b434-aa8e68945e9e",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C52",
+      "claim": "The predicted FRET efficiency peak for the closed state is at 0.72.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted FRET efficiency peak for the closed state is at 0.72, whereas the peak for the tilted state is around 0.31.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from simulations with explicit fluorophore labels shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "4d8beaeb-fd26-4336-966c-44120c3baef9",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C53",
+      "claim": "The predicted FRET efficiency peak for the tilted state is around 0.31.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted FRET efficiency peak for the closed state is at 0.72, whereas the peak for the tilted state is around 0.31.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from simulations with explicit fluorophore labels shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "e9376132-2213-4f91-8c78-419dc13cdd3f",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C54",
+      "claim": "The close agreement between experimental and simulated FRET distributions reaffirms that the tilted state should be the protein conformation responsible for rezipping.",
+      "claim_type": "EXPLICIT",
+      "source": "The close agreement between experimental and simulated FRET distributions reaffirms that the tilted state should be the protein conformation responsible for rezipping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of simulated and experimental FRET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "0a174219-b58d-4777-998a-2411efe09952",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C55",
+      "claim": "The apo-state FRET distribution, which peaks at 0.16, is quite different from the rezipping-state distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The apo-state FRET distribution, which peaks at 0.16, is quite different from the rezipping-state distribution (Figure 5\u2014figure supplement 1), suggesting that the apo structure is not the conformation for UvrD rezipping at the junction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from simulations with explicit fluorophore labels shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "05d91342-6804-4aa9-972d-029d82391001",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C56",
+      "claim": "The apo structure is not the conformation for UvrD rezipping at the junction.",
+      "claim_type": "EXPLICIT",
+      "source": "The apo-state FRET distribution, which peaks at 0.16, is quite different from the rezipping-state distribution (Figure 5\u2014figure supplement 1), suggesting that the apo structure is not the conformation for UvrD rezipping at the junction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the mismatch between simulated apo-state FRET and experimental rezipping-state FRET.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "b22af002-50a0-4a37-9b22-59768c8ba85a",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C57",
+      "claim": "The 'shoulder' of the tilted-state FRET distribution curve at 0.6 efficiency is caused by a metastable conformation of AlexaFluor555 with different pair-distance and orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'shoulder' of the tilted-state FRET distribution curve at 0.6 efficiency is caused by a metastable conformation of AlexaFluor555 with different pair-distance and orientation comparing to the conformation at 0.3 efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on analysis of fluorophore conformations in the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "7c888de2-1584-4ff2-8fed-5e1390cb6b98",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C58",
+      "claim": "The GIG motif (motif IVc) of UvrD plays a key role in interacting with dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that the GIG motif (motif IVc) of UvrD plays a key role in interacting with dsDNA (Myong et al., 2005), and T422 (a representative residue of GIG) is important for UvrD activity (Lee and Yang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "51f1fb03-a48e-47fe-a3d5-f3743c8bc2c3",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C59",
+      "claim": "T422 (a representative residue of GIG) is important for UvrD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that the GIG motif (motif IVc) of UvrD plays a key role in interacting with dsDNA (Myong et al., 2005), and T422 (a representative residue of GIG) is important for UvrD activity (Lee and Yang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "e76c11e7-4e8d-416b-9f07-ccd7dc6d63c0",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C60",
+      "claim": "In the closed state, residue 18 of strand A contacts the GIG motif, whereas in the tilted state, residue 14 of strand B contacts the GIG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closed state, residue 18 of strand A contacts the GIG motif, whereas in the tilted state, residue 14 of strand B contacts the GIG motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analysis of the simulation trajectories shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "e3ec27d8-69f0-4212-ac0e-e32c81220efa",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C61",
+      "claim": "There is a diffusional motion along the dsDNA during the conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is a diffusional motion along the dsDNA during the conformational change (see Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the change in DNA-GIG contacts shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "22bb9c14-5729-474f-9815-40df85efeb99",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C62",
+      "claim": "UvrD is able to switch the binding dsDNA strand and finds an energetically favorable configuration for the ssDNA strand-switching that will happen in the next step.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a way, UvrD is able to switch the binding dsDNA strand and finds an energetically favorable configuration for the ssDNA strand-switching that will happen in the next step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed diffusion of the GIG motif along dsDNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "2d82a49a-7c84-4044-829b-1405bdc1bf5b",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C63",
+      "claim": "The diffusion happens in a way that the DNA and T422 are disengaged first, and T422 then re-engages with another DNA residue along the double strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion happens in a way that the DNA and T422 are disengaged first, and T422 then re-engages with another DNA residue along the double strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mechanism observed in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "b9faf149-7c2c-439f-98de-6227c7a325af",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C64",
+      "claim": "The 2B diffusion happens late during the transition.",
+      "claim_type": "EXPLICIT",
+      "source": "One can see that the 2B diffusion happens late during the transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "11858b35-7fc3-4f58-87ce-c7d8e54e6037",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C65",
+      "claim": "There is no base pair unwound during the closed-to-tilted transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Although UvrD diffuses along dsDNA during the transition, there is no base pair unwound during the closed-to-tilted transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "b0cd6799-a327-4c5b-ab18-64fc86b37e88",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C66",
+      "claim": "UvrD303 with substitution of two residues, 403 and 404 (both from Asp to Ala), in the 2B domain exhibits a 'hyper-helicase' unwinding activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experimental work (Meiners et al., 2014) discovered that UvrD303 with substitution of two residues, 403 and 404 (both from Asp to Ala), in the 2B domain exhibits a 'hyper-helicase' unwinding activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from previous experimental work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "4b9a3472-a41a-4afb-903b-cf23e4589207",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C69",
+      "claim": "UvrD303 actually favors the closed conformation and thus will lead to better unwinding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that UvrD303 actually favors the closed conformation and thus will lead to better unwinding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the calculated binding free energies for the mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "2c7e756d-d3ee-431d-bbf0-51287a8e4f59",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C70",
+      "claim": "Mutating the two aspartic acid residues into alanine will not decrease but rather increase the interaction strength between 1B and 2B.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that there are also negatively charged residues of 1B (E118/E117) near D403/D404, mutating the two aspartic acid residues into alanine will not decrease but rather increase the interaction strength between 1B and 2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of the residue interactions in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "0268733e-14ef-4eaf-9ade-b0df4623ec46",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C71",
+      "claim": "Mutating the two charged residues into hydrophobic residues instead increases the interaction strength between the nonpolar groups and the two alanine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that there are significant numbers of nonpolar residues located around residues 403 and 404 (L186, A184, L114, I113, L122). Thus, mutating the two charged residues into hydrophobic residues instead increases the interaction strength between the nonpolar groups and the two alanine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of the residue interactions in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "c0106104-d202-40bd-8291-71a0c126fe12",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C72",
+      "claim": "The stabilization of the closed state of UvrD303 leads to consistent unwinding of UvrD helicase, reconciling the biochemical measurement with the single-molecule experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the stabilization of the closed state of UvrD303 leads to consistent unwinding of UvrD helicase, reconciling the biochemical measurement (Meiners et al., 2014) with the single-molecule experiment (Comstock et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference that integrates the simulation results with previous experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "14a268c2-acc5-49fe-b04b-960417786797",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C73",
+      "claim": "The opening of the 2B domain involves a major tilting motion followed by a major rotational motion.",
+      "claim_type": "EXPLICIT",
+      "source": "We have characterized the conformational dynamics and a key metastable state of UvrD at a fork junction with a hybrid computational approach. The transition pathway as well as the free-energy landscape for UvrD functional switching at the fork junction was obtained, and we found that the opening of the 2B domain involves a major tilting motion followed by a major rotational motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the simulation results describing the transition mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "11d19fe3-2071-414b-9de9-99868bb01144",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C74",
+      "claim": "Diffusion of 2B along the dsDNA happens in the late stage of the transition, during which the GIG motif switches its contact from one strand of dsDNA to the other strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion of 2B along the dsDNA happens in the late stage of the transition, during which the GIG motif switches its contact from one strand of dsDNA to the other strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the simulation results describing the diffusion mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "755eac17-fae5-4d33-8b96-ac13147feceb",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C75",
+      "claim": "The transition leads to a gap opening between 2B and 1B, which enables the ssDNA to escape presumably allowing the motor domains to strand-switch.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition leads to a gap opening between 2B and 1B, which enables the ssDNA to escape presumably allowing the motor domains to strand-switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the simulation results with inference about the functional consequence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "ce92ca7b-115e-476f-b3fa-fc221e70b208",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C76",
+      "claim": "The UvrD functional switching happens in a two-step manner: a first step is the opening of the 2B domain, followed by a second step of the switching of the bound ssDNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "A schematic model can be established based on the simulation results (Figure 8a,b). The corresponding molecular models are shown in Figure 8d. The UvrD functional switching happens in a two-step manner. A first step is the opening of the 2B domain, followed by a second step of the switching of the bound ssDNA strand, in which the original ssDNA disengages from the 1A/2A/1B domain binding site and the other strand fills in.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the simulation results, illustrated in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "db888923-cef9-4ec8-8023-68415d9f7fa8",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C78",
+      "claim": "The equilibrium constant is around one and the unwinding and the re-zipping conformations should have similar free energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the equilibrium constant is around one and the unwinding and the re-zipping conformations should have similar free energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the calculated transition rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "46dc97d0-cca0-4473-af74-34b7d19e7cd2",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C80",
+      "claim": "The relative stabilization of the closed state leads to more persistent unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative stabilization of the closed state leads to more persistent unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the free energy changes for the mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "994b604f-92eb-4e50-b0e7-e608e29d57d4",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C81",
+      "claim": "The strand switching is mostly driven by Brownian motion and does not require energy from ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The strand switching is mostly driven by Brownian motion and does not require energy from ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of ATP concentration effects and structural comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "4efd7e7a-2830-4a8f-8c8d-c96c06fc7f74",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C82",
+      "claim": "The equilibrium constants of switching measured for the two concentrations (10 \u03bcM and 2.5 \u03bcM ATP) are very similar (both around 1), which suggests that strand switching is likely an ATP-independent process.",
+      "claim_type": "EXPLICIT",
+      "source": "The equilibrium constants of switching measured for the two concentrations are very similar (both around 1), which suggests that strand switching is likely an ATP-independent process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of experimental data at different ATP concentrations shown in Figure 8c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "7be3e1dd-a030-4898-9ce8-df7431011648",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C84",
+      "claim": "It is not very likely that ATP binding has a noticeable impact on the closed-to-tilted transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is not very likely that ATP binding has a noticeable impact on the closed-to-tilted transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural comparisons and experimental data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "ed60cca5-b92e-4df5-894e-fa2084b75aa4",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C85",
+      "claim": "After a 100 ns equilibration simulation, the modeled rezipping system was stable and had a rmsd around 3 \u00c5 from the tilted state.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 100 ns equilibration simulation, the modeled system was stable and had a rmsd around 3 \u00c5 from the tilted state (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from equilibration simulations shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "ac6afc62-73d0-451b-aec9-dc74b530511d",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C86",
+      "claim": "The apo state seen in the crystal structures without DNA bound is likely not a functional state of UvrD at the fork junction.",
+      "claim_type": "EXPLICIT",
+      "source": "The apo state seen in the crystal structures without DNA bound is likely not a functional state of UvrD at the fork junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of evidence from simulations and FRET analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "a3ee0558-9196-4ab5-bb72-b88bfffbe246",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C87",
+      "claim": "Upon completion of the ssDNA strand-switch, the conformation of UvrD is expected to stay close to the tilted structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon completion of the ssDNA strand-switch, we expect the conformation of UvrD to stay close to the tilted structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and FRET analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "9d996377-ba8a-4fd1-b9d1-b5f67abb148b",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C88",
+      "claim": "There are serious clashes between the apo structure and the dsDNA when aligned to the tilted state.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we aligned the apo state structure to the tilted state in Figure 8\u2014figure supplement 3, and there are serious clashes between the apo structure and the dsDNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural alignment shown in Figure 8\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "4ba0eddf-926f-4176-a50e-c2805fc076af",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C89",
+      "claim": "The apo state is highly unfavorable at the fork junction according to the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, the apo state is highly unfavorable at the fork junction according to our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the free-energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "0d7bc748-6234-4dbb-94be-52552f32a352",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C90",
+      "claim": "Frequent strand switching of UvrD due to 2B conformational transition results in unwinding over short distances, which is consistent with the small number of basepairs unwound during nucleotide excision repair.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, frequent strand switching of UvrD due to 2B conformational transition results in unwinding over short distances (Comstock et al., 2015), which is consistent with the small number of basepairs unwound during nucleotide excision repair (Kisker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the simulation results with known biological function, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "338878d3-239c-4dd4-9ba0-35e36603056a",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C91",
+      "claim": "UvrD303 is associated with a recombination-deficient phenotype, possibly due to lacking such a structural transition as the closed state is over-stabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, UvrD303 is associated with a recombination-deficient phenotype (Centore et al., 2009), possibly due to lacking such a structural transition as the closed state is over-stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the simulation results with experimental phenotype, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "30d3f8e7-f6d7-4fd2-a7ad-cdae73878858",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C92",
+      "claim": "UvrD can dismantle RecA filaments from the ssDNA at a stalled replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that UvrD can dismantle RecA filaments from the ssDNA at a stalled replication fork (Veaute et al., 2005; Lestini and Michel, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "1c67ed45-1349-4aa7-8fdc-928fee23c205",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C93",
+      "claim": "A population shift toward the closed state could enhance UvrD's ability to disrupting RecA-ssDNA filaments and impair recombinational repair.",
+      "claim_type": "EXPLICIT",
+      "source": "As RecA has a central role in homologous recombination (Cox, 2007), a population shift toward the closed state could enhance UvrD's ability to disrupting RecA-ssDNA filaments and impair recombinational repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and known RecA function, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "c0930903-0517-4633-9240-a5c4b753b740",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C94",
+      "claim": "The tilted state and related motions found here can possibly help connect structural information with function for other SF1 helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilted state and related motions found here can possibly help connect structural information with function for other SF1 helicases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "a11ef4ed-5d67-4d06-a7c4-9ba32e6c9dd8",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C95",
+      "claim": "PcrA is known to efficiently strip RecA filaments off ssDNA in an 'open' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "A highly homologous helicase, PcrA, is known to efficiently strip RecA filaments off ssDNA in an 'open'conformation (Park et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "7e2932b7-9fe8-4fde-8fbb-9cb2c7bc3dbc",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C96",
+      "claim": "The low-FRET 'open' conformation of PcrA could be similar to the tilted conformation revealed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-FRET 'open' conformation of PcrA could be similar to the tilted conformation revealed in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation connecting the findings to related helicases.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "f17d4fdd-453e-45fc-bed5-e997e82826e6",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C97",
+      "claim": "Cross-linking Rep and PcrA in the closed form resulted in superhelicase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments have shown that cross-linking Rep and PcrA in the closed form resulted in superhelicase activity (Arslan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "a98d592a-9500-4c28-af29-8e10e6477b8a",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C98",
+      "claim": "Mutating some negatively charged residues on 1B might also result in hyper-helicase behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutating some negatively charged residues on 1B might also result in hyper-helicase behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential mutations based on the binding free energy analysis.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "6de82ff9-28b3-4642-9f97-b9538563db1e",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "claim_id": "C100",
+      "claim": "All MD simulations in the study were performed using NAMD 2.10 with the CHARMM36 force field.",
+      "claim_type": "EXPLICIT",
+      "source": "All MD simulations in our study were performed using NAMD 2.10 (Phillips et al., 2005) with the CHARMM36 force field (Best et al., 2012; Hart et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "14176c01-ffc6-4822-9f47-0124e23dc92d",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Principal component analysis (PCA) of UvrD homolog structures identified three distinct conformational clusters: closed, apo, and tilted states. The first two principal components (PC1 and PC2) representing rotation and tilting motions of the 2B domain are sufficient to describe the conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 describe a bioinformatics analysis using PCA on homologous structures. The methodology is clearly described, the results are shown in Figure 2, and the involvement coefficient analysis (C34-C35) supports that PC1 and PC2 capture the major conformational variations. This is a well-supported methodological result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Free-energy simulations reveal that UvrD transitions from closed to tilted state through a two-phase mechanism involving tilting followed by rotation of the 2B domain. The tilted state is a novel metastable conformation with a gap size of 14 \u00c5 (sufficient for ssDNA passage) and free energy ~2.5 kcal/mol higher than the closed state, separated by a 4.2 kcal/mol barrier.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C37-C48, C73-C75 describe the core computational findings from 12 \u03bcs of Hamiltonian replica exchange simulations. The free-energy landscape, transition pathway, energy barriers, and structural features are consistently reported across multiple claims with supporting figures (Figures 3-4). The computational methodology is appropriate and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "465bb97d-fc62-462d-96f0-2e782bbb7678",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Simulated FRET efficiency distributions for the closed and tilted states match experimental measurements for unwinding and rezipping states, respectively. The closed state shows FRET efficiency of 0.72 (experimental unwinding: 0.66) and tilted state shows 0.31 (experimental rezipping: 0.29), while the apo state (0.16) does not match either experimental state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 provide quantitative validation of the computational predictions against experimental single-molecule FRET data. The agreement between simulated and experimental FRET distributions is strong (within ~0.06 FRET units), and the explicit fluorophore simulations (500 ns each) are methodologically sound. The mismatch with the apo state strengthens the conclusion that the tilted state represents the rezipping conformation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "a356bfc6-34e7-4f25-8f37-3fda28f43ee4",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The tilted state enables ssDNA strand switching: ssDNA can disengage from the binding domains in the tilted state, and the tilted structure can stably bind the opposing strand to complete strand switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 and C85 demonstrate functional capability of the tilted state through targeted MD simulations showing ssDNA release (Video 2) and equilibration simulations (100 ns) showing stable binding to the opposing strand with RMSD ~3 \u00c5. These simulations provide mechanistic support for the strand-switching model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "ccfaad41-f50c-44d9-8be0-830eff47b03b",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During the closed-to-tilted transition, the GIG motif (specifically T422) diffuses along dsDNA, switching contact from residue 18 of strand A to residue 14 of strand B. This diffusion occurs late in the transition without unwinding base pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C65 describe the role of the GIG motif during the conformational transition, supported by trajectory analysis shown in Figure 6. The mechanism of disengagement and re-engagement is clearly demonstrated, and the timing relative to the overall transition is documented. The observation that no base pairs are unwound during this transition is an important mechanistic detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "d89efe3c-4f1e-4a7f-bbbf-b9e2312750c8",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The UvrD303 double mutant (D403A/D404A) exhibits hyper-helicase activity because the mutations stabilize the closed (unwinding) state by ~2.85 kcal/mol through increased hydrophobic interactions and reduced electrostatic repulsion with nearby residues on the 1B domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C69-C72, and C80 provide a molecular explanation for the experimentally observed hyper-helicase phenotype using MM/PBSA binding free energy calculations. The structural analysis of residue interactions (Figure 7) supports the proposed mechanism. This reconciles previously conflicting interpretations from biochemical and single-molecule experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "043a5c22-fcac-437e-8ef9-b472c44f319e",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "UvrD functional switching occurs through a two-step ATP-independent process: (1) 2B domain opening (closed to tilted transition), followed by (2) ssDNA strand switching. The equilibrium constant between unwinding and rezipping states is ~1, and strand switching is driven by Brownian motion rather than ATP hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C78, C81-C82, and C84 integrate simulation results with experimental dwell time analysis at different ATP concentrations (Figure 8c). The similar equilibrium constants at 10 \u03bcM and 2.5 \u03bcM ATP support ATP-independence. The structural comparison of ATP-bound and ATP-free states further supports this conclusion. The proposed two-step mechanism is consistent with all available data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "3cb9730b-2f43-422c-a129-f90726582f7b",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The apo state (3LFU crystal structure) is not a functional state of UvrD at the fork junction. Multiple lines of evidence show: (1) geometric clashes with DNA, (2) high free energy (>8 kcal/mol above closed state), (3) FRET mismatch with experimental rezipping state, and (4) instability in forced simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C27-C28, C43-C44, and C86-C89 provide converging evidence from multiple independent analyses (structural alignment, free-energy calculations, FRET simulations, targeted MD) that all consistently indicate the apo state is not functional at the junction. This is a key negative result that challenges previous assumptions in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "605437b7-f706-4527-b132-d4a322452200",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The conformational switching mechanism explains UvrD's biological functions: frequent switching results in short-distance unwinding consistent with nucleotide excision repair, while the UvrD303 mutant's over-stabilized closed state enhances RecA filament disruption and impairs recombinational repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 connect the computational findings to known biological functions through logical inference supported by citations. The explanations are consistent with the simulation results and experimental phenotypes. While these are interpretations rather than direct experimental tests, they represent well-supported hypotheses linking structure to function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "84f5a6f8-9eb8-476d-90be-64b6acc04092",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The tilted state and associated motions may be relevant to other SF1 helicases such as PcrA and Rep, potentially explaining their 'open' conformations and superhelicase activities upon cross-linking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C98 are speculative extensions to related helicases. While the speculation is reasonable and supported by citations to relevant experimental work, these claims represent hypotheses for future testing rather than established results. The authors appropriately use cautious language ('could be', 'might', 'can possibly').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "1e4af175-7295-4ff7-85fc-c784653d5b61",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on helicases, UvrD structure and function, and the strand-switching model from prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C24, and C26 provide established background knowledge supported by appropriate citations. These claims accurately represent prior work and set up the context for the current study. The structural observations (C20-C24) are based on published crystal structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    },
+    {
+      "id": "0118657a-04d3-4794-b7c9-1141b086a917",
+      "content_id": "39a632f1-fd81-4106-a0fc-cfde4d559832",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All MD simulations were performed using NAMD 2.10 with the CHARMM36 force field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C100 describes the computational methods used. This is clearly stated and appropriately cited. The choice of software and force field is standard and appropriate for this type of study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:07.540929Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ca31f36e-af83-43a5-b38b-793eb2e3640f",
+      "result_id": "14176c01-ffc6-4822-9f47-0124e23dc92d"
+    },
+    {
+      "claim_id": "f77ec163-71e0-4c9e-b610-465c2b6cee1d",
+      "result_id": "14176c01-ffc6-4822-9f47-0124e23dc92d"
+    },
+    {
+      "claim_id": "a3967ce1-5090-47bc-a442-38e6dd7c4dce",
+      "result_id": "14176c01-ffc6-4822-9f47-0124e23dc92d"
+    },
+    {
+      "claim_id": "ab7e799b-7663-451c-b050-0fd443c4a08f",
+      "result_id": "14176c01-ffc6-4822-9f47-0124e23dc92d"
+    },
+    {
+      "claim_id": "2bedd8d0-1bce-4169-903f-3d4308b16a01",
+      "result_id": "14176c01-ffc6-4822-9f47-0124e23dc92d"
+    },
+    {
+      "claim_id": "addfb5f2-f78c-4826-a79d-9f405d4db468",
+      "result_id": "14176c01-ffc6-4822-9f47-0124e23dc92d"
+    },
+    {
+      "claim_id": "d7ecbebd-c39f-4b38-b9e1-16f175a0ad2e",
+      "result_id": "14176c01-ffc6-4822-9f47-0124e23dc92d"
+    },
+    {
+      "claim_id": "4fa92b2e-4358-4d56-8ae8-6f026af3c210",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "996d804e-0f7d-4c92-b7d1-f71fdbc51003",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "9bfe31d3-efee-4323-8592-61202dc0c9ba",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "c3790765-f4a9-4baf-9f47-7c8bfdfa1a81",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "41485ffd-34ba-44ed-b736-f49c80bbb215",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "2196ba1f-7a55-4158-aba2-c5792df86b90",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "a1299c17-dc9d-4d5f-9011-31d89f520554",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "2567ba4f-96a1-4895-8183-5173a3ddc90e",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "b603d716-64f7-4ea5-83fe-bf2c8036651f",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "e7be14eb-2cba-4843-bc82-191013fa4f24",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "8d7ada16-6ca3-4aaf-a930-7a3806b4a409",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "14a268c2-acc5-49fe-b04b-960417786797",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "11d19fe3-2071-414b-9de9-99868bb01144",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "755eac17-fae5-4d33-8b96-ac13147feceb",
+      "result_id": "30d7a28b-18ee-4d3f-b32f-adeb4d03d8f4"
+    },
+    {
+      "claim_id": "c6cfec65-cb41-465f-8423-7a8affc86c9e",
+      "result_id": "465bb97d-fc62-462d-96f0-2e782bbb7678"
+    },
+    {
+      "claim_id": "e35adbd4-1428-448b-b434-aa8e68945e9e",
+      "result_id": "465bb97d-fc62-462d-96f0-2e782bbb7678"
+    },
+    {
+      "claim_id": "4d8beaeb-fd26-4336-966c-44120c3baef9",
+      "result_id": "465bb97d-fc62-462d-96f0-2e782bbb7678"
+    },
+    {
+      "claim_id": "e9376132-2213-4f91-8c78-419dc13cdd3f",
+      "result_id": "465bb97d-fc62-462d-96f0-2e782bbb7678"
+    },
+    {
+      "claim_id": "0a174219-b58d-4777-998a-2411efe09952",
+      "result_id": "465bb97d-fc62-462d-96f0-2e782bbb7678"
+    },
+    {
+      "claim_id": "05d91342-6804-4aa9-972d-029d82391001",
+      "result_id": "465bb97d-fc62-462d-96f0-2e782bbb7678"
+    },
+    {
+      "claim_id": "b22af002-50a0-4a37-9b22-59768c8ba85a",
+      "result_id": "465bb97d-fc62-462d-96f0-2e782bbb7678"
+    },
+    {
+      "claim_id": "68b1d5c1-9565-42e9-87ab-ce52cab179df",
+      "result_id": "a356bfc6-34e7-4f25-8f37-3fda28f43ee4"
+    },
+    {
+      "claim_id": "896fb215-7ac0-4f2b-97eb-d2c0921c16bc",
+      "result_id": "a356bfc6-34e7-4f25-8f37-3fda28f43ee4"
+    },
+    {
+      "claim_id": "ed60cca5-b92e-4df5-894e-fa2084b75aa4",
+      "result_id": "a356bfc6-34e7-4f25-8f37-3fda28f43ee4"
+    },
+    {
+      "claim_id": "7c888de2-1584-4ff2-8fed-5e1390cb6b98",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "51f1fb03-a48e-47fe-a3d5-f3743c8bc2c3",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "e76c11e7-4e8d-416b-9f07-ccd7dc6d63c0",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "e3ec27d8-69f0-4212-ac0e-e32c81220efa",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "22bb9c14-5729-474f-9815-40df85efeb99",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "2d82a49a-7c84-4044-829b-1405bdc1bf5b",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "b9faf149-7c2c-439f-98de-6227c7a325af",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "11858b35-7fc3-4f58-87ce-c7d8e54e6037",
+      "result_id": "ccfaad41-f50c-44d9-8be0-830eff47b03b"
+    },
+    {
+      "claim_id": "b0cd6799-a327-4c5b-ab18-64fc86b37e88",
+      "result_id": "d89efe3c-4f1e-4a7f-bbbf-b9e2312750c8"
+    },
+    {
+      "claim_id": "4b9a3472-a41a-4afb-903b-cf23e4589207",
+      "result_id": "d89efe3c-4f1e-4a7f-bbbf-b9e2312750c8"
+    },
+    {
+      "claim_id": "2c7e756d-d3ee-431d-bbf0-51287a8e4f59",
+      "result_id": "d89efe3c-4f1e-4a7f-bbbf-b9e2312750c8"
+    },
+    {
+      "claim_id": "0268733e-14ef-4eaf-9ade-b0df4623ec46",
+      "result_id": "d89efe3c-4f1e-4a7f-bbbf-b9e2312750c8"
+    },
+    {
+      "claim_id": "c0106104-d202-40bd-8291-71a0c126fe12",
+      "result_id": "d89efe3c-4f1e-4a7f-bbbf-b9e2312750c8"
+    },
+    {
+      "claim_id": "46dc97d0-cca0-4473-af74-34b7d19e7cd2",
+      "result_id": "d89efe3c-4f1e-4a7f-bbbf-b9e2312750c8"
+    },
+    {
+      "claim_id": "ce92ca7b-115e-476f-b3fa-fc221e70b208",
+      "result_id": "043a5c22-fcac-437e-8ef9-b472c44f319e"
+    },
+    {
+      "claim_id": "db888923-cef9-4ec8-8023-68415d9f7fa8",
+      "result_id": "043a5c22-fcac-437e-8ef9-b472c44f319e"
+    },
+    {
+      "claim_id": "994b604f-92eb-4e50-b0e7-e608e29d57d4",
+      "result_id": "043a5c22-fcac-437e-8ef9-b472c44f319e"
+    },
+    {
+      "claim_id": "4efd7e7a-2830-4a8f-8c8d-c96c06fc7f74",
+      "result_id": "043a5c22-fcac-437e-8ef9-b472c44f319e"
+    },
+    {
+      "claim_id": "7be3e1dd-a030-4898-9ce8-df7431011648",
+      "result_id": "043a5c22-fcac-437e-8ef9-b472c44f319e"
+    },
+    {
+      "claim_id": "7129a115-c334-40fa-a5fc-30659b8149bb",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "3208dc4a-860c-4bda-bae5-4187727f141a",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "1537e69b-6612-47ca-b07f-b1d20e70e765",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "2196ba1f-7a55-4158-aba2-c5792df86b90",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "a1299c17-dc9d-4d5f-9011-31d89f520554",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "ac6afc62-73d0-451b-aec9-dc74b530511d",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "a3ee0558-9196-4ab5-bb72-b88bfffbe246",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "9d996377-ba8a-4fd1-b9d1-b5f67abb148b",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "4ba0eddf-926f-4176-a50e-c2805fc076af",
+      "result_id": "3cb9730b-2f43-422c-a129-f90726582f7b"
+    },
+    {
+      "claim_id": "0d7bc748-6234-4dbb-94be-52552f32a352",
+      "result_id": "605437b7-f706-4527-b132-d4a322452200"
+    },
+    {
+      "claim_id": "338878d3-239c-4dd4-9ba0-35e36603056a",
+      "result_id": "605437b7-f706-4527-b132-d4a322452200"
+    },
+    {
+      "claim_id": "30d3f8e7-f6d7-4fd2-a7ad-cdae73878858",
+      "result_id": "605437b7-f706-4527-b132-d4a322452200"
+    },
+    {
+      "claim_id": "1c67ed45-1349-4aa7-8fdc-928fee23c205",
+      "result_id": "605437b7-f706-4527-b132-d4a322452200"
+    },
+    {
+      "claim_id": "c0930903-0517-4633-9240-a5c4b753b740",
+      "result_id": "84f5a6f8-9eb8-476d-90be-64b6acc04092"
+    },
+    {
+      "claim_id": "a11ef4ed-5d67-4d06-a7c4-9ba32e6c9dd8",
+      "result_id": "84f5a6f8-9eb8-476d-90be-64b6acc04092"
+    },
+    {
+      "claim_id": "7e2932b7-9fe8-4fde-8fbb-9cb2c7bc3dbc",
+      "result_id": "84f5a6f8-9eb8-476d-90be-64b6acc04092"
+    },
+    {
+      "claim_id": "f17d4fdd-453e-45fc-bed5-e997e82826e6",
+      "result_id": "84f5a6f8-9eb8-476d-90be-64b6acc04092"
+    },
+    {
+      "claim_id": "a98d592a-9500-4c28-af29-8e10e6477b8a",
+      "result_id": "84f5a6f8-9eb8-476d-90be-64b6acc04092"
+    },
+    {
+      "claim_id": "0c398a6e-673e-400f-b167-1148578bca28",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "7daa9c9c-e962-4a21-bbf2-db92385be7d1",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "a70f6eb1-09c3-448c-a9fe-ec1a434e6124",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "b4317724-b516-4b34-99d8-9afd611eda6f",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "80652187-58e8-4cc9-b65f-4441b350f9e9",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "82e00d42-3750-40e1-b33e-72d892a3e2d4",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "8e6a5ca5-591c-4aa3-a706-996b7b6e4b16",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "09e30cd0-ea9d-448c-b9f4-cdb2d395525f",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "209f368a-aca8-4b5f-a6e7-31e761edb5d5",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "f280b98d-a7a7-4d3f-9f02-b04b304400d3",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "56481579-9e6d-439b-ba1d-13010578ecb3",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "dc97fd35-ec70-4a02-92be-d53322d15b4d",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "da985f95-89f2-4190-b75d-b5cae18204bc",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "dd58f420-1fbf-425e-99ff-536f38ed0d24",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "7ab67680-eb5e-4fbc-8050-5672688239a2",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "ba7188da-b1f9-47a6-9f25-4d7d06198c64",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "648b814e-fc94-4a29-9a87-2de20d4595a9",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "57966e38-0ffd-4811-848f-9533c344b9c9",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "1445a1bb-8992-4ad5-a27d-d991f69af1a7",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "916167c0-06ab-43e5-bd20-d6ba83a76daa",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "4a5c2369-d997-43cc-83a8-47bf4927247b",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "72130af3-8fb0-47b9-9a40-cf8d0f71172b",
+      "result_id": "1e4af175-7295-4ff7-85fc-c784653d5b61"
+    },
+    {
+      "claim_id": "6de82ff9-28b3-4642-9f97-b9538563db1e",
+      "result_id": "0118657a-04d3-4794-b7c9-1141b086a917"
+    }
+  ],
+  "comparisons": []
+}

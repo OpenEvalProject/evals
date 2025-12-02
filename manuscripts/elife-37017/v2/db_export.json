@@ -1,0 +1,1495 @@
+{
+  "submission": {
+    "id": "d34cb33a-01b9-4148-8f0f-73349794d58a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:06:51.498321Z",
+    "updated_at": "2025-12-02T02:06:51.498321Z"
+  },
+  "content": [
+    {
+      "id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "submission_id": "d34cb33a-01b9-4148-8f0f-73349794d58a",
+      "content_type": "manuscript",
+      "content_text": "# Building a functional connectome of the Drosophila central complex\n\n## Authors\n\n- Romain Franconville<sup>1</sup> ([ORCID: 0000-0002-4440-7297](https://orcid.org/0000-0002-4440-7297)) \u2020\n- Celia Beron<sup>1</sup>\n- Vivek Jayaraman<sup>1</sup> ([ORCID: 0000-0003-3680-7378](https://orcid.org/0000-0003-3680-7378)) \u2020\n\n### Affiliations\n\n1. Janelia Research Campus Howard Hughes Medical Institute Ashburn United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe central complex is a highly conserved insect brain region composed of morphologically stereotyped neurons that arborize in distinctively shaped substructures. The region is implicated in a wide range of behaviors and several modeling studies have explored its circuit computations. Most studies have relied on assumptions about connectivity between neurons based on their overlap in light microscopy images. Here, we present an extensive functional connectome of Drosophila melanogaster\u2019s central complex at cell-type resolution. Using simultaneous optogenetic stimulation, calcium imaging and pharmacology, we tested the connectivity between 70 presynaptic-to-postsynaptic cell-type pairs. We identified numerous inputs to the central complex, but only a small number of output channels. Additionally, the connectivity of this highly recurrent circuit appears to be sparser than anticipated from light microscopy images. Finally, the connectivity matrix highlights the potentially critical role of a class of bottleneck interneurons. All data are provided for interactive exploration on a website.\n\n## Introduction\n\nPositioned in the middle of the insect brain, the central complex provides a unique opportunity to obtain mechanistic insights into the way brains build and use abstract representations (Turner-Evans and Jayaraman, 2016). Studies in a variety of insects, including locusts, dung beetles, bees and monarch butterflies, have used intracellular recordings to chart maps of polarized light E-vectors in substructures of the region (Heinze and Homberg, 2007; Heinze and Reppert, 2011a; el Jundi et al., 2015; Stone et al., 2017), and extracellular recordings from the cockroach have found sensory and motor correlates throughout the region (Bender et al., 2010; Guo and Ritzmann, 2013; Ritzmann, 2012). More recently, calcium imaging experiments in behaving Drosophila have shown that both visual and motor cues can update a fly\u2019s internal representation of heading (Seelig and Jayaraman, 2015). Independently, neurogenetic studies have used disruptions of the normal physiology of the structure to highlight its involvement in a variety of functions, including motor coordination (Poeck et al., 2008),\u00a0visual memory (Liu et al., 2006), sensory-motor adaptation (Triphan et al., 2010), and short- and long-term spatial memory (Neuser et al., 2008; Ofstad et al., 2011). It is likely that these tasks rely on the correct establishment and use of an internal representation of heading (Giraldo et al., 2018; Green et al., 2018).\n\nThe scale of the network\u2014a few thousands of neurons in the fly central complex\u2014and the ease of genetic access to individual cell types in Drosophila melanogaster, make this circuit tractable with existing theoretical and experimental methods. Detailed anatomy at the light microscopy level (Hanesch et al., 1989; Wolff et al., 2015; Lin et al., 2013) of a significant fraction of the cell types, along with the availability of tools to genetically target these neurons by type (Wolff et al., 2015), have fueled the first mechanistic investigations of how the circuit constructs a stable heading representation (Kim et al., 2017), and how this representation updates as the animal turns in darkness (Turner-Evans et al., 2017; Green et al., 2017). Such results and related findings from other insects have also inspired a number of modeling studies aimed at predicting or reproducing physiologically and behaviorally relevant response patterns (Kakaria and de Bivort, 2017; Givon et al., 2017; Chang et al., 2017; Cope et al., 2017; Su et al., 2017; Fiore et al., 2017; Kim et al., 2017; Stone et al., 2017; Turner-Evans et al., 2017). Many of these models make assumptions about connectivity within the central complex based on the degree of overlap at the light microscopy level between processes that look bouton-like and those that seem spiny, which are suggestive of pre-and post-synaptic specializations, respectively. To go beyond those anatomical approaches, we constructed a connectivity map based on functional data, which includes information about whether connections are effectively excitatory or inhibitory. This map will help dissect the function of the central complex by constraining large-scale models and aiding the formulation and testing of new hypotheses. Given the dozens of central complex cell types (known and yet to be discovered) omitted in our dataset, the diversity of neurotransmitters and receptors they express, the mixture of pre- and post-synaptic specializations in their arbors, and the dense recurrence of the network, we see this map not as a full connectome, but as an initial scaffold that will allow new information to be incorporated as and when it becomes available.\n\nThe quest to obtain circuit diagrams dates back to Cajal and Golgi (Azoulay, 1894; Pannese, 1999), who used sparse labeling techniques to reveal neuron morphology and circuit architectures. Anatomical methods based on marking a discrete subset of neurons and imaging them with light microscopy have recently been revived in the form of techniques relying on stochastic genetic labeling (Livet et al., 2007; Hampel et al., 2011; Nern et al., 2015; Lee and Luo, 2001; Chiang et al., 2011) and photoactivatable fluorophores (Patterson and Lippincott-Schwartz, 2002; Ruta et al., 2010). These methods allow the extraction of the detailed anatomy of individual neurons. But even when used in combination with synaptic markers (NicolaiNicola\u00ef et al., 2010; DiAntonio et al., 1993; Zhang et al., 2002; Fouquet et al., 2009), such methods do not offer definitive evidence of synaptic connections, as they rely solely on the proximity of putative pre- and post-synaptic compartments. Recently, promising trans-synaptic genetic tagging systems (Talay et al., 2017; Huang et al., 2017) have been developed to address some of these issues. However, none of these approaches provide any insight into the functional properties of potential connections. Despite such shortcomings, light-level microscopy constitutes a good starting point by constraining the search for possible connections within large populations of neurons \u2014at the simplest level, if putative pre- and post-synaptic compartments do not overlap in light microscopy images, they cannot be in synaptic contact.\n\nElectron microscopy (EM) reconstruction is considered to be the gold standard for connectomics (White et al., 1986; Briggman and Bock, 2012; Zheng et al., 2017; Schneider-Mizell et al., 2016). Under ideal conditions, it permits the unambiguous identification of synapses between all neurons in a given volume. As powerful as this capability is, the technique also suffers from a few limitations. Acquiring, processing and analyzing the data is still time-consuming. As a result, connectomes from EM data are typically based on data from a single animal. In addition, EM does not permit the identification of neurotransmitter types at a given synapse, nor does it detect gap-junctions in invertebrate tissue, at least at present (Zheng et al., 2017). Finally, it can be challenging to assess the strengths of connections between neurons, because it is not yet clear whether the number of synapses predicts the functional strength of the connection.\n\nFunctional methods address some of these drawbacks. Simple measures of activity have been used to assess a form of functional connectivity: regions or neurons whose simultaneously recorded activity is correlated\u2014either spontaneously or during a given task\u2014are deemed connected. This has been used with EEG, fMRI and MEG recordings in humans to establish maps at the brain region level (Salvador et al., 2005; Stam, 2004) and with multi-electrode recordings in monkeys and rodents (for example, [Gerhard et al., 2011]). Functional connectivity has also been inferred from correlations or graded changes in the response properties of neurons recorded in different animals, usually in cases where the neurons have overlapping arbors when examined with light microscopy. This approach has been employed to suggest polarized light processing pathways in the central complex of the locust and monarch butterfly (Heinze et al., 2009; Heinze, 2014). However, such functional methods are correlative and do not provide a causal basis for the inferred connectivity.\n\nTo obtain a causal description of functional connectivity\u2014sometimes termed effective connectivity\u2014it is necessary to either stimulate one node of the network while recording from another one, or record both at sufficiently high resolution as to detect hallmarks of direct connectivity. The most reliable approach of this class is paired patch-clamp recording, which identifies connected pairs and their functional properties with a high level of detail (Huang et al., 2010; Yaksi and Wilson, 2010; Fi\u015fek and Wilson, 2014), but can only be performed at low throughput (Jiang et al., 2015). In recent years, the development of optogenetics has expanded the toolkit for simultaneous stimulation and recording experiments (Petreanu et al., 2007). In Drosophila, the ease of use of genetic reagents renders such approaches particularly attractive. Combinations of P2X2 (a mammalian purinergic receptor that can be ectopically expressed in Drosophila and activated by ATP application) and the genetically encoded calcium indicator GCaMP (Yao et al., 2012), P2X2 and patch-clamp recordings (Hu et al., 2010), Channelrhodopsin-2 and patch-clamp (Gruntman and Turner, 2013), CsChrimson (a red shifted Channelrhodopsin) and CaMPARI (a calcium activity integrator, see [Fosque et al., 2015]) and CsChrimson and GCaMP (Hampel et al., 2015; Zhou et al., 2015; Ohyama et al., 2015) have been used in individual studies to investigate a small number of connections. Methods that rely on the genetic expression of calcium indicators to detect potential post-synaptic responses operate at a lower resolution than paired-recordings since they usually establish connectivity between cell types, as defined by the genetic driver lines used, rather than between individual neurons. These methods cannot definitively distinguish connections that are direct from those that might involve several synapses (but see Results/Discussion) and are limited by the sensitivity of the calcium sensors used. Despite these shortcomings, such methods constitute a good compromise as they provide a causal measure of functional connectivity at a much higher throughput than double patch recordings. It is also worth noting that the advantages and limitations of these techniques complement those of serial EM reconstructions. We chose to apply this combination of optogenetics and calcium imaging on a large scale by systematically testing genetically defined pairs of central complex cell types in an ex vivo preparation, therefore building a large and extensible map of functional connections in the structure at cell-type resolution.\n\n### Cell types and hypothetical information flow in the central complex\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the central complex and associated structures used throughout the manuscript. (B) (i) Hypothesized global information flow in the central complex based on neuron morphologies and the overlap of putative pre- and post-synaptic processes between different neuron types, based on Wolff et al. (2015) and Hanesch et al. (1989). (ii) Connectivity map based on the results of this study. Faded arrows represent hypotheses that were not tested in the present study.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Same as figure Figure 1, but with neuron type names underlying the connections indicated. (i) Hypothesized connections based on the anatomy described in Wolff et al. (2015) and Hanesch et al. (1989). (ii) Connectivity map based on the results of this study. Faded arrows and names represent hypotheses that were not tested in the present study.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Neuron types included in the study, grouped by super-type. P-EN1 and P-EN2 (Green et al., 2017) are drawn identically as they are almost indistinguishable based solely on anatomy. Note that each diagram represents a single neuron of the class. The driver lines selected contained most neurons of a given class. For columnar neuron classes, this meant that all or most columns were innervated.\n\nThe central complex consists of four main neuropiles \u2014 the protocerebral bridge (PB), the ellipsoid body (EB, Central Body Lower in other insects), the fan-shaped body (FB, Central Body Upper in other insects) and the noduli (NO) \u2014 and at least three accessory neuropiles (also known as the lateral complex) \u2014 the gall (GA), the lateral accessory lobe (LAL) and the bulbs (BU) (Figure 1A and [Wolff et al., 2015; Lin et al., 2013; Hanesch et al., 1989]). Throughout this manuscript, we denote output (resp. input)\u00a0neurons that link central complex neuropiles to neuropiles outside the central complex. Some of the most striking neural elements of the central complex are the columnar neurons, which innervate one of the 18 (in Drosophila) glomeruli of the PB, one vertical section of either the FB or EB, and one accessory neuropile \u2014 a column being constituted by the PB glomeruli and FB/EB section. A total of 12 different columnar cell types have been described, with stereotypical correspondences between the PB glomerulus and the EB/FB section. In addition to these \u2018principal cells\u2019, there are a number of neurons innervating multiple columns of one neuropile. These neurons often innervate subdivisions orthogonal to the columns. Moreover, they sometimes also project to neuropiles outside the central complex. This set of neurons includes the ring neurons, which innervate a ring within the EB and an accessory neuropile, and a collection of inputs and interneurons with processes in the FB and PB. From this light level anatomy and putative synaptic polarity, one can derive a hypothetical picture of information flow through the central complex (Figure 1Bi):\n\nWe show that this overall flow of information is generally supported functionally for the parts we have tested so far, but with a few potentially important differences (Figure 1Bii): the observed connectivity in the PB is sparse, rendering the function of\u00a0PB interneurons possibly critical; accessory structures are usually input rather than output areas; and, consequently, output channels of the central complex are scarce.\n\n## Results\n\n### A functional connectivity screen\n\nWe picked driver lines for functional connectivity mapping by visually inspecting the Janelia Gal4-driver collection (Jenett et al., 2012) for strength of expression in the cell types of interest, and sparseness of the expression pattern in the central complex. The 37 driver lines (for 24 cell types) cover the main columnar neuron types (8 of the 11 types described in Wolff et al. (2015)) and PB interneurons (3 out of the five in Wolff et al. (2015)), a LAL-FB neuron, three types of ring neurons, a Gall-EB neuron columnar in the EB and neurons innervating accessory structures, namely four types of LAL interneuron and three types of neurons connecting the LAL to the noduli. Drivers are listed in\u00a0Table 1 and Table 2. Neuron types are schematized in Figure 2A and Figure 1\u2014figure supplement 1. The dataset includes inputs to the EB system, connections between EB columnar neurons, connections in the PB as well as potential inputs and outputs in the LAL, Gall and noduli. Among the types tested, 43 of the 59 anatomically possible connections could be tested with the reagents available. The connectivity of the multitude of cell types within the FB has not been explored: neither FB interneurons (also known as pontine cells), nor FB input neurons are part of this study.\n\n**Table 1.**\n Drivers and neuron types used.When the \u2018Driver\u2019 name is followed by an insertion site, it is a LexA line (see Materials\u00a0and\u00a0methods). Names starting by SS are stable splits. All other driver names correspond to both Gal4 (in attP2) and LexA (in attP40) drivers. \u2018New Type Name\u2019 refers to the nomenclature for short names adopted in this paper (following [Kakaria and de Bivort, 2017; Turner-Evans et al., 2017; Green et al., 2017]). Type description is the long name, following the guidelines of Wolff et al. (2015). Pre and post regions are labeled based on anatomical characteristics. The finer subdivisions were used to establish if two neurons were anatomically overlapping. The corresponding name in other insect species were determined using the insect brain database (https://insectbraindb.org/) and related papers (Heinze and Homberg, 2008; Heinze and Reppert, 2011b; Stone et al., 2017)\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Driver</th>\n      <th>New type name</th>\n      <th>Type description</th>\n      <th>Super type</th>\n      <th>Name in other insects</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>87G07</td>\n      <td>P-F3N2d</td>\n      <td>PBG2-9.s-FBl3.b-NO2D.b</td>\n      <td>FB columnar</td>\n      <td>CPU4 (b or c)</td>\n    </tr>\n    <tr>\n      <td>85H06</td>\n      <td>P-F1N3</td>\n      <td>PBG2-9.s-FBl1.b-NO3PM.b</td>\n      <td>FB columnar</td>\n      <td>CPU5</td>\n    </tr>\n    <tr>\n      <td>60D05</td>\n      <td>E-PG</td>\n      <td>PBG1-8.b-EBw.s-DV_GA.b</td>\n      <td>EB columnar</td>\n      <td>CL1a</td>\n    </tr>\n    <tr>\n      <td>SS02191</td>\n      <td>P-EG</td>\n      <td>PBG1-8.s-EBt.b-DV_GA.b</td>\n      <td>EB columnar</td>\n      <td>CL1b</td>\n    </tr>\n    <tr>\n      <td>67D09</td>\n      <td>P-F3N2v</td>\n      <td>PBG2-9.s-FBl3.b-NO2V.b</td>\n      <td>FB columnar</td>\n      <td>CPU4(a)</td>\n    </tr>\n    <tr>\n      <td>67D09-attP5</td>\n      <td>P-F3N2v</td>\n      <td>PBG2-9.s-FBl3.b-NO2V.b</td>\n      <td>FB columnar</td>\n      <td>CPU4(a)</td>\n    </tr>\n    <tr>\n      <td>67D09-VK22</td>\n      <td>P-F3N2v</td>\n      <td>PBG2-9.s-FBl3.b-NO2V.b</td>\n      <td>FB columnar</td>\n      <td>CPU4(a)</td>\n    </tr>\n    <tr>\n      <td>37F06</td>\n      <td>P-EN1</td>\n      <td>PBG2-9.s-EBt.b-NO1.b.Type1</td>\n      <td>EB columnar</td>\n      <td>CL2</td>\n    </tr>\n    <tr>\n      <td>37F06-VK22</td>\n      <td>P-EN1</td>\n      <td>PBG2-9.s-EBt.b-NO1.b.Type1</td>\n      <td>EB columnar</td>\n      <td>CL2</td>\n    </tr>\n    <tr>\n      <td>VT008135</td>\n      <td>P-EN1</td>\n      <td>PBG2-9.s-EBt.b-NO1.b.Type1</td>\n      <td>EB columnar</td>\n      <td>CL2</td>\n    </tr>\n    <tr>\n      <td>SS02232</td>\n      <td>P-EN2</td>\n      <td>PBG2-9.s-EBt.b-NO1.b.Type2</td>\n      <td>EB columnar</td>\n      <td>CL2</td>\n    </tr>\n    <tr>\n      <td>84H05</td>\n      <td>PF-LCre</td>\n      <td>PBG1-7.s-FBl2.s-LAL.b-cre.b</td>\n      <td>FB columnar</td>\n      <td>CPU1a</td>\n    </tr>\n    <tr>\n      <td>84H05-VK22</td>\n      <td>PF-LCre</td>\n      <td>PBG1-7.s-FBl2.s-LAL.b-cre.b</td>\n      <td>FB columnar</td>\n      <td>CPU1a</td>\n    </tr>\n    <tr>\n      <td>84H05-attP5</td>\n      <td>PF-LCre</td>\n      <td>PBG1-7.s-FBl2.s-LAL.b-cre.b</td>\n      <td>FB columnar</td>\n      <td>CPU1a</td>\n    </tr>\n    <tr>\n      <td>55G08</td>\n      <td>\u03947</td>\n      <td>PB18.s-Gx\u03947Gy.b-PB18.s-9i1i8c.b</td>\n      <td>PB interneuron</td>\n      <td>TB1</td>\n    </tr>\n    <tr>\n      <td>55G08-attP5</td>\n      <td>\u03947</td>\n      <td>PB18.s-Gx\u03947Gy.b-PB18.s-9i1i8c.b</td>\n      <td>PB interneuron</td>\n      <td>TB1</td>\n    </tr>\n    <tr>\n      <td>55G08-VK22</td>\n      <td>\u03947</td>\n      <td>PB18.s-Gx\u03947Gy.b-PB18.s-9i1i8c.b</td>\n      <td>PB interneuron</td>\n      <td>TB1</td>\n    </tr>\n    <tr>\n      <td>47G08</td>\n      <td>IS-P</td>\n      <td>PBG2-9.b-IB.s.SPS.s</td>\n      <td>PB input</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>49H05</td>\n      <td>IMPL-F</td>\n      <td>LAL.s-IMP-FBl3.b</td>\n      <td>FB input</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>75H04</td>\n      <td>L-Ei</td>\n      <td>EBIRP I-O-LAL.s</td>\n      <td>Ring neuron</td>\n      <td>TL4</td>\n    </tr>\n    <tr>\n      <td>32A11</td>\n      <td>L-Em</td>\n      <td>EBMRP I-O-LAL.s</td>\n      <td>Ring neuron</td>\n      <td>TL4</td>\n    </tr>\n    <tr>\n      <td>18A05</td>\n      <td>GB-Eo</td>\n      <td>EBORP O-I-GA-Bulb</td>\n      <td>Ring neuron</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>18A05-VK22</td>\n      <td>GB-Eo</td>\n      <td>EBORP O-I-GA-Bulb</td>\n      <td>Ring neuron</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>17H12</td>\n      <td>AMPG-E</td>\n      <td>EB.w-AMP.d-D_GAsurround</td>\n      <td>EB input</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>12C11</td>\n      <td>EFBG</td>\n      <td>EBMRA-FB-LT-LT-GA-GA</td>\n      <td>Other</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>72H06</td>\n      <td>SMPL-L</td>\n      <td>SMP.s-LAL.s-LAL.b.contra</td>\n      <td>LAL-IN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>72H06-attP5</td>\n      <td>SMPL-L</td>\n      <td>SMP.s-LAL.s-LAL.b.contra</td>\n      <td>LAL-IN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>72H06-VK22</td>\n      <td>SMPL-L</td>\n      <td>SMP.s-LAL.s-LAL.b.contra</td>\n      <td>LAL-IN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS02615</td>\n      <td>SMPL-L2</td>\n      <td>SMP.s-LAL.s-LAL.b.contra2</td>\n      <td>LAL-IN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>26B07</td>\n      <td>WL-L</td>\n      <td>Wedge-LAL.s-LAL.b.contra</td>\n      <td>LAL-IN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>31A11</td>\n      <td>L-Cre</td>\n      <td>LAL-Cre</td>\n      <td>LAL-IN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS00153</td>\n      <td>S-P</td>\n      <td>SPS.s-PB.b</td>\n      <td>PB input</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>76E11</td>\n      <td>GL-N1</td>\n      <td>LAL.s-GAi.s-NO1i.b</td>\n      <td>LAL-NO</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>76E11-VK22</td>\n      <td>GL-N1</td>\n      <td>LAL.s-GAi.s-NO1i.b</td>\n      <td>LAL-NO</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS04448</td>\n      <td>GL-N1</td>\n      <td>LAL.s-GAi.s-NO1i.b</td>\n      <td>LAL-NO</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS04420</td>\n      <td>CreL-N2</td>\n      <td>Cre.s-LAL.s-NO2.b</td>\n      <td>LAL-NO</td>\n      <td>TN1 ?</td>\n    </tr>\n    <tr>\n      <td>12G04</td>\n      <td>L-N3</td>\n      <td>LAL.s-NO3Ai.b</td>\n      <td>LAL-NO</td>\n      <td>TN1 ?</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Number of cells per hemisphere and PB column (when relevant) in the drivers used in this study, as estimated by counting cell bodies in confocal stacks.When counting was difficult (e.g. because of densely packed somata) we indicated this by a $\u223c$ sign.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Driver</th>\n      <th>New type name</th>\n      <th>Cells per hemisphere</th>\n      <th>Cells per column</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>87G07</td>\n      <td>P-F3N2d</td>\n      <td>16</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>85H06</td>\n      <td>P-F1N3</td>\n      <td>32</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>60D05</td>\n      <td>E-PG</td>\n      <td>24</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>SS02191</td>\n      <td>P-EG</td>\n      <td>16</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>67D09</td>\n      <td>P-F3N2v</td>\n      <td>24</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>37F06</td>\n      <td>P-EN1</td>\n      <td>24</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>VT008135</td>\n      <td>P-EN1</td>\n      <td>24</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>SS02232</td>\n      <td>P-EN2</td>\n      <td>16</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>84H05</td>\n      <td>PF-LCre</td>\n      <td>7</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>55G08</td>\n      <td>\u03947</td>\n      <td>16</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>47G08</td>\n      <td>IS-P</td>\n      <td>12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>49H05</td>\n      <td>IMPL-F</td>\n      <td>4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>75H04</td>\n      <td>L-Ei</td>\n      <td>\u223c30</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>32A11</td>\n      <td>L-Em</td>\n      <td>\u223c24</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>18A05</td>\n      <td>GB-Eo</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>17H12</td>\n      <td>AMPG-E</td>\n      <td>\u223c12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>12C11</td>\n      <td>EFBG</td>\n      <td>9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>72H06</td>\n      <td>SMPL-L</td>\n      <td>\u223c12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS02615</td>\n      <td>SMPL-L2</td>\n      <td>\u223c12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>26B07</td>\n      <td>WL-L</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>31A11</td>\n      <td>L-Cre</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS00153</td>\n      <td>S-P</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>76E11</td>\n      <td>GL-N1</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS04448</td>\n      <td>GL-N1</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SS04420</td>\n      <td>CreL-N2</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>12G04</td>\n      <td>L-N3</td>\n      <td>2</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematics of a subset of the neurons considered for the screen. The example neurons shown in B, C and D are indicated by blue and orange dotted-line boxes. (B) For each potential neuronal pair, driver lines with clean expression in the central complex were selected \u2014 the boxes delineate the approximate position of the neurons of interest in the brain. (C) To determine if a given pair is a promising candidate, we examined the degree of overlap between putative\u00a0pre- and post-synaptic regions in the expression patterns in anatomy images registered to a common brain template. If the candidate pre- and post-synaptic regions overlapped (as indicated by the blue ellipse), we expressed CsChrimson in the presynaptic candidate and GCaMP6m in the postsynaptic candidate, and then imaged the ex-vivo brain in a two-photon laser scanning microscope while optogenetically stimulating the candidate presynaptic population (D). We selected the region imaged based on proximity to the overlapping processes, but ensured that it contained only GCaMP expressing arbors (yellow ellipse in C, and box in D).\n\nCell-type pairs to be tested were chosen based on overlaps between their expression patterns in light microscopy images. For each combination selected, we expressed CsChrimson and GCaMP6m in potential pre- and post-synaptic partners, respectively (Figure 2B,C), and probed their connection in an ex\u00a0vivo preparation using a standardized protocol (see Figure 2D, and Materials and methods). Whenever large responses were observed, we used pharmacology to both check that observed transients were synaptically mediated, and to narrow down the neurotransmitters involved (Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 3).\n\nEffects of stimulation ranged from very large and reliable transients (Figure 3Ai) to undetectable changes (Figure 3Aiii). In between those extremes, we observed transients of variable size and reliability (Figure 3B). To our surprise, we could also detect clear inhibitory responses (Figure 3Aii). This was possible because\u2014at least in some cell types\u2014fluctuations in baseline activity occasionally elevated GCaMP levels during the experiment (see Discussion and Figure 3\u2014figure supplement 3). Therefore, even though hyperpolarization below resting potential is likely not detectable through calcium imaging, we could detect inhibition from an excited state as a dip in the fluorescence trace.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Summary of different response types. Stimulation is indicated by the gray bar and consists of 20 light pulses (50 \u03bcW/mm2, each of 2 ms duration) delivered at 30 Hz. (A) Example neuron pairs, easily interpretable responses. (B)\u00a0Example neuron pairs, responses that are more difficult to interpret. In A and B, all responses, expressed as $\u0394F/F_{0}$, are baseline subtracted except for the inhibitory response in Aii. Scale bar 2 s. Grey dashed boxes show the region of overlap between the two patterns, and yellow boxes indicate the area that was generally imaged for the pairs shown. (C) Example of statistics computed on individual runs and cell pairs characterizing: (i) average response shape, (ii) reliability of the response, and (iii) response sensitivity. (D) Using the distribution of statistics from non-overlapping controls to assign classes to the responses: distributions of response amplitudes and reliability as measured by the scaled normalized integral (the median of the integral normalized to the baseline and scaled so that the dataset spans the [\u22121,1] range) and the between-flies correlation (see Materials and methods). Each point corresponds to a different cell pair (median statistics across flies). Control unconnected pairs are shown in blue, and self-activation (CsChrimson and GCaMP6m expressed in the same neuron type) in orange. Responses considered significantly different from the control sample (p<0.01, see Materials and methods) are circled.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Responses of non-overlapping pairs. Each line corresponds to a fly (six flies per pair), each panel to a cell pair tested. Note that when responses are present, they are either unreliable or small, and likely reflect effects of indirect connections.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Distributions of statistics computed for non-overlapping, overlapping and self-activation pairs. All statistics are the median per pair of per run statistics. Integral: the integral of the response (from the onset of stimulation to the time of the peak of the response), in $\u0394F/F_{0}$s. Normalized integral: Integral divided by the baseline fluorescence. Scaled normalized integral: the normalized integral divided by the maximum (minimum for inhibitory responses) normalized integral measured. Peak fluorescence: the maximum (minimum for inhibitory responses) of the fluorescent transient $\u0394F/F_{0}$. Normalized peak: the peak fluorescence divided by the baseline fluorescence. Decay half time: the time in seconds between the peak of the response to the moment where the fluorescence reaches half the level of the peak (relative to the baseline). Rise time: the time of the peak fluorescence (in seconds). Repeat to repeat correlations: the average correlation between several repeats of the same experiment (in the same fly). Correlations between experiments: the average correlation between experimental runs of the same pair but from different flies. Integral to baseline correlation: the correlation between the integral and the value of the baseline fluorescence.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Spread of fluorescence baseline, effect on the responses. (A) Distribution of baseline fluorescence for each cell pair tested. Pairs are colored according to the \u2018anatomical\u2019 class they belong to (overlapping, non-overlapping and self-activation). (B) Same as A, but pooled by class and rendered as a violin plot. (C) Correlations between the signed response distance and the baseline fluorescence intensity of significantly responding pairs. Inhibitory responses are (as expected) correlated, but excitatory pairs also show a mild correlation. (D) Example of distance to baseline relationship in four pairs. (i) PF-LCre to SMPL-L, corresponding to Figure 3Ai. (ii) GL-N1 to P-EN1, corresponding to Figure 3Aii. (iii) GL-N1 to L-Ei, corresponding to Figure 3Aiii. (iv) PF-LCre to PF-LCre.\n\nSince no single characteristic of the responses could adequately capture their variety, variability and complexity, we chose to characterize the transients by using a battery of statistics reflecting response amplitude, shape, reliability and stimulus sensitivity (see Figure 3C, Figure 3\u2014figure supplement 2, and Materials and methods). Responses of control pairs with non-overlapping processes were then used to form the null-hypothesis distributions of two metrics that capture response amplitude and reliability (see Figure 3D). For every data point, the Mahalanobis distance (a covariance corrected measure in a multidimensional space, see Materials\u00a0and\u00a0methods) to the null distribution was computed and used as a connection strength metric in summary diagrams like Figure 4 and Figure 5. Non-overlapping pairs usually showed no fluctuations upon stimulation, and when they did, they were small and unreliable (see Figure 3\u2014figure supplement 1), likely reflecting effects of indirect connections. Not surprisingly, responses were always detected with same-cell-type-stimulation controls, where CsChrimson and GCaMP6m were expressed in the same neuron type (see Figure 3D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig4-v2.jpg)\n\n**Figure 4.:** Solid lines indicate anatomically overlapping cell pairs, whereas dotted lines correspond to the non-overlapping controls. The thickness of the lines maps to the functional connection strength. The reliability of the responses as measured by the between-flies correlations is mapped to the transparency of the connectors. Connection strengths are quantified in terms of the Mahalanobis distance to the null sample and the sign of the response integral, which is normalized to the maximum response. Three tested cell types (SMP-L2, L-Cre and EFBG) are not shown here for clarity, as tests with a few different partners did not produce significant results.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Matrix representation of the connectivity results. Dots denote anatomically overlapping pairs. The dashed diagonal correspond to self-activation (when the same cell expresses CsChrimson and GCaMP6m). Connection strengths are quantified in terms of the Mahalanobis distance to the null sample and the sign of the response integral, which is normalized to the maximum response.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** For each cell pair, plots in the right column correspond to average traces (+-s.e.m.) at three time points during drug application: before (in blue, 4 min preceding drug application), during (in purple 6 to 11 min after starting drug application) and after (in turquoise, last two runs of the experiment). Plots in the left column show the response integral as a function of time to/from drug application. Each line corresponds to a\u00a0fly. Timespans corresponding to the plots on the right are shaded accordingly. The dashed vertical line corresponds to the time at which the drug perfusion was turned on. Cell pairs are grouped based on the presynaptic cell type tested (Columnar neurons,IS-P neuron and Others).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Plots similar to Figure 4\u2014figure supplement 2 for picrotoxin applications, except that experiments are now grouped based on the type of test that was run. \u2018Inhibitory pairs\u2019 show the straightforward assessment of inhibitory connections. Unmasking controls\u2019 refers to attempts to uncover excitatory effects that might have been masked by global inhibition. Note that picrotoxin applications usually produce an increase in the baseline activity of the neuron, and hence an increase in the inhibitory driving force, which partially balances the transmission block.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Dose responses. Thin lines correspond to median normalized scaled integrals of individual cell pairs. Cell pairs are grouped according to the class of their response (significantly excitatory/inhibitory or not significantly different from the controls). Note that both excitatory and inhibitory responses tend to saturate at 20 pulses.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Responses of pairs for which several genotypes were tested.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig5-v2.jpg)\n\n**Figure 5.:** (A) Input channels. (i) Ring neurons provide inhibitory input to the E-PGs in the EB. (ii) GL-N1 inhibits P-EN neurons. (iii) Distributed excitatory input from IS-P neurons in the PB. (B) $\u0394$7 is probably the bottleneck in PB motifs, as it is the only strong post-synaptic target of E-PG neurons and relays information to other columnar neurons. (C) The only output pair found so far connects the PF-LCre neuron to a LAL interneuron. (D) Recurrence in the central complex. (i) at the input stage, and (ii) within the EB columnar system.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37017/elife-37017-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Various response types following $\u0394$7 stimulation.A: $\u0394$7 to P-F3N2v, inhibitory. B: $\u0394$7 to P-EN1, excitatory. C: $\u0394$7 to E-PG, mixed responses. (i) to (iv) correspond to 5, 10, 20 and 30 pulses stimulation protocol. Each line is the average response for one fly (four runs per fly).\n\nAll the individual responses and statistics, in the context of the overall connectivity diagram, are available at http://romainfr.github.io/CX-Functional-Website/romainfr.github.io/CX-Functional-Website/, a website that enables an interactive exploration of the results of this study. We plan to update this website as further experiments are performed. The website can also be expanded to accommodate other sources of data, which would make it an exhaustive source of information about the central complex. The connectivity matrix resulting from our experiments is shown in Figure 4 in two alternative visualizations, namely a network diagram (Figure 4) and a matrix of connection strengths.\n\n### An emerging view of the central complex functional connectome\n\nFigure 5 outlines some of the connectivity patterns we observed. We focus in particular on inputs and outputs to the ellipsoid body, protocerebral bridge and paired noduli, connectivity within the protocerebral bridge, and components of the ring attractor network within the central complex.\n\n#### Inputs\n\nWe identified two classes of inhibitory, picrotoxin-sensitive (hence mediated either by GABA-A or Glutamate) inputs to the central complex. First, the two ring neuron types we tested (GB-Eo, L-Ei) target the wedge columnar neurons (E-PG, Figure 5Ai), as has been suggested previously (Mart\u00edn-Pe\u00f1a et al., 2014; Kahsai et al., 2012; Hanesch et al., 1989). Note that the ring neurons presented here are non-canonical: they innervate the LAL or the Gall, but not the bulb. Second, a class of LAL-NO interneurons (the GL-N1 neuron) provides another source of inhibitory input into the EB columnar system by targeting the P-EN neurons (Figure 5Aii and Figure 3Aii). This connection is particularly interesting in the light of the finding that the P-EN neurons drive the rotation of the bump of activity in the heading representation system (Green et al., 2017; Turner-Evans et al., 2017). Since the left/right noduli segregation corresponds to individual cells coding turns in opposite direction (Turner-Evans et al., 2017), the GL-N1 neurons are likely involved in strengthening or refining those turn related signals. Moreover, it is likely that other types of LAL-NO interneurons innervating other noduli compartments target P-FN neurons, but these pairs have not been tested extensively yet.\n\nWe also identified two excitatory inputs to the central complex. First, a Gall to EB neuron, whose innervation pattern in the EB is reminiscent of the columnar neurons, excites the E-PG neurons (the same class that carries the heading representation and is inhibited by ring neurons). Second, several columnar neurons share excitatory inputs from the IS-P neuron in the PB (PB.b-IB.s-SPS.s, Figure 5Aiii). It is important to note that although we tested very few candidates in the FB, it is highly likely that this region receives many inputs from outside the central complex.\n\nThe neurons listed here do not necessarily provide feed-forward input from outside the central complex. For example, the gall ring neuron (GB-Eo), which is an inhibitory input to the E-PGs, likely participates in a feedback loop, as it receives excitatory input from P-EG neurons (Figure 5Di). It is possible that this kind of loop between the columnar system and input neurons from accessory structures is repeated at other places in the network. Another example would be the IMPL-F neuron, the FB-LAL neuron (top right corner of Figure 4) that receives input from the PF-LCre columnar neuron in the LAL. Its target in the central complex has not been identified so far, but since it is located in the FB, it likely involves the FB columnar system.\n\n#### Outputs\n\nIn contrast with inputs, we found few potential channels leaving the central complex. The only output pathway identified in this dataset is presented in Figure 5C, and connects the PF-LCre columnar neuron to a LAL interneuron through a strong, mecamylamine-sensitive (hence cholinergic, see Materials\u00a0and\u00a0methods), excitatory connection (see Figure 3Ai and Figure 4\u2014figure supplement 2 for the pharmacology). This information is likely further processed in the LAL, as we found indications of inhibition upon PF-LCre stimulation in another LAL interneuron (WL-L). Even if we could not trace the circuit responsible for this inhibition, it likely involves an intermediate interneuron in the LAL. Once again, as this dataset does not include every single cell type of the central complex, some outputs might easily have been missed. FB tangential neurons (Hanesch et al., 1989), for example, may also contribute output pathways.\n\n#### Connectivity in the protocerebral bridge\n\nA functional connectome is, by construction, sparser than can be predicted by light-level anatomy. Our study shows this most clearly in one neuropil, the PB (Figure 5B). E-PG neurons are the only columnar type that are presynaptic in the PB, but their activation did not trigger a significant response in any of the five other columnar neurons we tested. This came as a surprise because we assumed that the E-PG population would connect to the rest of the EB and FB columnar systems. To verify that this lack of observed connectivity was not due to the recruitment of global inhibitory circuits, we also ran these experiments in the presence of picrotoxin, and did not observe any difference in responses (see Figure 4\u2014figure supplement 3). By contrast, the $\u0394$7 interneurons are strongly activated by E-PG neurons, and their activation leads to significant responses in several columnar neuron types (E-PG, P-EN1, P-EN2, P-F1N3 and P-F3N2v). The $\u0394$7 neurons, therefore, appear to constitute an important bottleneck in the system (Figure 5B), and may serve as the only strong link between columnar neurons in the PB. The response profiles following $\u0394$7 activation are also unusually complex (see Figure 5\u2014figure supplement 1): P-ENs display mild activation, E-PG and P-F3N2v inhibition, and P-F1N3 strong rebound excitation (see Figure 3Biii).\n\n### Connectivity in the EB columnar system, the ring attractor network\n\nFigure 5Dii shows the subpart of the network that has been proposed to sustain the ring attractor representation of heading (Green et al., 2017; Turner-Evans et al., 2017).\u00a0One hypothesized feature of such a circuit is a large degree of recurrence between the different\u00a0EB columnar types. In particular, P-EN to E-PG reciprocal connections are important for models of the rotation of the bump. While we found strong support for the P-EN1 to E-PG connection, the E-PG to P-EN1 connection that we reported functionally under a\u00a0stronger stimulation protocol (Turner-Evans et al., 2017) may be mediated through the $\u0394$7 interneurons. A few other connections were found in the EB (for example, P-EN1 to P-EN2), but it is important to stress that not all combinations could be tested due to limitations in the genetic reagents available. For example, the role of the P-EG neurons in this circuit, remains unclear. A key additional type that our results suggest may contribute in important ways to the persistence of activity in this circuit is the AMPG-E neuron, a columnar Gall-EB neuron not innervating the PB, which appears to provide localized excitatory feedback to the E-PG neurons.\n\n## Discussion\n\nThe dataset presented in this study constitutes a resource for the growing community of researchers interested in the central complex. While similar coarse functional connectivity techniques have been used to map short pathways in previous studies, this is, to our knowledge, the first extensive dataset of its kind. We hope that it will become an evolving source of information, which we expect to be most useful when combined with other complementary data sources, such as EM-level anatomical connectivity and high-resolution gene expression profiles. Such combined data would constitute a solid base to build constrained network models of the central complex, and to generate detailed hypotheses of its function. As with any large dataset, we see this effort mainly as a starting point for more detailed research.\n\n### Limitations of the method\n\nThe connectivity technique we applied has several limitations that are important to keep in mind. First, connections detected using CsChrimson and GCaMP cannot be guaranteed to be direct and monosynaptic. However, the large set of controls with cell-type pairs whose processes do not overlap provides a statistical framework to interpret the results \u2014 not surprisingly, uncertainty is highest for weak connections. We believe that the metric we used to assess connectivity \u2013 distance to a control set rather than just response strength \u2013 makes the resulting network more interpretable. Additionally, by releasing the entire dataset rather than just the derived network, we hope to provide interested central complex researchers the opportunity to explore the data and to potentially reinterpret it in the light of other findings.\n\nA more fundamental issue concerns the sensitivity of our protocol, which is limited by the stimulation protocol and the sensitivity of GCaMP6m. Specifically, an absence of a post-synaptic response cannot be interpreted as an absence of a connection. The fact that some inhibitory responses are visible, and that strong responses saturate with the range of stimulations used (see Figure 4\u2014figure supplement 4) is reassuring. However, it is likely that EM reconstructions of central complex circuits will reveal that some weak synaptic connections have been missed by our technique. Their functional importance will need to be investigated using more sensitive methods, for example, intracellular electrophysiology. For example, we may be underestimating the level of connectivity in the PB: our finding of sparseness in the structure should thus be interpreted as sparseness at the resolution of our technique, because this network may be dominated by weak connections below our detection threshold.\n\nFurther, we relied on full-field stimulation of populations of specific neuronal types, which comes with its own drawbacks: this approach provides no access to connectivity between neurons of the same class, and does not account for potential non-physiological network effects. One such effect would be the recruitment of global inhibitory networks that could mask an otherwise excitatory connection. However, whenever we suspected this could be a possibility, we controlled for it by blocking inhibition with picrotoxin, and never saw evidence of a significant effect (Figure 4\u2014figure supplement 3). Even though picrotoxin was effective in blocking the inhibitory responses we observed when activating ring neurons or $\u0394$7 neurons (Figure 4\u2014figure supplement 3), we cannot exclude the possibility that picrotoxin-insensitive inhibition might be present in the network. Possible candidates mediating such effect would be GABA-B (Olsen and Wilson, 2008), metabotropic glutamatergic or peptidergic transmission (Kahsai and Winther, 2011). For example, the PB shows both GABA-B and metabotropic glutamatergic receptor immunoreactivity (Kahsai et al., 2012), which could make the observed connectivity seem sparser than it actually is. Interestingly, whereas in other insect species the PB displays peptidergic immunoreactivity (in particular Allatostatin-A, see[Vitzthum et al., 1996]), this seems not to be the case in Drosophila (with the exception of SIFamide, see [Kahsai et al., 2012]).\n\nThe fact that we stimulate entire presynaptic populations also means that the strength of connections we report is influenced both by neuron-to-neuron transmission strength and the degree of convergence in the network. Caution should therefore be exercised when comparing connections between columnar neuron population and other types (e.g. from PF-L and SMPL-L or P-EG to G-Eo), which are potentially highly convergent, to connections between columnar neuron types, or from accessory structure neuron types to columnar populations (like GL-N1 to P-EN1), which are both mediated by a single or small handful of presynaptic neurons for any given post-synaptic neuron. Furthermore, even though several of the neurons described have complex morphologies that are suggestive of local processing within specific neuropiles, we never found neuropile-specific responses: when a neuron responded, the response seemed to invade the entire neuron. This may be the result of our broad and artificial stimulation protocol.\n\nGiven that our protocol is limited to the activation of one cell type, we might also have missed connections gated by other inputs. For example, we failed to find any PB input for the PF-LCre neurons \u2013 the sole output neurons we identified in this study. It is possible that this neuron requires convergent inputs from the PB and FB to be activated, as was suggested in (Stone et al., 2017).\n\nFinally, all our experiments were performed in ex\u00a0vivo brain preparations. Given the variety of neuromodulators that operate in the central complex (Kahsai and Winther, 2011), it is likely that functional connectivity within this region is modulated by brain state (Homberg, 1994; Seelig and Jayaraman, 2013; Weir et al., 2014; Weir and Dickinson, 2015). Consistent with this possibility, we saw that the fluorescence baseline tended to fluctuate spontaneously during the course of our experiments in most types recorded (as shown in Figure 3\u2014figure supplement 3A). Two neuron types had relatively small baseline fluctuations that could have make it difficult to detect inhibition when those were used as post-synaptic targets: P-EG and PF-LCre. Intriguingly, although increases in baseline activity allowed us to detect inhibitory responses, we noticed that excitatory responses also occasionally depended on this baseline fluctuation (Figure 3\u2014figure supplement 3C). It is conceivable that such baseline fluctuations reflect a kind of artificial brain state upon which the response amplitudes depend.\n\n### Potential neurotransmitters\n\nFrom our pharmacology experiments, we propose that columnar neurons and IS-P neurons are likely cholinergic (see Figure 4\u2014figure supplement 2), whereas the LAL and Gall ring neurons, as well as the $\u0394$7 neurons are either glutamatergic or GABAergic (see Figure 4\u2014figure supplement 3). A large fraction of \u2018canonical\u2019 BU-ring neurons have been shown previously to be GABAergic (Zhang et al., 2013), which makes this likely for the LAL and Gall-ring neurons described here. We argue below that the response profiles of $\u0394$7 neurons suggests that they are glutamatergic, in accordance with (Daniels et al., 2008).\n\n### Central complex motifs\n\nThe connectivity matrix we obtained is sparser than that predicted by light level anatomy. Our results suggest that the $\u0394$7 interneurons are a bottleneck for information processing in the PB. This is all the more interesting given the range of responses evoked by $\u0394$7 stimulation (Figure 5\u2014figure supplement 1). Properties of the synapses that $\u0394$7 neurons make with their post-synaptic partners may play a primary role in the way that a heading signal is generated and maintained in the EB columnar system, and also in how it may be transferred to the FB columnar system. This has also been suggested in other insect species (Stone et al., 2017) for the homologous TB1 neuron, which was a key component of the proposed compass circuit model in that study. Every $\u0394$7 neuron innervates all columns of the PB, and has presynaptic-looking processes in two columns. The fact that a neuron with such extensive arbors participates in a circuit where representations are spatially restricted (heading-related activity is limited to a few neighboring columns at any given time) suggests that understanding local processing at the single neuron level might be critical to a complete understanding of how the circuit as a whole operates. This may also be the case for some of the ring neurons that provide input to the ellipsoid body.\n\nThe observation that $\u0394$7 neuron stimulation can excite or inhibit its post-synaptic partners can have several explanations. Either the population of $\u0394$7 is not homogeneous, and contain several functionally distinct types responsible for the different types, or the responses reflect a variety of receptors on the post-synaptic side. This latter hypothesis would be compatible with the previously discussed hypothesis that $\u0394$7 are glutamatergic, as the diversity of ionotropic and metabotropic glutamate receptors would allow such response diversity.\n\nThe fact that several sources of input are inhibitory raises the question of how activity is maintained in the region. Candidate mechanisms are the uncovered excitatory inputs into the PB and EB, recurrent connections in the EB and intrinsic properties of neurons (Egorov et al., 2002; Yoshida and Hasselmo, 2009; Russell and Hartline, 1982) \u2014 some cell types, for example, showed robust post-stimulation rebounds (see Figure 3Bii). It is also possible that our selection of cell types and our methods missed some sources of excitation.\n\nThe range of inputs revealed here opens many avenues for investigation. Whereas some ring neuron subtypes have received considerable attention (Sun et al., 2017; Shiozaki and Kazama, 2017; Seelig and Jayaraman, 2013), most PB inputs and LAL-noduli interneurons have not yet been characterized. A recent study in the sweat bee (Stone et al., 2017), for example, reported that one of the LAL-noduli interneurons \u2014 a likely input to the FB system \u2014 carries forward and backward translational optic flow signals. This is all the more interesting given that we show that one of the LAL-NO interneuron types (GL-N1) provides input to the P-EN neurons, known to encode rotational signals (Turner-Evans et al., 2017; Green et al., 2017).\n\nThe specific functions subserved by the network motifs that we have uncovered may only become clear with functional studies in behaving animals. A key puzzle set up by our findings is the small number of output channels of the central complex. Our results are consistent with the LAL being the primary output structure for the central complex (Chiang et al., 2011; Hanesch et al., 1989), although the structure also acts as an input region (via ring neurons and potentially via IMPF-L neurons). While it is possible that our selection of Gal4 lines was unintentionally biased against output neurons, or that our technique otherwise missed a number of output pathways, the picture of the central complex that emerges is of a densely recurrent sensorimotor hub with relatively low dimensional output (much as proposed by some models for\u00a0example [Stone et al., 2017; Fiore et al., 2015; Strauss and Berg, 2010]). The implications of this bottleneck for motor control remains a challenge for future studies to resolve.\n\n## Materials and methods\n\n### Fly stocks and crosses\n\nDrivers were chosen based on relatively sparse expression within the central complex. For any given pair of neurons, the overlap between pre- and post-synaptic looking regions was assessed based on publicly available expression patterns ([Tirian and Dickson, 2017; Jenett et al., 2012], see Figure 1\u2014figure supplement 1) digitally aligned on a common reference brain (as described in [Aso et al., 2014]). For every LexA driver used, we prepared two stocks containing GCaMP6m (Chen et al., 2013) and CsChrimson (Klapoetke et al., 2014) under LexAop (resp. UAS) or UAS (resp. LexAop) control: XXX-LexA;13XLexAop2-IVS-p10-GCaMP6m 50.629 in VK00005, 20xUAS-CsChrimson-mCherry-trafficked in us(How)attP1 and XXX-LexA;20xUAS-IVS-GCaMP6m 15.629 in attP2, 13XLexAop2-CsChrimson-tdTomato in VK00005. Those stocks were then crossed to a Gal4 driver or a split-Gal4 (Luan et al., 2006) driver for the experiment. For split-Gal4s, the two split halves were inserted in attP40 and attP2 respectively. To avoid transection between the split and the LexA driver (Mellert and Truman, 2012), we inserted the LexA drivers in alternative sites, either su(Hw)attP5 (Pfeiffer et al., 2010) or VK22 (Venken et al., 2006), and used the splits exclusively in combination with those lines after checking their expression patterns. The list of drivers used and the corresponding cell types are given in Table 1. Throughout this paper, we follow the naming convention set out in Wolff et al. (2015) for full names, and the scheme described in Kakaria and de Bivort (2017) and used in Green et al., (2017) and Turner-Evans et al., (2017) for abbreviations. For each cell type, we labeled every region innervated as presynaptic or postsynaptic (or both): this was done at the resolution of the glomerulus for the PB, the layer for the FB and the individual nodulus. We divided the LAL into three zones based on the overlap between the lines used. Existing subdivisions for the EB and Gall were preserved. This labeling was used to evaluate whether the arbors of a given cell-type-pair overlapped.\n\n### Dissections\n\nThe brains of 5 to 9 days old female flies were extracted and laid on a poly-D-lysine coated coverslip (Corning, Corning, NY). In most experiments, both the brain and the ventral nerve chord (VNC) were dissected out, as we found that having the VNC attached to the brain increased the mechanical stability of the preparation. Dissection was performed using the minimum level of illumination possible to avoid spurious activation of CsChrimson. The preparation was bathed throughout in saline containing (in mM): 103 NaCl, 3 KCl, 5 TES, 8 trehalose dihydrate, 10 glucose, 26 NaHCO3, 1 NaH2PO4, 2 CaCl2, 4 MgCl2, bubbled with carbogen (95% O2, 5% CO2).\u00a0Brains were positioned anterior-side-up, except when the connection tested was thought to be in the PB, in which case they were positioned posterior-side-up to maximize light access close to the assumed synaptic site. Trachea were removed. Only for experiments involving pharmacology, the glial sheath was gently torn with tweezers to enhance drug access to the neuropiles.\n\n### Imaging conditions and trial structure\n\nImaging was performed on an Ultima II two-photon scanning microscope (Bruker, Billerica, MA) with a Vision II laser (Coherent, Santa Clara, CA). Brains were continuously perfused in the saline used for dissection at 60 mL/hr. Once the sample was placed and centered under the objective, we waited 5 min before starting the experiment to avoid any lingering network activation from the dissection or transmission lights. Two-photon excitation wavelength was 920 nm, and power at the sample varied between 3 and 10 mW. CsChrimson was excited with trains of 2 ms long 590 nm light pulses via an LED (M590L3-C1, Thorlabs, Newton, NJ) shone through the objective. The excitation light path contained a 605/55 nm bandpass filter and was delivered to the objective with a custom dichroic (zt488-568tpc, reflecting between 568 nm and 700 nm). A 575 nm dichroic beam splitter and bandpass filters (525/70 nm and 607/45 nm for the green and red respectively) were placed in the detection arm before photons reached the PMTs (Hamamatsu multi-alkali). Instantaneous power measured out of the objective was roughly 50 \u03bcW/mm2. Stimulus pulse trains were delivered at 30 Hz and the number of pulses varied between 1, 5, 10, 20 and 30 \u2014 corresponding to total stimulation durations ranging from 2 ms to 1 s. Imaging fields of view were chosen as to avoid scanning regions containing CsChrimson-expressing neuropil while being as close as possible to the putative connection site, as we observed occasional two-photon-evoked slow activation of CsChrimson-expressing cells (high-intensity two-photon stimulation of CsChrimson was used for spatially precise neuronal activation in [Kim et al., 2017]). When this was impossible \u2014 for example, in self-activation controls or for completely overlapping cell types \u2014 we chose a large ROI of which the CsChrimson/GCaMP6m-expressing neuropile represented a small fraction, so as to minimize duty cycle. ROIs were kept constant throughout the experiment. Each experimental run consisted of four repeats, each approximately 16s long. Runs were themselves repeated every 2 min. All experiments started with five runs corresponding to the five stimulation strengths, in a random order. This was sometimes followed by pharmacological testing. At the end of the experiment, a high intensity 3D stack was acquired to check that the expression patterns were as expected, and that the neutrophil imaged was the targeted one in cases where fluorescence levels during the experiments were very low. At least six flies were tested for every pair considered.\n\n### Pharmacology\n\nFor blocking nicotinergic or inhibitory (GABAergic or glutamatergic) transmission, mecamylamine (50\u00a0\u03bcM) or picrotoxin (10\u00a0\u03bcM) (Sigma-Aldrich, St Louis, MO) were perfused by switching to a different line for 3 min, followed by a wash period during which the perfusion was drug-free again. Thirty pulses stimulation runs were repeated every 2 min, starting 4 min before the drug application and throughout the wash. Prior to use, solutions were kept frozen in 25 mM and 0.3 M aliquots, respectively.\n\n### Analysis\n\nAll analyses were performed in http://julialang.org/Julia, using custom-written routines. All data and code are available as an OpenScienceFramework project at https://osf.io/vsa3z/ (Franconville, 2018a). Code is also centralized in a Github repository ([Franconville, 2018b], https://github.com/romainFr/CX-Functional-Analysis; copy archived at https://github.com/elifesciences-publications/CX-Functional-Analysis) and notebooks recapitulating the analysis can be run directly from the browser at https://mybinder.org/v2/gh/romainFr/CX-Functional-Analysis/master\u00a0(using https://mybinder.org/Binder).\n\n#### Data processing\n\nFor a given experiment, all movies were aligned to each other to compensate for slow drifts of the sample: for each run, the average image was calculated, and translation drifts between average images were calculated using correlation-based sub-pixel registration ([Guizar-Sicairos et al., 2008], and https://github.com/romainFr/SubpixelRegistration.jl for the Julia implementation used here; copy archived at https://github.com/elifesciences-publications/SubpixelRegistration.jl). A region of interest (ROI) was defined for the full experiment: the average image (of all the runs) between foreground and background was distinguished using k-means clustering. Note that the selection method relies only on average intensity and not activity \u2014a method we chose so as to maintain the same detection method for responsive and non-responsive runs. This also relies on selecting fields of view as unambiguously containing the neuron of interest \u2014 and only the neuron of interest \u2014 during the experiment.\n\n$\u0394F/F_{0}$ =$\\frac{(F\u2212F_{0})}{(F_{0}\u2212B)}$, where F is the raw fluorescence and B the background signal (calculated as the intensity of the dimmest 10% pixels of the average image) were then computed for each movie in the ROI. Given that baseline fluorescence could vary widely over the course of an experiment (see Discussion), we defined F0 as the median fluorescence in the ROI in the dimmest 3% of frames of the entire experiment.\n\n#### Statistics\n\nFor every experimental repeat, we computed the following statistics:\n\nThen, for every run, which consists of 4 repeats done on the same fly, we computed:\n\nSubsequently, for every set of runs done on the same cell pair and the same stimulation protocol, we computed:\n\nMoreover, we created $<I_{toPeak}>_{scaled}$, $<<I_{toPeak}>>_{scaled}$, $<I_{toPeak_norm}>_{scaled}$ and $<<I_{toPeak_norm}>>_{scaled}$, scaled versions of $<I_{toPeak}>$, $<<I_{toPeak}>>$, $<I_{toPeak_norm}>$ and $<<I_{toPeak_norm}>>$ so that the values cover the range [\u22121,1] by scaling positive (negative) values by the maximum (minimum) response in the dataset.\n\n#### Distance from control and significance\n\nBased on light level anatomy, we labeled each tested pair as overlapping or non-overlapping. We used the set of non-overlapping pairs as a control (the null sample). Considering only two parameters, the scaled normalized integral $<<I_{toPeak_norm}>>_{scaled}$ and the correlation across flies $R_{between\u2212flies}$ (see Figure 3), we calculated the Mahalanobis distance between the null sample and each data point, using a robust estimate of the covariance matrix (following [Rousseeuw and Driessen, 1999]) of the null sample. For a point $x\u2192=(<<I_{topeak_norm}>>_{scaled},R_{between\u2212flies})^{T}$\u00a0this will be $\\sqrt{(x\u2192\u2212\\mu\u2192)^{T}S^{\u22121}(x\u2192\u2212\\mu\u2192)}$ where $S$ is the covariance matrix and $\\mu\u2192$ is the vector the average parameters for the null sample. While single statistics never were sufficient to capture all relevant aspects of the response, we found that these two measurements recapitulated well distance measurements obtained by combining all the statistics. We then computed 99% confidence intervals on the distribution of distances by bootstrapping to determine significance.\n\n### Preprint\n\nAn earlier version of this manuscript is available as a preprint at https://www.authorea.com/155729/_TsHpd9reMuWijjossgt6Q\u00a0(DOI:\u00a010.22541/au.151537454.41878908).\n",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "31e3655b-1ec8-4b83-adb9-7bf578712006",
+      "submission_id": "d34cb33a-01b9-4148-8f0f-73349794d58a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37017.029](https://doi.org/10.7554/eLife.37017.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Building a functional connectome of the Drosophila central complex\" for consideration by eLife. Your article has been reviewed by K VijayRaghavan as the Senior Editor, a Reviewing Editor, and three reviewers, Kristin Scott as the Reviewing Editor, and three reviewers. The following individual involved in review of your submission has agreed to reveal his identity: Stanley Heinze (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper 'Building a functional connectome of the Drosophila central complex' by Franconville et al. is an impressive and important piece of work. It shows, for the first time, functional connections within the insect central complex (CX), a region that has gained substantial attention over the last decade and is of fundamental importance to understanding action selection in insects. The authors present a large dataset of functional connectivity in the central complex and accessory structures, collected from testing pairs of cell types expressing optogenetic activator and genetically encoded calcium indicator. The paper not only reveals connections that previously had to be indirectly inferred, it also provides a road map of how to expand this work into a comprehensive map of connectivity of this region, a method that will likely also be applicable for other brain areas. The insect central complex is an interesting and appropriate target for such an impressive approach and the study confirms previous hypotheses about information flow.\n\nEssential revisions:\n\n1) The title overstates what is shown in the paper. The claim of a functional connectome raises the expectation that, if not all neurons, then at least all major neurons should be included in the analysis. Neither is the case. First, the main and best described input cells to the CX, the ring neurons connecting the bulbs to the ellipsoid body, are not included. Second, the pontine cells, numerically one of the most common neurons in the locust CX, are entirely missing from the study. Third, the input cells to the fan shaped body were largely excluded from the work as well. An introduction that better describes the anatomy of the CX and the cells examined in this study and a title that does not claim to build a functional connectome would improve this work.\n\n2) Many columnar neurons of the CX exist in more than one individual cell per column. Most extremely this was recently shown in bees, where 18 CPU4 cells (= P-FN cells) were shown to coexist in each column (Stone et al., 2017). This gives rise to the possibility that these cells could form circuits with each other rather than only with other types of neurons. As this appears to be a theme repeated for many cell types of the CX, this adds an entire layer of complexity to the CX-connectome that is left unexplored in the current paper. As any given driver line might only label a subset of anatomically identical cells (as shown for the P-EN cells), it would be key for interpreting the data, if the authors could provide information as to how many neurons per column are included in their drivers (to get an idea of how many cells were missed, once the total numbers for each cell type become available via other means).\n\n3) The stimulation protocol only allows activation of all cells in a given population (rather than individual cells). As one hallmark of CX neurons is their spatially distinct activity across each population, this is a highly unnatural activity pattern, that can be expected to mask patterns of postsynaptic recruitment. The authors do mention this in the discussion and address the issue of recruiting global inhibitory circuits. The control for this with picrotoxin is an essential step in the right direction, but the possibility of non-GABAergic inhibition is looming in the background. This is especially important as the emphasized bottleneck of the CX circuit (the Delta7 cells) have been described as peptidergic (Allatostatin expressing) in other insects (TB1 cells are the homologous cells in all other insects). Inhibition mediated by this peptide has recently been shown to play an important role in mediating sleep in the CX of Drosophila (10.1016/j.neuron.2017.12.016). The conclusions drawn from the lack of direct columnar neuron connections within the PB are therefore to be taken with caution and needs more extensive discussion.\n\n4) Even though the focus of the work lies on Drosophila, much of its importance results from the broad impact of the paper for other insects. The discussion should be modified to place the work in context with studies from other insects. There is a lot known about the neurons constituting the described input and output pathways of the CX in locusts, bees, beetles and butterflies. Also, the homologous neuron of Delta7 (TB1) has been known to play a key role in the compass circuit of locusts for a decade and has been described in much detail (e.g. 10.1002/cne.23736, 10.1126/science.1135531). In fact, the described connectivity (indirect link between E-PG and columnar output cells via Delta7) in the current paper was also a prediction of Stone et al., (2017) in bees. There, this neuron was instrumental in constructing a ring attractor model needed to generate a compass signal that was required as direction signal for a path integration circuit. While some differences exist between the detailed TB1/Delta7 morphologies, the overall pattern that defines the cell is highly conserved across all species. Similarly, the output cells shown as being the only CX-output in the current work, are equivalent to the CPU1 cells in other insects, which have been proposed to be the sole output of the compass circuit (or path integration circuit model) in those species as well.\n\n5) The CX shows state dependent neural activity, is involved in sleep/attention regulation, and is predicted to drive actions in a context dependent way. Thus, output from this region will almost surely depend on the behavioral and motivational state of the animal, which is not maintained in the ex-vivo preparation used in this paper. Synaptic transmission efficiency can be expected to be differentially modulated in different behavioral contexts when several inputs converge onto the output cells (as suggested e.g. by Stone et al., 2017). With this in mind, the finding that there is no strong input from any cell onto the only output cell of the system needs to be discussed. Similarly, the baseline fluctuations that allowed the authors to identify inhibitory connections are likely a result of state-changes of the neural circuit. Yet it is unclear whether these occur in all neurons equally likely. The authors indeed hint that this might not be the case, so that it appears unclear as to how many inhibitory connections could have been overlooked. The ex-vivo nature of the experiments should be mentioned early in the paper and the potential implications of this rather unnatural state of the brain should be discussed more clearly.\n\n6) Cell types and cell pairs tested: There is mention of 24 cell types, but it seems only 21 types were tested. It is also unclear which percentage of potential synaptic partners were tested- are there neurons which overlap in their arbors, but were not yet tested? In addition, is it possible to roughly estimate the percentage of central complex neurons covered by this screen? If yes, the authors should include this information in the paper.\n\n7) A detailed description of each tested pair with the genotype is necessary and could be included as a table. Information about the exact Gal4-LexA pairs that are tested, the full genotypes of each tested pair, the pre and post synaptic cell names attached, the neuropils each cell occupies, and the observed connectivity would provide a great \"cheat sheet\". In addition, image stacks for the tested pairs should be made available online, if not already available, and pointed to from the table. A detailed description of the imaged area for all tested pairs should be included.\n\n8) Both in the Abstract and in the Discussion section, the authors claim that they observe a small number of output channels. What is the exact evidence for this? The introduction and Results section could be made clearer by providing a definition of what authors consider as an input and an output to the central complex. Majority of the proposed input and output neurons seem to be related to the PB rather than the entire central complex. Thus, connectivity provided by the paper does not include inputs/outputs to the central complex from other neuropils. This should be made clearer.\n",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4631803-f527-471c-bf4d-93e9ee3d706a",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C1",
+      "claim": "The central complex is a highly conserved insect brain region composed of morphologically stereotyped neurons that arborize in distinctively shaped substructures.",
+      "claim_type": "EXPLICIT",
+      "source": "The central complex is a highly conserved insect brain region composed of morphologically stereotyped neurons that arborize in distinctively shaped substructures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the central complex that draws from established scientific knowledge about insect neuroanatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "d158b80c-c7ff-4c0e-996c-edda01c3d340",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C2",
+      "claim": "The central complex is implicated in a wide range of behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The region is implicated in a wide range of behaviors and several modeling studies have explored its circuit computations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations throughout the manuscript and represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "b1881d19-7e43-4d24-a5c9-84ceab794dbd",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C3",
+      "claim": "Most studies have relied on assumptions about connectivity between neurons based on their overlap in light microscopy images.",
+      "claim_type": "EXPLICIT",
+      "source": "Most studies have relied on assumptions about connectivity between neurons based on their overlap in light microscopy images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the state of the field based on the authors' knowledge and review of existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "03313e0b-f926-4ad6-8183-e6acf8bebfb6",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C4",
+      "claim": "Using simultaneous optogenetic stimulation, calcium imaging and pharmacology, connectivity between 70 presynaptic-to-postsynaptic cell-type pairs was tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Using simultaneous optogenetic stimulation, calcium imaging and pharmacology, we tested the connectivity between 70 presynaptic-to-postsynaptic cell-type pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach and scope of the study, supported by the data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "92d80018-a4cb-43da-8a12-a8965ee7aef4",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C5",
+      "claim": "Numerous inputs to the central complex were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified numerous inputs to the central complex, but only a small number of output channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding supported by the connectivity data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "0f61fbf1-feb4-40d1-a4c0-64531c67f660",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C6",
+      "claim": "Only a small number of output channels from the central complex were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified numerous inputs to the central complex, but only a small number of output channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding supported by the connectivity data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "d9fbf33f-17f0-4b5e-8821-d0a6589c88ae",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C7",
+      "claim": "The connectivity of the central complex appears to be sparser than anticipated from light microscopy images.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the connectivity of this highly recurrent circuit appears to be sparser than anticipated from light microscopy images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparing the functional connectivity results with anatomical predictions based on light microscopy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c666c158-443a-48c1-beae-5a4f90c5cb2f",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C8",
+      "claim": "The connectivity matrix highlights the potentially critical role of a class of bottleneck interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the connectivity matrix highlights the potentially critical role of a class of bottleneck interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the connectivity data, particularly regarding \u03947 neurons, as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "37dc5ee0-00dc-42fc-a65a-94f657a6b747",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C9",
+      "claim": "Studies in locusts, dung beetles, bees and monarch butterflies have used intracellular recordings to chart maps of polarized light E-vectors in substructures of the central complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in a variety of insects, including locusts, dung beetles, bees and monarch butterflies, have used intracellular recordings to chart maps of polarized light E-vectors in substructures of the region (Heinze and Homberg, 2007; Heinze and Reppert, 2011a; el Jundi et al., 2015; Stone et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c68a61e9-cc13-4302-b407-e3508684032e",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C10",
+      "claim": "Extracellular recordings from the cockroach have found sensory and motor correlates throughout the central complex.",
+      "claim_type": "EXPLICIT",
+      "source": "extracellular recordings from the cockroach have found sensory and motor correlates throughout the region (Bender et al., 2010; Guo and Ritzmann, 2013; Ritzmann, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "0eaf895f-89c5-451a-872d-34760549eea3",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C11",
+      "claim": "Calcium imaging experiments in behaving Drosophila have shown that both visual and motor cues can update a fly's internal representation of heading.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, calcium imaging experiments in behaving Drosophila have shown that both visual and motor cues can update a fly's internal representation of heading (Seelig and Jayaraman, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "0fb61573-393b-4e93-9ad2-7602ebae475d",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C12",
+      "claim": "Neurogenetic studies have used disruptions of the normal physiology of the central complex to highlight its involvement in motor coordination, visual memory, sensory-motor adaptation, and short- and long-term spatial memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Independently, neurogenetic studies have used disruptions of the normal physiology of the structure to highlight its involvement in a variety of functions, including motor coordination (Poeck et al., 2008), visual memory (Liu et al., 2006), sensory-motor adaptation (Triphan et al., 2010), and short- and long-term spatial memory (Neuser et al., 2008; Ofstad et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "0155b18f-1f94-4758-9653-83d82bd3e41c",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C13",
+      "claim": "The tasks performed by the central complex likely rely on the correct establishment and use of an internal representation of heading.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that these tasks rely on the correct establishment and use of an internal representation of heading (Giraldo et al., 2018; Green et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to recent work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c3ecf5c0-c1d1-43da-816d-cbd10d27dacd",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C14",
+      "claim": "The fly central complex contains a few thousand neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale of the network\u2014a few thousands of neurons in the fly central complex\u2014and the ease of genetic access to individual cell types in Drosophila melanogaster, make this circuit tractable with existing theoretical and experimental methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scale of the network based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "4d7fbe22-4663-4cf8-a729-17ab00dbc372",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C15",
+      "claim": "Detailed anatomy at the light microscopy level of a significant fraction of the cell types in the central complex is available.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed anatomy at the light microscopy level (Hanesch et al., 1989; Wolff et al., 2015; Lin et al., 2013) of a significant fraction of the cell types, along with the availability of tools to genetically target these neurons by type (Wolff et al., 2015), have fueled the first mechanistic investigations of how the circuit constructs a stable heading representation (Kim et al., 2017), and how this representation updates as the animal turns in darkness (Turner-Evans et al., 2017; Green et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "9519fcc7-edeb-4bc1-a879-ce3187e97b5d",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C16",
+      "claim": "Tools to genetically target central complex neurons by type are available.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed anatomy at the light microscopy level (Hanesch et al., 1989; Wolff et al., 2015; Lin et al., 2013) of a significant fraction of the cell types, along with the availability of tools to genetically target these neurons by type (Wolff et al., 2015), have fueled the first mechanistic investigations of how the circuit constructs a stable heading representation (Kim et al., 2017), and how this representation updates as the animal turns in darkness (Turner-Evans et al., 2017; Green et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to genetic tool development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "05a24e4c-ccc3-41e1-967b-7c9b259a1e60",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C17",
+      "claim": "Many modeling studies of the central complex make assumptions about connectivity based on the degree of overlap at the light microscopy level between processes that look bouton-like and those that seem spiny.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these models make assumptions about connectivity within the central complex based on the degree of overlap at the light microscopy level between processes that look bouton-like and those that seem spiny, which are suggestive of pre-and post-synaptic specializations, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of modeling approaches in the field based on the authors' knowledge and review of literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "58b147d0-02f9-480b-8234-8dce6fd1fff4",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C18",
+      "claim": "The functional connectivity map includes information about whether connections are effectively excitatory or inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "To go beyond those anatomical approaches, we constructed a connectivity map based on functional data, which includes information about whether connections are effectively excitatory or inhibitory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the dataset, supported by the pharmacology experiments shown in Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "4d0860e7-65f4-44da-851b-aa5c2a86fb8b",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C19",
+      "claim": "The central complex consists of four main neuropiles: the protocerebral bridge (PB), the ellipsoid body (EB), the fan-shaped body (FB) and the noduli (NO).",
+      "claim_type": "EXPLICIT",
+      "source": "The central complex consists of four main neuropiles \u2014 the protocerebral bridge (PB), the ellipsoid body (EB, Central Body Lower in other insects), the fan-shaped body (FB, Central Body Upper in other insects) and the noduli (NO) \u2014 and at least three accessory neuropiles (also known as the lateral complex) \u2014 the gall (GA), the lateral accessory lobe (LAL) and the bulbs (BU) (Figure 1A and [Wolff et al., 2015; Lin et al., 2013; Hanesch et al., 1989]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the anatomical structure supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c49099ed-d383-4ebd-831d-76dee21629fc",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C20",
+      "claim": "The central complex has at least three accessory neuropiles: the gall (GA), the lateral accessory lobe (LAL) and the bulbs (BU).",
+      "claim_type": "EXPLICIT",
+      "source": "The central complex consists of four main neuropiles \u2014 the protocerebral bridge (PB), the ellipsoid body (EB, Central Body Lower in other insects), the fan-shaped body (FB, Central Body Upper in other insects) and the noduli (NO) \u2014 and at least three accessory neuropiles (also known as the lateral complex) \u2014 the gall (GA), the lateral accessory lobe (LAL) and the bulbs (BU) (Figure 1A and [Wolff et al., 2015; Lin et al., 2013; Hanesch et al., 1989]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the anatomical structure supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "78979c3b-45d3-4321-a189-71d22b3dacc6",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C21",
+      "claim": "Columnar neurons innervate one of the 18 glomeruli of the PB in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the most striking neural elements of the central complex are the columnar neurons, which innervate one of the 18 (in Drosophila) glomeruli of the PB, one vertical section of either the FB or EB, and one accessory neuropile \u2014 a column being constituted by the PB glomeruli and FB/EB section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of columnar neuron anatomy based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "ba607566-d0f8-48ee-893a-8c2634aab8a2",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C22",
+      "claim": "A total of 12 different columnar cell types have been described in the central complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 12 different columnar cell types have been described, with stereotypical correspondences between the PB glomerulus and the EB/FB section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the number of described cell types based on previous anatomical work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "7406e5f1-e901-45b9-b4dd-925cac11e02b",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C23",
+      "claim": "Ring neurons innervate a ring within the EB and an accessory neuropile.",
+      "claim_type": "EXPLICIT",
+      "source": "This set of neurons includes the ring neurons, which innervate a ring within the EB and an accessory neuropile, and a collection of inputs and interneurons with processes in the FB and PB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of ring neuron anatomy based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "595647f9-299a-4066-86b9-aca271c487c7",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C24",
+      "claim": "The overall flow of information through the central complex is generally supported functionally for the parts tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this overall flow of information is generally supported functionally for the parts we have tested so far, but with a few potentially important differences (Figure 1Bii)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on the functional connectivity data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "7a3e1844-46fa-4c22-aa78-7692c17f1192",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C25",
+      "claim": "The observed connectivity in the PB is sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "the observed connectivity in the PB is sparse, rendering the function of PB interneurons possibly critical",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the functional connectivity experiments, particularly regarding E-PG connections in the PB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "176ddd4a-80d9-4b94-b93c-585ff4f8c0d2",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C26",
+      "claim": "Accessory structures are usually input rather than output areas.",
+      "claim_type": "EXPLICIT",
+      "source": "accessory structures are usually input rather than output areas",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the connectivity data showing multiple inputs from accessory structures but few outputs to them.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "77c97e62-1f68-471d-a629-4c7c65cf5ee9",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C27",
+      "claim": "Output channels of the central complex are scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "and, consequently, output channels of the central complex are scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the functional connectivity screen showing few output pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "7a60855b-b9f2-4a37-99b6-b1a84b5d13b3",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C28",
+      "claim": "The 37 driver lines used cover the main columnar neuron types (8 of the 11 types described in Wolff et al. (2015)).",
+      "claim_type": "EXPLICIT",
+      "source": "The 37 driver lines (for 24 cell types) cover the main columnar neuron types (8 of the 11 types described in Wolff et al. (2015)) and PB interneurons (3 out of the five in Wolff et al. (2015)), a LAL-FB neuron, three types of ring neurons, a Gall-EB neuron columnar in the EB and neurons innervating accessory structures, namely four types of LAL interneuron and three types of neurons connecting the LAL to the noduli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the genetic reagents used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "930525ea-50bf-40b4-827e-f15b60bc4ae0",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C29",
+      "claim": "43 of the 59 anatomically possible connections could be tested with the reagents available.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the types tested, 43 of the 59 anatomically possible connections could be tested with the reagents available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the coverage of the functional connectivity screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "539c2607-77c0-4e17-a1e2-4c6c6882dd87",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C30",
+      "claim": "Neither FB interneurons nor FB input neurons are part of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectivity of the multitude of cell types within the FB has not been explored: neither FB interneurons (also known as pontine cells), nor FB input neurons are part of this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explicitly states a limitation of the study scope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "1e53d45d-ea3c-4a32-98e9-039cd7396d8e",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C31",
+      "claim": "Effects of stimulation ranged from very large and reliable transients to undetectable changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects of stimulation ranged from very large and reliable transients (Figure 3Ai) to undetectable changes (Figure 3Aiii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the range of responses observed in the experiments, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "6d9a50b1-dd6f-44e9-ab82-ff9adb8506b8",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C32",
+      "claim": "Clear inhibitory responses could be detected in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, we could also detect clear inhibitory responses (Figure 3Aii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an unexpected finding from the experiments, illustrated in Figure 3Aii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "8c1dbbea-fb45-4628-9ecd-1594eb9454ad",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C33",
+      "claim": "Inhibition from an excited state could be detected as a dip in the fluorescence trace.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, even though hyperpolarization below resting potential is likely not detectable through calcium imaging, we could detect inhibition from an excited state as a dip in the fluorescence trace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains how inhibitory responses could be detected despite the limitations of calcium imaging.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "bbfcb9b0-8bc3-4afb-9841-efff7a26695a",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C34",
+      "claim": "Responses of control pairs with non-overlapping processes usually showed no fluctuations upon stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-overlapping pairs usually showed no fluctuations upon stimulation, and when they did, they were small and unreliable (see Figure 3\u2014figure supplement 1), likely reflecting effects of indirect connections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control experiments used to establish the null hypothesis, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "7565d971-1b8f-4012-b5bc-0d0af82cac54",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C35",
+      "claim": "Responses were always detected with same-cell-type-stimulation controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, responses were always detected with same-cell-type-stimulation controls, where CsChrimson and GCaMP6m were expressed in the same neuron type (see Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the positive control experiments, shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "df2dd9bb-8896-42f6-98fe-a1fc5d93dc71",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C36",
+      "claim": "Two ring neuron types (GB-Eo, L-Ei) target the wedge columnar neurons (E-PG).",
+      "claim_type": "EXPLICIT",
+      "source": "First, the two ring neuron types we tested (GB-Eo, L-Ei) target the wedge columnar neurons (E-PG, Figure 5Ai), as has been suggested previously (Mart\u00edn-Pe\u00f1a et al., 2014; Kahsai et al., 2012; Hanesch et al., 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the functional connectivity experiments, supported by previous anatomical work and shown in Figure 5Ai.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "6c599841-587f-40a5-8d51-d7e57d8f4b77",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C37",
+      "claim": "The GL-N1 neuron provides inhibitory input into the EB columnar system by targeting the P-EN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a class of LAL-NO interneurons (the GL-N1 neuron) provides another source of inhibitory input into the EB columnar system by targeting the P-EN neurons (Figure 5Aii and Figure 3Aii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the functional connectivity experiments, shown in Figure 5Aii and Figure 3Aii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "0062b608-04fc-46d5-bc34-969979e4e8ea",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C38",
+      "claim": "The P-EN neurons drive the rotation of the bump of activity in the heading representation system.",
+      "claim_type": "EXPLICIT",
+      "source": "This connection is particularly interesting in the light of the finding that the P-EN neurons drive the rotation of the bump of activity in the heading representation system (Green et al., 2017; Turner-Evans et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c244ffd1-541b-43d2-8fda-5f8633ad00c8",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C39",
+      "claim": "A Gall to EB neuron excites the E-PG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a Gall to EB neuron, whose innervation pattern in the EB is reminiscent of the columnar neurons, excites the E-PG neurons (the same class that carries the heading representation and is inhibited by ring neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the functional connectivity experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c3a003ad-3be0-4d1a-b4ea-f0ba2fac4367",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C40",
+      "claim": "Several columnar neurons share excitatory inputs from the IS-P neuron in the PB.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, several columnar neurons share excitatory inputs from the IS-P neuron in the PB (PB.b-IB.s-SPS.s, Figure 5Aiii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the functional connectivity experiments, shown in Figure 5Aiii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "d51414c9-b3e6-45de-8bf7-14e407db6ac3",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C41",
+      "claim": "The gall ring neuron (GB-Eo) likely participates in a feedback loop, as it receives excitatory input from P-EG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the gall ring neuron (GB-Eo), which is an inhibitory input to the E-PGs, likely participates in a feedback loop, as it receives excitatory input from P-EG neurons (Figure 5Di).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the connectivity data shown in Figure 5Di.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "cc8e9059-5531-4c3f-ae60-86f70084301a",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C42",
+      "claim": "The only output pathway identified connects the PF-LCre columnar neuron to a LAL interneuron through a strong, mecamylamine-sensitive, excitatory connection.",
+      "claim_type": "EXPLICIT",
+      "source": "The only output pathway identified in this dataset is presented in Figure 5C, and connects the PF-LCre columnar neuron to a LAL interneuron through a strong, mecamylamine-sensitive (hence cholinergic, see Materials and methods), excitatory connection (see Figure 3Ai and Figure 4\u2014figure supplement 2 for the pharmacology).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the functional connectivity experiments, shown in Figure 5C, Figure 3Ai, and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "4eccde3a-72b1-45de-8aa1-32bbaabb5425",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C43",
+      "claim": "E-PG neurons are the only columnar type that are presynaptic in the PB.",
+      "claim_type": "EXPLICIT",
+      "source": "E-PG neurons are the only columnar type that are presynaptic in the PB, but their activation did not trigger a significant response in any of the five other columnar neurons we tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the functional connectivity experiments combined with anatomical knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "be568f97-efa1-48d7-a0a8-cce15e8a4c97",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C44",
+      "claim": "E-PG neuron activation did not trigger a significant response in any of the five other columnar neurons tested.",
+      "claim_type": "EXPLICIT",
+      "source": "E-PG neurons are the only columnar type that are presynaptic in the PB, but their activation did not trigger a significant response in any of the five other columnar neurons we tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the functional connectivity experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "9935e11d-df61-4a23-b345-232c4156af7f",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C50",
+      "claim": "The AMPG-E neuron appears to provide localized excitatory feedback to the E-PG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A key additional type that our results suggest may contribute in important ways to the persistence of activity in this circuit is the AMPG-E neuron, a columnar Gall-EB neuron not innervating the PB, which appears to provide localized excitatory feedback to the E-PG neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the functional connectivity experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "3ed75d2e-123a-4028-8115-97e71b8842df",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C51",
+      "claim": "Connections detected using CsChrimson and GCaMP cannot be guaranteed to be direct and monosynaptic.",
+      "claim_type": "EXPLICIT",
+      "source": "First, connections detected using CsChrimson and GCaMP cannot be guaranteed to be direct and monosynaptic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the method based on the authors' understanding of the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "2111bdfb-cae2-4c7d-b930-6a904ba44a62",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C52",
+      "claim": "An absence of a post-synaptic response cannot be interpreted as an absence of a connection.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, an absence of a post-synaptic response cannot be interpreted as an absence of a connection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the method based on the sensitivity of the technique.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "769a72e0-da45-448f-b7e7-53165878944e",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C53",
+      "claim": "Some inhibitory responses are visible in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that some inhibitory responses are visible, and that strong responses saturate with the range of stimulations used (see Figure 4\u2014figure supplement 4) is reassuring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "f9c1602a-8805-45ff-92ae-79e919b9be42",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C54",
+      "claim": "Strong responses saturate with the range of stimulations used.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that some inhibitory responses are visible, and that strong responses saturate with the range of stimulations used (see Figure 4\u2014figure supplement 4) is reassuring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "249f67f3-ed8c-4dfb-9b5b-144ec55aef65",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C55",
+      "claim": "EM reconstructions of central complex circuits will likely reveal that some weak synaptic connections have been missed by the functional connectivity technique.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is likely that EM reconstructions of central complex circuits will reveal that some weak synaptic connections have been missed by our technique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future findings based on the known limitations of the method.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "4e543d9f-ba74-4a61-a2a8-5af140f2c5aa",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C57",
+      "claim": "The PB shows both GABA-B and metabotropic glutamatergic receptor immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the PB shows both GABA-B and metabotropic glutamatergic receptor immunoreactivity (Kahsai et al., 2012), which could make the observed connectivity seem sparser than it actually is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "f2353fca-a56a-4aaf-bc84-0adda4841625",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C58",
+      "claim": "The PB does not display peptidergic immunoreactivity (with the exception of SIFamide) in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas in other insect species the PB displays peptidergic immunoreactivity (in particular Allatostatin-A, see[Vitzthum et al., 1996]), this seems not to be the case in Drosophila (with the exception of SIFamide, see [Kahsai et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "9d2e4273-5abd-42e1-9a6a-827ee921a5b9",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C59",
+      "claim": "When a neuron responded to stimulation, the response seemed to invade the entire neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, even though several of the neurons described have complex morphologies that are suggestive of local processing within specific neuropiles, we never found neuropile-specific responses: when a neuron responded, the response seemed to invade the entire neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "185d40d4-c753-4c98-b16d-b8cf6f0584dc",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C60",
+      "claim": "All experiments were performed in ex vivo brain preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, all our experiments were performed in ex vivo brain preparations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "1117ff0f-4b46-4daa-8212-c5fb26c80e48",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C61",
+      "claim": "Functional connectivity within the central complex is likely modulated by brain state.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the variety of neuromodulators that operate in the central complex (Kahsai and Winther, 2011), it is likely that functional connectivity within this region is modulated by brain state (Homberg, 1994; Seelig and Jayaraman, 2013; Weir et al., 2014; Weir and Dickinson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on citations to previous work on neuromodulation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "314cb5f6-a1e8-4026-b735-c188efc4527a",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C62",
+      "claim": "The fluorescence baseline tended to fluctuate spontaneously during the course of experiments in most types recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, we saw that the fluorescence baseline tended to fluctuate spontaneously during the course of our experiments in most types recorded (as shown in Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "adeff10a-ada9-40f4-80c4-f2f2544e0f63",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C65",
+      "claim": "A large fraction of 'canonical' BU-ring neurons have been shown previously to be GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "A large fraction of 'canonical' BU-ring neurons have been shown previously to be GABAergic (Zhang et al., 2013), which makes this likely for the LAL and Gall-ring neurons described here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "3a4ac5ba-32a7-416b-a494-948e7206cecf",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C67",
+      "claim": "The connectivity matrix obtained is sparser than that predicted by light level anatomy.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectivity matrix we obtained is sparser than that predicted by light level anatomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the functional connectivity results with anatomical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "4ae14d08-c696-49b6-9608-6f6bb5ccd665",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C71",
+      "claim": "The LAL is the primary output structure for the central complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with the LAL being the primary output structure for the central complex (Chiang et al., 2011; Hanesch et al., 1989), although the structure also acts as an input region (via ring neurons and potentially via IMPF-L neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the connectivity data supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "840a9156-3e98-470d-8508-ad2c47622f37",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C72",
+      "claim": "The LAL acts as an input region to the central complex via ring neurons and potentially via IMPF-L neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with the LAL being the primary output structure for the central complex (Chiang et al., 2011; Hanesch et al., 1989), although the structure also acts as an input region (via ring neurons and potentially via IMPF-L neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the connectivity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "5a21cd24-be35-4980-8227-52a46bf62ba8",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C73",
+      "claim": "The central complex is a densely recurrent sensorimotor hub with relatively low dimensional output.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is possible that our selection of Gal4 lines was unintentionally biased against output neurons, or that our technique otherwise missed a number of output pathways, the picture of the central complex that emerges is of a densely recurrent sensorimotor hub with relatively low dimensional output (much as proposed by some models for example [Stone et al., 2017; Fiore et al., 2015; Strauss and Berg, 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the connectivity data supported by citations to modeling work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "53b173c8-5ec0-4ee8-95ba-97336b1528d7",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C74",
+      "claim": "Drivers were chosen based on relatively sparse expression within the central complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Drivers were chosen based on relatively sparse expression within the central complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria for genetic reagents used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "fbeb0611-4c48-4543-892e-e210df6a1fc3",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C75",
+      "claim": "The overlap between pre- and post-synaptic looking regions was assessed based on publicly available expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "For any given pair of neurons, the overlap between pre- and post-synaptic looking regions was assessed based on publicly available expression patterns ([Tirian and Dickson, 2017; Jenett et al., 2012], see Figure 1\u2014figure supplement 1) digitally aligned on a common reference brain (as described in [Aso et al., 2014]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the method used to select cell-type pairs for testing, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "1c22f80b-3003-4b21-ae21-68e07aaf1769",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C76",
+      "claim": "The dataset includes inputs to the EB system, connections between EB columnar neurons, connections in the PB as well as potential inputs and outputs in the LAL, Gall and noduli.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset includes inputs to the EB system, connections between EB columnar neurons, connections in the PB as well as potential inputs and outputs in the LAL, Gall and noduli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "13e56dd9-f496-4dd1-a556-f540b3b04b85",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C77",
+      "claim": "Brains were extracted from 5 to 9 days old female flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The brains of 5 to 9 days old female flies were extracted and laid on a poly-D-lysine coated coverslip (Corning, Corning, NY).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "f62a4a10-c4f8-4696-967e-b5dd37bafaac",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C78",
+      "claim": "Having the VNC attached to the brain increased the mechanical stability of the preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "In most experiments, both the brain and the ventral nerve chord (VNC) were dissected out, as we found that having the VNC attached to the brain increased the mechanical stability of the preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation about the experimental preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "fbfa9f21-1780-462d-a4a8-9db61c7f7db7",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C79",
+      "claim": "Dissection was performed using the minimum level of illumination possible to avoid spurious activation of CsChrimson.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissection was performed using the minimum level of illumination possible to avoid spurious activation of CsChrimson.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a precaution taken during the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "a55f6180-f731-41e5-81c7-a094f55c7ef2",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C80",
+      "claim": "Two-photon excitation wavelength was 920 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon excitation wavelength was 920 nm, and power at the sample varied between 3 and 10 mW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "22bcb4aa-29f3-497b-870f-bdf2c3e3dd50",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C81",
+      "claim": "CsChrimson was excited with trains of 2 ms long 590 nm light pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "CsChrimson was excited with trains of 2 ms long 590 nm light pulses via an LED (M590L3-C1, Thorlabs, Newton, NJ) shone through the objective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optogenetic stimulation parameters used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "ec9f776c-a876-4c2b-a257-72f240b1eba9",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C82",
+      "claim": "Stimulus pulse trains were delivered at 30 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulus pulse trains were delivered at 30 Hz and the number of pulses varied between 1, 5, 10, 20 and 30 \u2014 corresponding to total stimulation durations ranging from 2 ms to 1 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optogenetic stimulation parameters used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "5a0efa16-6de6-45e0-8273-6383f61f927a",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C83",
+      "claim": "At least six flies were tested for every pair considered.",
+      "claim_type": "EXPLICIT",
+      "source": "At least six flies were tested for every pair considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "0116c63a-5725-46c3-a61c-42c59464abb6",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C84",
+      "claim": "Mecamylamine (50 \u03bcM) was used for blocking nicotinergic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "For blocking nicotinergic or inhibitory (GABAergic or glutamatergic) transmission, mecamylamine (50 \u03bcM) or picrotoxin (10 \u03bcM) (Sigma-Aldrich, St Louis, MO) were perfused by switching to a different line for 3 min, followed by a wash period during which the perfusion was drug-free again.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pharmacology methods used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "d77732d6-40b2-41cd-b9d1-108a40af61f7",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "claim_id": "C85",
+      "claim": "Picrotoxin (10 \u03bcM) was used for blocking inhibitory (GABAergic or glutamatergic) transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "For blocking nicotinergic or inhibitory (GABAergic or glutamatergic) transmission, mecamylamine (50 \u03bcM) or picrotoxin (10 \u03bcM) (Sigma-Aldrich, St Louis, MO) were perfused by switching to a different line for 3 min, followed by a wash period during which the perfusion was drug-free again.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pharmacology methods used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3b73b32c-a79c-4167-b81e-4261910a6d38",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The central complex is a highly conserved insect brain region with stereotyped anatomy, implicated in diverse behaviors. Prior studies have relied on light microscopy-based connectivity assumptions. The Drosophila central complex contains a few thousand neurons with detailed anatomical descriptions and genetic tools available for cell-type-specific targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C14-C16, and C19-C23 provide well-established background knowledge about the central complex structure, function, and available research tools. These claims are supported by multiple citations to prior work and represent consensus knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "2cb42e7c-98c2-467f-96be-e2808664660b",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors tested functional connectivity between 70 presynaptic-to-postsynaptic cell-type pairs using simultaneous optogenetic stimulation (CsChrimson), calcium imaging (GCaMP6m), and pharmacology in ex vivo preparations. The study covered 37 driver lines representing 24 cell types, including 8 of 11 main columnar neuron types, with at least 6 flies tested per pair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C30, and C74-C83 describe the experimental approach, scope, and methods in detail. The methodology is clearly documented with specific parameters (wavelengths, pulse durations, sample sizes), and the coverage of cell types is explicitly stated with acknowledged limitations (e.g., FB interneurons not included).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c42e37b1-ff7a-4e27-af63-a269f12f8797",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation produced a range of responses from large reliable transients to undetectable changes. Inhibitory responses were detectable as dips in fluorescence when neurons were in an excited state. Non-overlapping control pairs showed minimal responses, while same-cell-type controls always showed responses. Strong responses saturated at the stimulation levels used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 and C53-C54 describe the range and characteristics of observed responses with supporting data in Figures 3 and 4. The detection of inhibitory responses despite calcium imaging limitations is explained mechanistically (C33), and appropriate controls validate the approach (C34-C35).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "f87af40d-e212-4c34-80a6-adae55a5b70b",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple inhibitory and excitatory input pathways to the central complex were identified: ring neurons (GB-Eo, L-Ei) provide inhibitory input to E-PG neurons; GL-N1 neurons inhibit P-EN neurons; AMPG-E neurons provide excitatory input to E-PG neurons; and IS-P neurons provide distributed excitatory input to multiple columnar neurons in the PB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C39-C40 describe specific input connections supported by functional connectivity data shown in Figures 5A and pharmacology experiments. C36 is additionally supported by prior anatomical work. These findings are based on direct experimental evidence from the optogenetic-calcium imaging approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "8e3bac9d-fb5e-4eaf-8a71-6ec371508c1c",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study identified numerous inputs to the central complex but only a small number of output channels. The sole identified output pathway connects PF-LCre columnar neurons to LAL interneurons through a cholinergic excitatory connection. The LAL serves as both the primary output structure and an input region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C27, C42, C71-C72 describe a key finding about the input-output architecture. The scarcity of outputs is supported by the systematic screen (C42 shows the only identified output), though the authors acknowledge potential limitations in cell-type selection (C73). The dual role of LAL is supported by connectivity data and prior citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "31980ce5-36d5-44ce-ba59-8e64ab9f3d91",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Functional connectivity in the central complex, particularly in the protocerebral bridge, is sparser than predicted by light microscopy anatomy. E-PG neurons are the only columnar type presynaptic in the PB, but their activation did not trigger significant responses in five other tested columnar neuron types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C25, C43-C44, C67 describe a major finding about sparse connectivity. This is supported by direct experimental evidence showing lack of E-PG responses to other columnar neurons despite anatomical overlap. The authors appropriately note this may reflect detection limits of their technique (C52, C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "e9461eb3-5e60-4c6c-8a6e-d77da523957a",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "\u03947 interneurons constitute a critical bottleneck in the protocerebral bridge, serving as the primary postsynaptic target of E-PG neurons and relaying information to other columnar neurons. E-PG activation strongly activates \u03947 neurons, which in turn produce responses in multiple columnar types (E-PG, P-EN1, P-EN2, P-F1N3, P-F3N2v).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C43-C44 identify \u03947 as a bottleneck based on functional connectivity data showing it is the only strong postsynaptic target of E-PGs in the PB and connects to multiple downstream targets. This interpretation is supported by Figure 5B and Figure 5\u2014figure supplement 1, though the complex response profiles suggest additional mechanistic investigation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "c5007c5a-59e8-45a4-a9e8-c026c9291748",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Recurrent connectivity exists within the central complex circuit. The GB-Eo ring neuron participates in a feedback loop, receiving excitatory input from P-EG neurons while providing inhibitory input to E-PG neurons. The AMPG-E neuron provides localized excitatory feedback to E-PG neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C50 describe recurrent connections supported by functional connectivity data in Figure 5D. These findings reveal circuit motifs important for understanding how the heading representation system operates, though the full functional implications require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "e786c8ae-86cd-4070-9bc9-760711c08eec",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pharmacological experiments using mecamylamine (50 \u03bcM) and picrotoxin (10 \u03bcM) determined whether connections were excitatory or inhibitory, revealing that columnar neurons and IS-P neurons are likely cholinergic, while ring neurons and \u03947 neurons use GABA or glutamate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C84-C85 describe the pharmacological approach and findings shown in Figure 4\u2014figure supplements 2-3. The drug concentrations and application protocols are clearly specified, and the results provide functional information about neurotransmitter identity that complements the connectivity data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "2135bc57-846c-4faa-9e3d-372db1ca4ae4",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The overall hypothesized information flow through the central complex based on anatomy is generally supported functionally, with important differences: accessory structures primarily serve as inputs rather than outputs, and the central complex functions as a densely recurrent sensorimotor hub with low-dimensional output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C26, C73 synthesize the connectivity findings into a revised model of central complex organization. This interpretation is supported by the systematic connectivity screen showing multiple inputs but few outputs, though the authors acknowledge potential biases in cell-type selection and technical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "fcab156e-bd55-47cb-8cfe-d53a1533db49",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The functional connectivity technique has inherent limitations: connections cannot be guaranteed to be direct and monosynaptic, absence of response cannot confirm absence of connection, and EM reconstructions will likely reveal weak synaptic connections missed by this approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C55 explicitly acknowledge methodological limitations. These are reasonable assessments based on the resolution and sensitivity of optogenetic-calcium imaging approaches. The authors appropriately caution against over-interpreting negative results and recognize the complementary value of EM data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "9152dcad-e0a5-4cb2-a1c1-e5d1d966a2b4",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All experiments were performed in ex vivo preparations where responses invaded entire neurons rather than showing compartment-specific activity. Baseline fluorescence fluctuated spontaneously in most cell types, and functional connectivity is likely modulated by brain state given the variety of neuromodulators in the central complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 describe experimental observations and their implications. The lack of compartment-specific responses (C59) may reflect the artificial stimulation protocol. Baseline fluctuations (C62) are documented in Figure 3\u2014figure supplement 3A. The speculation about state-dependence (C61) is appropriately hedged and supported by citations about neuromodulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work in various insect species has characterized central complex function using intracellular recordings, extracellular recordings, calcium imaging, and neurogenetic manipulations. Previous studies have identified roles in navigation, motor coordination, memory, and heading representation. Specific neurotransmitter and receptor expression patterns have been documented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13, C38, C57-C58, C65 summarize prior literature with appropriate citations. These provide context for the current study and are accurately represented based on the cited sources. The claims appropriately distinguish established findings from hypotheses (e.g., C13 uses \"likely\").",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    },
+    {
+      "id": "6bab854a-e42b-48f2-a914-b4b5119ae47e",
+      "content_id": "21e42580-fba6-4144-8dac-30b9ebd93da7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Many modeling studies of the central complex make connectivity assumptions based on light microscopy overlap between bouton-like and spine-like processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 accurately characterizes the state of the modeling field and provides motivation for the functional connectivity approach. This is a reasonable assessment supported by the authors' knowledge of the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:51.498321Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a4631803-f527-471c-bf4d-93e9ee3d706a",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "d158b80c-c7ff-4c0e-996c-edda01c3d340",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "b1881d19-7e43-4d24-a5c9-84ceab794dbd",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "c3ecf5c0-c1d1-43da-816d-cbd10d27dacd",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "4d7fbe22-4663-4cf8-a729-17ab00dbc372",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "9519fcc7-edeb-4bc1-a879-ce3187e97b5d",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "4d0860e7-65f4-44da-851b-aa5c2a86fb8b",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "c49099ed-d383-4ebd-831d-76dee21629fc",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "78979c3b-45d3-4321-a189-71d22b3dacc6",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "ba607566-d0f8-48ee-893a-8c2634aab8a2",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "7406e5f1-e901-45b9-b4dd-925cac11e02b",
+      "result_id": "3b73b32c-a79c-4167-b81e-4261910a6d38"
+    },
+    {
+      "claim_id": "03313e0b-f926-4ad6-8183-e6acf8bebfb6",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "7a60855b-b9f2-4a37-99b6-b1a84b5d13b3",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "930525ea-50bf-40b4-827e-f15b60bc4ae0",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "539c2607-77c0-4e17-a1e2-4c6c6882dd87",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "53b173c8-5ec0-4ee8-95ba-97336b1528d7",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "fbeb0611-4c48-4543-892e-e210df6a1fc3",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "1c22f80b-3003-4b21-ae21-68e07aaf1769",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "13e56dd9-f496-4dd1-a556-f540b3b04b85",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "f62a4a10-c4f8-4696-967e-b5dd37bafaac",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "fbfa9f21-1780-462d-a4a8-9db61c7f7db7",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "a55f6180-f731-41e5-81c7-a094f55c7ef2",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "22bcb4aa-29f3-497b-870f-bdf2c3e3dd50",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "ec9f776c-a876-4c2b-a257-72f240b1eba9",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "5a0efa16-6de6-45e0-8273-6383f61f927a",
+      "result_id": "2cb42e7c-98c2-467f-96be-e2808664660b"
+    },
+    {
+      "claim_id": "1e53d45d-ea3c-4a32-98e9-039cd7396d8e",
+      "result_id": "c42e37b1-ff7a-4e27-af63-a269f12f8797"
+    },
+    {
+      "claim_id": "6d9a50b1-dd6f-44e9-ab82-ff9adb8506b8",
+      "result_id": "c42e37b1-ff7a-4e27-af63-a269f12f8797"
+    },
+    {
+      "claim_id": "8c1dbbea-fb45-4628-9ecd-1594eb9454ad",
+      "result_id": "c42e37b1-ff7a-4e27-af63-a269f12f8797"
+    },
+    {
+      "claim_id": "bbfcb9b0-8bc3-4afb-9841-efff7a26695a",
+      "result_id": "c42e37b1-ff7a-4e27-af63-a269f12f8797"
+    },
+    {
+      "claim_id": "7565d971-1b8f-4012-b5bc-0d0af82cac54",
+      "result_id": "c42e37b1-ff7a-4e27-af63-a269f12f8797"
+    },
+    {
+      "claim_id": "769a72e0-da45-448f-b7e7-53165878944e",
+      "result_id": "c42e37b1-ff7a-4e27-af63-a269f12f8797"
+    },
+    {
+      "claim_id": "f9c1602a-8805-45ff-92ae-79e919b9be42",
+      "result_id": "c42e37b1-ff7a-4e27-af63-a269f12f8797"
+    },
+    {
+      "claim_id": "df2dd9bb-8896-42f6-98fe-a1fc5d93dc71",
+      "result_id": "f87af40d-e212-4c34-80a6-adae55a5b70b"
+    },
+    {
+      "claim_id": "6c599841-587f-40a5-8d51-d7e57d8f4b77",
+      "result_id": "f87af40d-e212-4c34-80a6-adae55a5b70b"
+    },
+    {
+      "claim_id": "c244ffd1-541b-43d2-8fda-5f8633ad00c8",
+      "result_id": "f87af40d-e212-4c34-80a6-adae55a5b70b"
+    },
+    {
+      "claim_id": "c3a003ad-3be0-4d1a-b4ea-f0ba2fac4367",
+      "result_id": "f87af40d-e212-4c34-80a6-adae55a5b70b"
+    },
+    {
+      "claim_id": "92d80018-a4cb-43da-8a12-a8965ee7aef4",
+      "result_id": "8e3bac9d-fb5e-4eaf-8a71-6ec371508c1c"
+    },
+    {
+      "claim_id": "0f61fbf1-feb4-40d1-a4c0-64531c67f660",
+      "result_id": "8e3bac9d-fb5e-4eaf-8a71-6ec371508c1c"
+    },
+    {
+      "claim_id": "77c97e62-1f68-471d-a629-4c7c65cf5ee9",
+      "result_id": "8e3bac9d-fb5e-4eaf-8a71-6ec371508c1c"
+    },
+    {
+      "claim_id": "cc8e9059-5531-4c3f-ae60-86f70084301a",
+      "result_id": "8e3bac9d-fb5e-4eaf-8a71-6ec371508c1c"
+    },
+    {
+      "claim_id": "4ae14d08-c696-49b6-9608-6f6bb5ccd665",
+      "result_id": "8e3bac9d-fb5e-4eaf-8a71-6ec371508c1c"
+    },
+    {
+      "claim_id": "840a9156-3e98-470d-8508-ad2c47622f37",
+      "result_id": "8e3bac9d-fb5e-4eaf-8a71-6ec371508c1c"
+    },
+    {
+      "claim_id": "d9fbf33f-17f0-4b5e-8821-d0a6589c88ae",
+      "result_id": "31980ce5-36d5-44ce-ba59-8e64ab9f3d91"
+    },
+    {
+      "claim_id": "7a3e1844-46fa-4c22-aa78-7692c17f1192",
+      "result_id": "31980ce5-36d5-44ce-ba59-8e64ab9f3d91"
+    },
+    {
+      "claim_id": "4eccde3a-72b1-45de-8aa1-32bbaabb5425",
+      "result_id": "31980ce5-36d5-44ce-ba59-8e64ab9f3d91"
+    },
+    {
+      "claim_id": "be568f97-efa1-48d7-a0a8-cce15e8a4c97",
+      "result_id": "31980ce5-36d5-44ce-ba59-8e64ab9f3d91"
+    },
+    {
+      "claim_id": "3a4ac5ba-32a7-416b-a494-948e7206cecf",
+      "result_id": "31980ce5-36d5-44ce-ba59-8e64ab9f3d91"
+    },
+    {
+      "claim_id": "c666c158-443a-48c1-beae-5a4f90c5cb2f",
+      "result_id": "e9461eb3-5e60-4c6c-8a6e-d77da523957a"
+    },
+    {
+      "claim_id": "4eccde3a-72b1-45de-8aa1-32bbaabb5425",
+      "result_id": "e9461eb3-5e60-4c6c-8a6e-d77da523957a"
+    },
+    {
+      "claim_id": "be568f97-efa1-48d7-a0a8-cce15e8a4c97",
+      "result_id": "e9461eb3-5e60-4c6c-8a6e-d77da523957a"
+    },
+    {
+      "claim_id": "d51414c9-b3e6-45de-8bf7-14e407db6ac3",
+      "result_id": "c5007c5a-59e8-45a4-a9e8-c026c9291748"
+    },
+    {
+      "claim_id": "9935e11d-df61-4a23-b345-232c4156af7f",
+      "result_id": "c5007c5a-59e8-45a4-a9e8-c026c9291748"
+    },
+    {
+      "claim_id": "58b147d0-02f9-480b-8234-8dce6fd1fff4",
+      "result_id": "e786c8ae-86cd-4070-9bc9-760711c08eec"
+    },
+    {
+      "claim_id": "0116c63a-5725-46c3-a61c-42c59464abb6",
+      "result_id": "e786c8ae-86cd-4070-9bc9-760711c08eec"
+    },
+    {
+      "claim_id": "d77732d6-40b2-41cd-b9d1-108a40af61f7",
+      "result_id": "e786c8ae-86cd-4070-9bc9-760711c08eec"
+    },
+    {
+      "claim_id": "595647f9-299a-4066-86b9-aca271c487c7",
+      "result_id": "2135bc57-846c-4faa-9e3d-372db1ca4ae4"
+    },
+    {
+      "claim_id": "176ddd4a-80d9-4b94-b93c-585ff4f8c0d2",
+      "result_id": "2135bc57-846c-4faa-9e3d-372db1ca4ae4"
+    },
+    {
+      "claim_id": "5a21cd24-be35-4980-8227-52a46bf62ba8",
+      "result_id": "2135bc57-846c-4faa-9e3d-372db1ca4ae4"
+    },
+    {
+      "claim_id": "3ed75d2e-123a-4028-8115-97e71b8842df",
+      "result_id": "fcab156e-bd55-47cb-8cfe-d53a1533db49"
+    },
+    {
+      "claim_id": "2111bdfb-cae2-4c7d-b930-6a904ba44a62",
+      "result_id": "fcab156e-bd55-47cb-8cfe-d53a1533db49"
+    },
+    {
+      "claim_id": "249f67f3-ed8c-4dfb-9b5b-144ec55aef65",
+      "result_id": "fcab156e-bd55-47cb-8cfe-d53a1533db49"
+    },
+    {
+      "claim_id": "9d2e4273-5abd-42e1-9a6a-827ee921a5b9",
+      "result_id": "9152dcad-e0a5-4cb2-a1c1-e5d1d966a2b4"
+    },
+    {
+      "claim_id": "185d40d4-c753-4c98-b16d-b8cf6f0584dc",
+      "result_id": "9152dcad-e0a5-4cb2-a1c1-e5d1d966a2b4"
+    },
+    {
+      "claim_id": "1117ff0f-4b46-4daa-8212-c5fb26c80e48",
+      "result_id": "9152dcad-e0a5-4cb2-a1c1-e5d1d966a2b4"
+    },
+    {
+      "claim_id": "314cb5f6-a1e8-4026-b735-c188efc4527a",
+      "result_id": "9152dcad-e0a5-4cb2-a1c1-e5d1d966a2b4"
+    },
+    {
+      "claim_id": "37dc5ee0-00dc-42fc-a65a-94f657a6b747",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "c68a61e9-cc13-4302-b407-e3508684032e",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "0eaf895f-89c5-451a-872d-34760549eea3",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "0fb61573-393b-4e93-9ad2-7602ebae475d",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "0155b18f-1f94-4758-9653-83d82bd3e41c",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "0062b608-04fc-46d5-bc34-969979e4e8ea",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "4e543d9f-ba74-4a61-a2a8-5af140f2c5aa",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "f2353fca-a56a-4aaf-bc84-0adda4841625",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "adeff10a-ada9-40f4-80c4-f2f2544e0f63",
+      "result_id": "e0e1c805-8823-4caf-a511-4b77c5fc3bed"
+    },
+    {
+      "claim_id": "05a24e4c-ccc3-41e1-967b-7c9b259a1e60",
+      "result_id": "6bab854a-e42b-48f2-a914-b4b5119ae47e"
+    }
+  ],
+  "comparisons": []
+}

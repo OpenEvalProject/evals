@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Exponentially growing B. subtilis cultures divide into distinct metabolic subpopulations: one producing acetate (sucC+) and another expressing genes for acetoin production (alsS+). These subpopulations exhibit distinct growth rates, dynamic interconversion between states, and acetate-dependent population sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C9 collectively establish the main finding. The existence of distinct subpopulations is demonstrated through fluorescence microscopy (C24-C26, C38-C41), temporal dynamics through time-course analysis (C43-C48), growth rate differences through Mother Machine and microcolony experiments (C69-C82), state switching through time-lapse imaging (C71, C77-C81), and acetate-dependent regulation (C75-C76, C8). Multiple independent experimental approaches converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The sucC+ subpopulation is controlled by the competence system and is linked to acetate production. sucC expression coincides temporally with acetate production, correlates with competence genes and pta expression, and deletion of comK eliminates both sucC expression and high-level acetate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C68 provide strong converging evidence linking sucC to competence and acetate production. Temporal correlation (C43-C44), RNAseq showing competence gene enrichment and pta upregulation (C50-C52), single-cell correlation with competence markers (C55), and genetic deletion experiments (C57-C63) all support this connection. The ~5-fold reduction in acetate in \u0394comK strains (C58) provides quantitative functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "alsS expression dynamics coincide with acetate consumption and acetoin production. alsS+ cells exhibit reduced growth rates, and alsS expression is induced by acetate in a dose-dependent manner. In microcolony experiments, alsS+ cells emerge followed by faster-growing alsS- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C82 establish the alsS subpopulation characteristics through multiple approaches. Temporal correlation with acetate/acetoin dynamics (C46-C48), Mother Machine quantification of growth rates (C74), dose-dependent acetate induction (C75-C76), and microcolony dynamics showing emergence of both alsS+ and alsS- populations with distinct growth rates (C77-C82) provide comprehensive support. The quantitative growth rate measurements are particularly strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C86"
+    ],
+    "result": "alsS+ cells alter the extracellular environment to benefit alsS- cells. \u0394alsS colonies grown near wildtype colonies show enhanced growth compared to those grown distant from wildtype, suggesting environmental modification by alsS+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 provide experimental evidence for cross-feeding or environmental modification. The spatial proximity experiment (C89) demonstrates that wildtype colonies enhance \u0394alsS growth in a distance-dependent manner, supporting the interpretation that alsS+ cells modify the shared environment. However, the mechanism remains incompletely defined (C91-C92 acknowledge alternative possibilities).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "sucC+ cells exhibit transient activation episodes lasting ~4 hours with reduced growth rates (47.4\u00b12.7 %/hr vs 67.7\u00b12.3 %/hr for sucC- cells), and can switch out of the sucC+ state to resume normal growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide quantitative single-cell dynamics from Mother Machine experiments. The measurements include sample size (n=31 events), mean and standard deviation for dwell time, and growth rates with error estimates. The reversibility of the state (C71) is demonstrated through time-lapse imaging. These are well-supported quantitative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A library of 13 metabolic gene reporters was constructed and characterized. Most genes showed unimodal distributions with low skew, but sucC and alsS exhibited heterogeneous expression with high skew values (4.72 and 1.14) and maintained heterogeneity for several hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 describe the methodological approach and initial screening results. The construction of reporter strains is clearly described (C34-C35), and quantitative characterization of expression distributions is provided with specific skew values and percentages of high-expressing cells (C38-C40). The persistence of heterogeneity over time (C42) addresses a potential concern about transient activation artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C87"
+    ],
+    "result": "Growth rate differences between alsS+ and alsS- cells are smaller in chemostatic Mother Machine conditions (74 vs 63 %/hr) compared to microcolony pad conditions (65 vs 20 %/hr), consistent with the chemostatic device minimizing cells' ability to impact neighbors' growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide quantitative comparison between experimental conditions, and C87 offers a mechanistic interpretation. The data clearly show condition-dependent differences in growth rate disparities. The interpretation (C87) is reasonable given the experimental designs, though it remains somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "sucC expression is negatively correlated with pckA expression at the single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by scatter plot data in Figure 2C and supplementary figures showing anticorrelation with statistical significance (Fisher exact test p-values provided in Figure 2\u2014figure supplement 3). This demonstrates that sucC+ cells represent a distinct metabolic state beyond just competence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Arginine metabolism genes are differentially regulated by competence, as observed in both current RNAseq results and prior microarray experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by both the current RNAseq data and citations to previous microarray studies (Berka et al., 2002; Ogura et al., 2002). This adds complexity to understanding the full metabolic role of the competent subpopulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C27",
+      "C28"
+    ],
+    "result": "When acetate levels rise to toxic levels, B. subtilis cultures consume acetate and produce acetoin, a non-toxic pH-neutral overflow metabolite. Acetate is released around mid-exponential phase and reabsorbed later when acetoin is produced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C27-C28 describe the biphasic acetate switch phenomenon. This is supported by HPLC measurements shown in Figure 1D and is consistent with established literature (Speck and Freese, 1973). The temporal dynamics are clearly demonstrated in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The emergence of alsS+ populations differs from bet-hedging strategies because it arises as a response to an anticipated challenge (acetate accumulation) that is part of the growth progression, providing predictable benefits in a deterministic dynamic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 distinguish the observed phenomenon from bet-hedging based on the experimental evidence showing acetate-dependent induction (C75-C76) and temporal correlation with acetate dynamics (C46-C48). The distinction is conceptually sound and supported by the data showing environmental responsiveness rather than stochastic differentiation independent of environmental cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The mechanistic connection between sucC expression and acetate production remains unclear, with possible explanations including TCA cycle overload or coenzyme-A regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C123 explicitly acknowledge uncertainty about the mechanism. While the correlation between sucC and acetate production is established, the authors appropriately note that the biochemical mechanism remains speculative. This represents an important open question requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The mechanism by which alsS+ cells benefit \u0394alsS cells may involve detoxification, but alternative mechanisms such as secretion of shared metabolites or co-factors cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 acknowledge mechanistic uncertainty. While the spatial proximity experiment (C89) demonstrates environmental modification, the specific mechanism remains unclear. The authors appropriately note that detoxification is consistent with known alsS function but that alternative explanations exist.",
+    "result_type": "MINOR"
+  }
+]

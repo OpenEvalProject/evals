@@ -1,0 +1,1345 @@
+{
+  "submission": {
+    "id": "41c5b383-f9c0-448a-a2ff-82a7f3304a7b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:49:57.881786Z",
+    "updated_at": "2025-12-01T22:49:57.881786Z"
+  },
+  "content": [
+    {
+      "id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "submission_id": "41c5b383-f9c0-448a-a2ff-82a7f3304a7b",
+      "content_type": "manuscript",
+      "content_text": "# Replication Study: Systematic identification of genomic markers of drug sensitivity in cancer cells\n\n## Authors\n\n- John P Vanden Heuvel<sup>2</sup>\n- Ewa Maddox<sup>2</sup>\n- Samar W Maalouf<sup>2</sup>\n- Elizabeth Iorns ([ORCID: 0000-0002-1210-2309](https://orcid.org/0000-0002-1210-2309)) \u2020\n- Elizabeth Iorns\n- Rachel Tsui\n- Alexandria Denis ([ORCID: 0000-0002-1210-2309](https://orcid.org/0000-0002-1210-2309))\n- Nicole Perfito\n- Timothy M Errington ([ORCID: 0000-0002-4959-5143](https://orcid.org/0000-0002-4959-5143))\n\n### Affiliations\n\n1. Center for Open Science Charlottesville United States\n2. Indigo Biosciences State College United States\n3. Department of Veterinary and Biomedical Sciences Pennsylvania State University State College United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn 2016, as part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Vanden Heuvel et al., 2016), that described how we intended to replicate selected experiments from the paper \u2018Systematic identification of genomic markers of drug sensitivity in cancer cells\u2019 (Garnett et al., 2012). Here we report the results. We found Ewing\u2019s sarcoma cell lines, overall, were more sensitive to the PARP inhibitor olaparib than osteosarcoma cell lines; however, while the effect was in the same direction as the original study (Figure 4C; Garnett et al., 2012), it was not statistically significant. Further, mouse mesenchymal cells transformed with either the EWS-FLI1 or FUS-CHOP rearrangement displayed similar sensitivities to olaparib, whereas the Ewing\u2019s sarcoma cell line SK-N-MC had increased olaparib sensitivity. In the original study, mouse mesenchymal cells transformed with the EWS-FLI1 rearrangement and SK-N-MC cells were found to have similar sensitivities to olaparib, whereas mesenchymal cells transformed with the FUS-CHOP rearrangement displayed a reduced sensitivity to olaparib (Figure 4E; Garnett et al., 2012). We also studied another Ewing\u2019s sarcoma cell line, A673: A673 cells depleted of EWS-FLI1 or a negative control both displayed similar sensitivities to olaparib, whereas the original study reported a decreased sensitivity to olaparib when EWS-FLI1 was depleted (Figure 4F; Garnett et al., 2012). Differences between the original study and this replication attempt, such as the use of different sarcoma cell lines and level of knockdown efficiency, are factors that might have influenced the outcomes. Finally, where possible, we report meta-analyses for each result.\n\n## Introduction\n\nThe Reproducibility Project: Cancer Biology (RP:CB) is a collaboration between the Center for Open Science and Science Exchange that seeks to address concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology (Errington et al., 2014). For each of these papers a Registered Report detailing the proposed experimental designs and protocols for the replications was peer reviewed and published prior to data collection. The present paper is a Replication Study that reports the results of the replication experiments detailed in the Registered Report (Vanden Heuvel et al., 2016) for a 2012 paper by Garnett et al., and uses a number of approaches to compare the outcomes of the original experiments and the replications.\n\nIn 2012, Garnett et al. reported the results of a large-scale high throughput screen to identify novel interactions between investigational drugs and cancer-derived human cell lines, along with a similar study published at the same time by Barretina and colleagues (Barretina et al., 2012). In addition to capturing expected gene-drug interactions, several unpredicted associations were identified, including an enhanced sensitivity between the EWS-FLI1 translocation of Ewing\u2019s sarcoma family tumors and poly(ADP-ribose) polymerase (PARP) inhibitors (Garnett et al., 2012). Selective inhibition of cell survival and proliferation in Ewing\u2019s sarcoma cell lines was observed with the PARP inhibitor, olaparib, comparable to the observed inhibition in BRCA-deficient cells (Garnett et al., 2012). Further, the EWS-FLI1 translocation was reported to be sufficient for increased sensitivity of cells to olaparib, while transient depletion of EWS-FLI1 from Ewing\u2019s sarcoma cells resulted in partial rescue of olaparib sensitivity, suggesting the sensitivity of Ewing\u2019s sarcoma cells to olaparib might be related to EWS-FLI1 transcriptional activity.\n\nThe Registered Report for the 2012 paper by Garnett et al. described the experiments to be replicated (Figure 4C and E\u2013F, and Supplemental Figures 16 and 20), and summarized the current evidence for these findings (Vanden Heuvel et al., 2016). Additional studies have reported hypersensitivity of Ewing\u2019s sarcoma cell lines to PARP inhibitors (Brenner et al., 2012; Engert et al., 2015; Gill et al., 2015; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015a; Stewart et al., 2014). However, studies extending the use of olaparib, or other PARP inhibitors, as monotherapies in xenograft models have reported limited effectiveness (Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015a; 2015b; Stewart et al., 2014), consistent with no objective responses from a phase II study of olaparib (Choy et al., 2014). In agreement with these observations, a new methodology for biomarker discovery, that accounts for variability in general levels of drug sensitivity, failed to find a statistically significant association of PARP inhibitors and the EWS-FLI1 translocation (Geeleher et al., 2016). However, studies testing combinatorial treatments of PARP inhibitors with other drugs, such as the DNA alkylating agent temozolomide, have reported enhanced sensitivity of Ewing sarcomas (Brenner et al., 2012; Engert et al., 2015; Gill et al., 2015; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015b; Stewart et al., 2014), with several clinical trials beginning (Pishas and Lessnick, 2016). Furthermore, a recent study reported that cells with SLFN11 inactivation are more resistant to PARP inhibitors, as single agents or in combination with temozolomide; however combination with an ATR inhibitor can overcome this resistance (Murai et al., 2016).\n\nThe outcome measures reported in this Replication Study will be aggregated with those from the other Replication Studies to create a dataset that will be examined to provide evidence about reproducibility of cancer biology research, and to identify factors that influence reproducibility more generally.\n\n## Results and discussion\n\n### Sensitivity of Ewing\u2019s sarcoma cell lines to PARP inhibition\n\nWe sought to independently replicate whether Ewing\u2019s sarcoma cell lines were more sensitive to the PARP inhibitor, olaparib, than control cell lines. This experiment is comparable to what was reported in Figure 4C and Supplemental Figure 16 of Garnett et al. (2012) and described in Protocol 1 in the Registered Report (Vanden Heuvel et al., 2016). While the original study included a comparison of Ewing\u2019s sarcoma cells to cell lines from other tumor types, this replication attempt was restricted to osteosarcoma cells. Similar to the original study, a BRCA2-deficient cell line (DoTc2-4510) and a BRCA-proficient cell line (MES-SA) were included to capture differential sensitivity to olaparib across genotypes. Olaparib sensitivity was determined for each cell line using a colony formation assay over a range of concentrations (0.1, 0.32, 1, 3.2, or 10 \u00b5M) with the effective concentration determined as the olaparib concentration at which the number of colonies were reduced by at least 90% compared to vehicle control. Similar to the original study, DoTc2-4510 cells were found to be highly sensitive to olaparib (0.1 \u00b5M), while MES-SA were largely resistant (10 \u00b5M) (Figure 1). The median effective concentration of osteosarcoma cell lines (n\u00a0=\u00a07) was 3.2 \u00b5M (range: 3.2 \u00b5M - 10 \u00b5M), while the median effective concentration of Ewing\u2019s sarcoma cell lines (n\u00a0=\u00a05) was 1 \u00b5M (range: 0.1 \u00b5M - 10 \u00b5M) (Figure 1). This compares to the original study that reported a median effective concentration of 3.2 \u00b5M (range: 1 \u00b5M - 10 \u00b5M) for osteosarcoma cell lines (n\u00a0=\u00a08) and 1 \u00b5M (range: 0.32 \u00b5M - 1 \u00b5M) for Ewing\u2019s sarcoma cell lines (n\u00a0=\u00a05) (Garnett et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29747/elife-29747-fig1-v1.jpg)\n\n**Figure 1.:** Colony formation assays were performed on the indicated cell lines in the presence of a range of olaparib concentrations (0.1, 0.32, 1, 3.2, or 10 \u00b5M) or vehicle control (DMSO). Plates were retreated every 3 or 4 days, fixed and stained 7\u201321 days following plating, and colonies counted. The effective concentration displayed for each cell line is defined as the concentration that reduced colony formation by greater than 90% compared to vehicle control. For G-292 cells, where the highest olaparib concentration tested (10 \u00b5M) did not inhibit colony formation by at least 90%, the effective concentration was defined as 10 \u00b5M. Wilcoxon-Mann-Whitney test for ordinal data comparing the effective concentrations of Ewing\u2019s sarcoma cell lines to osteosarcoma cell lines; U\u00a0=\u00a012, p=0.390. Additional details for this experiment can be found at https://osf.io/zy3s5/.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29747/elife-29747-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** This is a repeat of the same experiment as in Figure 1. G-292 cells, did not inhibit colony formation by at least 90% at the highest olaparib concentration tested (10 \u00b5M) and was thus defined as 10 \u00b5M. Wilcoxon-Mann-Whitney test for ordinal data comparing the effective concentrations of Ewing\u2019s sarcoma cell lines to osteosarcoma cell lines; U\u00a0=\u00a011, p=0.302. Additional details for this experiment can be found at https://osf.io/zy3s5/.\n\nTo compare the sensitivity of Ewing\u2019s sarcoma cells to osteosarcoma cells, a Wilcoxon-Mann-Whitney test for ordinal data was performed using the effective concentration as outlined in the Registered Report (Vanden Heuvel et al., 2016). Using a sample size determined a priori to detect the effect based on the originally reported data, the comparison of the effective concentrations of Ewing\u2019s sarcoma cell lines to osteosarcoma cell lines was not statistically significant (U\u00a0=\u00a012, p=0.390). Thus, the null hypothesis that the effective concentration of olaparib is similar for Ewing\u2019s sarcoma and osteosarcoma cell lines can not be rejected. A similar result was obtained with a duplicate set of plates using the same cell lines (Figure 1\u2014figure supplement 1). To summarize, for this experiment we found results that were in the same direction as the original study and not statistically significant.\n\nThese results should take into consideration that other methods to assess olaparib sensitivity, such as cellular viability assays, did not result in all Ewing\u2019s sarcoma cell lines tested being acutely sensitive to PARP inhibitors, but rather a majority displaying increased sensitivity with some cell lines relatively insensitive (Garnett et al., 2012; Gill et al., 2015). Importantly, the cellular viability assays utilized a larger sample size compared to the colony formation assay reported here. The sample size used for this replication attempt was determined from the effect reported in the original study between Ewing\u2019s sarcoma and osteosarcoma cell lines. Although the replication study was powered to detect the original effect size estimate with at least 80% power, both the original study and this replication used relatively small sample sizes, which can confound the findings and prevent them from being extrapolated to the overall population (Button et al., 2013; Faber and Fonseca, 2014). Similarly, only five of the cell lines tested were the same between the two studies, largely due to the inability to obtain any of the Ewing\u2019 sarcoma cell lines used in the original study. These factors, among others, influence the research outcome of each designed experiment. Further studies should take into account both of these results, especially when considering the number of cell lines to test.\n\n### Sensitivity to olaparib in cells transformed with the EWS-FLI1 rearrangement\n\nThe EWS-FLI1 rearrangement is characteristic of Ewing\u2019s sarcoma tumors and in the original study was identified as a statistically significant association with olaparib sensitivity (Garnett et al., 2012). To test whether the sensitivity to olaparib was due to the EWS-FLI1 rearrangement, we independently replicated an experiment comparing olaparib sensitivity in mouse mesenchymal cells transformed with EWS-FLI1, or FUS-CHOP a related liposarcoma-associated translocation (Riggi et al., 2006; 2005). This experiment is similar to what was reported in Figure 4E of Garnett et al. (2012) and described in Protocol 2 in the Registered Report (Vanden Heuvel et al., 2016). Using the same transformed mouse mesenchymal cells as the original study, as well as the human Ewing\u2019s sarcoma cell line SK-N-MC for comparison, sensitivity to olaparib was determined using a cellular viability assay over a range of concentrations. During the course of the assay, the cells continued to proliferate in no drug conditions (Figure 2\u2014figure supplement 1), a necessary condition since olaparib sensitivity relies on cellular proliferation (Dale Rein et al., 2015; Weston et al., 2010). While the SK-N-MC cells displayed sensitivity to olaparib with a mean IC50 of 2.67 \u00b5M, 95% CI [3.11\u20132.23], the EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal cells were both relatively resistant with more than 50% of cells remaining viable at the highest dose tested (Figure 2). This compares to the original study that reported EWS-FLI1 transformed mouse mesenchymal cells displaying olaparib sensitivity similar to SK-N-MC cells (estimated IC50 of 1.1 \u00b5M for EWS-FLI1 and 1.5 \u00b5M for SK-N-MC) with FUS-CHOP transformed cells remaining relatively resistant (estimated IC50 of 7.8 \u00b5M) (Garnett et al., 2012). The analysis plan specified in the Registered Report (Vanden Heuvel et al., 2016) proposed to compare the IC50 values from EWS-FLI1 transformed cells, or SK-N-MC cells, to FUS-CHOP transformed cells, however as stated above this could not be performed because of the inability to determine IC50 values for either of the transformed mouse mesenchymal cells. To summarize, for this experiment we found results that were not in the same direction as the original study.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29747/elife-29747-fig2-v1.jpg)\n\n**Figure 2.:** Cell viability assays were performed for EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal cells, as well as the human Ewing\u2019s sarcoma cell line (SK-N-MC), which harbors the EWS-FLI1 fusion. Cells were treated with the indicated doses of olaparib and 72 hr later cell viability was determined. Relative viability was calculated as a percentage of vehicle control treated cells. Means reported and error bars represent SD from three independent biological repeats. Additional details for this experiment can be found at https://osf.io/t3dm6/.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29747/elife-29747-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) For each cell line, relative viability of untreated and vehicle control treated cells at 24 and 72 hr after treatment with olaparib were used to determine the population doubling times. Box and whisker plot with median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Means as black dot and bold error bars represent 95% CI (n\u00a0=\u00a06). (B) Relative expression levels of EWS-FLI1 and Actb were determined by qRT-PCR for each cell line. Expression level of EWS-FLI1 transformed mouse mesenchymal cells was assigned a value of 100. Means reported from one biological repeat. Actb, a housekeeping gene for the mouse mesenchymal cells, was not expected to be expressed in SK-N-MC cells, which are human. The EWS-FLI1 transformed mouse mesenchymal cells contain the EWS-FLI1 fusion gene from SK-N-MC cells (Riggi et al., 2005). Additional details for this experiment can be found at https://osf.io/t3dm6/.\n\n### Olaparib sensitivity after depletion of EWS-FLI1 from A673 cells\n\nTo test if EWS-FLI1 is necessary for olaparib sensitivity, we replicated an experiment similar to what was reported in Figure 4F and Supplemental Figure 20 in Garnett et al. (2012) and described in Protocol 3 in the Registered Report (Vanden Heuvel et al., 2016). Using the Ewing\u2019s sarcoma cell line, A673, which harbors the EWS-FLI1 translocation, cells were transfected with either siRNA targeting the EWS-FLI1 fusion or control siRNA and then concomitantly treated with a range of concentrations of olaparib or vehicle control. Knockdown efficiency was examined by quantitative real-time-polymerase chain reaction (qRT-PCR). A673 cells transfected with EWS-FLI1 siRNA resulted in an average reduction of 65% in EWS-FLI1 expression relative to control siRNA whether cells were treated with vehicle control or olaparib (Figure 3B). Cellular viability was decreased by olaparib treatment in a dose dependent manner with EWS-FLI1 and control depleted cells displaying similar sensitivities (Figure 3A, Figure 3\u2014figure supplement 1). This compares to the original study that reported olaparib sensitivity was partially reverted when EWS-FLI1 was depleted from A673 cells (estimated IC50 of 1.4 \u00b5M for control siRNA and 2.7 \u00b5M for EWS-FLI1 siRNA) (Garnett et al., 2012). The original study also reported an achieved knockdown of\u00a0~94% in EWS-FLI1 expression whether cells were treated with olaparib or vehicle control (Garnett et al., 2012). The difference in achieved knockdown between the original study and this replication attempt is a possible reason for the differences in olaparib sensitivity outcomes. The level of knockdown required to yield a given phenotype varies because it is system-dependent (e.g. cell type, assay, function of gene-of-interest), thus, a higher level of knockdown might be required to observe an effect with this experimental design. Importantly, though,\u00a0observing\u00a0different outcomes are informative to establish the range of conditions under which a given phenotype can\u00a0be observed (Bailoo et al., 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29747/elife-29747-fig3-v1.jpg)\n\n**Figure 3.:** A673 Ewing\u2019s sarcoma cells transiently transfected with negative control siRNA (siCT) or an siRNA targeting the EWS-FLI1 translocation (siEF1). (A) Cell viability assays were performed with the indicated doses of olaparib, or an equivalent volume of vehicle control (DMSO). After 72 hr of treatment cell viability was determined. Relative viability was calculated as a percentage of untreated cells. Means reported and error bars represent SD from three independent biological repeats. (B) siRNA-mediated depletion of EWS-FLI1 was determined after 72 hr treatment with vehicle control (DMSO) or olaparib. Relative expression levels of EWS-FLI1 expression normalized to RPLP0 (ribosomal protein lateral stalk subunit P0) was determined by qRT-PCR. Expression level of siCT cells treated with DMSO was assigned a value of 100. Means reported and error bars represent SD from three independent biological repeats. Two-way ANOVA main effect for siRNA (siCT or siEF1); F(1,12) = 96, p=4.46\u00d710\u22127. Pairwise contrast between DMSO treated cells transfected with siCT or siEF1; t(12) = 7.32, uncorrected p=9.17\u00d710\u22126 with a priori alpha level\u00a0=\u00a00.025; (Bonferroni corrected p=1.83\u00d710\u22125). Pairwise contrast between olaparib treated cells transfected with siCT or siEF1; t(12) = 6.53, uncorrected p=2.80\u00d710\u22125 with a priori alpha level\u00a0=\u00a00.025; (Bonferroni corrected p=5.60\u00d710\u22125). Additional details for this experiment can be found at https://osf.io/2w22x/.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29747/elife-29747-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** This is the same experiment as in Figure 3. The line graph of each biological repeat is plotted individually. Means reported and error bars represent SD from three technical replicates for each measurement. Additional details for this experiment can be found at https://osf.io/2w22x/.\n\nIt\u2019s also worth noting that in the original study, olaparib treatment in the control siRNA cells resulted in a relative viability of zero at the highest concentrations of olaparib tested, while in this replication attempt relative viability remained at around 40% (Figure 3A). This could be due to how the lower bound of detection (maximal response) was determined (Sebaugh, 2011) as well as differences in cellular growth conditions that could impact olaparib sensitivity (Stordal et al., 2013; Strese et al., 2013). The analysis plan specified in the Registered Report (Vanden Heuvel et al., 2016) proposed to compare the IC50 values from control siRNA transfected cells to EWS-FLI1 siRNA transfected cells, however this could not be performed because of the inability to determine absolute IC50 values for either condition following published guidelines (Sebaugh, 2011). To summarize, for this experiment we found the cell viability results were not in the same direction as the original study.\n\n### Meta-analysis of original and replication effects\n\nWe performed a meta-analysis using a random-effects model, where possible, to combine each of the effects described above as pre-specified in the confirmatory analysis plan (Vanden Heuvel et al., 2016). To provide a standardized measure of the effect, a common effect size was calculated for each effect from the original and replication studies. Cliff\u2019s delta (d) is a non-parametric estimate of effect size that measures how often a value in one group is larger than the values from another group. The estimate of the effect size of one study, as well as the associated uncertainty (i.e. confidence interval), compared to the effect size of the other study provides another approach to compare the original and replication results (Errington et al., 2014; Valentine et al., 2011). Importantly, the width of the confidence interval for each study is a reflection of not only the confidence level (e.g. 95%), but also variability of the sample (e.g. SD) and sample size.\n\nThe comparison of the effective concentration of olaparib for Ewing\u2019s sarcoma cells to osteosarcoma cells resulted in a Cliff\u2019s d\u00a0=\u00a00.34, 95% CI [\u22120.24, 0.74] for this study, whereas Cliff\u2019s d\u00a0=\u00a00.93, 95% CI [0.62, 0.99] for the data estimated a priori from Figure\u00a04C of the original study (Garnett et al., 2012). A meta-analysis (Figure 4) of these two effects resulted in Cliff\u2019s d\u00a0=\u00a00.63, 95% CI [\u22120.10, 0.92], which was statistically significant (p=0.029). Importantly, the confidence interval around Cliff\u2019s d is asymmetric, while the p value is calculated using the normal distribution and is thus not well defined; however there is no agreement on how to compute p values from an asymmetric distribution (Dunne et al., 1996; Rohatgi and Saleh, 2000). Both results are consistent when considering the direction of the effect, however the point estimate of the replication effect size was not within the confidence interval of the original result, or vice versa.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29747/elife-29747-fig4-v1.jpg)\n\n**Figure 4.:** Effect size and 95% confidence interval are presented for Garnett et al. (2012), this replication attempt (RP:CB), and a random effects meta-analysis of those two effects. Sample sizes used in Garnett et al. (2012) and this replication attempt are reported under the study name. Random effects meta-analysis of effective concentrations of Ewing\u2019s sarcoma cell lines to osteosarcoma cell lines from colony formation assays (meta-analysis p=0.029). Additional details for this meta-analysis can be found at https://osf.io/whs6e/.\n\nThis direct replication provides an opportunity to understand the present evidence of these effects. Any known differences, including reagents and protocol differences, were identified prior to conducting the experimental work and described in the Registered Report (Vanden Heuvel et al., 2016). However, this is limited to what was obtainable from the original paper and through communication with the original authors, which means there might be particular features of the original experimental protocol that could be critical, but unidentified. So while some aspects, such as cell lines, number of cells plated/injected, and the\u00a0specific PARP inhibitor were maintained, others were unknown or not easily controlled for. These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), sex of cell lines (Clayton and Collins, 2014), impacts of atmospheric oxygen on cell viability and growth (Boregowda et al., 2012), and differing compound potency resulting from different stock solutions (Kannt and Wieland, 2016) or from variation in cell division rates (Hafner et al., 2016). Whether these or other factors influence the outcomes of this study is open to hypothesizing and further investigation, which is facilitated by direct replications and transparent reporting.\n\n## Materials and methods\n\nAs described in the Registered Report (Vanden Heuvel et al., 2016), we attempted a replication of the experiments reported in Figure 4C and E\u2013F, and Supplemental Figures 16 and 20 of Garnett et al. (2012). A detailed description of all protocols can be found in the Registered Report (Vanden Heuvel et al., 2016). Additional detailed experimental notes, data, and analysis are available on the Open Science Framework (OSF) (RRID:SCR_003238) (https://osf.io/nbryi/; Vanden Heuvel et al., 2017).\n\n### Cell culture\n\nA673 (ATCC, cat# CRL-1598, RRID:CVCL_0080), TC-71 (Children\u2019s Oncology Group Cell Culture and Xenograft Repository (COGcell), RRID:CVCL_2213) (Whang-Peng et al., 1986), SK-N-MC (ATCC, cat# HTB-10, RRID:CVCL_0530), CHLA-9 (COGcell, RRID:CVCL_M150) (Batra et al., 2004), CHLA-10 (COGcell, RRID:CVCL_6583) (Batra et al., 2004), U-2-OS (ATCC, cat# HTB-96, RRID:CVCL_0042), SJSA-1 (ATCC, cat# CRL-2098, RRID:CVCL_1697), SAOS-2 (ATCC, cat# HTB-85, RRID:CVCL_0548), HOS (ATCC, cat# CRL-1543, RRID:CVCL_0312), MG-63 (ATCC, cat# CRL-1427, RRID:CVCL_0426), 143B (ATCC, cat# CRL-8303, RRID:CVCL_2270), G-292 clone A141B1 (ATCC, cat# CRL-1423, RRID:CVCL_2909), DoTc2-4510 (ATCC, cat# CRL-7920, RRID:CVCL_1181), MES-SA (ATCC, cat# CRL-1976, RRID:CVCL_1404), and EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal progenitor cells (shared by Stamenkovic lab, Centre Hospitalier Universitaire Vaudois (CHUV) from vials frozen in 2006) were maintained in growth medium as described in the Registered Report (Vanden Heuvel et al., 2016) with Fetal Bovine Serum (FBS) (Gibco, cat# 16000\u2013036), Roswell Park Memorial Institute (RPMI) 1640 medium (Gibco, cat# A10491), and Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM), high-glucose (Gibco, cat# 11965\u2013092) sourced differently than listed. A673 (Giard et al., 1973) and SK-N-MC cells (Biedler et al., 1973) were originally classified as neuroblastoma cell lines, but have since been determined to be Ewing\u2019s sarcoma cells (Mart\u00ednez-Ram\u00edrez et al., 2003; Whang-Peng et al., 1986). Cells were grown at 37\u00b0C in a humidified atmosphere at 5% CO2. Quality control data for cell lines are available at https://osf.io/x4zwb/. This includes results confirming the cell lines were free of mycoplasma contamination and common mouse pathogens (IDEXX BioResearch, Columbia, Missouri). Additionally, STR DNA profiling of the cell lines was performed and all cells were confirmed to be the indicated cell lines when queried against STR profile databases.\n\n### Therapeutic compounds\n\n10 mM olaparib (Selleckchem, cat# S1060; lot# S106021) was aliquoted into amber vials with O-ring screw caps, sparged with Argon, and stored at \u221280\u00b0C until use. Freeze-thaws were limited to less than five times.\n\n### Colony formation assays\n\nCells were plated at low density (2000 cells per well of 6-well culture plate (Falcon, cat# 353224)) and allowed to adhere overnight. The following day cells were treated with five doses of olaparib (10 \u00b5M, 2 \u00b5M, 1 \u00b5M, 0.32 \u00b5M, 0.1 \u00b5M) diluted to give a final DMSO concentration of 0.1% v/v or vehicle control (0.1% v/v DMSO). Medium was replaced and cells were retreated with olaparib or vehicle control every 3 or 4 days. When sufficient colonies were visible (greater than\u00a0~100) in the vehicle control condition (after 7\u201321 days), cells were washed with PBS and fixed with ice-cold methanol for 30 min while shaking at room temperature. Methanol was removed and cells were stained with Giemsa stain at 1:20 dilution in deionized water for 4 hr at room temperature (or overnight at 4\u00b0C) while shaking. Cells were rinsed with water, dried, and colonies were quantified (ImageJ software (RRID:SCR_003070), version 1.51h (Schneider et al., 2012)) in a blinded manner for each well. The effective concentration for each cell line was determined as the concentration that reduced colony formation by greater than 90% compared to vehicle control. For G-292 cells, where the highest olaparib concentration tested (10 \u00b5M) did not inhibit colony formation by at least 90%, the effective concentration was determined as 10 \u00b5M. This assay was performed with a duplicate set of plates using the same cell lines. Images of stained plates with cell line and olaparib concentration labeled, similar to Supplemental Figures 16 of Garnett et al. (2012), are available at https://osf.io/whwsk/.\n\n### Cell viability assays with mouse mesenchymal progenitor cells\n\nThe seeding density of each cell line was empirically determined by seeding between 500 and 1.6 \u00d7 104 cells in 96 well plates (Costar, cat# 3917) in 100 \u00b5l medium in technical quadruplicate. 48, 72, and 96 hr after seeding, cells were fixed in 4% paraformaldehyde (Affymetrix, cat# 19943) for 30 min at 37\u00b0C. Cells were stained with 1 \u00b5M Syto 60 red fluorescent nucleic acid stain, diluted in PBS, for 1 hr according to manufacturer\u2019s instructions. Fluorescence signal was quantified using a red fluorescent filter (excitation\u00a0=\u00a0625 nm/emission\u00a0=\u00a0660\u2013720 nm) and a GloMAX Multi Detection System (Promega, model# 9311\u2013011), software version 2.3.2. For each cell line, a log(dose) response curve was fitted using the \u2018log(Agonist) vs. response \u2013 Find ECanything\u2019 analysis from GraphPad Prism software (San Diego, California, RRID:SCR_002798), version 6.0b. The number of cells seeded that achieved a 70% fluorescent signal (~70% confluent) after 96 hr was determined.\n\nSK-N-MC cells were seeded at 8000 or 12,000 cells/well and EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal progenitor cells were seeded at 3000 or 4,000 cells/well (non-edge wells) into a 96-well plate and incubated overnight. The following day cells were treated with serial dilutions of olaparib to yield six dilutions ranging from 0.39 \u00b5M to 12.5 \u00b5M to give a final DMSO concentration of 0.1% v/v, as well as vehicle control (0.1% v/v DMSO) and untreated cells that were used to normalize each biological repeat. All conditions were done in technical triplicate. Wells were fixed, stained, and fluorescence signal quantified as described for the seeding density step 24, 48, and 72 hr after start of treatment. Untreated and vehicle control treated wells were used to determine the population doubling time (Figure 2\u2014figure supplement 1) using the formula (doubling time\u00a0=\u00a0incubation time*ln(2)/ln(72 hr plate average reading/24 hr plate average reading)). Relative viability was calculated as a percentage of vehicle control treated cells. Spline interpolation was performed on values for each biological repeat, where possible, to determine an estimate IC50 as described in the Registered Report (Vanden Heuvel et al., 2016) with R software (RRID:SCR_001905), version 3.3.2 (R Core Team, 2017).\n\n### siRNA transfection and cell viability assays with A673 cells\n\nThe A673 Ewing\u2019s sarcoma cell line was seeded at 5,000 cells per well in a 96 well plate (non-edge wells) and immediately reverse transfected with 25 nM AllStars negative control siRNA (Qiagen, cat# 1027281) or an siRNA targeting the EWS-FLI1 translocation (Qiagen, cat# 1027423; custom order: 5\u2019-GGCAGCAGAACCCUUCUUACG-3\u2019) with Lipofectamine RNAiMAX with the cells in suspension according to manufacturer\u2019s instructions. Immediately after siRNA transfection cells were treated with serial dilutions of olaparib to yield nine dilutions ranging from 100 \u00b5M to 0.015 \u00b5M or an equivalent volume of vehicle control (DMSO). Untreated cells as well as medium alone wells that were used for background subtraction were included. All conditions were done in technical triplicate. After 72 hr, cell viability was determined using Cell Titer 96 Aqueous One Solution Cell Proliferation Assay (Promega, cat# G3582) according to manufacturer\u2019s instructions. After 4 hr incubation at 37\u00b0C in a humidified atmosphere at 5% CO2 absorbance was read at 490 nm using a GloMax Multi Detection System. Relative viability was calculated as a percentage of untreated cells after background subtraction (medium only wells).\n\n### Gene expression analysis\n\nIn parallel to the cell viability assay, A673 cells were seeded at 3 \u00d7 104 cells per well of a 24 well plate (Falcon, cat# 353226) and immediately reverse transfected with negative control siRNA or an siRNA targeting the EWS-FLI1 translocation as described above. Immediately after siRNA transfection cells were treated with 1.3 \u00b5M olaparib or an equivalent volume of vehicle control (0.013% v/v DMSO). After 72 hr, cells were harvested and RNA isolated using the NucleoSpin RNAII kit (Machery-Nagel, cat# 740955.5) according to manufacturer\u2019s instructions. RNA concentration and purity was determined (data available at https://osf.io/ryvmu/). Total RNA was reverse transcribed into cDNA using High-capacity cDNA reverse transcription kit (Applied Biosystems, cat# 4368814) according to manufacturer\u2019s instructions. qRT-PCR reactions were then performed in technical triplicate using EWS-FLI1 and RPLP0-specific primers (Integrated DNA Technologies: sequences listed in Registered Report [Vanden Heuvel et al., 2016]), and Perfecta SYBR green FastMix (Quantra Biosciences, cat# 95073\u2013012) according to manufacturer\u2019s instructions. PCR cycling conditions were used as follows: [1 cycle 95\u00b0C for 10 min \u2013 40 cycles 95\u00b0C for 15 s, 60\u00b0C 60 s] using a StepOnePlus real-time PCR system (Applied Biosystems, cat# 4376592) and StepOne software (RRID:SCR_014281), version 2.3. EWS-FLI1 transcript levels were normalized to RPLP0 levels in each sample.\n\n### Confirmation of EWS-FLI1 rearrangement in mouse mesenchymal progenitor cells\n\nPresence of the EWS-FLI1 rearrangement in the mouse mesenchymal progenitor cells shared for this replication attempt was confirmed by qPCR analysis (Figure 2\u2014figure supplement 1B). SK-N-MC cells and EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal progenitor cells (>3 \u00d7 106 cells) were pelleted at 110xg for 5 min, washed once with PBS, and lysed in 400 \u00b5l RNA lysis buffer (Promega, cat# Z3051). RNA extraction was performed with the SV96 Total RNA Isolation System (Promega, cat# Z3505) according to manufacturer\u2019s instructions. RNA preps were eluted in 100 \u00b5l nuclease free water (Promega, cat# P119E). RNA concentration and purity was determined with a NanoDrop 2000 (Thermo Fisher Scientific, Waltham, Massachusetts) (data available at https://osf.io/2kz7n/). Total RNA was reverse transcribed into cDNA using High-capacity cDNA reverse transcription kit according to manufacturer\u2019s instructions. qRT-PCR were then performed in technical triplicate using EWS-FLI1 and mouse Actb specific primers (EWS-FLI1 primer is same as above; Actb sequence is: Forward: 5\u2019-GACTCATCGTACTCCTGCTTG-3\u2019, Reverse: 5\u2019-GATTACTGCTCTGGCTCCTAG-3\u2019) at 200 nM final concentration, and Perfecta SYBR green FastMix according to manufacturer\u2019s instructions. PCR conditions were the same as described above. Negative controls containing water with no cDNA template, as well as cDNA template without reverse transcriptase were included.\n\n### Statistical analysis\n\nStatistical analysis was performed with R software (RRID:SCR_001905), version 3.3.2 (R Core Team, 2017). All data, csv files, and analysis scripts are available on the OSF (https://osf.io/nbryi/). Confirmatory statistical analysis was pre-registered (https://osf.io/wt8df/) before the experimental work began as outlined in the Registered Report (Vanden Heuvel et al., 2016). Data were checked to ensure assumptions of statistical tests were met. When described in the results, the Bonferroni correction, to account for multiple testings, was applied to the alpha error or the p-value. The Bonferroni corrected value was determined by divided the uncorrected value (.05) by the number of tests performed. A meta-analysis of a common original and replication effect size was performed with a random effects model and the metafor R package (Viechtbauer, 2010) (https://osf.io/whs6e/). For the colony formation analysis, to obtain an overall effect size estimate from this replication attempt, the estimates from the two repeats were combined with a fixed effects model. Furthermore, all meta-analyses were performed without weighting, since unweighted Cliff\u2019s d has been reported to reduce bias (Kromrey et al., 2005). The asymmetric confidence intervals for the overall Cliff\u2019s d estimate was determined using the normal deviate corresponding to the (1 - alpha/2)th percentile of the normal distribution (Cliff, 1993). The original study data presented in Figure\u00a04C was extracted a priori from the published figure by determining the height of each bar, while the summary data (mean and standard deviation) pertaining to Figure\u00a04E-F were shared by the original authors. The data and estimated IC50 values for Figure\u00a04E-F were published in the Registered Report (Vanden Heuvel et al., 2016) and used in the power calculations to determine the sample size for this study.\n\n### Deviations from registered report\n\nThe source of FBS, RPMI 1640, DMEM, high-glucose, and SYBR Green PCR mix were different than what is listed in the Registered Report, with the used source and catalog number listed above. Statistical analysis proposed in the Registered Report for some of the experiments were unable to be performed as described above. We also included an additional test to confirm the EWS-FLI1 rearrangement in the mouse mesenchymal progenitor cells shared for this replication attempt. Additional materials and instrumentation not listed in the Registered Report, but needed during experimentation are also listed.\n",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "fb32765e-8d83-4232-9817-bdefefa6e8ce",
+      "submission_id": "41c5b383-f9c0-448a-a2ff-82a7f3304a7b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaqu\u00edn M Espinosa, University of Colorado School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29747.012](https://doi.org/10.7554/eLife.29747.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Replication Study: Systematic identification of genomic markers of drug sensitivity in cancer cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Charles Sawyers as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jenny Barrett (Reviewer #1); Cyril Benes (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary of discussion:\n\nThis replication study reports the results of a series of experiments aimed at reproducing findings in an original manuscript by Garnett et al. (Nature 2012) reporting increased sensitivity to PARP inhibitors among Ewing's sarcoma cell lines.\n\nAfter thorough discussion among reviewers and members of the Editorial board, it was decided to request submission of a revised manuscript that explicitly states the inconclusive nature of the replication study.\n\nThe replication study reports increased sensitivity for PARP inhibitors among select Ewing's cell lines, but the difference is not statistically significant as reported in the original publication, which could certainly be attributed to the use of different and fewer sarcoma cell lines. Another key experiment involving knockdown of EWS-FLI is also inconclusive, due to the relatively poor siRNA knockdown of EWS-FLI relative to the original paper.\n\nIt is then required that these differences in the experimental approach be made very clear in the revised manuscript, and that the word \"inconclusive\" be part of the Abstract since the report does not disprove the hypothesis that Ewing's sarcoma cell lines are more sensitive to PARP inhibitors.\n\nAlthough additional experiments cannot be requested at this point, the revised Discussion should include a statement saying that more cell lines would need to be tested to move beyond the current \"inconclusive\" nature of the report, as well as a more robust EWS-FLI knockdown.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Replication Study: Systematic identification of genomic markers of drug sensitivity in cancer cells\" for further consideration at eLife. Your revised article has been favorably evaluated by Charles Sawyers (Senior Editor) and a Reviewing editor.\n\nThe manuscript has been improved and is essentially ready for acceptance provided you make editorial changes to the Abstract acknowledging that some of the results, particularly the siRNA experiments are inconclusive due to difference in knockdown efficiency. It is important that this be explicitly stated to avoid any misinterpretation of the conclusions. (The current concluding sentence in the Abstract, \"No single study can provide conclusive evidence for or against a claim\u2026\" does not provide the necessary level of clarity.)\n",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6ffd0432-442b-43d3-a784-85a1096c064a",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C1",
+      "claim": "Ewing's sarcoma cell lines, overall, were more sensitive to the PARP inhibitor olaparib than osteosarcoma cell lines in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "We found Ewing's sarcoma cell lines, overall, were more sensitive to the PARP inhibitor olaparib than osteosarcoma cell lines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding directly, and it is supported by experimental data presented in Figure 1 showing median effective concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "c6847d7f-7831-4fad-9d07-b1474296fdea",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C2",
+      "claim": "The effect of olaparib sensitivity in Ewing's sarcoma versus osteosarcoma cell lines was in the same direction as the original study but was not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "while the effect was in the same direction as the original study (Figure 4C; Garnett et al., 2012), it was not statistically significant",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis (Wilcoxon-Mann-Whitney test) yielded U = 12, p=0.390, which is not statistically significant, as stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "22941246-17cf-4bb1-ac90-ec6141aba71a",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C3",
+      "claim": "Mouse mesenchymal cells transformed with either the EWS-FLI1 or FUS-CHOP rearrangement displayed similar sensitivities to olaparib in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mouse mesenchymal cells transformed with either the EWS-FLI1 or FUS-CHOP rearrangement displayed similar sensitivities to olaparib",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2 shows both transformed cell lines remained relatively resistant with more than 50% viability at the highest dose tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "cdd79647-d896-4815-93f8-8de6ff7ba592",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C4",
+      "claim": "The Ewing's sarcoma cell line SK-N-MC had increased olaparib sensitivity compared to the transformed mouse mesenchymal cells in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the Ewing's sarcoma cell line SK-N-MC had increased olaparib sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2 shows SK-N-MC cells displayed sensitivity to olaparib with a mean IC50 of 2.67 \u00b5M, while the transformed cells were resistant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "3c88a639-95ed-40bd-9449-c1828d93b8a8",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C5",
+      "claim": "In the original study, mouse mesenchymal cells transformed with the EWS-FLI1 rearrangement and SK-N-MC cells were found to have similar sensitivities to olaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original study, mouse mesenchymal cells transformed with the EWS-FLI1 rearrangement and SK-N-MC cells were found to have similar sensitivities to olaparib, whereas mesenchymal cells transformed with the FUS-CHOP rearrangement displayed a reduced sensitivity to olaparib (Figure 4E; Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to the original study's findings reported in Figure 4E.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "edf75c05-b393-42d0-96aa-c67b998da145",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C6",
+      "claim": "In the original study, mesenchymal cells transformed with the FUS-CHOP rearrangement displayed a reduced sensitivity to olaparib compared to EWS-FLI1 transformed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original study, mouse mesenchymal cells transformed with the EWS-FLI1 rearrangement and SK-N-MC cells were found to have similar sensitivities to olaparib, whereas mesenchymal cells transformed with the FUS-CHOP rearrangement displayed a reduced sensitivity to olaparib (Figure 4E; Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to the original study's findings reported in Figure 4E.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "1a197cc7-17dd-42c4-8b36-6d24b7a65d47",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C7",
+      "claim": "A673 cells depleted of EWS-FLI1 or a negative control both displayed similar sensitivities to olaparib in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "We also studied another Ewing's sarcoma cell line, A673: A673 cells depleted of EWS-FLI1 or a negative control both displayed similar sensitivities to olaparib",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3A shows that both siRNA conditions resulted in similar dose-response curves to olaparib.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "f0e23841-5c04-4a21-a318-9cfd2bed6a00",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C8",
+      "claim": "The original study reported a decreased sensitivity to olaparib when EWS-FLI1 was depleted from A673 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the original study reported a decreased sensitivity to olaparib when EWS-FLI1 was depleted (Figure 4F; Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to the original study's findings reported in Figure 4F.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "804de263-5d5f-41a0-bd81-1e0b3338c6a7",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C9",
+      "claim": "Differences in sarcoma cell lines used between the original study and this replication attempt are factors that might have influenced the outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences between the original study and this replication attempt, such as the use of different sarcoma cell lines and level of knockdown efficiency, are factors that might have influenced the outcomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential factors affecting reproducibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "b2964e54-d50b-4d3c-a7aa-f19644344aab",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C10",
+      "claim": "Differences in knockdown efficiency between the original study and this replication attempt are factors that might have influenced the outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences between the original study and this replication attempt, such as the use of different sarcoma cell lines and level of knockdown efficiency, are factors that might have influenced the outcomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential factors affecting reproducibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "f4680101-8f5b-42db-b114-02e5193d325e",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C11",
+      "claim": "The median effective concentration of osteosarcoma cell lines was 3.2 \u00b5M (range: 3.2 \u00b5M - 10 \u00b5M) in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "The median effective concentration of osteosarcoma cell lines (n = 7) was 3.2 \u00b5M (range: 3.2 \u00b5M - 10 \u00b5M)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "113016f1-2eb6-4ddb-898f-06468f059686",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C12",
+      "claim": "The median effective concentration of Ewing's sarcoma cell lines was 1 \u00b5M (range: 0.1 \u00b5M - 10 \u00b5M) in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "while the median effective concentration of Ewing's sarcoma cell lines (n = 5) was 1 \u00b5M (range: 0.1 \u00b5M - 10 \u00b5M) (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "a8613dde-0dda-4cb2-8419-698a755863a7",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C13",
+      "claim": "The original study reported a median effective concentration of 3.2 \u00b5M (range: 1 \u00b5M - 10 \u00b5M) for osteosarcoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported a median effective concentration of 3.2 \u00b5M (range: 1 \u00b5M - 10 \u00b5M) for osteosarcoma cell lines (n = 8) and 1 \u00b5M (range: 0.32 \u00b5M - 1 \u00b5M) for Ewing's sarcoma cell lines (n = 5) (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to data from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "fc9306df-e71a-4cc0-8caf-500ef064336a",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C14",
+      "claim": "The original study reported a median effective concentration of 1 \u00b5M (range: 0.32 \u00b5M - 1 \u00b5M) for Ewing's sarcoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported a median effective concentration of 3.2 \u00b5M (range: 1 \u00b5M - 10 \u00b5M) for osteosarcoma cell lines (n = 8) and 1 \u00b5M (range: 0.32 \u00b5M - 1 \u00b5M) for Ewing's sarcoma cell lines (n = 5) (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to data from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "a27e69ec-91ac-4827-bb22-f76f27f8dee7",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C15",
+      "claim": "DoTc2-4510 cells were found to be highly sensitive to olaparib at 0.1 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the original study, DoTc2-4510 cells were found to be highly sensitive to olaparib (0.1 \u00b5M), while MES-SA were largely resistant (10 \u00b5M) (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "ec99ce3c-00c2-4683-b568-f167b59b6256",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C16",
+      "claim": "MES-SA cells were largely resistant to olaparib at 10 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the original study, DoTc2-4510 cells were found to be highly sensitive to olaparib (0.1 \u00b5M), while MES-SA were largely resistant (10 \u00b5M) (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "3402b676-263e-458b-9a49-df39e87ac5be",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C17",
+      "claim": "The comparison of the effective concentrations of Ewing's sarcoma cell lines to osteosarcoma cell lines was not statistically significant (U = 12, p=0.390).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a sample size determined a priori to detect the effect based on the originally reported data, the comparison of the effective concentrations of Ewing's sarcoma cell lines to osteosarcoma cell lines was not statistically significant (U = 12, p=0.390)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results are provided directly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4109a4a8-83ab-47be-9dee-931038bd40e0",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C18",
+      "claim": "The null hypothesis that the effective concentration of olaparib is similar for Ewing's sarcoma and osteosarcoma cell lines cannot be rejected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the null hypothesis that the effective concentration of olaparib is similar for Ewing's sarcoma and osteosarcoma cell lines can not be rejected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the non-significant statistical test result.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "188a64c3-ce5c-4052-883a-9f51e8a8ddbb",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C19",
+      "claim": "Not all Ewing's sarcoma cell lines tested were acutely sensitive to PARP inhibitors in cellular viability assays, but rather a majority displayed increased sensitivity with some cell lines relatively insensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "These results should take into consideration that other methods to assess olaparib sensitivity, such as cellular viability assays, did not result in all Ewing's sarcoma cell lines tested being acutely sensitive to PARP inhibitors, but rather a majority displaying increased sensitivity with some cell lines relatively insensitive (Garnett et al., 2012; Gill et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4bfe8649-951d-4add-ae76-28b50e17ab4e",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C20",
+      "claim": "Only five of the cell lines tested were the same between the original study and this replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only five of the cell lines tested were the same between the two studies, largely due to the inability to obtain any of the Ewing' sarcoma cell lines used in the original study",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "1e677418-a9ed-4c5f-88b9-df12cd2b638b",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C21",
+      "claim": "The inability to obtain any of the Ewing's sarcoma cell lines used in the original study was the reason for using different cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only five of the cell lines tested were the same between the two studies, largely due to the inability to obtain any of the Ewing' sarcoma cell lines used in the original study",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about experimental constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4557a88f-8b69-4afe-8e86-8c797c2d66ea",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C22",
+      "claim": "SK-N-MC cells displayed sensitivity to olaparib with a mean IC50 of 2.67 \u00b5M, 95% CI [3.11\u20132.23].",
+      "claim_type": "EXPLICIT",
+      "source": "While the SK-N-MC cells displayed sensitivity to olaparib with a mean IC50 of 2.67 \u00b5M, 95% CI [3.11\u20132.23], the EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal cells were both relatively resistant with more than 50% of cells remaining viable at the highest dose tested (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "6255cb9b-81f4-4f72-a47d-3a58d61a1422",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C23",
+      "claim": "EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal cells were both relatively resistant to olaparib with more than 50% of cells remaining viable at the highest dose tested.",
+      "claim_type": "EXPLICIT",
+      "source": "While the SK-N-MC cells displayed sensitivity to olaparib with a mean IC50 of 2.67 \u00b5M, 95% CI [3.11\u20132.23], the EWS-FLI1 and FUS-CHOP transformed mouse mesenchymal cells were both relatively resistant with more than 50% of cells remaining viable at the highest dose tested (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "7390e7a3-3405-49b6-b662-1f61999938bb",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C24",
+      "claim": "The original study reported EWS-FLI1 transformed mouse mesenchymal cells displaying olaparib sensitivity similar to SK-N-MC cells with an estimated IC50 of 1.1 \u00b5M for EWS-FLI1 and 1.5 \u00b5M for SK-N-MC.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported EWS-FLI1 transformed mouse mesenchymal cells displaying olaparib sensitivity similar to SK-N-MC cells (estimated IC50 of 1.1 \u00b5M for EWS-FLI1 and 1.5 \u00b5M for SK-N-MC) with FUS-CHOP transformed cells remaining relatively resistant (estimated IC50 of 7.8 \u00b5M) (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to data from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "c5d620e1-731e-4f6a-94e7-633d2fb6781b",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C25",
+      "claim": "The original study reported FUS-CHOP transformed cells remaining relatively resistant with an estimated IC50 of 7.8 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported EWS-FLI1 transformed mouse mesenchymal cells displaying olaparib sensitivity similar to SK-N-MC cells (estimated IC50 of 1.1 \u00b5M for EWS-FLI1 and 1.5 \u00b5M for SK-N-MC) with FUS-CHOP transformed cells remaining relatively resistant (estimated IC50 of 7.8 \u00b5M) (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to data from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "001a87da-ca31-40ba-bdd7-3737dd202ea8",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C26",
+      "claim": "IC50 values could not be determined for either of the transformed mouse mesenchymal cells in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis plan specified in the Registered Report (Vanden Heuvel et al., 2016) proposed to compare the IC50 values from EWS-FLI1 transformed cells, or SK-N-MC cells, to FUS-CHOP transformed cells, however as stated above this could not be performed because of the inability to determine IC50 values for either of the transformed mouse mesenchymal cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "0b105e47-dce7-40c7-a86c-4c86285e620c",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C27",
+      "claim": "A673 cells transfected with EWS-FLI1 siRNA resulted in an average reduction of 65% in EWS-FLI1 expression relative to control siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A673 cells transfected with EWS-FLI1 siRNA resulted in an average reduction of 65% in EWS-FLI1 expression relative to control siRNA whether cells were treated with vehicle control or olaparib (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "f44f50c3-03f0-4e42-9f02-f46b183ba892",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C28",
+      "claim": "Cellular viability was decreased by olaparib treatment in a dose dependent manner with EWS-FLI1 and control depleted A673 cells displaying similar sensitivities.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular viability was decreased by olaparib treatment in a dose dependent manner with EWS-FLI1 and control depleted cells displaying similar sensitivities (Figure 3A, Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "24fa28ed-f60b-4a97-a8d0-50ccca991dfa",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C29",
+      "claim": "The original study reported olaparib sensitivity was partially reverted when EWS-FLI1 was depleted from A673 cells with an estimated IC50 of 1.4 \u00b5M for control siRNA and 2.7 \u00b5M for EWS-FLI1 siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that reported olaparib sensitivity was partially reverted when EWS-FLI1 was depleted from A673 cells (estimated IC50 of 1.4 \u00b5M for control siRNA and 2.7 \u00b5M for EWS-FLI1 siRNA) (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to data from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "8a22b251-b00e-4957-bebe-fe4d1824930e",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C30",
+      "claim": "The original study reported an achieved knockdown of ~94% in EWS-FLI1 expression whether cells were treated with olaparib or vehicle control.",
+      "claim_type": "EXPLICIT",
+      "source": "The original study also reported an achieved knockdown of ~94% in EWS-FLI1 expression whether cells were treated with olaparib or vehicle control (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to data from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "cb76fbee-e840-45f4-a22f-680b7d9736fd",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C31",
+      "claim": "The difference in achieved knockdown between the original study and this replication attempt is a possible reason for the differences in olaparib sensitivity outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in achieved knockdown between the original study and this replication attempt is a possible reason for the differences in olaparib sensitivity outcomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential factors affecting the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "37aacbb5-0dee-4c98-b93a-b0dd7fa06fcd",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C32",
+      "claim": "The level of knockdown required to yield a given phenotype varies because it is system-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of knockdown required to yield a given phenotype varies because it is system-dependent (e.g. cell type, assay, function of gene-of-interest), thus, a higher level of knockdown might be required to observe an effect with this experimental design",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "15371729-ccba-4fce-8534-aa73b15827b9",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C33",
+      "claim": "A higher level of knockdown might be required to observe an effect with this experimental design.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of knockdown required to yield a given phenotype varies because it is system-dependent (e.g. cell type, assay, function of gene-of-interest), thus, a higher level of knockdown might be required to observe an effect with this experimental design",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed results and general knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4a375515-5ee9-4670-87fb-fcf265b57ea9",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C34",
+      "claim": "Observing different outcomes are informative to establish the range of conditions under which a given phenotype can be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, though, observing different outcomes are informative to establish the range of conditions under which a given phenotype can be observed (Bailoo et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "d6ffb422-1059-452a-b312-8d2791edb43f",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C35",
+      "claim": "In the original study, olaparib treatment in the control siRNA cells resulted in a relative viability of zero at the highest concentrations of olaparib tested.",
+      "claim_type": "EXPLICIT",
+      "source": "It's also worth noting that in the original study, olaparib treatment in the control siRNA cells resulted in a relative viability of zero at the highest concentrations of olaparib tested, while in this replication attempt relative viability remained at around 40% (Figure 3A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to data from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "96ce1dd2-7117-4b6a-bf0a-d0f99ed58eb5",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C36",
+      "claim": "In this replication attempt, olaparib treatment in the control siRNA cells resulted in relative viability remaining at around 40% at the highest concentrations tested.",
+      "claim_type": "EXPLICIT",
+      "source": "It's also worth noting that in the original study, olaparib treatment in the control siRNA cells resulted in a relative viability of zero at the highest concentrations of olaparib tested, while in this replication attempt relative viability remained at around 40% (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "dfb65632-288c-403e-8feb-771dbce5d68d",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C37",
+      "claim": "Differences in how the lower bound of detection (maximal response) was determined could explain the difference in relative viability at high olaparib concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to how the lower bound of detection (maximal response) was determined (Sebaugh, 2011) as well as differences in cellular growth conditions that could impact olaparib sensitivity (Stordal et al., 2013; Strese et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "09f5491a-1064-48ce-bfb1-a9d81613683c",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C38",
+      "claim": "Differences in cellular growth conditions could impact olaparib sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to how the lower bound of detection (maximal response) was determined (Sebaugh, 2011) as well as differences in cellular growth conditions that could impact olaparib sensitivity (Stordal et al., 2013; Strese et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "f12926bc-598c-462e-bcad-c1bee8483881",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C39",
+      "claim": "Absolute IC50 values could not be determined for either condition in the A673 knockdown experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis plan specified in the Registered Report (Vanden Heuvel et al., 2016) proposed to compare the IC50 values from control siRNA transfected cells to EWS-FLI1 siRNA transfected cells, however this could not be performed because of the inability to determine absolute IC50 values for either condition following published guidelines (Sebaugh, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "8a25603a-be71-43a1-8d93-219ffa499ba1",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C40",
+      "claim": "The comparison of the effective concentration of olaparib for Ewing's sarcoma cells to osteosarcoma cells resulted in a Cliff's d = 0.34, 95% CI [\u22120.24, 0.74] for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of the effective concentration of olaparib for Ewing's sarcoma cells to osteosarcoma cells resulted in a Cliff's d = 0.34, 95% CI [\u22120.24, 0.74] for this study",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "bd9fcaf0-b2b2-4e2b-9cba-5e2fbd88959f",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C41",
+      "claim": "The comparison of the effective concentration of olaparib for Ewing's sarcoma cells to osteosarcoma cells resulted in a Cliff's d = 0.93, 95% CI [0.62, 0.99] for the data estimated a priori from Figure 4C of the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Cliff's d = 0.93, 95% CI [0.62, 0.99] for the data estimated a priori from Figure 4C of the original study (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result calculated from the original study data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "27ef9dbb-9350-40c2-8960-fb04ea1e19e6",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C42",
+      "claim": "A meta-analysis of the original and replication effects resulted in Cliff's d = 0.63, 95% CI [\u22120.10, 0.92], which was statistically significant (p=0.029).",
+      "claim_type": "EXPLICIT",
+      "source": "A meta-analysis (Figure 4) of these two effects resulted in Cliff's d = 0.63, 95% CI [\u22120.10, 0.92], which was statistically significant (p=0.029)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the meta-analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4e6173c8-2cd6-4bc0-be89-c024a9eb9ad6",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C43",
+      "claim": "The point estimate of the replication effect size was not within the confidence interval of the original result, or vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Both results are consistent when considering the direction of the effect, however the point estimate of the replication effect size was not within the confidence interval of the original result, or vice versa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the confidence intervals of the two studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "fe52612a-2bd5-42c3-83be-0b7349fd1b5d",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C44",
+      "claim": "In 2012, Garnett et al. reported the results of a large-scale high throughput screen to identify novel interactions between investigational drugs and cancer-derived human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2012, Garnett et al. reported the results of a large-scale high throughput screen to identify novel interactions between investigational drugs and cancer-derived human cell lines, along with a similar study published at the same time by Barretina and colleagues (Barretina et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "f79495ef-d20d-43f8-8136-65da0c15b547",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C45",
+      "claim": "An enhanced sensitivity between the EWS-FLI1 translocation of Ewing's sarcoma family tumors and poly(ADP-ribose) polymerase (PARP) inhibitors was identified in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to capturing expected gene-drug interactions, several unpredicted associations were identified, including an enhanced sensitivity between the EWS-FLI1 translocation of Ewing's sarcoma family tumors and poly(ADP-ribose) polymerase (PARP) inhibitors (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to findings from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "f30040c7-1458-498d-94f3-13fcde503b03",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C46",
+      "claim": "Selective inhibition of cell survival and proliferation in Ewing's sarcoma cell lines was observed with the PARP inhibitor, olaparib, comparable to the observed inhibition in BRCA-deficient cells in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective inhibition of cell survival and proliferation in Ewing's sarcoma cell lines was observed with the PARP inhibitor, olaparib, comparable to the observed inhibition in BRCA-deficient cells (Garnett et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to findings from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "6393f44e-7c1a-4adc-967d-6ba2236ed5fa",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C47",
+      "claim": "The EWS-FLI1 translocation was reported to be sufficient for increased sensitivity of cells to olaparib in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the EWS-FLI1 translocation was reported to be sufficient for increased sensitivity of cells to olaparib, while transient depletion of EWS-FLI1 from Ewing's sarcoma cells resulted in partial rescue of olaparib sensitivity, suggesting the sensitivity of Ewing's sarcoma cells to olaparib might be related to EWS-FLI1 transcriptional activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to findings from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "784e0784-fb67-4b2b-9411-406c274ca46a",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C48",
+      "claim": "Transient depletion of EWS-FLI1 from Ewing's sarcoma cells resulted in partial rescue of olaparib sensitivity in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the EWS-FLI1 translocation was reported to be sufficient for increased sensitivity of cells to olaparib, while transient depletion of EWS-FLI1 from Ewing's sarcoma cells resulted in partial rescue of olaparib sensitivity, suggesting the sensitivity of Ewing's sarcoma cells to olaparib might be related to EWS-FLI1 transcriptional activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to findings from the original study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "08c2adbc-fa19-4a79-a94f-ae0b9f355309",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C49",
+      "claim": "The sensitivity of Ewing's sarcoma cells to olaparib might be related to EWS-FLI1 transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the EWS-FLI1 translocation was reported to be sufficient for increased sensitivity of cells to olaparib, while transient depletion of EWS-FLI1 from Ewing's sarcoma cells resulted in partial rescue of olaparib sensitivity, suggesting the sensitivity of Ewing's sarcoma cells to olaparib might be related to EWS-FLI1 transcriptional activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference from the original study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "8b7f34a1-b14f-427f-86ac-9b5742f6437d",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C50",
+      "claim": "Additional studies have reported hypersensitivity of Ewing's sarcoma cell lines to PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies have reported hypersensitivity of Ewing's sarcoma cell lines to PARP inhibitors (Brenner et al., 2012; Engert et al., 2015; Gill et al., 2015; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015a; Stewart et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "86f8f9ef-bf41-452c-a0c5-5495c44c13df",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C51",
+      "claim": "Studies extending the use of olaparib, or other PARP inhibitors, as monotherapies in xenograft models have reported limited effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, studies extending the use of olaparib, or other PARP inhibitors, as monotherapies in xenograft models have reported limited effectiveness (Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015a; 2015b; Stewart et al., 2014), consistent with no objective responses from a phase II study of olaparib (Choy et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "0b56f470-9b5c-4e3c-b8ee-f65ca69e6f0a",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C52",
+      "claim": "A phase II study of olaparib showed no objective responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, studies extending the use of olaparib, or other PARP inhibitors, as monotherapies in xenograft models have reported limited effectiveness (Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015a; 2015b; Stewart et al., 2014), consistent with no objective responses from a phase II study of olaparib (Choy et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a clinical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "f585a313-aed8-4fc2-89fb-2f5fbd2fd713",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C53",
+      "claim": "A new methodology for biomarker discovery, that accounts for variability in general levels of drug sensitivity, failed to find a statistically significant association of PARP inhibitors and the EWS-FLI1 translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these observations, a new methodology for biomarker discovery, that accounts for variability in general levels of drug sensitivity, failed to find a statistically significant association of PARP inhibitors and the EWS-FLI1 translocation (Geeleher et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "45ebe2fa-d9a4-47a8-b9df-0a3275d554d6",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C54",
+      "claim": "Studies testing combinatorial treatments of PARP inhibitors with other drugs, such as the DNA alkylating agent temozolomide, have reported enhanced sensitivity of Ewing sarcomas.",
+      "claim_type": "EXPLICIT",
+      "source": "However, studies testing combinatorial treatments of PARP inhibitors with other drugs, such as the DNA alkylating agent temozolomide, have reported enhanced sensitivity of Ewing sarcomas (Brenner et al., 2012; Engert et al., 2015; Gill et al., 2015; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015b; Stewart et al., 2014), with several clinical trials beginning (Pishas and Lessnick, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "8434ffc9-f651-449c-a04c-0a4af1a7b012",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C55",
+      "claim": "Several clinical trials testing combinatorial treatments of PARP inhibitors with temozolomide are beginning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, studies testing combinatorial treatments of PARP inhibitors with other drugs, such as the DNA alkylating agent temozolomide, have reported enhanced sensitivity of Ewing sarcomas (Brenner et al., 2012; Engert et al., 2015; Gill et al., 2015; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015; Smith et al., 2015b; Stewart et al., 2014), with several clinical trials beginning (Pishas and Lessnick, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "78b6e4af-f2b2-4ba5-98d8-c82d54ea6872",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C56",
+      "claim": "Cells with SLFN11 inactivation are more resistant to PARP inhibitors, as single agents or in combination with temozolomide.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study reported that cells with SLFN11 inactivation are more resistant to PARP inhibitors, as single agents or in combination with temozolomide; however combination with an ATR inhibitor can overcome this resistance (Murai et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "8a7bc7ac-64ec-49e6-85fb-347790fc7136",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C57",
+      "claim": "Combination of PARP inhibitors with an ATR inhibitor can overcome resistance in cells with SLFN11 inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study reported that cells with SLFN11 inactivation are more resistant to PARP inhibitors, as single agents or in combination with temozolomide; however combination with an ATR inhibitor can overcome this resistance (Murai et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "0b4ffb68-6014-4443-9469-e6869f38cf24",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C58",
+      "claim": "Small sample sizes can confound the findings and prevent them from being extrapolated to the overall population.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the replication study was powered to detect the original effect size estimate with at least 80% power, both the original study and this replication used relatively small sample sizes, which can confound the findings and prevent them from being extrapolated to the overall population (Button et al., 2013; Faber and Fonseca, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature on statistical power.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "03a15a1c-3f8e-43b6-9935-c3ddf6da3ac6",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C59",
+      "claim": "During the course of the cell viability assay, the cells continued to proliferate in no drug conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of the assay, the cells continued to proliferate in no drug conditions (Figure 2\u2014figure supplement 1), a necessary condition since olaparib sensitivity relies on cellular proliferation (Dale Rein et al., 2015; Weston et al., 2010)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "98f2c474-020c-48fe-ad5a-6903a80638a6",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C60",
+      "claim": "Olaparib sensitivity relies on cellular proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of the assay, the cells continued to proliferate in no drug conditions (Figure 2\u2014figure supplement 1), a necessary condition since olaparib sensitivity relies on cellular proliferation (Dale Rein et al., 2015; Weston et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "32118c13-e4bc-428a-9419-a5fa45932eec",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C61",
+      "claim": "A673 cells were originally classified as neuroblastoma cell lines, but have since been determined to be Ewing's sarcoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A673 (Giard et al., 1973) and SK-N-MC cells (Biedler et al., 1973) were originally classified as neuroblastoma cell lines, but have since been determined to be Ewing's sarcoma cells (Mart\u00ednez-Ram\u00edrez et al., 2003; Whang-Peng et al., 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "cf4c0b09-e493-40d0-9a5e-5fed2c25b063",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C62",
+      "claim": "SK-N-MC cells were originally classified as neuroblastoma cell lines, but have since been determined to be Ewing's sarcoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A673 (Giard et al., 1973) and SK-N-MC cells (Biedler et al., 1973) were originally classified as neuroblastoma cell lines, but have since been determined to be Ewing's sarcoma cells (Mart\u00ednez-Ram\u00edrez et al., 2003; Whang-Peng et al., 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "c525549c-3d4a-4c78-b32a-df3e06f47293",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C63",
+      "claim": "All cell lines tested were confirmed to be free of mycoplasma contamination and common mouse pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes results confirming the cell lines were free of mycoplasma contamination and common mouse pathogens (IDEXX BioResearch, Columbia, Missouri)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about quality control testing performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "23484ef4-b6d7-4f7b-8348-3a33059abf8c",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C64",
+      "claim": "STR DNA profiling confirmed all cells were the indicated cell lines when queried against STR profile databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, STR DNA profiling of the cell lines was performed and all cells were confirmed to be the indicated cell lines when queried against STR profile databases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about quality control testing performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "89a5a9e3-340b-46d0-b67f-5497f407ff23",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C65",
+      "claim": "Cell line genetic drift is a factor that might influence experimental outcomes.",
+      "claim_type": "IMPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), sex of cell lines (Clayton and Collins, 2014), impacts of atmospheric oxygen on cell viability and growth (Boregowda et al., 2012), and differing compound potency resulting from different stock solutions (Kannt and Wieland, 2016) or from variation in cell division rates (Hafner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned as a potential uncontrolled variable with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "05268552-6302-46c8-8f79-82cfb452e7ef",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C66",
+      "claim": "Sex of cell lines is a factor that might influence experimental outcomes.",
+      "claim_type": "IMPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), sex of cell lines (Clayton and Collins, 2014), impacts of atmospheric oxygen on cell viability and growth (Boregowda et al., 2012), and differing compound potency resulting from different stock solutions (Kannt and Wieland, 2016) or from variation in cell division rates (Hafner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned as a potential uncontrolled variable with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "d19ee109-4878-4d72-85b1-aa29d9fcf3db",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C67",
+      "claim": "Atmospheric oxygen impacts cell viability and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), sex of cell lines (Clayton and Collins, 2014), impacts of atmospheric oxygen on cell viability and growth (Boregowda et al., 2012), and differing compound potency resulting from different stock solutions (Kannt and Wieland, 2016) or from variation in cell division rates (Hafner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned as a potential uncontrolled variable with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "63635044-9b2a-40a5-bec3-261a71f6b1ff",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C68",
+      "claim": "Differing compound potency can result from different stock solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), sex of cell lines (Clayton and Collins, 2014), impacts of atmospheric oxygen on cell viability and growth (Boregowda et al., 2012), and differing compound potency resulting from different stock solutions (Kannt and Wieland, 2016) or from variation in cell division rates (Hafner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned as a potential uncontrolled variable with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4a6b6366-a9ba-473a-b02f-928d45aed2da",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "claim_id": "C69",
+      "claim": "Differing compound potency can result from variation in cell division rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016), sex of cell lines (Clayton and Collins, 2014), impacts of atmospheric oxygen on cell viability and growth (Boregowda et al., 2012), and differing compound potency resulting from different stock solutions (Kannt and Wieland, 2016) or from variation in cell division rates (Hafner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is mentioned as a potential uncontrolled variable with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "412b6894-6d79-4733-a2ed-2266f2a1a576",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ewing's sarcoma cell lines showed a trend toward greater olaparib sensitivity than osteosarcoma cell lines (median EC: 1 \u00b5M vs 3.2 \u00b5M), consistent in direction with the original study, but the difference was not statistically significant (U=12, p=0.390). Meta-analysis combining original and replication data yielded a statistically significant overall effect (Cliff's d=0.63, p=0.029), though confidence intervals of individual studies did not overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The replication found directional consistency with the original study but failed to achieve statistical significance (C2, C17, C18). The meta-analysis shows statistical significance (C42), but non-overlapping confidence intervals between studies (C43) suggest heterogeneity. The small sample sizes acknowledged by the authors (C20, C58) and use of different cell lines (C21) limit confidence in the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In transformed mouse mesenchymal cells, both EWS-FLI1 and FUS-CHOP rearrangements resulted in olaparib resistance (>50% viability at highest dose), while SK-N-MC cells showed sensitivity (IC50=2.67 \u00b5M). This contradicts the original study where EWS-FLI1 transformed cells showed sensitivity similar to SK-N-MC (IC50~1.1-1.5 \u00b5M) and distinct from FUS-CHOP cells (IC50=7.8 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The replication directly contradicts the original findings (C3, C4 vs C5, C6). The inability to determine IC50 values for transformed cells (C26) prevents quantitative comparison. The result suggests EWS-FLI1 transformation may not be sufficient for olaparib sensitivity, contradicting a key mechanistic claim of the original study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EWS-FLI1 knockdown in A673 cells (65% reduction) did not alter olaparib sensitivity compared to control siRNA, contradicting the original study which reported partial rescue of sensitivity with 94% knockdown. The replication also showed higher residual viability at maximum olaparib doses (~40% vs 0%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The replication failed to reproduce the original finding (C7, C28 vs C8, C29). However, the substantially lower knockdown efficiency (65% vs 94%; C27, C30, C31) is a critical confounding factor that may explain the discrepancy (C32, C33). The inability to determine IC50 values (C39) and differences in maximal response (C36, C37, C38) further complicate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "50340c23-02b5-497a-bc40-d4e865cc5c23",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The replication study acknowledges important methodological limitations including small sample sizes in both studies, use of only 5 overlapping cell lines, inability to obtain original Ewing's sarcoma cell lines, and heterogeneity in olaparib sensitivity within Ewing's sarcoma cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological limitations are clearly documented (C20, C21, C58) and appropriately acknowledged as factors affecting reproducibility. The recognition that not all Ewing's sarcoma lines show uniform sensitivity (C19) provides important context for interpreting the primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The introduction contextualizes the original study's findings within subsequent literature, noting that while multiple studies confirmed Ewing's sarcoma sensitivity to PARP inhibitors in vitro, xenograft studies and clinical trials showed limited effectiveness as monotherapy, though combination therapies show promise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This comprehensive literature review (C44-C57) is well-supported by multiple citations and provides essential context. The acknowledgment of conflicting evidence from different experimental systems (in vitro vs in vivo vs clinical) and the emergence of combination therapy approaches demonstrates appropriate scientific contextualization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "e337c074-5ff1-457a-b806-c9c57c79aead",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell proliferation was confirmed during the viability assay in no-drug conditions, which is necessary since olaparib sensitivity depends on cellular proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This experimental control is appropriately documented (C59) and justified by cited literature (C60). Confirming proliferation is essential for interpreting olaparib sensitivity results, as the mechanism requires active DNA replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "4ee31af6-d9a6-457b-936f-024dadac78e1",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Quality control measures confirmed cell line identity (STR profiling), absence of contamination (mycoplasma and mouse pathogens), and documented the reclassification of A673 and SK-N-MC from neuroblastoma to Ewing's sarcoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Rigorous quality control is documented (C63, C64) and the historical reclassification of cell lines is appropriately cited (C61, C62). These measures are essential for ensuring experimental validity and reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "e2ca99a3-d323-4b0c-a296-033c07002171",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple uncontrolled variables are identified as potential factors affecting reproducibility, including cell line differences, knockdown efficiency, genetic drift, cell line sex, atmospheric oxygen, compound stock solutions, and cell division rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge numerous potential confounding variables (C9, C10, C65-C69) with supporting citations. This transparent discussion of limitations and uncontrolled factors is scientifically appropriate, though it also highlights the difficulty in definitively interpreting the replication results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    },
+    {
+      "id": "b47e25aa-2d00-4076-80fd-bedacf4df0da",
+      "content_id": "3e28d633-baaf-46ce-8e4b-b9ba54159633",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors note that observing different outcomes is informative for establishing the range of conditions under which a phenotype can be observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This perspective on the value of replication studies (C34) is appropriately cited and represents a constructive interpretation of negative or divergent results in the context of reproducibility research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:49:57.881786Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6ffd0432-442b-43d3-a784-85a1096c064a",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "c6847d7f-7831-4fad-9d07-b1474296fdea",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "f4680101-8f5b-42db-b114-02e5193d325e",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "113016f1-2eb6-4ddb-898f-06468f059686",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "a8613dde-0dda-4cb2-8419-698a755863a7",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "fc9306df-e71a-4cc0-8caf-500ef064336a",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "a27e69ec-91ac-4827-bb22-f76f27f8dee7",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "ec99ce3c-00c2-4683-b568-f167b59b6256",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "3402b676-263e-458b-9a49-df39e87ac5be",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "4109a4a8-83ab-47be-9dee-931038bd40e0",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "8a25603a-be71-43a1-8d93-219ffa499ba1",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "bd9fcaf0-b2b2-4e2b-9cba-5e2fbd88959f",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "27ef9dbb-9350-40c2-8960-fb04ea1e19e6",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "4e6173c8-2cd6-4bc0-be89-c024a9eb9ad6",
+      "result_id": "412b6894-6d79-4733-a2ed-2266f2a1a576"
+    },
+    {
+      "claim_id": "22941246-17cf-4bb1-ac90-ec6141aba71a",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "cdd79647-d896-4815-93f8-8de6ff7ba592",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "3c88a639-95ed-40bd-9449-c1828d93b8a8",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "edf75c05-b393-42d0-96aa-c67b998da145",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "4557a88f-8b69-4afe-8e86-8c797c2d66ea",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "6255cb9b-81f4-4f72-a47d-3a58d61a1422",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "7390e7a3-3405-49b6-b662-1f61999938bb",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "c5d620e1-731e-4f6a-94e7-633d2fb6781b",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "001a87da-ca31-40ba-bdd7-3737dd202ea8",
+      "result_id": "4292c48f-1a66-4da6-9b20-02b3dc2c2d02"
+    },
+    {
+      "claim_id": "1a197cc7-17dd-42c4-8b36-6d24b7a65d47",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "f0e23841-5c04-4a21-a318-9cfd2bed6a00",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "0b105e47-dce7-40c7-a86c-4c86285e620c",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "f44f50c3-03f0-4e42-9f02-f46b183ba892",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "24fa28ed-f60b-4a97-a8d0-50ccca991dfa",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "8a22b251-b00e-4957-bebe-fe4d1824930e",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "cb76fbee-e840-45f4-a22f-680b7d9736fd",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "37aacbb5-0dee-4c98-b93a-b0dd7fa06fcd",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "15371729-ccba-4fce-8534-aa73b15827b9",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "96ce1dd2-7117-4b6a-bf0a-d0f99ed58eb5",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "dfb65632-288c-403e-8feb-771dbce5d68d",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "09f5491a-1064-48ce-bfb1-a9d81613683c",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "f12926bc-598c-462e-bcad-c1bee8483881",
+      "result_id": "4f1ef4d8-b213-48b1-8a19-ff6e998ebcba"
+    },
+    {
+      "claim_id": "188a64c3-ce5c-4052-883a-9f51e8a8ddbb",
+      "result_id": "50340c23-02b5-497a-bc40-d4e865cc5c23"
+    },
+    {
+      "claim_id": "4bfe8649-951d-4add-ae76-28b50e17ab4e",
+      "result_id": "50340c23-02b5-497a-bc40-d4e865cc5c23"
+    },
+    {
+      "claim_id": "1e677418-a9ed-4c5f-88b9-df12cd2b638b",
+      "result_id": "50340c23-02b5-497a-bc40-d4e865cc5c23"
+    },
+    {
+      "claim_id": "0b4ffb68-6014-4443-9469-e6869f38cf24",
+      "result_id": "50340c23-02b5-497a-bc40-d4e865cc5c23"
+    },
+    {
+      "claim_id": "fe52612a-2bd5-42c3-83be-0b7349fd1b5d",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "f79495ef-d20d-43f8-8136-65da0c15b547",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "f30040c7-1458-498d-94f3-13fcde503b03",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "6393f44e-7c1a-4adc-967d-6ba2236ed5fa",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "784e0784-fb67-4b2b-9411-406c274ca46a",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "08c2adbc-fa19-4a79-a94f-ae0b9f355309",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "8b7f34a1-b14f-427f-86ac-9b5742f6437d",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "86f8f9ef-bf41-452c-a0c5-5495c44c13df",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "0b56f470-9b5c-4e3c-b8ee-f65ca69e6f0a",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "f585a313-aed8-4fc2-89fb-2f5fbd2fd713",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "45ebe2fa-d9a4-47a8-b9df-0a3275d554d6",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "8434ffc9-f651-449c-a04c-0a4af1a7b012",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "78b6e4af-f2b2-4ba5-98d8-c82d54ea6872",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "8a7bc7ac-64ec-49e6-85fb-347790fc7136",
+      "result_id": "4c4b27f8-fa82-4747-8d5a-6939f4bc25db"
+    },
+    {
+      "claim_id": "03a15a1c-3f8e-43b6-9935-c3ddf6da3ac6",
+      "result_id": "e337c074-5ff1-457a-b806-c9c57c79aead"
+    },
+    {
+      "claim_id": "98f2c474-020c-48fe-ad5a-6903a80638a6",
+      "result_id": "e337c074-5ff1-457a-b806-c9c57c79aead"
+    },
+    {
+      "claim_id": "32118c13-e4bc-428a-9419-a5fa45932eec",
+      "result_id": "4ee31af6-d9a6-457b-936f-024dadac78e1"
+    },
+    {
+      "claim_id": "cf4c0b09-e493-40d0-9a5e-5fed2c25b063",
+      "result_id": "4ee31af6-d9a6-457b-936f-024dadac78e1"
+    },
+    {
+      "claim_id": "c525549c-3d4a-4c78-b32a-df3e06f47293",
+      "result_id": "4ee31af6-d9a6-457b-936f-024dadac78e1"
+    },
+    {
+      "claim_id": "23484ef4-b6d7-4f7b-8348-3a33059abf8c",
+      "result_id": "4ee31af6-d9a6-457b-936f-024dadac78e1"
+    },
+    {
+      "claim_id": "804de263-5d5f-41a0-bd81-1e0b3338c6a7",
+      "result_id": "e2ca99a3-d323-4b0c-a296-033c07002171"
+    },
+    {
+      "claim_id": "b2964e54-d50b-4d3c-a7aa-f19644344aab",
+      "result_id": "e2ca99a3-d323-4b0c-a296-033c07002171"
+    },
+    {
+      "claim_id": "89a5a9e3-340b-46d0-b67f-5497f407ff23",
+      "result_id": "e2ca99a3-d323-4b0c-a296-033c07002171"
+    },
+    {
+      "claim_id": "05268552-6302-46c8-8f79-82cfb452e7ef",
+      "result_id": "e2ca99a3-d323-4b0c-a296-033c07002171"
+    },
+    {
+      "claim_id": "d19ee109-4878-4d72-85b1-aa29d9fcf3db",
+      "result_id": "e2ca99a3-d323-4b0c-a296-033c07002171"
+    },
+    {
+      "claim_id": "63635044-9b2a-40a5-bec3-261a71f6b1ff",
+      "result_id": "e2ca99a3-d323-4b0c-a296-033c07002171"
+    },
+    {
+      "claim_id": "4a6b6366-a9ba-473a-b02f-928d45aed2da",
+      "result_id": "e2ca99a3-d323-4b0c-a296-033c07002171"
+    },
+    {
+      "claim_id": "4a375515-5ee9-4670-87fb-fcf265b57ea9",
+      "result_id": "b47e25aa-2d00-4076-80fd-bedacf4df0da"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Proteome-wide analysis of ~100 linear multivalent proteins from the human proteome identified 226 unique disordered linkers spanning a range of effective solvation volumes (ves). All-atom simulations showed that sequences deficient in charged residues (<0.3 fraction) have negative ves, sequences with 0.3-0.5 charged residues mimic FRC linkers (ves \u2248 0), and sequences enriched in charges (>0.5 fraction) have positive ves. The distribution reveals that 30% of linkers have negative ves, 38% have near-zero ves, and 30% have positive ves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteome analysis (C19-C20) combined with all-atom simulations (C21-C26) provides a systematic characterization of linker properties. The relationship between charge content and ves is clearly demonstrated through inter-residue distance profiles (Figure 3a-b), and the distribution analysis (C27-C30, Figure 3d) is directly derived from simulation data. The methods are appropriate and the conclusions follow logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The identified linear multivalent proteins from the human proteome were significantly enriched for RNA/DNA binding and RNA localization functions (p<0.005) based on PANTHER-GO enrichment analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This functional enrichment analysis (C31) is supported by appropriate statistical testing (p<0.005) using established GO enrichment methods. The result provides biological context for the identified protein set and is consistent with known roles of multivalent proteins in biomolecular condensates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A coarse-grained lattice model was developed where SH3 domains and PRMs each occupy single lattice sites, with linker length calibrated such that ~7 residues correspond to one lattice unit (for ves \u2265 0). The model uses an intrinsic binding energy of -2kBT between SH3 domains and PRMs, which reproduces experimentally measured dissociation constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model design (C33-C35) is well-justified by prior all-atom simulations establishing the length scale calibration. The binding energy parameter (C36-C37) is validated against experimental measurements from Li et al. 2012, providing appropriate grounding for the coarse-grained approach. The model design is clearly described and appropriately simplified for studying phase behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "For FRC linkers in multivalent proteins with valence 5 or 7, there exists an optimal linker length range (3 \u2264 n < 12 lattice sites, or 21-84 residues) where c* < 1, indicating positive global cooperativity that promotes gelation driven by phase separation. Within this optimal range, cooperativity increases with valence. For long linkers, c* converges to 1, indicating independent domain interactions consistent with Flory-Stockmayer theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (Figure 8a) clearly demonstrate the non-monotonic relationship between linker length and cooperativity parameter c* for FRC linkers (C38-C41). The convergence to Flory-Stockmayer behavior at long lengths provides internal validation. The optimal range identification is data-driven and the valence dependence is systematically shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "For SARC linkers with positive effective solvation volumes, c* > 1 for all linker lengths tested, indicating negative global cooperativity. These linkers suppress phase separation and shift the gel point to higher concentrations compared to Flory-Stockmayer predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation data (Figure 8b) consistently shows c* > 1 across all linker lengths for SARC linkers (C42-C43). This contrasts sharply with FRC linker behavior and demonstrates the suppressive effect of positive ves on phase separation. The comparison to Flory-Stockmayer theory provides appropriate theoretical context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Integration of proteome analysis with simulation results predicts that ~30% of linkers (\u226450 residues, \u0394 < 0.1) are candidates for enabling gelation driven by phase separation, ~18% (\u226450 residues, \u0394 > 0.1) likely weaken phase separation, and ~50% (>50 residues) are unlikely to be major modulators due to approaching the Flory-Stockmayer limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative analysis (C44-C48) combines the proteome-wide linker characterization with the simulation-derived understanding of how linker length and ves affect phase behavior. The predictions are logical extensions of the established relationships, though they remain predictions requiring experimental validation. The percentages are directly calculated from the data in Supplementary file 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "Phase diagram analysis of the 5:5 system with hybrid five-site linkers reveals a critical point at ~3kBT interaction affinity and ~10\u207b\u00b3 polymers/voxel concentration. Below this critical point, the system undergoes sol-gel transition; above it, gelation is driven by phase separation. The width of the two-phase regime increases with interaction affinity, enabling phase separation at lower domain concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phase diagram (Figure 9) clearly delineates the different regimes and identifies the critical point (C49-C50). The relationship between affinity and two-phase regime width (C52-C53) is directly observable in the figure. The analysis appropriately uses both density (\u03c1) and connectivity (\u03c6c) parameters to distinguish phase separation from gelation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Systematic variation of linker effective solvation volumes shows that the critical point shifts to higher interaction affinities as ves increases. For a given affinity, the two-phase regime width increases as ves decreases. At high ves values, the two-phase regime is only discernible at very high affinities, with phase transitions occurring mainly via gelation without phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The series of phase diagrams (Figure 10) systematically demonstrates how ves modulates phase behavior (C54-C56). The progression from FRC-like to SARC-like linkers shows clear trends in critical point location and two-phase regime width. The conclusion that high ves suppresses phase separation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The numerical simulation results are consistent with theoretical predictions of Semenov and Rubinstein regarding associative polymer phase behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to Semenov-Rubinstein theory (C57) is appropriate given that the simulations recapitulate key theoretical predictions about how linker properties affect the interplay between phase separation and gelation. The consistency provides validation for both the simulation approach and its interpretation, though the manuscript notes this is gratifying given the finite-size systems studied versus the infinite polymer mean-field theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "There exists an optimal range of linker lengths that supports gelation driven by phase separation for a given interaction affinity between domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C58) is directly supported by the c* analysis in Figure 8a showing the non-monotonic relationship between linker length and cooperativity. The optimal range is clearly identified where c* is minimized (c* < 1), corresponding to maximum positive cooperativity that favors phase separation-driven gelation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Linkers with negative ves values can engage in non-specific attractive interactions with domains and other linkers, leading to effective linker shortening and increased effective valence. These linkers are predicted to yield significantly denser droplets than linkers with zero or positive ves, consistent with experimental observations showing two orders of magnitude difference in intra-droplet concentrations between LAF-1 RGG domain (positive ves) and elastin-like polypeptides (negative ves).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical explanation of negative ves linker behavior (C59-C60) is logically sound based on polymer physics principles. The prediction of denser droplets (C61) is supported by comparison to experimental measurements (C62) from cited studies, though the authors did not perform these experiments themselves. The consistency between prediction and literature data strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Phase transitions of linear multivalent proteins control formation of membraneless bodies through two mechanisms: gelation with or without phase separation. Gelation driven by phase separation requires lower protein concentrations and appears to be the biologically preferred mechanism. The physical properties of intrinsically disordered linkers, particularly their effective solvation volumes, determine which mechanism predominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overarching framework (C1-C2) is well-established in the literature and supported by the study's findings. The concentration requirement difference (C3) is demonstrated through the c* analysis and phase diagrams. The claim about biological preference (C4) is presented as speculation but is reasonably supported by the lower concentration requirements. The central finding about linker control (C5) is comprehensively demonstrated through the combination of proteome analysis, simulations, and phase diagrams.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cell signaling regulation by phase transitions likely involves gelation driven by phase separation, as dense droplet formation increases local protein concentrations enabling cooperative signal amplification. Gelation within droplets contributes to droplet substructure, spatial organization, and material properties including rheological behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C63-C66) are presented as speculation and mechanistic interpretation rather than direct findings of this study. While the reasoning is logical and supported by citations to relevant literature, the manuscript does not provide direct experimental evidence for these biological roles. The claims represent reasonable hypotheses based on the simulation results but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study proposes that effective scaffolding proteins for gelation driven by phase separation have linkers with low ves (\u22480), while proteins with large positive ves likely act as clients. Linker ves can be biologically tuned through post-translational modifications (phosphorylation) or alternative splicing, with evidence that phosphorylation substrates and splice targets are enriched in disordered regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These proposals (C68-C69) are logical extensions of the simulation findings but are presented as speculation requiring experimental validation. The mechanisms for biological tuning (C70-C73) are supported by citations to prior work showing enrichment patterns, but the manuscript does not directly test these regulatory mechanisms. These represent testable hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The measured features of the squid lens are explained by patchy colloid theory, where polydispersity of disordered loops in S-crystallin determines physical crosslinking extent, giving rise to gels of different densities across the lens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C67) is supported by citation to Cai et al. 2017 and represents an application of the theoretical framework to a biological system. While not a direct result of this study, it provides a concrete example of how gelation without phase separation can be functionally relevant, supporting the broader conceptual framework.",
+    "result_type": "MINOR"
+  }
+]

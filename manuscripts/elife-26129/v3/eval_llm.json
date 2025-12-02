@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Analysis of TCGA and CCLE databases reveals that FXR2 undergoes concomitant homozygous deletion with TP53 in most tumors (1-15% frequency across cancer types), while FXR2 single deletion is rare. FXR1 and FMR1 copy numbers remain largely unaltered in TP53/FXR2 co-deletion tumors, though FXR1/FMR1 amplification occurs mutually exclusively with TP53/FXR2 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by database analysis from TCGA and CCLE with appropriate citations and visual evidence in figures. The genomic co-deletion pattern is consistently demonstrated across multiple cancer types and cell lines, establishing the foundation for the collateral lethality hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Cancer cells with homozygous TP53/FXR2 co-deletion exhibit absent or significantly lower p53 and FXR2 mRNA and protein levels, while FXR1 and FMR1 levels remain comparable between copy-number-normal and co-deleted cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by q-RT-PCR and Western blot data shown in Figure 1\u2014figure supplement 2. The experimental validation confirms the genomic deletion results at the expression level, though the manuscript notes p53 protein was assessed under doxorubicin-induced stress conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "FXR1 inhibition selectively blocks cell proliferation in cancer cell lines with TP53/FXR2 co-deletion but not in copy-number-normal cells, demonstrating collateral lethality. Ectopic expression of shRNA-resistant FXR1 or FXR2 rescues the anti-proliferative phenotype, confirming redundant functions, while FMR1 does not rescue the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C27-C32 are strongly supported by multiple cell proliferation assays (MTS, Matrigel, crystal violet staining) across multiple cell lines with appropriate rescue experiments. The use of shRNA-resistant constructs provides specificity, and the differential rescue by FXR2 vs. FMR1 demonstrates functional redundancy within the family. Table 1 provides comprehensive summary with clear 30% inhibition cutoff.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "In vivo xenograft studies demonstrate that Dox-induced FXR1 downregulation significantly reduces tumor growth in TP53/FXR2 co-deleted HL-60 cells but has no impact on copy-number-normal A549 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by in vivo xenograft data with appropriate statistical analysis (n=6 mice per group). The selective effect in co-deleted vs. normal cells validates the in vitro findings in a physiologically relevant model, strengthening the therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CRISPR-Cas9 engineered isogenic cell clones confirm that FXR1 inhibition suppresses proliferation only in TP53/FXR2 double knockout cells, not in single knockouts. TP53 knockdown in FXR2 KO cells grants FXR1 the capability to regulate proliferation, demonstrating that p53 deficiency is required for FXR1's proliferation control function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are well-supported by systematic CRISPR knockout experiments with proper validation (genomic PCR, q-RT-PCR, Western blot). The isogenic system provides strong evidence for the necessity of both deletions. The siRNA rescue experiment (C38-C39) elegantly demonstrates p53 deficiency requirement, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The tandem Tudor domain of FXR1 is necessary for regulating cell proliferation, as only full-length FXR1_a rescues FXR1 knockdown-induced anti-proliferation while Tudor-truncated FXR1_c does not. The Tudor domain binds methylated histone H3 at multiple positions (H3K4me1/3, H3K9me3, H3K27me2, H3K36me1, H3K79me2) with a pattern similar to FMR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by rescue experiments with different FXR1 isoforms and histone MLA pulldown assays. The domain mapping is clear, though the C-terminal truncation (FXR1_b) showing partial rescue suggests additional functional regions. The histone binding data provides mechanistic insight into chromatin localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "FXR1 interacts with chromatin and transcriptional regulators including STAT1, STAT3, CHD4, SNF2H, histones, and TOP2A. FXR1 directly interacts with STAT1/3 (including phosphorylated forms) but does not affect their phosphorylation or nuclear translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by ChIP-MS, ChIP-WB, and in vitro pulldown assays. The direct interaction with STATs is well-demonstrated, and the lack of effect on STAT phosphorylation/translocation (C50) is important for understanding the mechanism. However, ChIP-MS may capture indirect interactions, so the 'direct' interaction claim relies heavily on the in vitro pulldown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "ChIP-seq analysis reveals that FXR1 peaks (882 total, 210 at TSS) are primarily located at gene promoters near transcriptional start sites, with significant overlap with STAT1, STAT3, and H3K4me3 but rare overlap with repressive marks H3K9me3/H3K27me3, indicating a role in active transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C100-C102 are well-supported by comprehensive ChIP-seq analysis with appropriate statistical significance (p<1\u00d7e-5). The genomic distribution analysis and overlap calculations are clearly presented. The inference about active transcription (C54) is reasonable based on H3K4me3 co-localization and lack of repressive mark overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FXR1 knockdown downregulates target genes (ARID1A, CASC4, TRAPPC9, GLI1, CITED1, NPAS3, SSBP2) in both H358 and KATOIII cells. ChIP-PCR confirms FXR1 and STAT1/3 co-localize at target gene promoters, and FXR1 knockdown causes STAT1/3 eviction from promoters, indicating FXR1 recruits or stabilizes STATs at gene promoters. STAT3 knockdown does not affect FXR1 promoter occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are strongly supported by q-RT-PCR and ChIP-PCR data with appropriate controls. The sequential ChIP experiments showing STAT eviction upon FXR1 knockdown (C58) and lack of reciprocal effect (C60) provide strong mechanistic evidence. The inference about recruitment/stabilization (C59) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In AGS cells, FXR1 and FXR2 show 89.95% overlap in peak-associated genes (increasing at TSS), suggesting shared function at gene promoters. FXR1 also significantly overlaps with STAT1/3-associated genes, indicating FXR1 mediates STAT1/3 transcriptional activity. FXR2 knockdown has minimal effect on target gene expression except for slight inhibition of CASC4 and TRAPPC9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by ChIP-seq overlap analysis and q-RT-PCR in AGS cells. The high overlap percentage supports functional redundancy, though the discrepancy in total peak numbers (3263 vs 15346) is attributed to antibody differences. The minimal effect of FXR2 knockdown (C65) confirms redundancy but raises questions about why FXR2 deletion sensitizes cells to FXR1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C103"
+    ],
+    "result": "Only 0.7-1.57% of STAT1/3 peaks overlap with FXR1 peaks, but 24.38-25.74% of FXR1 peaks overlap with STAT peaks, suggesting significant STAT involvement in FXR1 transcriptional activity. JAK inhibitor S-Ruxolitinib suppresses STAT1 phosphorylation and inhibits some but not all FXR1 target genes without affecting FXR1 expression or cell proliferation in FXR1-sensitive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70, C103 are supported by ChIP-seq overlap analysis and JAK inhibitor experiments. The asymmetric overlap percentages are well-explained and indicate FXR1 cooperates with STATs on a subset of genes. The JAK inhibitor data (C68-C70, C103) confirms STAT involvement but shows it's not sufficient for proliferation control, suggesting additional mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNA-seq shows 45 of 210 FXR1-occupied genes are regulated upon FXR1 knockdown. Among seven validated target genes, GLI1 knockdown shows the most consistent anti-proliferative effect, and combined knockdown of target genes with FXR1 shows additive growth inhibition, with GLI1 showing the most dramatic combinatorial effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by RNA-seq and functional validation with siRNA knockdowns. The discrepancy between ChIP-seq (210 genes) and RNA-seq (more genes affected) is reasonably explained by FXR1's dual role in transcription and RNA metabolism. The combinatorial knockdown experiments provide functional validation of target genes' role in proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "FXR1 knockdown induces apoptosis as evidenced by PARP cleavage and increased caspase 3/7 activity in H358 and HL-60 cells. GLI1 knockdown similarly induces apoptotic signals. The effect is rescued by ectopic expression of shRNA-resistant FXR1, indicating FXR1 directly regulates apoptotic signaling at least partially through target gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are well-supported by Western blot and caspase activity assays with appropriate rescue experiments. The apoptosis mechanism provides important insight into how FXR1 inhibition reduces proliferation. The rescue experiment (C78) confirms specificity, and the GLI1 data (C77) supports the transcriptional mechanism, though 'at least partially' (C79) appropriately acknowledges other potential mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "Background claims about the fragile X gene family (FMR1, FXR1, FXR2), their structural similarity, functions in RNA metabolism, and roles in disease; p53's function as a tumor suppressor; genomic deletion patterns in cancer; the collateral lethality concept; and prior work on POLR2A in TP53-deleted cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21, C24-C26, C81-C89, C91 are background knowledge claims supported by appropriate citations to established literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C94",
+      "C95",
+      "C105"
+    ],
+    "result": "Prior work shows FXR1 amplification and oncogenic activity in lung squamous cell carcinoma, FXR1's role in downregulating p21 to avoid senescence, and that FXR1 knockout mice die shortly after birth while FXR1 knockdown causes abnormalities in zebrafish muscle/heart. FXR1 copy number gain occurs in some cancers, particularly lung squamous carcinoma, mutually exclusive with TP53/FXR2 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C94-C95, C105 cite prior published work appropriately. C105 combines database analysis with citations, showing FXR1 amplification is mutually exclusive with TP53/FXR2 deletion. The safety concerns raised (C94-C95) are important for therapeutic considerations, though the manuscript notes inducible knockout in adult mice doesn't show lethality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "POLR2A is co-deleted in most TP53 homozygous deletion tumors, making it irrelevant for this therapeutic strategy. The authors hypothesize that concomitant FXR2 deletion makes cells dependent on FXR1, and experimental data suggests both deletions are necessary for FXR1 inhibition-induced lethality. Using 30% proliferation inhibition as cutoff, there is a clear pattern of FXR1 regulation in TP53/FXR2 co-deleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C97-C99 combine database inference (C90) with hypothesis generation (C97) and experimental validation (C98-C99). C90 is supported by database analysis. C97 is explicitly stated as a hypothesis. C98 is well-supported by experiments in single deletion cell lines. C99's arbitrary 30% cutoff is acknowledged as such and provides a reasonable threshold for pattern recognition in Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C93",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "Speculative claims about FXR1 inhibition as a potential therapeutic approach, FXR1's dynamic functions in transcription and mRNA processing, p53 deficiency augmenting FXR1's transcriptional role, FXR1 controlling tumor growth in both deletion and amplification contexts, and potential cooperation with other transcription factors like BTF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C93, C104, C106-C107 are speculative or inferential statements about therapeutic potential and mechanisms. While based on the study's findings, they represent hypotheses requiring further validation. C80's therapeutic potential is reasonable but premature without drug development and clinical validation. C104's mechanistic speculation about p53 deficiency is plausible but unproven. C106-C107 suggest broader implications requiring additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "FXR1 binds mRNA of target genes (CASC4, TRAPPC9, GLI1, SSBP2) and interacts with transcription regulators (TOP2A/2B, GTF2A, FACT80). ChIP-MS confirms FXR1's established role in mRNA processing and translation. FXR1 binds some but not all target gene mRNAs, contributing to proliferation regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C108-C110 are supported by mRNA binding assays (Figure 6\u2014figure supplement 3) and ChIP-MS data. C109 confirms established knowledge with new data. C92 and C110 show FXR1 binds some target mRNAs, supporting dual function in transcription and post-transcriptional regulation. The selective binding pattern (C110) is interesting but the functional significance requires further investigation.",
+    "result_type": "MAJOR"
+  }
+]

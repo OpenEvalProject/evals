@@ -1,0 +1,1708 @@
+{
+  "submission": {
+    "id": "28e02a2d-50c7-42af-96a9-78c2cb0a8e01",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:53:24.922347Z",
+    "updated_at": "2025-12-01T20:53:24.922347Z"
+  },
+  "content": [
+    {
+      "id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "submission_id": "28e02a2d-50c7-42af-96a9-78c2cb0a8e01",
+      "content_type": "manuscript",
+      "content_text": "# MicroCT-based phenomics in the zebrafish skeleton reveals virtues of deep phenotyping in a distributed organ system\n\n## Authors\n\n- Matthew Hur<sup>1</sup>\n- Charlotte A Gistelinck<sup>2</sup>\n- Philippe Huber<sup>1</sup>\n- Jane Lee<sup>1</sup>\n- Marjorie H Thompson<sup>1</sup>\n- Adrian T Monstad-Rios<sup>1</sup>\n- Claire J Watson<sup>1</sup>\n- Sarah K McMenamin<sup>3</sup>\n- Andy Willaert<sup>2</sup>\n- David M Parichy<sup>4</sup>\n- Paul Coucke<sup>2</sup>\n- Ronald Y Kwon<sup>1</sup> ([ORCID: 0000-0001-9760-3761](https://orcid.org/0000-0001-9760-3761)) \u2020\n\n### Affiliations\n\n1. Department of Orthopaedics and Sports Medicine University of Washington Seattle United States\n2. Center for Medical Genetics Ghent University Ghent Belgium\n3. Biology Department Boston College Massachusetts United States\n4. Department of Biology University of Virginia Charlottesville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhenomics, which ideally involves in-depth phenotyping at the whole-organism scale, may enhance our functional understanding of genetic variation. Here, we demonstrate methods to profile hundreds of phenotypic measures comprised of morphological and densitometric traits at a large number of sites within the axial skeleton of adult zebrafish. We show the potential for vertebral patterns to confer heightened sensitivity, with similar specificity, in discriminating mutant populations compared to analyzing individual vertebrae in isolation. We identify phenotypes associated with human brittle bone disease and thyroid stimulating hormone receptor hyperactivity. Finally, we develop allometric models and show their potential to aid in the discrimination of mutant phenotypes masked by alterations in growth. Our studies demonstrate virtues of deep phenotyping in a spatially distributed organ system. Analyzing phenotypic patterns may increase productivity in genetic screens, and facilitate the study of genetic variants associated with smaller effect sizes, such as those that underlie complex diseases.\n\n## Introduction\n\nAdvances in genomic sequencing have revolutionized our ability to identify gene variants that can impact human health, yet our ability to characterize vertebrate phenomes \u2013 i.e., to acquire in-depth phenotypic profiles at the scale of the whole organism (Houle et al., 2010) \u2013 remains limited. The development of vertebrate phenotypic assays that approach the scale and efficiency of genomic technologies hold promise to fundamentally enhance our functional understanding of genes and genomic variation. For instance, they could rapidly accelerate genetic and drug discovery by enabling organism-wide, unbiased analysis of large numbers of phenotypic features. In addition, they could expand our understanding of functional relationships between genes by helping to cluster mutations into common pathways based on similarities in phenotypic signatures. Finally, since our functional understanding of genes and genomic variation is directly coupled to the depth with which we are able to characterize their effects on phenotype, our understanding of gene function is fundamentally limited by the tendency for phenotypic assays to be restricted to a few readouts (Houle et al., 2010; Schork, 1997; Bilder et al., 2009). A better understanding of the biological insights that may be attained by profiling changes in patterns in a large number of phenotypic features is essential to both guide and drive the development of next-generation phenotyping technologies.\n\nThe skeleton is an organ consisting of a large number of tissues distributed throughout the body; thus, it is a prime example of a spatially distributed organ system that may benefit from phenomic approaches. The skeleton comprises bones of different developmental origins (e.g., neural crest vs. mesoderm derived) and modes of ossification (intramembranous vs. endochondral), cellular compositions, and gene expression patterns. Different compartments can be differentially regulated through differences in local mechanical environment, proximity to tissues and organs that exert paracrine control (e.g., at the muscle/bone interface), and variations in vascularization and innervation. Since different mutations often affect different skeletal compartments, it is common practice to perform skeletal phenotyping at multiple skeletal sites. In this context, most efforts to increase the phenotypic content of skeletal assays have focused on increasing the depth of description at a given anatomical location rather than increasing the number of bones/compartments analyzed. In mice, Adams et al. (Adams, 2015) developed a semi-automated workflow integrating microCT and multi-image cryohistology (Dyment et al., 2016; Hong et al., 2012) to quantify 15 phenotypic measures in the femur and lumbar spine. Using a high-throughput automated synchrotron-based tomographic microscopy system, Mader et al. (Mader et al., 2015) quantified 22 different measurements in the mouse femur. In zebrafish, Pardo-Martin et al. (Pardo-Martin et al., 2013) used automated sample handling and optical projection tomography to acquire high-dimensional phenotypic profiles (~200 measurements) in the craniofacial cartilage of early larvae, representing one of the most ambitious approaches to perform large-scale phenotyping in the skeleton to date. Yet, even in this analysis, traits were derived from only 9 skeletal elements. Further, this method is not readily extendable to bones outside of the craniofacial skeleton, or to adults. Finally, while both the mouse and zebrafish spine are amenable to whole-body microCT imaging (Buchan et al., 2014; Gray et al., 2014), in-depth phenotyping is usually limited to a few vertebral bodies (Bouxsein et al., 2010). In this context, methods to perform in-depth phenotyping in a large number of bones represents a unique class of problems that has not been adequately addressed.\n\nThe objective of this study was twofold: (1) to develop microCT-based methods for profiling morphological and densitometric traits at a large number of anatomical sites in the axial skeleton of adult zebrafish, and (2) to assess the benefits of analyzing phenotypic patterns in discriminating mutant populations. Here, we present a supervised segmentation algorithm, FishCuT, and a statistical workflow to test for differences in phenomic patterns in mutant populations. We demonstrate the potential for vertebral patterns to confer heightened sensitivity, with similar specificity, in discriminating mutant populations compared to analyzing individual vertebrae in isolation. To identify phenomic signatures associated with human brittle bone diseases, we perform in-depth phenotyping in two zebrafish mutants, plod2-/- and bmp1a-/-. Further, to demonstrate the potential to identify novel axial skeletal mutants associated with human genetic disorders, we phenotype opallus, which harbors a mutation in thyroid stimulating hormone receptor (tshr) identical to a mutation causing hyperthyroidism in humans. Finally, we develop phenome-based allometric models and show that they are able to discriminate mutant phenotypes otherwise masked by alterations in growth. We have integrated our methods into a software package, FishCuT, whose source code has been deposited on GitHub as a beta release (Kwon, 2017); a copy is archived at https://github.com/elifesciences-publications/FishCuT.\n\n## Results\n\n### A microCT-based workflow for phenomic profiling of the axial skeleton in adult zebrafish\n\nDue to their small size, zebrafish are conducive to whole-body microCT imaging at high resolution (Cheng et al., 2011). Previous studies have demonstrated radiopacity in adult zebrafish vertebrae (Fisher et al., 2003) and the feasibility of imaging vertebral morphology in adult zebrafish via microCT (Buchan et al., 2014; Gray et al., 2014; Gistelinck et al., 2016a; Asharani et al., 2012; Spoorendonk et al., 2008). Moreover, the small size of zebrafish can be exploited by imaging multiple fish simultaneously. For instance, in most cases we imaged two fish at a time, enabling whole spines to be acquired at 21 \u00b5m resolution in as little as\u00a0~20 min/fish for fish that were\u00a0~20 mm in standard length. Further, in a single proof-of-concept study, we found that up to eight animals could be scanned simultaneously at 21 \u00b5m resolution, enabling whole spines to be imaged in an effective scan time of\u00a0~5 min/fish. While several practical issues will need to be resolved prior to broad application of such high-density scanning strategies (discussed below), our studies suggest that the primary bottleneck to phenomic analysis in a large number of bones is not the time required for microCT scan acquisition, but the time required for segmentation. Indeed, we found that\u00a0~60 min was required to manually segment a single vertebra of an adult fish scanned at 21 \u00b5m resolution (~60 image slices) using a user-assisted segmentation tool, a rate that would require\u00a0>24 hr to segment the\u00a0~27 precaudal and caudal vertebrae that comprise the zebrafish vertebral column.\n\nTo overcome this barrier, we developed FishCuT, a microCT analysis toolkit that couples supervised segmentation with connectivity analysis to enable computation of descriptors of bone morphology, mass, and mineralization at a large number of anatomical sites in the vertebral column of adult zebrafish (Figure 1). To segment vertebral bodies, FishCuT employs a region-growing algorithm which takes user-specified line regions of interest (ROIs) specifying \u2018seed\u2019 locations of vertebral boundaries, and uses them to isolate individual vertebrae. This segmentation is achieved by iteratively growing a separation boundary such that each vertebra is composed of connected components that do not contain voxels from different vertebrae. Once each vertebral body is segmented (Figure 1B), a supervised algorithm is used to segment each vertebral body into three skeletal elements: the neural arch (Neur), centrum (Cent), and haemal arch/ribs (Haem) (Figure 1C and D). For each skeletal element, four primary measurements are computed: Tissue Mineral Density (TMD, mgHA/cm3), Volume (Vol, \u00b5m3), Thickness (Th, \u00b5m), and Surface Area (SA, \u00b5m2) (Figure 1E). In addition to the above measurements, FishCuT computes centrum length (Cent.Le, \u00b5m), as well as intra-specimen variation in TMD and thickness (i.e. TMD.sd and Th.sd, respectively [Bouxsein et al., 2010; Burghardt et al., 2008]) for each skeletal element. For each measure, the \u2018total\u2019 value (e.g., Tot.TMD) within a single vertebra (i.e., across the centrum, haemal arch/ribs, and neural arch) is also computed. For analysis, each combination of element/outcome (e.g., Cent.TMD) is computed as a function of vertebra number. The global test (Goeman et al., 2006; Goeman et al., 2004), a regression-based statistical test designed for data sets in which many covariates (or features) have been measured for the same subjects, is used to assess whether the pattern across vertebrae is significantly different between groups. This output is provided graphically via a custom R script that computes plots of phenotypic trends (Figure 1F), and color codes them to highlight the trends that are statistically significant in the global test. Finally, for each combination of outcome/element, a standard score is computed as the difference between its value in each vertebral body and its mean value across all vertebrae in the control population, divided by the standard deviation across all vertebrae in the control population. These data are arranged into matrix constructs that we have termed \u2018skeletal barcodes\u2019, which can be input into graphing software to generate heat maps to facilitate visualization of phenotypic trends both within individuals and across groups (Figure 1G). Currently, 25 different quantities are computed for each vertebra (Cent.TMD, Cent.Th, Cent.Vol, Cent.Le, Cent.SA, Cent.TMD.sd, Cent.Th.sd, Neur.TMD, Neur.Th, Neur.Vol, Neur.SA, Neur.TMD.sd, Neur.Th.sd, Haem.TMD, Haem.Th, Haem.Vol, Haem.SA, Haem.TMD.sd, Haem.Th.sd, Tot.TMD, Tot.Th, Tot.Vol, Tot.SA, Tot.TMD.sd, Tot.Th.sd). The total number of measures that are computed is dependent on the number of vertebrae which are analyzed by the user (i.e., by seeding separation boundaries). Analyzing 24 vertebrae results in 24 \u00d7 25\u00a0=\u00a0600 phenotypic measures, and usually takes\u00a0<5 min/fish (~100 x faster than manual segmentation). In our studies we analyzed between 22\u201328 vertebrae, with an average of 24.1\u00a0\u00b1\u00a01.4 vertebrae per fish (mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a034 fish).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig1-v2.jpg)\n\n**Figure 1.:** (A) MicroCT scans are acquired in adult fish (image shows 3D volume rendering). (B) For segmentation, individual vertebrae are isolated using FishCuT (image shows 16 vertebrae from the same fish, colors indicate local thickness), and (C) each vertebral body is segmented into three skeletal elements: the Neural Arch (green), Centrum (white), and Haemal Arch/Pleural Ribs (red). A representative segmentation can be seen in (D), which depicts the same fish in (A) with an alternating color scheme used to highlight individual skeletal elements segmented by FishCuT (top: lateral view; bottom: anteroposterior view). (E) For each skeletal element, FishCuT computes the following: Tissue Mineral Density, Volume, Thickness, Surface Area, Length (centrum only), Tissue Mineral Density Variation, and Thickness Variation. (F) For analysis, each combination of element/outcome is computed as a function of vertebra number, and subjected to the global test. Shown is a plot of one combination of element/outcomes, Cent.TMD, as a function of vertebra number in WT vs. bmp1a-/- fish. (G) Standard scores are computed and arranged into \u2018skeletal barcodes\u2019 that facilitate visualization of phenotypic trends both within individuals and across groups. Shown are the skeletal barcodes for a single WT (left) and bmp1a-/- fish (right).\n\nTo assess segmentation quality, we analyzed a single wildtype zebrafish (strain, AB; standard length, SL: 24.8 mm) using two different approaches -- FishCuT and manual segmentation -- and used the Dice similarity coefficient (DSC) (Zou et al., 2004) to evaluate spatial overlap in segmentations produced by the two approaches. We computed a DSC of 0.932\u00a0\u00b1\u00a00.001 (mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a02 vertebrae) when we excluded pixels with intensities less than the threshold used in the FishCuT analysis, exceeding the value of 0.7 suggested to indicate excellent agreement between manual and automated segmentation approaches (Zijdenbos et al., 1994). We computed a mean difference of 3.4 \u00b1 1.2% (mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a03 fish) in centrum length, a measure that is calculated directly from user-specified \u2018seed\u2019 locations of the vertebral boundaries, when we serially performed primary and secondary scans of the same animal. This suggests that intra-operator reproducibility during this step was high. Finally, to assess independence between phenotypic measures, we computed Pearson correlation coefficients for each pair of measurements across 34 analyzed fish. We observed a relatively low median absolute Pearson correlation coefficient of 0.34 among measures (Figure 2, Figure 2\u2014source data 1), similar to the value of 0.3 attained by Pardo-Martin et al. during high-content profiling of the zebrafish craniofacial skeleton (Pardo-Martin et al., 2013). This quantity was relatively invariant with increasing number of vertebrae used for analysis (Figure 2\u2014figure supplement 1). In the discussion, we provide examples (including fish analyzed in this study) where each vertebra might confer non-redundant information.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig2-v2.jpg)\n\n**Figure 2.:** The following procedure was used to assess the correlation between phenotypic measurements. First, we analyzed 34 different WT and mutant fish of various genotypes. As detailed in the text, analyzing 24 vertebrae results in 24 \u00d7 25\u00a0=\u00a0600 phenotypic measures for each fish. We denote measure i in fish n as xin (i\u00a0=\u00a01 to 600 and n\u00a0=\u00a01 to 34). Next, we computed absolute Pearson correlation coefficients between each pair of measurements as |\u03c1i,j|=|cov(Xi,Xj)/(\u03c3(Xi)\u03c3(Xj))| where Xi=[xi1, xi2,...,xi34], Xj=[xj1, xj2,...,xj34], cov is the covariance, and \u03c3 is the standard deviation. The resulting 600 \u00d7 600 correlation matrix was plotted as a heatmap, where the element in the ith row and jth column represents the absolute Pearson correlation between measurement i (Xi) and measurement j (Xj). For each pairwise correlation, if a fish had missing values (e.g., not all 24 vertebrae were analyzed), it was excluded from the analysis. Hierarchical clustering was used to order the measurements in order to facilitate visualization. The predominance of purple regions indicates the prevalence of measurement pairs that exhibit low correlation. The legend depicts a color scale and a histogram of absolute correlations (computed from 600 \u00d7 600\u00a0=\u00a0360,000 different pairwise correlations). The median value of this distribution was 0.34.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The median absolute correlation was relatively invariant with increasing number of vertebrae used for analysis.\n\n### MicroCT imaging at medium and high resolution results\u00a0in comparable ability to distinguish mutant phenotypes\u00a0in\u00a0bmp1a-/-\u00a0fish\n\nDue to the large volumes that must be acquired, microCT scanning of the entire vertebral column in adult zebrafish requires a balance between image resolution and throughput. We assessed (a) the correlation in measurements quantified using scans performed at 21 \u00b5m (medium) vs. 10.5 \u00b5m (high) nominal isotropic resolution, and (b) the sensitivity of these two resolutions in discriminating mutant phenotypes in known skeletal mutants (as is customary we consider nominal isotropic resolution to be equivalent to isotropic voxel size; please see (Bouxsein et al., 2010) for detailed definitions). For testing, we used bmp1a-/- mutant fish. In humans, mutations in BMP1 result in a rare recessive form of the brittle bone disease Osteogenesis Imperfecta (OI) (Asharani et al., 2012). In zebrafish, the frilly fins (frf) mutant harbors mutations in bmp1a (Asharani et al., 2012) and exhibits high vertebral bone mineral density (BMD) in adults, mimicking the high BMD phenotype in humans with OI caused by BMP1 mutations (Asharani et al., 2012). We serially scanned n\u00a0=\u00a03 bmp1a-/- mutant fish and WT sibling controls (SL of WT: 25.7\u00a0\u00b1\u00a01.2 mm, SL of mutant: 23.2\u00a0\u00b1\u00a01.0 mm, mean\u00a0\u00b1SD, SL\u00a0=\u00a0standard length) at medium and high resolutions, analyzed scans using FishCuT, and compared quantities from individual vertebrae via linear regressions (Figure 3, Figure 3\u2014source data 1). In general, we observed extremely high correlations between values attained at the two scanning resolutions, with R2 values ranging from 0.98 to\u00a0>0.99. In most cases, slopes deviated slightly from unity: slopes ranged from 0.90 to 0.91 for TMD measurements, while it ranged 1.18 to 1.21 for thickness measurements (we did not observe a consistent trend for volumetric measurements). This deviation from unity is likely to due to partial volume effects (PVEs; an inherent property of microCT images that emerges from projecting a continuous object onto a discrete grid [Rittweger et al., 2004]). However, due to the high correlation in measurements attained at each resolution, we observed minimal impact of PVEs on sensitivity in discriminating mutant phenotypes, as t-tests for differences in single vertebrae between WT and bmp1a-/- fish yielded similar p-values regardless of scan resolution used (see Figure 3 for values). These findings were reproducible in multiple vertebrae (Figure 3\u2014figure supplement 1); a comprehensive summary of findings across all phenotypic measurements is provided in Figure 3\u2014figure supplement 2. Collectively, these analyses suggest that microCT scans at high and medium resolutions provided highly correlated information on each measure, and were comparable in their ability to discriminate WT from mutant phenotypes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig3-v2.jpg)\n\n**Figure 3.:** Results are shown for the second pre-caudal vertebrae for nine different measurements (A\u2013I). Each point represents a single animal, with the corresponding measurement assessed at two nominal isotropic resolutions: medium (21 \u00b5m voxel size) and high (10.5 \u00b5m voxel size). WT animals (n\u00a0=\u00a03) are depicted as closed circles and bmp1a-/- fish (n\u00a0=\u00a03) as open circles. Linear regressions revealed a high level of correlation. Further, t-tests showed similar p-values when comparing WT vs bmp1a-/- at each resolution.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig3-figsupp2-v2.jpg)\n\n### Phenomic profiling enhances sensitivity in discriminating mutant populations\n\nAs described above, for statistical testing we developed a procedure whereby each combination of element/outcome is computed as a function of vertebra number, and the global test is used to assess whether the pattern across vertebrae is significantly different between groups. We hypothesized that assessing vertebral patterns with the global test would provide greater sensitivity in distinguishing mutant populations compared to (a) t-tests of individual vertebrae, and (b) t-tests of quantities averaged across all vertebrae. Note that for the rest of the manuscript, we restrict our analysis to the 16 anterior-most vertebrae; this set of vertebrae contains both high (~8) and low (~8) haemal arch volumes (e.g., see Figure 5F). For each combination of element/trait (e.g., Cent.TMD), we computed the power of the global test when assessing this measure in vertebrae 1\u201316, and compared it to t-tests of this measure in vertebra 2, or t-tests of this measure when averaged across vertebrae 1\u201316.\n\nTo test our hypothesis, we performed Monte Carlo simulations (Figure 4\u2014source data 1). We first examined the potential to model the pattern of each combination of skeletal element/trait (e.g., Cent.TMD) for k\u00a0=\u00a016 vertebrae using a multivariate normal distribution. We analyzed n\u00a0=\u00a016 WT fish (SL: 20.4\u00a0\u00b1\u00a00.9 mm) from the same clutch, and performed Royston tests for multivariate normality for each combination of skeletal element/trait. For these studies we limited our analyses to subsets of k\u00a0=\u00a08 vertebrae (Group A: Vert 1, 3, 5, 7, 9, 11, 13, and 15; Group B: and Vert 2, 4, 6, 8, 10, 12, 14, and 16) so that the number of variables was less than the sample size (Figure 4\u2014source data 2). The majority of phenotypic features (21 out of 25) were associated with non-significant p-values in both groups, suggesting these data exhibited multivariate normality. The four phenotypic features associated with significant p-values in either group -- Cent.Th, Neur.Th, Haem.Th.sd, and Cent.Le -- were excluded from the rest of our Monte Carlo simulations. Next, for each combination of skeletal element/trait we computed means (denoted by \u00b5iWT, where \u00b5i is the mean in vertebra i) and covariances (denoted by \u2211ijWT, where \u2211ij is the covariance between vertebra i and vertebra j) for k\u00a0=\u00a016 vertebrae. These parameter estimates were used to construct multivariate normal distributions for Monte Carlo simulations (\u226510,000 simulations per analysis) (Figure 4). For each analysis, we constructed two multivariate normal distributions: (1) a WT distribution using means \u00b5iWT, and (2) a \u2018simulated\u2019 mutant distribution using means \u00b5iWT+ d*\u03c3iWT (where d is a characteristic effect size, and \u03c3i is the standard deviation in vertebra i). Covariances were assumed to be equal in both distributions, and set to \u2211ijWT. We first estimated the power of the global test in discriminating high Tot.TMD in simulated mutant fish as a function of sample size and alpha value (Figure 4A). For these simulations, we assumed a characteristic effect size of d\u00a0=\u00a04, since in the bmp1a-/- mutants from the previous section, Tot.TMD was increased\u00a0~4 standard deviations above the mean in each vertebra. We found that a power of\u00a0>0.8 was attained with a sample size of n\u00a0=\u00a03, 4, and 5 fish/group for alpha values of 0.05, 0.01, and 0.001, respectively. Next, using a sample size of n\u00a0=\u00a03 fish/group and alpha\u00a0=\u00a00.05, we estimated test sensitivity (fraction of times in which p<0.05 when comparing simulated mutant fish to WT fish) (Figure 4B) and specificity (1 - fraction of times in which p<0.05 when comparing WT to WT fish) (Figure 4C) for\u00a0(a) the global test (using vertebrae 1:16), (b) t-tests of averaged quantities (using the mean of vertebrae 1:16), and (c) t-tests of individual vertebrae (using vertebra 2). We found that the global test conferred higher sensitivity, with similar specificity, compared to t-tests of averaged quantities as well as t-tests of individual vertebrae. For instance, at alpha\u00a0=\u00a00.05, the sensitivity of the global test, t-test of individual vertebrae, and t-test of averaged quantities was 0.96, 0.89, and 0.91. At alpha\u00a0=\u00a00.01, the sensitivity of the global test, t-test of individual vertebrae, and t-test of averaged quantities was 0.67, 0.43, and 0.46 (respectively). Specificity values were consistent with those predicted from specified levels of alpha: as an example, at alpha\u00a0=\u00a00.01, specificity was 0.99 in all three cases. For alpha\u00a0=\u00a00.05 and n\u00a0=\u00a03, we estimated a false discovery rate of 5.1% for the global test procedure.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig4-v2.jpg)\n\n**Figure 4.:** Figures A-G show results from Monte Carlo simulations using simulated mutant phenotypes. (A) Power of the global test in discriminating a uniform increase in Tot.TMD (characteristic effect size: d\u00a0=\u00a04) as a function of sample size and alpha value. The dotted line highlights sample sizes with power\u00a0>0.8. (B) Sensitivity (fraction of times in which p<0.05 when comparing simulated mutant vs. WT fish) for different test procedures. (C) Specificity (1 - fraction of times in which p<0.05 when comparing WT vs. WT fish) for different test procedures. (D) Power as a function effect size for different test procedures (sample size: n\u00a0=\u00a03; alpha\u00a0=\u00a00.05). (E) Closeup of figure (D) for smaller effect sizes. (F) Comparison of sensitivity for different phenotypic features (characteristic effect size: d\u00a0=\u00a04; sample size: n\u00a0=\u00a03; alpha\u00a0=\u00a00.05). (G) Sensitivity for non-uniform phenotypic pattern (linear increase from d\u00a0=\u00a00 at vert 1 to d\u00a0=\u00a04 at vert 16; n\u00a0=\u00a03; alpha\u00a0=\u00a00.05). Figure H-I show results from Monte Carlo simulations using parameter estimates derived from bmp1a-/- mutants. (H) Sensitivity in discriminating different phenotypic features in bmp1a-/- mutants. T-tests using individual vertebrae were performed on data derived from fish scanned at high resolution. (I) Specificity in discriminating different phenotypic features in bmp1a-/- mutants.\n\nNext, we compared the power of the different testing procedures as a function of characteristic effect size (Figure 4D,E). We found that the global test conferred higher power compared to t-tests of averaged quantities and t-tests of individual vertebrae, with the relative increase greatest at small characteristic effect sizes (e.g.,~1.4 to 1.5 fold greater at an effect size of 0.5, compared to\u00a0~1.2 fold greater at an effect size of 3). Higher sensitivity in the global test was also observed when we extended our analysis to other phenotypic features (Figure 4F, Figure 4\u2014source data 3).\n\nFinally, we examined the effects of non-uniform phenotypic abnormalities on test sensitivity. Specifically, we constructed a new simulated mutant distribution using means \u00b5iWT+ di*\u03c3iWT, where di=[(i-1)/(k-1)]*d is the characteristic effect size at vertebra i, and k is the total number of vertebrae analyzed. We set d\u00a0=\u00a04 and k\u00a0=\u00a016 such that the characteristic effect size at each vertebra linearly varies from d1\u00a0=\u00a00 to d16\u00a0=\u00a04. Using this \u2018high anterior\u2019 pattern, the differences in test sensitivity became magnified (Figure 4G). For instance, for Cent.TMD, sensitivity of the global test was\u00a0~2 fold that of t-tests of averaged quantities, and\u00a0~18 fold that of t-tests of individual vertebra. Notably, our studies also suggested that power in the global test is affected by the assumed phenotypic pattern. For example, for Cent.TMD, sensitivity for the global test using a non-uniform pattern was 0.71, compared to 0.96 for a uniform pattern (as in Figure 4F).\n\nWe sought to corroborate the above findings using an independent experimental cohort. Specifically, we used the n\u00a0=\u00a03 bmp1a-/- and sibling WT controls (bmp1a+/+) from the previous section to construct two multivariate normal distributions: 1) a WT distribution using means \u00b5ibmp1a+/+ and covariances \u2211ijbmp1a+/+, and 2) a mutant distribution using means \u00b5ibmp1a-/- and covariances \u2211ijbmp1a-/-, and repeated Monte Carlo simulations (Figure 4H\u2013I). Note that these sibling controls are identified as bmp1a+/+\u00a0to distinguish them from the WT fish used for the Monte Carlo simulations in Figure 4A\u2013G. Consistent with our analyses using simulated mutants, we found that when using parameter estimates from bmp1a-/- mutants, the global test conferred higher sensitivity, with similar specificity, compared to t-tests of averaged quantities as well as t-tests of individual vertebrae, even when the latter was performed at higher resolution. For instance, for Cent.TMD (and assuming n\u00a0=\u00a03 and alpha\u00a0=\u00a00.05), the sensitivity of the global test, t-test of individual vertebrae, and t-test of averaged quantities was 0.89, 0.80, and 0.78, and specificity was 0.95, 0.96, and 0.96. Similar results were observed for Tot.TMD, Haem.TMD, and Neur.TMD.\n\n### Identification of novel phenotypic features in known axial skeletal mutants\n\nIn employing zebrafish as a predictive model of human skeletal gene function it is important to understand how zebrafish mutant skeletal phenotypes relate to orthologous mutations associated with human genetic bone disorders. To identify multivariate zebrafish phenotypes associated with human brittle bone disease, we performed comprehensive phenotypic characterization of bmp1a-/- fish, as well as another mutant associated with this disorder, plod2-/- (Gistelinck et al., 2016a). Mutations in PLOD2 are associated with Bruck syndrome, a recessive condition resembling OI. Previous studies revealed high vertebral BMD in adult zebrafish with mutants in bmp1a, (Asharani et al., 2012), however, it is unclear whether this high BMD is attributable to an increase in bone mass (e.g., increase in bone volume), and/or mineralization (e.g., increase in tissue mineral density). For plod2-/- mutants, adult animals were found to exhibit vertebral compressions, distorted vertebrae, and excessive bone formation (Gistelinck et al., 2016a). Previous microCT analyses showed higher Centrum TMD in these mutants. However, due to the lack of robust methods to analyze the highly dysmorphic vertebrae in plod2-/- fish, previous microCT analyses were performed in two dimensional maximum intensity projections (Gistelinck et al., 2016a), and an in-depth, three dimensional phenotypic characterization of plod2-/- fish has yet to be performed.\n\nUsing FishCuT, we analyzed microCT scans of bmp1a-/- and plod2-/- mutant fish, and compared them to WT sibling controls (n\u00a0=\u00a03/group) (Figure 5, Figure 5\u2014source data 1). Note that for the rest of our studies, we focus our analyses on the results of ten features (the nine possible combinations of (Cent, HA, NA) x (Vol, TMD, and Th), plus Cent.Le). In bmp1a-/- mutants, analysis revealed significant increases in both bone mass and mineralization. Specifically, in regard to bone mass, centrum volume was significantly increased (Cent.Vol: p=0.007). Further, bone thickness was significantly elevated in all skeletal elements (Cent.Th: p=0.0007, Haem.Th: p=0.048, Neur.Th: p=0.005). No significant differences were observed with respect to haemal/neural arch volume (Haem.Vol: p=0.07, Neur.Vol: p=0.16) or centrum length (Cent.Le: p=0.051). In regard to bone mineralization, TMD was significantly elevated in all skeletal elements (Cent.TMD: p=0.003, Haem.TMD: p=0.006, Neur.TMD: p=0.006). While Cent.TMD and Neur.TMD appeared to be uniformly elevated across all vertebrae, Haem.TMD appeared to be differentially elevated in precaudal (first ten) vertebrae. We used the covariates functionality in the globaltest package in R to identify vertebral clusters that exhibit a significant association with genotype. We found that only vertebrae 2, 3, 4, and 7 were significantly associated with genotype (Figure 5\u2014figure supplement 1), consistent with the notion that precaudal vertebrae were differentially affected.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig5-v2.jpg)\n\n**Figure 5.:** (A) Skeletal barcodes for WT and bmp1a-/- fish (n\u00a0=\u00a03/group). Each barcode represents a single fish. Standard scores are computed as the difference between the value of the feature in the individual and the mean value of the feature across all vertebrae in the control population, divided by the standard deviation of the feature across all vertebrae in the control population (see text for details). (B\u2013K) Phenotypic features plotted as a function of vertebra (mean\u00a0\u00b1\u00a0SE, n\u00a0=\u00a03/group). Plots associated with a significant difference are colored in a lighter coloring scheme (see text for p-values). The same plots with y axis set to zero are shown in Figure 5\u2014figure supplement 2. (L) Maximum intensity projection of microCT scans.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Vertebrae were hierarchically clustered based on association with mutation, and a multiplicity-corrected procedure was used to identify portions of the graph that exhibit a significant association with mutation (highlighted in black). Significant associations are observed for vertebrae 2, 3, 4, and 7. For vertebrae 9/10 significant branches did not reach all the way to the \u2018leaf nodes\u2019; in this case, we are able to infer that at least one of the vertebrae 9 or 10 was significantly associated with genotype, but not which one.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig5-figsupp2-v2.jpg)\n\nFor plod2-/- mutants (SL of WT: 27.9\u00a0\u00b1\u00a00.7 mm, SL of mutant: 20.2\u00a0\u00b1\u00a01.1 mm, mean\u00a0\u00b1SD) (Figure 6, Figure 6\u2014source data 1), we found that FishCuT robustly segmented vertebrae, despite severe vertebral malformations. Consistent with previous studies, we observed significantly elevated TMD in the centrum (Cent.TMD: p=0.038) but not haemal/neural arches (Haem.TMD: p=0.91, Neur.TMD: p=0.53) (Gistelinck et al., 2016a). Further, we observed a significant decrease in centrum length (Cent.Le: p=6.5\u00d710\u22125), as reported previously (Gistelinck et al., 2016a). Morphologically, plod2-/- mutants exhibited a low bone mass phenotype in the haemal and neural arches (Haem.Vol: p=0.018, Neur.Vol: p=0.012), but not centrum (p=0.15). Further, plod2-/- mutants exhibited decreased haemal and neural arch thickness (Haem.Th: p=0.013, Neur.Th: p=0.034), but not centrum thickness (p=0.47).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig6-v2.jpg)\n\n**Figure 6.:** (A) Skeletal barcodes for WT and plod2-/- fish (n\u00a0=\u00a03/group). WT fish in this figure are different from those in Figure 5. (B\u2013K) Phenotypic features plotted as a function of vertebra (mean\u00a0\u00b1SE, n\u00a0=\u00a03/group). Plots associated with a significant difference are colored in a lighter coloring scheme (see text for p-values). The same plots with y axis set to zero are shown in Figure 6\u2014figure supplement 1. (L) Maximum intensity projection of microCT scans.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig6-figsupp1-v2.jpg)\n\n### Allometric models aid in discriminating mutant phenotypes masked by alterations in growth\n\nIn zebrafish, developmental progress is more closely related to standard length than to age (Parichy et al., 2009; McMenamin et al., 2016). In analyzing mutants that exhibit differences in body size (e.g., plod2-/- mutants exhibited severely diminished body size compared to WT siblings), it is difficult to discriminate to what degree altered phenotypes are attributable to differences in developmental progress, versus specific effects on skeletal function. Furthermore, although morphological developmental milestones can sometimes allow staging despite genotype-specific differences in size and growth during the larval-to-adult transformation, few such milestones have been identified, particularly during later stages. In addition, some milestones are themselves skeletal traits, necessitating an alternative approach. To help address these challenges, we developed allometric models to control for effects of body size during phenomic analysis. To model each phenotypic feature in WT fish as a function of standard length, we used a standard power-law relationship for allometric modeling (Lleonart et al., 2000):\n\n$$\ny=ax^{b}\n$$\n\nwhere y is the feature of interest, x is standard length, and a and b are empirically-derived parameters. The scaling exponent b is directly interpretable when quantities are associated with mass, length, area, and volume. Thus, we converted TMD to a mass-based quantity by computing tissue mineral content (TMC, mgHA) as the product of volume and TMD in each skeletal element (e.g., Cent.TMC\u00a0=\u00a0Cent.Vol*Cent.TMD). To attain estimates of a and b for WT animals (Figure 7\u2014source data 1), we performed an ontogenetic series by profiling n\u00a0=\u00a016 WT fish over a range of standard lengths (18.4 mm to 31.8 mm), and fit these data to the power-law relationship to estimate a and b (Figure 7\u2014figure supplement 1). Convergence analyses demonstrated that model parameters were relatively invariant when more than\u00a0~10 samples were included in the analysis (Fig 7\u2014figure supplement 2), suggesting that our use of n\u00a0=\u00a016 samples was sufficient to provide reliable model parameter estimates. In general, we found that most features significantly deviated from isometric growth (i.e., proportional relationships were not preserved with growth) with respect to standard length (Figure 7\u2014source data 2). Specifically, features associated with thickness and volume exhibited negative allometry (scaling exponents lower than those expected for isometric growth), while TMC exhibited positive allometry.\n\nNext, we used the following relationship to normalize for allometric effects of growth (Lleonart et al., 2000):\n\n$$\ny^{\u2217}=y(x^{\u2217}/x)^{b}\n$$\n\nwhere y is the feature of interest, x is standard length, x* is a reference standard length, and y* is the transformed value. It is important to point out that once estimates of the scaling exponent b is obtained in a comprehensive sample (as in in the n\u00a0=\u00a016 fish above), this relationship can be applied to other WT fish in experimental groups of an arbitrary sample size. When we applied this relationship to the phenomic profiles from the WT animals in our ontogenetic series (using the mean standard length of all WT fish as the reference standard length), we found that the coefficient of variability was substantially reduced compared to unnormalized values, as well as when quantities were normalized by an alternate transformation, 1/SL (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig7-v2.jpg)\n\n**Figure 7.:** Data are shown for the first precaudal vertebra of n\u00a0=\u00a06 WT fish of different standard lengths. The coefficient of variability (CV) is shown for each normalization procedure. The left column shows high phenotypic variability in unnormalized data. When data were normalized using allometric models (right column), phenotypic variability was substantially reduced. Phenotypic variability was also reduced, though to a lesser extent, when data were normalized using an alternate normalization, 1/SL (middle column).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Phenotypic features (data are shown for the first precaudal vertebra) plotted as a function of standard length. Linear fits of log-transformed data were used to compute allometric model parameters.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Plots show the computed value of the scaling exponent b when a subset of samples of a specified sample size was selected from our group of n\u00a0=\u00a016 animals (values are median values from multiple simulations for each sample size). For each phenotypic feature, the median value of b stabilizes for sample sizes greater than\u00a0~5\u201310.\n\nNext, we used the above normalization procedure to re-analyze plod2-/- mutants. We scaled phenotypic data in WT sibling controls by applying Equation 2, using the mean standard length of plod2-/- mutants as the reference length. We did not scale phenotypic data in plod2-/- mutants, as allometric scaling is likely to be different than in WT animals. In our unnormalized analysis of plod2-/- fish (i.e., Figure 6), we observed significant decreases in several morphological quantities including Haem.Vol, Haem.Th, Neur.Vol, Neur.Th, and Cent.Le. In contrast to these low bone mass phenotypes we did not observe any differences in these features following normalization (Haem.Vol: p=0.23, Haem.Th: p=0.33, Neur.Vol: p=0.58, Neur.Th: p=0.56, Cent.Le: p=0.39) (Figure 8, Figure 8\u2014source data 1). Instead, we observed a significant increase in Cent.Vol (p=0.003). Further, we observed a significant increase in centrum, haemal arch, and neural arch TMD (Cent.TMD: p=0.0001, Haem.TMD: p=0.002, Neur.TMD: p=0.002). Since Cent.Le (p=0.39) and Cent.Th (p=0.08) were similar in plod2-/- fish and WT siblings, we surmised that the increase in Cent.Vol may be attributable to an increase in centrum diameter. Consistent with this idea, when we manually examined transverse sections in microCT images (Figure 8L), we observed a clear increase in centrum diameter in plod2-/- mutants relative to similarly-sized, non-sibling WT animals (and to a lesser extent, larger, sibling controls). This phenotype was not previously identified during the initial characterization of the plod2-/- mutant line (Gistelinck et al., 2016b).Collectively, these analyses identify a novel phenotypic feature, centrum expansion, in plod2-/- mutants, and suggest the utility of phenomic-based allometric models as a complimentary analytical tool to reveal mutant phenotypes masked by variations in growth.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig8-v2.jpg)\n\n**Figure 8.:** (A) Skeletal barcodes for WT and plod2-/- fish following removal of allometric effects of body size (n\u00a0=\u00a03/group). (B\u2013K) Phenotypic features as a function of vertebra (mean\u00a0\u00b1\u00a0SE, n\u00a0=\u00a03/group). Phenotypic data in WT sibling controls were subjected to allometric normalization; data in plod2-/- fish are identical to those in Figure 6. Plots associated with a significant difference are colored in a lighter coloring scheme (see text for p-values). Values for TMD were derived by a two-step process in which TMC and volume were subjected to allometric normalization independently, and normalized values for TMC and volume were used to calculate normalized values for TMD. The same plots with y axis set to zero are shown in Figure 8\u2014figure supplement 1. (L) Transverse sections of microCT scans. Centra are highlighted by a red box in each animal. plod2-/- mutants (left) exhibit increased centrum diameter compared to standard length matched, non-clutchmate WT controls (right), and to a lesser extent, WT siblings (middle) of greater standard length. Images show posterior endplate of the sixth precaudal vertebra in all fish.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig8-figsupp1-v2.jpg)\n\n### Identification of opallus as a novel axial skeletal mutant\n\nFinally, based on the potential for FishCuT to identify novel phenotypes in known skeletal mutants, we examined the potential for FishCuT to identify novel axial skeletal mutants among fish populations derived from forward genetic screens. The zebrafish mutant opallus was derived from a forward genetic screen, and exhibits pigmentation abnormalities characterized by excessive xanthophores and depleted melanophores, as well as jaw hypertrophy (McMenamin et al., 2014). opallus harbors a mutation in thyroid stimulating hormone receptor (tshr) identical to a human mutation causing constitutive TSHR activity and hyperthyroidism (McMenamin et al., 2014). These two conditions have been associated with opposing effects on human BMD. Specifically, while hyperthyroidism is traditionally associated with low BMD, TSHR gain-of-function has been associated with high BMD (de Lloyd et al., 2010); it was unknown whether opallus exhibited an axial skeletal phenotype. In a first cohort where we performed an initial screen of n\u00a0=\u00a02 fish (Figure 9A), we observed a clear increase in TMD in opallus that was not present in standard length matched AB controls, or in another mutant derived in a forward genetic screen that exhibits pigmentation defects, pissarro (Quigley et al., 2004) (SL of AB: 23.7\u00a0\u00b1\u00a01.1 mm, SL of opallus: 24.3\u00a0\u00b1\u00a01.4 mm, SL of pissarro: 23.7\u00a0\u00b1\u00a00.1 mm, mean\u00a0\u00b1\u00a0SD). Follow up analyses (n\u00a0=\u00a05/group, SL of AB: 23.7\u00a0\u00b1\u00a00.5 mm, SL of opallus: 24.3\u00a0\u00b1\u00a01.4 mm, mean\u00a0\u00b1\u00a0SD) revealed that opallus exhibited a significant increase in centrum, haemal arch, and neural arch TMD (Cent.TMD: p=0.012, Haem.TMD: p=0.009, Neur.TMD: p=0.006) (Figure 9B\u2013K, Figure 9\u2014source data 1). Morphologically, most features were normal (Cent.Vol: p=0.88, Haem.Vol: p=0.20, Cent.Th: p=0.12, Haem.Th: p=0.38, Neur.Th: p=0.38, Cent.Le: p=0.29) except for neural arch volume, which was significantly decreased in opallus (Neur.Vol: p=0.002). This decrease was most pronounced in anterior vertebrae, with covariate analysis revealing significant associations between vertebrae 1\u20135 and genotype (Figure 9\u2014figure supplement 1).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig9-v2.jpg)\n\n**Figure 9.:** (A) Skeletal barcodes for WT, opallus, and pissarro (n\u00a0=\u00a02 fish/group). Barcodes for opallus, but not pissarro, appear different from WT fish (B\u2013K) Phenotypic features in opallus plotted as a function of vertebra (mean\u00a0\u00b1SE, n\u00a0=\u00a05/group). Plots associated with a significant difference are colored in a lighter coloring scheme (see text for p-values). The same plots with y axis set to zero are shown in Figure 9\u2014figure supplement 2. (L) Maximum intensity projections of microCT scans.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** See Figure 5\u2014figure supplement 1 for interpretation of graph. Significant associations are observed for vertebrae 1\u20135 only.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26014/elife-26014-fig9-figsupp2-v2.jpg)\n\n## Discussion\n\nIn this study, we developed microCT-based methods and a segmentation algorithm, FishCuT, enabling profiling of morphological and densitometric traits at a large number of anatomical sites in the axial skeleton of adult zebrafish. We profiled\u00a0~30,000 data points derived from\u00a0~3600 skeletal elements in wildtype fish of different degrees of developmental progress as well as mutant lines associated with human disease. Our studies reveal virtues of deep phenotyping in a single, complex organ system.\n\nA challenge to the analysis of high-dimensional phenotypic data is the curse of dimensionality: when testing for changes in each feature individually, as a consequence of multiple testing correction, the number of samples required for a statistically reliable result increases exponentially with the number of features assessed. In lieu of analyzing each feature in isolation, we examined whether patterns of element/outcome combinations varied across vertebral bodies were altered in mutant populations. In Monte Carlo simulations, when holding alpha constant, power in the global test was consistently higher compared to t-tests of averaged quantities and t-tests of individual vertebrae, with the relative increase in power greatest at small effect sizes. Further, simulated levels of specificity were consistent with specified values of alpha. Our studies suggest that vertebral phenomic patterns may confer enhanced sensitivity in discriminating mutant phenotypes relative to analyzing individual vertebrae. This attribute may increase productivity in genetic screens, as well as provide opportunities to study genetic variants of smaller effect size, such as those which underlie the overwhelming majority of complex diseases (Gibson, 2012).\n\nIt is important to note that while our workflow is highly sensitive in discriminating mutants that exhibit subtle phenotypic alterations in a large number of bones, other scan resolutions and statistical testing may be appropriate in some cases. For instance, while we found that scans acquired at 21 \u00b5m and 10.5 \u00b5m resolution were comparable in their analysis of bmp1a-/- mutants, it is possible that other mutant lines may present extremely small, thin, or hypomineralized structures that require greater scanning resolution to resolve. In this context, while increasing nominal resolution did not increase power in detecting mutant phenotypes in bmp1a-/- mutants, these findings are not generalizable to all mutant phenotypes. Indeed, if changes in mutants are of a feature size much smaller than the scan resolution, increasing scan resolution would very likely increase assay sensitivity. Further, given the fact that the global test exhibits optimal power when many features exhibit minor changes (Goeman et al., 2006), our workflow will be most optimal when there are many small changes in a large number of vertebrae, while other statistical tests may be more powerful when testing for larger effects in a small number of vertebrae. Finally, the acquisition of additional high-resolution scans in select vertebrae may be desirable to safeguard against the possibility of missing phenotypic abnormalities that could escape detection at lower resolution.\n\nOur studies make at least two contributions toward enabling rapid throughput analysis across a variety of different mutants/backgrounds -- (1) developing the ability to analyze microCT images in less than 5 min/fish using FishCuT, and (2) demonstrating proof-of-concept of the ability to acquire whole-spinal microCT scans at 5 min/fish, if eight fish are scanned simultaneously. Nonetheless, several practical issues must be considered before broad application. This includes designing specimen holders with optimal animal packing (e.g., scanning eight fish simultaneously requires the fish to be physically touching, preventing automatic segmentation). In addition, potential imaging artifacts associated with highly multiplexed scanning strategies need to be characterized. For instance, when scanning two fish at a time, we are able to position each fish equidistant from the scan center. This minimizes potential for erroneous measurements due to beam hardening artifacts in the radial direction. When scanning eight fish at a time this is not possible, and thus effects from beam hardening artifacts could be more significant. Finally, it should be noted that analysis of microCT scans using FishCuT typically takes less than 5 min per animal; this throughput is most likely to be useful for reverse genetic screens requiring analysis of hundreds of specimens, rather than extremely large forward genetic screens where\u00a0~\u00a010,000 animals may require analysis.\n\nBy phenotyping bmp1a-/- and plod2-/- mutants, our studies shed new light on multivariate phenotypes in the zebrafish skeleton associated with human skeletal disease. While bmp1a-/- and plod2-/- mutants exhibited differing effects on indices of bone mass and microarchitecture, both mutants exhibited high TMD. This phenotype is consistent with the bone over-mineralization that is a hallmark of brittle bone disease (Bishop, 2016). While bmp1a-/- mutants exhibit increased TMD in all vertebral compartments (centrum, haemal arch, and neural arch), plod2-/- fish exhibit high TMD in the centrum only. Further, the elevation in Haem.TMD in bmp1a-/- mutants was focused primarily to anteriorly-located vertebrae. Phenotypic abnormalities in human OI has been shown to vary among patients and anatomical site (Cassella et al., 1996). The segregation of phenotypic abnormalities to different anatomical sites is likely to provide important clues into disease pathology; our workflow provides a unifying framework to systematically analyze the mechanistic basis of site-specific segregation of phenotypic abnormalities.\n\nOur Monte Carlo simulations suggest two different cases in which analyzing vertebral phenotypic patterns via the global test confers enhanced sensitivity relative to t-tests of quantities averaged across vertebrae: (1) when the characteristic effect size of a phenotypic feature is uniformly elevated across all vertebrae, or (2) when the characteristic effect size is linearly elevated across vertebrae. In this context, of the three mutants that we analyzed in-depth (bmp1a-/-, plod2-/-, and opallus), 2 out of 3 these mutants exhibited at least one phenotypic measure that was non-uniformly across vertebrae (i.e., Haem.TMD in bmp1a-/- mutants, and Neur.Vol in opallus). For such cases, analyzing each vertebra has clear potential to provide non-redundant phenotypic information. There are other contexts in which non-uniform phenotypic abnormalities may be expected. For instance, genetic mosaicism generated within a CRISPR-based reverse genetic screen in F0 zebrafish (Shah et al., 2015) or an overexpression screen may manifest as different degrees of phenotypic penetrance and expressivity in each vertebral body. In this context, we are currently using both simulation as well as experimental approaches to explore the sensitivity of our workflow in discriminating mutant populations that exhibit variable phenotypic penetrance and expressivity both between and within individuals. Another instance in which non-uniform phenotypic abnormalities may arise is under environmental influences such as mechanical loading. Both non-uniform adaptation to swimming activity (Fiaz et al., 2012) as well as site-specific susceptibility to lordosis (Kranenbarg et al., 2005) have been demonstrated in the teleost spine. In unpublished studies we have expanded our analysis of zebrafish mutants whose orthologs are associated with human brittle bone disease; these studies suggest that mutations in genes that influence bone mechanical integrity may be most phenotypically penetrant in vertebrae that experience the highest mechanical loading.\n\nSince developmental progress in zebrafish is more closely related to standard length than to age (Parichy et al., 2009), the interpretation of mutant phenotypes can substantially differ depending on whether mutants are compared to age-matched WT siblings (which may differ in standard length and thus developmental progress), or non-sibling WT animals matched by standard length (which could mask genetic alterations on developmental progress, and exhibit greater variation in genetics and environmental influences). In high-throughput settings where resource conservation is critical, it is not practical to dedicate resources for both experimental comparisons. Our studies demonstrate that allometric modeling is effective in transforming WT sibling data to a \u2018virtual\u2019 phenome scaled to the mean standard length of age-matched mutants, providing a computational means to enable both length- and age-matched fish comparisons from a single control group. Using this approach, we identified expanded centrum diameter in plod2-/- mutants. In mammals, cortical expansion arises due to bone remodeling, with bone formation on the periosteal surface coupled with resorption on the endosteal surface. It\u00a0is\u00a0unknown whether the increased centrum diameter in plod2-/- mutants is attributable to accelerated bone remodeling.\n\nIn addition to identifying novel phenotypes in known skeletal mutants, we also identified a novel axial skeletal mutant, opallus, harboring a TSHR gain-of-function mutation. Excess TSHR activity has been associated with high BMD in humans (de Lloyd et al., 2010). Notably, unlike plod2-/- and bmp1a-/- mutants, opallus exhibited high TMD in the presence of mostly normal bone mass and morphology, providing evidence of the potential for these traits to be decoupled in zebrafish mutants. More broadly, we propose that expanding our initial analyses of zebrafish mutant phenomes whose orthologs are associated with mammalian bone mass and mineral accrual is likely to facilitate the identification of novel regulators of human bone mass, as well as identify phenotypic signatures in zebrafish that are predictive of human skeletal disease.\n\nA future challenge is to increase the content and throughput of our approach. Since FishCuT supports the DICOM standard, it is readily ported to other microCT systems. In this context, commercial microCT systems optimized for rapid throughput imaging (e.g., through the use larger detectors to increase the number of animals per field of view, higher power x-ray sources to decrease sampling time per image, and robot-based sample changing systems) have been shown to increase imaging throughput by 10 fold or more (Wyatt et al., 2015). Further, Mader et al. described a high-throughput, fully automatic system for synchrotron-based tomographic microscopy that enabled analysis of 1300 mouse femurs (Mader et al., 2015). In regard to image analysis, machine learning-based approaches enable fully automated localization of boundaries of vertebral bodies in human CT/MR data (Chu et al., 2015), and such an approach might be used to automate seeding of segment boundaries, particularly if analysis is restricted to mutants that do not exhibit severe dysmorphic phenotypes. Finally, a long-term challenge is to extend analysis to other skeletal structures, including the craniofacial skeleton (Pardo-Martin et al., 2013). Notably, as microCT scans are archived, these image libraries can be retroactively analyzed as new algorithms are developed, and re-analyzed to identify new genotype-to-phenotype associations.\n\nIn conclusion, we have developed a sensitive workflow for microCT-based skeletal phenomics in adult zebrafish. Our studies provide a foundation to systematically map genotype-to-phenome relationships in zebrafish as a path to advance our understanding of the genetic basis of adult skeletal health.\n\n## Materials and methods\n\n### Zebrafish rearing\n\nThis study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All studies were performed on an approved protocol (#4306\u201301) in accordance with the University of Washington Institutional Animal Care and Use Committee (IACUC). Zebrafish were housed at a temperature of 28\u00b0C on a 14:10 hr light:dark photoperiod. Studies were conducted in mixed sex adult zebrafish. WT ARO and AB fish were obtained from Aquatic Research Organisms (Recidoro et al., 2014) and the Zebrafish International Resource Center (ZIRC, http://zebrafish.org), respectively. opallusb1071 (McMenamin et al., 2014) and pissarroutr8e1 (Quigley et al., 2004) were isolated in forward genetic screens. bmp1asa2416 and plod2sa1768 mutant zebrafish were generated by the Zebrafish Mutation Project (ZMP) and obtained from ZIRC (Kettleborough et al., 2013). For all mutant lines, heterozygous mutant zebrafish were incrossed to obtain homozygous mutants. All fish were housed in plastic tanks on a commercial recirculating aquaculture system. At the desired time point, zebrafish were euthanized by MS-222 overdose or immersion in ice water. For storage, fish were either frozen at \u221220\u00b0C, or fixed in 4% PFA. Comparisons were only performed in fish subjected to the same storage procedure.\n\n### MicroCT scanning\n\nMicroCT scanning was performed using a vivaCT40 (Scanco Medical, Switzerland). Medium-resolution scans (21 \u00b5m voxel resolution) were acquired using the following settings: 55kVp, 145\u03bcA, 1024 samples, 500proj/180\u00b0, 200 ms integration time. High-resolution scans (10.5 \u00b5m voxel resolution) were acquired using the following settings: 55kVp, 145\u03bcA, 2048 samples, 1000proj/180\u00b0, 200 ms integration time. DICOM files of individual fish were generated using Scanco software, and analyzed using the custom software described below. In general, at least two fish were scanned simultaneously in each acquisition.\n\n### Image analysis\n\nImage processing methods were implemented as custom software developed in MATLAB (scripts were tested in v2016.a). To encourage open-source development, we implemented the MIJI package to enable calls to libraries and functions developed in FIJI/ImageJ (Schneider et al., 2012; Schindelin et al., 2012). Further, we developed a graphical user interface (GUI) to facilitate user interaction. Example DICOM images (the bmp1a-/- mutants and clutchmate controls in Figure 5) are available on the Dryad data repository (http://datadryad.org/review?doi=doi:10.5061/dryad.pm41d).\n\nAnalysis consists of several stages. Stage 1 consists of preprocessing, for which we have implemented a preprocessing module in which the user is able to specify a rotation along the anteroposterior axis to orient specimens to an upright position. This module also enables slice-by-slice visualization, as well as mean or maximum intensity projections of unprocessed DICOM images.\n\nStage 2 consists of thresholding. In general, we have found that fish within and across clutches can exhibit significant differences in mineralization, and thus cannot be reliably analyzed using a uniform threshold value. Thus, we calculate thresholds for each animal using a semi-automatic approach. To filter out background, the user draws a ROI outlining the fish in a maximum intensity projection, all values outside this region of interest are set to 0, and the threshold is calculated using the IsoData algorithm in ImageJ (Goeman et al., 2006; Goeman et al., 2004). The threshold value may be adjusted by multiplying it by a correction factor to provide more conservative or stringent thresholding, depending on user needs. Based on a comparison of user defined thresholds and those computed using the approach described above, we multiplied the IsoData threshold by 0.73 across all experiments.\n\nStage 3 consists of vertebral segmentation. Our approach is to isolate individual vertebrae so that each vertebra is composed of one or more connected components that do not contain voxels from different vertebra. The user initiates planes of separation between vertebra by drawing a \u2018separation line\u2019 between each pair of centra. Voxels within a plane defined by the separation line are set to 0, the connected components are computed, and connected component labels are tallied for each of the two volumes separated by the plane. If the connected components with the plurality of votes in the two regions are distinct, the algorithm stops; otherwise, the separation line is extended, and the process repeated. While we found this approach robustly separated centra in all samples (including those that exhibited significant morphological deficits, see below), we encountered some cases in which ribs close to pterygiophores and associated fin rays would be considered as a single connected structure. In this case, we have implemented a manual \u2018cutting\u2019 tool to provide the user with the ability to sever connections between skeletal elements.\n\nStage 4 consists of vertebral assignment. Here, the user identifies each vertebrae\u2019s components using a user-interactive, color-coded map of connected components.\n\nStage 5 consists of neural arch, centrum, and haemal arch segmentation. Using a supervised algorithm, FishCuT creates 3D image masks of the three regions for each vertebral body. The 3D masks are formed in part by utilizing the user\u2019s inputs to the separation-plane growing algorithm, i.e. the endpoints of the line separating adjacent centra. We create the 3D neural arch mask as the entire region above the line extended between the two upper-most inputs for a vertebra. The centrum mask is defined by the region inside all four points for a vertebra. We include an adjustable buffer, with a default of five voxels, surrounding the centrum mask. The haemal arch mask is defined by substracting the region of the vertebrae from the regions defined by the centrum and neural arch masks. All segmentations can be visually inspected from an outputted image file containing colored-coded regions superimposed on the original image.\n\nStage 6 is the calculation of phenotypic features. Local thickness is computed using a model-independent method (Hildebrand and Ruegsegger, 1997) implemented as the Local Thickness plugin in ImageJ (Dougherty and Kunzelmann, 2007). Volume and surface area were computed using the nnz and bwperim functions in MATLAB. TMD was computed using the following relationship: mgHA/cm3 = (x/4096)*slope\u00a0+\u00a0intercept, where x\u00a0=\u00a0the pixel intensity in the DICOM image, and the values for slope (281.706) and intercept (\u2212195.402) were acquired during scanner calibration.\n\n### Statistical analysis\n\nFor mutant fish with a known axial skeletal phenotype (bmp1a-/- and plod2-/-), results are reported from a single experiment; for mutant fish with a newly identified axial skeletal phenotype, results are reported from two experiments (an initial screen with n\u00a0=\u00a02 fish/group, followed by follow up analysis with n\u00a0=\u00a05 fish/group). Each biological replicate represents one technical replicate. Outliers were not identified in the study. All statistical analyses were performed in GraphPad Prism or R (Team RC, 2015). For comparisons of medium and high scanning resolution, linear regressions were performed with intercept set to zero. Two tailed t-tests with unequal variances were used for univariate analysis between two groups. In all other cases, multivariate analysis was performed using the globaltest package (Goeman et al., 2006; Goeman et al., 2004). p<0.05 was considered statistically significant in all cases.\n",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "8d4a9556-4428-4cf0-957b-84c9d5922ea2",
+      "submission_id": "28e02a2d-50c7-42af-96a9-78c2cb0a8e01",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard M White, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26014.036](https://doi.org/10.7554/eLife.26014.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"microCT-Based Skeletal Phenomics in Zebrafish Reveals Virtues of Deep Phenotyping at the Whole-Organism Scale\" for consideration by eLife. Your article has been favorably evaluated by Didier Stainier (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nGeneral comments:\n\nIn general, all three reviewers felt this is an important contribution to the field, since it allows the zebrafish to be more readily used for analysis of complex phenotypes. Broadly, this falls under the category of phenomics, a rapidly growing field across multiple disciplines. The methodology and algorithms implemented here are well-executed and appear technically sound. However, the reviewers also felt that the authors tended to overstate their findings, and that they did not truly demonstrate that this could be used for high throughput analysis across many different mutants/backgrounds. Several times they refer to their approach as \"whole-body\" phenotyping; even with respect to the skeleton, they are not looking at the whole body, but only to a limited portion (the axial skeleton), of uniform embryological origin. They also say they are looking at \"hundreds\" of traits. This is only accurate if you count each aspect of each vertebra as a unique trait. For example, I would argue that tissue mineral density almost certainly is not unique for each vertebra, but rather varies systematically as one aspect of a mutant phenoptype. In addition, as detailed below, there are some questions regarding both the sensitivity and resolution of their methods, and how easily it can be generalized for new users. By addressing these concerns, we believe the paper will be greatly improved.\n\nEssential required revisions:\n\n1) Given the methods focus of this manuscript, the results in Figure 4 are critical to the conclusions of the study. There are several concerns regarding this figure.a) The authors utilize Monte Carlo simulations to estimate the power, sensitivity, and specificity of their method. However, important details regarding this simulation are absent. In particular, what type of probability distribution was used for the simulation? What evidence do the authors have that the measured phenotype (total TMD) follows this distribution function in wild type zebrafish? Are 3 fish per arm sufficient to support the assumption that this is the true probability distribution function, and to reliably measure it? If this cannot be justified, the authors should include additional fish in this analysis. Given that the authors describe their method as \"enabling rapid (<5min/fish), whole body profiling,\" it is surprising that only 3 fish per arm were used for this figure. This is particularly concerning for panel 4F, in which two groups of n=2 are being sampled from a population of 3 fish.\n\nb) While the authors devote considerable attention to total TMD, it is unclear how this test performs for other phenotypic measures. Does their method also provide increased sensitivity with similar specificity for other measures? An exploration of additional measures should be included to provide a more complete picture of the performance of this assay.\n\n2) The authors clearly demonstrate in Figure 3 that for the second pre-caudal vertebrae there is a strong linear relationship between data acquired at high and medium resolution. In order to demonstrate how robust this relationship is across all vertebrae, the authors should provide a summary panel. For example, they could generate a plot analogous to that in Figure 2 using r-squared values instead of correlation coefficients.\n\n3) One of the assumptions of removing allometric effects as the authors have done in Figures 7 and 8 is that, as stated in Lleonart, Salat and Torres, 2000 \"the available observations cover different values of X and it is recommended that sampling should cover systematically the entire range of variation of X in order to get good estimates of a and b.\" Related to the point discussed for Figure 4, the authors should address (and provide evidence) whether n=3 (Figure 8) is sufficient to meet this criteria. If not, additional fish should be included in order to accurately account for allometric effects.\n\n4) The authors should provide example data along with their FishCuT source code to allow readers to better understand the method when attempting to implement it for their own data.\n\n5) Zebrafish have the potential for use in overexpression screens, where phenotypes would exist as gradations instead of binary outcomes. Have the authors ever looked at fish with an overexpression phenotype where the phenotype is variable or incompletely penetrant? How robust is their analytic method to this type of data? This would be useful for ensuring the broad applicability of the method, but is not a requirement for publication.\n",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb7b6be4-3c08-412d-98c5-6ef31b851463",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C1",
+      "claim": "Zebrafish are conducive to whole-body microCT imaging at high resolution due to their small size.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their small size, zebrafish are conducive to whole-body microCT imaging at high resolution (Cheng et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cheng et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "2b548259-e83f-428b-aa60-9f63a20bc536",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C2",
+      "claim": "Previous studies have demonstrated radiopacity in adult zebrafish vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated radiopacity in adult zebrafish vertebrae (Fisher et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fisher et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "1ace94d3-3b5d-4f27-a66d-a1ad8cfc2bf1",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C3",
+      "claim": "Previous studies have demonstrated the feasibility of imaging vertebral morphology in adult zebrafish via microCT.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated radiopacity in adult zebrafish vertebrae (Fisher et al., 2003) and the feasibility of imaging vertebral morphology in adult zebrafish via microCT (Buchan et al., 2014; Gray et al., 2014; Gistelinck et al., 2016a; Asharani et al., 2012; Spoorendonk et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "3fbe841d-489d-4561-8ef3-3bae46b173d1",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C4",
+      "claim": "Two fish can be imaged simultaneously at 21 \u00b5m resolution in approximately 20 minutes per fish for fish that are approximately 20 mm in standard length.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in most cases we imaged two fish at a time, enabling whole spines to be acquired at 21 \u00b5m resolution in as little as ~20 min/fish for fish that were ~20 mm in standard length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "d97f034f-d65b-4f09-a547-7b808d767c1f",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C5",
+      "claim": "Up to eight animals can be scanned simultaneously at 21 \u00b5m resolution, enabling whole spines to be imaged in an effective scan time of approximately 5 minutes per fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in a single proof-of-concept study, we found that up to eight animals could be scanned simultaneously at 21 \u00b5m resolution, enabling whole spines to be imaged in an effective scan time of ~5 min/fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from a proof-of-concept study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "8409457f-6029-4b97-af09-24c74c44be99",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C6",
+      "claim": "Approximately 60 minutes is required to manually segment a single vertebra of an adult fish scanned at 21 \u00b5m resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that ~60 min was required to manually segment a single vertebra of an adult fish scanned at 21 \u00b5m resolution (~60 image slices) using a user-assisted segmentation tool, a rate that would require >24 hr to segment the ~27 precaudal and caudal vertebrae that comprise the zebrafish vertebral column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "7ef2179b-586c-48ef-9d53-bcdf6cffe13f",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C7",
+      "claim": "The zebrafish vertebral column comprises approximately 27 precaudal and caudal vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that ~60 min was required to manually segment a single vertebra of an adult fish scanned at 21 \u00b5m resolution (~60 image slices) using a user-assisted segmentation tool, a rate that would require >24 hr to segment the ~27 precaudal and caudal vertebrae that comprise the zebrafish vertebral column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about zebrafish anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "5746487a-9326-442c-9807-79b777b8b238",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C8",
+      "claim": "FishCuT is a microCT analysis toolkit that couples supervised segmentation with connectivity analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this barrier, we developed FishCuT, a microCT analysis toolkit that couples supervised segmentation with connectivity analysis to enable computation of descriptors of bone morphology, mass, and mineralization at a large number of anatomical sites in the vertebral column of adult zebrafish (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the development of FishCuT as reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "630d4fd8-7728-47f4-a614-249533a2071c",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C9",
+      "claim": "FishCuT enables computation of descriptors of bone morphology, mass, and mineralization at a large number of anatomical sites in the vertebral column of adult zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this barrier, we developed FishCuT, a microCT analysis toolkit that couples supervised segmentation with connectivity analysis to enable computation of descriptors of bone morphology, mass, and mineralization at a large number of anatomical sites in the vertebral column of adult zebrafish (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description of FishCuT and Figure 1 showing the workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "e36e1c25-8ffc-4c08-8a33-1027f41a6f1c",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C10",
+      "claim": "FishCuT computes four primary measurements for each skeletal element: Tissue Mineral Density (TMD), Volume (Vol), Thickness (Th), and Surface Area (SA).",
+      "claim_type": "EXPLICIT",
+      "source": "For each skeletal element, four primary measurements are computed: Tissue Mineral Density (TMD, mgHA/cm3), Volume (Vol, \u00b5m3), Thickness (Th, \u00b5m), and Surface Area (SA, \u00b5m2) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description of FishCuT's measurements and Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "1426a9a3-7997-4380-9499-c1bcda4071f0",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C11",
+      "claim": "FishCuT computes centrum length for each vertebra.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the above measurements, FishCuT computes centrum length (Cent.Le, \u00b5m), as well as intra-specimen variation in TMD and thickness (i.e. TMD.sd and Th.sd, respectively [Bouxsein et al., 2010; Burghardt et al., 2008]) for each skeletal element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a measurement computed by FishCuT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "b80c4a3f-67ef-4b39-b919-152622cefaa0",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C12",
+      "claim": "FishCuT computes intra-specimen variation in TMD and thickness for each skeletal element.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the above measurements, FishCuT computes centrum length (Cent.Le, \u00b5m), as well as intra-specimen variation in TMD and thickness (i.e. TMD.sd and Th.sd, respectively [Bouxsein et al., 2010; Burghardt et al., 2008]) for each skeletal element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bouxsein et al., 2010 and Burghardt et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "fe89a621-b741-4401-8898-a67147595d59",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C13",
+      "claim": "Currently, 25 different quantities are computed for each vertebra by FishCuT.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, 25 different quantities are computed for each vertebra (Cent.TMD, Cent.Th, Cent.Vol, Cent.Le, Cent.SA, Cent.TMD.sd, Cent.Th.sd, Neur.TMD, Neur.Th, Neur.Vol, Neur.SA, Neur.TMD.sd, Neur.Th.sd, Haem.TMD, Haem.Th, Haem.Vol, Haem.SA, Haem.TMD.sd, Haem.Th.sd, Tot.TMD, Tot.Th, Tot.Vol, Tot.SA, Tot.TMD.sd, Tot.Th.sd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim lists the specific measurements computed by FishCuT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "9a3bd2a6-7eab-467a-9260-28c3a090b5f2",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C14",
+      "claim": "Analyzing 24 vertebrae results in 600 phenotypic measures (24 \u00d7 25 = 600).",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of measures that are computed is dependent on the number of vertebrae which are analyzed by the user (i.e., by seeding separation boundaries). Analyzing 24 vertebrae results in 24 \u00d7 25 = 600 phenotypic measures, and usually takes <5 min/fish (~100 x faster than manual segmentation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a mathematical calculation of the number of measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "0b33ae75-d13b-45d4-ba54-1e5087631457",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C15",
+      "claim": "FishCuT analysis usually takes less than 5 minutes per fish, which is approximately 100 times faster than manual segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing 24 vertebrae results in 24 \u00d7 25 = 600 phenotypic measures, and usually takes <5 min/fish (~100 x faster than manual segmentation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing FishCuT to manual segmentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "477436b4-c256-42db-ad77-e741417652f6",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C16",
+      "claim": "In the study, between 22-28 vertebrae were analyzed, with an average of 24.1 \u00b1 1.4 vertebrae per fish (mean \u00b1 SD, n = 34 fish).",
+      "claim_type": "EXPLICIT",
+      "source": "In our studies we analyzed between 22\u201328 vertebrae, with an average of 24.1 \u00b1 1.4 vertebrae per fish (mean \u00b1 SD, n = 34 fish).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "7eeb8a5e-1c98-4da4-b48f-e87dcebe4588",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C17",
+      "claim": "A Dice similarity coefficient (DSC) of 0.932 \u00b1 0.001 (mean \u00b1 SD, n = 2 vertebrae) was computed when comparing FishCuT and manual segmentation, excluding pixels with intensities less than the threshold used in the FishCuT analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed a DSC of 0.932 \u00b1 0.001 (mean \u00b1 SD, n = 2 vertebrae) when we excluded pixels with intensities less than the threshold used in the FishCuT analysis, exceeding the value of 0.7 suggested to indicate excellent agreement between manual and automated segmentation approaches (Zijdenbos et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing FishCuT to manual segmentation, with citation to Zijdenbos et al., 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "e3b3ad9b-b79d-4795-acae-e35840eb437c",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C18",
+      "claim": "A DSC value of 0.7 is suggested to indicate excellent agreement between manual and automated segmentation approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed a DSC of 0.932 \u00b1 0.001 (mean \u00b1 SD, n = 2 vertebrae) when we excluded pixels with intensities less than the threshold used in the FishCuT analysis, exceeding the value of 0.7 suggested to indicate excellent agreement between manual and automated segmentation approaches (Zijdenbos et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zijdenbos et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "9ff01c1d-20ec-4534-ad11-000242e47376",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C19",
+      "claim": "A mean difference of 3.4 \u00b1 1.2% (mean \u00b1 SD, n = 3 fish) in centrum length was computed when serially performing primary and secondary scans of the same animal.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed a mean difference of 3.4 \u00b1 1.2% (mean \u00b1 SD, n = 3 fish) in centrum length, a measure that is calculated directly from user-specified 'seed' locations of the vertebral boundaries, when we serially performed primary and secondary scans of the same animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data assessing reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "face4143-2403-4bdd-8ec6-45dc1b9305eb",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C20",
+      "claim": "The median absolute Pearson correlation coefficient among phenotypic measures was 0.34 across 34 analyzed fish.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a relatively low median absolute Pearson correlation coefficient of 0.34 among measures (Figure 2, Figure 2\u2014source data 1), similar to the value of 0.3 attained by Pardo-Martin et al. during high-content profiling of the zebrafish craniofacial skeleton (Pardo-Martin et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 2, with citation to Pardo-Martin et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "518ef234-1247-455d-9f8a-b4b2ca5f67e2",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C21",
+      "claim": "Pardo-Martin et al. attained a median absolute Pearson correlation coefficient of 0.3 during high-content profiling of the zebrafish craniofacial skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a relatively low median absolute Pearson correlation coefficient of 0.34 among measures (Figure 2, Figure 2\u2014source data 1), similar to the value of 0.3 attained by Pardo-Martin et al. during high-content profiling of the zebrafish craniofacial skeleton (Pardo-Martin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pardo-Martin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "451fe4da-d61f-4561-8902-18f071689a06",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C22",
+      "claim": "The median absolute Pearson correlation coefficient was relatively invariant with increasing number of vertebrae used for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantity was relatively invariant with increasing number of vertebrae used for analysis (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "2d8ffac9-e66d-4eed-a6d6-4d51b5e57c74",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C23",
+      "claim": "Linear regressions between measurements at 21 \u00b5m and 10.5 \u00b5m resolution showed R\u00b2 values ranging from 0.98 to >0.99.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we observed extremely high correlations between values attained at the two scanning resolutions, with R2 values ranging from 0.98 to >0.99.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing measurements at two resolutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "42871f9f-aa2c-4954-8653-2e3435b56d3f",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C24",
+      "claim": "Slopes of linear regressions between measurements at 21 \u00b5m and 10.5 \u00b5m resolution ranged from 0.90 to 0.91 for TMD measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, slopes deviated slightly from unity: slopes ranged from 0.90 to 0.91 for TMD measurements, while it ranged 1.18 to 1.21 for thickness measurements (we did not observe a consistent trend for volumetric measurements).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing measurements at two resolutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "a9ee8359-215d-4ad3-83ad-defbdbe35e60",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C25",
+      "claim": "Slopes of linear regressions between measurements at 21 \u00b5m and 10.5 \u00b5m resolution ranged from 1.18 to 1.21 for thickness measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, slopes deviated slightly from unity: slopes ranged from 0.90 to 0.91 for TMD measurements, while it ranged 1.18 to 1.21 for thickness measurements (we did not observe a consistent trend for volumetric measurements).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing measurements at two resolutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4ee74c93-afd5-4f4f-b175-4309341a2605",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C26",
+      "claim": "The deviation from unity in slopes is likely due to partial volume effects (PVEs).",
+      "claim_type": "EXPLICIT",
+      "source": "This deviation from unity is likely to due to partial volume effects (PVEs; an inherent property of microCT images that emerges from projecting a continuous object onto a discrete grid [Rittweger et al., 2004]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data, with citation to Rittweger et al., 2004.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "8163083e-1e44-478b-96fb-1c57353301ae",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C27",
+      "claim": "Partial volume effects are an inherent property of microCT images that emerge from projecting a continuous object onto a discrete grid.",
+      "claim_type": "EXPLICIT",
+      "source": "This deviation from unity is likely to due to partial volume effects (PVEs; an inherent property of microCT images that emerges from projecting a continuous object onto a discrete grid [Rittweger et al., 2004]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rittweger et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "8e83ac05-e486-48ff-bcba-8dab4d1e861d",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C28",
+      "claim": "T-tests for differences in single vertebrae between WT and bmp1a-/- fish yielded similar p-values regardless of scan resolution used.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the high correlation in measurements attained at each resolution, we observed minimal impact of PVEs on sensitivity in discriminating mutant phenotypes, as t-tests for differences in single vertebrae between WT and bmp1a-/- fish yielded similar p-values regardless of scan resolution used (see Figure 3 for values).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "0795093a-ad1b-4550-889b-8069d1473c95",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C29",
+      "claim": "MicroCT scans at high and medium resolutions provided highly correlated information on each measure.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these analyses suggest that microCT scans at high and medium resolutions provided highly correlated information on each measure, and were comparable in their ability to discriminate WT from mutant phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing measurements at two resolutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "36597cf0-836a-458d-9c59-5817186d5b15",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C30",
+      "claim": "MicroCT scans at high and medium resolutions were comparable in their ability to discriminate WT from mutant phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these analyses suggest that microCT scans at high and medium resolutions provided highly correlated information on each measure, and were comparable in their ability to discriminate WT from mutant phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing measurements at two resolutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "2c21d447-e16e-47c5-9465-d7ec12d31df7",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C31",
+      "claim": "In humans, mutations in BMP1 result in a rare recessive form of Osteogenesis Imperfecta (OI).",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, mutations in BMP1 result in a rare recessive form of the brittle bone disease Osteogenesis Imperfecta (OI) (Asharani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Asharani et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "07e4c003-cb55-4107-ad15-03a2145d44d7",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C32",
+      "claim": "The zebrafish frilly fins (frf) mutant harbors mutations in bmp1a.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, the frilly fins (frf) mutant harbors mutations in bmp1a (Asharani et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Asharani et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "556532b2-512a-4fb9-adc5-9f3f7884b8f0",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C33",
+      "claim": "The zebrafish frilly fins (frf) mutant exhibits high vertebral bone mineral density (BMD) in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, the frilly fins (frf) mutant harbors mutations in bmp1a (Asharani et al., 2012) and exhibits high vertebral bone mineral density (BMD) in adults, mimicking the high BMD phenotype in humans with OI caused by BMP1 mutations (Asharani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Asharani et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "7d18a85f-5577-4d69-b6e8-4a8a90e1c74b",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C34",
+      "claim": "The zebrafish frilly fins (frf) mutant mimics the high BMD phenotype in humans with OI caused by BMP1 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, the frilly fins (frf) mutant harbors mutations in bmp1a (Asharani et al., 2012) and exhibits high vertebral bone mineral density (BMD) in adults, mimicking the high BMD phenotype in humans with OI caused by BMP1 mutations (Asharani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Asharani et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "e660e427-05e3-4ead-9242-19770e5b24e6",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C35",
+      "claim": "In bmp1a-/- mutants, centrum volume was significantly increased (Cent.Vol: p=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in regard to bone mass, centrum volume was significantly increased (Cent.Vol: p=0.007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "f4afab12-7921-41fa-a97e-bbbe00b35722",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C36",
+      "claim": "In bmp1a-/- mutants, bone thickness was significantly elevated in all skeletal elements (Cent.Th: p=0.0007, Haem.Th: p=0.048, Neur.Th: p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, bone thickness was significantly elevated in all skeletal elements (Cent.Th: p=0.0007, Haem.Th: p=0.048, Neur.Th: p=0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "14b0099b-34e1-41c8-8135-7b62a121f09d",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C37",
+      "claim": "In bmp1a-/- mutants, no significant differences were observed with respect to haemal/neural arch volume (Haem.Vol: p=0.07, Neur.Vol: p=0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were observed with respect to haemal/neural arch volume (Haem.Vol: p=0.07, Neur.Vol: p=0.16) or centrum length (Cent.Le: p=0.051).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "11262ad8-9b9e-4d4e-9cc9-447586d59f3d",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C38",
+      "claim": "In bmp1a-/- mutants, no significant differences were observed with respect to centrum length (Cent.Le: p=0.051).",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were observed with respect to haemal/neural arch volume (Haem.Vol: p=0.07, Neur.Vol: p=0.16) or centrum length (Cent.Le: p=0.051).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "20eba41b-b437-447e-ab65-4c6f0a31df37",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C39",
+      "claim": "In bmp1a-/- mutants, TMD was significantly elevated in all skeletal elements (Cent.TMD: p=0.003, Haem.TMD: p=0.006, Neur.TMD: p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "In regard to bone mineralization, TMD was significantly elevated in all skeletal elements (Cent.TMD: p=0.003, Haem.TMD: p=0.006, Neur.TMD: p=0.006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "85bd2a05-cca7-4f1d-9340-462d76a43f8d",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C40",
+      "claim": "In bmp1a-/- mutants, Haem.TMD appeared to be differentially elevated in precaudal (first ten) vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "While Cent.TMD and Neur.TMD appeared to be uniformly elevated across all vertebrae, Haem.TMD appeared to be differentially elevated in precaudal (first ten) vertebrae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "1781c268-5f39-4b70-9357-44856d072576",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C41",
+      "claim": "In bmp1a-/- mutants, only vertebrae 2, 3, 4, and 7 were significantly associated with genotype in covariate analysis of Haem.TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the covariates functionality in the globaltest package in R to identify vertebral clusters that exhibit a significant association with genotype. We found that only vertebrae 2, 3, 4, and 7 were significantly associated with genotype (Figure 5\u2014figure supplement 1), consistent with the notion that precaudal vertebrae were differentially affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4f1ff22d-12f3-42d9-94d5-e46ab959f83d",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C42",
+      "claim": "Mutations in PLOD2 are associated with Bruck syndrome, a recessive condition resembling OI.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in PLOD2 are associated with Bruck syndrome, a recessive condition resembling OI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about human genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "adf86042-8aa3-42b8-a761-8ea192b81115",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C43",
+      "claim": "Previous studies revealed high vertebral BMD in adult zebrafish with mutants in bmp1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies revealed high vertebral BMD in adult zebrafish with mutants in bmp1a, (Asharani et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Asharani et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "d6a6c90e-b057-4e33-b99a-f7a7a4382345",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C44",
+      "claim": "For plod2-/- mutants, adult animals were found to exhibit vertebral compressions, distorted vertebrae, and excessive bone formation.",
+      "claim_type": "EXPLICIT",
+      "source": "For plod2-/- mutants, adult animals were found to exhibit vertebral compressions, distorted vertebrae, and excessive bone formation (Gistelinck et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gistelinck et al., 2016a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "c078a66e-5c93-4fe0-b5c4-aa445a608dc1",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C45",
+      "claim": "Previous microCT analyses showed higher Centrum TMD in plod2-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous microCT analyses showed higher Centrum TMD in these mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim refers to previous studies on plod2-/- mutants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "d5874da3-a5bf-4957-bdc4-2d29c7eae9c7",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C46",
+      "claim": "In plod2-/- mutants, centrum TMD was significantly elevated (Cent.TMD: p=0.038).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we observed significantly elevated TMD in the centrum (Cent.TMD: p=0.038) but not haemal/neural arches (Haem.TMD: p=0.91, Neur.TMD: p=0.53) (Gistelinck et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study, with citation to Gistelinck et al., 2016a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "afb0ef6a-32cc-4408-8008-6c6913ca10e6",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C47",
+      "claim": "In plod2-/- mutants, haemal and neural arch TMD were not significantly different from controls (Haem.TMD: p=0.91, Neur.TMD: p=0.53).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we observed significantly elevated TMD in the centrum (Cent.TMD: p=0.038) but not haemal/neural arches (Haem.TMD: p=0.91, Neur.TMD: p=0.53) (Gistelinck et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4853b1b4-a193-47f4-9018-0a69ac4b2603",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C48",
+      "claim": "In plod2-/- mutants, centrum length was significantly decreased (Cent.Le: p=6.5\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observed a significant decrease in centrum length (Cent.Le: p=6.5\u00d710\u22125), as reported previously (Gistelinck et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study, with citation to Gistelinck et al., 2016a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "7be713c2-6dfe-4319-8b4b-57957a1b95db",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C49",
+      "claim": "In plod2-/- mutants, haemal and neural arch volume were significantly decreased (Haem.Vol: p=0.018, Neur.Vol: p=0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologically, plod2-/- mutants exhibited a low bone mass phenotype in the haemal and neural arches (Haem.Vol: p=0.018, Neur.Vol: p=0.012), but not centrum (p=0.15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4ddf42b6-0155-440b-8fb5-7921208928b7",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C50",
+      "claim": "In plod2-/- mutants, centrum volume was not significantly different from controls (p=0.15).",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologically, plod2-/- mutants exhibited a low bone mass phenotype in the haemal and neural arches (Haem.Vol: p=0.018, Neur.Vol: p=0.012), but not centrum (p=0.15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "a1b7bc54-4dc9-4005-8342-571542bfe722",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C51",
+      "claim": "In plod2-/- mutants, haemal and neural arch thickness were significantly decreased (Haem.Th: p=0.013, Neur.Th: p=0.034).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, plod2-/- mutants exhibited decreased haemal and neural arch thickness (Haem.Th: p=0.013, Neur.Th: p=0.034), but not centrum thickness (p=0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "699aa1f1-711e-4477-ad24-88ea29f91c1b",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C52",
+      "claim": "In plod2-/- mutants, centrum thickness was not significantly different from controls (p=0.47).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, plod2-/- mutants exhibited decreased haemal and neural arch thickness (Haem.Th: p=0.013, Neur.Th: p=0.034), but not centrum thickness (p=0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "7655d4b7-4c4b-433b-8da5-e8ad1b5661d0",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C53",
+      "claim": "In zebrafish, developmental progress is more closely related to standard length than to age.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, developmental progress is more closely related to standard length than to age (Parichy et al., 2009; McMenamin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Parichy et al., 2009 and McMenamin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "ae66d9e6-2c32-4fef-8797-ae3aff7326d4",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C54",
+      "claim": "Most phenotypic features significantly deviated from isometric growth with respect to standard length.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we found that most features significantly deviated from isometric growth (i.e., proportional relationships were not preserved with growth) with respect to standard length (Figure 7\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 7\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "2c0a2ae2-0adc-4ff0-816b-47deb284798c",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C55",
+      "claim": "Features associated with thickness and volume exhibited negative allometry (scaling exponents lower than those expected for isometric growth).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, features associated with thickness and volume exhibited negative allometry (scaling exponents lower than those expected for isometric growth), while TMC exhibited positive allometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "ddf127fe-91b5-477a-b9aa-dc515de96b52",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C56",
+      "claim": "TMC exhibited positive allometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, features associated with thickness and volume exhibited negative allometry (scaling exponents lower than those expected for isometric growth), while TMC exhibited positive allometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "623711a0-a55d-461a-b31f-27ddf335a931",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C57",
+      "claim": "When allometric normalization was applied to WT animals, the coefficient of variability was substantially reduced compared to unnormalized values.",
+      "claim_type": "EXPLICIT",
+      "source": "When we applied this relationship to the phenomic profiles from the WT animals in our ontogenetic series (using the mean standard length of all WT fish as the reference standard length), we found that the coefficient of variability was substantially reduced compared to unnormalized values, as well as when quantities were normalized by an alternate transformation, 1/SL (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "aa989715-d6ce-4c2e-b7e3-8acca5fa4bdf",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C58",
+      "claim": "Following allometric normalization, several morphological quantities in plod2-/- fish that were significantly decreased in unnormalized analysis were no longer significantly different (Haem.Vol: p=0.23, Haem.Th: p=0.33, Neur.Vol: p=0.58, Neur.Th: p=0.56, Cent.Le: p=0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "In our unnormalized analysis of plod2-/- fish (i.e., Figure 6), we observed significant decreases in several morphological quantities including Haem.Vol, Haem.Th, Neur.Vol, Neur.Th, and Cent.Le. In contrast to these low bone mass phenotypes we did not observe any differences in these features following normalization (Haem.Vol: p=0.23, Haem.Th: p=0.33, Neur.Vol: p=0.58, Neur.Th: p=0.56, Cent.Le: p=0.39) (Figure 8, Figure 8\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4a624584-c81c-483f-9a5c-30bcdb8ac943",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C59",
+      "claim": "Following allometric normalization, a significant increase in Cent.Vol was observed in plod2-/- fish (p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we observed a significant increase in Cent.Vol (p=0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "3ec612f1-7e73-471b-9b39-9d7e5185586e",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C60",
+      "claim": "Following allometric normalization, a significant increase in centrum, haemal arch, and neural arch TMD was observed in plod2-/- fish (Cent.TMD: p=0.0001, Haem.TMD: p=0.002, Neur.TMD: p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observed a significant increase in centrum, haemal arch, and neural arch TMD (Cent.TMD: p=0.0001, Haem.TMD: p=0.002, Neur.TMD: p=0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "76f7e759-02b8-471f-8c61-c8abcc108070",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C61",
+      "claim": "plod2-/- mutants exhibit increased centrum diameter compared to similarly-sized, non-sibling WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, when we manually examined transverse sections in microCT images (Figure 8L), we observed a clear increase in centrum diameter in plod2-/- mutants relative to similarly-sized, non-sibling WT animals (and to a lesser extent, larger, sibling controls).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 8L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "90186be6-05bb-4c82-9892-79614403ce04",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C62",
+      "claim": "The increased centrum diameter phenotype in plod2-/- mutants was not previously identified during the initial characterization of the plod2-/- mutant line.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was not previously identified during the initial characterization of the plod2-/- mutant line (Gistelinck et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison to previous studies, with citation to Gistelinck et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "cdf3bffa-842c-49a5-9292-d25cf6593ce4",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C63",
+      "claim": "The zebrafish mutant opallus was derived from a forward genetic screen.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish mutant opallus was derived from a forward genetic screen, and exhibits pigmentation abnormalities characterized by excessive xanthophores and depleted melanophores, as well as jaw hypertrophy (McMenamin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to McMenamin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "6bf2cd7e-9424-493b-80c3-38dd66eb8c79",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C64",
+      "claim": "opallus exhibits pigmentation abnormalities characterized by excessive xanthophores and depleted melanophores, as well as jaw hypertrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish mutant opallus was derived from a forward genetic screen, and exhibits pigmentation abnormalities characterized by excessive xanthophores and depleted melanophores, as well as jaw hypertrophy (McMenamin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to McMenamin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "c32a4692-a0b3-4077-9c29-e85e9011828f",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C65",
+      "claim": "opallus harbors a mutation in thyroid stimulating hormone receptor (tshr) identical to a human mutation causing constitutive TSHR activity and hyperthyroidism.",
+      "claim_type": "EXPLICIT",
+      "source": "opallus harbors a mutation in thyroid stimulating hormone receptor (tshr) identical to a human mutation causing constitutive TSHR activity and hyperthyroidism (McMenamin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to McMenamin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "31ab3c7b-0e97-455d-921c-132cebd95abf",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C66",
+      "claim": "Hyperthyroidism is traditionally associated with low BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "These two conditions have been associated with opposing effects on human BMD. Specifically, while hyperthyroidism is traditionally associated with low BMD, TSHR gain-of-function has been associated with high BMD (de Lloyd et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to de Lloyd et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "cb0e5633-2cb9-4de6-b9ed-f8176cf09c68",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C67",
+      "claim": "TSHR gain-of-function has been associated with high BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "These two conditions have been associated with opposing effects on human BMD. Specifically, while hyperthyroidism is traditionally associated with low BMD, TSHR gain-of-function has been associated with high BMD (de Lloyd et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to de Lloyd et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "25eec930-f9fa-4152-9540-a61bdd8c8a06",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C68",
+      "claim": "opallus exhibited a significant increase in centrum, haemal arch, and neural arch TMD (Cent.TMD: p=0.012, Haem.TMD: p=0.009, Neur.TMD: p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "Follow up analyses (n = 5/group, SL of AB: 23.7 \u00b1 0.5 mm, SL of opallus: 24.3 \u00b1 1.4 mm, mean \u00b1 SD) revealed that opallus exhibited a significant increase in centrum, haemal arch, and neural arch TMD (Cent.TMD: p=0.012, Haem.TMD: p=0.009, Neur.TMD: p=0.006) (Figure 9B\u2013K, Figure 9\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "feb11c6c-dfe0-40fc-8669-b18d0e3532fe",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C69",
+      "claim": "In opallus, most morphological features were normal (Cent.Vol: p=0.88, Haem.Vol: p=0.20, Cent.Th: p=0.12, Haem.Th: p=0.38, Neur.Th: p=0.38, Cent.Le: p=0.29).",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologically, most features were normal (Cent.Vol: p=0.88, Haem.Vol: p=0.20, Cent.Th: p=0.12, Haem.Th: p=0.38, Neur.Th: p=0.38, Cent.Le: p=0.29) except for neural arch volume, which was significantly decreased in opallus (Neur.Vol: p=0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "97a69a14-276a-4c34-bdb6-a75f7969d897",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C70",
+      "claim": "In opallus, neural arch volume was significantly decreased (Neur.Vol: p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologically, most features were normal (Cent.Vol: p=0.88, Haem.Vol: p=0.20, Cent.Th: p=0.12, Haem.Th: p=0.38, Neur.Th: p=0.38, Cent.Le: p=0.29) except for neural arch volume, which was significantly decreased in opallus (Neur.Vol: p=0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "5762e130-dc28-44c4-ae25-c0b95f05bf98",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C71",
+      "claim": "In opallus, the decrease in neural arch volume was most pronounced in anterior vertebrae, with covariate analysis revealing significant associations between vertebrae 1\u20135 and genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was most pronounced in anterior vertebrae, with covariate analysis revealing significant associations between vertebrae 1\u20135 and genotype (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "c31c2407-de89-47e0-bff9-fd1ec19e36c6",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C72",
+      "claim": "The global test conferred higher sensitivity, with similar specificity, in discriminating mutant populations compared to t-tests of averaged quantities and t-tests of individual vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the global test conferred higher sensitivity, with similar specificity, compared to t-tests of averaged quantities as well as t-tests of individual vertebrae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Monte Carlo simulation data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "961bed5e-e0f3-4cf1-8b9b-734962eac581",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C73",
+      "claim": "At alpha = 0.05, the sensitivity of the global test, t-test of individual vertebrae, and t-test of averaged quantities was 0.96, 0.89, and 0.91, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, at alpha = 0.05, the sensitivity of the global test, t-test of individual vertebrae, and t-test of averaged quantities was 0.96, 0.89, and 0.91.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Monte Carlo simulation data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "632ccc95-a395-4874-a309-6529526a7b2b",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C74",
+      "claim": "At alpha = 0.01, the sensitivity of the global test, t-test of individual vertebrae, and t-test of averaged quantities was 0.67, 0.43, and 0.46, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At alpha = 0.01, the sensitivity of the global test, t-test of individual vertebrae, and t-test of averaged quantities was 0.67, 0.43, and 0.46 (respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Monte Carlo simulation data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "ff6cf00d-825e-4aea-86d4-aeeee5c3ee76",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C75",
+      "claim": "For alpha = 0.05 and n = 3, the estimated false discovery rate for the global test procedure was 5.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "For alpha = 0.05 and n = 3, we estimated a false discovery rate of 5.1% for the global test procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Monte Carlo simulation data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "75dffa65-7b09-4bbb-8971-5f4ca8b2d017",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C76",
+      "claim": "The global test conferred higher power compared to t-tests of averaged quantities and t-tests of individual vertebrae, with the relative increase greatest at small characteristic effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the global test conferred higher power compared to t-tests of averaged quantities and t-tests of individual vertebrae, with the relative increase greatest at small characteristic effect sizes (e.g.,~1.4 to 1.5 fold greater at an effect size of 0.5, compared to ~1.2 fold greater at an effect size of 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Monte Carlo simulation data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4cbbc0fc-b191-49fe-b1fa-7dfed606487d",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C77",
+      "claim": "Bone over-mineralization is a hallmark of brittle bone disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype is consistent with the bone over-mineralization that is a hallmark of brittle bone disease (Bishop, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bishop, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4acf4427-d7af-4950-9d33-507cc31e072b",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C78",
+      "claim": "Phenotypic abnormalities in human OI have been shown to vary among patients and anatomical site.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic abnormalities in human OI has been shown to vary among patients and anatomical site (Cassella et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cassella et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "e292b3e7-3d89-409a-92de-f53b7ca25397",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C79",
+      "claim": "Unlike plod2-/- and bmp1a-/- mutants, opallus exhibited high TMD in the presence of mostly normal bone mass and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, unlike plod2-/- and bmp1a-/- mutants, opallus exhibited high TMD in the presence of mostly normal bone mass and morphology, providing evidence of the potential for these traits to be decoupled in zebrafish mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "f70e1d21-9798-4c7b-a8da-d00b52054e99",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C80",
+      "claim": "FishCuT supports the DICOM standard.",
+      "claim_type": "EXPLICIT",
+      "source": "Since FishCuT supports the DICOM standard, it is readily ported to other microCT systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a technical feature of FishCuT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "49a3c71f-2958-4db5-b79f-46b485b1c858",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C81",
+      "claim": "Commercial microCT systems optimized for rapid throughput imaging have been shown to increase imaging throughput by 10 fold or more.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, commercial microCT systems optimized for rapid throughput imaging (e.g., through the use larger detectors to increase the number of animals per field of view, higher power x-ray sources to decrease sampling time per image, and robot-based sample changing systems) have been shown to increase imaging throughput by 10 fold or more (Wyatt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wyatt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "321ec46e-eb6b-4018-af6b-e9d77ec5638b",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C82",
+      "claim": "Mader et al. described a high-throughput, fully automatic system for synchrotron-based tomographic microscopy that enabled analysis of 1300 mouse femurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, Mader et al. described a high-throughput, fully automatic system for synchrotron-based tomographic microscopy that enabled analysis of 1300 mouse femurs (Mader et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mader et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "43b62b7e-c3fe-4544-9b97-5ec00c7b74e2",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C83",
+      "claim": "Machine learning-based approaches enable fully automated localization of boundaries of vertebral bodies in human CT/MR data.",
+      "claim_type": "EXPLICIT",
+      "source": "In regard to image analysis, machine learning-based approaches enable fully automated localization of boundaries of vertebral bodies in human CT/MR data (Chu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "2b661399-294b-4516-a23b-76c1d7a0419c",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C84",
+      "claim": "The source code for FishCuT has been deposited on GitHub as a beta release.",
+      "claim_type": "EXPLICIT",
+      "source": "We have integrated our methods into a software package, FishCuT, whose source code has been deposited on GitHub as a beta release (Kwon, 2017); a copy is archived at https://github.com/elifesciences-publications/FishCuT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the availability of the FishCuT software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "aec3c274-c409-40c3-8385-4ef81b068012",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C85",
+      "claim": "Analyzing phenotypic patterns may increase productivity in genetic screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing phenotypic patterns may increase productivity in genetic screens, and facilitate the study of genetic variants associated with smaller effect sizes, such as those that underlie complex diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "226228a9-aed4-4c7e-a292-f41391a27233",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "claim_id": "C86",
+      "claim": "Analyzing phenotypic patterns may facilitate the study of genetic variants associated with smaller effect sizes, such as those that underlie complex diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing phenotypic patterns may increase productivity in genetic screens, and facilitate the study of genetic variants associated with smaller effect sizes, such as those that underlie complex diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1fe39f42-e23d-4298-b758-882d8d9552df",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Zebrafish are suitable for high-throughput whole-body microCT imaging of the vertebral column, with the capability to scan multiple fish simultaneously at 21 \u00b5m resolution in approximately 5-20 minutes per fish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the feasibility of microCT imaging in zebrafish based on prior work (C1-C3) and demonstrate practical throughput capabilities through experimental data (C4-C5). The proof-of-concept for 8-fish simultaneous scanning (C5) is appropriately qualified as requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FishCuT is a microCT analysis toolkit that enables automated segmentation and quantification of 25 phenotypic measurements per vertebra across the zebrafish vertebral column, reducing analysis time from ~60 minutes per vertebra (manual) to <5 minutes per fish (~100x faster).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C16 collectively describe the development and capabilities of FishCuT with specific quantitative performance metrics. The manual segmentation time (C6), number of measurements (C13-C14), and speed improvement (C15) are all supported by experimental data. The workflow is clearly documented with specific measurements listed (C10-C13).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "53f9113e-ade5-470f-8874-22cdd424f0d6",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FishCuT demonstrates high segmentation accuracy and reproducibility, with a Dice similarity coefficient of 0.932 \u00b1 0.001 compared to manual segmentation and 3.4 \u00b1 1.2% variability in centrum length measurements between repeated scans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 provide validation metrics for FishCuT. The DSC value (C17) exceeds the 0.7 threshold for excellent agreement (C18), and reproducibility is quantified (C19). However, the validation is limited to n=2 vertebrae for DSC and n=3 fish for reproducibility, which are small sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "f251dc2c-3804-4e0e-a373-54847981a21b",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FishCuT measurements show relatively low inter-correlation (median absolute Pearson correlation coefficient of 0.34), indicating that the phenotypic measures capture largely independent information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 demonstrate that FishCuT measurements are relatively independent. The median correlation of 0.34 (C20) is comparable to prior work (0.3, C21) and remains stable with increasing vertebrae analyzed (C22). This supports the claim that measurements provide non-redundant information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MicroCT scans at medium (21 \u00b5m) and high (10.5 \u00b5m) resolution provide highly correlated measurements (R\u00b2 0.98-0.99) and comparable ability to discriminate WT from bmp1a-/- mutant phenotypes, despite slight deviations from unity in slopes due to partial volume effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C30 demonstrate that medium and high resolution scans yield comparable results. The high correlations (C23), slope deviations (C24-C25), attribution to PVEs (C26-C27), and similar discriminatory power (C28-C30) are all supported by experimental data from n=3 fish per group. The interpretation of PVEs is appropriately cited (C27).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "3e9dce32-5455-4517-b112-ca7fb47aebe3",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The global test for analyzing vertebral patterns demonstrates higher sensitivity than t-tests of individual vertebrae or averaged quantities in discriminating mutant populations, with sensitivity values of 0.96, 0.89, and 0.91 respectively at alpha=0.05, and greatest relative power increase at small effect sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 present Monte Carlo simulation results demonstrating superior performance of the global test. Specific sensitivity values are provided for different alpha levels (C73-C74), false discovery rate is estimated (C75), and power analysis shows greatest benefit at small effect sizes (C76). The simulations are appropriately designed and interpreted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "bmp1a-/- zebrafish mutants exhibit significantly increased bone mass (centrum volume, bone thickness in all elements) and elevated tissue mineral density in all skeletal elements, with haemal arch TMD differentially elevated in precaudal vertebrae, recapitulating the high BMD phenotype of human Osteogenesis Imperfecta caused by BMP1 mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C41 characterize the bmp1a-/- phenotype with specific p-values for multiple measurements (C35-C41). The connection to human OI is established through citations (C31-C34). The spatial pattern of Haem.TMD elevation (C40-C41) is supported by covariate analysis. Sample size is n=3/group, which is adequate given the large effect sizes observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "aab8a99c-a250-42d2-b030-e7be148d8d08",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "plod2-/- zebrafish mutants exhibit elevated centrum TMD, decreased centrum length, and reduced haemal/neural arch volume and thickness, consistent with previous findings and modeling Bruck syndrome, a condition resembling Osteogenesis Imperfecta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C52 characterize the plod2-/- phenotype with specific p-values. The findings are consistent with prior work (C43-C45) and extend previous 2D analyses to comprehensive 3D characterization. The connection to Bruck syndrome is established (C42). FishCuT successfully segmented severely dysmorphic vertebrae, demonstrating robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "15e68aa6-935a-4dd9-8491-178f20594183",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Most zebrafish vertebral phenotypic features deviate from isometric growth with respect to standard length, with thickness and volume showing negative allometry and tissue mineral content showing positive allometry. Allometric normalization substantially reduces coefficient of variability compared to unnormalized values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 establish allometric relationships in zebrafish vertebrae. The relationship between developmental progress and standard length is cited (C53), deviations from isometry are documented (C54), specific allometric patterns are identified (C55-C56), and normalization effectiveness is demonstrated (C57). Based on n=16 fish across a range of sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "07bf3cad-fe90-4465-bf34-890ae607b029",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Following allometric normalization, plod2-/- mutants show a novel phenotype of increased centrum volume and diameter, along with elevated TMD in all skeletal elements, revealing phenotypes masked by growth differences in unnormalized analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 demonstrate the utility of allometric normalization in revealing masked phenotypes. Previously significant morphological decreases become non-significant (C58), while new phenotypes emerge (C59-C61). The centrum diameter increase is visually confirmed (C61) and represents a novel finding not identified in prior characterization (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "005e45aa-2be2-4810-9a75-f42009865f82",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The opallus mutant, harboring a TSHR gain-of-function mutation identical to a human hyperthyroidism-causing mutation, exhibits significantly elevated TMD in all vertebral elements and decreased neural arch volume in anterior vertebrae, representing a novel axial skeletal phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 identify opallus as a novel axial skeletal mutant. The genetic basis and human disease connection are established through citations (C63-C67). The phenotype is characterized with specific p-values (C68-C71) in n=5/group. The spatial pattern of neural arch volume decrease is supported by covariate analysis (C71). This demonstrates FishCuT's utility in forward genetic screens.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "27994b24-8d46-463c-9222-4ebe79172e6d",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The three mutants analyzed (bmp1a-/-, plod2-/-, opallus) demonstrate that bone over-mineralization can occur with varying effects on bone mass and morphology, with opallus uniquely showing high TMD with mostly normal bone mass, indicating these traits can be decoupled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 synthesize findings across mutants. The connection to brittle bone disease is cited (C77), site-specific variation in OI is noted (C78), and the decoupling of TMD from bone mass in opallus is demonstrated (C79). This comparative analysis provides biological insight into the independence of mineralization and mass phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "8dd222ef-39d5-4e98-a091-eb4a6c733552",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FishCuT supports the DICOM standard for portability, and future improvements in throughput and automation are feasible based on existing technologies in other systems, with source code deposited on GitHub.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 discuss technical features and future directions. DICOM support is stated (C80), potential throughput improvements are cited from other systems (C81-C83), and code availability is documented (C84). These are appropriately framed as technical capabilities and future possibilities rather than current achievements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    },
+    {
+      "id": "418f4380-185b-48aa-a9c4-1dad8ff8ebb4",
+      "content_id": "ad909c52-3d19-4362-a030-9297407ee328",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Analyzing phenotypic patterns may increase productivity in genetic screens and facilitate study of genetic variants with smaller effect sizes underlying complex diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 present forward-looking implications of the work. These are appropriately framed as potential applications ('may increase', 'may facilitate') based on the demonstrated enhanced sensitivity of pattern analysis. The claims are logical extensions of the demonstrated capabilities but represent future applications rather than current achievements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:24.922347Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb7b6be4-3c08-412d-98c5-6ef31b851463",
+      "result_id": "1fe39f42-e23d-4298-b758-882d8d9552df"
+    },
+    {
+      "claim_id": "2b548259-e83f-428b-aa60-9f63a20bc536",
+      "result_id": "1fe39f42-e23d-4298-b758-882d8d9552df"
+    },
+    {
+      "claim_id": "1ace94d3-3b5d-4f27-a66d-a1ad8cfc2bf1",
+      "result_id": "1fe39f42-e23d-4298-b758-882d8d9552df"
+    },
+    {
+      "claim_id": "3fbe841d-489d-4561-8ef3-3bae46b173d1",
+      "result_id": "1fe39f42-e23d-4298-b758-882d8d9552df"
+    },
+    {
+      "claim_id": "d97f034f-d65b-4f09-a547-7b808d767c1f",
+      "result_id": "1fe39f42-e23d-4298-b758-882d8d9552df"
+    },
+    {
+      "claim_id": "8409457f-6029-4b97-af09-24c74c44be99",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "7ef2179b-586c-48ef-9d53-bcdf6cffe13f",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "5746487a-9326-442c-9807-79b777b8b238",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "630d4fd8-7728-47f4-a614-249533a2071c",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "e36e1c25-8ffc-4c08-8a33-1027f41a6f1c",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "1426a9a3-7997-4380-9499-c1bcda4071f0",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "b80c4a3f-67ef-4b39-b919-152622cefaa0",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "fe89a621-b741-4401-8898-a67147595d59",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "9a3bd2a6-7eab-467a-9260-28c3a090b5f2",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "0b33ae75-d13b-45d4-ba54-1e5087631457",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "477436b4-c256-42db-ad77-e741417652f6",
+      "result_id": "f46b25d0-6952-41e4-bd83-bc2f3c1987f6"
+    },
+    {
+      "claim_id": "7eeb8a5e-1c98-4da4-b48f-e87dcebe4588",
+      "result_id": "53f9113e-ade5-470f-8874-22cdd424f0d6"
+    },
+    {
+      "claim_id": "e3b3ad9b-b79d-4795-acae-e35840eb437c",
+      "result_id": "53f9113e-ade5-470f-8874-22cdd424f0d6"
+    },
+    {
+      "claim_id": "9ff01c1d-20ec-4534-ad11-000242e47376",
+      "result_id": "53f9113e-ade5-470f-8874-22cdd424f0d6"
+    },
+    {
+      "claim_id": "face4143-2403-4bdd-8ec6-45dc1b9305eb",
+      "result_id": "f251dc2c-3804-4e0e-a373-54847981a21b"
+    },
+    {
+      "claim_id": "518ef234-1247-455d-9f8a-b4b2ca5f67e2",
+      "result_id": "f251dc2c-3804-4e0e-a373-54847981a21b"
+    },
+    {
+      "claim_id": "451fe4da-d61f-4561-8902-18f071689a06",
+      "result_id": "f251dc2c-3804-4e0e-a373-54847981a21b"
+    },
+    {
+      "claim_id": "2d8ffac9-e66d-4eed-a6d6-4d51b5e57c74",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "42871f9f-aa2c-4954-8653-2e3435b56d3f",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "a9ee8359-215d-4ad3-83ad-defbdbe35e60",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "4ee74c93-afd5-4f4f-b175-4309341a2605",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "8163083e-1e44-478b-96fb-1c57353301ae",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "8e83ac05-e486-48ff-bcba-8dab4d1e861d",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "0795093a-ad1b-4550-889b-8069d1473c95",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "36597cf0-836a-458d-9c59-5817186d5b15",
+      "result_id": "4b5fc00d-4217-49ba-8515-f99bb7bc09f9"
+    },
+    {
+      "claim_id": "c31c2407-de89-47e0-bff9-fd1ec19e36c6",
+      "result_id": "3e9dce32-5455-4517-b112-ca7fb47aebe3"
+    },
+    {
+      "claim_id": "961bed5e-e0f3-4cf1-8b9b-734962eac581",
+      "result_id": "3e9dce32-5455-4517-b112-ca7fb47aebe3"
+    },
+    {
+      "claim_id": "632ccc95-a395-4874-a309-6529526a7b2b",
+      "result_id": "3e9dce32-5455-4517-b112-ca7fb47aebe3"
+    },
+    {
+      "claim_id": "ff6cf00d-825e-4aea-86d4-aeeee5c3ee76",
+      "result_id": "3e9dce32-5455-4517-b112-ca7fb47aebe3"
+    },
+    {
+      "claim_id": "75dffa65-7b09-4bbb-8971-5f4ca8b2d017",
+      "result_id": "3e9dce32-5455-4517-b112-ca7fb47aebe3"
+    },
+    {
+      "claim_id": "2c21d447-e16e-47c5-9465-d7ec12d31df7",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "07e4c003-cb55-4107-ad15-03a2145d44d7",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "556532b2-512a-4fb9-adc5-9f3f7884b8f0",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "7d18a85f-5577-4d69-b6e8-4a8a90e1c74b",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "e660e427-05e3-4ead-9242-19770e5b24e6",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "f4afab12-7921-41fa-a97e-bbbe00b35722",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "14b0099b-34e1-41c8-8135-7b62a121f09d",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "11262ad8-9b9e-4d4e-9cc9-447586d59f3d",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "20eba41b-b437-447e-ab65-4c6f0a31df37",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "85bd2a05-cca7-4f1d-9340-462d76a43f8d",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "1781c268-5f39-4b70-9357-44856d072576",
+      "result_id": "2bb45799-f1fa-4a4b-87af-8ae50d9ac023"
+    },
+    {
+      "claim_id": "4f1ff22d-12f3-42d9-94d5-e46ab959f83d",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "adf86042-8aa3-42b8-a761-8ea192b81115",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "d6a6c90e-b057-4e33-b99a-f7a7a4382345",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "c078a66e-5c93-4fe0-b5c4-aa445a608dc1",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "d5874da3-a5bf-4957-bdc4-2d29c7eae9c7",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "afb0ef6a-32cc-4408-8008-6c6913ca10e6",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "4853b1b4-a193-47f4-9018-0a69ac4b2603",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "7be713c2-6dfe-4319-8b4b-57957a1b95db",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "4ddf42b6-0155-440b-8fb5-7921208928b7",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "a1b7bc54-4dc9-4005-8342-571542bfe722",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "699aa1f1-711e-4477-ad24-88ea29f91c1b",
+      "result_id": "aab8a99c-a250-42d2-b030-e7be148d8d08"
+    },
+    {
+      "claim_id": "7655d4b7-4c4b-433b-8da5-e8ad1b5661d0",
+      "result_id": "15e68aa6-935a-4dd9-8491-178f20594183"
+    },
+    {
+      "claim_id": "ae66d9e6-2c32-4fef-8797-ae3aff7326d4",
+      "result_id": "15e68aa6-935a-4dd9-8491-178f20594183"
+    },
+    {
+      "claim_id": "2c0a2ae2-0adc-4ff0-816b-47deb284798c",
+      "result_id": "15e68aa6-935a-4dd9-8491-178f20594183"
+    },
+    {
+      "claim_id": "ddf127fe-91b5-477a-b9aa-dc515de96b52",
+      "result_id": "15e68aa6-935a-4dd9-8491-178f20594183"
+    },
+    {
+      "claim_id": "623711a0-a55d-461a-b31f-27ddf335a931",
+      "result_id": "15e68aa6-935a-4dd9-8491-178f20594183"
+    },
+    {
+      "claim_id": "aa989715-d6ce-4c2e-b7e3-8acca5fa4bdf",
+      "result_id": "07bf3cad-fe90-4465-bf34-890ae607b029"
+    },
+    {
+      "claim_id": "4a624584-c81c-483f-9a5c-30bcdb8ac943",
+      "result_id": "07bf3cad-fe90-4465-bf34-890ae607b029"
+    },
+    {
+      "claim_id": "3ec612f1-7e73-471b-9b39-9d7e5185586e",
+      "result_id": "07bf3cad-fe90-4465-bf34-890ae607b029"
+    },
+    {
+      "claim_id": "76f7e759-02b8-471f-8c61-c8abcc108070",
+      "result_id": "07bf3cad-fe90-4465-bf34-890ae607b029"
+    },
+    {
+      "claim_id": "90186be6-05bb-4c82-9892-79614403ce04",
+      "result_id": "07bf3cad-fe90-4465-bf34-890ae607b029"
+    },
+    {
+      "claim_id": "cdf3bffa-842c-49a5-9292-d25cf6593ce4",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "6bf2cd7e-9424-493b-80c3-38dd66eb8c79",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "c32a4692-a0b3-4077-9c29-e85e9011828f",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "31ab3c7b-0e97-455d-921c-132cebd95abf",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "cb0e5633-2cb9-4de6-b9ed-f8176cf09c68",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "25eec930-f9fa-4152-9540-a61bdd8c8a06",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "feb11c6c-dfe0-40fc-8669-b18d0e3532fe",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "97a69a14-276a-4c34-bdb6-a75f7969d897",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "5762e130-dc28-44c4-ae25-c0b95f05bf98",
+      "result_id": "005e45aa-2be2-4810-9a75-f42009865f82"
+    },
+    {
+      "claim_id": "4cbbc0fc-b191-49fe-b1fa-7dfed606487d",
+      "result_id": "27994b24-8d46-463c-9222-4ebe79172e6d"
+    },
+    {
+      "claim_id": "4acf4427-d7af-4950-9d33-507cc31e072b",
+      "result_id": "27994b24-8d46-463c-9222-4ebe79172e6d"
+    },
+    {
+      "claim_id": "e292b3e7-3d89-409a-92de-f53b7ca25397",
+      "result_id": "27994b24-8d46-463c-9222-4ebe79172e6d"
+    },
+    {
+      "claim_id": "f70e1d21-9798-4c7b-a8da-d00b52054e99",
+      "result_id": "8dd222ef-39d5-4e98-a091-eb4a6c733552"
+    },
+    {
+      "claim_id": "49a3c71f-2958-4db5-b79f-46b485b1c858",
+      "result_id": "8dd222ef-39d5-4e98-a091-eb4a6c733552"
+    },
+    {
+      "claim_id": "321ec46e-eb6b-4018-af6b-e9d77ec5638b",
+      "result_id": "8dd222ef-39d5-4e98-a091-eb4a6c733552"
+    },
+    {
+      "claim_id": "43b62b7e-c3fe-4544-9b97-5ec00c7b74e2",
+      "result_id": "8dd222ef-39d5-4e98-a091-eb4a6c733552"
+    },
+    {
+      "claim_id": "2b661399-294b-4516-a23b-76c1d7a0419c",
+      "result_id": "8dd222ef-39d5-4e98-a091-eb4a6c733552"
+    },
+    {
+      "claim_id": "aec3c274-c409-40c3-8385-4ef81b068012",
+      "result_id": "418f4380-185b-48aa-a9c4-1dad8ff8ebb4"
+    },
+    {
+      "claim_id": "226228a9-aed4-4c7e-a292-f41391a27233",
+      "result_id": "418f4380-185b-48aa-a9c4-1dad8ff8ebb4"
+    }
+  ],
+  "comparisons": []
+}

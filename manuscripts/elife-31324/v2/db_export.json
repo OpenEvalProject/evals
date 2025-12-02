@@ -1,0 +1,2218 @@
+{
+  "submission": {
+    "id": "2810b968-e72a-46bb-8830-db037ec1fa2a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:13:33.849195Z",
+    "updated_at": "2025-12-01T22:13:33.849195Z"
+  },
+  "content": [
+    {
+      "id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "submission_id": "2810b968-e72a-46bb-8830-db037ec1fa2a",
+      "content_type": "manuscript",
+      "content_text": "# The AAA ATPase Vps4 binds ESCRT-III substrates through a repeating array of dipeptide-binding pockets\n\n## Authors\n\n- Han Han<sup>1</sup> ([ORCID: 0000-0003-0361-4254](https://orcid.org/0000-0003-0361-4254))\n- Nicole Monroe<sup>1</sup> ([ORCID: 0000-0001-7678-4997](https://orcid.org/0000-0001-7678-4997))\n- Wesley I Sundquist<sup>1</sup> ([ORCID: 0000-0001-9988-6021](https://orcid.org/0000-0001-9988-6021)) \u2020\n- Peter S Shen<sup>1</sup> ([ORCID: 0000-0002-6256-6910](https://orcid.org/0000-0002-6256-6910)) \u2020\n- Christopher P Hill<sup>1</sup> ([ORCID: 0000-0001-6796-7740](https://orcid.org/0000-0001-6796-7740)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Utah School of Medicine Salt Lake City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe hexameric AAA ATPase Vps4 drives membrane fission by remodeling and disassembling ESCRT-III filaments. Building upon our earlier 4.3 \u00c5 resolution cryo-EM structure (Monroe et al., 2017), we now report a 3.2 \u00c5 structure of Vps4 bound to an ESCRT-III peptide substrate. The new structure reveals that the peptide approximates a \u03b2-strand conformation whose helical symmetry matches that of the five Vps4 subunits it contacts directly. Adjacent Vps4 subunits make equivalent interactions with successive substrate dipeptides through two distinct classes of side chain binding pockets formed primarily by Vps4 pore loop 1. These pockets accommodate a wide range of residues, while main chain hydrogen bonds may help dictate substrate-binding orientation. The structure supports a \u2018conveyor belt\u2019 model of translocation in which ATP binding allows a Vps4 subunit to join the growing end of the helix and engage the substrate, while hydrolysis and release promotes helix disassembly and substrate release at the lagging end.\n\n## Introduction\n\nThe Endosomal Sorting Complexes Required for Transport (ESCRT) pathway drives multiple cellular membrane fission processes (Christ et al., 2017; Scourfield and Martin-Serrano, 2017) through the formation of filaments comprising different subsets of related ESCRT-III family members. ESCRT-III filaments stabilize highly curved membrane necks that resolve by fission when the filaments are remodeled by Vps4 (Monroe and Hill, 2016). Continued Vps4 activity removes ESCRT-III subunits and drives complete filament disassembly, thereby enabling subsequent rounds of ESCRT activity (Mierzwa et al., 2017; Sch\u00f6neberg et al., 2017).\n\nVps4 is monomeric or dimeric at cytoplasmic concentrations, but forms a hexamer when active and recruited to ESCRT-III filaments (Monroe et al., 2014). Recruitment is mediated, at least in part, by binding of the Vps4 MIT (Microtubule Interacting and Transport) domains to MIM (MIT Interacting Motif) elements in the exposed tails of ESCRT-III subunits (Obita et al., 2007; Stuchell-Brereton et al., 2007; Hurley and Yang, 2008). Hexamerization is further promoted by the cofactor protein Vta1/LIP5 (Scott et al., 2005; Lottridge et al., 2006; Azmi et al., 2008; Xiao et al., 2008), whose VSL domain binds adjacent Vps4 subunits at the ring periphery (Yang and Hurley, 2010; Davies et al., 2014; Monroe et al., 2017; Sun et al., 2017). The Vps4 N-terminal MIT domain is followed by an\u00a0~40 residue flexible linker and an ATPase cassette that comprises a large ATPase domain, small ATPase domain, and a \u03b2 domain (Scott et al., 2005).\n\nRecently reported cryo-EM structures of Vps4 at overall resolutions of 4.3 \u00c5 (Monroe et al., 2017), 6.1 \u00c5 (Su et al., 2017), and 3.9 \u00c5 (Sun et al., 2017) revealed similar hexameric \u2018lock washers\u2019, in which five of the six Vps4 subunits form a helical assembly and the sixth closes the ring. This arrangement is quite different from the packing seen in multiple Vps4 crystal structures. Although the three cryo-EM structures are similar, they prompted very different mechanistic models to explain how ESCRT-III subunits are processed. Our structure, which was visualized in complex with a substrate peptide, guided the proposal that ESCRT-III substrates bind within the hexamer pore (Monroe et al., 2017), consistent with a model that ESCRT-III subunits are unfolded by translocation through the pore (Yang et al., 2015). In contrast, the observation that the Vps4 hexamer adopts \u2018open\u2019 and \u2018closed\u2019 states in the absence of Vta1/LIP5 and substrate, prompted the proposal that substrates are engaged by a single ESCRT-III subunit, and that ATP hydrolysis pulls an entire ESCRT-III subunit from the filament and positions the next Vps4 subunit to remove the ensuing ESCRT-III subunit (Su et al., 2017).\n\nWe have now determined the Vps4-ESCRT-IIIpeptide complex structure at 3.2 \u00c5 resolution. This structure\u00a0shows that the highly variable side chains of the substrate bind in an equivalent way to an array of two classes of pockets that are repeated throughout the Vps4 pore. Moreover, the ESCRT-III peptide binds in a \u03b2-strand conformation in one orientation. These insights support our earlier mechanistic proposal, which may be applicable to other AAA ATPases.\n\n## Results and discussion\n\n### Overall structure\n\nThe new reconstruction of the Vps4-Vta1-ESCRT-IIIpeptide-ADP\u00b7BeFx complex agrees well with our earlier 4.3 \u00c5 resolution reconstruction but now has an overall resolution of 3.2 \u00c5, which likely reflects the use of superior microscope instrumentation (see Materials\u00a0and\u00a0methods). The six Vps4 subunits form a closed ring, with six Vta1 VSL domains binding around the periphery and a single ESCRT-III peptide bound in the central pore (Figure 1, Table 1, Figure 1\u2014figure supplements 1\u20134, Figure 1\u2014video 1). Vps4 subunits A-E form a helix whose symmetry approximates a 60\u00b0 rotation and 6.3 \u00c5 translation between adjacent subunits, and provides the binding surface for the ESCRT-III peptide. As noted previously (Monroe et al., 2017), subunit E deviates slightly from the more exact helical symmetry of subunits A-D. The large domain of subunit F is disengaged from adjacent Vps4 subunits (and substrate) and appears to be transitioning between the two ends of the Vps4 helix. Subunit F and features at the ring periphery, including the Vps4 \u03b2 domains and the Vta1 VSL domains, have weak density.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig1-v2.jpg)\n\n**Figure 1.:** (A) Ribbon representation of the complex viewed from the \u2018top\u2019 N-terminal side of Vps4 and N-terminal end of the peptide. (B) Similar orientation as panel A showing a segmented map contoured around Vps4 and peptide. (C) Same as panel B viewed from the side with density for subunit F removed for clarity.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative cryo-EM micrograph of Vps4101-437-Hcp1 particles. (BC) Representative 2D class averages, (B) before and (C) after Hcp1 signal subtraction. (D) Gold-standard FSC of the Hcp1-subtracted particle reconstructions on independent (odd:even particles) halves of the data (blue) and FSC between the refined model and the density map (orange). (E) Cross-validation of refined model (see Materials and methods). (F) Angular distribution plot based on orientation assignments in RELION and visualized in UCSF Chimera. Cylinders scaled (low to high) and colored (blue to red) proportional to number of particles in the assigned orientation. (G) Local resolution estimates determined by ResMap (Kucukelbir et al., 2014).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** 140,958 particles were input for 3D classification. 109,241 particles were sorted into classes with good Vps4 features and used to generate a consensus reconstruction of the entire Vps4101-437-Hcp1 complex at 4.1 \u00c5 resolution. Signal subtraction of Hcp1 was performed using a previously described strategy (see Materials and methods). An additional round of 3D classification was performed using the Hcp1-subtracted particles. 82,225 particles were sorted into a single class with high-resolution Vps4 features and used to generate the final 3.2 \u00c5 Vps4 reconstruction.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Representative masking scheme for subunit F. Custom masks were generated for structurally heterogeneous features and focused 3D classification was performed using the masks. Classes with good features were used to isolate particles for additional rounds of RELION auto-refinement. (B) Representative masking scheme for Vta1.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Similar orientation to Figure 1A. Shows the gaps between the subunit F large ATPase domain and its neighboring subunits, and the highly solvated channel between subunit F and the peptide.\n\n**Table 1.**\n Reconstruction, Refinement, and Model Statistics of Vps4.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reconstruction</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Particle images</td>\n      <td>82,225</td>\n    </tr>\n    <tr>\n      <td>Resolution (0.143 FSC) (\u00c5)</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B-factor (\u00c52)</td>\n      <td>\u2212125</td>\n    </tr>\n    <tr>\n      <td>EMDB accession number</td>\n      <td>EMD-8887</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Model refinement and validation of Vps4 subunits A-E</td>\n    </tr>\n    <tr>\n      <td>PDB accession number</td>\n      <td>6BMF</td>\n    </tr>\n    <tr>\n      <td>Resolution used for refinement (\u00c5)</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>Number of atoms</td>\n      <td>11033</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">RMSD</td>\n    </tr>\n    <tr>\n      <td>Bond length (\u00c5)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.18</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Ramachandran</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>89.5</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>10.5</td>\n    </tr>\n    <tr>\n      <td>Outlier (%)</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Validation scores</td>\n    </tr>\n    <tr>\n      <td>Molprobity score/percentile (%)</td>\n      <td>1.83 (100%)</td>\n    </tr>\n    <tr>\n      <td>Clashscore/percentile (%)</td>\n      <td>5.02 (100%)</td>\n    </tr>\n    <tr>\n      <td>EMRinger score</td>\n      <td>2.04</td>\n    </tr>\n  </tbody>\n</table>\n\n### Nucleotide states and subunit interfaces\n\nNucleotides primarily contact one Vps4 subunit at a subunit interface, with the \u03b2-phosphate and BeFx contacting two \u2018finger\u2019 arginines, R288 and R289, from the following subunit (Figure 2, Figure 2\u2014videos 1\u20135). The bound ADP\u00b7BeFx mimics ATP binding to subunits A, B, and C, whereas subunits D and E appear to bind ADP. The density of subunit F is too weak to reliably assess the presence of nucleotide, and it may be empty. The coordination of bound nucleotides is similar for all Vps4 subunits, and resembles binding to other ATPases (Wendler et al., 2012). ADP\u00b7BeFx coordination is essentially identical for A-C and is very similar for the ADP at subunit D, whereas displacement of subunit F results in loss of interaction with the finger arginines for the ADP at subunit E. In contrast to earlier proposals (Gonciarz et al., 2008), the hinge angle between large and small domains does not change substantially with the bound nucleotide, being 120\u2013121\u00b0 for subunits A-D, 117\u00b0 for subunit E, and 122\u00b0 for subunit F.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig2-v2.jpg)\n\n**Figure 2.:** (A) Stereoview of a representative ADP\u00b7BeFx coordination shown at subunit B (BC interface). Subunits color-coded as in Figure 1. (B) Stereoview of nucleotide-binding sites at subunits A, B, C, D, and E following superposition on the large domains of the first subunit at each interface.\n\nThe AB, BC, and CD interfaces are extensive, similar to each other, and include large domain contacts with adjacent large domains and small domains (Figure 2\u2014videos 6,7). Comparison of these interfaces with the DE subunit pair shows an\u00a0~8\u00b0 rotation of subunit E which, nevertheless, maintains very similar contacts with the preceding D subunit and relative positions of pore loops (Figure 2\u2014video 8). It is therefore uncertain why the AB, BC, and CD interfaces bind ATP (ADP\u00b7BeFx) while the similar DE interface appears to bind ADP. Although the density seems clear, we acknowledge that assigning ADP (vs. ADP\u00b7BeFx) at this site with absolute certainty will require higher resolution data. Regardless, the finding that subunit E binds ADP at the interface with subunit F further supports our mechanistic model that ATP hydrolysis at subunit D destabilizes the subunit interface to promote formation of the more open nucleotide binding site seen for subunit E (below).\n\nIn contrast to the major disruption in contacts between the large domain of subunit F and the large domains of its neighbors, contacts involving the small ATPase domains remain more similar. This is especially true for the FA interface, where the F small domain to A large domain contacts are closely superimposable with those of AB, BC, CD, and DE (Figure 2\u2014video 9). The E small domain to F large domain contacts are mediated by the same hydrophobic contacts, albeit with a rotation of\u00a0~25\u00b0 and attendant shifts of 4.5\u20137.5 \u00c5. Thus, this interaction appears to be maintained throughout the reaction cycle as subunits transition from the lagging (subunit E) to the leading (subunit A) end of the Vps4 helix, and may help maintain the hexameric assembly while the hydrolysis and release of ATP disrupts the core large domain contacts that define the ESCRT-III substrate-binding site.\n\nInterestingly, the small domain-large domain interface is the major lattice contact in all of the reported crystal structures of Vps4, which totals 22 crystallographically unique contacts (Figure 2\u2014video 10). The archaeal Vps4 crystal contacts (Monroe et al., 2014; Caillat et al., 2015) closely resemble the FA/AB/BC/CD/DE interface, while eukaryotic crystal contacts (Scott et al., 2005; Xiao et al., 2007; Gonciarz et al., 2008; Inoue et al., 2008) overlap with the EF interface, except two of the three mouse Vps4 crystal contacts (Inoue et al., 2008), which are intermediate between the two states. These differences correlate with the presence of a Vps4 \u03b2 domain and Vta1 cofactor in eukaryotes but not archaea, supporting the interpretation that Vta1 promotes formation and maintenance of the closed helical substrate-binding assembly of Vps4.\n\n### Coordination of the ESCRT-III peptide\n\nThe DEIVNKVL\u00a0ESCRT-III peptide is clearly defined in the new 3.2 \u00c5 map (Figure 3\u2014video 1), with the exception of the first two side chains, D1 and E2 (Vps2 D165 and E166), which have weak density, as is typically seen for carboxylates in cryo-EM maps (Mitsuoka et al., 1999; Bartesaghi et al., 2014; Yonekura et al., 2015; Hryc et al., 2017). The assigned peptide orientation was validated by building and refining in the reverse direction, which showed a correlation coefficient of 0.85 for the assigned orientation vs. 0.81 in the reversed orientation, and EMRinger (Barad et al., 2015) scores of 3.7 for the assigned orientation vs. 1.1 for the reversed orientation (Figure 3\u2014figure supplement 1).\n\nThe peptide adopts an extended conformation that resembles a canonical \u03b2-strand (phi \u221292\u00b0 to \u2212151\u00b0; psi 102\u00b0 to 189\u00b0 (\u2212171\u00b0)) and packs closely against Vps4 subunits A-E (Figure 3, Figure 3\u2014videos 2\u20134). Two distinct classes of side chain binding sites propagate along the pore. Odd-numbered ESCRT-III residues (D1, I3, N5, V7) bind in \u2018class I\u2019 pockets, while the side chains of even-numbered ESCRT-III residues (E2, V4, K6, L8) bind in \u2018class II\u2019 pockets. Class I pockets are formed by pore loop 1 residues K205 and W206, with substrate side chains sandwiched between W206 from successive subunits. The pocket is flanked by K205 from the first Vps4 subunit, which may also stabilize the ladder of W206 side chains through cation-\u03c0 interactions. .\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig3-v2.jpg)\n\n**Figure 3.:** (A) Left \u2013 tilted view of a surface representation showing how the pore loop residues form an array of class I and II binding pockets through the hexamer pore. W206 and M207 from subunits A-E are highlighted. Right \u2013 close up of the pore region. (B) Distances between C\u03b1 atoms of the peptide and pore loop 1 W206 and M207 indicate equivalent binding in the different class I and class II pockets. (C) Superposition of the four Class I pockets following superposition on C\u03b1 atoms of the class I pocket residues of subunits A and B. (D) Superposition of the four class II pockets following superposition on C\u03b1 atoms of the class II pocket residues of subunits A and B. (E) The H-bond seen between the NH of even-numbered ESCRT-III residues and the K205 CO of Vps4 subunits A-D \u2013 here centered on the bond between ESCRT-III V4 and subunit B. The bond between E2 and subunit A is also visible.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Visual inspection shows that the assigned peptide orientation is a better fit to the map than the inverted orientation. Arrowheads indicate notably poor agreement between model and map in the inverted orientation. Chimera RSCC and EMRinger scores also support the assigned orientation.\n\nThe class II pockets are formed by the pore loop 1 M207 residues of successive subunits, and are flanked by pore loop 2 residues of the first Vps4 subunit and, to a greater extent, by the pore loop 2 residues of the preceding subunit. The first of these pockets, which includes M207 residues of the A and B subunits, is incompletely formed because the pore loop 2 residues of the preceding subunit (F) are not yet in position. The three pore loop 2 residues that most closely approach the peptide (E245, S246, E247) do not make distinctive contacts with the ESCRT-III peptide. S246 caps the N-terminus of a Vps4 helix while E245 and E247 make non-specific contacts with peptide side chains. The different class I and class II pockets are all essentially identical (Figure 3CD) and their exposure to the highly solvated pore explains how polar side chains can be accommodated.\n\nThe refined model indicates that the NH groups of the even-numbered ESCRT-III peptide residues form hydrogen bonds with the main chain O of Vps4 K205 (subunit A, B, C, and D distances are 3.1\u20133.5 \u00c5). In contrast, these distances are 3.4\u20134.5 \u00c5 in the model refined with the peptide in the reverse orientation. Thus, substrate NH hydrogen bonds may help define the substrate orientation by optimally positioning ESCRT-III side chains with respect to their binding pockets (Figure 3E).\n\n### Model of translocation\n\nThe structure supports our earlier conveyor-belt model of substrate translocation (Monroe et al., 2017) but now includes more detail, especially of substrate binding. It is also consistent with other recent models (Gates et al., 2017; Monroe et al., 2017; Puchades et al., 2017; Ripstein et al., 2017), albeit with additional molecular details. We envision that the enzyme proceeds by transitioning of subunit configurations around the hexameric ring, such that one step represents transitioning of subunits F, A, B, C, D, E to the configurations of subunits A, B, C, D, E, F (Figure 4A, Figure 4\u2014video 1). Each step comprises concomitant changes in subunit interfaces at each end of the Vps4 A-E helix. At the leading end, binding of ATP allows subunit F to pack against subunit A and thereby bind the next two residues of the substrate. At the lagging end, hydrolysis of ATP and subsequent phosphate release destabilizes the interface and drives subunit E to the transitioning configuration, thereby opening the nucleotide binding site to allow exchange of ADP by ATP. In this manner, the equivalent dipeptide-binding sites formed at the interfaces of subunits A-E track with their bound dipeptides along the pore as subunits transition from the lagging end to the leading end of the helix. Thus, the pathway can be represented either as Vps4 \u2018walking\u2019 along the substrate or as substrate being translocated through the Vps4 pore, depending upon the frame of reference.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig4-v2.jpg)\n\n**Figure 4.:** (A) Proposed mechanism of ESCRT-III translocation by Vps4. W206 and M207 residues of the six Vps4 subunits are shown, with the peptide passing through the Vps4 hexamer. The peptide model was constructed by changing the side chains to leucine without adjusting the main chain, and building out in the N and C directions by overlapping copies of the peptide model. The proposed mechanism envisions that Vps4 progresses through states A to E while bound to successive dipeptides of its substrate. ATP hydrolysis at subunit D destabilizes the DE interface and promotes displacement of subunit E toward the transitioning subunit F configuration, which allows displacement of ADP. Subsequent ATP binding allows subunit F to pack against subunit A, bind to the next dipeptide of ESCRT-III, and assume the subunit A configuration. (BC) Conservation of helical pore loop structure in AAA ATPases. Overlap on the large ATPases of multiple AAA ATPase structures gives a similar helical arrangement of pore loop 1 residues from five subunits. (B) Top and (C) side views are shown of the ESCRT-III peptide (green) and Vps4 pore loop 1 (red) with the equivalent residues of: VAT (Ripstein et al., 2017) (pdbid 5vca), HSP104 (Gates et al., 2017) (5vjh), NSF (Zhao et al., 2015) (3j94), human 26S proteasome (Huang et al., 2016) (5gjr), yeast 26S proteasome (Wehmer et al., 2017) (5mp9), katanin (Zehr et al., 2017) (5wc0, 5wcb).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31324/elife-31324-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Pore loop 1 residues that contact the ESCRT-III peptide (red font) are shown with four flanking residues on either side.\n\nAlthough our structure shows four intact dipeptide-binding sites and just one transitioning subunit, it is expected that two Vps4 subunits will be disengaged from substrate through at least part of the reaction cycle. This is because subunit E will disengage from substrate as it moves toward the F configuration while the F subunit is moving toward the substrate-binding A configuration. The specific point in the reaction cycle captured in our structure corresponds to subunit E just starting to transition toward the F state, as indicated by the slight\u00a0deviation of the DE interface from the configuration of AB, BC, and CD, and consistent with our structural interpretation that ADP is bound to subunit D (above). The stability of this state relative to other conformations along the reaction coordinate will result from a combination of multiple factors, including the particular nucleotide (ADP\u00b7BeFx) and ESCRT-III peptide in the complex.\n\nOur model implies that each step translocates two amino acid residues and hydrolyses one ATP\u00a0molecule. It also explains the importance of the pore loop residues and the integral role of the class I and II pockets, because once a substrate residue binds at the top of the Vps4 helix it does not substantially change conformation until released at the bottom of the helical conveyor belt. The model is also consistent with reports that other AAA+\u00a0ATPases bind a maximum of three or four ATP molecules (Hersch et al., 2005; Horwitz et al., 2007; Yakamavich et al., 2008; Smith et al., 2011). Moreover, despite important structural differences, our mechanistic model is analogous to mechanisms established for translocation of DNA by the E1 helicase (Enemark and Joshua-Tor, 2006) and of RNA by the Rho translocase (Thomsen and Berger, 2009; Thomsen et al., 2016).\n\n### Comparison with other AAA ATPases\n\nVps4 is a member of the classic clade of AAA+\u00a0ATPases, which includes the original members of the AAA ATPase family (Iyer et al., 2004; Erzberger and Berger, 2006). These proteins are hexameric protein translocases, whose conserved pore loops emanate from equivalent structural elements, although their N-terminal domains are variable and only Vps4 has a \u03b2 domain. Family members are found in a variety of contexts. For example, Vps4 is a homohexamer that forms a single ring, whereas p97/CDC48/VAT and NSF comprise two AAA ATPase cassettes that each form a hexameric ring. Others, such as HSP104/ClpB, form a double ATPase ring structure in which only one of the rings belongs to the classic clade. Still others, such as the eukaryotic proteasome ATPases, form part of a much larger complex and comprise six different, albeit related, subunits.\n\nSequence alignment of classic clade AAA+\u00a0ATPase family members for which structures have been reported shows that the first two of the three pore loop 1 residues that contact substrate (Vps4 K205, W206, M207) are conserved (Figure 4\u2014figure supplement 1). W206 is always W, F, or Y, all of which could perform the role of sandwiching substrate side chains. The preceding K205 residue is usually K but sometimes M, which like K could flank the class I binding pocket. The more variable third residue, M207, is usually I, L or V, but there are examples of M (Vps4), A, F, K, R, and Y, all of which could provide hydrophobic sides to the class II binding pocket. Interestingly, the following residue, G208, is invariant, presumably because it adopts phi angles (~81 to 85\u00b0) that are only favored for glycine, and helps define a conformation that can pack against pore loop 1 residues from neighboring subunits. Pore loop 2 residues are less conserved and are typically disordered in other published structures, which is consistent with the lack of distinctive roles in contacting substrate.\n\nOur Vps4 structure superimposes closely with the recently reported structures of VAT (Ripstein et al., 2017), HSP104 (Gates et al., 2017), and ClpB (Deville et al., 2017), which were each determined with substrate bound in their central pores, albeit at relatively low resolutions. A very recently published 3.4 \u00c5 structure of the YME1 AAA ATPase in complex with a mixed polypeptide substrate (Puchades et al., 2017) also presents a very similar structure and mechanism to that described here, although coordinates are not yet available\u00a0during final preparation of this manuscript. Close superposition is also seen with multiple other classic clade AAA+\u00a0ATPases that have been visualized in the absence of substrate (Figure 4B, Figure 4\u2014video 2). Notable exceptions include p97 and CDC48, whose structures display rotational rather than helical symmetry (Banerjee et al., 2016; Xia et al., 2016), and ClpX and HslU, which are not members of the classic clade but share notable similarities with Vps4 and have provided leading mechanistic models for protein translocating AAA+\u00a0ATPases (Olivares et al., 2016).\n\nIn contrast to these sequential models, biochemical analyses of ClpX (Martin et al., 2005) and HslU (Baytshtok et al., 2017) have argued for stochastic mechanisms by showing that just one active ATPase subunit per hexamer can drive translocation, albeit at much reduced efficiency. A possible resolution is that a hexamer that has only one active ATPase site may allow inactive subunits to diffuse through the entire helical cycle. Thus, like a 6-cylinder engine firing on just one cylinder, a single active ATPase might drive the sequential conveyor-belt model, albeit rather poorly.\n\nIn summary, the structure shows details of substrate interactions that are provided by a repeating array of dipeptide binding sites with the ESCRT-III peptide in a unique orientation. It further supports a sequential mechanism and explains the ability to translocate polypeptides with little sequence specificity. Important future priorities include testing the generality of the structural observations, mechanistic implications, and the extent to which they may apply to other AAA+\u00a0ATPases.\n\n## Materials and methods\n\n### Electron microscopy\n\nSample preparation was as described (Monroe et al., 2017). Vitrified grids were loaded onto a Titan Krios (FEI) operating at 300 kV. Images were acquired using a defocus range between \u22121.0 to \u22122.2 \u00b5m. A total of 2,349 cryo-EM movies were recorded using a K2 Summit direct detector (Gatan) in counting mode with a pixel size of 1.10 \u00c5 and at a dose rate of\u00a0~7.4 e-/pixel/sec. Each movie was recorded as a stack of 40 frames accumulated over 10 s, totaling\u00a0~62e-/\u00c52.\n\n### Cryo-EM analysis\n\nMovie frames were aligned, dose weighted, and summed using MotionCor2 (Zheng et al., 2017) (Figure 1\u2014figure supplement 1A). CTF parameters were determined on non-dose-weighted sums using gctf (Zhang, 2016). Micrographs with poor CTF cross correlation scores were excluded from downstream analyses. A total of 1,987 dose-weighted sums were used for all subsequent image processing steps. 4,429 particles were manually selected from 30 micrographs in EMAN2 using the e2boxer.py program (Tang et al., 2007) to generate preliminary 2D classes in RELION (Scheres, 2012). The non-CTF-corrected class averages were used for template-based autopicking in gautomatch. A total of 599,085 particles were extracted and used as input for full CTF-corrected image processing (Figure 1\u2014figure supplement 1B). After multiple rounds of 2D classification, 124,743 particles\u00a0were retained based on visual inspection of classes with high-resolution Vps4 features and used for an initial round of 3D classification. After 3D classification, 109,241 particles were used for RELION auto-refinement (Scheres, 2012), which generated a 4.1 \u00c5 density map of the Hcp1-Vps4 fusion complex based on the gold-standard FSC criterion (Figure 1\u2014figure supplement 1D). To improve the resolution of Vps4, we performed signal subtraction of Hcp1 densities using the same approach as described previously (Bai et al., 2015; Monroe et al., 2017) (Figure 1\u2014figure supplement 2). After Hcp1 signal subtraction, we performed an additional round of 3D classification, which assigned 82,225 particles into a single class with excellent Vps4 features. These particles were used for a final round of RELION auto-refinement, producing a 3.2 \u00c5 resolution density map of Vps4 (Figure 1\u2014figure supplement 2). B-factor sharpening of \u2212125 \u00c52 was applied using an automated procedure in RELION postprocessing (Rosenthal and Henderson, 2003). Local resolutions were estimated using ResMap (Kucukelbir et al., 2014) (Figure 1\u2014figure supplement 1G).\n\nThe consensus reconstruction of the Vps4 complex revealed poor, fragmented densities for subunit F and Vta1. To improve their densities, we performed additional rounds of focused classification by generating custom soft-edged masks around their respective densities and then using RELION to classify the particles without re-alignment (Figure 1\u2014figure supplement 3). Particles from classes with ordered densities were used for separate RELION auto-refinement reconstructions and produced lower-resolution maps that were used for rigid-body fitting of subunit F or Vta1.\n\n### Model building, refinement and validation\n\nModel building and refinement followed the same approach as for the earlier lower resolution structure (Monroe et al., 2017). NCS restraints were applied to Vps4 subunits A-E with the exception of residues 204\u2013208, 227\u2013233, and 249\u2013271 of subunit A and residues 140\u2013158, 171\u2013191, and 204\u2013205 of subunit E. For subunits A, B, C, and D, the distance between the\u00a0Mg2+ and the OG of 180S was restrained to 2.0 \u00c5. No reference model was used during refinement. The refined model was assessed using MolProbity (RRID: SCR_014226) (Chen et al., 2010) and EMRinger (Barad et al., 2015). To test for overfitting, all atoms in the refined model were randomly displaced by 0.5 \u00c5 and re-refined against one of the RELION half maps. FSC curves were generated for the re-refined model against the half map used for re-refinement (FSCwork) and against the other half map (FSCtest). The close agreement between the two curves is consistent with lack of overfitting (Figure 1\u2014figure supplement 1E).\n\nTo validate the orientation of the 8-residue ESCRT-III peptide, it was built and refined in opposing conformations (Figure 3\u2014figure supplement 1). RSCC scores between the models and density map were determined using UCSF Chimera (Pettersen et al., 2004). Side chain-directed model versus map calculations for the peptide were performed using EMRinger (Barad et al., 2015).\n\n### Structure deposition\n\nThe refined model comprising the Vps4 ATPase domains of subunits A-E and ESCRT-III peptide has been deposited into the PDB (RRID: SCR_012820; PDB\u00a0ID:\u00a06BMF). The complete model, including regions not subjected to atomic refinement such as the 12 Vta1VSL domains and subunit F, has been deposited into the PDB (PDB ID: 6AP1) together with the sharpened Hcp1-subtracted map (RRID: SCR_003207, EMDB Accession Number EMD-8887). The unsharpened map, the two maps for subunit F, and the six maps for the Vta1\u00a0VSL domain have been\u00a0deposited at the EMDB (RRID: SCR_003207, EMDB Accession Number(s) EMD-8888, EMD-8889, EMD-8890, EMD-8891, EMD-8892, EMD-8893, EMD-8894, EMD-8895, EMD-8896).\n",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "eccf9765-d26b-4ec5-bd99-3b7d1107e96c",
+      "submission_id": "2810b968-e72a-46bb-8830-db037ec1fa2a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andreas Martin, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31324.058](https://doi.org/10.7554/eLife.31324.058)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The AAA ATPase Vps4 binds substrates through a repeating array of dipeptide-binding pockets\" for consideration by eLife. Your article has been favorably evaluated by Michael Marletta (Senior Editor) and three reviewers, one of whom, Andreas Martin (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Gabriel C Lander (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Sundquist, Hill, and colleagues present the 3.2 \u00c5 cryo-EM structure of yeast Vps4 bound to an ESCRT-III peptide. It builds on their paper published in eLife earlier this year that provided a 4.3 \u00c5 structure of Vps4 bound to nucleotides and a substrate peptide, and proposed a spiral staircase model for the continuous conveyance of substrate through the central pore. In this previous structure, the peptide density showed contacts with multiple subunits via their pore loops, but did not reveal side-chain density or the orientation of the bound peptide.\n\nA Krios data set now improved the resolution to 3.2 \u00c5, which allowed the visualization of peptide side chains as well as pore loop contacts, and the proposal of a more detailed translocation model where every Vps4 subunit interacts with two amino acids through two \"binding pockets\" formed by the pore-1 and pore-2 loops. The new structure is thus consistent with the mechanisms the authors proposed previously, but does not reveal major new conceptual insights.\n\nThe reviewers were a bit surprised to see that there are really not many new data in this submission albeit now having a structure at 1.1 \u00c5 higher resolution, and that the authors did not take advantage of this higher resolution to address and answer important outstanding questions.\n\nEven though it is exciting to directly visualize substrate interactions of Vps4, the advance by this manuscript in its current form is rather limited and considered not sufficient for publication in eLife. The higher resolution data should enable the authors to pursue further functional exploration and reveal new conceptual insights that go beyond of what had already been established previously for Vps4 and other AAA motors. The manuscript thus needs major revisions before publication.\n\nEssential revisions:\n\n1) The proposal of a directionality for ESCRT substrate translocation by Vps4 is interesting, but should be further supported by experimental data. Several related AAA motors have been shown to not have a preference for substrate orientation in the central pore, and for the conclusions here it should be considered that the described trapped structure likely represents an energy minimum, where the Vps4 subunits might arrange around the stably bound peptide. It is possible that a peptide bound in the opposite orientation could induce equivalent contacts, and that there is in fact no preference in the direction of translocation. The authors may be able to explore this through biochemical assays or structurally, for instance by using peptides of different lengths or with the inverted amino-acid sequence relative to the current one.\n\n2) The presented translocation model also does not go significantly beyond what had been previously discussed. The authors describe a correlation between nucleotide state and subunit conformation relative to the substrate, but the structural relationship remains unexplored in the manuscript. The impressive resolution of this structure should enable the authors to explain how ATP hydrolysis and release translates to specific rearrangements of the subunits or pore loops. Reviewers were also not fully convinced by the authors' assignment of ADP- vs. ATP- (or ADP\u00b7BeFx) bound subunits, especially for the DE interface, and the presented model for ATPase-driven substrate translocation. As the authors know, reliably distinguishing between nucleotide states has been very difficult for other AAA hexamers in recent high-resolution cryo-EM studies, in part due to weaker density for beta and gamma phosphates, but also due to issues when averaging thousands of particles with potentially distinct nucleotide occupancies in some of the ATPase subunits. For the present study, it is indeed quite unexpected that neither the Mg ion nor the P-loop residues show significant changes in their orientation, and that the Arg fingers are just slightly shifted when comparing supposedly ADP\u00b7BeFx -bound and ADP-bound subunits. When discussing this surprising similarity of subunit interfaces, the authors bring up the possibility that their nucleotide assignments are wrong. The authors also try to come up with a rationale for how the very small structural differences may lead to preferential binding of ADP vs. ATP (or ADP\u00b7BeFx), but ignore in their Discussion that during normal motor function the nucleotide dictates subunit conformation, not the other way around. Several biochemical and structural studies previously suggested major conformational and functional differences between ATP- and ADP-subunits, and that the transition from ATP- to ADP-bound through hydrolysis and phosphate release may drive the power stroke of AAA motors. Interestingly, the authors claim that substantial conformational adjustments are not required to pass through the DE states. But what then is the force-generating step for translocation, if subunits can transition from ATP to ADP-bound without any major conformational changes? ADP release or ATP binding to an empty Vps4 subunit? In a revised manuscript, the authors should assess and discuss which step of the ATPase cycle likely induces conformational changes and drives the conveyer belt for forceful substrate translocation. In that context it should also be discussed how constrains in the topologically closed ring could restrict conformational changes in response to hydrolysis, which may explain the authors' findings that ADP and ADP\u00b7BeFx-bound subunits don't show major conformational differences.\n\n3) The reviewers have expressed concerns regarding the atomic model refinement. Only statistics for chains A-E are listed in Table 1, but the deposited models contain all 6 subunits in addition to the substrate. The validation report from the PDB for the full deposition reveals statistics that are much worse than those reported in Table 1, and the selective inclusion of only chain A-E is rather misleading.\n",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47ce8f79-9024-429a-8273-81d87feed222",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C1",
+      "claim": "The new cryo-EM structure of Vps4 bound to an ESCRT-III peptide substrate has a resolution of 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Building upon our earlier 4.3 \u00c5 resolution cryo-EM structure (Monroe et al., 2017), we now report a 3.2 \u00c5 structure of Vps4 bound to an ESCRT-III peptide substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is stated directly in the abstract and confirmed in the methods section with FSC curves and reconstruction statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "2d797278-717f-43ac-8425-af7e8a295af3",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C2",
+      "claim": "The ESCRT-III peptide approximates a \u03b2-strand conformation in the Vps4 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The new structure reveals that the peptide approximates a \u03b2-strand conformation whose helical symmetry matches that of the five Vps4 subunits it contacts directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The peptide conformation is described with specific phi and psi angles (phi \u221292\u00b0 to \u2212151\u00b0; psi 102\u00b0 to 189\u00b0 (\u2212171\u00b0)) that are characteristic of \u03b2-strands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "16f8ed2b-8970-44dd-b088-5922a2b123e6",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C3",
+      "claim": "Adjacent Vps4 subunits make equivalent interactions with successive substrate dipeptides through two distinct classes of side chain binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjacent Vps4 subunits make equivalent interactions with successive substrate dipeptides through two distinct classes of side chain binding pockets formed primarily by Vps4 pore loop 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structure shows class I and class II pockets with specific residue interactions documented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "a51834e9-e043-43a3-b184-027368e91bb0",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C4",
+      "claim": "The side chain binding pockets are formed primarily by Vps4 pore loop 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjacent Vps4 subunits make equivalent interactions with successive substrate dipeptides through two distinct classes of side chain binding pockets formed primarily by Vps4 pore loop 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structural data shows that K205, W206, and M207 from pore loop 1 form the binding pockets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "eee04e28-9cf7-4faf-af38-23de5089c9c7",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C5",
+      "claim": "The structure supports a 'conveyor belt' model of translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure supports a 'conveyor belt' model of translocation in which ATP binding allows a Vps4 subunit to join the growing end of the helix and engage the substrate, while hydrolysis and release promotes helix disassembly and substrate release at the lagging end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The mechanistic model is inferred from the structural arrangement of subunits and their interactions with substrate and nucleotides.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "fa353034-3bf1-4e50-8323-091ed10a3ee6",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C6",
+      "claim": "ATP binding allows a Vps4 subunit to join the growing end of the helix and engage the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure supports a 'conveyor belt' model of translocation in which ATP binding allows a Vps4 subunit to join the growing end of the helix and engage the substrate, while hydrolysis and release promotes helix disassembly and substrate release at the lagging end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the structural states observed and nucleotide binding patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "a5230fe2-8a85-476c-abff-effdbce0f368",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C7",
+      "claim": "ATP hydrolysis and release promotes helix disassembly and substrate release at the lagging end.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure supports a 'conveyor belt' model of translocation in which ATP binding allows a Vps4 subunit to join the growing end of the helix and engage the substrate, while hydrolysis and release promotes helix disassembly and substrate release at the lagging end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the structural states observed and nucleotide binding patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "30b92423-2347-498a-aefe-96d2a17d1976",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C8",
+      "claim": "The ESCRT pathway drives multiple cellular membrane fission processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Endosomal Sorting Complexes Required for Transport (ESCRT) pathway drives multiple cellular membrane fission processes (Christ et al., 2017; Scourfield and Martin-Serrano, 2017) through the formation of filaments comprising different subsets of related ESCRT-III family members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "237f7f26-d3f8-44fe-a8c1-54c3d411c9e8",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C9",
+      "claim": "ESCRT-III filaments stabilize highly curved membrane necks that resolve by fission when the filaments are remodeled by Vps4.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCRT-III filaments stabilize highly curved membrane necks that resolve by fission when the filaments are remodeled by Vps4 (Monroe and Hill, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "850eee05-7237-4f0c-a0cb-ec4cd6e06b38",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C10",
+      "claim": "Continued Vps4 activity removes ESCRT-III subunits and drives complete filament disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Continued Vps4 activity removes ESCRT-III subunits and drives complete filament disassembly, thereby enabling subsequent rounds of ESCRT activity (Mierzwa et al., 2017; Sch\u00f6neberg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d9eb1e93-c21e-43a9-9d8e-3f6670589281",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C11",
+      "claim": "Vps4 is monomeric or dimeric at cytoplasmic concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps4 is monomeric or dimeric at cytoplasmic concentrations, but forms a hexamer when active and recruited to ESCRT-III filaments (Monroe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "963ca6ac-afdd-4287-96cb-a669c5666713",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C12",
+      "claim": "Vps4 forms a hexamer when active and recruited to ESCRT-III filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps4 is monomeric or dimeric at cytoplasmic concentrations, but forms a hexamer when active and recruited to ESCRT-III filaments (Monroe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "55db02b3-2e0f-491a-a38c-f794a488598e",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C13",
+      "claim": "Recruitment of Vps4 is mediated by binding of the Vps4 MIT domains to MIM elements in the exposed tails of ESCRT-III subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment is mediated, at least in part, by binding of the Vps4 MIT (Microtubule Interacting and Transport) domains to MIM (MIT Interacting Motif) elements in the exposed tails of ESCRT-III subunits (Obita et al., 2007; Stuchell-Brereton et al., 2007; Hurley and Yang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "b56d1de6-77c2-4541-bf09-55c1f6eb6d3a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C14",
+      "claim": "Hexamerization of Vps4 is promoted by the cofactor protein Vta1/LIP5.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexamerization is further promoted by the cofactor protein Vta1/LIP5 (Scott et al., 2005; Lottridge et al., 2006; Azmi et al., 2008; Xiao et al., 2008), whose VSL domain binds adjacent Vps4 subunits at the ring periphery (Yang and Hurley, 2010; Davies et al., 2014; Monroe et al., 2017; Sun et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "32321f1f-662e-49dc-9178-028fe2080f79",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C15",
+      "claim": "The VSL domain of Vta1/LIP5 binds adjacent Vps4 subunits at the ring periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexamerization is further promoted by the cofactor protein Vta1/LIP5 (Scott et al., 2005; Lottridge et al., 2006; Azmi et al., 2008; Xiao et al., 2008), whose VSL domain binds adjacent Vps4 subunits at the ring periphery (Yang and Hurley, 2010; Davies et al., 2014; Monroe et al., 2017; Sun et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "b3526c74-b183-4d2b-8b4f-0cdecf1b3732",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C16",
+      "claim": "The Vps4 N-terminal MIT domain is followed by an ~40 residue flexible linker and an ATPase cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "The Vps4 N-terminal MIT domain is followed by an ~40 residue flexible linker and an ATPase cassette that comprises a large ATPase domain, small ATPase domain, and a \u03b2 domain (Scott et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural organization is described with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d5668634-c0c5-44a1-bc66-97826d01af01",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C17",
+      "claim": "The Vps4 ATPase cassette comprises a large ATPase domain, small ATPase domain, and a \u03b2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The Vps4 N-terminal MIT domain is followed by an ~40 residue flexible linker and an ATPase cassette that comprises a large ATPase domain, small ATPase domain, and a \u03b2 domain (Scott et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural organization is described with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "c9d432d5-79cd-4bef-99a9-a0ef551b8860",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C18",
+      "claim": "Recently reported cryo-EM structures of Vps4 at overall resolutions of 4.3 \u00c5, 6.1 \u00c5, and 3.9 \u00c5 revealed similar hexameric 'lock washers'.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently reported cryo-EM structures of Vps4 at overall resolutions of 4.3 \u00c5 (Monroe et al., 2017), 6.1 \u00c5 (Su et al., 2017), and 3.9 \u00c5 (Sun et al., 2017) revealed similar hexameric 'lock washers', in which five of the six Vps4 subunits form a helical assembly and the sixth closes the ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous cryo-EM structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "7d8961dc-d6cb-41d0-b795-b00b999695b0",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C19",
+      "claim": "In the hexameric 'lock washer' structure, five of the six Vps4 subunits form a helical assembly and the sixth closes the ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently reported cryo-EM structures of Vps4 at overall resolutions of 4.3 \u00c5 (Monroe et al., 2017), 6.1 \u00c5 (Su et al., 2017), and 3.9 \u00c5 (Sun et al., 2017) revealed similar hexameric 'lock washers', in which five of the six Vps4 subunits form a helical assembly and the sixth closes the ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural arrangement is described with citations to previous cryo-EM structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "3d3671b4-f73a-45b4-a433-7173df075add",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C20",
+      "claim": "The hexameric arrangement in cryo-EM structures is quite different from the packing seen in multiple Vps4 crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement is quite different from the packing seen in multiple Vps4 crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation based on structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "ae071947-65ee-4584-af62-65e3301f774b",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C21",
+      "claim": "The earlier 4.3 \u00c5 structure guided the proposal that ESCRT-III substrates bind within the hexamer pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure, which was visualized in complex with a substrate peptide, guided the proposal that ESCRT-III substrates bind within the hexamer pore (Monroe et al., 2017), consistent with a model that ESCRT-III subunits are unfolded by translocation through the pore (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to a previous mechanistic proposal based on structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "9265bc3e-4c55-40a6-80d6-386252b585aa",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C22",
+      "claim": "The substrate binding model is consistent with ESCRT-III subunits being unfolded by translocation through the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure, which was visualized in complex with a substrate peptide, guided the proposal that ESCRT-III substrates bind within the hexamer pore (Monroe et al., 2017), consistent with a model that ESCRT-III subunits are unfolded by translocation through the pore (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic model is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "cd9624a7-6371-4f4d-a9fe-1cc0f197cba9",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C23",
+      "claim": "An alternative proposal suggested that substrates are engaged by a single ESCRT-III subunit and ATP hydrolysis pulls an entire ESCRT-III subunit from the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the observation that the Vps4 hexamer adopts 'open' and 'closed' states in the absence of Vta1/LIP5 and substrate, prompted the proposal that substrates are engaged by a single ESCRT-III subunit, and that ATP hydrolysis pulls an entire ESCRT-III subunit from the filament and positions the next Vps4 subunit to remove the ensuing ESCRT-III subunit (Su et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to an alternative mechanistic model proposed by others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "86571861-3482-4936-8815-2dd8acc8a75c",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C24",
+      "claim": "The six Vps4 subunits form a closed ring with six Vta1 VSL domains binding around the periphery and a single ESCRT-III peptide bound in the central pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The six Vps4 subunits form a closed ring, with six Vta1 VSL domains binding around the periphery and a single ESCRT-III peptide bound in the central pore (Figure 1, Table 1, Figure 1\u2014figure supplements 1\u20134, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural arrangement is directly observed in the cryo-EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "155a427d-e776-4e5d-b49d-78852efbf718",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C25",
+      "claim": "Vps4 subunits A-E form a helix whose symmetry approximates a 60\u00b0 rotation and 6.3 \u00c5 translation between adjacent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps4 subunits A-E form a helix whose symmetry approximates a 60\u00b0 rotation and 6.3 \u00c5 translation between adjacent subunits, and provides the binding surface for the ESCRT-III peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The helical parameters are measured from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "eb8cfca7-f72c-4b30-a6a7-24d723c7e13f",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C26",
+      "claim": "Subunit E deviates slightly from the more exact helical symmetry of subunits A-D.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted previously (Monroe et al., 2017), subunit E deviates slightly from the more exact helical symmetry of subunits A-D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is noted with reference to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "32ee157b-3971-4be3-86cb-637ca9d1de23",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C27",
+      "claim": "The large domain of subunit F is disengaged from adjacent Vps4 subunits and substrate and appears to be transitioning between the two ends of the Vps4 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The large domain of subunit F is disengaged from adjacent Vps4 subunits (and substrate) and appears to be transitioning between the two ends of the Vps4 helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural state of subunit F based on its position and contacts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "7bfda831-a276-4069-b45a-452fb755e59e",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C28",
+      "claim": "Subunit F and features at the ring periphery, including the Vps4 \u03b2 domains and the Vta1 VSL domains, have weak density.",
+      "claim_type": "EXPLICIT",
+      "source": "Subunit F and features at the ring periphery, including the Vps4 \u03b2 domains and the Vta1 VSL domains, have weak density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cryo-EM density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "28311741-f1ba-4d83-8a14-3eaf05523b4d",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C29",
+      "claim": "Nucleotides primarily contact one Vps4 subunit at a subunit interface, with the \u03b2-phosphate and BeFx contacting two 'finger' arginines, R288 and R289, from the following subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleotides primarily contact one Vps4 subunit at a subunit interface, with the \u03b2-phosphate and BeFx contacting two 'finger' arginines, R288 and R289, from the following subunit (Figure 2, Figure 2\u2014videos 1\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The nucleotide coordination is directly observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "5d77405d-7bbd-4430-9588-5cb3add46bbc",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C30",
+      "claim": "The bound ADP\u00b7BeFx mimics ATP binding to subunits A, B, and C.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound ADP\u00b7BeFx mimics ATP binding to subunits A, B, and C, whereas subunits D and E appear to bind ADP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The nucleotide states are interpreted from the density and coordination patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "634215e8-b0c0-46d2-9691-5dff284bf874",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C31",
+      "claim": "Subunits D and E appear to bind ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound ADP\u00b7BeFx mimics ATP binding to subunits A, B, and C, whereas subunits D and E appear to bind ADP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The nucleotide states are interpreted from the density and coordination patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "611ae7dd-99fd-478e-b2c7-eb20bd160e66",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C32",
+      "claim": "The density of subunit F is too weak to reliably assess the presence of nucleotide, and it may be empty.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of subunit F is too weak to reliably assess the presence of nucleotide, and it may be empty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the density quality and interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "2a94f71b-6b1a-453e-be1a-fa4e75def53a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C33",
+      "claim": "The coordination of bound nucleotides is similar for all Vps4 subunits and resembles binding to other ATPases.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordination of bound nucleotides is similar for all Vps4 subunits, and resembles binding to other ATPases (Wendler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation with citation to other ATPase structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "396b39b5-d4a1-4375-b19d-659cf4133c9b",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C34",
+      "claim": "The hinge angle between large and small domains does not change substantially with the bound nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to earlier proposals (Gonciarz et al., 2008), the hinge angle between large and small domains does not change substantially with the bound nucleotide, being 120\u2013121\u00b0 for subunits A-D, 117\u00b0 for subunit E, and 122\u00b0 for subunit F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The hinge angles are measured from the structural data and contradict a previous proposal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "86eacc35-6380-4cef-85cd-b0d1c894f670",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C35",
+      "claim": "The AB, BC, and CD interfaces are extensive, similar to each other, and include large domain contacts with adjacent large domains and small domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The AB, BC, and CD interfaces are extensive, similar to each other, and include large domain contacts with adjacent large domains and small domains (Figure 2\u2014videos 6,7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The interface characteristics are observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6f55d307-669c-47c9-9278-98d5ea854d00",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C36",
+      "claim": "Comparison of the AB, BC, CD interfaces with the DE subunit pair shows an ~8\u00b0 rotation of subunit E which maintains very similar contacts with the preceding D subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of these interfaces with the DE subunit pair shows an ~8\u00b0 rotation of subunit E which, nevertheless, maintains very similar contacts with the preceding D subunit and relative positions of pore loops (Figure 2\u2014video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The rotation and contacts are measured from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "33071bc1-3db8-437f-b9be-6bcdff473657",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C37",
+      "claim": "It is uncertain why the AB, BC, and CD interfaces bind ATP (ADP\u00b7BeFx) while the similar DE interface appears to bind ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore uncertain why the AB, BC, and CD interfaces bind ATP (ADP\u00b7BeFx) while the similar DE interface appears to bind ADP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of uncertainty in interpreting the nucleotide states.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6668c2d5-e664-4386-af27-0fa03819c02b",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C38",
+      "claim": "The finding that subunit E binds ADP at the interface with subunit F supports the mechanistic model that ATP hydrolysis at subunit D destabilizes the subunit interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the finding that subunit E binds ADP at the interface with subunit F further supports our mechanistic model that ATP hydrolysis at subunit D destabilizes the subunit interface to promote formation of the more open nucleotide binding site seen for subunit E (below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural data in support of a mechanistic model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "57006a62-9d2e-4113-bd39-c3f940d5eac0",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C39",
+      "claim": "Contacts involving the small ATPase domains remain more similar across subunit interfaces compared to large domain contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the major disruption in contacts between the large domain of subunit F and the large domains of its neighbors, contacts involving the small ATPase domains remain more similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation of interface contacts in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "1c9fc4b1-18af-4001-8b46-a6670523ed33",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C40",
+      "claim": "The F small domain to A large domain contacts are closely superimposable with those of AB, BC, CD, and DE.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially true for the FA interface, where the F small domain to A large domain contacts are closely superimposable with those of AB, BC, CD, and DE (Figure 2\u2014video 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed through structural superposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "705d9758-09ab-4aac-8868-b8c885b6629c",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C41",
+      "claim": "The E small domain to F large domain contacts are mediated by the same hydrophobic contacts, albeit with a rotation of ~25\u00b0 and attendant shifts of 4.5\u20137.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The E small domain to F large domain contacts are mediated by the same hydrophobic contacts, albeit with a rotation of ~25\u00b0 and attendant shifts of 4.5\u20137.5 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The rotation and shifts are measured from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "bfbfb63e-3136-471e-badb-6de0f668ccae",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C42",
+      "claim": "The small domain-large domain interaction appears to be maintained throughout the reaction cycle as subunits transition from the lagging to the leading end of the Vps4 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this interaction appears to be maintained throughout the reaction cycle as subunits transition from the lagging (subunit E) to the leading (subunit A) end of the Vps4 helix, and may help maintain the hexameric assembly while the hydrolysis and release of ATP disrupts the core large domain contacts that define the ESCRT-III substrate-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural observations regarding the reaction cycle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6681487a-9912-4e58-8d8f-7b6ba040c92e",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C43",
+      "claim": "The small domain-large domain interface may help maintain the hexameric assembly while ATP hydrolysis and release disrupts the core large domain contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this interaction appears to be maintained throughout the reaction cycle as subunits transition from the lagging (subunit E) to the leading (subunit A) end of the Vps4 helix, and may help maintain the hexameric assembly while the hydrolysis and release of ATP disrupts the core large domain contacts that define the ESCRT-III substrate-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional role of the interface.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "2a4673f8-8232-4748-8292-31a450908557",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C44",
+      "claim": "The small domain-large domain interface is the major lattice contact in all of the reported crystal structures of Vps4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the small domain-large domain interface is the major lattice contact in all of the reported crystal structures of Vps4, which totals 22 crystallographically unique contacts (Figure 2\u2014video 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative analysis of crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "765e3efd-28ff-419c-8001-ad4c3d951d0a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C45",
+      "claim": "The archaeal Vps4 crystal contacts closely resemble the FA/AB/BC/CD/DE interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The archaeal Vps4 crystal contacts (Monroe et al., 2014; Caillat et al., 2015) closely resemble the FA/AB/BC/CD/DE interface, while eukaryotic crystal contacts (Scott et al., 2005; Xiao et al., 2007; Gonciarz et al., 2008; Inoue et al., 2008) overlap with the EF interface, except two of the three mouse Vps4 crystal contacts (Inoue et al., 2008), which are intermediate between the two states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative analysis of crystal structures with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "c6d9a326-1b26-43dc-9ec7-e8c9c1edac53",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C46",
+      "claim": "Eukaryotic Vps4 crystal contacts overlap with the EF interface, except two of the three mouse Vps4 crystal contacts which are intermediate between the two states.",
+      "claim_type": "EXPLICIT",
+      "source": "The archaeal Vps4 crystal contacts (Monroe et al., 2014; Caillat et al., 2015) closely resemble the FA/AB/BC/CD/DE interface, while eukaryotic crystal contacts (Scott et al., 2005; Xiao et al., 2007; Gonciarz et al., 2008; Inoue et al., 2008) overlap with the EF interface, except two of the three mouse Vps4 crystal contacts (Inoue et al., 2008), which are intermediate between the two states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative analysis of crystal structures with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "4f4bbcbf-3ec3-40c7-849f-62ed3d8c7063",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C47",
+      "claim": "The differences in crystal contacts correlate with the presence of a Vps4 \u03b2 domain and Vta1 cofactor in eukaryotes but not archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences correlate with the presence of a Vps4 \u03b2 domain and Vta1 cofactor in eukaryotes but not archaea, supporting the interpretation that Vta1 promotes formation and maintenance of the closed helical substrate-binding assembly of Vps4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a correlation observed between structural features and phylogenetic distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "381c3314-4b03-4563-aa6b-a4e7dd3e57e3",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C48",
+      "claim": "Vta1 promotes formation and maintenance of the closed helical substrate-binding assembly of Vps4.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences correlate with the presence of a Vps4 \u03b2 domain and Vta1 cofactor in eukaryotes but not archaea, supporting the interpretation that Vta1 promotes formation and maintenance of the closed helical substrate-binding assembly of Vps4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on structural and phylogenetic correlations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "92c2e80b-a693-4944-874b-201367b5832a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C49",
+      "claim": "The DEIVNKVL ESCRT-III peptide is clearly defined in the new 3.2 \u00c5 map, with the exception of the first two side chains, D1 and E2.",
+      "claim_type": "EXPLICIT",
+      "source": "The DEIVNKVL ESCRT-III peptide is clearly defined in the new 3.2 \u00c5 map (Figure 3\u2014video 1), with the exception of the first two side chains, D1 and E2 (Vps2 D165 and E166), which have weak density, as is typically seen for carboxylates in cryo-EM maps (Mitsuoka et al., 1999; Bartesaghi et al., 2014; Yonekura et al., 2015; Hryc et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the cryo-EM density map with citations explaining the weak density for carboxylates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "250b9401-d15f-4902-8605-52088e62e6cf",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C50",
+      "claim": "The first two side chains of the ESCRT-III peptide, D1 and E2, have weak density, as is typically seen for carboxylates in cryo-EM maps.",
+      "claim_type": "EXPLICIT",
+      "source": "The DEIVNKVL ESCRT-III peptide is clearly defined in the new 3.2 \u00c5 map (Figure 3\u2014video 1), with the exception of the first two side chains, D1 and E2 (Vps2 D165 and E166), which have weak density, as is typically seen for carboxylates in cryo-EM maps (Mitsuoka et al., 1999; Bartesaghi et al., 2014; Yonekura et al., 2015; Hryc et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is explained with citations to literature on cryo-EM density characteristics.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "dbe8bb20-12a8-4cfb-a624-c4057f03587a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C51",
+      "claim": "The assigned peptide orientation was validated by building and refining in the reverse direction, which showed a correlation coefficient of 0.85 for the assigned orientation vs. 0.81 in the reversed orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The assigned peptide orientation was validated by building and refining in the reverse direction, which showed a correlation coefficient of 0.85 for the assigned orientation vs. 0.81 in the reversed orientation, and EMRinger (Barad et al., 2015) scores of 3.7 for the assigned orientation vs. 1.1 for the reversed orientation (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validation was performed using quantitative metrics comparing the two orientations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "f440ef47-16fa-41b8-859d-efad0c0bdb2c",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C52",
+      "claim": "EMRinger scores were 3.7 for the assigned peptide orientation vs. 1.1 for the reversed orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The assigned peptide orientation was validated by building and refining in the reverse direction, which showed a correlation coefficient of 0.85 for the assigned orientation vs. 0.81 in the reversed orientation, and EMRinger (Barad et al., 2015) scores of 3.7 for the assigned orientation vs. 1.1 for the reversed orientation (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validation was performed using the EMRinger metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "23d3b5c9-3e62-4dc1-b66f-a6881fd3b20e",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C53",
+      "claim": "The peptide adopts an extended conformation with phi angles of \u221292\u00b0 to \u2212151\u00b0 and psi angles of 102\u00b0 to 189\u00b0 (\u2212171\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide adopts an extended conformation that resembles a canonical \u03b2-strand (phi \u221292\u00b0 to \u2212151\u00b0; psi 102\u00b0 to 189\u00b0 (\u2212171\u00b0)) and packs closely against Vps4 subunits A-E (Figure 3, Figure 3\u2014videos 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The dihedral angles are measured from the refined structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "e8bed213-b64f-4bb7-9d66-053baa8ac893",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C54",
+      "claim": "Odd-numbered ESCRT-III residues (D1, I3, N5, V7) bind in 'class I' pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Odd-numbered ESCRT-III residues (D1, I3, N5, V7) bind in 'class I' pockets, while the side chains of even-numbered ESCRT-III residues (E2, V4, K6, L8) bind in 'class II' pockets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This binding pattern is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d54b1b52-f2b4-4f8e-b083-17aad8993a5d",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C55",
+      "claim": "Even-numbered ESCRT-III residues (E2, V4, K6, L8) bind in 'class II' pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Odd-numbered ESCRT-III residues (D1, I3, N5, V7) bind in 'class I' pockets, while the side chains of even-numbered ESCRT-III residues (E2, V4, K6, L8) bind in 'class II' pockets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This binding pattern is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "47b12cda-cf43-4e6d-9965-14853d1e6006",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C56",
+      "claim": "Class I pockets are formed by pore loop 1 residues K205 and W206, with substrate side chains sandwiched between W206 from successive subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Class I pockets are formed by pore loop 1 residues K205 and W206, with substrate side chains sandwiched between W206 from successive subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The pocket composition is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "c5023e4f-54ea-4526-8d80-1b33ce3e88c8",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C57",
+      "claim": "The class I pocket is flanked by K205 from the first Vps4 subunit, which may also stabilize the ladder of W206 side chains through cation-\u03c0 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The pocket is flanked by K205 from the first Vps4 subunit, which may also stabilize the ladder of W206 side chains through cation-\u03c0 interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural arrangement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "1acd4c0f-a865-45aa-8af4-3cdc3f911a70",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C58",
+      "claim": "Class II pockets are formed by the pore loop 1 M207 residues of successive subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The class II pockets are formed by the pore loop 1 M207 residues of successive subunits, and are flanked by pore loop 2 residues of the first Vps4 subunit and, to a greater extent, by the pore loop 2 residues of the preceding subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The pocket composition is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "4a4dcaf8-cc11-4a3c-8362-7d7b561e8025",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C59",
+      "claim": "Class II pockets are flanked by pore loop 2 residues of the first Vps4 subunit and, to a greater extent, by the pore loop 2 residues of the preceding subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The class II pockets are formed by the pore loop 1 M207 residues of successive subunits, and are flanked by pore loop 2 residues of the first Vps4 subunit and, to a greater extent, by the pore loop 2 residues of the preceding subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The pocket composition is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6ef3df49-399b-4614-a5d3-c2c94a7339d2",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C60",
+      "claim": "The first class II pocket is incompletely formed because the pore loop 2 residues of the preceding subunit (F) are not yet in position.",
+      "claim_type": "EXPLICIT",
+      "source": "The first of these pockets, which includes M207 residues of the A and B subunits, is incompletely formed because the pore loop 2 residues of the preceding subunit (F) are not yet in position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation of the structural state of the first pocket.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "49662925-fcb2-455b-aac8-ca23d116a805",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C61",
+      "claim": "The three pore loop 2 residues that most closely approach the peptide (E245, S246, E247) do not make distinctive contacts with the ESCRT-III peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The three pore loop 2 residues that most closely approach the peptide (E245, S246, E247) do not make distinctive contacts with the ESCRT-III peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation of the lack of specific interactions in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6940c599-5537-483d-866a-f9c22ac36f07",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C62",
+      "claim": "S246 caps the N-terminus of a Vps4 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "S246 caps the N-terminus of a Vps4 helix while E245 and E247 make non-specific contacts with peptide side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "2829c844-7c21-4712-953e-8df59beed1c9",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C63",
+      "claim": "E245 and E247 make non-specific contacts with peptide side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "S246 caps the N-terminus of a Vps4 helix while E245 and E247 make non-specific contacts with peptide side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "799e662e-8deb-40c5-93ea-b7c1c5f5d344",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C64",
+      "claim": "The different class I and class II pockets are all essentially identical.",
+      "claim_type": "EXPLICIT",
+      "source": "The different class I and class II pockets are all essentially identical (Figure 3CD) and their exposure to the highly solvated pore explains how polar side chains can be accommodated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed through structural superposition of the pockets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "cd6f0c6b-cb05-4bd2-9891-117a6a92d962",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C65",
+      "claim": "The exposure of the pockets to the highly solvated pore explains how polar side chains can be accommodated.",
+      "claim_type": "EXPLICIT",
+      "source": "The different class I and class II pockets are all essentially identical (Figure 3CD) and their exposure to the highly solvated pore explains how polar side chains can be accommodated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural features explaining substrate accommodation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d39dbe85-32ac-47b3-8914-b7fb927fc360",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C66",
+      "claim": "The NH groups of the even-numbered ESCRT-III peptide residues form hydrogen bonds with the main chain O of Vps4 K205.",
+      "claim_type": "EXPLICIT",
+      "source": "The refined model indicates that the NH groups of the even-numbered ESCRT-III peptide residues form hydrogen bonds with the main chain O of Vps4 K205 (subunit A, B, C, and D distances are 3.1\u20133.5 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The hydrogen bonds are identified in the refined model with specific distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "3a46d661-bafc-4ac6-ab23-2f21130b25ae",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C67",
+      "claim": "The distances between NH groups of even-numbered ESCRT-III residues and main chain O of Vps4 K205 are 3.1\u20133.5 \u00c5 for subunits A, B, C, and D.",
+      "claim_type": "EXPLICIT",
+      "source": "The refined model indicates that the NH groups of the even-numbered ESCRT-III peptide residues form hydrogen bonds with the main chain O of Vps4 K205 (subunit A, B, C, and D distances are 3.1\u20133.5 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These distances are measured from the refined model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "30046c3a-7e83-4529-aaa4-c5d30efc6734",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C68",
+      "claim": "In the reverse peptide orientation, the distances between NH groups and K205 O are 3.4\u20134.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, these distances are 3.4\u20134.5 \u00c5 in the model refined with the peptide in the reverse orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These distances are measured from the model refined in the reverse orientation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "246579de-9086-4e09-86e1-90807310f5bf",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C69",
+      "claim": "Substrate NH hydrogen bonds may help define the substrate orientation by optimally positioning ESCRT-III side chains with respect to their binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, substrate NH hydrogen bonds may help define the substrate orientation by optimally positioning ESCRT-III side chains with respect to their binding pockets (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the functional role of the hydrogen bonds.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d97802ed-c4b7-43f5-be30-282f71acca5a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C70",
+      "claim": "The enzyme proceeds by transitioning of subunit configurations around the hexameric ring, such that one step represents transitioning of subunits F, A, B, C, D, E to the configurations of subunits A, B, C, D, E, F.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that the enzyme proceeds by transitioning of subunit configurations around the hexameric ring, such that one step represents transitioning of subunits F, A, B, C, D, E to the configurations of subunits A, B, C, D, E, F (Figure 4A, Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic model proposed based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "564b5191-ad5b-4268-8caf-66f18bd7c66d",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C71",
+      "claim": "Each step comprises concomitant changes in subunit interfaces at each end of the Vps4 A-E helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Each step comprises concomitant changes in subunit interfaces at each end of the Vps4 A-E helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model based on structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "84a5d8a5-923e-4a36-8ceb-57ad80bab65f",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C72",
+      "claim": "At the leading end, binding of ATP allows subunit F to pack against subunit A and thereby bind the next two residues of the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "At the leading end, binding of ATP allows subunit F to pack against subunit A and thereby bind the next two residues of the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model based on structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "58b26f33-513c-4a5a-8483-33cc59400067",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C73",
+      "claim": "At the lagging end, hydrolysis of ATP and subsequent phosphate release destabilizes the interface and drives subunit E to the transitioning configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "At the lagging end, hydrolysis of ATP and subsequent phosphate release destabilizes the interface and drives subunit E to the transitioning configuration, thereby opening the nucleotide binding site to allow exchange of ADP by ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model based on structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "3c9bfe9b-974c-488f-b6bb-64d85e3add23",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C74",
+      "claim": "The equivalent dipeptide-binding sites formed at the interfaces of subunits A-E track with their bound dipeptides along the pore as subunits transition from the lagging end to the leading end of the helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manner, the equivalent dipeptide-binding sites formed at the interfaces of subunits A-E track with their bound dipeptides along the pore as subunits transition from the lagging end to the leading end of the helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the mechanistic model based on structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "42d127b7-935b-4d9b-889e-d70a4eeb9ec0",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C75",
+      "claim": "The pathway can be represented either as Vps4 'walking' along the substrate or as substrate being translocated through the Vps4 pore, depending upon the frame of reference.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pathway can be represented either as Vps4 'walking' along the substrate or as substrate being translocated through the Vps4 pore, depending upon the frame of reference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mechanistic model from different perspectives.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "e75eb250-ea01-41ee-af48-c91cd66f21ba",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C76",
+      "claim": "The model implies that each step translocates two amino acid residues and hydrolyses one ATP molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model implies that each step translocates two amino acid residues and hydrolyses one ATP molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mechanistic model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "3b4b74da-3d1a-451e-9184-c38699991742",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C77",
+      "claim": "The model explains the importance of the pore loop residues and the integral role of the class I and II pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "It also explains the importance of the pore loop residues and the integral role of the class I and II pockets, because once a substrate residue binds at the top of the Vps4 helix it does not substantially change conformation until released at the bottom of the helical conveyor belt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional significance of structural features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "a7816a3c-7d21-464b-b9a6-e3b104de58d2",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C78",
+      "claim": "Once a substrate residue binds at the top of the Vps4 helix it does not substantially change conformation until released at the bottom of the helical conveyor belt.",
+      "claim_type": "EXPLICIT",
+      "source": "It also explains the importance of the pore loop residues and the integral role of the class I and II pockets, because once a substrate residue binds at the top of the Vps4 helix it does not substantially change conformation until released at the bottom of the helical conveyor belt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "a8cfc58b-eef3-4890-ab7f-2d3b2aed854c",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C79",
+      "claim": "The model is consistent with reports that other AAA+ ATPases bind a maximum of three or four ATP molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is also consistent with reports that other AAA+ ATPases bind a maximum of three or four ATP molecules (Hersch et al., 2005; Horwitz et al., 2007; Yakamavich et al., 2008; Smith et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This consistency is noted with citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "80136e6b-5998-462b-b70d-28bdd272f662",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C80",
+      "claim": "The mechanistic model is analogous to mechanisms established for translocation of DNA by the E1 helicase and of RNA by the Rho translocase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, despite important structural differences, our mechanistic model is analogous to mechanisms established for translocation of DNA by the E1 helicase (Enemark and Joshua-Tor, 2006) and of RNA by the Rho translocase (Thomsen and Berger, 2009; Thomsen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This analogy is drawn with citations to mechanisms of other molecular motors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "614628dd-13e6-44a5-96b5-da3d21d11b3d",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C81",
+      "claim": "Vps4 is a member of the classic clade of AAA+ ATPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps4 is a member of the classic clade of AAA+ ATPases, which includes the original members of the AAA ATPase family (Iyer et al., 2004; Erzberger and Berger, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is stated with citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d8c67952-8fb3-4cd1-b81f-4f9b46bc3150",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C82",
+      "claim": "Classic clade AAA+ ATPases are hexameric protein translocases whose conserved pore loops emanate from equivalent structural elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are hexameric protein translocases, whose conserved pore loops emanate from equivalent structural elements, although their N-terminal domains are variable and only Vps4 has a \u03b2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general characterization of the protein family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "611bf57a-edca-4998-bcf3-4df853a296a0",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C83",
+      "claim": "Only Vps4 has a \u03b2 domain among classic clade AAA+ ATPases.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are hexameric protein translocases, whose conserved pore loops emanate from equivalent structural elements, although their N-terminal domains are variable and only Vps4 has a \u03b2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a distinguishing feature of Vps4 within the family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "20a17298-7c54-4385-9a5c-77dcc1760f7a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C84",
+      "claim": "Vps4 is a homohexamer that forms a single ring.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Vps4 is a homohexamer that forms a single ring, whereas p97/CDC48/VAT and NSF comprise two AAA ATPase cassettes that each form a hexameric ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural characteristic of Vps4.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d204d424-2e1c-4a61-9046-a00ec250c6a2",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C85",
+      "claim": "p97/CDC48/VAT and NSF comprise two AAA ATPase cassettes that each form a hexameric ring.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Vps4 is a homohexamer that forms a single ring, whereas p97/CDC48/VAT and NSF comprise two AAA ATPase cassettes that each form a hexameric ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural characteristic of these AAA+ ATPases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "1cab0944-740a-4920-8506-db53c999d922",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C86",
+      "claim": "HSP104/ClpB form a double ATPase ring structure in which only one of the rings belongs to the classic clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Others, such as HSP104/ClpB, form a double ATPase ring structure in which only one of the rings belongs to the classic clade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural characteristic of HSP104/ClpB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "79c5430d-dd10-4345-a345-43634bd71fde",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C87",
+      "claim": "The eukaryotic proteasome ATPases form part of a much larger complex and comprise six different, albeit related, subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Still others, such as the eukaryotic proteasome ATPases, form part of a much larger complex and comprise six different, albeit related, subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural characteristic of proteasome ATPases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "cbf2a153-e5ea-440d-b902-a8e432e8fa63",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C88",
+      "claim": "Sequence alignment of classic clade AAA+ ATPase family members shows that the first two of the three pore loop 1 residues that contact substrate (Vps4 K205, W206, M207) are conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment of classic clade AAA+ ATPase family members for which structures have been reported shows that the first two of the three pore loop 1 residues that contact substrate (Vps4 K205, W206, M207) are conserved (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conservation is observed through sequence alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "5258b4f6-c54b-4ee4-8317-befe3b9e71de",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C89",
+      "claim": "W206 is always W, F, or Y in classic clade AAA+ ATPases, all of which could perform the role of sandwiching substrate side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "W206 is always W, F, or Y, all of which could perform the role of sandwiching substrate side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conservation pattern is observed in sequence alignments with functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "09c10152-35f7-4fa7-aa10-a807772a0a4b",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C90",
+      "claim": "The K205 residue is usually K but sometimes M, which like K could flank the class I binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The preceding K205 residue is usually K but sometimes M, which like K could flank the class I binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conservation pattern is observed in sequence alignments with functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "1022e1c9-28c1-474f-9fcb-4c93cb97430c",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C91",
+      "claim": "The M207 residue is more variable but usually I, L or V, with examples of M, A, F, K, R, and Y, all of which could provide hydrophobic sides to the class II binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The more variable third residue, M207, is usually I, L or V, but there are examples of M (Vps4), A, F, K, R, and Y, all of which could provide hydrophobic sides to the class II binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This variability is observed in sequence alignments with functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "ae359fe2-7fde-4120-bebe-29f8935ada80",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C92",
+      "claim": "The G208 residue is invariant, presumably because it adopts phi angles (~81 to 85\u00b0) that are only favored for glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the following residue, G208, is invariant, presumably because it adopts phi angles (~81 to 85\u00b0) that are only favored for glycine, and helps define a conformation that can pack against pore loop 1 residues from neighboring subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conservation is observed with a structural explanation for the invariance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6a663e80-e184-4a61-911c-1cc169481fc9",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C93",
+      "claim": "G208 helps define a conformation that can pack against pore loop 1 residues from neighboring subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the following residue, G208, is invariant, presumably because it adopts phi angles (~81 to 85\u00b0) that are only favored for glycine, and helps define a conformation that can pack against pore loop 1 residues from neighboring subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the structural role of G208.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "35158f2b-0fd9-4c9a-af9d-1f05c64c66bc",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C94",
+      "claim": "Pore loop 2 residues are less conserved and are typically disordered in other published structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore loop 2 residues are less conserved and are typically disordered in other published structures, which is consistent with the lack of distinctive roles in contacting substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is made from comparison with other structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "b184284c-5cbf-4f92-8020-e11b34dfe07a",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C95",
+      "claim": "The lack of conservation and disorder of pore loop 2 residues is consistent with the lack of distinctive roles in contacting substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore loop 2 residues are less conserved and are typically disordered in other published structures, which is consistent with the lack of distinctive roles in contacting substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting structural observations to functional roles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d1efb764-9d50-43b8-9894-6112651f67bd",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C96",
+      "claim": "The Vps4 structure superimposes closely with the recently reported structures of VAT, HSP104, and ClpB, which were each determined with substrate bound in their central pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Vps4 structure superimposes closely with the recently reported structures of VAT (Ripstein et al., 2017), HSP104 (Gates et al., 2017), and ClpB (Deville et al., 2017), which were each determined with substrate bound in their central pores, albeit at relatively low resolutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural similarity is observed through superposition with citations to the compared structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "fc308227-2521-4614-af61-6b6cfd3f15e1",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C97",
+      "claim": "A 3.4 \u00c5 structure of the YME1 AAA ATPase in complex with a mixed polypeptide substrate presents a very similar structure and mechanism to that described for Vps4.",
+      "claim_type": "EXPLICIT",
+      "source": "A very recently published 3.4 \u00c5 structure of the YME1 AAA ATPase in complex with a mixed polypeptide substrate (Puchades et al., 2017) also presents a very similar structure and mechanism to that described here, although coordinates are not yet available during final preparation of this manuscript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This similarity is noted with a citation to the YME1 structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "1142312a-2ab3-4de1-9b11-dc34f8bc4587",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C98",
+      "claim": "Close superposition is seen between Vps4 and multiple other classic clade AAA+ ATPases that have been visualized in the absence of substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Close superposition is also seen with multiple other classic clade AAA+ ATPases that have been visualized in the absence of substrate (Figure 4B, Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural similarity is observed through superposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "775721f6-855c-44b0-9617-cb8f373d2d58",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C99",
+      "claim": "p97 and CDC48 structures display rotational rather than helical symmetry, which is a notable exception to the close superposition with Vps4.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable exceptions include p97 and CDC48, whose structures display rotational rather than helical symmetry (Banerjee et al., 2016; Xia et al., 2016), and ClpX and HslU, which are not members of the classic clade but share notable similarities with Vps4 and have provided leading mechanistic models for protein translocating AAA+ ATPases (Olivares et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This difference is noted with citations to the p97 and CDC48 structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "12a2d9d8-929c-4f33-864b-e4da7da68e53",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C100",
+      "claim": "ClpX and HslU are not members of the classic clade but share notable similarities with Vps4 and have provided leading mechanistic models for protein translocating AAA+ ATPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable exceptions include p97 and CDC48, whose structures display rotational rather than helical symmetry (Banerjee et al., 2016; Xia et al., 2016), and ClpX and HslU, which are not members of the classic clade but share notable similarities with Vps4 and have provided leading mechanistic models for protein translocating AAA+ ATPases (Olivares et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relationship is noted with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "7ad63c1a-fd1d-4630-bcfa-75bad937ef64",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C101",
+      "claim": "Biochemical analyses of ClpX and HslU have argued for stochastic mechanisms by showing that just one active ATPase subunit per hexamer can drive translocation, albeit at much reduced efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these sequential models, biochemical analyses of ClpX (Martin et al., 2005) and HslU (Baytshtok et al., 2017) have argued for stochastic mechanisms by showing that just one active ATPase subunit per hexamer can drive translocation, albeit at much reduced efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This alternative mechanism is described with citations to biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "a0a35f53-573f-4fc6-9367-b6dd99003193",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C102",
+      "claim": "A hexamer that has only one active ATPase site may allow inactive subunits to diffuse through the entire helical cycle, which could reconcile stochastic and sequential mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible resolution is that a hexamer that has only one active ATPase site may allow inactive subunits to diffuse through the entire helical cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal to reconcile different mechanistic models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "4238e2fa-2237-4e49-9e06-1ad689222679",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C103",
+      "claim": "A single active ATPase might drive the sequential conveyor-belt model, albeit rather poorly, like a 6-cylinder engine firing on just one cylinder.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, like a 6-cylinder engine firing on just one cylinder, a single active ATPase might drive the sequential conveyor-belt model, albeit rather poorly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative analogy to explain how different mechanisms might be reconciled.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "4a52f9b3-0137-4c92-ac2b-1493d0b945a4",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C104",
+      "claim": "The structure shows details of substrate interactions that are provided by a repeating array of dipeptide binding sites with the ESCRT-III peptide in a unique orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the structure shows details of substrate interactions that are provided by a repeating array of dipeptide binding sites with the ESCRT-III peptide in a unique orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the structural findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "dfa3fcc1-d0c4-413b-9f4e-d68e9962de86",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C105",
+      "claim": "The structure supports a sequential mechanism and explains the ability to translocate polypeptides with little sequence specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "It further supports a sequential mechanism and explains the ability to translocate polypeptides with little sequence specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mechanistic implications of the structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "de59fe8e-d1d1-43c7-bb8e-5b1390de313e",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C106",
+      "claim": "Important future priorities include testing the generality of the structural observations and mechanistic implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Important future priorities include testing the generality of the structural observations, mechanistic implications, and the extent to which they may apply to other AAA+ ATPases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "dab95aa6-84af-4ba5-bd60-c0550d4f7e3d",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C107",
+      "claim": "A total of 2,349 cryo-EM movies were recorded using a K2 Summit direct detector in counting mode with a pixel size of 1.10 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 2,349 cryo-EM movies were recorded using a K2 Summit direct detector (Gatan) in counting mode with a pixel size of 1.10 \u00c5 and at a dose rate of ~7.4 e-/pixel/sec.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "98550f4e-3a14-4d46-a708-5ce7b546ee00",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C108",
+      "claim": "Each movie was recorded as a stack of 40 frames accumulated over 10 s, totaling ~62e-/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Each movie was recorded as a stack of 40 frames accumulated over 10 s, totaling ~62e-/\u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "f1ddfa21-a6da-419d-a6ec-23758b1dfef9",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C109",
+      "claim": "82,225 particles were used for the final round of RELION auto-refinement, producing a 3.2 \u00c5 resolution density map of Vps4.",
+      "claim_type": "EXPLICIT",
+      "source": "82,225 particles were sorted into a single class with high-resolution Vps4 features and used to generate the final 3.2 \u00c5 Vps4 reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the image processing and final reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "1eb6007f-219f-47b1-9d07-fdeb34b322f1",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C110",
+      "claim": "B-factor sharpening of \u2212125 \u00c52 was applied using an automated procedure in RELION postprocessing.",
+      "claim_type": "EXPLICIT",
+      "source": "B-factor sharpening of \u2212125 \u00c52 was applied using an automated procedure in RELION postprocessing (Rosenthal and Henderson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the map processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "66b07e53-b6d0-4129-8645-d400546cc9d1",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C111",
+      "claim": "The refined model comprising the Vps4 ATPase domains of subunits A-E and ESCRT-III peptide has been deposited into the PDB with ID 6BMF.",
+      "claim_type": "EXPLICIT",
+      "source": "The refined model comprising the Vps4 ATPase domains of subunits A-E and ESCRT-III peptide has been deposited into the PDB (RRID: SCR_012820; PDB ID: 6BMF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6505d26c-89bf-4a64-92b9-2ed5458676d4",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C112",
+      "claim": "The complete model has been deposited into the PDB with ID 6AP1 together with the sharpened Hcp1-subtracted map at EMDB Accession Number EMD-8887.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete model, including regions not subjected to atomic refinement such as the 12 Vta1VSL domains and subunit F, has been deposited into the PDB (PDB ID: 6AP1) together with the sharpened Hcp1-subtracted map (RRID: SCR_003207, EMDB Accession Number EMD-8887).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "b3777511-271b-4d93-9c9d-94359917cc52",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C113",
+      "claim": "Two Vps4 subunits are expected to be disengaged from substrate through at least part of the reaction cycle.",
+      "claim_type": "IMPLICIT",
+      "source": "Although our structure shows four intact dipeptide-binding sites and just one transitioning subunit, it is expected that two Vps4 subunits will be disengaged from substrate through at least part of the reaction cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the reaction cycle based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "43951fd4-3438-497e-b81e-eb8c2ce06cc9",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C114",
+      "claim": "Subunit E will disengage from substrate as it moves toward the F configuration while the F subunit is moving toward the substrate-binding A configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because subunit E will disengage from substrate as it moves toward the F configuration while the F subunit is moving toward the substrate-binding A configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the subunit transitions during the reaction cycle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "878a3a90-f1d4-4efe-a622-e4fff143f281",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C115",
+      "claim": "The specific point in the reaction cycle captured in the structure corresponds to subunit E just starting to transition toward the F state.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific point in the reaction cycle captured in our structure corresponds to subunit E just starting to transition toward the F state, as indicated by the slight deviation of the DE interface from the configuration of AB, BC, and CD, and consistent with our structural interpretation that ADP is bound to subunit D (above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the specific state captured in the structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "58210219-5601-49c6-a6c1-2cf84d43e1b5",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "claim_id": "C116",
+      "claim": "The stability of the captured state relative to other conformations along the reaction coordinate results from a combination of multiple factors, including the particular nucleotide (ADP\u00b7BeFx) and ESCRT-III peptide in the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The stability of this state relative to other conformations along the reaction coordinate will result from a combination of multiple factors, including the particular nucleotide (ADP\u00b7BeFx) and ESCRT-III peptide in the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of factors affecting the conformational state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a 3.2 \u00c5 resolution cryo-EM structure of Vps4 bound to an ESCRT-III peptide substrate using improved microscope instrumentation and image processing methods. The structure was obtained from 82,225 particles after extensive 2D and 3D classification, with appropriate validation metrics including FSC curves, cross-validation, and model refinement statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C107-C112 collectively document the cryo-EM data collection, processing, and validation procedures. The 3.2 \u00c5 resolution is supported by gold-standard FSC curves (C1, C109), appropriate sample size (C109), proper data collection parameters (C107-C108), and validated refinement statistics including MolProbity and EMRinger scores (Table 1). The methods are sufficiently detailed and follow standard cryo-EM practices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "e4a6a891-fcdb-429e-a09e-c31376c90705",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ESCRT-III peptide adopts a \u03b2-strand conformation in the structure with specific phi and psi angles characteristic of extended \u03b2-strands. The peptide is clearly defined in the density map except for the first two acidic side chains (D1, E2), which show weak density consistent with typical cryo-EM behavior of carboxylates. The peptide orientation was validated by building and refining the structure in both orientations, with the assigned orientation showing superior correlation coefficients and EMRinger scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C49-C53 provide converging evidence for the peptide conformation and orientation. The \u03b2-strand assignment is supported by measured dihedral angles (C2, C53), clear density for most residues (C49), and rigorous validation comparing forward and reverse orientations using quantitative metrics (C51-C52). The weak density for carboxylates is appropriately explained by citations to literature (C50).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "55a7cb28-3855-48f3-8b6d-5326329f1780",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adjacent Vps4 subunits make equivalent interactions with successive substrate dipeptides through two distinct classes of side chain binding pockets (class I and class II) formed primarily by pore loop 1 residues K205, W206, and M207. Odd-numbered peptide residues bind in class I pockets formed by W206 residues sandwiching substrate side chains, while even-numbered residues bind in class II pockets formed by M207 residues. All pockets of each class are essentially identical, and their exposure to the solvated pore allows accommodation of polar side chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C54-C65 provide detailed structural evidence for the dipeptide binding mechanism. The two classes of pockets are clearly defined with specific residue compositions (C56, C58), the alternating binding pattern is documented (C54-C55), and the structural equivalence of pockets within each class is demonstrated (C64). The interpretation of how polar residues are accommodated (C65) is reasonable given the structural observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "375ac307-51e4-4080-8628-ec3a11997862",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The NH groups of even-numbered ESCRT-III peptide residues form hydrogen bonds with the main chain oxygen of Vps4 K205, with distances of 3.1-3.5 \u00c5 in the assigned orientation compared to 3.4-4.5 \u00c5 in the reversed orientation. These hydrogen bonds may help define substrate orientation by optimally positioning ESCRT-III side chains in their binding pockets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 document specific hydrogen bonding interactions with measured distances from the refined model (C66-C68). The shorter distances in the assigned orientation compared to the reversed orientation provide additional support for the peptide directionality. The functional interpretation (C69) is reasonable though speculative, appropriately qualified with 'may help.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "543feca5-8045-4de1-9c3d-191b7bdb3ad3",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The six Vps4 subunits form a closed ring with six Vta1 VSL domains at the periphery and a single ESCRT-III peptide in the central pore. Subunits A-E form a helix with approximately 60\u00b0 rotation and 6.3 \u00c5 translation between adjacent subunits, with subunit E deviating slightly from the helical symmetry of A-D. Subunit F is disengaged from adjacent subunits and substrate, appearing to transition between helix ends, and shows weak density along with peripheral features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 describe the overall architecture directly observed in the cryo-EM reconstruction. The helical parameters are measured from structural data (C25), the deviation of subunit E is noted with appropriate citation (C26), and the weak density for subunit F and peripheral features is a direct observation (C28). The interpretation of subunit F transitioning (C27) is reasonable given its structural state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "6b221d65-1153-4397-858e-d73184d493f2",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nucleotides bind at subunit interfaces with the \u03b2-phosphate and BeFx contacting arginine fingers (R288, R289) from the following subunit. ADP\u00b7BeFx mimics ATP binding at subunits A-C, while subunits D-E appear to bind ADP, and subunit F may be empty. Nucleotide coordination is similar across subunits and resembles other ATPases. The hinge angle between large and small domains does not change substantially with nucleotide state (120-122\u00b0), contradicting earlier proposals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 describe nucleotide binding states observed in the structure. The coordination geometry is directly observed (C29), nucleotide assignments are based on density interpretation (C30-C32), and hinge angles are measured from the structure (C34). The authors appropriately acknowledge uncertainty in distinguishing ADP from ADP\u00b7BeFx at some sites (C32, C37) and note that higher resolution may be needed for absolute certainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "bad112e6-c0bd-4f05-8193-033cc017f9de",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The AB, BC, and CD interfaces are extensive and similar, with large domain contacts between adjacent subunits. The DE interface shows an ~8\u00b0 rotation of subunit E but maintains similar contacts. Small domain-large domain contacts remain more consistent across interfaces than large domain contacts, particularly at the FA interface. This interaction may help maintain hexameric assembly during the reaction cycle while ATP hydrolysis disrupts large domain contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C43 describe subunit interface characteristics measured from the structure. The interface similarities and differences are documented with specific measurements (C36, C41), and the structural observations are sound (C39-C40). The functional interpretations about maintaining hexameric assembly (C42-C43) are reasonable inferences from the structural data, appropriately qualified as speculative (C43 uses 'may help').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "1d0a9841-0488-4e7c-bd69-2e97d435a715",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The small domain-large domain interface is the major lattice contact in all 22 crystallographically unique Vps4 crystal structures. Archaeal Vps4 crystal contacts resemble the FA/AB/BC/CD/DE interface, while eukaryotic contacts overlap with the EF interface. These differences correlate with the presence of the \u03b2 domain and Vta1 cofactor in eukaryotes but not archaea, supporting the interpretation that Vta1 promotes formation and maintenance of the closed helical substrate-binding assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 present a comparative analysis of crystal structures with appropriate citations (C45-C46). The correlation between structural features and phylogenetic distribution (C47) is a valid observation. The interpretation about Vta1's role (C48) is a reasonable inference from the structural comparisons, though it remains an interpretation rather than direct experimental proof.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The structure supports a 'conveyor belt' model of translocation in which subunit configurations transition around the hexameric ring. ATP binding allows subunit F to join the helix and engage substrate at the leading end, while ATP hydrolysis and release at the lagging end promotes subunit E transition and substrate release. Each step translocates two amino acids and hydrolyzes one ATP. The model explains the importance of pore loop residues and binding pockets, as substrate residues maintain their conformation while being translocated through the helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5-C7 and C70-C78, C113-C116 present a detailed mechanistic model based on the structural observations. While the model is internally consistent and explains the structural features well (C77-C78), it remains a proposed mechanism inferred from a single structural snapshot rather than direct observation of the dynamic process. The authors appropriately acknowledge this is their interpretation ('we envision,' C70) and note the specific state captured (C115). However, the model requires validation through additional experiments such as time-resolved studies, mutagenesis, or biochemical assays to directly test the proposed mechanism. The stoichiometry prediction (C76) and functional interpretations are reasonable but unproven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "411fef45-d0c6-4500-960f-058392c48cbf",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sequence alignment of classic clade AAA+ ATPases shows conservation of the first two pore loop 1 residues that contact substrate (Vps4 K205, W206). W206 is always W, F, or Y (all capable of sandwiching substrate), K205 is usually K or sometimes M (both can flank class I pockets), and M207 is more variable but typically hydrophobic. G208 is invariant, presumably because it adopts phi angles (~81-85\u00b0) favored only for glycine and helps define the pore loop conformation. Pore loop 2 residues are less conserved and typically disordered in other structures, consistent with their lack of distinctive substrate contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C95 present a sequence conservation analysis with functional interpretation. The conservation patterns are documented through sequence alignment (C88), and the functional interpretations for conserved residues (C89-C91) are reasonable given the structural observations. The explanation for G208 invariance (C92-C93) is well-supported by the structural constraints. The correlation between pore loop 2 variability and lack of specific function (C94-C95) is a valid inference from comparative structural analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "d1ff494f-a66c-4c7a-ac76-7d62f2a67e72",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Vps4 structure superimposes closely with recently reported structures of VAT, HSP104, ClpB, and YME1 determined with substrate bound, as well as multiple other classic clade AAA+ ATPases visualized without substrate. Notable exceptions include p97 and CDC48, which display rotational rather than helical symmetry, and ClpX and HslU, which are not classic clade members but share similarities with Vps4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100 present structural comparisons with appropriate citations to the compared structures. The close superposition with other AAA+ ATPases (C96, C98) supports the generality of the structural features observed in Vps4. The noted exceptions (C99-C100) are appropriately documented with citations. However, the claim about YME1 (C97) notes that coordinates were not available during manuscript preparation, limiting the depth of comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "bdd95e39-3803-4560-9f00-d1a39f04ba6c",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The proposed mechanism is consistent with reports that other AAA+ ATPases bind a maximum of 3-4 ATP molecules and is analogous to mechanisms of E1 helicase and Rho translocase. However, biochemical analyses of ClpX and HslU have shown that a single active ATPase subunit can drive translocation at reduced efficiency, arguing for stochastic mechanisms. The authors propose that inactive subunits might diffuse through the helical cycle, potentially reconciling sequential and stochastic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 appropriately cite consistency with other systems, but claims C101-C103 acknowledge an alternative stochastic mechanism supported by biochemical data. The proposed reconciliation (C102-C103) is speculative ('may allow,' 'might drive') and lacks experimental support. This represents an unresolved tension between the sequential model proposed from the structure and biochemical evidence for stochastic mechanisms. Additional experiments would be needed to test whether the proposed reconciliation is correct.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "223a2231-fca2-461f-9253-6fd9bc8f1a27",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The structure reveals details of substrate interactions through a repeating array of dipeptide binding sites with the ESCRT-III peptide in a unique orientation. It supports a sequential mechanism and explains the ability to translocate polypeptides with little sequence specificity. The authors identify testing the generality of these observations and their applicability to other AAA+ ATPases as important future priorities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 appropriately summarize the structural findings and their mechanistic implications. The acknowledgment of future work needed (C106) is appropriate and demonstrates scientific rigor. However, the support for the sequential mechanism (C105) should be considered in light of the uncertain evaluation of the mechanistic model (claims C5-C7, C70-C78) and the alternative stochastic mechanisms discussed (C101-C103).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    },
+    {
+      "id": "7a9d653e-1d31-476a-ab80-c3638701e8cc",
+      "content_id": "042b2acc-af13-4996-ae72-793c266a6c6b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on the ESCRT pathway, Vps4 structure and function, and the AAA+ ATPase family, all supported by appropriate citations to previous literature. This includes the biological roles of ESCRT-III and Vps4, the structural organization of Vps4, previous cryo-EM structures, competing mechanistic models, and the classification and characteristics of AAA+ ATPases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C23 and C81-C87 present background information appropriately supported by citations to previous literature. These claims establish the context for the current work and accurately represent prior knowledge in the field. The citations appear appropriate and the characterizations of previous work are consistent with the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:13:33.849195Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "47ce8f79-9024-429a-8273-81d87feed222",
+      "result_id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3"
+    },
+    {
+      "claim_id": "dab95aa6-84af-4ba5-bd60-c0550d4f7e3d",
+      "result_id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3"
+    },
+    {
+      "claim_id": "98550f4e-3a14-4d46-a708-5ce7b546ee00",
+      "result_id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3"
+    },
+    {
+      "claim_id": "f1ddfa21-a6da-419d-a6ec-23758b1dfef9",
+      "result_id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3"
+    },
+    {
+      "claim_id": "1eb6007f-219f-47b1-9d07-fdeb34b322f1",
+      "result_id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3"
+    },
+    {
+      "claim_id": "66b07e53-b6d0-4129-8645-d400546cc9d1",
+      "result_id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3"
+    },
+    {
+      "claim_id": "6505d26c-89bf-4a64-92b9-2ed5458676d4",
+      "result_id": "d1e54fdc-7892-4603-97b2-fb5881faf9e3"
+    },
+    {
+      "claim_id": "2d797278-717f-43ac-8425-af7e8a295af3",
+      "result_id": "e4a6a891-fcdb-429e-a09e-c31376c90705"
+    },
+    {
+      "claim_id": "92c2e80b-a693-4944-874b-201367b5832a",
+      "result_id": "e4a6a891-fcdb-429e-a09e-c31376c90705"
+    },
+    {
+      "claim_id": "250b9401-d15f-4902-8605-52088e62e6cf",
+      "result_id": "e4a6a891-fcdb-429e-a09e-c31376c90705"
+    },
+    {
+      "claim_id": "dbe8bb20-12a8-4cfb-a624-c4057f03587a",
+      "result_id": "e4a6a891-fcdb-429e-a09e-c31376c90705"
+    },
+    {
+      "claim_id": "f440ef47-16fa-41b8-859d-efad0c0bdb2c",
+      "result_id": "e4a6a891-fcdb-429e-a09e-c31376c90705"
+    },
+    {
+      "claim_id": "23d3b5c9-3e62-4dc1-b66f-a6881fd3b20e",
+      "result_id": "e4a6a891-fcdb-429e-a09e-c31376c90705"
+    },
+    {
+      "claim_id": "16f8ed2b-8970-44dd-b088-5922a2b123e6",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "a51834e9-e043-43a3-b184-027368e91bb0",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "e8bed213-b64f-4bb7-9d66-053baa8ac893",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "d54b1b52-f2b4-4f8e-b083-17aad8993a5d",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "47b12cda-cf43-4e6d-9965-14853d1e6006",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "c5023e4f-54ea-4526-8d80-1b33ce3e88c8",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "1acd4c0f-a865-45aa-8af4-3cdc3f911a70",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "4a4dcaf8-cc11-4a3c-8362-7d7b561e8025",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "6ef3df49-399b-4614-a5d3-c2c94a7339d2",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "49662925-fcb2-455b-aac8-ca23d116a805",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "6940c599-5537-483d-866a-f9c22ac36f07",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "2829c844-7c21-4712-953e-8df59beed1c9",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "799e662e-8deb-40c5-93ea-b7c1c5f5d344",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "cd6f0c6b-cb05-4bd2-9891-117a6a92d962",
+      "result_id": "55a7cb28-3855-48f3-8b6d-5326329f1780"
+    },
+    {
+      "claim_id": "d39dbe85-32ac-47b3-8914-b7fb927fc360",
+      "result_id": "375ac307-51e4-4080-8628-ec3a11997862"
+    },
+    {
+      "claim_id": "3a46d661-bafc-4ac6-ab23-2f21130b25ae",
+      "result_id": "375ac307-51e4-4080-8628-ec3a11997862"
+    },
+    {
+      "claim_id": "30046c3a-7e83-4529-aaa4-c5d30efc6734",
+      "result_id": "375ac307-51e4-4080-8628-ec3a11997862"
+    },
+    {
+      "claim_id": "246579de-9086-4e09-86e1-90807310f5bf",
+      "result_id": "375ac307-51e4-4080-8628-ec3a11997862"
+    },
+    {
+      "claim_id": "86571861-3482-4936-8815-2dd8acc8a75c",
+      "result_id": "543feca5-8045-4de1-9c3d-191b7bdb3ad3"
+    },
+    {
+      "claim_id": "155a427d-e776-4e5d-b49d-78852efbf718",
+      "result_id": "543feca5-8045-4de1-9c3d-191b7bdb3ad3"
+    },
+    {
+      "claim_id": "eb8cfca7-f72c-4b30-a6a7-24d723c7e13f",
+      "result_id": "543feca5-8045-4de1-9c3d-191b7bdb3ad3"
+    },
+    {
+      "claim_id": "32ee157b-3971-4be3-86cb-637ca9d1de23",
+      "result_id": "543feca5-8045-4de1-9c3d-191b7bdb3ad3"
+    },
+    {
+      "claim_id": "7bfda831-a276-4069-b45a-452fb755e59e",
+      "result_id": "543feca5-8045-4de1-9c3d-191b7bdb3ad3"
+    },
+    {
+      "claim_id": "28311741-f1ba-4d83-8a14-3eaf05523b4d",
+      "result_id": "6b221d65-1153-4397-858e-d73184d493f2"
+    },
+    {
+      "claim_id": "5d77405d-7bbd-4430-9588-5cb3add46bbc",
+      "result_id": "6b221d65-1153-4397-858e-d73184d493f2"
+    },
+    {
+      "claim_id": "634215e8-b0c0-46d2-9691-5dff284bf874",
+      "result_id": "6b221d65-1153-4397-858e-d73184d493f2"
+    },
+    {
+      "claim_id": "611ae7dd-99fd-478e-b2c7-eb20bd160e66",
+      "result_id": "6b221d65-1153-4397-858e-d73184d493f2"
+    },
+    {
+      "claim_id": "2a94f71b-6b1a-453e-be1a-fa4e75def53a",
+      "result_id": "6b221d65-1153-4397-858e-d73184d493f2"
+    },
+    {
+      "claim_id": "396b39b5-d4a1-4375-b19d-659cf4133c9b",
+      "result_id": "6b221d65-1153-4397-858e-d73184d493f2"
+    },
+    {
+      "claim_id": "86eacc35-6380-4cef-85cd-b0d1c894f670",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "6f55d307-669c-47c9-9278-98d5ea854d00",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "33071bc1-3db8-437f-b9be-6bcdff473657",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "6668c2d5-e664-4386-af27-0fa03819c02b",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "57006a62-9d2e-4113-bd39-c3f940d5eac0",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "1c9fc4b1-18af-4001-8b46-a6670523ed33",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "705d9758-09ab-4aac-8868-b8c885b6629c",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "bfbfb63e-3136-471e-badb-6de0f668ccae",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "6681487a-9912-4e58-8d8f-7b6ba040c92e",
+      "result_id": "bad112e6-c0bd-4f05-8193-033cc017f9de"
+    },
+    {
+      "claim_id": "2a4673f8-8232-4748-8292-31a450908557",
+      "result_id": "1d0a9841-0488-4e7c-bd69-2e97d435a715"
+    },
+    {
+      "claim_id": "765e3efd-28ff-419c-8001-ad4c3d951d0a",
+      "result_id": "1d0a9841-0488-4e7c-bd69-2e97d435a715"
+    },
+    {
+      "claim_id": "c6d9a326-1b26-43dc-9ec7-e8c9c1edac53",
+      "result_id": "1d0a9841-0488-4e7c-bd69-2e97d435a715"
+    },
+    {
+      "claim_id": "4f4bbcbf-3ec3-40c7-849f-62ed3d8c7063",
+      "result_id": "1d0a9841-0488-4e7c-bd69-2e97d435a715"
+    },
+    {
+      "claim_id": "381c3314-4b03-4563-aa6b-a4e7dd3e57e3",
+      "result_id": "1d0a9841-0488-4e7c-bd69-2e97d435a715"
+    },
+    {
+      "claim_id": "eee04e28-9cf7-4faf-af38-23de5089c9c7",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "fa353034-3bf1-4e50-8323-091ed10a3ee6",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "a5230fe2-8a85-476c-abff-effdbce0f368",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "d97802ed-c4b7-43f5-be30-282f71acca5a",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "564b5191-ad5b-4268-8caf-66f18bd7c66d",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "84a5d8a5-923e-4a36-8ceb-57ad80bab65f",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "58b26f33-513c-4a5a-8483-33cc59400067",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "3c9bfe9b-974c-488f-b6bb-64d85e3add23",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "42d127b7-935b-4d9b-889e-d70a4eeb9ec0",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "e75eb250-ea01-41ee-af48-c91cd66f21ba",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "3b4b74da-3d1a-451e-9184-c38699991742",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "a7816a3c-7d21-464b-b9a6-e3b104de58d2",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "b3777511-271b-4d93-9c9d-94359917cc52",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "43951fd4-3438-497e-b81e-eb8c2ce06cc9",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "878a3a90-f1d4-4efe-a622-e4fff143f281",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "58210219-5601-49c6-a6c1-2cf84d43e1b5",
+      "result_id": "c57d6dcd-a7d4-4d48-8f10-d439b1290b01"
+    },
+    {
+      "claim_id": "cbf2a153-e5ea-440d-b902-a8e432e8fa63",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "5258b4f6-c54b-4ee4-8317-befe3b9e71de",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "09c10152-35f7-4fa7-aa10-a807772a0a4b",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "1022e1c9-28c1-474f-9fcb-4c93cb97430c",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "ae359fe2-7fde-4120-bebe-29f8935ada80",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "6a663e80-e184-4a61-911c-1cc169481fc9",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "35158f2b-0fd9-4c9a-af9d-1f05c64c66bc",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "b184284c-5cbf-4f92-8020-e11b34dfe07a",
+      "result_id": "411fef45-d0c6-4500-960f-058392c48cbf"
+    },
+    {
+      "claim_id": "d1efb764-9d50-43b8-9894-6112651f67bd",
+      "result_id": "d1ff494f-a66c-4c7a-ac76-7d62f2a67e72"
+    },
+    {
+      "claim_id": "fc308227-2521-4614-af61-6b6cfd3f15e1",
+      "result_id": "d1ff494f-a66c-4c7a-ac76-7d62f2a67e72"
+    },
+    {
+      "claim_id": "1142312a-2ab3-4de1-9b11-dc34f8bc4587",
+      "result_id": "d1ff494f-a66c-4c7a-ac76-7d62f2a67e72"
+    },
+    {
+      "claim_id": "775721f6-855c-44b0-9617-cb8f373d2d58",
+      "result_id": "d1ff494f-a66c-4c7a-ac76-7d62f2a67e72"
+    },
+    {
+      "claim_id": "12a2d9d8-929c-4f33-864b-e4da7da68e53",
+      "result_id": "d1ff494f-a66c-4c7a-ac76-7d62f2a67e72"
+    },
+    {
+      "claim_id": "a8cfc58b-eef3-4890-ab7f-2d3b2aed854c",
+      "result_id": "bdd95e39-3803-4560-9f00-d1a39f04ba6c"
+    },
+    {
+      "claim_id": "80136e6b-5998-462b-b70d-28bdd272f662",
+      "result_id": "bdd95e39-3803-4560-9f00-d1a39f04ba6c"
+    },
+    {
+      "claim_id": "7ad63c1a-fd1d-4630-bcfa-75bad937ef64",
+      "result_id": "bdd95e39-3803-4560-9f00-d1a39f04ba6c"
+    },
+    {
+      "claim_id": "a0a35f53-573f-4fc6-9367-b6dd99003193",
+      "result_id": "bdd95e39-3803-4560-9f00-d1a39f04ba6c"
+    },
+    {
+      "claim_id": "4238e2fa-2237-4e49-9e06-1ad689222679",
+      "result_id": "bdd95e39-3803-4560-9f00-d1a39f04ba6c"
+    },
+    {
+      "claim_id": "4a52f9b3-0137-4c92-ac2b-1493d0b945a4",
+      "result_id": "223a2231-fca2-461f-9253-6fd9bc8f1a27"
+    },
+    {
+      "claim_id": "dfa3fcc1-d0c4-413b-9f4e-d68e9962de86",
+      "result_id": "223a2231-fca2-461f-9253-6fd9bc8f1a27"
+    },
+    {
+      "claim_id": "de59fe8e-d1d1-43c7-bb8e-5b1390de313e",
+      "result_id": "223a2231-fca2-461f-9253-6fd9bc8f1a27"
+    },
+    {
+      "claim_id": "30b92423-2347-498a-aefe-96d2a17d1976",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "237f7f26-d3f8-44fe-a8c1-54c3d411c9e8",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "850eee05-7237-4f0c-a0cb-ec4cd6e06b38",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "d9eb1e93-c21e-43a9-9d8e-3f6670589281",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "963ca6ac-afdd-4287-96cb-a669c5666713",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "55db02b3-2e0f-491a-a38c-f794a488598e",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "b56d1de6-77c2-4541-bf09-55c1f6eb6d3a",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "32321f1f-662e-49dc-9178-028fe2080f79",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "b3526c74-b183-4d2b-8b4f-0cdecf1b3732",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "d5668634-c0c5-44a1-bc66-97826d01af01",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "c9d432d5-79cd-4bef-99a9-a0ef551b8860",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "7d8961dc-d6cb-41d0-b795-b00b999695b0",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "3d3671b4-f73a-45b4-a433-7173df075add",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "ae071947-65ee-4584-af62-65e3301f774b",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "9265bc3e-4c55-40a6-80d6-386252b585aa",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "cd9624a7-6371-4f4d-a9fe-1cc0f197cba9",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "614628dd-13e6-44a5-96b5-da3d21d11b3d",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "d8c67952-8fb3-4cd1-b81f-4f9b46bc3150",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "611bf57a-edca-4998-bcf3-4df853a296a0",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "20a17298-7c54-4385-9a5c-77dcc1760f7a",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "d204d424-2e1c-4a61-9046-a00ec250c6a2",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "1cab0944-740a-4920-8506-db53c999d922",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    },
+    {
+      "claim_id": "79c5430d-dd10-4345-a345-43634bd71fde",
+      "result_id": "7a9d653e-1d31-476a-ab80-c3638701e8cc"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1431 @@
+{
+  "submission": {
+    "id": "28852ec8-97dd-4f4d-bf10-6aa67f315bda",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:25:55.567147Z",
+    "updated_at": "2025-12-01T21:25:55.567147Z"
+  },
+  "content": [
+    {
+      "id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "submission_id": "28852ec8-97dd-4f4d-bf10-6aa67f315bda",
+      "content_type": "manuscript",
+      "content_text": "# Ligand modulation of sidechain dynamics in a wild-type human GPCR\n\n## Authors\n\n- Lindsay D Clark<sup>1</sup> ([ORCID: 0000-0001-6879-6883](https://orcid.org/0000-0001-6879-6883))\n- Igor Dikiy<sup>3</sup> ([ORCID: 0000-0002-8155-7788](https://orcid.org/0000-0002-8155-7788))\n- Karen Chapman<sup>1</sup>\n- Karin EJ R\u00f6dstr\u00f6m<sup>4</sup>\n- James Aramini<sup>3</sup>\n- Michael V LeVine<sup>5</sup>\n- George Khelashvili<sup>5</sup> ([ORCID: 0000-0001-7235-8579](https://orcid.org/0000-0001-7235-8579))\n- S\u00f8ren GF Rasmussen<sup>4</sup>\n- Kevin H Gardner<sup>3</sup> ([ORCID: 0000-0002-8671-2556](https://orcid.org/0000-0002-8671-2556)) \u2020\n- Daniel M Rosenbaum<sup>1</sup> ([ORCID: 0000-0002-7174-4993](https://orcid.org/0000-0002-7174-4993)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics The University of Texas Southwestern Medical Center Dallas United States\n2. Molecular Biophysics Graduate Program The University of Texas Southwestern Medical Center Dallas United States\n3. Structural Biology Initiative CUNY Advanced Science Research Center New York United States\n4. Department of Neuroscience and Pharmacology University of Copenhagen Copenhagen Denmark\n5. Department of Physiology and Biophysics Weill Cornell Medical College New York United States\n6. Institute for Computational Bioscience Weill Cornell Medical College New York United States\n7. Department of Chemistry and Biochemistry City College of New York New York United States\n8. Biochemistry, Chemistry and Biology PhD Programs, Graduate Center City University of New York New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGPCRs regulate all aspects of human physiology, and biophysical studies have deepened our understanding of GPCR conformational regulation by different ligands. Yet there is no experimental evidence for how sidechain dynamics control allosteric transitions between GPCR conformations. To address this deficit, we generated samples of a wild-type GPCR (A2AR) that are deuterated apart from 1H/13C NMR probes at isoleucine \u03b41 methyl groups, which facilitated 1H/13C methyl TROSY NMR measurements with opposing ligands. Our data indicate that low [Na+] is required to allow large agonist-induced structural changes in A2AR, and that patterns of sidechain dynamics substantially differ between agonist (NECA) and inverse agonist (ZM241385) bound receptors, with the inverse agonist suppressing fast ps-ns timescale motions at the G protein binding site. Our approach to GPCR NMR creates a framework for exploring how different regions of a receptor respond to different ligands or signaling proteins through modulation of fast ps-ns sidechain dynamics.\n\n## Introduction\n\nOur understanding of the molecular underpinnings of GPCR function has been greatly advanced over the past two decades through a combination of X-ray crystal structures, computational simulations, and spectroscopic studies of protein dynamics. Crystals of bovine rhodopsin provided the first high-resolution picture of a GPCR\u2019s architecture\u00a0(Palczewski et al., 2000; Li et al., 2004), and structures of photoactivation intermediates\u00a0(Nakamichi and Okada, 2006; Salom et al., 2006) and retinal-free opsin\u00a0(Park et al., 2008; Scheerer et al., 2008) further documented the structural transitions involved in rhodopsin activation. For GPCRs activated by diffusible ligands, crystal structures of the human \u03b22 adrenergic receptor\u00a0(\u03b22AR) with inverse agonists\u00a0(Rosenbaum et al., 2007; Cherezov et al., 2007), agonists\u00a0(Rosenbaum et al., 2011; Rasmussen et al., 2011a; Warne et al., 2011), and bound G protein\u00a0(Rasmussen et al., 2011b) provided a molecular basis for understanding how diffusible agonist binding can promote structural changes in a receptor to enhance signaling. Subsequent crystal structures have revealed the ligand binding pockets for GPCRs of diverse function, responding to biogenic amines, purines, lipids, peptides, and proteins. While the sequences of these GPCRs and their orthosteric ligand binding pockets are highly diverse, the overall structures are remarkably similar, with C\u03b1 rmsd values between unrelated receptors in the 2\u20133 \u00c5 range. How these diverse ligands activate signaling by a small number of G proteins and arrestins through a common structural scaffold remains a central problem for the GPCR field. Contributing to this problem is the fact that most of the existing X-ray GPCR structures are of antagonist-bound receptors locked in inactive conformations. For the few GPCRs that have been captured in both inactive and active conformations, common structural changes include inward movements of transmembrane\u00a0(TM) helices at the orthosteric pocket, rearrangements of common core residues through the helical bundle, and rigid-body outward movements of TM6 at the cytoplasmic surface to expose G protein binding epitopes\u00a0(Katritch et al., 2013).\n\nBeyond the static pictures of GPCR conformations seen in these crystal structures, experimental evidence for complex dynamic behavior has emerged from spectroscopic studies on purified receptors. Unlike rhodopsin, which exhibits an efficient and ordered photon-induced transition from the dark state conformation to metarhodopsin II\u00a0(Choe et al., 2011a; Choe et al., 2011b), ligand-activated GPCRs generally show considerable basal activity that is reduced by inverse agonists. 19F NMR and EPR experiments on the \u03b22AR\u00a0(Liu et al., 2012a; Manglik et al., 2015) and A2AR\u00a0(Ye et al., 2016) provided evidence for at least four different conformational states populated by these receptors, which are differentially stabilized by ligands of different efficacy. 1H/13C 2D NMR studies on 13C\u03b5-methionine-labeled \u03b22AR\u00a0(Nygaard et al., 2013; Kofuku et al., 2014) showed that a high free-energy barrier exists between inactive and active conformations\u00a0(with exchange on the millisecond timescale), and agonist binding alone is only capable of weakly populating the active conformation. These studies, in addition to similar measurements on \u03bc-opioid receptor chemically modified to introduce NMR-active 13C-methyl labels onto lysine residues\u00a0(Sounier et al., 2015), suggest that ligand-activated GPCRs are weakly coupled allosteric systems in which multiple energetic inputs\u00a0(i.e. agonist and G protein binding) are required to predominantly populate the active conformation.\n\nWithin the slow millisecond-timescale global interconversion between functional GPCR conformations\u00a0(Vilardaga et al., 2003), local structural rearrangements of sidechains in the receptor\u00a0(referred to here as \u2018microswitches\u2019) have been observed in comparisons of inactive and active GPCR crystal structures\u00a0(Katritch et al., 2013), NMR data\u00a0(Liu et al., 2012a; Manglik et al., 2015; Ye et al., 2016; Bokoch et al., 2010) and MD simulations\u00a0(Vanni et al., 2009; Dror et al., 2011a). The importance of repacking of sidechains from TM3, TM5, and TM6 beneath the ligand binding pocket, known as the \u2018conserved core triad,\u2019 was identified by comparison of structures of \u03b22AR\u00a0(Rosenbaum et al., 2011; Rasmussen et al., 2011a) and the \u03bc-opioid receptor\u00a0(Huang et al., 2015). Further down the TM bundle, an activated microswitch near the site of G protein binding has been found to represent a common feature of GPCRs that have been crystallized in both active and inactive conformations\u00a0(Venkatakrishnan et al., 2016). A working hypothesis for GPCR activation is that a set of loosely coupled microswitches connecting the orthosteric pocket and G protein binding site are activated by agonists in a non-concerted fashion, and stabilizing subsets of these rearrangements can lead to alternate overall conformations that have different signaling properties.\n\nOne of the most powerful ways to probe sidechain dynamics and their contributions to biological processes is provided by NMR-based studies of isotopically-labeled methyl groups\u00a0(Ruschak and Kay, 2010). To apply these techniques to study the sidechains in these microswitches, one approach would entail isoleucine/leucine/valine\u00a0(ILV) labeling\u00a0(Goto et al., 1999; Gardner et al., 1998) and perdeuteration of a wild-type GPCR, to generate proteins with 1H/13C-labeled methyl groups within an otherwise 2H/12C-labeled background. Such samples are ideally suited for acquiring 1H/13C methyl TROSY-based\u00a0(Tugarinov et al., 2003a; Ollerenshaw et al., 2003) relaxation NMR data, allowing the quantitative determination of methyl order parameters and relative motion of sidechains on the ps-ns timescale\u00a0(Tugarinov et al., 2005; Ishima and Torchia, 2000). Advances in labeling methodology and pulse sequences have enabled such measurements on large macromolecular systems, such as the 80 kDa enzyme malate synthase\u00a0(Tugarinov and Kay, 2003b; Sandala et al., 2007), the 670 kDa archaeal proteasome core particle\u00a0(Sprangers and Kay, 2007; Religa et al., 2010), and the 1 MDa GroEL/GroES complex\u00a0(Fiaux et al., 2002; Horst et al., 2005). NMR spectroscopic interrogation of methyl groups has also been used to dissect the energetic contribution of sidechain entropy to important biological phenomena such as protein-protein interactions\u00a0(Marlow et al., 2010) and transcription factor binding to double-stranded DNA\u00a0(Tzeng and Kalodimos, 2012). These previous applications suggest that characterization of sidechain dynamics using methyl NMR approaches should be feasible for a GPCR purified in a detergent micelle, with an aggregate molecular weight in the 100\u2013150 kDa range.\n\nA major hurdle in carrying out such experiments is that perdeuteration and ILV labeling conventionally rely on expression in E. coli\u00a0(Goto et al., 1999), while wild-type GPCRs typically require a eukaryotic host to ensure proper folding, glycosylation, trafficking, and stability in the plasma membrane. GPCR NMR studies have primarily used supplementation with labeled amino acids\u00a0(Nygaard et al., 2013; Kofuku et al., 2014; Okude et al., 2015; Isogai et al., 2016; Kofuku et al., 2012) or covalent modification\u00a0(Liu et al., 2012a; Sounier et al., 2015; Bokoch et al., 2010; Eddy et al., 2016) to incorporate isotopic probes into protein from Sf9 cells, and perdeuteration with incorporation of labeled ILV methyl probes is largely intractable for this established eukaryotic system. Another limitation is that purified wild-type GPCRs are typically prone to aggregation and are not highly thermostable, limiting acquisition times and sample concentration. While high quality 2D NMR spectra of GPCRs have been obtained for receptors with thermostabilizing mutations\u00a0(Isogai et al., 2016), such mutations can affect the receptor\u2019s dynamics and functional properties, including basal activity and maximal G protein stimulation.\n\nWe have addressed many of these practical issues with our generation\u00a0(Clark et al., 2015) of highly-deuterated 1H/13C Ile \u03b41-methyl labeled proteins in Pichia pastoris, a methylotrophic yeast\u00a0(Cereghino and Cregg, 2000) that is adaptable to D2O-based minimal media, will utilize the Ile precursor \u03b1-ketobutyrate, and enables expression of GPCRs at levels sufficient for crystallography\u00a0(Shimamura et al., 2011; Hino et al., 2012; Yurugi-Kobayashi et al., 2009). Here we apply this labeling method to the wild-type human A2AR, an important regulator of vascular function with a well-developed pharmacology including the natural hormone adenosine and high-affinity synthetic agonists and antagonists\u00a0(Preti et al., 2015; de Lera Ruiz et al., 2014). A2AR has been crystallized in inactive\u00a0(Jaakola et al., 2008; Liu et al., 2012b), intermediate\u00a0(Lebon et al., 2011; Xu et al., 2011) and active\u00a0(Carpenter et al., 2016) conformations, and has been studied by 19F NMR to characterize its conformational equilibria\u00a0(Ye et al., 2016). We expressed and purified milligram quantities of labeled wild-type human A2AR and were able to resolve 20 out of 29 expected peaks in the Ile \u03b41 region in 1H/13C TROSY HMQC experiments. Through structure-guided mutagenesis, we assigned four of these signals to specific functionally important residues, including I923.40 of the conserved core triad\u00a0(Huang et al., 2015) and I292 at the cytoplasmic surface. We collected spectra in the presence of the high-affinity full agonist NECA and the inverse agonist ZM241385, and also measured the effects of monovalent cations\u00a0(Na+ versus K+) on these spectra. We further carried out a modified triple-quantum\u00a0(3Q) relaxation experiment\u00a0(Sun et al., 2011) to quantify the relative fast ps-ns motions of these sidechains while the receptor is bound to ligands of opposing efficacy. These data represent an important first step towards understanding how agonists can activate the fast motions of specific sidechains to facilitate conformational changes of a GPCR.\n\n## Results\n\nThe first challenge in collecting methyl NMR spectra on a wild-type GPCR was achieving high-level expression and milligram scale purification from Pichia pastoris. We initially cloned several GPCRs\u00a0(including A2AR) into a modified methanol-inducible expression vector with the wild-type MF\u03b1 signal sequence at the N-terminus to direct incorporation into the membrane. Several receptors, such as the wild-type M2 muscarinic receptor and A2AR, showed reliable and reproducible expression, however much of the expressed proteins were present in the immature unprocessed form\u00a0(without MF\u03b1 cleavage) indicating that they had not been properly localized to the plasma membrane\u00a0(Figure 1\u2014figure supplement 1). To improve the efficiency of production of mature, folded receptors, we made several modifications to the MF\u03b1 sequence, based on biochemical and genetic precedents\u00a0(Rakestraw et al., 2009; Lin-Cereghino et al., 2013) for improved processing efficiency\u00a0(Figure 1A, Materials and methods). To validate that Pichia-expressed A2AR is functional, we carried out radioligand binding assays measuring [3H]-ZM241385 saturation and NECA competition on membranes after cell wall disruption and zymolyase treatment. The Kd for [3H]-ZM241385 was 0.42 nM in NaCl-containing buffer, while the Ki for NECA was 210 nM in low ionic strength and 420 nM in KCl-containing buffer, in agreement with previous binding studies\u00a0(Xu et al., 2011; Carpenter et al., 2016; Bertheleme et al., 2013) on heterologously expressed A2AR\u00a0(Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig1-v2.jpg)\n\n**Figure 1.:** (A) Wild-type A2AR was expressed in P. pastoris as a fusion with an optimized version of the \u03b1-mating factor\u00a0(MF\u03b1) signal sequence that contains mutations and a deletion that increase receptor trafficking to the plasma membrane. For NMR experiments, Pichia cultures were grown in deuterated media supplemented with\u00a0(1H/13C-methyl) \u03b1-ketobutyrate to facilitate 1H/13C labeling of Ile \u03b41 methyl groups in a deuterated background as previously described\u00a0(Clark et al., 2015). Crystal structures of A2AR are shown complexed with agonist NECA\u00a0(red, 2YDV\u00a0(Lebon et al., 2011)) and inverse agonist ZM241385\u00a0(gray, 4EIY\u00a0(Liu et al., 2012b), with isoleucine residues displayed as spheres. Labeled Ile \u03b41 carbon atoms are shown in cyan\u00a0(see inset).\u00a0(B) [35S]GTP\u03b3S binding to purified, protonated or perdeuterated A2AR reconstituted with purified Gs heterotrimer. Agonist NECA stimulates [35S]GTP\u03b3S binding, while inverse agonist ZM241385 inhibits basal levels of binding.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Anti-His6 Western blots of wild-type GPCRs expressed in Pichia as a fusion with the wild-type\u00a0(WT) and optimized\u00a0(MF\u03b1Opt) \u03b1-mating factor secretion signal. Receptor that has not been fully processed and trafficked to the plasma membrane is marked with an arrow. Fully processed, mature receptor is marked with an asterisk.\u00a0(B) Purification scheme of A2AR from Pichia cultures.\u00a0(C) Gel filtration trace of IMAC-purified A2AR injected on a Superdex200 10/300 column. The void volume is 8.3 mL and monomer A2AR elutes at approximately 13.7 mL.\u00a0(D) SDS-PAGE of IMAC-purified A2AR before and after size exclusion chromatography shown in C).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Competition binding curve of WT A2AR membranes incubated with [3H]-ZM241385 and increasing amounts of unlabeled NECA in low ionic strength assay buffer\u00a0(50 mM Tris pH 7.4, 10 mM MgCl2, 1 mM EDTA) alone or supplemented with 150 mM NaCl or KCl.\u00a0(B) Saturation curve of WT A2AR membranes incubated with increasing amounts of [3H]-ZM241385 in assay buffer containing 150 mM NaCl or KCl. Error bars in A) and B) represent standard deviation for three separate experiments, each performed in duplicate.\u00a0(C) [3H]-ZM241385 saturation binding of two mutants that showed spectral differences. Binding experiments were carried out in assay buffer without additional NaCl or KCl added.\u00a0(D) Table of Ki and Kd values of WT and mutant constructs tested in A-C with 95% confidence interval indicated. Additional buffer components in each assay are notated in parentheses, with an asterisk indicating low ionic strength buffer with no additional salt added.\n\nWe developed a purification protocol for A2AR from Pichia-derived membranes, in which we can solubilize and purify\u00a0~0.5 mg of monodisperse biochemically pure wild-type A2AR in dodecylmaltoside\u00a0(DDM) detergent from 1 L of culture\u00a0(Figure 1\u2014figure supplement 1). Coupling this protocol with our previously-described labeling method\u00a0(Clark et al., 2015), we were able to generate samples of wild-type A2AR that are highly deuterated both within the protein\u00a0(2H at non-exchangeable sites except Ile \u03b41 methyl groups) and the surrounding buffer\u00a0(99% D2O and deuterated DDM). We prioritized the use of a wild-type A2AR construct to report on the dynamics of a physiologically and functionally relevant GPCR sample. To confirm that the high level of deuteration did not alter the receptor\u2019s functional properties, we reconstituted the perdeuterated purified A2AR together with purified Gs heterotrimer in phospholipid vesicles and carried out activation assays by [35S]GTP\u03b3S binding. Saturating the receptor with the full agonist NECA led to an 8-fold stimulation of [35S]GTP\u03b3S binding, and the inverse agonist ZM241385 produced a 50% reduction in basal activity, similar to values measured for protonated A2AR\u00a0(Figure 1B). These data show that the perdeuterated A2AR is capable of activating Gs at wild-type levels in vitro, and can serve as a valid model for GPCR dynamics.\n\nOur first NMR characterization of A2AR used 1H/13C TROSY HMQC spectra of the protein in the presence of different ligands or Gs. We initially expressed and solubilized the receptor with the low-affinity antagonist theophylline, and exchanged other ligands onto the receptor during washing in the Co2+-affinity and gel filtration steps\u00a0(Materials and methods). In this way we were able to purify A2AR samples with the inverse agonist ZM241385, the full agonist NECA, or no ligand. The resulting 2D HMQC spectra, requiring\u00a0~100 \u03bcM GPCR and a minimum of 2 hr acquisition at 30\u00b0C on a cryoprobe-equipped 800 MHz spectrometer, are shown in Figure 2. Overall, in a liganded sample, we could resolve 20 peaks in the Ile \u03b41 region of the spectrum, out of 29 Ile residues present in our construct\u00a0(28 from the receptor and one from the C-terminal Protein C tag). The chemical shifts of the agonist-bound and inverse agonist-bound A2AR are similar\u00a0(Figure 2A,B), showing subtle changes that are comparable in magnitude to those observed previously for 13C-methyl-methionine probes in \u03b22AR\u00a0(Kofuku et al., 2014; Kofuku et al., 2012). The spectrum of the unliganded\u00a0(apo) A2AR shows a loss of most of the well-dispersed peaks present in the ligand-bound spectra\u00a0(Figure 2C), which could result from protein instability or conformational exchange on the \u03bcs-ms timescale. Lastly, we formed and isolated a high-affinity complex between purified NECA-bound A2AR and purified Gs heterotrimer in the absence of GDP or GTP\u00a0(Figure 2\u2014figure supplement 1, Materials and methods). Like the apo spectrum, the G protein complex spectrum had fewer well-dispersed Ile peaks than receptor/ligand complexes\u00a0(Figure 2D), consistent with the increase in molecular weight of the complex. We also note the appearance of a few distinct peaks\u00a0(most prominently at 0.85 ppm 1H, 11.8 ppm 13C) in the G protein complex, consistent with the conformation of the complexed receptor being distinguishable from the apo receptor\u00a0(Rasmussen et al., 2011b; Carpenter et al., 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig2-v2.jpg)\n\n**Figure 2.:** (A) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl with inverse agonist ZM241385\u00a0(black). Resonances assigned in this work\u00a0(I923.40, I2386.40, I2747.39, I292, and the isoleucine residue in the protein C tag) are indicated with arrows.\u00a0(B) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl with agonist NECA\u00a0(red). See Figure 2\u2014figure supplement 3 for comparison of initial NECA spectrum with spectrum after 7.5 hr acquisition.\u00a0(C) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl without ligand\u00a0(green).\u00a0(D) 1H/13C HMQC spectra of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl with agonist NECA\u00a0(red) and with agonist NECA and Gs heterotrimer\u00a0(blue).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Gel filtration trace of purified NECA-bound A2AR alone\u00a0(black) and A2AR complexed with Gs heterotrimer\u00a0(red) injected on a Superdex200 10/300 column. Total protein inputs were 360 \u03bcg and 833 \u03bcg, respectively. No free A2AR is detectable in the complex\u00a0(red), demonstrating that the NECA-bound receptor is functional and the A2AR-Gs complex is stable.\u00a0(B) Simplified schematic of A2AR-Gs complex formation. After incubation, apyrase is added which hydrolyzes nucleotide released during complex formation. Free nucleotide can cause dissociation of the A2AR-Gs complex.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** top - 1H/13C HMQC spectra of Ile \u03b41-labeled mutants\u00a0(blue) of A2AR in DDM micelles with inverse agonist ZM241385 collected to make the assignments shown in Figure 2A, compared to the WT spectrum\u00a0(black). The lower left panel shows the spectrum of apo WT\u00a0(green) A2AR in DDM micelles compared to the spectrum in the presence of ZM241385\u00a0(black). The lower right panel shows the spectrum of DDM alone\u00a0(gray) to demonstrate the non-protein origin of the peak at\u00a0~0.82 ppm 1H and 15\u201316 ppm 13C. bottom - 1H/13C HMQC spectra of Ile \u03b41-labeled mutants\u00a0(red) of A2AR in DDM micelles with agonist NECA collected, compared to the WT spectrum\u00a0(black). The bottom-left panel shows the spectrum of apo WT\u00a0(green) A2AR in DDM micelles compared to the spectrum in the presence of NECA\u00a0(black).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles with agonist NECA collected immediately after final SEC column.\u00a0(B) 1H/13C HMQC spectrum of the same Ile \u03b41-labeled WT A2AR in DDM micelles with agonist NECA collected after 7.5 hr of NMR experiment acquisition, showing loss of peak intensity but no major chemical shift changes.\n\nAssignment of 1H/13C peaks in the Ile \u03b41 region by NMR was hampered by the modest dispersion of our spectra and the limited stability of A2AR during data acquisition. Therefore, we took a site-specific mutagenesis approach, wherein we collected HMQC spectra of samples containing point mutations at a small subset of functionally important Ile sites\u00a0(Figure 2 and Figure 2\u2014figure supplement 2). This process was complicated by the sensitivity of the receptor to mutations at several of these Iles: changes to Val, Leu, or Met often drastically reduced purification yields and/or led to significantly altered spectra; for an example, see the I106V spectra in Figure 2\u2014figure supplement 2. Three of the assignments\u00a0(I923.40, I2386.40, and I292) could be made primarily through observation of ZM241385-bound mutant spectra. By comparing WT and I92V spectra in the presence of ZM241385, we see a clear loss of signal at\u00a0~0.68ppm/13.6ppm\u00a0(1H/13C) that we can assign to the \u03b41 methyl of Ile92. The NECA-bound I92V spectrum is missing a subset of peaks compared to the ZM241385-bound spectrum, possibly due to compromised affinity of NECA for the I92V mutant\u00a0(Figure 1\u2014figure supplement 2D). Ile238 and Ile292 are well-dispersed peaks, allowing for unambiguous assignment through loss of peaks at 0.72 ppm/10.2 ppm and 1.12 ppm/12.7 ppm, respectively\u00a0(1H/13C). The mutant spectra of I2386.40 and I292 have reciprocal effects on each other, where I238V causes a full peak-width shift in the I292 signal\u00a0(upfield in 1H), and I292L causes a\u00a0~\u00a00.5 peak-width shift in the I238 signal\u00a0(upfield in 13C). The reciprocity between these mutant spectra is consistent with the proximity of these residues in the A2AR structure. Mutation of I2747.39 in the ligand binding pocket\u00a0(within van der Waals contact of the ligands in the respective crystal structures) to Val or Met led to a disappearance of some peaks, reminiscent of the apo spectrum. However, comparison of ZM241385-bound I274M and I274V spectra narrowed the choice of the assignment of I2747.39 to one of two peaks, with the greater solvent accessibility as revealed by solvent PRE effect\u00a0(see below and Figure 4) of one peak serving as the deciding factor of assignment at 0.55 ppm/14.1 ppm\u00a0(1H/13C). As well as disappearance of many peaks, the spectrum of I274M A2AR in the presence of ZM241385 displays several apparent peak doublings, suggesting that the mutant protein is undergoing slow conformational exchange, potentially related to the slow interconversion between different inactive states of the receptor\u00a0(Ye et al., 2016). In addition, we assigned a peak to the Ile residue of the C-terminal Protein C tag in our construct by comparing spectra between differently tagged constructs\u00a0(not shown). The remaining unassigned peaks are referred to as a-o in the rest of this work\u00a0(Figure 3A). The chemical shift changes between ZM241385-bound and NECA-bound A2AR are small overall\u00a0(Figure 2A,B). In the A2AR-Gs complex spectrum\u00a0(Figure 2D), the peak for I923.40 appears to shift and simultaneously drop in intensity, strongly suggesting that I923.40 is involved in conformational changes on several timescales while the receptor is bound to Gs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig3-v2.jpg)\n\n**Figure 3.:** (A) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl with inverse agonist ZM241385\u00a0(black). Residue numbers of assigned peaks and peak IDs of unassigned peaks are indicated in black.\u00a0(B) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl with agonist NECA\u00a0(red).\u00a0(C) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM KCl with inverse agonist ZM241385\u00a0(brown).\u00a0(D) 1H/13C HMQC spectrum of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM KCl with agonist NECA\u00a0(purple).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Overlays of pairs of spectra in Figure 3.\u00a0(A) 1H/13C HMQC spectra of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl with inverse agonist ZM241385\u00a0(black) and agonist NECA\u00a0(red).\u00a0(B) 1H/13C HMQC spectra of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl\u00a0(black) or 150 mM KCl\u00a0(brown) with inverse agonist ZM241385.\u00a0(C) 1H/13C HMQC spectra of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM KCl with inverse agonist ZM241385\u00a0(burnt orange) and agonist NECA\u00a0(purple).\u00a0(D) 1H/13C HMQC spectra of Ile \u03b41-labeled WT A2AR in DDM micelles and 150 mM NaCl\u00a0(red) or 150 mM KCl\u00a0(purple) with agonist NECA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig4-v2.jpg)\n\n**Figure 4.:** (A) Solvent PRE 1H/13C HMQC spectra of Ile \u03b41-labeled WT A2AR in DDM micelles with inverse agonist ZM241385 in the presence\u00a0(red) and absence\u00a0(black) of paramagnetic Gd3+-DTPA. Disappearance of peaks suggests solvent exposure.\u00a0(B) Plot of intensity ratios between paramagnetic and diamagnetic samples for 20 peaks in the Ile \u03b41 region of the HMQC for A2AR complexed with inverse agonist ZM241385. The average\u00a0(\u00b1\u00a01 standard deviation) intensity ratio is shown as solid\u00a0(dashed) black lines. Error bars show errors propagated from the noise of the NMR spectra. Assigned peaks are on the left of the plot, unassigned on the right. Peak IDs correspond to those in Figure 3A.\n\nA2AR contains a well-characterized Na+ binding site within the receptor core\u00a0(Liu et al., 2012b), and Na+ has been shown to act as a negative allosteric modulator of A2AR activation\u00a0(Gao and Ijzerman, 2000). Due to the presence of 150 mM NaCl in the experiments shown in Figure 2, one possible explanation for the relatively small chemical shift differences between NECA- and ZM241385-bound spectra\u00a0(Figure 3A,B) is that high [Na+] is suppressing structural changes in the agonist-bound receptor. To test this possibility, we acquired HMQC spectra for A2AR samples with 150 mM KCl substituting for NaCl. The spectrum of ZM241385-bound receptor in KCl is very similar to that in the presence of NaCl\u00a0(Figure 3C and Figure 3\u2014figure supplement 1B), with the peak assigned to I923.40 shifting slightly upfield in the 13C dimension. The spectrum of NECA-bound A2AR, on the other hand, is dramatically different in KCl and NaCl\u00a0(Figure 3D, Figure 3\u2014figure supplement 1D), with multiple peaks shifting and decreasing in intensity. However, the KCl samples were significantly less stable than those in NaCl, showing markedly decreased spectral quality after 1\u00a0(NECA-bound) or 2\u00a0(ZM241385-bound) hours of acquisition. Given the weak signal-to-noise and poor stability of the KCl samples, we were only able to perform NMR relaxation experiments\u00a0(below) on A2AR in the presence of NaCl.\n\nIn addition to ligand-induced chemical shift changes, we used our system to characterize the solvent accessibility of residues within the ZM241385-bound A2AR\u00a0(with NaCl) using solvent paramagnetic relaxation enhancements\u00a0(PREs). To do so, we used the soluble paramagnetic Gd3+-DTPA probe\u00a0(Petros et al., 1990), which enhances the relaxation rates of protons in a distance dependent manner within roughly 15 \u00c5 of the protein/solvent interface\u00a0(Madl et al., 2011). By acquiring 1H/13C TROSY HMQC spectra in the absence and presence of Gd3+-DTPA, we could compare peak intensities between the two to establish solvent PRE levels. Examining our data, we see that the average peak intensity in the Gd3+-DTPA containing spectrum is about 0.4 of that in the control spectrum, suggesting that the Ile \u03b41 methyl groups of A2AR in the DDM micelle are quite close to solvent on average\u00a0(Figure 4). Of the four most strongly affected peaks, three peaks correspond to assigned residues\u00a0(I2386.40, I2747.39, and I292). The accessibility of I2747.39 is expected due this amino acid\u2019s presence in the solvent-exposed ligand-binding pocket. Broadening of I292 at the junction between TM7 and Helix 8 is also somewhat expected due to its position at the cytoplasmic surface. The broadening observed for I2386.40 is more surprising, given that it is further embedded within the membrane and buried within the protein surface of A2AR. Crystal structures of multiple GPCRs, including A2AR, \u03b22AR, \u03bcOR, and rhodopsin have all revealed ordered solvent networks within the protein core in contact with the position equivalent to I2386.40. In ZM241385-bound A2AR, this residue is also in close proximity to the Na+ site\u00a0(Liu et al., 2012b), one packing layer toward the cytoplasmic surface. The solvent PRE effect seen for this residue could reflect breathing of the structure to expose this region to the Gd3+-DTPA complex.\n\nTo characterize the motions of the Ile sidechains within A2AR, we sought to carry out a triple quantum\u00a0(3Q) relaxation experiment developed by Kay, Tugarinov and colleagues\u00a0(Sun et al., 2011) to quantify sidechain dynamics in large macromolecules. In this experiment, two related series of 2D 1H/13C HMQC-based spectra were acquired, both of which start by generating transverse 1H magnetization composed of single quantum\u00a0(SQ) coherences. During a subsequent variable delay period, intra-methyl 1H\u22121H dipolar cross-correlated relaxation mechanisms lead to a portion of these SQ coherences evolving into 3Q coherences; the rate of this conversion\u00a0(\u03b7) is proportional to the S2axis methyl order parameter. Practically, the degree of SQ->3Q evolution can be quantitated by examining paired \u2018forbidden\u2019 and \u2018allowed\u2019 spectra, which report on the fraction of SQ coherences which do and do not evolve into 3Q coherences, respectively. As previously reported\u00a0(Sun et al., 2011), this allows the simple calculation of the \u03b7\u00a0rate for each specific methyl group from the ratio of peak intensities in the forbidden and allowed spectra. Our initial attempts to apply this method to purified A2AR were hampered by the fact that the wild-type receptor is insufficiently stable at 30\u00b0C to permit the measurement of the requisite paired spectra at many relaxation delays and with a high enough signal-to-noise ratio. We therefore explored the possibility of reducing the number of forbidden spectra required to accurately measure \u03b7 values. Using similarly 2H,12C\u00a0(1H,13C \u03b41 methyl) labeled maltose binding protein\u00a0(MBP) as a test case\u00a0(Materials and methods), we collected 3Q datasets with different numbers of forbidden spectra paired with a constant number of allowed spectra\u00a0(Figure 5, Figure 5\u2014figure supplement 1). We found that pairing five allowed spectra with a single forbidden spectrum, we were able to faithfully recapitulate the \u03b7 values measured using five pairs of forbidden and allowed experiments\u00a0(Figure 5B,C). This \u03b7 value is proportional to the S2axis order parameter, which quantifies the amplitude of motion of the methyl group on the ps-ns timescale that is faster than global molecular tumbling.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig5-v2.jpg)\n\n**Figure 5.:** (A) Crystal structure of MBP complexed with \u03b2-cyclodextrin\u00a0(PDB 1DMB[Sharff et al., 1993]). The \u03b2-cyclodextrin ligand is shown as orange sticks, while protein isoleucine residues are shown as blue sticks, with \u03b41 carbon atoms as spheres.\u00a0(B) Plot of\u00a0\u03b7 values for each peak in MBP obtained from forbidden:allowed ratios at all five time points\u00a0(gray) and the single 8 ms time point\u00a0(green). Values calculated using the ratio at the single 8 ms time point show good agreement with those calculated using ratios at all five time points.\u00a0(C) Box-and-whisker plot showing Ile \u03b41 S2axis values from a set of globular proteins\u00a0(Mittermaier et al., 1999)\u00a0(purple) and the S2axis values calculated from the \u03b7 values using ratios at all time points\u00a0(gray) and the single 8 ms time point\u00a0(green).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Traditional 3Q methyl relaxation experiments\u00a0(Sun et al., 2011) involve collecting matched pairs of allowed\u00a0(SQ) and forbidden\u00a0(MQ) spectra at several relaxation delay times, calculating the ratio of peak intensities, and fitting the buildup to a function of\u00a0\u03b7, the difference between fast and slow R2 relaxation rates.\u00a0(B) Due to short lifetime of A2AR samples\u00a0(~12\u201314 hr at 30\u00b0C), the experiment was modified to reduce number of forbidden experiments, which have very low signal-to-noise and accordingly require long collection times. To do so, we evaluated alternatives requiring the collection of fewer forbidden spectra\u00a0(down to the limiting case of a single spectrum), allowing for more scans for that time point. The decay in allowed spectra intensities was fit to a function of the fast and slow R2 rates, and the one calculated forbidden:allowed ratio to the same function of\u00a0\u03b7.\u00a0(C) A relaxation experiment with allowed and forbidden spectra at five relaxation delays was collected on MBP and\u03b7 values were fit from forbidden:allowed ratios at all time points. The plot shows\u03b7 values for each peak in MBP fit from forbidden:allowed ratios at all time points and three selected combinations of limited timepoints. \u03b7 values calculated using the ratio at the single 8 ms time point show good agreement with the comparable values collected using other strategies, but can be collected in less time than the ones requiring two timepoints.\u00a0(D) Plot of the sum of squared differences between \u03b7 values calculated using ratios at all timepoints and each combination of limited timepoints. The two combinations of 2 time points giving the lowest error, and the one single time point giving the lowest error are shown in blue, orange, and green respectively.\n\nWith this modified analysis of 3Q relaxation data and our Ile \u03b41 1H/13C-methyl-labeled and deuterated GPCR samples, we measured \u03b7\u00a0values for Ile sidechains in A2AR bound to either ZM241385 or NECA in NaCl. The resulting values for the 20 Ile peaks and relative changes between the samples with different ligands are shown in Figure 6. The error in these measurements is large due to the limited signal-to-noise of our A2AR spectra, and we did not attempt to convert these \u03b7\u00a0measurements to S2axis values. However, in comparing the two datasets some features of the Ile dynamics can be discerned. The average \u03b7 value for the ZM241385-bound sample is higher than for NECA, indicative of greater overall rigidity of sidechains with inverse agonist. At the individual residue level, we observe a diversity of ligand-dependent changes in \u03b7, with some Ile residues becoming more rigid with agonist while most become more flexible. As an internal control, the peak we assigned to the C-terminal Protein C tag shows the lowest \u03b7 value measured\u00a0(i.e. greatest flexibility) with little ligand-dependence. Among the other assigned peaks, I292 shows the largest difference between ligands, becoming more flexible in the NECA-bound sample. I923.40 and I2747.39 display more modest increases in flexibility with agonist, while the dynamics of I2386.40 are largely unchanged by ligand\u00a0(Figure 6B). Interestingly, these differences in fast timescale dynamics occur in the presence of NaCl, in which chemical shifts for the agonist- and inverse agonist-bound states were nearly identical. To our knowledge, these data represent the first reported effort to experimentally quantify site-specific sidechain dynamics in a GPCR or comparable human integral membrane protein.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig6-v2.jpg)\n\n**Figure 6.:** (A) Plot of the 1H-1H dipolar cross-correlation rate\u03b7, which is proportional to the S2axis order parameter, for 20 peaks in the Ile \u03b41 region for A2AR in DDM micelles with agonist NECA\u00a0(red) and inverse agonist ZM241385\u00a0(grey). A higher\u00a0\u03b7 value corresponds to more rigid methyl groups. Error bars show bootstrap\u00a0errors of the fit parameters, propagated from the noise of the NMR spectra. Assigned peaks are on the left of the plot, unassigned on the right. Peak IDs correspond to those in Figure 3A.\u00a0(B) Plot of the ligand-induced differences\u00a0(\u0394\u03b7 = \u03b7[NECA] \u2013 \u03b7[ZM241385]) for 20 peaks in the Ile \u03b41 region for A2AR in DDM micelles. Negative \u0394\u03b7 values, which are observed for the majority of peaks, indicate increased motions in the presence of agonist. Assigned peaks are on the left of the plot, unassigned on the right. Peak IDs correspond to those in Figure 3A.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Plot of the S2axis order parameter for all 29 Ile \u03b41 methyl groups extracted from two\u00a0~\u00a0100 ns MD simulations of A2AR in DDM micelles with agonist NECA\u00a0(red) and inverse agonist ZM241385\u00a0(grey). A higher S2axis value corresponds to more rigid methyl groups. Order parameters were extracted from overlapping 40-ns windows after simulations converged; bars show the average of these values\u00a0\u00b1\u00a0SD. Residues corresponding to assigned peaks are boxed.\n\nWhile we were able to measure sidechain dynamics in this challenging A2AR sample, the associated errors are quite large. As such, we turned to molecular dynamics\u00a0(MD) simulations to provide independent validation of our dynamics measurements. We extracted S2axis order parameters for Ile \u03b41 methyl groups from\u00a0~80 ns trajectories\u00a0(post-equilibrium) of ZM241385- and NECA-bound A2AR in DDM micelles, using overlapping 30-ns windows to estimate the standard deviation in the order parameters\u00a0(Figure 6\u2014figure supplement 1). The S2axis order parameters for some methyl groups\u00a0(for example, I60 and I80 in ZM241385; I106 and I302 in NECA) show significant variations across different windows, suggesting that slower timescale motions involving these residues contribute to the sidechain dynamics measured on the fast timescale. Interestingly, the differences between ZM241385- and NECA-bound dynamics at three of the four assigned sites\u00a0(I2386.40, I2747.39, and I292) are qualitatively similar to what we see by NMR. The fourth site, I923.40, shows the opposite trend, with higher S2axis, i.e. more rigidity, in the NECA-bound state. The simulations were set up with bulk Na+ ions, but none specifically occupying the binding site near I923.40, which could account for this discrepancy.\n\n## Discussion\n\nSidechain dynamics represent an important functional component of protein behavior. In cases of protein-ligand\u00a0(Marlow et al., 2010; Frederick et al., 2007) and protein-DNA\u00a0(Tzeng and Kalodimos, 2012) interactions that have been intensively studied, changes in entropy arising from modified sidechain dynamics in complexes were found to substantially contribute toward the overall free energy of binding. For GPCRs, changes in sidechain dynamics may play an energetic role in binding to ligands and G proteins, however we have focused on allosteric mechanisms connecting these two functionally important binding sites. To experimentally assess the roles of sidechain dynamics in a wild-type GPCR, we set out to create a labeled sample that would be amenable to relaxation NMR methods. The spectra we obtained for the labeled Ile \u03b41 methyl groups of perdeuterated A2AR are comparable or superior to previously published NMR spectra on other wild-type GPCRs, however the limited dispersion and signal-to-noise contributed to significant error in the relaxation values derived from the data\u00a0(Figure 6A).\n\nThe Na+ site first seen in the high-resolution structure of A2AR bound to ZM241285 is conserved throughout most Class A GPCRs, and Na+ exerts a negative allosteric effect on A2AR activation by bridging residues on TM3 and TM7 and stabilizing the inactive conformation\u00a0(Liu et al., 2012b). This effect can be observed pharmacologically as a NaCl-dependent decrease in agonist affinity\u00a0(Carpenter et al., 2016; Gao and Ijzerman, 2000). For A2AR expressed in P. pastoris, we observe a 9-fold decrease in NECA affinity when membranes are incubated in 150 mM NaCl buffer versus 150 mM KCl buffer\u00a0(Figure 1\u2014figure supplement 2), similar to previously reported values\u00a0(Carpenter et al., 2016). Several of the Ile residues that we assigned\u00a0(i.e. I923.40 and I2386.40) are in close proximity to the Na+ binding site, which should make for sensitive probes of local structure in this part of the receptor core. Our 2D NMR spectra indicate a strong dependency on combined lack of Na+ and binding of agonist to stabilize significant structural changes in the receptor core\u00a0(Figure 3). This observation is also consistent with the active conformation seen in the crystal structure of the A2AR/mini-Gs complex\u00a0(Carpenter et al., 2016), which results in collapse of the Na+ site due to inward movements of TM3 and TM7. In contrast to our data, the crystal structure of a NECA-bound thermostabilized A2AR mutant construct\u00a0(Lebon et al., 2011) showed significant structural changes relative to the inactive conformation even with a high [Na+] beyond its EC50\u00a0(~50 mM) for negative allosteric modulation\u00a0(Gao and Ijzerman, 2000). Unfortunately the weak signal and stability of our samples in KCl precluded measurement of 3Q relaxation dynamics under these conditions.\n\nFor the Na+-bound A2AR samples, we can correlate our observations of ligand-dependent changes in the relaxation rate of specific sites to previous structural and biophysical studies of GPCRs. I2747.39 at the ligand binding site makes direct contact with the adenine or adenine analogue rings of both NECA and ZM241385 in their respective crystal structures\u00a0(Jaakola et al., 2008; Liu et al., 2012b; Lebon et al., 2011; Carpenter et al., 2016)\u00a0(Figure 7A). In our relaxation datasets, I2747.39 was more rigid in terms of its fast sidechain motions with inverse agonist bound, and more flexible with NECA occupying the binding pocket. NMR experiments previously showed different ligand-dependent conformations of the extracellular surface region of \u03b22AR bound to agonists compared to inverse agonists\u00a0(Bokoch et al., 2010). In addition, MD simulations on \u03b22AR predicted greater mobility of agonists relative to inverse agonists in the orthosteric pocket of the inactive-state structure\u00a0(i.e. not bound to Gs)\u00a0(Dror et al., 2011b). Our data suggests that the fast dynamics of residues at the orthosteric pockets of Class A GPCRs may be correlated with the functional efficacy of the bound ligand. The residue I923.40 is one of the three residues of the conserved core triad in A2AR, along with P1895.50 and F2426.44, which interact at a layer beneath the orthosteric pocket further toward the cytoplasmic surface\u00a0(Figure 7B). Consistent with the rearrangements of this microswitch region between the inactive and active conformations of multiple GPCRs, we observe a lower \u03b7\u00a0value for I923.40 in the NECA dataset versus ZM241385, indicating greater sidechain flexibility when A2AR is agonist-bound. In several GPCRs, including \u03b22AR and \u03bcOR, the conserved core triad is unchanged at a static structural level with an agonist bound but without a G protein or nanobody to further stabilize the active conformation. In contrast, crystal structures of A2AR bound to agonists alone\u00a0(Figure 7B) showed an intermediate active-like conformation in the region surrounding I923.40\u00a0(Lebon et al., 2011; Xu et al., 2011). Our data indicate that low [Na+] is required for NECA alone to stabilize structural rearrangements surrounding I92\u00a0(Figure 3, Figure 3\u2014figure supplement 1). However agonist alone\u00a0(even with high [Na+]) is enough to at least promote the fast motions of the sidechains in this microswitch, which may reduce the activation energy for the observed packing rearrangement to the active conformation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/28505/elife-28505-fig7-v2.jpg)\n\n**Figure 7.:** A2AR ribbon diagrams are shown for structures solved in complex with inverse agonist ZM241385\u00a0(gray; PDB 4EIY[Liu et al., 2012b]), agonist NECA\u00a0(red; PDB 2YDV[Lebon et al., 2011]), and agonist UK432097\u00a0(orange; 3QAK[Xu et al., 2011]). Assigned isoleucine residues are shown as spheres for the ZM241385- and NECA-bound structures using the same coloring scheme as in Figure 1A. Additional highlighted residues are shown as sticks in B-D.\u00a0(A) Isoleucine 274 is part of the orthosteric binding pocket and makes direct contact with the adenine analogue and adenine rings in ligands ZM241385 and NECA, respectively\u00a0(shown as sticks).\u00a0(B) Isoleucine 92 sits below the binding pocket and interacts with nearby residues Pro189 and Phe242. Ile92, Pro189, and Phe242 all make structural rearrangements upon receptor activation.\u00a0(C) On TM6, assigned peak Ile238 is one helical turn above Leu235. Leu235 is part of a conserved microswitch region that that undergoes outward motion during the transition to the active state.\u00a0(D) Isoleucine 292 is at the cytoplasmic end of TM7 where it interacts with Tyr288, also part of the conserved NPXXY motif.\n\nThe residue I2386.40 is situated further toward the G protein binding site at a critical region for GPCR activation, where it packs against TM7 and undergoes significant outward movement in the transition to the active conformation\u00a0(Figure 7C). I2386.40 is also one helical turn on TM6 above L2356.37, which participates in a conserved microswitch between inactive and active conformations for multiple GPCRs\u00a0(Venkatakrishnan et al., 2016). I292 is present at the linker between TM7 and Helix 8, where it packs against Y2887.53 of the highly conserved NPXXY motif\u00a0(Katritch et al., 2013)\u00a0(Figure 7D). NMR studies of 13C-dimethyllysine-labeled \u03bcOR showed that peak broadening of a lysine probe in Helix 8\u00a0(near the position equivalent to I292) was more sensitive to agonist than probes at the cytoplasmic ends of TM5 and TM6\u00a0(21). Further, in the structure of A2AR/mini-Gs\u00a0(Carpenter et al., 2016), the engineered Gs protein makes direct contact with I292 at the TM7-Helix 8 junction. In our relaxation dataset, the \u03b7\u00a0value of I2386.40 is low\u00a0(i.e. more flexible) and essentially independent of the ligand, while I292 undergoes a large change from more rigid to more flexible from ZM241385 to NECA. As mentioned above, the environment surrounding I2386.40 is loosely packed in A2AR structures, with an ordered solvent network that may allow for relative freedom of motion for this sidechain. In contrast, despite the solvent exposure of I292\u00a0(Figure 4), inverse agonist binding suppresses the fast dynamics of this residue relative to agonist binding\u00a0(Figure 6). Outward movement of TM6 is one of the hallmarks of GPCR activation seen in crystal structures, and the cytoplasmic ends of TM6 and TM7 are separated from each other in the structures of \u03b22AR and A2AR bound to Gs\u00a0(Rasmussen et al., 2011b; Carpenter et al., 2016). Our data suggest that the responsiveness of sidechain dynamics to ligands in these two regions may be largely uncoupled, and that the inverse agonist activity of ZM241385 could partly arise from its allosteric suppression of dynamics at the cytoplasmic end of TM7. Changes in \u03b7 for other peaks in our dataset may provide further insights into the regulation of different regions of the receptor by ligands, depending on assignment of the other Ile residues in our spectra.\n\nBeyond our studies of the A2AR, we can now apply the methods for labeling and NMR spectroscopy described here to other GPCRs and eukaryotic membrane proteins. Since the microswitches discussed above were identified by comparison of different GPCR structures\u00a0(Huang et al., 2015; Venkatakrishnan et al., 2016), it will be instructive to apply our methods to other receptors to see if the same patterns of ligand-dependent changes apply across the GPCR superfamily or change depending on the cognate ligand or preferred G protein signaling partner. Further, sidechain dynamics may be among the biophysical properties of GPCRs that are altered when receptors are bound to allosteric modulators or biased agonists, classes of ligands that are of increasing value and importance in GPCR pharmacology and drug development. In addition to GPCRs, many other disease-relevant human integral membrane proteins\u00a0(such as ABC transporters and ion channels) are currently impossible to study by NMR methods, largely due to the challenges of expression, labeling, and perdeuteration in E. coli. Our approach has the potential to make these systems tractable for similar NMR measurements of sidechain dynamics.\n\n## Materials and methods\n\n### Construct design\n\nThe cDNA for wild-type human ADORA2A adenosine A2A receptor was cloned into the pPICZ vector for expression in Pichia pastoris with a modified MF\u03b1 secretion signal combining previous precedents\u00a0(Rakestraw et al., 2009; Lin-Cereghino et al., 2013). Modifications to the MF\u03b1 greatly increased the amount of fully-processed receptor present at the plasma membrane. Briefly, the mutations V22A, G40D, L42S, V50A, V52A, and F55L were introduced, and residues 57\u201370 were removed from the signal sequence. The receptor expression construct was terminated at residue 316 and the N-glycosylation site at Asn154 was mutated to glutamine\u00a0(Jaakola et al., 2008). The gene for the receptor was followed by a 8x His tag and a Protein C tag at the C-terminus. All point mutations were created using standard QuikChange protocols. Plasmids were linearized by incubation with PmeI\u00a0(NEB) and inserted via electroporation into freshly prepared competent KM71H cells\u00a0(Invitrogen, https://www.thermofisher.com/order/catalog/product/C18200). Clones were screened for integration efficiency with increasing amount of Zeocin\u00a0(Invitrogen) in selection media and further selected through expression screens and western blots. The best expressing clones were stored as glycerol stocks at \u221280\u00b0C. As these yeast clones were only used for protein expression/purification and membrane preparation for binding assays, no authentication or mycoplasma contamination testing was performed.\n\n### Expression of protonated cultures\n\nFor large scale growth in natural abundance media, a small amount of freshly streaked cells was inoculated into a 10 mL culture of BMGY media\u00a0(1% glycerol, 100 mM potassium phosphate pH 6.0, 1.34% YNB\u00a0(yeast nitrogen base), 0.004% histidine, 4 \u00d7 10\u22125% biotin) and shaken at 28\u00b0C overnight at 250 rpm. The pilot culture was used to inoculate multiple liters of BMGY and shaken until saturation is reached\u00a0(OD600\u00a0~20\u201330). The total culture was spun down in sterile bottles at 4000 rpm for 30 min and resuspended in equal volume of BMMY media\u00a0(100 mM potassium phosphate pH 6.0, 1.34% YNB, 0.004% histidine, 4 \u00d7 10\u22125% biotin) without methanol. Cultures continued shaking for\u00a0~8 hr at 28\u00b0C to allow for metabolism of residual glycerol. Protein expression was induced with the addition of 0.5% v/v methanol and the temperature was reduced to 20\u00b0C. An additional 0.5% methanol was added every 12 hr to maintain expression. Cells were harvested after 36\u201348 hr and pelleted by centrifugation. Pellets were stored at \u221280\u00b0C.\n\n### Expression of deuterated cultures\n\nFor expression of cells in deuterated cultures, the cells were first adapted to deuterated media as follows. A small amount of freshly streaked cells was inoculated into a 50 mL culture of BMGY containing 90% D2O/10% H2O\u00a0(Cambridge Isotope Laboratories, Inc.,\u00a0Tewksbury\u00a0MA). The culture was shaken at 28\u00b0C until an OD600 of 8\u201310 was reached\u00a0(typically\u00a0~24 hr). Once that OD was reached, 200 \u03bcL of the 90%/10% culture was inoculated into 50 mL of BMGY media made with 100% D2O and protonated glycerol. The culture was shaken at 28\u00b0C until an OD600 of 8\u201310 was reached\u00a0(typically\u00a0~48 hr). 200 \u03bcL of the 100% culture was inoculated into 50 mL of BMGY media made with 100% D2O including d8-glycerol as the carbon source\u00a0(Cambridge Isotope Laboratories, Inc.). This culture was incubated until reaching an OD600 of\u00a0~10 and the entire culture was inoculated into large scale cultures of BMGY media again made with 100% D2O including d8-glycerol. The large scale cultures were shaken until saturation\u00a0(OD600 of\u00a0~20\u201330) and then spun down in sterile bottles at 4000 rpm for 30 min. The cells were resuspended in BMMY made in 100% D2O without methanol and continued shaking for 12\u201316 hr to metabolize residual d8-glycerol. One hour prior to induction, 200 mg/L of labeled \u03b1-ketobutyric acid\u00a0(methyl-13C, 99%; 3,3-D2, 98%; Cambridge Isotope Laboratories, Inc.) was added to the culture. Ten minutes prior to induction, dry theophylline was added to the culture to a final concentration of 4 mM. Protein expression was induced with the addition of 0.5% d4-methanol\u00a0(Cambridge Isotope Laboratories, Inc.) and the temperature was reduced to 20\u00b0C. Expression was maintained by further additions of 0.5% d4-methanol every 12 hr, and cells were harvested by centrifugation after 36\u201348 hr and stored at \u221280\u00b0C.\n\n### Purification\n\nCell pellets were thawed and resuspended in lysis buffer\u00a0(PBS containing 10% glycerol, 4 mM theophylline, 2 mM EDTA, and protease inhibitors\u00a0(160 \u03bcg/mL benzamidine, 2.5 \u03bcg/mL leupeptin, 1 mM PMSF, 1 \u03bcM E-64)). Cells were passed through a high-pressure microfluidizer\u00a0(Microfluidics M-110P) three times at 24,000 psi with a cooling period between passes. LongLife Zymolyase\u00a0(G-Bio Sciences) was added to the total lysate at a concentration of 15 U/mL and stirred at 37\u00b0C for 1 hr. Total membranes were isolated by centrifugation at 140,000 rcf for 30 min and then washed by douncing in an equal volume of lysis buffer followed by an additional centrifugation step. Membranes were then resuspended in hypotonic buffer\u00a0(10 mM HEPES pH 7.5, 2 mM EDTA, 4 mM theophylline, protease inhibitors) by douncing and stirred at 4\u00b0C for 30 min, followed by centrifugation again to isolate membranes. Membranes were dounced in buffer containing 500 mM NaCl, 50 mM HEPES pH 7.5, 20% glycerol, 1% DDM\u00a0(Anatrace), 4 mM theophylline, and protease inhibitors and stirred for 2 hr at 4\u00b0C. Insoluble material was spun out by centrifugation at 140,000 rcf for 30 min. The resultant supernatant was incubated with TALON resin (Clontech, Mountain View CA) pre-equilibrated in 250 mM NaCl, 50 mM HEPES 7.5, 0.05% protonated DDM, 5% glycerol, 4 mM theophylline, and 30 mM imidazole. Additional imidazole was added to the supernatant to the final concentration of 30 mM to minimize background binding. Batch binding continued overnight at 4\u00b0C.\n\nFollowing batch binding, the resin was washed with a series of buffers to exchange the protonated DDM into deuterated DDM and exchange on the high affinity ligands ZM241385 or NECA. Buffers were made in D2O and all contain 250 mM NaCl, 50 mM HEPES pH 7.5, 5% glycerol, 0.05% DDM\u00a0(protonated or deuterated; Anatrace), 20 mM imidazole, and 10 \u03bcM ZM241385 or 20 \u03bcM NECA\u00a0(Tocris). Buffers contain different ratios of protonated:deuterated detergents, and were added sequentially:\u00a0(A) 4:0;\u00a0(B) 3:1;\u00a0(C) 2:2;\u00a0(D) 1:3;\u00a0(E) 0:4. Protein was eluted from TALON with buffer E\u00a0+\u00a0250 mM imidazole. Eluted A2AR was concentrated in 100 kDa MWCO Amicon concentrators\u00a0(Millipore) and injected on a Superdex200 column\u00a0(GE Healthcare,\u00a0Chicago\u00a0IL) equilibrated in 150 mM NaCl, 20 mM HEPES pH 7.5, 0.05% deuterated DDM, and 10 \u03bcM ZM241385 or 20 \u03bcM NECA made in D2O. Samples for KCl experiments were purified in the same manner, only substituting 150 mM KCl instead of NaCl in the SEC buffer.\n\nPrevious studies have shown the importance of using cholesterol hemisuccinate\u00a0(CHS) as a component of the micelle to preserve A2AR function\u00a0(Weiss and Grisshammer, 2002) and increase the thermostability of the receptor\u00a0(Liu et al., 2012b). However, when CHS was included in our purification, we observed significant artifacts in the Ile\u03b41 region of our NMR spectra that hampered data collection and analysis. Ye et al. utilized an XAC ligand affinity column as an additional chromatography step during purification\u00a0(Ye et al., 2016) that we did not include in this study. Our purification is similar to what has been published in structural studies of A2AR, following a general purification scheme of IMAC followed by size exclusion chromatography prior to crystallization in detergent\u00a0(Hino et al., 2012; Carpenter et al., 2016; Sun et al., 2017) or lipidic cubic phase\u00a0(Jaakola et al., 2008; Liu et al., 2012b; Xu et al., 2011). These structures contain A2AR bound to agonists, antagonists, or in complex with an engineered \u2018mini-Gs\u2019 protein. Given our biochemical evidence\u00a0(Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1), we are confident that our purification protocol outlined above produces a high level of folded and functional A2AR, which is able to efficiently bind to GS in solution.\n\n### G protein expression and purification\n\nGs heterotrimer was purified from Trichoplusia ni cells grown in ESF921 media\u00a0(Expression Systems). Cells were lysed in hypotonic buffer containing 10 mM Tris pH 7.4, 100 \u03bcM MgCl2, 5 mM \u03b2-mercaptoethanol, 10 \u03bcM GDP, and protease inhibitors. After centrifugation, membranes were dounced and solubilized in buffer containing 100 mM NaCl, 20 mM HEPES pH 7.5, 1% sodium cholate, 0.05% DDM, 5 mM MgCl2, 5 mM \u03b2-mercaptoethanol, 10 \u03bcM GDP, 5 mM imidazole, protease inhibitors, and a 1:150,000 vol dilution of CIP\u00a0(NEB).\n\nThe soluble material was incubated with pre-equilibrated Ni2+-NTA resin for 2 hr at 4\u00b0C. Detergent exchange into deuterated DDM was performed on-column by mixing volumes of buffer E1\u00a0(100 mM NaCl, 20 mM HEPES pH 7.5, 1% sodium cholate, 0.05% deuterated\u00a0DDM, 5 mM MgCl2, 5 mM \u03b2-mercaptoethanol, 10 \u03bcM GDP, 20 mM imidazole, protease inhibitors) and buffer E2\u00a0(50 mM NaCl, 20 mM HEPES pH 7.5, 0.1% deuterated\u00a0DDM, 1 mM MgCl2, 5 mM \u03b2-mercaptoethanol, 10 \u03bcM GDP, 20 mM imidazole, protease inhibitors) in the following E1:E2 ratio: 1:1; 1:3; 1:9; 1:19 at a flow rate of 1 mL/min. Gs was eluted with buffer E2 supplemented with 200 mM imidazole. Following elution, MnCl2 was added to a final concentration of 1 mM, and the pooled eluate\u00a0(~10 mL volume) was incubated with 10 \u03bcL lambda phosphatase, 1 \u03bcL CIP, and 1 \u03bcL Antarctic phosphatase for 30\u2019 at 4\u00b0C. Sample was diluted with buffer E2 to reduce imidazole concentration and applied to a pre-equilibrated 2 mL Q-sepharose column. The resin was washed with 6 CV of 100 mM NaCl, 20 mM HEPES pH 7.5, 0.04% deuterated\u00a0DDM, 1 mM MgCl2, 100 \u03bcM TCEP, 10 \u03bcM GDP and eluted with wash buffer supplemented with an additional 250 mM NaCl. Eluted sample was concentrated in a 10 kDa MWCO concentrator to 1 mL and diluted 1:1 with buffer containing 20 mM HEPES pH 7.5, 1.5 mM EDTA, 1.65 mM MgCl2, 100 \u03bcM TCEP, 1 \u03bcM GDP to reduce final DDM and NaCl concentrations. Glycerol was added to 20%, and aliquots were flash frozen in LN2 and stored at \u221280\u00b0C until needed. Functional Gs was conservatively estimated to constitute at least 40% of the total purified sample.\n\n### A2AR-Gs complex formation\n\nA2AR-Gs complex formation was carried out as follows. SEC-purified A2AR was mixed with Gs at a 1:8 w/w ratio in the presence of 1 mM EDTA, 3 mM MgCl2, 10 \u03bcM NECA, 1 mM MnCl2, and a 1:100 dilution of lambda phosphatase\u00a0(NEB). The complex was incubated at room temperature for 1 hr, then apyrase (NEB, Ipswich MA) was added\u00a0at a 1:2000 vol dilution followed by an additional hour incubation at room temperature. CaCl2 was added to a final concentration of 2 mM and loaded at a flow rate of 10 mL/hr on Protein C antibody resin (Sigma-Aldrich, St. Louis MO) pre-equilibrated in 150 mM NaCl, 20 mM HEPES pH 7.5, 0.05% DDM, 2 mM CaCl2, 10 \u03bcM NECA. ProC resin was washed with 1 CV buffer at 10 mL/hr, followed by 5 CV buffer at 30 mL/hr. Complex was eluted in 2 CV with 150 mM NaCl, 20 mM HEPES pH 7.5, 0.05% DDM, 10 \u03bcM NECA, 5 mM EDTA, 0.2 mg/mL ProC peptide\u00a0(EDQVDPRLIDGK). Freshly made TCEP was added to a final concentration of 100 \u03bcM and was spin-concentrated prior to injection on a Superdex200 column equilibrated in 150 mM NaCl, 20 mM HEPES pH 7.5, 0.05% DDM, and 10 \u03bcM NECA.\n\nA2AR-Gs complex formation for NMR proceeded as above with a few modifications. Gs heterotrimer purification was carried out as above with the final exchange steps containing deuterated DDM instead of protonated DDM. Deuterated, labeled, SEC-purified A2AR was mixed with Gs at a 1:8 w/w ratio in the presence of 3 mM MgCl2 in a final volume of 1 mL. The complex was incubated at room temperature for five minutes, and then a 1/2000 vol of apyrase\u00a0(NEB) was added. The complex was incubated for an additional hour at room temperature, and then was injected on a Superdex200 column incubated in 150 mM NaCl, 20 mM HEPES pH 7.5, 0.05% deuterated DDM, 20 \u03bcM NECA. Peak fractions were concentrated to\u00a0~100 \u03bcL for NMR experiments.\n\n### NMR spectroscopy and analysis\n\nNMR spectra were collected at 30\u00b0C on 50\u2013100 \u03bcM A2AR\u00a0(complexed with ZM241285 or NECA) and 100 \u03bcM MBP\u00a0(complexed with \u03b2-cyclodextrin) using a Bruker AVANCE III HD 800 MHz spectrometer with a cryogenically-cooled TCI probe. All NMR samples were approximately 100 \u03bcl in a 3 mm Shigemi tube. NMR data were processed using NMRpipe\u00a0(Delaglio et al., 1995) and analyzed using NMRViewJ\u00a0(Johnson, 2004). Parameters derived from relaxation data were obtained with a non-linear least-squares fitting programmed in the Python SciPy library\u00a0(Jones et al., 2001; More, 1977). Errors in these parameters were generated using a nonparametric Monte Carlo bootstrap approach\u00a0(Efron, 1981) with 1000 simulated datasets, each of which consisted of synthetic datapoints with generated values centered on the measured peak intensities\u00a0(and errors determined from the noise of the experimental spectra). Each simulated dataset was individually fit; parameters from these fits were averaged to generate the reported values\u00a0(as average\u00a0\u00b1\u00a0standard deviation). Unassigned isoleucine methyl peaks in A2AR are referred to by a peak ID\u00a0(Figure 3A), sorted by increasing difference between inverse agonist- and agonist-bound relaxation rates\u00a0(Figure 6B).\n\n1H/13C-HMQC spectra of the methyl region were collected with a 13C spectral width of 22 ppm\u00a0(8 ppm) centered at 14 ppm\u00a0(9.5 ppm) for A2AR\u00a0(MBP), with 32 complex pairs collected. Due to short sample lifetimes, some A2AR HMQC spectra were collected as several sequential experiments with 64 scans\u00a0per\u00a0t1\u00a0point; if peak intensities and locations in these spectra remained consistent\u00a0(for example, see Figure 2\u2014figure supplement 3), they were summed after processing. Solvent PRE experiments were carried out by collecting an HMQC spectrum on an A2AR sample, then adding Gd3+ complexed with diethylenetriaminepentaacetic acid\u00a0(DTPA; Sigma-Aldrich) to a final concentration of 1 mM and collecting a matched HMQC spectrum. The PRE effect was measured as the ratio of peak intensities in the paramagnetic sample to those in the diamagnetic sample.\n\nTriple quantum\u00a0(3Q) relaxation experiments were conducted using a pulse sequence kindly provided by Prof. Lewis Kay\u00a0(University of Toronto)\u00a0(Sun et al., 2011). The carrier was centered on the methyl region\u00a0(0.8 ppm) in the 1H dimension, while 13C dimension center and spectral width were as above for HMQC spectra. The 3Q relaxation experiments were run as pseudo-4D experiments with the relaxation delays and alternating forbidden/allowed experiments as the third and fourth dimensions. An NMRpipe\u00a0(Delaglio et al., 1995) script was used to divide the data and process each spectrum. For MBP, spectra were collected with relaxation delays of 0.8, 2, 4, 8, and 16 ms for both forbidden and allowed experiments. Peaks\u00a0(corresponding to I317 and I333) with low intensities\u00a0(defined as less than ten-fold greater than noise in the 16 ms forbidden spectrum) were not used for relaxation analysis. Peak intensities were measured using the NMRViewJ\u00a0(Johnson, 2004) Rate Analysis module by fitting each peak to an ellipse and calculating the volume. Ratios of peak intensities were fit to the following equation as a function of relaxation delay\u00a0(Sun et al., 2011):\n\n$$\n\\frac{I_{forb}}{I_{all}}=\\frac{3N_{all}}{4N_{forb}}\\frac{\u03b7tanh\u2061\\sqrt{\u03b7^{2}+\\delta^{2}}T}{\\sqrt{\u03b7^{2}+\\delta^{2}-}\\deltatanh\u2061\\sqrt{\u03b7^{2}+\\delta^{2}}T}\n$$\n\nwhere N is the number of scans for each experiment, T is the relaxation delay, \u03b4\u00a0(<0) is a term for the coupling between rapidly and slowly decaying single-quantum coherences, and \u03b7 is a relaxation rate, defined as the difference between slow and fast relaxation rates of single-quantum transitions for methyl protons:\n\n$$\n\u03b7=\\frac{R_{2,H}^{F}-R_{2,H}^{S}}{2}\u221d\\tau_{c}S_{axis}^{2}\n$$\n\nproportional to the methyl axis order parameter S2axis and correlation time \u03c4c. All relaxation rates were constrained to be\u00a0>0 while \u03b4 was constrained to be\u00a0<0.\n\nDue to short lifetimes of A2AR samples\u00a0(~12\u201314 hr at 30\u00b0C), the relaxation experiment was modified and run with five allowed experiments\u00a0(0.8, 2, 4, 8, and 14 ms) and fewer forbidden experiments. To extract values of \u03b7, the forbidden:allowed peak intensity ratios at those few relaxation delays were fit to Equation 1 as above. Simultaneously, the allowed experiment peak intensities were fit to:\n\n$$\nI_{all}=A\\frac{3}{2}exp\u2061-R_{2,H}^{S}T+exp\u2061-R_{2,H}^{F}T\n$$\n\nwhere A is a scaling constant, T is the relaxation delay, and RS and RF are as above\u00a0(Figure 5\u2014figure supplement 1).\n\nTo determine which relaxation delays for the limited forbidden experiments gave values of \u03b7 that best agreed with those determined from a full dataset, the MBP relaxation dataset was analyzed using all five allowed experiments and different combinations of 1 or two forbidden experiments. The differences in \u03b7 values for each peak, as well as the sum of squared differences across all peaks, were compared for each analysis and a single relaxation delay of 8 ms was selected for A2AR relaxation experiments\u00a0(Figure 5, Figure 5\u2014figure supplement 1). For processing, two separate scripts were used to extract the five allowed experiments and sum up the five forbidden experiments. Allowed peak intensity and forbidden:allowed peak intensity ratios were calculated and fit to Equations 1 and 2, respectively, as above, to derive values for \u03b7 at each peak.\n\n### Computational methods\n\n#### Molecular constructs\n\nTo construct systems for atomistic molecular dynamics\u00a0(MD) simulations, we used the X-ray structures of the human A2A GPCR in complex with agonist NECA or inverse agonist ZM241385\u00a0(PDB accession codes 2YDV\u00a0(Lebon et al., 2011) and 4EIY\u00a0(Liu et al., 2012b), respectively). The thermostabilizing agents present in these X-ray models were removed and thermostabilizing mutations in the A2AR introduced during the crystallization experiments were reverted back to the corresponding wild type residues using VMD mutator plugin\u00a0(Humphrey et al., 1996). Several short residue segments missing from the X-ray structures were added with Modeller\u00a0(Sali and Blundell, 1993) to complete the full-length atomistic models of the human A2AR. The Na+ ion bound to the protein in the 4EIY structure was removed so that the effects of the agonist and the inverse agonist on the protein dynamics could be directly compared.\n\nUsing the protocol we have described earlier\u00a0(Khelashvili et al., 2013), the NECA- and ZM241385-bound A2AR structures were inserted into a detergent micelle containing 246 DDM molecules. The resulting proteomicelles were placed in\u00a0~1573 \u00c53 size cubic water box containing 150 mM NaCl salt. The final molecular systems contained\u00a0~330,000 atoms and resulted in detergent concentration of\u00a0~0.1 M, well-above established critical micelle concentration\u00a0(CMC) for DDM\u00a0(170 \u00b5M)\u00a0(Kaufmann et al., 2006).\n\n#### Force fields and MD simulations\n\nThe all-atom MD simulations were performed with the NAMD 2.7 package\u00a0(Phillips et al., 2005) using the all-atom CHARMM27 force-field with CMAP corrections for proteins\u00a0(Brooks et al., 2009), and a CHARMM-compatible force-field parameter set for detergents\u00a0(Abel et al., 2011). CHARMM-suitable parameters for NECA and ZM241385 compounds were generated with the program MATCH\u00a0(Yesselman et al., 2012). Molecular constructs were initially equilibrated using a two-phase protocol implemented by us earlier for MD simulations of leucine transporter\u00a0(LeuT)/micelle complexes\u00a0(Khelashvili et al., 2013; LeVine et al., 2016): (i) short energy minimization was carried out during which protein, water, and ion atoms were fixed and the coordinates of only DDM molecules were allowed to evolve freely; and (ii) 1.5 ns long MD simulations were conducted with the protein backbone harmonically constrained. The constraints were released gradually, in 0.5 ns steps, with decreasing force constants of 1, 0.5, and 0.01 kcal/\u00a0(mol\u00b7\u00c52).\n\nAfter the equilibration phase, both the NECA-bound and ZM241385-bound A2AR systems were subjected to\u00a0~80 ns unbiased MD simulations. Integration steps were 1 fs for the equilibration stage and 2 fs thereafter. The simulations implemented PME for electrostatics interactions\u00a0(Essmann et al., 1995) and were carried out in NPT ensemble under isotropic pressure coupling conditions, and at 310 K temperature. The Nose-Hoover Langevin piston algorithm\u00a0(Phillips et al., 2005) was used to control the target p=1 atm pressure with the LangevinPistonPeriod set to 100 fs and LangevinPistonDecay to 50 fs. The first\u00a0~25 ns of each trajectory was discarded based on the convergence of the C\u03b1 RMSD.\n\nEach MD trajectory was split into six 32-ns windows overlapping by 28 ns. The S2axis order parameters for Ile \u03b41 methyls were calculated from C\u03b31-C\u03b41 bond vectors extracted from four of these windows using the trjtool software\u00a0(Xue et al., 2014; Bremi et al., 1997). The average\u00a0\u00b1standard deviation of these order parameters over the four windows is reported for each Ile \u03b41 methyl.\n\nPDB files used in MD simulations and referenced throughout this manuscript\u00a0(i.e. in Figure 7) can be accessed at http://www.rcsb.org.\n\n### Membrane binding\n\nLigand binding experiments on membranes containing A2A receptor were carried out based on previously published protocols\u00a0(Xu et al., 2011). Pichia cells expressing each construct were used to generate membranes as follows. Cells were resuspended in lysis buffer\u00a0(PBS containing 10% glycerol, 2 mM EDTA, and protease inhibitors) and incubated for 2 hr at 37\u00b0C with Zymolyase 20T\u00a0(AMS Bio,\u00a0Abingdon\u00a0UK) at a final concentration of 50 U/mL. Crude membranes were isolated through centrifugation at 40,000 rcf for 30 min and dounced in storage buffer\u00a0(150 mM NaCl, 50 mM HEPES pH 7.5, 10% glycerol, protease inhibitors). Large cell debris was removed by a low speed spin at 1000 rcf for 10 min, and remaining membranes were subjected to a high speed spin at 140,000 rcf for 30 min. Pellets were dounced in a minimal volume of storage buffer, flash frozen in LN2, and stored at \u221280\u00b0C until needed. Saturation binding was carried out by incubating 1.5\u20132 \u03bcg of membranes with different concentrations of [3H]-ZM241385\u00a0(50 Ci/mmol, American Radiolabeled Chemicals, Inc.,\u00a0St.\u00a0Louis\u00a0MO) between 0.019 and 10 nM in assay buffer\u00a0(50 mM Tris pH 7.4, 10 mM MgCl2, 1 mM EDTA, with\u00a0150 mM NaCl or 150 mM KCl\u00a0as\u00a0needed) containing 0.1% protease-free BSA in a final volume of 250 \u03bcL per tube. Reactions were incubated at room temperature for 1 hr. Non-specific binding was determined using reactions containing 10 mM theophylline. Reactions were separated on a vacuum manifold using GF/C filters\u00a0(pre-soaked in assay\u00a0+0.5% PEI) to retain membranes and discard unbound ligand. After washing four times with cold assay buffer, bound radioactivity was quantified using a scintillation counter. For competition binding experiments, aliquots of membranes were incubated with 0.5 nM [3H]-ZM241385, and varying concentrations of cold NECA, from 0.5 nM to 300 \u03bcM, were included in the binding reactions. All binding experiments were carried out as three independent experiments, each performed in duplicate. Data analysis and fitting was performed with GraphPad Prism\u00a0(GraphPad Software Inc.).\n\n### Reconstitution and GTP\u03b3S binding\n\n9 \u03bcg of Gs trimer was added to a tube and preincubated on ice for 15 min with 75 \u03bcL of 1650 \u03bcM SAPE\u00a0(1-stearoyl-2-arachidonoyl-sn-glycero-3-phosphoethanolamine; Avanti Lipids), 980 \u03bcM porcine brain phosphatidylserine\u00a0(Avanti Lipids), 180 \u03bcM cholesteryl hemisuccinate\u00a0(Steraloids) in 20 mM Hepes pH 8.0, 100 mM NaCl, 0.4% deoxycholate, 0.04% sodium cholate. 35 pmol of A2A receptor and HMEN buffer\u00a0(20 mM HEPES pH 8.0, 100 mM NaCl, 3 mM MgCl2, 1 mM EDTA) was added to the tube for a total volume of 150 \u03bcL. The sample was incubated an additional 5 min and applied to an Ultrogel AcA34 column\u00a0(Sigma-Aldrich) equilibrated in HMEN buffer. BSA was added to fractions at a concentration of 0.1 mg/mL and vesicles were flash-frozen for storage at \u221280\u00b0C. Receptor recovery was monitored by total ZM241385 binding and\u00a0~1 mL after void volume was used in GTP\u03b3S binding assays. Recovery of receptor in this pool was\u00a0~13%.\n\n5 \u03bcL of vesicles was assayed in a total of 50 \u03bcL with 20 mM HEPES pH 8.0, 100 mM NaCl, 2 mM MgCl2, 1 mM EDTA, 1 mM DTT, 0.1 mg/mL BSA, 100 nM GTP\u03b3S with 35S GTP\u03b3S as a tracer in either no ligand, 10 \u03bcM NECA agonist, or 100 nM ZM241385 antagonist. Samples were incubated at 30\u00b0C for 10 min and stopped with 50 \u03bcL of quench buffer\u00a0(20 mM Tris pH 8, 100 mM NaCl, 10 mM MgCl2, 0.1 mM DTT, 1 mM GTP, and 0.1% Lubrol) and incubated on ice for 10 min. Samples were filtered over BA85 nitrocellulose and filters counted on a liquid scintillation counter after washing 4x with 20 mM Tris pH 8.0, 100 mM NaCl, 10 mM MgCl2.\n",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "bc459f5b-452a-49e8-8247-6d489305042a",
+      "submission_id": "28852ec8-97dd-4f4d-bf10-6aa67f315bda",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28505.027](https://doi.org/10.7554/eLife.28505.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ligand modulation of sidechain dynamics in a wild-type human GPCR\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Scott Prosser (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll reviewers agree that your work represents a significant methodological advance in the study of GPCR dynamics by NMR. There are, however, concerns about the sensitivity of the measurements and whether you are looking at 100% occupied states. The reviewers are also not convinced that the results as presented really advance understanding of how side chain dynamics are controlled by different classes of ligands.\n\nEssential revisions:\n\n1) This work takes an important step forward in the demonstration that (semi-) quantitative information can be obtained, but it is limited by sensitivity. This is apparent in the values of eta, per se, where very large errors are obtained. Can the authors think about additional experiments that might place their results on a more rigorous footing? Perhaps an additional dynamics measurement with a different agonist that is not as strong as NECA. Then one might predict less increase in dynamics. If the authors obtained this, it would provide additional support for their hypothesis. Alternatively, it is likely that carrying out 13C R2 experiments using 13CHD2 methyl groups (the appropriate precursor can be purchased) would provide significantly more sensitivity and if similar trends are observed then again this would provide more confidence in the results.\n\n2) Ligand-dependent chemical shift changes: There is concern about both the lack of shifts in the inverse agonist versus agonist-saturated samples, as well as the robustness of the shifts suggested in Figure 3B, which could just as easily arise from linewidth differences. Inspection of the spectra and examining the plot of the shifts in the graph leads to the impression that there is little correspondence between the two where apparently some peaks are shifting >10-fold more than others. It was also surprising that changes were not observed given the large conformation change observed in A2AR between the crystal structure of the ZM241385-bound state and the NECA-bound state. For these reasons, it is suggested that you make use of ROSETTA or some chemical shift prediction program and comment on the expected shifts between active and inactive states at least for the half-dozen or so Ile's that are removed from the hydrophobic interior and are somewhat closer to the solvent interface. There are also a few well-resolved Ile resonances that one might expect to be able to predict or confirm from ROSETTA.\n\n3) It is unclear how reliable the assignments of amino acid residues really are. In one instance, mutating Ile274 to Met resulted in the loss of intensity of 4 peaks. The authors assume that 2 of them, having been assigned to other Ile residues, clearly do not belong Ile274 and that 'careful inspection' led to the assignment of one peak. It is unclear how the authors have done this. More importantly, how can the authors be certain that the other mutations that led to peak assignments did not also lead to loss of spectra in the unresolved peaks a-o and that these actually represent the Ile residues and not the peaks chosen? Also, why has the density of the 2 peaks at ~0.82 ppm 1H and 15-16 ppm Katritch et al., 2013C been ignored?\n\n4) In Figure 1, the authors demonstrate that the perdeuterated A2AR couples to Gs. However, the control experiment with the normal protonated A2AR is not done, so it is not possible to know whether the levels observed for the perdeuterated sample are significantly worse or not. In addition, the authors do not state the amount of functional receptor (as defined by radioligand binding) in each of the NMR samples. This is an issue given the non-optimal conditions for purification (see below).\n\n5) The authors apparently exchange theophylline for NECA in a buffer containing 250 mM NaCl and then purified further on a SEC column containing 150 mM NaCl. NaCl is an allosteric antagonist of A2AR (EC50 of 40-50 mM), so how sure are the authors that in the NMR experiments using NECA that they have 100% ligand occupancy?\n\n6) There are questions about why the A2AR was purified in DDM alone. A2AR is most stable in the presence of CHS and that if this is not added to the purification in DDM, then the receptor in the absence of ligand rapidly becomes inactive (Weiss and Grisshammer (2002) Eur. J. Biochem. 269, 82-92). Did the authors test the stability of their preparations by FSEC or radioligand binding to ascertain that there was no loss of functionality during NMR data collection? Moreover, it appears that functional purification was not attempted to remove non-functional receptor. If the authors do not use functional purification strategies they should comment on functional purity not so much in vesicles but in DDM. It would also be helpful to comment on how the use of DDM might influence dynamics.\n\n7) The Abstract is bereft of substantive comments regarding the system under study. The authors should comment both on solvent exposure and relative effects with ligand/G protein and on the triple quantum based order parameter analysis. Something like \"\u2026we observe a diversity of ligand-dependent changes in \u03b7, with some Ile residues becoming more rigid with agonist while most become more flexible\u2026\". Even a comment on the negative results belongs in the Abstract in my opinion (in particular, the lack of chemical shift change with ligand).\n",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a16460de-9ffc-4390-8b1c-0635401784e0",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C1",
+      "claim": "GPCRs regulate all aspects of human physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCRs regulate all aspects of human physiology, and biophysical studies have deepened our understanding of GPCR conformational regulation by different ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about GPCR function that draws from established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "c541f2a7-9fc9-4c8d-a062-94a09775d47a",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C2",
+      "claim": "There is no experimental evidence for how sidechain dynamics control allosteric transitions between GPCR conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet there is no experimental evidence for how sidechain dynamics control allosteric transitions between GPCR conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' assessment of the existing literature and represents a gap in knowledge that motivates their study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "f643b9ba-25d8-4cfa-9632-2736d0b186f4",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C3",
+      "claim": "Wild-type A2AR samples were generated that are deuterated apart from 1H/13C NMR probes at isoleucine \u03b41 methyl groups.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this deficit, we generated samples of a wild-type GPCR (A2AR) that are deuterated apart from 1H/13C NMR probes at isoleucine \u03b41 methyl groups, which facilitated 1H/13C methyl TROSY NMR measurements with opposing ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by the methods and results sections describing the labeling and expression procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "73501fea-8358-4349-a7f8-a5f066405731",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C4",
+      "claim": "Low [Na+] is required to allow large agonist-induced structural changes in A2AR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that low [Na+] is required to allow large agonist-induced structural changes in A2AR, and that patterns of sidechain dynamics substantially differ between agonist (NECA) and inverse agonist (ZM241385) bound receptors, with the inverse agonist suppressing fast ps-ns timescale motions at the G protein binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR spectral data comparing A2AR in NaCl versus KCl conditions with different ligands (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "56404119-6a6e-4e15-95d9-fa2e6f09fa6a",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C5",
+      "claim": "Patterns of sidechain dynamics substantially differ between agonist (NECA) and inverse agonist (ZM241385) bound receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that low [Na+] is required to allow large agonist-induced structural changes in A2AR, and that patterns of sidechain dynamics substantially differ between agonist (NECA) and inverse agonist (ZM241385) bound receptors, with the inverse agonist suppressing fast ps-ns timescale motions at the G protein binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the triple quantum relaxation experiments showing different \u03b7 values for different ligands (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "80861f1c-f738-4999-bcfa-31163497ac29",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C6",
+      "claim": "The inverse agonist ZM241385 suppresses fast ps-ns timescale motions at the G protein binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that low [Na+] is required to allow large agonist-induced structural changes in A2AR, and that patterns of sidechain dynamics substantially differ between agonist (NECA) and inverse agonist (ZM241385) bound receptors, with the inverse agonist suppressing fast ps-ns timescale motions at the G protein binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the relaxation data showing higher \u03b7 values (more rigid) for ZM241385-bound receptor compared to NECA-bound receptor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "f6f054d7-135f-4d17-9e70-ae35e82ced9d",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C7",
+      "claim": "Crystals of bovine rhodopsin provided the first high-resolution picture of a GPCR's architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals of bovine rhodopsin provided the first high-resolution picture of a GPCR's architecture (Palczewski et al., 2000; Li et al., 2004), and structures of photoactivation intermediates (Nakamichi and Okada, 2006; Salom et al., 2006) and retinal-free opsin (Park et al., 2008; Scheerer et al., 2008) further documented the structural transitions involved in rhodopsin activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "0e353716-cc19-4b2d-ac60-5d1ab1eb5d81",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C8",
+      "claim": "Crystal structures of the human \u03b22 adrenergic receptor with inverse agonists, agonists, and bound G protein provided a molecular basis for understanding how diffusible agonist binding can promote structural changes in a receptor to enhance signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "For GPCRs activated by diffusible ligands, crystal structures of the human \u03b22 adrenergic receptor (\u03b22AR) with inverse agonists (Rosenbaum et al., 2007; Cherezov et al., 2007), agonists (Rosenbaum et al., 2011; Rasmussen et al., 2011a; Warne et al., 2011), and bound G protein (Rasmussen et al., 2011b) provided a molecular basis for understanding how diffusible agonist binding can promote structural changes in a receptor to enhance signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published crystal structures of \u03b22AR in different states.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "0107f267-f79a-4907-9d0a-385ffe0fc921",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C9",
+      "claim": "The overall structures of GPCRs are remarkably similar, with C\u03b1 rmsd values between unrelated receptors in the 2\u20133 \u00c5 range.",
+      "claim_type": "EXPLICIT",
+      "source": "While the sequences of these GPCRs and their orthosteric ligand binding pockets are highly diverse, the overall structures are remarkably similar, with C\u03b1 rmsd values between unrelated receptors in the 2\u20133 \u00c5 range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge from structural comparisons of multiple GPCR crystal structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "2edc4b71-c2ee-45d6-a3c9-bb9e0622f2d0",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C10",
+      "claim": "Common structural changes in GPCR activation include inward movements of transmembrane helices at the orthosteric pocket, rearrangements of common core residues through the helical bundle, and rigid-body outward movements of TM6 at the cytoplasmic surface.",
+      "claim_type": "EXPLICIT",
+      "source": "For the few GPCRs that have been captured in both inactive and active conformations, common structural changes include inward movements of transmembrane (TM) helices at the orthosteric pocket, rearrangements of common core residues through the helical bundle, and rigid-body outward movements of TM6 at the cytoplasmic surface to expose G protein binding epitopes (Katritch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article summarizing structural features of GPCR activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "e97c9536-9a22-4f55-af0a-2bdd267e6e0c",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C11",
+      "claim": "19F NMR and EPR experiments on the \u03b22AR and A2AR provided evidence for at least four different conformational states populated by these receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "19F NMR and EPR experiments on the \u03b22AR (Liu et al., 2012a; Manglik et al., 2015) and A2AR (Ye et al., 2016) provided evidence for at least four different conformational states populated by these receptors, which are differentially stabilized by ligands of different efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published NMR and EPR studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "d11eeae7-8efc-42ff-89a9-9b53416824df",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C12",
+      "claim": "1H/13C 2D NMR studies on 13C\u03b5-methionine-labeled \u03b22AR showed that a high free-energy barrier exists between inactive and active conformations (with exchange on the millisecond timescale).",
+      "claim_type": "EXPLICIT",
+      "source": "1H/13C 2D NMR studies on 13C\u03b5-methionine-labeled \u03b22AR (Nygaard et al., 2013; Kofuku et al., 2014) showed that a high free-energy barrier exists between inactive and active conformations (with exchange on the millisecond timescale), and agonist binding alone is only capable of weakly populating the active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published NMR studies on \u03b22AR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "5aac61bf-3f64-43b9-9b76-92980211c39c",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C13",
+      "claim": "Agonist binding alone is only capable of weakly populating the active conformation of \u03b22AR.",
+      "claim_type": "EXPLICIT",
+      "source": "1H/13C 2D NMR studies on 13C\u03b5-methionine-labeled \u03b22AR (Nygaard et al., 2013; Kofuku et al., 2014) showed that a high free-energy barrier exists between inactive and active conformations (with exchange on the millisecond timescale), and agonist binding alone is only capable of weakly populating the active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published NMR studies on \u03b22AR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "830e3044-d196-42ce-9cb1-1097be1a6da1",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C14",
+      "claim": "Ligand-activated GPCRs are weakly coupled allosteric systems in which multiple energetic inputs (i.e. agonist and G protein binding) are required to predominantly populate the active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, in addition to similar measurements on \u03bc-opioid receptor chemically modified to introduce NMR-active 13C-methyl labels onto lysine residues (Sounier et al., 2015), suggest that ligand-activated GPCRs are weakly coupled allosteric systems in which multiple energetic inputs (i.e. agonist and G protein binding) are required to predominantly populate the active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from multiple cited NMR studies on different GPCRs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "b7f33c1c-a82f-496a-8a17-d683f68562f8",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C15",
+      "claim": "The importance of repacking of sidechains from TM3, TM5, and TM6 beneath the ligand binding pocket, known as the 'conserved core triad,' was identified by comparison of structures of \u03b22AR and the \u03bc-opioid receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of repacking of sidechains from TM3, TM5, and TM6 beneath the ligand binding pocket, known as the 'conserved core triad,' was identified by comparison of structures of \u03b22AR (Rosenbaum et al., 2011; Rasmussen et al., 2011a) and the \u03bc-opioid receptor (Huang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to crystal structures of \u03b22AR and \u03bc-opioid receptor.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "f0b1493e-6234-417f-ab11-3f331d02d50c",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C16",
+      "claim": "An activated microswitch near the site of G protein binding represents a common feature of GPCRs that have been crystallized in both active and inactive conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Further down the TM bundle, an activated microswitch near the site of G protein binding has been found to represent a common feature of GPCRs that have been crystallized in both active and inactive conformations (Venkatakrishnan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published analysis of GPCR structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "0d14a740-397e-4ab1-b985-c492b6dfd8c9",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C17",
+      "claim": "Perdeuteration and ILV labeling conventionally rely on expression in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "A major hurdle in carrying out such experiments is that perdeuteration and ILV labeling conventionally rely on expression in E. coli (Goto et al., 1999), while wild-type GPCRs typically require a eukaryotic host to ensure proper folding, glycosylation, trafficking, and stability in the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published method for ILV labeling in E. coli.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "75fa78fb-e208-497e-9187-46ef7e2e39ae",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C18",
+      "claim": "Wild-type GPCRs typically require a eukaryotic host to ensure proper folding, glycosylation, trafficking, and stability in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "A major hurdle in carrying out such experiments is that perdeuteration and ILV labeling conventionally rely on expression in E. coli (Goto et al., 1999), while wild-type GPCRs typically require a eukaryotic host to ensure proper folding, glycosylation, trafficking, and stability in the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about GPCR expression requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "28cafc03-d348-4e5d-a661-39ee2e21f341",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C19",
+      "claim": "The authors generated highly-deuterated 1H/13C Ile \u03b41-methyl labeled proteins in Pichia pastoris.",
+      "claim_type": "EXPLICIT",
+      "source": "We have addressed many of these practical issues with our generation (Clark et al., 2015) of highly-deuterated 1H/13C Ile \u03b41-methyl labeled proteins in Pichia pastoris, a methylotrophic yeast (Cereghino and Cregg, 2000) that is adaptable to D2O-based minimal media, will utilize the Ile precursor \u03b1-ketobutyrate, and enables expression of GPCRs at levels sufficient for crystallography (Shimamura et al., 2011; Hino et al., 2012; Yurugi-Kobayashi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work and is demonstrated in the current manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "6a4382b4-f2cc-4839-8d24-53dd7c3618e4",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C20",
+      "claim": "A2AR is an important regulator of vascular function.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we apply this labeling method to the wild-type human A2AR, an important regulator of vascular function with a well-developed pharmacology including the natural hormone adenosine and high-affinity synthetic agonists and antagonists (Preti et al., 2015; de Lera Ruiz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles on A2AR pharmacology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "8d643d5f-6265-438c-ac8c-98aa27e96327",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C21",
+      "claim": "A2AR has been crystallized in inactive, intermediate and active conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "A2AR has been crystallized in inactive (Jaakola et al., 2008; Liu et al., 2012b), intermediate (Lebon et al., 2011; Xu et al., 2011) and active (Carpenter et al., 2016) conformations, and has been studied by 19F NMR to characterize its conformational equilibria (Ye et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple crystal structures of A2AR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "cedd057a-98a8-4739-b3ba-099a84a4e84c",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C22",
+      "claim": "The authors expressed and purified milligram quantities of labeled wild-type human A2AR.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed and purified milligram quantities of labeled wild-type human A2AR and were able to resolve 20 out of 29 expected peaks in the Ile \u03b41 region in 1H/13C TROSY HMQC experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the methods and results sections describing the purification protocol and yields.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "6e09fc53-6061-4845-ad7f-562b9335dbfd",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C23",
+      "claim": "20 out of 29 expected peaks in the Ile \u03b41 region were resolved in 1H/13C TROSY HMQC experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed and purified milligram quantities of labeled wild-type human A2AR and were able to resolve 20 out of 29 expected peaks in the Ile \u03b41 region in 1H/13C TROSY HMQC experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the NMR spectra shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "cc934868-8b14-4430-9a76-6aceb7541101",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C24",
+      "claim": "Four signals were assigned to specific functionally important residues through structure-guided mutagenesis, including I923.40 of the conserved core triad and I292 at the cytoplasmic surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Through structure-guided mutagenesis, we assigned four of these signals to specific functionally important residues, including I923.40 of the conserved core triad (Huang et al., 2015) and I292 at the cytoplasmic surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mutagenesis data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "47bdd9f3-9229-4bbb-959c-50a331a7c044",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C25",
+      "claim": "The Kd for [3H]-ZM241385 binding to A2AR was 0.42 nM in NaCl-containing buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kd for [3H]-ZM241385 was 0.42 nM in NaCl-containing buffer, while the Ki for NECA was 210 nM in low ionic strength and 420 nM in KCl-containing buffer, in agreement with previous binding studies (Xu et al., 2011; Carpenter et al., 2016; Bertheleme et al., 2013) on heterologously expressed A2AR (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the radioligand binding data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "1bf40633-1199-4737-93bd-022cc7f4facd",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C26",
+      "claim": "The Ki for NECA was 210 nM in low ionic strength and 420 nM in KCl-containing buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kd for [3H]-ZM241385 was 0.42 nM in NaCl-containing buffer, while the Ki for NECA was 210 nM in low ionic strength and 420 nM in KCl-containing buffer, in agreement with previous binding studies (Xu et al., 2011; Carpenter et al., 2016; Bertheleme et al., 2013) on heterologously expressed A2AR (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the radioligand binding data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "515a367f-933c-4efa-958a-b9bc52428ef1",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C27",
+      "claim": "Saturating the receptor with the full agonist NECA led to an 8-fold stimulation of [35S]GTP\u03b3S binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Saturating the receptor with the full agonist NECA led to an 8-fold stimulation of [35S]GTP\u03b3S binding, and the inverse agonist ZM241385 produced a 50% reduction in basal activity, similar to values measured for protonated A2AR (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GTP\u03b3S binding data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "cbe0e72d-50bf-4c69-b230-77fb23969c56",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C28",
+      "claim": "The inverse agonist ZM241385 produced a 50% reduction in basal activity in [35S]GTP\u03b3S binding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Saturating the receptor with the full agonist NECA led to an 8-fold stimulation of [35S]GTP\u03b3S binding, and the inverse agonist ZM241385 produced a 50% reduction in basal activity, similar to values measured for protonated A2AR (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GTP\u03b3S binding data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "246704fa-329f-4cce-b8f5-62fb99539181",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C29",
+      "claim": "The perdeuterated A2AR is capable of activating Gs at wild-type levels in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the perdeuterated A2AR is capable of activating Gs at wild-type levels in vitro, and can serve as a valid model for GPCR dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the GTP\u03b3S binding data comparing protonated and deuterated A2AR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "5d17586a-f62a-4713-a4ce-61f559060334",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C30",
+      "claim": "The chemical shifts of the agonist-bound and inverse agonist-bound A2AR are similar in the presence of 150 mM NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in a liganded sample, we could resolve 20 peaks in the Ile \u03b41 region of the spectrum, out of 29 Ile residues present in our construct (28 from the receptor and one from the C-terminal Protein C tag). The chemical shifts of the agonist-bound and inverse agonist-bound A2AR are similar (Figure 2A,B), showing subtle changes that are comparable in magnitude to those observed previously for 13C-methyl-methionine probes in \u03b22AR (Kofuku et al., 2014; Kofuku et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the NMR spectra in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "f179f0d4-8d39-4bd5-8a57-4b7617e7a467",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C31",
+      "claim": "The spectrum of the unliganded (apo) A2AR shows a loss of most of the well-dispersed peaks present in the ligand-bound spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectrum of the unliganded (apo) A2AR shows a loss of most of the well-dispersed peaks present in the ligand-bound spectra (Figure 2C), which could result from protein instability or conformational exchange on the \u03bcs-ms timescale.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the NMR spectrum shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "2d4be18b-1840-49ae-8b82-74e3a6f07c4e",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C32",
+      "claim": "The spectrum of NECA-bound A2AR is dramatically different in KCl compared to NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectrum of NECA-bound A2AR, on the other hand, is dramatically different in KCl and NaCl (Figure 3D, Figure 3\u2014figure supplement 1D), with multiple peaks shifting and decreasing in intensity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the NMR spectra in Figure 3B and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "d284cc4c-0cf9-4944-9df3-e4653ab89922",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C33",
+      "claim": "The spectrum of ZM241385-bound receptor in KCl is very similar to that in the presence of NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectrum of ZM241385-bound receptor in KCl is very similar to that in the presence of NaCl (Figure 3C and Figure 3\u2014figure supplement 1B), with the peak assigned to I923.40 shifting slightly upfield in the 13C dimension.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the NMR spectra in Figure 3A and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "f9af21c5-8615-4e92-a158-2e0a8f598db1",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C34",
+      "claim": "The average peak intensity in the Gd3+-DTPA containing spectrum is about 0.4 of that in the control spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining our data, we see that the average peak intensity in the Gd3+-DTPA containing spectrum is about 0.4 of that in the control spectrum, suggesting that the Ile \u03b41 methyl groups of A2AR in the DDM micelle are quite close to solvent on average (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the solvent PRE data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "2e8788d6-ae84-4a4f-8de2-7c9512ff9586",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C35",
+      "claim": "I2747.39 is solvent-exposed due to its presence in the solvent-exposed ligand-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The accessibility of I2747.39 is expected due this amino acid's presence in the solvent-exposed ligand-binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the crystal structure and the solvent PRE data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "09c869cc-045c-401d-9245-0317d47c1a80",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C36",
+      "claim": "I2386.40 is in close proximity to the Na+ site in ZM241385-bound A2AR.",
+      "claim_type": "EXPLICIT",
+      "source": "In ZM241385-bound A2AR, this residue is also in close proximity to the Na+ site (Liu et al., 2012b), one packing layer toward the cytoplasmic surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure of ZM241385-bound A2AR.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "8229f0c3-a8f1-4a01-9362-3c2a326aedd0",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C37",
+      "claim": "Pairing five allowed spectra with a single forbidden spectrum at 8 ms relaxation delay can faithfully recapitulate the \u03b7 values measured using five pairs of forbidden and allowed experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pairing five allowed spectra with a single forbidden spectrum, we were able to faithfully recapitulate the \u03b7 values measured using five pairs of forbidden and allowed experiments (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison of \u03b7 values from different experimental setups shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "0caa22c9-8ce1-4f03-81bf-e5f02ef93742",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C38",
+      "claim": "The average \u03b7 value for the ZM241385-bound sample is higher than for NECA, indicative of greater overall rigidity of sidechains with inverse agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "The average \u03b7 value for the ZM241385-bound sample is higher than for NECA, indicative of greater overall rigidity of sidechains with inverse agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the relaxation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "ac820f8a-d84a-47f0-afca-42d665afb291",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C39",
+      "claim": "I292 shows the largest difference between ligands, becoming more flexible in the NECA-bound sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the other assigned peaks, I292 shows the largest difference between ligands, becoming more flexible in the NECA-bound sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the relaxation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "52408b27-e975-4588-ac0e-c72442522721",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C40",
+      "claim": "I923.40 and I2747.39 display more modest increases in flexibility with agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "I923.40 and I2747.39 display more modest increases in flexibility with agonist, while the dynamics of I2386.40 are largely unchanged by ligand (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the relaxation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "5259d6b9-96c5-47dc-8d12-7fa4814e41cc",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C41",
+      "claim": "The dynamics of I2386.40 are largely unchanged by ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "I923.40 and I2747.39 display more modest increases in flexibility with agonist, while the dynamics of I2386.40 are largely unchanged by ligand (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the relaxation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "2b944a43-6d5f-4a7a-805b-1de232cf048f",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C42",
+      "claim": "The differences in fast timescale dynamics occur in the presence of NaCl, in which chemical shifts for the agonist- and inverse agonist-bound states were nearly identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these differences in fast timescale dynamics occur in the presence of NaCl, in which chemical shifts for the agonist- and inverse agonist-bound states were nearly identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation that integrates the chemical shift data (Figure 2) with the dynamics data (Figure 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "5837bdfd-5664-4b50-9389-7584b2318577",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C43",
+      "claim": "The S2axis order parameters for some methyl groups show significant variations across different windows in MD simulations, suggesting that slower timescale motions involving these residues contribute to the sidechain dynamics measured on the fast timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "The S2axis order parameters for some methyl groups (for example, I60 and I80 in ZM241385; I106 and I302 in NECA) show significant variations across different windows, suggesting that slower timescale motions involving these residues contribute to the sidechain dynamics measured on the fast timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the MD simulation data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "73865dd3-704c-4e91-b46c-00cfd84aeab8",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C44",
+      "claim": "The differences between ZM241385- and NECA-bound dynamics at three of the four assigned sites (I2386.40, I2747.39, and I292) from MD simulations are qualitatively similar to what is observed by NMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the differences between ZM241385- and NECA-bound dynamics at three of the four assigned sites (I2386.40, I2747.39, and I292) are qualitatively similar to what we see by NMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the MD simulation data (Figure 6\u2014figure supplement 1) and the NMR data (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "4211075a-059f-4ca4-871a-d0674f9fccec",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C45",
+      "claim": "The Na+ site first seen in the high-resolution structure of A2AR bound to ZM241285 is conserved throughout most Class A GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Na+ site first seen in the high-resolution structure of A2AR bound to ZM241285 is conserved throughout most Class A GPCRs, and Na+ exerts a negative allosteric effect on A2AR activation by bridging residues on TM3 and TM7 and stabilizing the inactive conformation (Liu et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "19576d53-be44-40a5-a6de-66e3e5bbda2c",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C46",
+      "claim": "Na+ exerts a negative allosteric effect on A2AR activation by bridging residues on TM3 and TM7 and stabilizing the inactive conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Na+ site first seen in the high-resolution structure of A2AR bound to ZM241285 is conserved throughout most Class A GPCRs, and Na+ exerts a negative allosteric effect on A2AR activation by bridging residues on TM3 and TM7 and stabilizing the inactive conformation (Liu et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the crystal structure and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "59a0d906-65f1-4605-85cd-c1ab553e4ee0",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C47",
+      "claim": "A 9-fold decrease in NECA affinity is observed when A2AR membranes are incubated in 150 mM NaCl buffer versus 150 mM KCl buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "For A2AR expressed in P. pastoris, we observe a 9-fold decrease in NECA affinity when membranes are incubated in 150 mM NaCl buffer versus 150 mM KCl buffer (Figure 1\u2014figure supplement 2), similar to previously reported values (Carpenter et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the binding data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "25f28f5a-11e2-4f0f-838b-0370307306b1",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C48",
+      "claim": "I2747.39 at the ligand binding site makes direct contact with the adenine or adenine analogue rings of both NECA and ZM241385 in their respective crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "I2747.39 at the ligand binding site makes direct contact with the adenine or adenine analogue rings of both NECA and ZM241385 in their respective crystal structures (Jaakola et al., 2008; Liu et al., 2012b; Lebon et al., 2011; Carpenter et al., 2016) (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "a7a2db1f-62d6-4286-bc37-c625441d72f4",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C49",
+      "claim": "I2747.39 was more rigid in terms of its fast sidechain motions with inverse agonist bound, and more flexible with NECA occupying the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In our relaxation datasets, I2747.39 was more rigid in terms of its fast sidechain motions with inverse agonist bound, and more flexible with NECA occupying the binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the relaxation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "7b1c3ab0-6728-41e4-9b05-b5de4dd1e535",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C50",
+      "claim": "MD simulations on \u03b22AR predicted greater mobility of agonists relative to inverse agonists in the orthosteric pocket of the inactive-state structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MD simulations on \u03b22AR predicted greater mobility of agonists relative to inverse agonists in the orthosteric pocket of the inactive-state structure (i.e. not bound to Gs) (Dror et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published MD simulations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "4558c4b0-facf-4b59-bb3f-7abdbde391e2",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C51",
+      "claim": "The fast dynamics of residues at the orthosteric pockets of Class A GPCRs may be correlated with the functional efficacy of the bound ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that the fast dynamics of residues at the orthosteric pockets of Class A GPCRs may be correlated with the functional efficacy of the bound ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference drawn from the authors' data and previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "4e1253e1-ee39-43f5-88e1-1e121b448a18",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C52",
+      "claim": "I923.40 is one of the three residues of the conserved core triad in A2AR, along with P1895.50 and F2426.44.",
+      "claim_type": "EXPLICIT",
+      "source": "The residue I923.40 is one of the three residues of the conserved core triad in A2AR, along with P1895.50 and F2426.44, which interact at a layer beneath the orthosteric pocket further toward the cytoplasmic surface (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis and established knowledge about the conserved core triad.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "34da3bd4-90e9-4de8-8831-8c5dd98e0916",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C53",
+      "claim": "A lower \u03b7 value for I923.40 in the NECA dataset versus ZM241385 indicates greater sidechain flexibility when A2AR is agonist-bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the rearrangements of this microswitch region between the inactive and active conformations of multiple GPCRs, we observe a lower \u03b7 value for I923.40 in the NECA dataset versus ZM241385, indicating greater sidechain flexibility when A2AR is agonist-bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the relaxation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "45a687c4-c86c-47c0-8582-e882171509a7",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C54",
+      "claim": "Crystal structures of A2AR bound to agonists alone showed an intermediate active-like conformation in the region surrounding I923.40.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, crystal structures of A2AR bound to agonists alone (Figure 7B) showed an intermediate active-like conformation in the region surrounding I923.40 (Lebon et al., 2011; Xu et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "207ceff6-518e-4caf-9b15-5c48812bb33a",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C55",
+      "claim": "Agonist alone (even with high [Na+]) is enough to promote the fast motions of the sidechains in the I923.40 microswitch region.",
+      "claim_type": "EXPLICIT",
+      "source": "However agonist alone (even with high [Na+]) is enough to at least promote the fast motions of the sidechains in this microswitch, which may reduce the activation energy for the observed packing rearrangement to the active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the dynamics data in the presence of NaCl.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "74840ff2-ef83-48db-bcf0-294e1b3d27e5",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C56",
+      "claim": "I2386.40 is one helical turn on TM6 above L2356.37, which participates in a conserved microswitch between inactive and active conformations for multiple GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "I2386.40 is situated further toward the G protein binding site at a critical region for GPCR activation, where it packs against TM7 and undergoes significant outward movement in the transition to the active conformation (Figure 7C). I2386.40 is also one helical turn on TM6 above L2356.37, which participates in a conserved microswitch between inactive and active conformations for multiple GPCRs (Venkatakrishnan et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to a published analysis of GPCR structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "ac8bd444-2e20-4bcb-b8a3-63350b442584",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C57",
+      "claim": "I292 is present at the linker between TM7 and Helix 8, where it packs against Y2887.53 of the highly conserved NPXXY motif.",
+      "claim_type": "EXPLICIT",
+      "source": "I292 is present at the linker between TM7 and Helix 8, where it packs against Y2887.53 of the highly conserved NPXXY motif (Katritch et al., 2013) (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "cc8b7b3f-09e8-47a3-8f3d-7df28b9b1718",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C58",
+      "claim": "In the structure of A2AR/mini-Gs, the engineered Gs protein makes direct contact with I292 at the TM7-Helix 8 junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in the structure of A2AR/mini-Gs (Carpenter et al., 2016), the engineered Gs protein makes direct contact with I292 at the TM7-Helix 8 junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the crystal structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "a3f5b755-0eda-4276-b20e-654a0586d84e",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C59",
+      "claim": "The inverse agonist activity of ZM241385 could partly arise from its allosteric suppression of dynamics at the cytoplasmic end of TM7.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the responsiveness of sidechain dynamics to ligands in these two regions may be largely uncoupled, and that the inverse agonist activity of ZM241385 could partly arise from its allosteric suppression of dynamics at the cytoplasmic end of TM7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference drawn from the dynamics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "6f4f59b4-d00e-41cc-b71e-53416e649a16",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C60",
+      "claim": "Modifications to the MF\u03b1 signal sequence greatly increased the amount of fully-processed receptor present at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Modifications to the MF\u03b1 greatly increased the amount of fully-processed receptor present at the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Western blot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "d3af6ba6-5d7d-43a1-a537-ecc1568c4b2d",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C61",
+      "claim": "Approximately 0.5 mg of monodisperse biochemically pure wild-type A2AR in DDM detergent can be purified from 1 L of Pichia culture.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a purification protocol for A2AR from Pichia-derived membranes, in which we can solubilize and purify ~0.5 mg of monodisperse biochemically pure wild-type A2AR in dodecylmaltoside (DDM) detergent from 1 L of culture (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the purification data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "21288715-76da-4a6d-bdec-6a6beb99ba20",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C62",
+      "claim": "The perdeuterated purified A2AR reconstituted with Gs heterotrimer shows an 8-fold stimulation of [35S]GTP\u03b3S binding with saturating NECA.",
+      "claim_type": "EXPLICIT",
+      "source": "Saturating the receptor with the full agonist NECA led to an 8-fold stimulation of [35S]GTP\u03b3S binding, and the inverse agonist ZM241385 produced a 50% reduction in basal activity, similar to values measured for protonated A2AR (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the functional assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "2f310bb5-1811-416b-b6a3-caf1a82cd5d3",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C63",
+      "claim": "The peak for I923.40 appears to shift and simultaneously drop in intensity in the A2AR-Gs complex spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "In the A2AR-Gs complex spectrum (Figure 2D), the peak for I923.40 appears to shift and simultaneously drop in intensity, strongly suggesting that I923.40 is involved in conformational changes on several timescales while the receptor is bound to Gs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the NMR spectrum shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "d68085dc-d646-4ce0-b193-7d4184a70f6b",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C64",
+      "claim": "The environment surrounding I2386.40 is loosely packed in A2AR structures, with an ordered solvent network that may allow for relative freedom of motion for this sidechain.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, the environment surrounding I2386.40 is loosely packed in A2AR structures, with an ordered solvent network that may allow for relative freedom of motion for this sidechain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis and the dynamics data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "1810f85c-5b55-426a-94d2-0640d26f7370",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "claim_id": "C65",
+      "claim": "Outward movement of TM6 is one of the hallmarks of GPCR activation seen in crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Outward movement of TM6 is one of the hallmarks of GPCR activation seen in crystal structures, and the cytoplasmic ends of TM6 and TM7 are separated from each other in the structures of \u03b22AR and A2AR bound to Gs (Rasmussen et al., 2011b; Carpenter et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from crystal structures and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0512d5fb-00e8-4c5e-b9af-8bbbb7cb0ebd",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a method to express and purify highly-deuterated 1H/13C Ile \u03b41-methyl labeled wild-type A2AR in Pichia pastoris, yielding approximately 0.5 mg of monodisperse receptor per liter of culture. Modifications to the MF\u03b1 signal sequence greatly increased the amount of fully-processed receptor at the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C60, and C61 are well-supported by the methods, Western blot data (Figure 1\u2014figure supplement 1), and purification data. The authors demonstrate successful expression and purification of labeled receptor with appropriate yields for NMR studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "7e451ffa-f788-4f90-a7d7-9d318e3eeb03",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The perdeuterated A2AR is functionally active, with radioligand binding affinities (Kd for ZM241385 = 0.42 nM, Ki for NECA = 210-420 nM depending on salt) and G protein activation properties (8-fold stimulation by NECA, 50% reduction by ZM241385) comparable to protonated receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 and C62 are supported by radioligand binding data (Figure 1\u2014figure supplement 2) and GTP\u03b3S binding assays (Figure 1B). The functional characterization demonstrates that perdeuteration does not impair receptor function, validating the use of this sample for dynamics studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "326bc340-b862-420f-9775-2f0707c76ba7",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors resolved 20 out of 29 expected Ile \u03b41 peaks in 1H/13C TROSY HMQC spectra and assigned four peaks to functionally important residues (I92, I238, I274, I292) through structure-guided mutagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by NMR spectra (Figure 2) and mutagenesis data (Figure 2\u2014figure supplement 2). The assignments are validated by loss of specific peaks in mutant spectra, though the approach is limited to a subset of residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "e0eb51a5-3928-4dc9-ae5e-68c100dc9165",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Low [Na+] is required to allow large agonist-induced structural changes in A2AR. The spectrum of NECA-bound A2AR is dramatically different in KCl compared to NaCl, while the ZM241385-bound receptor spectrum is similar in both conditions. A 9-fold decrease in NECA affinity is observed in NaCl versus KCl buffer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32, C33, and C47 are supported by NMR spectra comparing NaCl and KCl conditions (Figure 3) and binding data (Figure 1\u2014figure supplement 2). The data demonstrate that Na+ acts as a negative allosteric modulator, preventing agonist-induced conformational changes. However, the KCl samples showed poor stability, limiting further analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "b85372b5-e4e3-43b9-9fc3-4db440048c20",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The chemical shifts of agonist-bound and inverse agonist-bound A2AR are similar in the presence of 150 mM NaCl, yet differences in fast timescale dynamics occur under these same conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C42 are supported by comparison of NMR spectra (Figure 2A,B) and relaxation data (Figure 6). This observation is significant as it demonstrates that ligands can modulate receptor dynamics without causing large structural changes, suggesting a decoupling of structure and dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "eef5a8cd-25e6-4a3f-a027-8bf5c23bd713",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Patterns of sidechain dynamics substantially differ between agonist (NECA) and inverse agonist (ZM241385) bound receptors. The inverse agonist suppresses fast ps-ns timescale motions, with the average \u03b7 value for ZM241385-bound receptor higher than for NECA. Among assigned residues, I292 shows the largest increase in flexibility with agonist, while I92 and I274 show modest increases, and I238 dynamics are largely unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C6, and C38-C41 are based on triple quantum relaxation experiments (Figure 6). While the trends are consistent, the authors acknowledge large errors in the measurements due to limited signal-to-noise. The modified experimental approach (using a single forbidden spectrum at 8 ms) was validated on MBP but introduces additional uncertainty. The biological interpretation is reasonable but the quantitative accuracy is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "4653258c-e8ce-4e3d-9933-a38daa9e08cc",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A modified triple quantum relaxation experiment using five allowed spectra paired with a single forbidden spectrum at 8 ms relaxation delay can faithfully recapitulate \u03b7 values measured using five pairs of forbidden and allowed experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by validation experiments on MBP (Figure 5). The modified approach was necessary due to the limited stability of A2AR samples and represents a methodological advance for studying unstable proteins. However, this validation was performed on a different protein system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "3cfbcb7e-61dd-4003-8ace-6330c704e084",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Solvent PRE experiments reveal that Ile \u03b41 methyl groups of A2AR are relatively solvent-accessible, with I274 expected to be solvent-exposed due to its location in the ligand-binding pocket, and I238 in close proximity to the Na+ site showing significant solvent accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by solvent PRE data (Figure 4). The average intensity ratio of ~0.4 indicates significant solvent accessibility. The interpretation for I274 is straightforward, but the high accessibility of I238 is more surprising and suggests structural breathing or an ordered solvent network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "b863b7a8-93ad-4fdd-99e6-156870d35825",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MD simulations show that S2axis order parameters for some methyl groups vary significantly across different time windows, suggesting slower timescale motions contribute to fast dynamics. The differences between ZM241385- and NECA-bound dynamics at three of four assigned sites (I238, I274, I292) are qualitatively similar between MD and NMR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 are supported by MD simulation data (Figure 6\u2014figure supplement 1). The qualitative agreement between MD and NMR for three of four assigned residues provides independent validation of the experimental findings. The discrepancy at I92 is noted and attributed to the absence of Na+ in the binding site in simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "8d3cbe9b-3f1c-411a-ad22-0535cf466ed2",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "I274 at the ligand binding site makes direct contact with ligands in crystal structures and shows ligand-dependent dynamics, being more rigid with inverse agonist and more flexible with agonist. This suggests that fast dynamics of residues at orthosteric pockets may correlate with ligand efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C49, and C51 are supported by structural analysis (Figure 7A) and relaxation data (Figure 6). The correlation between ligand efficacy and dynamics at the binding site is consistent with previous studies on \u03b22AR. However, C51 is somewhat speculative as it extrapolates from limited data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "3852f245-cf49-4daa-9d3a-383c3b5010a8",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "I92 is part of the conserved core triad and shows greater flexibility when A2AR is agonist-bound. While crystal structures of agonist-bound A2AR show an intermediate conformation at this site, agonist alone (even with high [Na+]) promotes fast motions of sidechains in this microswitch, potentially reducing activation energy for conformational rearrangement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are supported by structural knowledge (Figure 7B), relaxation data (Figure 6), and crystal structure comparisons. The interpretation that agonist promotes fast motions that may facilitate activation is reasonable, though C55 is somewhat speculative about the mechanistic implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "27930a87-d339-49d6-b245-11cf56c7b606",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "I238 is located near a conserved microswitch on TM6, while I292 is at the TM7-Helix 8 junction where it contacts the NPXXY motif and the Gs protein in the active structure. The inverse agonist activity of ZM241385 could partly arise from allosteric suppression of dynamics at the cytoplasmic end of TM7, as I292 shows large ligand-dependent changes while I238 dynamics are largely unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by structural analysis (Figure 7C,D), relaxation data (Figure 6), and crystal structures. The observation that I292 shows the largest ligand-dependent change while I238 is unchanged suggests regional uncoupling of dynamics. However, C59 is speculative about the mechanistic basis of inverse agonism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "b2678cd4-7106-4006-9912-2e63d6683706",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The spectrum of unliganded (apo) A2AR shows loss of most well-dispersed peaks, and the peak for I92 shifts and drops in intensity in the A2AR-Gs complex spectrum, suggesting conformational changes on multiple timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C63 are supported by NMR spectra (Figure 2C,D). The loss of peaks in apo receptor could result from instability or conformational exchange. The changes in the Gs complex are consistent with I92 involvement in activation, though the interpretation is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "0d2940f7-0168-4055-9f6c-f4aeb59eb91e",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Na+ site in A2AR is conserved throughout most Class A GPCRs and exerts a negative allosteric effect on activation by bridging residues on TM3 and TM7 and stabilizing the inactive conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 are supported by citations to structural and functional studies. This is established knowledge that provides context for the authors' findings about Na+-dependent effects on receptor dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "404ba19c-0efa-4ee4-ae26-30867a9f73a8",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "GPCRs regulate all aspects of human physiology, but there is no experimental evidence for how sidechain dynamics control allosteric transitions between GPCR conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 establish the motivation for the study. C1 is general knowledge about GPCR function. C2 represents a gap in the field that the authors address, though the claim of 'no experimental evidence' is somewhat strong given prior NMR studies on GPCRs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "b8a266ba-e97a-4588-a60a-185920f1846d",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior structural and biophysical studies have established the architecture of GPCRs, common structural changes during activation, conformational heterogeneity, and the importance of specific microswitches including the conserved core triad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C16 summarize established knowledge from prior work, supported by appropriate citations. These claims provide essential background context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "d8ba950e-3051-4f7b-8581-9e6403e0bc54",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Perdeuteration and ILV labeling conventionally rely on E. coli expression, while wild-type GPCRs typically require a eukaryotic host for proper folding and function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C18 describe a technical challenge in the field that motivates the authors' methodological approach. This is established knowledge supported by citations and general understanding of GPCR expression requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "5aeb0e9d-2b67-4bd6-8371-16f25e7f39a6",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A2AR is an important regulator of vascular function with well-developed pharmacology and has been crystallized in inactive, intermediate, and active conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C21 are supported by citations to review articles and crystal structures. These claims justify the choice of A2AR as a model system for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "965dec6b-2625-40c1-b0ed-4d07752fafab",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "MD simulations on \u03b22AR predicted greater mobility of agonists relative to inverse agonists in the orthosteric pocket of the inactive-state structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by a citation to published MD simulations. This prior work provides context for the authors' findings about ligand-dependent dynamics at the orthosteric pocket.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    },
+    {
+      "id": "77e53969-07d3-4083-ac9a-2257aa8b846e",
+      "content_id": "efdc034d-f49f-459a-9bab-77ca0f9bc923",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The environment surrounding I238 is loosely packed with an ordered solvent network that may allow freedom of motion. Outward movement of TM6 is a hallmark of GPCR activation, with TM6 and TM7 separated in active structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C65 combine structural analysis with established knowledge about GPCR activation. C64 is somewhat speculative about the implications of the loose packing, while C65 is well-established from crystal structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:55.567147Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "28cafc03-d348-4e5d-a661-39ee2e21f341",
+      "result_id": "0512d5fb-00e8-4c5e-b9af-8bbbb7cb0ebd"
+    },
+    {
+      "claim_id": "6f4f59b4-d00e-41cc-b71e-53416e649a16",
+      "result_id": "0512d5fb-00e8-4c5e-b9af-8bbbb7cb0ebd"
+    },
+    {
+      "claim_id": "d3af6ba6-5d7d-43a1-a537-ecc1568c4b2d",
+      "result_id": "0512d5fb-00e8-4c5e-b9af-8bbbb7cb0ebd"
+    },
+    {
+      "claim_id": "47bdd9f3-9229-4bbb-959c-50a331a7c044",
+      "result_id": "7e451ffa-f788-4f90-a7d7-9d318e3eeb03"
+    },
+    {
+      "claim_id": "1bf40633-1199-4737-93bd-022cc7f4facd",
+      "result_id": "7e451ffa-f788-4f90-a7d7-9d318e3eeb03"
+    },
+    {
+      "claim_id": "515a367f-933c-4efa-958a-b9bc52428ef1",
+      "result_id": "7e451ffa-f788-4f90-a7d7-9d318e3eeb03"
+    },
+    {
+      "claim_id": "cbe0e72d-50bf-4c69-b230-77fb23969c56",
+      "result_id": "7e451ffa-f788-4f90-a7d7-9d318e3eeb03"
+    },
+    {
+      "claim_id": "246704fa-329f-4cce-b8f5-62fb99539181",
+      "result_id": "7e451ffa-f788-4f90-a7d7-9d318e3eeb03"
+    },
+    {
+      "claim_id": "21288715-76da-4a6d-bdec-6a6beb99ba20",
+      "result_id": "7e451ffa-f788-4f90-a7d7-9d318e3eeb03"
+    },
+    {
+      "claim_id": "cedd057a-98a8-4739-b3ba-099a84a4e84c",
+      "result_id": "326bc340-b862-420f-9775-2f0707c76ba7"
+    },
+    {
+      "claim_id": "6e09fc53-6061-4845-ad7f-562b9335dbfd",
+      "result_id": "326bc340-b862-420f-9775-2f0707c76ba7"
+    },
+    {
+      "claim_id": "cc934868-8b14-4430-9a76-6aceb7541101",
+      "result_id": "326bc340-b862-420f-9775-2f0707c76ba7"
+    },
+    {
+      "claim_id": "73501fea-8358-4349-a7f8-a5f066405731",
+      "result_id": "e0eb51a5-3928-4dc9-ae5e-68c100dc9165"
+    },
+    {
+      "claim_id": "2d4be18b-1840-49ae-8b82-74e3a6f07c4e",
+      "result_id": "e0eb51a5-3928-4dc9-ae5e-68c100dc9165"
+    },
+    {
+      "claim_id": "d284cc4c-0cf9-4944-9df3-e4653ab89922",
+      "result_id": "e0eb51a5-3928-4dc9-ae5e-68c100dc9165"
+    },
+    {
+      "claim_id": "59a0d906-65f1-4605-85cd-c1ab553e4ee0",
+      "result_id": "e0eb51a5-3928-4dc9-ae5e-68c100dc9165"
+    },
+    {
+      "claim_id": "5d17586a-f62a-4713-a4ce-61f559060334",
+      "result_id": "b85372b5-e4e3-43b9-9fc3-4db440048c20"
+    },
+    {
+      "claim_id": "2b944a43-6d5f-4a7a-805b-1de232cf048f",
+      "result_id": "b85372b5-e4e3-43b9-9fc3-4db440048c20"
+    },
+    {
+      "claim_id": "56404119-6a6e-4e15-95d9-fa2e6f09fa6a",
+      "result_id": "eef5a8cd-25e6-4a3f-a027-8bf5c23bd713"
+    },
+    {
+      "claim_id": "80861f1c-f738-4999-bcfa-31163497ac29",
+      "result_id": "eef5a8cd-25e6-4a3f-a027-8bf5c23bd713"
+    },
+    {
+      "claim_id": "0caa22c9-8ce1-4f03-81bf-e5f02ef93742",
+      "result_id": "eef5a8cd-25e6-4a3f-a027-8bf5c23bd713"
+    },
+    {
+      "claim_id": "ac820f8a-d84a-47f0-afca-42d665afb291",
+      "result_id": "eef5a8cd-25e6-4a3f-a027-8bf5c23bd713"
+    },
+    {
+      "claim_id": "52408b27-e975-4588-ac0e-c72442522721",
+      "result_id": "eef5a8cd-25e6-4a3f-a027-8bf5c23bd713"
+    },
+    {
+      "claim_id": "5259d6b9-96c5-47dc-8d12-7fa4814e41cc",
+      "result_id": "eef5a8cd-25e6-4a3f-a027-8bf5c23bd713"
+    },
+    {
+      "claim_id": "8229f0c3-a8f1-4a01-9362-3c2a326aedd0",
+      "result_id": "4653258c-e8ce-4e3d-9933-a38daa9e08cc"
+    },
+    {
+      "claim_id": "f9af21c5-8615-4e92-a158-2e0a8f598db1",
+      "result_id": "3cfbcb7e-61dd-4003-8ace-6330c704e084"
+    },
+    {
+      "claim_id": "2e8788d6-ae84-4a4f-8de2-7c9512ff9586",
+      "result_id": "3cfbcb7e-61dd-4003-8ace-6330c704e084"
+    },
+    {
+      "claim_id": "09c869cc-045c-401d-9245-0317d47c1a80",
+      "result_id": "3cfbcb7e-61dd-4003-8ace-6330c704e084"
+    },
+    {
+      "claim_id": "5837bdfd-5664-4b50-9389-7584b2318577",
+      "result_id": "b863b7a8-93ad-4fdd-99e6-156870d35825"
+    },
+    {
+      "claim_id": "73865dd3-704c-4e91-b46c-00cfd84aeab8",
+      "result_id": "b863b7a8-93ad-4fdd-99e6-156870d35825"
+    },
+    {
+      "claim_id": "25f28f5a-11e2-4f0f-838b-0370307306b1",
+      "result_id": "8d3cbe9b-3f1c-411a-ad22-0535cf466ed2"
+    },
+    {
+      "claim_id": "a7a2db1f-62d6-4286-bc37-c625441d72f4",
+      "result_id": "8d3cbe9b-3f1c-411a-ad22-0535cf466ed2"
+    },
+    {
+      "claim_id": "4558c4b0-facf-4b59-bb3f-7abdbde391e2",
+      "result_id": "8d3cbe9b-3f1c-411a-ad22-0535cf466ed2"
+    },
+    {
+      "claim_id": "4e1253e1-ee39-43f5-88e1-1e121b448a18",
+      "result_id": "3852f245-cf49-4daa-9d3a-383c3b5010a8"
+    },
+    {
+      "claim_id": "34da3bd4-90e9-4de8-8831-8c5dd98e0916",
+      "result_id": "3852f245-cf49-4daa-9d3a-383c3b5010a8"
+    },
+    {
+      "claim_id": "45a687c4-c86c-47c0-8582-e882171509a7",
+      "result_id": "3852f245-cf49-4daa-9d3a-383c3b5010a8"
+    },
+    {
+      "claim_id": "207ceff6-518e-4caf-9b15-5c48812bb33a",
+      "result_id": "3852f245-cf49-4daa-9d3a-383c3b5010a8"
+    },
+    {
+      "claim_id": "74840ff2-ef83-48db-bcf0-294e1b3d27e5",
+      "result_id": "27930a87-d339-49d6-b245-11cf56c7b606"
+    },
+    {
+      "claim_id": "ac8bd444-2e20-4bcb-b8a3-63350b442584",
+      "result_id": "27930a87-d339-49d6-b245-11cf56c7b606"
+    },
+    {
+      "claim_id": "cc8b7b3f-09e8-47a3-8f3d-7df28b9b1718",
+      "result_id": "27930a87-d339-49d6-b245-11cf56c7b606"
+    },
+    {
+      "claim_id": "a3f5b755-0eda-4276-b20e-654a0586d84e",
+      "result_id": "27930a87-d339-49d6-b245-11cf56c7b606"
+    },
+    {
+      "claim_id": "f179f0d4-8d39-4bd5-8a57-4b7617e7a467",
+      "result_id": "b2678cd4-7106-4006-9912-2e63d6683706"
+    },
+    {
+      "claim_id": "2f310bb5-1811-416b-b6a3-caf1a82cd5d3",
+      "result_id": "b2678cd4-7106-4006-9912-2e63d6683706"
+    },
+    {
+      "claim_id": "4211075a-059f-4ca4-871a-d0674f9fccec",
+      "result_id": "0d2940f7-0168-4055-9f6c-f4aeb59eb91e"
+    },
+    {
+      "claim_id": "19576d53-be44-40a5-a6de-66e3e5bbda2c",
+      "result_id": "0d2940f7-0168-4055-9f6c-f4aeb59eb91e"
+    },
+    {
+      "claim_id": "a16460de-9ffc-4390-8b1c-0635401784e0",
+      "result_id": "404ba19c-0efa-4ee4-ae26-30867a9f73a8"
+    },
+    {
+      "claim_id": "c541f2a7-9fc9-4c8d-a062-94a09775d47a",
+      "result_id": "404ba19c-0efa-4ee4-ae26-30867a9f73a8"
+    },
+    {
+      "claim_id": "f6f054d7-135f-4d17-9e70-ae35e82ced9d",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "0e353716-cc19-4b2d-ac60-5d1ab1eb5d81",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "0107f267-f79a-4907-9d0a-385ffe0fc921",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "2edc4b71-c2ee-45d6-a3c9-bb9e0622f2d0",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "e97c9536-9a22-4f55-af0a-2bdd267e6e0c",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "d11eeae7-8efc-42ff-89a9-9b53416824df",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "5aac61bf-3f64-43b9-9b76-92980211c39c",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "830e3044-d196-42ce-9cb1-1097be1a6da1",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "b7f33c1c-a82f-496a-8a17-d683f68562f8",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "f0b1493e-6234-417f-ab11-3f331d02d50c",
+      "result_id": "b8a266ba-e97a-4588-a60a-185920f1846d"
+    },
+    {
+      "claim_id": "0d14a740-397e-4ab1-b985-c492b6dfd8c9",
+      "result_id": "d8ba950e-3051-4f7b-8581-9e6403e0bc54"
+    },
+    {
+      "claim_id": "75fa78fb-e208-497e-9187-46ef7e2e39ae",
+      "result_id": "d8ba950e-3051-4f7b-8581-9e6403e0bc54"
+    },
+    {
+      "claim_id": "6a4382b4-f2cc-4839-8d24-53dd7c3618e4",
+      "result_id": "5aeb0e9d-2b67-4bd6-8371-16f25e7f39a6"
+    },
+    {
+      "claim_id": "8d643d5f-6265-438c-ac8c-98aa27e96327",
+      "result_id": "5aeb0e9d-2b67-4bd6-8371-16f25e7f39a6"
+    },
+    {
+      "claim_id": "7b1c3ab0-6728-41e4-9b05-b5de4dd1e535",
+      "result_id": "965dec6b-2625-40c1-b0ed-4d07752fafab"
+    },
+    {
+      "claim_id": "d68085dc-d646-4ce0-b193-7d4184a70f6b",
+      "result_id": "77e53969-07d3-4083-ac9a-2257aa8b846e"
+    },
+    {
+      "claim_id": "1810f85c-5b55-426a-94d2-0640d26f7370",
+      "result_id": "77e53969-07d3-4083-ac9a-2257aa8b846e"
+    }
+  ],
+  "comparisons": []
+}

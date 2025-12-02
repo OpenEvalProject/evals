@@ -1,0 +1,503 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "LARP4 mRNA contains a translation-dependent coding region determinant (CRD) spanning codons 287-358 (<10% of the ORF) that limits expression. The CRD is more destabilizing when in the coding sequence versus the 3'UTR, and synonymous codon substitutions or frameshift mutations reverse its inhibitory effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C37-C42 are well-supported by deletion/truncation experiments (Figure 1e-g), reporter assays showing position-dependent effects (Figure 1h-j), and frameshift rescue experiments (Figure 1k). The data consistently demonstrate that codons 287-358 constitute a functional CRD that is translation-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The LARP4 CRD is recognized as inhibitory when transferred to the heterologous LARP4B mRNA, decreasing LARP4B expression by 2.5-3.5 fold, with synonymous codon substitutions rescuing this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by experiments showing the WT CRD decreases LARP4B levels (Figure 2b-c) and CS CRD rescues this effect. This demonstrates the CRD functions as a portable instability element, though the effect is attenuated in the higher-expressing LARP4B context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The LARP4 CRD remains a significant instability element even in the context of LARP4's native 4.2 kb 3'UTR, which contains TNF\u03b1/TTP-responsive elements. The WT CRD causes a 5-fold decrease in mRNA levels relative to CS CRD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by data in Figures 2d-f showing the CRD effect persists with the long 3'UTR, though somewhat attenuated compared to the short UTR. This demonstrates the CRD is a dominant instability element even in the presence of other regulatory sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cellular tRNA levels were determined by tRNA-HydroSeq in HEK293 cells, and synonymous CRD substitutions in full-length LARP4 constructs showed excellent correlation (R\u00b2=0.886) with cellular tRNA levels and codon-anticodon dynamics (ctAI scores), spanning a >20-fold expression range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are strongly supported by tRNA sequencing data (Table 1), multiple CS construct expression analyses (Figures 3a-c), and quantitative correlation analysis (Figure 3c). The high R\u00b2 value and >20-fold expression range provide robust evidence for tRNA-codon matching as a determinant of LARP4 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The LARP4 CRD is highly enriched in codons cognate to low-abundance tRNAs (42% decoded by bin-1 tRNAs comprising only 5.4% of total tRNA) and biased toward weak wobble codons (Asn AAU, Phe UUU, Tyr UAU). Strengthening these wobble positions by U-to-C substitutions increases LARP4 expression 5-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 are well-supported by codon composition analysis (Figure 3d, Table 1) showing enrichment of bin-1 cognate codons and bias in weak wobble codons, with functional validation through CS construct experiments (Figure 3c) demonstrating that wobble codon optimization significantly increases expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Overexpression of tRNAThrUGU (the most limiting tRNA) increases LARP4 and GFP protein levels in a dose-dependent manner, with LARP4-WT showing the greatest response (up to 6-fold increase). This effect is specific to tRNAThrUGU and not observed with other low-abundance tRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 are supported by tRNA overexpression experiments (Figures 3e-h) showing specific, dose-dependent increases in LARP4 and GFP with tRNAThrUGU but not other tRNAs. The differential response among CS constructs (Figure 3h) supports the interpretation that WT LARP4 is programmed to be sensitive to limiting tRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "tRNAThrUGU overexpression increases LARP4-WT protein without increasing its mRNA levels, suggesting enhanced translational efficiency. In contrast, more codon-optimized constructs (CS-B, CS-I) show dose-dependent mRNA stabilization by tRNAThrUGU, suggesting the CRD contains complex signals controlling both translation and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by data in Figures 3g-j showing differential effects of tRNAThrUGU on protein versus mRNA levels for different constructs. The observation that WT protein increases without mRNA increase while CS-B mRNA increases is well-documented, though the mechanistic interpretation (C87) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Elevated LARP4 levels produce dose-dependent upward mobility shifts in GFP and Rpl32 mRNAs. RNase H + oligo(dT) treatment demonstrates these mobility differences are due to poly(A) tail (PAT) length differences, with GFP showing more complete shift than Rpl32.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 are well-supported by northern blot data (Figures 3i, 4a) showing LARP4-dependent mRNA mobility shifts and RNase H experiments confirming PAT length as the cause. The differential effects on GFP versus Rpl32 are documented and reasonably interpreted as reflecting pre-existing shortened Rpl32 forms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C112"
+    ],
+    "result": "LARP4's PAT lengthening activity requires both its PABP-interaction domains (PAM2 and PBM) and intact La module. Deletion of PBM reduces activity more than deletion of PAM2, and the M3 LaM-RRM mutant abolishes activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101, C112 are supported by systematic mutant analysis (Figure 4b) showing graded effects of domain deletions on GFP mRNA mobility shift. The data clearly demonstrate that both PABP-interaction domains and the La module are required for full activity, with PBM contributing more than PAM2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "LARP4 substantially increases \u03b2G-TNF\u03b1-ARE mRNA stability in a dose-dependent manner. LARP4-CS extends the half-life ~1.5-fold relative to LARP4-WT, with LARP4-CS showing ~65% mRNA remaining at 240 min versus ~50% decay at 70 min with empty vector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 are supported by mRNA decay time course experiments (Figures 4c-d) showing LARP4-dependent stabilization of \u03b2G-TNF\u03b1-ARE mRNA. The quantitative differences between LARP4-WT and -CS are documented, and the maintenance of longer PAT forms is observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "In HEK293 cells, full-length LARP4 WT and CS progressively increase \u03b2G-TNF\u03b1-ARE mRNA accumulation. \u0394PAM2 shows higher activity than \u0394PBM, and M3 LaM-RRM mutants show reduced activity. The cumulative data suggest LARP4 binds poly(A) and PABP to protect mRNA from deadenylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 are supported by steady-state mRNA accumulation experiments (Figure 4f) with various LARP4 mutants. The data consistently show domain-dependent effects on mRNA levels, supporting the proposed mechanism of PAT protection from deadenylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "tRNAThrUGU overexpression leads to upward shift and increased levels of \u03b2G-TNF\u03b1-ARE mRNA specifically with LARP4-WT but not the M3 LaM-RRM mutant. This validates LARP4's ability to promote PAT length and mRNA stabilization in response to elevated limiting tRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 are supported by experiments (Figures 5a-c) showing tRNAThrUGU specifically enhances LARP4-WT activity for \u03b2G-TNF\u03b1-ARE mRNA but not the LaM-RRM mutant. This demonstrates that LARP4 activity can be controlled by tRNA availability and requires an intact La module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Polysome profiling reveals that LARP4-CS-Tyr mRNA is more densely occupied by ribosomes than LARP4-WT (66% vs 57% in heavy fractions), suggesting synonymous codon substitutions increase both mRNA levels and translational efficacy. tRNAThrUGU shifts both constructs toward heavier polysomes, with GFP showing the most dramatic shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C130 are supported by polysome sedimentation experiments (Figures 6a-i) showing differential distribution of WT versus CS-Tyr mRNAs and tRNAThrUGU-dependent shifts. The interpretation that CS-Tyr has higher translational efficacy is reasonable based on the polysome distribution data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "LARP4 knockout MEFs show shorter PAT lengths for Rps28 and Rpl32 mRNAs compared to WT MEFs, as demonstrated by faster electrophoretic mobility that is eliminated by oligo(dT)-directed cleavage. Actinomycin-D time courses reveal greater PAT shortening and faster decay of RPmRNAs in KO versus WT MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 are well-supported by northern blot analyses of LARP4 KO versus WT MEFs (Figures 7b-g) showing mobility differences attributable to PAT length and faster RPmRNA decay in KO cells. The RNase H control (Figure 7c) confirms PAT length as the cause of mobility differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "LARP4 shows highest binding avidity for A15 with 3'-OH, with progressively less binding to 3'-PO4, 2'-O-CH3, and U15 3'-OH. LARP4 is sensitive to the penultimate A at position -2 (A12AUA) significantly more than at -3 (A12UAA), demonstrating 3' end-specific recognition similar to La protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by systematic EMSA experiments (Figures 8a-e) testing various RNA modifications and sequences. The data clearly demonstrate 3'-OH dependence and penultimate nucleotide sensitivity, consistent with a mechanism of 3' end protection from deadenylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "LARP1 produces mobility shifts in both \u03b2G-TNF\u03b1-ARE and GFP mRNAs comparable to LARP4, with RNase H + oligo(dT) demonstrating these shifts result from net increases in 3' PAT length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 are supported by northern blot experiments (Figures 9a-b) showing LARP1-mediated mRNA mobility shifts that are eliminated by oligo(dT)-directed cleavage. This demonstrates LARP1 also has PAT lengthening activity similar to LARP4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C198"
+    ],
+    "result": "LARP4 is a posttranscriptional regulator of ribosomal protein production in mammalian cells, functioning as a constitutive positive factor in RPmRNA homeostasis. This activity can be controlled by tRNA levels, contrasting with LARP1's role as a central negative regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C198 represent the main conclusions of the work and are supported by the cumulative evidence showing LARP4 effects on RPmRNA PAT length and stability (Figure 7), tRNA-dependent regulation (Figures 3, 5), and comparison with LARP1 (Figure 9). The interpretation is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Among LARPs tested in HEK293 cells, LARP4 accumulated to much lower protein and mRNA levels than other LARPs, with LARP4 mRNA ~100-fold and ~50-fold lower than LARP6 and LARP4B respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by western and northern blot data (Figures 1b-d) showing LARP4 as the lowest expressing construct. The quantification provides clear evidence for the differential expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The LARP4 CRD is a potent modular element of instability that functions via codon-specific match to cellular tRNA levels. Despite comprising only 10% of the ORF, it is a major determinant of mRNA stability, suggesting codon control may reside in distinct regions of higher eukaryotic mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 represent discussion/interpretation of the experimental findings. They are well-supported by the cumulative data showing CRD transferability (Figure 2), codon-tRNA correlations (Figure 3c), and unusual codon composition (Figure 3d, Table 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "All tRNAs for Thr, Pro, and Ile codons are in bin-1 (lowest abundance), limiting the effect of synonymous swaps among these codons. However, wobble decoding of weak codons is a significant determinant of suboptimality, as demonstrated by U-to-C wobble position substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 are supported by tRNA abundance data (Table 1) and functional analysis of CS constructs (Figure 3c). The observation that CSc (13 substitutions among bin-1 codons) shows limited improvement while wobble optimization shows large effects validates this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Overexpression of tRNAThrUGU (the lowest abundance tRNA) increases LARP4 and GFP production from transfected plasmids, accompanied by shifts to heavier polysome fractions. This is a specific effect not observed with other low-abundance tRNAs. The codon-optimized GFP contains 14 ACC codons requiring wobble decoding by tRNAThrUGU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 are supported by tRNA overexpression (Figures 3e-h) and polysome profiling (Figures 6b-i) experiments. The specificity is demonstrated by negative results with other tRNAs, and the GFP codon composition provides mechanistic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Although LARP4-WT mRNA accumulates ~12-fold lower than CS-Tyr, the surviving WT mRNA shows only modestly lower translational efficiency based on polysome distributions. The data are consistent with a quality control mechanism that degrades suboptimal codon-containing mRNA. In vitro translation shows comparable translation through WT and CS-Tyr CRDs, suggesting the mechanism may be coupled to transcription or nuclear events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164-C171 represent mechanistic speculation about quality control. While the polysome data (Figure 6) and in vitro translation results (Figure 6-supplement 1) are presented, the interpretation of a quality control mechanism remains speculative. The in vitro results suggest complexity but don't definitively establish the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "LARP4 exhibits 3' end sensitivity to poly(A) RNA similar to La protein's RNA binding pocket, despite differences in sequence specificity and RNA length requirements. The molecular and structural bases remain unknown. The proposed model suggests LARP4's La module binds poly(A) while PAM2 and PBM bind PABP, with PAM2 competing with deadenylases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C178 combine established findings (C173 supported by Figure 8) with acknowledged unknowns (C175) and proposed models (C177-C178). The 3' end binding data are solid, but the mechanistic model remains speculative pending structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "LARP4 mediates PAT length maintenance primarily for highly abundant RPmRNAs, though activity extends to other mRNAs including \u03b2G-TNF\u03b1-ARE. LARP4 differs from other mRNA stabilizing proteins by binding directly to poly(A) and targeting abundant mRNAs with short 3'UTRs, functioning as a general factor for PAT length maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C185 represent summary and interpretation of the findings. They are well-supported by the MEF data (Figure 7), reporter assays (Figures 4-5), and comparison with other RNA-binding proteins. The characterization of LARP4 as a general PAT maintenance factor is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "LARP4B and LARP1 also exhibit mRNA PAT lengthening activity, while La protein and LARPs 6 and 7 do not. LARP1 is a regulator of ribosome biogenesis and pro-cancer protein. LARP4B and LARP1 contain PAM2 motifs and PABP-binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C191 are supported by experimental data for LARP4B and LARP1 (Figures 4a, 9) and negative results for other LARPs. The characterization of LARP1 and domain information are supported by citations to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "LARP1 regulates RPmRNA translation via its DM15 domain binding to 5'TOP motifs, but also stabilizes RPmRNAs potentially via 3' PAT binding. LARP1 stabilizes and lengthens PATs of non-TOP mRNAs (\u03b2G-TNF\u03b1-ARE, GFP), suggesting PAT-mediated stability may be a separate activity that can be uncoupled from translation repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C197 combine established LARP1 functions (C192-C194 from literature) with new findings (C195 from Figure 9) and interpretation (C196-C197). The data showing LARP1 activity on non-TOP mRNAs support the interpretation of separable activities, though this remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C199",
+      "C200"
+    ],
+    "result": "tRNA availability might control or tune LARP4 activity levels, potentially representing signaling of tRNA availability to ribosome biogenesis since this could impact RPmRNA translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C200 represent speculative conclusions based on the demonstrated tRNA-dependent regulation of LARP4 (Figures 3, 5). While the data clearly show tRNA can control LARP4 levels and activity, the broader implications for ribosome biogenesis signaling remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C52",
+      "C53",
+      "C54",
+      "C64",
+      "C131",
+      "C141",
+      "C142",
+      "C143",
+      "C150",
+      "C162",
+      "C163",
+      "C186",
+      "C188"
+    ],
+    "result": "Background knowledge claims about PAT function, PABP interactions, LARP family proteins, coding region determinants, tRNA gene copy numbers, and prior characterizations of LARP1 and other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C33, C52-C54, C64, C131, C141-C143, C150, C162-C163, C186, C188 represent background knowledge supported by citations to prior literature. These provide context for the current work and are appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

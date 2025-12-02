@@ -1,0 +1,1286 @@
+{
+  "submission": {
+    "id": "f3275274-0393-4293-8f46-3e01be25a729",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:10:17.831939Z",
+    "updated_at": "2025-12-02T01:10:17.831939Z"
+  },
+  "content": [
+    {
+      "id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "submission_id": "f3275274-0393-4293-8f46-3e01be25a729",
+      "content_type": "manuscript",
+      "content_text": "# Phylogenetic divergence of cell biological features\n\n## Authors\n\n- Michael Lynch<sup>1</sup> ([ORCID: 0000-0002-1653-0642](https://orcid.org/0000-0002-1653-0642)) \u2020\n\n### Affiliations\n\n1. Center for Mechanisms of Evolution, Biodesign Institute Arizona State University Tempe Arizona\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost cellular features have a range of states, but understanding the mechanisms responsible for interspecific divergence is a challenge for evolutionary cell biology. Models are developed for the distribution of mean phenotypes likely to evolve under the joint forces of mutation and genetic drift in the face of constant selection pressures. Mean phenotypes will deviate from optimal states to a degree depending on the effective population size, potentially leading to substantial divergence in the absence of diversifying selection. The steady-state distribution for the mean can even be bimodal, with one domain being largely driven by selection and the other by mutation pressure, leading to the illusion of phenotypic shifts being induced by movement among alternative adaptive domains. These results raise questions as to whether lineage-specific selective pressures are necessary to account for interspecific divergence, providing a possible platform for the establishment of null models for the evolution of cell-biological traits.\n\n## Introduction\n\nAs with nearly all biological traits, most cellular features vary among individuals within populations in a nearly continuous fashion, owing to genetic differences among individuals and the myriad of stochastic factors experienced by all organisms (ranging from intrinsic cellular noise to external environmental forces; Lynch and Walsh, 1998). This is true, for example, for catalytic rates, rates of gene expression and intracellular transport, numbers and sizes of organelles, etc. Ultimately, some\u00a0fraction of within-species genetic variation is transformed into among-species divergence as alternative alleles arise by mutation and in some cases proceed to fixation (Wright, 1969; Walsh and Lynch, 2018). The magnitude of such divergence is dictated by three major evolutionary factors: the pattern of selection (the phenotypic fitness function), which imposes a directional and/or stabilizing force on the mean phenotype; the rate of origin and distribution of mutational effects, which define the raw materials upon which natural selection operates; and the power of random genetic drift, which imposes noise on the selective process.\n\nAlthough considerable effort has been devoted to understanding the divergence of mean phenotypes among lineages (Walsh and Lynch, 2018), most of this work is focused on the evolution of morphological phenotypes in response to external pressures, which can vary greatly depending on the ecological setting. In contrast, owing to homeostatic effects, the internal environment of cells remains largely constant over long time scales and broad geographic locations, raising the possibility of establishing general evolutionary principles that transcend the imposition of transient ecological changes. (The same might be true for the internal organs of multicellular species).\n\nThe goal here is to derive general expressions for the divergence of mean phenotypes among species under scenarios that are likely to hold for a wide variety of cellular traits. The specific focus will be on the magnitude of divergence expected among lineages in the face of identical evolutionary forces, as this helps clarify the degree to which phenotypic diversification can proceed in the absence of lineage-specific selection pressures. Such a perspective is essential to establishing the degree to which\u00a0adaptive explanations need to be sought to explain patterns of variation among populations.\n\nThe general approach will draw from well-established constructs employed in the field of quantitative genetics (the study of continuously distributed traits with a multifactorial genetic basis; Lynch and Walsh, 1998; Walsh and Lynch, 2018). The traditional focus of this field has been on complex traits in multicellular species, but these same methods can be profitably applied to intracellular morphological and molecular features, such as those involved in the cytoskeleton, gene expression, binding energy, and metabolic rates (Nourmohammad et al., 2013; Farhadifar et al., 2015; Phillips and Bowerman, 2015). Indeed, although most work in phenotypic evolution proceeds as though cellular details are irrelevant, the models employed may be equally if not more relevant to cell-biological traits, owing to their potentially less temporally variable fitness effects.\n\n## Theory\n\n### The distribution of mean phenotypes\n\nAll genetically encoded traits are subject to the recurrent forces of mutation and random genetic drift, and potentially to selection. Selection favors some genotypes over others, while mutation modifies existing genotypes independent of the selective process, and random genetic drift causes stochastic variation in gene transmission across generations. Owing to this latter factor, even if the forces of selection and mutation remain constant, the population mean phenotype of a trait will wander within a certain range over evolutionary time, with the frequency of occurrence of alternative mean phenotypes depending on patterns and strengths of selective and mutational effects\u00a0(Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34820/elife-34820-fig1-v1.jpg)\n\n**Figure 1.:** The upper panel denotes a hypothetical phenotype distribution at a single point in\u00a0time. The population consists of multiple genotypes, each having an expected genotypic value (red) but a range of phenotypes (black distributions) resulting from variance in residual deviations (environmental effects and nonadditive genetic factors). The\u00a0phenotype distribution for the entire population (red) is the sum of these genotype-specific curves, and has a mean denoted by the blue line. The exact location of this overall distribution can wander over time, owing to the joint forces of selection, mutation, and random genetic drift. The lower panel gives the overall distribution of population means over a long evolutionary time span, with 11 locations at specific points of time being denoted by the short vertical lines. Persistent mutational bias\u00a0towards smaller phenotypes prevents the overall distribution of means from coinciding with the fitness-function optimum, and random genetic drift causes a dispersion of means around the overall average value.\n\nThe focus of this study, the stationary distribution of mean phenotypes, can be viewed as a summary distribution of: (1) phenotypic means across a large number of replicate populations exposed to identical conditions for a very long period; or (2) a historical survey of mean phenotypes in a single population over a long time period, again under constant environmental and population-genetic conditions. Among many other applications, such an approach has long been exploited in attempts to understand the steady-state distribution of allele frequencies expected under a constant regime of selection, mutation, and random genetic drift (e.g. Wright, 1969). From an empirical perspective, this steady-state view of evolution implicitly assumes that enough time has elapsed between observed taxa that the dynamics of the evolutionary process are of negligible significance (which would not be the case for closely related species).\n\nThe approach taken here relies on the Kolmogorov forward equation for a diffusion process (Appendix 1, Walsh and Lynch, 2018), the assumption being that the trait of interest is continuously distributed, with $z$ denoting the phenotypic value of an individual. The population mean, $z\u00af,$ moves in arbitrarily small increments each generation via the deterministic forces of selection and mutation and the stochastic process of drift. Under most reasonable biological conditions, independent of the starting conditions, a stationary distribution of mean phenotypes (among hypothetical replicate populations) is eventually converged upon, at which point there is an exact balance between opposing forces. The probability that a population\u2019s mean phenotype will reside at any particular point is defined by this distribution, which has the general form\n\n$$\n\u03a6(z\u00af)=C\u22c5exp\u2061(2\\int^{z\u00af}[M(x)/V(x)]dx),\n$$\n\nwhere $M(x)$ defines the rate of directional change (resulting from selection and/or mutation) for a population with mean phenotype $x$, and $V(x)$ is the variance in change (resulting from drift). $C$ is the normalization constant (containing only terms that are independent of $z\u00af$) that ensures that the entire probability density sums to 1.0.\n\nFor a quantitative trait, the directional term can be subdivided into independent selection and mutation components, $M_{s}(x)$ and $M_{m}(x)$, both of which will be discussed in detail below. Under the assumption of negligible genotype $\\times$ environment interaction and epistasis, the variance of the change in means, which results from the sampling of heritable genotypic values of individuals, is equal to the underlying additive genetic variance for the trait, $\\sigma_{A}^{2},$ divided by the effective population size, $N_{e}$, in the case of haploidy (assumed here; and $2N_{e}$ in the case of diploidy). The latter is typically far below the number of reproductive individuals in the population, and defined by various demographic features and interference imposed by chromosomal linkage, with values ranging between $\u223c10^{5}$ for multicellular eukaryotes to $\u223c10^{9}$ for bacteria (Charlesworth, 2009; Lynch et al., 2016; Walsh and Lynch, 2018).\n\nIndividual phenotypes are comprised of the sum of a heritable additive genetic component ($A$) and a nonheritable residual deviation ($e$, which includes environmental and nonadditive genetic effects), such that $z=A+e,$ with the within-population phenotypic variance being partitioned as $\\sigma_{z}^{2}=\\sigma_{A}^{2}+\\sigma_{e}^{2}.$ For cellular features, a large fraction of $\\sigma_{e}^{2}$ may be a consequence of stochastic gene expression, imprecise placement of cell-division septa, etc. Assuming\u00a0that both $\\sigma_{A}^{2}$ and $N_{e}$ remain constant, which is the model adhered to here, Equation (1a) can be rewritten as\n\n$$\n\u03a6(z\u00af)=C\u22c5exp((2N_{e}/\\sigma_{A}^{2})\\int^{z\u00af}[M_{s}(x)+M_{m}(x)]dx),\n$$\n\nshowing that the stationary distribution of mean phenotypes (conditional on a particular level of genetic variance, a point that will be returned to below) is proportional to the product of the distributions expected under selection alone and under mutation alone. With extremely weak selection, $M_{s}(x)$ would be essentially a flat function, with the overall distribution reflecting the biases due to mutation alone. Conversely, with a flat mutation function, an unlikely scenario, the distribution will follow that expected under selection alone.\n\n### The process of selection\n\nThe influence of selection on the mean phenotype (the response to selection) is embodied in the breeder\u2019s equation,\n\n$$\nM_{s}(z\u00af)=z\u00af(t+1)\u2212z\u00af(t)=h^{2}[\u00a0z\u00af_{s}(t)\u2212z\u00af(t)\u00a0],\n$$\n\na general statement about the connection between directional selection within generations and the transmission of such change across generations (Walsh and Lynch, 2018). Here, $z\u00af(t)$ and $z\u00af_{s}(t)$ denote the mean phenotypes before and\u00a0after selection in generation $t$, the difference being the selection differential. The heritability of the trait, $h^{2}=\\sigma_{A}^{2}/\\sigma_{z}^{2}$, which equals the proportion of the total phenotypic variance, $\\sigma_{z}^{2}$, associated with additive genetic variation, $\\sigma_{A}^{2},$ constitutes the fraction of the within-generation change in the mean transmitted to the next generation.\n\nCritical to everything that follows, the selection differential can be described in terms of the within-population phenotype distribution, $p(z,t)$, and the function relating individual fitness to phenotype, $W(z)$. The mean fitness in generation $t$ is\n\n$$\nW\u00af=\\intp(z,t)\u22c5W(z)\u22c5dz.\n$$\n\nThe mean phenotype after selection (but before inheritance) is then obtained by weighting the pre-selection phenotypes by their relative fitnesses,\n\n$$\nz\u00af_{s}(t)=\\frac{1}{W\u00af}\\intz\u22c5p(z,t)\u22c5W(z)\u22c5dz.\n$$\n\nWe will make use of the fact that most quantitative traits have an approximately normal phenotype distribution on some scale of measurement, which follows from the central limit theorem (Lynch and Walsh, 1998). The distribution of individual measures is therefore described completely by the phenotypic mean and variance,\n\n$$\np(z,t)=\\frac{1}{\\sqrt{2\\pi\\sigma_{z}^{2}}}\u22c5exp\u2061(\\frac{\u2212[\u00a0z\u2212z\u00af(t)\u00a0]^{2}}{2\\sigma_{z}^{2}}).\n$$\n\nSubstituting Equation (5) into (3) and differentiating, the change in mean fitness with respect to mean phenotype is\n\n$$\n\\frac{\u2202W\u00af}{\u2202z\u00af(t)}=\\int\\frac{\u2202p(z,t)}{\u2202z\u00af(t)}\u22c5W(z)\u22c5dz=\\frac{1}{\\sigma_{z}^{2}}\\int[\u00a0z\u2212z\u00af(t)\u00a0]\u22c5p(z,t)\u22c5W(z)\u22c5dz\n$$\n\n(Lande, 1976). From Equation (4), the first term to the right of the integral is equal to $z\u00af_{s}(t)\u22c5W\u00af$, and the second term is $z\u00af(t)\u22c5W\u00af$. This provides a direct link to Equation (2), which upon rearrangement becomes\n\n$$\nM_{s}(z\u00af)=\\sigma_{A}^{2}\u22c5\\frac{\u2202W\u00af}{W\u00af\u22c5\u2202z\u00af(t)}.\n$$\n\nThis expression states that, provided the phenotype distribution is normal, the change in mean phenotype caused by selection is equal to the product of the genetic variance for the trait and the gradient in the logarithm of mean fitness with respect to mean phenotype. Evolution by natural selection comes to a standstill when there is no genetic variance for the trait or the phenotypic mean resides at a point where the slope of the function of mean fitness with respect to mean phenotype is zero. To endow this expression with practical utility, specific expressions for the fitness function, $W(z),$ will be considered below.\n\n### The process of mutation\n\nMost attempts to consider the long-term evolutionary features of quantitative traits have assumed one of two mutation models: (1) a distribution of mutational effects always having a mean equal to zero and a constant variance, independent of the starting genotype (Kimura, 1965; Lande, 1975; Lynch and Hill, 1986); or (2) a rate of appearance of each type of mutant allele being independent of the ancestral type (Cockerham, 1984; Turelli, 1984). Under the first scenario, mutation has no directional effect\u00a0on the mean phenotype, and there are no bounds on the possible mutational effects or the physical limits to which the trait can evolve. Under the second scenario, there is a physical limit to phenotypic divergence, and because the directional effect of mutations depends on the current location, more extreme alleles generate mutations with effects biased back toward the center of the distribution.\n\nNeither of these mutational schemes captures the features of a wide variety of cell biological traits, which often have finite numbers of possible states and state-dependent spectra of mutational effects. A few examples will suffice to make this point. Protein-protein interactions (e.g. the interfaces between dimeric molecules) typically depend on no more than a few dozen amino-acid sites. The same is true for intramolecular interactions such as the constellation of backbone residues that assemble during\u00a0protein folding. In both cases, the underlying residues operate in an approximately binary manner, for\u00a0example, hydrophobic vs. hydrophilic, or hydrogen-bonding vs. non-hydrogen bonding. Likewise, the catalytic sites of enzymes often consist of a small-to-moderate numbers of residues that either facilitate or inhibit catalytic rates, and the sizes of intracellular organelles and cytoskeletal components are constrained by cell size. Many other examples could be cited, including those involved in RNA-RNA and DNA-protein interactions.\n\nThe approximate structure of a mutation function with a bounded range can be arrived at by considering a trait determined by $n$ binary factors (or sites), each with state b having effect 0, and state B having effect $m$. For a trait with an additive genetic basis, the mean phenotype in a haploid population can then be represented as\n\n$$\nz\u00af=z_{0}+nmq\u00af,\n$$\n\nwhere $z_{0}$ is an arbitrary baseline value for the trait, and $q\u00af$ is the mean frequency of B-type alleles averaged over all $n$ factors in the population (Lynch and Walsh, 1998).\n\nLetting $u$ be the mutation rate from B to b alleles, and $v$ be the reciprocal rate, the per-generation change in the mean phenotype resulting from mutation is\n\n$$\nM_{m}(z\u00af)=nm[v(1\u2212q\u00af)\u2212uq\u00af].\n$$\n\nWith $q^=v/(u+v)$ being the equilibrium frequency of B alleles under mutation pressure alone, and $\\theta_{m}=z_{0}+nmq^$ being the expected mean phenotype under neutrality, Equation (9) further reduces to\n\n$$\nM_{m}(z\u00af)=\u2212(u+v)(z\u00af\u2212\\theta_{m}).\n$$\n\nThis expression is quite general in that $(z\u00af\u2212\\theta_{m})$ is simply the distance of the mean phenotype from that expected under mutation equilibrium, and $(u+v)$ is a measure of the mutational restoring force per locus. The essential feature of Equation (10) is that mutation acts to reduce the distance between the mean phenotype and $\\theta_{m}$ to a degree that depends on the magnitude of this deviation. Charlesworth (2013) implemented a similar mutation model in an investigation of genomic\u00a0features.\n\n### The stationary distribution of mean phenotypes\n\nApplication of Equations (7) and (10) to (1b) yields a useful simplification of the stationary distribution that will be adhered to below,\n\n$$\n\u03a6(z\u00af)=C\u22c5[\u00a0W\u00af(z\u00af)\u00a0]^{2N_{e}}\u22c5exp\u2061(\\frac{\u2212(z\u00af\u2212\\theta_{m})^{2}}{2\\sigma_{N}^{2}}),\n$$\n\nwith $\\sigma_{N}^{2}=\\sigma_{A}^{2}/[2N_{e}(u+v)]$. As will be discussed below, under neutrality, the genetic variance $\\sigma_{A}^{2}$ often scales directly with $N_{e}$, and population size would have no influence on the distribution in this limiting case, as $\\sigma_{N}^{2}$ would be independent of $N_{e}$. More generally, $\\sigma_{A}^{2}$ is also a function of the intensity of selection, but the bulk of the steady-state distribution will be represented by mean phenotypes that are in the range of effective neutrality with respect to each other, so the scaling relationship of $\\sigma_{A}^{2}$ under neutrality is expected to be a reasonable first-order approximation.\n\nEquation (11) shows that, provided the genetic variance remains roughly constant, the stationary distribution is equal to the product of the expectation under neutrality (where mutation and drift are the only operable evolutionary forces) and the mean fitness function exponentiated by $2N_{e},$\u00a0that\u00a0is, the stationary distribution is equivalent to a transformation of the neutral expectation by a function of the fitness landscape. Thus, to obtain the overall distribution in the following applications, we require an expression for mean population fitness in terms of the trait mean.\n\nIn what follows, insight into the approximate magnitude of $\\sigma_{N}^{2}$ will be useful. This can be achieved by noting that $2N_{e}(u+v)$ will have values of the order of magnitude of $4N_{e}\\mu$, where $\\mu$ is the mutation rate per nucleotide site. This composite parameter is equivalent to the amount of standing heterozygosity at neutral nucleotide sites in natural populations under mutation-drift equilibrium, and generally ranges from 0.001 to 0.1, with the lower and higher ends of the range being typical in vertebrates and microbes, respectively (Lynch, 2007). Thus, because heritabilities ($\\sigma_{A}^{2}/\\sigma_{z}^{2}$) of traits are typically on the order of 0.1 to 0.5 (Lynch and Walsh, 1998), $\\sigma_{N}^{2}$ is expected to be in the range of $1\\times$ to $100\\times$ the average within-population phenotypic variance for the trait.\n\n#### Selection for an intermediate optimum\n\nA commonly assumed form of selection, probably relevant to many cellular features, is the Gaussian (bell-shaped) fitness function with an intermediate optimum phenotype, $\\theta_{s}$, and a width, $\\omega$, determining the strength of selection around the optimum,\n\n$$\nW(z)=exp(\u2212\\frac{(\u00a0z\u2212\\theta_{s}\u00a0)^{2}}{2\\omega^{2}}).\n$$\n\nApplication of this expression to Equations (3) and (4) leads to the expression for mean population fitness, which when applied to Equation (7) yields the expression for $M_{s}(z\u00af)$ necessary for obtaining the stationary distribution (Table 1).\u00a0The latter expression shows that the change in the mean phenotype resulting from selection is directly proportional to the deviation of the current mean phenotype from the optimum and inversely proportional to the sum of the squared width of the fitness function and the total phenotypic variance (Lande, 1976). As will be seen repeatedly below, phenotypic variance (an inevitable consequence of external environmental and internal cellular effects) generally reduces the efficiency of selection by diminishing\u00a0the correspondence between genotype and phenotype. If the mean phenotype were to evolve to the optimum, $z\u00af=\\theta_{s}$, which is highly unlikely with biased mutation pressure, selection would be purely stabilizing in nature, operating only to reduce the variation around the mean.\n\n**Table 1.**\n Formulae for mean population fitness, $W\u00af(z\u00af)$, and the rate of change of the mean phenotype resulting from selection, $M_{s}(z\u00af)$, obtained from Equations (4) and (6), respectively.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>W\u00af(z\u00af)</th>\n      <th>Ms(z\u00af)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gaussian</td>\n      <td>\u03c92\u03c92\u00a0+\u00a0\u03c3z2\u22c5exp(\u2212(\u00a0z\u00af\u2212\u03b8s\u00a0)22(\u03c92\u00a0+\u00a0\u03c3z2))</td>\n      <td>\u2212\u03c3A2(z\u00af\u2212\u03b8s)\u03c92\u00a0+\u00a0\u03c3z2</td>\n    </tr>\n    <tr>\n      <td>Hyperbolic</td>\n      <td>1\u2212\u03b1\u00a0exp{\u2212\u03b2[\u00a0z\u00af\u2212(\u03b2\u03c3z2/2)\u00a0]}</td>\n      <td>\u03c3A2\u03b1\u03b2exp{\u03b2[\u00a0z\u00af\u2212(\u03b2\u03c3z2/2)\u00a0]}\u2212\u03b1</td>\n    </tr>\n    <tr>\n      <td>Sigmoid</td>\n      <td>11\u00a0+\u00a0exp[\u00a0\u2212(\u03b2/\u03b3)(z\u00af\u2212z\u2217)\u00a0]</td>\n      <td>\u03c3A2(\u03b2/\u03b3)1\u00a0+\u00a0exp[\u00a0(\u03b2/\u03b3)(z\u00af\u2212z\u2217)\u00a0]</td>\n    </tr>\n  </tbody>\n</table>\n\nWith both the selection and mutation terms in Equation (11) being Gaussian functions, the product is also Gaussian (Lande, 1976), in this case leading to a stationary distribution of mean phenotypes\n\n$$\n\u03a6(z\u00af)=\\sqrt{\\frac{1}{2\\pi\\sigma^{2}(z\u00af)}}\u22c5exp(\u2212\\frac{[z\u00af\u2212\\mu(z\u00af)]^{2}}{2\\sigma^{2}(z\u00af)}),\n$$\n\nwith overall mean\n\n$$\n\\mu(z\u00af)=\\frac{(\\theta_{s}/\\sigma_{S}^{2})+(\\theta_{m}/\\sigma_{N}^{2})}{(1/\\sigma_{S}^{2})+(1/\\sigma_{N}^{2})}=\\frac{\u03ba\\theta_{s}+\\theta_{m}}{\u03ba+1},\n$$\n\nand variance\n\n$$\n\\sigma^{2}(z\u00af)=\\frac{1}{(1/\\sigma_{S}^{2})+(1/\\sigma_{N}^{2})}=\\frac{\\sigma_{N}^{2}}{\u03ba+1},\n$$\n\nwhere $\u03ba=\\sigma_{N}^{2}/\\sigma_{S}^{2},$ with $\\sigma_{S}^{2}=(\\omega^{2}+\\sigma_{z}^{2})/(2N_{e})$ and $\\sigma_{N}^{2}$ (as defined as above) being the variances of the contributions associated with selection and mutation.\n\nEquation (13b) states that the grand mean is equal to a weighted average of the expectations under mutation and selection alone (each component being weighted by the inverse of the variance of the function). Equation (13c) states that the variance of means is equal to half the harmonic mean of the variances associated with selection and mutation alone. As $\\sigma_{S}^{2}\u2192\u221e,$ which implies a flatter fitness function and hence an approach toward neutrality, the mean and variance converge on\u00a0the expectations for a purely mutationally driven process, $\\theta_{m}$ and $\\sigma_{N}^{2}$. As $\\sigma_{N}^{2}\u2192\u221e,$ which implies a weakening influence of mutation on the overall distribution, the mean and variance converge on the expectations for a purely selection-driven process, $\\theta_{s}$ and $\\sigma_{S}^{2}$.\n\nAs can be seen from Equations (13b, c), a key determinant of the form of the stationary distribution of means is the composite parameter $\u03ba=\\sigma_{A}^{2}/[2(u+v)(\\omega^{2}+\\sigma_{z}^{2})],$ which the following observations suggest is generally $\u226b1.$ First, the width of the fitness function $\\omega$ can be expected to be generally greater than the phenotypic standard deviation $\\sigma_{z}$, else the selective load on the trait would be enormous, and this is indeed generally observed (Walsh and Lynch, 2018). Given the range of heritability estimates noted above, this implies that the ratio $\\sigma_{A}^{2}/(\\omega^{2}+\\sigma_{z}^{2})$ is unlikely to be greater than 0.1 under strong selection, and can become one to two orders of magnitude smaller than\u00a00.1 under weak selection. Second, mutation rates at the single nucleotide level are typically in the range of $10^{\u221211}$ to $10^{\u22128}$, with the former being approached in microbes and the latter in large multicellular species (Lynch et al., 2016). Thus, keeping in mind that individual targets of mutation may comprise more than single nucleotide sites, $1/[2(u+v)]$ is still likely to be in the range of $10^{7}$ to $10^{10}$. Together, these results suggest a likely range for $\u03ba$ of $10^{4}$ to $10^{9},$ which simplifies Equations (13b, c) to\n\n$$\n\\mu(z\u00af)\u2243\\theta_{s}+(\\theta_{m}/\u03ba)\n$$\n\n\n\n$$\n\\sigma^{2}(z\u00af)\u2243\\sigma_{N}^{2}/\u03ba=\\sigma_{S}^{2}.\n$$\n\nWith these parameter values in mind, Figure 2 shows that the form of the stationary distribution varies dramatically with the value of $\\sigma_{N}^{2}/\u03ba=\\sigma_{S}^{2}$, becoming extremely narrow and extremely flat at opposite ends of the spectrum for this key composite parameter. The degree to which $\\theta_{m}$ deviates from $\\theta_{s}$ for cellular features is unknown, but there is no reason to expect them to be equal. If they differ greatly, $\\mu(z\u00af)$ can substantially deviate from the optimum to a degree that depends on the weighting factor $\u03ba$ (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34820/elife-34820-fig2-v1.jpg)\n\n**Figure 2.:** Stationary distributions of mean phenotypes, with optimum phenotype $\\theta_{s}=0$ and $\u03ba=10^{4}.$Results are given for three different values of $\\theta_{m}$ for the condition in which $\\sigma_{N}^{2}/\u03ba=10^{\u22128}$ (colored curves), and four different values of $\\sigma_{S}^{2}$ for the case in which the mutational mean coincides with the optimum (black curves).\u00a0The parametric values used in these plots assume a scale on which the phenotypic standard deviation is 1.0, so a mean phenotype of $\\pm0.001$ is equivalent to a shift of 0.1% phenotypic standard deviations from the optimum.\n\n#### Hyperbolic fitness function\n\nMany cellular features are likely to be primarily under continuous selection for an extreme optimum, but with diminishing strength of selection as the optimum is approached. For example, many enzymes are likely to be selected for as high a catalytic rate as possible, protein structures for as high folding rates and stability as possible, binding interfaces with as high affinities as possible, etc. One way of representing this type of selection involves the hyperbolic function,\n\n$$\nW(z)=1\u2212\\alpha\u00a0exp(\u2212\\betaz),\n$$\n\nwhere the constants $0\\leq\\alpha\\leq1$ and $\\beta\\geq0$, respectively, define the amplitude and rapidity of the fitness response to increasing $z$. Fitness is equal to $1\u2212\\alpha$ when $z=0$, and asymptotically approaches one as $z\u2192\u221e.$\n\nExpressions for the mean population fitness and the change in the mean resulting from selection, obtained by the procedures noted above, are provided in Table 1, and substitution of the former into Equation (11) yields the stationary distribution of mean phenotypes. Because of the asymmetry of this fitness function, the resultant distribution is no longer perfectly Gaussian, but setting $\\partial\u03a6(z\u00af)/\\partialz\u00af=0$ yields an expression for the single mode of the distribution, $z^$\n\n$$\n(z^\u2212\\theta_{m}){exp[\u00a0\\beta\u00a0z^\u00a0]\u2212\u03d5}=2N_{e}\\beta\\sigma_{N}^{2}\u03d5,\n$$\n\nwith $\u03d5=\\alpha\u00a0exp(\\beta^{2}\\sigma_{z}^{2}/2)$. Despite the monotonic increase in fitness with $z$, the distribution of mean phenotypes is prevented from progressive increase by the counteraction of mutation and the diffusive action of drift. Because\u00a0selection is always in the positive direction, the expected mode always exceeds the neutral expectation $\\theta_{m}$, to a degree that increases with the effective population size. Equation (16a) is readily solved numerically, but provided $\\betaz^<1$, in the limit of large $N_{e}$,\n\n$$\nz^\u2243\\theta_{m}+\\sqrt{2N_{e}\u03d5\\sigma_{N}^{2}}.\n$$\n\nAlthough the hyperbolic fitness function generates a slightly asymmetric distribution of means (with tail to the right), the bulk of the distribution is approximately normal, and an excellent approximation to the variance can be obtained from the curvature of the stationary distribution around the mode (using the negative of the inverse of the second derivative of the stationary distribution),\n\n$$\n\\sigma^{2}(z\u00af)\u2243\\frac{1}{[\u00a02N_{e}\\beta^{2}\u03d5exp(\\betaz^)/(exp(\\betaz^)\u2212\u03d5)^{2}\u00a0]+(1/\\sigma_{N}^{2})}\n$$\n\nAs in the case of the Gaussian fitness function, Equation (13c), the two terms in the denominator are respectively the inverses of the variances expected under the limits of strong selection and neutrality.\n\nAn example of the influence of population size on the stationary distribution is given in Figure 3, where there is a strong mutational bias away from the optimum. The distributions progressively move to the right with an increase in $N_{e}$, with the mean phenotype increasing five-fold over a three order-of-magnitude range of $N_{e}$. As can be seen from Equation (16b), equal changes in either $N_{e}$ or the neutral variance $\\sigma_{N}^{2}$ have identical effects on the mean, although effects on the variance are opposite in direction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34820/elife-34820-fig3-v1.jpg)\n\n**Figure 3.:** Stationary distributions of mean phenotypes with a hyperbolic fitness function, Equation (14) with $\\alpha=1$ and $\\beta=0.03$ and denoted by the dashed line.Black distributions denote results for various effective population sizes ($N_{e}=10^{3}$ to $10^{6}$), with phenotypic variance $\\sigma_{z}^{2}=1$, mutational variance $\\sigma_{N}^{2}=1,$ and the mean phenotype under neutrality (distribution given by the dotted line) $\\theta_{m}=10.$ Blue and red distributions denote the effects of altering $\\theta_{m}$ and $\\sigma_{N}^{2}.$\n\n#### Sigmoid fitness function\n\nFinally, we consider a variant of the fitness function just noted. With the previous fitness function, Equation (15), the selection gradient progressively declines with increasing phenotypic value over the full range of $z$, with increasing $z$ resulting in an asymptotic approach to maximum fitness. With a sigmoid fitness function, sometimes called a mesa function (Gerland and Hwa, 2002; Berg et al., 2004), there is an inflection point such that the fitness landscape becomes progressively flatter at both higher and lower values. This means that adjacent variants become increasingly similar in fitness (i.e. more neutral with respect to each other) at both extremes of the phenotype distribution.\n\nThe sigmoid fitness function for individual phenotypes can be described as\n\n$$\nW(z)=\\frac{1}{1+exp[\u2212\\beta(z\u2212z^{\u2217})]},\n$$\n\nwhere $z^{\u2217}$ denotes the inflection point at which $W(z)=0.5$. This function is closely approximated by\n\n$$\nW(z)=\\frac{1}{2}[1+erf(\\frac{\\sqrt{\\pi}\\beta(z\u2212z^{\u2217})}{4})],\n$$\n\nwhere erf is the error function (the cumulative standard normal distribution), which facilitates integration with Equation (4). The resultant expression for mean population fitness is also sigmoid, but with phenotypic variance reducing the strength of selection from $\\beta$ to $\\beta/\\gamma$, where $\\gamma=\\sqrt{1+(\\beta^{2}\\sigma_{z}^{2}\\pi/8)}$ (Table 1).\n\nAs in the case of the hyperbolic fitness function, the mesa function does not yield a perfectly Gaussian distribution of mean phenotypes, but an expression for the mode ($z^$) can be acquired using the methods noted above,\n\n$$\n(z^\u2212\\theta_{m}){exp[\u00a0(\\beta/\\gamma)(z^\u2212z^{\u2217})\u00a0]+1}=2N_{e}(\\beta/\\gamma)\\sigma_{N}^{2},\n$$\n\nwhich again has a single solution, indicating a unimodal stationary distribution. If $\\betaz^/\\gamma<1$, in the limit of large $N_{e}$,\n\n$$\nz^\u2243\\theta_{m}+\\sqrt{2N_{e}\\sigma_{N}^{2}exp(\\betaz^{\u2217}/\\gamma)},\n$$\n\nwhich has a form similar to the expression noted with the hyperbolic fitness function. From the form of these equations, it can again be seen that there are several equivalent effects of the underlying parameters. For example, a doubling of $N_{e}$ has the same effect as a doubling of $\\sigma_{N}^{2}$ on the mode, and a doubling of $\\beta$ the same effect as a reduction in $\\gamma$ by 50%. Although more complicated, the expected variance in means under the sigmoid model is similar in form to that noted above for the Gaussian and hyperbolic fitness functions,\n\n$$\n\\sigma^{2}(z\u00af)\u2243\\frac{1}{{\u00a02N_{e}(\\beta/\\gamma)^{2}exp[\u00a0\u2212(\\beta/\\gamma)(z\u00af\u2212z^{\u2217})\u00a0]/(1+exp[\u00a0\u2212(\\beta/\\gamma)(z\u00af\u2212z^{\u2217})\u00a0])^{2}\u00a0}+(1/\\sigma_{N}^{2})}\n$$\n\n## Discussion\n\nThe preceding models are meant to provide heuristic guidance into the evolutionary mechanisms responsible for the dispersion of mean phenotypes of a diversity of subcellular and molecular features. Although such traits may sometimes be under selection for an intermediate optimum, selection may often operate in a continuous directional fashion. In either case, there are two reasons why mean phenotypes are unlikely to commonly achieve states that endow a population with maximum fitness. First, if mutation bias conflicts with the directional effects of selection, the optimum phenotype will not coincide with the mean phenotype. Second, even in the absence of mutation bias and regardless of the form of the fitness function, a drift barrier exists beyond which the gradient of the selection function is not steep enough to overcome the vagaries of genetic drift, thereby preventing further adaptive progress. Within the confines of the drift barrier, the mean phenotype will wander to a degree that depends\u00a0on the strength of local patterns of mutation and selection.\n\nThese points have implications for the degree to which the \u2018adaptive paradigm\u2019 should be embraced as an explanatory framework for diversification at the cellular level. For example, with mutation bias encouraging the mean phenotype to deviate from the optimum, the result will be a population under persistent directional selection despite the existence of an attainable (but not sustainable) phenotype with maximum fitness. Even without mutation pressure and in the face of intrinsic directional selection, for\u00a0example, a hyperbolic or mesa fitness function, the most common mean phenotype will not be equivalent to the optimum phenotype, and the drift barrier will ensure variation in mean phenotypes among populations exposed to identical selection pressures.\n\nAn attempt has been made to couch the stationary forms of mean-phenotype distributions in terms of underlying parameters that are at least in principle observable empirically. Consider, for example, the model for stabilizing selection for a specific optimum. From Equation (14a), the expected deviation of the mean phenotype from the optimum resulting from mutation bias is $\\theta_{m}/\u03ba,$ which expands to $\\theta_{m}[\u20092(u+v)(\\omega^{2}+\\sigma_{z}^{2})/\\sigma_{A}^{2}\u2009],$ a somewhat complex function that may not be immediately transparent. However, a wide variety of models suggest that $\\sigma_{A}^{2}$ scales directly with $N_{e}\\mu$ provided selection is weak (B\u00fcrger et al., 1989; Zeng and Cockerham, 1993; Charlesworth, 2013), and because $u$ and $v$ (the forward and reverse mutation rates) are both proportional to $\\mu$ (the total mutation rate per site), this implies that the average deviation of the mean from the optimum scales as $\\theta_{m}(\\omega^{2}+\\sigma_{z}^{2})/N_{e},$ or approximately as $\\theta_{m}\\omega^{2}/N_{e}$ assuming weak selection. Thus, the deviations of phenotypic means from the selective optimum are expected to be inversely proportional to $N_{e}$, a point also made by Charlesworth (2013) in a somewhat different analysis. Note, however, that this is only the expected pattern, as the mean phenotype is still expected to drift above and below the expectation to a degree depending on the effective strength of selection. As noted in Equation (14b), and previously pointed out by Lande (1975) and\u00a0Lande (1976), the magnitude of this drift variance is also inversely proportional to $N_{e}$, which implies that the standard deviation with respect to the expected mean scales as $\u223c1/\\sqrt{N_{e}}.$\n\nOf course, $\\theta_{m}$ (the mean phenotype expected under neutrality) may differ among lineages and the within-population genetic variance $\\sigma_{A}^{2}$ is sensitive to the strength of selection, in which case the power to detect such relationships may be challenging. In addition, the linear scaling of $\\sigma_{A}^{2}$ with $N_{e}$ is unlikely to continue indefinitely, unless $N_{e}$ in natural populations rarely attains levels where all constituent loci are saturated with segregating mutations. The\u00a0salient issue is that the preceding expressions provide qualitative insight into the behavior of mean phenotypes in alternative population-genetic environments, while also revealing the types of measurements that need to be made if we are to understand such behavior. For example, we know essentially nothing about the key mutational ($\\theta_{m}$) and selection ($\\omega^{2}$) parameters for cell biological features and how these might vary among species. This is not a trivial issue, as the influence of both parameters in determining the most likely locations of mean phenotypes are just as central as the role played by $N_{e}$.\n\nApplying the same logic to results for plateaued fitness functions leads to the prediction that the expected mode of mean phenotypes will scale fairly strongly with the effective population size, in the limit approaching proportionality to $\\sqrt{N_{e}},$\u00a0that\u00a0is, a 10-fold increase in the mean phenotype with a 100-fold increase in $N_{e}.$ As shown in Figure 3, a simple change in the mutational variance $\\sigma_{M}^{2}$ (with no associated change in mutational bias) can also cause a substantial shift in the position of the mean phenotype. These sorts of observations raise the significant possibility that species with substantially different population-genetic environments may commonly exhibit measurable differences in trait means despite experiencing identical forms of directional selection, again raising challenging issues for those who wish to interpret phenotypic differences as reflections of different underlying processes of selection.\n\nAlthough the data are not extensive, several lines of evidence support the idea that the mean phenotypes of cellular attributes are indeed modulated by the power of random genetic drift. The most compelling example derives from observations on the mutation rate (per nucleotide site per generation), which scales approximately inversely with the 1000-fold range of variation in $N_{e}$ across the Tree of Life (Lynch et al., 2016). Such a scaling is qualitatively consistent with the drift-barrier hypothesis for mutation-rate evolution (Lynch, 2010; Lynch, 2011), which postulates that because most mutations are deleterious, selection will typically operate to improve replication fidelity, with refinements in molecular performance eventually being thwarted by random genetic drift \u2013 as the mutation rate is progressively lowered, there is less room for improvement and hence a narrower range of selectively advantageous replication-fidelity variants accessible by selection.\n\nEnzyme efficiency provides a second broad category of traits with evolutionary behavior seemingly in accordance with the theory outline above. For example, Bar-Even et al. (2011) have found that enzymes involved in secondary metabolism are on average $\u223c30\\times$ less efficient than those involved in central metabolism, suggesting that selection operates less effectively on enzymes further removed from core energetic determinants. More directly relevant to the points made above, Bar-Even et al. (2011) also found that prokaryotic enzymes have slightly better kinetics than those from eukaryotes, as expected for species with higher effective population sizes and consistent with the prediction that improvement of enzyme efficiencies will stall once the gradient of the fitness surface is on the order of $1/N_{e}$ (Hartl et al., 1985). The fact that bacteria utilize transcription-factor binding-site motifs with stronger affinity to their cognate transcription factors than is the case in eukaryotes is also\u00a0plausibly related to a higher efficiency of selection in the former (Lynch and Hagner, 2015).\n\nFinally, proteins typically evolve to the \u2018margin of stability,\u2019 such that only one or two mutations are usually enough to destabilize the folding process (Taverna and Goldstein, 2002; Tokuriki and Tawfik, 2009). Protein stability is deemed to be positively associated with fitness because destabilized proteins are prone to loss of function, aggregation, and/or direct toxicity. Strikingly, however, it is relatively easy to obtain more stable proteins by mutagenesis (Matsuura et al., 1999; Bershtein et al., 2013; Sullivan et al., 2012), with the contributing residues typically interacting in an additive fashion (Wells, 1990; Serrano et al., 1993; Zhang et al., 1995). Moreover, although it is commonly argued that marginal stability is required for proper protein function, with excess stability somehow reducing protein performance, this has not held up to close scrutiny. Many examples exist in which increased stability has been achieved in laboratory modifications of proteins with few if any consequences for enzyme efficiency (e.g. Giver et al., 1998; Zhang et al., 1995; Taverna and Goldstein, 2002; Borgo and Havranek, 2012; Moon et al., 2014).\n\nThese observations suggest that despite persistent selection for high folding stability, the plateau-like nature of the fitness landscape results in diminishing fitness advantages of increasing stability. A hyperbolic relationship between fitness and the binding energy involving protein stability follows from biophysical principles (Govindarajan and Goldstein, 1997; Taverna and Goldstein, 2002; Bloom et al., 2005; Zeldovich and Shakhnovich, 2008; Wylie and Shakhnovich, 2011; Serohijos and Shakhnovich, 2014), and under this model, proteins are expected to be pushed by natural selection to more stable configurations until reaching the point where any further fitness improvement is small enough to be offset by the vagaries of random genetic drift and/or mutation pressure towards less stable states. Notably, proteins of equivalent length fold at least ten times more rapidly in bacteria than in eukaryotes (Galzitskaya et al., 2011). Moreover, an in vitro evaluation of the folding stability of the dihydrofolate reductase enzyme from 36 species of mesophilic bacteria illustrates the existence of a substantial range of variation among species, with the standard deviation being roughly 10% of the mean (Bershtein et al., 2015). In principle, such a distribution may reflect the dispersion in mean phenotypes associated with drift around the drift barrier.\n\nAlthough the mutation function employed here likely comes closer to approximating the situation for cellular features than do previous functions relied on in quantitative genetics, in reality we do not know the exact form of this function for any cellular\u00a0feature. Thus, the mathematical theory developed here is best viewed as a guide to approaching the problem at hand rather than as an indelible platform for quantitative analysis. Despite such uncertainties, however, the central feature of the theory presented above is that, regardless of the form of the underlying mutation and selection functions, the stationary distribution of mean phenotypes can generally be viewed as the product of the pattern expected under neutrality alone and the associated function for mean population fitness taken to the $2N_{e}$ power, as described by Equations (1a,b) and (11). Similar behavior was previously pointed out for the stationary distribution of allele frequencies (Wright, 1969). Thus, once the key underlying functions\u00a0have been elucidated, the precise details of the theory can be readily modified with alternative mathematical functions.\n\nFinally, a key issue that is not formally evaluated here, but is arguably relevant to a number of cellular features, concerns the matter of peak shifts across the stationary distribution. Questions regarding this matter are typically inspired by Wright\u2019s (1932) metaphor of an adaptive topography, with multiple fitness peaks and valleys of various depths over the phenotypic landscape. However, unless the distribution of mutational effects is completely flat, the relevant topography is not simply defined by\u00a0the fitness landscape but by the joint action of both selection and mutation. Although the stationary distribution was unimodal in all of the cases examined above, plausible cases exist in which the stationary distribution exhibits two peaks, one largely\u00a0driven by selection and the other by mutation pressure. For this to occur, the gradient of mutation pressure in one direction has to be of a form such that its product with the selection gradient has an internal minimum (Figure 4). In principle, this can\u00a0happen when at the intersection of intermediate phenotypes the two functions are sufficiently upwardly concave that their product reaches a local minimum.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34820/elife-34820-fig4-v1.jpg)\n\n**Figure 4.:** Most of the time, a population will reside in one domain or the other, wandering over a range of phenotype space to the left or the right of the valley, but occasionally a transition will be made across the valley impelled by a stochastic series of drift and mutational events. Populations crossing the valley to the right are pulled by selection pressure, whereas those crossing to the left are pulled by the multiplicity of mutational opportunities.\n\nUnder such a scenario, the population mean phenotype is expected to reside in two alternative semi-stable domains for extended periods of time, with the rates of transitions between domains depending on the relative heights of the two peaks, the depth of the distributional valley, and the curvatures of the stationary distribution at the inflection points (Lande, 1985; Barton and Rouhani, 1987). Over long evolutionary time periods, such a system will exhibit detailed balance \u2013 the net fluxes will be equal in both directions, with the ratio of the occupancy of the two alternative domains being inversely related to the ratio of the transition rates between them, that\u00a0is, with the less frequent domain having a\u00a0higher conditional rate of transition to the more frequent domain.\n\nAlthough the frequency of stationary distributions with multimodal forms is unknown, they have been predicted to arise in some situations involving transcription (Lynch and Hagner, 2015; Tu\u011frul et al., 2015). Should they exist, the picture from comparative analyses would be one of qualitative changes in mean phenotypes in adjacent lineages. Tempting as it might be to invoke shifting ecological pressures to explain such patterns, they would be occurring in the absence of any underlying changes in selection, being a simple consequence of the multiplicity of mutational opportunities in one direction balanced by selective pressures in the other. Such ideas may be helpful in attempts to decipher the substantial and seemingly disorganized diversity of certain\u00a0cellular features such as open vs. closed mitosis (Sazer et al., 2014), the structure of the centrosome (Carvalho-Santos et al., 2011), and the variable multimeric states of proteins (Dayhoff et al., 2010; Lynch, 2013; Ahnert et al., 2015) across the Tree of Life.\n",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "e256ab2e-cbe3-4900-b994-1c61df0e2b9e",
+      "submission_id": "f3275274-0393-4293-8f46-3e01be25a729",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34820.010](https://doi.org/10.7554/eLife.34820.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Phylogenetic Divergence of Cell Biological Features\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen Naama Barkai as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal his identity: Joe Felsenstein (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nPlease address all comments below most of which can be addressed with suitable changes in the text. Others require a response which the reviewers will consider in rendering a final determination.\n\nReviewer #1:\n\nI reviewed this manuscript with a PhD student from my laboratory.\n\nWhether cellular traits are at the optimal configuration allowed by biophysical constraints in any organism is unknown. As was shown in population genetics, genetic drift could play an important role in preventing traits from reaching this optimum. However, biased mutation pressures could also contribute to drive average phenotypes away from their optimum. The extent of this effect is unknown. This paper addresses the evolution of cellular traits, particularly the relative contribution of natural selection, mutation and genetic drift on their evolution and divergence among populations or species.\n\nLynch develops a theoretical framework to identify the conditions in which phenotypes can be driven away from optima by biased mutational pressure. He also introduces different fitness functions that likely apply to cellular traits and shows how these fitness functions interact with various mutational effects to affect the expected stationary trait distribution.\n\nThe paper is well written and the findings are important because, among other things, they stimulate new avenues of investigation in cell biology. The presentation however could limit the accessibility of the manuscript to the broad audience of eLife.\n\nIt would be useful in the Introduction to mention why cellular traits require a special treatment and approach, and why they cannot just be considered as other quantitative traits. The author mentions that since they evolve in a relatively stable environment due to homeostasis, cellular traits could be under relatively uniform selective pressure, even among distinct lineages. However, wouldn't that be true for internal organs also in multicellular species? Also, homeostasis is the result of these cellular traits interacting with the environment, so it cannot be considered as an independent factor. Maybe cellular traits are just a special case of slowly evolving traits?\n\nThe first paragraph of the Introduction appears to be reporting observations that are commonly known for evolutionary biologists. However, eLife not being specialized in evolution, it could be useful to cite some general references for these statements. The second paragraph of the subsection \u201cThe Process of Mutation\u201d could also be supported by more references, same thing for the Discussion. Along the same line, the readership of eLife would appreciate some graphical and simplified representations of the processes described with equations, some sort of graphical summary of the paper.\n\nThe Introduction mentions examples of cellular traits. It could be useful to mention them earlier to introduce what cellular traits are.\n\nThe paragraph above Equation 1B: does this partition of the variance of z implicitly assumes that the parental average (A) does not covary with the deviation from additivity (e)? It would be clearer to briefly state this assumption. Some stochastic effects in cell biology could be noise factors that are correlated positively or negatively with the average effects.\n\nFinally, I do not have the skills required to fully verify the validity of the different derivations and mathematical assumptions presented. I assume another reviewer will have done so.\n\nReviewer #2:\n\nThis is a very interesting and important paper. Where a lot of us have been deterred from thinking hard about this by the worry that characters at the molecular level might involve too few genes to be successfully modeled by the machinery of evolutionary quantitative genetics, Lynch has plunged in and obtained some very interesting results.\n\nI have several substantive questions, and then a bunch of suggestions for clarity. 1) \u201cdistributions expected under selection along and under mutation alone\u201d are invoked. The latter I can see. But the former is not obvious. I get the impression from the equations that this is the distribution that would result under selection-versus-drift when the additive genetic variance is held constant at \u03c3 2 A. So there is some kind of assumption that, in the case of \u201cselection alone\u201d, selection does not erode the additive genetic variance.\n\n2) \u201cevolution by natural selection comes to a standstill where.\u2026 the phenotypic mean resides at the point where the slope of the fitness function is zero.\u201d I wonder whether that is true. I recall that if the fitness function (curve of fitness as a function of phenotype) is a mixture of two Gaussian peaks, one smaller than the other, where the phenotypic mean will come to a standstill depends on the slope, not of that fitness curve, but of the fitness curve where each component is fattened by the additive genetic variance. That can be quite different. Or do I misunderstand what is being said here?\n\n3) The mathematics here uses compound parameters which determine the final equilibrium distribution. However should it not be noted that these do determine the time dynamics in a population. If one is looking at a phylogeny of species, rather than species that have diverged long enough that each is in its equilibrium distribution, one does need the parameters that determine the time dynamics. This should at least be mentioned, as multispecies data tend to come to us at the tips of phylogenies.\n",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a1e8c5ab-7f5c-4b9c-9cd3-bbfc0d83dbaa",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C1",
+      "claim": "Most cellular features have a range of states.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cellular features have a range of states, but understanding the mechanisms responsible for interspecific divergence is a challenge for evolutionary cell biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cellular features presented in the abstract without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "cf44e81c-b2b2-447c-9a46-bbb12aaea48f",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C2",
+      "claim": "Mean phenotypes will deviate from optimal states to a degree depending on the effective population size.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean phenotypes will deviate from optimal states to a degree depending on the effective population size, potentially leading to substantial divergence in the absence of diversifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the mathematical models developed in the manuscript, particularly Equations (13b) and (14a).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "35db6136-2dd4-4c4a-8d84-cb1b0ed4bf27",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C3",
+      "claim": "The steady-state distribution for the mean can be bimodal, with one domain being largely driven by selection and the other by mutation pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The steady-state distribution for the mean can even be bimodal, with one domain being largely driven by selection and the other by mutation pressure, leading to the illusion of phenotypic shifts being induced by movement among alternative adaptive domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated theoretically in the manuscript and illustrated in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "a2875ec5-5188-4450-a5a8-1656d06d43f1",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C4",
+      "claim": "Most cellular features vary among individuals within populations in a nearly continuous fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "As with nearly all biological traits, most cellular features vary among individuals within populations in a nearly continuous fashion, owing to genetic differences among individuals and the myriad of stochastic factors experienced by all organisms (ranging from intrinsic cellular noise to external environmental forces; Lynch and Walsh, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lynch and Walsh, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "2784c22b-f494-4e6b-8427-9eb37c169135",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C5",
+      "claim": "Catalytic rates, rates of gene expression and intracellular transport, and numbers and sizes of organelles vary continuously within species.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true, for example, for catalytic rates, rates of gene expression and intracellular transport, numbers and sizes of organelles, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as examples of continuous variation in cellular features.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "22377131-a002-416b-9ca4-c04a7933d705",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C6",
+      "claim": "Some fraction of within-species genetic variation is transformed into among-species divergence as alternative alleles arise by mutation and proceed to fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, some fraction of within-species genetic variation is transformed into among-species divergence as alternative alleles arise by mutation and in some cases proceed to fixation (Wright, 1969; Walsh and Lynch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wright, 1969 and Walsh and Lynch, 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "bbf1bdcd-c82d-475a-ac86-b8aee3078e16",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C7",
+      "claim": "The magnitude of phenotypic divergence is dictated by three major evolutionary factors: the pattern of selection, the rate of origin and distribution of mutational effects, and the power of random genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of such divergence is dictated by three major evolutionary factors: the pattern of selection (the phenotypic fitness function), which imposes a directional and/or stabilizing force on the mean phenotype; the rate of origin and distribution of mutational effects, which define the raw materials upon which natural selection operates; and the power of random genetic drift, which imposes noise on the selective process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework statement based on established evolutionary theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "43eb1045-a33e-4137-903c-041c99cf464f",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C8",
+      "claim": "The internal environment of cells remains largely constant over long time scales and broad geographic locations due to homeostatic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, owing to homeostatic effects, the internal environment of cells remains largely constant over long time scales and broad geographic locations, raising the possibility of establishing general evolutionary principles that transcend the imposition of transient ecological changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a general biological principle about cellular homeostasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "f9fe7c41-82ee-471b-b44f-3d2b6a55c650",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C10",
+      "claim": "The stationary distribution of mean phenotypes is proportional to the product of the distributions expected under selection alone and under mutation alone.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that the stationary distribution of mean phenotypes (conditional on a particular level of genetic variance, a point that will be returned to below) is proportional to the product of the distributions expected under selection alone and under mutation alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically from Equation (1b) in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "f468b6af-3a36-4df0-9e28-d5a6c0675caa",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C11",
+      "claim": "Most quantitative traits have an approximately normal phenotype distribution on some scale of measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "We will make use of the fact that most quantitative traits have an approximately normal phenotype distribution on some scale of measurement, which follows from the central limit theorem (Lynch and Walsh, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the central limit theorem and citation to Lynch and Walsh, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "93b190e5-00c8-41bc-b98a-d63d7660bf02",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C12",
+      "claim": "The change in mean phenotype caused by selection is equal to the product of the genetic variance for the trait and the gradient in the logarithm of mean fitness with respect to mean phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression states that, provided the phenotype distribution is normal, the change in mean phenotype caused by selection is equal to the product of the genetic variance for the trait and the gradient in the logarithm of mean fitness with respect to mean phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically from Equation (7) in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "e191e1e7-cab3-42c3-818f-12c56207fbb0",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C13",
+      "claim": "Evolution by natural selection comes to a standstill when there is no genetic variance for the trait or the phenotypic mean resides at a point where the slope of the function of mean fitness with respect to mean phenotype is zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution by natural selection comes to a standstill when there is no genetic variance for the trait or the phenotypic mean resides at a point where the slope of the function of mean fitness with respect to mean phenotype is zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from Equation (7) in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "6e303a85-fae2-4c8a-9071-296dc284368b",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C14",
+      "claim": "Protein-protein interactions typically depend on no more than a few dozen amino-acid sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-protein interactions (e.g. the interfaces between dimeric molecules) typically depend on no more than a few dozen amino-acid sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "82ec395f-fb3b-4d84-b47d-220b3413e58a",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C15",
+      "claim": "The catalytic sites of enzymes often consist of a small-to-moderate numbers of residues that either facilitate or inhibit catalytic rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the catalytic sites of enzymes often consist of a small-to-moderate numbers of residues that either facilitate or inhibit catalytic rates, and the sizes of intracellular organelles and cytoskeletal components are constrained by cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about enzyme structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "f55f5d6b-1711-471a-997b-26bff91c3a72",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C16",
+      "claim": "Phenotypic variance reduces the efficiency of selection by diminishing the correspondence between genotype and phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "As will be seen repeatedly below, phenotypic variance (an inevitable consequence of external environmental and internal cellular effects) generally reduces the efficiency of selection by diminishing the correspondence between genotype and phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference from the mathematical models presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "fab080da-5f54-4056-b27c-fa9641dbba67",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C22",
+      "claim": "The inverse scaling of mutation rate with Ne is qualitatively consistent with the drift-barrier hypothesis for mutation-rate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a scaling is qualitatively consistent with the drift-barrier hypothesis for mutation-rate evolution (Lynch, 2010; Lynch, 2011), which postulates that because most mutations are deleterious, selection will typically operate to improve replication fidelity, with refinements in molecular performance eventually being thwarted by random genetic drift \u2013 as the mutation rate is progressively lowered, there is less room for improvement and hence a narrower range of selectively advantageous replication-fidelity variants accessible by selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lynch, 2010 and Lynch, 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "9ef62bc8-043a-47f5-b972-4509ab5279c7",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C25",
+      "claim": "Bacteria utilize transcription-factor binding-site motifs with stronger affinity to their cognate transcription factors than is the case in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that bacteria utilize transcription-factor binding-site motifs with stronger affinity to their cognate transcription factors than is the case in eukaryotes is also plausibly related to a higher efficiency of selection in the former (Lynch and Hagner, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lynch and Hagner, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "4c11d794-4fd3-468d-97ea-0db543b9cb09",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C26",
+      "claim": "Proteins typically evolve to the 'margin of stability,' such that only one or two mutations are usually enough to destabilize the folding process.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, proteins typically evolve to the 'margin of stability,' such that only one or two mutations are usually enough to destabilize the folding process (Taverna and Goldstein, 2002; Tokuriki and Tawfik, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Taverna and Goldstein, 2002 and Tokuriki and Tawfik, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "767b68c5-737e-4574-9ab6-ad49afbe1cf4",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C27",
+      "claim": "Protein stability is positively associated with fitness because destabilized proteins are prone to loss of function, aggregation, and/or direct toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein stability is deemed to be positively associated with fitness because destabilized proteins are prone to loss of function, aggregation, and/or direct toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about protein stability and fitness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "96dacf10-01f3-49eb-8376-68f6766973ca",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C28",
+      "claim": "It is relatively easy to obtain more stable proteins by mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, it is relatively easy to obtain more stable proteins by mutagenesis (Matsuura et al., 1999; Bershtein et al., 2013; Sullivan et al., 2012), with the contributing residues typically interacting in an additive fashion (Wells, 1990; Serrano et al., 1993; Zhang et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Matsuura et al., 1999; Bershtein et al., 2013; Sullivan et al., 2012; Wells, 1990; Serrano et al., 1993; and Zhang et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "aadcf666-28ee-45e6-8412-215d41f8f569",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C29",
+      "claim": "Residues contributing to protein stability typically interact in an additive fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, it is relatively easy to obtain more stable proteins by mutagenesis (Matsuura et al., 1999; Bershtein et al., 2013; Sullivan et al., 2012), with the contributing residues typically interacting in an additive fashion (Wells, 1990; Serrano et al., 1993; Zhang et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wells, 1990; Serrano et al., 1993; and Zhang et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "76c75a5f-1162-4672-82f1-2e77247da1f2",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C30",
+      "claim": "Many examples exist in which increased stability has been achieved in laboratory modifications of proteins with few if any consequences for enzyme efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Many examples exist in which increased stability has been achieved in laboratory modifications of proteins with few if any consequences for enzyme efficiency (e.g. Giver et al., 1998; Zhang et al., 1995; Taverna and Goldstein, 2002; Borgo and Havranek, 2012; Moon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Giver et al., 1998; Zhang et al., 1995; Taverna and Goldstein, 2002; Borgo and Havranek, 2012; and Moon et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "771bfedd-0e8d-43e5-8dc9-a814e71e12d2",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C31",
+      "claim": "A hyperbolic relationship between fitness and the binding energy involving protein stability follows from biophysical principles.",
+      "claim_type": "EXPLICIT",
+      "source": "A hyperbolic relationship between fitness and the binding energy involving protein stability follows from biophysical principles (Govindarajan and Goldstein, 1997; Taverna and Goldstein, 2002; Bloom et al., 2005; Zeldovich and Shakhnovich, 2008; Wylie and Shakhnovich, 2011; Serohijos and Shakhnovich, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Govindarajan and Goldstein, 1997; Taverna and Goldstein, 2002; Bloom et al., 2005; Zeldovich and Shakhnovich, 2008; Wylie and Shakhnovich, 2011; and Serohijos and Shakhnovich, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "d59788ff-da9b-4eec-b5a0-8553647b2990",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C32",
+      "claim": "Proteins of equivalent length fold at least ten times more rapidly in bacteria than in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, proteins of equivalent length fold at least ten times more rapidly in bacteria than in eukaryotes (Galzitskaya et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Galzitskaya et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "bc5faf88-1f54-4ba5-b261-092eb223e890",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C33",
+      "claim": "An in vitro evaluation of the folding stability of the dihydrofolate reductase enzyme from 36 species of mesophilic bacteria shows a substantial range of variation among species, with the standard deviation being roughly 10% of the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, an in vitro evaluation of the folding stability of the dihydrofolate reductase enzyme from 36 species of mesophilic bacteria illustrates the existence of a substantial range of variation among species, with the standard deviation being roughly 10% of the mean (Bershtein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bershtein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "f0676a7f-b85d-4f82-9432-adc20c6561fb",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C35",
+      "claim": "Similar behavior of stationary distributions was previously pointed out for the stationary distribution of allele frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar behavior was previously pointed out for the stationary distribution of allele frequencies (Wright, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wright, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "31d6a0de-7a5d-494d-886a-648340dfd7e7",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C36",
+      "claim": "Mean phenotypes are unlikely to commonly achieve states that endow a population with maximum fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such traits may sometimes be under selection for an intermediate optimum, selection may often operate in a continuous directional fashion. In either case, there are two reasons why mean phenotypes are unlikely to commonly achieve states that endow a population with maximum fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the models presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "e3dec437-10c7-4fa0-a014-6bd59623399d",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C37",
+      "claim": "If mutation bias conflicts with the directional effects of selection, the optimum phenotype will not coincide with the mean phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "First, if mutation bias conflicts with the directional effects of selection, the optimum phenotype will not coincide with the mean phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the models presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "c6ac0d87-35c2-4865-9022-2ce430a58e4a",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C38",
+      "claim": "A drift barrier exists beyond which the gradient of the selection function is not steep enough to overcome the vagaries of genetic drift, thereby preventing further adaptive progress.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, even in the absence of mutation bias and regardless of the form of the fitness function, a drift barrier exists beyond which the gradient of the selection function is not steep enough to overcome the vagaries of genetic drift, thereby preventing further adaptive progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the models presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "50bbc8a0-3ccc-4955-84b1-7cc9aec43efc",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C43",
+      "claim": "Species with substantially different population-genetic environments may commonly exhibit measurable differences in trait means despite experiencing identical forms of directional selection.",
+      "claim_type": "EXPLICIT",
+      "source": "These sorts of observations raise the significant possibility that species with substantially different population-genetic environments may commonly exhibit measurable differences in trait means despite experiencing identical forms of directional selection, again raising challenging issues for those who wish to interpret phenotypic differences as reflections of different underlying processes of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the models and observations presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "8f0e054a-d2d0-43c5-9474-7a9953400cc0",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C44",
+      "claim": "Multimodal stationary distributions have been predicted to arise in some situations involving transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the frequency of stationary distributions with multimodal forms is unknown, they have been predicted to arise in some situations involving transcription (Lynch and Hagner, 2015; Tu\u011frul et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lynch and Hagner, 2015 and Tu\u011frul et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "b3e82466-a78d-4ab6-ac4a-20f65edc1870",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C45",
+      "claim": "The population mean phenotype wanders within a certain range over evolutionary time due to mutation, selection, and drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to this latter factor, even if the forces of selection and mutation remain constant, the population mean phenotype of a trait will wander within a certain range over evolutionary time, with the frequency of occurrence of alternative mean phenotypes depending on patterns and strengths of selective and mutational effects (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and explained theoretically in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "79181c54-5003-4b9f-a464-9f1114ae9a90",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C46",
+      "claim": "The stationary distribution of mean phenotypes can be viewed as a summary distribution of phenotypic means across a large number of replicate populations exposed to identical conditions for a very long period.",
+      "claim_type": "EXPLICIT",
+      "source": "The focus of this study, the stationary distribution of mean phenotypes, can be viewed as a summary distribution of: (1) phenotypic means across a large number of replicate populations exposed to identical conditions for a very long period; or (2) a historical survey of mean phenotypes in a single population over a long time period, again under constant environmental and population-genetic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the stationary distribution concept used in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "6f79c256-a2e3-405c-8258-dfedeb3aab79",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C47",
+      "claim": "The stationary distribution of mean phenotypes can be viewed as a historical survey of mean phenotypes in a single population over a long time period under constant environmental and population-genetic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The focus of this study, the stationary distribution of mean phenotypes, can be viewed as a summary distribution of: (1) phenotypic means across a large number of replicate populations exposed to identical conditions for a very long period; or (2) a historical survey of mean phenotypes in a single population over a long time period, again under constant environmental and population-genetic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the stationary distribution concept used in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "e900d8c3-897a-4347-a169-7e8f775c1538",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C49",
+      "claim": "Under most reasonable biological conditions, independent of the starting conditions, a stationary distribution of mean phenotypes is eventually converged upon.",
+      "claim_type": "EXPLICIT",
+      "source": "Under most reasonable biological conditions, independent of the starting conditions, a stationary distribution of mean phenotypes (among hypothetical replicate populations) is eventually converged upon, at which point there is an exact balance between opposing forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical property of the diffusion process model used in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "da276869-744d-4e51-9a03-c4eb42caccf8",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C54",
+      "claim": "With a flat mutation function, the distribution will follow that expected under selection alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, with a flat mutation function, an unlikely scenario, the distribution will follow that expected under selection alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from Equation (1b) in the limiting case of no mutation bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "2f8003c8-6920-4bfb-bb7f-78ed64cd4e13",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C58",
+      "claim": "The composite parameter 4Ne\u03bc generally ranges from 0.001 to 0.1, with the lower and higher ends of the range being typical in vertebrates and microbes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This composite parameter is equivalent to the amount of standing heterozygosity at neutral nucleotide sites in natural populations under mutation-drift equilibrium, and generally ranges from 0.001 to 0.1, with the lower and higher ends of the range being typical in vertebrates and microbes, respectively (Lynch, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lynch, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "a9c1fcaf-2f68-411c-a776-5d65cc31570c",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C59",
+      "claim": "Under the Gaussian fitness function, the stationary distribution of mean phenotypes is Gaussian.",
+      "claim_type": "EXPLICIT",
+      "source": "With both the selection and mutation terms in Equation (11) being Gaussian functions, the product is also Gaussian (Lande, 1976), in this case leading to a stationary distribution of mean phenotypes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically and supported by citation to Lande, 1976.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "8bbf7c48-bdf2-4693-ad76-429555cab470",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C60",
+      "claim": "The hyperbolic fitness function generates a slightly asymmetric distribution of means with tail to the right.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the hyperbolic fitness function generates a slightly asymmetric distribution of means (with tail to the right), the bulk of the distribution is approximately normal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the hyperbolic fitness function model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "44731431-0bf6-4d31-9a9c-0e6c88b20182",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C61",
+      "claim": "The bulk of the distribution under the hyperbolic fitness function is approximately normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the hyperbolic fitness function generates a slightly asymmetric distribution of means (with tail to the right), the bulk of the distribution is approximately normal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the hyperbolic fitness function model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "06ea9e30-c825-41ca-ab38-9b35cd91ba89",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C62",
+      "claim": "The sigmoid fitness function is sometimes called a mesa function.",
+      "claim_type": "EXPLICIT",
+      "source": "With a sigmoid fitness function, sometimes called a mesa function (Gerland and Hwa, 2002; Berg et al., 2004), there is an inflection point such that the fitness landscape becomes progressively flatter at both higher and lower values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gerland and Hwa, 2002 and Berg et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "abda1d5f-9e11-4974-b100-f01a7fe1fee3",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C63",
+      "claim": "With the sigmoid fitness function, adjacent variants become increasingly similar in fitness at both extremes of the phenotype distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that adjacent variants become increasingly similar in fitness (i.e. more neutral with respect to each other) at both extremes of the phenotype distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the sigmoid fitness function form.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "7713d26c-7c70-4089-a61f-c123f2026632",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C64",
+      "claim": "With mutation bias encouraging the mean phenotype to deviate from the optimum, the result will be a population under persistent directional selection despite the existence of an attainable but not sustainable phenotype with maximum fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, with mutation bias encouraging the mean phenotype to deviate from the optimum, the result will be a population under persistent directional selection despite the existence of an attainable (but not sustainable) phenotype with maximum fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the models presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "1355b136-5fbd-4780-b627-63d8573c1cb3",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C65",
+      "claim": "The drift barrier will ensure variation in mean phenotypes among populations exposed to identical selection pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "Even without mutation pressure and in the face of intrinsic directional selection, for example, a hyperbolic or mesa fitness function, the most common mean phenotype will not be equivalent to the optimum phenotype, and the drift barrier will ensure variation in mean phenotypes among populations exposed to identical selection pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the models presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "6b6cb69e-aae1-4a93-8d45-3fd4c1804d53",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C68",
+      "claim": "The mean phenotypes of cellular attributes are modulated by the power of random genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the data are not extensive, several lines of evidence support the idea that the mean phenotypes of cellular attributes are indeed modulated by the power of random genetic drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the examples discussed in the manuscript, including mutation rates, enzyme efficiency, and protein stability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "0f8b7e9e-d146-4b89-a6f6-23ce010fef75",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C69",
+      "claim": "The scaling of mutation rate with Ne is qualitatively consistent with the drift-barrier hypothesis for mutation-rate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a scaling is qualitatively consistent with the drift-barrier hypothesis for mutation-rate evolution (Lynch, 2010; Lynch, 2011), which postulates that because most mutations are deleterious, selection will typically operate to improve replication fidelity, with refinements in molecular performance eventually being thwarted by random genetic drift",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lynch, 2010 and Lynch, 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "d665e459-6283-40bd-be10-8810807d4545",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C70",
+      "claim": "As the mutation rate is progressively lowered, there is less room for improvement and hence a narrower range of selectively advantageous replication-fidelity variants accessible by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "as the mutation rate is progressively lowered, there is less room for improvement and hence a narrower range of selectively advantageous replication-fidelity variants accessible by selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the drift-barrier hypothesis explanation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "24a543f7-1ddc-49d3-98c9-d9b320f6a6a5",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C71",
+      "claim": "The fact that bacteria utilize transcription-factor binding-site motifs with stronger affinity than eukaryotes is plausibly related to a higher efficiency of selection in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that bacteria utilize transcription-factor binding-site motifs with stronger affinity to their cognate transcription factors than is the case in eukaryotes is also plausibly related to a higher efficiency of selection in the former (Lynch and Hagner, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observation to the theory, supported by citation to Lynch and Hagner, 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "c4448e54-4761-4249-b101-b124922536ec",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C72",
+      "claim": "It is commonly argued that marginal stability is required for proper protein function, with excess stability somehow reducing protein performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although it is commonly argued that marginal stability is required for proper protein function, with excess stability somehow reducing protein performance, this has not held up to close scrutiny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a common argument in the field that the author disputes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "1e251599-2c60-4818-8085-68aca45e8b0e",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C73",
+      "claim": "The argument that marginal stability is required for proper protein function has not held up to close scrutiny.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although it is commonly argued that marginal stability is required for proper protein function, with excess stability somehow reducing protein performance, this has not held up to close scrutiny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the examples cited in the following sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "92508a0c-378b-4ea2-aeaa-5e6ccc581bda",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C74",
+      "claim": "A hyperbolic relationship between fitness and the binding energy involving protein stability follows from biophysical principles.",
+      "claim_type": "EXPLICIT",
+      "source": "A hyperbolic relationship between fitness and the binding energy involving protein stability follows from biophysical principles (Govindarajan and Goldstein, 1997; Taverna and Goldstein, 2002; Bloom et al., 2005; Zeldovich and Shakhnovich, 2008; Wylie and Shakhnovich, 2011; Serohijos and Shakhnovich, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "c3103551-0809-42d0-b4fc-4a27cbd9c66e",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C75",
+      "claim": "Under the hyperbolic model for protein stability, proteins are expected to be pushed by natural selection to more stable configurations until reaching the point where any further fitness improvement is small enough to be offset by the vagaries of random genetic drift and/or mutation pressure towards less stable states.",
+      "claim_type": "EXPLICIT",
+      "source": "under this model, proteins are expected to be pushed by natural selection to more stable configurations until reaching the point where any further fitness improvement is small enough to be offset by the vagaries of random genetic drift and/or mutation pressure towards less stable states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the hyperbolic fitness model and drift-barrier concept.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "7643a4df-b5c6-422b-99fe-a760fb9261c8",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C76",
+      "claim": "The standard deviation of folding stability of dihydrofolate reductase enzyme from 36 species of mesophilic bacteria is roughly 10% of the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, an in vitro evaluation of the folding stability of the dihydrofolate reductase enzyme from 36 species of mesophilic bacteria illustrates the existence of a substantial range of variation among species, with the standard deviation being roughly 10% of the mean (Bershtein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bershtein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "9a16afdc-b5a6-4fbb-9d6f-84d7f2cc4a0f",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C77",
+      "claim": "The distribution of folding stability among bacterial species may reflect the dispersion in mean phenotypes associated with drift around the drift barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, such a distribution may reflect the dispersion in mean phenotypes associated with drift around the drift barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "c1ca7980-fa02-46ae-9754-0f8aa0621057",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C78",
+      "claim": "The mutation function employed in this study likely comes closer to approximating the situation for cellular features than do previous functions relied on in quantitative genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mutation function employed here likely comes closer to approximating the situation for cellular features than do previous functions relied on in quantitative genetics, in reality we do not know the exact form of this function for any cellular feature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the author's assessment of the mutation model used.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "71ea4081-6201-4018-93e7-00b055d935ac",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C79",
+      "claim": "We do not know the exact form of the mutation function for any cellular feature.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mutation function employed here likely comes closer to approximating the situation for cellular features than do previous functions relied on in quantitative genetics, in reality we do not know the exact form of this function for any cellular feature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "e3f49da6-a87a-46cb-9f8b-8769fb4491c5",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C80",
+      "claim": "Plausible cases exist in which the stationary distribution exhibits two peaks, one largely driven by selection and the other by mutation pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the stationary distribution was unimodal in all of the cases examined above, plausible cases exist in which the stationary distribution exhibits two peaks, one largely driven by selection and the other by mutation pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical possibility discussed in the manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "be594a46-2af9-4d9a-8656-48329152fe33",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C81",
+      "claim": "For a bimodal stationary distribution to occur, the gradient of mutation pressure in one direction has to be of a form such that its product with the selection gradient has an internal minimum.",
+      "claim_type": "EXPLICIT",
+      "source": "For this to occur, the gradient of mutation pressure in one direction has to be of a form such that its product with the selection gradient has an internal minimum (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical condition for bimodality, illustrated in Figure 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "cc7034d6-33b2-4a27-8789-18d4fff0fc5b",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C82",
+      "claim": "In a bimodal system, the population mean phenotype is expected to reside in two alternative semi-stable domains for extended periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Under such a scenario, the population mean phenotype is expected to reside in two alternative semi-stable domains for extended periods of time, with the rates of transitions between domains depending on the relative heights of the two peaks, the depth of the distributional valley, and the curvatures of the stationary distribution at the inflection points (Lande, 1985; Barton and Rouhani, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lande, 1985 and Barton and Rouhani, 1987.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "4a9d8333-f681-47a3-9844-4e53207fb0d7",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C83",
+      "claim": "Over long evolutionary time periods, a bimodal system will exhibit detailed balance with net fluxes equal in both directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Over long evolutionary time periods, such a system will exhibit detailed balance \u2013 the net fluxes will be equal in both directions, with the ratio of the occupancy of the two alternative domains being inversely related to the ratio of the transition rates between them, that is, with the less frequent domain having a higher conditional rate of transition to the more frequent domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical property of bimodal systems at equilibrium.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "bdac254f-1c51-41b0-9c42-7f24d3f61856",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C84",
+      "claim": "The frequency of stationary distributions with multimodal forms is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the frequency of stationary distributions with multimodal forms is unknown, they have been predicted to arise in some situations involving transcription (Lynch and Hagner, 2015; Tu\u011frul et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "b6e3152b-feca-4a66-b96a-37fb4b2a9b0b",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "claim_id": "C85",
+      "claim": "Bimodal distributions may help explain the substantial and seemingly disorganized diversity of certain cellular features across the Tree of Life.",
+      "claim_type": "EXPLICIT",
+      "source": "Such ideas may be helpful in attempts to decipher the substantial and seemingly disorganized diversity of certain cellular features such as open vs. closed mitosis (Sazer et al., 2014), the structure of the centrosome (Carvalho-Santos et al., 2011), and the variable multimeric states of proteins (Dayhoff et al., 2010; Lynch, 2013; Ahnert et al., 2015) across the Tree of Life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative application of the bimodal distribution theory, supported by citations to examples.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e95c642c-074c-4ef9-aadd-7684fbf71e54",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript develops a theoretical framework showing that mean phenotypes deviate from optimal states due to the combined effects of mutation bias, genetic drift, and selection, with the magnitude of deviation depending on effective population size. This leads to phenotypic divergence among lineages even under identical selection pressures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C10, C36-38, C43, C64-65 collectively establish this core theoretical result through mathematical derivations (Equations 1b, 11, 13b, 14a) and logical inference. The mathematical framework is internally consistent and properly derived from diffusion theory. The claims are well-supported by the theoretical models presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript demonstrates theoretically that stationary distributions can be bimodal under certain conditions, with one peak driven by selection and another by mutation pressure. This occurs when the product of mutation and selection gradients has an internal minimum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C80-83 establish the theoretical conditions for bimodality with mathematical rigor and illustration in Figure 4. Claims C44, C84-85 provide context from prior work and speculative applications. The mathematical conditions are clearly stated and the theoretical framework is sound, though empirical validation is acknowledged as lacking (C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "807b6c59-5c90-412d-a0e3-9670c9374cf5",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript derives specific forms of stationary distributions for three fitness functions: Gaussian (yielding Gaussian distributions), hyperbolic (yielding slightly right-skewed but approximately normal distributions), and sigmoid/mesa (yielding distributions with flattened extremes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-63 describe mathematical properties of the models that follow directly from the equations presented (Equations 12-18, Table 1). The derivations are mathematically sound and properly cite prior work (Lande 1976, Gerland and Hwa 2002, Berg et al. 2004). These are well-established mathematical results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "d21d5af6-8af3-4e4c-b1f3-844dadef1ba2",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript argues that mutation rates scale inversely with effective population size across the Tree of Life, consistent with the drift-barrier hypothesis. This pattern is also observed in transcription-factor binding-site affinity differences between bacteria and eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-71, C22, C25 cite empirical observations from Lynch 2010, 2011, Lynch et al. 2016, and Lynch and Hagner 2015. The qualitative consistency with the drift-barrier hypothesis is appropriately stated as an inference rather than proof. The cited work provides the empirical foundation for these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "311aa746-efdb-41be-a56c-91d7763080d4",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript presents protein stability as an example of a cellular feature subject to drift barriers. Proteins evolve to marginal stability despite the ease of obtaining more stable variants, and bacterial proteins fold faster and show variation in stability consistent with drift around a fitness plateau.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-33, C72-77 are well-supported by multiple citations to experimental work (Taverna and Goldstein 2002, Tokuriki and Tawfik 2009, Matsuura et al. 1999, Bershtein et al. 2013, 2015, and others). The hyperbolic fitness model for protein stability is supported by biophysical principles (C31, C74). Claim C77 is appropriately marked as speculative interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "984e62b4-a708-4672-a99f-8a643d029775",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript derives that the change in mean phenotype from selection equals the product of genetic variance and the gradient of log mean fitness, with evolution halting when genetic variance is zero or at fitness optima. Phenotypic variance reduces selection efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-13, C16 follow directly from the mathematical derivation in Equation 7 and represent well-established quantitative genetics principles. The derivations are mathematically correct and properly contextualized. These are foundational results for the subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "074a123c-9b70-46c9-bd53-bfc901479b8b",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript defines the stationary distribution as representing either phenotypic means across replicate populations or historical means in a single population over long time periods, with convergence to this distribution occurring under most biological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-47, C49 provide clear definitions and theoretical properties of the stationary distribution concept. These are standard results from diffusion theory properly applied to the phenotypic evolution context. Figure 1 illustrates the concept effectively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "dd823d02-6ea3-4a06-b561-c132137d3bdb",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The composite parameter 4Ne\u03bc ranges from 0.001 to 0.1, with lower values in vertebrates and higher values in microbes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by citation to Lynch 2007 and represents an empirical observation about standing heterozygosity at neutral sites. This provides important context for parameter estimation in the models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "8871a9fe-8689-4a6c-a393-2a895bf36700",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript establishes background principles: cellular features vary continuously within populations due to genetic and stochastic factors, this variation transforms into among-species divergence through mutation and fixation, and the cellular environment remains relatively constant due to homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-8 represent well-established principles in evolutionary biology, properly cited to Lynch and Walsh 1998, Wright 1969, and Walsh and Lynch 2018. These provide appropriate foundational context for the theoretical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "9b5ef27b-c617-4da6-a5b4-22a8acbdecc9",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript states that quantitative traits are approximately normally distributed (by the central limit theorem) and that many cellular features depend on finite numbers of sites with binary or limited states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14-15 represent established knowledge properly cited (Lynch and Walsh 1998) and reasonable characterizations of protein structure. These assumptions underpin the mutation model developed in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "76cd7935-6ef1-46b2-9ec4-df8bad431312",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "With a flat mutation function (no mutation bias), the stationary distribution follows that expected under selection alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is a logical consequence of Equation 1b in the limiting case where mutation has no directional bias. This is a straightforward mathematical inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "3fea8a2a-b0bd-49ba-9e33-ab1d118a8162",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Similar behavior of stationary distributions was previously described for allele frequencies by Wright (1969).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 properly cites Wright 1969 and draws an appropriate parallel between the current work on phenotypes and prior work on allele frequencies. This provides important historical context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    },
+    {
+      "id": "7ea3cd89-1737-4479-b143-09f7efefa107",
+      "content_id": "839f9a88-5043-4a11-ae16-25c58b5c137f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript acknowledges that while the mutation function used likely approximates cellular features better than previous models, the exact form is unknown for any cellular feature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-79 represent appropriate acknowledgment of model limitations and current knowledge gaps. This demonstrates scientific caution about the generality of the specific mutation model employed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:17.831939Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cf44e81c-b2b2-447c-9a46-bbb12aaea48f",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "f9fe7c41-82ee-471b-b44f-3d2b6a55c650",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "31d6a0de-7a5d-494d-886a-648340dfd7e7",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "e3dec437-10c7-4fa0-a014-6bd59623399d",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "c6ac0d87-35c2-4865-9022-2ce430a58e4a",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "50bbc8a0-3ccc-4955-84b1-7cc9aec43efc",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "7713d26c-7c70-4089-a61f-c123f2026632",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "1355b136-5fbd-4780-b627-63d8573c1cb3",
+      "result_id": "e95c642c-074c-4ef9-aadd-7684fbf71e54"
+    },
+    {
+      "claim_id": "35db6136-2dd4-4c4a-8d84-cb1b0ed4bf27",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "e3f49da6-a87a-46cb-9f8b-8769fb4491c5",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "be594a46-2af9-4d9a-8656-48329152fe33",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "cc7034d6-33b2-4a27-8789-18d4fff0fc5b",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "4a9d8333-f681-47a3-9844-4e53207fb0d7",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "8f0e054a-d2d0-43c5-9474-7a9953400cc0",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "bdac254f-1c51-41b0-9c42-7f24d3f61856",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "b6e3152b-feca-4a66-b96a-37fb4b2a9b0b",
+      "result_id": "cb17771b-d0c2-4814-89b0-5aa611c2f1c3"
+    },
+    {
+      "claim_id": "a9c1fcaf-2f68-411c-a776-5d65cc31570c",
+      "result_id": "807b6c59-5c90-412d-a0e3-9670c9374cf5"
+    },
+    {
+      "claim_id": "8bbf7c48-bdf2-4693-ad76-429555cab470",
+      "result_id": "807b6c59-5c90-412d-a0e3-9670c9374cf5"
+    },
+    {
+      "claim_id": "44731431-0bf6-4d31-9a9c-0e6c88b20182",
+      "result_id": "807b6c59-5c90-412d-a0e3-9670c9374cf5"
+    },
+    {
+      "claim_id": "06ea9e30-c825-41ca-ab38-9b35cd91ba89",
+      "result_id": "807b6c59-5c90-412d-a0e3-9670c9374cf5"
+    },
+    {
+      "claim_id": "abda1d5f-9e11-4974-b100-f01a7fe1fee3",
+      "result_id": "807b6c59-5c90-412d-a0e3-9670c9374cf5"
+    },
+    {
+      "claim_id": "6b6cb69e-aae1-4a93-8d45-3fd4c1804d53",
+      "result_id": "d21d5af6-8af3-4e4c-b1f3-844dadef1ba2"
+    },
+    {
+      "claim_id": "0f8b7e9e-d146-4b89-a6f6-23ce010fef75",
+      "result_id": "d21d5af6-8af3-4e4c-b1f3-844dadef1ba2"
+    },
+    {
+      "claim_id": "d665e459-6283-40bd-be10-8810807d4545",
+      "result_id": "d21d5af6-8af3-4e4c-b1f3-844dadef1ba2"
+    },
+    {
+      "claim_id": "fab080da-5f54-4056-b27c-fa9641dbba67",
+      "result_id": "d21d5af6-8af3-4e4c-b1f3-844dadef1ba2"
+    },
+    {
+      "claim_id": "24a543f7-1ddc-49d3-98c9-d9b320f6a6a5",
+      "result_id": "d21d5af6-8af3-4e4c-b1f3-844dadef1ba2"
+    },
+    {
+      "claim_id": "9ef62bc8-043a-47f5-b972-4509ab5279c7",
+      "result_id": "d21d5af6-8af3-4e4c-b1f3-844dadef1ba2"
+    },
+    {
+      "claim_id": "4c11d794-4fd3-468d-97ea-0db543b9cb09",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "767b68c5-737e-4574-9ab6-ad49afbe1cf4",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "96dacf10-01f3-49eb-8376-68f6766973ca",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "aadcf666-28ee-45e6-8412-215d41f8f569",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "76c75a5f-1162-4672-82f1-2e77247da1f2",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "c4448e54-4761-4249-b101-b124922536ec",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "1e251599-2c60-4818-8085-68aca45e8b0e",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "92508a0c-378b-4ea2-aeaa-5e6ccc581bda",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "c3103551-0809-42d0-b4fc-4a27cbd9c66e",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "771bfedd-0e8d-43e5-8dc9-a814e71e12d2",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "d59788ff-da9b-4eec-b5a0-8553647b2990",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "bc5faf88-1f54-4ba5-b261-092eb223e890",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "7643a4df-b5c6-422b-99fe-a760fb9261c8",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "9a16afdc-b5a6-4fbb-9d6f-84d7f2cc4a0f",
+      "result_id": "311aa746-efdb-41be-a56c-91d7763080d4"
+    },
+    {
+      "claim_id": "93b190e5-00c8-41bc-b98a-d63d7660bf02",
+      "result_id": "984e62b4-a708-4672-a99f-8a643d029775"
+    },
+    {
+      "claim_id": "e191e1e7-cab3-42c3-818f-12c56207fbb0",
+      "result_id": "984e62b4-a708-4672-a99f-8a643d029775"
+    },
+    {
+      "claim_id": "f55f5d6b-1711-471a-997b-26bff91c3a72",
+      "result_id": "984e62b4-a708-4672-a99f-8a643d029775"
+    },
+    {
+      "claim_id": "b3e82466-a78d-4ab6-ac4a-20f65edc1870",
+      "result_id": "074a123c-9b70-46c9-bd53-bfc901479b8b"
+    },
+    {
+      "claim_id": "79181c54-5003-4b9f-a464-9f1114ae9a90",
+      "result_id": "074a123c-9b70-46c9-bd53-bfc901479b8b"
+    },
+    {
+      "claim_id": "6f79c256-a2e3-405c-8258-dfedeb3aab79",
+      "result_id": "074a123c-9b70-46c9-bd53-bfc901479b8b"
+    },
+    {
+      "claim_id": "e900d8c3-897a-4347-a169-7e8f775c1538",
+      "result_id": "074a123c-9b70-46c9-bd53-bfc901479b8b"
+    },
+    {
+      "claim_id": "2f8003c8-6920-4bfb-bb7f-78ed64cd4e13",
+      "result_id": "dd823d02-6ea3-4a06-b561-c132137d3bdb"
+    },
+    {
+      "claim_id": "a1e8c5ab-7f5c-4b9c-9cd3-bbfc0d83dbaa",
+      "result_id": "8871a9fe-8689-4a6c-a393-2a895bf36700"
+    },
+    {
+      "claim_id": "a2875ec5-5188-4450-a5a8-1656d06d43f1",
+      "result_id": "8871a9fe-8689-4a6c-a393-2a895bf36700"
+    },
+    {
+      "claim_id": "2784c22b-f494-4e6b-8427-9eb37c169135",
+      "result_id": "8871a9fe-8689-4a6c-a393-2a895bf36700"
+    },
+    {
+      "claim_id": "22377131-a002-416b-9ca4-c04a7933d705",
+      "result_id": "8871a9fe-8689-4a6c-a393-2a895bf36700"
+    },
+    {
+      "claim_id": "bbf1bdcd-c82d-475a-ac86-b8aee3078e16",
+      "result_id": "8871a9fe-8689-4a6c-a393-2a895bf36700"
+    },
+    {
+      "claim_id": "43eb1045-a33e-4137-903c-041c99cf464f",
+      "result_id": "8871a9fe-8689-4a6c-a393-2a895bf36700"
+    },
+    {
+      "claim_id": "f468b6af-3a36-4df0-9e28-d5a6c0675caa",
+      "result_id": "9b5ef27b-c617-4da6-a5b4-22a8acbdecc9"
+    },
+    {
+      "claim_id": "6e303a85-fae2-4c8a-9071-296dc284368b",
+      "result_id": "9b5ef27b-c617-4da6-a5b4-22a8acbdecc9"
+    },
+    {
+      "claim_id": "82ec395f-fb3b-4d84-b47d-220b3413e58a",
+      "result_id": "9b5ef27b-c617-4da6-a5b4-22a8acbdecc9"
+    },
+    {
+      "claim_id": "da276869-744d-4e51-9a03-c4eb42caccf8",
+      "result_id": "76cd7935-6ef1-46b2-9ec4-df8bad431312"
+    },
+    {
+      "claim_id": "f0676a7f-b85d-4f82-9432-adc20c6561fb",
+      "result_id": "3fea8a2a-b0bd-49ba-9e33-ab1d118a8162"
+    },
+    {
+      "claim_id": "c1ca7980-fa02-46ae-9754-0f8aa0621057",
+      "result_id": "7ea3cd89-1737-4479-b143-09f7efefa107"
+    },
+    {
+      "claim_id": "71ea4081-6201-4018-93e7-00b055d935ac",
+      "result_id": "7ea3cd89-1737-4479-b143-09f7efefa107"
+    }
+  ],
+  "comparisons": []
+}

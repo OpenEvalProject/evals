@@ -1,0 +1,2122 @@
+{
+  "submission": {
+    "id": "dd973296-fd7b-4394-809b-b41b73c2db80",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:49:11.452626Z",
+    "updated_at": "2025-12-01T19:49:11.452626Z"
+  },
+  "content": [
+    {
+      "id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "submission_id": "dd973296-fd7b-4394-809b-b41b73c2db80",
+      "content_type": "manuscript",
+      "content_text": "# Lineage commitment of embryonic cells involves MEK1-dependent clearance of pluripotency regulator Ventx2\n\n## Authors\n\n- Pierluigi Scerbo<sup>1</sup>\n- Leslie Marchal<sup>1</sup>\n- Laurent Kodjabachian<sup>1</sup> ([ORCID: 0000-0002-4000-612X](https://orcid.org/0000-0002-4000-612X)) \u2020\n\n### Affiliations\n\n1. Institut de Biologie du D\u00e9veloppement de Marseille Aix Marseille Univ, CNRS Marseille France\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring early embryogenesis, cells must exit pluripotency and commit to multiple lineages in all germ-layers. How this transition is operated in vivo is poorly understood. Here, we report that MEK1 and the Nanog-related transcription factor Ventx2 coordinate this transition. MEK1 was required to make Xenopus pluripotent cells competent to respond to all cell fate inducers tested. Importantly, MEK1 activity was necessary to clear the pluripotency protein Ventx2 at the onset of gastrulation. Thus, concomitant MEK1 and Ventx2 knockdown restored the competence of embryonic cells to differentiate. Strikingly, MEK1 appeared to control the asymmetric inheritance of Ventx2 protein following cell division. Consistently, when Ventx2 lacked a functional PEST-destruction motif, it was stabilized, displayed symmetric distribution during cell division and could efficiently maintain pluripotency gene expression over time. We suggest that asymmetric clearance of pluripotency regulators may represent an important mechanism to ensure the progressive assembly of primitive embryonic tissues.\n\n## Introduction\n\nHow embryonic pluripotent cells can maintain an uncommitted state as well as an unrestricted potential for multi-lineage commitment is a key and unresolved question in developmental and stem cell biology. Therefore, studying in vivo the links between factors that oppositely regulate pluripotency should help to better understand the transitory nature of this state during embryogenesis and its resumption in several human diseases. In mammals, epiblast cells of the developing blastula embryo appear to transit through a series of pluripotent states until gastrulation, which signs the global extinction of pluripotency and the rise of cell competence to somatically commit (Hackett and Surani, 2014; Boroviak and Nichols, 2014). In amphibians, cells of the blastula animal hemisphere are somatically pluripotent, and their broad potential is globally lost at gastrulation (Snape et al., 1987). Studies in vivo have been useful to characterize the core regulatory network of pluripotency, and to reveal its degree of conservation and plasticity during vertebrate evolution (Boroviak and Nichols, 2014; Hackett and Surani, 2014; Morrison and Brickman, 2006; Scerbo et al., 2012; Buitrago-Delgado et al., 2015; Boroviak et al., 2015). In vertebrates, the pluripotency\u00a0regulatory network is centered on the Pou-V class of transcription factors (also referred as Oct4). Pou-V members Pou5f3 and Pou5f1 share functional homology in regulating the uncommitted state of progenitor cells (Livigni et al., 2013) and in reprogramming somatic cells to induced-Pluripotent Stem Cells (iPSCs) (Tapia et al., 2012; Takahashi and Yamanaka, 2006). Nanog has been discovered as a key component of pluripotency networks in both mouse embryonic stem cells (mESC) and pre-implantation epiblast (Hackett and Surani, 2014; Boroviak and Nichols, 2014). Nonetheless, phylogenetic, biochemical and functional analyses suggest that the role of Nanog in pluripotency is not conserved in all vertebrates, as the Nanog gene is absent in the Xenopus genus (Scerbo et al., 2014) and teleostean Nanog does not support pluripotency during development (Camp et al., 2009; Scerbo et al., 2014). Recent analyses on Xenopus and zebrafish embryos suggest that Ventx transcription factors, belonging to the same NK family as Nanog (Scerbo et al., 2014), act as guardians of pluripotency during embryogenesis (Scerbo et al., 2012; Zhao et al., 2013). Ventx factors integrate the pluripotency network by coordinating and maintaining the activity of Pou-V factors (Scerbo et al., 2012; Zhao et al., 2013; Cao et al., 2004), and by regulating cell response to TGF-\u03b2/Smad pathways (Zhu and Kirschner, 2002; Cao et al., 2004). However, how the pluripotency network evolves to authorize the expression of lineage-specific genes in lower vertebrates is poorly understood. Pluripotency is maintained by a complex gene regulatory network associated with a specific epigenetic state both in vitro and in vivo (Boroviak and Nichols, 2014). Several studies revealed the importance of transcriptional and epigenetic silencing of pluripotency-related genes during the process of cell commitment, which ultimately allows the transcriptional activation of lineage-specific genes (Hackett and Surani, 2014). Based on in vitro studies, the regulation of pluripotency factor stability and degradation (Kim et al., 2014; Spelat et al., 2012), as well as the asymmetric distribution of cytoplasmic and membrane-bound determinants during cell division (Habib et al., 2013), are also expected to significantly contribute to pluripotency destabilization. However, whether such mechanisms are important during vertebrate embryogenesis remains to be addressed. Studies in mammalian embryos have suggested that MEK1 (Map2k1), an upstream component of the mitogen activated protein kinase (MAPK) pathway, could represent an intrinsic determinant of the ephemeral and transitory nature of the pluripotency state in vivo (Boroviak et al., 2015; Boroviak and Nichols, 2014). Further support to this idea comes from the reported stabilization in a pluripotent state of mammalian ESCs in vitro by media that include inhibitors of MEK1 activity (Boroviak and Nichols, 2014; Hackett and Surani, 2014; Theunissen et al., 2014). MEK1 activity can negatively regulate both the expression in vivo (Boroviak et al., 2015; Boroviak and Nichols, 2014) and the stability in vitro of Nanog and Pou5f1 proteins (Kim et al., 2014; Spelat et al., 2012). The Xenopus embryo also represents an attractive model to address how MEK1 controls pluripotency exit in vivo, as the importance of the MAPK pathway for the competence of embryonic cells to differentiate has long been known (LaBonne et al., 1995). Activation of the MAPK ERK1, resulting from phosphorylation by MEK1, is known to occur at early blastula stages, primarily in the pluripotent cells of the animal and marginal zones (Curran and Grainger, 2000). Multiple studies revealed that FGF-mediated ERK1 activation is necessary for the competence of animal blastula cells to respond to mesoderm and neural inducers (Cornell and Kimelman, 1994; Delaune et al., 2005). However, the existence of a direct link between the MAPK pathway and pluripotency during Xenopus development has never been tested. In this study, we reveal that MEK1 is required for embryonic cell competence to respond to differentiation cues, acting against the expression, distribution and stability of the pluripotency regulator Ventx2.\n\n## Results\n\n### MEK1 is required for cell competence to differentiate\n\nTo examine the role of MEK1 in Xenopus embryos, we depleted it through injection of morpholino antisense oligonucleotides (MOs). We designed two independent MOs, in the 5'UTR (Mk-MO), and at the ATG (Mk-MO ATG), which both inhibited MEK1 translation and antagonized development (Figure 1A\u2013D and Figure 1\u2014figure supplement 1\u20131A). As Mk-MO proved more efficient, we used it for most experiments in this study, unless stated otherwise. Mk-MO did not up-regulate p53 expression (Figure 1\u2014figure supplement 1\u20131B), unlike the non-specific response triggered by some MOs in zebrafish embryos (Robu et al., 2007). Importantly, a wild-type form of MEK1 from hamster efficiently rescued mesoderm and neural specification, as well as early morphogenesis, in Mk morphant embryos, indicating that MEK1 knockdown was specific (Figure 1D and Figure 1\u2014figure supplement 1\u20131C and D). We found that MEK1 activity was required for the expression of multiple neural and non-neural ectoderm, as well as mesoderm markers (Figure 1\u2014figure supplement 1\u20132A and B). In contrast, MEK1 activity was found to be dispensable for the expression of endoderm markers and of immediate-early targets of the BMP and Nodal pathways (Figure 1\u2014figure supplement 1\u20132C and D). Interestingly, the expression of the epidermal markers dlx3, gata2 and xk81a1 was reduced in MEK1 morphants, despite the maintained expression of the epidermal inducer bmp4. These results suggested that MEK1 was broadly required for multi-lineage commitment of pluripotent cells of the animal hemisphere. To further test this possibility, we examined the differentiation potential of embryonic cells depleted of MEK1 in response to exogenous inducers. Consistent with our hypothesis, recombinant BMP4, NODAL, and NOGGIN proteins induced efficient expression of epidermal, mesodermal and neural markers, respectively, in wild-type but not in MEK1-depleted cells (Figure 2A). Likewise, BMP signaling inhibition, obtained by injection of dominant-negative Smad5 (Marchal et al., 2009), caused neural induction in wild-type embryos, but not in Mk-MO ATG morphants (Figure 2\u2014figure supplement 2\u20131). To directly assess the importance of MEK1 in the competence of pluripotent cells to respond to inducers, we exposed explanted animal ectoderm to the soluble factors described above. Whereas multiple epidermal, neural, mesodermal and endodermal markers were induced by BMP4, NOGGIN, low and high doses of NODAL, respectively, these responses were all abolished in the presence of Mk-MO (Figure 2B). The impaired ability of MEK1-deficient cells to engage into differentiation could be linked to mis-regulation of pluripotency genes. RT-qPCR analysis on early gastrula embryos revealed that the expression of pou5f3.1 (oct91), pou5f3.2 (oct25), ventx1 and ventx2 was significantly up-regulated in MEK1-depleted embryos, whereas no detectable effect was measured on sox3 and cdh1 (E-cadherin) (Figure 2B)(Figure 2C). ventx2 and pou5f3.2 are initially expressed throughout the pluripotent animal hemisphere and are restricted to non-neural ectoderm and floor plate at late gastrulation, respectively, reflecting the progressive engagement of embryonic cells into differentiation. In contrast, these two genes remained ubiquitously expressed in MEK1 morphants at late gastrula stage (Figure 2D). Likewise, targeted injection of Mk-MO in dorsal or ventral ectoderm confirmed that pou5f3.2 and ventx2 expression failed to be silenced, even when morphogenesis was not altered (Figure 2\u2014figure supplement 2\u20132A). Strikingly, the maintenance of pou5f3.2 expression in MEK1 morphants was still visible at mid-neurula stage (Figure 2\u2014figure supplement 2\u20132B). Furthermore, gene expression analysis of MEK1-depleted animal ectoderm explants at the end of gastrulation revealed a significantly higher expression of pou5f3.2 and ventx2 with a concomitant reduction of the lineage-restricted markers xk81a1, itln1 and \u03b1-tub (Figure 2\u2014figure supplement 2\u20132C). Taken together, these data suggested that embryonic cells need MEK1 activity to exit pluripotency and engage into lineage-specific programs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig1-v1.jpg)\n\n**Figure 1.:** (A) Mk-MO and Mk-MO ATG were designed to target MEK1 translation. Western blot analysis of blastula stage nine embryos injected with 25 ng per blastomere of either MO at the 4 cell stage revealed reduced MEK1 translation. \u03b1-Tubulin was used as a loading control. Control embryos were uninjected. The histogram shows the normalized intensity of MEK1 signals relative to control. (B) Embryos were injected as in (A) and morphology was analyzed at tailbud stage. (C) Embryos injected as in (A) were stained with Sox2 probe to highlight defective axis formation and neural tissue differentiation. (D) Embryos were injected at the 2 cell stage with 25 ng Mk-MO per cell, and at the 4- cell stage with 400 pg of mammalian MEK1 (Mk) RNA per cell and processed for WISH analysis at late gastrula stage 13 with t/bra probe to highlight the mesoderm (dorso-vegetal view) and with sox2 to highlight the neurectoderm (dorsal view). In C and D, the number of embryos exemplified by the photograph over the total number of embryos analyzed is indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Four-cell embryos were injected in each blastomere with 50 pg GFP\u2010CAAX mRNA with or without 25 ng Mk-MO, fixed at blastula stage 9, cryosectioned and stained with anti-phospho-MEK1 antibody. The pMEK1 signal was severely reduced or lost in cells injected with Mk-MO. (B) Four-cell embryos were injected in each cell with 25 ng Mk-MO, collected at early gastrula stage 10.5 and processed for RT-qPCR to quantify p53 expression levels. Mk\u2010MO did not induce p53 expression. (C) Two-cell embryos were injected twice with 25 ng Mk-MO in each blastomere, followed by injection at 4 cell stage of hamster MEK1 mRNA (Mk; 400 pg per blastomere). In order to score progress through gastrulation pictures were taken from live stage 13 gastrula embryos (vegetal view). (D) Blastopore closure was scored by calculating the ratio of blastopore diameter of injected embryos to the mean of blastopore diameter of uninjected control embryos. Bars represent maximum and minimum values, and lines represent the mean. The number of embryos analyzed in each condition is displayed on the graph. For statistical analysis, samples were compared by Mann-Whitney test (99% confidence intervals were applied; ***p\u22640.0001).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013D) Four-cell embryos were injected in each blastomere with 25 ng Mk-MO, collected at early gastrula stage 10.5 and processed for RT-qPCR to quantify changes in the expression levels of pro-differentiation markers (A), or changes in the expression levels of BMPs (Smad1/5/8) and Activin/Nodal (Smad2/3) signaling targets (C). For all qPCR graphs, error bars represent s.e.m. values of four independent experiments with two technical duplicates. For statistical analyses, samples from injected embryos were compared with samples from uninjected control embryos by Unpaired Student\u2019s t-test. *p<0.05, **p<0.005, ***p<0.0001. (B,D) Some embryos from the same experiment were processed for WISH with the indicated probes. Note that embryos stained for xk81a1 (epidermis) were injected with 25 ng Mk-MO in one ventral animal blastomere at 16-cell stage and collected at late gastrula stage 13. In B and D, the number of embryos exemplified by the photograph over the total number of embryos analyzed is indicated.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig2-v1.jpg)\n\n**Figure 2.:** (A) Sixteen-cell embryos were injected in one animal blastomere with 25 ng Mk-MO ATG and 2.5 ng FLDX. Next, these embryos were injected at blastula stage 8.5 with recombinant BMP4 (2 ng), NODAL (10 ng), or NOGGIN (36 ng) proteins into the blastocoele, collected at early gastrula stage 10.5, and processed for WISH with xk81a1 (epidermis, animal view), t/bra (mesoderm, lateral view), and sox2 (neural tissue, dorsal view). FLDX (orange staining) was used to trace Mk-MO injected cells (white arrows). (B) Four-cell embryos were injected with 25 ng Mk-MO per blastomere, animal caps were explanted at blastula stage 8.5 and cultured in the presence of 20 ng/ml BMP4, 100 ng/ml NOGGIN, 20 ng/ml NODAL (low), or 200 ng/ml NODAL (high) until late gastrula stage 13, and processed for RT-qPCR. (C) Four-cell embryos were injected with 25 ng Mk-MO per blastomere, collected at stage 10.5 and processed for RT-qPCR. (D) Embryos injected as in (C) were processed for WISH analysis at late gastrula stage 13 with pou5f3.2 (oct25) and ventx2 probes. a: animal view; v: ventral view; l: lateral view; d: dorsal view. For all qPCR graphs, error bars represent s.e.m. values of four independent experiments with two technical duplicates. For statistical analyses, samples were compared with the respective control by Unpaired Student\u2019s t-test. *p<0.05, **p<0.005. ***p<0.0001. In A and D, the number of embryos exemplified by the photograph over the total number of embryos analyzed is indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Sixteen-cell embryos were injected in one ventral-animal blastomere with 3 ng of dominant-negative Smad5 (Smad5sbn) mRNA and 25 ng Mk-MO ATG, as indicated. Embryos were fixed at late gastrula stage 13, and processed for WISH with the indicated probes. The number of embryos exemplified by the photograph over the total number of embryos analyzed is indicated. Lateral views.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Embryos injected with 25 ng Mk-MO at 16-cell stage in one animal dorsal blastomere were grown until late gastrulation stage 13 and processed for WISH with pou5f3.2 and ventx2 probes. (B) Embryos injected with 25 ng Mk-MO at 16 cell stage in one animal ventral blastomere were grown until mid-neurula stage 18 and processed for WISH with pou5f3.2 probe. (C) Four-cell embryos were injected in each blastomere with 25 ng Mk-MO and grown until blastula stage 9, when animal caps were isolated, cultured in vitro until late gastrula stage 13 and then processed for RT-qPCR. In A and B, the number of embryos exemplified by the photograph over the total number of embryos analyzed is indicated.\n\n### MEK1 regulates the sub-cellular distribution and clearance of Ventx2\n\nThe above results raised the possibility that an elevated activity of pluripotency factors may promote resistance to differentiation. In Xenopus, Ventx2 is involved in the active repression of precocious differentiation and helps to maintain pluripotency (Scerbo et al., 2012). Consistently, it was shown that Ventx2 undergoes ubiquitin-mediated degradation in the early gastrula (Zhu and Kirschner, 2002), which coincides with the global loss of pluripotency (Snape et al., 1987). Ventx2 proteolysis involves a PEST-destruction motif in its N-terminus, which is regulated by phosphorylation by uncharacterized signaling pathways (Zhu and Kirschner, 2002). Noteworthy, this PEST domain is conserved in the Ventx family (Supplementary file 1)(Supplementary file 4), and one of the two functional serines in the PEST motif of Xenopus Ventx2 is a predicted target of MAPK (Figure 3\u2014figure supplement 1A and B). Thus, we addressed whether MEK1 may participate in the control of Ventx2 stability. Western blot analysis of embryos injected with RNA encoding Myc-tagged Ventx2 confirmed the reported degradation after the onset of gastrulation (Figure 3\u2014figure supplement 1C). In contrast, in MEK1 morphants, Ventx2-Myc remained detectable up until mid-gastrula stage (Figure 3\u2014figure supplement 1C). Next, we analyzed Ventx2-Myc distribution on sectioned blastula and gastrula embryos by immunofluorescence confocal microscopy. We found that MEK1 knockdown dramatically increased the number of Ventx2-Myc positive cells at both stages, when compared to control (Figure 3A). Careful inspection of blastula cells dividing along the animal-vegetal (apical-basal) axis of the tissue revealed that Ventx2-Myc was asymmetrically distributed in daughter cells in control but not in MEK1 morphant embryos (Figure 3B and C). In addition, a significant fraction of MEK1-depleted cells displayed Ventx2-Myc signal in the membrane cortex at both stages analyzed (Figure 3A and B). At blastula stage, Ventx2-Myc membrane association was polarized with respect to the plane of the tissue, with a clear basal enrichment (Figure 3A and B). No attempt was made at characterizing further the cortical localization of Ventx2. Altogether, our data reveal that MEK1 is required for Ventx2 asymmetric distribution during blastula cell division, and participates in developmentally regulated clearance of this protein in pluripotent embryonic cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig3-v1.jpg)\n\n**Figure 3.:** (A,B) Four-cell embryos were injected in each cell with 50 pg GFP-CAAX, 50 pg Ventx2-Myc, 50 pg 2SAVentx2-Myc RNAs, and 25 ng Mk-MO, as indicated. Embryos were fixed at blastula stage 9, or gastrula stage 11, cryosectioned and processed for anti-Myc (red), and anti-GFP (green) immunostaining, and DNA was stained with DAPI (blue). Graphs show the percentage of Myc positive nuclei (DAPI positive) over the total number of injected cells (GFP positive) from four independent experiments. (B) 3D reconstruction of confocal slices of mitotic Myc positive nuclei labeled by DAPI from stage nine sectioned embryos. Sister mitotic chromosomes are referred to as \u03b1 (more intense Myc staining), and \u03b2 (less intense Myc staining). The A-V arrows indicate the animal-vegetal axis. Note the asymmetric cortical Ventx2-Myc signal in the MEK1 morphant cell. (C). The graph shows the ratios of Myc signal intensity between\u03b1 and \u03b2 sister nuclei.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) In silico analysis of phosphorylation sites in the Ventx2 protein and prediction of kinases involved, with Kinasephos2 software. (B) Schematic representation of the Ventx2 protein. HD indicates the homeodomain (blue box), and the PEST destruction motif is highlighted in red. Note that Serine 140, which is required for Ventx2 degradation, is a predicted target of MAPK. (C) 50 pg Ventx2-Myc RNA was injected into both blastomeres at the two-cell stage. 50 pg GFP-Myc-RNA was co-injected as an internal loading control. Embryos were allowed to develop until the indicated stages, and exogenous Ventx2 was detected by anti-Myc immunostaining on Western blot. The graph shows the ratios of Ventx2-Myc over a-tub signals measured from the Western blot. (D) Four-cell embryos were injected in each cell with 50 pg GFP-CAAX, 50 pg Ventx2-Myc, 50 pg 2SAVentx2-Myc RNAs and with 25 ng Mk-MO as indicated. Embryos were fixed at blastula stage 9, cryosectioned and processed for anti-Myc (red), anti-GFP (green) and anti-g-tubulin (centrosomes, white) immunostaining, and DNA was stained with DAPI (blue). Panels represent compiled confocal slices to visualize entire mitotic nuclei.\n\n### The PEST destruction motif is required for destabilization and asymmetric distribution of Ventx2\n\nThe above results raised the possibility that destabilization of Ventx2 in response to MEK1 is a key step for the transition between pluripotent and committed states of embryonic cells. To further evaluate this possibility, we injected a mutant form of Ventx2 lacking the functional PEST destruction motif. This stable form of Ventx2 was obtained through the substitution of two key serine residues (140 and 144) with alanine (2SAVentx2-Myc) and was demonstrated to be more efficient than the native form of Ventx2 in counteracting mesendoderm induction (Zhu and Kirschner, 2002). As predicted, 2SAVentx2-Myc was detectable in the nuclei of control cells, similar to Ventx2-Myc in MEK1 morphant cells (Figure 3A). Moreover, no marked asymmetric distribution of 2SAVentx2-Myc in daughter nuclei of dividing blastula cells was observed, suggesting that phosphorylation of the PEST motif is necessary to control Ventx2 asymmetric distribution (Figure 3B and C). Similarly to Ventx2-Myc in MEK-1 deficient cells, 2SAVentx2-Myc was detectable in the cortex of injected cells, particularly at gastrula stage (Figure 3A). Next, we combined anti-Myc and \u03b3-tubulin staining to mark the centrosomes, so as to be able to distinguish mitotic phases (Figure 3\u2014figure supplement 1D). Ventx2-Myc localized into the nuclei of blastula cells in prophase and MEK1 depletion did not affect this localization. Similarly, 2SAVentx2-Myc co-localized with chromosomes during prophase. Ventx2 is a phosphomitotic protein (Stukenberg et al., 1997), and it has been proposed that phosphorylation is required for disengagement of transcription factors from chromosomes in metaphase (Stukenberg et al., 1997). Accordingly, Ventx2-Myc was no longer associated with metaphasic chromosomes but rather with mitotic spindles. Interestingly, this change in distribution of Ventx2-Myc was independent from MEK1 activity or from the PEST destruction motif. Upon engagement into cytokinesis, the asymmetry of Ventx2-Myc in daughter nuclei became apparent. Quantification of signals intensity revealed that in control condition, one daughter nucleus contained on average 6.454 fold more Ventx2-Myc than the other daughter nucleus (s.e.m.\u00a0\u00b10.5479), whereas this difference was significantly dampened in MEK1-deficient cells (mean ratios\u00a0=\u00a01.092; s.e.m.\u00a0\u00b10.0447) and in 2SAVentx2-Myc injected cells (mean ratios\u00a0=\u00a01.910; s.e.m.\u00a0\u00b10.1319)(Figure 3C). Thus, the stabilization of exogenous Ventx2 through either MEK1 depletion or PEST motif mutation led to its symmetric distribution upon cell division.\n\n### Ventx2 inhibition by MEK1 is required for embryonic cell commitment\n\nOur data indicate that Ventx2 expression, distribution and stability depend on MEK1 activity in vivo, raising the possibility of a causal relationship between the refractory behaviour of MEK1-depleted cells to differentiation and the activity of Ventx2. Consistent with this idea, 2SAVentx2-Myc, but not native Ventx2-Myc, caused a markedly high and ectopic expression of pou5f3.2 in late gastrula embryos, which was visible up until tailbud stage (Figure 4A and Figure 4\u2014figure supplement 1A). Furthermore, we found that 2SAVentx2-Myc but not Ventx2-Myc could counteract the conversion of ectoderm to mesoderm in response to a constitutively active form of MEK1 (Figure 4B). This result suggests that 2SAVentx2-Myc has become resistant to degradation induced by MEK1 and can efficiently maintain pluripotency and antagonize commitment in the presence of active MEK1. To test the functional importance of the antagonism between MEK1 and Ventx2 in the transition from pluripotent to committed states, we combined Mk-MO with Ventx2 MO (Scerbo et al., 2012). RT-qPCR and in situ hybridization analyses revealed that Ventx2 MO injection caused the down-regulation of ventx1 and ventx3 expression, suggesting that a large part of Ventx activity is missing in such embryos (Figure 4\u2014figure supplement 1B and C). As predicted, MEK1-Ventx2 double morphant cells regained the competence to respond to exogenous inducers and thus to express epidermal, neural, mesodermal and endodermal markers in response to BMP4, NOGGIN, low and high doses of NODAL, respectively (Figure 4C). Furthermore, the expression of the lineage-restricted markers foxd5, gsc, t/bra, and xk81a1 was rescued in MEK1-Ventx2 double morphant embryos (Figure 4\u2014figure supplement 1D). Conversely, the sustained expression of pou5f3.2 caused by MEK1 depletion was counteracted by concomitant Ventx2 knockdown (Figure 4D). Finally, morphogenesis and axis formation was also partially restored in MEK1-Ventx2 double morphant embryos (Figure 4E). Altogether, these data indicate that MEK1 and Ventx2 functionally interact during the transition of pluripotent cells from refractory to responsive states.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig4-v1.jpg)\n\n**Figure 4.:** (A) 4 cell embryos were injected in each cell with 50 pg Ventx2-Myc or 50 pg 2SAVentx2-Myc RNAs, and processed for WISH analysis at late gastrula stage 13 with pou5f3.2 probe. Stabilized 2SAVentx2 maintains ectopic pou5f3.2 expression. Top row dorsal view, bottom row lateral view. (B) Embryos injected as in (A), with or without 500 pg CA-Mk RNA per blastomere, were processed for WISH analysis at early gastrula stage 10.5 with t/bra probe. The number of embryos with ectopic t/bra expression is indicated in each condition. Stabilized 2SAVentx2 counteracts CA-Mk activity. Top row animal view, bottom row lateral view. (C) Sixteen-cell embryos were injected in one animal blastomere with 50 pg GFP-CAAX RNA, 25 ng Mk-MO and 7.5 ng Vx2-MO, as indicated. Next, these embryos were injected at blastula stage 8.5 with recombinant BMP4 (2 ng for xk81a1 induction, animal view), NODAL (5 ng for t/bra induction, lateral view; 50 ng for mixer (endoderm) induction, animal view), or NOGGIN (36 ng for sox2 induction, animal view) proteins into the blastocoel, collected at early gastrula stage 10.5, and processed for WISH. Mk-MO injected domains are indicated by white arrows.\u00a0(D) Four-cell embryos were injected in each blastomere with 25 ng Mk-MO alone or with 7.5 ng Vx2-MO, collected at late gastrula stage 13 and processed for WISH with pou5f3.2 probe. (E) Embryos injected as in (D) were collected at tailbud stage 25, processed for WISH with sox2 probe, and scored. Ventx2 knockdown partially restores development of MEK1-deficient embryos. MEK1/Ventx2 double knockdown rescue assays were repeated five times. In A and C, the number of embryos exemplified by the photograph over the total number of embryos analyzed is indicated.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21526/elife-21526-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Four-cell embryos were injected with 50 pg 2SAVentx2-Myc RNA per cell, fixed at tailbud stage 25 and processed for WISH with pou5f3.2 probe. (B) Four-cell embryos were injected with 30 ng Ventx2-MO (Vx2-MO) per blastomere, collected at stage 10.5 and processed for RT-qPCR. (C) Embryos injected as in B were processed for WISH analysis at early gastrula stage 10.5 with ventx1 and gsc probes (vegetal view). (D). Four-cell embryos were injected with 25 ng Mk-MO, with or without 7.5 ng Vx2-MO, in each blastomere, collected at gastrula stage 10.5, and processed for WISH with indicated probes. Note that embryos stained for xk81a1 (epidermis) were injected in one ventral animal blastomere at 16 cell stage and collected at late gastrula stage 13. Embryos stained for gsc were hemisectioned prior to staining to improve probe penetration. In A and D, the number of embryos exemplified by the photograph over the total number of embryos analyzed is indicated. For the RT-qPCR graph, error bars represent s.e.m. values of three independent experiments with two technical duplicates. For statistical analysis, samples from injected embryos were compared with samples from uninjected control embryos by Unpaired Student\u2019s t-test. *p<0.05, **p<0.005, ***p<0.0001.\n\n## Discussion\n\nThe findings presented here reveal a mechanism for the control of embryonic cell competence to differentiate, which is linked to the spatio-temporal stability of pluripotency factors in vivo. Specifically, MEK1 activity counteracts Ventx2 activity, both at transcriptional and post-translational levels, which ensures the transition from refractory to responsive states of embryonic cells. In pluripotent blastula cells, MEK1 is necessary for asymmetric distribution of Ventx2 during cell division, generating Ventx2 positive and negative daughter nuclei. By promoting early heterogeneous distribution together with developmentally regulated nuclear clearance of Ventx2, we propose that MEK1 is a fundamental cue for pluripotency state extinction in vivo. To our knowledge, this is the first reported regulatory mechanism that correlates the asymmetric distribution and stability of a transcription factor with cell pluripotency in vertebrate embryos. Although we used exogenous Ventx2 tagged proteins to reveal this mechanism, the rescue of cell differentiation in double MEK1/Ventx2 morphants suggests that endogenous Ventx2 is under the same control. Our data are consistent with a recent finding, whereby the Wnt/\u03b2-catenin pathway orients asymmetric cell division of mESCs and generates unequal distribution of pluripotency factors, which impacts on cell potency in vitro (Habib et al., 2013).\n\nHow does MEK1 regulate Ventx2 asymmetry and stability in Xenopus embryonic cells? Ventx2 phosphorylation in the PEST motif was shown to be required for ubiquitination and degradation (Zhu and Kirschner, 2002). Thus, our observation that mutation of the Ventx2 PEST motif prevents unequal distribution in daughter nuclei suggests that the asymmetric distribution of Ventx2 during mitosis and proteasome activity may be related. In the simplest scenario, MEK1 may act directly or through MAPK to phosphorylate the Ventx2 PEST motif and promote Ventx2 proteolysis. Supporting this hypothesis, the MAPK ERK1 is a known regulator of pluripotency factor stability in vitro (Spelat et al., 2012; Kim et al., 2014), and MAPK is predicted to phosphorylate one of the key serine residues in the Ventx2 PEST domain. We note, however, that MEK1 depletion caused stronger responses than 2SAVentx2 injection, suggesting that MEK1 regulates pluripotency through additional residues in Ventx2 and/or through additional effectors. Interestingly, the BMP signal mediator Smad1 was also found to be asymmetrically distributed during somatic cell division, when marked for degradation by MAPK (Fuentealba et al., 2008). There, phosphorylation by MAPK triggers a subsequent phosphorylation event by GSK3, followed by polyubiquitinylation and proteosomal degradation of activated Smad1, leading to BMP signal termination. In contrast, we did not find evidence of GSK3 involvement in the repression of pluripotency genes and in Ventx2 degradation (Supplementary file 1), consistent with previous data (Zhu and Kirschner, 2002). Thus, MEK1 may trigger important proteolytic events in early embryos, independently of GSK3. Although it is tempting to think that MEK1 activity itself may be polarized during division of pluripotent embryonic cells, evidence for such mechanism is lacking in the literature. Alternatively, it is possible that MEK1 controls downstream regulators endowed with asymmetric distribution or activity. For instance, ERK1 was shown to antagonize the polarized PAR-1 kinase during asymmetric cell divisions of the early C. elegans embryo (Spilker et al., 2009). Also related to this idea, asymmetric proteasome segregation was shown to control polarized degradation of the phosphorylated transcription factor T-bet during T lymphocyte division (Chang et al., 2011). Finally, it remains possible that MEK1 activity would be antagonized by one or several phosphatases that would protect Ventx2 from degradation, and would somehow contribute to its unequal inheritance in daughter nuclei. Such a balance between the PAR-1 kinase and PP2A phosphatase was shown to control the state of PAR-3 phosphorylation and thus the polarity of dividing embryonic neuroblasts in Drosophila (Krahn et al., 2009). Future work should address the precise mechanism of action of MEK1 upon Ventx2 during division of Xenopus pluripotent cells, a question of high relevance to stem cell biology.\n\nUnexpectedly, we observed that MEK1 depletion caused Ventx2 asymmetric localization in the basal membrane cortex of blastula cells. This localization was not apparent in control cells, suggesting that it does not simply reflect the over-abundance of Ventx2 protein due to synthetic RNA injection. Rather, this suggests that MEK1 actively prevents membrane association of Ventx2. As stabilized 2SAVentx2 also localized at membranes, this territory may represent a storage compartment for Ventx2 protein. Thus, it will be important to evaluate whether the endogenous Ventx2 protein also displays this unexpected localization in normal or MEK1 morphant embryos. The asymmetric localization of Ventx2 at the basal membrane cortex of MEK1 depleted cells suggests possible links between MEK1 and polarity effectors such as PAR-1 and aPKC (Ossipova et al., 2009; Chalmers et al., 2003). In relevance to our observations, it was reported that Pou5f1 and Pou5f3 proteins localize at the cell membrane both in mESCs and in Xenopus animal pole cells, where they form a complex with E-cadherin and \u03b2-catenin (Livigni et al., 2013; Faunes et al., 2013). Since Ventx2 can physically interact with Pou5f3 proteins (Cao et al., 2004), we speculate that MEK1 may be required to destabilize the interaction between Ventx2 and Pou5f3, not only in the nucleus but also at the membrane, further enhancing the competence of embryonic cells to exit pluripotency.\n\nVentx2 is a bona fide marker of pluripotency during Xenopus embryogenesis (Scerbo et al., 2012; Buitrago-Delgado et al., 2015), and the above data indicate that its activity must be inhibited for cells to engage into differentiation pathways. However, the link between Ventx genes and pluripotency in other vertebrates, particularly in mammals, has not been actively studied. This may reflect the absence of Ventx orthologs in the rodent genus, although a unique VENTX gene is present in human (Supplementary file 3). Phylogenetic and synteny analyses suggest that a Ventx gene appeared at the base of gnathostome evolution, and its prototypical genomic locus has not changed for 450 My (Supplementary files 2 and 3). Human VENTX is the ortholog of Xenopus, birds, sauropside and coelacanth Ventx2 (Supplementary files 2 and 4). Interestingly, a recent study reported a 6-fold up-regulation of VENTX (higher than NANOG, PRDM14, POU5F1 and SOX2) in naive hESCs compared to conventional hESCs (Theunissen et al., 2014). In this study, naive hESCs were obtained in the presence of inhibitors of five kinases, including MEK1, suggesting that repression of VENTX by MEK1 may be conserved in human pluripotent cells. Beyond such circumstantial evidence, the next question is whether VENTX is an important regulator of pluripotency in human, as it is in Xenopus. Initial support for this idea comes from the identification of VENTX in an unbiased functional screen as a positive regulator of Pou5f1 expression in hESCs (Chia et al., 2010). Together with the results reported here and elsewhere (Scerbo et al., 2012; Buitrago-Delgado et al., 2015), such evidence certainly grants more detailed analysis regarding the role of VENTX in the human pluripotency network. As VENTX is absent in rodents, we propose that Xenopus represents an appropriate and powerful model to undertake comparative approaches with human and shed light on the control mechanisms of pluripotency in vivo and at single cell level.\n\n## Materials and methods\n\n### Xenopus general procedures and micro-injections\n\nXenopus laevis embryos were obtained from lab-bred adults (Nasco) by in vitro fertilization, de-jellied, injected and cultured in modified Barth\u2019s solution (MBS) as previously described (Marchal et al., 2009). Capped mRNAs for injection were synthesized with mMessage mMachine kits (Ambion,\u00a0Austin, Texas). When necessary, lineage tracing was achieved through co-injection of Fluorescent Lysine DeXtran (FLDX) or membrane bound GFP-CAAX revealed by anti-FLDX or anti-GFP immune staining. The pCS2-Ventx2-Myc and pCS2-2SAVentx2-Myc (previously reported as Xom but now referred as ventx2.2, Xenbase-Xenopus Genome Initiative) plasmids were used as described (Zhu and Kirschner, 2002). The rabbit pCS2-CA-MEK1 plasmid was linearized with NcoI and mRNA synthesized with SP6 polymerase. To rescue Mk morphant embryos, the hamster pECE-MEK1 plasmid (Pag\u00e8s et al., 1994) was digested with XbaI and HindIII to isolate MEK1 ORF, which was subsequently cloned into the pSP64T vector. This new construct was linearized with BamHI and mRNA synthesized with SP6 polymerase. The dominant-negative GSK3 (dnGSK3) expression construct was used as previously described (Puppo et al., 2011). Mk-MO ATG (5\u2019-TGGGCGTAGGCTTCTTTTTAGGCAT\u20133\u2019) and Mk-MO (5\u2019-TGAGTGGAGAGCAGAGCGAGTGCCC\u20133\u2019) were purchased from GeneTools, LLC. The Vx2-MO was described in (Sander et al., 2007). BMP4 (R&D System; 314 BP), NODAL (R&D System; 1315-ND) and NOGGIN (R&D System; 334 NG) proteins were resuspended as recommended by manufacturers, and injected through the animal pole into the blastocoelic cavity of blastula stage embryos, or added in 1xMBS to culture animal cap explants. Throughout the study, each injection experiment was performed three or more times on different batches of embryos. Rescue experiments using Mk-MO and wild-type MEK1 were repeated five times, and blastopore closure quantification was performed on three independent experiments as previously described (Martinez et al., 2015). The number of embryos analyzed by condition ranged between 20 and 100. In total, over 700 MEK1 morphant embryos were analyzed with various methods and markers, with a very high penetrance of the reported phenotypes.\n\n### Stainings\n\nWhole-mount chromogenic in situ hybridization (WISH) was performed as previously described (Marchal et al., 2009), and photographs were taken on a Zeiss stereomicroscope equipped with a DS-L2 Nikon camera. Plasmids used to make antisense riboprobes are described in Supplementary file 5. FLDX was detected by incubation with alkaline phosphatase conjugated anti-fluorescein antibody (dilution 1/10,000; Roche). Sections were prepared and immune staining was performed as previously described (Cibois et al., 2015; Castillo-Briceno and Kodjabachian, 2014). Primary antibodies were as follows: anti-Myc (9E10; Santa Cruz Biotech, dilution 1/300 RRID:AB_627268), anti-GFP (GFP-1020; 2BScientific; dilution 1/1000 RRID:AB_10000240), anti-\u03b3-Tubulin (ab16504; Abcam; dilution 1/1000 RRID:AB_443396), anti-phospho-MEK1 (9121; Cell Signaling Technology; dilution 1/400 RRID:AB_331648). Alexa Fluor secondary antibodies (Molecular Probes) were used at a dilution of 1:500. To stain DNA, DAPI (Invitrogen), at a final concentration of 10 \u03bcg/ml, was added to one of the final MABX washes and incubated for 3 min at room temperature. Stained sections were mounted with Fluoromount G (Fluoprobes) and allowed to dry before imaging on a Zeiss LSM780 confocal microscope. Images were acquired as eight bit/channel and with 1024\u00a0\u00d7\u00a01024 pixel resolution, and processed with ImageJ (RRID:SCR_003070) for maximum intensity z-projection and/or merge of channels. Z-projections of green channel images were used to count GFP-positive injected cells. The percentage of Ventx2 positive nuclei was determined using a merge of Myc and GFP channels in order to consider only co-injected cells. For blastula stage 9 quantification of the percentage of Myc positive nuclei, a total of 251, 244 and 238 GFP-positive cells from Ventx2-Myc, Mk-MO+Ventx2-Myc, 2SAVentx2-Myc injected embryos was analyzed. For gastrula stage 11 quantification of the percentage of Myc positive nuclei, a total of 213, 238 and 207 GFP-positive cells from Ventx2-Myc, Mk-MO+Ventx2-Myc, 2SAVentx2-Myc injected embryos was analyzed. For statistical analyses, samples from Mk-MO+Ventx2-Myc and 2SAVentx2-Myc injected embryos were compared with samples from Ventx2-Myc injected embryos (as control) by Unpaired Student\u2019s t-test with Welch\u2019s correction (95% of confidence interval), and error bars represent s.e.m. values. To analyze dividing cells, fluorescence intensity levels of Myc-tagged Ventx2 proteins were measured using ImageJ (RRID:SCR_003070), from stacks of confocal images from 5 to 10 sections per independent experiment (at least four for each stage analyzed). For quantification of Myc-intensity ratios between \u03b1 and \u03b2 daughter nuclei, stack-by-stack calculation of the ratios of fluorescence intensity of Ventx2-Myc (n\u00a0=\u00a042 stacks) alone or with Mk-MO (n\u00a0=\u00a051 stacks), or of 2SAVentx2-Myc (n\u00a0=\u00a056 stacks) from four dividing cells per case was performed. Non-parametric Mann-Whitney U test (95% confidence interval) was used to assess statistical differences among samples and error bars represent s.e.m. values. Statistical analysis was made using GraphPad Prism 6 (RRID:SCR_002798). For western blotting, embryos were snap-frozen and processed as described (Luxardi et al., 2010). Proteins were transferred to PVDF membranes (Bio-Rad) and analyzed by immunoblotting with appropriate primary antibodies: anti-Myc (9E10; Santa Cruz Biotech, dilution 1/100 RRID:AB_627268), anti-GFP (GFP-1020; 2BScientific; dilution 1/200 RRID:AB_10000240); anti-MEK1 (4A5; Cliniscience; dilution 1/1000 RRID:AB_2042302), anti-\u03b1-tubulin (DM1A; AbCam; dilution 1/1000 RRID:AB_2241126). HRP-conjugated were used as secondary antibodies (1/5000, Dako). Immunoreactive bands were detected using the Immobilon ECL Kit (Merck Millipore) on a LAS-3000 imager (Fujifilm).\n\n### Reverse transcriptase quantitative polymerase chain reaction (RT-qPCR)\n\nMk-MO injected and uninjected (controls) embryos were grown until gastrula stage 10.5, and then processed for RT-qPCR, as previously described (Scerbo et al., 2012; Castillo-Briceno and Kodjabachian, 2014). Ten\u00a0embryos per biological replicate were used. Animal pole explants from injected and uninjected embryos were taken at blastula stage 9, grown in 1X MBS until late gastrula stage 13, and processed for RT-qPCR. 15 animal pole explants per biological replicate were used. RT-qPCR Primers are listed in Supplementary file 6. Statistical analyses were done using GraphPad Prism 6 (RRID:SCR_002798)\n",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "9b0a39d7-e924-42b1-b031-9512da6182cc",
+      "submission_id": "dd973296-fd7b-4394-809b-b41b73c2db80",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lee L Rubin, Harvard Stem Cell Institute, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21526.021](https://doi.org/10.7554/eLife.21526.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Lineage commitment of embryonic cells involves MEK1-dependent clearance of pluripotency regulator Ventx2\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAlthough we agree that your work is of potential interest, further experimentation is necessary to convince them of the validity of your conclusions. Among other studies, you would need to use animal caps instead of whole embryos, carry out a more comprehensive analysis to definitely rule out roles for other signaling pathways, perform other types of confirmatory experiments that don't rely on the use of morpholinos and address the problem of maternally-contributed MEK1 as a confounding variable.\n\nReviewer #1:\n\nThis manuscript uses the intact Xenopus laevis embryo as a model system to elucidate the molecular mechanisms involved in the regulation of pluripotency, focussing on MEK1 (map2k1) regulation of Ventx2.2 (encoded by one of a cluster of six related Ventx genes in X. laevis). Ventx proteins, absent in the mouse but present in human, appear to be functionally analogous to the transcription factor Nanog (absent in X. laevis).\n\nThe authors demonstrate that MEK1 activity acts to modulate exogenous (and presumably endogenous) Ventx2.2 protein stability; in response to morpholino-mediated down-regulation of MEK1, Ventx2.2 levels increase, the post-mitotic asymmetry in nuclear (exogenous) Ventx2.2 protein disappears, and cellular differentiation is suppressed. The cell differentiation phenotype is rescued in MEK1 morphant embryos by the co-injection of a translation-blocking anti-Ventx2 morpholino.\n\nExperimental design question: While the authors recognize that Xenopus ectodermal explants (animal caps) are effectively pluripotent they have chosen to carry out their studies in whole embryos, which are subject to the complexities of inductive interactions and morphogenetic processes.\n\nPerhaps they could explain their decision, and comment on whether they have examined differentiation in the simpler animal cap system.\n\nReviewer #2:\n\nThis work explores the role of MEK and the transcription factor Ventx2 (similar to mammalian Nanog) in regulating the transition from pluripotency to lineage commitment in Xenopus. The authors show that MEK knockdown results in a failure of mesoderm and ectoderm development, based on marker gene analysis. The authors further provide evidence that MEK acts by negatively regulating the mRNA levels and protein stability of Ventx2. They report that Ventx2 protein localizes to centrosomes during mitosis and is asymmetrically distribute to one daughter cell. They conclude that in order for embryonic cells to transition from pluripotency to lineage specification, MEK down regulates Ventx2, which would otherwise maintain the pluripotent state much like Nanog does in mammals.\n\nThe data supporting the conclusion that MEK is required for lineage specification in part through Ventx2 phosphorylation and degradation is strong, but not entirely novel (see below). The main weakness is with the conclusion that MEK inhibition and Ventx2 maintain pluripotency in Xenopus, which is not very well supported. Although previous reports suggest that Ventx2 might promote pluripotency, this data is not very robust and is built largely on the fact that Ventx2 can repress differentiation based on a limited marker analysis. Many studies over the past 20 years have shown that MEK and Ventx are involved in mesoderm and neuro-ectoderm development (e.g. PMIDs: 7789277, 7541116, 17525737). In the case of MEK this was attributed to the inducing role of FGF, which has not been ruled out here. Given these previous studies the authors need more rigorous, genome wide analysis, showing that what they are observing is not just the known role of MEK and Ventx in specific lineages. A good test of their hypothesis would be to deplete MEK from animal caps and/or embryos and look at ability of BMP, Activin or Wnt to induce any lineages (including endoderm) by RNA-seq or microarray. Then use a more comprehensive markers analysis (in situ or RT-PCR of a broader panel) to test whether combined MEK and Ventx2 depletion restored all the lineages. Without a genome wide analysis, or some functional assay, showing that the cells cannot differentiate into any lineages it is impossible to conclude that the pluripotency to commitment transition is really involved.\n\nIn addition it has already been shown that Ventx2 degradation is promoted GSK3 phosphorylation (PMID:12408807). Since GSK3 has a preference for residues that are primed by MAPK phosphorylation the observation that MEK is required for Ventx2 phosphorylation and degradation is not surprising. In fact the authors should check whether the MEK regulated activity they observe is GSK3-dependent. It is known that Smad1 is phosphorylated by MEK and GSK3, and recruited to the centrosome where it is asymmetrically localized and degraded (PMID:18045539), similar to what is observed here.\n\nGiven the known role of MEK (and GSK-3) as well as Nanog in mammalian pluripotency, the model that the authors propose is very attractive. If they could provide more rigorous data to support their claim then this would be an important advance.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Lineage commitment of embryonic cells involves MEK1-dependent clearance of pluripotency regulator Ventx2\" for further consideration at eLife. Your revised article has been evaluated by Marianne Bronner (Senior Editor), a Reviewing Editor, and one reviewer.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below. I would like to stress that eLife does not normally allow for multiple rounds of review so it is essential that you complete these relatively minor but important revisions or the paper will not be considered further. However, we will understand if you would prefer to withdraw the paper in the event you are not prepared to perform this essential additional work.\n\n1) RNA encoding the wild type form of MEK1 rescues the MEK1 morpholino phenotype. Seems like a straightforward and necessary experiment that would justify generating the construct.\n\n2) Since it could be done with simple qRT-PCR, it seems important to know whether the Ventx2 morpholino influences the expression of any of the other Ventx genes?\n\n3) Rather than argue the point, the authors should repeat the study on GSK3-MEK interaction as previously suggested (\"In fact the authors should check whether the MEK regulated activity they observe is GSK3-dependent.\"), as it would both solidify previous conclusions and help define the mechanism reported here.\n\n4) As previously suggested, please test the hypothesis by depleting MEK from animal caps and/or embryos and look at ability of BMP, Activin or Wnt to induce any lineages), would address my concerns about whole embryos versus animal caps. In this case, qRT-PCR of a few diagnostic markers (rather than RNA SEQ or microarray analyses) should be sufficient.\n",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "acce60cc-6696-4001-9bbe-67c617b17e9a",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C1",
+      "claim": "MEK1 was required to make Xenopus pluripotent cells competent to respond to all cell fate inducers tested.",
+      "claim_type": "EXPLICIT",
+      "source": "MEK1 was required to make Xenopus pluripotent cells competent to respond to all cell fate inducers tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "3a3b634f-f00d-4d6a-a7e0-03430157e656",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C2",
+      "claim": "MEK1 activity was necessary to clear the pluripotency protein Ventx2 at the onset of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, MEK1 activity was necessary to clear the pluripotency protein Ventx2 at the onset of gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot and immunofluorescence data showing Ventx2 persistence in MEK1 morphants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "e7890742-620e-491b-9a58-eafb93a23d9f",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C3",
+      "claim": "Concomitant MEK1 and Ventx2 knockdown restored the competence of embryonic cells to differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, concomitant MEK1 and Ventx2 knockdown restored the competence of embryonic cells to differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by rescue experiments showing restored marker expression and morphogenesis in double morphants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "3d594a26-37a2-43ad-962b-22ebdc291aeb",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C4",
+      "claim": "MEK1 appeared to control the asymmetric inheritance of Ventx2 protein following cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, MEK1 appeared to control the asymmetric inheritance of Ventx2 protein following cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by confocal microscopy data showing asymmetric Ventx2 distribution in dividing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "25863f33-336a-4f62-a647-233714565ca6",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C5",
+      "claim": "When Ventx2 lacked a functional PEST-destruction motif, it was stabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, when Ventx2 lacked a functional PEST-destruction motif, it was stabilized, displayed symmetric distribution during cell division and could efficiently maintain pluripotency gene expression over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments with 2SAVentx2-Myc showing increased nuclear presence and persistence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "64a26dc1-aea1-4b3e-b6ec-4da125ea066f",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C6",
+      "claim": "When Ventx2 lacked a functional PEST-destruction motif, it displayed symmetric distribution during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, when Ventx2 lacked a functional PEST-destruction motif, it was stabilized, displayed symmetric distribution during cell division and could efficiently maintain pluripotency gene expression over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by quantification of Myc signal intensity ratios between daughter nuclei.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "ee25af65-427b-4ac4-9ec5-2a34b3c9b2fb",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C7",
+      "claim": "When Ventx2 lacked a functional PEST-destruction motif, it could efficiently maintain pluripotency gene expression over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, when Ventx2 lacked a functional PEST-destruction motif, it was stabilized, displayed symmetric distribution during cell division and could efficiently maintain pluripotency gene expression over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by WISH data showing sustained pou5f3.2 expression in 2SAVentx2 injected embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "820dcf2c-fc39-4855-83f0-a09a7edbd378",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C8",
+      "claim": "In mammals, epiblast cells of the developing blastula embryo transit through a series of pluripotent states until gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, epiblast cells of the developing blastula embryo appear to transit through a series of pluripotent states until gastrulation, which signs the global extinction of pluripotency and the rise of cell competence to somatically commit (Hackett and Surani, 2014; Boroviak and Nichols, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "3e6f4dac-80b7-47b6-9e36-3cab38d4da78",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C9",
+      "claim": "Gastrulation signs the global extinction of pluripotency and the rise of cell competence to somatically commit in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, epiblast cells of the developing blastula embryo appear to transit through a series of pluripotent states until gastrulation, which signs the global extinction of pluripotency and the rise of cell competence to somatically commit (Hackett and Surani, 2014; Boroviak and Nichols, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "143fe789-d766-4e91-893a-cd52456ad0f7",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C10",
+      "claim": "In amphibians, cells of the blastula animal hemisphere are somatically pluripotent.",
+      "claim_type": "EXPLICIT",
+      "source": "In amphibians, cells of the blastula animal hemisphere are somatically pluripotent, and their broad potential is globally lost at gastrulation (Snape et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "59494a69-b6af-4ac4-bf78-889f1321fbb1",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C11",
+      "claim": "The broad potential of amphibian blastula animal hemisphere cells is globally lost at gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In amphibians, cells of the blastula animal hemisphere are somatically pluripotent, and their broad potential is globally lost at gastrulation (Snape et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "30be6d4a-d5a9-4c38-ad4f-e6d98e8a8c52",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C12",
+      "claim": "Pou-V members Pou5f3 and Pou5f1 share functional homology in regulating the uncommitted state of progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Pou-V members Pou5f3 and Pou5f1 share functional homology in regulating the uncommitted state of progenitor cells (Livigni et al., 2013) and in reprogramming somatic cells to induced-Pluripotent Stem Cells (iPSCs) (Tapia et al., 2012; Takahashi and Yamanaka, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "49835b7a-fcfb-4150-9eb8-c8b6ebcd33e8",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C13",
+      "claim": "Pou-V members Pou5f3 and Pou5f1 share functional homology in reprogramming somatic cells to induced-Pluripotent Stem Cells (iPSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Pou-V members Pou5f3 and Pou5f1 share functional homology in regulating the uncommitted state of progenitor cells (Livigni et al., 2013) and in reprogramming somatic cells to induced-Pluripotent Stem Cells (iPSCs) (Tapia et al., 2012; Takahashi and Yamanaka, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "5b10564d-991a-4cef-8747-f2eee3f205d7",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C14",
+      "claim": "The Nanog gene is absent in the Xenopus genus.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, phylogenetic, biochemical and functional analyses suggest that the role of Nanog in pluripotency is not conserved in all vertebrates, as the Nanog gene is absent in the Xenopus genus (Scerbo et al., 2014) and teleostean Nanog does not support pluripotency during development (Camp et al., 2009; Scerbo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "77d776a9-0489-4214-8343-4010bfc1d080",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C15",
+      "claim": "Teleostean Nanog does not support pluripotency during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, phylogenetic, biochemical and functional analyses suggest that the role of Nanog in pluripotency is not conserved in all vertebrates, as the Nanog gene is absent in the Xenopus genus (Scerbo et al., 2014) and teleostean Nanog does not support pluripotency during development (Camp et al., 2009; Scerbo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "823eade3-30b0-499f-aab1-1781419fa74e",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C16",
+      "claim": "Ventx transcription factors act as guardians of pluripotency during embryogenesis in Xenopus and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent analyses on Xenopus and zebrafish embryos suggest that Ventx transcription factors, belonging to the same NK family as Nanog (Scerbo et al., 2014), act as guardians of pluripotency during embryogenesis (Scerbo et al., 2012; Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "f320469a-da86-4a4d-b7a7-bd91f8da6d2c",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C17",
+      "claim": "Ventx factors integrate the pluripotency network by coordinating and maintaining the activity of Pou-V factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx factors integrate the pluripotency network by coordinating and maintaining the activity of Pou-V factors (Scerbo et al., 2012; Zhao et al., 2013; Cao et al., 2004), and by regulating cell response to TGF-\u03b2/Smad pathways (Zhu and Kirschner, 2002; Cao et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "95f578d0-c48f-41fc-8ab5-797f8f4ff3c1",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C18",
+      "claim": "Ventx factors integrate the pluripotency network by regulating cell response to TGF-\u03b2/Smad pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx factors integrate the pluripotency network by coordinating and maintaining the activity of Pou-V factors (Scerbo et al., 2012; Zhao et al., 2013; Cao et al., 2004), and by regulating cell response to TGF-\u03b2/Smad pathways (Zhu and Kirschner, 2002; Cao et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "86f818e0-0adb-4098-9056-8a4b77c28a7f",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C19",
+      "claim": "MEK1 activity can negatively regulate the expression of Nanog and Pou5f1 proteins in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "MEK1 activity can negatively regulate both the expression in vivo (Boroviak et al., 2015; Boroviak and Nichols, 2014) and the stability in vitro of Nanog and Pou5f1 proteins (Kim et al., 2014; Spelat et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "51cf0e9d-e78d-4e66-a7d2-ab9a087408fd",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C20",
+      "claim": "MEK1 activity can negatively regulate the stability of Nanog and Pou5f1 proteins in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "MEK1 activity can negatively regulate both the expression in vivo (Boroviak et al., 2015; Boroviak and Nichols, 2014) and the stability in vitro of Nanog and Pou5f1 proteins (Kim et al., 2014; Spelat et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "2ccad7d3-8f90-45b6-bd86-aae0d2af2427",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C21",
+      "claim": "Activation of the MAPK ERK1, resulting from phosphorylation by MEK1, occurs at early blastula stages, primarily in the pluripotent cells of the animal and marginal zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the MAPK ERK1, resulting from phosphorylation by MEK1, is known to occur at early blastula stages, primarily in the pluripotent cells of the animal and marginal zones (Curran and Grainger, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "51dea7e1-ac9c-4720-9a42-11a455f845ff",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C22",
+      "claim": "FGF-mediated ERK1 activation is necessary for the competence of animal blastula cells to respond to mesoderm and neural inducers.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies revealed that FGF-mediated ERK1 activation is necessary for the competence of animal blastula cells to respond to mesoderm and neural inducers (Cornell and Kimelman, 1994; Delaune et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "7fefa38e-57b1-4742-beaa-da179f268626",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C23",
+      "claim": "Mk-MO and Mk-MO ATG both inhibited MEK1 translation.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed two independent MOs, in the 5'UTR (Mk-MO), and at the ATG (Mk-MO ATG), which both inhibited MEK1 translation and antagonized development (Figure 1A\u2013D and Figure 1\u2014figure supplement 1\u20131A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis in Figure 1A showing reduced MEK1 protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "058c662a-7d5a-45aa-a4a7-03453bd9def6",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C24",
+      "claim": "Mk-MO and Mk-MO ATG both antagonized development.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed two independent MOs, in the 5'UTR (Mk-MO), and at the ATG (Mk-MO ATG), which both inhibited MEK1 translation and antagonized development (Figure 1A\u2013D and Figure 1\u2014figure supplement 1\u20131A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by morphological analysis in Figure 1B and marker expression in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "9358db3f-c8a0-4bc0-a700-984f31fc5fd4",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C25",
+      "claim": "Mk-MO did not up-regulate p53 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Mk-MO did not up-regulate p53 expression (Figure 1\u2014figure supplement 1\u20131B), unlike the non-specific response triggered by some MOs in zebrafish embryos (Robu et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR data in Figure 1\u2014figure supplement 1\u20131B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "a3ddf151-820a-4f17-b220-133698afc62e",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C26",
+      "claim": "A wild-type form of MEK1 from hamster efficiently rescued mesoderm and neural specification in Mk morphant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, a wild-type form of MEK1 from hamster efficiently rescued mesoderm and neural specification, as well as early morphogenesis, in Mk morphant embryos, indicating that MEK1 knockdown was specific (Figure 1D and Figure 1\u2014figure supplement 1\u20131C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by WISH analysis in Figure 1D demonstrating restored marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "311b663f-a9c2-418f-b15b-88ee80bc8466",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C27",
+      "claim": "MEK1 activity was required for the expression of multiple neural and non-neural ectoderm markers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MEK1 activity was required for the expression of multiple neural and non-neural ectoderm, as well as mesoderm markers (Figure 1\u2014figure supplement 1\u20132A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR and WISH data in Figure 1\u2014figure supplement 1\u20132A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "6c1f5693-45d4-4bcd-bd39-619e8c76be08",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C28",
+      "claim": "MEK1 activity was required for the expression of mesoderm markers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MEK1 activity was required for the expression of multiple neural and non-neural ectoderm, as well as mesoderm markers (Figure 1\u2014figure supplement 1\u20132A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR and WISH data in Figure 1\u2014figure supplement 1\u20132A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b3c6f7b5-bf3e-440f-8d4a-95f454b45065",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C29",
+      "claim": "MEK1 activity was dispensable for the expression of endoderm markers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MEK1 activity was found to be dispensable for the expression of endoderm markers and of immediate-early targets of the BMP and Nodal pathways (Figure 1\u2014figure supplement 1\u20132C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RT-qPCR and WISH data in Figure 1\u2014figure supplement 1\u20132C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "fa21a39c-add6-49ef-8f80-e440254e14b4",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C30",
+      "claim": "MEK1 activity was dispensable for the expression of immediate-early targets of the BMP and Nodal pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MEK1 activity was found to be dispensable for the expression of endoderm markers and of immediate-early targets of the BMP and Nodal pathways (Figure 1\u2014figure supplement 1\u20132C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RT-qPCR and WISH data in Figure 1\u2014figure supplement 1\u20132C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "14578b6c-2483-4d95-9b11-fb1d7d384402",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C31",
+      "claim": "The expression of the epidermal markers dlx3, gata2 and xk81a1 was reduced in MEK1 morphants, despite the maintained expression of the epidermal inducer bmp4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the expression of the epidermal markers dlx3, gata2 and xk81a1 was reduced in MEK1 morphants, despite the maintained expression of the epidermal inducer bmp4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data showing reduced epidermal marker expression but maintained bmp4 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "bcf938af-02ce-43c8-a8d1-070dc0210bc6",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C32",
+      "claim": "Recombinant BMP4, NODAL, and NOGGIN proteins induced efficient expression of epidermal, mesodermal and neural markers, respectively, in wild-type but not in MEK1-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, recombinant BMP4, NODAL, and NOGGIN proteins induced efficient expression of epidermal, mesodermal and neural markers, respectively, in wild-type but not in MEK1-depleted cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 2A showing differential responses to inducers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "66a28ef8-aecd-4465-9617-54d4bed6d2d3",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C33",
+      "claim": "BMP signaling inhibition caused neural induction in wild-type embryos, but not in Mk-MO ATG morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, BMP signaling inhibition, obtained by injection of dominant-negative Smad5 (Marchal et al., 2009), caused neural induction in wild-type embryos, but not in Mk-MO ATG morphants (Figure 2\u2014figure supplement 2\u20131).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by WISH analysis in Figure 2\u2014figure supplement 2\u20131.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "c5874618-c055-4e4e-b2eb-46a0b627dcec",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C34",
+      "claim": "Multiple epidermal, neural, mesodermal and endodermal markers were induced by BMP4, NOGGIN, low and high doses of NODAL, respectively, in explanted animal ectoderm, but these responses were all abolished in the presence of Mk-MO.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas multiple epidermal, neural, mesodermal and endodermal markers were induced by BMP4, NOGGIN, low and high doses of NODAL, respectively, these responses were all abolished in the presence of Mk-MO (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR data in Figure 2B showing loss of inducer responses in MEK1 morphants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "2f926edb-ae95-45e5-b41d-7bab9fb16eeb",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C35",
+      "claim": "The expression of pou5f3.1 (oct91), pou5f3.2 (oct25), ventx1 and ventx2 was significantly up-regulated in MEK1-depleted embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis on early gastrula embryos revealed that the expression of pou5f3.1 (oct91), pou5f3.2 (oct25), ventx1 and ventx2 was significantly up-regulated in MEK1-depleted embryos, whereas no detectable effect was measured on sox3 and cdh1 (E-cadherin) (Figure 2B)(Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "892a6cab-0a3b-47b2-a9bb-febb0fe3e091",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C36",
+      "claim": "No detectable effect of MEK1 depletion was measured on sox3 and cdh1 (E-cadherin) expression.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis on early gastrula embryos revealed that the expression of pou5f3.1 (oct91), pou5f3.2 (oct25), ventx1 and ventx2 was significantly up-regulated in MEK1-depleted embryos, whereas no detectable effect was measured on sox3 and cdh1 (E-cadherin) (Figure 2B)(Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "12d7fdf3-31b6-46c9-b26b-02f0b2aea79a",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C37",
+      "claim": "ventx2 and pou5f3.2 are initially expressed throughout the pluripotent animal hemisphere and are restricted to non-neural ectoderm and floor plate at late gastrulation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "ventx2 and pou5f3.2 are initially expressed throughout the pluripotent animal hemisphere and are restricted to non-neural ectoderm and floor plate at late gastrulation, respectively, reflecting the progressive engagement of embryonic cells into differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known expression patterns and is supported by WISH data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b1a29c91-4aab-47fc-9a06-6a8499096d0d",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C38",
+      "claim": "ventx2 and pou5f3.2 remained ubiquitously expressed in MEK1 morphants at late gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, these two genes remained ubiquitously expressed in MEK1 morphants at late gastrula stage (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b7583c36-8ada-4cfc-ac8a-ae1f135a2cf5",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C39",
+      "claim": "pou5f3.2 and ventx2 expression failed to be silenced in MEK1 morphants even when morphogenesis was not altered.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, targeted injection of Mk-MO in dorsal or ventral ectoderm confirmed that pou5f3.2 and ventx2 expression failed to be silenced, even when morphogenesis was not altered (Figure 2\u2014figure supplement 2\u20132A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by WISH analysis in Figure 2\u2014figure supplement 2\u20132A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "a15c5280-ca9f-4ddb-a8d8-50bac3086a18",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C40",
+      "claim": "The maintenance of pou5f3.2 expression in MEK1 morphants was still visible at mid-neurula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the maintenance of pou5f3.2 expression in MEK1 morphants was still visible at mid-neurula stage (Figure 2\u2014figure supplement 2\u20132B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 2\u2014figure supplement 2\u20132B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "66e8d1b3-4087-49fe-a0cf-27fcc182cb03",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C41",
+      "claim": "Gene expression analysis of MEK1-depleted animal ectoderm explants at the end of gastrulation revealed a significantly higher expression of pou5f3.2 and ventx2 with a concomitant reduction of the lineage-restricted markers xk81a1, itln1 and \u03b1-tub.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, gene expression analysis of MEK1-depleted animal ectoderm explants at the end of gastrulation revealed a significantly higher expression of pou5f3.2 and ventx2 with a concomitant reduction of the lineage-restricted markers xk81a1, itln1 and \u03b1-tub (Figure 2\u2014figure supplement 2\u20132C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR data in Figure 2\u2014figure supplement 2\u20132C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "6e1a6abb-074f-4a1b-968c-4c4b36523db7",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C42",
+      "claim": "Ventx2 undergoes ubiquitin-mediated degradation in the early gastrula.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, it was shown that Ventx2 undergoes ubiquitin-mediated degradation in the early gastrula (Zhu and Kirschner, 2002), which coincides with the global loss of pluripotency (Snape et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "875e6f48-e723-4677-9459-aa2566382b8d",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C43",
+      "claim": "Ventx2 proteolysis involves a PEST-destruction motif in its N-terminus, which is regulated by phosphorylation by uncharacterized signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx2 proteolysis involves a PEST-destruction motif in its N-terminus, which is regulated by phosphorylation by uncharacterized signaling pathways (Zhu and Kirschner, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "04059e50-a739-41cd-baf6-17b9164a35f6",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C44",
+      "claim": "The PEST domain is conserved in the Ventx family.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, this PEST domain is conserved in the Ventx family (Supplementary file 1)(Supplementary file 4), and one of the two functional serines in the PEST motif of Xenopus Ventx2 is a predicted target of MAPK (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence analysis in Supplementary files and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "bb4e3b6a-121a-456c-8a2c-152b35e64224",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C45",
+      "claim": "One of the two functional serines in the PEST motif of Xenopus Ventx2 is a predicted target of MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, this PEST domain is conserved in the Ventx family (Supplementary file 1)(Supplementary file 4), and one of the two functional serines in the PEST motif of Xenopus Ventx2 is a predicted target of MAPK (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by in silico analysis in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "41f1c940-3461-4ba1-b323-a72c56979ba4",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C46",
+      "claim": "Western blot analysis of embryos injected with RNA encoding Myc-tagged Ventx2 confirmed the reported degradation after the onset of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis of embryos injected with RNA encoding Myc-tagged Ventx2 confirmed the reported degradation after the onset of gastrulation (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot data in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b9ec8a5e-09f4-4679-af9e-e82148e66e81",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C47",
+      "claim": "In MEK1 morphants, Ventx2-Myc remained detectable up until mid-gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in MEK1 morphants, Ventx2-Myc remained detectable up until mid-gastrula stage (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot data in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "d9e30d8d-2eb5-4a71-bc30-1daf19be9fa8",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C48",
+      "claim": "MEK1 knockdown dramatically increased the number of Ventx2-Myc positive cells at both blastula and gastrula stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MEK1 knockdown dramatically increased the number of Ventx2-Myc positive cells at both stages, when compared to control (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence quantification in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "87b0be46-c505-4b14-a658-5f96adc1a0d3",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C49",
+      "claim": "Ventx2-Myc was asymmetrically distributed in daughter cells in control but not in MEK1 morphant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful inspection of blastula cells dividing along the animal-vegetal (apical-basal) axis of the tissue revealed that Ventx2-Myc was asymmetrically distributed in daughter cells in control but not in MEK1 morphant embryos (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by confocal microscopy and quantification in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "e63a77ea-854a-498d-a3ab-e9326bfc68c0",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C50",
+      "claim": "A significant fraction of MEK1-depleted cells displayed Ventx2-Myc signal in the membrane cortex at both blastula and gastrula stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a significant fraction of MEK1-depleted cells displayed Ventx2-Myc signal in the membrane cortex at both stages analyzed (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by confocal microscopy images in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "6646acc7-7017-458e-a058-82a62483f374",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C51",
+      "claim": "At blastula stage, Ventx2-Myc membrane association was polarized with respect to the plane of the tissue, with a clear basal enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "At blastula stage, Ventx2-Myc membrane association was polarized with respect to the plane of the tissue, with a clear basal enrichment (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by confocal microscopy images in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "e62e397b-1ffd-4a1f-867a-f87b74a9ce1e",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C52",
+      "claim": "2SAVentx2-Myc was detectable in the nuclei of control cells, similar to Ventx2-Myc in MEK1 morphant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, 2SAVentx2-Myc was detectable in the nuclei of control cells, similar to Ventx2-Myc in MEK1 morphant cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "7a1ca070-7cfd-4059-84b9-74a40e561756",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C53",
+      "claim": "No marked asymmetric distribution of 2SAVentx2-Myc in daughter nuclei of dividing blastula cells was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no marked asymmetric distribution of 2SAVentx2-Myc in daughter nuclei of dividing blastula cells was observed, suggesting that phosphorylation of the PEST motif is necessary to control Ventx2 asymmetric distribution (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by confocal microscopy and quantification in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "09e49941-04e7-4fae-8606-6598e1fdf578",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C54",
+      "claim": "Phosphorylation of the PEST motif is necessary to control Ventx2 asymmetric distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no marked asymmetric distribution of 2SAVentx2-Myc in daughter nuclei of dividing blastula cells was observed, suggesting that phosphorylation of the PEST motif is necessary to control Ventx2 asymmetric distribution (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that mutation of the PEST motif abolishes asymmetric distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "285638a6-b55c-4a6e-90ab-81c84e256bbe",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C55",
+      "claim": "2SAVentx2-Myc was detectable in the cortex of injected cells, particularly at gastrula stage, similarly to Ventx2-Myc in MEK-1 deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to Ventx2-Myc in MEK-1 deficient cells, 2SAVentx2-Myc was detectable in the cortex of injected cells, particularly at gastrula stage (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by confocal microscopy images in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "74fdb2a0-ab06-4b91-9508-b6d1fcf3f675",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C56",
+      "claim": "Ventx2-Myc localized into the nuclei of blastula cells in prophase and MEK1 depletion did not affect this localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx2-Myc localized into the nuclei of blastula cells in prophase and MEK1 depletion did not affect this localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by confocal microscopy analysis of mitotic phases in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "df4b3634-f961-445f-adf2-d77e732016bb",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C57",
+      "claim": "2SAVentx2-Myc co-localized with chromosomes during prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 2SAVentx2-Myc co-localized with chromosomes during prophase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by confocal microscopy analysis in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "0e2f0bb2-0f46-40b5-8c29-037422082742",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C58",
+      "claim": "Ventx2 is a phosphomitotic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx2 is a phosphomitotic protein (Stukenberg et al., 1997), and it has been proposed that phosphorylation is required for disengagement of transcription factors from chromosomes in metaphase (Stukenberg et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "bc4addef-30a4-429b-b233-1a89eef07d36",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C59",
+      "claim": "Phosphorylation is required for disengagement of transcription factors from chromosomes in metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx2 is a phosphomitotic protein (Stukenberg et al., 1997), and it has been proposed that phosphorylation is required for disengagement of transcription factors from chromosomes in metaphase (Stukenberg et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b3ee40a1-091f-4571-9e07-2ee0a5d8fdc8",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C60",
+      "claim": "Ventx2-Myc was no longer associated with metaphasic chromosomes but rather with mitotic spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Ventx2-Myc was no longer associated with metaphasic chromosomes but rather with mitotic spindles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by confocal microscopy analysis in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "96477998-d862-434e-8271-4880ef49f942",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C61",
+      "claim": "The change in distribution of Ventx2-Myc from chromosomes to mitotic spindles was independent from MEK1 activity or from the PEST destruction motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this change in distribution of Ventx2-Myc was independent from MEK1 activity or from the PEST destruction motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by confocal microscopy analysis in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "76aff9a5-1d28-48bf-aa25-0fccb76bb2ab",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C62",
+      "claim": "In control condition, one daughter nucleus contained on average 6.454 fold more Ventx2-Myc than the other daughter nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of signals intensity revealed that in control condition, one daughter nucleus contained on average 6.454 fold more Ventx2-Myc than the other daughter nucleus (s.e.m. \u00b10.5479), whereas this difference was significantly dampened in MEK1-deficient cells (mean ratios = 1.092; s.e.m. \u00b10.0447) and in 2SAVentx2-Myc injected cells (mean ratios = 1.910; s.e.m. \u00b10.1319)(Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification of fluorescence intensity ratios in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "69a6180f-e62f-4f1a-9eb0-d95226a2e3dd",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C63",
+      "claim": "The asymmetry of Ventx2-Myc distribution was significantly dampened in MEK1-deficient cells (mean ratios = 1.092).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of signals intensity revealed that in control condition, one daughter nucleus contained on average 6.454 fold more Ventx2-Myc than the other daughter nucleus (s.e.m. \u00b10.5479), whereas this difference was significantly dampened in MEK1-deficient cells (mean ratios = 1.092; s.e.m. \u00b10.0447) and in 2SAVentx2-Myc injected cells (mean ratios = 1.910; s.e.m. \u00b10.1319)(Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification of fluorescence intensity ratios in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "aacec60d-4d58-4fb6-a9f0-14550187bfaa",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C64",
+      "claim": "The asymmetry of Ventx2 distribution was significantly dampened in 2SAVentx2-Myc injected cells (mean ratios = 1.910).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of signals intensity revealed that in control condition, one daughter nucleus contained on average 6.454 fold more Ventx2-Myc than the other daughter nucleus (s.e.m. \u00b10.5479), whereas this difference was significantly dampened in MEK1-deficient cells (mean ratios = 1.092; s.e.m. \u00b10.0447) and in 2SAVentx2-Myc injected cells (mean ratios = 1.910; s.e.m. \u00b10.1319)(Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification of fluorescence intensity ratios in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "0773e028-8b52-4982-9ceb-e47c69dca7a0",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C65",
+      "claim": "2SAVentx2-Myc, but not native Ventx2-Myc, caused a markedly high and ectopic expression of pou5f3.2 in late gastrula embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, 2SAVentx2-Myc, but not native Ventx2-Myc, caused a markedly high and ectopic expression of pou5f3.2 in late gastrula embryos, which was visible up until tailbud stage (Figure 4A and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "f48f81f3-24f4-45f6-bc13-07c04be32cbf",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C66",
+      "claim": "The ectopic expression of pou5f3.2 caused by 2SAVentx2-Myc was visible up until tailbud stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, 2SAVentx2-Myc, but not native Ventx2-Myc, caused a markedly high and ectopic expression of pou5f3.2 in late gastrula embryos, which was visible up until tailbud stage (Figure 4A and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b8390cf6-2bb7-46c3-a2e9-83255179d5fe",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C67",
+      "claim": "2SAVentx2-Myc but not Ventx2-Myc could counteract the conversion of ectoderm to mesoderm in response to a constitutively active form of MEK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that 2SAVentx2-Myc but not Ventx2-Myc could counteract the conversion of ectoderm to mesoderm in response to a constitutively active form of MEK1 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 4B showing differential t/bra expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "52b071a5-15e7-44b1-a7b5-ccd3986e9063",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C68",
+      "claim": "2SAVentx2-Myc has become resistant to degradation induced by MEK1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that 2SAVentx2-Myc has become resistant to degradation induced by MEK1 and can efficiently maintain pluripotency and antagonize commitment in the presence of active MEK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that 2SAVentx2-Myc can counteract CA-MEK1 activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "bee849b1-b82a-405f-a027-c7a1041cd7c4",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C69",
+      "claim": "2SAVentx2-Myc can efficiently maintain pluripotency and antagonize commitment in the presence of active MEK1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that 2SAVentx2-Myc has become resistant to degradation induced by MEK1 and can efficiently maintain pluripotency and antagonize commitment in the presence of active MEK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that 2SAVentx2-Myc can counteract CA-MEK1 activity and maintain pou5f3.2 expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "bcdc6dca-77c3-407a-a76d-3e11afbe5cab",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C70",
+      "claim": "Ventx2 MO injection caused the down-regulation of ventx1 and ventx3 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR and in situ hybridization analyses revealed that Ventx2 MO injection caused the down-regulation of ventx1 and ventx3 expression, suggesting that a large part of Ventx activity is missing in such embryos (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR and WISH data in Figure 4\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "f6d0ef97-ea44-4f16-b48d-06d744747553",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C71",
+      "claim": "A large part of Ventx activity is missing in Ventx2 morphant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR and in situ hybridization analyses revealed that Ventx2 MO injection caused the down-regulation of ventx1 and ventx3 expression, suggesting that a large part of Ventx activity is missing in such embryos (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the down-regulation of other Ventx family members.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "145100e8-fcea-4dff-9152-2fd2554e85f2",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C72",
+      "claim": "MEK1-Ventx2 double morphant cells regained the competence to respond to exogenous inducers and express epidermal, neural, mesodermal and endodermal markers.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, MEK1-Ventx2 double morphant cells regained the competence to respond to exogenous inducers and thus to express epidermal, neural, mesodermal and endodermal markers in response to BMP4, NOGGIN, low and high doses of NODAL, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 4C showing restored marker expression in response to inducers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "2a65920f-ab5f-49c1-8328-1b5dfad7d50e",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C73",
+      "claim": "The expression of the lineage-restricted markers foxd5, gsc, t/bra, and xk81a1 was rescued in MEK1-Ventx2 double morphant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the expression of the lineage-restricted markers foxd5, gsc, t/bra, and xk81a1 was rescued in MEK1-Ventx2 double morphant embryos (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "757495c8-7f9a-4fc1-b9b6-c03b4510ed8e",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C74",
+      "claim": "The sustained expression of pou5f3.2 caused by MEK1 depletion was counteracted by concomitant Ventx2 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the sustained expression of pou5f3.2 caused by MEK1 depletion was counteracted by concomitant Ventx2 knockdown (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by WISH analysis in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "7922a8c1-c6fa-4bef-a1e7-0d307b858ed8",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C75",
+      "claim": "Morphogenesis and axis formation was partially restored in MEK1-Ventx2 double morphant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, morphogenesis and axis formation was also partially restored in MEK1-Ventx2 double morphant embryos (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological scoring in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "78adc218-1cd3-4873-b859-0452d9e8dd25",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C76",
+      "claim": "MEK1 and Ventx2 functionally interact during the transition of pluripotent cells from refractory to responsive states.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data indicate that MEK1 and Ventx2 functionally interact during the transition of pluripotent cells from refractory to responsive states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue of differentiation competence in double morphants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "bd9f2de8-1977-4e43-a6c4-d88174fd659f",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C77",
+      "claim": "This is the first reported regulatory mechanism that correlates the asymmetric distribution and stability of a transcription factor with cell pluripotency in vertebrate embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first reported regulatory mechanism that correlates the asymmetric distribution and stability of a transcription factor with cell pluripotency in vertebrate embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "3231f72b-77cd-47fc-b308-386388ec9ffd",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C78",
+      "claim": "The rescue of cell differentiation in double MEK1/Ventx2 morphants suggests that endogenous Ventx2 is under the same control as exogenous tagged Ventx2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we used exogenous Ventx2 tagged proteins to reveal this mechanism, the rescue of cell differentiation in double MEK1/Ventx2 morphants suggests that endogenous Ventx2 is under the same control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "61ecc34c-ea29-4a1a-8338-29fcf5da52d0",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C79",
+      "claim": "The Wnt/\u03b2-catenin pathway orients asymmetric cell division of mESCs and generates unequal distribution of pluripotency factors, which impacts on cell potency in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are consistent with a recent finding, whereby the Wnt/\u03b2-catenin pathway orients asymmetric cell division of mESCs and generates unequal distribution of pluripotency factors, which impacts on cell potency in vitro (Habib et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "8a19b847-c4ef-48b1-96be-aeb6ecbcd40e",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C80",
+      "claim": "Ventx2 phosphorylation in the PEST motif is required for ubiquitination and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx2 phosphorylation in the PEST motif was shown to be required for ubiquitination and degradation (Zhu and Kirschner, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "dd7adc51-e29c-47cf-93c9-67ea3ebbaf1d",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C81",
+      "claim": "The asymmetric distribution of Ventx2 during mitosis and proteasome activity may be related.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our observation that mutation of the Ventx2 PEST motif prevents unequal distribution in daughter nuclei suggests that the asymmetric distribution of Ventx2 during mitosis and proteasome activity may be related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PEST mutation affects asymmetric distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "ad5adf11-4002-4ff5-bc70-a80ea3493677",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C82",
+      "claim": "MEK1 may act directly or through MAPK to phosphorylate the Ventx2 PEST motif and promote Ventx2 proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simplest scenario, MEK1 may act directly or through MAPK to phosphorylate the Ventx2 PEST motif and promote Ventx2 proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the data and known MAPK functions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "0a360275-1aa1-499f-92e7-850b2bc63f80",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C83",
+      "claim": "MAPK ERK1 is a known regulator of pluripotency factor stability in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this hypothesis, the MAPK ERK1 is a known regulator of pluripotency factor stability in vitro (Spelat et al., 2012; Kim et al., 2014), and MAPK is predicted to phosphorylate one of the key serine residues in the Ventx2 PEST domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "8fa56e3b-e552-4623-92a0-876e2656e141",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C84",
+      "claim": "MEK1 depletion caused stronger responses than 2SAVentx2 injection.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that MEK1 depletion caused stronger responses than 2SAVentx2 injection, suggesting that MEK1 regulates pluripotency through additional residues in Ventx2 and/or through additional effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of phenotypic severity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "8e6b7f27-670d-4c14-86f2-b0cb54725dcb",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C85",
+      "claim": "MEK1 regulates pluripotency through additional residues in Ventx2 and/or through additional effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that MEK1 depletion caused stronger responses than 2SAVentx2 injection, suggesting that MEK1 regulates pluripotency through additional residues in Ventx2 and/or through additional effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that MEK1 depletion has stronger effects than PEST mutation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b0734c8d-6806-4b1b-a3fa-bc39ce61ef54",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C86",
+      "claim": "The BMP signal mediator Smad1 was found to be asymmetrically distributed during somatic cell division, when marked for degradation by MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the BMP signal mediator Smad1 was also found to be asymmetrically distributed during somatic cell division, when marked for degradation by MAPK (Fuentealba et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "e4077fa2-301a-4cfb-9f4a-926a0a86cd23",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C87",
+      "claim": "Phosphorylation by MAPK triggers a subsequent phosphorylation event by GSK3, followed by polyubiquitinylation and proteosomal degradation of activated Smad1, leading to BMP signal termination.",
+      "claim_type": "EXPLICIT",
+      "source": "There, phosphorylation by MAPK triggers a subsequent phosphorylation event by GSK3, followed by polyubiquitinylation and proteosomal degradation of activated Smad1, leading to BMP signal termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature (Fuentealba et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "4f7ae1f7-a3ca-4257-b2de-c63be5a43d4b",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C88",
+      "claim": "There is no evidence of GSK3 involvement in the repression of pluripotency genes and in Ventx2 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not find evidence of GSK3 involvement in the repression of pluripotency genes and in Ventx2 degradation (Supplementary file 1), consistent with previous data (Zhu and Kirschner, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "2fee5c19-f70e-4925-b515-40c065f1fe59",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C89",
+      "claim": "MEK1 may trigger important proteolytic events in early embryos, independently of GSK3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MEK1 may trigger important proteolytic events in early embryos, independently of GSK3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of GSK3 involvement in Ventx2 degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "c4265efb-76e0-481c-b93a-06c9305fb37c",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C90",
+      "claim": "ERK1 antagonizes the polarized PAR-1 kinase during asymmetric cell divisions of the early C. elegans embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, ERK1 was shown to antagonize the polarized PAR-1 kinase during asymmetric cell divisions of the early C. elegans embryo (Spilker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "8340faa8-981f-4a28-9770-82e0cf90659d",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C91",
+      "claim": "Asymmetric proteasome segregation controls polarized degradation of the phosphorylated transcription factor T-bet during T lymphocyte division.",
+      "claim_type": "EXPLICIT",
+      "source": "Also related to this idea, asymmetric proteasome segregation was shown to control polarized degradation of the phosphorylated transcription factor T-bet during T lymphocyte division (Chang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "d321423a-b32c-4c9e-8223-15abd6e33297",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C92",
+      "claim": "A balance between the PAR-1 kinase and PP2A phosphatase controls the state of PAR-3 phosphorylation and thus the polarity of dividing embryonic neuroblasts in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a balance between the PAR-1 kinase and PP2A phosphatase was shown to control the state of PAR-3 phosphorylation and thus the polarity of dividing embryonic neuroblasts in Drosophila (Krahn et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "188e08ee-71cd-437b-bc26-bbc8141a6eda",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C93",
+      "claim": "MEK1 actively prevents membrane association of Ventx2.",
+      "claim_type": "EXPLICIT",
+      "source": "This localization was not apparent in control cells, suggesting that it does not simply reflect the over-abundance of Ventx2 protein due to synthetic RNA injection. Rather, this suggests that MEK1 actively prevents membrane association of Ventx2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Ventx2 localizes to membranes in MEK1 morphants but not in controls.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "f0f128a4-3690-49eb-80be-e7eb466628f0",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C94",
+      "claim": "The basal membrane cortex may represent a storage compartment for Ventx2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As stabilized 2SAVentx2 also localized at membranes, this territory may represent a storage compartment for Ventx2 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed membrane localization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "9f87c53f-1a15-4225-98d4-7bc4ae8af2fd",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C95",
+      "claim": "Pou5f1 and Pou5f3 proteins localize at the cell membrane both in mESCs and in Xenopus animal pole cells, where they form a complex with E-cadherin and \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "In relevance to our observations, it was reported that Pou5f1 and Pou5f3 proteins localize at the cell membrane both in mESCs and in Xenopus animal pole cells, where they form a complex with E-cadherin and \u03b2-catenin (Livigni et al., 2013; Faunes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "ab922cbb-7c30-4249-83a2-fb1cb44168ca",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C96",
+      "claim": "Ventx2 can physically interact with Pou5f3 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Ventx2 can physically interact with Pou5f3 proteins (Cao et al., 2004), we speculate that MEK1 may be required to destabilize the interaction between Ventx2 and Pou5f3, not only in the nucleus but also at the membrane, further enhancing the competence of embryonic cells to exit pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "bfe6c9fe-d34e-4be3-aa04-1ccfbfd1cfe6",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C97",
+      "claim": "MEK1 may be required to destabilize the interaction between Ventx2 and Pou5f3, not only in the nucleus but also at the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Ventx2 can physically interact with Pou5f3 proteins (Cao et al., 2004), we speculate that MEK1 may be required to destabilize the interaction between Ventx2 and Pou5f3, not only in the nucleus but also at the membrane, further enhancing the competence of embryonic cells to exit pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on known protein interactions and observed localizations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "9339b6a7-812d-4857-8c81-c71c6f053927",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C98",
+      "claim": "Ventx2 is a bona fide marker of pluripotency during Xenopus embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx2 is a bona fide marker of pluripotency during Xenopus embryogenesis (Scerbo et al., 2012; Buitrago-Delgado et al., 2015), and the above data indicate that its activity must be inhibited for cells to engage into differentiation pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b198aed8-8bdb-4d2a-9e3c-6644f8711c20",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C99",
+      "claim": "Ventx2 activity must be inhibited for cells to engage into differentiation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventx2 is a bona fide marker of pluripotency during Xenopus embryogenesis (Scerbo et al., 2012; Buitrago-Delgado et al., 2015), and the above data indicate that its activity must be inhibited for cells to engage into differentiation pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that Ventx2 clearance is necessary for differentiation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "306f922e-1d26-408a-8816-d88619d2cb61",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C100",
+      "claim": "A unique VENTX gene is present in human.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect the absence of Ventx orthologs in the rodent genus, although a unique VENTX gene is present in human (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis presented in supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "136ccaba-b9d9-4b02-998a-aa247cc8ac89",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C101",
+      "claim": "A Ventx gene appeared at the base of gnathostome evolution, and its prototypical genomic locus has not changed for 450 My.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic and synteny analyses suggest that a Ventx gene appeared at the base of gnathostome evolution, and its prototypical genomic locus has not changed for 450 My (Supplementary files 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic and synteny analyses presented in supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "99508156-303e-4bec-aa7a-1336d5679629",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C102",
+      "claim": "Human VENTX is the ortholog of Xenopus, birds, sauropside and coelacanth Ventx2.",
+      "claim_type": "EXPLICIT",
+      "source": "Human VENTX is the ortholog of Xenopus, birds, sauropside and coelacanth Ventx2 (Supplementary files 2 and 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis presented in supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "f81208f2-49c0-4e2c-8185-333070c94005",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C103",
+      "claim": "A recent study reported a 6-fold up-regulation of VENTX (higher than NANOG, PRDM14, POU5F1 and SOX2) in naive hESCs compared to conventional hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study reported a 6-fold up-regulation of VENTX (higher than NANOG, PRDM14, POU5F1 and SOX2) in naive hESCs compared to conventional hESCs (Theunissen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "3750589e-711b-4911-87a4-7e12b938043e",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C104",
+      "claim": "Naive hESCs were obtained in the presence of inhibitors of five kinases, including MEK1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, naive hESCs were obtained in the presence of inhibitors of five kinases, including MEK1, suggesting that repression of VENTX by MEK1 may be conserved in human pluripotent cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature (Theunissen et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "d8613740-cb83-4e10-8c95-a030e74d59de",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C105",
+      "claim": "Repression of VENTX by MEK1 may be conserved in human pluripotent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, naive hESCs were obtained in the presence of inhibitors of five kinases, including MEK1, suggesting that repression of VENTX by MEK1 may be conserved in human pluripotent cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that VENTX is upregulated when MEK1 is inhibited in human cells.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "767ce337-b5e1-4f0d-b1e8-b45eb5d450d4",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C107",
+      "claim": "VENTX is absent in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "As VENTX is absent in rodents, we propose that Xenopus represents an appropriate and powerful model to undertake comparative approaches with human and shed light on the control mechanisms of pluripotency in vivo and at single cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "ddb7f061-32f8-430d-949b-2572f242d484",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C108",
+      "claim": "Xenopus represents an appropriate and powerful model to undertake comparative approaches with human to study pluripotency control mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "As VENTX is absent in rodents, we propose that Xenopus represents an appropriate and powerful model to undertake comparative approaches with human and shed light on the control mechanisms of pluripotency in vivo and at single cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the presence of VENTX in both Xenopus and human but not in rodents.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "f9289671-2ba8-42df-8e14-aaed9b0e986b",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "claim_id": "C109",
+      "claim": "Asymmetric clearance of pluripotency regulators may represent an important mechanism to ensure the progressive assembly of primitive embryonic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that asymmetric clearance of pluripotency regulators may represent an important mechanism to ensure the progressive assembly of primitive embryonic tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f47e0b2a-7c81-4a1d-92d9-6a6eabad5203",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MEK1 morpholino oligonucleotides (Mk-MO and Mk-MO ATG) specifically inhibit MEK1 translation and cause developmental defects that can be rescued by exogenous wild-type MEK1. Both morpholinos reduced MEK1 protein levels, disrupted development, and did not induce non-specific p53 upregulation. Rescue with hamster MEK1 mRNA restored mesoderm and neural specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 provide converging evidence for specific MEK1 knockdown: Western blot shows reduced MEK1 protein (C23), morphological and marker analyses demonstrate developmental defects (C24), p53 qPCR rules out off-target effects (C25), and rescue experiments with heterologous MEK1 confirm specificity (C26). The use of two independent morpholinos and successful rescue strongly support the specificity of the knockdown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MEK1 is required for embryonic cells to respond to differentiation inducers across multiple lineages. MEK1 depletion impaired expression of neural, ectodermal, and mesodermal markers while sparing endoderm markers and immediate-early BMP/Nodal targets. MEK1-depleted cells failed to respond to exogenous BMP4, NODAL, and NOGGIN proteins, and to dominant-negative Smad5, both in whole embryos and in isolated animal cap explants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C27-C34 collectively demonstrate that MEK1 is broadly required for differentiation competence. The evidence includes RT-qPCR and WISH data showing lineage-specific marker defects (C27-C31), and multiple functional assays with recombinant proteins and genetic manipulations showing loss of response to inducers in MEK1 morphants (C32-C34). The consistency across different experimental approaches and multiple lineages strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "de08b05d-df03-4518-9932-02b8ab808ee6",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MEK1 depletion causes sustained expression of pluripotency genes (pou5f3.1, pou5f3.2, ventx1, ventx2) beyond their normal developmental window, while not affecting sox3 or cdh1. In MEK1 morphants, ventx2 and pou5f3.2 remained ubiquitously expressed at late gastrula and mid-neurula stages instead of being restricted or silenced, and this was accompanied by reduced expression of differentiation markers in animal cap explants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 provide consistent evidence from RT-qPCR (C35-C36, C41) and WISH analyses (C37-C40) showing that MEK1 depletion prevents the normal developmental silencing of pluripotency genes. The temporal and spatial expression patterns are well-documented across multiple stages and experimental conditions, including targeted injections that control for morphogenetic defects (C39). The data strongly support that MEK1 is required for pluripotency gene downregulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MEK1 activity is necessary for clearance of Ventx2 protein at gastrulation onset. Ventx2 undergoes PEST motif-dependent degradation, and one functional serine in this motif is a predicted MAPK target. Western blot and immunofluorescence analyses showed that Ventx2-Myc protein persists longer and is present in more cells in MEK1 morphants compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C42-C48 provide multiple lines of evidence: prior literature establishes PEST-dependent Ventx2 degradation (C42-C43), sequence analysis identifies the conserved PEST domain and predicted MAPK site (C44-C45), and experimental data demonstrate delayed Ventx2 clearance in MEK1 morphants by Western blot (C46-C47) and increased Ventx2-positive cells by immunofluorescence (C48). The convergence of computational prediction and experimental validation supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "9bcf3d20-c576-45c7-8b74-880e6f2f5051",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MEK1 controls asymmetric inheritance of Ventx2 protein during cell division. In control embryos, Ventx2-Myc was distributed asymmetrically between daughter nuclei with a ~6.5-fold difference in intensity, while in MEK1 morphants this asymmetry was lost (ratio ~1.1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C49, C62-C63 present confocal microscopy data with quantitative analysis of Ventx2 distribution in dividing cells. The dramatic reduction in asymmetry ratio from 6.454 to 1.092 in MEK1 morphants, with statistical significance and clear visual evidence (C49, C62-C63), strongly supports that MEK1 regulates asymmetric Ventx2 distribution. The quantification is rigorous with adequate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "1b4f0958-a2a4-42f8-b227-3cf1be973370",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mutation of the PEST motif (2SAVentx2) stabilizes Ventx2, causes symmetric distribution during cell division, and maintains pluripotency gene expression. The 2SAVentx2 mutant showed increased nuclear presence similar to Ventx2 in MEK1 morphants, reduced asymmetry (ratio ~1.9), and caused sustained ectopic pou5f3.2 expression through tailbud stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C52-C54, C64-C66 demonstrate that PEST motif mutation phenocopies MEK1 depletion. Immunofluorescence shows increased nuclear presence (C52), quantification shows reduced asymmetry (C53-C54, C64), and WISH shows sustained pluripotency marker expression (C65-C66). The consistency between PEST mutation and MEK1 depletion phenotypes supports the mechanistic link between MEK1, PEST phosphorylation, and Ventx2 regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "746ce4a8-f9ab-4832-8a38-c93177f99269",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The stabilized 2SAVentx2 mutant, but not wild-type Ventx2, can counteract constitutively active MEK1-induced mesodermal differentiation, maintaining pluripotency in the presence of active MEK1 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 show that 2SAVentx2 resists MEK1-induced degradation and maintains pluripotency function. WISH data (C67) demonstrate differential responses to CA-MEK1 between wild-type and mutant Ventx2. While C68-C69 involve inference, the experimental evidence directly supports that PEST mutation confers resistance to MEK1-mediated control, validating the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Concomitant knockdown of MEK1 and Ventx2 rescues differentiation competence and partially restores morphogenesis. Double morphants regained the ability to respond to exogenous inducers, expressed lineage-restricted markers, showed reduced pou5f3.2 expression, and exhibited improved axis formation compared to MEK1 single morphants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C70-C76 provide comprehensive rescue data: Ventx2 knockdown reduces other Ventx family members (C70-C71), double morphants respond to inducers (C72), express differentiation markers (C73), reduce pluripotency markers (C74), and show improved morphology (C75). The genetic interaction data (C76) strongly support that MEK1 acts through Ventx2 to control the pluripotency-to-differentiation transition. The rescue is consistent across multiple assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b4740dca-4547-48bc-891d-1afde48b53bb",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MEK1 depletion causes Ventx2 to localize to the membrane cortex, particularly at the basal membrane in blastula cells. This cortical localization was observed for both Ventx2-Myc in MEK1 morphants and stabilized 2SAVentx2-Myc, suggesting MEK1 actively prevents membrane association and that the cortex may serve as a storage compartment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51, C55, C93-C94 describe an unexpected localization pattern based on confocal microscopy. While the observations are documented, the functional significance remains unclear. The speculation about storage compartments (C94) lacks direct experimental support. The authors acknowledge this is based on exogenous tagged protein, and whether endogenous Ventx2 shows similar localization is unknown. Additional experiments would be needed to validate the biological relevance of this observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "e04afb17-34b8-4f54-9ea9-476c7cf84aa0",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ventx2 localization changes during mitosis: it associates with chromosomes in prophase and relocates to mitotic spindles in metaphase. This redistribution is independent of MEK1 activity and the PEST motif, consistent with Ventx2 being a phosphomitotic protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 describe mitotic Ventx2 behavior with confocal microscopy evidence. The prophase-to-metaphase redistribution is documented (C56-C57, C60) and shown to be independent of MEK1 and PEST (C61). The interpretation is supported by prior literature on phosphomitotic proteins (C58-C59). While this is a descriptive finding, the data are clear and the independence from MEK1/PEST control distinguishes this from the asymmetric distribution phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "03b3cacb-ab5f-4663-8a0f-08ecf3cee9e9",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "This study reports the first regulatory mechanism correlating asymmetric distribution and stability of a transcription factor with cell pluripotency in vertebrate embryos. The rescue of differentiation in MEK1/Ventx2 double morphants suggests endogenous Ventx2 is under the same control as exogenous tagged protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 make novelty and generalizability claims. While C77 is a knowledge claim about the literature that cannot be fully verified, the mechanistic findings are indeed novel for vertebrate pluripotency. C78 is a reasonable inference supported by the functional rescue data\u2014if endogenous Ventx2 were not regulated by MEK1, the double knockdown would not rescue the phenotype. The logic is sound though the inference is indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "96cd46a4-52e1-456e-b8a3-f98a843cf7ea",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MEK1 may act directly or through MAPK to phosphorylate the Ventx2 PEST motif and promote proteolysis. However, MEK1 depletion causes stronger phenotypes than PEST mutation, suggesting MEK1 regulates pluripotency through additional residues in Ventx2 and/or additional effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C85 present mechanistic speculation (C82) supported by literature on MAPK and pluripotency factors (C83), but acknowledge incomplete understanding (C84-C85). The observation that MEK1 depletion is more severe than PEST mutation indicates the mechanism is more complex than simple PEST phosphorylation. While the MAPK prediction is reasonable, direct biochemical evidence for MEK1 or MAPK phosphorylating Ventx2 is lacking. This remains a plausible but unproven model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "b920a52e-b034-4898-b2fa-1e2c35f49acd",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Unlike the MAPK-GSK3 cascade that regulates Smad1 asymmetric distribution, GSK3 is not involved in Ventx2 degradation or pluripotency gene repression. This suggests MEK1 can trigger proteolytic events independently of GSK3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 compare Ventx2 regulation to the known Smad1 mechanism (C86-C87) and present negative data for GSK3 involvement (C88). The experimental evidence (referenced in Supplementary file 1) and consistency with prior literature (C88) support that Ventx2 degradation does not require GSK3. The inference that MEK1 acts independently of GSK3 (C89) is reasonable given the negative data, though the actual mechanism remains to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "ce73925c-d325-4cb6-bebd-6509ae014d5a",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Human VENTX is orthologous to Xenopus Ventx2, is absent in rodents, and is highly upregulated in naive human ESCs cultured with MEK1 inhibitors. This suggests MEK1 regulation of VENTX may be conserved in human pluripotent cells and that Xenopus is an appropriate model for studying this mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C105, C107-C108 present phylogenetic analysis (C100-C102) and cite published data on VENTX upregulation in naive hESCs with MEK inhibition (C103-C104). The inference about conservation (C105) is reasonable given the correlation between MEK inhibition and VENTX upregulation in human cells. The proposal that Xenopus is a good model (C108) is logical given the shared presence of VENTX in Xenopus and humans but not rodents. While the conservation is not directly tested, the circumstantial evidence is compelling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background and context from prior literature establishing: pluripotency transitions in mammals and amphibians, conservation and divergence of pluripotency factors (Pou-V, Nanog, Ventx), MEK1/MAPK regulation of pluripotency factors, and precedents for asymmetric protein distribution during cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C22, C42-C43, C58-C59, C79-C80, C90-C92, C95-C96, C98 are all citation-based claims establishing the scientific context. These are appropriately supported by references to published literature and represent accurate summaries of prior work. While these are not novel findings of this study, they provide essential background and are correctly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    },
+    {
+      "id": "56cd70e6-645c-4a8e-9e46-56d2e4a8d92b",
+      "content_id": "14083365-ecf0-4a3e-9ecd-34b11b760e1d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculative interpretations and proposals: the asymmetric distribution of Ventx2 may be related to proteasome activity; MEK1 may destabilize Ventx2-Pou5f3 interactions at both nucleus and membrane; asymmetric clearance of pluripotency regulators may be an important mechanism for tissue assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81, C97, C109 are explicitly speculative (C81, C97) or represent broad proposals (C109). While these are reasonable hypotheses based on the data and prior literature, they lack direct experimental support in this study. C81 infers a link between PEST-dependent asymmetry and proteasome activity; C97 speculates about Ventx2-Pou5f3 interactions at membranes; C109 generalizes the findings to a broader principle. These are valuable for discussion but remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:49:11.452626Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7fefa38e-57b1-4742-beaa-da179f268626",
+      "result_id": "f47e0b2a-7c81-4a1d-92d9-6a6eabad5203"
+    },
+    {
+      "claim_id": "058c662a-7d5a-45aa-a4a7-03453bd9def6",
+      "result_id": "f47e0b2a-7c81-4a1d-92d9-6a6eabad5203"
+    },
+    {
+      "claim_id": "9358db3f-c8a0-4bc0-a700-984f31fc5fd4",
+      "result_id": "f47e0b2a-7c81-4a1d-92d9-6a6eabad5203"
+    },
+    {
+      "claim_id": "a3ddf151-820a-4f17-b220-133698afc62e",
+      "result_id": "f47e0b2a-7c81-4a1d-92d9-6a6eabad5203"
+    },
+    {
+      "claim_id": "acce60cc-6696-4001-9bbe-67c617b17e9a",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "311b663f-a9c2-418f-b15b-88ee80bc8466",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "6c1f5693-45d4-4bcd-bd39-619e8c76be08",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "b3c6f7b5-bf3e-440f-8d4a-95f454b45065",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "fa21a39c-add6-49ef-8f80-e440254e14b4",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "14578b6c-2483-4d95-9b11-fb1d7d384402",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "bcf938af-02ce-43c8-a8d1-070dc0210bc6",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "66a28ef8-aecd-4465-9617-54d4bed6d2d3",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "c5874618-c055-4e4e-b2eb-46a0b627dcec",
+      "result_id": "61650b13-c4cf-4d7e-ab41-cdf34538d8c4"
+    },
+    {
+      "claim_id": "2f926edb-ae95-45e5-b41d-7bab9fb16eeb",
+      "result_id": "de08b05d-df03-4518-9932-02b8ab808ee6"
+    },
+    {
+      "claim_id": "892a6cab-0a3b-47b2-a9bb-febb0fe3e091",
+      "result_id": "de08b05d-df03-4518-9932-02b8ab808ee6"
+    },
+    {
+      "claim_id": "12d7fdf3-31b6-46c9-b26b-02f0b2aea79a",
+      "result_id": "de08b05d-df03-4518-9932-02b8ab808ee6"
+    },
+    {
+      "claim_id": "b1a29c91-4aab-47fc-9a06-6a8499096d0d",
+      "result_id": "de08b05d-df03-4518-9932-02b8ab808ee6"
+    },
+    {
+      "claim_id": "b7583c36-8ada-4cfc-ac8a-ae1f135a2cf5",
+      "result_id": "de08b05d-df03-4518-9932-02b8ab808ee6"
+    },
+    {
+      "claim_id": "a15c5280-ca9f-4ddb-a8d8-50bac3086a18",
+      "result_id": "de08b05d-df03-4518-9932-02b8ab808ee6"
+    },
+    {
+      "claim_id": "66e8d1b3-4087-49fe-a0cf-27fcc182cb03",
+      "result_id": "de08b05d-df03-4518-9932-02b8ab808ee6"
+    },
+    {
+      "claim_id": "3a3b634f-f00d-4d6a-a7e0-03430157e656",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "6e1a6abb-074f-4a1b-968c-4c4b36523db7",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "875e6f48-e723-4677-9459-aa2566382b8d",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "04059e50-a739-41cd-baf6-17b9164a35f6",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "bb4e3b6a-121a-456c-8a2c-152b35e64224",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "41f1c940-3461-4ba1-b323-a72c56979ba4",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "b9ec8a5e-09f4-4679-af9e-e82148e66e81",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "d9e30d8d-2eb5-4a71-bc30-1daf19be9fa8",
+      "result_id": "b01728f3-9e16-4d2b-8f9f-ec102e060cd8"
+    },
+    {
+      "claim_id": "3d594a26-37a2-43ad-962b-22ebdc291aeb",
+      "result_id": "9bcf3d20-c576-45c7-8b74-880e6f2f5051"
+    },
+    {
+      "claim_id": "87b0be46-c505-4b14-a658-5f96adc1a0d3",
+      "result_id": "9bcf3d20-c576-45c7-8b74-880e6f2f5051"
+    },
+    {
+      "claim_id": "76aff9a5-1d28-48bf-aa25-0fccb76bb2ab",
+      "result_id": "9bcf3d20-c576-45c7-8b74-880e6f2f5051"
+    },
+    {
+      "claim_id": "69a6180f-e62f-4f1a-9eb0-d95226a2e3dd",
+      "result_id": "9bcf3d20-c576-45c7-8b74-880e6f2f5051"
+    },
+    {
+      "claim_id": "25863f33-336a-4f62-a647-233714565ca6",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "64a26dc1-aea1-4b3e-b6ec-4da125ea066f",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "ee25af65-427b-4ac4-9ec5-2a34b3c9b2fb",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "e62e397b-1ffd-4a1f-867a-f87b74a9ce1e",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "7a1ca070-7cfd-4059-84b9-74a40e561756",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "09e49941-04e7-4fae-8606-6598e1fdf578",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "aacec60d-4d58-4fb6-a9f0-14550187bfaa",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "0773e028-8b52-4982-9ceb-e47c69dca7a0",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "f48f81f3-24f4-45f6-bc13-07c04be32cbf",
+      "result_id": "1b4f0958-a2a4-42f8-b227-3cf1be973370"
+    },
+    {
+      "claim_id": "b8390cf6-2bb7-46c3-a2e9-83255179d5fe",
+      "result_id": "746ce4a8-f9ab-4832-8a38-c93177f99269"
+    },
+    {
+      "claim_id": "52b071a5-15e7-44b1-a7b5-ccd3986e9063",
+      "result_id": "746ce4a8-f9ab-4832-8a38-c93177f99269"
+    },
+    {
+      "claim_id": "bee849b1-b82a-405f-a027-c7a1041cd7c4",
+      "result_id": "746ce4a8-f9ab-4832-8a38-c93177f99269"
+    },
+    {
+      "claim_id": "e7890742-620e-491b-9a58-eafb93a23d9f",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "bcdc6dca-77c3-407a-a76d-3e11afbe5cab",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "f6d0ef97-ea44-4f16-b48d-06d744747553",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "145100e8-fcea-4dff-9152-2fd2554e85f2",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "2a65920f-ab5f-49c1-8328-1b5dfad7d50e",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "757495c8-7f9a-4fc1-b9b6-c03b4510ed8e",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "7922a8c1-c6fa-4bef-a1e7-0d307b858ed8",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "78adc218-1cd3-4873-b859-0452d9e8dd25",
+      "result_id": "4be1df0c-4f74-418b-a0c3-7a085e6bbc08"
+    },
+    {
+      "claim_id": "e63a77ea-854a-498d-a3ab-e9326bfc68c0",
+      "result_id": "b4740dca-4547-48bc-891d-1afde48b53bb"
+    },
+    {
+      "claim_id": "6646acc7-7017-458e-a058-82a62483f374",
+      "result_id": "b4740dca-4547-48bc-891d-1afde48b53bb"
+    },
+    {
+      "claim_id": "285638a6-b55c-4a6e-90ab-81c84e256bbe",
+      "result_id": "b4740dca-4547-48bc-891d-1afde48b53bb"
+    },
+    {
+      "claim_id": "188e08ee-71cd-437b-bc26-bbc8141a6eda",
+      "result_id": "b4740dca-4547-48bc-891d-1afde48b53bb"
+    },
+    {
+      "claim_id": "f0f128a4-3690-49eb-80be-e7eb466628f0",
+      "result_id": "b4740dca-4547-48bc-891d-1afde48b53bb"
+    },
+    {
+      "claim_id": "74fdb2a0-ab06-4b91-9508-b6d1fcf3f675",
+      "result_id": "e04afb17-34b8-4f54-9ea9-476c7cf84aa0"
+    },
+    {
+      "claim_id": "df4b3634-f961-445f-adf2-d77e732016bb",
+      "result_id": "e04afb17-34b8-4f54-9ea9-476c7cf84aa0"
+    },
+    {
+      "claim_id": "0e2f0bb2-0f46-40b5-8c29-037422082742",
+      "result_id": "e04afb17-34b8-4f54-9ea9-476c7cf84aa0"
+    },
+    {
+      "claim_id": "bc4addef-30a4-429b-b233-1a89eef07d36",
+      "result_id": "e04afb17-34b8-4f54-9ea9-476c7cf84aa0"
+    },
+    {
+      "claim_id": "b3ee40a1-091f-4571-9e07-2ee0a5d8fdc8",
+      "result_id": "e04afb17-34b8-4f54-9ea9-476c7cf84aa0"
+    },
+    {
+      "claim_id": "96477998-d862-434e-8271-4880ef49f942",
+      "result_id": "e04afb17-34b8-4f54-9ea9-476c7cf84aa0"
+    },
+    {
+      "claim_id": "bd9f2de8-1977-4e43-a6c4-d88174fd659f",
+      "result_id": "03b3cacb-ab5f-4663-8a0f-08ecf3cee9e9"
+    },
+    {
+      "claim_id": "3231f72b-77cd-47fc-b308-386388ec9ffd",
+      "result_id": "03b3cacb-ab5f-4663-8a0f-08ecf3cee9e9"
+    },
+    {
+      "claim_id": "ad5adf11-4002-4ff5-bc70-a80ea3493677",
+      "result_id": "96cd46a4-52e1-456e-b8a3-f98a843cf7ea"
+    },
+    {
+      "claim_id": "0a360275-1aa1-499f-92e7-850b2bc63f80",
+      "result_id": "96cd46a4-52e1-456e-b8a3-f98a843cf7ea"
+    },
+    {
+      "claim_id": "8fa56e3b-e552-4623-92a0-876e2656e141",
+      "result_id": "96cd46a4-52e1-456e-b8a3-f98a843cf7ea"
+    },
+    {
+      "claim_id": "8e6b7f27-670d-4c14-86f2-b0cb54725dcb",
+      "result_id": "96cd46a4-52e1-456e-b8a3-f98a843cf7ea"
+    },
+    {
+      "claim_id": "b0734c8d-6806-4b1b-a3fa-bc39ce61ef54",
+      "result_id": "b920a52e-b034-4898-b2fa-1e2c35f49acd"
+    },
+    {
+      "claim_id": "e4077fa2-301a-4cfb-9f4a-926a0a86cd23",
+      "result_id": "b920a52e-b034-4898-b2fa-1e2c35f49acd"
+    },
+    {
+      "claim_id": "4f7ae1f7-a3ca-4257-b2de-c63be5a43d4b",
+      "result_id": "b920a52e-b034-4898-b2fa-1e2c35f49acd"
+    },
+    {
+      "claim_id": "2fee5c19-f70e-4925-b515-40c065f1fe59",
+      "result_id": "b920a52e-b034-4898-b2fa-1e2c35f49acd"
+    },
+    {
+      "claim_id": "306f922e-1d26-408a-8816-d88619d2cb61",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "136ccaba-b9d9-4b02-998a-aa247cc8ac89",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "99508156-303e-4bec-aa7a-1336d5679629",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "f81208f2-49c0-4e2c-8185-333070c94005",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "3750589e-711b-4911-87a4-7e12b938043e",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "d8613740-cb83-4e10-8c95-a030e74d59de",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "767ce337-b5e1-4f0d-b1e8-b45eb5d450d4",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "ddb7f061-32f8-430d-949b-2572f242d484",
+      "result_id": "ce73925c-d325-4cb6-bebd-6509ae014d5a"
+    },
+    {
+      "claim_id": "820dcf2c-fc39-4855-83f0-a09a7edbd378",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "3e6f4dac-80b7-47b6-9e36-3cab38d4da78",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "143fe789-d766-4e91-893a-cd52456ad0f7",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "59494a69-b6af-4ac4-bf78-889f1321fbb1",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "30be6d4a-d5a9-4c38-ad4f-e6d98e8a8c52",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "49835b7a-fcfb-4150-9eb8-c8b6ebcd33e8",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "5b10564d-991a-4cef-8747-f2eee3f205d7",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "77d776a9-0489-4214-8343-4010bfc1d080",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "823eade3-30b0-499f-aab1-1781419fa74e",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "f320469a-da86-4a4d-b7a7-bd91f8da6d2c",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "95f578d0-c48f-41fc-8ab5-797f8f4ff3c1",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "86f818e0-0adb-4098-9056-8a4b77c28a7f",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "51cf0e9d-e78d-4e66-a7d2-ab9a087408fd",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "2ccad7d3-8f90-45b6-bd86-aae0d2af2427",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "51dea7e1-ac9c-4720-9a42-11a455f845ff",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "6e1a6abb-074f-4a1b-968c-4c4b36523db7",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "875e6f48-e723-4677-9459-aa2566382b8d",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "0e2f0bb2-0f46-40b5-8c29-037422082742",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "bc4addef-30a4-429b-b233-1a89eef07d36",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "61ecc34c-ea29-4a1a-8338-29fcf5da52d0",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "8a19b847-c4ef-48b1-96be-aeb6ecbcd40e",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "c4265efb-76e0-481c-b93a-06c9305fb37c",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "8340faa8-981f-4a28-9770-82e0cf90659d",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "d321423a-b32c-4c9e-8223-15abd6e33297",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "9f87c53f-1a15-4225-98d4-7bc4ae8af2fd",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "ab922cbb-7c30-4249-83a2-fb1cb44168ca",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "9339b6a7-812d-4857-8c81-c71c6f053927",
+      "result_id": "7e9f050a-0c2b-4e7b-8d4c-3aa9fbdb8ce3"
+    },
+    {
+      "claim_id": "dd7adc51-e29c-47cf-93c9-67ea3ebbaf1d",
+      "result_id": "56cd70e6-645c-4a8e-9e46-56d2e4a8d92b"
+    },
+    {
+      "claim_id": "bfe6c9fe-d34e-4be3-aa04-1ccfbfd1cfe6",
+      "result_id": "56cd70e6-645c-4a8e-9e46-56d2e4a8d92b"
+    },
+    {
+      "claim_id": "f9289671-2ba8-42df-8e14-aaed9b0e986b",
+      "result_id": "56cd70e6-645c-4a8e-9e46-56d2e4a8d92b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,568 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The Pit::DTR mouse model successfully induces left-specific cell death in hindlimb mesenchyme following DT injection at P1, while sparing the growth plate (GP) chondrocytes due to the avascular nature of the GP and limited DT diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 collectively establish the Pit::DTR model's specificity and the GP-sparing effect. DTR expression is confirmed in left limb mesenchyme (C2), DT injection causes left-specific cell death (C3), but the GP is protected (C4). The diffusion barrier explanation (C5) is supported by both literature citation and ex vivo culture data showing high DT concentrations can trigger GP cell death (C6), confirming chondrocytes can respond to DT when the barrier is overcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Left hindlimb bones show progressive growth reduction following P1 DT injection, with ~5% length difference at 3 dpi plateauing at ~11% by 9 weeks, while forelimbs remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 demonstrate the primary phenotype with quantitative bone length measurements at multiple timepoints (n=4-16 per group) and appropriate controls. The left-specific effect is confirmed by the lack of forelimb involvement (C9), which correlates with minimal DTR expression in forelimbs. Statistical analysis appears appropriate with clear sample sizes reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "P1-Pit::DTR mice exhibit transient systemic growth reduction affecting both body weight and right limb bones, likely due to cardiac cell death, but right limb length normalizes by the end of the growth period while left limb defects persist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 document a confounding systemic effect with supporting data (body weight, bone measurements, histology, gene expression). The cardiac involvement (C11) is supported by DTR expression and TUNEL data in heart tissue. Critically, C14 demonstrates that right limb normalization distinguishes the left-specific effect from systemic effects, strengthening the main conclusion. However, this systemic effect complicates interpretation of early timepoint data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The left hindlimb growth defect in P1-Pit::DTR mice is characterized by reduced chondrocyte proliferation in the proliferative zone, decreased hypertrophic zone height, and delayed secondary ossification center formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 identify the cellular mechanisms underlying the growth defect with multiple complementary approaches: EdU incorporation (C15, n=4 control, 7 experimental), histological measurements (C16, n=4 per group), Col10a1 in situ hybridization (C16), and skeletal staining (C17, n=5). The data are internally consistent and appropriate statistical analyses are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The growth defect is not caused by increased EGFR signaling in hypertrophic chondrocytes, ablation of perichondrial osteoprogenitors, or increased cell death at the osteochondral junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 systematically exclude alternative mechanisms through immunohistochemistry (C18, C19, C21) and a complementary genetic model (C20, Osx::DTR). The Osx::DTR experiment is particularly strong, showing that near-complete osteoprogenitor ablation reduces cortical thickness but not longitudinal growth, definitively ruling out this mechanism. Sample sizes are adequate (n=3-8 per condition).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Ihh and Gli1 expression are reduced in the left GP at P3, while Pthlh expression is unchanged. SHP2 inhibition rescues Ihh expression but not bone growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 document altered Hedgehog signaling with in situ hybridization data (C22-C24, n=8-16 animals) and a pharmacological rescue experiment (C25). The SHP2 inhibitor result is important as it demonstrates Ihh reduction is reversible but insufficient alone to explain the growth defect, suggesting multiple parallel pathways are affected. However, the lack of bone growth rescue could also reflect incomplete pathway restoration or timing issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "mTORC1 signaling (assessed by p-S6 levels) is reduced in the left proliferative zone and pre-hypertrophic zone from P3-P5, and this can be mimicked by rapamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 establish reduced mTORC1 activity with immunohistochemistry across multiple timepoints (n=3-23 per timepoint). The rapamycin experiment (C27) confirms the specificity of the p-S6 readout for mTORC1 activity and demonstrates that mTORC1 inhibition alone can impair growth, supporting a causal role. The data are well-controlled and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "FGF signaling is not increased in the left GP, though Fgfr3 is downregulated in the secondary ossification center region. MCP5 is not detected, but WNT target Lef1 is upregulated in the resting zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 survey multiple signaling pathways with appropriate molecular markers. The negative results (C28, C30) are important for ruling out alternative mechanisms. The Lef1 upregulation (C31, n=5 at P3, 4 at P4, 3 at P5) is consistently observed and may contribute to the phenotype based on cited literature linking LEF1 to impaired chondrocyte differentiation. The Fgfr3 downregulation (C29) correlates with delayed secondary ossification center formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Igf1 expression is specifically and dramatically downregulated in the left infrapatellar fat pad (IPFP) at 2-3 dpi, recovering by 4 dpi, while expression in other tissues and expression of Igf2 and Igf1r remain largely unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 identify a highly specific molecular change with in situ hybridization data (C32, n=10/12 showing downregulation; C33, n=2 showing recovery). The spatial and temporal specificity is well-documented through examination of multiple tissues (C34, C35). This is a key finding linking the injury to a known growth-promoting factor. The transient nature of the change (recovery by 4 dpi) is notable given the persistent growth defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "SOCS3 expression is not differentially expressed between left and right GPs at P2 or P3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 rules out altered IGF signaling downstream components with immunohistochemistry (n=4 at P2, 3 at P3). This negative result is important for establishing that reduced IGF1 availability, rather than altered signaling machinery, is responsible for the observed effects. The sample size is adequate for this negative result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Intraarticular IGF1 injection rescues mTORC1 signaling in the proliferative and pre-hypertrophic zones and also rescues Ihh and Fgfr3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 demonstrate a causal relationship between IGF1 loss and signaling defects through a gain-of-function rescue experiment. The rescue of multiple pathways (mTORC1, Ihh, Fgfr3) by IGF1 alone (n=3-5 animals) suggests IGF1 is upstream of these pathways. This is strong evidence for the IPFP-GP signaling axis. However, the fact that IGF1 injection doesn't rescue bone growth (shown later) indicates additional mechanisms are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Left-specific neutrophil and macrophage recruitment occurs in the IPFP at P2-P4, correlating temporally with Igf1 downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 document inflammatory cell recruitment with immunohistochemistry across multiple timepoints (C39, n=5 per timepoint for neutrophils; C40 for macrophages). The temporal correlation between neutrophil infiltration and Igf1 downregulation is compelling. Quantification is provided for neutrophils (C39) with appropriate paired statistical analysis. The data support an inflammation-mediated mechanism for Igf1 suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Neutrophil blockade with NIMP-R14 antibody partially restores Igf1 expression in the IPFP and increases p-S6 and Ihh levels in the pre-hypertrophic zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 establish a causal role for neutrophils in Igf1 suppression through antibody-mediated depletion. The partial rescue of Igf1 (C41, n=4) and downstream signaling (C42, n=3) demonstrates neutrophils contribute to but don't fully account for Igf1 downregulation. The experiment is well-controlled with verification of neutrophil depletion efficacy. This is strong mechanistic evidence linking inflammation to growth plate signaling defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "LPS injection into WT mouse joints causes neutrophil recruitment and Igf1 downregulation in the absence of cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide independent validation that inflammation alone (without cell death) can suppress Igf1 expression. This LPS experiment is a strong control demonstrating the sufficiency of neutrophil recruitment for Igf1 suppression. The spatial correlation between neutrophil accumulation and Igf1 loss (C43) and the absence of cell death (C44) are well-documented with appropriate staining methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "TNF\u03b1-expressing cells, including neutrophils, are present in the left IPFP at P2, and TNF\u03b1 has been shown to reduce Igf1 expression in other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 identifies a candidate mediator of Igf1 suppression with immunohistochemistry showing TNF\u03b1 in neutrophils. Claim C46 provides literature support for TNF\u03b1's ability to suppress Igf1. However, this remains correlative - no direct test of TNF\u03b1's role is performed. The intracellular localization of TNF\u03b1 in neutrophils (Golgi-like) is interesting but the functional significance is unclear. This represents a plausible but unproven mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Neither IGF1 injection nor neutrophil blockade alone rescue bone growth at P4, and Lef1 expression remains elevated after both treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate that the IGF1/inflammation axis is necessary but not sufficient for normal growth. The failure of single interventions to rescue growth (C48, n=5 per treatment) despite rescuing multiple signaling pathways indicates parallel mechanisms. The persistent Lef1 upregulation (C49) after both treatments suggests an IGF1-independent pathway contributes to the phenotype. This is critical for establishing the two-pathway model presented later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The immediate-early gene Egr1 is upregulated in the left IPFP and prospective articular cartilage at P2, with expression persisting in the articular cartilage through P4 before receding by P5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 document activation of the injury response with in situ hybridization across multiple timepoints (n=2-3 per timepoint). The differential temporal dynamics between IPFP (transient) and articular cartilage (persistent) are well-characterized. Egr1 is an appropriate marker for the immediate-early injury response. The data establish that injury signaling is activated in the articular cartilage adjacent to the GP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "p-S6 expression is upregulated in the left prospective articular cartilage at P3-P4, receding by P5, suggesting transiently increased mTORC1 signaling in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 documents increased mTORC1 activity in the articular cartilage (n=33 at P3, 14 at P4, 2 at P5) - opposite to the decrease observed in the pre-HZ. The citation to osteoarthritis literature (Pal et al., 2015) provides context for this finding. The large sample size at P3 strengthens confidence in this observation. This establishes distinct signaling responses in different regions of the joint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Hif2a and Il6 are upregulated in the left prospective articular cartilage, leading to ectopic JAK1/2-dependent p-STAT3 expression at P3-P4 that recedes by P5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 establish a signaling cascade in the injured articular cartilage with in situ hybridization (C53-C54) and immunohistochemistry (C55, n=13 at P3, 3 at P4). The citations linking Hif2a and Il6 to cartilage pathology provide mechanistic context. The temporal dynamics are well-characterized. The JAK1/2 dependence is later confirmed pharmacologically. This pathway is distinct from the IPFP-mediated effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The injury response in the prospective articular cartilage (Egr1, p-S6, p-STAT3) is independent of IPFP inflammation, as it persists after neutrophil blockade or IGF1 injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 establishes the independence of the two pathways (IPFP inflammation vs. articular cartilage injury response) through intervention experiments. This is critical for the two-pathway model. The data demonstrate that preventing IPFP inflammation doesn't block articular cartilage injury signaling, indicating these are parallel rather than sequential pathways. Sample sizes are not explicitly stated but the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Extensive and persistent cell loss occurs in the prospective/articular cartilage from P4 to at least P27, with signaling changes extending beyond the area of cell death into the resting zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 document the extent and persistence of articular cartilage damage with histology (n=3-4 animals). The observation that signaling changes extend beyond the area of cell death (C58) is important for establishing paracrine effects on the adjacent resting zone. The long-term persistence (P27) of the damage is notable and suggests permanent structural changes to the joint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Cells in the prospective/articular cartilage do not normally give rise to growth plate chondrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by citation to lineage tracing work (Kozhemyakina et al., 2015). This is important for establishing that the articular cartilage effects on the GP must be paracrine rather than through altered cell contribution. The claim relies entirely on cited literature, which is appropriate for this type of background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "JAK1/2 inhibition with ruxolitinib prevents p-STAT3 and LEF1 upregulation in the articular region but fails to rescue bone growth, possibly because mTORC1 signaling remains downregulated in the pre-hypertrophic zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 test the articular cartilage pathway with pharmacological inhibition. The successful blockade of p-STAT3 and LEF1 (C60) confirms JAK1/2 dependence. The failure to rescue growth (C61, n=5) despite blocking this pathway parallels the IGF1 injection results, supporting the two-pathway model. The explanation for failure (persistent mTORC1 downregulation) is plausible but somewhat speculative - other mechanisms could also explain the lack of rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Combined treatment with ruxolitinib and IGF1 significantly rescues bone growth, though only some femora (3/11) and no tibiae show complete rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 provide the key test of the two-pathway model. The significant rescue with combined treatment (n=11) but not single treatments demonstrates that both pathways contribute to the growth defect. However, the incomplete rescue (C63) indicates additional mechanisms may be involved or that the interventions are not fully effective. The differential response between femora and tibiae (C63) is interesting but unexplained. Statistical analysis appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DT injection at P14 (P14-Pit::DTR model) causes cell death in surrounding soft tissues but not the GP, reduces hypertrophic zone height at 4 dpi, and leads to progressive left-right asymmetry (~7-13% by P57) that is non-significant at P20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 establish that the injury model works at a later developmental stage but with different kinetics. The GP-sparing effect persists (C64, n=4), the cellular phenotype is similar (C65, n=2), but the growth defect develops more slowly (C66, n=3-7 per timepoint). The non-significance at P20 followed by significance at P57 suggests a cumulative effect. Sample sizes are smaller than the P1 model, particularly at P20 (n=3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "In P14-Pit::DTR mice, mTORC1 activity and Ihh signaling are not reduced in the left hypertrophic zone at 3-4 dpi, and Igf1 is no longer expressed in either IPFP by P17-18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 demonstrate stage-specific differences in the mechanism. The absence of mTORC1/Ihh reduction (C67, n=4) and the lack of IPFP Igf1 expression (C68, n=3) indicate the IPFP-HZ axis is not active at P14. This is consistent with the developmental analysis showing Igf1 expression declines postnatally. The data support the conclusion that the GP becomes independent of IPFP-derived IGF1 after the secondary ossification center forms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Egr1 and LEF1 are ectopically activated in the left cartilage of P14-Pit::DTR mice, similar to P1-Pit::DTR mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 shows the articular cartilage injury response pathway remains active at P14 (n=4). This indicates that while the IPFP-HZ axis is stage-specific, the articular cartilage-RZ axis persists. This helps explain why P14 injury still causes growth defects, albeit with slower kinetics. The data are consistent with the two-pathway model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The IPFP appears as a defined region at E17.5, coinciding with accumulation of high Igf1 expression compared to surrounding tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 characterize the developmental emergence of the IPFP and its Igf1 expression. The data establish when this tissue becomes a potential source of IGF1 for the adjacent GP. The histological and in situ hybridization data are appropriate for this descriptive analysis. This provides important developmental context for understanding the stage-specific effects observed in the injury models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Perivascular stem cells (CD44/CD90+) are present in the interzone before IPFP formation, but adipocytes are not clearly visible until P3-P4, indicating adipocytes are not the main source of Igf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 identify the cellular source of Igf1 in the IPFP through immunohistochemistry for cell type markers (n\u22652 per stage). The temporal dissociation between Igf1 expression (high from E17.5) and adipocyte appearance (P3-P4) argues against adipocytes as the primary source. The perivascular stem cells are a plausible alternative source. The conclusion is logical but somewhat indirect - direct demonstration of which cells express Igf1 would be stronger.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Igf1 expression in the IPFP gradually decreases postnatally, becoming barely detectable at P8 and undetectable at P12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 documents the temporal dynamics of Igf1 expression with in situ hybridization across multiple stages (n\u22652 per stage). This is critical for explaining why the P14 injury model doesn't show IPFP-mediated effects. The gradual decline and eventual loss of expression is well-documented and consistent with the functional data from the injury models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The radius grows more slowly than the tibia when Igf1 levels are high in the IPFP, with the ratio stabilizing after P8 when Igf1 expression ceases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 provides correlative evidence that IPFP-derived Igf1 may contribute to differential bone growth under normal conditions. The radius/tibia ratio measurements (n\u22654 per stage) show appropriate statistical analysis. The correlation between ratio stabilization and Igf1 cessation is intriguing but remains correlative. The radius lacks an adjacent fat pad, making it a reasonable control, but other factors could also explain differential growth rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C80"
+    ],
+    "result": "The study demonstrates that transient mesenchymal cell death surrounding postnatal growth plates leads to reduced bone growth through altered paracrine signaling from two joint tissues: the IPFP and the prospective/articular cartilage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C79, C80 represent the main conclusions of the study. The evidence from the entire manuscript supports a model where injury outside the GP affects growth through two parallel paracrine pathways. The IPFP pathway (inflammation\u2192Igf1 loss\u2192reduced mTORC1/Ihh in pre-HZ) and the articular cartilage pathway (injury response\u2192IL6/STAT3/LEF1 in RZ) are both well-documented. The requirement for combined intervention to achieve rescue (C62) provides strong support for this two-pathway model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Prior studies have shown that TGF\u03b2R2 signaling from the joint interzone stimulates chondrocyte hypertrophy and FGFs from the perichondrium negatively modulate bone growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 summarize relevant prior work through appropriate citations (Longobardi et al., 2012; Liu et al., 2002; Karuppaiah et al., 2016). These claims provide context for the current study's contribution to understanding extrinsic regulation of bone growth. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The differential rescue of femora versus tibiae may reflect bone-specific differences in developmental stage-dependent responses to growth-modulating cues, as observed in other species with limb immobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 offer a speculative explanation for the incomplete rescue observed in C63. While the citation to Pollard et al., 2017 (C82) provides precedent for bone-specific and stage-specific responses, the explanation remains speculative. Alternative explanations (e.g., incomplete drug penetration, dosing issues, additional unidentified pathways) are not excluded. The reasoning is plausible but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Prior in vitro studies have shown that pro-inflammatory cytokines can impair bone growth beyond the cytokine exposure period, with only partial rescue by IGF1 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 cite relevant prior work (MacRae et al., 2006; M\u00e5rtensson et al., 2004) that parallels the current findings. The citations provide context for the persistent growth defect despite transient inflammation and the incomplete rescue by IGF1 alone. The cited work appears accurately represented and relevant to the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Loss of mTORC1 signaling in the pre-hypertrophic zone correlates with loss of Ihh expression, both are rescued by IGF1, but IGF1 likely activates Ihh via an mTORC1-independent pathway, possibly through SHP2 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 dissect the relationship between IGF1, mTORC1, and Ihh through multiple complementary experiments: correlation (C85), IGF1 rescue (C86), SHP2 inhibition (C87), rapamycin treatment (C88-C89), leading to a mechanistic model (C90). The data support parallel rather than linear pathways downstream of IGF1. However, C90 is explicitly speculative ('we speculate') and the SHP2 mechanism is not directly tested. The model is plausible and consistent with the data but remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The requirement for IGF signaling in Ihh expression appears restricted to a narrow perinatal window, as Igf1r deletion reduces Ihh only when triggered at P5 but not prenatally, and Igf1 expression in the IPFP ceases by P12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 integrate cited literature (Wang et al., 2011) with the current study's developmental data to define a temporal window for IGF-Ihh regulation. The combination of published genetic data (C92) and the current expression analysis (C91) provides strong support for stage-specific regulation. This helps explain the differential effects of P1 versus P14 injury.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "mTORC1 is activated in the left prospective articular cartilage and resting zone despite reduced local IGF1 levels, with IL6 as a candidate activating signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 documents the paradoxical mTORC1 activation (increased p-S6) in the articular cartilage/RZ despite reduced IGF1, based on the experimental data. Claim C94 proposes IL6 as a candidate mechanism with citation support (Kim et al., 2008). However, C94 is explicitly speculative and IL6's role in mTORC1 activation is not directly tested in this system. The observation is solid but the mechanism remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Both mTORC1 and JAK/STAT signaling pathways are independently required to activate Lef1 expression, as inhibition of either pathway prevents LEF1 upregulation without affecting the other pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 establish the relationship between mTORC1, JAK/STAT, and LEF1 through pharmacological inhibition experiments. The data show that rapamycin blocks LEF1 without affecting p-STAT3 (C95) and ruxolitinib blocks LEF1 without affecting p-S6 (C96), supporting independent requirement (C97). This is strong evidence for convergent regulation. Sample sizes are not explicitly stated but the conclusion is well-supported by the data shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Local joint influences could explain differential growth plate growth rates, as proximal tibia and distal femur (near the fat pad) grow faster than distal tibia or proximal femur, and classic transplantation experiments show growth rate changes with position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 place the findings in a broader context of differential GP growth. The speculation (C98) is supported by multiple lines of evidence: classic transplantation experiments (C100), evolutionary optimization theory (C99), and adipocyte-derived growth signals (C101). All claims are appropriately supported by citations. However, C98 is explicitly speculative and the current study provides only indirect support through the IPFP-GP axis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The cessation of Igf1 expression in the IPFP by P8 correlates with the stage when femur and tibia stop growing faster than the rest of the body, and the GP likely becomes independent from the IPFP after P8 due to the secondary ossification center and loss of Igf1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 integrate the developmental expression data with growth kinetics and the P14 injury model results. The correlation between Igf1 loss and growth rate normalization (C102) is supported by data and citation. The explanation for GP independence (C103) is logical and consistent with all the data, though it remains somewhat inferential. The two proposed mechanisms (physical barrier of secondary ossification center and loss of Igf1) are both plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Local tissues with osteochondrogenic potential (synovium, bone marrow, perichondrial groove of Ranvier) may contribute to bone growth through both paracrine signals and progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 raises an alternative or additional mechanism involving progenitor cell contribution. The claim is appropriately cautious ('we cannot exclude') and supported by relevant citations (Hindle et al., 2017; Yang et al., 2013; Karlsson et al., 2009; Chung and Xian, 2014). However, this possibility is not tested in the current study. The claim is speculative but acknowledges uncertainty and could explain why rescue is incomplete.",
+    "result_type": "MINOR"
+  }
+]

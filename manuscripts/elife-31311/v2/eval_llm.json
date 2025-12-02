@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "m6A-containing mRNAs are selectively cleared from both nuclear and cytoplasmic compartments. YTHDF2 mediates cytoplasmic decay of methylated mRNAs (extending apparent half-life ~4-fold upon knockdown), while YTHDC1 mediates nuclear clearance (extending apparent half-life >2-fold upon knockdown) and affects cytoplasmic abundance of these transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C58 are supported by LC-MS/MS time-course data following transcription inhibition (Figure 1A-D). The experimental design appropriately uses Actinomycin D to halt transcription and measures m6A/A ratios over time in fractionated samples. Statistical significance is reported (p-values provided), and the data show clear differential effects of YTHDF2 vs. YTHDC1 knockdown on cytoplasmic vs. nuclear m6A levels respectively. The inference that YTHDC1 affects cytoplasmic abundance is logically supported by the observed nuclear accumulation and cytoplasmic depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "YTHDC1 knockdown results in nuclear accumulation and cytoplasmic depletion of m6A-containing mRNAs without affecting whole-cell m6A/A ratios or expression of key export machinery components (YTHDF2, NXF1, ALYREF). This redistribution is directly observable by polyA FISH imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are well-supported by multiple complementary approaches: LC-MS/MS of fractionated samples (Figure 2A), Western blots showing no changes in export machinery (Figure 2B), and polyA FISH with quantification (Figure 2C-D, n=25, p<0.001). The convergence of biochemical and imaging data strengthens the conclusion. Statistical tests are appropriate and sample sizes adequate for imaging quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "YTHDC1 overexpression reduces nuclear m6A levels, and when combined with YTHDF2 knockdown, increases cytoplasmic m6A levels, demonstrating YTHDC1's role in mediating nuclear export of methylated mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C76-C78 are supported by LC-MS/MS data (Figure 2E-F). The experimental design cleverly addresses the confounding effect of YTHDF2-mediated cytoplasmic decay by knocking down YTHDF2 before overexpressing YTHDC1, which then reveals the expected cytoplasmic increase. This rescue experiment strengthens the mechanistic interpretation. However, the initial failure to see cytoplasmic increase with YTHDC1 overexpression alone (C70) suggests the system is more complex than a simple export model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "YTHDC1 interacts with ZCCHC8 (a NEXT complex component) but not MTR4, and knockdown of ZCCHC8/MTR4 does not increase nuclear ribosomal-depleted RNA, suggesting nuclear mRNA accumulation upon YTHDC1 knockdown is not due to impaired nuclear decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by co-IP data (Figure 2\u2014figure supplement 1B) and RNA quantification following knockdown (Figure 2\u2014figure supplement 1C-D). The negative result (no increase in nuclear RNA with ZCCHC8/MTR4 knockdown) appropriately rules out nuclear decay as the primary mechanism. However, the interaction with ZCCHC8 remains unexplained and could suggest additional YTHDC1 functions not fully explored here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "YTHDC1 perturbations (knockdown or overexpression) do not dramatically affect bulk transcriptional activity as measured by 4-thio-uridine incorporation, suggesting YTHDC1 functions post-transcriptionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by 4-thio-uridine pulse labeling (Figure 2\u2014figure supplement 1G-H). The experimental approach appropriately tests whether observed effects are due to transcriptional changes. The inference of post-transcriptional function is reasonable given the lack of effect on nascent RNA synthesis. However, a 1-hour pulse may not capture all transcriptional dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Over 700 YTHDC1 target transcripts were identified by combining PAR-CLIP and RIP-seq. Upon YTHDC1 knockdown, these targets show no change in whole-cell abundance but accumulate in the nucleus and are depleted from the cytoplasm, indicating YTHDC1 mediates nuclear-to-cytoplasmic transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by rigorous target identification (requiring both PAR-CLIP binding and 2-fold RIP-seq enrichment in replicates) and subcellular RNA-seq (Figure 3A-C). Statistical tests (Mann-Whitney-Wilcoxon and Welch's T-test) are appropriate for the data. The lack of whole-cell change (C82-C83) with opposing nuclear/cytoplasmic changes (C84-C85) strongly supports a redistribution rather than stability effect. Biological replicates using different siRNAs strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Nascent RNA labeling shows YTHDC1 knockdown causes nuclear accumulation of newly synthesized target mRNAs (APC, MCL1) and reduced cytoplasmic levels, confirming YTHDC1 is required for proper transport of mature mRNA species. Non-target transcripts are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by 5-ethynyl-uridine pulse-chase experiments with RT-qPCR (Figure 4A-B, n=6). The use of exon-exon junction primers (C91) appropriately ensures measurement of mature mRNAs. The selective effect on targets vs. non-targets (C92, Figure 4\u2014figure supplement 1C) demonstrates specificity. Statistical significance is reported for most comparisons, though SOX12 shows modest/non-significant effects (C89), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "YTHDC1 knockdown causes 426 alternative splicing events (\u0394\u03a8 \u22650.2), with only weak correlation to METTL3-dependent events. These events are enriched in YTHDC1 targets (11.5%) vs. non-targets (2.2%), but individual target transcripts (APC, MCL1) show no significant splicing changes, suggesting YTHDC1 affects splicing patterns but may play limited roles in alternative splice site selection in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 are supported by MISO analysis of paired-end RNA-seq (Figure 4\u2014figure supplement 2A-E). The statistical enrichment of splicing events in targets vs. non-targets is significant (p<0.001, Fisher's exact test). However, the weak correlation with METTL3 effects (C94) and lack of splicing changes in validated targets (C97) appropriately temper the conclusion. The inference of 'limited roles' (C100) is reasonable but somewhat speculative. The analysis appropriately distinguishes between global splicing effects and effects on specific validated targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111"
+    ],
+    "result": "Using a splicing-independent reporter system, tethering full-length or C-terminal YTHDC1 to mRNA increases translation and promotes cytoplasmic distribution, independent of m6A binding. The N-terminal construct retains mRNA in the nucleus without affecting translation. This represents a new role for YTHDC1 in mRNA export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108, C111 are supported by the BoxB-\u03bb peptide tethering system (Figure 4C-F, Figure 4\u2014figure supplement 3). The experimental design cleverly separates m6A-binding from export function by using the \u03bb-BoxB interaction. The W377A mutant control (C102) confirms m6A-independence. The differential effects of C-terminal (export-promoting) vs. N-terminal (retention) constructs (C104-C108) are well-documented. Sample sizes (n=4) and statistical tests are appropriate. The system's splicing-independence and inducibility are strengths. However, the interpretation as a 'new role' (C111) should be tempered by the artificial nature of the tethering system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "YTHDC1 interacts with SRSF3 (but not NXF1 or ALYREF) in an RNA-independent manner. The interaction involves hypo-phosphorylated (export-competent) SRSF3 and is mediated by the C-terminus of YTHDC1. NXF1 can co-precipitate SRSF3 but not YTHDC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C114-C125 are supported by multiple co-IP experiments (Figure 5A-B, Figure 5\u2014figure supplement 1B) with and without RNase treatment. The detection of hypo-phosphorylated SRSF3 (C119-C120) via absence of phosphoserine signal is appropriate. The domain mapping showing C-terminal but not N-terminal interaction (C124-C125) is well-controlled. The lack of direct YTHDC1-NXF1 interaction (C114, C122) with ability to co-precipitate via SRSF3 (C123) supports the adaptor model. Experiments are well-replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Both SRSF3 and NXF1 can enrich m6A from cellular lysates (SRSF3 showing greatest enrichment), but the SRSF3 RNA recognition motif shows no selectivity for m6A in vitro, suggesting cellular context is required for m6A enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by CLIP-LC-MS/MS (Figure 5C) and in vitro binding assays with recombinant SRSF3-RRM (Figure 5\u2014figure supplement 1C-D). The contrast between cellular enrichment and lack of in vitro selectivity (C128) is important and appropriately documented. This suggests YTHDC1-mediated delivery rather than direct m6A recognition by SRSF3. Sample sizes (n=4) and error bars are provided for LC-MS/MS data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "SRSF3 knockdown leads to large increases in nuclear m6A levels and altered polyA RNA distribution (similar to YTHDC1 knockdown), while other SR proteins (SRSF1, SRSF9, SRSF10) and nuclear readers (HNRNPA2B1, HNRNPC) show only modest effects, identifying SRSF3 as a key adaptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by LC-MS/MS of fractionated samples (Figure 5D, Figure 5\u2014figure supplement 2A-C, n=4) and polyA FISH (Figure 5\u2014figure supplement 2D). The selective effect of SRSF3 vs. other SR proteins is well-documented with appropriate statistical tests. The similarity to YTHDC1 knockdown phenotype (C132) supports the functional relationship. Western blots confirm knockdown efficiency (Figure 5\u2014figure supplement 2C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "SRSF3 facilitates export of m6A-methylated mRNAs via interaction with both YTHDC1 and NXF1, and may contribute to additional fates for modified nuclear transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is well-supported by the convergence of protein interaction data (Figure 5A-B), m6A enrichment data (Figure 5C), and functional data (Figure 5D). The inference is logical given the demonstrated interactions and phenotypes. Claim C134 is more speculative, based on the observation of enriched nuclear m6A upon SRSF3 knockdown, which could indicate roles beyond export (e.g., in nuclear retention or decay). This speculation is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "YTHDC1 is a limiting protein in the export system. Knockdown of YTHDC1, SRSF3, or METTL3/14 causes nuclear accumulation of YTHDC1 targets without affecting non-target HPRT1. In cytoplasm, YTHDC1/SRSF3 knockdown reduces target levels, while METTL3/14 knockdown increases them (likely due to reduced YTHDF2-mediated decay).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C140 are supported by RNA-seq/proteomic data (Figure 5\u2014figure supplement 3A-B) and RT-PCR of specific targets (Figure 5\u2014figure supplement 4B-C, n=4). The limiting protein conclusion (C135) is based on low YTHDC1 abundance relative to SRSF3/NXF1. The differential cytoplasmic effects of methyltransferase vs. export factor knockdown (C138-C140) are well-documented and the mechanistic interpretation (reduced YTHDF2-mediated decay) is reasonable and appropriately qualified as 'probably.' Statistical significance is reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "YTHDC1 facilitates RNA binding to SRSF3. Knockdown of YTHDC1 reduces m6A enrichment and target transcript enrichment by SRSF3, suggesting YTHDC1 partially facilitates substrate selection by SRSF3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C143-C145 are supported by SRSF3 CLIP-LC-MS/MS (Figure 6A, n=4) and SRSF3 CLIP-seq (Figure 6B) under control and YTHDC1 knockdown conditions. The reduction in both m6A enrichment and transcript enrichment upon YTHDC1 knockdown supports the facilitation model. The qualification 'partially' (C144) is appropriate given that SRSF3 still binds RNA in the absence of YTHDC1. Statistical tests are appropriate (Welch's T-test for sequencing data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "YTHDC1 facilitates RNA binding to NXF1. Knockdown of YTHDC1 abolishes m6A enrichment and reduces transcript enrichment by NXF1, indicating YTHDC1 is required for proper incorporation of methylated mRNA targets into mRNPs consisting of SRSF3 and NXF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C146-C148 are supported by NXF1 CLIP-LC-MS/MS (Figure 6C, n=4) and NXF1 RIP-seq (Figure 6D). The complete abolishment of m6A enrichment (C146) vs. partial reduction for SRSF3 (C143) suggests NXF1's m6A selectivity is entirely YTHDC1-dependent, consistent with the indirect interaction model. The inference about mRNP incorporation (C148) is well-supported by the combined data. Statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Only transcripts bound by both YTHDC1 and SRSF3 show significant nuclear accumulation and cytoplasmic depletion upon YTHDC1 knockdown. Transcripts bound by YTHDC1 alone show no significant changes, indicating SRSF3 binding is required for YTHDC1-dependent export and SRSF3 serves as an export adapter forming the functional protein-RNA complex for NXF1 association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 are supported by analysis of subcellular RNA-seq data stratified by YTHDC1/SRSF3 binding status (Figure 7A, Figure 7\u2014figure supplement 1A-B). This is a critical experiment that tests the functional requirement for SRSF3 co-binding. The statistical analysis (Mann-Whitney-Wilcoxon and Welch's T-test) is appropriate. The selective effect on co-targets vs. YTHDC1-only targets strongly supports the adaptor model (C154-C155). This represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C169",
+      "C185",
+      "C189"
+    ],
+    "result": "YTHDC1 mediates export of m6A-methylated mRNA from nucleus to cytoplasm in HeLa cells through interaction with SRSF3, which couples m6A selectivity to nuclear export via NXF1. This reveals a mechanism for selective incorporation of methylated mRNAs into export pathways and establishes m6A as a mark for selective nuclear processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching result integrating claims C5-C8, C38-C41, C156-C162, C169, C185, C189 represents the main conclusion of the paper. It is well-supported by the convergence of multiple experimental approaches: (1) subcellular fractionation with LC-MS/MS showing redistribution upon YTHDC1 knockdown, (2) target identification by PAR-CLIP/RIP-seq, (3) subcellular RNA-seq showing selective effects on targets, (4) nascent RNA labeling confirming export defects, (5) reporter assays demonstrating sufficiency, (6) protein interaction studies identifying SRSF3 as adaptor, (7) CLIP experiments showing YTHDC1-dependent RNA binding by SRSF3/NXF1, and (8) functional requirement for SRSF3 co-binding. The mechanistic model is internally consistent and supported by multiple lines of evidence. The work represents a significant advance in understanding m6A-dependent mRNA metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The authors propose a model where YTHDC1 binds m6A-modified mRNA and delivers it to dephosphorylated SRSF3, which then associates with NXF1 for export. This occurs post-transcriptionally and may involve pathways separate from co-transcriptional spliceosome-associated binding. The model accounts for YTHDC1's limited abundance relative to SRSF3 and suggests YTHDC1 assists in delivering a subset of SRSF3 cargo. Alternative mechanisms involving SR protein-methyltransferase interactions may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model (claims C163-C188) integrates the experimental findings with prior knowledge and represents reasonable interpretation. Key supporting evidence includes: (1) YTHDC1's known m6A-binding properties (C141, C170), (2) interaction with hypo-phosphorylated SRSF3 (C119-C120, C173-C174), (3) post-transcriptional function (C79-C80), (4) stoichiometry data (C135, C176), and (5) functional data showing YTHDC1 assists but is not absolutely required for all SRSF3 function (C176-C177). The speculation about alternative mechanisms (C178) and timing relative to splicing (C175) is appropriately tentative. The model acknowledges complexity and limitations. Some aspects remain speculative (C181-C184) but are clearly identified as such.",
+    "result_type": "MAJOR"
+  }
+]

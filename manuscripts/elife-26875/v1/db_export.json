@@ -1,0 +1,1529 @@
+{
+  "submission": {
+    "id": "32f12842-bec4-4146-96c1-f1df3df7f963",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:46:00.035074Z",
+    "updated_at": "2025-12-01T19:46:00.035074Z"
+  },
+  "content": [
+    {
+      "id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "submission_id": "32f12842-bec4-4146-96c1-f1df3df7f963",
+      "content_type": "manuscript",
+      "content_text": "# Parallel evolution of influenza across multiple spatiotemporal scales\n\n## Authors\n\n- Katherine S Xue<sup>1</sup> ([ORCID: 0000-0002-4094-3615](https://orcid.org/0000-0002-4094-3615))\n- Terry Stevens-Ayers<sup>3</sup>\n- Angela P Campbell<sup>3</sup>\n- Janet A Englund<sup>4</sup>\n- Steven A Pergam<sup>3</sup>\n- Michael Boeckh<sup>3</sup>\n- Jesse D Bloom<sup>1</sup> ([ORCID: 0000-0003-1267-3408](https://orcid.org/0000-0003-1267-3408)) \u2020\n\n### Affiliations\n\n1. Department of Genome Sciences University of Washington Seattle United States\n2. Basic Sciences Division and Computational Biology Program Fred Hutchinson Cancer Research Center Seattle United States\n3. Vaccine and Infectious Disease Division Fred Hutchinson Cancer Research Center Seattle United States\n4. Seattle Children\u2019s Research Institute Seattle United States\n5. Department of Pediatrics University of Washington Seattle United States\n6. Department of Medicine University of Washington Seattle United States\n7. Clinical Research Division Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nViral variants that arise in the global influenza population begin as de novo mutations in single infected hosts, but the evolutionary dynamics that transform within-host variation to global genetic diversity are poorly understood. Here, we demonstrate that influenza evolution within infected humans recapitulates many evolutionary dynamics observed at the global scale. We deep-sequence longitudinal samples from four immunocompromised patients with long-term H3N2 influenza infections. We find parallel evolution across three scales: within individual patients, in different patients in our study, and in the global influenza population. In hemagglutinin, a small set of mutations arises independently in multiple patients. These same mutations emerge repeatedly within single patients and compete with one another, providing a vivid clinical example of clonal interference. Many of these recurrent within-host mutations also reach a high global frequency in the decade following the patient infections. Our results demonstrate surprising concordance in evolutionary dynamics across multiple spatiotemporal scales.\n\n## Introduction\n\nViruses rapidly acquire de novo mutations as they replicate within infected hosts (Andino and Domingo, 2015), but only a small fraction of these variants transmit between hosts and eventually fix on a global scale. Within hosts, a mutation\u2019s impact on viral replication and immunogenicity affect whether it increases in frequency. At larger scales of space and time, transmission bottlenecks (Varble et al., 2014; Poon et al., 2016) and host heterogeneity also shape viral genetic diversity. The selective pressures at these various scales reflect complex molecular, immunological, and epidemiological constraints (Grenfell et al., 2004; Pybus and Rambaut, 2009; Luksza and L\u00e4ssig, 2014; Neher et al., 2016), which have formed the basis of recent efforts to forecast influenza evolution (Luksza and L\u00e4ssig, 2014; Neher et al., 2016, Neher et al., 2014; L\u00e4ssig et al., 2017).\n\nInfluenza\u2019s rapid global evolution has been the subject of intense study (Ghedin et al., 2005; Rambaut et al., 2008), but the origins of this variation within single infected hosts are still poorly understood. Recent deep-sequencing studies of human clinical samples suggest that influenza accumulates relatively limited genetic diversity within hosts during most acute infections (Dinis et al., 2016; Poon et al., 2016; Sobel Leonard et al., 2016; Debbink et al., 2017), in line with earlier studies in dogs and horses (Murcia et al., 2010; Hoelzer et al., 2010). Some within-host mutations may confer novel antigenic properties (Dinis et al., 2016), but most lack clear functional interpretation. Altogether, it remains unclear how influenza\u2019s within-host diversity is transformed into global evolution.\n\nInfluenza infections usually last less than a week and provide limited opportunity for longitudinal study. But among some immunocompromised patients, infections can last weeks or months (Nichols et al., 2004; Memoli et al., 2014), making it possible to examine longer-term within-host evolutionary dynamics (Rocha et al., 1991; McMinn et al., 1999; Rogers et al., 2015). Here, we use deep-sequencing to characterize the evolutionary dynamics of influenza within immunocompromised hosts. We identify a small set of mutations that arise repeatedly within individual patients, across multiple patients in our study, and at the global scale, revealing surprising similarities in evolutionary dynamics across multiple spatiotemporal scales.\n\n## Results\n\n### The same mutations often arise in multiple patients\n\nWe deep-sequenced 37 viral samples collected longitudinally from four immunocompromised patients with long-term H3N2 influenza infections in the 2005\u20132006 and 2006\u20132007 seasons (Figure 1). These patients developed influenza infections in the months after receiving hematopoietic cell transplantations when immune cell counts were still low, and nasal wash samples were collected approximately every week. All patients were treated with the neuraminidase inhibitor oseltamivir for at least some duration of their infections (Campbell et al., 2015) (Figure 1, Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig1-v1.jpg)\n\n**Figure 1.:** (A) Phylogenetic relationship between initial patient consensus sequences and 63 unique circulating influenza strains collected in the USA from 2004 to 2007, as inferred from the HA gene. (B) Overview of patient influenza infections and treatments. Periods of oseltamivir treatment are shown in orange. Dates of sequenced nasal wash samples are calculated relative to the first influenza-positive nasal wash. Low-quality samples are not shown here and were excluded from downstream analysis. Materials and methods and Figure 1\u2014figure supplement 1 give full clinical histories.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Influenza viral load over time, as quantified by qRT-PCR, and lymphocyte counts over time are shown for all patients. For the plots of viral load, nasal wash samples are marked with triangles, with influenza-positive nasal washes indicated by solid coloring. Oseltamivir treatment is indicated by gray shading. Intravenous immunoglobulin treatment is marked with a blue diamond. The limit of detection is marked with a dashed line. For the plots of lymphocyte counts, inpatient stays are indicated in purple.\n\nWe sequenced the full viral genome to high coverage directly from patient nasal wash samples by using influenza-specific reverse transcription and PCR (Hoffmann et al., 2001) to enrich for viral genetic material (Figure 2\u2014figure supplement 1). To limit the impact of library preparation and sequencing errors on estimates of variant frequency (McCrone and Lauring, 2016), we prepared sequencing libraries in duplicate for each sample, beginning from separate reverse-transcription reactions. We excluded from downstream analyses eight low-quality samples for which sequencing coverage was low or variant frequencies differed greatly between replicates (Figure 2\u2014figure supplement 1).\n\nAcross the influenza genome, de novo mutations arise most commonly in the surface proteins hemagglutinin (HA) and neuraminidase (NA) (Figure 2A), which undergo rapid global evolution (Bhatt et al., 2011). These mutations fluctuate in frequency but rarely fix, showing that complex evolutionary dynamics can emerge within single infected individuals (Figure 2B, Figure 2\u2014figure supplements 2\u20135). We focused on within-host mutations that reached a frequency of at least 5% in two independent sequencing replicates from any patient sample. Many nonsynonymous mutations occur at sites that affect the antigenicity of HA (Koel et al., 2013) and the antiviral sensitivity of NA (Baz et al., 2006; van der Vries et al., 2013) (Figure 2\u2014figure supplement 6). In NA in particular, we observe the emergence and persistence of mutations T242I and R292K, which are known to be associated with oseltamivir resistance (Baz et al., 2006; van der Vries et al., 2013), a phenomenon of strong clinical importance (Renaud et al., 2011) (Figure 2\u2014figure supplements 2\u20135).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-v1.jpg)\n\n**Figure 2.:** (A) Number of nonsynonymous (orange) and synonymous (green) variants in each influenza gene. We identified within-host viral mutations that reached a frequency of at least 5% in two independent sequencing replicates from any patient sample. (B) Frequencies over time for all HA mutations in patient W. Each subplot represents a site in HA and is labeled by codon number. Ancestral identities are colored in gray and mutant ones in orange. (C) Maximum frequencies reached by all nonsynonymous (orange) and synonymous (green) mutations in each patient. Mutations circled in black emerged independently in multiple patients and are labeled by codon number. The dotted line indicates the minimum frequency threshold of 5%. Materials and methods and Figure 2\u2014figure supplement 1 describe procedures used for variant calling and quality control. Figure 2\u2014figure supplements 2\u20135 give full frequency trajectories for all mutations in all patients. Figure 2\u2014figure supplement 6 shows mutations in HA and NA on their respective crystal structures. Figure 2\u2014figure supplement 7 describes permutation tests that assess the significance of the observed parallelism between patients.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sequencing coverage across the genome. Average sequencing coverage for each sample and library replicate is shown in 50 bp bins across the genome. Each line indicates a separate library replicate. Low-quality samples are colored in red and were not included in downstream analyses. (B) Correlation between mutation frequencies in replicate sequencing libraries. Mutations in low-quality samples are colored in red and were excluded from downstream analyses. These samples were not shown in Figure 1B. A mutation was called if a base other than the initial consensus base reached a frequency of at least 1% with a total coverage of at least 200 reads in both replicates. Note that this variant calling threshold is more lenient than the 5% threshold used to call variants in downstream analyses; this more lenient threshold identifies more variants to get a better measurement of replicability. Samples were excluded from downstream analyses if the average difference between mutation frequencies exceeded 0.05. Replicate libraries were prepared beginning with independent reverse-transcription reactions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Mutation frequencies over the course of the infection are shown at all variable sites in patient W. Ancestral identities are colored in gray, derived nonsynonymous identities in orange, and derived synonymous identities in green. Sites were called as variant if a base other than the initial consensus reached a frequency of at least 5% in both replicate libraries of at least one sequenced time point. The frequencies shown here are the average of the two replicates. Mutations located in the overlap of M1/M2 or NS1/NEP genes are displayed twice with the appropriate annotation for each gene.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Mutation frequencies over the course of the infection are shown at all variable sites in patient X. Ancestral identities are colored in gray, derived nonsynonymous identities in orange, and derived synonymous identities in green. Sites were called as variant if a base other than the initial consensus reached a frequency of at least 5% in both replicate libraries of at least one sequenced time point. The frequencies shown here are the average of the two replicates. Mutations located in the overlap of M1/M2 or NS1/NEP genes are displayed twice with the appropriate annotation for each gene.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Mutation frequencies over the course of the infection are shown at all variable sites in patient Y. Ancestral identities are colored in gray, derived nonsynonymous identities in orange, and derived synonymous identities in green. Sites were called as variant if a base other than the initial consensus reached a frequency of at least 5% in both replicate libraries of at least one sequenced time point. The frequencies shown here are the average of the two replicates. Mutations located in the overlap of M1/M2 or NS1/NEP genes are displayed twice with the appropriate annotation for each gene.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Mutation frequencies over the course of the infection are shown at all variable sites in patient Z. Ancestral identities are colored in gray, derived nonsynonymous identities in orange, and derived synonymous identities in green. Sites were called as variant if a base other than the initial consensus reached a frequency of at least 5% in both replicate libraries of at least one sequenced time point. The frequencies shown here are the average of the two replicates. Mutations located in the overlap of M1/M2 or NS1/NEP genes are displayed twice with the appropriate annotation for each gene.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Sites of (A) nonsynonymous and (B) synonymous within-host mutations are shown on an HA crystal structure (PDB 4HMG [Weis et al., 1990]). Sites of (C) nonsynonymous and (D) synonymous within-host mutation are shown on an NA crystal structure (PDB 2BAT [Varghese et al., 1992]). All sites of synonymous and nonsynonymous mutation are shown here, in contrast to Figure 4A, which only shows sites in HA at which nonsynonymous mutations arise in multiple patients in our study.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (A) Distribution of unique variable sites when sites are drawn at random along the full length of the indicated gene, matching the number of variants empirically observed in each patient. These simulations test a simple null model in which each site in the gene is equally likely to mutate. We calculated the number of unique sites of mutation in each simulation as a metric of parallelism: fewer unique sites means that more parallel mutation has occurred. The p-value indicates the proportion of 100,000 simulations in which the number of unique sites is less than or equal to what is empirically observed. (B) Distribution of overlapping sites for simulations as described in (A), but with a constrained null model in which the fraction of sites considered mutable is the fraction that shows at least two instances of nonsynonymous mutation in the global H3N2 influenza population between 2000 and 2015 (see Materials and methods) to account for constraints on protein evolution. For both HA and NA, the observed overlap of mutations between patients is statistically significant under this set of constraints. (C) p-values as described in (A), calculated across a range of constraints on the fraction of mutable sites. The constrained null model indicated in (B) is indicated with a red arrow. For both HA and NA, the observed parallelism is statistically significant at a threshold of 0.05 unless it is assumed that fewer than 15% of the sites in HA or 35% of the sites in NA are mutable.\n\nIn several cases, the same mutations arise independently and reach high frequency in multiple patients (Figure 2C). We identified nine sites in the influenza genome where parallel mutations arose in two or more patients in our study: five in HA, three in NA, and one in the nonstructural (NS) segment (Figure 2C, Figure 2\u2014figure supplement 7; HA: p<0.001; NA: p<0.01; permutation test). In subsequent analyses, we focused primarily on HA because of its prominent role in antigenic evolution (Koel et al., 2013).\n\n### Recurrent mutations drive clonal interference within individual patients\n\nAlthough the same HA mutations arise in multiple patients, we found that evolutionary outcomes sometimes diverge. For instance, A138S arises in patients W and Z, but it fixes only in patient Z. In three patients, N225D reaches a detectable frequency, but it fixes only in patient X (Figure 2C).\n\nWe suspected that the complex dynamics of these within-host mutations might arise from competition among mutant lineages. The influenza genome consists of eight linear segments that freely re-assort with one another but do not recombine (Boni et al., 2008), meaning that each segment evolves clonally. In the absence of homologous recombination, lineages carrying beneficial mutations rise and fall in frequency as they compete with one another, making it harder for any one variant to fix. This phenomenon, known as clonal interference, has been characterized extensively in experimental evolution (Hegreness et al., 2006; Kao and Sherlock, 2008; Lang et al., 2013; Neher, 2013) and affects influenza\u2019s global evolution (Strelkowa and L\u00e4ssig, 2012).\n\nWe examined clonal dynamics within individual patients by analyzing patterns of linkage among within-host mutations. We identified read pairs that spanned multiple variable sites to infer linkage, and we summarized these relationships as haplotypes: for instance, \u20180000\u2019 represents ancestral residues at four variable sites, and \u20181100\u2019 represents a double-mutant at the first two sites (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig3-v1.jpg)\n\n**Figure 3.:** (A) Method for inferring partial haplotypes from short-read sequencing data. We identified paired-end reads that spanned multiple sites of interest along a gene and determined whether the read carried the ancestral or derived allele at each site. (B) Frequencies of haplotypes at HA sites 193 and 225 in patient X. Evolutionary paths from the ancestral to double-mutant state are shown, with haplotypes colored according to their maximum frequency during the infection. Solid black lines connect pairs of haplotypes that are both present at a frequency of above 1% and that unambiguously occurred through the indicated mutation. Dashed lines indicate that multiple mutations could have produced a particular haplotype. Gray lines indicate that a mutation did not arise at a detectable frequency on a particular haplotype background. (C) Frequencies of haplotypes at HA sites 138, 193, 223, and 225 in patient W. Figure 3\u2014figure supplement 1 estimates the rate of PCR recombination as described in Materials and methods. Figure 3\u2014figure supplement 2 and 3 show the number of paired-end reads that spanned the mutations in the haplotypes in patients X and W.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The total frequency of all recombinant haplotypes and the frequency of the single most common recombinant haplotype are shown as a function of distance from the haplotype start. We mixed equal volumes of extracted RNA from the first influenza-positive nasal washes from patients W and X and prepared replicate libraries for sequencing as described in Materials and methods. In the absence of PCR recombination, all haplotypes should consist entirely of bases from one or the other original sample: for instance, 00000000 or 11111111. Based on sequencing of the unmixed samples from patients W and X, we identified eight sites of fixed differences within a 200 bp region of the HA gene, and we inferred haplotypes in the mixture sample at these eight sites. Beginning at the first haplotype site, we tallied the proportion of haplotypes that had experienced recombination by each successive site in the haplotype. We did not seek to distinguish between PCR recombination and sequencing errors: the haplotypes 00100000 and 00111111 were both recorded as having experienced recombination by the third haplotype site. The maximum-frequency recombinant haplotype never exceeded 3.5% of the total haplotypes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Each bar represents the average number of paired-end reads that spanned both variable sites of interest in Figure 3B across the two sequencing replicates.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Each bar represents the average number of paired-end reads that spanned the four variable sites of interest in Figure 3C across the two sequencing replicates.\n\nIn several instances, the same mutations arise in parallel on distinct genetic backgrounds within the same patient\u2014echoing our observation that these same mutations arise in parallel in multiple patients in our study. In patient X, lineages carrying S193Y and N225D initially compete, but a double-mutant carrying both mutations eventually fixes (Figure 3B). The A138S and F193Y mutations also arise multiple times in parallel in patient W: once on the ancestral haplotype \u20180000\u2019 to form the single-mutant \u20181000\u2019 and \u20180100\u2019 lineages; once on these single-mutant lineages to form the double-mutant \u20181100\u2019; and once on the double-mutant \u20180011\u2019 to form the triple-mutant \u20181011\u2019 and \u20180111\u2019 lineages (Figure 3C). These recurrent mutations also contribute to the large number of clonal lineages present. Several weeks into patient W\u2019s infection, we observe at least five distinct HA lineages at a frequency of at least 5%, and the lineages differ from each other by one to three nonsynonymous mutations (Figure 3C). Eventually, all lineages that carry A138S, V223I, and N225D are outcompeted by a lineage that carries F193Y.\n\nOur analysis shows that in large, clonally evolving influenza populations within hosts, a small set of beneficial mutations repeatedly arise and compete against one another in various combinations. Although many of these beneficial mutations are selected in parallel in multiple patients, the unpredictability of clonal competition determines which mutations eventually fix.\n\n### Within-host variants often arise at sites that are polymorphic in influenza globally\n\nWe compared viral mutations that arose within our patients and at the global scale. Strikingly, many of the HA mutations that arise in parallel in multiple patients in our study also reach a high global frequency, which may reflect concordant antigenic selection at the within-host and global scales. We identified all variants that reached a frequency of at least 10% in any given year after 2000 in the GISAID database of global influenza sequences (Bogner et al., 2006) and compared them to variants that we identified in the patients in our study.\n\nIn HA, most sites that varied within hosts also varied in the global influenza population, compared to about a quarter of such sites in the other influenza genes (Figure 4). We tested whether this overlap between sites of variation within patients and globally was greater than expected by chance for HA, NA, and the rest of the viral genome combined. We calculated the expected overlap when the observed number of within-host and global variants were drawn at random from each gene (Figure 4\u2014figure supplements 1\u20132). Not all sites are expected to tolerate mutation, so we also performed simulations where we only considered sites for which there was variation in human H3N2 influenza globally between 2000 and 2015: for instance, in HA about 25% of codon sites show no variation within the GISAID database. We found significant parallelism in HA (p<0.01), but not in NA or in the rest of the genome (p>0.05) when we consider all sites of global variation. This parallelism in HA evolution remains statistically significant at a 0.05 threshold until we assume that less than 50% of HA codon sites tolerate variation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig4-v1.jpg)\n\n**Figure 4.:** (A) Sites of parallel within-host mutation plotted on an HA crystal structure (PDB 4HMG [Weis et al., 1990]). (B) Overlap of within-host (orange) and global (green) variable sites in HA, NA, and all other influenza genes. Sites at which mutations arise in more than one patient are indicated in solid orange. We defined global variable sites as those at which a variant reached a frequency of at least 10% in a given year after 2000 in the GISAID database of global influenza sequences (Bogner et al., 2006). Numbers of within-host and global mutations are given in Figure 4\u2014source data 1. (C) Mutation frequencies over time within individual patients for parallel within-host mutations\u00a0in\u00a0HA. Ancestral identities are colored in gray and mutant ones in orange. (D) Global variant frequencies between 2000 and 2015 in H3N2 influenza at sites of parallel within-host mutation\u00a0in\u00a0HA. The approximate timing of the patient infections (2006\u20132007) is indicated by a white arrow. Figure 4\u2014figure supplement 1 displays variant frequencies for all sites of parallel mutation at the within-host and global scales. Figure 4\u2014figure supplement 2 describes permutation tests that assess the significance of the overlap in mutations at the within-host and global scales.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Mutation frequencies over time are plotted within hosts and in the global population for sites that are variable across both scales. Parallel within-host mutations in HA are shown in Figure 4C and are omitted. This figure shows mutation frequencies for the remaining sites that were variable across scales. Within-host mutations are labeled by gene name, amino acid change, and patient ID. Ancestral identities are colored in gray and mutant ones in orange at sites of within-host mutation, and the same colors are applied to those amino acids in the global frequency plots where present. Global variant frequencies are shown twice for NA site 150 because mutations arise at that site in two independent patients.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26875/elife-26875-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Distribution of overlapping sites when two sets of sites are drawn at random along the full length of the indicated gene or genes, matching the number of unique variable sites empirically observed in each patient and in the global influenza population (see Materials and methods). These simulations test a simple null model in which each site is equally like to mutate. We calculated the overlap between the two sets of sites in each simulation as a metric of parallelism: greater overlap means that more parallelism has occurred. The p-value indicates the proportion of 100,000 simulations in which the number of overlapping sites is greater than or equal to what is empirically observed. (B) Distribution of overlapping sites for simulations as described in (A), performed with a constrained null model in which the fraction of sites considered mutable is the fraction that shows at least two instances of nonsynonymous mutation in the global H3N2 influenza population between 2000 and 2015 (see Materials and methods) to account for constraints on protein evolution. For HA, but not NA or the other influenza genes in aggregate, the observed overlap of mutations at the within-host and global scales is statistically significant under this set of constraints. (C) p-values as described in (A), calculated across a range of constraints on the fraction of mutable sites. The constrained null model indicated in (B) is indicated with a red arrow. For HA, the observed parallelism is statistically significant at a threshold of 0.05 unless it is assumed that fewer than half the sites in the protein are mutable.\n\nThe parallelism is especially striking at the sites of HA mutations found in multiple patients in our study. In particular, four of the five sites of recurrent within-host mutation in HA are also sites of global influenza variation (Figure 4, Figure 4\u2014source data 1). The V223I and N225D mutations arise in multiple patients, and then fix globally in the decade after the patient infections (Figure 4D). Mutations also reach high global frequencies at sites 138 and 193, although the F193 and S193 variants that spread globally differ from the Y193 variant that arises within our patients. However, the concordance is incomplete. Mutation L427F reaches a frequency of\u00a0>75% in three patients but is rare or nonexistent in influenza globally (Figure 4D), suggesting that this mutation may have within-host benefits that are not reflected in global evolution. But overall across hemagglutinin, within-host variants tend to arise at sites that vary on the global scale.\n\n## Discussion\n\nIt is remarkable that influenza evolution shows such extensive parallelism at these disparate spatiotemporal scales despite heterogeneity in host immunity, viral genetic background, and the severity and duration of infection. In particular, the immunocompromised patients in our study had complex underlying conditions and diverse immune histories. Notably, the four HA sites that displayed parallel within-host and global evolution in our study (138, 193, 223, and 225) also gave rise to mutations in another study that used Sanger sequencing to analyze laboratory-passaged influenza isolated longitudinally from an immunocompromised child (Baz et al., 2006). Another previous study used hemagglutination inhibition assays to show that antigenic drift of influenza within an immunocompromised patient resembled global antigenic change (McMinn et al., 1999). These similarities further support our finding that influenza evolution shows parallelism across diverse patients.\n\nThe parallel evolution that we observe in influenza at the within-host and global scales contrasts with HIV, where similar mutations can arise within hosts that share an HLA type, but tend to revert upon transmission to recipients with different HLA types (Leslie et al., 2004; Herbeck et al., 2006; Lemey et al., 2006; Zanini et al., 2015). Part of the difference may be that immune epitopes in influenza are broadly similar among individuals, with some exceptions (Li et al., 2013; Linderman et al., 2014), whereas the targets of anti-HIV immunity vary more widely due to patient-specific factors like HLA type.\n\nWe suggest that parallelism in HA evolution may emerge from the confluence of several evolutionary conditions (L\u00e4ssig et al., 2017). First, if selection acts concordantly across environments, it will favor a common set of beneficial mutations. Second, in a constrained evolutionary landscape, this set of beneficial mutations will be relatively small. Finally, given sufficiently large population sizes, high mutation rates, and time, these beneficial mutations will emerge and be selected to detectable frequencies. Our observation that similar mutations arise repeatedly within single patients, within multiple different patients, and at the global scale, suggests that at least some of these conditions may hold true.\n\nThe parallelism and extensive evolution that we observe in long-term influenza infections contrasts with the limited within-host variation found in prior studies, which sample from acute infections of immunocompetent hosts (Murcia et al., 2010; Hoelzer et al., 2010; Dinis et al., 2016; Debbink et al., 2017; Sobel Leonard et al., 2016; Poon et al., 2016). For instance, one recent study deep-sequenced HA from several hundred patients but only found a small number of antigenic variants, and mostly at low frequencies (Dinis et al., 2016). But our study suggests that influenza may experience many of the same selective pressures within acute infections as it does globally, even if the short durations of these infections make it difficult for selected mutations to reach frequencies that are detectable with current methods. We suggest that within-host viral diversity may act as a noisy early measurement of global viral evolution, shaped by some of the same immunological and evolutionary constraints. As high-throughput sequencing continues to improve, detailed characterization of within-host variation will be increasingly valuable for understanding how molecular, immunological, and epidemiological forces interact to shape viral evolution.\n\n## Materials and methods\n\n### Patient material\n\nSamples were prospectively collected during a surveillance study for respiratory viruses performed in allogeneic hematopoietic stem cell transplant (HCT) recipients undergoing transplantation between December 2005 and February 2010 at Fred Hutchinson Cancer Research Center (Campbell et al., 2015). Following written informed consent, weekly nasal wash samples (or nasopharyngeal swabs if nasal wash samples were precluded clinically) and oropharyngeal swab specimens were obtained at least once before and weekly after HCT up to 100 days. Afterwards, samples were collected as long as the patients continued to test positive for respiratory viruses, if they developed new symptoms, or at least every three months until one year post-transplantation. Nasal wash samples were collected using 5 mL of saline per nostril, and combined with oropharyngeal swabs for real-time PCR testing for a panel of 12 respiratory viruses, including influenza A and B. Samples were considered positive if the assay\u2019s cycle threshold was less than 40, for a limit of detection of approximately 2000 viral copies/mL. All samples sequenced in this study tested positive for influenza A. The timing of each sample during an infection was calculated as the number of days since the first influenza-positive nasal wash for that patient.\n\nDescriptions of individual patients and their clinical courses are summarized below, with detailed information in Figure 1\u2014figure supplement 1. All patients were severely immunocompromised: although their influenza infections occurred after transplant engraftment, their lymphocyte counts remained well below those found in immunocompetent individuals, and they were concurrently treated with immunosuppressive medications. Influenza sometimes co-occurred with other respiratory viruses, and the patients were frequently taking multiple antiviral and antibiotic medications at any given point in the infection.\n\n#### Patient W\n\nA female in the 25\u201344 age group developed upper respiratory symptoms in early 2007, 30 days after receiving a non-myeloablative HCT for Hodgkin\u2019s disease and 18 days following engraftment. Patient nasal wash samples repeatedly tested positive for influenza A for the next 80 days until the patient died of pulmonary failure, with diffuse alveolar damage found on autopsy. The patient received a 12 day course of oseltamivir at 75 mg PO BID approximately 30 days into the infection and was treated continuously with oseltamivir for the last 26 days of her life, first at 75 mg PO BID and then increasing to 150 mg PO BID. The patient was co-infected with coronavirus for the duration of the influenza infection and also tested positive for human metapneumovirus for the last 26 days of her life.\n\n#### Patient X\n\nA male in the 65+ age group developed upper respiratory symptoms in early 2006, 45 days after receiving a non-myeloablative HCT for Hodgkin\u2019s disease. Patient nasal wash samples repeatedly tested positive for influenza A for the next 72 days, after which the patient chose to discontinue study participation. The patient was treated with two courses of oseltamivir: a 5 day course at 75 mg PO BID following the first positive nasal wash, and an 8 day course at 75 mg PO BID approximately four weeks into the infection. The patient also tested positive for cytomegalovirus (CMV) and Aspergillus early in the influenza infection.\n\n#### Patient Y\n\nA male in the 45\u201364 age group developed upper respiratory symptoms in spring 2006, 62 days after receiving a non-myeloablative HCT for acute myeloid leukemia (AML) and 52 days after engraftment. Patient nasal wash samples repeatedly tested positive for influenza A for the next 77 days, after which the patient began testing negative. The patient was treated with three courses of oseltamivir: an 8 day course following the first positive nasal wash, a 30 day course beginning approximately two weeks into the infection, and a second 30 day course starting approximately seven weeks into the infection, all at 75 mg PO BID. The patient also intermittently tested positive for CMV and coronavirus during the influenza infection.\n\n#### Patient Z\n\nA male in the 65+ age group developed upper respiratory symptoms in early 2007, 197 days after receiving a non-myeloablative HCT for AML and 175 days after engraftment. Nasal wash samples repeatedly tested positive for influenza A over the next 69 days, after which monitoring ceased due to severe illness, and the patient died 15 days after the last influenza-positive sample from relapsed AML. The patient was treated with two courses of oseltamivir: a 6 day course at 150 mg PO BID following the first flu-positive nasal wash, and a 66 day course starting approximately two weeks into the infection that began at 150 mg PO QD and increased to 150 mg PO BID. The patient also received 30\u00a0g of IVIG 46 days into the flu infection. The patient intermittently tested positive for respiratory syncytial virus over the same period and also experienced Epstein-Barr viremia.\n\n### Viral deep sequencing\n\nTo deep-sequence viral populations, we extracted bulk RNA from nasal wash samples using the QIAamp Viral RNA Mini Kit (QIAGEN) according to manufacturer\u2019s instructions. Where possible, we extracted RNA from 560 \u03bcL of sample, the maximum volume recommended for use with the QIAamp kit, to capture as much viral diversity as possible.\n\nTo amplify the influenza genome, we modified the primers designed by Hoffmann et al. (2001) for full-length amplification of the influenza A genome (Figure 2\u2014source data 1). We performed reverse transcription using Superscript III First-Strand Reaction Mix (Thermo Fisher) and an equimolar mix of the 5\u2019-Hoffmann-U12-A4 and 5\u2019-Hoffmann-U12-G4 primers, which bind to the conserved U12 region present on each influenza gene segment. To 6 \u03bcL RNA eluent, we added 1 \u03bcL annealing buffer and 1 \u03bcL of 2 uM primer mix, then incubated at 65 degrees C for 5 min. We added 10 \u03bcL 2X First-Strand Reaction Mix and 2 \u03bcL Superscript III/RNaseOUT Enzyme Mix on ice for a 20 \u03bcL total reaction volume, then incubated at 25 degrees C for 10 min (this initial incubation is designed to help with the binding of short primers), 50 degrees C for 50 min, and 85 degrees C for 5 min.\n\nWe used the entire 20 \u03bcL volume of the reverse-transcription reaction as template in a 100 \u03bcL PCR reaction using KOD HotStart Reaction Mix (EMP Millipore) and a 24-primer cocktail as described in Figure 2\u2014source data 1 at a total concentration of 600 nM. We performed 35 cycles of PCR amplification with an annealing temperature of 55 degrees C and an extension time of 3 min.\n\nWe purified the PCR product using 1X AMPure beads (Beckman Coulter) and prepared libraries for Illumina sequencing using Nextera XT (Illumina). We sequenced the libraries on a NextSeq 500 platform (Illumina) with 150 bp paired-end reads. We performed library preparation and sequencing in duplicate, starting from independent reverse-transcription reactions.\n\n### Read mapping\n\nWe first used bowtie2 (Langmead and Salzberg, 2012) to filter out reads that mapped to the human genome. Remaining reads are available in the SRA as BioProject PRJNA364676. We used cutadapt 1.8.3 (Martin, 2011) to trim adapter sequences from the remaining reads, remove bases at the ends of reads with a Q-score below 25, and filter out reads whose remaining length was shorter than 20 bases. We locally aligned trimmed reads to the A/Brisbane/10/2007 (H3N2) genome (Genbank accessions CY035022 to CY035029) using bowtie2 (Langmead and Salzberg, 2012) and tallied the counts of each base at each genome position using custom scripts. We discarded reads with a mapping score below 20, as well as bases with a Q-score below 20.\n\n### Quality filtering\n\nWe calculated average sequencing coverage in 50 bp bins along the viral genome. Because we prepared sequencing libraries using Nextera tagmentation, we expect coverage to be low at the two ends of the eight viral gene segments, corresponding to 16 bins. We discarded samples with more than 16 bins with average coverage below 200x (Figure 2\u2014figure supplement 1A). We also identified sites at which a non-consensus base reached a frequency of at least 1% in both sequencing replicates and compared variant frequencies between replicates. We discarded samples for which the average difference between variant frequencies in the two replicates exceeded 0.05 (Figure 2\u2014figure supplement 1B). In total, we excluded eight samples from downstream analyses. The samples shown in Figure 1B are high-quality samples only.\n\n### Variant calling and annotation\n\nFor each patient, we identified variable nucleotide sites in the viral genome. We defined these sites as positions with a sequencing coverage of at least 200x, at which multiple bases are present at a frequency of at least 5% in both replicate libraries. We used custom scripts to determine each variant\u2019s codon position and whether it created a synonymous or nonsynonymous substitution.\n\n#### A note on codon numbering and gene annotation\n\nWe numbered HA codons according to the H3 numbering system. This HA numbering scheme assigns 1 to codon 17 of the full HA gene, which is the beginning of the mature HA protein. The codons for all other genes are numbered sequentially beginning with one at the N-terminal methionine. The M1 and M2 genes have 27 bp of in-frame and 44 bp of out-of-frame overlap, and the NS1 and NEP genes have 30 bp of in-frame and 251 bp of out-of-frame overlap. We annotated variants separately for each gene if they occurred in these regions of overlap.\n\n### Phylogenetic analysis\n\nFor each patient in our study, we determined the viral consensus sequence at the first sequenced time point. We also downloaded the set of 503 sequences in the Global Initiative on Sharing All Influenza Data (GISAID) EpiFlu database (Bogner et al., 2006) corresponding to all full-length HA coding regions from human H3N2 influenza A isolates collected in the USA from January 1, 2004 to December 31, 2007 (GISAID acknowledgement tables provided in Supplementary file 1). We analyzed only sequences with passage annotation \u2018Unpassaged,\u2019 \u2018Original\u2019, or \u2018P0,\u2019 indicating that the strains were sequenced directly from the clinical isolates, leaving 63 unique sequences for phylogenetic inference. We pairwise aligned each sequence to the A/Brisbane/10/2007 (H3N2) coding sequence (Genbank accession CY035022) using the program needle from EMBOSS 6.6.0 (Rice et al., 2000), which implements a Needleman-Wunsch alignment. We used RAxML 8.2.3 (Stamatakis, 2014) to infer a phylogeny from this alignment using a GTRCAT codon-substitution model and visualized the tree using the R package ggtree (Yu et al., 2017).\n\n### Haplotype inference\n\nWe identified paired-end reads that spanned n variable sites of interest within a single gene and determined which bases were present at each variable site. We summarized this information as an n-digit binary haplotype, in which each digit represented one variable site, 0 represented the ancestral base, and 1 represented the derived base. We discarded reads that did not span all sites of interest, or that contained genotypes other than the most common derived base. We estimated the rate of PCR recombination as described in Figure 3\u2014figure supplement 1. In Figure 3\u2014figure supplement 2 and Figure 3\u2014figure supplement 3, we show the number of paired-end reads used to infer the haplotypes in Figure 3.\n\n### Analysis of global variation\n\nTo identify sites of global variation in influenza, we downloaded all sequences in the Global Initiative on Sharing All Influenza Data (GISAID) EpiFlu database (Bogner et al., 2006) corresponding to all full-length influenza coding regions from human H3N2 influenza A isolates collected from January 1, 2000 to December 31, 2015. Acknowledgement tables are provided as Supplementary file 1. We pairwise aligned each sequence to the A/Brisbane/10/2007 (H3N2) coding sequence (Genbank accession CY035022) using the program needle from EMBOSS 6.6.0 (Rice et al., 2000), which implements a Needleman-Wunsch alignment. We calculated the amino-acid distance of each sequence from the Brisbane/2007 reference and excluded outliers whose distance deviated significantly from the other sequences originating from that year, since these sequences may have been misannotated. We tallied the amino acids present at each codon position in each year, discarding sequences that contained indels, and we identified sites at which multiple amino acids were present at a frequency of at least 10% within a single year, or at which the consensus base changed from year to year.\n\n### Statistical tests of parallelism\n\nWe sought to test the probability that the parallel emergence of mutations across multiple patients in our study was due to chance. We began with a simple null model in which all sites are equally likely to mutate, and we drew sites from each gene at random without replacement, matching the number of mutations observed in each patient. We calculated the number of unique sites of mutation among all four patients in this simulated data set, and we compared this distribution to the number of unique sites observed in our sequencing data: fewer unique sites of mutation indicates more parallelism (Figure 2\u2014figure supplement 7A). This null model is overly simplistic, since some sites in a protein experience more evolutionary constraint. To estimate this constraint, we limited the number of sites considered mutable to the sites that show at least two instances of nonsynonymous mutation in the global H3N2 population between 2000 and 2015 (see Analysis of Global Variation) (Figure 2\u2014figure supplement 7B). The p-values given in the main text are calculated under this more conservative null model. We also performed permutation tests for a range of possible proportions of mutable sites and calculated the fraction of simulations that matched or exceeded the amount of parallelism observed in our data (Figure 2\u2014figure supplement 7C).\n\nWe used a similar approach to test whether the overlap of mutations observed within patients in our study and in the global flu population was likely to be due to chance. We drew two independent sets of sites from each gene at random without replacement, matching the total number of unique variable sites within all patients and the number of variable sites observed in the global population. We then calculated the overlap between these two sets of sites. We used the approach above to calculate the overlap under a simple null model in which all sites in the gene are equally like to mutate; a constrained null model in which the only mutable sites are ones that show nonsynonymous mutation between 2000 and 2015; and across a range of possible constraints (Figure 4\u2014figure supplement 2).\n\n### Data and code availability\n\nThe FASTQ files are available on the SRA as BioProject PRJNA364676. The computer code that performs the analysis is available at https://github.com/ksxue/parallel-evolution (with a copy archived at https://github.com/elifesciences-publications/parallel-evolution)\u00a0and in Supplementary file 2 (Xue, 2017).\n",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "1786ceda-5752-4ea1-80f1-d32b61b713da",
+      "submission_id": "32f12842-bec4-4146-96c1-f1df3df7f963",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, University of Basel , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26875.026](https://doi.org/10.7554/eLife.26875.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Parallel evolution of influenza across multiple spatiotemporal scales\" for consideration by eLife. Your article has been favorably evaluated by Patricia Wittkopp (Senior Editor) and two reviewers, one of whom, Richard A Neher (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers agreed that you present a high-quality data set that quantifies and tracks within host evolution of influenza A virus at unprecedented detail. Similar variants are observed in viral populations in different immuno-compromised individuals and the variable sites have unexpected overlap with polymorphic sites in the global epidemic. This raises the possibility that mutation observed within host can inform predictions of influenza strains dominating future seasons. These are important observations.\n\nEssential revisions:\n\nHowever, before we can recommend your manuscript for publication in eLife, we would like you to address the following points.\n\n1) Be careful and explicit about what can be concluded from the observed parallelism of mutations. The statement \"Influenza evolution within single infected hosts acts as a microcosm of viral evolutionary dynamics observed at the global scale\" overstates the degree to which global influenza evolution is predicted by within host patterns. In our interpretation, your data suggest that mutations observed within host in HA are enriched for mutations that are polymorphic later in the global epidemic. Beyond that, quite some uncertainty remains. Fixation within host does not imply fixation globally (site 138), and a site observed transiently within host (site 223) might fix globally. The statement that \"most\" recurrent mutations have the same within host/global dynamics (subsection \u201cWithin-host evolution often parallels global evolutionary dynamics\u201d, last paragraph) is not supported by your data and this needs to be toned down. The degree of parallelism is remarkable, but you should be careful not to overstate it.\n\n2) You use sequences from GISAID. Hence you need to provide a table acknowledging the GISAID contributors (or use only public domain sequences).\n\n3) Thank you for providing the analysis code. It would be useful to if you could check this code into a git repo (e.g. on github) that eLife can then clone. A top-level README that explains the content of the different folders and its relation to the paper would also help.\n\n4) Please extend the discussion of the statistical tests for parallelism in the main text (subsection \u201cWithin-host evolution often parallels global evolutionary dynamics\u201d, first paragraph) to give the reader a better idea of what is being tested. Please also discuss the fact that significant enrichment is only observed when at least half of all amino acids in HA are assumed mutable.\n",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5a309da6-f51c-4f7a-87b6-23bb9b963dc3",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C1",
+      "claim": "37 viral samples were collected longitudinally from four immunocompromised patients with long-term H3N2 influenza infections in the 2005-2006 and 2006-2007 seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "We deep-sequenced 37 viral samples collected longitudinally from four immunocompromised patients with long-term H3N2 influenza infections in the 2005\u20132006 and 2006\u20132007 seasons (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by Figure 1 showing the timeline of infections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "b7143434-286a-448b-a6ba-2e7bf5406743",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C2",
+      "claim": "The patients developed influenza infections in the months after receiving hematopoietic cell transplantations when immune cell counts were still low.",
+      "claim_type": "EXPLICIT",
+      "source": "These patients developed influenza infections in the months after receiving hematopoietic cell transplantations when immune cell counts were still low, and nasal wash samples were collected approximately every week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the patient population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "5955abab-d117-4e2c-9d95-28a0ec3d2ca7",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C3",
+      "claim": "All patients were treated with the neuraminidase inhibitor oseltamivir for at least some duration of their infections.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients were treated with the neuraminidase inhibitor oseltamivir for at least some duration of their infections (Campbell et al., 2015) (Figure 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Campbell et al., 2015 and reference to figures showing treatment timelines.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "d1dae806-cf8a-47b8-b113-336f3a19002f",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C4",
+      "claim": "De novo mutations arise most commonly in the surface proteins hemagglutinin (HA) and neuraminidase (NA) across the influenza genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the influenza genome, de novo mutations arise most commonly in the surface proteins hemagglutinin (HA) and neuraminidase (NA) (Figure 2A), which undergo rapid global evolution (Bhatt et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2A showing the distribution of mutations across genes, with citation to Bhatt et al., 2011 for global evolution.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "c0190231-fb20-47a8-a981-d6d58212d6ff",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C5",
+      "claim": "HA and NA undergo rapid global evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the influenza genome, de novo mutations arise most commonly in the surface proteins hemagglutinin (HA) and neuraminidase (NA) (Figure 2A), which undergo rapid global evolution (Bhatt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Bhatt et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "c31a8313-97df-4ed4-8b1c-e96f162c539d",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C6",
+      "claim": "Mutations T242I and R292K in NA are associated with oseltamivir resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In NA in particular, we observe the emergence and persistence of mutations T242I and R292K, which are known to be associated with oseltamivir resistance (Baz et al., 2006; van der Vries et al., 2013), a phenomenon of strong clinical importance (Renaud et al., 2011) (Figure 2\u2014figure supplements 2\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations to Baz et al., 2006 and van der Vries et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "8900a6a9-6907-4985-9cfa-b181c0b9c760",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C7",
+      "claim": "Nine sites in the influenza genome showed parallel mutations that arose in two or more patients: five in HA, three in NA, and one in the NS segment.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified nine sites in the influenza genome where parallel mutations arose in two or more patients in our study: five in HA, three in NA, and one in the nonstructural (NS) segment (Figure 2C, Figure 2\u2014figure supplement 7; HA: p<0.001; NA: p<0.01; permutation test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 2C and statistical testing via permutation test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "3b514156-15d5-40db-92cf-21725924b509",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C8",
+      "claim": "The parallel emergence of mutations in HA across multiple patients is statistically significant (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified nine sites in the influenza genome where parallel mutations arose in two or more patients in our study: five in HA, three in NA, and one in the nonstructural (NS) segment (Figure 2C, Figure 2\u2014figure supplement 7; HA: p<0.001; NA: p<0.01; permutation test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with p-value from permutation test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "2a81283f-2ecb-4c73-8b7f-084f2f3394ea",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C9",
+      "claim": "The parallel emergence of mutations in NA across multiple patients is statistically significant (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified nine sites in the influenza genome where parallel mutations arose in two or more patients in our study: five in HA, three in NA, and one in the nonstructural (NS) segment (Figure 2C, Figure 2\u2014figure supplement 7; HA: p<0.001; NA: p<0.01; permutation test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with p-value from permutation test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "d5fd42f3-c23f-49a3-9dc2-2a0b9cc7cab5",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C10",
+      "claim": "The influenza genome consists of eight linear segments that freely re-assort with one another but do not recombine.",
+      "claim_type": "EXPLICIT",
+      "source": "The influenza genome consists of eight linear segments that freely re-assort with one another but do not recombine (Boni et al., 2008), meaning that each segment evolves clonally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Boni et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "2b45849d-dabe-44cc-9924-cde436678cb9",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C11",
+      "claim": "Each influenza genome segment evolves clonally.",
+      "claim_type": "EXPLICIT",
+      "source": "The influenza genome consists of eight linear segments that freely re-assort with one another but do not recombine (Boni et al., 2008), meaning that each segment evolves clonally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a consequence of the lack of recombination.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "21e3fa5d-bafd-4c0a-a41c-ff9e83168b82",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C12",
+      "claim": "Clonal interference has been characterized extensively in experimental evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, known as clonal interference, has been characterized extensively in experimental evolution (Hegreness et al., 2006; Kao and Sherlock, 2008; Lang et al., 2013; Neher, 2013) and affects influenza's global evolution (Strelkowa and L\u00e4ssig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with multiple citations to experimental evolution studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "671b5923-900b-4c40-8952-558ec965a5f1",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C13",
+      "claim": "Clonal interference affects influenza's global evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, known as clonal interference, has been characterized extensively in experimental evolution (Hegreness et al., 2006; Kao and Sherlock, 2008; Lang et al., 2013; Neher, 2013) and affects influenza's global evolution (Strelkowa and L\u00e4ssig, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Strelkowa and L\u00e4ssig, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "4a3d5138-239e-4f70-8622-940d8fe380e0",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C14",
+      "claim": "In patient X, lineages carrying S193Y and N225D initially compete, but a double-mutant carrying both mutations eventually fixes.",
+      "claim_type": "EXPLICIT",
+      "source": "In patient X, lineages carrying S193Y and N225D initially compete, but a double-mutant carrying both mutations eventually fixes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3B displaying haplotype frequencies over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "a5929dc6-bf9d-41a1-9243-ab5a5943b5f3",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C15",
+      "claim": "The A138S and F193Y mutations arise multiple times in parallel in patient W on distinct genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The A138S and F193Y mutations also arise multiple times in parallel in patient W: once on the ancestral haplotype '0000' to form the single-mutant '1000' and '0100' lineages; once on these single-mutant lineages to form the double-mutant '1100'; and once on the double-mutant '0011' to form the triple-mutant '1011' and '0111' lineages (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3C displaying haplotype evolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "d50d1d81-5ca2-4395-9a29-7920449df672",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C16",
+      "claim": "Several weeks into patient W's infection, at least five distinct HA lineages are present at a frequency of at least 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Several weeks into patient W's infection, we observe at least five distinct HA lineages at a frequency of at least 5%, and the lineages differ from each other by one to three nonsynonymous mutations (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "97e86d7e-1bf7-4e57-8851-8826b94499c3",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C17",
+      "claim": "In HA, most sites that varied within hosts also varied in the global influenza population.",
+      "claim_type": "EXPLICIT",
+      "source": "In HA, most sites that varied within hosts also varied in the global influenza population, compared to about a quarter of such sites in the other influenza genes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4B comparing within-host and global variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "c015d58d-b8ae-4b7b-a82a-c68cf32bfe74",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C18",
+      "claim": "About a quarter of sites that varied within hosts in non-HA genes also varied in the global influenza population.",
+      "claim_type": "EXPLICIT",
+      "source": "In HA, most sites that varied within hosts also varied in the global influenza population, compared to about a quarter of such sites in the other influenza genes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "b7fe8d0d-7eff-42f6-98cc-f8b45b82bc0e",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C19",
+      "claim": "There is significant parallelism in HA evolution between within-host and global scales (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant parallelism in HA (p<0.01), but not in NA or in the rest of the genome (p>0.05) when we consider all sites of global variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on permutation testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "eb981361-34a1-48cf-95d5-77c3d9ffb7a0",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C20",
+      "claim": "There is no significant parallelism in NA evolution between within-host and global scales (p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant parallelism in HA (p<0.01), but not in NA or in the rest of the genome (p>0.05) when we consider all sites of global variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on permutation testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "3a881a30-f79b-4a42-9f04-bf9da522bf5c",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C21",
+      "claim": "There is no significant parallelism in the rest of the influenza genome (excluding HA and NA) between within-host and global scales (p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant parallelism in HA (p<0.01), but not in NA or in the rest of the genome (p>0.05) when we consider all sites of global variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on permutation testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "eba7e70a-e83c-4fcb-9e60-a6c3d09be849",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C22",
+      "claim": "Four of the five sites of recurrent within-host mutation in HA are also sites of global influenza variation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, four of the five sites of recurrent within-host mutation in HA are also sites of global influenza variation (Figure 4, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "cc901cb9-0fb0-4753-b209-05c54254d47a",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C24",
+      "claim": "Mutation L427F reaches a frequency of >75% in three patients but is rare or nonexistent in influenza globally.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the concordance is incomplete. Mutation L427F reaches a frequency of >75% in three patients but is rare or nonexistent in influenza globally (Figure 4D), suggesting that this mutation may have within-host benefits that are not reflected in global evolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "122269ed-12f0-4100-bf50-1f541ee18da4",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C25",
+      "claim": "Mutation L427F may have within-host benefits that are not reflected in global evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation L427F reaches a frequency of >75% in three patients but is rare or nonexistent in influenza globally (Figure 4D), suggesting that this mutation may have within-host benefits that are not reflected in global evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion in the Results section based on the observation of high within-host frequency but low global frequency.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "d0f42820-df0a-411e-a7d5-e46c12ac4d7d",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C26",
+      "claim": "The four HA sites that displayed parallel within-host and global evolution (138, 193, 223, and 225) also gave rise to mutations in laboratory-passaged influenza isolated longitudinally from an immunocompromised child.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the four HA sites that displayed parallel within-host and global evolution in our study (138, 193, 223, and 225) also gave rise to mutations in another study that used Sanger sequencing to analyze laboratory-passaged influenza isolated longitudinally from an immunocompromised child (Baz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citation to Baz et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "17d08c24-78fe-4310-b366-6f5f5015f6a4",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C27",
+      "claim": "Antigenic drift of influenza within an immunocompromised patient resembled global antigenic change.",
+      "claim_type": "EXPLICIT",
+      "source": "Another previous study used hemagglutination inhibition assays to show that antigenic drift of influenza within an immunocompromised patient resembled global antigenic change (McMinn et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citation to McMinn et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "5d89559a-353f-45b7-9eb5-5470406b4149",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C28",
+      "claim": "In HIV, similar mutations can arise within hosts that share an HLA type, but tend to revert upon transmission to recipients with different HLA types.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallel evolution that we observe in influenza at the within-host and global scales contrasts with HIV, where similar mutations can arise within hosts that share an HLA type, but tend to revert upon transmission to recipients with different HLA types (Leslie et al., 2004; Herbeck et al., 2006; Lemey et al., 2006; Zanini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citations to multiple HIV studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "843535ae-e8f6-4e28-b62c-bf68bdb5e12d",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C29",
+      "claim": "Immune epitopes in influenza are broadly similar among individuals, with some exceptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of the difference may be that immune epitopes in influenza are broadly similar among individuals, with some exceptions (Li et al., 2013; Linderman et al., 2014), whereas the targets of anti-HIV immunity vary more widely due to patient-specific factors like HLA type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citations to Li et al., 2013 and Linderman et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "1d0ba11f-29db-4c9f-a687-0d96f9788b53",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C30",
+      "claim": "The targets of anti-HIV immunity vary more widely than influenza due to patient-specific factors like HLA type.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of the difference may be that immune epitopes in influenza are broadly similar among individuals, with some exceptions (Li et al., 2013; Linderman et al., 2014), whereas the targets of anti-HIV immunity vary more widely due to patient-specific factors like HLA type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a comparison to influenza.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "86606ecc-49e3-428a-8e6c-df54cccd1880",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C31",
+      "claim": "Prior studies sampling from acute infections of immunocompetent hosts found limited within-host variation in influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallelism and extensive evolution that we observe in long-term influenza infections contrasts with the limited within-host variation found in prior studies, which sample from acute infections of immunocompetent hosts (Murcia et al., 2010; Hoelzer et al., 2010; Dinis et al., 2016; Debbink et al., 2017; Sobel Leonard et al., 2016; Poon et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "de5db7c2-2e98-49a4-a722-84ed31480023",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C32",
+      "claim": "A recent study deep-sequenced HA from several hundred patients but only found a small number of antigenic variants, mostly at low frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, one recent study deep-sequenced HA from several hundred patients but only found a small number of antigenic variants, and mostly at low frequencies (Dinis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citation to Dinis et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "4ff77025-79a6-449d-9802-b9b629ecf51d",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C33",
+      "claim": "Influenza may experience many of the same selective pressures within acute infections as it does globally, even if short infection durations make it difficult for selected mutations to reach detectable frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "But our study suggests that influenza may experience many of the same selective pressures within acute infections as it does globally, even if the short durations of these infections make it difficult for selected mutations to reach frequencies that are detectable with current methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "cc3d0c6a-73b4-4e97-a55f-3ea84de3888b",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C34",
+      "claim": "Within-host viral diversity may act as a noisy early measurement of global viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that within-host viral diversity may act as a noisy early measurement of global viral evolution, shaped by some of the same immunological and evolutionary constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion in the Discussion section based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "018390cd-2509-4dee-89f8-8fc4ad57bb39",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C35",
+      "claim": "Samples were prospectively collected during a surveillance study for respiratory viruses performed in allogeneic hematopoietic stem cell transplant recipients undergoing transplantation between December 2005 and February 2010 at Fred Hutchinson Cancer Research Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were prospectively collected during a surveillance study for respiratory viruses performed in allogeneic hematopoietic stem cell transplant (HCT) recipients undergoing transplantation between December 2005 and February 2010 at Fred Hutchinson Cancer Research Center (Campbell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with citation to Campbell et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "341add3e-64e7-48fc-ad50-ed6e03fef19b",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C36",
+      "claim": "Weekly nasal wash samples were obtained at least once before and weekly after HCT up to 100 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Following written informed consent, weekly nasal wash samples (or nasopharyngeal swabs if nasal wash samples were precluded clinically) and oropharyngeal swab specimens were obtained at least once before and weekly after HCT up to 100 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "296ce94b-e3a7-46a0-82ba-9d828f4d2fdd",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C37",
+      "claim": "Samples were considered positive if the assay's cycle threshold was less than 40, for a limit of detection of approximately 2000 viral copies/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were considered positive if the assay's cycle threshold was less than 40, for a limit of detection of approximately 2000 viral copies/mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the detection threshold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "c8c5b424-7987-4620-a312-8c30835ce77a",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C38",
+      "claim": "All samples sequenced in this study tested positive for influenza A.",
+      "claim_type": "EXPLICIT",
+      "source": "All samples sequenced in this study tested positive for influenza A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "7fe2c19b-44cb-4969-a4c4-0413cd485ee7",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C39",
+      "claim": "Patient W was a female in the 25-44 age group who developed upper respiratory symptoms in early 2007, 30 days after receiving a non-myeloablative HCT for Hodgkin's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "A female in the 25\u201344 age group developed upper respiratory symptoms in early 2007, 30 days after receiving a non-myeloablative HCT for Hodgkin's disease and 18 days following engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "e7b798ef-bd59-49ed-b1be-f6ef70a38b96",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C40",
+      "claim": "Patient W's nasal wash samples repeatedly tested positive for influenza A for 80 days until the patient died of pulmonary failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient nasal wash samples repeatedly tested positive for influenza A for the next 80 days until the patient died of pulmonary failure, with diffuse alveolar damage found on autopsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient W's clinical course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "f59cda88-52d4-4352-b1ab-22eb447730c6",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C41",
+      "claim": "Patient W was co-infected with coronavirus for the duration of the influenza infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The patient was co-infected with coronavirus for the duration of the influenza infection and also tested positive for human metapneumovirus for the last 26 days of her life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "a3852fb4-7b55-472c-8da4-319d088d564f",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C42",
+      "claim": "Patient X was a male in the 65+ age group who developed upper respiratory symptoms in early 2006, 45 days after receiving a non-myeloablative HCT for Hodgkin's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "A male in the 65+ age group developed upper respiratory symptoms in early 2006, 45 days after receiving a non-myeloablative HCT for Hodgkin's disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient X.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "24e8adec-1a3c-4630-99fe-128c07a34f68",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C43",
+      "claim": "Patient X's nasal wash samples repeatedly tested positive for influenza A for 72 days, after which the patient chose to discontinue study participation.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient nasal wash samples repeatedly tested positive for influenza A for the next 72 days, after which the patient chose to discontinue study participation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient X.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "cfd332b3-0077-4e98-a61c-36ec87b26fa8",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C44",
+      "claim": "Patient Y was a male in the 45-64 age group who developed upper respiratory symptoms in spring 2006, 62 days after receiving a non-myeloablative HCT for acute myeloid leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "A male in the 45\u201364 age group developed upper respiratory symptoms in spring 2006, 62 days after receiving a non-myeloablative HCT for acute myeloid leukemia (AML) and 52 days after engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient Y.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "f020d44c-6e52-4f97-b35b-322479039484",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C45",
+      "claim": "Patient Y's nasal wash samples repeatedly tested positive for influenza A for 77 days, after which the patient began testing negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient nasal wash samples repeatedly tested positive for influenza A for the next 77 days, after which the patient began testing negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient Y.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "3d5db589-dc03-4fdf-8961-2a8f2e285c24",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C46",
+      "claim": "Patient Z was a male in the 65+ age group who developed upper respiratory symptoms in early 2007, 197 days after receiving a non-myeloablative HCT for AML.",
+      "claim_type": "EXPLICIT",
+      "source": "A male in the 65+ age group developed upper respiratory symptoms in early 2007, 197 days after receiving a non-myeloablative HCT for AML and 175 days after engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient Z.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "ba8e9021-5976-4cc5-8cce-bbec99ae2179",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C47",
+      "claim": "Patient Z's nasal wash samples repeatedly tested positive for influenza A over 69 days, after which monitoring ceased due to severe illness, and the patient died 15 days after the last influenza-positive sample from relapsed AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Nasal wash samples repeatedly tested positive for influenza A over the next 69 days, after which monitoring ceased due to severe illness, and the patient died 15 days after the last influenza-positive sample from relapsed AML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing Patient Z.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "79a0a80a-6d44-4f57-910d-6b31a4d4c96c",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C48",
+      "claim": "Eight low-quality samples were excluded from downstream analyses due to low sequencing coverage or variant frequencies differing greatly between replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded from downstream analyses eight low-quality samples for which sequencing coverage was low or variant frequencies differed greatly between replicates (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "0929b873-ee4f-4146-8057-b395a67c7c25",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C49",
+      "claim": "Sequencing libraries were prepared in duplicate for each sample, beginning from separate reverse-transcription reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "To limit the impact of library preparation and sequencing errors on estimates of variant frequency (McCrone and Lauring, 2016), we prepared sequencing libraries in duplicate for each sample, beginning from separate reverse-transcription reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to McCrone and Lauring, 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "85145768-0b02-4a03-ab43-fc083879bf7b",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C50",
+      "claim": "The full viral genome was sequenced to high coverage directly from patient nasal wash samples using influenza-specific reverse transcription and PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced the full viral genome to high coverage directly from patient nasal wash samples by using influenza-specific reverse transcription and PCR (Hoffmann et al., 2001) to enrich for viral genetic material (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citation to Hoffmann et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "8810237e-938f-4c13-bc1d-8fa4f49cbd07",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C51",
+      "claim": "Many nonsynonymous mutations occur at sites that affect the antigenicity of HA.",
+      "claim_type": "EXPLICIT",
+      "source": "Many nonsynonymous mutations occur at sites that affect the antigenicity of HA (Koel et al., 2013) and the antiviral sensitivity of NA (Baz et al., 2006; van der Vries et al., 2013) (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citation to Koel et al., 2013 and reference to Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "283801bc-20f2-4236-9d2e-41bde7adcc52",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C52",
+      "claim": "Many nonsynonymous mutations occur at sites that affect the antiviral sensitivity of NA.",
+      "claim_type": "EXPLICIT",
+      "source": "Many nonsynonymous mutations occur at sites that affect the antigenicity of HA (Koel et al., 2013) and the antiviral sensitivity of NA (Baz et al., 2006; van der Vries et al., 2013) (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citations to Baz et al., 2006 and van der Vries et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "774c162d-89ef-424c-b00e-79d340c387cb",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C53",
+      "claim": "Influenza rapidly acquires de novo mutations as it replicates within infected hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses rapidly acquire de novo mutations as they replicate within infected hosts (Andino and Domingo, 2015), but only a small fraction of these variants transmit between hosts and eventually fix on a global scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citation to Andino and Domingo, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "487d1f3c-fd9c-4b3e-abf8-1f74aaf90205",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C54",
+      "claim": "Only a small fraction of within-host viral variants transmit between hosts and eventually fix on a global scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses rapidly acquire de novo mutations as they replicate within infected hosts (Andino and Domingo, 2015), but only a small fraction of these variants transmit between hosts and eventually fix on a global scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "6d56aac4-b2dd-4743-bf95-572ae1b7483c",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C55",
+      "claim": "Transmission bottlenecks shape viral genetic diversity at larger scales of space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "At larger scales of space and time, transmission bottlenecks (Varble et al., 2014; Poon et al., 2016) and host heterogeneity also shape viral genetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to Varble et al., 2014 and Poon et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "e74583d0-6ef7-49a9-9fde-08a3f3276495",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C56",
+      "claim": "Host heterogeneity shapes viral genetic diversity at larger scales of space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "At larger scales of space and time, transmission bottlenecks (Varble et al., 2014; Poon et al., 2016) and host heterogeneity also shape viral genetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "eb73e9c5-8913-4b08-88a0-cabb9608372c",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C57",
+      "claim": "Recent deep-sequencing studies of human clinical samples suggest that influenza accumulates relatively limited genetic diversity within hosts during most acute infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent deep-sequencing studies of human clinical samples suggest that influenza accumulates relatively limited genetic diversity within hosts during most acute infections (Dinis et al., 2016; Poon et al., 2016; Sobel Leonard et al., 2016; Debbink et al., 2017), in line with earlier studies in dogs and horses (Murcia et al., 2010; Hoelzer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "5de5bc27-7b15-4ede-9c5f-afcea8202455",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C58",
+      "claim": "Earlier studies in dogs and horses found that influenza accumulates limited genetic diversity within hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent deep-sequencing studies of human clinical samples suggest that influenza accumulates relatively limited genetic diversity within hosts during most acute infections (Dinis et al., 2016; Poon et al., 2016; Sobel Leonard et al., 2016; Debbink et al., 2017), in line with earlier studies in dogs and horses (Murcia et al., 2010; Hoelzer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to Murcia et al., 2010 and Hoelzer et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "8c556465-a732-4558-b5ac-81560e17524b",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C59",
+      "claim": "Some within-host mutations may confer novel antigenic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Some within-host mutations may confer novel antigenic properties (Dinis et al., 2016), but most lack clear functional interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citation to Dinis et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "131b7a08-7c9e-402e-a1a9-681f14c5ef66",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C60",
+      "claim": "Most within-host mutations lack clear functional interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "Some within-host mutations may confer novel antigenic properties (Dinis et al., 2016), but most lack clear functional interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "637c6d68-ae93-4247-a214-daa524554d1c",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C61",
+      "claim": "Influenza infections usually last less than a week.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza infections usually last less than a week and provide limited opportunity for longitudinal study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "92e2df4c-c00b-475c-a8ea-6bbc295da601",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C62",
+      "claim": "Among some immunocompromised patients, influenza infections can last weeks or months.",
+      "claim_type": "EXPLICIT",
+      "source": "But among some immunocompromised patients, infections can last weeks or months (Nichols et al., 2004; Memoli et al., 2014), making it possible to examine longer-term within-host evolutionary dynamics (Rocha et al., 1991; McMinn et al., 1999; Rogers et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to Nichols et al., 2004 and Memoli et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "a7db71e2-19a4-4f8a-a118-932d15706851",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C63",
+      "claim": "Long-term influenza infections in immunocompromised patients make it possible to examine longer-term within-host evolutionary dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "But among some immunocompromised patients, infections can last weeks or months (Nichols et al., 2004; Memoli et al., 2014), making it possible to examine longer-term within-host evolutionary dynamics (Rocha et al., 1991; McMinn et al., 1999; Rogers et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to studies examining within-host dynamics.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "0affaa36-a19d-4362-82e0-2bc4e2c9f8c1",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C64",
+      "claim": "Influenza evolution within infected humans recapitulates many evolutionary dynamics observed at the global scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that influenza evolution within infected humans recapitulates many evolutionary dynamics observed at the global scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "1f7df494-1a7a-46ef-b39c-d74818be908e",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C65",
+      "claim": "Parallel evolution occurs across three scales: within individual patients, in different patients in the study, and in the global influenza population.",
+      "claim_type": "EXPLICIT",
+      "source": "We find parallel evolution across three scales: within individual patients, in different patients in our study, and in the global influenza population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "eeb55f44-f14b-4844-9b7f-aa87b6bed220",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C66",
+      "claim": "In hemagglutinin, a small set of mutations arises independently in multiple patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In hemagglutinin, a small set of mutations arises independently in multiple patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "9f739702-a17e-4a54-b0d8-6af3d85ca472",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C67",
+      "claim": "The same mutations emerge repeatedly within single patients and compete with one another, providing a clinical example of clonal interference.",
+      "claim_type": "EXPLICIT",
+      "source": "These same mutations emerge repeatedly within single patients and compete with one another, providing a vivid clinical example of clonal interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "c818b49b-4958-4243-805a-61d909f1e3ac",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C68",
+      "claim": "Many recurrent within-host mutations reach a high global frequency in the decade following the patient infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these recurrent within-host mutations also reach a high global frequency in the decade following the patient infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "2d679377-a242-4704-bd94-64ffe0c1cdce",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C69",
+      "claim": "The study demonstrates surprising concordance in evolutionary dynamics across multiple spatiotemporal scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate surprising concordance in evolutionary dynamics across multiple spatiotemporal scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as the main conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "609745d7-b13b-4c4f-b829-38a5bde90a19",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C70",
+      "claim": "The unpredictability of clonal competition determines which mutations eventually fix.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many of these beneficial mutations are selected in parallel in multiple patients, the unpredictability of clonal competition determines which mutations eventually fix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the haplotype analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "d5cc105b-df50-4f67-8e9d-fbd2af3c2ca7",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C71",
+      "claim": "In large, clonally evolving influenza populations within hosts, a small set of beneficial mutations repeatedly arise and compete against one another in various combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that in large, clonally evolving influenza populations within hosts, a small set of beneficial mutations repeatedly arise and compete against one another in various combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a summary of the haplotype analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "fccbe93f-f8a3-4d66-8745-ef1faaab5fe7",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C72",
+      "claim": "Parallelism in HA evolution may emerge from the confluence of several evolutionary conditions: concordant selection across environments, a constrained evolutionary landscape, and sufficiently large population sizes, high mutation rates, and time.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that parallelism in HA evolution may emerge from the confluence of several evolutionary conditions (L\u00e4ssig et al., 2017). First, if selection acts concordantly across environments, it will favor a common set of beneficial mutations. Second, in a constrained evolutionary landscape, this set of beneficial mutations will be relatively small. Finally, given sufficiently large population sizes, high mutation rates, and time, these beneficial mutations will emerge and be selected to detectable frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a proposed explanation with citation to L\u00e4ssig et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "64b2e4a6-1083-4cdc-91d0-c8a2c148622f",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C73",
+      "claim": "Influenza may experience many of the same selective pressures within acute infections as it does globally.",
+      "claim_type": "EXPLICIT",
+      "source": "But our study suggests that influenza may experience many of the same selective pressures within acute infections as it does globally, even if the short durations of these infections make it difficult for selected mutations to reach frequencies that are detectable with current methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "82673194-a666-4827-973b-25c60d168c66",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "claim_id": "C74",
+      "claim": "Detailed characterization of within-host variation will be increasingly valuable for understanding how molecular, immunological, and epidemiological forces interact to shape viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "As high-throughput sequencing continues to improve, detailed characterization of within-host variation will be increasingly valuable for understanding how molecular, immunological, and epidemiological forces interact to shape viral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a forward-looking statement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study collected 37 longitudinal viral samples from four immunocompromised patients with long-term H3N2 influenza infections (2005-2007) following hematopoietic cell transplantation. All patients were treated with oseltamivir and had detailed clinical histories documented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C35-C47 provide comprehensive documentation of the patient cohort, sample collection methodology, and clinical characteristics. The methods are clearly described with appropriate citations, and the patient descriptions are detailed and internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "e174a7c1-3262-4fc4-85ef-8cb34b9fb472",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The full viral genome was sequenced to high coverage using duplicate libraries prepared from independent reverse-transcription reactions, with eight low-quality samples excluded from analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 describe rigorous quality control measures including duplicate sequencing libraries and exclusion criteria. The approach is well-justified with appropriate citations (McCrone and Lauring, 2016; Hoffmann et al., 2001) and supported by supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "279847f0-fc62-48ae-9201-f304e7b5d029",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "De novo mutations arise most commonly in the surface proteins HA and NA, which undergo rapid global evolution, with many mutations occurring at sites affecting antigenicity and antiviral sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C51-C52 are supported by Figure 2A showing mutation distribution and appropriate citations to prior work. The observation that mutations concentrate in HA and NA is consistent with known biology and is well-documented in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "b93dbb32-f4f8-44d5-9045-5345c55c0dfb",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutations T242I and R292K in NA are associated with oseltamivir resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is supported by appropriate citations (Baz et al., 2006; van der Vries et al., 2013) and is consistent with established knowledge about oseltamivir resistance mutations. The observation is documented in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "b155ea34-f210-444a-a594-707931cb75df",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nine sites in the influenza genome showed parallel mutations across multiple patients (five in HA, three in NA, one in NS), with statistically significant parallelism in HA (p<0.001) and NA (p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 are supported by Figure 2C and permutation testing described in Figure 2\u2014figure supplement 7. The statistical approach is appropriate, though the p-values depend on assumptions about the fraction of mutable sites. The authors test multiple constraint models, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "d7e4f80b-7ee5-4e50-89de-6b20ce43fba3",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The influenza genome consists of eight segments that reassort but do not recombine, evolving clonally. Clonal interference has been characterized in experimental evolution and affects influenza's global evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 accurately describe established influenza biology with appropriate citations (Boni et al., 2008 for lack of recombination; multiple citations for clonal interference). These are well-established facts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "9f950876-9acd-4e40-ba79-4e09f6ccfef3",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Within individual patients, the same mutations arise repeatedly on different genetic backgrounds and compete with one another, demonstrating clonal interference. In patient X, S193Y and N225D lineages compete before a double mutant fixes. In patient W, A138S and F193Y arise multiple times in parallel, with at least five distinct HA lineages present simultaneously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C67, C70-C71 are supported by Figure 3B-C showing haplotype dynamics over time. The haplotype inference method is described and validated (Figure 3\u2014figure supplement 1 estimates PCR recombination rate). The observation of clonal interference is well-documented, though the interpretation that unpredictability determines fixation (C70) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "b1b58bc8-d844-4693-98e4-afee8c9dc2b3",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In HA, most sites that varied within hosts also varied globally, compared to about a quarter in other genes. There is significant parallelism in HA evolution between within-host and global scales (p<0.01), but not in NA or other genes (p>0.05). Four of five sites of recurrent within-host HA mutation are also sites of global variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 are supported by Figure 4 and permutation testing in Figure 4\u2014figure supplement 2. The statistical approach is appropriate and tests multiple constraint models. The finding of significant parallelism in HA but not other genes is robust to reasonable assumptions about mutable sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "1d65af4a-e44c-4ed6-bd31-8d46ce89f1b1",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mutation L427F reaches >75% frequency in three patients but is rare globally, suggesting it may have within-host benefits not reflected in global evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C24 is supported by Figure 4D showing high within-host but low global frequency. However, C25 is speculative\u2014the authors suggest this indicates within-host-specific benefits, but alternative explanations (e.g., hitchhiking, sampling bias, or context-dependent effects) are not ruled out. The interpretation is reasonable but not definitively supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "04652430-ae2c-402b-a970-d1a593832f32",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The four HA sites showing parallel within-host and global evolution (138, 193, 223, 225) also mutated in another study of laboratory-passaged influenza from an immunocompromised child. Another study showed antigenic drift within an immunocompromised patient resembled global antigenic change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 accurately cite prior work (Baz et al., 2006; McMinn et al., 1999) that supports the parallelism observed in this study. The citations are appropriate and strengthen the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "284438ad-0fc2-4319-b47f-1ad2c989f563",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The parallel evolution in influenza contrasts with HIV, where mutations can arise within hosts sharing an HLA type but revert upon transmission to recipients with different HLA types. This difference may reflect that influenza immune epitopes are broadly similar among individuals, while HIV immunity varies more due to HLA type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 accurately describe HIV evolution with appropriate citations and provide a reasonable explanation for the difference with influenza. The comparison is well-supported by the literature, though the proposed explanation (C29-C30) is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "e141d9e7-fb9f-4513-867e-5ec9e8790d0a",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies of acute infections in immunocompetent hosts found limited within-host influenza variation, including a recent study that deep-sequenced HA from hundreds of patients but found few antigenic variants at low frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 and C57-C58 accurately cite multiple prior studies showing limited within-host variation in acute infections. The citations are appropriate and provide important context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "1fe707d8-e9bf-42e1-8daa-8e3395bece68",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Influenza may experience the same selective pressures in acute infections as globally, even if short infection durations prevent mutations from reaching detectable frequencies. Within-host viral diversity may act as a noisy early measurement of global evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C34 and C73 are speculative interpretations of the findings. While the parallelism observed supports this hypothesis, the study does not directly test whether the same selective pressures operate in acute infections. The authors appropriately frame these as suggestions, but they remain unproven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "85891395-9ad5-4041-8f8e-4e945a1c809e",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Influenza evolution within infected humans recapitulates many evolutionary dynamics observed at the global scale, with parallel evolution occurring within individual patients, across different patients, and in the global population. A small set of HA mutations arises independently in multiple patients, and many recurrent within-host mutations reach high global frequency in the following decade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66, C68-C69 summarize the main findings and are well-supported by the data presented in Figures 2-4 and the statistical analyses. The demonstration of parallel evolution across three scales is the core contribution of the paper and is robustly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "874f77bf-eeb2-449c-a808-a4309b237f3b",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Parallelism in HA evolution may emerge from concordant selection across environments, a constrained evolutionary landscape, and sufficiently large population sizes, high mutation rates, and time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 proposes a mechanistic explanation for the observed parallelism with citation to L\u00e4ssig et al., 2017. While this is a reasonable hypothesis consistent with the data, the study does not directly test these proposed conditions. The explanation is plausible but remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Viruses rapidly acquire mutations within hosts, but only a small fraction transmit and fix globally. Transmission bottlenecks and host heterogeneity shape viral diversity at larger scales. Most within-host mutations lack clear functional interpretation. Influenza infections usually last less than a week, but can last weeks or months in immunocompromised patients, enabling study of within-host evolutionary dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 and C59-C63 provide background context with appropriate citations. These are well-established facts in the field and accurately set up the rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    },
+    {
+      "id": "fb0e542e-e927-4af8-ae7f-c992f8fc8ca4",
+      "content_id": "124fabe7-6db6-4790-b304-9c7141cbd459",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Detailed characterization of within-host variation will be increasingly valuable for understanding how molecular, immunological, and epidemiological forces interact to shape viral evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is a forward-looking statement about the value of within-host studies. While speculative about future work, it is a reasonable conclusion based on the findings presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:00.035074Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a309da6-f51c-4f7a-87b6-23bb9b963dc3",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "b7143434-286a-448b-a6ba-2e7bf5406743",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "5955abab-d117-4e2c-9d95-28a0ec3d2ca7",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "018390cd-2509-4dee-89f8-8fc4ad57bb39",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "341add3e-64e7-48fc-ad50-ed6e03fef19b",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "296ce94b-e3a7-46a0-82ba-9d828f4d2fdd",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "c8c5b424-7987-4620-a312-8c30835ce77a",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "7fe2c19b-44cb-4969-a4c4-0413cd485ee7",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "e7b798ef-bd59-49ed-b1be-f6ef70a38b96",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "f59cda88-52d4-4352-b1ab-22eb447730c6",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "a3852fb4-7b55-472c-8da4-319d088d564f",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "24e8adec-1a3c-4630-99fe-128c07a34f68",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "cfd332b3-0077-4e98-a61c-36ec87b26fa8",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "f020d44c-6e52-4f97-b35b-322479039484",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "3d5db589-dc03-4fdf-8961-2a8f2e285c24",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "ba8e9021-5976-4cc5-8cce-bbec99ae2179",
+      "result_id": "947bb6f9-2ada-419e-87f0-d04b01ccfc45"
+    },
+    {
+      "claim_id": "79a0a80a-6d44-4f57-910d-6b31a4d4c96c",
+      "result_id": "e174a7c1-3262-4fc4-85ef-8cb34b9fb472"
+    },
+    {
+      "claim_id": "0929b873-ee4f-4146-8057-b395a67c7c25",
+      "result_id": "e174a7c1-3262-4fc4-85ef-8cb34b9fb472"
+    },
+    {
+      "claim_id": "85145768-0b02-4a03-ab43-fc083879bf7b",
+      "result_id": "e174a7c1-3262-4fc4-85ef-8cb34b9fb472"
+    },
+    {
+      "claim_id": "d1dae806-cf8a-47b8-b113-336f3a19002f",
+      "result_id": "279847f0-fc62-48ae-9201-f304e7b5d029"
+    },
+    {
+      "claim_id": "c0190231-fb20-47a8-a981-d6d58212d6ff",
+      "result_id": "279847f0-fc62-48ae-9201-f304e7b5d029"
+    },
+    {
+      "claim_id": "8810237e-938f-4c13-bc1d-8fa4f49cbd07",
+      "result_id": "279847f0-fc62-48ae-9201-f304e7b5d029"
+    },
+    {
+      "claim_id": "283801bc-20f2-4236-9d2e-41bde7adcc52",
+      "result_id": "279847f0-fc62-48ae-9201-f304e7b5d029"
+    },
+    {
+      "claim_id": "c31a8313-97df-4ed4-8b1c-e96f162c539d",
+      "result_id": "b93dbb32-f4f8-44d5-9045-5345c55c0dfb"
+    },
+    {
+      "claim_id": "8900a6a9-6907-4985-9cfa-b181c0b9c760",
+      "result_id": "b155ea34-f210-444a-a594-707931cb75df"
+    },
+    {
+      "claim_id": "3b514156-15d5-40db-92cf-21725924b509",
+      "result_id": "b155ea34-f210-444a-a594-707931cb75df"
+    },
+    {
+      "claim_id": "2a81283f-2ecb-4c73-8b7f-084f2f3394ea",
+      "result_id": "b155ea34-f210-444a-a594-707931cb75df"
+    },
+    {
+      "claim_id": "d5fd42f3-c23f-49a3-9dc2-2a0b9cc7cab5",
+      "result_id": "d7e4f80b-7ee5-4e50-89de-6b20ce43fba3"
+    },
+    {
+      "claim_id": "2b45849d-dabe-44cc-9924-cde436678cb9",
+      "result_id": "d7e4f80b-7ee5-4e50-89de-6b20ce43fba3"
+    },
+    {
+      "claim_id": "21e3fa5d-bafd-4c0a-a41c-ff9e83168b82",
+      "result_id": "d7e4f80b-7ee5-4e50-89de-6b20ce43fba3"
+    },
+    {
+      "claim_id": "671b5923-900b-4c40-8952-558ec965a5f1",
+      "result_id": "d7e4f80b-7ee5-4e50-89de-6b20ce43fba3"
+    },
+    {
+      "claim_id": "4a3d5138-239e-4f70-8622-940d8fe380e0",
+      "result_id": "9f950876-9acd-4e40-ba79-4e09f6ccfef3"
+    },
+    {
+      "claim_id": "a5929dc6-bf9d-41a1-9243-ab5a5943b5f3",
+      "result_id": "9f950876-9acd-4e40-ba79-4e09f6ccfef3"
+    },
+    {
+      "claim_id": "d50d1d81-5ca2-4395-9a29-7920449df672",
+      "result_id": "9f950876-9acd-4e40-ba79-4e09f6ccfef3"
+    },
+    {
+      "claim_id": "9f739702-a17e-4a54-b0d8-6af3d85ca472",
+      "result_id": "9f950876-9acd-4e40-ba79-4e09f6ccfef3"
+    },
+    {
+      "claim_id": "609745d7-b13b-4c4f-b829-38a5bde90a19",
+      "result_id": "9f950876-9acd-4e40-ba79-4e09f6ccfef3"
+    },
+    {
+      "claim_id": "d5cc105b-df50-4f67-8e9d-fbd2af3c2ca7",
+      "result_id": "9f950876-9acd-4e40-ba79-4e09f6ccfef3"
+    },
+    {
+      "claim_id": "97e86d7e-1bf7-4e57-8851-8826b94499c3",
+      "result_id": "b1b58bc8-d844-4693-98e4-afee8c9dc2b3"
+    },
+    {
+      "claim_id": "c015d58d-b8ae-4b7b-a82a-c68cf32bfe74",
+      "result_id": "b1b58bc8-d844-4693-98e4-afee8c9dc2b3"
+    },
+    {
+      "claim_id": "b7fe8d0d-7eff-42f6-98cc-f8b45b82bc0e",
+      "result_id": "b1b58bc8-d844-4693-98e4-afee8c9dc2b3"
+    },
+    {
+      "claim_id": "eb981361-34a1-48cf-95d5-77c3d9ffb7a0",
+      "result_id": "b1b58bc8-d844-4693-98e4-afee8c9dc2b3"
+    },
+    {
+      "claim_id": "3a881a30-f79b-4a42-9f04-bf9da522bf5c",
+      "result_id": "b1b58bc8-d844-4693-98e4-afee8c9dc2b3"
+    },
+    {
+      "claim_id": "eba7e70a-e83c-4fcb-9e60-a6c3d09be849",
+      "result_id": "b1b58bc8-d844-4693-98e4-afee8c9dc2b3"
+    },
+    {
+      "claim_id": "cc901cb9-0fb0-4753-b209-05c54254d47a",
+      "result_id": "1d65af4a-e44c-4ed6-bd31-8d46ce89f1b1"
+    },
+    {
+      "claim_id": "122269ed-12f0-4100-bf50-1f541ee18da4",
+      "result_id": "1d65af4a-e44c-4ed6-bd31-8d46ce89f1b1"
+    },
+    {
+      "claim_id": "d0f42820-df0a-411e-a7d5-e46c12ac4d7d",
+      "result_id": "04652430-ae2c-402b-a970-d1a593832f32"
+    },
+    {
+      "claim_id": "17d08c24-78fe-4310-b366-6f5f5015f6a4",
+      "result_id": "04652430-ae2c-402b-a970-d1a593832f32"
+    },
+    {
+      "claim_id": "5d89559a-353f-45b7-9eb5-5470406b4149",
+      "result_id": "284438ad-0fc2-4319-b47f-1ad2c989f563"
+    },
+    {
+      "claim_id": "843535ae-e8f6-4e28-b62c-bf68bdb5e12d",
+      "result_id": "284438ad-0fc2-4319-b47f-1ad2c989f563"
+    },
+    {
+      "claim_id": "1d0ba11f-29db-4c9f-a687-0d96f9788b53",
+      "result_id": "284438ad-0fc2-4319-b47f-1ad2c989f563"
+    },
+    {
+      "claim_id": "86606ecc-49e3-428a-8e6c-df54cccd1880",
+      "result_id": "e141d9e7-fb9f-4513-867e-5ec9e8790d0a"
+    },
+    {
+      "claim_id": "de5db7c2-2e98-49a4-a722-84ed31480023",
+      "result_id": "e141d9e7-fb9f-4513-867e-5ec9e8790d0a"
+    },
+    {
+      "claim_id": "eb73e9c5-8913-4b08-88a0-cabb9608372c",
+      "result_id": "e141d9e7-fb9f-4513-867e-5ec9e8790d0a"
+    },
+    {
+      "claim_id": "5de5bc27-7b15-4ede-9c5f-afcea8202455",
+      "result_id": "e141d9e7-fb9f-4513-867e-5ec9e8790d0a"
+    },
+    {
+      "claim_id": "4ff77025-79a6-449d-9802-b9b629ecf51d",
+      "result_id": "1fe707d8-e9bf-42e1-8daa-8e3395bece68"
+    },
+    {
+      "claim_id": "cc3d0c6a-73b4-4e97-a55f-3ea84de3888b",
+      "result_id": "1fe707d8-e9bf-42e1-8daa-8e3395bece68"
+    },
+    {
+      "claim_id": "64b2e4a6-1083-4cdc-91d0-c8a2c148622f",
+      "result_id": "1fe707d8-e9bf-42e1-8daa-8e3395bece68"
+    },
+    {
+      "claim_id": "0affaa36-a19d-4362-82e0-2bc4e2c9f8c1",
+      "result_id": "85891395-9ad5-4041-8f8e-4e945a1c809e"
+    },
+    {
+      "claim_id": "1f7df494-1a7a-46ef-b39c-d74818be908e",
+      "result_id": "85891395-9ad5-4041-8f8e-4e945a1c809e"
+    },
+    {
+      "claim_id": "eeb55f44-f14b-4844-9b7f-aa87b6bed220",
+      "result_id": "85891395-9ad5-4041-8f8e-4e945a1c809e"
+    },
+    {
+      "claim_id": "c818b49b-4958-4243-805a-61d909f1e3ac",
+      "result_id": "85891395-9ad5-4041-8f8e-4e945a1c809e"
+    },
+    {
+      "claim_id": "2d679377-a242-4704-bd94-64ffe0c1cdce",
+      "result_id": "85891395-9ad5-4041-8f8e-4e945a1c809e"
+    },
+    {
+      "claim_id": "fccbe93f-f8a3-4d66-8745-ef1faaab5fe7",
+      "result_id": "874f77bf-eeb2-449c-a808-a4309b237f3b"
+    },
+    {
+      "claim_id": "774c162d-89ef-424c-b00e-79d340c387cb",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "487d1f3c-fd9c-4b3e-abf8-1f74aaf90205",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "6d56aac4-b2dd-4743-bf95-572ae1b7483c",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "e74583d0-6ef7-49a9-9fde-08a3f3276495",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "8c556465-a732-4558-b5ac-81560e17524b",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "131b7a08-7c9e-402e-a1a9-681f14c5ef66",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "637c6d68-ae93-4247-a214-daa524554d1c",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "92e2df4c-c00b-475c-a8ea-6bbc295da601",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "a7db71e2-19a4-4f8a-a118-932d15706851",
+      "result_id": "cbe2f14e-c947-4d26-ab46-071e4145f2d9"
+    },
+    {
+      "claim_id": "82673194-a666-4827-973b-25c60d168c66",
+      "result_id": "fb0e542e-e927-4af8-ae7f-c992f8fc8ca4"
+    }
+  ],
+  "comparisons": []
+}

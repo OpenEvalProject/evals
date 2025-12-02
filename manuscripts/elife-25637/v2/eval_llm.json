@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C70"
+    ],
+    "result": "Many elongation factors (EFs) directly crosslink to RNA in vivo in yeast. PAR-CLIP analysis of 14 EFs revealed that 12 showed signals more than two-fold above background, with 42,000-520,000 high-confidence crosslinking sites per factor (p<0.005). EFs showed varying signal strengths, with Spt5, Set1, Ctk1, Spt6, Ctk2, and Bur1 showing high signals (>4-fold enrichment), while Rtf1, Ctr9, Cdc73, Bur2, Set2, and Dot1 showed moderate signals. The data were highly reproducible across replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10, and C70 collectively demonstrate that many EFs crosslink to RNA in vivo. The PAR-CLIP methodology is well-established, appropriate controls (TFIIB background) were used, stringent statistical thresholds were applied (p<0.005), and high reproducibility was demonstrated. The quantitative data in Table 1 and Figure 1 provide strong support for these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Normalization of PAR-CLIP data is crucial for comparing signals between transcripts and transcript classes, as raw signals are proportional to both factor occupancy and RNA concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is a methodological principle that is well-supported by prior work (Baejen et al., 2014) and is demonstrated in Figure 2 showing how different normalization approaches affect the interpretation of PAR-CLIP data, particularly for unstable RNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "EFs show distinct localization patterns along mRNA transcripts. Generally, PAR-CLIP occupancies were high at the 5\u2032-end and decreased before the pA site, with specific exceptions: Set2 and Dot1 showed more binding over transcript bodies; Set1 crosslinked mainly near transcript beginnings; kinases Ctk1 and Bur1 with their cyclin partners were enriched at the 5\u2032-end and transcript body, with Bur1-Bur2 peak slightly preceding Ctk1-Ctk2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are well-supported by the metagene profiles in Figure 3A and are consistent with known localization patterns of histone methylation marks from cited literature. The distinct patterns for different EFs provide internal consistency and biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C72",
+      "C73"
+    ],
+    "result": "EFs bind to nascent pre-mRNA rather than mature mRNA. All EFs crosslinked to introns, and all showed positive processing indices indicating preferential binding to uncleaved pre-mRNA, in contrast to mature mRNA-binding factors like Pab1 and Pub1 which showed negative processing indices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by intron crosslinking data (Figure 3\u2014figure supplement 1B) and processing index calculations (Figure 3B). The comparison with known mature mRNA binders provides a strong control. However, the limitation that only ~4% of yeast genes contain introns (C72) is appropriately acknowledged, and the processing index provides a more general measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "EFs show specific colocalization patterns on transcripts. Spt5 colocalizes with the cap-binding complex subunit Cbc2; Ctk1 and Bur1 colocalize with Set1 and splicing factors; Paf1C subunits colocalize with Set2; while RNA 3\u2032-processing and surveillance factors form separate groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by hierarchical clustering analysis shown in Figure 3C. The colocalization patterns are biologically plausible and consistent with known functional relationships between these factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C68",
+      "C69"
+    ],
+    "result": "Most EFs preferentially crosslink to mRNAs rather than cryptic unstable transcripts (CUTs). Spt5 was equally distributed between CUTs and mRNAs, Set1 preferentially bound mRNAs, and all other EFs were depleted at CUTs relative to mRNA occupancies. Nrd1 selectively binds to CUTs via enriched motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C24, C68-C69 are supported by PAR-CLIP data comparing mRNA and CUT binding (Figure 4). The differential binding patterns are consistent across different analysis approaches (Figure 4A, bidirectional promoters in Figure 4B, and length-matched transcripts in Figure 4\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C67"
+    ],
+    "result": "EFs bind RNA in a non-specific manner, as motif analysis found no significantly enriched sequence motifs. The authors hypothesize that Nrd1 binding to CUTs might hinder RNA binding of some EFs with lower affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 is supported by computational motif analysis, but the negative result (no motifs found) should be interpreted cautiously as it depends on the sensitivity of the method and the sequences analyzed. Claim C67 is explicitly stated as a hypothesis to explain differential CUT binding and lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "RNA contributes to chromatin association of many EFs. RNase treatment strongly decreased chromatin-associated levels of Set1, Set2, Dot1, Bur1, Ctk1, Bur2, Ctk2, and Spt5, while Rtf1 was partially lost. Leo1, Paf1, and Spt6 were not significantly affected. Controls showed that TFIIB and Pol II chromatin binding were unaffected by RNase treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C32 are supported by Western blot analysis with appropriate quantification (Figure 5). The inclusion of proper controls (TFIIB, Pol II, H3) and statistical analysis (ANOVA with post-hoc tests, 2-3 biological replicates) strengthens the conclusions. The discrepancies between PAR-CLIP and RNase sensitivity for some factors (Spt6, Dot1) are acknowledged and explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The purified CTDK-I kinase complex binds RNA in vitro. Recombinant CTDK-I was active and phosphorylated GST-CTD and Pol II Rpb1 at Ser2. CTDK-I bound ssRNAs with different GC content with similar affinities (apparent Kd in nanomolar range), showed some preference for U-rich over A-rich RNA, and bound duplex DNA much more weakly than ssRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C38 are supported by in vitro kinase assays (Figure 6B-C) and fluorescence anisotropy experiments (Figure 6D-E). The purification of active recombinant CTDK-I is well-documented, and the RNA-binding experiments include appropriate controls (tRNA competitor, dsDNA comparison) and replicates (n=3). The quantitative binding data with fitted Kd values provide strong evidence for direct RNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C71"
+    ],
+    "result": "Comparison of PAR-CLIP and ChIP-Seq data suggests RNA contributes to EF recruitment. EFs interacted with RNA from ~20 nt downstream of the 5\u2032-end, while ChIP-Seq showed EF occupancy increased 100-600 bp downstream of the TSS. For histone methyltransferases, PAR-CLIP signals increased first, followed by histone methylation marks, then enzyme ChIP-Seq signals. The ChIP-Seq data were highly reproducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C71 are supported by comparison of PAR-CLIP and ChIP-Seq metagene profiles (Figure 7) with high reproducibility (Figure 7\u2014figure supplement 1). The temporal sequence of signals (RNA binding \u2192 histone modification \u2192 enzyme chromatin association) provides strong support for RNA-based recruitment, particularly for Set2 which shows the most pronounced difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C91"
+    ],
+    "result": "Set1 recruitment to genes in vivo depends on its RNA recognition motifs (RRMs). Gene regions within the first 1000 bp downstream of the TSS showed severe decrease in \u0394RRM-Set1 occupancy. Set1 contains two RRMs (residues 247-375 and 376-579) that bind RNA in vitro. Set1 recruitment depends on both the Paf1 complex and binding to nascent RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C46, C91 are supported by ChIP-qPCR experiments comparing Set1-TAP, \u0394RRM-Set1-TAP, and \u0394Paf1 Set1-TAP strains (Figure 8). The experimental design appropriately tests the contribution of RRMs to Set1 recruitment, with proper controls showing similar expression levels (Figure 8A) and statistical analysis (two-sample t-test, n=2). The cited literature (C45-C46) supports the presence and RNA-binding capacity of Set1 RRMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C92"
+    ],
+    "result": "Multiple lines of evidence strongly suggest that nascent RNA contributes to EF recruitment to transcribing Pol II and to EF recruitment to actively transcribed genes in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C92 are overarching conclusions drawn from the collective evidence presented in the manuscript, including PAR-CLIP data, RNase sensitivity assays, in vitro RNA binding, ChIP-Seq comparisons, and Set1 RRM deletion experiments. The convergence of multiple independent experimental approaches provides strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose a model where EF-RNA interactions facilitate assembly of the elongation complex when RNA emerges from Pol II, and loss of EF-RNA interactions upon RNA cleavage at the polyadenylation site triggers disassembly. RNA plays crucial roles in elongation complex assembly and disassembly. Capped RNA could help recruit EFs, RNA-based recruitment of Ctk1 would lead to Ser2 phosphorylation and stable binding of other EFs, and transcription of a pA site triggers RNA cleavage facilitating loss of RNA-bound EFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63, C65-C66, C86-C88 represent a proposed mechanistic model based on the experimental findings. While the model is consistent with the data presented, these are explicitly stated as proposals, predictions, or inferences rather than directly demonstrated mechanisms. The model requires additional experimental validation, such as direct demonstration of complex assembly/disassembly kinetics or testing predictions about the timing and order of events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose conceptual interpretations and predictions: the transcribing Pol II complex may be viewed as a self-organizing system realized at the RNA level; RNA-based recruitment provides a missing link in understanding transcription cycle coordination; many EFs may contain domains that can interact with RNA or phosphorylated CTD/CTR which resemble RNA; RNA-based recruitment of Ser2 kinases explains restriction of Ser2 phosphorylation to transcribing polymerases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C66, C82-C85, C89-C90 represent conceptual interpretations, predictions, and speculations based on the findings. While C89-C90 draw on the experimental data and established knowledge, the broader conceptual framework (C64, C66) and predictions about domain properties (C82-C84) require additional experimental validation. These represent important hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript cites extensive prior literature establishing: EF RNA-binding properties, protein-protein interactions, recruitment mechanisms, CTD phosphorylation patterns, RNA processing factor recruitment, and structural/biochemical properties of various factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C60, C72-C81 are based on cited literature and established knowledge. These provide essential context for interpreting the current findings. The citations appear appropriate and accurate based on the claims made, though detailed verification of each cited work is beyond the scope of this evaluation.",
+    "result_type": "MINOR"
+  }
+]

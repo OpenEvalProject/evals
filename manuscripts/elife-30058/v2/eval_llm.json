@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The manuscript provides background information on L1 retrotransposons, including their genomic prevalence (17% of human genome), structure (5'UTR with bidirectional promoter, ORF1, ORF2, 3'UTR), protein functions (ORF1p as RNA binding protein with chaperone activity; ORF2p with endonuclease and reverse transcriptase activity), and known cellular behaviors (RNP formation, accumulation in stress granules and processing bodies, nuclear localization in some cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C43-C51 are well-established background facts supported by multiple citations to prior literature. These claims provide context for the study and are appropriately referenced to established work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors quantified differential expression patterns of ORF1p and ORF2p in cells overexpressing L1, finding that ORF1p was detected in virtually all cells (~97%) expressing ORFeus, while ORF2p was detected in only a subset of cells (~10-20%), and that approximately 26% of cells showed nuclear ORF1p staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by quantitative immunofluorescence data shown in Figure 1B. The differential detection of ORF1p versus ORF2p is consistent with known translational regulation of ORF2p, and the quantification appears rigorous with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Cells with nuclear ORF1p were observed as pairs in close proximity, and proximity analysis demonstrated that cells with nuclear ORF1p are statistically closer to each other than cells expressing ORF1p exclusively in the cytoplasm (p=4.351e-13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by qualitative observations and quantitative proximity analysis shown in Figure 1C with highly significant statistical support (p=4.351e-13). The methodology for proximity analysis is described in the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C16"
+    ],
+    "result": "ORF1p nuclear localization is cell cycle-dependent, being nuclear in cells expressing Cdt1 (G1 phase marker) and completely cytoplasmic in cells expressing geminin (S/G2/M phase marker). No instances of cells with nuclear ORF1p and green nuclei (S/G2/M) were observed in FUCCI cells (0 out of 3309 cells counted). Nuclear L1 mRNA co-localized with cells showing low geminin and high Cdt1 staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C16 are strongly supported by multiple complementary approaches including immunofluorescence co-staining with cell cycle markers (Figure 2A-B), live cell imaging with FUCCI system (Figure 2C with n=3309 cells), and RNA-FISH combined with cell cycle marker staining (Figure 3B-C). The convergence of evidence from different methodologies strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C15"
+    ],
+    "result": "ORF1p and L1 mRNA enter the nucleus during mitosis, with nuclear L1 mRNA signal being particularly bright in cells exiting mitosis identified by cytoplasmic bridges connecting daughter cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C15 are supported by immunofluorescence data (Figure 2), proximity analysis (Figure 1C), and RNA-FISH experiments (Figure 3 and supplementary figures). The observation of cytoplasmic bridges connecting cells with bright nuclear L1 mRNA provides strong visual evidence for mitotic entry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "ORF2p expression is not cell cycle regulated, as ORF2p-Halo was expressed in cells scattered throughout the cell cycle displaying either orange (Cdt1 expressing) or green (geminin expressing) nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by observations from FUCCI cells expressing Halo-tagged ORF2p shown in Figure 2\u2014figure supplement 2. The inference that ORF2p expression is not cell cycle regulated is reasonable based on its presence in cells at different cell cycle stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The percentage of cells with nuclear ORF1p does not increase but actually decreases after 48 hr of L1 induction compared to 24 hr, suggesting that nuclear ORF1p is either degraded and/or exported from the nucleus during or after G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by automated image analysis shown in Figure 4A. The observation that nuclear ORF1p does not accumulate over time despite continued expression is unexpected but well-documented. The inference about degradation/export is reasonable and is further supported by the leptomycin experiments (C19-C20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Treatment with leptomycin, a CRM1 inhibitor, increased the number of cells with nuclear ORF1p, suggesting that at least a subset of ORF1p is exported from the nucleus in a CRM1-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by immunofluorescence quantification after leptomycin treatment shown in Figure 4B-D, with appropriate controls (MEK-1-GFP) shown in Figure 4\u2014figure supplement 2. The use of two different leptomycin concentrations and multiple antibodies strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Increased time of nocodazole treatment (M phase arrest) fails to increase the percentage of M phase GFP+ cells, suggesting that L1 retrotransposition does not occur during M phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by retrotransposition assays with nocodazole treatment shown in Figure 5B. The experimental design is appropriate, with treatments not exceeding 21 hours to allow passage through only one cell cycle. The inference that retrotransposition does not occur during M phase is reasonable based on the lack of increase in GFP+ cells with prolonged M phase arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Cells treated with thymidine (late G1 arrest) showed no increase in GFP positive cells compared to untreated cells, suggesting that L1 does not preferentially retrotranspose in late G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by retrotransposition assays with thymidine treatment shown in Figure 5C. The inference is reasonable based on the lack of increase in retrotransposition with G1 arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Mimosine treatment decreased L1 retrotransposition, suggesting that mimosine inhibits L1 retrotransposition not only by arresting the cell cycle but probably through additional metabolic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by retrotransposition assays with mimosine treatment shown in Figure 5D. The observation that mimosine decreases retrotransposition more than expected from cell cycle arrest alone is well-documented. The inference about additional metabolic mechanisms is reasonable given mimosine's known effects on ribonucleotide reductase and other metabolic enzymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "A peak of retrotransposition was identified in S phase in synchronized cells, while control non-synchronized cells showed a linear increase in retrotransposition with no clear peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by measuring retrotransposition at different time points after nocodazole synchronization and release, shown in Figure 6C-D. The experimental design is rigorous, with appropriate controls (unsynchronized cells) and cell cycle analysis by propidium iodide staining (Figure 6\u2014figure supplement 1). The slope analysis clearly identifies an S phase peak in synchronized cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors characterized the kinetics of fluorescent protein expression and maturation, finding that the fluorescent timer converts from blue to red in 2.35 \u00b1 0.52 hr, 50% of cells expressed visible GFP at 2.71 \u00b1 0.46 hr after doxycycline induction, and 90% of cells expressed visible GFP within 8.01 \u00b1 0.63 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by quantification from live cell imaging experiments shown in Figure 7\u2014figure supplement 1A-B. These measurements are important for interpreting the fluorescent timer-based retrotransposition assay and are consistent with previously reported timing of fluorescent timer maturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Using a fluorescent timer-based retrotransposition assay, the authors found that 'blue only' sorted cells (recent retrotransposition events) showed strong enrichment in S phase cells (78.1% for blue+ cells with lower red fluorescence), while blue+ cells with higher red fluorescence (earlier retrotransposition events) were mainly in G2/M phase (89.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by FACS sorting and cell cycle analysis shown in Figure 7B-C. The fluorescent timer approach is innovative and provides temporal resolution for retrotransposition events. The interpretation that blue+ cells with lower red fluorescence represent more recent retrotransposition events in S phase, while blue+ cells with higher red fluorescence represent earlier events that have progressed to G2/M, is logical and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "L1 retrotransposition peaks during the S phase of the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the primary conclusion of the manuscript and is supported by multiple independent experimental approaches: nocodazole synchronization experiments (C27-C28, Figure 6), fluorescent timer-based assays (C32-C34, Figure 7), and cell cycle arrest experiments (C21-C26, Figure 5). The convergence of evidence from different methodologies strongly supports this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "ORF2p was recruited to chromatin in S phase in a similar manner to Upf1 and PCNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by chromatin fractionation and western blot analysis shown in Figure 8A-B. The timing of ORF2p chromatin recruitment coincides with known S phase markers (PCNA and Upf1), providing biochemical support for the functional retrotransposition data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The PCNA-ORF2p complex is mainly chromatin bound, supporting the idea that PCNA binds ORF2p during retrotransposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by fractionation and immunoprecipitation experiments shown in Figure 8\u2014figure supplement 1. This observation is consistent with the authors' previous work showing PCNA-ORF2p interaction and supports the model that this interaction occurs during retrotransposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Sequential immunoprecipitation and mass spectrometry identified several MCM proteins (MCM3, MCM5, MCM6) as well as TOP1, PARP1, and RPA1 as ORF2p/PCNA interactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by sequential immunoprecipitation and mass spectrometry analysis shown in Figure 9B. The identification of replication fork proteins as ORF2p/PCNA interactors is consistent with the S phase bias of retrotransposition. The use of two independent experiments and appropriate controls (IgG) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Immunoprecipitation followed by RT-qPCR demonstrated that ORF2p, PCNA, and the ORF2p-PCNA complex all interact with L1 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by IP-RT-qPCR experiments shown in Figure 9D. The demonstration that the ORF2p-PCNA complex contains L1 mRNA is important for establishing that this complex is potentially retrotransposition-competent. Appropriate controls (IgG IP, -RT controls) were included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "A subset of nuclear ORF2p puncta overlapped with PCNA foci in cells synchronized in S phase, marking potential regions of active DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by immunofluorescence co-staining shown in Figure 9E. The partial overlap of ORF2p and PCNA foci is consistent with the model that L1 retrotransposition occurs at a subset of replication forks, possibly stalled forks as suggested by the PARP1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Chromatin bound and retrotransposition-competent L1 particles are depleted of ORF1p and mainly consist of ORF2p in complex with L1 mRNA and host factors involved in retrotransposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is an integrative conclusion inferred from multiple observations including ORF1p export (C19-C20), differential antibody recognition (Figure 1\u2014figure supplement 1), lack of ORF1p interaction with PCNA/MCM6 (Figure 9C), and the observation of rare cells with nuclear ORF2p but not ORF1p (Figure 1D). While this is an inference, it is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Prior work has shown that cell cycle progression promotes L1 retrotransposition, with the hypothesis that nuclear breakdown during mitosis could allow L1 entry into the nucleus, though this hypothesis was challenged by studies showing retrotransposition in non-dividing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are appropriately cited background information from prior literature (Shi et al., 2007; Xie et al., 2013; Kubo et al., 2006; Macia et al., 2017). These claims provide context for the current study's investigation of the relationship between cell cycle and L1 retrotransposition.",
+    "result_type": "MINOR"
+  }
+]

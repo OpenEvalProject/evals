@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C145",
+      "C146",
+      "C170"
+    ],
+    "result": "Galene is a versatile open-source software tool that corrects motion artifacts in FLIM and conventional fluorescence microscopy data by reconstructing individual frames from time-tagged data and using a Lucas-Kanade-based fitting approach that accounts for the raster scan pattern to estimate motion both between and within frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C34-C35, C37-C39, C41-C45, C145-C146, and C170 collectively describe the core functionality and technical approach of Galene. The software's capabilities are demonstrated throughout the manuscript with multiple experimental datasets from commercial systems (Figures 1-7), and the source code availability (C170) supports reproducibility. The technical approach is well-documented with appropriate citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Monte Carlo simulations demonstrate that Galene can effectively correct physiologically relevant motions (~10% FOV at frequencies from respiration to heartbeat), with better performance for motion along the fast scan axis than the slow axis due to differential sampling frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 and C150-C156 describe simulation results shown in Figure 2 that systematically evaluate Galene's performance across different motion parameters. The physiological reference values (C48-C49) are properly cited, and the directional dependence (C50-C51, C153-C156) is explained by the physics of laser scanning microscopy. The simulations provide quantitative benchmarks for the software's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C97"
+    ],
+    "result": "Galene outperforms existing motion correction packages (StackReg, SIFT, SIMA) by correcting for significantly larger sample motions, particularly for intra-frame distortions that rigid transformation methods cannot handle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C97 are supported by comparative benchmarking data shown in Figure 2\u2014figure supplement 1 and Figure 4\u2014figure supplement 2. The comparison is fair as it uses the same simulated and experimental datasets across all methods. The superior performance is attributed to Galene's ability to model intra-frame motion using the scan pattern, which is a fundamental algorithmic difference from the comparison methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In vivo pancreatic imaging through titanium windows demonstrates that Galene successfully corrects for heartbeat-dominated motion (5.4 Hz, 27 \u03bcm) at all tested scan rates (700-1400 Hz), while larger respiration/peristalsis motion (0.2-2.2 Hz, 42 \u03bcm) requires faster scan rates (1400 Hz) for effective correction, with better performance when motion is aligned with the fast scan axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C67 are supported by experimental data in Figure 3 showing systematic evaluation of scan rate and motion direction effects. The amplitude-spectrum analysis (C59-C60) provides quantitative characterization of the motion, and the scan rate dependence (C61-C62) is consistent with the simulation predictions. The practical recommendations (C63, C66-C67) logically follow from the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Optimal motion correction performance is achieved using 5-20 realignment points for 256\u00d7256 images and 10-20 points for 512\u00d7512 images, with performance degrading when using too many points due to insufficient information per point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by empirical testing data shown in Figure 3\u2014figure supplement 1B. The observation that performance degrades with too many realignment points (C69-C70) is logically explained by the optimization problem structure. The recommended ranges (C71) are based on systematic evaluation across multiple datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Applying a Gaussian smoothing kernel of 2-4 pixels width in the fast axis improves realignment quality for low signal-to-noise FLIM data, while excessively large kernels reduce performance by decreasing image contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by data in Figure 3\u2014figure supplement 1D showing systematic evaluation of smoothing kernel sizes. The improvement with moderate smoothing (C73) and degradation with excessive smoothing (C74) follow logically from signal processing principles. The recommended range (C75) is based on empirical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Galene enables subcellular analysis of Rac1 activity in intestinal crypts subject to peristaltic motion, revealing differential activation between basal and apical membranes, with automatic frame rejection for uncorrectable large transient displacements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 and C93-C95 are supported by experimental data in Figure 4A-B showing successful correction of intestinal crypt imaging. The FRET efficiency determination (C79) is based on global analysis, and the subcellular analysis (C95) demonstrates the biological utility of the correction. The automatic frame rejection feature (C84) is a practical solution for uncorrectable motion (C82-C83). Background claims C76-C77 are properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C160"
+    ],
+    "result": "Scopolamine, commonly used to inhibit peristalsis, induces significant Rac1 activation in intestinal tissue comparable to PMA treatment, demonstrating that pharmacological motion inhibition can interfere with the biological process under observation, while image-based correction avoids such artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 and C160 are supported by experimental data in Figure 4D-E and Figure 4\u2014figure supplement 1 showing Rac1 activation by scopolamine using both FLIM-FRET and immunohistochemistry. The comparison to PMA (C89) provides context for the magnitude of the effect. This is an important finding demonstrating a key advantage of image-based correction over pharmacological approaches. The scopolamine mechanism (C86) is properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C162"
+    ],
+    "result": "Using Galene to correct liver motion artifacts during intrasplenic metastasis imaging reveals that Fasudil priming significantly delays Src activation in cancer cells during early adhesion events (8-24 hr), providing a potential mechanism for reduced metastatic colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 and C162 are supported by experimental data in Figure 5 showing longitudinal Src-FRET imaging in the liver. The prior work on Fasudil (C98) is properly cited, and the hypothesis (C102) is tested with appropriate controls. The significant delay in Src activity (C107) is demonstrated with statistical analysis (Figure 5G), and the conclusion about adhesion efficiency (C108-C109) is supported by the data. Background claims C99-C101 are properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C161"
+    ],
+    "result": "Motion during acquisition introduces significant artifacts in FLIM-FRET measurements by blurring biosensor fluorescence with background autofluorescence and distorting cell morphology, leading to reduced apparent lifetimes and increased variability that abolishes statistical power to distinguish treatment conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 and C161 are supported by comparison of corrected and uncorrected data in Figure 5D-H. The specific artifacts observed (C114-C115) are documented, and the quantitative impact on statistical analysis (C116-C118) is demonstrated by comparing Figure 5G (corrected, significant differences) with Figure 5H (uncorrected, no significant differences). This demonstrates the critical importance of motion correction for quantitative FLIM analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Galene successfully corrects 3D motion in human skin autofluorescence imaging by combining active axial motion compensation with software-based lateral correction for single planes, or by accumulating multiple stack acquisitions and extending the 2D displacement estimation to 3D, with GPU acceleration enabling practical processing times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C132 are supported by experimental data in Figure 6 demonstrating two approaches for 3D motion correction in human skin. The combination of hardware and software correction (C125) is shown in Figure 6A, and the stack-based 3D correction (C130, C132) is shown in Figure 6C. The GPU acceleration (C131, C148) is documented in Figure 7\u2014figure supplement 1. Background claims C119, C121, C124, C126 are properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Galene provides superior motion correction for 3D multispectral imaging of immune cells in lymph nodes compared to Imaris drift correction, maintaining high correlation of static structures over 30 minutes despite slow drift and respiratory motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C135-C144 are supported by experimental data in Figure 7 comparing Galene to Imaris drift correction for lymph node imaging. The quantitative comparison (C141-C143) shows Galene maintains higher correlation with static structures (Figure 7E-F). This demonstrates Galene's applicability beyond FLIM to conventional fluorescence microscopy. Background claims C135-C137 are properly cited or represent established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "GPU acceleration and exploitation of the banded Hessian matrix structure reduce 3D motion correction processing time by a factor of 30 for typical volumetric datasets, enabling potential future online correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 are supported by timing data in Figure 7\u2014figure supplement 1C showing the computational improvements. The 30-fold speedup (C148) is quantitatively demonstrated, and the technical approaches (GPU acceleration and banded factorization) are clearly described in the Methods. The speculation about future online correction (C149) is reasonable given the demonstrated performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C157",
+      "C158",
+      "C168",
+      "C169"
+    ],
+    "result": "Galene enables FLIM imaging in previously inaccessible contexts by correcting for physiological motion in intravital imaging of murine abdominal organs and human skin autofluorescence, rescuing previously discarded data and relaxing restrictions on sample stability and imaging duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C157-C158, and C168-C169 represent summary conclusions supported by the collective experimental demonstrations throughout the manuscript (Figures 3-7). The ability to resolve images in challenging contexts (C5-C6) is demonstrated with multiple biological systems, and the practical impact (C7-C8, C169) logically follows from the demonstrated capabilities. These are appropriate summary statements of the work's significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background and motivation: FLIM and FRET-based biosensors provide valuable functional readouts in intravital microscopy, but long acquisition times required for sufficient signal make them susceptible to motion artifacts from physiological processes, while existing motion correction approaches have not been applied to FLIM data due to conventional histogram accumulation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C33 provide background context and motivation for the work. These claims are either established knowledge in the field (C1-C3, C15, C17-C18, C23-C25, C28) or properly cited to prior work (C9-C14, C26-C27, C29, C32). The statement about prior work not being applied to FLIM (C30-C31) establishes the novelty of the current work. These background claims appropriately frame the problem being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C102",
+      "C110",
+      "C111",
+      "C120",
+      "C133",
+      "C159",
+      "C163",
+      "C164",
+      "C166",
+      "C167"
+    ],
+    "result": "Speculation about potential applications: The authors speculate that Galene may enable various future applications including imaging other body regions, other FRET biosensors, endoscopic systems, and combination with hardware motion correction, though these remain to be demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C102, C110-C111, C120, C133, C159, C163-C164, C166-C167 represent speculations about potential future applications. While these are reasonable extrapolations from the demonstrated capabilities, they have not been experimentally validated in this work. The speculation is appropriately qualified in most cases (e.g., 'may', 'could', 'potential'), but these claims cannot be evaluated as supported without additional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C165"
+    ],
+    "result": "Processing time for motion correction is typically significantly shorter than data acquisition, even for high-speed 3D applications, enabling potential real-time correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C165 is supported by the timing data in Figure 7\u2014figure supplement 1C showing that even complex 3D corrections can be completed in minutes. Combined with the 30-fold speedup from GPU acceleration (C148), this supports the feasibility of real-time correction, though actual real-time implementation is not demonstrated.",
+    "result_type": "MINOR"
+  }
+]

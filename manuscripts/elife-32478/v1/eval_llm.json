@@ -1,0 +1,554 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C26"
+    ],
+    "result": "An all-atom MD simulation of the HBV capsid (Cp149) was performed for 1.1 \u00b5s (0.1 \u00b5s equilibration + 1.0 \u00b5s production) encompassing ~6M atoms. The capsid required 0.1 \u00b5s to equilibrate from its crystallographic state, during which volume expanded by 4% and RMSD converged to within 5 \u00c5, while sphericity remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22, C24, C26 collectively describe the simulation setup and equilibration analysis. The 0.1 \u00b5s equilibration time is supported by convergence metrics (RMSD, volume stabilization) and is consistent with prior work on similarly sized capsids. The 4% volume expansion suggests crystal packing artifacts were present, which is a reasonable inference. The methodology is clearly described with appropriate metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The HBV capsid exhibits remarkable flexibility, with local dynamics arising from internal motions of Cp dimers. CD dimers are more flexible than AB dimers (particularly in spike tips and helix 2 regions), demonstrating that local capsid dynamics are a function of quasi-equivalence. The C-terminal region beyond helix 5 is the most mobile segment (RMSF 9.8\u00b13.1 \u00c5 at V149 vs 2.1\u00b10.7 \u00c5 at T142).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C46 describe local flexibility analysis based on RMSF measurements from the simulation. The differential flexibility between AB and CD dimers is quantitatively supported by data in Figures 2b-c. The connection to quasi-equivalence (C42) is a reasonable inference from the observed differences. Crystal structure data (C43) provides experimental validation of the CD dimer disorder.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The capsid exhibits global dynamics arising from spatial movements of dimers relative to each other, leading to asymmetry in capsid structure. Deviations in transformations between neighboring dimers exceed \u00b18\u00b0 and cause spatial displacements up to \u00b18 \u00c5. RMSF projections show non-uniform dynamics with no correlation to symmetry axes. Pentamer fluctuations reveal correlation, anti-correlation, and lack of correlation in motions of symmetrically related pentamers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C63 describe global asymmetric dynamics supported by multiple analyses (RMSF comparison in Figure 3a, transformation deviations in Figure 3\u2014supplement 1, pentamer fluctuations in Figure 4). The distinction between local (dimer-internal) and global (inter-dimer) motions is clearly demonstrated. The asymmetry is quantitatively characterized and represents a key finding of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PCA of 50,000 conformations reveals remarkable complexity in capsid dynamics with highly distributed variance: the lowest frequency mode comprises only 6% of variance, >25 modes are needed for 50% variance. The modes show asymmetric distortion (elongation/compression along various axes) and cannot be simply described as previously reported symmetric motions. A symmetric breathing mode predicted by prior NMA was not identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 describe PCA results that are well-supported by data in Figure 5 and Figure 5\u2014supplement 1. The distributed variance and complexity are quantitatively demonstrated. The comparison to prior NMA work (C71, C74) appropriately contextualizes the findings. The absence of a symmetric breathing mode is a clear observation, though the authors acknowledge sampling limitations (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Theoretical density maps calculated from 1,000 simulated conformations demonstrate that capsid flexibility limits resolution in single-particle reconstructions. The averaged map shows significant smoothing compared to single conformations, with pentamer-pentamer diameter differences exceeding 4 \u00c5. FSC analysis indicates a resolution of 2.3 \u00c5, representing substantial loss of detail from conformational variability alone. Icosahedral averaging further degrades atomic detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C91 describe a theoretical cryo-EM reconstruction analysis supported by data in Figure 6 and Figure 6\u2014supplements. The methodology is sound (FSC analysis with appropriate controls for map calculation parameters). The 2.3 \u00c5 resolution estimate is properly calculated and represents an upper bound on achievable resolution due to flexibility alone, excluding experimental errors. This is a novel computational experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "There is excellent correlation between simulation-derived RMSF, calculated local resolution from theoretical density maps, and crystallographic B-factors from experimental structures. This allows a direct comparison between measurements of local dynamics from three different structural techniques and confirms that simulated flexibility is experimentally supported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 describe correlations shown in Figure 7. The three-way comparison (RMSF, local resolution, B-factors) is well-supported by the data with strong correlations (R\u00b2=0.87 for RMSF vs local resolution, R\u00b2=0.64 for RMSF vs B-factors). This validation strengthens confidence in the simulation results and represents an important cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The HBV capsid is highly permeable to water, with exchange rates of 4.7\u00d710\u00b3 ns\u207b\u00b9 inward and outward (in equilibrium). All pore types are capable of bidirectional water transport, with larger pores (triangular > hexameric > pentameric) exchanging more water per unit time. This rate is much higher than a control spherical surface (233.1\u00d710\u00b3 ns\u207b\u00b9) would suggest based on size alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe water permeability analysis supported by data in Figure 8a. The equilibrium between inward/outward rates (C98) is properly demonstrated. The comparison to a control spherical surface (C99) provides appropriate context, though the interpretation requires clarification\u2014the capsid rate is actually ~50\u00d7 slower than the control sphere, indicating selective permeability. The pore-size dependence (C100) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The capsid exchanges sodium ions ~5\u00d7 faster than chloride ions (Na\u207a: 8.4\u00b10.7 ns\u207b\u00b9 inward, 8.5\u00b10.6 ns\u207b\u00b9 outward; Cl\u207b: 1.8\u00b10.4 ns\u207b\u00b9 inward, 1.7\u00b10.3 ns\u207b\u00b9 outward), demonstrating charge-selective permeability. This preference remains clear even accounting for the 4:3 Na\u207a:Cl\u207b ratio required to neutralize the highly negative capsid (-1680e).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 describe ion exchange analysis supported by data in Figure 8b-c. The ~5\u00d7 preference for sodium is quantitatively demonstrated and the equilibrium between inward/outward rates is confirmed. The accounting for the excess sodium required for charge neutrality (C114-C115) strengthens the conclusion that this represents true selectivity rather than a concentration artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Ion occupancy maps reveal strong sodium localization (\u0394G = -1.0 kcal/mol) specifically within triangular pores on either side of CD dimers, where residues D2, D4, E14, D40, and E43 aggregate. This indicates sodium exchange primarily occurs through these apertures. The highly negative nature of these pores likely relates to their preference for positive ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 describe ion occupancy analysis supported by data in Figure 9a. The specific localization to triangular pores is quantitatively demonstrated with binding energies. The identification of specific residues provides molecular detail. The inference about charge-based selectivity (C126) is reasonable given the identified residues are all acidic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Sodium ions localize in a shell along the capsid's interior surface and in arcs across spike tips (\u0394G = -0.5 kcal/mol). Occupancy is absent along the interior face of dimers but prominent at dimer-dimer contacts. The sodium shell is apparent up to \u0394G = -0.8 kcal/mol, where it resembles a lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 describe sodium shell formation supported by data in Figure 9b. The localization pattern is clearly demonstrated at multiple energy thresholds. The preferential occupancy at dimer-dimer interfaces rather than dimer interiors is an important structural detail that suggests functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Specific sodium binding occurs at E117 on helix 5 (\u0394G = -1.4 kcal/mol), where sodium can transiently bridge interactions with E145 from C-termini of both the same and contacting dimers within capsomeres. These interactions were not previously emphasized experimentally as C-termini are unresolved in crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 describe specific sodium binding supported by data in Figure 9c. The identification of a bridging interaction between helix 5 and C-termini represents a novel structural insight enabled by the simulation. The explanation for why this wasn't seen experimentally (C147) is appropriate given crystallographic limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "Chloride localization (\u0394G = -0.8 kcal/mol) occurs at R28 and R39 on helix 2 and the N-terminal M1, mediating an intra-dimer contact. This likely reduces mobility of the flexible N-terminal region, enhancing capsid structural stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 describe chloride binding supported by data in Figure 9\u2014supplement 1. The identification of a stabilizing role for chloride in the N-terminal region is a reasonable inference from the binding location and the known flexibility of this region. However, this represents a relatively minor finding compared to the sodium interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Analysis identifies subtle ellipsoidal distortion in capsid shape even at equilibrium. This plasticity may facilitate passage through the nuclear pore (39 nm diameter for 36 nm capsid). Prior work showed reversible mechanical deformation up to 60% of radius, and high water permeability may enable rapid equilibration to prevent bursting during deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C158 connect simulation observations to biological function (nuclear import). While the asymmetric distortion is well-supported (C154), the functional implications (C156, C158) are speculative. The cited experimental work (C155, C157) supports the biological context but doesn't directly validate the proposed mechanism. This represents reasonable hypothesis generation but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Maturation-associated structural destabilization (due to dsDNA rigidity) may be accommodated by capsid flexibility and asymmetric distortion, rendering the capsid metastable to facilitate uncoating. The capsid's ability to filter and slowly translocate negatively charged species could regulate reverse transcription rate, allowing gradual structural accommodation of dsDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159-C161 connect simulation findings to maturation biology. While prior work on maturation-associated destabilization is cited (C159-C160), the proposed mechanisms (C161-C162) are speculative inferences from the flexibility and ion exchange observations. These represent plausible hypotheses but lack direct experimental validation in the context of maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Mutations in the Cp assembly domain affect genome replication, suggesting capsid dynamics play an important role. A novel treatment strategy may involve drugs that increase capsid rigidity or limit subunit degrees of freedom. Recent work shows capsid-directed antivirals cause pre-formed capsids to become asymmetric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166 connect dynamics to function and therapeutic implications. The experimental evidence for dynamics affecting replication (C163-C164) is properly cited. The therapeutic speculation (C165) is reasonable given the established importance of dynamics. The recent antiviral work (C166) provides experimental support that capsid structure can be therapeutically modulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Capsid flexibility causes notable blurring in theoretical density maps, particularly with icosahedral averaging. In the absence of experimental error, thermal motion makes large contributions to limiting resolution. The continuum of conformational states may be difficult for 3D classification to distinguish, and dynamics may lead to image discarding. Intrinsic flexibility may represent a major limiting factor for achieving atomic (1-2 \u00c5) resolution with cryo-EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C180 describe implications for cryo-EM supported by the theoretical reconstruction analysis. The blurring effect is directly demonstrated (C176). The inference about thermal motion limiting resolution (C177) is well-supported by the 2.3 \u00c5 estimate from flexibility alone. The challenges for classification and particle selection (C178-C179) are reasonable inferences. The recommendation for symmetry relaxation methods (C181) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The capsid's charge-selective ion exchange may facilitate CTD tail extrusion for cellular signaling, with phosphorylation potentially slowing extrusion rates. Triangular pores (where sodium preferentially translocates) may represent CTD extrusion gateways, consistent with cryo-EM observations of kinases in hexameric valleys. Spike swaying could guide tails from triangular pores to hexameric valleys. Blocking triangular pores could represent a therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C182-C191 propose a detailed mechanism for CTD tail extrusion based on ion exchange preferences and pore locations. While the ion selectivity is well-established and cryo-EM data on kinase location is cited (C186), the proposed mechanism is largely speculative. The connection between sodium translocation sites and CTD extrusion sites (C185) is an inference that requires experimental validation. The therapeutic speculation (C191) is premature without validating the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Sodium localization in triangular pores appears to enhance dimer-dimer interactions in regions of high negative charge. This may represent a mechanism by which metal ions enhance assembly kinetics, consistent with experimental observations that positive ions increase assembly rates. Sodium likely reduces electrostatic repulsion in trimer-of-dimer interfaces, which are implicated as assembly nucleation cores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C203 connect sodium localization to assembly kinetics. The localization data is well-supported (C194). Experimental evidence for metal ion effects on assembly is properly cited (C195-C196). The distinction between sodium (electrostatic) and zinc/nickel (coordination) mechanisms (C198-C199) is chemically sound. The proposed electrostatic stabilization mechanism (C200-C202) is a reasonable inference supported by the trimer-of-dimer nucleation model (C201) and consistent with ionic strength calculations (C203).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The sodium shell along the capsid interior may be a feature of the native Cp183 capsid structure that electrostatically stabilizes phosphorylated CTD tails. The highly negative Cp149 capsid (-1680e) attracts sodium, while in Cp183 the positive CTD tails (+3600e) localize to the interior. In mature capsids with dsDNA (-6400e), the sodium shell may stabilize phosphorylated tails, with unphosphorylated tails likely displacing the sodium shell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C143 propose a functional role for the sodium shell in organizing CTD tails. While the charge calculations are sound (C135, C136, C139) and experimental observations on CTD localization and phosphorylation effects are cited (C137, C140), the proposed mechanism (C138, C141-C143) involves significant speculation. The simulation was performed on Cp149 (without CTD tails), so the proposed interactions are inferred rather than directly observed. The gap between genome and capsid surface (C141) provides some support but doesn't directly validate the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establish that ~240 million people have chronic HBV infection placing them at risk for liver disease, and capsid disruption represents a promising therapeutic approach. The HBV capsid is a T=4 icosahedral particle (36 nm, 120 Cp dimers) that performs multiple functions including genome encapsulation, reverse transcription, trafficking, and uncoating. Cp149 is the minimum assembly domain, while full-length Cp183 includes CTD tails that interact with pgRNA and undergo phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide background context supported by appropriate citations. These establish the biological and medical significance of HBV, the structural organization of the capsid, and the functional importance of CTD tails. All claims are properly attributed to prior work and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The 0.1 \u00b5s equilibration time is consistent with prior work on similarly sized capsids (poliovirus) and shorter than observed for larger capsids (HIV-1: 0.4 \u00b5s). Most prior all-atom capsid simulations reached only tens of nanoseconds, underscoring the need for hundreds of nanoseconds sampling to achieve equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C26-C29 contextualize the equilibration findings relative to prior work. The comparisons to HIV-1 and poliovirus are properly cited (C23, C26). The observation about typical simulation timescales (C28) and recommendation for future work (C29) are reasonable based on the equilibration analysis. This provides important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C48"
+    ],
+    "result": "Cp flexibility is likely essential as dimers can undergo conformational switches facilitating assembly and capsids accommodate two T numbers. The effects of quasi-equivalence on dynamics could play an important but unknown role in capsid function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C48 connect observed flexibility to functional requirements. The experimental evidence for conformational switching and T-number accommodation is properly cited (C32-C33). The speculation about functional importance (C48) is appropriately cautious and represents reasonable hypothesis generation based on the observed quasi-equivalence effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Prior NMA studies of icosahedral capsids used symmetry constraints and predicted symmetric motions for HBV. Some NMA work suggested lowest frequency modes may be non-icosahedral, though recent multi-scale studies suggest symmetric paths dominate. The observation of asymmetric distortion at equilibrium raises the possibility this may be functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C71, C74-C78 contextualize the PCA results relative to prior computational work. The citations to NMA studies are appropriate and the comparison highlights the novelty of the unsymmetrized approach. The acknowledgment of sampling limitations (C75) and conflicting prior results (C76-C77) is appropriate. The speculation about functional importance (C78) is reasonable but cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C79",
+      "C92"
+    ],
+    "result": "The best experimental cryo-EM resolution for HBV capsid is 3.5 \u00c5. This likely includes more extensive conformational sampling and experimental errors absent from the simulation, explaining why it is lower than the theoretical 2.3 \u00c5 estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C92 appropriately compare simulation and experimental resolution estimates. The experimental resolution is properly cited (C79). The explanation for the difference (C92) correctly identifies that experimental reconstructions include both conformational heterogeneity and technical errors, while the simulation estimate isolates the conformational contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Water exchange rates vary dramatically across simulated capsids (poliovirus: 8\u00b12 ns\u207b\u00b9, PCV2: 73\u00b13 ns\u207b\u00b9, STNV: 10 ns\u207b\u00b9, HIV-1: 19.8\u00d710\u00b3 ns\u207b\u00b9, HBV: 4.7\u00d710\u00b3 ns\u207b\u00b9), spanning three orders of magnitude without correlating with capsid size or surface area. This highlights remarkable diversity of capsid function across viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 compare water permeability across different capsids. All rates are properly cited to prior simulation work. The observation that rates don't correlate with size (C106) is well-supported by the data. The inference about functional diversity (C107) is reasonable. This provides important context showing HBV has intermediate-high permeability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "HIV-1 capsid exchanges sodium at similar rates to HBV (9.0\u00b11.9 ns\u207b\u00b9) but preferentially exchanges chloride (21.5\u00b13.1 ns\u207b\u00b9) through charge-specific channels at capsomere centers. Poliovirus and PCV2 capsids are permeable to water but do not exchange ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 compare ion exchange properties across capsids. All comparisons are properly cited to prior simulation work. This contextualizes the HBV findings and highlights that different capsids have evolved distinct ion selectivity mechanisms, with HBV preferring cations while HIV-1 prefers anions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The sodium shell along HBV capsid interior contrasts with other capsids: HIV-1 and PCV2 have interior chloride, with chloride critical for PCV2 stability. Sodium prefers the HIV-1 capsid exterior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 compare ion localization patterns across capsids. The comparisons are properly cited. This highlights that HBV has a unique ion organization pattern compared to other studied capsids, with implications for understanding capsid-specific functional requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C152",
+      "C153"
+    ],
+    "result": "Specific sodium binding in HIV-1 occurs at threefold hexamer interfaces with similar affinity to HBV (\u0394G = -1.8 kcal/mol). Chloride binding in HIV-1 occurs in capsomere pores with higher affinity than HBV (\u0394G = -1.5 to -2.7 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149, C152-C153 compare specific ion binding between HBV and HIV-1. The comparisons are properly cited and provide useful context for interpreting the binding energies observed in HBV. The similar sodium affinity but different chloride affinity highlights capsid-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Mechanical malleability has been attributed to loose Cp dimer packing. Complex dynamics may result from loose packing, weak inter-subunit interactions, and/or flat energy surfaces. Structural diversity from flexibility likely contributes to entropic stabilization and may be critical to viral function, with entropic mechanisms known to be important in allosteric regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C171 discuss mechanistic origins and functional implications of flexibility. The attribution to loose packing is properly cited (C167). The proposed mechanisms (C168) are reasonable inferences. The speculation about entropic contributions (C169-C170) is appropriately cautious and supported by general principles cited (C171).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Asymmetry in virus particles can be defined as distinct structural features, defects, or stochastic dynamics. Prior asymmetric reconstructions treated structural features (HBV with pgRNA, viruses with receptors) or defects (Ross River virus). The present work investigates asymmetry driven by protein dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C175 contextualize the work within the cryo-EM field. The classification of asymmetry types is properly cited (C172). Examples of prior asymmetric reconstructions are appropriately referenced (C173-C174). The claim of novelty for dynamics-driven asymmetry (C175) is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C192",
+      "C193"
+    ],
+    "result": "Recent HIV-1 work demonstrated pores as drug targets with a channel inhibitor blocking nucleotide translocation to suppress reverse transcription. Pore-blocking drugs could also inhibit HBV reverse transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C192-C193 propose therapeutic applications. The HIV-1 precedent is properly cited (C192), but the extension to HBV (C193) is speculative. While HBV also requires nucleotide translocation for reverse transcription, the different pore structures and ion selectivities between HIV-1 and HBV suggest the mechanisms and drug requirements may differ. This requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C204",
+      "C205"
+    ],
+    "result": "Sodium binding was observed in HIV-1 trimeric dimer interfaces, and HIV-1 assembly is thought to be nucleated by trimers of dimers, similar to HBV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C205 draw a parallel between HBV and HIV-1 assembly mechanisms. Both observations are properly cited. This strengthens the proposed mechanism for sodium's role in HBV assembly by showing a similar pattern in another capsid system.",
+    "result_type": "MINOR"
+  }
+]

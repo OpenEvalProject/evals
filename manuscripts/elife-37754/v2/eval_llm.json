@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Approximately half of 50 sporadic ALS/FTD patient brains display an hnRNP H splicing signature similar to C9ORF72 expansion cases. These 'like-C9' patients show 1.78-fold higher hnRNP H insolubility (69.2% vs 38.9%, p<0.0001) compared to 'like-control' patients, with insolubility correlating with splicing severity (r\u00b2=0.58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C13-16 provide converging evidence from RT-PCR splicing analysis and biochemical fractionation across 50 patients. The statistical significance is strong (p<0.0001), sample size is adequate, and the correlation between insolubility and splicing is demonstrated. The 1.78-fold enrichment closely matches the 1.9-fold previously reported for C9ALS (C15), providing internal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Like-C9 sporadic brains show coordinated insolubility of multiple disease-related RBPs including TDP-43 (8-fold higher at 21,000xG, 2.7-fold at 180,000xG), FUS (present in all like-C9, absent in like-control), hnRNP A1, and SMN. These insolubilities correlate strongly with splicing severity (r\u00b2=0.79-0.90), while control protein GAPDH shows no insolubility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-10, C19-21, C26-28 demonstrate multi-RBP insolubility through Western blot quantification with appropriate controls (GAPDH, Histone H3, C9ORF72). The strong linear correlations (r\u00b2=0.79-0.90) between individual RBP insolubilities and CSS are compelling. However, the mechanistic relationship (whether coordinated or sequential) requires further validation beyond correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C49"
+    ],
+    "result": "TDP-43 histopathology is present in 21/23 sporadic cases but does not correlate with biochemical insolubility or splicing defects. Patient F10 (most like-C9) lacked visible TDP-43 inclusions despite 61.8% insoluble TDP-43, while patient 36 showed TDP-43 pathology with only 2.3% insoluble TDP-43.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-24, C49 provide critical evidence decoupling visible pathology from functional deficits. The specific examples (F10, patient 36) are compelling, and the inference that TDP-43 pathology is insufficient for splicing defects (C49) is well-supported by the stratification showing like-control patients have minimal splicing changes despite pathology. This challenges the field's TDP-43-centric view.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C32",
+      "C33",
+      "C66",
+      "C67"
+    ],
+    "result": "TDP-43 and hnRNP H co-immunoprecipitate from sarkosyl-insoluble fractions of like-C9 brains, and their insolubilities show the highest pairwise correlation (Spearman r=0.95 at both centrifugation speeds). Similar correlation (r=0.71) is observed in 13 C9ORF72 expansion patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C32-33, C66-67 provide biochemical evidence for physical interaction through co-IP (C25) and strong statistical correlation (C32-33). The extension to C9 patients (C33) strengthens the model. However, the co-IP is from only two brains, and the reciprocal relationship (C67) remains inferential rather than mechanistically proven. The correlation does not establish causality or directionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RNA-seq analysis reveals minimal splicing differences (23 events) between neurologically normal and SOD1 ALS controls, contrasting with 1,300-1,400 events in ALShigh and C9 groups and several thousand in FTD. Only 8% of C9 events are unique to that group, with 488 events overlapping between C9, FTD, and ALShigh, while ALSlow shows insignificant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-42 demonstrate genome-wide splicing dysregulation using unbiased RNA-seq with appropriate statistical methods (Leafcutter, |\u0394PSI|\u22650.1, 10% FDR). The minimal differences between controls and SOD1 ALS (C37) validate the grouping strategy. The high overlap between C9 and sporadic like-C9 cases (C40-41) supports the nomenclature. Sample sizes are adequate for RNA-seq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Differential splicing affects multiple RBP transcripts including FUS exon 7, hnRNP A1 exon 8, hnRNP D exon 7, and TIA-1 exon 5. Notably, MAPT exon 10 shows increased skipping in C9, ALShigh, and FTD groups. These splicing changes may create feedback loops that exacerbate RBP dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-44, C52-54 identify biologically interesting splicing events with potential mechanistic implications. However, the functional consequences are largely inferential (C52, C54). The contradiction between hnRNP A1 exon 8 skipping and prior literature (C53) raises questions. While the MAPT finding (C44) is noteworthy given its role in familial FTD, demonstrating these events drive pathology versus being consequences requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Like-C9 sporadic patients are 3.8 times more likely to have FTD symptoms compared to like-control patients (p=0.032), with 72% (13/18) of FTD patients classified as like-C9. This mirrors the ~4-fold increased FTD risk in C9ORF72 expansion carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C46-48 establish a clinically significant association between the biochemical/splicing signature and FTD diagnosis using Fisher's exact test. The 3.8-fold odds ratio with p=0.032 is statistically significant, though the confidence interval is not reported. The parallel to C9 patients (C48) strengthens the biological relevance. However, the sample size (18 FTD cases) is modest, and potential confounders (age, disease duration) are not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Eight of 18 TDP-43 splicing targets show changes consistent with TDP-43 loss-of-function in like-C9 patients compared to like-control patients, using a permissive significance threshold (p<0.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C34 provides evidence for TDP-43 functional deficiency in like-C9 patients. However, the use of a permissive p-value cutoff (p<0.10) without multiple testing correction is concerning. Only 8/18 targets show the predicted direction, and 2/10 significant events show the opposite trend, suggesting incomplete TDP-43 LOF or confounding by other RBPs. The analysis uses only 6 patients per group, limiting statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Nineteen of 26 sporadic ALS/FTD patients with available pathological reports exhibited focal loss of Purkinje neurons in the cerebellum, confirming neuronal degeneration in regions with measured splicing defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 provides important validation that splicing changes measured in cerebellum correlate with actual neurodegeneration in that region. The pathological reports document Purkinje cell loss in 73% of cases. This supports the biological relevance of the splicing measurements, though the claim does not establish whether splicing defects cause or result from neurodegeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "At low-speed fractionation (21,000xG), SMN is insoluble in all like-C9 cases (8.1-61.8%, average 31.1%) but absent in like-controls. U2AF65 shows low insolubility (9.2% average) in 6/10 like-C9 patients, while Histone H3 and C9ORF72 show no insolubility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-31 extend the multi-RBP insolubility finding to additional proteins with appropriate negative controls. The SMN finding is particularly interesting given its role in SMA and RNA transport granules. The low U2AF65 insolubility and absence of Histone H3/C9ORF72 insolubility demonstrate specificity. However, the functional significance of partial SMN insolubility (average 31.1%) requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Patient groups show graded hnRNP H insolubility (ALSlow: 26.4%, C9: 59.4%, ALShigh: 67.3%, FTD: 79.6%) without changes in overall hnRNP H protein abundance in cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-36 establish that insolubility differences reflect protein redistribution rather than expression changes. The Western blot control (C36) is essential for interpreting the fractionation data. The gradient of insolubility across clinical groups supports the proposed disease spectrum model. However, the analysis is limited to 26/28 samples and uses whole-tissue homogenates, which may mask cell-type-specific changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C68"
+    ],
+    "result": "The authors propose that ALS/FTD should be considered a multi-RBP proteinopathy rather than a TDP-43 proteinopathy, based on the correlation of TDP-43 biochemical insolubility with both splicing defects and insolubility of several other RBPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-51, C68 synthesize the major findings into a conceptual framework. The evidence for coordinated RBP insolubility (C51) and its correlation with splicing (C50) is strong. The decoupling of histopathology from biochemical dysfunction supports moving beyond TDP-43-centric models. However, this remains a correlative framework without direct mechanistic proof of multi-RBP causality. The proposal (C68) is well-supported by the data but represents an interpretive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "FTD patients display the highest hnRNP H insolubility and most severe splicing changes, but several sporadic and C9 ALS patients with high insolubility show similar patterns. Hierarchical clustering based on both common and unique differential splicing events orders patients by insolubility, with controls clustering with lowest-insolubility patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-64 demonstrate that splicing patterns reflect insolubility magnitude rather than clinical diagnosis per se. The hierarchical clustering analyses (C62-64) using both shared and divergent events consistently group patients by insolubility, supporting a continuous disease spectrum. However, the inference that clinical distinctions are secondary to insolubility (C61) requires caution, as clinical diagnosis may reflect additional factors not captured by cerebellar splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The authors speculate that splicing and insolubility changes may be confined to vulnerable cell types in some patients (diluted in bulk studies) or may only become evident in later stages of progressive RBP coalescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-70 present alternative explanations for the observed patient heterogeneity. These are reasonable hypotheses supported by citations to phase separation literature (C70), but remain speculative without single-cell or longitudinal data. The speculation about cell-type specificity (C69) is particularly important given the bulk tissue analysis, but cannot be evaluated with the current data. These represent important caveats rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C77",
+      "C79"
+    ],
+    "result": "The authors propose a 'toxicity boundary' model where all ALS/FTD patients fall at varying points beyond a threshold of RBP phase imbalance, with the magnitude of imbalance correlating with insoluble protein abundance, decreased functional RBPs, and aberrant splicing. FTD patients are proposed to be further past this boundary than ALS patients, reflecting differential neuronal vulnerabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-73, C77, C79 present a conceptual model integrating the findings with phase separation biology. While the model is intellectually appealing and consistent with the data, it remains largely speculative. The 'toxicity boundary' is hypothetical (C72), and the proposed unidirectional nature and relationship to disease progression (C73) lack direct evidence. The differential vulnerability hypothesis (C79) is inferred from clinical observations (C78) but not mechanistically validated. This represents an interpretive framework rather than a tested result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establishing ALS/FTD epidemiology, the role of C9ORF72 expansion in increasing FTD risk from 10% to 50%, previous findings on hnRNP H sequestration by C9 repeat RNA, and the correlation of TDP-43 pathology with neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-7 provide established background supported by appropriate citations. These contextual claims are well-documented in the literature and provide the foundation for the current study. C5 and C7 reference the authors' previous work, which is appropriately cited. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C45",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C65",
+      "C74"
+    ],
+    "result": "Additional background claims about TDP-43 pathology in ALS, MAPT mutations in FTD, FUS autoregulation, C9 expansion in other diseases, historical EAAT2 splicing findings, SMN in SMA, disease mechanisms converging on granule dynamics, TDP-43/hnRNP H interaction, and GY-rich IDRs in hnRNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C45, C55-59, C65, C74 provide additional context from the literature, all supported by appropriate citations. These establish the broader framework for interpreting the findings, including connections to SMA (C58-59), phase separation biology, and protein-protein interactions. These are well-established facts that inform the discussion but are not novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "The authors infer that extended GY-rich regions in hnRNP D may promote overly stable RBP complexes, that spinal motor neurons have heightened sensitivity to granule dynamics alterations compared to cortical neurons, and that all FTD patients in the cohort displayed motor neuron loss while not all ALS patients showed frontal cortex deterioration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-76, C78 mix data-based observations (C78) with inferences about mechanism (C75) and vulnerability (C76). The clinical observation (C78) is supported by the patient cohort data. However, the mechanistic inference about hnRNP D (C75) and the vulnerability gradient (C76) are speculative, though informed by the SMA literature. These represent reasonable interpretations but lack direct experimental validation in this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1577 @@
+{
+  "submission": {
+    "id": "465ebcd4-7139-4550-80d5-028de5391944",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:24:48.198303Z",
+    "updated_at": "2025-12-01T19:24:48.198303Z"
+  },
+  "content": [
+    {
+      "id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "submission_id": "465ebcd4-7139-4550-80d5-028de5391944",
+      "content_type": "manuscript",
+      "content_text": "# Substrate transport and anion permeation proceed through distinct pathways in glutamate transporters\n\n## Authors\n\n- Mary Hongying Cheng<sup>1</sup> ([ORCID: 0000-0001-5833-8221](https://orcid.org/0000-0001-5833-8221))\n- Delany Torres-Salazar<sup>2</sup>\n- Aneysis D Gonzalez-Suarez<sup>2</sup>\n- Susan G Amara<sup>2</sup>\n- Ivet Bahar<sup>1</sup> ([ORCID: 0000-0001-9959-4176](https://orcid.org/0000-0001-9959-4176)) \u2020\n\n### Affiliations\n\n1. Department of Computational and Systems Biology, School of Medicine University of Pittsburgh Pittsburgh United States\n2. Laboratory of Molecular and Cellular Neurobiology National Institute of Mental Health, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAdvances in structure-function analyses and computational biology have enabled a deeper understanding of how excitatory amino acid transporters (EAATs) mediate chloride permeation and substrate transport. However, the mechanism of structural coupling between these functions remains to be established. Using a combination of molecular modeling, substituted cysteine accessibility, electrophysiology and glutamate uptake assays, we identified a chloride-channeling conformer, iChS, transiently accessible as EAAT1 reconfigures from substrate/ion-loaded into a substrate-releasing conformer. Opening of the anion permeation path in this iChS is controlled by the elevator-like movement of the substrate-binding core, along with its wall that simultaneously lines the anion permeation path (global); and repacking of a cluster of hydrophobic residues near the extracellular vestibule (local). Moreover, our results demonstrate that stabilization of iChS by chemical modifications favors anion channeling at the expense of substrate transport, suggesting a mutually exclusive regulation mediated by the movement of the flexible wall lining the two regions.\n\n## Introduction\n\nExcitatory amino acid transporters (EAATs) regulate glutamatergic signaling by mediating the clearance of extracellular (EC) glutamate from the synapse into neuronal and glial cells (Danbolt, 2001). EAATs accomplish this task through a secondary active transport mechanism that couples the influx of three sodium ions and one proton and the efflux of one potassium ion to the inward translocation of one glutamate molecule (Levy et al., 1998; Zerangue and Kavanaugh, 1996). In addition, they mediate a thermodynamically\u00a0uncoupled substrate-gated chloride conductance (Fairman et al., 1995; Wadiche et al., 1995), which modulates cell excitability serving as a sensor of EC glutamate concentrations (Melzer et al., 2005; Veruki et al., 2006; Wersinger et al., 2006).\n\nCrystallographic data obtained from the archaeal orthologs GltTk from Thermococcus kodakarensis (Guskov et al., 2016; Jensen et al., 2013) and GltPh from Pyrococcus horikoshii in different conformational states (reviewed by Drew and Boudker [Drew and Boudker, 2016]), provide a framework for establishing our current understanding of structure-function relationships in mammalian EAATs. In adition, functional studies (for review see [Fahlke et al., 2016; Jiang and Amara, 2011]) and structure-based simulations (Bahar, 2014; Crisman et al., 2009; DeChancie et al., 2011; Gu et al., 2009; Heinzelmann and Kuyucak, 2014a, 2014b; Huang and Tajkhorshid, 2008; Jiang et al., 2011; Lezon and Bahar, 2012; Li et al., 2013; Machtens et al., 2015; Shrivastava et al., 2008; Stolzenberg et al., 2012; Vergara-Jaque et al., 2015; Zomot and Bahar, 2013) have substantially improved our understanding of the molecular mechanism of substrate transport and anion permeation. EAATs display an evolutionarily conserved trimeric quaternary structure (Gendreau et al., 2004; Haugeto et al., 1996; Yernool et al., 2003, 2004). Each protomer contains eight transmembrane (TM) helices and two reentrant hairpin loops, HP1 and HP2 (Yernool et al., 2004). TM1, TM2, TM4 and TM5 make intersubunit contacts and form the trimerization domain (Boudker et al., 2007; Lezon and Bahar, 2012; Reyes et al., 2009; Yernool et al., 2004). A scaffold formed by these domains surrounds the highly conserved core (of each subunit) composed of HP1, HP2, TM7 and TM8. These core elements, together with TM3 and TM6, form the transport domain that moves in an elevator-like motion across the membrane to enable substrate translocation (Lezon and Bahar, 2012; Reyes et al., 2009).\n\nGltPh has been crystallized in two end-states: outward-facing state (OFS) (Boudker et al., 2007; Yernool et al., 2004) and inward-facing state (IFS) (Reyes et al., 2009). Moreover, Verdon and Boudker identified an asymmetric intermediate state where one of the protomers was in an intermediate outward-facing state (iOFS) and two others in IFS (Verdon and Boudker, 2012) (Figure 1A). Strikingly, this crystal structure closely resembles our earlier prediction (Jiang et al., 2011), which suggested that GltPh is likely to sample intermediate conformations, with \u2018mixed\u2019 states of the subunits. Our study further showed that these conformations are likely to be on-pathway intermediates sampled during transitions between the OFS and IFS (Jiang et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structure of GltPh that captured one of the protomers in an iOFS. The structure is embedded here into POPC membrane bilayer and solvated by 0.1 M NaCl solution (not shown). The substrates (aspartate) and co-transported Na+ ions resolved in the crystal structure are shown in red space-filling representation and blue spheres, respectively. POPC lipids are represented by green lines with their phosphorus atoms shown in tan spheres. Water molecules are shown in red dots. Z-axis directs from the intracellular to extracellular solution. (B) Top view of the GltPh trimer with one subunit in the anion-channeling state (iChS). A continuous channel (blue dashed circle) was intermittently formed as the iOFS protomer reconfigured toward the IF state.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Side view of suggested pore-lining residues. S65, Y195, M286 and P304 are shown in yellow, purple, orange and tan sticks, respectively. Other hydrophobic residues are shown in cyan sticks, charged and polar, in pink sticks, the bound aspartate is in red space filling, and sodium ions in dark blue spheres. (B) Intracellular view of the constriction zone formed by S65, Y195, M286 and P304. Snapshot was taken from equilibrated iOFS conformer.\n\nAn initial effort to define regions in EAATs involved in anion flux identified residues in TM2 (Ryan et al., 2004) that, when mutated, affected anion conduction, implicating this region in anion permeation. Additional residues in TM2 (Kovermann et al., 2010; Ryan and Mindell, 2007; Ryan et al., 2004; Winter et al., 2012), TM5, HP1 and TM7 (Cater et al., 2014; Huang and Vandenberg, 2007; Machtens et al., 2015; Torres-Salazar et al., 2015) also appear to contribute to chloride permeation and/or anion channel gating. The asymmetric GltPh structure that was captured in the iOFS provided evidence for an aqueous accessible cavity that was also proposed as a potential anion permeation pathway (Verdon and Boudker, 2012). EAAT1 residues in this cavity were tested by Cater et al. (2014), who suggested that the interface between the transport and trimerization domains could facilitate anion permeation (Cater et al., 2014). Recent molecular dynamics (MD) simulations by Fahlke\u2019s group (Machtens et al., 2015) showed that the formation of anion-selective permeation pathway is unlikely in the iOFS proposed earlier (Verdon and Boudker, 2012), but required a global rearrangement of the iOFS that included a lateral movement of the transport domain to facilitate the anion pore opening. Data obtained using fluorescence spectroscopy in GltPh and electrophysiological recordings in mammalian EAATs also identified several residues at the interface between the transport and trimerization domains that appear to directly interact with chloride, and when mutated, alter the anion-to-cation selectivity and unitary anion conductance (Machtens et al., 2015).\n\nAlthough these studies broadly agree that anion permeation takes place between the transport and trimerization domains, they differ in the conformational states that mediate anion conduction and the precise residues involved. Here, we use a different set of approaches to characterize the structural features of the anion conducting state, to distinguish the residues lining the pore and to resolve the structural elements involved in the coupling between anion conduction and substrate transport. First, using a combination of advanced computations and experiments, we identified a chloride-channeling intermediate state, iChS (Figure 1B). The iChS is transiently visited during the passage between these iOFS and IFS, consistently observed in both GltPh and EAAT1. Our simulations clearly showed how the opening of a continuous anion channel is facilitated by the movement of a flexible wall between the substrate-binding cavity and the anion conduction pathway, whereas in the iOFS and IFS, the continuity of the channel was compromised by constricted areas. We further identified a cluster of hydrophobic residues (F50, V51 and L212 in GltPh; L88, M89 and L296 in EAAT1) that line the permeation pathway. We probed the accessibility of residues predicted by our simulations to line the anion permeation pore in the iChS using the substituted cysteine accessibility method (SCAM) (Karlin and Akabas, 1998), shown earlier to successfully identify pore-forming residues in many ion channels and transporters (Contreras et al., 2010; Fahlke et al., 1997; Holmgren et al., 1996; Lin and Chen, 2003; Pascual et al., 1995; Reyes and Gadsby, 2006; Takeuchi et al., 2008). Different engineered cysteine substitutions were introduced into a fully functional EAAT1 that lacks the three endogenous cysteine residues (EAAT1 Csls WT) (Seal et al., 2001; Torres-Salazar et al., 2015). Each individual mutant was expressed in Xenopus oocytes and incubated with different MTS (methanethiosulphonate) reagents. We combined electrophysiological recordings and radiolabeled glutamate uptake assays to monitor residue accessibility and the effect of the modification on anion permeation and substrate transport. Among the residues predicted by our simulations to be part of the proposed anion-channeling pathway, two extracellularly\u00a0exposed residues, M89 in TM2 and L296 in TM5 reacted rapidly to MTS reagents and reduced anion permeation without affecting substrate transport. In addition, we observed that the accessibility of these residues was reduced or eliminated under conditions that favor OFS, iOFS or IFS, which our simulations predict as non-conducting states, suggesting that exposure of these residues to thiol-modifying reagents is state-dependent.\n\nOur results confirm that the anion-selective pathway is conserved in archaeal and mammalian EAATs and that it consists of a cavity between the transport and the trimerization domains (Cater et al., 2014; Machtens et al., 2015) that opens up upon structural rearrangements from iOFS out of the transport cycle (Machtens et al., 2015). Moreover, our work provides novel evidence that the anion pore opening consists of a cavity that is distinct from the substrate translocation path and suggest that both pathways are limited by a flexible wall, whose movement dictate whether that monomer exclusively facilitates anion permeation or substrate translocation.\n\n## Results\n\n### A water channel intermittently forms during transition of the substrate-loaded subunit from the iOFS to the IFS\n\nWe first examined the putative anion permeation pathway in the iOFS (Figure 1A) suggested by Verdon and Boudker (Verdon and Boudker, 2012). We observed that the particular path was blocked by tight interactions near M286, Y195, S65 and P304 (Figure 1\u2014figure supplement 1). The pore radius near this constriction zone was 0.9\u00a0\u00b1\u00a00.4 \u00c5, which would render the pore impermeable to chloride ions (1.8 \u00c5 in radius). On the other hand, M286 (in HP1) is separated from Y195 by over 15 \u00c5 in the IFS, which might easily accommodate an anion passage. We then hypothesized that the blockage due to the tight interaction of M286 with Y195 in the iOFS might be alleviated as the subunit undergoes a conformational transition from iOFS to IFS. This motivated a series of runs (Supplementary file 1) using the approach adopted in earlier studies (Cheng and Bahar, 2013, 2014).\n\nVideo 1 illustrates the change in inter-residue interactions as the subunit reconfigures from iOFS to IFS. During these runs, we did not observe continuous water occupancy in the region suggested by Verdon and Boudker. While the intracellular (IC) portion of that region was hydrated up to I61, the EC portion near V58 remained dehydrated, ruling against the possibility of anion channeling. Instead, a water channel transiently formed in another (nearby) region at the interface between the transport and trimerization domains (encircled in Figure 1B), during the transition. We refer to this new in silico resolved conformer as the intermediate channeling state (iChS). The hydrated channel, was invariably observed in the presence of either two or three bound Na+ ions and the substrate (aspartate in GltPh) (Figure 2 and Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig2-v2.jpg)\n\n**Figure 2.:** Side view of the channeling intermediate iChS in (A) GltPh and (C) EAAT1. The channel (blue) is at the interface between the transport (green) and trimerization (brown) domains. (B and D) Representation of pore forming residues in the iOFS (upper panel: closed-channel state), the iChS (middle panel: open-channel state) and the IFS (lower panel: closed-channel state) of (B) GltPh and (D) EAAT1. Note that the center-of-mass distance between L212 and V51 is increased from 7.5\u00a0\u00b1\u00a00.5 \u00c5 (closed-channel state) to 12.0\u00a0\u00b1\u00a01.0 \u00c5 (open-channel state) in GltPh; and that between L296 and M89 is increased from 7.0\u00a0\u00b1\u00a00.5 \u00c5 (closed-channel state) to 12.5\u00a0\u00b1\u00a01.0 \u00c5 (open-channel state) in EAAT1. (E) List of selected orthologous residues between EAAT1 and GltPh.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Binding pause of Na3, stabilized after 10 ns equilibration of the iOFS conformer onto which the third Na+ ion has been docked onto GltPh, near the position revealed in the crystal structure of GltTK resolved in the presence of aspartate and three sodium ions. Na3 is coordinated by T92, S93, N310, M311 and D312. (B) Water channel (shown in semi-transparent gray CPK format) was transiently formed during the transition of the transporter from iOFS to IF state. The mechanism of transition is similar to that observed in the simulations performed with two bound Na+ ions.\n\n![Video 1.](https://cdn.elifesciences.org/articles/25850/elife-25850-media1.mp4.jpg)\n\n**Video 1.:** The two other subunits (shown in yellow, and orange in the background) are in the IFS. The transporter is in substrate-loaded state (all subunits have a bound aspartate, shown in red space-filling). Each subunit also has two bound sodium ions (blue spheres). Residues I61, S65, Y195, M286 and P304 are shown green, yellow, pink, orange, and tan space-filling representations, in the reconfiguring subunit. M286 (orange) and P304 (tan) get away from S65 and Y195, to induce an opening in the IC-facing end of the cavity, although the putative channeling pore remains closed in the iOFS.\n\n### The subunit in the iChS becomes fully hydrated and further opens to expose a hydrophobic cluster during unbiased simulations\n\nThe iChS first showed a minimum pore radius of 1.6\u00a0\u00b1\u00a00.2 \u00c5, which is not wide enough to allow for chloride permeation; but further equilibration with conventional MD (cMD) simulations in the presence of externally applied voltages (see Materials\u00a0and\u00a0methods) led to full occupancy of the channel by continuous water. The increase in water occupancy in the presence of an electric field may reflect the voltage-gating characteristics of the channel (Machtens et al., 2015; Melzer et al., 2003, 2005). Pore lining residues (Figure 2A) generally agree with those reported by Fahlke\u2019s group (Machtens et al., 2015). In our simulations, the cluster of hydrophobic residues F50, V51 and L212 underwent a significant reconfiguration, to give rise to a pore opening in the iChS (Figure 2B). In the iOFS and IFS, this particular region was blocked by tight packing of the same residues. The opening of the water channel was enabled by the concerted downward movement of the two helical hairpins HP1 and HP2, together with the rotational isomerization of F50, V51 and L212 side chains (Figure 2B). The minimum pore radius fluctuated around 2.3\u00a0\u00b1\u00a00.3 \u00c5 during the simulations, which is comparable to the value of 2.4 \u00c5 reported for the crystal structure of an open glutamate-gated chloride channel (Hibbs and Gouaux, 2011). Whereas our minimum pore radius was calculated in the absence of chloride, the occupancy of chloride was observed to enlarge the pore up to 2.6\u00a0\u00b1\u00a00.2 \u00c5, showing certain flexibility at this constriction to attain the experimentally-determined pore radii of\u00a0>2.5 \u00c5 (Wadiche and Kavanaugh, 1998). The chloride ion was detected to translocate across this channel in one of the runs, indicating that iChS conformer presents a pore permeable to chloride.\n\nWe then estimated the solvent-accessible surface area (SASA) for residues predicted by our simulations to line the water accessible and chloride permeable pathway in different conformational states. On the EC side, V51, L212, F50 and V209 showed a significantly higher SASA value in the iChS than in either the iOFS or the IFS (Figure 3A). In particular, F50 and V209 were almost completely buried in the IFS or the iOFS, and became solvent accessible only upon transition to the iChS. On the IC side, Y195 showed a higher accessibility in the iChS when compared to IFS or iOFS. These values provide additional evidence supporting that these residues may be forming part of the anion permeation pathway.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Representation of residue solvent-accessible surface area (SASA) for several residues predicted by our simulations to line the water accessible and chloride permeable pathway in the different conformational states: intermediate channeling (iChS, blue), inward-facing (IFS, dark red) and intermediate outward-facing (iOFS, green). The SASA was estimated for GltPh (A) and hEAAT1 (B). (C\u2013Q) The left panels represent the averaged current amplitudes obtained at a constant pulse at\u00a0+60 mV to monitor modification rates of the different MTS-reagents used (n\u00a0>\u00a04). The bars in the center panels show the current amplitude at\u00a0+60 mV before (red bars) and after (different blue bars) 3 min of the application of the MTS-reagents (n\u00a0>\u00a06). For the case of MTSES (D and M), the current amplitude was measured after application of 1 mM DTT following the application of 10 mM MTSES (green bars; n\u00a0>\u00a03). The right panels show a bar graph representation of the radiolabeled glutamate uptake before and 3 min after the application of the reagents at saturating concentrations of glutamate (200 nM radiolabeled Glu- and 500 \u00b5M cold Glu-) (n\u00a0>\u00a020). Panels C) to K) represent oocytes expressing M89C, while L) to Q) represent oocytes expressing L296C. For panels C), (F) and I), the application of the MTS-reagents is compared in oocytes expressing M89C (open circles) and cysteineless (Csls) WT (grey triangles, n\u00a0>\u00a03). All modification experiments were done in at least two batches of oocytes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Averaged current-voltage relationship obtained from oocytes expressing the mutant M89C in a NaNO3-based solution before application (red circles), after application of 10 mM MTSES (light blue triangles) and after application of 1 mM DTT following MTSES. (B) Averaged current-voltage relationship measured in oocytes expressing M89C in a NaCl-based solution before (red diamonds) and after (light blue diamonds) application of 10 mM MTSES. The current in the absence of glutamate (I0Glut) was subtracted from the current in its presence (I+Glut) to obtain the glutamate induced current. The negligible current at\u00a0+60 mV suggest that the chloride current is very small, therefore the current measured at negative potentials is mainly substrate transport current.\n\nUsing our equilibrated iChS as template, we constructed a homology model for EAAT1 and the model was subjected to multiple cMD runs of 100 ns (Supplementary file 1). The results presented in Figures 2C\u2013D and and 3B corroborated the behavior observed for GltPh: mainly, the same region, lined by the counterparts of GltPh residues became continually hydrated. The key roles of the GltPh hydrophobic residues F50, V51 and L212 at the pore constriction zone, were assumed by their EAAT1 counterparts, L88, M89 and L296, and were indicated by significant increase in the SASA of these residues in the iChS (Figure 3B).\n\n### SCAM and electrophysiological recordings confirm the exposure of hydrophobic residues upon anion channel opening in the iChS of EAAT1\n\nTo probe the anion permeation across the fully hydrated pore revealed by our simulations, we created individual cysteine substitutions for human EAAT1 (hEAAT1) residues highlighted in the simulations as part of the chloride permeable pathway. The anion current mediated by hEAAT1 when Cl\u2212 serves as the main permeant anion is barely detectable (Torres-Salazar et al., 2015), therefore more permeant anions such as NO3\u2212 or SCN\u2212 are commonly used when studying the anion conductance in EAATs (Machtens et al., 2011; Ryan et al., 2004; Watzke and Grewer, 2001). Thus, we measured NO3\u2212 and/or SCN\u2212 currents of these mutants expressed in Xenopus oocytes, explored their accessibility to thiol-specific reagents and tested the effect of the modification on the anion permeation and substrate transport. During the application of thiol-modifying reagents, we measured currents at a constant voltage of\u00a0+60 mV at 1 s intervals to monitor any changes and to obtain a modification rate (e.g. Figure 3C). In addition, the anion current amplitude, the glutamate transport current and radiolabeled glutamate uptake was measured under the same conditions before and after the application to compare the effect of the modifications on anion currents and substrate transport under identical conditions (e.g. Figure 3D and E).\n\nIn oocytes expressing M89C (V51 in GltPh), using a NO3--based solution to monitor the effect on the anion conductance, application of 10 mM MTSES decreased the anion current amplitude at\u00a0+60 mV to 61.5 \u00b1 5% with a time constant of 5.5\u00a0\u00b1\u00a00.5 s (n\u00a0=\u00a06) (Figure 3C and D), an effect that was reversed by the application of 1 mM 1,4-Dithiothreitol (DTT) (Figure 3D). This reduction in current amplitude occurred at positive potentials, suggesting that only the anion conductance was affected and that substrate transport, which is predominant at negative potentials, remained intact (Figure 3 and Figure 3\u2014figure supplement 1).\n\nIn Cl\u2212-based solutions, subtraction of the current in the absence of glutamate from the current in its presence results in a current-voltage relationship that predominantly reflects the glutamate transport current, displaying strong rectification and negligible currents at positive potentials. To corroborate the effect of the modification on substrate translocation, we measured in the same cells, the current in the absence and the presence of saturating concentrations of glutamate (500 \u00b5M) using a Cl\u2212-based solution before and after application of the thiol-reagent. In contrast to the anion current, the transport current in cells expressing M89C remained intact after application of MTSES (Figure 3\u2014figure supplement 1). Moreover, the uptake of radiolabeled glutamate was not affected by application of 10 mM MTSES to oocytes expressing M89C (Figure 3E, n\u00a0>\u00a015). These experiments demonstrate that while application of MTSES significantly decreased anion permeation, it did not affect glutamate translocation. To rule out the possibility that the electrostatic interactions of the negatively\u00a0charged MTSES might affect anion permeation, we repeated the same experiment using the positively\u00a0charged MTSET and the neutral MTSACE (Reyes and Gadsby, 2006). Both reagents produced a similar decrease in the anion current without altering substrate translocation (Figure 3F\u2013K, n\u00a0>\u00a03), further confirming that M89C is accessible to thiol-specific reagents and, that the resulting modifications decrease anion permeation without affecting substrate translocation.\n\nWe obtained similar results with L296C (L212 in GltPh), another residue highlighted in our simulations to be exposed upon opening of the anion pore in the iChS. Application of 10 mM MTSES to cells expressing L296C also reduced the NO3\u2212-mediated current at\u00a0+60 mV to 59 \u00b1 8.9% (n\u00a0>\u00a05) with a time constant of 15.6\u00a0\u00b1\u00a00.5 s (Figure 3L\u2013M), which was reversible by DTT (Figure 3M) and did not affect glutamate uptake (Figure 3N). MTSACE also reduced the anion current without altering substrate transport (Figure 3O\u2013Q, n\u00a0>\u00a03).\n\nA third residue that our simulations revealed as part of the anion permeation pathway was L88 (F50 in GltPh) (Figure 2). Notably, our SASA calculations revealed that at least in hEAAT1, L88 was the residue that showed the most dramatic change in its SASA between the iOFS or IFS and iChS (Figure 3B). In the IFS and iOFS, the SASA for L88 was less than 10 \u00c52, while in the iChS, it became 60\u00a0\u00b1\u00a020 \u00c52 (comparable to that of M89 and L296). In contrast to oocytes expressing M89C or L296C, the oocytes expressing L88C did not show any significant changes in current amplitudes or substrate transport upon application of 10 mM MTSES or 1 mM MTSET (Figure 4A\u2013B,D\u2013E and I), suggesting that L88 was not accessible from the EC side of the membrane. To test for potential accessibility from the IC side, we applied the membrane permeable MTSEA (Holmgren et al., 1996) to oocytes expressing this mutant. Application of 2.5 mM MTSEA resulted in a slow increase in the anion current amplitude at\u00a0+60 mV. About 10 s after the application, the current started increasing, to reach a maximum of 10-fold increase within\u00a0~50 s (Figure 4C, open circles, n\u00a0=\u00a06). No detectable changes were observed in oocytes-expressing Csls WT 50 s after an identical application of MTSEA (Figure 4C; gray triangles, n\u00a0=\u00a03). The full current-voltage relationships from \u2212120 to 60 mV measured before and 3 min after the MTS-application confirmed the effects of the modifications observed at\u00a0+60 mV (Figure 4D\u2013F). To test whether L88C was not accessible to MTSES and MTSET, or if it was accessible but the modification caused no effect on the carrier function, we designed a new experiment in which both reagents were independently applied before the application of MTSEA. If the initially applied reagent could access L88C, the subsequent application of MTSEA would have no effect or at least a significantly lower effect than it had when applied without previous treatment. Figure 4G and H (n\u00a0>\u00a03) show that the effect of MTSEA remains unchanged when applied after a previous application of the other reagents, indicating that L88C was not accessible to MTSES or MTSET. The lack of reactivity of L88C to membrane impermeable reagents suggests that L88C is deep in the anion pore and probably accessible only from the IC side.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Averaged normalized current amplitude measured at constant voltage (+60 mV) in oocytes-expressing L88C. The voltage pulse was continuously applied at 1 s intervals to monitor the effect of the application of 10 mM MTSES (A, n\u00a0=\u00a04), 1 mM MTSET (B, n\u00a0=\u00a04) or 2.5 mM MTSEA (C, n\u00a0=\u00a06) on the anion conductance. The black horizontal bar represents the application duration of MTS-reagent. Panel C shows the averaged normalized current amplitude measured in oocytes expressing Csls WT (grey triangles, n\u00a0=\u00a03) in response to an identical application of MTSEA. (D\u2013F) Averaged current-voltage relationships measured in the same cells showed in (A\u2013C) before (red circles) and after (green inverted triangles) application of the different MTS-reagents. (G\u2013H) Averaged normalized current amplitude measured at a constant voltage at\u00a0+60 mV in oocytes expressing L88C to monitor the modification of MTSEA after a previous application of MTSES (G) or MTSET (H). (I) Radiolabeled glutamate uptake measured in oocytes expressing L88C before and after incubation with the different MTS-reagents for the same time and under the same ionic conditions used in A\u2013C. At least 25 oocytes were included for each group. Background radiolabeled glutamate accumulation measured in water-injected oocytes was subtracted from each group. (J) Current-voltage relationship measured in oocytes expressing WT EAAT1 (open circles, n\u00a0=\u00a010) or L88R (blue triangles, n\u00a0=\u00a012). (K) The maximum current amplitude at\u00a0+60 mV from panel J was normalized by surface expression to reflect the actual difference in current amplitude. (L) The same surface expression was used to normalize radiolabeled glutamate uptake measured in oocytes-expressing WT EAAT1 (n\u00a0=\u00a020) or L88R (n\u00a0=\u00a022). For the surface expression, equal groups of 10 oocytes were used and the experiment was repeated two times in two different batches of oocytes. (M) Relative permeability ratios measured in oocytes-expressing WT EAAT1 (n\u00a0=\u00a07) or L88R (n\u00a0=\u00a08).\n\nInterestingly, modification of L88C with MTSEA not only increased macroscopic anion currents but also significantly decreased substrate transport. Radiolabeled glutamate uptake was reduced more than 60% after incubation with 2.5 mM MTSEA (Figure 4I), the same conditions that resulted in a 10-fold increase of anion current. A modification that increases anion conductance and simultaneously decreases substrate transport is typical of residues involved in anion channel gating (Borre et al., 2002; Hotzy et al., 2012; Seal et al., 2001; Shabaneh et al., 2014; Torres-Salazar et al., 2015). Therefore, these results suggest that L88 may be part of the permeation pathway, but it is also involved in anion channel gating. Because MTSEA is positively charged, in an attempt to mimic the effect of the modification, we substituted L88 by arginine and measured macroscopic current amplitudes, radiolabeled glutamate uptake as well as relative permeability ratios. Similar to that observed after the modification with MTSEA, in oocytes-expressing L88R, we observed much larger macroscopic current amplitudes. The increase was more than 10-fold when normalized by surface expression (Figure 4K, n\u00a0>\u00a010). Moreover, L88R showed less than 90% of substrate transport activity when compared with WT (Figure 4L, n\u00a0>\u00a020).\n\nBoth the modification of L88C with MTSEA and the substitution L88R suggest that L88 plays a role in the coupling of anion channel gating and substrate transport as previously observed with other modifications/substitutions (Borre et al., 2002; Hotzy et al., 2012; Seal et al., 2001; Shabaneh et al., 2014; Torres-Salazar et al., 2015). Despite the evidence that L88 may be playing a role in anion channel gating, our simulations and SASA estimations also directly implicate L88 in direct contact with the permeant anions (Figures 2C,D and 3B), an observation that it is also consistent with a previous report (Machtens et al., 2015). To corroborate this, we examined the permeability ratios of the mutant L88R and compared with those of WT. As shown in Figure 4M, the permeability ratios to chloride in oocytes expressing the mutant L88R were significantly higher for all permeant anions when compared to the WT permeability ratios, demonstrating that L88 may also be playing a role in anion selectivity. These results are in perfect agreement with previous observations showing that a similar substitution in the homologous residue in GltPh (F50K), results in a significantly larger anion conductance (about fourfold) and that negatively charged substitutions at the same position in GltPh and EAAT2 affect the cation/anion permeability of the channel (Machtens et al., 2015).\n\n### The anion-channeling pathway emerging in the iChS is energetically favored over other putative pathways\n\nAt present, there is still a debate about the actual Cl\u2212 permeation pathway(s) in glutamate transporters (for a review, see\u00a0[Cater et al., 2016; Fahlke et al., 2016]). We examined the probabilistic occurrence of alternative Cl\u2212 pathways suggested in the literature by systematic metadynamics simulations (Laio and Parrinello, 2002). The idea is to \u2018direct\u2019 the anion along particular pathways and evaluate the free-energy profile (or the potential of mean force, PMF) along those pathways.\n\nFirst, we examined the energetics of Cl\u2212 permeation across the water channel observed in our iChS protomer (Figure 5A). The cyan dots therein refer to the instantaneous positions of the chloride ions from multiple runs as they are channeled through that pathway. Video 2 displays the trajectory of a Cl\u2212 ion observed in metadynamics simulations. We calculated the PMF profiles for the permeation of chloride or sodium ions across the water channel (see Figure 5D). The estimated energy barrier is\u00a0~4.0 kcal/mol, as Cl\u2212 translocates through the hydrophobic constriction zone lined by F50, V51 and L212 (Figure 5C and Video 2). Notably, R276 near the IC entrance plays a significant role in selectively permeating Cl\u2212 over Na+ (Figure 5D). In this region, Na+ ions encounter an energy barrier of 8.0 kcal/mol, indicating that the anion permeation path in the iChS is practically not accessible to Na+ ions. Video 2 also shows that P356 interacts with the translocated Na+ during the transition to the anion-channeling state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig5-v2.jpg)\n\n**Figure 5.:** (A) Chloride permeation trajectories (cyan points) in the iChS sampled by metadynamics performed for GltPh. The energy barrier for chloride permeation is less than 5 kcal/mol; (B) An alternative pathway lined by V58, I61 and S65, proposed earlier to serve as anion-channeling path, when the subunit in the iOFS. The energy barrier is larger than 20 kcal/mol through this path; (C) iChS channel pore radius along the z-axis, averaged out over multiple snapshots with dashed line showing the variations; and (D) potential of the mean force (PMF) for chloride (cyan curve) and sodium (blue curve) transport through the hydrated channel of the subunit in the iChS, calculated by adaptive biasing force (ABF) method (Chipot and H\u00e9nin, 2005). The channel selectivity filter resides near the IC entrance (i.e. R276), and the potential channel gate is near the EC entrance formed by hydrophobic residues F50, V51 and L212 (see Figure 2).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Averaged normalized current amplitudes at\u00a0+60 mV in oocytes-expressing EAAT1 S103C (n\u00a0>\u00a03) or EAAT1 Csls WT (n\u00a0=\u00a03) before and during the application of 10 mM MTSES (A) or 2.5 mM of MTSEA (B). (C) Averaged current-voltage relationship measured in oocytes-expressing EAAT1 S103C before (open circles, n\u00a0=\u00a05) and after application (blue triangles) of 2.5 mM MTSEA in the presence of 50 mM KSCN, which is expected to favor and inward facing conformations and therefore to increase the accessibility of intracellularly exposed residues like S103. We did not observe any effect on the anion current amplitudes in oocytes-expressing EAAT1 S103C in any of the tested conditions.\n\n![Video 2.](https://cdn.elifesciences.org/articles/25850/elife-25850-media2.mp4.jpg)\n\n**Video 2.:** Metadynamics simulation of the passage of a chloride ion (cyan) through the GltPh subunit in the newly identified anion-conducting intermediate, iChS. In this case, we observe the translocation from the extracellular (EC) to the intracellular (IC) region. Cyan dots represent the trajectory of the chloride ions, sampled during the simulations. In the movie, F50, R276 and P356 are shown purple, cyan and tan stick representations. The bound aspartate and two sodium ions are shown in red space-filling and blue spheres, respectively. Note that, the chloride pathway is distinct from substrate/sodium-binding sites, and it is at the interface between the trimerization (brown) and transport (green) domains of the protomer.\n\nSecond, we explored the putative chloride paths lined by S65 in GltPh. S65 in GltPh (Ryan and Mindell, 2007) as well as its counterpart S103 in EAAT1 (Ryan et al., 2004) were reported to be important to Cl\u2212 permeation. Mutation S65V in GltPh significantly reduced Cl\u2212 flux, with no obvious effects on the substrate transport, but impaired the ability of Na+/aspartate activation of anion permeation (Ryan and Mindell, 2007). Our simulations initiated with a Cl\u2212 ion originally placed near S65 in the MD-equilibrated iOFS showed that the Cl\u2212 ion migrated into the bound Na2 site, via a trajectory (Figure 5B and Video 3) broadly consistent with the putative anion permeation pathway suggested by Verdon and Boudker (Verdon and Boudker, 2012). However, the path remained obstructed by the hydrophobic residues V58, I61, V355, and A353, resulting in an energy barrier over 20 kcal/mol (not shown). This result shows that this path is highly improbable to allow anion permeation, and S65 is not likely to direct the chloride ion to a permeable channel. The putative permeation pathway involving S65 remained closed at all times in our simulations. Moreover, in oocytes-expressing S103C, we did not observe any significant modification effect on the anion current upon application of MTSET, MTSES or MTSEA (Figure 5\u2014figure supplement 1).\n\n![Video 3.](https://cdn.elifesciences.org/articles/25850/elife-25850-media3.mp4.jpg)\n\n**Video 3.:** Sampling the vicinity of S65-associated cavity by chloride ion (cyan) near the iOFS using metadynamics simulation. Cyan dots represent the trajectory of the chloride ion, sampled during the simulations. The pore lining residues S65, I61 and V58 are shown yellow, green and tan stick representations. The bound aspartate and two sodium ions are shown in red and blue space-filling. The estimated energy barrier was over 20 kcal/mol through this path, and therefore we concluded that this is not a probable anion-channeling path.\n\n### The chloride channeling region is separated by a flexible wall from the substrate-binding site\n\nWe note that in our simulations, the initial formation of the water channel occurred in a substrate-loaded state, in which the substrate-binding site was minimally hydrated and practically occluded to both EC and IC regions. This differs significantly from the high level of hydration observed in the iOFS or IFS protomer, in which the substrate binding site is exposed to either the EC or the IC solution. The opening of the channel (Figure 2) is enabled by an \u2018elevator-like\u2019 displacement of the substrate-binding core (Video 1) and further enhanced by the applied voltage. The anion channel is positioned precisely at the interface between this 'moving' transport core and the trimerization domain. Several residues in HP1, HP2 and TM8 act as a flexible wall (Figure 6) between the substrate-binding site and anion-channeling path. The downward movement of the substrate-loaded core and especially these residues that form the wall create a volume expansion in the adjoining interfacial region, leading to the emergence of a continuous channel (Figure 6, and Video 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig6-v2.jpg)\n\n**Figure 6.:** The wall (shown in cyan surface representation) is composed of residues T275-R276-S277 in the HP1 loop, G354-V355-P356-G357 in the HP2 loop, and A391, D394 and M395 in the TM8. The substrate-binding cavity (composed of residues located within 4 \u00c5 from the bound aspartate) is shown in red surface representation. The anion permeation region is shown in semi-transparent blue/white. The structures are shown for (A) iOFS; (B) iChS; and (C) IFS in GltPh. TM helices belonging to the transport domain are colored green; those in the trimerization domain are light brown. Comparison of panes A\u2013C shows that the trimerization domain remains approximately fixed in space, while the transport domain moves downward (elevator-like) as the subunit transitions from iOFS to IFS. Panel (D) shows the wall-composing residues in iChS; and (E) displays the IC view of the wall-composing residues (cyan surface), bound sodium ions (blue spheres) and aspartate (red VDW representation). Note that only in the iChS conformer is the channel wide enough to allow for the permeation of anions. In both panels A and C, there are constriction zones near F50, which block the path for anion permeation.\n\nToward a quantitative characterization of the difference between the iOFS structure resolved by X-ray crystallography (Verdon and Boudker, 2012) and the anion-channeling intermediate conformer iChS observed in our simulations, we calculated the z-distance between the helical hairpins (HP1 and HP2) and S65. As shown in Figure 7A\u2013C, the iChS protomer exhibits intermediate, but clearly distinctive properties, compared to the iOFS and IFS. Figure 3A\u2013B also shows the higher SASAs of channel-lining residues in the iChS state, compared to their values in the iOFS and IFS. Furthermore, while the RMSD between iOFS and IFS is 7.3 \u00c5, the iChS exhibited RMSDs of 4.5\u00a0\u00b1\u00a00.5 \u00c5 and 3.2\u00a0\u00b1\u00a00.5 \u00c5 from the iOFS and IFS, respectively.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig7-v2.jpg)\n\n**Figure 7.:** (A) Structural superimposition of iChS (blue) with the crystal structures resolved for the iOFS (green;) and IFS (red;). Histograms of the z-distance between (B) the external gate HP2 and TM2 (S65); and (C) the inner gate HP1 and TM2 (S65), based on 320,000 MD snapshots. The distances are based on the z-coordinates of the mass centers of HP2 (V335-V370), HP1 (P258- K290) and S65.\n\n### Modification of L88C and M89C is state-dependent\n\nIn our simulations, we only observed a continuous aqueous pathway in the iChS. This continuity was limited by constricted zones observed in the EC and IC regions in both the iOFS and IFS (Figure 6A and C). Because these constrictions may affect the accessibility of residues within the pore that are passed these points, we hypothesized that the accessibility of at least some of the pore forming residues would be affected when favoring these conformations where we observed an interrupted continuous pathway. To evaluate our hypothesis, we repeated the modification experiments in conditions that would favor the stabilization of the carrier in either an inward (in high extracellular K+[Shlaifer and Kanner, 2007]) or an outward (in the presence of TBOA [Boudker et al., 2007]) conformation. In oocytes-expressing M89C, we applied 10 mM MTSES in a KNO3-based solution, which is expected to favor inward-facing conformations and consequently a constriction in the EC region of the pore (Figure 6C). When we measured the current amplitudes in NaNO3 + glutamate before (white bars) and after (black bars) the application of MTSES in high K+ conditions (Figure 8A, center bars, n\u00a0=\u00a05), we did not observe the 40% reduction of the current amplitudes obtained when the application was done in conditions that favored channel opening (Figures 3C and 8A right bars, n\u00a0=\u00a05). We performed a similar experiment in oocytes-expressing L88C but using MTSEA, which we previously demonstrated that it modified L88C from the IC part (Figure 4). Although application of MTSEA in a KNO3-based solution did not prevent the modification (Figure 8B, central bars, n\u00a0=\u00a04), its effect was much smaller than the observed when MTSEA was applied in a NaNO3-based solution (Figures 4 and 8B, right bars, n\u00a0=\u00a05). If we consider that MTSEA access L88C from the cytoplasm and that the constriction observed at the IC part of the channel in the IFS is not as small as the one observed at the EC region (Figure 6C), a partial modification of L88C is not surprising. On the other hand, based on the tight constriction zone observed at the IC region in the iOFS (Figure 6A), one would expect a much reduced or no accessibility of MTSEA to L88C under conditions that favor this conformation. To test that, we then applied MTSEA in the presence of TBOA, which lock the carrier in an outward or intermediate outward conformation (Boudker et al., 2007). In the presence of 200 \u00b5M TBOA, no effect of MTSEA was observed (Figure 8C\u2013D, n\u00a0=\u00a05). In the same cells, following the application in TBOA, we applied MTSEA in the same conditions used before (Figure 4) and the effect was very similar, increasing the current about 10-fold (Figure 8C\u2013D). This result demonstrates very little or no modification at all in the presence of TBOA, supporting the hypothesis that when the carrier is stabilized in an outward-facing conformation the accessibility of L88C from the cytoplasm is limited or abolished, consistent with the constriction we observed in the IC region in a similar conformation (Figure 6A). To ensure that TBOA was working, we measured the current amplitudes in the absence and the presence of 200 \u00b5M TBOA before and after each of the applications; in all cases, TBOA blocked the anion current near background levels (Figure 8E).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/25850/elife-25850-fig8-v2.jpg)\n\n**Figure 8.:** (A) Bar graph representation of averaged current amplitudes at\u00a0+60 mV measured in oocytes expressing either CslsWT or M89C before (white bars) and after (black bars) the application of 10 mM MTSES. MTSES was applied in a buffer containing 96 mM KNO3 and no sodium (center bars, n\u00a0=\u00a05) or in a buffer containing 96 mM NaNO3\u00a0+500 \u00b5M glutamate (right bars, n\u00a0=\u00a04). (B) Bar graph representation of the averaged current amplitudes measured in oocytes expressing either CslsWT or L88C before (white bars) and after (grey bars) the application of 2.5 mM MTSEA. The application was done in a buffer containing KNO3-based solution (n\u00a0=\u00a05) or in a NaNO3-based solution\u00a0+500 \u00b5M glutamate. (C) Averaged normalized current amplitudes measured in oocytes expressing L88C at\u00a0+60 mV on intervals of 1 s before and during the application of 2.5 mM MTSEA. A first application was done in the presence of 200 \u00b5M TBOA, followed by a second application in NaNO3+glutamate (n\u00a0=\u00a05). The black bars represent the time of each application. (D) Bar graph representation of averaged current amplitudes at\u00a0+60 mV measured before the application (white bars) and after the first (1) and the second (2) application in C) (grey bars). (E) Averaged current amplitudes at\u00a0+60 mV in the absence and the presence of 200 \u00b5M TBOA before and after each of the applications in (C).\n\n## Discussion\n\nIncreasing evidence for the involvement of EAAT-associated anion channels in the regulation of glutamatergic synaptic transmission (Melzer et al., 2005; Veruki et al., 2006; Wersinger et al., 2006) and their direct association with neurological disorders (Parinejad et al., 2016; Winter et al., 2012), underscore the importance of establishing the molecular determinants of EAATs anion channel function. The present study highlights the high propensity of glutamate transporters to form an anion-selective channel upon reconfiguration of the substrate-loaded transporter. The anion selective pore, consistently observed in simulations of the archaeal aspartate transporter, GltPh, and confirmed for the homology-modeled human EAAT1 (Figures 1 and 2), became accessible when the transporter visited an intermediate state, iChS, during its transition from iOFS to IFS. This intermediate state is distinguished by the repacking of a hydrophobic cluster (Figure 2) that promotes the opening of a continuous cavity between the transport and the trimerization domains, which, in turn, facilitates anion permeation, in agreement with previous reports (Cater et al., 2014; Machtens et al., 2015). The channeling intermediate iChS is distinct from the X-ray resolved OFS, iOFS and IFS (Figures 3A\u2013B and 7) in GltPh. The versatility of the transport domain to sample yet another functional conformation relative to the relatively rigid trimerization domain is consistent with the conformational heterogeneity of GltPh transport noted by Slotboom and coworkers in their EPR study (H\u00e4nelt et al., 2013).\n\nA combination of electrophysiological recordings with cysteine accessibility assays in Xenopus oocytes (Figures 3C\u2013Q and 4) confirmed the critical role of the conformational flexibility of the pore-lining residues near the EC entrance of the pore, as observed in our simulations. In oocytes-expressing mutants of introduced cysteines in predicted pore-forming residues, we observed a reduction of the macroscopic current amplitude by about 50% after application of different MTS-reagents. Moreover, our results showed that most modifications that significantly affected anion permeation did not affect transport currents or radiolabeled glutamate uptake, indicating that substrate transport is not altered by these modifications (Figure 2). The two residues that showed a reduction in current amplitudes upon modification with MTS-reagents without affecting substrate translocation (M89 and L296), were the ones that displayed the highest solvent accessibilities as reflected by their high SASA values in the iChS. They also have significantly lower SASA values in the IFS or the iOFS (Figure 3B), confirming that their aqueous exposure to the solvent reaches a maximum when the channel adopts the open state. It is worth noting that M89C and L296C are homologous of V51 and L212 in GltPh, which in the report by Machtens et al.\u00a0(2015) showed the highest interaction with Iodide and the largest chloride occupancy in their simulated open channel conformation. We did not observe changes in current amplitude with any of the MTS-reagents applied to other cysteines substituted residues predicted to be pore-lining in MD simulations (I293C, M286C, R477C, S363C or M279C, data not shown). These residues are either deeper into the pore (e.g. I293 and M286) and inaccessible to MTS-modification, or located on the wide open surface of the channel (e.g. M279 and R280) such that the modification with bulky reagents would not affect anion permeation. R276 in HP1 of GltPh (homologous S363 in EAAT1) and a highly conserved basic residue in TM8 of EAATs (R477 in EAAT1) have been suggested to line the anion pore and serve as selectivity filters for the channel (Machtens et al., 2015). Indeed, in the GltPh iChS, R276 is a critical residue that prevents the permeation of Na+ through the anion channel (Figure 5D). Although EAAT1 R477 is highly exposed to water in the iChS (SASA value of 110\u00a0\u00b1\u00a040 \u00c52) and IFS (SASA value of 75\u00a0\u00b1\u00a025 \u00c52), its substitution by cysteine in the R477C mutant (data not shown) decreased the SASA to 30\u00a0\u00b1\u00a010 \u00c52, which may explain the limited accessibility to modifying reagents (data not shown). In fact, only the residues that show a high SASA in the iChS and low SASA in IFS and/or iOFS could be modified by MTS-compounds. Another substituted cysteine mutant, L88C, could only be accessed from the IC side of the membrane. Modification of L88C affected both anion currents and substrate transport, suggesting that L88 resides deep within the pore and may participate in channel gating and line the permeation pathway. Interestingly, a very similar phenomenon is observed in voltage-gated chloride channels (ClCs). In ClC-0, specific residues known to interact with the permeant anion contribute to both anion conduction and channel gating (Pusch et al., 1995). As shown for ClCs, the gating of EAAT-associated anion channels is also modulated by permeant anions (Kovermann et al., 2010; Melzer et al., 2003; Torres-Salazar and Fahlke, 2006). We suggest L88, in addition to coordinating anion permeation through the pore, may also regulate a shift in the equilibrium between channel gating and substrate translocation cycle.\n\nDuring transition from iOFS, a continuous water channel was initially formed when the RMSD of the conformer was around 3.5\u00a0~\u00a04.0 \u00c5 away from the iOFS and was dehydrated once the protomer approached the IFS (e.g. RMSD\u00a0>5.5 \u00c5). The observation of an intermittent water channel during the global transition of the GltPh complies with the notion that water conducting-states may generally arise as short-lived intermediates as the protein undergoes a transition from one global state to another (Li et al., 2013). Recently, Kanner and coworkers reported that cysteine cross-linking of the W441C/K269C double mutant of the neuronal glutamate transporter EAAC1 allowed for anion conductance, but not substrate transport (Shabaneh et al., 2014). Similarly, constraining the homologous GltPhV216-A391 distance in silico restricted the lateral motions of the transporter domain but allowed for sufficient conformational flexibility to form an anion-conducting pore (Machtens et al., 2015). Notably in our simulations, the initial formation of the water channel occurred as the C\u03b1 distance of V216-A391 was within 9.5\u201311.5 \u00c5, therefore the cysteines in the double mutant V216C/A391C are likely to form cross-links. We also recently identified a point mutation in the IC end of TM7 (R388D/E) that drives the carrier into a constitutive open channel state while virtually eliminating substrate transport (Torres-Salazar et al., 2015).\n\nIn addition, our data identified residues in HP1 and HP2 loops and TM8, e.g. R276, P356, G357, A360 and A391 that act as a 'moving wall' (Figure 6) between substrate-transport cavity and the anion permeation channel. This underscores the idea that the channel and substrate translocation pathways are mutually exclusive. Another interesting and novel observation is the constriction zones that we observed of the permeation pathway in the iOFS and the IFS, which explains why the continuous permeation pathway is only observed in the iChS (Figure 6B)(Machtens et al., 2015). This was confirmed by the state-dependent modification that we observed with two of the MTS-reactive residues (L88C and M89C). Perfusion of the cells with a K+-based external solution shifts the equilibrium of the carriers toward the IFS. When MTS-reagents were applied under this condition, M89C became inaccessible (Figure 8A), and the IC accessibility of L88C was only partially reduced (Figure 8B). As predicted from the pathway associated with the IFS, there is a tighter constriction of the cavity on the EC side and a more open configuration on the IC (Figure 6C). However, when we repeated the experiment in the presence of TBOA, which lock the protein in an OFS or iOFS (Boudker et al., 2007), the accessibility of M89C was not significantly altered (data not shown), and L88C became inaccessible (Figure 8C\u2013D), findings consistent with the very tight constriction of the pathway on the IC side in the iOFS (Figure 6A). These data support the state-dependent changes in the shape of the pore and illustrate why channel opening in GltPh and EAAT1 occurs only in conformational states between iOFS and IFS (Cater et al., 2014; Machtens et al., 2015; Shabaneh et al., 2014; Torres-Salazar et al., 2015).\n\nOur study also provides an independent perspective, based on computational and experimental methods different from earlier studies, on a number of divergent conclusions regarding the specific residues lining the conduction pathway (Cater et al., 2014; Machtens et al., 2015). The pore lining residues in our in silico deduced chloride channel in GltPh and the modeled hEAAT1, generally agree with those reported by Machtens et al. (2015). One important discrepancy between previous studies was on the relevance of S65 (S103 in hEAAT1) to the formation of the permeation pathway. This residue was first observed to alter anion permeability ratios when mutated to valine in hEAAT1 (Ryan et al., 2004) and the same substitution was later confirmed to alter chloride flux in GltPh (Ryan and Mindell, 2007). These observations led the authors to propose S65 (S103) as a critical element of the chloride permeation pathway and the selectivity filter (Cater et al., 2014; Ryan and Mindell, 2007; Ryan et al., 2004), which was later supported by an aqueous cavity observed in a resolved crystal structure in the iOFS (Verdon and Boudker, 2012). Although S65 (S103) was not part of the continuous water pathway obtained in our simulations, we examined its role in greater detail by performing a series of simulations in the presence of a Cl\u2212 ion near S65, and additional experiments. In the simulations, although the Cl\u2212 ion initially moved into the crevice proposed as a potential pathway by Verdon and Boudker, this route remained obstructed with an energy barrier of more than 20 kcal/mol by hydrophobic contacts near I61 and V58. We further assessed the modification of the analogous residue in EAAT1, S103C, with different MTS-reagents (MTSES, MTSET or MTSEA), and did not observe an effect on current amplitudes with any of these reagents (Figure 5\u2014figure supplement 1). Taken together with the previous reports, our results suggest that S65 (S103) may play a significant role in anion permeation by contributing to the structural elements involved in channel opening and closing but not as part of the permeation pathway.\n\nTaken together, these data build on an emerging mechanism of anion channel pore opening by demonstrating that the open channel state proceeds through the cooperative dislocation of a flexible-wall during the elevator-like movement of the transport core. Our findings reinforce the idea that substrate transport and anion permeation proceed through two mutually exclusive pathways that are facilitated by conformational changes involving this flexible wall domain. The same mechanism is robustly shared by both the archaeal and mammalian transporters GltPh and EAAT1, and confirmed by both experiments and simulations. These efforts and those of others have begun to illuminate the anion permeation pathway and gating mechanism, and also provide a basis for exploring how EAAT-associated anion channels regulate synaptic function and contribute to neurological and neuropsychiatric conditions.\n\n## Materials\u00a0and\u00a0methods\n\n### Experimental\n\n#### Heterologous expression of EAAT1\n\nPoint mutations were introduced into the hEAAT1 WT cysteineless cDNAs (Csls WT) using the QuikChange mutagenesis kit (Stratagene, La Jolla, CA). WT and mutant hEAAT1-capped cRNA were synthesized from smaI-linearized pOTV through use of MESSAGE machine kits (Ambion, Austin, TX). Subsequently, cRNA was resuspended in 10 \u00b5l of water then adjusted to a concentration of\u00a0~500 \u00b5g/ml and stored in 2 \u00b5l aliquots of at \u201380\u00b0C until use. Of\u00a0~500 \u00b5g/ml cRNA, 50\u00a0nl\u00a0were injected into oocytes using a nanoliter 2000 injector (World Precision Instruments, Sarasota, F), and oocytes were kept at 18\u00b0C in ND-96 solution supplemented with 2.5 mM sodium pyruvate and 100 \u00b5g/ml gentamycin sulfate prior to recordings. Electrophysiological recordings and uptake assays were done 2 to 3 days after injection.\n\n#### Electrophysiology\n\nEAAT-associated currents were recorded in oocytes by two-electrode voltage clamp using a Dagan CA1B (Dagan Corporation, Minneapolis, MN) amplifier. Cl\u2212, NO3\u2212 or SCN\u2212 were used as a main permeant anion. Recording solutions contained (in mM): 96 Na (Cl\u2212, NO3\u2212 or SCN\u2212), 4 KCl, 0.3 CaCl2, 1 MgCl2, 5 HEPES, pH 7.4 in the absence or in the presence of 500 \u00b5M external glutamate. Oocytes were held at \u221260 mV, and currents were elicited by 200 ms voltage steps between \u2013100 mV and\u00a0+60 mV, filtered at 2 kHz (\u22123 dB), and digitalized with a sampling rate of 10 kHz using a Digidata AD/DA converter (Axon Instruments). The current-voltage relationship curves were plotted without using any current subtraction procedure. For cysteine modification experiments, oocytes-expressing Csls WT and mutant transporters were perfused or incubated for 3 min in ND96 buffer containing different sulfhydryl-modifying reagents. The concentrations used for the different reagents were: 1 mM for MTSET, 10 mM for MTSES, 1 mM for MTSACE and 2.5 to 5 mM for MTSEA. All reagents were diluted in water to 1M divided in aliquots and frozen for up to 6 months. All current recordings were additionally measured before and after the application of the reagents. In a set of experiments, 1 mM DTT was perfused after the modification to reduce the disulfide bridge.\n\n#### Uptake assay\n\nH3-glutamate uptake assays were performed on Xenopus oocytes. For the cysteine modification experiments, oocytes were incubated for 3 min in ND96 buffer containing the different sulfhydryl-modifying reagents (with the same final concentration used in the electrophysiological recordings) and then washed with ND96 before proceeding with the experiment. The uptake buffer contained (in mM): 96 NaCl, 4 KCl, 0.3 CaCl2, 1 MgCl2, 5 HEPES, pH 7.4. Right before the experiment, labeled (500 nM) and unlabeled (500 \u00b5M) glutamate was added to reach saturating glutamate concentrations. Oocytes were incubated in radioactive buffer for 10 min, then transferred three times into ice cold ND96 containing (in mM: 96 NaCl, 4 KCl, 0.3 CaCl2, 1 MgCl2, 5 HEPES, pH 7.4) to stop transport activity. Immediately after, oocytes were individually transferred into scintillation counting vials containing 0.4 ml of 1% SDS. After gently shaking the vials for 1 hr, scintillation solution was added, and the samples were counted.\n\n#### Data analysis\n\nTwo electrode voltage clamp data were analyzed using pClamp9 (Axon Instruments, Union City, CA) and the results from the electrophysiological recordings and uptake assays were analyzed using SigmaPlot (Jandel Scientific, San Rafael, CA). For statistical evaluation the Student\u2019s t-Test was used.\n\n### Computational\n\n#### Modeling of GltPh\n\nThe initial simulation system of GltPh was constructed based on an asymmetric intermediate (PDB: 3V8G) (Verdon and Boudker, 2012) using VMD (Humphrey et al., 1996). The missing loops in the crystal structure were re-built using MODELLER (Sali and Blundell, 1993). All mutated residues in the crystal structure were reverted to their wild-type ones. Protonation states of titratable residues were assigned based on pKa calculations using PROPKA (Li et al., 2005). Accordingly, D394 and D405 were protonated. Then the TM portion of the GltPh trimer was inserted into the center of a pre-equilibrated POPC membrane. Fully equilibrated TIP3 waters and 0.1 M NaCl were added to neutralize the system forming an all-atom simulation system of 135 \u00c5\u00a0\u00d7\u00a0135 \u00c5\u00a0\u00d7\u00a095 \u00c5. There were one GltPh trimer, 295 POPC, and about 27,766 water molecules for a total of over 141,800 atoms. The structure of the symmetric GltPh trimer in the IF state (PDB: 3KBC) (Reyes et al., 2009) embedded in the lipid bilayer was constructed following the similar procedure. Figure 1A illustrates the initial MD system set up. All MD simulations were performed using NAMD (Phillips et al., 2005)(version 2.9) and CHARMM36 force field with CMAP corrections (Klauda et al., 2010; Mackerell et al., 2004). The simulation protocol followed our previous approach (Cheng and Bahar, 2013, 2014). MD runs are detailed in Supplementary file 1.\n\n#### Sampling of the conformational space near the iOFS of GltPh\n\nThe initial MD system of iOFS (Figure 1A) was first energy-minimized for 50,000 step, followed by 0.5 ns constant volume and temperature (T\u00a0=\u00a0310K) (NVT) simulations and a subsequent 4 ns Nos\u00e9-Hoover constant pressure and temperature (1 bar, 310 K) (NPT) simulation, during which the protein was fixed and constraints on the POPC head groups were gradually released. Subsequently, the constraints on the protein backbone were reduced from 10 kcal/mol to none within 3 ns. Finally, the unconstrained protein was subjected to NPT simulations. A total of 6\u00a0\u00d7\u00a0100 ns simulations were performed, among which two were in the absence of voltage and the other four in the presence of\u00a0\u00b10.2 kcal/(mol \u00c5 e) (i.e.\u00a0\u00b1300 mV across the membrane) electric field. RMSD in C\u03b1-atom coordinates from their crystallized OFS positions reached a plateau of 3.0\u00a0\u00b1\u00a00.3 \u00c5 after 10 ns in all runs.\n\nSix independent runs under three different conditions (in the absence and presence of externally applied electric fields of different strengths) invariably showed that putative pore suggested by Verdon and Boudker (Verdon and Boudker, 2012) remained \u2018closed' (with a radius of\u00a0~1 \u00c5) near its constriction zone lined by M286, P304, S65 and Y195.\n\n#### Sampling structural transitions from iOFS to IFS and generation of channeling intermediate\n\nWe generated transport intermediates for the GltPh using the protocols adopted for characterizing leucine transporter intermediates along its transport cycle (Cheng and Bahar, 2014; Shaikh and Tajkhorshid, 2010). In particular, GltPh intermediates along the iOFS-to-IFS transition were derived using targeted MD (tMD) (Schlitter et al., 1994), starting from well-equilibrated asymmetric GltPh constructs. A steering force of FtMD = \u00bd (k/N) [(RMSD(t) \u2013 RMSD*(t)] was applied to all atoms in the iOFS subunit (subunit C), using k\u00a0=\u00a0200 kcal/(mol.\u00c52); N is the number of targeted atoms (backbone), RMSD(t) is the instantaneous departure from the target IFS, and RMSD*(t) is the target based on a linear decay from RMSD(0) to zero. Six runs were performed to sample transition of subunit C from iOFS to IFS. Along the iOFS-to-IFS transition, continuous water occupancy inside the subunit C was intermittently observed in all six runs. One channeling GltPh intermediate (iChS; see Figure 1B) from tMD simulation was selected and further subjected to two 100 ns cMD simulations in the absence of voltage gradient. Moreover, four 100 ns cMD simulations were carried out, in which external electrostatic fields of\u00a0\u00b10.1 kcal/(mol.\u00c5.e) (\u00b1150 mV across the membrane) and\u00a0\u00b10.3 kcal/(mol.\u00c5.e) (\u00b1450 mV across the membrane) were applied, respectively. The water channel remained open in three different runs, in which the channel lining residues were broadly consistent despite some variations in the side chain orientations.\n\n#### Sampling chloride permeation pathways in GltPh\n\nChloride permeation pathway and associated potential of mean force (PMF) were assessed using metadynamics (Laio and Parrinello, 2002) and adaptive biasing force (ABF) (Chipot and H\u00e9nin, 2005) methods implemented in NAMD. We used both metadynamics and ABF to estimate the free-energy profiles along the putative pathways, as a way of consolidating the results. These two methods complement each other. Metadynamics has the advantage of identifying curved permation pathways and estimating the free-energy profiles with less computational effort, albeit at lower accuracy compared to other methods (Zhang and Voth, 2011), like ABF. We used metadynamics for a first, quick assessment of putative chloride channeling pathways. Then the one with the lowest energy barrier was reevaluated using ABF to achieve higher accuracy. Briefly, metadynamics simulations were carried out in six successive windows of width 4\u20136 \u00c5 along the channel (z-) axis (perpendicular to the membrane plane). Two consecutive 2 ns metadynamics runs were performed for each window. Using metadynamics, we sampled two Cl- pathways: (1) the equilibrated channeling intermediate (Meta_iChS in Supplementary file 1); and (2) a path near S65 (Meta_S65). Following our previous approach (Jun et al., 2016), we calculated the PMF for Cl\u2212 or Na+ permeation through the water channel using the ABF method. Briefly, PMF calculation started from the bulk solutions along the channel z axis (perpendicular to the membrane lipids), which was subdivided into 4\u00a0~\u00a05 different windows. The width of each ABF window was 5 \u00c5 and five to ten consecutive 1-ns ABF calculations were performed for each window until the variation of the PMF at any point along the z-axis was less than 2 kJ/mol within two consecutive runs. Overall, the calculated PMFs converged, as indicated by the\u00a0<2 kJ/mol variation in PMF along the z-axis between two consecutive runs for permeant ions.\n\n#### Molecular dynamics (MD) study of the third sodium (Na3) binding\n\nExperimental studies have found the co-transport of three sodium ions with one glutamate molecule (Levy et al., 1998; Zerangue and Kavanaugh, 1996). In the originally resolved crystal structures for GltPh,\u00a0there were two cation-binding sites (referred to as Na1 and Na2). The third sodium ion (Na3) was proposed to bind a site coordinated by T92, N310 and D312 in GltPh (Bastug et al., 2012; Tao and Grewer, 2007), which is now supported by the recent structure resolved for GltTK (Guskov et al., 2016). Based on GltPh iOFS conformer, we generated a simulation system in which the third sodium ion was docked onto this Na3-binding site (Guskov et al., 2016). Simulations in the presence of three sodium ions exhibited similar features for the transition from iOFS to IFS.\n\n#### Modeling of EAAT1s\n\nHomology models for human EAAT1 (K42 to S498) in the iOFS (EAAT1_iOFS) and iChS (EAAT1_iChS) states were constructed using MODELLER based on an asymmetric GltPh crystal structure (Verdon and Boudker, 2012) and our in-silico resolved channeling intermediate of the GltPh. We adopted the multiple sequence alignment of GltPh, glutamate and neuronal amino acid transporters reported earlier (Yernool et al., 2004). The segment connecting TM4b and TM4c (E184 to S237 in EAAT1) was not included in the analysis due to the lack of a homologous portion in GltPh. D400, D476 and D487 were protonated based on pKa calculations using PROPKA (Li et al., 2005). Then the transmembrane domain of the EAAT1 trimer was inserted into the center of a pre-equilibrated POPC membrane, following the same approach for GltPh. For each system, two 100 ns MD simulations were performed, in which external electrostatic fields of 0.1 kcal/(mol.\u00c5.e) (i.e. 150 mV across the membrane) and \u22120.1 kcal/(mol.\u00c5.e) were applied, respectively. Similarly, R477C EAAT1 mutant in the iChS was constructed and two 50 ns MD simulations were performed, in which external electrostatic fields of 0.1 kcal/(mol.\u00c5.e) and \u22120.1 kcal/(mol.\u00c5.e) were applied, respectively.\n\n#### Trajectory analysis\n\nRadii of the potential chloride channels were measured using the HOLE program (Smart et al., 1996). VMD (Humphrey et al., 1996) with scripts adopted from VMD script library (http://www.ks.uiuc.edu/Research/vmd/script_library) was used to analyze the time evolution of structures, such as the backbone RMSD, the average pore radii and residue SASA. The RMSDs refer to the structurally resolved regions of subunit C. The conformation state was assessed by z-coordinate distances of the mass centers of HP2 (V335-V370), HP1 (P258- K290) related to S65 that remained minor movement during transitions.\n",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "1a47e47d-1ddb-4043-b59d-d156e4842bde",
+      "submission_id": "465ebcd4-7139-4550-80d5-028de5391944",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25850.018](https://doi.org/10.7554/eLife.25850.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but accepted after the authors appealed against the decision.]\n\nThank you for submitting your work entitled \"Substrate transport and anion permeation proceed through distinct pathways in glutamate transporters\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Christof Grewer (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nUsing molecular dynamics simulations combined with biochemical and functional assays, this study explores the structure and mechanism of the chloride permeation channel of secondary-active glutamate transporters. While the findings are largely consistent with the earlier findings, they fall short of providing significant new insights. It appears that, in a close look, the identified transporter conformation and the channel for chloride permeation do not differ substantially from that identified and characterized by Machtens et al., 2015.\n\nReviewer #1:\n\nCheng et al. report an investigation of the mechanism by chloride ions permeate across secondary-active glutamate transporters, through passive diffusion. To this end, the authors combine molecular dynamics simulations and biochemical and functional studies. The former are primarily focused on GltPh, a prokaryotic transporter, while the experimental assays are carried out for human EAAT1, expressed in oocytes.\n\nThe most apparent shortcoming of this study is that it is unclear how it adds to the published body of work on this subject \u2013 particularly recent work, e.g. Machtens et al., 2015. The principal conclusion in that study is essentially the same as that proposed here, namely that an intermediate conformation between the OF and IF states is such that an anion-selective conducting pore opens up at the interface between the transport and trimerization domains; as far as I can discern by comparing the figures in these two articles, even the proposed pathway for chloride is highly similar.\n\nIt could be argued that independent verification of that result would be of interest. For example, a reader of Machtens et al. might be concerned by the fact that the conducting intermediates hypothesized that study originate from computer simulations in which the transporter is subject to transmembrane voltages of up 1.6 V. Thus, a re-evaluation of those results with more sophisticated or systematic approaches would be well justified. This is not the case here, however. The computational work in Cheng. et al. is of subpar quality, from a methodological standpoint, and appears to follow a design that is largely arbitrary. For example, the authors use so-called targeted MD simulations to generate conformational intermediates between the so-called iOFS and IF states. In this approach, the RMSD of the protein backbone structure, relative to a target, is gradually reduced to a value close to zero. This approach might seem reasonable, except these TMD trajectories are 10 ns long \u2013 i.e. clearly out of equilibrium. In that timescale, there simply is no chance that the side-chain structure, which is, after all, what controls the backbone conformation, will be minimally realistic. In my opinion, therefore, it is improbable that the resulting structural intermediates fall close to a minimum free-energy pathway between the two states considered \u2013 except in a purely qualitative sense. This issue aside, why exactly are the authors assuming here that the Cl- conducting state is an intermediate between iOF and IF conformations? As mentioned, the work seems to examine the same concepts put forward elsewhere. The authors should also clarify why they reportedly carry out 6 of these non-equilibrium trajectories, but apparently consider only one configuration of run #1 for further analysis. Why this precise configuration? What is the significance of these multiple calculations?\n\nThe subsequent steps of the computational protocol are equally confusing and seemingly ad hoc. Why are multiple simulations of the selected intermediate carried out with and without voltage applied? In which way does this procedure lead to the \"refinement\" of the structure of this intermediate? What is the metric that enables the authors to consider this structural intermediate is \"refined\"? And why, again, is the endpoint of only one of these multiple simulations considered for the analysis of ion permeation through PMF calculations? Are the authors using two different methods to compute these PMF profiles (Metadynamics and ABF), as the supplementary information seems to suggest? Why would that be necessary? What is the statistical error in the calculated PMF profiles? And importantly, what is the Cl- conductance associated with the calculated PMF profile, and does it resemble the experimental value? Finally, why are these PMF profiles (for Cl- and Na+) computed in the absence of one of the 3 Na+ ions bound to the structure?\n\nI don't have major concerns in regard to the experimental data. However, I fail to recognize in which way this data specifically supports or confirms the computational work presented here, except on a very qualitative sense. As far as the question of Cl- channeling is concerned, the main experimental result is that MTS modifications of Cys substitutions at EAAT1 positions equivalent to Val51 and Leu212 GltPh reduce the rate of ion permeation, but not transport. The structure of GltPh shows these residues cluster together at the above mentioned interface, and clearly exposed to the solvent on the extracellular side. This data therefore helps to confirm the previously proposed notion that Cl- diffuses across this interface \u2013 it also confirms the data for V51 mutants in Machtens et al., 2015. What I fail to recognize is (a) what is distinct about the computational predictions put forward here, and (b) in which way the experimental data obtained in this study specifically validates those predictions.\n\nReviewer #2:\n\nThis is very nice and comprehensive work that reveals novel information on the mechanims of the anion conductance associated with glutamate transporters. The combination evidence from molecular dynamics simulations supported by experimental data is compelling. I have no general concerns, but would like to ask the authors to include citations of the work of Tao and Grewer regarding the location of the Na3 binding site, which is used in this manuscript for the MD simulations.\n\n[Editors\u2019 note: the author responses to the first round of peer review follow.]\n",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8e8569da-83cc-4133-9119-2e461ee314c0",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C1",
+      "claim": "EAATs regulate glutamatergic signaling by mediating the clearance of extracellular glutamate from the synapse into neuronal and glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory amino acid transporters (EAATs) regulate glutamatergic signaling by mediating the clearance of extracellular (EC) glutamate from the synapse into neuronal and glial cells (Danbolt, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Danbolt, 2001, which is a reference to established scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "deedf6c8-8e62-4ec1-8ec5-2e88d0708cd3",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C2",
+      "claim": "EAATs couple the influx of three sodium ions and one proton and the efflux of one potassium ion to the inward translocation of one glutamate molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "EAATs accomplish this task through a secondary active transport mechanism that couples the influx of three sodium ions and one proton and the efflux of one potassium ion to the inward translocation of one glutamate molecule (Levy et al., 1998; Zerangue and Kavanaugh, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Levy et al., 1998 and Zerangue and Kavanaugh, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "52b21eb4-be33-4101-9344-7edc27361dc5",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C3",
+      "claim": "EAATs mediate a thermodynamically uncoupled substrate-gated chloride conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, they mediate a thermodynamically uncoupled substrate-gated chloride conductance (Fairman et al., 1995; Wadiche et al., 1995), which modulates cell excitability serving as a sensor of EC glutamate concentrations (Melzer et al., 2005; Veruki et al., 2006; Wersinger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fairman et al., 1995; Wadiche et al., 1995; Melzer et al., 2005; Veruki et al., 2006; Wersinger et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "cdbcb3f1-874e-4f9d-8435-5b1f33939eff",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C4",
+      "claim": "EAATs display an evolutionarily conserved trimeric quaternary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "EAATs display an evolutionarily conserved trimeric quaternary structure (Gendreau et al., 2004; Haugeto et al., 1996; Yernool et al., 2003, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gendreau et al., 2004; Haugeto et al., 1996; Yernool et al., 2003, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "a9538345-4f5f-4235-b3f3-03fb7320a529",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C5",
+      "claim": "Each EAAT protomer contains eight transmembrane helices and two reentrant hairpin loops, HP1 and HP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Each protomer contains eight transmembrane (TM) helices and two reentrant hairpin loops, HP1 and HP2 (Yernool et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yernool et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "b41de110-3ccb-4138-991f-9447dae24f3f",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C6",
+      "claim": "TM1, TM2, TM4 and TM5 make intersubunit contacts and form the trimerization domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TM1, TM2, TM4 and TM5 make intersubunit contacts and form the trimerization domain (Boudker et al., 2007; Lezon and Bahar, 2012; Reyes et al., 2009; Yernool et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Boudker et al., 2007; Lezon and Bahar, 2012; Reyes et al., 2009; Yernool et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "5756c5e6-5a9e-494d-a841-2d55e3c32be7",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C7",
+      "claim": "The transport domain composed of HP1, HP2, TM7, TM8, TM3 and TM6 moves in an elevator-like motion across the membrane to enable substrate translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "These core elements, together with TM3 and TM6, form the transport domain that moves in an elevator-like motion across the membrane to enable substrate translocation (Lezon and Bahar, 2012; Reyes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lezon and Bahar, 2012; Reyes et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "ccd9abdc-05a7-40cd-9b78-1dc49f1d9d65",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C8",
+      "claim": "GltPh has been crystallized in outward-facing state (OFS) and inward-facing state (IFS).",
+      "claim_type": "EXPLICIT",
+      "source": "GltPh has been crystallized in two end-states: outward-facing state (OFS) (Boudker et al., 2007; Yernool et al., 2004) and inward-facing state (IFS) (Reyes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Boudker et al., 2007; Yernool et al., 2004; Reyes et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "26069088-468e-46a9-8338-42eee4bffc54",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C9",
+      "claim": "Verdon and Boudker identified an asymmetric intermediate state where one of the protomers was in an intermediate outward-facing state (iOFS) and two others in IFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Verdon and Boudker identified an asymmetric intermediate state where one of the protomers was in an intermediate outward-facing state (iOFS) and two others in IFS (Verdon and Boudker, 2012) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Verdon and Boudker, 2012 and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "eb14e058-8f03-4c14-be18-c9a1219d0e3f",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C10",
+      "claim": "The asymmetric GltPh crystal structure closely resembles an earlier prediction that GltPh is likely to sample intermediate conformations with 'mixed' states of the subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, this crystal structure closely resembles our earlier prediction (Jiang et al., 2011), which suggested that GltPh is likely to sample intermediate conformations, with 'mixed' states of the subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jiang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "f5438b24-10ae-4f77-ba8f-0f6735c373e6",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C11",
+      "claim": "Residues in TM2 are involved in anion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "An initial effort to define regions in EAATs involved in anion flux identified residues in TM2 (Ryan et al., 2004) that, when mutated, affected anion conduction, implicating this region in anion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ryan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "1eefb215-0d99-405e-9ffc-7974358ce9ae",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C12",
+      "claim": "Additional residues in TM2, TM5, HP1 and TM7 contribute to chloride permeation and/or anion channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional residues in TM2 (Kovermann et al., 2010; Ryan and Mindell, 2007; Ryan et al., 2004; Winter et al., 2012), TM5, HP1 and TM7 (Cater et al., 2014; Huang and Vandenberg, 2007; Machtens et al., 2015; Torres-Salazar et al., 2015) also appear to contribute to chloride permeation and/or anion channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kovermann et al., 2010; Ryan and Mindell, 2007; Ryan et al., 2004; Winter et al., 2012; Cater et al., 2014; Huang and Vandenberg, 2007; Machtens et al., 2015; Torres-Salazar et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "085ae9e3-75ac-4969-a7df-1e04147b29b1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C13",
+      "claim": "The interface between the transport and trimerization domains could facilitate anion permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "EAAT1 residues in this cavity were tested by Cater et al. (2014), who suggested that the interface between the transport and trimerization domains could facilitate anion permeation (Cater et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cater et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "cbef9487-9f0f-400c-9599-c7656922dbe2",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C14",
+      "claim": "The formation of anion-selective permeation pathway is unlikely in the iOFS but required a global rearrangement including a lateral movement of the transport domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent molecular dynamics (MD) simulations by Fahlke's group (Machtens et al., 2015) showed that the formation of anion-selective permeation pathway is unlikely in the iOFS proposed earlier (Verdon and Boudker, 2012), but required a global rearrangement of the iOFS that included a lateral movement of the transport domain to facilitate the anion pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Machtens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "48e75809-1322-4faa-a00e-710996efd1e4",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C15",
+      "claim": "A chloride-channeling intermediate state, iChS, is transiently accessible as EAAT1 reconfigures from substrate/ion-loaded into a substrate-releasing conformer.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a combination of molecular modeling, substituted cysteine accessibility, electrophysiology and glutamate uptake assays, we identified a chloride-channeling conformer, iChS, transiently accessible as EAAT1 reconfigures from substrate/ion-loaded into a substrate-releasing conformer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combination of computational and experimental methods described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "0aeb8888-c54b-4020-861a-33bac50a45d0",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C16",
+      "claim": "Opening of the anion permeation path in iChS is controlled by the elevator-like movement of the substrate-binding core and repacking of a cluster of hydrophobic residues near the extracellular vestibule.",
+      "claim_type": "EXPLICIT",
+      "source": "Opening of the anion permeation path in this iChS is controlled by the elevator-like movement of the substrate-binding core, along with its wall that simultaneously lines the anion permeation path (global); and repacking of a cluster of hydrophobic residues near the extracellular vestibule (local).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the computational and experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "efe7f1c7-6448-4bbc-b200-34960bd9d40e",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C17",
+      "claim": "Stabilization of iChS by chemical modifications favors anion channeling at the expense of substrate transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our results demonstrate that stabilization of iChS by chemical modifications favors anion channeling at the expense of substrate transport, suggesting a mutually exclusive regulation mediated by the movement of the flexible wall lining the two regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from chemical modification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "392f40fb-cde0-4589-a120-3f5b1ffe57bd",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C18",
+      "claim": "A water channel intermittently forms during transition of the substrate-loaded subunit from the iOFS to the IFS.",
+      "claim_type": "EXPLICIT",
+      "source": "A water channel intermittently forms during transition of the substrate-loaded subunit from the iOFS to the IFS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a section heading that summarizes findings from the simulations described in the section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "908829aa-2e2c-4d3d-9d19-aa89603746f1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C19",
+      "claim": "The pore radius near the constriction zone formed by M286, Y195, S65 and P304 was 0.9 \u00b1 0.4 \u00c5 in the iOFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The pore radius near this constriction zone was 0.9 \u00b1 0.4 \u00c5, which would render the pore impermeable to chloride ions (1.8 \u00c5 in radius).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational measurements from MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "e6084bc3-bb2d-45a5-afd9-45f6a5502f24",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C20",
+      "claim": "M286 is separated from Y195 by over 15 \u00c5 in the IFS, which might easily accommodate an anion passage.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, M286 (in HP1) is separated from Y195 by over 15 \u00c5 in the IFS, which might easily accommodate an anion passage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural measurements from simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "eaeb3bb5-9404-4fba-a286-cf166a9a55dd",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C21",
+      "claim": "A water channel transiently formed in a region at the interface between the transport and trimerization domains during the transition from iOFS to IFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a water channel transiently formed in another (nearby) region at the interface between the transport and trimerization domains (encircled in Figure 1B), during the transition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data and reference to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "7f826df7-1dab-4f18-b0cf-583bbf2c1045",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C22",
+      "claim": "The hydrated channel was invariably observed in the presence of either two or three bound Na+ ions and the substrate (aspartate in GltPh).",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrated channel, was invariably observed in the presence of either two or three bound Na+ ions and the substrate (aspartate in GltPh) (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "0707e003-b2c4-40de-a03b-408e268a6fd8",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C23",
+      "claim": "The iChS first showed a minimum pore radius of 1.6 \u00b1 0.2 \u00c5, which is not wide enough to allow for chloride permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "The iChS first showed a minimum pore radius of 1.6 \u00b1 0.2 \u00c5, which is not wide enough to allow for chloride permeation; but further equilibration with conventional MD (cMD) simulations in the presence of externally applied voltages (see Materials and methods) led to full occupancy of the channel by continuous water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational measurements from MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "0fae2014-8faf-446e-8fad-aae35637211a",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C24",
+      "claim": "The increase in water occupancy in the presence of an electric field may reflect the voltage-gating characteristics of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in water occupancy in the presence of an electric field may reflect the voltage-gating characteristics of the channel (Machtens et al., 2015; Melzer et al., 2003, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by citations to Machtens et al., 2015; Melzer et al., 2003, 2005.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "197b5efc-ea9e-4b43-99fe-690a03154921",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C25",
+      "claim": "The cluster of hydrophobic residues F50, V51 and L212 underwent a significant reconfiguration to give rise to a pore opening in the iChS.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, the cluster of hydrophobic residues F50, V51 and L212 underwent a significant reconfiguration, to give rise to a pore opening in the iChS (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "701fc973-2f36-431c-80fb-054563fe816b",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C26",
+      "claim": "In the iOFS and IFS, the region near F50, V51 and L212 was blocked by tight packing of the same residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In the iOFS and IFS, this particular region was blocked by tight packing of the same residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "84da6525-872a-4805-8420-3db6bd644e9a",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C27",
+      "claim": "The opening of the water channel was enabled by the concerted downward movement of the two helical hairpins HP1 and HP2, together with the rotational isomerization of F50, V51 and L212 side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The opening of the water channel was enabled by the concerted downward movement of the two helical hairpins HP1 and HP2, together with the rotational isomerization of F50, V51 and L212 side chains (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "b672740f-896d-4f66-b641-407bf8005fca",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C28",
+      "claim": "The minimum pore radius fluctuated around 2.3 \u00b1 0.3 \u00c5 during the simulations, which is comparable to the value of 2.4 \u00c5 reported for the crystal structure of an open glutamate-gated chloride channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimum pore radius fluctuated around 2.3 \u00b1 0.3 \u00c5 during the simulations, which is comparable to the value of 2.4 \u00c5 reported for the crystal structure of an open glutamate-gated chloride channel (Hibbs and Gouaux, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data and comparison to a citation (Hibbs and Gouaux, 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "a93ea548-50fc-4f26-8c07-ed473c2c0be7",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C29",
+      "claim": "The occupancy of chloride was observed to enlarge the pore up to 2.6 \u00b1 0.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas our minimum pore radius was calculated in the absence of chloride, the occupancy of chloride was observed to enlarge the pore up to 2.6 \u00b1 0.2 \u00c5, showing certain flexibility at this constriction to attain the experimentally-determined pore radii of >2.5 \u00c5 (Wadiche and Kavanaugh, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data and comparison to experimental data (Wadiche and Kavanaugh, 1998).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "e33d4a19-f9ff-4077-8377-9f53ff4cd1f0",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C30",
+      "claim": "The chloride ion was detected to translocate across the channel in one of the runs, indicating that iChS conformer presents a pore permeable to chloride.",
+      "claim_type": "EXPLICIT",
+      "source": "The chloride ion was detected to translocate across this channel in one of the runs, indicating that iChS conformer presents a pore permeable to chloride.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "122769f5-a063-409d-b02b-e00b6d92ebc2",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C31",
+      "claim": "V51, L212, F50 and V209 showed a significantly higher SASA value in the iChS than in either the iOFS or the IFS.",
+      "claim_type": "EXPLICIT",
+      "source": "On the EC side, V51, L212, F50 and V209 showed a significantly higher SASA value in the iChS than in either the iOFS or the IFS (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SASA calculations shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "d6b0ba6b-9422-4684-80c3-1617719cbf36",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C32",
+      "claim": "F50 and V209 were almost completely buried in the IFS or the iOFS, and became solvent accessible only upon transition to the iChS.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, F50 and V209 were almost completely buried in the IFS or the iOFS, and became solvent accessible only upon transition to the iChS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by SASA calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "55b3f616-7ecf-41d5-aa38-64c38e4f82b1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C33",
+      "claim": "Y195 showed a higher accessibility in the iChS when compared to IFS or iOFS.",
+      "claim_type": "EXPLICIT",
+      "source": "On the IC side, Y195 showed a higher accessibility in the iChS when compared to IFS or iOFS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by SASA calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "ce69830c-2580-450f-b83b-18ad700a99b3",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C34",
+      "claim": "Application of 10 mM MTSES decreased the anion current amplitude at +60 mV to 61.5 \u00b1 5% with a time constant of 5.5 \u00b1 0.5 s in oocytes expressing M89C.",
+      "claim_type": "EXPLICIT",
+      "source": "In oocytes expressing M89C (V51 in GltPh), using a NO3--based solution to monitor the effect on the anion conductance, application of 10 mM MTSES decreased the anion current amplitude at +60 mV to 61.5 \u00b1 5% with a time constant of 5.5 \u00b1 0.5 s (n = 6) (Figure 3C and D), an effect that was reversed by the application of 1 mM 1,4-Dithiothreitol (DTT) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "a786d5fe-12c7-4b7a-ac97-9219c3e8a0e1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C35",
+      "claim": "The reduction in current amplitude by MTSES in M89C occurred at positive potentials, suggesting that only the anion conductance was affected and that substrate transport remained intact.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction in current amplitude occurred at positive potentials, suggesting that only the anion conductance was affected and that substrate transport, which is predominant at negative potentials, remained intact (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "d0d066ef-f28b-4117-9af7-43eb7e89ef20",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C36",
+      "claim": "The transport current in cells expressing M89C remained intact after application of MTSES.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the anion current, the transport current in cells expressing M89C remained intact after application of MTSES (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "eccb2b90-5130-465f-92fe-e332d3eec5c9",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C37",
+      "claim": "The uptake of radiolabeled glutamate was not affected by application of 10 mM MTSES to oocytes expressing M89C.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the uptake of radiolabeled glutamate was not affected by application of 10 mM MTSES to oocytes expressing M89C (Figure 3E, n > 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by uptake assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "6c8ac8f8-fd92-4efa-85dd-6c3d4e03e1a1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C38",
+      "claim": "MTSET and MTSACE produced a similar decrease in the anion current without altering substrate translocation in M89C.",
+      "claim_type": "EXPLICIT",
+      "source": "Both reagents produced a similar decrease in the anion current without altering substrate translocation (Figure 3F\u2013K, n > 3), further confirming that M89C is accessible to thiol-specific reagents and, that the resulting modifications decrease anion permeation without affecting substrate translocation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological and uptake data shown in Figure 3F\u2013K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "d86a316d-af0f-4c29-841f-b2c380aad9f3",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C39",
+      "claim": "Application of 10 mM MTSES to cells expressing L296C reduced the NO3\u2212-mediated current at +60 mV to 59 \u00b1 8.9% with a time constant of 15.6 \u00b1 0.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of 10 mM MTSES to cells expressing L296C also reduced the NO3\u2212-mediated current at +60 mV to 59 \u00b1 8.9% (n > 5) with a time constant of 15.6 \u00b1 0.5 s (Figure 3L\u2013M), which was reversible by DTT (Figure 3M) and did not affect glutamate uptake (Figure 3N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 3L\u2013M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "5ec76d8a-e4c0-4f7a-a70b-b64473dd0c96",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C40",
+      "claim": "MTSACE reduced the anion current without altering substrate transport in L296C.",
+      "claim_type": "EXPLICIT",
+      "source": "MTSACE also reduced the anion current without altering substrate transport (Figure 3O\u2013Q, n > 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological and uptake data shown in Figure 3O\u2013Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "a4229dce-3514-4700-8beb-2e6841c49ed0",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C41",
+      "claim": "L88 in hEAAT1 showed the most dramatic change in its SASA between the iOFS or IFS and iChS.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our SASA calculations revealed that at least in hEAAT1, L88 was the residue that showed the most dramatic change in its SASA between the iOFS or IFS and iChS (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SASA calculations shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "3adf1a26-ab15-4f32-b5db-47bc9d61afc4",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C42",
+      "claim": "In the IFS and iOFS, the SASA for L88 was less than 10 \u00c52, while in the iChS, it became 60 \u00b1 20 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "In the IFS and iOFS, the SASA for L88 was less than 10 \u00c52, while in the iChS, it became 60 \u00b1 20 \u00c52 (comparable to that of M89 and L296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by SASA calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "633137a4-0926-4b4e-8b7b-a5fb29114d57",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C43",
+      "claim": "Oocytes expressing L88C did not show any significant changes in current amplitudes or substrate transport upon application of 10 mM MTSES or 1 mM MTSET.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to oocytes expressing M89C or L296C, the oocytes expressing L88C did not show any significant changes in current amplitudes or substrate transport upon application of 10 mM MTSES or 1 mM MTSET (Figure 4A\u2013B,D\u2013E and I), suggesting that L88 was not accessible from the EC side of the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological and uptake data shown in Figure 4A\u2013B,D\u2013E and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "c7f65ff4-179c-438e-bccc-23632f8b0715",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C44",
+      "claim": "Application of 2.5 mM MTSEA resulted in a slow increase in the anion current amplitude at +60 mV in oocytes expressing L88C, reaching a maximum of 10-fold increase within ~50 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of 2.5 mM MTSEA resulted in a slow increase in the anion current amplitude at +60 mV. About 10 s after the application, the current started increasing, to reach a maximum of 10-fold increase within ~50 s (Figure 4C, open circles, n = 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "f0d5ef55-73f3-456b-815e-896b7d80dce9",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C45",
+      "claim": "No detectable changes were observed in oocytes-expressing Csls WT 50 s after an identical application of MTSEA.",
+      "claim_type": "EXPLICIT",
+      "source": "No detectable changes were observed in oocytes-expressing Csls WT 50 s after an identical application of MTSEA (Figure 4C; gray triangles, n = 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "727bbe03-2e50-4b63-83ce-408112fd8ce3",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C46",
+      "claim": "The effect of MTSEA remains unchanged when applied after a previous application of MTSES or MTSET in L88C, indicating that L88C was not accessible to MTSES or MTSET.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4G and H (n > 3) show that the effect of MTSEA remains unchanged when applied after a previous application of the other reagents, indicating that L88C was not accessible to MTSES or MTSET.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 4G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "cd0501ef-35be-4f58-a75d-6f896667801c",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C47",
+      "claim": "The lack of reactivity of L88C to membrane impermeable reagents suggests that L88C is deep in the anion pore and probably accessible only from the IC side.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of reactivity of L88C to membrane impermeable reagents suggests that L88C is deep in the anion pore and probably accessible only from the IC side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "ffb90b2d-49e1-490e-a75d-512f4decb63e",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C48",
+      "claim": "Modification of L88C with MTSEA not only increased macroscopic anion currents but also significantly decreased substrate transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, modification of L88C with MTSEA not only increased macroscopic anion currents but also significantly decreased substrate transport. Radiolabeled glutamate uptake was reduced more than 60% after incubation with 2.5 mM MTSEA (Figure 4I), the same conditions that resulted in a 10-fold increase of anion current.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological and uptake data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "2b2c66cc-f97c-482e-bf24-c629e83fd8c8",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C49",
+      "claim": "L88 may be part of the permeation pathway and also involved in anion channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results suggest that L88 may be part of the permeation pathway, but it is also involved in anion channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "231a8ee8-5c39-49dd-87ce-bff393b4d862",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C50",
+      "claim": "In oocytes-expressing L88R, macroscopic current amplitudes were much larger, with an increase of more than 10-fold when normalized by surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to that observed after the modification with MTSEA, in oocytes-expressing L88R, we observed much larger macroscopic current amplitudes. The increase was more than 10-fold when normalized by surface expression (Figure 4K, n > 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "faa4891a-68dc-4442-9c54-32688e45b06f",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C51",
+      "claim": "L88R showed less than 90% of substrate transport activity when compared with WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, L88R showed less than 90% of substrate transport activity when compared with WT (Figure 4L, n > 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by uptake data shown in Figure 4L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "c72d0740-ec45-455e-9ed3-1bc7069155d4",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C52",
+      "claim": "The permeability ratios to chloride in oocytes expressing the mutant L88R were significantly higher for all permeant anions when compared to the WT permeability ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4M, the permeability ratios to chloride in oocytes expressing the mutant L88R were significantly higher for all permeant anions when compared to the WT permeability ratios, demonstrating that L88 may also be playing a role in anion selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by permeability ratio data shown in Figure 4M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "a7ef7759-c085-4467-a653-6628daeb5600",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C53",
+      "claim": "The estimated energy barrier is ~4.0 kcal/mol as Cl\u2212 translocates through the hydrophobic constriction zone lined by F50, V51 and L212.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated energy barrier is ~4.0 kcal/mol, as Cl\u2212 translocates through the hydrophobic constriction zone lined by F50, V51 and L212 (Figure 5C and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PMF calculations shown in Figure 5C and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "b05e3d1d-86d3-4ea0-a71f-088d4781db3a",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C54",
+      "claim": "R276 near the IC entrance plays a significant role in selectively permeating Cl\u2212 over Na+.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, R276 near the IC entrance plays a significant role in selectively permeating Cl\u2212 over Na+ (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PMF calculations shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "23c75f66-5985-4f02-b2d3-4442783c1457",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C55",
+      "claim": "In the region near R276, Na+ ions encounter an energy barrier of 8.0 kcal/mol, indicating that the anion permeation path in the iChS is practically not accessible to Na+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this region, Na+ ions encounter an energy barrier of 8.0 kcal/mol, indicating that the anion permeation path in the iChS is practically not accessible to Na+ ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PMF calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "f53a5bdb-20bc-466f-916a-f5d9f6405e3a",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C56",
+      "claim": "The path lined by S65 remained obstructed by the hydrophobic residues V58, I61, V355, and A353, resulting in an energy barrier over 20 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the path remained obstructed by the hydrophobic residues V58, I61, V355, and A353, resulting in an energy barrier over 20 kcal/mol (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by metadynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "b34ad9e0-a536-4297-851a-0e6875b4a8fe",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C57",
+      "claim": "The path involving S65 is highly improbable to allow anion permeation, and S65 is not likely to direct the chloride ion to a permeable channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that this path is highly improbable to allow anion permeation, and S65 is not likely to direct the chloride ion to a permeable channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "f1e16c44-2224-4956-8736-52e588a7c54b",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C58",
+      "claim": "In oocytes-expressing S103C, no significant modification effect on the anion current was observed upon application of MTSET, MTSES or MTSEA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in oocytes-expressing S103C, we did not observe any significant modification effect on the anion current upon application of MTSET, MTSES or MTSEA (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "c2a1479d-560a-4ede-ae93-9e0266e0c8b1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C59",
+      "claim": "In the simulations, the initial formation of the water channel occurred in a substrate-loaded state, in which the substrate-binding site was minimally hydrated and practically occluded to both EC and IC regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in our simulations, the initial formation of the water channel occurred in a substrate-loaded state, in which the substrate-binding site was minimally hydrated and practically occluded to both EC and IC regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "3123781c-e427-40bd-83f2-3e48f2b9d8c1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C60",
+      "claim": "The opening of the channel is enabled by an 'elevator-like' displacement of the substrate-binding core and further enhanced by the applied voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "The opening of the channel (Figure 2) is enabled by an 'elevator-like' displacement of the substrate-binding core (Video 1) and further enhanced by the applied voltage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "76d97d62-85b6-4efb-b06c-e811d7492713",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C61",
+      "claim": "Several residues in HP1, HP2 and TM8 act as a flexible wall between the substrate-binding site and anion-channeling path.",
+      "claim_type": "EXPLICIT",
+      "source": "Several residues in HP1, HP2 and TM8 act as a flexible wall (Figure 6) between the substrate-binding site and anion-channeling path.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "fea5cae8-e5ec-40d4-ad5f-87ad03069e17",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C62",
+      "claim": "The downward movement of the substrate-loaded core and especially these residues that form the wall create a volume expansion in the adjoining interfacial region, leading to the emergence of a continuous channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The downward movement of the substrate-loaded core and especially these residues that form the wall create a volume expansion in the adjoining interfacial region, leading to the emergence of a continuous channel (Figure 6, and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 6 and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "7945cb2d-6036-4f9e-9191-b10ac80dd2a4",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C63",
+      "claim": "The iChS exhibited RMSDs of 4.5 \u00b1 0.5 \u00c5 and 3.2 \u00b1 0.5 \u00c5 from the iOFS and IFS, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the RMSD between iOFS and IFS is 7.3 \u00c5, the iChS exhibited RMSDs of 4.5 \u00b1 0.5 \u00c5 and 3.2 \u00b1 0.5 \u00c5 from the iOFS and IFS, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RMSD calculations from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "93b43ad9-be3c-4982-b240-e0630ee385cd",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C64",
+      "claim": "When MTS-reagents were applied in high K+ conditions, M89C became inaccessible.",
+      "claim_type": "EXPLICIT",
+      "source": "When we measured the current amplitudes in NaNO3 + glutamate before (white bars) and after (black bars) the application of MTSES in high K+ conditions (Figure 8A, center bars, n = 5), we did not observe the 40% reduction of the current amplitudes obtained when the application was done in conditions that favored channel opening (Figures 3C and 8A right bars, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "1773cf6c-2f44-4e93-a349-364fbec6d750",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C65",
+      "claim": "Application of MTSEA in a KNO3-based solution did not prevent the modification of L88C, but its effect was much smaller than when MTSEA was applied in a NaNO3-based solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although application of MTSEA in a KNO3-based solution did not prevent the modification (Figure 8B, central bars, n = 4), its effect was much smaller than the observed when MTSEA was applied in a NaNO3-based solution (Figures 4 and 8B, right bars, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "c8cdc480-a04c-4513-bd2e-c5266fd28c56",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C66",
+      "claim": "In the presence of 200 \u00b5M TBOA, no effect of MTSEA was observed on L88C.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 200 \u00b5M TBOA, no effect of MTSEA was observed (Figure 8C\u2013D, n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 8C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "cc6df79f-57bc-4ebd-a234-0d15a2b95636",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C67",
+      "claim": "Following the application in TBOA, application of MTSEA in the same conditions used before increased the current about 10-fold in L88C.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same cells, following the application in TBOA, we applied MTSEA in the same conditions used before (Figure 4) and the effect was very similar, increasing the current about 10-fold (Figure 8C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data shown in Figure 8C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "e37bab12-c66c-41ac-bda1-5789dabda75b",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C68",
+      "claim": "When the carrier is stabilized in an outward-facing conformation the accessibility of L88C from the cytoplasm is limited or abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates very little or no modification at all in the presence of TBOA, supporting the hypothesis that when the carrier is stabilized in an outward-facing conformation the accessibility of L88C from the cytoplasm is limited or abolished, consistent with the constriction we observed in the IC region in a similar conformation (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data and simulation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "dbfbbb48-6627-43bf-bbfc-0ea88ed2f186",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C69",
+      "claim": "The anion-selective pathway is conserved in archaeal and mammalian EAATs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirm that the anion-selective pathway is conserved in archaeal and mammalian EAATs and that it consists of a cavity between the transport and the trimerization domains (Cater et al., 2014; Machtens et al., 2015) that opens up upon structural rearrangements from iOFS out of the transport cycle (Machtens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined computational and experimental data, and citations to Cater et al., 2014; Machtens et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "ff5677d7-48ca-4900-882a-780194c6b435",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C70",
+      "claim": "The anion pore opening consists of a cavity that is distinct from the substrate translocation path.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our work provides novel evidence that the anion pore opening consists of a cavity that is distinct from the substrate translocation path and suggest that both pathways are limited by a flexible wall, whose movement dictate whether that monomer exclusively facilitates anion permeation or substrate translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined computational and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "89483906-b9c0-4e8d-99a2-ff61f330855d",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C71",
+      "claim": "Both substrate transport and anion permeation pathways are limited by a flexible wall, whose movement dictates whether that monomer exclusively facilitates anion permeation or substrate translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our work provides novel evidence that the anion pore opening consists of a cavity that is distinct from the substrate translocation path and suggest that both pathways are limited by a flexible wall, whose movement dictate whether that monomer exclusively facilitates anion permeation or substrate translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined computational and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "bec4804c-4a34-4548-8a86-000276e387a3",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C72",
+      "claim": "The anion channel and substrate translocation pathways are mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "This underscores the idea that the channel and substrate translocation pathways are mutually exclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the data showing the flexible wall between the two pathways.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "b71ab313-01f5-4692-a27c-097b82b7780c",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C73",
+      "claim": "The constriction zones observed in the permeation pathway in the iOFS and the IFS explain why the continuous permeation pathway is only observed in the iChS.",
+      "claim_type": "EXPLICIT",
+      "source": "Another interesting and novel observation is the constriction zones that we observed of the permeation pathway in the iOFS and the IFS, which explains why the continuous permeation pathway is only observed in the iChS (Figure 6B)(Machtens et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 6B and citation to Machtens et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "e2b2ab8a-82a1-4a6f-ab0e-46e398221ad9",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C74",
+      "claim": "S65 (S103) may play a significant role in anion permeation by contributing to the structural elements involved in channel opening and closing but not as part of the permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with the previous reports, our results suggest that S65 (S103) may play a significant role in anion permeation by contributing to the structural elements involved in channel opening and closing but not as part of the permeation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the combined simulation and experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "8138440a-f8bf-475f-b316-f22a6531ba48",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "claim_id": "C76",
+      "claim": "The same mechanism of anion pore opening is robustly shared by both the archaeal and mammalian transporters GltPh and EAAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The same mechanism is robustly shared by both the archaeal and mammalian transporters GltPh and EAAT1, and confirmed by both experiments and simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined computational and experimental data for both GltPh and EAAT1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on EAAT structure, function, and prior work on anion permeation pathways. EAATs are trimeric transporters with elevator-like motion that mediate both glutamate transport and chloride conductance. Prior studies identified residues in TM2, TM5, HP1, and TM7 involved in anion permeation, with debate about the precise pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 are all supported by citations to prior literature and provide appropriate context for the current study. These claims accurately represent established knowledge about EAAT structure and function, and correctly cite relevant prior work on anion permeation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "80f51102-b046-4893-82cc-c6bea0b0372d",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identify a chloride-channeling intermediate state (iChS) that is transiently accessible during EAAT1 conformational transitions. Opening of the anion permeation path is controlled by elevator-like movement of the substrate-binding core and repacking of hydrophobic residues. Stabilization of iChS by chemical modifications favors anion channeling at the expense of substrate transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 represent the main findings of the manuscript and are supported by the combination of MD simulations (Figures 1-2, 5-7), SCAM experiments (Figures 3-4), and functional assays (Figures 3-4, 8). The data consistently show that the iChS state is distinct from iOFS and IFS, and that modifications affecting this state alter the balance between transport and channel functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "2118353f-6c20-4163-bd4f-809acf394ea6",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MD simulations reveal that a water channel intermittently forms during the transition from iOFS to IFS. The pathway previously proposed by Verdon and Boudker remains constricted (pore radius 0.9\u00b10.4 \u00c5), but a new pathway at the interface between transport and trimerization domains becomes hydrated. Opening requires repacking of hydrophobic residues F50, V51, and L212 and downward movement of HP1 and HP2, resulting in a pore radius of 2.3\u00b10.3 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C27 are well-supported by extensive MD simulations (Figures 1-2, Video 1) with appropriate controls and multiple independent runs. The pore radius calculations are quantitative and compared to experimental values. The mechanism is consistently observed across multiple simulation conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "3c3c0f44-d1dc-45dc-9b87-ad703944583c",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The minimum pore radius in iChS (2.3\u00b10.3 \u00c5) is comparable to open glutamate-gated chloride channels (2.4 \u00c5). Chloride occupancy enlarges the pore to 2.6\u00b10.2 \u00c5, consistent with experimental measurements (>2.5 \u00c5). Chloride translocation was observed in simulations, confirming the pore is permeable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by simulation data and appropriate comparisons to experimental literature values. The pore radius measurements are quantitative with error estimates, and the observation of chloride translocation provides direct evidence for permeability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "9b653a38-22f8-4e9d-865e-20b7b5c10878",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SASA calculations show that residues V51, L212, F50, V209 (GltPh) and L88, M89, L296 (EAAT1) have significantly higher solvent accessibility in iChS compared to iOFS or IFS. L88 shows the most dramatic change, from <10 \u00c5\u00b2 in IFS/iOFS to 60\u00b120 \u00c5\u00b2 in iChS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C41-C42 are supported by quantitative SASA calculations from MD simulations (Figure 3A-B). The calculations provide specific numerical values with error estimates and identify residues that should be experimentally accessible in the iChS state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "aadc5d11-c407-4b67-8d44-910df293f939",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SCAM experiments show that M89C (EAAT1) is accessible to MTS reagents from the extracellular side. Application of MTSES, MTSET, or MTSACE reduces anion current by ~40% without affecting substrate transport current or radiolabeled glutamate uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are well-supported by electrophysiological recordings and uptake assays (Figure 3C-K) with appropriate sample sizes (n\u22653-15), controls (Csls WT), and reversibility tests (DTT). The selective effect on anion current without affecting transport is demonstrated by multiple independent measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "547b04d6-5b49-4ccb-a135-5687ade3e151",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "L296C (EAAT1) shows similar accessibility to MTS reagents as M89C. MTSES reduces anion current to 59\u00b18.9% (reversible by DTT) without affecting glutamate uptake. MTSACE produces similar effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by electrophysiological and uptake data (Figure 3L-Q) with appropriate sample sizes (n\u22653-5) and controls. The results parallel those for M89C, strengthening the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "4e2f9879-130c-4253-81e2-cabfcf7edb16",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "L88C is not accessible to membrane-impermeant reagents (MTSES, MTSET) from the extracellular side, but is accessible to membrane-permeant MTSEA from the intracellular side. MTSEA application increases anion current 10-fold, suggesting L88C is deep in the pore and accessible only from the IC side.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by systematic SCAM experiments (Figure 4A-H) with appropriate controls (Csls WT) and sequential application experiments demonstrating that MTSES/MTSET do not block subsequent MTSEA effects. The differential accessibility pattern is consistent with the predicted location of L88 in the pore.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "02a8b9bd-1187-4f57-8b16-d9bef70d0ef1",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Modification of L88C with MTSEA increases anion currents 10-fold but decreases substrate transport by >60%, suggesting L88 is involved in both anion permeation and channel gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by combined electrophysiology and uptake data (Figure 4I). The opposing effects on channel and transport functions provide strong evidence for a gating role. However, C49 is somewhat speculative as it infers a dual role from the functional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "37c14394-2c3a-4046-80fe-135a6fc7570c",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The L88R mutant shows >10-fold increase in anion current (normalized by surface expression) and <90% substrate transport activity compared to WT. L88R also shows significantly higher permeability ratios for all permeant anions, indicating L88 plays a role in anion selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by electrophysiology, uptake assays, and permeability measurements (Figure 4J-M) with adequate sample sizes (n\u22657-20). The L88R mutant phenocopies MTSEA modification of L88C, strengthening the interpretation that L88 is involved in both gating and selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "edf7796d-7d2a-4a84-8bca-f070720ec436",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PMF calculations show the energy barrier for Cl\u207b permeation through the hydrophobic constriction (F50, V51, L212) is ~4.0 kcal/mol. R276 near the IC entrance acts as a selectivity filter, creating an 8.0 kcal/mol barrier for Na\u207a, making the pathway inaccessible to sodium ions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by metadynamics and ABF calculations (Figure 5C-D, Video 2). The energy barriers are quantified and the selectivity mechanism is clearly demonstrated. The methods are appropriate for calculating free energy profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "e2a9be4b-87db-492d-bb18-27e827c12802",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The alternative pathway involving S65 remains obstructed by hydrophobic residues (V58, I61, V355, A353) with an energy barrier >20 kcal/mol, making it highly improbable for anion permeation. S103C (EAAT1) shows no modification by MTS reagents, supporting that S65/S103 is not part of the permeation pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by metadynamics simulations (Video 3) and SCAM experiments (Figure 5\u2014figure supplement 1). The high energy barrier and lack of experimental accessibility provide converging evidence against the S65 pathway proposed by earlier studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "f4ac22a9-77be-4113-aa3e-6bf873f4f20c",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The water channel forms in a substrate-loaded state with minimal hydration of the substrate-binding site. Channel opening is enabled by elevator-like displacement of the substrate-binding core and enhanced by applied voltage. Residues in HP1, HP2, and TM8 form a flexible wall between substrate-binding and anion-channeling paths. The iChS is structurally intermediate between iOFS and IFS (RMSD 4.5\u00b10.5 \u00c5 and 3.2\u00b10.5 \u00c5, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are supported by MD simulations (Figures 2, 6, 7, Videos 1-2) with quantitative structural analysis. The RMSD calculations demonstrate that iChS is a distinct intermediate state. The flexible wall concept is well-illustrated and mechanistically important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "c7a9c44d-6dc2-40b7-aec7-127fb858a6b7",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "State-dependent accessibility experiments show that M89C becomes inaccessible to MTSES in high K\u207a conditions (favoring IFS), and L88C shows reduced accessibility to MTSEA in high K\u207a conditions, consistent with constrictions observed in IFS simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are supported by electrophysiology experiments under different ionic conditions (Figure 8A-B) with appropriate sample sizes (n=4-5). The results are consistent with the predicted state-dependent changes in pore geometry from simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "7b92c82c-88af-4511-8303-0542b499f8f5",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In the presence of TBOA (which stabilizes outward-facing conformations), MTSEA has no effect on L88C. Subsequent application of MTSEA without TBOA increases current 10-fold, demonstrating that L88C accessibility from the cytoplasm is abolished when the carrier is stabilized in an outward-facing conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by sequential application experiments (Figure 8C-E) with appropriate controls (n=5). The TBOA experiments provide strong evidence for state-dependent accessibility consistent with the IC constriction observed in iOFS simulations (Figure 6A).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "c5742381-4633-4dc1-859e-a9b4e70d1d2e",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The anion-selective pathway is conserved between archaeal (GltPh) and mammalian (EAAT1) transporters, consisting of a cavity between transport and trimerization domains. The anion pore is distinct from the substrate translocation path, with both pathways limited by a flexible wall whose movement dictates whether the monomer facilitates anion permeation or substrate translocation. The pathways are mutually exclusive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 represent the major conclusions of the study and are supported by the combined computational and experimental evidence from both GltPh and EAAT1. The conservation across species, the distinct pathways, and the flexible wall mechanism are all well-documented. The mutual exclusivity is supported by the opposing effects of modifications on channel vs. transport function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "11de9117-bcef-4320-8d6b-e36f0aa47349",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Constriction zones in the permeation pathway in iOFS and IFS explain why continuous permeation only occurs in iChS. S65/S103 may contribute to structural elements involved in channel opening/closing but is not part of the permeation pathway itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by simulation data (Figure 6B) and the combined evidence from metadynamics simulations and SCAM experiments. The reinterpretation of S65/S103's role reconciles conflicting prior reports and is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    },
+    {
+      "id": "5c1d08ca-49fe-4703-a612-b1bf069299c3",
+      "content_id": "e9743a04-679d-451b-b3e0-ee059b50efe0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The mechanism of anion pore opening is robustly shared by both archaeal (GltPh) and mammalian (EAAT1) transporters, confirmed by both experiments and simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by the parallel computational and experimental studies in both GltPh and EAAT1 throughout the manuscript. The conservation of mechanism strengthens the biological significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:24:48.198303Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8e8569da-83cc-4133-9119-2e461ee314c0",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "deedf6c8-8e62-4ec1-8ec5-2e88d0708cd3",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "52b21eb4-be33-4101-9344-7edc27361dc5",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "cdbcb3f1-874e-4f9d-8435-5b1f33939eff",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "a9538345-4f5f-4235-b3f3-03fb7320a529",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "b41de110-3ccb-4138-991f-9447dae24f3f",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "5756c5e6-5a9e-494d-a841-2d55e3c32be7",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "ccd9abdc-05a7-40cd-9b78-1dc49f1d9d65",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "26069088-468e-46a9-8338-42eee4bffc54",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "eb14e058-8f03-4c14-be18-c9a1219d0e3f",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "f5438b24-10ae-4f77-ba8f-0f6735c373e6",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "1eefb215-0d99-405e-9ffc-7974358ce9ae",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "085ae9e3-75ac-4969-a7df-1e04147b29b1",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "cbef9487-9f0f-400c-9599-c7656922dbe2",
+      "result_id": "50b29ccf-5a61-4c4f-b98a-11da10dd3929"
+    },
+    {
+      "claim_id": "48e75809-1322-4faa-a00e-710996efd1e4",
+      "result_id": "80f51102-b046-4893-82cc-c6bea0b0372d"
+    },
+    {
+      "claim_id": "0aeb8888-c54b-4020-861a-33bac50a45d0",
+      "result_id": "80f51102-b046-4893-82cc-c6bea0b0372d"
+    },
+    {
+      "claim_id": "efe7f1c7-6448-4bbc-b200-34960bd9d40e",
+      "result_id": "80f51102-b046-4893-82cc-c6bea0b0372d"
+    },
+    {
+      "claim_id": "392f40fb-cde0-4589-a120-3f5b1ffe57bd",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "908829aa-2e2c-4d3d-9d19-aa89603746f1",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "e6084bc3-bb2d-45a5-afd9-45f6a5502f24",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "eaeb3bb5-9404-4fba-a286-cf166a9a55dd",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "7f826df7-1dab-4f18-b0cf-583bbf2c1045",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "0707e003-b2c4-40de-a03b-408e268a6fd8",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "0fae2014-8faf-446e-8fad-aae35637211a",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "197b5efc-ea9e-4b43-99fe-690a03154921",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "701fc973-2f36-431c-80fb-054563fe816b",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "84da6525-872a-4805-8420-3db6bd644e9a",
+      "result_id": "2118353f-6c20-4163-bd4f-809acf394ea6"
+    },
+    {
+      "claim_id": "b672740f-896d-4f66-b641-407bf8005fca",
+      "result_id": "3c3c0f44-d1dc-45dc-9b87-ad703944583c"
+    },
+    {
+      "claim_id": "a93ea548-50fc-4f26-8c07-ed473c2c0be7",
+      "result_id": "3c3c0f44-d1dc-45dc-9b87-ad703944583c"
+    },
+    {
+      "claim_id": "e33d4a19-f9ff-4077-8377-9f53ff4cd1f0",
+      "result_id": "3c3c0f44-d1dc-45dc-9b87-ad703944583c"
+    },
+    {
+      "claim_id": "122769f5-a063-409d-b02b-e00b6d92ebc2",
+      "result_id": "9b653a38-22f8-4e9d-865e-20b7b5c10878"
+    },
+    {
+      "claim_id": "d6b0ba6b-9422-4684-80c3-1617719cbf36",
+      "result_id": "9b653a38-22f8-4e9d-865e-20b7b5c10878"
+    },
+    {
+      "claim_id": "55b3f616-7ecf-41d5-aa38-64c38e4f82b1",
+      "result_id": "9b653a38-22f8-4e9d-865e-20b7b5c10878"
+    },
+    {
+      "claim_id": "a4229dce-3514-4700-8beb-2e6841c49ed0",
+      "result_id": "9b653a38-22f8-4e9d-865e-20b7b5c10878"
+    },
+    {
+      "claim_id": "3adf1a26-ab15-4f32-b5db-47bc9d61afc4",
+      "result_id": "9b653a38-22f8-4e9d-865e-20b7b5c10878"
+    },
+    {
+      "claim_id": "ce69830c-2580-450f-b83b-18ad700a99b3",
+      "result_id": "aadc5d11-c407-4b67-8d44-910df293f939"
+    },
+    {
+      "claim_id": "a786d5fe-12c7-4b7a-ac97-9219c3e8a0e1",
+      "result_id": "aadc5d11-c407-4b67-8d44-910df293f939"
+    },
+    {
+      "claim_id": "d0d066ef-f28b-4117-9af7-43eb7e89ef20",
+      "result_id": "aadc5d11-c407-4b67-8d44-910df293f939"
+    },
+    {
+      "claim_id": "eccb2b90-5130-465f-92fe-e332d3eec5c9",
+      "result_id": "aadc5d11-c407-4b67-8d44-910df293f939"
+    },
+    {
+      "claim_id": "6c8ac8f8-fd92-4efa-85dd-6c3d4e03e1a1",
+      "result_id": "aadc5d11-c407-4b67-8d44-910df293f939"
+    },
+    {
+      "claim_id": "d86a316d-af0f-4c29-841f-b2c380aad9f3",
+      "result_id": "547b04d6-5b49-4ccb-a135-5687ade3e151"
+    },
+    {
+      "claim_id": "5ec76d8a-e4c0-4f7a-a70b-b64473dd0c96",
+      "result_id": "547b04d6-5b49-4ccb-a135-5687ade3e151"
+    },
+    {
+      "claim_id": "633137a4-0926-4b4e-8b7b-a5fb29114d57",
+      "result_id": "4e2f9879-130c-4253-81e2-cabfcf7edb16"
+    },
+    {
+      "claim_id": "c7f65ff4-179c-438e-bccc-23632f8b0715",
+      "result_id": "4e2f9879-130c-4253-81e2-cabfcf7edb16"
+    },
+    {
+      "claim_id": "f0d5ef55-73f3-456b-815e-896b7d80dce9",
+      "result_id": "4e2f9879-130c-4253-81e2-cabfcf7edb16"
+    },
+    {
+      "claim_id": "727bbe03-2e50-4b63-83ce-408112fd8ce3",
+      "result_id": "4e2f9879-130c-4253-81e2-cabfcf7edb16"
+    },
+    {
+      "claim_id": "cd0501ef-35be-4f58-a75d-6f896667801c",
+      "result_id": "4e2f9879-130c-4253-81e2-cabfcf7edb16"
+    },
+    {
+      "claim_id": "ffb90b2d-49e1-490e-a75d-512f4decb63e",
+      "result_id": "02a8b9bd-1187-4f57-8b16-d9bef70d0ef1"
+    },
+    {
+      "claim_id": "2b2c66cc-f97c-482e-bf24-c629e83fd8c8",
+      "result_id": "02a8b9bd-1187-4f57-8b16-d9bef70d0ef1"
+    },
+    {
+      "claim_id": "231a8ee8-5c39-49dd-87ce-bff393b4d862",
+      "result_id": "37c14394-2c3a-4046-80fe-135a6fc7570c"
+    },
+    {
+      "claim_id": "faa4891a-68dc-4442-9c54-32688e45b06f",
+      "result_id": "37c14394-2c3a-4046-80fe-135a6fc7570c"
+    },
+    {
+      "claim_id": "c72d0740-ec45-455e-9ed3-1bc7069155d4",
+      "result_id": "37c14394-2c3a-4046-80fe-135a6fc7570c"
+    },
+    {
+      "claim_id": "a7ef7759-c085-4467-a653-6628daeb5600",
+      "result_id": "edf7796d-7d2a-4a84-8bca-f070720ec436"
+    },
+    {
+      "claim_id": "b05e3d1d-86d3-4ea0-a71f-088d4781db3a",
+      "result_id": "edf7796d-7d2a-4a84-8bca-f070720ec436"
+    },
+    {
+      "claim_id": "23c75f66-5985-4f02-b2d3-4442783c1457",
+      "result_id": "edf7796d-7d2a-4a84-8bca-f070720ec436"
+    },
+    {
+      "claim_id": "f53a5bdb-20bc-466f-916a-f5d9f6405e3a",
+      "result_id": "e2a9be4b-87db-492d-bb18-27e827c12802"
+    },
+    {
+      "claim_id": "b34ad9e0-a536-4297-851a-0e6875b4a8fe",
+      "result_id": "e2a9be4b-87db-492d-bb18-27e827c12802"
+    },
+    {
+      "claim_id": "f1e16c44-2224-4956-8736-52e588a7c54b",
+      "result_id": "e2a9be4b-87db-492d-bb18-27e827c12802"
+    },
+    {
+      "claim_id": "c2a1479d-560a-4ede-ae93-9e0266e0c8b1",
+      "result_id": "f4ac22a9-77be-4113-aa3e-6bf873f4f20c"
+    },
+    {
+      "claim_id": "3123781c-e427-40bd-83f2-3e48f2b9d8c1",
+      "result_id": "f4ac22a9-77be-4113-aa3e-6bf873f4f20c"
+    },
+    {
+      "claim_id": "76d97d62-85b6-4efb-b06c-e811d7492713",
+      "result_id": "f4ac22a9-77be-4113-aa3e-6bf873f4f20c"
+    },
+    {
+      "claim_id": "fea5cae8-e5ec-40d4-ad5f-87ad03069e17",
+      "result_id": "f4ac22a9-77be-4113-aa3e-6bf873f4f20c"
+    },
+    {
+      "claim_id": "7945cb2d-6036-4f9e-9191-b10ac80dd2a4",
+      "result_id": "f4ac22a9-77be-4113-aa3e-6bf873f4f20c"
+    },
+    {
+      "claim_id": "93b43ad9-be3c-4982-b240-e0630ee385cd",
+      "result_id": "c7a9c44d-6dc2-40b7-aec7-127fb858a6b7"
+    },
+    {
+      "claim_id": "1773cf6c-2f44-4e93-a349-364fbec6d750",
+      "result_id": "c7a9c44d-6dc2-40b7-aec7-127fb858a6b7"
+    },
+    {
+      "claim_id": "c8cdc480-a04c-4513-bd2e-c5266fd28c56",
+      "result_id": "7b92c82c-88af-4511-8303-0542b499f8f5"
+    },
+    {
+      "claim_id": "cc6df79f-57bc-4ebd-a234-0d15a2b95636",
+      "result_id": "7b92c82c-88af-4511-8303-0542b499f8f5"
+    },
+    {
+      "claim_id": "e37bab12-c66c-41ac-bda1-5789dabda75b",
+      "result_id": "7b92c82c-88af-4511-8303-0542b499f8f5"
+    },
+    {
+      "claim_id": "dbfbbb48-6627-43bf-bbfc-0ea88ed2f186",
+      "result_id": "c5742381-4633-4dc1-859e-a9b4e70d1d2e"
+    },
+    {
+      "claim_id": "ff5677d7-48ca-4900-882a-780194c6b435",
+      "result_id": "c5742381-4633-4dc1-859e-a9b4e70d1d2e"
+    },
+    {
+      "claim_id": "89483906-b9c0-4e8d-99a2-ff61f330855d",
+      "result_id": "c5742381-4633-4dc1-859e-a9b4e70d1d2e"
+    },
+    {
+      "claim_id": "bec4804c-4a34-4548-8a86-000276e387a3",
+      "result_id": "c5742381-4633-4dc1-859e-a9b4e70d1d2e"
+    },
+    {
+      "claim_id": "b71ab313-01f5-4692-a27c-097b82b7780c",
+      "result_id": "11de9117-bcef-4320-8d6b-e36f0aa47349"
+    },
+    {
+      "claim_id": "e2b2ab8a-82a1-4a6f-ab0e-46e398221ad9",
+      "result_id": "11de9117-bcef-4320-8d6b-e36f0aa47349"
+    },
+    {
+      "claim_id": "8138440a-f8bf-475f-b316-f22a6531ba48",
+      "result_id": "5c1d08ca-49fe-4703-a612-b1bf069299c3"
+    }
+  ],
+  "comparisons": []
+}

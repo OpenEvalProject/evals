@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "mTORC1 deletion (Rptor cKO) results in altered NK cell homeostasis with increased frequency in bone marrow but reduced percentages in periphery, decreased steady-state proliferation, impaired trafficking, blocked maturation at the CD27 SP to DP transition, and reduced KLRG1 expression, without affecting cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C50 provide converging evidence from multiple experimental approaches (western blot, flow cytometry, Ki-67 staining, CD45.2 trafficking assay, Annexin V/PI viability assay) demonstrating comprehensive homeostatic and developmental defects in Rptor cKO NK cells. The data consistently show impaired proliferation, migration, and maturation at a specific developmental stage (CD27 SP to DP), with appropriate controls and statistical significance indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "mTORC2 deletion (Rictor cKO) results in distinct developmental defects compared to mTORC1 deletion, with drastically reduced NK cell percentages in periphery (except inguinal lymph nodes), decreased steady-state proliferation, impaired migration, and blocked terminal maturation from DP to CD11b SP stage, without affecting viability or BM NK cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C66 demonstrate that mTORC2 regulates NK cell development at a different stage than mTORC1, supported by western blot verification, flow cytometry across multiple organs, Ki-67 proliferation assays, and CD45.2 trafficking studies. The data consistently show terminal maturation defects (DP to CD11b SP) distinct from Rptor cKO phenotype, with appropriate statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "mTORC1 and mTORC2 differentially regulate T-box transcription factors: Rptor deletion significantly reduces Eomes expression across all NK cell subsets in BM and spleen with moderate T-bet reduction, while Rictor deletion maintains normal Eomes but significantly reduces T-bet expression in splenic NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 provide intracellular flow cytometry data showing differential effects on Eomes and T-bet expression between Rptor and Rictor cKO mice, correlating with their distinct developmental phenotypes. The data are supported by comparisons to published knockout models and appropriate statistical analyses, establishing mechanistic links between mTOR complexes and transcription factor regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Rptor deletion significantly reduces CD122 expression across all NK cell subsets leading to impaired IL-15-mediated STAT5 phosphorylation, while Rictor deletion causes only moderate CD122 reduction with intact STAT5 signaling, suggesting differential regulation of IL-15 receptor signaling by mTORC1 and mTORC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 demonstrate differential effects on CD122 expression and downstream signaling between Rptor and Rictor cKO NK cells using flow cytometry and phospho-flow analyses. The data show that mTORC1 loss severely impairs IL-15 receptor expression and signaling, while mTORC2 loss has minimal effects, supported by appropriate controls (CD132 expression unchanged) and statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "During normal NK cell development, the transition from DP to CD11b SP stage is accompanied by reduced mTORC1 activity (decreased rpS6 phosphorylation and cell size), reduced Eomes and CD122 expression, suggesting a regulatory loop among mTORC1\u2192Eomes\u2192CD122\u2192mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C88 present correlative data from WT NK cells showing coordinated changes in mTORC1 activity, Eomes, and CD122 during maturation. While the observations are supported by flow cytometry data and citations to prior work (C82), the proposed regulatory loop (C88) is speculative and lacks direct mechanistic validation. The inference is reasonable but requires additional experiments to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RNAseq analysis reveals more profound transcriptomic alterations in Rptor cKO (2963 DE genes) compared to Rictor cKO (829 DE genes) NK cells, with unexpected upregulation of translation machinery genes (eIFs, eEFs, ribosomal proteins) in Rptor cKO cells, suggesting compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 present comprehensive RNAseq data with appropriate statistical thresholds (FDR<0.05) and pathway analyses (IPA). The unexpected finding of increased translation machinery gene expression despite mTORC1 loss is well-documented with specific gene lists and Z-scores. The interpretation of compensatory pathways (C98) is a reasonable inference from the data, though the mechanism remains to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Rptor cKO NK cells show impaired oxidative phosphorylation and integrin signaling pathways, with >10-fold induction of Ppargc1a, a marker of mitochondrial stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by IPA analyses of RNAseq data and specific gene expression changes. The Ppargc1a induction is well-documented and appropriately interpreted in the context of mitochondrial stress based on established knowledge (C101). These findings represent novel connections between mTORC1 and these pathways in lymphocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Rictor cKO NK cells show impaired PTEN signaling with increased expression of growth factor receptors and PI3K components, suggesting a potential positive regulation of PTEN by mTORC2 to balance PI(3,4,5)P3-mediated mTORC2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is supported by IPA analyses showing PTEN pathway impairment with specific gene expression changes. However, C104's interpretation of a balanced activation loop is speculative, based on inference from RNAseq data and a single citation. The proposed regulatory mechanism requires direct experimental validation and may represent correlation rather than causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "RNAseq analysis shows that transcription factors governing early NK cell development (Nfil3, Id2, Eomes) are reduced in Rptor but not Rictor cKO NK cells, while T-bet and Zeb2 promoting terminal maturation are reduced in Rictor cKO mice, correlating with their distinct developmental phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 present RNAseq data showing differential transcription factor expression patterns that correlate with the observed developmental defects. The data are presented in Table 1 and Figure 5-supplement 1C with appropriate statistical analyses. The correlation between transcription factor expression and developmental stage is well-supported and consistent with the phenotypic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Among reduced transcription factors in Rptor cKO NK cells (Nfil3, Id2, Eomes), Eomes deficiency is most likely responsible for developmental defects, as evidenced by enrichment of Eomes target genes and lack of E-protein target gene induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 use RNAseq data and pathway analyses to distinguish between potential mechanisms. The exclusion of Nfil3 (C108) and Id2 (C109-C110) based on prior work and lack of E-protein target gene induction, combined with enrichment of Eomes target genes (C111), provides strong inferential evidence. However, this remains correlative and would benefit from rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Both Rptor and Rictor deficiency reduce S1pr5 transcripts (implying migration defects), while Rictor cKO specifically shows increased Socs2 (potentially contributing to impaired proliferation) and reduced Ifng and Gzmb transcripts, whereas Rptor cKO shows increased Gzmb mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 present specific gene expression changes from RNAseq data with appropriate references to volcano plots (Figures 5B and 5C). The interpretations linking S1pr5 to migration (C114) and Socs2 to proliferation (C115) are reasonable inferences supported by citations to prior work, though they remain correlative. The differential effects on effector function genes are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Rictor deletion results in hyperactive FoxO1 due to impaired mTORC2-AktS473-FoxO1 signaling, as evidenced by reduced AktS473 and FoxO1T24 phosphorylation, enrichment of FoxO1 target genes, and elevated expression of FoxO1-activated genes (Bcl2, Klf2, Il7r, Ccr7), which potentially suppresses T-bet expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C133 provide comprehensive evidence for the mTORC2-AktS473-FoxO1-T-bet axis using phospho-flow (C125-C126), IPA analyses (C128), Fisher's exact test (C129), RT-qPCR (C130-C131), and flow cytometry (C132). The data converge to support hyperactive FoxO1 in Rictor cKO NK cells. The mechanistic link to T-bet suppression (C133) is well-supported by prior knowledge (C121-C124) and the current data, though direct binding studies would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "mTORC2 disruption does not affect IL-15-mediated mTORC1 activation, as rpS6 phosphorylation is moderately increased in Rictor cKO NK cells, while mTORC1 disruption causes moderate reduction in mTORC2 activity (AktS473 phosphorylation) potentially due to reduced CD122 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 use phospho-flow analyses to demonstrate the independence of mTORC1 activation from mTORC2 in NK cells. The data show abolished rpS6 phosphorylation in Rptor cKO (C134), moderately increased in Rictor cKO (C135), and abolished AktS473 in Rictor cKO (C139). The interpretations regarding PTEN signaling (C136) and CD122 expression (C138) are reasonable inferences, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Both Rptor and Rictor cKO mice show defective NK cell-mediated anti-tumor responses, with more severe B16F10 lung metastases and impaired clearance of \u03b22-microglobulin-deficient target cells compared to WT controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 present in vivo functional data using B16F10 tumor challenge and rejection assays. The data demonstrate physiological consequences of mTOR complex deficiencies in NK cells. However, C142 is somewhat speculative in attributing the defect solely to reduced NK cell numbers and terminal maturation, as other factors (effector function defects) may contribute. The overall conclusion (C144) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Rptor-deficient NK cells show significantly reduced degranulation and almost abolished IFN-\u03b3 production when stimulated by RMA/s cells or PMA/Ionomycin, but normal IL-12/IL-18-mediated IFN-\u03b3 production, while Rictor cKO NK cells maintain intact effector functions regardless of stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 present ex vivo functional assays using Poly(I:C)-activated splenocytes with multiple stimulation conditions. The data clearly demonstrate differential requirements for mTORC1 versus mTORC2 in NK cell effector functions, with appropriate controls and statistical analyses. The finding that mTORC1 is not required for IL-12/IL-18-mediated IFN-\u03b3 (C147) is consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "mTORC1, but not mTORC2, is critical for NK cell effector functions: Rptor-deficient NK cells expand poorly in IL-2 culture, while Rictor-deficient NK cells expand normally; neither Rapamycin nor Rictor deficiency affects cytotoxicity in 51Cr-release assays, indicating both mTOR complexes are dispensable for conjugate formation and cytolytic vesicle delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C157 use in vitro culture experiments and 51Cr-release assays to distinguish between developmental/proliferative functions and direct cytotoxic mechanisms. The data show that mTORC1 is required for IL-2-mediated expansion and cytokine production but not direct killing. The interpretation that degranulation defects result from reduced granule storage (C154) is reasonable but somewhat speculative. The overall conclusion (C157) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The study establishes that independent disruption of mTORC1 or mTORC2 results in defective NK cell maturation at distinct developmental stages, with differential effects on Eomes and T-bet expression providing mechanistic explanation, and both deletions compromising NK cell-mediated antitumor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 summarize the main conclusions of the study, integrating phenotypic, mechanistic, and functional data. These conclusions are well-supported by the comprehensive experimental evidence presented throughout the manuscript. The statement about the impossibility of elucidating mechanisms with total mTOR deletion (C159) appropriately justifies the study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Following Ncr1 expression, mTORC1 is potentially activated through an alternative mechanism instead of the canonical PI3K-PDK1-Akt-TSC1/2 pathway, as Ncr1Cre-mediated deletion of Pdpk1 or Tsc1 did not affect NK cell development, and mTORC1 may also be critical at pre-Ncr1 stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C165 are based on comparisons with prior published work showing different phenotypes with upstream pathway component deletions. While the inference of alternative activation mechanisms (C164) is reasonable, it remains speculative without direct experimental evidence in the current study. The suggestion about pre-Ncr1 stages (C165) is also inferential. These claims identify important questions for future work but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Selective mTORC1 disruption leads to increased transcription of translation machinery components (eIFs, eEFs, ribosomal proteins), and reveals novel impairments in oxidative phosphorylation and integrin signaling not previously implicated with mTORC1 in lymphocytes, with Eomes deficiency most likely responsible for maturation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 summarize key mechanistic findings from RNAseq analyses. The data supporting increased translation machinery gene expression (C166) and impaired oxidative phosphorylation/integrin signaling (C167) are well-documented. The novelty claim (C168) is appropriate. The conclusion about Eomes responsibility (C169) is a reasonable inference from the gene enrichment analyses, though it remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "During NK cell development, IL-15 activates the mTORC2-AktS473-FoxO1 signaling cascade that relieves T-bet suppression by FoxO1, and this axis is indispensable for NK cell homeostasis and terminal maturation; impaired PTEN signaling in Rictor cKO may contribute to moderately increased mTORC1 activity through a balanced PI(3)K-PI(3,4,5)P3-mTORC2-PTEN loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 present a well-supported mechanistic model for mTORC2 function in NK cells, extending prior work in T cells to NK cell development. The data comprehensively support this pathway. However, C172-C173 regarding the PTEN regulatory loop are more speculative, based on correlative RNAseq data without direct mechanistic validation. The overall model is reasonable but would benefit from additional experiments to confirm the proposed regulatory loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C174",
+      "C175"
+    ],
+    "result": "Rictor-deficient NK cells maintain normal effector functions when primed or cultured, and the study implies that careful consideration should be taken when using mTOR inhibitors following hematopoietic stem cell transplantation due to potential compromise of NK cell development and repopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C174 is well-supported by functional assay data showing intact effector functions in Rictor cKO NK cells. Claim C175 is a reasonable translational implication based on the study findings, though it is somewhat speculative regarding clinical applications. The caution about mTOR inhibitors is appropriate given the demonstrated developmental defects, though the specific context of HSCT would require additional studies.",
+    "result_type": "MINOR"
+  }
+]

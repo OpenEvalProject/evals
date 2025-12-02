@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "RNA-seq analysis identified 3,757 differentially expressed genes between disturbed flow and unidirectional flow (FDR < 0.05). Pathway enrichment analysis revealed that cellular response to hypoxia and glycolytic metabolism were the most upregulated gene sets under disturbed flow, with these signatures persisting for up to 3 days. Unidirectional flow had no effect on these pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptomic analysis is well-powered with appropriate statistical thresholds (FDR < 0.05) and multiple pathway analysis tools (GSEA, DAVID, Metascape) converging on the same biological processes. The time-course data (C23) demonstrates temporal stability of the phenotype. The negative control (UF showing no effect) strengthens the specificity of the DF response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Ingenuity Pathway Analysis predicted HIF-1\u03b1 as a major transcriptional regulator of disturbed flow-induced changes. HIF-1\u03b1 protein expression increased under disturbed flow without changes in mRNA levels, suggesting post-transcriptional regulation. This increase was dynamic and reversible upon flow switching. RNA-seq of HIF-1\u03b1 knockdown cells identified 2,989 HIF-1\u03b1-regulated genes enriched in hypoxia and glycolysis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of computational prediction (IPA), protein validation (Western blot), and functional genomics (RNA-seq with HIF-1\u03b1 knockdown) provides strong convergent evidence. The reversibility experiment (C36) is particularly compelling for demonstrating dynamic regulation. The lack of mRNA change (C34) appropriately leads to the post-transcriptional mechanism inference (C35), consistent with known HIF-1\u03b1 regulation via protein stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C109"
+    ],
+    "result": "Disturbed flow increases ROS production through NOX4 induction, which is required for HIF-1\u03b1 stabilization. HAECs under disturbed flow showed elevated ROS (measured by CellRox), which was reduced by antioxidant treatment (EUK134) or NOX4 siRNA knockdown. NOX4 protein steadily accumulates over time under disturbed flow, while HIF-1\u03b1 reaches maximal induction at 4 hours. NOX4 knockdown at early timepoints reduces HIF-1\u03b1, demonstrating NOX4 is required for initial HIF-1\u03b1 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic pathway is well-established through multiple complementary approaches: ROS measurement, antioxidant rescue, and genetic knockdown. The temporal analysis (C45-C47) elegantly demonstrates that NOX4 is upstream of HIF-1\u03b1 by showing that early NOX4 knockdown (before NOX4 accumulation) still reduces HIF-1\u03b1. The specificity control (C41, EUK134 has no effect on UF) strengthens the conclusion. However, the mechanism by which ROS stabilizes HIF-1\u03b1 is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Disturbed flow increases glucose uptake and glycolytic flux in endothelial cells. Cells under disturbed flow showed increased glucose uptake by two independent methods (2-NBDG fluorescence and 2-DG6P uptake), increased basal glycolysis and glycolytic capacity, and a dramatic shift in ATP production from ~17% mitochondrial under unidirectional flow to <1% mitochondrial under disturbed flow. Static conditions showed an intermediate phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolic phenotyping is rigorous with multiple orthogonal measurements: two glucose uptake assays (C24, C25), Seahorse glycolysis stress test (C26), and ATP production assays (C28-C29). The magnitude of the metabolic shift is striking and biologically significant. The static control (C30) provides important context showing that disturbed flow actively drives glycolysis rather than simply representing absence of flow. Sample sizes appear adequate (n=4-10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Disturbed flow reduces mitochondrial respiratory capacity without affecting mitochondrial mass. Disturbed flow decreased basal respiration, maximal respiration, and spare respiratory capacity. HIF-1\u03b1 knockdown reversed these defects. Mitochondrial density (MitoTracker) and mitochondrially-encoded gene expression (ND-1, ND-5) were unchanged. Substrate utilization analysis showed glucose oxidation contributes 43% of OCR under unidirectional flow but 62% under disturbed flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial phenotyping is comprehensive, addressing both function (Seahorse) and mass (MitoTracker, mitochondrial gene expression). The demonstration that mitochondrial mass is unchanged (C60-C61) is critical for interpreting the functional defects as true impairment rather than loss of mitochondria. The substrate utilization experiments (C62-C63) provide mechanistic insight into the metabolic rewiring. HIF-1\u03b1 knockdown rescue (C58-C59) establishes causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "HIF-1\u03b1 is required for disturbed flow-induced upregulation of glycolytic enzymes, particularly SLC2A1 and HK2. RNA-seq identified 18 glycolytic enzymes upregulated by disturbed flow, with 13 reduced by HIF-1\u03b1 knockdown. SLC2A1 and HK2 were the most differentially expressed. HIF-1\u03b1 knockdown prevented their induction, while stabilized HIF-1\u03b1 overexpression increased their expression. HIF-1\u03b1 knockdown reduced glycolytic capacity in disturbed flow-treated cells. EPAS1 (HIF-2\u03b1) was not required for glycolytic enzyme induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence for HIF-1\u03b1 regulation of glycolytic enzymes is strong, combining transcriptomics, validation by qPCR and Western blot, loss-of-function (siRNA), gain-of-function (stabilized HIF-1\u03b1), and functional readout (Seahorse). The EPAS1 control experiments (C55-C57) are important for specificity, though the lack of statistical significance for EPAS1 knockdown effects (C56) could reflect insufficient power rather than true lack of effect. The functional consequence (C54) links gene expression changes to metabolic phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "HIF-1\u03b1 induces PDK1 expression under disturbed flow, which inhibits pyruvate dehydrogenase and reduces mitochondrial respiratory capacity. PDK1 was the only PDK isoform upregulated by disturbed flow. HIF-1\u03b1 knockdown attenuated PDK1 induction and partially restored PDH activity and mitochondrial respiration. PDK1 knockdown completely restored PDH activity and partially rescued mitochondrial respiration. These findings suggest HIF-1\u03b1 promotes PDK1 expression to limit glucose-derived pyruvate entry into the TCA cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic pathway from HIF-1\u03b1 to PDK1 to PDH to mitochondrial function is well-established through sequential loss-of-function experiments. The observation that HIF-1\u03b1 knockdown only partially restores PDH activity (C68) while PDK1 knockdown completely restores it (C69) is internally consistent and suggests additional HIF-1\u03b1-independent regulation of PDH. The partial rescue of mitochondrial function by PDK1 inhibition (C70-C71) indicates PDK1 is important but not the sole mechanism, which is appropriately acknowledged in the inference (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Disturbed flow-induced metabolic reprogramming drives endothelial inflammation through HIF-1\u03b1 and NF-\u03baB. Disturbed flow increased pro-inflammatory genes (VCAM-1, IL8, CCL2) and monocyte adhesion, which were reduced by HIF-1\u03b1, NOX4, SLC2A1, or PDK1 knockdown. HIF-1\u03b1 overexpression increased inflammatory genes. Disturbed flow increased NF-\u03baB phosphorylation, which was reduced by HIF-1\u03b1 knockdown. NF-\u03baB inhibition prevented HIF-1\u03b1-induced inflammation but did not affect HIF-1\u03b1 stabilization. Inhibiting mitochondrial respiration in unidirectional flow increased inflammatory genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The link between metabolism and inflammation is established through multiple lines of evidence: loss-of-function at multiple nodes (HIF-1\u03b1, NOX4, SLC2A1, PDK1), gain-of-function (HIF-1\u03b1 overexpression), functional readout (monocyte adhesion), and pharmacological manipulation (NF-\u03baB inhibition, mitochondrial inhibitors). The demonstration that NF-\u03baB is downstream of HIF-1\u03b1 (C85-C86) and that mitochondrial inhibition alone increases inflammation (C80) are particularly important for establishing causality. The KLF2 data (C87-C88) adds mechanistic depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "In vivo validation in porcine and murine aortas confirms that regions exposed to disturbed flow show increased NOX4, ROS, HIF-1\u03b1, and glycolytic enzymes. The inner curvature of the aortic arch (disturbed flow region) showed cobblestone endothelial morphology, elevated ROS, and significantly increased protein expression of NOX4, HIF-1\u03b1, SLC2A1, HK2, PDK1, and phospho-p65 compared to the descending thoracic aorta (unidirectional flow region). Similar patterns were observed in murine aortas by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation is critical for translational relevance and is well-executed using anatomically distinct regions with known flow patterns. The use of both porcine (Western blot) and murine (immunofluorescence) models strengthens generalizability. The endothelial purity verification (>95%) is important for data interpretation. However, the in vivo data is correlative rather than causal\u2014it shows association between disturbed flow regions and the molecular signature but doesn't prove the flow pattern causes these changes in vivo. The consistency with in vitro findings (C96) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C97",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study demonstrates that disturbed flow induces metabolic reprogramming characterized by increased glycolysis and reduced oxidative phosphorylation through NOX4-dependent ROS-mediated HIF-1\u03b1 stabilization. This metabolic switch, involving HIF-1\u03b1-dependent reduction in respiratory capacity and increased glycolysis, represents an important molecular signature of the athero-susceptible endothelium. Reversal of this metabolic reprogramming reduces endothelial activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions synthesizing the individual findings. They are well-supported by the comprehensive experimental evidence across multiple results. The mechanistic pathway (NOX4\u2192ROS\u2192HIF-1\u03b1\u2192metabolic reprogramming\u2192inflammation) is established through sequential experiments with appropriate controls. The reversibility (C18) and rescue experiments throughout strengthen causal claims. The characterization as a 'molecular signature' (C99) is justified by the in vivo validation and the magnitude/consistency of effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establishing that atherosclerosis is the leading cause of mortality in the US, that altered blood flow characteristics play a critical role in atherosclerosis, and that disturbed flow in branched/curved arterial regions promotes endothelial activation before visible disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations to authoritative sources (National Heart, Lung, and Blood Institute) and peer-reviewed literature. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the claims are consistent with current understanding of atherosclerosis pathophysiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims on prior knowledge of endothelial cell responses to flow conditions, including that static culture increases inflammation and glycolysis, unidirectional flow reduces glycolysis in a KLF2-dependent manner and increases mitochondrial biogenesis, but effects on mitochondrial function are controversial, and the effect of physiological disturbed flow on metabolism is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims appropriately cite prior literature and accurately represent the state of knowledge, including acknowledging controversies (C11) and gaps (C12). The citations are to peer-reviewed publications. These claims establish the rationale for the current study by identifying what is known and what remains unclear. The acknowledgment of controversy regarding UF effects on mitochondrial function (C11) is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background claims on HIF-1\u03b1 biology, including its role in angiogenesis and glycolysis, its universal expression in metazoans versus HIF-2\u03b1's restricted expression, and its regulation of PDK1 to control pyruvate entry into the TCA cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about HIF-1\u03b1 biology supported by appropriate citations. They provide necessary background for interpreting the study's findings. The distinction between HIF-1\u03b1 and HIF-2\u03b1 expression patterns (C103-C104) and functional roles (C105) is important context for the specificity experiments in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The authors infer that HIF-1\u03b1 affects mitochondrial oxidative phosphorylation through additional pathways beyond PDK1, and speculate that increased LDHA may reduce pyruvate availability for the TCA cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference that additional pathways exist beyond PDK1 (C107) is well-justified by the observation that PDK1 inhibition only partially restores mitochondrial function while HIF-1\u03b1 knockdown has greater effects. The LDHA speculation (C108) is appropriately presented as a prediction rather than demonstrated fact, and is based on observed LDHA upregulation in the RNA-seq data. These represent reasonable interpretations that acknowledge limitations in the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Discussion of alternative mechanisms for HIF-1\u03b1 stabilization, including prior reports of oscillatory flow increasing NOX4/ROS in bovine endothelial cells, ROS stabilizing HIF-1\u03b1 in normoxia, stretch-induced HIF-1\u03b1 stabilization via succinate dehydrogenase inhibition, and HIF-1\u03b1 mRNA increases after stretch in other vascular beds. The authors argue that flow-induced stretch is unlikely to explain their findings since unidirectional flow has higher shear stress than disturbed flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This discussion appropriately contextualizes the findings within prior literature and considers alternative mechanisms. The citations are appropriate. The reasoning about stretch being unlikely (C114) is logical based on the relative shear stress magnitudes, though this could be tested more directly. The acknowledgment of other mechanisms (C113, C115) shows appropriate scientific caution and awareness of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Summary and contextualization of the inflammation findings, noting that metabolic reprogramming contributes to inflammatory gene expression, that this was demonstrated through loss- and gain-of-function experiments, that similar patterns are seen in vivo in swine aortic arch, and that these findings are consistent with prior reports of HIF-1\u03b1 in carotid plaques and NF-\u03baB activation in aortic arch endothelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately summarize the inflammation findings and place them in context of prior literature. The citations to prior work on HIF-1\u03b1 in plaques (C120) and NF-\u03baB in aortic arch (C121) strengthen the translational relevance. The summary accurately reflects the experimental evidence presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Discussion of potential mechanisms linking metabolism to inflammation, including speculation about lactate-induced NF-\u03baB activation, demonstration that HIF-1\u03b1 inhibition rescues anti-inflammatory molecules (KLF2, KLF4, PPAP2B), citation of prior work showing KLF2 is required for unidirectional flow-induced reduction in glycolytic genes, and speculation that differential flow waveforms may amplify metabolic phenotypes through transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The speculation about lactate (C122) is appropriately presented as a possibility with supporting citations to work in immune cells, though it remains untested in this system. The RNA-seq finding about anti-inflammatory molecules (C123) adds mechanistic depth. The citations to prior work on KLF2 (C124-C125) appropriately acknowledge related findings. The speculation about flow waveforms amplifying phenotypes (C126) is a reasonable synthesis but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Translational implications and conclusions, including speculation that spatial inhibition of glycolytic metabolism and HIF-1\u03b1 signaling may be suitable for arterial wall-based therapies, citation of prior work showing endothelial HIF-1\u03b1 deletion reduces atherosclerosis in mice, and conclusion that metabolic plasticity of endothelium is dynamically and reversibly regulated by hemodynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The therapeutic speculation (C127) is appropriately cautious ('may be suitable') and is based on the study's findings. The citation to prior work on HIF-1\u03b1 deletion reducing atherosclerosis (C128) provides important validation from a different experimental system. The final conclusion (C129) appropriately emphasizes the dynamic and reversible nature of the regulation, which was demonstrated experimentally (C36). These represent reasonable extrapolations from the data.",
+    "result_type": "MINOR"
+  }
+]

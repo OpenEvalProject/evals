@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C30",
+      "C71",
+      "C72"
+    ],
+    "result": "The mutation rate in Atlantic herring is estimated to be 2.0 \u00d7 10\u207b\u2079 per site per generation, which is the lowest reported for any vertebrate species to date. This estimate is based on whole-genome sequencing of two pedigrees (four parents and 12 offspring) and detection of 17 de novo mutations across 431 Mb of callable genome sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C30, C71, and C72 collectively support this result through rigorous experimental design, stringent filtering, Sanger validation of all candidates (C39, C41), and appropriate statistical analysis. The mutation rate calculation is transparent, includes confidence intervals, and accounts for false negative rates (C72, C108). The comparison with other vertebrates in Table 3 substantiates the claim of lowest vertebrate mutation rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C75"
+    ],
+    "result": "A high degree of parental mosaicism was observed in Atlantic herring, with approximately half (8/17) of de novo mutations present in multiple offspring from the same family. The maximum transmission rate was 18%, significantly lower than the 50% expected for fixed mutations (p=1.4\u00d710\u207b\u00b3), indicating that many mutations occurred during early germ cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 provide strong empirical evidence for parental mosaicism through transmission frequency analysis in larger offspring cohorts (n=46-50). The statistical significance (C44, C47) and consistency with recent literature on early germline mutations (C75, C76) support this finding. The inference that mutations occurred during early germ cell divisions (C45, C46) is well-justified by the data and simulation studies cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Unlike mammals, Atlantic herring shows no significant paternal bias in the origin of de novo mutations, with 8 paternal and 7 maternal mutations among the 15 mutations with determined parental origin. This differs significantly from the 3.9:1 paternal bias observed in humans (p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide statistical evidence for the lack of paternal bias, with appropriate comparison to mammalian data. The biological explanation (C55, C56) regarding seasonal sperm production and high parental mosaicism is reasonable. However, the small sample size (n=15) limits the strength of this conclusion, though the statistical test against human ratios is appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C77",
+      "C29",
+      "C101",
+      "C102"
+    ],
+    "result": "The low mutation rate in Atlantic herring (six-fold lower than humans) partially explains the paradox of moderate nucleotide diversity (\u03c0 = 0.3%) despite enormous census population size (~10\u00b9\u00b2). Multiple factors including demographic history, selection, and the low mutation rate contribute to this disparity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C77, and C102 synthesize the main findings to address the central biological question. The explanation is well-supported by the mutation rate data (C4, C28), population genetic calculations (C82), and consideration of demographic factors (C84, C88, C89). The authors appropriately acknowledge that the low mutation rate is only a partial explanation (C7), with demographic history and selection also playing important roles (C90, C91, C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Using the relationship \u03c0 = 4Ne\u03bc, the long-term effective population size (Ne) is estimated at 4 \u00d7 10\u2075, much lower than the census size of 10\u00b9\u00b2. Population genetic theory indicates it would take ~240 million years to reach genetic equilibrium, suggesting herring populations never reach equilibrium due to demographic fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide a coherent population genetic analysis. The Ne calculation (C82) appropriately uses established theory and empirical data. The time-to-equilibrium calculation (C88) is mathematically sound given the generation time (C86) and current Ne estimate (C87). The conclusion that herring never reaches equilibrium (C89) is well-justified. However, the distinction between long-term and current Ne (C87) involves some speculation, though the reasoning is transparent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C103",
+      "C104"
+    ],
+    "result": "The experimental design involved two pedigrees (Atlantic and Baltic herring), each with two parents and six offspring sequenced to 45-71\u00d7 coverage. Stringent bioinformatic filtering identified 17 candidate de novo mutations (9 in Atlantic, 8 in Baltic pedigrees), all validated by Sanger sequencing with no false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 describe the experimental design and validation procedures. The sequencing depth (C33) is appropriate for de novo mutation detection and consistent with prior studies. The dual variant caller approach (Figure 1) and stringent filtering reduce false positives. Complete Sanger validation (C39) with 100% confirmation rate (C41) and 1:1 allele ratios (C40) provide strong evidence for the authenticity of detected mutations. The experimental design is rigorous and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The false negative rate was estimated using two independent methods: an empirical approach yielding 5.9% and a simulation approach yielding 2.7% false negatives (with 9% failed calls). The two methods are in agreement, and the choice between them has minimal impact (~5% difference) on the final mutation rate estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 demonstrate careful consideration of detection sensitivity. The empirical method (C108) uses real heterozygous sites as ground truth, while the simulation (C109) provides an independent validation. The agreement between methods (C110) and small impact on final estimates (C111) indicate robustness. The authors appropriately chose the more conservative empirical estimate for final calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Among the 17 de novo mutations, the transition/transversion ratio was 1.4, within the range observed in other species. Only 1/17 (6%) mutations were CpG>TpG transitions, lower than but not significantly different from the 19% frequency in humans (p=0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 characterize the mutational spectrum. The Ts/Tv ratio (C57) is appropriately compared to other species (C59, C60) and falls within expected ranges. The CpG>TpG analysis (C63, C64) is statistically sound, though the small sample size limits power to detect differences from humans. The comparison with mammalian patterns (C61) and acknowledgment of CpG methylation in teleosts (C62) provide appropriate biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The 17 de novo mutations were distributed across genomic regions (6 intergenic, 9 intronic, 1 3'UTR, 1 exonic) in a pattern that does not deviate significantly from random expectation given the callable genome composition (p=0.65, Fisher's exact test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 provide a straightforward analysis of mutation distribution. The statistical test (C66) appropriately accounts for the composition of the callable genome after filtering. The lack of significant deviation from random expectation is consistent with neutral mutation processes, though the small sample size limits the power to detect subtle regional variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "After filtering for mappability and repetitive sequences, 431 Mb (~51% of the genome) was callable for mutation detection. Analysis of excluded vs. included regions showed nearly identical nucleotide diversity (\u03c0 = 0.00318 vs. 0.00304), suggesting no major difference in mutation rates between these genomic partitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 clearly document the callable genome fraction. The authors appropriately acknowledge that repetitive regions are excluded (C78) and may have higher mutation rates (C79), but provide empirical evidence (C80, C81) that the excluded and included regions have similar diversity levels. This analysis addresses a potential concern about systematic bias in the mutation rate estimate, though it relies on population-level diversity as a proxy for mutation rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The minimum generation time for Atlantic herring under low exploitation was estimated at approximately 6 years based on historical stock data from 1947-1965. This yields a mutation rate per year of 3.3 \u00d7 10\u207b\u00b9\u2070. The generation time estimate is based on age-specific abundance, maturity, and weight data from multiple herring stocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C119 provide a detailed analysis of generation time estimation. The methodology (C112, C113) is appropriate, using established population biology principles. The use of historical data from low-exploitation periods (C114-C116) is well-justified to estimate natural generation times. The acknowledgment of data limitations (C117) and variation among stocks (C118) demonstrates appropriate caution. The 6-year estimate (C119) is explicitly stated as a minimum, which is conservative and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Parental origin was determined for 15 of 17 de novo mutations using linked segregating sites within the same sequencing read or mate-pair read (14 mutations) or by PCR cloning and sequencing (1 mutation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 describe straightforward and appropriate methods for determining parental origin. The use of linked polymorphisms on the same read (C49) is a standard and reliable approach. The PCR cloning method (C50) for one additional mutation provides independent validation. The methods are clearly described and appropriate for the task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The low mutation rate in Atlantic herring is consistent with the drift-barrier hypothesis, which predicts effective purging of deleterious mutations affecting mutation rate in species with large Ne, high fecundity, and random mating. However, population size fluctuations and other factors (body temperature, metabolic rate) may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C94 discuss the drift-barrier hypothesis as a potential explanation for the low mutation rate. While herring meets the predicted conditions (C93), the authors appropriately note that population fluctuations (C94) complicate interpretation. The comparison with cichlids (C96-C98) and discussion of temperature effects (C95) provide additional context, but these remain speculative. The support for the drift-barrier hypothesis is suggestive but not conclusive, as acknowledged by the authors. Additional comparative data from other fish species would strengthen this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Atlantic herring exhibits moderate nucleotide diversity (\u03c0 = 0.3%) despite a census population size of ~10\u00b9\u00b2, which is intermediate compared to terrestrial mammals (0.1% in humans, 0.9% in rabbits). Low genetic differentiation between populations suggests high current effective population size and low genetic drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C9-C13 establish the population genetic context for the study. The nucleotide diversity estimate (C2) is from prior work (Martinez Barrio et al., 2016) and is appropriately cited. The comparisons with mammals (C10-C12) are well-documented in the literature. The inference about current Ne and genetic drift (C13) is reasonable based on low population structure, though it relies on cited work rather than new data in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "This study represents the first genome-wide mutation rate estimate in a teleost fish using the parent-offspring approach. Previous mutation rate studies have been biased toward unicellular organisms, insects, and mammals, with limited data from other vertebrate groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 provide appropriate background on mutation rate estimation methods and the novelty of this study. The description of historical methods (C14, C15) and modern approaches (C16-C21) is accurate and well-cited. The claim of being the first teleost study (C23) is supported by the literature review (C22) showing the taxonomic bias in existing data. This establishes the significance and novelty of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Atlantic herring was selected as a study system due to its high abundance, external reproduction with large numbers of gametes, and availability of a high-quality genome assembly. These properties make it one of the best approximations of a randomly mating, infinite-size population among vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 justify the choice of study organism. The biological characteristics (C25) are well-established, and the availability of a genome assembly (C27) is documented. The inference that herring approximates an ideal population (C26) is reasonable given its characteristics, though \"infinite size\" is obviously an idealization. The rationale for species selection is sound and well-articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "According to population genetic theory, nucleotide diversity should equal 4Ne\u03bc at mutation-drift equilibrium. However, in practice, population sizes are only weakly correlated with nucleotide diversity across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C100 accurately state established population genetic theory (C99) and empirical observations (C100). The theory is fundamental and well-established (though the claim cites no specific source for C99, it is textbook knowledge). The weak correlation in practice (C100) is appropriately cited to Leffler et al., 2012. These claims provide essential theoretical context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Background selection and selective sweeps reduce nucleotide diversity at linked neutral sites. Highly efficient purifying selection also decreases the fraction of the genome that appears selectively neutral, contributing to reduced nucleotide diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 accurately describe well-established population genetic processes. Both claims are appropriately cited (Gillespie 2000, 2001 for C90; Ohta 1973 for C91). These processes are relevant for explaining the discrepancy between census size and nucleotide diversity in herring. The claims represent established theory rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C106",
+      "C107"
+    ],
+    "result": "Baltic herring is classified as a subspecies of Atlantic herring. Sequences were aligned to the recently published Atlantic herring genome, and all sequence data have been deposited in the SRA archive (PRJNA356817).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C106, and C107 provide methodological details and data availability information. The taxonomic classification (C32) is appropriately cited to Linnaeus (1761). The use of the published genome (C106) is properly cited. Data deposition (C107) follows best practices for reproducibility and data sharing. These are straightforward factual claims that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C67",
+      "C105"
+    ],
+    "result": "Atlantic herring is one of the most abundant vertebrates on earth. The study design with 12 progeny was expected to yield approximately 100 detectable mutations based on prior vertebrate mutation rates, though only 19 mutation events (17 unique mutations, 2 detected twice) were ultimately observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is established knowledge about herring abundance. Claims C67 and C105 relate to study design and outcomes. The expectation of ~100 mutations (C105) was based on prior vertebrate rates, but the actual observation of 19 events (C67) reflects the unexpectedly low mutation rate in herring\u2014which is the key finding of the study. The discrepancy between expectation and observation is not a flaw but rather highlights the novelty of the result.",
+    "result_type": "MINOR"
+  }
+]

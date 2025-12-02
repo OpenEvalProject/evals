@@ -1,0 +1,1907 @@
+{
+  "submission": {
+    "id": "1c837426-5d8c-41c3-8647-d438db40c115",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:40:34.350555Z",
+    "updated_at": "2025-12-02T01:40:34.350555Z"
+  },
+  "content": [
+    {
+      "id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "submission_id": "1c837426-5d8c-41c3-8647-d438db40c115",
+      "content_type": "manuscript",
+      "content_text": "# Pre-post synaptic alignment through neuroligin-1 tunes synaptic transmission efficiency\n\n## Authors\n\n- Kalina T Haas<sup>1</sup>\n- Benjamin Compans<sup>1</sup> ([ORCID: 0000-0001-7823-1499](https://orcid.org/0000-0001-7823-1499))\n- Mathieu Letellier<sup>1</sup>\n- Thomas M Bartol<sup>3</sup>\n- Dolors Grillo-Bosch<sup>1</sup> ([ORCID: 0000-0002-8695-5718](https://orcid.org/0000-0002-8695-5718))\n- Terrence J Sejnowski<sup>3</sup> ([ORCID: 0000-0002-0622-7391](https://orcid.org/0000-0002-0622-7391))\n- Matthieu Sainlos<sup>1</sup> ([ORCID: 0000-0001-5465-5641](https://orcid.org/0000-0001-5465-5641))\n- Daniel Choquet<sup>1</sup> ([ORCID: 0000-0003-4726-9763](https://orcid.org/0000-0003-4726-9763))\n- Olivier Thoumine<sup>1</sup>\n- Eric Hosy<sup>1</sup> ([ORCID: 0000-0002-2479-5915](https://orcid.org/0000-0002-2479-5915)) \u2020\n\n### Affiliations\n\n1. Interdisciplinary Institute for Neuroscience University of Bordeaux, UMR 5297, F-33000 Bordeaux France\n2. Interdisciplinary Institute for Neuroscience CNRS, UMR 5297, F-33000 Bordeaux France\n3. Howard Hughes Medical Institute Salk Institute for Biological Studies La Jolla United States\n4. Bordeaux Imaging Center UMS 3420 CNRS, Universit\u00e9 de Bordeaux, US4 INSERM, F-33000 Bordeaux France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe nanoscale organization of neurotransmitter receptors regarding pre-synaptic release sites is a fundamental determinant of the synaptic transmission amplitude and reliability. How modifications in the pre- and post-synaptic machinery alignments affects synaptic currents, has only been addressed with computer modelling. Using single molecule super-resolution microscopy, we found a strong spatial correlation between AMPA receptor (AMPAR) nanodomains and the post-synaptic adhesion protein neuroligin-1 (NLG1). Expression of a truncated form of NLG1 disrupted this correlation without affecting the intrinsic AMPAR organization, shifting the pre-synaptic release machinery away from AMPAR nanodomains. Electrophysiology in dissociated and organotypic hippocampal rodent cultures shows these treatments significantly decrease AMPAR-mediated miniature and EPSC amplitudes. Computer modelling predicts that ~100 nm lateral shift between AMPAR nanoclusters and glutamate release sites induces a significant reduction in AMPAR-mediated currents. Thus, our results suggest the synapses necessity to release glutamate precisely in front of AMPAR nanodomains, to maintain a high synaptic responses efficiency.\n\n## Introduction\n\nAMPA-type glutamate receptors (AMPARs) mediate the vast majority of fast excitatory synaptic transmission in the mammalian brain. AMPARs are stabilized at the post-synaptic density (PSD) by interactions with PDZ domain containing proteins such as PSD-95. AMPARs were initially thought to be homogeneously distributed throughout the PSD, but recent work based on super-resolution optical imaging (SRI) and electron microscopy has demonstrated that AMPARs are concentrated in small nanodomains around 80 nm in size, and containing 20 receptors on average (Fukata et al., 2013; MacGillavry et al., 2013; Masugi-Tokita et al., 2007; Nair et al., 2013). This specific mode of organization might be critical for synaptic transmission, depending on the relative positioning of pre-synaptic release sites with respect to AMPAR nanodomains. Indeed, previous studies showed that the glutamate content of a single presynaptic vesicle is not sufficient to activate the entire pool of AMPARs inside the PSD (Liu et al., 1999; Raghavachari and Lisman, 2004), suggesting that synaptic currents might be stronger if AMPARs were concentrated in front of pre-synaptic release sites rather than dispersed throughout the PSD. Moreover, mathematical models predict that when AMPARs are clustered in front of glutamate release sites, both the amplitude and the reliability of synaptic responses are improved (Franks et al., 2002, Franks et al., 2003; Rusakov, 2001; Rusakov and Kullmann, 1998; Tarusawa et al., 2009). In contrast, when AMPAR clusters are not aligned with release sites, synaptic currents are predicted to be weaker and highly variable (Tarusawa et al., 2009). Therefore, it is critical to understand the spatial relationship between glutamate release sites and AMPAR domains at the nanoscale level.\n\nDual-color SRI offers a new way to analyze the alignment of pre- and post-synaptic elements underlying the intrinsic function of the synapse. Several studies have examined the nanoscale organization of various pre-synaptic proteins, including calcium channels, syntaxin, and neurexin (Chamma et al., 2016; Ribrault et al., 2011; Schneider et al., 2015), but these proteins did not display a clustered organization resembling that of AMPARs (Hosy et al., 2014; Nair et al., 2013). A recent study indicated however that the pre-synaptic active zone protein RIM is concentrated in small domains (Tang et al., 2016). Furthermore, this study showed that active glutamate release sites are co-localized with RIM and aligned with AMPAR nanodomains. This trans-synaptic \u2018nanocolumn\u2019 organization is regulated by long-term synaptic plasticity, highlighting its importance for the control of synaptic transmission. However, the molecular mechanisms underlying this alignment are still unknown, and the sensitivity of synaptic currents to mis-alignment has not been experimentally investigated.\n\nOne way to test the importance of pre- to post-synaptic alignment would be to destabilize the trans-synaptic organization and study its effect on synaptic transmission. It has been abundantly described that the adhesion complex neurexin-neuroligin forms a trans-synaptic bridge (S\u00fcdhof, 2008). Pre-synaptic neurexin is implicated in active zone formation (Missler et al., 2003), while post-synaptic neuroligin-1 (NLG1) recruits PSD-95, NMDA receptors and AMPARs to partly structure the PSD (Budreck et al., 2013; Graf et al., 2004; Heine et al., 2008; Mondin et al., 2011). In particular, a C-terminally truncated NLG1 mutant, unable to bind PDZ domain containing PSD proteins (NLG1-\u0394Cter), was previously shown to prevent PSD-95 recruitment at newly formed synapses, and reduce AMPAR-mediated synaptic transmission (Chih et al., 2005; Mondin et al., 2011; Nam and Chen, 2005). Here, using dual-color SRI, we report that expression of the NLG1-\u0394Cter mutant or incubation with cell-permeant NLG1 C-terminal peptides suppress the co-localization of NLG1 and AMPAR nanodomains without changing the overall AMPAR nanoscale organization. In parallel, those treatments induce a physical shift between pre-synaptic RIM clusters and post-synaptic AMPAR nanodomains, associated with a significant decrease in AMPAR-mediated miniature and evoked EPSC amplitudes. We thus propose that neurexin-neuroligin mediated pre-post synaptic alignment tightly regulates synaptic efficacy.\n\n## Results\n\n### Expression of NLG1-\u0394Cter does not affect AMPAR nanoscale organization\n\nTo understand the role of NLG1 adhesion in AMPAR nano-organization, we performed direct STochastic Optical Reconstruction Microscopy (d-STORM; Heilemann et al., 2008) experiments on primary hippocampal neurons expressing either full length NLG1 (NLG1), or a NLG1 mutant with a truncation in the last 72 amino acids of the C-terminal domain (NLG1-\u0394Cter), both constructs carrying an N-terminal HA tag. NLG1-\u0394Cter has an intact extracellular domain allowing normal contacts with pre-synaptic partners such as neurexins (Chih et al., 2005; Mondin et al., 2011), but is unable to interact with cytoplasmic proteins within the PSD, and thus should behave as a dominant-negative mutant that uncouples trans-synaptic adhesion from the PSD. Given that AMPAR nanodomains are tightly associated with PSD-95 sites (MacGillavry et al., 2013; Nair et al., 2013), our rationale was that by disconnecting NLG1 from PSD-95, we would perturb the nanoscale positioning of AMPARs.\n\nAs previously described (Mondin et al., 2011; Nam and Chen, 2005), expression of both truncated and full length NLG1 (Figure 1A and B) increases spine density, revealing the synaptogenic role of NLG1 (n\u00a0=\u00a010; 12; 9 respectively; ANOVA p=0.0004). We then examined the effect of NLG1-\u0394Cter expression on AMPAR nano-organization. Surface AMPARs were detected by labeling live neurons with a primary antibody specific for the N-terminal domain of the AMPAR GluA2 subunit, followed by fixation and incubation with a secondary antibody conjugated to Alexa 647. Nanodomains are determined as clusters of AMPARs present inside the synapse and containing at least 5 receptors, based on single particle emission properties (see Nair et al., 2013). In control neurons expressing GFP alone, we typically detected between 1 to 2 AMPAR nanodomains per synapse, with an average size of 90\u00a0\u00b1\u00a03 nm (Figure 1D and E), as reported previously (Nair et al., 2013). NLG1 overexpression increased the surface density of AMPAR nanodomains (Figure 1C), in agreement with the previous finding that NLG1 potentiates the formation of excitatory synapses (Chih et al., 2005; Ko et al., 2009; Levinson et al., 2005; Mondin et al., 2011). Furthermore, NLG1 overexpression led to a re-organization of AMPAR nanodomains by increasing both their size and AMPAR content (Figure 1D and E). Surprisingly, expression of NLG1-\u0394Cter for 3 days did not affect AMPAR nano-organization compared to the GFP control (Figure 1C\u2013E, ANOVA post-test: p=0.72; 0.82 and 0.33 for figure C; D and E respectively). To validate this observation, we analyzed d-STORM images of AMPARs acquired on neurons expressing either GFP alone or GFP\u00a0+\u00a0NLG1-\u0394Cter, using a cluster quantification method based on Tessellation (Levet et al., 2015) (Figure 1\u2014figure supplement 1A). Through this analysis, we obtained an estimate of the number of endogenous GluA2-containing AMPARs per spine (Figure 1\u2014figure supplement 1B), per nanodomain (Figure 1\u2014figure supplement 1C) and the size of the nanodomains (Figure 1\u2014figure supplement 1D). This analysis confirmed that NLG1-\u0394Cter expression does not affect the total amount of AMPARs per synapse, nor their organization in nanodomains.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Example of neurons transfected either with GFP, NLG1\u00a0+\u00a0GFP or NLG1-\u0394Cter\u00a0+\u00a0GFP (from the left to the right), and two examples of AMPAR organization visualized with d-STORM technique. Intensity is color coded, scale go from 1 (purple) to 100 (white) detection per pixel. Average of spine density (B), AMPAR nanodomain density (C), nanodomains intensity expressed as number of receptors per nanodomain (D) and nanodomain length (E), on neuron expressing GFP, GFP\u00a0+NLG1 and NLG1-\u0394Cter\u00a0+\u00a0GFP (n\u00a0=\u00a010; 9; 12 cells respectively; and between 200 to 500 individual domains).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Example of endogenous GluA2 organization inside synapse obtained with d-STORM technique on GFP (left panels) and GFP\u00a0+\u00a0NLG1-\u0394Cter (right panels) expressing cells. (B) Cumulative distribution of the estimated number of endogenous AMPAR per synapse. The insert represents the cell to cell variability of the synaptic AMPAR content. (C) Cumulative distribution and cell to cell variability (insert) of the number of endogenous AMPAR per nanodomain. (D) Cumulative distribution and cell to cell variability of the nanodomain diameter. (B\u2013D) reveals no changes in synaptic AMPAR organization when NLG1-\u0394Cter is expressed (n\u00a0=\u00a012 and 13 cells, corresponding to 107 and 136 individual domains for control and NLG1-\u0394Cter respectively).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Example of endogenous GluA2 containing AMPAR mobility recorded with uPAINT technique on GFP (upper panel) and GFP\u00a0+\u00a0NLG1-\u0394Cter expressing cells. Each individual trajectory is color coded. (B) Average distribution of the logarithm of the diffusion coefficient and (C) mobile fraction reveal no modification of AMPAR mobility induced by the NLG1-\u0394Cter expression (n\u00a0=\u00a016 and 21 cells for control and NLG1-\u0394Cter respectively).\n\nNext, we assessed whether NLG1-\u0394Cter affected AMPAR surface diffusion, by measuring the lateral mobility of endogenous GluA2-containing AMPARs at the dendritic surface in live neurons using the universal Point Accumulation in Nanoscale Topography (u-PAINT) technique (Giannone et al., 2010; Nair et al., 2013) (Figure 1\u2014figure supplement 2). We previously showed that AMPARs exhibit two diffusion profiles: the immobile fraction represents mostly AMPARs trapped by PSD scaffolding proteins in nanodomains, whereas the mobile fraction represents individual freely moving AMPARs (Nair et al., 2013). This lateral mobility is dependent on AMPAR complex composition, phosphorylation status and desensitization properties (Compans et al., 2016; Constals et al., 2015; Hafner et al., 2015; Tomita et al., 2007). Both the distribution of diffusion coefficients and the mobile fraction (i.e. proportion of AMPARs with diffusion coefficients above 0.01 \u00b5m\u00b2/s) were not significantly affected by NLG1-\u0394Cter, as compared to GFP-expressing neurons (Figure 1\u2014figure supplement 2, n\u00a0=\u00a016 Ctrl and 21 NLG1-\u0394Cter, 2 sample t-test p=0.36), in agreement with previous findings using Quantum dots (Mondin et al., 2011). Thus, NLG1-\u0394Cter does not affect the equilibrium between diffusive and trapped AMPARs.\n\n### Full-length NLG1 tightly co-localizes with AMPAR nanodomains\n\nTo examine the co-organization of AMPARs and NLG1 at the nanoscale level, we performed dual-colour SRI experiments. Endogenous GluA2 were live-labelled with a primary mouse monoclonal antibody and NLG1 or NLG1-\u0394Cter were live-labelled with a primary monoclonal rat anti-HA antibody. Neurons were then fixed, incubated with a secondary anti-mouse antibody conjugated to Alexa 532 and an anti-rat antibody coupled to Alexa 647, and processed for d-STORM (Figure 2A). Both AMPARs and NLG1 were detected as small synaptic and extra-synaptic clusters (Figure 2B). Qualitatively, we observed that the majority of synaptic NLG1 spots (green) overlapped with AMPAR nanodomains (purple). To precisely quantify the degree of co-localization between AMPAR and NLG1 clusters, we developed a method based on Manders\u2019 coefficients and bivariate nearest neighbor distance (see Materials\u00a0and\u00a0methods). Manders\u2019 coefficients have been widely used in diffraction-limited microscopy to quantify the co-localization between pairs of objects characterized by different fluorescent markers (Manders et al., 1993).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig2-v3.jpg)\n\n**Figure 2.:** (A) Example of dual-color d-STORM super-resolution image of GluA2 containing AMPAR labelled with Alexa 532 nm and HA-tagged NLG1 labelled with Alexa 647 nm. (B) Examples of GluA2 and NLG1 (left) or GluA2 and NLG1-\u0394Cter (right) co-labeling of two synapses. Dark spots on the overlay image represent co-localizing pixels; NLG1 (in green) strongly co-localizes with AMPAR nanodomains (in purple). NLG1-\u0394Cter (in green) does not co-localize with AMPAR nanodomains (in purple). (C, D and E) presents the quantification of this co-localization. (C) The size distribution of NLG1 (green), NLG1-\u0394Cter (red) and GluA2 (black) super-resolved objects. The expression of NLG1-\u0394Cter does not affect the size of neuroligin 1 and GluA2 nanodomain objects. (D) Cumulative distribution of the measured (red) and randomized (dark) bivariate nearest neighbor distance between large object of GluA2 and NLG1-\u0394Cter. Green line represents the nearest neighbor distance between large object of GluA2 and neuroligin 1, demonstrating clustering as compared to random distribution. Insert represents a zoom on the 250 nm, approximate size of a PSD; NLG1-\u0394Cter and GluA2 nanodomain distance overlaps with the random distribution distance. (E) Manders\u2019 coefficients calculated between GluA2 nanodomains and NLG1-\u0394Cter (red) and between GluA2 nanodomains and NLG1 (green). More than 60% of AMPAR nanodomains are not co-localized with NLG1-\u0394Cter (n\u00a0=\u00a018 NLG1 and 12 NLG1-\u0394Cter cells respectively, corresponding to 516 and 312 independent pairs of objects).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Example of dual color image obtained by a GluA1 and GluA2 dual labeling (epifluorescence image on the left) and the super-resolved image acquired with d-STORM technique, both at 647 and 532 (middle and right image). GluA1 presents a HA tag, as shown on the scheme, HA tag is labelled with Alexa 647 and endogenous GluA2 with Alexa 532. An example of co-localization of two super-resolved clusters is reported down to the right. (B, C and D) represent the three steps necessary to determine super-resolved object co-localization (n\u00a0=\u00a06 cells, and 151 individual clusters). In (B), the size of an object is determined to discriminate potential clusters from the single particle, both having a different physiological meaning. In (C), the bivariate nearest neighbor distance is calculated to determine the average distance between two objects. Control distributions are obtained with the calculation of the distance when the same number of objects is randomly redistributed within the cell border. Finally, (D) is the distribution of Manders\u2019 coefficients. No co-localization gives a null value, 100% co-localization a value of one. The dual labeling of GluA1/A2 reports the presence of small and large objects (B), distance between cluster of GluA1 labelled with anti-HA is closer to GluA2 cluster than randomly distributed (C) 95% of clusters co-localized at least partly (D).\n\nWe first validated both the labelling efficiency and the co-localization by studying co-organization between HA-GluA1 (labelled with the same primary monoclonal rat anti-HA antibody, revealed with Alexa 647) and endogenous GluA2 (labelled with primary mouse monoclonal anti-GluA2 antibody, revealed with Alexa 532; Figure 2\u2014figure supplement 1). These experiments have the advantage of using the same combination of antibodies as in Figure 2. Since AMPARs form heterotetramers in neurons, the labelling for GluA1 and GluA2 is expected to exhibit a high level of co-localization (Figure 2\u2014figure supplement 1). The comparison between the size of single fluorescence emitters and both Alexa 532 and Alexa 647 labelled objects clearly demonstrates the presence of GluA1 and GluA2 clusters (Figure 2\u2014figure supplement 1B). The distribution of bivariate nearest neighbor distances shows that 80% of HA-labelled GluA1 clusters have a GluA2 label within 80 nm (Figure 2\u2014figure supplement 1C). The comparison of the experimental distribution of bivariate nearest neighbor distances to an in silico distribution obtained by randomization of cluster localization, clearly demonstrates that HA-GluA1 and GluA2 clusters display a high degree of co-localization (Figure 2\u2014figure supplement 1C). Finally, the Manders\u2019 representation in (Figure 2\u2014figure supplement 1D) reveals two points: first, only 5% of GluA1 and GluA2 object pairs have a null Manders\u2019 coefficient, reflecting that almost all Alexa 532-GluA2 labelled objects co-localize at least partly with Alexa 647-GluA1 labelled objects. Second, even though we co-labelled proteins belonging to the same cluster, less than 20% of objects exhibit a Manders\u2019 coefficient higher than 0.8, but 60% overlapped on an area larger than 50%. This likely originates from the fact that high levels of co-localization are difficult to reach in 2-color super-resolved images due to achromatism and the antibody size.\n\nWe then applied the Manders\u2019 analysis to examine the co-localization between AMPAR nanodomains and NLG1 clusters inside synapses (Figure 2C,D and E; green line). The similar area distribution between single fluorescence emitters and NLG1 clusters (Figure 2C) reveals that NLG1 does not form large domains inside synapses, but rather several small clusters, confirming previous findings with an alternative labelling strategy (Chamma et al., 2016). In contrast, the area distribution of AMPARs displays larger values, due to AMPAR clustering. For the remaining part of the analysis, we took into account all NLG1 objects, only selected AMPAR objects larger than 0.005 \u00b5m\u00b2 (red dashed line Figure 2\u2014figure supplement 1B), a threshold allowing the suppression of 80% of single emitters, to focus analysis only on AMPAR clusters (value of 0.0022\u00a0\u00b1\u00a00.0027 \u00b5m2 which correspond to mean\u00a0\u00b1\u00a01.5*STD). The centroid to centroid bivariate nearest neighbor distance distribution between NLG1 and AMPAR nanodomains was significantly smaller than that expected from an independent distribution (Figure 2D; green line, n\u00a0=\u00a0512 pairs of co-localized objects), indicating a functional proximity between NLG1 and GluA2 clusters at the nanoscale. The difference between the two curves was already apparent in the first 100 nm, revealing a tight association between NLG1 and AMPAR nanodomains at a short length scale. Finally, Manders\u2019 coefficients were calculated between each pair of objects (Figure 2E; green line, n\u00a0=\u00a0512 pairs of objects). Only 20% of NLG1 clusters did not co-localize, even partially, with a GluA2 nanodomain, while 25% of NLG1 clusters co-localized to more than 80% with AMPAR nanodomains. These results reveal a fairly tight nanoscale co-organization between AMPAR and NLG1 within the synapse.\n\n### NLG1-\u0394Cter is delocalized from AMPAR nanodomains\n\nNext, we analyzed the distribution of AMPAR nanodomains with respect to NLG1-\u0394Cter (Figure 2D and E; 316 pairs of objects). As NLG1, NLG1-\u0394Cter was organized in small clusters (Figure 2C, red line) with an average size of 0.0042\u00a0\u00b1\u00a00.0018 \u00b5m2, whereas AMPARs were distributed as both small and large objects. The bivariate nearest neighbor distances between NLG1-\u0394Cter and AMPAR clusters were significantly larger than for NLG1 and AMPAR nanodomains. Centroid to centroid bivariate nearest neighbor distance between all NLG1-\u0394Cter object and GluA2 clusters overlapped with a random distribution, at least for the first 250 nm corresponding to the PSD size (Figure 2F, red line). This led us to the conclusion that there is no preferential association of NLG1-\u0394Cter clusters with AMPAR nanodomains. This was confirmed by looking at the distribution of Manders\u2019 coefficients (Figure 2G, red line). Only 38% of NLG1-\u0394Cter co-localized at least partially with AMPARs, compared with 80% for NLG1, revealing that the NLG1 C-terminal truncation significantly decreases the association between NLG1 and AMPAR nanodomains (comparison with NLG1: 2 sample t-test p<0.0001).\n\n### NLG1-\u0394Cter expression shifts the alignment between presynaptic RIM and post-synaptic AMPAR nanodomains\n\nWe then analyzed the effect of NLG1-\u0394Cter expression on the alignment between pre-synaptic RIM and post-synaptic AMPAR clusters. These two proteins are components of the trans-synaptic \u2018nanocolumns\u2019, which organize pre-synaptic release sites in front of post-synaptic AMPAR clusters (Tang et al., 2016). Endogenous RIM and AMPARs were labelled, while post-synaptic neurons expressed GFP, NLG1 or NLG1-\u0394Cter (Figure 3A,B and C). The bivariate nearest neighbor distances between RIM and AMPAR clusters was not affected by NLG1 expression, but was significantly larger when NLG1-\u0394Cter was expressed (Figure 3B, Anova p<0.001). The distribution of Manders\u2019 coefficients confirmed that NLG1-\u0394Cter expression decreased the RIM-AMPAR apposition (Figure 3C, Anova p<0.001). These results demonstrate a physical misalignment between the presynaptic marker RIM and the postsynaptic AMPAR clusters upon NLG1-\u0394Cter expression, while NLG1 expression did not display a similar effect.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig3-v3.jpg)\n\n**Figure 3.:** (A) Example of dual-color d-STORM super-resolution image of GluA2 containing AMPAR labelled with Alexa 532 nm and RIM labelled with Alexa 647 nm. Right panels, examples of GluA2 and RIM co-labeling when post-synaptic neurons are transfected with GFP, NLG1 or NLG1-\u0394Cter respectively (from the left to the right). (B and C) presents the quantification of this co-localization. (B) Cumulative distribution of the bivariate nearest neighbor distance between GluA2 and RIM clusters when post-synaptic neuron expressed GFP (dark), NLG1 (green) or NLG1-\u0394Cter (red). These data demonstrate a loss of the pre-post synaptic alignment when NLG1-\u0394Cter is expressed. (C) Manders\u2019 coefficients calculated between GluA2 nanodomains and RIM clusters in function of the neuroligin wt or truncated form expression. NLG1-\u0394Cter expression significantly alters the co-localization (n\u00a0=\u00a09; 9 and 8 Control, NLG1-\u0394Cter and NLG1 cells respectively, corresponding to 354; 573 and 562 independent pairs of co-localization).\n\n### NLG1 C-terminus truncation impairs synaptic transmission\n\nTo estimate the effect of a decorrelation between AMPAR nanoclusters and pre-synaptic release sites on synaptic currents, we first recorded AMPAR-mediated miniature EPSCs on dissociated hippocampal cultures by electrophysiology, upon expression of NLG1-\u0394Cter\u00a0+\u00a0GFP, full length NLG1\u00a0+\u00a0GFP, or GFP alone as a control (Figure 4A\u2013C). NLG1-\u0394Cter expression for 3 days reduced the amplitude of AMPAR mEPSCs by 24% as compared to GFP expressing controls (Figure 4C, average\u00a0\u00b1\u00a0SEM: 11.63\u00a0\u00b1\u00a00.63 for GFP, 8.956\u00a0\u00b1\u00a00.40 for NLG1-\u0394Cter, 13.05\u00a0\u00b1\u00a00.92 for NLG1; ANOVA p=0.0002). In contrast, NLG1 expression did not affect the miniature EPSC amplitude, even if as expected by the higher synapse number observed in Figure 1A, there was a significant increase in miniature frequency (Figure 4\u2014figure supplement 1A). These results suggest that quantal synaptic transmission is not altered by NLG1 overexpression per se, but only when the linkage between NLG1-based adhesion and AMPAR clusters is perturbed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig4-v3.jpg)\n\n**Figure 4.:** (A) Example of mEPSC traces recorded in cultured neurons expressing either GFP, GFP\u00a0+\u00a0NLG1-\u0394Cter or GFP\u00a0+\u00a0NLG1. (B) Cumulative distribution and (C) average of the mEPSC amplitude recorded on neurons expressing GFP (dark), GFP\u00a0+\u00a0NLG1-\u0394Cter (red) or GFP\u00a0+\u00a0NLG1 (green) (n\u00a0=\u00a014; 14 and 13 respectively). mEPSCs amplitude is decreased by 25% in neurons expressing NLG1-\u0394Cter. (D) Scheme of the patch clamp protocol used to record asynchronous EPSC on organotypic hippocampus slices. Two neighboring neurons are simultaneously patched, one transfected and one non transfected, Schaffer collateral connecting both neuron are then stimulated. (E and F) Representative traces of asynchronous EPSCs recorded in the presence of strontium, of either a control and a NLG1-\u0394Cter expressing neuron (E) or a control and a NLG1 (F). To avoid multi synaptic responses, 50 ms following the stimulation are excluded from the analysis. (G) Cumulative distribution of aEPSCs amplitude recorded from control (dark),or neurons expressing GFP\u00a0+\u00a0NLG1-\u0394Cter (red) or GFP\u00a0+\u00a0NLG1 (green) (n\u00a0=\u00a08 and 6 pairs of cells, respectively). Average of aEPSCs amplitude, with connection between the transfected cell and their respective neighboring non transfected control, when either GFP\u00a0+\u00a0NLG1 (H) or GFP\u00a0+\u00a0NLG1-\u0394Cter (I) are expressed. NLG1-\u0394Cter expression decreased by 25% the average aEPSCs amplitude.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative images from control and NLG1 and NLG1-\u0394Cter expressing neurons in culture, with an expanded miniature trace example. (B) Analyses of miniature EPSC, from left to right are represented the amplitude, the frequency, the 20\u201380% rise time and the decay time constant. (C) Representative images from NLG1 and NLG1-\u0394Cter expressing neurons in organotypic hippocampal culture. (D) Analyses of asynchronous EPSC, from left to right are represented the amplitude, the frequency, the rise time and the decay time. For all figures, the control is represented in dark, the NLG1-\u0394Cter in red and the NLG1 in green. Each dot represents the mean value for an individual cell.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Comparison of EPSC amplitude on paired neurons in organotypic slices, when NLG1 (left panel), and NLG1-\u0394Cter (right panel) are expressed, and representative traces. (B) Average of the normalized EPSC amplitude, with 100% representing the control paired cell. (C and D) 100 traces are obtained from control and electroporated cells to extract the coefficient of variation. The left panel represents an example of the various responses recorded from single cells (grey traces) with the average trace in dark (control cell) or color (electroporated cell). The right panel shows the comparison of the coefficient of variation between pairs of neurons, when neurons expressed NLG1 (C), and NLG1-\u0394Cter (D).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Representative traces of asynchronous EPSCs recorded in the presence of strontium, of either a control and a NLG1-\u0394Cter expressing neuron in a Nlg1 KO background. (B) Scheme of the patch clamp protocol used to record asynchronous EPSC on organotypic hippocampus slices. Two neighboring neurons are simultaneously patched, one transfected and one non transfected, Schaffer collateral connecting both neuron are then stimulated. To avoid multi synaptic responses, 50 ms following the stimulation are excluded from the analysis. Bottom, example of a transfected cell. (C) Cumulative distribution of aEPSCs amplitude recorded from control (dark),or neurons expressing GFP\u00a0+\u00a0NLG1-\u0394Cter (red). Average of aEPSCs amplitude, with connection between the transfected cell and their respective neighboring non transfected control. (D and E) Rise time and frequency of aEPSC of non-transfected cell and when NLG1-\u0394Cter is expressed (n\u00a0=\u00a06 pairs of neurons, 20 sweeps per cell).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Example of paired-pulse currents recorded from CA1 neurons in organotypic hippocampal slices, expressing either NLG1 or NLG1-\u0394Cter (in red) and from their respective untransfected neighbors (in black). (B) Average paired pulse ratio for the same conditions as in (A) (n\u00a0=\u00a07 and 8 pairs of cells for NLG1 and NLG1-\u0394Cter, respectively).\n\nTo confirm these conclusions in a model system having more preserved synaptic connectivity, we used mouse organotypic hippocampal slice cultures, in which single CA1 neurons were co-electroporated with both soluble GFP and either NLG1 or NLG1-\u0394Cter. One week later, evoked whole-cell currents were recorded from electroporated neurons and from neighboring non-electroporated counterparts, upon stimulation of Schaffer collaterals (Figure 4D\u2013I and Figure 4\u2014figure supplement 2). In the presence of 2 mM extracellular calcium, we observed a\u00a0~4 fold increase in AMPAR-mediated EPSC amplitude (456.1%\u00a0\u00b1\u00a080.0) in neurons overexpressing NLG1 compared to paired non-electroporated controls, reflecting the well-known synaptogenic effect of NLG1 (Kwon et al., 2012; Shipman et al., 2011). This effect was associated with a decrease in the coefficient of variation (CV) (Figure 4\u2014figure supplement 2). This parameter is commonly related to both number of active synapses and their release probability (quantal content) but previous studies provided evidence for the contribution of post-synaptic parameters into the CV as for\u00a0example the fraction of silent synapses (Kerchner and Nicoll, 2008; Kullmann, 1994) and ongoing fluctuations of AMPAR number at the synapse and their mobility (Cz\u00f6nd\u00f6r et al., 2012; Heine et al., 2008; Levy et al., 2015). These results support the idea that NLG1 can both increase the number of functional synapses and stabilize AMPARs (Levinson et al., 2005; Mondin et al., 2011). In contrast, neurons expressing NLG1-\u0394Cter exhibited a limited\u00a0~2 fold increase in AMPAR-mediated EPSC amplitude (226.0\u00a0\u00b1\u00a059.1) and no change in CV compared to control neurons (Figure 4\u2014figure supplement 2). Thus, when compared to NLG1, NLG1-\u0394Cter expressing neurons display lower EPSCs and higher CV, despite the fact that NLG1- \u0394Cter expression can still increase synapse number (Figure 1B). These joint effects can be explained by either a lack of recruitment of AMPARs at newly formed synapses (i.e. silent synapses) and/or a mis-alignment between pre- and post-synapses. Finally, there was no significant change in the paired-pulse ratio (PPR) upon expression of either NLG1 or NLG1-\u0394Cter (Figure 4\u2014figure supplement 4; PPR for NLG1: control 1.63\u00a0\u00b1\u00a00.11, NLG1 1.36\u00a0\u00b1\u00a00.09, for NLG1-\u0394Cter), indicating no specific modification of the pre-synaptic release probability.\n\nThe amplitude of EPSCs recorded in calcium combines three parameters: the number of synapses (n), the release probability (p), and the quantal size (q), related to glutamate receptor structural organization, possibly including the alignment of AMPARs nanodomains with presynaptic release sites.. To test the idea that NLG1-\u0394Cter affects quantal size, extracellular calcium was replaced by strontium to trigger asynchronous pre-synaptic release following stimulation, thereby evoking a train of AMPAR-mediated EPSCs generated by glutamate release from single vesicles (Goda and Stevens, 1994). Both NLG1 and NLG1-\u0394Cter expression increased the frequency of asynchronous EPSCs compared to non-electroporated neurons, again reflecting the synaptogenic effect of NLG1 (Figure 4\u2014figure supplement 1B). Moreover, as observed with miniatures in dissociated cultures, the amplitude of asynchronous EPSCs was reduced by 26% in neurons expressing NLG1-\u0394Cter but not in neurons expressing NLG1, when compared to control non-electroporated neurons (Figure 4H and I, for NLG1 expression: control: 11.59\u00a0\u00b1\u00a00.73, NLG1: 11.60\u00a0\u00b1\u00a01.03; for NLG1-\u0394Cter expression: control: 12.01\u00a0\u00b1\u00a01.56, NLG1-\u0394Cter: 8.893\u00a0\u00b1\u00a00.70; paired t-test p=0.99 and 0.018). Similar results were obtained on the NLG1 KO background (Figure 4\u2014figure supplement 3), with a 32% decrease of asynchronous EPSC amplitude on NLG1-\u0394Cter expressing neurons relatively to unelectroporated counterparts. The similarity of the current decrease obtained in both the NLG1 WT and KO backgrounds, emphasizes the dominant negative role of NLG1-\u0394Cter which might compete with various NLG isoforms. Together, these results show that NLG1-\u0394Cter directly affects the quantal size, which is compatible with our concept of synaptic mis-alignment.\n\n### Cell-permeant NLG1 biomimetic divalent ligand disrupts pre-post alignment and decrease AMPAR-mediated synaptic transmission\n\nTo confirm the role of NLG1 C-terminal interactions in aligning AMPARs in front of pre-synaptic release sites, without overexpressing NLG1-\u0394Cter mutants which might also affect pre-synaptic development, we used an alternative strategy. Based on our previous expertise to perturb interactions between stargazin and PSD-95 (Sainlos et al., 2011), we developed divalent biomimetic ligands comprising the 15 C-terminal amino acids of NLG1, conjugated to a TAT sequence to favor cell penetration. In contrast to the NLG1-\u0394Cter mutant, those ligands directly compete with endogenous neuroligins to bind PDZ domain containing scaffolding proteins at the post-synapse, without altering the binding of neuroligins to pre-synaptic proteins such as neurexins. Control non-sense ligands had the same structure but mutations in the sequence prevent interaction with PDZ domains. Incubation of 14 DIV hippocampal neurons for 1\u20132 days with NLG1 competing ligands decreased the co-localization between RIM and GluA2 containing AMPARs observed by dual-color d-STORM (Figure 5A\u2013C), and reduced by 30% AMPAR-mediated mEPSC amplitudes (Figure 5E). In both assays, control non-sense TAT peptides had no effect compared to untreated neurons. Interestingly, NLG1 peptides did not alter AMPAR-mediated mEPSC frequency (Figure 5F), suggesting an exclusive post-synaptic effect. Overall, NLG1 competing peptides and NLG1-\u0394Cter expression had very similar effects on AMPAR positioning and synaptic responses, suggesting a common mechanism of action.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig5-v3.jpg)\n\n**Figure 5.:** (A) Example of dual-color d-STORM image of GluA2 containing AMPAR labelled with Alexa 532 nm and RIM labelled with Alexa 647 nm. Right panels, examples of GluA2 and RIM co-labeling without ligand or after 1-day treatment with Nlg biomimetic ligand or non-sense ligand (from the left to the right). (B and C) presents the quantification of this co-localization. (B) Cumulative distribution of the bivariate nearest neighbor distance between GluA2 and RIM clusters without ligand (black), with NLG ligand NLG1 (green) or non-sense ligand (blue). These data demonstrate a loss of the pre-post synaptic alignment in the presence of NLG ligand. (C) Manders\u2019 coefficients calculated between GluA2 nanodomains and RIM clusters in function of ligand treatment (n\u00a0=\u00a04; 5 and 4 Control, NLG ligand and non-sense ligand respectively, corresponding to 451; 1311 and 640 independent pairs of co-localization). (D) Example of mEPSC traces recorded in cultured neurons without ligand, with NLG ligand or with non-sense ligand. (E\u00a0and F) average of the mEPSC amplitude and amplitude recorded when neurons in culture are incubated without ligand (dark) or with either NLG ligand (red) or with non-sense ligand (blue) (n\u00a0=\u00a09; 15 and 13 respectively). mEPSCs amplitude is decreased by 30% in neurons incubated with NLG ligand.\n\n### Synaptic efficiency critically depends on the AMPAR nanodomains to glutamate release site distance\n\nTo examine theoretically the effects of delocalizing AMPAR nanodomains from pre-synaptic glutamate release sites, we performed Monte-Carlo-based simulations using the MCell software (Figure 6). The synaptic shape and perisynaptic environment were obtained from 3D electron microscopy images reconstructing the neuropil of a hippocampal CA1 stratum radiatum area, previously developed to model synaptic transmission (Bartol et al., 2015a, Bartol et al., 2015b; Kinney et al., 2013) (See Materials\u00a0and\u00a0methods). AMPAR chemical kinetic properties were obtained from a well-established model (Jonas et al., 1993) (Figure 6B) and the kinetic parameters were adjusted to fit both the recorded mEPSCs and the AMPAR organization map extracted from the d-STORM data (Figure 1, see Materials\u00a0and\u00a0methods [Nair et al., 2013]). In the simulations, the number of released glutamate molecules was fixed to 1500, 2000, 3000 or 4500, to be in the range of the estimated amount per pre-synaptic vesicle (Savtchenko et al., 2013). Simulations computed the number of open AMPARs, when vesicles containing the various glutamate quantities were released in front of a single AMPAR cluster, or up to 200 nm away from the cluster center, varied with a 50 nm increment (Figure 6B). As expected, simulated curves demonstrated that the glutamate content per pre-synaptic vesicle was positively correlated with the synaptic response (Figure 6C). Strikingly, the simulation further showed that the number of opened AMPAR was inversely correlated to the distance between the release site and AMPAR nanodomains (Figure 6D). A release of 3000 glutamate molecules, which is in the upper range of glutamate content per vesicle, at 150 nm from an AMPAR nanodomain, led to a decrease of almost 40% of the synaptic response. In this model, the release distance is measured from the center of the nanodomain, which has a 90 nm diameter size. Even at 50 nm from the centroid (i.e. at the close periphery of the nanodomain), a significant decrease of current amplitude was already observed for low glutamate content (Figure 6D). The expected decrease in synaptic current amplitude was also sensitive to the glutamate content (Figure 6E). Specifically, the 26% decrease of AMPAR-mediated current observed experimentally corresponds to a glutamate content of around 2000 molecules when the release site is localized 90 nm away from the nanodomain centroid (Figure 6E). Finally, in order to investigate the possible effect of a complex extracellular matrix and glial processes around the synapse, which might also regulate synaptic transmission (Dityatev and Rusakov, 2011), we varied the glutamate diffusion coefficient (Figure 6\u2014figure supplement 1) or the density of astrocytic glutamate transporters (Figure 6\u2014figure supplement 2). The first parameter drastically changed the synaptic transmission efficiency (i.e. the lower the glutamate diffusion coefficient, the higher AMPA currents) without altering the tight correlation between synaptic transmission and pre-post alignment. The second parameter revealed the independence of AMPAR-mediated currents with respect to the astrocyte-dependent clearance of the glutamate released from a single vesicle.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig6-v3.jpg)\n\n**Figure 6.:** (A) View of dendritic spine with synaptic contact area (red patch) containing 25 AMPARs anchored in nanocluster (blue particles) and 70 freely diffusible AMPAR (light blue particles). The simulated glutamate release locations are shown by white dots spaced 50 nm apart. (B) Superposition of a miniature average trace obtained by electrophysiology (dark line) and simulated currents (red line) and,kinetic scheme for activation of AMPAR by glutamate (Jonas et al., 1993). Kinetic rate constants values (after fitting as described in Materials\u00a0and\u00a0methods): k1\u00a0=\u00a013.77 \u03bcM\u22121.s\u22121; k1r\u00a0=\u00a02130 s\u22121; k2\u00a0=\u00a085.2 \u03bcM\u22121.s\u22121; k2r\u00a0=\u00a01630 s\u22121; alpha\u00a0=\u00a01696 s\u22121; beta\u00a0=\u00a0630 s\u22121; alpha1\u00a0=\u00a01445 s\u22121; beta1\u00a0=\u00a019.6 s\u22121; alpha2\u00a0=\u00a086 s\u22121; beta2\u00a0=\u00a00.3635 s\u22121; alpha3\u00a0=\u00a08.85 s\u22121; beta3\u00a0=\u00a02 s\u22121; alpha4\u00a0=\u00a06.72 s\u22121; beta4\u00a0=\u00a0133.28 s\u22121; k3\u00a0=\u00a03.81 \u03bcM\u22121.s\u22121; k3r\u00a0=\u00a022.85 s\u22121; AMPAR diffusion constant\u00a0=\u00a00.1 \u03bcm2.s\u22121; and glutamate diffusion constant\u00a0=\u00a0100 \u03bcm2.s\u22121. (C) Time course of simulated AMPAR activation resulting from release of 1500, 3000, and 4500 glutamate molecules at each release location are shown. Each time course is the average of 100 simulations. (D) Normalized peak number of open AMPARs activated by release of 1500, 2000, 3000, and 4500 glutamate molecules at each release location is shown. Dashed line at 90 nm indicates data displayed in E. (E) Percent decrease in peak number of open AMPAR as a function of number of glutamate molecules released, at 90 nm release distance. Dashed lines indicate that when\u00a0~2000 glutamate molecules are released the peak number of open AMPARs will be decreased by 25% at a release distance of 90 nm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Example of paired-pulse currents recorded from CA1 neurons in organotypic hippocampal slices, expressing either NLG1 or NLG1-\u0394Cter (in red) and from their respective untransfected neighbors (in black). (B) Average paired pulse ratio for the same conditions as in (A) (n\u00a0=\u00a07 and 8 pairs of cells for NLG1 and NLG1-\u0394Cter respectively).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31755/elife-31755-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Time course of simulated AMPAR activation resulting from release of 1500, 3000, and 4500 glutamate molecules at each release location with glutamate diffusion rate fixed at 300 \u00b5m2/s. Each time course is the average of 100 simulations. (B) Time course of simulated AMPAR activation resulting from release of 1500, 3000, and 4500 glutamate molecules at each release location with glutamate diffusion rate fixed at 500 \u00b5m2.s\u22121. Each time course is the average of 100 simulations.\n\n## Discussion\n\nOur study advocates two main conclusions. First, NLG1 seems to play an important role in the organization of trans-synaptic \u2018nano-columns\u2019, by positioning AMPAR nanodomains in close proximity to pre-synaptic release sites. Second, the amplitude of AMPAR-mediated currents is highly sensitive to pre-post synaptic nanoscale alignment (Figure 6F). At the synapse, NLG1 displays two distinct functions: during synaptogenesis, it binds to pre-synaptic proteins and initiate synapse formation and at later stages of synapse development NRLG1 organizes the post-synaptic compartment (Ko et al., 2009; Levinson et al., 2005; Sara et al., 2005; Scheiffele et al., 2000). NLG1 binds pre-synaptic neurexins via its extracellular domain, while its cytoplasmic tail exhibits various binding sites including a C-terminal PDZ domain binding motif, a central gephyrin binding motif, and an upstream non-canonical motif without identified interactor but also important for neuroligin function (Dean et al., 2003; Giannone et al., 2013; Irie et al., 1997; Shipman et al., 2011). Here, we used a NLG1 construct lacking both the PSD-95 and gephyrin binding domains. When expressed during the early stages of synaptogenesis, this NLG1 mutant is able to strongly increase synapse number, but does not recruit enough PSD-95 and AMPARs to sustain normal synaptic transmission (Budreck et al., 2013; Mondin et al., 2011; Nam and Chen, 2005).\n\n### NLG1 is an organizer of the trans-synaptic nano-column\n\nExpression of NLG1-\u0394Cter later in development (at the synapse maturation stage) caused a modest increase in spine density, accompanied by a decrease in quantal transmission. Interestingly, the AMPAR content per synapse was not affected, nor their diffusion or organization in nanodomains. Rather, NLG1-\u0394Cter disrupted nanodomain spatial alignment with pre-synaptic release sites visualized by RIM clusters. Our interpretation is that NLG1-\u0394Cter outcompeted the endogenous NLG1 for the binding to neurexins (or/and other pre-synaptic partners), allowing unanchored PSD-95 scaffolds and connected AMPAR nanodomains to flow away from the release site (MacGillavry et al., 2013; Nair et al., 2013). As previously published, heterodimerization might occur between recombinant NLG1-\u0394Cter and endogenous NLG1 (Shipman et al., 2011). However, we observed a clear shift between NLG1-\u0394Cter labelling and AMPAR nanodomains, suggesting a dominant negative effect. Interestingly, a similar reduction in AMPAR currents induced by NLG1-\u0394Cter was observed in organotypic slices from both NLG1 WT and KO genetic backgrounds, revealing a potential heterodimerization of NLG1-\u0394Cter with other NLGs, most likely NLG3 (Shipman et al., 2011). Acute application of cell-permeant NLG1 C-terminal ligand confirmed these conclusions. Together, these results demonstrate that C-terminal interactions between NLG1 and PDZ domain containing scaffolding proteins such as PSD-95, are important to align AMPAR nanodomains in front of pre-synaptic release sites.\n\nThe functional effect of such a molecular disorganization caused either by NLG1-\u0394Cter expression or NLG1 peptide incubation was found to be unexpectedly important, that\u00a0is a displacement of AMPAR nanodomain of less than 100 nm decreases mEPSC amplitude by about 30%. Modeling confirmed the high sensitivity of AMPAR-mediated synaptic currents to the position of the pre-synaptic release site with respect to AMPAR nanodomains. Considering that quantal synaptic transmission results from the release of glutamate from one vesicle in front of an AMPAR nanodomain, three parameters determine the number of activated AMPARs: 1/the amount of glutamate per vesicle and its diffusion properties inside the cleft; 2/the number of AMPARs per nanodomain; and 3/the degree of apposition between release sites and nanodomains. Our simulations predict that an equivalent 25% decrease of current could be explained by either a 3-fold decrease in glutamate content (from 4500 to 1500 molecules per vesicle), a 32% loss in the number of AMPARs per nanodomain, or a 100 nm shift between pre- and post-organization (for a glutamate content of 2000 molecules per vesicle), underlying the high sensitivity of synaptic currents to pre-post alignment.\n\n### Pre-post misalignment affects both action potential -dependent and -independent synaptic currents\n\nInterestingly, a similar effect has been observed on miniature EPSCs recorded from primary cultures and both EPSCs and asynchronous EPSCs recorded from organotypic slices. Action potential-dependent currents recorded from slices in calcium or strontium conditions do not directly reflect the synaptic response because they combine (i) the synaptogenic effect of NLG1 via its extracellular interaction with pre-synaptic adhesion proteins, which affect the parameter n and (ii) its role in AMPAR recruitment and pre-post alignment, affecting the parameter q. Nevertheless, these experiments are necessary to test the potential effect of mis-alignment regarding the pool of vesicle recruited after an action potential, which might differ from the one involved in miniature release (Fredj and Burrone, 2009; Hua et al., 2010; Wilhelm et al., 2010).\n\nThe determination of the q from calcium experiments is challenging because EPSC amplitude is dependent on both n, p and q together. First, the absence of effect on the paired pulse properties (Figure 4\u2014figure supplement 4) indicates that the p value should not be affected by NLG1 and NLG1-\u0394Cter expression. Second, the net increase of EPSC amplitude in calcium conditions induced by both NLG1 and NLG1-\u0394Cter compared to control neurons can be attributed to an increase of the n parameter by recruiting additional pre-synapses, as abundantly described in the literature and shown Figure 1 (Figure 4\u2014figure supplement 1). However, the significant decrease of evoked AMPAR-mediated EPSC amplitude caused by NLG1-\u0394Cter with respect to NLG1, combined with the increase in CV is more difficult to explain. It can be attributed to either a recruitment of silent synapses by NLG1-\u0394Cter, or a decrease of the quantal size (q) due for example to pre-post synaptic mis-alignment.\n\nStrontium experiments represent a tempting way to overcome this multifactorial effect, by decorrelating action potential stimulation and quantal release. Our results show a significant increase of asynchronous EPSC frequency, which can be attributed to the formation/stabilisation of additional synapses, and a decrease of amplitude which likely results from a disruption of the pre-post alignment. However, we cannot exclude the bias due to the origin of the vesicle pool recruited during asynchronous EPSC, which is under debate (Li et al., 1995). However, taken together, spontaneous miniature currents recorded in calcium and asynchronous EPSCs recorded in strontium suggest that NLG1-\u0394Cter expression affects both action potential-dependent and -independent synaptic transmission. Although glutamatergic synapses from cultured systems and brain slices share a similar organization in nanomodules (Hruska et al., 2018; Tang et al., 2016), it could be interesting to validate our results in more intact preparations.\n\nOur observations, done both on dissociated neurons and organotypic slice cultures, support a new model of synaptic function, where the quantum of synaptic transmission is more sensitive to AMPAR nanoscale organization and alignment with respect to release sites, than to the glutamate content per vesicle and even AMPAR content per nanodomain. These specific properties are due in part to the relatively low affinity of AMPAR for glutamate (mM range) and the fact that released glutamate rapidly fades away laterally (Lisman et al., 2007; Liu et al., 1999; Tarusawa et al., 2009). These results suggest two changes in our conception of the efficacy of synaptic function. First, synapses exhibit a relative tolerance to variability both in the glutamate content per vesicle and in the number of AMPAR per nanodomain. Indeed, a 10\u201320% variation in these parameters will not drastically affect synaptic transmission efficacy. Our computer simulations predict that the combination of pre-post alignment and nanodomain organization is sufficient to bring some stability to synaptic transmission. Second, fast and large modifications in synaptic amplitude can be better achieved by molecular pre-post misalignment than by changes in AMPAR number. This prediction is in line with the transient physiological misalignment between RIM and PSD95 clusters previously described upon induction of chemical Long Term Depression (LTD) (Tang et al., 2016). Interestingly, our modeling data predict that the amplitude of AMPAR currents is not sensitive to the glutamate clearance by glial cells, in agreement with the model that AMPAR activation takes place within the 100 nm surrounding the release site. By varying the gating parameters, we do not observe AMPAR opening beyond 250 nm from the site of vesicle fusion.\n\nPrevious models suggested that high efficiency of synaptic transmission, high amplitude response and low variability, requires a tight clustering of AMPA receptors, and an alignment of these clusters with the pre-synaptic release site (Nair et al., 2013; Tarusawa et al., 2009). Our study proposes that synapses, via NLG1-based trans-synaptic adhesion, optimize the use of glutamate by controlling the alignment between pre-synaptic release sites and AMPAR nanodomains, with surprisingly high sensitivity.\n\n## Materials and methods\n\n### Cell and brain slice culture and transfection\n\nPreparation of cultured neurons was performed as previously described (Nair et al., 2013). Hippocampal neurons from 18-day-old rat embryos of either sex were cultured on glass coverslips following the Banker protocol. Neurons were transfected using Effectene (Qiagen) at 10\u201311 days in vitro (DIV) with either HA::SEP::GluA1, HA::NLG1\u0394C, where the last 72 amino acid are truncated, HA::NLG1 WT or GFP alone and the cells were used for immunocytochemistry at 13\u201315 DIV. All experiments are done on at least 3 independent dissections.\n\nOrganotypic hippocampal slice cultures were prepared from wild type mice (C57Bl6/J strain). Briefly, hippocampi were dissected out from animals at postnatal day 5\u20137 and slices (350 \u00b5m) were cut using a tissue chopper (McIlwain) and incubated with serum-containing medium on Millicell culture inserts (CM, Millipore). The medium was replaced every 2\u20133 days. After 3\u20134 days in culture, CA1 pyramidal cells were processed for single-cell electroporation with plasmids encoding enhanced GFP (EGFP) along with wild type or -\u0394Cter AP-NLG1 (Chamma et al., 2016). The pipette containing 33 ng.\u00b5l\u22121 total DNA was placed close to the soma of individual CA1 pyramidal neurons. Electroporation was performed by applying three square pulses of negative voltage (10 V, 20 ms duration) at 1 Hz, and then the pipette was gently removed. Three to five neurons were electroporated per slice, and the slice was placed back in the incubator for 7 days before experiments.\n\n### Immunocytochemistry\n\nFor the GluA2, HA-tagged proteins and RIM, primary neuronal cultures were co-incubated with monoclonal mouse anti-GluA2 antibody (Nair et al., 2013), monoclonal rat anti-HA antibody (Roche, France), RIM 1/2 antibody (synaptic systems, Gottingen, Germany) or for 5\u20137 min at 37\u00b0C and then fixed with 4% PFA. A preliminary permeabilization step with triton is used for the RIM labelling.\n\nThen cells were washed three times for 5 min in 1x PBS. PFA was quenched with NH4Cl 50 mM for 30 min. Unspecific staining was blocked by incubating coverslips in 1% BSA for 1 hr at room temperature. Primary antibodies were revealed with Alexa 532 coupled anti-mouse IgG secondary antibodies and Alexa 647 coupled anti-rat secondary antibodies (Jackson ImmunoResearch Laboratories, USA).\n\n### Direct stochastic optical reconstruction microscopy (d-STORM)\n\nd-STORM imaging was performed on a commercial LEICA SR GSD, model DMI6000B TIRF (Leica, Germany). LEICA SR GSD was equipped with anti-vibrational table used to minimize drift, Leica HCX PL APO 160 \u00d7 1.43 NA oil immersion TIRF objective and laser diodes with following wavelength: 405, 488, 532, 642 nm (Coherent, USA). Fluorescence signal was detected with sensitive iXon3 EMCCD camera (Andor, UK). Image acquisition and control of microscope was driven by Leica software. Images were streamed at 94 fps (frames per second); image stack contained typically 30,000 frames. Selected ROI (region of interest) had dimension of 200 \u00d7 200 pixels (one pixel\u00a0=\u00a0100 nm). Pixel size of reconstructed super-resolved image was set to 20 nm.\n\nPower of a 405 nm laser controlled the level of single molecules per frame. The dyes were sequentially imaged (Alexa 647 first, followed by Alexa 532) to collect the desired single molecule frames and to avoid photo bleaching. Multi-color fluorescent microspheres (Tetraspeck, Invitrogen) were used as fiducial markers to register long-term acquisitions and correct for lateral drifts and chromatic shifts. A spatial resolution of 14 nm was measured using centroid determination on 100 nm Tetraspeck beads acquired with similar signal to noise ratio than d-STORM single molecule images. Details of experimental procedure and data analysis was followed as described before (Nair et al., 2013).\n\nTesselation analysis of d-STORM experiments are done as described in the original paper (Levet et al., 2015).\n\n### uPAINT\n\n13\u201314 Days in vitro (DIV)-dissociated neurons were imaged at 37\u00b0C in an open Ludin Chamber (Ludin Chamber, Life Imaging Services, Switzerland) filled with 1 ml of Tyrode\u2019s. Dendritic ROIs were selected based on fluorescence from GFP. ATTO-647 coupled to antibody against AMPAR subunit GluA2 was added to the chamber after appropriate cell was identified and region selected. Adding a suitable amount of probes controlled density of labelling. The fluorescence signal was collected using a sensitive EMCCD (Evolve, Photometric, USA). Acquisition was driven with MetaMorph software (Molecular Devices, USA) and acquisition time was set to 20 ms. Around 20,000 frames were acquired in typical experiment, collecting up to few thousands of trajectories. Sample was illuminated in oblique illumination mode. Angle of refracted beam varied smoothly and was adjusted manually to maximize signal to noise ratio. The main parameters determined from the experiments were the diffusion coefficient (D) based on the fit of the mean square displacement curve (MSD). Multi-colour fluorescence microspheres were used for image registration and drift compensation. uPAINT data analysis was reported before (Giannone et al., 2010; Nair et al., 2013).\n\n### Electrophysiology recordings on cell culture\n\nCoverslips of transfected neurons were placed in a Ludin Chamber on an inverted motorized microscope (Nikon Eclipse Ti). Extracellular recording solution was composed of the following (in mM): 110 NaCl, 5.4 KCl, 1.8 CaCl2, 0.8 MgCl2, 10 HEPES, 10 D-Glucose, 0.001 Tetrodotoxin and 0.05 Picrotoxin (pH 7.4; 245 mOsm). Patch pipettes were pulled using a horizontal puller (P-97, Sutter Instrument) from borosilicate capillaries (GB150F-8P, Science Products GmbH) to resistance of 4\u20136 M\u2126 and filled with intracellular solution composed of the following (in mM): 100 K-gluconate, 10 HEPES, 1.1 EGTA, 3 ATP, 0.3 GTP, 0.1 CaCl2, 5 MgCl2 (pH 7.2; 230 mOsm). Transfected neurons were identified under epifluorescence from the GFP signal. Recordings were performed using an EPC10 patch clamp amplifier operated with Patchmaster software (HEKA Elektronik). Whole-cell voltage clamp recordings were performed at room temperature and at a holding potential of \u221270 mV. Unless specified otherwise, all chemicals were purchased from Sigma-Aldrich except for drugs, which were from Tocris Bioscience.\n\nData were collected and analysis of miniature EPSCs was performed using a software developed by Andrew Penn, the matlab script is available on MATLAB File Exchange, ID: 61567; http://uk.mathworks.com/matlabcentral/fileexchange/61567-peaker-analysis-toolbox).\n\n### Electrophysiology recordings on organotypic brain slices\n\nDual whole-cell patch-clamp recordings were carried out in the CA1 region from organotypic hippocampal slices placed on the stage of a Nikon Eclipse FN1 upright microscope at room temperature and using Multiclamp 700B amplifier (Axon Instruments). The recording chamber was continuously perfused with aCSF bubbled with 95% O2/5% CO2 and containing (in mM): 125 NaCl, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 2 CaCl2, 1 MgCl2, and 25 glucose. Resistance of patch-pipettes was 4\u20136 M\u2126 when filled with a solution containing (in mM): 135 CesMeSO4, 8 CsCl, 10 HEPES, 0.3 EGTA, 4 MgATP, 0.3 NaGTP, 5 QX-314, pH 7.28, 302 mOsm. EPSCs were elicited in CA1 pyramidal neurons by stimulating Schaffer collaterals in the stratum radiatum with a bipolar stimulation electrode in borosilicate theta glass filled with aCSF. Bicuculline (20 \u00b5M) was added to the aCSF to block inhibitory currents and DNQX (100 nM) was added to control epileptic activity. Series resistance was always lower than 20 M\u2126. Paired-pulse ratio was determined by delivering two stimuli 50 ms apart and dividing the peak response to the second stimulus by the peak response of the first one. For recordings aEPSCs, extracellular CaCl2 was substituted to equimolar SrCl2. aEPSCs evoked within 500 ms after the stimulation, were analyzed off-line with Mini Analysis software (Synaptosoft). In all cases, at least 20 sweeps per recording were analyzed with a detection threshold set at 5 pA.\n\n### Co-localization analysis\n\nCo-localization analysis was performed using custom written program in Matlab (Mathworks, UK). Manders\u2019 coefficients were chosen as co-localization measure because they do not depend on the relative intensity difference between two component images, therefore bypassing alteration in labeling efficiency of different cellular structures. Here, we perform pairwise analysis between coincidental objects observed in two image components. Thus, our Manders\u2019 coefficients represent fraction of the intensity belonging to co-localizing super-resolution pixels of a given object. Manders\u2019 coefficients are calculated using following equations:\n\n$$\nM_{1}=\\frac{\\suminI_{1i,coloc}}{\\suminI_{1i}}\n$$\n\n\n\n$$\nM_{2}=\\frac{\\suminI_{2i,coloc}}{\\suminI_{2i}}\n$$\n\nWhere i is a pixel index, 1 and 2 stands for two image components and n is the number of pixels in an object for which coefficient is evaluated. I1i \u2265 0 (I2i \u2265 0) are intensity values at the ith pixel of an object in the first (second) component of the dual-color image.\n\nIn first step, two image components are threshold, segmented and reduced to sets of geometrical objects attributed with their weighted centroid location, pixel area, intensity and location. Objects in each component image were divided into two categories, according to their area. This distinction is based on the size of single emitter found both on the coverslip and on the dendrite. With this analysis, we can tell apart the single proteins from the clustered ones, and analyze them independently.\n\nIn subsequent step, first bivariate nearest neighbor distance distribution is calculated for each neuroligin to the nearest AMPAR cluster. Afterwards, the Manders\u2019 coefficients are evaluated between each first nearest neighbor pair of AMPAR cluster and neuroligin. These coefficients were calculated only between pairs of AMPAR and neuroligin separated by the threshold distance, which reflects the maximum distance between two objects considered as related and was obtained from bivariate nearest neighbor distance distribution.\n\nCo-localization significance was accounted for by image randomization. Objects in one image component were rearranged by random assignment of new position for their weighted centroids. This step was repeated up to 1000 times, each time appropriate measure of co-localization was evaluated. Bivariate first nearest neighbour distributions are compared to the mean of randomized samples and 95% confidence intervals. If the experimental distribution lies above (below) randomized distribution, it indicates tendency towards association (dispersion) at given distances. However, if experimental distribution matches randomized one, it points to random or independent distribution between two classes of objects. Matlab scripts are available on request and will be deposited at\u00a0https://github.com/inatamara/2-Color-dSTORM-object-based-co-localization-with-Manders-coefficients (copy archived at https://github.com/elifesciences-publications/2_color_dSTORM).\n\n### Biomimetic ligands\n\nSynthesis of the divalent TAT-non-sense ligands was previously described in Sainlos et al. (2011) (Sainlos et al.). The neuroligin divalent ligands were produced similarly using the last 15 amino acids of NLG1 as PDZ domain binding motifs.\n\n### Modeling\n\nComputer modeling was performed using the MCell/CellBlender simulation environment (http://mcell.org) with MCell version 3.3, CellBlender version 1.1, and Blender version 2.77a (http://blender.org). The realistic model of glutamatergic synaptic transmission (Figure 6A) was constructed from 3DEM of hippocampal area CA1 neuropil as described in (Bartol et al., 2015a, Bartol et al., 2015b; Kinney et al., 2013). The 3DEM reconstruction is highly accurate and detailed and contains all plasma membrane bounded components including dendrites, axons, astrocytic glia and the extracellular space itself, in a 6 \u00d7 6\u00a0\u00d7\u00a05 um3 volume of hippocampal area CA1 stratum radiatum from adult rat. As fully described in Kinney et al. (2013) special methods were developed and applied to the 3DEM to correct for shrinkage and fixation artefacts to accurately recover the dimensions and topology of the extracellular space. The model contains glutamate transporters, 10,000 per square micron, on the astrocytic glia processes, as described in Bartol et al., 2015b. The images in Figure 6A were generated from the 3DEM reconstruction using Blender (blender.org) and the CellBlender addon (mcell.org).\n\nThe AMPAR rate constants in the model were adjusted using simplex optimization with minimum least-squares to best fit the shape of the AMPAR current (20\u201380% rise time, peak amplitude, 10\u201390% fall time of the AMPAR current) reported in Nair et al. (2013). The initial parameter values are as reported in Jonas et al. (1993) with the\u00a0release of glutamate directly over the cluster while holding fixed values of n_Glu\u00a0=\u00a03000, n_AMPAR\u00a0=\u00a025 in cluster. The best fit parameter values are reported in the caption for Figure 6B. We averaged the AMPAR activation time courses of 100 simulation trials at each release location and number of glutamate released.\n\n### Sampling and statistics\n\nN values represent the number of cells, for each experiment, we used at least four independent dissections.\n\nSummary statistics are presented as mean\u00a0\u00b1\u00a0SEM (Standard Error of the Mean). Statistical significance tests were performed using GraphPad Prism software (San Diego, CA). Test for normality was performed with D\u2019Agostino and Pearson omnibus tests. For non-normally distributed data, we applied Mann-Whitney test or Wilcoxon matched-pairs signed rank test for paired observations. When the data followed normal distribution, we used paired or unpaired t-test for paired observations unless stated otherwise. ANOVA test was used to compare means of several groups of normally distributed variables. Indications of significance correspond to p values\u00a0<\u00a00.05(*), p<0.005(**), and p<0.0005(***). After ANOVA analysis, we apply a Dunett\u2019s post test to determine the p value between two conditions, results of these tests are noted Anova post-test.\n\n### Ethical approval\n\nAll experiments were approved by the Regional Ethical Committee on Animal Experiments of Bordeaux.\n",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "20e9ab44-cad0-4468-a945-695070b9cb36",
+      "submission_id": "1c837426-5d8c-41c3-8647-d438db40c115",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Vollum Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31755.sa1](https://doi.org/10.7554/eLife.31755.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Pre-post synaptic alignment through neuroligin tunes synaptic transmission efficiency\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor.\n\nThe reviewers have opted to remain anonymous. The reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nAs you will see some of the comments will require additional experiments concerning:\n\n1) The validation of the culture results using slice recording;\n\n2) The inclusion of evoked responses in addition to the mEPSC analysis;\n\n3) Additional simulation to address the comments of both reviewers; and\n\n4) Editing to avoid overinterpreting the results.\n\nThe original non-overlapping comments of the reviewers are below.\n\nReviewer #1:\n\nThe paper by Haas et al. examines the role of neuroligin in aligning postsynaptic receptor nanodomains to presynaptic active zones and the functional consequences of this alignment for synaptic transmission. To address these questions, the authors use imaging methods (dSTORM), electrophysiology, and modeling. The main findings are:\n\n- Super resolution imaging reveals a strong spatial colocalization between AMPA receptors and neuroligin-1;\n\n- Truncation of the C terminus of neuroligin-1 disrupts this colocalization and shifts the release machinery away from AMPA receptor clusters;\n\n- Electrophysiological analysis and modeling suggest that this physical shift markedly decreases the efficiency of synaptic transmission.\n\nBased on these results, the authors conclude that the alignment of pre- and postsynaptic components plays a critical role to ensure the efficiency of synaptic transmission. Overall, I found this a potentially interesting paper. The combination of high-resolution imaging, electrophysiology, and MCell modeling is nice and provides new insights into the mechanisms of synaptic transmission. However, it is also clear that parts of the paper are preliminary, and major revision is required to address these weaknesses.\n\n1) NLG1 and NLG1 deltaC were mostly expressed on wild-type background. This is a complication, because endogenously and exogenously expressed NLG1 mix. The necessary KO control data come only very late in the manuscript, when functional properties of synaptic transmission are assessed.\n\n2) The conclusions stand and fall with the validity of the culture systems used. The authors should make an attempt to validate the results in acute slice preparations.\n\n3) The functional characterization of synaptic transmission is rudimentary. A lot can go wrong in the analysis of miniature synaptic events, and evoked and miniature release may not even be mediated by the same postsynaptic receptors. Thorough analysis of evoked EPSCs seems required to support the conclusions.\n\n4) The diffusion coefficient of glutamate in the synaptic cleft seems an important parameter. However, the value used is unclear (it is just briefly mentioned in the legend of Figure 6), and how its exact value would affect the conclusions remains open. This point should be addressed in systematic simulations. Furthermore, the synaptic cleft height may affect the conclusions. Why was it assumed 20 nm if the authors have the full reconstruction of the extracellular space?\n\n5) The presentation of the results requires improvement. The functional significance of the NLG1-mediated alignment seems sometimes overstated. The relation between receptor alignment and previously reported receptor mobility should be better discussed (otherwise an apparent contradiction may remain for naive readers).\n\nReviewer #2:\n\nThis is a nice work dealing with an important and timely issue, which refers us to the basic mechanisms of synaptic transmission and its efficacy control. The authors employ some cutting-edge super-resolution techniques and electrophysiology in cultured neurons to find that the neuroligin NGL1 plays a key role in the clustering of postsynaptic AMPA receptors in front of the presynaptic glutamate release sites. This finding provides novel and important insights into the molecular machinery underpinning the functioning of brain circuits.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Pre-post synaptic alignment through neuroligin tunes synaptic transmission efficiency\" to eLife. Your revised article has been evaluated by Gary Westbrook (Senior Editor), a Reviewing Editor, and two reviewers.\n\nBoth editors and reviewers think that the manuscript has been improved and has the potential to be an important paper. However, we think the functional aspects of the work have not reached acceptability. Specifically the discussion among reviewers and editors concluded that additional data requested in the first reviews should be pursued to fully support the conclusions the authors would like to make. We realize that this reflects additional work for the authors, but in our opinion this work would substantially increase the merits of the work. We hope you will be able to address these concerns in a revised manuscript.\n\nMajor points:\n\n1) Regarding further experiments for slice recordings, the authors' contention that fast manipulation is not possible with this system is not compelling. It is indeed possible that viral expression generates expression at a sufficiently fast time scale, before structural changes are initiated. Before the authors have tried, it cannot be claimed that it does not work.\n\n2) Regarding the criticisms concerning the evoked EPSCs, the authors now provide analysis of EPSCs evoked in strontium. However, issues with these data remain. First, strontium is a rather artificial approach to study evoked synaptic transmission. Second, the slow rise time of the evoked EPSCs is 2 ms (Figure 4\u2014figure supplement 2D), which indicates technical problems with these recordings. How the authors can study the functional effects of nanoscale alignment under these recording conditions remains unclear. Finally, the authors try to argue that evoked EPSCs are difficult to interpret, because overlaying effects of receptor alignment and synapse number are difficult to dissect. However, a pessimistic view on the new data shown in the figure for reviewers would be that the central hypothesis is challenged. The authors could perform nonstationary fluctuation analysis of evoked EPSCs to distinguish between changes in N and q. In any case, additional experiments are needed to address the reviewers\u2019 concerns.\n\n3) Regarding the adjustment of rate constants in the AMPAR model (subsection \u201cSynaptic efficiency critically depends on the AMPAR nanodomains to glutamate release sites distance\u201d), it is unclear how microscopic reversibility can be maintained with these changes. Calculating the products of rates for the two cycles in clockwise and anti-clockwise direction in the modified model, they do not match, suggesting that microscopic reversibility is violated. Furthermore, the authors refer to Figure 5, but the relevant numbers are in the legend of Figure 6.\n",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dd0c0832-42e3-4b91-87a7-d2f19028cf77",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C1",
+      "claim": "AMPA receptors (AMPARs) are concentrated in small nanodomains around 80 nm in size.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPARs were initially thought to be homogeneously distributed throughout the PSD, but recent work based on super-resolution optical imaging (SRI) and electron microscopy has demonstrated that AMPARs are concentrated in small nanodomains around 80 nm in size, and containing 20 receptors on average (Fukata et al., 2013; MacGillavry et al., 2013; Masugi-Tokita et al., 2007; Nair et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple published studies (Fukata et al., 2013; MacGillavry et al., 2013; Masugi-Tokita et al., 2007; Nair et al., 2013) that used super-resolution optical imaging and electron microscopy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "e636ca9a-a843-4eaa-8b9b-52b6963b9892",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C2",
+      "claim": "AMPAR nanodomains contain 20 receptors on average.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPARs were initially thought to be homogeneously distributed throughout the PSD, but recent work based on super-resolution optical imaging (SRI) and electron microscopy has demonstrated that AMPARs are concentrated in small nanodomains around 80 nm in size, and containing 20 receptors on average (Fukata et al., 2013; MacGillavry et al., 2013; Masugi-Tokita et al., 2007; Nair et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple published studies (Fukata et al., 2013; MacGillavry et al., 2013; Masugi-Tokita et al., 2007; Nair et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "48b80c2d-c69d-4c3c-9cae-8c07f0ba8c8d",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C3",
+      "claim": "The glutamate content of a single presynaptic vesicle is not sufficient to activate the entire pool of AMPARs inside the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies showed that the glutamate content of a single presynaptic vesicle is not sufficient to activate the entire pool of AMPARs inside the PSD (Liu et al., 1999; Raghavachari and Lisman, 2004), suggesting that synaptic currents might be stronger if AMPARs were concentrated in front of pre-synaptic release sites rather than dispersed throughout the PSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Liu et al., 1999; Raghavachari and Lisman, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "eb6c49eb-1a91-4f94-bf38-c61a73b2db79",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C4",
+      "claim": "Mathematical models predict that when AMPARs are clustered in front of glutamate release sites, both the amplitude and the reliability of synaptic responses are improved.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mathematical models predict that when AMPARs are clustered in front of glutamate release sites, both the amplitude and the reliability of synaptic responses are improved (Franks et al., 2002, Franks et al., 2003; Rusakov, 2001; Rusakov and Kullmann, 1998; Tarusawa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple mathematical modeling studies (Franks et al., 2002, Franks et al., 2003; Rusakov, 2001; Rusakov and Kullmann, 1998; Tarusawa et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "261e0719-2ab1-461e-a2f7-0f5877cd3817",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C5",
+      "claim": "When AMPAR clusters are not aligned with release sites, synaptic currents are predicted to be weaker and highly variable.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when AMPAR clusters are not aligned with release sites, synaptic currents are predicted to be weaker and highly variable (Tarusawa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a modeling study (Tarusawa et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "edf90e0b-ec52-4d1a-bd2f-0f48891b229d",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C6",
+      "claim": "The pre-synaptic active zone protein RIM is concentrated in small domains.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study indicated however that the pre-synaptic active zone protein RIM is concentrated in small domains (Tang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a recent study (Tang et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "7ddcf91c-139b-4e50-a674-f5645735af58",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C7",
+      "claim": "Active glutamate release sites are co-localized with RIM and aligned with AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this study showed that active glutamate release sites are co-localized with RIM and aligned with AMPAR nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to a study mentioned in the previous sentence (Tang et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "98066876-4b6f-47d9-aa3b-d1c4ea5924f5",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C8",
+      "claim": "Trans-synaptic 'nanocolumn' organization is regulated by long-term synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This trans-synaptic 'nanocolumn' organization is regulated by long-term synaptic plasticity, highlighting its importance for the control of synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by implicit reference to the Tang et al., 2016 study discussed in the preceding sentences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "06d0b481-d6cb-444f-b9a8-ab65029b94c0",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C9",
+      "claim": "The neurexin-neuroligin complex forms a trans-synaptic bridge.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been abundantly described that the adhesion complex neurexin-neuroligin forms a trans-synaptic bridge (S\u00fcdhof, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to S\u00fcdhof, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "d0497189-6ad6-4272-8176-ca8761c9f3e2",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C10",
+      "claim": "Pre-synaptic neurexin is implicated in active zone formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-synaptic neurexin is implicated in active zone formation (Missler et al., 2003), while post-synaptic neuroligin-1 (NLG1) recruits PSD-95, NMDA receptors and AMPARs to partly structure the PSD (Budreck et al., 2013; Graf et al., 2004; Heine et al., 2008; Mondin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Missler et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "4b3d3f38-dbe2-431e-ac61-c03c5bc379b7",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C11",
+      "claim": "Post-synaptic neuroligin-1 (NLG1) recruits PSD-95, NMDA receptors and AMPARs to partly structure the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-synaptic neurexin is implicated in active zone formation (Missler et al., 2003), while post-synaptic neuroligin-1 (NLG1) recruits PSD-95, NMDA receptors and AMPARs to partly structure the PSD (Budreck et al., 2013; Graf et al., 2004; Heine et al., 2008; Mondin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Budreck et al., 2013; Graf et al., 2004; Heine et al., 2008; Mondin et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "4b7530b4-6c92-49c8-82bc-7e7343fc15c3",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C12",
+      "claim": "A C-terminally truncated NLG1 mutant (NLG1-\u0394Cter) prevents PSD-95 recruitment at newly formed synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a C-terminally truncated NLG1 mutant, unable to bind PDZ domain containing PSD proteins (NLG1-\u0394Cter), was previously shown to prevent PSD-95 recruitment at newly formed synapses, and reduce AMPAR-mediated synaptic transmission (Chih et al., 2005; Mondin et al., 2011; Nam and Chen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Chih et al., 2005; Mondin et al., 2011; Nam and Chen, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "27a6f1eb-e99b-4cca-b91d-7b2bc31b4b59",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C13",
+      "claim": "NLG1-\u0394Cter reduces AMPAR-mediated synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a C-terminally truncated NLG1 mutant, unable to bind PDZ domain containing PSD proteins (NLG1-\u0394Cter), was previously shown to prevent PSD-95 recruitment at newly formed synapses, and reduce AMPAR-mediated synaptic transmission (Chih et al., 2005; Mondin et al., 2011; Nam and Chen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Chih et al., 2005; Mondin et al., 2011; Nam and Chen, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "9590ed4e-8b86-49b4-abd3-615668a24de5",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C14",
+      "claim": "Expression of NLG1 increases spine density.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described (Mondin et al., 2011; Nam and Chen, 2005), expression of both truncated and full length NLG1 (Figure 1A and B) increases spine density, revealing the synaptogenic role of NLG1 (n = 10; 12; 9 respectively; ANOVA p=0.0004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and B (ANOVA p=0.0004) and citations to previous studies (Mondin et al., 2011; Nam and Chen, 2005).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "4bcb9931-3fb5-4248-bb5f-e6e6e7b5e89c",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C15",
+      "claim": "Expression of NLG1-\u0394Cter increases spine density.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described (Mondin et al., 2011; Nam and Chen, 2005), expression of both truncated and full length NLG1 (Figure 1A and B) increases spine density, revealing the synaptogenic role of NLG1 (n = 10; 12; 9 respectively; ANOVA p=0.0004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and B (ANOVA p=0.0004) and citations to previous studies (Mondin et al., 2011; Nam and Chen, 2005).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "249e86d8-bcbd-4522-93cd-4df2d5d4bfe5",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C16",
+      "claim": "In control neurons expressing GFP alone, between 1 to 2 AMPAR nanodomains per synapse are typically detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In control neurons expressing GFP alone, we typically detected between 1 to 2 AMPAR nanodomains per synapse, with an average size of 90 \u00b1 3 nm (Figure 1D and E), as reported previously (Nair et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and E and a citation to a previous study (Nair et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "f6e61fd6-fbfd-4ba7-9fcd-150f8a82ebb9",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C17",
+      "claim": "AMPAR nanodomains in control neurons have an average size of 90 \u00b1 3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In control neurons expressing GFP alone, we typically detected between 1 to 2 AMPAR nanodomains per synapse, with an average size of 90 \u00b1 3 nm (Figure 1D and E), as reported previously (Nair et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and E and a citation to a previous study (Nair et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "4bde7ecd-3f9f-470d-83d8-5bb4c6db0c01",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C18",
+      "claim": "NLG1 overexpression increased the surface density of AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1 overexpression increased the surface density of AMPAR nanodomains (Figure 1C), in agreement with the previous finding that NLG1 potentiates the formation of excitatory synapses (Chih et al., 2005; Ko et al., 2009; Levinson et al., 2005; Mondin et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C and citations to previous studies (Chih et al., 2005; Ko et al., 2009; Levinson et al., 2005; Mondin et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "592ad756-6c42-4718-844e-742cbad53f4a",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C19",
+      "claim": "NLG1 overexpression led to a re-organization of AMPAR nanodomains by increasing both their size and AMPAR content.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NLG1 overexpression led to a re-organization of AMPAR nanodomains by increasing both their size and AMPAR content (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "8ad82e44-46e4-4961-8566-6a78fc9f27a8",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C20",
+      "claim": "Expression of NLG1-\u0394Cter for 3 days did not affect AMPAR nano-organization compared to the GFP control.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, expression of NLG1-\u0394Cter for 3 days did not affect AMPAR nano-organization compared to the GFP control (Figure 1C\u2013E, ANOVA post-test: p=0.72; 0.82 and 0.33 for figure C; D and E respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C-E with statistical analysis (ANOVA post-test: p=0.72; 0.82 and 0.33).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "abb5adfc-23b5-49ad-ae4d-39396ab5fe3b",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C21",
+      "claim": "NLG1-\u0394Cter expression does not affect the total amount of AMPARs per synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis confirmed that NLG1-\u0394Cter expression does not affect the total amount of AMPARs per synapse, nor their organization in nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Tessellation analysis of d-STORM images described in the text and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "40530adb-aaa4-4709-b6d4-679fec69e938",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C22",
+      "claim": "NLG1-\u0394Cter expression does not affect AMPAR organization in nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis confirmed that NLG1-\u0394Cter expression does not affect the total amount of AMPARs per synapse, nor their organization in nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Tessellation analysis of d-STORM images described in the text and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "1b1fd379-bd09-492f-8487-b56ffcd1eb75",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C23",
+      "claim": "AMPARs exhibit two diffusion profiles: the immobile fraction represents mostly AMPARs trapped by PSD scaffolding proteins in nanodomains, whereas the mobile fraction represents individual freely moving AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that AMPARs exhibit two diffusion profiles: the immobile fraction represents mostly AMPARs trapped by PSD scaffolding proteins in nanodomains, whereas the mobile fraction represents individual freely moving AMPARs (Nair et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study (Nair et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "5371cd4d-032b-44fa-8b07-f89c9ff707f3",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C24",
+      "claim": "NLG1-\u0394Cter does not affect the distribution of diffusion coefficients of AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the distribution of diffusion coefficients and the mobile fraction (i.e. proportion of AMPARs with diffusion coefficients above 0.01 \u00b5m\u00b2/s) were not significantly affected by NLG1-\u0394Cter, as compared to GFP-expressing neurons (Figure 1\u2014figure supplement 2, n = 16 Ctrl and 21 NLG1-\u0394Cter, 2 sample t-test p=0.36), in agreement with previous findings using Quantum dots (Mondin et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2 (n = 16 Ctrl and 21 NLG1-\u0394Cter, 2 sample t-test p=0.36) and a citation to a previous study (Mondin et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "d874d1bb-66fd-4387-8aba-944961a9f4a5",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C25",
+      "claim": "NLG1-\u0394Cter does not affect the mobile fraction of AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the distribution of diffusion coefficients and the mobile fraction (i.e. proportion of AMPARs with diffusion coefficients above 0.01 \u00b5m\u00b2/s) were not significantly affected by NLG1-\u0394Cter, as compared to GFP-expressing neurons (Figure 1\u2014figure supplement 2, n = 16 Ctrl and 21 NLG1-\u0394Cter, 2 sample t-test p=0.36), in agreement with previous findings using Quantum dots (Mondin et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2 (n = 16 Ctrl and 21 NLG1-\u0394Cter, 2 sample t-test p=0.36) and a citation to a previous study (Mondin et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "5ffc34c7-56c0-40a9-9d37-44494a96651d",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C26",
+      "claim": "NLG1-\u0394Cter does not affect the equilibrium between diffusive and trapped AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, NLG1-\u0394Cter does not affect the equilibrium between diffusive and trapped AMPARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data on AMPAR diffusion and mobile fraction presented in the preceding sentences.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "b2e745cf-7885-4a57-af3a-da21b1e7e5c8",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C27",
+      "claim": "The majority of synaptic NLG1 spots overlap with AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively, we observed that the majority of synaptic NLG1 spots (green) overlapped with AMPAR nanodomains (purple).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on qualitative observation of dual-color d-STORM images described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "6b5350f7-7e9b-44e4-9a3e-ea1a8bd3b054",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C28",
+      "claim": "NLG1 does not form large domains inside synapses, but rather several small clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar area distribution between single fluorescence emitters and NLG1 clusters (Figure 2C) reveals that NLG1 does not form large domains inside synapses, but rather several small clusters, confirming previous findings with an alternative labelling strategy (Chamma et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and a citation to a previous study (Chamma et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "73a8e6cc-98b5-4c4a-ba30-6a97c4717360",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C29",
+      "claim": "The bivariate nearest neighbor distance distribution between NLG1 and AMPAR nanodomains was significantly smaller than that expected from an independent distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The centroid to centroid bivariate nearest neighbor distance distribution between NLG1 and AMPAR nanodomains was significantly smaller than that expected from an independent distribution (Figure 2D; green line, n = 512 pairs of co-localized objects), indicating a functional proximity between NLG1 and GluA2 clusters at the nanoscale.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D (n = 512 pairs of co-localized objects).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "edc70623-227c-49da-8d36-8565b27a5c56",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C30",
+      "claim": "Only 20% of NLG1 clusters did not co-localize, even partially, with a GluA2 nanodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20% of NLG1 clusters did not co-localize, even partially, with a GluA2 nanodomain, while 25% of NLG1 clusters co-localized to more than 80% with AMPAR nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Manders' coefficient analysis described in the text and shown in Figure 2E (n = 512 pairs of objects).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "f8979ea0-38a6-4a35-9eff-5ed14af9450d",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C31",
+      "claim": "25% of NLG1 clusters co-localized to more than 80% with AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20% of NLG1 clusters did not co-localize, even partially, with a GluA2 nanodomain, while 25% of NLG1 clusters co-localized to more than 80% with AMPAR nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Manders' coefficient analysis described in the text and shown in Figure 2E (n = 512 pairs of objects).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "999e4730-d456-426f-86e6-28e9ee467228",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C32",
+      "claim": "NLG1-\u0394Cter is organized in small clusters with an average size of 0.0042 \u00b1 0.0018 \u00b5m2.",
+      "claim_type": "EXPLICIT",
+      "source": "As NLG1, NLG1-\u0394Cter was organized in small clusters (Figure 2C, red line) with an average size of 0.0042 \u00b1 0.0018 \u00b5m2, whereas AMPARs were distributed as both small and large objects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "33f1b68c-d83b-487e-b8a2-88bade9efda8",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C33",
+      "claim": "Centroid to centroid bivariate nearest neighbor distance between all NLG1-\u0394Cter object and GluA2 clusters overlapped with a random distribution for the first 250 nm corresponding to the PSD size.",
+      "claim_type": "EXPLICIT",
+      "source": "Centroid to centroid bivariate nearest neighbor distance between all NLG1-\u0394Cter object and GluA2 clusters overlapped with a random distribution, at least for the first 250 nm corresponding to the PSD size (Figure 2F, red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "76bb8cea-3cf6-45d2-95cb-a13d597dcbad",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C34",
+      "claim": "There is no preferential association of NLG1-\u0394Cter clusters with AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "This led us to the conclusion that there is no preferential association of NLG1-\u0394Cter clusters with AMPAR nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the bivariate nearest neighbor distance analysis described in the preceding sentence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "71a48e02-e10c-4a15-9aae-cd8c03d94fbb",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C35",
+      "claim": "Only 38% of NLG1-\u0394Cter co-localized at least partially with AMPARs, compared with 80% for NLG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 38% of NLG1-\u0394Cter co-localized at least partially with AMPARs, compared with 80% for NLG1, revealing that the NLG1 C-terminal truncation significantly decreases the association between NLG1 and AMPAR nanodomains (comparison with NLG1: 2 sample t-test p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Manders' coefficient analysis shown in Figure 2G with statistical comparison (2 sample t-test p<0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "f50f30ae-6499-417d-9041-8985be37de32",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C36",
+      "claim": "The NLG1 C-terminal truncation significantly decreases the association between NLG1 and AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 38% of NLG1-\u0394Cter co-localized at least partially with AMPARs, compared with 80% for NLG1, revealing that the NLG1 C-terminal truncation significantly decreases the association between NLG1 and AMPAR nanodomains (comparison with NLG1: 2 sample t-test p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Manders' coefficient analysis with statistical comparison (2 sample t-test p<0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "dc1798d1-a213-4a53-a6ed-062708ec6d94",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C37",
+      "claim": "The bivariate nearest neighbor distances between RIM and AMPAR clusters was not affected by NLG1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The bivariate nearest neighbor distances between RIM and AMPAR clusters was not affected by NLG1 expression, but was significantly larger when NLG1-\u0394Cter was expressed (Figure 3B, Anova p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B with statistical analysis (Anova p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "28d20592-d48e-4c8d-8f5b-5e72ea801910",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C38",
+      "claim": "The bivariate nearest neighbor distances between RIM and AMPAR clusters was significantly larger when NLG1-\u0394Cter was expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "The bivariate nearest neighbor distances between RIM and AMPAR clusters was not affected by NLG1 expression, but was significantly larger when NLG1-\u0394Cter was expressed (Figure 3B, Anova p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B with statistical analysis (Anova p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "f9f8d151-33a2-44b9-a275-a0aef4c5f1b1",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C39",
+      "claim": "NLG1-\u0394Cter expression decreased the RIM-AMPAR apposition.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of Manders' coefficients confirmed that NLG1-\u0394Cter expression decreased the RIM-AMPAR apposition (Figure 3C, Anova p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C with statistical analysis (Anova p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "954a3e3c-c967-45ba-b19f-c639278af440",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C40",
+      "claim": "NLG1-\u0394Cter expression causes a physical misalignment between the presynaptic marker RIM and the postsynaptic AMPAR clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate a physical misalignment between the presynaptic marker RIM and the postsynaptic AMPAR clusters upon NLG1-\u0394Cter expression, while NLG1 expression did not display a similar effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data on RIM-AMPAR co-localization presented in the preceding sentences and shown in Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "0b0eeca6-ae40-4209-8027-ac1b057e7ccc",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C41",
+      "claim": "NLG1-\u0394Cter expression for 3 days reduced the amplitude of AMPAR mEPSCs by 24% as compared to GFP expressing controls.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1-\u0394Cter expression for 3 days reduced the amplitude of AMPAR mEPSCs by 24% as compared to GFP expressing controls (Figure 4C, average \u00b1 SEM: 11.63 \u00b1 0.63 for GFP, 8.956 \u00b1 0.40 for NLG1-\u0394Cter, 13.05 \u00b1 0.92 for NLG1; ANOVA p=0.0002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4C with statistical analysis (ANOVA p=0.0002).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "715d5597-7925-4b23-a367-e6dea6941431",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C42",
+      "claim": "NLG1 expression did not affect the miniature EPSC amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NLG1 expression did not affect the miniature EPSC amplitude, even if as expected by the higher synapse number observed in Figure 1A, there was a significant increase in miniature frequency (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4C and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "298d128c-cae2-4a9c-9eaa-8e96762c1514",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C43",
+      "claim": "NLG1 expression caused a significant increase in miniature frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NLG1 expression did not affect the miniature EPSC amplitude, even if as expected by the higher synapse number observed in Figure 1A, there was a significant increase in miniature frequency (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "95df0c59-77ca-40ad-a2d8-7b64148a6a1c",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C44",
+      "claim": "Neurons overexpressing NLG1 exhibited a ~4 fold increase in AMPAR-mediated EPSC amplitude (456.1% \u00b1 80.0) compared to paired non-electroporated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 2 mM extracellular calcium, we observed a ~4 fold increase in AMPAR-mediated EPSC amplitude (456.1% \u00b1 80.0) in neurons overexpressing NLG1 compared to paired non-electroporated controls, reflecting the well-known synaptogenic effect of NLG1 (Kwon et al., 2012; Shipman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data from organotypic slices and citations to previous studies (Kwon et al., 2012; Shipman et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "e32ee3df-ba61-4320-8300-52cfe75a50b7",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C45",
+      "claim": "NLG1 overexpression was associated with a decrease in the coefficient of variation (CV).",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was associated with a decrease in the coefficient of variation (CV) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "a791ddde-f7f8-4221-90aa-308a663dccae",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C46",
+      "claim": "Neurons expressing NLG1-\u0394Cter exhibited a limited ~2 fold increase in AMPAR-mediated EPSC amplitude (226.0 \u00b1 59.1) compared to control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neurons expressing NLG1-\u0394Cter exhibited a limited ~2 fold increase in AMPAR-mediated EPSC amplitude (226.0 \u00b1 59.1) and no change in CV compared to control neurons (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "1de247ca-3c16-464b-b2b6-77b3009d9e36",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C47",
+      "claim": "Neurons expressing NLG1-\u0394Cter showed no change in CV compared to control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neurons expressing NLG1-\u0394Cter exhibited a limited ~2 fold increase in AMPAR-mediated EPSC amplitude (226.0 \u00b1 59.1) and no change in CV compared to control neurons (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "415b0ac7-25e4-4da1-8f93-3c93a0d99420",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C48",
+      "claim": "There was no significant change in the paired-pulse ratio (PPR) upon expression of either NLG1 or NLG1-\u0394Cter.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, there was no significant change in the paired-pulse ratio (PPR) upon expression of either NLG1 or NLG1-\u0394Cter (Figure 4\u2014figure supplement 4; PPR for NLG1: control 1.63 \u00b1 0.11, NLG1 1.36 \u00b1 0.09, for NLG1-\u0394Cter), indicating no specific modification of the pre-synaptic release probability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "cc9c89ae-4bc2-4966-b8d3-6355fce5263e",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C49",
+      "claim": "Both NLG1 and NLG1-\u0394Cter expression increased the frequency of asynchronous EPSCs compared to non-electroporated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NLG1 and NLG1-\u0394Cter expression increased the frequency of asynchronous EPSCs compared to non-electroporated neurons, again reflecting the synaptogenic effect of NLG1 (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "8cea81f3-bba0-4358-af0e-1f9ff7a637f7",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C50",
+      "claim": "The amplitude of asynchronous EPSCs was reduced by 26% in neurons expressing NLG1-\u0394Cter but not in neurons expressing NLG1, when compared to control non-electroporated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as observed with miniatures in dissociated cultures, the amplitude of asynchronous EPSCs was reduced by 26% in neurons expressing NLG1-\u0394Cter but not in neurons expressing NLG1, when compared to control non-electroporated neurons (Figure 4H and I, for NLG1 expression: control: 11.59 \u00b1 0.73, NLG1: 11.60 \u00b1 1.03; for NLG1-\u0394Cter expression: control: 12.01 \u00b1 1.56, NLG1-\u0394Cter: 8.893 \u00b1 0.70; paired t-test p=0.99 and 0.018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4H and I with statistical analysis (paired t-test p=0.99 and 0.018).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "71d5a79a-7f6d-48ed-9136-737fe8af4be7",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C51",
+      "claim": "A 32% decrease of asynchronous EPSC amplitude was observed on NLG1-\u0394Cter expressing neurons relatively to unelectroporated counterparts in the NLG1 KO background.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained on the NLG1 KO background (Figure 4\u2014figure supplement 3), with a 32% decrease of asynchronous EPSC amplitude on NLG1-\u0394Cter expressing neurons relatively to unelectroporated counterparts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "ba22f198-a078-4735-b24d-6ed60f5a008f",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C52",
+      "claim": "NLG1-\u0394Cter directly affects the quantal size.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that NLG1-\u0394Cter directly affects the quantal size, which is compatible with our concept of synaptic mis-alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental electrophysiology data on asynchronous EPSCs presented in the preceding sentences.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "62e0ca60-f43e-4256-ae39-bf5ae2af7478",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C53",
+      "claim": "Incubation of hippocampal neurons with NLG1 competing ligands decreased the co-localization between RIM and GluA2 containing AMPARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of 14 DIV hippocampal neurons for 1\u20132 days with NLG1 competing ligands decreased the co-localization between RIM and GluA2 containing AMPARs observed by dual-color d-STORM (Figure 5A\u2013C), and reduced by 30% AMPAR-mediated mEPSC amplitudes (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental d-STORM data shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "dd3430f2-d9ba-438d-8c06-0f252d7effe2",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C54",
+      "claim": "Incubation of hippocampal neurons with NLG1 competing ligands reduced by 30% AMPAR-mediated mEPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of 14 DIV hippocampal neurons for 1\u20132 days with NLG1 competing ligands decreased the co-localization between RIM and GluA2 containing AMPARs observed by dual-color d-STORM (Figure 5A\u2013C), and reduced by 30% AMPAR-mediated mEPSC amplitudes (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "000764c2-a592-46fa-84f1-fc911f12afec",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C55",
+      "claim": "Control non-sense TAT peptides had no effect on RIM-AMPAR co-localization compared to untreated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In both assays, control non-sense TAT peptides had no effect compared to untreated neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "dda5ecf0-035a-486c-854d-04352ffaddfc",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C56",
+      "claim": "NLG1 peptides did not alter AMPAR-mediated mEPSC frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NLG1 peptides did not alter AMPAR-mediated mEPSC frequency (Figure 5F), suggesting an exclusive post-synaptic effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "7f8c5f0b-7e78-4971-82a0-de7f4bb1dcc9",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C57",
+      "claim": "NLG1 competing peptides and NLG1-\u0394Cter expression had very similar effects on AMPAR positioning and synaptic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, NLG1 competing peptides and NLG1-\u0394Cter expression had very similar effects on AMPAR positioning and synaptic responses, suggesting a common mechanism of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from comparison of experimental results with NLG1 peptides and NLG1-\u0394Cter expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "ae035482-3957-4e5e-a416-d963b3b8b795",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C58",
+      "claim": "The number of released glutamate molecules was fixed to 1500, 2000, 3000 or 4500 in the simulations, to be in the range of the estimated amount per pre-synaptic vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations, the number of released glutamate molecules was fixed to 1500, 2000, 3000 or 4500, to be in the range of the estimated amount per pre-synaptic vesicle (Savtchenko et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study estimating glutamate content per vesicle (Savtchenko et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "62ea7d84-00ef-4a00-afdd-8d15b0d6aff4",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C59",
+      "claim": "The glutamate content per pre-synaptic vesicle was positively correlated with the synaptic response in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, simulated curves demonstrated that the glutamate content per pre-synaptic vesicle was positively correlated with the synaptic response (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "3f7d8629-e0e5-4cfd-a278-3a736b236715",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C60",
+      "claim": "The number of opened AMPAR was inversely correlated to the distance between the release site and AMPAR nanodomains in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the simulation further showed that the number of opened AMPAR was inversely correlated to the distance between the release site and AMPAR nanodomains (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational modeling results shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "89cce3c9-91aa-4d92-ab05-28ce8662ad65",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C61",
+      "claim": "A release of 3000 glutamate molecules at 150 nm from an AMPAR nanodomain led to a decrease of almost 40% of the synaptic response in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "A release of 3000 glutamate molecules, which is in the upper range of glutamate content per vesicle, at 150 nm from an AMPAR nanodomain, led to a decrease of almost 40% of the synaptic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "e8ad62a5-d4a3-48dc-84e3-b6567c566916",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C63",
+      "claim": "The glutamate diffusion coefficient drastically changed the synaptic transmission efficiency without altering the tight correlation between synaptic transmission and pre-post alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "The first parameter drastically changed the synaptic transmission efficiency (i.e. the lower the glutamate diffusion coefficient, the higher AMPA currents) without altering the tight correlation between synaptic transmission and pre-post alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results described in the text and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "fb19ebbe-10b7-40e0-aaf9-5b5cead7d290",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C64",
+      "claim": "AMPAR-mediated currents are independent with respect to the astrocyte-dependent clearance of the glutamate released from a single vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "The second parameter revealed the independence of AMPAR-mediated currents with respect to the astrocyte-dependent clearance of the glutamate released from a single vesicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results described in the text and shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "ea4a7ec7-236f-4cc9-8bf2-91ab333ee654",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C65",
+      "claim": "NLG1 plays an important role in the organization of trans-synaptic 'nano-columns', by positioning AMPAR nanodomains in close proximity to pre-synaptic release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "First, NLG1 seems to play an important role in the organization of trans-synaptic 'nano-columns', by positioning AMPAR nanodomains in close proximity to pre-synaptic release sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "72e188c8-e5e4-4845-95af-4148491022b9",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C66",
+      "claim": "The amplitude of AMPAR-mediated currents is highly sensitive to pre-post synaptic nanoscale alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the amplitude of AMPAR-mediated currents is highly sensitive to pre-post synaptic nanoscale alignment (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the experimental and computational modeling results presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "218e59e6-eae9-4c49-9c61-0531a43825ba",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C67",
+      "claim": "NLG1 binds pre-synaptic neurexins via its extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1 binds pre-synaptic neurexins via its extracellular domain, while its cytoplasmic tail exhibits various binding sites including a C-terminal PDZ domain binding motif, a central gephyrin binding motif, and an upstream non-canonical motif without identified interactor but also important for neuroligin function (Dean et al., 2003; Giannone et al., 2013; Irie et al., 1997; Shipman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Dean et al., 2003; Giannone et al., 2013; Irie et al., 1997; Shipman et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "548ed55a-91bf-40cd-a786-3b308fecb277",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C68",
+      "claim": "NLG1's cytoplasmic tail exhibits a C-terminal PDZ domain binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1 binds pre-synaptic neurexins via its extracellular domain, while its cytoplasmic tail exhibits various binding sites including a C-terminal PDZ domain binding motif, a central gephyrin binding motif, and an upstream non-canonical motif without identified interactor but also important for neuroligin function (Dean et al., 2003; Giannone et al., 2013; Irie et al., 1997; Shipman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Dean et al., 2003; Giannone et al., 2013; Irie et al., 1997; Shipman et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "f73f5137-6711-4644-a448-c0adb5aa61e9",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C69",
+      "claim": "NLG1's cytoplasmic tail exhibits a central gephyrin binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1 binds pre-synaptic neurexins via its extracellular domain, while its cytoplasmic tail exhibits various binding sites including a C-terminal PDZ domain binding motif, a central gephyrin binding motif, and an upstream non-canonical motif without identified interactor but also important for neuroligin function (Dean et al., 2003; Giannone et al., 2013; Irie et al., 1997; Shipman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Dean et al., 2003; Giannone et al., 2013; Irie et al., 1997; Shipman et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "0682b94b-8b4b-4527-b6a9-5b3257aa45da",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C70",
+      "claim": "When expressed during the early stages of synaptogenesis, NLG1-\u0394Cter is able to strongly increase synapse number, but does not recruit enough PSD-95 and AMPARs to sustain normal synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed during the early stages of synaptogenesis, this NLG1 mutant is able to strongly increase synapse number, but does not recruit enough PSD-95 and AMPARs to sustain normal synaptic transmission (Budreck et al., 2013; Mondin et al., 2011; Nam and Chen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Budreck et al., 2013; Mondin et al., 2011; Nam and Chen, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "b2274c6e-7bc2-45ee-8317-44a3d08e810c",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C71",
+      "claim": "NLG1-\u0394Cter outcompeted the endogenous NLG1 for the binding to neurexins, allowing unanchored PSD-95 scaffolds and connected AMPAR nanodomains to flow away from the release site.",
+      "claim_type": "IMPLICIT",
+      "source": "Our interpretation is that NLG1-\u0394Cter outcompeted the endogenous NLG1 for the binding to neurexins (or/and other pre-synaptic partners), allowing unanchored PSD-95 scaffolds and connected AMPAR nanodomains to flow away from the release site (MacGillavry et al., 2013; Nair et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' interpretation of their experimental results, with citations to previous studies (MacGillavry et al., 2013; Nair et al., 2013).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "5215ce9f-65fd-48f5-947b-26cb699395ab",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C72",
+      "claim": "Heterodimerization might occur between recombinant NLG1-\u0394Cter and endogenous NLG1.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously published, heterodimerization might occur between recombinant NLG1-\u0394Cter and endogenous NLG1 (Shipman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study (Shipman et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "b823ca89-c9d6-4869-8fab-635bf6b0abb8",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C73",
+      "claim": "NLG1-\u0394Cter might heterodimerize with NLG3.",
+      "claim_type": "IMPLICIT",
+      "source": "Interestingly, a similar reduction in AMPAR currents induced by NLG1-\u0394Cter was observed in organotypic slices from both NLG1 WT and KO genetic backgrounds, revealing a potential heterodimerization of NLG1-\u0394Cter with other NLGs, most likely NLG3 (Shipman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental results in NLG1 KO background, with a citation to a previous study (Shipman et al., 2011).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "103b9e60-da83-41a2-85de-8c6aa812cd88",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C74",
+      "claim": "C-terminal interactions between NLG1 and PDZ domain containing scaffolding proteins such as PSD-95 are important to align AMPAR nanodomains in front of pre-synaptic release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that C-terminal interactions between NLG1 and PDZ domain containing scaffolding proteins such as PSD-95, are important to align AMPAR nanodomains in front of pre-synaptic release sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results with NLG1-\u0394Cter and NLG1 peptides presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "6d22520c-9a5d-4ae2-8d7b-3586bce787ea",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C75",
+      "claim": "A displacement of AMPAR nanodomain of less than 100 nm decreases mEPSC amplitude by about 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional effect of such a molecular disorganization caused either by NLG1-\u0394Cter expression or NLG1 peptide incubation was found to be unexpectedly important, that is a displacement of AMPAR nanodomain of less than 100 nm decreases mEPSC amplitude by about 30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental electrophysiology and imaging results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "015b391f-2a8d-4ede-a021-5a469145ea3d",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C76",
+      "claim": "An equivalent 25% decrease of current could be explained by either a 3-fold decrease in glutamate content (from 4500 to 1500 molecules per vesicle), a 32% loss in the number of AMPARs per nanodomain, or a 100 nm shift between pre- and post-organization (for a glutamate content of 2000 molecules per vesicle).",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations predict that an equivalent 25% decrease of current could be explained by either a 3-fold decrease in glutamate content (from 4500 to 1500 molecules per vesicle), a 32% loss in the number of AMPARs per nanodomain, or a 100 nm shift between pre- and post-organization (for a glutamate content of 2000 molecules per vesicle), underlying the high sensitivity of synaptic currents to pre-post alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "7bf7e661-3c6f-45e2-8e97-85d2603e179e",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C77",
+      "claim": "Action potential-dependent currents recorded from slices in calcium or strontium conditions combine the synaptogenic effect of NLG1 via its extracellular interaction with pre-synaptic adhesion proteins (affecting parameter n) and its role in AMPAR recruitment and pre-post alignment (affecting parameter q).",
+      "claim_type": "EXPLICIT",
+      "source": "Action potential-dependent currents recorded from slices in calcium or strontium conditions do not directly reflect the synaptic response because they combine (i) the synaptogenic effect of NLG1 via its extracellular interaction with pre-synaptic adhesion proteins, which affect the parameter n and (ii) its role in AMPAR recruitment and pre-post alignment, affecting the parameter q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results and established knowledge about synaptic transmission parameters.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "52a378b4-91ea-4345-bd5e-f0c1d2ed35bc",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C78",
+      "claim": "The absence of effect on the paired pulse properties indicates that the p value should not be affected by NLG1 and NLG1-\u0394Cter expression.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the absence of effect on the paired pulse properties (Figure 4\u2014figure supplement 4) indicates that the p value should not be affected by NLG1 and NLG1-\u0394Cter expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental paired-pulse data shown in Figure 4\u2014figure supplement 4 and established knowledge about paired-pulse ratio.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "ae2d425f-ed56-4f97-8b02-64749fef3601",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C79",
+      "claim": "The net increase of EPSC amplitude in calcium conditions induced by both NLG1 and NLG1-\u0394Cter compared to control neurons can be attributed to an increase of the n parameter by recruiting additional pre-synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the net increase of EPSC amplitude in calcium conditions induced by both NLG1 and NLG1-\u0394Cter compared to control neurons can be attributed to an increase of the n parameter by recruiting additional pre-synapses, as abundantly described in the literature and shown Figure 1 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data shown in Figure 1 and Figure 4\u2014figure supplement 1, and citations to literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "26e7ef1e-e40b-49d9-94cb-c50af0e3b2fa",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C80",
+      "claim": "The significant decrease of evoked AMPAR-mediated EPSC amplitude caused by NLG1-\u0394Cter with respect to NLG1, combined with the increase in CV, can be attributed to either a recruitment of silent synapses by NLG1-\u0394Cter, or a decrease of the quantal size (q) due to pre-post synaptic mis-alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the significant decrease of evoked AMPAR-mediated EPSC amplitude caused by NLG1-\u0394Cter with respect to NLG1, combined with the increase in CV is more difficult to explain. It can be attributed to either a recruitment of silent synapses by NLG1-\u0394Cter, or a decrease of the quantal size (q) due for example to pre-post synaptic mis-alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about possible explanations for the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "a9492520-27d4-46f4-bd2f-db2f22c21b21",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C81",
+      "claim": "Spontaneous miniature currents recorded in calcium and asynchronous EPSCs recorded in strontium suggest that NLG1-\u0394Cter expression affects both action potential-dependent and -independent synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, taken together, spontaneous miniature currents recorded in calcium and asynchronous EPSCs recorded in strontium suggest that NLG1-\u0394Cter expression affects both action potential-dependent and -independent synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental electrophysiology results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "97f3fa26-c3f1-4c9b-9df7-bba89067d949",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C82",
+      "claim": "Synapses exhibit a relative tolerance to variability both in the glutamate content per vesicle and in the number of AMPAR per nanodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "First, synapses exhibit a relative tolerance to variability both in the glutamate content per vesicle and in the number of AMPAR per nanodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "39e33057-f8b1-4204-bd7e-bdb3ba74c476",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C83",
+      "claim": "A 10\u201320% variation in glutamate content per vesicle and number of AMPAR per nanodomain will not drastically affect synaptic transmission efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a 10\u201320% variation in these parameters will not drastically affect synaptic transmission efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "f1624ffe-abd0-4923-a4ae-c4dd85777ebd",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C84",
+      "claim": "Fast and large modifications in synaptic amplitude can be better achieved by molecular pre-post misalignment than by changes in AMPAR number.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, fast and large modifications in synaptic amplitude can be better achieved by molecular pre-post misalignment than by changes in AMPAR number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational modeling and experimental results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "19b0b014-1901-4b85-8890-3d88538b200c",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C85",
+      "claim": "A transient physiological misalignment between RIM and PSD95 clusters occurs upon induction of chemical Long Term Depression (LTD).",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction is in line with the transient physiological misalignment between RIM and PSD95 clusters previously described upon induction of chemical Long Term Depression (LTD) (Tang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study (Tang et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "738852de-ae3f-4c39-aa97-46fade7b4c5a",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C86",
+      "claim": "The amplitude of AMPAR currents is not sensitive to the glutamate clearance by glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our modeling data predict that the amplitude of AMPAR currents is not sensitive to the glutamate clearance by glial cells, in agreement with the model that AMPAR activation takes place within the 100 nm surrounding the release site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "addc34a6-5f72-463d-9e17-7d34bf3a1db1",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C87",
+      "claim": "AMPAR activation takes place within the 100 nm surrounding the release site.",
+      "claim_type": "IMPLICIT",
+      "source": "Interestingly, our modeling data predict that the amplitude of AMPAR currents is not sensitive to the glutamate clearance by glial cells, in agreement with the model that AMPAR activation takes place within the 100 nm surrounding the release site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from computational modeling results and established models of synaptic transmission.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "b057c485-2c76-43f6-90e4-1685f287b653",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C88",
+      "claim": "AMPAR opening does not occur beyond 250 nm from the site of vesicle fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "By varying the gating parameters, we do not observe AMPAR opening beyond 250 nm from the site of vesicle fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "c4617b6e-6e1f-423f-bdab-bcbea5a10c0f",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C89",
+      "claim": "High efficiency of synaptic transmission, high amplitude response and low variability, requires a tight clustering of AMPA receptors, and an alignment of these clusters with the pre-synaptic release site.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous models suggested that high efficiency of synaptic transmission, high amplitude response and low variability, requires a tight clustering of AMPA receptors, and an alignment of these clusters with the pre-synaptic release site (Nair et al., 2013; Tarusawa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous modeling studies (Nair et al., 2013; Tarusawa et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "2d1065bc-6009-4050-87cd-2400f8507b15",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C90",
+      "claim": "Synapses optimize the use of glutamate by controlling the alignment between pre-synaptic release sites and AMPAR nanodomains via NLG1-based trans-synaptic adhesion, with surprisingly high sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study proposes that synapses, via NLG1-based trans-synaptic adhesion, optimize the use of glutamate by controlling the alignment between pre-synaptic release sites and AMPAR nanodomains, with surprisingly high sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from all the experimental and computational results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "fd390bf9-f657-434b-9fd1-1cb9fd1589c8",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C91",
+      "claim": "Expression of NLG1-\u0394Cter suppresses the co-localization of NLG1 and AMPAR nanodomains without changing the overall AMPAR nanoscale organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using dual-color SRI, we report that expression of the NLG1-\u0394Cter mutant or incubation with cell-permeant NLG1 C-terminal peptides suppress the co-localization of NLG1 and AMPAR nanodomains without changing the overall AMPAR nanoscale organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental d-STORM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "a8a5d614-8f46-42ab-9668-10833674b3ff",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C92",
+      "claim": "Incubation with cell-permeant NLG1 C-terminal peptides suppresses the co-localization of NLG1 and AMPAR nanodomains without changing the overall AMPAR nanoscale organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using dual-color SRI, we report that expression of the NLG1-\u0394Cter mutant or incubation with cell-permeant NLG1 C-terminal peptides suppress the co-localization of NLG1 and AMPAR nanodomains without changing the overall AMPAR nanoscale organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental d-STORM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "0f5f3a24-0850-4cb0-ad92-db9046746f55",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C93",
+      "claim": "Expression of NLG1-\u0394Cter induces a physical shift between pre-synaptic RIM clusters and post-synaptic AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, those treatments induce a physical shift between pre-synaptic RIM clusters and post-synaptic AMPAR nanodomains, associated with a significant decrease in AMPAR-mediated miniature and evoked EPSC amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental d-STORM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "f5a88ba9-509b-4e5a-a43b-6a45b2ecded5",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C94",
+      "claim": "Incubation with cell-permeant NLG1 C-terminal peptides induces a physical shift between pre-synaptic RIM clusters and post-synaptic AMPAR nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, those treatments induce a physical shift between pre-synaptic RIM clusters and post-synaptic AMPAR nanodomains, associated with a significant decrease in AMPAR-mediated miniature and evoked EPSC amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental d-STORM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "86a5a48a-1793-4f15-861f-c86a7195d8f4",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C95",
+      "claim": "Expression of NLG1-\u0394Cter is associated with a significant decrease in AMPAR-mediated miniature and evoked EPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, those treatments induce a physical shift between pre-synaptic RIM clusters and post-synaptic AMPAR nanodomains, associated with a significant decrease in AMPAR-mediated miniature and evoked EPSC amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "5c3a952c-64ca-48b1-8c0f-f0c0bf70d44d",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C96",
+      "claim": "Incubation with cell-permeant NLG1 C-terminal peptides is associated with a significant decrease in AMPAR-mediated miniature and evoked EPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, those treatments induce a physical shift between pre-synaptic RIM clusters and post-synaptic AMPAR nanodomains, associated with a significant decrease in AMPAR-mediated miniature and evoked EPSC amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental electrophysiology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "7533820f-999d-40e5-a0ff-ce5d03b1a8c9",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C97",
+      "claim": "Computer modelling predicts that ~100 nm lateral shift between AMPAR nanoclusters and glutamate release sites induces a significant reduction in AMPAR-mediated currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer modelling predicts that ~100 nm lateral shift between AMPAR nanoclusters and glutamate release sites induces a significant reduction in AMPAR-mediated currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "07495e2e-c623-4b3f-be07-ece0d98681bf",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C98",
+      "claim": "Synapses need to release glutamate precisely in front of AMPAR nanodomains to maintain a high synaptic responses efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest the synapses necessity to release glutamate precisely in front of AMPAR nanodomains, to maintain a high synaptic responses efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from all the experimental and computational results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "736bb712-fa53-4d26-bd94-004587033112",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C99",
+      "claim": "Neurexin-neuroligin mediated pre-post synaptic alignment tightly regulates synaptic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus propose that neurexin-neuroligin mediated pre-post synaptic alignment tightly regulates synaptic efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from all the experimental and computational results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "4fad2ca6-c52b-4bbc-bf14-2e364060031c",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C100",
+      "claim": "AMPARs mediate the vast majority of fast excitatory synaptic transmission in the mammalian brain.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPA-type glutamate receptors (AMPARs) mediate the vast majority of fast excitatory synaptic transmission in the mammalian brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about AMPAR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "fe95cdb9-088b-42ab-b8a9-bc69d8046fa9",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C101",
+      "claim": "AMPARs are stabilized at the post-synaptic density (PSD) by interactions with PDZ domain containing proteins such as PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPARs are stabilized at the post-synaptic density (PSD) by interactions with PDZ domain containing proteins such as PSD-95.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about AMPAR stabilization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "022c48a3-3ab1-48d4-af8e-1c8b47676ad1",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C102",
+      "claim": "Nanodomains are determined as clusters of AMPARs present inside the synapse and containing at least 5 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanodomains are determined as clusters of AMPARs present inside the synapse and containing at least 5 receptors, based on single particle emission properties (see Nair et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodological definition used in the study, based on a citation to Nair et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "bfad5da2-90b1-4ae2-82de-e3c1948c8eb3",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C103",
+      "claim": "AMPAR nanodomains are tightly associated with PSD-95 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that AMPAR nanodomains are tightly associated with PSD-95 sites (MacGillavry et al., 2013; Nair et al., 2013), our rationale was that by disconnecting NLG1 from PSD-95, we would perturb the nanoscale positioning of AMPARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (MacGillavry et al., 2013; Nair et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "98ea2fa4-5d27-4a0a-a129-9969f1242a7b",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C104",
+      "claim": "NLG1-\u0394Cter has an intact extracellular domain allowing normal contacts with pre-synaptic partners such as neurexins.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1-\u0394Cter has an intact extracellular domain allowing normal contacts with pre-synaptic partners such as neurexins (Chih et al., 2005; Mondin et al., 2011), but is unable to interact with cytoplasmic proteins within the PSD, and thus should behave as a dominant-negative mutant that uncouples trans-synaptic adhesion from the PSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Chih et al., 2005; Mondin et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "81fb5b66-29f7-446c-93be-066e3b3ad203",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C105",
+      "claim": "NLG1-\u0394Cter is unable to interact with cytoplasmic proteins within the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1-\u0394Cter has an intact extracellular domain allowing normal contacts with pre-synaptic partners such as neurexins (Chih et al., 2005; Mondin et al., 2011), but is unable to interact with cytoplasmic proteins within the PSD, and thus should behave as a dominant-negative mutant that uncouples trans-synaptic adhesion from the PSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the structural properties of the NLG1-\u0394Cter mutant described in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "b4f52a86-a8b5-4904-8aa0-3575252778ec",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "claim_id": "C106",
+      "claim": "NLG1-\u0394Cter should behave as a dominant-negative mutant that uncouples trans-synaptic adhesion from the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "NLG1-\u0394Cter has an intact extracellular domain allowing normal contacts with pre-synaptic partners such as neurexins (Chih et al., 2005; Mondin et al., 2011), but is unable to interact with cytoplasmic proteins within the PSD, and thus should behave as a dominant-negative mutant that uncouples trans-synaptic adhesion from the PSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the structural properties of NLG1-\u0394Cter and established knowledge about dominant-negative effects.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02db6b1d-ec9f-4e33-a509-0e9df04d4fb0",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Both full-length NLG1 and NLG1-\u0394Cter increase spine density when expressed in hippocampal neurons, demonstrating the synaptogenic role of NLG1 independent of its C-terminal domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C15 are supported by experimental data in Figure 1A-B with statistical significance (ANOVA p=0.0004) and consistent with prior literature (Mondin et al., 2011; Nam and Chen, 2005). The synaptogenic effect is clearly demonstrated for both constructs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "8d5926e5-aef8-4057-8e50-c07c64a98fe9",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NLG1-\u0394Cter expression does not affect AMPAR nanoscale organization, including nanodomain density, size, receptor content, or the equilibrium between diffusive and trapped AMPARs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C24-C26 are supported by multiple complementary analyses including d-STORM imaging (Figure 1C-E), Tessellation analysis (Figure 1\u2014figure supplement 1), and uPAINT diffusion measurements (Figure 1\u2014figure supplement 2) with appropriate statistical tests showing no significant differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "94f3bf54-45b0-4929-930d-325f3c8d601b",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Full-length NLG1 exhibits tight nanoscale co-localization with AMPAR nanodomains, with 80% of NLG1 clusters co-localizing at least partially with AMPAR nanodomains and 25% showing >80% overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by dual-color d-STORM experiments with quantitative bivariate nearest neighbor distance analysis and Manders' coefficient measurements (Figure 2D-E, n=512 pairs). The methodology was validated using GluA1/GluA2 co-labeling controls (Figure 2\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "a296d537-f2ed-4e03-b904-848c283d04af",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NLG1-\u0394Cter is delocalized from AMPAR nanodomains, with only 38% showing partial co-localization compared to 80% for full-length NLG1, demonstrating that the C-terminal domain is critical for NLG1-AMPAR nanoscale association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by dual-color d-STORM with bivariate nearest neighbor distance analysis showing overlap with random distribution (Figure 2F) and Manders' coefficient analysis showing significant reduction in co-localization (2 sample t-test p<0.0001, Figure 2G).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "fc453789-b30f-45ed-9508-f55185056394",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NLG1-\u0394Cter expression causes physical misalignment between presynaptic RIM clusters and postsynaptic AMPAR nanodomains, while full-length NLG1 expression maintains proper alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by dual-color d-STORM experiments showing significantly increased bivariate nearest neighbor distances and decreased Manders' coefficients for NLG1-\u0394Cter compared to controls (Figure 3B-C, ANOVA p<0.001), while NLG1 expression showed no effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "23d59f3a-f87f-48cf-9f1f-3d5b31cf8a9e",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NLG1-\u0394Cter expression reduces AMPAR-mediated miniature EPSC amplitude by 24% without affecting frequency, while full-length NLG1 increases frequency without affecting amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by whole-cell voltage clamp recordings from dissociated hippocampal cultures with appropriate statistical analysis (Figure 4A-C, ANOVA p=0.0002 for amplitude; Figure 4\u2014figure supplement 1A for frequency). The differential effects on amplitude vs. frequency are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "a37ecadc-f58c-495d-9896-398862bb1ff3",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In organotypic slices, NLG1 overexpression increases AMPAR-mediated EPSC amplitude ~4-fold with decreased coefficient of variation, while NLG1-\u0394Cter shows only ~2-fold increase with no CV change, and neither affects paired-pulse ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are supported by paired whole-cell recordings from organotypic slices (Figure 4\u2014figure supplement 2 and 4). The differential effects on EPSC amplitude and CV are clearly demonstrated, and the lack of PPR change (Figure 4\u2014figure supplement 4) indicates no presynaptic release probability changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "43f49526-a38f-4e19-9c1c-7048dc8a3e93",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NLG1-\u0394Cter reduces asynchronous EPSC amplitude by 26-32% in both wild-type and NLG1 KO backgrounds while increasing frequency, demonstrating a direct effect on quantal size consistent with synaptic misalignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by strontium-evoked asynchronous EPSC recordings from organotypic slices in both WT (Figure 4H-I, paired t-test p=0.018) and NLG1 KO backgrounds (Figure 4\u2014figure supplement 3). The consistency across genetic backgrounds strengthens the conclusion about quantal size effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "0709cd96-c2a2-43a3-a771-33ce52897af6",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cell-permeant NLG1 C-terminal competing peptides decrease RIM-AMPAR co-localization and reduce mEPSC amplitude by 30% without affecting frequency, phenocopying NLG1-\u0394Cter effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by dual-color d-STORM (Figure 5A-C) and electrophysiology (Figure 5E-F) experiments with appropriate controls (non-sense peptides). The similarity to NLG1-\u0394Cter effects provides independent validation of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "ae1415ba-f35c-425a-84f3-ffd7102c81d2",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Monte Carlo simulations predict that AMPAR-mediated currents are highly sensitive to the distance between glutamate release sites and AMPAR nanodomains, with a ~100 nm shift causing ~25-40% reduction in synaptic response depending on glutamate content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 and C76 are supported by MCell simulations using realistic 3D EM-derived synaptic geometry with validated AMPAR kinetics (Figure 6B-E). The simulations systematically varied glutamate content (1500-4500 molecules) and release distance (0-200 nm), providing quantitative predictions consistent with experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "bbea5d22-af9b-4d1c-b116-c1ecf149bb52",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Computational modeling predicts that glutamate diffusion coefficient affects synaptic transmission efficiency but not the correlation with pre-post alignment, and that AMPAR currents are independent of astrocytic glutamate clearance for single vesicle release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C86, and C88 are supported by systematic parameter variation in MCell simulations (Figure 6\u2014figure supplements 1-2). The modeling demonstrates that AMPAR activation occurs within 100 nm of the release site and is insensitive to glial transporter density, supporting the local nature of synaptic transmission.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "e15e531b-1b7a-4dbb-a681-d7b59be38aa7",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NLG1-based trans-synaptic adhesion organizes nanocolumns by positioning AMPAR nanodomains in close proximity to presynaptic release sites, and synaptic efficacy is highly sensitive to this nanoscale alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C74, C90, and C99 represent the main conclusions synthesized from all experimental (imaging and electrophysiology) and computational results. The convergence of evidence from NLG1-\u0394Cter expression, competing peptides, and modeling strongly supports this integrative conclusion about NLG1's organizational role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "46e3ab5a-89d7-49ca-9e9f-188a691c5b85",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "NLG1-\u0394Cter likely acts as a dominant-negative by outcompeting endogenous NLG1 for neurexin binding and may heterodimerize with other neuroligins including NLG3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71 and C73 are mechanistic interpretations based on inference from experimental observations. While the similar effects in NLG1 WT and KO backgrounds (C51, Figure 4\u2014figure supplement 3) support heterodimerization with other NLGs, direct evidence for the proposed competitive mechanism and heterodimerization is not provided. These remain plausible but unproven hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "39c26a70-6181-44cc-9b3f-01848ab3de2e",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Action potential-dependent currents combine synaptogenic effects (affecting n) and AMPAR recruitment/alignment effects (affecting q), with NLG1-\u0394Cter affecting both spontaneous and evoked transmission through effects on quantal size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 represent interpretations of the electrophysiology data in the context of quantal analysis (n\u00d7p\u00d7q). The reasoning is sound and supported by the combination of PPR data (C48, C78), calcium EPSC data (C44-C47, C79), and strontium aEPSC data (C50-C52, C81). However, the interpretation involves some inference about the relative contributions of different parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "47223328-5d53-4cff-8462-38e994da589e",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Synapses exhibit relative tolerance to 10-20% variations in glutamate content and AMPAR number, but fast and large modifications in synaptic amplitude can be better achieved by pre-post misalignment than by changes in AMPAR number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 are supported by inference from the computational modeling results (Figure 6C-E). The simulations demonstrate that equivalent changes in synaptic current can result from large changes in glutamate content or AMPAR number versus relatively small changes in alignment, supporting the conclusion about differential sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    },
+    {
+      "id": "340f8949-27a6-4e9f-9315-d5be7172a8eb",
+      "content_id": "cd93bee8-fd53-4605-9bdc-8b662cdaa736",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "AMPAR nanodomains are approximately 80-90 nm in size and contain ~20 receptors on average, with control neurons typically showing 1-2 nanodomains per synapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C16-C17 are supported by citations to prior literature (Fukata et al., 2013; MacGillavry et al., 2013; Masugi-Tokita et al., 2007; Nair et al., 2013) and confirmed by the current study's d-STORM measurements (Figure 1D-E). The consistency between prior work and current measurements validates the methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:34.350555Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9590ed4e-8b86-49b4-abd3-615668a24de5",
+      "result_id": "02db6b1d-ec9f-4e33-a509-0e9df04d4fb0"
+    },
+    {
+      "claim_id": "4bcb9931-3fb5-4248-bb5f-e6e6e7b5e89c",
+      "result_id": "02db6b1d-ec9f-4e33-a509-0e9df04d4fb0"
+    },
+    {
+      "claim_id": "8ad82e44-46e4-4961-8566-6a78fc9f27a8",
+      "result_id": "8d5926e5-aef8-4057-8e50-c07c64a98fe9"
+    },
+    {
+      "claim_id": "abb5adfc-23b5-49ad-ae4d-39396ab5fe3b",
+      "result_id": "8d5926e5-aef8-4057-8e50-c07c64a98fe9"
+    },
+    {
+      "claim_id": "40530adb-aaa4-4709-b6d4-679fec69e938",
+      "result_id": "8d5926e5-aef8-4057-8e50-c07c64a98fe9"
+    },
+    {
+      "claim_id": "5371cd4d-032b-44fa-8b07-f89c9ff707f3",
+      "result_id": "8d5926e5-aef8-4057-8e50-c07c64a98fe9"
+    },
+    {
+      "claim_id": "d874d1bb-66fd-4387-8aba-944961a9f4a5",
+      "result_id": "8d5926e5-aef8-4057-8e50-c07c64a98fe9"
+    },
+    {
+      "claim_id": "5ffc34c7-56c0-40a9-9d37-44494a96651d",
+      "result_id": "8d5926e5-aef8-4057-8e50-c07c64a98fe9"
+    },
+    {
+      "claim_id": "b2e745cf-7885-4a57-af3a-da21b1e7e5c8",
+      "result_id": "94f3bf54-45b0-4929-930d-325f3c8d601b"
+    },
+    {
+      "claim_id": "6b5350f7-7e9b-44e4-9a3e-ea1a8bd3b054",
+      "result_id": "94f3bf54-45b0-4929-930d-325f3c8d601b"
+    },
+    {
+      "claim_id": "73a8e6cc-98b5-4c4a-ba30-6a97c4717360",
+      "result_id": "94f3bf54-45b0-4929-930d-325f3c8d601b"
+    },
+    {
+      "claim_id": "edc70623-227c-49da-8d36-8565b27a5c56",
+      "result_id": "94f3bf54-45b0-4929-930d-325f3c8d601b"
+    },
+    {
+      "claim_id": "f8979ea0-38a6-4a35-9eff-5ed14af9450d",
+      "result_id": "94f3bf54-45b0-4929-930d-325f3c8d601b"
+    },
+    {
+      "claim_id": "999e4730-d456-426f-86e6-28e9ee467228",
+      "result_id": "a296d537-f2ed-4e03-b904-848c283d04af"
+    },
+    {
+      "claim_id": "33f1b68c-d83b-487e-b8a2-88bade9efda8",
+      "result_id": "a296d537-f2ed-4e03-b904-848c283d04af"
+    },
+    {
+      "claim_id": "76bb8cea-3cf6-45d2-95cb-a13d597dcbad",
+      "result_id": "a296d537-f2ed-4e03-b904-848c283d04af"
+    },
+    {
+      "claim_id": "71a48e02-e10c-4a15-9aae-cd8c03d94fbb",
+      "result_id": "a296d537-f2ed-4e03-b904-848c283d04af"
+    },
+    {
+      "claim_id": "f50f30ae-6499-417d-9041-8985be37de32",
+      "result_id": "a296d537-f2ed-4e03-b904-848c283d04af"
+    },
+    {
+      "claim_id": "dc1798d1-a213-4a53-a6ed-062708ec6d94",
+      "result_id": "fc453789-b30f-45ed-9508-f55185056394"
+    },
+    {
+      "claim_id": "28d20592-d48e-4c8d-8f5b-5e72ea801910",
+      "result_id": "fc453789-b30f-45ed-9508-f55185056394"
+    },
+    {
+      "claim_id": "f9f8d151-33a2-44b9-a275-a0aef4c5f1b1",
+      "result_id": "fc453789-b30f-45ed-9508-f55185056394"
+    },
+    {
+      "claim_id": "954a3e3c-c967-45ba-b19f-c639278af440",
+      "result_id": "fc453789-b30f-45ed-9508-f55185056394"
+    },
+    {
+      "claim_id": "0b0eeca6-ae40-4209-8027-ac1b057e7ccc",
+      "result_id": "23d59f3a-f87f-48cf-9f1f-3d5b31cf8a9e"
+    },
+    {
+      "claim_id": "715d5597-7925-4b23-a367-e6dea6941431",
+      "result_id": "23d59f3a-f87f-48cf-9f1f-3d5b31cf8a9e"
+    },
+    {
+      "claim_id": "298d128c-cae2-4a9c-9eaa-8e96762c1514",
+      "result_id": "23d59f3a-f87f-48cf-9f1f-3d5b31cf8a9e"
+    },
+    {
+      "claim_id": "95df0c59-77ca-40ad-a2d8-7b64148a6a1c",
+      "result_id": "a37ecadc-f58c-495d-9896-398862bb1ff3"
+    },
+    {
+      "claim_id": "e32ee3df-ba61-4320-8300-52cfe75a50b7",
+      "result_id": "a37ecadc-f58c-495d-9896-398862bb1ff3"
+    },
+    {
+      "claim_id": "a791ddde-f7f8-4221-90aa-308a663dccae",
+      "result_id": "a37ecadc-f58c-495d-9896-398862bb1ff3"
+    },
+    {
+      "claim_id": "1de247ca-3c16-464b-b2b6-77b3009d9e36",
+      "result_id": "a37ecadc-f58c-495d-9896-398862bb1ff3"
+    },
+    {
+      "claim_id": "415b0ac7-25e4-4da1-8f93-3c93a0d99420",
+      "result_id": "a37ecadc-f58c-495d-9896-398862bb1ff3"
+    },
+    {
+      "claim_id": "cc9c89ae-4bc2-4966-b8d3-6355fce5263e",
+      "result_id": "43f49526-a38f-4e19-9c1c-7048dc8a3e93"
+    },
+    {
+      "claim_id": "8cea81f3-bba0-4358-af0e-1f9ff7a637f7",
+      "result_id": "43f49526-a38f-4e19-9c1c-7048dc8a3e93"
+    },
+    {
+      "claim_id": "71d5a79a-7f6d-48ed-9136-737fe8af4be7",
+      "result_id": "43f49526-a38f-4e19-9c1c-7048dc8a3e93"
+    },
+    {
+      "claim_id": "ba22f198-a078-4735-b24d-6ed60f5a008f",
+      "result_id": "43f49526-a38f-4e19-9c1c-7048dc8a3e93"
+    },
+    {
+      "claim_id": "62e0ca60-f43e-4256-ae39-bf5ae2af7478",
+      "result_id": "0709cd96-c2a2-43a3-a771-33ce52897af6"
+    },
+    {
+      "claim_id": "dd3430f2-d9ba-438d-8c06-0f252d7effe2",
+      "result_id": "0709cd96-c2a2-43a3-a771-33ce52897af6"
+    },
+    {
+      "claim_id": "000764c2-a592-46fa-84f1-fc911f12afec",
+      "result_id": "0709cd96-c2a2-43a3-a771-33ce52897af6"
+    },
+    {
+      "claim_id": "dda5ecf0-035a-486c-854d-04352ffaddfc",
+      "result_id": "0709cd96-c2a2-43a3-a771-33ce52897af6"
+    },
+    {
+      "claim_id": "7f8c5f0b-7e78-4971-82a0-de7f4bb1dcc9",
+      "result_id": "0709cd96-c2a2-43a3-a771-33ce52897af6"
+    },
+    {
+      "claim_id": "ae035482-3957-4e5e-a416-d963b3b8b795",
+      "result_id": "ae1415ba-f35c-425a-84f3-ffd7102c81d2"
+    },
+    {
+      "claim_id": "62ea7d84-00ef-4a00-afdd-8d15b0d6aff4",
+      "result_id": "ae1415ba-f35c-425a-84f3-ffd7102c81d2"
+    },
+    {
+      "claim_id": "3f7d8629-e0e5-4cfd-a278-3a736b236715",
+      "result_id": "ae1415ba-f35c-425a-84f3-ffd7102c81d2"
+    },
+    {
+      "claim_id": "89cce3c9-91aa-4d92-ab05-28ce8662ad65",
+      "result_id": "ae1415ba-f35c-425a-84f3-ffd7102c81d2"
+    },
+    {
+      "claim_id": "015b391f-2a8d-4ede-a021-5a469145ea3d",
+      "result_id": "ae1415ba-f35c-425a-84f3-ffd7102c81d2"
+    },
+    {
+      "claim_id": "e8ad62a5-d4a3-48dc-84e3-b6567c566916",
+      "result_id": "bbea5d22-af9b-4d1c-b116-c1ecf149bb52"
+    },
+    {
+      "claim_id": "fb19ebbe-10b7-40e0-aaf9-5b5cead7d290",
+      "result_id": "bbea5d22-af9b-4d1c-b116-c1ecf149bb52"
+    },
+    {
+      "claim_id": "738852de-ae3f-4c39-aa97-46fade7b4c5a",
+      "result_id": "bbea5d22-af9b-4d1c-b116-c1ecf149bb52"
+    },
+    {
+      "claim_id": "b057c485-2c76-43f6-90e4-1685f287b653",
+      "result_id": "bbea5d22-af9b-4d1c-b116-c1ecf149bb52"
+    },
+    {
+      "claim_id": "ea4a7ec7-236f-4cc9-8bf2-91ab333ee654",
+      "result_id": "e15e531b-1b7a-4dbb-a681-d7b59be38aa7"
+    },
+    {
+      "claim_id": "72e188c8-e5e4-4845-95af-4148491022b9",
+      "result_id": "e15e531b-1b7a-4dbb-a681-d7b59be38aa7"
+    },
+    {
+      "claim_id": "103b9e60-da83-41a2-85de-8c6aa812cd88",
+      "result_id": "e15e531b-1b7a-4dbb-a681-d7b59be38aa7"
+    },
+    {
+      "claim_id": "2d1065bc-6009-4050-87cd-2400f8507b15",
+      "result_id": "e15e531b-1b7a-4dbb-a681-d7b59be38aa7"
+    },
+    {
+      "claim_id": "736bb712-fa53-4d26-bd94-004587033112",
+      "result_id": "e15e531b-1b7a-4dbb-a681-d7b59be38aa7"
+    },
+    {
+      "claim_id": "b2274c6e-7bc2-45ee-8317-44a3d08e810c",
+      "result_id": "46e3ab5a-89d7-49ca-9e9f-188a691c5b85"
+    },
+    {
+      "claim_id": "b823ca89-c9d6-4869-8fab-635bf6b0abb8",
+      "result_id": "46e3ab5a-89d7-49ca-9e9f-188a691c5b85"
+    },
+    {
+      "claim_id": "7bf7e661-3c6f-45e2-8e97-85d2603e179e",
+      "result_id": "39c26a70-6181-44cc-9b3f-01848ab3de2e"
+    },
+    {
+      "claim_id": "52a378b4-91ea-4345-bd5e-f0c1d2ed35bc",
+      "result_id": "39c26a70-6181-44cc-9b3f-01848ab3de2e"
+    },
+    {
+      "claim_id": "ae2d425f-ed56-4f97-8b02-64749fef3601",
+      "result_id": "39c26a70-6181-44cc-9b3f-01848ab3de2e"
+    },
+    {
+      "claim_id": "26e7ef1e-e40b-49d9-94cb-c50af0e3b2fa",
+      "result_id": "39c26a70-6181-44cc-9b3f-01848ab3de2e"
+    },
+    {
+      "claim_id": "a9492520-27d4-46f4-bd2f-db2f22c21b21",
+      "result_id": "39c26a70-6181-44cc-9b3f-01848ab3de2e"
+    },
+    {
+      "claim_id": "97f3fa26-c3f1-4c9b-9df7-bba89067d949",
+      "result_id": "47223328-5d53-4cff-8462-38e994da589e"
+    },
+    {
+      "claim_id": "39e33057-f8b1-4204-bd7e-bdb3ba74c476",
+      "result_id": "47223328-5d53-4cff-8462-38e994da589e"
+    },
+    {
+      "claim_id": "f1624ffe-abd0-4923-a4ae-c4dd85777ebd",
+      "result_id": "47223328-5d53-4cff-8462-38e994da589e"
+    },
+    {
+      "claim_id": "dd0c0832-42e3-4b91-87a7-d2f19028cf77",
+      "result_id": "340f8949-27a6-4e9f-9315-d5be7172a8eb"
+    },
+    {
+      "claim_id": "e636ca9a-a843-4eaa-8b9b-52b6963b9892",
+      "result_id": "340f8949-27a6-4e9f-9315-d5be7172a8eb"
+    },
+    {
+      "claim_id": "249e86d8-bcbd-4522-93cd-4df2d5d4bfe5",
+      "result_id": "340f8949-27a6-4e9f-9315-d5be7172a8eb"
+    },
+    {
+      "claim_id": "f6e61fd6-fbfd-4ba7-9fcd-150f8a82ebb9",
+      "result_id": "340f8949-27a6-4e9f-9315-d5be7172a8eb"
+    }
+  ],
+  "comparisons": []
+}

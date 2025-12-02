@@ -1,0 +1,1604 @@
+{
+  "submission": {
+    "id": "6f8c49f1-70bb-42bd-867d-4582209bbcee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:52:54.159764Z",
+    "updated_at": "2025-12-01T22:52:54.159764Z"
+  },
+  "content": [
+    {
+      "id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "submission_id": "6f8c49f1-70bb-42bd-867d-4582209bbcee",
+      "content_type": "manuscript",
+      "content_text": "# No general relationship between mass and temperature in endothermic species\n\n## Authors\n\n- Kristina Riemer<sup>1</sup> ([ORCID: 0000-0003-3802-3331](https://orcid.org/0000-0003-3802-3331)) \u2020\n- Robert P Guralnick<sup>2</sup>\n- Ethan P White<sup>1</sup> ([ORCID: 0000-0001-6728-7745](https://orcid.org/0000-0001-6728-7745))\n\n### Affiliations\n\n1. Department of Wildlife Ecology and Conservation University of Florida Gainesville United States\n2. Department of Natural History University of Florida Gainesville United States\n3. Informatics Institute University of Florida Gainesville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBergmann's rule is a widely-accepted biogeographic rule stating that individuals within a species are smaller in warmer environments. While there are many single-species studies and integrative reviews documenting this pattern, a data-intensive approach has not been used yet to determine the generality of this pattern. We assessed the strength and direction of the intraspecific relationship between temperature and individual mass for 952 bird and mammal species. For eighty-seven percent of species, temperature explained less than 10% of variation in mass, and for 79% of species the correlation was not statistically significant. These results suggest that Bergmann's rule is not general and temperature is not a dominant driver of biogeographic variation in mass. Further understanding of size variation will require integrating multiple processes that influence size. The lack of dominant temperature forcing weakens the justification for the hypothesis that global warming could result in widespread decreases in body size.\n\n## Introduction\n\nBergmann's rule describes a negative relationship between body mass and temperature across space that is believed to be common in endothermic species (Bergmann, 1847; Brown and Lee, 1969; Kendeigh, 1969; Freckleton et al., 2003; Carotenuto et al., 2015). Many hypotheses have been proposed to explain this pattern (Blackburn et al., 1999; Ashton, 2002; Watt et al., 2010) including the heat loss hypothesis, which argues that the higher surface area to volume ratio of smaller individuals results in improved heat dissipation in hot environments (Bergmann, 1847). Though originally described for closely-related species (i.e., interspecific; Blackburn et al., 1999), the majority of studies have focused on the intraspecific form of Bergmann's rule (Rensch, 1938; Meiri, 2011) by assessing trends in individual size within a species (Langvatn and Albon, 1986;\u00a0Yom-Tov and Geffen, 2006;\u00a0Gardner et al., 2009). Bergmann's rule has been questioned both empirically and mechanistically (McNab, 1971; Geist, 1987; Huston and Wolverton, 2011; Teplitsky and Millien, 2014) but the common consensus from recent reviews is that the pattern is general (Ashton et al., 2000;\u00a0Ashton, 2002;\u00a0Meiri and Dayan, 2003;\u00a0Watt and Salewski, 2011).\n\nIt has recently been suggested that this negative relationship between mass and temperature could result in decreasing individual size across species in response to climate change (Sheridan and Bickford, 2011) and that this may be a \u2018third universal response to warming\u2019 (Gardner et al., 2011). The resulting shifts in size distributions could significantly alter ecological communities (Brose et al., 2012), especially if the rate of size decrease varies among species (Sheridan and Bickford, 2011). While there is limited empirical research on body size responses to changes in temperature through time (but see Smith et al., 1995;\u00a0Caruso et al., 2014;\u00a0Teplitsky and Millien, 2014), the apparent generality of Bergmann's rule across space indicates the likelihood of a similar relationship in response to temperature change across time.\n\nThe generality of Bergmann's rule is based on many individual studies that analyze empirical data on body size across an environmental gradient (e.g., Langvatn and Albon, 1986; Barnett, 1977; Fuentes and Jaksic, 1979; Dayan et al., 1989; Sand et al., 1995) and reviews that compile and evaluate the results from these studies (Ashton, 2002; Meiri and Dayan, 2003;\u00a0Watt et al., 2010). Most individual studies of Bergmann's rule are limited by: (1) analyzing only one or a few species (e.g., Langvatn and Albon, 1986); (2) using small numbers of observations (e.g., Fuentes and Jaksic, 1979); (3) only including data at the small scales typical of ecological studies (e.g., Sand et al., 1995); (4) using latitude instead of directly assessing temperature (e.g., Barnett, 1977); and (5) focusing on statistical significance instead of the strength of the relationship (e.g., Dayan et al., 1989). The reviews tabulate the results of these individual studies and assess patterns in the direction and significance of relationships across species. Such aggregation of published results allows for a more general understanding of the pattern but, in addition to limitations of the underlying studies, the conclusions may be influenced by publication bias and selective reporting due to studies or individual analyses that do not support Bergmann's rule being published less frequently (Koricheva et al., 2013).\n\nPrevious analyses of publication bias in the context of Bergmann\u2019s rule have found no evidence for selective publication, which supports the idea that it is a general rule (Ashton, 2002; Meiri et al., 2004). However, two of the most extensive studies of Bergmann\u2019s rule, which both used museum records to assess dozens of intraspecific Bergmann\u2019s rule relationships simultaneously, found that the majority of species did not exhibit significant positive relationships between latitude and size (McNab, 1971; Meiri et al., 2004). As a result, understanding the generality of this ecophysiological rule and its potential implications for global change requires more extensive analysis.\n\nA data-intensive approach to analyzing Bergmann's rule, evaluating the pattern using large amounts of broad scale data, has the potential to overcome existing limitations in the literature and provide a new perspective on the generality of the intraspecific form of Bergmann's rule. Understanding the generality of the temperature-mass relationship has important implications for how size will respond to climate change. We use data from VertNet (Constable et al., 2010), a large compilation of digitized museum records that contains over 700,000 globally distributed individual-level size measures, to evaluate the intraspecific relationship between temperature and mass for 952 mammal and bird species. The usable data consist of 273,901 individuals with an average of 288 individuals per species, with individuals of each species spanning an average of 75 years and 34 latitudinal degrees. This approach reduces or removes many of the limitations to previous approaches and the results suggest that Bergmann's rule is not a strong or general pattern.\n\n## Results\n\nMost of the species in this study showed weak non-significant relationships between temperature and mass (Figures 1 and 2). The distribution of correlation coefficients was centered near zero with a mean correlation coefficient of \u22120.05 across species (Figure 2A). Relationships for 79% of species were not significantly different from zero based on false discovery rate-controlled p values and associated z scores, while 14% of species' relationships were significant and negative and 7% were significant and positive (Figure 2A, Figure 2\u2014figure supplement 1). Temperature explained less than 10% of variation in mass (i.e., \u22120.316\u00a0< r < 0.316) for 87% of species, indicating that temperature explained very little of the observed variation in mass for these species (Figure 2A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-v2.jpg)\n\n**Figure 1.:** (A) Spatial collection locations of all individual specimens. All species shown with black points except three species, whose relationships between mean annual temperature and mass are shown at bottom (B\u2013D), are marked with colored points. These species were chosen to represent the range of variability in relationship strength and direction exhibited by the 952 species from the study: Martes pennanti had a negative relationship with temperature explaining a substantial amount of variation in mass (B; blue points); Tamias quadrivittatus had no directional relationship between temperature and mass with temperature having little explanatory power (C; yellow points); Synaptomys cooperi had a strong positive temperature-mass relationship with a correlation coefficient (r) in the 99th percentile of all species' values (D; red points). Intraspecific temperature-mass relationships are shown with black circles for all individuals and ordinary least squares regression trends as blue lines. Linear regression correlation coefficients and p-values in upper left hand corner of figure for each species. For remaining species relationships,\u00a0see Figure 1\u2014figure supplement 1\u201312.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (1) Abrothrix olivaceus, (2) Acanthis flammea, (3) Accipiter cooperii, (4) Accipiter gentilis, (5) Accipiter striatus, (6) Acridotheres tristis, (7) Actitis macularia, (8) Aechmophorus clarkii, (9) Aechmophorus occidentalis, (10) Aegithalos caudatus, (11) Aegolius acadicus, (12) Aegolius funereus, (13) Aeronautes saxatalis, (14) Agelaius phoeniceus, (15) Agelaius tricolor, (16) Aimophila carpalis, (17) Aimophila cassinii, (18) Aimophila rufescens, (19) Aimophila ruficeps, (20) Aix sponsa, (21) Alauda arvensis, (22) Alcedo quadribrachys, (23) Alethe diademata, (24) Alethe poliocephala, (25) Alle alle, (26) Amazilia beryllina, (27) Amazilia cyanocephala, (28) Amazilia rutila, (29) Ammodramus caudacutus, (30) Ammodramus henslowii, (31) Ammodramus humeralis, (32) Ammodramus sandwichensis, (33) Ammodramus savannarum, (34) Ammospermophilus leucurus, (35) Amphispiza belli, (36) Amphispiza bilineata, (37) Anas acuta, (38) Anas americana, (39) Anas clypeata, (40) Anas crecca, (41) Anas cyanoptera, (42) Anas discors, (43) Anas platyrhynchos, (44) Anas rubripes, (45) Anas strepera, (46) Anoura geoffroyi, (47) Anser albifrons, (48) Anser caerulescens, (49) Anthreptes collaris, (50) Anthreptes rectirostris, (51) Anthus hodgsoni, (52) Anthus rubescens, (53) Anthus spinoletta, (54) Anthus trivialis, (55) Antrozous pallidus, (56) Apalis flavida, (57) Apalis thoracica, (58) Aphelocoma californica, (59) Aphelocoma coerulescens, (60) Aphelocoma ultramarina, (61) Aplodontia rufa, (62) Apodemus agrarius, (63) Apodemus peninsulae, (64) Apodemus uralensis, (65) Aquila chrysaetos, (66) Archilochus alexandri, (67) Archilochus colubris, (68) Ardea alba, (69) Ardea herodias, (70) Arenaria interpres, (71) Artibeus jamaicensis, (72) Artibeus lituratus, (73) Artibeus toltecus, (74) Asio flammeus, (75) Asio otus, (76) Athene cunicularia, (77) Attila spadiceus, (78) Aulacorhynchus prasinus, (79) Auriparus flaviceps, (80) Automolus ochrolaemus.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (81)\u00a0Aythya affinis, (82) Aythya americana, (83) Aythya collaris, (84) Aythya marila, (85) Aythya valisineria, (86) Baeolophus bicolor, (87) Baeolophus inornatus, (88) Baeolophus ridgwayi, (89) Baeolophus wollweberi, (90) Baiomys taylori, (91) Bartramia longicauda, (92) Basileuterus culicivorus, (93) Basileuterus rufifrons, (94) Batis molitor, (95) Blarina brevicauda, (96) Bleda syndactyla, (97) Bombycilla cedrorum, (98) Bombycilla garrulus, (99) Bonasa umbellus, (100) Botaurus lentiginosus, (101) Brachyramphus marmoratus, (102) Branta canadensis, (103) Bubo virginianus, (104) Bucephala albeola, (105) Bucephala clangula, (106) Buteo jamaicensis, (107) Buteo lagopus, (108) Buteo lineatus, (109) Buteo magnirostris, (110) Buteo platypterus, (111) Buteo swainsoni, (112) Butorides virescens, (113) Calamospiza melanocorys, (114) Calcarius lapponicus, (115) Calcarius ornatus, (116) Calcarius pictus, (117) Calidris acuminata, (118) Calidris alba, (119) Calidris alpina, (120) Calidris bairdii, (121) Calidris canutus, (122) Calidris fuscicollis, (123) Calidris mauri, (124) Calidris melanotos, (125) Calidris minutilla, (126) Calidris ptilocnemis, (127) Calidris pusilla, (128) Callipepla californica, (129) Callipepla gambelii, (130) Callospermophilus lateralis, (131) Calocitta formosa, (132) Calypte anna, (133) Calypte costae, (134) Camaroptera brachyura, (135) Camaroptera chloronota, (136) Campethera caroli, (137) Campethera nivosa, (138) Camptostoma obsoletum, (139) Campylopterus largipennis, (140) Campylorhynchus brunneicapillus, (141) Campylorhynchus rufinucha, (142) Campylorhynchus zonatus, (143) Canis latrans, (144) Canis lupus, (145) Caprimulgus vociferus, (146) Cardellina rubrifrons, (147) Cardinalis cardinalis, (148) Cardinalis sinuatus, (149) Carduelis flammea, (150) Carduelis hornemanni, (151) Carduelis lawrencei, (152) Carduelis pinus, (153) Carduelis psaltria, (154) Carduelis tristis, (155) Carollia brevicauda, (156) Carollia castanea, (157) Carollia perspicillata, (158) Carpodacus cassinii, (159) Carpodacus mexicanus, (160) Carpodacus purpureus.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (161) Castor canadensis, (162) Cathartes aura, (163) Catharus aurantiirostris, (164) Catharus fuscescens, (165) Catharus guttatus, (166) Catharus minimus, (167) Catharus occidentalis, (168) Catharus ustulatus, (169) Catherpes mexicanus, (170) Catoptrophorus semipalmatus, (171) Centrocercus urophasianus, (172) Cercomacra tyrannina, (173) Certhia americana, (174) Certhia familiaris, (175) Ceryle alcyon, (176) Ceyx picta, (177) Chaetodipus fallax, (178) Chaetodipus formosus, (179) Chaetodipus intermedius, (180) Chaetodipus penicillatus, (181) Chaetura pelagica, (182) Chaetura vauxi, (183) Chamaea fasciata, (184) Charadrius alexandrinus, (185) Charadrius dubius, (186) Charadrius melodus, (187) Charadrius montanus, (188) Charadrius semipalmatus, (189) Charadrius vociferus, (190) Chen caerulescens, (191) Chiroderma villosum, (192) Chlidonias niger, (193) Chloroceryle americana, (194) Chlorocichla flaviventris, (195) Chlorophanes spiza, (196) Chlorospingus ophthalmicus, (197) Chondestes grammacus, (198) Chordeiles acutipennis, (199) Chordeiles minor, (200) Chrysococcyx cupreus, (201) Chrysococcyx klaas, (202) Cinclus mexicanus, (203) Circus cyaneus, (204) Cisticola erythrops, (205) Cisticola galactotes, (206) Cistothorus palustris, (207) Cistothorus platensis, (208) Clangula hyemalis, (209) Clethrionomys gapperi, (210) Coccothraustes vespertinus, (211) Coccyzus americanus, (212) Coccyzus erythropthalmus, (213) Coereba flaveola, (214) Colaptes auratus, (215) Colinus cristatus, (216) Colinus virginianus, (217) Colius striatus, (218) Collocalia esculenta, (219) Columba fasciata, (220) Columba livia, (221) Columbina inca, (222) Columbina passerina, (223) Columbina talpacoti, (224) Contopus borealis, (225) Contopus cinereus, (226) Contopus cooperi, (227) Contopus pertinax, (228) Contopus sordidulus, (229) Contopus virens, (230) Corvus brachyrhynchos, (231) Corvus corax, (232) Corynorhinus townsendii, (233) Cossypha caffra, (234) Cossypha heuglini, (235) Cossypha natalensis, (236) Cossypha niveicapilla, (237) Coturnicops noveboracensis, (238) Criniger calurus, (239) Crotophaga ani, (240) Crotophaga sulcirostris.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (241)\u00a0Cryptotis parva, (242) Cyanerpes cyaneus, (243) Cyanocitta cristata, (244) Cyanocitta stelleri, (245) Cyanocompsa cyanoides, (246) Cyanocompsa parellina, (247) Cyanocorax morio, (248) Cyanocorax yncas, (249) Cyanomitra olivacea, (250) Cyclarhis gujanensis, (251) Cygnus columbianus, (252) Cynopterus brachyotis, (253) Cynopterus sphinx, (254) Cyrtonyx montezumae, (255) Dacnis cayana, (256) Dendragapus canadensis, (257) Dendragapus obscurus, (258) Dendrocincla fuliginosa, (259) Dendrocincla homochroa, (260) Dendrocolaptes certhia, (261) Dendroica caerulescens, (262) Dendroica castanea, (263) Dendroica coronata, (264) Dendroica discolor, (265) Dendroica dominica, (266) Dendroica fusca, (267) Dendroica graciae, (268) Dendroica magnolia, (269) Dendroica nigrescens, (270) Dendroica occidentalis, (271) Dendroica palmarum, (272) Dendroica pensylvanica, (273) Dendroica petechia, (274) Dendroica pinus, (275) Dendroica striata, (276) Dendroica tigrina, (277) Dendroica townsendi, (278) Dendroica virens, (279) Dendropicos fuscescens, (280) Desmodus rotundus, (281) Dicrostonyx groenlandicus, (282) Didelphis marsupialis, (283) Didelphis virginiana, (284) Dipodomys agilis, (285) Dipodomys merriami, (286) Dipodomys ordii, (287) Dipodomys panamintinus, (288) Dolichonyx oryzivorus, (289) Dryocopus lineatus, (290) Dryocopus pileatus, (291) Dryoscopus cubla, (292) Dumetella carolinensis, (293) Dysithamnus mentalis, (294) Egretta thula, (295) Elaenia flavogaster, (296) Elanus leucurus, (297) Emberiza aureola, (298) Emberiza spodocephala, (299) Empidonax alnorum, (300) Empidonax difficilis, (301) Empidonax flavescens, (302) Empidonax flaviventris, (303) Empidonax fulvifrons, (304) Empidonax hammondii, (305) Empidonax minimus, (306) Empidonax oberholseri, (307) Empidonax occidentalis, (308) Empidonax traillii, (309) Empidonax virescens, (310) Empidonax wrightii, (311) Enhydra lutris, (312) Eptesicus fuscus, (313) Eremophila alpestris, (314) Erethizon dorsatum, (315) Erithacus rubecula, (316) Eucometis penicillata, (317) Eugenes fulgens, (318) Euphagus carolinus, (319) Euphagus cyanocephalus, (320) Euphonia hirundinacea.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (321) Euplectes albonotatus, (322) Euplectes ardens, (323) Euplectes capensis, (324) Euplectes franciscanus, (325) Euplectes hordeaceus, (326) Eurillas virens, (327) Falcipennis canadensis, (328) Falco columbarius, (329) Falco mexicanus, (330) Falco peregrinus, (331) Falco sparverius, (332) Falco tinnunculus, (333) Ficedula hyperythra, (334) Florisuga mellivora, (335) Formicarius analis, (336) Formicivora grisea, (337) Fringilla coelebs, (338) Fulica americana, (339) Fulmarus glacialis, (340) Galerida cristata, (341) Gallinago delicata, (342) Gallinago gallinago, (343) Gallinula chloropus, (344) Gavia immer, (345) Gavia stellata, (346) Geococcyx californianus, (347) Geomys bursarius, (348) Geothlypis agilis, (349) Geothlypis philadelphia, (350) Geothlypis poliocephala, (351) Geothlypis trichas, (352) Glaucidium brasilianum, (353) Glaucidium gnoma, (354) Glaucomys sabrinus, (355) Glaucomys volans, (356) Glossophaga soricina, (357) Glyphorhynchus spirurus, (358) Glyphorynchus spirurus, (359) Grus canadensis, (360) Guiraca caerulea, (361) Gulo gulo, (362) Gymnorhinus cyanocephalus, (363) Habia fuscicauda, (364) Habia rubica, (365) Haematopus ostralegus, (366) Halcyon malimbica, (367) Helmitheros vermivorus, (368) Henicorhina leucophrys, (369) Henicorhina leucosticta, (370) Heteromys desmarestianus, (371) Himantopus mexicanus, (372) Hipposideros ruber, (373) Hirundo pyrrhonota, (374) Hirundo rustica, (375) Histrionicus histrionicus, (376) Hylia prasina, (377) Hylocharis leucotis, (378) Hylocichla mustelina, (379) Hylophilus decurtatus, (380) Hypocnemis cantator, (381) Hypothymis azurea, (382) Icteria virens, (383) Icterus bullockii, (384) Icterus cucullatus, (385) Icterus dominicensis, (386) Icterus galbula, (387) Icterus parisorum, (388) Icterus pustulatus, (389) Icterus spurius, (390) Indicator exilis, (391) Indicator minor, (392) Ixobrychus exilis, (393) Ixoreus naevius, (394) Junco hyemalis, (395) Junco phaeonotus, (396) Lagonosticta senegala, (397) Lagopus lagopus, (398) Lagopus mutus, (399) Laniarius ferrugineus, (400) Lanius collaris.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (401) Lanius collurio, (402) Lanius cristatus, (403) Lanius excubitor, (404) Lanius ludovicianus, (405) Larus argentatus, (406) Larus californicus, (407) Larus canus, (408) Larus delawarensis, (409) Larus glaucescens, (410) Larus heermanni, (411) Larus hyperboreus, (412) Larus occidentalis, (413) Larus philadelphia, (414) Lasionycteris noctivagans, (415) Lasiurus borealis, (416) Lasiurus cinereus, (417) Lathrotriccus euleri, (418) Lemmiscus curtatus, (419) Lemmus sibiricus, (420) Lemmus trimucronatus, (421) Lepidocolaptes affinis, (422) Lepidocolaptes souleyetii, (423) Leptotila rufaxilla, (424) Leptotila verreauxi, (425) Lepus americanus, (426) Lepus californicus, (427) Lepus othus, (428) Leucosticte arctoa, (429) Leucosticte atrata, (430) Leucosticte australis, (431) Leucosticte tephrocotis, (432) Limnodromus griseus, (433) Limnodromus scolopaceus, (434) Limosa fedoa, (435) Limosa lapponica, (436) Liomys pictus, (437) Lontra canadensis, (438) Lophodytes cucullatus, (439) Loxia curvirostra, (440) Loxia leucoptera, (441) Lynx canadensis, (442) Lynx rufus, (443) Macronous gularis, (444) Malimbus malimbicus, (445) Manacus candei, (446) Manacus manacus, (447) Marmota caligata, (448) Marmota flaviventris, (449) Marmota monax, (450) Martes americana, (451) Martes pennanti, (452) Mastomys natalensis, (453) Megaceryle alcyon, (454) Megascops asio, (455) Megascops kennicottii, (456) Melanerpes aurifrons, (457) Melanerpes carolinus, (458) Melanerpes erythrocephalus, (459) Melanerpes formicivorus, (460) Melanerpes lewis, (461) Melanerpes uropygialis, (462) Melanitta fusca, (463) Melanitta perspicillata, (464) Meleagris gallopavo, (465) Melospiza georgiana, (466) Melospiza lincolnii, (467) Melospiza melodia, (468) Mergus merganser, (469) Mergus serrator, (470) Merops pusillus, (471) Micrathene whitneyi, (472) Microtus californicus, (473) Microtus longicaudus, (474) Microtus miurus, (475) Microtus montanus, (476) Microtus ochrogaster, (477) Microtus oeconomus, (478) Microtus oregoni, (479) Microtus pennsylvanicus, (480) Microtus pinetorum.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (481) Microtus richardsoni, (482) Microtus xanthognathus, (483) Mimus polyglottos, (484) Mionectes oleagineus, (485) Mitrephanes phaeocercus, (486) Mniotilta varia, (487) Molossus molossus, (488) Molothrus aeneus, (489) Molothrus ater, (490) Molothrus bonariensis, (491) Momotus momota, (492) Motacilla alba, (493) Motacilla cinerea, (494) Motacilla flava, (495) Mus musculus, (496) Muscicapa adusta, (497) Muscicapa caerulescens, (498) Muscicapa striata, (499) Mustela erminea, (500) Mustela frenata, (501) Mustela nivalis, (502) Mustela vison, (503) Myadestes townsendi, (504) Myiarchus cinerascens, (505) Myiarchus crinitus, (506) Myiarchus tuberculifer, (507) Myiarchus tyrannulus, (508) Myiobius barbatus, (509) Myioborus miniatus, (510) Myioborus pictus, (511) Myiodynastes luteiventris, (512) Myiodynastes maculatus, (513) Myiopagis viridicata, (514) Myioparus griseigularis, (515) Myiophobus fasciatus, (516) Myiozetetes similis, (517) Myodes gapperi, (518) Myodes glareolus, (519) Myodes rufocanus, (520) Myodes rutilus, (521) Myotis californicus, (522) Myotis evotis, (523) Myotis lucifugus, (524) Myotis volans, (525) Myotis yumanensis, (526) Myrmoborus leucophrys, (527) Myrmotherula axillaris, (528) Napaeozapus insignis, (529) Natalus stramineus, (530) Nectarinia famosa, (531) Nectarinia olivacea, (532) Nectarinia senegalensis, (533) Nectarinia venusta, (534) Neocossyphus poensis, (535) Neotoma albigula, (536) Neotoma cinerea, (537) Neotoma fuscipes, (538) Neotoma lepida, (539) Neotoma mexicana, (540) Neotoma stephensi, (541) Neovison vison, (542) Neurotrichus gibbsii, (543) Nicator chloris, (544) Noctilio leporinus, (545) Notiosorex crawfordi, (546) Nucifraga columbiana, (547) Numenius americanus, (548) Numenius phaeopus, (549) Nyctea scandiaca, (550) Nycticorax nycticorax, (551) Nyctidromus albicollis, (552) Oceanodroma furcata, (553) Ochotona collaris, (554) Ochotona princeps, (555) Ochrotomys nuttalli, (556) Oenanthe isabellina, (557) Oenanthe oenanthe, (558) Oligoryzomys fulvescens, (559) Oligoryzomys longicaudatus, (560) Ondatra zibethicus.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (561) Onychomys leucogaster, (562) Onychomys torridus, (563) Oporornis agilis, (564) Oporornis formosus, (565) Oporornis philadelphia, (566) Oporornis tolmiei, (567) Oreortyx pictus, (568) Oreoscoptes montanus, (569) Ortalis vetula, (570) Oryzomys palustris, (571) Otus asio, (572) Otus flammeolus, (573) Oxyura jamaicensis, (574) Pachycephala pectoralis, (575) Pachyramphus aglaiae, (576) Pachyramphus polychopterus, (577) Pandion haliaetus, (578) Parascalops breweri, (579) Parula americana, (580) Parus atricapillus, (581) Parus bicolor, (582) Parus carolinensis, (583) Parus gambeli, (584) Parus hudsonicus, (585) Parus major, (586) Parus monticolus, (587) Passer domesticus, (588) Passer griseus, (589) Passer montanus, (590) Passerculus sandwichensis, (591) Passerella iliaca, (592) Passerina amoena, (593) Passerina caerulea, (594) Passerina ciris, (595) Passerina cyanea, (596) Pelecanus occidentalis, (597) Perdix perdix, (598) Periparus ater, (599) Perisoreus canadensis, (600) Perognathus flavescens, (601) Perognathus flavus, (602) Perognathus longimembris, (603) Perognathus parvus, (604) Peromyscus boylii, (605) Peromyscus californicus, (606) Peromyscus eremicus, (607) Peromyscus gossypinus, (608) Peromyscus keeni, (609) Peromyscus leucopus, (610) Peromyscus maniculatus, (611) Peromyscus mexicanus, (612) Peromyscus nasutus, (613) Peromyscus polionotus, (614) Peromyscus truei, (615) Petrochelidon pyrrhonota, (616) Peucedramus taeniatus, (617) Phaethornis bourcieri, (618) Phaethornis superciliosus, (619) Phainopepla nitens, (620) Phalacrocorax auritus, (621) Phalacrocorax pelagicus, (622) Phalacrocorax penicillatus, (623) Phalaenoptilus nuttallii, (624) Phalaropus fulicarius, (625) Phalaropus lobatus, (626) Phalaropus tricolor, (627) Phasianus colchicus, (628) Phenacomys intermedius, (629) Pheucticus ludovicianus, (630) Pheucticus melanocephalus, (631) Phoca largha, (632) Phoca vitulina, (633) Phoeniculus purpureus, (634) Phoenicurus auroreus, (635) Phyllastrephus albigularis, (636) Phyllastrephus icterinus, (637) Phyllastrephus terrestris, (638) Phylloscopus borealis, (639) Phylloscopus trochilus, (640) Phyllostomus discolor.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (641) Phyllostomus hastatus, (642) Piaya cayana, (643) Pica hudsonia, (644) Pica Pica, (645) Picoides albolarvatus, (646) Picoides arcticus, (647) Picoides nuttallii, (648) Picoides pubescens, (649) Picoides scalaris, (650) Picoides tridactylus, (651) Picoides villosus, (652) Piculus rubiginosus, (653) Pinicola enucleator, (654) Pipilo aberti, (655) Pipilo chlorurus, (656) Pipilo crissalis, (657) Pipilo erythrophthalmus, (658) Pipilo fuscus, (659) Pipilo maculatus, (660) Pipistrellus hesperus, (661) Pipra erythrocephala, (662) Pipra fasciicauda, (663) Pipra mentalis, (664) Pipra pipra, (665) Piranga flava, (666) Piranga ludoviciana, (667) Piranga olivacea, (668) Piranga rubra, (669) Pitangus sulphuratus, (670) Platycercus zonarius, (671) Plectrophenax nivalis, (672) Plegadis chihi, (673) Ploceus cucullatus, (674) Ploceus melanocephalus, (675) Ploceus nigerrimus, (676) Ploceus nigricollis, (677) Ploceus ocularis, (678) Ploceus velatus, (679) Ploceus xanthops, (680) Pluvialis dominica, (681) Pluvialis squatarola, (682) Podiceps auritus, (683) Podiceps nigricollis, (684) Podilymbus podiceps, (685) Poecile atricapilla, (686) Poecile atricapillus, (687) Poecile carolinensis, (688) Poecile gambeli, (689) Poecile palustris, (690) Poecile rufescens, (691) Poecile sclateri, (692) Pogoniulus scolopaceus, (693) Pogoniulus subsulphureus, (694) Polioptila caerulea, (695) Polioptila californica, (696) Polioptila melanura, (697) Polioptila plumbea, (698) Polysticta stelleri, (699) Pooecetes gramineus, (700) Porzana carolina, (701) Prinia bairdii, (702) Prinia leucopogon, (703) Prinia subflava, (704) Prionops retzii, (705) Procyon lotor, (706) Proechimys semispinosus, (707) Progne subis, (708) Psaltriparus minimus, (709) Pteroglossus torquatus, (710) Pteronotus davyi, (711) Pteronotus parnellii, (712) Pusa hispida, (713) Pycnonotus barbatus, (714) Pyrocephalus rubinus, (715) Pyrrhula pyrrhula, (716) Pytilia melba, (717) Quelea quelea, (718) Quiscalus mexicanus, (719) Quiscalus quiscula, (720) Rallus limicola.\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp10-v2.jpg)\n\n**Figure 1\u2014figure supplement 10.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (721) Rallus longirostris, (722) Ramphastos sulfuratus, (723) Ramphocaenus melanurus, (724) Ramphocelus carbo, (725) Ramphocelus passerinii, (726) Rattus norvegicus, (727) Rattus rattus, (728) Recurvirostra americana, (729) Regulus calendula, (730) Regulus regulus, (731) Regulus satrapa, (732) Reithrodontomys fulvescens, (733) Reithrodontomys megalotis, (734) Riparia riparia, (735) Rissa tridactyla, (736) Saccopteryx bilineata, (737) Salpinctes obsoletus, (738) Saltator atriceps, (739) Saltator aurantiirostris, (740) Saltator coerulescens, (741) Saltator maximus, (742) Sayornis nigricans, (743) Sayornis phoebe, (744) Sayornis saya, (745) Scalopus aquaticus, (746) Scapanus orarius, (747) Schiffornis turdinus, (748) Sciurus aberti, (749) Sciurus carolinensis, (750) Sciurus niger, (751) Scolopax minor, (752) Scotinomys teguina, (753) Scotophilus kuhlii, (754) Seiurus aurocapilla, (755) Seiurus aurocapillus, (756) Seiurus motacilla, (757) Seiurus noveboracensis, (758) Selasphorus platycercus, (759) Selasphorus rufus, (760) Selasphorus sasin, (761) Serinus mozambicus, (762) Setophaga coronata, (763) Setophaga ruticilla, (764) Sialia currucoides, (765) Sialia mexicana, (766) Sialia sialis, (767) Sigmodon hispidus, (768) Sitta canadensis, (769) Sitta carolinensis, (770) Sitta europaea, (771) Sitta pusilla, (772) Sitta pygmaea, (773) Sittasomus griseicapillus, (774) Somateria spectabilis, (775) Sorex araneus, (776) Sorex arcticus, (777) Sorex cinereus, (778) Sorex fumeus, (779) Sorex hoyi, (780) Sorex monticolus, (781) Sorex ornatus, (782) Sorex palustris, (783) Sorex trowbridgii, (784) Sorex tundrensis, (785) Sorex ugyunak, (786) Sorex vagrans, (787) Spermophilus beecheyi, (788) Spermophilus columbianus, (789) Spermophilus elegans, (790) Spermophilus lateralis, (791) Spermophilus parryii, (792) Spermophilus tridecemlineatus, (793) Spermophilus variegatus, (794) Sphyrapicus nuchalis, (795) Sphyrapicus ruber, (796) Sphyrapicus thyroideus, (797) Sphyrapicus varius, (798) Spinus pinus, (799) Spiza americana, (800) Spizella arborea.\n\n![Figure 1\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp11-v2.jpg)\n\n**Figure 1\u2014figure supplement 11.:** Plots of temperature-mass relationships for 80 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (801) Spizella breweri, (802) Spizella pallida, (803) Spizella passerina, (804) Spizella pusilla, (805) Sporophila minuta, (806) Sporophila torqueola, (807) Stelgidopteryx ruficollis, (808) Stelgidopteryx serripennis, (809) Stellula calliope, (810) Stercorarius longicaudus, (811) Stercorarius parasiticus, (812) Stercorarius pomarinus, (813) Sterna antillarum, (814) Sterna caspia, (815) Sterna forsteri, (816) Sterna hirundo, (817) Sterna paradisaea, (818) Streptopelia senegalensis, (819) Strix nebulosa, (820) Strix occidentalis, (821) Strix varia, (822) Sturnella magna, (823) Sturnella neglecta, (824) Sturnira lilium, (825) Sturnira ludovici, (826) Sturnus vulgaris, (827) Suncus murinus, (828) Sylvia atricapilla, (829) Sylvia borin, (830) Sylvietta virens, (831) Sylvilagus floridanus, (832) Synallaxis albescens, (833) Synaptomys borealis, (834) Synaptomys cooperi, (835) Tachycineta bicolor, (836) Tachycineta thalassina, (837) Tachyphonus rufus, (838) Tachyphonus surinamus, (839) Tadarida brasiliensis, (840) Tamias amoenus, (841) Tamias dorsalis, (842) Tamias minimus, (843) Tamias quadrivittatus, (844) Tamias senex, (845) Tamias speciosus, (846) Tamias striatus, (847) Tamias townsendii, (848) Tamias umbrinus, (849) Tamiasciurus douglasii, (850) Tamiasciurus hudsonicus, (851) Taraba major, (852) Tarsiger cyanurus, (853) Taxidea taxus, (854) Tchagra australis, (855) Telophorus sulfureopectus, (856) Terpsiphone rufiventer, (857) Terpsiphone viridis, (858) Thalurania furcata, (859) Thamnomanes caesius, (860) Thamnophilus caerulescens, (861) Thamnophilus doliatus, (862) Thamnophilus punctatus, (863) Thomomys bottae, (864) Thomomys talpoides, (865) Thraupis episcopus, (866) Thryomanes bewickii, (867) Thryothorus ludovicianus, (868) Thryothorus maculipectus, (869) Thryothorus pleurostictus, (870) Tityra semifasciata, (871) Todirostrum cinereum, (872) Tolmomyias sulphurescens, (873) Toxostoma cinereum, (874) Toxostoma curvirostre, (875) Toxostoma lecontei, (876) Toxostoma redivivum, (877) Toxostoma rufum, (878) Treron calva, (879) Tringa flavipes, (880) Tringa glareola.\n\n![Figure 1\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig1-figsupp12-v2.jpg)\n\n**Figure 1\u2014figure supplement 12.:** Plots of temperature-mass relationships for 72 of the 952 species. Grey points are individuals and black lines show ordinary least squares linear regression of relationships. Ranges of both mass and temperature axes vary depending on species. Species names with corresponding plot numbers: (881) Tringa macularia, (882) Tringa melanoleuca, (883) Tringa solitaria, (884) Troglodytes aedon, (885) Troglodytes troglodytes, (886) Trogon collaris, (887) Tryngites subruficollis, (888) Turdus albicollis, (889) Turdus grayi, (890) Turdus ignobilis, (891) Turdus leucomelas, (892) Turdus merula, (893) Turdus migratorius, (894) Turtur chalcospilos, (895) Turtur tympanistria, (896) Tympanuchus cupido, (897) Tympanuchus phasianellus, (898) Tyrannus melancholicus, (899) Tyrannus tyrannus, (900) Tyrannus verticalis, (901) Tyrannus vociferans, (902) Tyto alba, (903) Uraeginthus bengalus, (904) Uria aalge, (905) Urocitellus elegans, (906) Urocitellus parryii, (907) Urocyon cinereoargenteus, (908) Uroderma bilobatum, (909) Vermivora celata, (910) Vermivora chrysoptera, (911) Vermivora peregrina, (912) Vermivora pinus, (913) Vermivora ruficapilla, (914) Vermivora virginiae, (915) Vidua chalybeata, (916) Vidua macroura, (917) Vidua purpurascens, (918) Vireo altiloquus, (919) Vireo bellii, (920) Vireo cassinii, (921) Vireo flavifrons, (922) Vireo gilvus, (923) Vireo griseus, (924) Vireo huttoni, (925) Vireo olivaceus, (926) Vireo philadelphicus, (927) Vireo solitarius, (928) Vireo vicinior, (929) Volatinia jacarina, (930) Vulpes vulpes, (931) Willisornis poecilinotus, (932) Wilsonia canadensis, (933) Wilsonia citrina, (934) Wilsonia pusilla, (935) Xanthocephalus xanthocephalus, (936) Xenops minutus, (937) Xiphorhynchus flavigaster, (938) Xiphorhynchus guttatus, (939) Zapus hudsonius, (940) Zapus princeps, (941) Zapus trinotatus, (942) Zenaida asiatica, (943) Zenaida macroura, (944) Zonotrichia albicollis, (945) Zonotrichia atricapilla, (946) Zonotrichia capensis, (947) Zonotrichia georgiana, (948) Zonotrichia iliaca, (949) Zonotrichia leucophrys, (950) Zonotrichia lincolnii, (951) Zonotrichia melodia, (952) Zonotrichia querula.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-v2.jpg)\n\n**Figure 2.:** (A) Stacked histogram of correlation coefficients (r) for all species' intraspecific temperature-mass relationships. Colored bars show species with statistically significant relationships, both negative (purple) and positive (green), while white bars indicate species with relationship slopes that are not significantly different from zero. Percentages are of species in each group. (B) Stacked histogram of all species' correlation coefficients with bar color corresponding to taxonomic class. Dark vertical lines are correlation coefficients of zero. See Figure 2\u2014figure supplements 1\u20136.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Density plot of z scores for all species\u2019 intraspecific temperature-mass relationships in blue, with standard normal z distribution shown with black line. Z scores were calculated from p-values corrected with false discovery rate control. Grey vertical line is z score of zero.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Stacked histograms of correlation coefficients (r) from intraspecific temperature-mass relationships for (A) migrant and (B) nonmigrant bird species. Of 750 bird species, 371 migrant species and 243 nonmigrant species were identified from data requested from BirdLife International (Birdlife International, 2017); species with migratory status codes of \u2018Altitudinal Migrant\u2019, \u2018Full Migrant\u2019, and \u2018Nomadic\u2019 were reclassified as migrants and \u2018Not a Migrant\u2019 as nonmigrants. Colored bars show species with statistically significant relationships, both negative (purple) and positive (green), while white bars indicate species with relationship slopes that are not significantly different from zero. Percentages are of species in each group. Dark vertical lines are correlation coefficients of zero.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Results for all species' latitude-mass relationships including (A) linear regression for latitude-temperature relationships for three example species, Martes pennanti, Tamias quadrivittatus, and Synaptomys cooperi, (B) stacked histograms of all species' correlation coefficients (r) showing statistical significance of relationships and relationships by taxonomic class, and (C) variation in all species' correlation coefficients across number of individuals, collection year temperature range, mass range, mean mass, and absolute mean latitude. The latitude axes in (A) are reversed (i.e., higher latitudes to left) to correspond with temperature axes (Figures 1 and 2).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Results for all species' temperature-mass relationships with additional filtering of specimens based on lifestage. The final dataset (Figure 2A) contained a column with lifestage information for each individual, if it had been recorded. To remove all individuals explicitly identified as non-adults, we filtered that dataset to include only those individuals which had their lifestage recorded as adult, or if no lifestage information was provided. These include (A) spatial collection locations of all individual specimens and linear regression for temperature-mass relationships for three example species, Martes pennanti, Tamias quadrivittatus, and Synaptomys cooperi, (B) stacked histograms of all species' correlation coefficients (r) showing statistical significance of relationships and relationships by taxonomic class, and (C) variation in all species' correlation coefficients across number of individuals, collection year temperature range, mass range, mean mass, and absolute mean latitude.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Results for all species' temperature-mass relationships with outliers removed. Outliers were considered any individual mass value that was more than three standard deviations away from the fitted relationship value. These include (A) spatial collection locations for all individual specimens and linear regression for temperature-mass relationships for three example species, Martes pennanti, Tamias quadrivittatus, and Synaptomys cooperi, (B) stacked histograms of all species' correlation coefficients (r) showing statistical significance of relationships and relationships by taxonomic class, and (C) variation in all species' correlation coefficients across number of individuals, collection year temperature range, mass range, mean mass, and absolute mean latitude.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Results for all species\u2019 temperature-mass relationships for species with at least 60 individuals, range in collection years of at least 40, and range in latitudinal degrees of at least 10 (n\u00a0=\u00a0591). These include (A) spatial collection locations for all individual specimens and linear regression for temperature-mass relationship for an example species, Martes pennant, (B) stacked histograms of all species\u2019 correlation coefficients (r) showing statistical significance of relationships and relationships by taxonomic class, and (C) variation in all species\u2019 correlation coefficients across number of individuals, collection year temperature range, mass range, mean mass, and absolute mean latitude.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Results for all species\u2019 temperature-mass relationships for species with at least 15 individuals, range in collection years of at least 10, and range in latitudinal degrees of at least 2.5 (n\u00a0=\u00a01,455). These include (A) spatial collection locations for all individual specimens and linear regression for temperature-mass relationships for three example species, Martes pennant, Tamias quadrivittatus, and Synaptomys cooperi, (B) stacked histograms of all species\u2019 correlation coefficients (r) showing statistical significance of relationships and relationships by taxonomic class, and (C) variation in all species\u2019 correlation coefficients across number of individuals, collection year temperature range, mass range, mean mass, and absolute mean latitude.\n\nThe weak, non-directional intraspecific relationships indicated by the distribution of correlation coefficients are consistent across taxonomic groups and temporal lags. Mean correlation coefficients for both endothermic classes are \u22120.006 and \u22120.065, for mammals and birds respectively (Figure 2B). Similarly, correlation coefficient distributions were approximately centered on zero for all of the 30 orders analyzed (\u22120.2 < $r\u00af$ < 0.003 for orders with more than 10 species; Figure 3 and Figure 3\u2014figure supplement 1), and for migrant and nonmigrant bird species (Figure 2\u2014figure supplement 2). Correlation coefficient distributions for temperature-mass relationships using lagged temperatures were centered around zero like those using temperature from the collection year (Figure 4 and Figure 4\u2014figure supplement 1), indicating that there was not a temporal lag effect on the response of species' masses to temperature. Correlation coefficients did not vary systematically by sample size (Figure 5A), extent of variation in temperature or mass (Figure 5B,C), species' average mass (Figure 5D), or species' average latitude (Figure 5E). While temperature is considered the actual driver, some studies use latitude as a proxy when evaluating variation in size (Bergmann, 1847; Stillwell, 2010). Using latitude, the mean correlation coefficient was \u22120.05 with no statistically significant latitude-mass relationship for 71% of species (Figure 2\u2014figure supplement 3), while the respective values for temperature were \u22120.05 and 79% (Figure 2A). Results were robust to a variety of decisions and stringencies about how to filter the size (Figure 2\u2014figure supplements 4 and 5) and species data (Figure 2\u2014figure supplements 6 and 7).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig3-v2.jpg)\n\n**Figure 3.:** Histograms of correlation coefficients (r) from intraspecific temperature-mass relationships for each taxonomic order represented by more than ten species, with order shown above histogram. Height of y-axis varies depending on number of species. Bar color indicates taxonomic class. Dark vertical lines are correlation coefficients of zero. For remaining orders, see Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Histograms of correlation coefficients (r) from intraspecific temperature-mass relationships for each taxonomic order represented by ten or fewer species, with order shown above histogram. Height of y-axis varies depending on number of species. Bar color indicates taxonomic class. Dark vertical lines are correlation coefficients of zero.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig4-v2.jpg)\n\n**Figure 4.:** Histograms of correlation coefficients (r) for all species' intraspecific temperature-mass relationships with mean annual temperature from (A) the year in which individuals were collected, (B) 25 years prior to collection year, and (C) 50 years prior to collection year. Dark vertical lines are correlation coefficients of zero. For all past year temperatures, see Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Distributions of correlation coefficients (r) for all species' intraspecific temperature-mass relationships with mean annual temperature for collection year to 110 years prior to collection year. Black points show mean correlation coefficient across species for each past year of temperature.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27166/elife-27166-fig5-v2.jpg)\n\n**Figure 5.:** Variation in all species' correlation coefficients (r) across the following variables for each species: (A) number of individuals, (B) difference between hottest and coldest collection year temperatures, (C) mass range, (D) mean mass, and (E) absolute mean latitude. Horizontal lines are correlation coefficients of zero. The x-axes of some plots (A, C, D) are on a log scale to better show spread of values.\n\n## Discussion\n\nIn contrast to conventional wisdom and several recent review papers, our analysis of 952 species shows little to no support for a negative intraspecific temperature-mass relationship that is sufficiently strong or common to be considered a biogeographic rule. Three quarters of bird and mammal species show no significant change in mass across a temperature gradient and temperature explained less than 10% of intraspecific variation in mass for 87% of species (Figure 2A). This was true regardless of taxonomic group (Figures 2 and 3), temporal lag in temperature (Figure 4), species' size, location, or sampling intensity or extent (Figure 5). These results are consistent with two previous studies that examined museum specimen size measurements across latitude. The first study showed that 22 out of 47 North American mammal species studied had no relationship between latitude and length, and 10 of the 25 significant relationships were opposite the expected direction (McNab, 1971). The second found a similar proportion of non-significant results (42/87), but a lower proportion of significant relationships that opposed the rule (9/45) for carnivorous mammals (Meiri et al., 2004). While more species had significant negative relationships than positive in both our study and these two museum-based studies, in all cases less than half of species had significant negative correlations (14\u201341%). In combination with these two smaller studies, our results suggest that there is little evidence for a strong or general Bergmann's rule when analyzing raw data instead of summarizing published results.\n\nOur results are inconsistent with recent reviews, which have reported that the majority of species conform to Bergmann's rule (Ashton, 2002; Meiri and Dayan, 2003;\u00a0Watt et al., 2010). While these reviews included results that were either non-significant or opposite of Bergmann's rule, the proportion of significant results in support of Bergmann's rule was higher and therefore resulted in conclusions that supported the generality of the temperature-mass relationship. Generalizing from results in the published literature involves the common challenges of publication bias and selective reporting (Koricheva et al., 2013). In addition, because the underlying Bergmann's rule studies typically report minimal statistical information, often providing only relationship significance or direction instead of p-values or correlation coefficients (Meiri and Dayan, 2003), proper meta-analyses and associated assessments of biological significance are not possible. While several reviews found no evidence for publication bias using limited analyses (Ashton, 2002; Meiri et al., 2004), the notable differences between the conclusions of our data-intensive approach and those from reviews suggest that publication bias in literature examining Bergmann's rule warrants further investigation. These differences also demonstrate the value of data-intensive approaches in ecology for overcoming potential weaknesses and biases in the published literature. Directly analyzing large quantities of data from hundreds of species allows us to assess the generality of patterns originally reported in smaller studies while avoiding the risk of publication bias. This approach additionally makes it easier to integrate other factors that potentially influence size into future analyses. The new insight gained from this data-intensive approach demonstrates the value of investing in large compilations of ecologically-relevant data (Hampton et al., 2013) and the proper training required to work with these datasets (Hampton et al., 2017).\n\nOur analyses and conclusions are limited to the intraspecific form of Bergmann\u2019s rule. This is the most commonly studied and well-defined form of the relationship, and the one most amenable to analyses using large compilations of museum data. Difficulty in interpreting Bergmann\u2019s original formulation has resulted in an array of different ideas and implementations of interspecific analyses (Blackburn et al., 1999; Meiri and Thomas, 2007; Watt et al., 2010; Meiri, 2011). The most common forms of these interspecific analyses involve correlations between various species-level size metrics and environmental measures and are conducted at various taxonomic levels from genus to class (e.g., Blackburn and Gaston, 1996; Diniz-Filho et al., 2007; Boyer et al., 2009; Clauss et al., 2013). Efforts to apply data-intensive approaches to the interspecific form of this relationship will need to address the fact that occurrence records are not evenly distributed across the geographic range of species, and determine how the many interpretations of interspecific Bergmann\u2019s rule are related to one another and the biological expectations for interspecific responses to temperature.\n\nThe original formulation of Bergmann's rule, and the scope of our conclusions, apply only to endotherms. However, negative temperature-mass relationships have also been documented in ectotherms, with the pattern referred to as the size-temperature rule (Ray, 1960; Angilletta and Dunham, 2003). In contrast to the hypotheses for Bergmann's rule, which are based primarily on homeostasis (Gardner et al., 2011), the size-temperature rule in ectotherms is thought to result from differences between growth and development rates (Forster et al., 2011). The current version of VertNet contained ectotherm size data for only seven species, which is not sufficient to complete a comprehensive analysis of the ectotherm size-temperature rule. Future work exploring the ectotherm size-temperature rule in natural systems using data-intensive approaches is necessary for understanding the generality of this rule in ectotherms, and data may be sought for this effort in the literature or via a coordinated effort by museums to continue digitizing size measurements for specimens.\n\nA number of mechanisms have been suggested to explain why higher temperatures should result in lower body sizes, including heat loss, starvation, resource availability, migratory ability, and phylogenetic constraints (Blackburn et al., 1999). Most of the proposed hypotheses have not been tested sufficiently to allow for strong conclusions to be drawn about their potential to produce Bergmann's rule (Blackburn et al., 1999; Watt et al., 2010; Teplitsky and Millien, 2014) and the widely studied heat loss hypothesis has been questioned for a variety of reasons (James, 1970; McNab, 1971;\u00a0Blackburn et al., 1999; Watt et al., 2010; McNamara et al., 2016). While no existing hypotheses have been confirmed, it is possible that some processes are producing negative relationships between size and temperature. The lack of a strong relationship does not preclude processes that result in a negative temperature-mass relationship, but it does suggest that these processes have less influence relative to other factors that affect intraspecific size.\n\nThe relative importance of the many factors besides temperature that can influence size within a species is as yet unknown. Size is affected by abiotic factors such as humidity and resource availability (Teplitsky and Millien, 2014), characteristics of individuals like clutch size (Boyer et al., 2009), and community context, including possible gaps in size-related niches (Smith et al., 2010) and the trophic effects of primary productivity on consumer size (Sheridan and Bickford, 2011). Temperature itself can have indirect effects on size, such as via habitat changes in water flow or food availability, that result in size responses opposite of Bergmann's rule (Gardner et al., 2011). Anthropogenic influences have been shown to influence the effect of temperature on size (Faurby and Ara\u00fajo, 2016), and similar impacts of dispersal, extinctions, and the varying scales of climate change have been proposed (Clauss et al., 2013). Because our data primarily came from North America, further analyses focused on species native to other continents could reveal differing temperature-mass relationships due to varying temperature regimes. While our work shows that more species have negative significant relationships between temperature and mass than positive, only 21% of species have statistically significant relationships and it consequently appears that some combination of other factors more strongly drives intraspecific size variation for most endothermic\u00a0taxa.\n\nThe lack of evidence for temperature as a primary determinant of size variation in endothermic species calls into question the hypothesis that decreases in organism size may represent a third universal response to global warming. The potentially general decline in size with warming was addressed by assessments that evaluated dynamic body size responses to temperature using similar approaches to the Bergmann's rule reviews discussed above (Sheridan and Bickford, 2011; Gardner et al., 2011;\u00a0Teplitsky and Millien, 2014). The results of these temporal reviews were similar to those for spatial relationships, but the conclusions of these studies clearly noted the variability in body size responses and the need for future data-intensive work (Sheridan and Bickford, 2011; Gardner et al., 2011) using broader temperature ranges (Teplitsky and Millien, 2014) to fully assess the temperature-size relationship.\n\nOur results in combination with those from other studies suggest that much of the observed variation in size is not explained simply by temperature. While there is still potential for the size of endotherms, and other aspects of organismal physiology and morphology, to respond to both geographic gradients in temperature and climate change, these responses may not be as easily explained solely by temperature as has been suggested (Sheridan and Bickford, 2011; Gardner et al., 2011). Future attempts to explain variation in the size of individuals across space or time should\u00a0use integrative approaches to include the influence of multiple factors, and their potential interactions, on organism size. This will be facilitated by analyzing spatiotemporal data similar to that used in this study, which has broad ranges of time, space, and environmental conditions for large numbers of species and individuals. This data-intensive approach provides a unique perspective on the general responses of bird and mammal species to temperature, and has potential to assist in further investigation of the complex combinations of factors that determine biogeographic patterns of endotherm size and how species respond to changes in climate.\n\n## Materials\u00a0and\u00a0methods\n\n### Data\n\nOrganismal data were obtained from VertNet, a publicly available data platform for digitized specimen records from museum collections primarily in North America, but also includes global data (Constable et al., 2010). Body mass is routinely measured when organisms are collected, with relatively high precision and consistent methods, by most field biologists, whose intent is to use those organisms for research and preservation in natural history collections (Winker, 2000; Hoffmann et al., 2010). These measurements are included on written labels and ledgers associated with specimens, which are digitized and provided in standard formats, e.g., Darwin Core (Wieczorek et al., 2012). In addition to other trait information, mass has recently been extracted and converted to a more usable form\u00a0from Darwin Core formatted records published in VertNet (Guralnick et al., 2016). This crucial step reduces variation in how these measurements are reported by standardizing the naming conventions and harmonizing all measurement values to the same units (Guralnick et al., 2016). We downloaded the entire datasets for Mammalia, Aves, Amphibia, and Reptilia available in September 2016 (Bloom et al., 2016a, Bloom et al., 2016b, Bloom et al., 2016c, Bloom et al., 2016d) using the Data Retriever (Kironde et al., 2017;\u00a0Morris and White, 2013) and filtered for those records that had mass measurements available. Fossil specimen records with mass measurements were removed.\n\nWe only analyzed species with at least 30 georeferenced individuals whose collection dates spanned at least 20 years and collection locations at least five degrees latitude, in order to ensure sufficient sample size and spatiotemporal extent to accurately represent each species' temperature-mass relationship. We conducted sensitivity analyses\u00a0to determine if these thresholds were appropriate (Figure 2\u2014figure supplements 6 and 7). We selected individual records with geographic coordinates for collection location, collection dates between 1900 and 2010, and species-level taxonomic identification, which were evaluated to ensure no issues with synonymy or clear taxon concept issues. To minimize inclusion of records of non-adult specimens, we identified the smallest mass associated with an identified adult life stage category for each species and removed all records with mass values below this minimum adult size. Results were not qualitatively different due to either additional filtering based on specimen lifestage (Figure 2\u2014figure supplement 4) or removal of outliers (Figure 2\u2014figure supplement 5). Temperatures were obtained from the Udel_AirT_Precip global terrestrial raster provided by NOAA from their website at http://www.esrl.noaa.gov/psd/, a 0.5 by 0.5 decimal degree grid of monthly mean temperatures from 1900 to 2010 (Willmott and Matsuura, 2001). For each specimen, the mean annual temperature at its collection location was extracted for the year of collection.\n\nThis resulted in a final dataset containing records for 273,901 individuals from 952 bird and mammal species (MSB Mammal Collection (Arctos), 2015; Ornithology Collection Passeriformes - Royal Ontario Museum, 2015; MVZ Mammal Collection (Arctos), 2015; MVZ Bird Collection (Arctos), 2015; KUBI Mammalogy Collection, 2016; CAS Ornithology (ORN), 2015; DMNS Bird Collection (Arctos), 2015; UCLA Donald R, 2015; DMNS Mammal Collection (Arctos), 2015; UAM Mammal Collection (Arctos), 2015; UWBM Mammalogy Collection, 2015; UAM Bird Collection (Arctos), 2015; UMMZ Birds Collection, 2015; CUMV Bird Collection (Arctos), 2015; CUMV Mammal Collection (Arctos), 2015; MLZ Bird Collection (Arctos), 2015; LACM Vertebrate Collection, 2015; CHAS Mammalogy Collection (Arctos), 2016; Ornithology Collection Non Passeriformes - Royal Ontario Museum, 2015; KUBI Ornithology Collection, 2014; MSB Bird Collection (Arctos), 2015; Biodiversity Research and Teaching Collections - TCWC Vertebrates, 2015; TTU Mammals Collection, 2015; CAS Mammalogy (MAM), 2015; Vertebrate Zoology Division - Ornithology, Yale Peabody Museum, 2015; University of Alberta Mammalogy Collection (UAMZ), 2015; UAZ Mammal Collection, 2016; Charles and Conner Museum, 2015; SBMNH Vertebrate Zoology, 2015; Cowan Tetrapod Collection - Birds, 2015; Cowan Tetrapod Collection - Mammals, 2015; NMMNH Mammal, 2015; Schmidt Museum of Natural History_Mammals, 2015; USAC Mammals Collection, 2013; MLZ Mammal Collection (Arctos), 2015; Ohio State University Tetrapod Division - Bird Collection (OSUM), 2015; Collections, 2015; DMNH Birds, 2015; CM Birds Collection, 2015; WNMU Mammal Collection (Arctos), 2015; UCM Mammals Collection, 2015; UWYMV Bird Collection (Arctos), 2015; NCSM Mammals Collection, 2015; Vertebrate Zoology Division - Mammalogy, Yale Peabody Museum, 2015; HSU Wildlife Mammals, 2016; WNMU Bird Collection (Arctos), 2015; UWBM Ornithology Collection, 2015; UCM Birds, 2015; University of Alberta Ornithology Collection (UAMZ), 2015; SDNHM Birds Collection, 2015). The average number of individuals per species was 288, ranging from 30 to 15,415 individuals. The species in the dataset were diverse, including volant, non-volant, placental, and marsupial mammals, and both migratory and non-migratory birds. There were species from all continents except Antarctica, though the majority of the data were concentrated in North America (Figure 1A). The distribution of the species' mean masses was strongly right-skewed, as expected for broad scale size distributions (Brown and Nicoletto, 1991), with 74% of species having average masses less than 100 g. Size ranged from very small (3.7 g desert shrew Notiosorex crawfordi and 2.6 g calliope hummingbird Stellula calliope) to very large (63 kg harbor seal Phoca vitulina and 5.8 kg wild turkey Meleagris gallopavo).\n\n### Analysis\n\nWe fit the intraspecific relationship between mean annual temperature and mass for each species with ordinary least squares linear regression (e.g., Figure 1B,C,D and Figure 1\u2014figure supplements 1\u201312) using the statsmodels.formula.api module in Python (Seabold and Perktold, 2010). The strength of each species\u2019 relationship was characterized by the correlation coefficient, its significance at alpha of 0.05, and the associated z score. When assessing statistical significance with large numbers of correlations it is important to consider the expected distribution of these correlations under the null model that no correlation exists for any species.\n\nWe addressed this issue by using false discovery rate control (Benajmini and Hochberg, 1995) implemented with the stats package in R (R Core Team, 2016). This method determines the expected distribution of values for p (or Z) in the case where no relationship exists for individual correlation and adjusts observed values to control for excessive false positives. Specifically, it maintains the Type I error rate (proportion of false positives) across all tests at the chosen value of alpha and therefore gives an accurate estimate of the number of significant relationships (Benajmini and Hochberg, 1995). This allows us to estimate the number of species with true positive and negative correlations (i.e., those that have values that exceed those expected from the null distribution). We then compared the number of species with positive and negative correlation coefficients, and the proportion of those with statistically significant adjusted p-values.\n\nWe investigated various potential correlates of the strength of Bergmann's rule. Because it has been argued that Bergmann's rule is exhibited more strongly by some groups than others (McNab, 1971), we examined correlation coefficient distributions within each class and order. Additionally, distributions for migrant and nonmigrant bird species were compared due to conflicting evidence about the impact of migration on temperature-mass relationships (Ashton, 2002). As a temporal lag in size response to temperature is likely due to individuals of a species responding to temperatures prior to their collection year (e.g., Stacey and Fellowes, 2002), we assessed species' temperature-mass relationships using temperatures from 1 to 110 years prior to collection year. We also examined the relationship between species' correlation coefficients and five variables to understand potential statistical and biological influences on the results. We did so with the number of individuals, temperature range, and mass range to determine if the relationship was stronger when more data points or more widely varying values were available. Because it has been argued that Bergmann's rule is stronger in larger species (Steudel et al., 1994) and at higher latitudes (Freckleton et al., 2003; Faurby and Ara\u00fajo, 2016), we examined variability with both mean mass and mean latitude for each species. We also conducted all analyses using latitude instead of mean annual temperature. The reproducible code for these analyses is available (https://github.com/KristinaRiemer/MassResponseToTemp;\u00a0Riemer and White, 2017) and archived (https://zenodo.org/badge/latestdoi/17957630).\n",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "8882af6c-56c0-4f7a-ab4a-06b9496cb931",
+      "submission_id": "6f8c49f1-70bb-42bd-867d-4582209bbcee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian Rutz, University of St Andrews United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27166.041](https://doi.org/10.7554/eLife.27166.041)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"No general relationship between mass and temperature in endotherm species\" for consideration by eLife. Your article has been favorably evaluated by Diethard Tautz (Senior Editor) and three reviewers, one of whom, Christian Rutz (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Alison Boyer (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour study uses an unprecedented dataset of animal measurements to assess the generality of one of the best-known biogeographic 'rules', and as such holds great potential for stimulating future research. The reviewers agreed that this is a noteworthy advance, but have identified a few issues that need to be addressed in a revision (essential revisions).\n\nEssential revisions:\n\n- Scope. You rightly note in the Introduction (first paragraph) that Bergmann's rule was originally formulated for closely-related species (i.e., interspecific patters), but you then proceed \u2013 like most earlier studies \u2013 to explore intraspecific relationships only. A comprehensive assessment of this long-standing hypothesis would cover both intra- and interspecific perspectives, and the reviewers wondered whether you could add results for the latter? These additional analyses shouldn't be too onerous, yet they would add substantial value to the manuscript. Otherwise, it should be made clear throughout that the intraspecific facet of Bergmann's rule is being examined.\n\n- Statistical analyses. While the reviewers enjoyed the intuitive graphical illustration of results, and found that the overall patterns look compelling, they think it is essential that formal statistical analyses are conducted to support the study's conclusions. What is the null hypothesis for Figure 2A (and accompanying supporting figures)? Given the distribution of latitudes, sample sizes etc., what is the expected distribution of r values? Can Fisher's r-to-z transformation be used to calculate a null distribution, and to estimate the excess of positive and negative values?\n\n- Migratory birds. The results for birds are complicated because many of them are migratory (e.g., in the USA, birds migrate between North and South America). This is an important confounding factor, as for almost all species, it is impossible to satisfactorily define the latitude at which they exist (in fact, this problem may even apply at smaller scales, if species move in response to extrinsic factors, such as harsh weather conditions). This alone argues against the generality of Bergmann's rule, and suggests that it has little applicability to birds. Please formally explore the effect of this confound on the overall patterns observed, for example, by re-running analyses with (migratory) birds excluded.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for sending your article entitled \"No general relationship between mass and temperature in endothermic species\" for peer review at eLife. Your article is being evaluated by one peer reviewer, and the evaluation is being overseen by a Reviewing Editor and Diethard Tautz as the Senior Editor.\n\nOne of the original reviewers has kindly provided further comments on your statistical analyses, and we would appreciate if you could briefly respond to these, as there may have been a misunderstanding:\n\nThey clarified that their point was that you could have more simply converted the r -> z and overlain a z distribution rather than highlighting statistically significant values. They noted that overlaying a z-distribution on z-transformed r values would show the extent of disagreement or not in the tails more clearly. They also commented that r is just bounded at -1 and 1, so the information is quite limited, and that overall, r is not a particularly informative comparative measure of effect size for heterogeneous data varying in sample size etc.\n",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5447afdb-8d48-4695-9046-e2de5e61eae6",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C1",
+      "claim": "Bergmann's rule is a widely-accepted biogeographic rule stating that individuals within a species are smaller in warmer environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Bergmann's rule is a widely-accepted biogeographic rule stating that individuals within a species are smaller in warmer environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature and represents accepted scientific knowledge about Bergmann's rule.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "33b8dce1-6b05-4734-82ca-7a3fa28f3ad8",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C2",
+      "claim": "For eighty-seven percent of species, temperature explained less than 10% of variation in mass.",
+      "claim_type": "EXPLICIT",
+      "source": "For eighty-seven percent of species, temperature explained less than 10% of variation in mass, and for 79% of species the correlation was not statistically significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis, directly stated in the abstract and supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "65a2046a-291d-40c9-a848-2cdd921a60a5",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C3",
+      "claim": "For 79% of species the correlation between temperature and mass was not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "For eighty-seven percent of species, temperature explained less than 10% of variation in mass, and for 79% of species the correlation was not statistically significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's statistical analysis, directly stated in the abstract and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "7430ba0f-0fc9-4987-b7ec-a88b072be704",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C4",
+      "claim": "Bergmann's rule is not general.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Bergmann's rule is not general and temperature is not a dominant driver of biogeographic variation in mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the statistical analysis showing weak and non-significant relationships for most species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "547a325c-0843-42e6-9c76-8c57444671d0",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C5",
+      "claim": "Temperature is not a dominant driver of biogeographic variation in mass.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Bergmann's rule is not general and temperature is not a dominant driver of biogeographic variation in mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the data showing that temperature explains less than 10% of variation in mass for 87% of species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "688b13d6-65aa-41d6-ac1a-96c21142aac3",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C6",
+      "claim": "The lack of dominant temperature forcing weakens the justification for the hypothesis that global warming could result in widespread decreases in body size.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of dominant temperature forcing weakens the justification for the hypothesis that global warming could result in widespread decreases in body size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the study's findings about the weak temperature-mass relationship.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "dd397110-a035-463a-b62e-ea7f968e9806",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C7",
+      "claim": "Bergmann's rule describes a negative relationship between body mass and temperature across space that is believed to be common in endothermic species.",
+      "claim_type": "EXPLICIT",
+      "source": "Bergmann's rule describes a negative relationship between body mass and temperature across space that is believed to be common in endothermic species (Bergmann, 1847; Brown and Lee, 1969; Kendeigh, 1969; Freckleton et al., 2003; Carotenuto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to the scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "b0c59e87-bff7-4c88-849f-46fedeebf821",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C8",
+      "claim": "The heat loss hypothesis argues that the higher surface area to volume ratio of smaller individuals results in improved heat dissipation in hot environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Many hypotheses have been proposed to explain this pattern (Blackburn et al., 1999; Ashton, 2002; Watt et al., 2010) including the heat loss hypothesis, which argues that the higher surface area to volume ratio of smaller individuals results in improved heat dissipation in hot environments (Bergmann, 1847).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an established hypothesis in the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "93bf100c-adcd-4497-8d46-6b5f72d86ab9",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C9",
+      "claim": "The majority of studies have focused on the intraspecific form of Bergmann's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Though originally described for closely-related species (i.e., interspecific; Blackburn et al., 1999), the majority of studies have focused on the intraspecific form of Bergmann's rule (Rensch, 1938; Meiri, 2011) by assessing trends in individual size within a species (Langvatn and Albon, 1986; Yom-Tov and Geffen, 2006; Gardner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to review literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "e026b00b-6e5c-4212-8e17-d8480fa83a24",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C10",
+      "claim": "The common consensus from recent reviews is that Bergmann's rule is general.",
+      "claim_type": "EXPLICIT",
+      "source": "Bergmann's rule has been questioned both empirically and mechanistically (McNab, 1971; Geist, 1987; Huston and Wolverton, 2011; Teplitsky and Millien, 2014) but the common consensus from recent reviews is that the pattern is general (Ashton et al., 2000; Ashton, 2002; Meiri and Dayan, 2003; Watt and Salewski, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple review papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "7cd4f116-7f99-4cc4-98c9-c9c971f0eb08",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C11",
+      "claim": "The negative relationship between mass and temperature could result in decreasing individual size across species in response to climate change.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been suggested that this negative relationship between mass and temperature could result in decreasing individual size across species in response to climate change (Sheridan and Bickford, 2011) and that this may be a 'third universal response to warming' (Gardner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "c08fc0ca-6e2c-4bc8-91a7-f3391d555489",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C12",
+      "claim": "The study analyzed 952 bird and mammal species.",
+      "claim_type": "EXPLICIT",
+      "source": "We use data from VertNet (Constable et al., 2010), a large compilation of digitized museum records that contains over 700,000 globally distributed individual-level size measures, to evaluate the intraspecific relationship between temperature and mass for 952 mammal and bird species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study's sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "bdaef730-e499-4451-b025-e0667fc2e18e",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C13",
+      "claim": "The usable data consist of 273,901 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The usable data consist of 273,901 individuals with an average of 288 individuals per species, with individuals of each species spanning an average of 75 years and 34 latitudinal degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study's dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "56ea2c79-51b5-40cf-9f60-21f0c5ca155b",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C14",
+      "claim": "The average number of individuals per species was 288.",
+      "claim_type": "EXPLICIT",
+      "source": "The usable data consist of 273,901 individuals with an average of 288 individuals per species, with individuals of each species spanning an average of 75 years and 34 latitudinal degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study's data characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "3f788539-0dff-486b-ac6e-a1c057e55978",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C15",
+      "claim": "Individuals of each species spanned an average of 75 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The usable data consist of 273,901 individuals with an average of 288 individuals per species, with individuals of each species spanning an average of 75 years and 34 latitudinal degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the temporal extent of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "c83cf911-c59b-4100-882f-a4c7601ffcd5",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C16",
+      "claim": "Individuals of each species spanned an average of 34 latitudinal degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "The usable data consist of 273,901 individuals with an average of 288 individuals per species, with individuals of each species spanning an average of 75 years and 34 latitudinal degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the spatial extent of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "d01ab1d4-b681-4366-b8e0-ce5445baa5cb",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C17",
+      "claim": "The distribution of correlation coefficients was centered near zero with a mean correlation coefficient of \u22120.05 across species.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of correlation coefficients was centered near zero with a mean correlation coefficient of \u22120.05 across species (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the statistical analysis, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "ad63e3c8-f5d9-4c70-a1e5-dbd214c0c048",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C18",
+      "claim": "14% of species' relationships were significant and negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Relationships for 79% of species were not significantly different from zero based on false discovery rate-controlled p values and associated z scores, while 14% of species' relationships were significant and negative and 7% were significant and positive (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the statistical analysis, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "d940c674-65dd-4c70-aa48-8df9c5015073",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C19",
+      "claim": "7% of species' relationships were significant and positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Relationships for 79% of species were not significantly different from zero based on false discovery rate-controlled p values and associated z scores, while 14% of species' relationships were significant and negative and 7% were significant and positive (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the statistical analysis, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "8a208513-6bc6-41bf-a184-e281208beab4",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C20",
+      "claim": "Mean correlation coefficients for both endothermic classes are \u22120.006 and \u22120.065, for mammals and birds respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean correlation coefficients for both endothermic classes are \u22120.006 and \u22120.065, for mammals and birds respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the statistical analysis, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "810643c2-60dd-4530-9cf3-781afceac0bd",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C22",
+      "claim": "Correlation coefficients did not vary systematically by sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation coefficients did not vary systematically by sample size (Figure 5A), extent of variation in temperature or mass (Figure 5B,C), species' average mass (Figure 5D), or species' average latitude (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of potential correlates, shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "961b075e-914d-469d-9b5d-c0b7e3689146",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C23",
+      "claim": "Correlation coefficients did not vary systematically by extent of variation in temperature or mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation coefficients did not vary systematically by sample size (Figure 5A), extent of variation in temperature or mass (Figure 5B,C), species' average mass (Figure 5D), or species' average latitude (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of potential correlates, shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "bd1ce5b4-17c3-4765-bcfd-4089d9ccf423",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C24",
+      "claim": "Correlation coefficients did not vary systematically by species' average mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation coefficients did not vary systematically by sample size (Figure 5A), extent of variation in temperature or mass (Figure 5B,C), species' average mass (Figure 5D), or species' average latitude (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of potential correlates, shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "76fd9778-ccfb-43b2-8444-3783a8549455",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C25",
+      "claim": "Correlation coefficients did not vary systematically by species' average latitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation coefficients did not vary systematically by sample size (Figure 5A), extent of variation in temperature or mass (Figure 5B,C), species' average mass (Figure 5D), or species' average latitude (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of potential correlates, shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "116ccccb-22be-4254-b878-b8ea3dae5015",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C26",
+      "claim": "Using latitude, the mean correlation coefficient was \u22120.05 with no statistically significant latitude-mass relationship for 71% of species.",
+      "claim_type": "EXPLICIT",
+      "source": "Using latitude, the mean correlation coefficient was \u22120.05 with no statistically significant latitude-mass relationship for 71% of species (Figure 2\u2014figure supplement 3), while the respective values for temperature were \u22120.05 and 79% (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis using latitude as a proxy for temperature, shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "48876ed2-6904-40ab-a6ca-3db684f902aa",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C27",
+      "claim": "Most of the species in this study showed weak non-significant relationships between temperature and mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the species in this study showed weak non-significant relationships between temperature and mass (Figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the primary findings, supported by Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "711e3d15-0247-4276-99b8-60f97b28ccb3",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C28",
+      "claim": "Three quarters of bird and mammal species show no significant change in mass across a temperature gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to conventional wisdom and several recent review papers, our analysis of 952 species shows little to no support for a negative intraspecific temperature-mass relationship that is sufficiently strong or common to be considered a biogeographic rule. Three quarters of bird and mammal species show no significant change in mass across a temperature gradient and temperature explained less than 10% of intraspecific variation in mass for 87% of species (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "66205d16-7a86-4ebf-badf-4c353f4bfd72",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C29",
+      "claim": "The first study showed that 22 out of 47 North American mammal species studied had no relationship between latitude and length.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with two previous studies that examined museum specimen size measurements across latitude. The first study showed that 22 out of 47 North American mammal species studied had no relationship between latitude and length, and 10 of the 25 significant relationships were opposite the expected direction (McNab, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a previous study's findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "96359769-6ee8-400d-8e17-25b52e64395e",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C30",
+      "claim": "10 of the 25 significant relationships in McNab 1971 were opposite the expected direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The first study showed that 22 out of 47 North American mammal species studied had no relationship between latitude and length, and 10 of the 25 significant relationships were opposite the expected direction (McNab, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a previous study's findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "6c05bfc7-fce7-453b-8d2e-702ac914d5ca",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C31",
+      "claim": "The second study found a similar proportion of non-significant results (42/87) for carnivorous mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The second found a similar proportion of non-significant results (42/87), but a lower proportion of significant relationships that opposed the rule (9/45) for carnivorous mammals (Meiri et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a previous study's findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "abb7fc25-4b24-495c-94c1-9750cc49ab04",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C32",
+      "claim": "In all cases less than half of species had significant negative correlations (14\u201341%).",
+      "claim_type": "EXPLICIT",
+      "source": "While more species had significant negative relationships than positive in both our study and these two museum-based studies, in all cases less than half of species had significant negative correlations (14\u201341%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of findings from the current study and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "633e99bd-76e3-475c-a0f3-3c0dce754c99",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C33",
+      "claim": "There is little evidence for a strong or general Bergmann's rule when analyzing raw data instead of summarizing published results.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with these two smaller studies, our results suggest that there is little evidence for a strong or general Bergmann's rule when analyzing raw data instead of summarizing published results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current study's findings and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "adccc81c-2f06-43f5-af07-7721d09f3a26",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C34",
+      "claim": "Recent reviews have reported that the majority of species conform to Bergmann's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are inconsistent with recent reviews, which have reported that the majority of species conform to Bergmann's rule (Ashton, 2002; Meiri and Dayan, 2003; Watt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the conclusions of previous review papers, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "e6790cd5-8e93-4a31-a806-34c4a430a058",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C35",
+      "claim": "Several reviews found no evidence for publication bias using limited analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "While several reviews found no evidence for publication bias using limited analyses (Ashton, 2002; Meiri et al., 2004), the notable differences between the conclusions of our data-intensive approach and those from reviews suggest that publication bias in literature examining Bergmann's rule warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous studies' findings on publication bias.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "faaeeea0-2ed0-477c-8302-6a2c532840cb",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C36",
+      "claim": "The notable differences between the conclusions of our data-intensive approach and those from reviews suggest that publication bias in literature examining Bergmann's rule warrants further investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "While several reviews found no evidence for publication bias using limited analyses (Ashton, 2002; Meiri et al., 2004), the notable differences between the conclusions of our data-intensive approach and those from reviews suggest that publication bias in literature examining Bergmann's rule warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discrepancy between the current study's findings and previous reviews.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "97b13ebf-b977-4987-93ec-a1ed46dd6718",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C37",
+      "claim": "Directly analyzing large quantities of data from hundreds of species allows us to assess the generality of patterns originally reported in smaller studies while avoiding the risk of publication bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Directly analyzing large quantities of data from hundreds of species allows us to assess the generality of patterns originally reported in smaller studies while avoiding the risk of publication bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological advantage of the data-intensive approach.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "64e224ae-da5e-4737-a14a-1f4a86f05406",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C38",
+      "claim": "The analyses and conclusions are limited to the intraspecific form of Bergmann's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses and conclusions are limited to the intraspecific form of Bergmann's rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scope of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "5a504614-ef3b-432a-bea3-0c3bb6c1ae2e",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C39",
+      "claim": "The intraspecific form is the most commonly studied and well-defined form of the relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the most commonly studied and well-defined form of the relationship, and the one most amenable to analyses using large compilations of museum data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature, based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "2088d7a1-4d1d-421c-9169-d802d4579be9",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C40",
+      "claim": "The original formulation of Bergmann's rule applies only to endotherms.",
+      "claim_type": "EXPLICIT",
+      "source": "The original formulation of Bergmann's rule, and the scope of our conclusions, apply only to endotherms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope of Bergmann's rule based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "2b921a9a-1890-45a6-8e2f-9f3bb798ef9c",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C41",
+      "claim": "Negative temperature-mass relationships have also been documented in ectotherms, with the pattern referred to as the size-temperature rule.",
+      "claim_type": "EXPLICIT",
+      "source": "However, negative temperature-mass relationships have also been documented in ectotherms, with the pattern referred to as the size-temperature rule (Ray, 1960; Angilletta and Dunham, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about patterns in ectotherms, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "3c92acf7-c222-463c-9847-40c7c56b674a",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C42",
+      "claim": "The size-temperature rule in ectotherms is thought to result from differences between growth and development rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the hypotheses for Bergmann's rule, which are based primarily on homeostasis (Gardner et al., 2011), the size-temperature rule in ectotherms is thought to result from differences between growth and development rates (Forster et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanistic explanation for the size-temperature rule, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "7119e78d-4fda-48e8-b625-6026c617c076",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C43",
+      "claim": "The current version of VertNet contained ectotherm size data for only seven species.",
+      "claim_type": "EXPLICIT",
+      "source": "The current version of VertNet contained ectotherm size data for only seven species, which is not sufficient to complete a comprehensive analysis of the ectotherm size-temperature rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the available data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "09b4c86a-f459-460a-aa77-5c6581221633",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C44",
+      "claim": "Most of the proposed hypotheses for Bergmann's rule have not been tested sufficiently to allow for strong conclusions to be drawn about their potential to produce Bergmann's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the proposed hypotheses have not been tested sufficiently to allow for strong conclusions to be drawn about their potential to produce Bergmann's rule (Blackburn et al., 1999; Watt et al., 2010; Teplitsky and Millien, 2014) and the widely studied heat loss hypothesis has been questioned for a variety of reasons (James, 1970; McNab, 1971; Blackburn et al., 1999; Watt et al., 2010; McNamara et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature on mechanistic hypotheses, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "a591dd70-8825-4cdf-b528-83dcedfd6332",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C45",
+      "claim": "The widely studied heat loss hypothesis has been questioned for a variety of reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the proposed hypotheses have not been tested sufficiently to allow for strong conclusions to be drawn about their potential to produce Bergmann's rule (Blackburn et al., 1999; Watt et al., 2010; Teplitsky and Millien, 2014) and the widely studied heat loss hypothesis has been questioned for a variety of reasons (James, 1970; McNab, 1971; Blackburn et al., 1999; Watt et al., 2010; McNamara et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about criticisms of the heat loss hypothesis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "76ac743d-729b-4736-91b4-25e8e0f2795d",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C46",
+      "claim": "The lack of a strong relationship does not preclude processes that result in a negative temperature-mass relationship, but it does suggest that these processes have less influence relative to other factors that affect intraspecific size.",
+      "claim_type": "EXPLICIT",
+      "source": "While no existing hypotheses have been confirmed, it is possible that some processes are producing negative relationships between size and temperature. The lack of a strong relationship does not preclude processes that result in a negative temperature-mass relationship, but it does suggest that these processes have less influence relative to other factors that affect intraspecific size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings about the weak temperature-mass relationship.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "194d8d7d-7d9e-4ea5-a78c-8d3a4b80ce89",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C47",
+      "claim": "Size is affected by abiotic factors such as humidity and resource availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Size is affected by abiotic factors such as humidity and resource availability (Teplitsky and Millien, 2014), characteristics of individuals like clutch size (Boyer et al., 2009), and community context, including possible gaps in size-related niches (Smith et al., 2010) and the trophic effects of primary productivity on consumer size (Sheridan and Bickford, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about factors affecting size, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "ba2a9850-21c4-439f-acef-8dae6e9612d5",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C48",
+      "claim": "Size is affected by characteristics of individuals like clutch size.",
+      "claim_type": "EXPLICIT",
+      "source": "Size is affected by abiotic factors such as humidity and resource availability (Teplitsky and Millien, 2014), characteristics of individuals like clutch size (Boyer et al., 2009), and community context, including possible gaps in size-related niches (Smith et al., 2010) and the trophic effects of primary productivity on consumer size (Sheridan and Bickford, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about factors affecting size, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "f72b37d5-e519-4b29-91b3-e3f4a128239b",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C49",
+      "claim": "Temperature itself can have indirect effects on size, such as via habitat changes in water flow or food availability, that result in size responses opposite of Bergmann's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature itself can have indirect effects on size, such as via habitat changes in water flow or food availability, that result in size responses opposite of Bergmann's rule (Gardner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about indirect effects of temperature, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "840976b6-4f32-411b-9b53-1432f6474fda",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C50",
+      "claim": "Anthropogenic influences have been shown to influence the effect of temperature on size.",
+      "claim_type": "EXPLICIT",
+      "source": "Anthropogenic influences have been shown to influence the effect of temperature on size (Faurby and Ara\u00fajo, 2016), and similar impacts of dispersal, extinctions, and the varying scales of climate change have been proposed (Clauss et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about anthropogenic effects, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "05108600-7f00-4464-bf60-5d31fcdb8b42",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C51",
+      "claim": "The data primarily came from North America.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our data primarily came from North America, further analyses focused on species native to other continents could reveal differing temperature-mass relationships due to varying temperature regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the geographic distribution of the data, which can be verified from Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "5c243cc1-8d90-4e6a-85ce-f6ccaddf1b1a",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C52",
+      "claim": "Only 21% of species have statistically significant relationships between temperature and mass.",
+      "claim_type": "EXPLICIT",
+      "source": "While our work shows that more species have negative significant relationships between temperature and mass than positive, only 21% of species have statistically significant relationships and it consequently appears that some combination of other factors more strongly drives intraspecific size variation for most endothermic taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the data (14% negative + 7% positive = 21% total significant).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "a6e67b1f-04d5-4fc4-822a-f61e7ae72e60",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C53",
+      "claim": "Some combination of other factors more strongly drives intraspecific size variation for most endothermic taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "While our work shows that more species have negative significant relationships between temperature and mass than positive, only 21% of species have statistically significant relationships and it consequently appears that some combination of other factors more strongly drives intraspecific size variation for most endothermic taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that temperature explains little variation in mass for most species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "2516e147-9482-462b-beab-586403ace1d4",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C54",
+      "claim": "The lack of evidence for temperature as a primary determinant of size variation in endothermic species calls into question the hypothesis that decreases in organism size may represent a third universal response to global warming.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of evidence for temperature as a primary determinant of size variation in endothermic species calls into question the hypothesis that decreases in organism size may represent a third universal response to global warming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings about the weak temperature-mass relationship.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "998e1ed4-66f1-46ff-9102-bdce353ccf0d",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C55",
+      "claim": "The potentially general decline in size with warming was addressed by assessments that evaluated dynamic body size responses to temperature using similar approaches to the Bergmann's rule reviews.",
+      "claim_type": "EXPLICIT",
+      "source": "The potentially general decline in size with warming was addressed by assessments that evaluated dynamic body size responses to temperature using similar approaches to the Bergmann's rule reviews discussed above (Sheridan and Bickford, 2011; Gardner et al., 2011; Teplitsky and Millien, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous studies on temporal size responses, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "fe8aa0ae-f244-464b-ac5a-47561e012bb8",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C56",
+      "claim": "The results of temporal reviews were similar to those for spatial relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of these temporal reviews were similar to those for spatial relationships, but the conclusions of these studies clearly noted the variability in body size responses and the need for future data-intensive work (Sheridan and Bickford, 2011; Gardner et al., 2011) using broader temperature ranges (Teplitsky and Millien, 2014) to fully assess the temperature-size relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the findings of previous temporal reviews, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "c416a14d-a7ec-4b19-93d9-37e6621e17f1",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C57",
+      "claim": "Much of the observed variation in size is not explained simply by temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results in combination with those from other studies suggest that much of the observed variation in size is not explained simply by temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings and comparison with other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "2b48c956-f678-4e21-8ccf-e8a94593c7e1",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C58",
+      "claim": "Organismal data were obtained from VertNet, a publicly available data platform for digitized specimen records from museum collections.",
+      "claim_type": "EXPLICIT",
+      "source": "Organismal data were obtained from VertNet, a publicly available data platform for digitized specimen records from museum collections primarily in North America, but also includes global data (Constable et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "5e23a137-4e0a-42e8-b837-26a1a26af2db",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C59",
+      "claim": "Body mass is routinely measured when organisms are collected, with relatively high precision and consistent methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Body mass is routinely measured when organisms are collected, with relatively high precision and consistent methods, by most field biologists, whose intent is to use those organisms for research and preservation in natural history collections (Winker, 2000; Hoffmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data collection practices, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "199912f1-9483-4e30-ac49-c4e44cdcb6f9",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C60",
+      "claim": "The study only analyzed species with at least 30 georeferenced individuals whose collection dates spanned at least 20 years and collection locations at least five degrees latitude.",
+      "claim_type": "EXPLICIT",
+      "source": "We only analyzed species with at least 30 georeferenced individuals whose collection dates spanned at least 20 years and collection locations at least five degrees latitude, in order to ensure sufficient sample size and spatiotemporal extent to accurately represent each species' temperature-mass relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study's inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "416cafbb-61fb-4bfc-a906-766754293e4a",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C61",
+      "claim": "Temperatures were obtained from the Udel_AirT_Precip global terrestrial raster provided by NOAA.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperatures were obtained from the Udel_AirT_Precip global terrestrial raster provided by NOAA from their website at http://www.esrl.noaa.gov/psd/, a 0.5 by 0.5 decimal degree grid of monthly mean temperatures from 1900 to 2010 (Willmott and Matsuura, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the temperature data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "0e43326b-6c22-4a2e-9074-811621e81e1d",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C62",
+      "claim": "The final dataset contained records for 273,901 individuals from 952 bird and mammal species.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a final dataset containing records for 273,901 individuals from 952 bird and mammal species (MSB Mammal Collection (Arctos), 2015; Ornithology Collection Passeriformes - Royal Ontario Museum, 2015; MVZ Mammal Collection (Arctos), 2015; MVZ Bird Collection (Arctos), 2015; KUBI Mammalogy Collection, 2016; CAS Ornithology (ORN), 2015; DMNS Bird Collection (Arctos), 2015; UCLA Donald R, 2015; DMNS Mammal Collection (Arctos), 2015; UAM Mammal Collection (Arctos), 2015; UWBM Mammalogy Collection, 2015; UAM Bird Collection (Arctos), 2015; UMMZ Birds Collection, 2015; CUMV Bird Collection (Arctos), 2015; CUMV Mammal Collection (Arctos), 2015; MLZ Bird Collection (Arctos), 2015; LACM Vertebrate Collection, 2015; CHAS Mammalogy Collection (Arctos), 2016; Ornithology Collection Non Passeriformes - Royal Ontario Museum, 2015; KUBI Ornithology Collection, 2014; MSB Bird Collection (Arctos), 2015; Biodiversity Research and Teaching Collections - TCWC Vertebrates, 2015; TTU Mammals Collection, 2015; CAS Mammalogy (MAM), 2015; Vertebrate Zoology Division - Ornithology, Yale Peabody Museum, 2015; University of Alberta Mammalogy Collection (UAMZ), 2015; UAZ Mammal Collection, 2016; Charles and Conner Museum, 2015; SBMNH Vertebrate Zoology, 2015; Cowan Tetrapod Collection - Birds, 2015; Cowan Tetrapod Collection - Mammals, 2015; NMMNH Mammal, 2015; Schmidt Museum of Natural History_Mammals, 2015; USAC Mammals Collection, 2013; MLZ Mammal Collection (Arctos), 2015; Ohio State University Tetrapod Division - Bird Collection (OSUM), 2015; Collections, 2015; DMNH Birds, 2015; CM Birds Collection, 2015; WNMU Mammal Collection (Arctos), 2015; UCM Mammals Collection, 2015; UWYMV Bird Collection (Arctos), 2015; NCSM Mammals Collection, 2015; Vertebrate Zoology Division - Mammalogy, Yale Peabody Museum, 2015; HSU Wildlife Mammals, 2016; WNMU Bird Collection (Arctos), 2015; UWBM Ornithology Collection, 2015; UCM Birds, 2015; University of Alberta Ornithology Collection (UAMZ), 2015; SDNHM Birds Collection, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the final dataset size, with citations to data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "f8b3e8b9-77a8-47ec-882b-149e17ee40a1",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C63",
+      "claim": "The average number of individuals per species was 288, ranging from 30 to 15,415 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of individuals per species was 288, ranging from 30 to 15,415 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "ab7adfdc-e1de-44ae-84c3-992dd0fcea8c",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C64",
+      "claim": "The majority of the data were concentrated in North America.",
+      "claim_type": "EXPLICIT",
+      "source": "There were species from all continents except Antarctica, though the majority of the data were concentrated in North America (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the geographic distribution of the data, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "4f400bf0-83c8-4d3a-a135-8bcba4d2b8ad",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C65",
+      "claim": "74% of species had average masses less than 100 g.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the species' mean masses was strongly right-skewed, as expected for broad scale size distributions (Brown and Nicoletto, 1991), with 74% of species having average masses less than 100 g.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the size distribution of species in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "ec31bdf7-4147-4650-9ebf-804c5195a432",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C66",
+      "claim": "The study fit the intraspecific relationship between mean annual temperature and mass for each species with ordinary least squares linear regression.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit the intraspecific relationship between mean annual temperature and mass for each species with ordinary least squares linear regression (e.g., Figure 1B,C,D and Figure 1\u2014figure supplements 1\u201312) using the statsmodels.formula.api module in Python (Seabold and Perktold, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the analytical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "acc9cbce-0405-45a8-b4a5-f9a4315b2d9b",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C67",
+      "claim": "The study used false discovery rate control to address the issue of multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "We addressed this issue by using false discovery rate control (Benajmini and Hochberg, 1995) implemented with the stats package in R (R Core Team, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical method used to control for multiple comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "b50968b9-3f14-4855-81ab-8b69deb0ffed",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C68",
+      "claim": "False discovery rate control maintains the Type I error rate (proportion of false positives) across all tests at the chosen value of alpha.",
+      "claim_type": "EXPLICIT",
+      "source": "This method determines the expected distribution of values for p (or Z) in the case where no relationship exists for individual correlation and adjusts observed values to control for excessive false positives. Specifically, it maintains the Type I error rate (proportion of false positives) across all tests at the chosen value of alpha and therefore gives an accurate estimate of the number of significant relationships (Benajmini and Hochberg, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of the false discovery rate control method, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "f02ec885-1b06-48db-8c53-86fb860498b2",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C69",
+      "claim": "The study examined correlation coefficient distributions within each class and order.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it has been argued that Bergmann's rule is exhibited more strongly by some groups than others (McNab, 1971), we examined correlation coefficient distributions within each class and order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about an analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "3b664a46-4984-43ba-9fa0-a3a0dfaa61c4",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C70",
+      "claim": "The study compared distributions for migrant and nonmigrant bird species.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, distributions for migrant and nonmigrant bird species were compared due to conflicting evidence about the impact of migration on temperature-mass relationships (Ashton, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about an analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "17d15592-a201-497b-a233-bf0f621ce8de",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C71",
+      "claim": "The study assessed species' temperature-mass relationships using temperatures from 1 to 110 years prior to collection year.",
+      "claim_type": "EXPLICIT",
+      "source": "As a temporal lag in size response to temperature is likely due to individuals of a species responding to temperatures prior to their collection year (e.g., Stacey and Fellowes, 2002), we assessed species' temperature-mass relationships using temperatures from 1 to 110 years prior to collection year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about an analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "c0d34166-f646-4b54-9c98-2de14bc4c902",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C72",
+      "claim": "The study examined the relationship between species' correlation coefficients and five variables: number of individuals, temperature range, mass range, mean mass, and mean latitude.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the relationship between species' correlation coefficients and five variables to understand potential statistical and biological influences on the results. We did so with the number of individuals, temperature range, and mass range to determine if the relationship was stronger when more data points or more widely varying values were available. Because it has been argued that Bergmann's rule is stronger in larger species (Steudel et al., 1994) and at higher latitudes (Freckleton et al., 2003; Faurby and Ara\u00fajo, 2016), we examined variability with both mean mass and mean latitude for each species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "5b86e7ea-77a4-4fd9-8339-16b7ebe8988e",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C73",
+      "claim": "The study conducted all analyses using latitude instead of mean annual temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We also conducted all analyses using latitude instead of mean annual temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about an additional analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "309e1fc6-4b11-4016-a23b-80c4019aa91a",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C74",
+      "claim": "Martes pennanti had a negative relationship with temperature explaining a substantial amount of variation in mass.",
+      "claim_type": "EXPLICIT",
+      "source": "These species were chosen to represent the range of variability in relationship strength and direction exhibited by the 952 species from the study: Martes pennanti had a negative relationship with temperature explaining a substantial amount of variation in mass (B; blue points); Tamias quadrivittatus had no directional relationship between temperature and mass with temperature having little explanatory power (C; yellow points); Synaptomys cooperi had a strong positive temperature-mass relationship with a correlation coefficient (r) in the 99th percentile of all species' values (D; red points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of an example species shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "dd067861-96f5-432d-bd77-770d87008ac6",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C75",
+      "claim": "Tamias quadrivittatus had no directional relationship between temperature and mass with temperature having little explanatory power.",
+      "claim_type": "EXPLICIT",
+      "source": "These species were chosen to represent the range of variability in relationship strength and direction exhibited by the 952 species from the study: Martes pennanti had a negative relationship with temperature explaining a substantial amount of variation in mass (B; blue points); Tamias quadrivittatus had no directional relationship between temperature and mass with temperature having little explanatory power (C; yellow points); Synaptomys cooperi had a strong positive temperature-mass relationship with a correlation coefficient (r) in the 99th percentile of all species' values (D; red points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of an example species shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "2def1fa8-7044-4355-a5be-8fac028454e4",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C76",
+      "claim": "Synaptomys cooperi had a strong positive temperature-mass relationship with a correlation coefficient (r) in the 99th percentile of all species' values.",
+      "claim_type": "EXPLICIT",
+      "source": "These species were chosen to represent the range of variability in relationship strength and direction exhibited by the 952 species from the study: Martes pennanti had a negative relationship with temperature explaining a substantial amount of variation in mass (B; blue points); Tamias quadrivittatus had no directional relationship between temperature and mass with temperature having little explanatory power (C; yellow points); Synaptomys cooperi had a strong positive temperature-mass relationship with a correlation coefficient (r) in the 99th percentile of all species' values (D; red points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of an example species shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "d860ab06-7006-48eb-a9c6-1244213c9551",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C77",
+      "claim": "Correlation coefficient distributions for temperature-mass relationships using lagged temperatures were centered around zero like those using temperature from the collection year.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation coefficient distributions for temperature-mass relationships using lagged temperatures were centered around zero like those using temperature from the collection year (Figure 4 and Figure 4\u2014figure supplement 1), indicating that there was not a temporal lag effect on the response of species' masses to temperature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the temporal lag analysis, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "72e4e1ef-0afd-49bc-96b1-6d679f20de94",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C78",
+      "claim": "There was not a temporal lag effect on the response of species' masses to temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation coefficient distributions for temperature-mass relationships using lagged temperatures were centered around zero like those using temperature from the collection year (Figure 4 and Figure 4\u2014figure supplement 1), indicating that there was not a temporal lag effect on the response of species' masses to temperature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the temporal lag analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "5b8e40d4-20cf-46d0-bd36-29aa886099fc",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "claim_id": "C79",
+      "claim": "Results were robust to a variety of decisions and stringencies about how to filter the size and species data.",
+      "claim_type": "EXPLICIT",
+      "source": "Results were robust to a variety of decisions and stringencies about how to filter the size (Figure 2\u2014figure supplements 4 and 5) and species data (Figure 2\u2014figure supplements 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the robustness of the results, supported by supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study found that for 87% of species, temperature explained less than 10% of variation in mass, and for 79% of species the correlation was not statistically significant. The distribution of correlation coefficients was centered near zero with a mean of \u22120.05, with 14% showing significant negative relationships and 7% showing significant positive relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are directly supported by the statistical analysis presented in Figure 2A and consistently reported throughout the manuscript. The use of false discovery rate control (C67, C68) provides appropriate correction for multiple comparisons across 952 species, strengthening the reliability of the significance assessments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "fbdb29fe-3808-402a-aae2-c162e0fb237c",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors conclude that Bergmann's rule is not general, temperature is not a dominant driver of biogeographic variation in mass, and other factors more strongly drive intraspecific size variation for most endothermic taxa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These conclusions are well-supported by the empirical findings (C2, C3, C17-C19) showing weak and predominantly non-significant temperature-mass relationships. The inference that other factors must be more important is logically sound given that temperature explains <10% of variance in 87% of species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "0e7ecb9b-025f-477a-8ac7-a6769c6da2ef",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The weak temperature-mass relationships are consistent across taxonomic groups, with mean correlation coefficients of \u22120.006 for mammals and \u22120.065 for birds, and distributions centered near zero for all 30 orders analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The taxonomic consistency is demonstrated in Figures 2B and 3, showing that the lack of strong temperature-mass relationships is not confined to specific taxonomic groups but is general across both major endothermic classes and their constituent orders.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "412d6eb3-8d49-435c-a4bd-e9e5009c0aac",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Correlation coefficients did not vary systematically with sample size, extent of variation in temperature or mass, species' average mass, or species' average latitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 5 clearly shows no systematic patterns between correlation coefficients and these five variables. This analysis addresses potential confounding factors and demonstrates that the weak relationships are not artifacts of sampling intensity, data range, or species characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "64bd93bc-4c02-4286-8e85-ab0e14763ba1",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "There was no temporal lag effect on the response of species' masses to temperature, as correlation coefficient distributions using lagged temperatures (1-110 years prior) were centered around zero like those using temperature from the collection year.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 4 and Figure 4\u2014figure supplement 1 demonstrate that using historical temperatures does not reveal stronger relationships, addressing the possibility that organisms respond to past rather than contemporary temperatures. This strengthens the conclusion that temperature is not a dominant driver.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "64c27643-3bfa-4a85-814c-03065839687f",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using latitude as a proxy for temperature yielded similar results, with a mean correlation coefficient of \u22120.05 and 71% of species showing no statistically significant latitude-mass relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This analysis (Figure 2\u2014figure supplement 3) demonstrates that the findings are robust to using latitude instead of direct temperature measurements, addressing methodological concerns about the temperature data source and providing consistency with some previous studies that used latitude.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "e497ba0b-d7a4-4ea6-8165-c85f3694cb82",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Results were robust to various filtering decisions regarding size data and species inclusion criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 2\u2014figure supplements 4-7 demonstrate that the main findings persist across different data filtering approaches (lifestage filtering, outlier removal, different sample size thresholds), indicating the results are not artifacts of specific methodological choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "ebc8ec6f-7199-42ac-95cb-15cd35927c18",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The current findings are consistent with two previous museum-based studies showing that less than half of species had significant negative correlations (14-41%), with substantial proportions showing no relationship or relationships opposite to Bergmann's rule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison with McNab (1971) and Meiri et al. (2004) provides important context and demonstrates consistency across independent datasets. However, the evaluation relies on the accuracy of the cited studies' findings, which cannot be independently verified from the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "e2bb636a-c567-4f80-9886-945ed8894e7c",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study's results are inconsistent with recent reviews reporting that the majority of species conform to Bergmann's rule, suggesting potential publication bias in the literature that warrants further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the discrepancy between this data-intensive approach and previous reviews is clearly documented, the claim of publication bias is speculative (C36). The authors acknowledge that some reviews found no evidence for publication bias (C35), creating uncertainty about whether publication bias or other factors explain the discrepancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "19fcad3e-0bf8-4b0c-8d0d-3cc7fd9856bd",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The lack of dominant temperature forcing weakens the justification for the hypothesis that global warming could result in widespread decreases in body size as a 'third universal response to warming.'",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This inference is logically sound given the weak spatial temperature-mass relationships documented in the study. However, it is important to note this is based on spatial patterns and may not directly predict temporal responses to climate change, as the authors acknowledge by citing temporal reviews with similar variability (C55, C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "f10c88be-825f-48fb-bb59-4f30bafaa18f",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study analyzed 952 bird and mammal species comprising 273,901 individuals from museum collections, with an average of 288 individuals per species spanning 75 years and 34 latitudinal degrees, primarily from North America.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dataset characteristics are clearly documented with appropriate detail about sample sizes, temporal and spatial extent, and geographic distribution (Figure 1A). The data sources are extensively cited (C62), providing transparency and reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "b7fe1ced-b0a5-48c1-a17e-952fb3a70b05",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used ordinary least squares linear regression to fit temperature-mass relationships for each species and applied false discovery rate control to address multiple comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The analytical methods are clearly described and appropriate. False discovery rate control is the correct approach for controlling Type I error across 952 simultaneous tests, and the authors correctly explain its properties (C68). This methodological rigor strengthens confidence in the significance assessments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "225ec20f-5edc-453e-be7b-aeb93bb9050c",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The analyses and conclusions are limited to the intraspecific form of Bergmann's rule in endotherms, which is the most commonly studied and well-defined form of the relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors clearly define the scope of their study and acknowledge its limitations. This is appropriate given the different interpretations and implementations of interspecific Bergmann's rule and the focus of the available museum data on individual-level measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "20cad787-43c9-4003-b74b-de6cf005c961",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The size-temperature rule in ectotherms is thought to result from different mechanisms than Bergmann's rule in endotherms, but insufficient ectotherm data (only 7 species) were available for comprehensive analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge the limitation of their dataset for addressing ectotherm patterns and correctly note the different mechanistic hypotheses for ectotherms versus endotherms. This transparency about scope limitations is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "5e5d7f40-a4a9-4a90-9724-ea14a3ad0eae",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Most mechanistic hypotheses for Bergmann's rule have not been sufficiently tested, the heat loss hypothesis has been questioned, and the lack of strong relationships suggests temperature-related processes have less influence than other factors affecting size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discussion of mechanisms is appropriately cautious and well-supported by citations. The inference that weak relationships suggest limited influence of temperature-related processes (C46) is logically sound, though it does not rule out such processes entirely, as the authors acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "765ce437-c90c-434a-854a-d8316068d491",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Multiple factors besides temperature affect intraspecific size variation, including abiotic factors, individual characteristics, community context, indirect temperature effects, and anthropogenic influences, with only 21% of species showing statistically significant temperature-mass relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discussion of alternative factors is well-supported by citations and provides important context for interpreting the weak temperature relationships. The calculation that 21% of species show significant relationships (14% negative + 7% positive) is correct based on the reported data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "4f0d7996-4ea5-4c38-9edd-34932209bc2b",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study compared distributions for migrant and nonmigrant bird species due to conflicting evidence about the impact of migration on temperature-mass relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 2\u2014figure supplement 2 shows this analysis was conducted, with similar proportions of non-significant relationships for both migrant (80%) and nonmigrant (79%) species, indicating migration status does not substantially affect the temperature-mass relationship pattern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    },
+    {
+      "id": "d1ad6dbc-b655-46a3-8bd5-4cbb88d4708a",
+      "content_id": "b30573f4-d0ed-4e1d-afd2-700f29db662f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Three example species were selected to represent the range of variability: Martes pennanti showed a negative relationship with substantial explanatory power, Tamias quadrivittatus showed no directional relationship with little explanatory power, and Synaptomys cooperi showed a strong positive relationship in the 99th percentile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These examples are clearly illustrated in Figure 1B-D and appropriately represent the diversity of patterns observed across species. The selection of examples spanning negative, neutral, and positive relationships effectively communicates the heterogeneity in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:54.159764Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "33b8dce1-6b05-4734-82ca-7a3fa28f3ad8",
+      "result_id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b"
+    },
+    {
+      "claim_id": "65a2046a-291d-40c9-a848-2cdd921a60a5",
+      "result_id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b"
+    },
+    {
+      "claim_id": "d01ab1d4-b681-4366-b8e0-ce5445baa5cb",
+      "result_id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b"
+    },
+    {
+      "claim_id": "ad63e3c8-f5d9-4c70-a1e5-dbd214c0c048",
+      "result_id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b"
+    },
+    {
+      "claim_id": "d940c674-65dd-4c70-aa48-8df9c5015073",
+      "result_id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b"
+    },
+    {
+      "claim_id": "48876ed2-6904-40ab-a6ca-3db684f902aa",
+      "result_id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b"
+    },
+    {
+      "claim_id": "711e3d15-0247-4276-99b8-60f97b28ccb3",
+      "result_id": "7f52e6c7-ae06-45d1-9a3e-c26fbe4a514b"
+    },
+    {
+      "claim_id": "7430ba0f-0fc9-4987-b7ec-a88b072be704",
+      "result_id": "fbdb29fe-3808-402a-aae2-c162e0fb237c"
+    },
+    {
+      "claim_id": "547a325c-0843-42e6-9c76-8c57444671d0",
+      "result_id": "fbdb29fe-3808-402a-aae2-c162e0fb237c"
+    },
+    {
+      "claim_id": "633e99bd-76e3-475c-a0f3-3c0dce754c99",
+      "result_id": "fbdb29fe-3808-402a-aae2-c162e0fb237c"
+    },
+    {
+      "claim_id": "a6e67b1f-04d5-4fc4-822a-f61e7ae72e60",
+      "result_id": "fbdb29fe-3808-402a-aae2-c162e0fb237c"
+    },
+    {
+      "claim_id": "c416a14d-a7ec-4b19-93d9-37e6621e17f1",
+      "result_id": "fbdb29fe-3808-402a-aae2-c162e0fb237c"
+    },
+    {
+      "claim_id": "8a208513-6bc6-41bf-a184-e281208beab4",
+      "result_id": "0e7ecb9b-025f-477a-8ac7-a6769c6da2ef"
+    },
+    {
+      "claim_id": "f02ec885-1b06-48db-8c53-86fb860498b2",
+      "result_id": "0e7ecb9b-025f-477a-8ac7-a6769c6da2ef"
+    },
+    {
+      "claim_id": "810643c2-60dd-4530-9cf3-781afceac0bd",
+      "result_id": "412d6eb3-8d49-435c-a4bd-e9e5009c0aac"
+    },
+    {
+      "claim_id": "961b075e-914d-469d-9b5d-c0b7e3689146",
+      "result_id": "412d6eb3-8d49-435c-a4bd-e9e5009c0aac"
+    },
+    {
+      "claim_id": "bd1ce5b4-17c3-4765-bcfd-4089d9ccf423",
+      "result_id": "412d6eb3-8d49-435c-a4bd-e9e5009c0aac"
+    },
+    {
+      "claim_id": "76fd9778-ccfb-43b2-8444-3783a8549455",
+      "result_id": "412d6eb3-8d49-435c-a4bd-e9e5009c0aac"
+    },
+    {
+      "claim_id": "c0d34166-f646-4b54-9c98-2de14bc4c902",
+      "result_id": "412d6eb3-8d49-435c-a4bd-e9e5009c0aac"
+    },
+    {
+      "claim_id": "d860ab06-7006-48eb-a9c6-1244213c9551",
+      "result_id": "64bd93bc-4c02-4286-8e85-ab0e14763ba1"
+    },
+    {
+      "claim_id": "72e4e1ef-0afd-49bc-96b1-6d679f20de94",
+      "result_id": "64bd93bc-4c02-4286-8e85-ab0e14763ba1"
+    },
+    {
+      "claim_id": "17d15592-a201-497b-a233-bf0f621ce8de",
+      "result_id": "64bd93bc-4c02-4286-8e85-ab0e14763ba1"
+    },
+    {
+      "claim_id": "116ccccb-22be-4254-b878-b8ea3dae5015",
+      "result_id": "64c27643-3bfa-4a85-814c-03065839687f"
+    },
+    {
+      "claim_id": "5b86e7ea-77a4-4fd9-8339-16b7ebe8988e",
+      "result_id": "64c27643-3bfa-4a85-814c-03065839687f"
+    },
+    {
+      "claim_id": "5b8e40d4-20cf-46d0-bd36-29aa886099fc",
+      "result_id": "e497ba0b-d7a4-4ea6-8165-c85f3694cb82"
+    },
+    {
+      "claim_id": "66205d16-7a86-4ebf-badf-4c353f4bfd72",
+      "result_id": "ebc8ec6f-7199-42ac-95cb-15cd35927c18"
+    },
+    {
+      "claim_id": "96359769-6ee8-400d-8e17-25b52e64395e",
+      "result_id": "ebc8ec6f-7199-42ac-95cb-15cd35927c18"
+    },
+    {
+      "claim_id": "6c05bfc7-fce7-453b-8d2e-702ac914d5ca",
+      "result_id": "ebc8ec6f-7199-42ac-95cb-15cd35927c18"
+    },
+    {
+      "claim_id": "abb7fc25-4b24-495c-94c1-9750cc49ab04",
+      "result_id": "ebc8ec6f-7199-42ac-95cb-15cd35927c18"
+    },
+    {
+      "claim_id": "633e99bd-76e3-475c-a0f3-3c0dce754c99",
+      "result_id": "ebc8ec6f-7199-42ac-95cb-15cd35927c18"
+    },
+    {
+      "claim_id": "adccc81c-2f06-43f5-af07-7721d09f3a26",
+      "result_id": "e2bb636a-c567-4f80-9886-945ed8894e7c"
+    },
+    {
+      "claim_id": "e6790cd5-8e93-4a31-a806-34c4a430a058",
+      "result_id": "e2bb636a-c567-4f80-9886-945ed8894e7c"
+    },
+    {
+      "claim_id": "faaeeea0-2ed0-477c-8302-6a2c532840cb",
+      "result_id": "e2bb636a-c567-4f80-9886-945ed8894e7c"
+    },
+    {
+      "claim_id": "97b13ebf-b977-4987-93ec-a1ed46dd6718",
+      "result_id": "e2bb636a-c567-4f80-9886-945ed8894e7c"
+    },
+    {
+      "claim_id": "688b13d6-65aa-41d6-ac1a-96c21142aac3",
+      "result_id": "19fcad3e-0bf8-4b0c-8d0d-3cc7fd9856bd"
+    },
+    {
+      "claim_id": "2516e147-9482-462b-beab-586403ace1d4",
+      "result_id": "19fcad3e-0bf8-4b0c-8d0d-3cc7fd9856bd"
+    },
+    {
+      "claim_id": "998e1ed4-66f1-46ff-9102-bdce353ccf0d",
+      "result_id": "19fcad3e-0bf8-4b0c-8d0d-3cc7fd9856bd"
+    },
+    {
+      "claim_id": "fe8aa0ae-f244-464b-ac5a-47561e012bb8",
+      "result_id": "19fcad3e-0bf8-4b0c-8d0d-3cc7fd9856bd"
+    },
+    {
+      "claim_id": "c08fc0ca-6e2c-4bc8-91a7-f3391d555489",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "bdaef730-e499-4451-b025-e0667fc2e18e",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "56ea2c79-51b5-40cf-9f60-21f0c5ca155b",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "3f788539-0dff-486b-ac6e-a1c057e55978",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "c83cf911-c59b-4100-882f-a4c7601ffcd5",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "2b48c956-f678-4e21-8ccf-e8a94593c7e1",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "199912f1-9483-4e30-ac49-c4e44cdcb6f9",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "416cafbb-61fb-4bfc-a906-766754293e4a",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "0e43326b-6c22-4a2e-9074-811621e81e1d",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "f8b3e8b9-77a8-47ec-882b-149e17ee40a1",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "ab7adfdc-e1de-44ae-84c3-992dd0fcea8c",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "4f400bf0-83c8-4d3a-a135-8bcba4d2b8ad",
+      "result_id": "f10c88be-825f-48fb-bb59-4f30bafaa18f"
+    },
+    {
+      "claim_id": "ec31bdf7-4147-4650-9ebf-804c5195a432",
+      "result_id": "b7fe1ced-b0a5-48c1-a17e-952fb3a70b05"
+    },
+    {
+      "claim_id": "acc9cbce-0405-45a8-b4a5-f9a4315b2d9b",
+      "result_id": "b7fe1ced-b0a5-48c1-a17e-952fb3a70b05"
+    },
+    {
+      "claim_id": "b50968b9-3f14-4855-81ab-8b69deb0ffed",
+      "result_id": "b7fe1ced-b0a5-48c1-a17e-952fb3a70b05"
+    },
+    {
+      "claim_id": "64e224ae-da5e-4737-a14a-1f4a86f05406",
+      "result_id": "225ec20f-5edc-453e-be7b-aeb93bb9050c"
+    },
+    {
+      "claim_id": "5a504614-ef3b-432a-bea3-0c3bb6c1ae2e",
+      "result_id": "225ec20f-5edc-453e-be7b-aeb93bb9050c"
+    },
+    {
+      "claim_id": "2088d7a1-4d1d-421c-9169-d802d4579be9",
+      "result_id": "225ec20f-5edc-453e-be7b-aeb93bb9050c"
+    },
+    {
+      "claim_id": "2b921a9a-1890-45a6-8e2f-9f3bb798ef9c",
+      "result_id": "20cad787-43c9-4003-b74b-de6cf005c961"
+    },
+    {
+      "claim_id": "3c92acf7-c222-463c-9847-40c7c56b674a",
+      "result_id": "20cad787-43c9-4003-b74b-de6cf005c961"
+    },
+    {
+      "claim_id": "7119e78d-4fda-48e8-b625-6026c617c076",
+      "result_id": "20cad787-43c9-4003-b74b-de6cf005c961"
+    },
+    {
+      "claim_id": "09b4c86a-f459-460a-aa77-5c6581221633",
+      "result_id": "5e5d7f40-a4a9-4a90-9724-ea14a3ad0eae"
+    },
+    {
+      "claim_id": "a591dd70-8825-4cdf-b528-83dcedfd6332",
+      "result_id": "5e5d7f40-a4a9-4a90-9724-ea14a3ad0eae"
+    },
+    {
+      "claim_id": "76ac743d-729b-4736-91b4-25e8e0f2795d",
+      "result_id": "5e5d7f40-a4a9-4a90-9724-ea14a3ad0eae"
+    },
+    {
+      "claim_id": "194d8d7d-7d9e-4ea5-a78c-8d3a4b80ce89",
+      "result_id": "765ce437-c90c-434a-854a-d8316068d491"
+    },
+    {
+      "claim_id": "ba2a9850-21c4-439f-acef-8dae6e9612d5",
+      "result_id": "765ce437-c90c-434a-854a-d8316068d491"
+    },
+    {
+      "claim_id": "f72b37d5-e519-4b29-91b3-e3f4a128239b",
+      "result_id": "765ce437-c90c-434a-854a-d8316068d491"
+    },
+    {
+      "claim_id": "840976b6-4f32-411b-9b53-1432f6474fda",
+      "result_id": "765ce437-c90c-434a-854a-d8316068d491"
+    },
+    {
+      "claim_id": "05108600-7f00-4464-bf60-5d31fcdb8b42",
+      "result_id": "765ce437-c90c-434a-854a-d8316068d491"
+    },
+    {
+      "claim_id": "5c243cc1-8d90-4e6a-85ce-f6ccaddf1b1a",
+      "result_id": "765ce437-c90c-434a-854a-d8316068d491"
+    },
+    {
+      "claim_id": "3b664a46-4984-43ba-9fa0-a3a0dfaa61c4",
+      "result_id": "4f0d7996-4ea5-4c38-9edd-34932209bc2b"
+    },
+    {
+      "claim_id": "309e1fc6-4b11-4016-a23b-80c4019aa91a",
+      "result_id": "d1ad6dbc-b655-46a3-8bd5-4cbb88d4708a"
+    },
+    {
+      "claim_id": "dd067861-96f5-432d-bd77-770d87008ac6",
+      "result_id": "d1ad6dbc-b655-46a3-8bd5-4cbb88d4708a"
+    },
+    {
+      "claim_id": "2def1fa8-7044-4355-a5be-8fac028454e4",
+      "result_id": "d1ad6dbc-b655-46a3-8bd5-4cbb88d4708a"
+    }
+  ],
+  "comparisons": []
+}

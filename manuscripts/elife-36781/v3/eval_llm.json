@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Mice successfully learned and performed an evidence accumulation task with high accuracy (>70% correct), using evidence throughout the cue period with a recency bias, while maintaining minimal licking during evidence presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are well-supported by behavioral data in Figures 1B, 1C, and 1E, with appropriate statistical analyses including regression showing evidence weighting across time bins. The task design successfully implements the intended evidence accumulation paradigm with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Bilateral muscimol inactivation of crus I reduced choice accuracy without impairing the ability to lick or perform trials, with behavioral modeling indicating reduced evidence sensitivity and increased choice history dependence, suggesting cerebellar involvement in decision processes rather than motor execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C54-C56 are supported by inactivation data (Figure 1D, supplements) and behavioral regression modeling (Figure 1\u2014figure supplement 2C). The dissociation between choice accuracy and motor ability is convincing. However, the spatial specificity of muscimol spread is uncertain despite post-hoc fluorescein verification, and the bilateral nature of inactivation prevents assessment of lateralized contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "Purkinje cell somatic calcium activity was modulated during the cue period in 70% of cells, with activity returning to baseline after trials, and electrophysiological recordings showing gradually increasing firing rates during evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C25 are supported by two-photon imaging (Figure 2C-E) and electrophysiology (Figure 2\u2014figure supplement 2) with appropriate statistical tests. The 70% modulation rate significantly exceeds shuffle controls. However, the relationship between calcium dynamics and underlying firing patterns remains somewhat indirect given the slow calcium kinetics in Purkinje cells (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Population-level Purkinje cell somatic activity accurately decoded both upcoming choice and evidence side, with independent encoding of choice and evidence information demonstrated through shuffling controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by decoding analyses (Figure 2F) with appropriate shuffling controls to separate choice and evidence information. The independent shuffling procedure (holding one variable constant while shuffling the other) is methodologically sound for addressing the correlation between choice and evidence in correct trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Purkinje cells encode choice and evidence variables with minimal information about anticipatory movements, as licking, nose, whisker, and forepaw movements did not differ across trial types and could not predict choice or evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by extensive behavioral video analysis (Figure 2\u2014figure supplements 3-4) showing no systematic movement differences across conditions. The decoding analysis using movement features failed to predict task variables, strengthening the interpretation that neural signals reflect cognitive rather than purely motor variables. This is a critical control for the decision-making interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Individual Purkinje cells showed diverse choice representations: 80% modulated in the same direction regardless of choice direction, while 20% showed opposite modulation for left vs. right choices. Among choice-selective cells (30%), there was a bias toward left-choice encoding (63% vs. 37%), with mixed bilateral representations similar to frontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by single-cell analysis (Figure 3A) with appropriate statistical criteria (p<0.05, t-test). The mixed representation is interesting and the comparison to frontal cortex (Erlich et al., 2011) is appropriate. However, recording from only the left hemisphere limits interpretation of the lateralization bias, and the functional significance of the 80/20 split in modulation patterns is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Twenty-six percent of Purkinje cells showed significant relationships between fluorescence and evidence quantity, predominantly encoding single-sided evidence (left or right) rather than integrated evidence, with the population encoding evidence strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by linear regression analysis (Figure 3C) and population averaging (Figure 3D). The predominance of single-sided evidence encoding (178/216 cells) is consistent with some neocortical findings (Scott et al., 2017). However, the relatively low percentage (26%) of evidence-modulated cells and the lack of clear integration of bilateral evidence suggests cerebellar involvement may be upstream of decision variable computation, as the authors acknowledge (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "In control animals not performing the decision-making task, cue-period fluorescence modulation, evidence decoding, and evidence modulation were absent, indicating task-specificity of the observed signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by control experiments (Figure 3\u2014figure supplement 1) showing lack of modulation in non-task conditions. This is a critical control demonstrating that the signals are not simply sensory responses to puffs but are task-related. However, the sample size for this control (n=2 mice, 168 cells) is smaller than the main experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C46"
+    ],
+    "result": "Dendritic calcium events in Purkinje cells occurred preferentially after decision errors (82% of cells showed greater error than reward activity), occurring regardless of choice direction and independent of measured movement parameters, suggesting an error signal not specific to motor execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C46 are supported by dendritic imaging (Figure 4C-E) with strong statistical evidence (p<0.0001, Wilcoxon test). The extensive motor controls (Figure 4F, Figure 4\u2014figure supplement 1) testing lick initiation/cessation, orofacial movements, and varying licking magnitudes strengthen the interpretation that this is not a pure motor signal. However, the signal could still reflect motor error detection rather than cognitive error per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Error-associated dendritic signals persisted when controlling for lick cessation, lick initiation, orofacial movements, varying licking magnitudes, and in trials without auditory cues, with error modulation significant across all tested motor contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by comprehensive control analyses (Figure 4F, Figure 4\u2014figure supplement 1). The error:correct activity ratio consistently exceeded 1 across diverse motor contexts (p<0.001 for all comparisons). This extensive set of controls is a strength of the study, though it remains possible that unmeasured motor or sensory variables could contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C64"
+    ],
+    "result": "Error-associated dendritic signals showed consistent elevation across varying trial difficulties without significant modulation by evidence strength, unlike traditional reward prediction error signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C64 are supported by analysis across trial difficulties (Figure 4\u2014figure supplement 1). The lack of difficulty modulation (p=0.59) distinguishes these signals from dopaminergic reward prediction errors and suggests a more categorical error signal. However, the modest non-significant trend toward reduced magnitude in easier trials warrants further investigation with larger sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Population-level Purkinje cell dendritic activity could decode trial outcome (correct vs. error) on a trial-by-trial basis, with post-choice decoding significantly exceeding both shuffle and pre-choice conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by decoding analysis (Figure 4G) with appropriate statistical testing (p<0.01, paired t-test). The comparison to both shuffle and pre-choice conditions strengthens the interpretation that this is a post-decision outcome signal rather than a pre-decision variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C58",
+      "C59"
+    ],
+    "result": "Purkinje cell somatic calcium signals represent temporally filtered readouts of firing rate, with preliminary electrophysiology showing firing rate ramps consistent with observed fluorescence dynamics, and these signals contain task-relevant choice and evidence information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C58-C59 are supported by citations to prior work on calcium dynamics and preliminary electrophysiology data (Figure 2\u2014figure supplement 2). The integration of calcium imaging and electrophysiology strengthens interpretation, though the electrophysiology is described as 'preliminary' and sample size is limited (n=3 mice, 9 cells). The slow calcium kinetics in Purkinje cells (slower than neocortex) complicates precise temporal interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Evidence representations in Purkinje cells were primarily single-sided (consistent with PPC/FOF recordings in rats), suggesting cerebellar involvement may be upstream of decision variable calculation (#R-#L), though this remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 combine data-supported observations with speculative interpretation. The single-sided evidence encoding is well-documented (C36-C37), and the comparison to Scott et al. 2017 is appropriate. However, the inference about being 'upstream' of decision variable calculation (C61) is explicitly acknowledged as speculative and requires additional experiments to test alternative models of cerebellar contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Prior work establishes that the cerebellum is involved in motor control and cognitive functions including decision-making and working memory, but circuit mechanisms remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately summarize established knowledge with appropriate citations. These provide context for the knowledge gap the study addresses. The citations are appropriate and the characterization of the field is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Cerebellar theories propose that the cerebellum uses sensory and internal information to adjust action on subsecond timescales, with modular circuitry performing similar computations across domains, suggesting motor learning models may extend to cognitive processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 accurately represent established cerebellar theories with appropriate citations (Krakauer & Shadmehr 2006, Popa et al. 2014, Reeber et al. 2013, Ito 2008). This theoretical framework appropriately motivates the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Multiple brain regions encode decision-related signals, many are reciprocally connected with cerebellar crus I, raising the possibility of cerebellar participation in decision signal formation or updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 accurately summarize prior work on decision-making circuits and cerebellar connectivity with appropriate citations. The inference in C11 about cerebellar participation is reasonable given the anatomical connectivity, though it remains a hypothesis tested by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Crus I evolutionarily expanded with prefrontal cortex, communicates bidirectionally with multiple forebrain regions, and represents orofacial features, making it suitable for studying complex task-related information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by appropriate citations (Balsters et al. 2010, Kelly & Strick 2003, Prevosto et al. 2010, Proville et al. 2014, Manni & Petrosini 2004, Shambes et al. 1978). This provides strong anatomical and functional rationale for focusing on crus I.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C62"
+    ],
+    "result": "Climbing fiber-driven error signals evoke dendritic calcium transients and may shape granule cell input processing through plasticity induction at multiple cerebellar sites, according to established cerebellar learning theories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C62 accurately represent established cerebellar learning theory with appropriate citations (Marr 1969, Ozden et al. 2009, Tank et al. 1988, Llin\u00e1s & Sugimori 1980, Albus 1971, Medina & Lisberger 2008). This provides theoretical context for interpreting the observed error signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Crus I communicates with forebrain structures via dentate nucleus and thalamus, shows sensorimotor and preparatory activity, and may form internal models to predict and modulate brain activity according to cerebellar theories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 accurately summarize anatomical connectivity and functional properties with appropriate citations. This provides context for interpreting how cerebellar signals might influence decision-making circuits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose multiple speculative models for cerebellar contribution to decision-making: receiving efference copy from forebrain, participating in closed-loop circuits, controlling sensory input gain, modulating accumulation dynamics, or influencing decision conversion, with cerebellar output potentially combined with forebrain activity to improve reward likelihood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53, C66-C69 are explicitly speculative proposals for future investigation. While these are reasonable hypotheses based on known cerebellar function and connectivity, they are not tested in the current study. The authors appropriately acknowledge these as possibilities requiring further investigation. These represent important directions for future work but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C57",
+      "C65"
+    ],
+    "result": "Cerebellar signals reach widespread thalamic targets, and the cerebellum has clearly delineated cell types and connectivity, providing opportunities for mechanistic studies of decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C65 accurately represent established anatomical knowledge with appropriate citations (Strick et al. 2009, Dean et al. 2010, Ito 2012). This provides context for the broader significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

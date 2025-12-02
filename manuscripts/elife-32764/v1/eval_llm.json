@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript describes the structural and functional properties of Hsp70 chaperones based on prior literature, including domain architecture, substrate binding mode, substrate preferences, and the globally unfolded state of bound substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-supported by multiple citations to established literature. These claims provide essential background knowledge about Hsp70 structure and function that contextualizes the current study. The structural information is illustrated in figures and consistently referenced across the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C55",
+      "C56",
+      "C57",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "R17* substrate binds to DnaK/ATP, forming multiple bound conformations that are globally unfolded and structurally similar to the unfolded state U, with at least two distinct Leu residues occupying the DnaK binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C55-C57 are supported by direct NMR observations (Figures 3, 3-supplements) showing new peaks upon DnaK addition, intensity changes consistent with global unfolding, and structural predictions. Claims C89-C96 provide additional structural characterization through LIMBO predictions, mutagenesis, and NOE data confirming binding sites. The convergence of multiple experimental approaches strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "For R17* binding to DnaK, zz-exchange NMR demonstrates that cross-peaks connect only the unfolded state (U) to the bound state (UK), not the native state (N) to UK, establishing conformational selection as the dominant mechanism with flux ratio \u0398 > 113.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are strongly supported by direct experimental observations from zz-exchange NMR (Figure 4). The absence of N-UK cross-peaks (C17) combined with presence of U-UK cross-peaks (C16) provides unequivocal evidence for the CS mechanism. Quantitative flux calculations (C19-C21) are derived from fitting time-dependent data with bootstrap error analysis, providing robust kinetic parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DrkN SH3 substrate binds to DnaK forming at least two distinct bound conformations (B1 with Ile 53 at position 0, B2 with Ile 27 at position 0), with the bound state structurally similar to the unfolded state and exhibiting relatively low affinity for DnaK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by prior literature (C22-C23) and direct NMR observations (C24-C25, Figure 5). Claims C58-C64 provide structural characterization through NOE data, zz-exchange assignments, and affinity measurements. The convergence of spectroscopic evidence and structural assignments from multiple experiments supports these conclusions, though the speculation about Leu absence affecting affinity (C60) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "CEST NMR profiles of drkN SH3 with DnaK/ATP demonstrate that the unfolded state shows minor dips to both native and bound states, while native state profiles show dips only to unfolded state, establishing conformational selection with flux ratios \u03981=4 and \u03982=21 for the two binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by direct CEST observations (Figure 6). Claims C31-C32 and C65-C68 provide quantitative flux analysis from global fitting of CEST profiles with bootstrap error estimation. The four-state model fitting (Figure 7) with reduced \u03c7\u00b2 analysis demonstrates that rate constants can be reliably extracted. The narrow distribution of \u039e values around 1 justifies the approximation used for flux calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "CEST profiles of drkN SH3 bound to DnaK/ADP show no signatures of binding/release due to slow exchange rates (~0.001 s\u207b\u00b9) that fall outside the CEST detection window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by direct CEST observations (Figure 6-supplement 1B) and citations to literature values for DnaK/ADP release rates. The explanation is consistent with the known timescale limitations of CEST methodology. This negative control strengthens the interpretation of the DnaK/ATP results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Human Hsc70/ATP binds drkN SH3 with lower affinity than DnaK/ATP, but CEST profiles reveal a minor dip in the unfolded state at ~0.33 ppm corresponding to Hsc70-bound state, demonstrating that human Hsc70 also employs conformational selection for substrate recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by NMR observations (Figure 8) showing no new peaks but CEST minor dips revealing the 'invisible' bound state. Claims C69-C71 provide chemical shift evidence and time-dependent conversion to ADP-bound form. Claims C73-C75 address potential NOE artifacts through control experiments with DnaK/ADP and NOESY data. The convergence of evidence supports the CS mechanism for Hsc70 despite the low-affinity interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C43",
+      "C44"
+    ],
+    "result": "Both bacterial (DnaK) and human (Hsc70) Hsp70 chaperones interact with client proteins (R17* and drkN SH3) by selecting the unfolded state from pre-existing conformational ensembles, suggesting a conserved conformational selection mechanism across the Hsp70 family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C43-C44 represent the main conclusions of the study, directly supported by the experimental results for both substrates and both chaperones (Claims grouped in results above). The observation of CS mechanism in both bacterial and human orthologs with structurally distinct substrates (\u03b1-helical and \u03b2-sheet) provides strong evidence for conservation. However, the generalization is appropriately qualified as 'suggesting' rather than definitively proving conservation across all Hsp70s.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The conformational selection mechanism is functionally consistent with Hsp70 biology: it prevents random unfolding of properly folded proteins, accommodates naturally unfolded substrates, ensures unidirectional refolding, and is compatible with binding sites in solvent-exposed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C78-C80 provide logical inferences about functional implications supported by citations to prior literature. The evolutionary conservation of binding site architecture (C38) and the properties of known Hsp70 substrates (C79-C80) are well-documented. The functional logic connecting CS mechanism to biological outcomes is sound, though these remain inferences rather than direct experimental tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C85",
+      "C86"
+    ],
+    "result": "Hsp70 binds promiscuously to multiple sites on substrates containing aliphatic hydrophobic residues, with each site recognized when exposed in the thermally accessible unfolded state, highlighting the role of conformational dynamics in substrate recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C85-C86 are supported by observations of multiple bound conformations for both R17* and drkN SH3 (C14, C62) and reinforced by prior work on hTRF1. The conclusion about conformational dynamics is a direct inference from the CS mechanism established experimentally. The promiscuous binding is demonstrated by NOE data showing different residues at position 0.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The structures of Hsp70 in ATP and ADP states differ substantially, but substrate structure remains identical across nucleotide states, demonstrating that ATP hydrolysis need not be coupled to substrate conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by citations to structural studies (C45) and prior NMR work from the authors' group (C46-C47). This provides important context for interpreting the current results, showing that the CS mechanism is consistent with prior findings that substrate conformation is independent of chaperone nucleotide state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Prior literature has proposed both CS-like mechanisms (for clathrin and \u03c332 binding) and IF-like unfoldase mechanisms (for luciferase folding) for different Hsp70-substrate systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 accurately summarize prior hypotheses from cited literature. These provide important context for the current study's mechanistic investigation. The claims are appropriately qualified as 'postulated' or 'hypothesized' and are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Distinguishing CS from IF mechanisms requires demonstrating both structural similarity between unbound and bound states AND showing that complex formation proceeds via the kinetic pathway selecting the bound-like conformation; pre-sampling alone is insufficient evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 provide methodological framework supported by citations to prior literature. This establishes the rigorous criteria applied in the current study and justifies the experimental approach combining structural (NMR chemical shifts) and kinetic (exchange rates, flux analysis) measurements. The distinction is critical for proper interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The CS mechanism conclusions pertain to elementary binding steps involving large conformational differences (N vs U); small structural differences between UK and U states may exist but cannot be definitively assigned to CS or IF pathways, and broader multistep unfoldase mechanisms are not excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C81-C84 provide appropriate caveats and scope limitations for the study's conclusions. These are logical inferences based on the experimental design and detection limits. The acknowledgment that Hsp70 divides substrates into segments (C82) and disrupts tertiary interactions (C83, supported by prior citation) demonstrates careful consideration of mechanistic complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C87",
+      "C88"
+    ],
+    "result": "The T199A DnaK mutant deficient in ATP hydrolysis was used to study the ATP state, which represents an important entry point to the chaperone cycle with millisecond-timescale substrate complex lifetimes suitable for CEST methodology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C87-C88 describe methodological choices supported by citations to prior literature. The use of the T199A mutant is well-justified for maintaining ATP-bound state during NMR data collection. The timescale considerations are appropriate for the experimental methods employed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Hsc70/ADP has higher affinity for substrate than Hsc70/ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 represents established knowledge about Hsp70 chaperones, used to interpret the appearance of a new peak after ATP-to-ADP conversion (C70-C71). This is well-documented in the literature and consistent with the known allosteric regulation of Hsp70.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C97"
+    ],
+    "result": "Prior structural and biophysical studies establish that Ile 401 and Ile 438 are within 5 \u00c5 of substrate residue at position 0, NOEs can link these residues to identify binding conformations, and DnaK-bound substrates are globally unfolded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 and C97 summarize well-established structural knowledge from prior literature, providing the basis for NOE-based assignment strategies used in the current study. These are appropriately cited and form the foundation for interpreting the experimental data.",
+    "result_type": "MINOR"
+  }
+]

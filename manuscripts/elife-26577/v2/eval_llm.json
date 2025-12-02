@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Bioinformatic analysis identified three additional families of dual Sec-Tat targeted membrane proteins beyond actinobacterial Rieske proteins: two families with 5 TMDs (Sco3746-like MoCo-binding proteins and polyferredoxins) and one family with 4 TMDs (YkuE-like proteins). Each family has a conserved twin arginine motif preceding the final TMD and is distributed across diverse prokaryotic phyla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C49-C54 provide comprehensive bioinformatic evidence for the identification of new dual-targeted protein families. The sequence alignments (Figures 5-7) demonstrate conservation of key features including TMD architecture, twin arginine motifs, and cofactor-binding domains across diverse organisms. The phylogenetic distribution is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Sco3746 and the MLMS-1 polyferredoxin (PFD) are Tat-dependent for their assembly. MBP and AmiA fusion experiments demonstrate that the C-terminal domains of both proteins are translocated to the periplasm in a Tat-dependent manner, as twin lysine substitution of the twin arginine motif abolishes translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are strongly supported by multiple complementary reporter assays (Figure 4C-D). The maltose fermentation assay with MBP fusions and SDS growth assay with AmiA fusions both demonstrate Tat-dependent translocation. The twin lysine substitution controls effectively demonstrate specificity for the Tat pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Sco3746TMD-MBP and PFDTMD-MBP are integrally inserted into the membrane independently of the Tat system, indicating participation of a second translocase (likely Sec). Twin lysine substitution does not affect membrane localization, and the proteins resist extraction with urea or carbonate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are well-supported by biochemical fractionation and membrane extraction experiments (Figure 8A-B). The presence of fusion proteins exclusively in membrane fractions in both tat+ and tat- strains, combined with resistance to chemical extraction, provides strong evidence for Sec-dependent membrane insertion. The inference that Sec is responsible (C67) is reasonable given the established role of Sec in membrane protein insertion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The Sco3746TMD portion of the Sco3746TMD-MBP fusion has 5 TMDs as determined by cysteine accessibility experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by systematic cysteine accessibility experiments (Figure 8C-D). The MAL-PEG labeling pattern is consistent with the predicted topology: residues predicted to be extracellular (G84C, G171C) are labeled in intact cells, while predicted cytoplasmic residues (G14C, A137C, A219C) are only labeled after cell lysis. This provides direct experimental validation of the 5-TMD topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The low hydrophobicity of the Tat-dependent TMD (TMD3 in Rieske proteins) is a key driver for its release from the Sec machinery. TMD3 has a positive predicted \u0394Gapp value, and single leucine substitutions that increase hydrophobicity dramatically increase Sec-dependent insertion (up to 25-fold increase in ampicillin MIC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22, C35-C40 are strongly supported by both computational predictions (Table 3) and experimental validation (Figure 3B). The \u0394Gapp predictions show TMD3 has positive values unlike typical Sec-inserted TMDs. The leucine substitution experiments provide direct functional evidence that increasing hydrophobicity promotes Sec insertion, with dramatic and reproducible effects on ampicillin resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "C-terminal positive charges prevent full insertion of the Tat-dependent TMD by the Sec pathway. Actinobacterial Rieske proteins have multiple non-conserved positive charges C-terminal to TMD3, and inclusion of these charges in fusion constructs almost completely abolishes Sec-dependent transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C43, C46-C48 are well-supported by sequence analysis (Figures 1, 3A) and experimental data (Figure 3C-D). The presence of C-terminal positive charges is documented across actinobacterial Rieske proteins. The extended fusion experiments show that including additional positive charges dramatically reduces Sec-dependent insertion, consistent with the 'Sec-avoidance' model supported by prior literature (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The mechanism of Sec release (low hydrophobicity plus C-terminal positive charges) is conserved across all three families of dual Sec-Tat targeted membrane proteins. For Sco3746, PFD, and YkuE homologues, the final Tat-dependent TMD has positive predicted \u0394Gapp values and non-conserved C-terminal positive charges, and leucine substitutions increase Sec-dependent insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 demonstrate conservation of the Sec-release mechanism across protein families. Sequence analysis (Figures 5-7, Tables 4-6) shows all families have positive \u0394Gapp values for the final TMD and C-terminal positive charges. Experimental validation with Sco3746 and PFD (Figures 9-10) shows leucine substitutions increase Sec insertion, and extended fusions with additional positive charges reduce it, paralleling the Rieske results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C82",
+      "C83"
+    ],
+    "result": "The features governing Sec-Tat handover (low hydrophobicity and C-terminal positive charges) are present across all identified families of dual-targeted membrane proteins, indicating a unifying mechanism. Other conserved features of the Rieske cytoplasmic loop may be required for cofactor insertion or protein complex interactions rather than translocase coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C82-C83 synthesize the findings across all protein families. The experimental evidence from multiple families (Rieske, Sco3746, PFD) combined with sequence analysis demonstrates conservation of the key mechanistic features. The speculation about alternative functions for conserved loop features (C83) is reasonable given they are conserved but not required for Sec-Tat coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The Sco2149TMD-AmiA fusion is exported in a Tat-dependent manner, but there is some compatibility of TMD3 with the Sec pathway as demonstrated by Sec-dependent export of Bla in tat- strains. Twin arginine to alanine-aspartate substitution reduces ampicillin MIC to near basal levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by complementary reporter assays (Figure 1C-D). The AmiA fusion demonstrates Tat-dependence via SDS growth assays, while the Bla fusion reveals Sec compatibility through ampicillin resistance in tat- strains. The twin arginine substitution controls are appropriate and show the expected loss of function. The quantitative MIC measurements provide robust data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Extensive mutagenesis of the Sco2149 cytoplasmic loop region shows that conserved features (length, \u03b1-helical structure, charged residue clusters) do not modulate Sec interaction or Tat recognition, except for the twin arginine motif and a minimum loop length of ~8 amino acids for Tat recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by comprehensive mutagenesis data (Tables 1-2, Figure 2). The systematic substitutions, deletions, and truncations demonstrate that most conserved features are dispensable for translocase coordination. The identification of minimum loop length requirements (C32) is well-supported by the truncation series. However, the conclusion relies heavily on negative results, which could be affected by assay sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "According to the proposed model, the twin arginines impose an N-in, C-out orientation on the final TMD, but C-terminal positive charges prevent full insertion because low hydrophobicity is insufficient to drive translocation of the charged region. The final TMD is likely released as a re-entrant loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 present a mechanistic model that integrates the experimental findings with established principles of membrane protein topology (positive-inside rule, hydrophobicity-driven insertion). The model is consistent with all experimental data and is supported by citations to relevant prior work (C85). The re-entrant loop proposal (C86) is a reasonable inference from the data, though direct structural evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "An important subset of membrane proteins with cofactor-containing extracytoplasmic domains require dual action of Sec and Tat pathways. This includes actinobacterial Rieske proteins (first example), heme-molybdenum cofactor-containing proteins, and complex polyferredoxins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C17-C19 establish the existence and significance of dual-targeted proteins. The actinobacterial Rieske example (C17-C19) is supported by prior work (Keller et al., 2012), while the new examples (C3-C4) are validated by the experimental data in this manuscript. This represents a major conceptual advance in understanding membrane protein biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "E. coli Sec and Tat pathways can cooperatively integrate dual-targeted protein families even though E. coli does not encode such proteins, suggesting direct Sec-Tat interaction is unlikely to be essential for this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by the successful functional expression of heterologous dual-targeted proteins (Sco2149, Sco3746, PFD) in E. coli throughout the study. This observation has important mechanistic implications, arguing against obligate physical interactions between the translocases. The inference is logical and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Dual targeted Sec-Tat dependent membrane proteins are dispersed across two domains (Bacteria and Archaea) including Gram-negative and Gram-positive bacteria and euryarchaea, indicating that biogenesis of dual-targeted membrane proteins is a common feature of prokaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by the comprehensive bioinformatic analysis (Figures 5-7) showing distribution across diverse prokaryotic lineages. The identification of homologues in actinobacteria, firmicutes, chloroflexi, euryarchaeota, proteobacteria, and other phyla demonstrates this is not a rare or lineage-specific phenomenon. The conclusion about commonality is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Tat signal peptides often contain Sec-avoidance features (positive charges, low hydrophobicity), yet over half of E. coli Tat signal peptides can transport reporters through Sec. This raises the possibility that Sec interaction with Tat signal peptides may be more frequent than previously thought, with membrane-associated twin-arginine signal peptides being common Tat substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 synthesize prior literature (supported by citations) with the implications of the current findings. The speculation about frequency of Sec-Tat interaction (C92) is reasonable given the experimental evidence that dual-targeted proteins can use both pathways. The supporting citations (C89-C91, C93) are appropriate and strengthen the argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Dual-targeted proteins may be evolutionarily related to separate polypeptides. E. coli MsrP/MsrQ and NapGH are separate Sec- and Tat-dependent proteins with similar functions to the fused dual-targeted proteins Sco3746 and MLMS-1 polyferredoxin, respectively. The evolutionary relationship could involve either fusion of adjacent genes or separation of ancestral dual-targeted proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 present evolutionary hypotheses supported by sequence relationships and functional similarities documented in prior literature (C96, C98). The identification of separate homologues (C97) is based on sequence analysis. The evolutionary speculations (C99-C100) are reasonable but remain hypothetical without phylogenetic analysis. These claims provide interesting context but are not central to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C34"
+    ],
+    "result": "Background information on membrane protein biogenesis: the Sec pathway is the major route for membrane protein integration, YidC facilitates integration, the Tat pathway transports folded proteins, and actinobacterial Rieske proteins have three TMDs unlike most Rieske proteins with one TMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C16, C34 provide established background knowledge supported by appropriate citations to prior literature. These claims set the context for the study but do not represent new findings. They are accurately stated and properly referenced.",
+    "result_type": "MINOR"
+  }
+]

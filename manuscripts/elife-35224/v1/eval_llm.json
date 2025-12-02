@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes background knowledge about protein aggregation, stating that while pathological aggregation causes disease, functional aggregation is vital for cellular processes, and that ATP-dependent chaperones and disaggregases maintain proteostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by citations to published literature and represent established knowledge in the field. These background claims appropriately set the context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript reviews prior work by Patel et al. demonstrating that ATP can act as a hydrotrope to solubilize protein aggregates in vitro, with effectiveness at 4-8 mM but limited effect at 1-2 mM concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 accurately describe prior published work on ATP's hydrotropic properties. These are appropriately cited and provide essential background for the current study's hypothesis, though they represent prior rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes that nucleoli are formed by protein coalescence with liquid-like and amyloid-like properties, contain three subregions with different surface tensions, and that RNA plays a central role in nucleolar formation and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are well-supported by multiple citations to published literature and establish the biological context for studying nucleoli. These represent established knowledge about the experimental system rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Soluble proteins rapidly diffuse from isolated Xenopus oocyte nuclei while aggregated proteins are retained, with approximately 10% of total nuclear protein retained after 1 hour, showing enrichment of specific proteins including actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are supported by experimental data in Figure 1 including time-lapse microscopy, SDS-PAGE, and densitometric analysis. The observations are consistent with cited prior work and establish the experimental system. Statistical quantification and multiple replicates strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Mass spectrometry identified over 120 proteins retained in soluble protein depleted nuclei (FDR=0.01), enriched for functions in ribonucleoprotein complex biogenesis, DNA replication, RNA processing, and transcription, including nucleolar proteins Nucleophosmin and Fibrillarin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by MS/MS proteomic data with appropriate statistical thresholds (FDR=0.01) and gene ontology analysis. The identification of Npm1 and Fbl is particularly important as these become the focus proteins for subsequent experiments. The data is deposited and methods are detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "GFP-Npm1 and GFP-Fbl are retained at 20-25% after soluble protein depletion and enriched 7-9 fold compared to total nuclear protein, while control GFP shows minimal retention (1%) and depletion (0.09 fold enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by western blot quantification shown in Figure 2D-E with error bars indicating variability across biological replicates. The differential retention between aggregation-prone proteins and soluble GFP control validates the experimental approach. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Treatment of soluble protein depleted nuclei with 8 mM ATP or AMP-PNP (near physiological concentrations) did not solubilize naturally aggregated Npm1 and Fbl proteins or reduce thioflavin T staining, demonstrating that physiologic ATP alone is insufficient for aggregate solubilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by microscopy data in Figures 2C and 5B. The concentration choice is justified by citation. This is a critical negative result that contradicts the simple hydrotrope hypothesis from in vitro studies and motivates subsequent experiments. The use of both ATP and non-hydrolyzable AMP-PNP strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Nuclear fusion experiments demonstrate that aggregated Npm1 and Fbl can exchange between nucleoli, with soluble protein depleted nucleoli capable of both donating and accepting proteins, though exchange is reduced compared to oil-isolated nuclei with full complements of soluble factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by nuclear fusion experiments shown in Figure 3B with multiple biological replicates. The experiments cleverly demonstrate that aggregates are not irreversibly modified by soluble protein depletion. The differential exchange rates between Npm1 and Fbl are noted. However, the analysis is qualitative rather than quantitative, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Fusion of soluble protein depleted nuclei with oil-isolated nuclei rescued the ability of nucleoli to undergo fusion and return to spherical shape, suggesting that soluble nuclear factors and ATP promote normal nucleolar dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by microscopy in Figure 3D. However, the authors note this is the most complete fusion event observed and partial fusions are more common, suggesting variability in the rescue. The inference about soluble factors is reasonable but the specific factors remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "When freshly isolated nuclei (retaining soluble proteins) are treated with 8 mM ATP, compartment-specific solubilization occurs with near-complete dispersion of GFP-Npm1 from the granular component while RFP-Fbl in the dense fibrillar component shows partial loss and increased droplet diameter, consistent with maintained liquid-like properties. AMP-PNP alone has limited effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 are supported by microscopy and quantification in Figure 4A-E across multiple ATP concentrations. The differential response between Npm1 and Fbl is well-documented. The diameter measurements (n=298 untreated, n=144 treated) provide quantitative support for droplet spreading. The requirement for hydrolyzable ATP (not AMP-PNP) suggests energy-dependent processes are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Both ATP and GTP (but not AMP-PNP) mediate loss of thioflavin T positive aggregates in freshly isolated nuclei but not in soluble protein depleted nuclei, indicating that diffusible factors are critical for rapid solubilization in combination with hydrolyzable nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by microscopy in Figure 5A-C comparing freshly isolated versus soluble protein depleted nuclei. The experimental design directly tests the requirement for soluble factors. The requirement for hydrolyzable nucleotides (ATP/GTP but not AMP-PNP) strongly suggests energy-dependent processes are necessary, though the specific factors remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "At intermediate ATP concentrations, a thin layer of granular component (Npm1) surrounds the more ATP-resistant dense fibrillar component (Fbl) core, reminiscent of surface tension-driven separation and indicating heterogeneity in nucleolar compartment responses to ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by microscopy observations in Figure 4A. The comparison to Feric et al.'s surface tension model is appropriate and cited. This observation provides insight into the physical organization of nucleolar subcompartments during partial solubilization, though the interpretation involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Direct nuclear injection of 25 mM ATP (>4-fold physiological concentration) into oil-isolated nuclei causes rapid loss of aggregated GFP-Npm1 and dispersion of RFP-Fbl foci, while 25 mM AMP-PNP has no effect, demonstrating that even at high concentrations, hydrotropic properties alone are insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by microscopy in Figure 6B-C with appropriate sample sizes (9-18 biological replicates). The use of supraphysiological concentrations tests whether hydrotropic activity alone can drive solubilization. The failure of AMP-PNP even at 25 mM strongly argues against a purely hydrotropic mechanism and supports the requirement for ATP hydrolysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Supplementation with 25 mM ATP inhibits re-aggregation of GFP-NPM1, consistent with the need to overcome hydrotropic action of ATP to establish normal equilibrium of protein recruitment into nucleolar aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 are inferred from experimental observations but the specific data supporting inhibition of re-aggregation is not clearly presented in a dedicated figure. The interpretation is logical given the model but would benefit from more explicit experimental demonstration and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Treatment with 1 mM ATP plus 3 mM AMP-PNP shows synergistic effects on aggregate solubilization compared to either alone, demonstrating that AMP-PNP can act as a hydrotrope when the system is primed by low ATP concentrations, supporting a dual-role model where ATP acts both as energy source and hydrotrope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by microscopy and quantification in Figure 7 with 155-264 nucleoli analyzed. The KM values for kinases and chaperones (C71-C72) are appropriately cited. The synergy experiment is clever and provides strong evidence for the two-step model. The statistical analysis shows significance (p<0.0001). This is a key result supporting the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RNase A treatment sensitizes nucleolar aggregates to solubilization by both ATP and AMP-PNP, causing loss of GFP-Npm1 and RFP-Fbl and mixing of phase-separated compartments, demonstrating that RNA stabilizes aggregates and confers resistance to hydrotropic solubilization, and that ATP can act as a hydrotrope on naturally aggregated proteins when appropriately destabilized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 are supported by microscopy and quantification in Figure 8 with 129-205 nucleoli analyzed across three independent experiments. The RNase A treatment provides an alternative destabilization method to energy-dependent processes. The fact that AMP-PNP now works after RNA depletion strongly supports the hydrotropic mechanism once aggregates are destabilized. Statistical significance is demonstrated (p<0.0001 for Npm1, p=0.0023 for Fbl).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a two-step model where initial sensitization requires \u22641 mM ATP and soluble factors or RNA destabilization, followed by aggregate solubilization mediated by energy-independent hydrotropic activity of ATP at \u22652 mM concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 represent the proposed mechanistic model synthesizing the experimental observations from Figures 2-8. The model is well-supported by the collective data showing: (1) ATP alone doesn't work on depleted nuclei, (2) freshly isolated nuclei respond to ATP, (3) synergy between low ATP and AMP-PNP, and (4) RNA depletion enables AMP-PNP activity. However, the specific molecular mechanisms and identity of soluble factors remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The authors speculate that local cellular environment, age, metabolic changes, and free intracellular ATP concentrations likely play underappreciated roles in protein aggregation biology, noting that ATP can be enriched in aggregates and that cellular ATP concentrations vary spatially and temporally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are appropriately speculative discussion points supported by citation to Patel et al. regarding ATP enrichment in aggregates. The speculation about physiological implications is reasonable given the findings but represents future directions rather than demonstrated results. This is appropriate for a discussion section.",
+    "result_type": "MINOR"
+  }
+]

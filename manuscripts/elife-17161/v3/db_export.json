@@ -1,0 +1,1687 @@
+{
+  "submission": {
+    "id": "3d9b04e6-1ee0-4284-8dc0-706b6390fa89",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:09:07.054503Z",
+    "updated_at": "2025-12-01T20:09:07.054503Z"
+  },
+  "content": [
+    {
+      "id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "submission_id": "3d9b04e6-1ee0-4284-8dc0-706b6390fa89",
+      "content_type": "manuscript",
+      "content_text": "# Pro-death NMDA receptor signaling is promoted by the GluN2B C-terminus independently of Dapk1\n\n## Authors\n\n- Jamie McQueen<sup>1</sup>\n- Tom\u00e1s J Ryan<sup>4</sup>\n- Sean McKay<sup>1</sup>\n- Katie Marwick<sup>3</sup>\n- Paul Baxter<sup>1</sup>\n- Sarah M Carpanini<sup>8</sup>\n- Thomas M Wishart<sup>8</sup>\n- Thomas H Gillingwater<sup>1</sup>\n- Jean C Manson<sup>8</sup>\n- David J A Wyllie<sup>3</sup> ([ORCID: 0000-0002-4957-6049](https://orcid.org/0000-0002-4957-6049))\n- Seth G N Grant<sup>10</sup> ([ORCID: 0000-0001-8732-8735](https://orcid.org/0000-0001-8732-8735))\n- Barry W McColl<sup>1</sup> ([ORCID: 0000-0002-0521-9656](https://orcid.org/0000-0002-0521-9656)) \u2020\n- Noboru H Komiyama<sup>10</sup> \u2020\n- Giles E Hardingham<sup>1</sup> ([ORCID: 0000-0002-7629-5314](https://orcid.org/0000-0002-7629-5314)) \u2020\n\n### Affiliations\n\n1. UK Dementia Research Institute University of Edinburgh Edinburgh United Kingdom\n2. Edinburgh Medical School University of Edinburgh Edinburgh United Kingdom\n3. Centre for Discovery Brain Sciences University of Edinburgh Edinburgh United Kingdom\n4. School of Biochemistry and Immunology Trinity College Dublin Dublin Ireland\n5. Trinity Biomedical Sciences Institute Trinity College Dublin Dublin Ireland\n6. Trinity College Institute of Neuroscience Trinity College Dublin Dublin Ireland\n7. Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre University of Melbourne Parkville Australia\n8. The Roslin Institute University of Edinburgh Edinburgh United Kingdom\n9. nPAD MRC Mouse consortium University of Edinburgh Edinburgh United Kingdom\n10. Wellcome Trust Sanger Institute Hinxton United Kingdom\n11. Centre for Clinical Brain Sciences University of Edinburgh Edinburgh United Kingdom\n12. Centre for Neuroregeneration University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nAberrant NMDA receptor (NMDAR) activity contributes to several neurological disorders, but direct antagonism is poorly tolerated therapeutically. The GluN2B cytoplasmic C-terminal domain (CTD) represents an alternative therapeutic target since it potentiates excitotoxic signaling. The key GluN2B CTD-centred event in excitotoxicity is proposed to involve its phosphorylation at Ser-1303 by Dapk1, that is blocked by a neuroprotective cell-permeable peptide mimetic of the region. Contrary to this model, we find that excitotoxicity can proceed without increased Ser-1303 phosphorylation, and is unaffected by Dapk1 deficiency in vitro or following ischemia in vivo. Pharmacological analysis of the aforementioned neuroprotective peptide revealed that it acts in a sequence-independent manner as an open-channel NMDAR antagonist at or near the Mg2+ site, due to its high net positive charge. Thus, GluN2B-driven excitotoxic signaling can proceed independently of Dapk1 or altered Ser-1303 phosphorylation.\n\n## Introduction\n\nNMDA receptor (NMDAR) -mediated excitotoxicity plays a key role in acute neurological disorders such as stroke and traumatic brain injury, neuronal loss in Huntington's disease, and is also implicated in synapto-toxicity in Alzheimer's disease (Choi, 1988; Lipton and Rosenberg, 1994; Berliocchi et al., 2005; Lau and Tymianski, 2010; Hardingham and Lipton, 2011; Parsons and Raymond, 2014; Tu et al., 2014). Most NMDARs are comprised of two obligate GluN1 subunits and two GluN2 subunits (Furukawa et al., 2005), with GluN2A and GluN2B predominant in the forebrain (Monyer et al., 1994; Cull-Candy et al., 2001; Traynelis et al., 2010; Paoletti, 2011; Wyllie et al., 2013). GluN2 subunits have long, evolutionarily divergent cytoplasmic C-terminal domains (CTDs) which we have shown can differentially associate with signalling molecules (Martel et al., 2012; Ryan et al., 2008, 2013; Frank et al., 2016) and differentially signal to cell death: the CTD of GluN2B (CTD2B) potentiates excitotoxicity more strongly than that of GluN2A (Martel et al., 2012).\n\nWhile multiple pathways contribute to excitotoxicity (Tymianski, 2011), the mechanism by which CTD2B is thought to potentiate excitotoxicity is upstream of all of them (Parsons and Raymond, 2014; Tu et al., 2010; Lai et al., 2014). The mechanism is centred on Ser-1303 of CTD2B, within a region of the CTD unique to GluN2B, and with which CaMKII\u03b1 is known to interact and phosphorylate (Bayer et al., 2001; Mao et al., 2014). It was reported that in response to ischemia or excitotoxic insults, a different kinase, Dapk1, causes Ser-1303 phosphorylation which increases NMDAR-dependent ionic flux (Tu et al., 2010). Consistent with this, Dapk1-/- neurons were reported to be resistant to excitotoxicity, and a cell-permeable peptide mimetic of the CTD2B region around Ser-1303 disrupted Ser-1303 phosphorylation and was neuroprotective (Tu et al., 2010).\n\nGiven that the GluN2B-Dapk1 pathway is prominent in contemporary models of excitotoxicity (Parsons and Raymond, 2014; Lai et al., 2014) we sought to investigate this pathway further. Dapk1 has not hitherto emerged from proteomic post-synaptic density screens (Husi et al., 2000; Collins et al., 2006; Yoshimura et al., 2004; Li et al., 2004; Jordan et al., 2004; Peng et al., 2004; Cheng et al., 2006; Bay\u00e9s et al., 2011), and we failed to detect it in a recent proteomic analysis of native NMDAR supercomplexes (Frank et al., 2016). Moreover, the use of cell-permeable peptides to draw wide-ranging mechanistic conclusions can be problematic without extensive controls. We investigated whether Dapk1-mediated Ser-1303 phosphorylation indeed represents the major reason why CTD2B promotes excitotoxicity signaling better than CTD2A, using approaches that include analysis of a new Dapk1 knockout mouse.\n\n## Results\n\n### Excitotoxic insults do not induce GluN2B Ser-1303 phosphorylation\n\nWe first examined the influence of excitotoxic conditions on GluN2B Ser-1303 phosphorylation in cortical neurons using a phospho-(Ser-1303)-specific antibody (Millipore 07\u2013398), previously used and validated by several groups (Jalan-Sakrikar et al., 2012; Jia et al., 2013; Castillo et al., 2011).\n\nWe confirmed that the antibody is capable of detecting changes in Ser-1303 phosphorylation in neurons: phospho-GluN2B(Ser-1303) levels in cortical neurons, as assayed by western blot using this antibody, are lowered after incubation of cortical neurons with the general kinase inhibitor staurosporine, and increased modestly by a cocktail of phosphatase inhibitors okadaic acid and FK-506 (Figure 1\u2014figure supplement 1a,b, Figure 1\u2014source data 1). As further evidence of specificity, we found that the antibody completely failed to react with GluN2B in which we had engineered mutations (L1298A/R1300N/S1303D) into the site for a separate study (Figure 1\u2014figure supplement 1c,d).\n\nWe found that bath application of NMDA at excitotoxic concentrations failed to induce significant Ser-1303 phosphorylation (Figure 1a and b, Figure 1\u2014source data 2). At the late timepoint (60 min, 50 \u00b5M NMDA) we observed a decline in Ser-1303 phosphorylation (Figure 1a,b, Figure 1\u2014figure supplement 1e,f, Figure 1\u2014source data 3) as well as a decline in total levels of GluN2B, consistent with observations of others who have reported partial calpain-mediated cleavage and degradation of the NMDAR CTD (Dong et al., 2006; Gasc\u00f3n et al., 2008). These observations in DIV10 cortical neurons were also repeated at DIV16 (Figure 1\u2014figure supplement 1g,h, Figure 1\u2014source data 4). We also saw no increase in Ser-1303 phosphorylation in response to oxygen-glucose deprivation (OGD) (Figure 1c,d, Figure 1\u2014source data 5), contrary to previous reports (Tu et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17161/elife-17161-fig1-v3.jpg)\n\n**Figure 1.:** (A,B) Strong excitotoxic insults induce GluN2B Ser-1303 dephosphorylation at later timepoints. Western analysis of extracts from cortical neurons treated as indicated with NMDA or bicuculline (50 \u00b5M) plus 4-amino pyridine (250 \u00b5M). (F(2,24)=3.904, p=0.034 (Two-way ANOVA). *p=0.0053 (Sidak's post-hoc test; 95% CI of diff: 0.1777 to 1.139, comparison to control without NMDA treatment, N\u00a0=\u00a03). (C,D) Mimicking ischemic conditions triggers dephosphorylation of GluN2B Ser-1303 in an NMDAR-dependent manner. Oxygen-glucose deprivation (OGD) applied for 120 min\u00a0\u00b1MK-801 (10 \u00b5M). F(1,12)=6.69, p=0.024 (Two-way ANOVA). *p=0.0003 (Sidak's post-hoc test, 95% CI of diff: 0.3289 to 0.9172, N\u00a0=\u00a04). (E,F) Dapk1 deficiency does not influence basal or NMDA-induced GluN2B Ser-1303 phosphorylation status. Neurons were treated\u00a0\u00b150 \u00b5M NMDA for 60 min. F(1,10)=345.1, p<0.0001 (Two-way ANOVA, Con vs. NM). *p<0.0001 (both, compared to Con of that genotype, 95% CI of diff: 0.6384 to 0.9342, and 0.6411 to 0.9826 (reading left to right), N\u00a0=\u00a04 WT, N\u00a0=\u00a03 KO; with \u2018N\u2019 defined as a distinct culture from a distinct animal). ns: F(1,10)=0.5418, p=0.4786.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17161/elife-17161-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** p=0.0023 (1-way ANOVA). Individual P-values left-to-right: 0.026, 0.047 (n\u00a0=\u00a08 (FK\u00a0+OA); n\u00a0=\u00a04 (STS). (C) Schematic depicting the amino-acid changes resulting from mutations of the Grin2b gene in the GluN2B\u2206CaMKII allele. (D) Example Phospho- (GluN2B Ser-1303) western blot illustrating the lack of immunoreactivity of the mutated domain in extracts from GluN2B\u2206CaMKII/\u2206CaMKII neurons. (E,F) timecourse of GluN2B Ser-1303 phosphorylation status in response to NMDA treatment (50 \u00b5M). F(5,10)=4.019, p=0.023 (one-way ANOVA). *p=0.041 (Sidak's post-hoc test (n\u00a0=\u00a03), 95% CI of diff 0.01897 to 1.024). (G,H) Experiment performed as per Figure 1a except neurons were at DIV16 rather than DIV10. F (2, 24)=5.324, p=0.0122 (two-way ANOVA). *p=0.0022 (Sidak's post-hoc test (N\u00a0=\u00a03)).\n\nTo determine whether Dapk1 plays any role in the GluN2B Ser-1303 phosphorylation status, we obtained a Dapk1-/- mouse line, created by the International Mouse Phenotyping Consortium by targeted deletion of exon four on a C57Bl/6 background (the same strain as the Dapk1-/- mouse generated by Tu et al. (2010)). The mice had normal fertility, viability and body weight (http://www.mousephenotype.org, MGI:1916885). We confirmed that Dapk1-/- neurons expressed no Dapk1 (Figure 1e). We compared GluN2B phospho-Ser-1303 levels in cortical neurons obtained from Dapk1-/- and Dapk1+/+ littermates and found no difference in basal levels, nor any difference in the lowered level that we observe at longer periods of NMDA exposure (Figure 1e,f, Figure 1\u2014source data 6). Thus in our hands, Dapk1 does not influence GluN2B Ser-1303 phosphorylation status under basal or excitotoxic conditions.\n\n### Excitotoxic and ischemic neuronal death can proceed independently of Dapk1\n\nWe next addressed the more general point of the role of Dapk1 in excitotoxic neuronal death. Compared to cortical neurons cultured from their wild-type littermates, we observed no difference in NMDAR-dependent excitotoxic neuronal death in Dapk1-/- neurons at either DIV10 or DIV16\u00a0(Figure 2a, Figure 2\u2014source data 1; Figure 2b, Figure 2\u2014source data 2) and no difference in OGD-induced neuronal death (Figure 2c, Figure 2\u2014source data 3), contrary to previous reports. NMDAR currents were also no different in Dapk1-/- vs. Dapk1+/+ neurons (Figure 2d, Figure 2\u2014source data 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17161/elife-17161-fig2-v3.jpg)\n\n**Figure 2.:** (A, B) NMDA-induced neuronal death is independent of Dapk1. Cortical neurons at DIV10 (A) or DIV16 (B) were treated as indicated for 1 hr, with neuronal death assessed at 24 hr. The p values relate to a two-way ANOVA test of differences between WT and Dapk\u2013/\u2013 neurons (F(1,10) = 0.2676, n\u00a0=\u00a06 WT, 6 KO (DIV10); F(1,7)=0.8871, 2-way ANOVA, n\u00a0=\u00a04 WT, 5 KO (DIV16)). For each condition/genotype combination, 800\u20131000 cells were analysed per biological replicate. (C) OGD-induced neuronal death is independent of Dapk1. Cortical neurons at DIV10 were subjected to OGD for 120 min, before being returned to control medium. Neuronal death was assessed at 24 hr. No genotype-dependent difference was observed (F (1,12)=0.5062, p=0.490, but a strong influence of OGD was observed: F (1,12)=63.54, p<0.0001, two-way ANOVA. #p=0.0002, 0.0002 (reading left to right); Sidak's post-hoc test comparing control to OGD condition (n\u00a0=\u00a04 WT, n\u00a0=\u00a04 KO). (D) Dapk1 deficiency does not influence NMDAR currents. NMDAR currents were measured in n\u00a0=\u00a016 WT cells (from four separate cultures) and n\u00a0=\u00a025 KO cells (from six separate cultures). Currents were normalized to the mean current recorded from WT cells recorded on that precise day. p=0.411 (t\u00a0=\u00a00.831, df\u00a0=\u00a039), unpaired t-test. (E\u2013G) Dapk1 deficiency does not influence vulnerability to ischemia in vivo. Adult\u00a0male\u00a0age-matched mice (n\u00a0=\u00a014 WT; n\u00a0=\u00a016 KO) were subjected to 20 min bilateral common carotid artery occlusion, sacrificed at 3 d, and pathology analysed. CA1/2 (E): p=0.555 (t\u00a0=\u00a00.598, df\u00a0=\u00a028); CA1 (F)\u00a0:p=0.572 (t\u00a0=\u00a00.572, df\u00a0=\u00a028), CA2 p=0.592(G, t\u00a0=\u00a00.543, df\u00a0=\u00a028). Scale bar\u00a0=\u00a050 \u00b5m.\n\nWe then studied the influence of Dapk1 deficiency on ischemic neuronal death in vivo. We employed a model of transient global ischemia model (bilateral common carotid artery occlusion) used previously to show a protective effect of Dapk1 deficiency (Tu et al., 2010). Adult mice exposed to a transient (20 min) period of global ischemia showed characteristic selective neuronal death within the hippocampus, particularly the CA1 and CA2 regions. However, Dapk1-/- and Dapk1+/+ mice exhibited similar levels of infarction (Figure 2e\u2013h, Figure 2\u2014source data 5), contrary to previous reports (Tu et al., 2010). These observations collectively indicate that excitotoxic and ischemic neuronal death in vitro and in vivo can proceed normally in the absence of Dapk1.\n\n### TAT-NR2BCT is a direct NMDAR antagonist\n\nIn support of the Dapk1 hypothesis for CTD2B-derived excitotoxicity, a cell-permeable (TAT-fused) peptide mimetic of the GluN2B amino acids 1292\u20131304 (TAT-KKNRNKLRRQHSY: TAT-NR2BCT) was reported to prevent NMDAR-dependent GluN2B Ser-1303 phosphorylation, and excitotoxicity (Tu et al., 2010). We observed that 50 \u00b5M TAT-NR2BCT, the concentration used previously (Tu et al., 2010), was toxic to neurons (Figure 3\u2014figure supplement 1a, Figure 3\u2014source data 1), so we used a concentration 10 times lower (5 \u00b5M). We found that 5 \u00b5M TAT-NR2BCT completely prevents NMDA-induced excitotoxicity (Figure 3\u2014figure supplement 1b, Figure 3\u2014source data 2). This was surprising, given that we did not see a role for Dapk1 in excitotoxicity (Figure 2). However, further analysis revealed the explanation: at 5 \u00b5M, TAT-NR2BCT potently inhibited NMDAR currents, acting immediately and without any need for a preincubation period (Figure 3a\u2013d, Figure 3\u2014source data 3), and in a manner that was not readily washed out upon removal of peptide (data not shown). TAT-NR2BCT was custom synthesized for our studies by Genscript, and we found that NR2BCT(1292\u20131304)-TAT, a pre-made peptide sold by Merck Millipore was a similarly potent NMDAR antagonist (n\u00a0=\u00a08, Figure 3\u2014figure supplement 1c). A scrambled version of TAT-NR2BCT (TAT-sNR2BCT) was neuroprotective and similarly antagonistic at the NMDAR (Figure 3\u2014figure supplement 1; Figure 3\u2014figure supplement 1b, Figure 3a\u2013d). One potential explanation for the NMDAR antagonistic properties of TAT-NR2BCT is the high positive charge of the peptide (+15 at neutral pH). To investigate this, we designed an arginine-rich peptide of high net positive charge (+15 same as TAT-NR2BCT)\u00a0of sequence: RRR TQN RRN RRT SRQ NRR RSR RRR) which strongly antagonized NMDAR currents, and another peptide of net neutral charge (NIN IHD VKV LPG GMI KSN DGP PIL), which had a much weaker effect (Figure 3a, Figure 3\u2014source data 3). Taken together these data suggest that the net positive charge of TAT-NR2BCT is primarily responsible for its NMDAR-antagonistic properties. We hypothesized that TAT-NR2BCT may be an open channel blocker drawn partly into the pore by its high net positive charge and bind near the internal Mg2+ binding site. Consistent with this, the presence of Mg2+ (a pore blocker) reduced the effectiveness of TAT-NR2BCT's antagonism (Figure 3e, Figure 3\u2014source data 4). Another prediction of this hypothesis is that TAT-NR2BCT would be more effective at antagonising NMDARs under open-channel conditions. To test this, NMDAR currents were measured, after which neurons were incubated in TAT-NR2BCT (5 \u00b5M) for 60 s in the presence of zero glycine\u00a0+100 \u00b5M AP5 (\u2018block (1)\") to ensure minimal channel opening (closed channel conditions). 60 s was chosen because under conditions of NMDAR agonism this is sufficient time to achieve maximal blockade. After 60 s, both TAT-NR2BCT and AP5 were removed from the bathing medium and NMDAR currents were subsequently re-measured (150 \u00b5M NMDA\u00a0+100 \u00b5M glycine, zero Mg2+). The very slow off-rate of the TAT-NR2BCT enabled the peptide's effects on currents to be measured in the absence of the peptide in the medium. TAT-NR2BCT was then applied for a second 60 s (\u2018block (2)\u2018) either under the same \u2018closed channel conditions\u2019 or under \u2018open channel conditions\u2019 (100 \u00b5M glycine, 150 \u00b5M NMDA). After 60 s TAT-NR2BCT was removed from the bathing medium and NMDAR currents measured for a third time. The NMDAR current remaining at the second and third measurements was calculated as a fraction of the initial current. We found that the second peptide incubation (block (2)) significantly increased the proportion of NMDAR inhibition when it occurred under open-channel conditions, but not under closed channel conditions (Figure 3f, Figure 3\u2014source data 5),\u00a0further evidence in favour of a pore-centred binding site for TAT-NR2BCT. Thus, the unintended NMDAR antagonistic properties TAT-NR2BCT explain its anti-excitotoxic effects.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17161/elife-17161-fig3-v3.jpg)\n\n**Figure 3.:** (A\u2013D) Both TAT-NR2BCT and TAT-sNR2BCT (scrambled version of TAT-NR2BCT) immediately antagonize NMDAR currents upon extracellular exposure. NMDA-induced currents were recorded under whole-cell voltage clamp, with the indicated peptides (at 5 \u00b5M) applied approximately 5 s after NMDA (to allow NMDAR currents to reach steady state). Arg-rich refers to the arginine-rich positively charged peptide; Neutral refers to the neutral peptide-see main text for sequences of these as well as TAT-NR2BCT and TAT-sNR2BCT. NMDA-induced NMDAR currents were monitored for a further 45 s and the percentage drop in currents calculated, compared to no peptide at all (Con) which represents a measure of natural desensitization over this period. p<0.0001 (one-way ANOVA). *p<0.0001, Sidak's post-hoc test (n\u00a0=\u00a08 of all conditions). Example traces shown in (B) (C) and (D). Scale bar: 15 s, 500 pA. (E) NMDAR antagonism by TAT-NR2BCT is inhibited by Mg2+ blockade. NMDAR currents were measured, after which neurons were incubated in TAT-NR2BCT (5 or 0.5 \u00b5M) for 60 s in the presence or absence of 1 mM Mg2+, after which NMDAR currents were measured again (in zero Mg2+, no peptide). p<0.0001 (one-way ANOVA, F(1,22)=47.16 (effect of [Mg2+])). *p<0.0001, p=0.0007, Sidak's post-hoc test (zero Mg2+: n\u00a0=\u00a06 (0.5 \u00b5M), n\u00a0=\u00a07 (5 \u00b5M); 1 mM Mg2+: n\u00a0=\u00a06 (0.5 \u00b5M), n\u00a0=\u00a07 (5 \u00b5M)). (F\u2013H) NMDAR antagonism by TAT-NR2BCT is more effective on open channels. See main text for experimental details. p<0.0001 (two-way ANOVA, comparing initial current with subsequent measurements: F (2, 45)=25.22. p<0.0001 (two-way ANOVA, comparing 'closed-then-closed' protocol (grey bars, n\u00a0=\u00a08) with 'closed-then-open' protocol (black bars, n\u00a0=\u00a09): F (1, 45)=18.26. #p=0.003, 0.0009 (Sidak's post-hoc test), comparing to initial currents. *p<0.0001 (Sidak's post-hoc tests), comparisons indicated. (G) shows example recordings taken during the consecutive \u2018closed\u2019 then \u2018closed\u2019 channel protocol. (H) shows example recordings taken during the consecutive \u2018closed\u2019 then \u2018closed\u2019 channel protocol. Scale bar\u00a0=\u00a01 s, 250 pA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17161/elife-17161-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (B) Neurons were pre-treated where indicated with TAT-NR2BCT or TAT-sNR2BCT for 1 hr, prior to 1 hr NMDA treatment at the indicated concentrations, in the continued presence of the peptides where used. Subsequently, both NMDA and peptide were removed from the medium and death assessed after a further 23 hr. p<0.0001 (effect of peptide: two-way ANOVA, F(2,40)=76.13, n\u00a0=\u00a03\u20134). *p=0.0027, 0.0039 (20 \u00b5M),<0.0001,<0.0001 (30 \u00b5M),<0.0001,<0.0001 (50 \u00b5M),<0.0001,<0.0001 (100 \u00b5M), Sidak's post-hoc test. (C) Example trace from an experiment where NMDA-induced currents were recorded under whole-cell voltage clamp, with NR2BCT(1292\u20131304)-TAT (5 \u00b5M, Merck Millipore) applied approximately 5 s after NMDA (to allow NMDAR currents to reach steady state). NMDA-induced NMDAR currents were monitored to determine the degree of blockade. The trace is representative of 8 cells recorded this way, with the peptide blocking by 63 \u00b1 3%. Scale bar\u00a0=\u00a05 s, 500 pA.\n\n## Discussion\n\nDapk1-mediated GluN2B Ser-1303 phosphorylation, and consequent enhancement of toxic Ca2+ influx through extrasynaptic NMDARs lies at the heart of current models of excitotoxicity and of the central role of the GluN2B CTD in this process (Parsons and Raymond, 2014; Lai et al., 2014), but our study suggests that this needs to be re-appraised. Our observations regarding the (lack of) impact of Dapk1 gene deletion on neuronal vulnerability to excitotoxic and ischemic conditions is at odds with previous reports (Tu et al., 2010). The Dapk1-/- mouse that we used was generated independently of the one generated by Tu et al., although there is no a priori reason why the two lines should behave differently at this fundamental level, particularly given the very similar genetic background (C57BL/6).\n\nThe potent inhibition of NMDAR currents by TAT-NR2BCT at a concentration up to 100 times lower than that used previously (Tu et al., 2010) suggests a simple explanation for its neuroprotective effects independent of Dapk1. We are unable to explain why we observed similar effects of TAT-NR2BCT and its scrambled version, while a selective effect of TAT-NR2BCT was previously reported (Tu et al., 2010). Both scrambled versions employed had identical sequences, and the potent NMDAR antagonistic properties of our scrambled peptide are consistent with its neuroprotective properties.\n\nThe basis for CTD2B-mediated excitotoxicity (Martel et al., 2012) remains incompletely understood. Exchanging the CTD of GluN2B with that of GluN2A by targeted exon exchange reduces vulnerability to excitotoxicity (Martel et al., 2012), without altering the proportion of NMDARs at synaptic vs. extrasynaptic sites, an important factor in excitotoxicity (Hardingham and Bading, 2010). Moreover, performing the reciprocal swap increases vulnerability (SM and GEH, unpublished observations), strongly supportive of a key role for CTD2B. An ongoing avenue of investigation is focussed on understanding the extent to which the composition of the native NMDAR signaling complex is altered by manipulating the endogenous GluN2 CTDs in our panel of knock-in mice. We hypothesize that alterations to the complex may disturb signaling to pro-death events such as NO production, NADPH oxidase activation, oxidative stress, calpain activation and mitochondrial Ca2+ overload (Parsons and Raymond, 2014; Lai et al., 2014; Hardingham and Bading, 2010; Bano and Nicotera, 2007; Duchen, 2012; Nakamura and Lipton, 2011; Bell and Hardingham, 2011; Panayotis et al., 2015). Of note, we recently showed that the CTD of GluN2B (as opposed to that of GluN2A) is critically required for formation of 1.5 MDa NMDAR supercomplexes (Frank et al., 2016). Thus, regions unique to GluN2B (of which the CaMKII site is one) play a role in higher order signal complex assembly and this may underlie the key role of CTD2B in downstream excitotoxicity (Martel et al., 2012).\n\n## Materials and methods\n\n### Neuronal culture, Dapk-/- mice, induction of excitotoxicity and oxygen-glucose deprivation\n\nCortical mouse neurons were cultured as described (Bell et al., 2011a) at a density of between 9\u201313 \u00d7 104 neurons per cm2 (Lipton and Rosenberg, 1994) from E17.5 mice with Neurobasal growth medium supplemented with B27 (Invitrogen, Paisley, UK). Stimulations of cultured neurons were done in most cases after a culturing period of 9\u201311 days during which neurons develop a network of processes, express functional NMDA-type and AMPA/kainate-type glutamate receptors, and form synaptic contacts. Other experiments were performed at DIV 16. Dapk-/- mice (colony name: H-Dapk1-B11-TM1B, MGI Allele Name: Dapk1tm1b(EUCOMM)Hmgu, RID:MGI:5756958) were generated by MRC Harwell from targeted ES cells made by The European Conditional Mouse Mutagenesis Program, as part of the International Mouse Phenotyping Program. Dapk-/- genotyping reactions were performed using the following primers: A\u00a0=\u00a05 AGAGAAACTGAGGCACCTGG \u22123\u2019, B =, 5\u2019-CATCCAAAGTCCACAGCCAC-3\u2019, C\u00a0=\u00a05\u2019-CCAGTTGGTCTGGTGTCA-3\u2019 Primer pair A-B recognised the wild-type allele and amplified a product of 322 bp. Primer pair B-C recognised the mutant allele corresponding to a product of 468 bp. PCR reactions were performed using the following cycling conditions: 15 min at 95\u00b0C; 36 cycles of 45 s at 94\u00b0C, 45 s at 60\u00b0C and 1 min at 72\u00b0C; and 10 min at 72\u00b0C.\n\nTo apply an excitotoxic insult, neurons were first placed overnight into a minimal defined medium (Baxter et al., 2011) containing 10% MEM (Invitrogen), 90% Salt-Glucose-Glycine (SGG) medium ( [Bading et al., 1993]; SGG: 114 mM NaCl, 0.219% NaHCO3, 5.292 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 10 mM HEPES, 1 mM Glycine, 30 mM Glucose, 0.5 mM sodium pyruvate, 0.1% Phenol Red; osmolarity 325 mosm/l, [Papadia et al., 2005]). Where used, TAT-NR2BCT or TAT-sNR2BCT (5 \u00b5M) was incubated for 1 hr prior to the excitotoxic insult. Neurons were then treated with NMDA (Tocris Bioscience, Bristol, UK) at the indicated concentrations for 1 hr, after which medium was changed to NMDA-free. After a further 23 hr, neurons were fixed and subjected to DAPI staining and cell death quantified by counting (blind) the number of shrunken, pyknotic nuclei as a percentage of the total. To induce oxygen-glucose deprivation, a previously described approach was used (Bell et al., 2011b, 2015). Briefly, cells were washed and incubated in glucose-free SGG (see formulation above, but with glucose replaced by mannitol) that had been previously degassed with 95% N2-5% C02. The cells were then placed in an anoxic modular incubator chamber for 120 min (as compared to cells washed and incubated in normoxic glucose-containing SGG). For analysis of excitotoxicity, approximately 800\u20131000 cells were analysed per condition, per replicate (repeated across several replicates), the observer blind to genotype and experimental condition.\n\n### Electrophysiological recording and analysis\n\nCoverslips containing cortical neurons were transferred to a recording chamber perfused (at a flow rate of 3\u20135 ml/min) with an external recording solution composed of (in mM): 150 NaCl, 2.8 KCl, 10 HEPES, 2 CaCl2, 1 MgCl2, 10 glucose and 0.1 glycine, pH 7.3 (320\u2013330 mOsm). Patch-pipettes were made from thick-walled borosilicate glass (Harvard Apparatus, Kent, UK) and filled with a K-gluconate-based internal solution containing (in mM): potassium gluconate 141, NaCl 2.5, HEPES 10, EGTA 11; pH 7.3 with KOH). Electrode tips were fire-polished for a final resistance ranging between 4\u20138 M\u03a9. Currents were recorded at room temperature (21 \u00b1 2\u00b0C) using an Axopatch 200B amplifier (Molecular Devices, Union City, CA). Neurons were voltage-clamped at \u201360 mV, and recordings were rejected if the holding current was greater than \u2013100 pA or if the series resistance drifted by more than 20% of its initial value (<25 M\u03a9). All NMDA currents were evoked in Mg2+-free external recording solution (in which MgCl2 was substituted with 2 mM NaCl) by 150 \u00b5M NMDA\u00a0+100 \u00b5M glycine except Figure 2D where 50 \u00b5M NMDA\u00a0+100 \u00b5M glycine was used. Whole-cell currents were analyzed using WinEDR v3.2 software (John Dempster, University of Strathclyde, UK). The approximate number of cells to be recorded was estimated in order to detect a 25% difference in the parameter under study, powered at 80%, based on the standard deviation of data previously published by the laboratory (Martel et al., 2012; Puddifoot et al., 2012; Hardingham et al., 2007).\n\nTo determine the the competing effect of Mg2+ and TAT-NR2BCT, whole cell NMDA currents were recorded (as described above) followed by the inclusion of TAT-NR2BCT \u00b1 Mg2+in the recording solution for a blocking period of 60 s. The whole cell NMDA current was then re-assessed, and the percentage block calculated. TAT-NR2BCT was not included when NMDA currents were re-assessed; this may have led to a small washout but we deemed this as negligible due to the slow-off rate of TAT-NR2BCT. To investigate the use dependency of TAT-NR2BCT, we minimized the possibility of the NMDAR channel opening by spontaneous release of glutamate by removing glycine from the ACSF and co-applying 100 \u00b5M AP5. Glycine was added back to the ACSF to measure NMDA currents and to facilitate the block of TAT-NR2BCT in the open channel configuration.\n\n### Western blotting\n\nWestern blotting was performed as described (Baxter et al., 2015). In order to minimize the chance of post-translational modifications during the harvesting process, neurons were lysed immediately after stimulation in 1.5x LDS sample buffer (NuPage, Life Technologies) and boiled at 100\u00b0C for 10 min. Approximately 10 \u00b5g of protein was loaded onto a precast gradient gel (4\u201316%) and subjected to electrophoresis. Western blotting onto a PVDF membrane was then performed using the Xcell Surelock system (Invitrogen) according to the manufacturer's instructions. Following the protein transfer, the PVDF membranes were blocked for 1 hr at room temperature with 5% (w/v) non-fat dried milk in TBS with 0.1% Tween 20. The sample size was calculated based on previous experimental observations of reporting the effect and standard deviation of NMDA-induced Ser-1303 phosphorylation (Tu et al., 2010). The membranes were incubated at 4\u00b0C overnight with the primary antibodies diluted in blocking solution: Anti phospho-(Ser-1303) GluN2B (1: 2000, Millipore), anti-Dapk1 (1:8000, Sigma), anti-GluN2B (C-terminus, 1:8000, BD Transduction Laboratories), anti-beta actin (1:200000, Abcam). For visualisation of Western blots, HRP-based secondary antibodies were used followed by chemiluminescent detection on Kodak X-Omat film. Western blots were digitally scanned and densitometric analysis was performed using Image J. All analysis of GluN2B phosphorylation was normalized to total GluN2B.\n\n### Bilateral common carotid artery occlusion\n\nMice were housed in individually-ventilated cages (in groups of up to five mice) under specific pathogen-free conditions and standard 12 hr light/dark cycle with unrestricted access to food and water. All experiments using live animals were conducted under the authority of UK Home Office project and personal licences and adhered to regulations specified in the Animals (Scientific Procedures) Act (1986) and Directive 2010/63/EU and were approved by both The Roslin Institute\u2019s and the University of Edinburgh\u2019s Animal Welfare and Ethics Committees. Experimental design, analysis and reporting followed the ARRIVE guidelines (https://www.nc3rs.org.uk/arrive-guidelines) where possible. The sample size was calculated based on the experimental observations of reporting the effect and standard deviation of BCCAO-induced neuronal loss in both wild-type and Dapk1\u2013/\u2013(Tu et al., 2010), whose experimental observations using n\u00a0=\u00a07 per genotype we retrospectively calculated were powered at\u00a0>99%.\n\nTransient bilateral common carotid artery occlusion (BCCAO) was performed in Dapk1\u2013/\u2013 and wild-type male control mice under isoflurane anaesthesia (with O2 and N2O). The operator was unaware of genotype. Core body temperature was maintained at 37 \u00b1 0.5\u00b0C throughout the procedure with a feedback controlled heating blanket (Harvard Apparatus, UK). Both common carotid arteries were exposed and dissected from surrounding tissues and occluded by application of an aneurysm clip for 20 min. Clips were removed, the neck wound sutured and topical local anaesthetic (lidocaine/prilocaine) was applied. Mice were recovered on a heated blanket for 4\u20136 hr and then returned to normal housing. After a 3 day recovery, mice were anaesthetised and perfused transcardially with saline followed by 4% paraformaldehyde. Brains were removed and rostral and caudal blocks prepared using a brain matrix (Harvard Apparatus). Blocks were post-fixed in 4% paraformaldehyde for 24 hr and processed to paraffin blocks. Sections (6 \u03bcm) were cut on a microtome (Leica) and stained with haematoxylin and eosin. Ischaemic neuronal death was quantified in the CA1 and CA2 regions of the hippocampus which are the most sensitive regions in this model. Ischaemic (dead) neurons were identified morphologically in two regions of interest (ROIs) in CA1 and the entire CA2 bilaterally. Data are expressed as the number of dead neurons as a % of total neurons in the ROI and show the mean of both hemispheres for each region. All processing and analysis was performed with the operator blind to genotype.\n\n### Statistical analysis, equipment and settings\n\nStatistical testing involved a 2-tailed paired Student's t-test, or a one- or two-way ANOVA followed by an appropriate post-hoc test, as indicated in the legends. Cell death analyses for both in vitro and in vivo experiments were performed blind to the genotype/experimental condition. For all cell death, western blot analyses and in vitro and in vivo cell death experiments, the value of 'N' was taken as the number of independent biological replicates, defined as independently performed experiments on material derived from different animals. For western blots, we used chemiluminescent detection on Kodak X-Omat film, and linear adjustment of brightness/contrast applied (Photoshop) equally across the image, maintaining some background intensity. In any cases where lanes from non-adjacent lanes are spliced together,lanes are always from the same blot, processed in the same way, and the splicing point is clearly marked. Pictures of cells were taken on a Leica AF6000 LX imaging system, with a DFC350 FX digital camera.\n",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "99abf608-4c21-495c-9bbb-b7fc6d433323",
+      "submission_id": "3d9b04e6-1ee0-4284-8dc0-706b6390fa89",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Moses V Chao, New York University Langone Medical Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17161.023](https://doi.org/10.7554/eLife.17161.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Pro-death NMDA receptor signaling is promoted by the GluN2B C-terminus independently of DAPK1\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Suzanne Zukin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study by McQueen et al. contains an important set of data calling into question the dominant notion that phosphorylation of the GluN2B subunit of the NMDA receptor by DAPK1 is a critical aspect of excitotoxic neuronal death of glutamatergic neurons. Using a combination of biochemistry, histology, Ca2+ imaging, and whole-cell recordings, McQueen, et al. overturn a key hypothesis as to how NMDA receptors (NMDARs) cause neuronal death. The authors show that, contrary to a paper published by Tu et al. (Cell, 2010), neither activation of death-associated protein kinase 1 (DAPK1) nor excitotoxic insults promote phosphorylation of GluN2B at Ser1303, a known CaMKII binding site and identified site of DAPK1 phosphorylation under ischemic and excitotoxic conditions. They further show that genetic deletion of DAPK1 does not substantially alter ischemia nor OGD-induced neuronal death.\n\nThese are important findings since they put a serious hole in the prevailing hypothesis for the nature of NMDAR-mediated neurotoxicity. The short report is therefore an appropriate format for the presentation of these results which are solid and well presented.\n\nEssential revisions:\n\nThe full manuscript as submitted doesn't conform to the spirit of the eLife \"short report\". Several experiments have been represented in each of the 3 main figures, and several more in each of the supplemental figures. At times, too little information is given to permit a full understanding of how each experiment was performed.\n\nThe most important three pieces of new information are 1) Excitotoxic treatments of cultured neurons do not induce phosphorylation of S1303 on the GluN2B receptor; 2) an independently created DAPK1 knockout mouse mutant shows no difference from wild type in vulnerability to excitotoxic insult, in contrast to previous reports; nor do neurons cultured from the mutant mouse; 3) the tat-NR2BCT peptide, which has been marketed as a potential anti-excitotoxic agent blocks NMDA receptor currents at 5 \u00b5M, as does the scrambled control version of the peptide. This finding is particularly important because it accounts for the observed protection from excitotoxicity by this peptide; however, it indicates that the peptide would not be a viable treatment after stroke in humans because direct blockade of the NMDA receptor has dangerous side-effects.\n\nThe authors include additional data that lengthens the report and is not necessary for the most important conclusions. For example, the data regarding the GluN2B\u0394CaMKII mouse knock-in mutant is incompletely documented and not necessary for the conclusions. A more thorough study would be necessary to document the potential effects of the three mutations, and lack of their effect on NMDAR currents. Data regarding this mutation (Figure 2\u2014figure supplement 1) should be deleted from the paper.\n\nFigures 3E, F, and G regarding calcium currents through NMDARs in the presence of tat-NR2BCT are not necessary for the conclusion and are not properly controlled. There is no example of control calcium currents for 200 sec without addition of the peptides.\n\nIf the authors wish to include all of this data, they should write it up as a research paper, with more figures and with each figure fully documented.\n\nMaterials and methods should be included as part of the paper, not as supplementary information.\n\nIt is important that papers of this nature, which directly contradict previous findings, are properly controlled and powered and there are some issues to address here in this regard:\n\n1) In Figure 1 there is no positive control to show that the phosphorylation selective antibody can detect increases in phosphorylation at Ser 1303 as predicted for the involvement of DAPK1. Such a control is important because ischemic and basal conditions, and therefore signaling pathways, vary considerably between laboratories for both in vitro and in vivo assays.\n\n2) The in vivo ischemia experiments shown in Figure 2E-G are not sufficiently powered. The variability in cell death between animals is high as shown by the error bars so n=7 seems too low to produce a significant result for any reasonable effect size. More experiments should be added.\n\n3) The control for perfusion of peptide in Figure 3A, B should include perfusion of an alternative peptide (not scrambled). Furthermore, it would be reasonable to add to the Discussion that additional random peptide sequences are often required as controls in addition to scrambled peptides in protein interaction blocking experiments.\n\n4) In Figure 3H it would be useful to make the comparison of block at +40mV to control since this will likely show no effect of peptide at +40mV.\n\n5) The means of applying oxygen-glucose deprivation (Figure 1C, D) is not described and should be added to the Materials and methods section. Without these methods it is hard to judge whether these experiments are equivalent to those previously performed.\n\nFull Comments of Reviewer #2 (Suzanne Zukin):\n\nUsing a combination of biochemistry, histology, Ca2+ imaging, and whole-cell recordings, McQueen, et al. overturn a key hypothesis as to how NMDA receptors (NMDARs) cause neuronal death. The authors show that, contrary to a paper published by Tu et al. (Cell, 2010), neither activation of death-associated protein kinase 1 (DAPK1) nor excitotoxic insults promote phosphorylation of GluN2B at Ser1303, a known CaMKII binding site and identified site of DAPK1 phosphorylation under ischemic and excitotoxic conditions. They further show that genetic deletion of DAPK1 does not substantially alter ischemia nor OGD-induced neuronal death. This is significant in that Tu et al. reported that DAPK1 serves as a central mediator of stroke damage and that loss of DAKP1 is neuroprotective. Finally, they show evidence that TAT-NR2BCT, a peptide reported by the same authors to inhibit DAPK1-dependent phosphorylation of GluN2B at Ser1303, and TAT-sNR2B (scrambled version of TAT-NR2BCT) are potent NMDAR antagonists. Collectively, the main findings of the present study overturn the findings of a highly influential paper in the stroke literature. The manuscript is well-written and the experiments appear to be carefully executed. Although positive findings would have strengthened the manuscript, the strong negative findings are likely to be of broad interest.\n",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d2e72ee-01e5-4e9f-94cb-c8712c5709b6",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C1",
+      "claim": "NMDA receptor (NMDAR)-mediated excitotoxicity plays a key role in acute neurological disorders such as stroke and traumatic brain injury.",
+      "claim_type": "EXPLICIT",
+      "source": "NMDA receptor (NMDAR) -mediated excitotoxicity plays a key role in acute neurological disorders such as stroke and traumatic brain injury, neuronal loss in Huntington's disease, and is also implicated in synapto-toxicity in Alzheimer's disease (Choi, 1988; Lipton and Rosenberg, 1994; Berliocchi et al., 2005; Lau and Tymianski, 2010; Hardingham and Lipton, 2011; Parsons and Raymond, 2014; Tu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research establishing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "06c0b610-f26a-4094-b21e-3c58ed685a6b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C2",
+      "claim": "NMDAR-mediated excitotoxicity plays a key role in neuronal loss in Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "NMDA receptor (NMDAR) -mediated excitotoxicity plays a key role in acute neurological disorders such as stroke and traumatic brain injury, neuronal loss in Huntington's disease, and is also implicated in synapto-toxicity in Alzheimer's disease (Choi, 1988; Lipton and Rosenberg, 1994; Berliocchi et al., 2005; Lau and Tymianski, 2010; Hardingham and Lipton, 2011; Parsons and Raymond, 2014; Tu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "3fb7db91-0d5f-4816-91d4-469351c72751",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C3",
+      "claim": "NMDAR-mediated excitotoxicity is implicated in synapto-toxicity in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "NMDA receptor (NMDAR) -mediated excitotoxicity plays a key role in acute neurological disorders such as stroke and traumatic brain injury, neuronal loss in Huntington's disease, and is also implicated in synapto-toxicity in Alzheimer's disease (Choi, 1988; Lipton and Rosenberg, 1994; Berliocchi et al., 2005; Lau and Tymianski, 2010; Hardingham and Lipton, 2011; Parsons and Raymond, 2014; Tu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e6a7d078-6d6e-474d-89d9-007bd29aa90a",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C4",
+      "claim": "Most NMDARs are comprised of two obligate GluN1 subunits and two GluN2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Most NMDARs are comprised of two obligate GluN1 subunits and two GluN2 subunits (Furukawa et al., 2005), with GluN2A and GluN2B predominant in the forebrain (Monyer et al., 1994; Cull-Candy et al., 2001; Traynelis et al., 2010; Paoletti, 2011; Wyllie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Furukawa et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "d3e246d9-6c55-4b6c-9e1f-e82cb5708211",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C5",
+      "claim": "GluN2A and GluN2B are predominant in the forebrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Most NMDARs are comprised of two obligate GluN1 subunits and two GluN2 subunits (Furukawa et al., 2005), with GluN2A and GluN2B predominant in the forebrain (Monyer et al., 1994; Cull-Candy et al., 2001; Traynelis et al., 2010; Paoletti, 2011; Wyllie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "b9986555-1431-4480-a461-d3d5612e29e2",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C6",
+      "claim": "GluN2 subunits have long, evolutionarily divergent cytoplasmic C-terminal domains (CTDs).",
+      "claim_type": "EXPLICIT",
+      "source": "GluN2 subunits have long, evolutionarily divergent cytoplasmic C-terminal domains (CTDs) which we have shown can differentially associate with signalling molecules (Martel et al., 2012; Ryan et al., 2008, 2013; Frank et al., 2016) and differentially signal to cell death: the CTD of GluN2B (CTD2B) potentiates excitotoxicity more strongly than that of GluN2A (Martel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about NMDAR structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "0da297a5-6250-49cf-97fe-7025cc17bd43",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C7",
+      "claim": "GluN2 CTDs can differentially associate with signalling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "GluN2 subunits have long, evolutionarily divergent cytoplasmic C-terminal domains (CTDs) which we have shown can differentially associate with signalling molecules (Martel et al., 2012; Ryan et al., 2008, 2013; Frank et al., 2016) and differentially signal to cell death: the CTD of GluN2B (CTD2B) potentiates excitotoxicity more strongly than that of GluN2A (Martel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e3593536-3e54-4040-8f3b-80d03bac62e3",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C8",
+      "claim": "The CTD of GluN2B (CTD2B) potentiates excitotoxicity more strongly than that of GluN2A.",
+      "claim_type": "EXPLICIT",
+      "source": "GluN2 subunits have long, evolutionarily divergent cytoplasmic C-terminal domains (CTDs) which we have shown can differentially associate with signalling molecules (Martel et al., 2012; Ryan et al., 2008, 2013; Frank et al., 2016) and differentially signal to cell death: the CTD of GluN2B (CTD2B) potentiates excitotoxicity more strongly than that of GluN2A (Martel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Martel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "77f41dd0-2a0f-40aa-b939-949a3bd50c91",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C9",
+      "claim": "The mechanism by which CTD2B potentiates excitotoxicity is upstream of all excitotoxicity pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "While multiple pathways contribute to excitotoxicity (Tymianski, 2011), the mechanism by which CTD2B is thought to potentiate excitotoxicity is upstream of all of them (Parsons and Raymond, 2014; Tu et al., 2010; Lai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "9c6092e6-b407-4452-9236-e95eb89c9622",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C10",
+      "claim": "The mechanism of CTD2B-mediated excitotoxicity is centered on Ser-1303 of CTD2B.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism is centred on Ser-1303 of CTD2B, within a region of the CTD unique to GluN2B, and with which CaMKII\u03b1 is known to interact and phosphorylate (Bayer et al., 2001; Mao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed mechanism based on prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "410a5c98-22ea-4b69-ad92-216310f8a4a4",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C11",
+      "claim": "Ser-1303 is within a region of the CTD unique to GluN2B.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism is centred on Ser-1303 of CTD2B, within a region of the CTD unique to GluN2B, and with which CaMKII\u03b1 is known to interact and phosphorylate (Bayer et al., 2001; Mao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GluN2B structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "369158f0-9ea0-40e3-9ff9-018c8de8a3b1",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C12",
+      "claim": "CaMKII\u03b1 is known to interact with and phosphorylate the region around Ser-1303 of CTD2B.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism is centred on Ser-1303 of CTD2B, within a region of the CTD unique to GluN2B, and with which CaMKII\u03b1 is known to interact and phosphorylate (Bayer et al., 2001; Mao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bayer et al., 2001 and Mao et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "8bee3c62-5467-425b-a54d-939d27492df1",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C13",
+      "claim": "In response to ischemia or excitotoxic insults, Dapk1 causes Ser-1303 phosphorylation which increases NMDAR-dependent ionic flux.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that in response to ischemia or excitotoxic insults, a different kinase, Dapk1, causes Ser-1303 phosphorylation which increases NMDAR-dependent ionic flux (Tu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from prior literature (Tu et al., 2010) that the authors are reporting.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "d1956501-7bd7-4a3b-9c18-9bb990299869",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C14",
+      "claim": "Dapk1-/- neurons were reported to be resistant to excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Dapk1-/- neurons were reported to be resistant to excitotoxicity, and a cell-permeable peptide mimetic of the CTD2B region around Ser-1303 disrupted Ser-1303 phosphorylation and was neuroprotective (Tu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from prior literature (Tu et al., 2010) that the authors are reporting.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "8d0054d4-dbf6-49b5-afbc-aad67b2f6445",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C15",
+      "claim": "A cell-permeable peptide mimetic of the CTD2B region around Ser-1303 disrupted Ser-1303 phosphorylation and was neuroprotective.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Dapk1-/- neurons were reported to be resistant to excitotoxicity, and a cell-permeable peptide mimetic of the CTD2B region around Ser-1303 disrupted Ser-1303 phosphorylation and was neuroprotective (Tu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from prior literature (Tu et al., 2010) that the authors are reporting.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "42cf17bc-5a21-480c-92f2-524d3ca8ea90",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C16",
+      "claim": "Dapk1 has not emerged from proteomic post-synaptic density screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Dapk1 has not hitherto emerged from proteomic post-synaptic density screens (Husi et al., 2000; Collins et al., 2006; Yoshimura et al., 2004; Li et al., 2004; Jordan et al., 2004; Peng et al., 2004; Cheng et al., 2006; Bay\u00e9s et al., 2011), and we failed to detect it in a recent proteomic analysis of native NMDAR supercomplexes (Frank et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to proteomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "7b595efd-35ea-4e17-a689-b5d305eaba2e",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C17",
+      "claim": "Dapk1 was not detected in a recent proteomic analysis of native NMDAR supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Dapk1 has not hitherto emerged from proteomic post-synaptic density screens (Husi et al., 2000; Collins et al., 2006; Yoshimura et al., 2004; Li et al., 2004; Jordan et al., 2004; Peng et al., 2004; Cheng et al., 2006; Bay\u00e9s et al., 2011), and we failed to detect it in a recent proteomic analysis of native NMDAR supercomplexes (Frank et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to the authors' own work (Frank et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "cc6c50eb-3cc6-402d-ae43-95721d33451e",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C18",
+      "claim": "The phospho-(Ser-1303)-specific antibody (Millipore 07\u2013398) has been previously used and validated by several groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We first examined the influence of excitotoxic conditions on GluN2B Ser-1303 phosphorylation in cortical neurons using a phospho-(Ser-1303)-specific antibody (Millipore 07\u2013398), previously used and validated by several groups (Jalan-Sakrikar et al., 2012; Jia et al., 2013; Castillo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies that used this antibody.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "5cfa2f31-3ae9-4734-9dbd-0c12a67b2b61",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C19",
+      "claim": "Phospho-GluN2B(Ser-1303) levels in cortical neurons are lowered after incubation with the general kinase inhibitor staurosporine.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the antibody is capable of detecting changes in Ser-1303 phosphorylation in neurons: phospho-GluN2B(Ser-1303) levels in cortical neurons, as assayed by western blot using this antibody, are lowered after incubation of cortical neurons with the general kinase inhibitor staurosporine, and increased modestly by a cocktail of phosphatase inhibitors okadaic acid and FK-506 (Figure 1\u2014figure supplement 1a,b, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "04c6b122-e29a-458e-ad6c-106e1c291772",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C20",
+      "claim": "Phospho-GluN2B(Ser-1303) levels in cortical neurons are increased modestly by a cocktail of phosphatase inhibitors okadaic acid and FK-506.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the antibody is capable of detecting changes in Ser-1303 phosphorylation in neurons: phospho-GluN2B(Ser-1303) levels in cortical neurons, as assayed by western blot using this antibody, are lowered after incubation of cortical neurons with the general kinase inhibitor staurosporine, and increased modestly by a cocktail of phosphatase inhibitors okadaic acid and FK-506 (Figure 1\u2014figure supplement 1a,b, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "33190578-4f67-4e42-9586-a9075e27f4cc",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C21",
+      "claim": "The phospho-(Ser-1303) antibody completely failed to react with GluN2B containing L1298A/R1300N/S1303D mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "As further evidence of specificity, we found that the antibody completely failed to react with GluN2B in which we had engineered mutations (L1298A/R1300N/S1303D) into the site for a separate study (Figure 1\u2014figure supplement 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "0699516f-47d4-40d2-bf48-cd7b32bf206b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C22",
+      "claim": "Bath application of NMDA at excitotoxic concentrations failed to induce significant Ser-1303 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that bath application of NMDA at excitotoxic concentrations failed to induce significant Ser-1303 phosphorylation (Figure 1a and b, Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "df1efdb0-4bf2-4621-87f8-4dcd2a73f40c",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C23",
+      "claim": "At 60 min with 50 \u00b5M NMDA, a decline in Ser-1303 phosphorylation was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At the late timepoint (60 min, 50 \u00b5M NMDA) we observed a decline in Ser-1303 phosphorylation (Figure 1a,b, Figure 1\u2014figure supplement 1e,f, Figure 1\u2014source data 3) as well as a decline in total levels of GluN2B, consistent with observations of others who have reported partial calpain-mediated cleavage and degradation of the NMDAR CTD (Dong et al., 2006; Gasc\u00f3n et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1a,b and Figure 1\u2014figure supplement 1e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "3bdbabd2-5182-433e-a5a5-a3dabdbac53a",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C24",
+      "claim": "At 60 min with 50 \u00b5M NMDA, a decline in total levels of GluN2B was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At the late timepoint (60 min, 50 \u00b5M NMDA) we observed a decline in Ser-1303 phosphorylation (Figure 1a,b, Figure 1\u2014figure supplement 1e,f, Figure 1\u2014source data 3) as well as a decline in total levels of GluN2B, consistent with observations of others who have reported partial calpain-mediated cleavage and degradation of the NMDAR CTD (Dong et al., 2006; Gasc\u00f3n et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1a,b and Figure 1\u2014figure supplement 1e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "ef9ea9cf-019e-4e2b-abdc-0a4d96806f5e",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C25",
+      "claim": "The decline in total GluN2B levels is consistent with partial calpain-mediated cleavage and degradation of the NMDAR CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "At the late timepoint (60 min, 50 \u00b5M NMDA) we observed a decline in Ser-1303 phosphorylation (Figure 1a,b, Figure 1\u2014figure supplement 1e,f, Figure 1\u2014source data 3) as well as a decline in total levels of GluN2B, consistent with observations of others who have reported partial calpain-mediated cleavage and degradation of the NMDAR CTD (Dong et al., 2006; Gasc\u00f3n et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The interpretation is supported by citations to prior studies reporting calpain-mediated cleavage.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "6871c614-db0b-4578-8d91-e2009baf4ab9",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C26",
+      "claim": "The observations of NMDA-induced Ser-1303 dephosphorylation in DIV10 cortical neurons were also repeated at DIV16.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations in DIV10 cortical neurons were also repeated at DIV16 (Figure 1\u2014figure supplement 1g,h, Figure 1\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1g,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e925f99c-5c16-443d-b09d-2d2dfdb4e366",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C27",
+      "claim": "No increase in Ser-1303 phosphorylation was observed in response to oxygen-glucose deprivation (OGD).",
+      "claim_type": "EXPLICIT",
+      "source": "We also saw no increase in Ser-1303 phosphorylation in response to oxygen-glucose deprivation (OGD) (Figure 1c,d, Figure 1\u2014source data 5), contrary to previous reports (Tu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "b71673f2-5575-464e-b5a1-f195412865ce",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C28",
+      "claim": "The Dapk1-/- mouse line was created by the International Mouse Phenotyping Consortium by targeted deletion of exon four on a C57Bl/6 background.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether Dapk1 plays any role in the GluN2B Ser-1303 phosphorylation status, we obtained a Dapk1-/- mouse line, created by the International Mouse Phenotyping Consortium by targeted deletion of exon four on a C57Bl/6 background (the same strain as the Dapk1-/- mouse generated by Tu et al. (2010)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the mouse line used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "a1a3bed8-57bc-447d-bd68-4920220258c8",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C29",
+      "claim": "The Dapk1-/- mouse line is on the same strain (C57Bl/6) as the Dapk1-/- mouse generated by Tu et al. (2010).",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether Dapk1 plays any role in the GluN2B Ser-1303 phosphorylation status, we obtained a Dapk1-/- mouse line, created by the International Mouse Phenotyping Consortium by targeted deletion of exon four on a C57Bl/6 background (the same strain as the Dapk1-/- mouse generated by Tu et al. (2010)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement comparing the mouse strains.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "df0e23b0-a8c6-4fdb-a6ca-050853b21b97",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C30",
+      "claim": "The Dapk1-/- mice had normal fertility, viability and body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "The mice had normal fertility, viability and body weight (http://www.mousephenotype.org, MGI:1916885).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to the Mouse Phenotype database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "7a2c4469-e4c2-4177-8c05-898a9b97eab0",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C31",
+      "claim": "Dapk1-/- neurons expressed no Dapk1.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that Dapk1-/- neurons expressed no Dapk1 (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e36b8c8c-292c-4a20-8937-24fe138ab49b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C32",
+      "claim": "There is no difference in basal GluN2B phospho-Ser-1303 levels between Dapk1-/- and Dapk1+/+ cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared GluN2B phospho-Ser-1303 levels in cortical neurons obtained from Dapk1-/- and Dapk1+/+ littermates and found no difference in basal levels, nor any difference in the lowered level that we observe at longer periods of NMDA exposure (Figure 1e,f, Figure 1\u2014source data 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "c5fa27ea-f519-4aa3-968e-458e000bd2e4",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C33",
+      "claim": "There is no difference in NMDA-induced lowered GluN2B phospho-Ser-1303 levels between Dapk1-/- and Dapk1+/+ cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared GluN2B phospho-Ser-1303 levels in cortical neurons obtained from Dapk1-/- and Dapk1+/+ littermates and found no difference in basal levels, nor any difference in the lowered level that we observe at longer periods of NMDA exposure (Figure 1e,f, Figure 1\u2014source data 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "095e4270-75fc-492e-b5da-9debb9b4b16a",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C34",
+      "claim": "Dapk1 does not influence GluN2B Ser-1303 phosphorylation status under basal or excitotoxic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus in our hands, Dapk1 does not influence GluN2B Ser-1303 phosphorylation status under basal or excitotoxic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 1e,f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "2d98cef0-966c-428e-bc78-075d93df103a",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C35",
+      "claim": "There is no difference in NMDAR-dependent excitotoxic neuronal death between Dapk1-/- and wild-type neurons at DIV10.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to cortical neurons cultured from their wild-type littermates, we observed no difference in NMDAR-dependent excitotoxic neuronal death in Dapk1-/- neurons at either DIV10 or DIV16 (Figure 2a, Figure 2\u2014source data 1; Figure 2b, Figure 2\u2014source data 2) and no difference in OGD-induced neuronal death (Figure 2c, Figure 2\u2014source data 3), contrary to previous reports.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "63684eeb-088c-4583-ba19-76270c562717",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C36",
+      "claim": "There is no difference in NMDAR-dependent excitotoxic neuronal death between Dapk1-/- and wild-type neurons at DIV16.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to cortical neurons cultured from their wild-type littermates, we observed no difference in NMDAR-dependent excitotoxic neuronal death in Dapk1-/- neurons at either DIV10 or DIV16 (Figure 2a, Figure 2\u2014source data 1; Figure 2b, Figure 2\u2014source data 2) and no difference in OGD-induced neuronal death (Figure 2c, Figure 2\u2014source data 3), contrary to previous reports.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "961f2735-574e-41e9-ad2e-8e90be74996d",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C37",
+      "claim": "There is no difference in OGD-induced neuronal death between Dapk1-/- and wild-type neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to cortical neurons cultured from their wild-type littermates, we observed no difference in NMDAR-dependent excitotoxic neuronal death in Dapk1-/- neurons at either DIV10 or DIV16 (Figure 2a, Figure 2\u2014source data 1; Figure 2b, Figure 2\u2014source data 2) and no difference in OGD-induced neuronal death (Figure 2c, Figure 2\u2014source data 3), contrary to previous reports.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "06dce1ae-2968-4183-bc89-4d294d7c80de",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C38",
+      "claim": "NMDAR currents are no different in Dapk1-/- vs. Dapk1+/+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "NMDAR currents were also no different in Dapk1-/- vs. Dapk1+/+ neurons (Figure 2d, Figure 2\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "f179592f-5c3f-4f07-ab77-425abfc3924a",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C39",
+      "claim": "Dapk1-/- and Dapk1+/+ mice exhibited similar levels of infarction following transient global ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult mice exposed to a transient (20 min) period of global ischemia showed characteristic selective neuronal death within the hippocampus, particularly the CA1 and CA2 regions. However, Dapk1-/- and Dapk1+/+ mice exhibited similar levels of infarction (Figure 2e\u2013h, Figure 2\u2014source data 5), contrary to previous reports (Tu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2e\u2013h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "86e997eb-103c-49a2-8b08-68ebd3207efa",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C40",
+      "claim": "Excitotoxic and ischemic neuronal death in vitro and in vivo can proceed normally in the absence of Dapk1.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations collectively indicate that excitotoxic and ischemic neuronal death in vitro and in vivo can proceed normally in the absence of Dapk1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "ef34fda9-d25a-4dec-b21b-05fed85b04a7",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C41",
+      "claim": "50 \u00b5M TAT-NR2BCT was toxic to neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 50 \u00b5M TAT-NR2BCT, the concentration used previously (Tu et al., 2010), was toxic to neurons (Figure 3\u2014figure supplement 1a, Figure 3\u2014source data 1), so we used a concentration 10 times lower (5 \u00b5M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "7e91a07e-af09-454a-98b6-6cf72509e534",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C42",
+      "claim": "5 \u00b5M TAT-NR2BCT completely prevents NMDA-induced excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 5 \u00b5M TAT-NR2BCT completely prevents NMDA-induced excitotoxicity (Figure 3\u2014figure supplement 1b, Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "62c49690-9774-46f1-9dfc-44ed189a0ebf",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C43",
+      "claim": "At 5 \u00b5M, TAT-NR2BCT potently inhibited NMDAR currents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, further analysis revealed the explanation: at 5 \u00b5M, TAT-NR2BCT potently inhibited NMDAR currents, acting immediately and without any need for a preincubation period (Figure 3a\u2013d, Figure 3\u2014source data 3), and in a manner that was not readily washed out upon removal of peptide (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3a\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "7ef6cd5f-197c-4cda-9420-0c0dea1b7241",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C44",
+      "claim": "TAT-NR2BCT acts immediately on NMDAR currents without any need for a preincubation period.",
+      "claim_type": "EXPLICIT",
+      "source": "However, further analysis revealed the explanation: at 5 \u00b5M, TAT-NR2BCT potently inhibited NMDAR currents, acting immediately and without any need for a preincubation period (Figure 3a\u2013d, Figure 3\u2014source data 3), and in a manner that was not readily washed out upon removal of peptide (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3a\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "b4ace7a7-0cb2-441f-aab2-1a2de88d77d5",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C45",
+      "claim": "TAT-NR2BCT inhibition of NMDAR currents was not readily washed out upon removal of peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "However, further analysis revealed the explanation: at 5 \u00b5M, TAT-NR2BCT potently inhibited NMDAR currents, acting immediately and without any need for a preincubation period (Figure 3a\u2013d, Figure 3\u2014source data 3), and in a manner that was not readily washed out upon removal of peptide (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiments, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "dcc9aa96-97fd-46f2-8c2f-b0f8e48bb0ee",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C46",
+      "claim": "NR2BCT(1292\u20131304)-TAT (a pre-made peptide sold by Merck Millipore) was a similarly potent NMDAR antagonist as TAT-NR2BCT.",
+      "claim_type": "EXPLICIT",
+      "source": "TAT-NR2BCT was custom synthesized for our studies by Genscript, and we found that NR2BCT(1292\u20131304)-TAT, a pre-made peptide sold by Merck Millipore was a similarly potent NMDAR antagonist (n = 8, Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "fc5313da-ac3c-47f6-94d5-3edd957cd82e",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C47",
+      "claim": "A scrambled version of TAT-NR2BCT (TAT-sNR2BCT) was neuroprotective.",
+      "claim_type": "EXPLICIT",
+      "source": "A scrambled version of TAT-NR2BCT (TAT-sNR2BCT) was neuroprotective and similarly antagonistic at the NMDAR (Figure 3\u2014figure supplement 1; Figure 3\u2014figure supplement 1b, Figure 3a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "48e2d517-7c5d-45f3-81bb-b723374e1813",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C48",
+      "claim": "TAT-sNR2BCT was similarly antagonistic at the NMDAR as TAT-NR2BCT.",
+      "claim_type": "EXPLICIT",
+      "source": "A scrambled version of TAT-NR2BCT (TAT-sNR2BCT) was neuroprotective and similarly antagonistic at the NMDAR (Figure 3\u2014figure supplement 1; Figure 3\u2014figure supplement 1b, Figure 3a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3a\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "36e23933-6272-4201-93c6-f178be550b4e",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C49",
+      "claim": "An arginine-rich peptide of high net positive charge (+15) strongly antagonized NMDAR currents.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this, we designed an arginine-rich peptide of high net positive charge (+15 same as TAT-NR2BCT) of sequence: RRR TQN RRN RRT SRQ NRR RSR RRR) which strongly antagonized NMDAR currents, and another peptide of net neutral charge (NIN IHD VKV LPG GMI KSN DGP PIL), which had a much weaker effect (Figure 3a, Figure 3\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "6761113a-1a83-46cc-84fb-5b491aa8bca9",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C50",
+      "claim": "A peptide of net neutral charge had a much weaker effect on NMDAR currents than the arginine-rich peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this, we designed an arginine-rich peptide of high net positive charge (+15 same as TAT-NR2BCT) of sequence: RRR TQN RRN RRT SRQ NRR RSR RRR) which strongly antagonized NMDAR currents, and another peptide of net neutral charge (NIN IHD VKV LPG GMI KSN DGP PIL), which had a much weaker effect (Figure 3a, Figure 3\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "12a2b8d8-d9c9-4744-9492-68a5e9b1e149",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C51",
+      "claim": "The net positive charge of TAT-NR2BCT is primarily responsible for its NMDAR-antagonistic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these data suggest that the net positive charge of TAT-NR2BCT is primarily responsible for its NMDAR-antagonistic properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing peptides with different charges.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "c7923bcb-74ed-410c-b0fd-1e1b700ee6f1",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C52",
+      "claim": "The presence of Mg2+ reduced the effectiveness of TAT-NR2BCT's antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the presence of Mg2+ (a pore blocker) reduced the effectiveness of TAT-NR2BCT's antagonism (Figure 3e, Figure 3\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e9be284c-7681-4dd7-93f0-b5f501d099e1",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C53",
+      "claim": "TAT-NR2BCT was more effective at antagonising NMDARs under open-channel conditions than closed-channel conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the second peptide incubation (block (2)) significantly increased the proportion of NMDAR inhibition when it occurred under open-channel conditions, but not under closed channel conditions (Figure 3f, Figure 3\u2014source data 5), further evidence in favour of a pore-centred binding site for TAT-NR2BCT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "32874e57-d30e-40bf-84df-839ae0cc292b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C54",
+      "claim": "The unintended NMDAR antagonistic properties of TAT-NR2BCT explain its anti-excitotoxic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the unintended NMDAR antagonistic properties TAT-NR2BCT explain its anti-excitotoxic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing TAT-NR2BCT's NMDAR antagonism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "45f7f0f4-b43a-46a9-9cad-6215868dce6d",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C55",
+      "claim": "TAT-NR2BCT may be an open channel blocker drawn partly into the pore by its high net positive charge and bind near the internal Mg2+ binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that TAT-NR2BCT may be an open channel blocker drawn partly into the pore by its high net positive charge and bind near the internal Mg2+ binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e703fda5-213b-416e-bdf6-9a37f6799845",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C56",
+      "claim": "Dapk1-mediated GluN2B Ser-1303 phosphorylation lies at the heart of current models of excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dapk1-mediated GluN2B Ser-1303 phosphorylation, and consequent enhancement of toxic Ca2+ influx through extrasynaptic NMDARs lies at the heart of current models of excitotoxicity and of the central role of the GluN2B CTD in this process (Parsons and Raymond, 2014; Lai et al., 2014), but our study suggests that this needs to be re-appraised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to current models in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "0d57afc2-63ee-4ef3-be61-36c87502560b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C57",
+      "claim": "The current study suggests that the Dapk1-mediated GluN2B Ser-1303 phosphorylation model of excitotoxicity needs to be re-appraised.",
+      "claim_type": "EXPLICIT",
+      "source": "Dapk1-mediated GluN2B Ser-1303 phosphorylation, and consequent enhancement of toxic Ca2+ influx through extrasynaptic NMDARs lies at the heart of current models of excitotoxicity and of the central role of the GluN2B CTD in this process (Parsons and Raymond, 2014; Lai et al., 2014), but our study suggests that this needs to be re-appraised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "59e85973-ca1b-4bbd-9ae1-a515f9f42465",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C58",
+      "claim": "The Dapk1-/- mouse used in this study was generated independently of the one generated by Tu et al.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dapk1-/- mouse that we used was generated independently of the one generated by Tu et al., although there is no a priori reason why the two lines should behave differently at this fundamental level, particularly given the very similar genetic background (C57BL/6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the mouse lines used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "57330a29-5fda-4813-a86f-23dbc66cf361",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C59",
+      "claim": "There is no a priori reason why the two Dapk1-/- mouse lines should behave differently at a fundamental level, given their similar genetic background (C57BL/6).",
+      "claim_type": "EXPLICIT",
+      "source": "The Dapk1-/- mouse that we used was generated independently of the one generated by Tu et al., although there is no a priori reason why the two lines should behave differently at this fundamental level, particularly given the very similar genetic background (C57BL/6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the genetic similarity of the mouse strains.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "77610d1e-6018-4b98-8f87-ff6f8c2e130d",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C60",
+      "claim": "The potent inhibition of NMDAR currents by TAT-NR2BCT at a concentration up to 100 times lower than that used previously suggests a simple explanation for its neuroprotective effects independent of Dapk1.",
+      "claim_type": "EXPLICIT",
+      "source": "The potent inhibition of NMDAR currents by TAT-NR2BCT at a concentration up to 100 times lower than that used previously (Tu et al., 2010) suggests a simple explanation for its neuroprotective effects independent of Dapk1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing TAT-NR2BCT's NMDAR antagonism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "8cbf8a60-1340-4907-8ab1-84c4a82b0aa5",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C61",
+      "claim": "The basis for CTD2B-mediated excitotoxicity remains incompletely understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis for CTD2B-mediated excitotoxicity (Martel et al., 2012) remains incompletely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "b113a507-cf3e-4e9b-949b-c63e6589f523",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C62",
+      "claim": "Exchanging the CTD of GluN2B with that of GluN2A by targeted exon exchange reduces vulnerability to excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Exchanging the CTD of GluN2B with that of GluN2A by targeted exon exchange reduces vulnerability to excitotoxicity (Martel et al., 2012), without altering the proportion of NMDARs at synaptic vs. extrasynaptic sites, an important factor in excitotoxicity (Hardingham and Bading, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Martel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "f06800f0-3aff-4436-8222-62bdb64a28dd",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C63",
+      "claim": "Exchanging the CTD of GluN2B with that of GluN2A does not alter the proportion of NMDARs at synaptic vs. extrasynaptic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Exchanging the CTD of GluN2B with that of GluN2A by targeted exon exchange reduces vulnerability to excitotoxicity (Martel et al., 2012), without altering the proportion of NMDARs at synaptic vs. extrasynaptic sites, an important factor in excitotoxicity (Hardingham and Bading, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Martel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "81f4747f-209a-4f79-87e8-1d7cac446d89",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C64",
+      "claim": "The proportion of NMDARs at synaptic vs. extrasynaptic sites is an important factor in excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Exchanging the CTD of GluN2B with that of GluN2A by targeted exon exchange reduces vulnerability to excitotoxicity (Martel et al., 2012), without altering the proportion of NMDARs at synaptic vs. extrasynaptic sites, an important factor in excitotoxicity (Hardingham and Bading, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hardingham and Bading, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "7b308e95-c568-4ce1-9104-cbdb9b0a58b8",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C65",
+      "claim": "Performing the reciprocal swap (exchanging the CTD of GluN2A with that of GluN2B) increases vulnerability to excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, performing the reciprocal swap increases vulnerability (SM and GEH, unpublished observations), strongly supportive of a key role for CTD2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as unpublished data from the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "7232769e-1cf4-46ff-941d-5d362a64b41d",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C66",
+      "claim": "The reciprocal swap data is strongly supportive of a key role for CTD2B in excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, performing the reciprocal swap increases vulnerability (SM and GEH, unpublished observations), strongly supportive of a key role for CTD2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the unpublished experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "a98d8518-9fa2-4356-9701-da9d4190f9a9",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C67",
+      "claim": "The CTD of GluN2B is critically required for formation of 1.5 MDa NMDAR supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we recently showed that the CTD of GluN2B (as opposed to that of GluN2A) is critically required for formation of 1.5 MDa NMDAR supercomplexes (Frank et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to the authors' recent work (Frank et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "d36e0be4-4c51-4002-8638-60fc4efd72bb",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C68",
+      "claim": "Regions unique to GluN2B play a role in higher order signal complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, regions unique to GluN2B (of which the CaMKII site is one) play a role in higher order signal complex assembly and this may underlie the key role of CTD2B in downstream excitotoxicity (Martel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on NMDAR supercomplexes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "d283582a-74b2-45f6-947b-0bced2d8b262",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C69",
+      "claim": "The role of regions unique to GluN2B in higher order signal complex assembly may underlie the key role of CTD2B in downstream excitotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, regions unique to GluN2B (of which the CaMKII site is one) play a role in higher order signal complex assembly and this may underlie the key role of CTD2B in downstream excitotoxicity (Martel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "c0b3741d-88f8-4f43-9c6e-45ae884e98aa",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C70",
+      "claim": "Cortical mouse neurons were cultured at a density of between 9\u201313 \u00d7 10^4 neurons per cm^2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical mouse neurons were cultured as described (Bell et al., 2011a) at a density of between 9\u201313 \u00d7 104 neurons per cm2 (Lipton and Rosenberg, 1994) from E17.5 mice with Neurobasal growth medium supplemented with B27 (Invitrogen, Paisley, UK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "aa0172c4-3f37-4c3a-a9ed-f50379121857",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C71",
+      "claim": "Stimulations of cultured neurons were done after a culturing period of 9\u201311 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulations of cultured neurons were done in most cases after a culturing period of 9\u201311 days during which neurons develop a network of processes, express functional NMDA-type and AMPA/kainate-type glutamate receptors, and form synaptic contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "4fbf39c2-ddb9-43eb-a90f-96e13e387a11",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C72",
+      "claim": "During 9\u201311 days of culturing, neurons develop a network of processes, express functional NMDA-type and AMPA/kainate-type glutamate receptors, and form synaptic contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulations of cultured neurons were done in most cases after a culturing period of 9\u201311 days during which neurons develop a network of processes, express functional NMDA-type and AMPA/kainate-type glutamate receptors, and form synaptic contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about neuronal development in culture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "38a98523-0f60-463a-adf1-a3e2bdd92ebc",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C73",
+      "claim": "Adult mice exposed to a transient (20 min) period of global ischemia showed characteristic selective neuronal death within the hippocampus, particularly the CA1 and CA2 regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult mice exposed to a transient (20 min) period of global ischemia showed characteristic selective neuronal death within the hippocampus, particularly the CA1 and CA2 regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the in vivo ischemia experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "85afa017-69d0-411f-842c-74394164b45b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C74",
+      "claim": "GluN2B-driven excitotoxic signaling can proceed independently of Dapk1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GluN2B-driven excitotoxic signaling can proceed independently of Dapk1 or altered Ser-1303 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "89b4ba7f-dc2b-4a32-916f-8896cbe977c0",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C75",
+      "claim": "GluN2B-driven excitotoxic signaling can proceed independently of altered Ser-1303 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GluN2B-driven excitotoxic signaling can proceed independently of Dapk1 or altered Ser-1303 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "b955670f-dbc0-4b5d-a772-0363f1e56613",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C76",
+      "claim": "Excitotoxicity can proceed without increased Ser-1303 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this model, we find that excitotoxicity can proceed without increased Ser-1303 phosphorylation, and is unaffected by Dapk1 deficiency in vitro or following ischemia in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "c5f69c86-88d3-47b8-8881-19f217c3b769",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C77",
+      "claim": "Excitotoxicity is unaffected by Dapk1 deficiency in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this model, we find that excitotoxicity can proceed without increased Ser-1303 phosphorylation, and is unaffected by Dapk1 deficiency in vitro or following ischemia in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "ea9ba254-e377-42eb-b5d3-ca4d680f5cc0",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C78",
+      "claim": "Excitotoxicity is unaffected by Dapk1 deficiency following ischemia in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this model, we find that excitotoxicity can proceed without increased Ser-1303 phosphorylation, and is unaffected by Dapk1 deficiency in vitro or following ischemia in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "ee8e32d5-1d63-48df-b39d-0f5c2ce30447",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "claim_id": "C79",
+      "claim": "The neuroprotective peptide TAT-NR2BCT acts in a sequence-independent manner as an open-channel NMDAR antagonist at or near the Mg2+ site, due to its high net positive charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological analysis of the aforementioned neuroprotective peptide revealed that it acts in a sequence-independent manner as an open-channel NMDAR antagonist at or near the Mg2+ site, due to its high net positive charge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "09ca000a-7b07-492d-8c26-f307338e2e40",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about NMDAR-mediated excitotoxicity and NMDAR structure. These claims describe the role of NMDAR excitotoxicity in various neurological disorders and the composition of NMDARs in the forebrain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are well-supported by multiple citations to established literature. These represent accepted background knowledge in the field and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "1ad08971-fd47-4ff0-834c-b99be693f2b5",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GluN2 subunits have divergent C-terminal domains that differentially associate with signaling molecules, with GluN2B CTD potentiating excitotoxicity more strongly than GluN2A CTD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by citations to the authors' previous work (Martel et al., 2012; Ryan et al., 2008, 2013; Frank et al., 2016). This establishes the foundation for investigating the mechanism of CTD2B-mediated excitotoxicity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "b3388aa6-7840-4224-85f2-3520e9bf7d66",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript describes the prevailing model that Dapk1-mediated phosphorylation of GluN2B Ser-1303 is central to excitotoxicity, while noting that Dapk1 has not been detected in proteomic screens of NMDAR complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C17 accurately represent prior literature (Tu et al., 2010; Parsons and Raymond, 2014; Lai et al., 2014) and the authors' own proteomic findings. This establishes the rationale for re-examining the Dapk1 hypothesis, particularly given the absence of Dapk1 in proteomic screens (C16-C17).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "c3a7431a-79cf-4ece-a68e-3664437c1b48",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The phospho-Ser-1303 antibody was validated by demonstrating that it detects changes in phosphorylation in response to kinase/phosphatase inhibitors and fails to react with mutated GluN2B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by experimental data in Figure 1\u2014figure supplement 1a-d. The validation includes appropriate positive controls (phosphatase inhibitors increase signal) and negative controls (kinase inhibitor decreases signal; mutant protein shows no signal), establishing antibody specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "11542244-7e2b-4006-b2d8-5b31d875c64b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Excitotoxic insults (NMDA treatment and oxygen-glucose deprivation) do not induce Ser-1303 phosphorylation; instead, prolonged NMDA exposure causes dephosphorylation and degradation of GluN2B, consistent with calpain-mediated cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are supported by experimental data in Figures 1a-d and supplementary figures. The findings directly contradict prior reports (Tu et al., 2010) but are internally consistent across multiple timepoints and conditions (DIV10 and DIV16). The interpretation of calpain-mediated degradation (C25) is reasonable given the citations and the parallel decline in both phosphorylation and total GluN2B levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "09545fc5-fa98-426b-a8eb-f2a26b60209d",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A Dapk1-/- mouse line was obtained and validated, showing complete absence of Dapk1 protein while maintaining normal fertility, viability, and body weight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by appropriate documentation (Mouse Phenotype database) and experimental validation (Figure 1e showing absence of Dapk1 protein). The characterization is adequate for the study's purposes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "519595ae-699d-413e-9392-bb821b210d8d",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dapk1 deficiency does not affect basal or NMDA-induced GluN2B Ser-1303 phosphorylation levels in cortical neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by experimental data in Figure 1e-f with appropriate statistical analysis (two-way ANOVA). The conclusion (C34) logically follows from the data showing no genotype-dependent differences. This directly challenges the proposed role of Dapk1 in Ser-1303 phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "86ca4501-2c41-455d-8019-7c3e769e97b1",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dapk1 deficiency does not affect NMDAR-dependent excitotoxic neuronal death at DIV10 or DIV16, OGD-induced death, or NMDAR currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by experimental data in Figure 2a-d with appropriate statistical analyses. The experiments include multiple developmental timepoints and different excitotoxic paradigms. Sample sizes appear adequate (800-1000 cells per condition for death assays; n=16-25 cells for electrophysiology).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e5dbbabb-d4dc-431b-bf9a-2951ff654f8a",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dapk1-/- and wild-type mice show similar levels of hippocampal neuronal death following transient global ischemia in vivo, demonstrating that excitotoxic death can proceed normally without Dapk1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C73 are supported by experimental data in Figure 2e-h with appropriate statistical analysis. The in vivo model is well-established and the sample size (n=14-16 per genotype) appears adequate based on the authors' power calculation. The conclusion (C40) is justified by the convergence of in vitro and in vivo findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "cd8b63d1-b30a-43c4-a698-510a2588a2b8",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TAT-NR2BCT at 50 \u00b5M is toxic to neurons, but at 5 \u00b5M completely prevents NMDA-induced excitotoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by experimental data in Figure 3\u2014figure supplement 1a-b. The dose-response is clearly demonstrated, justifying the use of a lower concentration than previous studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "0efe0750-206c-4ae1-99f3-f2a43065cb96",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TAT-NR2BCT potently inhibits NMDAR currents at 5 \u00b5M, acting immediately without preincubation, with effects that are not readily reversible. A commercially available version shows similar antagonistic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by experimental data in Figure 3a-d and supplementary figures. The immediate effect without preincubation is particularly important as it contradicts the proposed mechanism requiring intracellular signaling. The lack of washout data (C45) is noted but does not undermine the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "b76a63fa-659c-4c0d-905e-b4cd5d58d05a",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A scrambled version of TAT-NR2BCT (TAT-sNR2BCT) is both neuroprotective and similarly antagonistic at NMDARs as the original peptide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by experimental data in Figure 3\u2014figure supplement 1b and Figure 3a-d. This is a critical control demonstrating that the peptide's effects are sequence-independent, contradicting the proposed specific mechanism involving the GluN2B CTD sequence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "a82f3248-e4ea-4ac0-8b83-98bc8c942536",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The net positive charge of TAT-NR2BCT is primarily responsible for its NMDAR-antagonistic properties, as demonstrated by comparing peptides with different charges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by experimental data in Figure 3a comparing an arginine-rich peptide (+15 charge) with a neutral peptide. The conclusion (C51) is well-supported by the data showing charge-dependent effects. This provides a mechanistic explanation for the sequence-independent antagonism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "468027cc-fe85-4167-b550-0d9c1943f99b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mg2+ reduces TAT-NR2BCT's antagonistic effectiveness, supporting the hypothesis that TAT-NR2BCT acts as an open channel blocker binding near the internal Mg2+ site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by experimental data in Figure 3e. Claim C55 is explicitly stated as a hypothesis, which is appropriate. The Mg2+ competition data provides strong support for a pore-blocking mechanism, though the hypothesis (C55) requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "1683b899-2820-4f50-90ef-e3574a38aef6",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TAT-NR2BCT is more effective at antagonizing NMDARs under open-channel conditions than closed-channel conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by experimental data in Figure 3f-h with appropriate statistical analysis. The experimental design is clever, using the slow off-rate to measure blockade in the absence of peptide. This provides strong evidence for use-dependent (open-channel) block.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "18acd3ec-669c-4a49-8bf4-7e6db3a3a21b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The unintended NMDAR antagonistic properties of TAT-NR2BCT, acting as an open-channel blocker due to its high positive charge, explain its neuroprotective effects independent of Dapk1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C60, and C79 represent the main conclusion regarding TAT-NR2BCT. These are well-supported by the convergence of multiple lines of evidence: sequence-independent effects (C47-C48), charge-dependent antagonism (C49-C51), Mg2+ competition (C52), and use-dependent block (C53). The conclusion that neuroprotection is independent of Dapk1 is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "c4893cbf-2510-4c36-8722-cb2bfa566180",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The current study challenges the prevailing model that Dapk1-mediated GluN2B Ser-1303 phosphorylation is central to excitotoxicity, demonstrating that excitotoxic signaling can proceed independently of Dapk1 or altered Ser-1303 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C74-C78 represent the study's main conclusions. These are well-supported by multiple converging lines of evidence: lack of Ser-1303 phosphorylation increase during excitotoxicity (C22-C27), no effect of Dapk1 deficiency on phosphorylation (C32-C34), no effect on excitotoxicity in vitro (C35-C38) or in vivo (C39-C40), and the alternative explanation for TAT-NR2BCT effects (C54, C60, C79). The conclusions are appropriately stated as challenging rather than definitively disproving the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "e8bf515f-6154-4286-8780-e337a6903861",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The Dapk1-/- mouse used in this study was generated independently but should behave similarly to the previously reported line given the identical genetic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are factual statements about the mouse lines. The reasoning in C59 is sound based on genetic principles, though the authors acknowledge the discrepancy with prior results remains unexplained. This is an honest assessment of a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "8bd07814-7d4b-437e-830e-b90723e0c1bd",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "While the mechanism of CTD2B-mediated excitotoxicity remains incompletely understood, CTD swapping experiments support a key role for CTD2B that is independent of synaptic/extrasynaptic localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 are supported by citations to prior work (Martel et al., 2012; Hardingham and Bading, 2010) and unpublished observations (C65). While the unpublished data (C65-C66) cannot be fully evaluated, the cited work provides adequate support for the main points. This contextualizes the study's findings within ongoing research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "54d0e645-6765-4cde-8f52-bab0a5412bd5",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The CTD of GluN2B is required for formation of 1.5 MDa NMDAR supercomplexes, and regions unique to GluN2B may play a role in higher order signal complex assembly that could underlie CTD2B's role in excitotoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by citation to the authors' recent work (Frank et al., 2016). Claims C68-C69 are appropriately presented as speculative hypotheses (using \"may\") for future investigation. This provides a plausible alternative mechanism for CTD2B-mediated excitotoxicity that does not depend on Dapk1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    },
+    {
+      "id": "51a5eaed-b9f7-46d2-8aad-5022ac1f0b4b",
+      "content_id": "ffb5fbf6-fade-42b7-bfda-891344a8ca64",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Methodological details of neuronal culture are provided, including density, timing, and developmental characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are straightforward methodological descriptions. These are adequately documented and cite appropriate references. The details are sufficient for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:09:07.054503Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d2e72ee-01e5-4e9f-94cb-c8712c5709b6",
+      "result_id": "09ca000a-7b07-492d-8c26-f307338e2e40"
+    },
+    {
+      "claim_id": "06c0b610-f26a-4094-b21e-3c58ed685a6b",
+      "result_id": "09ca000a-7b07-492d-8c26-f307338e2e40"
+    },
+    {
+      "claim_id": "3fb7db91-0d5f-4816-91d4-469351c72751",
+      "result_id": "09ca000a-7b07-492d-8c26-f307338e2e40"
+    },
+    {
+      "claim_id": "e6a7d078-6d6e-474d-89d9-007bd29aa90a",
+      "result_id": "09ca000a-7b07-492d-8c26-f307338e2e40"
+    },
+    {
+      "claim_id": "d3e246d9-6c55-4b6c-9e1f-e82cb5708211",
+      "result_id": "09ca000a-7b07-492d-8c26-f307338e2e40"
+    },
+    {
+      "claim_id": "b9986555-1431-4480-a461-d3d5612e29e2",
+      "result_id": "1ad08971-fd47-4ff0-834c-b99be693f2b5"
+    },
+    {
+      "claim_id": "0da297a5-6250-49cf-97fe-7025cc17bd43",
+      "result_id": "1ad08971-fd47-4ff0-834c-b99be693f2b5"
+    },
+    {
+      "claim_id": "e3593536-3e54-4040-8f3b-80d03bac62e3",
+      "result_id": "1ad08971-fd47-4ff0-834c-b99be693f2b5"
+    },
+    {
+      "claim_id": "77f41dd0-2a0f-40aa-b939-949a3bd50c91",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "9c6092e6-b407-4452-9236-e95eb89c9622",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "410a5c98-22ea-4b69-ad92-216310f8a4a4",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "369158f0-9ea0-40e3-9ff9-018c8de8a3b1",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "8bee3c62-5467-425b-a54d-939d27492df1",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "d1956501-7bd7-4a3b-9c18-9bb990299869",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "8d0054d4-dbf6-49b5-afbc-aad67b2f6445",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "42cf17bc-5a21-480c-92f2-524d3ca8ea90",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "7b595efd-35ea-4e17-a689-b5d305eaba2e",
+      "result_id": "b3388aa6-7840-4224-85f2-3520e9bf7d66"
+    },
+    {
+      "claim_id": "cc6c50eb-3cc6-402d-ae43-95721d33451e",
+      "result_id": "c3a7431a-79cf-4ece-a68e-3664437c1b48"
+    },
+    {
+      "claim_id": "5cfa2f31-3ae9-4734-9dbd-0c12a67b2b61",
+      "result_id": "c3a7431a-79cf-4ece-a68e-3664437c1b48"
+    },
+    {
+      "claim_id": "04c6b122-e29a-458e-ad6c-106e1c291772",
+      "result_id": "c3a7431a-79cf-4ece-a68e-3664437c1b48"
+    },
+    {
+      "claim_id": "33190578-4f67-4e42-9586-a9075e27f4cc",
+      "result_id": "c3a7431a-79cf-4ece-a68e-3664437c1b48"
+    },
+    {
+      "claim_id": "0699516f-47d4-40d2-bf48-cd7b32bf206b",
+      "result_id": "11542244-7e2b-4006-b2d8-5b31d875c64b"
+    },
+    {
+      "claim_id": "df1efdb0-4bf2-4621-87f8-4dcd2a73f40c",
+      "result_id": "11542244-7e2b-4006-b2d8-5b31d875c64b"
+    },
+    {
+      "claim_id": "3bdbabd2-5182-433e-a5a5-a3dabdbac53a",
+      "result_id": "11542244-7e2b-4006-b2d8-5b31d875c64b"
+    },
+    {
+      "claim_id": "ef9ea9cf-019e-4e2b-abdc-0a4d96806f5e",
+      "result_id": "11542244-7e2b-4006-b2d8-5b31d875c64b"
+    },
+    {
+      "claim_id": "6871c614-db0b-4578-8d91-e2009baf4ab9",
+      "result_id": "11542244-7e2b-4006-b2d8-5b31d875c64b"
+    },
+    {
+      "claim_id": "e925f99c-5c16-443d-b09d-2d2dfdb4e366",
+      "result_id": "11542244-7e2b-4006-b2d8-5b31d875c64b"
+    },
+    {
+      "claim_id": "b71673f2-5575-464e-b5a1-f195412865ce",
+      "result_id": "09545fc5-fa98-426b-a8eb-f2a26b60209d"
+    },
+    {
+      "claim_id": "a1a3bed8-57bc-447d-bd68-4920220258c8",
+      "result_id": "09545fc5-fa98-426b-a8eb-f2a26b60209d"
+    },
+    {
+      "claim_id": "df0e23b0-a8c6-4fdb-a6ca-050853b21b97",
+      "result_id": "09545fc5-fa98-426b-a8eb-f2a26b60209d"
+    },
+    {
+      "claim_id": "7a2c4469-e4c2-4177-8c05-898a9b97eab0",
+      "result_id": "09545fc5-fa98-426b-a8eb-f2a26b60209d"
+    },
+    {
+      "claim_id": "e36b8c8c-292c-4a20-8937-24fe138ab49b",
+      "result_id": "519595ae-699d-413e-9392-bb821b210d8d"
+    },
+    {
+      "claim_id": "c5fa27ea-f519-4aa3-968e-458e000bd2e4",
+      "result_id": "519595ae-699d-413e-9392-bb821b210d8d"
+    },
+    {
+      "claim_id": "095e4270-75fc-492e-b5da-9debb9b4b16a",
+      "result_id": "519595ae-699d-413e-9392-bb821b210d8d"
+    },
+    {
+      "claim_id": "2d98cef0-966c-428e-bc78-075d93df103a",
+      "result_id": "86ca4501-2c41-455d-8019-7c3e769e97b1"
+    },
+    {
+      "claim_id": "63684eeb-088c-4583-ba19-76270c562717",
+      "result_id": "86ca4501-2c41-455d-8019-7c3e769e97b1"
+    },
+    {
+      "claim_id": "961f2735-574e-41e9-ad2e-8e90be74996d",
+      "result_id": "86ca4501-2c41-455d-8019-7c3e769e97b1"
+    },
+    {
+      "claim_id": "06dce1ae-2968-4183-bc89-4d294d7c80de",
+      "result_id": "86ca4501-2c41-455d-8019-7c3e769e97b1"
+    },
+    {
+      "claim_id": "f179592f-5c3f-4f07-ab77-425abfc3924a",
+      "result_id": "e5dbbabb-d4dc-431b-bf9a-2951ff654f8a"
+    },
+    {
+      "claim_id": "86e997eb-103c-49a2-8b08-68ebd3207efa",
+      "result_id": "e5dbbabb-d4dc-431b-bf9a-2951ff654f8a"
+    },
+    {
+      "claim_id": "38a98523-0f60-463a-adf1-a3e2bdd92ebc",
+      "result_id": "e5dbbabb-d4dc-431b-bf9a-2951ff654f8a"
+    },
+    {
+      "claim_id": "ef34fda9-d25a-4dec-b21b-05fed85b04a7",
+      "result_id": "cd8b63d1-b30a-43c4-a698-510a2588a2b8"
+    },
+    {
+      "claim_id": "7e91a07e-af09-454a-98b6-6cf72509e534",
+      "result_id": "cd8b63d1-b30a-43c4-a698-510a2588a2b8"
+    },
+    {
+      "claim_id": "62c49690-9774-46f1-9dfc-44ed189a0ebf",
+      "result_id": "0efe0750-206c-4ae1-99f3-f2a43065cb96"
+    },
+    {
+      "claim_id": "7ef6cd5f-197c-4cda-9420-0c0dea1b7241",
+      "result_id": "0efe0750-206c-4ae1-99f3-f2a43065cb96"
+    },
+    {
+      "claim_id": "b4ace7a7-0cb2-441f-aab2-1a2de88d77d5",
+      "result_id": "0efe0750-206c-4ae1-99f3-f2a43065cb96"
+    },
+    {
+      "claim_id": "dcc9aa96-97fd-46f2-8c2f-b0f8e48bb0ee",
+      "result_id": "0efe0750-206c-4ae1-99f3-f2a43065cb96"
+    },
+    {
+      "claim_id": "fc5313da-ac3c-47f6-94d5-3edd957cd82e",
+      "result_id": "b76a63fa-659c-4c0d-905e-b4cd5d58d05a"
+    },
+    {
+      "claim_id": "48e2d517-7c5d-45f3-81bb-b723374e1813",
+      "result_id": "b76a63fa-659c-4c0d-905e-b4cd5d58d05a"
+    },
+    {
+      "claim_id": "36e23933-6272-4201-93c6-f178be550b4e",
+      "result_id": "a82f3248-e4ea-4ac0-8b83-98bc8c942536"
+    },
+    {
+      "claim_id": "6761113a-1a83-46cc-84fb-5b491aa8bca9",
+      "result_id": "a82f3248-e4ea-4ac0-8b83-98bc8c942536"
+    },
+    {
+      "claim_id": "12a2b8d8-d9c9-4744-9492-68a5e9b1e149",
+      "result_id": "a82f3248-e4ea-4ac0-8b83-98bc8c942536"
+    },
+    {
+      "claim_id": "c7923bcb-74ed-410c-b0fd-1e1b700ee6f1",
+      "result_id": "468027cc-fe85-4167-b550-0d9c1943f99b"
+    },
+    {
+      "claim_id": "45f7f0f4-b43a-46a9-9cad-6215868dce6d",
+      "result_id": "468027cc-fe85-4167-b550-0d9c1943f99b"
+    },
+    {
+      "claim_id": "e9be284c-7681-4dd7-93f0-b5f501d099e1",
+      "result_id": "1683b899-2820-4f50-90ef-e3574a38aef6"
+    },
+    {
+      "claim_id": "32874e57-d30e-40bf-84df-839ae0cc292b",
+      "result_id": "18acd3ec-669c-4a49-8bf4-7e6db3a3a21b"
+    },
+    {
+      "claim_id": "77610d1e-6018-4b98-8f87-ff6f8c2e130d",
+      "result_id": "18acd3ec-669c-4a49-8bf4-7e6db3a3a21b"
+    },
+    {
+      "claim_id": "ee8e32d5-1d63-48df-b39d-0f5c2ce30447",
+      "result_id": "18acd3ec-669c-4a49-8bf4-7e6db3a3a21b"
+    },
+    {
+      "claim_id": "e703fda5-213b-416e-bdf6-9a37f6799845",
+      "result_id": "c4893cbf-2510-4c36-8722-cb2bfa566180"
+    },
+    {
+      "claim_id": "0d57afc2-63ee-4ef3-be61-36c87502560b",
+      "result_id": "c4893cbf-2510-4c36-8722-cb2bfa566180"
+    },
+    {
+      "claim_id": "85afa017-69d0-411f-842c-74394164b45b",
+      "result_id": "c4893cbf-2510-4c36-8722-cb2bfa566180"
+    },
+    {
+      "claim_id": "89b4ba7f-dc2b-4a32-916f-8896cbe977c0",
+      "result_id": "c4893cbf-2510-4c36-8722-cb2bfa566180"
+    },
+    {
+      "claim_id": "b955670f-dbc0-4b5d-a772-0363f1e56613",
+      "result_id": "c4893cbf-2510-4c36-8722-cb2bfa566180"
+    },
+    {
+      "claim_id": "c5f69c86-88d3-47b8-8881-19f217c3b769",
+      "result_id": "c4893cbf-2510-4c36-8722-cb2bfa566180"
+    },
+    {
+      "claim_id": "ea9ba254-e377-42eb-b5d3-ca4d680f5cc0",
+      "result_id": "c4893cbf-2510-4c36-8722-cb2bfa566180"
+    },
+    {
+      "claim_id": "59e85973-ca1b-4bbd-9ae1-a515f9f42465",
+      "result_id": "e8bf515f-6154-4286-8780-e337a6903861"
+    },
+    {
+      "claim_id": "57330a29-5fda-4813-a86f-23dbc66cf361",
+      "result_id": "e8bf515f-6154-4286-8780-e337a6903861"
+    },
+    {
+      "claim_id": "8cbf8a60-1340-4907-8ab1-84c4a82b0aa5",
+      "result_id": "8bd07814-7d4b-437e-830e-b90723e0c1bd"
+    },
+    {
+      "claim_id": "b113a507-cf3e-4e9b-949b-c63e6589f523",
+      "result_id": "8bd07814-7d4b-437e-830e-b90723e0c1bd"
+    },
+    {
+      "claim_id": "f06800f0-3aff-4436-8222-62bdb64a28dd",
+      "result_id": "8bd07814-7d4b-437e-830e-b90723e0c1bd"
+    },
+    {
+      "claim_id": "81f4747f-209a-4f79-87e8-1d7cac446d89",
+      "result_id": "8bd07814-7d4b-437e-830e-b90723e0c1bd"
+    },
+    {
+      "claim_id": "7b308e95-c568-4ce1-9104-cbdb9b0a58b8",
+      "result_id": "8bd07814-7d4b-437e-830e-b90723e0c1bd"
+    },
+    {
+      "claim_id": "7232769e-1cf4-46ff-941d-5d362a64b41d",
+      "result_id": "8bd07814-7d4b-437e-830e-b90723e0c1bd"
+    },
+    {
+      "claim_id": "a98d8518-9fa2-4356-9701-da9d4190f9a9",
+      "result_id": "54d0e645-6765-4cde-8f52-bab0a5412bd5"
+    },
+    {
+      "claim_id": "d36e0be4-4c51-4002-8638-60fc4efd72bb",
+      "result_id": "54d0e645-6765-4cde-8f52-bab0a5412bd5"
+    },
+    {
+      "claim_id": "d283582a-74b2-45f6-947b-0bced2d8b262",
+      "result_id": "54d0e645-6765-4cde-8f52-bab0a5412bd5"
+    },
+    {
+      "claim_id": "c0b3741d-88f8-4f43-9c6e-45ae884e98aa",
+      "result_id": "51a5eaed-b9f7-46d2-8aad-5022ac1f0b4b"
+    },
+    {
+      "claim_id": "aa0172c4-3f37-4c3a-a9ed-f50379121857",
+      "result_id": "51a5eaed-b9f7-46d2-8aad-5022ac1f0b4b"
+    },
+    {
+      "claim_id": "4fbf39c2-ddb9-43eb-a90f-96e13e387a11",
+      "result_id": "51a5eaed-b9f7-46d2-8aad-5022ac1f0b4b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1765 @@
+{
+  "submission": {
+    "id": "4461d6d3-d758-4f67-b333-01ce015506a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:47:03.684539Z",
+    "updated_at": "2025-12-02T00:47:03.684539Z"
+  },
+  "content": [
+    {
+      "id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "submission_id": "4461d6d3-d758-4f67-b333-01ce015506a9",
+      "content_type": "manuscript",
+      "content_text": "# Covalent linkage of the DNA repair template to the CRISPR-Cas9 nuclease enhances homology-directed repair\n\n## Authors\n\n- Natasa Savic<sup>1</sup> ([ORCID: 0000-0003-3110-5780](https://orcid.org/0000-0003-3110-5780))\n- Femke CAS Ringnalda<sup>1</sup> ([ORCID: 0000-0002-0684-4613](https://orcid.org/0000-0002-0684-4613))\n- Helen Lindsay<sup>2</sup>\n- Christian Berk<sup>4</sup>\n- Katja Bargsten<sup>5</sup>\n- Yizhou Li<sup>4</sup>\n- Dario Neri<sup>4</sup>\n- Mark D Robinson<sup>2</sup>\n- Constance Ciaudo<sup>1</sup> ([ORCID: 0000-0002-0857-4506](https://orcid.org/0000-0002-0857-4506))\n- Jonathan Hall<sup>4</sup> ([ORCID: 0000-0003-4160-7135](https://orcid.org/0000-0003-4160-7135))\n- Martin Jinek<sup>5</sup> ([ORCID: 0000-0002-7601-210X](https://orcid.org/0000-0002-7601-210X))\n- Gerald Schwank<sup>1</sup> ([ORCID: 0000-0003-0767-2953](https://orcid.org/0000-0003-0767-2953)) \u2020\n\n### Affiliations\n\n1. The Institute of Molecular Health Sciences, ETH Zurich Zurich Switzerland\n2. The Institute of Molecular Life Sciences, University of Zurich Zurich Switzerland\n3. SIB Swiss Institute of Bioinformatics Zurich Switzerland\n4. Institute for Pharmaceutical Sciences, ETH Zurich Zurich Switzerland\n5. Department of Biochemistry, University of Zurich Zurich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe CRISPR-Cas9 targeted nuclease technology allows the insertion of genetic modifications with single base-pair precision. The preference of mammalian cells to repair Cas9-induced DNA double-strand breaks via error-prone end-joining pathways rather than via homology-directed repair mechanisms, however, leads to relatively low rates of precise editing from donor DNA. Here we show that spatial and temporal co-localization of the donor template and Cas9 via covalent linkage increases the correction rates up to 24-fold, and demonstrate that the effect is mainly caused by an increase of donor template concentration in the nucleus. Enhanced correction rates were observed in multiple cell types and on different genomic loci, suggesting that covalently linking the donor template to the Cas9 complex provides advantages for clinical applications where high-fidelity repair is desired.\n\n## Introduction\n\nThe CRISPR-Cas9 system is a versatile genome-editing tool that enables the introduction of site-specific genetic modifications (Jinek et al., 2012). In its most widespread variant a programmable chimeric single guide RNA (sgRNA) directs the Cas9 nuclease to the genomic region of interest, where it generates a site-specific DNA double-strand break (DSB) (Mali et al., 2013). In mammalian cells the repair of DSBs by different end-joining (EJ) pathways, such as classical non-homologous end joining (c-NHEJ), alternative non-homologous end-joining (a-NHEJ), or single-strand annealing (SSA) often leads to the formation of insertions or deletions (indels) (Shalem et al., 2014; Ceccaldi et al., 2016). Alternatively, when a donor template is provided, mammalian cells can also resolve DSBs via homology-directed repair (HDR) mechanisms, such as the classical homologous recombination (HR) pathway (Mao et al., 2008) and the Fanconi Anemia (FA) repair pathway (Richardson, 2017). While the formation of indels allows the elimination of gene function, repair from an ectopic donor oliogonucleotide (oligo) via HDR mechanisms enables the introduction of DNA modifications with single base pair precision (van den Bosch et al., 2002).\n\nTherapeutic applications of CRISPR-Cas9 generally require the precise correction of pathogenic mutations using donor templates. However, DSBs introduced in mammalian cells are predominantly repaired by error-prone EJ pathways. As the resulting indels inhibit the CRISPR-Cas9 complex from retargeting the locus, error-prone repair indirectly competes with HDR, and therefore reduces the rates of precise correction from donor templates. Furthermore, if the targeted allele is a hypomorph with residual gene function, the generated indels can further worsen the clinical phenotype of the disease (Chu et al., 2015). In recent years, several attempts have therefore been made to enhance HDR-mediated correction of CRISPR-Cas9-induced DSBs from donor oligos. Based on the knowledge that HDR pathways are primarily active during the S/G2 phase of the cell cycle, cells have been synchronized prior to CRISPR-Cas9 delivery (Lin et al., 2014a), and Cas9 expression has been limited to the S/G2/M phase of the cell cycle (Gutschner et al., 2016; Howden et al., 2016). Other studies have increased HDR by chemically modulating the EJ and HDR pathways (Chu et al., 2015; Maruyama et al., 2015; Yu et al., 2015; Song et al., 2016), and by rationally designing DNA repair templates with optimal homology arm lengths (Richardson et al., 2016). In addition, it has been proposed that the availability of the DNA repair template might present a rate-limiting factor for HDR, and that enhancing the local concentration of donor oligos could increase the correction rates (Ruff et al., 2014; Carlson-Stevermer et al., 2017). Based on this hypothesis, we here generated and tested novel CRISPR-Cas9 variants, in which the DNA repair template is covalently conjugated to Cas9 (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig1-v5.jpg)\n\n**Figure 1.:** O6-benzylguanine (BG)-labeled DNA oligos are covalently linked to Cas9-SNAP fusion proteins. The DNA-Cas9 molecules are then complexed with the specific sgRNAs to form the functional ribonucleoprotein-DNA (RNPD) complexes.\n\n## Results and discussion\n\nTo be able to measure HDR efficiencies of novel CRISPR-Cas9 variants in a rapid and high-throughput manner, we first generated a fluorescent reporter system (Figure 2a\u2013b). In brief, the reporter cassette was stably integrated in HEK293T cells, and expresses a green fluorescent protein (GFP) that is preceded by an inactive mutant\u00a0version of a red fluorescent protein (mutRFP). While precise correction of the mutation via HDR from donor templates leads to re-activation of RFP activity, the generation of frame shifts via error-prone EJ pathways leads to loss of GFP activity (Figure 2a\u2013b). The correction and indel formation events can be visualized by fluorescence imaging and quantified by FACS (Figure 2c\u2013d). To test the functionality of the reporter system, and to determine the optimal length of DNA repair templates, we first transfected Cas9-sgRNA ribonucleoprotein (RNP) complexes and single stranded (ss) oligo repair templates of different lengths (Figure 3\u2014figure supplement 1a). In line with previous studies (Zuo et al., 2017), we found that maximal DSB correction rates are reached with ss-donor oligos of approximately 80 bases. We therefore continued our study with 81-nucleotide (81-mers) ss-donor oligos but also included 65-nucleotide (65-mers)\u00a0oligos, as we reasoned that if repair templates are brought in proximity to DSBs also shorter homology arms could be sufficient for HDR.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig2-v5.jpg)\n\n**Figure 2.:** (a) Schematic overview of the HEK293T fluorescent reporter system. The RFP fluorophore carries a c.190_191delinsCT mutation that substitutes two nucleotides TA at the positions 190 and 191 in the RFP sequence to CT. This leads to the inactivation the RFP fluorophore by the substitution of tyrosine at the position 63 with leucine (p.Y63L). Repair of the mutation via donor oligos generates RFP/GFP double positive cells; indel mutations generate RFP/GFP double negative cells if they induce a frame shift. Of note, analysis of the reporter locus by next generation sequencing (NGS) demonstrated that 20 percent of indels did not lead to a frame shift (Supplementary file 4). Nevertheless, although FACS analysis thereby underestimates the absolute number of edited cells, it allows to accurately compare the correction efficiencies of different Cas9 systems. \u2018X\u2019 labels the mutation in RFP. 2A stands for 2A \u2018self-cleaving\u2019 peptide (Kim et al., 2011). (b) Schematic overview of the Streptococcus pyogenes sgRNA targeting mutRFP fluorophore and the corresponding PAM site. Black arrow indicates the introduced DSB site. The two nucleotides in the sgRNA seed sequence as well as the amino acid in the fluorophore region that are changed upon of precise repair (CT\u00a0>TA and L\u00a0>\u00a0Y) are shown in orange. (c) Correction and indel rates can be quantified by FACS. The panels show FACS plots for gating GFP negative cells (upper panel) and the RFP positive cells (lower panel). (d) Representative confocal microscopy images. Scale bar: 50 \u00b5m, magnification 20x. Live cell nuclei were stained with Hoechst 33342. The efficiency of the sgRNA (sgRNASpCas9(mutRFP)) is shown in Figure 3\u2014figure supplement 1b.\n\nIn order to link the donor oligos to the Cas9 protein, we used the SNAP-tag technology, which allows covalent binding of O6-benzylguanine (BG)-labeled molecules to SNAP-tag fusion proteins (Keppler et al., 2003). To generate O6-benzylguanine (BG)-linked DNA repair templates, we first coupled amine-modified oligos to commercially available amine-reactive BG building blocks (Figure 3a, Figure 3\u2014figure supplement 1c). The BG-linked oligos were further separated from unreacted oligos by HPLC (Figure 3b) and analyzed by liquid chromatography-mass spectrometry (LC-MS) to confirm their purity (Figure 3\u2014figure supplement 1d). Next, we produced recombinant Cas9 proteins with a SNAP-tag fused to the C-terminus (Figure 3c,d). The fusion proteins were then complexed with the BG-coupled oligos, and covalent binding was confirmed by SDS-PAGE (Figure 3e\u2013h). The protein-oligo conjugate was mixed with in vitro transcribed sgRNAs targeting the mutRFP locus (Figure 3\u2014figure supplement 1g,h), finally generating the Cas9 ribonucleoprotein-DNA (RNPD) complex.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig3-v5.jpg)\n\n**Figure 3.:** (a) Band shift of the 81-mer amino-modified oligo after coupling to BG-GLA-NHS shown on a denaturing PAGE gel. Amino modified oligos were mixed with amine-reactive BG building blocks and the samples were taken prior to the reaction (uncoupled) and after the reaction (coupled). No BG coupling: no amine-reactive BG building block was added to the amino modified oligos. (b) LC-MS analysis of HPLC-purified BG-coupled and uncoupled DNA repair templates. (c,d) Coomassie Blue stained SDS-PAGE gels of the purified SpCas9-SNAP and the SadCas9-SNAP fusion proteins (functionality of the SNAP-tags is shown in Figure 3\u2014figure supplement 1e,f). (e-h) Silver stained SDS-PAGE gels. Band shifts confirm covalent linkage of Cas9-SNAP proteins to BG-coupled 81-mers. Lower arrowheads: unbound Cas9-SNAP. Upper arrowheads: Cas9-SNAP covalently bound to oligos.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig3-figsupp1-v5.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Quantification of HDR rates with DNA repair templates of different lengths by FACS. (b) Quantification of sgRNASpCas9(mutRFP) editing efficiency in the reporter cell line by FACS. (c) SYBR-Gold stained denaturing PAGE gel. Proportion of shifted 81-mer amino-modified oligos after the coupling reaction with different concentrations of BG-GLA-NHS building blocks. (d) Negative ion ESI mass spectra of HPLC purified BG-coupled (top panel) and uncoupled (bottom panel) oligos shown in Figure 3b. (e,f) SDS-PAGE gels of SpCas9-SNAP (e) and the SadCas9-SNAP (f) proteins labeled with BG-Vista Green (upper panels). Subsequently gels were silver stained for protein detection (lower panels). (g,h) Denaturing RNA gels (2% MOPS) with in vitro transcribed sgRNAs. (g) sgRNA used to create the DSB in the mutRFP locus (sgRNASpCas9(mutRFP)). (h) sgRNAs used to bind catalytically inactive SadCas9 to regions upstream (sgRNASadCas9(mutRFP)\u22121 and sgRNASadCas9(mutRFP)\u22122) and downstream (sgRNASadCas9(mutRFP)\u22123 and sgRNASadCas9(mutRFP)\u22124) of the mutRFP locus. Box and whiskers plot: min to max (**p<0.0021, *p<0.0332 with n\u00a0=\u00a07; n represents the number of biological replicates). Numerical data and the exact p values for all graphs are shown in the Figure 3\u2014source data 1.\n\nTo test if linking the donor oligo to Cas9 changes the ratio between indel formation and correction from the repair template, we used our reporter system to compare Streptococcus pyogenes Cas9 (SpCas9) complexes with linked repair oligos (Figure 4b) to the control SpCas9 complexes with unlinked repair oligos (SpCas9-SNAP with unlabeled oligos). Notably, the correction efficiency (percentage of corrections in edited cells) with bound\u00a0complexes was significantly enhanced, from 2.1% to 22.5% with the 65-mers and from\u00a08.9% to 25.7% with the 81-mers (Figure 4a, Figure 4\u2014figure supplement 1a,b). In comparison to unbound\u00a0complexes this represented 11- and 3-fold increases, respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig4-v5.jpg)\n\n**Figure 4.:** (a) Comparison between the control Cas9 system (RNP unco.: SpCas9-SNAP plus unlabeled donor oligo) and our novel system (RNPD coup.: SpCas9-SNAP conjugated to BG-labeled donor oligo). Cells were analyzed 5 days after transfection by FACS. Results are presented as correction efficiency (percentage of correction in edited cells). (b) Illustration of our novel Cas9 system, in which the repair template is covalently bound\u00a0to SpCas9-SNAP (RNPD coup.). (c) Schematic overview of the binding positions of different SadCas9 sgRNAs (sgRNAsSadCas9(mutRFP)-1-4) in comparison to the SpCas9 sgRNA targeting the mutRFP fluorophore (sgRNAsSpCas9(mutRFP)). (d) Illustration of the two-component system, where the repair template is linked to the catalytically inactive SadCas9-SNAP (RNP-RNPD coup.). (e) Comparison between the two-component system (RNP-RNPD coup.: SpCas9-SNAP\u00a0+\u00a0SadCas9-SNAP\u00a0bound to BG-labeled donor oligo) and the corresponding control Cas9 system (RNP-RNP unco.: SpCas9-SNAP\u00a0+\u00a0SadCas9-SNAP\u00a0+\u00a0unlabeled repair oligo). (f) Transfection of the one component system (grey and pink panels) and two component system (black/grey and black/pink panels) into reporter cells at a 5-time lower concentrations. In the two component system sgRNASadCas9(mutRFP)-3 was used. (g) Comparison of two component systems with and without the sgRNA for the SadCas9 complex. RNP unco. (SpCas9-SNAP\u00a0+\u00a0uncoupled oligo + sgRNASpCas9(mutRFP)); RNPD coup. (SpCas9-SNAP-coupled BG-oligo + sgRNASpCas9(mutRFP)); RNP-RNP unco. (SpCas9-SNAP + sgRNASpCas9(mutRFP)\u00a0+\u00a0SadCas9-SNAP\u00a0+\u00a0uncoupled oligo + sgRNASadCas9(mutRFP)); RNP-RNPD coup. (SpCas9-SNAP + sgRNASpCas9(mutRFP)\u00a0+\u00a0SadCas9-SNAP-coupled BG-oligo + sgRNASadCas9(mutRFP)). All values are shown as mean\u00a0\u00b1s.e.m of biological replicates; *p<0.0332 with n\u00a0=\u00a03 (f) and n\u00a0=\u00a04 (a,e,g) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Numerical data and the exact p values for all graphs are shown in the Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig4-figsupp1-v5.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013f) Quantification of reporter cells by FACS analysis 5 days after transfection. The absolute percentages of (a,c,e) precisely corrected cells (RFP/GFP double positive cells), and (b,d,f) all edited cells (RFP/GFP double positive cells plus RFP/GFP double negative cells). (a,b) Comparison of RNP uncoupled and RNPD coupled CRISPR complexes. (c,d,e,f) Comparison of RNP uncoupled, RNPD coupled, RNP-RNPD uncoupled and RNP-RNPD coupled CRISPR complexes. (e,f) Complexes were transfected at 5-fold lower concentrations. All values are shown as mean\u00a0\u00b1s.e.m of biological replicates. A one-tailed Mann-Whitney test was used for comparisons. Numerical data and the exact p values for all graphs are shown in the Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig4-figsupp2-v5.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a\u2013e) Quantification of reporter cells by FACS analysis 5 days after transfection. The absolute percentages of precisely corrected cells (RFP/GFP double positive cells) (a,d), all edited cells (RFP/GFP double positive cells plus RFP/GFP double negative cells) (b,e) and the correction efficiency (the percentage of precisely corrected of edited cells) are shown (c). (a\u2013c) Comparison of SpCas9 WT and SpCas9-SNAP systems without an oligo and with either unco. or BG-coup. 65-mer oligos. (d,e) Comparison of two component systems with and without the sgRNA for the SadCas9 complex. All values are shown as mean\u00a0\u00b1s.e.m of biological replicates. (c) *p<0.0332 with n\u00a0=\u00a04 (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Numerical data and the exact p values for all graphs are shown in the Figure 4\u2014source data 3.\n\nTo further test our hypothesis that spatial and temporal co-localization of repair templates and Cas9 enhances correction rates, we next developed an independent approach where the donor oligo is not bound to the Cas9 complex that induces the DSB, but to a second catalytically inactive Cas9 complex that binds in close proximity to the DSB\u00a0(RNP-RNPD\u00a0system). To avoid the interchange of sgRNAs between both complexes, we designed a two-component system in which the DSB is induced by SpCas9, and the repair template is linked to a catalytically inactive Staphylococcus aureus (Sa)dCas9 (Figure 4c,d). We co-transfected both complexes into the reporter cell line, and quantified correction and indel formation rates. Notably, the correction efficiency increased from 4.1% to 29.9% with 65-mers, and from 11.6% to 32.3% with 81-mers (Figure 4e, Figure 4\u2014figure supplement 1c,d), confirming our previous results with the RNPD system.\n\nIn vivo, the delivery efficiency of RNPs and oligos is generally lower than in vitro. Thus, if the repair template is not bound to Cas9, there is a substantial probability that only one of the two components would be delivered into the cell. In addition, at lower transfection efficiencies fewer repair templates are present in the nucleus, potentially decreasing HDR rates. As we presumed that linking the donor oligo to Cas9 should largely alleviate these limitations, we investigated whether the repair efficiency with template-conjugated Cas9 is affected when complexes are transfected at 5-fold lower concentrations. Importantly, although under these conditions the correction efficiencies were generally lower with both coupled and uncoupled Cas9 complexes, the difference between the two systems was however even more pronounced. Compared to the uncoupled RNP complex, the RNPD system yielded 20-fold and a 4-fold increases in repair efficiency with 65-mer and 81-mer repair template oligos, respectively (Figure 4f, Figure 4\u2014figure supplement 1e,f). Similarly, the two-component RNP-RNPD system led to a 21-fold increase with 65-mers and a 6-fold increase with 81-mers (Figure 4f, Figure 4\u2014figure supplement 1e,f). Taken together, our results suggest that linking the repair template to the Cas9 complex leads to improved correction efficiency compared to the unlinked\u00a0control\u00a0CRISPR-Cas9 system, and that this effect is even more pronounced when CRISPR-Cas9 components are delivered at lower concentrations.\n\nNext, we aimed to gain mechanistic insight into the processes that lead to enhanced correction rates when the donor oligo is linked to the Cas9 complex. We first assessed if the BG-labelling of the donor oligo itself already influences the correction efficiencies, and compared the correction rates of wild-type SpCas9 lacking the SNAP-tag together with either unlabelled oligo or BG-labelled oligo. While the correction rates were enhanced when the donor oligo was labelled with BG, the increase was several fold lower compared to the system where the oligo was conjugated to the Cas9 RNP complex (Figure 4\u2014figure supplement 2a\u2013c). We then investigated if the observed improvement in correction efficiency is due to the donor oligo being brought in close proximity to the DSB, or if it is sufficient to direct the donor oligo to the nucleoplasm. We therefore again employed the two-component system with DSB inducing SpCas9 and catalytically inactive SadCas9 conjugated\u00a0to the donor oligo. While in one group SadCas9 was complexed with a sgRNA that directs it in close proximity to the DSB, in the other group the sgRNA was omitted and SadCas9 was therefore only directed into the nucleus. Importantly, our results demonstrated that adding the sgRNA did not further enhance correction rates, suggesting that the increase of donor oligo concentration in the nucleoplasm was sufficient to fully account for the positive effect of the Cas9-donor oligo conjugation\u00a0(Figure 4g, Figure 4\u2014figure supplement 2d,e). In line with these observations, a number of previous studies demonstrated that exogenous DNA transport into the nucleus is one of the major barriers to effective gene delivery (Subramanian et al., 1999; Zanta et al., 1999; Ludtke et al., 1999; Aronsohn and Hughes, 1998).\n\nTo validate our results from the HEK293T reporter cells, we next tested our approach at different endogenous genomic loci and in different cell types. We first targeted the human beta globin (HBB) locus in the K562 cell line, and analyzed correction and editing frequencies using next generation sequencing (NGS). The mean correction efficiency with the RNPD system was 19.6%, which represented a 17-fold increase compared to the control RNP system (Figure 5a, Supplementary file 2). Next we targeted the Rosa26 and proprotein convertase subtilisin/kexin type 9 (Pcsk9) locus in mouse embryonic stem cells (mESCs). Again, the mean correction efficiencies of RNPD systems were significantly increased, to 18.6% at the Rosa26 locus and 23.2% at the Pcsk9 locus (Figure 5b,c, Supplementary file 2). In comparison to the uncoupled RNP complexes, this represented 2- and 6-fold increases, respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig5-v5.jpg)\n\n**Figure 5.:** (a,b,c) Upper panels: Schematic overview of the target genomic regions of the Streptococcus pyogenes gRNAs. Black arrow indicates the introduced DSB site. The nucleotides that are exchanged in case of precise repair are shown in blue. Lower panels: NGS data quantification: Correction efficiency of the control Cas9 system (RNP unco.: SpCas9-SNAP plus unlabeled donor oligo) compared to our novel system (RNPD coup.: SpCas9-SNAP bound\u00a0to BG-labeled donor oligo) is shown. (a) The HBB locus was targeted in a K562 cell line. The (b) Rosa26 and (c) Pcsk9 loci were targeted in mouse ESCs. All values are shown as mean\u00a0\u00b1s.e.m of biological replicates; *p<0.0332 with n\u00a0=\u00a04 (a) and n\u00a0=\u00a03 (b,c) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Allele plots, variant count tables and categorized variant count tables for these loci are available as Supplementary file 2\u20134. Numerical data and the exact p values for all graphs are shown in the Figure 5\u2014source data 1.\n\nIn the previous experiments the RNPD system was always compared to Cas9 SNAP-tag fusion proteins with uncoupled donor oligos. To also directly compare the engineered RNPD system to the classical CRISPR-Cas9 system, we performed experiments where we used wild-type Cas9 with the uncoupled donor oligos as a control. We first targeted the fluorescent reporter locus and analyzed it by NGS. We found that while the mean percentage of corrected loci increased from 0.8% with the classical Cas9 system to 4.9% with the RNPD system, the number of incorrectly edited loci slightly decreased from 12.6% to 9.3% (Figure 6a, Supplementary file 2,3,4). This corresponds to a 7-fold increase in correction efficiency (Figure 6b). In addition, the analysis of three computationally predicted off-target sites (Lin et al., 2014b; Cradick et al., 2014) of the reporter locus, suggests that the risk for generating off-target mutations is not enhanced with the RNPD system (Figure 6c, Supplementary file 2,3,4). In the next step we also targeted and analyzed the endogenous loci HBB, empty spiracles homeobox 1 (EMX1), and C-X-C chemokine receptor type 4 (CXCR4) in HEK293T cells. NGS analysis revealed that in all three loci the mean correction efficiency of the RNPD system was markedly increased\u00a0to: 34,4% at the HBB locus, 28.6% at the EMX1 locus and 33.1% at the CXCR4 locus (Figure 6d,e,f, Supplementary file 2,3,4). Compared to the classical CRISPR-Cas9 system this represents a 20-fold, a 10-fold, and a 24-fold increase, respectively (Figure 6d,e,f).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig6-v5.jpg)\n\n**Figure 6.:** Classical Cas9 system (wild type SpCas9 plus unlabeled donor oligo); Our novel RNPD\u00a0system (SpCas9-SNAP conjugated\u00a0to BG-labeled donor oligo). (a) Targeting of the reporter locus in HEK293T cells. Illustration of the most frequent variants found by NGS in untreated samples (NT), in samples transfected with the classical Cas9 system (65-mer unco. (SpCas9 WT)), and in our engineered system (65-mer coup. (SpCas9-SNAP)). Alleles with a frequency above 0.5% in any of the nine samples are shown. For alleles with lower frequencies see Supplementary file 3. Abbreviations: Insertion (I), Deletion (D), Single nucleotide variant (SNV). Different colours in the x-axis indicate the three experimental replicates. A detailed description of the plot labels can\u00a0be found in the Supplementary File 2\u00a0legend. (b,d,e,f) NGS data quantification of the (b) reporter locus, (d) HBB locus, (e) EMX1, and (f) CXCR4 locus targeted in HEK293T cells. In (a,b,c) the mutRFP sgRNA (see Figure 2b) was used. (c) Off target analysis for sgRNASpCas9(mutRFP): the percentage of edited alleles detected using NGS in untreated samples, in samples transfected with the classical Cas9 system, and in our engineered system. Information on the off target loci can be found in Supplementary file 1 \u2013 Supplementary Table 1. (d,e,f) Upper panels: Schematic overview of the target genomic regions of the gRNAs. Black arrow indicates the introduced DSB site. The nucleotides that are exchanged in case of precise repair are shown in blue. Lower panels: NGS data quantification. Correction efficiency of the classical Cas9 system compared to our novel system is shown. All values are shown as mean\u00a0\u00b1s.e.m of biological replicates. *p<0.0332 with n\u00a0=\u00a03 (b,c) and n\u00a0=\u00a04 (d,e,f) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Allele plots, complete variant count tables and categorized variant count tables for these loci are available as Supplementary file 2\u20134. Numerical data and the exact p values for all graphs are shown in the Figure 6\u2014source data 1.\n\nDirect delivery of Cas9 RNP complexes into tissues promises great potential for therapeutic applications. Compared to genetically encoded systems, RNPs avoid the danger of genomic integration, and due to their limited lifetime,\u00a0the risk of off-target activities is low (Kim et al., 2014). In addition, procedures for large-scale production of recombinant proteins for clinical use are well established, and several recently developed protocols enable in vivo delivery of Cas9 RNP complexes in animal models (Wang et al., 2016; Zuris et al., 2015; Staahl et al., 2017; Lee et al., 2017). Here, we present a method where we enhance correction efficiency of Cas9-induced DSBs by conjugating\u00a0the donor oligo to the Cas9 complex. Our data suggests that the increase in HDR efficiency is caused by enhanced nuclear concentration of the repair template. Unlike previous approaches that increase HDR rates by chemically modulating DNA repair pathways, our approach does not alter endogenous cellular processes, thus reducing risk of potential negative side effects. In addition, covalent linkage of the repair template to the Cas9 RNP complex also addresses another central challenge of in vivo gene editing therapies \u2013 namely that simultaneous delivery of the RNP complex and the repair template needs to be ensured. Taken together, we suggest that covalently linking the DNA repair template to the Cas9 RNP complex is poised to further drive the CRISPR/Cas technology towards clinical translation.\n\n## Materials\u00a0and\u00a0methods\n\nGeneration of CRISPR-Cas9 complexes with covalently bound repair templates is described in more detail at Bio-protocol (Savi\u0107 et al., 2019).\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant protein (Streptococcus pyogenes)</td>\n      <td>SpCas9-SNAP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Schwank and Jinek lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant protein (Staphylococcus aureus)</td>\n      <td>SadCas9-SNAP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Schwank and Jinek lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent</td>\n      <td>NH2-modified oligo</td>\n      <td>Integrated DNA Technologies</td>\n      <td>-</td>\n      <td>Custom DNA oligos/ '5 C6 NH2 modif.</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>BG-GLA-NHS</td>\n      <td>New England Biolabs</td>\n      <td>ID_NEB:S9151S</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nPlease see Supplementary file 1-Supplementary Tables 1\u20136 for a list of the DNA sequences used in this manuscript.\n\n### Plasmids\n\nAll plasmids used in this study (listed in Supplementary file 1-Supplementary Table 6) have been deposited for the TULIPs system, along with maps and sequences, in Addgene.\n\nCloning of pNS19-LV-mutRFP-2A-GFP: pEGIP (addgene plasmid #26777) was mutagenized using QuikChange Lightning Multi Site-Directed Mutagenesis Kit (Agilent Technologies) to destroy the start codon of eGFP. Next the vector was linearized with BamHI and In-Fusion HD Cloning Plus CE (Takara) was used to insert the mutRFP-2A gBlocks Gene Fragment (Integrated DNA Technologies).\n\nCloning of pNS20-SpCas9-SNAP: pMJ922-SpyCas9-GFP bacterial expression vector was a kind gift from Prof. Martin Jinek. GFP was digested using BamHI and KpnI, and SNAPtag-NLS gBlocks (Integrated DNA Technologies) were integrated using In-Fusion HD Cloning Plus CE (Takara).\n\nCloning of pNS38-SadCas9-SNAP: pAD-SaCas9-GFP was generated by replacing the SpCas9 coding sequence in pMJ922 with SaCas9 sequence using Gibson cloning (Keppler et al., 2003). QuikChange Lightning Multi Site-Directed Mutagenesis Kit (Agilent Technologies) was used to remove the stop codon and to introduce the D10A and N580A mutations into the SaCas9 (SadCas9) gene. Subsequently, GFP was cut out using BamHI and KpnI, and replaced by a SNAP-tag-NLS gBlock (Integrated DNA Technologies) using In-Fusion HD Cloning Plus CE (Takara).\n\nPlasmid pMJ806 was a gift from Jennifer Doudna (Addgene plasmid # 39312) (Jinek et al., 2012).\n\n### Benzylguanine coupling reaction\n\nSynthetic oligonucleotides with a 5\u2032-Amino Modifier C6 functional group (100 \u03bcM) (Integrated DNA Technologies) were incubated with benzylguanine-GLA-NHS (1 mM) (NEB) and Hepes pH8.5 (200mM) for 60 min at 30\u00b0C. Coupling reactions were performed in following ratios: 30:1, 60:1 and 100:1 BG-GLA-NHS: amino modified oligo. After the coupling reaction all oligos were purified by ethanol precipitation. Repair oligo sequences can be found in Supplementary file 1-Supplementary Table 4.\n\n### Denaturating PAGE\n\nThe benzylguanine (BG) coupled reactions were run on 20% polyacrylamide TBE gel containing 8M urea at 200 V for 60 min. The gel was stained for 30 min in 1x TBE containing Sybr Gold (Invitrogen), and imaged with a UV transilluminator (Biorad).\n\n### HPLC purification and LC-MS analysis of the repair oligos\n\nBenzylguanine coupled oligos were purified on an Agilent 1200 series preparative HPLC fitted with a Waters XBridge Oligonucleotide BEH C18 column, 10\u00a0\u00d7\u00a050 mm, 2.5 \u03bcm at 65\u00b0C using a gradient of 5\u201325% buffer B over 8 min, flow rate\u00a0=\u00a05 ml min-1. Buffer A was 0.1 M triethylammonium acetate, pH 8.0. Buffer B was methanol. Fractions were pooled, dried in a speedvac and dissolved in H2O. Analysis of the purified BG-oligonucleotide was conducted on an Agilent 1200/6130 LC-MS system fitted with a Waters Acquity UPLC OST C18 column (2.1\u00a0\u00d7\u00a050 mm, 1.7 \u03bcm) at 65\u00b0C, with a gradient of 5\u201335% buffer B in 14 min with a flowrate of 0.3 mL min\u22121. Buffer A was aqueous hexafluoroisopropanol (0.4 M) containing triethylamine (15 mM). Buffer B was methanol.\n\n### Expression and purification of Cas9-SNAP\n\nSnap-tagged Streptococcus pyogenes Cas9 (SpCas9-SNAP), Staphylococcus aureus dCas9 (SadCas9-SNAP) and Wild Type Streptococcus pyogenes Cas9 (SpCas9 WT) proteins were expressed in Escherichia coli BL21 (DE3) Rosetta 2 (Novagen) fused to an N-terminal fusion protein containing a hexahistidine affinity tag, the maltose binding protein (MBP) polypeptide sequence, and the tobacco etch virus (TEV) protease cleavage site. The cells were lysed in 20 mM Tris pH 8.0, 500 mM NaCl, 5 mM Imidazole pH 8.0. Clarified lysate was applied to a 10 ml Ni-NTA (Qiagen) affinity chromatography column. The column was washed by increasing the imidazole concentration to 10 mM and bound protein was eluted in 20 mM Tris pH 8.0, 250 mM NaCl, 100 mM Imidazole pH 8.0. To remove the His6-MBP affinity tag, the eluted protein was incubated overnight in the presence of TEV protease. The cleaved protein was further applied to a heparin column (HiTrap Heparin HP, GE Healthcare) and eluted with a linear gradient of 0.1\u20131.0 KCl. The eluted protein was further purified by size exclusion chromatography using a Superdex 200 16/600 (GE Healthcare) equilibrated in 20 mM HEPES pH 7.5, 500 mM KCl.\n\n### Covalent binding of Cas9-SNAP protein and BG-coupled oligonucleotide\n\nRepair oligo templates coupled to BG were incubated with Cas9-SNAP proteins on the same day when the transfection is performed. BG-coupled oligos (2.2 pmols) were mixed with either SpCas9-SNAP or SadCas9-SNAP (2.2 pmols) and incubated for 60 min at 30\u00b0C. The negative controls (wild-type Cas9\u00a0+BG oligo or Cas9-SNAP\u00a0+\u00a0unlabeled oligo) were treated in the same way.\n\n### SDS-PAGE gels\n\nFor confirming successful labeling of the Cas9-SNAP proteins with the BG-coupled oligonucleotides, BG-coupled and uncoupled oligonucleotides were mixed with either SpCas9-SNAP, SadCas9-SNAP or only the Cas9-SNAP proteins alone, reactions were incubated for one hour at 30\u00b0C. For the SNAP-Vista Green (NEB) substrate, the protein was incubated for 30 min on 30\u00b0C in the dark. After incubation, reactions (300 ng) were loaded on 6% SDS-PAGE gel and run at 80V for 160 min. Gels that were containing BG-Vista Green (NEB, SNAP-Vista Green), were imaged prior to silver staining. The green fluorescence signal of the SNAP-tag was detected with a UV transilluminator (Biorad). Subsequently, silver staining was completed using the Pierce Silver Stain Kit (Thermo Scientific) according to manufacturer instructions, and imaged with a UV transilluminator (Biorad).\n\n### Production of sgRNAs\n\nsgRNAs were generated from DNA templates using the T7 RNA Polymerase (Roche) in vitro transcription (IVT) kit. In short, sgRNA specific primers that also contain the T7 sequence were annealed with a common reverse primer that contains the sequence of the sgRNA scaffold (final concentrations 10 \u03bcM). DNA was purified with the QIAquick purification (Qiagen) kit and eluted in DEPC-treated water. PCR products were run on agarose to estimate concentration and to confirm amplicon size. In vitro transcription was performed at 37\u00b0C overnight. For purification, DNase I was added to the sgRNAs and incubated for 15 min at 37\u00b0C, and subsequently ethanol precipitation was performed overnight at \u221220\u00b0C. The sgRNAs were then further purified using RNA Clean and Concentrators (Zymo Research). Before use, all sgRNAs were checked on denaturing 2% MOPS gels. Complete sequences for all sgRNA protospacers, IVT primers and crRNAs can be found in Supplementary file 1-Supplementary Table 1, 2 and 3, respectively.\n\n### Lentivirus production\n\nHEK293T were PEI transfected with following plasmids: pNS19-LV-mutRFP-2A-eGFP, Pax2 and VSV-G. After 12 hr, the supernatant was discarded and changed to DMEM plus 10% FBS. 24 and 72 hr post-transfection, the media was collected and filtered through 0.45 \u03bcm filter and centrifuged at 20 000 G for 2:00 hr at 4\u00b0C. The pellet was then resuspended in 1 ml of DMEM and stored at \u221280\u00b0C.\n\n### Fluorescent reporter generation\n\nHEK293T cells were transduced with a lentiviral vector carrying the fluorescent reporter construct. Serial virus dilutions were used to isolate clonal populations using Puromycine selection (2 \u03bcg/ml) for 2 weeks.\n\n### Cell culture and reagents\n\nHEK293T cells were obtained from ATCC and verified mycoplasma free (GATC Biotech). The HEK293T reporter line was maintained in DMEM with GlutaMax (Gibco). Media was supplemented with 10% FBS (Sigma), and 100 \u03bcg/mL Penicillin-Streptomycin (Gibco). K562 cells were obtained from Sigma Aldrich, verified mycoplasma free and were maintained in RPMI 1640 medium with GlutaMax. Additional the medium supplemented with 10% FBS, and 100 \u03bcg/mL Penicillin-Streptomycin. Cells were passaged three times per week. Cells were grown at 37\u00b0C in a humidified 5% CO2 environment. WT E14 mESC line (ATCC CRL-1821) was cultured in Dulbecco\u2019s Modified Eagle Media (DMEM) (Sigma-Aldrich), containing 15% of fetal bovine serum (FBS; Life Technologies), 100 U/mL LIF (Millipore), 0.1 mM 2-\u00df-mercaptoethanol (Life Technologies) and 1% Penicillin/Streptomycin (Gibco), on 0.2% gelatin-coated support in absence of feeder cells. The culture medium was changed daily. Cells were grown at 37\u00b0C in 8% CO2.\n\n### Transfection reactions\n\nHEK293T cells were seeded in 24-well plates at 120.000\u2013140.000 cells per well, 1 day prior to transfection. K562 cells were 6 hr prior to transfection distributed in 24 well plates at a density of 220.000\u2013240.000 cells per well. On the day of transfection, RNP and RNPD complexes (2.2 pmols) were complexed with sgRNA (3.88 pmols) in Opti-MEM (Invitrogen) and briefly vortexed, followed by adding 3 \u03bcl the Lipofectamine 2000 reagent (Invitrogen) with Opti-MEM. The resulting mixture was incubated for 15 min at room temperature to allow lipid particle formation. After 15 min of incubation at room temperature, the mixture was dropped slowly into the well. One day post-transfection, cells were transferred to an 10 cm dish. mESCs were transfected into 6-well plate using Lipofectamine 2000. Cells were plated 24 hr before transfection at a density of 20,000 cells/cm2 per well and cultured in culture medium without streptomycin and penicillin. The medium was changed to mESC culture medium 8 hr after transfection. Cells were collected 48 hr post-transfection.\n\n### Flow cytometry analysis\n\nFor flow cytometry analysis, HEK293T reporter cells were analysed 5 days after transfection. Cells were trypsinized with TrypLE Express Enzym (Gibco), and resuspended in FACS buffer containing PBS/1% FBS/1% EDTA. Sytox Red was added for the exclusion of dead cells. Data were acquired on a BD LSR Fortessa cell analyser (Becton-Dickinson) and were further analysed using FlowJo software (FlowJo 10.2). In all experiments, a minimum of 200.000 cells were analysed. Gating strategy: Forward versus side scatter (FSC-A vs SSC-A) gating was used to identify cells of interest. Doublets were excluded using the forward scatter height versus forward scatter area density plot (FSC-H vs. FSC-A). Live cells were gated based on Sytox-Red-negative staining. Live-gated cells were further used to quantify the percentage of eGFP negative and turboRFP positive populations. Correction efficiency (%) or (percentage of corrections in edited cells) was culculated as 100 * (eGFP/turboRFP double positive population / (eGFP/turboRFP double negative population\u00a0+\u00a0eGFP/turboRFP double positive population)).\n\n### Next Generation Sequencing\n\nTransfected cells were collected by trypsinisation and were washed with PBS. PBS was discarded and DNA extraction was preformed using DNeasy Blood and Tissue kit (Qiagen) following manufacturer\u2019s protocol. The PCR amplicons flanking the targeted site were generated using NEBNext High-Fidelity 2X PCR Master Mix (NEB), primers that were used are listed in Supplementary file 1-Supplementary Table 5. PCR cycling conditions used were as follows: 1 \u00d7 98\u00b0C for 3 min; 27 \u00d7 95\u00b0C for 15 s, 65\u00b0C for 15 s, 72\u00b0C for 30 s; 1 \u00d7 72\u00b0C for 5 min. Annealing temperature was optimized for each primer set to ensure that a single amplicon was produced. PCR amplicons were purified by solid phase reversible immobilization (SPRI) bead cleanup using Agencourt AMPure XP reagent (#A63881, Beckmann-Coulter, Indianapolis, IN, USA), per the manufacturer\u2019s instructions. For the generation of the pooled sequencing libraries, the TruSeq (Illumina) Index Adaptor Sequences were added at the second amplification step. The resulting Illumina libraries with Index Adaptors were purified with AMPure XP reagent. Quality control for the final library was performed using the High sensitivity D1000 ScreenTape at Agilent 2200 TapeStation. The libraries were sequenced using an Illumina MiSeq sequencer (MiSeq Reagent Kit v2 (15M, 500 cycle kit) or MiSeq Reagent Micro Kit v2 (4M, 500 cycle kit), Illumina, San Diego, CA, USA). Sequences were received in the format of demultiplexed FASTQ files produced by Illumina's bcl2fastq software (v2.19.0). Reads were merged with Pear v0.9.8 (Zhang et al., 2014) and merged reads mapped to the amplicon sequences with BWA-MEM v0.7.13-r1126 (Li, 2010). Unmerged reads were discarded. Sequence analysis was performed in R using CrispRVariants v1.9.0 (Lindsay et al., 2016). Variants within the protospacer\u00a0+PAM region were analysed. Reads that align linearly and do not match the guide sequence are considered \u2018Edited\u2019. Percentage of edited alleles is calculated as 100* Edited reads/Total reads (excluding non-linear alignments). Correction efficiency is 100* Perfectly corrected/Edited reads. The Scripts for mapping sequencing data, counting mutations and generating plots are available at https://github.com/HLindsay/Savic_CRISPR_HDR (Lindsay, 2018;\u00a0copy archived at https://github.com/elifesciences-publications/Savic_CRISPR_HDR) Fastq files have been uploaded to ArrayExpress (Brazma et al., 2003), the accession number is E-MTAB-6808.\n\n### Fluorescence microscopy\n\nHEK293T reporter cells were imaged 7 days after transfection. Transfected cells were grown on Poly-L-lysine coated 8-well glass chamber slides (Vitaris) to 80\u201390% confluence. Hoechst 33342 (Thermo Scientific, Pierce) was added in the cell culture media to a final concentration of 0.1 \u03bcg/ml, and cells were incubated for 10 min at 37\u00b0C, 5% CO2, prior to the image session. Confocal imaging was performed using a Leica DMI8-CS (ScopeM) with a sCMOS camera (Hamamatsu Orca Flash 4.0). The laser unit for confocal acquisition (AOBS system) contains 458, 477, 488, 496, 514 nm (Argon laser), 405 nm, 561 nm, 633 nm. Images were acquired using Leica LAS X SP8 Version 1.0 software, through using a 20 \u00d7 0.75 NA HC PLAN APO CS2 objective. Imaging conditions and intensity scales were matched for images presented together. Images were analysed using the Leica LAS AF (Lite) software version 3.3. Confocal images were processed using ImageJ software (Version 1.51 n).\n\n### Statistical analyses\n\nStatistical analyses were conducted using Graphpad\u2019s Prism7 software. A Mann-Whitney T-test was conducted for two-sample analyses (P value style: 0.1234(ns), 0.0332(*), 0.0021(**)). All values are shown as mean\u00a0\u00b1\u00a0s.e.m of biological replicates. The number of biological replicates for each experiment was detailed in the Figure Legends. Numerical data and the exact p values for all graphs have been included in the Source data files.\n\n### Data\u00a0availability\n\nThe data that support the findings of this study are available within the paper, Supplementary files, Source data and NGS Fastq files have been uploaded to ArrayExpress.\n",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "1efb7c32-61c2-4160-be8e-bb99bc70e17b",
+      "submission_id": "4461d6d3-d758-4f67-b333-01ce015506a9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bernard de Massy, Institute of Human Genetics, CNRS UPR 1142 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33761.031](https://doi.org/10.7554/eLife.33761.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Covalent linkage of the DNA repair template to the CRISPR/Cas9 complex enhances homology-directed repair\" for consideration by eLife. Your article has been evaluated by a Senior Editor and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe paper by Savic et al., \"Covalent linkage of the DNA repair template to the CRISPR/Cas9 complex enhances homology directed repair\" reports a novel approach to improve the efficiency of HR relative to NHEJ upon Cas9 induced DSB. The strategy relies on the assumption that enhancing the spatial proximity or local concentration of DNA used as template for HR would increase the use of this pathway. This is achieved by generating covalently coupled Cas9-oligonucleotide. An increased efficiency of HR is observed which could be interesting for some applications if confirmed.\n\nHowever all reviewers have identified several problems in the manuscript that could only be solved pending designing a whole new set of experiments. This additional work extends beyond a revision and the manuscript cannot therefore be accepted for publication in eLife.\n\nThe major issues raised by the reviewers are:\n\n- The effect observed with the coupled substrate does not demonstrate that it is due to bringing the oligonucleotide in proximity to the DSB.\n\n- The effect observed should be validated on several genomic target sites, first to extend the observation to a genomic site and second to show the reproducibility of the effect on different targets.\n\n- The assay used does not allow distinguishing the NHEJ and HR pathways as claimed by the authors.\n\nReviewer #1:\n\nThis paper reports a novel approach to improve the efficiency of HR relative to NHEJ upon Cas9 induced DSB. The strategy relies on the assumption that enhancing the spatial proximity or local concentration of DNA used as template for HR would increase the use of this pathway. This is achieved by generating covalently coupled Cas9-oligonucleotide. The increased efficiency of HR observed could be interesting for some applications.\n\nThe experiments are well designed and presented. However several aspects require clarifications as indicated below. Although the increased efficiency of HR is convincing the interpretation is open to several alternatives (i.e. proximity of oligo or stability of oligo). Two additional experiments could clarify this important point.\n\n1) Figure 2A. The figure should be understandable with help of the legend and several pieces of information are missing:\n\nWhat is 2A ? What is c.190_191delinsCT? (Use a more generic term; specific construct name can be provided in Materials and methods).\n\nI assume the \u201cX\u201d labels the mutation and/or the Cas9 DSB?\n\nI assume the mutant RFP is a substitution?\n\nOne needs to see exactly where the substitution is, where the guide maps and where the DSB is introduced and whether the guide would still be able to induce Cas9 cleavage after HR (is the PAM mutated?). One reason is that depending on where the DSB is, more or less end processing will be needed for HR.\n\n2) Figure 2B lower panel (IF): indicate the channels used. Most of the cells seem to be GFP negative in the central panel. How could this be as the FACS indicate 16%? Single channels and overlays should be provided.\n\nWhat is the percentage of GFP positive among the RFP positive cells? (Close to 100% expected).\n\nIt should be noted that the% of edited cells is underestimated since in frame indels (one third ?) can generate a GFP positive cell.\n\n3) Figure 3A. Explain the lane no BG coupling?\n\n4) Figure 4. The same data should not be plotted twice in panel B and C: Panel C should be removed (same comment for Figure 4F and G).\n\nThe main question about the use of SadCas9 is to determine whether the difference with SpCas9 is statistically significant. The tests should be performed (Figure 4E, between RNPD coup and RNP-RNPD coup) and if not significant the conclusions should be revised.\n\nA map showing the positions of the different SadCas9 guides used (1 to 4) should be shown.\n\n5) Two experiments are required to describe the effect observed: In order to know if the effect observed is due to coupling the oligo to Cas9, a control should be performed with the oligo coupled to BG but not to Cas9. Clearly at least part of the effect observed could be due to stabilization of the oligo rather than proximity to DSB per say. To distinguish these possibilities the authors should test an oligo coupled to SadCas9 but without the corresponding guide.\n\nI assume S. aureus was used such as to design a distinct guide specific for S. aureus and not bound by S. pyogenes, if so, this should be explained in the text.\n\n6) Figure 4\u2014figure supplement 1.\n\nWhat is the interpretation for the decrease of percentage of edited cells with oligo coupled to SadCas9 ? (Figure 4\u2014figure supplement 1D).\n\nLegend of Figure 4\u2014figure supplement 1C and D: RNP-RNP unco is grey but should be hatched grey box.\n\n7) Two-tailed tests should be used not one-tailed since there is no reason to assume a priori that the coupled protein would be more efficient.\n\n8) Subsection \u201cExpression and purification of Cas9-SNAP\u201d, missing word: \"The was further purified\u2026\"\n\nReviewer #2:\n\nThe authors show that covalent linkage of the DNA repair template to the CRISPR/Cas9 complex enhances HDR efficiency. They conclude this based on the use of a traffic light HDR reporter system, transiently transfected into HEK293 cells.\n\nAlthough this is interesting and aspects of the study are really clever (e.g. the use of the sa-dCAS9 linked template to prove that physical proximity is the key), the work strikes me as quite preliminary as the increases are only shown in this transient reporter system using only one target site.\n\nWithout more thorough testing of the improvement in a real experimental system, I can't recommend acceptance of this study in its current form at eLife. My recommendations to improve the impact of this publication would be to demonstrate real efficiency improvements using a targeted edit within a genomic target site. In this respect, the existing work using transient reporter system would be excellent preliminary data for a real proof-of-concept \u2013 namely the increased efficiency in a real experimental genome engineering project e.g. to create a point mutation.\n\nIn addition, the CRISPR field has been populated by numerous claims showing positive perturbations to shift the balance of repair pathway from NHEJ to HDR (alterations in experimental design, NHEJ inhibitors, etc.). Frequently these claims have been made on the basis of data from manipulation of a single target site. Reproducibility of these studies has proven to be low, as when applied by other labs at different target sites, the reported improvements are frequently not replicated. To avoid this occurring, I would recommend that the authors address several different genomic target sites and report the level of improvement in HDR seen in these various experimental settings.\n\nFigure 4E presents data which suggests that the positioning of the sgRNA (and hence the DSB) away from the target nucleotide to be mutated (0 bp, 52 bp, 61 bp, 83 bp and 128bp) has little influence on the correction efficiency. This is significantly at odds with experimental data from genomic target sites, and should be discussed. In addition, I wonder whether this is a curious artefact of using transient plasmids and thus provides support for my recommendation of addressing a single copy genomic target site or sites to validate their approach in a real experimental setting.\n\nThe work is very similar to a recent bioRxiv report by Janet Rossant's group (https://doi.org/10.1101/204339) who demonstrated that covalent attachment of the repair template to the CRISPR/Cas9 complex enhanced HDR rates, reporting data from fluorescent cassette insertions at 5 genomic target sites. Although this paper hasn't been peer reviewed, it's tempting to speculate that the authors of this manuscript have submitted what is essentially a preliminary study to eLife to compete with this more thorough study, which is presumably in review at another journal.\n\nReviewer #3:\n\nGene targeting constitutes a promising approach for the generation of novel biological models and for future gene therapy strategies. The capacity to generate targeted cleavage by the CRISPR-CAS9 system raised many hopes. However, targeted gene replacement still remains to too low levels. In the present work the authors design a strategy aiming at delivering the correcting DNA in the vicinity of the cleaved site. They covalently bound the correction oligonucleotide to the CAS9 itself via \"click chemistry\", using the SNAP-tag technology. Then they assemble in vitro the complex with the RNA-guide and transfected cells (HEK293). This strategy is elegant and promising. However, many concerns should be addressed.\n\nThe main problem is the fact that the authors used only on system to monitor HR; and that the designing of this substrate is based on wrong considerations on HR and NHEJ.\n\nIt is claimed that NHEJ is error-prone. This is wrong. There are two kinds of end-joining processes, the canonical NHEJ (which is not error-prone, but conservative) and the Alternative end-joining (alt-NHEJ, MMEJ, B-NHEJ), which is mutagenic and error-prone. Therefore mutagenic repair does not automatically imply NHEJ. Second it is said in the Introduction that HR and NHEJ directly compete. This is also wrong; in fact things happen in two phases: first competition between cNHEJ and single-strand DNA resection, second on resected DNA extremities, competition between HR and alternative end-joining. Finally, HR can also generate mutagenesis. Therefore many concerns exist on the strategy used here (which is the sole assay used) because mutagenic repair can arise by many other processes than NHEJ.\n\nMoreover, is correction with oligonucleotides (65, 81 b) an actual HR mechanism? This is not consistent with concept of MEPS.\n\nThe authors should first genetically validate their reporter system, in cells mutated for HR or NHEJ.\n\nThe authors should also verify their strategy with natural endogenous target sequences, instead of the reporter.\n\nThere are no data on the transfection efficiency. Especially, comparing the CAS9 with the engineered one.\n\nSimilarly, does the two CAS9 cleave with similar efficiency?\n\nDoes the modification of the CAS9 affect its cleavage specificity?\n\nAre there any off-target effects? (off-target cleavage, off-target integration of the oligo).\n\nThe authors should test different RNA guides for a common target.\n\nThe author should test different cell lines.\n\nIt is not clear what is actually measured. Where are the mutagenic repair (pseudo-NHEJ) measurements? Is it the frequency of HDR or the ratio HDR/pseudo-NHEJ?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Covalent linkage of the DNA repair template to the CRISPR-Cas9 nuclease enhances homology-directed repair\" for further consideration at eLife. Your revised article has been favorably evaluated by Diethard Tautz (Senior Editor) and the Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors provide convincing answers to all reviewers' comments. Importantly, the authors show that the main improvement achieved by their experimental approach is due to enhanced targeting of the oligonucleotides to the nucleus rather that its targeting to the specific target genomic site. This could also be highlighted in the Abstract.\n\nA few points need to be clarified:\n\n1) Source data 6 refers to Figure 4\u2014figure supplement 2 (not 3?) should be registered as Figure 4\u2014source data 3.\n\n2) Source data 5 refers to Figure 4\u2014figure supplement 1 (not 2?) should be registered as Figure 4\u2014source data 2.\n\n3) Figure 2B requires clarification (and in the legend as well). Legend says \"the mutation substitutes\u2026 CT.. to TA\". This is ambiguous because TA is wild type. It would clarify to draw in Figure 2, the wild type and mutated genomic sequences (with the codon substitution) and the sequence of the guide (also can be confusing as drawn because the guide has CT not TA).\n\n4) Figure 5: In Figure 5, only the reference is shown. Mutated variant should be indicated. For instance, on 5A, at HBB, the DNA sequence shown should be the one after correction (to be consistent with Figure.2B) ? However it is identical to guide sequence?\n\nPlease explain the correction efficiency values, obtained after correction for transfection efficiency? If so, provide transfection efficiencies, otherwise read data from Supplementary file 2 cannot be understood: i.e. 27% at Rosa 26, how was this obtained? In addition, since no HR reads is detected at Rosa26 (why is this?), the authors should comment in the main text on the difference uncoupled/coupled from Figure 5B for this locus.\n\n5) Figure 6A requires clarifications both in the main text and in the presentation of the figure. The authors summarize in one sentence all the NGS data (Results and Discussion, eighth paragraph). There is a lot of data in this analysis and it would be better to present the analysis step by step and not to refer to all panels 6A, B, D, E, F at once. Reporter locus could be presented first, with comments about percentage of corrected reads and other events (legend should explain the nomenclature, for instance -7:7D, and also what are I, II and III: triplicates I assume). Then results at other loci should be briefly discussed (and referred to Supplementary file 2). Also indicate in Supplementary file 2 that the variants called \"SNV\" are the ones predicted after repair by HR. An interesting information is also the relative proportion of HR versus non HR events. In Figure 6, it seems that this proportion is about 30% in experiment I (5.63/(100-85.19)). Is this correct? It could be discussed in the main text.\n",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bff7c34c-ff40-43d0-94af-a3e871c32ca8",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C1",
+      "claim": "The CRISPR-Cas9 targeted nuclease technology allows the insertion of genetic modifications with single base-pair precision.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR-Cas9 targeted nuclease technology allows the insertion of genetic modifications with single base-pair precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about CRISPR-Cas9 capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "e27be156-6211-4555-8980-c3847f9daa10",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C2",
+      "claim": "Mammalian cells preferentially repair Cas9-induced DNA double-strand breaks via error-prone end-joining pathways rather than via homology-directed repair mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The preference of mammalian cells to repair Cas9-induced DNA double-strand breaks via error-prone end-joining pathways rather than via homology-directed repair mechanisms, however, leads to relatively low rates of precise editing from donor DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNA repair pathway preferences in mammalian cells.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "509317a0-c151-4e84-87a4-3fa6ead84f1b",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C3",
+      "claim": "Covalent linkage of the donor template to Cas9 increases correction rates up to 24-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that spatial and temporal co-localization of the donor template and Cas9 via covalent linkage increases the correction rates up to 24-fold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "569bf825-6513-41dd-bd40-eb1564faf9c7",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C4",
+      "claim": "The enhancement in correction rates from covalent linkage is mainly caused by an increase of donor template concentration in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrate that the effect is mainly caused by an increase of donor template concentration in the nucleus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion drawn from experimental data in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "e186f512-af72-4860-af31-bb3428982470",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C5",
+      "claim": "Enhanced correction rates were observed in multiple cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced correction rates were observed in multiple cell types and on different genomic loci",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from different cell types tested in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "e67297b5-abda-4ae7-aeb3-9ba4dfceefe8",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C6",
+      "claim": "Enhanced correction rates were observed on different genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced correction rates were observed in multiple cell types and on different genomic loci",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from different genomic targets tested in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "98b75a85-aff3-4ec4-afb3-a27549bea08f",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C7",
+      "claim": "Covalently linking the donor template to the Cas9 complex provides advantages for clinical applications where high-fidelity repair is desired.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that covalently linking the donor template to the Cas9 complex provides advantages for clinical applications where high-fidelity repair is desired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "180bde55-4a45-4e3e-96bd-92052363bab4",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C8",
+      "claim": "A programmable chimeric single guide RNA (sgRNA) directs the Cas9 nuclease to the genomic region of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In its most widespread variant a programmable chimeric single guide RNA (sgRNA) directs the Cas9 nuclease to the genomic region of interest, where it generates a site-specific DNA double-strand break (DSB) (Mali et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CRISPR-Cas9 mechanism, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "c1e28494-ff78-4da4-a8c8-1b6062268307",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C9",
+      "claim": "Cas9 generates a site-specific DNA double-strand break (DSB) at the genomic region of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In its most widespread variant a programmable chimeric single guide RNA (sgRNA) directs the Cas9 nuclease to the genomic region of interest, where it generates a site-specific DNA double-strand break (DSB) (Mali et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CRISPR-Cas9 mechanism, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "01f69b51-17a0-4706-a523-054311b54472",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C10",
+      "claim": "In mammalian cells, repair of DSBs by different end-joining pathways often leads to the formation of insertions or deletions (indels).",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells the repair of DSBs by different end-joining (EJ) pathways, such as classical non-homologous end joining (c-NHEJ), alternative non-homologous end-joining (a-NHEJ), or single-strand annealing (SSA) often leads to the formation of insertions or deletions (indels) (Shalem et al., 2014; Ceccaldi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNA repair outcomes, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "6a20e148-45ba-4e1f-9ebe-d8554a078c37",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C11",
+      "claim": "Mammalian cells can resolve DSBs via homology-directed repair (HDR) mechanisms when a donor template is provided.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, when a donor template is provided, mammalian cells can also resolve DSBs via homology-directed repair (HDR) mechanisms, such as the classical homologous recombination (HR) pathway (Mao et al., 2008) and the Fanconi Anemia (FA) repair pathway (Richardson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNA repair mechanisms, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "8726f6a4-6505-437a-b6d6-d59359ace1a2",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C12",
+      "claim": "Repair from an ectopic donor oligonucleotide via HDR mechanisms enables the introduction of DNA modifications with single base pair precision.",
+      "claim_type": "EXPLICIT",
+      "source": "While the formation of indels allows the elimination of gene function, repair from an ectopic donor oliogonucleotide (oligo) via HDR mechanisms enables the introduction of DNA modifications with single base pair precision (van den Bosch et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HDR capabilities, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "e4bb3984-898d-48c0-b18c-85c00821bfd4",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C13",
+      "claim": "Therapeutic applications of CRISPR-Cas9 generally require the precise correction of pathogenic mutations using donor templates.",
+      "claim_type": "EXPLICIT",
+      "source": "Therapeutic applications of CRISPR-Cas9 generally require the precise correction of pathogenic mutations using donor templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the requirements for therapeutic applications based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "7312ca85-e482-42e5-8e8b-9eaad6b8364c",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C14",
+      "claim": "DSBs introduced in mammalian cells are predominantly repaired by error-prone EJ pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DSBs introduced in mammalian cells are predominantly repaired by error-prone EJ pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNA repair pathway preferences in mammalian cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "2a14b150-8264-4a8d-8d38-f05b1b6b0abb",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C15",
+      "claim": "Error-prone repair indirectly competes with HDR by preventing CRISPR-Cas9 complex retargeting.",
+      "claim_type": "EXPLICIT",
+      "source": "As the resulting indels inhibit the CRISPR-Cas9 complex from retargeting the locus, error-prone repair indirectly competes with HDR, and therefore reduces the rates of precise correction from donor templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism by which error-prone repair affects HDR rates.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "8923da39-cd63-48b5-81ed-9b98b72ee674",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C16",
+      "claim": "If the targeted allele is a hypomorph with residual gene function, the generated indels can further worsen the clinical phenotype of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if the targeted allele is a hypomorph with residual gene function, the generated indels can further worsen the clinical phenotype of the disease (Chu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential negative consequences, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "93fb2808-4ae2-4e5c-9b9e-3a47c2902e5c",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C17",
+      "claim": "HDR pathways are primarily active during the S/G2 phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the knowledge that HDR pathways are primarily active during the S/G2 phase of the cell cycle, cells have been synchronized prior to CRISPR-Cas9 delivery (Lin et al., 2014a), and Cas9 expression has been limited to the S/G2/M phase of the cell cycle (Gutschner et al., 2016; Howden et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell cycle regulation of HDR, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "06b6c212-9845-4418-bb3b-c1b94ec339ba",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C18",
+      "claim": "Cells have been synchronized prior to CRISPR-Cas9 delivery to enhance HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the knowledge that HDR pathways are primarily active during the S/G2 phase of the cell cycle, cells have been synchronized prior to CRISPR-Cas9 delivery (Lin et al., 2014a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous approaches to enhance HDR, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "01a15762-4383-4a50-89b3-859ea19cbe90",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C19",
+      "claim": "Cas9 expression has been limited to the S/G2/M phase of the cell cycle to enhance HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 expression has been limited to the S/G2/M phase of the cell cycle (Gutschner et al., 2016; Howden et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous approaches to enhance HDR, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "50431228-de69-41ce-8e9e-c62b07f34c11",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C20",
+      "claim": "HDR has been increased by chemically modulating the EJ and HDR pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have increased HDR by chemically modulating the EJ and HDR pathways (Chu et al., 2015; Maruyama et al., 2015; Yu et al., 2015; Song et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous approaches to enhance HDR, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "7c0a1194-3f55-4581-a553-ac8235ab442e",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C21",
+      "claim": "HDR has been increased by rationally designing DNA repair templates with optimal homology arm lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "and by rationally designing DNA repair templates with optimal homology arm lengths (Richardson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous approaches to enhance HDR, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "011f3fc4-d0f1-4f93-979c-b493f778f31f",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C22",
+      "claim": "The availability of the DNA repair template might present a rate-limiting factor for HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been proposed that the availability of the DNA repair template might present a rate-limiting factor for HDR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from previous work, indicated by 'has been proposed'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "9f12dfd4-ef6e-4b14-b6d0-1a990a6277c5",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C23",
+      "claim": "Enhancing the local concentration of donor oligos could increase the correction rates.",
+      "claim_type": "EXPLICIT",
+      "source": "and that enhancing the local concentration of donor oligos could increase the correction rates (Ruff et al., 2014; Carlson-Stevermer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from previous work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "cd84af2a-54b2-4694-9ab0-3606079b3581",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C24",
+      "claim": "A fluorescent reporter system was generated to measure HDR efficiencies in a rapid and high-throughput manner.",
+      "claim_type": "EXPLICIT",
+      "source": "To be able to measure HDR efficiencies of novel CRISPR-Cas9 variants in a rapid and high-throughput manner, we first generated a fluorescent reporter system (Figure 2a\u2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "12cb64a3-1510-4409-adfa-bdeeb79dd6a9",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C25",
+      "claim": "The reporter cassette was stably integrated in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, the reporter cassette was stably integrated in HEK293T cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "0c6fc36a-3bb3-4d18-aa12-b79c84668a43",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C26",
+      "claim": "The reporter cassette expresses a green fluorescent protein (GFP) that is preceded by an inactive mutant version of a red fluorescent protein (mutRFP).",
+      "claim_type": "EXPLICIT",
+      "source": "and expresses a green fluorescent protein (GFP) that is preceded by an inactive mutant version of a red fluorescent protein (mutRFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the reporter system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "a4de2240-92d2-4f4c-b153-632cea3e02a1",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C27",
+      "claim": "Precise correction of the mutation via HDR from donor templates leads to re-activation of RFP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While precise correction of the mutation via HDR from donor templates leads to re-activation of RFP activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the reporter system functions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "e233b387-875a-4595-8481-7eb59c69e43a",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C28",
+      "claim": "The generation of frame shifts via error-prone EJ pathways leads to loss of GFP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "the generation of frame shifts via error-prone EJ pathways leads to loss of GFP activity (Figure 2a\u2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the reporter system functions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "1ba67c66-6b86-418b-a768-e69d7b99f886",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C29",
+      "claim": "The correction and indel formation events can be visualized by fluorescence imaging and quantified by FACS.",
+      "claim_type": "EXPLICIT",
+      "source": "The correction and indel formation events can be visualized by fluorescence imaging and quantified by FACS (Figure 2c\u2013d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analytical methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "8dd2cfe0-737a-42ee-a6e1-5e2114596f68",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C30",
+      "claim": "Maximal DSB correction rates are reached with ss-donor oligos of approximately 80 bases.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies (Zuo et al., 2017), we found that maximal DSB correction rates are reached with ss-donor oligos of approximately 80 bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study, consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "31ad7f22-102e-4306-ab49-2679d34a3340",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C31",
+      "claim": "The SNAP-tag technology allows covalent binding of O6-benzylguanine (BG)-labeled molecules to SNAP-tag fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to link the donor oligos to the Cas9 protein, we used the SNAP-tag technology, which allows covalent binding of O6-benzylguanine (BG)-labeled molecules to SNAP-tag fusion proteins (Keppler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SNAP-tag technology, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "17bec9af-16e9-4039-aa1e-8f06b7e2bdc3",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C32",
+      "claim": "Amine-modified oligos were coupled to commercially available amine-reactive BG building blocks to generate O6-benzylguanine (BG)-linked DNA repair templates.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate O6-benzylguanine (BG)-linked DNA repair templates, we first coupled amine-modified oligos to commercially available amine-reactive BG building blocks (Figure 3a, Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "86a98221-5771-4727-b6b7-59be454bda35",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C33",
+      "claim": "BG-linked oligos were separated from unreacted oligos by HPLC.",
+      "claim_type": "EXPLICIT",
+      "source": "The BG-linked oligos were further separated from unreacted oligos by HPLC (Figure 3b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "bb961e76-8428-470d-8026-1b378eba214b",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C34",
+      "claim": "BG-linked oligos were analyzed by liquid chromatography-mass spectrometry (LC-MS) to confirm their purity.",
+      "claim_type": "EXPLICIT",
+      "source": "and analyzed by liquid chromatography-mass spectrometry (LC-MS) to confirm their purity (Figure 3\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "72575151-bb6f-4edf-8db4-1a20cda2d6d1",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C35",
+      "claim": "Recombinant Cas9 proteins with a SNAP-tag fused to the C-terminus were produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we produced recombinant Cas9 proteins with a SNAP-tag fused to the C-terminus (Figure 3c,d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "bbe947ac-a875-400b-b98d-db21b3b06773",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C36",
+      "claim": "The fusion proteins were complexed with the BG-coupled oligos.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion proteins were then complexed with the BG-coupled oligos",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological step described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "de414145-e02b-4366-8e03-498dbc3483fa",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C37",
+      "claim": "Covalent binding of fusion proteins to BG-coupled oligos was confirmed by SDS-PAGE.",
+      "claim_type": "EXPLICIT",
+      "source": "and covalent binding was confirmed by SDS-PAGE (Figure 3e\u2013h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental validation of the conjugation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "b8bbcac8-4647-4a4c-9b27-e5d9323978f4",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C38",
+      "claim": "The protein-oligo conjugate was mixed with in vitro transcribed sgRNAs targeting the mutRFP locus to generate the Cas9 ribonucleoprotein-DNA (RNPD) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein-oligo conjugate was mixed with in vitro transcribed sgRNAs targeting the mutRFP locus (Figure 3\u2014figure supplement 1g,h), finally generating the Cas9 ribonucleoprotein-DNA (RNPD) complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological step described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "35b14dec-663a-48ce-9c3a-53e0b5517b94",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C39",
+      "claim": "The correction efficiency with bound complexes was significantly enhanced from 2.1% to 22.5% with the 65-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the correction efficiency (percentage of corrections in edited cells) with bound complexes was significantly enhanced, from 2.1% to 22.5% with the 65-mers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "350c3d2a-32eb-41a9-80a6-5340549f0395",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C40",
+      "claim": "The correction efficiency with bound complexes was significantly enhanced from 8.9% to 25.7% with the 81-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "and from 8.9% to 25.7% with the 81-mers (Figure 4a, Figure 4\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "dac2b9b0-ced5-40f2-a7b0-73bc3d127f86",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C41",
+      "claim": "In comparison to unbound complexes, bound complexes represented 11-fold increases with 65-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to unbound complexes this represented 11- and 3-fold increases, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "6490c942-ffd4-42b4-8704-636ac4c2224e",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C42",
+      "claim": "In comparison to unbound complexes, bound complexes represented 3-fold increases with 81-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to unbound complexes this represented 11- and 3-fold increases, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "4be8d2a1-7f22-4056-91b9-805852adbe4c",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C43",
+      "claim": "A two-component system was developed where the donor oligo is bound to a second catalytically inactive Cas9 complex that binds in close proximity to the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "To further test our hypothesis that spatial and temporal co-localization of repair templates and Cas9 enhances correction rates, we next developed an independent approach where the donor oligo is not bound to the Cas9 complex that induces the DSB, but to a second catalytically inactive Cas9 complex that binds in close proximity to the DSB (RNP-RNPD system).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "d0ecc975-82b5-4df2-aa57-d49210680e1f",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C44",
+      "claim": "In the two-component system, the DSB is induced by SpCas9, and the repair template is linked to a catalytically inactive Staphylococcus aureus (Sa)dCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid the interchange of sgRNAs between both complexes, we designed a two-component system in which the DSB is induced by SpCas9, and the repair template is linked to a catalytically inactive Staphylococcus aureus (Sa)dCas9 (Figure 4c,d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the two-component system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "48c1c019-c472-4f53-9e98-ced2315e8530",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C45",
+      "claim": "With the two-component system, the correction efficiency increased from 4.1% to 29.9% with 65-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the correction efficiency increased from 4.1% to 29.9% with 65-mers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "92712724-b2c4-43a8-bc3a-2b3c04d7f4d9",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C46",
+      "claim": "With the two-component system, the correction efficiency increased from 11.6% to 32.3% with 81-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "and from 11.6% to 32.3% with 81-mers (Figure 4e, Figure 4\u2014figure supplement 1c,d)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "f2f255e8-4297-432c-9cdb-b21794d9bdaf",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C47",
+      "claim": "At 5-fold lower transfection concentrations, the RNPD system yielded 20-fold increases in repair efficiency with 65-mer repair template oligos compared to the uncoupled RNP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the uncoupled RNP complex, the RNPD system yielded 20-fold and a 4-fold increases in repair efficiency with 65-mer and 81-mer repair template oligos, respectively (Figure 4f, Figure 4\u2014figure supplement 1e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "74c93d84-c19e-4b8e-94f9-74cbd3385bc6",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C48",
+      "claim": "At 5-fold lower transfection concentrations, the RNPD system yielded 4-fold increases in repair efficiency with 81-mer repair template oligos compared to the uncoupled RNP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the uncoupled RNP complex, the RNPD system yielded 20-fold and a 4-fold increases in repair efficiency with 65-mer and 81-mer repair template oligos, respectively (Figure 4f, Figure 4\u2014figure supplement 1e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "0d2e60ca-03a6-42f2-afcd-ab6552ddd9db",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C49",
+      "claim": "At 5-fold lower transfection concentrations, the two-component RNP-RNPD system led to a 21-fold increase with 65-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the two-component RNP-RNPD system led to a 21-fold increase with 65-mers and a 6-fold increase with 81-mers (Figure 4f, Figure 4\u2014figure supplement 1e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "95629265-b321-4692-bfc6-20f1cf07f0da",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C50",
+      "claim": "At 5-fold lower transfection concentrations, the two-component RNP-RNPD system led to a 6-fold increase with 81-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the two-component RNP-RNPD system led to a 21-fold increase with 65-mers and a 6-fold increase with 81-mers (Figure 4f, Figure 4\u2014figure supplement 1e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "81f10165-d1c2-41dd-b751-10e972778c33",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C51",
+      "claim": "Linking the repair template to the Cas9 complex leads to improved correction efficiency compared to the unlinked control CRISPR-Cas9 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that linking the repair template to the Cas9 complex leads to improved correction efficiency compared to the unlinked control CRISPR-Cas9 system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "94149cac-6141-487f-abd0-cda4d60767ba",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C52",
+      "claim": "The effect of linking the repair template to Cas9 is more pronounced when CRISPR-Cas9 components are delivered at lower concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this effect is even more pronounced when CRISPR-Cas9 components are delivered at lower concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "41bb2354-b7a1-48d0-b32c-1a46e888b084",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C53",
+      "claim": "BG-labelling of the donor oligo itself influences the correction efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "We first assessed if the BG-labelling of the donor oligo itself already influences the correction efficiencies, and compared the correction rates of wild-type SpCas9 lacking the SNAP-tag together with either unlabelled oligo or BG-labelled oligo. While the correction rates were enhanced when the donor oligo was labelled with BG, the increase was several fold lower compared to the system where the oligo was conjugated to the Cas9 RNP complex (Figure 4\u2014figure supplement 2a\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "675ea9d1-3df2-4991-a033-a04fad3f1dd5",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C54",
+      "claim": "The increase in correction efficiency from BG-labelling alone was several fold lower compared to the system where the oligo was conjugated to the Cas9 RNP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "While the correction rates were enhanced when the donor oligo was labelled with BG, the increase was several fold lower compared to the system where the oligo was conjugated to the Cas9 RNP complex (Figure 4\u2014figure supplement 2a\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "eeb49463-a5e4-4153-bf3f-36f443436759",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C55",
+      "claim": "Adding the sgRNA to direct SadCas9 in close proximity to the DSB did not further enhance correction rates beyond directing it to the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our results demonstrated that adding the sgRNA did not further enhance correction rates, suggesting that the increase of donor oligo concentration in the nucleoplasm was sufficient to fully account for the positive effect of the Cas9-donor oligo conjugation (Figure 4g, Figure 4\u2014figure supplement 2d,e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "b7462b59-62af-4114-a960-8671094f7035",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C56",
+      "claim": "The increase of donor oligo concentration in the nucleoplasm was sufficient to fully account for the positive effect of the Cas9-donor oligo conjugation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our results demonstrated that adding the sgRNA did not further enhance correction rates, suggesting that the increase of donor oligo concentration in the nucleoplasm was sufficient to fully account for the positive effect of the Cas9-donor oligo conjugation (Figure 4g, Figure 4\u2014figure supplement 2d,e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion drawn from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "9c99b56e-936e-4d65-ba1b-d4dfdc3a0627",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C57",
+      "claim": "Exogenous DNA transport into the nucleus is one of the major barriers to effective gene delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, a number of previous studies demonstrated that exogenous DNA transport into the nucleus is one of the major barriers to effective gene delivery (Subramanian et al., 1999; Zanta et al., 1999; Ludtke et al., 1999; Aronsohn and Hughes, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "54a27265-90b9-432b-b297-8fce6f4f123e",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C58",
+      "claim": "At the human beta globin (HBB) locus in the K562 cell line, the mean correction efficiency with the RNPD system was 19.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "We first targeted the human beta globin (HBB) locus in the K562 cell line, and analyzed correction and editing frequencies using next generation sequencing (NGS). The mean correction efficiency with the RNPD system was 19.6%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "a727c7ce-d923-4d60-92c9-fa5a5b1963ac",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C59",
+      "claim": "At the HBB locus in K562 cells, the RNPD system represented a 17-fold increase compared to the control RNP system.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean correction efficiency with the RNPD system was 19.6%, which represented a 17-fold increase compared to the control RNP system (Figure 5a, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "99154a64-7b7f-40df-b0cb-fb411541c417",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C60",
+      "claim": "At the Rosa26 locus in mouse embryonic stem cells, the mean correction efficiency of the RNPD system was 18.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Next we targeted the Rosa26 and proprotein convertase subtilisin/kexin type 9 (Pcsk9) locus in mouse embryonic stem cells (mESCs). Again, the mean correction efficiencies of RNPD systems were significantly increased, to 18.6% at the Rosa26 locus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "d2015ea8-2663-4271-a6fc-01ff6ce82853",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C61",
+      "claim": "At the Pcsk9 locus in mouse embryonic stem cells, the mean correction efficiency of the RNPD system was 23.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "and 23.2% at the Pcsk9 locus (Figure 5b,c, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "890b771b-1cc3-47ff-94b0-a1eca65590df",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C62",
+      "claim": "At the Rosa26 locus in mESCs, the RNPD system represented a 2-fold increase compared to the uncoupled RNP complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to the uncoupled RNP complexes, this represented 2- and 6-fold increases, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "1f002e9e-0e60-4cbe-9993-016eaa17e330",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C63",
+      "claim": "At the Pcsk9 locus in mESCs, the RNPD system represented a 6-fold increase compared to the uncoupled RNP complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to the uncoupled RNP complexes, this represented 2- and 6-fold increases, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "7a0986e8-0137-4831-bbd4-8c0112d1c727",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C64",
+      "claim": "At the reporter locus, the mean percentage of corrected loci increased from 0.8% with the classical Cas9 system to 4.9% with the RNPD system.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while the mean percentage of corrected loci increased from 0.8% with the classical Cas9 system to 4.9% with the RNPD system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "1e75a00d-37de-42d6-9164-a48c9a00415e",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C65",
+      "claim": "At the reporter locus, the number of incorrectly edited loci slightly decreased from 12.6% to 9.3% with the RNPD system.",
+      "claim_type": "EXPLICIT",
+      "source": "the number of incorrectly edited loci slightly decreased from 12.6% to 9.3% (Figure 6a, Supplementary file 2,3,4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "1744bbc0-87ab-44f1-854e-13b49b331024",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C66",
+      "claim": "At the reporter locus, the RNPD system corresponds to a 7-fold increase in correction efficiency compared to the classical Cas9 system.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to a 7-fold increase in correction efficiency (Figure 6b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "b8fa9ae2-2c04-497c-b9ef-d050e2c17757",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C67",
+      "claim": "The analysis of three computationally predicted off-target sites of the reporter locus suggests that the risk for generating off-target mutations is not enhanced with the RNPD system.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the analysis of three computationally predicted off-target sites (Lin et al., 2014b; Cradick et al., 2014) of the reporter locus, suggests that the risk for generating off-target mutations is not enhanced with the RNPD system (Figure 6c, Supplementary file 2,3,4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "00125bdc-1de5-43d0-a4b1-2cf0bbd97e71",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C68",
+      "claim": "At the HBB locus in HEK293T cells, the mean correction efficiency of the RNPD system was 34.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the next step we also targeted and analyzed the endogenous loci HBB, empty spiracles homeobox 1 (EMX1), and C-X-C chemokine receptor type 4 (CXCR4) in HEK293T cells. NGS analysis revealed that in all three loci the mean correction efficiency of the RNPD system was markedly increased to: 34,4% at the HBB locus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "4a9fd0c3-69b5-4a78-97cf-3a2ad31d2e67",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C69",
+      "claim": "At the EMX1 locus in HEK293T cells, the mean correction efficiency of the RNPD system was 28.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "28.6% at the EMX1 locus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "e909f58c-bf87-4a15-a299-823ae51b64f2",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C70",
+      "claim": "At the CXCR4 locus in HEK293T cells, the mean correction efficiency of the RNPD system was 33.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "and 33.1% at the CXCR4 locus (Figure 6d,e,f, Supplementary file 2,3,4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "2648d103-ba75-4d0d-a773-e4e4c8a605f0",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C71",
+      "claim": "At the HBB locus in HEK293T cells, the RNPD system represents a 20-fold increase compared to the classical CRISPR-Cas9 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the classical CRISPR-Cas9 system this represents a 20-fold, a 10-fold, and a 24-fold increase, respectively (Figure 6d,e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "358a5cc8-2147-49a8-af5a-ec141214db6a",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C72",
+      "claim": "At the EMX1 locus in HEK293T cells, the RNPD system represents a 10-fold increase compared to the classical CRISPR-Cas9 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the classical CRISPR-Cas9 system this represents a 20-fold, a 10-fold, and a 24-fold increase, respectively (Figure 6d,e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "0ec3e2d5-9ccb-4338-8654-bc334c5e5d9d",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C73",
+      "claim": "At the CXCR4 locus in HEK293T cells, the RNPD system represents a 24-fold increase compared to the classical CRISPR-Cas9 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the classical CRISPR-Cas9 system this represents a 20-fold, a 10-fold, and a 24-fold increase, respectively (Figure 6d,e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "bd7fee1e-3dec-4752-905f-a113fe67a346",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C74",
+      "claim": "Direct delivery of Cas9 RNP complexes into tissues promises great potential for therapeutic applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct delivery of Cas9 RNP complexes into tissues promises great potential for therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential of RNP delivery based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "551fe4dd-8a6c-47f6-ae95-ddc214b7fa3b",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C75",
+      "claim": "Compared to genetically encoded systems, RNPs avoid the danger of genomic integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to genetically encoded systems, RNPs avoid the danger of genomic integration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about advantages of RNP delivery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "af98bfac-01c9-472f-8993-e561acb55de9",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C76",
+      "claim": "Due to their limited lifetime, RNPs have a low risk of off-target activities.",
+      "claim_type": "EXPLICIT",
+      "source": "and due to their limited lifetime, the risk of off-target activities is low (Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RNP properties, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "82289964-059c-4234-8a69-9226c04d7c0b",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C77",
+      "claim": "Procedures for large-scale production of recombinant proteins for clinical use are well established.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, procedures for large-scale production of recombinant proteins for clinical use are well established",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about protein production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "c4f07d09-e044-4390-9e33-8c920105c6d6",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C78",
+      "claim": "Several recently developed protocols enable in vivo delivery of Cas9 RNP complexes in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "and several recently developed protocols enable in vivo delivery of Cas9 RNP complexes in animal models (Wang et al., 2016; Zuris et al., 2015; Staahl et al., 2017; Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent developments, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "028f0df6-d0e5-4184-93db-cab795cef41a",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C79",
+      "claim": "The increase in HDR efficiency is caused by enhanced nuclear concentration of the repair template.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that the increase in HDR efficiency is caused by enhanced nuclear concentration of the repair template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "18320761-3241-4e2c-a3b3-874bd797ad97",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C80",
+      "claim": "Unlike previous approaches that increase HDR rates by chemically modulating DNA repair pathways, the RNPD approach does not alter endogenous cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike previous approaches that increase HDR rates by chemically modulating DNA repair pathways, our approach does not alter endogenous cellular processes, thus reducing risk of potential negative side effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the advantages of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "8048eaa5-a0c1-4244-b54f-afe9cc3d9a5d",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C81",
+      "claim": "Covalent linkage of the repair template to the Cas9 RNP complex addresses the challenge that simultaneous delivery of the RNP complex and the repair template needs to be ensured.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, covalent linkage of the repair template to the Cas9 RNP complex also addresses another central challenge of in vivo gene editing therapies \u2013 namely that simultaneous delivery of the RNP complex and the repair template needs to be ensured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the approach based on inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "1abef648-5adb-4507-9313-419557070624",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C82",
+      "claim": "Covalently linking the DNA repair template to the Cas9 RNP complex is poised to further drive the CRISPR/Cas technology towards clinical translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we suggest that covalently linking the DNA repair template to the Cas9 RNP complex is poised to further drive the CRISPR/Cas technology towards clinical translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion about the potential impact of the approach.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "20f1c492-99f6-49cb-a489-c1bc2eef2342",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C83",
+      "claim": "O6-benzylguanine (BG)-labeled DNA oligos are covalently linked to Cas9-SNAP fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "O6-benzylguanine (BG)-labeled DNA oligos are covalently linked to Cas9-SNAP fusion proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "f5fb0d9b-9723-4f78-a6ce-142838547cd7",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C84",
+      "claim": "The DNA-Cas9 molecules are complexed with specific sgRNAs to form functional ribonucleoprotein-DNA (RNPD) complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-Cas9 molecules are then complexed with the specific sgRNAs to form the functional ribonucleoprotein-DNA (RNPD) complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "31a0cf41-48aa-4fea-9b8c-24a0dd088ece",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C85",
+      "claim": "The RFP fluorophore carries a c.190_191delinsCT mutation that substitutes two nucleotides TA at positions 190 and 191 in the RFP sequence to CT.",
+      "claim_type": "EXPLICIT",
+      "source": "The RFP fluorophore carries a c.190_191delinsCT mutation that substitutes two nucleotides TA at the positions 190 and 191 in the RFP sequence to CT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in Figure 2a caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "cae85bdc-1561-417b-b2bb-d5b71ee4a524",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C86",
+      "claim": "The c.190_191delinsCT mutation leads to the inactivation of the RFP fluorophore by the substitution of tyrosine at position 63 with leucine (p.Y63L).",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to the inactivation the RFP fluorophore by the substitution of tyrosine at the position 63 with leucine (p.Y63L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in Figure 2a caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "db68eeed-5b18-4acf-a9e0-f83e1cfb9996",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C87",
+      "claim": "Repair of the mutation via donor oligos generates RFP/GFP double positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Repair of the mutation via donor oligos generates RFP/GFP double positive cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in Figure 2a caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "fba2f968-1be6-429b-9b01-3c38bdb53903",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C88",
+      "claim": "Indel mutations generate RFP/GFP double negative cells if they induce a frame shift.",
+      "claim_type": "EXPLICIT",
+      "source": "indel mutations generate RFP/GFP double negative cells if they induce a frame shift.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in Figure 2a caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "4fddbbaf-cfc8-46ae-b951-b66eef6de79e",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C89",
+      "claim": "Analysis of the reporter locus by next generation sequencing (NGS) demonstrated that 20 percent of indels did not lead to a frame shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, analysis of the reporter locus by next generation sequencing (NGS) demonstrated that 20 percent of indels did not lead to a frame shift (Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 2a caption with reference to supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "42412899-6fb9-4a69-87fa-819440afdfd1",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C90",
+      "claim": "FACS analysis underestimates the absolute number of edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, although FACS analysis thereby underestimates the absolute number of edited cells, it allows to accurately compare the correction efficiencies of different Cas9 systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that 20% of indels don't cause frameshift.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "af867ca7-4d02-47db-b754-3ac3e41d0055",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "claim_id": "C91",
+      "claim": "FACS analysis allows accurate comparison of the correction efficiencies of different Cas9 systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, although FACS analysis thereby underestimates the absolute number of edited cells, it allows to accurately compare the correction efficiencies of different Cas9 systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 2a caption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e8afda61-dc76-434f-abda-c0d21a3adcc4",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a fluorescent reporter system in HEK293T cells to measure HDR efficiencies. The system uses a mutant RFP (c.190_191delinsCT, p.Y63L) followed by GFP, where HDR-mediated correction reactivates RFP and frameshift indels eliminate GFP, allowing quantification by FACS and fluorescence imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 and C85-C91 describe the reporter system design, validation, and analytical approach. The system is well-characterized with appropriate controls, and the authors acknowledge that FACS underestimates absolute editing (C89-C90) but allows accurate comparison between systems (C91). The methodology is sound and properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "07f0d613-3d0d-431c-a28f-a4ff569ce964",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Maximal DSB correction rates are reached with single-stranded donor oligonucleotides of approximately 80 bases in length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by experimental data (Figure 3\u2014figure supplement 1a) and is consistent with prior work (Zuo et al., 2017). This finding validates the reporter system and informs the choice of oligo lengths (65-mer and 81-mer) for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "3445544e-1940-4ce7-8152-214ac824a389",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors successfully generated RNPD complexes by covalently linking BG-labeled donor oligonucleotides to Cas9-SNAP fusion proteins using SNAP-tag technology, with conjugation confirmed by SDS-PAGE, HPLC, and LC-MS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 and C83-C84 describe the methodological approach for generating RNPD complexes. Multiple orthogonal validation methods (SDS-PAGE band shifts in Figure 3e-h, HPLC separation in Figure 3b, LC-MS confirmation in Figure 3\u2014figure supplement 1d) provide strong evidence for successful conjugation. The methodology is well-documented and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "057e6a19-4ec5-4487-b143-a5023d03be68",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Covalent linkage of donor templates to SpCas9-SNAP significantly enhances HDR correction efficiency in the reporter system: from 2.1% to 22.5% (11-fold increase) with 65-mers and from 8.9% to 25.7% (3-fold increase) with 81-mers compared to unlinked controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C51 present the core finding with the RNPD system. The data show statistically significant improvements (Figure 4a, n=4 biological replicates with p<0.0332). The fold-changes are clearly documented and the comparison to appropriate controls (SpCas9-SNAP with unlabeled oligos) is valid. Statistical analysis appears appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "bca3dbb6-040c-460d-8aeb-3023c7bf7166",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A two-component RNP-RNPD system, where the donor oligo is linked to catalytically inactive SadCas9 that binds near the DSB induced by SpCas9, increases correction efficiency from 4.1% to 29.9% with 65-mers and from 11.6% to 32.3% with 81-mers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 describe an orthogonal validation approach using a two-component system. The design is clever (using different Cas9 orthologs to prevent sgRNA interchange) and the results (Figure 4e, n=4 replicates) confirm the findings from the single-component RNPD system. This provides strong independent validation of the core concept.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "247e1abe-bb6c-45f2-affe-df2fd00edb3c",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At 5-fold lower transfection concentrations, the enhancement effect is more pronounced: the RNPD system shows 20-fold (65-mer) and 4-fold (81-mer) increases, while the RNP-RNPD system shows 21-fold (65-mer) and 6-fold (81-mer) increases compared to uncoupled controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 and C52 demonstrate that the benefit of covalent linkage is concentration-dependent and more pronounced at lower concentrations. This is an important finding for therapeutic applications where delivery efficiency may be limiting. The data (Figure 4f, n=3 replicates) support this conclusion, though sample size is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "dda3b77b-9aa1-4f7b-8a11-bebbd3f57769",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BG-labeling of donor oligos alone enhances correction rates, but the increase is several-fold lower than when the oligo is conjugated to the Cas9 RNP complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 address an important control: whether BG modification itself affects HDR. The data (Figure 4\u2014figure supplement 2a-c) show that while BG-labeling has some effect, it is substantially less than the conjugated system. This control strengthens the conclusion that covalent linkage, not just BG modification, drives the enhancement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "01b76ea3-487b-4b9a-ab95-49dead43eec9",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanism of enhanced HDR is primarily due to increased donor oligo concentration in the nucleoplasm rather than precise spatial localization near the DSB, as demonstrated by experiments showing that directing SadCas9 to the nucleus without a specific sgRNA is sufficient for enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56, C4, and C79 present the mechanistic interpretation. The key experiment (Figure 4g) shows that omitting the sgRNA for SadCas9 (so it only localizes to the nucleus, not specifically to the DSB site) does not reduce correction rates. This is strong evidence that nuclear import, not DSB-proximal localization, is the primary mechanism. The conclusion is well-supported and consistent with cited literature on nuclear import barriers (C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The RNPD system enhances HDR correction efficiency across multiple cell types and genomic loci: 17-fold increase at HBB in K562 cells (19.6% efficiency), 2-fold at Rosa26 in mESCs (18.6%), and 6-fold at Pcsk9 in mESCs (23.2%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63, C5-C6 demonstrate generalizability across cell types (K562, mESCs) and genomic loci (HBB, Rosa26, Pcsk9). NGS validation provides robust quantification. The varying fold-changes (2-17x) across loci suggest locus-specific factors may influence the magnitude of enhancement, but the effect is consistently positive. Sample sizes are adequate (n=3-4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Compared to wild-type Cas9 (classical CRISPR system), the RNPD system increases correction efficiency 7-fold at the reporter locus and 10-24-fold at endogenous loci (HBB, EMX1, CXCR4) in HEK293T cells, with no increase in off-target editing at three predicted sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C73 provide direct comparison to the standard CRISPR system (wild-type Cas9), which is the most clinically relevant benchmark. The dramatic improvements (7-24-fold) are well-documented by NGS (Figure 6, n=3-4 replicates). The off-target analysis (C67) is limited to only three computationally predicted sites, which is a weakness, but the data suggest no increased off-target risk. The slight decrease in incorrect edits (C65) is a positive finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "eb0d2abe-bad6-482e-a37d-038f858c11c2",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that covalent linkage of donor templates to Cas9 increases correction rates up to 24-fold, provides advantages for clinical applications requiring high-fidelity repair, does not alter endogenous cellular processes, addresses simultaneous delivery challenges, and is poised to advance CRISPR/Cas9 toward clinical translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3, C7, C80-C82 represent the authors' broader conclusions and translational implications. While the 24-fold increase is supported by data (C73), the clinical advantages (C7, C82) are speculative and not directly tested. The claim that the approach doesn't alter endogenous processes (C80) is an inference but not experimentally validated. The delivery advantage (C81) is logical but requires in vivo validation. These are reasonable extrapolations but remain to be proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    },
+    {
+      "id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7",
+      "content_id": "ce082870-3af8-4616-8c27-5bfec2867a31",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on CRISPR-Cas9 mechanisms, DNA repair pathways, previous approaches to enhance HDR, and the rationale for RNP-based therapeutic delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C23, C57, C74-C78 represent established knowledge and prior work that contextualizes the study. These are appropriately cited and accurately represent the field. The background establishes the problem (low HDR rates due to competing error-prone repair) and the hypothesis (that donor template availability is rate-limiting) that motivates the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:03.684539Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cd84af2a-54b2-4694-9ab0-3606079b3581",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "12cb64a3-1510-4409-adfa-bdeeb79dd6a9",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "0c6fc36a-3bb3-4d18-aa12-b79c84668a43",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "a4de2240-92d2-4f4c-b153-632cea3e02a1",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "e233b387-875a-4595-8481-7eb59c69e43a",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "1ba67c66-6b86-418b-a768-e69d7b99f886",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "31a0cf41-48aa-4fea-9b8c-24a0dd088ece",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "cae85bdc-1561-417b-b2bb-d5b71ee4a524",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "db68eeed-5b18-4acf-a9e0-f83e1cfb9996",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "fba2f968-1be6-429b-9b01-3c38bdb53903",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "4fddbbaf-cfc8-46ae-b951-b66eef6de79e",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "42412899-6fb9-4a69-87fa-819440afdfd1",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "af867ca7-4d02-47db-b754-3ac3e41d0055",
+      "result_id": "e8afda61-dc76-434f-abda-c0d21a3adcc4"
+    },
+    {
+      "claim_id": "8dd2cfe0-737a-42ee-a6e1-5e2114596f68",
+      "result_id": "07f0d613-3d0d-431c-a28f-a4ff569ce964"
+    },
+    {
+      "claim_id": "31ad7f22-102e-4306-ab49-2679d34a3340",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "17bec9af-16e9-4039-aa1e-8f06b7e2bdc3",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "86a98221-5771-4727-b6b7-59be454bda35",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "bb961e76-8428-470d-8026-1b378eba214b",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "72575151-bb6f-4edf-8db4-1a20cda2d6d1",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "bbe947ac-a875-400b-b98d-db21b3b06773",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "de414145-e02b-4366-8e03-498dbc3483fa",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "b8bbcac8-4647-4a4c-9b27-e5d9323978f4",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "20f1c492-99f6-49cb-a489-c1bc2eef2342",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "f5fb0d9b-9723-4f78-a6ce-142838547cd7",
+      "result_id": "3445544e-1940-4ce7-8152-214ac824a389"
+    },
+    {
+      "claim_id": "35b14dec-663a-48ce-9c3a-53e0b5517b94",
+      "result_id": "057e6a19-4ec5-4487-b143-a5023d03be68"
+    },
+    {
+      "claim_id": "350c3d2a-32eb-41a9-80a6-5340549f0395",
+      "result_id": "057e6a19-4ec5-4487-b143-a5023d03be68"
+    },
+    {
+      "claim_id": "dac2b9b0-ced5-40f2-a7b0-73bc3d127f86",
+      "result_id": "057e6a19-4ec5-4487-b143-a5023d03be68"
+    },
+    {
+      "claim_id": "6490c942-ffd4-42b4-8704-636ac4c2224e",
+      "result_id": "057e6a19-4ec5-4487-b143-a5023d03be68"
+    },
+    {
+      "claim_id": "81f10165-d1c2-41dd-b751-10e972778c33",
+      "result_id": "057e6a19-4ec5-4487-b143-a5023d03be68"
+    },
+    {
+      "claim_id": "4be8d2a1-7f22-4056-91b9-805852adbe4c",
+      "result_id": "bca3dbb6-040c-460d-8aeb-3023c7bf7166"
+    },
+    {
+      "claim_id": "d0ecc975-82b5-4df2-aa57-d49210680e1f",
+      "result_id": "bca3dbb6-040c-460d-8aeb-3023c7bf7166"
+    },
+    {
+      "claim_id": "48c1c019-c472-4f53-9e98-ced2315e8530",
+      "result_id": "bca3dbb6-040c-460d-8aeb-3023c7bf7166"
+    },
+    {
+      "claim_id": "92712724-b2c4-43a8-bc3a-2b3c04d7f4d9",
+      "result_id": "bca3dbb6-040c-460d-8aeb-3023c7bf7166"
+    },
+    {
+      "claim_id": "f2f255e8-4297-432c-9cdb-b21794d9bdaf",
+      "result_id": "247e1abe-bb6c-45f2-affe-df2fd00edb3c"
+    },
+    {
+      "claim_id": "74c93d84-c19e-4b8e-94f9-74cbd3385bc6",
+      "result_id": "247e1abe-bb6c-45f2-affe-df2fd00edb3c"
+    },
+    {
+      "claim_id": "0d2e60ca-03a6-42f2-afcd-ab6552ddd9db",
+      "result_id": "247e1abe-bb6c-45f2-affe-df2fd00edb3c"
+    },
+    {
+      "claim_id": "95629265-b321-4692-bfc6-20f1cf07f0da",
+      "result_id": "247e1abe-bb6c-45f2-affe-df2fd00edb3c"
+    },
+    {
+      "claim_id": "94149cac-6141-487f-abd0-cda4d60767ba",
+      "result_id": "247e1abe-bb6c-45f2-affe-df2fd00edb3c"
+    },
+    {
+      "claim_id": "41bb2354-b7a1-48d0-b32c-1a46e888b084",
+      "result_id": "dda3b77b-9aa1-4f7b-8a11-bebbd3f57769"
+    },
+    {
+      "claim_id": "675ea9d1-3df2-4991-a033-a04fad3f1dd5",
+      "result_id": "dda3b77b-9aa1-4f7b-8a11-bebbd3f57769"
+    },
+    {
+      "claim_id": "eeb49463-a5e4-4153-bf3f-36f443436759",
+      "result_id": "01b76ea3-487b-4b9a-ab95-49dead43eec9"
+    },
+    {
+      "claim_id": "b7462b59-62af-4114-a960-8671094f7035",
+      "result_id": "01b76ea3-487b-4b9a-ab95-49dead43eec9"
+    },
+    {
+      "claim_id": "569bf825-6513-41dd-bd40-eb1564faf9c7",
+      "result_id": "01b76ea3-487b-4b9a-ab95-49dead43eec9"
+    },
+    {
+      "claim_id": "028f0df6-d0e5-4184-93db-cab795cef41a",
+      "result_id": "01b76ea3-487b-4b9a-ab95-49dead43eec9"
+    },
+    {
+      "claim_id": "54a27265-90b9-432b-b297-8fce6f4f123e",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "a727c7ce-d923-4d60-92c9-fa5a5b1963ac",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "99154a64-7b7f-40df-b0cb-fb411541c417",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "d2015ea8-2663-4271-a6fc-01ff6ce82853",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "890b771b-1cc3-47ff-94b0-a1eca65590df",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "1f002e9e-0e60-4cbe-9993-016eaa17e330",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "e186f512-af72-4860-af31-bb3428982470",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "e67297b5-abda-4ae7-aeb3-9ba4dfceefe8",
+      "result_id": "3eef0f38-a25b-48dd-9fa1-d3be3933c74f"
+    },
+    {
+      "claim_id": "7a0986e8-0137-4831-bbd4-8c0112d1c727",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "1e75a00d-37de-42d6-9164-a48c9a00415e",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "1744bbc0-87ab-44f1-854e-13b49b331024",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "b8fa9ae2-2c04-497c-b9ef-d050e2c17757",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "00125bdc-1de5-43d0-a4b1-2cf0bbd97e71",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "4a9fd0c3-69b5-4a78-97cf-3a2ad31d2e67",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "e909f58c-bf87-4a15-a299-823ae51b64f2",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "2648d103-ba75-4d0d-a773-e4e4c8a605f0",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "358a5cc8-2147-49a8-af5a-ec141214db6a",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "0ec3e2d5-9ccb-4338-8654-bc334c5e5d9d",
+      "result_id": "69a1a1b0-c0b9-457d-9c89-cd8220b03afc"
+    },
+    {
+      "claim_id": "509317a0-c151-4e84-87a4-3fa6ead84f1b",
+      "result_id": "eb0d2abe-bad6-482e-a37d-038f858c11c2"
+    },
+    {
+      "claim_id": "98b75a85-aff3-4ec4-afb3-a27549bea08f",
+      "result_id": "eb0d2abe-bad6-482e-a37d-038f858c11c2"
+    },
+    {
+      "claim_id": "18320761-3241-4e2c-a3b3-874bd797ad97",
+      "result_id": "eb0d2abe-bad6-482e-a37d-038f858c11c2"
+    },
+    {
+      "claim_id": "8048eaa5-a0c1-4244-b54f-afe9cc3d9a5d",
+      "result_id": "eb0d2abe-bad6-482e-a37d-038f858c11c2"
+    },
+    {
+      "claim_id": "1abef648-5adb-4507-9313-419557070624",
+      "result_id": "eb0d2abe-bad6-482e-a37d-038f858c11c2"
+    },
+    {
+      "claim_id": "bff7c34c-ff40-43d0-94af-a3e871c32ca8",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "e27be156-6211-4555-8980-c3847f9daa10",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "180bde55-4a45-4e3e-96bd-92052363bab4",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "c1e28494-ff78-4da4-a8c8-1b6062268307",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "01f69b51-17a0-4706-a523-054311b54472",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "6a20e148-45ba-4e1f-9ebe-d8554a078c37",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "8726f6a4-6505-437a-b6d6-d59359ace1a2",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "e4bb3984-898d-48c0-b18c-85c00821bfd4",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "7312ca85-e482-42e5-8e8b-9eaad6b8364c",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "2a14b150-8264-4a8d-8d38-f05b1b6b0abb",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "8923da39-cd63-48b5-81ed-9b98b72ee674",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "93fb2808-4ae2-4e5c-9b9e-3a47c2902e5c",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "06b6c212-9845-4418-bb3b-c1b94ec339ba",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "01a15762-4383-4a50-89b3-859ea19cbe90",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "50431228-de69-41ce-8e9e-c62b07f34c11",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "7c0a1194-3f55-4581-a553-ac8235ab442e",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "011f3fc4-d0f1-4f93-979c-b493f778f31f",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "9f12dfd4-ef6e-4b14-b6d0-1a990a6277c5",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "9c99b56e-936e-4d65-ba1b-d4dfdc3a0627",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "bd7fee1e-3dec-4752-905f-a113fe67a346",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "551fe4dd-8a6c-47f6-ae95-ddc214b7fa3b",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "af98bfac-01c9-472f-8993-e561acb55de9",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "82289964-059c-4234-8a69-9226c04d7c0b",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    },
+    {
+      "claim_id": "c4f07d09-e044-4390-9e33-8c920105c6d6",
+      "result_id": "6bae8e33-a40b-4bea-9ba5-0d57af4389d7"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1750 @@
+{
+  "submission": {
+    "id": "1282c169-0f92-4481-9ff6-662562097282",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:35:38.486904Z",
+    "updated_at": "2025-12-02T00:35:38.486904Z"
+  },
+  "content": [
+    {
+      "id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "submission_id": "1282c169-0f92-4481-9ff6-662562097282",
+      "content_type": "manuscript",
+      "content_text": "# Integration of two RAB5 groups during endosomal transport in plants\n\n## Authors\n\n- Emi Ito<sup>1</sup> ([ORCID: 0000-0003-0536-5239](https://orcid.org/0000-0003-0536-5239)) \u2020\n- Kazuo Ebine<sup>3</sup>\n- Seung-won Choi<sup>2</sup>\n- Sakura Ichinose<sup>2</sup>\n- Tomohiro Uemura<sup>1</sup>\n- Akihiko Nakano<sup>1</sup> ([ORCID: 0000-0003-3635-548X](https://orcid.org/0000-0003-3635-548X))\n- Takashi Ueda<sup>3</sup> ([ORCID: 0000-0002-5190-892X](https://orcid.org/0000-0002-5190-892X)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Graduate School of Science The University of Tokyo Tokyo Japan\n2. Department of Natural Sciences International Christian University Tokyo Japan\n3. Division of Cellular Dynamics National Institute for Basic Biology Okazaki Japan\n4. Department of Basic Biology SOKENDAI Okazaki Japan\n5. Live Cell Super-Resolution Imaging Research Team RIKEN Center for Advanced Photonics Wako Japan\n6. Japan Science and Technology Agency PRESTO Saitama Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nRAB5 is a key regulator of endosomal functions in eukaryotic cells. Plants possess two different RAB5 groups, canonical and plant-unique types, which act via unknown counteracting mechanisms. Here, we identified an effector molecule of the plant-unique RAB5 in Arabidopsis thaliana, ARA6, which we designated PLANT-UNIQUE RAB5 EFFECTOR 2 (PUF2). Preferential colocalization with canonical RAB5 on endosomes and genetic interaction analysis indicated that PUF2 coordinates vacuolar transport with canonical RAB5, although PUF2 was identified as an effector of ARA6. Competitive binding of PUF2 with GTP-bound ARA6 and GDP-bound canonical RAB5, together interacting with the shared activating factor VPS9a, showed that ARA6 negatively regulates canonical RAB5-mediated vacuolar transport by titrating PUF2 and VPS9a. These results suggest a unique and unprecedented function for a RAB effector involving the integration of two RAB groups to orchestrate endosomal trafficking in plant cells.\n\n## Introduction\n\nEukaryotic cells contain various single-membrane-bound organelles, each of which possesses distinctive constituents and functions. For an organelle to maintain a specific identity and function, the protein and lipid content must be strictly regulated; however, organelles are actively interconnected, exchanging various substances to fulfill complex and diverse cellular activities. The inter-organelle trafficking system mediated by vesicular and/or tubular trafficking intermediates plays an integral role in ensuring proper organelle function. A single round of membrane trafficking involves several sequential steps: budding of vesicles/tubules from a donor organelle, delivery of the transport vesicles, and tethering and fusion of the vesicles with the target membrane. RAB GTPase is an evolutionarily conserved key regulator of the targeting/tethering step and is also responsible for other cellular activities, such as organelle movement and inter- and intracellular signaling (Saito and Ueda, 2009; Stenmark, 2009). These functions of RAB GTPases are fulfilled through nucleotide state-dependent binding with specific sets of proteins, collectively called effector proteins. To ensure the organized and specialized functions of each RAB GTPase, interactions with effectors should be temporally, spatially, and combinatorially regulated for each trafficking event (Grosshans et al., 2006; Zerial and McBride, 2001).\n\nThe early endosome acts as a communication platform between the intracellular environment and the cell surface and/or extracellular space. RAB5 is a key regulator of a wide spectrum of early endosomal functions in animal cells, including homotypic fusion between early endosomes, endosomal motility, regulation of lipid metabolism at the endosomal membrane, and signal transduction via the early endosome (Grosshans et al., 2006; Miaczynska et al., 2004; Zerial and McBride, 2001). RAB5 is also conserved in a broad range of eukaryotic systems, suggesting its ancient origin in the evolution of eukaryotes (Brighouse et al., 2010; Dacks and Field, 2007; Elias, 2010; Pereira-Leal and Seabra, 2001).\n\nEndocytic trafficking pathways demonstrate surprising diversity among lineages, representing uniquely acquired endosomal and endocytic functions in each lineage. The endocytic pathway in plant cells provides a striking example: internalized proteins are initially delivered to the trans-Golgi network (Dettmer et al., 2006), some parts of which mature into multivesiculated late endosomes that acquire RAB5 (Scheuring et al., 2011). Conversely, in animal cells, sequestered proteins are initially delivered to RAB5-positive early endosomes, which mature into RAB7-positive late endosomes, mediated by a RAB5 effector complex comprising SAND1/Mon1 and CCZ1 (Kinchen and Ravichandran, 2010). This complex, which is also conserved in plants, distinctly regulates endosomal transport from animal and yeast systems (Ebine et al., 2014; Singh et al., 2014; Takemoto et al., 2018). Plants are equipped with multiple vacuolar trafficking pathways that involve RAB5 and RAB7 in unique ways (Bottanelli et al., 2012; Ebine et al., 2014; Singh et al., 2014), further underpinning the diversification of endosomal trafficking systems between plant and animal systems. However, the mechanisms underlying diversified endosomal trafficking systems involving evolutionarily conserved RAB5 remain unresolved.\n\nThe presence of the plant-unique RAB5 group, ARA6/RABF1 group, is a remarkable feature of plant endosomal trafficking. Arabidopsis thaliana has three RAB5 members: two canonical RAB5 members, ARA7 (aka RABF2b) and RHA1 (aka RABF2a), which act in vacuolar and endocytic transport (Dhonukshe et al., 2006; Ebine et al., 2011; Kotzer et al., 2004; Sohn et al., 2003), and plant-unique ARA6 (aka RABF1) (Ueda et al., 2001). In lieu of cysteine residues that are isoprenylated at the C-terminus, which are essential for membrane binding and functions of canonical RAB GTPases (Seabra, 1998), ARA6 harbors an extra stretch in the N-terminus, where this protein is N-myristoylated and palmitoylated to target a distinct subpopulation of endosomes from canonical RAB5 with substantial overlap (Haas et al., 2007; Ueda et al., 2001). ARA6 promotes formation of the SNARE complex, which contains plant-specific R-SNARE VAMP727 at the plasma membrane (Ebine et al., 2011), and an endosomal function has also been described; overexpression of the nucleotide-free mutant form of ARA6 results in impaired vacuolar trafficking (Bolte et al., 2004; Bottanelli et al., 2012).\n\nDespite their distinct functions, ARA6 and canonical RAB5 share the common activating factor, VPS9a (Goh et al., 2007). Intriguingly, loss-of-function mutations of ARA6 and canonical RAB5 confer counteracting effects in a vps9a mutant, further highlighting the distinct functions of these two plant RAB5 groups (Ebine et al., 2011), although the molecular mechanism integrating these two groups in endosomal trafficking remains unexplored.\n\nIn the present study, we identified and characterized the first effector molecule of ARA6, PLANT-UNIQUE RAB5 EFFECTOR 2 (PUF2). Based on these results, PUF2 is a key integrator of the two RAB5 groups in the unique endosomal trafficking system of plants.\n\n## Results\n\n### PUF2 interacts with plant-specific RAB5\n\nConsistent with the notion that endosomal trafficking pathways in animals and plants have substantially diverged, close homologs of well-characterized RAB5 effectors, such as EEA1 and Rabaptin-5, do not exist in plants. To identify effector molecules of ARA6, we performed yeast two-hybrid screening using a GTP-fixed mutant of ARA6 (ARA6Q93L) as bait. After screening 4.57\u00a0\u00d7\u00a0105 independent clones, we obtained a candidate clone encoding the C-terminal region of At1g24560 (Figure 1A). At1g24560 encodes a 678-amino-acid protein of unknown function, without clear homologs in animals or yeasts. We designated this protein PUF2. Bacterially expressed and purified full-length PUF2 also bound to GST-tagged ARA6Q93L but not to GST-ARA6S47N or -ARA7Q69L\u00a0in vitro (Figure 1B). Surprisingly, PUF2 also interacted with ARA7S24N (Figure 1B). Based on a co-immunoprecipitation analysis using a lysate prepared from a transgenic plant expressing PUF2-GFP and an anti-GFP antibody, PUF2-GFP and ARA6 form a complex in planta, whereas canonical RAB5 members ARA7 and RHA1 were not co-precipitated with PUF2-GFP under these experimental conditions (Figure 1C, left panels). However, when a crosslinker (dithiobis succinimidyl propionate; DSP) was added to the reaction, canonical RAB5 was also co-precipitated (Figure 1C, right panels). Thus, PUF2 interacts with active GTP-bound ARA6, and PUF2 also weakly and/or transiently forms a complex with GDP-bound canonical RAB5.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig1-v1.jpg)\n\n**Figure 1.:** (A) Yeast two-hybrid interaction between the C-terminal region of PUF2 and RAB5s (ARA6 or ARA7). PUF2 388\u2013672 aa was expressed as a fusion protein with a transcriptional activation domain (AD), and ARA6 and ARA7 with the indicated mutations were expressed as fusion proteins with DNA binding domains (BDs) in the yeast strain AH109. Interactions with the HIS3 reporter gene were examined. Q to L mutations are GTP-freezing mutations, and S to N mutations are GDP-freezing mutations. (B) Interaction between PUF2 and RAB5 members detected in an in vitro binding assay. The full-length PUF2 protein was pulled down using GST-tagged RAB5 proteins, which were immobilized in GTP- or GDP-bound states. (C) Wild-type or ara6-1 transgenic plants expressing PUF2-GFP (black arrowhead) or free GFP (white arrowhead) were subjected to immunoprecipitation analyses with or without a chemical crosslinker (DSP) using an anti-GFP antibody, followed by immunoblotting with the indicated antibodies. A mixture of anti-RHA1 and anti-ARA7 antibodies was used to detect canonical RAB5. (D) Yeast two-hybrid interaction between truncated PUF2 proteins containing different coiled-coil regions and ARA6. Black boxes indicate coiled-coil regions.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic diagram depicting the domain structure of PUF2 and the truncated PUF2 constructs used for the assay. Black boxes represent coiled-coil domains. (B) PUF2 constructs in (A) were expressed as fusion proteins with the AD, and RAB5s (ARA6 and ARA7) were expressed as fusion proteins with the BD in the yeast strain AH109. Interactions were tested using the HIS3 reporter gene. Q93L and Q69L are GTP-fixed mutants and S47N and S24N are GDP-fixed mutants of ARA6 and ARA7, respectively.\n\nFour coiled-coil domains were predicted in the PUF2 protein using a simple modular architecture research tool (SMART, http://smart.embl.de/) (Letunic et al., 2015; Schultz et al., 1998), although PUF2 contained no known functional domain. We subsequently examined whether these coiled-coil regions are responsible for the interaction with ARA6. Truncated PUF2 containing only the fourth coiled-coil region was isolated in the yeast two-hybrid screening. Consistently, truncated PUF2 containing the other coiled-coil region did not interact with ARA6 (Figure 1D). Furthermore, full-length PUF2 did not interact with ARA6, which may indicate that these regions negatively regulate the interaction between ARA6 and PUF2. We did not detect interactions between any PUF2 constructs and ARA7 (Figure 1\u2014figure supplement 1).\n\n### PUF2 preferentially colocalizes with canonical RAB5 on endosomes\n\nTo investigate the subcellular localization of PUF2, we observed transgenic plants expressing GFP-tagged PUF2 under the regulation of its own regulatory elements (promoter, introns, and terminator), thus retaining the authentic function of PUF2 as described below. As shown in Figure 2A, PUF2 localized to punctate organelles in the cytoplasm, which dilated with the application of wortmannin (Wm; a phosphatidylinositol-3 and -4 kinase inhibitor) and aggregated into so-called BFA bodies with brefeldin A (BFA; an ARF GEF inhibitor) treatment. These drug responses were similar to those of multivesicular endosomes bearing ARA6 and/or ARA7 (Ebine et al., 2011; Grebe et al., 2003; Ito et al., 2012; Jaillais et al., 2008). The endosomal nature of the PUF2-positive compartments was also supported by their accessibility to an endocytic tracer FM4-64 (Figure 2A, arrowheads).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig2-v1.jpg)\n\n**Figure 2.:** (A) Subcellular localization of PUF2-GFP in root epidermal cells (far-left panel). PUF2-localizing compartments were sensitive to the PI3K inhibitor Wm and an ARF GEF inhibitor, BFA. The PUF2-bearing compartments (green) were accessible to the endocytic tracer FM4-64 (magenta) (far-right panel). Bars\u00a0=\u00a05 \u00b5m. (B) Localization pattern of PUF2-GFP in relation to mRFP-tagged ARA6, ARA6Q93L, ARA6S47N, ARA7, SYP43 (trans-Golgi network marker), and ST (trans-Golgi marker). Puncta bearing only PUF2 and ARA6/ARA6Q93L are indicated with arrows and arrowheads, respectively. Bars\u00a0=\u00a05 \u00b5m. (C) Localization of PUF2-GFP (gray or blue), ARA6-Venus (green), and mRFP-ARA7 (red) in transgenic plants expressing all three tagged proteins. Arrowheads indicate endosomes bearing only ARA6. Bars\u00a0=\u00a05 \u00b5m. (D and E) Responses of PUF2-positive endocytic compartments to Wm or BFA in the ara6-1 (D) and vps9a-2 (E) mutants. PUF2-GFP (green) localized to endocytic compartments stained with FM4-64 (magenta) in these mutants (far-right panels). Bars\u00a0=\u00a05 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Bar graph representing the colocalization frequencies of PUF2 and RAB5s. Transgenic lines expressing ARA6-GFP and ARA6-mRFP were analyzed as positive controls. The frequency is presented as the percentage of the number of colocalized dots over the total number of GFP or mRFP dots. Different letters in each column indicate significant difference at p<0.05 by Tukey\u2019s test. Error bars indicate\u00a0\u00b1the standard deviation.\n\nWe next compared the subcellular localization of PUF2 and ARA6 or ARA7 in transgenic plants coexpressing fluorescently tagged proteins. PUF2 exhibited good colocalization with both RAB5 members (Figure 2B). PUF2 also colocalized with GTP-fixed ARA6 but not with GDP-fixed ARA6. Interestingly, we occasionally observed PUF2-positive puncta without ARA6 (Figure 2B, arrows in upper panels), whereas PUF2 demonstrated almost complete colocalization with ARA7 (Figure 2B, lower left panel). Quantification of the colocalization confirmed our observation; specifically, 83.4 \u00b1 4.2% (mean\u00a0\u00b1SD; n\u00a0=\u00a04 independent images, including 70 to 377 endosomes) of PUF2-GFP puncta overlapped with ARA6-mRFP, whereas 96.7 \u00b1 1.7% (mean\u00a0\u00b1SD; n\u00a0=\u00a04 independent images, including 151 to 304 endosomes) of PUF2-GFP puncta colocalized with mRFP-ARA7 (Figure 2\u2014figure supplement 1). Thus, PUF2 colocalized more fully with ARA7 than with ARA6 (p<0.05, Tukey\u2019s test). The colocalization ratio between ARA7 and PUF2 was comparable to that between GFP- and mRFP-tagged ARA6, indicating nearly perfect colocalization. Next, we generated transgenic plants coexpressing PUF2-GFP, ARA6-Venus, and mRFP-ARA7 and again observed endosomes bearing only ARA6 (Figure 2C, arrowheads), whereas PUF2 exhibited nearly perfect colocalization with ARA7 (Figure 2\u2014figure supplement 1). PUF2 did not colocalize with the trans-Golgi network marker mRFP-SYP43 and the trans-Golgi cisternae marker ST-mRFP (Boevink et al., 1998; Uemura et al., 2012; Uemura et al., 2004; Wee et al., 1998); Figure 2B, lower middle and right panels).\n\n### Endosomal localization of PUF2 does not require RAB5 activity\n\nTo determine whether the endosomal localization of PUF2 requires RAB5 activity, we observed the localization of PUF2-GFP expressed in mutants of ARA6 and the common activator of all RAB5 members in Arabidopsis, VPS9a (Goh et al., 2007). In ara6-1 mutant plants, PUF2-GFP localized to punctate compartments, which were swollen and aggregated after treatment with Wm and BFA, respectively, and were labeled with FM4-64 as observed in wild-type plants (Figure 2D, arrowheads). PUF2-GFP also exhibited the same responses to drugs and FM4-64 accessibility in the vps9a-2 mutant (Figure 2E). Thus, ARA6 and canonical RAB5 activities are not required for the recruitment of PUF2 onto endosomes.\n\n### Cooperation between PUF2 and RAB5 is required for plant development\n\nWe next examined the effects of the loss of PUF2 function using a puf2 mutant, in which PUF2 was not detected at either the mRNA or protein level (Figure 3\u2014figure supplement 1A\u2013C). The puf2 mutant exhibited no macroscopic abnormalities under normal laboratory conditions (Figure 3\u2014figure supplement 1D). Thus, we explored the potential genetic interactions between PUF2 and the two RAB5 groups. The puf2 ara6-1 double mutant was indistinguishable from wild-type, puf2, and ara6-1 plants. By contrast, the puf2 rha1 double mutation resulted in dwarfism (Figure 3A), suggesting that the functions of PUF2 and canonical RAB5 lie in the same trafficking pathway.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig3-v1.jpg)\n\n**Figure 3.:** (A) Genetic interactions between PUF2 and ARA6 or RHA1. Fourteen-day-old plants are shown. Bar\u00a0=\u00a01 cm. (B) Genetic interaction between PUF2 and SYP22. The puf2 mutation aggravated the phenotype of the syp22-1 mutant. The top view of the plants is shown in the inset. Thirty-five-day-old plants are shown. Bars\u00a0=\u00a05 cm. (C) Genetic interaction between PUF2 and VPS9a. Hemizygous mutation of puf2 (puf2+/\u2212) aggravated the vps9a-2 phenotype. Sixteen-day-old seedlings are shown. Bar\u00a0=\u00a01 cm. (D) Seed pods collected from wild-type, puf2, vps9a-2 and puf2 vps9a-2+/\u2212 plants. Approximately a quarter of the seeds collected from the puf2 vps9a-2+/\u2212 plants exhibited a brown and deflated appearance (arrowheads). (E) Embryogenesis of the puf2 vps9a-2 double mutant was delayed and terminated at the globular stage. Corresponding images in the upper and lower sets represent normal and abnormal embryos collected from the same seedpods at different developmental stages. Bars\u00a0=\u00a050 \u00b5m. (F) Overexpression of PUF2 rescued defective primary root elongation of the vps9a-2 mutant. Ten-day-old seedlings are presented. Bar\u00a0=\u00a01 cm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic structure of the PUF2 gene and position of the T-DNA insertion. LB; left border, RB; right border. (B) RT-PCR analysis of PUF2 expression in 10-day-old seedlings. Expression of the full-length PUF2 CDS was not detected in puf2. Expression of TUA3 was examined as an internal control. WT; wild-type. (C) Immunoblot of plant lysates prepared from 10-day-old wild-type (WT) and puf2 seedlings using an anti-PUF2 antibody. The arrowhead indicates the PUF2 protein. (D) Phenotype of the puf2 single mutant. Thirty-five-day-old plants are shown. Bar\u00a0=\u00a05 cm. (E) Complementation of the puf2 mutation with a genomic fragment of PUF2. The puf2 syp22-1 mutant plant was transformed. Sixty-two-day-old plants are shown. Bar\u00a0=\u00a05 cm. (F) Expression of PUF2 (arrowhead) was confirmed by immunoblotting analysis using an anti-PUF2 antibody. Expression of histone 3B (H3B) was examined as an internal loading control. Asterisk indicates the non-specific band. (G) A genomic fragment containing PUF2 was introduced into the puf2 vps9a-2+/\u2212 mutant. The genotypes of T1 plants were analyzed by performing PCR-based genotyping to select transgenic lines with the puf2 vps9a-2 double mutation. The lethal phenotype of puf2 vps9a-2 was rescued by PUF2 (left panel) or GFP-tagged PUF2 expressed through the PUF2 promoter (middle and right panels). Fourteen-day-old seedlings are shown. Bars\u00a0=\u00a01 cm. (H) Expression of the PUF2 product was confirmed by performing immunoblotting analysis using an anti-PUF2 antibody. Expression of H3B was examined as an internal loading control. The arrowhead indicates GFP-tagged PUF2. (I) PUF2 expression levels in the plants shown in Figure 3F were examined by performing immunoblotting analysis. Expression of H3B was examined as an internal loading control. The black and white arrowheads indicate full-length and truncated VPS9a, respectively. (J) Quantification of primary root length presented in Figure 3F. Error bars indicate\u00a0\u00b1SE.\n\nWe previously demonstrated that ara6-1 and ara7/rha1 mutations exerted opposing effects on syp22-1, a mutation in a SNARE protein mediating membrane fusion at the vacuole, and vps9a-2; ara7 and rha1 exaggerated the deleterious phenotypes of syp22-1 and vps9a-2, whereas ara6-1 remedied these phenotypes (Ebine et al., 2011). If PUF2 is a downstream effector mediating ARA6 function, then loss of PUF2 function should exert effects similar to that of ara6-1 on syp22-1 and vps9a-2 mutations. However, contrary to this hypothesis, the puf2 syp22-1 double mutant exhibited more severe wavy-rosette and late-flowering phenotypes than the syp22-1 mutant (Figure 3B), which were restored by introducing the genomic sequence of PUF2 (Figure 3\u2014figure supplement 1E and F). A similar synergistic genetic interaction was also observed between puf2 and vps9a-2; the hemizygous puf2 mutation aggravated the growth phenotypes of vps9a-2, resulting in seedling lethality (Figure 3C). Conversely, the puf2 mutant harboring the hemizygous vps9a-2 mutation (puf2 vps9a-2+/\u2212) exhibited no discernable abnormality, enabling segregation analysis. The observation of developing seeds in seedpods of the puf2 vps9a-2+/\u2212 mutant revealed that approximately one-fourth of the seeds exhibited a brownish and shriveled appearance (normal:abnormal\u00a0=\u00a076:25, n\u00a0=\u00a0101 seeds, p<0.001, chi-square test, \u03c72\u00a0=\u00a067.7) (Figure 3D), indicating that the double mutation resulted in halted embryogenesis. We subsequently observed embryos collected from puf2 vps9a+/\u2212\u00a0seedpods. Although we were unable to distinguish double mutants from their normal siblings at the globular stage, double-mutant embryos exhibited severe developmental retardation at later developmental stages (Figure 3E). The embryonic lethality of the puf2 vps9a-2 mutant was restored after introducing a genomic fragment containing PUF2 (Figure 3\u2014figure supplement 1G and H).\n\nSimilar complementation was also observed for the genomic PUF2 fragment, in which cDNA for GFP was inserted after the start codon or in front of the stop codon, indicating the functionality of GFP-tagged PUF2. An intimate genetic interaction between PUF2 and VPS9a was also observed in this overexpression experiment: overexpressed PUF2 partially rescued the defective growth of vps9a-2 (Figure 3F, Figure 3\u2014figure supplement 1I and J). As the deleterious phenotype of vps9a-2 reflects the defective activation of canonical RAB5s rather than ARA6 (Goh et al., 2007), this genetic evidence indicates that PUF2 acts in the same trafficking event as canonical RAB5, although PUF2 preferentially interacts with GTP-bound ARA6.\n\n### Impact of the puf2 mutation on vacuolar transport\n\nCanonical RAB5 acts during the transportation of soluble cargos such as 12S globulin and GFP-CT24 to protein storage vacuoles in Arabidopsis seeds, a process that also involves SYP22 (Ebine et al., 2011; Ebine et al., 2014; Ebine et al., 2008). If PUF2 indeed acts in the same trafficking pathway as canonical RAB5 and SYP22, then mutations in PUF2 would synergistically affect the transport of vacuolar cargos in syp22-1. We verified this hypothesis by examining the accumulation of storage protein precursors in a puf2 syp22-1 double mutant. Although processing of storage proteins was not markedly affected in the puf2 mutant (Figure 4A), precursor proteins with larger molecular masses were observed in the puf2 syp22-1 double mutant (Figure 4A, arrowhead). Immunoblot analysis using an anti-12S globulin antibody also revealed the accumulation of 12S globulin precursors in puf2 syp22-1 and puf2+/\u2212\u00a0vps9a-2, as observed in rha1 syp22-1 and vps9a-2 mutants (Figure 4B and Figure 4\u2014figure supplement 1A). The synergistic interaction between puf2 and syp22 or vps9a-2 mutations was also evident in the mis-secreted GFP-CT24 observed in the seeds of puf2 syp22-1 and puf2+/\u2212\u00a0vps9a-2 plants (Figure 4C, Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig4-v1.jpg)\n\n**Figure 4.:** (A) CBB staining of total seed proteins. Unprocessed precursors of storage proteins with large molecular masses were detected in puf2 syp22-1 seeds (arrowhead). The asterisk indicates bands for processed storage proteins. (B) Immunoblotting detection of 12S globulin in seed proteins. Precursors of 12S globulin (p12S, arrowhead) accumulated in puf2 syp22-1 seeds. (C) Distribution of SP-GFP-CT24 in wild-type, syp22-1, puf2, and puf2 syp22-1 embryonic cells. SP-GFP-CT24 (green) was mis-secreted into the extracellular space in the puf2 syp22-1 double mutant. Autofluorescence from protein storage vacuoles is presented in magenta. Bars\u00a0=\u00a05 \u00b5m. (D) Distribution of PIN2-GFP in wild-type, puf2, vps9a-2 and puf2+/\u2212\u00a0vps9a-2 root cells. Plants were grown vertically under dark conditions for 48 hr prior to observation. Bars\u00a0=\u00a05 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Immunoblotting analysis of seed proteins collected from WT, vps9a-2, puf2+/\u2212\u00a0vps9a-2, and puf2 using an anti-12S globulin antibody. High levels of the precursors of 12S globulin (arrowhead) accumulated in puf2+/\u2212\u00a0vps9a-2 plants. The asterisk indicates bands for processed 12S globulin. The graph on right shows the quantification of the ratio of 12S globulin signal precursors (p) to the total 12S globulin signal (p+m). Error bars indicate\u00a0\u00b1\u00a0the standard deviation. (B) puf2+/\u2212\u00a0vps9a-2 seeds expressing SP-GFP-CT24 exhibited brighter fluorescence compared to vps9a-2 seeds expressing the same cargo protein (upper panel). SP-GFP-CT24 accumulated in the extracellular space in the embryos of vps9a-2 and puf2+/\u2212\u00a0vps9a-2 mutants (lower panels). Autofluorescence from protein storage vacuoles is shown in magenta. Bars\u00a0=\u00a05 \u00b5m. (C) Quantification of vacuolar accumulation of PIN2-GFP in wild-type (WT), puf2, vps9a-2, and puf2+/\u2212\u00a0vps9a-2 presented by the box plot. Different letters in each column indicate significant difference at p<0.05 by Tukey\u2019s test.\n\nSynergistic enhancement of the trafficking defect in vps9a-2 by puf2 was also observed in vegetative tissue. It is possible to monitor the constitutive transport of PIN2-GFP from the plasma membrane to the vacuole by the accumulation of GFP fluorescence in the vacuole of root epidermal cells of dark-grown wild-type and puf2 mutant plants (Kleine-Vehn et al., 2008; Tamura et al., 2003; Figure 4D). Weaker fluorescence was observed in vps9a-2 plants than in wild-type and puf2 plants, indicating partial impairment of the endocytic pathway as previously reported (Inoue et al., 2013). This trafficking defect was substantially enhanced by hemizygous puf2 mutation; fluorescence in the vacuole was barely detected, and PIN2-GFP accumulated at punctate or ring-shaped compartments, which likely represent endosomal compartments in the puf2+/\u2212\u00a0vps9a-2 mutant (Figure 4D, Figure 4\u2014figure supplement 1C). These results confirmed that PUF2 acts in the vacuolar/endocytic trafficking pathway with canonical RAB5 and SYP22.\n\n### PUF2 also interacts with VPS9a\n\nThe observation that PUF2 acts in the same trafficking pathway as canonical RAB5, even though this protein was isolated as an ARA6 effector, prompted us to determine whether PUF2 integrates the functions of plant-unique and canonical RAB5 groups at endosomes. Therefore, we examined the interactions between PUF2 and other RAB5-related molecules and observed that PUF2 also interacted with VPS9a in a yeast two-hybrid assay (Figure 5A). Deletion analysis revealed that this interaction was mediated by the N-terminal coiled-coil region of PUF2 and was distinct from the interaction with GTP-bound ARA6 mediated by the C-terminal coiled-coil region (Figure 1D, Figure 5A, Figure 5\u2014figure supplement 1). The in planta interaction between PUF2 and VPS9a was also confirmed by performing co-immunoprecipitation analysis (Figure 5B). This interaction was direct: bacterially expressed and purified GST-tagged PUF237-127, which contained the N-terminal coiled-coil region, pulled down purified HA-tagged\u00a0VPS9a, while PUF2461-639, which contained the C-terminal coiled-coil region, did not (Figure 5C). Furthermore, VPS9a and PUF2 colocalized at a subpopulation of endosomes bearing ARA6 (Figure 5D, arrowheads).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig5-v1.jpg)\n\n**Figure 5.:** (A) Yeast two-hybrid interaction between PUF2 and VPS9a. PUF2 containing each coiled-coil region was expressed as a fusion protein with the AD, and VPS9a was expressed as a fusion with the BD in the yeast strain AH109. Interactions were tested using the HIS3 reporter gene. Black boxes indicate coiled-coil regions. (B) Plant lysates prepared from transgenic plants expressing PUF2-GFP (black arrowhead) or free GFP (white arrowhead) were subjected to immunoprecipitation with an anti-GFP antibody, followed by immunoblotting using the indicated antibodies. (C) The interaction between PUF2 and VPS9a was detected using an in vitro binding assay. Yeast lysate containing VPS9a-HA was subjected to a pull-down assay with GST-fused truncated PUF2 protein. VPS9a-HA interacted with PUF2 37\u2013127 aa containing the N-terminal coiled-coil region but not with PUF2 461\u2013639 aa containing the C-terminal coiled-coil region. VPS9a-HA did not interact with GST. Loading was performed with 1% input. (D) Localization of VPS9a-Venus (green), ARA6-mRFP (red), and PUF2-GFP (blue) expressed in the same plant. VPS9a and PUF2 colocalized on a subpopulation of ARA6-positive endosomes. Bars\u00a0=\u00a05 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The PUF2 constructs shown in Figure 1\u2014figure supplement 1A were expressed as fusion proteins with the AD, and VPS9a was expressed as the fusion protein with the BD in the yeast strain AH109. Their interaction was tested using the HIS3 reporter gene. (B) Effects of N-terminal (PUF21-211-GFP) and C-terminal (PUF2388-672-GFP) coiled-coil regions of PUF2 on vacuolar transport of sporamin-Venus (green) in protoplasts prepared from Arabidopsis suspension cultured cells. Vacuolar signal from sporamin-Venus (green) was reduced when co-expressed with tagRFP-ARA7S24N or PUF21-211-GFP (magenta), whereas co-expression of GFP, full-length PUF2 tagged with GFP (PUF2-GFP), or PUF2388-678-GFP (magenta) did not markedly affect the vacuolar transport of sporamin. Bars\u00a0=\u00a05 \u00b5m. (C) The defective vacuolar transport of sporamin-Venus (green) caused by PUF21-211-GFP (red) was rescued by co-expression of VPS9a-tagRFP (blue, upper panels), but not by tagRFP alone (blue, lower panels). Bars\u00a0=\u00a05 \u00b5m. (D) Quantification of vacuolar sporamin-Venus signals presented by box plot. Protoplasts with the vacuole occupying 50% to 75% of the cell volume were analyzed. Different letters in each column indicate significant difference at p<0.05 by Tukey\u2019s test.\n\nTo verify the significance of the interaction between PUF2 and VPS9a in vacuolar trafficking, we tested the effect of overexpression of the N-terminal coiled-coil region of PUF2 on vacuolar transport of sporamin. When expressed in Arabidopsis suspension cultured cells, sporamin tagged with Venus predominantly accumulated in vacuoles, which was inhibited by co-expression of dominant-negative ARA7 (ARA7S24N) (Figure 5\u2014figure supplement 1B and D). The N-terminal coiled-coil of PUF2 exerted a similar effect to ARA7S24N (Figure 5\u2014figure supplement 1B and D). This effect should be attributed to titration of VPS9a by the PUF2 N-terminus, because the deleterious effect was suppressed by co-expressing VPS9a-tagRFP, but not by tagRFP alone (Figure 5\u2014figure supplement 1C and D). Co-expression of GFP, GFP-tagged full-length PUF2, and the C-terminal coiled-coil region of PUF2 where PUF2 interacts with ARA6 did not exhibit an inhibitory effect on vacuolar trafficking of sporamin. These results indicated functional significance of the interaction of PUF2 with VPS9a at the N-terminal region in vacuolar transport in Arabidopsis.\n\n### PUF2 recruits VPS9a to endosomes\n\nTo investigate the effects of the puf2 mutation on VPS9a localization, we expressed VPS9a-GFP in the null alleles of the vps9a mutant vps9a-1 (Goh et al., 2007) and the puf2 vps9a-1 double mutant under regulation of the VPS9a promoter, which complemented VPS9a function by comparable expression levels of VPS9a-GFP (Figure 6\u2014figure supplement 1A). In root epidermal cells of puf2 vps9a-1, the endosomal population of VPS9a-GFP was significantly reduced compared to that in vps9a-1 cells [14.3\u00a0\u00b1\u00a01.9 puncta per cell slice in vps9a-1 (mean\u00a0\u00b1SD, n\u00a0=\u00a06 independent images, each of which contained five cells) versus 5.4\u00a0\u00b1\u00a02.1 puncta in puf2 vps9a-1 (mean\u00a0\u00b1SD, n\u00a0=\u00a06 independent images, each of which contained five cells), p<0.01, Student\u2019s t-test] (Figure 6A). The remaining VPS9a-GFP-positive dots in puf2 vps9a-1 plants were sensitive to BFA treatment; however, endosome dilation was rarely observed after Wm treatment (Figure 6A, middle and right panels), although VPS9a-positive puncta retained their endosomal identity as demonstrated by ARA6 localization (Figure 6B). We did not observe a noticeable difference in VPS9a-GFP fluorescence in lateral root cap cells between the vps9a-1 and puf2 vps9a-1 mutants (Figure 6\u2014figure supplement 1B), likely reflecting distinct PUF2 requirements in different tissues.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig6-v1.jpg)\n\n**Figure 6.:** (A) Localization of VPS9a-GFP in the root epidermal cells of vps9a-1 and vps9a-1 puf2 plants treated with DMSO, BFA, or Wm. Bars\u00a0=\u00a05 \u00b5m. (B) Localization of VPS9a-Venus (green) and ARA6-mRFP (magenta) in vps9a-1 ara6-1 and vps9a-1 ara6-1 puf2 cells. Arrowheads indicate endosomes bearing both VPS9a-GFP and ARA6-mRFP. Bars\u00a0=\u00a05 \u00b5m. (C) Overexpression of PUF2-GFP recruits VPS9a onto punctate compartments in protoplasts. VPS9a-tagRFP (magenta) was localized to punctate structures following the overexpression of PUF2-GFP (green) and dispersed throughout the cytosol in the absence of PUF2-GFP. Bars\u00a0=\u00a05 \u00b5m. (D) Localization of ARA6-GFP (green) and mRFP-ARA7 (magenta) in the root epidermal cells of the puf2 mutant treated with DMSO (\u2212Wm) or Wm (+Wm). Bars\u00a0=\u00a05 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The expression levels of VPS9a-GFP in vps9a-1 and puf2 vps9a-1 were comparable. The expression of H3B was examined as an internal loading control. The arrowhead indicates VPS9a-GFP, and the asterisk indicates the non-specific band. (B) Distribution of VPS9a-GFP in vps9a-1 and puf2 vps9a-1 lateral root cap cells. Bar\u00a0=\u00a05 \u00b5m. (C) Effects of GFP-VAMP727 (green) overexpression on the localization of VPS9a-tagRFP (magenta) in protoplasts of Arabidopsis suspension-cultured cells. Bar\u00a0=\u00a05 \u00b5m. (D) Histogram depicting the size distribution of dilated ring-shaped structures following Wm treatment in WT (yellow) and puf2 (green) plants. The Feret\u2019s diameters of the structures were measured using ImageJ software.\n\nAccording to the results described above, PUF2 promotes the recruitment of VPS9a onto the endosome. This was further confirmed using a transient expression system in protoplasts, in which fluorescently tagged VPS9a (VPS9a-tagRFP) failed to localize on endosomes with dispersed distribution in the cytosol (Figure 6C, upper panels). When PUF2-GFP was coexpressed with VPS9a-tagRFP, VPS9a was recruited to PUF2-positive compartments (Figure 6C, lower panels), whereas coexpression of another endosomal protein, GFP-VAMP727, did not affect the cytosolic localization of VPS9a (Figure 6\u2014figure supplement 1C). Thus, PUF2 facilitates the localization of VPS9a onto endosomes.\n\n### PUF2 is required for endosomal fusion induced by Wm\n\nReduced endosomal localization of VPS9a in puf2 may lead to inefficient activation of RAB5 on the endosomal membrane. This hypothesis was verified by examining Wm-induced endosomal fusion (Wang et al., 2009) in the puf2 mutant. Although the distribution of ARA6-GFP and mRFP-ARA7 was not markedly affected in DMSO-treated puf2 mutant cells (Figure 6D, left panels), the diameters of the dilated endosomes induced by Wm treatment were significantly reduced by approximately 30% [1.98\u00a0\u00b1\u00a00.06 \u00b5m in wild-type (n\u00a0=\u00a083 dilated endosomes) versus 1.60\u00a0\u00b1\u00a00.03 \u00b5m in mutant cells (n\u00a0=\u00a0206 dilated endosomes), mean\u00a0\u00b1SD, p<0.01, Student\u2019s t-test] (Figure 6D, right panels). A histogram of the diameters of the dilated endosomes also showed a shift in the peak to the smaller population in the puf2 mutant (Figure 6\u2014figure supplement 1D). Thus, recruitment of VPS9a to the endosomal membrane by PUF2 is required for efficient RAB5 activation, which is likely necessary for Wm-mediated endosomal fusion.\n\n### PUF2 integrates the activities of two RAB5 groups in plants\n\nAccording to the results described above, PUF2 integrates the functions of ARA6 and canonical RAB5 via the common activator VPS9a; therefore, we next undertook further genetic and biochemical tests. We previously reported that loss of function of ARA6 suppressed the vps9a-2 mutation, whose mechanism remains unknown (Ebine et al., 2011; Figure 7). Here, we examined whether the suppression exerted by the ara6-1 mutation requires PUF2. We analyzed genotypes of progenies generated by the self-pollination of ara6-1 vps9a-2 puf2+/\u2212 plants and observed that the ara6-1 puf2 vps9a-2 triple mutant was embryonically lethal (ara6-1 vps9a-2 puf2+/+:ara6-1 vps9a-2 puf2+/\u2212:ara6-1 vps9a-2 puf2\u2212/\u2212\u00a0=\u00a059:110:0, n\u00a0=\u00a0169, p<0.001, chi-square test, \u03c72\u00a0=\u00a015.4) (Figure 7A). Thus, PUF2 is required for the suppression of vps9a-2 by ara6-1, and the suppression activity of ara6-1 is exerted through PUF2. Consistently, the puf2+/\u2212\u00a0vps9a-2 growth defect was partially suppressed by the ara6-1 mutation (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig7-v1.jpg)\n\n**Figure 7.:** (A) Seed pods collected from wild-type, ara6-1 vps9a-2, and ara6-1 vps9a-2 puf2+/\u2212 plants. Arrowheads indicate brown and deflated seeds in a seed pod from the ara6-1 vps9a-2 puf2+/\u2212 plant. (B) Fourteen-day-old seedlings with the indicated genotypes. Bar\u00a0=\u00a01 cm. (C) Interaction between ARA7S24N and PUF2 pre-incubated with ARA6Q93L. The assay was performed as described for Figure 1B, but PUF2 was pre-incubated with 0 pmol, 25 pmol or 50 pmol ARA6Q93L before mixing with GST-ARA7S24N. Loading was performed with 1.5% input. (D) Quantification of the band intensities of PUF2, calibrated based on the band intensities of GST-ARA7S24N. The error bar indicates the mean\u00a0\u00b1SD. *, p<0.05. (F) Proposed model for the integration of two plant RAB5 groups mediated by PUF2. PUF2 recruits VPS9a and the inactive form of canonical RAB5 onto the endosome, leading to the efficient activation of canonical RAB5 and RAB5-dependent trafficking events. GTP-bound active ARA6 negatively regulates this process by competitively binding to the PUF2-VPS9a complex.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34064/elife-34064-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Dosage-dependent reduction of the interaction between ARA7S24N and PUF2 by ARA6Q93L. PUF2 was pre-incubated with 0, 25, 50, 100, or 200 pmol ARA6Q93L and 10 \u00b5M GTP\u03b3S before mixing with GST-ARA7S24N. 2% input was also loaded (input). (B) Interaction between ARA7S24N and PUF2 pre-incubated with non-interactive RAB5, ARA6S47N (left) or ARA7Q69L (right). PUF2 was pre-incubated with 0 pmol or 50 pmol non-interactive RAB5 and 10 \u00b5M GDP (for ARA6S47) or GTP (for ARA7Q69L) before mixing with GST-ARA7S24N. 2% input was also loaded (input).\n\nTogether, these results suggest that PUF2 promotes canonical RAB5-mediated endosomal transport by assembling VPS9a and GDP-bound canonical RAB5 on the endosomal membrane, thereby facilitating the activation of canonical RAB5 on the endosome. GTP-bound ARA6 negatively regulates this process by titrating PUF2, as shown by the effects of different concentrations of ARA6Q93L on binding between GST-ARA7S24N and PUF2. As the amount of ARA6Q93L increased, the amount of PUF2 pulled down by GST-ARA7S24N decreased (57.5 \u00b1 34.1% band intensity, n\u00a0=\u00a04 independent experiments, p<0.05; Figure 7C and D, Figure 7\u2014figure supplement 1A). ARA6S47N and ARA7Q69L, non-interactive RAB5 partners of PUF2, did not hamper the interaction between PUF2 and ARA7S24N (Figure 7\u2014figure supplement 1B). Thus, ARA6 in its active state interferes with the assembly of GDP-bound ARA7, PUF2, and likely VPS9a by competitively binding to PUF2 to diminish endosomal transport mediated by canonical RAB5.\n\n## Discussion\n\nThe existence of two RAB5 groups with distinct functions, specifically the canonical and plant-unique RAB5 groups, is a unique characteristic of the plant membrane trafficking system. These RAB5 groups share the upstream regulator VPS9a, containing the VPS9 domain, which is also conserved in activating factors for RAB5 in animal systems (Carney et al., 2006; Goh et al., 2007; Ishida et al., 2016). In animal cells, several VPS9 domain-containing proteins with distinct domain structures regulate Rab5 activity in different endocytic trafficking processes. In plant cells, by contrast, the single activating factor VPS9a coordinates two plant RAB5 groups during vacuolar and endosomal transport, whose molecular mechanisms remain unknown. In the present study, we identified a novel ARA6 effector, PUF2, which acts as a keystone to integrate the functions of two plant RAB5 groups together with VPS9a on the endosomal membrane. PUF2 captures inactive canonical RAB5 and VPS9a on the endosomal membrane, leading to efficient activation of canonical RAB5 and the enhancement of vacuolar transport from endosomes to the vacuole. ARA6, the plant-unique RAB5 in Arabidopsis, diminishes this process by competitively binding to PUF2 in its GTP-bound state against GDP-bound canonical RAB5, thus balancing the distinct canonical RAB5- and ARA6-mediated endosomal transport pathways in plant cells (Figure 7E).\n\nNo striking homologs of PUF2 have been observed in sequence databases of non-plant systems, suggesting that PUF2 was uniquely acquired by the plant lineage. However, PUF2 shares several characteristics with the animal Rab5 effector protein Rabaptin-5/RABEP1, and both proteins contain four coiled-coil regions. Furthermore, both PUF2 and Rabaptin-5/RABEP1 interact with GTP-bound Rab5 members at one of the coiled-coil regions and also interact with their activating factors at another coiled-coil region (Horiuchi et al., 1997). Rabaptin-5 directly binds to the active form of another Rab GTPase, Rab4, at a distinct coiled-coil region from Rab5, suggesting coordination of the two endosomal Rab GTPase functions by this molecule. Although these data suggest functional similarities between PUF2 and Rabaptin-5, PUF2 appears to preferentially interact with inactive canonical RAB5, and GTP-bound active ARA6 represses the action of canonical RAB5 via competitive binding to PUF2. Furthermore, PUF2 interacts with ARA6 and VPS9a at its C-terminal and N-terminal coiled-coil regions, respectively, whereas Rabaptin-5 interacts with Rab5 and Rabex-5 at its fourth and third coiled-coil regions, respectively (Mattera et al., 2006; Vitale et al., 1998). Rabaptin-5 promotes Rab5 activation by alleviating the autoinhibition of Rabex-5 (Delprato and Lambright, 2007; Lipp\u00e9 et al., 2001), resulting in additional Rab5 activation to form an active RAB5 domain on the endosomal membrane. Thus, the mechanisms utilized by PUF2 and Rabaptin-5 are completely different. The downregulation of a Rab GTPase by another Rab GTPase via competitive binding with an effector and a common GEF has not previously been reported. These findings demonstrate that plants have developed specific mechanisms to regulate RAB5 GTPases by acquiring two plant-unique machinery components, ARA6 and PUF2, to participate in the underlying mechanism of endocytic pathway regulation in plants.\n\nAlthough efficient recruitment of VPS9a to the endosome requires PUF2, it is not yet clear how PUF2 is targeted to the endosomal membrane. In the case of Rabaptin-5, Rabaptin-5 interacts with several proteins in addition to Rab5, Rab4, and Rabex-5, including Rabphillin-3 (a Rab3 effector: Ohya et al., 1998), \u03b3-adaptin, and GGA (Golgi-localizing, \u03b3-adaptin ear homology domain, ARF-binding proteins) (Mattera et al., 2003). The similarity between PUF2 and Rabaptin-5 at the amino acid sequence level is low, and their modes of actions are divergent, but PUF2 may also have other interacting partners because proteins with multiple coiled-coil regions frequently interact with multiple proteins. In the future, it would be interesting to isolate molecules responsible for the upstream regulation of plant RAB5 groups by recruiting PUF2 onto the endosomal membrane. Further screening and characterization of other binding partners of PUF2 is needed. We recently observed an effector of canonical RAB5 in Arabidopsis, EREX, which appears to act only during embryogenesis and early developmental stages (Sakurai et al., 2016), suggesting canonical RAB5 utilizes several distinct effector proteins at different developmental stages. ARA6 may also exert its function by interacting with multiple effector proteins, and the identification and analysis of other ARA6 effectors will allow us to understand the precise molecular mechanisms underlying ARA6 functioning. Such approaches will reveal how plants have pioneered plant-specific endosomal trafficking pathways and provide valuable information regarding the general mechanisms involved in membrane trafficking system diversification during the evolution of eukaryotic organisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>PUF2</td>\n      <td>NA</td>\n      <td>TAIR:At1g24560</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>ARA6/RABF1</td>\n      <td>NA</td>\n      <td>TAIR:At3g54840</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>RHA1/RABF2a</td>\n      <td>NA</td>\n      <td>TAIR:At5g45130</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>ARA7/RABF2b</td>\n      <td>NA</td>\n      <td>TAIR:At4g19640</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>SYP43</td>\n      <td>NA</td>\n      <td>TAIR:At3g05710</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>VPS9a</td>\n      <td>NA</td>\n      <td>TAIR:At3g19770</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>SYP22</td>\n      <td>NA</td>\n      <td>TAIR:At5g46860</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (A. thaliana)</td>\n      <td>VAMP727</td>\n      <td>NA</td>\n      <td>TAIR:At3g54300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (A.thaliana)</td>\n      <td>Deep</td>\n      <td>PMID:9681013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A.thaliana)</td>\n      <td>puf2</td>\n      <td>This paper</td>\n      <td>TAIR:SAIL_24_C10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A.thaliana)</td>\n      <td>ara6-1</td>\n      <td>PMID:21666683</td>\n      <td>TAIR:SAIL_880_C07</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A.thaliana)</td>\n      <td>rha1</td>\n      <td>PMID:17468262</td>\n      <td>TAIR:SAIL_596_A03</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A.thaliana)</td>\n      <td>syp22-1</td>\n      <td>PMID:18984676</td>\n      <td>TAIR:SALK_060946</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A.thaliana)</td>\n      <td>vps9a-2</td>\n      <td>PMID:18055610</td>\n      <td>TAIR:GABI_557C02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>AH109</td>\n      <td>PMID:8978031</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain back ground (S. cerevisiae)</td>\n      <td>YPH414</td>\n      <td>PMID:18055610</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Agrobacterium tumefaciens)</td>\n      <td>GV3101::pMP90</td>\n      <td>other</td>\n      <td></td>\n      <td>widely distributed</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH5\u03b1</td>\n      <td>PMID:6345791</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>Rosetta-gami DE3</td>\n      <td>Merck</td>\n      <td>Merck:71351-3CN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-PUF2; anti-MBP-PUF2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>(1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-12S globulin</td>\n      <td>PMID:14657332</td>\n      <td></td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA(rabbit polyclonal)</td>\n      <td>Themo Fisher Scientific</td>\n      <td>Themo Fisher Scientific:71\u20135500; RRID:AB_2533988</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GST(rabbit polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Santa Cruz Biotechnology:sc-459;RRID:AB_631586</td>\n      <td>(1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-H3B(rabbit polyclonal)</td>\n      <td>Merck</td>\n      <td>Merck: 07\u2013473; RRID:AB_1977252</td>\n      <td>(1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ARA6(rabbit polyclonal)</td>\n      <td>PMID:17468262</td>\n      <td></td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ARA7(rabbit polyclonal)</td>\n      <td>PMID:17468262</td>\n      <td></td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-RHA1(rabbit polyclonal)</td>\n      <td>PMID:21666683</td>\n      <td></td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-VPS9a(rabbit polyclonal)</td>\n      <td>PMID:18055610</td>\n      <td></td>\n      <td>(1:1,000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pHGW (vector)</td>\n      <td>PMID:11992820</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGWB (vector)</td>\n      <td>PMID:17697981</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX6P-1 (vector)</td>\n      <td>GE Healthcare</td>\n      <td>GE Healthcare:28954648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTS911 (vector)</td>\n      <td>PMID:26493488</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GAL4 Two-Hybrid Phagemid Vector Kit</td>\n      <td>Agilent Technologies</td>\n      <td>Agilent Technologies:211351</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Protein Fusion and Purification System</td>\n      <td>NewEngland BioLabs</td>\n      <td>NewEngland BioLabs:800</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>uMACS GFP isolation kit</td>\n      <td>Miltenyi Biotec</td>\n      <td>Miltenyi Biotec:130-091-288</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DSP</td>\n      <td>Themo Fisher Scientific</td>\n      <td>Themo Fisher Scientific:22585</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>PMID:22743772</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SMART</td>\n      <td>PMID:25300481</td>\n      <td>RRID:SCR_005026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Wortmannin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Sigma-Aldrich:W1628-1MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Brefeldin A</td>\n      <td>Sigma-Aldrich</td>\n      <td>Sigma-Aldrich:B7651-5MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>FM4-64</td>\n      <td>Themo Fisher Scientific</td>\n      <td>Themo Fisher Scientific:T13320</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast two-hybrid interaction assays\n\nIndividual interaction assays were performed using GAL4 Two-Hybrid Phagemid Vector Kits (Agilent Technologies, Santa Clara, California, USA) and the AH109 strain (Takara Clontech, Kusatsu, Siga, Japan). The colonies were cultured in selective medium without leucine and tryptophan (designated as \u2018+H\u2019), diluted to OD600\u00a0=\u00a00.5, and spotted onto plates containing media without leucine, tryptophan, and histidine (designated as \u2018\u2013H\u2019) as well as\u00a0+H plates. More than three independent colonies were tested for each interaction.\n\n### Plant materials and plasmids\n\nThe Arabidopsis puf2 (SAIL_24_C10) mutant was obtained from ABRC (Alonso et al., 2003) and backcrossed more than three times with wild-type Arabidopsis (Col-0) prior to use in subsequent experiments. ara6-1, rha1, syp22-1, and vps9a-2 were obtained from our lab stock. A 5.9-kbp PUF2 genomic fragment, including 2.0-kbp 5\u2019 and 0.9-kbp 3\u2019 flanking sequences, was subcloned into the pHGW vector (Karimi et al., 2002) and used for the complementation assay and overexpression analysis. The translational fusions of PUF2 with GFP and ARA6 with Venus were prepared by adding fluorescence tags to the full-length proteins (Tian et al., 2004). The cDNA for GFP was fused in front of the initiation or stop codons in the PUF2 genomic sequence as described above to produce GFP-PUF2 and PUF2-GFP, respectively. The cDNA for Venus was inserted in front of the stop codon of the 5.7 kb genomic fragment of ARA6 (At3g54840), which included a 2.7 kb promoter, exons, introns, and 3\u2019 flanking region, to generate ARA6-Venus. The chimeric fragments were subcloned into the pGWB1 vector, a kind gift from Dr T. Nakagawa (Shimane University, Japan). Transformation of Arabidopsis plants was performed by floral dipping (Clough and Bent, 1998), using the Agrobacterium tumefaciens strain GV3101::pMP90. Transgenic lines expressing ARA6-mRFP, ARA6Q93L-mRFP, ARA6S47N-mRFP, mRFP-ARA7, mRFP-SYP43, ST-mRFP, VPS9a-GFP and/or VPS9a-Venus were generated as described previously (Ebine et al., 2011; Ebine et al., 2008; Inada et al., 2016; Sunada et al., 2016; Uemura et al., 2012). Transgenic plants expressing SP-GFP-CT24 and PIN2-GFP were kind gifts from Dr S. Utsumi (Kyoto University, Japan) and Dr J. Friml (IST, Austria), respectively, and were crossed with puf2 vps9a-2+/\u2212 and puf2 syp22-1. The plants were grown on Murashige and Skoog medium [MS medium: 1\u00a0\u00d7\u00a0MS salt (Wako), 2% sucrose, 1\u00a0\u00d7\u00a0Gamborg\u2019s vitamin solution (Sigma), adjusted to pH 6.3] at 23\u00b0C under constant light.\n\n### Microscopy\n\nTransgenic plants expressing GFP-, Venus-, and/or mRFP-tagged proteins were mounted in 1/2\u00a0\u00d7\u00a0MS liquid medium and observed under an LSM710, LSM780 (Carl Zeiss, Oberkochen, Germany), or a microscope (model BX51; Olympus, Shinjuku, Tokyo, Japan) equipped with a confocal scanner unit (model ORCA-AG; Yokogawa Electric, Musashino, Tokyo, Japan). At least three different seedlings from three independent transgenic lines were observed for microscopy. For drug treatments, 5 day-old seedlings were soaked in 1/2\u00a0\u00d7\u00a0MS liquid medium containing 3.3 \u00b5M wortmannin (Sigma-Aldrich, St. Louis, Missouri, USA) or 50 \u00b5M brefeldin A (Sigma-Aldrich) for two hours or one hour, respectively. For FM4-64 labeling, 5-day-old seedlings were treated with 4 \u00b5M FM4-64 (Thermo Fisher Scientific, Waltham, MA) at 23\u00b0C for 30 min. The Feret\u2019s diameters of Wm rings were measured using ImageJ software (National Institutes of Health, Maryland, Washington, DC). Transient expression of GFP- and/or tagRFP-tagged proteins in Arabidopsis suspension cultured cells was performed as described previously (Ueda et al., 2001; Ueda et al., 2004). The Arabidopsis Col-0 suspension cultured line (Deep) was described in Mathur et al. (1998). The amounts of plasmids used for transformation were as follows: 10 \u00b5g for GFP, PUF2-GFP, PUF21-211-GFP, PUF2388-672-GFP, and Sporamin-Venus subcloned in pHTS13, 30 \u00b5g for tagRFP, VPS9a-tagRFP, and tagRFP-ARA7S24N subcloned in pHTS13, and 1 \u00b5g for GFP-VAMP727 subcloned in pUC18 (Ueda et al., 2004; Uemura et al., 2004). Ten different cells that were successfully transformed were observed. Whole-mount visualization of embryos was performed as previously described (Aida et al., 1997). To monitor the vacuolar targeting of PIN2-GFP, transgenic plants were initially grown vertically for 4 days under constant light and subsequently incubated in the dark for 48 hr. Vacuolar accumulation of PIN2-GFP or sporamin-Venus was measured using Fiji (Schindelin et al., 2012). At least five different seedlings form each line were observed.\n\n### Expression and purification of recombinant proteins\n\nARA6Q93L, ARA6S47N, ARA7Q69L, ARA7S24N, PUF2 (37\u2013127 aa), and PUF2 (461\u2013639 aa) were expressed as glutathione S-transferase (GST)-fusion proteins in Escherichia coli strain DH5\u03b1 and purified according to the manufacturer\u2019s instructions (GE Healthcare, Little Chalfont, Buckinghamshire, England). To obtain full-length PUF2 protein, the codon usage of PUF2 cDNA was optimized to that of E. coli, and subsequently codon-optimized PUF2 was subcloned into the pGEX6P-1 vector (GE Healthcare). GST-fusion protein was expressed in E. coli strain Rosetta-gami (DE3) (Merck, Darmstadt, Germany), and GST-PUF2 was digested using the PreScission protease (GE Healthcare) on resin. Eluted PUF2 was concentrated using Amicon Ultra-15 Centrifuge Filter Units (Merck).\n\n### In vitro pull-down assay\n\nGST-RAB5s (0.2 nmol), pre-bound to glutathione sepharose 4B resin (GE Healthcare), were incubated in buffer A [20 mM Tris-HCl pH, 7.5, 150 mM NaCl, 5 mM MgCl2, and 0.05% Tween-20] containing 50 mM EDTA and 100 \u00b5M GTP\u03b3S or GDP and then incubated with PUF2 (0.266 nmol) in buffer A for 30 min at room temperature. The beads were washed three times with buffer A containing 10 \u00b5M GTP\u03b3S or GDP, and bound proteins were subjected to immunoblotting analysis. For an in vitro competition assay, the ARA6Q93L, ARA6S47N, or ARA7Q69L were mixed with PUF2 and incubated in buffer A containing 10 \u00b5M GTP\u03b3S (for ARA6Q93L and ARA7Q69L) or GDP (for ARA6S47N) prior to mixing with GDP-preincubated GST-ARA7S24N. HA-tagged VPS9a was expressed in the yeast strain YPH414 (MATa \u0394pep4:TRP1 ura3 lys2 ade2 trp1 his3 leu2) under the control of the GAL1 promoter. Yeast cells were collapsed by vortexing with glass beads in PBS with protease inhibitor cocktail (GE Healthcare). The collected lysates (475 \u00b5g) were mixed with GST or GST-tagged truncate PUF2 (0.2 nmol), which were pre-bound to glutathione-Sepharose 4B resin (GE Healthcare), and incubated for 60 min at 4\u00b0C in PBS buffer containing 0.05% Tween-20 and protease inhibitor cocktail (GE Healthcare). The beads were washed three times with the same PBS buffer, and the bound proteins were subjected to immunoblotting analysis. At least three independent experiments were performed.\n\n### Immunoprecipitation\n\nT3 plants expressing PUF2-GFP were grown vertically on MS medium plates for 16 days, and 0.6 g of each sample was collected and ground in 1 ml of extraction buffer [50 mM HEPES-KOH, pH 7.5, 0.4 M sucrose, 5 mM MgCl2, protease inhibitor cocktail (Roche, Basel, Switzerland)] using sea sand. The lysates were centrifuged at \u00d71000 g to remove debris. For analysis using a chemical cross-linker, 1 mM DSP (Thermo Fisher Scientific) was added to the supernatants and incubated for 30 min at 4\u00b0C, followed by quenching using 50 mM Tris-HCl, pH 7.5, and 0.5% CHAPS was added to the lysates to solubilize the membranes. Next, 750 \u00b5l of each sample was incubated with 50 \u00b5l of anti-GFP micro beads (Miltenyi Biotec, Bergisch Gladbach, Germany) for 30 min at 4\u00b0C. The samples were loaded onto microcolumns attached to the magnetic field of a micro-MACS separator (Miltenyi Biotec) and washed four times with extraction buffer supplemented with 0.5% CHAPS. Immunoprecipitates were eluted according to the manufacturer\u2019s instructions, followed by immunoblotting. At least three independent experiments were performed.\n\n### Antibodies\n\nMBP-tagged truncated PUF2, which included amino acid residues 133 to 361, was expressed in E. coli Rosetta-gami (DE3) (Merck), purified according to the manufacturer\u2019s instructions (New England Biolabs, Ipswich, Massachsetts, USA), and subsequently used as an antigen to generate an anti-PUF2 polyclonal antibody. The obtained anti-PUF2 antibody was purified via protein G affinity column chromatography (GE Healthcare). The anti-GFP antibody was raised against GST-tagged GFP, which was expressed in E. coli Rosetta (DE3) (Merck) according to the manufacture\u2019s instructions (GE Healthcare). The obtained anti-GFP antibody was purified with HiTrap NHS-activated HP columns (GE Healthcare) conjugated with the purified GFP protein. The anti-12S globulin antibody was a kind gift from Dr\u00a0I. Hara-Nishimura (Kyoto University, Japan). Anti-HA, anti-GST, and anti-H3B antibodies were purchased from Thermo Fisher Scientific, Santa Cruz Biotechnology (Dallas, TX), and Merck, respectively. The following dilution ratios were used for each antibody in the immunoblotting experiments: anti-ARA6 (Haas et al., 2007), 1:200; anti-RAB5 (mixture of anti-RHA1 (Ebine et al., 2011), 1:1000 and anti-ARA7 (Haas et al., 2007), 1:500); anti-GFP, 1:1,000; anti-12S globulin (Shimada et al., 2003), 1:10,000; anti-VPS9a (Goh et al., 2007), 1:1,000; anti-HA, 1:500; anti-GST, 1:1,000; anti-H3B, 1:1,000; and anti-PUF2, 1:200.\n\n### Accession numbers\n\nThe Arabidopsis Genome Initiative locus identifiers for the genes utilized in this study are At1g24560 (PUF2), At3g54840 (ARA6/RABF1), At5g45130 (RHA1/RABF2a), At4g19640 (ARA7/RABF2b), At3g05710 (SYP43), At3g19770 (VPS9a) and At5g46860 (VAM3/SYP22).\n",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "0bd52277-6094-4df0-941e-bd6094efadb0",
+      "submission_id": "1282c169-0f92-4481-9ff6-662562097282",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00fcrgen Kleine-Vehn, University of Natural Resources and Life Sciences Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34064.026](https://doi.org/10.7554/eLife.34064.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Integration of Two RAB5 Groups during Endosomal Transport in Plants\" for consideration by eLife. Your article has been favorably evaluated by Christian Hardtke (Senior Editor), a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll reviewers agree that the identification of PUF2 as a novel interactor of canonical and non-canonical RAB5s and its subsequent impact on VPS9a is highly interesting. Moreover, the work is in principle of high quality and novel. However, they also all pinpoint that the titration model is not well enough supported by the presented data.\n\nWe would like to invite you to resubmit a revised version, which provides additional support for the titration model and may balance its discussion.\n\nPlease, see below the list of prioritised reviewer suggestions:\n\n1) The reviewers would like you to expand on the titration assays with more controls: The increase of the titrating agent should be demonstrated and we would like to see evidence for the GDP/GTP state dependent competition. You could compare ARA6-GDP and ARA6-GTP in their capacity to titrate the PUF2-ARA7-GDP complex. Ideally, you should do the same on a PUF2-ARA7-GTP complex or show that such a complex does not form in your in vitro system.\n\n2) To validate the scaffolding function of Puf2 in planta, the reviewers propose to use an N terminal and C terminal truncations of Puf2. If your model is correct, overexpression of the Puf2 N terminal CC domain fragment should trap Vps9 and lead to defects in vacuolar transport. Similarly, overexpression of Puf2 c terminal fragment should trap the Rabs and inhibit their activation, since Vps9 will not be recruited. We envision that transient assays would be sufficient in the course of this revision.\n\n3) Some data, such as the vacuolar accumulation of PIN2-GFP, requires detailed quantification.\n",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "86d45a09-1844-4950-ac97-3e66a812a6c7",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C1",
+      "claim": "RAB5 is a key regulator of endosomal functions in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RAB5 is a key regulator of endosomal functions in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "0a948f78-a81c-441a-8d4c-89ac30f1e3e2",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C2",
+      "claim": "Plants possess two different RAB5 groups: canonical and plant-unique types.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants possess two different RAB5 groups, canonical and plant-unique types, which act via unknown counteracting mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "a18d7e79-6e3d-40b3-8b5c-fb52107088d3",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C3",
+      "claim": "PUF2 was identified as an effector molecule of the plant-unique RAB5 ARA6 in Arabidopsis thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified an effector molecule of the plant-unique RAB5 in Arabidopsis thaliana, ARA6, which we designated PLANT-UNIQUE RAB5 EFFECTOR 2 (PUF2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "33d9f67a-aa72-4c3e-8ab9-16d985f6a69e",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C4",
+      "claim": "PUF2 preferentially colocalizes with canonical RAB5 on endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Preferential colocalization with canonical RAB5 on endosomes and genetic interaction analysis indicated that PUF2 coordinates vacuolar transport with canonical RAB5, although PUF2 was identified as an effector of ARA6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and quantified in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "c7fc5534-d477-404f-844a-e7f1d55278ec",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C5",
+      "claim": "PUF2 coordinates vacuolar transport with canonical RAB5.",
+      "claim_type": "EXPLICIT",
+      "source": "Preferential colocalization with canonical RAB5 on endosomes and genetic interaction analysis indicated that PUF2 coordinates vacuolar transport with canonical RAB5, although PUF2 was identified as an effector of ARA6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic interaction data presented in Figure 3 and vacuolar transport assays in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "21c182f9-38d1-4fac-902d-0b432483f7bc",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C6",
+      "claim": "PUF2 competitively binds with GTP-bound ARA6 and GDP-bound canonical RAB5.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive binding of PUF2 with GTP-bound ARA6 and GDP-bound canonical RAB5, together interacting with the shared activating factor VPS9a, showed that ARA6 negatively regulates canonical RAB5-mediated vacuolar transport by titrating PUF2 and VPS9a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro binding assays shown in Figure 1B, 1C, and Figure 7C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "bb03287e-28a3-4c6b-8fd4-0f71e308d9dd",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C7",
+      "claim": "PUF2 interacts with the shared activating factor VPS9a.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive binding of PUF2 with GTP-bound ARA6 and GDP-bound canonical RAB5, together interacting with the shared activating factor VPS9a, showed that ARA6 negatively regulates canonical RAB5-mediated vacuolar transport by titrating PUF2 and VPS9a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by yeast two-hybrid assays (Figure 5A), co-immunoprecipitation (Figure 5B), and in vitro binding assays (Figure 5C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "97faa257-a9b2-4a42-8749-bbca1457547b",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C8",
+      "claim": "ARA6 negatively regulates canonical RAB5-mediated vacuolar transport by titrating PUF2 and VPS9a.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive binding of PUF2 with GTP-bound ARA6 and GDP-bound canonical RAB5, together interacting with the shared activating factor VPS9a, showed that ARA6 negatively regulates canonical RAB5-mediated vacuolar transport by titrating PUF2 and VPS9a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competitive binding assays (Figure 7C, D) and genetic interaction data (Figure 7A, B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "cb16dac2-861e-4876-b877-57e07523d68c",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C9",
+      "claim": "RAB5 is conserved in a broad range of eukaryotic systems, suggesting its ancient origin in the evolution of eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "RAB5 is also conserved in a broad range of eukaryotic systems, suggesting its ancient origin in the evolution of eukaryotes (Brighouse et al., 2010; Dacks and Field, 2007; Elias, 2010; Pereira-Leal and Seabra, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "21cdb1e2-44e4-4696-8108-2250ec65b249",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C10",
+      "claim": "In plant cells, internalized proteins are initially delivered to the trans-Golgi network.",
+      "claim_type": "EXPLICIT",
+      "source": "The endocytic pathway in plant cells provides a striking example: internalized proteins are initially delivered to the trans-Golgi network (Dettmer et al., 2006), some parts of which mature into multivesiculated late endosomes that acquire RAB5 (Scheuring et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4df52f18-6a59-4a20-a7d1-1644ec106328",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C11",
+      "claim": "In animal cells, sequestered proteins are initially delivered to RAB5-positive early endosomes, which mature into RAB7-positive late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in animal cells, sequestered proteins are initially delivered to RAB5-positive early endosomes, which mature into RAB7-positive late endosomes, mediated by a RAB5 effector complex comprising SAND1/Mon1 and CCZ1 (Kinchen and Ravichandran, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "f738406e-60e6-40f0-bebf-9da49f6095f0",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C12",
+      "claim": "Arabidopsis thaliana has three RAB5 members: two canonical RAB5 members (ARA7 and RHA1) and plant-unique ARA6.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis thaliana has three RAB5 members: two canonical RAB5 members, ARA7 (aka RABF2b) and RHA1 (aka RABF2a), which act in vacuolar and endocytic transport (Dhonukshe et al., 2006; Ebine et al., 2011; Kotzer et al., 2004; Sohn et al., 2003), and plant-unique ARA6 (aka RABF1) (Ueda et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "1c1a1dcb-b9b4-4883-b4d8-f97ed221f110",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C13",
+      "claim": "ARA6 is N-myristoylated and palmitoylated at an extra stretch in the N-terminus to target a distinct subpopulation of endosomes from canonical RAB5.",
+      "claim_type": "EXPLICIT",
+      "source": "In lieu of cysteine residues that are isoprenylated at the C-terminus, which are essential for membrane binding and functions of canonical RAB GTPases (Seabra, 1998), ARA6 harbors an extra stretch in the N-terminus, where this protein is N-myristoylated and palmitoylated to target a distinct subpopulation of endosomes from canonical RAB5 with substantial overlap (Haas et al., 2007; Ueda et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4e3bdcba-20cb-4496-af99-53f9818e1562",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C14",
+      "claim": "ARA6 and canonical RAB5 share the common activating factor VPS9a.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their distinct functions, ARA6 and canonical RAB5 share the common activating factor, VPS9a (Goh et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4ff6b2e7-b563-4940-b8c6-01234aa2375f",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C15",
+      "claim": "Loss-of-function mutations of ARA6 and canonical RAB5 confer counteracting effects in a vps9a mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, loss-of-function mutations of ARA6 and canonical RAB5 confer counteracting effects in a vps9a mutant, further highlighting the distinct functions of these two plant RAB5 groups (Ebine et al., 2011), although the molecular mechanism integrating these two groups in endosomal trafficking remains unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "37256ffe-c4f2-43da-a31c-c275cde78223",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C16",
+      "claim": "The C-terminal region of At1g24560 (PUF2) was obtained from yeast two-hybrid screening using GTP-fixed mutant of ARA6 (ARA6Q93L) as bait.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify effector molecules of ARA6, we performed yeast two-hybrid screening using a GTP-fixed mutant of ARA6 (ARA6Q93L) as bait. After screening 4.57 \u00d7 105 independent clones, we obtained a candidate clone encoding the C-terminal region of At1g24560 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "a4e4e1a4-b511-4007-9ea8-d8124ef1f9dc",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C17",
+      "claim": "At1g24560 encodes a 678-amino-acid protein of unknown function, without clear homologs in animals or yeasts.",
+      "claim_type": "EXPLICIT",
+      "source": "At1g24560 encodes a 678-amino-acid protein of unknown function, without clear homologs in animals or yeasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "023668d1-bf0c-4873-a119-e8eb16c54396",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C18",
+      "claim": "Bacterially expressed and purified full-length PUF2 bound to GST-tagged ARA6Q93L but not to GST-ARA6S47N or -ARA7Q69L in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterially expressed and purified full-length PUF2 also bound to GST-tagged ARA6Q93L but not to GST-ARA6S47N or -ARA7Q69L in vitro (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro binding assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "39cb1c56-7afc-425d-9efd-ab7c7143131d",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C19",
+      "claim": "PUF2 interacted with ARA7S24N in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, PUF2 also interacted with ARA7S24N (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro binding assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "cc3d4cfd-d08a-4cf2-b78b-253b8284b20f",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C20",
+      "claim": "PUF2-GFP and ARA6 form a complex in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a co-immunoprecipitation analysis using a lysate prepared from a transgenic plant expressing PUF2-GFP and an anti-GFP antibody, PUF2-GFP and ARA6 form a complex in planta, whereas canonical RAB5 members ARA7 and RHA1 were not co-precipitated with PUF2-GFP under these experimental conditions (Figure 1C, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "5521e6e6-34c2-47bd-9ee8-441d050c16d1",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C21",
+      "claim": "Canonical RAB5 was co-precipitated with PUF2-GFP when a crosslinker (DSP) was added to the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when a crosslinker (dithiobis succinimidyl propionate; DSP) was added to the reaction, canonical RAB5 was also co-precipitated (Figure 1C, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "5b9be064-a38d-4686-8f92-c60ffdf5a509",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C22",
+      "claim": "PUF2 interacts with active GTP-bound ARA6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PUF2 interacts with active GTP-bound ARA6, and PUF2 also weakly and/or transiently forms a complex with GDP-bound canonical RAB5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding assay and co-immunoprecipitation data in Figure 1B and 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "1fda6690-a8e3-4312-a9d9-ff21885628c6",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C23",
+      "claim": "PUF2 weakly and/or transiently forms a complex with GDP-bound canonical RAB5.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PUF2 interacts with active GTP-bound ARA6, and PUF2 also weakly and/or transiently forms a complex with GDP-bound canonical RAB5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the co-immunoprecipitation data requiring crosslinker in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "8f8cb9b2-0a0e-47f2-8cb4-5788ba17b8a6",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C24",
+      "claim": "Four coiled-coil domains were predicted in the PUF2 protein using SMART.",
+      "claim_type": "EXPLICIT",
+      "source": "Four coiled-coil domains were predicted in the PUF2 protein using a simple modular architecture research tool (SMART, http://smart.embl.de/) (Letunic et al., 2015; Schultz et al., 1998), although PUF2 contained no known functional domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational prediction using SMART tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "16d797eb-472e-4870-a56e-73e22eb68e16",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C25",
+      "claim": "Truncated PUF2 containing only the fourth coiled-coil region interacted with ARA6 in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Truncated PUF2 containing only the fourth coiled-coil region was isolated in the yeast two-hybrid screening. Consistently, truncated PUF2 containing the other coiled-coil region did not interact with ARA6 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "266dde61-390b-49df-ba39-04060560ccd7",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C26",
+      "claim": "Full-length PUF2 did not interact with ARA6 in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, full-length PUF2 did not interact with ARA6, which may indicate that these regions negatively regulate the interaction between ARA6 and PUF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 1D and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "d18dc779-656c-4922-90c1-989c1399abd8",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C27",
+      "claim": "The N-terminal regions of PUF2 may negatively regulate the interaction between ARA6 and PUF2.",
+      "claim_type": "IMPLICIT",
+      "source": "Furthermore, full-length PUF2 did not interact with ARA6, which may indicate that these regions negatively regulate the interaction between ARA6 and PUF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation that truncated PUF2 interacts with ARA6 but full-length does not.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "7db65229-8b4a-4d0f-92a7-c3b152529e94",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C28",
+      "claim": "PUF2 localized to punctate organelles in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2A, PUF2 localized to punctate organelles in the cytoplasm, which dilated with the application of wortmannin (Wm; a phosphatidylinositol-3 and -4 kinase inhibitor) and aggregated into so-called BFA bodies with brefeldin A (BFA; an ARF GEF inhibitor) treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "99e14294-c336-4f67-ab97-283c080c9871",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C29",
+      "claim": "PUF2-positive compartments dilated with the application of wortmannin.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2A, PUF2 localized to punctate organelles in the cytoplasm, which dilated with the application of wortmannin (Wm; a phosphatidylinositol-3 and -4 kinase inhibitor) and aggregated into so-called BFA bodies with brefeldin A (BFA; an ARF GEF inhibitor) treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "5bc9f2e4-0877-4738-90d6-78e3180365f7",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C30",
+      "claim": "PUF2-positive compartments aggregated into BFA bodies with brefeldin A treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2A, PUF2 localized to punctate organelles in the cytoplasm, which dilated with the application of wortmannin (Wm; a phosphatidylinositol-3 and -4 kinase inhibitor) and aggregated into so-called BFA bodies with brefeldin A (BFA; an ARF GEF inhibitor) treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4c8287cb-9bbe-4ebd-9492-d55b811f5a65",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C31",
+      "claim": "PUF2-positive compartments are accessible to the endocytic tracer FM4-64.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosomal nature of the PUF2-positive compartments was also supported by their accessibility to an endocytic tracer FM4-64 (Figure 2A, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "910753d2-0987-4fb7-be78-b00164036514",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C32",
+      "claim": "83.4 \u00b1 4.2% of PUF2-GFP puncta overlapped with ARA6-mRFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the colocalization confirmed our observation; specifically, 83.4 \u00b1 4.2% (mean \u00b1SD; n = 4 independent images, including 70 to 377 endosomes) of PUF2-GFP puncta overlapped with ARA6-mRFP, whereas 96.7 \u00b1 1.7% (mean \u00b1SD; n = 4 independent images, including 151 to 304 endosomes) of PUF2-GFP puncta colocalized with mRFP-ARA7 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "7df8678f-f0a6-4cd7-b323-0edd9540d525",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C33",
+      "claim": "96.7 \u00b1 1.7% of PUF2-GFP puncta colocalized with mRFP-ARA7.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the colocalization confirmed our observation; specifically, 83.4 \u00b1 4.2% (mean \u00b1SD; n = 4 independent images, including 70 to 377 endosomes) of PUF2-GFP puncta overlapped with ARA6-mRFP, whereas 96.7 \u00b1 1.7% (mean \u00b1SD; n = 4 independent images, including 151 to 304 endosomes) of PUF2-GFP puncta colocalized with mRFP-ARA7 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "1f98c5eb-089c-49ad-b927-9c0dc83356ff",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C34",
+      "claim": "PUF2 colocalized more fully with ARA7 than with ARA6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PUF2 colocalized more fully with ARA7 than with ARA6 (p<0.05, Tukey's test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of colocalization data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "a124f347-7671-4a26-abfa-ba72039c336a",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C35",
+      "claim": "PUF2 did not colocalize with the trans-Golgi network marker mRFP-SYP43.",
+      "claim_type": "EXPLICIT",
+      "source": "PUF2 did not colocalize with the trans-Golgi network marker mRFP-SYP43 and the trans-Golgi cisternae marker ST-mRFP (Boevink et al., 1998; Uemura et al., 2012; Uemura et al., 2004; Wee et al., 1998); Figure 2B, lower middle and right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "7c000967-f409-499c-a782-0f2943385d98",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C36",
+      "claim": "PUF2 did not colocalize with the trans-Golgi cisternae marker ST-mRFP.",
+      "claim_type": "EXPLICIT",
+      "source": "PUF2 did not colocalize with the trans-Golgi network marker mRFP-SYP43 and the trans-Golgi cisternae marker ST-mRFP (Boevink et al., 1998; Uemura et al., 2012; Uemura et al., 2004; Wee et al., 1998); Figure 2B, lower middle and right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "235f1c99-eccc-4510-8258-0a54909ecb83",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C37",
+      "claim": "In ara6-1 mutant plants, PUF2-GFP localized to punctate compartments that were swollen and aggregated after treatment with Wm and BFA, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In ara6-1 mutant plants, PUF2-GFP localized to punctate compartments, which were swollen and aggregated after treatment with Wm and BFA, respectively, and were labeled with FM4-64 as observed in wild-type plants (Figure 2D, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "8a42aff5-bdc5-4276-b99a-e27be6f4ef54",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C38",
+      "claim": "PUF2-GFP exhibited the same responses to drugs and FM4-64 accessibility in the vps9a-2 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "PUF2-GFP also exhibited the same responses to drugs and FM4-64 accessibility in the vps9a-2 mutant (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "7fa77b88-1ecf-4d11-b660-5bf625cc468c",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C39",
+      "claim": "ARA6 and canonical RAB5 activities are not required for the recruitment of PUF2 onto endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ARA6 and canonical RAB5 activities are not required for the recruitment of PUF2 onto endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PUF2 localizes to endosomes in ara6-1 and vps9a-2 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "c40817f4-9ad5-48f2-94b3-94362f8549cd",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C40",
+      "claim": "The puf2 mutant exhibited no macroscopic abnormalities under normal laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The puf2 mutant exhibited no macroscopic abnormalities under normal laboratory conditions (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotypic observation shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "f8f254e0-75c2-418f-82b3-509b45afcba6",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C41",
+      "claim": "The puf2 ara6-1 double mutant was indistinguishable from wild-type, puf2, and ara6-1 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The puf2 ara6-1 double mutant was indistinguishable from wild-type, puf2, and ara6-1 plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phenotypic observation shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "69f709a9-3ebf-435d-8054-6dfb8e843d0c",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C42",
+      "claim": "The puf2 rha1 double mutation resulted in dwarfism.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the puf2 rha1 double mutation resulted in dwarfism (Figure 3A), suggesting that the functions of PUF2 and canonical RAB5 lie in the same trafficking pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotypic observation shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "7d9545a8-ffc9-4386-a687-e89dbebe8bd0",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C43",
+      "claim": "The functions of PUF2 and canonical RAB5 lie in the same trafficking pathway.",
+      "claim_type": "IMPLICIT",
+      "source": "By contrast, the puf2 rha1 double mutation resulted in dwarfism (Figure 3A), suggesting that the functions of PUF2 and canonical RAB5 lie in the same trafficking pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the synergistic genetic interaction between puf2 and rha1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4a985261-767d-4561-af4f-8621b5682114",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C44",
+      "claim": "The puf2 mutation aggravated the phenotype of the syp22-1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, contrary to this hypothesis, the puf2 syp22-1 double mutant exhibited more severe wavy-rosette and late-flowering phenotypes than the syp22-1 mutant (Figure 3B), which were restored by introducing the genomic sequence of PUF2 (Figure 3\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotypic observation shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "8fd0b3bd-8773-41a6-bb46-61c78b7ce835",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C45",
+      "claim": "The hemizygous puf2 mutation aggravated the growth phenotypes of vps9a-2, resulting in seedling lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar synergistic genetic interaction was also observed between puf2 and vps9a-2; the hemizygous puf2 mutation aggravated the growth phenotypes of vps9a-2, resulting in seedling lethality (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotypic observation shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "00fdfa2a-f058-484d-8118-6998d694a4f3",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C46",
+      "claim": "Approximately one-fourth of the seeds from puf2 vps9a-2+/\u2212 mutant exhibited a brownish and shriveled appearance.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of developing seeds in seedpods of the puf2 vps9a-2+/\u2212 mutant revealed that approximately one-fourth of the seeds exhibited a brownish and shriveled appearance (normal:abnormal = 76:25, n = 101 seeds, p<0.001, chi-square test, \u03c72 = 67.7) (Figure 3D), indicating that the double mutation resulted in halted embryogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by seed phenotype observation and statistical analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "e78ff89b-ef90-47b9-aaae-b6e876137d09",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C47",
+      "claim": "The puf2 vps9a-2 double mutation resulted in halted embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of developing seeds in seedpods of the puf2 vps9a-2+/\u2212 mutant revealed that approximately one-fourth of the seeds exhibited a brownish and shriveled appearance (normal:abnormal = 76:25, n = 101 seeds, p<0.001, chi-square test, \u03c72 = 67.7) (Figure 3D), indicating that the double mutation resulted in halted embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the seed phenotype and segregation ratio.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "88c681ca-9c15-4ef5-a089-bcfdaf363082",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C48",
+      "claim": "Double-mutant embryos (puf2 vps9a-2) exhibited severe developmental retardation at later developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We subsequently observed embryos collected from puf2 vps9a+/\u2212 seedpods. Although we were unable to distinguish double mutants from their normal siblings at the globular stage, double-mutant embryos exhibited severe developmental retardation at later developmental stages (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by embryo observation shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "f8923da8-0c93-4bfb-bf29-4725bf877609",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C49",
+      "claim": "The embryonic lethality of the puf2 vps9a-2 mutant was restored after introducing a genomic fragment containing PUF2.",
+      "claim_type": "EXPLICIT",
+      "source": "The embryonic lethality of the puf2 vps9a-2 mutant was restored after introducing a genomic fragment containing PUF2 (Figure 3\u2014figure supplement 1G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by complementation data shown in Figure 3\u2014figure supplement 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "8e6f0042-553e-46c4-af05-da5b78e0ef31",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C50",
+      "claim": "Overexpressed PUF2 partially rescued the defective growth of vps9a-2.",
+      "claim_type": "EXPLICIT",
+      "source": "An intimate genetic interaction between PUF2 and VPS9a was also observed in this overexpression experiment: overexpressed PUF2 partially rescued the defective growth of vps9a-2 (Figure 3F, Figure 3\u2014figure supplement 1I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by overexpression data shown in Figure 3F and Figure 3\u2014figure supplement 1I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "0080a5d6-e5b7-4b09-8fd3-f376727630b1",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C51",
+      "claim": "Processing of storage proteins was not markedly affected in the puf2 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Although processing of storage proteins was not markedly affected in the puf2 mutant (Figure 4A), precursor proteins with larger molecular masses were observed in the puf2 syp22-1 double mutant (Figure 4A, arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein gel analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "746fd23c-223c-4033-9ff9-17ee60664b9d",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C52",
+      "claim": "Precursor proteins with larger molecular masses were observed in the puf2 syp22-1 double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Although processing of storage proteins was not markedly affected in the puf2 mutant (Figure 4A), precursor proteins with larger molecular masses were observed in the puf2 syp22-1 double mutant (Figure 4A, arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein gel analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "eda16dfc-e028-4a9b-9fc8-082e4bbf335c",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C53",
+      "claim": "Precursors of 12S globulin accumulated in puf2 syp22-1 and puf2+/\u2212 vps9a-2 seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot analysis using an anti-12S globulin antibody also revealed the accumulation of 12S globulin precursors in puf2 syp22-1 and puf2+/\u2212 vps9a-2, as observed in rha1 syp22-1 and vps9a-2 mutants (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 4B and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "438040f3-86e6-431c-ab2c-523eca2731da",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C54",
+      "claim": "GFP-CT24 was mis-secreted in the seeds of puf2 syp22-1 and puf2+/\u2212 vps9a-2 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The synergistic interaction between puf2 and syp22 or vps9a-2 mutations was also evident in the mis-secreted GFP-CT24 observed in the seeds of puf2 syp22-1 and puf2+/\u2212 vps9a-2 plants (Figure 4C, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4C and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4f6cb04d-0569-4aee-b816-ecd74a3d400b",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C55",
+      "claim": "Weaker fluorescence of PIN2-GFP in the vacuole was observed in vps9a-2 plants than in wild-type and puf2 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Weaker fluorescence was observed in vps9a-2 plants than in wild-type and puf2 plants, indicating partial impairment of the endocytic pathway as previously reported (Inoue et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4D and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "5f24bf20-86ad-4a8a-a533-db0cbdf5cba0",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C56",
+      "claim": "Fluorescence of PIN2-GFP in the vacuole was barely detected in the puf2+/\u2212 vps9a-2 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "This trafficking defect was substantially enhanced by hemizygous puf2 mutation; fluorescence in the vacuole was barely detected, and PIN2-GFP accumulated at punctate or ring-shaped compartments, which likely represent endosomal compartments in the puf2+/\u2212 vps9a-2 mutant (Figure 4D, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4D and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "74cb9f5d-0cf7-49fe-a976-019ee63f2f44",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C57",
+      "claim": "PUF2 acts in the vacuolar/endocytic trafficking pathway with canonical RAB5 and SYP22.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that PUF2 acts in the vacuolar/endocytic trafficking pathway with canonical RAB5 and SYP22.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic interaction and trafficking defect data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "f4bd8de5-c18a-4cb4-a1ce-fa99235e6fc3",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C58",
+      "claim": "PUF2 interacted with VPS9a in a yeast two-hybrid assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we examined the interactions between PUF2 and other RAB5-related molecules and observed that PUF2 also interacted with VPS9a in a yeast two-hybrid assay (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast two-hybrid data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "d2812a47-eef4-413e-a099-03a4adf3bf21",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C59",
+      "claim": "The interaction between PUF2 and VPS9a was mediated by the N-terminal coiled-coil region of PUF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion analysis revealed that this interaction was mediated by the N-terminal coiled-coil region of PUF2 and was distinct from the interaction with GTP-bound ARA6 mediated by the C-terminal coiled-coil region (Figure 1D, Figure 5A, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by deletion analysis shown in Figure 5A and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "fdb6bb42-dc6f-4386-bddb-8bf0401e5b72",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C60",
+      "claim": "The in planta interaction between PUF2 and VPS9a was confirmed by co-immunoprecipitation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The in planta interaction between PUF2 and VPS9a was also confirmed by performing co-immunoprecipitation analysis (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "226d0d08-671f-4fd4-91e2-0f786a1260cf",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C61",
+      "claim": "The interaction between PUF2 and VPS9a is direct.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was direct: bacterially expressed and purified GST-tagged PUF237-127, which contained the N-terminal coiled-coil region, pulled down purified HA-tagged VPS9a, while PUF2461-639, which contained the C-terminal coiled-coil region, did not (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro binding assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "9c2520c1-69f8-4c52-8d2e-b0ee108c06b2",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C62",
+      "claim": "VPS9a and PUF2 colocalized at a subpopulation of endosomes bearing ARA6.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, VPS9a and PUF2 colocalized at a subpopulation of endosomes bearing ARA6 (Figure 5D, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "b07546c0-2068-499b-95c2-e1585e46190a",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C63",
+      "claim": "The N-terminal coiled-coil region of PUF2 inhibited vacuolar transport of sporamin.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in Arabidopsis suspension cultured cells, sporamin tagged with Venus predominantly accumulated in vacuoles, which was inhibited by co-expression of dominant-negative ARA7 (ARA7S24N) (Figure 5\u2014figure supplement 1B and D). The N-terminal coiled-coil of PUF2 exerted a similar effect to ARA7S24N (Figure 5\u2014figure supplement 1B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transient expression data shown in Figure 5\u2014figure supplement 1B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "94beb6c4-dfef-4682-a93a-741a566a86a2",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C64",
+      "claim": "The inhibitory effect of the N-terminal coiled-coil of PUF2 on vacuolar transport was suppressed by co-expressing VPS9a-tagRFP.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect should be attributed to titration of VPS9a by the PUF2 N-terminus, because the deleterious effect was suppressed by co-expressing VPS9a-tagRFP, but not by tagRFP alone (Figure 5\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transient expression data shown in Figure 5\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "34467bff-f93f-4593-906f-dad0eeb9e10d",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C65",
+      "claim": "The endosomal population of VPS9a-GFP was significantly reduced in puf2 vps9a-1 compared to vps9a-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In root epidermal cells of puf2 vps9a-1, the endosomal population of VPS9a-GFP was significantly reduced compared to that in vps9a-1 cells [14.3 \u00b1 1.9 puncta per cell slice in vps9a-1 (mean \u00b1SD, n = 6 independent images, each of which contained five cells) versus 5.4 \u00b1 2.1 puncta in puf2 vps9a-1 (mean \u00b1SD, n = 6 independent images, each of which contained five cells), p<0.01, Student's t-test] (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy and quantification data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "03a2f4db-8dfc-489e-8a6f-8de56754eeaa",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C66",
+      "claim": "VPS9a-GFP-positive dots in puf2 vps9a-1 plants retained their endosomal identity as demonstrated by ARA6 localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining VPS9a-GFP-positive dots in puf2 vps9a-1 plants were sensitive to BFA treatment; however, endosome dilation was rarely observed after Wm treatment (Figure 6A, middle and right panels), although VPS9a-positive puncta retained their endosomal identity as demonstrated by ARA6 localization (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "6f0f52e6-0775-4c6f-aa1c-662b3a09919e",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C67",
+      "claim": "PUF2 promotes the recruitment of VPS9a onto the endosome.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the results described above, PUF2 promotes the recruitment of VPS9a onto the endosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced endosomal localization of VPS9a in puf2 mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "b505e1bd-70df-469e-8816-047e7924c6ab",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C68",
+      "claim": "When PUF2-GFP was coexpressed with VPS9a-tagRFP in protoplasts, VPS9a was recruited to PUF2-positive compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "When PUF2-GFP was coexpressed with VPS9a-tagRFP, VPS9a was recruited to PUF2-positive compartments (Figure 6C, lower panels), whereas coexpression of another endosomal protein, GFP-VAMP727, did not affect the cytosolic localization of VPS9a (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transient expression data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4e227cb9-89b3-407d-9b1d-ec1845b8b20d",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C69",
+      "claim": "PUF2 facilitates the localization of VPS9a onto endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PUF2 facilitates the localization of VPS9a onto endosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the recruitment of VPS9a to PUF2-positive compartments in protoplasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "2d8ac4ba-66f3-46aa-99f0-66d544179824",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C70",
+      "claim": "The diameters of the dilated endosomes induced by Wm treatment were significantly reduced by approximately 30% in puf2 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the distribution of ARA6-GFP and mRFP-ARA7 was not markedly affected in DMSO-treated puf2 mutant cells (Figure 6D, left panels), the diameters of the dilated endosomes induced by Wm treatment were significantly reduced by approximately 30% [1.98 \u00b1 0.06 \u00b5m in wild-type (n = 83 dilated endosomes) versus 1.60 \u00b1 0.03 \u00b5m in mutant cells (n = 206 dilated endosomes), mean \u00b1SD, p<0.01, Student's t-test] (Figure 6D, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy and quantification data shown in Figure 6D and Figure 6\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "e4549069-4d05-4e91-818e-0401a14ee349",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C71",
+      "claim": "Recruitment of VPS9a to the endosomal membrane by PUF2 is required for efficient RAB5 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recruitment of VPS9a to the endosomal membrane by PUF2 is required for efficient RAB5 activation, which is likely necessary for Wm-mediated endosomal fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduced endosome dilation in puf2 mutant after Wm treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "d56bf22f-57ee-4cbc-af61-1d994efb1aea",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C72",
+      "claim": "PUF2 is required for the suppression of vps9a-2 by ara6-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed genotypes of progenies generated by the self-pollination of ara6-1 vps9a-2 puf2+/\u2212 plants and observed that the ara6-1 puf2 vps9a-2 triple mutant was embryonically lethal (ara6-1 vps9a-2 puf2+/+:ara6-1 vps9a-2 puf2+/\u2212:ara6-1 vps9a-2 puf2\u2212/\u2212 = 59:110:0, n = 169, p<0.001, chi-square test, \u03c72 = 15.4) (Figure 7A). Thus, PUF2 is required for the suppression of vps9a-2 by ara6-1, and the suppression activity of ara6-1 is exerted through PUF2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genetic analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "d872ba43-668a-4504-816b-f34d19f2c139",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C73",
+      "claim": "The suppression activity of ara6-1 is exerted through PUF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PUF2 is required for the suppression of vps9a-2 by ara6-1, and the suppression activity of ara6-1 is exerted through PUF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the embryonic lethality of ara6-1 puf2 vps9a-2 triple mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "34bf26cc-ccde-4ea5-8f02-bfd003704c9c",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C74",
+      "claim": "The puf2+/\u2212 vps9a-2 growth defect was partially suppressed by the ara6-1 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the puf2+/\u2212 vps9a-2 growth defect was partially suppressed by the ara6-1 mutation (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phenotypic observation shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "f3c3c6a7-e0ea-4666-b394-e9ac92d3b3e1",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C75",
+      "claim": "As the amount of ARA6Q93L increased, the amount of PUF2 pulled down by GST-ARA7S24N decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "As the amount of ARA6Q93L increased, the amount of PUF2 pulled down by GST-ARA7S24N decreased (57.5 \u00b1 34.1% band intensity, n = 4 independent experiments, p<0.05; Figure 7C and D, Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro competition assay data shown in Figure 7C, D and Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "9dee0cf6-53b1-4680-ad42-a15dc3e4e897",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C76",
+      "claim": "ARA6S47N and ARA7Q69L did not hamper the interaction between PUF2 and ARA7S24N.",
+      "claim_type": "EXPLICIT",
+      "source": "ARA6S47N and ARA7Q69L, non-interactive RAB5 partners of PUF2, did not hamper the interaction between PUF2 and ARA7S24N (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro binding assay data shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "dd712429-753d-46bb-ab40-dff0a365ca68",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C77",
+      "claim": "ARA6 in its active state interferes with the assembly of GDP-bound ARA7, PUF2, and likely VPS9a by competitively binding to PUF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ARA6 in its active state interferes with the assembly of GDP-bound ARA7, PUF2, and likely VPS9a by competitively binding to PUF2 to diminish endosomal transport mediated by canonical RAB5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the competitive binding data shown in Figure 7C, D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "d3d94e32-73d8-4936-97cd-17d25967bec4",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C78",
+      "claim": "PUF2 captures inactive canonical RAB5 and VPS9a on the endosomal membrane, leading to efficient activation of canonical RAB5 and the enhancement of vacuolar transport from endosomes to the vacuole.",
+      "claim_type": "EXPLICIT",
+      "source": "PUF2 captures inactive canonical RAB5 and VPS9a on the endosomal membrane, leading to efficient activation of canonical RAB5 and the enhancement of vacuolar transport from endosomes to the vacuole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "0e97192a-4c9e-41eb-a9eb-69dfb5d9bcbe",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C79",
+      "claim": "ARA6 diminishes canonical RAB5-mediated endosomal transport by competitively binding to PUF2 in its GTP-bound state against GDP-bound canonical RAB5.",
+      "claim_type": "EXPLICIT",
+      "source": "ARA6, the plant-unique RAB5 in Arabidopsis, diminishes this process by competitively binding to PUF2 in its GTP-bound state against GDP-bound canonical RAB5, thus balancing the distinct canonical RAB5- and ARA6-mediated endosomal transport pathways in plant cells (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the findings presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "c07be9b6-3389-47aa-8602-b79cb89560db",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C80",
+      "claim": "No striking homologs of PUF2 have been observed in sequence databases of non-plant systems.",
+      "claim_type": "EXPLICIT",
+      "source": "No striking homologs of PUF2 have been observed in sequence databases of non-plant systems, suggesting that PUF2 was uniquely acquired by the plant lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from sequence database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "20741f1a-877c-44ac-89be-85ec1e2dda31",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C81",
+      "claim": "PUF2 was uniquely acquired by the plant lineage.",
+      "claim_type": "IMPLICIT",
+      "source": "No striking homologs of PUF2 have been observed in sequence databases of non-plant systems, suggesting that PUF2 was uniquely acquired by the plant lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of homologs in non-plant systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "99282ccb-87cc-4c86-a107-116d9e31564a",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C82",
+      "claim": "PUF2 shares several characteristics with the animal Rab5 effector protein Rabaptin-5/RABEP1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PUF2 shares several characteristics with the animal Rab5 effector protein Rabaptin-5/RABEP1, and both proteins contain four coiled-coil regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison based on structural features.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "5cfaf849-2897-4f3d-8abb-f2b933f7ea7b",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C83",
+      "claim": "Both PUF2 and Rabaptin-5/RABEP1 interact with GTP-bound Rab5 members at one of the coiled-coil regions and also interact with their activating factors at another coiled-coil region.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both PUF2 and Rabaptin-5/RABEP1 interact with GTP-bound Rab5 members at one of the coiled-coil regions and also interact with their activating factors at another coiled-coil region (Horiuchi et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "2dbc53a2-1ce6-4c08-8545-c4fca4072dda",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C84",
+      "claim": "The mechanisms utilized by PUF2 and Rabaptin-5 are completely different.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mechanisms utilized by PUF2 and Rabaptin-5 are completely different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differences in binding partners and modes of action described in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "74b39eb6-f7d4-4ce6-b522-8778c8cf88df",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C85",
+      "claim": "The downregulation of a Rab GTPase by another Rab GTPase via competitive binding with an effector and a common GEF has not previously been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "The downregulation of a Rab GTPase by another Rab GTPase via competitive binding with an effector and a common GEF has not previously been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding based on knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "6ba38af9-3589-42e7-9b51-80ae7b4fba47",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "claim_id": "C86",
+      "claim": "Plants have developed specific mechanisms to regulate RAB5 GTPases by acquiring two plant-unique machinery components, ARA6 and PUF2.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that plants have developed specific mechanisms to regulate RAB5 GTPases by acquiring two plant-unique machinery components, ARA6 and PUF2, to participate in the underlying mechanism of endocytic pathway regulation in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PUF2 was identified as an effector of plant-unique RAB5 ARA6 through yeast two-hybrid screening. PUF2 binds to GTP-bound ARA6 and GDP-bound canonical RAB5 (ARA7) with different affinities, as demonstrated by in vitro binding assays and co-immunoprecipitation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16-C23 provide converging evidence from yeast two-hybrid screening (C16), in vitro binding assays (C18, C19), and co-immunoprecipitation (C20, C21) that PUF2 interacts with both GTP-bound ARA6 and GDP-bound canonical RAB5. The requirement of a crosslinker to detect canonical RAB5 interaction (C21) supports the interpretation of weak/transient binding (C23). The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "2e128e24-8c6e-42c6-b887-c55ec7d6b28b",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PUF2 contains four predicted coiled-coil domains. The C-terminal coiled-coil region (fourth domain) mediates interaction with ARA6, while full-length PUF2 does not interact with ARA6 in yeast two-hybrid assays, suggesting potential negative regulation by N-terminal regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24-C27 identify the C-terminal coiled-coil as the ARA6-binding region (C25) and note that full-length PUF2 does not interact with ARA6 in yeast two-hybrid (C26). However, C20 shows that full-length PUF2-GFP does interact with ARA6 in planta by co-IP. This discrepancy between yeast two-hybrid and in planta results is not adequately explained. The speculation about negative regulation (C27) lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "09bada99-1b40-4202-906d-09c57456d058",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PUF2 localizes to endosomal compartments that respond to wortmannin and brefeldin A treatment and are accessible to FM4-64. PUF2 colocalizes more extensively with canonical RAB5 (ARA7, 96.7%) than with ARA6 (83.4%), and does not colocalize with Golgi markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 and C4 provide comprehensive microscopy evidence for PUF2's endosomal localization. The drug responses (C29, C30), FM4-64 accessibility (C31), and quantitative colocalization data (C32-C34) with statistical analysis support the endosomal identity. The preferential colocalization with ARA7 over ARA6 (C34, p<0.05) is well-documented. Negative controls with Golgi markers (C35, C36) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "566461fb-50ce-4933-8810-7cfbcfb012e4",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PUF2 localization to endosomes does not require ARA6 or canonical RAB5 activity, as demonstrated by normal endosomal localization and drug responses in ara6-1 and vps9a-2 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 show that PUF2-GFP maintains endosomal localization and characteristic responses to wortmannin and BFA in both ara6-1 and vps9a-2 mutants. This indicates that neither ARA6 nor RAB5 activation is required for PUF2 recruitment to endosomes. The data are clear and the inference (C39) is well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genetic interaction analysis reveals that PUF2 functions in the same pathway as canonical RAB5, SYP22, and VPS9a. The puf2 mutation shows synergistic interactions with rha1, syp22-1, and vps9a-2, resulting in severe growth defects including embryonic lethality in puf2 vps9a-2 double mutants. Overexpression of PUF2 partially rescues vps9a-2 defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C50, C5, and C57 provide extensive genetic evidence that PUF2 acts in the canonical RAB5 pathway. The synergistic phenotypes with rha1 (C42), syp22-1 (C44), and vps9a-2 (C45-C48) are well-documented with appropriate statistical analysis (C46, chi-square test). Complementation experiments (C49) and overexpression rescue (C50) confirm specificity. The lack of interaction with ara6-1 (C41) contrasts with the synergistic interactions with canonical RAB5 pathway components, supporting the conclusion that PUF2 functions with canonical RAB5 despite being identified as an ARA6 effector.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "bb87d7b5-c305-44e6-88e6-d6c798a5df4a",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PUF2 mutation synergistically enhances vacuolar trafficking defects in syp22-1 and vps9a-2 mutants, as evidenced by accumulation of storage protein precursors, mis-secretion of GFP-CT24, and impaired PIN2-GFP vacuolar delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 demonstrate that puf2 mutation exacerbates vacuolar trafficking defects in syp22-1 and vps9a-2 backgrounds using multiple cargo proteins. The accumulation of 12S globulin precursors (C52, C53), mis-secretion of GFP-CT24 (C54), and reduced PIN2-GFP vacuolar accumulation (C55, C56) provide converging evidence. The single puf2 mutant shows minimal defects (C51), consistent with redundancy or partial function. The data support the conclusion that PUF2 acts in vacuolar transport with canonical RAB5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "b7248443-b717-4576-97dd-1be633e1e464",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PUF2 directly interacts with VPS9a through its N-terminal coiled-coil region, as demonstrated by yeast two-hybrid, co-immunoprecipitation, and in vitro binding assays. VPS9a and PUF2 colocalize at a subset of ARA6-positive endosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 and C7 provide multiple lines of evidence for direct PUF2-VPS9a interaction. The yeast two-hybrid (C58), co-IP (C60), and in vitro binding assays (C61) demonstrate direct interaction. Domain mapping (C59) shows the N-terminal region mediates this interaction, distinct from the C-terminal ARA6-binding region. Colocalization data (C62) support functional relevance. The evidence is comprehensive and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "8c5a4b31-3375-40f9-8f75-443480caa3de",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The N-terminal coiled-coil region of PUF2 inhibits vacuolar transport of sporamin when overexpressed, and this inhibition is rescued by co-expression of VPS9a, indicating that the effect is due to VPS9a titration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 demonstrate that overexpression of the PUF2 N-terminus inhibits vacuolar transport (C63), and this effect is specifically rescued by VPS9a co-expression but not by control protein (C64). This supports the interpretation that the N-terminus titrates VPS9a. The experimental design with appropriate controls (tagRFP alone vs. VPS9a-tagRFP) is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "090ebf34-8b76-457d-afc6-c4df7bdacd2e",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PUF2 promotes recruitment of VPS9a to endosomes. In puf2 vps9a-1 mutants, endosomal VPS9a-GFP is significantly reduced compared to vps9a-1 controls. Overexpression of PUF2-GFP recruits VPS9a-tagRFP to PUF2-positive compartments in protoplasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 provide strong evidence that PUF2 recruits VPS9a to endosomes. The quantitative reduction in endosomal VPS9a in puf2 mutant (C65, p<0.01) and the recruitment of VPS9a to PUF2-positive compartments in protoplasts (C68) with appropriate negative control (GFP-VAMP727) support this conclusion. The remaining VPS9a puncta retain endosomal identity (C66), indicating specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "00a7da5b-b7b1-430d-9344-5b9f5cd88f4d",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PUF2 is required for efficient wortmannin-induced endosomal fusion. In puf2 mutants, the diameter of wortmannin-induced dilated endosomes is reduced by approximately 30%, suggesting that PUF2-mediated VPS9a recruitment is necessary for efficient RAB5 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 show that puf2 mutation significantly reduces wortmannin-induced endosome dilation (C70, p<0.01, Student's t-test). The inference that this reflects reduced RAB5 activation due to impaired VPS9a recruitment (C71) is reasonable given the established role of RAB5 in endosomal fusion and the demonstrated requirement of PUF2 for VPS9a recruitment (C65-C69). The statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "e3ab14c6-3a6b-4a1e-99a4-fd2660d1ff2b",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PUF2 is required for the suppression of vps9a-2 by ara6-1. The ara6-1 puf2 vps9a-2 triple mutant is embryonically lethal, and ara6-1 partially suppresses the puf2+/\u2212 vps9a-2 growth defect, indicating that ara6-1's suppression activity is exerted through PUF2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 provide genetic evidence that PUF2 mediates ara6-1's suppression of vps9a-2. The embryonic lethality of the triple mutant (C72, chi-square test p<0.001) and partial suppression of puf2+/\u2212 vps9a-2 by ara6-1 (C74) support this conclusion. The inference that ara6-1 acts through PUF2 (C73) is well-supported by the genetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "72eed6d6-a73c-4ace-af53-a1aed63e3a5d",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GTP-bound ARA6 competitively inhibits the interaction between PUF2 and GDP-bound canonical RAB5 (ARA7). In vitro competition assays show that increasing amounts of ARA6Q93L reduce PUF2 binding to GST-ARA7S24N, while non-interactive RAB5 mutants do not interfere. This competitive binding mechanism allows ARA6 to negatively regulate canonical RAB5-mediated vacuolar transport by titrating PUF2 and VPS9a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77, C6, and C8 demonstrate competitive binding through in vitro assays showing dose-dependent reduction of PUF2-ARA7S24N interaction with increasing ARA6Q93L (C75, p<0.05). The specificity is confirmed by lack of competition with non-interactive mutants (C76). The model that ARA6 negatively regulates canonical RAB5 by titrating PUF2 and VPS9a (C77, C8) is well-supported by the competitive binding data combined with genetic evidence (C72-C74). This represents a novel regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "515bfe47-5b88-480a-9fef-7777af902a3c",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study proposes a model where PUF2 integrates the functions of two plant RAB5 groups: PUF2 captures inactive canonical RAB5 and VPS9a on endosomes to promote canonical RAB5 activation and vacuolar transport, while GTP-bound ARA6 negatively regulates this process by competitively binding PUF2. This represents a plant-specific mechanism involving two unique components (ARA6 and PUF2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C79, and C86 synthesize the major findings into a coherent model. The model is well-supported by: (1) PUF2's interaction with both GDP-canonical RAB5 and VPS9a (C6, C7, C18-C23, C58-C62), (2) PUF2's role in recruiting VPS9a to endosomes (C65-C69), (3) competitive binding between GTP-ARA6 and GDP-canonical RAB5 for PUF2 (C75-C77), (4) genetic evidence for PUF2's function with canonical RAB5 (C40-C50), and (5) ara6-1's suppression of vps9a-2 requiring PUF2 (C72-C74). The model integrates multiple experimental approaches and provides a mechanistic explanation for the counteracting effects of the two RAB5 groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "4ac25a35-402a-4386-b46a-d6ac6b397f72",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PUF2 has no striking homologs in non-plant systems and was likely uniquely acquired by the plant lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 state that database searches found no clear PUF2 homologs in animals or yeasts (C17, C80), suggesting plant-specific acquisition (C81). While the absence of homologs is noted, the manuscript does not provide detailed bioinformatic analysis or specify search parameters. However, the claim is reasonable given the plant-specific nature of ARA6 and the unique endosomal trafficking features in plants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "fc124301-e7ff-4626-8b65-9bb384aca57a",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Despite structural similarities between PUF2 and animal Rabaptin-5 (both contain four coiled-coil regions and interact with Rab5 and their activating factors), the mechanisms utilized by these proteins are completely different.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 compare PUF2 to Rabaptin-5, noting shared features (C82, C83) but different mechanisms (C84). The key differences include: (1) PUF2 binds GDP-canonical RAB5 while Rabaptin-5 binds GTP-Rab5, (2) different coiled-coil regions mediate interactions, and (3) PUF2 mediates competitive inhibition by another RAB while Rabaptin-5 relieves autoinhibition of its GEF. The comparison is appropriate and highlights the novelty of PUF2's mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "5f31e345-9213-42ee-a3f1-74f0d1bfa61b",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The downregulation of one Rab GTPase by another Rab GTPase via competitive binding with an effector and a common GEF represents a novel regulatory mechanism not previously reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 asserts novelty of the regulatory mechanism. Based on the literature knowledge presented and the unique features of the PUF2-mediated integration of ARA6 and canonical RAB5, this claim appears justified. The competitive binding mechanism involving two different Rab GTPases, a shared effector, and a common GEF is indeed unprecedented in the described literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    },
+    {
+      "id": "32d7462f-78f6-484f-8f90-9a13450af5da",
+      "content_id": "5d7aac11-8320-48d4-a3b2-99e8533b4c59",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establishing that RAB5 is a conserved regulator of endosomal functions, that plants possess two RAB5 groups (canonical and plant-unique ARA6) with distinct functions, and that these groups share the activating factor VPS9a but have counteracting effects in vps9a mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9-C15 provide established background knowledge supported by appropriate citations. These claims set the context for the study and are well-documented in the literature. The citations appear appropriate and the claims are consistent with current understanding of plant endosomal trafficking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:35:38.486904Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a18d7e79-6e3d-40b3-8b5c-fb52107088d3",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "37256ffe-c4f2-43da-a31c-c275cde78223",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "a4e4e1a4-b511-4007-9ea8-d8124ef1f9dc",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "023668d1-bf0c-4873-a119-e8eb16c54396",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "39cb1c56-7afc-425d-9efd-ab7c7143131d",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "cc3d4cfd-d08a-4cf2-b78b-253b8284b20f",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "5521e6e6-34c2-47bd-9ee8-441d050c16d1",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "5b9be064-a38d-4686-8f92-c60ffdf5a509",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "1fda6690-a8e3-4312-a9d9-ff21885628c6",
+      "result_id": "f2f795fc-9f12-40bc-8af9-9ba6553c9ba6"
+    },
+    {
+      "claim_id": "8f8cb9b2-0a0e-47f2-8cb4-5788ba17b8a6",
+      "result_id": "2e128e24-8c6e-42c6-b887-c55ec7d6b28b"
+    },
+    {
+      "claim_id": "16d797eb-472e-4870-a56e-73e22eb68e16",
+      "result_id": "2e128e24-8c6e-42c6-b887-c55ec7d6b28b"
+    },
+    {
+      "claim_id": "266dde61-390b-49df-ba39-04060560ccd7",
+      "result_id": "2e128e24-8c6e-42c6-b887-c55ec7d6b28b"
+    },
+    {
+      "claim_id": "d18dc779-656c-4922-90c1-989c1399abd8",
+      "result_id": "2e128e24-8c6e-42c6-b887-c55ec7d6b28b"
+    },
+    {
+      "claim_id": "7db65229-8b4a-4d0f-92a7-c3b152529e94",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "99e14294-c336-4f67-ab97-283c080c9871",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "5bc9f2e4-0877-4738-90d6-78e3180365f7",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "4c8287cb-9bbe-4ebd-9492-d55b811f5a65",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "910753d2-0987-4fb7-be78-b00164036514",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "7df8678f-f0a6-4cd7-b323-0edd9540d525",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "1f98c5eb-089c-49ad-b927-9c0dc83356ff",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "a124f347-7671-4a26-abfa-ba72039c336a",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "7c000967-f409-499c-a782-0f2943385d98",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "33d9f67a-aa72-4c3e-8ab9-16d985f6a69e",
+      "result_id": "09bada99-1b40-4202-906d-09c57456d058"
+    },
+    {
+      "claim_id": "235f1c99-eccc-4510-8258-0a54909ecb83",
+      "result_id": "566461fb-50ce-4933-8810-7cfbcfb012e4"
+    },
+    {
+      "claim_id": "8a42aff5-bdc5-4276-b99a-e27be6f4ef54",
+      "result_id": "566461fb-50ce-4933-8810-7cfbcfb012e4"
+    },
+    {
+      "claim_id": "7fa77b88-1ecf-4d11-b660-5bf625cc468c",
+      "result_id": "566461fb-50ce-4933-8810-7cfbcfb012e4"
+    },
+    {
+      "claim_id": "c40817f4-9ad5-48f2-94b3-94362f8549cd",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "f8f254e0-75c2-418f-82b3-509b45afcba6",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "69f709a9-3ebf-435d-8054-6dfb8e843d0c",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "7d9545a8-ffc9-4386-a687-e89dbebe8bd0",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "4a985261-767d-4561-af4f-8621b5682114",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "8fd0b3bd-8773-41a6-bb46-61c78b7ce835",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "00fdfa2a-f058-484d-8118-6998d694a4f3",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "e78ff89b-ef90-47b9-aaae-b6e876137d09",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "88c681ca-9c15-4ef5-a089-bcfdaf363082",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "f8923da8-0c93-4bfb-bf29-4725bf877609",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "8e6f0042-553e-46c4-af05-da5b78e0ef31",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "c7fc5534-d477-404f-844a-e7f1d55278ec",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "74cb9f5d-0cf7-49fe-a976-019ee63f2f44",
+      "result_id": "37ec9bbd-3860-4b46-9f44-4c14c44971b6"
+    },
+    {
+      "claim_id": "0080a5d6-e5b7-4b09-8fd3-f376727630b1",
+      "result_id": "bb87d7b5-c305-44e6-88e6-d6c798a5df4a"
+    },
+    {
+      "claim_id": "746fd23c-223c-4033-9ff9-17ee60664b9d",
+      "result_id": "bb87d7b5-c305-44e6-88e6-d6c798a5df4a"
+    },
+    {
+      "claim_id": "eda16dfc-e028-4a9b-9fc8-082e4bbf335c",
+      "result_id": "bb87d7b5-c305-44e6-88e6-d6c798a5df4a"
+    },
+    {
+      "claim_id": "438040f3-86e6-431c-ab2c-523eca2731da",
+      "result_id": "bb87d7b5-c305-44e6-88e6-d6c798a5df4a"
+    },
+    {
+      "claim_id": "4f6cb04d-0569-4aee-b816-ecd74a3d400b",
+      "result_id": "bb87d7b5-c305-44e6-88e6-d6c798a5df4a"
+    },
+    {
+      "claim_id": "5f24bf20-86ad-4a8a-a533-db0cbdf5cba0",
+      "result_id": "bb87d7b5-c305-44e6-88e6-d6c798a5df4a"
+    },
+    {
+      "claim_id": "f4bd8de5-c18a-4cb4-a1ce-fa99235e6fc3",
+      "result_id": "b7248443-b717-4576-97dd-1be633e1e464"
+    },
+    {
+      "claim_id": "d2812a47-eef4-413e-a099-03a4adf3bf21",
+      "result_id": "b7248443-b717-4576-97dd-1be633e1e464"
+    },
+    {
+      "claim_id": "fdb6bb42-dc6f-4386-bddb-8bf0401e5b72",
+      "result_id": "b7248443-b717-4576-97dd-1be633e1e464"
+    },
+    {
+      "claim_id": "226d0d08-671f-4fd4-91e2-0f786a1260cf",
+      "result_id": "b7248443-b717-4576-97dd-1be633e1e464"
+    },
+    {
+      "claim_id": "9c2520c1-69f8-4c52-8d2e-b0ee108c06b2",
+      "result_id": "b7248443-b717-4576-97dd-1be633e1e464"
+    },
+    {
+      "claim_id": "bb03287e-28a3-4c6b-8fd4-0f71e308d9dd",
+      "result_id": "b7248443-b717-4576-97dd-1be633e1e464"
+    },
+    {
+      "claim_id": "b07546c0-2068-499b-95c2-e1585e46190a",
+      "result_id": "8c5a4b31-3375-40f9-8f75-443480caa3de"
+    },
+    {
+      "claim_id": "94beb6c4-dfef-4682-a93a-741a566a86a2",
+      "result_id": "8c5a4b31-3375-40f9-8f75-443480caa3de"
+    },
+    {
+      "claim_id": "34467bff-f93f-4593-906f-dad0eeb9e10d",
+      "result_id": "090ebf34-8b76-457d-afc6-c4df7bdacd2e"
+    },
+    {
+      "claim_id": "03a2f4db-8dfc-489e-8a6f-8de56754eeaa",
+      "result_id": "090ebf34-8b76-457d-afc6-c4df7bdacd2e"
+    },
+    {
+      "claim_id": "6f0f52e6-0775-4c6f-aa1c-662b3a09919e",
+      "result_id": "090ebf34-8b76-457d-afc6-c4df7bdacd2e"
+    },
+    {
+      "claim_id": "b505e1bd-70df-469e-8816-047e7924c6ab",
+      "result_id": "090ebf34-8b76-457d-afc6-c4df7bdacd2e"
+    },
+    {
+      "claim_id": "4e227cb9-89b3-407d-9b1d-ec1845b8b20d",
+      "result_id": "090ebf34-8b76-457d-afc6-c4df7bdacd2e"
+    },
+    {
+      "claim_id": "2d8ac4ba-66f3-46aa-99f0-66d544179824",
+      "result_id": "00a7da5b-b7b1-430d-9344-5b9f5cd88f4d"
+    },
+    {
+      "claim_id": "e4549069-4d05-4e91-818e-0401a14ee349",
+      "result_id": "00a7da5b-b7b1-430d-9344-5b9f5cd88f4d"
+    },
+    {
+      "claim_id": "d56bf22f-57ee-4cbc-af61-1d994efb1aea",
+      "result_id": "e3ab14c6-3a6b-4a1e-99a4-fd2660d1ff2b"
+    },
+    {
+      "claim_id": "d872ba43-668a-4504-816b-f34d19f2c139",
+      "result_id": "e3ab14c6-3a6b-4a1e-99a4-fd2660d1ff2b"
+    },
+    {
+      "claim_id": "34bf26cc-ccde-4ea5-8f02-bfd003704c9c",
+      "result_id": "e3ab14c6-3a6b-4a1e-99a4-fd2660d1ff2b"
+    },
+    {
+      "claim_id": "f3c3c6a7-e0ea-4666-b394-e9ac92d3b3e1",
+      "result_id": "72eed6d6-a73c-4ace-af53-a1aed63e3a5d"
+    },
+    {
+      "claim_id": "9dee0cf6-53b1-4680-ad42-a15dc3e4e897",
+      "result_id": "72eed6d6-a73c-4ace-af53-a1aed63e3a5d"
+    },
+    {
+      "claim_id": "dd712429-753d-46bb-ab40-dff0a365ca68",
+      "result_id": "72eed6d6-a73c-4ace-af53-a1aed63e3a5d"
+    },
+    {
+      "claim_id": "21c182f9-38d1-4fac-902d-0b432483f7bc",
+      "result_id": "72eed6d6-a73c-4ace-af53-a1aed63e3a5d"
+    },
+    {
+      "claim_id": "97faa257-a9b2-4a42-8749-bbca1457547b",
+      "result_id": "72eed6d6-a73c-4ace-af53-a1aed63e3a5d"
+    },
+    {
+      "claim_id": "d3d94e32-73d8-4936-97cd-17d25967bec4",
+      "result_id": "515bfe47-5b88-480a-9fef-7777af902a3c"
+    },
+    {
+      "claim_id": "0e97192a-4c9e-41eb-a9eb-69dfb5d9bcbe",
+      "result_id": "515bfe47-5b88-480a-9fef-7777af902a3c"
+    },
+    {
+      "claim_id": "6ba38af9-3589-42e7-9b51-80ae7b4fba47",
+      "result_id": "515bfe47-5b88-480a-9fef-7777af902a3c"
+    },
+    {
+      "claim_id": "c07be9b6-3389-47aa-8602-b79cb89560db",
+      "result_id": "4ac25a35-402a-4386-b46a-d6ac6b397f72"
+    },
+    {
+      "claim_id": "20741f1a-877c-44ac-89be-85ec1e2dda31",
+      "result_id": "4ac25a35-402a-4386-b46a-d6ac6b397f72"
+    },
+    {
+      "claim_id": "99282ccb-87cc-4c86-a107-116d9e31564a",
+      "result_id": "fc124301-e7ff-4626-8b65-9bb384aca57a"
+    },
+    {
+      "claim_id": "5cfaf849-2897-4f3d-8abb-f2b933f7ea7b",
+      "result_id": "fc124301-e7ff-4626-8b65-9bb384aca57a"
+    },
+    {
+      "claim_id": "2dbc53a2-1ce6-4c08-8545-c4fca4072dda",
+      "result_id": "fc124301-e7ff-4626-8b65-9bb384aca57a"
+    },
+    {
+      "claim_id": "74b39eb6-f7d4-4ce6-b522-8778c8cf88df",
+      "result_id": "5f31e345-9213-42ee-a3f1-74f0d1bfa61b"
+    },
+    {
+      "claim_id": "86d45a09-1844-4950-ac97-3e66a812a6c7",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "0a948f78-a81c-441a-8d4c-89ac30f1e3e2",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "cb16dac2-861e-4876-b877-57e07523d68c",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "21cdb1e2-44e4-4696-8108-2250ec65b249",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "4df52f18-6a59-4a20-a7d1-1644ec106328",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "f738406e-60e6-40f0-bebf-9da49f6095f0",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "1c1a1dcb-b9b4-4883-b4d8-f97ed221f110",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "4e3bdcba-20cb-4496-af99-53f9818e1562",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    },
+    {
+      "claim_id": "4ff6b2e7-b563-4940-b8c6-01234aa2375f",
+      "result_id": "32d7462f-78f6-484f-8f90-9a13450af5da"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C16"
+    ],
+    "result": "The study established 1840 populations from 230 haploid yeast segregants derived from a cross between diverged parental strains (RM and BY) that differ at ~50,000 loci. Four replicate lines from each founder were evolved for 500 generations in each of two laboratory environments: rich media at 30\u00b0C (OT) and synthetic media at 37\u00b0C (HT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12, and C16 collectively describe the experimental design and are well-supported by explicit statements in the methods and results sections. The numbers of founders, populations, genetic differences, and environmental conditions are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18"
+    ],
+    "result": "Founder fitness varies substantially between genotypes in both environments and is strongly correlated between the two environments, with broad-sense heritability near 100%, indicating that measurement errors are small compared to genuine genetic differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C17-C18 are supported by fitness measurements shown in Figure 1 and heritability calculations in Figure 2 and Table 1. The high heritability and strong correlation are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C114",
+      "C115"
+    ],
+    "result": "Initial genotype strongly affects adaptability, which is a heritable trait with extensive variation arising from naturally occurring genetic differences. Some of the ~50,000 alleles distinguishing the parental strains alter future adaptive trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8, C114-C115 are supported by heritability measurements showing that adaptability has broad-sense heritability of ~0.61-0.65 (Figure 2, Table 1), demonstrating that founder genotype systematically affects the rate of adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "QTL mapping identified 6 loci affecting founder fitness at OT and 3 at HT, with 2/3 of HT QTLs also appearing as OT QTLs. These QTLs explain 76% of trait variance in both environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by the QTL mapping procedure described in methods and results. The overlap between environments is consistent with the strong correlation in founder fitness between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Four QTLs affect adaptability at OT and 2 at HT (a subset of OT loci), explaining 30-31% of total variance. Three of four adaptability loci were also identified as fitness QTLs, suggesting loci affecting founder fitness also affect adaptability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by QTL mapping results and the overlap analysis. The variance explained is consistent with narrow-sense heritability estimates (Figure 2, Table 1), and the overlap between fitness and adaptability QTLs is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Genetic variation in adaptability is largely determined by initial fitness according to a rule of declining adaptability with increasing fitness. A linear fitness model explains 42% (OT) and 52% (HT) of total variance in adaptability, representing 68% and 80% of heritable variance respectively, which is more than additive QTL models despite having fewer parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C38-C44 are strongly supported by regression analyses shown in Figure 3 and Table 1. The fitness-based model's superior performance over QTL models is clearly demonstrated, though claim C44 about fitness being 'as good as any linear genetic model' is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The KRE33 locus (chromosome XIV, position 376,315) has the largest effect on founder fitness (9% at OT, 19% at HT for BY vs RM alleles) and explains additional variance in adaptability beyond fitness (2% residual at HT, 0.4% at OT). Combined models with KRE33 and other QTLs explain 82-88% of heritable variation in adaptability, though ~20% remains unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 are supported by QTL mapping, regression analyses (Figure 3), and combined model fits (Table 1). The KRE33 locus is well-characterized with specific fitness effects and contributions to adaptability documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Initial fitness in the home environment predicts adaptability in that environment independently in each condition, above and beyond common factors. Founders with high fitness in one environment adapt slowly in that environment but not necessarily in the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by the analysis in Figure 4 showing negative correlation (r\u00b2=0.28, p<10\u207b\u2074) between fitness differences and adaptability differences across environments, with color-coded data demonstrating environment-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Whole-population sequencing of 273 samples from 35 founders (254 after quality control) identified 603 high-frequency mutations (>50% frequency), with 449 being nonsynonymous or indels. OT populations averaged 1.3 mutations while HT populations averaged 3.6 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by explicit statements in the methods and results describing the sequencing effort and mutation calling. The numbers are clearly documented and consistent throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The number of mutations identified in evolved populations declines weakly but significantly with initial founder fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by regression analysis shown in Figure 5, which demonstrates the negative relationship between founder fitness and mutation number, consistent with the declining adaptability pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C131",
+      "C132"
+    ],
+    "result": "Initial genotype alters the genetic basis of future evolution. The KRE33 locus strongly affects mutation spectrum: all 31 populations with KRE33 mutations descended from founders with the less-fit RM allele. Additionally, 108 mutations in 10 ribosome biogenesis pathway genes (including KRE33) arose exclusively in RM-allele backgrounds, likely representing compensation for the deleterious RM allele and contributing to increased adaptability of these founders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C66-C75, C131-C132 are strongly supported by sequencing data shown in Figure 6. The complete association between KRE33 allele and mutations in ribosome biogenesis genes is striking and well-documented. The inference that these mutations compensate for the RM allele is reasonable given the pattern, though the claim about 'gain or attenuation' (C132) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Fourteen of 15 mutations in cAMP pathway genes (GPB1, GPB2, PDE2) occurred exclusively in populations with the BY KRE33 allele, suggesting potential genetic interaction. However, this could also reflect clonal interference preventing fixation in RM backgrounds where ribosome biogenesis mutations are strongly beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by mutation data in Figure 6. The strong association is documented, though the mechanistic interpretation (C78-C80) is appropriately presented as speculative with alternative explanations considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Multi-hit genes IRA2 and BFR2 lie within QTL confidence intervals, and RAS2 (a cAMP pathway regulator) is found within a fitness QTL, representing significant enrichment. This suggests some loci underlying fitness variation among founders are also targets of selection during evolution, and the cAMP pathway may explain fitness differences in this cross.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are supported by the overlap analysis between QTL locations and multi-hit genes, with statistical testing confirming enrichment. The connection to prior work on cAMP pathway (C87) is appropriately cited, and the inference about shared genetic architecture (C85-C86) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "Evolution environment significantly affects mutation spectrum (e.g., SIR3/SIR4 mutations in 30/34 populations at HT). Founder genotype also affects mutation identities beyond KRE33 allele and environment effects, suggesting founder-specific epistatic interactions exist alongside common mutations shared by founders with the same KRE33 allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C91-C92 are supported by mutual information analysis described in methods and results. The statistical significance of associations is documented, though the effect sizes are noted as small (~0.1 bits).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Initial genotype affects pleiotropic consequences of adaptation. Founder fitnesses are strongly correlated between environments, and populations adapting to either environment gained fitness in the other on average, with highly overlapping multi-hit genes. However, fitness gains at HT were significantly higher after HT evolution than OT evolution, while OT gains were similar regardless of evolution environment, indicating different mutation sets despite overlapping targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C93-C100 are supported by data in Figure 7 and Table 2. The asymmetric pleiotropy pattern is clearly demonstrated, and the inference about different mutation sets (C100) logically follows from the asymmetric fitness gains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C107",
+      "C122",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Pleiotropy (fitness changes in away environments) is heritable but with narrow-sense heritability substantially lower than broad-sense, indicating most heritable variation cannot be explained by additive QTL models. Heritability is asymmetric: HT-evolved populations show highly heritable, predictable fitness gains at OT (H\u00b2\u22480.62), while OT-evolved populations show much more variable gains at HT (H\u00b2\u22480.29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C107, C122, C125-C129 are supported by heritability calculations in Figure 8 and Table 1. The asymmetry in heritability between the two evolution conditions is clearly demonstrated and represents an important finding about the predictability of pleiotropic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C123",
+      "C124"
+    ],
+    "result": "Only initial fitness in the away environment predicts pleiotropic outcomes; founder fitness in the home environment adds no explanatory power. This indicates that effects in environment B of mutations from evolution in environment A are determined primarily by the genetic background's fitness in environment B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C123-C124 are supported by regression model comparisons described in results. The finding that only away-environment fitness matters is surprising and well-documented, though the mechanistic interpretation (C124) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Six QTLs including KRE33 significantly affect pleiotropic outcomes beyond founder fitness in the away condition. Combined with away-environment fitness, they explain 75% (OT) and 58% (HT) of heritable variation in pleiotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by QTL analysis with fitness as covariate and combined model fits shown in Figure 8 and Table 1. The variance explained is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Despite acquiring different mutation sets, populations with BY and RM KRE33 alleles showed similar fitness gain patterns in both environments, suggesting similar pleiotropic effects of mutations in ribosome biogenesis genes versus cAMP pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by data in Figure 7D showing similar fitness trajectories despite different mutations. However, the inference about similar pleiotropic effects (C134) is somewhat speculative, as direct measurements of individual mutation effects were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "The best additive QTL model explains at most about half of heritable genetic variation in adaptability. A fitness-based model explains more variance despite fewer parameters. Including KRE33 and other loci with fitness explains about half the remaining variation, leaving ~20% of heritable variation unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117, C119-C120 are supported by model comparisons in Figure 2, Figure 3, and Table 1. The relative performance of different models is clearly documented, representing a key finding about the architecture of adaptability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Five QTLs including KRE33 affect adaptability and sometimes pleiotropy above and beyond their effects on founder fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by regression models with fitness as covariate, showing that specific loci have effects beyond what would be predicted from their impact on founder fitness alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Average fitness of adapting populations in their home environment is statistically predictable from founding genotype fitness and KRE33/other loci, even for highly divergent strains. Mutations accumulated during adaptation tend to cause pleiotropic fitness gains in related environments, but predictability depends on environment (strong in one case, weak in the other).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 synthesize findings from regression models and pleiotropy analyses. They are supported by the collective evidence from Figures 3, 7, and 8, representing the main conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The study acknowledges several limitations: results may be specific to the 500-generation timescale, the two environments studied, and the particular yeast cross used. Limited sample size and measurement noise likely resulted in missing some QTLs, though these probably have minor additive effects. Fitness trade-offs and other factors may disrupt prediction of pleiotropic gains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 represent appropriate acknowledgment of study limitations in the Discussion. These are reasonable caveats given the experimental design, and the inference about missing QTLs having minor effects (C143) is supported by comparison with narrow-sense heritability estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The findings are consistent with prior work showing initial fitness explains adaptability variation among closely related strains, extending this to much larger genetic distances. Results support that declining adaptability may be a general feature of microbial evolution. The relationship between microscopic epistasis (individual mutation interactions), macroscopic epistasis (distribution-level effects), and adaptability is complex and not one-to-one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C144-C148 appropriately contextualize findings within prior literature and theoretical frameworks. The citations support the claims about prior work (C118, C145), and the theoretical reasoning about epistasis levels (C146-C148) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Even across large genetic distances, less-fit genotypes adapt more rapidly than more-fit ones. At least one significant microscopic epistatic interaction (KRE33 allele) affects adaptability at both fitness and genotype levels in HT, and affects genetic basis and pleiotropy in OT, but has weak effect on OT adaptation rate beyond fitness effects. This exemplifies microscopic epistasis not leading to differences in adaptability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 are supported by the collective evidence from fitness models (Figure 3), mutation patterns (Figure 6), and pleiotropy analyses (Figure 8). The KRE33 example (C151-C154) effectively demonstrates the complex relationship between microscopic epistasis and adaptability, representing an important conceptual contribution.",
+    "result_type": "MAJOR"
+  }
+]

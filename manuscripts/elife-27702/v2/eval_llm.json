@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C95"
+    ],
+    "result": "The authors developed a modular, low-cost automated recording system (ARTS) that enables continuous long-term extracellular recordings from freely behaving rodents. The system includes a home-cage experimental chamber, a tethering system with counterweighted commutator, a custom head-stage recording from 16 tetrodes at 30 kHz, a 3-axis accelerometer, continuous video recording, and custom-built high-capacity storage servers. The complete 64-channel system costs less than $1500 excluding the recording computer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 and C82-C90, C95 provide comprehensive technical specifications and descriptions of the recording system, supported by detailed figures (Figure 1 and supplements) and Materials and methods. The system was successfully deployed for months-long recordings (C31, C84), demonstrating its functionality. Cost estimates and technical specifications are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors developed FAST (Fast Automated Spike Tracker), an unsupervised spike-sorting algorithm that addresses three major challenges: capturing neurons with widely varying firing rates, handling changing spike shapes over time, and efficiently processing large numbers of spikes (>10^10 spikes per rat over 3 months). FAST comprises two main steps: local clustering for de-noising and integer linear programming for chaining spikes over time. The algorithm runs 2-3 times faster than data acquisition rate with an approximate tracking time-scale of 33 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C22-C25, C96-C98 describe the FAST algorithm's design and performance, supported by detailed methodology in Figure 2 and supplements. The quantitative performance metrics (processing speed, tracking time-scale) are derived from measured parameters of the experimental data. The algorithm's two-step structure is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "FAST's spike-sorting performance was validated on ground-truth datasets. On short (4-6 min) paired intracellular-extracellular recordings, FAST performed as well as BEER (best ellipsoidal error rate). On synthetic datasets spanning days with realistic spike amplitude drift, FAST significantly outperformed BEER, particularly for recordings longer than 64 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C27-C29 are supported by validation experiments shown in Figure 3 and supplements. The comparison uses established ground-truth datasets (Harris et al., 2000; Henze et al., 2009) and custom synthetic datasets with realistic parameters derived from the authors' own recordings (Figure 3\u2014figure supplement 2). Statistical significance is reported for longer duration comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors recorded continuously from motor cortex (n=3 rats) and dorsolateral striatum (n=2 rats) for more than 3 months using 16-tetrode drives (64 channels). Using FAST, they isolated 1550 motor cortex units and 1477 striatal units. Single units were tracked on average for 3.2 days (motor cortex) and 7.4 days (striatum), with 11% and 36% respectively tracked for more than a week, and 0.4% and 1.7% for more than a month. On average, 19\u00b115 units were recorded simultaneously in motor cortex and 41\u00b120 in striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C30-C37 provide quantitative results from the long-term recordings, supported by data in Figure 4. The experimental procedures are detailed in Materials and methods. The recordings terminated by design rather than technical failure (C32), and the unit tracking durations represent direct measurements from continuous recordings analyzed with FAST.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Cluster quality assessment showed that 61.4% of motor cortical units and 64.6% of striatal units satisfied conservative quality criteria (isolation distance \u226525, L-ratio \u22640.3, ISI violations \u22641%) over their recording lifetimes. However, 83.7% of motor cortical and 93.2% of striatal units met these criteria for at least one hour. Average signal-to-noise ratios were 14.5\u00b17.2 for motor cortex and 15.4\u00b17.4 for striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 report cluster quality metrics supported by data in Figure 4E-F. The criteria used are conservative and cited to established methods (Quirk et al., 2009; Schmitzer-Torbert et al., 2005; Sigurdsson et al., 2010). The distinction between mean lifetime quality and peak quality provides important context for interpreting the stability results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Discontinuous tracking of units across day-long gaps was found to be highly error-prone in the authors' dataset. This finding, along with potential biases from using activity metrics for tracking, may explain contrasting findings about neural stability in prior studies using intermittent recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C69-C71 are supported by analysis in Figure 4\u2014figure supplement 1, which uses the continuously tracked units as ground truth to benchmark discontinuous tracking methods. The speculation about sources of discrepancies in prior literature (C70-C71) is reasonable given the demonstrated tracking errors, though it remains speculative regarding other studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Motor cortical and striatal units were classified into putative cell types based on spike shapes and firing rates, identifying 366 fast-spiking and 1111 medium spiny neurons in striatum, and 686 fast-spiking and 864 regular spiking neurons in motor cortex. Average firing rates were log-normally distributed, varied over three orders of magnitude (0.029-40.2 Hz in striatum, 0.031-44.8 Hz in motor cortex), and remained largely unchanged over 20 days of recording. Inter-spike interval distributions also remained stable across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe cell-type classification and firing rate stability, supported by data in Figure 5. The classification methods are cited to established approaches (Barth\u00f3 et al., 2004; Berke et al., 2004; Connors and Gutnick, 1990). The log-normal distribution is consistent with prior reports (Hrom\u00e1dka et al., 2008; Mizuseki and Buzs\u00e1ki, 2013). The stability findings are quantitatively demonstrated in Figure 5B-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Pairwise spike correlations were analyzed for simultaneously recorded units. 21.1% of striatal pairs and 37.6% of motor cortex pairs were significantly correlated, with average absolute time-lags of 13.0\u00b126.3 ms (striatum) and 23.9\u00b128.8 ms (motor cortex). These pairwise correlations remained remarkably stable over 10 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 report interneuronal correlation analysis supported by data in Figure 6. The methods for calculating cross-correlograms and determining significance are detailed in Materials and methods. The stability of correlations over 10 days is quantitatively demonstrated in Figure 6B-C, consistent with a stable underlying network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors developed an automated behavioral classification algorithm using accelerometer data and LFPs that distinguishes seven behavioral states (slow-wave sleep, REM sleep, quiet wakefulness, repetitive behavior, active exploration, eating, task engagement) and assigns ~88% of recording time to these states. Validation against manual scoring showed 92.9% overlap for inactive periods and 96.9% for active periods. Rats spent most time sleeping (44\u00b13%) or resting (6\u00b12%), with sleep more frequent during lights-on (58\u00b17%) versus lights-off (33\u00b19%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C91-C94 describe the behavioral classification method and its validation, supported by data in Figure 7\u2014figure supplement 1 and Materials and methods. The validation against manual scoring (C91) provides quantitative evidence of accuracy. The behavioral time budgets (C92-C93) are consistent with prior studies (Gervasoni et al., 2004) and expected circadian patterns in rats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Firing rates of both striatal and motor cortical units depended on behavioral state. The relative firing rates in different behavioral states (state tuning) remained stable over several weeks, even though they varied substantially between neurons. Interneuronal spike correlations were also modulated by behavioral state, and this dependence was stable over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe behavioral state-dependent neural activity and its stability, supported by data in Figure 7A-E. The stability of state tuning over weeks is quantitatively demonstrated in Figure 7B, while the modulation and stability of correlations by behavioral state is shown in Figure 7D-E. The findings are consistent with prior work on state-dependent activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Movement response fields (spike-triggered average accelerometer power) were calculated for units in different active states. 19.7%, 9.5%, and 18.4% of striatal units, and 18.7%, 7.6%, and 22.5% of motor cortex units showed significant response fields during repetitive behavior, exploration, and eating, respectively. Movement STAs varied substantially between neurons and across behavioral states but were stable for the same unit over at least 20 days within a particular state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 report movement tuning analysis supported by data in Figure 8A-B. The methods for calculating STAs and determining significance are detailed in Materials and methods. The stability of STAs over 20 days is quantitatively demonstrated in Figure 8B, showing stable movement coding at the single-unit level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Peri-event time histograms (PETHs) were calculated for lever-press and nose-poke events during task execution. 22.2% and 23.2% of striatal units, and 12.3% and 18.7% of motor cortex units showed significant activity locked to lever-press or nose-poke, respectively. Peak firing times were distributed over a range of delays relative to behavioral events across the population, but PETHs of individual units were remarkably similar when compared across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 report task-related activity analysis supported by data in Figure 8C-F. The methods for calculating PETHs and determining significance are detailed in Materials and methods. The stability of individual unit PETHs across days is demonstrated in Figure 8D-F, showing stable task representations despite population heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Regression analysis of stability indices for individual units showed that the vast majority (88-98%) of recorded units were stable based on a conservative threshold (slope \u2265-0.025 day\u207b\u00b9 and p\u22650.05). A small fraction (~2-12%) showed relatively less stability over longer timescales, but no unit had a stability index lower than -0.1 day\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 report individual unit stability analysis supported by data in Figure 8\u2014figure supplement 1B and Table 2. The regression approach provides a quantitative measure of stability for each unit across multiple metrics (firing rate, ISI, state tuning, STA, PETH). The unimodal distribution centered at 0 day\u207b\u00b9 supports the conclusion of widespread stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The authors' continuous recordings suggest remarkable stability in spiking statistics, neuronal interactions, and tuning properties of the majority of motor cortical and striatal units. Combined with prior studies showing long-term structural stability at the synaptic level, these findings support the view that motor cortical and striatal neural networks are highly stable systems in terms of their dynamics and connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide a synthesis of the stability findings (Figures 5-8), supported by the data presented throughout the Results section. The interpretation is strengthened by integration with prior work on structural stability (Grutzendler et al., 2002; Yang et al., 2009). The conclusion is appropriately qualified to the brain regions studied (motor cortex and striatum).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors review limitations of existing recording methods: intermittent recordings fail to capture neural activity outside task context and across behavioral states, are ill-suited for tracking neurons over time; calcium imaging is unsuitable for continuous long-term recordings due to photobleaching, phototoxicity, cytotoxicity, head-restraint requirements, and poor temporal resolution; extracellular recordings can measure many neurons with sub-millisecond resolution but continuous long-term recordings are not routinely performed due to the laborious process of tracking units from longitudinal datasets where firing rates vary over orders of magnitude and spike waveforms change over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide background on limitations of existing methods, supported by extensive citations to prior work. These are well-established issues in the field and provide appropriate motivation for the authors' approach. The claims accurately represent the state of the field based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C81"
+    ],
+    "result": "The authors argue that their automated recording and analysis system provides major advantages: eliminating time-consuming and stressful manual steps, enabling a single researcher to supervise tens or hundreds of recordings simultaneously, and overcoming the bottleneck of manual analysis that makes large dataset analysis prohibitively time-consuming. FAST solves this bottleneck by efficiently parsing large datasets, dramatically increasing the feasibility of continuous high-throughput long-term recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C65-C66, C81 are supported by the demonstrated performance of the system (C25, C101-C102) and citations to prior work on limitations of existing methods. Claim C64 about supervising hundreds of recordings is speculative but reasonable given the automation level. The claims about impact are justified by the technical achievements demonstrated in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors discuss potential explanations for discrepancies between their stability findings and prior studies reporting instability. They note that calcium indicators could interfere with cellular processes and may have contributed to discrepancies in calcium imaging studies. They speculate that inherent differences between brain areas may explain some discrepancies, with circuits involved in transient information storage (hippocampus) or flexible associations (parietal cortex) potentially being more unstable than sensory or motor circuits. Recent studies show higher synaptic turnover in hippocampus versus sensory/motor cortices, though it's unclear whether structural plasticity stabilizes or destabilizes activity. They hypothesize neural activity would be more variable during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68, C74-C78 are largely speculative discussions about potential explanations for differences with prior studies. While the speculation is reasonable and supported by citations to relevant literature (C67, C75-C76), these remain hypotheses rather than tested conclusions. The authors appropriately qualify these as speculative (\"may have contributed,\" \"could be due to,\" \"we hypothesize\"). Claim C77 acknowledges uncertainty in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors claim their experimental platform makes it feasible to characterize learning-related changes in task representations and relate them to network dynamics reorganization over long time-scales, and that the modular platform can easily incorporate innovations in recording technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are reasonable inferences about the capabilities and adaptability of the demonstrated system. The platform's ability to record continuously over months (C11, C31) and track units over weeks (C34-C36) supports the feasibility claim for studying learning (C79). The modular design described in the methods supports the adaptability claim (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "FAST could in principle be used for online sorting based on its processing speed (2-3x faster than acquisition). Manual verification requires on average 14.7\u00b130.6 mergers per unit (1.3 per tetrode per day), with only 2% of chains requiring manual splitting. Manual verification takes about 8 hours per tetrode for 3 months of data (130 hours for 16 tetrodes), proceeding at 5.5x faster than data acquisition rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C99-C102 describe the manual effort required and potential for online use. C26 is appropriately qualified as speculative (\"could, in principle\") based on the processing speed (C25). C99-C102 provide quantitative measurements of the manual verification burden, supporting the claim that the system is practical despite requiring some manual input. The comparison to data acquisition rate (C102) demonstrates feasibility.",
+    "result_type": "MINOR"
+  }
+]

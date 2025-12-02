@@ -1,0 +1,1976 @@
+{
+  "submission": {
+    "id": "6849314e-0d1b-4102-8256-b77929bca713",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:19:26.885545Z",
+    "updated_at": "2025-12-01T20:19:26.885545Z"
+  },
+  "content": [
+    {
+      "id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "submission_id": "6849314e-0d1b-4102-8256-b77929bca713",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for plant plasma membrane protein dynamics and organization into functional nanodomains\n\n## Authors\n\n- Julien Gronnier<sup>1</sup>\n- Jean-Marc Crowet<sup>2</sup>\n- Birgit Habenstein<sup>3</sup>\n- Mehmet Nail Nasir<sup>2</sup> ([ORCID: 0000-0003-3429-9445](https://orcid.org/0000-0003-3429-9445))\n- Vincent Bayle<sup>4</sup>\n- Eric Hosy<sup>5</sup>\n- Matthieu Pierre Platre<sup>4</sup>\n- Paul Gouguet<sup>1</sup>\n- Sylvain Raffaele<sup>6</sup> ([ORCID: 0000-0002-2442-9632](https://orcid.org/0000-0002-2442-9632))\n- Denis Martinez<sup>3</sup>\n- Axelle Grelard<sup>3</sup>\n- Antoine Loquet<sup>3</sup>\n- Fran\u00e7oise Simon-Plas<sup>7</sup>\n- Patricia Gerbeau-Pissot<sup>7</sup>\n- Christophe Der<sup>7</sup>\n- Emmanuelle M Bayer<sup>1</sup>\n- Yvon Jaillais<sup>4</sup>\n- Magali Deleu<sup>2</sup>\n- V\u00e9ronique Germain<sup>1</sup>\n- Laurence Lins<sup>2</sup> \u2020\n- S\u00e9bastien Mongrand<sup>1</sup> ([ORCID: 0000-0002-9198-015X](https://orcid.org/0000-0002-9198-015X)) \u2020\n\n### Affiliations\n\n1. Laboratoire de Biogen\u00e8se Membranaire (LBM), Unit\u00e9 Mixte de Recherche UMR 5200, CNRS, Universit\u00e9 de Bordeaux Bordeaux France\n2. Laboratoire de Biophysique Mol\u00e9culaire aux Interfaces GX ABT, Universit\u00e9 de Li\u00e8ge Gembloux Belgium\n3. Institute of Chemistry and Biology of Membranes and Nanoobjects (UMR5248 CBMN), CNRS, Universit\u00e9 de Bordeaux, Institut Polytechnique Bordeaux Pessac France\n4. Laboratoire Reproduction et D\u00e9veloppement des Plantes Universit\u00e9 de Lyon, ENS de Lyon, Universit\u00e9 Claude Bernard Lyon 1 Lyon France\n5. Interdisciplinary Institute for Neuroscience, CNRS, University of Bordeaux Bordeaux France\n6. LIPM, Universit\u00e9 de Toulouse, INRA, CNRS Castanet-Tolosan France\n7. Agro\u00e9cologie, AgroSup Dijon, INRA, Universit\u00e9 Bourgogne Franche-Comt\u00e9, F-21000 Dijon, ERL 6003 CNRS Dijon France\n\n\u2020 Corresponding author\n\n## Abstract\n\nPlasma Membrane is the primary structure for adjusting to ever changing conditions. PM sub-compartmentalization in domains is thought to orchestrate signaling. Yet, mechanisms governing membrane organization are mostly uncharacterized. The plant-specific REMORINs are proteins regulating hormonal crosstalk and host invasion. REMs are the best-characterized nanodomain markers via an uncharacterized moiety called REMORIN C-terminal Anchor. By coupling biophysical methods, super-resolution microscopy and physiology, we decipher an original mechanism regulating the dynamic and organization of nanodomains. We showed that targeting of REMORINis independent of the COP-II-dependent secretory pathway and mediated by PI4P and sterol. REM-CA is an unconventional lipid-binding motif that confers nanodomain organization. Analyzes of REM-CA mutants by single particle tracking demonstrate that mobility and supramolecular organization are critical for immunity. This study provides a unique mechanistic insight into how the tight control of spatial segregation is critical in the definition of PM domain necessary to support biological function.\n\n## Introduction\n\nMembrane proteins and lipids are dynamically organized in domains or compartments. Emerging evidences suggest that membrane compartmentalization is critical for cell signaling and therefore for development and survival of organisms ( Grecco et al., 2011 ). The understanding of molecular mechanisms governing protein sub-compartmentalization in living cells is one of the most critical issues regarding the understanding of how membranes function.\n\nIn this paper, we exploit the protein family REMORIN ( REMs ), the best-characterized PM-domain markers in plants ( Raffaele et al., 2009 ; Jarsch et al., 2014 ; Jarsch and Ott, 2011 ). REMs belong to a multigenic family of six groups encoding plant-specific membrane-bound proteins involved in responses to biotic and abiotic stimuli ( Raffaele et al., 2009 ; Jarsch et al., 2014 ; Jarsch and Ott, 2011 ; Raffaele et al., 2007 ; Gui et al., 2014 ; Jamann et al., 2016 ).The physiological functions of REMs have been poorly characterized. To date, their involvement has been clearly reported in plant - microbe interactions and hormonal crosstalk: in Solanaceae , group 1 REMs limit the spreading of Potato Virus X ( PVX ), without affecting viral replication ( Raffaele et al., 2009 ), and promote susceptibility to Phytophthora infestans ( Bozkurt et al., 2014 ). A group 2 REM was described as essential during nodulation process in Medicago truncatula ( Lefebvre et al., 2010 ; T\u00f3th et al., 2012 ).In rice, a group 4 REM is upregulated by abscissic acid and negatively regulates brassinosteroid signaling output ( Gui et al., 2016 ). Arabidopsis group 4 REMs also play a role as positive regulators of geminiviral infection ( Son et al., 2014 ). Finally, group 1 and group 6 REMs regulate the PM-lined cytoplasmic channels called plasmodesmata ( PD ), specialized nanochannels allowing intercellular communication in plants. Remarkably, these latter isoforms of REMs were found to be able to modify PD aperture leading to a modification of viral movement ( Raffaele et al., 2009 ; Perraki et al., 2014) and an impact on the grain setting in rice, respectively ( Gui et al., 2014 ). To fulfill these functions, REMs need to localize to the PM ( Perraki et al., 2012 ; Bozkurt et al., 2014 ). Nevertheless, the functional relevance of REM PM-nanodomain organization and the molecular mechanisms underlying PM-nanodomain organization of REM remain to be elucidated.\n\nOur groups defined a short peptide located at the C-terminal domain of REM, called REM-CA (REM C-terminal Anchor) as a novel membrane-binding domain shaped by convergent evolution among unrelated putative PM-binding domains in bacterial, viral and animal proteins. ( Perraki et al., 2012 ; Raffaele et al., 2013 ; Konrad et al., 2014 ). REM-CA is necessary for PM localization of REMs and sufficient to target a given soluble protein ( eg GFP) to the PM, highlighting that PM-domain localization is conferred by the intrinsic properties of REM-CA. REM-CA binds in vitro to poly phosphoinositidesbut the association of REM-CA with the PM is not limited to electrostatic interactions and the final interaction with PM display anchor properties similar to intrinsic protein ( Perraki et al., 2012 ). REM-CA can be S-acylated ( Hemsley et al., 2013 ), although this modification is not the determinant for their localization to membrane domains, since deacylated versions of some REMs remain able to localize to membrane domains ( Jarsch and Ott, 2011 ; Hemsley et al., 2013 ). The specificity of targeting, the anchoring and nanoclustering mechanisms mediated by REM-CA to the PM inner-leaflet nanodomains remain therefore elusive.\n\nIn this paper, using various modeling, biophysical, high-resolution microscopy and biological approaches, we deciphered an original and unconventional molecular mechanism of REM anchoring to PM: the target from the cytosol to PM by a specific PI4P-protein interaction, a subsequent folding of the REM-CA in the lipid bilayer, and its stabilization inside the inner-leaflet of the PM leading to an anchor indistinguishable from an intrinsic membrane protein. By constructing mutants, we were able to alter REM PM-nanodomain organization. Unexpectedly, single molecule studies of REM mutants reveal that single-molecule mobility behavior is not coupled to supramolecular organization. These mutants were unable to play their role in the regulation of cell-to-cell communication and plant immune defense against viral propagation,\n\n## Results and discussion\n\nTo specifically analyze the implication of REM-CA-lipid interactions in membrane targeting, we used the naturally non-S-acylated REM variant: Solanum tuberosum REMORIN group 1 isoform three called St REM1.3 ( Figure 1\u2014figure supplement 1). St REM1.3 is the best-studied isoform of REMs: St REM1.3 is a trimeric protein ( Perraki et al., 2012 ) that strictly localizes to the PM and segregates in a sterol-dependent manner into ca. 100 nm nanodomains ( Raffaele et al., 2009 ; Demir et al., 2013 ). In this study, we use Nicotinana benthamianaleaf epidermal cells as a model tissue. In this context, we showed that St REM1.3 is a functional homolog of the PM-localized Nicotinana benthamiana endogenous group 1b REMs toward the restriction of Potato Virus X ( PVX ) spreading. Consistently, Nb REM1.2 and Nb REM1.3 isoforms are highly expressed in leaf epidermis (Figure 1\u2014figure supplement 2). Importantly, PVX is a mechanically transmitted virus for which the infection initiates in the epidermis and spreads from cell-to-cell via different tissues to reach the phloem vasculature and infect the whole plant ( Cruz et al., 1998). In this context, leaf epidermis is the appropriate tissue to study the role of PM-nanodomains in the cell's responses to viruses.\n\n### St REM1.3 is targeted to PM domains by a mechanism likely independent of the secretory pathway\n\nTrafficking studies of REMs in plant cells showed that their PM localization (observed as secant or tangential views of epidermal cells, Figure 1A ) seem not rely on vesicular trafficking ( Raffaele et al., 2013 ; Gui et al., 2015 ; Konrad et al., 2014 ). Consistent to what was shown for the rice group 4 REM ( Gui et al., 2015 ), YFP- St REM1.3 was normally targeted to the PM upon inhibition of COP-II-mediated ER-to-Golgi trafficking by overexpression of a dominant-negative SAR1 ( de Marcos Lousa et al., 2016 ) or by treatment with Brefeldin A ( BFA), a pharmacological inhibitor of ADP-ribosylation factor 1-GTPase and its effectors, ARF-guanine-exchange factors, of the COP-I-mediated secretory pathway ( Peyroche et al., 1999 ) ( Figure 1B and Figure 1\u2014figure supplement 3 ). Moreover, organization of YFP- St REM1.3 in the plane of the PM was not affected in the presence of dominant-negative SAR1 ( Figure 1B ) as quantified by the Spatial Clustering Index ( SCI ) calculated as the max-to-min ratio of fluorescence intensity in the PM ( Figure 1\u2014Figure supplement 4 ).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig1-v2.jpg)\n\n**Figure 1.:** ( A ) Explanatory schematic of the secant or surface views of N. benthamiana leaf abaxial epidermal cell plasma membrane ( PM ) used throughout the article. ( B ) Confocal imaging surface views of Nicotinana benthamiana leaf epidermal cells expressing YFP- St REM1.3 with or without dominant-negative SAR1 H52N (PMA4-GFP was used as a potency control, see Figure 1\u2014figure supplement 2 ), 24 hr after agroinfiltration. Tukey boxplots show the mean fluorescence intensity and the Spatial Clustering Index , SCI ( n\u00a0= 3, quantification made on a representative experiment, at least 38 cells per condition). ( C ) Surface view confocal images showing the effect of Fenpropimorph (Fen) on PM patterning of YFP- St REM1.3 domains 20 hr after agroinfiltration. Tukey boxplots show the mean fluorescence intensity and the SCI of YFP- St REM1.3 in the Mock ( DMSO ) or Fen-treated leaves ( 50 \u00b5g / mL ), at least 46 cells from three independent experiments. ( D ) Secant view confocal fluorescence microscopy images displaying the degree of order of CFP- StREM1.3 \u2010 enriched domains (left panel) by the environment \u2010 sensitive probe Di \u2010 4 \u2010 ANEPPDHQ (middle panel) 48 hr after agroinfiltration. Di \u2010 4 \u2010 ANEPPDHQ red / green ratio ( RGM ) was measured for the global PM, and for the 10, 5, 2 % most intense CFP- St REM1.3 signal-associated pixels (right panel). A lower red / green ratio is associated with an increase in the global level of membrane order, at least 70 cells from three independent experiments. ( E ) Surface view confocal images showing the effect of dead or active constructs of MAP-SAC1p (MAP-mTurquoise2-SAC1p from yeast, see\u00a0Figure 1\u2014figure supplement 5 ) on PM domain localization of YFP- St REM1.3 20 hr after agroinfiltration. Tukey boxplots show the mean fluorescence intensity and the SCI of YFP- St REM1.3, at least 52 cells from four independent experiments. ( F ) Model showing the PI4P-driven targeting of the trimer of St REM1.3 to the PM and its PI4P- and sterol-dependent nanodomains organization. In all panels, p - values \u200b\u200bwere determined by a two-tailed Mann-Whitney test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** ( A ) REMORIN genes of N. benthamiana expressed in Reads Per Kilobase of transcripts per million mapped reads ( RPKM ). RNAseq data were retrieved using SRA toolkit (see experimental section). ( B ) Pairwise comparison of protein identity for St REM1.3 and closest group 1 Nb REMs expressed as a percentage of identity. ( C ) Photo of epidermis peeling performed on a glass slide freezing with liquid nitrogen to reduce transcriptional modification due to mechanical stress. Leaf tissue (1) without skin (2) and epidermis (3). ( D ) The expression of endogenous Nb REM1.3 and NbREM1.2 in epidermis was revealed by RT-PCR. ( E, F ) Confocal microscopy pictures of transiently expressed RFP- Nb REM1.2 and GFP- Nb REM1.3 transiently-expressed via A. tumefaciens in N. benthamiana epidermal cells at 2 DAI show that they both localize in PM-nanodomains. Scale bar indicate 10 \u03bcm . ( G ) Propagation of PVX :: GFP alone and in combination with A. tumefaciens carrying empty vector (mock), RFP- St REM1.3, RFP- Nb REM1.2 or RFP- Nb REM1.3, and corresponding quantification. Scale bar indicate 400 \u03bcm .n\u00a0= 4 . Letters indicate significant differences revealed by Tukey's comparisons test p < 0.001 . ( H ) Total proteins extracted from leaf samples and probed by anti-StREM1.3 antibodies.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** ( A ) Secant view of confocal dual-color imaging of N. benthamiana expressing YFP- St REM1.3 or proton pump PMA4-GFP (used as positive control) with or without dominant-negative Sar1 H52N / SKL-CFP 24 hr after agro -infiltration, SKL-CFP is used as a transformation control ( de Marcos Lousa et al., 2016 ). DIC: differential interface contrast. Scale: 10 \u00b5m . Lower pictures show merged images. ( B ) Secant view of confocal images of N. benthamiana expressing YFP- St REM1.3 or aquaporin At PIP1.1-RFP with or without Brefeldin A, 48 hr after agroinfiltration. Scale bar: 10 \u00b5m .\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** ( A, B ). Surface view confocal images of N. benthamiana epidermal cells expressing YFP- St REM1.3 or PMA4-GFP 48 hr after agroinfiltration. ( C ) Fluorescence Intensity plots through the indicated lines. ( D ) Spatial Clustering Index ( SCI ) was calculated by dividing the mean of the 5 % highest values \u200b\u200bby the mean of 5 % lowest fluorescence intensities values \u200b\u200b(UA) in the PM. Comparison of SCI show the difference of clustering between PMA4 (smooth location, n\u00a0= 27 cells ) andSt REM1.3 (discrete location, n\u00a0= 22 cells ), significance tested by a two-tailed Mann-Whitney test. E, FG ) SCI is not correlated with fluorescence intensity. Surface view confocal images and intensity plots along the indicated lines of N. benthamiana epidermal cells expressing low or high levels of YFP- St REM1.3. ( H ) Tukey boxplot showing statistical differences in fluorescence intensity of cells expressing low or high levels of YFP- St REM1.3, n\u00a0= 17 . ( I ) SCI calculated for cells expressing low or high fluorescence levels of YFP- StREM1.3 showing no difference in YFP- St REM1.3-associated nanodomains in the PM between the two levels of expression. Different italicized-letters indicate significant differences among means ( p < 0.001 , two-tailed Mann-Whitney test).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** ( A ) Quantification by GC-MS of the \u03945 phytosterols and cycloartenol from control and fen-treated N. benthamiana leaves ( n\u00a0= 3 , error bars indicate SEM). Cycloartenol accumulation is similar to what was decribed in ( Grison et al., 2015 ). ( B ) Confocal images of surface or secant views of control and fen-treated N. benthamiana leaf epidermal cells expressing PMA4-GFP 48 hr after agroinfiltration. ( C \u2013 E ) Intensity plots and SCI of PMA4-GFP after fen treatment. Scale bars, 10 \u00b5m .\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** ( A ) Secant view confocal images of N. benthamiana leaf epidermal cells expressing either Dead or Active MAP-mTURQUOISE2-SAC1p from yeast constructs and P19 to increase expression ( Baulcombe and Moln\u00e1r, 2004 ). Observations were made 48 hr after agroinfiltration. Scale bar, 10 \u00b5m . ( B ) Secant view confocal images of N. benthamiana leaf epidermal cells expressing three independent PI4P binding domain biosensors: cYFP-P4M SidM , mCitrine-2xPH (FAPP1) and mCitrine-1xPH (OSBP1) ( Simon et al., 2014 ) alone or co-expressed with either active or dead MAP-mTurquoise2-SAC1p (Simon et al., 2016 ). ( C ) Secant and surface view confocal images of N. benthamiana leaf epidermal cells expressing a sensor for PIP4,5P 2 (cYFP-2xPH PLC), a sensor for PS (cYFP-2xPH Evectin) and the PM protein (PMA4-GFP) with either active or dead MAP-mTurquoise2-SAC1p. Scale bars for secant and surface views, 10 \u00b5m . ( D ) Quantification of PM fluorescence intensity for Pi4P, PS, PI (4,5) P 2 biosensors and PMA4-GFP under co-expression with MAP-SAC1p and MAP-SAC1p dead.\n\nStREM1.3 being a hydrosoluble protein intrinsically attached to the PM with no transit peptide, no transmembrane domain and no membrane anchor signatures (Raffaele et al., 2007), altogether our data suggest that StREM1.3 (likely under the form of a trimer [Perraki et al., 2012]) is targeted to the PM from the cytosol by a mechanism independent of the classical COP-II-mediated secretory pathway and that the formation of StREM1.3 PM-nanodomains likely does not rely on secretory trafficking.\n\n### REMORIN localization into highly-ordered PM-nanodomains is mediated by sterol and phosphatidylinositol 4-phosphate\n\nGroup 1 REMs co-purify in the detergent-resistant membrane biochemical fraction with sterols and phosphoinositides (PIPs) (Raffaele et al., 2009; Demir et al., 2013; Mongrand et al., 2004; Furt et al., 2010). REM-CA also binds to PIPs in\u00a0vitro (Perraki et al., 2012). We therefore tested the involvement of both sterols and PIPs in the PM-nanodomain localization of StREM1.3 in vivo by modifying the PM lipid content. First, to alter membrane sterol composition we chose fenpropimorph (fen). Fen alters the PM sterol-composition but not the total amount of sterols (Grison et al., 2015; Hartmann et al., 2002). As expected, after fen treatment, the content of \u22065-sterols decreased concurrently with an increase in cycloartenol (Figure 1\u2014figure supplement 5A). This qualitative modification of sterol composition had no effect on the targeting of YFP-StREM1.3 to the PM but abolished its nanodomain organization measured by the SCI (Figure 1C). Proton pump PMA fused to GFP was used as control of membrane integrity after fen treatment (Figure 1\u2014figure supplement 5B\u2013E). To obtain further evidence of the enrichment of StREM1.3 into sterol-enriched nanodomains, expected to display a higher degree of order (Dufourc, 2008), we used the environment\u2013sensitive probe di-4-ANEPPDHQ in vivo (Zhao et al., 2015). Figure 1D shows that nanodomains enriched in YFP-StREM1.3 co-localized with highly ordered regions of the PM, in good agreement with the involvement of sterols in StREM1.3 localization.\n\nSecond, we tested the implication of PIPs in St REM1.3 recruitment to the PM. We focused in particular on Phosphatidylinositol 4-phosphate (PI4P). Recent works showed that PI4P is enriched in the inner-leaflet of plant PM, conferring a negatively charged electrostatic field that defines PM identity in regard to other endomembranes ( Vermeer et al., 2009 ; Simon et al., 2016 , Simon et al., 2014 ). To alter the PI4P content, we used the Myristoylated / Palmitoylated-Phosphatidylinositol 4-phoshatase SAC1p enzyme from yeast ( Hammond et al., 2012 ) fused to mTurquoise2 (MAP-mTU2-SAC1p) which specifically dephosphorylates PI4P at the PM level ( Hammond et al., 2012Hammond et al., 2012 ) Hammond et al., 2012 ; Stefan et al., 2011; Mesmin et al., 2013 ; Moser von Filseck et al., 2015a , Moser von Filseck et al., 2015b ) without impacting PS or PI (4,5) P 2 ( Simon et al., 2016 ) ( Figure 1\u2014figure supplement 6 ). Compared to the expression of the dead version of MAP-SAC1p, the expression of the active form induced a reduction in PM-associated PI4P concentration leading to a strong decrease of both YFP- St REM1.3 signal and lateral segregation at the PM ( Figure 1E ). These data suggest that PI4P is required for the targeting of St REM1.3 at the PM and for its sub-compartmentalization within the PM plane.\n\nAltogether, these results suggest that PM inner-leaflet lipids, notably sterols and PI4P are critical for the targeting of the St REM1.3 to PM nanodomains by a mechanism independent of the classical secretory pathway ( Figure 1F ).\n\n### REM-C-terminal anchor peptide is an unconventional PM-binding domain embedded in the bilayer that folds upon specific lipid interaction\n\nAs mentioned before, REM-CA is critical for PM-targeting ( Perraki et al., 2012 ; Raffaele et al., 2013 ; Konrad et al., 2014 ; Gui et al., 2015 ) ( Figure 2A ). To better understand the role of lipids and the function of REM-CA in the assembly of St REM1.3 into nanodomains, we used a combination of biophysical, modeling and biological approaches.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig2-v2.jpg)\n\n**Figure 2.:** (A) Primary sequence of StREM1.3 showing the two putative regions 1 and 2 (R1 and R2) composing the REM-CA. Hatched domain represents the putative coiled-coil helix. (B) Order parameter of the carbon atoms of the fatty acid moiety of all-deuterated 1,2-dimyristoyl-D54-sn-3-phosphocholine (DMPC-d54) in PM inner leaflet-mimicking liposomes revealed by deuterium NMR. (C) Plots of the maximal surface pressure variation (\u0394\u03a0) vs. the initial surface pressure (\u03a0i) (left panel) and the corresponding maximal insertion pressure (MIP) and synergy factor (right panel) obtained from the adsorption experiments performed viaa Langmuir trough with a monolayer composed of phosphatidylcholine (PC), phosphoinositides (PIPs) and sitosterol (Sito) (see Figure 2\u2014figure supplement 3A). The insignificant \u0394\u03a0\u00a0obtained for D1 indicates that D1 cannot penetrate into the monolayer. (D) Subcellular localization of YFP-StREM1.3 deleted for R2, transiently expressed in N. benthamiana leaf epidermal cells. Scale bars, 10 \u00b5m. (E) FT-IR spectra measured in the 1155\u20131255 cm\u22121 absorbance region for the REM-CA, R1 and R2 peptides inserted into MLVs composed of PC:PIPs:Sito (see Figure 2\u2014figure supplement 3B). (F) FT-IR spectra in the 1600\u20131700 cm\u22121 absorbance region for the REM-CA, R1, R2 peptides and liposome alone with MLVs composed of PC alone and PC:PIPs:Sito (see Figure 2\u2014figure supplement 3B). (G) Solid-state NMR spectra of REM-CA peptides co-solubilized with DMPC-d54 supplemented with PIPs and Sitosterol (see Figure 2\u2014figure supplement 3C). Excerpts on the position of the C\u03b1 resonance frequencies of Leucines and Isoleucines on the abscissa are depicted. (H) Radial distribution functions (RDF) of Y184 and sterols, and average distances between the five lysine(K)/arginine(R) residues of REM-CA and the phosphate groups of PI4P during MD simulation, bar indicates mean \u00b1 s.d., letters indicate significant differences revealed by Dunn\u2019s multiple comparisons test p<0.0001. (I) Model of the insertion of REM-CA in the PM inner-leaflet based on tensiometry, FTIR, MD and NMR studies. Inset displays Molecular Dynamics (MD) model of the two lysines, K192 and K193, likely in interaction with the phosphate groups of PIPs.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Thin-layer chromatography analysis of Phosphoinositides mix (PIPs). (A) REM-CA folds in alpha helix in hydrophobic environment. 2D 1H-15N correlation spectra of REM-CA recorded at 800MHz using the SOFAST-HMQC pulse sequence. All spectra were recorded at 25\u00b0C with 1 mM of REMCA-WT in H2O/D2O (90/10) (red), Dodecylphosphocholine-d38, DPC (blue) and trifluoroethanol-d2, TFE (grey). (B) Primulin-stained high-performance thin layer chromatography (HP-TLC) plate of the Phosphoinositides mix (PIPs), reference P6023 SIGMA, along with authentic standards: Phosphatidylserine (PS) Phosphatidylinositol (PI), Phosphatidylinositol-4-phosphate (PI4P) and Phosphatidylinositol-4,5-bisphosphate PI(4,5)P2). (C) Histogram representation of relative amounts of each lipid species present in the PIPs quantified by densitometry scanning. Bars indicate SEM, n\u00a0=\u00a03. (D) Temperature effect on REM-CA containing liposomes in the range \u22128\u00b0C to 31\u00b0C. Heating curves and corresponding NMR lineshape do not show significant changes. (E) 31 P NMR spectra of deuterated 1,2-dimyristoyl-d54- sn -3-phosphocholine (DMPC-d54) membrane in the absence or presence of REM-CA.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** ( A ) Primary sequence of St REM1.3. ( B ) Sequence and predicted structure of the St REM1.3 REM-CA peptide predicted by different methods, the consensus secondary structure prediction is indicated below; alpha helix (h), random coil (c), beta sheet (e). ( C ) HCA ( hydrophobic cluster analysis ) plot of the REM-CA sequence of St REM1.3. V, F, W, Y, M, L and I are hydrophobic residues. These amino acids are circled and hatched to form hydrophobic clusters, see online methods.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Plots of the maximal surface pressure variation (\u0394\u03a0) vs. the initial surface pressure (\u03a0i) and of the corresponding maximal insertion pressure (MIP) obtained from the adsorption experiments with Langmuir through for REM-CA peptide, with different monolayer compositions i.e. PC alone, PC:PIPs (molar ratio 80:20) or PC:PIPs:Sito (molar ratio 70:20:10). (B) Fourier Transformed-InfraRed (FT-IR) spectra of REM-CA, R1 and R2 peptides in presence of different composition of MLV i.e. PLPC alone, PC:PIP (molar ratio 80:20), PC:Sito (molar ratio 90:10) or PC:PIP:Sito (molar ratio 70:20:10). Three regions of interest of the spectra are shown: the 3050\u20132800 cm\u22121 region corresponds to the absorbance of lipid alkyl chains, the 1295\u20131125 cm\u22121 region to the lipid phosphate groups and the 1800\u20131600 cm\u22121 region to the lipid C=O ester and peptide amide groups. (C) Solid-state NMR structure of REM-CA peptides 13C-labeled at the positions L180, G188 and I184. NMR spectra are shown for membranes containing REM-CA peptides, composed of deuterated 1,2-dimyristoyl-D54-sn-3-phosphocholine, (DMPC-d54), supplemented with sitosterol and Phosphoinositides mix ( PIPs ), see Figure 2\u2014figure supplement 1B, C .\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** ( A ) Snapshots of MD simulations of REM-CA in the presence of a bilayer composed of 1-palmitoyl-2-linoleyl- sn -glycerol-3-phosphocholine ( PLPC ), sitosterol and PI4P (also see Video 1 ). ( B ) Atomistic structure of REM-CA in PLPC / PI4P / sitosterol matrix. MD atomistic simulations proposes a model of the inserted structure of REM-CA in the lipid bilayer where peptide-lipid interaction would be mediated by the interaction of REM-CA with the phosphate groups of phosphoinositides and where the lateral ring of tyrosine 184 (Y184) is observed the inside of the membrane.\n\nFirst, liquid-state NMR spectra of REM-CA in aqueous environment showed that REM-CA peptide is unstructured ( Perraki et al., 2012 ) ( Figure 2\u2014Figure supplement 1A ). Second, equivalent spectra, acquired in hydrophobic environment showed that REM-CA folds into an alpha helical conformation ( Figure 2\u2014Figure supplement 1A ). Third, to gain insights into the embedment of REM-CA in the PM we performed solid-state NMR experiments on liposomes mimicking the PM inner-leaflet composition ie containing phosphatidylcholine ( PC ), PIPs and phosphatidylserine ( PS ) ( Cacas et al., 2016 ) ( Figure 2\u2014figure supplement 1B, Cshows the lipid content of the phosphoinositide mix, further called PIPs, used in this study). In these conditions, REM-CA's partial insertion into liposomes increased the degree of order of the first 10 carbon atoms of acyl chains indicated that REM-CA is partially embedded in the lipid phase ( Figure 2B ). Importantly, REM-CA insertion does not modify the overall bilayer structure as suggested by a very similar global thermotropism ( Figure 2\u2014figure supplement 1D, E ).\n\nNext, we determined the REM-CA peptide regions that are inserted in the hydrophobic core of the bilayer. In silico analyzes predicted that REM-CA is structurally divided into two regions ( Figure 2\u2014figure supplement 2 ): a putative helical region (171-190aa, called Region 1, R1) and a more hydrophobic non-helical region (191-198aa called Region 2, R2). We thus tested the ability of REM-CA, R1 or R2 peptides alone to insert into monolayers mimicking the PM inner-leaflet ( Cacas et al., 2016 ). Adsorption assays showed that the penetration capacity of the peptide REM-CA was higher in the monolayers composed of PC, PIPs and sitosterols, than in monolayers composed of PC alone ( Figure 2\u2014figure supplement 3A). Furthermore, peptide R2 but not the R1 was able to insert into monolayers ( Figure 2C ). Consistently, deletion of R2 in the REM-CA of YFP- St REM1.3 abolished PM association in planta ( Figure 2D ).\n\nWe next performed Fourier transform-infrared spectroscopy (FT-IR) to characterize REM-CA-lipid interactions at atomistic level. FT-IR showed a maximum intensity shift in the absorbance wavenumber of lipid phosphate groups in the presence of REM-CA, R1 and R2 peptides, with a stronger effect of R1 as compared to R2 ( Figure 2\u2014figure supplement 3B ). This clearly shows that the polar heads of lipids are involved in the REM-CA-liposome interactions. Moreover, a maximum intensity shift in the absorbance wavenumber of carbon-hydrogen bonds was observed in presence of R2, which confirmed that R2 is more embedded than R1 within the lipid phase ( Figure 2E ).\n\nTo further inquire into the role of lipids in the folding of REM-CA, we performed structural analyses by FT-IR and solid-state NMR of the peptides in liposomes containing either PC alone, or PC with PIPs and sitosterols. FT-IR experiments showed that REM-CA, R1 and R2 peptides are mainly a mix of different structures in PC-containing liposomes (Figure 2F). In contrast, R1 was more helical and R2 was more extended when sitosterol and PIPs are present in the bilayer (Figure 2F). Importantly, PIPs were sufficient to induce R1, R2 and REM-CA folding (Figure 2\u2014figure supplement 3B).\n\nLipid-mediated folding of REM-CA, embedded in the bilayer, was further confirmed by solid-state NMR on liposomes containing 13C-labeled REM-CA peptides on three residues: L180 and G188 in R1 and I194 in R2 (underlined in Figure 2A). Solid-state NMR spectra confirmed that R1 adopted a single non-helical conformation in PC, while partially folding into an alpha helix in the presence of PIPs and sitosterol (Figure 2G, Figure 2\u2014figure supplement 3C).\n\n### Molecular dynamics simulations reveal interactions between REM-CA residues and lipids in the ternary lipid mixture\n\nMolecular Dynamics (MD) simulation was performed with REM-CA and a bilayer composed of PC, sitosterol and PI4P, see Video 1. MD confirmed that REM-CA inserted itself in the lipid bilayer and presented two distinct regions (Figure 2\u2014figure supplement 4A) in good agreement with the in silico analyses (Figure 2\u2014figure supplement 2). MD proposed that albeit facing the inside of the bilayer (Figure 2\u2014figure supplement 4B), the lateral ring of tyrosine Y184 (tyrosine being a residue often observed in interaction with sterols [Nasir and Besson, 2011]) was unlikely to interact with sterols with a distance between Y184 and sterol superior to 1 \u00b5m (Figure 2H). MD also modeled that lysines and arginine present in REM-CA, namely K192 and K193, and to a lesser extent K183 and R185, can form salt-bridges with the phosphate groups of PI4P (Figure 2H, Figure 2\u2014figure supplement 4B). The lysine K176 was not in interaction with PI4P.\n\n![Video 1.](https://cdn.elifesciences.org/articles/26404/elife-26404-video1.mp4.jpg)\n\n**Video 1.:** MD coarse-grained simulations propose a model of the insertion of REM-CA in the lipid bilayer (PLPC/PI4P/sitosterol), where peptide-lipid interaction would be mediated by the interaction of REM-CA with the phosphate groups of PI4P (in gold) and the embedment of the region 2 (in yellow) inside the lipid phase, see online methods.\n\nAltogether, we propose a model for the structure of REM-CA inserted in the PM inner-leaflet, composed of two domains: a PI4P-mediated alpha-helical folding conformation for R1 arranged on the PM surface interacting with the lipid polar heads through lysines and arginine and a hydrophobic conformation for R2 embedded inside the lipid phase (Figure 2I).\n\nClassically, protein interactions with lipids occur through TM segments (Lin and London, 2013) or for monotopic proteins (to which REMs belong) through GPI anchoring, amphipathic helixes or ionic interactions (Vinothkumar and Henderson, 2010; Hedger et al., 2015). Moreover, specific interactions with PIPs usually occur through well-described motifs such as PH, C2 or PDZ domains (Di Paolo and De Camilli, 2006). The membrane-anchoring properties of REM-CA that we reveal here are therefore unconventional: these properties do not fit into any of the aforementioned lipid-interacting patterns and to the best of our knowledge such a membrane-anchoring conformation is not described in structural databases at present.\n\n### Positively\u00a0charged residues of REMORIN C-terminal Anchor are essential for PM-targeting\n\nTo further test the role of REM-CA residues found by MD in putative interactions with lipids (Figure 2H), we followed a near-iterative approach by observing the in vivo localization of YFP-StREM1.3 REM-CA mutants (Figure 3A,B). First, Y184 was mutated to a phenylalanine. Consistent with a lack of interaction with sterols (Figure 2H), the YFP-StREM1.3 Y184F mutant was still organized in PM nanodomains (Figure 4A). Second, we observed the subcellular localization of 19 YFP-StREM1.3 single to sextuple substitution mutants of the four lysines and the arginine present in REM-CA. Confocal microscopy images presented in Figure 3C show that single and double mutants still localized to the PM. In contrast, a strong impairment in PM-targeting with full or partial localization in the cytosol was observed for all triple to sextuple mutants. These results confirm the involvement of electrostatic interactions between REM-CA and negatively charged lipids with regard to PM targeting. Interestingly, in contrast to membrane surface-charge targeted proteins which generally possess a net charge of up to +8 (Simon et al., 2016; Heo et al., 2006; Yeung et al., 2008; Barbosa et al., 2014), the net electrostatic charge of REM-CA mutants is negative (Figure 3B). This suggests that the REM-CA/PM coupling is controlled by a specific lipid-peptide interaction, primarily governed by the intrinsic structural properties of the REM-CA moiety, and not by its net charge.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sequence Logo obtained from 51 Group 1 REM-CA sequences presented in Figure 1\u2014figure supplement 1, and StREM1.3 REM-CA sequence. (B) Summary of the 20 REM-CA mutants of StREM1.3 generated in this study and their corresponding subcellular localizations. PM, Plasma Membrane; Cyt, Cytosol. The total electrostatic charge of each mutated REM-CA is indicated. (C) Confocal images presenting secant views of N. benthamiana epidermal cells expressing 20 YFP-StREM1.3 REM-CA mutants (single to sextuple mutations), 48 hr after agroinfiltration. Scale bar of 10\u00b5m applies to all images.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig4-v2.jpg)\n\n**Figure 4.:** ( A ) Surface view confocal images of the localization of REM-CA single and double mutants. Scale bar, 10 \u00b5m . ( B ) Tukey boxplot showing the Spatial Clustering Index of the REM-CA single and double mutants. Letters indicate significant differences revealed by Dunn's multiple comparisons test p < 0.05 ( n\u00a0= 3 ). ( C ) Quantification of Potato Virus X fused to GFP (PVX: GFP) cell-to-cell movement alone (Mock) or co-expressed with St REM1.3 WT or StREM1.3 REM-CA single and double mutants. Tukey boxplots represent the PVX: GFP infection foci area normalized to the mock condition. Letters indicate significant differences revealed by Dunn's multiple comparisons test p < 0.05 ( n\u00a0= 3 ). ( D ) Plasmodesmal permeability assessed in the presence of WT, single or double mutants of REM-CA, according to ( Perraki et al., 2012 ). Tukey boxplots represent the percentage of cells presenting a free diffusion of the GFP ( n\u00a0= 3 ), letter indicate significant differences revealed by Dunn's multiple comparisons test p < 0.05 (Statistical analysis in\u00a0Figure 4\u2014figure supplement 1 ).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** ( A ) Plasmodesmata permeability test performed by visualizing cell-to-cell movement of GFP from a single-cell to its neighbors. Epifluorescence microscopy images represent a single-cell where GFP has not diffused to neighboring cells (no Diffusion) and another transformed single-cell where GFP has diffused to three neighboring cells (Diffusion) Scale bar, 100 \u00b5m . Plasmodesmal permeability was assessed with GFP alone, or in the presence of RFP- St REM1.3 mutants 5 daysafter infiltration, resume of results obtain from at least three independent experiments are provided in the table. Bottom panel, Total proteins extracted from leaf samples of the plasmodesmal permeability test and probed by anti- St REM1.3 antibodies ( Raffaele et al., 2009 ) for each condition. ( B ) Representative epifluorescence microscopy pictures of PVX: GFP infection foci on N. benthamiana leaf epidermal cells for 12 RFP- St REM1.3 constructs 5 days after infection. Scale bar, 400 \u00b5m . Bottom panel, Total proteins extracted from leaf samples of the PVX: GFP infection assay and probed by anti- StREM1.3 antibodies ( Raffaele et al., 2009 ) for each condition.\n\n### Positively charged residues of REMORIN C-terminal anchor are essential for PM-nanodomain identity and function\n\nWe next focused on the mutants that still were targeted to the PM to test whether the mutations had an effect on their localizations in nanodomains. Consistently with MD calculations of the distance with the PI4P polar-head (Figure 2H), mutating K192, K193, and K183 revealed the requirement of these residues for a correct nanodomain organization whereas K176 and R185 taken alone are dispensable. Moreover, the coupling of K183, K192 and K193 mutations with other mutations on charged residues increased the alteration of StREM1.3 PM-nanodomain organization as assessed by the SCI (Figure 4A,B).\n\nTo address the functional relevance of REM nanodomain-organization, we exploited the previously reported role of St REM1.3 in restricting cell-to-cell propagation of PVX by decreasing plasmodesmata size-exclusion limit ( Raffaele et al., 2009 ; Perraki et al., 2014 , Perraki et al., 2012 ). Single mutants K176S, Y184F and R185A behaved like St REM1.3 WT whereas K183S and K192A and K193A partially lost their ability to reduce viral intercellular movement and PD permeability ( Figure 4C, D and Figure 4\u2014figure supplement 1). A close to complete loss of activity was observed with REM-CA double mutants, unequivocally linking the protein lateral segregation with its function to regulate cell-to-cell connectivity.\n\n### Single-particle tracking localization microscopy reveals that REMORIN C-terminal anchor mutants display a lower diffusion coefficient mobility\n\nTo better characterize the PM-localization of REM-CA mutants, we used single-particle tracking photoactivated localization microscopy in variable angle epifluorescence microscopy mode (spt-PALM VAEM [ Manley et al., 2008 ]), Video 2 . This super-resolution microscopy technique allows the reconstruction of high-density super-resolved nanoscale maps of individual protein localization and trajectories in the PM ( Hosy et al., 2015 ). Different kinetic and organizational parameters, such as individual diffusion coefficient (D), mean square displacement ( MSD), nanodomain diameter and protein density can be calculated. We selected four REM-CA mutants that located at the PM but showed impairment in both nanodomain clustering and biological functions, namely StREM1.3 K183S , StREM1.3 K192A , StREM1.3 K183S / K192A and StREM1.3 K192A / K193A ( Figure 5A \u2013C ). All EOS- St REM1.3 fusions exhibited a typically highly confined diffusion mode, but the four EOS-StREM1.3 mutants show a lower mobility than the EOS-StREM1.3 WT ( Figure 5B, C ). Nevertheless, EOS- St REM1.3 K183S displayed a similar MSD than EOS- St REM1.3 WTwhereas EOS- St REM1.3 K192A , EOS- St REM1.3 K183S / K192A and EOS- St REM1.3 K192A / K193A displayed a lower MSD ( Figure 5D ). Figure 5E depicts representative trajectories of EOS-StREM1.3 WT and REM-CA-mutants.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig5-v2.jpg)\n\n**Figure 5.:** ( A ) Super-resolved trajectories ( trajectories\u00a0> 20 points ;) of EOS- St REM1.3 WT and REM-CA mutants (K183S, K192A, K183S / K192A and K192A / K193A) visualized by high-resolution microscopy spt-PALM VAEM . 3. ( B, C ) Distribution of diffusion coefficients ( D ) represented as log (D) of the different fusion proteins and distributions of the peak D values \u200b\u200bof individual cells obtained by normal fits and were plotted as log (D), bar indicates mean \u00b1 sem ( D ) Mean Square Displacement ( MSD ) over time for the global trajectories\u00a0> 15 pointsof each EOS- St REM1.3 construct ( n\u00a0= 13 to 51 cells over three independent experiments). ( E ) Representative trajectories of St REM1.3 WT and REM-CA mutants. Significant differences revealed by Dunn's multiple comparisons.\n\n![Video 2.](https://cdn.elifesciences.org/articles/26404/elife-26404-video2.mp4.jpg)\n\n**Video 2.:** RAW DATA spt-PALM VAEM was performed on N. benthamiana leaf epidermal cells expressing EOS- St REM1.3.\n\n### Live PALM data reveals that REMORIN C-terminal anchor defines protein segregation\n\nTo describe the supra-molecular organization of the proteins at PM level, we next analyzed live PALM data using Vorono\u00ef tessellation (Levet et al., 2015). This method subdivides a super-resolution image into polygons based on molecules local densities (Figure 6A, see online methods). For all fusion proteins, we identified clusters and precisely computed their dimensions (Figure 6A,B). EOS-StREM1.3 WT clustered in nanodomains with a mean diameter of ca. 80 nm, a result in good agreement with previous studies using different methods of imagery (Raffaele et al., 2009; Demir et al., 2013). For the WT protein fusion, nanodomains represented ca. 7% of the total PM surface (Figure 6C) with ca. 37% of molecules in nanodomains (Figure 6D) and a density of ca. two nanodomains per \u00b5m (Raffaele et al., 2009) (Figure 6E). Interestingly, the four REM-CA mutants showed a decrease of the total surface occupied by nanodomains in the total PM surface (Figure 6C). EOS-StREM1.3K183S and StREM1.3K183S/K192A display smaller nanodomains with a lower number of molecules per cluster, whereas EOS-StREM1.3K192A, and EOS-StREM1.3K192A/K193A displayed larger nanodomains with a decrease of overall nanodomain density in the PM (Figure 6D,E). The study of REM-CA mutants revealed that single protein mobility behavior and protein supramolecular organization are uncoupled, for example EOS-StREM1.3K192A proteins displaying the lower MSD but forms larger clusters.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26404/elife-26404-fig6-v2.jpg)\n\n**Figure 6.:** ( A ) Live PALM analysis of molecules localization by tessellation-based automatic segmentation of super-resolution images. ( B ) Diameter distributions of the cluster of EOS fusion proteins (line shows the Gaussian fit). ( C ) Nanodomains surface expressed in percentage of the total PM surface. ( D ) Percentage of molecule localizing in nanodomain. ( E ) Nanodomain density (number of nanodomain.\u00b5m - 2 ) for the indicated proteins. Statistics were performed on at least six data sets per construction, see online methods for details. Letter indicate significant differences revealed by Dunn's multiple comparisons test p <0.05 .\n\nAltogether, spt-PALM and live PALM data analyzes showed that mutations in REM-CA affect the mobility and the organization of the protein by altering the partition of St REM1.3 molecules into nanodomains ( Figures 3\u20136 ), likely causing the functional impairments observed. These results can be discussed in view of in silico spatial simulations of signaling events suggesting that proper partition of proteins optimizes signaling at PM ( Mugler et al., 2013 ). In the case of St REM1.3, an altered partition in nanodomain is sufficient to inhibit the signaling events involving St REM1.3 in the PM. StREM1.3 being a phosphorylated protein, one can hypothesize that the REM-CA mutations alter the partition with its unknown cognate kinase (s) and / or interacting partners. Moreover, St REM1.3 locates to both the PM and in plasmodesmata , REM-CA mutations may also alter the partition between these two PM sub-compartments. These hypotheses are currently investigated in our laboratories.\n\n### Conclusions\n\n#### Interaction between REM-CA and lipids mediates plant PM-nanodomain organization\n\nPlant and animal plasma membranes are dynamically sub-compartmentalized into membrane domains ( Lingwood and Simons, 2010 ). In plants, the REMORIN protein family represents the best-studied PM-domain-associated proteins ( Jarsch and Ott, 2011 ). Genetic, live cell imaging and biochemical studies suggest that REM domains segregate into molecular platforms involved in hormone signaling and plant-microbe interactions ( Jarsch and Ott, 2011 ; Gui et al., 2016 ), but the functional relevance of REM PM-nanodomain organization and the molecular mechanisms underlying PM-nanodomain organization of REM are still unknown.\n\nHere, we provide an unprecedented resolution of the molecular mechanisms that control protein spatio-temporal segregation into membrane nanodomains. Our work reveals that the group 1 REM St REM1.3 is targeted to inner-leaflet PM nanodomains from the cytosol by REM-CA, an unconventional C-terminal structural lipid-binding motif that undergoes a conformational change in presence of PI4P and sterols ( Figures 1 and 2 ). These lipids seem to form the core components modulating REM nanodomain organization. The precise cooperativity between each lipid in the inner-leaflet remains to be determined ( Vonkova et al., 2015 ), in particular the role of sterols, which do not seem to be in direct interaction with REM-CA ( Figures 2 and 3). It is well established that sterols interact preferentially with saturated-fatty acid containing lipids to form highly ordered lipid phases ( Lorent and Levental, 2015 ). Interestingly, plant PM PI4P contain up to 30 - 60 % of saturated acyl chains ( Furt et al., 2010 ; K\u00f6nig et al., 2007 ), we may assume that this preferential interaction is one of the driving force that allow the clustering REM -enriched domains ( Figure 1 ). Following our model, a dynamic famille-\u00e0-trois between REM-CA, PI4P and sterols inside the inner-leaflet phospholipid bilayer PM inner-leaflet could lead to a definition of what drives PM-nanodomain formation ( Figure 2 ).\n\n#### REM-CA diversity and REM-CA-like moieties beyond the plant kingdom\n\nMutations of St REM1.3 REM-CA residues involved in the interaction with the polar heads of phosphoinositides modify PM lateral segregation and dynamics and consequently the protein's functionality ( Figures 4, 5 and 6 ). This reflects the importance of REM-CA in the definition of St REM1.3's lateral segregation and it shows that lateral segregation is determined by the primary sequence of REM-CA. The six different phylogenetic groups of REMs label spatially distinct PM-domains ( Jarsch et al., 2014 ; Raffaele et al., 2007 ). It follows that the evolution of the REM-CA sequence could be involved in the diversification of the different PM-domains marked by REMs (Raffaele et al., 2007 ). A more in-depth analysis of REM-CAs from other groups and the involvement of lipids in domain localization of REMs will provide crucial information about the determinants of PM lateral organization of the REM protein family that could in fine allow the deciphering of critical PM- associated signaling events in plants. In addition, it is reasonable to think that the S-acylation of REMs on their REM-CA moieties could modify the protein-lipid interaction that modulate their dynamics ( Hemsley et al., 2013 ) ( Figure 1\u2014figure supplement 1 ). Study of a prenylated K-Ras protein in mammalian cells showed a complex structural cross-talk between the primary sequence of the protein and its prenyl moeity ( Zhou et al., 2017). Therefore, the study of acylated REM-CAs could provide another level of complexity in the establishment of REM-associated PM-nanodomains.\n\nThe structural conformation of REM-CA is original and does not fit with other membrane-anchoring conformation already described in databases. The search for structural analogues of REM-CA in publicly available structure databases identified analogous domains in bacteria, viruses and animals ( Raffaele et al., 2013 ). Thus, the understanding of the structural basis for REM-CA PM-binding and lateral segregation may bring about knowledge of crucial importance, spanning beyond the plant kingdom.\n\n#### PM nanodomains represent a functional unit for plant cell signaling\n\nIn plants, most membrane proteins are relatively immobile forming static membrane domains ( Jarsch et al., 2014 ; Hosy et al., 2015 ; Martini\u00e8re et al., 2012 ). It was therefore postulated that membrane domain formation and functionality are based on protein immobility. Unexpectedly, we show in the present work that non-functional REM-CA mutants showing an altered PM-nanodomain localization harbor an even lower diffusion coefficient than the WT ( Figure 5 ). This observation reveals that PM-protein function does not rely solely on their immobility but rather on their ability to organize into supramolecular domains. In good agreement, REM-CA mutants show an altered ability to partition into nanodomains ( Figure 6). It thus appears that REM-CA-defined PM-nanodomains may represent a functional unit for membrane-bound cell signaling in plants. The study of REM-CA mutants also reveals that the mobility behavior of single molecules is not directly linked to the partitioning of the resulting population. For example EOS- St REM1.3 K192A proteins displaying a lower MSD compared to the WT but form larger clusters. Similarly, a higher MSD is not necessarily coupled to a higher diffusion coefficient as observed for EOS- St REM1.3 K183S ( Figure 5 ).\n\nAltogether, our data reveal an unsuspected complexity in the definition of molecule organization and dynamics in the PM that we hope will pave the way for an exhaustive comprehension of the mechanisms regulating membrane-bound protein organization and function.\n\n## Materials and methods\n\n### Online methods\n\n#### Plant material, culture and transformation\n\nNicotiana benthamiana plants were cultivated in controlled conditions ( 16 hr photoperiod, 25 \u00b0 C ). Proteins were transiently expressed via Agrobacterium tumefaciens as previously described in ( Perraki et al., 2012 ). For subcellular localization studies and biochemical purification, plants were analyzed 2 days after infiltration using 0.2 OD agrobacterium suspension. For PVX: GFP spreading assays and gating experiments, plants were observed 5 days after infiltration. The A. tumefaciens GV3101 strain was cultured at 30 \u00b0 Con appropriate selective medium depending on constructs carried. For phosphoinositide homeostasis modulation, effects of phosphoinositide phosphatase expression were observed 20 - 24 hr post-infiltration ( Simon et al., 2016 ).\n\n#### Treatment with Brefeldin A\n\nLeaves transiently expressing each construct 48 hr post-agroinfiltration were infiltrated with a dH 2 O solution of Brefeldin A at a concentration of 50 \u00b5g / mL (B7651 SIGMA); from a DMSO stock solution; for 3 hr before observation. Mock conditions contain the same volume of DMSO alone. Leaves were then observed with a Zeiss LSM 880 confocal fluorescence microscope with an oil-immersion 63x lense using the appropriate excitation wavelengths for each fluorescent fusion proteins.\n\n#### Cloning, molecular constructs and peptides\n\nAll constructs were generated using either classical or 3-in-1 Gateway cloning strategies (www.lifetechnologies.com) with pDONR P4-P1R, pDONRP2R-P3, pDONR211 and pDONR207 as entry vectors, and pK7WGY2 (Karimi et al., 2002), pUBN-Dest::EosFP (Grefen et al., 2010) and pB7m34GW (Karimi et al., 2007) as destination vectors. StREM1.3 mutants were generated by site-directed mutagenesis as previously described in (Taton et al., 2000) with minor modifications. All constructs were propagated using the NEB10 E.coli strain (New England Biolabs). Ultrapure\n\nREM-CA peptides were obtained by de novo peptide synthesis, Purity\u00a0>98% with acetylation at the N-terminal (GenScript HK Limited).\n\n#### Viral spreading and\u00a0gating assays\n\nViral spreading of PVX:GFP in N. benthamiana leaves was assessed as described in (Perraki et al., 2012) with some modifications: spreading of PVX:GFP was visualized by epifluorescence microscopy (using GFP long pass filter on a Nikon Eclipse E800 with x4 objective coupled to a Coolsnap HQ2 camera) at 5 days post-infection and the areas of at least 30 of PVX:GFP infection foci per condition and per experiment were measured using a custom made macro on ImageJ.\n\n#### Epidermal cells live imaging and quantification\n\nLive imaging was performed using a Leica SP5 confocal laser scanning microscopy system (Leica, Wetzlar, Germany) equipped with Argon, DPSS and He-Ne lasers and hybrid detectors. N. benthamiana leaf samples were gently transferred between a glass slide and a cover slip in a drop of water. YFP and mCitrine (cYFP) fluorescence were observed with similar settings (i.e. excitation wavelengths of 488 nm and emission wavelengths of 490 to 550 nm). In order to obtain quantitative data, experiments were performed using strictly identical confocal acquisition parameters (e.g. laser power, gain, zoom factor, resolution, and emission wavelengths reception), with detector settings optimized for low background and no pixel saturation. Pseudo-colored images were obtained using the \u2018Red hot\u2019 look-up-table (LUT) of Fiji software (http://www.fiji.sc/). All quantifications were performed on raw images for at least min of 10 cells, at least two plants by condition with at least three independent replicates.\n\nFor quantification of the PM Spatial Clustering Index (SCI), which reveals the degree of segregation of fluorescence signal on the surface plane of the PM (Figure 1\u2014figure supplement 4), fluorescence intensity was plotted with a 10 \u00b5m line on raw images of cells PM surface view, three line plots were randomly recorded per cell and at least 15 cells per experiments were analyzed. For each plot, the Spatial Clustering Index was calculated by dividing the mean of the 5% highest values by the mean of 5% lowest values. For fluorescence intensities quantification, the mean grey value was recorded using a region of interest (ROI) of 5 \u00b5m x 5 \u00b5m on PM surface view raw images.\n\n#### Confocal multispectral microscopy\n\ndi-4-ANEPPDHQ-labelled leaves were observed as described in (Gerbeau-Pissot et al., 2014) with a Leica TCS SP2-AOBS laser scanning microscope (Leica Microsystems,\u00a0Germany) and a HCPL Apochromat CS 63x (N.A. 1.40) oil immersion objective. Images were excited with the 458 nm line and the 488 nm line of an argon laser for CFP and di-4-ANEPPDHQ respectively as described in (Gerbeau-Pissot et al., 2014). Fluorescence emissions were filtered between 465 and 500 nm for CFP. For di-4-ANEPPDHQ, to obtain ratiometric images, we recorded green and red fluorescence between 540 to 560 nm and 650 to 670 nm,\u00a0respectively. The mean red/green ratio of pixels (RGM) corresponding to either the global membrane, the 10%, the 5% or the 2% of the most intense CFP pixels were compared on each image.\n\n#### spt-PALM VAEM, single molecule localization and tracking\n\nN. N. benthamiana epidermal cells were imaged at room temperature. Samples of leaves of 2 week-old plants transiently expressing EOS-tagged constructs were mounted between a glass slide and a cover slip in a drop of water to avoid dehydration. Acquisitions were done on an inverted motorized microscope Nikon Ti Eclipse (Nikon France S.A.S., Champigny-sur-Marne, France) equipped with a 100\u00d7 oil-immersion PL-APO objective (NA\u00a0=\u00a01.49), a Total Internal Reflection Fluorescence Microscopy (TIRF) arm, a Perfect Focus System (PFS) allowing long acquisition in oblique illumination mode, and a sensitive Evolve EMCCD camera (Photometrics, Tucson, USA), see Video 2. Images acquisitions and processing were done as previously described by Hosy et al., 2015).\n\nSR-Tesseler software was used to produce vorono\u00ef diagrams, and subsequently quantify molecule organization parameters as previously recommended (Levet et al., 2015). Taking in account fluorophore photophysical parameters, localization accuracy and the first rank of local density of fluorescent molecules, correction for multiple detections occurring in a vicinity of space (\u03c9) and blinking tolerance time interval (\u03c4) are identified as the same molecule, merged together and replaced by a new detection at a location corresponding to their barycentre. Because first rank of local density of fluorescent molecules was below 0.5 mol/\u00b5m\u00b2 (c.a ranking from 0.1 to 0.3 mol/\u00b5m\u00b2), we used a fixed search radius \u03c9 of 48 nm as recommended (Levet et al., 2015). To determine the correct time interval \u03c4, the photophysics of the fluorophore namely the off-time, number of blinks per molecule and on-time distributions are computed for each cell. For example, for a dataset composed of 618,502 localizations, the average number of blinks per molecule was 1.42, and the number of molecules after cleaning was 315,929. As a control, the number of emission bursts (439,331), counted with \u03c4\u00a0=\u00a00, divided by the average number of blinks per molecule (1.42) was only 2.15% different. After correction for artefacts due to multiple single-molecule localization, we computed potential cluster using a threshold \u03b41i>2\u03b4N, where \u03b4N is the average localization density at PM level and \u03b41i is the density in presumed protein-forming nanocluster, with a minimal area of 32 nm\u00b2 and with at least five localization by cluster.\n\n#### Coarse-grained molecular dynamics\n\nCoarse-grained simulations have been carried out by using Gromacs v4.5.4 (Hess et al., 2008) on a 6-processor core i7 cluster. Coarse-graining reduces the complexity of the molecular system and is widely used to study peptide- or protein-membrane interactions (Lindahl and Sansom, 2008). The initial structures of REM-CA peptides have been modeled as all-atom \u03b1-helices using standard backbone angles (\u03c6 = \u221290\u00b0 and \u03c8 = \u221245\u00b0) and side chain conformers with the ribosome v1.0 software (Crowet et al., 2012). These models were converted to a CG representation suitable for the MARTINI 2.1 forcefield (Crowet et al., 2012) with the Martinize script and the coarse-grained peptide was placed in a simulation box at least at 1 nm from a pre-equilibrated PLPC bilayer of 128 lipids or a PLPC:Cholesterol:PIP (98:19:2) bilayer of 124 lipids (Marrink et al., 2008; L\u00f3pez et al., 2009, L\u00f3pez et al., 2013). The N- and C-terminal ends of the peptide are charged and a helical secondary structure topology is maintained between residues 172\u2013187. With Martini forcefield, secondary structures have to be restrained and a rational a priori on the structure has to be made. In our case, the peptide representation as two domains is based on in silico analyses and on the FTIR and NMR data (see Figure 2\u2014figure supplements 2, 3). Water particles were then added as well as ions to neutralize the system. A 5000-steps steepest-descent energy minimization was performed to remove any steric clashes. Five 2.5 \u03bcs simulations have been run for each peptide. Temperature and pressure were coupled at 300 K and one bars using the weak coupling Berendsen algorithm (Crowet et al., 2012) with \u03c4 T\u00a0=\u00a01 ps and \u03c4 p=0.5 ps. Pressure was coupled semi-isotropically in XY and Z. Non-bonded interactions were computed up to 1.2 nm with the shift method. Electrostatics were treated with \u03b5\u00a0=\u00a015. The compressibility was 105 (1/bars).\n\n#### In silico analysis of REM-CA from StREM1.3\n\nSequence and predicted structure of the StREM1.3 REM-CA peptide predicted by different methods (NPSA (https://npsa-prabi.ibcp.fr/cgi-bin/npsa_automat.pl?page=/NPSA/npsa_seccons.html), hydrophobic cluster analysis (HCA) 15, the consensus secondary structure prediction is indicated: alpha helix (h), random coil (c), beta sheet (e). In HCA plot of the StREM1.3 REM-CA sequence, V, F, W, Y, M, L and I are hydrophobic residues. These amino acids are circled and hatched to form hydrophobic clusters.\n\n#### Atomistic molecular dynamics\n\nFrom the coarse-grained simulations, ending frames from one of the replicates have been taken to carry atomistic simulations. The conversion has been carried out as described in Wassenaar et al., 2013). Briefly, atomistic lipid fragments and amino acid are backmapped and the system is relaxed through several energy minimizations and molecular dynamic simulations with position restraints. Cholesterol is reversed to sitosterol (Poger and Mark, 2013) and PIP to PI4P (Holdbrook et al., 2010). Simulations have been performed with the GROMOS96 54a7 force field (Schmid et al., 2011) with the Berger topology for PLPC (Poger et al., 2010; Poger and Mark, 2010). All the systems studied were first minimized by steepest descent for 5000 steps. Then NVT and NPT equilibrations were carried on for 0.1 and 1 ns. The peptide was under position restraints and periodic boundary conditions (PBC) were used with a two fs time step. Production runs were performed for 50 ns. All the systems were solvated with SPC water (Berendsen et al., 1981), and the dynamics were carried out in the NPT conditions (300 K and 1 bar). Temperature was maintained by using the v-rescale method (Bussi et al., 2007) with \u03c4T\u00a0=\u00a02.0 ps and a semiisotropic pressure was maintained by using the Berendsen barostat (Berendsen et al., 1984) with a compressibility of 4.5\u00a0\u00d7\u00a0105 (1/bar) and \u03c4p=1 ps. Electrostatic interactions were treated by using the particle mesh Ewald (PME) method (Darden et al., 1993). Van der Waals and electrostatics were treated with a 1.0 nm cut-off. Bond lengths were maintained with the LINCS algorithm (Hess et al., 1997). The trajectories were performed and analysed with the GROMACS 4.5.4 tools as well as with homemade scripts and softwares, and 3D structures were analyzed with both PYMOL (DeLano Scientific, http://www.PyMOL.org) and VMD softwares (Humphrey et al., 1996).\n\n#### TLC analysis of phosphoinositides mix (PIPs)\n\nPhosphoinositides mix (PIPs), #P6023 SIGMA, was separated by HP-TLC plate along with authentic standards: Phosphatidylserine (PS) Phosphatidylinositol (PI), Phosphatidylinositol-4-phosphate (PI4P) and Phosphatidylinositol-4,5-bisphosphate PI(4,5)P2)\u00a0(Furt et al., 2010). HP-TLC were stained with Primulin and relative amounts of each lipid species present in the PIPs mix quantified by densitometry scanning (Macala et al., 1983)\n\n#### Fourier transformed-infrared (FTIR) spectroscopy\n\nMLV were prepared by rehydrating the resulting films with D2O or Tris-HCl buffer (10 mM pH 7.0) for FT-IR experiments as described previously (Nasir et al., 2016). Lipids were co-dissolved in chloroform/methanol (2:1, v/v) without or with peptides at a 10-to-1, lipid-to-peptide molar ratio. FTIR spectra of lipid-peptide MLV were recorded on Bruker Equinox 55 spectrometer (Karlsruhe, Germany) equipped with a liquid nitrogen-cooled Deuterated Triglycine Sulfate (DTGS) detector. The spectra were measured with a spectral resolution of 4 cm\u22121 and are an average of 128 scans. All the experiments were performed with a demountable cell (Bruker) equipped with CaF2 windows (Nasir et al., 2013). During the experiments, the spectrophotometer was continuously purged with filtered dry air. MLV solution containing or not peptides was deposited into the CaF2 window-equipped cell. All FTIR spectra were representative of at least two independent measurements. The attribution of different peaks was carried out according to the literature (Arrondo and Go\u00f1i, 1998; Kong and Yu, 2007).\n\n#### Adsorption experiments at constant surface area\n\nPeptide adsorption into lipid monolayer was recorded on an automated Langmuir film system (KSV Minitrough 7.5 \u00d7 20 cm, Biolin Scientific, Stockholm, Sweden). The lipid monolayers (1-Palmitoyl-2-linoleyl-sn-glycerol-3-phosphocholine (PLPC) alone, PLPC-Sitosterol (80\u201320 molar ratio) or PLPC-sitosterol-phosphoinositides sodium salt from bovine brain (P6023 SIGMA, see\u00a0Figure 2\u2014figure supplement 1B), 70-20-10 molar ratio, were formed by spreading a precise volume of lipid solutions prepared in chloroform/methanol (2:1 v/v). After stabilization of the lipid monolayer at a defined initial surface pressure, peptides (solubilized Tris-HCl, 10 mM pH7.0 22 \u00b1 1\u00b0C) were injected in the subphase (Tris-HCl, 10mM pH7.0, 22 \u00b1 1\u00b0C) to a final concentration of 0.16 \u00b5M. The surface pressure variation is recorded over time. Experiments at different initial surface pressures were performed in order to plot the maximal surface pressure increase (\u03c0max) as a function of the initial surface pressure (\u03c0i) and to determine the maximal insertion pressure (MIP) as previously described (Eeman et al., 2009; Deleu et al., 2014; Nasir and Besson, 2011).\n\n#### Sample preparation for NMR\n\nTo prepare multilamellar vesicles (MLV), REM-CA peptides were solubilised in chloroform/methanol (2:1, v:v) and mixed with the appropriate amount of lipid powder (DMPC, PIPs and sitosterol) adjusting the REM-CA-to-lipid ratio (1:25). Solvent was evaporated under N2 airflow to obtain a thin lipid film. Lipids were rehydrated with ultrapure water before lyophilisation. The lyophilized powder was then hydrated with appropriate amount of deuterium depleted water and homogenized by three cycles of shaking in a vortex mixer, freezing (liquid nitrogen, \u2212196\u00b0C, 1 min) and thawing (40\u00b0C in a water bath, 10 min). This protocol leads to a milky suspension of micrometer-sized MLVs.\n\n#### Solid-state NMR spectroscopy\n\n2H NMR experiments were carried out on Bruker Avance III 400 MHz (9.4 T) and Bruker Avance III 500 MHz (11.75 T) spectrometer. Samples were equilibrated 30 min at a given temperature before data acquisition. 2H NMR experiments on 2H-labeled DMPC were performed at 76 MHz with a phase-cycled quadrupolar echo pulse sequence (90\u00b0x-\u03c4\u221290\u00b0y-\u03c4-acq). 31P NMR spectra were acquired at 202 MHz using a phase-cycled Hahn-echo pulse sequence (90\u00b0x-\u03c4\u2212180\u00b0x/y-\u03c4-acq). Acquisition parameters were set as follows: spectral window of 50 kHz for 31P NMR, 250 kHz for 2H NMR, \u03c0/2 pulse widths of 15 \u03bcs for 31P and 2.62 \u03bcs for 2H, interpulse delays \u03c4 were of 40 \u03bcs, recycle delays ranged from 1.1 to 5 s. 2 k to 4 k scans were used for 2H and 31P NMR experiments, depending on the sample. The spectra were processed using Lorentzian line-broadening of 100 to 200 Hz for 2H spectra.\n\n13C experiments were recorded on a Bruker Avance III 800 MHz (18.8 T) at 11 kHz magic angle spinning (MAS) frequency. Sample temperature was held constant at \u221212\u00b0C with the internal reference DSS (B\u00f6ckmann et al., 2009). The two dimensional proton-driven spin diffusion 13C-13C (PDSD) spectra were recorded with an initial 1H-13C cross-polarization and a mixing time of 50 ms. Acquisition times were set to 8 ms and 20 ms in the indirect and direct dimension, respectively, and the interscan delay was chosen to 2 s. Proton decoupling during acquisition with a frequency of 90 kHz was applied, using the SPINAL-64 decoupling sequence (Fung et al., 2000). All the spectra were processed and analyzed using Bruker Topspin 3.2 software and the Ccpnmr Analysis software (Vranken et al., 2005).\n\n#### Statistics\n\nFor all statistical analyses, ANOVA and Tukey's honestly significant difference tests were performed with Graphpad Prism, in order to find means that are significantly different from each other. Boxplots were drawn using Graphpad Prism (horizontal bars in the boxes represent the median, boxes the interquartile range, whiskers extend out 1.5 times the interquartile range, and individual points are outliers), and other graphs were drawn using excel software (Microsoft, https://products.office.com/).\n",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "bd9907be-f671-4259-8ff3-b985197172aa",
+      "submission_id": "6849314e-0d1b-4102-8256-b77929bca713",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26404.sa1](https://doi.org/10.7554/eLife.26404.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Structural Basis for Plant Plasma Membrane Protein Dynamics and Organization into Functional Nanodomains\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian Hardtke as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nPlant plasma membranes are organized into membrane domains that are implicated in mediating specific functionalities. Gronnier et al. have employed a variety of methods to provide mechanism for microdomain targeting of the REMORIN proteins in living plant cells. Remorins are considered markers for plant plasma membrane \"nanodomains\". Overall, the results from this study represent a clear step forward in the understanding of plant plasma membrane sub-compartmentalization and will/should be of interest to a broad audience interested in molecular mechanisms by which various physiological processes are controlled at the plasma membrane. The authors use an impressive array of different techniques, including different methods for high-resolution imaging, biophysical assays on lipid-protein interactions of purified recombinant proteins, lipid analysis and molecular dynamics modeling. The broad range of complementary approaches represents a clear strength of the work. A key piece of information is the characterization of the c-terminal anchor of remorins, REM-CA, to propose an interesting new mechanism by which remorins might be not only peripherally attached to membranes, but are actually deeply embedding themselves into the membrane bilayer, following interaction with the headgroups of anionic membrane phospholipids.\n\nSummary:\n\nAll reviewers were impressed by the application of a variety of complimentary methods to address the experimental problem. However, there was some feeling that the paper was a bit too biophysical and more could be done to relate the findings to the overall biology. There were also concerns about specific claims that appear to go beyond the data presented. There was also concerns noted with regard to providing the proper citations and the perhaps overuse of citations to your own past work. The more technical criticisms are noted below.\n\nEssential revisions:\n\n1) The authors make a point that PI4P is am major determinant of the behavior of the plasma membrane/cytosol interface (Simon et al., Nat Plants 2, 16089, 2016). They are using SAC1 to modulate the membrane levels of PI4P, which is demonstrated nicely using different fluorescent markers. The (quite convincing) data are somewhat in conflict with the previous report that SAC1 is a PI(3,5)P2 5-phosphatase (Zhong et al., Plant Cell 17, 1449-1466, 2005). To clear this important point, I suggest to further support the effect of SAC1 expression specifically on PI4P by quantitative lipid analysis.\n\n2) To support the biophysical data, the molecular dynamics modeling is initiated to support the notion that REM-CA interacts with PI4P, resulting in the insertion of the protein into the lipid bilayer. However, in the simulation not PI4P is used but PI(4,5)P2, which might behave quite different from PI4P and has not been implicated in mediating PI4P-like large-scale effects on the inner leaflet of the plasma membrane (Simon et al., Nat Plants 2, 16089, 2016). The reason for using a PI(4,5)P2 model is weak (\"\u2026 because PI4P was not available in lipid structural databases for MD\u2026\") and the molecular dynamics simulation should be repeated using the correct lipid PI4P. It would in fact be quite interesting to see whether or not the simulation with either lipid might give different results, adding another layer of understanding.\n\n3) The molecular dynamics simulation as presented is based on coarse-grain modeling, reducing the complexity of the interacting partners to relatively few spheres of biophysical influence. The authors should provide the rationale for choosing the particular degree of simplification and better state the limitations arising from their coarse-grain approach.\n\n4) The weak point of this manuscript is the lack of functional data in endogenous condition, instead all experiments in plant cells have been carried out by transiently overexpressing heterologous proteins (potato) (different constructs) in heterologous system, tobacco cells. Thus, the presented results will be compelling if proven that those proteins are functional in tobacco cells at the expression levels studied. In addition, the conclusion \"PM nanodomains represent a functional unit for plant cell signaling\" is not supported by data in this manuscript. Note that we do not necessarily expect you to address this point by additional experimentation but would like to see some caveats added to the paper pointing out these weaknesses and how that may or may not affect the conclusions reached.\n",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1c9e7367-cbbd-441c-b3b2-ef732ece9cb0",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C1",
+      "claim": "Plasma Membrane is the primary structure for adjusting to ever changing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma Membrane is the primary structure for adjusting to ever changing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract without specific experimental data or citations provided in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "0f645536-a8ba-496f-97ec-45afb6fa882e",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C2",
+      "claim": "PM sub-compartmentalization in domains is thought to orchestrate signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "PM sub-compartmentalization in domains is thought to orchestrate signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established scientific understanding about membrane organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "bf990c57-9411-442f-b83d-3111c31ce225",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C3",
+      "claim": "REMORINs are plant-specific proteins regulating hormonal crosstalk and host invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "The plant-specific REMORINs are proteins regulating hormonal crosstalk and host invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "f7dac079-21db-403f-9317-531c51033e80",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C4",
+      "claim": "REMs are the best-characterized nanodomain markers.",
+      "claim_type": "EXPLICIT",
+      "source": "REMs are the best-characterized nanodomain markers via an uncharacterized moiety called REMORIN C-terminal Anchor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "0d58d28b-159f-45b3-b95f-e2028397a2a3",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C5",
+      "claim": "Targeting of REMORIN is independent of the COP-II-dependent secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that targeting of REMORINis independent of the COP-II-dependent secretory pathway and mediated by PI4P and sterol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and related experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "f03baef3-69b3-45ef-a308-1cc91def1f26",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C6",
+      "claim": "Targeting of REMORIN is mediated by PI4P and sterol.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that targeting of REMORINis independent of the COP-II-dependent secretory pathway and mediated by PI4P and sterol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental manipulations shown in Figure 1C and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "488f90ef-0084-462c-94e7-548c9fce9962",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C7",
+      "claim": "REM-CA is an unconventional lipid-binding motif that confers nanodomain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "REM-CA is an unconventional lipid-binding motif that confers nanodomain organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by biophysical and structural data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "4b313b23-53fd-4460-a872-58fb0109b5cf",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C8",
+      "claim": "Mobility and supramolecular organization are critical for immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzes of REM-CA mutants by single particle tracking demonstrate that mobility and supramolecular organization are critical for immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional assays with REM-CA mutants shown in Figures 4-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "9142a676-1edc-4fb3-b599-2fbd085dc77a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C9",
+      "claim": "Membrane compartmentalization is critical for cell signaling and therefore for development and survival of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidences suggest that membrane compartmentalization is critical for cell signaling and therefore for development and survival of organisms ( Grecco et al., 2011 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Grecco et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "27a68d96-a91c-4d6e-b402-859b29129cb8",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C10",
+      "claim": "REMs belong to a multigenic family of six groups encoding plant-specific membrane-bound proteins involved in responses to biotic and abiotic stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "REMs belong to a multigenic family of six groups encoding plant-specific membrane-bound proteins involved in responses to biotic and abiotic stimuli ( Raffaele et al., 2009 ; Jarsch et al., 2014 ; Jarsch and Ott, 2011 ; Raffaele et al., 2007 ; Gui et al., 2014 ; Jamann et al., 2016 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "b6f09012-e97b-4de7-9b5c-d194ea90f545",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C11",
+      "claim": "In Solanaceae, group 1 REMs limit the spreading of Potato Virus X (PVX), without affecting viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "in Solanaceae , group 1 REMs limit the spreading of Potato Virus X ( PVX ), without affecting viral replication ( Raffaele et al., 2009 )",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Raffaele et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "2374f544-de9b-4470-857e-a8b8d2dbc069",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C12",
+      "claim": "Group 1 REMs promote susceptibility to Phytophthora infestans.",
+      "claim_type": "EXPLICIT",
+      "source": "and promote susceptibility to Phytophthora infestans ( Bozkurt et al., 2014 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bozkurt et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "fcc94363-5af1-4820-bc56-7093058bb89f",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C13",
+      "claim": "A group 2 REM was described as essential during nodulation process in Medicago truncatula.",
+      "claim_type": "EXPLICIT",
+      "source": "A group 2 REM was described as essential during nodulation process in Medicago truncatula ( Lefebvre et al., 2010 ; T\u00f3th et al., 2012 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lefebvre et al., 2010 and T\u00f3th et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "b38868c2-8a45-4177-b8d0-2127c83b32df",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C14",
+      "claim": "In rice, a group 4 REM is upregulated by abscissic acid and negatively regulates brassinosteroid signaling output.",
+      "claim_type": "EXPLICIT",
+      "source": "In rice, a group 4 REM is upregulated by abscissic acid and negatively regulates brassinosteroid signaling output ( Gui et al., 2016 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gui et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "02c219ff-a17b-483c-9c04-06c2082471a5",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C15",
+      "claim": "Arabidopsis group 4 REMs play a role as positive regulators of geminiviral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis group 4 REMs also play a role as positive regulators of geminiviral infection ( Son et al., 2014 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Son et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "cb296129-310e-4b1f-8f05-d5065bb95f9e",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C16",
+      "claim": "Group 1 and group 6 REMs regulate the PM-lined cytoplasmic channels called plasmodesmata (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, group 1 and group 6 REMs regulate the PM-lined cytoplasmic channels called plasmodesmata ( PD ), specialized nanochannels allowing intercellular communication in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the context and citations that follow.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "31231162-630e-47db-8976-19f163932749",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C17",
+      "claim": "Group 1 and group 6 REM isoforms were found to be able to modify PD aperture leading to a modification of viral movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, these latter isoforms of REMs were found to be able to modify PD aperture leading to a modification of viral movement ( Raffaele et al., 2009 ; Perraki et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Raffaele et al., 2009 and Perraki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "dfa71bed-d09f-4757-b09f-8b5140dcd6f8",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C18",
+      "claim": "Group 6 REMs have an impact on the grain setting in rice.",
+      "claim_type": "EXPLICIT",
+      "source": "and an impact on the grain setting in rice, respectively ( Gui et al., 2014 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gui et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "80853e88-e29e-4cdc-bc6a-323db25b7f25",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C19",
+      "claim": "REMs need to localize to the PM to fulfill their functions.",
+      "claim_type": "EXPLICIT",
+      "source": "To fulfill these functions, REMs need to localize to the PM ( Perraki et al., 2012 ; Bozkurt et al., 2014 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Perraki et al., 2012 and Bozkurt et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "1299f893-d9fb-46cb-863b-cc755d6de038",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C20",
+      "claim": "REM-CA is a novel membrane-binding domain shaped by convergent evolution among unrelated putative PM-binding domains in bacterial, viral and animal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our groups defined a short peptide located at the C-terminal domain of REM, called REM-CA (REM C-terminal Anchor) as a novel membrane-binding domain shaped by convergent evolution among unrelated putative PM-binding domains in bacterial, viral and animal proteins. ( Perraki et al., 2012 ; Raffaele et al., 2013 ; Konrad et al., 2014 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Perraki et al., 2012, Raffaele et al., 2013, and Konrad et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "1970cf39-456b-4f9a-902b-35949286214a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C21",
+      "claim": "REM-CA is necessary for PM localization of REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "REM-CA is necessary for PM localization of REMs and sufficient to target a given soluble protein ( eg GFP) to the PM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "14d6e5bb-b26d-4cde-b73c-336dc1b3cb24",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C22",
+      "claim": "REM-CA is sufficient to target a given soluble protein (eg GFP) to the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "REM-CA is necessary for PM localization of REMs and sufficient to target a given soluble protein ( eg GFP) to the PM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous work cited in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "8d49b8c0-c287-4804-8c40-181b0db1c5a9",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C23",
+      "claim": "REM-CA binds in vitro to poly phosphoinositides.",
+      "claim_type": "EXPLICIT",
+      "source": "REM-CA binds in vitro to poly phosphoinositidesbut the association of REM-CA with the PM is not limited to electrostatic interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perraki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "b7ce6f68-a60b-4fb7-ae5f-fbfa6970741e",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C24",
+      "claim": "The association of REM-CA with the PM is not limited to electrostatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "REM-CA binds in vitro to poly phosphoinositidesbut the association of REM-CA with the PM is not limited to electrostatic interactions and the final interaction with PM display anchor properties similar to intrinsic protein ( Perraki et al., 2012 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perraki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "e8d47374-dd8b-4ad9-99c5-8db2e2d29256",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C25",
+      "claim": "The final interaction of REM-CA with PM displays anchor properties similar to intrinsic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "and the final interaction with PM display anchor properties similar to intrinsic protein ( Perraki et al., 2012 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perraki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "63a3e558-40b6-468d-b8ba-f7a618e55cd8",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C26",
+      "claim": "REM-CA can be S-acylated.",
+      "claim_type": "EXPLICIT",
+      "source": "REM-CA can be S-acylated ( Hemsley et al., 2013 )",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hemsley et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "4c407828-6605-4ae4-bb1c-9b4d799f246f",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C27",
+      "claim": "S-acylation is not the determinant for REM localization to membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "although this modification is not the determinant for their localization to membrane domains, since deacylated versions of some REMs remain able to localize to membrane domains ( Jarsch and Ott, 2011 ; Hemsley et al., 2013 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jarsch and Ott, 2011 and Hemsley et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "eb9a83d6-46ab-4d74-8ade-b7d285b35dd0",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C28",
+      "claim": "Deacylated versions of some REMs remain able to localize to membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "since deacylated versions of some REMs remain able to localize to membrane domains ( Jarsch and Ott, 2011 ; Hemsley et al., 2013 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jarsch and Ott, 2011 and Hemsley et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "37a9bf16-ad66-43fb-b9d0-e4d16e35cdbb",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C29",
+      "claim": "St REM1.3 is a trimeric protein.",
+      "claim_type": "EXPLICIT",
+      "source": "St REM1.3 is a trimeric protein ( Perraki et al., 2012 )",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perraki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "148da52d-7726-4096-9b2f-ebc087a0d0a5",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C30",
+      "claim": "St REM1.3 strictly localizes to the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "St REM1.3 is a trimeric protein ( Perraki et al., 2012 ) that strictly localizes to the PM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perraki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "bbb37280-785f-408c-b9b5-6713cf1dbd95",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C31",
+      "claim": "St REM1.3 segregates in a sterol-dependent manner into ca. 100 nm nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "and segregates in a sterol-dependent manner into ca. 100 nm nanodomains ( Raffaele et al., 2009 ; Demir et al., 2013 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Raffaele et al., 2009 and Demir et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "118acc74-9a0a-4a44-92dc-045d07680ce2",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C32",
+      "claim": "St REM1.3 is a functional homolog of the PM-localized Nicotinana benthamiana endogenous group 1b REMs toward the restriction of Potato Virus X (PVX) spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, we showed that St REM1.3 is a functional homolog of the PM-localized Nicotinana benthamiana endogenous group 1b REMs toward the restriction of Potato Virus X ( PVX ) spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "3b8a96a0-7263-4ea6-a0d4-544542cb4e49",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C33",
+      "claim": "Nb REM1.2 and Nb REM1.3 isoforms are highly expressed in leaf epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Nb REM1.2 and Nb REM1.3 isoforms are highly expressed in leaf epidermis (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "20181097-fb89-44ea-ab60-1d641d13a029",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C34",
+      "claim": "PVX is a mechanically transmitted virus for which the infection initiates in the epidermis and spreads from cell-to-cell via different tissues to reach the phloem vasculature and infect the whole plant.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PVX is a mechanically transmitted virus for which the infection initiates in the epidermis and spreads from cell-to-cell via different tissues to reach the phloem vasculature and infect the whole plant ( Cruz et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cruz et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "61a6b083-3f40-4f11-9116-d821a47f4ccb",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C35",
+      "claim": "YFP-St REM1.3 was normally targeted to the PM upon inhibition of COP-II-mediated ER-to-Golgi trafficking by overexpression of a dominant-negative SAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent to what was shown for the rice group 4 REM ( Gui et al., 2015 ), YFP- St REM1.3 was normally targeted to the PM upon inhibition of COP-II-mediated ER-to-Golgi trafficking by overexpression of a dominant-negative SAR1 ( de Marcos Lousa et al., 2016 )",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "b2aaefd5-3323-45af-b82f-56359020eb14",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C36",
+      "claim": "YFP-St REM1.3 was normally targeted to the PM upon treatment with Brefeldin A (BFA).",
+      "claim_type": "EXPLICIT",
+      "source": "or by treatment with Brefeldin A ( BFA), a pharmacological inhibitor of ADP-ribosylation factor 1-GTPase and its effectors, ARF-guanine-exchange factors, of the COP-I-mediated secretory pathway ( Peyroche et al., 1999 ) ( Figure 1B and Figure 1\u2014figure supplement 3 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 3, and citation to Peyroche et al., 1999.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "d2a25133-c0e9-4ad2-8222-740003ca6b92",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C37",
+      "claim": "Organization of YFP-St REM1.3 in the plane of the PM was not affected in the presence of dominant-negative SAR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, organization of YFP- St REM1.3 in the plane of the PM was not affected in the presence of dominant-negative SAR1 ( Figure 1B )",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "01ca995d-977d-4746-85f1-185c3edbcffb",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C38",
+      "claim": "Fenpropimorph (fen) alters the PM sterol-composition but not the total amount of sterols.",
+      "claim_type": "EXPLICIT",
+      "source": "Fen alters the PM sterol-composition but not the total amount of sterols (Grison et al., 2015; Hartmann et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Grison et al., 2015 and Hartmann et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "3ae112db-fedb-4869-89f6-5f21ad4b1247",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C39",
+      "claim": "After fen treatment, the content of \u22065-sterols decreased concurrently with an increase in cycloartenol.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, after fen treatment, the content of \u22065-sterols decreased concurrently with an increase in cycloartenol (Figure 1\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "ac7a017a-4ce2-43a5-8045-583e97d2f57d",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C40",
+      "claim": "Qualitative modification of sterol composition had no effect on the targeting of YFP-StREM1.3 to the PM but abolished its nanodomain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "This qualitative modification of sterol composition had no effect on the targeting of YFP-StREM1.3 to the PM but abolished its nanodomain organization measured by the SCI (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "4c8faba3-6c41-4f85-97bd-32c09e2cb684",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C41",
+      "claim": "Nanodomains enriched in YFP-StREM1.3 co-localized with highly ordered regions of the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1D shows that nanodomains enriched in YFP-StREM1.3 co-localized with highly ordered regions of the PM",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "1e201731-2bcb-4ff3-8fc1-9d7fb8495647",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C42",
+      "claim": "PI4P is enriched in the inner-leaflet of plant PM, conferring a negatively charged electrostatic field that defines PM identity in regard to other endomembranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent works showed that PI4P is enriched in the inner-leaflet of plant PM, conferring a negatively charged electrostatic field that defines PM identity in regard to other endomembranes ( Vermeer et al., 2009 ; Simon et al., 2016 , Simon et al., 2014 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vermeer et al., 2009, Simon et al., 2016, and Simon et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "74a6a379-aa84-42c1-82c8-4644d7840951",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C43",
+      "claim": "MAP-mTU2-SAC1p specifically dephosphorylates PI4P at the PM level.",
+      "claim_type": "EXPLICIT",
+      "source": "To alter the PI4P content, we used the Myristoylated / Palmitoylated-Phosphatidylinositol 4-phoshatase SAC1p enzyme from yeast ( Hammond et al., 2012 ) fused to mTurquoise2 (MAP-mTU2-SAC1p) which specifically dephosphorylates PI4P at the PM level ( Hammond et al., 2012Hammond et al., 2012 ) Hammond et al., 2012 ; Stefan et al., 2011; Mesmin et al., 2013 ; Moser von Filseck et al., 2015a , Moser von Filseck et al., 2015b )",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hammond et al., 2012, Stefan et al., 2011, Mesmin et al., 2013, Moser von Filseck et al., 2015a, and Moser von Filseck et al., 2015b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "64ba3b5e-2f4f-45c6-9b1f-bb080f7a17ad",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C44",
+      "claim": "MAP-SAC1p does not impact PS or PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "without impacting PS or PI (4,5) P 2 ( Simon et al., 2016 ) ( Figure 1\u2014figure supplement 6 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Simon et al., 2016 and experimental data shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "752c3f5f-4bdb-493c-908b-70d07ef4cbf9",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C45",
+      "claim": "Expression of the active form of MAP-SAC1p induced a reduction in PM-associated PI4P concentration leading to a strong decrease of both YFP-St REM1.3 signal and lateral segregation at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the expression of the dead version of MAP-SAC1p, the expression of the active form induced a reduction in PM-associated PI4P concentration leading to a strong decrease of both YFP- St REM1.3 signal and lateral segregation at the PM ( Figure 1E ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "64f1c3bd-d8e8-48e0-8ca6-9900b4586387",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C46",
+      "claim": "PI4P is required for the targeting of St REM1.3 at the PM and for its sub-compartmentalization within the PM plane.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that PI4P is required for the targeting of St REM1.3 at the PM and for its sub-compartmentalization within the PM plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data with MAP-SAC1p shown in Figure 1E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "d353bbc1-01d8-438e-bb06-1e1cb46a26ac",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C47",
+      "claim": "REM-CA peptide is unstructured in aqueous environment.",
+      "claim_type": "EXPLICIT",
+      "source": "First, liquid-state NMR spectra of REM-CA in aqueous environment showed that REM-CA peptide is unstructured ( Perraki et al., 2012 ) ( Figure 2\u2014Figure supplement 1A ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Perraki et al., 2012 and experimental data shown in Figure 2\u2014Figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "9fec6d85-3852-49d8-bf30-1e808b490e1b",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C48",
+      "claim": "REM-CA folds into an alpha helical conformation in hydrophobic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, equivalent spectra, acquired in hydrophobic environment showed that REM-CA folds into an alpha helical conformation ( Figure 2\u2014Figure supplement 1A ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014Figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "5ecb3167-f13f-40ec-b81a-b7463abc5f20",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C49",
+      "claim": "REM-CA's partial insertion into liposomes increased the degree of order of the first 10 carbon atoms of acyl chains.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, REM-CA's partial insertion into liposomes increased the degree of order of the first 10 carbon atoms of acyl chains indicated that REM-CA is partially embedded in the lipid phase ( Figure 2B ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "69c14cbb-9809-45f9-a898-528ea13a4f68",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C50",
+      "claim": "REM-CA insertion does not modify the overall bilayer structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, REM-CA insertion does not modify the overall bilayer structure as suggested by a very similar global thermotropism ( Figure 2\u2014figure supplement 1D, E ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "f25c374d-1b17-43d2-abf3-96aea9f81fa1",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C51",
+      "claim": "In silico analyzes predicted that REM-CA is structurally divided into two regions: a putative helical region (171-190aa, called Region 1, R1) and a more hydrophobic non-helical region (191-198aa called Region 2, R2).",
+      "claim_type": "EXPLICIT",
+      "source": "In silico analyzes predicted that REM-CA is structurally divided into two regions ( Figure 2\u2014figure supplement 2 ): a putative helical region (171-190aa, called Region 1, R1) and a more hydrophobic non-helical region (191-198aa called Region 2, R2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in silico analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "a09b3d7f-eb6f-4f0b-bc30-4e9ade19f5db",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C52",
+      "claim": "The penetration capacity of the peptide REM-CA was higher in the monolayers composed of PC, PIPs and sitosterols, than in monolayers composed of PC alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Adsorption assays showed that the penetration capacity of the peptide REM-CA was higher in the monolayers composed of PC, PIPs and sitosterols, than in monolayers composed of PC alone ( Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6bd798e9-28e3-47d8-8abc-b4eca17ebb10",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C53",
+      "claim": "Peptide R2 but not the R1 was able to insert into monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, peptide R2 but not the R1 was able to insert into monolayers ( Figure 2C ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "88f1c9d5-b77b-4d95-9e1a-e2b782704c9e",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C54",
+      "claim": "Deletion of R2 in the REM-CA of YFP-St REM1.3 abolished PM association in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, deletion of R2 in the REM-CA of YFP- St REM1.3 abolished PM association in planta ( Figure 2D ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "77fa69fc-273f-4a53-9566-466af6499cb0",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C55",
+      "claim": "FT-IR showed a maximum intensity shift in the absorbance wavenumber of lipid phosphate groups in the presence of REM-CA, R1 and R2 peptides, with a stronger effect of R1 as compared to R2.",
+      "claim_type": "EXPLICIT",
+      "source": "FT-IR showed a maximum intensity shift in the absorbance wavenumber of lipid phosphate groups in the presence of REM-CA, R1 and R2 peptides, with a stronger effect of R1 as compared to R2 ( Figure 2\u2014figure supplement 3B ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "2c7e45b1-59fa-466b-a4ce-89f074f01a22",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C56",
+      "claim": "The polar heads of lipids are involved in the REM-CA-liposome interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly shows that the polar heads of lipids are involved in the REM-CA-liposome interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the FT-IR data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6925fff1-9421-481a-a388-e6cc751a69eb",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C57",
+      "claim": "A maximum intensity shift in the absorbance wavenumber of carbon-hydrogen bonds was observed in presence of R2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a maximum intensity shift in the absorbance wavenumber of carbon-hydrogen bonds was observed in presence of R2, which confirmed that R2 is more embedded than R1 within the lipid phase ( Figure 2E ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "ac5d85db-c88c-4b72-bc04-020360fec3c2",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C58",
+      "claim": "R2 is more embedded than R1 within the lipid phase.",
+      "claim_type": "EXPLICIT",
+      "source": "which confirmed that R2 is more embedded than R1 within the lipid phase ( Figure 2E ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the FT-IR data shown in Figure 2E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6cb2bccf-ef75-48ab-9ec0-722010427871",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C59",
+      "claim": "REM-CA, R1 and R2 peptides are mainly a mix of different structures in PC-containing liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "FT-IR experiments showed that REM-CA, R1 and R2 peptides are mainly a mix of different structures in PC-containing liposomes (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "85a4610f-e885-4592-b6cc-b5f88a305916",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C60",
+      "claim": "R1 was more helical and R2 was more extended when sitosterol and PIPs are present in the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, R1 was more helical and R2 was more extended when sitosterol and PIPs are present in the bilayer (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6b7e2321-29f9-4272-9cfa-51b6ee154b09",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C61",
+      "claim": "PIPs were sufficient to induce R1, R2 and REM-CA folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PIPs were sufficient to induce R1, R2 and REM-CA folding (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "9ba86a5c-460b-401c-a526-d954ae2556ed",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C62",
+      "claim": "Solid-state NMR spectra confirmed that R1 adopted a single non-helical conformation in PC, while partially folding into an alpha helix in the presence of PIPs and sitosterol.",
+      "claim_type": "EXPLICIT",
+      "source": "Solid-state NMR spectra confirmed that R1 adopted a single non-helical conformation in PC, while partially folding into an alpha helix in the presence of PIPs and sitosterol (Figure 2G, Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2G and Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "18967643-db52-4cbf-b705-6fed50599ef0",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C63",
+      "claim": "MD confirmed that REM-CA inserted itself in the lipid bilayer and presented two distinct regions.",
+      "claim_type": "EXPLICIT",
+      "source": "MD confirmed that REM-CA inserted itself in the lipid bilayer and presented two distinct regions (Figure 2\u2014figure supplement 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 2\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "243c8788-b659-45fd-8e3b-680d618daeb9",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C64",
+      "claim": "The lateral ring of tyrosine Y184 was unlikely to interact with sterols with a distance between Y184 and sterol superior to 1 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "MD proposed that albeit facing the inside of the bilayer (Figure 2\u2014figure supplement 4B), the lateral ring of tyrosine Y184 (tyrosine being a residue often observed in interaction with sterols [Nasir and Besson, 2011]) was unlikely to interact with sterols with a distance between Y184 and sterol superior to 1 \u00b5m (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "de170d4b-06d1-4df9-9328-d83ad5353445",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C65",
+      "claim": "Lysines and arginine present in REM-CA, namely K192 and K193, and to a lesser extent K183 and R185, can form salt-bridges with the phosphate groups of PI4P.",
+      "claim_type": "EXPLICIT",
+      "source": "MD also modeled that lysines and arginine present in REM-CA, namely K192 and K193, and to a lesser extent K183 and R185, can form salt-bridges with the phosphate groups of PI4P (Figure 2H, Figure 2\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 2H and Figure 2\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "b7442691-fa40-4bbb-88ba-03ecc7113bd5",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C66",
+      "claim": "The lysine K176 was not in interaction with PI4P.",
+      "claim_type": "EXPLICIT",
+      "source": "The lysine K176 was not in interaction with PI4P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "e6783a60-e3cc-4249-8ff8-29d2deec8df0",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C67",
+      "claim": "The YFP-StREM1.3 Y184F mutant was still organized in PM nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a lack of interaction with sterols (Figure 2H), the YFP-StREM1.3 Y184F mutant was still organized in PM nanodomains (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "afd2da7a-81aa-490b-9bd7-436a89e1566a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C68",
+      "claim": "Single and double mutants of the four lysines and the arginine present in REM-CA still localized to the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy images presented in Figure 3C show that single and double mutants still localized to the PM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "3039b40a-3c5c-461e-826c-c68379d94841",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C69",
+      "claim": "A strong impairment in PM-targeting with full or partial localization in the cytosol was observed for all triple to sextuple mutants of the four lysines and the arginine present in REM-CA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a strong impairment in PM-targeting with full or partial localization in the cytosol was observed for all triple to sextuple mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "832a57e4-5b64-475d-a2b6-5efce2b93a3a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C70",
+      "claim": "The net electrostatic charge of REM-CA mutants is negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in contrast to membrane surface-charge targeted proteins which generally possess a net charge of up to +8 (Simon et al., 2016; Heo et al., 2006; Yeung et al., 2008; Barbosa et al., 2014), the net electrostatic charge of REM-CA mutants is negative (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "9b8cf8f3-3336-403b-87a2-dcc33c1ef94e",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C71",
+      "claim": "The REM-CA/PM coupling is controlled by a specific lipid-peptide interaction, primarily governed by the intrinsic structural properties of the REM-CA moiety, and not by its net charge.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the REM-CA/PM coupling is controlled by a specific lipid-peptide interaction, primarily governed by the intrinsic structural properties of the REM-CA moiety, and not by its net charge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that REM-CA mutants have negative net charge but still localize to PM.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "52b8bb87-9342-42d0-a666-5a7637a21eab",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C72",
+      "claim": "Mutating K192, K193, and K183 revealed the requirement of these residues for a correct nanodomain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with MD calculations of the distance with the PI4P polar-head (Figure 2H), mutating K192, K193, and K183 revealed the requirement of these residues for a correct nanodomain organization",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A,B and MD calculations in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "a06eff3b-12c9-42b3-8dee-33b0c0cd248a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C73",
+      "claim": "K176 and R185 taken alone are dispensable for nanodomain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas K176 and R185 taken alone are dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "eb9d9598-d505-4841-bc68-55e7f1b12d1d",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C74",
+      "claim": "The coupling of K183, K192 and K193 mutations with other mutations on charged residues increased the alteration of StREM1.3 PM-nanodomain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the coupling of K183, K192 and K193 mutations with other mutations on charged residues increased the alteration of StREM1.3 PM-nanodomain organization as assessed by the SCI (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "066916c3-d777-45ba-8d70-0ecb0b99d264",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C75",
+      "claim": "Single mutants K176S, Y184F and R185A behaved like St REM1.3 WT in restricting cell-to-cell propagation of PVX.",
+      "claim_type": "EXPLICIT",
+      "source": "Single mutants K176S, Y184F and R185A behaved like St REM1.3 WT",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "c811602c-9a12-4ea3-a941-5dcefc95a82d",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C76",
+      "claim": "K183S, K192A and K193A partially lost their ability to reduce viral intercellular movement and PD permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas K183S and K192A and K193A partially lost their ability to reduce viral intercellular movement and PD permeability ( Figure 4C, D and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C, D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "47648165-4ad9-4b2b-aff6-f0820adf755f",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C77",
+      "claim": "REM-CA double mutants showed a close to complete loss of activity in reducing viral intercellular movement and PD permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "A close to complete loss of activity was observed with REM-CA double mutants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "4d296f43-3367-47dc-8357-01b0db8b3f09",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C78",
+      "claim": "All EOS-St REM1.3 fusions exhibited a typically highly confined diffusion mode.",
+      "claim_type": "EXPLICIT",
+      "source": "All EOS- St REM1.3 fusions exhibited a typically highly confined diffusion mode",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spt-PALM data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "0af67f57-8e1e-4d1f-8154-ff9d3ee709a3",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C79",
+      "claim": "The four EOS-StREM1.3 mutants show a lower mobility than the EOS-StREM1.3 WT.",
+      "claim_type": "EXPLICIT",
+      "source": "but the four EOS-StREM1.3 mutants show a lower mobility than the EOS-StREM1.3 WT ( Figure 5B, C ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spt-PALM data shown in Figure 5B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "28cb2672-a32c-4d29-92ea-70caffa08d40",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C80",
+      "claim": "EOS-St REM1.3 K183S displayed a similar MSD than EOS-St REM1.3 WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, EOS- St REM1.3 K183S displayed a similar MSD than EOS- St REM1.3 WTwhereas EOS- St REM1.3 K192A , EOS- St REM1.3 K183S / K192A and EOS- St REM1.3 K192A / K193A displayed a lower MSD ( Figure 5D ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spt-PALM data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "0fc17d8e-1c7b-4269-b315-c0c0ed166f28",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C81",
+      "claim": "EOS-St REM1.3 K192A, EOS-St REM1.3 K183S/K192A and EOS-St REM1.3 K192A/K193A displayed a lower MSD than EOS-St REM1.3 WT.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas EOS- St REM1.3 K192A , EOS- St REM1.3 K183S / K192A and EOS- St REM1.3 K192A / K193A displayed a lower MSD ( Figure 5D ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spt-PALM data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "aa82e8d9-0a4e-4d4a-b9b3-a86315ffeddc",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C82",
+      "claim": "EOS-StREM1.3 WT clustered in nanodomains with a mean diameter of ca. 80 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "EOS-StREM1.3 WT clustered in nanodomains with a mean diameter of ca. 80 nm, a result in good agreement with previous studies using different methods of imagery (Raffaele et al., 2009; Demir et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live PALM data and citations to Raffaele et al., 2009 and Demir et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "fec4b35c-de90-4aeb-98d9-dd3e44cfafed",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C83",
+      "claim": "For the WT protein fusion, nanodomains represented ca. 7% of the total PM surface.",
+      "claim_type": "EXPLICIT",
+      "source": "For the WT protein fusion, nanodomains represented ca. 7% of the total PM surface (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live PALM data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "b0cf8bf7-0ad3-4142-a68b-e02231f5652c",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C84",
+      "claim": "For the WT protein fusion, ca. 37% of molecules are in nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "with ca. 37% of molecules in nanodomains (Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live PALM data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "442aee0b-d63e-4e06-ba04-739392e3442a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C85",
+      "claim": "For the WT protein fusion, there is a density of ca. two nanodomains per \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "and a density of ca. two nanodomains per \u00b5m (Raffaele et al., 2009) (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live PALM data shown in Figure 6E and citation to Raffaele et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "50814d7b-ee48-4602-b220-ef4f2ba249c6",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C86",
+      "claim": "The four REM-CA mutants showed a decrease of the total surface occupied by nanodomains in the total PM surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the four REM-CA mutants showed a decrease of the total surface occupied by nanodomains in the total PM surface (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live PALM data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "0feadc2c-4169-406a-a371-6d4e06aa422a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C87",
+      "claim": "EOS-StREM1.3K183S and StREM1.3K183S/K192A display smaller nanodomains with a lower number of molecules per cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "EOS-StREM1.3K183S and StREM1.3K183S/K192A display smaller nanodomains with a lower number of molecules per cluster",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live PALM data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6f9d2f28-4047-4010-ade6-dea965befd4d",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C88",
+      "claim": "EOS-StREM1.3K192A, and EOS-StREM1.3K192A/K193A displayed larger nanodomains with a decrease of overall nanodomain density in the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas EOS-StREM1.3K192A, and EOS-StREM1.3K192A/K193A displayed larger nanodomains with a decrease of overall nanodomain density in the PM (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live PALM data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "4f264c19-02ca-4bd1-8fdf-7b52ed648ebd",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C89",
+      "claim": "Single protein mobility behavior and protein supramolecular organization are uncoupled.",
+      "claim_type": "EXPLICIT",
+      "source": "The study of REM-CA mutants revealed that single protein mobility behavior and protein supramolecular organization are uncoupled",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that mutants with different mobility show different organization patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "d308800c-3649-43d1-b14b-4cb163805407",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C90",
+      "claim": "EOS-StREM1.3K192A proteins display the lower MSD but form larger clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "for example EOS-StREM1.3K192A proteins displaying the lower MSD but forms larger clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spt-PALM and live PALM data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "89349157-a78e-4459-b47b-b100e9fe5523",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C91",
+      "claim": "Mutations in REM-CA affect the mobility and the organization of the protein by altering the partition of St REM1.3 molecules into nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, spt-PALM and live PALM data analyzes showed that mutations in REM-CA affect the mobility and the organization of the protein by altering the partition of St REM1.3 molecules into nanodomains ( Figures 3\u20136 )",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the comprehensive analysis of mutant data shown in Figures 3-6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6e23e837-7eec-4eac-97fb-c26c115641ec",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C92",
+      "claim": "An altered partition in nanodomain is sufficient to inhibit the signaling events involving St REM1.3 in the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of St REM1.3, an altered partition in nanodomain is sufficient to inhibit the signaling events involving St REM1.3 in the PM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the functional data with mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "f7e1243d-d59b-4118-9ded-566140107bce",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C93",
+      "claim": "StREM1.3 is a phosphorylated protein.",
+      "claim_type": "EXPLICIT",
+      "source": "StREM1.3 being a phosphorylated protein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6342b60a-99e5-4590-a1c4-b25906551c2f",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C94",
+      "claim": "Group 1 REM St REM1.3 is targeted to inner-leaflet PM nanodomains from the cytosol by REM-CA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work reveals that the group 1 REM St REM1.3 is targeted to inner-leaflet PM nanodomains from the cytosol by REM-CA, an unconventional C-terminal structural lipid-binding motif that undergoes a conformational change in presence of PI4P and sterols ( Figures 1 and 2 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on the experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "8493ebf6-e9ce-4300-b269-672263e0e39b",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C95",
+      "claim": "REM-CA undergoes a conformational change in presence of PI4P and sterols.",
+      "claim_type": "EXPLICIT",
+      "source": "an unconventional C-terminal structural lipid-binding motif that undergoes a conformational change in presence of PI4P and sterols ( Figures 1 and 2 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the biophysical data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "7c20d96b-7e85-48d9-94df-e6b5b2059e42",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C96",
+      "claim": "Plant PM PI4P contain up to 30-60% of saturated acyl chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, plant PM PI4P contain up to 30 - 60 % of saturated acyl chains ( Furt et al., 2010 ; K\u00f6nig et al., 2007 )",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Furt et al., 2010 and K\u00f6nig et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "c09d06a1-6579-44c4-8147-e38b163649d9",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C97",
+      "claim": "The six different phylogenetic groups of REMs label spatially distinct PM-domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The six different phylogenetic groups of REMs label spatially distinct PM-domains ( Jarsch et al., 2014 ; Raffaele et al., 2007 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jarsch et al., 2014 and Raffaele et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "e42409a2-bcf1-419b-a07e-277b86290dbb",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C98",
+      "claim": "Most membrane proteins in plants are relatively immobile forming static membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, most membrane proteins are relatively immobile forming static membrane domains ( Jarsch et al., 2014 ; Hosy et al., 2015 ; Martini\u00e8re et al., 2012 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jarsch et al., 2014, Hosy et al., 2015, and Martini\u00e8re et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "666dfe7d-4dd4-43f7-8ac0-15c5623edff1",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C99",
+      "claim": "Non-functional REM-CA mutants showing an altered PM-nanodomain localization harbor an even lower diffusion coefficient than the WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we show in the present work that non-functional REM-CA mutants showing an altered PM-nanodomain localization harbor an even lower diffusion coefficient than the WT ( Figure 5 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spt-PALM data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "049898d3-be93-4bea-a123-8ce1568a58f9",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C100",
+      "claim": "PM-protein function does not rely solely on their immobility but rather on their ability to organize into supramolecular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation reveals that PM-protein function does not rely solely on their immobility but rather on their ability to organize into supramolecular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that less mobile mutants are non-functional.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "ba5b53b3-2db5-4c6b-8b94-8b8186ff2f26",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C101",
+      "claim": "REM-CA mutants show an altered ability to partition into nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "In good agreement, REM-CA mutants show an altered ability to partition into nanodomains ( Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live PALM data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "09268523-3bac-4513-811b-c44a914397be",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "claim_id": "C102",
+      "claim": "REM-CA-defined PM-nanodomains may represent a functional unit for membrane-bound cell signaling in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "It thus appears that REM-CA-defined PM-nanodomains may represent a functional unit for membrane-bound cell signaling in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the functional data with mutants.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6bf4ed35-4455-4717-b90c-455f1748c446",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "St REM1.3 targeting to the plasma membrane is independent of the COP-II-dependent secretory pathway, as demonstrated by normal PM localization and organization upon inhibition with dominant-negative SAR1 or Brefeldin A treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 provide converging experimental evidence using both genetic (dominant-negative SAR1) and pharmacological (BFA) approaches. The data show maintained PM targeting and nanodomain organization (quantified by SCI) under secretory pathway inhibition. Controls (PMA4-GFP) are included, and the findings are consistent with prior work on rice REM (C35 cites Gui et al., 2015).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "021e3cd5-5356-4d02-9c3a-8f28ae4de186",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sterols are required for REM-CA nanodomain organization but not PM targeting. Fenpropimorph treatment altered sterol composition, abolished nanodomain clustering (measured by SCI), but maintained PM localization. REM-enriched nanodomains co-localized with highly ordered membrane regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 provide complementary evidence: biochemical analysis confirms sterol composition changes (C39), confocal microscopy with SCI quantification shows loss of clustering but maintained targeting (C40), and di-4-ANEPPDHQ imaging confirms co-localization with ordered domains (C41). Statistical tests show significant differences (p<0.0001 for SCI). Controls with PMA4-GFP demonstrate membrane integrity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "84ce159f-b51e-458c-9077-6c8dd76c20b9",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PI4P is required for both PM targeting and nanodomain organization of St REM1.3. Expression of active MAP-SAC1p, which specifically dephosphorylates PI4P, reduced both PM signal intensity and lateral segregation compared to the dead version.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 form a logical chain: C42-C44 establish the specificity of the MAP-SAC1p tool (citing multiple sources and showing it doesn't affect PS or PI(4,5)P2), C45 shows the experimental result with quantification, and C46 provides the interpretation. The use of both active and dead versions of the enzyme is a strong control. However, C46 is stated as a suggestion rather than definitive proof, which is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "REM-CA is an unconventional lipid-binding motif composed of two regions: R1 (helical, interacts with lipid polar heads) and R2 (hydrophobic, embedded in bilayer). The peptide is unstructured in aqueous solution but folds into an alpha helix in hydrophobic environments and in the presence of PIPs and sterols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C62 provide comprehensive biophysical characterization using multiple complementary techniques (liquid-state NMR, solid-state NMR, FT-IR, tensiometry). The two-region model (C51) is supported by in silico analysis and validated experimentally. R2 deletion abolishes PM association in planta (C54), providing functional validation. The conformational change upon lipid binding (C48, C60-C62) is demonstrated by multiple methods. The integration of structural and functional data is strong.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "fd554f58-fe01-4012-a09e-4d4c1b060ac4",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations predict that REM-CA inserts into the lipid bilayer with two distinct regions, with lysines K192, K193, K183, and arginine R185 forming salt-bridges with PI4P phosphate groups, while tyrosine Y184 is unlikely to interact with sterols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 present MD simulation results that are consistent with experimental data. The predictions about Y184 (C64) are validated by mutant analysis showing Y184F still forms nanodomains (C67). The predictions about lysine interactions (C65) are validated by mutant studies (C72-C74). However, MD simulations have inherent limitations (force field accuracy, sampling), and the distance measurement in C64 (>1 \u00b5m) appears to be an error (should be nm scale).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6e4cf252-8f12-4bc3-82bf-cbae1c2a5fa2",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Positively charged residues in REM-CA are essential for PM targeting through specific lipid-peptide interactions rather than net charge. Single and double mutants localize to PM, while triple to sextuple mutants show cytosolic localization. Despite negative net charge, mutants can still target the PM, suggesting structural specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 present a systematic mutational analysis. C67 validates the MD prediction about Y184. C68-C69 show a threshold effect where multiple mutations are required to disrupt targeting. C70-C71 make an important mechanistic point about structural specificity vs. electrostatic charge, supported by comparison to other PM-targeting proteins. The logic is sound, though C71 is somewhat speculative (labeled as INFERENCE).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "cbc7719e-8ed1-4fc1-8fee-adfa192a3beb",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Specific lysine residues (K183, K192, K193) are required for proper nanodomain organization, while K176 and R185 are dispensable. Combining mutations on these residues with other charged residue mutations increases the disruption of nanodomain organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by confocal microscopy with SCI quantification (Figure 4A,B) and are consistent with MD predictions (C65). The hierarchical importance of residues is clearly demonstrated. Statistical analysis (Dunn's multiple comparisons, p<0.05) supports the conclusions. The data directly test the MD predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "b4914a5d-126c-4f0d-8ea8-7d9f131bd504",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "REM-CA mutations that disrupt nanodomain organization impair the protein's ability to restrict viral cell-to-cell movement and reduce plasmodesmata permeability. Single mutants K176S, Y184F, and R185A retain function, while K183S, K192A, and K193A show partial loss, and double mutants show near-complete loss of activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 provide functional validation of the structural findings, linking nanodomain organization to biological function. The gradient of functional impairment correlates with the degree of structural disruption. Multiple assays (PVX spreading, PD permeability) show consistent results. Statistical analysis (Dunn's test, p<0.05) supports significance. Western blots confirm protein expression. This establishes the functional relevance of the structural findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6d269f8c-0fd6-4993-a1b5-d540769108ee",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Single-particle tracking PALM reveals that REM-CA mutants display altered mobility compared to wild-type. All fusions show highly confined diffusion, but the four mutants (K183S, K192A, K183S/K192A, K192A/K193A) show lower mobility than WT. K183S has similar MSD to WT, while K192A and double mutants show lower MSD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 present spt-PALM data with appropriate quantification (diffusion coefficient, MSD). The finding that non-functional mutants have lower (not higher) mobility is unexpected and important (noted in C99). Sample sizes are adequate (n=13-51 cells). Statistical significance is shown (p<0.0015). This reveals that mobility and function are not simply correlated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Live PALM analysis reveals that REM-CA mutants show altered nanodomain organization. WT forms ~80 nm nanodomains occupying 7% of PM surface with 37% of molecules in domains. Mutants show decreased total nanodomain surface, with K183S/K183S-K192A forming smaller domains and K192A/K192A-K193A forming larger but less dense domains. Single protein mobility and supramolecular organization are uncoupled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C91 provide detailed quantitative analysis of nanodomain organization using Vorono\u00ef tessellation. The WT measurements (C82-C85) agree with prior studies. The mutant analysis (C86-C88) shows distinct phenotypes. The key insight (C89-C90) that mobility and organization are uncoupled is well-supported by the data showing K192A has lowest MSD but forms largest clusters. Statistical analysis (Dunn's test, p<0.05) supports differences. At least 6 datasets per construct provide adequate replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "f4d1eb62-5404-4346-84f5-e9e7548bd953",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Altered nanodomain partitioning is sufficient to inhibit signaling events involving St REM1.3. PM-protein function relies not solely on immobility but on the ability to organize into supramolecular domains. REM-CA-defined PM-nanodomains may represent a functional unit for membrane-bound cell signaling in plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92, C100, and C102 present important interpretations but are speculative (labeled as INFERENCE/SPECULATION). While the correlation between altered partitioning and loss of function is clear, the causal mechanism is not directly demonstrated. C92 suggests altered partition with kinases or interacting partners, but these partners are unknown. C100 makes a strong claim about the general principle of PM-protein function based on this single protein family. C102 is appropriately hedged with 'may represent.' These are reasonable hypotheses but require additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "c1a7dda6-b391-46a8-852e-6936c93a4134",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "St REM1.3 is a functional homolog of N. benthamiana endogenous group 1b REMs for restricting PVX spreading, and Nb REM1.2 and Nb REM1.3 are highly expressed in leaf epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 establish the experimental system. C32 is supported by Figure 1\u2014figure supplement 2 showing functional complementation. C33 is supported by expression data. This validates the use of St REM1.3 as a model for studying endogenous N. benthamiana REMs in the relevant tissue (epidermis where PVX initiates infection per C34).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of membrane compartmentalization, the REMORIN protein family, their functions in plant-microbe interactions and hormone signaling, and prior characterization of REM-CA as a membrane-binding domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C34, C93, C96-C98 provide context and cite prior literature. These are appropriately supported by citations to published work. They establish the rationale for the study and the state of knowledge before this work. C1-C2 are general principles, C3-C31 summarize prior work on REMs, and C93, C96-C98 provide additional context. These claims are not novel findings but necessary background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    },
+    {
+      "id": "8b5a71bd-9522-44fb-b0ac-b531214f5622",
+      "content_id": "8164e231-8eef-40e9-bd3d-1d21e4e172bb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Group 1 REM St REM1.3 is targeted to inner-leaflet PM nanodomains from the cytosol by REM-CA, which undergoes conformational change in presence of PI4P and sterols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is a summary statement of the main findings, supported by the comprehensive data in Figures 1 and 2. This integrates multiple lines of evidence (secretory pathway independence, lipid requirements, structural characterization) into a coherent model. The claim is well-supported by the experimental data discussed in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:19:26.885545Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "61a6b083-3f40-4f11-9116-d821a47f4ccb",
+      "result_id": "6bf4ed35-4455-4717-b90c-455f1748c446"
+    },
+    {
+      "claim_id": "b2aaefd5-3323-45af-b82f-56359020eb14",
+      "result_id": "6bf4ed35-4455-4717-b90c-455f1748c446"
+    },
+    {
+      "claim_id": "d2a25133-c0e9-4ad2-8222-740003ca6b92",
+      "result_id": "6bf4ed35-4455-4717-b90c-455f1748c446"
+    },
+    {
+      "claim_id": "0d58d28b-159f-45b3-b95f-e2028397a2a3",
+      "result_id": "6bf4ed35-4455-4717-b90c-455f1748c446"
+    },
+    {
+      "claim_id": "01ca995d-977d-4746-85f1-185c3edbcffb",
+      "result_id": "021e3cd5-5356-4d02-9c3a-8f28ae4de186"
+    },
+    {
+      "claim_id": "3ae112db-fedb-4869-89f6-5f21ad4b1247",
+      "result_id": "021e3cd5-5356-4d02-9c3a-8f28ae4de186"
+    },
+    {
+      "claim_id": "ac7a017a-4ce2-43a5-8045-583e97d2f57d",
+      "result_id": "021e3cd5-5356-4d02-9c3a-8f28ae4de186"
+    },
+    {
+      "claim_id": "4c8faba3-6c41-4f85-97bd-32c09e2cb684",
+      "result_id": "021e3cd5-5356-4d02-9c3a-8f28ae4de186"
+    },
+    {
+      "claim_id": "f03baef3-69b3-45ef-a308-1cc91def1f26",
+      "result_id": "021e3cd5-5356-4d02-9c3a-8f28ae4de186"
+    },
+    {
+      "claim_id": "1e201731-2bcb-4ff3-8fc1-9d7fb8495647",
+      "result_id": "84ce159f-b51e-458c-9077-6c8dd76c20b9"
+    },
+    {
+      "claim_id": "74a6a379-aa84-42c1-82c8-4644d7840951",
+      "result_id": "84ce159f-b51e-458c-9077-6c8dd76c20b9"
+    },
+    {
+      "claim_id": "64ba3b5e-2f4f-45c6-9b1f-bb080f7a17ad",
+      "result_id": "84ce159f-b51e-458c-9077-6c8dd76c20b9"
+    },
+    {
+      "claim_id": "752c3f5f-4bdb-493c-908b-70d07ef4cbf9",
+      "result_id": "84ce159f-b51e-458c-9077-6c8dd76c20b9"
+    },
+    {
+      "claim_id": "64f1c3bd-d8e8-48e0-8ca6-9900b4586387",
+      "result_id": "84ce159f-b51e-458c-9077-6c8dd76c20b9"
+    },
+    {
+      "claim_id": "d353bbc1-01d8-438e-bb06-1e1cb46a26ac",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "9fec6d85-3852-49d8-bf30-1e808b490e1b",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "5ecb3167-f13f-40ec-b81a-b7463abc5f20",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "69c14cbb-9809-45f9-a898-528ea13a4f68",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "f25c374d-1b17-43d2-abf3-96aea9f81fa1",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "a09b3d7f-eb6f-4f0b-bc30-4e9ade19f5db",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "6bd798e9-28e3-47d8-8abc-b4eca17ebb10",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "88f1c9d5-b77b-4d95-9e1a-e2b782704c9e",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "77fa69fc-273f-4a53-9566-466af6499cb0",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "2c7e45b1-59fa-466b-a4ce-89f074f01a22",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "6925fff1-9421-481a-a388-e6cc751a69eb",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "ac5d85db-c88c-4b72-bc04-020360fec3c2",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "6cb2bccf-ef75-48ab-9ec0-722010427871",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "85a4610f-e885-4592-b6cc-b5f88a305916",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "6b7e2321-29f9-4272-9cfa-51b6ee154b09",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "9ba86a5c-460b-401c-a526-d954ae2556ed",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "488f90ef-0084-462c-94e7-548c9fce9962",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "8493ebf6-e9ce-4300-b269-672263e0e39b",
+      "result_id": "81d567e2-c5ae-4c0e-ac0b-02208735c72b"
+    },
+    {
+      "claim_id": "18967643-db52-4cbf-b705-6fed50599ef0",
+      "result_id": "fd554f58-fe01-4012-a09e-4d4c1b060ac4"
+    },
+    {
+      "claim_id": "243c8788-b659-45fd-8e3b-680d618daeb9",
+      "result_id": "fd554f58-fe01-4012-a09e-4d4c1b060ac4"
+    },
+    {
+      "claim_id": "de170d4b-06d1-4df9-9328-d83ad5353445",
+      "result_id": "fd554f58-fe01-4012-a09e-4d4c1b060ac4"
+    },
+    {
+      "claim_id": "b7442691-fa40-4bbb-88ba-03ecc7113bd5",
+      "result_id": "fd554f58-fe01-4012-a09e-4d4c1b060ac4"
+    },
+    {
+      "claim_id": "e6783a60-e3cc-4249-8ff8-29d2deec8df0",
+      "result_id": "6e4cf252-8f12-4bc3-82bf-cbae1c2a5fa2"
+    },
+    {
+      "claim_id": "afd2da7a-81aa-490b-9bd7-436a89e1566a",
+      "result_id": "6e4cf252-8f12-4bc3-82bf-cbae1c2a5fa2"
+    },
+    {
+      "claim_id": "3039b40a-3c5c-461e-826c-c68379d94841",
+      "result_id": "6e4cf252-8f12-4bc3-82bf-cbae1c2a5fa2"
+    },
+    {
+      "claim_id": "832a57e4-5b64-475d-a2b6-5efce2b93a3a",
+      "result_id": "6e4cf252-8f12-4bc3-82bf-cbae1c2a5fa2"
+    },
+    {
+      "claim_id": "9b8cf8f3-3336-403b-87a2-dcc33c1ef94e",
+      "result_id": "6e4cf252-8f12-4bc3-82bf-cbae1c2a5fa2"
+    },
+    {
+      "claim_id": "52b8bb87-9342-42d0-a666-5a7637a21eab",
+      "result_id": "cbc7719e-8ed1-4fc1-8fee-adfa192a3beb"
+    },
+    {
+      "claim_id": "a06eff3b-12c9-42b3-8dee-33b0c0cd248a",
+      "result_id": "cbc7719e-8ed1-4fc1-8fee-adfa192a3beb"
+    },
+    {
+      "claim_id": "eb9d9598-d505-4841-bc68-55e7f1b12d1d",
+      "result_id": "cbc7719e-8ed1-4fc1-8fee-adfa192a3beb"
+    },
+    {
+      "claim_id": "066916c3-d777-45ba-8d70-0ecb0b99d264",
+      "result_id": "b4914a5d-126c-4f0d-8ea8-7d9f131bd504"
+    },
+    {
+      "claim_id": "c811602c-9a12-4ea3-a941-5dcefc95a82d",
+      "result_id": "b4914a5d-126c-4f0d-8ea8-7d9f131bd504"
+    },
+    {
+      "claim_id": "47648165-4ad9-4b2b-aff6-f0820adf755f",
+      "result_id": "b4914a5d-126c-4f0d-8ea8-7d9f131bd504"
+    },
+    {
+      "claim_id": "4b313b23-53fd-4460-a872-58fb0109b5cf",
+      "result_id": "b4914a5d-126c-4f0d-8ea8-7d9f131bd504"
+    },
+    {
+      "claim_id": "4d296f43-3367-47dc-8357-01b0db8b3f09",
+      "result_id": "6d269f8c-0fd6-4993-a1b5-d540769108ee"
+    },
+    {
+      "claim_id": "0af67f57-8e1e-4d1f-8154-ff9d3ee709a3",
+      "result_id": "6d269f8c-0fd6-4993-a1b5-d540769108ee"
+    },
+    {
+      "claim_id": "28cb2672-a32c-4d29-92ea-70caffa08d40",
+      "result_id": "6d269f8c-0fd6-4993-a1b5-d540769108ee"
+    },
+    {
+      "claim_id": "0fc17d8e-1c7b-4269-b315-c0c0ed166f28",
+      "result_id": "6d269f8c-0fd6-4993-a1b5-d540769108ee"
+    },
+    {
+      "claim_id": "aa82e8d9-0a4e-4d4a-b9b3-a86315ffeddc",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "fec4b35c-de90-4aeb-98d9-dd3e44cfafed",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "b0cf8bf7-0ad3-4142-a68b-e02231f5652c",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "442aee0b-d63e-4e06-ba04-739392e3442a",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "50814d7b-ee48-4602-b220-ef4f2ba249c6",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "0feadc2c-4169-406a-a371-6d4e06aa422a",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "6f9d2f28-4047-4010-ade6-dea965befd4d",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "4f264c19-02ca-4bd1-8fdf-7b52ed648ebd",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "d308800c-3649-43d1-b14b-4cb163805407",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "89349157-a78e-4459-b47b-b100e9fe5523",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "ba5b53b3-2db5-4c6b-8b94-8b8186ff2f26",
+      "result_id": "1b27dedf-8564-4e8d-9c51-5fdb13c1c58a"
+    },
+    {
+      "claim_id": "6e23e837-7eec-4eac-97fb-c26c115641ec",
+      "result_id": "f4d1eb62-5404-4346-84f5-e9e7548bd953"
+    },
+    {
+      "claim_id": "049898d3-be93-4bea-a123-8ce1568a58f9",
+      "result_id": "f4d1eb62-5404-4346-84f5-e9e7548bd953"
+    },
+    {
+      "claim_id": "09268523-3bac-4513-811b-c44a914397be",
+      "result_id": "f4d1eb62-5404-4346-84f5-e9e7548bd953"
+    },
+    {
+      "claim_id": "118acc74-9a0a-4a44-92dc-045d07680ce2",
+      "result_id": "c1a7dda6-b391-46a8-852e-6936c93a4134"
+    },
+    {
+      "claim_id": "3b8a96a0-7263-4ea6-a0d4-544542cb4e49",
+      "result_id": "c1a7dda6-b391-46a8-852e-6936c93a4134"
+    },
+    {
+      "claim_id": "1c9e7367-cbbd-441c-b3b2-ef732ece9cb0",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "0f645536-a8ba-496f-97ec-45afb6fa882e",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "bf990c57-9411-442f-b83d-3111c31ce225",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "f7dac079-21db-403f-9317-531c51033e80",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "9142a676-1edc-4fb3-b599-2fbd085dc77a",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "27a68d96-a91c-4d6e-b402-859b29129cb8",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "b6f09012-e97b-4de7-9b5c-d194ea90f545",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "2374f544-de9b-4470-857e-a8b8d2dbc069",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "fcc94363-5af1-4820-bc56-7093058bb89f",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "b38868c2-8a45-4177-b8d0-2127c83b32df",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "02c219ff-a17b-483c-9c04-06c2082471a5",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "cb296129-310e-4b1f-8f05-d5065bb95f9e",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "31231162-630e-47db-8976-19f163932749",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "dfa71bed-d09f-4757-b09f-8b5140dcd6f8",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "80853e88-e29e-4cdc-bc6a-323db25b7f25",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "1299f893-d9fb-46cb-863b-cc755d6de038",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "1970cf39-456b-4f9a-902b-35949286214a",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "14d6e5bb-b26d-4cde-b73c-336dc1b3cb24",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "8d49b8c0-c287-4804-8c40-181b0db1c5a9",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "b7ce6f68-a60b-4fb7-ae5f-fbfa6970741e",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "e8d47374-dd8b-4ad9-99c5-8db2e2d29256",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "63a3e558-40b6-468d-b8ba-f7a618e55cd8",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "4c407828-6605-4ae4-bb1c-9b4d799f246f",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "eb9a83d6-46ab-4d74-8ade-b7d285b35dd0",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "37a9bf16-ad66-43fb-b9d0-e4d16e35cdbb",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "148da52d-7726-4096-9b2f-ebc087a0d0a5",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "bbb37280-785f-408c-b9b5-6713cf1dbd95",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "20181097-fb89-44ea-ab60-1d641d13a029",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "f7e1243d-d59b-4118-9ded-566140107bce",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "7c20d96b-7e85-48d9-94df-e6b5b2059e42",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "c09d06a1-6579-44c4-8147-e38b163649d9",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "e42409a2-bcf1-419b-a07e-277b86290dbb",
+      "result_id": "6d4b9d0e-a5de-4a15-91b8-a8637b83953e"
+    },
+    {
+      "claim_id": "6342b60a-99e5-4590-a1c4-b25906551c2f",
+      "result_id": "8b5a71bd-9522-44fb-b0ac-b531214f5622"
+    }
+  ],
+  "comparisons": []
+}

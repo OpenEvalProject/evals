@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "ARP8 is phosphorylated at Ser412 after etoposide treatment. The authors identified an SQ motif at S412/Q413 in ARP8 and demonstrated that phosphorylation at this site increases significantly from 2 hours after etoposide treatment, with S412A mutation completely abolishing this phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38, C42, C43, and C44 are well-supported by experimental data in Figure 1A-C. The identification of the SQ motif, time-course phosphorylation analysis, phosphatase validation, and site-directed mutagenesis provide converging evidence that ARP8 is phosphorylated specifically at Ser412 following etoposide treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "ARP8 phosphorylation at S412 is regulated by both ATM and ATR kinases after etoposide treatment, with ATR being the major kinase responsible. ATM-deficient cells show reduced ARP8 phosphorylation, and ATM inhibitor treatment partially suppresses phosphorylation, while ATR inhibitor strongly represses it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, C45-C48, C50-C51, and C53 are supported by experimental data in Figures 1D-E showing differential phosphorylation in ATM-deficient vs proficient cells and dose-dependent inhibition by ATM and ATR inhibitors. The data consistently demonstrate dual kinase regulation with ATR as the predominant kinase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ATM-dependent phosphorylation of ARP8 negatively regulates INO80 loading onto the MLL BCR. Expression of phosphorylation-deficient S412A mutant increases INO80 binding, while ATM inhibition enhances binding in wild-type but not S412A-expressing cells. The phosphomimetic S412D mutant reduces INO80 binding in ATM-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32, C56-C64 are well-supported by ChIP data in Figure 2 showing that ARP8 is required for INO80 loading and that phosphorylation at S412 represses this binding. The genetic epistasis experiments (C61) and phosphomimetic rescue (C63) provide strong evidence for the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C102",
+      "C124"
+    ],
+    "result": "Phosphorylation of ARP8 at S412 reduces its interaction with INO80. Etoposide treatment increases ARP8-INO80 interaction, which is further enhanced by ATM inhibition. The S412A mutant shows increased interaction with INO80 compared to wild-type, while the S412D mutant shows decreased interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, C65-C71, C102, and C124 are supported by co-immunoprecipitation data (Figure 3) and proximity ligation assays showing that phosphorylation status of S412 inversely correlates with INO80 binding. Multiple complementary approaches strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ATM-dependent phosphorylation of ARP8 negatively regulates RAD51 loading onto the MLL BCR by controlling INO80 complex loading. ARP8 and INO80 depletion reduce RAD51 binding, while S412A expression increases RAD51 binding. ATM inhibition increases RAD51 binding in wild-type but not S412A cells, and S412D expression reduces RAD51 binding in ATM-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, C73-C82 are supported by ChIP data in Figure 4 and supplementary figures showing the hierarchical relationship: ARP8 phosphorylation \u2192 INO80 loading \u2192 RAD51 loading. The genetic epistasis and rescue experiments provide strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C97",
+      "C98"
+    ],
+    "result": "ATM-dependent phosphorylation of ARP8 prevents etoposide-induced 11q23 chromosome translocations. ARP8 depletion reduces translocations in ATM-deficient cells but increases them in ATM-proficient cells. S412D expression reduces translocations in ATM-deficient cells, while S412A expression increases translocations in ATM-proficient cells, with ATM inhibition having no additional effect on S412A-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C83-C90, C97-C98 are supported by FISH analysis in Figure 5 showing that ARP8 phosphorylation status directly impacts chromosome translocation frequency. The genetic rescue experiments and epistasis analysis provide strong evidence that S412 phosphorylation is the critical regulatory event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ATM, but not ATR, regulates RAD51 loading onto the BCR and prevents 11q23 chromosome translocations despite ATR being the major kinase for ARP8 phosphorylation. ATR inhibition does not increase RAD51 binding to the BCR or significantly enhance chromosome translocations, and shows no additive effect with ATM inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C91-C96 are supported by ChIP and FISH data in Figure 6 demonstrating functional divergence between ATM and ATR despite both phosphorylating ARP8. The lack of effect of ATR inhibition on RAD51 binding and limited effect on translocations, despite strong inhibition of ARP8 phosphorylation, is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Etoposide induces DNA damage specifically at the BCR of the MLL gene, as evidenced by \u03b3H2AX enrichment at this locus in ATM-proficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by ChIP data in Figure 2\u2014figure supplement 1A showing \u03b3H2AX enrichment at the BCR after etoposide treatment, validating that the experimental system induces damage at the relevant genomic location.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "ARP8 phosphorylation occurs with delayed kinetics (>2 hours) compared to ATM activation (<1 hour), consistent with its role in regulating recombinational repair which starts more slowly than end-joining repair. The phosphorylation may facilitate INO80 dissociation after appropriate chromatin remodeling to prevent illegitimate recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C103-C107, and C109 are supported by time-course data in Figure 1B and are consistent with known DNA repair kinetics. However, C105 and C106 regarding the dissociation function are speculative interpretations rather than directly demonstrated mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The slower phosphorylation kinetics of ARP8 and differential effects of ATM vs ATR inhibition suggest multiple regulatory systems control ARP8 phosphorylation after DNA damage, potentially involving multiple steps and factors for precise control of DNA repair activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 are inferred from the kinetic data and differential inhibitor effects shown in Figures 1D-E, but the specific mechanisms of multi-step regulation are not directly demonstrated. The claims represent reasonable interpretations but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The S412 phosphorylation site is located in insertion IV (residues 401-507) of ARP8, a flexible loop region involved in protein-protein interactions and DNA binding. This SQ motif is conserved only in higher eukaryotes, suggesting evolutionary advantages for DNA damage-dependent ARP8 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128, C130 are supported by structural analysis and sequence alignment data in Figure 1\u2014figure supplement 1. However, C129 and C131 regarding the functional consequences and evolutionary advantages are speculative interpretations not directly tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors' previous work showed that ATM deficiency leads to excessive binding of RAD51 and INO80 to the MLL BCR and increased 11q23 chromosome translocations. The current findings demonstrate that ATM-dependent modulation of recombination repair through ARP8 phosphorylation is important to prevent these translocations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23, C133-C134 appropriately summarize prior work (C1, C23) and integrate it with current findings (C133-C134). The integration is well-supported by the experimental data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C49",
+      "C52",
+      "C72",
+      "C99",
+      "C100",
+      "C108",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C132"
+    ],
+    "result": "Background claims establishing the scientific context for chromosome translocations, DNA repair pathways, ATM/ATR function, INO80 complex biology, and the relationship between HR dysregulation and genomic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C8-C28, C30-C31, C37, C39-C41, C49, C52, C72, C99-C100, C108, C114, C116-C119, C121-C122, C132) represent established knowledge appropriately cited from the literature. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C115",
+      "C120",
+      "C123"
+    ],
+    "result": "Speculative claims about broader implications: that inappropriate HR regulation in ATM-deficient cells could lead to translocations, that ATM vs ATR phosphorylation of ARP8 may have distinct functional roles, that ARP8 regulation may maintain recombination activity in an appropriate range, and that this regulation may apply to DSBs in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29, C115, C120, C123 represent reasonable speculations based on the data but extend beyond what is directly demonstrated. These hypotheses would require additional experimental validation, particularly testing in other genomic contexts and with other types of DNA damage.",
+    "result_type": "MINOR"
+  }
+]

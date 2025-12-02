@@ -1,0 +1,1804 @@
+{
+  "submission": {
+    "id": "2b31a80f-d89c-46db-88f3-3c34f12799cc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:01:28.990223Z",
+    "updated_at": "2025-12-01T21:01:28.990223Z"
+  },
+  "content": [
+    {
+      "id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "submission_id": "2b31a80f-d89c-46db-88f3-3c34f12799cc",
+      "content_type": "manuscript",
+      "content_text": "# Assessing the danger of self-sustained HIV epidemics in heterosexuals by population based phylogenetic cluster analysis\n\n## Authors\n\n- Teja Turk<sup>1</sup> ([ORCID: 0000-0003-3065-8578](https://orcid.org/0000-0003-3065-8578))\n- Nadine Bachmann<sup>1</sup> ([ORCID: 0000-0002-7303-9542](https://orcid.org/0000-0002-7303-9542))\n- Claus Kadelka<sup>1</sup>\n- J\u00fcrg B\u00f6ni<sup>2</sup>\n- Sabine Yerly<sup>3</sup>\n- Vincent Aubert<sup>4</sup>\n- Thomas Klimkait<sup>5</sup>\n- Manuel Battegay<sup>6</sup>\n- Enos Bernasconi<sup>7</sup>\n- Alexandra Calmy<sup>8</sup>\n- Matthias Cavassini<sup>9</sup>\n- Hansjakob Furrer<sup>10</sup> ([ORCID: 0000-0002-1375-3146](https://orcid.org/0000-0002-1375-3146))\n- Matthias Hoffmann<sup>11</sup>\n- Huldrych F G\u00fcnthard<sup>1</sup>\n- Roger D Kouyos<sup>1</sup> ([ORCID: 0000-0002-9220-8348](https://orcid.org/0000-0002-9220-8348)) \u2020\n- V Aubert\n- V Aubert\n- M Battegay\n- E Bernasconi\n- J B\u00f6ni\n- DL Braun\n- HC Bucher\n- A Calmy\n- M Cavassini\n- A Ciuffi\n- G Dollenmaier\n- M Egger\n- L Elzi\n- J Fehr\n- J Fellay\n- H Furrer\n- CA Fux\n- HF G\u00fcnthard\n- D Haerry\n- B Hasse\n- HH Hirsch\n- M Hoffmann\n- I H\u00f6sli\n- C Kahlert\n- L Kaiser\n- O Keiser\n- T Klimkait\n- RD Kouyos\n- H Kovari\n- B Ledergerber\n- G Martinetti\n- B Martinez de Tejada\n- C Marzolini\n- KJ Metzner\n- N M\u00fcller\n- D Nicca\n- G Pantaleo\n- P Paioni\n- A Rauch\n- C Rudin\n- AU Scherrer\n- P Schmid\n- R Speck\n- M St\u00f6ckle\n- P Tarr\n- A Trkola\n- P Vernazza\n- G Wandeler\n- R Weber\n- S Yerly\n\n### Affiliations\n\n1. Division of Infectious Diseases and Hospital Epidemiology University Hospital Zurich Zurich Switzerland\n2. Institute of Medical Virology University of Zurich Zurich Switzerland\n3. Laboratory of Virology Geneva University Hospitals Geneva Switzerland\n4. Division of Immunology and Allergy University Hospital Lausanne Lausanne Switzerland\n5. Molecular Virology, Department of Biomedicine - Petersplatz University of Basel Basel Switzerland\n6. Division of Infectious Diseases and Hospital Epidemiology University Hospital Basel Basel Switzerland\n7. Division of Infectious Diseases Regional Hospital Lugano Lugano Switzerland\n8. Division of Infectious Diseases Geneva University Hospitals Geneva Switzerland\n9. Service of Infectious Diseases, Department of Medicine Lausanne University Hospital Lausanne Switzerland\n10. Department of Infectious Diseases Bern University Hospital, University of Bern Bern Switzerland\n11. Division of Infectious Diseases Cantonal Hospital St. Gallen St. Gallen Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nAssessing the danger of transition of HIV transmission from a concentrated to a generalized epidemic is of major importance for public health. In this study, we develop a phylogeny-based statistical approach to address this question. As a case study, we use this to investigate the trends and determinants of HIV transmission among Swiss heterosexuals. We extract the corresponding transmission clusters from a phylogenetic tree. To capture the incomplete sampling, the delayed introduction of imported infections to Switzerland, and potential factors associated with basic reproductive number R0, we extend the branching process model to infer transmission parameters. Overall, the R0 is estimated to be 0.44 (95%-confidence interval 0.42\u20140.46) and it is decreasing by 11% per 10 years (4%\u201417%). Our findings indicate rather diminishing HIV transmission among Swiss heterosexuals far below the epidemic threshold. Generally, our approach allows to assess the danger of self-sustained epidemics from any viral sequence data.\n\n## Introduction\n\nEpidemics of HIV and other blood-borne and sexually transmitted diseases (for instance syphilis, HBV and HCV) can be subdivided into concentrated and generalized epidemics. While for the former, the rapid infectious agent transmission is restricted to core transmission groups involved in high-risk behaviors (such as men who have sex with men and injecting drug users), the generalized epidemic refers to fast pathogen spreading in the heterosexual (general) population resulting in higher overall disease prevalence. Mechanistically, the key factor explaining whether the HIV transmission is concentrated or generalized, is the ability of HIV to spread among heterosexuals. If the epidemic in this population is not self-sustained, the HIV epidemic remains concentrated; otherwise the virus is spreading rapidly in the broad population leading to a generalized HIV epidemic.\n\nIn most resource-rich settings HIV transmission is concentrated, that\u00a0is, driven mostly by transmission among men who have sex with men (MSM) and injecting drug users (IDU), whereas the limited transmission among heterosexuals is maintained by either imported infections or spillovers from other transmission groups (Kouyos et al., 2010; von Wyl et al., 2011; Ragonnet-Cronin et al., 2016; Xiridou et al., 2010; Esbj\u00f6rnsson et al., 2016; Sallam et al., 2017). This suggests that in most Western European countries and similar epidemiological settings the basic reproductive number $R_{0}$ among heterosexuals is below $1$. However, it is not clear how far away from self-sustained the epidemic is in heterosexuals. Moreover, the change in HIV transmission among heterosexuals over time is another important, yet unknown, factor, especially with evidenced increasing risky sexual behavior (Kouyos et al., 2015).\u00a0It is therefore crucial to assess both the transmission and its time trend in order to obtain meaningful insights into the epidemic.\n\nAssessing the subcritical transmission of HIV in the general population shares some methodological similarities with the analysis of stage III zoonoses, for instance, monkeypox (Wolfe et al., 2007), which also exhibit stuttering transmission chains. Both cases follow a source-sink dynamics, i.e., a flux of infections from a subpopulation in which the disease is self-sustained to a population where it is not. For the case of stage III zoonoses and tuberculosis, it has been shown that the distribution of outbreak sizes can be used to quantify the pathogen spread (Blumberg and Lloyd-Smith, 2013b; Blumberg and Lloyd-Smith, 2013a; Borgdorff et al., 1998). The fundamental approach of our study is to apply this concept to transmission of HIV in the general population. However, there are two key differences between emerging zoonotic pathogens and human-to-human infectious agents. Firstly, while the contact tracing data are not available for many sexually transmitted infections (STI), the viral sequences carry valuable information about the transmission chain size distribution. Thus, the approach of quantifying transmissibility from chain size distributions needs to be combined with a tool to derive clusters from viral sequences. Compared to the animal-human transmission the delayed introduction of the index case of an STI or blood-borne virus to the subpopulation of interest plays an important role, especially in viruses like HIV with long infectious periods in the absence of treatment and higher transmissibility during the acute phase (Marzel et al., 2016; Powers et al., 2011; Rieder et al., 2010; Rodger et al., 2016; Hollingsworth et al., 2008; Cohen et al., 2011b; Cohen et al., 2011a; Cohen et al., 2016). This is especially important because a considerable fraction of HIV cases in heterosexuals is found in migrants (Del Amo et al., 2004; von Wyl et al., 2011; European Centre for Disease Prevention and Control/WHO Regional Office for Europe, 2016). If, for example, a migrant infected with HIV abroad moves to Switzerland in the chronic stage of the infection, he/she has (from the perspective of the Swiss population) lost some transmission potential upon entering Swiss heterosexual transmission network.\n\nIn order to quantify the subcritical transmission we combine phylogenetic cluster analysis with an adapted version of a branching process model based estimator that derives the basic reproductive number $R_{0}$ from the size distribution of transmission chains. We further extend this approach to determine the impact of calendar time and other potential determinants on $R_{0}$; especially in order to assess whether $R_{0}$ exhibits an increasing time trend or is high in particular subgroups. Applying this method to the phylogenetic transmission clusters among heterosexuals in the Swiss HIV Cohort Study (SHCS), we can assess transmission of HIV in this population and in particular the risk of a generalized HIV epidemic together with the main determinants of transmission.\n\n## Results\n\nWe developed a method to assess how far HIV transmission in populations with basic reproductive number $R_{0}<1$ is from the epidemic threshold, that is, how far it is from being self-sustained in these populations (see Materials and methods). A classical application of this question/method is HIV-1 transmission in heterosexuals in settings with a concentrated epidemic. Heterosexual HIV-1 transmission in Switzerland is a case in point for such a non-self-sustained HIV epidemic. We identified $3,100$ transmission clusters among heterosexuals in the SHCS. These clusters were small in size (Table 1) and comprised individuals of broad demographic background (see Table 2). Based on the most likely geographic origin of the transmission clusters, we classified $1,133$ transmission chains as being of Swiss origin, that is, to represent introductions from other transmission groups in Switzerland into the heterosexual population, and $1,967$ to be of non-Swiss origin. For these latter transmission chains, we assumed that the $R_{0}$ of the index case was reduced by a factor of $\u03c1_{index}=0.35$ (see Materials and methods). To take into account the imperfect sampling density we fixed the subtype-depending sampling probabilities based on the results from the study by Shilaih et al. (2016), corrected by the proportion of the HIV infected individuals linked to care ($80%$ based on Kohler et al., 2015) and the fraction of heterosexuals from the SHCS with an HIV sequence in the phylogenetic tree ($57.22%$). The model parameters used in this study are summarized in Table 1 (see Sensitivity analyses, Appendix 1\u2014figure 1 and Appendix 1\u2014figure 2 for the corresponding sensitivity analyses).\n\n**Table 1.**\n Transmission chain size distribution and model parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"6\">Subtype</th>\n      <th rowspan=\"2\">Overall</th>\n    </tr>\n    <tr>\n      <th>B</th>\n      <th>C</th>\n      <th>01_AE</th>\n      <th>02_AG</th>\n      <th>A</th>\n      <th>Other</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total number of chains,\u00a0n\u00a0(%)</td>\n      <td>1643 (53%)</td>\n      <td>322 (10%)</td>\n      <td>239 (7.7%)</td>\n      <td>331 (11%)</td>\n      <td>327 (11%)</td>\n      <td>238 (7.7%)</td>\n      <td>3100 (100%)</td>\n    </tr>\n    <tr>\n      <td>Chain size, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>1437 (87%)</td>\n      <td>280 (87%)</td>\n      <td>206 (86%)</td>\n      <td>272 (82%)</td>\n      <td>269 (82%)</td>\n      <td>195 (82%)</td>\n      <td>2659 (86%)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>158 (9.6%)</td>\n      <td>34 (11%)</td>\n      <td>31 (13%)</td>\n      <td>40 (12%)</td>\n      <td>44 (13%)</td>\n      <td>36 (15%)</td>\n      <td>343 (11%)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>30 (1.8%)</td>\n      <td>7 (2.2%)</td>\n      <td>1 (0.42%)</td>\n      <td>10 (3.0%)</td>\n      <td>10 (3.1%)</td>\n      <td>6 (2.5%)</td>\n      <td>64 (2.1%)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>12 (0.73%)</td>\n      <td>-</td>\n      <td>1 (0.42%)</td>\n      <td>6 (1.8%)</td>\n      <td>3 (0.92%)</td>\n      <td>1 (0.42%)</td>\n      <td>23 (0.74%)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>1 (0.06%)</td>\n      <td>1 (0.31%)</td>\n      <td>-</td>\n      <td>2 (0.6%)</td>\n      <td>1 (0.31%)</td>\n      <td>-</td>\n      <td>5 (0.16%)</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>1 (0.06%)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1 (0.3%)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2 (0.06%)</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>1 (0.06%)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1 (0.03%)</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>2 (0.12%)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2 (0.06%)</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>1 (0.06%)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1 (0.03%)</td>\n    </tr>\n    <tr>\n      <td>Sampling probability, p (SD)</td>\n      <td>0.39</td>\n      <td>0.29</td>\n      <td>0.34</td>\n      <td>0.26</td>\n      <td>0.33</td>\n      <td>0.29</td>\n      <td>0.35 (0.05)</td>\n    </tr>\n    <tr>\n      <td>Chain origin, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Swiss (\u03c1index=1)</td>\n      <td>948 (58%)</td>\n      <td>36 (11%)</td>\n      <td>36 (15%)</td>\n      <td>36 (11%)</td>\n      <td>47 (14%)</td>\n      <td>30 (13%)</td>\n      <td>1133 (37%)</td>\n    </tr>\n    <tr>\n      <td>non-Swiss (\u03c1index=0.35)</td>\n      <td>695 (42%)</td>\n      <td>286 (89%)</td>\n      <td>203 (85%)</td>\n      <td>295 (89%)</td>\n      <td>280 (86%)</td>\n      <td>208 (87%)</td>\n      <td>1967 (63%)</td>\n    </tr>\n  </tbody>\n</table>\n\n### R0 of the HIV transmission in Swiss heterosexuals\n\nTo obtain an overall estimate for the $R_{0}$ of HIV transmission in Swiss heterosexuals, the baseline model was fitted to all of the previously described transmission chain data. In this baseline model the $R_{0}$ was estimated to be $0.44$ ($95%$-confidence interval (CI) $0.42$\u2014$0.46$). The fact that $R_{0}$ was clearly below $1$ ($p$-value $<0.001$ from one-sided Wald hypothesis testing $H_{0}:R_{0}=1$ against the alternative $H_{A}:R_{0}<1$) indicated that HIV transmission is far away from a self-sustained epidemic.\n\nAlthough the overall $R_{0}$ estimate was clearly below $1$, individual subtypes represent different epidemiological settings and hence individual subtypes may have $R_{0}$ closer to the epidemic threshold. The subtype-stratified analyses indeed yielded lower $R_{0}$ of $0.35$ ($95%$-CI $0.33$\u2014$0.39$) for subtype B as compared to the non-B subtypes (Figure 1). The recombinant form CRF02_AG had the highest estimated $R_{0}$ of $0.62$ ($95%$-CI $0.56$\u2014$0.69$). Despite these differences among the $R_{0}$ estimates for different subtypes they were all significantly below $1$ (with all $p$-values from the one-sided test smaller than $0.001$). Therefore, we concluded that there is no danger of a self-sustained HIV epidemic in Swiss heterosexuals of any HIV subtype.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28721/elife-28721-fig1-v2.jpg)\n\n**Figure 1.:** Overall basic reproductive number $R_{0}$ and $R_{0}$ per subtype from stratified analysis.The dark gray point indicates the overall basic reproductive number $R_{0}$ estimate (by neglecting the transmission chain subtypes) and the corresponding $95%$-confidence\u00a0interval is shown with the dark gray line and the gray-shaded band. The analogous results from the per-subtype stratified analysis are represented by colored points and lines, each color corresponding to one of the subtypes (B, C, CRF01_AE, CRF02_AG or A) or the group of subtypes (other).\n\n### Time trend of the R0\n\nDespite consistently low $R_{0}$ estimates, an increasing time\u00a0trend for $R_{0}$ would impose a potential concern, especially if the time\u00a0trend would predict a crossing of the epidemic threshold in the near future. To investigate this, we fitted a univariate model with $log\u2061(R_{0})$ as a linear function of the establishment date of the transmission chain. We found that overall the $R_{0}$ is decreasing at a factor $0.89$ per $10$ years ($95%$-CI $0.83$\u2014$0.96$). The per subtype-stratified analyses showed the consistently decreasing time trend among the subtypes ranging from factor $0.65$ per $10$ years for subtype A to $0.89$ for B-subtype.\n\nTo better capture the changes of $R_{0}$ over time we included higher-order polynomials of the establishment date to our model (Figure 2). With the reference date on the 1st of January 1996 (which corresponds to the median estimated date of infection - see Table\u00a02) a cubic spline (without the linear term) was identified as the optimal model according to the Bayesian information criterion (BIC). This model exhibits a mild increase of the $R_{0}$ from the mid 1980\u2019s to the mid 1990\u2019s, with a peak-$R_{0}$ of $0.49$ ($95%$-CI $0.46$\u2014$0.53$) reached in 1996 and followed by a steep and monotonic decrease. It is noteworthy that the time of peak-$R_{0}$ coincided with the introduction of highly active antiretroviral therapy. Shortly after the $R_{0}$ started to rapidly decrease and has never rebounded. This extrapolation should be, however, taken with a grain of salt and seen more as a trend rather than a prognosis, since only a few transmission chains have been observed for the recent years (which is reflected by wide confidence intervals).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28721/elife-28721-fig2-v2.jpg)\n\n**Figure 2.:** Time trends for $R_{0}$.The upper smaller panels show the time trends for $R_{0}$ from the subtype-stratified analyses, in which the $l\u2062o\u2062g\u2062(R_{0})$\u2019s were modeled as linear functions of establishment date (i.e., for each subtype the time trend rate was assumed to be constant). The colored shaded-bands correspond to the $95%$-prediction bands. The (best-fitting) nonlinear time trend for $R_{0}$ from the overall analysis is displayed in the lower panel (dark gray curve) together with the $95%$-prediction band (gray-shaded area). The black points represent the $R_{0}$ estimates from the per establishment year stratified analyses and the gray vertical lines the corresponding $95%$-confidence intervals.\n\n**Table 2.**\n Patients\u2019 demographic characteristics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\">Patients</th>\n      <th>Transmission chains</th>\n    </tr>\n    <tr>\n      <th>Index case</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total number, n</td>\n      <td>3698</td>\n      <td>3100</td>\n    </tr>\n    <tr>\n      <td>Age at estimated date of infection [in years], median (IQR)</td>\n      <td>29.2 (23.1\u201437.8)</td>\n      <td>28.8 (22.8\u201437.4)</td>\n    </tr>\n    <tr>\n      <td>Estimated date of infection, median (IQR)</td>\n      <td>Jun 1996 (Sep 1990\u2014Nov 2001)</td>\n      <td>Nov 1995 (Sep 1989\u2014May 2001)</td>\n    </tr>\n    <tr>\n      <td>Time to diagnosis [in years], median (IQR)</td>\n      <td>3.40\u00a0(1.66\u20145.24)</td>\n      <td>3.54\u00a0(1.78\u20145.43)</td>\n    </tr>\n    <tr>\n      <td>Reported sex with occasional partner [as fraction of FUPs*], median (IQR)</td>\n      <td>0.53 (0.09\u20140.89)</td>\n      <td>0.50 (0.07\u20140.88)</td>\n    </tr>\n    <tr>\n      <td>No available FUP\u2020, n (%)</td>\n      <td>250 (6.8%)</td>\n      <td>226 (7.3%)</td>\n    </tr>\n    <tr>\n      <td>Earliest CD4 count [per \u03bcL]\u2021, median (IQR)</td>\n      <td>310 (143\u2014510)</td>\n      <td>300 (134\u2014507)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Follow-up visit (FUP).\u2020Patients without FUP questionnaire regarding the sexual risk behavior. See Sensitivity analyses.\u2021One patient did not have any available CD4 cell count. The missing value was imputed with the mean CD4 cell count._\n\n### Determinants of the HIV-transmission\n\nFinally, we identified the characteristics associated with higher $R_{0}$ and therefore potential focal subpopulations, in which the basic reproductive number $R_{0}$ could be above $1$. The simplest model containing only the linear terms of risk factors showed that the $R_{0}$ is decreasing with the establishment date of the transmission chain and that all non-B subtypes have higher $R_{0}$ compared to subtype B, which was consistent with the findings from the univariate model and per-subtype stratified analyses. Moreover, we found that reporting sex with occasional partners and longer time to HIV diagnosis of the index case are associated with higher $R_{0}$, whereas the earliest CD4 cell count and the age do not have significant effects (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28721/elife-28721-fig3-v2.jpg)\n\n**Figure 3.:** Effect of different factors on the basic reproductive number $R_{0}$ from the multivariate model with only linear factor terms.The black square and the black line show the reference basic reproductive number $R_{0}$ and its $95%$-confidence interval (for a transmission chain of subtype B which started on 1.1.1996, and in which the index case was diagnosed 3 years after the infection, was 32 years old upon infection, never reported on having sex with occasional partner and had the earliest CD4 cell count of 350 cells per \u03bcL). The vertical gray line separates the factors associated with lower $R_{0}$ (left; effect factor $<1$) and from the factors contributing to higher $R_{0}$ (right; effect factor $>1$). The black points on this line refer to the reference transmission chain. The colored and dark gray lines represent the effect sizes from multivariate model (black circles depicting the estimates) for different factors and their $95%$-confidence intervals. The corresponding $p$-values are shown in the rightmost column. FUP, follow-up visit.\n\nThese trends remained robust (Figure 4) when allowing the covariables to enter the model non-linearly (for instance as polynomials like in the case of the time trend above). The final multivariate model identified subtype, establishment date of the transmission chain, frequency of reporting sex with occasional partner and time to diagnosis of the index case as the significant risk factors associated with $R_{0}$ (see Selection of the predictive models). Allowing nonlinear terms for the time to diagnosis provided better goodness-of-fit than the linear model. The steep increase of $R_{0}$ in the early/acute phase (see Figure 4) of the infection indicates the importance of early diagnosis (which is nowadays closely related to early treatment initiation) while the time becomes less relevant in the cases diagnosed late in the chronic phase.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28721/elife-28721-fig4-v2.jpg)\n\n**Figure 4.:** Final multivariate model\u2019s profile plots of factors associated with the basic reproductive number $R_{0}$.The vertical dotted lines depict the reference transmission chain (of subtype B, started on 1.1.1996, in which the observed index case did not report having sex with occasional partner and was diagnosed after 3 years after the infection). The left $y$-axis represents the basic reproductive number whereas the right $y$-axis corresponds to the relative values of $R_{0}$ as compared to the baseline $R_{0}$. The $R_{0}$ as the function of specific factor (with the other factors held fixed at the reference value) is displayed by the colored (for HIV-1 subtype) and the dark gray (establishment date, sexual risk behavior and time to diagnosis) lines. The vertical bars and the shaded bands, respectively, correspond to the $95%$-confidence intervals.\n\n## Discussion\n\nOur approach demonstrates that viral sequences combined with basic demographic information can be successfully used not only to estimate the basic reproductive number $R_{0}$ of HIV in a subcritical setting and thereby assess the danger of a generalized HIV epidemic but also to shed light on the trends and other determinants of viral transmission. As a proof of concept, this approach was applied to HIV transmission in Swiss heterosexuals, for which we found an $R_{0}$ far below the epidemic threshold with a decreasing time trend - indicating a low and decreasing danger of a generalized epidemic. Even though the Swiss HIV epidemic is captured in outstanding detail and representativeness by the SHCS, our approach can be easily used in other non-self-sustained epidemics since viral sequences from genotypic resistance testing are nowadays routinely produced in most resource-rich settings. Moreover, the generalizability of our approach might be broadened to other settings and viruses due to the increased availability of viral sequences boosted by decreasing sequencing costs and the ability of the method to adjust for imperfect sampling.\n\nTo our knowledge our study represents the first systematic assessment of the basic reproductive number for subcritical HIV transmission among heterosexuals, which makes it difficult to compare our results to other estimates. In addition, it was conducted in one of the most densely sampled settings. Most of the studies investigated the transmission route composition of larger transmission clusters across different B and non-B subtypes (Esbj\u00f6rnsson et al., 2016; Chaillon et al., 2017;\u00a0Ragonnet-Cronin et al., 2016; Sallam et al., 2017; Kouyos et al., 2010; von Wyl et al., 2011), or focused on homosexual men or injecting drug users as the main drivers of HIV transmission (Amundsen et al., 2004). Stadler et al. (2012) previously presented a birth-death process based analysis of HIV transmission in Switzerland. However, since this approach is restricted to sufficiently large clusters, it is not suitable for subcritical settings and might potentially overestimate $R_{0}$ due to selection bias. Hence, our approach, which is tailored to subcritical viral transmission, is complementary to theirs. Among other studies specific for heterosexual populations, Hughes et al. (2009) focused on the clusters of size at least $2$ across non-B subtypes, and Xiridou et al. (2010) studied the impact of sexual behavior of migrants on the HIV prevalence, while none of them directly assessed the danger of self-sustained epidemics.\n\nEpidemiological differences between the HIV-1 subtypes, especially between B and non-B subtypes, have been pointed out previously (Kouyos et al., 2010; von Wyl et al., 2011). Yet the exact factors contributing to the differences are difficult to identify. On the one hand, the non-B subtypes are often seen in relation to the infections imported from abroad, which could be introduced either by immigrants or by residents who got infected while temporarily abroad. A proportion of these introductions could be attributed to the sex tourism (Rogstad, 2004). However, even the differences between the various non-B subtypes could be substantial, as they represent different epidemiological settings. For instance, the CRF01_AE is often found in Asians and it also most likely originates from Southeastern Asia (Angelis et al., 2015), while subtypes originating from Africa, such as CRF02_AG (Mir et al., 2016), are frequently found in people of black ethnicity. Additionally, poverty and different policies regulating prostitution worldwide also have an impact on the transmission patterns, like on rate of condom use, access to HIV testing and treatment (Shannon et al., 2015). On the other hand, disentangling the effect of different epidemiological characteristics and even of the strains remains challenging, as $R_{0}$ was significantly affected by the HIV subtype even in the multivariate model (Figure 3).\n\nOne of the key components of our model is the index case relative transmission potential $\u03c1_{index}$, which is also associated with some degree of uncertainty. To illustrate its role and influence on the transmission parameters we performed a range of sensitivity analyses (Appendix 1\u2014figure 1). On the one hand, omitting the reduced transmissibility of the index case, that\u00a0is, assuming $\u03c1_{index}=1$, leads to largely underestimated $R_{0}$ (overall $R_{0}$ of $0.33$, $95%$-CI $0.31$\u2014$0.35$) affirming the importance of this extension. Then again, the concrete value chosen may be debatable, especially due to arguable infectivity in chronic phase (studied by Bellan et al., 2015); thus a small $\u03c1_{index}$ can be caused both by immigration later during chronic infection and by elevated infectivity in the acute phase. To address this issue we lowered the $\u03c1_{index}$ for the transmission chains of non-Swiss origin to $0.25$ to obtain a more conservative estimate of $R_{0}$, which was, nevertheless, still safely below $1$ ($0.47$, $95%$-CI $0.44$\u2014$0.49$). Furthermore, even though theoretically the transmission potential of some index cases could also be enhanced (i.e., $\u03c1_{index}>1$), for instance for sex workers, we do not expect that this is the case for many transmission chains and would therefore have only marginal effect on our estimates. Besides, since a $\u03c1_{index}>1$ would lead to even lower $R_{0}$, our main conclusions would not change (in fact, the assumption of $\u03c1_{index}<1$ is conservative with respect to our conclusion of $R_{0}<1$).\n\nThe presented model is based on source-sink dynamics, which is reflected in the importance of the index case and its immigration background, while the role of emigration is neglected. However, in many resource-rich settings similar source-sink patterns can be observed, both in the migration related influxes and the new virus introductions in the heterosexual population from other risk groups. Namely, the immigration from a setting with a generalized epidemic to a setting with a concentrated epidemic is by far more likely than the emigration. Similarly, occasional spillovers from other risk groups, such as MSM and IDU, to the generalized population are more probable than the reverse. Therefore, the assumption of absence of such outflow from the epidemiological setting under consideration is not problematic when considering a country like Switzerland, but might present a potential limitation if the unit of interest is smaller, like a region or a city.\n\nOur approach has theoretically several limitations, which we, however, expect to have only moderate impact. First, we assumed stuttering transmission chains, or in other words, that the basic reproductive number $R_{0}$ is below $1$. If $R_{0}$ was larger than $1$ the observed transmission chains would have been much longer (see Sensitivity\u00a0analyses\u00a0and Appendix 1\u2014figure 5) which is inconsistent with rather small clusters observed in HIV transmission among Swiss heterosexuals (Kouyos et al., 2010;\u00a0von Wyl et al., 2011 and Shilaih et al., 2016). Second, some transmission chains might still be active, meaning that some patients from the chain could be still infectious and therefore able to further spread the virus. The consequence of this would be an underestimation of $R_{0}$ for recent years. However, given much higher transmissibility of HIV in the acute and recent infection (Marzel et al., 2016) and estimated mean time to being non-infectious of approximately $2$\u2014$2.5$ years in recent years (Stadler et al., 2012; Hughes et al., 2009) the majority of the observed transmission chains had most likely been stopped by the time of sampling and hence we do expect that this issue will not lead to a major bias of our estimates (see Sensitivity\u00a0analyses\u00a0and Appendix 1\u2014figure 4). Third, since our method is based on transmission clusters their misidentification and negligence of their structure could be another constraint. Possible overlapping transmission chains (as it was also noted in Blumberg and Lloyd-Smith, 2013b), that\u00a0is, misidentifying two transmission chains resulting from two separate introductions of closely related viruses as one single chain, represent the biggest concern in this regard. Failing to identify separate clusters would lead to a higher $R_{0}$ estimate. However, this means that our method will tend to overestimate $R_{0}$ and is hence conservative with respect to its main aim of assessing the danger of self-sustained epidemics; thus, if the method predicts an $R_{0}$ strongly below $1$, the corresponding epidemic will indeed be far away from being self-sustained. Moreover, our method neglects the transmission chain structure and consequently uses only the aggregated number of infections, and assumes the same $R_{0}$ for the entire chain except for the index case. Yet, this issue is likely to have a weak impact, since we focus on subcritical transmission; the transmission chains are hence short (see Table\u00a01), and their structure conveys only limited information. Indeed, although a huge variation in sexual behavior has been shown previously (Liljeros et al., 2001), our sensitivity analyses exhibited no major impact of varying sexual risk behavior on risk determinants (Sensitivity\u00a0analyses\u00a0and Appendix 1\u2014figure 6). Finally, even though the negative binomial model was proposed as the favorable choice for the offspring distribution compared to the Poisson distribution (Blumberg and Lloyd-Smith, 2013b) we did not observe any significant differences in the $R_{0}$ estimates (see Sensitivity\u00a0analyses\u00a0and Appendix 1\u2014figure 7). On the contrary, due to the simplicity of the Poisson distribution we managed to integrate the index case transmission potential reduction and the heterogeneity between the transmission chains into our Poisson-based model in a more systematic manner through the observed variability of the demographic characteristics.\n\n### Conclusion\n\nGenerally, our approach allows the assessment of the danger of a concentrated epidemic to become generalized based on the viral sequence data. We demonstrated this approach for the case of heterosexual HIV transmission in Switzerland. In particular, even though the study highlighted some heterogeneity between the HIV subtypes, our findings indicate that there is no imminent danger of a self-sustained epidemic among Swiss heterosexuals, but rather diminishing HIV transmission far below the epidemic threshold. Hence, the HIV epidemic in Switzerland is and most likely will remain restricted to high risk core groups, especially MSM. Moreover, the results suggest that integrated prevention measures in Switzerland taken over time were successful within the heterosexual population.\n\n## Materials and methods\n\nWe combined a phylogenetic cluster detection approach to identify transmission chains in the population under consideration with an adapted version of the model developed in Blumberg and Lloyd-Smith (2013a) to infer the basic reproductive number $R_{0}$ (Figure 5). In particular, we accounted for both imperfect detection (included in Blumberg and Lloyd-Smith, 2013a) and modified transmissibility of the index case (not included in Blumberg and Lloyd-Smith, 2013a) from the perspective of the setting under consideration because it enters the population only (late) in chronic infection \u2013 e.g., via immigration. Moreover, we included the baseline transmission chain characteristics (such as HIV-1 subtype, date of infection, time to diagnosis, risky sexual behavior, etc.) to explain the heterogeneity among transmission chains. Note that our approach in principle estimates the effective reproductive number defined as the number of secondary infections for the current state of population; however, in case of a non-self-sustained epidemic with low prevalence, the vast majority of the population is susceptible and hence the effective reproductive number is a very good approximation for the basic reproductive number.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28721/elife-28721-fig5-v2.jpg)\n\n**Figure 5.:** (i): HIV transmission among heterosexuals in Switzerland (white arrow) has never led to a self-sustained epidemic. However, the unknown potential of imported infections (black arrows) either from abroad or from other transmission groups in Switzerland remains a large concern. (ii): The HIV transmission chains corresponding to Swiss heterosexuals (depicted in red) were identified from the phylogenetic tree containing the SHCS and background viral sequences. (iii): Our mathematical model is based on\u00a0the discrete-time branching process with nodes of three different types: sampled Swiss infection (red), unsampled Swiss infection (light red) and foreign infection infected by a Swiss index case before moving to Switzerland (green). (iv): Our method for inferring $R_{0}$ accounts for both imperfect sampling and modified transmission potential of the index case. (v): Moreover, it includes the baseline transmission chain characteristics to assess the determinants of $R_{0}$.\n\n### SHCS and viral sequences\n\nThe SHCS is a multicenter, nationwide, prospective observational study of HIV infected individuals in Switzerland, established in 1988 (Swiss HIV Cohort Study et al., 2010). The SHCS was approved by the ethics committees of the participating institutions (Kantonale Ethikkommission Bern, Ethikkommission des Kantons St. Gallen, Comite Departemental d\u2019Ethique des Specialites Medicales et de Medicine Communataire et de Premier Recours, Kantonale Ethikkommission Z\u00fcrich, Repubblica e Cantone Ticino\u2013Comitato Ethico Cantonale, Commission Cantonale d\u2019\u00c9tique de la Recherche sur l\u2019\u00catre Humain, Ethikkommission beiderBasel; all approvals are available on http://www.shcs.ch/206-ethic-committee-approval-and-informed-consent), and written informed consent was obtained from all participants. Up to December 2016 over $19,500$ patients have been enrolled. The SHCS is highly-representative as it covers more than $75%$ HIV-positive individuals on antiretroviral therapy (ART) in Switzerland (Swiss HIV Cohort Study et al., 2010). In addition to the extensive demographic and clinical data collected at biannual/quarterly follow-up (FUP) visits, for approximately $60%$ of the patients at least one partial pol sequence from the genotypic resistance testing is available (in total $22,036$ sequences from the SHCS resistance database until August 2015). The patients with heterosexual contact as the most likely transmission route comprise about one third of all SHCS participants.\n\n### Phylogenetic tree\n\nThe phylogenetic tree was constructed from the Swiss HIV sequences of the SHCS patients and non-Swiss background sequences exported from the Los Alamos National Laboratory, 2016 database ($241,783$ HIV-1 viral sequences of any subtype and including the circulating recombinant forms 01\u201374 retrieved on February 23rd, 2016 spanning over the protease and RT regions with fragments of at least $250$ nucleotides; the HXB2 sequence and sequences from Switzerland were removed afterwards). The sequences of $8$ HIV-1 subtypes and circulating recombinant forms (B, C, CRF01_AE, CRF02_AG, A(1-2)), G, D and F(1-2)) were pairwise aligned to the reference genome HXB2 (accession number K03455) using Muscle v3.8.31 (Edgar, 2004). Sequences with insufficient sequencing quality of the protease region (coverage of less than $200$ nucleotides between the positions $2253$ and $2549$ of HXB2) or reverse transcriptase region (less than $500$ nucleotides between positions $2550$ and $3869$) were excluded. Using the earliest available of the remaining sequences for each patient, the phylogenetic tree was built with the FastTree algorithm under the generalized time-reversible model of nucleotide evolution (Price et al., 2009) including $10,840$ SHCS and $90,933$ background sequences.\n\n### Transmission chains\n\nThe Swiss heterosexual transmission chains were defined as clusters in the phylogenetic tree containing exclusively Swiss HIV sequences from individuals with heterosexual contact as the most likely route of the transmission, regardless of the respective genetic distances and local support values (see Sensitivity\u00a0analyses\u00a0and Appendix 1\u2014figure 8 for alternative definition). The transmission chains and the patients enrolled in the SHCS forming them were identified with custom written functions in R (version 3.3.2).\n\nFor each transmission chain we determined if it was introduced to the Swiss HIV heterosexuals either as an imported infection from abroad or from other HIV transmission groups within Switzerland. The geographic origin for a given chain was obtained as the country of the closest sequence, which did not belong to Swiss heterosexuals. Specifically, we considered the smallest clade that contained both the transmission chain and either a non-Swiss or non-heterosexual sequence, and chose the sequence with the smallest pairwise genetic distance to the transmission chain (with respect to the Jukes and Cantor (JC69) model).\n\nAdditionally, in each extracted transmission chain the observed index case was identified as the patient with the earliest estimated date of infection in the chain. The date of HIV infection for each single individual was imputed with the model described by Taff\u00e9 et al. (2008) if the patient had enough CD4 cell count measurements before the ART initiation and the estimated date of infection fell within the seroconversion window; otherwise the midpoint of the seroconversion window was used. The demographic characteristics (Table 2) of the index case were extracted from the SHCS, including age at infection, time to diagnosis, first available CD4 cell count and sexual risk behavior. The latter was quantified as the fraction of semiannual follow-up visits at which the patient reported sex with occasional partners. The patients with no available questionnaire regarding the sexual risk behavior were assumed to have never reported on having sex with occasional partner (see Sensitivity analyses and Appendix 1\u2014figure 9 for the corresponding sensitivity analysis). The characteristics of the index case were then used to define the features of each corresponding transmission chain.\n\n### Estimating the basic reproductive number from a model\n\nOur model is based on the basic discrete-time branching process. The basic reproductive number $R_{0}$ was inferred from the model as the expected number of offsprings, therefore the offspring distribution represents the crucial component of the chain size distribution model. In the following sections we describe the main extensions of the basic branching process theory, which were implemented in our model. The detailed derivations can be found in\u00a0Appendix\u00a03.\n\n#### Offspring distribution\n\nWe modeled the offspring distribution in a transmission chain using a Poisson distribution, which is a special case of the negative binomial distribution. The latter has been suggested in the literature (Blumberg and Lloyd-Smith, 2013b) in order to infer $R_{0}$; however since we did not observe any large differences between the two distributions (see Sensitivity\u00a0analyses\u00a0and Appendix 1\u2014figure 7), we decided to use the simpler Poisson model.\n\nSuppose that $R_{k,n}$ denotes the number of secondary infections of transmission degree $n$ caused by the $k$th individual from the preceding generation (i.e., infected individuals with transmission degree $n-1$), where the transmission degree refers to the number of transmissions needed to transfer the pathogen from the index case (see Appendix\u00a03 for detailed model description). Under the Poisson offspring distribution the number of secondary infections is modeled by\n\n$$\nR_{k,n}\u223cPois\u2061(R_{0}),\n$$\n\nwhich coincides with the definition of the basic reproductive number $R_{0}=\ud835\udd3c\u2062[R_{k,n}]$. Some index cases may have lower transmission potential, e.g., immigrants that arrive during their chronic infection phase, while other index cases may exhibit enhanced transmissibility, for example, sex workers or foreigners living in Switzerland without a partner. To capture a potentially modified transmissibility of the index case we assumed a different offspring distribution of the root, namely\n\n$$\nR_{1,0}\u223cPois\u2061(\u03c1_{index}\u2062R_{0}),\n$$\n\nwhere $\u03c1_{index}$ denotes the index case relative transmission potential.\n\nTo assess the trends and determinants of $R_{0}$, we further extended the offspring distribution based on the baseline characteristics $\ud835\udc31$ of the transmission chain. More precisely, we assumed that the logarithm of $R_{0}$ can be linearly described by the chain characteristics which resulted in the offspring distributions\n\n$$\nR_{k,n}\u223cPois\u2061(exp\u2061(\\beta^{T}x))andR_{1,0}\u223cPois\u2061(\u03c1_{index}exp\u2061(\\beta^{T}x))\n$$\n\nfor the secondary and the index cases, respectively. Hence, the $R_{0}$ can be predicted from the effect sizes $\\beta$ of factors $\ud835\udc31$ as\n\n$$\nR_{0}=exp\u2061(\ud835\udf37^{\ud835\uddb3}\u2062\ud835\udc31).\n$$\n\nNote that since each transmission chain $i$ has its specific baseline characteristics $\ud835\udc31_{i}$ (perhaps even sampling density $p_{i}$ and index case relative transmission potential $\u03c1_{index,i}$) the notation above represents a simplification. More precisely, the $R_{0}$ of the $i$th transmission chain equals $R_{0,i}=exp\u2061(\\beta^{T}x_{i})$.\n\n#### Likelihood function\n\nThe likelihood function was expressed in terms of the probability generating function (PGF) of the transmission chain size distribution assuming independent and stuttering (i.e., $R_{0}<1$ assures that each transmission chain goes extinct almost surely) transmission chains. The following assumptions were made when incorporating the incomplete sampling of the sequences:\n\nLet $T$ denote the true size of a transmission chain and $T~$ the size of the corresponding observed transmission chain. The above two assumptions can be summarized as\n\n$$\nT~\u2223T\u223cBin(T,p),\n$$\n\nand the PGF $\ud835\udcaf~$ of the observed transmission chain size hence equals\n\n$$\n\ud835\udcaf~\u2062(z;R_{0},\u03c1_{index},p)=\ud835\udcaf\u2062((1-p)+p\u2062z;R_{0},\u03c1_{index})\n$$\n\nin terms of the PGF $\ud835\udcaf$ of $T$. The probability that a transmission chain has observed size of $t~\\geq0$ (where $t~=0$ means that none of the cases of the transmission chain is detected) is given by\n\n$$\n\u2119[T~=t~]=\\frac{1}{t~!}\ud835\udcaf~^{(t~)}(0;R_{0},\u03c1_{index},p).\n$$\n\nIn particular, the probability that a transmission chain is observed (i.e., the observed size is strictly positive) can be calculated as\n\n$$\n\u2119[T~>0]=1-\u2119[T~=0]=1-\ud835\udcaf~(0;R_{0},\u03c1_{index},p).\n$$\n\nHowever, since only the transmission chains with at least one detected case can be extracted from the phylogeny (and therefore to account for the unobserved transmission chains) we are interested in the probability that an observed transmission chain has a specific size. The probability of observing a transmission chain of size $t~>0$ is\n\n$$\n\u2119[T~=t~|T~>0]=\\frac{\u2119[T~=t~]}{\u2119[T~>0]}=\\frac{1}{t~!}\\frac{\ud835\udcaf~^{(t~)}\u2062(0;R_{0},\u03c1_{index},p)}{1-\ud835\udcaf~\u2062(0;R_{0},\u03c1_{index},p)}.\n$$\n\nFinally, for a set of independent observed transmission chain sizes ${t~_{i}}_{i=1}^{I}$ the likelihood function equals\n\n$$\nL(R_{0}|{t~_{i}}_{i=1}^{I},\u03c1_{index},p)=\\prodi=1I\\frac{1}{t~_{i}!}\\frac{\ud835\udcaf~^{(t~_{i})}\u2062(0;R_{0},\u03c1_{index},p)}{1-\ud835\udcaf~\u2062(0;R_{0},\u03c1_{index},p)}\n$$\n\nif the same $R_{0}$, $\u03c1_{index}$ and $p$ are assumed for all transmission chains. For transmission chains with different baseline characteristics and different parameters, the generalized likelihood function is\n\n$$\nL(\ud835\udf37|{t~_{i},\ud835\udc31_{i},\u03c1_{index,i},p_{i}}_{i=1}^{I})=\\prodi=1I\\frac{1}{t~_{i}!}\\frac{\ud835\udcaf~^{(t~_{i})}\u2062(0;exp\u2061(\ud835\udf37^{\ud835\uddb3}\u2062\ud835\udc31_{i}),\u03c1_{index,i},p_{i})}{1-\ud835\udcaf~\u2062(0;exp\u2061(\ud835\udf37^{\ud835\uddb3}\u2062\ud835\udc31_{i}),\u03c1_{index,i},p_{i})}.\n$$\n\n### Model fit\n\nThe maximum likelihood (ML) estimator for $\ud835\udf37$, the predictor for $R_{0}$ and the corresponding statistics (confidence intervals, $p$-values, etc.) were implemented in the R package PoisTransCh (Turk, 2017, https://github.com/tejaturk/PoisTransCh; copy archived at https://github.com/elifesciences-publications/PoisTransCh). The provided confidence intervals are the Wald-type $95%$-confidence intervals (see Sensitivity\u00a0analyses\u00a0for the comparison against different types) and the $p$-values are based on the Wald statistic. Initially, we assessed the impact of covariables potentially associated with HIV transmission. Specifically, we considered HIV-1 subtype, establishment date of the transmission chain (i.e., the earliest estimated date of infection in the transmission chain), reported sex with occasional partner, age at infection, first measured CD4 cell count and time to diagnosis of the index case. Final model selection was carried out by the forward selection and backward elimination algorithms based on the Akaike and Bayesian information criterion (AIC and BIC, respectively). The detailed steps are provided in Selection of the predictive models.\n\n### Datasets\n\nPreviously published datasets from \u200bKouyos et al. (2010) and \u200bvon Wyl et al. (2011) were used in this study. As previously discussed in these publications, due to the large sampling density this data would, in principle, allow for the reconstruction of entire transmission networks and could thereby endanger the privacy of the patients. This is especially problematic because HIV-1 sequences frequently have been used in court cases. Therefore, a random subset of 10% of the sequences are accessible via GenBank. These accession numbers are as follows: GU344102-GU344671, EF449787, EF449788, EF449796, EF449798, EF449828, EF449829, EF449838, EF449844, EF449852, EF449853, EF449854, EF449860, EF449880, EF449883, EF449889, EF449895, EF449901, EF449904, EF449905, EF449917, EF449921, EF449928, EF449930, EF449943, EF449950, EF449960, EF449971, EF449980, EF449987, EF450004, EF450005, EF450011, EF450024, EF450026, GQ848113, GQ848120, GQ848140, GQ848145, GQ848149, JF769777-JF769851\n",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "e82d4e20-19d1-457a-b787-f87f4d8e1980",
+      "submission_id": "2b31a80f-d89c-46db-88f3-3c34f12799cc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ryosuke Omori, Hokkaido University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28721.028](https://doi.org/10.7554/eLife.28721.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Assessing the danger of self-sustained HIV epidemics in heterosexuals by population based phylogenetic cluster analysis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Ryosuke Omori (Reviewer #1) served as Guest Editor, and the evaluation has been overseen by Prabhat Jha as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dimitrios Paraskevis (Reviewer #2); Nico Nagelkerke (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors developed a new method for estimating epidemiological parameters e.g., R0, using viral sequences sampled from patients, via estimating infection tree per each cluster in phylogenetic tree. Using the model they assessed the risk of a generalized heterosexual HIV epidemic in Switzerland. They find that the basic reproduction number is well below 1 they conclude that this risk is negligible.\n\nEssential revisions:\n\nThe robustness of the results should be assessed with relaxing the several biological assumptions assumed by the authors. 1) If the first CD4 count (must have been taken before ART initiation) is 310 (median, some even <200 and thus having AIDS) it is questionable whether the assumption of patient becoming non-infectious after 2-2.5 years is realistic. 2) The high acute phase infectivity of HIV has been challenged (e.g. Bellan et al., 2015), this also should be mentioned and considered in the analysis.\n\nSince index cases may differ substantially from other cases (e.g. foreigners in Switzerland without their partner, moving frequently between places), \u03c1index may well exceed 1.\n\nIt is not entirely clear whether \u2013 when considering missing patients \u2013 the case of a missing index case without \"offspring\" (i.e., no patient is observed at all) is considered.\n\nThe authors assume that the number of secondary infections follows the same distribution regardless of the transmission degree (subsection \u201cProbability generating function of a completely observed uniform transmission chain\u201d). This assumption means that the sexual behaviors are similar among hetero-sexual population whereas the field data of sexual behavior shows huge variation (e.g., Liljeros et al., 2001).\n\nRegarding the estimate for confidence intervals, it is not clear whether the distribution of ML estimator can be approximated by normal distribution or not due to small sample size. If the authors will not apply Wald approximation, the width of confidence interval may change.\n\nThe point estimates of R0 shown in the lower panel of Figure 2 (black dot) are likely to be increased since 2009 although the authors' model predicts monotonic decrease. Why does this discrepancy happen? The authors' model predicts HIV will go extinct around 2020, however, this prediction may be optimistic if the predictive model lacks some critical factors.\n",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "abbb3975-cf89-4648-b182-de568e2d61cc",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C1",
+      "claim": "The Swiss HIV Cohort Study (SHCS) is a multicenter, nationwide, prospective observational study of HIV infected individuals in Switzerland, established in 1988.",
+      "claim_type": "EXPLICIT",
+      "source": "The SHCS is a multicenter, nationwide, prospective observational study of HIV infected individuals in Switzerland, established in 1988 (Swiss HIV Cohort Study et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Swiss HIV Cohort Study et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "d620013c-34af-43f0-9447-581cdce819d6",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C2",
+      "claim": "Up to December 2016 over 19,500 patients have been enrolled in the SHCS.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to December 2016 over 19,500 patients have been enrolled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of enrollment numbers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "6651ba4c-49f1-4f45-8241-070807627977",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C3",
+      "claim": "The SHCS covers more than 75% HIV-positive individuals on antiretroviral therapy (ART) in Switzerland.",
+      "claim_type": "EXPLICIT",
+      "source": "The SHCS is highly-representative as it covers more than 75% HIV-positive individuals on antiretroviral therapy (ART) in Switzerland (Swiss HIV Cohort Study et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Swiss HIV Cohort Study et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "1b41cbab-6156-498a-b691-217566a92e67",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C4",
+      "claim": "For approximately 60% of the SHCS patients at least one partial pol sequence from the genotypic resistance testing is available.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the extensive demographic and clinical data collected at biannual/quarterly follow-up (FUP) visits, for approximately 60% of the patients at least one partial pol sequence from the genotypic resistance testing is available (in total 22,036 sequences from the SHCS resistance database until August 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of sequence availability with specific numbers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "e7f7703a-3375-4aec-b8b6-86db9623fe54",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C5",
+      "claim": "The patients with heterosexual contact as the most likely transmission route comprise about one third of all SHCS participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The patients with heterosexual contact as the most likely transmission route comprise about one third of all SHCS participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of proportion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "96244b59-3bab-45b3-a446-ce2c49e3254b",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C6",
+      "claim": "3,100 transmission clusters among heterosexuals in the SHCS were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 3,100 transmission clusters among heterosexuals in the SHCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of identified clusters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "64522537-09f6-47b4-b67b-89276d121395",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C7",
+      "claim": "The transmission clusters among heterosexuals in the SHCS were small in size.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters were small in size (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Table 1 showing cluster size distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "fd6ae143-9235-4a9a-b65a-7def0f2bb526",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C8",
+      "claim": "1,133 transmission chains were classified as being of Swiss origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the most likely geographic origin of the transmission clusters, we classified 1,133 transmission chains as being of Swiss origin, that is, to represent introductions from other transmission groups in Switzerland into the heterosexual population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of classification results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8ca678c7-879b-4df4-b2cb-d7b8f2c52b0f",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C9",
+      "claim": "1,967 transmission chains were classified as being of non-Swiss origin.",
+      "claim_type": "EXPLICIT",
+      "source": "and 1,967 to be of non-Swiss origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of classification results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "952d6ea3-e786-4ecf-a88b-3a4aa58a7aaf",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C10",
+      "claim": "For transmission chains of non-Swiss origin, the R0 of the index case was reduced by a factor of \u03c1index=0.35.",
+      "claim_type": "EXPLICIT",
+      "source": "For these latter transmission chains, we assumed that the R0 of the index case was reduced by a factor of \u03c1index=0.35 (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of model assumption",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "1852481f-94ef-4dac-9937-229761c835ca",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C11",
+      "claim": "The subtype-depending sampling probabilities were fixed based on the results from the study by Shilaih et al. (2016), corrected by the proportion of the HIV infected individuals linked to care (80% based on Kohler et al., 2015) and the fraction of heterosexuals from the SHCS with an HIV sequence in the phylogenetic tree (57.22%).",
+      "claim_type": "EXPLICIT",
+      "source": "To take into account the imperfect sampling density we fixed the subtype-depending sampling probabilities based on the results from the study by Shilaih et al. (2016), corrected by the proportion of the HIV infected individuals linked to care (80% based on Kohler et al., 2015) and the fraction of heterosexuals from the SHCS with an HIV sequence in the phylogenetic tree (57.22%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shilaih et al., 2016 and Kohler et al., 2015, with specific percentages provided",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "99d3f079-3516-49da-b6ab-3d222c2f904e",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C12",
+      "claim": "The overall R0 for HIV transmission in Swiss heterosexuals is estimated to be 0.44 (95%-confidence interval 0.42\u20140.46).",
+      "claim_type": "EXPLICIT",
+      "source": "In this baseline model the R0 was estimated to be 0.44 (95%-confidence interval (CI) 0.42\u20140.46).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical estimate with confidence interval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "98bb2ea1-aa93-4a9d-9586-2218a2c4cb9e",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C13",
+      "claim": "The R0 for HIV transmission in Swiss heterosexuals is clearly below 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that R0 was clearly below 1 (p-value <0.001 from one-sided Wald hypothesis testing H0:R0=1 against the alternative HA:R0<1) indicated that HIV transmission is far away from a self-sustained epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical testing with p-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "cb049884-6861-4f26-95d0-b07b948e15d3",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C14",
+      "claim": "HIV transmission among Swiss heterosexuals is far away from a self-sustained epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that R0 was clearly below 1 (p-value <0.001 from one-sided Wald hypothesis testing H0:R0=1 against the alternative HA:R0<1) indicated that HIV transmission is far away from a self-sustained epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on R0 being significantly below 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c2566f8b-81d8-451d-b999-1c709ddbebf9",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C15",
+      "claim": "Subtype B has an estimated R0 of 0.35 (95%-CI 0.33\u20140.39).",
+      "claim_type": "EXPLICIT",
+      "source": "The subtype-stratified analyses indeed yielded lower R0 of 0.35 (95%-CI 0.33\u20140.39) for subtype B as compared to the non-B subtypes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of statistical estimate with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "98592dbd-9267-4fea-86b2-50d72ee8160a",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C16",
+      "claim": "CRF02_AG has the highest estimated R0 of 0.62 (95%-CI 0.56\u20140.69) among all subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant form CRF02_AG had the highest estimated R0 of 0.62 (95%-CI 0.56\u20140.69).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical estimate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "e367fbeb-0230-4790-9f48-a5a0b69e8d94",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C17",
+      "claim": "All HIV subtypes have R0 estimates significantly below 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these differences among the R0 estimates for different subtypes they were all significantly below 1 (with all p-values from the one-sided test smaller than 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical testing with p-values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "64cc3eba-8238-48e7-94b9-549237734c88",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C18",
+      "claim": "There is no danger of a self-sustained HIV epidemic in Swiss heterosexuals of any HIV subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we concluded that there is no danger of a self-sustained HIV epidemic in Swiss heterosexuals of any HIV subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on all subtypes having R0 significantly below 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "7fe65615-18cd-47bc-b560-b12a13071813",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C19",
+      "claim": "The overall R0 is decreasing at a factor 0.89 per 10 years (95%-CI 0.83\u20140.96).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overall the R0 is decreasing at a factor 0.89 per 10 years (95%-CI 0.83\u20140.96).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical estimate from univariate model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c3304aee-614b-489d-a836-a7ffe2c1b53c",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C20",
+      "claim": "The per subtype-stratified analyses showed consistently decreasing time trend among the subtypes ranging from factor 0.65 per 10 years for subtype A to 0.89 for B-subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "The per subtype-stratified analyses showed the consistently decreasing time trend among the subtypes ranging from factor 0.65 per 10 years for subtype A to 0.89 for B-subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of stratified analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "14fa09dd-c315-4bcf-b6d6-11cf4c578ee7",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C21",
+      "claim": "A cubic spline (without the linear term) was identified as the optimal model for R0 time trend according to the Bayesian information criterion (BIC).",
+      "claim_type": "EXPLICIT",
+      "source": "With the reference date on the 1st of January 1996 (which corresponds to the median estimated date of infection - see Table 2) a cubic spline (without the linear term) was identified as the optimal model according to the Bayesian information criterion (BIC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of model selection result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "bc67c3f0-fed5-455c-b92c-601d123f2002",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C22",
+      "claim": "The cubic spline model exhibits a mild increase of the R0 from the mid 1980's to the mid 1990's.",
+      "claim_type": "EXPLICIT",
+      "source": "This model exhibits a mild increase of the R0 from the mid 1980's to the mid 1990's",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of model results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "0d66f76f-2ffc-4e23-ae72-359020be15f2",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C23",
+      "claim": "The peak-R0 of 0.49 (95%-CI 0.46\u20140.53) was reached in 1996.",
+      "claim_type": "EXPLICIT",
+      "source": "with a peak-R0 of 0.49 (95%-CI 0.46\u20140.53) reached in 1996",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical estimate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c0747e2e-fbbb-49ed-8210-ad8cab406427",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C24",
+      "claim": "The time of peak-R0 coincided with the introduction of highly active antiretroviral therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the time of peak-R0 coincided with the introduction of highly active antiretroviral therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal association noted between peak R0 and HAART introduction",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c2ba4474-9df1-4c9c-a855-125e5f000465",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C25",
+      "claim": "Shortly after the peak-R0 in 1996, the R0 started to rapidly decrease and has never rebounded.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly after the R0 started to rapidly decrease and has never rebounded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of trend observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "28193e44-11f9-423b-9737-6187fc68514c",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C26",
+      "claim": "All non-B subtypes have higher R0 compared to subtype B.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest model containing only the linear terms of risk factors showed that the R0 is decreasing with the establishment date of the transmission chain and that all non-B subtypes have higher R0 compared to subtype B",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of multivariate model results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "0b98f90c-4da2-4714-bfd5-83775f6a1621",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C27",
+      "claim": "Reporting sex with occasional partners is associated with higher R0.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that reporting sex with occasional partners and longer time to HIV diagnosis of the index case are associated with higher R0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of multivariate model results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "324ddda3-b40b-4330-a6cb-aa102b37f977",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C28",
+      "claim": "Longer time to HIV diagnosis of the index case is associated with higher R0.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that reporting sex with occasional partners and longer time to HIV diagnosis of the index case are associated with higher R0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of multivariate model results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "b7ddef75-a035-4b96-be98-151b40ade47e",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C29",
+      "claim": "The earliest CD4 cell count does not have significant effects on R0.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the earliest CD4 cell count and the age do not have significant effects (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of multivariate model results with reference to Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "12dc11c4-11cf-463a-a482-051332e748a1",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C30",
+      "claim": "Age does not have significant effects on R0.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the earliest CD4 cell count and the age do not have significant effects (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of multivariate model results with reference to Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "06166bc9-d430-47aa-9003-0aac14cb0f19",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C31",
+      "claim": "The final multivariate model identified subtype, establishment date of the transmission chain, frequency of reporting sex with occasional partner and time to diagnosis of the index case as the significant risk factors associated with R0.",
+      "claim_type": "EXPLICIT",
+      "source": "The final multivariate model identified subtype, establishment date of the transmission chain, frequency of reporting sex with occasional partner and time to diagnosis of the index case as the significant risk factors associated with R0 (see Selection of the predictive models).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of final model results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "a62b9f5b-fa6b-4b59-b7cb-427fd8e276fc",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C32",
+      "claim": "There is a steep increase of R0 in the early/acute phase of the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The steep increase of R0 in the early/acute phase (see Figure 4) of the infection indicates the importance of early diagnosis",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from Figure 4 showing nonlinear relationship",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "62b953b0-8d5f-40e4-b090-0a5c5063bfe0",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C33",
+      "claim": "The steep increase of R0 in the early/acute phase of infection indicates the importance of early diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The steep increase of R0 in the early/acute phase (see Figure 4) of the infection indicates the importance of early diagnosis (which is nowadays closely related to early treatment initiation) while the time becomes less relevant in the cases diagnosed late in the chronic phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from the observed relationship in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "e2c939fc-59fd-4b6c-9728-1abed9f4e7d6",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C34",
+      "claim": "Viral sequences combined with basic demographic information can be successfully used to estimate the basic reproductive number R0 of HIV in a subcritical setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach demonstrates that viral sequences combined with basic demographic information can be successfully used not only to estimate the basic reproductive number R0 of HIV in a subcritical setting and thereby assess the danger of a generalized HIV epidemic but also to shed light on the trends and other determinants of viral transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on the demonstrated methodology and results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "b0490986-78f9-4eb7-83a7-81f44554ce3c",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C35",
+      "claim": "The approach can be used to assess the danger of a generalized HIV epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach demonstrates that viral sequences combined with basic demographic information can be successfully used not only to estimate the basic reproductive number R0 of HIV in a subcritical setting and thereby assess the danger of a generalized HIV epidemic but also to shed light on the trends and other determinants of viral transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on the demonstrated methodology and results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "4c18affd-5fa0-47ea-93ea-07254105d607",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C36",
+      "claim": "The approach can shed light on the trends and other determinants of viral transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach demonstrates that viral sequences combined with basic demographic information can be successfully used not only to estimate the basic reproductive number R0 of HIV in a subcritical setting and thereby assess the danger of a generalized HIV epidemic but also to shed light on the trends and other determinants of viral transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on the demonstrated methodology and results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "f3315684-a962-4391-849a-688bc195d41f",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C37",
+      "claim": "The HIV epidemic in Switzerland is and most likely will remain restricted to high risk core groups, especially MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the HIV epidemic in Switzerland is and most likely will remain restricted to high risk core groups, especially MSM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on R0 estimates being below 1 and decreasing",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "844ec088-f175-427b-ada4-3d90ba732765",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C38",
+      "claim": "The results suggest that integrated prevention measures in Switzerland taken over time were successful within the heterosexual population.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the results suggest that integrated prevention measures in Switzerland taken over time were successful within the heterosexual population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from decreasing R0 trend",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c395c60f-a242-480d-98c5-741803ee348c",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C39",
+      "claim": "In most resource-rich settings HIV transmission is concentrated, driven mostly by transmission among men who have sex with men (MSM) and injecting drug users (IDU).",
+      "claim_type": "EXPLICIT",
+      "source": "In most resource-rich settings HIV transmission is concentrated, that is, driven mostly by transmission among men who have sex with men (MSM) and injecting drug users (IDU), whereas the limited transmission among heterosexuals is maintained by either imported infections or spillovers from other transmission groups (Kouyos et al., 2010; von Wyl et al., 2011; Ragonnet-Cronin et al., 2016; Xiridou et al., 2010; Esbj\u00f6rnsson et al., 2016; Sallam et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8dacbf2a-008a-4f24-a0a8-101cf6eb3c97",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C40",
+      "claim": "Limited transmission among heterosexuals in resource-rich settings is maintained by either imported infections or spillovers from other transmission groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In most resource-rich settings HIV transmission is concentrated, that is, driven mostly by transmission among men who have sex with men (MSM) and injecting drug users (IDU), whereas the limited transmission among heterosexuals is maintained by either imported infections or spillovers from other transmission groups (Kouyos et al., 2010; von Wyl et al., 2011; Ragonnet-Cronin et al., 2016; Xiridou et al., 2010; Esbj\u00f6rnsson et al., 2016; Sallam et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "cb175938-7c79-45ca-9ec2-34afef49aef3",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C41",
+      "claim": "In most Western European countries and similar epidemiological settings the basic reproductive number R0 among heterosexuals is below 1.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that in most Western European countries and similar epidemiological settings the basic reproductive number R0 among heterosexuals is below 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on concentrated epidemic pattern",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "44aa97f6-4710-449d-a8ed-40aa97a94ed6",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C42",
+      "claim": "The distribution of outbreak sizes can be used to quantify pathogen spread for stage III zoonoses and tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For the case of stage III zoonoses and tuberculosis, it has been shown that the distribution of outbreak sizes can be used to quantify the pathogen spread (Blumberg and Lloyd-Smith, 2013b; Blumberg and Lloyd-Smith, 2013a; Borgdorff et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blumberg and Lloyd-Smith, 2013b; Blumberg and Lloyd-Smith, 2013a; Borgdorff et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "a1d26d15-1229-4d63-92fc-d7b37e48202e",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C43",
+      "claim": "HIV has long infectious periods in the absence of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the animal-human transmission the delayed introduction of the index case of an STI or blood-borne virus to the subpopulation of interest plays an important role, especially in viruses like HIV with long infectious periods in the absence of treatment and higher transmissibility during the acute phase (Marzel et al., 2016; Powers et al., 2011; Rieder et al., 2010; Rodger et al., 2016; Hollingsworth et al., 2008; Cohen et al., 2011b; Cohen et al., 2011a; Cohen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "771623f8-1e77-4c13-be15-f7916a034f30",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C44",
+      "claim": "HIV has higher transmissibility during the acute phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the animal-human transmission the delayed introduction of the index case of an STI or blood-borne virus to the subpopulation of interest plays an important role, especially in viruses like HIV with long infectious periods in the absence of treatment and higher transmissibility during the acute phase (Marzel et al., 2016; Powers et al., 2011; Rieder et al., 2010; Rodger et al., 2016; Hollingsworth et al., 2008; Cohen et al., 2011b; Cohen et al., 2011a; Cohen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "90caa586-7c22-44b5-ba24-ff73741f05a8",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C45",
+      "claim": "A considerable fraction of HIV cases in heterosexuals is found in migrants.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially important because a considerable fraction of HIV cases in heterosexuals is found in migrants (Del Amo et al., 2004; von Wyl et al., 2011; European Centre for Disease Prevention and Control/WHO Regional Office for Europe, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Del Amo et al., 2004; von Wyl et al., 2011; European Centre for Disease Prevention and Control/WHO Regional Office for Europe, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "3a1cd46d-ed28-46c4-9781-a095838eaef7",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C46",
+      "claim": "The phylogenetic tree was constructed from 10,840 SHCS and 90,933 background sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the earliest available of the remaining sequences for each patient, the phylogenetic tree was built with the FastTree algorithm under the generalized time-reversible model of nucleotide evolution (Price et al., 2009) including 10,840 SHCS and 90,933 background sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data used in phylogenetic tree construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "4e4eedd1-db13-44c4-95ba-fa1d863b1978",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C47",
+      "claim": "The phylogenetic tree was built with the FastTree algorithm under the generalized time-reversible model of nucleotide evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the earliest available of the remaining sequences for each patient, the phylogenetic tree was built with the FastTree algorithm under the generalized time-reversible model of nucleotide evolution (Price et al., 2009) including 10,840 SHCS and 90,933 background sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "09e493bf-0b6b-4888-a9a3-f8472133f36c",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C48",
+      "claim": "The Swiss heterosexual transmission chains were defined as clusters in the phylogenetic tree containing exclusively Swiss HIV sequences from individuals with heterosexual contact as the most likely route of the transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swiss heterosexual transmission chains were defined as clusters in the phylogenetic tree containing exclusively Swiss HIV sequences from individuals with heterosexual contact as the most likely route of the transmission, regardless of the respective genetic distances and local support values",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of operational definition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "3d1e4544-2737-4242-a449-af85967dfb39",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C60",
+      "claim": "Omitting the reduced transmissibility of the index case leads to largely underestimated R0 (overall R0 of 0.33, 95%-CI 0.31\u20140.35).",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, omitting the reduced transmissibility of the index case, that is, assuming \u03c1index=1, leads to largely underestimated R0 (overall R0 of 0.33, 95%-CI 0.31\u20140.35) affirming the importance of this extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "588a16b4-5ce5-42ef-8337-ec63a8b4216b",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C61",
+      "claim": "When lowering the \u03c1index for transmission chains of non-Swiss origin to 0.25, the R0 estimate is 0.47 (95%-CI 0.44\u20140.49).",
+      "claim_type": "EXPLICIT",
+      "source": "To address this issue we lowered the \u03c1index for the transmission chains of non-Swiss origin to 0.25 to obtain a more conservative estimate of R0, which was, nevertheless, still safely below 1 (0.47, 95%-CI 0.44\u20140.49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8ecd1aec-9703-4ecb-8565-cfee021922fb",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C62",
+      "claim": "The mean time to being non-infectious is approximately 2\u20142.5 years in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given much higher transmissibility of HIV in the acute and recent infection (Marzel et al., 2016) and estimated mean time to being non-infectious of approximately 2\u20142.5 years in recent years (Stadler et al., 2012; Hughes et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Stadler et al., 2012; Hughes et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "bcbc1eb8-0b4e-459b-880b-4cc8413ccb08",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C63",
+      "claim": "Epidemiological differences between the HIV-1 subtypes, especially between B and non-B subtypes, have been pointed out previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological differences between the HIV-1 subtypes, especially between B and non-B subtypes, have been pointed out previously (Kouyos et al., 2010; von Wyl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kouyos et al., 2010; von Wyl et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "261622af-aaa3-4117-b8a4-3dc80602d796",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C64",
+      "claim": "CRF01_AE is often found in Asians and most likely originates from Southeastern Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the CRF01_AE is often found in Asians and it also most likely originates from Southeastern Asia (Angelis et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Angelis et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "f90fdb2f-7799-41e2-b75d-bd73eeeff153",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C65",
+      "claim": "Subtypes originating from Africa, such as CRF02_AG, are frequently found in people of black ethnicity.",
+      "claim_type": "EXPLICIT",
+      "source": "while subtypes originating from Africa, such as CRF02_AG (Mir et al., 2016), are frequently found in people of black ethnicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mir et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "7a74ec46-6c0f-4cb4-a643-d3265931095f",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C66",
+      "claim": "Poverty and different policies regulating prostitution worldwide have an impact on the transmission patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, poverty and different policies regulating prostitution worldwide also have an impact on the transmission patterns, like on rate of condom use, access to HIV testing and treatment (Shannon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shannon et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "0fb1e225-fef9-4a08-9f4b-ce2f8ba3ba1c",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C67",
+      "claim": "The HIV subtype significantly affected R0 even in the multivariate model.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, disentangling the effect of different epidemiological characteristics and even of the strains remains challenging, as R0 was significantly affected by the HIV subtype even in the multivariate model (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of multivariate model results with reference to Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "502105f6-c674-49ad-bed1-88a6c410c5cd",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C68",
+      "claim": "The approach can be easily used in other non-self-sustained epidemics since viral sequences from genotypic resistance testing are nowadays routinely produced in most resource-rich settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the Swiss HIV epidemic is captured in outstanding detail and representativeness by the SHCS, our approach can be easily used in other non-self-sustained epidemics since viral sequences from genotypic resistance testing are nowadays routinely produced in most resource-rich settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about generalizability based on availability of sequence data",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "1a45ea73-9ee6-4560-bc87-616dd1f741b5",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C69",
+      "claim": "The generalizability of the approach might be broadened to other settings and viruses due to the increased availability of viral sequences boosted by decreasing sequencing costs and the ability of the method to adjust for imperfect sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the generalizability of our approach might be broadened to other settings and viruses due to the increased availability of viral sequences boosted by decreasing sequencing costs and the ability of the method to adjust for imperfect sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about future applicability based on technological trends",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c1d17150-cfd3-4d48-99a8-cb6ae110b02b",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C70",
+      "claim": "The study represents the first systematic assessment of the basic reproductive number for subcritical HIV transmission among heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge our study represents the first systematic assessment of the basic reproductive number for subcritical HIV transmission among heterosexuals, which makes it difficult to compare our results to other estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' claim about novelty of their work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "1360d0d0-b93f-4b56-ae98-fed8e2809d01",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C71",
+      "claim": "The study was conducted in one of the most densely sampled settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it was conducted in one of the most densely sampled settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' characterization of the SHCS",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "0ebbea79-8c93-4669-9a9a-7f302c8ba274",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C72",
+      "claim": "Huge variation in sexual behavior has been shown previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although a huge variation in sexual behavior has been shown previously (Liljeros et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liljeros et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "543a2c83-c906-42d9-9089-3facb2b73167",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C73",
+      "claim": "The offspring distribution was modeled using a Poisson distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We modeled the offspring distribution in a transmission chain using a Poisson distribution, which is a special case of the negative binomial distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of modeling choice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "191f8c3b-27b3-45d2-b1f4-ea9bdcb5c83e",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C74",
+      "claim": "The negative binomial distribution has been suggested in the literature to infer R0.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter has been suggested in the literature (Blumberg and Lloyd-Smith, 2013b) in order to infer R0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blumberg and Lloyd-Smith, 2013b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "2d58f3d2-2eb5-4df3-a626-f80eff18a842",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C75",
+      "claim": "No large differences were observed between the Poisson and negative binomial distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "however since we did not observe any large differences between the two distributions (see Sensitivity analyses and Appendix 1\u2014figure 7), we decided to use the simpler Poisson model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "96449aa2-355a-47aa-97ad-52ce3bc62261",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C76",
+      "claim": "The date of HIV infection for each individual was imputed with the model described by Taff\u00e9 et al. (2008) if the patient had enough CD4 cell count measurements before the ART initiation and the estimated date of infection fell within the seroconversion window.",
+      "claim_type": "EXPLICIT",
+      "source": "The date of HIV infection for each single individual was imputed with the model described by Taff\u00e9 et al. (2008) if the patient had enough CD4 cell count measurements before the ART initiation and the estimated date of infection fell within the seroconversion window",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of methodology with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "ce5b12cc-9e3f-4a53-a5c3-edbcdbd8b90c",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C77",
+      "claim": "If the patient did not have enough CD4 cell count measurements or the estimated date of infection did not fall within the seroconversion window, the midpoint of the seroconversion window was used.",
+      "claim_type": "EXPLICIT",
+      "source": "otherwise the midpoint of the seroconversion window was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of alternative methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "b9cd771f-68ca-44a8-8734-973b953d30c4",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C79",
+      "claim": "The provided confidence intervals are the Wald-type 95%-confidence intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "The provided confidence intervals are the Wald-type 95%-confidence intervals (see Sensitivity analyses for the comparison against different types)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "72a0ac6c-830a-41b5-8d6f-d83a1818ad19",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C80",
+      "claim": "The p-values are based on the Wald statistic.",
+      "claim_type": "EXPLICIT",
+      "source": "and the p-values are based on the Wald statistic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "00c3b4f7-7853-4257-8bb8-a505b64710af",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C81",
+      "claim": "Final model selection was carried out by the forward selection and backward elimination algorithms based on the Akaike and Bayesian information criterion (AIC and BIC, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Final model selection was carried out by the forward selection and backward elimination algorithms based on the Akaike and Bayesian information criterion (AIC and BIC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of model selection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "7086a0af-6ae3-4d86-a8fe-aa944e38ccb6",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C82",
+      "claim": "The SHCS was approved by the ethics committees of the participating institutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The SHCS was approved by the ethics committees of the participating institutions (Kantonale Ethikkommission Bern, Ethikkommission des Kantons St. Gallen, Comite Departemental d'Ethique des Specialites Medicales et de Medicine Communataire et de Premier Recours, Kantonale Ethikkommission Z\u00fcrich, Repubblica e Cantone Ticino\u2013Comitato Ethico Cantonale, Commission Cantonale d'\u00c9tique de la Recherche sur l'\u00catre Humain, Ethikkommission beiderBasel; all approvals are available on http://www.shcs.ch/206-ethic-committee-approval-and-informed-consent)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "d73b654e-cd05-42ed-bed9-c531f00232ac",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C83",
+      "claim": "Written informed consent was obtained from all participants in the SHCS.",
+      "claim_type": "EXPLICIT",
+      "source": "and written informed consent was obtained from all participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of ethical procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "fe3d3b78-2bfe-4e65-917b-0bc92524ea56",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C84",
+      "claim": "A random subset of 10% of the sequences are accessible via GenBank.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a random subset of 10% of the sequences are accessible via GenBank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data availability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "23651aca-d654-4864-8bae-ad5626a7ce5e",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C85",
+      "claim": "Due to the large sampling density, the data would allow for the reconstruction of entire transmission networks and could thereby endanger the privacy of the patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously discussed in these publications, due to the large sampling density this data would, in principle, allow for the reconstruction of entire transmission networks and could thereby endanger the privacy of the patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation for limited data sharing",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "9d780e10-57d5-4b58-805c-dc208406d57d",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C86",
+      "claim": "HIV-1 sequences frequently have been used in court cases.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially problematic because HIV-1 sequences frequently have been used in court cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established practice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8325eca4-743f-4458-87cd-37c02434d916",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C87",
+      "claim": "Epidemics of HIV and other blood-borne and sexually transmitted diseases can be subdivided into concentrated and generalized epidemics.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemics of HIV and other blood-borne and sexually transmitted diseases (for instance syphilis, HBV and HCV) can be subdivided into concentrated and generalized epidemics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of epidemiological classification",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "3923da66-2286-4337-9532-39c60ab40a40",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C88",
+      "claim": "For concentrated epidemics, rapid infectious agent transmission is restricted to core transmission groups involved in high-risk behaviors (such as men who have sex with men and injecting drug users).",
+      "claim_type": "EXPLICIT",
+      "source": "While for the former, the rapid infectious agent transmission is restricted to core transmission groups involved in high-risk behaviors (such as men who have sex with men and injecting drug users)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of concentrated epidemic",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "f91cf924-b731-41c0-a0db-684f4e06007a",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C89",
+      "claim": "Generalized epidemic refers to fast pathogen spreading in the heterosexual (general) population resulting in higher overall disease prevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "the generalized epidemic refers to fast pathogen spreading in the heterosexual (general) population resulting in higher overall disease prevalence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of generalized epidemic",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "bfcc77cc-e917-45a7-9a74-d17c5300de0b",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C90",
+      "claim": "The key factor explaining whether the HIV transmission is concentrated or generalized is the ability of HIV to spread among heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, the key factor explaining whether the HIV transmission is concentrated or generalized, is the ability of HIV to spread among heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic explanation based on epidemiological understanding",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "0e4fd835-3292-4c98-8e07-ddb53fe0b122",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C91",
+      "claim": "If the epidemic in the heterosexual population is not self-sustained, the HIV epidemic remains concentrated.",
+      "claim_type": "EXPLICIT",
+      "source": "If the epidemic in this population is not self-sustained, the HIV epidemic remains concentrated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical consequence of epidemiological definition",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "88d45f4e-4fd1-4e04-b680-bf93fe681789",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C92",
+      "claim": "If the epidemic in the heterosexual population is self-sustained, the virus is spreading rapidly in the broad population leading to a generalized HIV epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "otherwise the virus is spreading rapidly in the broad population leading to a generalized HIV epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical consequence of epidemiological definition",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "1b0f9db9-46e0-4c7b-8dab-e6a99d74547d",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C93",
+      "claim": "Assessing the subcritical transmission of HIV in the general population shares some methodological similarities with the analysis of stage III zoonoses.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessing the subcritical transmission of HIV in the general population shares some methodological similarities with the analysis of stage III zoonoses, for instance, monkeypox (Wolfe et al., 2007), which also exhibit stuttering transmission chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' methodological comparison with citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c17fc157-9170-48f5-8c6a-f877b8fa8a14",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C94",
+      "claim": "Stage III zoonoses exhibit stuttering transmission chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessing the subcritical transmission of HIV in the general population shares some methodological similarities with the analysis of stage III zoonoses, for instance, monkeypox (Wolfe et al., 2007), which also exhibit stuttering transmission chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wolfe et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8fde419a-2cb7-4bf3-85b9-1e859e6f85e8",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C95",
+      "claim": "Both subcritical HIV transmission and stage III zoonoses follow a source-sink dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cases follow a source-sink dynamics, i.e., a flux of infections from a subpopulation in which the disease is self-sustained to a population where it is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' characterization of epidemiological pattern",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "ded2e5a1-55b0-43fa-a614-eb0e61a16396",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C96",
+      "claim": "The fundamental approach of the study is to apply the concept of quantifying pathogen spread from outbreak size distributions to transmission of HIV in the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental approach of our study is to apply this concept to transmission of HIV in the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' statement of methodological approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "99816d84-f846-46b8-96a0-47b9c670189b",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C97",
+      "claim": "Contact tracing data are not available for many sexually transmitted infections (STI).",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, while the contact tracing data are not available for many sexually transmitted infections (STI), the viral sequences carry valuable information about the transmission chain size distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data availability limitations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "3450e0a2-6770-4692-a5b1-0ee1f6927300",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C98",
+      "claim": "Viral sequences carry valuable information about the transmission chain size distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, while the contact tracing data are not available for many sexually transmitted infections (STI), the viral sequences carry valuable information about the transmission chain size distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about information content of sequence data",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "ac8085b7-820a-4268-b145-760e11379438",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C99",
+      "claim": "The approach of quantifying transmissibility from chain size distributions needs to be combined with a tool to derive clusters from viral sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the approach of quantifying transmissibility from chain size distributions needs to be combined with a tool to derive clusters from viral sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' methodological reasoning",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "9e1a609d-4898-4cc9-994f-b2531cb44a61",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C100",
+      "claim": "The overall R0 is estimated to be 0.44 (95%-confidence interval 0.42\u20140.46) and it is decreasing by 11% per 10 years (4%\u201417%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the R0 is estimated to be 0.44 (95%-confidence interval 0.42\u20140.46) and it is decreasing by 11% per 10 years (4%\u201417%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of main findings from abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "c5216de0-6997-4cd1-87d5-7663652df8a8",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C101",
+      "claim": "The findings indicate rather diminishing HIV transmission among Swiss heterosexuals far below the epidemic threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate rather diminishing HIV transmission among Swiss heterosexuals far below the epidemic threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of results from abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "6e56ad62-87ce-4dcd-bdd9-ea611e30fe04",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "claim_id": "C102",
+      "claim": "The approach allows to assess the danger of self-sustained epidemics from any viral sequence data.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, our approach allows to assess the danger of self-sustained epidemics from any viral sequence data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' claim about generalizability from abstract",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fdd9ee78-43b4-423a-9883-ba2b36791631",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The overall basic reproductive number (R0) for HIV transmission among Swiss heterosexuals is estimated at 0.44 (95% CI: 0.42-0.46), significantly below 1 (p<0.001), indicating transmission is far from self-sustained. This estimate is based on 3,100 identified transmission clusters (mostly small, size 1-2), classified by origin (1,133 Swiss, 1,967 non-Swiss), with model adjustments for imperfect sampling and reduced index case transmissibility (\u03c1_index=0.35 for non-Swiss origin).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The R0 estimate is well-supported by phylogenetic cluster data (C6-C7), appropriate statistical testing (C13), and transparent methodological choices (C10-C11). The model accounts for key biases including incomplete sampling and delayed introduction of imported infections. Sensitivity analyses (referenced) confirm robustness, and the finding is consistent with the observed small cluster sizes (Table 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "05e60492-d842-4674-b7c7-5d41209ebfb7",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Subtype-stratified analyses reveal heterogeneity in R0 estimates: subtype B has the lowest R0 (0.35, 95% CI: 0.33-0.39), while CRF02_AG has the highest (0.62, 95% CI: 0.56-0.69). Despite this variation, all subtypes have R0 significantly below 1 (all p<0.001), indicating no subtype poses a risk of self-sustained epidemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The subtype-specific estimates are clearly presented with confidence intervals and statistical significance testing (C15-C17). The conclusion that no subtype threatens self-sustained transmission (C18) is justified by all estimates being significantly below the epidemic threshold. The multivariate model confirms subtype effects persist after adjusting for confounders (C26).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "dc136f36-de3a-4988-bf9c-4fc745f10881",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "R0 exhibits a decreasing temporal trend, declining by a factor of 0.89 per decade (95% CI: 0.83-0.96) overall. A cubic spline model reveals R0 peaked at 0.49 (95% CI: 0.46-0.53) in 1996\u2014coinciding with HAART introduction\u2014followed by sustained decline without rebound. Subtype-stratified analyses show consistent decreasing trends across all subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The temporal trend analysis uses appropriate statistical methods (univariate linear models, BIC-selected cubic spline) with clear confidence intervals (C19-C23). The temporal association with HAART introduction (C24) is noted as observational, not causal. The authors appropriately caution that extrapolations for recent years have wide confidence intervals due to sparse data (acknowledged in text), making this a conservative interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "483d9aef-5cfc-4656-af00-e7735acac0d3",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multivariate analysis identifies four significant determinants of R0: HIV subtype, establishment date, frequency of sex with occasional partners, and time to diagnosis. Notably, longer time to diagnosis shows a steep nonlinear relationship with R0 in early infection phases, highlighting the importance of early diagnosis. CD4 count and age show no significant effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The multivariate model is rigorously developed using forward/backward selection with AIC/BIC criteria (C31, C81). The findings are presented with appropriate statistical testing (Figure 3, Figure 4) and confidence intervals. The nonlinear relationship for time to diagnosis (C32-C33) is supported by model comparison showing better fit than linear models. The persistence of subtype effects (C67) suggests residual confounding or biological differences that warrant further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "e9a53453-d8d1-418e-9014-0c8590298091",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors demonstrate that viral sequences combined with demographic data can successfully estimate R0 in subcritical settings, assess epidemic risk, and identify transmission determinants. They claim the approach is generalizable to other resource-rich settings with routine resistance testing and potentially to other viruses as sequencing costs decrease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the method is successfully applied to Swiss data (C34-C36), the generalizability claims (C68-C69, C102) are speculative and lack empirical validation in other settings. The approach requires high-quality surveillance data, accurate cluster identification, and appropriate parameter estimation (sampling probabilities, \u03c1_index), which may not be available elsewhere. The claim of applicability to 'any viral sequence data' (C102) is overstated without demonstration in diverse epidemiological contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "276783fb-04b5-4fec-b149-bef97b4639d6",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that HIV transmission among Swiss heterosexuals is diminishing and far below the epidemic threshold, suggesting the epidemic will remain concentrated in high-risk groups (especially MSM) and that integrated prevention measures have been successful.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These public health conclusions (C37-C38, C101) logically follow from the demonstrated R0 < 1 with decreasing trend. However, the causal attribution to prevention measures (C38) is inferential rather than directly demonstrated\u2014the study design cannot rule out alternative explanations for declining R0 (e.g., demographic changes, migration patterns). The conclusion about future epidemic trajectory (C37) assumes current conditions persist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8f6defa5-686e-4ce7-90b6-84eed2238d31",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sensitivity analyses demonstrate model robustness: omitting reduced index case transmissibility (\u03c1_index=1) yields underestimated R0 (0.33), while conservative assumptions (\u03c1_index=0.25) still yield R0 safely below 1 (0.47). Poisson and negative binomial offspring distributions produce similar results, justifying the simpler Poisson model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sensitivity analyses (C60-C61, C75) appropriately test key model assumptions and demonstrate that main conclusions (R0 < 1) are robust to parameter choices. The comparison of offspring distributions (C73-C75) justifies the modeling choice. These analyses strengthen confidence in the primary findings, though the specific value of \u03c1_index remains somewhat arbitrary despite sensitivity testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "f1e4bb10-5939-4bc0-a232-a3c1b7d8f319",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Swiss HIV Cohort Study (SHCS), established in 1988, enrolled over 19,500 patients by December 2016 and covers >75% of HIV-positive individuals on ART in Switzerland. Approximately 60% of patients have pol sequences available, and heterosexuals comprise about one-third of participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These descriptive claims about the SHCS (C1-C5) are well-documented with citations and specific numbers. The high coverage (C3) and large sample size (C2) support the study's representativeness. The availability of sequence data (C4) and proportion of heterosexuals (C5) establish the feasibility of the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "8d4d2e21-d12f-4448-9c2c-70d50b249f10",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis used 10,840 SHCS sequences and 90,933 background sequences, constructing trees with FastTree under the GTR model. Swiss heterosexual transmission chains were defined as clusters containing exclusively Swiss sequences from heterosexual transmission, regardless of genetic distance or support values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The phylogenetic methods (C46-C47) are standard and appropriately cited. However, the cluster definition (C48) that ignores genetic distance and support values is potentially problematic\u2014it may merge unrelated introductions or split true clusters. The authors acknowledge this limitation in the Discussion, noting the method is conservative (tends to overestimate R0), which supports their main conclusion of R0 << 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "a2237a09-d456-48e3-91e4-be52c7110bfa",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Infection dates were imputed using CD4-based models (Taff\u00e9 et al. 2008) when sufficient data existed, otherwise using seroconversion window midpoints. Statistical inference used Wald-type 95% confidence intervals and p-values, with model selection via forward/backward algorithms using AIC and BIC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical methods (C76-C77, C79-C81) are clearly described and appropriate. The infection date imputation approach (C76-C77) is pragmatic and uses established methods. The use of Wald statistics (C79-C80) is standard for maximum likelihood estimation. Model selection procedures (C81) are rigorous and transparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "d3c9990c-ed41-4159-9fec-0054299e6dab",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background literature establishes that HIV transmission in resource-rich settings is concentrated in MSM and IDU, with limited heterosexual transmission maintained by imported infections or spillovers, suggesting R0 < 1 among heterosexuals. Methodologically, outbreak size distributions have been used to quantify pathogen spread in zoonoses and tuberculosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These contextual claims (C39-C45) are well-supported by multiple citations and represent established epidemiological knowledge. They appropriately frame the study's rationale and methodological foundation. The inference about R0 < 1 in Western Europe (C41) is logical given the concentrated epidemic pattern, though not directly measured prior to this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "a3b9abf6-022b-4f31-b94d-848f8f444658",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Discussion notes that epidemiological differences between HIV subtypes (especially B vs. non-B) have been documented previously, with subtypes associated with different geographic origins and populations. Factors like poverty and prostitution policies affect transmission patterns, but disentangling epidemiological from biological effects remains challenging as subtype significantly affects R0 even in multivariate models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive claims (C63-C67) appropriately contextualize the subtype findings with citations and acknowledge the difficulty of causal inference. The persistence of subtype effects in multivariate models (C67) suggests either residual confounding or true biological differences\u2014the authors appropriately present this as unresolved rather than claiming definitive explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "f82bb059-1f9f-4192-bf35-6271a9dcd1a5",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors claim this is the first systematic assessment of R0 for subcritical HIV transmission among heterosexuals, conducted in one of the most densely sampled settings. They note that mean time to non-infectiousness is approximately 2-2.5 years in recent years based on prior estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The novelty claim (C70) appears justified given the cited literature, though 'first systematic assessment' is difficult to verify definitively. The characterization of SHCS as densely sampled (C71) is supported by the coverage statistics (C3). The time to non-infectiousness estimate (C62) is appropriately cited and used to justify assumptions about chain extinction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "0fb31573-82ba-4185-a11d-a35a3bb64894",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study received ethics approval from multiple Swiss committees, obtained informed consent from participants, but provides only 10% of sequences via GenBank due to privacy concerns\u2014the high sampling density could enable transmission network reconstruction, problematic given HIV sequences' use in court cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ethics and data sharing statements (C82-C84) are appropriately documented. The justification for limited data sharing (C85-C86) is reasonable given legitimate privacy concerns, though it limits reproducibility. This represents a tension between scientific transparency and participant protection that the authors handle responsibly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Introduction establishes conceptual framework: HIV epidemics are classified as concentrated (restricted to high-risk groups) or generalized (spreading in general population), determined by whether heterosexual transmission is self-sustained (R0 \u2265 1). The methodological approach adapts zoonotic outbreak analysis to HIV by combining phylogenetic clustering with branching process models, addressing the lack of contact tracing data for STIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These framing claims (C87-C99) establish appropriate conceptual and methodological foundations with citations. The epidemiological definitions (C87-C92) are standard. The methodological analogy to zoonoses (C93-C95) is apt and well-cited. The rationale for using sequence data (C97-C99) addresses a real limitation of STI surveillance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    },
+    {
+      "id": "0d97cc88-8f07-4049-bfcb-a7343fdf4eae",
+      "content_id": "eeccc219-c15f-4d0b-a7b4-69b099e96a25",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors note that huge variation in sexual behavior has been shown previously, though their sensitivity analyses suggest this has weak impact on risk determinant estimates given the focus on subcritical transmission with short chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim (C72) appropriately cites prior work on behavioral heterogeneity and acknowledges a potential limitation while providing justification (short chains convey limited structural information) for why it may not substantially affect their conclusions. This represents appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:01:28.990223Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "99d3f079-3516-49da-b6ab-3d222c2f904e",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "98bb2ea1-aa93-4a9d-9586-2218a2c4cb9e",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "cb049884-6861-4f26-95d0-b07b948e15d3",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "96244b59-3bab-45b3-a446-ce2c49e3254b",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "64522537-09f6-47b4-b67b-89276d121395",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "fd6ae143-9235-4a9a-b65a-7def0f2bb526",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "8ca678c7-879b-4df4-b2cb-d7b8f2c52b0f",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "952d6ea3-e786-4ecf-a88b-3a4aa58a7aaf",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "1852481f-94ef-4dac-9937-229761c835ca",
+      "result_id": "fdd9ee78-43b4-423a-9883-ba2b36791631"
+    },
+    {
+      "claim_id": "c2566f8b-81d8-451d-b999-1c709ddbebf9",
+      "result_id": "05e60492-d842-4674-b7c7-5d41209ebfb7"
+    },
+    {
+      "claim_id": "98592dbd-9267-4fea-86b2-50d72ee8160a",
+      "result_id": "05e60492-d842-4674-b7c7-5d41209ebfb7"
+    },
+    {
+      "claim_id": "e367fbeb-0230-4790-9f48-a5a0b69e8d94",
+      "result_id": "05e60492-d842-4674-b7c7-5d41209ebfb7"
+    },
+    {
+      "claim_id": "64cc3eba-8238-48e7-94b9-549237734c88",
+      "result_id": "05e60492-d842-4674-b7c7-5d41209ebfb7"
+    },
+    {
+      "claim_id": "28193e44-11f9-423b-9737-6187fc68514c",
+      "result_id": "05e60492-d842-4674-b7c7-5d41209ebfb7"
+    },
+    {
+      "claim_id": "7fe65615-18cd-47bc-b560-b12a13071813",
+      "result_id": "dc136f36-de3a-4988-bf9c-4fc745f10881"
+    },
+    {
+      "claim_id": "c3304aee-614b-489d-a836-a7ffe2c1b53c",
+      "result_id": "dc136f36-de3a-4988-bf9c-4fc745f10881"
+    },
+    {
+      "claim_id": "14fa09dd-c315-4bcf-b6d6-11cf4c578ee7",
+      "result_id": "dc136f36-de3a-4988-bf9c-4fc745f10881"
+    },
+    {
+      "claim_id": "bc67c3f0-fed5-455c-b92c-601d123f2002",
+      "result_id": "dc136f36-de3a-4988-bf9c-4fc745f10881"
+    },
+    {
+      "claim_id": "0d66f76f-2ffc-4e23-ae72-359020be15f2",
+      "result_id": "dc136f36-de3a-4988-bf9c-4fc745f10881"
+    },
+    {
+      "claim_id": "c0747e2e-fbbb-49ed-8210-ad8cab406427",
+      "result_id": "dc136f36-de3a-4988-bf9c-4fc745f10881"
+    },
+    {
+      "claim_id": "c2ba4474-9df1-4c9c-a855-125e5f000465",
+      "result_id": "dc136f36-de3a-4988-bf9c-4fc745f10881"
+    },
+    {
+      "claim_id": "0b98f90c-4da2-4714-bfd5-83775f6a1621",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "324ddda3-b40b-4330-a6cb-aa102b37f977",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "b7ddef75-a035-4b96-be98-151b40ade47e",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "12dc11c4-11cf-463a-a482-051332e748a1",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "06166bc9-d430-47aa-9003-0aac14cb0f19",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "a62b9f5b-fa6b-4b59-b7cb-427fd8e276fc",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "62b953b0-8d5f-40e4-b090-0a5c5063bfe0",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "0fb1e225-fef9-4a08-9f4b-ce2f8ba3ba1c",
+      "result_id": "483d9aef-5cfc-4656-af00-e7735acac0d3"
+    },
+    {
+      "claim_id": "e2c939fc-59fd-4b6c-9728-1abed9f4e7d6",
+      "result_id": "e9a53453-d8d1-418e-9014-0c8590298091"
+    },
+    {
+      "claim_id": "b0490986-78f9-4eb7-83a7-81f44554ce3c",
+      "result_id": "e9a53453-d8d1-418e-9014-0c8590298091"
+    },
+    {
+      "claim_id": "4c18affd-5fa0-47ea-93ea-07254105d607",
+      "result_id": "e9a53453-d8d1-418e-9014-0c8590298091"
+    },
+    {
+      "claim_id": "502105f6-c674-49ad-bed1-88a6c410c5cd",
+      "result_id": "e9a53453-d8d1-418e-9014-0c8590298091"
+    },
+    {
+      "claim_id": "1a45ea73-9ee6-4560-bc87-616dd1f741b5",
+      "result_id": "e9a53453-d8d1-418e-9014-0c8590298091"
+    },
+    {
+      "claim_id": "6e56ad62-87ce-4dcd-bdd9-ea611e30fe04",
+      "result_id": "e9a53453-d8d1-418e-9014-0c8590298091"
+    },
+    {
+      "claim_id": "f3315684-a962-4391-849a-688bc195d41f",
+      "result_id": "276783fb-04b5-4fec-b149-bef97b4639d6"
+    },
+    {
+      "claim_id": "844ec088-f175-427b-ada4-3d90ba732765",
+      "result_id": "276783fb-04b5-4fec-b149-bef97b4639d6"
+    },
+    {
+      "claim_id": "c5216de0-6997-4cd1-87d5-7663652df8a8",
+      "result_id": "276783fb-04b5-4fec-b149-bef97b4639d6"
+    },
+    {
+      "claim_id": "3d1e4544-2737-4242-a449-af85967dfb39",
+      "result_id": "8f6defa5-686e-4ce7-90b6-84eed2238d31"
+    },
+    {
+      "claim_id": "588a16b4-5ce5-42ef-8337-ec63a8b4216b",
+      "result_id": "8f6defa5-686e-4ce7-90b6-84eed2238d31"
+    },
+    {
+      "claim_id": "543a2c83-c906-42d9-9089-3facb2b73167",
+      "result_id": "8f6defa5-686e-4ce7-90b6-84eed2238d31"
+    },
+    {
+      "claim_id": "191f8c3b-27b3-45d2-b1f4-ea9bdcb5c83e",
+      "result_id": "8f6defa5-686e-4ce7-90b6-84eed2238d31"
+    },
+    {
+      "claim_id": "2d58f3d2-2eb5-4df3-a626-f80eff18a842",
+      "result_id": "8f6defa5-686e-4ce7-90b6-84eed2238d31"
+    },
+    {
+      "claim_id": "abbb3975-cf89-4648-b182-de568e2d61cc",
+      "result_id": "f1e4bb10-5939-4bc0-a232-a3c1b7d8f319"
+    },
+    {
+      "claim_id": "d620013c-34af-43f0-9447-581cdce819d6",
+      "result_id": "f1e4bb10-5939-4bc0-a232-a3c1b7d8f319"
+    },
+    {
+      "claim_id": "6651ba4c-49f1-4f45-8241-070807627977",
+      "result_id": "f1e4bb10-5939-4bc0-a232-a3c1b7d8f319"
+    },
+    {
+      "claim_id": "1b41cbab-6156-498a-b691-217566a92e67",
+      "result_id": "f1e4bb10-5939-4bc0-a232-a3c1b7d8f319"
+    },
+    {
+      "claim_id": "e7f7703a-3375-4aec-b8b6-86db9623fe54",
+      "result_id": "f1e4bb10-5939-4bc0-a232-a3c1b7d8f319"
+    },
+    {
+      "claim_id": "3a1cd46d-ed28-46c4-9781-a095838eaef7",
+      "result_id": "8d4d2e21-d12f-4448-9c2c-70d50b249f10"
+    },
+    {
+      "claim_id": "4e4eedd1-db13-44c4-95ba-fa1d863b1978",
+      "result_id": "8d4d2e21-d12f-4448-9c2c-70d50b249f10"
+    },
+    {
+      "claim_id": "09e493bf-0b6b-4888-a9a3-f8472133f36c",
+      "result_id": "8d4d2e21-d12f-4448-9c2c-70d50b249f10"
+    },
+    {
+      "claim_id": "96449aa2-355a-47aa-97ad-52ce3bc62261",
+      "result_id": "a2237a09-d456-48e3-91e4-be52c7110bfa"
+    },
+    {
+      "claim_id": "ce5b12cc-9e3f-4a53-a5c3-edbcdbd8b90c",
+      "result_id": "a2237a09-d456-48e3-91e4-be52c7110bfa"
+    },
+    {
+      "claim_id": "b9cd771f-68ca-44a8-8734-973b953d30c4",
+      "result_id": "a2237a09-d456-48e3-91e4-be52c7110bfa"
+    },
+    {
+      "claim_id": "72a0ac6c-830a-41b5-8d6f-d83a1818ad19",
+      "result_id": "a2237a09-d456-48e3-91e4-be52c7110bfa"
+    },
+    {
+      "claim_id": "00c3b4f7-7853-4257-8bb8-a505b64710af",
+      "result_id": "a2237a09-d456-48e3-91e4-be52c7110bfa"
+    },
+    {
+      "claim_id": "c395c60f-a242-480d-98c5-741803ee348c",
+      "result_id": "d3c9990c-ed41-4159-9fec-0054299e6dab"
+    },
+    {
+      "claim_id": "8dacbf2a-008a-4f24-a0a8-101cf6eb3c97",
+      "result_id": "d3c9990c-ed41-4159-9fec-0054299e6dab"
+    },
+    {
+      "claim_id": "cb175938-7c79-45ca-9ec2-34afef49aef3",
+      "result_id": "d3c9990c-ed41-4159-9fec-0054299e6dab"
+    },
+    {
+      "claim_id": "44aa97f6-4710-449d-a8ed-40aa97a94ed6",
+      "result_id": "d3c9990c-ed41-4159-9fec-0054299e6dab"
+    },
+    {
+      "claim_id": "a1d26d15-1229-4d63-92fc-d7b37e48202e",
+      "result_id": "d3c9990c-ed41-4159-9fec-0054299e6dab"
+    },
+    {
+      "claim_id": "771623f8-1e77-4c13-be15-f7916a034f30",
+      "result_id": "d3c9990c-ed41-4159-9fec-0054299e6dab"
+    },
+    {
+      "claim_id": "90caa586-7c22-44b5-ba24-ff73741f05a8",
+      "result_id": "d3c9990c-ed41-4159-9fec-0054299e6dab"
+    },
+    {
+      "claim_id": "bcbc1eb8-0b4e-459b-880b-4cc8413ccb08",
+      "result_id": "a3b9abf6-022b-4f31-b94d-848f8f444658"
+    },
+    {
+      "claim_id": "261622af-aaa3-4117-b8a4-3dc80602d796",
+      "result_id": "a3b9abf6-022b-4f31-b94d-848f8f444658"
+    },
+    {
+      "claim_id": "f90fdb2f-7799-41e2-b75d-bd73eeeff153",
+      "result_id": "a3b9abf6-022b-4f31-b94d-848f8f444658"
+    },
+    {
+      "claim_id": "7a74ec46-6c0f-4cb4-a643-d3265931095f",
+      "result_id": "a3b9abf6-022b-4f31-b94d-848f8f444658"
+    },
+    {
+      "claim_id": "0fb1e225-fef9-4a08-9f4b-ce2f8ba3ba1c",
+      "result_id": "a3b9abf6-022b-4f31-b94d-848f8f444658"
+    },
+    {
+      "claim_id": "c1d17150-cfd3-4d48-99a8-cb6ae110b02b",
+      "result_id": "f82bb059-1f9f-4192-bf35-6271a9dcd1a5"
+    },
+    {
+      "claim_id": "1360d0d0-b93f-4b56-ae98-fed8e2809d01",
+      "result_id": "f82bb059-1f9f-4192-bf35-6271a9dcd1a5"
+    },
+    {
+      "claim_id": "8ecd1aec-9703-4ecb-8565-cfee021922fb",
+      "result_id": "f82bb059-1f9f-4192-bf35-6271a9dcd1a5"
+    },
+    {
+      "claim_id": "7086a0af-6ae3-4d86-a8fe-aa944e38ccb6",
+      "result_id": "0fb31573-82ba-4185-a11d-a35a3bb64894"
+    },
+    {
+      "claim_id": "d73b654e-cd05-42ed-bed9-c531f00232ac",
+      "result_id": "0fb31573-82ba-4185-a11d-a35a3bb64894"
+    },
+    {
+      "claim_id": "fe3d3b78-2bfe-4e65-917b-0bc92524ea56",
+      "result_id": "0fb31573-82ba-4185-a11d-a35a3bb64894"
+    },
+    {
+      "claim_id": "23651aca-d654-4864-8bae-ad5626a7ce5e",
+      "result_id": "0fb31573-82ba-4185-a11d-a35a3bb64894"
+    },
+    {
+      "claim_id": "9d780e10-57d5-4b58-805c-dc208406d57d",
+      "result_id": "0fb31573-82ba-4185-a11d-a35a3bb64894"
+    },
+    {
+      "claim_id": "8325eca4-743f-4458-87cd-37c02434d916",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "3923da66-2286-4337-9532-39c60ab40a40",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "f91cf924-b731-41c0-a0db-684f4e06007a",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "bfcc77cc-e917-45a7-9a74-d17c5300de0b",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "0e4fd835-3292-4c98-8e07-ddb53fe0b122",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "88d45f4e-4fd1-4e04-b680-bf93fe681789",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "1b0f9db9-46e0-4c7b-8dab-e6a99d74547d",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "c17fc157-9170-48f5-8c6a-f877b8fa8a14",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "8fde419a-2cb7-4bf3-85b9-1e859e6f85e8",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "ded2e5a1-55b0-43fa-a614-eb0e61a16396",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "99816d84-f846-46b8-96a0-47b9c670189b",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "3450e0a2-6770-4692-a5b1-0ee1f6927300",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "ac8085b7-820a-4268-b145-760e11379438",
+      "result_id": "3b998324-17ed-437c-9d5a-95dc6a1a41a7"
+    },
+    {
+      "claim_id": "0ebbea79-8c93-4669-9a9a-7f302c8ba274",
+      "result_id": "0d97cc88-8f07-4049-bfcb-a7343fdf4eae"
+    }
+  ],
+  "comparisons": []
+}

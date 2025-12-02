@@ -1,0 +1,592 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Optimization of formaldehyde fixation conditions for PRIMMUS identified 0.5% FA as the minimum concentration for effective fixation with reversible crosslinking, while higher concentrations (up to 4% FA) can be used with DAPI but not PI for DNA content measurement. High FA concentrations reduce reverse-crosslinking efficiency and create irreversible protein-protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C56 provide systematic experimental evidence from SDS-PAGE, immunoblotting, and flow cytometry demonstrating the effects of different FA concentrations on protein crosslinking, reverse-crosslinking efficiency, and DNA staining quality. The data support the optimization of fixation conditions for downstream MS analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Methanol permeabilization is superior to Triton-X100 for PRIMMUS, as Triton-X100 causes significant depletion (31%) of proteins enriched in mitochondrial and membrane GO terms, while methanol shows minimal protein loss (97% of proteins vary <2 fold) with reproducible, systematic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 present SILAC-based quantitative comparisons demonstrating that methanol permeabilization preserves protein recovery better than Triton-X100, with statistical support (Fisher's exact test p<1\u00d710^-25 for mitochondria, p<1\u00d710^-20 for membrane) and technical reproducibility (s.d. = 0.15 between replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PRIMMUS successfully combines FACS separation of cell cycle phases using H3S10ph immunostaining with MS-based proteomics, achieving >96% purity for mitotic cells and identifying 3,696 proteins (3,162 with \u22652 peptides) with minimal interference from FA-induced modifications (<1% of peptides) or antibody-derived peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C64-C71 demonstrate the successful implementation of PRIMMUS with high-purity cell sorting (>96% mitotic cells, C66), robust protein identification comparable to standard methods (C69), and minimal technical artifacts from fixation or antibodies (C70-C71). The methodology is well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Bulk protein abundance increases exponentially across the cell cycle (r\u00b2 = 0.98), with ~1.9-fold increase from a newly divided cell to the next mitosis. An average M phase cell contains ~1.6\u00d7 the protein molecules of an average G1 cell, consistent with historical radioactive pulse-chase experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 present SILAC-based quantitative measurements showing exponential protein accumulation with strong statistical fit (r\u00b2 = 0.98, C75) and provide mechanistic explanation for the observed 1.6\u00d7 ratio (C74). The findings are validated by comparison with decades-old radioactive pulse-chase data (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Different protein functional classes show distinct accumulation patterns across the cell cycle: DNA replication proteins increase more during S phase than housekeeping proteins, histones double but plateau after S phase, Aurora kinase A increases >8-fold, while stress response/apoptosis proteins (p53, NKAP, BAX, BID) remain relatively constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 demonstrate protein-specific accumulation patterns with quantitative data from SILAC analysis. The histone plateau after S phase (C82) is consistent with known biology of histone synthesis regulation, and the constant levels of stress response proteins (C83) represent a novel observation with biological implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C168"
+    ],
+    "result": "PRIMMUS provides up to 5-fold sensitivity advantage over centrifugal elutriation for detecting cell cycle-regulated protein abundance changes due to higher enrichment purities achieved by FACS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C168 present comparative data showing that 14 cell cycle-regulated proteins all show higher ratios in PRIMMUS versus elutriation datasets (Figure 3E), with quantitative demonstration of up to 5-fold sensitivity gain. The conclusion is well-supported by direct experimental comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PRIMMUS is compatible with phosphoproteomics analysis, identifying 4,500 phosphorylation sites on 1,558 proteins with no significant difference in phosphopeptide identification rate compared to control cells (p>0.05). Most sites are phosphoserines (83.2%), with >60% matching proline-directed kinase motifs, and quantitation is highly reproducible between replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 demonstrate successful phosphoproteomics application of PRIMMUS with appropriate statistical validation (p>0.05, C85), comprehensive site identification (C86), and high reproducibility shown by Pearson correlations (C92-C93). The phosphorylation site distribution and motif enrichment are consistent with expected CDK/MAP kinase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "34% of quantitated phosphorylation sites peak in mitosis, significantly less than reported in nocodazole-arrested HeLa cells. Phosphorylation sites upregulated in both datasets are enriched for 'cell cycle' and 'mitosis' GO terms, while sites specifically upregulated in the HeLa arrest-release dataset are enriched for 'RNA splicing' rather than cell cycle functions, suggesting physiological differences between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 present comparative analysis with appropriate GO enrichment statistics showing differential functional enrichments between PRIMMUS and arrest-based methods. The interpretation that these differences reflect physiological differences (C99) is reasonable but remains inferential. The comparison highlights potential artifacts of synchronization methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "115 'early riser' phosphorylation sites show significantly increased phosphorylation in G2 phase, are enriched in nuclear/nuclear envelope/chromatin proteins, contain optimal CDK consensus motifs, and show higher M-phase phosphorylation ratios than 'late risers'. These sites are unlikely to result from mitotic cell contamination given high FACS purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 identify a novel class of phosphorylation sites with consistent functional and sequence characteristics. The enrichment in CDK motifs (C105), subcellular localization (C102), and higher M-phase ratios (C106) provide converging evidence. The argument against contamination (C101) is reasonable given >96% purity demonstrated earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "TPX2 phosphorylation at S738, an 'early riser' site with CDK consensus motif, is functionally important for spindle formation and mitotic progression. Both phosphodefective (S738A) and phosphomimetic (S738D) mutations cause spindle defects, with the phosphomimetic mutant showing mitotic delay, though phenotypes are less severe than complete TPX2 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C115 provide functional validation of the early riser phosphorylation site through mutant analysis. The observation that both S738A and S738D mutations cause defects (C111-C112) with the phosphomimetic showing mitotic delay (C114) supports a regulatory role. The less severe phenotypes compared to depletion (C112) suggest the site modulates rather than abolishes TPX2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "PRIMMUS provides the first proteome-wide analysis of protein abundance between mitotic subphases (prophase, prometaphase, anaphase) by using H3S28ph and CycA co-staining to distinguish four mitotic subpopulations, achieving high enrichment efficiencies (>92-95% for prophase, prometaphase, anaphase) though telophase/cytokinesis cells are excluded by the gating strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C116-C124 demonstrate successful separation of mitotic subphases with high purity validated by immunofluorescence microscopy (C122). The rationale for using H3S28ph and CycA is well-supported by their known biology (C116-C120). The acknowledgment that telophase/cytokinesis cells are excluded (C123-C124) is appropriate transparency about method limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Proteomic analysis of mitotic subphases identified >8,700 proteins across three biological replicates, with 136 proteins showing significant abundance changes (Z-score ~1.8 fold at 95% confidence with positive correlation between replicates). Most proteins (98.5%) show no significant change, and 79% of decreasing proteins show decrease coincident with CycA+ prometaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 present comprehensive proteomic data with appropriate statistical criteria (Z-score cutoff and replicate correlation, C127). The finding that most proteins remain stable (C128) and the clustering of protein decreases with CycA+ prometaphase (C129) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Cyclin A2 shows high levels in prophase and PM1 with marked decrease in PM2 and anaphase, while cyclin B isoforms (B1 and B2) remain constant through prophase-PM2 and decrease to 25-35% of prophase levels in anaphase, consistent with APC/C-mediated degradation at the metaphase-anaphase transition. GAPDH remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 demonstrate expected cyclin degradation patterns that validate the sorting strategy and serve as positive controls. The cyclin A2 profile (C130) matches the sorting strategy based on CycA staining, and cyclin B degradation in anaphase (C131-C132) is consistent with known APC/C activity. GAPDH stability (C133) serves as an appropriate negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Three proteins cluster with cyclin A2 degradation: ATAD2 (~50% reduction in prometaphase), GMNN (~60% reduction in prometaphase with further decrease to ~20% in anaphase), and RRM2 (significant decrease in prometaphase coincident with cyclin A2). RRM2 is an essential, cell cycle-regulated subunit of ribonucleotide reductase previously shown to be degraded by APC/C-Cdh1 and Cyclin F/SCF during anaphase/G1 and G2, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C142 identify novel proteins co-degrading with cyclin A2, with RRM2 being particularly surprising (C142) given previous reports of G2 and anaphase/G1 degradation (C141). The observation is well-supported by MS data and represents a significant finding, though the prometaphase degradation timing differs from prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "RRM2 prometaphase degradation is validated by multiple orthogonal approaches: antibody specificity confirmed by siRNA depletion and correlation with mRNA across tissues; flow cytometry in NB4 cells and immunostaining in FUCCI U2OS cells show RRM2 peaks in G2/M with no significant G2 decrease; RRM2 levels are markedly decreased in PM2 versus PM1 in both NB4 and U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 provide extensive validation of the RRM2 finding through antibody validation (C143-C144), cell cycle profiling in multiple cell lines (C145-C147), and direct comparison of prometaphase subpopulations (C148-C149). The convergence of evidence from multiple methods and cell lines strongly supports the conclusion (C150).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "RRM2 prometaphase degradation occurs in the presence of active SAC, is sensitive to MG-132 (proteasome inhibitor) and MLN-4924 (NEDDylation/CRL inhibitor) but not to APC/C inhibition (apcin + proTAME), indicating degradation via a MLN-4924-sensitive proteasomal pathway, probably involving an SCF complex such as cyclin F/SCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C156 provide mechanistic dissection of RRM2 degradation through pharmacological inhibitor studies. The differential sensitivity to MLN-4924 versus APC/C inhibitors (C153-C154) clearly distinguishes the pathway. The conclusion of SCF involvement (C155) is well-supported, though the specific identification of cyclin F/SCF (C156) is appropriately labeled as speculation based on prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C162",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "PRIMMUS provides a flexible, general approach for quantitative proteomic studies on cell subsets isolated by FACS using intracellular antigen staining, representing the first MS-based proteomic analysis of intra-mitotic phase cells from asynchronous cultures and the first example of combining permeabilized, fixed, intracellular immunostained cells with FACS and MS-based proteomics. The method enhances sensitivity by analyzing specific cell subsets where changes occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 accurately summarize the methodological contribution and novelty of PRIMMUS. The claims of 'first' (C164-C165) are appropriately qualified and supported by the comprehensive literature review in the introduction. The generalizability (C166) and sensitivity enhancement (C167) are supported by the experimental data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "PRIMMUS avoids artifacts from drug-induced cell cycle arrest by capturing cells 'frozen in motion' through FA fixation. BID protein levels remain constant across the unperturbed cell cycle in PRIMMUS, consistent with elutriation data, whereas BID is upregulated by CDK1 inhibitor RO-3306 arrest at the G2/M border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 demonstrate that PRIMMUS avoids stress-induced artifacts documented in the authors' previous work (C169, C171). The BID example provides specific validation, showing constant levels in PRIMMUS (C172) versus upregulation with arrest (C171), supporting the advantage of the minimally perturbed approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Individual proteins deviate from bulk exponential protein accumulation: histones (3-5% of total protein) remain flat between G2 and M consistent with coupling of DNA replication and histone synthesis, while stress response/apoptosis proteins (p53, etc.) remain relatively flat across the cell cycle, causing their effective intracellular concentrations to decrease as the cell cycle progresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C181 identify biologically meaningful deviations from bulk protein accumulation. The histone plateau (C179) is well-supported by known biology and citations. The observation about stress response proteins (C180) and the inference about decreasing effective concentrations (C181) are logical and supported by the data, though functional consequences remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Only ~1.5% of proteins significantly decrease in abundance across mitotic subphases. RRM2 decreases during prometaphase, with levels correlating with CycA during mitosis in NB4 cells and degrading in early mitosis coincident with or shortly after cyclin B1 nuclear translocation in U2OS cells. The decrease is prevented by MLN-4924 or MG-132, consistent with cullin E3 ubiquitin ligase and proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 synthesize the mitotic subphase analysis focusing on RRM2 as a key finding. The low percentage of changing proteins (C182) highlights the specificity of the observation. The convergence of evidence from multiple cell lines (C183-C185) and mechanistic studies (C186) strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "PRIMMUS is compatible with cell cycle-regulated phosphorylation analysis. Essentially all significantly changing phosphorylation sites peak during mitosis, with a subset of 'early risers' showing increased phosphorylation in G2. Early risers share functional similarities including enrichment in CDK substrate motifs and localization to chromatin and nuclear envelope, potentially reflecting mitotic entry kinase activity from Plk1, Cdk1, and Cyclin A-CDK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C193 demonstrate successful phosphoproteomics application with identification of a functionally coherent subset of early rising sites. The mechanistic speculation about mitotic entry kinases (C193) is appropriately qualified and supported by the motif analysis and known biology, though direct kinase-substrate relationships remain to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "TPX2 S738 phosphorylation has functional consequences on spindle formation. Mutation to either non-phosphorylatable (S738A) or phosphomimetic (S738D) residues causes defects in bipolar spindle assembly. The residue lies within a C-terminal domain important for recruiting Eg5 to spindle microtubules, and the mutant phenotypes are less severe than loss of the entire C-terminal domain, suggesting phosphorylation modulates but does not abolish Eg5 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C207 provide functional validation with appropriate mechanistic context from prior literature (C206). The interpretation that phosphorylation modulates rather than abolishes function (C207) is well-supported by the comparison of mutant phenotypes with domain deletion phenotypes. This represents successful translation of phosphoproteomics findings to functional biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C157",
+      "C158"
+    ],
+    "result": "All proteomic data are freely available as raw MS files via ProteomeXchange PRIDE (PXD007787), as quantified protein-level data via the Encyclopedia of Proteome Dynamics (www.peptracker.com/epd/), and at various stages of analysis including MaxQuant output and analyzed data in supplementary files.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C157-C158 describe comprehensive data availability through multiple repositories and formats, meeting current standards for data sharing and reproducibility. This is a straightforward factual claim about data deposition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on cell cycle biology: The cell cycle consists of G1, S, G2, and M phases defined by DNA replication and mitosis. Cyclins drive cell cycle progression through temporally restricted expression and regulated degradation, with cyclin A increasing during S-phase and being targeted for APC/C-mediated degradation during prometaphase. Mitosis is further divided into subphases characterized by reorganization of subcellular architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16, C19-C20 present established cell cycle biology that provides necessary context for the study. These are well-established facts supported by the cited literature and represent standard knowledge in the field rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Previous work by the authors analyzed gene expression and protein abundance during interphase using centrifugal elutriation, which minimizes physiological perturbation but has limitations in resolution, particularly for separating mitotic from G2 cells. In contrast, G2 and mitotic cells can be efficiently distinguished using intracellular immunostaining and flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38-C41 provide context from the authors' previous work and establish the rationale for developing PRIMMUS. These claims are supported by appropriate citations and describe the limitations that motivated the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on mitotic regulation: Centrosome separation depends on Cdk1, Plk1, and Eg5, with improper timing leading to chromosomal instability. TPX2 promotes Eg5 recruitment to spindle microtubules, and TPX2 mutants lacking the Eg5-interaction domain cause spindle defects. Scheduled protein degradation is crucial for genome stability, and disruption of cyclin degradation causes nuclear abnormalities and chromosomal instability. Mitotic subphases last minutes with cell-to-cell variability, and synchronization methods may induce artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C21-C27 provide relevant background on mitotic regulation and technical challenges that motivate the study. These are well-supported by citations to prior literature and establish the biological and technical context for PRIMMUS development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background on proteomics methods: MS-based proteomics enables large-scale protein detection and quantitation, but bulk measurements obscure cell population heterogeneity. CyTOF combines flow cytometry with MS but has lower proteome coverage and limited PTM detection compared to MS-based proteomics. Previous FACS-MS studies used cell surface markers to avoid permeabilization, and problems with protein loss have been encountered with fixed, permeabilized cells. Neither fluorescence reporters nor cell surface markers effectively distinguish mitotic subphases for FACS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 provide technical background on proteomics and flow cytometry methods, establishing the gap in methodology that PRIMMUS addresses. These claims are well-supported by citations and accurately describe the state of the field and technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C163"
+    ],
+    "result": "Discussion of technical challenges: Mitotic subphases are exceedingly short (minutes) with significant cellular heterogeneity in phase dwell times, which can be accounted for in time-lapse imaging but presents challenges for biochemical analysis. Centrifugal elutriation is an alternative to FACS for interphase cells but has lower resolution and does not efficiently separate G2 and M phase cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161, C163 discuss technical challenges and alternative methods, providing context for why PRIMMUS represents an advance. These are supported by appropriate citations and represent fair assessment of alternative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "PRIMMUS advantages over live cell approaches: FACS separation of live cells can induce cellular stress that rapidly alters the proteome. Most live cell strategies require fluorescent-tagged fusion proteins. PRIMMUS avoids exogenous tagged proteins and provides a general strategy applicable to both cultured cell lines and primary cells isolated ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 present logical arguments about advantages of PRIMMUS over live cell approaches. The concerns about stress from live cell FACS (C173-C174) are reasonable inferences, though not directly tested. The advantages of avoiding tagged proteins (C176) are clear and well-stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Literature on RRM2 regulation: RRM2 is targeted for degradation by Cyclin F/SCF during G2, and several studies show co-immunoprecipitation of RRM2 and Cyclin F in asynchronous cell extracts. Disruption of the Cy motif in RRM2 stabilizes RRM2 levels and increases DNA pools and genome mutation frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C189 accurately summarize prior literature on RRM2 regulation, providing context for the novel finding of prometaphase degradation. These are well-supported by appropriate citations and represent fair characterization of previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Discussion of early riser phosphorylation sites: Sites changing most in G2 (besides DNA replication factors) localize to nuclear pore and nuclear envelope, with several sites containing both Plk1 and Cdk substrate motifs. Nuclear envelope proteins including lamin B and NUP153 are likely Cyclin A/CDK2 substrates, though immunoprecipitation data suggest overlap with Cyclin B targets. Early rising phosphorylations showing increased M-phase levels are consistent with increasing CDK activity in the transition from cyclin A/CDK2 to cyclin B/CDK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C198 provide detailed analysis and interpretation of early riser phosphorylation sites with appropriate integration of prior literature. The interpretations are reasonable and well-supported by the data and citations, though direct kinase-substrate relationships remain to be established experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Comparison with HeLa arrest-release dataset: Phosphorylation sites differing between PRIMMUS and the HeLa nocodazole-arrest dataset show preferential functional GO annotations, with PRIMMUS-specific sites enriched for 'cell cycle' and 'mitosis' while HeLa-specific sites are enriched for 'splicing'. Differences could reflect cell-type specificity or methodological differences (FACS vs. nocodazole arrest), as cell cycle arrests can induce proteomic changes not observed in minimally perturbed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C203 present comparative analysis with appropriate speculation about potential causes of differences. The GO enrichment analysis (C200) provides objective support for functional differences. The proposed explanations (C201-C202) are reasonable hypotheses, and the citation of prior work on arrest artifacts (C203) provides supporting context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "Discussion of TPX2 biology: Eg5 is transported poleward in a dynein-dependent manner during early mitosis and reverses direction in anaphase. In TPX2-depleted cells, Eg5 moves toward microtubule plus-ends in early mitosis, showing TPX2 is needed to couple Eg5 to dynein. TPX2 is nuclear throughout interphase with a small fraction at the centrosome in prophase in mammalian cells, and evidence in plant cells suggests a role during early prophase. TPX2 also has nuclear roles in DNA damage response, so phosphorylation may regulate multiple events throughout the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C214 integrate prior literature on TPX2 biology to provide context for the S738 phosphorylation finding. These are well-supported by appropriate citations and provide reasonable speculation about potential functions (C214) while acknowledging uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "Future applications of PRIMMUS: The workflow can be extended by combining with MS-based techniques for identifying protein interactions and complexes. PRIMMUS is complementary to recent studies using automated fluorescence imaging of fixed, immunostained cells. FA-fixed cells are compatible with RNA-seq and ChIP studies, so combining proteomics with these approaches would expand analysis of gene expression in rare or biochemically well-defined subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C215-C218 present reasonable speculation about future applications of PRIMMUS with appropriate citations to relevant methods. However, these are prospective statements about potential applications rather than demonstrated results. The compatibility of FA fixation with RNA-seq and ChIP (C217) is stated as established knowledge, but the actual combination with PRIMMUS (C218) remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

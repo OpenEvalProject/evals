@@ -1,0 +1,2011 @@
+{
+  "submission": {
+    "id": "5aafe063-735d-4b55-9d56-27db88d074a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:14:57.411008Z",
+    "updated_at": "2025-12-02T01:14:57.411008Z"
+  },
+  "content": [
+    {
+      "id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "submission_id": "5aafe063-735d-4b55-9d56-27db88d074a4",
+      "content_type": "manuscript",
+      "content_text": "# Optogenetic dissection of descending behavioral control in Drosophila\n\n## Authors\n\n- Jessica Cande<sup>1</sup>\n- Shigehiro Namiki<sup>1</sup> ([ORCID: 0000-0003-1559-799X](https://orcid.org/0000-0003-1559-799X))\n- Jirui Qiu<sup>3</sup>\n- Wyatt Korff<sup>1</sup> ([ORCID: 0000-0001-8396-1533](https://orcid.org/0000-0001-8396-1533))\n- Gwyneth M Card<sup>1</sup> ([ORCID: 0000-0002-7679-3639](https://orcid.org/0000-0002-7679-3639))\n- Joshua W Shaevitz<sup>4</sup>\n- David L Stern<sup>1</sup> ([ORCID: 0000-0002-1847-6483](https://orcid.org/0000-0002-1847-6483)) \u2020\n- Gordon J Berman<sup>3</sup> ([ORCID: 0000-0003-3588-7820](https://orcid.org/0000-0003-3588-7820)) \u2020\n\n### Affiliations\n\n1. Janelia Research Campus Howard Hughes Medical Institute Ashburn United States\n2. Research Center for Advanced Science and Technology University of Tokyo Tokyo Japan\n3. Department of Physics Emory University Atlanta Georgia\n4. The Lewis-Sigler Institute for Integrative Genomics Princeton University Princeton United States\n5. Department of Physics Princeton University Princeton United States\n6. Department of Biology Emory University Atlanta Georgia\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn most animals, the brain makes behavioral decisions that are transmitted by descending neurons to the nerve cord circuitry that produces behaviors. In insects, only a few descending neurons have been associated with specific behaviors. To explore how descending neurons control an insect\u2019s movements, we developed a novel method to systematically assay the behavioral effects of activating individual neurons on freely behaving terrestrial D. melanogaster. We calculated a two-dimensional representation of the entire behavior space explored by these flies, and we associated descending neurons with specific behaviors by identifying regions of this space that were visited with increased frequency during optogenetic activation. Applying this approach across a large collection of descending neurons, we found that (1) activation of most of the descending neurons drove stereotyped behaviors, (2) in many cases multiple descending neurons activated similar behaviors, and (3) optogenetically activated behaviors were often dependent on the behavioral state prior to activation.\n\n## Introduction\n\nAs animals navigate a dynamic environment, their survival depends on their ability to execute specific motor programs and to adjust motor output in response to external stimuli. While the brain performs computations essential for behavior, the motor circuits that directly control behavior are located close to the muscles that they control in the vertebrate spinal cord and insect ventral nerve cord. Information to drive motor patterns must therefore be transmitted from the brain to the nerve cord to direct behavior. Since there are many fewer descending neurons than neurons in the central brain, descending neurons generate an information processing bottleneck, which may generate a fundamental problem in information coding.\n\nIn flies, descending commands from the brain to the ventral nerve cord are transmitted through an estimated 250\u2013550 pairs of descending neurons that arborize in 20 highly\u00a0conserved clusters in the brain involved in sensory processing and motor behavior (Gronenberg and Strausfeld, 1990; Hsu and Bhandawat, 2016). Each descending neuron extends a single axon\u00a0through the neck connective to the ventral nerve cord, where they synapse onto interneurons associated with leg, neck, and wing motor circuitry (Namiki et al., 2018).\n\nLittle is known about how so few neurons \u2013 approximately 0.5% of all neurons in the fly (Alivisatos et al., 2012) \u2013 encode signals from the brain to control the full range of movements performed by a freely moving fly. Several potential models have been suggested. One possibility is that, as with vertebrates, many stereotyped insect behaviors, such as walking, flying, or \u2018singing\u2019 can be decomposed into individual motor modules controlled by central pattern generators located in the ventral nerve cord. Several recent findings in Drosophila melanogaster, together with earlier electrophysiological studies in larger insects, support this idea. Activation of some individually\u00a0identifiable descending neurons triggers specific motor outputs, such as courtship song (von Philipsborn et al., 2011) backwards walking (Bidaye et al., 2014), or escape behavior (King and Wyman, 1980). However, some descending neurons modify motor programs, rather than trigger them. For example, cricket walking initiation, speed, and turning appear to depend on separately encoded descending commands (B\u00f6hm and Schildberger, 1992; Gras and Kohstall, 1998). Alternatively, motor activity may result from the summed activity of multiple descending neurons (Heinrich, 2002). For example, a cluster of descending neurons linking fly visual centers in the brain to the flight apparatus in the ventral nerve cord (Strausfeld and Gronenberg, 1990; Namiki et al., 2018) supports the idea that at least some descending neurons may function this way.\n\nDescending neuron function may also be altered by behavioral state. For example, descending neuron sensory responses have been shown to be modified by locomotor state (Staudacher and Schildberger, 1998). This kind of modulation has been observed in other contexts, such as the effect of the neuromodulator pyrokinin on the oscillatory mechanisms underlying the crustaecean gastric mill central pattern generator (Marder, 2011). However, it has not previously been possible to undertake a systematic analysis of the context dependency across the descending neuron population.\n\nSystematic dissection of descending motor control is challenging for two reasons. First, it has been difficult to precisely manipulate a large number of descending neurons individually in freely behaving animals. Second, we have not had a high-throughput, unbiased behavioral phenotyping pipeline capable of objectively categorizing all of an individual\u2019s movements. Historically, insect descending neuron anatomy, connectivity and function have been described by backfilling neurons with dye and recording from individual neurons in locusts, grasshoppers, and cockroaches (for a review see [Strausfeld et al., 1984]), with more recent studies performing similar experiments in flies (Hsu and Bhandawat, 2016). While this approach has allowed researchers to describe the anatomy and electrophysiological responses of individual neurons, it is inherently low throughput and biased toward larger or otherwise more accessible neurons. Additionally, because experiments are typically carried out on immobile preparations, only in rare cases have investigators been able to link individual neurons to behavior (Staudacher and Schildberger, 1998). While recent technical and genetic advances in the model fly Drosophila melanogaster have improved our ability to access and manipulate individual descending neurons, to date only a handful of Drosophila descending neurons have been linked to specific motor outputs (von Philipsborn et al., 2011; Bidaye et al., 2014; Zacarias et al., 2018; von Reyn et al., 2014).\n\nTo assess how descending neurons control motor behaviors on a system-wide scale, it will be necessary to move beyond isolated examples and to describe the behavioral functions of large numbers of descending neurons. Our goal was to identify all the behavioral phenotypes observable in one particular setting, freely behaving flies moving within a two-dimensional arena, for many descending neurons, without any a priori expectation about the neurons\u2019 effects on behavior. Namiki et al. (2018) created a collection of transgenic Drosophila strains that target descending neurons using the split-GAL4 intersectional system (Luan et al., 2006; Pfeiffer et al., 2010) in a cell-type specific manner. We screened 130 of the sparsest lines in this collection, targeting approximately 160 neurons that are divisible into 58 distinct anatomical cell-types. Forty of these cell types consist of a single pair of bilaterally symmetric descending neurons, while the remaining 18 categories target populations of 3 to 15 descending neurons with similar neuroanatomy. We used this split-GAL4 collection to drive the expression of the red-shifted channel\u00a0rhodopsin CsChrimson (Klapoetke et al., 2014) in specified subsets of descending neurons, allowing us to photo-activate these neurons in a temporally precise fashion. We combined these genetic reagents with a recently described method for objective, quantitative analysis of behavior (Berman et al., 2014) to comprehensively identify the behaviors associated with the activation of specific neurons in an unbiased fashion. Unlike supervised machine learning approaches for classifying behavior, this approach does not rely on a human-trained classifier to decide which behaviors are of interest. Instead, it captures a wide range of movements by converting high-dimensional postural dynamics into a two-dimensional map using dimensionality reduction techniques (Berman et al., 2014). Using this method, we associated 80% of the descending neurons in our collection with specific behaviors.\n\nWe have generated a behavioral dataset that comprehensively describes the activation phenotypes of roughly one third to one half of the total number of fly descending neurons in the context of freely walking flies. The size of this dataset has allowed us to move beyond individual examples to extract general features of descending neuron function, and therefore to consider how these neurons might encode information to modulate behaviors. We find that, with a few exceptions, descending neuron control of behavior appears to be largely modular. In addition, we find many cases in which descending neuron function is context dependent, even for a single fly confined to a two-dimensional substrate.\n\n## Results\n\n### Establishing a framework for large-scale analysis of descending neuron activation phenotypes\n\nMapping fly behavior using postural dynamics requires high temporal and spatial resolution video data from a large number of animals. Accordingly, we built a red light activation apparatus with an array of 12 USB cameras that allowed us to film 12 flies in separate chambers simultaneously at high resolution (Figure 1A). We crossed each split-GAL4 line to a UAS-CsChrimson line and filmed six experimental progeny that had been fed retinal, a co-factor necessary for neuronal activation via channelrhodopsin, and six genetically identical control flies whose food had not been supplemented with retinal. The flies were backlit using custom light tables, each consisting of an array of infrared and red LEDs covered by a diffuser. Each chamber was a 3 cm \u2018fly bubble\u2019 coated with silicone to encourage flies to remain on the flat floor of the chamber, which was in the focal plane of the camera (see Materials and methods). Each recording consisted of 30 trials of a 15 s pulse of red light followed by a 45 s recovery interval (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig1-v2.jpg)\n\n**Figure 1.:** (A) The red light activation rig. Six no retinal control flies and six retinal fed experimental flies were mounted in parallel in individual 3 cm diameter plexiglass bubbles on top of three custom light boards with constant 850 nm infrared light and variable 617 nm red light. The red LEDs were repeatedly turned off and on for 45 and 15 s, respectively. Each fly was filmed at 150 \u00d7 150 pixel, 100 fps resolution by a single camera. Video data was then aligned and processed, and the line was characterized for its occupancy in the descending neuron behavior space with respect to red light activation and controls. (B) A 2D representation of behaviors in the descending neuron video dataset was generated by applying a probability density function to all the embedded data points (scale bar), which was then convolved with a Gaussian (\u03c3\u00a0=\u00a01.5) (C) Localization of various behaviors within the descending neuron behavior space seen in (B), based on human curation of watershedded regions in the space (Figure 1\u2014figure supplement 2, Videos 1\u20136). Note that as locomotion behaviors move from left to right along the bottom of the map, the fly\u2019s running speed increases.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) A watershedding algorithm was used on the behavior space in Figure 1B to identify local density maxima, which represent stereotyped behaviors. (B) Numbered watershedded regions. These correspond to videos underlying all the watershedded regions (Video 1 through S6) which were examined to create the human curated version of the behavior space in Figure 1C.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** For most movies, between 90%\u00a0and\u00a095% of frames embedded, with very little difference between when the red light is on and when the red light is off, indicating that activated behaviors are well represented in the behavior space. Failure to embed is usually indicative of imaging flaws, for example when part of the fly was out of the field of view of the camera.\n\nIf the descending neuron(s) labeled by a particular split-GAL4 line are involved in triggering, maintaining, or modulating a particular behavior, then activating these neurons with CsChrimson may be sufficient to activate that behavior. To identify behavioral phenotypes in an unbiased manner, we utilized the behavior mapping methods described in Berman et al. (2014). First, we generated a comprehensive \u2018behavior space\u2019 of stereotyped actions that single flies could produce in our assay. We collected a dataset of approximately 700 million images, which included behaviors recorded from activation of descending interneuron split-GAL4 lines, previously characterized sparse GAL4 drivers (fruitless-GAL4 and pIP10) that trigger courtship-related behaviors (Stockinger et al., 2005; von Philipsborn et al., 2011), and interneuron drivers targeting the flight neuropil. The additional lines that are not part of the descending neuron screen were included to sample fly behaviors as widely as possible, allowing for higher resolution mapping within the space of behaviors. We computed the behavior space by (1) aligning video images (Figure 1A), (2) decomposing the pixel value dynamics (which correspond to the fly\u2019s posture changes) into a low-dimensional basis set using principal component analysis (Figure 1\u2014figure supplement 1), (3) projecting the original pixel values onto this basis set and transforming those values using a spectral wavelet function to produce a time series that was (4) embedded into a two-dimensional \u2018behavior space\u2019 (Figure 1B) using t-distributed Stochastic Neighbor Embedding (t-SNE) (van der Maaten and Hinton, 2008).\n\nEach position in the behavior space corresponds to a unique set of postural dynamics. Nearby points represent similar motions, that\u00a0is those involving related body parts executing similar temporal patterns. By observing the video data underlying sub-regions of the behavior space (Figure 1\u2014figure supplement 2 and Videos 1\u20135), we generated a human-curated version of the behavior space to aid interpretation (Figure 1C). In this behavior space, anterior directed movements such as eye/antennal grooming and proboscis extension are located at the top (Video 1). Anterior-directed foreleg movements are on the upper left side (Video 2). Extremely slow or still postures are on the upper right side (Video 3), and complex wing and abdomen movements such as body and abdomen grooming, abdomen bending and wing extension are in the center (Video 4). Locomotion, ranging from slow (left) to fast (right) is at the bottom (Video 5).\n\n![Video 1.](https://cdn.elifesciences.org/articles/34275/elife-34275-video1.mp4.jpg)\n\n**Video 1.:** Each movie shows a sequence of highlighted regions in the space, followed by a selection of 64 sequences of translationally and rotationally aligned fly behavior from that region. This selection is performed at random (amongst all sequences lasting at least 0.2 s within that region), showing how the raw videos are translated into the map. Because of this randomness, there are occasional image processing errors, cases where the fly goes out of the camera range, and instances of flies writhing upside-down. Note, however, that most of these sequences are sequestered to particular locations within the space, and that no descending neuron line predicts an increase in activity within these regions.\n\n![Video 2.](https://cdn.elifesciences.org/articles/34275/elife-34275-video2.mp4.jpg)\n\n**Video 2.:** Each movie shows a sequence of highlighted regions in the space, followed by a selection of 64 sequences of translationally and rotationally aligned fly behavior from that region. This selection is performed completely at random (amongst all sequences lasting at least 0.2 s within that region), showing how the raw videos are translated into the map. Because of this randomness, there are occasional image processing errors, cases where the fly goes out of the camera range, and instances of flies writhing upside-down. Note, however, that most of these sequences are sequestered to particular locations within the space, and that no descending neuron line predicts an increase in activity within these regions.\n\n![Video 3.](https://cdn.elifesciences.org/articles/34275/elife-34275-video3.mp4.jpg)\n\n**Video 3.:** Each movie shows a sequence of highlighted regions in the space, followed by a selection of 64 sequences of translationally and rotationally aligned fly behavior from that region. This selection is performed completely at random (amongst all sequences lasting at least 0.2 s within that region), showing how the raw videos are translated into the map. Because of this randomness, there are occasional image processing errors, cases where the fly goes out of the camera range, and instances of flies writhing upside-down. Note, however, that most of these sequences are sequestered to particular locations within the space, and that no descending neuron line predicts an increase in activity within these regions.\n\n![Video 4.](https://cdn.elifesciences.org/articles/34275/elife-34275-video4.mp4.jpg)\n\n**Video 4.:** Each movie shows a sequence of highlighted regions in the space, followed by a selection of 64 sequences of translationally and rotationally aligned fly behavior from that region. This selection is performed completely at random (amongst all sequences lasting at least 0.2 s within that region), showing how the raw videos are translated into the map. Because of this randomness, there are occasional image processing errors, cases where the fly goes out of the camera range, and instances of flies writhing upside-down. Note, however, that most of these sequences are sequestered to particular locations within the space, and that no descending neuron line predicts an increase in activity within these regions.\n\n![Video 5.](https://cdn.elifesciences.org/articles/34275/elife-34275-video5.mp4.jpg)\n\n**Video 5.:** Each movie shows a sequence of highlighted regions in the space, followed by a selection of 64 sequences of translationally and rotationally aligned fly behavior from that region. This selection is performed completely at random (amongst all sequences lasting at least 0.2 s within that region), showing how the raw videos are translated into the map. Because of this randomness, there are occasional image processing errors, cases where the fly goes out of the camera range, and instances of flies writhing upside-down. Note, however, that most of these sequences are sequestered to particular locations within the space, and that no descending neuron line predicts an increase in activity within these regions.\n\nRed peaks, or density maxima, represent the fly behaviors observed most frequently in our data set. These tend to be repetitive, stereotyped behaviors, such as walking or grooming, that our analysis methodology is most sensitive at detecting. By definition, we could not detect behaviors occuring over time-scales faster than 50 Hz, the Nyquist frequency of our system. Approximately 93% of all video image data points could be embedded in this space, including approximately equal fractions of frames when the red light was on or off (Figure 1\u2014figure supplement 3), indicating that the majority of red light activated behaviors are well represented in the behavior space. Imaging errors, such as the fly wandering partially out of frame, are randomly distributed within the dataset.\n\n### Entropy of behavior space density provides a quantitative and sensitive measure of optogenetic activation phenotypes\n\nHaving established a behavior space representing the full repertoire of fly behaviors that could be captured with our apparatus, we next examined which parts of this space were occupied when individual or subsets of descending neurons were optogenetically activated by CsChrimson. We focused on 130 split-GAL4 lines that targeted descending neurons with little, or no, extraneous expression in other neurons. We first considered the timing and duration of red light triggered behaviors. If descending neuron activation triggered a particular behavior represented in the behavior space, then the density of that line in the behavior space should shift into the region that represents that behavior during periods of red light activation. For example, upon red light activation, retinal-fed flies expressing CsChrimson in a descending neuron line targeting DNg07 and DNg08 (SS02635) groomed their heads (Video 6). For these lines, we identified regions in the behavior space that displayed a statistically significant shift in density for experimental flies during the first three seconds of red light compared to a window at the end of the recovery period when the red light was off (Figure 2B,C,\u00a0Figure 2\u2014figure supplement 1). This same region in the behavior space did not undergo a significant shift in the control flies (Wilcoxon rank-sum test p<0.05 using the Dunn\u2013\u0160id\u00e1k correction for multiple hypotheses [Sidak, 1967]). Likewise, when considering densities over the whole behavior space in three second sliding windows, the experimental, but not the control, flies shifted into the head grooming region (arrowheads, Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig2-v2.jpg)\n\n**Figure 2.:** (A, D) Entropy of the distribution of the retinal fed experimental flies (red) and non-retinal fed control flies (blue) in the behavior space relative to the timing of red light stimulus onset (red light turned on at t\u00a0=\u00a00 s, the time of red light activation is indicated by dashed lines). The behavior space for experimental flies shows reduced entropy when the flies perform a specific set of behaviors, because flies shift from the full range of normal fly behaviors to a subset of red light-activated behaviors. (B, E) Average density\u00a0\u00b1\u00a0the standard deviation in the head grooming map region indicated in red (inset, upper right) in experimental flies (red) and controls (blue) relative to red light activation. The head grooming region was calculated as the region in the map that experienced a statistically significant shift in density in experimental flies but not controls when comparing the first 3 s (green bar) of the activation period to the last 15 s of the recovery period (Wilcoxon rank sum test, p<0.05, using the Dunn\u2013\u0160id\u00e1k correction for multiple hypotheses). (C, F) Average density in the map over a series of 3 s windows (calculated from six animals, 30 trials each). Red and blue indicate regions of high and low density, respectively. The time \u2018before\u2019 stimulus onset is the average of 30 time periods between stimulations. We found an increase in the amount of \u2018Idle/Slow\u2019 dynamics for experimental flies in the interstitial times between stimulations. Thus, the differences between experimental and control animals in the time \u2018before\u2019 stimulation most likely reflects this increase in the amount of Idle/Slow behavior for experimental animals in the time between stimulation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Densities shown in Figure 2B and E were averaged for six animals over 30 min. Gray bars indicate periods of red light activation.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) While most lines were screened at 5 mW/cm[2], 49 lines that had noor only a weak phenotype at this light level were repeated at 9 mW/cm2 and a higher retinal concentration. Forty-three of these lines acquired a phenotype or a strengthened statistical significance of the previously observed phenotype under these conditions. No lines lost their phenotype at the higher intensity. (B) 10 transient locomotion lines, overlaid in the same behavior space in different colors, were repeated at the lower and higher light intensities and retinal concentrations. The boundaries of the significant regions in the behavior space shift slightly between treatments, but overall the phenotypes remain largely unchanged.\n\n![Video 6.](https://cdn.elifesciences.org/articles/34275/elife-34275-video6.mp4.jpg)\n\n**Video 6.:** This movie displays two different flies from the same line (SS02635) for 10 s before and 10 s during optogenetic stimulation . Red lights on is indicated by the text \u2018RED LIGHT\u2019 appearing in the lower right. Note the change in behavior immediately following stimulation.\n\nTo detect activation-elicited behaviors performed by the experimental animals and the relative timing of these dynamics compared to the red light activation, we looked for a reduction in the entropy of the behavior space density (Figure 2A). Entropy measures the degree of uncertainty inherent in the distribution of the flies in the behavior space. When the red light was off, flies exhibited a range of different behaviors, and the probability that they performed any one behavior was low. This resulted in a low probability density distributed throughout the behavior space and correspondingly high entropy (Figure 2A). Upon red light activation, the experimental fly line engaged in red light triggered behaviors at the expense of other natural behaviors. This increased the probability that a small region within the behavior space showed a relatively high density, generating a drop in entropy whose timing and duration mirrored that of the red light triggered behaviors (Figure 2A, Video 7). We can therefore use entropy as a proxy for the duration and onset of red light triggered movements in the behavior space without needing to know, a\u00a0priori, which behaviors are activated (i.e. which part of the behavior space to examine).\n\n![Video 7.](https://cdn.elifesciences.org/articles/34275/elife-34275-video7.mp4.jpg)\n\n**Video 7.:** Movies show the behavioral space changes from before stimulation, at the onset of stimulation, during stimulation, and after stimulation. Each movie shows the space, averaged over six experimental flies and all 30 LED cycles, for 5 s before, the 15 s during, and 5 s after the onset of stimulation (t\u00a0=\u00a00). Each frame in the video is created by finding all behavioral space positions within a 0.5 s window surrounding the displayed time and convolving each of these points with a two-dimensional gaussian of width 3 (the full movie is of height and width 210 in arbitrary units).\n\nThe region density and entropy are quantitative measurements sensitive to small changes in behavior map distribution. We therefore used these values to identify subtle phenotypes that could not be easily identified by manual inspection of the movies. For example, the activation of descending neuron DNg25 induced a short-lived rapid running phenotype (Figure 2E and F) that could be identified by a transient drop in entropy in the behavior space (Figure 2D) and a transient increase in density in the fast locomotion region of the space (Figure 2E and F, Video 8).\n\n![Video 8.](https://cdn.elifesciences.org/articles/34275/elife-34275-video8.mp4.jpg)\n\n**Video 8.:** These movies show the behavioral space changes from before stimulation, at the onset of stimulation, during stimulation, and after stimulation. Each movie shows the space, averaged over six experimental flies and all 30 LED cycles, for 5 s before, the 15 s during, and 5 s after the onset of stimulation (t\u00a0=\u00a00). Each frame in the video is created by finding all behavioral space positions within a 0.5 s window surrounding the displayed time and convolving each of these points with a two-dimensional gaussian of width 3 (the full movie is of height and width 210 in arbitrary units).\n\n### Comprehensive characterization of descending neuron split-Gal4 line activation phenotypes\n\nWe searched for optogenetically\u00a0induced phenotypes across the entire collection of descending neuron lines by examining the entropy time course of each line (Figure 3). We found that most lines displayed the largest entropy drop immediately after red light activation (Figure 3A). For roughly a third of the lines, this entropy drop persisted throughout the entire red light activation window (Figure 3B). For most of the rest of the lines, however, the entropy drop was transient and diminished after several seconds (Figure 3B). For a minority of lines, the entropy minimum occurred near the middle or end of the activation window (Figure 3B). These dynamics were almost fully absent in the control animals (Figure 3C and D). We reviewed the raw video data for lines displaying entropy minima in the middle or end of the activation window and found that most of these flies performed some action upon red light activation, followed by a pause. This explained why the entropy was lower in the later part of the activation window, because consistent stillness generates a low entropy behavior space (see Figure 2\u2014source data 1 for a line by line description of phenotypes). We therefore performed our system-wide analysis using the first 3 s of the red light activation period, because this time period captured the majority of CsChrimson activated behaviors.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig3-v2.jpg)\n\n**Figure 3.:** Trials were aligned such that the onset of red light activation occured at t\u00a0=\u00a00 s. The red light was turned off at t\u00a0=\u00a015 s. (A) Baseline subtracted entropy (Y-axis) versus time (X-axis) for all experimental animals and all trials. Colors indicate a probability distribution describing the entropy of experimental animals at a given time in the trial. (B) Entropy levels of experimental animals over the course of the aligned trials (X-axis) shown by line (Y-axis). Warm and blue colors indicate high and low entropy, respectively. (C) and (D) Same as (A) and (B), but for the control animals. Lines are presented in the same order as in (B) and (D).\n\nIn our initial analysis, we looked for behaviors produced when our descending neuron lines were activated using a relatively low level of red light, (5 mW/cm2). Under these conditions, 91 of the 130 lines (69%) displayed a statistically significant increase in density of some area of the behavior space. We then re-tested most of the 41 lines that did not produce a significant density increase by driving CsChrimson at higher levels by growing the flies on food containing an increased retinal concentration and exposing flies to higher intensity red light (9 mW/cm2). Under these conditions, 80% of the lines that had previously displayed no phenotype produced a statistically significant increase in density in the behavior space (Figure 2\u2014figure supplement 2).\n\nPooling the data from the low and high activation protocols, we detected statistically significant increases in the behavior space in 119 of the 130 (90%) descending neuron lines (Figure 4A). In 86 cases, we observed an increased density in only a single statistically significant region in the behavior space. However, some lines generated density increases in multiple non-contiguous regions of the behavior space (Figure 4A, examples shown in Figure 4B\u2013D, Videos 9\u201311, Figure 2\u2014source data 1). Many of these cases reflect multiple behaviors performed approximately simultaneously by the flies. For example, a line targeting DNp10 induced anterior reaching movements and wing flicking with similar timing (Figure 4D, red and blue regions, respectively).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig4-v2.jpg)\n\n**Figure 4.:** (A) Most lines (86) increase density in only one region of the behavior space upon red light activation. However, some lines occupy multiple regions in the behavior space. (B\u2013D) Examples of lines that occupy multiple discontinuous regions upon red light activation. Time is indicated on the X-axis, with the red light turned on at T\u00a0=\u00a00 s and off at 15 s. Change in density in the color coded regions in the experimental animals above the controls is indicated on the Y-axis. (B) Line SS01540 targeting descending neuron DNp09; (C) SS02542 targeting descending neuron DNb01; (D) SS01049 targeting descending neuron DNp10. In many cases, as shown here, we observed an increase in region density that appears to occur immediately before the stimulus onset. This increase in density probably results from temporal smoothing of approximately 1 s that is introduced through the wavelet transformation of the behavioral analysis and not due to behavioral anticipation of the light stimulus.\n\n![Video 9.](https://cdn.elifesciences.org/articles/34275/elife-34275-video9.mp4.jpg)\n\n**Video 9.:** These movies show the behavioral space changes from before stimulation, at the onset of stimulation, during stimulation, and after stimulation. Each movie shows the space, averaged over six experimental flies and all 30 LED cycles, for 5 s before, the 15 s during, and 5 s after the onset of stimulation (t\u00a0=\u00a00). Each frame in the video is created by finding all behavioral space positions within a 0.5 s window surrounding the displayed time and convolving each of these points with a two-dimensional gaussian of width 3 (the full movie is of height and width 210 in arbitrary units).\n\n![Video 10.](https://cdn.elifesciences.org/articles/34275/elife-34275-video10.mp4.jpg)\n\n**Video 10.:** These movies show the behavioral space changes from before stimulation, at the onset of stimulation, during stimulation, and after stimulation. Each movie shows the space, averaged over six experimental flies and all 30 LED cycles, for 5 s before, the 15 s during, and 5 s after the onset of stimulation (t\u00a0=\u00a00). Each frame in the video is created by finding all behavioral space positions within a 0.5 s window surrounding the displayed time and convolving each of these points with a two-dimensional gaussian of width 3 (the full movie is of height and width 210 in arbitrary units).\n\n![Video 11.](https://cdn.elifesciences.org/articles/34275/elife-34275-video11.mp4.jpg)\n\n**Video 11.:** These movies show the behavioral space changes from before stimulation, at the onset of stimulation, during stimulation, and after stimulation. Each movie shows the space, averaged over six experimental flies and all 30 LED cycles, for 5 s before, the 15 s during, and 5 s after the onset of stimulation (t\u00a0=\u00a00). Each frame in the video is created by finding all behavioral space positions within a 0.5 s window surrounding the displayed time and convolving each of these points with a two-dimensional gaussian of width 3 (the full movie is of height and width 210 in arbitrary units).\n\nIn other cases, however, multiple activated regions reflect a stereotyped sequence of behaviors. For example, the DNp09 line shown in Figure 4B repeatedly ran and then paused throughout the entire 15 s activation period. The pausing observed in this case has been shown to be a defensive freezing behavior (Zacarias et al., 2018). The increased density in the run region of the behavior space (Figure 4B, red) appeared before the increased density in the paused region (Figure 4B, blue), reflecting the sequential timing of the two behaviors. Running followed by freezing upon DNp09 activation is also reported by Zacarias and colleagues (Zacarias et al., 2018). However, the flies rapidly became asynchronous as they repeated this series of behaviors, so this behavioral series was detected as simultaneous density increases in the running and still regions throughout the red light activation window. A line targeting descending neuron DNb01 displayed a simple behavior series; flies produced an anteriorly directed twitch of the front legs when the red light was turned on (Figure 4C, red region), then froze for the majority of the red light activation period (Figure 4C, black region), and then twitched when the light was turned off (Figure 4C, blue region). Thus, examining the timing of density shifts illuminates the more complicated behavior series produced by red light activation. This level of analysis is provided for all lines in Figure 2\u2014source data 1. To facilitate study of these activation phenotypes by others, we also provide a compilation of videos slowed down 4X showing one second before and after activation for all animals and all trials (available via Dryad https://doi.org/10.5061/dryad.fr89c0c).\n\n### Behavioral effects of descending neuron activation are often context dependent\n\nWhy does activation of some descending neurons result in multiple, distinct behavioral outputs? One possibility is that the behavioral output of some descending neurons depends on the behavioral context of the fly when the descending neuron is activated. To address this possibility, we calculated the mutual information between the density distribution of the experimental flies in the behavior space at 1.5 to 0.5 s before the red light was turned on versus the first second after red light activation. Mutual information is a non-linear measure of the degree of dependence between two variables and is typically measured in units of bits (Cover and Thomas, 2005). The higher the mutual information, the more the first variable, here the behavior of flies immediately prior to red light activation as measured by their distribution in the behavior space at t\u00a0=\u00a0\u22121.5 to \u22120.5 s, informs the value of the second variable, the region of the behavior space occupied in the first second of red light activation.\n\nWe found that all experimental animals displayed non-zero mutual information between the pre- and post-stimulation behaviors (Figure 5A). In addition, for most lines, more information was available in the experimental flies than in the controls (Figure 5B). This means that even in those cases where red light activation produced only one significant region in the behavior space, the fly\u2019s activity prior to red light activation influenced whether or not it performed the behavior. However, lines with multiple red light activated regions in the behavior space were also those with a relatively high level of mutual information (Figure 5A\u2013B). Thus, a given fly\u2019s behavior before red light activation was highly informative of which behavior that fly would perform after red light activation, as indicated by the different significantly activated regions in the behavior space. Figure 5C displays this phenomenon for one of the lines with the highest mutual information, SS02542 (asterisk in Figure 5A and B, also shown in Figure 4C). Here, if the flies were performing an action in the wing/abdomen movement regions of the behavior space prior to stimulation, then they were likely to perform an anterior movement (region 1) immediately following stimulation. Similarly, flies performing anterior grooming were likely to transition to the small anterior twitch region (region 2), and flies that were initially still tended to remain still post-stimulation (region 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mutual information between pre-stimulation and post-stimulation behavior for experimental flies, calculated using the density of the flies in the behavior space at t\u00a0=\u00a0\u22121.5 to \u22120.5 s prior to red light activation versus density at t\u00a0=\u00a00 to 1.0 s after red light activation. Y-axis indicates the mutual information, X-axis is all the lines in order of most to least mutual information, error bars indicate the standard deviation. Lines are color coded by the number of significant regions produced by red light activation, the key is indicated in the upper right, line SS02542 is indicated by an asterisk. (B) Mutual information between pre-stimulation and post-stimulation behavior of experimental flies (X-axis) plotted against the same quantity for the non-retinal fed control flies (Y-axis), with the same color coding as (A). Most experimental animals display stronger mutual information than control flies, implying that descending neuron activation makes fly behavior more dependent on prior state than in control flies. (C) Partial mutual information for SS02542, showing the density at t\u00a0=\u00a0\u22121.5 to 0.5 that has mutual information with the different regions of the behavior space after red light activation indicated in the key in the upper left portion of the figure.\n\n### Individual descending neurons produce mainly stereotyped, modular behaviors\n\nSo far, we have analyzed split-GAL4 lines as if they were a proxy for individual descending neurons or anatomical classes of descending neurons. However, these lines vary in both their strength of expression and in the number and identity of additional cells labeled. To estimate phenotypes for individual descending neurons, we averaged the behavior space densities of multiple lines for those cases where we had multiple lines targeting the same descending neuron (Figure 6). Using this method, and combining it with those descending neurons for which we had only a single representative split-GAL4 line, we estimated phenotypes for 47 of the 58 descending neuron cell types. We have also included six lines and line averages that target two different types of descending neurons cleanly, but for which we have no lines that target each type individually. Twenty-six descending neurons drove locomotion phenotypes and ten drove anterior directed foreleg movements. We also identified six new descending neurons that triggered wing and abdomen movements (plus the previously published pIP10 [von Philipsborn et al., 2011]), two that drove anterior grooming, one that drove abdomen stroking, and four that drove still or slow behaviors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34275/elife-34275-fig6-v2.jpg)\n\n**Figure 6.:** Descending neurons are organized according to the region of the behavior space that they activate (Figure 1). (A) Example illustrating the averaging of two lines to produce an estimated phenotype. Colors indicate the degree to which particular regions are represented on average. Red regions are highly represented, blue less so, and white not at all. (B) Phenotypes for 53 of the 58 descending neurons in the collection, plus pIP10 (von Philipsborn et al., 2011). Some descending neurons are represented by a single clean line, others by averaging multiple clean lines. For averages, the number of lines are indicated under the descending neuron name.\n\nIn general, we found that activation of each type of descending neuron drove behaviors that mapped to a relatively small region of the behavior space. For example, some descending neurons drove slow locomotion, whereas others drove fast locomotion. Only a few, such as DNa01, DNa02 and DNp26, seemed to produce a global increase in locomotor activity. Likewise, we found descending neurons that produced different types of grooming, such as head grooming (DNg07 and DNg08, and DNg12) or abdomen grooming (DNp29), different types of anterior reaching movements (DNg10 versus DNg13) and different types of slow movements (e.g. DNd02 versus DNp02).\n\n## Discussion\n\nUsing optogenetic activation and automated behavioral quantification, we assigned behavioral phenotypes to 80% of the descending neurons cell types in our collection of lines, or one third to one half of the estimated total number of descending neurons present in the fly. Using a dataset of this scope, it is possible for the first time to move beyond isolated examples to consider systems-level trends in how descending neurons control behaviors. We found that activation of most descending neurons drove stereotyped behaviors, that in many cases multiple descending neurons activated the same behaviors, and that activated behaviors were often dependent on prior behavior states.\n\nThere are several, non-mutually exclusive ways a limited number of seemingly highly modular descending neurons could encode the wide range of behaviors undertaken by freely moving animals. First, descending neurons could be more important for triggering and maintaining behaviors than for controlling individual details of a given motor program (Heinrich, 2002). Many motor programs, particularly those controlling repetitive, rhythmic actions such as walking or stridulation, can function in the absence of descending control ([Bentley, 1977; Kien, 1983], for a review on walking circuits see [Ritzmann and B\u00fc Schges 2007]). For example,\u00a0Hedwig, 1992 identified two pairs of descending neurons that control stridulation in grasshoppers. In this system, tonic activation of the descending neurons was sufficient to induce and modulate the activity of the stridulation central pattern generator in the thorax, indicating that the descending neurons play only a limited role in patterning stridulation. Several of our lines, including the DNg07 and DNg08 head grooming line (Figure 2A and B), appear to reflect a similar phenomenon, driving a repeated stereotyped behavior during the entire CsChrimson activation window.\n\nSecond, behaviors might be controlled not by single descending neurons acting as command neurons, but by combinations of descending neurons acting in concert (Heinrich, 2002). For example, several previous studies have illustrated that multiple descending neurons control the same specific behaviors (Kien, 1983; Griss and Rowell, 1986; Rowell and Reichert, 1986; Gronenberg and Strausfeld, 1990; Kien, 1990; Milde and Strausfeld, 1990; Hensler, 1992; Kanzaki et al., 1994; Staudacher, 2001). In these cases, it has been suggested that sufficiently strong stimulation of one neuron in a command cohort or module is sufficient to recruit the activity of the other descending neurons, resulting ultimately in triggering of the behavior (Larimer, 1988). Evidence from neuroanatomy further supports this hypothesis. For example, roughly a third of described descending neurons appear to have unique projection patterns in Drosophila and Calliphora, but the rest share common input and/or output regions in the brain and ventral nerve cord with other descending neurons, suggesting they may act in concert (Gronenberg and Strausfeld, 1990; Milde and Strausfeld, 1990; Namiki et al., 2018). Our data do not allow us to definitively address this question. However, the large number of descending neurons that drive similar patterns of fast locomotion, slow locomotion and anterior reaching in our dataset suggests that, for these motor circuits at least, these neurons may act in concert. Alternatively, it is possible that many of these descending neurons modulate distinct aspects of these motor programs, a potential dynamic that we did not address here.\n\nThird, another way to generate behavioral complexity is by coding different behaviors via combinations of descending neurons. We examined a few lines that target multiple descending neurons. We compared behaviors produced by these \u2018multi-hit\u2019 split-GAL4 lines with lines that targeted the individual neurons and found only weak evidence for the emergence of new behaviors when descending neurons were triggered in combination. For example, both DNa05 and DNd02 produce slightly different phenotypes when activated in combination with DNa07 and DNd03, respectively, as compared to when lines targeting these neurons are activated alone (see Figure 2\u2014source data 1). However, our collection contains, by design, few lines driving expression in combinations of descending neuron types. Therefore, further exploration of this idea will require the generation and characterization of additional lines.\n\nFinally, descending neurons could be re-used in multiple behavioral contexts. While there are to date no published examples of a single descending neuron triggering different context-dependent behaviors, there are multiple cases in which descending neurons exhibit different physiological responses depending on the state of the animal (e.g. walking, flying, courting, etc.) (Olberg, 1983; Strausfeld and Bassemir, 1985; Olberg and Willis, 1990; B\u00f6hm and Schildberger, 1992; Staudacher and Schildberger, 1998; Hedwig, 2000; Staudacher, 2001; Zorovi\u0107 and Hedwig, 2011). Our results strongly support a role for context dependency for two reasons. First, the high level of mutual information between behaviors immediately before and after red light activation seen in lines that have multiple red light activated regions indicates that even within the relatively simple confines of our assay, the behavior of the fly immediately before descending neuron activation biases the behavioral output in many cases. Second, our observation that substrate specific behaviors, such as foreleg tapping, reaching, and locomotion are strongly represented in our dataset, while flight and courtship behaviors are less prevalent suggests that descending neuron outputs may be context dependent. By forcing the flies to remain on a two-dimensional substrate in isolation, we may have observed predominantly indirect results of behaviors that would normally take place in a different context. For example, when we activated a line expressing in descending neuron DNp01, the giant fiber, a neuron known to elicit a rapid escape response initiated by a jump when optogenetically activated (Lima and Miesenb\u00f6ck, 2005) we only detected the flies running after returning back to the ground because the jump was too fast (~30 ms) to be detected in our assay. It is also possible that some of the descending neurons we screened are never naturally activated in the two-dimensional context of walking and that proprioreceptive feedback may have generated abnormal behaviors in our assay.\n\nThere are futher limitations of our dataset. First, behaviors performed more quickly than the Nyquist frequency of 50 Hz for our movies could not be detected. Second, we assayed only behaviors that can be activated when flies are standing and walking. Descending neurons controlling flight-related behaviors, for example, would not be detected. Third, we assayed only males, so any female-specific behaviors may not be identified. Finally, we assayed solitary flies, so any behaviors dependent on social interactions, for example courtship, may not have been detected.\n\nOur objective, quantitative assessment of a descending neuron activation screen provides a foundation for understanding descending neuron functions more broadly. Using similar analytical approaches to study the results of descending neuron activation and inactivation in other behavioral settings in the future will broaden our understanding of how descending neurons direct motor patterns in specific behavioral contexts and reveal how the fly\u2019s rich behavioral repertoire can be encoded with only a few hundred descending neurons.\n\n## Materials and methods\n\n### Fly stocks and fly handling\n\nThe descending neuron split-GAL4 driver collection is described in Namiki et al. (2018). Male flies were crossed to virgin females carrying 20xUAS-CsChrimson-mVenus (Klapoetke et al., 2014) integrated into the attP18 landing site (Markstein et al., 2008) and transferred to Dickson lab power food (1L water, 10 g agar, 80 g Brewer\u2019s yeast, 20 g yeast extract, 20 g peptone, 30 g sucrose, 60 g dextrose, 0.5 g MgSO4*6H20, 0.5 g CaCl2*2H20, 6 mL propionic acid and 7 mL 15% Nipagin). For the initial screen, experimental animals were raised on power food supplemented with 0.2 mM retinal. This concentration was increased to 0.4 mM for animals that were re-assayed at a higher light intensity. All flies (except parental stocks) were handled under 453 nm blue LEDs and reared in dark blue acrylic boxes (acrylic available from McMaster-Carr, # 8505K84) at 22\u00b0C on a 12 hr lights on:12 hr lights off day:night cycle. Individual male flies were collected upon eclosion and housed singly in 2 mL wells in a 96-well \u2018condo,\u2019 with power food (with or without retinal) deposited in the bottom of each well, which was sealed at the top with an airpore sheet (Qiagen #195761). Flies were imaged at age 7\u201312 days, within 4 hr of lights on.\n\n### Data\u00a0collection\n\nSingle flies were loaded into individual trays made from 4.5 mm clear acrylic topped with a fly \u2018bubble\u2019 3 cm in diameter and 4 mm at its tallest point, which was vacuum molded from clear 0.020\u2019 PETG thermoform plastic (WidgetWorks Unlimited) (Berman et al., 2014; Klibaite et al., 2017). PETG was placed in a frame, heated in a Oster Convection Bake pizza oven set at 350 \u00b0F until the plastic started to deform (about 20 s), then placed on a vacuum former (WidgetWorks Unlimited). To further encourage the flies to remain on the two-dimensional acrylic surface, the bubbles were coated with Sigmacote siliconizing reagent 1 day prior to imaging and lightly wiped with ethanol to remove the excess silicone.\n\nFor each descending neuron split-GAL4 line, six retinal-fed experimental animals and six non-retinal-fed control animals were imaged simultaneously. For imaging, flies were placed in individual fly bubbles atop custom light tables (three identical light tables, each imaging four flies). These tables consisted of a custom light board topped with a 0.75\u2019 3D printed white plastic standoff that was lined with infrared reflective tape, and which was capped with a diffuser made from 0.125\u2019 white plexiglass acrylic (available from eplastics.com, # ACRY24470.125PM24 \u00d7 48), which had 50% light transmittance. The light board itself consisted of an array of 256 IR LEDs (Osram Opto SFH 4050-Z, 850 nm wavelength) arrayed in a 16 \u00d7 16 pattern, spaced 7.14 mm apart, and 64 red LEDs (Philips Lumileds, LXM2-PD01-0050, 627 nm) arranged in an 8 \u00d7 8 pattern, spaced 14.28 mm apart. IR and red LED intensity was controlled separately by 0\u20132.5V control voltages, yielding 0-100mA for the IR LEDS and 0\u2013400 mA for the red LEDs. We set the IR LEDs to 1V, which provided even illumination without overheating the flies. We used 0.2V (4.5 mW/cm2) red light in the initial screen and 1.0V (9 mW/cm2) red light when re-screening a subset of lines. All three light tables were connected to a 68-Pin unshielded I/O connector block (National Instruments, CB-68LP), then to an M Series multifunction DAQ board (National Instruments, NI USB-6281), so that all tables could be run simultaneously from a single computer. Each light table was topped with a 10\u201d\u00a0square frame constructed from off the shelf parts from Thorlabs, which supported four 1.3 MP grayscale USB cameras (Point Grey FL3-U3-13Y3M-C, one camera per fly) on optical rails, whose X/Y/Z coordinates could be adjusted relative to the fly bubble. Each camera was fitted with an HR F2/35 mm lens from Thorlabs and an 800 nm longpass filter (Thorlabs, FEL0800). Each set of four cameras was connected to a separate Dell Precision T3600 Tower Workstation containing two 100 GB internal solid state drives, so that two cameras wrote to each solid state drive.\n\nCameras were programmed using NI-MAX and custom software written in Labview (National Instruments). Data acquisition and the LED light tables were controlled by custom software written in Labview. In brief, a master computer ran a single program that (1) turned the red and infrared (Berman et al., 2014) LEDs on for all three light tables, the former running a program of 15 s, then off for 45 s, for 30 cycles; (2) started all 12 cameras recording; (3) recorded the position of the fly\u2019s centroid for each frame for each camera; and (4) grabbed the frame number for each camera over the network every 2\u20133 frames, and wrote the frame number and red LED status from the light tables to a single text file. All movies were recorded as uncompressed avi files at 100 frames per second. Each camera was set to 1024 \u00d7 1024 pixel resolution that encompassed the entire 3 cm arena. However, flies were tracked using a blob detector and only a 150 \u00d7 150 pixel box centered on each fly was saved and used for analysis.\n\nTo facilitate direct examination of individual activated behaviors, we have provided a subset of the complete dataset, consisting of 1 s before and after stimulation for all flies and all trials, which is deposited at Dryad (doi:10.5061/dryad.fr89c0c).\n\n### Behavior space generation\n\nOur approach for generating a behavior space largely follows the methodology originally described in Berman et al. (2014), which describes much of the procedure in additional detail. We first segmented flies using Canny\u2019s method for edge detection (Canny, 1986) and morphological dilation to find the outline of the fly. All pixels within the corresponding closed curve were considered part of the fly. We assumed that all flies had identical morphology but variable sizes. We calculated a rescaling factor for each fly by segmenting 100 randomly\u00a0selected images from a single fly and finding the pixels belonging to that fly\u2019s body (head, thorax, and abdomen) in each of them, ignoring pixels associated with the wings and legs. Body pixels were assigned via a two-component Gaussian mixture model, and the average value of the number of pixels was chosen as the body area. All frames from a single movie were then uniformly re-scaled to make the number of body pixels in the average image equal to that in a reference image of a fly. We then rotationally aligned segmented, recalled images by finding the maximal angular cross-correlation of the magnitudes of the two-dimensional polar Fourier transforms between the image and a reference image. This reference image was common to all aligned images. Translational registration was then performed by maximizing the spatial cross-correlation.\n\nPostural decomposition was performed as described in Berman et al. (2014). Images were Radon-transformed using a two-degree spacing, and the 9781 Radon-space pixels that contained the most variance were kept for further analysis (>95% of the total variance). We then performed principal components analysis (PCA) on these data, keeping the 50 modes capturing the most variance (>90% of the total variance). We projected the segmented and aligned images onto the found eigenvectors to create a set of time series that were representative of the postural movements of the fly. To obtain dynamic information about these time series, we applied a Morlet continuous wavelet transform to these time series. We transformed each mode separately, using 25 frequency channels that were dyadically spaced between 1and 50 Hz, retaining only the amplitudes of the resulting complex numbers.\n\nLow-dimensional embedding of these wavelet time series using t-Distributed Stochastic Neighbor Embedding (t-SNE) (van der Maaten and Hinton, 2008) largely followed the approach in Berman et al. (2014) as well. A distance metric between points in time was calculated via the the Kullback-Leibler divergence (Cover and Thomas, 2005) between their associated normalized mode-frequency spectra. Because this data set contains several orders of magnitude more data than can be calculated through brute-force minimization of the t-SNE cost function, we used the sub-sampling technique described in Berman et al. (2014) to identify 600 representative data points from each of the recording sessions. From here, points were randomly assigned subsequent groupings such that each of these groups contained 36,000 data points. The same sub-sampling process was performed amongst these data points, but now keeping twice as many data points as in the previous iteration. This process was repeated until a data set of 36,000 points was obtained. We minimized t-SNE for this data set to create a low-dimensional embedding. We used the re-embedding procedure described in Berman et al. (2014) to include data from outside the 36,000-point training set into the embedding, resulting in the overall density seen in Figure 1.\n\n### Statistical\u00a0analysis\n\nOur main goal for the statistical analysis of the behavior space data was to isolate regions of the map that were significantly affected by optogenetic stimulation. Here, we assessed significance by (1) comparing the flies\u2019 behaviors when the LED was on versus when the LED was off, and (2) requiring that the effect of the LED stimulation be larger in the experimental flies than in the control flies. Specifically, we compared the flies\u2019 behaviors during the first three seconds of stimulation (t=0s to t=3s, where the LED turns on at t=0) to their behavior between stimulation (t=30s to t=45s). To statistically assess whether a particular region of the behavior space was significantly affected by the stimulus, we first defined $\u03c1_{i,n}^{on}(x,y)$ to be the average behavior space density for fly $i$ during the $n$th cycle at location $(x,y)$ during the first 3 seconds of excitation and $\u03c1_{i,n}^{off}(x,y)$ to be the same, but during the 15s window furthest from the stimulation. We then tested whether $\u03c1_{i,n}^{on}x,y$ was significantly different from $\u03c1_{i,n}^{off}x,y$ through a Wilcoxon rank sum test with \u0160id\u00e1k corrections (p<0.05 after corrections) (\u0160id\u00e1k 1967). To calculate the number of corrections, we conservatively assumed that the number of measurements was equal to $2^{H}$, where $H$ was the entropy of the mean density of the behavior space. This is likely an over-estimate of the number of comparisons, but it provides an upper-bound for the number of distinctions that could be made.\n\nTo compare the effect of the optogenetic stimulus on the experimental flies to that of the effect on the control flies, we computed the quantity $\u03c7_{i,n}(x,y)=\u03c1_{i,n}^{on}x,y-\\frac{1}{2}(\u03c1_{i,n-1}^{off}x,y+\u03c1_{i,n}^{off}(x,y))$, which was the behavior space density during light stimulation compared to the average of the two preceding time periods with no light stimulation. We thus assessed statistical significance by using a Wilcoxon rank sum test with \u0160id\u00e1k corrections (p<0.05 after corrections) to compare ${\u03c7_{i,n}(x,y)}_{i\\inexperimental\u00a0flies}$ with ${\u03c7_{i,n}(x,y)}_{i\\incontrol\u00a0flies}$. For a point, $(x,y)$, in the behavior space to be considered significantly affected by the stimulus, we required that both of these tests\u2014within experimental flies test and experimental versus control flies test\u2014yielded a significant result.\n\nBehavior activation maps for individual descending interneurons (Figure 6) were calculated by averaging together the maps of significant activations ($E[\u03c7_{i,n}(x,y)]_{i,n}>0$) from each of the lines exciting that neuron.\n\nStimulation-response entropy curves (Figure 2A and D) were generated by first aligning each time point to its associated phase within the 60 second LED on-off cycle. For each phase within the cycle, we found all embedding points from all relevant trials that were detected within $\\pm200$\u00a0ms (using periodic boundary conditions). We then generated a histogram of these points, normalized and convolved the resulting values with a symmetric two-dimensional Gaussian of width $\\sigma=2$, to generate a probability density function, $p_{t}(x,y)$. From this, the entropy curve value at phase t was given by $Ht=\\intdxdyp_{t}x,ylog\u2061p_{t}(x,y)$. We then pooled data from all individuals of a specific type together (i.e. all control flies from a given line or all experimental flies from a given line) to calculate these curves.\n\nMutual information between pre-stimulus behavior space densities and post-stimulus regions was computed by numerically integrating the integral:\n\n$$\nMI(\u03c1_{pre};R_{post})=\\sumk=0m\\intdx\u2192\u00a0p_{pre}(x\u2192|R_{k})\u00a0log_{2}\\frac{p_{pre}(x\u2192|R_{k})}{\\suml=0mp_{pre}(x\u2192|R_{k})p(R_{k})},\n$$\n\nwhere $p_{pre}(x\u2192|R_{k})$ is the conditional probability of observing the fly\u2019s behavior to be at location $x\u2192$ between 1.5 and 0.5 seconds before the stimulus onset and $p(R_{k})$ is the probability that the fly transitions to region $R_{k}$ following the stimulus onset. Finite data-size corrections were performed by drawing subsets of the data with replacement and extrapolating to an infinite number of trials, and error bars were generated by extrapolating the calculated variance in a similar manner (Bialek, 2012). The region of transition for each trial was assigned by finding the mode of the behavior space distribution during the first second subsequent to the onset of the stimulus. If the location of the mode of the distribution for that trial was within or closer than 5-pixels to the edge of a region, it was assigned to that region, unless another region was closer. Trials not assigned to any of the regions were given a \u2018zero\u2019 label, as reflected in the previous equation.\n\nTo provide a sense of scale, if there are $N$ significantly activated regions, the maximum possible mutual information one could potentially measure between the prior distribution and the activated region would be $log_{2}\u2061(N)$ bits. Note, however, that we assigned an additional state corresponding to the fly performing a behavior outside of the significantly activated regions subsequent to the light turning on, thus making the maximal possible mutual information $log_{2}\u2061(N+1)$. This additional \u2018zero\u2019 state is necessary to account for the possibility that the significant regions might be exhibited only in a context-dependent manner, leading to no significant phenotype when the fly is performing some behaviors at the onset of red light stimulation and leading to a phenotype if other actions are being exhibited.\n",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "614c7e83-c71d-49d2-a7cf-66e88b5d64b9",
+      "submission_id": "5aafe063-735d-4b55-9d56-27db88d074a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34275.029](https://doi.org/10.7554/eLife.34275.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Optogenetic dissection of descending behavioral control in Drosophila\" for consideration by eLife. Your article has been evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Andrew D Straw (Reviewer #2). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Cande and colleagues leverage three new tools to dissect the role of descending neurons in controlling Drosophila behavior: split-Gal4 lines targeting DNs, a high-sensitivity, long-wavelength optogenetic channel, and t-SNE based behavioral analysis. They claim that activation of most DNs yield stereotyped actions, these actions are common across DNs, and the resulting action depended on previous behavioral expression. The manuscript is well written and the study is very timely given the emergence of new tools permitting the comprehensive study of DNs and behavior. Perhaps the most valuable aspect of the paper will be by providing behavioral phenotypes to use when investigating the more detailed physiology and behavioral function of the relevant circuits. Although this is a very exciting study, significant concerns were raised regarding the video data and analysis that need to be addressed.\n\nEssential revisions:\n\n1) The Videos 1-5 purporting to illustrate the behaviors in question are not of sufficient quality and, in some cases, rather poorly processed. They have the following deficiencies, each of which calls into question the quality of the experiments and, therefore, the validity of the subsequent behavioral analysis:\n\ni) Dark shaded regions appear in the video data (e.g., S03 1:58).\n\nii) Portions of flies are lost in some video data (e.g., S03 2:11).\n\niii) Boxes appear in lieu of fly images (e.g., S03 3:02).\n\niv) Fly orientations are sometimes wrong (e.g., S04 1;00).\n\nv) In contrast to the text asserting that animals were imaged from the dorsal surface, flies seem to be recorded while walking on the dome (the reader sees their sides or ventral surfaces).\n\nvi) The reader cannot easily see the relevant details of leg movements. They are rather fast. Perhaps it would help to add the human annotation information on each video segment to make it clear how the authors annotated the data.\n\nvii) It would be useful to include longer than a couple seconds of fly videos between each cut. It is too difficult to look at extended behaviors in the current form and one cannot simply pause the video because many of the behaviors are dynamic.\n\n2) Comparisons between experimental and control animals are not provided to the extent necessary. For example, to what extent does the entropy decrease following 'high-power' red light stimulation in control animals?\n\n3) The watershed determination of behavior space do not seem well-aligned with the underlying heat map (Figure 1\u2014figure supplement 2). Perhaps a higher-resolution image would better serve the authors.\n\n4) The idea of looking at entropy reduction seems to assume that a DN's role would be to elicit specific actions rather than to modulate actions. For example, entropy would not be expected to be reduced if a DN changed behavioral state without biasing which final state was chosen.\n\n5) In Figure 2\u2014source data 1 and elsewhere, showing the t-SNE results without the underlying video data is too far removed from the real data to be useful to readers interested in interpreting or using the data presented in this study. Please provide relevant videos or tell the reader where to look within Videos 1-5.\n\n6) Figure 5B is perplexing. Why should the experimental animals have a higher mutual information between behavioral states only a few seconds apart? Please expand.\n\n7) There are apparent \"anticipation\" responses to light-off. For example, in Figure 4C and 4D, there are density changes starting just prior to the end of the lights-on period. Does this indicate that the flies anticipated the light change of the periodic stimulus, or is this an artifact arising from analysis? Please discuss.\n\n8) There are apparently large differences between the behaviors exhibited by experimental and control flies prior to the stimulus onset (e.g. Figure 2C, F). Is this due to the repetitive nature of the stimulus? Where does this arise? Is it present already prior to the first lights-on event? If there are such large differences in fly behavior without optogenetic activation, it does makes me wonder if the two genotypes are in different states.\n\n9) The authors need to make their data analysis methods more accessible by providing source code. They indicate that the tSNE embedding technique can be found in the Berman et al., 2014 paper, but I think it would be appropriate to link what seems to be the relevant source code on github https://github.com/gordonberman/MotionMapper. The authors additionally indicate that the statistical classification approach here is new and likely to be useful and I agree. Other aspects are also of likely useful, such as calculating mutual information. Therefore, as stated in the eLife guidelines, please \"Include code used for data analysis.\"\n\n10) The details of the \"fly bubble\" are not given. Another paper (Klibaite 2017) is referred to, but the construction details are not present in that paper, nor is even the word \"bubble\" mentioned.\n\n11) It would be useful to link the behavioral findings with the underlying anatomy of DNs. Are DN inputs and outputs differently represented for different behaviors? The anatomy paper proposes different sets of DNs involved in locomotion versus flight. Do DN innervations in the VNC correlate with different behaviors? Some effort to relate the anatomy to the behavior seems important.\n",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "611d8ed1-0987-4866-a238-bb6d1453082a",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C1",
+      "claim": "In most animals, the brain makes behavioral decisions that are transmitted by descending neurons to the nerve cord circuitry that produces behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "In most animals, the brain makes behavioral decisions that are transmitted by descending neurons to the nerve cord circuitry that produces behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about animal neurobiology that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "eb357938-014e-44b2-b4d5-c05bb3489a1a",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C2",
+      "claim": "In insects, only a few descending neurons have been associated with specific behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, only a few descending neurons have been associated with specific behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "c08e07c3-2c92-4706-b4e8-5dba5cb95dca",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C3",
+      "claim": "Activation of most of the descending neurons drove stereotyped behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that (1) activation of most of the descending neurons drove stereotyped behaviors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "487ce3e9-2f0f-4566-a537-d5a519c61bc5",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C4",
+      "claim": "In many cases multiple descending neurons activated similar behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) in many cases multiple descending neurons activated similar behaviors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "b21f09f5-2f09-48a6-bd1f-a9de830de9dd",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C5",
+      "claim": "Optogenetically activated behaviors were often dependent on the behavioral state prior to activation.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) optogenetically activated behaviors were often dependent on the behavioral state prior to activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "cd49b3b4-1ba6-4da4-90a5-2666d55dc642",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C6",
+      "claim": "Descending commands from the brain to the ventral nerve cord are transmitted through an estimated 250\u2013550 pairs of descending neurons in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, descending commands from the brain to the ventral nerve cord are transmitted through an estimated 250\u2013550 pairs of descending neurons that arborize in 20 highly conserved clusters in the brain involved in sensory processing and motor behavior (Gronenberg and Strausfeld, 1990; Hsu and Bhandawat, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "8d56c491-0e4f-4c77-a2df-f9d6a307624b",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C7",
+      "claim": "Descending neurons arborize in 20 highly conserved clusters in the brain involved in sensory processing and motor behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, descending commands from the brain to the ventral nerve cord are transmitted through an estimated 250\u2013550 pairs of descending neurons that arborize in 20 highly conserved clusters in the brain involved in sensory processing and motor behavior (Gronenberg and Strausfeld, 1990; Hsu and Bhandawat, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "e3f8030a-2b3f-43ca-b8ce-9089649838b3",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C8",
+      "claim": "Each descending neuron extends a single axon through the neck connective to the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Each descending neuron extends a single axon through the neck connective to the ventral nerve cord, where they synapse onto interneurons associated with leg, neck, and wing motor circuitry (Namiki et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "81ac810a-bae0-4759-8394-dcbb167ccb3c",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C9",
+      "claim": "Descending neurons synapse onto interneurons associated with leg, neck, and wing motor circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Each descending neuron extends a single axon through the neck connective to the ventral nerve cord, where they synapse onto interneurons associated with leg, neck, and wing motor circuitry (Namiki et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "d6bcc78b-03a8-472c-b02c-726248517da9",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C10",
+      "claim": "Descending neurons represent approximately 0.5% of all neurons in the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "Little is known about how so few neurons \u2013 approximately 0.5% of all neurons in the fly (Alivisatos et al., 2012) \u2013 encode signals from the brain to control the full range of movements performed by a freely moving fly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "66283574-1ab8-4d18-a8a5-9a5bfd3e3015",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C11",
+      "claim": "Activation of some individually identifiable descending neurons triggers specific motor outputs, such as courtship song.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of some individually identifiable descending neurons triggers specific motor outputs, such as courtship song (von Philipsborn et al., 2011) backwards walking (Bidaye et al., 2014), or escape behavior (King and Wyman, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "31138dcd-c61d-4160-849a-eaf69b11fd40",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C12",
+      "claim": "Activation of some individually identifiable descending neurons triggers backwards walking.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of some individually identifiable descending neurons triggers specific motor outputs, such as courtship song (von Philipsborn et al., 2011) backwards walking (Bidaye et al., 2014), or escape behavior (King and Wyman, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "730a6737-1ddc-4d20-b706-a7ed1ad3596f",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C13",
+      "claim": "Activation of some individually identifiable descending neurons triggers escape behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of some individually identifiable descending neurons triggers specific motor outputs, such as courtship song (von Philipsborn et al., 2011) backwards walking (Bidaye et al., 2014), or escape behavior (King and Wyman, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "dc0d9df8-df07-4d59-b489-01115d0d768b",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C14",
+      "claim": "Some descending neurons modify motor programs, rather than trigger them.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some descending neurons modify motor programs, rather than trigger them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about descending neuron function based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "fb03df22-7dbf-4924-8ca2-2a3efb14ece5",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C15",
+      "claim": "Cricket walking initiation, speed, and turning appear to depend on separately encoded descending commands.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cricket walking initiation, speed, and turning appear to depend on separately encoded descending commands (B\u00f6hm and Schildberger, 1992; Gras and Kohstall, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "072ded3e-e7f9-4e05-b2dd-1537e4376bdd",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C16",
+      "claim": "Descending neuron sensory responses have been shown to be modified by locomotor state.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, descending neuron sensory responses have been shown to be modified by locomotor state (Staudacher and Schildberger, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "3104afc9-e4d0-4bad-8033-861f0d017558",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C17",
+      "claim": "The researchers screened 130 of the sparsest lines in the split-GAL4 collection.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened 130 of the sparsest lines in this collection, targeting approximately 160 neurons that are divisible into 58 distinct anatomical cell-types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "38097836-0518-4dde-9107-a9869db5f746",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C18",
+      "claim": "The screened lines target approximately 160 neurons that are divisible into 58 distinct anatomical cell-types.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened 130 of the sparsest lines in this collection, targeting approximately 160 neurons that are divisible into 58 distinct anatomical cell-types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "555a49fd-0e02-43ef-b880-dd54eb2210bf",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C19",
+      "claim": "Forty of the descending neuron cell types consist of a single pair of bilaterally symmetric descending neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty of these cell types consist of a single pair of bilaterally symmetric descending neurons, while the remaining 18 categories target populations of 3 to 15 descending neurons with similar neuroanatomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "33e8710e-98b1-42de-9241-325739d8e986",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C20",
+      "claim": "The remaining 18 categories target populations of 3 to 15 descending neurons with similar neuroanatomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty of these cell types consist of a single pair of bilaterally symmetric descending neurons, while the remaining 18 categories target populations of 3 to 15 descending neurons with similar neuroanatomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "e62633cf-3145-4962-93c6-359d6c35d378",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C21",
+      "claim": "The researchers associated 80% of the descending neurons in their collection with specific behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we associated 80% of the descending neurons in our collection with specific behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "c5c2c0d0-45b8-4632-9456-bb98ae7420e0",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C22",
+      "claim": "The behavioral dataset comprehensively describes the activation phenotypes of roughly one third to one half of the total number of fly descending neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We have generated a behavioral dataset that comprehensively describes the activation phenotypes of roughly one third to one half of the total number of fly descending neurons in the context of freely walking flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the number of neurons screened relative to the estimated total number of descending neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "99c3e5bc-4425-485a-8919-1ff7b8fad588",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C23",
+      "claim": "With a few exceptions, descending neuron control of behavior appears to be largely modular.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, with a few exceptions, descending neuron control of behavior appears to be largely modular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "eb831d07-94f5-45c3-931e-00b5c270b25d",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C24",
+      "claim": "There are many cases in which descending neuron function is context dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we find many cases in which descending neuron function is context dependent, even for a single fly confined to a two-dimensional substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "0b53771d-8f58-449f-b013-3d6fb0de08c5",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C25",
+      "claim": "The researchers built a red light activation apparatus with an array of 12 USB cameras.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we built a red light activation apparatus with an array of 12 USB cameras that allowed us to film 12 flies in separate chambers simultaneously at high resolution (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental apparatus used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "8a43ea4e-40cc-42e4-b088-a3c6a1be0fb6",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C26",
+      "claim": "The apparatus allowed filming of 12 flies in separate chambers simultaneously at high resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we built a red light activation apparatus with an array of 12 USB cameras that allowed us to film 12 flies in separate chambers simultaneously at high resolution (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental apparatus used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "40563158-440e-4fcf-802f-75f9eef212d2",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C27",
+      "claim": "Each recording consisted of 30 trials of a 15 s pulse of red light followed by a 45 s recovery interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Each recording consisted of 30 trials of a 15 s pulse of red light followed by a 45 s recovery interval (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "c7a5e4b4-8825-4f4f-be30-753c69886748",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C28",
+      "claim": "The researchers collected a dataset of approximately 700 million images.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected a dataset of approximately 700 million images, which included behaviors recorded from activation of descending interneuron split-GAL4 lines, previously characterized sparse GAL4 drivers (fruitless-GAL4 and pIP10) that trigger courtship-related behaviors (Stockinger et al., 2005; von Philipsborn et al., 2011), and interneuron drivers targeting the flight neuropil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scale of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "15768374-6e05-4c26-8dd5-8f010c43ecb7",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C29",
+      "claim": "Approximately 93% of all video image data points could be embedded in the behavior space.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 93% of all video image data points could be embedded in this space, including approximately equal fractions of frames when the red light was on or off (Figure 1\u2014figure supplement 3), indicating that the majority of red light activated behaviors are well represented in the behavior space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the data analysis showing the effectiveness of the embedding method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "e27ddad4-8643-4f44-8be8-1a2fe296f445",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C30",
+      "claim": "Approximately equal fractions of frames when the red light was on or off could be embedded.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 93% of all video image data points could be embedded in this space, including approximately equal fractions of frames when the red light was on or off (Figure 1\u2014figure supplement 3), indicating that the majority of red light activated behaviors are well represented in the behavior space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the data analysis showing the effectiveness of the embedding method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "31c0623a-e49d-4f2c-9a3d-cfdb8780de72",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C31",
+      "claim": "The majority of red light activated behaviors are well represented in the behavior space.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 93% of all video image data points could be embedded in this space, including approximately equal fractions of frames when the red light was on or off (Figure 1\u2014figure supplement 3), indicating that the majority of red light activated behaviors are well represented in the behavior space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the embedding statistics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "b112ce4e-0a99-46a5-b6c9-94323008f5dd",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C32",
+      "claim": "Retinal-fed flies expressing CsChrimson in DNg07 and DNg08 groomed their heads upon red light activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, upon red light activation, retinal-fed flies expressing CsChrimson in a descending neuron line targeting DNg07 and DNg08 (SS02635) groomed their heads (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific behavioral observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "64184f08-8edd-4818-9176-7d6fc174e6fe",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C33",
+      "claim": "Entropy measures the degree of uncertainty inherent in the distribution of the flies in the behavior space.",
+      "claim_type": "EXPLICIT",
+      "source": "Entropy measures the degree of uncertainty inherent in the distribution of the flies in the behavior space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the entropy metric used in the analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "ec6eb2ad-b997-45ce-bf34-fa114ae42d33",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C34",
+      "claim": "When the red light was off, flies exhibited a range of different behaviors, resulting in high entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "When the red light was off, flies exhibited a range of different behaviors, and the probability that they performed any one behavior was low. This resulted in a low probability density distributed throughout the behavior space and correspondingly high entropy (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "96ea69a2-6eb7-46e8-afd0-22e55ee7f7e2",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C35",
+      "claim": "Upon red light activation, the experimental fly line engaged in red light triggered behaviors at the expense of other natural behaviors, generating a drop in entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon red light activation, the experimental fly line engaged in red light triggered behaviors at the expense of other natural behaviors. This increased the probability that a small region within the behavior space showed a relatively high density, generating a drop in entropy whose timing and duration mirrored that of the red light triggered behaviors (Figure 2A, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "a824678c-06a7-4e37-808d-35621b981599",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C36",
+      "claim": "The activation of descending neuron DNg25 induced a short-lived rapid running phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the activation of descending neuron DNg25 induced a short-lived rapid running phenotype (Figure 2E and F) that could be identified by a transient drop in entropy in the behavior space (Figure 2D) and a transient increase in density in the fast locomotion region of the space (Figure 2E and F, Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific behavioral observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "79f952ba-d3ea-426a-aff0-fa9ff299c41a",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C37",
+      "claim": "Most lines displayed the largest entropy drop immediately after red light activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most lines displayed the largest entropy drop immediately after red light activation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a general observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "ed5daa02-72e8-4d9c-bdf1-68f9ce55bdc7",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C38",
+      "claim": "For roughly a third of the lines, the entropy drop persisted throughout the entire red light activation window.",
+      "claim_type": "EXPLICIT",
+      "source": "For roughly a third of the lines, this entropy drop persisted throughout the entire red light activation window (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "4ab32a89-2a71-4e18-9b39-b606ac9d05f0",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C39",
+      "claim": "For most of the rest of the lines, the entropy drop was transient and diminished after several seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "For most of the rest of the lines, however, the entropy drop was transient and diminished after several seconds (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "5b19bbf0-ba55-4ce8-94dd-e8e8f5439a63",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C40",
+      "claim": "For a minority of lines, the entropy minimum occurred near the middle or end of the activation window.",
+      "claim_type": "EXPLICIT",
+      "source": "For a minority of lines, the entropy minimum occurred near the middle or end of the activation window (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "5f371cda-fd30-4109-8cd1-422876e04678",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C41",
+      "claim": "91 of the 130 lines (69%) displayed a statistically significant increase in density of some area of the behavior space at low red light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In our initial analysis, we looked for behaviors produced when our descending neuron lines were activated using a relatively low level of red light, (5 mW/cm2). Under these conditions, 91 of the 130 lines (69%) displayed a statistically significant increase in density of some area of the behavior space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "de1bb305-c9dd-4e09-8da1-e889f1f09fbe",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C42",
+      "claim": "80% of the lines that had previously displayed no phenotype produced a statistically significant increase in density in the behavior space at higher light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, 80% of the lines that had previously displayed no phenotype produced a statistically significant increase in density in the behavior space (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "bf524e87-1c1a-4de1-b34c-3e0d4f21f795",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C43",
+      "claim": "119 of the 130 (90%) descending neuron lines showed statistically significant increases in the behavior space when pooling data from low and high activation protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling the data from the low and high activation protocols, we detected statistically significant increases in the behavior space in 119 of the 130 (90%) descending neuron lines (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "94679960-1094-4b27-8692-d6eb6bae220f",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C44",
+      "claim": "In 86 cases, an increased density in only a single statistically significant region in the behavior space was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In 86 cases, we observed an increased density in only a single statistically significant region in the behavior space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "479c816e-a08f-4af3-9aa4-def354032fec",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C45",
+      "claim": "Some lines generated density increases in multiple non-contiguous regions of the behavior space.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some lines generated density increases in multiple non-contiguous regions of the behavior space (Figure 4A, examples shown in Figure 4B\u2013D, Videos 9\u201311, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a qualitative observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "81783782-7a2b-477f-b9ad-6bc997a4a9e4",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C46",
+      "claim": "A line targeting DNp10 induced anterior reaching movements and wing flicking with similar timing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a line targeting DNp10 induced anterior reaching movements and wing flicking with similar timing (Figure 4D, red and blue regions, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific behavioral observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "99b7e72b-2894-40f0-a9c5-2a834a776de5",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C47",
+      "claim": "The DNp09 line repeatedly ran and then paused throughout the entire 15 s activation period.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the DNp09 line shown in Figure 4B repeatedly ran and then paused throughout the entire 15 s activation period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific behavioral observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "e8dfb575-6c49-4411-8b3f-e5295c4ef227",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C48",
+      "claim": "The pausing observed in DNp09 activation has been shown to be a defensive freezing behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The pausing observed in this case has been shown to be a defensive freezing behavior (Zacarias et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "debace4b-570a-4953-87da-c78ff6e5561c",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C49",
+      "claim": "Running followed by freezing upon DNp09 activation is also reported by Zacarias and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "Running followed by freezing upon DNp09 activation is also reported by Zacarias and colleagues (Zacarias et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "141fb0e0-a079-4c86-a59d-0afcb9a313fc",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C50",
+      "claim": "A line targeting descending neuron DNb01 produced an anteriorly directed twitch of the front legs when the red light was turned on, then froze, and then twitched when the light was turned off.",
+      "claim_type": "EXPLICIT",
+      "source": "A line targeting descending neuron DNb01 displayed a simple behavior series; flies produced an anteriorly directed twitch of the front legs when the red light was turned on (Figure 4C, red region), then froze for the majority of the red light activation period (Figure 4C, black region), and then twitched when the light was turned off (Figure 4C, blue region).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific behavioral observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "ad22929a-6b24-4330-aadc-cc90fba7b72a",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C51",
+      "claim": "All experimental animals displayed non-zero mutual information between the pre- and post-stimulation behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all experimental animals displayed non-zero mutual information between the pre- and post-stimulation behaviors (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "d0e93ceb-deb7-4e9d-9e98-075740c80e1c",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C52",
+      "claim": "For most lines, more information was available in the experimental flies than in the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, for most lines, more information was available in the experimental flies than in the controls (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "03a3def2-4e74-4aca-8a5a-972c487c2bf4",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C53",
+      "claim": "Lines with multiple red light activated regions in the behavior space were also those with a relatively high level of mutual information.",
+      "claim_type": "EXPLICIT",
+      "source": "However, lines with multiple red light activated regions in the behavior space were also those with a relatively high level of mutual information (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "370413f9-eab7-41c3-8090-ca136e1ab376",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C54",
+      "claim": "The researchers estimated phenotypes for 47 of the 58 descending neuron cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, and combining it with those descending neurons for which we had only a single representative split-GAL4 line, we estimated phenotypes for 47 of the 58 descending neuron cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "f52cb9ce-18bb-4132-8b14-2a25e3cc741b",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C55",
+      "claim": "Twenty-six descending neurons drove locomotion phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-six descending neurons drove locomotion phenotypes and ten drove anterior directed foreleg movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "2373fa25-7b6e-4025-94f4-60f2aa5ff0c7",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C56",
+      "claim": "Ten descending neurons drove anterior directed foreleg movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-six descending neurons drove locomotion phenotypes and ten drove anterior directed foreleg movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "18fa7596-ea7c-4d3d-89e9-9a31a9105a68",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C57",
+      "claim": "Six new descending neurons that triggered wing and abdomen movements were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified six new descending neurons that triggered wing and abdomen movements (plus the previously published pIP10 [von Philipsborn et al., 2011]), two that drove anterior grooming, one that drove abdomen stroking, and four that drove still or slow behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "6c8aa4f5-ae0b-425b-9221-555983bff98f",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C58",
+      "claim": "Two descending neurons drove anterior grooming.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified six new descending neurons that triggered wing and abdomen movements (plus the previously published pIP10 [von Philipsborn et al., 2011]), two that drove anterior grooming, one that drove abdomen stroking, and four that drove still or slow behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "d2643830-c736-43d7-98ae-65e80ecbeee2",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C59",
+      "claim": "One descending neuron drove abdomen stroking.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified six new descending neurons that triggered wing and abdomen movements (plus the previously published pIP10 [von Philipsborn et al., 2011]), two that drove anterior grooming, one that drove abdomen stroking, and four that drove still or slow behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "1466c4b7-c83f-4133-95b0-16a91cc4f314",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C60",
+      "claim": "Four descending neurons drove still or slow behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified six new descending neurons that triggered wing and abdomen movements (plus the previously published pIP10 [von Philipsborn et al., 2011]), two that drove anterior grooming, one that drove abdomen stroking, and four that drove still or slow behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "ffc601aa-6ed8-4fa5-991b-36388fe77209",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C61",
+      "claim": "Activation of each type of descending neuron drove behaviors that mapped to a relatively small region of the behavior space.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we found that activation of each type of descending neuron drove behaviors that mapped to a relatively small region of the behavior space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "63354b01-aa9f-430e-ba7d-7b379275eaa7",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C62",
+      "claim": "Some descending neurons drove slow locomotion, whereas others drove fast locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, some descending neurons drove slow locomotion, whereas others drove fast locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "2f940f20-2c46-4c15-b9c9-8be44447da07",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C63",
+      "claim": "Only a few descending neurons, such as DNa01, DNa02 and DNp26, seemed to produce a global increase in locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a few, such as DNa01, DNa02 and DNp26, seemed to produce a global increase in locomotor activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "9dc3f30b-ad97-4403-8224-9100e05924cc",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C64",
+      "claim": "Descending neurons that produced different types of grooming were found, such as head grooming (DNg07 and DNg08, and DNg12) or abdomen grooming (DNp29).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we found descending neurons that produced different types of grooming, such as head grooming (DNg07 and DNg08, and DNg12) or abdomen grooming (DNp29), different types of anterior reaching movements (DNg10 versus DNg13) and different types of slow movements (e.g. DNd02 versus DNp02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "56fe85a1-932b-4cd4-a3a6-ee14a33bec78",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C65",
+      "claim": "Different types of anterior reaching movements were produced by different descending neurons (DNg10 versus DNg13).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we found descending neurons that produced different types of grooming, such as head grooming (DNg07 and DNg08, and DNg12) or abdomen grooming (DNp29), different types of anterior reaching movements (DNg10 versus DNg13) and different types of slow movements (e.g. DNd02 versus DNp02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "7bf662cc-8a8d-4ad5-ae62-271ade8daf3d",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C66",
+      "claim": "Different types of slow movements were produced by different descending neurons (e.g. DNd02 versus DNp02).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we found descending neurons that produced different types of grooming, such as head grooming (DNg07 and DNg08, and DNg12) or abdomen grooming (DNp29), different types of anterior reaching movements (DNg10 versus DNg13) and different types of slow movements (e.g. DNd02 versus DNp02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "aa510307-6fd3-4a6e-8121-b0f50b088058",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C67",
+      "claim": "Descending neurons could be more important for triggering and maintaining behaviors than for controlling individual details of a given motor program.",
+      "claim_type": "EXPLICIT",
+      "source": "First, descending neurons could be more important for triggering and maintaining behaviors than for controlling individual details of a given motor program (Heinrich, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "9f1319f9-26f4-4e74-8a5f-7a60d5982bc8",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C69",
+      "claim": "Hedwig identified two pairs of descending neurons that control stridulation in grasshoppers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Hedwig, 1992 identified two pairs of descending neurons that control stridulation in grasshoppers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "a0eb21d1-1933-4214-a075-a1f913f9f08a",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C70",
+      "claim": "Tonic activation of the descending neurons was sufficient to induce and modulate the activity of the stridulation central pattern generator in the thorax.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, tonic activation of the descending neurons was sufficient to induce and modulate the activity of the stridulation central pattern generator in the thorax, indicating that the descending neurons play only a limited role in patterning stridulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to previous research on grasshopper stridulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "b0c5f2af-8825-49e4-84d2-ef1c69b52ce0",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C71",
+      "claim": "Behaviors might be controlled not by single descending neurons acting as command neurons, but by combinations of descending neurons acting in concert.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, behaviors might be controlled not by single descending neurons acting as command neurons, but by combinations of descending neurons acting in concert (Heinrich, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "76112b3a-1eea-4aae-8cfc-f7370e17c4fb",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C72",
+      "claim": "Several previous studies have illustrated that multiple descending neurons control the same specific behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, several previous studies have illustrated that multiple descending neurons control the same specific behaviors (Kien, 1983; Griss and Rowell, 1986; Rowell and Reichert, 1986; Gronenberg and Strausfeld, 1990; Kien, 1990; Milde and Strausfeld, 1990; Hensler, 1992; Kanzaki et al., 1994; Staudacher, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "89d8892a-a694-441a-8eeb-882059ef1a40",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C73",
+      "claim": "Sufficiently strong stimulation of one neuron in a command cohort or module is sufficient to recruit the activity of the other descending neurons, resulting ultimately in triggering of the behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, it has been suggested that sufficiently strong stimulation of one neuron in a command cohort or module is sufficient to recruit the activity of the other descending neurons, resulting ultimately in triggering of the behavior (Larimer, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "77648397-5e86-41d7-970b-c5f1eb6ae424",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C74",
+      "claim": "Roughly a third of described descending neurons appear to have unique projection patterns in Drosophila and Calliphora.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, roughly a third of described descending neurons appear to have unique projection patterns in Drosophila and Calliphora, but the rest share common input and/or output regions in the brain and ventral nerve cord with other descending neurons, suggesting they may act in concert (Gronenberg and Strausfeld, 1990; Milde and Strausfeld, 1990; Namiki et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "c9295b0b-e85e-4da8-ac50-773013ed380a",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C75",
+      "claim": "The rest of the descending neurons share common input and/or output regions in the brain and ventral nerve cord with other descending neurons, suggesting they may act in concert.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, roughly a third of described descending neurons appear to have unique projection patterns in Drosophila and Calliphora, but the rest share common input and/or output regions in the brain and ventral nerve cord with other descending neurons, suggesting they may act in concert (Gronenberg and Strausfeld, 1990; Milde and Strausfeld, 1990; Namiki et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and involves inference about function from anatomy.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "4d4382e8-4e81-44e9-bc38-a74c9d6cdf6d",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C76",
+      "claim": "The large number of descending neurons that drive similar patterns of fast locomotion, slow locomotion and anterior reaching suggests that these neurons may act in concert.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the large number of descending neurons that drive similar patterns of fast locomotion, slow locomotion and anterior reaching in our dataset suggests that, for these motor circuits at least, these neurons may act in concert.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "054f9346-c18c-4c2d-824d-06c42930bfe4",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C77",
+      "claim": "Both DNa05 and DNd02 produce slightly different phenotypes when activated in combination with DNa07 and DNd03, respectively, as compared to when lines targeting these neurons are activated alone.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both DNa05 and DNd02 produce slightly different phenotypes when activated in combination with DNa07 and DNd03, respectively, as compared to when lines targeting these neurons are activated alone (see Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "e22325a1-cb08-418b-a31a-202bd53a5636",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C78",
+      "claim": "There are multiple cases in which descending neurons exhibit different physiological responses depending on the state of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are to date no published examples of a single descending neuron triggering different context-dependent behaviors, there are multiple cases in which descending neurons exhibit different physiological responses depending on the state of the animal (e.g. walking, flying, courting, etc.) (Olberg, 1983; Strausfeld and Bassemir, 1985; Olberg and Willis, 1990; B\u00f6hm and Schildberger, 1992; Staudacher and Schildberger, 1998; Hedwig, 2000; Staudacher, 2001; Zorovi\u0107 and Hedwig, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "6b32fa79-412d-48b4-bced-6ddd7d1c1c6a",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C79",
+      "claim": "The high level of mutual information between behaviors immediately before and after red light activation seen in lines that have multiple red light activated regions indicates that the behavior of the fly immediately before descending neuron activation biases the behavioral output.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the high level of mutual information between behaviors immediately before and after red light activation seen in lines that have multiple red light activated regions indicates that even within the relatively simple confines of our assay, the behavior of the fly immediately before descending neuron activation biases the behavioral output in many cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutual information analysis of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "0bb69995-abd4-478d-a44c-3f21dc482546",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C80",
+      "claim": "The observation that substrate specific behaviors are strongly represented in the dataset, while flight and courtship behaviors are less prevalent suggests that descending neuron outputs may be context dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our observation that substrate specific behaviors, such as foreleg tapping, reaching, and locomotion are strongly represented in our dataset, while flight and courtship behaviors are less prevalent suggests that descending neuron outputs may be context dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "c639e7c1-bca0-431d-b295-420bc38ec622",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C81",
+      "claim": "When a line expressing in descending neuron DNp01, the giant fiber, was activated, only the flies running after returning back to the ground was detected because the jump was too fast to be detected in the assay.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when we activated a line expressing in descending neuron DNp01, the giant fiber, a neuron known to elicit a rapid escape response initiated by a jump when optogenetically activated (Lima and Miesenb\u00f6ck, 2005) we only detected the flies running after returning back to the ground because the jump was too fast (~30 ms) to be detected in our assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "7851bf01-146b-411d-8a70-4e501388a2c7",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C82",
+      "claim": "DNp01, the giant fiber, is a neuron known to elicit a rapid escape response initiated by a jump when optogenetically activated.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when we activated a line expressing in descending neuron DNp01, the giant fiber, a neuron known to elicit a rapid escape response initiated by a jump when optogenetically activated (Lima and Miesenb\u00f6ck, 2005) we only detected the flies running after returning back to the ground because the jump was too fast (~30 ms) to be detected in our assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "422e4c2d-e8f6-4ba8-9679-bc06c2a4dea4",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C83",
+      "claim": "Behaviors performed more quickly than the Nyquist frequency of 50 Hz for the movies could not be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "First, behaviors performed more quickly than the Nyquist frequency of 50 Hz for our movies could not be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental method based on the sampling rate.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "a15238a9-69dc-4217-96e7-60c6200337c4",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C84",
+      "claim": "Only behaviors that can be activated when flies are standing and walking were assayed.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we assayed only behaviors that can be activated when flies are standing and walking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "7810cf5a-8fde-4abd-a22c-20e227bf1df8",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C85",
+      "claim": "Only males were assayed, so any female-specific behaviors may not be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we assayed only males, so any female-specific behaviors may not be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "faec824b-9386-4832-b174-3c0f6f8867f5",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C86",
+      "claim": "Only solitary flies were assayed, so any behaviors dependent on social interactions may not have been detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we assayed solitary flies, so any behaviors dependent on social interactions, for example courtship, may not have been detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "6b7462a0-d4d8-440e-8f09-959945ea7bfa",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C87",
+      "claim": "The descending neuron split-GAL4 driver collection is described in Namiki et al. (2018).",
+      "claim_type": "EXPLICIT",
+      "source": "The descending neuron split-GAL4 driver collection is described in Namiki et al. (2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to the source of the genetic tools used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "5b2f0227-afe3-494a-9595-0960b519c9ed",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C88",
+      "claim": "Male flies were crossed to virgin females carrying 20xUAS-CsChrimson-mVenus.",
+      "claim_type": "EXPLICIT",
+      "source": "Male flies were crossed to virgin females carrying 20xUAS-CsChrimson-mVenus (Klapoetke et al., 2014) integrated into the attP18 landing site (Markstein et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genetic crosses used in the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "81432433-8325-41d6-8e19-0365aeaf73a7",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C89",
+      "claim": "For the initial screen, experimental animals were raised on power food supplemented with 0.2 mM retinal.",
+      "claim_type": "EXPLICIT",
+      "source": "For the initial screen, experimental animals were raised on power food supplemented with 0.2 mM retinal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "22adf4d2-8c9e-4213-be6b-5a285e85aa78",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C90",
+      "claim": "The retinal concentration was increased to 0.4 mM for animals that were re-assayed at a higher light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "This concentration was increased to 0.4 mM for animals that were re-assayed at a higher light intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "a2f7206a-48be-4e5b-9b2c-cf5aac73d779",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C91",
+      "claim": "Flies were imaged at age 7\u201312 days, within 4 hr of lights on.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies were imaged at age 7\u201312 days, within 4 hr of lights on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "8f9dd1bf-4851-431b-a361-22e80a22f583",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C92",
+      "claim": "The researchers used 0.2V (4.5 mW/cm2) red light in the initial screen.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 0.2V (4.5 mW/cm2) red light in the initial screen and 1.0V (9 mW/cm2) red light when re-screening a subset of lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "92b088d5-0c9c-4bf5-a12f-892a4616213f",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C93",
+      "claim": "The researchers used 1.0V (9 mW/cm2) red light when re-screening a subset of lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 0.2V (4.5 mW/cm2) red light in the initial screen and 1.0V (9 mW/cm2) red light when re-screening a subset of lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "f96e8191-9d25-4835-9fb4-26a5d2981a23",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C94",
+      "claim": "All movies were recorded as uncompressed avi files at 100 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source": "All movies were recorded as uncompressed avi files at 100 frames per second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "1bb2c6d2-7f44-485f-b941-b091bc127df4",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C95",
+      "claim": "Each camera was set to 1024 \u00d7 1024 pixel resolution that encompassed the entire 3 cm arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Each camera was set to 1024 \u00d7 1024 pixel resolution that encompassed the entire 3 cm arena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "2946962c-dd27-4815-9fa3-ec0a89349b2b",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C96",
+      "claim": "Flies were tracked using a blob detector and only a 150 \u00d7 150 pixel box centered on each fly was saved and used for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, flies were tracked using a blob detector and only a 150 \u00d7 150 pixel box centered on each fly was saved and used for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "1814a31a-39ac-42ab-b3a8-219d78a9ede6",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C97",
+      "claim": "The approach for generating a behavior space largely follows the methodology originally described in Berman et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach for generating a behavior space largely follows the methodology originally described in Berman et al. (2014), which describes much of the procedure in additional detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to the source of the analytical methods used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "3420a214-9e64-44de-9b96-b1a3fc1b2da9",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C98",
+      "claim": "The researchers assumed that all flies had identical morphology but variable sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that all flies had identical morphology but variable sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "f7580a45-aba7-4304-86e4-3409cd02773e",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C99",
+      "claim": "The researchers kept the 9781 Radon-space pixels that contained the most variance (>95% of the total variance).",
+      "claim_type": "EXPLICIT",
+      "source": "Images were Radon-transformed using a two-degree spacing, and the 9781 Radon-space pixels that contained the most variance were kept for further analysis (>95% of the total variance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "fd93aa6a-80c0-443d-b96e-7e271aee95a9",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C100",
+      "claim": "The researchers performed principal components analysis (PCA) on the Radon-space data, keeping the 50 modes capturing the most variance (>90% of the total variance).",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed principal components analysis (PCA) on these data, keeping the 50 modes capturing the most variance (>90% of the total variance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "2498ffa0-27f4-40e1-ba10-570f9d35a1b6",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C101",
+      "claim": "The researchers applied a Morlet continuous wavelet transform to the PCA time series, using 25 frequency channels that were dyadically spaced between 1 and 50 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain dynamic information about these time series, we applied a Morlet continuous wavelet transform to these time series. We transformed each mode separately, using 25 frequency channels that were dyadically spaced between 1and 50 Hz, retaining only the amplitudes of the resulting complex numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "ed803398-36ce-46eb-b1bf-ea36f1513834",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C102",
+      "claim": "Low-dimensional embedding of the wavelet time series using t-Distributed Stochastic Neighbor Embedding (t-SNE) largely followed the approach in Berman et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Low-dimensional embedding of these wavelet time series using t-Distributed Stochastic Neighbor Embedding (t-SNE) (van der Maaten and Hinton, 2008) largely followed the approach in Berman et al. (2014) as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to the source of the analytical methods used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "94e26353-66a3-4518-a241-6adda788f753",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C103",
+      "claim": "A distance metric between points in time was calculated via the Kullback-Leibler divergence between their associated normalized mode-frequency spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "A distance metric between points in time was calculated via the the Kullback-Leibler divergence (Cover and Thomas, 2005) between their associated normalized mode-frequency spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "94a750a5-d5c8-4dfc-bcb0-6d0516860b3d",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "claim_id": "C104",
+      "claim": "The researchers used a sub-sampling technique to identify 600 representative data points from each of the recording sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this data set contains several orders of magnitude more data than can be calculated through brute-force minimization of the t-SNE cost function, we used the sub-sampling technique described in Berman et al. (2014) to identify 600 representative data points from each of the recording sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the anatomical and functional context of descending neurons in Drosophila, noting that 250-550 pairs of descending neurons transmit commands from brain to ventral nerve cord, representing ~0.5% of all fly neurons, and that prior to this study only a few had been associated with specific behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C6-C10 provide well-cited background knowledge establishing the anatomical organization and prior state of knowledge about descending neurons. These claims are appropriately supported by citations to established literature and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "bd552c52-b049-4d40-a27c-c8a0304febc6",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The researchers screened 130 split-GAL4 lines targeting approximately 160 neurons divisible into 58 cell types, successfully associating 80% with specific behaviors, representing roughly one-third to one-half of all fly descending neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 describe the scope and success rate of the screen. The quantitative results (80% association rate, coverage of 1/3 to 1/2 of total descending neurons) are clearly stated and supported by the experimental data presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "3c360a78-7e11-4563-b235-ab9daa50a7a8",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study employed a custom-built apparatus with 12 USB cameras filming flies at 100 fps in 3 cm chambers, using CsChrimson optogenetic activation with red light at two intensities (4.5 and 9 mW/cm\u00b2) in 30 trials of 15 s pulses followed by 45 s recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C87-C96 provide detailed methodological information about the experimental apparatus, genetic tools, and imaging parameters. These are well-documented technical details that are appropriately specified for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "de64b051-7316-47bc-81d7-769d30cfb14e",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The researchers generated a comprehensive behavior space from ~700 million images using dimensionality reduction (PCA, wavelet transform, t-SNE), with 93% of data points successfully embedded, including equal fractions of light-on and light-off frames.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 and C97-C104 describe the computational pipeline for behavior space generation. The 93% embedding success rate (C29-C30) with balanced representation of stimulated and unstimulated behaviors provides quantitative validation of the method's effectiveness. The methodology follows established approaches (Berman et al. 2014) with appropriate technical details.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "4229051b-1d9b-4670-8de6-f6ab4fe64510",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Entropy analysis revealed that most lines showed immediate entropy drops upon red light activation, with roughly one-third maintaining reduced entropy throughout the 15 s window, while most others showed transient drops that diminished after several seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 describe the entropy-based quantification of behavioral responses. The temporal dynamics (immediate vs. delayed, sustained vs. transient) are supported by Figure 3 and provide a systematic characterization across all lines. The entropy metric is appropriately defined (C33) and applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "7883a2bd-73c2-4ce4-8a37-15e949507b82",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At low light intensity, 69% of lines (91/130) showed significant behavioral phenotypes, increasing to 90% (119/130) when combining low and high intensity protocols. Most lines (86) activated single regions, while some activated multiple non-contiguous regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 provide quantitative results on phenotype detection rates and spatial patterns. The dose-response relationship (C41-C43) demonstrates experimental rigor, and the distinction between single and multiple region activation (C44-C45) is well-documented with specific examples in Figures 4B-D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "30ab7575-4ab7-4f99-9a92-5387dcd1c490",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Specific descending neurons drove distinct stereotyped behaviors: DNg07/DNg08 induced head grooming, DNg25 induced rapid running, DNp10 induced anterior reaching with wing flicking, DNp09 induced running followed by freezing, and DNb01 induced leg twitches followed by freezing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C36, C46-C47, C50 provide specific examples of neuron-behavior associations supported by video data and behavior space analysis. These examples illustrate the diversity of behavioral outputs and are consistent with the quantitative analyses presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "cb4ed38a-a520-4fec-9fe0-e2d3a73556a5",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutual information analysis revealed that all experimental animals showed non-zero mutual information between pre- and post-stimulation behaviors, with lines activating multiple regions showing particularly high mutual information, indicating context-dependent behavioral outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C79 describe mutual information analysis demonstrating context dependency. The quantitative results (Figure 5) show that prior behavioral state influences post-activation behavior, particularly for multi-region lines. The inference in C79 is appropriately supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Individual descending neuron phenotypes were estimated for 47 of 58 cell types by averaging multiple lines, revealing 26 driving locomotion, 10 driving anterior foreleg movements, 6 driving wing/abdomen movements, 2 driving anterior grooming, 1 driving abdomen stroking, and 4 driving still/slow behaviors, with most neurons activating small, specific regions of behavior space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C66 provide a comprehensive catalog of individual neuron functions derived from averaging multiple lines (Figure 6). The categorical breakdown is well-supported by the data, and the observation of modular, region-specific activation (C61) is consistent with the overall findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "5b3776fc-1e28-4d39-9055-0e8de4557ade",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study's three main findings are: (1) activation of most descending neurons drove stereotyped behaviors, (2) multiple descending neurons often activated similar behaviors, and (3) optogenetically activated behaviors were often dependent on prior behavioral state, supporting largely modular but context-dependent descending neuron control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C23-C24 represent the study's primary conclusions. These are well-supported by the comprehensive dataset: stereotyped behaviors are demonstrated by entropy analysis and behavior space mapping (C3, C23), redundancy is shown by multiple neurons activating similar regions (C4), and context dependency is established by mutual information analysis (C5, C24).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "ad1a4775-72ea-48a2-94a7-e39562750d47",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discussion proposes that descending neurons may function by triggering/maintaining behaviors rather than controlling details, may act in concert as command cohorts, and cites anatomical evidence that many descending neurons share input/output regions, suggesting the large number driving similar locomotion patterns may act cooperatively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C76 present hypotheses and cite prior literature to interpret the findings. While the cited work (C69-C75) is appropriately referenced, the inference that neurons with similar phenotypes act in concert (C76) is speculative. The authors acknowledge this limitation, noting their data 'do not allow us to definitively address this question.' The hypothesis is reasonable but requires additional experiments for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "1f830d23-81f6-4ecf-8240-b77443bc3142",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study found weak evidence for emergent behaviors from combined neuron activation (DNa05/DNa07, DNd02/DNd03 showed slight differences), and infers that the prevalence of substrate-specific behaviors over flight/courtship suggests context-dependent outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78, C80 address combinatorial and context-dependent function. C77 acknowledges only 'slightly different phenotypes' from combinations, which is weak evidence. C78 cites prior literature on state-dependent responses. C80's inference about context dependency from the prevalence of substrate behaviors is logical but indirect\u2014the assay design itself constrains behavioral outputs, making it difficult to distinguish true context dependency from experimental limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "216bbf8c-d32b-4956-9b24-623ea9d24648",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Specific behavioral observations were validated against prior literature: DNp09-induced pausing was confirmed as defensive freezing behavior, and DNp01 (giant fiber) activation produced the expected escape jump, though too fast to detect directly in the assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 and C81-C82 validate findings against published work. The DNp09 freezing behavior (C48-C49) matches Zacarias et al. 2018, and the DNp01 escape response (C81-C82) is consistent with Lima and Miesenb\u04e7ck 2005. These cross-validations strengthen confidence in the overall approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "29d37d7b-5de8-4a1e-bca2-bf7ed5780767",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study acknowledges four key limitations: behaviors faster than 50 Hz could not be detected, only standing/walking behaviors were assayed, only males were tested, and only solitary flies were examined, potentially missing flight, female-specific, and social behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 appropriately identify experimental limitations. The 50 Hz Nyquist frequency limitation (C83) is a fundamental constraint of the imaging system. The restrictions to walking males in isolation (C84-C86) are clearly stated design choices that limit generalizability but are appropriate for the study's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    },
+    {
+      "id": "5e426869-c072-4705-b250-443c929a1be4",
+      "content_id": "3f8e53c8-f594-4d22-a4fd-436519fd5866",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work established that some descending neurons trigger specific behaviors (courtship song, backwards walking, escape), while others modify motor programs, with cricket studies showing separate encoding of walking initiation, speed, and turning, and evidence that descending neuron responses are modified by locomotor state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 summarize relevant prior literature establishing the functional diversity of descending neurons. These are appropriately cited and provide important context for interpreting the current findings. The claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:14:57.411008Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "611d8ed1-0987-4866-a238-bb6d1453082a",
+      "result_id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1"
+    },
+    {
+      "claim_id": "eb357938-014e-44b2-b4d5-c05bb3489a1a",
+      "result_id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1"
+    },
+    {
+      "claim_id": "cd49b3b4-1ba6-4da4-90a5-2666d55dc642",
+      "result_id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1"
+    },
+    {
+      "claim_id": "8d56c491-0e4f-4c77-a2df-f9d6a307624b",
+      "result_id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1"
+    },
+    {
+      "claim_id": "e3f8030a-2b3f-43ca-b8ce-9089649838b3",
+      "result_id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1"
+    },
+    {
+      "claim_id": "81ac810a-bae0-4759-8394-dcbb167ccb3c",
+      "result_id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1"
+    },
+    {
+      "claim_id": "d6bcc78b-03a8-472c-b02c-726248517da9",
+      "result_id": "a640d629-6c19-4f5f-9504-f78fcdbf6eb1"
+    },
+    {
+      "claim_id": "3104afc9-e4d0-4bad-8033-861f0d017558",
+      "result_id": "bd552c52-b049-4d40-a27c-c8a0304febc6"
+    },
+    {
+      "claim_id": "38097836-0518-4dde-9107-a9869db5f746",
+      "result_id": "bd552c52-b049-4d40-a27c-c8a0304febc6"
+    },
+    {
+      "claim_id": "555a49fd-0e02-43ef-b880-dd54eb2210bf",
+      "result_id": "bd552c52-b049-4d40-a27c-c8a0304febc6"
+    },
+    {
+      "claim_id": "33e8710e-98b1-42de-9241-325739d8e986",
+      "result_id": "bd552c52-b049-4d40-a27c-c8a0304febc6"
+    },
+    {
+      "claim_id": "e62633cf-3145-4962-93c6-359d6c35d378",
+      "result_id": "bd552c52-b049-4d40-a27c-c8a0304febc6"
+    },
+    {
+      "claim_id": "c5c2c0d0-45b8-4632-9456-bb98ae7420e0",
+      "result_id": "bd552c52-b049-4d40-a27c-c8a0304febc6"
+    },
+    {
+      "claim_id": "0b53771d-8f58-449f-b013-3d6fb0de08c5",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "8a43ea4e-40cc-42e4-b088-a3c6a1be0fb6",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "40563158-440e-4fcf-802f-75f9eef212d2",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "6b7462a0-d4d8-440e-8f09-959945ea7bfa",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "5b2f0227-afe3-494a-9595-0960b519c9ed",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "81432433-8325-41d6-8e19-0365aeaf73a7",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "22adf4d2-8c9e-4213-be6b-5a285e85aa78",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "a2f7206a-48be-4e5b-9b2c-cf5aac73d779",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "8f9dd1bf-4851-431b-a361-22e80a22f583",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "92b088d5-0c9c-4bf5-a12f-892a4616213f",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "f96e8191-9d25-4835-9fb4-26a5d2981a23",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "1bb2c6d2-7f44-485f-b941-b091bc127df4",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "2946962c-dd27-4815-9fa3-ec0a89349b2b",
+      "result_id": "3c360a78-7e11-4563-b235-ab9daa50a7a8"
+    },
+    {
+      "claim_id": "c7a5e4b4-8825-4f4f-be30-753c69886748",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "15768374-6e05-4c26-8dd5-8f010c43ecb7",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "e27ddad4-8643-4f44-8be8-1a2fe296f445",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "31c0623a-e49d-4f2c-9a3d-cfdb8780de72",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "1814a31a-39ac-42ab-b3a8-219d78a9ede6",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "3420a214-9e64-44de-9b96-b1a3fc1b2da9",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "f7580a45-aba7-4304-86e4-3409cd02773e",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "fd93aa6a-80c0-443d-b96e-7e271aee95a9",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "2498ffa0-27f4-40e1-ba10-570f9d35a1b6",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "ed803398-36ce-46eb-b1bf-ea36f1513834",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "94e26353-66a3-4518-a241-6adda788f753",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "94a750a5-d5c8-4dfc-bcb0-6d0516860b3d",
+      "result_id": "de64b051-7316-47bc-81d7-769d30cfb14e"
+    },
+    {
+      "claim_id": "64184f08-8edd-4818-9176-7d6fc174e6fe",
+      "result_id": "4229051b-1d9b-4670-8de6-f6ab4fe64510"
+    },
+    {
+      "claim_id": "ec6eb2ad-b997-45ce-bf34-fa114ae42d33",
+      "result_id": "4229051b-1d9b-4670-8de6-f6ab4fe64510"
+    },
+    {
+      "claim_id": "96ea69a2-6eb7-46e8-afd0-22e55ee7f7e2",
+      "result_id": "4229051b-1d9b-4670-8de6-f6ab4fe64510"
+    },
+    {
+      "claim_id": "79f952ba-d3ea-426a-aff0-fa9ff299c41a",
+      "result_id": "4229051b-1d9b-4670-8de6-f6ab4fe64510"
+    },
+    {
+      "claim_id": "ed5daa02-72e8-4d9c-bdf1-68f9ce55bdc7",
+      "result_id": "4229051b-1d9b-4670-8de6-f6ab4fe64510"
+    },
+    {
+      "claim_id": "4ab32a89-2a71-4e18-9b39-b606ac9d05f0",
+      "result_id": "4229051b-1d9b-4670-8de6-f6ab4fe64510"
+    },
+    {
+      "claim_id": "5b19bbf0-ba55-4ce8-94dd-e8e8f5439a63",
+      "result_id": "4229051b-1d9b-4670-8de6-f6ab4fe64510"
+    },
+    {
+      "claim_id": "5f371cda-fd30-4109-8cd1-422876e04678",
+      "result_id": "7883a2bd-73c2-4ce4-8a37-15e949507b82"
+    },
+    {
+      "claim_id": "de1bb305-c9dd-4e09-8da1-e889f1f09fbe",
+      "result_id": "7883a2bd-73c2-4ce4-8a37-15e949507b82"
+    },
+    {
+      "claim_id": "bf524e87-1c1a-4de1-b34c-3e0d4f21f795",
+      "result_id": "7883a2bd-73c2-4ce4-8a37-15e949507b82"
+    },
+    {
+      "claim_id": "94679960-1094-4b27-8692-d6eb6bae220f",
+      "result_id": "7883a2bd-73c2-4ce4-8a37-15e949507b82"
+    },
+    {
+      "claim_id": "479c816e-a08f-4af3-9aa4-def354032fec",
+      "result_id": "7883a2bd-73c2-4ce4-8a37-15e949507b82"
+    },
+    {
+      "claim_id": "b112ce4e-0a99-46a5-b6c9-94323008f5dd",
+      "result_id": "30ab7575-4ab7-4f99-9a92-5387dcd1c490"
+    },
+    {
+      "claim_id": "a824678c-06a7-4e37-808d-35621b981599",
+      "result_id": "30ab7575-4ab7-4f99-9a92-5387dcd1c490"
+    },
+    {
+      "claim_id": "81783782-7a2b-477f-b9ad-6bc997a4a9e4",
+      "result_id": "30ab7575-4ab7-4f99-9a92-5387dcd1c490"
+    },
+    {
+      "claim_id": "99b7e72b-2894-40f0-a9c5-2a834a776de5",
+      "result_id": "30ab7575-4ab7-4f99-9a92-5387dcd1c490"
+    },
+    {
+      "claim_id": "141fb0e0-a079-4c86-a59d-0afcb9a313fc",
+      "result_id": "30ab7575-4ab7-4f99-9a92-5387dcd1c490"
+    },
+    {
+      "claim_id": "ad22929a-6b24-4330-aadc-cc90fba7b72a",
+      "result_id": "cb4ed38a-a520-4fec-9fe0-e2d3a73556a5"
+    },
+    {
+      "claim_id": "d0e93ceb-deb7-4e9d-9e98-075740c80e1c",
+      "result_id": "cb4ed38a-a520-4fec-9fe0-e2d3a73556a5"
+    },
+    {
+      "claim_id": "03a3def2-4e74-4aca-8a5a-972c487c2bf4",
+      "result_id": "cb4ed38a-a520-4fec-9fe0-e2d3a73556a5"
+    },
+    {
+      "claim_id": "6b32fa79-412d-48b4-bced-6ddd7d1c1c6a",
+      "result_id": "cb4ed38a-a520-4fec-9fe0-e2d3a73556a5"
+    },
+    {
+      "claim_id": "370413f9-eab7-41c3-8090-ca136e1ab376",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "f52cb9ce-18bb-4132-8b14-2a25e3cc741b",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "2373fa25-7b6e-4025-94f4-60f2aa5ff0c7",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "18fa7596-ea7c-4d3d-89e9-9a31a9105a68",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "6c8aa4f5-ae0b-425b-9221-555983bff98f",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "d2643830-c736-43d7-98ae-65e80ecbeee2",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "1466c4b7-c83f-4133-95b0-16a91cc4f314",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "ffc601aa-6ed8-4fa5-991b-36388fe77209",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "63354b01-aa9f-430e-ba7d-7b379275eaa7",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "2f940f20-2c46-4c15-b9c9-8be44447da07",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "9dc3f30b-ad97-4403-8224-9100e05924cc",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "56fe85a1-932b-4cd4-a3a6-ee14a33bec78",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "7bf662cc-8a8d-4ad5-ae62-271ade8daf3d",
+      "result_id": "b707a220-91fd-43c4-a5f8-92dede1bdf9d"
+    },
+    {
+      "claim_id": "c08e07c3-2c92-4706-b4e8-5dba5cb95dca",
+      "result_id": "5b3776fc-1e28-4d39-9055-0e8de4557ade"
+    },
+    {
+      "claim_id": "487ce3e9-2f0f-4566-a537-d5a519c61bc5",
+      "result_id": "5b3776fc-1e28-4d39-9055-0e8de4557ade"
+    },
+    {
+      "claim_id": "b21f09f5-2f09-48a6-bd1f-a9de830de9dd",
+      "result_id": "5b3776fc-1e28-4d39-9055-0e8de4557ade"
+    },
+    {
+      "claim_id": "99c3e5bc-4425-485a-8919-1ff7b8fad588",
+      "result_id": "5b3776fc-1e28-4d39-9055-0e8de4557ade"
+    },
+    {
+      "claim_id": "eb831d07-94f5-45c3-931e-00b5c270b25d",
+      "result_id": "5b3776fc-1e28-4d39-9055-0e8de4557ade"
+    },
+    {
+      "claim_id": "aa510307-6fd3-4a6e-8121-b0f50b088058",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "9f1319f9-26f4-4e74-8a5f-7a60d5982bc8",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "a0eb21d1-1933-4214-a075-a1f913f9f08a",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "b0c5f2af-8825-49e4-84d2-ef1c69b52ce0",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "76112b3a-1eea-4aae-8cfc-f7370e17c4fb",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "89d8892a-a694-441a-8eeb-882059ef1a40",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "77648397-5e86-41d7-970b-c5f1eb6ae424",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "c9295b0b-e85e-4da8-ac50-773013ed380a",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "4d4382e8-4e81-44e9-bc38-a74c9d6cdf6d",
+      "result_id": "ad1a4775-72ea-48a2-94a7-e39562750d47"
+    },
+    {
+      "claim_id": "054f9346-c18c-4c2d-824d-06c42930bfe4",
+      "result_id": "1f830d23-81f6-4ecf-8240-b77443bc3142"
+    },
+    {
+      "claim_id": "e22325a1-cb08-418b-a31a-202bd53a5636",
+      "result_id": "1f830d23-81f6-4ecf-8240-b77443bc3142"
+    },
+    {
+      "claim_id": "0bb69995-abd4-478d-a44c-3f21dc482546",
+      "result_id": "1f830d23-81f6-4ecf-8240-b77443bc3142"
+    },
+    {
+      "claim_id": "e8dfb575-6c49-4411-8b3f-e5295c4ef227",
+      "result_id": "216bbf8c-d32b-4956-9b24-623ea9d24648"
+    },
+    {
+      "claim_id": "debace4b-570a-4953-87da-c78ff6e5561c",
+      "result_id": "216bbf8c-d32b-4956-9b24-623ea9d24648"
+    },
+    {
+      "claim_id": "c639e7c1-bca0-431d-b295-420bc38ec622",
+      "result_id": "216bbf8c-d32b-4956-9b24-623ea9d24648"
+    },
+    {
+      "claim_id": "7851bf01-146b-411d-8a70-4e501388a2c7",
+      "result_id": "216bbf8c-d32b-4956-9b24-623ea9d24648"
+    },
+    {
+      "claim_id": "422e4c2d-e8f6-4ba8-9679-bc06c2a4dea4",
+      "result_id": "29d37d7b-5de8-4a1e-bca2-bf7ed5780767"
+    },
+    {
+      "claim_id": "a15238a9-69dc-4217-96e7-60c6200337c4",
+      "result_id": "29d37d7b-5de8-4a1e-bca2-bf7ed5780767"
+    },
+    {
+      "claim_id": "7810cf5a-8fde-4abd-a22c-20e227bf1df8",
+      "result_id": "29d37d7b-5de8-4a1e-bca2-bf7ed5780767"
+    },
+    {
+      "claim_id": "faec824b-9386-4832-b174-3c0f6f8867f5",
+      "result_id": "29d37d7b-5de8-4a1e-bca2-bf7ed5780767"
+    },
+    {
+      "claim_id": "66283574-1ab8-4d18-a8a5-9a5bfd3e3015",
+      "result_id": "5e426869-c072-4705-b250-443c929a1be4"
+    },
+    {
+      "claim_id": "31138dcd-c61d-4160-849a-eaf69b11fd40",
+      "result_id": "5e426869-c072-4705-b250-443c929a1be4"
+    },
+    {
+      "claim_id": "730a6737-1ddc-4d20-b706-a7ed1ad3596f",
+      "result_id": "5e426869-c072-4705-b250-443c929a1be4"
+    },
+    {
+      "claim_id": "dc0d9df8-df07-4d59-b489-01115d0d768b",
+      "result_id": "5e426869-c072-4705-b250-443c929a1be4"
+    },
+    {
+      "claim_id": "fb03df22-7dbf-4924-8ca2-2a3efb14ece5",
+      "result_id": "5e426869-c072-4705-b250-443c929a1be4"
+    },
+    {
+      "claim_id": "072ded3e-e7f9-4e05-b2dd-1537e4376bdd",
+      "result_id": "5e426869-c072-4705-b250-443c929a1be4"
+    }
+  ],
+  "comparisons": []
+}

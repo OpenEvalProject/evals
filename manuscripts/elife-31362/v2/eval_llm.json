@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neural crest cells differentiate into vascular smooth muscle cells (SMCs) specifically in posterior branchial arches (PBA/OFT) that are destined for survival, while anterior arches that regress do not recruit SMCs. This differential SMC recruitment follows a rostro-caudal temporal progression and correlates with vessel fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C37 provide comprehensive temporal imaging data showing SMC appearance only in AA3-6 (which persist) but not in AA1-2 (which regress). Claims C20-C26, C39 provide supporting transcriptomic evidence showing SMC differentiation gene expression specifically in PBA/OFT. The correlation between SMC presence and vessel survival (C38) is well-documented across multiple developmental stages with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C92",
+      "C93"
+    ],
+    "result": "Gata6 is identified as a crucial regulator of neural crest differentiation to SMCs, showing dichotomic expression that is highly enriched in PBA/OFT (BA3-6) and essentially absent from BA1-2, mirroring the pattern of cardiac neural crest colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide RNA-seq and immunofluorescence data demonstrating Gata6's spatial expression pattern matching SMC distribution. Claims C92-C93 confirm this dichotomic distribution. The temporal expression (C51-C52) shows Gata6 appears just before or during SMC differentiation. However, while the correlation is strong, direct causation requires the gain-of-function experiments described in other claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Forced Gata6 expression in neural crest cells migrating to BA2 is sufficient to induce ectopic SMC differentiation and cause persistence of AA2, which normally regresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 provide strong gain-of-function evidence with appropriate controls (n=11 controls, n>30 wild-type embryos showing no BA2 SMCs). The penetrance is high (5/5 embryos with Gata6 expression showed ectopic SMCs, 3/5 showed persistent AA2). Claims C87-C88 provide molecular validation showing upregulation of Myocd and Jag1 (Gata6 targets) and SMC markers. The incomplete penetrance for AA2 persistence (3/5) is acknowledged and interpreted appropriately (C91, C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C90",
+      "C91",
+      "C94",
+      "C132"
+    ],
+    "result": "Gata6 drives preservation of aortic arches that normally regress, with the primary effect being SMC generation that subsequently stabilizes vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C90 demonstrate persistent AA2 in transgenic embryos (3/5 with ectopic Gata6). The interpretation that SMC generation is primary and vessel stabilization is secondary (C91, C132) is supported by the observation that all transgenic embryos showed ectopic SMCs but only 3/5 showed persistent AA2, suggesting SMC presence is necessary but may not always be sufficient for vessel persistence. This is a reasonable interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C98"
+    ],
+    "result": "Gata6 binds to 5122 genomic regions in PBA/OFT tissue, predominantly at intergenic and intronic regions, with binding sites enriched for GATA and TEAD motifs and associated with cardiovascular development genes including autoregulatory binding at Gata6 and Gata4 loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 provide comprehensive ChIP-seq characterization with appropriate bioinformatic analyses (CEAS, GREAT, motif discovery). The identification of >90% of peaks containing GATA motifs (C59) validates the specificity. The association with cardiovascular phenotypes (C62) and the autoregulatory binding (C55-C56) are well-supported. Claim C57 provides orthogonal validation from prior literature. However, ChIP-seq was performed with only one high-quality replicate used for analysis, though a second replicate showed 97% overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C74",
+      "C78",
+      "C106",
+      "C107"
+    ],
+    "result": "Gata6 binding is associated with active, tissue-specific enhancers marked by H3K27ac in PBA/OFT, with 42% of Gata6 sites overlapping H3K27ac regions and preferentially associating with PBA-specific enhancers near genes involved in vasculature and SMC development including Notch1, Jag1, and Myocd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide integrative analysis of ChIP-seq data showing correlation between Gata6 binding, H3K27ac marks, and gene expression. The statistical enrichment (24.5% vs 11.1%, p=2.2e-16, C66) is significant. Claims C69, C71, C74 identify specific target genes with biological relevance supported by prior literature. The correlation between H3K27ac and gene expression (C63) validates the enhancer annotations. This represents strong correlative evidence for Gata6's regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C108"
+    ],
+    "result": "Gata6 directly controls Jag1 and Myocd transcription through binding to enhancers whose activity requires intact GATA motifs, as demonstrated by zebrafish reporter assays showing significant loss of activity upon GATA motif mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide functional validation of Gata6 binding through heterologous zebrafish enhancer assays. The mutation of GATA motifs significantly reduced enhancer activity (C76, with statistical significance noted in Figure 4). Claims C79, C108 appropriately infer direct regulation based on binding, motif requirement, and gene expression changes in transgenic embryos (C87-C88). The use of zebrafish is appropriate for enhancer validation, though testing in mouse would be more definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C103",
+      "C105"
+    ],
+    "result": "A novel computational approach using differential Meis binding levels combined with sequence analysis successfully identified tissue-specific transcription factor combinations, revealing GATA, Forkhead, HAND, and TEAD as major regulators in PBA/OFT where Meis binding is increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe the computational approach and results showing 1379 regions with increased Meis binding (LogFC\u22653) in PBA/OFT associated with SMC differentiation and vasculature development. The de novo motif analysis identifying GATA, TEAD, and other factors (C47) is validated by subsequent functional studies of Gata6. Claims C103, C105 appropriately characterize this as a novel and successful approach. The biological validation through Gata6 functional studies supports the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Transcriptomic analysis reveals that PBA/OFT-enriched genes are associated with heart development, OFT morphogenesis, and vasculogenesis, with significant enrichment of SMC markers (Acta2, Tagln, Cnn1, Myocd) and SRF-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide RNA-seq data with appropriate gene ontology analysis. The identification of SMC markers among top differentially expressed genes (C22) is supported by volcano plot data. The enrichment of SRF-responsive genes (C25) is validated by Ingenuity Pathway Analysis with high significance (p<1e-20). Claims C23-C24 provide appropriate biological context from prior literature. The RNA-seq was performed in duplicate with good correlation between replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C60",
+      "C47",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The GATA/TEAD module is identified as a novel regulatory feature of the PBA/OFT transcriptional network, with GATA and TEAD recognition motifs significantly enriched in promoters associated with Gata6-bound enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 identify GATA/TEAD co-enrichment through motif analysis. Claims C60, C47 show TEAD motifs are the second most enriched in Gata6 peaks and co-occur with GATA motifs in Meis differential binding regions. Claims C109-C110 provide biological context from prior literature. Claim C111 appropriately notes this is a novel finding in vascular/SMC development. However, the functional significance of GATA/TEAD cooperation is inferred rather than directly tested - TEAD binding and functional cooperation experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C137",
+      "C139"
+    ],
+    "result": "There is a striking correlation between SMC presence and aortic arch fate across multiple experimental contexts: vessels that persist (AA3-6) recruit SMCs while those that regress (AA1-2) do not, and this correlation extends to genetic mutants and experimental manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 establish the correlation in normal development supported by imaging data from this study. Claims C127-C130 cite multiple prior studies showing the same correlation holds in various genetic mutants (Edn1, Ednra, Hoxa3) and experimental manipulations (NC ablation, right-sided arch). Claim C131 appropriately synthesizes this evidence. Claims C137, C139 propose this as a mechanistic model, which is reasonable given the extensive correlative evidence, though direct causation is not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138"
+    ],
+    "result": "Mural cells (including SMCs) are essential for blood vessel maturation, forming a muscular wall that protects vessels and stabilizes them by suppressing endothelial proliferation and stimulating extracellular matrix production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 state established principles of vascular biology supported by citation (C135, Jain 2003). Claim C136 provides experimental evidence from prior literature (Benjamin et al., 1998). Claim C138 applies this general principle to the specific context of aortic arches. These are well-established concepts appropriately cited and applied to interpret the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors propose a model where Gata6 instructs cardiac neural crest to generate SMCs, and SMC association with caudal aortic arches selects these vessels for reorganization into the mature circulation, demonstrating that transcriptional control is a major determinant of vessel fate independent of blood flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C141 present the proposed model synthesizing the experimental findings. Claim C96 provides a mechanistic interpretation of Gata6's dichotomic expression. Claim C142 makes a strong conclusion about transcriptional control versus hemodynamics. The model is well-supported by the gain-of-function experiments showing Gata6 can override normal developmental programs. However, the claim of independence from blood flow (C142) is somewhat overstated - the experiments don't directly test hemodynamic contributions, and prior work (C140) shows flow does play a role in asymmetric remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors reconcile conflicting prior literature on Gata6's role in SMC development by proposing that Gata6 acts early in SMC lineage specification via Myocd and Notch activation, with apparent conflicts explained by compensatory mechanisms from other GATA family members (Gata4, Gata5) that are co-enriched in PBA/OFT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C115 accurately summarize conflicting prior literature. Claims C116-C117 propose an interpretation that Gata6 acts early in lineage specification, which is reasonable given the data. Claims C118-C120 propose compensatory mechanisms based on co-expression of Gata4/5/6 (C119) and prior evidence of cooperation (C120). However, this remains speculative - the study does not directly test whether Gata4/5 can compensate for Gata6 loss, nor does it perform loss-of-function experiments to test the early lineage specification hypothesis. These are reasonable interpretations but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The identified Gata6 enhancers represent an important resource for mapping functional non-coding regions whose genetic variants may lead to congenital heart disorders, as mutations in GATA6 cause persistent truncus arteriosus and JAG1 haploinsufficiency causes Alagille syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 cite established clinical associations from prior literature. Claims C123-C124 propose potential clinical utility of the enhancer catalog. The clinical relevance is well-established (C121-C122), and the enhancer catalog does represent a valuable resource. However, the claim that variants in these specific enhancers may cause disease (C124) is speculative and would require population genetic studies or functional validation to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing the developmental context: cardiac septation and aortic arch remodeling are critical for separating pulmonary and systemic circulations, with cardiac neural crest cells playing essential roles and multiple signaling pathways (Notch, TGF\u03b2, endothelin, Sema3c, Gata6) being required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C19 provide background information establishing the developmental and clinical context. All claims are supported by appropriate citations to prior literature. These accurately represent established knowledge in the field and provide necessary context for interpreting the current findings. No original data is presented for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Temporal characterization of aortic arch development shows AA2 and AA3 are present at E9.5, AA3 and AA4 at E10.5 with capillary beds replacing AA1-2, and AA3, 4, and 6 at E11.0-E11.5 with complete regression of anterior arches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide systematic temporal characterization of aortic arch development using confocal imaging with appropriate markers (PECAM for endothelium). The observations are consistent with prior literature (C28 cites Hiruma et al., 2002) and provide necessary baseline data for interpreting SMC recruitment patterns. The imaging data is clearly presented in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors speculate that BA2 is a non-permissive environment for cardiac differentiation, with signals that may inhibit GATA TF expression in anterior neural crest cells and block SMC fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 cite prior literature (Shenje et al., 2014) about BA2 being non-permissive for cardiac fate. Claim C101 makes a reasonable inference from this observation. Claim C102 is explicitly speculative, proposing that the same signals might inhibit GATA expression. This is an interesting hypothesis but is not tested in the current study. The speculation is reasonable given the dichotomic Gata6 expression pattern, but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "Changes in blood flow lead to asymmetric remodeling of the embryonic circulation and regression of right AA6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 cites prior literature (Yashiro et al., 2007) establishing the role of hemodynamics in aortic arch remodeling. This is established knowledge appropriately cited to provide context for the discussion of transcriptional versus hemodynamic control. No original data is presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C104"
+    ],
+    "result": "General principles of gene regulation: positive autoregulatory loops are common features of gene regulatory networks, and transcription factors collaborate in competing with nucleosomes for DNA access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C104 state established principles of gene regulation. C104 is supported by citation (Spitz and Furlong, 2012). These are correctly stated general principles used to interpret the specific findings about Gata6 autoregulation and Meis/GATA cooperation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Regulation of Jag1 and Myocd in combination would be expected to promote development of aortic arches into mature blood vessels equipped with a tunica media of SMCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 makes a reasonable prediction based on the known roles of Jag1 (Notch signaling, essential for NC to SMC differentiation) and Myocd (master regulator of SMC differentiation) established in prior literature. This is appropriately characterized as an expectation rather than a proven fact. The prediction is validated by the transgenic experiments showing upregulation of both genes leads to ectopic SMC formation.",
+    "result_type": "MINOR"
+  }
+]

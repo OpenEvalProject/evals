@@ -1,0 +1,1167 @@
+{
+  "submission": {
+    "id": "98226501-7b8a-4ed8-98f4-b14e713319ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:23:43.413936Z",
+    "updated_at": "2025-12-01T23:23:43.413936Z"
+  },
+  "content": [
+    {
+      "id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "submission_id": "98226501-7b8a-4ed8-98f4-b14e713319ee",
+      "content_type": "manuscript",
+      "content_text": "# Allosteric mechanism of the V. vulnificus adenine riboswitch resolved by four-dimensional chemical mapping\n\n## Authors\n\n- Siqi Tian<sup>1</sup> ([ORCID: 0000-0001-5672-1032](https://orcid.org/0000-0001-5672-1032))\n- Wipapat Kladwang<sup>1</sup>\n- Rhiju Das<sup>2</sup> ([ORCID: 0000-0001-7497-0972](https://orcid.org/0000-0001-7497-0972)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Stanford University Stanford United States\n2. Department of Physics Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe structural interconversions that mediate the gene regulatory functions of RNA molecules may be different from classic models of allostery, but the relevant structural correlations have remained elusive in even intensively studied systems. Here, we present a four-dimensional expansion of chemical mapping called lock-mutate-map-rescue (LM2R), which integrates multiple layers of mutation with nucleotide-resolution chemical mapping. This technique resolves the core mechanism of the adenine-responsive V. vulnificus add riboswitch, a paradigmatic system for which both Monod-Wyman-Changeux (MWC) conformational selection models and non-MWC alternatives have been proposed. To discriminate amongst these models, we locked each functionally important helix through designed mutations and assessed formation or depletion of other helices via compensatory rescue evaluated by chemical mapping. These LM2R measurements give strong support to the pre-existing correlations predicted by MWC models, disfavor alternative models, and suggest additional structural heterogeneities that may be general across ligand-free riboswitches.\n\n## Introduction\n\nConformational changes in RNA molecules are ubiquitous features of gene regulation in all living cells. Recent years have seen an explosion of discoveries of cis-acting mRNA elements that sense small molecules, proteins, RNAs, and other environmental conditions and then modulate transcriptional termination, ribosome recruitment, splicing, and other genetic events (Henkin, 2008; Nudler and Mironov, 2004; Gesteland et al., 2006). Beginning with classic work by Yanofsky and colleagues in the 1970s, these discoveries have been associated with elegant models of allostery in which each molecule interconverts between distinct RNA secondary structures (Yanofsky, 2000; Guti\u00e9rrez-Preciado et al., 2009; Monod et al., 1965). If these multiple states could be characterized in detail and quantitatively modeled, they would offer potential new substrates for biological control and new targets for antibiotic development (Jones and Ferr\u00e9-D'Amar\u00e9, 2017).\n\nDespite this strong interest in RNA conformational change, directly testing the base pair correlations posited to underlie RNA allostery have been difficult for most systems. Experimental barriers remain even for the compact and self-contained riboswitches, which occur in eukaryotes and appear pervasive throughout bacteria. A riboswitch is a cis-regulatory RNA domain composed of two segments: (1) an \u2018aptamer\u2019 segment that forms an intricate tertiary structure to specifically bind small molecule ligands, such as nucleobases or amino acids, and (2) a \u2018gene expression platform\u2019 segment that interacts with other\u00a0molecular machines like the ribosome to modulate gene expression (Fern\u00e1ndez-Luna and Miranda-R\u00edos, 2008; Gilbert and Batey, 2006; Breaker, 2012). In many cases, the coupling of ligand binding to changes in the gene expression platform has been reconstituted in vitro in small model RNAs, enabling detailed biophysical analysis. Nevertheless, in most of these cases, the mechanism underlying the coupling of ligand binding to gene expression remains under question, suggesting the need for new concepts and new biophysical methods to understand RNA allostery.\n\nA particularly well-studied \u2013 but still incompletely understood \u2013 example of an allosteric RNA is the add riboswitch, a\u00a0~120 nucleotide element that resides in the 5\u00b4 untranslated region (UTR) of the add adenosine deaminase mRNA of human pathogenic bacterium Vibrio vulnificus. This riboswitch can directly bind adenine and controls translation of the mRNA in response to adenine in vivo. Domains of this RNA have been subjected to nearly every biochemical and biophysical technique available, including crystallography, single molecule measurements, and time-resolved X-ray laser diffraction (Lemay et al., 2011; Mandal and Breaker, 2004; Batey, 2012; Cordero and Das, 2015; Stoddard et al., 2013; Rieder et al., 2007; Neupane et al., 2011; Lemay et al., 2006; Greenleaf et al., 2008; Wickiser et al., 2005; Lemay and Lafontaine, 2007; Stagno et al., 2017). Almost all work on the add riboswitch to date have assumed some variation of a Monod-Wyman-Changeux model (MWC, also called \u2018conformational selection\u2019 or \u2018population shift\u2019 models) (Monod et al., 1965; Batey, 2012; Gunasekaran et al., 2004; Changeux and Edelstein, 2005). In the absence of adenine, the RNA dominantly forms a stable apo secondary structure whose aptamer region is in a fold incompatible with adenine binding and whose gene expression platform, a ribosome binding site and AUG start codon, is sequestered into helices (blue, Figure 1A). High adenine concentrations stabilize the ligand-binding secondary structure in the aptamer region and rearrange the secondary structure around the gene expression platform so that it is freed to recruit the ribosome and translation machinery (gold, Figure 1A). The signature prediction of the MWC model is that the holo RNA secondary structure should also exist in the absence of adenine, albeit as a high energy conformation within the apo ensemble (Figure 1A, middle panel; gold). In terms of the riboswitch functional domains, when the RNA occasionally fluctuates to form an aptamer secondary structure compatible with ligand binding, the gene expression platform is predicted to concomitantly open, even without the adenine ligand. This prediction for the ligand-free ensemble is analogous to the classic MWC model of oxygen binding by hemoglobin, involving interconversion between thermodynamically stable hemoglobin structures (tense and relaxed, dominating apo and holo,\u00a0respectively), with transient sampling of the holo oxygen-binding structure even in the absence of oxygen. This prediction for hemoglobin and numerous other protein systems have been supported through decades of studies on protein allostery that include direct detection of transient holo-like states in the apo ensemble even in the absence of small molecules needed to fully stabilize the holo conformation (Changeux and Edelstein, 2005; Eaton et al., 1999).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013B) Three-state models for conformational changes and ligand binding in the add riboswitch. In current models, there is an apoB state (left).\u00a0This\u00a0state is OFF (Shine-Dalgarno sequence and AUG start codon sequestered) and is also incompetent for ligand binding due to the aptamer\u2019s rearrangement (blue background in both regions). The ligand-bound state holo (right) is ON with Shine-Dalgarno sequence and AUG codon (gene expression platform, cross-hatched) exposed and the aptamer region folded into a secondary structure compatible with binding adenine (gold background in both regions; adenine is purple). The apoA state (center), defined as the transient adenine-free conformation with an aptamer fold ready for ligand binding (gold background), differs in the two models. (A) In a Monod-Wyman-Changeux model, apoA is assumed to be ON, with a similar expression platform to holo. (B) In a non-MWC model proposed in a prior study (Reining et al., 2013), the apoA state is \u2018mixed\u2019, with the aptamer fold ready for binding (gold) but the expression platform turned OFF as the Shine-Dalgarno sequence and AUG codon are sequestered into helices P4B and P4C (blue). (C\u2013D) Cartoons of possible ligand-free structural ensembles allowing for myriad alternative secondary structures with only some helices shared with those in (A\u2013B) or completely different helices. This description does not assume a three-state decomposition of (A\u2013B), which does not take into account the possibility of other possible helices (pink arrows). In an MWC scenario (C), helices characteristic of the aptamer secondary structure (such as P1, highlighted gold) and helices characteristic of closed gene expression platform (such as P4B, highlighted blue) appear in different members of the structural ensemble, but never together. The helix frequencies are anticorrelated (equation above cartoon). In non-MWC scenario (D), both kinds of helices appear together in \u2018mixed\u2019 secondary structures (marked with red arrows) at joint frequencies similar to the product of their individual occurrence frequencies (equation above cartoon).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Three different constructs were probed by SHAPE: (top) a 71-nt aptamer only construct (nts 13\u201383); (middle) a 113-nt construct (nts 13\u2013125) including the expression platform, matching the previous NMR study; (bottom) a 128-nt construct (nts 13\u2013140) including the first 15 nt of the coding region. Reactivities are normalized based on GAGUA penta-loop reference hairpins that flank the RNA (not shown). Ligand-dependent reactivity changes in the aptamer domain (nts 15\u201383) occur in all three constructs. The 113-nt construct did not show significant switching for the Shine-Dalgarno sequence (nts 112\u2013114) or AUG start codon (nts 120\u2013122), highlighted in gray, with cross-hatched boxes between panels. The 128-nt construct was therefore used for all measurements in this manuscript. See also reference (Ali, 2011). Measurements were acquired in 10 mM MgCl2, 50 mM Na-HEPES, pH 8.0, in the absence or presence of ligand (5 mM adenine).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Measurements were acquired in 10 mM MgCl2, 50 mM Na-HEPES, pH 8.0, in (A) the absence of adenine ligand and (B) in the presence of ligand (5 mM adenine).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Helices modeled to be in the adenine riboswitch based on M2 data with and without adenine, using prior analysis assuming a dominant secondary structure. To estimate uncertainties, simulated data replicates were prepared by bootstrapping, and percentages give fraction of the simulations in which each helix was inferred to be in the dominant secondary structure (Kladwang et al., 2011). While not recovering the actual helix frequencies in the solution ensemble, this initial analysis revealed a large number of possible helices that needed to be considered in modeling the ensemble, particularly for the adenine-free state. (B) Helices P6, P8-17 identified in the M2-guided structure analysis of (A) as well as a different model of the adenine-free ensemble based on the REEFFIT method (Cordero and Das, 2015) and the M2 data. These helices were individually tested by single base-pair M2R (see main text and Figure 4). The presented structures are for illustration of the helices only, and do not imply co-existence in the same structure. Helix name P7 was skipped to avoid a naming conflict with a previous REEFFIT investigation under different solution conditions (Cordero and Das, 2015).\n\nRecently, a tour de force study highlighted an alternative to the MWC mechanism for the add riboswitch (Figure 1B). Multidimensional NMR spectroscopy, NMR relaxation studies, designed model systems, and supporting measurements from stopped-flow kinetics and calorimetry revealed detailed single-nucleotide-resolution base pairing information and intriguing temperature dependences for the complex structural ensemble of the add riboswitch (Reining et al., 2013). Although similar in some respects to previously proposed MWC models, the new model contradicted a standard MWC assumption (Gunasekaran et al., 2004; Changeux and Edelstein, 2005; Eaton et al., 1999): it proposed that, in the absence of adenine, riboswitches that sample the correct aptameric secondary structure do not also concomitantly open their ribosome binding sites and increase gene expression, as predicted by MWC conformational selection (Figure 1B, middle panel; mixed blue and gold, red rectangle outline). Despite this fundamental distinction, the non-MWC model appears fully consistent with all available data, and it remains unclear what pre-existing\u00a0structural correlations, if any, underlie the allosteric mechanism of the add riboswitch. As\u00a0an\u00a0illustration of current uncertainties in the system, the same group that first proposed an non-MWC model for the add RNA has recently revived the MWC framework to interpret newer single molecule measurements on the same system (Warhaut et al., 2017). Understanding the mechanism of allostery is particularly important for developing strategies for controlling riboswitches. For example, potential antibiotics that attempt to constitutively turn on expression of the add gene by selectively stabilizing the aptamer secondary structure may not succeed if the MWC model is incorrect.\n\nHere, we develop an experimental approach that resolves the allosteric mechanism of the add riboswitch. To help avoid previous confusion in state definitions, we first cast the question of mechanism into one of determining the statistical correlation or anticorrelation of specific helix elements. We then expand a previously reported method that integrates compensatory rescue with chemical mapping readouts (mutate-map-rescue, M2R) (Tian et al., 2014; Tian and Das, 2016) to enable dissection of these helix-helix correlations. The method takes advantage of a Bayesian framework and simulations to connect experimental observables to underlying helix frequencies, and gives experimental results on the wild type add sequence that agree with predictions from all available models. Then, by identifying \u2018lock\u2019 mutants that stabilize helices posited for each state and carrying out further rounds of M2R in these lock mutant backgrounds, we infer how the presence of one helix enhances or suppresses the presence of other helices. The resulting data unambiguously discriminate between MWC and non-MWC models and also suggest additional structural heterogeneity for the add riboswitch. We end by discussing how the presented method may be useful for generally dissecting allostery in RNA-based gene regulation.\n\n## Results\n\n### Defining the question in terms of helix-helix correlations\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig2-v2.jpg)\n\n**Figure 2.:** (A) Interrogation of base pairs by compensatory mutagenesis and chemical mapping, illustrated on a four-way junction (nts 126\u2013235) of the E. coli 16S ribosomal RNA. Experiments involve \u2018quartets\u2019 of SHAPE profiles for the wild type RNA, variants with single mutations on each side of a candidate base pair, and a variant with double mutations that could rescue Watson-Crick pairing of the candidate pair. Experiments involving possible pairings of G201 result in no obvious rescue (G201C-C207G), clear rescue (G201C-C217G), or an intermediate result (G201C-U216G), termed \u2018partial rescue\u2019. In partial rescue, some disruptions observed in single mutants are rescued, but other features are not rescued or arise in the double compensatory mutant (marked with yellow arrow). Panel adapted from ref (Tian et al., 2014). (B) Cartoon of structural ensembles that explain the \u2018partial rescue\u2019 scenario. A fraction of structures in the wild type ensemble have target base pair (cyan/blue, within helix outlined in gold); this picture assumes that those structures are disrupted in the single mutant but restored with similar fraction in the double mutant ensemble. (C) Correlation of observed rescue factor against helix frequency in simulated mutate-map-rescue experiments. Data are for helices with length longer than 2 bp for RNAs across 325 Rfam families mutated and folded in silico. Each data point represents a helix whose rescue factor and simulated helix frequency has been averaged across all its base-pairs. Helices are shaded in grays based on their length. The rescue factor estimates the extent of similarity restored in a double mutant\u2019s reactivity compared to WT (wild type), scaled by perturbations observed in single mutants. (B) In silico M2R quartets illustrating full compensatory rescue (high rescue factor), partial rescue (medium rescue factor) and no rescue (low rescue factor).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Boxplots showing helix frequency vs. rescue factor, over all simulated helices. Purple lines mark median, open boxes cover 25th to 75th percentile, cyan whiskers show 5th and 95th percentile, and gray plus signs label outliers. Rescue factor ranges are colored in red, yellow, or green for low or no rescue (0 to 0.3), partial rescue (0.3 to 0.7), and strong rescue (0.7 and higher). (B) Boxplots showing how uncertainties in helix frequency (e.g. the 25th to 75th percentile range spanned by open boxes) decrease with the number of base pairs tested by mutate-map-rescue: 3, 4, 5, 6, and\u00a0\u22657 base-pairs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig3-v2.jpg)\n\n**Figure 3.:** Top: two example secondary structures showing sequences of the add riboswitch and helices probed. The presented structures are for illustration of the helices only, and do not imply co-existence in the same structure. In (A-D), each panel shows (top) experimentally measured mutate-map-rescue (M2R) quartets for each base pair of a probed helix and (below) posterior distributions over helix frequency, estimated from the mean rescue factor in the M2R experimental data and simulations (see Figure 2\u2014figure supplement 1). Experiments are shown probing (A) P1 helix without adenine, (B) P4B helix without adenine, (C) P1 helix with 5 mM adenine, and (D) P4B helix with 5 mM adenine. Measurements were acquired in 10 mM MgCl2, 50 mM Na-HEPES pH 8.0.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Helices P1 (7 bp), P2 (6 bp), P3 (6 bp), P5 (6 bp), P1B (5 bp), P2B (2 bp), P4A (4 bp), P4B (4 bp), P4C (2 bp), P6 (5 bp), P8 (4 bp), P9 (5 bp), P10 (3 bp), P11 (9 bp), P12 (3 bp), P13 (4 bp), P14 (3 bp), P15 (7 bp), P16 (5 bp), and P17 (4 bp) were tested for both no adenine and 5 mM adenine conditions. Rescue factor for each quartet is given in the title and colored as in Figure 2\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Helices P1, P2, P3, P5, P1B, P2B, P4A, P4B, P4C, P6, and P13 were tested for both no adenine and 5 mM adenine conditions. MutP2 from a previous study (Reining et al., 2013) is also included. Rescue factor for each quartet is given in the title and colored as in Figure 2\u2014figure supplement 1. Mutants chosen to \u2018lock\u2019 P1, P2, P4A, P1B, and P4B are labeled by green lock symbol.\n\nBefore presenting our experimental strategy to dissect RNA allostery, we need to state the problem in a way that can be answered in a binary fashion. As shown in Figure 1A and B, a conventional way to phrase questions about allostery is to posit a small number of states and then to design experiments to probe properties of those states. For example, for the add riboswitch, previous models partitioned the states in the apo ensemble into apoA and apoB, depending on whether the aptamer secondary structure is correctly formed or not, respectively. We would then design experiments to discriminate whether apoA has its gene expression platform open or closed (Figure 1A vs. Figure 1B). However, in practice, this way of posing the question can be confusing. Figure 1C and D show cartoons of the ensemble of RNA conformations that illustrate the potential complexities. First, there may be RNA secondary structures present in the actual apo ensemble that include some but not all helices of the aptamer secondary structures (Figure 1C and D), and it then becomes ambiguous whether they should count as members of the apoA or apoB state. In addition, there may be secondary structures that include or are entirely composed of helices not shown in any of the presented models (marked with pink arrow, Figure 1C and D). Indeed, in principle, there are a vast number of secondary structures that need to be considered. Not only are there several possible helices that can be formed by the RNA, but there are an exponentially large number of combinations of such helices, each giving rise to a distinct secondary structure.\n\nWe sought to define the allosteric mechanism in terms of the possible helices that the RNA can form, rather than this vast number of possible secondary structures. In the presence of adenine, there are three helices P1, P2, and P3 that define an adenine-binding aptamer secondary structure at nucleotides 15\u201381, with a well-defined tertiary structure that has been determined through crystallography. A linker including an additional hairpin (P5, nts 89\u2013110) connects the aptamer to the Shine-Dalgarno sequence and AUG start codon (nts 112\u2013122), which are open and available for ribosome recruitment. In the absence of adenine, all available models posit that the riboswitch forms a secondary structure ensemble dominated by a new P4 domain that pairs with the Shine-Dalgarno sequence and the AUG start codon (nts 112\u2013122). The P4 domain includes potentially three helices, here called P4A, P4B, and P4C. P4A contains nucleotides that were originally part of P1 (the \u2018switch region\u2019 [Batey, 2012], nts 76\u201381, cross-hatched in Figure 1A, left). When P4A forms, some or all of the aptamer helices may rearrange into an alternative secondary structure or, potentially, a large set of alternative secondary structures. NMR experiments directly detected two alternative helices, P1B and P2B (Figure 1A), but do not rule out other helices being present at significant fractions if their conformational dynamics renders them invisible to the spectroscopy methods applied. Despite these potential complexities, there are a small number of Watson-Crick helices that feature in the current MWC and non-MWC models: P1, P2, P3, P4A, P4B, P4C, and P5. Additional helices may also be relevant to the add riboswitch mechanism. For example, numerous helices arose in preliminary modeling of the riboswitch based on conventional 1-dimensional SHAPE and mutate-and-map measurements (Supplementary Materials; Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3). These helices (called here P6, P8 to P17) are further tested below.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig4-v2.jpg)\n\n**Figure 4.:** Posterior distributions over helix frequencies (A) without adenine ligand and (B) with 5 mM adenine ligand. Curves have been smoothed through kernel density estimation. Sub-panels separate helices expected to have high frequencies with adenine bound (gold); \u2018positive control\u2019 helices expected to be present irrespective of adenine (brown); helices expected to be present only in the absence of adenine (blue); additional helices that are not expected to have high frequencies (pink). (C-D) same distributions as in (A-B) but represented as cumulative distributions and overlaid together without smoothing.\n\nGiven the list of candidate helix elements, we can define the question that discriminates between MWC and non-MWC models, even if the apo ensemble is highly heterogeneous (Figure 1C and D). In the absence of adenine, the riboswitch may occasionally sample the helices P1 or P2 (or both simultaneously), which are signatures of the adenine-bound state. The MWC conformational selection model would assume that any such thermally sampled secondary structure should also have an open gene expression platform, just like the adenine-bound holo and without the P4A or P4B domains. That is, there should be an anticorrelation between the presence of, e.g., P1 and P4B, in the ligand-free ensemble (Figure 1C). There should be similar anticorrelations between, e.g., P2 and P4A. (For clarity of presentation, here and below, we will use P1 and P4B (colored gold and blue, respectively, in figures) to illustrate core concepts and data in detail, and then summarize additional independent measurements for other helix-helix pairs, such as P2 and P4A.)\n\nMore quantitatively, suppose that P1 and P4B arise with 50% frequency in the ligand-free add riboswitch structural ensemble. If there is no allosteric \u2018communication\u2019 between these two elements, the joint frequency of observing both P1 and P4B should be 50% x 50%\u00a0=\u00a025%. The MWC model predicts that the actual joint frequency of these two elements is significantly lower: the formation of P1 in the aptamer destabilizes the P4B helix that sequesters the gene expression platform, even in the absence of adenine. In terms of a single numerical value, we seek to determine the correlation $g(P1,P4B)$:\n\n$$\ng(P1,P4B)=\\frac{F(P1,P4B)}{F(P1)\\timesF(P4B)}\n$$\n\nwhere F is the helix frequency, a number between 0% and 100%.\n\nThe MWC model predicts a strong anticorrelation: $g(P1,P4B)\u00a0\u226a1$. In contrast, the non-MWC model proposed based on NMR experiments makes different predictions (Figure 1B and D). In the absence of ligand, the NMR measurements could not directly detect opening of the gene expression platform (loss of P4A, P4B, or P4C) at low frequency. The non-MWC model suggests instead a mixed conformation for apoA, where a shortened P1, P2, and P3 form the adenine aptamer secondary structure but also some parts of the P4 domain (here denoted P4B and P4C) are retained (middle panel of Figure 1B, and structures marked with red arrow in Figure 1D). The non-MWC model predicts no correlation between elements of the aptamer region and elements of the P4 domain, so that, for example, $g(P1,P4B)\u22481$.\n\nOur strategy involves experimentally determining the helix frequencies in the add riboswitch structural ensemble $F(P1)$, $F(P4B)$, etc., based on a method described in the next section. To then determine the correlation for two elements P1 and P4B, we design mutations to lock P4B and see if the frequency of the P1 element increases, stays the same, or decreases. Such measurements allow inference of $g(P1,P4B)$ through the relation of joint probabilities to conditional probabilities, $F(P1,P4B)=F(P1|P4B)F(P4B)$. Equation (1) becomes\n\n$$\ng(P1,P4B)=\\frac{F(P1|P4B)}{F(P1)}\n$$\n\nHere $F(P1|P4B)$ is the frequency of helix P1 conditional on the formation of P4B and would be estimated from experiments that lock P1 and assess the P4B helix frequency. In a \u2018flipped\u2019 experiment, we also lock P1 and then assess if the helix frequency of P4B increases, stays the same, or decreases. The results enable an independent evaluation of the same correlation value through a similar relation:\n\n$$\ng(P1,P4B)=\\frac{F(P4B|P1)}{F(P4B)}\n$$\n\nCorrelation values for other pairs of helices, such as $g(P2,P4B)$, are defined analogously to Equations (1)-(3).\n\n### Inferring helix frequencies through quantitative compensatory rescue\n\nTo estimate correlations between helix elements, we need a way to estimate frequencies of each helix element in an RNA\u2019s structural ensemble, the variables\u00a0$F(P1)$, $F(P4B)$, etc. in Equations (1)-(3). We discovered an approach to such helix frequency inference when revisiting the use of compensatory mutation experiments for RNA structure read out through SHAPE chemical mapping (selective 2\u00b4-hydroxyl acylation with primer extension) (Tian et al., 2014; Tian and Das, 2016). Mutate-map-rescue (M2R) experiments (Figure 2) enable incisive confirmation or falsification of candidate base pairs. Strong evidence for a candidate base pair comes from observations that mutation of either side of a base pair (mutant A or mutant B) disrupts the SHAPE profile of the RNA; and that the compensatory double mutation (mutant AB) restores the SHAPE measurements to the wild type (WT) profile. In our prior work on a four-helix junction from the E. coli 16S ribosomal RNA (nts 126\u2013235), we were able to successfully use such \u2018quartets\u2019 of SHAPE profiles (WT, mutant A, mutant B, mutant AB) to discriminate between three conflicting structural models derived from prior SHAPE data on the wild type RNA alone, from mutate-and-map data (SHAPE profiles of all single mutants), and from phylogenetic and crystallographic models of the protein-bound ribosome (illustrative data for three base pairs given in Figure 2A) (Tian et al., 2014). However, we were also initially surprised to observe compensatory rescue for helices that should have been mutually exclusive in the 16S rRNA. These helices involved the same nucleotides partnered to nucleotides differing by a single-nucleotide register shift (P4a and shift-P4a, not to be confused with P4A in the add riboswitch; see blue and green base pairs in Figure 2A). Resolving this paradox, studies on designed mutants and quantitative fits suggested that both registers were indeed present but in different subsets of the RNA\u2019s structural ensemble, at helix frequencies of\u00a0~20% and~80% (Tian et al., 2014).\n\nIn our studies on the 16S rRNA four-way junction, the strongly populated helix shift-P4a was associated with mutate-map-rescue data that showed unambiguous rescue while the less populated helix P4a was associated with \u2018partial\u2019 rescue. In the latter case, disruptions in SHAPE reactivity induced by single mutations were alleviated by their concomitant compensatory mutation, but new features distinct from the wild type SHAPE profile also appeared (yellow arrow, bottom panel of Figure 2A). We speculated that such \u2018partial rescue\u2019 might generally be a hallmark of base pairs that are present at low frequency in an RNA\u2019s structural ensemble. We envisioned the structural ensembles shown in Figure 2B, illustrating a case where a candidate base pair is present at 50% frequency in the wild type RNA structural ensemble (structures with gold highlight rectangle in top left, Figure 2B). The compensatory double mutant (structures with gold highlight rectangle in bottom right, Figure 2B) might retain the structures with the candidate base pair at approximately 50% frequency, while the other members of the structural ensemble would be more likely to rearrange (bottom structure of bottom right panel, Figure 2B). The single mutants would rearrange all structures, including the ones that had the target base pair (other structures, bottom left and top right panels, Figure 2B), providing an assessment of the maximum level of disruption that might be restored by the compensatory mutant. In general, however, this picture is not expected to be exact. Some compensatory double mutations might over- or under- stabilize the structures with the target base pair. The RNA may also be excessively sensitive or insensitive to disruption by single mutations. Therefore, we expected that testing all the base pairs of a target helix through separate mutate-map-rescue experiments for each base pair would be critical for assessing helix frequencies, and a careful treatment of uncertainties would be important for establishing statistical confidence.\n\nTo test this idea, we first developed a quantitative \u2018rescue factor\u2019 metric that allowed us to avoid human inspection that might bias assessments:\n\n$$\nRescue\u00a0factor\u22611.0\u2212\\frac{RMSD(WT,AB)}{max(RMSD(WT,A),\u00a0RMSD(WT,B))},\n$$\n\nwhere the root mean squared difference RMSD between two SHAPE profiles d over probed nucleotides i\u00a0=\u00a01 to N is given by:\n\n$$\nRMSD(A,B)=\\sqrt{\\frac{1}{N}\\sumi=1Nd_{A}(i)-d_{B}(i)^{2}}\n$$\n\nIn Equation (4), the term $RMSD(WT,AB)$ captures the extent of rescue, as compared to a maximal amount of disruption of the SHAPE profile given by the maximum of $RMSDWT,A$and $RMSD(WT,B)$. We confirmed that this rescue factor recovered expert assessments for presence or absence of rescue in the previous 16S rRNA data as well as in newly collected M2R experimental data, including the Tetrahymena ribozyme P4-P6 domain and a blind RNA-puzzle modeling challenge, the GIR1 lariat capping ribozyme (Materials and Methods and Appendix Results). We also developed a separate category-based classification to check that compensatory rescue of different base pairs within the same helix gave concordant results, and again that automated analysis reproduced manual analysis (Appendix Results).\n\nWe then sought to test our hypothesis of a quantitative relationship between rescue factor and helix frequency in an RNA\u2019s structural ensemble. To accumulate good statistics and ensure good comparisons to \u2018ground truth\u2019, we carried out simulations of M2R experiments for structural ensembles of hundreds of naturally derived RNA sequences using the RNAstructure simulation package\u00a0Reuter and Mathews, 2010. These in silico tests confirmed that observation of strong rescue over all the base pairs of a helix implies high helix frequency (Figure 2C). Importantly, these tests also showed that modest rescue ratios could be informative. Values lower than one but greater than zero corresponded to \u2018partial\u2019 rescue, where the reactivities at some nucleotides revert to wild type (WT) values but others do not (Figure 2D, center). As expected, individual base pair tests were noisy, but averaging rescue factors over tests on three or more base pairs gave values that showed a striking correlation with helix frequencies (compare gray and black points, Figure 2C). Furthermore, absence of rescue (rescue factor close to zero; Figure 2D, bottom) gave upper bounds on the helix frequency (Figure 2\u2014figure supplement 1). To estimate uncertainties in these estimates, we used a Bayesian framework to derive posterior probabilities of each helix frequency given the observed rescue factor, calibrated based on these simulations. These posterior probability distributions represent our belief, informed by experiment, at all helix frequencies from 0% to 100% and provide a complete representation of our uncertainty; \u2018fatter\u2019 distributions correspond to larger uncertainties in helix frequencies. For ease of reading in the main text and in summary tables, we give median values of the helix frequency posterior probability distributions. Our simulation and experimental studies suggested that compensatory rescue measurements, including ones that resulted in partial or no detectable rescue, could be used to estimate helix frequencies and uncertainties for those values, though we sought more detailed experimental tests, as described next.\n\n### Tests of helix frequency estimation on wild type add riboswitch sequence\n\nTo test the applicability of M2R helix frequency estimation for understanding complex RNA structural ensembles, we first applied the method to the add riboswitch with and without adenine (Figures 3 and 4). These measurements were necessary to determine baseline values of each helix frequency \u2013 the denominators of Equations (2) and (3) \u2013 before then assessing whether the frequency rises or decreases in response to locking other helices through designed mutations. In addition, prior studies, including detailed NMR analysis, offered helix frequency data on the wild type add sequence that might validate or falsify our strategy of measuring rescue factors and using simulations to infer helix frequencies.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig5-v2.jpg)\n\n**Figure 5.:** One-dimensional SHAPE reactivity of candidate constructs for locking each add riboswitch helix. In each candidate, two consecutive\u00a0base pairs of the helix were switched to alternative Watson-Crick pairs (Figure 3\u2014supplement 2). For each helix targeted, at least two sets of mutations gave SHAPE reactivities distinct from wild type but similar to each other. Red arrows mark residues in switch region that are reactive in wild type and strongly reactive in lock mutants chosen for P1B, P4A, and P4B.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** One-dimensional SHAPE reactivity of candidate constructs for locking each add riboswitch helix. The MutP2 variant is derived from reference (Reining et al., 2013); it shows less SHAPE increase in the gene expression platform (nts 105\u2013122) than other tested lock P2 mutants.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Five-modifier (SHAPE, 1M7, glyoxal, terbium (III), UV 302 nm) reactivity profile for lock-P1 and lock-P4A constructs. \u03c72 score-based linear fitting yields apoA state as 48% (SHAPE), 58% (DMS), 46% (glyoxal), 52% (terbium (III)) and 68% (UV 302 nm) in population. Some uncertainty remains in the UV data normalization for a quantitative fitting. (B) Comparison of fitted SHAPE reactivity profile (pink) to observed WT (black) in absence of adenine. Reactivity profiles of lock-P1 (gold) and lock-P4A (blue) are plotted. The fitted profile resolves reactivity differences in the expression platform and resembles WT, although discrepancies (nts 79\u201380) suggest that there are more than the two states represented by lock-P1 and lock-P4A in the WT adenine-free ensemble. (C) Comparison of lock-P1 and lock-P2 profiles in the absence or presence of ligand to observed WT profile in the presence of 5 mM adenine. Lock-P1 and lock-P2 mutants show agreement in the expression platform reactivity (nts 82\u2013140) with adenine-bound WT (purple) even in the absence of adenine (solid gold and green).\n\nOverall, compensatory rescue experiments agreed well with prior models. In the absence of adenine, all prior models of the add riboswitch predicted that the RNA would show a diverse set of helices. Indeed, aptamer helices P1 (53%) and P2 (31%) were detectable, as they gave partial rescue in mutate-map-rescue experiments. For illustration, Figure 3A shows SHAPE profile quartets and rescue factors for each base pair of P1; the inferred probability distributions over P1 helix frequencies is given as a gold curve underneath, and extends across helix frequencies ranging from 0.2 to 0.75. Helices P3 and P5 were expected to be present, and both were detected by compensatory rescue experiments, with median helix frequencies of 73% and 75%, respectively (brown curves, Figure 4; Figure 3\u2014figure supplement 1 gives SHAPE profiles). In addition, compensatory rescue experiments recovered evidence for helices P4A (48%), P4B (55%), P4C (68%), P1B (44%), and, at a lower level, P2B (17%), all proposed as part of apoB (Figure 1; left-hand structure in top panel, Figure 3; Figure 3B shows SHAPE profiles and associated partial rescue for each base pair of P4B). The posterior distributions of these helix frequencies, shown as blue curves in Figure 4A and B, were centered at intermediate frequencies, as expected. Other helices proposed to occur at low frequencies from M2-guided modeling (P6, P8 through P17) (Cordero and Das, 2015), gave no evidence for their presence (pink curves, Figure 4; Figure 3\u2014figure supplement 1); those experiments thus served as negative controls for the M2R helix frequency estimation method. Overall, these measurements confirmed that the adenine-free state of the add riboswitch is quite heterogeneous, with evidence for intermediate frequencies for all helices predicted in prior studies and no further helices.\n\nTurning to the adenine-bound state, all prior models predicted that the riboswitch would shift its helix frequencies to a better defined secondary structure with helices P1, P2, and P3 in the aptamer and P5 (holo, Figure 1; right-hand structure in top panel, Figure 3). M2R experiments testing each of these helices showed visually striking rescue in their SHAPE profiles as mutations disrupted adenine binding, and compensatory mutations restored the adenine-bound profiles (Figure 3C shows SHAPE profiles and rescue factors for each base pair of P1). Indeed, in the presence of 5 mM adenine, SHAPE measurements for single and compensatory mutations targeting these helices and rescue factor analysis gave helix frequencies of 79%, 64%, 56% and 29%, respectively (Figure 3C; and gold and brown curves in Figure 4C and D). Measuring rescue factors for other helices, including P1B, P2B, P4A, P4B, and P4C predicted for the adenine-free state and other helices proposed to occur at low frequencies from M2-guided modeling (P6, P8 through P17) (Cordero and Das, 2015), gave no evidence for their presence when adenine was bound (example SHAPE profile quartets for P4B in Figure 3D; all quartets in Figure 3\u2014figure supplement 1; and blue and pink curves, Figure 4C and D). In distributions of posterior probabilities, there was a clear separation of these low-frequency helices from the high-frequency helices (Figure 4C and D; and Table 1). Helices P6, P8 through P17 (Figure 3\u2014figure supplement 2) again served as negative controls and gave low helix frequencies by compensatory rescue, as expected (pink distributions in Figure 3C and D; Table 1). In addition to these measurements based on mutations of each base pair of a helix, we used a double-base-pair mutation scheme for M2R, which induced stronger perturbations and rescuing effects, and supported the same pairings as above (Figure 3\u2014figure supplement 2). Overall, M2R data and helix frequency analysis for the apo and holo ensembles detected the helices expected from prior studies and provided baseline helix frequency values to infer the correlation or anticorrelation of each pair of these helices.\n\n**Table 1.**\n Helix frequency estimates for single base-pair M2R, double base-pair M2R, LM2R experiments.Median helix frequencies from Rfam simulations corresponding to each experimentally observed rescue factor are reported. The experimentally observed rescue factor for each helix was averaged across all tested base pairs. Full posterior distributions are presented in main text Figure 4 and Figure 7\u2014figure supplement 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Wild type*</th>\n      <th colspan=\"3\">In locked contexts\u2020</th>\n    </tr>\n    <tr>\n      <th>[adenine]</th>\n      <th>0 mM</th>\n      <th>5 mM</th>\n      <th></th>\n      <th></th>\n      <th>0 mM</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P1</td>\n      <td>53%</td>\n      <td>79%</td>\n      <td>Lock P1</td>\n      <td>P2</td>\n      <td>42%</td>\n    </tr>\n    <tr>\n      <td>P2</td>\n      <td>31%</td>\n      <td>64%</td>\n      <td></td>\n      <td>P4B</td>\n      <td>4%</td>\n    </tr>\n    <tr>\n      <td>P3</td>\n      <td>73%</td>\n      <td>56%</td>\n      <td>Lock P2</td>\n      <td>P1</td>\n      <td>76%</td>\n    </tr>\n    <tr>\n      <td>P5</td>\n      <td>75%</td>\n      <td>29%</td>\n      <td></td>\n      <td>P4A</td>\n      <td>4%</td>\n    </tr>\n    <tr>\n      <td>P1B</td>\n      <td>44%</td>\n      <td>3%</td>\n      <td></td>\n      <td>P4B</td>\n      <td>4%</td>\n    </tr>\n    <tr>\n      <td>P2B</td>\n      <td>17%</td>\n      <td>17%</td>\n      <td>Lock P4A</td>\n      <td>P1B</td>\n      <td>9%</td>\n    </tr>\n    <tr>\n      <td>P4A</td>\n      <td>48%</td>\n      <td>4%</td>\n      <td></td>\n      <td>P2B</td>\n      <td>6%</td>\n    </tr>\n    <tr>\n      <td>P4B</td>\n      <td>55%</td>\n      <td>4%</td>\n      <td></td>\n      <td>P2</td>\n      <td>6%</td>\n    </tr>\n    <tr>\n      <td>P4C</td>\n      <td>68%</td>\n      <td>4%</td>\n      <td></td>\n      <td>P4B</td>\n      <td>55%</td>\n    </tr>\n    <tr>\n      <td>P6</td>\n      <td>6%</td>\n      <td>5%</td>\n      <td>Lock P1B</td>\n      <td>P2B</td>\n      <td>53%</td>\n    </tr>\n    <tr>\n      <td>P8</td>\n      <td>9%</td>\n      <td>4%</td>\n      <td></td>\n      <td>P4A</td>\n      <td>55%</td>\n    </tr>\n    <tr>\n      <td>P9</td>\n      <td>12%</td>\n      <td>3%</td>\n      <td></td>\n      <td>P4B</td>\n      <td>80%</td>\n    </tr>\n    <tr>\n      <td>P10</td>\n      <td>3%</td>\n      <td>3%</td>\n      <td></td>\n      <td>P3</td>\n      <td>82%</td>\n    </tr>\n    <tr>\n      <td>P11</td>\n      <td>12%</td>\n      <td>16%</td>\n      <td>Lock P4B</td>\n      <td>P1B</td>\n      <td>8%</td>\n    </tr>\n    <tr>\n      <td>P12</td>\n      <td>10%</td>\n      <td>6%</td>\n      <td></td>\n      <td>P2B</td>\n      <td>4%</td>\n    </tr>\n    <tr>\n      <td>P13</td>\n      <td>9%</td>\n      <td>4%</td>\n      <td></td>\n      <td>P1</td>\n      <td>5%</td>\n    </tr>\n    <tr>\n      <td>P14</td>\n      <td>4%</td>\n      <td>4%</td>\n      <td></td>\n      <td>P2</td>\n      <td>6%</td>\n    </tr>\n    <tr>\n      <td>P15</td>\n      <td>12%</td>\n      <td>36%</td>\n      <td></td>\n      <td>P4A</td>\n      <td>47%</td>\n    </tr>\n    <tr>\n      <td>P16</td>\n      <td>14%</td>\n      <td>8%</td>\n      <td>Mut P2</td>\n      <td>P1</td>\n      <td>38%</td>\n    </tr>\n    <tr>\n      <td>P17</td>\n      <td>4%</td>\n      <td>4%</td>\n      <td></td>\n      <td>P4A</td>\n      <td>8%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>P4B</td>\n      <td>13%</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Median helix frequencies inferred from mutate-map-rescue, compensatory rescue read out by chemical mapping across the transcript.\u2020Lock-mutate-map-rescue, mutate-map-rescue carried out in the context of mutations that 'lock' the specified helices._\n\n### Four-dimensional Lock-Mutate-Map-Rescue enables measurement of helix-helix correlations\n\nThe measurements above showed that locking the aptamer secondary structure through adenine binding reduced the frequencies of helices characteristic of the closing of the gene expression platform (compare upward shift of gold curves \u2013 and downward shift of blue curves \u2013 between Figure 4A and C). Discrimination between MWC and non-MWC models involves determining whether this same allosteric communication between helices occurs even in the absence of adenine ligand. We therefore sought to measure whether locking helices characteristic of the aptamer secondary structure through mutation, rather than adenine binding, also reduced the frequencies of helices characteristic of the closing of the gene expression platform, and vice versa.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C) M2R quartets probing P1 in the context of lock-P4B mutations show no rescue. (D\u2013F) M2R quartets probing P4B in the context of lock-P1 mutations show no rescue. Panels\u00a0(A,D) show possible secondary structures for helix lock mutants. Panels (B,E) give M2R quartets for each base pair of the probed helix in the context of the mutations locking the other helix. Panels (C,F) give posterior probability distributions over helix frequency, estimated from the experimental M2R rescue factors in locked background and wild type background (solid and dotted curves, respectively).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Helices P2 and P4B are tested in context of lock-P1 stabilizing mutations; helices P1, P4A, and P4B are tested in lock-P2 stabilizing mutations; helices P2, P1B, P2B, and P4B are tested in context of lock-P4A stabilizing mutations; helices P2B, P4A, P4B, and P3 are tested in context of lock-P1B stabilizing mutations; helices P1, P2, P1B, P2B, and P4A are tested in context of lock-P4B stabilizing mutations; all under no adenine condition. Rescue factor for each quartet is given in the title and colored red, yellow, or green as in Figure 2\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Helices P1, P4A, and P4B were tested under no adenine condition. Rescue factor for each quartet is given in the title and colored as in Figure 2\u2014figure supplement 1.\n\nTo identify appropriate locking mutants, we noted that a number of double-base-pair compensatory mutants for each of P1, P2, P1A, P4A, and P4B (Figure 3\u2014figure supplement 2) exhibited SHAPE profiles that differed from WT RNA but agreed with each other, suggesting that they had independently locked the same state (Figure 5; data for all tested mutants given in Figure 5\u2014figure supplement 1). For example, numerous P1- or P2-locking mutants exhibited increased reactivity in the distal gene\u00a0expression platform region (nts 105\u2013122) relative to the adenine-free WT RNA, at a level comparable to the adenine-bound WT RNA. This observation already suggested that mutation-based locking of P1 or P2 opens the gene expression platform, favoring the MWC model over the non-MWC model, although it depends on an assumption that increase in SHAPE reactivity correlates with reduced base pairing, which does not always hold (Cordero et al., 2012a; Deng et al., 2016). We also observed similarities in the gene expression platform between these adenine-free P1 and P2-stabilizing mutants and adenine-bound WT RNA in profiles acquired with chemical modifiers besides SHAPE reagents (dimethyl sulfate, glyoxal, ribonuclease V1, terbium(III), and ultraviolet irradiation at 302 nm; Figure 5\u2014figure supplement 2). For other helices P1B, P4A, and P4B, we were able to find double-base-pair mutants that gave similar SHAPE profiles to each other, supporting the use of those mutants as helix-locked variants (Figure 5). Interestingly, for each of these three target helices, there was one double-base-pair mutant with spikes in SHAPE reactivity at positions 78 and 85, which also appear in the wild type RNA but not the P1 or P2-lock mutants (red arrows, Figure 5). This observation suggested that these double-base-pair mutants for P1B, P4A, and P4B stabilized the same state; we therefore chose these variants as the lock mutants. Further evidence that these mutants were appropriately locked came from excellent two-state fits that recovered the adenine-free wild type chemical mapping profiles across five modifiers from the profile for any of these P1B- P4A- or P4B- lock mutants with the profiles for any of the P1 or P2-locking mutants (Figure 5\u2014figure supplement 2). (P2B and P4C were short two-base-pair helices; since only one candidate double-base-pair lock mutation could be tested and did not allow such cross-checks, we chose to not go forward with P2B and P4C locking experiments.)\n\nCompensatory mutation experiments in locked mutation backgrounds allowed us to confidently determine whether MWC-predicted anticorrelations exist in the adenine-free structural ensemble of the riboswitch. Figure 6A shows M2R data for the P1 helix in the context of P4B-stabilizing mutations (lock-P4B; U82A, C83G, G115C, A116U). In contrast to the observation of partial rescue of P1 in the wild type RNA (Figure 3A), these data show no rescue for P1 in the lock-P4B mutational background. The inferred P4B helix frequency drops from 53%% to 5%; the shift in posterior probability distribution to lower helix frequency values is clear (faded gold to gold curves; Figure 6B). Stated simply, locking P4B strongly reduces P1. These results support the anticorrelation between P1 and P4B expected from the MWC model, as opposed to the independence of the helices expected from the non-MWC model.\n\nTo statistically evaluate the MWC vs. non-MWC model, we computed the correlation value $g(P1,P4B)$ through Equation (2), taking into account the full uncertainties in helix frequencies shown in Figure 6B. The resulting posterior distribution for $g(P1,P4B)$ (Figure 7A) is highly skewed away from 1 (the expectation of the non-MWC model) to values close to zero (expectation of the MWC model). Statistical significance in biological studies is often summarized through a p-value for a null hypothesis. In our Bayesian framework, an analogous value is the total posterior support for non-MWC models, i.e. the integral of the posterior probability distribution in Figure 7A for $g(P1,P4B)>1$. This posterior support is small, with a value of 3.1 \u00d7 10\u20133, disfavoring the non-MWC model and supporting the MWC model.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig7-v2.jpg)\n\n**Figure 7.:** Posterior probability distributions, smoothed through kernel density estimation, for correlation of (A-C) P1 and P4B, based on LM2R experiments (A) locking P4B and probing P1, (B) locking P1 and probing P4B, and (C) combination of experiments of (A) and (B); and (D-I) other pairs of helices, based on combination of experiments locking each helix and probing the other and vice versa. Helix pairs are (D) P2 and P4A, (E) P2 and P4B, (F) P1 and P2; (G) P1B and P4A; (H) P1B and P4B; and (I) P4A and P4B.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** In each panel, top two sub-panels show posterior probability distributions, smoothed through kernel density estimation, over helix frequency, estimated from the experimental M2R rescue factors in locked background and wild type background (solid and dotted curves, respectively). In each panel, bottom two sub-panels show posterior probability distributions, smoothed through kernel density estimation, for correlation of the helix-helix pairs inferred from the corresponding top subpanels. Helix pairs are (A) P2 and P4A, (B) P2 and P4B, (C) P1 and P2; (D) P1B and P4A; (E) P1B and P4B; and (F) P4A and P4B. These curves are the distributions that are combined to give final posterior distributions for helix-helix correlations shown in Figure 7 (D-I), respectively.\n\nAs an independent test of the MWC vs. non-MWC models, we carried out the \u2018flipped\u2019 P1-P4B lock-mutate-map-rescue (LM2R) experiments, in which we locked P1 through mutations (lock-P1; A19U, U20A, A76U, U77A) and assessed the helix frequency of P4B. Again, in contrast to the observation of partial rescue of P4B in the wild type RNA (Figure 3B), the data in the lock-P1 context show no rescue for P4B. Upon locking P1, the P4B helix frequency drops, from 55% to 4%, and there is a striking shift in the posterior probability distribution to lower helix frequencies (faded blue to blue curves; Figure 6D). The posterior support for the non-MWC model [$g(P1,P4B)>1$] from this \u2018flipped\u2019 lock-P1 experiment is somewhat higher than the lock-P4B experiment above, but still small (0.039; full posterior distribution in Figure 7B). If the data for the two experiments are combined, the posterior support for the non-MWC model becomes quite small, 4 \u00d7 10\u20135. Another way to summarize the results is to estimate whether the correlation value $g(P1,P4B)$ for P1 and P4B is not just less than one but much less than 1 \u2013 a strong anticorrelation. Indeed, the full posterior distribution in Figure 7C is highly skewed towards zero. The median for this correlation value is 0.052 (Table 2), and with 95% posterior support, $g(P1,P4B) $\u00a0is less than 0.2. The data agree well with strong anticorrelation predicted by the MWC model but not the non-MWC model.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig8-v2.jpg)\n\n**Figure 8.:** The proposed model favors a Monod-Wyman-Changeux (population shift, conformational selection) model of allostery. The ligand-free apoB state (left) sequesters the Shine-Dalgarno sequence and AUG codon in the P4 domain, precluding gene expression. Our measurements show that sampling of the aptamer secondary structure is strongly anticorrelated with formation of the P4 domain; it is therefore valid to represent it as a separate state (apoA, middle). This apoA state is structurally similar to the ligand-bound holo, including not just the aptamer region but also the gene expression platform, as predicted by an MWC framework (right). Our measurements and other studies are consistent with sampling of additional alternative structures in the apoB state (dashed blue lines), a partially formed P5 in apoA, and additional stabilization of the aptamer through coupled tertiary contacts upon adenine binding (dashed black lines in apoA, solid yellow lines in holo).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Thermodynamic parameters used are: \u0394HKpre = 52 kJ.mol\u22121, \u0394SKpre = 167 J.mol\u22121.K\u22121, \u0394HKd = 238 kJ.mol\u22121, \u0394SKd = 110 J.mol\u22121.K\u22121. Ligand concentrations: [Llow]=0.01 \u03bcM; [Lhigh]=1.0 \u03bcM for (top) panels and [Llow]=1.5 \u03bcM for (bottom) heatmaps. The (top) population linear plots used [RNA]=1.5 nM; while (bottom) temperature vs. [RNA] heatmap simulated [RNA] = 0\u2013100 nM for T = 0\u201340\u00b0C. Parameters were derived from prior study reviewing the temperature compensation model (F\u00fcrtig et al., 2015b).\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Single mutants (A) A109U, (B) G78C, (C) A116U, (D) G44C, (E) G37C, and (F) G81C were selected from a clustering analysis of WT M2 data. Models are for dominant structures of the RNA based on higher-order mutate-and-map data presented in Figure 8\u2014figure supplement 3. Secondary structures inferred for these single mutants are quite diverse, particularly for the adenine-free state (percentage values give bootstrapping confidence that those helices are present in the dominant secondary structure). The ease at which these alternative structures can be stabilized for the add riboswitch suggest that they occur for the wild type RNA at low frequency, and might explain deviations of SHAPE profiles and LM2R data across mutants that lock different helices of the apoB secondary structure (Figures 5 and 6).\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29602/elife-29602-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A) A109U, (B) G78C, (C) A116U, (D) G44C, (E) G37C, and (F) G81C. A comparison of 1D SHAPE profile to WT under both no adenine and 5 mM adenine conditions are shown along with complete M2 datasets; inferred structures are given in Figure 8\u2014figure supplement 2.\n\nFurther data support the MWC-predicted anticorrelation of aptamer secondary structure helices and the closure of the gene expression platform. LM2R experiments testing correlation of P1 and P4A were not possible due to overlap of nucleotides between the helices; locking one helix precludes compensatory mutagenesis of base pairs in the other helix. However, we could carry out complete LM2R experiments probing the correlation between P2 and P4B and the correlation between P2 and P4A. Full data are given in Figure 6\u2014figure supplement 1, and final posterior distributions for $g(P2,P4A) $\u00a0and $g(P2,P4B) $\u00a0are shown in Figure 7D and Figure 7E. Both sets of experiments again showed strong skewing of these two correlation values towards zero (anticorrelation; median correlation values of 0.069 and 0.089, respectively; see Table 2). These results again strongly disfavor the non-MWC model (posterior support: 4.1 \u00d7 10\u20133\u00a0and 1.5 \u00d7 10\u20133, respectively) and supporting the MWC model. We emphasize that these two sets of experiments are independent of each other and of the $g(P1,P4B) $\u00a0experiments above.\n\n**Table 2.**\n Helix-helix correlation estimates from LM2R experiments.Median values are reported. Full posterior distributions are presented in main text Figure 6 and Figure 7\u2014figure supplement 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Helix-helix</th>\n      <th>Correlation value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P1-P4B</td>\n      <td>0.052</td>\n    </tr>\n    <tr>\n      <td>P2-P4B</td>\n      <td>0.069</td>\n    </tr>\n    <tr>\n      <td>P2-P4A</td>\n      <td>0.089</td>\n    </tr>\n    <tr>\n      <td>P1-P2</td>\n      <td>1.315</td>\n    </tr>\n    <tr>\n      <td>P4A-P4B</td>\n      <td>0.902</td>\n    </tr>\n    <tr>\n      <td>P1B-P4A</td>\n      <td>0.44</td>\n    </tr>\n    <tr>\n      <td>P1B-P4B</td>\n      <td>0.534</td>\n    </tr>\n  </tbody>\n</table>\n\nTo gain further insights into the apo ensemble, we also carried out LM2R experiments for pairs of helices that were predicted to co-occur (correlate, rather than anticorrelate) in prior models of the apo ensemble (Figure 1). On one hand, LM2R experiments gave evidence of weak correlation between the two helices characteristic of the aptamer secondary structure, P1 and P2: $g(P1,P2) $\u00a0is inferred to be somewhat greater than 1 (Figure 7F). On the other hand, we saw no evidence of correlation for pairs of helices expected to co-occur in the riboswitch when the aptamer secondary structure is not formed (apoB, Figure 7G). LM2R experiments gave posterior distributions for$g(P1B,P4A)$, $g(P1B,P4B)$, and $g(P4A,P4B)$ centered around 1 (Figure 7G\u2013I), indicating no correlation between the occurrence of these helices in the ligand-free ensemble. While the uncertainties in these LM2R measurements allow correlation values of these helices to be slightly greater than 1, the data are most consistent with a model in which helices P4A, P1B, P4B each appear with significant frequency in the apo ensemble, but do not necessarily co-occur, resulting a heterogeneous structural ensemble. Therefore, a single secondary structure such as apoB may not be an appropriate description of the structural ensemble. Further evidence for structural heterogeneity came from the incomplete match in SHAPE profiles for mutants that lock different helices of the putative apoB state. For example, lock-P4A and lock-P1B showed reproducible differences in SHAPE reactivities at the 5\u00b4 end of the RNA (nts 13\u201320) that were larger than, e.g., differences between lock-P1 and lock-P2 (Figure 5), and we did not discover any alternative locking mutations that brought them into agreement.\n\n## Discussion\n\n### Four-dimensional chemical mapping for complex RNA ensembles\n\nComplex secondary structure ensembles underlie many, and perhaps most, RNA regulatory elements. Understanding how a panoply of structures underlies the allosteric mechanism of these elements requires assessing not just the frequencies of different helices in the RNA structural ensemble but how the presence of one helix enhances or suppresses the frequency of others. This study has introduced a \u2018four-dimensional\u2019 expansion of chemical mapping that offers an experimental route to this information. The strategy is to \u2018lock\u2019 one helix into place through mutations (dimension 1) and to then introduce mutations elsewhere (dimension 2). Perturbation of the chemical mapping profile at other nucleotides (dimension 3) provides evidence of involvement by the mutated nucleotide in RNA structure, perhaps a second helix. If compensatory mutation of a candidate partner in the second helix (dimension 4) then gives no, partial, or complete rescue of the mapping profile, the frequency of the second helix can be inferred to be low, medium, or high, with uncertainties estimated from simulation. Importantly, quantitative inferences of helix-helix correlations from this lock-mutate-map-rescue (LM2R) workflow do not require interpretation of how SHAPE reactivity corresponds to Watson-Crick pairing probability, which can lead to erroneous conclusions (Tian et al., 2014). In that sense, the method is analogous to three-dimensional and four-dimensional pulse sequences that enable structural conclusions to be derived from NMR. Inferences from multidimensional NMR are based on the changes of spectroscopic signals (chemical shifts, magnetization transfer rates) rather than on absolute values of those signals, whose relationships to features of macromolecule structure are not yet understood in quantitative detail (W\u00fcthrich, 2003).\n\nThe LM2R method currently has limitations regarding the length of RNAs that can be probed. The current throughput of PCR assembly and capillary electrophoretic sequencing enables single-nucleotide-resolution mapping of approximately 192 constructs per experiment at the signal-to-noise needed for statistically sound conclusions. With this throughput, in vitro dissection of the co-occurrence or anticorrelation of helices underlying a\u00a0~\u00a0120 nucleotide RNA domain was feasible over a 1\u20132 month period. However, for RNAs much longer than 200 nucleotides, the expense and time of preparing mutations would likely become prohibitive.\n\nThe LM2R method also currently has limitations regarding which kinds of functional elements can be interrogated for correlation or anticorrelation. Our study has focused on helix elements, which can be selectively probed and selectively locked through mutation of helix base pairs. However, other functional elements in RNA folding and gene regulation include single-stranded regions and non-Watson-Crick pairings that underlie tertiary structure. For example, in the add riboswitch the functional elements in gene expression are the single-stranded AUG and Shine-Dalgarno ribosome binding site. We used the helices in the P4 domain to allow locking and probing (by compensatory rescue) of this region. A more general approach to lock and probe such single-stranded elements might be to sequester them with designed oligonucleotide probes and to assess dissociation constants for such probes, respectively. For tertiary contacts or non-Watson-Crick paired junctions, it is less clear how to generally lock the elements or to carry out compensatory mutagenesis to probe the elements, in which case, LM2R may need to continue relying on Watson-Crick helices near these elements as proxies.\n\nAs a final caveat, the current LM2R method relies on the RNA system being at equilibrium so that the correlation Equations (1)-(3) are valid and also so that extensive computer simulations can be carried out that allow conversion of observed rescue factors to helix frequencies. It will be important to evaluate whether LM2R, or some time-dependent extension of the method, could be applied to RNAs that change their structures in non-equilibrium scenarios involving co-transcriptional RNA folding, recruitment of energy-dissipating machines like the ribosome or RNA polymerase, or other behaviors that depend on intrinsically kinetic mechanisms (Yanofsky, 2000; Watters et al., 2016).\n\n### Resolving the core mechanism of the add riboswitch\n\nThis work demonstrates application of four-dimensional chemical mapping to resolve a fundamental biochemical question. Applying the methodology to the add riboswitch from V. vulnificus supports a Monod-Wyman-Changeux (MWC, or population shift, or conformational selection) model of allostery rather than a non-MWC revision proposed after detailed NMR experiments (Reining et al., 2013; F\u00fcrtig et al., 2015a). The two prior models differed in one core aspect: whether structuring of the molecule\u2019s aptamer region is allosterically communicated to expose a ribosome binding site and turn on add mRNA gene expression, even in the absence of adenine (Figure 1C and D). In LM2R experiments locking P1 and P2, which are specific to the aptameric secondary structure, the rescue data showed depletion of P4 helices that would sequester the ribosome binding site. In other words, the add gene expression platform is ON when the sequence-separate aptamer region is folded even in the absence of the adenine ligand (Figure 1A and C; Figure 8, apoA). Conversely, LM2R experiments locking P1B, P4A, or P4B turn the riboswitch OFF and give evidence against the formation of P1 and P2 helices.\n\nThese data favor anti-correlation between aptamer helix formation and the structures sequestering the ribosome binding site even without adenine binding, as predicted in the MWC conformational selection model, and disfavor a non-MWC revision that omits this coupling (compare Figure 1A and Figure 1B; or Figure 1C and Figure 1D). Stated differently, allosteric communication of the aptameric region and the gene expression platform is an intrinsic property of the folding landscape of the add riboswitch sequence that is established without adenine. Despite its similarity to MWC allosteric mechanisms for proteins, this model for the add riboswitch shows much more dramatic changes in structure than is typically seen in protein allostery, where conformational shifts typically preserve secondary structure (Changeux and Edelstein, 2005; Eaton et al., 1999).\n\n### Comparison to prior data and proposals\n\nFigure 8 summarizes our current model of the add riboswitch. Our results indicate a strong anticorrelation of helices P4A and P4B with the helices P1 and P2, and so we continue to show the apo ensemble as split between apoB and apoA of the MWC model (Figure 1), but now highlight alternative or partial pairings (dashed lines) to better convey the likely heterogeneity of these states. This model is consistent with all data collected in this study as well as all measurements on the V. vulnificus add riboswitch published to date. First, a number of prior studies applied techniques that do not directly read out base pairing but are sensitive to ligand binding and can quantify energetics and kinetics. Functional measurements in vitro and in vivo, use of fluorescent reporters, and single-molecule force experiments all have suggested that the riboswitch is rather \u2018leaky\u2019, forming the aptamer secondary structure at\u00a0~40% frequency at 20\u201330\u00b0C, even without adenine (Lemay et al., 2011; Mandal and Breaker, 2004; Batey, 2012; Cordero and Das, 2015; Stoddard et al., 2013; Rieder et al., 2007; Neupane et al., 2011; Lemay et al., 2006; Greenleaf et al., 2008; Wickiser et al., 2005; Lemay and Lafontaine, 2007; Reining et al., 2013). Second, X-ray crystallographic studies have been limited to constructs with just the aptameric region (Stagno et al., 2017; Stoddard et al., 2013b; Zhang and Ferr\u00e9-D'Amar\u00e9, 2014; Gilbert et al., 2009; Edwards and Batey, 2009; Serganov et al., 2004; Daldrop et al., 2011; Delfosse et al., 2010; Gilbert et al., 2007); these structures all show P1, P2, and P3 helices, in accord with Figure 8. Third, the detailed NMR measurements that suggested the alternative apoA (Figure 1B) were also consistent with the apoA base pairings in the MWC model (Figure 1A): nuclear Overhauser effect (NOE) spectroscopy unambiguously established that pairings in both P1 and P4A occur in the absence of adenine, but could not infer whether these helices might co-occur or be mutually exclusive; our LM2R data strongly support the latter scenario (Figures 6 and 7). Fourth, analogous to our locking approach, the NMR study used a variant MutP2 (A29C, A30G, U40C, U41G) to stabilize the aptamer secondary structure. While our chemical mapping measurements suggest that this mutant only partially stabilizes P2 (Figure 5\u2014figure supplement 1), both the NMR study and our LM2R measurements detect suppression of P4A in this background (Figure 6\u2014figure supplement 2), supporting the anticorrelation between P2 and P4A in Figure 8. Fifth, our SHAPE and multi-probe chemical mapping data suggest partial opening of P5 in apoA and holo (brown curves, Figure 4B), and our LM2R analysis suggests only partial formation of P2B and P1B when P4A is locked (Figure 6\u2014figure supplement 1 and Figure 7\u2014figure supplement 1D). These observations are again consistent with NMR studies which could unambiguously detect P5 and estimate relative frequencies of, e.g., P2 vs. P2B, but could not establish these helices\u2019 absolute frequencies. Sixth, newer single molecule FRET measurements detect transient formation of the L2/L3 tertiary contact prior to adenine binding (dashed lines in apoA of Figure 6) and stabilization upon adenine binding to holo (Warhaut et al., 2017). These data are consistent with, and indeed were interpreted within, an MWC framework in which formation of the aptameric secondary structure occurs in concert with opening of the gene expression platform, even without adenine ligand present (Warhaut et al., 2017). Seventh, the prior detailed NMR analysis led to a compelling model of riboswitch temperature robustness that involves compensating the improving affinity of the aptamer for adenine at colder temperatures by a pre-equilibrium that favored apoB over apoA at those temperatures. Although the precise predictions of the switching efficiencies of this model are affected by whether apoA involves opening the gene expression platform, approximately the same temperature compensation occurs in the MWC conformational selection model (see Figure 8\u2014figure supplement 1).\n\nThere is now concordance across numerous measurements for an MWC model that posits strong secondary structure similarities between an apoA state that transiently forms the aptamer secondary structure without adenine ligand and the ligand-bound holo state. We also propose herein that further heterogeneity is likely to be present in members of the apo ensemble that do not present the aptamer secondary structure, grouped into apoB. LM2R measurements indicate weak or no correlation of the tested signature helices of apoB (P1B, P4A, and P4B; Figure 7). Furthermore, numerous alternative secondary structures are possible for this state (see, e.g., Figure 1\u2014figure supplement 3). The presence of these myriad alternative helices, each at low population, would explain their detection difficulty with this and prior bulk equilibrium techniques but their appearance in single-molecule measurements (Neupane et al., 2011). Supporting this picture, higher-order M2 analysis in single mutant backgrounds isolate and confirm numerous alternative secondary structures for the add riboswitch (Figure 8\u2014figure supplement 2 and Figure 8\u2014figure supplement 3). We note that there are no functional reasons for the apoB ensemble to maintain a single secondary structure \u2013 it simply has to disallow adenine binding while keeping the gene expression platform closed in P4. Without selection for a pure single structure, we therefore suggest that apoB has remained structurally heterogeneous, and the exact populations of its helix pairings outside the P4 domain may shift in different solution conditions and flanking sequences while still being compatible with riboswitch function. We further speculate that \u2018non-functional\u2019 states of other riboswitches and RNA gene regulatory modules may have highly heterogeneous structures and, indeed, this feature might explain why those states have been refractory to conventional structural biology approaches developed primarily to dissect protein structure/function. This picture also implies that antibiotics targeting any specific apo structure of the add and other riboswitches are unlikely to succeed, as single mutations that disrupt the targeted apo structure while retaining other members of the apo ensemble with the P4 domain could evolve quickly and offer resistance.\n\n### General applicability of 4D RNA chemical mapping\n\nThe next challenge for understanding riboswitches and other cis-regulatory RNA elements is to test how the structural ensembles defined through in vitro studies are retained or altered by co-transcriptional effects, protein binding, helicases, crowding, noise due to low numbers of molecules, and other complexities of these molecules\u2019 native biological environments (Tian and Das, 2016; Leamy et al., 2016). Amongst available biochemical and biophysical techniques, chemical mapping methods read out by sequencing have strong promise in delivering single-nucleotide-resolution structural information in such environments. As techniques improve to edit genomes across organisms and to amplify and measure RNA chemical mapping signals in cells and tissues, the lock-mutate-map-rescue approach developed here offers the possibility of dissecting complex structural ensembles for these shape-shifting molecules in situ.\n\n## Materials\u00a0and\u00a0methods\n\n### RNA synthesis and construct design\n\nDouble-stranded DNA templates were prepared by PCR assembly of DNA oligomers with maximum length of 60 nt ordered from IDT (Integrated DNA Technologies). DNA templates contain a 20-nt T7 RNA polymerase promoter sequence (TTCTAATACGACTCACTATA) on the 5\u00b4 end and a 20-nt Tail2 sequence (AAAGAAACAACAACAACAAC) on the 3\u00b4 end. The sequence of interest is flanked at each end by a hairpin with single-stranded buffering (Kladwang et al., 2014). The full sequence probed was:\n\nGGACACGACUCGAGUAGAGUCGAAUGCGCUUCAUAUAAUCCUAAUGAUAUGGUUUGGGAGUUUCUACCAAGAGCCUUAAACUCUUGAUUAUGAAGUCUGUCGCUUUAUCCGAAAUUUUAUAAAGAGAAGACUCAUGAAUUACUUUGACCUGCCGACCGGAGUCGAGUAGACUCCAACAAAAGAAACAACAACAACAAC.\n\nHairpin sequences are in italics; add riboswitch sequence is underlined. The primer assembly scheme and plate orders for all constructs were automatically designed by Primerize-2D (Tian and Das, 2017a).\n\nPCR reactions, including 100 pmol of terminal primers and 1 pmol of internal primers were carried out as previously described. PCR products were purified using Ampure XP magnetic beads (Agencourt) on a 96-well microplate format following manufacturer\u2019s instructions. DNA concentrations were measured on a Nanodrop 1000 spectrophotometer (Thermo Scientific). In vitro transcription reactions were described previously, followed by similar purification (using Ampure XP beads with externally added 10% PEG-8000) and quantification steps.\n\n### Chemical modification\n\nM2, M2R and LM2R chemical mapping were carried out in 96-well format as described previously (Tian et al., 2014; Kladwang et al., 2011). Prior to chemical modification, 1.2 pmol of RNA was heated to 90\u00b0C for 2 min and cooled on ice for 2 min to remove secondary structure heterogeneity, then folded for 20 min at 37\u00b0C in 15 \u03bcL of 10 mM MgCl2, 50 mM Na-HEPES pH 8.0 (with or without 5 mM adenine), and returned to ambient temperature (24\u00b0C). RNA was modified by adding 5 \u03bcL of freshly made SHAPE reagent, 5 mg/mL 1M7 (1-methyl-7-nitroisatoic anhydride) dissolved in anhydrous DMSO. Modification reactions were incubated at ambient temperature for 12 min and then quenched by 5 \u03bcl of 0.5 M Na-MES pH 6.0. Quenches also included 1 \u03bcL of poly(dT) magnetic beads (Ambion) and 0.065 pmol of FAM-labeled Tail2-A20 primer for reverse transcription. Samples were separated using magnetic stands, washed thoroughly with 70% ethanol, and air-dried. Beads were resuspended in 5.0 \u03bcL reverse transcription mix with SuperScript III (Thermo Fisher), then incubated at 48\u00b0C for 30 min. RNAs were degraded by adding 5 \u03bcL 0.4 M NaOH and incubating at 90\u00b0C for 3 min. Solutions were cooled down on ice then neutralized with 3 \u03bcL acid quench (1.4 M NaCl, 0.6 M HCl, and 1.3 M Na-acetate). Fluorescent labeled cDNA was recovered by magnetic bead separation, rinsed 70% ethanol, and air-dried. The beads were resuspended in 10 \u03bcL Hi-Di formamide (Applied Biosystems) with 0.0625 \u03bcL ROX-350 ladder (Applied Biosystems) and eluted for 20 min. The eluants were loaded onto capillary electrophoresis sequencers (ABI3100 or ABI3730).\n\nMulti-probe chemical mapping was performed with procedures similar to SHAPE chemical mapping, with variations in the modification and quench steps. Specific preparations were as follows: 1% dimethyl sulfate (DMS), mixing 1 \u03bcL 10.5 M DMS into 9 \u03bcL ethanol, and then 90 \u03bcL doubly deionized water (ddH2O); 0.4% glyoxal, dilution to 1/100x of 8.8 M glyoxal; RNase V1, serial dilution to 1/1000x in storage buffer (50% glycerol, 50 mM Tris-HCl pH 7.4, 100 mM NaCl, 0.1 mM EDTA); Terbium(III), 4 mM TbCl3 in ddH2O; FMN, 2 mM flavin mononucleotide in ddH2O. Volumes of 5 \u03bcL of these modifier stocks were added to folded RNA solution for 12 min, except for UV treatment, in which samples were exposed directly under a hand-held 302 nm UV lamp for 3 min. FMN photo oxidation reactions were placed on a visible-light box during the entire 12 min reaction. Modifications were quenched by 5 \u03bcL of 2-mercaptoethanol for 1M7, DMS, glyoxal and RNase V1; 72 mM EDTA for Terbium(III); or ddH2O (and removal of light source) for \u2018no modification\u2019 controls, FMN, and UV.\n\n### CE data processing\n\nThe HiTRACE 2.0 software was used to analyze CE (capillary electrophoresis) data (Kim et al., 2013; Yoon et al., 2011; Lee et al., 2015). Electrophoretic traces were aligned and baseline subtracted using linear and non-linear alignment routines as previously described (Kladwang et al., 2014). Sequence assignment was accomplished semi-automatically with human supervision. Band intensities were obtained by fitting profiles to Gaussian peaks and integrating. Normalization, correction for signal attenuation, and background subtraction were enabled by inclusion of referencing hairpin loop residues (GAGUA) at both 5\u00b4 and 3\u00b4 ends, 10x dilution replicates, and no-modification controls. Briefly, true values for saturated peaks were obtained from 10x dilutions. Signal attenuation was corrected from 5\u00b4 to 3\u00b4 ends based on the relative reactivity between 5\u00b4 and 3\u00b4 referencing hairpin loop intensities (Kladwang et al., 2014). Reactivities of SHAPE profiles were normalized against GAGUA, while other modifiers in multi-probe mapping were normalized to subsets of GAGUA which are reactive to that particular modifier.\n\n### Data deposition\n\nAll chemical mapping datasets, including M2, M2R, LM2R and multi-probe mapping, have been deposited at the RNA Mapping Database (http://rmdb.stanford.edu) (Cordero et al., 2012a) under the following accession codes: ADD140_1M7_0001, ADD140_1M7_0002, ADD140_1M7_0003, ADD140_1M7_0004, ADD140_1M7_0005, ADD140_1M7_0006, ADD140_1M7_0007,ADD140_1M7_0008, ADD140_1M7_0009, ADD140_1M7_0010, ADD140_1M7_0011, ADD140_1M7_0012, ADD140_1M7_0013, ADD140_1M7_0014, ADD140_RSQ_0001, ADD140_RSQ_0002, ADD140_RSQ_0003, ADD140_RSQ_0004, ADD140_LCK_0001, ADD140_LCK_0002, ADD140_LCK_0003, ADD140_LCK_0004, ADD140_LCK_0005, ADD140_LCK_0006, ADD71_STD_0001, ADD128_STD_0001, ADD140_STD_0001, ADD140_DCP_0001, ADD140_DCP_0002, RNAPZ5_RSQ_0001, TRP4P6_RSQ_0001, 16SFWJ_RSQ_0001.\n\n### Simulations to infer helix frequencies and correlation values to rescue factors\n\nAll RNA families with length between 100 and 250 nt were screened from the Rfam database (http://rfam.xfam.org/) 11.0 FASTA file (Burge et al., 2013). A sequence from each family was randomly picked as representative, and its in silico base pair probability (BPP) matrix was simulated. Base pairing positions to be tested by M2R were selected from this BPP matrix, for BPP values greater than or equal to 1% over any candidate helices that could form 3 Watson-Crick pairs or more. (The 1% BPP cutoff conveys our knowledge that these candidate helices are likely to have finite but potentially low frequency, based on prior literature analysis or experiments; changing the cutoff to lower values such as 0.1% gave similar results and do not change conclusions of the manuscript). For each helix, the rescue factor metric (Equation 4), averaged over simulated M2R quartets for each base pair in the helix, and the mean BPP across those base pairs were calculated. The MATLAB source code for Rfam simulation and rescue factor estimates are available in a GitHub repository: https://github.com/DasLab/m2r_simulations/. To generate a posterior distribution over helix frequencies F given an experimental rescue factor for a helix, all RFAM samples were collected with the same number of base pairs as the candidate helix and simulated rescue factor in the same bin as the experimental rescue factor (binwidth of 0.05 was chosen to allow for sufficient sampling). The helix frequencies F(helix) of these samples (as shown in Figures 4 and 6) were visualized as the posterior distribution through a kernel-density estimate (with the ksdensity function in MATLAB). The representative helix frequency (presented in Table 1 and in main text) was taken as the median helix frequency of these RFAM samples.\n\nEvaluating correlation between two helices requires determining the posterior distribution over the correlation value $g(helix 1,helix 2)$, given measurements of $F(helix 1)$ and $F(helix 1|helix 2)$ (see e.g., Equation 2). Two sets of RFAM helix frequency samples corresponding to the experimental rescue factor for helix 1 in the wild type background and for helix 1 in the lock-helix2 mutational background were collected. The posterior distribution of $g(helix 1,helix 2)=\\frac{F(helix 1|helix 2)}{F(P1)}$ was then estimated based on taking each helix 1\u00a0frequency sampled from the latter set (lock-helix2) and dividing by each helix 1\u00a0frequency\u00a0sampled for the former set (wild type). Combination of posterior distributions for a lock-mutate-map-rescue experiments and its \u2018flipped\u2019 variant (in which helix 1 was locked, and helix 2 subjected to mutate-map-rescue) was carried out by multiplying kernel density estimates (KDE) of the posterior distributions $g(helix 1,helix 2)$ for the two separate experiments, assuming a flat prior over correlation values. Changing the bandwidth of the KDE estimates changed posterior support values presented in the main text by less than a factor of 2. For $g(P1,P4B)$, $g(P2,P4A)$, and $g(P2,P4B)$, which discriminated between the MWC and non-MWC models, the combination of posterior distributions was also carried out with exponential fits to the individual posterior distributions; final results for posterior support were the same within a factor of 2.\n",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "07d6b375-afcc-4168-a30b-55bd2e24a2d5",
+      "submission_id": "98226501-7b8a-4ed8-98f4-b14e713319ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Marie Pyle, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29602.096](https://doi.org/10.7554/eLife.29602.096)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Allosteric Logic of the V. vulnificus Adenine Riboswitch Resolved by Four-dimensional Chemical Mapping\" for consideration by eLife. Your article has been favorably evaluated by James Manley (Senior Editor) and three reviewers, one of whom, Anna Marie Pyle (Reviewer #3), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Alain Laederach (Reviewer #2); Philip Bevilacqua (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll three reviewers were enthusiastic about the quality and significance of the work, but there were also serious concerns about the clarity and presentation of the manuscript. As written, reviewers felt that the paper would lack the impact that it deserves and made numerous suggestions for rewriting. Several important scientific issues were also raised and these will need to be rigorously addressed. With these changes and modifications, the reviewers are confident that this will be a high impact paper of major significance to the field of RNA structure and folding.\n\nEssential revisions:\n\nEach reviewer has indicated specific problems with the writing and presentation and these will all need to be addressed. The revised manuscript must be clear and comprehensible to the RNA community. There are specific scientific criticisms, such as point 8 from reviewer 3 that must be addressed in the revised text as well.\n\nReviewer #2:\n\nIn the manuscript by Tian and coworkers the authors analyze a remarkable structural data set they collected on the V. vulnificus riboswitch to address a very basic question about the underlying allostery governing its main mechanism of action. The precise question being interrogated is whether a population shift model really explains RNA allostery is this model or whether an alternative model is better as has been suggested in other studies. The resulting data, based on \"locked ensemble\" analyses demonstrated with the data in Figure 4 provides compelling evidence for the MWC model. Furthermore, the approach here is a completely novel application of SHAPE probing combined with mutation and mapping to answer a very fundamental biophysical question about RNA folding.\n\nMy one criticism of the paper, and I believe this is just a presentation issue is on the biological significance and generalizability of these results. I believe the authors could do a better job of explaining to the more biologically oriented reader why it is important to the function of RNA in the cell why RNA using a population shift model is important. Furthermore, I think the authors should take the time to (re)-explain why understanding folding in this system is \"paradigmatic\" and what the possible biological ramifications are of understanding the folding of the add riboswitch at this level of detail. As such I recommend the following major revisions:\n\n1) I think the major reasoning for this study needs to be better illustrated and explained. It is important to remind the reader that the add riboswitch being studied is the aptamer domain of a regulatory switch and that allosteric interactions are likely key to the regulatory mechanism. Can the authors explain how functional regulation might differ under both folding models, perhaps even predict how each model would impact the kinetics? I think some kind of \"cartoon\" figure would go a long way to explaining this.\n\n2) Similarly I think a workflow figure of some type is needed to explain how studying each \"locked ensemble\" can then be reintegrated into a more general understanding of allostery and folding mechanism. I hate to ask for more cartoons, but the authors need to somehow make this concept clearer in their presentation of their work.\n\n3) More fundamentally there are some underlying assumptions here that it is possible to lock conformations. The design strategy for these different molecules needs to be better explained as well as the rationale for then being able to reintegrate each individual molecule\u2019s unique folding properties into a general model of WT folding.\n\n4) As impressive as the number and meta-analysis of all the mutate and map data is, I think the authors could move a lot of the data they show in Figure 3 to the supplement to focus more on the concepts and their biophysical interpretation.\n\nReviewer #3:\n\nIn this paper, the authors utilize an expanded form of the mutate and map procedure to dissect intermediate states involved in folding and activation of a riboswitch and to resolve controversies about the structural states that are actually visited in the ligand-free state. This is an area of intense interest because structural studies on riboswitches conducted to date do not actually explain how the riboswitch is kept OFF, as the ligand-free forms of these molecules can sample structural states that still expose the ribosome binding. This is an important paper and a rigorous study that exemplifies the power of RNA mapping studies for quantitative analysis of RNA folding.\n\nUnfortunately, the paper suffers from two major flaws that prevent the authors from effectively making what are important points for the community.\n\n1) This paper gets in its own way: It is written in confusing, convoluted language and important points are made using terms that are undefined and will be opaque to much of the RNA structural biology community. The authors are attempting to convey complex ideas in this paper, using a new approach that is inherently complex. This is an impossible task without clear, precise language and terminology.\n\n2) The authors fail to utilize their figures as display items in support of their ideas. In the text, the authors make specific claims about their data, referring to complicated figures that lack clear notation on the figure to direct the reader to the actual result. Even in cases where the figures are intuitively interpretable, effects are small and therefore it is essential that the authors explain the figures more carefully, indicating exactly what they mean in the text.\n\nSpecific additional comments are below:\n\n1) In the Introduction, the language is quite opaque, which makes an already complicated system even more difficult to understand. Example: \"ligand binding to an aptamer region of the RNA shifts a pre- existing equilibrium between strikingly different secondary structures, resulting in allosteric exposure or sequestration of another sequence-distal region harboring a ribosome binding site or other gene expression platform (Fern\u00e1ndez-Luna and Miranda-R\u00edos, 2008; Gilbert and Batey, 2006; Breaker, 2012).\" Even sophisticated readers will not know what \"allosteric exposure\" or \"sequestration\" mean in this context. The authors are actually explaining a simple phenomenon, but they need to use clear language that is not cluttered with jargon and terms with multiple meanings. Interestingly, and noted later in this review, the goals of this paper are clearly articulated within the Results section, suggesting that a rearrangement of the text and of the ideas might result in greater clarity (see point 6, below).\n\n2) In paragraph 2 of the Introduction, in part due to the problem stated above, the authors have not clearly articulated the discrepancy between models, nor have they defined what exactly is meant by \"allosteric logic\".\n\n3) Again, the authors have not explained their premise well: \"Briefly, if mutation of either side of a base pair (mutant A or mutant B) disrupts the reactivities at other nucleotides in the RNA, but the compensatory double mutation (mutant AB) restores the SHAPE reactivities to the wild type (WT) profile, these observations suggest that the two sites were base paired in the starting WT sequence. Our prior work assumed that such observed compensation would arise with negligible probability if the mutated nucleotides were not paired.\" This reader was completely confused by this statement. What is different from the assumption in the prior work? I think the meaning got lost in the double negative describing the prior work, but I cannot be sure what he means.\n\n4) Subsection \u201cInferring helix frequencies through quantitative compensatory rescue\u201d. Please clearly define exactly what is meant by \"helix frequency\" in the text. On what experimental metric is it deduced and how is it calculated? If it is in the Materials and methods, then refer to that in the Results section \"Helix frequency is defined as XXX and it was calculated as described in Materials and methods\".\n\n5) \"[\u2026] median values of the helix frequency posterior probability distributions\". What is the meaning of \"posterior\" in this context? Helix frequency distribution has not even been clearly defined yet \u2013 so it is vexing that there is now a posterior form of it.\n\n6) Subsection \u201cThe add riboswitch system\u201d, first two paragraphs. In the Results, the authors finally articulate the structural issues that are being examined in the paper. Almost the entire content of those paragraphs should be used as the Introduction, rather than the present musing on allostery. For example, the reader needs to learn that \"The major uncertainty regards what happens when adenine is not present but the RNA nevertheless samples a secondary structure poised to bind adenine, with P1, P2, and P3 formed. This state is termed apoA.\" It would be clearer to emphasize this right from the beginning, rather than initiating the paper with a treatise on allostery.\n\n7) \"Unexpectedly, in between these two regions, nucleotides 105-111 also modestly increased in SHAPE reactivity upon adenine binding, although, in both the MWC and non-MWC models, this segment is predicted to be sequestered into a P5 helix in all states (Figure 2).\" This sounds really interesting, but if one looks closely at the figure and lines up nucleotides 105-111, the effect being referred to is small, and potentially attributable to partial stacking of this region near the helix rather than helical formation itself. This reviewer is concerned that the authors are overinterpreting the small effects that are side-effects of the SHAPE method itself (see point 8).\n\n8) A general criticism of the science rather than the writing: A potential flaw in the analysis is the strict interpretation of SHAPE signals in this analysis: The authors assume that shape data can be interpreted in a strictly binary way \u2013 representing a population of paired or unpaired duplexes. But SHAPE reactivity is not strictly indicative of base pairing and instead reflects the relative \"floppiness\" of a 2'-OH \u2013 not whether it is paired or not. As a result, there can be partially ordered conformations, and conformationally restricted conformations of a motif that is not double stranded yet can give SHAPE protections of varying magnitude. These issues raise concern about the focus on subtle effects being studied by the investigators.\n\n9) Another result that sounds really interesting but is difficult to discern from the data presented: \"Compared to the WT sequence, many of these mutants gave protections or enhancements in the 5 \u0301-most aptamer region of the riboswitch (nts 25-32) and concomitant exposures or protections (respectively) near the 3 \u0301 end of the riboswitch (nts 105- 122), which included both the start codon and Shine-Dalgarno ribosome binding sequence (arrows, Figure 3A-B).\" Exactly where in the figures is this shown? It must be indicated on the display item.\n\n10) Figure 3\u20135: Please define \"cumulative posterior possibility\" in the Results portion of the text (or better yet, come up with a term that is simpler), as an understanding of the parameter is a prerequisite for analyzing the data presented.\n\n11) Figure 5 and throughout text: If the MWC model is correct, then why isn't the riboswitch constitutively ON 40% of the time in the absence of adenine? Or is the level of \"leaky\" expression commensurate with the authors' estimates of the population of this state?\n\n12) \"Similarly, compensatory rescue targeting P2 gave a significant helix frequency (42%) when P1 was locked (Figure 4C, Figure 4\u2014figure supplement 2, and Table 1). As a further check, both models under question predicted the absence of P4A in apoA; indeed, in either the lock-P1 or lock-P2 background, we did not detect compensatory rescue targeting P4A, and could set an upper bound on its frequency of 4%. Finally, we tested the helix frequency of P4B, which was predicted to be absent (0%) in apoA by the MWC model and present (100%) in the non-MWC model (Figure 2A).\" This is interesting, but the authors do not indicate exactly which parts of Figure 4 support this model. They simply refer to Figure 4, which is a complex figure lacking any direction to the reader. One cannot evaluate the veracity of the authors' claim.\n\n13) Last paragraph of the Results: Again, the authors need to refer directly to the features in Figure 4A-D that support the helix frequencies being described in the text, and presumably graphed in parts E and F. When inspected by this reviewer, the display items in Figure 4 did not clearly indicate the results claimed. They need to be indicated on the display and referred to in the text.\n\n14) First paragraph of the Discussion: \"Four-dimensional chemical mapping offers an experimental route to this information that is unique in its high throughput and use of standard equipment (capilly electrophoretic sequencers).\" It is clear from the data provided in this paper that this is not a high throughput method, in fact it is quite the contrary. Also: one presumes that the authors mean \"capillary\". Any reference to this being a simple or high throughput experiment should be removed, as it unfairly inflates expectations within the community of the methods that should be reasonably applied in structural studies any other RNA molecule.\n\nReviewer #4:\n\nTian and co-workers provide a deep, high-resolution picture of structural transitions in a functional RNA molecule, the adenine riboswitch using a method they pioneered called \"lock-mutate-map-rescue\". The authors lock various helices in place through mutations and then judge the effects on the remainder of the molecule via HT rescue experiments. The results favor the famous MWC model originally developed to explain allostery in proteins via conformational selection. The authors clearly address work of another study on the subject and the issue of whether in the absence of ligand the binding site is open, and the concern that existing data support both MWC and non-MWC models. The authors' work has been tested statistically using Bayesian statistics. Importantly, they show that conventional 1D SHAPE experiments cannot differentiate between MWC and non-MWC models, motivating their current approach. Mutants are made that stabilize P1 and P2 that are outside of the critical P4 switch helix, and neither favor formation of P4B. And the converse experiment of locking P4B did not form P1 and P2. This led to the main finding, which is that gene expression is ON even in the absence of ligand as long as the aptamer is folded, albeit rarely sans ligand. This is an important and influential finding.\n\nWe have two major concerns.\n\n1) At many times the paper is very difficult to follow. Figures are often not described in a way that the reader can access. The language is at times highly specialized and ill defined. If the authors can explain their data in an accessible way, it will greatly increase the impact of the findings.\n\n2) While an elegant method, 4D chemical mapping is not without its concerns. Our only major concern is the general assumption that locking a helix informs on the natural RNA conformational switch. Could locking a helix prevent certain natural pathways that involve transient interactions between helices, such as pseudoknots involving helices themselves, including defects, or could a lock prevent the need to transiently unfold a helix during the switching.\n",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "70c77df1-abf1-4358-a2f6-786c2747db90",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C1",
+      "claim": "The V. vulnificus add riboswitch is a ~120 nucleotide element that resides in the 5\u00b4 untranslated region (UTR) of the add adenosine deaminase mRNA of human pathogenic bacterium Vibrio vulnificus.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularly well-studied \u2013 but still incompletely understood \u2013 example of an allosteric RNA is the add riboswitch, a ~120 nucleotide element that resides in the 5\u00b4 untranslated region (UTR) of the add adenosine deaminase mRNA of human pathogenic bacterium Vibrio vulnificus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on the add riboswitch system (Lemay et al., 2011; Mandal and Breaker, 2004; Batey, 2012; Cordero and Das, 2015; Stoddard et al., 2013; Rieder et al., 2007; Neupane et al., 2011; Lemay et al., 2006; Greenleaf et al., 2008; Wickiser et al., 2005; Lemay and Lafontaine, 2007; Stagno et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "bccb6222-7bd4-454d-bd81-5bb4d7223b00",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C2",
+      "claim": "The add riboswitch can directly bind adenine and controls translation of the mRNA in response to adenine in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This riboswitch can directly bind adenine and controls translation of the mRNA in response to adenine in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature (Lemay et al., 2011; Mandal and Breaker, 2004; Batey, 2012; Cordero and Das, 2015; Stoddard et al., 2013; Rieder et al., 2007; Neupane et al., 2011; Lemay et al., 2006; Greenleaf et al., 2008; Wickiser et al., 2005; Lemay and Lafontaine, 2007; Stagno et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "143b1173-1ff8-4cf5-8ea9-d44361bc45b4",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C3",
+      "claim": "Almost all work on the add riboswitch to date have assumed some variation of a Monod-Wyman-Changeux model (MWC, also called 'conformational selection' or 'population shift' models).",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all work on the add riboswitch to date have assumed some variation of a Monod-Wyman-Changeux model (MWC, also called 'conformational selection' or 'population shift' models) (Monod et al., 1965; Batey, 2012; Gunasekaran et al., 2004; Changeux and Edelstein, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on MWC models and the add riboswitch (Monod et al., 1965; Batey, 2012; Gunasekaran et al., 2004; Changeux and Edelstein, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "8fdff8b2-c9f6-4779-9210-43611c72e4ca",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C4",
+      "claim": "In the absence of adenine, the add riboswitch RNA dominantly forms a stable apo secondary structure whose aptamer region is in a fold incompatible with adenine binding and whose gene expression platform, a ribosome binding site and AUG start codon, is sequestered into helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of adenine, the RNA dominantly forms a stable apo secondary structure whose aptamer region is in a fold incompatible with adenine binding and whose gene expression platform, a ribosome binding site and AUG start codon, is sequestered into helices (blue, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1A and is based on prior literature and knowledge of the add riboswitch mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "273567f1-73e9-4319-872e-54083eb2d51f",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C5",
+      "claim": "High adenine concentrations stabilize the ligand-binding secondary structure in the aptamer region and rearrange the secondary structure around the gene expression platform so that it is freed to recruit the ribosome and translation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "High adenine concentrations stabilize the ligand-binding secondary structure in the aptamer region and rearrange the secondary structure around the gene expression platform so that it is freed to recruit the ribosome and translation machinery (gold, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1A and is based on prior literature and knowledge of the add riboswitch mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "1d5f7645-68fa-4b91-bfc8-99e6509c3dce",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C6",
+      "claim": "The signature prediction of the MWC model is that the holo RNA secondary structure should also exist in the absence of adenine, albeit as a high energy conformation within the apo ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "The signature prediction of the MWC model is that the holo RNA secondary structure should also exist in the absence of adenine, albeit as a high energy conformation within the apo ensemble (Figure 1A, middle panel; gold).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the theoretical prediction of the MWC model as applied to the add riboswitch, referencing Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "483f9458-0dd2-4558-a727-109769611f7b",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C7",
+      "claim": "In the MWC model, when the RNA occasionally fluctuates to form an aptamer secondary structure compatible with ligand binding, the gene expression platform is predicted to concomitantly open, even without the adenine ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of the riboswitch functional domains, when the RNA occasionally fluctuates to form an aptamer secondary structure compatible with ligand binding, the gene expression platform is predicted to concomitantly open, even without the adenine ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the theoretical prediction of the MWC model as applied to the add riboswitch.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "2e05ab77-651e-4a7a-af29-f017dec92dde",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C8",
+      "claim": "A recent study proposed a non-MWC model for the add riboswitch based on multidimensional NMR spectroscopy, NMR relaxation studies, designed model systems, and supporting measurements from stopped-flow kinetics and calorimetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a tour de force study highlighted an alternative to the MWC mechanism for the add riboswitch (Figure 1B). Multidimensional NMR spectroscopy, NMR relaxation studies, designed model systems, and supporting measurements from stopped-flow kinetics and calorimetry revealed detailed single-nucleotide-resolution base pairing information and intriguing temperature dependences for the complex structural ensemble of the add riboswitch (Reining et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to the NMR study (Reining et al., 2013) and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "29115877-07c9-4200-b6ea-a6c7ab53653c",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C9",
+      "claim": "The non-MWC model proposed that, in the absence of adenine, riboswitches that sample the correct aptameric secondary structure do not also concomitantly open their ribosome binding sites and increase gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although similar in some respects to previously proposed MWC models, the new model contradicted a standard MWC assumption (Gunasekaran et al., 2004; Changeux and Edelstein, 2005; Eaton et al., 1999): it proposed that, in the absence of adenine, riboswitches that sample the correct aptameric secondary structure do not also concomitantly open their ribosome binding sites and increase gene expression, as predicted by MWC conformational selection (Figure 1B, middle panel; mixed blue and gold, red rectangle outline).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to the NMR study (Reining et al., 2013) and references to prior MWC literature (Gunasekaran et al., 2004; Changeux and Edelstein, 2005; Eaton et al., 1999), as well as Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "69c2cb92-8902-4ade-babd-dde7886fb7ea",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C10",
+      "claim": "The same group that first proposed a non-MWC model for the add RNA has recently revived the MWC framework to interpret newer single molecule measurements on the same system.",
+      "claim_type": "EXPLICIT",
+      "source": "As an illustration of current uncertainties in the system, the same group that first proposed an non-MWC model for the add RNA has recently revived the MWC framework to interpret newer single molecule measurements on the same system (Warhaut et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the single molecule study (Warhaut et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "e09c1f1b-a975-4589-85da-66a62ff665e0",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C11",
+      "claim": "Lock-mutate-map-rescue (LM2R) is a four-dimensional expansion of chemical mapping that integrates multiple layers of mutation with nucleotide-resolution chemical mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a four-dimensional expansion of chemical mapping called lock-mutate-map-rescue (LM2R), which integrates multiple layers of mutation with nucleotide-resolution chemical mapping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and is the main methodological contribution of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "6f26026a-19fd-415a-9744-85a9a4c0ea32",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C12",
+      "claim": "LM2R measurements give strong support to the pre-existing correlations predicted by MWC models for the add riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "These LM2R measurements give strong support to the pre-existing correlations predicted by MWC models, disfavor alternative models, and suggest additional structural heterogeneities that may be general across ligand-free riboswitches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental LM2R data presented in the manuscript, particularly in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "45d59ab8-bbb4-4213-aade-22a900f02fb6",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C13",
+      "claim": "LM2R measurements disfavor non-MWC alternative models for the add riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "These LM2R measurements give strong support to the pre-existing correlations predicted by MWC models, disfavor alternative models, and suggest additional structural heterogeneities that may be general across ligand-free riboswitches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental LM2R data presented in the manuscript, particularly in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "ab8c7fa1-5c13-416f-978e-f75449bfd824",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C14",
+      "claim": "LM2R measurements suggest additional structural heterogeneities that may be general across ligand-free riboswitches.",
+      "claim_type": "EXPLICIT",
+      "source": "These LM2R measurements give strong support to the pre-existing correlations predicted by MWC models, disfavor alternative models, and suggest additional structural heterogeneities that may be general across ligand-free riboswitches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental LM2R data presented in the manuscript, particularly in Figure 7G-I showing weak or no correlation between helices expected to co-occur in apoB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "83f8cea2-6a74-4415-8267-848a2e82dc94",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C15",
+      "claim": "Compensatory mutation experiments integrated with chemical mapping readouts (mutate-map-rescue, M2R) enable incisive confirmation or falsification of candidate base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutate-map-rescue (M2R) experiments (Figure 2) enable incisive confirmation or falsification of candidate base pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by prior work on M2R (Tian et al., 2014; Tian and Das, 2016) and is illustrated in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "bc2796b3-0ef6-4aa9-8599-a5e354c71c4c",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C16",
+      "claim": "Strong evidence for a candidate base pair comes from observations that mutation of either side of a base pair disrupts the SHAPE profile of the RNA and that the compensatory double mutation restores the SHAPE measurements to the wild type profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong evidence for a candidate base pair comes from observations that mutation of either side of a base pair (mutant A or mutant B) disrupts the SHAPE profile of the RNA; and that the compensatory double mutation (mutant AB) restores the SHAPE measurements to the wild type (WT) profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the M2R methodology described in the manuscript and illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "742a0a83-c575-4506-837e-2771dd658dac",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C17",
+      "claim": "Partial rescue in M2R experiments is a hallmark of base pairs that are present at low frequency in an RNA's structural ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "In our studies on the 16S rRNA four-way junction, the strongly populated helix shift-P4a was associated with mutate-map-rescue data that showed unambiguous rescue while the less populated helix P4a was associated with 'partial' rescue. In the latter case, disruptions in SHAPE reactivity induced by single mutations were alleviated by their concomitant compensatory mutation, but new features distinct from the wild type SHAPE profile also appeared (yellow arrow, bottom panel of Figure 2A). We speculated that such 'partial rescue' might generally be a hallmark of base pairs that are present at low frequency in an RNA's structural ensemble.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by prior work on the 16S rRNA (Tian et al., 2014) and is illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "dea78919-16e7-4182-84d2-0026df2373df",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C18",
+      "claim": "In silico tests confirmed that observation of strong rescue over all the base pairs of a helix implies high helix frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "These in silico tests confirmed that observation of strong rescue over all the base pairs of a helix implies high helix frequency (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation data presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "e44566f1-88a9-44f7-ad4d-a7b889ed5c42",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C19",
+      "claim": "Averaging rescue factors over tests on three or more base pairs gave values that showed a striking correlation with helix frequencies in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, individual base pair tests were noisy, but averaging rescue factors over tests on three or more base pairs gave values that showed a striking correlation with helix frequencies (compare gray and black points, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation data presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "dcbc5016-9e3a-4f72-aa42-b9c6d5cbb608",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C20",
+      "claim": "Absence of rescue (rescue factor close to zero) gave upper bounds on the helix frequency in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, absence of rescue (rescue factor close to zero; Figure 2D, bottom) gave upper bounds on the helix frequency (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation data presented in Figure 2D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "c42d98d7-d0dd-4917-906b-eb7adea1a9ab",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C21",
+      "claim": "In the absence of adenine, the add riboswitch shows a diverse set of helices including aptamer helices P1 (53%) and P2 (31%).",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of adenine, all prior models of the add riboswitch predicted that the RNA would show a diverse set of helices. Indeed, aptamer helices P1 (53%) and P2 (31%) were detectable, as they gave partial rescue in mutate-map-rescue experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the M2R experimental data presented in the manuscript, particularly in Figure 3A and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "b18576d2-3758-4e0c-b58c-cba24a6b7a50",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C22",
+      "claim": "Helices P3 and P5 were detected by compensatory rescue experiments in the absence of adenine, with median helix frequencies of 73% and 75%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Helices P3 and P5 were expected to be present, and both were detected by compensatory rescue experiments, with median helix frequencies of 73% and 75%, respectively (brown curves, Figure 4; Figure 3\u2014figure supplement 1 gives SHAPE profiles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the M2R experimental data presented in the manuscript, particularly in Figure 4 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "a7a9b755-b5cb-4cf4-b2e6-0fd1aa82f876",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C23",
+      "claim": "Compensatory rescue experiments recovered evidence for helices P4A (48%), P4B (55%), P4C (68%), P1B (44%), and P2B (17%) in the absence of adenine.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, compensatory rescue experiments recovered evidence for helices P4A (48%), P4B (55%), P4C (68%), P1B (44%), and, at a lower level, P2B (17%), all proposed as part of apoB (Figure 1; left-hand structure in top panel, Figure 3; Figure 3B shows SHAPE profiles and associated partial rescue for each base pair of P4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the M2R experimental data presented in the manuscript, particularly in Figure 3B and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "9ca236dc-73a2-45fe-9933-c6098e8d58fb",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C24",
+      "claim": "In the presence of 5 mM adenine, SHAPE measurements for single and compensatory mutations targeting helices P1, P2, P3, and P5 gave helix frequencies of 79%, 64%, 56% and 29%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the presence of 5 mM adenine, SHAPE measurements for single and compensatory mutations targeting these helices and rescue factor analysis gave helix frequencies of 79%, 64%, 56% and 29%, respectively (Figure 3C; and gold and brown curves in Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the M2R experimental data presented in the manuscript, particularly in Figure 3C and Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "e48260e0-a3bc-4854-8632-c90ad0fe48d8",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C25",
+      "claim": "Measuring rescue factors for helices P1B, P2B, P4A, P4B, and P4C in the presence of adenine gave no evidence for their presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring rescue factors for other helices, including P1B, P2B, P4A, P4B, and P4C predicted for the adenine-free state and other helices proposed to occur at low frequencies from M2-guided modeling (P6, P8 through P17) (Cordero and Das, 2015), gave no evidence for their presence when adenine was bound (example SHAPE profile quartets for P4B in Figure 3D; all quartets in Figure 3\u2014figure supplement 1; and blue and pink curves, Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the M2R experimental data presented in the manuscript, particularly in Figure 3D and Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "d47129ad-9eb1-46a4-bd79-6573bbfc2392",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C26",
+      "claim": "Locking P4B strongly reduces P1 helix frequency in the absence of adenine.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred P4B helix frequency drops from 53%% to 5%; the shift in posterior probability distribution to lower helix frequency values is clear (faded gold to gold curves; Figure 6B). Stated simply, locking P4B strongly reduces P1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the LM2R experimental data presented in the manuscript, particularly in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "b7aa707d-7904-4e53-a94a-44a15dff61c3",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C28",
+      "claim": "The posterior support for non-MWC models (g(P1,P4B)>1) from the lock-P4B experiment is 3.1 \u00d7 10\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "This posterior support is small, with a value of 3.1 \u00d7 10\u20133, disfavoring the non-MWC model and supporting the MWC model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LM2R experimental data and Bayesian analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "b0b13179-97b0-40cc-8418-10218509bf42",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C29",
+      "claim": "Upon locking P1, the P4B helix frequency drops from 55% to 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, in contrast to the observation of partial rescue of P4B in the wild type RNA (Figure 3B), the data in the lock-P1 context show no rescue for P4B. Upon locking P1, the P4B helix frequency drops, from 55% to 4%, and there is a striking shift in the posterior probability distribution to lower helix frequencies (faded blue to blue curves; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the LM2R experimental data presented in the manuscript, particularly in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "11535309-4059-4f51-95bf-325dfcac024a",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C31",
+      "claim": "When the data for the lock-P4B and lock-P1 experiments are combined, the posterior support for the non-MWC model becomes 4 \u00d7 10\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "If the data for the two experiments are combined, the posterior support for the non-MWC model becomes quite small, 4 \u00d7 10\u20135.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LM2R experimental data and Bayesian analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "446b918e-725f-4eca-a060-073c5b81fb76",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C35",
+      "claim": "The posterior support for the non-MWC model from the P2-P4B correlation experiments is 1.5 \u00d7 10\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "These results again strongly disfavor the non-MWC model (posterior support: 4.1 \u00d7 10\u20133 and 1.5 \u00d7 10\u20133, respectively) and supporting the MWC model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LM2R experimental data and Bayesian analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "51f6e8db-1ba1-4665-97e8-49dbd6331042",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C36",
+      "claim": "The posterior support for the non-MWC model from the P2-P4A correlation experiments is 4.1 \u00d7 10\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "These results again strongly disfavor the non-MWC model (posterior support: 4.1 \u00d7 10\u20133 and 1.5 \u00d7 10\u20133, respectively) and supporting the MWC model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LM2R experimental data and Bayesian analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "b46e1a47-4e26-4a40-8056-b1217e0d2209",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C38",
+      "claim": "LM2R experiments gave no evidence of correlation for pairs of helices expected to co-occur in the riboswitch when the aptamer secondary structure is not formed (apoB).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we saw no evidence of correlation for pairs of helices expected to co-occur in the riboswitch when the aptamer secondary structure is not formed (apoB, Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the LM2R experimental data and Bayesian analysis presented in the manuscript, particularly in Figure 7G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "82956426-9c37-4513-b5fc-3dd63fbc942b",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C40",
+      "claim": "The data are most consistent with a model in which helices P4A, P1B, P4B each appear with significant frequency in the apo ensemble, but do not necessarily co-occur, resulting in a heterogeneous structural ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "While the uncertainties in these LM2R measurements allow correlation values of these helices to be slightly greater than 1, the data are most consistent with a model in which helices P4A, P1B, P4B each appear with significant frequency in the apo ensemble, but do not necessarily co-occur, resulting a heterogeneous structural ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LM2R experimental data and Bayesian analysis presented in the manuscript, particularly in Figure 7G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "68b134bf-e0c7-4164-a3b6-bc8bcd97e459",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C41",
+      "claim": "A single secondary structure such as apoB may not be an appropriate description of the structural ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a single secondary structure such as apoB may not be an appropriate description of the structural ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the LM2R experimental data showing no correlation between helices expected to co-occur in apoB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "3548a269-7e70-4a55-8d22-5737aa1b4d41",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C42",
+      "claim": "Lock-P4A and lock-P1B showed reproducible differences in SHAPE reactivities at the 5\u00b4 end of the RNA (nts 13\u201320) that were larger than differences between lock-P1 and lock-P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence for structural heterogeneity came from the incomplete match in SHAPE profiles for mutants that lock different helices of the putative apoB state. For example, lock-P4A and lock-P1B showed reproducible differences in SHAPE reactivities at the 5\u00b4 end of the RNA (nts 13\u201320) that were larger than, e.g., differences between lock-P1 and lock-P2 (Figure 5), and we did not discover any alternative locking mutations that brought them into agreement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental SHAPE data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "986bcb13-c068-42f4-83b2-e6d15297d2e3",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C43",
+      "claim": "The proposed model favors a Monod-Wyman-Changeux (population shift, conformational selection) model of allostery for the add riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed model favors a Monod-Wyman-Changeux (population shift, conformational selection) model of allostery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the LM2R experimental data presented throughout the manuscript and is summarized in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "ef6c61d6-022a-480f-9009-ded693ba0b4c",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C44",
+      "claim": "The measurements show that sampling of the aptamer secondary structure is strongly anticorrelated with formation of the P4 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements show that sampling of the aptamer secondary structure is strongly anticorrelated with formation of the P4 domain; it is therefore valid to represent it as a separate state (apoA, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the LM2R experimental data presented in Figures 6 and 7 and is summarized in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "d105f123-d39c-4529-8638-0face03409c7",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C45",
+      "claim": "The apoA state is structurally similar to the ligand-bound holo, including not just the aptamer region but also the gene expression platform, as predicted by an MWC framework.",
+      "claim_type": "EXPLICIT",
+      "source": "This apoA state is structurally similar to the ligand-bound holo, including not just the aptamer region but also the gene expression platform, as predicted by an MWC framework (right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the LM2R experimental data presented in Figures 6 and 7 and is summarized in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "12887afe-626c-4b19-a2c5-ca491a2e8a9a",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C46",
+      "claim": "The measurements and other studies are consistent with sampling of additional alternative structures in the apoB state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements and other studies are consistent with sampling of additional alternative structures in the apoB state (dashed blue lines), a partially formed P5 in apoA, and additional stabilization of the aptamer through coupled tertiary contacts upon adenine binding (dashed black lines in apoA, solid yellow lines in holo).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the LM2R experimental data presented in Figure 7G-I and is summarized in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "b67072e6-f113-404d-959c-de1bd021510c",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C47",
+      "claim": "Newer single molecule FRET measurements detect transient formation of the L2/L3 tertiary contact prior to adenine binding and stabilization upon adenine binding to holo.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixth, newer single molecule FRET measurements detect transient formation of the L2/L3 tertiary contact prior to adenine binding (dashed lines in apoA of Figure 6) and stabilization upon adenine binding to holo (Warhaut et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to the single molecule FRET study (Warhaut et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "5f45e491-1178-41d4-862f-97da4bcc4e88",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C48",
+      "claim": "The single molecule FRET data are consistent with an MWC framework in which formation of the aptameric secondary structure occurs in concert with opening of the gene expression platform, even without adenine ligand present.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with, and indeed were interpreted within, an MWC framework in which formation of the aptameric secondary structure occurs in concert with opening of the gene expression platform, even without adenine ligand present (Warhaut et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the single molecule FRET study (Warhaut et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "af2dc33a-a230-463f-9787-ed94727ab305",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C49",
+      "claim": "There is now concordance across numerous measurements for an MWC model that posits strong secondary structure similarities between an apoA state that transiently forms the aptamer secondary structure without adenine ligand and the ligand-bound holo state.",
+      "claim_type": "EXPLICIT",
+      "source": "There is now concordance across numerous measurements for an MWC model that posits strong secondary structure similarities between an apoA state that transiently forms the aptamer secondary structure without adenine ligand and the ligand-bound holo state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LM2R experimental data presented in the manuscript and by comparison to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "48c89071-502a-400d-8d80-33a6d7b29122",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C50",
+      "claim": "Further heterogeneity is likely to be present in members of the apo ensemble that do not present the aptamer secondary structure, grouped into apoB.",
+      "claim_type": "EXPLICIT",
+      "source": "We also propose herein that further heterogeneity is likely to be present in members of the apo ensemble that do not present the aptamer secondary structure, grouped into apoB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the LM2R experimental data showing no correlation between helices expected to co-occur in apoB (Figure 7G-I).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "e183007e-13b7-46d9-9475-05c2a12af0a8",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C51",
+      "claim": "The presence of myriad alternative helices, each at low population, would explain their detection difficulty with bulk equilibrium techniques but their appearance in single-molecule measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of these myriad alternative helices, each at low population, would explain their detection difficulty with this and prior bulk equilibrium techniques but their appearance in single-molecule measurements (Neupane et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the LM2R experimental data and is supported by citation to single-molecule measurements (Neupane et al., 2011).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "59aa93e4-a5c2-4956-bdfd-cf48bf79e706",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C52",
+      "claim": "Higher-order M2 analysis in single mutant backgrounds isolate and confirm numerous alternative secondary structures for the add riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this picture, higher-order M2 analysis in single mutant backgrounds isolate and confirm numerous alternative secondary structures for the add riboswitch (Figure 8\u2014figure supplement 2 and Figure 8\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental M2 data presented in Figure 8\u2014figure supplement 2 and Figure 8\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "b8ac4361-353c-4a8c-a72c-15b638fdf00f",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C53",
+      "claim": "There are no functional reasons for the apoB ensemble to maintain a single secondary structure \u2013 it simply has to disallow adenine binding while keeping the gene expression platform closed in P4.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that there are no functional reasons for the apoB ensemble to maintain a single secondary structure \u2013 it simply has to disallow adenine binding while keeping the gene expression platform closed in P4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the functional requirements of the apoB state.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "42a1991b-26e8-4179-b1ba-a8558325e631",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C54",
+      "claim": "Without selection for a pure single structure, apoB has remained structurally heterogeneous, and the exact populations of its helix pairings outside the P4 domain may shift in different solution conditions and flanking sequences while still being compatible with riboswitch function.",
+      "claim_type": "EXPLICIT",
+      "source": "Without selection for a pure single structure, we therefore suggest that apoB has remained structurally heterogeneous, and the exact populations of its helix pairings outside the P4 domain may shift in different solution conditions and flanking sequences while still being compatible with riboswitch function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the LM2R experimental data showing no correlation between helices expected to co-occur in apoB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "0e908763-4aa3-49f2-8eed-c3a869794054",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C55",
+      "claim": "'Non-functional' states of other riboswitches and RNA gene regulatory modules may have highly heterogeneous structures, which might explain why those states have been refractory to conventional structural biology approaches developed primarily to dissect protein structure/function.",
+      "claim_type": "EXPLICIT",
+      "source": "We further speculate that 'non-functional' states of other riboswitches and RNA gene regulatory modules may have highly heterogeneous structures and, indeed, this feature might explain why those states have been refractory to conventional structural biology approaches developed primarily to dissect protein structure/function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative and is based on inference from the LM2R experimental data on the add riboswitch.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "867faccd-9753-417b-9d7c-dc60d4b256fc",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C56",
+      "claim": "Antibiotics targeting any specific apo structure of the add and other riboswitches are unlikely to succeed, as single mutations that disrupt the targeted apo structure while retaining other members of the apo ensemble with the P4 domain could evolve quickly and offer resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This picture also implies that antibiotics targeting any specific apo structure of the add and other riboswitches are unlikely to succeed, as single mutations that disrupt the targeted apo structure while retaining other members of the apo ensemble with the P4 domain could evolve quickly and offer resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative and is based on inference from the LM2R experimental data showing structural heterogeneity in the apo ensemble.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "449eec72-e3c5-4af5-8c2c-62f80ed54b14",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C57",
+      "claim": "Double-stranded DNA templates were prepared by PCR assembly of DNA oligomers with maximum length of 60 nt ordered from IDT.",
+      "claim_type": "EXPLICIT",
+      "source": "Double-stranded DNA templates were prepared by PCR assembly of DNA oligomers with maximum length of 60 nt ordered from IDT (Integrated DNA Technologies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "57440dae-60ce-48b1-af4c-419418e46a14",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C58",
+      "claim": "The 128-nt construct was used for all measurements in this manuscript.",
+      "claim_type": "EXPLICIT",
+      "source": "The 128-nt construct was therefore used for all measurements in this manuscript.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental methods used in the study and is supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "1f0a4268-c2f5-407e-bbd7-297dd2a17ccc",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C59",
+      "claim": "Measurements were acquired in 10 mM MgCl2, 50 mM Na-HEPES, pH 8.0, in the absence or presence of ligand (5 mM adenine).",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements were acquired in 10 mM MgCl2, 50 mM Na-HEPES, pH 8.0, in the absence or presence of ligand (5 mM adenine).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "cf39fe00-177b-4316-819f-28df149730cd",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C60",
+      "claim": "All chemical mapping datasets have been deposited at the RNA Mapping Database (http://rmdb.stanford.edu) under specified accession codes.",
+      "claim_type": "EXPLICIT",
+      "source": "All chemical mapping datasets, including M2, M2R, LM2R and multi-probe mapping, have been deposited at the RNA Mapping Database (http://rmdb.stanford.edu) (Cordero et al., 2012a) under the following accession codes: ADD140_1M7_0001, ADD140_1M7_0002, ADD140_1M7_0003, ADD140_1M7_0004, ADD140_1M7_0005, ADD140_1M7_0006, ADD140_1M7_0007,ADD140_1M7_0008, ADD140_1M7_0009, ADD140_1M7_0010, ADD140_1M7_0011, ADD140_1M7_0012, ADD140_1M7_0013, ADD140_1M7_0014, ADD140_RSQ_0001, ADD140_RSQ_0002, ADD140_RSQ_0003, ADD140_RSQ_0004, ADD140_LCK_0001, ADD140_LCK_0002, ADD140_LCK_0003, ADD140_LCK_0004, ADD140_LCK_0005, ADD140_LCK_0006, ADD71_STD_0001, ADD128_STD_0001, ADD140_STD_0001, ADD140_DCP_0001, ADD140_DCP_0002, RNAPZ5_RSQ_0001, TRP4P6_RSQ_0001, 16SFWJ_RSQ_0001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data availability for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "c741844f-e007-450f-9bf6-ebc94e0db61b",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C61",
+      "claim": "All RNA families with length between 100 and 250 nt were screened from the Rfam database 11.0 FASTA file.",
+      "claim_type": "EXPLICIT",
+      "source": "All RNA families with length between 100 and 250 nt were screened from the Rfam database (http://rfam.xfam.org/) 11.0 FASTA file (Burge et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the simulation methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "99498708-4907-4f9b-9e91-7fc071546d7b",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "claim_id": "C62",
+      "claim": "The MATLAB source code for Rfam simulation and rescue factor estimates are available in a GitHub repository: https://github.com/DasLab/m2r_simulations/.",
+      "claim_type": "EXPLICIT",
+      "source": "The MATLAB source code for Rfam simulation and rescue factor estimates are available in a GitHub repository: https://github.com/DasLab/m2r_simulations/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the code availability for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6707397e-e163-4dad-8dae-457977cac855",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The add riboswitch from V. vulnificus is a ~120 nucleotide element that binds adenine and controls translation. Prior work has assumed a Monod-Wyman-Changeux (MWC) model where the holo RNA secondary structure exists transiently in the apo ensemble, with the gene expression platform opening when the aptamer forms, even without adenine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 describe established background knowledge about the add riboswitch and the MWC model framework. These claims are well-supported by extensive citations to prior literature and represent the consensus understanding of the system prior to this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "41297920-510f-4ab6-9fd0-870d4491fef4",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A recent NMR study proposed a non-MWC model for the add riboswitch, suggesting that riboswitches sampling the aptamer secondary structure do not concomitantly open their ribosome binding sites in the absence of adenine. However, the same group later revived the MWC framework to interpret newer single molecule measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 accurately describe prior work from the literature (Reining et al., 2013; Warhaut et al., 2017), establishing the controversy that motivated this study. The citations support the existence of conflicting models in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lock-mutate-map-rescue (LM2R) is a four-dimensional expansion of chemical mapping that integrates mutation with nucleotide-resolution chemical mapping. The method builds on mutate-map-rescue (M2R), where compensatory mutations that restore SHAPE profiles indicate base pairing. Partial rescue is a hallmark of base pairs present at low frequency, and simulations show that averaging rescue factors over multiple base pairs correlates with helix frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C15-C20 describe the methodological development and validation of the LM2R approach. The simulation data in Figure 2C and prior work on M2R (Tian et al., 2014) support the relationship between rescue factors and helix frequencies. The method is well-validated through in silico tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "97dc7a47-c32d-489b-8a84-c2c1ad9fa466",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "M2R experiments on wild-type add riboswitch reveal diverse helices in the absence of adenine (P1: 53%, P2: 31%, P3: 73%, P5: 75%, P4A: 48%, P4B: 55%, P4C: 68%, P1B: 44%, P2B: 17%). In the presence of 5 mM adenine, helices P1, P2, P3, and P5 show increased frequencies (79%, 64%, 56%, 29%), while helices P1B, P2B, P4A, P4B, and P4C show no evidence of presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 present baseline M2R measurements on the wild-type riboswitch. The data in Figures 3 and 4 show SHAPE profile quartets and posterior distributions over helix frequencies that support these quantitative estimates. The measurements agree with expectations from prior models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "88dbff17-4f57-48d3-8f0f-14cac9c46b18",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LM2R experiments show that locking P4B strongly reduces P1 helix frequency from 53% to 5%, and locking P1 reduces P4B frequency from 55% to 4%. The posterior support for non-MWC models is 3.1 \u00d7 10\u207b\u00b3 for lock-P4B and 0.039 for lock-P1 experiments. Combined, the posterior support for the non-MWC model is 4 \u00d7 10\u207b\u2075.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C28, C29, C31 present the key LM2R results discriminating between MWC and non-MWC models. The data in Figure 6 show clear loss of rescue in locked backgrounds, and the Bayesian analysis in Figure 7A-C provides strong statistical support for anticorrelation between P1 and P4B helices, favoring the MWC model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "eb00ae74-8cb9-45e3-8c41-17a2b0bbf257",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LM2R experiments testing P2-P4B and P2-P4A correlations give posterior support values of 1.5 \u00d7 10\u207b\u00b3 and 4.1 \u00d7 10\u207b\u00b3 for the non-MWC model, respectively, strongly disfavoring the non-MWC model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 present independent tests of the MWC vs. non-MWC models using different helix pairs. The data in Figure 7D-E and Figure 6\u2014figure supplement 1 support these conclusions, providing additional evidence beyond the P1-P4B experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "c401bd60-4372-4cf1-b0d4-9bdacce5c612",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LM2R experiments show no evidence of correlation for pairs of helices expected to co-occur in the apoB state (P1B-P4A, P1B-P4B, P4A-P4B). The data suggest that helices P4A, P1B, P4B each appear with significant frequency but do not necessarily co-occur, indicating a heterogeneous structural ensemble. A single secondary structure such as apoB may not appropriately describe the ensemble.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C40-C42 describe additional structural heterogeneity in the apo ensemble beyond the MWC model. The data in Figure 7G-I show correlation values centered around 1, and Figure 5 shows differences in SHAPE profiles for different lock mutants, supporting the conclusion of heterogeneity in the apoB state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "54367a2a-8a9e-4f39-8136-522f836df86a",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The proposed model favors a Monod-Wyman-Changeux model of allostery for the add riboswitch. Sampling of the aptamer secondary structure is strongly anticorrelated with formation of the P4 domain, validating representation as a separate apoA state that is structurally similar to the ligand-bound holo state, including both the aptamer region and the gene expression platform. Additional structural heterogeneities are present in the apoB state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 synthesize the main conclusions from the LM2R experiments. The strong anticorrelations measured for P1-P4B, P2-P4B, and P2-P4A (Figure 7A-E) support the MWC model, while the lack of correlation among apoB helices (Figure 7G-I) supports additional heterogeneity. The model in Figure 8 integrates these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "4ca7c879-7147-40a0-ad48-7094bef11663",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Newer single molecule FRET measurements detect transient formation of the L2/L3 tertiary contact prior to adenine binding and are consistent with an MWC framework. There is now concordance across numerous measurements for an MWC model that posits strong secondary structure similarities between the apoA state and the ligand-bound holo state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 integrate the current LM2R results with prior single molecule FRET data (Warhaut et al., 2017). The citation supports the FRET observations, and the LM2R data provide independent evidence for the MWC model, establishing concordance across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "e958218b-8ddd-4b1d-b284-c3417447c0dc",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Further heterogeneity is likely present in the apoB ensemble. The presence of myriad alternative helices at low population would explain their detection difficulty with bulk techniques but appearance in single-molecule measurements. There are no functional reasons for apoB to maintain a single secondary structure, and the exact populations of helix pairings may shift in different conditions while remaining compatible with riboswitch function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 propose additional structural heterogeneity in the apoB state based on the LM2R data (Figure 7G-I) and higher-order M2 analysis (Figure 8\u2014figure supplement 2-3). The inference is reasonable given the lack of correlation among apoB helices and the functional requirement only to keep the gene expression platform closed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "d66e28ba-04f5-49d1-8ff3-ffa36f3e9dce",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Non-functional states of other riboswitches may have highly heterogeneous structures, which might explain their refractoriness to conventional structural biology approaches. Antibiotics targeting specific apo structures are unlikely to succeed, as mutations could disrupt the targeted structure while retaining other ensemble members with the P4 domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C56 are speculative extrapolations from the add riboswitch data to other systems and to antibiotic development. While the speculation is reasonable given the observed heterogeneity, these claims lack direct experimental support and represent hypotheses for future testing rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "c7cf6d57-4157-47c1-bccf-76ef7b634991",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LM2R measurements give strong support to the pre-existing correlations predicted by MWC models for the add riboswitch, disfavor non-MWC alternative models, and suggest additional structural heterogeneities that may be general across ligand-free riboswitches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 summarize the main findings of the study. The LM2R data in Figures 6-7 provide strong statistical support for MWC-predicted anticorrelations (posterior support for non-MWC < 0.005 for multiple helix pairs) and reveal heterogeneity in the apoB state. These conclusions are well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    },
+    {
+      "id": "4950dab3-b2ba-463b-ab6b-3dfb99fc4cd3",
+      "content_id": "3195e059-3bcf-4c2c-bfa5-b86d7bddcb4f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study used a 128-nt construct for all measurements, with experiments performed in 10 mM MgCl2, 50 mM Na-HEPES, pH 8.0, with or without 5 mM adenine. DNA templates were prepared by PCR assembly, and all chemical mapping datasets have been deposited at the RNA Mapping Database. Simulations used RNA families from the Rfam database, and code is available on GitHub.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 describe the experimental methods, data availability, and computational resources. These methodological details are clearly stated in the Materials and Methods section and are appropriate for reproducibility. The data and code availability statements meet standards for open science.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:23:43.413936Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "70c77df1-abf1-4358-a2f6-786c2747db90",
+      "result_id": "6707397e-e163-4dad-8dae-457977cac855"
+    },
+    {
+      "claim_id": "bccb6222-7bd4-454d-bd81-5bb4d7223b00",
+      "result_id": "6707397e-e163-4dad-8dae-457977cac855"
+    },
+    {
+      "claim_id": "143b1173-1ff8-4cf5-8ea9-d44361bc45b4",
+      "result_id": "6707397e-e163-4dad-8dae-457977cac855"
+    },
+    {
+      "claim_id": "8fdff8b2-c9f6-4779-9210-43611c72e4ca",
+      "result_id": "6707397e-e163-4dad-8dae-457977cac855"
+    },
+    {
+      "claim_id": "273567f1-73e9-4319-872e-54083eb2d51f",
+      "result_id": "6707397e-e163-4dad-8dae-457977cac855"
+    },
+    {
+      "claim_id": "1d5f7645-68fa-4b91-bfc8-99e6509c3dce",
+      "result_id": "6707397e-e163-4dad-8dae-457977cac855"
+    },
+    {
+      "claim_id": "483f9458-0dd2-4558-a727-109769611f7b",
+      "result_id": "6707397e-e163-4dad-8dae-457977cac855"
+    },
+    {
+      "claim_id": "2e05ab77-651e-4a7a-af29-f017dec92dde",
+      "result_id": "41297920-510f-4ab6-9fd0-870d4491fef4"
+    },
+    {
+      "claim_id": "29115877-07c9-4200-b6ea-a6c7ab53653c",
+      "result_id": "41297920-510f-4ab6-9fd0-870d4491fef4"
+    },
+    {
+      "claim_id": "69c2cb92-8902-4ade-babd-dde7886fb7ea",
+      "result_id": "41297920-510f-4ab6-9fd0-870d4491fef4"
+    },
+    {
+      "claim_id": "e09c1f1b-a975-4589-85da-66a62ff665e0",
+      "result_id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07"
+    },
+    {
+      "claim_id": "83f8cea2-6a74-4415-8267-848a2e82dc94",
+      "result_id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07"
+    },
+    {
+      "claim_id": "bc2796b3-0ef6-4aa9-8599-a5e354c71c4c",
+      "result_id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07"
+    },
+    {
+      "claim_id": "742a0a83-c575-4506-837e-2771dd658dac",
+      "result_id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07"
+    },
+    {
+      "claim_id": "dea78919-16e7-4182-84d2-0026df2373df",
+      "result_id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07"
+    },
+    {
+      "claim_id": "e44566f1-88a9-44f7-ad4d-a7b889ed5c42",
+      "result_id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07"
+    },
+    {
+      "claim_id": "dcbc5016-9e3a-4f72-aa42-b9c6d5cbb608",
+      "result_id": "5bd0471e-7451-4271-ac74-4d8d0daf1b07"
+    },
+    {
+      "claim_id": "c42d98d7-d0dd-4917-906b-eb7adea1a9ab",
+      "result_id": "97dc7a47-c32d-489b-8a84-c2c1ad9fa466"
+    },
+    {
+      "claim_id": "b18576d2-3758-4e0c-b58c-cba24a6b7a50",
+      "result_id": "97dc7a47-c32d-489b-8a84-c2c1ad9fa466"
+    },
+    {
+      "claim_id": "a7a9b755-b5cb-4cf4-b2e6-0fd1aa82f876",
+      "result_id": "97dc7a47-c32d-489b-8a84-c2c1ad9fa466"
+    },
+    {
+      "claim_id": "9ca236dc-73a2-45fe-9933-c6098e8d58fb",
+      "result_id": "97dc7a47-c32d-489b-8a84-c2c1ad9fa466"
+    },
+    {
+      "claim_id": "e48260e0-a3bc-4854-8632-c90ad0fe48d8",
+      "result_id": "97dc7a47-c32d-489b-8a84-c2c1ad9fa466"
+    },
+    {
+      "claim_id": "d47129ad-9eb1-46a4-bd79-6573bbfc2392",
+      "result_id": "88dbff17-4f57-48d3-8f0f-14cac9c46b18"
+    },
+    {
+      "claim_id": "b7aa707d-7904-4e53-a94a-44a15dff61c3",
+      "result_id": "88dbff17-4f57-48d3-8f0f-14cac9c46b18"
+    },
+    {
+      "claim_id": "b0b13179-97b0-40cc-8418-10218509bf42",
+      "result_id": "88dbff17-4f57-48d3-8f0f-14cac9c46b18"
+    },
+    {
+      "claim_id": "11535309-4059-4f51-95bf-325dfcac024a",
+      "result_id": "88dbff17-4f57-48d3-8f0f-14cac9c46b18"
+    },
+    {
+      "claim_id": "446b918e-725f-4eca-a060-073c5b81fb76",
+      "result_id": "eb00ae74-8cb9-45e3-8c41-17a2b0bbf257"
+    },
+    {
+      "claim_id": "51f6e8db-1ba1-4665-97e8-49dbd6331042",
+      "result_id": "eb00ae74-8cb9-45e3-8c41-17a2b0bbf257"
+    },
+    {
+      "claim_id": "b46e1a47-4e26-4a40-8056-b1217e0d2209",
+      "result_id": "c401bd60-4372-4cf1-b0d4-9bdacce5c612"
+    },
+    {
+      "claim_id": "82956426-9c37-4513-b5fc-3dd63fbc942b",
+      "result_id": "c401bd60-4372-4cf1-b0d4-9bdacce5c612"
+    },
+    {
+      "claim_id": "68b134bf-e0c7-4164-a3b6-bc8bcd97e459",
+      "result_id": "c401bd60-4372-4cf1-b0d4-9bdacce5c612"
+    },
+    {
+      "claim_id": "3548a269-7e70-4a55-8d22-5737aa1b4d41",
+      "result_id": "c401bd60-4372-4cf1-b0d4-9bdacce5c612"
+    },
+    {
+      "claim_id": "986bcb13-c068-42f4-83b2-e6d15297d2e3",
+      "result_id": "54367a2a-8a9e-4f39-8136-522f836df86a"
+    },
+    {
+      "claim_id": "ef6c61d6-022a-480f-9009-ded693ba0b4c",
+      "result_id": "54367a2a-8a9e-4f39-8136-522f836df86a"
+    },
+    {
+      "claim_id": "d105f123-d39c-4529-8638-0face03409c7",
+      "result_id": "54367a2a-8a9e-4f39-8136-522f836df86a"
+    },
+    {
+      "claim_id": "12887afe-626c-4b19-a2c5-ca491a2e8a9a",
+      "result_id": "54367a2a-8a9e-4f39-8136-522f836df86a"
+    },
+    {
+      "claim_id": "b67072e6-f113-404d-959c-de1bd021510c",
+      "result_id": "4ca7c879-7147-40a0-ad48-7094bef11663"
+    },
+    {
+      "claim_id": "5f45e491-1178-41d4-862f-97da4bcc4e88",
+      "result_id": "4ca7c879-7147-40a0-ad48-7094bef11663"
+    },
+    {
+      "claim_id": "af2dc33a-a230-463f-9787-ed94727ab305",
+      "result_id": "4ca7c879-7147-40a0-ad48-7094bef11663"
+    },
+    {
+      "claim_id": "48c89071-502a-400d-8d80-33a6d7b29122",
+      "result_id": "e958218b-8ddd-4b1d-b284-c3417447c0dc"
+    },
+    {
+      "claim_id": "e183007e-13b7-46d9-9475-05c2a12af0a8",
+      "result_id": "e958218b-8ddd-4b1d-b284-c3417447c0dc"
+    },
+    {
+      "claim_id": "59aa93e4-a5c2-4956-bdfd-cf48bf79e706",
+      "result_id": "e958218b-8ddd-4b1d-b284-c3417447c0dc"
+    },
+    {
+      "claim_id": "b8ac4361-353c-4a8c-a72c-15b638fdf00f",
+      "result_id": "e958218b-8ddd-4b1d-b284-c3417447c0dc"
+    },
+    {
+      "claim_id": "42a1991b-26e8-4179-b1ba-a8558325e631",
+      "result_id": "e958218b-8ddd-4b1d-b284-c3417447c0dc"
+    },
+    {
+      "claim_id": "0e908763-4aa3-49f2-8eed-c3a869794054",
+      "result_id": "d66e28ba-04f5-49d1-8ff3-ffa36f3e9dce"
+    },
+    {
+      "claim_id": "867faccd-9753-417b-9d7c-dc60d4b256fc",
+      "result_id": "d66e28ba-04f5-49d1-8ff3-ffa36f3e9dce"
+    },
+    {
+      "claim_id": "6f26026a-19fd-415a-9744-85a9a4c0ea32",
+      "result_id": "c7cf6d57-4157-47c1-bccf-76ef7b634991"
+    },
+    {
+      "claim_id": "45d59ab8-bbb4-4213-aade-22a900f02fb6",
+      "result_id": "c7cf6d57-4157-47c1-bccf-76ef7b634991"
+    },
+    {
+      "claim_id": "ab8c7fa1-5c13-416f-978e-f75449bfd824",
+      "result_id": "c7cf6d57-4157-47c1-bccf-76ef7b634991"
+    },
+    {
+      "claim_id": "449eec72-e3c5-4af5-8c2c-62f80ed54b14",
+      "result_id": "4950dab3-b2ba-463b-ab6b-3dfb99fc4cd3"
+    },
+    {
+      "claim_id": "57440dae-60ce-48b1-af4c-419418e46a14",
+      "result_id": "4950dab3-b2ba-463b-ab6b-3dfb99fc4cd3"
+    },
+    {
+      "claim_id": "1f0a4268-c2f5-407e-bbd7-297dd2a17ccc",
+      "result_id": "4950dab3-b2ba-463b-ab6b-3dfb99fc4cd3"
+    },
+    {
+      "claim_id": "cf39fe00-177b-4316-819f-28df149730cd",
+      "result_id": "4950dab3-b2ba-463b-ab6b-3dfb99fc4cd3"
+    },
+    {
+      "claim_id": "c741844f-e007-450f-9bf6-ebc94e0db61b",
+      "result_id": "4950dab3-b2ba-463b-ab6b-3dfb99fc4cd3"
+    },
+    {
+      "claim_id": "99498708-4907-4f9b-9e91-7fc071546d7b",
+      "result_id": "4950dab3-b2ba-463b-ab6b-3dfb99fc4cd3"
+    }
+  ],
+  "comparisons": []
+}

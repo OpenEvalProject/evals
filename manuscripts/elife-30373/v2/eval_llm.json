@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Rats successfully learned the sensory preconditioning task across three phases: preconditioning (neutral cue pairs A\u2192B, C\u2192D), conditioning (B paired with reward, D unrewarded), and probe test (A and C presented alone). Behavioral responding increased to rewarded cue B during conditioning and was higher to A than C in the probe test, demonstrating sensory preconditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 and C78-C93 provide comprehensive methodological details and behavioral results with appropriate statistical tests (ANOVA, t-tests) showing significant effects. The behavioral data in Figure 1 clearly demonstrates learning across all three phases with proper controls (cue D as unrewarded control). Sample size (n=21 rats) appears adequate for behavioral effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "During preconditioning with neutral cue pairs, 42% of OFC neurons showed increased firing and 15% showed decreased firing to at least one cue. Critically, neurons preferentially responded to both cues within a pair (A-B or C-D) rather than to cues from different pairs, with significantly higher correlations between paired cues (\u03c1=0.74-0.75) than unpaired cues (\u03c1=0.16-0.23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 demonstrate that OFC neurons encode neutral stimulus-stimulus associations before reward introduction. The statistical analyses (chi-squared tests, correlation with Fisher r-to-z transformation, p<10^-16) are appropriate and highly significant. Figure 2 provides clear visual evidence. The control analysis (C26, Figure 2 supplement) rules out temporal contiguity as the sole explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Neural representations of cue pairs strengthened across preconditioning days. On day 2, correlations between paired cues became more consistent across trials, forming a 'checkerboard pattern.' Linear discriminant classification showed increased within-pair misclassification from day 1 to day 2 (p=0.009), indicating that paired cues became represented more similarly over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 demonstrate learning dynamics using sophisticated analyses (trial-by-trial correlations, linear discriminant classification, permutation tests). The permutation tests provide rigorous statistical validation (p=0.009, p=0.0001). Control analyses accounting for baseline differences (C34-C35) confirm the effects. Figure 3 clearly illustrates the temporal evolution of representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "During conditioning, OFC neurons acquired value-related responses to the rewarded cue B. Neural activity to cue B increased significantly over 6 days, with twice as many neurons responding to B versus D by day 6 (17% vs 7%, p=0.03). The prevalence of B-responsive neurons increased significantly across conditioning (p=0.036), while D-responsive neurons did not change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 demonstrate value encoding in OFC during conditioning using appropriate statistical tests (chi-squared tests). The comparison between rewarded (B) and unrewarded (D) cues provides proper control. Figure 4 shows clear progression of neural responses. However, the analysis is complicated by reward delivery during cue B, making it difficult to fully separate cue from reward responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In the probe test, OFC neurons showed increased responses to both preconditioned cues A (37%) and C (35%), despite no reward presentation since preconditioning. Neurons responding strongly to A showed strong responses to rewarded cue B, while neurons responding to C showed only modest B responses primarily after reward delivery, indicating integration of preconditioning and conditioning associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 demonstrate that OFC integrates learned associations across training phases. Statistical tests (sign-tests) support increased responding to A and C. Figure 5 clearly shows differential patterns for A-preferring versus C-preferring neurons. The preserved relationship between A and B responses (C46-C47) is compelling evidence for associative integration, though the interpretation relies partly on inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Neural correlations and classification accuracy in the probe test differed between rats showing behavioral evidence of preconditioning versus those that did not. In good performers, correlations between paired cues were stronger than unpaired cues, and classification accuracy was significantly above chance during reward periods of cue B. Activity during A best correlated with rewarded portions of B, suggesting A directly signals B's reward association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 link neural activity to behavior using appropriate correlation analyses and classification methods. The comparison between good and poor performers (C50-C51, C52-C54) provides critical validation that neural patterns relate to behavioral performance. Statistical tests are appropriate (Fisher r-to-z, permutation tests). However, C56 involves substantial interpretation beyond the direct data, and the causal claim ('directly signaling') is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60",
+      "C77"
+    ],
+    "result": "The authors conclude that OFC builds associative representations for information lacking clear biological significance or value, substantially expanding the potential role of OFC beyond value encoding. This challenges value-centric theories of OFC function and supports models emphasizing representation of associative structure or cognitive maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C60, C77 represent the main conclusions drawn from the experimental findings. These are well-supported by the convergent evidence from preconditioning neural responses (C18-C35), their evolution across days, and their relationship to behavior. The logic is sound: if OFC only encoded value, no representations should exist during neutral preconditioning. The finding of robust, learning-dependent representations during preconditioning strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors review prior literature establishing that OFC is necessary for model-based inference and sensory preconditioning, and present two competing theoretical accounts: one emphasizing OFC's role in encoding biological significance/value, the other emphasizing representation of associative structure independent of value. These accounts make different predictions about whether OFC should represent neutral associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 accurately summarize prior work with appropriate citations and clearly articulate the theoretical motivation for the study. The logical predictions (C9-C10) follow appropriately from the two theoretical frameworks. This provides essential context for interpreting the experimental findings, though these are background claims rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors discuss their findings in relation to prior work on statistical learning in sensory cortices, successor representations in computational models, and evidence that preconditioned cues do not serve as conditioned reinforcers. They argue their results are most consistent with OFC encoding a fuller cognitive 'state' map rather than successor representations or cached value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 provide appropriate contextualization with relevant citations. The arguments against successor representation models (C64-C66) are logical given that A and C were not re-experienced between preconditioning and probe test, yet neural patterns changed. The citation to Sharpe et al. 2017b (C65-C66) provides independent evidence against cached value interpretation. The preference for 'state map' models (C67) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors acknowledge that OFC representations during preconditioning may reflect processing in other regions (hippocampus, retrosplenial cortex) and propose future experiments to test whether OFC activity during preconditioning is necessary for later inference by inactivating OFC during preconditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 appropriately acknowledge limitations and propose testable future experiments. The speculation is clearly marked as such and the proposed experiments (C75-C76) would directly test causal necessity. Citation to Wikenheiser et al. 2017 (C74) supports the anatomical basis for this possibility. This represents good scientific practice in acknowledging alternative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Neural activity in the probe test showed that preconditioned cues differed between pairs, with activity during cue A encoding cue B (particularly rewarded portions), and this coding was strongest in rats showing strong behavioral responding to A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 summarize key probe test findings already detailed in C41-C56. These are accurate summaries of the data with appropriate qualifications. However, they are redundant with earlier claims and represent summary statements rather than independent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Neural signals were recorded using multi-electrode arrays with differential recordings digitized at 40 kHz. Action potentials with >3:1 signal-to-noise ratio were isolated online using amplitude and template algorithms, with offline re-analysis using 3D cluster-cutting techniques to confirm discriminations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe standard electrophysiology methods with appropriate technical details. The signal-to-noise ratio criterion (>3:1) and offline verification procedures are appropriate quality control measures. These are methodological details necessary for reproducibility but not novel findings.",
+    "result_type": "MINOR"
+  }
+]

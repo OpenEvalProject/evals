@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Monkeys performed a sequential shape discrimination task where they viewed an unoccluded reference shape followed by a test shape (either unoccluded or partially occluded), and reported whether the shapes matched via saccadic eye movements. Behavioral performance was near 100% for unoccluded stimuli and declined gradually with increasing occlusion. Neurophysiological recordings were obtained from 381 vlPFC neurons and 85 V4 neurons in two monkeys performing this task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design, behavioral task, and recording methods are clearly described with appropriate detail (C1-C2, C67-C85). Behavioral performance data showing decline with occlusion is presented (C3-C4) and sample sizes are specified (C72). The methods include appropriate ethical approvals (C71) and sufficient trial repetitions (C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C62"
+    ],
+    "result": "vlPFC neurons respond more strongly to occluded than unoccluded stimuli, with 45% (98/216) of visually responsive neurons significantly modulated by occlusion level. Most occlusion-sensitive neurons (71/98) showed negative regression slopes between visible area and response magnitude. Shape selectivity in vlPFC was stronger for occluded stimuli at intermediate occlusion levels compared to unoccluded stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by single-neuron examples (C5-C8), population analyses with appropriate statistics (C9-C10, 2-way ANOVA p<0.05), and quantitative measures of shape selectivity (C11-C12). The finding that vlPFC prefers occluded stimuli is robustly demonstrated across multiple levels of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C63",
+      "C97"
+    ],
+    "result": "vlPFC responses to occluded stimuli differ fundamentally from visual cortex (V4 and IT), where responses are strongest for unoccluded objects and decline with occlusion. This indicates that vlPFC's strong responses to occluded stimuli cannot be directly inherited from visual cortex and that visual representations in vlPFC do not always mirror those in visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is supported by citations to prior V4 and IT studies (C15) and the current V4 data (C63). The inference that vlPFC responses cannot be inherited from visual cortex (C16, C97) is logically sound given the opposite response patterns. However, the claim relies partly on cited work rather than direct simultaneous comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C64"
+    ],
+    "result": "Many V4 neurons (30/85, 35%) exhibit two transient response peaks with different occlusion dependencies: the first peak (~84 ms median) is strongest for unoccluded stimuli and declines with occlusion, while the second peak (~214 ms median) is strongest at intermediate occlusion levels. The second peak emerges after vlPFC response onset (median 157 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-peak phenomenon is demonstrated with example neurons (C17-C20) and quantified using an ad hoc peak-finding algorithm with statistical validation (C21-C22, t-test p<0.05 Bonferroni corrected). The temporal relationship between V4 and vlPFC peaks is clearly established (C23-C24). The algorithm parameters are described in detail in supplementary methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "During the first peak (69-99 ms), V4 neurons with and without two peaks show similar responses that decline with increasing occlusion. However, during the second peak period (199-229 ms), neurons with two peaks show significantly greater response differences at intermediate occlusion levels compared to neurons without two peaks (t-test, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The population comparison is supported by appropriate statistical tests (C26, C28) and demonstrates that the two-peak phenomenon represents a distinct response pattern. The analysis appropriately controls for baseline differences by comparing response differences rather than absolute magnitudes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "For V4 neurons with two peaks, shape selectivity for occluded stimuli is significantly stronger during the second peak than the first peak (t-test, p<0.01) and reaches maximum around the time of the second peak (median 188 ms vs 214 ms, p>0.98). For unoccluded stimuli, maximal shape selectivity occurs significantly earlier than the second peak (median 131 ms vs 214 ms, p<0.01). This enhanced selectivity during the second peak occurs even for neurons with stronger first-peak responses, and is driven by differential enhancement of responses to preferred shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dynamics of shape selectivity are rigorously quantified using ROC analysis with appropriate statistical comparisons (C31-C33). The mechanistic insight about differential enhancement (C35) is supported by supplementary analysis. The finding that enhancement occurs even when the second peak is smaller (C34) strengthens the conclusion that this represents a qualitative change in selectivity rather than simple response amplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C65"
+    ],
+    "result": "A two-layer dynamical network model with two V4 units and two vlPFC units successfully replicates the key experimental findings. The model includes shape-selective V4 units providing feedforward input to vlPFC units, which receive occlusion-dependent gain modulation and send rectified feedback to V4. The model reproduces vlPFC's preference for occluded stimuli, V4's two transient peaks with different occlusion dependencies, and the temporal dynamics observed in neuronal recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model architecture and mechanisms are clearly specified (C36-C41, C43) with mathematical equations provided in the methods. The model successfully reproduces the key qualitative features of the data (C44-C48, C65). However, the model is relatively simple and parameter choices were selected to match the data rather than derived from first principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Control simulations demonstrate that four mechanisms are necessary for the model to reproduce the experimental observations: (1) feedback from vlPFC to V4, (2) synaptic adaptation on feedforward connections, (3) half-wave rectification of feedback signals, and (4) occlusion-dependent gain modulation to vlPFC. Removing any of these mechanisms results in model behavior inconsistent with the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Each mechanism's necessity is demonstrated through systematic ablation studies (C49-C52) with clear predictions that conflict with data when mechanisms are removed. The control simulations are well-designed and provide strong support for the model architecture. However, these are sufficiency demonstrations rather than proof that these specific mechanisms are implemented in the brain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C86",
+      "C87"
+    ],
+    "result": "Among 216 visually responsive vlPFC neurons, 42 showed significant main effects of match/nonmatch condition and 65 showed significant interactions between shape and match/nonmatch condition (2-way ANOVA, p<0.05). Additionally, 66 neurons showed significant shape selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analyses are appropriate (2-way ANOVA) and sample sizes are clearly reported (C13-C14, C86-C87). These findings demonstrate that vlPFC neurons carry task-relevant information beyond occlusion sensitivity, though the functional significance is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Anatomical evidence supports disynaptic feedback connections between V4 and vlPFC. Model simulations show that delays of up to ~50 ms in the arrival of gain modulation signals relative to shape-selective signals do not affect the model's ability to reproduce the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anatomical claim is supported by appropriate citation (C95). The delay tolerance analysis (C96) addresses a potential concern about the source of gain modulation signals and demonstrates model robustness. This supports the biological plausibility of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Control experiments verified that vlPFC preference for occluded stimuli was independent of occluding dot color, but responses were weaker when occluding dots matched the background color, suggesting reliance on explicit occlusion-related signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While these control experiments are mentioned (C99-C100), the data are not shown and no statistical analyses are provided. The claims are plausible and address important alternative explanations, but cannot be fully evaluated without the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study is motivated by limitations of feedforward models in recognizing occluded objects and anatomical/functional evidence for V4-vlPFC interactions. Feedforward models and convolutional neural networks fail at occluded object recognition, while models incorporating feedback show improved performance. vlPFC receives direct projections from V4 and IT and sends projections back, with evidence for functional interactions during perceptual discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations (C53-C61). The anatomical and functional connectivity evidence provides strong motivation for investigating vlPFC's role in processing occluded objects. However, these are primarily literature-based claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose that vlPFC responses arise from modulation of occlusion-dependent, shape-selective feedforward signals from V4 by another feedforward signal dependent only on occlusion level. IT neurons in one monkey showed responses consistent with encoding total occluder area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed mechanism (C101) is speculative and not directly tested. The IT observation (C102) is cited from another study and provides indirect support, but the source of occlusion-level signals to vlPFC remains unclear. Additional experiments would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The comparison of reference and test stimuli is unlikely to be implemented in vlPFC, as stronger vlPFC selectivity for occluded stimuli would predict opposite behavioral performance patterns. This challenges the notion that vlPFC directly mediates perceptual discriminations of form and color. Decision computations may be implemented elsewhere in PFC or in sensory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The logical inference (C103-C104) is sound: if vlPFC implemented the comparison, performance should be better for occluded stimuli, opposite to what is observed. The comparison to other studies (C105) and the speculative alternatives (C107-C108) are appropriately qualified. This represents careful reasoning about functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Two alternative interpretations are proposed for vlPFC's preference for occluded stimuli: (1) engagement in facilitating decisions under limited sensory evidence when visual cortex signals are weakened by occlusion, or (2) specific engagement in recognition of occluded objects through comparison with stored object prototypes and feedback to refine representations in V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Both interpretations (C109-C113 vs C114-C118) are plausible and consistent with the data, but neither is directly tested. The authors appropriately present these as speculative alternatives supported by citations to relevant literature. Distinguishing between these hypotheses would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study challenges the common practice of analyzing only early responses (<100 ms) by demonstrating that feedback and horizontal connections modulate responses based on context and goals. Similar to V4-to-V1 feedback enhancing figure representations, vlPFC-to-V4 feedback enhances representations of occluded shapes. Model simulations suggest this enhancement can be mediated by weakly tuned vlPFC neurons, while IT feedback may not be well-suited for this role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The argument for considering later response dynamics is well-supported by the data (C119-C122) and comparison to other studies (C123). The inference about vlPFC feedback (C124) is supported by the modeling results (C125). The argument against IT feedback (C126) is based on cited data showing IT has similar occlusion-dependence as V4, though this is indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The heterogeneity in timing and magnitude of V4 second peaks is explained by diverse direct and indirect pathways between V4 and vlPFC with different conduction times, possible sparse projections distributed via horizontal connections, and heterogeneous connection strengths. Model simulations demonstrate that even weak V4-vlPFC interactions could produce small second peaks that may be undetectable in variable responses, supporting the possibility that neurons with and without two peaks lie along a continuum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The explanations for heterogeneity (C127-C129) are plausible and consistent with known anatomy, though speculative. The modeling support (C130) demonstrates that the observed heterogeneity is consistent with the proposed mechanism. The continuum interpretation (C131) is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study has several acknowledged limitations: (1) V4 and vlPFC were recorded in separate sessions preventing trial-by-trial comparisons, (2) only two discriminanda were used per session limiting assessment of shape sensitivity, (3) monkeys were not required to respond quickly preventing inference about which response epoch mediates decisions, and (4) it is unknown whether vlPFC engagement requires explicit decision reports or would occur during natural viewing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge important limitations (C132-C136) that constrain interpretation of the findings. These are genuine limitations that would need to be addressed in future studies to strengthen causal claims about V4-vlPFC interactions and their functional role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C66"
+    ],
+    "result": "Recognizing partially occluded objects poses a major challenge because occlusion reduces available evidence and creates an ill-posed inverse problem with multiple compatible interpretations. Recognition must rely on information about the object, occlusion, scene context, and experience. The results support the hypothesis that feedback signals from vlPFC carrying occlusion information contribute to object representation in V4 and recognition under occlusion, though other brain regions like IT are likely also involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The framing of occlusion as a computational challenge (C137-C139) is well-established and appropriately cited. The main conclusion (C140, C66) is supported by the convergent evidence from neurophysiology and modeling, though the causal role of vlPFC feedback is inferred rather than directly demonstrated. The acknowledgment of other brain regions (C141) is appropriate.",
+    "result_type": "MAJOR"
+  }
+]

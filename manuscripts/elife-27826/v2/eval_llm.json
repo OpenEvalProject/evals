@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "ZDHHC16 is the palmitoyltransferase responsible for palmitoylating ZDHHC6, establishing the first documented palmitoylation cascade. This was demonstrated through siRNA screening showing 60% reduction in ZDHHC6 palmitoylation upon ZDHHC16 silencing, overexpression experiments, knockout cell line validation, and physical interaction between the two enzymes. ZDHHC6 does not autopalmitoylate, as shown by palmitoylation of catalytically inactive mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C16 provide converging experimental evidence from multiple orthogonal approaches (siRNA, overexpression, KO cells, co-IP) that ZDHHC16 palmitoylates ZDHHC6. The claim of being the 'first palmitoylation cascade' (C2) is a priority claim that depends on literature knowledge but is supported by the experimental demonstration of one DHHC enzyme modifying another.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C93"
+    ],
+    "result": "ZDHHC6 undergoes palmitoylation on three cysteine residues (Cys-328, Cys-329, Cys-343) in its SH3_2 domain. These sites were identified in prior proteomics studies and confirmed experimentally by Acyl-RAC capture and 3H-palmitate incorporation. The cysteines are conserved in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, C93 are well-supported by both cited proteomics data and the authors' own experimental validation using Acyl-RAC and metabolic labeling. The mutagenesis experiments (Figure 1D-E) confirm all three sites can be palmitoylated. Conservation analysis adds evolutionary support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "APT2, but not APT1, mediates depalmitoylation of ZDHHC6. Palmitate turnover on ZDHHC6 is rapid (t1/2 ~1 hour) and requires Cys-328, as mutants lacking this residue show much slower depalmitoylation (>4 hours). APT2 overexpression significantly decreases ZDHHC6 palmitoylation while APT1 overexpression has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C19-C22 are supported by pulse-chase experiments and overexpression studies showing specific effects of APT2 but not APT1. The site-specific requirement for Cys-328 in rapid turnover is demonstrated by mutagenesis. The experiments are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Palmitoylation of Cys-328 accelerates ZDHHC6 turnover and renders it susceptible to ERAD-mediated degradation. ZDHHC16 overexpression or APT2 silencing accelerates degradation (t1/2 ~2-3 hours vs ~16 hours for control), but this effect is abolished in C328A mutants. LYPLA2 silencing leads to ZDHHC6 ubiquitination, and degradation can be rescued by proteasome inhibitor MG132.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C26-C28 are well-supported by metabolic pulse-chase experiments, ubiquitination assays, and proteasome inhibitor rescue experiments. The site-specific requirement for Cys-328 is clearly demonstrated. The ERAD pathway involvement is supported by ubiquitination and MG132 rescue data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Palmitoylation affects ZDHHC6 localization, self-association, and higher-order complex formation. Wild-type ZDHHC6 localizes to the ER and can self-associate, while the non-palmitoylatable AAA mutant accumulates more frequently in dot-like ER structures, does not associate with wild-type ZDHHC6, and forms different higher-order complexes as shown by blue native PAGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 are supported by immunofluorescence colocalization, quantification of cellular localization patterns, co-immunoprecipitation experiments, and blue native gel analysis. The differential behavior of wild-type versus AAA mutant is consistently demonstrated across multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ZDHHC6 palmitoylates calnexin, gp78, IP3 receptor, and transferrin receptor, with calnexin and transferrin receptor being exclusively modified by ZDHHC6. Palmitoylation of Cys-328 confers the highest activity to ZDHHC6. ZDHHC16 modulates ZDHHC6 activity, as shown by reduced calnexin palmitoylation in ZDHHC16 KO cells and enhanced palmitoylation upon ZDHHC16 overexpression. The non-palmitoylatable AAA mutant has no detectable activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C37-C41 are supported by Acyl-RAC assays in KO cells, 3H-palmitate incorporation experiments, and systematic mutagenesis showing site-specific effects on activity. The exclusive dependence of calnexin and transferrin receptor on ZDHHC6 is demonstrated by complete loss of palmitoylation in KO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C42",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C101",
+      "C102"
+    ],
+    "result": "Mathematical modeling combined with experimental data reveals that ZDHHC6 can exist in eight differentially palmitoylated species (C000 to C111) that vary in turnover rate and activity. The model, calibrated using 152 parameter sets from genetic algorithm optimization, predicts that in HeLa cells ~70% of ZDHHC6 is non-palmitoylated at steady state, molecules spend most time in the C000 state, and undergo multiple rounds of palmitoylation-depalmitoylation primarily on Cys-328 (C000\u2194C100 flux).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C42, C47-C51, C101-C102 are supported by integration of mathematical modeling with extensive experimental validation. The model successfully predicts experimental outcomes not used in calibration (validation set). The PEGylation assay (C48, Figure 5G) confirms the prediction that most ZDHHC6 is non-palmitoylated in HeLa cells. The modeling approach is rigorous with appropriate parameter estimation and validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The presence of three palmitoylation sites renders ZDHHC6 protein levels robust to changes in ZDHHC16 activity. Upon ZDHHC16 overexpression, wild-type ZDHHC6 shifts to predominantly C011 species (60% of population) with only 15% drop in total protein, while the CAA mutant (lacking two sites) drops to 32% of control levels (60% reduction experimentally confirmed). C011 becomes the system hub with the slowest turnover rate, explaining protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 are supported by both modeling predictions and experimental validation. The differential stability of wild-type versus CAA mutant upon ZDHHC16 overexpression is confirmed by Western blot (C61-C62). The model predictions about species distribution and dynamics are internally consistent and explain the experimental observations. This demonstrates the functional importance of having multiple palmitoylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ZDHHC16 overexpression enhances wild-type ZDHHC6 activity toward calnexin but reduces CAA mutant activity to background levels. ZDHHC6 is mainly non-palmitoylated in HeLa cells under standard culture conditions but is more extensively palmitoylated in mouse tissues, suggesting higher physiological activity in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by 3H-palmitate incorporation assays and PEGylation experiments. The differential response of wild-type versus CAA mutant to ZDHHC16 overexpression demonstrates the importance of multiple sites for activity regulation. The tissue data (C66) provides physiological context, though it is descriptive rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C94"
+    ],
+    "result": "ZDHHC6 and ZDHHC16 interact genetically and physically. ZDHHC6 silencing or knockout leads to increased ZDHHC16 mRNA levels. ZDHHC16 itself is not palmitoylated in HeLa cells and localizes to ER and Golgi under overexpression conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C94 are supported by RT-PCR data showing compensatory upregulation and by negative results from 3H-palmitate incorporation and Acyl-RAC assays. The localization data is descriptive. These findings support the regulatory relationship between the two enzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Prior work has shown that some DHHC enzymes require cofactors (ZDHHC9/GCP16, ZDHHC6/Selenoprotein K), that ZDHHC16 has important developmental and cellular functions, and that APT2 undergoes palmitoylation and is involved in tumor suppression. The current study shows ZDHHC6 requires palmitoylation for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 are primarily literature citations (C68-C69, C71-C77) that provide context. C70 is supported by the authors' data showing AAA mutant has no activity. These claims appropriately frame the current work within existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ZDHHC6 is a potent enzyme that cells tightly regulate. DHHC enzymes are present at <1000 copies/cell while substrates like calnexin are at 500,000-1,000,000 copies/cell. ZDHHC6 can adopt three functional states: stable/inactive (C000), highly active/short-lived (C100), and moderately active/long-lived (C010/C011). Palmitoylation has site-specific effects beyond simply increasing hydrophobicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 integrate proteomics data from literature (C78-C79) with the authors' findings to draw mechanistic conclusions. The three-state model (C82) is well-supported by the combined experimental and modeling data. The inference about tight regulation (C80-C81, C83) is reasonable given the low enzyme abundance yet efficient substrate modification. The conclusion about site-specific effects (C84) is supported by differential effects of mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background information on palmitoylation and ZDHHC6 structure: S-palmitoylation is the only reversible post-translational lipid modification, catalyzed by 23 human DHHC palmitoyltransferases. ZDHHC6 is a tetra-spanning membrane protein with a short N-terminal extension and long C-terminal tail containing an SH3_2 domain and KKNR motif that likely contributes to ER localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 represent established knowledge (C85-C90) supported by citations and structural characterization (C91-C92) based on sequence analysis. The inference about the KKNR motif (C92) is reasonable based on cited work showing this motif can relocalize ZDHHC3 to the ER.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The HAP1 ZDHHC6 KO clone contains a 5 bp deletion in exon 2 and the ZDHHC16 KO clone contains a 2 bp insertion in exon 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are methodological details describing the genetic modifications in the knockout cell lines used. These are straightforward characterizations of the experimental tools.",
+    "result_type": "MINOR"
+  }
+]

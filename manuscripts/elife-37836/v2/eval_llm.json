@@ -1,0 +1,186 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C31",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C107",
+      "C108",
+      "C109",
+      "C129",
+      "C130"
+    ],
+    "result": "The model demonstrates that competition for synaptic building blocks (receptors) naturally produces fast multiplicative scaling of synaptic efficacies. Under basal conditions, synapses maintain identical filling fractions, and changes in transition rates or pool size scale all synaptic efficacies multiplicatively while preserving their relative strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical analysis (C58-C62) rigorously derives multiplicative scaling from the model's differential equations, showing that relative synaptic strengths remain constant when parameters change. The model's predictions (C60-C62) follow logically from the steady-state solutions (Equations 7-9), and simulations (Figures 2, 4) confirm the theoretical predictions. This provides strong support for biologically plausible multiplicative normalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The model explains transient heterosynaptic plasticity where synapses compete for limited receptors. The amount of heterosynaptic plasticity is inversely related to both the filling fraction and the size of the local receptor pool, and these effects are inherently transient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model simulations (Figures 5, 6) clearly demonstrate heterosynaptic effects with quantitative predictions about their dependence on pool size and filling fraction (C73-C76). The transient nature (C77, C81) follows from the separation of timescales in the model. The mathematical framework provides mechanistic explanations for experimental observations (C79), though the connection to experiments remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The model incorporates a realistic time course of homosynaptic LTP based on CaMKII activation and slot insertion dynamics. Pool size and filling fraction modulate both the peak magnitude and time course of homosynaptic LTP and accompanying heterosynaptic LTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model's LTP implementation (Figure 6) is grounded in experimental data on CaMKII activation kinetics (C86-C88) and produces quantitative predictions about how pool parameters affect plasticity expression (C89-C92). The simulations show clear dependencies on filling fraction and pool size (Figure 6E,F), though the model makes simplifying assumptions about the complex biological processes underlying LTP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C114"
+    ],
+    "result": "Stochastic simulations reveal that small synapses exhibit substantially larger spontaneous efficacy fluctuations (CVs up to 100%) than large synapses, with fluctuations following approximately a power law with exponent -1/2. Larger receptor pools attenuate these fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stochastic model (Figure 8) demonstrates clear size-dependent fluctuations with quantitative characterization via coefficient of variation analysis (C96-C97). The power law scaling (Tables 3-4) is well-supported by simulation data across multiple parameter regimes. The prediction that pool size modulates fluctuations (C99-C100) is directly demonstrated, providing testable predictions about synaptic variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The filling fraction reacts most sensitively to changes in binding/unbinding rates when the total number of receptors matches the total number of receptor slots (R=S).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This prediction follows from rigorous mathematical analysis (Equations 25-26 in Methods) showing that the derivative of F* with respect to \u03c1 diverges at \u03c1=0 when R=S. Figure 3 visually confirms this extreme sensitivity. The mathematical derivation is sound and the prediction is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54"
+    ],
+    "result": "The model's 'receptors' represent AMPAR-TARP complexes and 'slots' represent PSD-95 scaffolding proteins. The assumption of separated timescales between fast receptor trafficking (seconds) and slow receptor production/removal (minutes) is justified by experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological interpretation is well-grounded in cited experimental literature (C46-C48) showing PSD-95 density and immobility. The timescale separation (C54) is justified by comparing receptor dwell times (~30s) to surface half-life (~14 min) from published data. This provides a solid biological foundation for the model's abstractions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C118",
+      "C119"
+    ],
+    "result": "The model's predictions about spontaneous fluctuations and local heterosynaptic plasticity are consistent with recent experimental observations of spine size fluctuations and locally-induced heterosynaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model findings are appropriately connected to experimental literature (C103, C118) through citations. The explanation of local action (C119) follows logically from restricting competition to local dendritic pools. However, these are primarily post-hoc explanations of existing data rather than novel predictions, limiting their impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose experimental approaches to test the model's predictions, including dual-color dSTORM to measure filling fractions and CaMKII activation experiments to test multiplicative scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are methodological suggestions for future experiments (C115-C116) rather than results from the current work. While the proposed approaches are reasonable and grounded in existing techniques, they represent speculation about how to test predictions rather than evidence supporting the model. The experimental feasibility and interpretation challenges are acknowledged but not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The model parameters are calibrated using unpublished single-particle tracking data suggesting 28% of surface AMPARs are immobilized at synapses in mature hippocampal cultured neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The parameter choice relies on personal communication (C121) rather than peer-reviewed published data, which limits reproducibility and independent verification. While the authors justify using this system because it exhibits relevant plasticity (C122), the lack of published validation for this critical parameter value introduces uncertainty. The model's predictions may be sensitive to this parameter choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C133"
+    ],
+    "result": "The authors speculate that the model could be extended to incorporate slow homeostatic synaptic scaling by adding activity-dependent receptor/slot production, and that neural function involves solving multiple 'logistics problems' for resource allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative extensions (C126-C127) and broad conceptual frameworks (C133) rather than demonstrated results. While the suggestions are reasonable and the analogy to logistics problems is interesting, they lack mathematical development or simulation support. These represent future directions rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The model was implemented in Python using Euler discretization for differential equations and the Gillespie algorithm for stochastic simulations, with code made publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational methods are clearly stated with appropriate citations (C136). Code availability enhances reproducibility. However, critical details are missing: no time step size is specified for Euler discretization, no convergence analysis is provided, and validation of the stochastic implementation against the deterministic model is mentioned but not shown. These omissions limit full assessment of numerical accuracy.",
+    "result_type": "MINOR"
+  }
+]

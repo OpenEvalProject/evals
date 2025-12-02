@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "A stimulus selection procedure successfully reduced inherent correlations between three feature models (functional, DNN, and object) a priori, resulting in 30 scene categories with minimal inter-model correlations (Pearson's r: 0.23\u20130.26).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 describe a methodological approach that is clearly documented and quantified. The reported correlation values (0.23\u20130.26) demonstrate successful reduction of inherent feature correlations, which is a key methodological achievement of the study. The approach is well-justified and the outcome is measurable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Behavioral scene categorization (multi-arrangement task) was significantly explained by all three feature models, with the functional model showing the largest unique contribution (37.6%), followed by DNN features (29.0%), and minimal contribution from objects (1.4%). The behavioral similarity structure was highly reproducible across stimulus sets (r=0.73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C29 present a comprehensive set of behavioral findings with appropriate statistical tests (Wilcoxon signed-rank tests), variance partitioning analysis, and reproducibility testing. The results are internally consistent, properly controlled for multiple comparisons (FDR correction), and include both group-level and individual participant analyses. The reproducibility test strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "fMRI responses in scene-selective cortex (PPA and OPA) were uniquely explained by DNN features (71.1% and 68.9% of variance, respectively), with minimal unique contributions from functional or object models. Results were reproducible for PPA and OPA but not MPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 present fMRI findings with appropriate statistical testing, partial correlation analyses, and variance partitioning. The use of cross-validated Mahalanobis distances and multivariate noise normalization represents rigorous methodology. Reproducibility testing adds confidence, though the failure to replicate in MPA is appropriately acknowledged. The dissociation between behavioral and brain findings is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Scene-selective cortex (PPA and OPA) showed significant correlations with behavioral scene categorization, but variance partitioning revealed that this behavioral variance was predominantly shared with the DNN model (25.7% in PPA, 38.9% in OPA) rather than the functional model (<1% unique in PPA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe a critical analysis linking brain and behavior through variance partitioning. The methodology is sound, using multiple behavioral measures and appropriate statistical tests. The finding that behavioral variance in fMRI is shared primarily with DNN features rather than functional features is well-supported and represents a key result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Experiment 2 (covert naming task) replicated Experiment 1 findings with enhanced overall correlations, but the DNN model remained dominant in all three ROIs. The naming task specifically increased DNN model correlations in PPA and OPA without enhancing functional or object model contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe a well-designed control experiment addressing potential task-related confounds. The within-subject comparisons (n=4) and between-experiment comparisons provide converging evidence. The finding that enhanced engagement strengthens DNN but not functional representations is important for interpretation and is statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Whole-brain searchlight analyses confirmed DNN model representation in PPA and OPA, identified functional model correlations in regions outside scene-selective cortex (bilateral ventral and left lateral occipito-temporal cortex), but found that behavioral categorization correlated only with PPA and OPA, not with the functional model clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 present searchlight results with appropriate multiple comparison correction (TFCE with 10,000 permutations). The spatial specificity of findings is well-documented. The dissociation between functional model representation outside scene-selective cortex and lack of behavioral correlation with those regions is a key finding, though the interpretation requires caution given the post-hoc nature of some observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Post-hoc analysis of functional model searchlight clusters revealed that strongly separated scene categories predominantly contained humans performing actions, suggesting the correlation may reflect human-, body-, and/or motion-selective voxels rather than abstract functional features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C58 present speculative post-hoc observations without independent validation. While the observation about human presence is noted, this interpretation is explicitly acknowledged as speculative by the authors. The lack of independent localizers for body- or motion-selective regions limits the strength of this interpretation. Additional experiments would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Layer-by-layer DNN analysis revealed that object-trained and scene-trained DNNs showed similar overall performance in predicting scene-selective cortex responses, with both showing strong correlations at mid-level layers. Higher layers showed task-specific divergence between DNNs, but this did not substantially affect brain prediction performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 present a systematic layer-by-layer analysis comparing two DNNs with different training regimes. The finding that mid-level layers correlate well with scene-selective cortex is important and well-supported. However, the analysis is somewhat exploratory, and the conclusion that scene-selective cortex represents 'intermediate complexity' features (C69) is more inferential. The statistical testing appears appropriate with FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C83",
+      "C84"
+    ],
+    "result": "There is a striking dissociation between behavioral and brain representations of scenes: behavioral categorization requires both functional and DNN features, while scene-selective cortex represents primarily DNN features. This indicates that scene-selective cortex represents only a subset of behaviorally relevant information, highlighting a gap between current DNNs/scene-selective cortex and human scene understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C70, C71, C83, and C84 represent the primary conclusion of the manuscript, synthesizing findings from behavioral, fMRI, and computational analyses. The dissociation is well-documented through multiple converging analyses (variance partitioning, partial correlations, searchlight). The conclusion is appropriately cautious about the limitations of both DNNs and scene-selective cortex in capturing full scene understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The functional model searchlight clusters potentially overlap with face-, body-, motion-, and tool-selective regions involved in action observation. The dissociation between brain and behavior may reflect that functional information only emerges in scene-selective cortex under explicit task demands, or that it is represented in distributed regions outside scene-selective cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C77 present speculative interpretations without direct empirical validation. The potential overlap with known functional regions (C72-C74) is based on visual inspection rather than independent localization. The task-dependence hypothesis (C75-C77) is reasonable but not directly tested with appropriate task manipulations. These represent plausible interpretations requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Real-world scenes have inherent correlations between visual and semantic features (e.g., forests have vertical edges and boundaries, beaches have horizons), which has been shown to cause different scene properties to explain the same variance in neural responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13 establish the motivation for the study based on well-established prior knowledge (C1, C10-C12 with citations) and a specific prior finding (C13, Lescroart et al., 2015). These claims accurately represent the problem the study addresses and are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C78",
+      "C79",
+      "C85"
+    ],
+    "result": "The manuscript correctly cites established knowledge about scene-selective brain regions (PPA, OPA, MPA/RSC), separate networks for memory versus perception, and the multidimensional nature of scene understanding encompassing recognition, navigation, and action planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C78, C79, and C85 accurately represent established knowledge in the field with appropriate citations. These provide necessary context for interpreting the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work (Greene et al., 2016) identified three models that best explained human scene categorization: a functional model based on action labels, a DNN model trained on ImageNet, and an object model based on object labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 accurately describe the prior work that motivated the current study. The characterization of the three models is consistent with the cited source and provides appropriate justification for the model selection in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The correlation with DNN features supports a primary role for PPA and OPA in bottom-up visual scene analysis. DNN correlations emerged at early-to-mid layers rather than exclusively high layers, suggesting neural representations may be driven more by visual features than semantic information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 present interpretations well-supported by the layer-by-layer analysis (C65-C67) and consistent with cited literature. The inference that mid-level DNN features suggest visual rather than semantic processing is reasonable given the data, though it remains somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "Neural representations relevant to different behavioral goals (recognition, navigation, action planning) are likely not contained within a single brain region or neural network model. Future research requires careful manipulation of multiple tasks and feature models, potentially expanding focus beyond scene-selective regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C87, C90, C91 present reasonable conclusions and recommendations based on the study's findings. The limitation of current DNNs (C90) is well-supported by the behavioral-brain dissociation. The suggestion of distributed representations (C91) and need for future multi-task, multi-model approaches (C87) are appropriate given the findings, though they remain somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study employed appropriate sample sizes (n=20 for Experiment 1, n=8 for Experiment 2 with 4 overlapping participants), high-field 7T fMRI with appropriate acquisition parameters, event-related design with 500ms stimulus presentation, and independent functional localizers. MPA was only identified in 14/20 participants in Experiment 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C104 describe methodological details that are clearly documented and appropriate for the study design. The sample sizes are reasonable for fMRI studies, particularly at 7T. The inability to localize MPA in all participants (C104) is a limitation appropriately acknowledged and accounted for in analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "fMRI analysis employed cross-validated Mahalanobis distances with multivariate noise normalization, appropriate non-parametric statistical tests (signed-rank tests), FDR correction for multiple comparisons, noise ceiling estimation, and variance partitioning through hierarchical regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 describe rigorous analytical methods with appropriate citations (Walther et al., 2016; Nili et al., 2014). The use of cross-validated distances (C107) provides unbiased estimates suitable for model comparison. The statistical approach is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Whole-brain searchlight analysis used spherical ROIs (3 voxel diameter, 123 voxels), cross-validated Mahalanobis distances, and group-level significance testing with Threshold Free Cluster Enhancement through 10,000 Monte Carlo permutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe appropriate searchlight methodology with rigorous multiple comparison correction. The searchlight size and statistical approach are standard and well-justified with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Searchlight analyses confirmed that the strongest DNN model contributions were in scene-selective cortex, while regions outside scene-selective cortex that correlated with the functional model did not contribute to scene categorization behavior and may reflect selectivity for only a subset of scene categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 appropriately summarize the searchlight findings. The conclusion is well-supported by the data showing behavioral correlations only in PPA/OPA (C55-C56) despite functional model correlations elsewhere (C54). The interpretation is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The study successfully disentangled scene-selective cortex representations: only the DNN model (derived from deep neural networks for object/scene recognition) robustly correlated with scene-selective cortex activity, but this model was insufficient to explain scene categorization behavior, which additionally required functional information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 accurately summarize the main findings of the study. The disentanglement was achieved through careful stimulus selection (C16-C17) and comprehensive analyses. The conclusion is well-supported by converging evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  }
+]

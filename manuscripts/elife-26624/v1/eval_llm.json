@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The \u03a6C motif of p24 proteins binds to the B site of Sec24a through specific molecular interactions. Crystallographic analysis reveals that the terminal carboxylate group bonds to Arg750 and Arg752, the penultimate hydrophobic residue contacts Tyr496, and the terminal hydrophobic residue fits into a hydrophobic pocket. Terminal valine is the most favored residue due to optimal geometry for carboxylate bonding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C42 are strongly supported by crystallographic data (Figure 1, Table 1) showing clear electron density for \u03a6C peptides bound to the B site. The structural details of the binding interactions are well-documented with specific residue contacts identified. The inference about valine preference (C42) is reasonable given the structural data and consistency with prior functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "4-PBA binds to the B site of Sec24a at physiologically relevant concentrations (1-50 mM), closely mimicking the terminal phenylalanine and carboxylate group of the ERGIC-53 Phe-Phe motif. The binding residues are highly conserved across human Sec24 paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are well-supported by crystallographic data (Figure 1F-I, Table 2) showing clear electron density for 4-PBA at the B site across multiple concentrations. The structural comparison to the Phe-Phe motif is direct and convincing. Conservation analysis of binding residues strengthens the conclusion that all Sec24 paralogs are targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The L750W mutation in Sec24d blocks B-site ligand binding and reduces p24 protein packaging to 20-25% of wild-type levels after correction for reduced vesicle yield. This residual packaging represents passive (bulk flow) uptake, as the mutation eliminates signal-mediated sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by structural modeling (C47, Figure 2B) and experimental budding data (C49-C51, Figure 2A,C,D). The correction for vesicle yield is methodologically sound. The interpretation that residual packaging represents bulk flow (C52) is reasonable given consistency with prior yeast studies, though this remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C5"
+    ],
+    "result": "10 mM 4-PBA causes a 50% reduction in p24 protein and ERGIC-53 packaging rates in vitro, consistent with competitive inhibition at the B site. This concentration is slightly above the EC50 of 6.4 mM measured in cell-based assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are directly supported by experimental data (Figure 2A,D and Figure 3B). The 50% reduction at 10 mM 4-PBA is consistent with the measured EC50 and with the crystallographic evidence of B-site binding. The competitive mechanism (C5) is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "When p24 packaging is reduced by 4-PBA or B-site mutation, COPII vesicles show significant enrichment of ER resident proteins (4-9 fold) and mutant LDL receptor. This yields 15-25 fold purification of p24 from residents by wild-type COPII, consistent with an active sorting mechanism involving p24-dependent exclusion of diffusible resident complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are strongly supported by experimental data (Figure 3C-E). The reciprocal relationship between p24 depletion and resident enrichment is clearly demonstrated. The quantitative purification calculations (C65) are derived directly from the data. The inference of an active sorting mechanism (C67) is well-justified by the reciprocal packaging patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "COPII-mediated protein sorting occurs in both stressed and unstressed cells. In unstressed cells, B-site mutation causes ~8-fold p24 depletion and 5.5-fold resident enrichment (~40-fold purification). Wild-type COPII packages residents 5-fold faster from stressed versus unstressed cells, while cargo packaging rates remain constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by experimental data from unstressed CHO cells (Figure 4, Table 3). The demonstration that sorting occurs in unstressed cells is important for establishing this as a constitutive mechanism. The quantitative differences between stressed and unstressed conditions (C74-C75) are clearly documented, though the authors note the purification calculation (C73) is imprecise due to low background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "4-PBA causes dose-dependent secretion of the KDEL-tagged resident GRP94 from both stressed and unstressed cells, indicating saturation of the KDEL retrieval system. The secretion profiles differ between cell types: stressed cells show linear dose-response and basal secretion, while unstressed cells show step-response only at high 4-PBA concentrations. This suggests COPII sorting maintains resident leakage below the KDEL system threshold under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C86 are supported by experimental data (Figure 5). The secretion of GRP94 is clearly demonstrated (C76-C78), and the absence of GAPDH confirms it's not due to lysis (C77). The different dose-response profiles (C81, C83) are observable in the data. The inferences about KDEL saturation (C82, C84, C86) are reasonable given the known saturability of the KDEL system and the experimental observations, though they remain interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C10",
+      "C87"
+    ],
+    "result": "4-PBA targets COPII protein to reduce ER retention stringency. The potency of 4-PBA analogs in restoring mutant LDL receptor trafficking correlates with their binding affinity for Sec24 (r=0.98, p<0.0005). 4-PBA causes secretion of KDEL-tagged residents and restores trafficking of misfolded proteins, phenocopying p24 mutants in yeast and worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C4-C5, C8-C10, C87 represent the main conclusions and are well-supported by multiple converging lines of evidence: crystallography (Figure 1), vesicle budding assays (Figures 2-4), cell-based trafficking assays (Figure 3B, 6A-D), secretion assays (Figure 5), and structure-activity relationships (Figure 6H). The correlation between binding affinity and cellular potency (C88) provides strong evidence for on-target activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The G544V-mutant LDL receptor is ER-trapped, non-thermoreversible, and its trafficking is restored by 10 mM 4-PBA (up to 25% of receptor), consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by experimental data (Figure 3A-B) and citations to prior work. The characterization of the mutant receptor as non-thermoreversible (C59) is important for establishing it as a constitutively misfolded protein. The restoration of trafficking by 4-PBA (C60) is consistent with prior studies and provides a cellular readout for 4-PBA activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "COPII recognition of the \u03a6C motif mediates ~6-fold concentrative sorting of p24 proteins and 4-9-fold exclusion of residents, yielding 25-100-fold cargo purification in a single budding event. This magnitude is consistent with prior measurements and with the 5-fold slower secretion of KDEL-deleted BiP compared to bulk flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide quantitative estimates of COPII sorting efficiency. C89-C90 are calculated from experimental data and are consistent with prior literature values. The comparison to BiP secretion rates (C91) from prior studies provides independent validation of the magnitude. The overall purification estimate (C92) is a reasonable synthesis of the data, though it involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Stringent ER retention requires efficient p24 packaging via the B site. When signal-mediated packaging is blocked, 25% passive uptake remains. The authors propose that only coat-bound p24 proteins can form a luminal array capable of excluding residents, coupling coat polymerization to resident exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are supported by experimental data. However, C96-C97 represent a speculative mechanistic model about p24 array formation and coupling to coat polymerization. While this model is consistent with the data and with prior observations about p24 function, it lacks direct experimental validation. The model is plausible but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior studies showed p24 proteins suppress sec13 mutations and that impaired COPII can bud from p24-depleted but not wild-type membranes. The authors propose an alternative model: COPII self-assembly drives p24 proteins together, exerting force to displace resident complexes, rather than solely opposing membrane curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 accurately cite prior literature. However, C102 presents a speculative alternative mechanical model for how p24 proteins mediate against vesicle formation. While this model is consistent with the current findings, it remains speculative and is presented as an 'additional or alternative explanation' to the membrane-bending model. Direct experimental evidence for this mechanical model is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background knowledge: Native cargo exits the ER in COPII vesicles while residents are excluded by an unresolved retention mechanism. Resident chaperones comprise the majority of ER content, diffuse freely, and can escape to be retrieved by KDEL receptors, though KDEL-deleted residents exit slowly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C15 represent established background knowledge supported by citations to prior literature. These claims accurately represent the state of the field and provide context for the current study. The statement that the retention mechanism is unresolved (C3) motivates the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on p24 proteins and 4-PBA: p24 proteins cycle between ER and Golgi in COPI/COPII vesicles. Their mutation causes misfolded protein trafficking in worms and yeast, though yeast effects may involve chronic UPR. 4-PBA restores trafficking of misfolded proteins and reduces ER stress, but its target and mechanism were unknown. 4-PBA structurally resembles the p24 \u03a6C export motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 provide background from prior literature that motivates the hypothesis. The citations are appropriate and the structural similarity between 4-PBA and the \u03a6C motif (C23) provides the key insight that led to testing COPII as the target. The caveat about UPR involvement in yeast phenotypes (C19) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on COPII cargo sorting: Cargo packaging involves direct interaction between COPII and cytoplasmic export signals. About six export signals have been identified, almost all short peptide motifs binding Sec24. The \u03a6C signal comprises C-terminal hydrophobic residues, but its binding site on COPII was difficult to identify biochemically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide established background knowledge about COPII sorting mechanisms, supported by appropriate citations. The statement about difficulty identifying the \u03a6C binding site (C30) explains why crystallography was needed and justifies the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "All four human Sec24 paralogs package ERGIC-53 (prior work). The authors infer that all paralogs can bind the \u03a6C motif and are targets of 4-PBA, explaining high-level p24 packaging in COPII vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 cites prior work by the authors. Claims C56-C57 are reasonable inferences based on: (1) crystallographic demonstration of \u03a6C and 4-PBA binding to Sec24a and Sec24d, (2) conservation of binding residues across paralogs (C45), and (3) prior demonstration that all paralogs package ERGIC-53. While not directly tested for all paralogs, the inference is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The G544V-mutant LDL receptor expression induces ER stress and UPR in CHO cells. Deletion of p24 genes in yeast causes chronic UPR, raising questions about whether leakage phenotypes are due to UPR or loss of active sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 cite prior literature and raise an important confounding issue that motivated experiments in unstressed cells. This appropriately acknowledges a limitation in interpreting results from stressed cells and justifies the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C103",
+      "C104"
+    ],
+    "result": "Additional context: Anterograde cargoes are excluded from retrograde COPI vesicles (prior work). p24 proteins are the most abundant transmembrane constituents of COPII vesicles, though their stoichiometry and oligomeric structure are uncertain. ER chaperones form dynamic, marginally stable complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C103-C104 provide relevant background from prior literature. These claims are appropriately cited and provide context for interpreting the results, particularly regarding the nature of resident protein complexes and the multi-step purification process in the secretory pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "4-PBA is FDA-approved for urea cycle disorders and is rapidly metabolized to phenylacetate. Growing evidence demonstrates 4-PBA restores trafficking of misfolded proteins and mitigates ER stress in various systems and disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide important translational context, supported by appropriate citations. This background establishes the clinical relevance of understanding 4-PBA's mechanism of action and supports the significance of the findings for therapeutic applications.",
+    "result_type": "MINOR"
+  }
+]

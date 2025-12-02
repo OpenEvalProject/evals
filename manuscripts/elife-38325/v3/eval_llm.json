@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors generated functional, fluorescently tagged knock-in alleles for C. elegans Wnt/EGL-20 using Cas9-triggered homologous recombination. Tagged worms (EGL-20::mNG and EGL-20::YPET) had normal morphology and did not exhibit Q neuroblast migration defects characteristic of egl-20 mutants, demonstrating biological functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31-C35 collectively demonstrate successful generation of functional tagged Wnt alleles. The normal morphology (C33) and rescue of migration defects (C34, C35) shown in Figure 1a,b provide strong evidence that the fluorescent tags do not impair EGL-20 function. Statistical analysis confirms no significant difference from wild-type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "For the first time, a native long-range Wnt gradient was visualized in a living animal. Tagged Wnt/EGL-20 was first detected in comma-stage embryos and spread from posterior to mid-body within 60 minutes. In early larvae, it formed an anteroposterior gradient along approximately the posterior half of the worm, with low levels detectable along the entire body axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36-C40 are well-supported by imaging data in Figures 1c-h showing temporal and spatial Wnt distribution. The novelty claim (C7) is justified given the technical achievement of endogenous tagging. Time-lapse and intensity profiles provide quantitative evidence for gradient formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Cell lineage-dependent mechanisms do not generate the observed anteroposterior Wnt gradient, as target cells are already positioned before Wnt becomes visible. This demonstrates that Wnt can move across multiple cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by established developmental timing data (Sulston et al., 1983) combined with the authors' observations of when tagged Wnt first appears. The logic is sound: if receiving cells are already in place before Wnt is visible, the gradient cannot form through lineage-dependent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C54"
+    ],
+    "result": "The Pegl-20 reporter identified Wnt source cells including posterior rectal epithelial cells, body wall muscles, stomatointestinal muscles, and neurons. The expression pattern was validated by lineage tracing and is consistent with smFISH data. Neuronal axons may act as local Wnt sources separate from the main gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C53-C54 are supported by imaging data in Figures 1g, 1\u2014figure supplements 2-3. The consistency with smFISH data (C45) and lineage tracing validation (C53-C54) strengthen confidence. The inference about neuronal sources (C48) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "No cytoneme-like extensions were observed from Wnt-expressing cells despite extensive attempts. Comparison of membrane reporter and Wnt fluorescence intensity profiles indicated gradient formation consistent with extracellular spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by negative observations (C49) and fluorescence intensity analysis (C52, Figure 1h). The negative result is important for ruling out cytoneme-based mechanisms. However, the inability to detect structures doesn't definitively prove their absence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C106",
+      "C107"
+    ],
+    "result": "Lineage tracing experiments demonstrated that Wnt/egl-20 is never expressed in the majority of receiving cells or their neighbors, ruling out autocrine/cellular memory mechanisms for EGL-20 signaling in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C106-C107 are strongly supported by lineage tracing data in Figure 1\u2014figure supplement 3. The FLP-based system provides definitive evidence about expression history. This effectively rules out the autocrine mechanism observed in Drosophila.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Live imaging showed that neither Wnt-producing cells nor responding neuroblasts produced structures supporting direct contact-dependent signaling. Tagged Wnt localized to QL neuroblast protrusions, but also to QR descendants that lack such protrusions, indicating protrusions are not required for Wnt capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C63-C65, C67 are supported by imaging in Figures 2-3. The key observation that QR descendants (which lack posterior protrusions) still accumulate Wnt (C63-C64) provides strong evidence against a protrusion-dependent mechanism. This is a critical control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Tagged Wnt, Frizzled receptors, and Dishevelled colocalized on QL neuroblast protrusions, consistent with these structures being sites of Wnt signal reception. However, the protrusions did not contact source cells or resemble cytonemes proposed elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by colocalization data in Figures 3a-b and supplement 1. The inference about protrusions as signaling sites (C70) is reasonable given Dishevelled localization. The distinction from cytonemes (C71) is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Most or all visible tagged Wnt punctae overlapped with tagged Frizzled receptors, suggesting bright punctae represent receptor-bound molecules. The fraction of Wnt capable of moving between cells is likely in a diffuse form not easily visible by microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by colocalization data in Figure 3\u2014figure supplements 2-3. The inference that mobile Wnt is diffuse (C74) is logical but indirect. This interpretation is crucial for understanding subsequent FRAP experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Using a FRT-based system to label Wnt from specific source cells, mNG-tagged Wnt spread over long distances. The similar distribution of mKate2- and mNG-tagged ligands from different sources suggests a common extracellular Wnt pool. Ventral cord axons and stomatointestinal muscle arms are not the main anterior Wnt source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by the elegant FRT-based lineage-specific labeling in Figure 4b-d. The similar distribution of differently tagged Wnts (C76-C77) provides strong evidence for a common extracellular pool. The exclusion of neuronal sources (C78) is well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Ectopically expressed Wnt/EGL-20::mNG from posterior tail cells was detectable in normal target cells more than 75 \u03bcm away, suggesting native cell contact patterns are not essential for ligand spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by ectopic expression data in Figure 4\u2014figure supplement 1. This experiment provides strong evidence that Wnt can spread independently of normal cellular architecture. The >75 \u03bcm distance is substantial for C. elegans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "FRAP experiments showed EGL-20::YPET fluorescence began recovering within 30 seconds, even before QL neuroblasts formed protrusions. Recovery was rapid but incomplete, with some punctae recovering in the same locations. This suggests a small fraction of highly mobile Wnt and a larger proportion of hindered or receptor-associated Wnt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by FRAP data in Figures 5 and Videos 1-2. The rapid recovery (C81) demonstrates Wnt mobility. The incomplete recovery (C85-C86) and spatial pattern (C83-C84) provide insights into Wnt dynamics. The interpretation is consistent with similar observations for other morphogens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The FRAP data are consistent with models of morphogen gradient formation based on free extracellular movement with dispersal hindered by binding to receptors and other extracellular molecules. Previous studies focusing on bright Wnt punctae may have missed extracellularly mobile Wnt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are reasonable interpretations of the combined Wnt-receptor colocalization and FRAP data. The consistency with theoretical models (C87) is appropriate. The critique of prior studies (C88) is valid but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Morphotrap expression in body wall muscles altered Wnt distribution, creating a steeper gradient with elevated levels near source cells and significantly reduced levels in anterior regions. This reversed QL neuroblast migration in 20/27 worms (vs 0/23 controls, p<0.0001), phenocopying egl-20 mutants and demonstrating that free extracellular Wnt spreading is required for signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are strongly supported by Morphotrap experiments in Figure 6. The altered gradient shape (C89-C91), quantitative reduction in Wnt levels (C92), and migration phenotype (C93) with appropriate statistics provide compelling evidence. The phenocopy of egl-20 mutants (C94) validates the functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Morphotrap results demonstrate three key findings: (1) a long-range Wnt gradient is shaped by extracellular spreading; (2) Wnt in different tissues derives from a common extracellular pool; and (3) free extracellular Wnt spreading is required for normal neuroblast migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are well-supported conclusions from the Morphotrap experiments. The evidence for gradient shaping (C97) comes from altered distribution patterns. The common pool (C98) is demonstrated by trapping in muscles affecting other tissues. The requirement for spreading (C99) is shown by migration defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The findings provide the first direct evidence that a native long-range Wnt gradient forms through free extracellular dispersal, challenging the idea that Wnts primarily act as short-range signals and demonstrating that extracellular Wnt movement is required for developmental signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 represent the main conclusions of the study. They are well-supported by the combined evidence from visualization (gradient formation), membrane architecture analysis (no cytonemes), FRAP (Wnt mobility), and Morphotrap (functional requirement). The novelty claim is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors reconcile their findings with Drosophila studies showing membrane-tethered Wnt sufficiency by noting that Drosophila wingless has early broad expression enabling autocrine signaling, whereas C. elegans egl-20 is never expressed in receiving cells. This supports free extracellular dispersal as a viable mechanism in many contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 provide important context for interpreting the results relative to prior work. The distinction between Drosophila and C. elegans expression patterns (C104-C107) is well-supported by lineage tracing. The generalization (C108) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "While the findings argue against cytoneme-based mechanisms in this context, they don't rule out roles for cell shapes or direct transfer in other situations. The results don't prove the gradient shape itself is critical, but combined with overexpression studies, they establish that both extracellular spreading and proper Wnt levels are required for development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 appropriately qualify the conclusions. The caveats about scope (C109, C111) are scientifically appropriate. The integration with prior overexpression data (C112) strengthens the interpretation about Wnt levels mattering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors discuss theoretical concerns about diffusion-based gradient formation and propose that factors in receiving cells and the extracellular environment could transform imprecise dispersal into robust gradients. They suggest responding cells themselves determine key features of signaling protein distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C118 are largely speculative discussion points about mechanisms. While the hypothesis is reasonable and consistent with the data (particularly cell-type-specific Wnt localization), these claims represent future directions rather than demonstrated results. The prediction (C116) requires testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors note that fully processed Wnts are not thought capable of freely moving long distances due to hydrophobicity, and it remains to be determined what factors facilitate Wnt/EGL-20 spreading. They speculate that extracellular fluid mixing driven by cellular activities could contribute to dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C124 identify important open questions and speculate about mechanisms. The hydrophobicity issue (C121) is well-established. However, the speculation about fluid mixing (C123-C124) is explicitly stated as lacking evidence. These represent future research directions rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

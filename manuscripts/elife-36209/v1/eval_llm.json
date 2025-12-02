@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C52",
+      "C61"
+    ],
+    "result": "OKR training successfully induced adaptation in wild-type mice. One hour of continuous optokinetic stimulation (60 cycles of 50s stimulation with 10s rest) significantly increased OKR gain from 0.32 \u00b1 0.01 to 0.62 \u00b1 0.02 (n=31, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C52, and C61 provide converging evidence for successful OKR adaptation. The experimental protocol is clearly described, appropriate statistical analysis (paired t-test) was performed with adequate sample size (n=31), and the effect size is substantial (~94% increase in gain). Figure 1 visually confirms the progressive increase in OKR gain during training.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C5"
+    ],
+    "result": "OKR training specifically decreased quantal EPSC amplitudes at PF-PC synapses in the H zone of the flocculus but not in the paraflocculus control region. qEPSC amplitudes in the H zone were significantly smaller in trained mice (9.73 \u00b1 0.12 pA, n=16) compared to untrained mice (10.58 \u00b1 0.24 pA, n=14, p=0.003), with blind experiments confirming this effect (p=0.04). No changes were observed in the paraflocculus (p=0.53) or in series/input resistances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 and C5 collectively demonstrate region-specific postsynaptic depression. The inclusion of blind experiments (C19) strengthens the findings by controlling for experimenter bias. The paraflocculus serves as an appropriate negative control (C20-C21), and the lack of changes in series/input resistances (C22) confirms recording stability. The statistical analyses are appropriate with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C6",
+      "C31"
+    ],
+    "result": "OKR training occluded subsequent LTD induction in the H zone of the flocculus but not in the paraflocculus. The standard LTD protocol induced robust depression in untrained mice (69.5 \u00b1 3.4%, n=14, p<0.001) but only weak depression in trained mice (97.0 \u00b1 2.6%, n=12, p=0.03), with the difference being highly significant (p<0.001). Blind experiments confirmed this occlusion effect (p=0.007). In contrast, LTD induction was unaffected by training in the paraflocculus (p=0.57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29, C6, and C31 provide strong evidence for LTD occlusion following OKR training. The use of a robust LTD protocol (C30) ensures reliable induction in control conditions. The region-specific effect (H zone but not paraflocculus) and confirmation through blind experiments strengthen the conclusion. The statistical analyses are appropriate, though the weak residual depression in trained mice (97%, p=0.03) raises questions about complete saturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "OKR training did not alter presynaptic release probability at PF-PC synapses. Paired-pulse ratio (PPR) with 100ms interval was identical between trained (1.6 \u00b1 0.1, n=6) and untrained mice (1.6 \u00b1 0.0, n=5, p=0.97), indicating that the observed changes in synaptic transmission are postsynaptic in origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate that presynaptic function remains unchanged after OKR training. The use of PPR as a measure of release probability is well-established (C33), and the lack of change (p=0.97) strongly supports a postsynaptic locus for the observed depression. However, the sample sizes are relatively small (n=5-6), which could limit detection of subtle presynaptic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C50"
+    ],
+    "result": "The authors conclude that LTD occurs at PF-PC synapses during OKR adaptation in wild-type mice. This conclusion is based on the convergence of decreased qEPSC amplitudes and occlusion of subsequent LTD induction specifically in the H zone of the flocculus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C50 represent the main conclusion, which is well-supported by the experimental evidence from multiple complementary approaches (qEPSC measurements, LTD occlusion, region specificity, blind experiments). The inference that LTD occurs during learning is reasonable given the postsynaptic depression and occlusion of further LTD, though direct observation during training was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The authors interpret their qEPSC findings as functional confirmation of prior morphological studies showing reduced AMPA receptor numbers at PF-PC synapses after OKR training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 appropriately connect the current functional data to prior morphological findings (Wang et al., 2014). The decreased qEPSC amplitudes are consistent with reduced AMPA receptor numbers, providing convergent evidence from different methodological approaches. This interpretation is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors acknowledge that their qEPSC analysis may underestimate the true magnitude of training-induced depression due to methodological limitations. Only qEPSCs >6 pA were analyzed due to noise, which would cause greater overestimation of mean amplitudes after LTD when more small events are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C56-C58 demonstrate appropriate recognition of methodological limitations. The authors correctly identify that their 6 pA threshold (C56) would systematically bias results, causing underestimation of the training effect. This transparent discussion of limitations strengthens the overall credibility of the work, though it also suggests the true effect size may be larger than reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors discuss the unexpected finding of widespread LTD suppression in the flocculus despite the absence of vestibular inputs during OKR training. They suggest that LTD may spread to inactive synapses or that vestibular-related PF inputs are relatively sparse in the stimulated region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C40 address an important conceptual issue but provide only speculative explanations. While the authors correctly note that the flocculus receives multiple input types (C38) and that vestibular inputs are absent during training (C39), the proposed mechanisms for widespread LTD (spread to inactive synapses, C40, or sparse vestibular inputs) are not directly tested. This remains an unresolved question requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors review the historical context of LTD in motor learning, noting that while LTD was initially considered the main mechanism for motor learning, this view was challenged by findings of normal learning in LTD-deficient animals. More recent work suggests multiple plasticity mechanisms contribute to motor learning and may compensate for each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C11 accurately summarize the relevant literature with appropriate citations. The authors correctly present the evolution of thinking in the field, from the original LTD hypothesis to challenges from genetic studies to current views of multiple compensatory mechanisms. This provides appropriate context for their study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors discuss that multiple synaptic plasticity mechanisms beyond LTD (including LTP at PF-PC synapses, plasticity at inhibitory synapses, and rebound potentiation) contribute to motor learning. They suggest these mechanisms might compensate for LTD deficits in some transgenic mice, explaining apparently normal learning despite LTD impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 provide appropriate discussion of alternative plasticity mechanisms with proper citations. The authors correctly note the complexity of cerebellar plasticity and offer a reasonable explanation for discrepancies in the literature regarding LTD-deficient mice. This contextualizes their findings within the broader field, though the compensation hypothesis remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C14"
+    ],
+    "result": "The authors establish OKR as an appropriate model system for studying cerebellar motor learning, noting that it is a reflex eye movement regulated by the cerebellar flocculus, specifically the horizontal (H) zone for horizontal OKR adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C14 provide appropriate background on OKR with proper citations. The characterization of OKR as a cerebellar-dependent motor learning paradigm and the specific role of the H zone are well-established in the literature. This justifies the experimental approach and anatomical focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors establish the methodological foundations for their measurements, noting that LTD is expressed postsynaptically at PF-PC synapses, that qEPSCs can be recorded in Sr2+ solution to measure unitary responses, and that PPR reflects presynaptic release probability with PF-PC synapses showing paired-pulse facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C33-C34 appropriately cite established methodological principles. The use of Sr2+ to record qEPSCs and PPR to assess presynaptic function are well-validated approaches. These methodological foundations are correctly applied in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The authors note rare prior studies examining LTD after motor learning, including Schreurs et al. (1997) showing LTD suppression after classical conditioning in rabbits and Nguyen-Vu et al. (2017) suggesting LTD saturation in MHC1 knockout mice with enhanced LTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 appropriately cite relevant prior work, though the authors note limitations (Schreurs et al. did not examine synaptic response amplitudes). These citations help establish the novelty of the current approach and provide context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C59"
+    ],
+    "result": "The authors describe their experimental subjects and key methodological decisions, including use of 8-10 week old male C57BL/6 mice, preparation of 150 \u03bcm slices within 30 min of training, morphological identification of the H zone, and determination of sample sizes based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C53-C55 and C59 provide essential methodological details. The use of thin slices (150 \u03bcm) is justified for reliable H zone identification (C54). The timing (<30 min after training, C53) is appropriate for capturing acute changes. Sample size determination based on prior literature (C59) is reasonable, though formal power analysis is not mentioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The dorsal paraflocculus serves as an appropriate control region as it has little involvement in OKR adaptation according to prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by multiple citations (Ito et al., 1982; Nagao, 1989; Wang et al., 2014). The use of this anatomically adjacent but functionally distinct region as a control is appropriate for demonstrating specificity of the training effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The LTD induction protocol used (depolarization to 0 mV for 50 ms coupled with PF stimulation, repeated 10 times at 1 Hz) is characterized as a strong protocol likely to induce LTD reliably.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by citation to Nakamura and Hirano (2016). The use of a robust protocol is appropriate for testing occlusion, as it ensures that any reduction in LTD induction is not simply due to a weak protocol. This methodological choice strengthens the interpretation of the occlusion results.",
+    "result_type": "MINOR"
+  }
+]

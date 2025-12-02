@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study used high-quality multimodal neuroimaging data from 485 healthy young adults (age 29.1\u00b13.5 years, 202 females) from the Human Connectome Project. Diffusion MRI data from 430 subjects passed quality control, with parcellation performed on 120 randomly selected subjects and tractography analysis on all 430 subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C109-C113 provide clear documentation of sample characteristics, data sources, and quality control procedures. The use of HCP data with high spatial resolution (1.25mm isotropic) and the rationale for different sample sizes across analyses are well-justified. The methodological approach is transparent and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C125",
+      "C126",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Connectivity-based parcellation identified three stable subdivisions of the substantia nigra: lateral SNc (lSNc), medial SNc (mSNc), and ventral SN (vSN). This tripartite organization showed high reproducibility (NMI=0.85-0.88), inter-hemispheric similarity (NMI=0.68), and replication in an independent sample (NMI=0.95), corresponding to the dorsal, middle, and ventral tiers described in primate anatomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4-C7 demonstrate robust parcellation results with multiple validation metrics (NMI, Dice coefficient, Cramer's V) and independent replication. The methodological details (C125-C134) are comprehensive, including seed region definition, tractography parameters, and clustering approach. The correspondence to primate anatomy (C4) provides biological plausibility, though this is based on inference rather than direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The three SN subdivisions showed distinct connectivity profiles forming a limbic-cognitive-motor organizational topography. Medial SNc connected with limbic regions (OFC, hippocampus, amygdala, ventral striatum), vSN with prefrontal cortex and associative striatum, and lateral SNc with sensorimotor cortex and motor striatum. This organization demonstrated a rotation in topology from medio-lateral in SN to ventro-dorsal and rostro-caudal in cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 describe comprehensive connectivity patterns supported by probabilistic tractography on 430 subjects. The limbic-cognitive-motor organization is consistently demonstrated across multiple analyses (cortical projections, striatal connections, resting-state networks). However, the authors acknowledge limitations of diffusion tractography (C88, C96), including inability to resolve crossing fibers and directionality, which could affect interpretation of some connections (particularly C71-C72 regarding visual cortex).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "During a gambling task with monetary wins ($1.0) and losses ($0.50), all three SN subdivisions were activated by both reward and punishment outcomes. However, only medial SNc showed significantly greater BOLD response to gains than losses (T=3.96, p<0.0001), encoding a value signal that was significantly stronger than in the other two subdivisions (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 present clear fMRI results with appropriate statistical testing and multiple comparison corrections. The gambling task design (C114-C117) is well-described. The finding that only mSNc differentially responds to reward vs punishment is supported by both within-region and between-region comparisons. However, the authors acknowledge (C98) that these signals cannot be attributed specifically to dopamine neurons due to cellular heterogeneity in SN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Target regions showed distinct response patterns during the gambling task. Ventral striatum exhibited a unique bidirectional pattern (activation for reward T=8.91, deactivation for punishment T=-9.33, both p<0.0001), representing classic reward prediction error. vmPFC was deactivated in both conditions but showed less deactivation for reward. dACC and anterior insula showed equal activation to reward and punishment (salience coding). These patterns support the existence of separate value-coding and salience-coding systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 demonstrate clear dissociation between value and salience coding with strong statistical support. ROI definitions (C127-C128) were based on meta-analyses and prior literature. The hypothesis (C129) was clearly stated a priori. The definition of salience (C130) is explicitly stated and consistent with prior work. Statistical tests appropriately used paired comparisons with adequate sample size (N=485).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C135"
+    ],
+    "result": "Behavioral PLS analysis identified two orthogonal components linking brain activity to impulsivity measures. The first component (61% covariance, p=0.012) linked inhibitory control scores to salience signals from vmPFC, insula, and dACC. The second component (39% covariance, p=0.11) linked delay discounting to value signals from mSNc and ventral striatum, with stronger value coding associated with more impulsive choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C35 and C83-C86 present PLS results, but the second component did not reach statistical significance (p=0.11). While individual correlations (C36-C40) showed some significant associations, only two survived multiple comparison correction (C38). The behavioral measures (C118-C124) are well-validated, but the authors acknowledge (C105-C106) that correlation values are small (r~0.1), with most behavioral variability unexplained. The exclusion of 15 subjects (C135) for outliers is appropriate but reduces power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Individual correlation analyses confirmed associations between brain activity and impulsivity. Value-coding in mSNc correlated with delay discounting (r=-0.1304, p=0.0053), and salience-coding in anterior insula correlated with inhibitory control (r=0.1546, p=0.0008), both surviving multiple comparison correction. Differential associations were found, with VS value-coding more strongly associated with delay discounting than inhibitory control (p=0.02), and insula salience-coding more strongly associated with inhibitory control than delay discounting (p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide convergent evidence for the PLS results through individual correlation analyses. The use of Holm-Bonferroni correction (C38) is appropriate for multiple comparisons. The differential association tests (C39-C40) strengthen the specificity of the brain-behavior relationships. However, the small effect sizes (r~0.1-0.15) indicate that these brain measures explain only 1-2% of behavioral variance, limiting clinical or predictive utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The human SN parcellation corresponds to anatomical subdivisions described in monkeys. In primates, SN neurons are divided into three tiers based on staining, morphology, and striatal connectivity, with dorsal tier connecting to ventromedial striatum and ventral tiers to central/dorsolateral striatum. The authors' mSNc corresponds to monkey pars dorsalis, lSNc to ventrolateral columnar SNc, and vSN to ventral densocellular portion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C64 establish correspondence between human and primate anatomy through extensive citation of tracer studies. The anatomical homology is well-supported by literature (C41-C43, C56-C61) and provides biological plausibility for the human parcellation. The specific correspondences (C62-C64) are inferred from comparing connectivity patterns rather than direct histological validation, which is appropriate given the limitations of human neuroimaging. This cross-species validation strengthens the interpretation of the human findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The findings align with established principles of brain organization and prior human studies. The lSNc-sensorimotor association explains its role in Parkinson's disease motor symptoms. The limbic-cognitive-motor organization reflects Mesulam's cortical information flow hierarchy and recent gradient analyses. The value/salience dissociation corresponds to primate electrophysiology findings and a previous human fMRI study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C77 appropriately contextualize the findings within existing literature. The Parkinson's disease connection (C65) is well-established. The organizational principles (C73-C75) are supported by multiple theoretical frameworks. The correspondence to primate electrophysiology (C76) and prior human fMRI (C77) provides convergent validity. However, these are interpretive claims based on inference and literature comparison rather than direct experimental tests within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors acknowledge limitations of diffusion tractography, including inability to resolve crossing fibers, susceptibility to false positives/negatives, and bias toward gyral crowns. They argue against systematic bias by demonstrating functional dissociation and correspondence to macaque tracer studies. The inverted dorsal-ventral SN-striatum topology is unlikely due to distance/curvature bias, but medial-lateral gradients and SN-pallidal connections may reflect tractography limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 provide critical self-assessment of methodological limitations. The authors appropriately acknowledge tractography limitations (C88, C96) while arguing that functional relevance (C89) and cross-species correspondence (C90, C93) support validity. The distinction between likely-valid findings (inverted dorsal-ventral topology, C91) and potentially artifactual results (SN-pallidal connections, C94) demonstrates scientific rigor. The inability to determine connection directionality (C96) is an important caveat for interpreting dopaminergic projections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Strong anatomical connections were detected between mSNc and visual areas using tractography, despite sparse midbrain-visual projections in rodents. This may result from intersection of mSNc outflow with the temporo-parieto-occipito-pontine tract in the posterior internal capsule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 identify a potentially spurious finding. The detection of strong mSNc-visual connections (C71) contradicts rodent anatomy (C70), and the authors appropriately suggest a tractography artifact (C72). However, this remains speculative without validation. This example illustrates the importance of biological plausibility checks and highlights a specific limitation of the tractography approach in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The results are consistent with primate electrophysiology showing medial-to-lateral gradient for reward/salience coding, but cannot be attributed specifically to dopamine neurons due to cellular heterogeneity in SN (GABAergic, glutamatergic neurons, interneurons). The findings do not contradict theories that dopamine neurons predominantly encode reward prediction error, nor alternative interpretations that no dopamine neurons encode actual aversive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 provide important caveats about interpretation. The authors appropriately acknowledge (C98-C99) that fMRI and tractography cannot distinguish dopamine neurons from other SN cell types. They correctly note (C100-C104) that their findings are compatible with multiple theoretical frameworks about dopamine function. This intellectual honesty about interpretive limitations is scientifically appropriate, though it somewhat limits the mechanistic conclusions that can be drawn.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The correlation values between behavioral measures of impulsivity and BOLD activation are small (r~0.1), indicating that most behavioral variability is accounted for by factors other than the measured brain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 provide honest assessment of effect sizes. The small correlations (r~0.1) explain only ~1% of behavioral variance, which is acknowledged as a limitation. This transparency is important for interpreting the practical significance of the brain-behavior relationships. While statistically significant in a large sample, these small effects suggest limited predictive or clinical utility of the identified brain measures for individual differences in impulsivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The study provides evidence for connectional and functional dissociations of SN neurons in humans, encoding motivational value and salience through different pathways, and extends understanding of dopamine's role in impulsivity by uncovering different neural substrates for decisional and motor impulsivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 appropriately summarize the main contributions. The connectional dissociations are well-supported by parcellation and tractography data. The functional dissociations are supported by fMRI results. The link to different forms of impulsivity is supported by behavioral correlations, though with small effect sizes. These summary claims accurately reflect the study's findings while acknowledging (implicitly through prior claims) the interpretive limitations regarding dopamine neurons specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The introduction establishes that dopamine plays crucial roles in decision-making and reinforcement learning through reward prediction error signaling, with extended roles in salience and aversive processing. Impulsivity, a key feature of multiple psychiatric conditions, can be divided into decisional and motor components, with discrete neural networks (VS/vmPFC for decisional, somatomotor/IFG/insula/dorsal striatum for motor) that are interconnected with SN through dopaminergic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 and C78-C82 provide well-cited background establishing the theoretical framework. These are literature review claims appropriately supported by extensive citations to established work. The multi-dimensional view of impulsivity (C82) and the proposed neural networks (C53-C54) provide the conceptual basis for the study's hypotheses. The claim that these regions are interconnected with SN (C55) is well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

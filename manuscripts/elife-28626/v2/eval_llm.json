@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Coumarin-tyrosine was successfully genetically encoded at position Y671 in TRPV1 channels, producing functional channels with electrophysiological properties similar to wild-type. The coumarin-containing channels showed proper membrane localization, functional expression, and preserved voltage-dependent gating characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C21 collectively demonstrate successful incorporation of coumarin at Y671 with preserved channel function. The colocalization data (C17), electrophysiological recordings (C18-C20), and Boltzmann fitting (C20) provide converging evidence that the modification is functionally tolerated. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Capsaicin activation of TRPV1 channels containing coumarin at Y671 produces a significant increase in photon emission counts, with statistical significance (p<0.05, n=4). This increase is interpreted as reflecting local environmental changes around the fluorophore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide direct experimental evidence with appropriate statistical testing. The photon count distributions show clear separation between background, baseline, and capsaicin-treated conditions. However, C25 is interpretive and the mechanism remains uncertain. The statistical analysis appears sound though sample size is modest (n=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Single-emitter analysis of coumarin-labeled TRPV1 channels shows that capsaicin treatment increases both the mean fluorescence and the standard deviation of fluorescence fluctuations. Photobleaching analysis confirmed identification of single emitters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe complementary single-molecule imaging approaches. The photobleaching stepwise behavior (C27) validates single-emitter identification, and ensemble averaging (C28-C29) shows consistent capsaicin-induced changes. The methods are appropriate for the experimental goals, though temporal resolution limitations are acknowledged elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "Autocorrelation analysis of coumarin fluorescence reveals that capsaicin increases the slower time constant from 78\u00b122 ms to 148\u00b138 ms (n=7), consistent with stabilization of the bright state and increased burst length of channel openings. This agrees with prior single-channel recordings showing capsaicin increases burst length by shortening closed states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C36-C37 present internally consistent kinetic analysis. The autocorrelation approach is appropriate for noisy single-molecule data, and the interpretation (C33) is supported by citation to prior work (C37). The sample size (n=7) is adequate and the results align with established TRPV1 gating mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Analysis of fluorescence fluctuations shows that capsaicin does not affect the amplitude of fluctuations but shortens the mean dwell-time of the bright state (L1) from 398\u00b1133 ms to 156\u00b152 ms (n=5) and increases the probability of being in the bright state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide complementary analysis of fluorescence fluctuations using threshold-crossing methods. The findings are consistent with the autocorrelation results and support the interpretation of increased burst activity. However, the apparent contradiction between 'shortening' dwell time (C34) and 'increasing' burst length (C36) requires careful interpretation in context of burst vs. individual opening kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C47",
+      "C69"
+    ],
+    "result": "The fluorescence data from Y671coum reports on the open-closed transition of TRPV1 channels, with Y671 being more water-exposed (and thus less fluorescent) in the closed state compared to the open state. The optical data reports on conformational transitions at the selectivity filter associated with channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C47, C69 synthesize the experimental findings into a mechanistic interpretation. The conclusion is well-supported by the dose-response correlation (C44-C46), the position-specific effects (C40-C43), and the known quenching properties of coumarin (C72). The interpretation is appropriately cautious, acknowledging it as a 'possibility' and 'consistent with' rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Control experiments with coumarin at position W426 show that this position produces functional channels but the fluorescence signal is insensitive to capsaicin, consistent with W426 being in a solvent-exposed region that does not change during gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide essential negative control data. The structural prediction (C40) is supported by citation, and the experimental data (C41-C43) confirm the prediction. This control strengthens the interpretation that Y671 fluorescence changes are specific to gating-related conformational changes rather than non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The dose-response relationship for fluorescence changes at Y671coum closely matches electrophysiological measurements, with EC50 values of 0.33 \u00b5M (optical) and 0.43 \u00b5M (electrophysiological) for capsaicin activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate strong correlation between optical and electrophysiological readouts. The close agreement in EC50 values provides validation that the fluorescence signal reports on channel activation. The comparison is appropriate and strengthens confidence in the optical measurements as a proxy for channel gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Molecular dynamics simulations show that Y671 adopts different orientations in closed vs. open states: in the closed state, Y671 residues are perpendicular to the membrane and more water-exposed (SASA ~30%), while in the open state they form a parallel ring with reduced water exposure (SASA ~15%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C56-C58 describe consistent structural predictions from MD simulations (~750 ns each). The SASA analysis (C58) provides quantitative support for differential hydration. The simulations are appropriately long and the findings align with the experimental fluorescence data. However, MD simulations have inherent limitations in force field accuracy and sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MD simulations reveal that the open state shows intermittent water occupancy at Y671 but maintains continuous pore hydration on average, with Na+ permeation observed only in the open state. The polar environment from Y671 hydroxyl groups does not impede ion permeation even when water is transiently absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe nuanced hydration dynamics from MD simulations. The observation of ion permeation only in the open state (C55) validates the functional relevance of the simulated conformations. The interpretation (C53) appropriately addresses the counterintuitive finding of intermittent water occupancy in the conducting state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "MD simulations show that Y671 interacts with F640 and M644 in both states, but the different Y671 orientations allow rigid displacement of the pore helix in the closed state, narrowing the selectivity filter diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 propose a specific gating mechanism involving pore helix displacement. The structural analysis is supported by the simulation data shown in multiple figures. This provides a plausible molecular mechanism linking Y671 conformation to selectivity filter gating, though the causal relationship is not experimentally proven (acknowledged in C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Preliminary MD simulations of the Y671coum mutant suggest that the bulkier coumarin moiety can accommodate configurations similar to wild-type Y671, supporting compatibility of the proposed gating mechanism with the coumarin substitution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 is explicitly described as preliminary ('cursory calculations') and the authors acknowledge that longer simulations would be needed for quantitative comparison. While the data suggest compatibility, the limited simulation time and lack of detailed analysis make this result uncertain. This is appropriately presented as supporting evidence rather than definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study acknowledges technical limitations including temporal resolution constraints (ms vs. \u00b5s timescales), intrinsic dye blinking (~12% of transitions), and inability to resolve fast intra-burst activity. Despite these limitations, the optical and electrophysiological data show surprising agreement, and different analytical approaches yield consistent rate constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide transparent discussion of methodological limitations and validation of the analytical approach. The acknowledgment of limitations (C63-C64, C67) is appropriate, and the internal consistency checks (C66, C68) strengthen confidence in the results despite acknowledged constraints. The justification for the analytical approach (C65) is supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The dynamic range of optical measurements (0.1 to 1 \u00b5M capsaicin) overlaps with the range of burst activity in prior single-channel recordings, supporting that the fluorescence reports on channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 provides additional validation by comparing to prior work. The agreement in concentration ranges strengthens the interpretation that fluorescence changes reflect gating transitions. This cross-validation with established literature is appropriate and well-supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study identifies three potential conformational changes at Y671 during gating (side chain reorientation, water exposure, H-bond network changes) that could explain fluorescence changes given coumarin's sensitivity to solvation. However, detailed structural interpretation and causal relationships remain uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 appropriately synthesize findings while acknowledging interpretive limitations. The identification of multiple potential mechanisms (C71) is supported by MD data, and the acknowledgment that detailed interpretation 'remains out of reach' (C74) and causality is not proven (C75) demonstrates appropriate scientific caution. The reasoning is sound given coumarin's known properties (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The data point to a dynamic selectivity filter that may serve as a gate for permeation in TRPV1 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 represents the main conclusion, appropriately stated as speculative ('may serve'). This is supported by the convergence of optical data showing Y671 environmental changes during activation, MD simulations showing conformational changes at the selectivity filter, and the correlation between optical and electrophysiological measurements. The conclusion is warranted but appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on TRPV1 structure and function, including the two-gate hypothesis, prior structural and functional studies, and the rationale for studying Y671.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide established background knowledge appropriately supported by citations. These claims set up the scientific context and rationale for the study. The prior work is accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background on fluorescence approaches for studying protein conformational changes, including voltage-clamp fluorometry (VCF) and genetically encoded fluorescent non-canonical amino acids (f-ncAA), with emphasis on coumarin's properties and prior applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 provide methodological background appropriately supported by multiple citations. The description of VCF limitations (C79) and f-ncAA advantages (C80-C84) establishes the rationale for the chosen approach. The prior applications (C85) demonstrate feasibility. This background is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C30"
+    ],
+    "result": "The study hypothesized that coumarin at Y671 would be functionally tolerated and positioned to report on gating-related conformational changes, potentially providing kinetic information on channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C30 state the central hypothesis of the study, which is reasonable based on prior cysteine accessibility data (C15) and coumarin's properties. The hypothesis is clearly stated and appropriately tested by the subsequent experiments. These are well-founded predictions rather than results per se.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Drosophila melanogaster loses olfaction before vision with age, paralleling patterns observed in humans and other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 presents a primary experimental finding supported by behavioral data comparing olfactory and visual function across aging timepoints. The manuscript describes T-maze assays for both modalities (C18-C28), providing appropriate methodology to test this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Cholinergic projection neurons in the aging olfactory circuit show reduced odor responses, defects in axonal integrity, and reduction in synaptic marker proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 describe convergent cellular and molecular phenotypes in cholinergic projection neurons. The manuscript provides multiple complementary approaches including calcium imaging (C68-C97), immunostaining (C33-C54), and STED microscopy (C55-C67) to support these anatomical and functional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Expression of the mitochondrial reactive oxygen scavenger SOD2 in cholinergic projection neurons is both necessary and sufficient to prevent smell degeneration in aging flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 establish necessity and sufficiency through behavioral functional screening. The methodology includes appropriate genetic controls (C20), RNAi for loss-of-function, and overexpression for gain-of-function experiments, with behavioral readouts quantified using the olfactory preference index (C25-C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Oxidative stress-induced axonal degeneration in cholinergic projection neurons drives functional decline of the entire olfactory neural network and associated behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 synthesize the mechanistic interpretation linking oxidative stress to network dysfunction. This conclusion is supported by the convergence of SOD2 rescue experiments (C8-C9), anatomical degeneration (C6), and functional deficits (C5), though the causal chain relies on inference from correlative and rescue data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Lifespan experiments were performed to correlate lifespan with behavioral and anatomical phenotypes, with acknowledged limitations regarding genetic background confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 transparently acknowledge experimental limitations while clarifying the purpose of lifespan measurements. The authors appropriately note that flies were not backcrossed for 10+ generations, which could confound lifespan conclusions, demonstrating scientific rigor in reporting limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Image quantification was performed with standardized conditions and blinded analysis to prevent bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe rigorous experimental controls for imaging analysis. Processing all samples simultaneously with identical settings (C37-C38) and blinding analysts to genotype/age (C39) are appropriate measures to minimize technical variation and observer bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Different absolute fluorescence values resulted from using two different confocal microscopes with different sensitivities, limiting cross-experiment comparisons to within-graph comparisons only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 transparently report technical limitations in the imaging data. The acknowledgment that the Leica SP8 was more sensitive than the Olympus FV1000 and that absolute values can only be compared within individual graphs demonstrates appropriate recognition of technical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "RNA-seq data was analyzed using DESeq2 for differential expression with adjusted p-value<0.01, followed by gene ontology enrichment analysis using topGO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe standard and appropriate bioinformatic methods for RNA-seq analysis. DESeq2 is a well-validated tool for differential expression (with proper citation), and the use of adjusted p-values addresses multiple testing concerns. The gene ontology analysis using topGO with the Drosophila annotation database is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "STED super-resolution microscopy was performed with appropriate fixation, antibody staining, imaging parameters, and quantitative analysis to assess synaptic structures at the nanoscale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 provide comprehensive methodological details for STED imaging including fixation protocols, validated antibodies with citations (C57), appropriate imaging parameters (time-gated detection, depletion laser wavelength), deconvolution processing, and automated quantification using custom ImageJ macros. The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In vivo calcium imaging using epifluorescence microscopy was performed with GCaMP3 in GH146-Gal4 neurons, with standardized odor delivery, acquisition parameters, and \u0394F/F quantification methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C83 describe detailed and appropriate methods for functional calcium imaging. The genetic setup (C68), imaging parameters (C70-C72, C75), odor delivery system with controlled flow rates (C77-C80), and standardized \u0394F/F calculations (C73-C74) are well-documented. The use of consistent exposure times and timing protocols ensures reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Two-photon calcium imaging was performed on homozygous GH146-Gal4>UAS-GCaMP3 flies at multiple ages, with motion correction, manual ROI selection, and \u0394F/F quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C97 provide comprehensive methods for two-photon imaging including genetic setup (C84), age groups (C85), imaging parameters (C86-C87, C90), odor delivery (C88-C89), motion correction using TurboReg with citation (C92), and appropriate ROI selection strategies for different brain regions (C94-C95). The quantification methods are clearly described (C96-C97).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Single sensillum recordings were performed using extracellular electrophysiology from antennal olfactory sensilla with appropriate electrode placement, signal processing, and spike quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 describe standard electrophysiological methods with citation to prior work (C98). The preparation (C99-C101), electrode placement (C103-C104), signal acquisition and amplification (C106), and spike counting methodology (C108) are appropriate for measuring olfactory sensory neuron responses. Statistical analysis using one-way ANOVA is suitable (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Behavioral assays were performed using standardized T-maze protocols with controlled environmental conditions, defined odor concentrations, and quantitative preference index calculations analyzed by ANOVA with Bonferroni correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C26 describe rigorous behavioral methodology including standardized rearing conditions (C14-C15), appropriate group sizes with sex balance (C18), controlled testing environment (C21), standardized odor delivery (C22-C24), and validated quantification methods (C25). The statistical approach using ANOVA with Bonferroni correction for multiple comparisons is appropriate (C26).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Visual behavior was assessed using a modified transparent T-maze with blue and red LED illumination to test visual preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe appropriate modifications to the T-maze apparatus for visual testing. The use of different wavelength LEDs (blue 465-470 nm vs red 625-630 nm) provides distinct visual stimuli, allowing comparison of visual versus olfactory function decline with age.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Germfree flies were generated by treating embryos with bleach and ethanol, then colonized with L. plantarum at defined concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe standard methods for generating germfree Drosophila and controlled bacterial colonization. The sterilization protocol (C29) and defined bacterial inoculation at OD:200 (C30) are appropriate for microbiome manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Resveratrol supplementation was performed at 100 \u03bcM concentration with ethanol vehicle controls to ensure equal ethanol content across all diets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe appropriate dietary supplementation methodology. The inclusion of equal ethanol amounts in all diets (C32) is a critical control to isolate resveratrol effects from potential ethanol effects, demonstrating good experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Immunohistochemistry and confocal imaging were performed using established protocols with multiple quantification strategies tailored to different markers and brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C51 describe comprehensive anatomical methods including fixation protocols with citation (C33-C34), imaging equipment (C35), and multiple quantification approaches appropriate for different markers (C44-C48). The sampling strategies (C42-C43, C50) and use of ratio measurements to account for regional differences (C46-C47) demonstrate methodological sophistication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Loss of smell is an early sign of natural aging and neurodegenerative diseases including Alzheimer's and Parkinson's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent well-established knowledge in the field of aging and neurodegeneration. While not cited in the abstract, these are widely accepted observations that provide context for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "The cellular and molecular mechanisms promoting smell loss in aging are not understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 accurately identifies a knowledge gap that motivates the study. This statement appropriately frames the research question and is consistent with the state of the field at the time of publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "The cholinergic system plays an important role in neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 represents established knowledge about cholinergic involvement in neurodegenerative diseases, particularly Alzheimer's disease where cholinergic deficits are well-documented. This provides important context for the translational relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "The fly olfactory system could be a useful model for identifying drug targets for neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C13 is speculative about future applications. While the findings on cholinergic neuron degeneration and SOD2 rescue are compelling, the translational potential remains to be demonstrated. The claim appropriately uses conditional language ('could be'), acknowledging its speculative nature.",
+    "result_type": "MINOR"
+  }
+]

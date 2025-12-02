@@ -1,0 +1,2048 @@
+{
+  "submission": {
+    "id": "07efabcf-9434-46db-9290-9bd370d4ffc6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T18:56:04.892709Z",
+    "updated_at": "2025-12-01T18:56:04.892709Z"
+  },
+  "content": [
+    {
+      "id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "submission_id": "07efabcf-9434-46db-9290-9bd370d4ffc6",
+      "content_type": "manuscript",
+      "content_text": "# Saccadic suppression as a perceptual consequence of efficient sensorimotor estimation\n\n## Authors\n\n- Fr\u00e9d\u00e9ric Crevecoeur<sup>1</sup> ([ORCID: 0000-0002-1147-1153](https://orcid.org/0000-0002-1147-1153)) \u2020\n- Konrad P Kording<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Institute of Information and Communication Technologies, Electronics and Applied Mathematics, Universit\u00e9 catholique de Louvain Louvain-la-Neuve Belgium\n2. Institute of Neuroscience, Universit\u00e9 catholique de Louvain Louvain-la-Neuve Belgium\n3. Rehabilitation Institute of Chicago, Northwestern University Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHumans perform saccadic eye movements two to three times per second. When doing so, the nervous system strongly suppresses sensory feedback for extended periods of time in comparison to movement time. Why does the brain discard so much visual information? Here we suggest that perceptual suppression may arise from efficient sensorimotor computations, assuming that perception and control are fundamentally linked. More precisely, we show theoretically that a Bayesian estimator should reduce the weight of sensory information around the time of saccades, as a result of signal dependent noise and of sensorimotor delays. Such reduction parallels the behavioral suppression occurring prior to and during saccades, and the reduction in neural responses to visual stimuli observed across the visual hierarchy. We suggest that saccadic suppression originates from efficient sensorimotor processing, indicating that the brain shares neural resources for perception and control.\n\n## Introduction\n\nPeople skillfully combine acquired knowledge, and sensory feedback, a combination that is typically modeled using Bayesian statistics (K\u00f6rding, 2007; Angelaki et al., 2009). This framework effectively captures behavior in numerous tasks broadly corresponding to perceptual decision-making (Ernst and Banks, 2002; van Beers et al., 1999; Fetsch et al., 2011; Drugowitsch et al., 2014; Acuna et al., 2015), or online movement control (Wolpert et al., 1995; K\u00f6rding and Wolpert, 2004; Izawa and Shadmehr, 2008; Crevecoeur et al., 2016). Although perceptual decision-making and sensorimotor control are often considered different phenomena, they cannot really be dissociated in the real world \u2013 we need to use the same brain for movement and perception (Cisek, 2012; Wolpert and Landy, 2012). Perceptual decision-making and sensorimotor behaviors may thus be linked.\n\nA salient case of crosstalk between perception and sensorimotor behavior is saccadic suppression: visual acuity is reduced around the time of a saccade. It is often assumed that this mechanism maintains stable perception of our surroundings (Wurtz, 2008). However, the behavioral and neural dynamics of saccadic suppression are difficult to explain if it were purely related to compensating for shifts in the retinal image induced by saccades and by the need to maintain perceptual stability.\n\nIndeed, previous work has shown that saccadic suppression is controlled centrally, and typically lasts for\u00a0>100 ms even for saccadic movements of\u00a0~50 ms (Ibbotson and Krekelberg, 2011). Furthermore, simulating the displacement of the retinal image without a saccade does not elicit similar suppression as during real saccades (Diamond et al., 2000; Thiele et al., 2002). As well, the reduction of visual acuity was reported to selectively impact the magnocellular pathway (Burr et al., 1994), although motion detection is still active (Castet and Masson, 2000). It is unclear why maintaining perceptual stability would require such a long, powerful, and selective suppression of sensory feedback, if it were purely related to perception, and independent of motor control. After all, there is a price to be paid to discard so much sensory information for some 100 ms. Thus, saccadic suppression is a complex phenomenon, for which a meaningful function has not been clearly identified.\n\nHere we phrase this problem in the framework of Bayesian estimation during closed-loop control of saccades. In this framework, we show theoretically that the timing of saccadic suppression is expected if the brain uses the same posterior beliefs about the state of the eye for perception and control. Indeed, our model shows that uncertainty about the instantaneous state of the eye should increase with motor commands as a result of signal-dependent noise and of sensorimotor delays, making delayed sensory information less reliable around the time of movement. In an optimal estimation framework, this gives lower weights to sensory inputs when we move. Our study thus shows how sensorimotor control can give rise to sensory suppression in an efficient brain, provided that the nervous system uses a common substrate for perception and for control. We discuss how this theoretical result may arise from shared neural resources supporting perceptual and motor systems.\n\n## Results\n\n### An optimal control model of eye movements\n\nIf we want to explore the relationship between saccadic suppression and control we need to model the underlying system. First, the nature of the representation matters: although saccades are often simplistically viewed as ballistic (or open-loop) movements, these movements are monitored online through the corollary discharge (Van Gisbergen et al., 1981; West et al., 2009; Goossens and Van Opstal, 2000; Xu-Wilson et al., 2011; Sommer and Wurtz, 2008; Optican, 2009). Second, sensory feedback matters: we are not \u2018blind\u2019 during saccades. There is no peripheral interruption of sensory inflow, and information about specific spatiotemporal frequency or color is still good (Burr et al., 1994; Burr and Morrone, 1996). Moreover, target jumps during long saccades can influence movement (Gaveau et al., 2003). We should thus model saccades as driven by closed-loop control (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25073/elife-25073-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic representation of the control and estimation architectures. We consider a closed loop controller based on optimal feedback control and state estimation. The dynamics of the eye plant corresponded to a second order system with time constants taken from the literature (13 ms and 224 ms). Bottom: Optimal state estimator based on usual Kalman filtering, and augmented with the extrapolation of sensory feedback to compensate for sensorimotor delays (Sensory Extrapolation, red box). The symbolic representation of the signals in blue follows the same notations as in the Materials\u00a0and\u00a0methods: $y(t)$ is the sensory feedback, $x^(t|y)$ is the extrapolation of sensory feedback, $u(.)$ is the sequence of previous and current control commands, $x^^{P}(.)$ and $x^(.)$ are the prior and posterior estimates at the corresponding time steps. (b) Top: Modeled saccadic eye movement from the first ($x_{1}^{*}$) to the second fixation target ($x_{2}^{*}$). Bottom: Associated control function. Time zero corresponds to the end of the fixation period to the first target. (c) Illustration of the sensory extrapolation performed in the state estimator. The simulated task is to track the target, which suddenly starts moving (velocity jump) with or without position jump in the opposite direction. The simulated eye trajectory shows how the extrapolation of target motion over the delay interval generates a catch up saccade (black arrow). This compensatory movement is also illustrated in the velocity trace.\n\nTo describe saccades in the context of closed loop control, we model a controller that takes the sensory feedback and the corollary discharge as input, and outputs motor commands. We employ a Linear-Quadratic-Gaussian (LQG) controller, which can deal with noise both in sensory feedback and control signals. We use a second order model for the oculomotor plant (see Materials\u00a0and\u00a0methods). This explicit model of saccadic control allows us to derive predictions of eye movement behaviors and gives us a control process that we can relate to saccadic suppression.\n\nThe important feature of this control design in the context of this paper is its state estimator. The control of saccadic eye movements relies on the corollary discharges as well as on sensory feedback, which jointly allow state estimation. This state estimator has two main components. The first is a forward model that dynamically updates the current estimate based on the corollary discharge (Figure 1a, bottom: Forward Model). The output is a prior estimate of the next state at the next step. The second component is the sensory extrapolation, which combines the delayed sensory feedback with the corollary discharge to estimate the current state (Figure 1a: Sensory Extrapolation, red). This sensory extrapolation is critical for the behavior of the model.\n\nThe presence of sensory extrapolation is supported by previous studies showing that error signals used to generate saccades depend on an estimate of the present state of the eye or of the target (Bennett et al., 2007; Ferrera and Barborica, 2010; Diaz et al., 2013; Blohm et al., 2005; de Brouwer et al., 2002), which clearly requires extrapolation of sensory feedback. Indeed, because the system only has access to the delayed feedback, this feedback must be extrapolated to compare it with the one step prediction, or prior. This operation does not appear explicitly in standard control models in which sensorimotor delays were considered (Izawa and Shadmehr, 2008; Crevecoeur et al., 2016; Todorov and Jordan, 2002; Crevecoeur and Scott, 2013), because these previous studies used system augmentation, and the sensory extrapolation in this case falls out of the block-structure of the model. However, this component is necessary, and ignoring it can lead to instability (Crevecoeur and Scott, 2013). In the present model, the sensory extrapolation is performed explicitly (Equation 5), which also allows us to incorporate the impact of the signal-dependent noise that accumulates over the delay interval during the extrapolation (see also Materials\u00a0and\u00a0methods). The model then corrects the one step prediction, weighting the difference between feedback and expected feedback optimally (Figure 1a, $K(t)$ is the Kalman gain).\n\n### Saccades and smooth pursuit\n\nThe first behavior that our model must describe is a saccade. The model reproduces stereotyped, step-like trajectories (Figure 1b, top), like those found during real saccades. Moreover, the associated commands provide a typically wide agonist burst, followed by a short, sharp antagonistic inflection, which stabilizes the eye at the target (Figure 1b, bottom). This pattern of control, shaped by the fast time constants of the oculomotor plant, is compatible with the pattern of burst neurons that generate saccades (Van Gisbergen et al., 1981). Thus the model replicates both behavioral and physiological aspects of saccadic eye movements.\n\nA second behavior that our model can capture is smooth pursuit. We do not imply that these two behaviors are supported by the same neural hardware, and the model does not make any prediction about their neural implementation. Instead, we simply assume that optimal state estimation underlies both saccades and pursuit, which is in agreement with the hypothesis that these movements are distinct outputs of shared sensorimotor computations (Orban de Xivry and Lef\u00e8vre, 2007; Krauzlis, 2004). The model reproduces typical responses to changes in target velocity, occurring with or without initial target jump (Figure 1c). When the target starts moving (velocity jump), position error accumulates over the delay interval, which in turn requires a rapid compensatory movement to catch up with the target (Figure 1b, light blue). Although the controller was not explicitly designed to model the interaction between saccades and pursuit, the catch-up saccade in Figure 1b naturally falls out of the simultaneous correction for errors both in position and velocity. In contrast, when the target jumps backwards at the onset of the velocity jump (Figure 1c, dark blue), the eye starts moving smoothly and there is no catch-up saccade (Rashbass, 1961). The model also reproduces corrections following perturbations applied during movement through internal monitoring of the corollary discharge, as well as online corrections for target jumps occurring during long saccades (simulations not shown). In all, the model generates typical trajectories and control commands associated with eye movements, and reproduces the dynamic estimation of the target resulting from the sensory extrapolation.\n\n### Saccadic suppression as a consequence of optimal estimation\n\nOur muscles produce signal dependent noise; the stronger the muscles pull, the more noisy the state. The phasic activity associated with the agonist burst induces a peak in the variance of the control signal (Figure 2a, solid). Thus motor commands produce instantaneous noise, and because of the delay, there is no way for the nervous system to directly subtract or filter out this noise. As a consequence, the extrapolation error computed over an interval that includes even a fraction of the control burst has higher variance. In other words, moving the eye effectively induces visual uncertainty, which can only go back to baseline after the end of muscle activation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25073/elife-25073-fig2-v2.jpg)\n\n**Figure 2.:** (a) Variance of the control signal (solid) and of the extrapolation of sensory feedback (dashed). Four times are represented to illustrate how signal-dependent noise impacts the extrapolation of sensory feedback is ($t_{1}$ = \u2212100 ms, $t_{2}=\u00a0$\u221250 ms, $t_{3}=\u00a0$0 ms, and $t_{4}=\u00a0$50 ms). The dots with similar color represent the moment when the information at the corresponding time is available ($t_{i}+100ms$). Observe the increase in extrapolation variance associated with stimuli between $t_{1}$ and $t_{2}$. (b) Weight of the position feedback for correcting the estimate of the position. This weight is directly taken from the Kalman gain matrix. The reduction in Kalman gain at each selected time point is directly linked to the increase in variance. (c) Representation of a modeled saccadic eye movement, with the gray area corresponding to the interval of time during which sensory input is given less weight as a result of the extrapolation variance. (d) Control and extrapolation variance normalized to the maximum values obtained for saccades of 20 deg (top traces). (e) Weight of sensory feedback for the two simulations. Observe that although the catch-up saccade is very small (~2 deg), the transient increase in extrapolation variance gives rise to a reduction in weight. (f) Illustration of the smooth pursuit task with (dark blue) or without (light blue) initial target jump occurring simultaneously with the velocity jump. The absence of target jump evokes a catch-up saccade, which is associated with ta reduction in sensory weight. There is no reduction with the initiation of smooth pursuit.\n\nThe time-varying variance induced by control-dependent noise has a direct impact on the weight of retinal signals, through the Kalman gains ($K(t)$, Figure 2b). Recall that this matrix weights the difference between the current and expected estimates of both position and velocity, conditional upon the available visual information (see Materials\u00a0and\u00a0methods, $y(t)$, Equation 4 and Figure 1) to correct the one-step prediction. We thus focus on the weight of position feedback, as it appears closely related to saccadic suppression.\n\nDuring saccades, the extrapolation variance increases as a result of signal dependent noise and of sensorimotor delays ($V_{t}$, Equation 8). As the Kalman gain is inversely proportional to this variance, the transient increase associated with the agonist burst generates a reduction in $K(t)$, and thus lowers the weight of position feedback about the eye position in the state estimator. And indeed, sensory suppression is seen before and during the time of simulated saccades (Figure 2b). The period of suppression predicted by the model is long because the high variance period includes the movement time in addition to the delay (gray rectangle in Figure 2c). The model predicts that the onset of saccadic suppression should precede movement onset by a time interval equal to the delay, which was fixed to 100 ms in the model (see Materials\u00a0and\u00a0methods), although previous work suggested that it could be shorter (Gaveau et al., 2003). Considering that processing times in the retina approach\u00a0~50 ms (White et al., 2009), a conservative estimate for the onset of suppression according to the model ranges from 100 ms to 50 ms prior to movement onset. Our theoretical predictions thus indicate that feedback about retinal stimuli from this time window should be given less weight to optimally estimate the state of the eye.\n\nWe can also see related effects in the simulated pursuit task. The presence of a catch up saccade, even a small one (4deg in Figure 2), is sufficient to evoke a transient increase in extrapolation variance (Figure 2d\u2013f). This results in a reduction in the weight of sensory feedback with similar timing as for larger saccades. In contrast, when the eye starts moving smoothly (Figure 2f), there is no catch-up saccade needed and the model predicts no visible change in the weight of sensory feedback. Because the model is linear, there is no transition between the simulated pursuit and saccade task, thus the apparent transition in the behavior results from the correction for the error in position that accumulates during the delay interval (Figures 1 and 2, light blue). The fact that suppression occurs for saccades specifically results from the high control signals required for these movements. In contrast, the pursuit task without a saccade uses smaller control signals that do not evoke any visible change in the weight of sensory feedback. The behavioral finding (Sch\u00fctz et al., 2007) that saccades but not smooth pursuit elicit suppression of sensory feedback, and that the suppression scales with the amplitude of the catch-up saccade, directly results from this model.\n\nBehaviorally, we can analyze data from perception experiments. According to our hypothesis, suppression should occur prior to movement onset, reach a maximum close to movement onset (Figure 3b), and scale with the movement amplitude with relatively invariant timing across amplitudes. Interestingly, this goes even down to the level of microsaccades, inducing partial suppression despite being very small in amplitude (Hafed and Krauzlis, 2010). These known properties of saccadic suppression are in line with the model prediction (Figure 3b, black): contrast sensitivity is reduced and visual stimuli such as flashes, gratings, or small displacements are less likely to be accurately perceived (Diamond et al., 2000; Burr et al., 1994; Watson and Krekelberg, 2011; Burr et al., 1999; Bridgeman et al., 1975; Beeler, 1967). This even happens when the stimuli are chosen so that the eye movement does not change the retinal image, which is compatible with the model (see the simulated contrast reduction of a white stripe, Figure 3a). Finally, although timing is preserved across amplitudes (Ibbotson and Krekelberg, 2011), the model predicts that the magnitude of suppression scales with the saccade amplitude as observed experimentally (Ridder and Tomlinson, 1997). This scaling is a direct consequence of signal-dependent noise.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25073/elife-25073-fig3-v2.jpg)\n\n**Figure 3.:** These traces are similar as Figure 3a and c. The images represent the convolution of a horizontal stripe with a Gaussian kernel with variance proportional to the extrapolation variance to highlight that assigning higher variance may lead to reduced contrast, even when the movement is aligned with the stimulus orientation. Times correspond to the Figure 3. The decrease in Kalman gain occurs from 0 to 150 ms relative to saccade onset (solid trace: time locked), thus the window during which stimuli are suppressed corresponds to \u2212100 to 50 ms (dashed trace: stimulus-locked). (b) Illustration of how the predicted saccadic suppression compares with previously reported suppression from behavioral and neural data. The duration of the perisaccadic suppression in the model is the sum of the temporal delay and of the movement time as represented above with the gray rectangle. Comparisons are approximate as movement time was not the same across all studies. The solid and dashed traces for saccadic suppression in SC indicates the range of onset and offset as given by Hafed and Krauzlis\u00a0(2010). Other intervals of saccadic suppression were drawn following the authors\u2019 summary or based on visual inspection of the corresponding references.\n\nA brief increase in the Kalman gain following the saccade can be observed in Figures 2 and 3. This increase is due to the fact that the absolute value of the motor command is transiently lesser than the activity required to maintain the eye at the eccentric target. Thus, during this short interval, the Kalman gain becomes greater than during the simulated fixation. This feature resembles post-saccadic enhancement, which characterizes the enhanced motor response to a velocity jump in the target following a saccade (Lisberger, 1998; Ibbotson et al., 2007). However, this transient increase in the model was not sufficient to generate a behavior similar to the one observed experimentally, despite the fact that larger differences in the Kalman gain can do so (simulations not shown). This observation and the fact that motion detection is active during saccades (Castet and Masson, 2000) suggest that the model needs further refinement to fully capture the processing of velocity signals during and after saccades.\n\nThe model also predicts changes in neural activity relative to the timing of saccadic suppression. One way to implement the Kalman gains is to simply drive neurons less strongly when there is more uncertainty. This should predict reduced firing rates around the time of saccades. Indeed, a large number of experimental studies have found such a neural suppression across the hierarchy of visual areas. (Ibbotson et al., 2008). The pathways begin with the lateral geniculate nucleus (LGN) (Reppas et al., 2002) and the superior colliculus (SC) (Hafed and Krauzlis, 2010), and continue in the cortical areas V1 (Kagan et al., 2008), MT, MST, MSTd (Ibbotson et al., 2008; Bremmer et al., 2009), and VIP (Bremmer et al., 2009) (Figure 3b, colored bars). Interestingly, the timing is very similar across brain regions, which emerges naturally from the fact that the loop through the outside world with its delays is the dominating timescale. Thus there is suppression of visual signals across the entire visual hierarchy consistent with a sensorimotor origin of saccadic suppression.\n\n## Discussion\n\nWe have presented a feedback control model that assumes signal-dependent noise and delays, and uses state estimation to optimally control eye movements. It is built on the insight that motor noise is unavoidable and produces sensorimotor uncertainty. It is also based on the key assumption that saccades are supported by closed-loop control including retinal signals. This assumption is further developed below. This model allowed us to propose the hypothesis that saccadic suppression originates from efficient sensorimotor integration. Behaviorally, it describes the dynamics of both smooth pursuit and saccades. Perceptually, it describes the suppression of sensation around the time of saccades. Neurally, it captures the reduction of neural responses to visual stimuli presented before or during saccades.\n\nThe important motivation behind this study was that cancelling the retinal shift induced by the saccade, as commonly assumed, does not explain the phenomenon of saccadic suppression. Indeed, suppression in this case should only occur when the eyes move, and should not be stronger than the moderate loss in performance associated with saccades simulated as a rapid displacement of the visual scene (Diamond et al., 2000). All discarded information beyond movement-related effects would otherwise represent a net loss (up to\u00a0~100 ms for some brain areas, Figure 3b). Thus it is clear that saccadic suppression is either very inefficient, or that maintaining a stable visual scene is just not its only purpose. We provide an alternative hypothesis that captures suppression qualitatively in the context of sensorimotor control. Rather than providing a definite answer to why suppression occurs, we highlight a plausible explanation and expect that it provide an insightful framework for interpreting data about visual processing.\n\nAlthough the model is not straightforward to test experimentally, our assumption about a common origin for saccadic suppression and movement control makes testable predictions for prospective experimental work. For instance, as we suggest that perception is impaired by sensorimotor control, it is conceivable that control might be impaired by a perceptual task. That is, if it were possible to train participants to pay attention to visual stimuli displayed during saccades, thereby increasing the weight of sensory feedback, then the theory predicts that movement trajectories should become more variable as a result of suboptimal state estimation. There is already clear evidence that the locus of attention and the goal of saccadic movements are linked (Kowler et al., 1995) (and many references thereto). Here our specific prediction is that saccade trajectories should become more variable from trial to trial when participants are forced to use sensory information presented during the interval of saccadic suppression. As well, assuming that saccadic suppression is directly linked to the variance of sensory feedback through the Kalman filter, the model predicts that varying the reliability of sensory information may have an impact on the magnitude of saccadic suppression. Observe that these two predictions also assume that suppression can be flexibly modulated dependent on the behavioral context, which to our knowledge has not been documented.\n\nIn addition to capturing the major aspects of behavioral and neural suppression, our model explains the previous findings of Watson and colleagues (Watson and Krekelberg, 2011), who investigated the detection of noisy gratings in humans, and found that the best explanation for saccadic suppression was a stimulus-independent reduction in the response gain. This result is a key aspect of saccadic suppression: the retinal images do not become intrinsically noisier; instead it is the visual system that responds less to a given stimulus. Our model also accounts for this observation: by reducing the sensory weight in the Kalman gain, the controller becomes less sensitive to sensory information. This is due to the uncertainty induced by the motor commands, which is clearly independent of the retinal image. The contribution of our model is to show that such stimulus-independent reduction in response gain may be rooted in efficient computations about the state of the eye.\n\nWe propose this mechanism as a plausible origin of saccadic suppression, but cannot indicate how the visual system performs this operation at the level of neural circuits. We draw a qualitative link between Kalman filtering and the reduction in sensory weight or neural excitability, and thus this link remains speculative. However, the model does provide hints about what to look for. First, the increase in extrapolation variance clearly results from convolving the motor-dependent noise with the expected eye dynamics over the delay interval. Second, this increase is directly proportional to the integrated motor command. Thus, convolutional networks in the visual system receiving the corollary discharge as input may easily implement a reduction in the gain of neural responses that achieves statistically optimal sensory weighting. Any anatomical or functional similarity between these putative neural operations and neural data may thus provide insight into the circuitry underlying state estimation.\n\nA compelling aspect of our model is its simplicity, as the distinct behaviors and the dynamic estimation simply fell out of the simplest instance of linear stochastic optimal control (LQG). Besides saccadic suppression, our model succeeded at the difficult task of controlling fast movements with comparatively long delays, without artificially interrupting the sensory inflow. While previous models of saccadic control tend to only consider open-loop controllers (Harris and Wolpert, 1998), or closed-loop control with internal feedback only (Optican, 2009; J\u00fcrgens et al., 1981; Chen-Harris et al., 2008), there is evidence that sensory information remains available and may influence online control. Indeed, motion detection during saccades is not suppressed (Castet and Masson, 2000), and peri-saccadic target jumps evoke adaptation (Panouill\u00e8res et al., 2016). In addition, a large retinal slip prior to saccade initiation can elicit curved movements (Schreiber et al., 2006), indicating that retinal information prior to saccade onset can influence online control. Finally, Gaveau and colleagues reported partial corrections of eye trajectories following target jumps occurring during long saccades (Gaveau et al., 2003). The fact that these corrections accounted for a small proportion of the target jump can be explained in the model, as a lower weight of sensory feedback leads to only partial correction of the target jump (estimates take longer to converge to the true value). Thus, although evidence may not be definitive, these previous observations collectively suggest that sensory feedback must be considered in a model of neural control of saccades.\n\nBased on this assumption, our model predicts that sensory feedback must be strongly reduced, but not completely suppressed, as observed experimentally (Castet and Masson, 2000). This is because the Kalman filter achieves an optimal projection in the probabilistic sense, by making the estimation error orthogonal to (or statistically uncorrelated with) the estimated state. Thus, the decrease in the Kalman gain during movement indicates that state information prior to the saccade still carries some information about the current state, and thus can be exploited to derive optimal estimates. The resulting control law (see Materials\u00a0and\u00a0methods, Equation 10) plays the role of a burst generator, and can be easily inserted as such in more complex models of gaze control.\n\nWe have formulated the hypothesis that saccadic suppression originates from sensorimotor processing, although suppression has been characterized behaviorally as a perceptual phenomenon. Thus our theoretical developments imply that perception and control share a common neural substrate in the visual system. There are already strong pieces of evidence for shared resources. Indeed, previous work emphasized that perception and action share estimates of target speed (Priebe and Lisberger, 2004). Recently, a strong link between saccadic suppression and visual-motor neurons has been established in superior colliculus of macaque monkeys (Chen and Hafed, 2017). Furthermore, the motion on its own must not be suppressed to maintain perceptual stability, instead it must be equal to the commanded movement monitored online, thus perception is also conditional upon the ability to integrate extra-retinal signals accurately, both during saccades and pursuit (Sommer and Wurtz, 2008; Blohm et al., 2005; Hafed and Krauzlis, 2010; Bedell and Lott, 1996).\n\nIf perceptual and sensorimotor processes were completely decoupled, posterior beliefs about sensory information could be separated from movement-related effects, and perception around the time of saccades could be as good as during simulated saccades (Figure 4, H1). Alternatively, a motor origin of saccadic suppression implies that the same posterior beliefs are shared for perception and control, which is suboptimal as it impacts perception of otherwise reliable sensory signals (Figure 4, H2). Thus the hypothesis of shared resources requires a functional explanation. Although perception on its own is suboptimal during saccades (we discard a lot of meaningful information), the shared resources model is clearly cheaper in terms of neural resources. It may thus be globally optimal to tolerate perceptual loss during saccades rather than commit to more neural resources for visual processing, considering perceptual and control systems together. Using the same posterior belief for perception and action also ensures self-consistency, in the sense that the same stimulus is not deemed more or less reliable dependent on how we use it. Self-consistency is known to characterize perceptual judgment tasks, where participants make continuous use of the hypothesis to which they previously committed (Stocker and Simoncelli, 2007). Our model suggests that similar principles may govern the use of posterior beliefs about the state of the eye for perception and control, indicating that these functions emerge from a shared neural substrate. We hope that future work will investigate whether this theory is generally applicable to other examples of active sensory suppression associated with voluntary actions such as force generation and reaching (Chapman et al., 1987; Blakemore et al., 1999; Seki et al., 2003).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25073/elife-25073-fig4-v2.jpg)\n\n**Figure 4.:** In the hypothesis of separated resources (H1), computations of the posterior belief are carried out independently for perception and control. In this scenario, the uncertainty induced by the control commands does not impact the perceptual estimate. This possible architecture is optimal in the sense that it would minimize loss of sensory information. In the hypothesis of shared resource (H2), the computation of the posterior belief about the state of a variable is shared for perception and control, thus both processes are similarly influenced by control-dependent noise. Although the first hypothesis is optimal, the second hypothesis is more efficient in terms of neural resources, and is also self-consistent (see Discussion).\n\n## Materials\u00a0and\u00a0methods\n\n### Biomechanical model\n\nWe consider a second-order, low-pass filter as a biomechanical model of the oculomotor plant. Based on previous modeling work (Robinson et al., 1986) we set the time constants to $\\tau_{1}=224ms$ and $\\tau_{2}=13ms$. In the sequel, scalars are represented with lower-case characters, vectors with bold lower-case and matrices with capitals. Thus the state-space representation of the continuous-time differential equation representing the eye dynamics was:\n\n$$\n[x._{1}x._{2}]=\u00a0[01\u22121/(\\tau_{1}\\tau_{2})\u2212(\\tau_{1}+\\tau_{2})/(\\tau_{1}\\tau_{2})][x_{1}x_{2}]+[01/(\\tau_{1}\\tau_{2})]u\n$$\n\nwhere $x_{1}$ is the eye angle, $x_{2}$ is the eye velocity, $u$ is the command input and the dot operator is the time derivative. The explicit dependency on time was omitted for clarity. This representation takes the form\n\n$$\nx.=Ax+Bu\n$$\n\nwith $x:=[x_{1}\u00a0\u00a0x_{2}]^{T}$ representing the state of the system.\n\nThe plant model was then augmented with the target position and target velocity, and transformed into discrete time model to include sensorimotor noise. The discrete-time stochastic dynamics governing the change of state over time, and the equation describing the visual signals available in the brain ($y(t)$) are as follows:\n\n$$\nx(t+dt)=A_{d}x(t)+B_{d}u(t)+\\alpha\\epsilon_{t}B_{d}u(t)+\u03be_{t},\n$$\n\n\n\n$$\ny(t)=x(t\u2212\\deltat)+\\sigma_{t}\n$$\n\nThe matrices $A_{d}$ and $B_{d}$ form the discrete-time state space representation of the continuous-time system defined in Equation 1, which for a discretization step of $dt$ corresponds to: $A_{d}=e^{dtA}$, and $B_{d}=(\\int0dte^{sA}ds)B$. The constant $\\alpha>0$ is a scaling parameter; $\\epsilon_{t}$, $\u03be_{t}$ and $\\sigma_{t}$ are Gaussian noise disturbances. The multiplicative noise ($\\epsilon_{t}$) is a scalar with zero mean and unit variance, whereas the additive sources of noise are 4-dimensional random disturbances with zero mean and variance set to $\u03a3_{\u03be,\\sigma}$, which will be defined below. The measurement delay was $\\deltat=100ms$ in a agreement with measured and modeled latencies of rapid saccadic responses to visual stimuli (Munoz and Everling, 2004; Stanford et al., 2010). The subscript $t$ for the random noise disturbances was used to remind that these series do not have finite instantaneous variation; but they have finite variance over the discretization interval of $dt$.\n\nThe variable $y(t)$ defined in Equation 4 represents the retinal information that is available to control the eye movement, which in the context of this paper is the state vector delayed by $\\deltat$ and corrupted by the sensory ($\\sigma_{t})$. Thus this definition captures the hypothesis that the available sensory information is a noisy and delayed measurement of the state. Recall that the augmented state vector includes position and velocity, as well as the target position and velocity.\n\n### Closed-loop controller\n\nOptimal estimation and control of the stochastic system defined in Equations 3 and 4 can be derived in the framework of extended Linear-Quadratic-Gaussian control (LQG), including the effect of control and state-dependent noise (Todorov, 2005). However this approach is not necessarily well suited for handling sensorimotor delays because it requires system augmentation (Crevecoeur and Scott, 2013), and as a consequence the estimator achieves optimal (probabilistic) projection of the prior estimate onto the delayed state measurement (Anderson and Moore, 1979). Since we know that the visual system extrapolates sensory information to compute the present state of the eye or of a moving target (Bennett et al., 2007; Ferrera and Barborica, 2010; Diaz et al., 2013; Blohm et al., 2005), we were interested to derive an optimal estimator that explicitly extrapolates sensory signals, captured in $y(t)$, over the interval $\\deltat$ (see also Figure 2). The key aspect of this estimator design is that, by taking into account the control function $u(s),\u00a0t\u2212\\deltat\\leqs\\leqt$, the variance of the extrapolated sensory signal is dynamically adjusted as a function of the control-dependent noise (3rd term of Equation 3).\n\nMore precisely, we assume that neural processing of sensory signals consists in computing an estimate of the present state of the eye given the delayed sensory signals as follows:\n\n$$\nx(t|y)=e^{\\deltatA}y(t)+\\intt\u2212\\deltatte^{(t\u2212s)A}Bu(s)ds.\n$$\n\nUsing the notation $M(t):=e^{tA}$, it is easy to observe that the extrapolation error ($\u0394_{t}$) follows a Gaussian distribution defined as follows:\n\n$$\nx(t|y)=x(t)+\u0394_{t},\n$$\n\n\n\n$$\n\u0394_{t}\u223cN(0,V_{t}),\n$$\n\n\n\n$$\nV_{t}=M(\\deltat)\u03a3_{\\sigma}M(\\deltat)^{T}+\\intt\u2212\\deltatt\\alpha^{\u2032^{2}}M(t\u2212s)Bu(s)u(s)^{T}B^{T}M(t\u2212s)^{T}ds,\n$$\n\nwhere $\\alpha^{\u2032}:=\\alpha(dt)^{\u22121/2}$ was defined in agreement with the unit-variance Brownian noise disturbance considered for the stochastic differential equation.\n\nWith these definitions, we can derive an adaptive estimator based on standard Kalman filtering using the extrapolated state (Equation 8) instead of the available state measurement (Equation 4). The state estimate is computed in two steps as follows:\n\n$$\nx^^{P}(t+dt)=A_{d}x^(t)+B_{d}u(t)\n$$\n\n\n\n$$\nx^(t+dt)=\u00a0x^^{P}(t+dt)+K(t)(x(t|y)\u2212x^(t)),\n$$\n\nand the Kalman gain, $K(t)$, as well as the covariance of the estimated state are updated iteratively following standard procedures (Anderson and Moore, 1979). Observe from Equation 10 that a reduction in the Kalman gain has a direct impact on the use of visual feedback through the relationship between this feedback ($y(t)$) and the sensory extrapolation ($x(t|y)$, Equation 5). In other words, visual information conveyed in the sensory feedback participates less to the estimation when the Kalman gain is low.\n\nObserve that the separation principle does not hold because the variances of the one-step prediction and of $\u0394_{t}$ both depend on $u_{t}$. Thus our approach is valid under the assumption that the control must not be jointly optimized with the state estimator. Instead of optimizing iteratively the controller and the state estimator as in the extended LQG framework (Todorov, 2005; Phillis, 1985), we computed the controller independently based on the heuristic assumption that the separation principle applied, and then optimized the state estimator defined in Equations 9\u201310 by taking into account the effect of control-dependent noise explicitly (Equations 6\u20138). The controller was thus obtained by solving the LQG control problem while ignoring the multiplicative noise in Equation 3 as follows:\n\n$$\nu(t)=\u00a0\u2212(R+B_{d}^{T}S_{t+1}B_{d})^{\u22121}B_{d}^{T}S_{t+1}Ax^(t)\n$$\n\nIn Equation 11, $R$ represents the cost of motor commands, and the matrices $S_{t}$ are computed offline following standard procedures (Todorov, 2005; Astrom, 1970).\n\nWe developed this approach to include the extrapolation of sensory data while considering the control over the delay interval explicitly. Using feedback control based on a predicted state is known as finite spectrum assignment (FSA), which is germane to a Smith predictor in that it aims at removing the delay from the feedback loop (Zhong, 2010). Here, FSA was chosen to reconstruct the predicted state (instead of the system output as for the Smith predictor), allowing the use of position and velocity estimates in the control law (Equation 11).\n\n### Numerical simulations\n\nThe only free parameters are $\\alpha$ (the scaling of the signal dependent noise), the covariance matrices of $\u03be_{t}$ and $\\sigma_{t}$ (respectively $\u03a3_{\u03be}$ and $\u03a3_{\\sigma}$), and the cost-function used for control. We used the following values: the constant $\\alpha$ was set to $0.08$, $\u03a3_{\u03be}$ was $10^{\u22123}\\timesB_{d}B_{d}^{T}$ and $\u03a3_{\\sigma}$ was $10^{\u22126}\u00a0$\u00a0times the identity matrix of appropriate dimension. These parameters were manually adjusted so that when adding the signal-dependent term to the variance of the extrapolation error (Equation 8), the Kalman gains converged to steady-state values and the variances of the extrapolated state and of the motor noise were comparable during fixation. It is clear that changing the noise parameters may influence the results qualitatively. However the key feature of the adaptive estimator is that the extrapolation variance increases monotonically with the square of the motor command, which is why the extrapolated measurement is dynamically reduced during movement. This aspect does not depend on the different noise parameters.\n\nThe cost parameters were adjusted to generate simulated saccades compatible with typical recordings of eye movements in humans, and these parameters do not impact the results qualitatively. For saccadic movements, we simulated two fixation periods at the initial ($x_{1}^{*}$) and final ($x_{2}^{*}$) targets during which the cost of position error was $Q_{FIXATION,\u00a0i}=(x_{1}\u2212x_{i}^{*})^{2}$. The two fixation periods were separated by the movement time, which was a 50 ms window during which the eye was free to move without any penalty on the state vector. For the smooth movements in response to velocity jumps, we simulated a fixation to the target and changed the target state during a simulation run. The cost of motor commands in all cases was $Ru(t)^{2}$, with $R\u2236=0.01$. Finally we used a discretization step of 5 ms.\n\nOne difficulty is that the extrapolation requires that all state variables, including the target, be observed independently (Equation 4). This is not fully compatible with the visual system, because there is no measurement of the target state independent of the state of the eye. This limitation could be overcome by considering another observer that reconstructs the state vector prior to extrapolating the sensory feedback. Here, instead of considering such additional observer, we injected similar amounts of signal-dependent noise in the sensory feedback about the state of the eye as about the state of the target. This procedure was chosen for simplicity and captures the intuitive idea that if the eye position is very noisy, then information about the target location logically shares the same uncertainty.\n",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "9ab09997-0652-42ec-8aa8-07ed2737d276",
+      "submission_id": "07efabcf-9434-46db-9290-9bd370d4ffc6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, Wake Forest School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25073.007](https://doi.org/10.7554/eLife.25073.007)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Saccadic suppression as a perceptual consequence of efficient sensorimotor estimation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Van Essen as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors explore the hypothesis that saccadic suppression arises from efficient sensorimotor integration. That is, signals relating to eye position and speed may, and should, influence visual processing. This is a conceptually novel idea and an interesting new take on an old problem, as there is now an almost limitless volume of data showing that vision is attenuated during saccades and excellent evidence that this is generated through an internal mechanism. The problem is that we still struggle to understand how the attenuation comes about and why it appears to extend across such a large period of time (including long before saccades). The proposed implementation of the hypothesis as a well-defined control system adds to the rigor.\n\nAt the heart of the concept is the idea that the motor commands that are generated to make a saccade are interwoven into the neural network circuits that control perception. This is an appealing concept. The argument is that as the noise inherent in motor commands is amplitude-dependent, it is inevitable that uncertainty increases throughout the system when such commands are issued. Moreover, sensory feedback takes time, which is problematic during saccades as the sensory environment is clearly changing. The authors suggest that these two factors reduce the gain of the sensory input, leading to the reduced sensitivity observed during saccades. The idea of noise injection leading to saccadic suppression has been put forward previously but without the source being indicated. Given that the noise could be injected by the motor signals, it follows naturally that 'reduced sensory sensitivity' could follow.\n\nEssential revisions:\n\nAll reviewers agreed that these are important, conceptually fresh ideas that may be potentially \"game changing\" in our understanding of a fundamental phenomenon (saccadic suppression). The reviewers thought, however, that the following revisions would strengthen the manuscript, making it more accessible to a wide audience and defining more clearly the experimental context that it falls in.\n\n1) The manuscript needs a better description both regarding the text and, in particular, the math, which was deemed hard to follow. The description of the control model is very difficult to understand for a non-expert.\n\nIt was very difficult to link the equations to alterations in visual processing. For instance, take the essential parameter \"y\" in subsection \u201cClosed-loop controller\u201d. What is \"y\"? Does it represent visual signals, and if so, how do they 'calibrate' the sensory information relating to eye position and velocity? Is it somatonsensory information? If so, how does this tie together with saccade-related changes in sensory gain in the visual system? \"y\" is simply too general. The authors need to specify how \"y\" relates to the sensory codes that it represents, and explain how the equations relate back to modified visual processing.\n\nWhile the model formulation seems to imply that the sensory feedback only represents 'eye position' the text refers to it more generally as 'eye state'. In control theory, state can refer to position as well as any of its derivatives (velocity, acceleration). The authors should be really clear on what they actually use, and also why their model only assumes position feedback. Would a model that uses both, position and velocity, make significantly different, maybe better predictions?\n\n2) The work should be formulated more clearly as a hypothesis not a \"result\".\n\nThe step-by-step rationale with which the authors construct their main argument is clear, and the modeling work is sound. However, what is presented is less of a result than a very well-formulated hypothesis - that there is closed-loop visuo-motor feedback of saccadic control - which is expressed as a detailed quantitative model that provides specific and testable predictions.\n\nIt would also help if some over-statements were restructured or avoided. For instance, the last paragraph of the Introduction is confusing because it over-states the results and introduces ideas/concepts that only re-appear again in the Discussion section. It seems too strong a claim that the results are following from \"phrasing this problem as a problem of shared resources.\u2026\". The presented model is not the result of formulating the problem in terms of shared resources. Rather the notion of shared resources is the authors' interpretation that follows from the modeling result and its nice match with reported perceptual suppression patterns in the literature. Similarly, the authors do not really \"show theoretically that several features of saccadic suppression are expected.\u2026\" The one feature they theoretically predict is the time-window of suppression. The other predictions are more speculative and also qualitative.\n\nThe suggestion is to cut the entire last paragraph and move the notion of shared resources to the Discussion (together with Figure 1). It seems sufficient to state at the end of the Introduction that this study shows how an optimal control model that includes sensory feedback (closed-loop) can predict the observed perceptual and neural suppression pattern under the assumption of a common sensory pathway for perception and action.\n\n3) The authors should put more effort into generating novel testable predictions of their hypothesis.\n\nThe authors state that the model is difficult to test experimentally. This may be true, but all reviewers agreed that it would greatly help if the authors included some (even if qualitative) novel experimental predictions. For instance, is there some relationship between motor output reliability and saccadic suppression that could be probed by training repeated saccades? Some effect of the reliability of the sensory input? Is there a reason why uncertainty in the sensory feedback signal due to image noise cannot in some way be traded-off with the motor noise induced by muscle activation?\n\nFor example, given that the close-loop assumption is essential, it would be nice to see predictions for various conditions that modulate signal uncertainty in said sensory feedback, and how that will affect perceptual suppression and movement accuracy. Similarly, since the authors suggest that the model can account for both saccadic and smooth eye movements, it would be nice to see a more nuanced discussion including predictions with regard to a gradual transition between the two movement modes, or more specifically, a gradual change in muscle activation that is the determining factor for kalman gain.\n\n4) All reviewers found the magnocellular/parvocullular difference in suppression problematic. This distinction needs to be better explained, or alternatively, just dropped.\n\nAccording to subsection \u201cSaccadic Suppression as a Consequence of Optimal Estimation\u201d: \"This is interesting because changes in velocity typically have higher frequency contents than changes in position, thus a selective suppression of stimuli with low frequency contents may be directly related to the reduction in the weight of feedback about position, but not velocity.\" This statement is made in relation to the observation that low \"spatial\" frequency information (magnocellular) may be suppressed while high spatial frequency information (parvocellular) is not (or is suppressed less). Here it appears that the authors have generalized high frequency in the time domain to high frequency in the spatial domain. The temporal processing in the magnocellular and parvocellular systems actually overlap significantly. The authors need to carefully explain the relationship between space and time in their model and how this actually relates to visual processing (e.g. spatial frequency) before making major assertions about how their model may explain differences in suppression between parts of the visual system (e.g., how does this relate to the (absence of) suppression of color contrast?).\n\nThe results seem to predict that any component of the sensory feedback that is used for the prediction of eye position would be suppressed. In the Introduction, the authors state that saccadic suppression affects the entire magnocellular (where) pathway which includes motion (velocity), whereas the last paragraph of the Results explicitly excludes suppression of a velocity signal. Please, clarify this apparent contradiction.\n\n5) The general point about the possible contribution of sensorimotor integration is worth making, but it needs to be balanced with a better discussion of the limitations of the hypothesis, and consideration of the full range of saccadic suppression phenomena.\n\nThe core experimental premise for the study's hypothesis is that there is closed-loop visuo-motor feedback of saccadic control. The empirical evidence for this is rather weak. The authors provide one relevant reference (Gaveau et al., 2003), (the West, Welsh and Pratt, 2009 reference does not appear to require sensory integration, only motor signal /CD integration). But, even in this study the influence of sensory input on saccade amplitude (~1 deg change for a 7 deg change in target location) is weak (and other studies typically report it to be zero). The authors should address how the magnitude of the sensory influence affects the control model. It is reasonable to use the Gaveau et al., 2003 paper as the seed for the model and the basis for hypothesis development, but the evidence is not definitive, and studies that found little evidence for closed-loop control should also be discussed, as an alternative viewpoint.\n\nRelated to this, Gaveau et al., 2003 claim that the sensory input is reflected in the motor signal within 50 ms. This may be un-physiologically fast. Because the authors lean heavily on the results of this paper, they should address how this number affects the outcome of the model.\n\nWith regard to perceived velocity and eye-movements, published results from Stephen Lisberger's group also seem relevant and should be discussed. Priebe and Lisberger (J Neurosci, 2004) found that initial smooth pursuit eye-movement velocities exhibit the same contrast-induced biases towards slow speeds as seen in perceived velocities of moving stimuli with eye fixation. These findings not only suggest that velocity might be part of the feedback signals but also that these feedback signals might already be the result of a Bayesian perceptual inference process. It would be useful if the authors could elaborate on this in the context of their model.\n",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dc53ba92-3287-4b55-9a22-cfde92dbd0cd",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C1",
+      "claim": "Humans perform saccadic eye movements two to three times per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans perform saccadic eye movements two to three times per second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact about human eye movement behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "e9015e34-6bdd-4f3f-9cb5-8a7226f2748a",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C2",
+      "claim": "The nervous system strongly suppresses sensory feedback for extended periods of time during saccades in comparison to movement time.",
+      "claim_type": "EXPLICIT",
+      "source": "When doing so, the nervous system strongly suppresses sensory feedback for extended periods of time in comparison to movement time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an established characteristic of saccadic suppression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "9815b9ba-2f6e-4950-a723-c2db92e039d4",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C3",
+      "claim": "A Bayesian estimator should reduce the weight of sensory information around the time of saccades as a result of signal dependent noise and sensorimotor delays.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, we show theoretically that a Bayesian estimator should reduce the weight of sensory information around the time of saccades, as a result of signal dependent noise and of sensorimotor delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction derived from the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "79c0f685-1368-4bd2-bf5e-6e7e63820e8b",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C4",
+      "claim": "The reduction in sensory weight predicted by the Bayesian estimator parallels the behavioral suppression occurring prior to and during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Such reduction parallels the behavioral suppression occurring prior to and during saccades, and the reduction in neural responses to visual stimuli observed across the visual hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the model prediction and known behavioral phenomena.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "72472893-89b6-48e9-ab4a-098e173898fd",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C5",
+      "claim": "There is a reduction in neural responses to visual stimuli across the visual hierarchy during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Such reduction parallels the behavioral suppression occurring prior to and during saccades, and the reduction in neural responses to visual stimuli observed across the visual hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to established neurophysiological observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "531f9670-4f28-4388-a25a-3d558d5f7afc",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C6",
+      "claim": "Saccadic suppression originates from efficient sensorimotor processing.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that saccadic suppression originates from efficient sensorimotor processing, indicating that the brain shares neural resources for perception and control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis proposed by the authors based on their theoretical model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "852f5d11-dad8-4a1f-8fb4-8dcc341fcb2e",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C7",
+      "claim": "The brain shares neural resources for perception and control.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that saccadic suppression originates from efficient sensorimotor processing, indicating that the brain shares neural resources for perception and control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the theoretical model results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "4ebf90f6-29c3-4216-b4c8-d3759b23b79b",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C8",
+      "claim": "People skillfully combine acquired knowledge and sensory feedback using Bayesian statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "People skillfully combine acquired knowledge, and sensory feedback, a combination that is typically modeled using Bayesian statistics (K\u00f6rding, 2007; Angelaki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "13c86e66-7e6c-4ae2-a3c6-8fa98e45efa8",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C9",
+      "claim": "The Bayesian framework effectively captures behavior in perceptual decision-making tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "This framework effectively captures behavior in numerous tasks broadly corresponding to perceptual decision-making (Ernst and Banks, 2002; van Beers et al., 1999; Fetsch et al., 2011; Drugowitsch et al., 2014; Acuna et al., 2015), or online movement control (Wolpert et al., 1995; K\u00f6rding and Wolpert, 2004; Izawa and Shadmehr, 2008; Crevecoeur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "b8da1a9b-c764-4dc6-8147-d0fb3abd813a",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C10",
+      "claim": "The Bayesian framework effectively captures behavior in online movement control tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "This framework effectively captures behavior in numerous tasks broadly corresponding to perceptual decision-making (Ernst and Banks, 2002; van Beers et al., 1999; Fetsch et al., 2011; Drugowitsch et al., 2014; Acuna et al., 2015), or online movement control (Wolpert et al., 1995; K\u00f6rding and Wolpert, 2004; Izawa and Shadmehr, 2008; Crevecoeur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "d2800eef-c7e2-42cf-8368-5bcda71e0811",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C11",
+      "claim": "Perceptual decision-making and sensorimotor control cannot really be dissociated in the real world.",
+      "claim_type": "EXPLICIT",
+      "source": "Although perceptual decision-making and sensorimotor control are often considered different phenomena, they cannot really be dissociated in the real world \u2013 we need to use the same brain for movement and perception (Cisek, 2012; Wolpert and Landy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents a conceptual argument.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "237a714b-68b4-4c9c-8609-abc431c99b79",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C12",
+      "claim": "Visual acuity is reduced around the time of a saccade.",
+      "claim_type": "EXPLICIT",
+      "source": "A salient case of crosstalk between perception and sensorimotor behavior is saccadic suppression: visual acuity is reduced around the time of a saccade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established behavioral phenomenon.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "03556bb3-cc33-4067-9f98-e1046312e394",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C13",
+      "claim": "Saccadic suppression is often assumed to maintain stable perception of our surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "It is often assumed that this mechanism maintains stable perception of our surroundings (Wurtz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a commonly held view supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "c8532e07-740a-4e6b-be87-d077c66d940c",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C14",
+      "claim": "Saccadic suppression is controlled centrally.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous work has shown that saccadic suppression is controlled centrally, and typically lasts for >100 ms even for saccadic movements of ~50 ms (Ibbotson and Krekelberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "1d23a932-016f-45f7-8447-f0055e3205ea",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C15",
+      "claim": "Saccadic suppression typically lasts for >100 ms even for saccadic movements of ~50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous work has shown that saccadic suppression is controlled centrally, and typically lasts for >100 ms even for saccadic movements of ~50 ms (Ibbotson and Krekelberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "afb94f47-f946-480a-a774-55ec2ba5d094",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C16",
+      "claim": "Simulating the displacement of the retinal image without a saccade does not elicit similar suppression as during real saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, simulating the displacement of the retinal image without a saccade does not elicit similar suppression as during real saccades (Diamond et al., 2000; Thiele et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "0bf81b13-62c3-4471-9d53-1ae9be5d82ac",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C17",
+      "claim": "The reduction of visual acuity during saccades selectively impacts the magnocellular pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "As well, the reduction of visual acuity was reported to selectively impact the magnocellular pathway (Burr et al., 1994), although motion detection is still active (Castet and Masson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "af3857ef-e7d5-47a4-a640-5708ae46b0f4",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C18",
+      "claim": "Motion detection is still active during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "As well, the reduction of visual acuity was reported to selectively impact the magnocellular pathway (Burr et al., 1994), although motion detection is still active (Castet and Masson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "17b37a85-71a6-4d31-9786-7d8a35949845",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C19",
+      "claim": "Uncertainty about the instantaneous state of the eye should increase with motor commands as a result of signal-dependent noise and sensorimotor delays.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our model shows that uncertainty about the instantaneous state of the eye should increase with motor commands as a result of signal-dependent noise and of sensorimotor delays, making delayed sensory information less reliable around the time of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "e6430130-7b53-43dc-a54e-be1e0b5fa892",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C20",
+      "claim": "Increased uncertainty makes delayed sensory information less reliable around the time of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our model shows that uncertainty about the instantaneous state of the eye should increase with motor commands as a result of signal-dependent noise and of sensorimotor delays, making delayed sensory information less reliable around the time of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "617e020a-d5f0-4fcc-b9aa-b32083fbcc63",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C21",
+      "claim": "In an optimal estimation framework, increased uncertainty gives lower weights to sensory inputs when we move.",
+      "claim_type": "EXPLICIT",
+      "source": "In an optimal estimation framework, this gives lower weights to sensory inputs when we move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on optimal estimation principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "206a6725-3889-4169-9117-5a5e67b31754",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C22",
+      "claim": "Saccades are monitored online through the corollary discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the nature of the representation matters: although saccades are often simplistically viewed as ballistic (or open-loop) movements, these movements are monitored online through the corollary discharge (Van Gisbergen et al., 1981; West et al., 2009; Goossens and Van Opstal, 2000; Xu-Wilson et al., 2011; Sommer and Wurtz, 2008; Optican, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "dce914b7-c9c6-4ab4-9b0b-7209f39dda26",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C23",
+      "claim": "There is no peripheral interruption of sensory inflow during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no peripheral interruption of sensory inflow, and information about specific spatiotemporal frequency or color is still good (Burr et al., 1994; Burr and Morrone, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "9dc04c21-eef5-4b3d-83de-b9d9d39c5122",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C24",
+      "claim": "Information about specific spatiotemporal frequency or color is still good during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no peripheral interruption of sensory inflow, and information about specific spatiotemporal frequency or color is still good (Burr et al., 1994; Burr and Morrone, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "ba9e0026-9878-4452-b9a4-d3d95cedc02f",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C25",
+      "claim": "Target jumps during long saccades can influence movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, target jumps during long saccades can influence movement (Gaveau et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "c1ae6819-4e3d-408f-b5ec-dc4f7a40823c",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C26",
+      "claim": "The model reproduces stereotyped, step-like trajectories like those found during real saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "The model reproduces stereotyped, step-like trajectories (Figure 1b, top), like those found during real saccades.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between model output and known behavioral data, with reference to Figure 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "6f8080b7-00e0-4b9b-bebe-280d79c3ad61",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C27",
+      "claim": "The model produces a pattern of control with a wide agonist burst followed by a short, sharp antagonistic inflection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the associated commands provide a typically wide agonist burst, followed by a short, sharp antagonistic inflection, which stabilizes the eye at the target (Figure 1b, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model output shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "124bb181-aa90-448e-b2b2-a27ea07ec993",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C28",
+      "claim": "The pattern of control produced by the model is compatible with the pattern of burst neurons that generate saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of control, shaped by the fast time constants of the oculomotor plant, is compatible with the pattern of burst neurons that generate saccades (Van Gisbergen et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between model output and known neurophysiological data, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "8cb53ba7-6e89-4481-8c02-18890704e07a",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C29",
+      "claim": "The model reproduces typical responses to changes in target velocity occurring with or without initial target jump.",
+      "claim_type": "EXPLICIT",
+      "source": "The model reproduces typical responses to changes in target velocity, occurring with or without initial target jump (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of model behavior shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "8be2ba61-8b7b-4fba-967d-8b572477d14f",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C30",
+      "claim": "When the target starts moving, position error accumulates over the delay interval, requiring a rapid compensatory movement to catch up with the target.",
+      "claim_type": "EXPLICIT",
+      "source": "When the target starts moving (velocity jump), position error accumulates over the delay interval, which in turn requires a rapid compensatory movement to catch up with the target (Figure 1b, light blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of model behavior with reference to Figure 1b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "80893240-da35-47e4-9e29-399add535f74",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C31",
+      "claim": "The catch-up saccade naturally falls out of the simultaneous correction for errors both in position and velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the controller was not explicitly designed to model the interaction between saccades and pursuit, the catch-up saccade in Figure 1b naturally falls out of the simultaneous correction for errors both in position and velocity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of emergent model behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "abe34175-b337-49fe-9571-11ba2e89998a",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C32",
+      "claim": "When the target jumps backwards at the onset of the velocity jump, the eye starts moving smoothly and there is no catch-up saccade.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the target jumps backwards at the onset of the velocity jump (Figure 1c, dark blue), the eye starts moving smoothly and there is no catch-up saccade (Rashbass, 1961).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of model behavior with reference to Figure 1c and citation to known experimental result.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "3e617956-374a-4f9d-bd6a-30937a3c16e6",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C33",
+      "claim": "Muscles produce signal dependent noise; the stronger the muscles pull, the more noisy the state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our muscles produce signal dependent noise; the stronger the muscles pull, the more noisy the state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of motor control systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "6a713a90-2af0-4a74-a52d-b74ef54619cc",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C34",
+      "claim": "The phasic activity associated with the agonist burst induces a peak in the variance of the control signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The phasic activity associated with the agonist burst induces a peak in the variance of the control signal (Figure 2a, solid).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model simulation data in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "6fda68dd-e93d-4e22-854c-3bd7674819f1",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C35",
+      "claim": "Because of the delay, there is no way for the nervous system to directly subtract or filter out motor noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus motor commands produce instantaneous noise, and because of the delay, there is no way for the nervous system to directly subtract or filter out this noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of sensorimotor delays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "0a65acca-7ff1-4fe1-9413-2ca09c839857",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C36",
+      "claim": "Moving the eye effectively induces visual uncertainty, which can only go back to baseline after the end of muscle activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, moving the eye effectively induces visual uncertainty, which can only go back to baseline after the end of muscle activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "f36096ff-c0cc-4bf1-8bd3-5d35617abcb9",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C40",
+      "claim": "The period of suppression predicted by the model is long because the high variance period includes the movement time in addition to the delay.",
+      "claim_type": "EXPLICIT",
+      "source": "The period of suppression predicted by the model is long because the high variance period includes the movement time in addition to the delay (gray rectangle in Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of model predictions with reference to Figure 2c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "4d40f979-4870-476b-8c2f-9167fe7e9ab6",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C41",
+      "claim": "The model predicts that the onset of saccadic suppression should precede movement onset by a time interval equal to the delay, which was fixed to 100 ms in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts that the onset of saccadic suppression should precede movement onset by a time interval equal to the delay, which was fixed to 100 ms in the model (see Materials and methods), although previous work suggested that it could be shorter (Gaveau et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative prediction from the model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "55127695-8916-4d95-bd33-020fe217649f",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C42",
+      "claim": "Processing times in the retina approach ~50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that processing times in the retina approach ~50 ms (White et al., 2009), a conservative estimate for the onset of suppression according to the model ranges from 100 ms to 50 ms prior to movement onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "e2870b9c-0893-48be-81c5-83cc30699b64",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C43",
+      "claim": "A conservative estimate for the onset of suppression according to the model ranges from 100 ms to 50 ms prior to movement onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that processing times in the retina approach ~50 ms (White et al., 2009), a conservative estimate for the onset of suppression according to the model ranges from 100 ms to 50 ms prior to movement onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the model combined with known retinal processing times.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "b52397b8-bb03-418a-91ab-3566ed4a1711",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C44",
+      "claim": "The presence of a catch up saccade is sufficient to evoke a transient increase in extrapolation variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a catch up saccade, even a small one (4deg in Figure 2), is sufficient to evoke a transient increase in extrapolation variance (Figure 2d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model simulations in Figure 2d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "6c48940a-e3bd-4b4f-bbc2-445afe71f2e5",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C45",
+      "claim": "A catch-up saccade results in a reduction in the weight of sensory feedback with similar timing as for larger saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in a reduction in the weight of sensory feedback with similar timing as for larger saccades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction based on the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "72160964-adab-44a9-ad69-1483f77a0b8b",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C46",
+      "claim": "When the eye starts moving smoothly without a catch-up saccade, the model predicts no visible change in the weight of sensory feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the eye starts moving smoothly (Figure 2f), there is no catch-up saccade needed and the model predicts no visible change in the weight of sensory feedback.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model prediction shown in Figure 2f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "0e6f8e55-2357-47aa-8a9b-3466dfbcb3f1",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C47",
+      "claim": "Suppression occurs for saccades specifically because of the high control signals required for these movements.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that suppression occurs for saccades specifically results from the high control signals required for these movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of model behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "3ab5ef41-4a85-40f6-8541-0fc588bbe7f8",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C48",
+      "claim": "The pursuit task without a saccade uses smaller control signals that do not evoke any visible change in the weight of sensory feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the pursuit task without a saccade uses smaller control signals that do not evoke any visible change in the weight of sensory feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "d9a5dbd5-52c4-462b-9ba4-5f17808c44b7",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C49",
+      "claim": "Saccades but not smooth pursuit elicit suppression of sensory feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral finding (Sch\u00fctz et al., 2007) that saccades but not smooth pursuit elicit suppression of sensory feedback, and that the suppression scales with the amplitude of the catch-up saccade, directly results from this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between model predictions and experimental findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "df2ccc82-b835-483d-8d43-baff13c5a775",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C50",
+      "claim": "Suppression scales with the amplitude of the catch-up saccade.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral finding (Sch\u00fctz et al., 2007) that saccades but not smooth pursuit elicit suppression of sensory feedback, and that the suppression scales with the amplitude of the catch-up saccade, directly results from this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between model predictions and experimental findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "526d556f-bfc6-4e0b-b257-c3d8f8637f8f",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C51",
+      "claim": "Suppression should occur prior to movement onset according to the model.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our hypothesis, suppression should occur prior to movement onset, reach a maximum close to movement onset (Figure 3b), and scale with the movement amplitude with relatively invariant timing across amplitudes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model prediction shown in Figure 3b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "0d6fbbfe-411b-4d35-8963-0e25235566ec",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C52",
+      "claim": "Suppression should reach a maximum close to movement onset.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our hypothesis, suppression should occur prior to movement onset, reach a maximum close to movement onset (Figure 3b), and scale with the movement amplitude with relatively invariant timing across amplitudes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model prediction shown in Figure 3b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "24a604c6-693e-441d-9d7d-7fbd093c2187",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C53",
+      "claim": "Suppression should scale with the movement amplitude with relatively invariant timing across amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our hypothesis, suppression should occur prior to movement onset, reach a maximum close to movement onset (Figure 3b), and scale with the movement amplitude with relatively invariant timing across amplitudes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model prediction shown in Figure 3b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "2015ba38-0dcf-440c-b4ed-b2a46e373962",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C54",
+      "claim": "Microsaccades induce partial suppression despite being very small in amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this goes even down to the level of microsaccades, inducing partial suppression despite being very small in amplitude (Hafed and Krauzlis, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "8dce58b3-68b4-4a84-b7ce-4d1b5b4b8c1a",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C55",
+      "claim": "Contrast sensitivity is reduced during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "These known properties of saccadic suppression are in line with the model prediction (Figure 3b, black): contrast sensitivity is reduced and visual stimuli such as flashes, gratings, or small displacements are less likely to be accurately perceived (Diamond et al., 2000; Burr et al., 1994; Watson and Krekelberg, 2011; Burr et al., 1999; Bridgeman et al., 1975; Beeler, 1967).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "53dcc564-c5a5-493a-bab3-702922d9f8ee",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C56",
+      "claim": "Visual stimuli such as flashes, gratings, or small displacements are less likely to be accurately perceived during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "These known properties of saccadic suppression are in line with the model prediction (Figure 3b, black): contrast sensitivity is reduced and visual stimuli such as flashes, gratings, or small displacements are less likely to be accurately perceived (Diamond et al., 2000; Burr et al., 1994; Watson and Krekelberg, 2011; Burr et al., 1999; Bridgeman et al., 1975; Beeler, 1967).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "eeb7b2c5-ea0e-4552-b96f-8d013ab0ff8c",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C57",
+      "claim": "Suppression occurs even when the stimuli are chosen so that the eye movement does not change the retinal image.",
+      "claim_type": "EXPLICIT",
+      "source": "This even happens when the stimuli are chosen so that the eye movement does not change the retinal image, which is compatible with the model (see the simulated contrast reduction of a white stripe, Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between experimental findings and model predictions shown in Figure 3a.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "6e206b4d-b131-4106-94ab-a9f8d523dc71",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C58",
+      "claim": "Timing of suppression is preserved across amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although timing is preserved across amplitudes (Ibbotson and Krekelberg, 2011), the model predicts that the magnitude of suppression scales with the saccade amplitude as observed experimentally (Ridder and Tomlinson, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "6e09fd3f-808c-43cf-8568-77bf9f9f916e",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C59",
+      "claim": "The magnitude of suppression scales with the saccade amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although timing is preserved across amplitudes (Ibbotson and Krekelberg, 2011), the model predicts that the magnitude of suppression scales with the saccade amplitude as observed experimentally (Ridder and Tomlinson, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction that matches experimental findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "d5c13b0f-b3e3-4d87-8991-7a784dcd3934",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C60",
+      "claim": "The scaling of suppression magnitude with saccade amplitude is a direct consequence of signal-dependent noise.",
+      "claim_type": "EXPLICIT",
+      "source": "This scaling is a direct consequence of signal-dependent noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "abb44d1b-9cf7-48ed-b7f5-ae23dadd7fb3",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C61",
+      "claim": "The best explanation for saccadic suppression is a stimulus-independent reduction in the response gain.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to capturing the major aspects of behavioral and neural suppression, our model explains the previous findings of Watson and colleagues (Watson and Krekelberg, 2011), who investigated the detection of noisy gratings in humans, and found that the best explanation for saccadic suppression was a stimulus-independent reduction in the response gain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "2b0aeb63-2c08-491b-8537-44d87ac472ab",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C62",
+      "claim": "The retinal images do not become intrinsically noisier during saccades; instead it is the visual system that responds less to a given stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is a key aspect of saccadic suppression: the retinal images do not become intrinsically noisier; instead it is the visual system that responds less to a given stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of experimental findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "e88a4151-6daa-4565-b753-4bd36350a443",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C63",
+      "claim": "By reducing the sensory weight in the Kalman gain, the controller becomes less sensitive to sensory information.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also accounts for this observation: by reducing the sensory weight in the Kalman gain, the controller becomes less sensitive to sensory information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "ec46750c-77d0-488d-9178-24709656c6ae",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C64",
+      "claim": "The stimulus-independent reduction in response gain is due to the uncertainty induced by the motor commands.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the uncertainty induced by the motor commands, which is clearly independent of the retinal image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "61b28782-6fd0-4338-b89e-94511cfc0ce6",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C65",
+      "claim": "The increase in extrapolation variance results from convolving the motor-dependent noise with the expected eye dynamics over the delay interval.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the increase in extrapolation variance clearly results from convolving the motor-dependent noise with the expected eye dynamics over the delay interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mathematical operation in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "d4e6fb27-eefc-4f8e-8d3a-a53938b1bc4c",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C66",
+      "claim": "The increase in extrapolation variance is directly proportional to the integrated motor command.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, this increase is directly proportional to the integrated motor command.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "f2058a23-98ea-45a4-8e55-926706591624",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C67",
+      "claim": "Previous models of saccadic control tend to only consider open-loop controllers or closed-loop control with internal feedback only.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous models of saccadic control tend to only consider open-loop controllers (Harris and Wolpert, 1998), or closed-loop control with internal feedback only (Optican, 2009; J\u00fcrgens et al., 1981; Chen-Harris et al., 2008), there is evidence that sensory information remains available and may influence online control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of previous modeling approaches supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "2fc4c4ff-6ed2-4518-be7d-04ee0fe7d06e",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C68",
+      "claim": "There is evidence that sensory information remains available and may influence online control during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous models of saccadic control tend to only consider open-loop controllers (Harris and Wolpert, 1998), or closed-loop control with internal feedback only (Optican, 2009; J\u00fcrgens et al., 1981; Chen-Harris et al., 2008), there is evidence that sensory information remains available and may influence online control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about experimental evidence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "11875f22-861f-4ccc-9499-9746b72b2a62",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C69",
+      "claim": "Peri-saccadic target jumps evoke adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, motion detection during saccades is not suppressed (Castet and Masson, 2000), and peri-saccadic target jumps evoke adaptation (Panouill\u00e8res et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "3aeeaa97-1362-46e6-bac6-6ebb5b411cfe",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C70",
+      "claim": "A large retinal slip prior to saccade initiation can elicit curved movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a large retinal slip prior to saccade initiation can elicit curved movements (Schreiber et al., 2006), indicating that retinal information prior to saccade onset can influence online control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "70dc0d28-e7d5-4bdb-8c71-cb5923634a3a",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C71",
+      "claim": "Retinal information prior to saccade onset can influence online control.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a large retinal slip prior to saccade initiation can elicit curved movements (Schreiber et al., 2006), indicating that retinal information prior to saccade onset can influence online control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of experimental findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "b45b264c-293d-435f-9753-0703bc642595",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C72",
+      "claim": "Gaveau and colleagues reported partial corrections of eye trajectories following target jumps occurring during long saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Gaveau and colleagues reported partial corrections of eye trajectories following target jumps occurring during long saccades (Gaveau et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "b130a400-0369-4ac0-a3e4-3080aef3c142",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C73",
+      "claim": "Partial corrections of target jumps can be explained by lower weight of sensory feedback leading to only partial correction.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that these corrections accounted for a small proportion of the target jump can be explained in the model, as a lower weight of sensory feedback leads to only partial correction of the target jump (estimates take longer to converge to the true value).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of experimental findings using the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "f4e3645d-85b8-4069-93ba-cc60fd373e12",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C74",
+      "claim": "The model predicts that sensory feedback must be strongly reduced, but not completely suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this assumption, our model predicts that sensory feedback must be strongly reduced, but not completely suppressed, as observed experimentally (Castet and Masson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction that matches experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "3e4949e4-9c89-49d2-89d2-549ed1b22b3e",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C75",
+      "claim": "The Kalman filter achieves an optimal projection in the probabilistic sense by making the estimation error orthogonal to the estimated state.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the Kalman filter achieves an optimal projection in the probabilistic sense, by making the estimation error orthogonal to (or statistically uncorrelated with) the estimated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of Kalman filtering theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "a08e6ab5-147a-499c-9626-6ff91fc16576",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C76",
+      "claim": "The decrease in the Kalman gain during movement indicates that state information prior to the saccade still carries some information about the current state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the decrease in the Kalman gain during movement indicates that state information prior to the saccade still carries some information about the current state, and thus can be exploited to derive optimal estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "63a98898-a499-45cf-a920-81bedca8aca4",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C77",
+      "claim": "Perception and action share estimates of target speed.",
+      "claim_type": "EXPLICIT",
+      "source": "There are already strong pieces of evidence for shared resources. Indeed, previous work emphasized that perception and action share estimates of target speed (Priebe and Lisberger, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "16e1d8b3-1309-4e3d-9d00-dde343432371",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C78",
+      "claim": "A strong link between saccadic suppression and visual-motor neurons has been established in superior colliculus of macaque monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a strong link between saccadic suppression and visual-motor neurons has been established in superior colliculus of macaque monkeys (Chen and Hafed, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "7cfb3645-86b9-48d8-81e9-9f52c5ff37da",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C79",
+      "claim": "Perception is conditional upon the ability to integrate extra-retinal signals accurately, both during saccades and pursuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the motion on its own must not be suppressed to maintain perceptual stability, instead it must be equal to the commanded movement monitored online, thus perception is also conditional upon the ability to integrate extra-retinal signals accurately, both during saccades and pursuit (Sommer and Wurtz, 2008; Blohm et al., 2005; Hafed and Krauzlis, 2010; Bedell and Lott, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "b808cd1a-25db-42e9-ae10-f0e4a54d4eb3",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C80",
+      "claim": "If perceptual and sensorimotor processes were completely decoupled, posterior beliefs about sensory information could be separated from movement-related effects.",
+      "claim_type": "EXPLICIT",
+      "source": "If perceptual and sensorimotor processes were completely decoupled, posterior beliefs about sensory information could be separated from movement-related effects, and perception around the time of saccades could be as good as during simulated saccades (Figure 4, H1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothetical scenario presented for comparison.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "931b465d-d231-4dc5-95bc-48cee62b0580",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C81",
+      "claim": "A motor origin of saccadic suppression implies that the same posterior beliefs are shared for perception and control.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a motor origin of saccadic suppression implies that the same posterior beliefs are shared for perception and control, which is suboptimal as it impacts perception of otherwise reliable sensory signals (Figure 4, H2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "aa4960be-743f-499c-a433-72c047cd337a",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C82",
+      "claim": "The shared resources model is cheaper in terms of neural resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Although perception on its own is suboptimal during saccades (we discard a lot of meaningful information), the shared resources model is clearly cheaper in terms of neural resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about resource efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "0b51e691-964c-4dd1-b6e9-7d05df95826e",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C83",
+      "claim": "It may be globally optimal to tolerate perceptual loss during saccades rather than commit to more neural resources for visual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "It may thus be globally optimal to tolerate perceptual loss during saccades rather than commit to more neural resources for visual processing, considering perceptual and control systems together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the shared resources hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "57acf46f-159a-47b5-add6-1033a0ae0e7b",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C84",
+      "claim": "Using the same posterior belief for perception and action ensures self-consistency.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same posterior belief for perception and action also ensures self-consistency, in the sense that the same stimulus is not deemed more or less reliable dependent on how we use it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument for the shared resources hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "ef631b75-b0eb-4841-bf8f-693475118606",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C85",
+      "claim": "Self-consistency characterizes perceptual judgment tasks, where participants make continuous use of the hypothesis to which they previously committed.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-consistency is known to characterize perceptual judgment tasks, where participants make continuous use of the hypothesis to which they previously committed (Stocker and Simoncelli, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "99f99ee3-fee1-40e1-922b-f980ec90fc16",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C86",
+      "claim": "There is neural suppression across the hierarchy of visual areas during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a large number of experimental studies have found such a neural suppression across the hierarchy of visual areas. (Ibbotson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "a38d4963-6c95-45ff-a21a-45f2b3af5e02",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C87",
+      "claim": "Neural suppression occurs in the lateral geniculate nucleus (LGN) during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathways begin with the lateral geniculate nucleus (LGN) (Reppas et al., 2002) and the superior colliculus (SC) (Hafed and Krauzlis, 2010), and continue in the cortical areas V1 (Kagan et al., 2008), MT, MST, MSTd (Ibbotson et al., 2008; Bremmer et al., 2009), and VIP (Bremmer et al., 2009) (Figure 3b, colored bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "441bac4e-e55c-4afa-af53-1f872ab295bb",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C88",
+      "claim": "Neural suppression occurs in the superior colliculus (SC) during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathways begin with the lateral geniculate nucleus (LGN) (Reppas et al., 2002) and the superior colliculus (SC) (Hafed and Krauzlis, 2010), and continue in the cortical areas V1 (Kagan et al., 2008), MT, MST, MSTd (Ibbotson et al., 2008; Bremmer et al., 2009), and VIP (Bremmer et al., 2009) (Figure 3b, colored bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "1d653c52-a5ec-44b0-a567-b0e1e5a620c3",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C89",
+      "claim": "Neural suppression occurs in cortical area V1 during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathways begin with the lateral geniculate nucleus (LGN) (Reppas et al., 2002) and the superior colliculus (SC) (Hafed and Krauzlis, 2010), and continue in the cortical areas V1 (Kagan et al., 2008), MT, MST, MSTd (Ibbotson et al., 2008; Bremmer et al., 2009), and VIP (Bremmer et al., 2009) (Figure 3b, colored bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "f73be49e-0f7a-4524-9f87-3c685beb9e1d",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C90",
+      "claim": "Neural suppression occurs in cortical areas MT, MST, and MSTd during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathways begin with the lateral geniculate nucleus (LGN) (Reppas et al., 2002) and the superior colliculus (SC) (Hafed and Krauzlis, 2010), and continue in the cortical areas V1 (Kagan et al., 2008), MT, MST, MSTd (Ibbotson et al., 2008; Bremmer et al., 2009), and VIP (Bremmer et al., 2009) (Figure 3b, colored bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "c08eaca0-37ac-4d7e-9f92-97d8fa31268b",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C91",
+      "claim": "Neural suppression occurs in cortical area VIP during saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathways begin with the lateral geniculate nucleus (LGN) (Reppas et al., 2002) and the superior colliculus (SC) (Hafed and Krauzlis, 2010), and continue in the cortical areas V1 (Kagan et al., 2008), MT, MST, MSTd (Ibbotson et al., 2008; Bremmer et al., 2009), and VIP (Bremmer et al., 2009) (Figure 3b, colored bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "3a493384-13f9-4058-95f3-0c5a8213cb10",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C92",
+      "claim": "The timing of neural suppression is very similar across brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the timing is very similar across brain regions, which emerges naturally from the fact that the loop through the outside world with its delays is the dominating timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the consistency of neural suppression timing with an explanation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "23d0f873-e938-4cee-98be-efac6bbf2bb6",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C93",
+      "claim": "Cancelling the retinal shift induced by the saccade does not explain the phenomenon of saccadic suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "The important motivation behind this study was that cancelling the retinal shift induced by the saccade, as commonly assumed, does not explain the phenomenon of saccadic suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of previous explanations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "d1eea868-76fa-4c24-b5ba-d101e75bd706",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C94",
+      "claim": "If suppression were only for cancelling retinal shift, it should only occur when the eyes move and should not be stronger than the moderate loss in performance associated with simulated saccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, suppression in this case should only occur when the eyes move, and should not be stronger than the moderate loss in performance associated with saccades simulated as a rapid displacement of the visual scene (Diamond et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument against the retinal shift cancellation hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "83657e75-7d3d-49a3-bf7a-6e58a1e2f3e9",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C95",
+      "claim": "If saccadic suppression were purely for maintaining perceptual stability, all discarded information beyond movement-related effects would represent a net loss.",
+      "claim_type": "EXPLICIT",
+      "source": "All discarded information beyond movement-related effects would otherwise represent a net loss (up to ~100 ms for some brain areas, Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical argument about the inefficiency of suppression if it were only for perceptual stability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "339c43cd-51dd-4d86-8c33-d55974f4f4fe",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C96",
+      "claim": "If it were possible to train participants to pay attention to visual stimuli displayed during saccades, the theory predicts that movement trajectories should become more variable.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, if it were possible to train participants to pay attention to visual stimuli displayed during saccades, thereby increasing the weight of sensory feedback, then the theory predicts that movement trajectories should become more variable as a result of suboptimal state estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a testable prediction derived from the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "5d68f09f-266e-4d21-b35a-c3405dfd05ae",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C97",
+      "claim": "The locus of attention and the goal of saccadic movements are linked.",
+      "claim_type": "EXPLICIT",
+      "source": "There is already clear evidence that the locus of attention and the goal of saccadic movements are linked (Kowler et al., 1995) (and many references thereto).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "d2d59084-84d7-479c-8011-43bfdd01d86c",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C98",
+      "claim": "Saccade trajectories should become more variable from trial to trial when participants are forced to use sensory information presented during the interval of saccadic suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here our specific prediction is that saccade trajectories should become more variable from trial to trial when participants are forced to use sensory information presented during the interval of saccadic suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific testable prediction from the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "1bf5754a-55fd-468a-8cf9-3cde947c9f28",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C99",
+      "claim": "Varying the reliability of sensory information may have an impact on the magnitude of saccadic suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "As well, assuming that saccadic suppression is directly linked to the variance of sensory feedback through the Kalman filter, the model predicts that varying the reliability of sensory information may have an impact on the magnitude of saccadic suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a testable prediction derived from the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "53b544af-f1a6-437c-8599-e2a12f126a23",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C100",
+      "claim": "The model assumes that suppression can be flexibly modulated dependent on the behavioral context.",
+      "claim_type": "IMPLICIT",
+      "source": "Observe that these two predictions also assume that suppression can be flexibly modulated dependent on the behavioral context, which to our knowledge has not been documented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption underlying the testable predictions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "645bb0ff-d81d-4c5d-8d0a-58c5a9b7ef49",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C101",
+      "claim": "The model used a second-order, low-pass filter as a biomechanical model of the oculomotor plant.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider a second-order, low-pass filter as a biomechanical model of the oculomotor plant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "58f6b28e-d109-447d-bd9f-58a067870c8e",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C104",
+      "claim": "Error signals used to generate saccades depend on an estimate of the present state of the eye or of the target.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of sensory extrapolation is supported by previous studies showing that error signals used to generate saccades depend on an estimate of the present state of the eye or of the target (Bennett et al., 2007; Ferrera and Barborica, 2010; Diaz et al., 2013; Blohm et al., 2005; de Brouwer et al., 2002), which clearly requires extrapolation of sensory feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "5a47fee3-6dbb-4e37-aded-600b6880cb1c",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C105",
+      "claim": "Estimating the present state of the eye or target clearly requires extrapolation of sensory feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of sensory extrapolation is supported by previous studies showing that error signals used to generate saccades depend on an estimate of the present state of the eye or of the target (Bennett et al., 2007; Ferrera and Barborica, 2010; Diaz et al., 2013; Blohm et al., 2005; de Brouwer et al., 2002), which clearly requires extrapolation of sensory feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the necessity of sensory extrapolation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "8537ee36-db42-4540-8c4a-1686b5bc0e81",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C107",
+      "claim": "The key feature of the adaptive estimator is that the extrapolation variance increases monotonically with the square of the motor command.",
+      "claim_type": "EXPLICIT",
+      "source": "However the key feature of the adaptive estimator is that the extrapolation variance increases monotonically with the square of the motor command, which is why the extrapolated measurement is dynamically reduced during movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a fundamental property of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "a3d608ba-f01f-46f8-a514-27633db80b17",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "claim_id": "C108",
+      "claim": "The cost parameters were adjusted to generate simulated saccades compatible with typical recordings of eye movements in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost parameters were adjusted to generate simulated saccades compatible with typical recordings of eye movements in humans, and these parameters do not impact the results qualitatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model calibration procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6e88af9-ced5-4c46-baa3-70917dca869b",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The LQG-based optimal control model with sensory extrapolation reproduces key features of saccadic and smooth pursuit eye movements, including stereotyped trajectories, agonist-antagonist control patterns, catch-up saccades, and smooth pursuit initiation depending on target jump conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 collectively demonstrate that the model successfully replicates multiple well-established behavioral and physiological characteristics of eye movements. The model outputs shown in Figures 1b-c match known saccadic trajectories, burst neuron patterns, and pursuit behaviors, providing convergent evidence for model validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "b7920d37-51e9-496f-bb88-8091477beac4",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model predicts that signal-dependent motor noise combined with sensorimotor delays causes increased uncertainty in state estimation during saccades, leading to reduced sensory weighting that begins 50-100 ms before movement onset and extends through movement completion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C21, C33-C36, C40-C41, and C43 form a coherent theoretical prediction chain supported by the model's mathematical structure (Equations 3-8) and simulation results (Figure 2). The mechanism linking signal-dependent noise to sensory weight reduction through Kalman gain modulation is mathematically derived and demonstrated in simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model predicts differential suppression for saccades versus smooth pursuit: catch-up saccades (even small ones) induce transient sensory weight reduction, while smooth pursuit without saccades produces no visible change in sensory feedback weighting, with suppression magnitude scaling with saccade amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 describe model predictions shown in Figure 2d-f that align with experimental findings from Sch\u00fctz et al. (2007). The differential behavior emerges naturally from the magnitude of control signals required, providing a mechanistic explanation for the empirical observation that saccades but not smooth pursuit elicit suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "f6b28f04-54c3-43af-985c-9553323ca458",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model's predictions about suppression timing, magnitude, and amplitude-scaling match behavioral observations of saccadic suppression, including reduced contrast sensitivity, impaired perception of visual stimuli, suppression even when retinal images are unchanged, preserved timing across amplitudes, and magnitude scaling with saccade size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C55-C60 demonstrate strong correspondence between model predictions (Figure 3) and multiple cited behavioral studies. The model accounts for key empirical features including timing (C51-C52, C58), amplitude scaling (C53, C59-C60), and stimulus-independent effects (C57), with the signal-dependent noise mechanism providing a unifying explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neural suppression during saccades occurs across the visual hierarchy (LGN, SC, V1, MT, MST, MSTd, VIP) with remarkably similar timing across brain regions, consistent with the model's prediction that sensorimotor delays dominate the timescale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 cite extensive neurophysiological evidence (Figure 3b) showing widespread neural suppression with consistent timing. The observation that timing is preserved across multiple brain areas (C92) supports the model's prediction that the sensorimotor delay loop determines suppression dynamics, though the model does not specify neural implementation mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "45fef72d-24f5-4d0e-aba2-d78e46b4f10f",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model explains Watson and Krekelberg's (2011) finding that saccadic suppression involves stimulus-independent reduction in response gain rather than increased retinal noise, attributing this to motor-command-induced uncertainty affecting Kalman gain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 show the model accounts for a key empirical finding about the nature of suppression. The mechanism (reduced Kalman gain due to motor-induced uncertainty) provides a principled explanation for why the visual system responds less to stimuli without the stimuli themselves becoming noisier, addressing an important characteristic of saccadic suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "7fa2bfc7-e1b9-42d0-9c1d-071a89d1f983",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that saccadic suppression originates from shared neural resources for perception and control, where using the same posterior beliefs for both functions is computationally efficient despite being perceptually suboptimal, and ensures self-consistency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6-C7 and C81-C84 present the central hypothesis but remain speculative. While the model demonstrates that shared resources could explain suppression, the authors acknowledge this is a theoretical proposal without direct experimental validation. The efficiency argument (C82-C83) and self-consistency principle (C84) are logical but not empirically tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "532face0-59cc-4cf4-868c-ddedb02a6317",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Existing evidence supports shared neural substrates for perception and control, including shared speed estimates, links between suppression and visual-motor neurons in superior colliculus, and dependence of perception on accurate extra-retinal signal integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 cite relevant prior work (Priebe & Lisberger 2004; Chen & Hafed 2017; multiple others) demonstrating various forms of perception-action coupling. These provide circumstantial support for the shared resources hypothesis, though they do not directly test the specific mechanism proposed in this model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple lines of evidence indicate sensory information remains available and influences saccadic control, including active motion detection during saccades, adaptation to peri-saccadic target jumps, curved movements from pre-saccadic retinal slip, and partial corrections during long saccades, supporting the model's assumption of closed-loop control with reduced but non-zero sensory weighting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 cite convergent experimental evidence (Castet & Masson 2000; Panouill\u00e8res et al. 2016; Schreiber et al. 2006; Gaveau et al. 2003) supporting the model's core assumption that saccades involve closed-loop control with sensory feedback. The model's explanation of partial corrections (C73) as resulting from reduced Kalman gain provides a mechanistic account of empirical observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "f67de77e-2116-491c-8971-7fecfa2c7649",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The traditional explanation that saccadic suppression functions solely to cancel retinal shift and maintain perceptual stability is insufficient because suppression is stronger and longer than would be needed for this purpose alone, and occurs even without actual eye movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 present a critical assessment of prior explanations, supported by empirical observations (C16: simulated saccades don't produce equivalent suppression; C14-C15: suppression duration exceeds movement time). This motivates the need for an alternative explanation, though it does not directly validate the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "da156714-3080-4e3a-a7dd-d1303326c4ce",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model generates testable predictions: (1) forcing attention to stimuli during saccades should increase movement variability, (2) saccade trajectories should become more variable when participants use suppressed sensory information, and (3) varying sensory reliability may modulate suppression magnitude, though these assume flexible context-dependent modulation of suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96, C98-C100 propose testable predictions but acknowledge key limitations: the predictions are conditional on training being possible (C96), and assume flexible modulation of suppression that has not been documented (C100). These are valuable prospective experiments but remain untested, and the authors appropriately note the speculative nature of these predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "50b8c3f7-b020-46ab-8275-a98e6b1bf3f9",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model's key mathematical property is that extrapolation variance increases through convolution of motor-dependent noise with expected eye dynamics over the delay interval, with the increase directly proportional to the integrated motor command squared.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 and C107 describe fundamental mathematical properties of the model derived from Equations 5-8. These properties are mathematically correct given the model structure and explain why suppression scales with movement amplitude (signal-dependent noise) and has specific timing (delay interval convolution).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "a7a896a6-b990-4a01-bfa9-141458cd78c3",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Kalman filter's optimal projection property (making estimation error orthogonal to estimated state) implies that reduced Kalman gain during movement indicates pre-saccadic state information still carries information about current state and can be exploited for optimal estimation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 correctly describe properties of Kalman filtering theory and their implications for the model. This explains why sensory feedback is reduced but not eliminated during saccades, providing a principled account of partial sensory weighting that aligns with empirical observations (C74).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "e82033e3-dbda-4173-8e56-239fcb31b93b",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model uses a second-order oculomotor plant with time constants from literature, incorporates sensory extrapolation supported by prior studies showing saccadic error signals depend on present-state estimates, and was calibrated to produce human-like saccades without qualitatively affecting results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101, C104-C105, and C108 describe methodological choices that are appropriately justified by citations and standard modeling practices. The sensory extrapolation component (C104-C105) is supported by multiple prior studies, and the authors acknowledge that parameter choices don't qualitatively change results (C108).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "ee484c35-8e2c-4ca3-9bae-51687c8dcd03",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bayesian frameworks effectively model how people combine knowledge and sensory feedback in both perceptual decision-making and motor control tasks, and these processes cannot be fully dissociated in real-world behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 establish the theoretical foundation by citing extensive prior work on Bayesian models in perception and action. The claim that these processes cannot be dissociated (C11) is supported by citations (Cisek 2012; Wolpert & Landy 2012) and provides conceptual motivation for the shared resources hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Saccadic suppression is characterized by reduced visual acuity during frequent eye movements (2-3 Hz), with central control lasting >100 ms for ~50 ms movements, selective impact on magnocellular pathways while motion detection remains active, and suppression that doesn't occur with simulated retinal displacement alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C12-C18 summarize well-established empirical characteristics of saccadic suppression from multiple cited sources. These provide the empirical foundation for the modeling work and establish the phenomena that need explanation, though they represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "190ad85b-6497-4dba-8ba1-d632f39d20d9",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Saccades are monitored online through corollary discharge, sensory inflow is not peripherally interrupted, information about spatiotemporal frequency and color remains available, and target jumps during long saccades can influence movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 cite established findings about saccadic control that justify the model's assumption of closed-loop control with available sensory feedback. These are well-supported by prior literature and provide important constraints for model design, representing background knowledge rather than novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "f555f5ee-4860-499e-b213-a8b4b6575762",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Microsaccades induce partial suppression despite very small amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 cites an empirical finding (Hafed & Krauzlis 2010) that supports the model's prediction that suppression scales with amplitude. This represents prior experimental evidence consistent with model predictions rather than a new finding from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "8959985c-b49f-4d19-885d-def3bcdc659e",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous saccadic control models have primarily considered open-loop controllers or closed-loop control with only internal feedback, unlike the current model which incorporates external sensory feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 accurately characterizes prior modeling approaches with appropriate citations (Harris & Wolpert 1998; Optican 2009; others). This establishes how the current model differs from previous work, though it represents a literature review rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    },
+    {
+      "id": "690e3e6e-8b84-427f-be66-4110eb75fdf1",
+      "content_id": "1faf49f7-0c99-48b2-9cf4-70e260e4beca",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "If perception and control were completely decoupled, perception during saccades could be as good as during simulated saccades; self-consistency in perceptual judgment tasks involves continuous use of previously committed hypotheses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C85 present a hypothetical alternative scenario (H1 in Figure 4) and cite evidence for self-consistency principles (Stocker & Simoncelli 2007). These support the conceptual framework for comparing shared versus separated resources but don't constitute empirical tests of the hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:56:04.892709Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c1ae6819-4e3d-408f-b5ec-dc4f7a40823c",
+      "result_id": "b6e88af9-ced5-4c46-baa3-70917dca869b"
+    },
+    {
+      "claim_id": "6f8080b7-00e0-4b9b-bebe-280d79c3ad61",
+      "result_id": "b6e88af9-ced5-4c46-baa3-70917dca869b"
+    },
+    {
+      "claim_id": "124bb181-aa90-448e-b2b2-a27ea07ec993",
+      "result_id": "b6e88af9-ced5-4c46-baa3-70917dca869b"
+    },
+    {
+      "claim_id": "8cb53ba7-6e89-4481-8c02-18890704e07a",
+      "result_id": "b6e88af9-ced5-4c46-baa3-70917dca869b"
+    },
+    {
+      "claim_id": "8be2ba61-8b7b-4fba-967d-8b572477d14f",
+      "result_id": "b6e88af9-ced5-4c46-baa3-70917dca869b"
+    },
+    {
+      "claim_id": "80893240-da35-47e4-9e29-399add535f74",
+      "result_id": "b6e88af9-ced5-4c46-baa3-70917dca869b"
+    },
+    {
+      "claim_id": "abe34175-b337-49fe-9571-11ba2e89998a",
+      "result_id": "b6e88af9-ced5-4c46-baa3-70917dca869b"
+    },
+    {
+      "claim_id": "9815b9ba-2f6e-4950-a723-c2db92e039d4",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "17b37a85-71a6-4d31-9786-7d8a35949845",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "e6430130-7b53-43dc-a54e-be1e0b5fa892",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "617e020a-d5f0-4fcc-b9aa-b32083fbcc63",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "3e617956-374a-4f9d-bd6a-30937a3c16e6",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "6a713a90-2af0-4a74-a52d-b74ef54619cc",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "6fda68dd-e93d-4e22-854c-3bd7674819f1",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "0a65acca-7ff1-4fe1-9413-2ca09c839857",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "f36096ff-c0cc-4bf1-8bd3-5d35617abcb9",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "4d40f979-4870-476b-8c2f-9167fe7e9ab6",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "e2870b9c-0893-48be-81c5-83cc30699b64",
+      "result_id": "b7920d37-51e9-496f-bb88-8091477beac4"
+    },
+    {
+      "claim_id": "b52397b8-bb03-418a-91ab-3566ed4a1711",
+      "result_id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb"
+    },
+    {
+      "claim_id": "6c48940a-e3bd-4b4f-bbc2-445afe71f2e5",
+      "result_id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb"
+    },
+    {
+      "claim_id": "72160964-adab-44a9-ad69-1483f77a0b8b",
+      "result_id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb"
+    },
+    {
+      "claim_id": "0e6f8e55-2357-47aa-8a9b-3466dfbcb3f1",
+      "result_id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb"
+    },
+    {
+      "claim_id": "3ab5ef41-4a85-40f6-8541-0fc588bbe7f8",
+      "result_id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb"
+    },
+    {
+      "claim_id": "d9a5dbd5-52c4-462b-9ba4-5f17808c44b7",
+      "result_id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb"
+    },
+    {
+      "claim_id": "df2ccc82-b835-483d-8d43-baff13c5a775",
+      "result_id": "aa6a0cf2-3cbf-47b5-b290-eee8407f1fcb"
+    },
+    {
+      "claim_id": "526d556f-bfc6-4e0b-b257-c3d8f8637f8f",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "0d6fbbfe-411b-4d35-8963-0e25235566ec",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "24a604c6-693e-441d-9d7d-7fbd093c2187",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "8dce58b3-68b4-4a84-b7ce-4d1b5b4b8c1a",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "53dcc564-c5a5-493a-bab3-702922d9f8ee",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "eeb7b2c5-ea0e-4552-b96f-8d013ab0ff8c",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "6e206b4d-b131-4106-94ab-a9f8d523dc71",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "6e09fd3f-808c-43cf-8568-77bf9f9f916e",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "d5c13b0f-b3e3-4d87-8991-7a784dcd3934",
+      "result_id": "f6b28f04-54c3-43af-985c-9553323ca458"
+    },
+    {
+      "claim_id": "99f99ee3-fee1-40e1-922b-f980ec90fc16",
+      "result_id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72"
+    },
+    {
+      "claim_id": "a38d4963-6c95-45ff-a21a-45f2b3af5e02",
+      "result_id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72"
+    },
+    {
+      "claim_id": "441bac4e-e55c-4afa-af53-1f872ab295bb",
+      "result_id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72"
+    },
+    {
+      "claim_id": "1d653c52-a5ec-44b0-a567-b0e1e5a620c3",
+      "result_id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72"
+    },
+    {
+      "claim_id": "f73be49e-0f7a-4524-9f87-3c685beb9e1d",
+      "result_id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72"
+    },
+    {
+      "claim_id": "c08eaca0-37ac-4d7e-9f92-97d8fa31268b",
+      "result_id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72"
+    },
+    {
+      "claim_id": "3a493384-13f9-4058-95f3-0c5a8213cb10",
+      "result_id": "03ba1882-2b09-4d4a-92b3-19b15a9a8c72"
+    },
+    {
+      "claim_id": "abb44d1b-9cf7-48ed-b7f5-ae23dadd7fb3",
+      "result_id": "45fef72d-24f5-4d0e-aba2-d78e46b4f10f"
+    },
+    {
+      "claim_id": "2b0aeb63-2c08-491b-8537-44d87ac472ab",
+      "result_id": "45fef72d-24f5-4d0e-aba2-d78e46b4f10f"
+    },
+    {
+      "claim_id": "e88a4151-6daa-4565-b753-4bd36350a443",
+      "result_id": "45fef72d-24f5-4d0e-aba2-d78e46b4f10f"
+    },
+    {
+      "claim_id": "ec46750c-77d0-488d-9178-24709656c6ae",
+      "result_id": "45fef72d-24f5-4d0e-aba2-d78e46b4f10f"
+    },
+    {
+      "claim_id": "531f9670-4f28-4388-a25a-3d558d5f7afc",
+      "result_id": "7fa2bfc7-e1b9-42d0-9c1d-071a89d1f983"
+    },
+    {
+      "claim_id": "852f5d11-dad8-4a1f-8fb4-8dcc341fcb2e",
+      "result_id": "7fa2bfc7-e1b9-42d0-9c1d-071a89d1f983"
+    },
+    {
+      "claim_id": "931b465d-d231-4dc5-95bc-48cee62b0580",
+      "result_id": "7fa2bfc7-e1b9-42d0-9c1d-071a89d1f983"
+    },
+    {
+      "claim_id": "aa4960be-743f-499c-a433-72c047cd337a",
+      "result_id": "7fa2bfc7-e1b9-42d0-9c1d-071a89d1f983"
+    },
+    {
+      "claim_id": "0b51e691-964c-4dd1-b6e9-7d05df95826e",
+      "result_id": "7fa2bfc7-e1b9-42d0-9c1d-071a89d1f983"
+    },
+    {
+      "claim_id": "57acf46f-159a-47b5-add6-1033a0ae0e7b",
+      "result_id": "7fa2bfc7-e1b9-42d0-9c1d-071a89d1f983"
+    },
+    {
+      "claim_id": "63a98898-a499-45cf-a920-81bedca8aca4",
+      "result_id": "532face0-59cc-4cf4-868c-ddedb02a6317"
+    },
+    {
+      "claim_id": "16e1d8b3-1309-4e3d-9d00-dde343432371",
+      "result_id": "532face0-59cc-4cf4-868c-ddedb02a6317"
+    },
+    {
+      "claim_id": "7cfb3645-86b9-48d8-81e9-9f52c5ff37da",
+      "result_id": "532face0-59cc-4cf4-868c-ddedb02a6317"
+    },
+    {
+      "claim_id": "2fc4c4ff-6ed2-4518-be7d-04ee0fe7d06e",
+      "result_id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348"
+    },
+    {
+      "claim_id": "11875f22-861f-4ccc-9499-9746b72b2a62",
+      "result_id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348"
+    },
+    {
+      "claim_id": "3aeeaa97-1362-46e6-bac6-6ebb5b411cfe",
+      "result_id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348"
+    },
+    {
+      "claim_id": "70dc0d28-e7d5-4bdb-8c71-cb5923634a3a",
+      "result_id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348"
+    },
+    {
+      "claim_id": "b45b264c-293d-435f-9753-0703bc642595",
+      "result_id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348"
+    },
+    {
+      "claim_id": "b130a400-0369-4ac0-a3e4-3080aef3c142",
+      "result_id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348"
+    },
+    {
+      "claim_id": "f4e3645d-85b8-4069-93ba-cc60fd373e12",
+      "result_id": "fc5bd34b-ac94-402a-9dc9-2f39ae02a348"
+    },
+    {
+      "claim_id": "23d0f873-e938-4cee-98be-efac6bbf2bb6",
+      "result_id": "f67de77e-2116-491c-8971-7fecfa2c7649"
+    },
+    {
+      "claim_id": "d1eea868-76fa-4c24-b5ba-d101e75bd706",
+      "result_id": "f67de77e-2116-491c-8971-7fecfa2c7649"
+    },
+    {
+      "claim_id": "83657e75-7d3d-49a3-bf7a-6e58a1e2f3e9",
+      "result_id": "f67de77e-2116-491c-8971-7fecfa2c7649"
+    },
+    {
+      "claim_id": "339c43cd-51dd-4d86-8c33-d55974f4f4fe",
+      "result_id": "da156714-3080-4e3a-a7dd-d1303326c4ce"
+    },
+    {
+      "claim_id": "d2d59084-84d7-479c-8011-43bfdd01d86c",
+      "result_id": "da156714-3080-4e3a-a7dd-d1303326c4ce"
+    },
+    {
+      "claim_id": "1bf5754a-55fd-468a-8cf9-3cde947c9f28",
+      "result_id": "da156714-3080-4e3a-a7dd-d1303326c4ce"
+    },
+    {
+      "claim_id": "53b544af-f1a6-437c-8599-e2a12f126a23",
+      "result_id": "da156714-3080-4e3a-a7dd-d1303326c4ce"
+    },
+    {
+      "claim_id": "61b28782-6fd0-4338-b89e-94511cfc0ce6",
+      "result_id": "50b8c3f7-b020-46ab-8275-a98e6b1bf3f9"
+    },
+    {
+      "claim_id": "d4e6fb27-eefc-4f8e-8d3a-a53938b1bc4c",
+      "result_id": "50b8c3f7-b020-46ab-8275-a98e6b1bf3f9"
+    },
+    {
+      "claim_id": "8537ee36-db42-4540-8c4a-1686b5bc0e81",
+      "result_id": "50b8c3f7-b020-46ab-8275-a98e6b1bf3f9"
+    },
+    {
+      "claim_id": "3e4949e4-9c89-49d2-89d2-549ed1b22b3e",
+      "result_id": "a7a896a6-b990-4a01-bfa9-141458cd78c3"
+    },
+    {
+      "claim_id": "a08e6ab5-147a-499c-9626-6ff91fc16576",
+      "result_id": "a7a896a6-b990-4a01-bfa9-141458cd78c3"
+    },
+    {
+      "claim_id": "645bb0ff-d81d-4c5d-8d0a-58c5a9b7ef49",
+      "result_id": "e82033e3-dbda-4173-8e56-239fcb31b93b"
+    },
+    {
+      "claim_id": "58f6b28e-d109-447d-bd9f-58a067870c8e",
+      "result_id": "e82033e3-dbda-4173-8e56-239fcb31b93b"
+    },
+    {
+      "claim_id": "5a47fee3-6dbb-4e37-aded-600b6880cb1c",
+      "result_id": "e82033e3-dbda-4173-8e56-239fcb31b93b"
+    },
+    {
+      "claim_id": "a3d608ba-f01f-46f8-a514-27633db80b17",
+      "result_id": "e82033e3-dbda-4173-8e56-239fcb31b93b"
+    },
+    {
+      "claim_id": "4ebf90f6-29c3-4216-b4c8-d3759b23b79b",
+      "result_id": "ee484c35-8e2c-4ca3-9bae-51687c8dcd03"
+    },
+    {
+      "claim_id": "13c86e66-7e6c-4ae2-a3c6-8fa98e45efa8",
+      "result_id": "ee484c35-8e2c-4ca3-9bae-51687c8dcd03"
+    },
+    {
+      "claim_id": "b8da1a9b-c764-4dc6-8147-d0fb3abd813a",
+      "result_id": "ee484c35-8e2c-4ca3-9bae-51687c8dcd03"
+    },
+    {
+      "claim_id": "d2800eef-c7e2-42cf-8368-5bcda71e0811",
+      "result_id": "ee484c35-8e2c-4ca3-9bae-51687c8dcd03"
+    },
+    {
+      "claim_id": "dc53ba92-3287-4b55-9a22-cfde92dbd0cd",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "e9015e34-6bdd-4f3f-9cb5-8a7226f2748a",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "237a714b-68b4-4c9c-8609-abc431c99b79",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "03556bb3-cc33-4067-9f98-e1046312e394",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "c8532e07-740a-4e6b-be87-d077c66d940c",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "1d23a932-016f-45f7-8447-f0055e3205ea",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "afb94f47-f946-480a-a774-55ec2ba5d094",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "0bf81b13-62c3-4471-9d53-1ae9be5d82ac",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "af3857ef-e7d5-47a4-a640-5708ae46b0f4",
+      "result_id": "0a7760ec-2b4d-4799-b2ce-35d097d4d791"
+    },
+    {
+      "claim_id": "206a6725-3889-4169-9117-5a5e67b31754",
+      "result_id": "190ad85b-6497-4dba-8ba1-d632f39d20d9"
+    },
+    {
+      "claim_id": "dce914b7-c9c6-4ab4-9b0b-7209f39dda26",
+      "result_id": "190ad85b-6497-4dba-8ba1-d632f39d20d9"
+    },
+    {
+      "claim_id": "9dc04c21-eef5-4b3d-83de-b9d9d39c5122",
+      "result_id": "190ad85b-6497-4dba-8ba1-d632f39d20d9"
+    },
+    {
+      "claim_id": "ba9e0026-9878-4452-b9a4-d3d95cedc02f",
+      "result_id": "190ad85b-6497-4dba-8ba1-d632f39d20d9"
+    },
+    {
+      "claim_id": "2015ba38-0dcf-440c-b4ed-b2a46e373962",
+      "result_id": "f555f5ee-4860-499e-b213-a8b4b6575762"
+    },
+    {
+      "claim_id": "f2058a23-98ea-45a4-8e55-926706591624",
+      "result_id": "8959985c-b49f-4d19-885d-def3bcdc659e"
+    },
+    {
+      "claim_id": "b808cd1a-25db-42e9-ae10-f0e4a54d4eb3",
+      "result_id": "690e3e6e-8b84-427f-be66-4110eb75fdf1"
+    },
+    {
+      "claim_id": "ef631b75-b0eb-4841-bf8f-693475118606",
+      "result_id": "690e3e6e-8b84-427f-be66-4110eb75fdf1"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1842 @@
+{
+  "submission": {
+    "id": "ff5fe924-f2f3-475a-99d5-c8d36c50c20e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:06:09.254223Z",
+    "updated_at": "2025-12-01T19:06:09.254223Z"
+  },
+  "content": [
+    {
+      "id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "submission_id": "ff5fe924-f2f3-475a-99d5-c8d36c50c20e",
+      "content_type": "manuscript",
+      "content_text": "# A selectivity filter at the intracellular end of the acid-sensing ion channel pore\n\n## Authors\n\n- Timothy Lynagh<sup>1</sup> ([ORCID: 0000-0003-4888-4098](https://orcid.org/0000-0003-4888-4098))\n- Emelie Flood<sup>2</sup>\n- C\u00e9line Boiteux<sup>2</sup>\n- Matthias Wulf<sup>1</sup>\n- Vitaly V Komnatnyy<sup>1</sup>\n- Janne M Colding<sup>1</sup>\n- Toby W Allen<sup>2</sup>\n- Stephan A Pless<sup>1</sup> ([ORCID: 0000-0001-6654-114X](https://orcid.org/0000-0001-6654-114X)) \u2020\n\n### Affiliations\n\n1. Center for Biopharmaceuticals, Department of Drug Design and Pharmacology University of Copenhagen Copenhagen Denmark\n2. School of Science RMIT University Melbourne Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nIncreased extracellular proton concentrations during neurotransmission are converted to excitatory sodium influx by acid-sensing ion channels (ASICs). 10-fold sodium/potassium selectivity in ASICs has long been attributed to a central constriction in the channel pore, but experimental verification is lacking due to the sensitivity of this structure to conventional manipulations. Here, we explored the basis for ion selectivity by incorporating unnatural amino acids into the channel, engineering channel stoichiometry and performing free energy simulations. We observed no preference for sodium at the \u201cGAS belt\u201d in the central constriction. Instead, we identified a band of glutamate and aspartate side chains at the lower end of the pore that enables preferential sodium conduction.\n\n## Introduction\n\nChanges in extracellular environment and chemical signals from adjacent cells are rapidly converted into electrical signals by ligand-gated ion channels in the cell membrane. This is exemplified by acid-sensing ion channels (ASICs) that mediate excitatory sodium (Na+) influx in response to increases in extracellular proton concentration during neurotransmission (Du et al., 2014; Kreple et al., 2014). The prototypical example, ASIC1a, is widely expressed in the mammalian nervous system, notably the brain, where it is involved in learning, memory and anxiety (Pidoplichko et al., 2014; Wemmie et al., 2002; Ziemann et al., 2009) and neuroinflammation and ischemia (Voilley et al., 2001; Xiong et al., 2004). In central and peripheral neurons, ASIC1a, in concert with ASIC2a and ASIC3, mediates pain and nociception, drawing much attention as a pharmacological target for novel analgesics (Baron and Lingueglia, 2015).\n\nASICs are excitatory because of approximately 10-fold selectivity for Na+ over potassium (K+; [Gr\u00fcnder and Pusch, 2015; Waldmann et al., 1997]), a feature conserved in most vertebrate members of the overarching DEG/ENaC family of channels (named after invertebrate degenerins and vertebrate epithelial Na+channels). Experiments on heteromeric ENaCs have shown effects on ion selectivity and greater permeation of larger cations upon mutation of a highly conserved G-X-S motif in the pore-forming helix, suggestive of a size exclusion filter (Kellenberger et al., 1999a; Snyder et al., 1999). By homology, this idea naturally extended to ASICs (Kellenberger and Schild, 2002), receiving recent support from the presence of a constriction half-way down the pore in an X-ray structure of chick ASIC1 in a putative open-channel state (Baconguis et al., 2014). In ASIC1a, the constriction is formed by G-A-S motifs from each of three adjacent subunits, suggesting that this \u2018GAS belt\u2019 forms the ASIC selectivity filter, presumably favoring Na+ by excluding larger K+ ions (Baconguis et al., 2014). Unfortunately, the role of the GAS belt in ion selectivity lacks experimental verification, as the mutation of presumed critical G10\u2019 and S12\u2019 residues (see Figure 1\u2014figure supplement 1 for numbering) renders homomeric ASICs non-functional (Carattino and Della Vecchia, 2012; Li et al., 2011b; Yang et al., 2009). Moreover, selective Na+ conduction has been ascribed to G10\u2019 main chain carbonyl oxygen atoms that point into the pore (Baconguis et al., 2014), and the role of main chain atoms cannot be addressed by conventional mutagenesis. Thus, the molecular determinants of ion selectivity and in turn the basis for excitatory function in this family of ligand-gated ion channel remains an open question.\n\nHere, we have replaced the main chain amide carbonyl of G10\u2019 with an ester carbonyl in ASIC1a, which unlike conventional mutagenesis, allowed us to measure function in channels with alterations to the G10\u2019 main chain oxygen. We also ran molecular dynamics (MD) \u2013 free energy simulations using recent high resolution X-ray structures (Baconguis et al., 2014; Jasti et al., 2007), allowing us to assess the contribution of pore-lining residues to Na+ and K+ permeation. Both approaches support the conclusion that other parts of the pore contribute more markedly to ion selectivity than the GAS belt. Via extensive mutagenesis, further unnatural amino acid incorporation and engineered subunit stoichiometry, we established that a band of negatively charged side chains at the lower end of the channel pore enables preferential Na+ conductance, revealing the molecular basis for excitatory ASIC1a function.\n\n## Results\n\n### Amide-ester mutation enables experimental test of G10\u2019 contribution to Na+ conduction\n\nWe used in vivo nonsense suppression (Dougherty and Van Arnam, 2014) to replace A11\u2019 with its \u03b1-hydroxy analogue (\u2018\u03b1') in ASIC1a channels expressed in Xenopus laevis oocytes (Figure 1A,B). This replaces the G10\u2019 main chain amide carbonyl with an ester carbonyl, decreasing the backbone dipole and thus the electrostatic surface potential near the G10\u2019 carbonyl oxygen (Lu et al., 2001). Unlike substitution via conventional mutagenesis of the GAS belt in ASICs, this substitution had remarkably little effect on general channel function, evident in unaltered proton-gated currents at A11\u2019\u03b1 channels (Figure 1C). To test if ion conduction was affected, we pulled outside-out patches and measured single channel Na+ currents through A11\u2019\u03b1 channels and observed that Na+ conductance was indistinguishable from wild-type (WT), despite the significant alteration of the G10\u2019 carbonyl oxygen (Figure 1D). Ion selectivity was assessed by measuring relative permeabilities of Li+, K+ and Cs+ (Figure 1\u2014figure supplement 1). A11\u2019\u03b1 channels maintained high, WT-like levels of Na+ selectivity over the larger K+ and Cs+ (Figure 1E), with an increase in PNa+/PK+ that signifies interactions with G10\u2019 specific to K+ conductance (addressed below).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig1-v2.jpg)\n\n**Figure 1.:** (A) A11\u2019\u03b1 substitution. (B) Successful incorporation of lactic acid (\u2018\u03b1') into position A11\u2019, indicated by large proton-gated currents (pH 6.0) at oocytes injected with A11\u2019UAG mRNA and tRNA-\u03b1 (Mean \u00b1 SEM, n\u00a0=\u00a06) but not with A11\u2019UAG mRNA and tRNA without \u03b1 (n\u00a0=\u00a07). ***p=0.001 (Student\u2019s t-test). (C) A11\u2019\u03b1 channels (pH50\u00a0=\u00a06.7\u00a0\u00b1\u00a00.03, n\u00a0=\u00a05) respond to increasing proton concentrations much like WT channels (pH50\u00a0=\u00a06.8\u00a0\u00b1\u00a00.02, n\u00a0=\u00a04; p=0.07, unpaired t-test). (D) Single channel Na+ currents (scale bars: x, 50 ms; y, 2 pA) and mean current amplitude at different voltages (\u00b1 SEM, n\u00a0=\u00a05\u20138). (E) Relative permeability ratios at WT and A11\u2019\u03b1 channels (mean \u00b1 SEM, n\u00a0=\u00a04\u20139; see Figure 1\u2014figure supplement 1.).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Referring to molecular determinants of function in the ENaC/DEG family with amino acid numbers of various channels makes comparisons confusing.\u00a0E.g. it is not immediately clear that ENaC \u03b1 subunit (species not reported) S589 (Waldmann et al., 1995) and rat ENaC (rENaC) \u03b1 subunit S589 (Kellenberger et al., 1999a) mutations, both of which alter ion selectivity in those studies, actually refer to adjacent positions (GSS and GSS, respectively). Similarly, it is not immediately clear that A443 in mouse ASIC1a (mASIC1a) (Carattino and Della Vecchia, 2012), A444 in human ASIC1a (hASIC1a)\u00a0(Yang et al., 2009) and G530 in rENaC \u03b2,\u00a0(Kellenberger et al., 1999b) each of which determine ion permeability to some extent, actually occupy the equivalent position. To avoid such confusion, we have adopted a new numbering system, based on various functional data, recent structural data and the comparison of a diverse range of subunits from the family (similar to the numbering systems for pore-lining residues in Cys-loop receptors or S4 charges in voltage-gated ion channels). According to this analysis, the equivalent residues, D434 that contributes to ion permeation in hASIC1a (Yang and Palmer, 2014), D433 whose side chain is oriented into the top of the channel pore of chick ASIC1 (Baconguis et al., 2014), and D431 that contributes to Ca2+ permeability in HyNaC2 (D\u00fcrrnagel et al., 2012), are simply referred to as D0\u2019. mASIC1a A443, hASIC1a A444 and rENaC \u03b2 G530 (described above), are equivalent and now referred to as A11\u2019, A11\u2019 and G11\u2019, respectively. The amino acid sequence alignment (Edgar, 2004) in (A) details the prime numbering system. Yellow highlighting indicates residues whose mutation is reported to alter channel function in at least two family members, as follows. 0\u2019: lamprey ASIC1 D433N alters gating (Li et al., 2011a); hASIC1a D434N decreases ion conduction (Yang and Palmer, 2014); hydra HyNaC D431C decreases Ca2+ permeability (D\u00fcrrnagel et al., 2012). 4\u2019: lamprey ASIC1 Q437C is water-accessible (Li et al., 2011b); chick ASIC1 Q437A slows desensitization (Baconguis et al., 2014). 7\u2019: hASIC1a L440A decreases Na+/K+ selectivity (Yang et al., 2009); lamprey ASIC1 L440C is water-accessible (Li et al., 2011b); mASIC1a L439A decreases Na+/K+ selectivity (present study). 10\u2019: rENaC \u03b2 G529S decreases Na+/K+ selectivity (Kellenberger et al., 1999b); mENaC \u03b1 G587C decreases Na+/K+ selectivity (Sheng et al., 2000). 11\u2019: ENaC \u03b1 S589I alters gating and Na+ conduction (species not reported [Waldmann et al., 1995]); hASIC1a A444G decreases Na+/K+ selectivity (Yang et al., 2009). 12\u2019: C. elegans MEC-4 S455F decreases function (Hong and Driscoll, 1994); rENaC \u03b1 S589C/D decreases Na+/K+ selectivity (Kellenberger et al., 1999a). 15\u2019: C. elegans MEC-4 T458I decreases function (Waldmann et al., 1995); ENaC \u03b1 S593I alters gating (species not reported (Waldmann et al., 1995); mASIC1a T447V prevents functional expression (Figure 4\u2014figure supplement 1). 18\u2019: C. elegans MEC-4 E461K decreases function (Hong and Driscoll, 1994); mENaC \u03b1 E595C decreases Na+/K+ selectivity (Sheng et al., 2001); mASIC1a E450D/Q decreases Na+/K+ selectivity (present study). (B) Left, voltage ramps at rest and during activation of currents by pH 6.0 (dashed line) in different extracellular cations (indicated by color) at oocytes injected with WT mRNA, A11\u2019UAG mRNA + tRNA-\u03b1, or A11\u2019UAG mRNA + tRNA (the latter as a measure of non-specific incorporation). Right, current-voltage relationships of proton-gated current, where ramp during rest has been subtracted.\n\n### No preference for Na+ ions at the GAS belt\n\nWe next explored Na+ and K+ permeation using MD simulations, based on the apparently open-channel ASIC1 structure (PDB:4NTW (Baconguis et al., 2014); Figure 2A). We observed no free energy preference for Na+ ions at the GAS belt (Figure 2B), which was confirmed by independent calculations of relative binding free energy at this part of the channel (Figure 2\u2014figure supplement 1). When passing the GAS belt, both Na+ and K+ maintain their solvation shell, but K+ ions do so with more contribution from the protein, interacting with G10\u2019 amide carbonyl oxygen atoms (Figure 2\u2014figure supplement 2). These interactions explain the lack of significant energetic difference between species and show why experimental alteration of G10\u2019 specifically affected K+ permeability. Free energy differences between Na+ and K+ were observed at L7\u2019 and E18\u2019-D21\u2019 (Figure 2B). These results are explained by partial dehydration of K+ without sufficient compensation by backbone carbonyls around L7\u2019 (Figure 2\u2014figure supplement 2) and high field strength binding (Hille, 1972) of Na+ to negative charge at E18\u2019-D21\u2019. Furthermore, independent binding calculations have demonstrated a relative Na+/K+ stability of 1.4\u00a0\u00b1\u00a00.1 kcal/mol for binding at E18\u2019 (Figure 2\u2014figure supplement 1). Simulations with NaCl or KCl also revealed formation of complexes with 1\u20132 ions and 1\u20132 carboxylate groups, involving E18\u2019 and D21\u2019 (Figure 2C). Although single ion occupancy dominates for both Na+ and K+, double ion occupancy occurred more frequently for Na+ (Figure 2C) and this doubly occupied site was 3.0\u00a0\u00b1\u00a00.4 kcal/mol more stable for Na+ than for K+ (Figure 2\u2014figure supplement 1). Thus, simulations identify E18\u2019/D21\u2019 as a likely site to increase Na+ concentration in a selective multi-ion permeation mechanism.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig2-v2.jpg)\n\n**Figure 2.:** (A) MD simulation system for PDB:4NTW (gray) embedded in a lipid bilayer (cyan) in NaCl solution (water, red and white sticks; Na+ and Cl-, orange and yellow balls). (B) Snapshots from simulation (left) and single ion-free energy profiles (right) for Na+ or K+ permeating the chick ASIC1 pore. See Figure 2\u2014figure supplement 1 for convergence analysis. Insets show hydrated Na+ in the GAS belt (left) and two Na+ ions or K+ ions at the level of E18\u2019 and D21\u2019 (lower). (C) Distribution of ion occupancies in sites formed by E18\u2019 and D21\u2019 in 4NTW. Single ion occupancy is favored for Na+ and K+, but double ion occupancy occurs more frequently for Na+ (left graph). For the doubly occupied site (right graph), binding to E18\u2019 dominates (\u20181 carboxylate\u2019), but with increased probability of tight binding to both E18\u2019 and D21\u2019 (\u20182 carboxylates\u2019) for Na+. Insets: representative double Na+ ion complexes.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Convergence of\u00a0Umbrella Sampling\u00a0free energy profiles for PDBs 4NTW (left graphs) and 2QTS (right graphs).\u00a0Convergence to within 1 kcal/mol was achieved within 6 ns for Na+ and 3 ns for K+.(4NTW), and 6 ns for Na+ and 7 ns for K+ (2QTS). Convergence of lateral sampling of ions was observed in the channel (not shown). (B) FEP binding free energy difference \u25b3\u25b3G for Na+\u2192K+ (with results for K+\u2192Na+ negated) for the site formed by E18\u2019/D21\u2019 occupied by a single ion in 4NTW (left) and 2QTS (right). Results for transformations Na+Na+\u2192 Na+K+ are shown in (C), while transformations Na+ K+ \u2192 K+ K+ are shown in (D). Mean values from independent transformations are shown above each panel, with values for complete transformation Na+Na+\u2192 K+K+ being the sum of individual transformations Na+Na+\u2192K+Na+ and Na+K+\u2192K+K+: 3.0\u00a0\u00b1\u00a00.4 for 4NTW and 5.9\u00a0\u00b1\u00a00.6 for 4NTW. 2QTS displays higher selectivity due to increased involvement of carboxylates in the narrower pore. Results for the 4NTW GAS site (E; left), reveal near-zero preference for Na+, with bulk values on the right, in agreement with experiment (18.2 kcal/mol).\u00a0(Friedman and Krishnan, 1973a).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** First shell coordination of Na+\u00a0and K+\u00a0by oxygen atoms from water and protein (backbone and side chains) in the ASIC pore; offset relative to bulk coordination numbers for clarity (5.8 and 7.0 for Na+\u00a0and K+, respectively).\u00a0Positions of key residues are indicated with gray dashed lines. Based on the positions of the first minima in the radial distribution functions of oxygen atoms, cutoffs of 3.2 and 3.6 \u00c5 were applied to Na+ and K+, respectively. (A) Free simulation of 4NTW. (B) Free simulation of 2QTS. (C) Umbrella sampling simulations for 4NTW, generally consistent with free simulations in (A). (D) Umbrella sampling simulations of 2QTS, consistent with results in (B).\n\n### Selective ion binding is strongly determined by lower pore structure\n\nThese results demonstrate that the lower ASIC1a pore is able to provide substantial thermodynamic preference for Na+ ions. However, the lower pore of this apparently open chick ASIC1/snake toxin complex (PDB:4NTW) is noticeably splayed (Figure 3A), possibly as a consequence of the removal of intracellular N- and C-termini for crystallization (Baconguis et al., 2014). We note that parts of these intracellular regions help form the conducting pore (Pfister et al., 2006) and affect efficiency of channel opening (Jing et al., 2013; Wu et al., 2016) in ASICs and also make crucial contributions to gating and ion conduction in other trimeric ion channels (Gr\u00fcnder et al., 1999; Mansoor et al., 2016). Indeed, a narrower lower pore than that seen in PDB:4NTW would resemble the selectivity filter of voltage-gated Na+ channels (Figure 3A), in which cooperative Na+ binding across subunits is known to contribute to ion selectivity (Boiteux et al., 2014; Payandeh et al., 2011). In the absence of such an ASIC structure, we examined ion binding to PDB:2QTS (Jasti et al., 2007), a closed-channel chick ASIC1 X-ray structure which resolves an additional 10 lower pore residues and shows a significantly narrower lower channel pore (Figure 3B). Although these simulations cannot inform on conduction, they allowed us to explore Na+ and K+ interactions in a pore for which M2 helices are less splayed. These simulations revealed preferential binding of a single Na+ ion by up to 2.6\u00a0\u00b1\u00a00.3 kcal/mol near E18\u2019 (Figure 3B; Figure 2\u2014figure supplement 1). In this narrower pore structure, we observed predominant formation of double ion complexes with E18\u2019 and/or D21\u2019 from neighboring subunits (Figure 3C, left graph), with a greater proportion of tightly bound complexes for Na+ (right graph). Such cooperative complex formation leads to a significant 5.9\u00a0\u00b1\u00a00.6 kcal/mol preference (Figure 2\u2014figure supplement 1), aggressively favoring Na+ ions. Thus, although permeation is not observed in simulations with the closed-channel 2QTS, the closer proximity of adjacent helices provides a means for carboxylate side chains to exert substantial control on selective binding at the channel opening to promote efficient multi-ion Na+ conduction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig3-v2.jpg)\n\n**Figure 3.:** (A) ASIC PDBs compared with voltage-gated Na+ channel NavAb (PDB:3RVY). Two opposing helices shown, with NavAb inverted for comparison. Selected leucine/isoleucine (black), serine/threonine (blue) and glutamate (red) side chains shown as spheres. (B) Snapshot of E18\u2019 and D21\u2019 creating multiple ion/carboxylate complex (left) and single ion free energy profiles (right) for Na+ and K+ in the lower pore of the presumed closed conformation PDB:2QTS (see Figure 2\u2014figure supplement 1 for convergence). (C) Distribution of single and double ion occupancy in 2QTS. Double ion occupancy dominates, usually involving multiple side chains. In this case, states are defined by the radial distribution function g(r) for ion-ion distance (right), revealing: two ions in a tightly shared complex with multiple carboxylates (2 tight); a two ion complex involving neighboring carboxylates that do not share single ions (2 loose); and the remainder involving ion binding to distant groups on opposing subunits (2 disperse). Snapshots below illustrate each configuration.\n\n### E18\u2019 determines selective Na+ conductance\n\nOur results suggest that GAS exerts less control over selectivity than previously thought and implicate other locations in selectivity. We therefore measured relative ion permeabilities in a series of mutants involving 16 additional pore-forming positions and found that L7\u2019, L14\u2019, E18\u2019 and D21\u2019 were the only residues whose mutation markedly altered ion selectivity (Figure 4A). This is consistent with the energetics for L7\u2019 and E18\u2019/D21\u2019 in Figure 2B, although the influence of L14\u2019 has possibly been suppressed by the wide 4NTW vestibule. Regarding L7\u2019, it was only substantial changes in side chain size/length that dramatically altered selectivity, with L7\u2019I and even L7\u2019V substitutions not decreasing Na+/K+ selectivity (Figure 4\u2014figure supplement 1). The fact that both E18\u2019Q and E18\u2019D mutations abolished selectivity (Figure 4A) suggests that both side chain charge and length make important contributions to Na+ conduction at this position. To test the role of charge, often obscured by the additional chemical changes in conventional acid-amide substitutions (Pless et al., 2011), we replaced glutamate with the isosteric but uncharged analogue 4-nitro-2-aminobutyric acid (\u2018\u20ac\u201d, Figure 4B). Although currents at oocytes expressing E18\u2019\u20ac channels were relatively small (Figure 4\u2014figure supplement 1), we could measure approximate reversal potentials for Na+ and K+ and establish that PNa+/PK+ was reduced to unity for E18\u2019\u20ac (Figure 4B), thus verifying that E18\u2019 negative charge is essential for Na+ selectivity. Moreover, single channel activity through E18\u2019D channels was significantly reduced (Figure 4C), implying that D18\u2019 is too short to enable WT-like Na+ permeation (although single channel conductance was similar to WT in D21\u2019N). We postulate that the need for such precise positioning of E18\u2019 carboxylates might be a consequence of the formation of Na+-selective multi-carboxylate complexes during conduction (e.g. Figure 3C). In particular, this suggests proximity of carboxylates from neighboring subunits, as would occur in a channel conformation with a more compact lower pore, similar to that seen in Figure 3B.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig4-v2.jpg)\n\n**Figure 4.:** (A) Relative permeability ratios for WT and mutant ASIC1a channels (mean \u00b1 SEM; n\u00a0=\u00a03\u20136). \u0394: G10\u2019A/S, A11\u2019V/F, S12\u2019G/A/C/T, T15\u2019V and E18\u2019A channels were non-functional (see Figure 4\u2014figure supplement 1). (B) E18\u2019 and \u20ac18\u2019 side chains, proton-gated currents (pH 6.0) in extracellular NaCl, and current-voltage relationship in extracellular NaCl (orange) or KCl (blue; mean \u00b1 SEM, n\u00a0=\u00a03\u20134). Specific \u20ac incorporation illustrated in Figure 4\u2014figure supplement 1. (C) Example and mean (\u00b1 SEM, n\u00a0=\u00a05\u20136) single channel Na+ currents. (D) Relative permeability ratios for concatemeric channels carrying no mutations (WT-WT-WT) or one, two or three\u00a0L7\u00b4A,S12\u2019A or E18\u2019Q mutations (mean \u00b1 SEM, n\u00a0=\u00a03\u20136). \u0394: Concatemeric channels containing three L7\u2019A- and three S12\u2019A-mutated subunits non-functional (see Figure 4\u2014figure supplement 2).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Example recordings of proton-gated current during voltage ramps in extracellular NaCl (orange), KCl (blue), CsCl (green) or LiCl (teal) at oocytes expressing selected mutant ASIC1a mRNA.\u00a0(B) Mean (\u00b1 SEM, n\u00a0=\u00a04\u20139) relative permeability ratios calculated after experiments depicted in (A) and half-maximal effective proton concentration values (\u2018pH50\u2019) from experiments depicted in (C). \u0394: At oocytes injected with G10\u2019A/S, A11\u2019V/F, S12\u2019G/A/C/T, T15\u2019V and E18\u2019A mRNA, pH 5.0 elicited currents no greater than at uninjected oocytes, as evident in (C). (C) Example recordings of current responses to increased proton concentrations at uninjected oocytes or oocytes expressing selected ASIC1a mutants (scale bars: x, 10 s; y, 1 \u03bcA, except for E18\u2019\u20ac and E18\u2019UAG (no \u20ac) as indicated). \u2018E18\u2019\u20ac\u201d describes oocytes injected with E18\u2019UAG mRNA + tRNA-\u20ac. \u2018E18\u2019UAG (no \u20ac)\u201d describes oocytes injected with E18\u2019UAG mRNA + tRNA, which allows only for non-specific incorporation of endogenous amino acids to this position and thus serves as a control for specific incorporation. Graph shows mean pH 6.0-gated current amplitude for both groups (***p<0.001, Student\u2019s t test).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24630/elife-24630-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Cartoon illustrating three linked subunits,\u00a0\u2018a-c\u2019\u00a0in a concatemeric channel.\u00a0Lettering below shows nucleotide and protein sequence, containing: untranslated nucleotide sequence, restriction sites and peptide linkers (black); and ASIC1a sequence (blue). (B) Primer pairs used to generate fragments a-c for subsequent ligation into concatemeric constructs, including: nucleotide spacers and untranslated sequence (grey); restriction sites (orange); peptide linker (black); and ASIC1a sequence (blue). (C) Western blot, detecting ASIC1a amongst denatured total cell-surface protein from oocytes injected with indicated ASIC1a mRNAs. \u2018WT\u2019, regular ASIC1a; \u2018WT-WT-WT\u2019, concatenated wild-type subunits; \u2018SA-WT-WT\u2019, one of the three 1/3 S12\u2019A concatemeric permutations tested (shown in Figure 4D), etc. The main band of protein from oocytes injected with regular ASIC1a mRNA is\u00a0~70 kDa, corresponding to single ASIC1a subunits. For protein from oocytes injected with concatemeric ASIC1a mRNA, the main band is\u00a0~210 kDa, corresponding to three covalently linked subunits in a concatemer. (D) Maximum current amplitude (\u2018I (\u03bcA)\u201d) activated by pH 5.0 at oocytes injected with regular WT ASIC1a mRNA (\u2018WT\u2019), concatemeric WT mRNA (\u2018WT-WT-WT\u2019), concatemeric mutant mRNA, or nothing (\u2018uninjected\u2019). Columns, mean current amplitude; circles, individual data points. Current amplitude at 3/3 L7\u2019A-mutant and at 3/3 S12\u2019A-mutant-injected oocytes was not discernable from uninjected oocyte.\n\nFinally, to establish the individual contribution of each of the three E18\u2019 side chains lining the pore in the ASIC trimer, we generated concatemeric channels containing the E18\u2019Q mutation in one, two or all three subunits. As shown in Figure 4D, each E18\u2019 contributes to selectivity, as even the 1/3 mutation decreases PNa+/PK+ and PNa+/PCs+ ratios. But while 1/3 maintained WT-like profile of PNa+ > PK+ > PCs+, it was only 2/3 and 3/3 where this profile collapsed, consistent with the cooperative interactions with ions suggested by simulations (Figure 3). In contrast, the L7\u2019A mutation, which abolished selectivity in regular channels, caused no ostensible change in relative permeability in 1/3- or 2/3-mutated channels (Figure 4D). Furthermore, the S12\u2019A mutation rendered regular channels non-functional (Figure 4\u2014figure supplement 1) and had therefore eluded study. However, a stepwise introduction of this mutation into concatemeric channels caused no change in relative permeability in 1/3- or 2/3-mutated channels, providing novel functional evidence that S12\u2019 makes little or no direct contribution to Na+ selectivity.\n\n## Discussion\n\nThese results are the first to extensively assess the role of the GAS belt with atomic resolution in ion selectivity in ASICs, as previous approaches were not suited to probing this apparently delicate part of the channel. Through experimental and computational approaches, we find that the GAS belt is involved in reducing the barrier to K+ ions through backbone interactions, but we find no evidence for Na+ selectivity occurring exclusively at this position. Our data identify other regions, including L7\u2019 and L14\u2019 on either side of the GAS belt, and especially E18\u2019 at the lower entrance to the pore, where selective Na+ conduction is most directly controlled. This prompts a rethinking of the long-standing view that the GAS belt is the selectivity filter in ASICs.\n\n### Defining the role of the GAS belt\n\nThe GXS motif was first suggested to form a filter that excludes larger ions in ENaCs, when S12\u2019A, S12\u2019C and S12\u2019D mutations were shown to reduce relative Na+/K+ permeability (Kellenberger et al., 1999a; Snyder et al., 1999). The early notion that such a size-exclusion selectivity filter could extend to ASICs (Kellenberger and Schild, 2002) gained traction when X-ray structures of an apparently open-channel chick ASIC1/toxin complex showed that in kinking the pore-forming helix, GAS motifs from each subunit together form a belt in the narrowest part of the pore (Baconguis et al., 2014). However, nearly all attempts to probe the functional role of the GAS belt in ASICs were severely hindered by the very intimacy of this role: mutations to G10\u2019 and S12\u2019 in ASIC1a practically abolish measurable activity (Carattino and Della Vecchia, 2012; Li et al., 2011b; Yang et al., 2009). Finally, certain experimental data seem at odds with a size-exclusion filter in ASICs. For instance, potassium and even larger organic cations can permeate the ASIC pore, suggesting that specific interactions in the channel pore contribute to the selective conduction of Na+ (Yang and Palmer, 2014).\n\nOne previous attempt to overcome the sensitivity of GAS to mutation succeeded by engineering a concatemer containing two WT subunits and one G10\u2019C subunit, causing a reduction in Na+ conductance (Li et al., 2011b). However, this mutation adds a side chain to G10\u2019, whose main chain carbonyl oxygen is implicated in conduction by structural data (Baconguis et al., 2014), and the G10\u2019C mutation could indirectly alter the shape of the pore, as indeed Kellenberger et al. (1999a), suggested for GAS mutations in ENaCs. We have targeted G10\u00b4 directly and yet subtly, by way of an amide-ester main chain substitution. This caused minimal structural consequences, reflected in WT-like gating of A11\u2019\u03b1 channels (Figure 1C), yet decreased electrostatic potential around the G10\u2019 main chain carbonyl oxygen (Lu et al., 2001). This alteration saw no effect on Na+ conductance but a modest decrease in apparent K+ permeability. Our MD simulations provide a good explanation for this effect. Na+ and K+ ions both fit through the GAS constriction, but for K+ ions, this requires interaction with a G10\u2019 carbonyl in place of a water molecule (Figure 2\u2014figure supplement 2). Additionally, we used mutant S12\u2019 concatemeric channels to directly demonstrate that S12\u00b4 is unlikely to play a major role in ASIC selectivity. Thus, our experiments and simulations show that, while the GAS belt may contribute to ion selectivity in ASICs, it is unlikely the site of the actual selectivity filter, which we have demonstrated is located elsewhere in the pore, where mutations eliminate Na+ selectivity altogether.\n\n### Determinants of ion selectivity\n\nWhile the small contribution from backbone K+ coordination explains the lack of ion preference at the GAS constriction, nearby site L7\u2019 caused slight dehydration of K+, uncompensated for by carbonyl coordination in a more open part of the pore, explaining its slight elevation in energy. Alanine (but not isoleucine) substitution of L14\u2019, on the other side of the GAS belt, also affected selectivity, but with no calculated energetic difference between Na+ and K+. We propose that the loss of selectivity in the L14\u2019A mutant could be an indirect effect on Na+ conduction, caused by the loss of hydrophobic interactions between L14\u2019 side chains and adjacent helices (illustrated by Baconguis et al., 2014), which are likely retained in the more conservative L14\u2019I mutant. This indirect role in selectivity is consistent with the absence of an energetic preference for Na+ at this level in simulations. Furthermore, a role for the L14\u2019 side chain in maintaining the open channel structure is also consistent with the effects of the L14\u2019C mutation on channel gating (Carattino and Della Vecchia, 2012). Similarly, the L7\u2019 side chain is oriented toward adjacent helices in PDB:4NTW (Baconguis et al., 2014) and is implicated in gating (Yang et al., 2009). Indeed, in our hands the L7\u2019A mutation altered ASIC1a proton-gating more than any other mutant in the present study (Figure 4\u2014figure supplement 1). L7\u2019 might thus be important for pore conformation, without contributing to specific interactions with ions in the pore (consistent with the hydrophobic nature of the side chain).\n\nThe most noticeable effects on ion selectivity, based on both experiments and simulations, were caused by mutations at the lower end of the channel pore, involving E18\u2019 and D21\u2019. In the case of E18\u2019, our experiments showed that both charge and size of this side chain are crucial for selectivity, suggesting the need for precise charge positioning, consistent with the formation of multi-carboxylate complexes with Na+ ions. Through engineered subunit stoichiometry we showed that although each E18\u2019 contributes to selective Na+ conduction (as expected with the three E18\u2019 side chains being oriented into the pore in all available ASIC crystal structures [Baconguis et al., 2014; Baconguis and Gouaux, 2012; Jasti et al., 2007]), the elimination of 2 of the three glutamates drastically reduces Na+/K+ relative permeability, consistent with the notion of cooperative Na+ binding to multiple glutamate side chains. We have shown that there is a significant energetic preference for Na+ at the level of E18\u2019, established by ion-carboxylate complexes that favor Na+ ions, forming a uniquely ion selective site in ASIC1a. In the Appendix we demonstrate that strong binding of Na+ to carboxylates in this model is also seen in high level quantum mechanical free energy calculations, yielding a KD in approximate agreement with experiments, and that preference for Na+ is maintained even with more repulsive ion parameters (Marinelli et al., 2014). We postulate that such thermodynamic stability at the channel entrance would act to facilitate binding of multiple Na+ ions to increase channel flux, possibly via knock-on permeation. As E18\u2019 is highly conserved (Figure 1\u2014figure supplement 1) and mutations at the equivalent position in ENaCs reduce Na+ currents (Langloh et al., 2000; Sheng et al., 2001), it is foreseeable that E18\u2019 controls Na+ conduction throughout the broader ENaC/DEG family.\n\nAs ENaCs show substantially greater Na+ selectivity than ASICs (e.g. Gr\u00fcnder and Pusch, 2015), however, significant differences must occur between these two examples of ENaC/DEG channels. We speculate that G10\u2019 might be oriented differently in ENaCs, such that it cannot provide the favorable backbone contribution to K+ conduction that we observed for ASICs. Moreover, in the selectivity filter we have identified, ENaCs possess E18\u2019 and E21\u2019 (whereas ASICs possess E18\u2019 and D21\u2019). The longer E21\u2019 side chain in ENaCs could help in the formation of cooperative multi-ion complexes, which could further increase Na+ selectivity, as suggested in our simulations with a narrower pore than that seen in PDB:4NTW. As we did not observe an increase in selectivity with D21\u2019E mutant ASICs, we speculate that other factors govern the additional increase in selectivity in ENaCs, possibly by an even more narrow selectivity filter. This notion is consistent with greater permeation of organic cations in ASIC (Yang and Palmer, 2014) than in ENaC (Kellenberger et al., 2001). Finally, it is conceivable that the intracellular entrance to the open ASIC channel pore would adopt a different conformation in the presence of intracellular N- and C-termini, as is certainly the case in structurally analogous P2X receptors (Hattori and Gouaux, 2012; Mansoor et al., 2016).\n\n### Concluding remarks\n\nOur combined experimental and computational approach reveals that although main chain carbonyl oxygens at the levels of L7\u2019 and the GAS belt contribute to selectivity by interacting with permeating K+ ions, the notion of the GAS belt as the ASIC selectivity filter must be revised. Our data clearly describe a selectivity filter (comprised of E18\u00b4and D21\u00b4) at the lower end of the ASIC1a pore, which discriminates ions based on interactions with a band of carboxylate side chains.\n\n## Materials and methods\n\n### Molecular biology\n\nMouse ASIC1a cDNA, cloned between BamHI and SacI sites of pSP64 vector, was a gift from Marcelo Carattino (University of Pittsburgh). In screening for determinants of ion selectivity (Figure 4A), two single amino acid substitutions per position were designed to identify loss-of-function without relying on results from only one substitution. Site-directed mutagenesis used custom-designed primers (Eurofins Genomics,\u00a0Germany) and regular PCR with PfuUltra II Fusion HS DNA Polymerase (Agilent Technologies,\u00a0Denmark). For generation of concatemeric constructs (illustrated in Figure 4\u2014figure supplement 2), the ASIC1a insert was cloned out of pSP64 with forward and reverse primers containing additional HindIII and SalI, SalI and BamHI or BamHI and SacI sequence, respectively, generating three distinct inserts, a, b and c, which were then gel-purified. Insert a was ligated into pSP64 vector (Promega,\u00a0Denmark) double-digested with HindIII and SalI. The resulting plasmid was then then double-digested with SalI and BamHI, insert b was ligated in; this \u2018a-b\u2019 plasmid was double-digested with BamHI and SacI, and insert c was ligated in, yielding the \u2018a-b-c\u2019 concatemer. From this construct, wild-type inserts could be replaced with mutant inserts via the same primers and restriction sites. Full concatemer sequences were confirmed by mutagenesis primers recognizing the unique restriction sites. cDNAs were linearized with EcoRI, and mRNAs were synthesized with the Ambion mMESSAGE mMACHINE SP6 transcription kit (Thermo\u00a0Fisher Scientific,\u00a0Denmark). mRNA was then purified via RNeasy columns (Qiagen,\u00a0Denmark).\n\n### Incorporation of unnatural amino acids, oocyte preparation and mRNA injection, and Western Blotting\n\nThe non-proteinogenic \u03b1-amino and \u03b1-hydroxy acids, or \u2018unnatural amino acids\u2019 (UAAs), 4-nitro-2-aminobutyric acid (\u20ac) and lactic acid (hydroxy analog of alanine, \u03b1) were incorporated via the nonsense suppression method, detailed elsewhere (Dougherty and Van Arnam, 2014). Briefly, modified Tetrahymena thermophila tRNA (Nowak et al., 1998) was prepared by ligating full-length 5\u2019 and 3\u2019 DNA strands (Integrated DNA Technologies,\u00a0Belgium), RNA synthesis with T7-Scribe transcription kit (Cellscript,\u00a0WI,\u00a0USA) and purification with Chroma Spin DEPC-H20 columns (Clontech,\u00a0CA,\u00a0USA). UAAs were ligated to tRNA with T4 DNA ligase (New England Biolabs,\u00a0MA,\u00a0USA), and aminoacyl-tRNA was purified with phenol-chloroform extraction and ethanol precipitation. \u20ac was synthesized as described elsewhere,\u00a0(Cashin et al., 2007) protected with 4,5-dimethoxy-2-nitrobenzyl carbamate (NVOC), esterified with 5'-O-phosphoryl-2'-deoxycytidylyl-(3'-->5')adenosine (pdCpA), ligated to tRNA, purified via ethanol precipitation, air-dried and stored at \u221280\u00b0C until use. Immediately before injection into oocytes, \u20ac-tRNA was resuspended in 1 \u00b5l water and deprotected with UV light. For \u03b1, the lactic acid was esterified with pdCpA as described elsewhere (England et al., 1999), the resulting ester was ligated to tRNA and purified as above, but required no de-protection before injection.\n\nOvaries surgically removed from Xenopus laevis frogs (anaesthetized in 0.3% tricaine, under license 2014\u201315\u22120201\u201300031, approved by the Danish Veterinary and Food Administration) were divided into small clumps of oocytes, these were shaken at 200 rpm at 37\u00b0C in OR2 (in mM, 2.5 NaCl, 2 KCl, 1 MgCl2, 5 HEPES, pH 7.4 with NaOH) containing 0.5 mg/ml Type I collagenase (Worthington,\u00a0NJ,\u00a0USA) until free individual oocytes were obtained. These were incubated in OR2 at 18\u00b0C until injection of mRNA. For WT and most mutant mRNAs, 0.4 ng was injected in a volume of 36 nl (diluted in water) using a Nanoliter 2010 injector (World Precision Instruments,\u00a0UK). For mutant and concatemeric constructs that yielded lower maximum currents in electrophysiological recordings, 36 ng (in 36 nl) were injected. For UAA incorporation, 3.6 ng (for A11\u2019\u03b1) 36 ng (for all others) UAG-mutant mRNA together with half a pellet of UAA-tRNA ligate in a volume of 46 nl was injected. Oocytes were incubated in Leibovitz\u2019s L-15 medium (Gibco,\u00a0Denmark) with 3 mM L-glutamine, 2.5 mg/ml gentamycin, 15 mM HEPES (pH 7.6 with NaOH) until experiments.\n\nFor Western blotting, cell surface protein was purified with Pierce Cell Surface Protein Isolation Kit (this and subsequent kits/reagents from ThermoFisher Scientific), modified here for oocytes: 30 oocytes were injected with a single construct and used for cell surface protein labeling and purification as per supplier\u2019s instructions. Protein (50 \u00b5g per construct) was denatured, separated in a 4\u201312% BIS-TRIS gel and transferred to PVDF membrane, as per supplier\u2019s instructions. Membrane was washed with rabbit polyclonal anti-ASIC1a antibody (OSR00097W), washed with goat anti-rabbit IgG/HRP conjugate (A16110), and developed with Pierce ECL (32106).\n\n### Electrophysiological experiments and data analysis\n\nFor two-electrode voltage clamp experiments, one to two days after injection, an oocyte was placed in a custom-built chamber (Dahan et al., 2004), through which bath solution (in mM, 96 NaCl, 2 KCl, 1.8 BaCl2, 5 HEPES, pH 7.6 with NaOH) was continuously perfused. Solution was rapidly switched to one of lower pH (for those\u00a0<6.0, HEPES was replaced with MES) using a ValveBank eight system (AutoMate Scientific,\u00a0CA,\u00a0USA). Oocytes were clamped at \u221240 mV (or as described in text) and currents recorded with microelectrodes filled with 3 M KCl, OC-725C amplifier (Warner,\u00a0CT,\u00a0USA) and Digidata 1550 digitizer (Molecular Devices,\u00a0CA,\u00a0USA) at 1 kHz with 200 Hz filtering. Data were later analyzed in Clampfit 10 (Molecular Devices) with 10 Hz filtering for illustration. In measuring ion selectivity, NaCl was replaced with LiCl, KCl or CsCl and pH was adjusted with NaOH and HCl (LiCl solutions) or CsOH and HCl (KCl and CsCl solutions). For single channel recordings, oocytes were prepared in the same way until recording, when the vitelline membrane was removed with forceps, and outside-out patches were pulled. Intracellular solution contained, in mM, 20 NaCl, 180 D-Mannitol, 2 MgCl2, 5 HEPES, pH 7.4 with NaOH/HCl; extracellular solution 140 NaCl, 3 MgCl2, 5 HEPES, pH 7.6 or 5.0 with NaOH/HCl). Currents were recorded with an Axopatch 200B amplifier and Digidata 1550A digitizer (Molecular Devices) at 10 kHz with 2 kHz filtering. Data were analyzed in Clampfit 10 with additional 500 Hz filtering for analysis and display.\n\nRelative ion permeability (e.g. PNa/PK) was calculated using reversal potentials (Vrev,Na and Vrev,K) measured from 160 mV/200 ms ramps and a version of the Goldman-Hodgkin-Katz equation PK/PNa = exp(F(Vrev,Na - Vrev,K)/RT), where F = Faraday\u2019s constant, R = gas constant, T\u00a0=\u00a0274 K, as performed elsewhere, where it was shown that voltage ramps yield results indistinguishable from voltage intervals or \u2018steps\u2019 (Yang and Palmer, 2014). Relative ion permeability ratios are plotted as PNa/PKa on a log scale for clarity. pH50 values were calculated with the four parameter Hill equation in Prism 6 (GraphPad). As per the norm in electrophysiological experiments, where n is usually\u00a0<10, we show a few individual, raw recordings as examples and calculated the mean from 3 to 9 experiments. Statistical comparisons are as described in text, but generally, multiple values were compared with one-way ANOVA and Dunnett\u2019s test for significant difference from wild-type. All functional experiments were performed on at least two batches of cells (isolated from two different animals).\n\n### System construction and molecular dynamics simulation\n\nFor molecular dynamics (MD) simulations, ASIC1a protein X-ray crystallographic coordinates for the presumed open state, taken from PDB:4NTW\u00a0(Baconguis et al., 2014) (available residues 45 to 456; pdb numbering) was embedded in a lipid bilayer of 386 (194 top and 192 bottom) palmitoyloleoylphosphatidylcholine (POPC) lipids, with explicit water molecules (47,184 molecules), 150 mM of NaCl or KCl (162 Na+ or K+ and 123 Cl- ions), to form two simulation boxes of 115\u00a0x\u00a0115 \u00d7 160 \u00c5 containing 213,043 atoms (Figure 2A).\n\nIn independent simulations of the presumed closed state, X-ray crystallographic coordinates from PDB:2QTS (Jasti et al., 2007) (available residues 42 to 458, 42 to 461, and 40 to 457 for each subunit, respectively; PDB numbering,) was embedded in a bilayer of 412 (206 top and 206 bottom) dipalmitoylphosphatidylcholine (DPPC) lipids, with explicit water molecules (49,850 molecules), 150 mM of NaCl or KCl (188 Na+ or K+ and 136 Cl- ions), to form two simulation boxes of 115x115 \u00d7 164 \u00c5 containing 223,315 atoms.\n\nAll systems were built and equilibrated with the CHARMM program (Brooks et al., 1983, 2009), using the C36 lipid\u00a0(Klauda et al., 2010) and C22 protein parameters\u00a0(MacKerell et al., 1998) with CMAP corrections (Mackerell et al., 2004), and TIP3P water (Jorgensen et al., 1983). Ion parameters used are those for the CHARMM27 force field with revisions to Na+ and K+ non-bonded Lennard-Jones (Noskov and Roux, 2008) (referred to as CHARMM27*), corresponding to rmin values for ion-carboxylate oxygen pair interactions of 3.12 and 3.46 \u00c5, respectively. In the Appendix we demonstrate that these parameters yield reasonable agreement with experimental binding for Na+ in aqueous solution and to quantum mechanical calculations. We also report modified results using NBFIX parameters for Na+ and K+ that better reproduce experimental osmotic pressure coefficients in concentrated acetate salt solutions (Marinelli et al., 2014), corresponding to rmin values of 3.19 and 3.52 \u00c5, respectively (see Appendix). Modified Lennard-Jones parameters were used to describe the interactions between cations and carbonyl oxygen atoms of the protein, to reproduce correct free energies of solvation in protein backbone mimetic, N-methylacetamide (Allen et al., 2006; Bern\u00e8che and Roux, 2001; Noskov et al., 2004). Standard CHARMM LJ parameters for Cl- were used (Beglov and Roux, 1994). After 3000 (2\u00a0x\u00a06 \u00d7 250) steps of steepest descent (SD) and adopted basis Newton-Raphson (ABNR) minimization, MD simulations commenced with initial harmonic restraints (10 kcal/mol/\u00c52) applied to all heavy atoms. These restraints were slowly released over 0.5 ns, followed by 1.5 ns of simulation without any restraints. Simulations were started at constant volume with a timestep of 1 fs for 50 ps before switching to constant pressure (one atm, Langevin piston barostat) (Andersen, 1980; Feller et al., 1995) with a timestep of 2 fs, and constant temperature using a Nos\u00e9-Hoover thermostat (Hoover, 1985; Nos\u00e9, 1984). All simulations of POPC were run at 303K (above the gel phase transition temperature of 271K), and those for DPPC at 323K (above the transition temperature of 314K) (Davis, 1979; Petersen et al., 1975). All bonds to H atoms were maintained using the SHAKE algorithm (Ryckaert et al., 1977). Electrostatic interactions were computed using Particle Mesh Ewald (Darden et al., 1993), with grid spacing of 1 \u00c5 and 6th order B-spline for mesh interpolation. Non-bonded pair lists were updated automatically via heuristic testing with a cutoff distance of 16 \u00c5 and a real space cutoff of 12 \u00c5 with energy switch (switching distance of 10 \u00c5).\n\nProduction simulations used the NAMD program, version 2.9 (Phillips et al., 2005) with the same force field. These simulations were carried out using tetragonal periodic boundary conditions in the NPT ensemble with a two fs time step. All simulations were performed at constant pressure (1 atm) with a Langevin piston,\u00a0(Andersen, 1980; Feller et al., 1995) with fixed lateral area ratio (1:1), and constant temperature using a Nos\u00e9-Hoover thermostat (Hoover, 1985; Nos\u00e9, 1984), All bonds to H atoms were maintained using the RATTLE algorithm (Andersen, 1983). Electrostatic interactions were computed using Particle Mesh Ewald with grid spacing of 1.5 \u00c5 and 6th order B-spline for mesh interpolation. Non-bonded pair lists were updated every 20 fs with a cutoff distance of 16 \u00c5 and a real space cutoff of 12 \u00c5 with energy switch (switching distance of 10 \u00c5).\n\nUnbiased simulations of PDB:4NTW ran for 235 and 225 ns in NaCl and KCl, respectively. To ensure sampling of the lower channel entrance in the non-conducting PDB:2QTS state, flat bottom constraints were applied to two ions to restrain them within a cylinder of 15 \u00c5 of radius along the z-axis, and in a slab of 10 \u00c5 of thickness in the xy-plane, both centered around the center of mass (COM) of the backbone of residues E18\u2019 and D21\u2019. Simulations in 2QTS ran for 140 ns in both NaCl and KCl solutions.\n\n### Free energy profiles\n\nThe unbiased free energy profile for PDB:4NTW (Figure 2\u2014figure supplement 1) was calculated as $W(z)=\u2212k_{B}Tin[\u03c1(z)]+C$, where \u03c1 is the unbiased probability distribution as a function of reaction coordinate z, being the position of the ions along the z-axis, with constant C chosen to set the zero in bulk electrolyte. The mean and standard error were obtained by dividing data into four equal blocks of 56 ns for each simulation.\n\nTo ensure thorough sampling of free energies for a single Na+ or K+ ion translocating the 4NTW pore, or for entering the lower pore of 2QTS, we used umbrella sampling (US) (Torrie and Valleau, 1977). This involved 46 and 26 independent simulations (windows) for 4NTW and 2QTS, respectively, with 1 \u00c5 resolution: windows spanning \u221225 to 20 \u00c5 in 4NTW, and \u221225 to 0 \u00c5 in 2QTS, relative to the GAS sequence COM. Initial configurations were taken from the unbiased simulations of 4NTW and 2QTS in NaCl and KCl after 20 and 12 ns of equilibration, respectively. In each window, the ion was held near the window position by a 2.5 kcal/mol/\u00c52 force constant. To assist sampling of K+ in 2QTS, two additional windows were added z\u00a0=\u00a09.5 \u00c5 and z\u00a0=\u00a011.5 \u00c5, and the force constant was increased to 5.14 kcal/mol/\u00c52 for Na+ at z\u00a0=\u00a07 \u00c5. The radial position was constrained with a flat bottom potential to keep the ion in a cylinder of 9 \u00c5 with a force constant 10 kcal/mol/\u00c52. All US simulations were performed with NAMD2.9 at 1 atm constant pressure using the Langevin piston barostat (Feller et al., 1995), and constant temperature of 323K using a Nos\u00e9-Hoover thermostat (Hoover, 1985; Nos\u00e9, 1984). We ran 20 ns per window (extended to 27 ns for the central windows in 4NTW, z = \u221210 to z = \u22125 \u00c5). Based on convergence for each US window (Figure 2\u2014figure supplement 1), we discarded the first 6 ns for Na+ and 7 ns for K+ simulations in 2QTS, and the first 6 ns for Na+ and 3 ns for K+ simulations in 4NTW. Unbiased free energy profiles were then calculated using the Weighted Histogram Analysis Method (WHAM) (Kumar et al., 1992). Mean and standard error were calculated by dividing the data into 1 ns blocks.\n\n### Free energy perturbation\n\nFree energy perturbation (FEP) calculations (Kollman, 1993) were performed for ions in a site formed by the carboxyl oxygen atoms of residues E18\u2019 and D21\u2019, involving 2 to 4 residues from different subunits (systems 4NTW and 2QTS), as well as in the site formed by the carbonyl oxygen atoms of the GAS locus (system 4NTW only). At the level of residues E18\u2019 and D21\u2019, single or double occupancies (Na+ or K+), identified from analysis of the unbiased simulations above, were maintained with a flat-bottom spherical constraint of 2.75 \u00c5 radius from the COM of the carboxyl groups forming the site. In the GAS site, flat-bottom planar potentials were applied to hold the ion in a slab of 4 \u00c5 of thickness, oriented in the XY-plane and centered on the COM of the GAS backbone.\n\nThe relative change in free energy resulting associated with the binding of Na+ or K+ to a given site and occupancy can be summarized by the following thermodynamic cycle:\n\n$$\nNa_{bulk}^{+}\u2192K_{bulk}^{+}\u2191\u2193Na_{site}^{+}\u2192K_{site}^{+}\n$$\n\nAccordingly, this implies that the resulting variation of free energy \u25b3\u25b3G can be determined as:\n\n$$\n\u0394\u0394G(Na^{+}\u2192K^{+})=[(G_{site}(K^{+})\u2212G_{bulk}(K^{+}))\u2212(G_{site}(K^{+})\u2212G_{bulk}(K^{+}))],\n$$\n\nor:\n\n$$\n\u0394\u0394G(Na^{+}\u2192K^{+})=\u0394G_{site}(Na^{+}\u2192K^{+})\u2212G_{bulk}(Na^{+}\u2192K^{+})\n$$\n\nThe free energy differences $\u0394G_{site}(Na^{+}\u2192K^{+})$ and $\u0394G_{bulk}(Na^{+}\u2192K^{+})$\u00a0were estimated using alchemichal FEP simulations, in which the thermodynamic work for the alchemical transformation of the ion was calculated step-by-step, slowly mutating the ion from one species to the other using a coupling parameter \u03bb. These calculations were performed with the alchemical FEP module implemented in NAMD 2.9. For each calculation, \u03bb was initially \u2018pulled\u2019 from \u03bb\u00a0=\u00a00 to 1 (forward simulation) and 1 to 0 (backward simulation) in 40 steps (\u0394\u03bb\u00a0=\u00a00.05) of 0.2 ns each, followed by 2 ns of production run in parallel in each window, amounting to 80 ns of simulations per calculation, offering good convergence (see Figure 2\u2014figure supplement 1). All simulations were performed with the same simulation parameters, as described for free energy profiles above. The mean and standard error for each calculation estimated by combining forward and backward calculations using the Bennett acceptance ratio (BAR) (Bennett, 1976) estimator implemented in the ParseFEP plugin of the VMD package (Humphrey et al., 1996).\n\nA total of 20 FEP calculations were performed in the sites formed by residues 18\u2019 and 21\u2019 (4NTW and 2QTS), two in the GAS site (4NTW) and two in the bulk to provide a reference for binding. For both systems (2QTS and 4NTW), at the level of residues E18\u2019 and D21\u2019, we considered single occupancy (Na+\u2192K+ and K+\u2192Na+) and double occupancy, where each ion was transformed in a separate calculation (Na+Na+\u2192Na+K+ and Na+Na+\u2192K+Na+, as well as K+K+\u2192K+Na+ and K+K+\u2192Na+K+), followed by the transformation of the second ion, once the first one reached the \u03bb\u00a0=\u00a01 state (Na+K+\u2192K+K+ and K+Na+\u2192K+K+, as well as K+Na+\u2192Na+Na+ and Na+K+\u2192Na+Na+). Free energy changes for the double occupancy transformation Na+Na+\u2192K+ were obtained by summing the changes along the path, Na+Na+\u2192K+Na+ and Na+K+\u2192K+K+. Results are summarized in Figure 2\u2014figure supplement 1.\n",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "0246432f-bf48-4671-bab5-25a919c5ee02",
+      "submission_id": "ff5fe924-f2f3-475a-99d5-c8d36c50c20e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24630.014](https://doi.org/10.7554/eLife.24630.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A selectivity filter at the intracellular end of the acid-sensing ion channel pore\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, Baron Chanda (Reviewer #3), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nLynagh et al. seek to explain the structural basis for the Na+ versus K+ selectivity of ASIC channels, by combining electrophysiological, unnatural amino acid mutagenesis with molecular simulations of ion selectivity. The outcome is an innovative and compelling study, which concludes that the 10-fold Na+ selectivity of this channel is not determined by the so-called 'G-A-S belt', as previously proposed. Instead, a set of acidic residues at the intracellular side of the pore, and regions near Leu7/Leu14, are found to be influential. The study illustrates that even though from a structural standpoint, the ions are likely to interact intimately with the protein at the constriction formed by the \"G-A-S belt\", the actual selectivity is due to residues at the vestibule. The reviewers agree that this is an important contribution to the field but have raised some concerns, which should be addressed in the revised version.\n\nEssential revisions:\n\n1) The Lennard-Jones parameters for K+ and Na+ used in the calculations are said to be those that optimize the representation of the cation-carbonyl interactions (subsection \u201cSystem construction and molecular dynamics simulation\u201d, third paragraph), in the context of the CHARMM22 force field. I deduce, therefore, that the authors have not considered subsequent improvements focused on the representation of cation-carboxyl interactions. These interactions were found to be too strong in standard CHARMM22, and to a greater degree for Na+ than K+ (see e.g. Luo & Roux, JPC Lett 2010; or Marinelli et al., PNAS 2014). Therefore, I believe it is pertinent to question whether free-energy profiles and DDG values calculated with a 'corrected' set of LJ parameters would be significantly different from those currently presented, and if so, whether they would alter the current conclusions of the theoretical study. For example, does the shape of the free-energy profiles in Figure 2B change? One might expect the profile would be shallower around E18/D21. Does the contribution of the constriction near L7, where the Na+/K+ selectivity is said to result from different carbonyl interactions and degree of dehydration, become more prominent, relative to that from the E18/D21?\n\nI should note that the authors do not need to carry out any additional simulations to address this question \u2013 the task simply requires that they re-calculate the various probability distributions and ensemble averages involved in the derivation of the analysis currently presented, after introducing a 'weight' for each of the snapshots sampled in the existing MD trajectories. This weight is an exponential factor of the change in potential energy resulting from the modification of the force-field. It should be therefore very feasible to provide alternative plots to those shown in Figure 2BC and Figure 3BC, an alternative DDG values to those currently mentioned in the text \u2013 which I believe result from the calculations summarized in Figure 2\u2014figure supplement 1B-E.\n\n2) The authors focus their more detailed experimental and computational analyses on acidic residues on the intracellular side of the pore (E18, D18), and highlight these in the title and Abstract of the article. However, the data presented seems to show that the region near L7 is as influential. For example, according to Figure 4A, the L7A mutation makes the pore (slightly) K+ selective \u2013 consistent with this result, the existing free-energy profile in Figure 2A also shows that the L7 region is as important, if not more. If the new calculations with the 'corrected' forcefield parameters mentioned above confirm that the selectivity of the L7 site is similar, or more prominent, than that of the site near E18/D21, it would be necessary to examine the L7 site further, ideally through the same kind of experimental data as that presented in Figure 4D, for the acidic region; that is, do the L7A mutations have a progressive effect on the selectivity, like the E18Q mutations? Free-energy perturbation simulations for this site would also be required to rationalize the experimental result, particularly if single, double and triple mutations indeed have a distinct effect, as seen for the site near E18/D21.\n\n3) Simulations that are consistent with the contribution of the side chains of E18' in determining Na/K selectivity were based on the structure of a non-conducting channel. What is the relevance of such simulations for the active open ASIC1?\n\n4) Since the simulations based on the open chick ASIC1 cannot predict the role of E18 on ion selectivity, a logical consequence is that this crystal structure of the cASIC1/toxin complex does not represent the open conformation of the functional channel; this needs to be discussed.\n\n5) What is the contribution of L14' in setting Na/K selectivity? This should be discussed.\n\n6) Obviously other factors than the highly conserved E18 and D20 play a role in channel ion selectivity among the members of the ENaC/degenerins family, as suggested by ENaC that is highly selective (Na/K selectivity >100). This needs to be discussed.\n\n7) Unnatural amino acid replacement is not perfect because it has been reported that under certain conditions, there is non-specific incorporation (Pless et al. (2014) JGP). Please provide appropriate controls to establish that there is no non-specific at the sites tested in this study.\n",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ab0df38b-49d9-496c-9fde-3b53f5522cfc",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C1",
+      "claim": "Acid-sensing ion channels (ASICs) convert increased extracellular proton concentrations during neurotransmission to excitatory sodium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased extracellular proton concentrations during neurotransmission are converted to excitatory sodium influx by acid-sensing ion channels (ASICs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Du et al., 2014; Kreple et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "823bbe5c-85e0-4353-8157-08adbd62c219",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C2",
+      "claim": "ASICs exhibit approximately 10-fold sodium/potassium selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "10-fold sodium/potassium selectivity in ASICs has long been attributed to a central constriction in the channel pore",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and further supported in the introduction with citations (Gr\u00fcnder and Pusch, 2015; Waldmann et al., 1997).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b68e07f5-83fd-4a21-8aec-6a577979040a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C3",
+      "claim": "The GAS belt does not show preference for sodium ions over potassium ions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no preference for sodium at the \"GAS belt\" in the central constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by MD simulation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "940a09cf-e9b8-4d59-ac52-f78fcd28ca4a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C4",
+      "claim": "A band of glutamate and aspartate side chains at the lower end of the pore enables preferential sodium conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we identified a band of glutamate and aspartate side chains at the lower end of the pore that enables preferential sodium conduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by mutagenesis data in Figure 4 and MD simulations in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "47ac1a10-fc24-43e3-b400-8a99b4041ec9",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C5",
+      "claim": "ASIC1a is widely expressed in the mammalian nervous system, notably the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The prototypical example, ASIC1a, is widely expressed in the mammalian nervous system, notably the brain, where it is involved in learning, memory and anxiety (Pidoplichko et al., 2014; Wemmie et al., 2002; Ziemann et al., 2009) and neuroinflammation and ischemia (Voilley et al., 2001; Xiong et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "45b70dea-c033-4417-86d0-846908cf5602",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C6",
+      "claim": "ASIC1a is involved in learning, memory and anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "The prototypical example, ASIC1a, is widely expressed in the mammalian nervous system, notably the brain, where it is involved in learning, memory and anxiety (Pidoplichko et al., 2014; Wemmie et al., 2002; Ziemann et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "365bafca-e1f2-4daa-9070-886947c317c6",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C7",
+      "claim": "ASIC1a is involved in neuroinflammation and ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "where it is involved in learning, memory and anxiety (Pidoplichko et al., 2014; Wemmie et al., 2002; Ziemann et al., 2009) and neuroinflammation and ischemia (Voilley et al., 2001; Xiong et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "60aa75e2-e545-47e2-b454-1f371d9984d6",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C8",
+      "claim": "ASIC1a, in concert with ASIC2a and ASIC3, mediates pain and nociception in central and peripheral neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In central and peripheral neurons, ASIC1a, in concert with ASIC2a and ASIC3, mediates pain and nociception, drawing much attention as a pharmacological target for novel analgesics (Baron and Lingueglia, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "76254f6b-2814-4f11-8a96-837dc8bc1b29",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C9",
+      "claim": "ASICs are excitatory because of approximately 10-fold selectivity for Na+ over K+.",
+      "claim_type": "EXPLICIT",
+      "source": "ASICs are excitatory because of approximately 10-fold selectivity for Na+ over potassium (K+; [Gr\u00fcnder and Pusch, 2015; Waldmann et al., 1997])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "60bdd732-cd56-4d94-b8e8-5dd465c49295",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C10",
+      "claim": "The 10-fold Na+/K+ selectivity is conserved in most vertebrate members of the DEG/ENaC family of channels.",
+      "claim_type": "EXPLICIT",
+      "source": "ASICs are excitatory because of approximately 10-fold selectivity for Na+ over potassium (K+; [Gr\u00fcnder and Pusch, 2015; Waldmann et al., 1997]), a feature conserved in most vertebrate members of the overarching DEG/ENaC family of channels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "2c2996a8-74bf-418d-a559-606b0dba0b0d",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C11",
+      "claim": "Mutation of the G-X-S motif in ENaCs affects ion selectivity and increases permeation of larger cations.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments on heteromeric ENaCs have shown effects on ion selectivity and greater permeation of larger cations upon mutation of a highly conserved G-X-S motif in the pore-forming helix, suggestive of a size exclusion filter (Kellenberger et al., 1999a; Snyder et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "d1411e77-70ec-4214-8eaa-78bea50734fd",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C12",
+      "claim": "The GAS belt forms a constriction half-way down the pore in an X-ray structure of chick ASIC1 in a putative open-channel state.",
+      "claim_type": "EXPLICIT",
+      "source": "By homology, this idea naturally extended to ASICs (Kellenberger and Schild, 2002), receiving recent support from the presence of a constriction half-way down the pore in an X-ray structure of chick ASIC1 in a putative open-channel state (Baconguis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation to structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "466eb569-76da-4fdd-9726-b6fbc0df9a5d",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C13",
+      "claim": "The GAS belt constriction is formed by G-A-S motifs from each of three adjacent subunits in ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "In ASIC1a, the constriction is formed by G-A-S motifs from each of three adjacent subunits, suggesting that this 'GAS belt' forms the ASIC selectivity filter, presumably favoring Na+ by excluding larger K+ ions (Baconguis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation to structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b9281c0b-3927-4306-962e-bfad498cac9f",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C14",
+      "claim": "Mutation of G10' and S12' residues renders homomeric ASICs non-functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the role of the GAS belt in ion selectivity lacks experimental verification, as the mutation of presumed critical G10' and S12' residues (see Figure 1\u2014figure supplement 1 for numbering) renders homomeric ASICs non-functional (Carattino and Della Vecchia, 2012; Li et al., 2011b; Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "333b50c9-1897-4841-8731-c834385a2f2b",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C15",
+      "claim": "Selective Na+ conduction has been ascribed to G10' main chain carbonyl oxygen atoms that point into the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, selective Na+ conduction has been ascribed to G10' main chain carbonyl oxygen atoms that point into the pore (Baconguis et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "f2f36500-c2e4-4b56-a392-b6613f6073b9",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C16",
+      "claim": "A11'\u03b1 substitution replaces the G10' main chain amide carbonyl with an ester carbonyl.",
+      "claim_type": "EXPLICIT",
+      "source": "We used in vivo nonsense suppression (Dougherty and Van Arnam, 2014) to replace A11' with its \u03b1-hydroxy analogue ('\u03b1') in ASIC1a channels expressed in Xenopus laevis oocytes (Figure 1A,B). This replaces the G10' main chain amide carbonyl with an ester carbonyl",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "af996455-dbf5-4814-9240-43f861d2b052",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C17",
+      "claim": "A11'\u03b1 substitution decreases the backbone dipole and electrostatic surface potential near the G10' carbonyl oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "This replaces the G10' main chain amide carbonyl with an ester carbonyl, decreasing the backbone dipole and thus the electrostatic surface potential near the G10' carbonyl oxygen (Lu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "62f91c20-1093-4f0a-a268-a66871dd2ba1",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C18",
+      "claim": "A11'\u03b1 substitution has little effect on general channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike substitution via conventional mutagenesis of the GAS belt in ASICs, this substitution had remarkably little effect on general channel function, evident in unaltered proton-gated currents at A11'\u03b1 channels (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "52b335cd-ca59-4e1a-9bb2-deb8725a2367",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C19",
+      "claim": "Na+ conductance through A11'\u03b1 channels is indistinguishable from wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if ion conduction was affected, we pulled outside-out patches and measured single channel Na+ currents through A11'\u03b1 channels and observed that Na+ conductance was indistinguishable from wild-type (WT), despite the significant alteration of the G10' carbonyl oxygen (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by single channel data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "733d8da2-10ce-4fec-8744-c02798d93e6d",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C20",
+      "claim": "A11'\u03b1 channels maintain high, WT-like levels of Na+ selectivity over K+ and Cs+.",
+      "claim_type": "EXPLICIT",
+      "source": "A11'\u03b1 channels maintained high, WT-like levels of Na+ selectivity over the larger K+ and Cs+ (Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "ac58fb49-78f5-48f2-9d5a-a25d7393675e",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C21",
+      "claim": "A11'\u03b1 channels show an increase in PNa+/PK+ compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "A11'\u03b1 channels maintained high, WT-like levels of Na+ selectivity over the larger K+ and Cs+ (Figure 1E), with an increase in PNa+/PK+ that signifies interactions with G10' specific to K+ conductance",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "8e443be6-43a2-450c-9d18-539de60197d0",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C22",
+      "claim": "MD simulations show no free energy preference for Na+ ions at the GAS belt.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no free energy preference for Na+ ions at the GAS belt (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by free energy profiles in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "c166f967-660a-40f9-94aa-fbdb3ae3b22a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C23",
+      "claim": "Independent calculations of relative binding free energy confirm no preference for Na+ at the GAS belt.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no free energy preference for Na+ ions at the GAS belt (Figure 2B), which was confirmed by independent calculations of relative binding free energy at this part of the channel (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FEP calculations in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "625248c9-bd35-4983-8f85-007f795452ae",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C24",
+      "claim": "Both Na+ and K+ maintain their solvation shell when passing the GAS belt.",
+      "claim_type": "EXPLICIT",
+      "source": "When passing the GAS belt, both Na+ and K+ maintain their solvation shell, but K+ ions do so with more contribution from the protein, interacting with G10' amide carbonyl oxygen atoms (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by coordination analysis in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b42de962-4905-488a-a44a-c839c42ce8a4",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C25",
+      "claim": "K+ ions interact with G10' amide carbonyl oxygen atoms when passing the GAS belt.",
+      "claim_type": "EXPLICIT",
+      "source": "When passing the GAS belt, both Na+ and K+ maintain their solvation shell, but K+ ions do so with more contribution from the protein, interacting with G10' amide carbonyl oxygen atoms (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by coordination analysis in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "0bb95105-d270-4515-a358-9f277a6594a0",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C26",
+      "claim": "Free energy differences between Na+ and K+ are observed at L7' and E18'-D21'.",
+      "claim_type": "EXPLICIT",
+      "source": "Free energy differences between Na+ and K+ were observed at L7' and E18'-D21' (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by free energy profiles in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "0edfc7cc-111b-4548-92be-b2997d72996c",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C27",
+      "claim": "K+ undergoes partial dehydration without sufficient compensation by backbone carbonyls around L7'.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are explained by partial dehydration of K+ without sufficient compensation by backbone carbonyls around L7' (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by coordination analysis in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "5c6dcc86-7ff0-4510-b2cc-df1eabb29b14",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C28",
+      "claim": "Na+ exhibits high field strength binding to negative charge at E18'-D21'.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are explained by partial dehydration of K+ without sufficient compensation by backbone carbonyls around L7' (Figure 2\u2014figure supplement 2) and high field strength binding (Hille, 1972) of Na+ to negative charge at E18'-D21'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "03dbd2c8-cc10-40c2-9709-4f0055a159f1",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C29",
+      "claim": "Independent binding calculations demonstrate a relative Na+/K+ stability of 1.4 \u00b1 0.1 kcal/mol for binding at E18'.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, independent binding calculations have demonstrated a relative Na+/K+ stability of 1.4 \u00b1 0.1 kcal/mol for binding at E18' (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FEP calculations in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "acc3e8bc-31eb-4840-893d-8b5c9b759b93",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C30",
+      "claim": "Simulations reveal formation of complexes with 1\u20132 ions and 1\u20132 carboxylate groups involving E18' and D21'.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations with NaCl or KCl also revealed formation of complexes with 1\u20132 ions and 1\u20132 carboxylate groups, involving E18' and D21' (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by occupancy analysis in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "93ece0c0-e3e9-424b-8206-8c9705af4b4a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C31",
+      "claim": "Single ion occupancy dominates for both Na+ and K+ at E18'/D21'.",
+      "claim_type": "EXPLICIT",
+      "source": "Although single ion occupancy dominates for both Na+ and K+, double ion occupancy occurred more frequently for Na+ (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by occupancy analysis in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "4316c562-f245-4240-9c7f-ccd06486d2ec",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C32",
+      "claim": "Double ion occupancy at E18'/D21' occurs more frequently for Na+ than K+.",
+      "claim_type": "EXPLICIT",
+      "source": "Although single ion occupancy dominates for both Na+ and K+, double ion occupancy occurred more frequently for Na+ (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by occupancy analysis in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "8606e3dc-0900-4eba-b281-9e56cee05a44",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C33",
+      "claim": "The doubly occupied site at E18'/D21' is 3.0 \u00b1 0.4 kcal/mol more stable for Na+ than for K+.",
+      "claim_type": "EXPLICIT",
+      "source": "and this doubly occupied site was 3.0 \u00b1 0.4 kcal/mol more stable for Na+ than for K+ (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FEP calculations in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "19c09ed9-fb48-44bd-b7a6-b6fd42fb0cd5",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C34",
+      "claim": "E18'/D21' is a likely site to increase Na+ concentration in a selective multi-ion permeation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, simulations identify E18'/D21' as a likely site to increase Na+ concentration in a selective multi-ion permeation mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "23756b37-8b2d-4e8f-aa5d-81a3b1c27d39",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C35",
+      "claim": "The lower pore of PDB:4NTW is noticeably splayed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lower pore of this apparently open chick ASIC1/snake toxin complex (PDB:4NTW) is noticeably splayed (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "248135de-f01e-4625-af46-2bbbb3362d3b",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C36",
+      "claim": "The splayed lower pore in PDB:4NTW may be a consequence of the removal of intracellular N- and C-termini for crystallization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lower pore of this apparently open chick ASIC1/snake toxin complex (PDB:4NTW) is noticeably splayed (Figure 3A), possibly as a consequence of the removal of intracellular N- and C-termini for crystallization (Baconguis et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a speculation with a supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "7c418668-9226-4ca4-b0a7-fbeab0707d71",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C37",
+      "claim": "Parts of the intracellular N- and C-terminal regions help form the conducting pore in ASICs.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that parts of these intracellular regions help form the conducting pore (Pfister et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "89518f24-dbf3-4985-916d-a04048405b37",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C38",
+      "claim": "Parts of the intracellular N- and C-terminal regions affect efficiency of channel opening in ASICs.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that parts of these intracellular regions help form the conducting pore (Pfister et al., 2006) and affect efficiency of channel opening (Jing et al., 2013; Wu et al., 2016) in ASICs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "10157668-bc3d-466d-b5c3-1a5dd042ba27",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C39",
+      "claim": "Intracellular regions make crucial contributions to gating and ion conduction in other trimeric ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "and also make crucial contributions to gating and ion conduction in other trimeric ion channels (Gr\u00fcnder et al., 1999; Mansoor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b7c9dc25-96a0-4ef9-b630-6558c94ed384",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C40",
+      "claim": "PDB:2QTS shows a significantly narrower lower channel pore than PDB:4NTW.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of such an ASIC structure, we examined ion binding to PDB:2QTS (Jasti et al., 2007), a closed-channel chick ASIC1 X-ray structure which resolves an additional 10 lower pore residues and shows a significantly narrower lower channel pore (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "1c9cb5d9-74f0-4742-9095-a68e974177f5",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C41",
+      "claim": "Simulations with PDB:2QTS reveal preferential binding of a single Na+ ion by up to 2.6 \u00b1 0.3 kcal/mol near E18'.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations revealed preferential binding of a single Na+ ion by up to 2.6 \u00b1 0.3 kcal/mol near E18' (Figure 3B; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by free energy calculations in Figure 3B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "3dc0a2b2-c4a5-422e-a519-42c4c2c8bf01",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C42",
+      "claim": "In the narrower pore structure of PDB:2QTS, predominant formation of double ion complexes with E18' and/or D21' from neighboring subunits is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In this narrower pore structure, we observed predominant formation of double ion complexes with E18' and/or D21' from neighboring subunits (Figure 3C, left graph)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by occupancy analysis in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "d2abdc16-79b2-437e-a00d-2d38d76b3da8",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C43",
+      "claim": "A greater proportion of tightly bound complexes at E18'/D21' is observed for Na+ in PDB:2QTS.",
+      "claim_type": "EXPLICIT",
+      "source": "In this narrower pore structure, we observed predominant formation of double ion complexes with E18' and/or D21' from neighboring subunits (Figure 3C, left graph), with a greater proportion of tightly bound complexes for Na+ (right graph).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by occupancy analysis in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "90568dd7-f3d8-431d-9f76-8976ae8bb04e",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C44",
+      "claim": "Cooperative complex formation at E18'/D21' in PDB:2QTS leads to a significant 5.9 \u00b1 0.6 kcal/mol preference for Na+ over K+.",
+      "claim_type": "EXPLICIT",
+      "source": "Such cooperative complex formation leads to a significant 5.9 \u00b1 0.6 kcal/mol preference (Figure 2\u2014figure supplement 1), aggressively favoring Na+ ions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FEP calculations in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "49ac1f50-3015-4666-b602-7ef8b68d94fc",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C45",
+      "claim": "L7', L14', E18' and D21' are the only residues whose mutation markedly altered ion selectivity among 16 pore-forming positions tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore measured relative ion permeabilities in a series of mutants involving 16 additional pore-forming positions and found that L7', L14', E18' and D21' were the only residues whose mutation markedly altered ion selectivity (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by mutagenesis data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "d4661b13-e3dc-427e-a3b3-d39cf294fa8e",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C46",
+      "claim": "Only substantial changes in L7' side chain size/length dramatically altered selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding L7', it was only substantial changes in side chain size/length that dramatically altered selectivity, with L7'I and even L7'V substitutions not decreasing Na+/K+ selectivity (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by mutagenesis data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "bf9520cc-6c3e-46a8-bd95-f3bcd58a9c2b",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C47",
+      "claim": "Both E18'Q and E18'D mutations abolished selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that both E18'Q and E18'D mutations abolished selectivity (Figure 4A) suggests that both side chain charge and length make important contributions to Na+ conduction at this position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by mutagenesis data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b6ae11a1-4242-45d4-87b0-7483ce8ecd09",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C48",
+      "claim": "Both side chain charge and length of E18' make important contributions to Na+ conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that both E18'Q and E18'D mutations abolished selectivity (Figure 4A) suggests that both side chain charge and length make important contributions to Na+ conduction at this position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inference from the mutagenesis data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "9bdc406d-9adc-44c2-bff4-1a36c65ceeaa",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C49",
+      "claim": "PNa+/PK+ is reduced to unity for E18'\u20ac channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although currents at oocytes expressing E18'\u20ac channels were relatively small (Figure 4\u2014figure supplement 1), we could measure approximate reversal potentials for Na+ and K+ and establish that PNa+/PK+ was reduced to unity for E18'\u20ac (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "19e3125d-39ff-4d6e-ae15-c3731ffe465a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C50",
+      "claim": "E18' negative charge is essential for Na+ selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although currents at oocytes expressing E18'\u20ac channels were relatively small (Figure 4\u2014figure supplement 1), we could measure approximate reversal potentials for Na+ and K+ and establish that PNa+/PK+ was reduced to unity for E18'\u20ac (Figure 4B), thus verifying that E18' negative charge is essential for Na+ selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion from the E18'\u20ac data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "abd10edb-db56-473e-9822-50b92becb619",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C51",
+      "claim": "Single channel activity through E18'D channels is significantly reduced compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, single channel activity through E18'D channels was significantly reduced (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by single channel data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "299bdb53-bb34-4ff7-9093-1b4624e931fd",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C52",
+      "claim": "D18' is too short to enable WT-like Na+ permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, single channel activity through E18'D channels was significantly reduced (Figure 4C), implying that D18' is too short to enable WT-like Na+ permeation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inference from the single channel data in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "c1a86d4d-674b-4fc0-9961-edb8b129ae68",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C53",
+      "claim": "Single channel conductance in D21'N channels is similar to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that D18' is too short to enable WT-like Na+ permeation (although single channel conductance was similar to WT in D21'N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "0d837417-787c-468d-93d1-2130f36d108a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C54",
+      "claim": "The need for precise positioning of E18' carboxylates might be a consequence of the formation of Na+-selective multi-carboxylate complexes during conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the need for such precise positioning of E18' carboxylates might be a consequence of the formation of Na+-selective multi-carboxylate complexes during conduction (e.g. Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a postulation based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "988ed241-e9b7-454b-b487-eb67fa87d505",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C55",
+      "claim": "Each E18' contributes to selectivity in the ASIC trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4D, each E18' contributes to selectivity, as even the 1/3 mutation decreases PNa+/PK+ and PNa+/PCs+ ratios.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by concatemeric channel data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "5ae03fdc-36d8-444c-be13-d82bdbec4202",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C56",
+      "claim": "1/3 E18'Q mutation maintains WT-like profile of PNa+ > PK+ > PCs+.",
+      "claim_type": "EXPLICIT",
+      "source": "But while 1/3 maintained WT-like profile of PNa+ > PK+ > PCs+, it was only 2/3 and 3/3 where this profile collapsed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by concatemeric channel data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "a2fde31e-3b9f-4fee-921b-e2092a76838d",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C57",
+      "claim": "2/3 and 3/3 E18'Q mutations cause the selectivity profile to collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "But while 1/3 maintained WT-like profile of PNa+ > PK+ > PCs+, it was only 2/3 and 3/3 where this profile collapsed, consistent with the cooperative interactions with ions suggested by simulations (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by concatemeric channel data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "36133c77-0476-4226-8726-0fe2b7627436",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C58",
+      "claim": "The L7'A mutation causes no ostensible change in relative permeability in 1/3- or 2/3-mutated concatemeric channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the L7'A mutation, which abolished selectivity in regular channels, caused no ostensible change in relative permeability in 1/3- or 2/3-mutated channels (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by concatemeric channel data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "fca7b700-ba9e-4132-b298-aadebeae09cb",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C59",
+      "claim": "The S12'A mutation renders regular channels non-functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the S12'A mutation rendered regular channels non-functional (Figure 4\u2014figure supplement 1) and had therefore eluded study.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "f2675391-864a-47f7-a6f1-1f8bfc1dd68b",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C60",
+      "claim": "Stepwise introduction of S12'A mutation into concatemeric channels causes no change in relative permeability in 1/3- or 2/3-mutated channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a stepwise introduction of this mutation into concatemeric channels caused no change in relative permeability in 1/3- or 2/3-mutated channels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by concatemeric channel data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "efc69be8-ccbb-4e0b-af5b-347a0ba04185",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C61",
+      "claim": "S12' makes little or no direct contribution to Na+ selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a stepwise introduction of this mutation into concatemeric channels caused no change in relative permeability in 1/3- or 2/3-mutated channels, providing novel functional evidence that S12' makes little or no direct contribution to Na+ selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the concatemeric channel data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b81931dc-17ff-4921-9200-2d51996ba651",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C62",
+      "claim": "The GAS belt is involved in reducing the barrier to K+ ions through backbone interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Through experimental and computational approaches, we find that the GAS belt is involved in reducing the barrier to K+ ions through backbone interactions, but we find no evidence for Na+ selectivity occurring exclusively at this position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental and computational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "7c9dd5a2-b53c-459d-9eb1-797a6817b854",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C63",
+      "claim": "There is no evidence for Na+ selectivity occurring exclusively at the GAS belt.",
+      "claim_type": "EXPLICIT",
+      "source": "Through experimental and computational approaches, we find that the GAS belt is involved in reducing the barrier to K+ ions through backbone interactions, but we find no evidence for Na+ selectivity occurring exclusively at this position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental and computational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "e1b821aa-3b3b-45b0-bfbd-48454672b269",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C64",
+      "claim": "L7' and L14' on either side of the GAS belt are regions where selective Na+ conduction is controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data identify other regions, including L7' and L14' on either side of the GAS belt, and especially E18' at the lower entrance to the pore, where selective Na+ conduction is most directly controlled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "bb21e1b4-9b3c-412a-b585-29f13b54b074",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C65",
+      "claim": "E18' at the lower entrance to the pore is where selective Na+ conduction is most directly controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data identify other regions, including L7' and L14' on either side of the GAS belt, and especially E18' at the lower entrance to the pore, where selective Na+ conduction is most directly controlled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "d279c21f-4134-458c-956d-1b9365d39fb4",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C66",
+      "claim": "The long-standing view that the GAS belt is the selectivity filter in ASICs needs to be rethought.",
+      "claim_type": "EXPLICIT",
+      "source": "This prompts a rethinking of the long-standing view that the GAS belt is the selectivity filter in ASICs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "50e71bae-1672-4ff0-b196-dda7c85cd0c6",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C67",
+      "claim": "The G10'C mutation adds a side chain to G10' and could indirectly alter the shape of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this mutation adds a side chain to G10', whose main chain carbonyl oxygen is implicated in conduction by structural data (Baconguis et al., 2014), and the G10'C mutation could indirectly alter the shape of the pore, as indeed Kellenberger et al. (1999a), suggested for GAS mutations in ENaCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "98955866-588e-4848-86ee-393cced20702",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C68",
+      "claim": "The amide-ester main chain substitution at A11'\u03b1 caused minimal structural consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This caused minimal structural consequences, reflected in WT-like gating of A11'\u03b1 channels (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "3939b063-0789-4076-a7c8-35ed13d3e5e1",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C69",
+      "claim": "The amide-ester substitution at A11'\u03b1 decreased electrostatic potential around the G10' main chain carbonyl oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "This caused minimal structural consequences, reflected in WT-like gating of A11'\u03b1 channels (Figure 1C), yet decreased electrostatic potential around the G10' main chain carbonyl oxygen (Lu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "01040644-c0d8-4752-8931-271869d24736",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C70",
+      "claim": "The A11'\u03b1 alteration saw no effect on Na+ conductance but a modest decrease in apparent K+ permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "This alteration saw no effect on Na+ conductance but a modest decrease in apparent K+ permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "56d4548e-b30e-4251-b439-ec9c6ee6ae09",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C71",
+      "claim": "MD simulations provide a good explanation for the effect of A11'\u03b1 on K+ permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MD simulations provide a good explanation for this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b0536883-57a3-4f19-8cf3-8822f42c32f2",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C72",
+      "claim": "Na+ and K+ ions both fit through the GAS constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Na+ and K+ ions both fit through the GAS constriction, but for K+ ions, this requires interaction with a G10' carbonyl in place of a water molecule (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by simulation data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "09baf53b-7a01-444c-b9d4-fcd27ee65b9a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C73",
+      "claim": "For K+ ions to pass through the GAS constriction, interaction with a G10' carbonyl in place of a water molecule is required.",
+      "claim_type": "EXPLICIT",
+      "source": "Na+ and K+ ions both fit through the GAS constriction, but for K+ ions, this requires interaction with a G10' carbonyl in place of a water molecule (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by simulation data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "be1b1894-f226-40e9-8dec-8cad8be61a57",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C74",
+      "claim": "Mutant S12' concatemeric channels directly demonstrate that S12\u00b4 is unlikely to play a major role in ASIC selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we used mutant S12' concatemeric channels to directly demonstrate that S12\u00b4 is unlikely to play a major role in ASIC selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the concatemeric channel data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "da1af29e-8d41-4d08-aa31-77b8b0d949e8",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C75",
+      "claim": "The GAS belt may contribute to ion selectivity in ASICs, but is unlikely the site of the actual selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our experiments and simulations show that, while the GAS belt may contribute to ion selectivity in ASICs, it is unlikely the site of the actual selectivity filter, which we have demonstrated is located elsewhere in the pore, where mutations eliminate Na+ selectivity altogether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental and computational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "9a08d9b3-bc61-4201-916b-d38509ffac8c",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C76",
+      "claim": "The actual selectivity filter is located elsewhere in the pore, where mutations eliminate Na+ selectivity altogether.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our experiments and simulations show that, while the GAS belt may contribute to ion selectivity in ASICs, it is unlikely the site of the actual selectivity filter, which we have demonstrated is located elsewhere in the pore, where mutations eliminate Na+ selectivity altogether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental and computational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "59960417-f7be-43e7-8682-434821df31e6",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C77",
+      "claim": "The loss of selectivity in the L14'A mutant could be an indirect effect on Na+ conduction caused by the loss of hydrophobic interactions between L14' side chains and adjacent helices.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the loss of selectivity in the L14'A mutant could be an indirect effect on Na+ conduction, caused by the loss of hydrophobic interactions between L14' side chains and adjacent helices (illustrated by Baconguis et al., 2014), which are likely retained in the more conservative L14'I mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposal based on structural data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "f448447a-456d-4c5b-ae37-33056c495ac5",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C78",
+      "claim": "A role for the L14' side chain in maintaining the open channel structure is consistent with the effects of the L14'C mutation on channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a role for the L14' side chain in maintaining the open channel structure is also consistent with the effects of the L14'C mutation on channel gating (Carattino and Della Vecchia, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "909cc291-fccb-474a-9e7c-111d4965e793",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C79",
+      "claim": "The L7' side chain is oriented toward adjacent helices in PDB:4NTW.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the L7' side chain is oriented toward adjacent helices in PDB:4NTW (Baconguis et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation to structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "2baed40a-7023-4ed8-ab6e-782932671b85",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C80",
+      "claim": "L7' is implicated in gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the L7' side chain is oriented toward adjacent helices in PDB:4NTW (Baconguis et al., 2014) and is implicated in gating (Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "ce5a2a16-107f-4f17-9555-1302b1cc066a",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C81",
+      "claim": "The L7'A mutation altered ASIC1a proton-gating more than any other mutant in the present study.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in our hands the L7'A mutation altered ASIC1a proton-gating more than any other mutant in the present study (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "345f29ee-3fdf-4ca1-9654-54808796830d",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C82",
+      "claim": "L7' might be important for pore conformation, without contributing to specific interactions with ions in the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "L7' might thus be important for pore conformation, without contributing to specific interactions with ions in the pore (consistent with the hydrophobic nature of the side chain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "af645d6c-b188-4cca-8d9d-926311489cef",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C83",
+      "claim": "The closer proximity of adjacent helices in PDB:2QTS provides a means for carboxylate side chains to exert substantial control on selective binding at the channel opening to promote efficient multi-ion Na+ conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although permeation is not observed in simulations with the closed-channel 2QTS, the closer proximity of adjacent helices provides a means for carboxylate side chains to exert substantial control on selective binding at the channel opening to promote efficient multi-ion Na+ conduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "525a7c68-4c86-4a97-beca-b9d3824381da",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C84",
+      "claim": "E18' is highly conserved in the DEG/ENaC family.",
+      "claim_type": "EXPLICIT",
+      "source": "As E18' is highly conserved (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by sequence alignment in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "531f2cbe-2c1a-4ecd-8e58-add338c5c06d",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C85",
+      "claim": "Mutations at the equivalent position to E18' in ENaCs reduce Na+ currents.",
+      "claim_type": "EXPLICIT",
+      "source": "and mutations at the equivalent position in ENaCs reduce Na+ currents (Langloh et al., 2000; Sheng et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "0ccbde4c-6888-45a0-b172-daa77ac2bcaa",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C86",
+      "claim": "E18' likely controls Na+ conduction throughout the broader ENaC/DEG family.",
+      "claim_type": "EXPLICIT",
+      "source": "it is foreseeable that E18' controls Na+ conduction throughout the broader ENaC/DEG family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on conservation and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "2da89c9d-3927-4438-8ab1-2d72a51cb435",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C87",
+      "claim": "ENaCs show substantially greater Na+ selectivity than ASICs.",
+      "claim_type": "EXPLICIT",
+      "source": "As ENaCs show substantially greater Na+ selectivity than ASICs (e.g. Gr\u00fcnder and Pusch, 2015), however, significant differences must occur between these two examples of ENaC/DEG channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "e0a96e14-4023-41bc-b025-974db894cf93",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C88",
+      "claim": "G10' might be oriented differently in ENaCs such that it cannot provide the favorable backbone contribution to K+ conduction observed for ASICs.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that G10' might be oriented differently in ENaCs, such that it cannot provide the favorable backbone contribution to K+ conduction that we observed for ASICs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "ee353869-97c8-4cc3-892f-73ffa945abd3",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C89",
+      "claim": "ENaCs possess E18' and E21' whereas ASICs possess E18' and D21'.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the selectivity filter we have identified, ENaCs possess E18' and E21' (whereas ASICs possess E18' and D21').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "c219b690-fc8b-45a7-adc4-53e3c4e59623",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C90",
+      "claim": "The longer E21' side chain in ENaCs could help in the formation of cooperative multi-ion complexes, which could further increase Na+ selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer E21' side chain in ENaCs could help in the formation of cooperative multi-ion complexes, which could further increase Na+ selectivity, as suggested in our simulations with a narrower pore than that seen in PDB:4NTW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on simulation data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "cc1d528a-c87e-46dc-b9f3-7ee8bd2ab27b",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C91",
+      "claim": "The D21'E mutation in ASICs did not increase selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "As we did not observe an increase in selectivity with D21'E mutant ASICs, we speculate that other factors govern the additional increase in selectivity in ENaCs, possibly by an even more narrow selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "d56f537e-5153-4ab5-a6cf-7bd1d3c94da7",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C92",
+      "claim": "Other factors possibly govern the additional increase in selectivity in ENaCs, possibly by an even more narrow selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "As we did not observe an increase in selectivity with D21'E mutant ASICs, we speculate that other factors govern the additional increase in selectivity in ENaCs, possibly by an even more narrow selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "fd280e1d-dab3-444e-922e-953889cfcc72",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C93",
+      "claim": "Greater permeation of organic cations occurs in ASIC than in ENaC.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion is consistent with greater permeation of organic cations in ASIC (Yang and Palmer, 2014) than in ENaC (Kellenberger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "562d177a-7694-4a6a-b0a2-3aebab478691",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C94",
+      "claim": "The intracellular entrance to the open ASIC channel pore would likely adopt a different conformation in the presence of intracellular N- and C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is conceivable that the intracellular entrance to the open ASIC channel pore would adopt a different conformation in the presence of intracellular N- and C-termini, as is certainly the case in structurally analogous P2X receptors (Hattori and Gouaux, 2012; Mansoor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "cac6eaf0-cf64-4187-a280-4e08dc4894a8",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C95",
+      "claim": "The combined experimental and computational approach reveals that main chain carbonyl oxygens at the levels of L7' and the GAS belt contribute to selectivity by interacting with permeating K+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our combined experimental and computational approach reveals that although main chain carbonyl oxygens at the levels of L7' and the GAS belt contribute to selectivity by interacting with permeating K+ ions, the notion of the GAS belt as the ASIC selectivity filter must be revised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "b588162e-903f-4abf-bddc-c2845f19014b",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "claim_id": "C96",
+      "claim": "A selectivity filter comprised of E18\u00b4and D21\u00b4 at the lower end of the ASIC1a pore discriminates ions based on interactions with a band of carboxylate side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data clearly describe a selectivity filter (comprised of E18\u00b4and D21\u00b4) at the lower end of the ASIC1a pore, which discriminates ions based on interactions with a band of carboxylate side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ASICs are excitatory channels that convert extracellular proton increases to sodium influx with ~10-fold Na+/K+ selectivity, a property conserved across the DEG/ENaC family. ASIC1a is widely expressed in the mammalian nervous system and involved in learning, memory, anxiety, neuroinflammation, ischemia, pain, and nociception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 describe established background knowledge about ASICs supported by multiple citations. These are well-documented properties of ASICs in the literature and provide context for the study rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "30d6d54f-4336-4763-9a0a-59576224c8eb",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work suggested the GAS belt (formed by G-A-S motifs from three subunits) acts as a size-exclusion selectivity filter in ASICs, based on structural data showing a constriction and ENaC mutagenesis studies. However, mutations of G10' and S12' render homomeric ASICs non-functional, preventing direct experimental verification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 accurately summarize prior work with appropriate citations. The limitation that GAS belt mutations render channels non-functional (C14) is well-documented and motivates the current study's approach using unnatural amino acids.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "d46a6825-3c41-4138-9986-81a65ffd96ef",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The A11'\u03b1 substitution (replacing the G10' main chain amide carbonyl with an ester carbonyl) has minimal effects on channel function and Na+ conductance but modestly increases PNa+/PK+, indicating specific interactions with K+ at G10'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21, C68-C70 are well-supported by experimental data in Figures 1C-E showing preserved gating, unchanged Na+ conductance, and increased Na+/K+ selectivity. The unnatural amino acid incorporation is validated (Figure 1B), and the functional characterization is rigorous with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "a4c250f4-8d69-4382-bc50-e847318cd24b",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MD simulations reveal no free energy preference for Na+ at the GAS belt. Both Na+ and K+ maintain their solvation shells when passing the GAS belt, but K+ interacts more with G10' carbonyl oxygens, explaining the modest effect of A11'\u03b1 on K+ permeability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25, C71-C73 are supported by free energy profiles (Figure 2B), FEP calculations (Figure 2\u2014supplement 1), and coordination analysis (Figure 2\u2014supplement 2). The simulations converged appropriately and provide mechanistic explanation for the experimental observations. The conclusion that the GAS belt does not preferentially select Na+ is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MD simulations identify E18'/D21' as the primary selectivity determinant, showing significant free energy differences favoring Na+ over K+ (1.4 \u00b1 0.1 kcal/mol for single occupancy, 3.0 \u00b1 0.4 kcal/mol for double occupancy). Na+ forms more stable multi-ion complexes with these carboxylates than K+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 are well-supported by comprehensive simulation data including free energy profiles (Figure 2B), FEP calculations (Figure 2\u2014supplement 1), and occupancy analysis (Figure 2C). The convergence analysis is provided, and multiple independent calculations confirm the findings. The energetic differences are statistically significant and mechanistically interpretable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "5c81db55-c471-4190-9d55-ab8750e6ba20",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The open-channel structure (PDB:4NTW) has a splayed lower pore, possibly due to removal of intracellular termini. Simulations with the closed-channel structure (PDB:2QTS), which has a narrower lower pore, show stronger Na+ selectivity (2.6 \u00b1 0.3 kcal/mol single occupancy, 5.9 \u00b1 0.6 kcal/mol double occupancy) through cooperative multi-ion binding at E18'/D21'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C44, C83 are supported by structural comparisons (Figure 3A-B) and simulation data (Figure 3B-C, Figure 2\u2014supplement 1). The speculation about the splayed pore (C36) is reasonable given the crystallization conditions. The narrower pore simulations provide important context for understanding selectivity in a more physiologically relevant conformation, though the closed state cannot directly inform on conduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Systematic mutagenesis of 16 pore positions identifies L7', L14', E18', and D21' as key selectivity determinants. E18' charge is essential for Na+ selectivity (E18'\u20ac reduces PNa+/PK+ to unity), and both charge and length are critical (E18'Q and E18'D abolish selectivity; E18'D reduces single-channel conductance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C53 are well-supported by extensive mutagenesis data (Figure 4A), unnatural amino acid incorporation (Figure 4B), and single-channel recordings (Figure 4C). The use of the isosteric uncharged analog (\u20ac) provides strong evidence for the role of charge. The systematic approach and multiple complementary experiments strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "755c2cb5-10cc-4708-b836-78649bb335b8",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Concatemeric channels with 1/3, 2/3, or 3/3 E18'Q mutations show that each E18' contributes to selectivity, but the selectivity profile collapses only with 2/3 or 3/3 mutations, consistent with cooperative multi-carboxylate interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by concatemeric channel data (Figure 4D) and Western blot validation (Figure 4\u2014supplement 2C). The stepwise loss of selectivity with increasing mutations provides strong evidence for cooperative interactions, consistent with the simulation predictions. The postulation in C54 is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "836e6857-dc68-41af-90c3-ece12a965744",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "L7'A and S12'A mutations in concatemeric channels (1/3 and 2/3) cause no change in relative permeability, demonstrating that S12' makes little or no direct contribution to Na+ selectivity and that L7' effects may be indirect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61, C74 are supported by concatemeric channel data (Figure 4D). The S12'A result is particularly important as it directly addresses a residue that could not be studied in regular channels (C59). The lack of effect in partial mutations suggests these residues do not directly participate in ion selectivity, though L7' may have structural roles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "0476cd12-828d-479f-9fef-9fced83c47c3",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The GAS belt is not the primary selectivity filter in ASICs. Instead, it reduces the barrier to K+ through backbone interactions. The actual selectivity filter is located at E18'/D21' at the lower end of the pore, where carboxylate side chains discriminate ions through preferential Na+ binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66, C75-C76, C95-C96 represent the main conclusions of the study, well-supported by converging experimental (unnatural amino acids, mutagenesis, concatemers) and computational (MD simulations, free energy calculations) evidence. The revision of the long-standing GAS belt hypothesis is justified by the comprehensive data showing no Na+ preference at this site and strong selectivity at E18'/D21'.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "L7' and L14' likely contribute to selectivity indirectly through structural roles. Their side chains orient toward adjacent helices and may maintain pore conformation rather than directly interacting with permeating ions, consistent with their hydrophobic nature and effects on gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C77-C82 present reasonable interpretations of the mutagenesis data supported by structural information and prior work. The proposal that L7' and L14' have indirect structural roles (rather than direct ion interactions) is consistent with their hydrophobic nature, orientation in crystal structures, and the pattern of mutational effects. The inference is well-reasoned though somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    },
+    {
+      "id": "c415dd62-f6b2-422c-9691-9fca303718d5",
+      "content_id": "4dd6aa1a-2708-44d6-a563-0bfa19242afc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "E18' is highly conserved in the DEG/ENaC family and likely controls Na+ conduction broadly. ENaCs show greater selectivity than ASICs, possibly due to differences in G10' orientation, the presence of E21' (vs D21' in ASICs), and a narrower selectivity filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C94 involve speculation about ENaCs and other family members. While E18' conservation (C84) and ENaC mutations (C85) are documented, the mechanistic explanations (C88, C90, C92) are speculative. The D21'E mutation in ASICs did not increase selectivity (C91), which weakens some hypotheses. These claims require additional experimental validation in ENaCs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:09.254223Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ab0df38b-49d9-496c-9fde-3b53f5522cfc",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "823bbe5c-85e0-4353-8157-08adbd62c219",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "47ac1a10-fc24-43e3-b400-8a99b4041ec9",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "45b70dea-c033-4417-86d0-846908cf5602",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "365bafca-e1f2-4daa-9070-886947c317c6",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "60aa75e2-e545-47e2-b454-1f371d9984d6",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "76254f6b-2814-4f11-8a96-837dc8bc1b29",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "60bdd732-cd56-4d94-b8e8-5dd465c49295",
+      "result_id": "a3bf7f80-1a64-40cd-9c6a-e87d49468d52"
+    },
+    {
+      "claim_id": "2c2996a8-74bf-418d-a559-606b0dba0b0d",
+      "result_id": "30d6d54f-4336-4763-9a0a-59576224c8eb"
+    },
+    {
+      "claim_id": "d1411e77-70ec-4214-8eaa-78bea50734fd",
+      "result_id": "30d6d54f-4336-4763-9a0a-59576224c8eb"
+    },
+    {
+      "claim_id": "466eb569-76da-4fdd-9726-b6fbc0df9a5d",
+      "result_id": "30d6d54f-4336-4763-9a0a-59576224c8eb"
+    },
+    {
+      "claim_id": "b9281c0b-3927-4306-962e-bfad498cac9f",
+      "result_id": "30d6d54f-4336-4763-9a0a-59576224c8eb"
+    },
+    {
+      "claim_id": "333b50c9-1897-4841-8731-c834385a2f2b",
+      "result_id": "30d6d54f-4336-4763-9a0a-59576224c8eb"
+    },
+    {
+      "claim_id": "f2f36500-c2e4-4b56-a392-b6613f6073b9",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "af996455-dbf5-4814-9240-43f861d2b052",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "62f91c20-1093-4f0a-a268-a66871dd2ba1",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "52b335cd-ca59-4e1a-9bb2-deb8725a2367",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "733d8da2-10ce-4fec-8744-c02798d93e6d",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "ac58fb49-78f5-48f2-9d5a-a25d7393675e",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "98955866-588e-4848-86ee-393cced20702",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "3939b063-0789-4076-a7c8-35ed13d3e5e1",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "01040644-c0d8-4752-8931-271869d24736",
+      "result_id": "d46a6825-3c41-4138-9986-81a65ffd96ef"
+    },
+    {
+      "claim_id": "8e443be6-43a2-450c-9d18-539de60197d0",
+      "result_id": "a4c250f4-8d69-4382-bc50-e847318cd24b"
+    },
+    {
+      "claim_id": "c166f967-660a-40f9-94aa-fbdb3ae3b22a",
+      "result_id": "a4c250f4-8d69-4382-bc50-e847318cd24b"
+    },
+    {
+      "claim_id": "625248c9-bd35-4983-8f85-007f795452ae",
+      "result_id": "a4c250f4-8d69-4382-bc50-e847318cd24b"
+    },
+    {
+      "claim_id": "b42de962-4905-488a-a44a-c839c42ce8a4",
+      "result_id": "a4c250f4-8d69-4382-bc50-e847318cd24b"
+    },
+    {
+      "claim_id": "56d4548e-b30e-4251-b439-ec9c6ee6ae09",
+      "result_id": "a4c250f4-8d69-4382-bc50-e847318cd24b"
+    },
+    {
+      "claim_id": "b0536883-57a3-4f19-8cf3-8822f42c32f2",
+      "result_id": "a4c250f4-8d69-4382-bc50-e847318cd24b"
+    },
+    {
+      "claim_id": "09baf53b-7a01-444c-b9d4-fcd27ee65b9a",
+      "result_id": "a4c250f4-8d69-4382-bc50-e847318cd24b"
+    },
+    {
+      "claim_id": "0bb95105-d270-4515-a358-9f277a6594a0",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "0edfc7cc-111b-4548-92be-b2997d72996c",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "5c6dcc86-7ff0-4510-b2cc-df1eabb29b14",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "03dbd2c8-cc10-40c2-9709-4f0055a159f1",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "acc3e8bc-31eb-4840-893d-8b5c9b759b93",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "93ece0c0-e3e9-424b-8206-8c9705af4b4a",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "4316c562-f245-4240-9c7f-ccd06486d2ec",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "8606e3dc-0900-4eba-b281-9e56cee05a44",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "19c09ed9-fb48-44bd-b7a6-b6fd42fb0cd5",
+      "result_id": "d80176d9-8cd6-4982-a1f4-08d563a0eef5"
+    },
+    {
+      "claim_id": "23756b37-8b2d-4e8f-aa5d-81a3b1c27d39",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "248135de-f01e-4625-af46-2bbbb3362d3b",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "7c418668-9226-4ca4-b0a7-fbeab0707d71",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "89518f24-dbf3-4985-916d-a04048405b37",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "10157668-bc3d-466d-b5c3-1a5dd042ba27",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "b7c9dc25-96a0-4ef9-b630-6558c94ed384",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "1c9cb5d9-74f0-4742-9095-a68e974177f5",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "3dc0a2b2-c4a5-422e-a519-42c4c2c8bf01",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "d2abdc16-79b2-437e-a00d-2d38d76b3da8",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "90568dd7-f3d8-431d-9f76-8976ae8bb04e",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "af645d6c-b188-4cca-8d9d-926311489cef",
+      "result_id": "5c81db55-c471-4190-9d55-ab8750e6ba20"
+    },
+    {
+      "claim_id": "49ac1f50-3015-4666-b602-7ef8b68d94fc",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "d4661b13-e3dc-427e-a3b3-d39cf294fa8e",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "bf9520cc-6c3e-46a8-bd95-f3bcd58a9c2b",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "b6ae11a1-4242-45d4-87b0-7483ce8ecd09",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "9bdc406d-9adc-44c2-bff4-1a36c65ceeaa",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "19e3125d-39ff-4d6e-ae15-c3731ffe465a",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "abd10edb-db56-473e-9822-50b92becb619",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "299bdb53-bb34-4ff7-9093-1b4624e931fd",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "c1a86d4d-674b-4fc0-9961-edb8b129ae68",
+      "result_id": "619c9750-c3d2-4a5a-b556-66bcbbcad9d3"
+    },
+    {
+      "claim_id": "0d837417-787c-468d-93d1-2130f36d108a",
+      "result_id": "755c2cb5-10cc-4708-b836-78649bb335b8"
+    },
+    {
+      "claim_id": "988ed241-e9b7-454b-b487-eb67fa87d505",
+      "result_id": "755c2cb5-10cc-4708-b836-78649bb335b8"
+    },
+    {
+      "claim_id": "5ae03fdc-36d8-444c-be13-d82bdbec4202",
+      "result_id": "755c2cb5-10cc-4708-b836-78649bb335b8"
+    },
+    {
+      "claim_id": "a2fde31e-3b9f-4fee-921b-e2092a76838d",
+      "result_id": "755c2cb5-10cc-4708-b836-78649bb335b8"
+    },
+    {
+      "claim_id": "36133c77-0476-4226-8726-0fe2b7627436",
+      "result_id": "836e6857-dc68-41af-90c3-ece12a965744"
+    },
+    {
+      "claim_id": "fca7b700-ba9e-4132-b298-aadebeae09cb",
+      "result_id": "836e6857-dc68-41af-90c3-ece12a965744"
+    },
+    {
+      "claim_id": "f2675391-864a-47f7-a6f1-1f8bfc1dd68b",
+      "result_id": "836e6857-dc68-41af-90c3-ece12a965744"
+    },
+    {
+      "claim_id": "efc69be8-ccbb-4e0b-af5b-347a0ba04185",
+      "result_id": "836e6857-dc68-41af-90c3-ece12a965744"
+    },
+    {
+      "claim_id": "be1b1894-f226-40e9-8dec-8cad8be61a57",
+      "result_id": "836e6857-dc68-41af-90c3-ece12a965744"
+    },
+    {
+      "claim_id": "b81931dc-17ff-4921-9200-2d51996ba651",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "7c9dd5a2-b53c-459d-9eb1-797a6817b854",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "e1b821aa-3b3b-45b0-bfbd-48454672b269",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "bb21e1b4-9b3c-412a-b585-29f13b54b074",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "d279c21f-4134-458c-956d-1b9365d39fb4",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "da1af29e-8d41-4d08-aa31-77b8b0d949e8",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "9a08d9b3-bc61-4201-916b-d38509ffac8c",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "cac6eaf0-cf64-4187-a280-4e08dc4894a8",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "b588162e-903f-4abf-bddc-c2845f19014b",
+      "result_id": "0476cd12-828d-479f-9fef-9fced83c47c3"
+    },
+    {
+      "claim_id": "50e71bae-1672-4ff0-b196-dda7c85cd0c6",
+      "result_id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2"
+    },
+    {
+      "claim_id": "59960417-f7be-43e7-8682-434821df31e6",
+      "result_id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2"
+    },
+    {
+      "claim_id": "f448447a-456d-4c5b-ae37-33056c495ac5",
+      "result_id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2"
+    },
+    {
+      "claim_id": "909cc291-fccb-474a-9e7c-111d4965e793",
+      "result_id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2"
+    },
+    {
+      "claim_id": "2baed40a-7023-4ed8-ab6e-782932671b85",
+      "result_id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2"
+    },
+    {
+      "claim_id": "ce5a2a16-107f-4f17-9555-1302b1cc066a",
+      "result_id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2"
+    },
+    {
+      "claim_id": "345f29ee-3fdf-4ca1-9654-54808796830d",
+      "result_id": "7e0ed91c-71df-4242-bdbe-0ced6bb6a8d2"
+    },
+    {
+      "claim_id": "525a7c68-4c86-4a97-beca-b9d3824381da",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "531f2cbe-2c1a-4ecd-8e58-add338c5c06d",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "0ccbde4c-6888-45a0-b172-daa77ac2bcaa",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "2da89c9d-3927-4438-8ab1-2d72a51cb435",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "e0a96e14-4023-41bc-b025-974db894cf93",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "ee353869-97c8-4cc3-892f-73ffa945abd3",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "c219b690-fc8b-45a7-adc4-53e3c4e59623",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "cc1d528a-c87e-46dc-b9f3-7ee8bd2ab27b",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "d56f537e-5153-4ab5-a6cf-7bd1d3c94da7",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "fd280e1d-dab3-444e-922e-953889cfcc72",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    },
+    {
+      "claim_id": "562d177a-7694-4a6a-b0a2-3aebab478691",
+      "result_id": "c415dd62-f6b2-422c-9691-9fca303718d5"
+    }
+  ],
+  "comparisons": []
+}

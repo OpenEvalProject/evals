@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study successfully generated a genomic dataset of 275 E. melliodora samples from 36 sites across the species' range using GBS sequencing, with quality control removing 88 samples (69 for missing data, 19 as outliers), resulting in 9,378 SNPs for analysis. Technical replicates clustered closely together, validating the sequencing approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C26, and C80-C85 collectively describe a well-documented genomic sampling and quality control pipeline. The methods are clearly described with specific filtering thresholds, alignment statistics (88% mapping rate), and validation through technical replicates. The final dataset composition is explicitly stated and supported by supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Population genomic analysis revealed continuous variation with minimal discrete population structure in E. melliodora. The first PCoA axis correlated with latitude and explained only 3.0% of genomic variation among individuals. Weak but statistically significant isolation by distance was detected (r\u00b2=0.023, p=0.0001), with low mean Fst between sites (0.04\u00b10.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 present consistent evidence from multiple complementary analyses (PCoA, Mantel test, Fst calculations) all pointing to low genetic structure. The statistical significance is properly reported with p-values, and the low variance explained (2.3-3.0%) is consistent across methods. The findings are internally coherent and well-supported by the data presented in Figure 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C61"
+    ],
+    "result": "The GDM geographic spline showed no genomic differentiation until approximately 500 km geographic distance, allowing the authors to empirically define 'local' seed sourcing zones as extending up to 500 km\u2014substantially farther than current restoration practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40, and C61 are directly supported by the GDM analysis shown in Figure 2C. The 500 km threshold is clearly visible in the geographic spline, and cross-validation (C39) with 1000 iterations showed this pattern was robust (mean correlation 0.73). This is a data-driven empirical finding that directly addresses the study's restoration objectives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "A GDM model incorporating four environmental variables (soil nitrogen at depth, mean temperature of coldest quarter, precipitation of wettest quarter, and isothermality) plus geographic distance explained 40% of genetic differentiation between sites. The model showed satisfactory predictive power (cross-validation correlation = 0.73) and identified soil nitrogen as the strongest environmental predictor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36-C39, C41-C42 describe a comprehensive GDM analysis with appropriate variable selection (removing correlated and non-significant variables), cross-validation, and clear reporting of effect sizes. The 40% variance explained is substantial, and the cross-validation with 1000 iterations provides strong evidence for model robustness. The environmental splines in Figure 2E-H support the relative importance rankings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C79"
+    ],
+    "result": "Projection of the GDM model onto current and future (2070) environmental conditions identified regions with different predicted genomic compositions and highlighted areas of high genomic vulnerability to climate change, particularly in the middle north and southern coastal regions, providing a framework for climate-adjusted seed sourcing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C79 describe the application of the validated GDM model to predict spatial patterns of genomic composition and vulnerability. The approach follows established landscape genomics methodology (Bay et al., 2018 cited for 'genomic vulnerability'). Figure 3 clearly shows the spatial projections, though the predictive accuracy for future conditions cannot be directly validated. The inference is reasonable given the model's cross-validation performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Growth chamber experiments with seedlings from six sites (36 maternal lines, minimum 64 replicates per line) under two temperature regimes revealed that sampling site, maternal line, and experimental condition all significantly affected growth traits (height, leaf length, relative height increment), though most variation (56.6-71.5%) remained unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C49, and C86-C89 describe a well-designed growth experiment with adequate replication and appropriate statistical analysis using linear mixed-effect models. All fixed effects were statistically significant (p<0.05), and variance components are clearly reported. The finding that most variation remains unexplained is honestly reported and suggests additional unmeasured factors influence growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C55"
+    ],
+    "result": "Neither the growth chamber experiment nor the drought experiment detected significant site-specific variation in phenotypic plasticity, as interaction terms between site/maternal line and experimental condition were non-significant (p>0.13 for all traits).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50, and C55 consistently report non-significant interactions across multiple traits and experiments. The p-values are clearly stated (p>0.50 for growth traits, p>0.13 for drought traits), and interaction plots in Figures 5 and 6 visually support the lack of differential plasticity. However, the authors acknowledge limited statistical power due to sample size, which is an appropriate caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C90",
+      "C91"
+    ],
+    "result": "An outdoor drought experiment with 160 seedlings from five sites demonstrated that drought treatment significantly reduced stomatal conductance (p<0.00001, explaining 62.3% of variation) and SLA values. However, seedlings from drier sites unexpectedly showed higher SLA values than those from mesic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C90-C91 describe a drought experiment with clear treatment effects on stomatal conductance, confirming water stress was induced. The unexpected finding regarding SLA (C54) is honestly reported as contrary to expectation, which increases confidence in the reporting. The experimental design with paired seedlings and appropriate controls is sound, though the sample size is modest (146 seedlings analyzed).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C74"
+    ],
+    "result": "Qst-Fst analysis found no significant differences between phenotypic and genomic differentiation for measured traits, suggesting phenotypic differences could result from genetic drift alone. However, seedling height showed non-significant trends (p=0.11-0.14) suggesting possible local adaptation, though the analysis lacked statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 and C74 report Qst-Fst comparisons that are not statistically significant, yet the authors suggest local adaptation may be occurring for height. This interpretation is speculative given p>0.10. The authors appropriately acknowledge limited statistical power due to small sample sizes, but the result remains uncertain. The analysis method appears sound, but the conclusions about local adaptation are not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C76"
+    ],
+    "result": "Substantial phenotypic variation in leaf shape and other traits was observed both among and within sampling sites, consistent with high genomic diversity detected across the species range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C76 are supported by visual evidence in Figure 7 showing diverse leaf morphologies and by the genomic diversity metrics (C35). The consistency between genomic and phenotypic diversity strengthens both findings. However, leaf shape variation was only qualitatively assessed through visual observation, not quantitatively analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C77"
+    ],
+    "result": "Based on low genetic differentiation over large spatial scales (up to 500 km) and high within-population diversity, the authors recommend that restoration projects source seed broadly across the landscape to maximize genetic diversity and adaptive potential for climate change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C62-C63, and C77 represent management recommendations logically derived from the empirical findings of low Fst, high gene flow to 500 km, and high within-site diversity. The inference that broader seed sourcing will increase adaptive potential is reasonable and supported by population genetics theory (C63), though the actual restoration outcomes cannot be validated without implementation and long-term monitoring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The mean Fst of 0.04 in E. melliodora is consistent with previous microsatellite analysis of this species (Fst=0.03) and with population genetic analyses of other tree species (Fst ranging 0.03-0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 appropriately contextualize the findings by comparing to prior work on the same species and to other tree species. The consistency with microsatellite data (Broadhurst et al., 2018) validates the GBS approach, and the comparison to other trees shows E. melliodora fits expected patterns. Multiple citations support the comparative values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The climate variables identified as drivers of genomic variation are predicted to change rapidly, while soil nitrogen may change more slowly. This temporal mismatch may result in uncoupling of key environmental variables, potentially creating suboptimal conditions for E. melliodora across the landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 involve speculation about future environmental change and its consequences. While C64 is supported by general climate change knowledge, C65 is explicitly uncertain ('difficult to forecast'), and C66 is speculative ('may become uncoupled'). The concern is reasonable but represents a hypothesis about future conditions rather than a tested result. The citation to Brevik 2013 supports the complexity of soil nitrogen dynamics but doesn't validate the specific prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The environmental drivers identified in this study (temperature and precipitation variables) are consistent with previous niche modeling of E. melliodora and with studies of other tree species, though the specific variables differ because niche modeling identifies species-level environmental tolerance while landscape genomics identifies drivers of within-species genomic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 appropriately contextualize the findings within the broader literature. The explanation in C68 for why exact variables differ between niche modeling and landscape genomics is methodologically sound. The citations to Broadhurst et al. 2018, Garnier-G\u00e9r\u00e9 and Ades 2001, and Aitken et al. 2008 support the comparative statements. This represents appropriate interpretation of results in context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study focused on whole-genome population structure rather than individual adaptive loci due to limitations of GBS resolution and limited linkage disequilibrium in Eucalyptus. However, the lack of strong population structure indicates that whole-genome sequencing to identify adaptive alleles would be feasible in E. melliodora.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 appropriately describe study scope and limitations. The explanation for not pursuing individual gene analysis is well-justified with citations (Silva-Junior and Grattapaglia 2015; Thumma et al. 2005). The inference in C73 that future whole-genome studies are feasible is reasonable given the low population structure found, though this represents a suggestion for future work rather than a current finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "It remains unknown whether human landscape modifications have disrupted historical gene flow patterns in E. melliodora, as the genomic analyses were based on mature trees predating extensive land clearing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 appropriately identifies an important limitation of the study\u2014that the genomic data reflect historical rather than contemporary gene flow patterns. This is an honest acknowledgment that the recommendations may not account for recent fragmentation effects. The caveat is important for interpreting the management implications, though the phenotypic data from seedlings showed concordant patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "E. melliodora (yellow box) is a foundation species of the critically endangered White Box\u2013Yellow Box\u2013Blakely's Red Gum Grassy Woodland community, of which less than 5% remains. Climate modeling predicts the species distribution will shift southeast with a 77% reduction in suitable habitat by 2090.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C21 establish the conservation context for the study. These are well-supported by multiple government citations for the endangered status (C18-C19) and peer-reviewed literature for climate predictions (C20-C21). This background information is appropriately cited and provides strong justification for the restoration focus of the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes that species face rapid environmental change and habitat fragmentation, and that three processes (migration, adaptation, phenotypic plasticity) enable survival. Traditional local seed sourcing may reduce genetic diversity in fragmented systems, while climate-adjusted provenancing offers an alternative strategy incorporating both diversity and future adaptability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 present well-established concepts in conservation biology and restoration ecology, all supported by appropriate citations (Lindenmayer et al. 2010, Aitken and Whitlock 2013, Broadhurst et al. 2008, Prober et al. 2015, etc.). These claims provide the conceptual framework for the study and are standard background knowledge in the field. The logical progression from problems to solutions is clear and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The authors conclude that the results are promising for the future of E. melliodora across its native distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 represents an overall assessment that is reasonably supported by the collective findings of high genetic diversity, extensive gene flow, and substantial phenotypic variation. However, this is an optimistic interpretation that assumes the historical patterns detected in mature trees persist in contemporary populations and that restoration efforts will successfully implement the recommendations. The conclusion is justified but somewhat speculative regarding actual future outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "All genomic and phenotypic data and analysis scripts have been made publicly available through NCBI and GitHub repositories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 document data availability with specific accession numbers and URLs. This represents good open science practice and allows for reproducibility and reanalysis. The availability of both raw data and analysis scripts is commendable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Rats can distinguish between different intensities of noxious stimuli (NS, LS, HS) using a conditioned place aversion (CPA) paradigm. Higher intensity stimuli (HS) elicited shorter withdrawal latencies than lower intensity stimuli (LS), and rats demonstrated graded aversive responses that correlated with stimulus intensity and nocifensive reflexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C65-C70 provide converging behavioral evidence from CPA tests and withdrawal latency measurements showing that rats can detect and distinguish between different pain intensities. The data include appropriate statistical tests (p<0.05) and demonstrate both sensory (withdrawal latency) and affective (place aversion) discrimination of stimulus intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C71"
+    ],
+    "result": "Chronic inflammatory pain (CFA) in one limb induces generalized enhancement of aversion to acute pain in the contralateral uninjected limb. CFA-treated rats showed increased aversive response to low-intensity stimuli (LS) and lost the ability to distinguish between LS and HS, despite no changes in withdrawal reflexes or mechanical sensitivity in the uninjected paw.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C25, and C71 demonstrate that chronic pain specifically affects the affective/aversive component of pain without altering sensory thresholds in the uninjected paw. The behavioral data with CPA scores and statistical comparisons (p<0.05) support anatomically nonspecific enhancement of pain aversion. Controls showing no change in withdrawal latency (C24) and mechanical sensitivity (C25) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ACC neurons encode acute pain intensity in control rats. A subset of ACC neurons showed graded firing rate increases in response to noxious stimuli, with higher firing rates for HS than LS. Population decoding analysis using SVM achieved 85% accuracy distinguishing NS from HS and 76% accuracy distinguishing LS from HS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C28, and C73-C76 provide electrophysiological evidence that ACC neurons represent pain intensity. The decoding analysis (C28) provides quantitative support with high accuracy rates. Control analyses showing no difference in motor responses between LS and HS (C74) support that neural responses reflect nociceptive processing rather than movement artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C77"
+    ],
+    "result": "Chronic pain disrupts ACC representation of acute pain intensity. After CFA treatment, ACC neurons showed flatter tuning curves (decreased slope) and reduced decoding accuracy for distinguishing LS from HS (76% vs 67%), while maintaining ability to distinguish noxious from non-noxious stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C32, and C77 demonstrate altered neural coding in chronic pain. The statistical comparison of tuning curve slopes (C31) and decoding accuracy (C32, p<0.05) provides quantitative evidence. The correlation between impaired neural discrimination and behavioral findings (C77) strengthens the mechanistic link between ACC dysfunction and generalized pain aversion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C78",
+      "C80",
+      "C82"
+    ],
+    "result": "Optogenetic activation of ACC excitatory neurons bidirectionally modulates aversive responses to acute pain. ACC activation enhanced aversion to LS but not NS, and the magnitude of this effect was similar to that induced by chronic pain. ACC activation did not alter withdrawal reflexes or locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C37 demonstrate causal sufficiency of ACC activation for enhancing pain aversion. The specificity for noxious stimuli (C34 vs C35), lack of motor effects (C33, C80), and similarity to chronic pain effects (C37) are well-supported. Control experiments with YFP-only vectors (C82) and immunohistochemistry confirming excitatory neuron targeting (C78, 95.8% VGLUTs-positive) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C79",
+      "C81",
+      "C83"
+    ],
+    "result": "Optogenetic inhibition of ACC excitatory neurons reduces aversive responses to acute pain in control rats. ACC inhibition decreased aversion to both LS and HS, and could completely abolish the aversive value of noxious stimuli when paired with less aversive comparators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate causal necessity of ACC activity for pain aversion. The bidirectional control (activation and inhibition) provides strong evidence for ACC's role. Controls showing no effect on NS (C83), no motor impairment (C81), and specific targeting of excitatory neurons (C79, 92% VGLUTs-positive) support the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Optogenetic inhibition of ACC neurons rescues the generalized enhancement of pain aversion induced by chronic pain. In CFA-treated rats, ACC inhibition during LS abolished the heightened aversion to LS and restored the ability to distinguish between LS and HS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 demonstrate that ACC activity is necessary for the chronic pain-induced generalized aversion. The rescue experiments showing restoration of normal pain discrimination (C43, C45) and quantitative CPA score analyses (C44, C45) with appropriate statistics (p<0.05) provide strong evidence that ACC dysfunction mediates the behavioral phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C54",
+      "C61",
+      "C62"
+    ],
+    "result": "The study establishes that chronic pain disrupts cortical circuitry in the ACC to enhance aversive experience in a generalized, anatomically nonspecific manner, providing a causal mechanistic link between chronic pain and generalized enhancement of pain aversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C49, C54, C61, and C62 represent the main conclusions synthesizing behavioral, electrophysiological, and optogenetic findings. The convergence of evidence from multiple experimental approaches (CPA, neural recordings, optogenetic manipulation) supports the causal role of ACC in generalized pain aversion. However, the interpretation that ACC is part of a broader network (C62) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C48",
+      "C63",
+      "C64"
+    ],
+    "result": "The findings relate to clinical conditions and prior literature. Chronic pain is associated with site-specific hypersensitivity, and epidemiological studies suggest anatomically nonspecific pain enhancement in conditions like fibromyalgia. The mechanism identified may underpin diffuse pain syndromes and could extend to other conditions like depression and anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1, C7, C8, and C48 appropriately cite prior work. However, claims C63 and C64 are explicitly speculative about clinical implications and broader applications. While the animal model findings are robust, the translation to human conditions and extension to other psychiatric conditions requires additional validation and are appropriately framed as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C72"
+    ],
+    "result": "The ACC has established roles in pain processing based on prior literature. It receives nociceptive inputs, responds to pain intensity, is necessary for aversive learning in chronic pain, undergoes synaptic plasticity, and participates in broader cognitive and affective functions including reward-based learning and attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14, C50-C53, C57-C60, and C72 appropriately cite extensive prior literature to establish the known roles of ACC in pain and cognition. These claims provide necessary context for the current findings and are well-supported by the cited references. The authors appropriately distinguish between established knowledge and their novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Brief ACC activation does not convert non-noxious stimuli to noxious, contrasting with prior studies showing repeated ACC activation can serve as an aversive teaching signal. This suggests repeated/prolonged activation is required for stable aversive memory, while transient activation provides context-specific aversive valuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 appropriately distinguish the current findings from prior work and provide a reasonable interpretation. The data showing no effect of brief ACC activation on NS (C35) supports this distinction. The interpretation about temporal requirements (C56) is logical but remains somewhat speculative as it is based on comparison with prior studies rather than direct testing of different activation durations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Methodological validations and controls for neural recordings. Paw withdrawal velocities did not differ between LS and HS. Temperature measurements confirmed graded thermal stimulation. SVM decoding analysis was robust to different time windows, and chance-level decoding was appropriately calculated at ~53% due to sample size imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide important methodological controls and validations. The withdrawal velocity analysis (C84) confirms that motor responses don't explain neural differences. Temperature measurements (C85) validate the stimulus paradigm. The decoding controls (C86-C88) demonstrate analytical rigor with appropriate chance-level calculations and robustness checks.",
+    "result_type": "MINOR"
+  }
+]

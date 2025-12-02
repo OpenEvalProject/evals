@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C46",
+      "C57"
+    ],
+    "result": "Monomeric NDC80 complexes do not track depolymerizing microtubules or affect microtubule dynamics at picomolar concentrations used in single-molecule analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C46, and C57 consistently demonstrate through experimental data (Figure 1B, Figure 3BC) and citations to prior work that single NDC80 complexes bind weakly and transiently to microtubules without tracking depolymerizing ends or modulating dynamics. The evidence is direct, reproducible, and consistent with previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "CENP-T:MIS12:NDC80 complexes with three or more NDC80 molecules effectively track depolymerizing microtubule tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C26, and C27 are supported by experimental data showing tip-tracking behavior of CENP-T-based assemblies (Figure 1), with quantification indicating most complexes contain ~3 NDC80 per CENP-T:MIS12. The stoichiometry determination via fluorescence intensity is appropriate and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C79"
+    ],
+    "result": "CENP-T:MIS12 complexes without NDC80 do not bind microtubules, demonstrating that NDC80 is required for microtubule binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C79 provide negative control data showing that CENP-T:MIS12 alone does not bind microtubules over a wide concentration range (0.2-7 nM), confirming the necessity of NDC80 for microtubule interaction. This is a critical control that strengthens the interpretation of the positive results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C55",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The residence time of NDC80 modules on microtubules increases exponentially with the number of NDC80 complexes, demonstrating that multivalency stabilizes microtubule binding through avidity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C55, C80-C82, C84-C86 are supported by experimental measurements (Figure 2E) and stochastic simulations that fit the data well. The exponential increase in residence time with NDC80 number is quantified, and the derived kon value (2.6 s\u207b\u00b9) is consistent with published values for monomeric NDC80. The simulation approach appropriately models the multivalent binding kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C47"
+    ],
+    "result": "Two or more NDC80 complexes in a module are sufficient for tracking depolymerizing microtubule tips with increasing efficiency as NDC80 number increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C30, and C47 are supported by experimental data (Figure 3A-C) showing that divalent, trivalent, and tetravalent TS-NDC80 assemblies track shortening tips with increasing frequency. The threshold of two NDC80 complexes for tip-tracking is clearly demonstrated and represents a key finding about the minimal requirements for this activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C56",
+      "C66",
+      "C87"
+    ],
+    "result": "Multivalent NDC80 modules slow down microtubule depolymerization, suggesting direct binding to flaring protofilaments at the microtubule tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C56, C66, and C87 are supported by experimental data (Figure 3D, Figure 3\u2014figure supplement 1E-F) showing reduced depolymerization rates in the presence of TS-NDC80 assemblies. The inference that this reflects direct binding to depolymerizing ends is reasonable given the single-particle effect and is consistent with the force-coupling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C88",
+      "C89"
+    ],
+    "result": "A single trivalent T1S3[NDC80]3 assembly is sufficient to couple microtubule shortening to cargo transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C88, and C89 are supported by bead-tracking experiments at low coating densities where geometric considerations indicate single modules can interact with microtubules. The observation that 5/70 beads with lowest T1S3 coating tracked tips, while 0/50 beads with monovalent or divalent modules did not, provides strong evidence for this threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C58",
+      "C59",
+      "C90",
+      "C91"
+    ],
+    "result": "Multivalent NDC80 modules stall microtubule depolymerization in a force-dependent manner, with forces saturating at 5-6 pN, and can rescue microtubule growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C34-C37, C58-C59, and C90-C91 are supported by optical trapping experiments (Figure 4) showing force-dependent stalling with quantified stall forces. The saturation at 5-6 pN with 100-1000 modules and the observation of rescue events are well-documented. The experimental design with appropriate controls and quantification supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C67",
+      "C94"
+    ],
+    "result": "There is a strong correlation between stalling force magnitude and the probability of microtubule rescue, suggesting force-induced protofilament straightening as the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C67, and C94 are supported by pooled data from optical trapping experiments (Figure 4E) showing that higher stalling forces correlate with increased rescue probability. The mechanistic interpretation involving protofilament straightening is reasonable given the biophysical context, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Monovalent T3S1[NDC80]1 modules, even at high density, do not generate stalling forces above 3 pN and never produce rescue events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 are supported by experimental data (Figure 4D) showing that dense coating with monovalent modules produces lower forces and no rescues. This provides an important control demonstrating that multivalency, not just high local NDC80 concentration, is required for effective force coupling and rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C61"
+    ],
+    "result": "Multivalent NDC80 modules promote efficient coupling of microtubule-generated force and exploit the energy of depolymerizing microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C61 represent the main conclusions synthesized from the force-coupling and rescue data. These are well-supported by the collective experimental evidence showing force generation, force-dependent rescue, and the distinction from biased diffusion models. The conclusion that NDC80 harnesses depolymerization energy is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Force-induced stiffening of the NDC80-microtubule linkage is enhanced during interaction with depolymerizing microtubules compared to straight protofilaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by analysis of thermal fluctuations during stalling (Figure 5A-B). The two-fold higher stiffening during depolymerization compared to lateral or end-on attachment to stable microtubules suggests enhanced interaction with flared protofilaments. The experimental design with appropriate controls strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The experimental observations support a force-harnessing mechanism rather than biased diffusion for NDC80 tip-tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C49-C53 contrast the two mechanistic models and argue that the data (reduced depolymerization rates, force generation, tight binding) are inconsistent with biased diffusion predictions but consistent with force-harnessing models. The logic is sound and the experimental evidence clearly distinguishes between these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "A significant amount of microtubule-generated energy is spent breaking bonds between TS-NDC80 assemblies and the microtubule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is explicitly stated as speculation based on comparison of measured forces (5-6 pN) to theoretical maximum forces (13-70 pN). While the reasoning is plausible, this remains speculative without direct measurements of energy dissipation or bond-breaking dynamics. The claim appropriately acknowledges its speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Kinetochore-associated fibrils observed in vivo might consist of oligomers of NDC80 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is stated as a suggestion requiring further analysis. While the in vitro reconstitution data are consistent with this possibility, direct identification of the molecular composition of the in vivo fibrils is lacking. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C76",
+      "C77"
+    ],
+    "result": "The multivalency of NDC80 at the outer kinetochore likely contributes to tension-dependent stabilization of kinetochore-microtubule interactions in vivo, and recapitulating stoichiometry is crucial for reconstitution studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C76, and C77 represent the broader implications of the work. The in vitro demonstration of tension-dependent stabilization through multivalency provides strong support for this mechanism operating in vivo. The conclusion about the importance of stoichiometry for reconstitution is well-justified by the systematic approach taken in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C48",
+      "C54",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "Background knowledge and prior work establish the context for kinetochore function, NDC80 recruitment, and existing models of microtubule coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C22, C48, C54, C62-C65, C68, C70, C72-C75, and C78 represent established knowledge from prior work, appropriately cited. These provide the necessary context for interpreting the current results and are accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C92",
+      "C93"
+    ],
+    "result": "Geometric calculations estimate local NDC80 concentrations within assemblies and the number of modules near microtubule ends on beads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C92, and C93 involve geometric calculations to estimate local concentrations and module numbers. These calculations are reasonable given the known dimensions of the components and provide useful context for interpreting the kinetic and force measurements. The inference about optimal organization (C93) is appropriately tentative.",
+    "result_type": "MINOR"
+  }
+]

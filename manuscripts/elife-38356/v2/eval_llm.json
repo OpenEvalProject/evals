@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C32",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The crystal structure of the Scc3-Scc1 complex bound to DNA reveals that Scc3 and Scc1 form a composite DNA interaction module. The structure shows DNA nested within a positively charged cradle formed by Scc3 and Scc1, with DNA binding mediated through contacts with the DNA phosphate backbone but no sequence-specific base interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure determination at 3.6 \u00c5 resolution (C46-C51) provides direct structural evidence for the Scc3-Scc1-DNA complex. The electron density maps (C55, C58) and structural features (C52-C54, C59-C61) are consistent with a composite DNA-binding interface. The lack of base-specific interactions (C62) explains non-sequence-specific binding observed in EMSAs. The use of selenomethionine derivatives (C64) to confirm the Scc1 register (C65) strengthens confidence in the model despite anisotropic diffraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The Scc3-Scc1 subcomplex binds double-stranded DNA in vitro, as demonstrated by EMSA experiments. DNA binding depends on the presence of Scc1 and shows length-dependent affinity. Other cohesin subcomplexes (Pds5-Scc1, Smc1hd-CScc1, Wapl) do not bind DNA, while Smc3hd-NScc1 and the Smc1-Smc3 hinge also show DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMSA experiments (C37-C44) provide clear biochemical evidence for DNA binding by specific cohesin subcomplexes. The requirement for Scc1 in the Scc3-Scc1 complex (C41) and the length-dependent binding (C40) are consistent with a non-sequence-specific DNA-binding mechanism. The negative controls (C42-C44) strengthen the specificity of the findings. The comparison to condensin (C45) provides evolutionary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Mutagenesis of conserved positively charged residues in Scc3 reveals that patches 1 and 3 constitute a composite DNA-binding surface. Individual patch mutations modestly reduce DNA binding affinity (KD 7.3-9.5 \u03bcM vs 2.2 \u03bcM for wild-type), while the heptamutant shows severely impaired binding (KD 29.3 \u03bcM). The Scc1 K363/R364 residues do not contribute to DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fluorescence polarization experiments (C69-C73, C79) provide quantitative measurements of DNA binding affinity for wild-type and mutant complexes. The structural integrity controls (C74-C76) rule out indirect effects of mutations on complex formation. The conservation analysis (C67-C68) provides evolutionary support for functional importance. The finding that Scc1 K363/R364 does not contribute to binding (C79-C80) is somewhat surprising given the structural proximity to DNA (C65), but the data are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "DNA binding by Scc3-Scc1 is essential for cohesin function in vivo. Individual patch mutants support cell viability, but the heptamutant fails to divide despite normal protein expression and incorporation into cohesin complexes. ChIP-qPCR shows that the patch 3 mutant has 40% reduced chromatin binding, while the heptamutant completely fails to bind chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tetrad dissection experiments (C81-C82) demonstrate that the heptamutant is lethal, while the protein expression (C83) and complex incorporation (C86) controls rule out indirect effects. The ChIP-qPCR data (C84-C85) directly link DNA-binding defects in vitro to chromatin association defects in vivo. The graded phenotypes (individual mutants viable, heptamutant lethal) are consistent with the graded biochemical defects and suggest a threshold effect for cohesin function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C36",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "The conserved DNA-binding domain of Scc3-Scc1 is required for DNA binding in vitro, enrichment of cohesin on chromosomes, and cell viability. This DNA-binding interface plays a central role in cohesin recruitment to chromatin and is a key element for the cohesin cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes structural (C4-C5, C32, C96), biochemical (C6, C31), and cell biological (C7-C8, C97-C98) evidence. The claims are well-supported by the combined data from multiple experimental approaches. The inference that this interface is central to cohesin recruitment (C9, C36, C101-C102) is reasonable given the convergent evidence, though the precise molecular mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C127",
+      "C128"
+    ],
+    "result": "Scc1 is required for DNA binding by the Scc3-Scc1 subcomplex, but apparently not through direct DNA interactions. The structural observations suggest Scc1 K363 is proximal to DNA, but mutagenesis shows this residue does not contribute to binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The requirement for Scc1 in DNA binding is clearly demonstrated by EMSA (C41, C127), but the mechanism remains unclear. The mutagenesis data (C79-C80, C128) argue against direct DNA contacts by K363/R364, despite structural proximity (C65). The inference in C66 that Scc1 enhances binding affinity is reasonable but the mechanism is not established. The disordered region of Scc1 (C126) may play a role not captured in the current structure. Additional experiments would be needed to clarify Scc1's contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C105",
+      "C106",
+      "C107",
+      "C111"
+    ],
+    "result": "The Scc3-Scc1 DNA-binding site presumably contributes to chromosome entrapment and/or DNA translocation. The authors propose that the Scc3-Scc1 subcomplex provides a dynamic DNA anchoring point required for efficient loading and/or maintenance of cohesin on chromatin, potentially representing the first step in moving chromosomal DNA into the cohesin ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative (C93-C94, C107, C111) and represent mechanistic models rather than demonstrated results. While the connection between in vitro DNA binding defects and in vivo chromatin association defects (C105) is established, the precise role in DNA entry/exit reactions (C106) is inferred rather than directly demonstrated. The model is plausible and consistent with the data, but requires additional functional experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Surface patch 3 mutations in Scc3 partially reduce DNA binding and chromatin association but do not cause obvious growth defects, suggesting these cells remain competent for sister chromatid cohesion. This is consistent with prior work showing that partial cohesin depletion does not impact core functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical (C113), ChIP-qPCR (C114), and viability (C115) data are consistent and support the conclusion that partial loss of DNA binding can be tolerated. The inference about cohesion competence (C116) is reasonable given the lack of growth defects, though direct cohesion assays would strengthen this claim. The citation of prior work (C117-C118) provides appropriate context for interpreting the threshold effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C129",
+      "C130"
+    ],
+    "result": "Comparison with the paralogous condensin complex reveals that both cohesin and condensin use HEAT-repeat/kleisin modules to engage DNA. However, condensin appears more dependent on this DNA-binding interface than cohesin, possibly due to differences in loading mechanisms (cohesin has the Scc2-Scc4 loader, condensin does not).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to condensin (C45, C119-C120, C125) is well-supported by cited literature. The speculation about mechanistic differences (C121, C124) is reasonable given the known differences in loading factors (C122-C123). The inference of a conserved mechanism (C130) is justified by the structural and functional similarities, though the speculation about cohesin using a similar mode of engagement (C129) requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "Prior work supports a role for Scc3 in cohesin loading. Scc1 deletion mutants lacking the Scc3-binding sequence fail to load onto chromosomes, and Scc3 enhances topological DNA entrapment in vitro. The subsequent entrapment reaction is presumably catalyzed by the Scc2-Scc4 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately attributed to prior work through citations (C108-C110, C112). The authors correctly present these as established findings that provide context for their own results. The claim about Scc2-Scc4 catalyzing entrapment (C112) is supported by multiple citations and represents the current model in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The conserved molecular mechanism of DNA engagement by HEAT-repeat/kleisin modules potentially facilitates topological loading, chromatin looping, and tracking along chromatin fibers by SMC complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are speculative (C131-C133) and represent proposed functions rather than demonstrated results. While the speculation is reasonable and supported by a citation (Ganji et al., 2018), the current study does not directly test these proposed functions. These represent hypotheses for future work rather than conclusions supported by the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C89",
+      "C90",
+      "C91",
+      "C99",
+      "C100",
+      "C103",
+      "C104"
+    ],
+    "result": "Background and context claims about cohesin function, structure, and regulation based on established knowledge and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are appropriately supported by citations to prior work. They represent established knowledge in the field rather than novel findings from this study. The authors accurately represent the current understanding of cohesin biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "The coordinates for the Scc3-Scc1-DNA complex structure have been deposited in the Protein Data Bank under accession number 6H8Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward data availability statement that can be verified by checking the PDB database. Proper data deposition is essential for reproducibility and represents good scientific practice.",
+    "result_type": "MINOR"
+  }
+]

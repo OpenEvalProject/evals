@@ -1,0 +1,2028 @@
+{
+  "submission": {
+    "id": "de914be2-7210-44fd-8b71-422262a75b30",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:38:23.984952Z",
+    "updated_at": "2025-12-01T21:38:23.984952Z"
+  },
+  "content": [
+    {
+      "id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "submission_id": "de914be2-7210-44fd-8b71-422262a75b30",
+      "content_type": "manuscript",
+      "content_text": "# A protein phosphatase network controls the temporal and spatial dynamics of differentiation commitment in human epidermis\n\n## Authors\n\n- Ajay Mishra<sup>1</sup>\n- B\u00e9n\u00e9dicte Oul\u00e8s<sup>1</sup>\n- Angela Oliveira Pisco<sup>1</sup> ([ORCID: 0000-0003-0142-2355](https://orcid.org/0000-0003-0142-2355))\n- Tony Ly<sup>3</sup>\n- Kifayathullah Liakath-Ali<sup>1</sup>\n- Gernot Walko<sup>1</sup>\n- Priyalakshmi Viswanathan<sup>1</sup>\n- Matthieu Tihy<sup>1</sup> ([ORCID: 0000-0002-9314-4657](https://orcid.org/0000-0002-9314-4657))\n- Jagdeesh Nijjher<sup>1</sup>\n- Sara-Jane Dunn<sup>6</sup>\n- Angus I Lamond<sup>3</sup> ([ORCID: 0000-0001-6204-6045](https://orcid.org/0000-0001-6204-6045))\n- Fiona M Watt<sup>1</sup> ([ORCID: 0000-0001-9151-5154](https://orcid.org/0000-0001-9151-5154)) \u2020\n\n### Affiliations\n\n1. Centre for Stem Cells and Regenerative Medicine King\u2019s College London London United Kingdom\n2. Department of Chemical Engineering and Biotechnology, Cambridge Infinitus Research Centre University of Cambridge Cambridge United Kingdom\n3. Centre for Gene Regulation and Expression, School of Life Sciences University of Dundee Dundee United Kingdom\n4. Wellcome Centre for Cell Biology, Institute of Cell Biology, School of Biological Sciences University of Edinburgh Edinburgh United Kingdom\n5. Laboratory of Cerebral Physiology Universit\u00e9 Paris Descartes Paris France\n6. Microsoft Research Cambridge United Kingdom\n7. Wellcome Trust - Medical Research Council Cambridge Stem Cell Institute University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nEpidermal homeostasis depends on a balance between stem cell renewal and terminal differentiation. The transition between the two cell states, termed commitment, is poorly understood. Here, we characterise commitment by integrating transcriptomic and proteomic data from disaggregated primary human keratinocytes held in suspension to induce differentiation. Cell detachment induces several protein phosphatases, five of which - DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA \u2013 promote differentiation by negatively regulating ERK MAPK and positively regulating AP1 transcription factors. Conversely, DUSP10 expression antagonises commitment. The phosphatases form a dynamic network of transient positive and negative interactions that change over time, with DUSP6 predominating at commitment. Boolean network modelling identifies a mandatory switch between two stable states (stem and differentiated) via an unstable (committed) state. Phosphatase expression is also spatially regulated in vivo and in vitro. We conclude that an auto-regulatory phosphatase network maintains epidermal homeostasis by controlling the onset and duration of commitment.\n\n## Introduction\n\nCommitment is a transient state during which a cell becomes restricted to a particular differentiated fate. Under physiological conditions, commitment is typically irreversible and involves selecting one differentiation pathway at the expense of others (Nimmo et al., 2015). While commitment is a well-defined concept in developmental biology, it is still poorly understood in the context of adult tissues (Simons and Clevers, 2011; Semrau and van Oudenaarden, 2015; Nimmo et al., 2015). This is because end-point analysis fails to capture dynamic changes in cell state, and rapid cell state transitions can depend on post-translational events, such as protein phosphorylation and dephosphorylation (Avraham and Yarden, 2011).\n\nWe set out to examine commitment in human interfollicular epidermis, which is a multi-layered epithelium formed by keratinocytes and comprises the outer covering of the skin (Watt, 2014). The stem cell compartment lies in the basal layer, attached to an underlying basement membrane. Cells that leave the basal layer undergo a process of terminal differentiation as they move through the suprabasal layers. In the final stage of terminal differentiation, the cell nucleus and cytoplasmic organelles are lost and cells assemble an insoluble barrier, called the cornified envelope, which is formed of transglutaminase cross-linked proteins and lipids (Watt, 2014). We have previously shown that keratinocytes can commit to terminal differentiation at any phase of the cell cycle, and upon commitment they are refractory to extracellular matrix-mediated inhibition of differentiation (Adams and Watt, 1989).\n\nAlthough there are currently no markers of epidermal commitment, we have previously used suspension-induced differentiation of disaggregated human keratinocytes in methylcellulose-containing medium (Adams and Watt, 1989) to define its timing. Here, we use this simple experimental model to identify markers of commitment and discover why it is a transient state.\n\n## Results\n\n### Dynamic expression of protein phosphatases during suspension-induced differentiation\n\nSince keratinocytes increase in size as they differentiate (Adams and Watt, 1989), we enriched for undifferentiated cells by filtration prior to placing them in suspension for up to 12 hr (Figure 1a). By determining when cells recovered from suspension could no longer resume clonal growth on replating (Figure 1b; Figure 1\u2014figure supplement 1a), we confirmed that there is a marked drop in colony forming ability between 4 and 8 hr. This correlates with an increase in the proportion of cells expressing the terminal differentiation markers involucrin (IVL) and transglutaminase 1 (TGM1) (Figure 1c,d; Figure 1\u2014figure supplement 1b) and downregulation of genes that are expressed in the basal layer of the epidermis, including integrin \u03b16 (ITG\u03b16) and TP63 (Figure 1d) and the stem cell markers DLL1 and Lrig1 (Tan et al., 2013; Figure 1\u2014figure supplement 1c). As expected, Ki67 expression was also reduced in suspension, reflecting the drop in proliferation upon differentiation (Figure 1\u2014figure supplement 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig1-v2.jpg)\n\n**Figure 1.:** (a)\u00a0Schematic of experimental design. (b) Colony formation by cells harvested from suspension at different times. Representative dishes are shown together with % colony formation (n\u00a0=\u00a02 independent experiments, n\u00a0=\u00a03 dishes per condition per experiment; p-values calculated by Tukey\u2019s multiple comparison test). (c) Cells isolated from suspension at different time points were labelled with anti-involucrin (IVL) antibody (green) and DAPI as nuclear counterstain (blue). IVL-positive cells were counted using ImageJ (n\u00a0=\u00a03 independent cultures; more than 300 cells counted per condition. p-value calculated by two-tailed t-test). Scale bars: 50 \u03bcm (d) RT-qPCR quantification of ITG\u03b16, TP63, IVL and TGM1 mRNA levels (relative to 18 s expression) (n\u00a0=\u00a03 independent cultures). (e) t-SNE plot of genome-wide transcript expression by keratinocytes placed in suspension for different times. The t-SNE algorithm takes a set of points in a high-dimensional space and finds a faithful representation of those points in a lower-dimensional space, typically the 2D plane. (f) Heatmap representing hierarchical clustering of differentially expressed proteins (p<0.05). (g\u2013i) Dot plots correlating expression of significantly differentially expressed peptides (p<0.05) that change twofold relative to 0 hr in at least one of the time points, with their corresponding differentially expressed transcripts. Pearson correlations (r) are indicated. (j) Histogram of normalised SILAC ratios corresponding to high confidence phosphorylation sites that differ between 0 and 4 hr. (k) Scatter plot correlating log2 normalised SILAC ratios for total protein changes (y-axis) with log2 phospho-peptide ratios (x-axis) between 0 and 4 hr. (b, c) *p<0.05; **p<0.01; ns\u00a0=\u00a0non-significant).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Keratinocytes harvested after 0, 1, 2, 4, 6, 8, 10, 12 or 24 hr in suspension in methylcellulose were seeded at 100, 500 or 1000 cells in 10 cm2 culture dish on mitotically inactivated J2 3T3 feeders and cultured for 12 days. Following staining, colonies were counted using ImageJ (n\u00a0=\u00a02 independent experiments with three replicate dishes per experiment; p-value calculated by two tailed\u00a0t-test). (b) RT-qPCR quantification of IVL and TGM1 mRNA levels at different times in suspension (n\u00a0=\u00a03 independent cultures; p-value calculated by two tailedt-test). (c) RT-qPCR quantification of DLL1, Ki67 and Lrig1 mRNA levels at different times in suspension (n\u00a0=\u00a03 independent cultures; p-value calculated by one-way ANOVA). (d) Hierarchical clustering of significantly expressed transcripts at 0, 4, 8 and 12 hr in suspension (each time point represents the mean value of n\u00a0=\u00a03 independent experiments). (e) GO analysis of differentially expressed genes upregulated at 4, 8 and 12 hr relative to 0 hr. The bar plots represent \u2013log10 of p-values of the identified GO terms. (f) Schematic of SILAC-Mass Spectrometry labelling protocol. (g) GO analysis of proteins ranked in the order of their expression level (fold increase relative to 0 hr) at 4, 8 and 12 hr. GO terms were fetched for individual proteins rather than for clusters of proteins. Bar plots represent \u2013log10 of the p-values of the identified GO terms. (a\u2013c) Error bars represent s.d. *p<0.05; **p<0.01; ***p<0.005; ns\u00a0=\u00a0non significant.\n\nTo define commitment at the molecular level, we next collected keratinocytes after 4, 8 and 12 hr in suspension and performed genome-wide transcriptomics, using Illumina-based microarrays, and proteome-wide peptide analysis, by SILAC-Mass-Spectrometry (MS) (Figure 1e,f; Figure 1\u2014figure supplement 1d\u2013g; Supplementary file 1, 2). Keratinocytes collected immediately after trypsinisation served as the 0 hr control. When comparing the starting cell population (0 hr) with cells suspended for 4, 8 or 12 hr, t-SNE plots of differentially expressed genes (Figure 1e) and unsupervised hierarchical clustering of genes and proteins (Figure 1f; Figure 1\u2014figure supplement 1d) indicated that the 4 hr samples clustered separately from the 8 and 12 hr samples. GO term enrichment analysis of differentially expressed transcripts or proteins showed enrichment of terms associated with epidermal differentiation at 8 and 12 hr (Figure 1\u2014figure supplement 1e,g) (Sen et al., 2010; Mulder et al., 2012), which is consistent with the drop in clonogenicity seen at these time points.\n\nWhen we compared the significantly differentially expressed proteins (p-value<0.05) that changed\u00a0\u22652 fold at one or more time points with their corresponding transcripts (Figure 1g\u2013i), there was a moderately positive correlation at 8 and 12 hr (Pearson correlations of 0.51 and 0.68, respectively), consistent with the correlation between bulk mRNA and protein levels seen in previous studies of mammalian cells (Schwanh\u00e4usser et al., 2011; Ly et al., 2014). However, at 4 hr transcripts and proteins were only weakly correlated (Pearson correlation 0.19, Figure 1g).\n\nThe poor correlation between protein and transcript levels at 4 hr suggested a potential role for post-transcriptional mechanisms in regulating commitment. To investigate this, we performed unbiased SILAC-MS-based phospho-proteomic analysis. SILAC-labelled peptides isolated from cells at 0, 4 and 8 hr time points were enriched for phosphopeptides using HILIC pre-fractionation and titanium dioxide affinity chromatography (Supplementary file 3). Over 3500 high confidence phosphorylation sites were identified with an Andromeda search score\u00a0>=\u00a030 and quantified at both the 4 and 8 hr time points. At 4 hr approximately two thirds of the changes involved dephosphorylation (Figure 1j), but these dephosphorylation events could not be attributed to decreases in protein abundance, as shown by the discordance between total protein abundance and changes in protein phosphorylation (Figure 1k).\n\nWe next identified protein phosphatases that were differentially expressed between 0 and 4 hr. We intersected the proteomic and genomic datasets, revealing 47 differentially expressed phosphatases, 22 of which were upregulated (Figure 2a). Interrogation of published datasets revealed that these phosphatases were also dynamically expressed during calcium-induced stratification of human keratinocytes (Hopkin et al., 2012) and differentiation of reconstituted human epidermis (Lopez-Pajares et al., 2015) (Figure 2\u2014figure supplement 1a,b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig2-v2.jpg)\n\n**Figure 2.:** (a)\u00a0Heatmap showing differential expression at 4, 8 and 12 hr relative to 0 hr of phosphatases that are upregulated at 4 hr in the microarray dataset. (b) Effect of knocking down the 22 phosphatases identified in (a) on clonal growth of keratinocytes. Values plotted are average % clonal growth in n\u00a0=\u00a03 independent screens with n\u00a0=\u00a03 independent cultures per screen. Green: siSCR control. Red, blue: phosphatases with statistically significant effects on colony formation are shown (red: increase; blue: decrease). Grey: no statistically significant effect. (c, d) Effect of knockdowns on clonal growth after 0, 4, 8 or 12 hr in suspension. (c) Representative dishes. (d) Quantitation of mean % clonal growth\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03 independent samples). p-values generated by unpaired T-test. (e, f) RT-qPCR quantification of TP63 (e) and TGM1 (f) mRNA levels (relative to 18 s expression) in the same conditions as in (c). n\u00a0=\u00a03 independent transfections. (g) Epidermal reconstitution assay following knockdown of DUSP6, PTPN1, PPP3CA or PTPN13. n\u00a0=\u00a02 independent transfections. Top row shows representative H and E images. Epidermal thickness was quantified in multiple fields from eight sections per replicate\u00a0\u00b1\u00a0SD relative to scrambled control (siSCR). Middle row shows staining for TP63 (pink) with DAPI nuclear counterstain (blue). % DAPI-labelled nuclei that were TP63+\u00a0was quantified in n\u00a0=\u00a02\u20133 fields per replicate. Bottom row shows staining for Ki67 (brown) with haematoxylin counterstain (blue). % Ki67+\u00a0nuclei was quantified in n\u00a0=\u00a03\u20136 fields per replicate. Error bars represent mean\u00a0\u00b1\u00a0s.d. p-values were calculated using one-way ANOVA with Dunnett's multiple comparisons test (*p<0.05; **p<0.01; ****p<0.0005; ****p<0.0001; ns\u00a0=\u00a0non significant).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a)\u00a0Heatmap showing mRNA expression of candidate phosphatases during calcium-induced stratification of primary human keratinocytes (GSE38628). (b) Heatmap showing mRNA expression of candidate phosphatases during ex vivo human epidermal reconstitution (GSE52651).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a)\u00a0Effect of phosphatase knockdown on colony formation. Values plotted are average % colony formation in three independent screens with three replicate dishes per screen. p-values were generated using a two tailedt-test. (b) Following siRNA transfection keratinocytes were seeded in collagen-coated 96-well format dishes and cultured in KSFM medium for three days. 24 hr post-transfection the culture dishes were moved into an Incucyte microscope and scanned every hour for the next 48 hr to evaluate cell growth and proliferation. Each data point is the average of three replicate screens with eight independent well scans per condition per screen. Values at each time point were normalised to the respective 0 hr time point or the first scan point. A cumulative plot is shown with the relative frequency (%) of cell doublings. (c) RT-qPCR quantification of phosphatases mRNA levels relative to 18 s RNA as a function of time in suspension, showing efficiency of the different knockdowns in the starting populations. p-values were generated by the unpaired T-test. (d) Kinetics of change in the total area occupied by colonies formed by cells recovered from suspension. (n\u00a0=\u00a03 independent samples). p-values generated by unpaired T-test. (e) Growth rate of human keratinocytes after phosphatase knockdown, calculated by fitting the data in (b) to an exponential growth curve and averaging the rates. p-values generated by one-way ANOVA (f) Sections of reconstituted epidermis from the experiments shown in Figure 2g labelled with antibodies to ITG\u03b21 and IVL, with DAPI as nuclear counterstain. Merge and individual channel images are depicted. Scale bar: 50 \u03bcm. (g) Quantification of the experiments shown in Figure 2g, showing the number of TP63+ (top panel) or Ki67+\u00a0cells (bottom panel) per \u03bcm of basement membrane. DAPI-labelled nuclei that were TP63+\u00a0were quantified in n\u00a0=\u00a02\u20133 fields per replicate. % Ki67+\u00a0nuclei were quantified in n\u00a0=\u00a03\u20136 fields per replicate. Error bars represent mean\u00a0\u00b1\u00a0s.d. p-values were calculated using one-way ANOVA. a,c,d,g. Error bars represent s.d. *p<0.05; **p<0.01; ***p<0.0005; ****p<0.0001; ns\u00a0=\u00a0non significant.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a)\u00a0RT-qPCR quantification of phosphatase mRNA levels relative to 18 s RNA upon knockdown by lentiviral-mediated shRNA one week after infection and selection. p-values were generated by one-way ANOVA. (b) Epidermal reconstitution following knockdown of DUSP6, PPTC7, PTPN1, PPP3CA or PTPN13. n\u00a0=\u00a02 independent infections. Representative H and E images. (c) Epidermal thickness was quantified in eight non-consecutive sections per biological replicate as explained in Figure 2\u2014figure supplement 4 and normalised to shSCR values. p-values were generated by one-way ANOVA. (d) Representative images of epidermis reconstituted by keratinocytes expressing shSCR or sh1DUSP6 co-stained for TP63 (yellow) and Ki67 (pink) with DAPI nuclear counterstain (blue). White asterisk shows a TP63+\u00a0Ki67 cell. (e) % Ki67-labelled nuclei that were also TP63+\u00a0was quantified in n\u00a0=\u00a05 fields per replicate. p-values generated by one-way ANOVA were\u00a0>0.05. (f) Representative images of epidermis reconstituted by keratinocytes expressing shSCR or sh1DUSP6 co-stained for TP63 (yellow) and IVL (pink) with DAPI nuclear counterstain (blue). White asterisk shows a suprabasal cell co-stained for IVL and TP63. a, c, e. Error bars represent s.d. *p<0.05; **p<0.01; ***p<0.0005; ****p<0.0001; ns\u00a0=\u00a0non-significant.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Sketch representing the automated pathway to extract epidermis thickness from tissue sections. The python script was divided into three steps. (1) Detection of tissue sections by processing from \u2018.ndpi\u2019 files. With intensity clustering, the background was suppressed and tissue sections were localised on the slide. Each section was extracted with the highest resolution and split into four vignettes. (2) The epidermis was isolated using information from H and E staining in each vignette. An automatic thresholding was applied to select only the epidermis. Potential artefacts that were small in size were suppressed by thresholding on each object\u2019s size. (3) Epidermal area was measured by pixel counting. To measure epidermal thickness, area was divided by a 1-pixel wide reduced-topology.\n\n### Identification of protein phosphatases that regulate commitment\n\nTo examine the effects on keratinocyte self-renewal of knocking down each of the 22 phosphatases identified in the screen, we transfected primary human keratinocytes with SMART pool siRNAs and measured colony formation in culture (Figure 2b; Figure 2\u2014figure supplement 2a). Live-cell imaging was used to monitor cell growth for 3 days post-transfection (Figure 2\u2014figure supplement 2b). Knocking down seven of the phosphatases significantly increased clonal growth (Figure 2b), with five phosphatases \u2013 DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA - having the most pronounced effect (p-value<0.001). Silencing of these five phosphatases also increased colony size and delayed the loss of colony forming ability in suspension (Figure 2c,d; Figure 2\u2014figure supplement 2c\u2013d). Consistent with these findings, phosphatase knockdown delayed the decline in TP63 and increase in TGM1 levels during suspension-induced differentiation (Figure 2e,f; Supplementary file 4). Knocking down each phosphatase did not have a major effect on the growth rate of keratinocytes and live-cell imaging did not reveal any apoptosis (Figure 2\u2014figure supplement 2e). Cumulatively, the effects on keratinocyte self-renewal and differentiation suggest that DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA are pro-commitment protein phosphatases.\n\nThe effects of knocking down DUSP10 at 0 hr differed from those of the other five phosphatases. DUSP10 knockdown significantly reduced clonogenicity (p-value<0.001; Figure 2b; Figure 2\u2014figure supplement 2a) and, in contrast to the other phosphatases, decreased the growth rate of keratinocytes (Figure 2\u2014figure supplement 2b,e). In addition, whereas expression of DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA declined by 8 hr in suspension, DUSP10 expression remained high (Figure 2a). Taken together, their effects on keratinocyte self-renewal and differentiation suggest that all six are commitment-associated protein phosphatases, with DUSP10 differing from the other phosphatases in potentially antagonising commitment.\n\nTo examine the effect of knocking down the pro-commitment phosphatases on the ability of keratinocytes to reconstitute a multi-layered epithelium, we seeded cells on de-epidermised human dermis and cultured them at the air-medium interface for three weeks (Figure 2g; Figure 2\u2014figure supplement 2f,g). Knockdown of DUSP6, PTPN1, PPP3CA and PTPN13 did not prevent cells from undergoing terminal differentiation, as evidenced by suprabasal expression of involucrin and accumulation of cornified cells (Figure 2g; Figure 2\u2014figure supplement 2f). However, the number of TP63-positive cells was increased, whether measured as a proportion of the total number of cells (Figure 2g) or per length of basement membrane (Figure 2\u2014figure supplement 2g). Knockdown of DUSP6, PTPN1 or PPP3CA increased epidermal thickness without increasing the proportion of proliferative, Ki67-positive cells (Figure 2g; Figure 2\u2014figure supplement 2g). Conversely, PTPN13 knockdown led to an increase in the percentage of Ki67-positive cells and a slight reduction in epidermal thickness (Figure 2g), which could reflect an increased rate of transit through the epidermal layers. In addition, Ki67 and TP63-positive cells were no longer confined to the basal cell layer of epidermis reconstituted following phosphatase knockdown but were also present throughout the viable suprabasal layers.\n\nTo complement our studies with siRNAs, which achieve transient knockdown, we performed stable knockdown of the pro-commitment phosphatases with shRNA lentiviral vectors (two different shRNAs per target; Figure 2\u2014figure supplement 3a) and performed epidermal reconstitution experiments (Figure 2\u2014figure supplement 3b,c). We also developed a tool for automated, unbiased measurements of epidermal thickness (Figure 2\u2014figure supplement 4, Source code 1). No apoptotic cells were observed in reconstituted epidermis, as evaluated by lack of Caspase-3 labelling. Consistent with the effects of siRNA-mediated knockdown, stable knockdown of DUSP6, PPTC7, PTPN1 and PPP3CA increased epidermal thickness, whereas PTPN13 knockdown did not (Figure 2\u2014figure supplement 3b,c). We also confirmed expansion of the TP63+\u00a0compartment (Figure 2\u2014figure supplement 3d). Virtually all Ki67+\u00a0cells co-expressed TP63 (Figure 2\u2014figure supplement 3d,e). Furthermore, many suprabasal cells co-expressed TP63 and IVL (Figure 2\u2014figure supplement 3f). Thus, on both transient and stable knockdown, the transition from the stem to the differentiated cell compartment was disturbed (Figure 2\u2014figure supplement 3f).\n\n### Regulation of ERK MAPK and AP1 transcription factors\n\nTo identify the signalling networks affected by upregulation of phosphatases during commitment, we performed GO analysis of ranked peptides that were dephosphorylated at 4 hr. The top enriched pathways were ErbB1 signalling, adherens junctions, insulin signalling and MAPK signalling (Figure 3a). Several of the proteins we identified are components of more than one pathway (Figure 3b) and all have been reported previously to regulate epidermal differentiation (Connelly et al., 2010; Haase et al., 2001; Kolev et al., 2008; Trappmann et al., 2012; Scholl et al., 2007). In particular, constitutive activation of ERK delays suspension-induced differentiation (Haase et al., 2001).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0Gene Ontology (GO) term enrichment analysis of ranked peptides dephosphorylated at 4 hr. (b) Venn diagram showing intersection of signalling pathways regulated at 4 hr. (c) Top 15 dephosphorylated peptide sites at 4 hr, showing ratio between change in phospho-peptides and change in total protein. Highlighted in orange are phosphorylations\u00a0on\u00a0MAPKs. (d, e) Representative western blot (d) and quantification (e) showing phospho-ERK1/2 and total ERK1/2 in cells harvested after 0, 4, 8 and 12 hr in suspension. Cyclophilin B: loading control. (f) Heatmap represents mRNA expression (relative to 18 s RNA) of AP1 transcription factor superfamily members during suspension-induced differentiation post-phosphatase knockdown (n\u00a0=\u00a03; values plotted are means of three independent transfections). See Supplementary file 6 for p-values generated by two-way ANOVA. (g\u2013h) Representative western blot, with quantitation, of phospho-ERK1/2 and total ERK1/2 in suspended cells following DUSP10 knockdown. siSCR and loading controls are shown. (i) Heatmap showing mRNA expression (relative to 18 s mRNA) of JUN, FOS and MAF family members after DUSP6 and DUSP10 knockdown (values plotted are means of three independent transfections normalised against scrambled control; see Supplementary file 7 for p-values generated by two-way ANOVA). (j) Clonal growth (representative dishes and quantification) following doxycycline-induced over-expression of DUSP10, DUSP6 and mutant DUSP6C293S in primary keratinocytes (n\u00a0=\u00a03 independent cultures). p-values were calculated using one-way ANOVA with Dunn's multiple comparisons test (*p<0.05; ns\u00a0=\u00a0non significant).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a, b)\u00a0Western blot (a) and RT-qPCR measurements (b) of DUSP10 knockdown by SMART pool siRNA. p-values were generated by one-tail t-test. (c, d) Western blot of phospho-p38 and total p38 in suspended cells following DUSP10 knockdown. siSCR, cyclophilin B loading control and quantitation are shown. (e) RT-qPCR quantification of doxycycline-induced over-expression of DUSP6, mutant DUSP6C293S and DUSP10 relative to 18 s mRNA. Cells were treated with 1 \u00b5g/ml doxycycline for 24 hr. p-values were generated by a one-tail t-test. (f) RT-qPCR quantification of Cumate-induced over-expression of DUSP6 and mutant DUSP6C293S relative to 18 s mRNA. p-values were generated by one-way ANOVA. (g) Representative dishes showing effects of overexpressing wild type and mutant DUSP6 on clonal growth (representative of n\u00a0=\u00a03 dishes). (b, e, f) Error bars represent s.d. *p<0.05; ***p<0.0005; ****p<0.0001; ns\u00a0=\u00a0non significant.\n\nWe next ranked protein phosphorylation sites according to the log2-fold decrease at 4 hr, plotting the ratio between the change in phosphorylation sites and the change in total protein (Supplementary file 5). To specifically identify dephosphorylation events, we excluded from the ranking phosphorylations that remained constant while total protien abundance increased by more than 0.5 in log2. Consistent with the predicted dynamic interactions between signalling pathways (Figure 3b), phosphorylation sites on MAPK1 (ERK2) and MAPK3 (ERK1) were identified in the top 15 most decreased sites (Figure 3c). Other proteins in the top 15 included components or regulators of the cytoskeleton (FLNA), Rho signalling (DOCK5, ARHGEF16, CIT) and EGFR signalling (EPS8), again consistent with the GO terminology analysis.\n\nWe performed western blotting to confirm that ERK1/2 activity was indeed modulated by suspension-induced terminal differentiation and by the candidate pro-commitment phosphatases (Figure 3d,e). As reported previously, the level of phosphorylated ERK1/2 diminished with time in suspension (Janes et al., 2009) (Figure 3d). siRNA-mediated knockdown of DUSP6, PPTC7, PTPN1, PTPN13 or PPP3CA resulted in higher levels of phosphorylated ERK1/2 relative to the scrambled control, both at 0 hr and at some later time points (Figure 3d,e). These effects are consistent with the known requirement for ERK MAPK activity to maintain keratinocytes in the stem cell compartment (Trappmann et al., 2012).\n\nTranscriptional regulation of epidermal differentiation is mediated by the Activator Protein 1 (AP1) family of transcription factors (Eckert et al., 2013), which is the main effector of the MAPK and ErbB signalling cascades (Chang and Karin, 2001). Quantification of the levels of AP1 transcripts during suspension-induced terminal differentiation revealed that different AP1 factors changed with different kinetics, as reported previously (Gandarillas and Watt, 1995) (Figure 3f). Notably, the level of several members of the MAF subfamily of AP1 factors (MAF, MAFB and MAFG) significantly increased during differentiation, consistent with recent evidence that they mediate the terminal differentiation program in human keratinocytes (Lopez-Pajares et al., 2015). In line with these observations, knockdown of individual pro-commitment phosphatases reduced the induction of MAF AP1 factors in suspension (Figure 3f; Supplementary file 6). These experiments are consistent with a model whereby induction of phosphatases in committed keratinocytes causes dephosphorylation of ERK MAPK and prevents the increase in expression of AP1 transcription factors that execute the terminal differentiation program.\n\nGiven that DUSP10 knockdown differed from the other protein phosphatases in decreasing the clonogenicity (Figure 2b; Figure 2\u2014figure supplement 2a) and growth rate of keratinocytes (Figure 2\u2014figure supplement 2b,e), we examined the effect of DUSP10 knockdown on ERK1/2 activity and AP1 factor expression. Unlike knockdown of DUSP6, PPTC7, PTPN1, PTPN13 or PPP3CA, knockdown of DUSP10 (Figure 3\u2014figure supplement 1a,b) did not increase ERK1/2 activity (Figure 3g,h). Consistent with its known regulation of p38 MAPK (Caunt and Keyse, 2013), DUSP10 knockdown increased phospho-p38 at 0 hr; however, this effect was not observed at later times in suspension (Figure 3\u2014figure supplement 1c,d). When the effects of DUSP10 knockdown on AP1 transcription factors were compared with those of DUSP6, it was clear that these phosphatases differentially regulated several AP1 factors, including members of the JUN, FOS and MAF subfamilies (Figure 3i; Supplementary file 7).\n\nWe confirmed the differing effects of DUSP10 and DUSP6 on cell fate by using either Cumate or Doxycycline inducible overexpression in human keratinocytes (Figure 3j; Figure 3\u2014figure supplement 1e\u2013g). Whereas overexpression of DUSP10 increased colony formation, overexpression of DUSP6 reduced clonal growth (Figure 3j). A dominant negative mutant of DUSP6 (C293S) lacking phosphatase activity (Okudela et al., 2009) had no effect (Figure 3j; Figure 3\u2014figure supplement 1f,g).\n\n### A protein phosphatase interaction network acts as a switch to transition cells between the stem and differentiated cell compartments\n\nWe next examined whether the six phosphatases we identified experimentally could form a single phosphatase-phosphatase interaction network governing commitment and differentiation. To do so, we employed a Boolean network abstraction and constructed a model in which all phosphatases, DUSP6, PPTC7, PTPN1, PTPN13, PPP3CA and DUSP10, were allowed to interact either positively or negatively (Figure 4\u2014figure supplement 1a). For this we utilised the concept of an Abstract Boolean Network (ABN) (Yordanov et al., 2016), which by assigning definite or possible interactions, implicitly defines approximately 1017 concrete different Boolean network models (Figure 4\u2014figure supplement 1a). In accordance with this modelling formalism, we abstracted discretised gene expression levels as \u2018on\u2019 or \u2018off\u2019 if their mean expression was respectively higher or similar/lower than the average of all genes (Supplementary file 8). From the set of all possible Boolean\u00a0networks (the ABN), we sought to test whether there would be a network consistent with the discretised gene expression states over the differentiation time course. To this end, we employed the automated reasoning approach encapsulated in the tool RE:IN, as described by Dunn et al., 2014. We encoded a set of experimental constraints comprising the different time points analysed during suspension-induced differentiation (Figure 1a). These constraints define whether each gene should be on or off at each time step along the differentiation trajectory (Materials and methods). Using this approach, we formally deduced that a single Boolean network was unable to recapitulate the measured gene expression dynamics (Figure 4\u2014figure supplement 1a).\n\nAs we were not able to find a single interaction network sufficient\u00a0to model the discretised gene expression states, we further investigated each individual time point to identify whether the network topology might differ over the time course in suspension. To obtain the necessary experimental data to identify critical network interactions, we performed individual knockdowns of the phosphatases after 0, 4, 8 or 12 hr in suspension. Next, we measured by RT-qPCR the effect that each individual knockdown had on the mRNA level of any of the other phosphatases (Figure 4\u2014figure supplement 2a) at each time point. We used the fold-change of the interaction to inform its directionality (activating or inhibitory) only if it was statistically significant (p-value<0.05, Supplementary file 9). This led to the inferred mechanistic networks depicted in Figure 4a, where the node colours show fold-change in each phosphatase with time in suspension, relative to the 0 hr time-point. Arrows indicate positive effects on expression and T-bars show inhibitory effects. These networks reveal different interactions at play at each of the time points, suggesting that the network topology reconfigures during commitment and differentiation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0Colours represent log2 fold-change in phosphatase mRNA expression relative to 0 hr (values plotted are means of three independent experiments normalised against siSCR control). (b) Experimental observations that are encoded as constraints on the Boolean network trajectories. We defined three experimental constraints (gene expression changes during suspension-induced differentiation in the absence of pharmacological inhibitors, as well as under TSA and PKCi treatments). Each constraint encodes discrete gene expression states at the indicated time steps. For cells in the absence of drugs we imposed a switching scheme, whereby the system must change the representative network in order to achieve the expression constraints. Yellow boxes indicate the network that represents the system at that step; blank boxes for a given step (column) indicate that we did not impose a specific network, so the system can remain in the current network or switch forwards. Active means the gene is considered to be \u2018on\u2019 at that step, inactive means to be \u2018off\u2019 at that step. The discretisation is available in Supplementary file 9. (c) Networks able to satisfy the model constraints of the Boolean formalism in (b) are depicted. Solid lines show interactions already calculated in (a), while dashed lines are possible interactions inferred from Figure 4\u2014figure supplement 1. See also Supplementary file 8 and 9. (d) Heatmap represents mRNA expression (relative to 18 s mRNA) of individual phosphatases in cells treated in suspension for 12 hr with PKCi or TSA (values plotted are the means of three independent experiments normalised against vehicle-treated control). (e, f) Representation of commitment as two saddle-node bifurcations in a direction xi of the state space for control cells or cells treated with PKCi or TSA. In the control both stem and differentiated cell states are stable (attractors), while commitment is an unstable state. Since the 0\u00a0hr\u00a0network is able to reach the expression constraint for PKCi at 12 hr, we hypothesise that on PKCi treatment, the only stable state is the stem state. On TSA treatment there is a mandatory switch from the 0 hr network but the 12 hr network cannot be reached at any time point; we therefore hypothesise that commitment becomes a stable state while the stem and differentiated cell states are unstable. (g) 3D-volume rendered confocal images of wholemounts of human epidermis labelled with antibodies against commitment phosphatases or ITG\u03b21 (green) and counterstained with DAPI (blue). The distribution of each phosphatase relative to ITG\u03b21 is also shown graphically. (h) 3D-volume rendered confocal images of primary keratinocytes cultured on PDMS topographic substrates and labelled with antibodies to DUSP10 and DUSP6. Scale bars: 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a)\u00a0Single ABN with all possible interactions among the six commitment phosphatases. (b) RE:SIN representation of the same networks as in Figure 4a. (c) RE:SIN representation of the networks as in b) (solid lines) and additional possible interactions (dashed lines) inferred from Figure 4\u2014figure supplement 2d,e.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a)\u00a0Heatmaps showing the effect of knocking down individual phosphatases on mRNA levels of other phosphatases with time in suspension (0, 4, 8, 12 hr). RT-qPCR is relative to 18 s mRNA (n\u00a0=\u00a03 independent transfections; see Supplementary file 9 for p-values generated by two-way ANOVA with Dunnett's multiple comparisons test). (b) Effects of TSA and PKCi on clonogenicity of keratinocytes recovered following suspension in methylcellulose for 12 hr. Representative dishes of n\u00a0=\u00a03. (c) mRNA levels of IVL, TGM, ITG\u03b16, and TP63 in cells held in suspension for 12 hr. Cells were treated with TSA, PKCi or DMSO (vehicle control) (n\u00a0=\u00a03 independent treated cultures with two technical replicates each). p-values for the comparisons were generated by one-way ANOVA. (d) Western blots showing phosphatase levels in primary keratinocytes upon knockdown of scrambled control (siSCR), DUSP6, PPTC7, PTPN1, PTPN13 or PPP3CA and suspension for 0, 4, 8 or 12 hr. Cyclophilin B: loading control. (e) RT qPCR quantification of phosphatase mRNA levels (relative to 18 s mRNA) following doxycycline-induced over-expression of DUSP6, mutant DUSP6C293S and DUSP10. Cells were treated with 1 \u00b5g/ml doxycycline for 8, 24 or 48 hr (n\u00a0=\u00a03 independent cultures; see Supplementary file 10 for p-values generated by two-way ANOVA with Dunnett's multiple comparisons test).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27356/elife-27356-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a, b)\u00a03D-volume rendered confocal images of human epidermal wholemountslabelled with antibodies against DUSP6 (red, a; green, b) and ITG\u03b16 (green, a) or DUSP10 (red, b). Wholemounts were counterstained with DAPI (blue).\n\nIn light of these inferred mechanistic interactions, we again employed a Boolean network abstraction to explore the dynamics of epidermal stem cell commitment. Using the discretised gene expression levels defined above (Supplementary file 8), we sought to test whether the network topologies derived for each time point (Figure 4a,b) were consistent with the data. For this we used an extension of RE:IN, called RE:SIN, which allows the user to explore switching networks, as described by Shavit et al. (2016). RE:SIN allowed us to determine whether the inferred networks could recapitulate the dynamic changes in gene expression by similarly encoding these as expected states on the commitment trajectory (Figure 4\u2014figure supplement 1b). We first found that the networks inferred by the genetic knockdown experiments could not satisfy the experimental constraints. This suggested that there were additional interactions between the phosphatases. To identify such interactions, we analysed the effect that each individual knockdown had on the protein levels of the other phosphatases (Figure 4\u2014figure supplement 2d; Supplementary file 10) and the effect of DUSP6 and DUSP10 overexpression on phosphatase mRNA levels (Figure 4\u2014figure supplement 2e). We included those as possible interactions, again using the concept of an ABN at each time step (Figure 4\u2014figure supplement 1c; Supplementary file 8).\n\nBy defining an ABN at each time point that incorporates the possible phosphatase interactions deduced from the knockdown experiments, we found that the experimental constraints could be satisfied. Furthermore, our analysis revealed which of the possible interactions were required to meet these constraints. These could therefore be considered as definite interactions (Figure 4c, compare with Figure 4\u2014figure supplement 1c). We thus used the approach encapsulated in RE:SIN to uncover the networks governing differentiation at each time point.\n\nThe Boolean network analysis indicates a key role for DUSP6 at commitment (4 hr), when DUSP6 expression is positively regulated by all the other phosphatases in the network and by a self-activating loop (Figure 4a). In contrast, at all other time points the interactions between individual phosphatases were predominantly negative. Several phosphatases, including PTPN1 and PTPN13, showed positive autoregulation at one or more time point. It is also notable that DUSP10 was predominantly negatively regulated by other phosphatases, except at 4 hr, when it was positively regulated by PTPN1 and by an autoregulatory loop (Figure 4a).\n\nTo test the robustness of the network, we examined the effects of treating keratinocytes with the histone deacetylase inhibitor Trichostatin A (TSA) and a Protein Kinase C inhibitor (PKCi). Both drugs blocked suspension-induced terminal differentiation, as measured by expression of IVL and TGM1, and prevented downregulation of ITG\u03b16 (Figure 4\u2014figure supplement 2b,c). However, cells treated with TSA still underwent commitment, as evaluated by loss of colony-forming ability and downregulation of TP63, whereas those treated with the PKC inhibitor did not. At 12 hr in suspension, both drugs reduced expression of DUSP10 and PTPN13 and increased expression of DUSP6 and PPTC7 relative to untreated cells; however, they differentially affected PPP3CA and PTPN1 (Figure 4d).\n\nWe next used our modelling approach to test whether network switching still occurs under PKCi and TSA treatment using the constrained ABNs that we derived for each stage. As before, we discretised gene expression levels from these experiments as \u2018on\u2019 or \u2018off\u2019 (Supplementary file 8). Under both treatments, we found that we could not transit through the networks while respecting the expected expression states, corroborating the experimental findings that terminal differentiation is blocked in these conditions. The PKCi phosphatase expression pattern at 12 hr was compatible with the phosphatase interaction network derived at 0 hr, supporting the conclusion that PKCi arrests cells in the stem cell compartment. In TSA-treated cells the network must switch from that derived at 0 hr to that derived at 4 hr, and subsequently to that derived at 8 hr, or straight from 0 hr to 8 hr. Neither PKCi nor TSA treatment resulted in an expression pattern compatible with the network derived at 12 hr for untreated cells, consistent with the inhibition of differentiation.\n\nThe above findings can be summarised using dynamical systems terminology. Epidermal differentiation can be described by two saddle-node bifurcations (Figure 4e,f). We start with a single minimum that corresponds to a stable state: the stem cell. Then we pass through a first saddle-node bifurcation where we have two minima, so the system can switch from one state to the other and this corresponds to commitment. Next the global minimum changes and we finally have a second saddle-node bifurcation that leads again to a single steady state, which corresponds to the differentiated cells (Zhang et al., 2012). From here, the stem cell state and the terminally differentiated state emerge as stable states, while commitment is inherently unstable and serves as a biological switch.\n\n### Protein phosphatase expression is patterned within human epidermis and responds to topographical cues\n\nGiven the role of the protein phosphatases in regulating commitment of keratinocytes in suspension, we examined whether phosphatase expression was also subject to spatial regulation, since spatiotemporal coordination of stem cell behaviour contributes to epidermal homeostasis (Doup\u00e9 and Jones, 2012). By wholemount labelling the basal layer of sheets of human epidermis (Jensen et al., 1999), we found that DUSP6, PTPN1 and PPP3CA were most highly expressed in cells with the highest levels of \u03b21 integrin or \u03b16 integrin, which correspond to stem cell clusters (Jensen et al., 1999) (Figure 4g; Figure 4\u2014figure supplement 3a,b). In contrast, PPTC7 was enriched in the integrin-low regions, while PTPN13 and DUSP10 were more uniformly expressed throughout the basal layer (Figure 4g; Figure 4\u2014figure supplement 3a,b). The inverse relationship between the patterns of PPP3CA and PPTC7 expression is in good agreement with the network analysis demonstrating negative regulation of PPP3CA by PPTC7 in undifferentiated keratinocytes (0 hr; Figure 4a).\n\nThe patterned distribution of phosphatases could be recreated in vitro by culturing keratinocytes on collagen-coated PDMS elastomer substrates that mimic the topographical features of the human epidermal-dermal interface (Viswanathan et al., 2016). We observed clusters of cells with high levels of DUPS6 on the tops of the features, where stem cells expressing high levels of \u03b21 integrins accumulate (Viswanathan et al., 2016) (Figure 4h). In contrast, DUSP10 was uniformly expressed regardless of cell position (Figure 4h). These results indicate that the phosphatases are subject to spatial regulation that is independent of signals from cells in the underlying dermis.\n\n## Discussion\n\nWe have presented evidence that epidermal commitment is a biological switch controlled by a network of protein phosphatases that are regulated spatially and temporally. Applying Boolean network analysis to our experimental data, we were unable to recapitulate the observed changes in phosphatase gene expression using a single ABN, but we could do so by implementing a scheme of network switching. This led us to conclude that the interactions among the commitment phosphatases change in the course of differentiation. The negative feedback loops predominating at 0, 8 and 12 hr are known to result in stable phenotypes because the network is able to counteract additional inputs (Zeigler et al., 2000). However, at 4 hr all but one of the interactions were positive. Positive feedback loops lead to instability, because the network amplifies any inputs it receives. This supports the concept of commitment as an unstable state, which aligns with the experimental evidence of that happening within a defined temporal window.\n\nThe key role of DUPS6 at commitment fits well with its upregulation by Serum Response Factor, which is known to control keratinocyte differentiation (Connelly et al., 2010), and its importance in controlling the activation kinetics and dose-response behaviour of ERK MAPK signalling (Bl\u00fcthgen et al., 2009). However, the involvement of multiple phosphatases in commitment may protect cells from undergoing premature terminal differentiation. Furthermore, their patterned distribution within the epidermal basal layer would be consistent with different phosphatases regulating commitment in different positions along the basement membrane, and with the ability of different external stimuli to trigger differentiation via different intracellular pathways (Watt, 2016).\n\nThe upregulation of basal layer markers in the suprabasal epidermal layers on knockdown of pro-commitment phosphatases mimics features of psoriatic lesions in which ERK is known to be upregulated (Haase et al., 2001). In particular, in the epidermal reconstitution assays there was suprabasal expression of Ki67 and TP63, with TP63+\u00a0cells co-expressing IVL. These observations lead us to speculate that commitment is abnormally stabilised in psoriasis, as observed in TSA treated keratinocytes in suspension. Given that protein phosphatases within the commitment network are known to regulate expression of inflammatory cytokines (Caunt and Keyse, 2013), deregulated phosphatase expression could potentially contribute to the pathophysiology of psoriasis.\n\nIn conclusion, the simple experimental model of suspension-induced keratinocyte differentiation has enabled us to capture some of the complex transcriptional and post-translational events that control the transition from the stem to the differentiated cell compartment. We now have the opportunity to explore, systematically, the key upstream and downstream regulators of protein phosphatases during epidermal homeostasis, injury and disease.\n\n## Materials\u00a0and\u00a0methods\n\n### Cell culture\n\nPrimary human keratinocytes (strain km) were isolated from neonatal foreskin and cultured on mitotically inactivated 3T3-J2 cells in complete FAD medium, containing one part Ham's F12, three parts Dulbecco's modified eagle medium (DMEM), 10\u22124 M adenine, 10% (v/v) FBS, 0.5 \u03bcg/ml hydrocortisone, 5 \u03bcg/ml insulin, 10\u221210 M cholera toxin and 10 ng/ml EGF, as described previously (Gandarillas and Watt, 1995). Prior to suspension-induced differentiation in methylcellulose (Adams and Watt, 1989) we enriched for stem cells by filtering the disaggregated keratinocytes twice through a 40-\u00b5m sterile membrane. For knockdown or overexpression experiments, keratinocytes were grown in Keratinocyte-SFM medium (Gibco) supplemented with 0.15 ng/ml EGF and 30 \u03bcg/ml BPE. All isoforms of PKC were inhibited using 5 \u03bcM GF 109203X (Tocris; at lower concentrations GF190203X preferentially inhibits the -\u03b1 and -\u03b2 isoforms) and histone deacetylase was inhibited with TSA (Sigma Aldrich, UK). PDMS substrates that mimic the topography of the epidermal-dermal junction were generated as described previously (Viswanathan et al., 2016).\n\n### Genome-wide expression profiling\n\nGenome-wide expression profiling was performed using the Illumina BeadArray platform and standard protocols. Data were processed using R (http://www.r-project.org/) or Genespring GX13.1 software. The gene expression data are deposited in the GEO databank (GSE73147).\n\n### Computational analysis of gene expression datasets\n\nMicroarray initial processing and normalisation were performed with BeadStudio software. BeadChip internal p-values (technical bead replicates) were used to identify genes significantly expressed above the background noise. To filter out genes with signals that were not significant, a p-value of 0.05 was used as the cut-off value and only genes with a p-value<0.05 in at least one sample passed the filter. From the original set of 34,685 gene targets, 23,356 targets met this criterion. The data were imported into GeneSpring v13, normalised using quantile normalisation and the biological replicates averaged for subsequent analysis. We performed pairwise comparison between 0 hr and 4, 8 and 12 hr. Genes showing a fold change higher than two compared to control (and both p-values were significant) were subjected to GO analysis with GeneSpring v13 (152 genes between 4 hr and 0 hr, 553 between 8 and 0 hr, 1136 genes between 12 and 0 hr). Hierarchical clustering based on Pearson\u2019s uncentered distance was performed on time course gene expression data and the results presented as a heatmap. Additionally, t-SNE plots were generated for the transcriptomics data using the t-SNE package for R.\n\n### Analysis of mechanistic networks\n\nA two-way ANOVA with multiple comparisons corrected using the Holm-Sidak test was used to identify the statistically significant effects of single phosphatase knock-down on the expression of the other phosphatases (pij, Supplementary file 9). The weight of each edge was calculated as the inverse p-value for the respective interaction (wij\u00a0=\u00a01/pij). For simplicity, we kept only the significant links (p-value<0.05). The networks depicted in Figure 4a were drawn with Cytoscape (cytoscape.org, V3.2.1).\n\n### Dynamic Boolean network analysis\n\nThe Boolean network analysis was performed using RE:IN and RE:SIN software, which is designed to encode and test whether a single or set of Boolean networks are consistent with observed changes in gene expression states. The methodology has been described previously (Dunn et al., 2014;\u00a0Yordanov et al., 2016; Shavit et al., 2016). Briefly, a set of possible and definite interactions comprises an Abstract Boolean Network (ABN), which implicitly defines a set of concrete Boolean networks. Each concrete network has a unique topology defined by the different combinations of the possible interactions, which can be present or absent. This allows the user to explore alternative model topologies, and to test the requirement for different interactions that are suggested by experimental data. The software allows the user to seek the set of concrete Boolean network models that are consistent with a set of experimental constraints, and then to use this constrained set of models to make predictions of untested behaviour. Experimental constraints are defined as expected states along network trajectories (Figure 4b), which are constructed from discretised gene expression patterns. The software is freely available to use and can be accessed together with tutorials and FAQ at research.microsoft.com/rein.\n\nWe considered Boolean networks with synchronous updates, such that each gene in the network updates at each step in the network trajectory. Logical update functions for each gene, which define how the gene switches on or off in response to its regulators, were as defined by Yordanov et al., 2016. We first used RE:IN to test whether a single network (one that does not switch along the differentiation trajectory) is consistent with the observed changes in gene expression. We tested all possible single networks by allowing possible positive and negative interactions between each pair of genes. None of these networks was found to be consistent with the gene expression changes. We next constructed a switching problem in which we defined four ABNs, which individually correspond to the time points measured in our knockdown experiments. We defined the allowable network switching to be monotonic: networks can progress forward in time (i.e. 0 hr to 4 hr, 0 hr to 8 hr etc.) but not backwards (i.e. 8 hr cannot switch to 4 hr or 0 hr). We then used RE:SIN to test whether it was possible to find a sequence of networks that allowed the gene expression changes to be satisfied. We found that this was possible, and, furthermore, identified interactions that were required/disallowed to meet the constraints (Figure 4c).\n\n### Defining constraints for Boolean network analysis\n\nThe network governing differentiation must be consistent with observed changes in gene expression patterns over time. To investigate whether a given network could recapitulate the observed behaviour, we defined the expected states along a differentiation trajectory starting from the initial gene expression state at 0 hr. Three experimental constraints were defined, corresponding to measured gene expression changes at specific time points during suspension-induced differentiation, PKC inhibition and TSA treatment (Figure 4b). Individual gene expression measurements were discretised as \u2018on\u2019 or \u2018off\u2019 if their mean expression was respectively higher or similar/lower than the average of all genes. We set one step in the network trajectory to correspond to 1\u00a0hr in the time course, such that we defined expected gene expression states at 0, 4, 8 and 12 hr.\n\n### Generation and analysis of SILAC LC-MS/MS datasets\n\nA pre-confluent keratinocyte culture was split into two separate cultures with FAD-lysine-arginine medium (Sigma) differentially supplemented either with K0R0 or with K8R10 (stable isotopes of amino acids Lysine and Arginine; Cambridge Isotope Laboratories) (Ly et al., 2014). FCS used for SILAC medium was also depleted of Lysine and Arginine (Sigma). Cells were grown in SILAC medium for 5\u20136 days to reach 70\u201380% confluence and later harvested for downstream assays. Light labelled cells served as the 0 hr sample whereas heavy labelled cells were suspended in methylcellulose and harvested at 4, 8 and 12 hr. Cell extracts prepared from 0 h cells were mixed individually with 4, 8 and 12 hr samples at a 1:1 ratio of total protein. The mixed samples were then subjected to mass spectrometry (MS).\n\nFor measurement of protein abundance changes by SILAC, lysates containing\u00a0~80 \u00b5g protein were prepared in LDS sample buffer containing reducing agent (TCEP). Proteins were separated by electrophoresis on a 4\u201312% Bis-Tris NuPAGE gel, which was Coomassie-stained and cut into eight equally sized gel slices. Gel-embedded proteins were reduced with TCEP, alkylated with iodoacetamide, and trypsin-digested to release peptides. Peptides were extracted from gels using 50% acetonitrile (ACN) containing 5% formic acid (FA), dried and resuspended in 5% FA. Peptides were then analysed by LC-MS/MS on a Dionex RSLCnano coupled to a Q-Exactive Orbitrap classic instrument. Specifically, peptides were loaded onto a PepMap100 75 \u00b5m x 2 cm trap column, which was then brought in-line with a 75 \u00b5m x 50 cm PepMap-C18 column and eluted using a linear gradient over 220 min at a constant flow rate of 200 nl/min. The gradient composition was 5% to 35% B, where solvent A\u00a0=\u00a02% ACN+0.1% FA and solvent B\u00a0=\u00a080% ACN+0.1% FA. Peptides were eluted with a linear elution gradient (5% B to 35% B) over 220 min with a constant flow rate of 200 nl/min. An initial MS scan of 70,000 resolution was acquired, followed by data-dependent MS/MS by HCD on the top 10 most intense ions of\u00a0\u22652+ charge state at 17,500 resolution.\n\nFor phosphoenrichment analysis, lysates containing\u00a0~2 mg of protein were chloroform:methanol-precipitated. Pellets were resuspended in 8\u00a0M urea in digest buffer (0.1 M Tris pH 8\u00a0+\u00a01 mM CaCl2), diluted to 4 M urea with additional digest buffer, and digested with Lys-C for 4 hr at 37\u00b0C. The digests were diluted to 1\u00a0M urea and trypsin-digested overnight at 37\u00b0C. Digests were then acidified and desalted using SepPak-C18 vacuum cartridges. Desalted peptides were resuspended in mobile phase A for HILIC (80% ACN\u00a0+\u00a00.1% TFA). HILIC chromatography was performed using a Dionex Ultimate 3000 with a TSK Biosciences Amide-80 column (250 \u00d7 4.6 mm) (Di Palma et al., 2013; McNulty and Annan, 2008; Navarro et al., 2011). Peptides were eluted using an exponential gradient (80% B to 60% B) composed of A (above) and B (0.1% TFA) at 0.4 ml/min over 60 min. 16 fractions were collected from 25 to 60 min. These fractions are enriched for hydrophilic peptides, including phosphopeptides. The fractions were dried before further phosphoenrichment by titanium dioxide (TiO2).\n\nFor TiO2 enrichment, HILIC fractions were resuspended in loading buffer (70% ACN\u00a0+\u00a00.3% lactic acid\u00a0+\u00a03% TFA). 1.25 mg of TiO2 (GL Sciences) was added to each fraction and incubated for 10 min to bind phosphopeptides. Beads were washed with loading buffer, and two wash buffers, composed of (1) 70% ACN\u00a0+\u00a03% TFA and (2) 20% ACN\u00a0+\u00a00.5% TFA. Phosphopeptides were eluted in two steps, first with 4% of ammonium hydroxide solution (28% w/w NH3) in water for 1 hr and again with 2.6% of ammonium hydroxide solution in 50% ACN overnight. Elutions were collected, dried, resuspended in 5% FA and analysed by LC-MS/MS. The LC-MS analysis was performed similarly to above with the following modifications: peptides were chromatographed on an EasySpray PepMap 75 \u00b5m x 50 cm column, and a \u2018Top30\u2019 method was used where the top 30 most intense ions were chosen for MS/MS fragmentation. Raw data were then processed using MaxQuant, which implements the Andromeda search engine, for peptide and protein identification and SILAC quantitation.\n\nFor the proteomics dataset, 1155 out of 2024 proteins had a significant p-value<0.05 (calculated in MaxQuant). To identify differentially expressed proteins between time 0 and 4, 8 and 12 hr, we collected per time point the proteins whose absolute ratios were\u00a0>0.5. For each time point, the proteins were then split according\u00a0to\u00a0whether the ratio was positive or negative. Six lists were annotated for GO terminology using GeneSpring. The extensive list of GO-terms was submitted to Revigo (Supek et al., 2011) to reduce complexity and the resulting GO-categories depicted in Figure 1\u2014figure supplement 1g\u00a0Figure 1f. The mass spectrometry proteomics data have been deposited with the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD003281.\n\n### siRNA nucleofection\n\nsiRNA nucleofection was performed with the Amaxa 16-well shuttle system (Lonza). Pre-confluent keratinocytes were disaggregated and resuspended in cell line buffer SF. For each 20 \u03bcl transfection (program FF-113), 2\u00a0\u00d7\u00a0105 cells were mixed with 1\u20132 \u03bcM siRNA duplexes as described previously (Mulder et al., 2012). Transfected cells were incubated at ambient temperature for 5\u201310 min and subsequently replated in pre-warmed Keratinocyte-SFM medium until required for the downstream assay. SMART pool ON-TARGET plus siRNAs (Ambion/GE Healthcare) were used for gene knockdowns. Each SMART pool was a mix of four sets of RNAi oligos. The sequences of the siRNA oligos are provided in the Supplementary file 11.\n\n### shRNA infection\n\nshRNA lentiviral vectors were purchased from Sigma-Aldrich (Mission shRNA). Two shRNAs per target were chosen. Their sequences are listed in Supplementary file 12. Primary keratinocytes were transduced with lentiviral particles for 48 hr, before being subjected to 2 \u03bcg/ml Puromycin selection for 72 hr. Cells were then expanded for experimental analysis.\n\n### Doxycycline and cumate inducible overexpression\n\nFor the Doxycycline inducible system we used the pCW57-GFP-2A-MCS lentiviral vector (gift from Adam Karpf; Addgene plasmid # 71783). Primary keratinocytes were transduced with lentiviral particles containing protein expression vector encoding genes for wild-type DUSP6, mutant DUSP6C293S and DUSP10. 2 days post-transduction, cells were subjected to 2 \u03bcg/ml Puromycin selection for 3 days and then 1 \u00b5g/ml Doxycycline was added to the growth medium.\n\nFor Cumate induction, we used the lentiviral QM812B-1 expression vector (System Biosciences). Cells were transduced and selected as described for the Doxycycline system and protein expression was induced by addition of 30 \u00b5g/ml Cumate solution to the growth medium.\n\n### Clonogenicity assays\n\nOne-hundred, 500 or 1000 keratinocytes were plated on a 3T3 feeder layer per 10 cm diameter\u00a0dish or per well of a six-well dish. After 12 days, feeders were removed and keratinocyte colonies were fixed in 10% formalin (Sigma) for 10 min then stained with 1% Rhodanile Blue (1:1 mixture of Rhodamine B and Nile Blue A [Acros Organics]). Colonies were scored using ImageJ and clonogenicity was calculated as the percentage of plated cells that formed colonies.\n\n### Skin reconstitution assays\n\nPre-confluent keratinocyte cultures (km) were disaggregated and transfected with SMART pool siRNAs or non-targeting control siRNAs, or with lentiviral shRNAs. 24 hr post-siRNA transfection or\u00a0>7 days post-shRNA infection, keratinocytes were collected and reseeded on irradiated de-epidermised human dermis (Sen et al., 2010) in six-well Transwell plates with feeders and cultured at the air\u2013liquid interface for 3 weeks. The cultures were then fixed in 10% neutral buffered formalin (overnight), paraffin embedded and sectioned for histological staining. 6 \u03bcm thick sections were labelled with haematoxylin and eosin or appropriate antibodies. H and E stained images were acquired with a Hamamatsu slide scanner and analysed using NanoZoomer software (Hamamatsu).\n\n### Automated analysis of skin reconstitution assays\n\nH and E stained sections were scanned with a Hamamatsu slide scanner and analysed in Python. Briefly, tissue sections were automatically detected based on k-means segmentation, and colours were rebalanced. The epidermis was then isolated by colour separation (extraction of haematoxylin color channels by a deconvolution algorithm) (Ruifrok and Johnston, 2001). After performing an automatic thresholding, epidermal area was measured by pixel counting. To measure epidermal thickness, the area was divided by a 1-pixel wide reduced-topology (van der Walt et al., 2014). Full script is available as Supplementary Source Code 1.\n\n### Immunofluorescence staining of cultured cells and reconstituted skin\n\nFor IVL staining of cells in suspension, cells were recovered from methylcellulose, spun down onto a slide using a Cytospin and then fixed with 4% paraformaldehyde\u00a0and\u00a0permeabilised. Sections of paraffin embedded reconstituted skin were dewaxed, rehydrated and subjected to heat-mediated antigen retrieval. Immunofluorescence labelling of cells and sections was performed with the appropriate antibodies. Wherever indicated, DAPI was used to label nuclei. Image acquisition was performed using a Nikon A1 confocal microscope (Nikon Instruments Inc.). To determine % antibody-labelled cells in sections, the total numbers of labelled cells and DAPI+\u00a0cells were assessed in Image J using the Cell Counter plugin. To determine the number of labelled cells per \u03bcm of basement membrane, the number of labelled cells was divided by the length of the basement membrane.\n\n### Western blotting\n\nCells were lysed on ice in 1x RIPA buffer (Bio-Rad) supplemented with protease and phosphatase inhibitor cocktails (Roche). Total protein was quantified using a BCA kit (Pierce). Soluble proteins were resolved by SDS-PAGE on 4\u201315% Mini-PROTEAN TGX gels (Bio-Rad) and transferred onto Trans-Blot 0.2 \u00b5m PVDF membranes (Bio-Rad) using the Trans-Blot Turbo transfer system (Bio-Rad). Primary antibody probed blots were visualised with appropriate horseradish peroxidase-coupled secondary antibodies using enhanced chemiluminescence (ECL; Amersham). The ChemiDoc Touch Imaging System (Bio-Rad) was used to image the blots. Quantification of detected bands was performed using Image Lab software (Bio-Rad). Uncropped versions of the western blot presented in that manuscript are available in Supplementary file 14.\n\n### Epidermal wholemounts\n\nThe procedure was modified from previous reports (Jensen et al., 1999). Skin samples from either breast or abdomen were obtained as surgical waste with appropriate ethical approval and treated with Dispase (Corning) overnight on ice at 4\u00b0C. The epidermis was peeled off as an intact sheet and immediately fixed in 4% paraformaldehyde for 1 hr. Fixed epidermal sheets were washed and stored in PBS containing 0.2% sodium azide at 4\u00b0C. Sheets were permeabilised\u00a0and\u00a0stained with specific antibodies in a 24-well tissue culture plate. Image acquisition was performed using a Nikon A1 confocal microscope. 3D maximal projection (1024\u00a0\u00d7\u00a01024 dpi), volume rendering and deconvolution on stacked images were generated using NIS Elements version 4.00.04 (Nikon Instruments Inc.).\n\n### Antibodies\n\nAntibodies against the following proteins were used: P-ERK (Cell Signaling # 9101; western blot \u2013 1:1000 dilution), ERK (Cell Signaling # 9102; western blot \u2013 1:1000), P-p38 (Cell Signaling # 9211; western blot \u2013 1:1000), p38 (Cell Signaling # 9212; western blot \u2013 1:1000), Cyclophilin B (R and D # MAB5410; western blot \u2013 1:4000), MKP-3/DUSP6 (Abcam # ab76310; western blot - 1:1000 and R and D Systems # MAB3576-SP; immunostaining \u2013 1:200), PPTC7 (Abcam # ab122548; western-blot 1:250 and Sigma # HPA039335; immunostaining \u2013 1:200), PTPN1/PTP1B (Sigma # HPA012542; western-blot - 1:500; R and D Systems # AF1366-SP; immunostaining \u2013 1:200), PTPN13 (R and D Systems # AF3577; western-blot - 1:300 and immunostaining \u2013 1:200), PPP3CA/Calcineurin A (Sigma # HPA012778; western-blot 1/1000 and R and D Systems # MAB2839-SP; immunostaining \u2013 1:200), DUSP10 (Abcam # 140123; western-blot - 1:1000 and immunostaining \u2013 1:200), TP63 (SCBT # sc-8431 or Abcam # ab735; immunostaining \u2013 1:100), Involucrin (SY5, in-house; immunostaining \u2013 1:500, or DH1, in-house; immunostaining \u2013 1:200), Ki67 (Abcam # ab16667; immunostaining \u2013 1:100) and \u03b21-Integrin (clone P5D2, in-house; immunostaining \u2013 1:200). Species-specific secondary antibodies conjugated to Alexa 488 or Alexa 594 were purchased from Molecular Probes, and HRP-conjugated second antibodies were purchased from Amersham and Jackson ImmunoResearch.\n\n### RNA extraction and RT\u2013qPCR\n\nTotal RNA was isolated using the RNeasy kit (Qiagen). Complementary DNA was generated using the QuantiTect Reverse Transcription kit (Qiagen). qPCR analysis of cDNA was performed using qPCR primers (published or designed with Primer3) and Fast SYBR green Master Mix (Life Technologies). RT-qPCR reactions were run on a\u00a0CFX384 Real-Time System (Bio-Rad). Heatmaps of RT-qPCR data were generated by Multiple Expression Viewer (MeV_4_8) or GraphPad Prism 7. Sequences of qPCR primers are provided in Supplementary file 13.\n\n### Statistics\n\nStatistical analysis of the quantifications presented in the Figure legends was performed using GraphPad Prism 7.\n",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "5deee178-4049-4cbf-822f-7585e60c13c5",
+      "submission_id": "de914be2-7210-44fd-8b71-422262a75b30",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27356.035](https://doi.org/10.7554/eLife.27356.035)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A protein phosphatase network controls temporal and spatial dynamics of differentiation commitment in human epidermis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nCommitment of adult stem cells to differentiate is poorly understood. Mishra et al. use human epidermal keratinocytes to explore this process. The authors induce keratinocyte differentiation using suspension cultures and perform analysis of gene and protein expression. This analysis revealed a set of phosphatases that promote keratinocyte differentiation, while another phosphatase, DUSP10, antagonizes commitment to differentiate. The authors validate their findings using siRNA knockdown and in vitro epidermal reconstitution assays. Pro-commitment phosphatases negatively regulate MAPK signaling and positively regulate the transcription factor AP1 to promote differentiation. In silico analysis suggests that commitment to differentiate is controlled by an autoregulatory network of phosphatases in human epidermal keratinocytes.\n\nThe manuscript is well written and the data shown are of general interest to the field of cell biology. The authors have suggested the following revisions:\n\nEssential revisions:\n\n1) The reviewers requested clarification of the data such as the mathematical modeling. In particular, the mathematical modeling (Boolean networks) suggests temporal regulation. This concept is not explained clearly, no model, formula, or conditions are specified. It is difficult to understand why the data support the conclusions.\n\n2) Additionally, the characterization of the temporal regulation of the network is unclear.\n\n3) Knockdown the genes permanently (shRNA delivery by lenti or retroviruses) or knockout of DUSP6, PTPN1, and PPP3CA. This is particularly important in being able judge the phenotypes that they have. For example, knockdown of the above mentioned factors didn't prevent reconstituted epidermal tissue from differentiating but resulted in the presence of intermediate state cells with both basal and differentiated markers. These skin constructs are taken out for 3 weeks which is outside the range of the efficacy of siRNAs (3-5 days), it is unclear how to interpret the results. Along these lines, DUSP10 knockdown should be compared to scrambled siRNA rather than DUSP6 knockdown (DUSP6 knockdown reduced expression of AP1 transcription factors and thus comparing anything against this group could make the DUSP10 knockdown look like its artificially increasing the AP1 transcription factors.)\n\n4) The Western blot image is not representative or is at a low resolution. Loading controls are inconsistent (see Figure 3D scrambled and siDUSP6). According to the quantification, P-ERK levels are the highest after PTPN13 loss. In the image, pERK levels seem to be higher in PPTC7.\n\n5) Statistics: Throughout the manuscript, statistics are needed. In particular, in Figures 2 and 3.\n",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7800ecc2-a9e6-46ce-9035-9c0d439c593c",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C1",
+      "claim": "Epidermal homeostasis depends on a balance between stem cell renewal and terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidermal homeostasis depends on a balance between stem cell renewal and terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that represents established knowledge in the field of epidermal biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "17a4d9c2-92a1-49ae-b974-8b49a0a6dcdc",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C2",
+      "claim": "Cell detachment induces several protein phosphatases, five of which - DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA \u2013 promote differentiation by negatively regulating ERK MAPK and positively regulating AP1 transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell detachment induces several protein phosphatases, five of which - DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA \u2013 promote differentiation by negatively regulating ERK MAPK and positively regulating AP1 transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from knockdown experiments, western blots, and RT-qPCR measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "07d661a9-ae3d-4d47-bc10-4d1470ca5577",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C3",
+      "claim": "DUSP10 expression antagonises commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, DUSP10 expression antagonises commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that DUSP10 knockdown reduces clonogenicity and has different effects compared to other phosphatases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "ac17282b-4599-47e7-9a87-839e05e3ddc5",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C4",
+      "claim": "The phosphatases form a dynamic network of transient positive and negative interactions that change over time, with DUSP6 predominating at commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphatases form a dynamic network of transient positive and negative interactions that change over time, with DUSP6 predominating at commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data from knockdown experiments at different time points and Boolean network modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "30cd59ae-c7ae-46c0-9ccc-211abf92d553",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C5",
+      "claim": "Boolean network modelling identifies a mandatory switch between two stable states (stem and differentiated) via an unstable (committed) state.",
+      "claim_type": "EXPLICIT",
+      "source": "Boolean network modelling identifies a mandatory switch between two stable states (stem and differentiated) via an unstable (committed) state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational modeling using RE:SIN software applied to experimental gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "151e890f-0c30-4b61-a66b-03ddf27d8f4b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C6",
+      "claim": "Phosphatase expression is spatially regulated in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphatase expression is also spatially regulated in vivo and in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by wholemount immunofluorescence imaging of human epidermis and keratinocytes cultured on topographic substrates.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "d85d8fa7-d45a-4e2e-a17a-ed97464f5130",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C7",
+      "claim": "An auto-regulatory phosphatase network maintains epidermal homeostasis by controlling the onset and duration of commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that an auto-regulatory phosphatase network maintains epidermal homeostasis by controlling the onset and duration of commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the integration of multiple experimental findings and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "171b39c5-4eb7-48de-8334-9360bbabcaec",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C8",
+      "claim": "Commitment is a transient state during which a cell becomes restricted to a particular differentiated fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Commitment is a transient state during which a cell becomes restricted to a particular differentiated fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established developmental biology concepts.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "38e66f89-778a-4f9e-ab35-e9af0a512713",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C9",
+      "claim": "Under physiological conditions, commitment is typically irreversible and involves selecting one differentiation pathway at the expense of others.",
+      "claim_type": "EXPLICIT",
+      "source": "Under physiological conditions, commitment is typically irreversible and involves selecting one differentiation pathway at the expense of others (Nimmo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "090fc93f-fe69-4e61-8c25-33cdeab2be2b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C10",
+      "claim": "Commitment is still poorly understood in the context of adult tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "While commitment is a well-defined concept in developmental biology, it is still poorly understood in the context of adult tissues (Simons and Clevers, 2011; Semrau and van Oudenaarden, 2015; Nimmo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature discussing the knowledge gap.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "c836bd17-5a7b-402d-88aa-db92c53c5b7a",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C11",
+      "claim": "Rapid cell state transitions can depend on post-translational events, such as protein phosphorylation and dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because end-point analysis fails to capture dynamic changes in cell state, and rapid cell state transitions can depend on post-translational events, such as protein phosphorylation and dephosphorylation (Avraham and Yarden, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "db2c60dc-5b8e-488f-b558-05c5414a707e",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C12",
+      "claim": "Human interfollicular epidermis is a multi-layered epithelium formed by keratinocytes and comprises the outer covering of the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "We set out to examine commitment in human interfollicular epidermis, which is a multi-layered epithelium formed by keratinocytes and comprises the outer covering of the skin (Watt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of epidermal structure supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "ecf24cbe-7336-4bb3-9292-a12a0f49ac46",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C13",
+      "claim": "The stem cell compartment lies in the basal layer, attached to an underlying basement membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The stem cell compartment lies in the basal layer, attached to an underlying basement membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about epidermal structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b3ab7517-561b-4c89-8a29-65b372c8b09e",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C14",
+      "claim": "Cells that leave the basal layer undergo a process of terminal differentiation as they move through the suprabasal layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells that leave the basal layer undergo a process of terminal differentiation as they move through the suprabasal layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known process of epidermal differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "a7960e1d-e011-4f44-a50d-fbdb86dbb444",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C15",
+      "claim": "In the final stage of terminal differentiation, the cell nucleus and cytoplasmic organelles are lost and cells assemble an insoluble barrier, called the cornified envelope, which is formed of transglutaminase cross-linked proteins and lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "In the final stage of terminal differentiation, the cell nucleus and cytoplasmic organelles are lost and cells assemble an insoluble barrier, called the cornified envelope, which is formed of transglutaminase cross-linked proteins and lipids (Watt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the terminal differentiation process supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "02abf150-8fc7-47c1-89f5-9649e1f7c764",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C16",
+      "claim": "Keratinocytes can commit to terminal differentiation at any phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that keratinocytes can commit to terminal differentiation at any phase of the cell cycle, and upon commitment they are refractory to extracellular matrix-mediated inhibition of differentiation (Adams and Watt, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "afd5c5a0-a01a-4712-97a5-48698dcfb6e3",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C17",
+      "claim": "Upon commitment keratinocytes are refractory to extracellular matrix-mediated inhibition of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that keratinocytes can commit to terminal differentiation at any phase of the cell cycle, and upon commitment they are refractory to extracellular matrix-mediated inhibition of differentiation (Adams and Watt, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "961a9fc9-9c74-489e-a12e-037baa21dbbb",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C18",
+      "claim": "Keratinocytes increase in size as they differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Since keratinocytes increase in size as they differentiate (Adams and Watt, 1989), we enriched for undifferentiated cells by filtration prior to placing them in suspension for up to 12 hr (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "2cf69810-675c-4c7d-9078-911359fb148f",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C19",
+      "claim": "There is a marked drop in colony forming ability between 4 and 8 hr in suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "By determining when cells recovered from suspension could no longer resume clonal growth on replating (Figure 1b; Figure 1\u2014figure supplement 1a), we confirmed that there is a marked drop in colony forming ability between 4 and 8 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assay data shown in Figure 1b and Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "9524fca2-3b9b-4522-8c18-9dc17f618f33",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C20",
+      "claim": "The drop in colony forming ability correlates with an increase in the proportion of cells expressing the terminal differentiation markers involucrin (IVL) and transglutaminase 1 (TGM1).",
+      "claim_type": "EXPLICIT",
+      "source": "This correlates with an increase in the proportion of cells expressing the terminal differentiation markers involucrin (IVL) and transglutaminase 1 (TGM1) (Figure 1c,d; Figure 1\u2014figure supplement 1b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence and RT-qPCR data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "37759a09-05dc-4180-a416-d056e6bb48d9",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C21",
+      "claim": "Integrin \u03b16 (ITG\u03b16) and TP63 are downregulated during suspension-induced differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and downregulation of genes that are expressed in the basal layer of the epidermis, including integrin \u03b16 (ITG\u03b16) and TP63 (Figure 1d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "0d1ee8ff-26f2-4278-8cda-993159309cc9",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C22",
+      "claim": "The stem cell markers DLL1 and Lrig1 are downregulated during suspension-induced differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and the stem cell markers DLL1 and Lrig1 (Tan et al., 2013; Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1\u2014figure supplement 1c and a citation identifying these as stem cell markers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "a0f466e9-d76c-402c-82f1-564846983911",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C23",
+      "claim": "Ki67 expression is reduced in suspension, reflecting the drop in proliferation upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Ki67 expression was also reduced in suspension, reflecting the drop in proliferation upon differentiation (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "d8265776-2227-4d78-b58f-f3c40a735ee8",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C24",
+      "claim": "The 4 hr samples cluster separately from the 8 and 12 hr samples in t-SNE plots of differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the starting cell population (0 hr) with cells suspended for 4, 8 or 12 hr, t-SNE plots of differentially expressed genes (Figure 1e) and unsupervised hierarchical clustering of genes and proteins (Figure 1f; Figure 1\u2014figure supplement 1d) indicated that the 4 hr samples clustered separately from the 8 and 12 hr samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by t-SNE analysis shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "09371045-115f-403a-a9d9-22812cdde749",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C25",
+      "claim": "GO term enrichment analysis shows enrichment of terms associated with epidermal differentiation at 8 and 12 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "GO term enrichment analysis of differentially expressed transcripts or proteins showed enrichment of terms associated with epidermal differentiation at 8 and 12 hr (Figure 1\u2014figure supplement 1e,g) (Sen et al., 2010; Mulder et al., 2012), which is consistent with the drop in clonogenicity seen at these time points.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO analysis shown in Figure 1\u2014figure supplement 1e,g and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "a27eebc0-9d74-418c-907a-d870df87c597",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C26",
+      "claim": "At 8 and 12 hr there is a moderately positive correlation between significantly differentially expressed proteins and their corresponding transcripts (Pearson correlations of 0.51 and 0.68, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the significantly differentially expressed proteins (p-value<0.05) that changed \u22652 fold at one or more time points with their corresponding transcripts (Figure 1g\u2013i), there was a moderately positive correlation at 8 and 12 hr (Pearson correlations of 0.51 and 0.68, respectively), consistent with the correlation between bulk mRNA and protein levels seen in previous studies of mammalian cells (Schwanh\u00e4usser et al., 2011; Ly et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 1h-i and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "59340697-3633-416b-b2c2-822c3fdb8422",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C27",
+      "claim": "At 4 hr transcripts and proteins are only weakly correlated (Pearson correlation 0.19).",
+      "claim_type": "EXPLICIT",
+      "source": "However, at 4 hr transcripts and proteins were only weakly correlated (Pearson correlation 0.19, Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "dbdfce25-beba-4c37-a69d-d5cded3079ff",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C28",
+      "claim": "Over 3500 high confidence phosphorylation sites were identified and quantified at both the 4 and 8 hr time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 3500 high confidence phosphorylation sites were identified with an Andromeda search score >= 30 and quantified at both the 4 and 8 hr time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SILAC-MS phosphoproteomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "42066aa9-3dd3-4e41-b275-a1771ccdd73e",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C29",
+      "claim": "At 4 hr approximately two thirds of the phosphorylation changes involved dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "At 4 hr approximately two thirds of the changes involved dephosphorylation (Figure 1j)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphoproteomics data shown in Figure 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "e1c1b493-30ad-484a-9405-152abc6a84eb",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C30",
+      "claim": "The dephosphorylation events at 4 hr could not be attributed to decreases in protein abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "but these dephosphorylation events could not be attributed to decreases in protein abundance, as shown by the discordance between total protein abundance and changes in protein phosphorylation (Figure 1k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of protein abundance and phosphorylation changes shown in Figure 1k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "8a4a06a1-c996-433c-8118-fe4f91a1527a",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C31",
+      "claim": "47 differentially expressed phosphatases were identified between 0 and 4 hr, 22 of which were upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We next identified protein phosphatases that were differentially expressed between 0 and 4 hr. We intersected the proteomic and genomic datasets, revealing 47 differentially expressed phosphatases, 22 of which were upregulated (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on intersection of proteomic and genomic datasets shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "049c8402-3f59-4bc6-9412-93ed3fd5d629",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C32",
+      "claim": "The 22 upregulated phosphatases are dynamically expressed during calcium-induced stratification of human keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interrogation of published datasets revealed that these phosphatases were also dynamically expressed during calcium-induced stratification of human keratinocytes (Hopkin et al., 2012) and differentiation of reconstituted human epidermis (Lopez-Pajares et al., 2015) (Figure 2\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of published datasets shown in Figure 2\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "97cc1fe8-fae2-40cc-bf96-ba7e8b300e53",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C33",
+      "claim": "The 22 upregulated phosphatases are dynamically expressed during differentiation of reconstituted human epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interrogation of published datasets revealed that these phosphatases were also dynamically expressed during calcium-induced stratification of human keratinocytes (Hopkin et al., 2012) and differentiation of reconstituted human epidermis (Lopez-Pajares et al., 2015) (Figure 2\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of published datasets shown in Figure 2\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f6deb32d-6336-4df7-9973-2f0a4f763a9b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C34",
+      "claim": "Knocking down seven of the 22 phosphatases significantly increased clonal growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down seven of the phosphatases significantly increased clonal growth (Figure 2b), with five phosphatases \u2013 DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA - having the most pronounced effect (p-value<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "bf72bac8-3b3b-4477-a8dd-6f859dc8e1f1",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C35",
+      "claim": "DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA have the most pronounced effect on increasing clonal growth (p-value<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down seven of the phosphatases significantly increased clonal growth (Figure 2b), with five phosphatases \u2013 DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA - having the most pronounced effect (p-value<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assay data shown in Figure 2b with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "5208dde2-65dc-4290-ac2e-718592880863",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C36",
+      "claim": "Silencing of DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA increased colony size and delayed the loss of colony forming ability in suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing of these five phosphatases also increased colony size and delayed the loss of colony forming ability in suspension (Figure 2c,d; Figure 2\u2014figure supplement 2c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colony formation assays shown in Figure 2c,d and Figure 2\u2014figure supplement 2c\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "fdaecc1c-589f-4bcd-9ba7-f806793ce24d",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C37",
+      "claim": "Phosphatase knockdown delayed the decline in TP63 and increase in TGM1 levels during suspension-induced differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, phosphatase knockdown delayed the decline in TP63 and increase in TGM1 levels during suspension-induced differentiation (Figure 2e,f; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 2e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "8e660890-4778-4c93-950a-9fc99fa1c489",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C38",
+      "claim": "Knocking down each phosphatase did not have a major effect on the growth rate of keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down each phosphatase did not have a major effect on the growth rate of keratinocytes and live-cell imaging did not reveal any apoptosis (Figure 2\u2014figure supplement 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live-cell imaging data shown in Figure 2\u2014figure supplement 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "809a35f3-92f7-4c97-a934-91487a3064e9",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C39",
+      "claim": "Live-cell imaging did not reveal any apoptosis following phosphatase knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down each phosphatase did not have a major effect on the growth rate of keratinocytes and live-cell imaging did not reveal any apoptosis (Figure 2\u2014figure supplement 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live-cell imaging data shown in Figure 2\u2014figure supplement 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "daed3cb0-d10b-4509-8db3-2e9c31594c19",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C40",
+      "claim": "DUSP10 knockdown significantly reduced clonogenicity (p-value<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of knocking down DUSP10 at 0 hr differed from those of the other five phosphatases. DUSP10 knockdown significantly reduced clonogenicity (p-value<0.001; Figure 2b; Figure 2\u2014figure supplement 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assay data shown in Figure 2b and Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "1736e386-8120-4141-aa5d-8a7c545434d4",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C41",
+      "claim": "DUSP10 knockdown decreased the growth rate of keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "and, in contrast to the other phosphatases, decreased the growth rate of keratinocytes (Figure 2\u2014figure supplement 2b,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live-cell imaging data shown in Figure 2\u2014figure supplement 2b,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "3fa7a482-a9ff-4cf1-939c-70cd2faaeb9c",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C42",
+      "claim": "Expression of DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA declined by 8 hr in suspension, whereas DUSP10 expression remained high.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, whereas expression of DUSP6, PPTC7, PTPN1, PTPN13 and PPP3CA declined by 8 hr in suspension, DUSP10 expression remained high (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene expression data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "276f65c1-8b5d-4d32-af52-df5a5941eb3e",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C43",
+      "claim": "Knockdown of DUSP6, PTPN1, PPP3CA and PTPN13 did not prevent cells from undergoing terminal differentiation in reconstituted epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of DUSP6, PTPN1, PPP3CA and PTPN13 did not prevent cells from undergoing terminal differentiation, as evidenced by suprabasal expression of involucrin and accumulation of cornified cells (Figure 2g; Figure 2\u2014figure supplement 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data from reconstituted epidermis shown in Figure 2g and Figure 2\u2014figure supplement 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "99c0c214-2eeb-414f-b1ab-fe796d223c27",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C44",
+      "claim": "Knockdown of DUSP6, PTPN1, PPP3CA and PTPN13 increased the number of TP63-positive cells in reconstituted epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of TP63-positive cells was increased, whether measured as a proportion of the total number of cells (Figure 2g) or per length of basement membrane (Figure 2\u2014figure supplement 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of immunofluorescence data shown in Figure 2g and Figure 2\u2014figure supplement 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f3853553-0c6a-4c5b-9ed3-f0f1b1cb7363",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C45",
+      "claim": "Knockdown of DUSP6, PTPN1 or PPP3CA increased epidermal thickness without increasing the proportion of proliferative, Ki67-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of DUSP6, PTPN1 or PPP3CA increased epidermal thickness without increasing the proportion of proliferative, Ki67-positive cells (Figure 2g; Figure 2\u2014figure supplement 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis and quantification shown in Figure 2g and Figure 2\u2014figure supplement 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "39ba6566-c181-439b-9163-3322ebc0d079",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C46",
+      "claim": "PTPN13 knockdown led to an increase in the percentage of Ki67-positive cells and a slight reduction in epidermal thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, PTPN13 knockdown led to an increase in the percentage of Ki67-positive cells and a slight reduction in epidermal thickness (Figure 2g), which could reflect an increased rate of transit through the epidermal layers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 2g, with speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "5804e92d-f2b5-4c94-9996-4f3a34bd834c",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C47",
+      "claim": "Ki67 and TP63-positive cells were present throughout the viable suprabasal layers following phosphatase knockdown, not confined to the basal cell layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ki67 and TP63-positive cells were no longer confined to the basal cell layer of epidermis reconstituted following phosphatase knockdown but were also present throughout the viable suprabasal layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence observations in reconstituted epidermis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "53ee86b5-8f24-46d2-9414-d03fe29b7718",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C48",
+      "claim": "Stable knockdown of DUSP6, PPTC7, PTPN1 and PPP3CA increased epidermal thickness, whereas PTPN13 knockdown did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the effects of siRNA-mediated knockdown, stable knockdown of DUSP6, PPTC7, PTPN1 and PPP3CA increased epidermal thickness, whereas PTPN13 knockdown did not (Figure 2\u2014figure supplement 3b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis of reconstituted epidermis following shRNA knockdown shown in Figure 2\u2014figure supplement 3b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b169fab8-4df4-4ceb-a2bd-0db69e54aa2b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C49",
+      "claim": "Virtually all Ki67+ cells co-expressed TP63 in reconstituted epidermis following phosphatase knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Virtually all Ki67+ cells co-expressed TP63 (Figure 2\u2014figure supplement 3d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunofluorescence data shown in Figure 2\u2014figure supplement 3d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "7b19bc1d-4ad7-4d82-b884-29e89d453b50",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C50",
+      "claim": "Many suprabasal cells co-expressed TP63 and IVL following phosphatase knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many suprabasal cells co-expressed TP63 and IVL (Figure 2\u2014figure supplement 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunofluorescence data shown in Figure 2\u2014figure supplement 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "26520cf4-337a-4de4-987d-78511cfd7cb2",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C51",
+      "claim": "The top enriched pathways affected by dephosphorylation at 4 hr were ErbB1 signalling, adherens junctions, insulin signalling and MAPK signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the signalling networks affected by upregulation of phosphatases during commitment, we performed GO analysis of ranked peptides that were dephosphorylated at 4 hr. The top enriched pathways were ErbB1 signalling, adherens junctions, insulin signalling and MAPK signalling (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO analysis of phosphoproteomics data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "4e318f07-d761-4674-9288-f0b1e209da90",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C52",
+      "claim": "Several of the proteins identified as dephosphorylated at 4 hr are components of more than one pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of the proteins we identified are components of more than one pathway (Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Venn diagram analysis in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "261e29b1-62f4-4980-8952-563978b91f74",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C53",
+      "claim": "All the proteins identified as dephosphorylated at 4 hr have been reported previously to regulate epidermal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and all have been reported previously to regulate epidermal differentiation (Connelly et al., 2010; Haase et al., 2001; Kolev et al., 2008; Trappmann et al., 2012; Scholl et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "7a082a6c-ca57-427b-85e0-95a49fcb5346",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C54",
+      "claim": "Constitutive activation of ERK delays suspension-induced differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, constitutive activation of ERK delays suspension-induced differentiation (Haase et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "d1986294-ccc5-43af-b976-5e11c2dc558c",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C55",
+      "claim": "Phosphorylation sites on MAPK1 (ERK2) and MAPK3 (ERK1) were identified in the top 15 most decreased sites at 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the predicted dynamic interactions between signalling pathways (Figure 3b), phosphorylation sites on MAPK1 (ERK2) and MAPK3 (ERK1) were identified in the top 15 most decreased sites (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phosphoproteomics data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "285e2894-f0c6-4a6b-a174-e4371f537d00",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C56",
+      "claim": "The level of phosphorylated ERK1/2 diminished with time in suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously, the level of phosphorylated ERK1/2 diminished with time in suspension (Janes et al., 2009) (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3d and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "e3cb13fc-9dfb-4c06-93eb-0e9cc30bcb5c",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C57",
+      "claim": "siRNA-mediated knockdown of DUSP6, PPTC7, PTPN1, PTPN13 or PPP3CA resulted in higher levels of phosphorylated ERK1/2 relative to the scrambled control.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA-mediated knockdown of DUSP6, PPTC7, PTPN1, PTPN13 or PPP3CA resulted in higher levels of phosphorylated ERK1/2 relative to the scrambled control, both at 0 hr and at some later time points (Figure 3d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "15c959a9-0041-4a79-b5bf-b6e6c48a3caf",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C58",
+      "claim": "The effects of phosphatase knockdown on ERK1/2 phosphorylation are consistent with the known requirement for ERK MAPK activity to maintain keratinocytes in the stem cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects are consistent with the known requirement for ERK MAPK activity to maintain keratinocytes in the stem cell compartment (Trappmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f257fe57-2b9e-4bca-9f44-2eb9a75f28ad",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C59",
+      "claim": "Transcriptional regulation of epidermal differentiation is mediated by the Activator Protein 1 (AP1) family of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional regulation of epidermal differentiation is mediated by the Activator Protein 1 (AP1) family of transcription factors (Eckert et al., 2013), which is the main effector of the MAPK and ErbB signalling cascades (Chang and Karin, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "dce176b9-4511-4624-b2bd-a0f9279e8308",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C60",
+      "claim": "AP1 is the main effector of the MAPK and ErbB signalling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional regulation of epidermal differentiation is mediated by the Activator Protein 1 (AP1) family of transcription factors (Eckert et al., 2013), which is the main effector of the MAPK and ErbB signalling cascades (Chang and Karin, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "aef3c73f-6458-4824-af9a-ee8d2fedc8d9",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C61",
+      "claim": "Different AP1 factors changed with different kinetics during suspension-induced terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the levels of AP1 transcripts during suspension-induced terminal differentiation revealed that different AP1 factors changed with different kinetics, as reported previously (Gandarillas and Watt, 1995) (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 3f and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f6f24293-0c0c-4d06-b064-d0a9d7338f18",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C62",
+      "claim": "The level of several members of the MAF subfamily of AP1 factors (MAF, MAFB and MAFG) significantly increased during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the level of several members of the MAF subfamily of AP1 factors (MAF, MAFB and MAFG) significantly increased during differentiation, consistent with recent evidence that they mediate the terminal differentiation program in human keratinocytes (Lopez-Pajares et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data and a citation to recent work on MAF factors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "92b05963-6f82-461d-8d1f-ef7bb1cf9f8b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C63",
+      "claim": "Knockdown of individual pro-commitment phosphatases reduced the induction of MAF AP1 factors in suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, knockdown of individual pro-commitment phosphatases reduced the induction of MAF AP1 factors in suspension (Figure 3f; Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 3f and Supplementary file 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "3d0b3e6f-777d-4ec9-bda3-a821e78f03d1",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C64",
+      "claim": "DUSP10 knockdown did not increase ERK1/2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike knockdown of DUSP6, PPTC7, PTPN1, PTPN13 or PPP3CA, knockdown of DUSP10 (Figure 3\u2014figure supplement 1a,b) did not increase ERK1/2 activity (Figure 3g,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3g,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "300be342-08ac-4970-8474-e2d96f86f2e2",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C65",
+      "claim": "DUSP10 knockdown increased phospho-p38 at 0 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with its known regulation of p38 MAPK (Caunt and Keyse, 2013), DUSP10 knockdown increased phospho-p38 at 0 hr; however, this effect was not observed at later times in suspension (Figure 3\u2014figure supplement 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3\u2014figure supplement 1c,d and a citation about DUSP10's known function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "613b8937-b899-4fa2-a18f-8ad7990c980e",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C66",
+      "claim": "DUSP10 and DUSP6 differentially regulated several AP1 factors, including members of the JUN, FOS and MAF subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "When the effects of DUSP10 knockdown on AP1 transcription factors were compared with those of DUSP6, it was clear that these phosphatases differentially regulated several AP1 factors, including members of the JUN, FOS and MAF subfamilies (Figure 3i; Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 3i and Supplementary file 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "2cbddd63-f2ed-4d88-8bd9-7f21ced9ca93",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C67",
+      "claim": "Overexpression of DUSP10 increased colony formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas overexpression of DUSP10 increased colony formation, overexpression of DUSP6 reduced clonal growth (Figure 3j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assay data following inducible overexpression shown in Figure 3j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "1174434b-9c77-4ca7-a5e6-b6eaed35ccab",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C68",
+      "claim": "Overexpression of DUSP6 reduced clonal growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas overexpression of DUSP10 increased colony formation, overexpression of DUSP6 reduced clonal growth (Figure 3j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assay data following inducible overexpression shown in Figure 3j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "c2b42b46-5856-40d8-b620-08a9e3848d25",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C69",
+      "claim": "A dominant negative mutant of DUSP6 (C293S) lacking phosphatase activity had no effect on colony formation.",
+      "claim_type": "EXPLICIT",
+      "source": "A dominant negative mutant of DUSP6 (C293S) lacking phosphatase activity (Okudela et al., 2009) had no effect (Figure 3j; Figure 3\u2014figure supplement 1f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assay data shown in Figure 3j and Figure 3\u2014figure supplement 1f,g, and a citation describing the mutant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f65319a5-ba52-41cd-8259-baedb1448596",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C70",
+      "claim": "A single Boolean network was unable to recapitulate the measured gene expression dynamics during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we formally deduced that a single Boolean network was unable to recapitulate the measured gene expression dynamics (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational modeling using RE:IN software.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "6b3973b3-6499-4bf2-b9bd-bc19196a06aa",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C71",
+      "claim": "The network topology differs over the time course in suspension, with different interactions at play at each time point.",
+      "claim_type": "EXPLICIT",
+      "source": "These networks reveal different interactions at play at each of the time points, suggesting that the network topology reconfigures during commitment and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of knockdown experiments at different time points shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "16ea2acd-7572-488d-a16e-00795556ac5b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C72",
+      "claim": "At 4 hr all but one of the interactions between phosphatases were positive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at 4 hr all but one of the interactions were positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the network analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "5949d0a2-50ee-4c0e-bba4-92737f91a018",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C73",
+      "claim": "Positive feedback loops lead to instability because the network amplifies any inputs it receives.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive feedback loops lead to instability, because the network amplifies any inputs it receives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established principles of network dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f39e0174-0b22-469b-8b6d-9964877eeec8",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C74",
+      "claim": "The predominance of positive feedback at 4 hr supports the concept of commitment as an unstable state.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the concept of commitment as an unstable state, which aligns with the experimental evidence of that happening within a defined temporal window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the network analysis and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "62ce3c30-22a5-46b1-bd04-fa7c54b5e028",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C75",
+      "claim": "At 4 hr DUSP6 expression is positively regulated by all the other phosphatases in the network and by a self-activating loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The Boolean network analysis indicates a key role for DUSP6 at commitment (4 hr), when DUSP6 expression is positively regulated by all the other phosphatases in the network and by a self-activating loop (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the network analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b0e12cc2-ff39-45ca-900b-10299d90a78b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C76",
+      "claim": "At all time points other than 4 hr, the interactions between individual phosphatases were predominantly negative.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at all other time points the interactions between individual phosphatases were predominantly negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the network analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "c7f95215-7574-4c31-8bb5-0d4ee04c4f49",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C77",
+      "claim": "Several phosphatases, including PTPN1 and PTPN13, showed positive autoregulation at one or more time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Several phosphatases, including PTPN1 and PTPN13, showed positive autoregulation at one or more time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the network analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "cf04c876-41b4-43b2-a3cf-195b3116f32f",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C78",
+      "claim": "DUSP10 was predominantly negatively regulated by other phosphatases, except at 4 hr, when it was positively regulated by PTPN1 and by an autoregulatory loop.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also notable that DUSP10 was predominantly negatively regulated by other phosphatases, except at 4 hr, when it was positively regulated by PTPN1 and by an autoregulatory loop (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the network analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "51671d90-cd4a-45a2-aa56-e4c8ff8f674e",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C79",
+      "claim": "TSA blocked suspension-induced terminal differentiation, as measured by expression of IVL and TGM1, and prevented downregulation of ITG\u03b16.",
+      "claim_type": "EXPLICIT",
+      "source": "Both drugs blocked suspension-induced terminal differentiation, as measured by expression of IVL and TGM1, and prevented downregulation of ITG\u03b16 (Figure 4\u2014figure supplement 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assays and RT-qPCR data shown in Figure 4\u2014figure supplement 2b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b0dd34b7-d995-461b-b616-163049ffe35b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C80",
+      "claim": "PKCi blocked suspension-induced terminal differentiation, as measured by expression of IVL and TGM1, and prevented downregulation of ITG\u03b16.",
+      "claim_type": "EXPLICIT",
+      "source": "Both drugs blocked suspension-induced terminal differentiation, as measured by expression of IVL and TGM1, and prevented downregulation of ITG\u03b16 (Figure 4\u2014figure supplement 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenicity assays and RT-qPCR data shown in Figure 4\u2014figure supplement 2b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "7e5a088a-a85c-45e7-9a47-78a0a6cb8f6b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C81",
+      "claim": "Cells treated with TSA still underwent commitment, as evaluated by loss of colony-forming ability and downregulation of TP63.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cells treated with TSA still underwent commitment, as evaluated by loss of colony-forming ability and downregulation of TP63, whereas those treated with the PKC inhibitor did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clonogenicity assays and RT-qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "ebdd182e-29d4-46ca-9a93-f790ef84e224",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C82",
+      "claim": "Cells treated with PKCi did not undergo commitment, as evaluated by loss of colony-forming ability and downregulation of TP63.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cells treated with TSA still underwent commitment, as evaluated by loss of colony-forming ability and downregulation of TP63, whereas those treated with the PKC inhibitor did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clonogenicity assays and RT-qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "cf8a2463-7f2f-4e0c-8857-e1255e0b7ae7",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C83",
+      "claim": "At 12 hr in suspension, both TSA and PKCi reduced expression of DUSP10 and PTPN13 and increased expression of DUSP6 and PPTC7 relative to untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 12 hr in suspension, both drugs reduced expression of DUSP10 and PTPN13 and increased expression of DUSP6 and PPTC7 relative to untreated cells; however, they differentially affected PPP3CA and PTPN1 (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "af8fbf15-0ce8-4d6d-a610-bc0e96eed3ee",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C84",
+      "claim": "TSA and PKCi differentially affected PPP3CA and PTPN1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "At 12 hr in suspension, both drugs reduced expression of DUSP10 and PTPN13 and increased expression of DUSP6 and PPTC7 relative to untreated cells; however, they differentially affected PPP3CA and PTPN1 (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "8f26e939-1adc-401b-b1f7-cd20e03e3edb",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C85",
+      "claim": "The PKCi phosphatase expression pattern at 12 hr was compatible with the phosphatase interaction network derived at 0 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The PKCi phosphatase expression pattern at 12 hr was compatible with the phosphatase interaction network derived at 0 hr, supporting the conclusion that PKCi arrests cells in the stem cell compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Boolean network modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "9dd53349-b0f0-4974-ac60-5eab6d82a6bd",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C86",
+      "claim": "In TSA-treated cells the network must switch from that derived at 0 hr to that derived at 4 hr, and subsequently to that derived at 8 hr, or straight from 0 hr to 8 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In TSA-treated cells the network must switch from that derived at 0 hr to that derived at 4 hr, and subsequently to that derived at 8 hr, or straight from 0 hr to 8 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Boolean network modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "71f70719-c994-4ab8-9831-837731bce380",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C87",
+      "claim": "Neither PKCi nor TSA treatment resulted in an expression pattern compatible with the network derived at 12 hr for untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither PKCi nor TSA treatment resulted in an expression pattern compatible with the network derived at 12 hr for untreated cells, consistent with the inhibition of differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Boolean network modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "626ef455-870f-45c3-9e05-641c6166f428",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C88",
+      "claim": "Epidermal differentiation can be described by two saddle-node bifurcations.",
+      "claim_type": "EXPLICIT",
+      "source": "The above findings can be summarised using dynamical systems terminology. Epidermal differentiation can be described by two saddle-node bifurcations (Figure 4e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical interpretation of the experimental and modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "bc1cec12-df5f-48ab-819a-d139faa32927",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C89",
+      "claim": "The stem cell state and the terminally differentiated state emerge as stable states, while commitment is inherently unstable and serves as a biological switch.",
+      "claim_type": "EXPLICIT",
+      "source": "From here, the stem cell state and the terminally differentiated state emerge as stable states, while commitment is inherently unstable and serves as a biological switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the experimental and modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "880c1915-2890-47e1-9482-417a90864b09",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C90",
+      "claim": "DUSP6, PTPN1 and PPP3CA were most highly expressed in cells with the highest levels of \u03b21 integrin or \u03b16 integrin, which correspond to stem cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "By wholemount labelling the basal layer of sheets of human epidermis (Jensen et al., 1999), we found that DUSP6, PTPN1 and PPP3CA were most highly expressed in cells with the highest levels of \u03b21 integrin or \u03b16 integrin, which correspond to stem cell clusters (Jensen et al., 1999) (Figure 4g; Figure 4\u2014figure supplement 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by wholemount immunofluorescence imaging shown in Figure 4g and Figure 4\u2014figure supplement 3a,b, and citations identifying integrin-high cells as stem cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "655e1dbf-0fb1-42db-9df9-b1b9b9ef5820",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C91",
+      "claim": "PPTC7 was enriched in the integrin-low regions of the basal epidermal layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PPTC7 was enriched in the integrin-low regions, while PTPN13 and DUSP10 were more uniformly expressed throughout the basal layer (Figure 4g; Figure 4\u2014figure supplement 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by wholemount immunofluorescence imaging shown in Figure 4g and Figure 4\u2014figure supplement 3a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "d8b032e5-a6c2-4dad-9462-a7871f37b4e7",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C92",
+      "claim": "PTPN13 and DUSP10 were more uniformly expressed throughout the basal layer of epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PPTC7 was enriched in the integrin-low regions, while PTPN13 and DUSP10 were more uniformly expressed throughout the basal layer (Figure 4g; Figure 4\u2014figure supplement 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by wholemount immunofluorescence imaging shown in Figure 4g and Figure 4\u2014figure supplement 3a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "d2efcee4-a503-4a8a-b52b-04c21ee6723b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C93",
+      "claim": "The inverse relationship between the patterns of PPP3CA and PPTC7 expression is in good agreement with the network analysis demonstrating negative regulation of PPP3CA by PPTC7 in undifferentiated keratinocytes (0 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse relationship between the patterns of PPP3CA and PPTC7 expression is in good agreement with the network analysis demonstrating negative regulation of PPP3CA by PPTC7 in undifferentiated keratinocytes (0 hr; Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting spatial expression patterns with network interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "6657c677-ed63-4b49-aca4-8e1a523b0474",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C94",
+      "claim": "The patterned distribution of phosphatases could be recreated in vitro by culturing keratinocytes on collagen-coated PDMS elastomer substrates that mimic the topographical features of the human epidermal-dermal interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The patterned distribution of phosphatases could be recreated in vitro by culturing keratinocytes on collagen-coated PDMS elastomer substrates that mimic the topographical features of the human epidermal-dermal interface (Viswanathan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence imaging on topographic substrates and a citation describing the substrate system.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "bbe1221e-bf86-4d97-9aaf-c3b75dac78f2",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C95",
+      "claim": "Clusters of cells with high levels of DUPS6 accumulate on the tops of topographic features, where stem cells expressing high levels of \u03b21 integrins accumulate.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clusters of cells with high levels of DUPS6 on the tops of the features, where stem cells expressing high levels of \u03b21 integrins accumulate (Viswanathan et al., 2016) (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence imaging shown in Figure 4h and a citation about stem cell localization on topographic features.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f7502b7e-4683-4d50-b98d-a2ffae212126",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C96",
+      "claim": "DUSP10 was uniformly expressed regardless of cell position on topographic substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DUSP10 was uniformly expressed regardless of cell position (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence imaging shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "9320a522-f3d8-4d20-bd2f-e728323eaeab",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C97",
+      "claim": "The phosphatases are subject to spatial regulation that is independent of signals from cells in the underlying dermis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the phosphatases are subject to spatial regulation that is independent of signals from cells in the underlying dermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that spatial patterning can be recreated on synthetic substrates without dermal cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "6deb8df1-85c4-467e-9417-b8f0e18918fe",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C98",
+      "claim": "The key role of DUPS6 at commitment fits well with its upregulation by Serum Response Factor, which is known to control keratinocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The key role of DUPS6 at commitment fits well with its upregulation by Serum Response Factor, which is known to control keratinocyte differentiation (Connelly et al., 2010), and its importance in controlling the activation kinetics and dose-response behaviour of ERK MAPK signalling (Bl\u00fcthgen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the findings with previous literature, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "484225ab-b4ef-4c86-9576-b99d7f9c2bd9",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C99",
+      "claim": "DUSP6 is important in controlling the activation kinetics and dose-response behaviour of ERK MAPK signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The key role of DUPS6 at commitment fits well with its upregulation by Serum Response Factor, which is known to control keratinocyte differentiation (Connelly et al., 2010), and its importance in controlling the activation kinetics and dose-response behaviour of ERK MAPK signalling (Bl\u00fcthgen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "00dfcbaf-05c7-4e01-bf26-689b7831e41f",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C100",
+      "claim": "The involvement of multiple phosphatases in commitment may protect cells from undergoing premature terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the involvement of multiple phosphatases in commitment may protect cells from undergoing premature terminal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "ed754c5c-c8d9-46de-b736-68dbc7aed6c6",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C101",
+      "claim": "The patterned distribution of phosphatases within the epidermal basal layer would be consistent with different phosphatases regulating commitment in different positions along the basement membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, their patterned distribution within the epidermal basal layer would be consistent with different phosphatases regulating commitment in different positions along the basement membrane, and with the ability of different external stimuli to trigger differentiation via different intracellular pathways (Watt, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the spatial expression patterns, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "1e714e69-979d-435b-93ac-5ee4215ff8cf",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C102",
+      "claim": "The upregulation of basal layer markers in the suprabasal epidermal layers on knockdown of pro-commitment phosphatases mimics features of psoriatic lesions in which ERK is known to be upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The upregulation of basal layer markers in the suprabasal epidermal layers on knockdown of pro-commitment phosphatases mimics features of psoriatic lesions in which ERK is known to be upregulated (Haase et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation connecting the experimental findings with a disease phenotype, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "5930e893-eace-4045-890b-61eb855d6224",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C103",
+      "claim": "In the epidermal reconstitution assays there was suprabasal expression of Ki67 and TP63, with TP63+ cells co-expressing IVL.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in the epidermal reconstitution assays there was suprabasal expression of Ki67 and TP63, with TP63+ cells co-expressing IVL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunofluorescence observations in reconstituted epidermis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b8255a58-c2c4-40d7-be48-f2561492b2b6",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C104",
+      "claim": "Commitment is abnormally stabilised in psoriasis, as observed in TSA treated keratinocytes in suspension.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations lead us to speculate that commitment is abnormally stabilised in psoriasis, as observed in TSA treated keratinocytes in suspension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis connecting the experimental findings with disease.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "1e280a90-e32c-4fbd-b674-dedb819bb280",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C105",
+      "claim": "Protein phosphatases within the commitment network are known to regulate expression of inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that protein phosphatases within the commitment network are known to regulate expression of inflammatory cytokines (Caunt and Keyse, 2013), deregulated phosphatase expression could potentially contribute to the pathophysiology of psoriasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work, with speculation about disease implications.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "01365e6e-5270-4529-b9be-33674384a11f",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "claim_id": "C106",
+      "claim": "Deregulated phosphatase expression could potentially contribute to the pathophysiology of psoriasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that protein phosphatases within the commitment network are known to regulate expression of inflammatory cytokines (Caunt and Keyse, 2013), deregulated phosphatase expression could potentially contribute to the pathophysiology of psoriasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about disease mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "740ece0d-c0b5-4d4e-8a17-9b169f122894",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Suspension-induced differentiation of keratinocytes shows a marked drop in colony-forming ability between 4 and 8 hours, correlating with increased differentiation markers and decreased stem cell markers. At 4 hours, transcripts and proteins are only weakly correlated (Pearson correlation 0.19), suggesting post-transcriptional regulation during commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 provide converging evidence from clonogenicity assays, RT-qPCR, immunofluorescence, transcriptomics, proteomics, and correlation analysis. The temporal window of commitment (4-8 hr) is well-defined by multiple independent measurements. The weak transcript-protein correlation at 4 hr specifically supports post-transcriptional mechanisms at commitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "51a88492-f637-4fee-977a-7bcc7b6f8479",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phosphoproteomics analysis identified over 3500 high-confidence phosphorylation sites, with approximately two-thirds showing dephosphorylation at 4 hours that could not be attributed to decreased protein abundance. 47 differentially expressed phosphatases were identified between 0 and 4 hours, with 22 upregulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by SILAC-MS phosphoproteomics data with appropriate quality thresholds (Andromeda score \u226530). The discordance between protein abundance and phosphorylation changes (C30) is demonstrated by direct comparison in Figure 1k. The identification of 22 upregulated phosphatases is based on intersection of proteomic and genomic datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "0b1d7efe-e912-46a1-9410-a6192eaf4702",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Five phosphatases (DUSP6, PPTC7, PTPN1, PTPN13, and PPP3CA) promote differentiation: their knockdown significantly increased clonal growth (p<0.001), increased colony size, delayed loss of colony-forming ability in suspension, and delayed changes in differentiation markers without affecting growth rate or causing apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by multiple complementary assays: clonogenicity assays with statistical significance (p<0.001), colony size measurements, RT-qPCR for differentiation markers (TP63, TGM1), and live-cell imaging. The consistency across multiple readouts and the lack of effects on growth rate or apoptosis strengthen the conclusion that these phosphatases specifically regulate commitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f22b14c4-8d51-4dc5-8f5a-92aadbffa110",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DUSP10 antagonizes commitment: its knockdown significantly reduced clonogenicity (p<0.001) and decreased keratinocyte growth rate, contrasting with the other five phosphatases. DUSP10 expression remained high at 8 hours while the pro-commitment phosphatases declined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C3 are supported by clonogenicity assays, live-cell imaging, and gene expression data. The opposite effects of DUSP10 compared to the other phosphatases (reduced vs. increased clonogenicity) and its distinct expression kinetics provide strong evidence for its antagonistic role in commitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "1b8bac92-fb96-4d80-a509-5fed43893920",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In reconstituted epidermis, knockdown of pro-commitment phosphatases did not prevent terminal differentiation but increased TP63-positive cells, increased epidermal thickness (except PTPN13), and resulted in suprabasal expression of Ki67 and TP63, with many cells co-expressing TP63 and IVL. These effects were confirmed with both siRNA and shRNA approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 are supported by histological analysis, immunofluorescence, and quantification in reconstituted epidermis using both transient (siRNA) and stable (shRNA) knockdown. The automated quantification of epidermal thickness adds rigor. The co-expression of stem (TP63) and differentiation (IVL) markers in suprabasal cells is a key phenotype suggesting disrupted commitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "a078ec39-8b23-4208-a335-fe03799a2dde",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The five pro-commitment phosphatases promote differentiation by negatively regulating ERK MAPK signaling. GO analysis identified ErbB1, adherens junctions, insulin, and MAPK signaling as top pathways affected by dephosphorylation at 4 hours. ERK1/2 phosphorylation sites were among the top 15 most decreased, and phosphatase knockdown resulted in higher phospho-ERK1/2 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 and C2 are supported by GO analysis of phosphoproteomics data, identification of specific ERK1/2 phosphorylation sites, and western blot validation showing increased phospho-ERK1/2 upon phosphatase knockdown. The consistency with prior literature (C54, C58) strengthens the interpretation. The mechanistic link between phosphatase activity and ERK regulation is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "f55cafe0-0c43-4c66-8706-c38484d8cba7",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AP1 transcription factors mediate epidermal differentiation downstream of MAPK signaling. Different AP1 factors changed with different kinetics during differentiation, with MAF subfamily members (MAF, MAFB, MAFG) significantly increasing. Knockdown of pro-commitment phosphatases reduced MAF AP1 factor induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are supported by RT-qPCR measurements of AP1 family members during differentiation and following phosphatase knockdown. The connection to prior literature (C59, C60, C62) is well-cited. The reduction in MAF factor induction upon phosphatase knockdown provides a mechanistic link between phosphatase activity, ERK regulation, and transcriptional control of differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "6fd39908-ae64-4c6e-b34f-3a88010abf3a",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DUSP10 differs mechanistically from DUSP6: DUSP10 knockdown did not increase ERK1/2 activity but increased phospho-p38 at 0 hours. DUSP10 and DUSP6 differentially regulated AP1 factors. Overexpression of DUSP10 increased colony formation while DUSP6 overexpression reduced it; a phosphatase-dead DUSP6 mutant had no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 are supported by western blots for phospho-ERK1/2 and phospho-p38, RT-qPCR for AP1 factors, and clonogenicity assays following inducible overexpression. The use of a phosphatase-dead mutant (C69) provides strong evidence that DUSP6's effects require its catalytic activity. The differential regulation of p38 vs. ERK by DUSP10 vs. DUSP6 is consistent with known substrate specificities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "613d36ff-748b-4718-b893-f790ae2938e6",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Boolean network modeling reveals that a single network cannot recapitulate differentiation dynamics; instead, the network topology changes over time. At 4 hours (commitment), interactions are predominantly positive, creating instability, with DUSP6 positively regulated by all other phosphatases and a self-activating loop. At other time points, interactions are predominantly negative. This identifies a mandatory switch between stable stem and differentiated states via an unstable committed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C78, C4, and C5 are supported by computational modeling using RE:IN and RE:SIN software applied to RT-qPCR data from knockdown experiments at multiple time points. The finding that positive feedback dominates at 4 hr is consistent with established network theory (C73) and the experimental observation of a narrow commitment window. The modeling approach is rigorous and the conclusions are logically derived from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pharmacological perturbations validate the network model: both TSA and PKCi blocked terminal differentiation, but TSA-treated cells still underwent commitment while PKCi-treated cells did not. The phosphatase expression patterns under these treatments were compatible with different network states, with PKCi arresting cells in the stem state and TSA stabilizing the committed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C87 are supported by clonogenicity assays, RT-qPCR measurements, and Boolean network analysis of drug-treated cells. The differential effects of TSA vs. PKCi on commitment (C81, C82) provide strong validation of the commitment window. The compatibility of phosphatase expression patterns with predicted network states (C85-C87) demonstrates the predictive power of the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b73e4211-d267-4471-87e4-14b66fe3c5a6",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Epidermal differentiation can be described by two saddle-node bifurcations in dynamical systems terminology, where stem and differentiated states are stable while commitment is inherently unstable and serves as a biological switch. An auto-regulatory phosphatase network maintains epidermal homeostasis by controlling the onset and duration of commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88, C89, and C7 represent a theoretical synthesis of the experimental and modeling results. The saddle-node bifurcation framework is a standard approach in dynamical systems theory and is appropriately applied here. The conclusion that commitment is an unstable state is well-supported by the predominance of positive feedback at 4 hr and the narrow temporal window of commitment observed experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "da36de3d-87b9-4eb6-94b7-8805dd968c9b",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Phosphatase expression is spatially regulated in human epidermis: DUSP6, PTPN1, and PPP3CA are highly expressed in integrin-high stem cell clusters, PPTC7 is enriched in integrin-low regions, and PTPN13 and DUSP10 are uniformly expressed. The inverse relationship between PPP3CA and PPTC7 expression agrees with network analysis showing negative regulation of PPP3CA by PPTC7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 and C6 are supported by wholemount immunofluorescence imaging of human epidermis with quantification. The correlation between integrin levels and stem cell identity is well-established (cited). The spatial patterns are consistent with the network interactions derived from knockdown experiments (C93), providing independent validation of the network model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "b5f969bb-6b70-42e2-9797-149beb0ad8b2",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Spatial regulation of phosphatases can be recreated in vitro on topographic substrates mimicking the epidermal-dermal interface. DUSP6 clusters on tops of features where stem cells accumulate, while DUSP10 is uniformly expressed. This indicates spatial regulation is independent of dermal cell signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C97 are supported by immunofluorescence imaging on PDMS topographic substrates. The recapitulation of spatial patterns in vitro without dermal cells (C97) is a strong inference supported by the experimental design. This demonstrates that topographical cues alone can regulate phosphatase expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "ba38282c-aab6-4ddb-92a9-de9605e0932d",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 22 upregulated phosphatases are dynamically expressed during calcium-induced stratification of human keratinocytes and differentiation of reconstituted human epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C33 are supported by analysis of published datasets with appropriate citations. This provides independent validation that the identified phosphatases are relevant to epidermal differentiation in multiple experimental contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "7854a687-f758-4965-b0bb-e5eee6c0db06",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The key role of DUSP6 at commitment fits with its regulation by Serum Response Factor and its importance in controlling ERK MAPK signaling kinetics. The involvement of multiple phosphatases may protect against premature differentiation, and their patterned distribution suggests different phosphatases regulate commitment at different positions along the basement membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C101 are interpretations connecting the findings to prior literature (C98, C99) and proposing functional implications (C100, C101). While speculative, these interpretations are reasonable given the data. C98 and C99 are well-supported by citations. C100 and C101 are logical inferences but would benefit from additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    },
+    {
+      "id": "bd4a3d61-ff1d-4d7a-8c51-30ba9538ea85",
+      "content_id": "c13743c8-d76b-4ed3-b352-fffc49df0272",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The phenotype following phosphatase knockdown (suprabasal TP63+/IVL+ cells, upregulated ERK) mimics features of psoriatic lesions. This suggests commitment may be abnormally stabilized in psoriasis, and deregulated phosphatase expression could contribute to psoriasis pathophysiology through regulation of inflammatory cytokines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C106 connect the experimental findings to psoriasis. C102 is supported by the observation of similar phenotypes and a citation about ERK upregulation in psoriasis. However, C104 and C106 are explicitly speculative. While the connection is plausible and C105 is supported by citation, direct evidence linking the phosphatase network to psoriasis pathophysiology is lacking. This represents a hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:38:23.984952Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2cf69810-675c-4c7d-9078-911359fb148f",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "9524fca2-3b9b-4522-8c18-9dc17f618f33",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "37759a09-05dc-4180-a416-d056e6bb48d9",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "0d1ee8ff-26f2-4278-8cda-993159309cc9",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "a0f466e9-d76c-402c-82f1-564846983911",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "d8265776-2227-4d78-b58f-f3c40a735ee8",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "09371045-115f-403a-a9d9-22812cdde749",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "a27eebc0-9d74-418c-907a-d870df87c597",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "59340697-3633-416b-b2c2-822c3fdb8422",
+      "result_id": "740ece0d-c0b5-4d4e-8a17-9b169f122894"
+    },
+    {
+      "claim_id": "dbdfce25-beba-4c37-a69d-d5cded3079ff",
+      "result_id": "51a88492-f637-4fee-977a-7bcc7b6f8479"
+    },
+    {
+      "claim_id": "42066aa9-3dd3-4e41-b275-a1771ccdd73e",
+      "result_id": "51a88492-f637-4fee-977a-7bcc7b6f8479"
+    },
+    {
+      "claim_id": "e1c1b493-30ad-484a-9405-152abc6a84eb",
+      "result_id": "51a88492-f637-4fee-977a-7bcc7b6f8479"
+    },
+    {
+      "claim_id": "8a4a06a1-c996-433c-8118-fe4f91a1527a",
+      "result_id": "51a88492-f637-4fee-977a-7bcc7b6f8479"
+    },
+    {
+      "claim_id": "f6deb32d-6336-4df7-9973-2f0a4f763a9b",
+      "result_id": "0b1d7efe-e912-46a1-9410-a6192eaf4702"
+    },
+    {
+      "claim_id": "bf72bac8-3b3b-4477-a8dd-6f859dc8e1f1",
+      "result_id": "0b1d7efe-e912-46a1-9410-a6192eaf4702"
+    },
+    {
+      "claim_id": "5208dde2-65dc-4290-ac2e-718592880863",
+      "result_id": "0b1d7efe-e912-46a1-9410-a6192eaf4702"
+    },
+    {
+      "claim_id": "fdaecc1c-589f-4bcd-9ba7-f806793ce24d",
+      "result_id": "0b1d7efe-e912-46a1-9410-a6192eaf4702"
+    },
+    {
+      "claim_id": "8e660890-4778-4c93-950a-9fc99fa1c489",
+      "result_id": "0b1d7efe-e912-46a1-9410-a6192eaf4702"
+    },
+    {
+      "claim_id": "809a35f3-92f7-4c97-a934-91487a3064e9",
+      "result_id": "0b1d7efe-e912-46a1-9410-a6192eaf4702"
+    },
+    {
+      "claim_id": "daed3cb0-d10b-4509-8db3-2e9c31594c19",
+      "result_id": "f22b14c4-8d51-4dc5-8f5a-92aadbffa110"
+    },
+    {
+      "claim_id": "1736e386-8120-4141-aa5d-8a7c545434d4",
+      "result_id": "f22b14c4-8d51-4dc5-8f5a-92aadbffa110"
+    },
+    {
+      "claim_id": "3fa7a482-a9ff-4cf1-939c-70cd2faaeb9c",
+      "result_id": "f22b14c4-8d51-4dc5-8f5a-92aadbffa110"
+    },
+    {
+      "claim_id": "07d661a9-ae3d-4d47-bc10-4d1470ca5577",
+      "result_id": "f22b14c4-8d51-4dc5-8f5a-92aadbffa110"
+    },
+    {
+      "claim_id": "276f65c1-8b5d-4d32-af52-df5a5941eb3e",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "99c0c214-2eeb-414f-b1ab-fe796d223c27",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "f3853553-0c6a-4c5b-9ed3-f0f1b1cb7363",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "39ba6566-c181-439b-9163-3322ebc0d079",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "5804e92d-f2b5-4c94-9996-4f3a34bd834c",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "53ee86b5-8f24-46d2-9414-d03fe29b7718",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "b169fab8-4df4-4ceb-a2bd-0db69e54aa2b",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "7b19bc1d-4ad7-4d82-b884-29e89d453b50",
+      "result_id": "1b8bac92-fb96-4d80-a509-5fed43893920"
+    },
+    {
+      "claim_id": "26520cf4-337a-4de4-987d-78511cfd7cb2",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "4e318f07-d761-4674-9288-f0b1e209da90",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "261e29b1-62f4-4980-8952-563978b91f74",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "7a082a6c-ca57-427b-85e0-95a49fcb5346",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "d1986294-ccc5-43af-b976-5e11c2dc558c",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "285e2894-f0c6-4a6b-a174-e4371f537d00",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "e3cb13fc-9dfb-4c06-93eb-0e9cc30bcb5c",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "15c959a9-0041-4a79-b5bf-b6e6c48a3caf",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "17a4d9c2-92a1-49ae-b974-8b49a0a6dcdc",
+      "result_id": "a078ec39-8b23-4208-a335-fe03799a2dde"
+    },
+    {
+      "claim_id": "f257fe57-2b9e-4bca-9f44-2eb9a75f28ad",
+      "result_id": "f55cafe0-0c43-4c66-8706-c38484d8cba7"
+    },
+    {
+      "claim_id": "dce176b9-4511-4624-b2bd-a0f9279e8308",
+      "result_id": "f55cafe0-0c43-4c66-8706-c38484d8cba7"
+    },
+    {
+      "claim_id": "aef3c73f-6458-4824-af9a-ee8d2fedc8d9",
+      "result_id": "f55cafe0-0c43-4c66-8706-c38484d8cba7"
+    },
+    {
+      "claim_id": "f6f24293-0c0c-4d06-b064-d0a9d7338f18",
+      "result_id": "f55cafe0-0c43-4c66-8706-c38484d8cba7"
+    },
+    {
+      "claim_id": "92b05963-6f82-461d-8d1f-ef7bb1cf9f8b",
+      "result_id": "f55cafe0-0c43-4c66-8706-c38484d8cba7"
+    },
+    {
+      "claim_id": "3d0b3e6f-777d-4ec9-bda3-a821e78f03d1",
+      "result_id": "6fd39908-ae64-4c6e-b34f-3a88010abf3a"
+    },
+    {
+      "claim_id": "300be342-08ac-4970-8474-e2d96f86f2e2",
+      "result_id": "6fd39908-ae64-4c6e-b34f-3a88010abf3a"
+    },
+    {
+      "claim_id": "613b8937-b899-4fa2-a18f-8ad7990c980e",
+      "result_id": "6fd39908-ae64-4c6e-b34f-3a88010abf3a"
+    },
+    {
+      "claim_id": "2cbddd63-f2ed-4d88-8bd9-7f21ced9ca93",
+      "result_id": "6fd39908-ae64-4c6e-b34f-3a88010abf3a"
+    },
+    {
+      "claim_id": "1174434b-9c77-4ca7-a5e6-b6eaed35ccab",
+      "result_id": "6fd39908-ae64-4c6e-b34f-3a88010abf3a"
+    },
+    {
+      "claim_id": "c2b42b46-5856-40d8-b620-08a9e3848d25",
+      "result_id": "6fd39908-ae64-4c6e-b34f-3a88010abf3a"
+    },
+    {
+      "claim_id": "f65319a5-ba52-41cd-8259-baedb1448596",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "6b3973b3-6499-4bf2-b9bd-bc19196a06aa",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "16ea2acd-7572-488d-a16e-00795556ac5b",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "5949d0a2-50ee-4c0e-bba4-92737f91a018",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "f39e0174-0b22-469b-8b6d-9964877eeec8",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "62ce3c30-22a5-46b1-bd04-fa7c54b5e028",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "b0e12cc2-ff39-45ca-900b-10299d90a78b",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "c7f95215-7574-4c31-8bb5-0d4ee04c4f49",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "cf04c876-41b4-43b2-a3cf-195b3116f32f",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "ac17282b-4599-47e7-9a87-839e05e3ddc5",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "30cd59ae-c7ae-46c0-9ccc-211abf92d553",
+      "result_id": "613d36ff-748b-4718-b893-f790ae2938e6"
+    },
+    {
+      "claim_id": "51671d90-cd4a-45a2-aa56-e4c8ff8f674e",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "b0dd34b7-d995-461b-b616-163049ffe35b",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "7e5a088a-a85c-45e7-9a47-78a0a6cb8f6b",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "ebdd182e-29d4-46ca-9a93-f790ef84e224",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "cf8a2463-7f2f-4e0c-8857-e1255e0b7ae7",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "af8fbf15-0ce8-4d6d-a610-bc0e96eed3ee",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "8f26e939-1adc-401b-b1f7-cd20e03e3edb",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "9dd53349-b0f0-4974-ac60-5eab6d82a6bd",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "71f70719-c994-4ab8-9831-837731bce380",
+      "result_id": "b4afd4d4-3db3-4ce0-bb02-e08d79f915c0"
+    },
+    {
+      "claim_id": "626ef455-870f-45c3-9e05-641c6166f428",
+      "result_id": "b73e4211-d267-4471-87e4-14b66fe3c5a6"
+    },
+    {
+      "claim_id": "bc1cec12-df5f-48ab-819a-d139faa32927",
+      "result_id": "b73e4211-d267-4471-87e4-14b66fe3c5a6"
+    },
+    {
+      "claim_id": "d85d8fa7-d45a-4e2e-a17a-ed97464f5130",
+      "result_id": "b73e4211-d267-4471-87e4-14b66fe3c5a6"
+    },
+    {
+      "claim_id": "880c1915-2890-47e1-9482-417a90864b09",
+      "result_id": "da36de3d-87b9-4eb6-94b7-8805dd968c9b"
+    },
+    {
+      "claim_id": "655e1dbf-0fb1-42db-9df9-b1b9b9ef5820",
+      "result_id": "da36de3d-87b9-4eb6-94b7-8805dd968c9b"
+    },
+    {
+      "claim_id": "d8b032e5-a6c2-4dad-9462-a7871f37b4e7",
+      "result_id": "da36de3d-87b9-4eb6-94b7-8805dd968c9b"
+    },
+    {
+      "claim_id": "d2efcee4-a503-4a8a-b52b-04c21ee6723b",
+      "result_id": "da36de3d-87b9-4eb6-94b7-8805dd968c9b"
+    },
+    {
+      "claim_id": "151e890f-0c30-4b61-a66b-03ddf27d8f4b",
+      "result_id": "da36de3d-87b9-4eb6-94b7-8805dd968c9b"
+    },
+    {
+      "claim_id": "6657c677-ed63-4b49-aca4-8e1a523b0474",
+      "result_id": "b5f969bb-6b70-42e2-9797-149beb0ad8b2"
+    },
+    {
+      "claim_id": "bbe1221e-bf86-4d97-9aaf-c3b75dac78f2",
+      "result_id": "b5f969bb-6b70-42e2-9797-149beb0ad8b2"
+    },
+    {
+      "claim_id": "f7502b7e-4683-4d50-b98d-a2ffae212126",
+      "result_id": "b5f969bb-6b70-42e2-9797-149beb0ad8b2"
+    },
+    {
+      "claim_id": "9320a522-f3d8-4d20-bd2f-e728323eaeab",
+      "result_id": "b5f969bb-6b70-42e2-9797-149beb0ad8b2"
+    },
+    {
+      "claim_id": "049c8402-3f59-4bc6-9412-93ed3fd5d629",
+      "result_id": "ba38282c-aab6-4ddb-92a9-de9605e0932d"
+    },
+    {
+      "claim_id": "97cc1fe8-fae2-40cc-bf96-ba7e8b300e53",
+      "result_id": "ba38282c-aab6-4ddb-92a9-de9605e0932d"
+    },
+    {
+      "claim_id": "6deb8df1-85c4-467e-9417-b8f0e18918fe",
+      "result_id": "7854a687-f758-4965-b0bb-e5eee6c0db06"
+    },
+    {
+      "claim_id": "484225ab-b4ef-4c86-9576-b99d7f9c2bd9",
+      "result_id": "7854a687-f758-4965-b0bb-e5eee6c0db06"
+    },
+    {
+      "claim_id": "00dfcbaf-05c7-4e01-bf26-689b7831e41f",
+      "result_id": "7854a687-f758-4965-b0bb-e5eee6c0db06"
+    },
+    {
+      "claim_id": "ed754c5c-c8d9-46de-b736-68dbc7aed6c6",
+      "result_id": "7854a687-f758-4965-b0bb-e5eee6c0db06"
+    },
+    {
+      "claim_id": "1e714e69-979d-435b-93ac-5ee4215ff8cf",
+      "result_id": "bd4a3d61-ff1d-4d7a-8c51-30ba9538ea85"
+    },
+    {
+      "claim_id": "5930e893-eace-4045-890b-61eb855d6224",
+      "result_id": "bd4a3d61-ff1d-4d7a-8c51-30ba9538ea85"
+    },
+    {
+      "claim_id": "b8255a58-c2c4-40d7-be48-f2561492b2b6",
+      "result_id": "bd4a3d61-ff1d-4d7a-8c51-30ba9538ea85"
+    },
+    {
+      "claim_id": "1e280a90-e32c-4fbd-b674-dedb819bb280",
+      "result_id": "bd4a3d61-ff1d-4d7a-8c51-30ba9538ea85"
+    },
+    {
+      "claim_id": "01365e6e-5270-4529-b9be-33674384a11f",
+      "result_id": "bd4a3d61-ff1d-4d7a-8c51-30ba9538ea85"
+    }
+  ],
+  "comparisons": []
+}

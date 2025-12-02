@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study recorded 131 LIP neurons across three monkeys, all with visual responses, delay-period/presaccadic activity, no eye position contamination, and anatomically confirmed location in the lateral intraparietal sulcus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide clear methodological details about neuron selection criteria and anatomical localization. The inclusion/exclusion criteria are well-defined and anatomical location is confirmed by MRI (Figure 1), providing strong support for the dataset characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "In the basic memory task (72 neurons), approximately 45-48% of neurons exhibited environmental memory responses, showing significant post-saccadic activity when saccades brought vanished stimulus locations into receptive fields, with population-level significance (p<0.001) and decay over forgetting trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 collectively demonstrate environmental memory in the basic task with appropriate statistical tests (Wilcoxon rank sum/signed rank), consistent results across monkeys, and clear experimental design. The population analyses (C13-C14) confirm individual neuron findings, and decay is documented (C12), providing converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Memory responses were weaker (p<0.001) and had longer latencies than visual responses, with mean visual/memory latencies of 36/77 ms (Monkey A) and 9/116 ms (Monkeys B/C), though some cells showed remapping-characteristic latency advances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide quantitative comparisons between memory and visual responses with appropriate statistics. The latency data (C16-C19) are specific and statistically significant, and the observation about remapping (C20) adds nuance. However, the unusually short 9 ms visual latency for Monkeys B/C (C19) is surprising and may warrant scrutiny.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Memory responses decayed during Block 4 forgetting trials, with exponential decay constants of 0.3 trials (R\u00b2=0.7, Monkey A) and 0.13 trials (R\u00b2=0.6, Monkeys B/C), and significant differences between first and last 10 trials (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 document memory decay with quantitative fitting parameters and statistical validation. The exponential fits show reasonable R\u00b2 values, and the comparison of early vs. late trials provides independent confirmation of decay. The methodology is appropriate for characterizing temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Population-level analyses using memory indices showed significant median shifts (>0.1) and positive skewness (medcouple ~1), confirming that memory cells were not merely the tail of a symmetric distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 address a critical statistical concern about whether memory responses represent true population shifts versus distributional tails. The use of both median analysis and medcouple (a robust skewness measure) with highly significant p-values provides strong evidence for genuine population-level memory effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In the No-RF task (44 neurons), where stimuli never appeared in receptive fields during memory formation, 26% (Monkey A) and 57% (Monkey C) of neurons still exhibited environmental memory, with population-level significance (p=0.006-0.007) and no difference between baseline and memory-forming conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 demonstrate the critical finding that environmental memory does not require direct receptive field stimulation. The No-RF task design (C28) addresses a key confound from the basic task, and the statistical evidence (C31-C34) confirms memory formation without RF stimulation. This is a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "No-RF task results showed positive median shifts (\u22650.1, medcouple=0.2), visual responses larger than memory responses (p<0.0001-0.03), and longer memory latencies (p=0.006-0.008), with mean visual/memory latencies of 39/101 ms (Monkey A) and 25/106 ms (Monkey C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 parallel the basic task findings in the No-RF paradigm, showing consistent patterns of memory response characteristics. The population distribution analysis (C35) and latency comparisons (C38-C41) are statistically sound and replicate key features from the basic task, strengthening overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "No-RF task memory decay showed rate constants of 0.09 trials (R\u00b2=-0.06, Monkey A) and 0.07 trials (R\u00b2=0.12, Monkey C), with significant differences between first and last 10 trials (p=0.0002-0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C45 report decay parameters, but the negative R\u00b2 for Monkey A (C42) indicates poor model fit, which the authors acknowledge. While the first-vs-last trial comparisons (C44-C45) show significant decay, the exponential model may not be appropriate for these data. Alternative decay models should be explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "LIP neurons exhibit environmental memory signals that persist across multiple trials, decay slowly, update with eye movements, and do not require visual stimulation or specific training saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 summarize the main experimental findings, which are well-supported by the data from both tasks. The characteristics described (persistence, decay, eye movement updating, independence from RF stimulation) are each demonstrated by specific experimental manipulations and statistical analyses presented in earlier claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Similar environmental memory signals exist in FEF (visual/visuomovement cells), and LIP memory can be evoked without RF stimulation, with different saccades for establishment vs. recall, and occurs in both remapping and non-remapping neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 compare current findings to prior FEF work and highlight key advances. The citation to Umeno & Goldberg (2001) is appropriate (C52), and the demonstrations that memory is independent of RF stimulation (C53) and specific saccades (C54) are supported by the No-RF task data. The remapping observation (C55) adds important mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "LIP has access to supraretinal representations despite retinotopic responses, and memory responses cannot be simply attributed to saccadic remapping or saccade planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 present the central theoretical conclusion. The No-RF task results (showing memory without RF stimulation) and dissociation from remapping (C55, C73) provide strong evidence against simple remapping explanations. The inference of supraretinal access is well-supported, though the exact mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Clinical and prior literature establish that bilateral parietal lesions impair environmental memory, FEF shows similar signals, and LIP serves as a priority map, providing context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 cite relevant prior work appropriately. The Levine et al. (1985) citation for parietal lesion effects (C58-C59), Umeno & Goldberg (2001) for FEF (C60), and Bisley & Goldberg (2010) for LIP priority map function (C61) are all appropriate contextual citations that support the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Motor actions are coded retinotopically in parietal cortex, suggesting LIP transforms supraretinal environmental memory into retinotopic representations for action generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 propose a functional interpretation based on cited literature (Duhamel et al., 1992; Andersen et al., 1998) and current findings. The inference that LIP performs coordinate transformation (C63) is reasonable given the data showing supraretinal access (C56) and retinotopic expression, though direct evidence for this transformation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Bisiach & Luzzatti (1978) patient studies show that parietal damage causes retinotopic memory retrieval deficits, suggesting supraretinal storage elsewhere but retinotopic parietal processing for memory report.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 cite classic neuropsychological evidence (Bisiach & Luzzatti, 1978) that aligns well with the current findings. The interpretation that memory is stored supraretinally but accessed retinotopically (C66-C69) is consistent with the experimental results, though the inference about storage location (C66) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Memory responses have longer latencies and lower intensity than visual responses, suggesting feedback rather than feedforward mechanisms, and many memory cells lack remapping responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 propose mechanistic interpretations based on response characteristics. The latency/intensity observations (C70) are data-supported, the feedback inference (C71) is reasonable given the latency and cites analogous V4 findings (C72), and the remapping dissociation (C73) is empirically demonstrated. The mechanistic proposal is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Human psychophysical evidence (Karn et al., 1997; Poletti et al., 2013) shows supraretinal spatial representations that don't rely solely on remapping, with variability patterns suggesting shifts from remapping to supraretinal mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 cite relevant human psychophysical literature that supports the existence of supraretinal representations. The citations are appropriate and the described findings (C75-C77) align with the proposed dual mechanism (remapping + supraretinal). This provides independent converging evidence for the study's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "LIP gain fields (eye position modulation) could enable supraretinal coordinate calculations, with eye position signals potentially from area 3a, though gain fields are initially inaccurate post-saccade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 propose a gain field mechanism for coordinate transformation. The existence of gain fields in LIP (C79) is established knowledge, the mathematical feasibility (C81) is well-cited, and the area 3a source (C80) is plausible. The temporal dynamics caveat (C82) is appropriately noted. This is reasonable speculation grounded in literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Hippocampal place cells and entorhinal grid cells exist across species (rats, monkeys, humans), and anatomical connections exist between parahippocampal gyrus and LIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 cite well-established literature on place cells (C83-C84), grid cells (C85-C87), and LIP-hippocampal connectivity (C88). These citations are accurate and appropriate for establishing the anatomical and functional context for proposing hippocampal involvement in supraretinal memory storage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A proposed model suggests LIP sends eye-position-modulated signals to medial temporal lobe for supraretinal memory generation, which returns to activate LIP only when locations match retinotopic vectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C92 propose a specific circuit model for supraretinal memory. While anatomically plausible given known connections (C88), this is entirely speculative with no direct experimental evidence. The model is internally consistent with the data but represents a hypothesis for future testing rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "LIP is part of a spatial network with FEF and superior colliculus, and parietal cortex sends retinotopic signals to oculomotor and skeletomotor systems, including for auditory stimuli converted from craniotopic coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 cite established literature on parietal network organization and coordinate transformations. The citations are appropriate and accurate, establishing that retinotopic coding is the common output format for motor systems, which contextualizes why LIP would express memory retinotopically despite supraretinal access.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Environmental memory in LIP exemplifies conversion of supraretinal signals to retinotopic representations for memory, attention, and motor control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 synthesizes the main findings into a functional interpretation. This conclusion is well-supported by the experimental data showing supraretinal access (No-RF task) and retinotopic expression (both tasks), combined with cited literature on parietal motor coding. The generalization to attention is reasonable but less directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Three rhesus monkeys (1 female, 2 male, 6-13 kg) were used with appropriate institutional ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 provide standard methodological information about subjects and ethical compliance. The details are clearly stated and ethical approval is documented (protocol NYSPI-1225-C), meeting standard reporting requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Humans effortlessly establish environmental memory of new places that can guide action without vision, with remembered objects not needing behavioral relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe general properties of human environmental memory. These are well-established phenomena in cognitive psychology and provide appropriate motivation for the study. The characterization is accurate and sets up the experimental questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Abstract summary: LIP neurons respond to vanished stimulus locations brought into receptive fields by saccades, without requiring prior RF stimulation, with weaker/longer-latency responses than visual responses, suggesting supraretinal memory access expressed retinotopically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 accurately summarize the main findings in the abstract. These summary claims are well-supported by the detailed experimental results presented in the manuscript, providing an accurate overview of the study's key contributions.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2049 @@
+{
+  "submission": {
+    "id": "a75020a0-39bb-4aec-9450-ac903e3df5d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:15:04.118296Z",
+    "updated_at": "2025-12-02T01:15:04.118296Z"
+  },
+  "content": [
+    {
+      "id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "submission_id": "a75020a0-39bb-4aec-9450-ac903e3df5d4",
+      "content_type": "manuscript",
+      "content_text": "# Glucocorticoid receptor-mediated amygdalar metaplasticity underlies adaptive modulation of fear memory by stress\n\n## Authors\n\n- Ran Inoue<sup>1</sup> ([ORCID: 0000-0003-0700-7734](https://orcid.org/0000-0003-0700-7734)) \u2020\n- Kareem Abdou<sup>2</sup>\n- Ayumi Hayashi-Tanaka<sup>1</sup>\n- Shin-ichi Muramatsu<sup>4</sup> ([ORCID: 0000-0002-3185-7790](https://orcid.org/0000-0002-3185-7790))\n- Kaori Mino<sup>1</sup>\n- Kaoru Inokuchi<sup>2</sup> ([ORCID: 0000-0002-5393-3133](https://orcid.org/0000-0002-5393-3133))\n- Hisashi Mori<sup>1</sup> ([ORCID: 0000-0001-9743-2456](https://orcid.org/0000-0001-9743-2456))\n\n### Affiliations\n\n1. Department of Molecular Neuroscience, Graduate School of Medicine and Pharmaceutical Sciences University of Toyama Toyama Japan\n2. Department of Biochemistry, Graduate School of Medicine and Pharmaceutical Sciences University of Toyama Toyama Japan\n3. Department of Biochemistry, Faculty of Pharmacy Cairo University Cairo Egypt\n4. Division of Neurology, Department of Medicine Jichi Medical University Tochigi Japan\n5. Center for Gene and Cell Therapy, The Institute of Medical Science The University of Tokyo Tokyo Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nGlucocorticoid receptor (GR) is crucial for signaling mediated by stress-induced high levels of glucocorticoids. The lateral nucleus of the amygdala (LA) is a key structure underlying auditory-cued fear conditioning. Here, we demonstrate that genetic disruption of GR in the LA (LAGRKO) resulted in an auditory-cued fear memory deficit for strengthened conditioning. Furthermore, the suppressive effect of a single restraint stress (RS) prior to conditioning on auditory-cued fear memory in floxed GR (control) mice was abolished in LAGRKO mice. Optogenetic induction of long-term depression (LTD) at auditory inputs to the LA reduced auditory-cued fear memory in RS-exposed LAGRKO mice, and in contrast, optogenetic induction of long-term potentiation (LTP) increased auditory-cued fear memory in RS-exposed floxed GR mice. These findings suggest that prior stress suppresses fear conditioning-induced LTP at auditory inputs to the LA in a GR-dependent manner, thereby protecting animals from encoding excessive cued fear memory under stress conditions.\n\n## Introduction\n\nStress activates the hypothalamus\u2013pituitary\u2013adrenal (HPA) axis, which results in the release of glucocorticoid hormones (cortisol in humans and corticosterone in rodents) from the adrenal cortex. Glucocorticoid hormones can readily enter the brain and bind to specific receptors in regions crucial for memories of stressful experiences, such as the hippocampus and amygdala, thereby enhancing the consolidation of emotionally arousing events (de Quervain et al., 2009; Roozendaal et al., 2009). Two types of receptors mediate the effects of glucocorticoids: type I mineralocorticoid receptor (MR, Nr3c2) and type II glucocorticoid receptor (GR, Nr3c1). Compared with MR, GR has a lower binding affinity for glucocorticoids and is largely unoccupied at basal levels, and is thus considered to be particularly important in signaling mediated by stress-induced high levels of glucocorticoids (de Kloet et al., 2005; Reul and de Kloet, 1985).\n\nThe lateral nucleus of the amygdala (LA) is a key structure underlying auditory-cued fear conditioning (AFC) (LeDoux, 2000). Auditory information, which is critical for AFC, reaches the LA either from the medial geniculate nucleus (MGN) or from the auditory cortex (AC). Long-term potentiation (LTP) in the two auditory inputs to the LA is essential for the acquisition and expression of auditory-cued fear memory (Blair et al., 2001; Rogan et al., 1997; Tsvetkov et al., 2002). In response to stress, GR activation plays a central role in the formation of long-term memory, which is an essential mechanism for learning from stressful events and respond adaptively to similar demands in the future (Finsterwald and Alberini, 2014). In an electrophysiological study using brain slices, glucocorticoid prolonged excitatory synaptic responses in the basolateral complex of the amygdala (BLA) by binding to GR (Karst et al., 2010). In contrast, after an acute stress exposure, application of glucocorticoid suppressed excitatory synaptic responses in the BLA in a GR-dependent manner. This switch in synaptic response to glucocorticoid is referred to as metaplasticity (Abraham and Tate, 1997; Schmidt et al., 2013). Prior delivery of behavioral stress has also been shown to suppress subsequent induction of LTP (Kavushansky and Richter-Levin, 2006). However, whether stress-induced amygdalar metaplasticity occurs in vivo in a way relevant to the strength of the auditory-cued fear memory, and what role LAGR plays in this neural process are unknown.\n\nIn this study, we generated LA-selective GR knockout (LAGRKO) mice to investigate the region-specific role of LAGR in mediating the modulatory effects of stress on fear memory. We first compared contextual and auditory-cued fear memory conditioned at different strengths between floxed GR (control) and LAGRKO mice at basal condition. We then investigated the effect of LAGR disruption on the adaptive modulation of fear memory after exposure to acute stress. Finally, using an optogenetic technique to induce LTP and long-term depression (LTD), we investigated how GR-dependent metaplasticity in the LA influenced auditory-cued fear memory in response to prior stress exposure.\n\n## Results\n\n### Generation of LAGRKO mice\n\nTo selectively knockout the GR gene in the LA, we generated two mutant mouse lines. The knock-in line expressed improved Cre (iCre) recombinase (Shimshek et al., 2002) under the control of the gastrin-releasing peptide gene (Grp) promoter, and the animals are referred to as Grp-iCre mice (Figure 1A,B). Grp is abundant in the LA and absent or present at low levels in other subnuclei of the amygdala (Shumyatsky et al., 2002). Thus, Grp promoter could be used for driving the expression of Cre recombinase selectively in the LA. To confirm its usefulness, we crossed a Grp-iCre mouse with a CAG-CAT-Z reporter mouse, which carried the chloramphenicol acetyltransferase gene (CAT) flanked by two loxP sites and the \u03b2-galactosidase gene in sequence (Araki et al., 1995). Cre-mediated recombination between the two loxP sites resulted in the expression of \u03b2-galactosidase, which was detected by X-gal staining. As shown in Figure 1C, strong \u03b2-galactosidase expression was detected in the LA and hippocampal CA3 region of Grp-iCre/CAG-CAT-Z mice, indicating the presence of robust Cre-loxP recombination in these brain regions. In addition, sparse and weak expression of \u03b2-galactosidase appeared in the accessory basal nucleus of the amygdala and in layer 6 of the cerebral cortex.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram of the gene targeting strategy. iCre and pgk-neo cassettes flanked by two FRT sites were inserted into the gastrin-releasing peptide gene (Grp) locus. Met is the translation initiation site of Grp. The location of PCR primers (Gic1, Gic2, Gic3, NeoP1, and NeoP2) used for genotyping are indicated. DT, diphtheria toxin gene; pBSK, pBluescriptII SK. The chimeric mouse obtained was crossed with a CAG-FLPe mouse to delete the pgk-neo cassette and establish the Grp-iCre (Gic) mouse line. (B) Genotyping PCR of genomic DNA prepared from WT; Gic+/\u2212, Neo+; Gic+/\u2212, and \u0394Neo mice. (C) Cre activity in Grp-iCre mice was examined by crossing Grp-iCre mice with lacZ reporter mice (CAG-CAT-Z) mice. \u03b2-galactosidase expression in a Grp-iCre/CAG-CAT-Z mouse brain\u00a0stained with X-gal. X-gal staining revealed robust Cre-loxP recombination in the lateral nucleus of the amygdala (LA) and the hippocampal CA3 region, with sparser recombination in the accessary basal nucleus of the amygdala (AB), and in layer 6 of the cerebral cortex (VI).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Strategy for targeting the GR (Nr3c1) gene locus. The coding regions of GR exons are indicated by closed boxes. The construct included two loxP sites and the pgk-neo genes flanked by two FRT sites. DT, diphtheria toxin gene; pBSK, pBluescriptII SK; GR, glucocorticoid receptor. The chimeric mice obtained were crossed with CAG-FLP mice to delete the pgk-neo cassette and establish a floxed GR mouse line. (B) Genotyping PCR of genomic DNA prepared from WT, GRflox/+, Neo (+), GR flox/+, \u0394Neo, and GR flox/flox, \u0394Neo mice. The locations of PCR primers used are indicated.\n\nNext, we generated a floxed GR (Nr3c1loxP/loxP) mouse line in which exon 3 of the Nr3c1 gene (encoding the DNA-binding domain) was flanked by two loxP sites (Figure 1\u2014figure supplement 1). Grp-iCre mice were crossed with floxed GR mice to establish the LAGRKO mouse line (Nr3c1loxP/loxP, GrpiCre+/\u2212). Immunofluorescence staining with a specific antibody against GR revealed a selective disruption of GR proteins in the LA of LAGRKO mice (Figure 2A). There was no significant difference between the two genotypes in the expression level of GR in the central nucleus and basal nucleus of the amygdala. Double immunofluorescence staining with anti-GR and anti-NeuN (a neuronal marker) antibodies showed that GR was undetectable in approximately 70% of LA neurons in LAGRKO mice (floxed GR, 90.88 \u00b1 1.39%; LAGRKO, 20.27 \u00b1 0.95%; Figure 2A,B, Figure 2\u2014figure supplement 1A). The expression level of GR in the hippocampal CA3 region of floxed GR mice was very low, and it was slightly decreased in LAGRKO mice (Figure 2C). There was no significant difference between the two genotypes in the expression level of GR in the cerebral cortex (Figure 2C, Figure 2\u2014figure supplement 1B), hippocampal CA1 and CA2 regions, and dentate gyrus (Figure 2C). Collectively, these results indicate the successful establishment of a novel LAGRKO mouse line.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig2-v2.jpg)\n\n**Figure 2.:** (A) The LAGRKO mouse line (GRflox/flox, Grp-iCre+/-) was established by crossing floxed GR (GRflox/flox) and Grp-iCre mice. Double immunofluorescence staining of GR (green, left panels) and NeuN (magenta, middle panels) in coronal brain sections from floxed GR and LAGRKO mice. The overlap of green and magenta signals (white, right panels) indicates the expression of GR in LA neurons in floxed GR mice (upper), which was apparently reduced in LAGRKO mice (lower). Magnified images of the boxed areas are shown in the insets. LA, lateral nucleus of the amygdala; BA, basal nucleus of the amygdala; CeA, central nucleus of the amygdala. (B) Quantification of GR+ and NeuN+ cells in the LA of floxed GR and LAGRKO mice (n\u00a0=\u00a09 sections from three mice). Data are presented as mean\u00a0\u00b1\u00a0S.E.M. **p<0.001. (C) Expression of GR in the cerebral cortex and hippocampus.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Double immunofluorescence staining of GR (green, left panels) and NeuN (magenta, middle panels) in the LA. The overlap of green and magenta signals (white, right panels) indicates the expression of GR in neurons. Scale bar\u00a0=\u00a050 \u03bcm. (B) Expression of GR in the cerebral cortex. Scale bar\u00a0=\u00a0100 \u03bcm.\n\n### Disruption of LAGR impairs auditory-cued fear memory for strengthened conditioning\n\nSince GR has a low binding affinity for glucocorticoids and its activation requires high levels of hormones, we investigated the role of LAGR in AFC at different strengths. After moderate conditioning, which included three CS\u00a0\u00d7US pairings, LAGRKO mice exhibited the same freezing levels as floxed GR mice during the training, contextual test, and auditory-cued test (Figure 3\u2014figure supplement 1). When the training was strengthened to six CS\u00a0\u00d7\u00a0US pairings (Figure 3A), LAGRKO mice exhibited significantly lower freezing levels than floxed GR mice during tone presentation in the cued test (p=0.046; unpaired Student\u2019s t test; Figure 3D), whereas there were no significant differences between the two genotypes in freezing levels during the training (F1,126 = 1.19, p=0.278; two-way repeated measures ANOVA; Figure 3B) and contextual test (p=0.803; unpaired Student\u2019s t test; Figure 3C). Corticosterone assays revealed significantly higher plasma corticosterone levels 90 min after training with six CS\u00a0\u00d7\u00a0US pairings than after training with three CS\u00a0\u00d7\u00a0US pairings in both genotypes (floxed GR, p=0.016; LAGRKO, p<0.001; unpaired Student\u2019s t test; Figure 3E). In the open field test, LAGRKO mice did not show any alteration in anxiety level or locomotion (Figure 3\u2014figure supplement 2), suggesting that the deficit of auditory-cued fear memory in LAGRKO mice was not the result of altered anxiety and locomotor activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig3-v2.jpg)\n\n**Figure 3.:** (A) Experimental protocol for fear conditioning. Mice were trained with a protocol using six CS\u00a0\u00d7\u00a0US pairings. Contextual and auditory-cued fear memory were tested 24 and 48 hr after training, respectively. Freezing levels during the training (B), contextual test (C), and cued test (D). During the cued test, LAGRKO mice (n\u00a0=\u00a010) exhibited significantly lower freezing levels in the presence of the tone than did floxed GR mice (n\u00a0=\u00a010). There was no significant difference in freezing levels between the two genotypes during the training and contextual test. (E) Plasma corticosterone levels 90 min after training were significantly higher in mice conditioned with six CS\u00a0\u00d7\u00a0US pairings (n\u00a0=\u00a07) than in mice conditioned with 3 CS\u00a0\u00d7\u00a0US pairings (n\u00a0=\u00a06) in both genotypes. Data are presented as mean\u00a0\u00b1\u00a0S. E. M. *p<0.05, **p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Experimental design for fear conditioning. Mice were trained with three CS\u00a0\u00d7\u00a0US pairing protocol. Contextual and auditory fear memories were tested 24 and 48 hr after training, respectively. Freezing levels during the training (B), contextual test (C), and cued test (D). Data are presented as mean\u00a0\u00b1\u00a0S. E. M. Floxed GR, n\u00a0=\u00a010; LAGRKO, n\u00a0=\u00a016. Data are presented as mean\u00a0\u00b1\u00a0S. E. M.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Distance of travel throughout the apparatus (A) and in the center zone of the open field (B) and time spent in the center of the open field (C) did not differ between the two genotypes. Floxed GR, n\u00a0=\u00a015; LAGRKO, n\u00a0=\u00a010. Data are presented as mean\u00a0\u00b1\u00a0S. E. M.\n\n### Injection of GR-expressing adeno-associated virus into the LA rescues the auditory-cued fear memory deficit in LAGRKO mice\n\nAlthough we successfully and selectively disrupted GR in the LA of LAGRKO mice, we cannot exclude the possibility that sparse disruption of GR in other brain areas, such as the hippocampal CA3 region, may be associated with behavioral impairment in LAGRKO mice. To confirm that the auditory-cued fear memory deficit can be specifically attributed to the disruption of LAGR, we performed a rescue experiment by injecting a GR-expressing adeno-associated virus (AAV-GR) into the LA of LAGRKO mice. Green fluorescent protein-expressing AAV (AAV-GFP) was used as the control. Fear conditioning was conducted 4 weeks after virus injection (Figure 4A,B). LAGRKO mice injected with AAV-GR and floxed GR mice injected with AAV-GFP exhibited significantly higher freezing levels during the auditory-cued fear memory test than did LAGRKO mice injected with AAV-GFP (F2,24 = 5.25, p=0.013; one-way ANOVA followed by post hoc Tukey\u2013Kramer test; Figure 4E). There was no significant difference in freezing levels between the three mouse groups during training (F2,168 = 0.60, p=0.522; two-way repeated measures ANOVA; Figure 4C) and the contextual fear memory test (F2,24 = 0.53, p=0.600; one-way ANOVA; Figure 4D). This rescue experiment further suggests the specific involvement of LAGR in AFC.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig4-v2.jpg)\n\n**Figure 4.:** (A) The experimental protocol for adeno-associated virus (AAV) vector injection and fear conditioning. (B) Representative images of the expression of green fluorescent protein (GFP, green) and GR (magenta) in the LA of LAGRKO mice injected with AAV-GFP or AAV-GR. The expression levels of GFP and GR were assessed after the behavioral test was completed. Freezing levels during the training (C), contextual test (D), and cued test (E). During the cued test, LAGRKO mice (n\u00a0=\u00a09) injected with AAV-GR and floxed GR injected with AAV-GFP exhibited significantly higher levels of freezing in the presence of the tone than did AAV-GFP-injected LAGRKO mice (n\u00a0=\u00a09). There were no significant differences between the three groups during the training and contextual tests. Data are presented as mean\u00a0\u00b1\u00a0S. E. M. *p<0.05.\n\n### Disruption of LAGR impairs adaptive modulation of conditioned fear in response to prior restraint stress exposure\n\nFear conditioning is highly susceptible to modulation by prior stress exposure (Cordero et al., 2003; Rodr\u00edguez Manzanares et al., 2005). To investigate the involvement of LAGR in mediating the effect of prior stress on subsequent fear conditioning, floxed GR and LAGRKO mice were exposed to a 20 min restraint stress (RS) and conditioned 1 hr later (Figure 5A). Mice were conditioned with three CS\u00a0\u00d7\u00a0US pairings that resulted in equivalent freezing levels in floxed GR and LAGRKO mice in the contextual and auditory-cued fear memory tests (Figure 3\u2014figure supplement 1). RS exposure 1 hr prior to fear conditioning induced a significant increase in freezing levels during the training (F3,215 = 32.25, p<0.001; two-way repeated measures ANOVA; Figure 5B) and contextual memory test (F3,43 = 5.03, p=0.004; one-way ANOVA followed by post hoc Tukey\u2013Kramer test; Figure 5C) in both floxed GR and LAGRKO mice. In contrast to the facilitating effect of prior RS exposure on contextual fear memory, RS exposure 1 hr before fear conditioning induced a significant decrease in auditory-cued freezing in floxed GR mice but not in LAGRKO mice (floxed GR, p=0.016; LAGRKO, p=0.951; unpaired Student\u2019s t test; Figure 5D), suggesting this suppressive effect is LAGR-dependent. In order to examine whether RS and AFC induce differences in the levels of circulating corticosterone, plasma corticosterone levels were measured 1 hr after RS exposure alone and 90 min after RS exposure followed by AFC. There was no significant difference in plasma corticosterone levels observed between floxed GR and LAGRKO mice at the two time points (1 hr after RS exposure alone, p=0.21; 90 min after RS exposure followed by AFC, p=0.67; unpaired Student\u2019s t test; Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig5-v2.jpg)\n\n**Figure 5.:** (A) The experimental design for prior restraint stress (RS) exposure and fear conditioning. Floxed GR and LAGRKO mice were exposed to a 20 min RS and fear-conditioned 1 hr later. Contextual and auditory-cued fear memories were tested 24 and 48 hr after training, respectively. (B) Mice exposed to RS 1 hr before conditioning (brown, RS1h-Floxed GR, n\u00a0=\u00a011; RS1h-LAGRKO, n\u00a0=\u00a010) exhibited significantly higher freezing levels than did nonstressed mice (black, Floxed GR, n\u00a0=\u00a010; LAGRKO, n\u00a0=\u00a016) during the training session in both genotypes. (C) Mice exposed to RS exhibited significantly higher freezing levels than did nonstressed mice during the contextual fear memory test. (D) During the cued test, floxed GR mice exposed to RS 1 hr before training exhibited significantly lower freezing levels than did the nonstressed floxed GR mice. Previous RS exposure had no effect on auditory-cued fear memory in LAGRKO mice. Data are presented as mean\u00a0\u00b1\u00a0S. E. M. *p<0.05; **p<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Plasma corticosterone levels 1 hr after RS exposure (n\u00a0=\u00a05). (B) Plasma corticosterone levels 90 min after RS exposure followed by AFC (n\u00a0=\u00a05). Data are presented as mean\u00a0\u00b1\u00a0S. E. M.\n\n### Optogenetic manipulation of metaplasticity in the LA alters the behavioral effect of prior RS exposure on auditory-cued fear memory\n\nWe next investigated whether stress-induced changes in synaptic plasticity were responsible for the effect of prior stress on auditory-cued fear memory in floxed GR and LAGRKO mice. It was recently proposed that metaplasticity may play a role in the regulation of learning and memory under stress (Jo\u00ebls et al., 2012; Myers et al., 2014). Therefore, we hypothesized that prior RS exposure would suppress AFC-induced LTP in the LA, leading to the attenuation of auditory-cued fear memory in floxed GR mice, and that LAGR disruption might impair stress-induced metaplasticity in the LA. To test this, we used a recently established technique that allows engineering a memory using an optical LTP or LTD protocol (Nabavi et al., 2014). We injected an AAV vector expressing a variant of light-activated channelrhodopsin 2, oChIEF, into bilateral MGN and AC. Four weeks after virus injection, when oChIEF had reached axon terminals in the LA, mice were exposed to a RS and conditioned 1 hr later (Figure 6A,B). Immediately after the first auditory-cued fear memory test (Test 1), which was conducted 24 hr after fear conditioning, mice received an optical LTP or LTD protocol and tested 24 hr later (Test 2). The optical LTP protocol significantly increased freezing levels during the Test\u00a02 compared with Test 1 in floxed GR mice but not in LAGRKO mice (floxed GR, p=0.046; LAGRKO, p=0.811; paired Student\u2019s t test; Figure 6C,D). These results support our hypothesis that prior RS exposure suppresses AFC-induced LTP in a GR-dependent manner, thus resulting in reduced auditory-cued fear memory in floxed GR mice. In LAGRKO mice, the optical LTD protocol significantly reduced freezing levels during Test 2 compared with that during Test 1 (p=0.010; paired Student\u2019s t test; Figure 6E), further supporting the hypothesis that prior stress weakens synaptic strength in the LA leading to reduced cued fear memory.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig6-v2.jpg)\n\n**Figure 6.:** (A) Experimental schedule for AAV injection, RS exposure, auditory-cued fear conditioning, and optical LTP or LTD induction. (B) Representative fluorescence image of areas expressing AAV-oChIEF-tdTomato 4 weeks after virus injection in the medial geniculate nucleus (MGN) and auditory cortex (AC). LA, lateral nucleus of the amygdala. (C) Floxed GR mice (n\u00a0=\u00a08) that received immediate optical LTP after the first auditory-cued fear memory test (Test 1) exhibited significantly increased freezing levels in the second auditory-cued fear memory test (Test 2). (D) LAGRKO mice (n\u00a0=\u00a08) that received optical LTP stimulation exhibited the same freezing levels in Tests 1 and 2. (E) LAGRKO mice (n\u00a0=\u00a08) that received LTD stimulation immediately after Test 1 exhibited significantly lower freezing levels in Test 2 than in Test 1. Graphs show the freezing rate during the first 1 min of tone presentation at Tests 1 and 2. (F, G) A plot of the average of field EPSP slopes (normalized to the period before optical stimulation) before and after delivering an optical LTP (Floxed GR, n\u00a0=\u00a04, before LTP, 100 \u00b1 0.8%, after LTP, 148.9 \u00b1 3.2%; LAGRKO, n\u00a0=\u00a04, before LTP, 100 \u00b1 0.6%, after LTP, 149.3 \u00b1 2.8%) or LTD (Floxed GR, n\u00a0=\u00a04, before LTD, 100 \u00b1 0.5%, after LTD, 77.4 \u00b1 0.8%; LAGRKO, n\u00a0=\u00a04, before LTD, 100 \u00b1 0.6%, after LTD, 76.7 \u00b1 0.8%). Data are presented as mean\u00a0\u00b1\u00a0S. E. M. *p<0.05.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34135/elife-34135-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In floxed GR mice, RS-induced release of corticosterone activates G protein-coupled postsynaptic membrane glucocorticoid receptors (mGRs), leading to the synthesis and release of endocannabinoid. The released endocannabinoid binds to the presynaptic CB1 endocannabinoid receptor to suppress the glutamate release. In addition, postsynaptic mGRs activation rapidly inhibit Ca2+ influx via the NMDA receptor. Therefore, when fear conditioning is conducted 1 hr after RS exposure, the reduced glutamate release and postsynaptic calcium entry may impair the persistence of LTP in the LA, thereby leading to suppression of auditory-cued fear memory, which can be rescued by delivery of an optical LTP protocol in the LA. In LAGRKO mice, which lack mGRs, RS exposure presumably fails to alter LTP persistence. Therefore, stressed-LAGRKO mice exhibit strong auditory-cued fear memory comparable to non-stressed LAGRKO mice, which can be suppressed by delivery of an optical LTD protocol in the LA.\n\nTo confirm that the optical LTP or LTD protocols produced the expected synaptic effects, we conducted in vivo recordings in the LA of anaesthetized na\u00efve mice expressing oChIEF in auditory regions. Brief light pulses (0.033 Hz) at the recording site produced field responses, which were potentiated by the LTP protocol (Floxed GR, F1,126 = 191.5, p<0.001; LAGRKO, F1,126 = 237.7, p<0.001; two-way repeated measures ANOVA; Figure 6F) and depressed by the LTD protocol (Floxed GR, F1,126 = 511.9, p<0.001; LAGRKO, F1,126 = 497.3, p<0.001; two-way repeated measures ANOVA; Figure 6G) in both floxed GR and LAGRKO mice. These results suggest that the LTP and LTD protocols used in the behavioral experiments modify synaptic strength in the expected manner.\n\n## Discussion\n\nIn the present study, we demonstrate that LAGR exclusively mediates auditory-cued fear responses to strengthened conditioning, suggesting a critical role for LAGR in signaling mediated by stress-induced high levels of glucocorticoids. We further demonstrate that LAGR is indispensable for the suppressive effect of prior RS exposure on AFC. The optogenetic potentiation of synaptic strength at auditory inputs to the LA by an LTP protocol significantly increased auditory-cued fear memory in RS-exposed floxed GR but not in RS-exposed LAGRKO mice. Accordingly, weakening the synaptic strength of auditory inputs to the LA by an LTD protocol significantly reduced auditory-cued fear memory in RS-exposed LAGRKO mice. These findings suggest that stress-induced metaplasticity occurs in the LA in a GR-dependent manner, and is responsible for the suppressive effect of prior RS on AFC.\n\nThe degree of stress induced by learning itself has been shown to be related to strength of the memory (Cordero et al., 1998; Cordero and Sandi, 1998). In our study, there was no difference in freezing levels between floxed GR and LAGRKO mice conditioned with three CS\u00a0\u00d7\u00a0US pairings. When the number of CS\u00a0\u00d7\u00a0US pairings of the conditioning procedure was increased to six, LAGRKO exhibited an impaired auditory-cued fear memory. Concomitantly, in both genotypes, plasma corticosterone levels 90 min after fear conditioning were significantly higher in the group with six CS\u00a0\u00d7\u00a0US pairings than in the group with three CS\u00a0\u00d7\u00a0US pairings. It is likely that the increased number of CS\u00a0\u00d7\u00a0US pairings strengthened the connection between auditory CS and US in the LA, and LAGR, which is activated by high levels of circulating corticosterone, contributes exclusively to this neural process. These findings are in agreement with the lower binding affinity of GR for glucocorticoids, leading to the critical role of GR in signaling mediated by stress-induced high levels of glucocorticoids (Reul and de Kloet, 1985).\n\nEmerging evidence indicates that stress exposure modulates subsequent learning and memory bidirectionally, either through facilitation or impairment (Raio and Phelps, 2015). Glucocorticoid signaling has been thought as a common mechanism for mediating the effects of stress on fear memory (Cordero et al., 2003; Rodr\u00edguez Manzanares et al., 2005). In our behavioral tests, a single RS exposure 1 hr before conditioning significantly reduced auditory-cued fear memory in floxed GR mice but not in LAGRKO mice, suggesting that the suppressive effect of prior RS is LAGR-dependent. To date, there are no reports demonstrating the effects of stress 1 hr before conditioning on fear memory. One previous report demonstrated that a single acute stress exposure 48 hr before fear conditioning had no effect on AFC (Cordero et al., 2003). GRs control the magnitude and duration of stress responses, and they are critical in the negative feedback regulation of the HPA axis in response to acute stress (Laryea et al., 2015). In our study, plasma corticosterone levels were significantly higher 1 hr after RS than 24 hr after RS (data not shown), and it is possible that the timing of previous stress exposure is a key determinant of the effects of stress on auditory-cued fear memory. Consistent with our in vivo evidence showing the LAGR-dependent suppressive effect of prior RS, Karst et al. demonstrated that a long-lasting glutamatergic transmission in BLA neurons triggered by the application of corticosterone was suppressed by RS 1 hr before slice preparation and the suppressive effect of RS was attenuated by treatment with a GR antagonist (Karst et al., 2010).\n\nSynaptic changes at auditory inputs to the LA play an essential role in the acquisition and expression of auditory-cued fear memory (Blair et al., 2001; Rogan et al., 1997; Tsvetkov et al., 2002). Exposure to a single stress induces LTP in the BLA (Sarabdjitsingh et al., 2012; Vouimba et al., 2004). Therefore, it is possible that prior RS exposure occludes or suppresses subsequent AFC-induced LTP in floxed GR mice, thereby preventing the formation of excessive cued fear memory. To test this hypothesis, we induced LTP at auditory inputs to the LA by optogenetic stimulation, and found a significant increase in auditory-cued fear responses in RS-exposed floxed GR mice. This is the first evidence supporting a causal link between stress-induced metaplasticity in the LA and adaptive fear response to a salient cue in a stressful condition. Several in vitro and in vivo electrophysiological studies have demonstrated that the activation of GRs is involved in stress-induced amygdalar metaplasticity (Karst et al., 2010; Kavushansky and Richter-Levin, 2006). In our study, optogenetic delivery of an LTP protocol failed to alter fear responses to auditory cues in RS-exposed LAGRKO mice, supporting that the activation of LAGR is essential for stress-induced suppression of synaptic plasticity in the LA. The link between synaptic strength and fear response was further verified by results demonstrating that the weakening of the synaptic strength by delivering an optical LTD protocol attenuated auditory-cued fear memory in RS-exposed LAGRKO mice. In agreement with this finding, a previous electrophysiological study using brain slices containing the BLA region demonstrated that the persistence of LTP induced in the presence of corticosterone is sensitive to previous RS exposure (Sarabdjitsingh and Jo\u00ebls, 2014). Herein, we did not directly examine the effects of a prior RS exposure on the subsequent induction or expression of LTP/LTD in fear-conditioned mice using an in vitro or in vivo electrophysiological method. However, the results of our optogenetic experiment, together with existing evidence (Karst et al., 2010; Sarabdjitsingh and Jo\u00ebls, 2014), led us to postulate that the persistence of AFC-induced LTP is suppressed by a previous RS exposure, thereby protecting animals from encoding excessive cued fear memory.\n\nTwo previous studies have contributed to our understanding the GR-dependent mechanisms involved in prior stress-modulated synaptic plasticity. Di et al. demonstrated that a short application of corticosterone activates G protein-coupled postsynaptic membrane glucocorticoid receptors (mGRs), leading to the synthesis and release of an endocannabinoid, which binds to the presynaptic CB1 endocannabinoid receptor to suppress glutamate release (Di et al., 2003). Thus, postsynaptic mGRs activation induced by a recent RS exposure may result in reduction of glutamate release during subsequent fear conditioning. In another study, Sato et al. demonstrated that membrane-impermeable corticosterone treatment decreases N-methyl-D-aspartate (NMDA)-induced Ca2+ elevation, suggesting that activation of mGRs may inhibit Ca2+ influx via the NMDA receptor (Sato et al., 2004). Therefore, the reduced presynaptic glutamate release and inhibition of postsynaptic Ca2+ influx 1 hr after RS exposure may influence the required level of depolarization for long-term maintenance of LTP (Figure 6\u2014figure supplement 1).\n\nThis study demonstrated that LAGR is indispensible for stress-induced metaplasticity in the LA and for controlling fear responses to salient cues depending on the recent stress history of an animal. Individuals with lower levels of cortisol are more susceptible to developing post-traumatic stress disorder (PTSD) (Yehuda, 2006, 1998), suggesting that glucocorticoid signaling dysfunction is involved in the development of PTSD. Our findings contribute to understanding how emotional memory is formed under stress conditions and provide clues for elucidating the pathophysiology and etiology of stress-related disorders, such as PTSD.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Nr3c1</td>\n      <td>Mouse Genome Informatics http://www.informatics.jax.org/marker/MGI:95824</td>\n      <td>MGI:95824; NCBI Gene: 14815</td>\n    </tr>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Grp</td>\n      <td>Mouse Genome Informatics http://www.informatics.jax.org/marker/MGI:95833</td>\n      <td>MGI:95833; NCBI Gene: 225642</td>\n    </tr>\n    <tr>\n      <td>Strain (C57BL/6-Tg(CAG-flpe) 36Ito/ItoRbrc)</td>\n      <td>CAG-FLPe mouse</td>\n      <td>RIKEN BioResource Center</td>\n      <td>RRID:IMSR_RBRC01834</td>\n    </tr>\n    <tr>\n      <td>Strain (C57BL/6)</td>\n      <td>CAG-CAT-Z mouse</td>\n      <td>Proc Natl Acad Sci U S A 92: 160\u2013164,1995</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ES cell line</td>\n      <td>RENKA</td>\n      <td>Eur. J. Neurosci. 24: 2177\u20132190, 2006</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-GR antibody</td>\n      <td>Santa Cruz Biotechnology Cat# sc-8992</td>\n      <td>RRID:AB_2155784</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NeuN antibody</td>\n      <td>Millipore Cat# MAB377</td>\n      <td>RRID:AB_2298772</td>\n    </tr>\n  </tbody>\n</table>\n\n### Construction of Grp-iCre targeting vector\n\nTo construct a codon-improved Cre-recombinase (iCre)-splice gene, the intron sequence from the SV40 t-antigen gene was amplified by PCR and inserted between codons 283 and 284 of iCre. We obtained the bacterial artificial chromosome (BAC) clone containing the gastrin-releasing peptide gene (Grp) from the BACPAC Resources Center CHORI (Oakland, CA). Using a counter-selection BAC modification kit (Gene Bridges, Dresden, Germany), we inserted the iCre-splice gene linked to the pgk-neo cassette flanked by two FRT sites into Grp gene at the\u00a0+1 position (+1 corresponding to A of ATG, the initiation site of translation in the Grp gene). The modified BAC DNA fragment inserted with the iCre-splice-pgk-neo cassette and containing the\u00a0~5.1 kbp upstream (\u22125079 to \u22121) and\u00a0~4.9 kbp downstream (+2 to\u00a0+4933) sequences of Grp gene were cloned into pMC1DTApMA (Kitayama et al., 2001a) to generate the targeting vector pTVGRP-iCre.\n\n### Construction of Nr3c1loxP targeting vector\n\nA BAC clone containing the Nr3c1 gene was obtained from BACPAC Resources Center CHORI. The 5\u2019 arm of\u00a0~5.2 kbp (\u22125344 to \u2212104,\u00a0+1 corresponding to the first nucleotide of the exon 3 of the Nr3c1 gene) and the 3\u2019 arm of\u00a0~5 kbp (+104 to\u00a0+5092) were subcloned into the pDONR P4-P1R and pDONER P2R-P3 vectors (Invitrogen, Carlsbad, CA), respectively, using the counter-selection BAC modification kit. A 370 bp Nr3c1 gene fragment containing exon 3, part of intron 2, and part of intron 3 was amplified by PCR and was subcloned between two loxP sequences of a modified pDONR 221 vector containing a pgk-Neo cassette flanked by two FRT sites. To construct the targeting vector, these three plasmids were directionally subcloned into pDEST R4-R3 vector containing the diphtheria toxin gene (MC1-DTA) by MultiSite Gateway LR recombination reaction.\n\n### ES cell culture and generation of Grp-iCre and GRloxP mice\n\nThe targeting vectors linearized with NotI were electroporated into the C57BL/6-derived ES cell line RENKA (Fukaya et al., 2006) as previously described. After the selection with G418 (150 \u03bcg/mL), the recombinant ES cell clone was identified by Southern blot analysis. The obtained recombinant ES cells were injected into 8-cell-stage embryos of ICR mice. The embryos were cultured to blastocysts and transferred to the uterus of pseudopregnant ICR mice. The resulting chimeric mice were mated with CAG-FLPe mice (provided by RIKEN BRC through the National Bio-Resource Project of the MEXT, Japan) to delete the pgk-neo gene and establish the mutant mouse line. Grp-iCre and GRloxP mice were genotyped using polymerase chain reaction (PCR) amplification of genomic DNA prepared from the mouse tail. The Grp-iCre mice were genotyped using the following primer sequences: Gic1, 5\u2019-GTCGAGAGCTCTGAGGGTTT-3'; Gic2, 5\u2019-GATTTCATGATCGGGACACTTACCCA-3\u2019; Gic3, 5\u2019-GGTACAGGAGGTAGTCCCTCACATC-3\u2019; NeoP1, 5\u2019-GGGGATCCACTAGCGAATTCGAAG-3\u2019; and NeoP2, 5\u2019-GGATCCCCTCAGAAGAACTCGTCAA-3\u2019. The GRloxP mice were genotyped using the following primer sequences: GR3\u2019LU, 5\u2019-AAAAGAGCAGTGGAAGGTAGTGTG-3\u2019 and GR3\u2019LL, 5\u2019-TACTTCTGTCCCTTCCCAATGGAG-3\u2019.\n\nAnimal care and experimental protocols were approved by the Animal Experiment Committee of the University of Toyama (Authorization No. 2013 MED-18 and MED-68) and carried out in accordance with the Guidelines for the Care and Use of Laboratory Animal of the University of Toyama. Three month-old male mice were used for analyses in a genotype blind manner. The mice were kept in a temperature- and humidity-controlled room under 12 hr light/dark cycle (lights on at 7:00 AM) and had ad libitum access to food and water.\n\n### Analysis of Cre-mediated recombination efficacy\n\nWe used the mutant mice carrying both Grp-iCre and CAG-CAT-Z transgene heterozygously as the reporter mice. The mice were deeply anesthetized with pentobarbital sodium (100 mg/kg body weight, intraperitoneal injection), and then transcardially perfused with phosphate buffered saline (PBS, pH 7.4) followed by 4% paraformaldehyde (PFA) in 0.1 M phosphate buffer (PB). Brains were removed, post-fixed with the 4% PFA overnight, and dipped in 0.1 M PB containing 30% sucrose for 36 hr at 4\u00b0C. The brains were cut into 1-mm-thick coronal sections and stained for \u03b2-galactosidase (\u03b2-gal) activity for 18 hr in PBS containing 5 mM potassium hexacyanoferrate (III), 5 mM potassium hexacyanoferrate (II), 2 mM MgCl2, and 1 mg/ml 5-bromo-4-chloro-3-indolyl-\u03b2-d-galactoside (Tsujita et al., 1999). After the staining reaction, 20-\u03bcm-thick sections were prepared from 1-mm-thick sections and mounted on glass slides. Images were obtained using a Keyence BZ-8000 microscope (Keyence, Osaka, Japan).\n\n### Immunofluorescence staining\n\nThe brains were removed, fixed, and cryoprotected as described above and then cut into 25-\u03bcm-thick serial coronal sections using a freezing microtome. For each animal, every fourth section (bregma from \u22121.4 to \u22121.8 mm, five sections per animal) was selected on the basis of the Mouse Brain in Stereotaxic Coordinates (Paxinos and Franklin, 2001) and was prepared for immunofluorescence staining.\n\nFree floating brain sections were rinsed with PBS and blocked with Protein Block Serum Free (DAKO Cytomation, Carpinteria, CA) for 10 min at room temperature. The sections were then incubated with primary antibodies (rabbit anti-GR, 1:100, Santa Cruz #H-300; mouse anti-NeuN, 1:100, Millipore #MAB377) diluted in PBS containing 1% bovine serum albumin (BSA) overnight at 4\u00b0C. After washing with PBS, the sections were incubated with Alexa-Fluor-488- and Alexa-Fluor-594-conjugated species-specific secondary antibodies (Invitrogen) for 1 hr at room temperature. Then, the sections were washed with PBS, adhered to glass slides and coverslipped. Images were taken using a confocal laser scanning microscope (Leica TCS-SP5, Leica Microsystems, Germany). Three sections per animal were used for quantification of GR-positive and NeuN-positive cells in the LA. All sections were counted by us who were blind to the genotype of the mice.\n\n### Auditory-cued fear conditioning\n\nExcept for the optogenetic experiment, auditory-cued fear conditioning (AFC) was conducted in a small conditioning chamber (10\u00a0\u00d7\u00a010\u00a0\u00d7\u00a010 cm; with transparent walls and a floor made of 14 stainless steel rods) surrounded by a sound-attenuating chest (CL-M3, O'Hara and Co., Ltd, Tokyo, Japan). Mice were placed in the conditioning chamber for 60 s and then presented with a 30 s tone (65 dB, white noise) through a speaker on the ceiling of the sound-attenuating chamber. At the end of the tone presentation, mice were given a foot shock (0.5 mA, 2 s for three CS\u00a0\u00d7\u00a0US pairings at 1 min intervals and 0.5 mA, 1 s for six CS\u00a0\u00d7\u00a0US pairings at 30 s intervals). Mice were returned to their home cages 30 s after the last foot shock. The contextual and auditory-cued fear memory retention tests were conducted 24 and 48 hr after training, respectively. During the contextual memory test, mice were re-exposed to the conditioning chamber for 5 min without the tone and shock presentation. The conditioning chamber was cleaned with 70% ethanol before each trial. For the auditory-cued memory test, mice were placed in a novel chamber (10\u00a0\u00d7\u00a010\u00a0\u00d7\u00a010 cm, with white walls and a flat floor). Freezing was scored for 3 min before delivery of the tone and then scored for 3 min in the presence of the tone. Before each trial, the chamber was cleaned with 4% acetic acid. Freezing responses were analyzed on a Macintosh computer with Image FZC 2.22sr2 (O'Hara and Co., Japan), which is software based on the NIH Image program.\n\nFor the optogenetic experiment, AFC was conducted in a soundproof experimental room (Yamada Co., Japan). Mice were placed in the square conditioning chamber (17.5\u00a0\u00d7\u00a030 cm, with a transparent front wall, white side and back walls, and a floor of 26 stainless steel rods) for 60 s and then received three pairings of CS (65 dB, 7 kHz, 30 s tone) and US (0.5 mA, 2 s foot shock) with 1 min inter-pairing interval. Mice were returned to their home cages 90 s after the last foot shock. Before\u00a0the first auditory-cued fear memory test (Test 1), mice were anaesthetized with isoflurane and optic fibers were inserted into guide cannulas. Mice were returned to their home cages and left for at least 1 hr. Test 1 was conducted in a circular chamber (opaque black walls, diameter 21.5 cm\u00a0\u00d7\u00a0height 34 cm, with a flat floor) 24 hr after conditioning. Immediately after Test 1, mice received the optical LTP or LTD protocol and 24 hr later, the second auditory-cued fear memory test (Test 2) was conducted in a novel circular chamber (opaque reddish walls, diameter 23.5 cm\u00a0\u00d7\u00a0height 22.5 cm, with a flat floor). Freezing was scored for 3 min before delivery of the tone and then scored for 3 min in the presence of the tone.\n\n### Open field test\n\nThe open field test was performed to measure locomotion and anxiety in a novel open field using SCANET MV-40 (MELQUEST Co., Toyama Japan). The open field consisted of a square box of 48 cm per side with infrared sensors arranged at 6 mm intervals for the automatic detection of activity. Individual mice were placed at the center of the open field at the initiation of the test session and allowed to freely explore the field for 15 min.\n\n### Restraint stress\n\nMice were placed in an adequately ventilated 50 mL plastic tube (FALCON) for 20 min. They could rotate from a prone to supine position and back again but not turn head to tail.\n\n### Corticosterone measurements\n\nPlasma was extracted from blood samples collected from the heart. All blood samples were collected between 2 and 4 p.m. Blood samples were centrifuged at 3,000 rpm for 5 min at 4\u00b0C and extracted plasma was stored at \u221230\u00b0C until assayed for corticosterone using a corticosterone enzyme immunoassay kit (Arbor Assays, Ann Arbor, MI) in accordance with the manufacturer\u2019s instructions.\n\n### Viral vector\n\nThe GR-expressing adeno-associated virus (AAV-GR) and green fluorescent protein-expressing AAV (AAV-GFP) plasmids consisted of the mouse synapsin I promoter followed by cDNA encoding GR or the GFP and a woodchuck hepatitis virus post-transcriptional regulatory element between the inverted terminal repeats of the AAV3 genome. Plasmid AAV-hsyn-oChIEF-tdTomato was purchased from Addgene (Cambridge, MA). Recombinant AAV vectors were produced by transient transfection of HEK293 cells with the vector plasmid, an AAV3 rep and AAV9 vp expression plasmid, and an adenoviral helper plasmid, pHelper (Agilent Technologies, Santa Clara, CA), as previously described (Iida et al., 2013; Li et al., 2006). Recombinant viruses were purified by isolation from two sequential continuous CsCl gradients, and the viral titers were determined by qRT-PCR. Before administration, AAV-GR and AAV-GFP vectors were diluted in phosphate-buffered saline to 5\u00a0\u00d7\u00a01011 genome copies/100 \u00b5L and 1\u00a0\u00d7\u00a01011 genome copies/100 \u00b5L, respectively.\n\n### Surgery\n\nMice were deeply anesthetized with pentobarbital sodium (100 mg/kg body weight, intraperitoneal injection) and placed in a stereotactic frame (Narishige, Tokyo, Japan). AAV-GR or AAV-GFP (0.3 \u00b5L per hemisphere) was bilaterally injected into the LA (AP: \u22121.7 mm; ML: 3.3 mm; DV: \u22124.1 to \u22124.2 mm) using glass pipettes (tip diameter 50 \u03bcm) connected to a compatible syringe and motorized microinjector (Narishige IMS-10). Mice were allowed to recover in their home cages for 4 weeks before behavioral experiments.\n\nFor optogenetic experiments, AAV-hsyn-oChIEF-tdTomato was bilaterally injected into the medial geniculate nucleus (AP: \u22123.1 mm; ML: 1.9 mm; DV: \u22123.5 mm) and the auditory cortex (AP: \u22122.7 mm; ML: 4.4 mm; DV: \u22123.3 mm). A total of 0.5 \u00b5L virus per hemisphere was injected. An optic fiber cannula was implanted just above the dorsal tip of the LA (AP: \u22121.7 mm; ML: 3.4 mm; DV: \u22124.1 mm) and secured to the skull with screws and dental cement.\n\n### In vivo LTP or LTD induction\n\nOptical LTP was induced with 10 trains of light (each train consisted of 100 pulses of light, 5 ms each, at 100 Hz) at 90 s inter-train intervals. Optical LTD was induced with 900 pulses of light, 2 ms each, at 1 Hz. After induction, mice were immediately returned to their home cages.\n\n### In vivo recording\n\nEight weeks after the injection of AAV-hsyn-oChIEF-tdTomato into the MGN and AC, mice were anesthetized with pentobarbital sodium and then mounted on a stereotaxic frame. The optic fiber was glued to the recording electrode so that the tip of the fiber was 500 \u03bcm above the tip of the electrode. The optrode was inserted into the LA and the optic fiber was connected to a 473 nm laser unit. The LTP or LTD induction protocol was identical to those used in the behavioral test. After establishing a stable baseline at the recording site for 21 min (stimulation frequency at 0.033 Hz), in vivo LTP or LTD was induced, which was followed by at least 21 min of 0.033 Hz stimulation. Data were analyzed using Clampex 10.7 software. All animals were perfused after the recordings and the position of the recording sites were verified.\n\n### Statistical\u00a0analysis\n\nStatistical analysis was performed using student\u2019s t-test for the comparison of two groups and one-way ANOVA was used for analyzing experiments consisting of multiple groups. Two-way repeated measures ANOVA was used for analyzing the freezing level during training sessions. Significant ANOVA results were followed by a post hoc Tukey\u2013Kramer test for multiple comparisons. All values are presented as mean\u00a0\u00b1\u00a0S. E. M. Values of p<0.05 were considered statistically significant.\n\nStatistical analysis was performed using Statcel2. Mice were randomly assigned to experimental groups prior to experimentation. No statistical methods were used to pre-determine sample sizes but our sample sizes are similar to those generally employed in the field. Animals with viral injections off target or damage during the experiment were excluded from the statistical analysis.\n",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "75a2e5ab-c0ac-45e4-aef1-aad9c4c6bfa2",
+      "submission_id": "a75020a0-39bb-4aec-9450-ac903e3df5d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Julie A Kauer, Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34135.022](https://doi.org/10.7554/eLife.34135.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Glucocorticoid receptor-mediated amygdalar metaplasticity underlies adaptive modulation of fear memory by stress\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including a Reviewing Editor, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Sumantra Chattarji (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers agreed that the work is very interesting, and that the investigation into the interactions between the glucocorticoid receptor in the lateral amygdala and fear conditioning are novel and timely. The reviewers raise a number of concerns that must be adequately addressed before the paper can be accepted, and some of the required revisions will likely require further experimentation within the framework of the presented studies and techniques.\n\nEssential revisions:\n\n1) Figure 6: The figure legend states that \"Data are obtained from four mice (two floxed GR and two LAGRKO mice).\" In the LTP/LTD graphs (Figure 6F, G) why are floxed GR and LAGRKO mice data combined? It is critical to show that LTP and LTD can be elicited in both types of mice. Importantly, representative sample traces of fEPSPs (Figure 6F-G) should be shown.\n\n2) The authors are not specific about what they mean by suppression of LTP. Is the suppression at the level of the induction or expression? The LTP experiment that they did does not differentiate between these two cases. How does the stress cause a deficit? Is this, as proposed by Karst et al., the result of GR-dependent reduction in the excitability of the LA neurons, hence the threshold for potentiation? If so, is this represented in the electrophysiological data? That is, do they see a difference in LTP-induced synaptic potentiation between stressed control vs. stressed LAGRKO? Please discuss.\n\n3) Add discussion about what the model is; answer the following questions even if it's speculation:\n\n- In the fourth paragraph of the Discussion, the authors state that activation of LAGR by stress suppresses fear conditioning-induced LTP at auditory inputs to the LA and that this is indicated by the reduction of freezing in restraint stress exposed LAGRKO mice after delivery of an LTD protocol. Does this imply that the \"stress exposure suppression of fear-conditioned LTP\" is through a synaptic mechanism similar to that elicited by optical LTD?\n\nI don't think they can conclude that the \"stress exposure suppression of fear-conditioned LTP\" is through a synaptic mechanism similar to that elicited by optical LTD?\n\n4) The absence of any data on corticosterone levels elicited by restraint stress is surprising in light of the central role this form of stress plays in the experimental findings reported in the manuscript. Further, what are the levels of corticosterone in animals that are first subjected to restrain stress followed by fear conditioning?\n\n5) A missing piece of the puzzle is that the authors have not monitored online how in vivo correlates of synaptic strength (e.g. slope of fEPSPs evoked by, say, electrical activation of thalamic inputs from the MGN) change as a result of fear conditioning and its modulation by restraint stress and other genetic manipulations used here. Do the authors have any data to address this point? While not required for revision, this would be of interest if the data exist.\n\n6) More explanation of the overall model is required, in particular explaining the interactions between synaptic plasticity (optogenetic or natural), fear conditioning, and GR, in the context of restraint stress as well as control conditions. Why does the optical LTP protocol not elicit an increase in freezing in the LAGRKO mice (Figure 6D) as seen with the Floxed-GR mice (Figure 6C)? Since these animals are capable of forming fear memories, the LA neurons should have the capacity to undergo synaptic plasticity. On the other hand, the authors have shown that these same LAGRKO mice have attenuated fear responses after an optical LTD protocol. The prior restraint stress suppresses the induction of synaptic potentiation during fear conditioning. The authors are not specific about what they mean by suppression of LTP. Is the suppression at the level of the induction or expression? The LTP experiment that they did, does not differentiate between these two cases. Does this imply that optical LTP itself is dependent on GRs in the LA? Is GR activation not required for LTP or LTD induction in LA?; the authors should at the least discuss where they believe GR activation occurs in the chain of learning events in the context of restraint stress. A conclusion diagram could be very helpful.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Glucocorticoid receptor-mediated amygdalar metaplasticity underlies adaptive modulation of fear memory by stress\" for further consideration at eLife. Your revised article has been favorably evaluated by a Senior Editor and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors have responded to nearly all of the reviewers' points adequately. However, their response to the first critique is not acceptable. Here is the critique again:\n\n1) Figure 6: The figure legend states that \"Data are obtained from four mice (two floxed GR and two LAGRKO mice).\" In the LTP/LTD graphs (Figure 6F, G) why are floxed GR and LAGRKO mice data combined? It is critical to show that LTP and LTD can be elicited in both types of mice.\n\nThe authors responded that they convinced themselves that the relevant manipulations trigger LTP or LTD in each genotype is not sufficient. The experiments in each genotype must be done separately and statistically validated (showing that statistically signifcant LTP is elicited, e.g.) \u2013 not included together. The experimental quality of the LTP experiments in particular is poor. Baselines must be stable for at minimum 10 minutes, not slanting up or jumping upward just prior to LTP induction as is apparent in 2 of the 4 experiments. Please repeat these experiments and demonstrate that the optical protocols in slices are sufficient to induce LTP and LTD in both floxed GR and LAGRKO mice. Without these data, the manuscript is lacking an important piece of information necessary to interpret the results.\n",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "81a14a98-8869-42fb-80b9-27ea6607abad",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C1",
+      "claim": "Glucocorticoid receptor (GR) is crucial for signaling mediated by stress-induced high levels of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucocorticoid receptor (GR) is crucial for signaling mediated by stress-induced high levels of glucocorticoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about GR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "3eb92dbc-32a2-460c-a9ee-0fc95dbbbc60",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C2",
+      "claim": "The lateral nucleus of the amygdala (LA) is a key structure underlying auditory-cued fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "The lateral nucleus of the amygdala (LA) is a key structure underlying auditory-cued fear conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citation in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "d81dd4eb-1e29-48f4-a99c-04ecbe307850",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C3",
+      "claim": "Genetic disruption of GR in the LA (LAGRKO) resulted in an auditory-cued fear memory deficit for strengthened conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that genetic disruption of GR in the LA (LAGRKO) resulted in an auditory-cued fear memory deficit for strengthened conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through behavioral experiments with LAGRKO mice shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a05b4656-7829-4a04-8f62-3d5d97618800",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C4",
+      "claim": "The suppressive effect of a single restraint stress (RS) prior to conditioning on auditory-cued fear memory in floxed GR (control) mice was abolished in LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the suppressive effect of a single restraint stress (RS) prior to conditioning on auditory-cued fear memory in floxed GR (control) mice was abolished in LAGRKO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through behavioral experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a95d5cce-671c-481d-a62a-4283698d1cee",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C5",
+      "claim": "Optogenetic induction of long-term depression (LTD) at auditory inputs to the LA reduced auditory-cued fear memory in RS-exposed LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic induction of long-term depression (LTD) at auditory inputs to the LA reduced auditory-cued fear memory in RS-exposed LAGRKO mice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through optogenetic experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "98f52c97-bad4-42ae-9f6a-a746963e9bcb",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C6",
+      "claim": "Optogenetic induction of long-term potentiation (LTP) increased auditory-cued fear memory in RS-exposed floxed GR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and in contrast, optogenetic induction of long-term potentiation (LTP) increased auditory-cued fear memory in RS-exposed floxed GR mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through optogenetic experiments shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "c4e7a8b0-9bda-4772-a23d-3b6356f6dd86",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C7",
+      "claim": "Prior stress suppresses fear conditioning-induced LTP at auditory inputs to the LA in a GR-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that prior stress suppresses fear conditioning-induced LTP at auditory inputs to the LA in a GR-dependent manner, thereby protecting animals from encoding excessive cued fear memory under stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the optogenetic manipulation experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "3851d282-f93c-43db-90cf-862f62565442",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C8",
+      "claim": "Prior stress protects animals from encoding excessive cued fear memory under stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that prior stress suppresses fear conditioning-induced LTP at auditory inputs to the LA in a GR-dependent manner, thereby protecting animals from encoding excessive cued fear memory under stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "16581272-a177-4f29-ab8c-52c0ac169025",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C9",
+      "claim": "Stress activates the hypothalamus\u2013pituitary\u2013adrenal (HPA) axis, which results in the release of glucocorticoid hormones from the adrenal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Stress activates the hypothalamus\u2013pituitary\u2013adrenal (HPA) axis, which results in the release of glucocorticoid hormones (cortisol in humans and corticosterone in rodents) from the adrenal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the stress response system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "4030e06b-2819-46b6-9d13-0f96be9d844f",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C10",
+      "claim": "Glucocorticoid hormones can readily enter the brain and bind to specific receptors in regions crucial for memories of stressful experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucocorticoid hormones can readily enter the brain and bind to specific receptors in regions crucial for memories of stressful experiences, such as the hippocampus and amygdala, thereby enhancing the consolidation of emotionally arousing events (de Quervain et al., 2009; Roozendaal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "e0e911e4-08d2-44e0-add0-b80c51ea566b",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C11",
+      "claim": "Glucocorticoid binding to receptors in the hippocampus and amygdala enhances the consolidation of emotionally arousing events.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucocorticoid hormones can readily enter the brain and bind to specific receptors in regions crucial for memories of stressful experiences, such as the hippocampus and amygdala, thereby enhancing the consolidation of emotionally arousing events (de Quervain et al., 2009; Roozendaal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "84d7c852-7561-422b-b407-a7b9292803f8",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C12",
+      "claim": "Two types of receptors mediate the effects of glucocorticoids: type I mineralocorticoid receptor (MR, Nr3c2) and type II glucocorticoid receptor (GR, Nr3c1).",
+      "claim_type": "EXPLICIT",
+      "source": "Two types of receptors mediate the effects of glucocorticoids: type I mineralocorticoid receptor (MR, Nr3c2) and type II glucocorticoid receptor (GR, Nr3c1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about glucocorticoid receptor types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "c45db274-2e7a-4662-9c86-2087a1aa2048",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C13",
+      "claim": "GR has a lower binding affinity for glucocorticoids compared with MR.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with MR, GR has a lower binding affinity for glucocorticoids and is largely unoccupied at basal levels, and is thus considered to be particularly important in signaling mediated by stress-induced high levels of glucocorticoids (de Kloet et al., 2005; Reul and de Kloet, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "50dff2e9-be04-476d-8c0e-4f3ee1ab30fb",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C14",
+      "claim": "GR is largely unoccupied at basal levels of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with MR, GR has a lower binding affinity for glucocorticoids and is largely unoccupied at basal levels, and is thus considered to be particularly important in signaling mediated by stress-induced high levels of glucocorticoids (de Kloet et al., 2005; Reul and de Kloet, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "e1140adb-5ef0-4b06-894e-f8738f5830a4",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C15",
+      "claim": "GR is particularly important in signaling mediated by stress-induced high levels of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with MR, GR has a lower binding affinity for glucocorticoids and is largely unoccupied at basal levels, and is thus considered to be particularly important in signaling mediated by stress-induced high levels of glucocorticoids (de Kloet et al., 2005; Reul and de Kloet, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "1860e0cb-1bd6-4d83-ba27-e4ac16650d4f",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C16",
+      "claim": "Auditory information reaches the LA either from the medial geniculate nucleus (MGN) or from the auditory cortex (AC).",
+      "claim_type": "EXPLICIT",
+      "source": "Auditory information, which is critical for AFC, reaches the LA either from the medial geniculate nucleus (MGN) or from the auditory cortex (AC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about auditory pathways to the amygdala.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "70591c43-bd26-463e-87da-eaaf72b8090f",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C17",
+      "claim": "Long-term potentiation (LTP) in the two auditory inputs to the LA is essential for the acquisition and expression of auditory-cued fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term potentiation (LTP) in the two auditory inputs to the LA is essential for the acquisition and expression of auditory-cued fear memory (Blair et al., 2001; Rogan et al., 1997; Tsvetkov et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "97cdc9d6-6064-4445-8368-22ce853e05d0",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C18",
+      "claim": "GR activation plays a central role in the formation of long-term memory in response to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to stress, GR activation plays a central role in the formation of long-term memory, which is an essential mechanism for learning from stressful events and respond adaptively to similar demands in the future (Finsterwald and Alberini, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "f9c2196c-b231-4d0a-b9f8-74ee035cabe0",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C19",
+      "claim": "Glucocorticoid prolonged excitatory synaptic responses in the basolateral complex of the amygdala (BLA) by binding to GR in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "In an electrophysiological study using brain slices, glucocorticoid prolonged excitatory synaptic responses in the basolateral complex of the amygdala (BLA) by binding to GR (Karst et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "f075878a-e552-4d39-9358-6dd3a6717f85",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C20",
+      "claim": "After acute stress exposure, application of glucocorticoid suppressed excitatory synaptic responses in the BLA in a GR-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, after an acute stress exposure, application of glucocorticoid suppressed excitatory synaptic responses in the BLA in a GR-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the context of the preceding citation (Karst et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "4366a242-9701-4bbb-8727-fc1f24a5af6e",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C21",
+      "claim": "The switch in synaptic response to glucocorticoid is referred to as metaplasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This switch in synaptic response to glucocorticoid is referred to as metaplasticity (Abraham and Tate, 1997; Schmidt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research defining metaplasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "b4034929-b877-4a31-8bb7-cc899f301909",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C22",
+      "claim": "Prior delivery of behavioral stress has been shown to suppress subsequent induction of LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior delivery of behavioral stress has also been shown to suppress subsequent induction of LTP (Kavushansky and Richter-Levin, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "ddb88552-d101-45ac-b2bb-47c23f777fa9",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C23",
+      "claim": "Whether stress-induced amygdalar metaplasticity occurs in vivo in a way relevant to the strength of auditory-cued fear memory is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether stress-induced amygdalar metaplasticity occurs in vivo in a way relevant to the strength of the auditory-cued fear memory, and what role LAGR plays in this neural process are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "f4dc3b7d-a601-4986-9c0f-c9289ab87708",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C24",
+      "claim": "The role LAGR plays in stress-induced amygdalar metaplasticity is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether stress-induced amygdalar metaplasticity occurs in vivo in a way relevant to the strength of the auditory-cued fear memory, and what role LAGR plays in this neural process are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "6a68517e-6109-472f-b897-929a54caebd7",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C25",
+      "claim": "Grp is abundant in the LA and absent or present at low levels in other subnuclei of the amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "Grp is abundant in the LA and absent or present at low levels in other subnuclei of the amygdala (Shumyatsky et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "3bba8e92-1080-4710-b3b3-9ad6493b198c",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C26",
+      "claim": "Strong \u03b2-galactosidase expression was detected in the LA and hippocampal CA3 region of Grp-iCre/CAG-CAT-Z mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1C, strong \u03b2-galactosidase expression was detected in the LA and hippocampal CA3 region of Grp-iCre/CAG-CAT-Z mice, indicating the presence of robust Cre-loxP recombination in these brain regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by X-gal staining shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "552df04c-53a8-41e8-9e9e-8942a5f8a3de",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C27",
+      "claim": "Sparse and weak expression of \u03b2-galactosidase appeared in the accessory basal nucleus of the amygdala and in layer 6 of the cerebral cortex in Grp-iCre/CAG-CAT-Z mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, sparse and weak expression of \u03b2-galactosidase appeared in the accessory basal nucleus of the amygdala and in layer 6 of the cerebral cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by X-gal staining shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "08612b70-28a2-446b-be4b-647a40e54681",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C28",
+      "claim": "Immunofluorescence staining revealed a selective disruption of GR proteins in the LA of LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining with a specific antibody against GR revealed a selective disruption of GR proteins in the LA of LAGRKO mice (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "88e891b5-71a8-4969-b4ed-e2d0223a01ae",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C29",
+      "claim": "There was no significant difference between the two genotypes in the expression level of GR in the central nucleus and basal nucleus of the amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference between the two genotypes in the expression level of GR in the central nucleus and basal nucleus of the amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of immunofluorescence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "670f1033-b065-4e07-bce3-02f3f814cf1e",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C30",
+      "claim": "GR was undetectable in approximately 70% of LA neurons in LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Double immunofluorescence staining with anti-GR and anti-NeuN (a neuronal marker) antibodies showed that GR was undetectable in approximately 70% of LA neurons in LAGRKO mice (floxed GR, 90.88 \u00b1 1.39%; LAGRKO, 20.27 \u00b1 0.95%; Figure 2A,B, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification of double immunofluorescence staining shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "e75221f6-5900-4da7-b288-5d1f44cdad3c",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C31",
+      "claim": "The expression level of GR in the hippocampal CA3 region of floxed GR mice was very low.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression level of GR in the hippocampal CA3 region of floxed GR mice was very low, and it was slightly decreased in LAGRKO mice (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "9c20f0b8-c683-4d0b-b5a3-91aaf98efeb4",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C32",
+      "claim": "There was no significant difference between the two genotypes in the expression level of GR in the cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference between the two genotypes in the expression level of GR in the cerebral cortex (Figure 2C, Figure 2\u2014figure supplement 1B), hippocampal CA1 and CA2 regions, and dentate gyrus (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of immunofluorescence analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "800e1539-9bb2-4f7b-b972-39f1fea95920",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C33",
+      "claim": "After moderate conditioning with three CS \u00d7 US pairings, LAGRKO mice exhibited the same freezing levels as floxed GR mice during the training, contextual test, and auditory-cued test.",
+      "claim_type": "EXPLICIT",
+      "source": "After moderate conditioning, which included three CS \u00d7US pairings, LAGRKO mice exhibited the same freezing levels as floxed GR mice during the training, contextual test, and auditory-cued test (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "1235d32d-ea92-414d-aa49-7e305754f199",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C34",
+      "claim": "When training was strengthened to six CS \u00d7 US pairings, LAGRKO mice exhibited significantly lower freezing levels than floxed GR mice during tone presentation in the cued test.",
+      "claim_type": "EXPLICIT",
+      "source": "When the training was strengthened to six CS \u00d7 US pairings (Figure 3A), LAGRKO mice exhibited significantly lower freezing levels than floxed GR mice during tone presentation in the cued test (p=0.046; unpaired Student's t test; Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 3D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "203c9042-efb3-4393-97fc-9d0c85688b37",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C35",
+      "claim": "There were no significant differences between the two genotypes in freezing levels during training with six CS \u00d7 US pairings.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas there were no significant differences between the two genotypes in freezing levels during the training (F1,126 = 1.19, p=0.278; two-way repeated measures ANOVA; Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 3B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "017fd38c-3bf2-4b7d-a5b9-d33d8cda432d",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C36",
+      "claim": "There were no significant differences between the two genotypes in freezing levels during the contextual test after six CS \u00d7 US pairings.",
+      "claim_type": "EXPLICIT",
+      "source": "and contextual test (p=0.803; unpaired Student's t test; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 3C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "f6c33785-57da-4165-bef5-cd7d8059c6c7",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C37",
+      "claim": "Plasma corticosterone levels 90 min after training with six CS \u00d7 US pairings were significantly higher than after training with three CS \u00d7 US pairings in both genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Corticosterone assays revealed significantly higher plasma corticosterone levels 90 min after training with six CS \u00d7 US pairings than after training with three CS \u00d7 US pairings in both genotypes (floxed GR, p=0.016; LAGRKO, p<0.001; unpaired Student's t test; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by corticosterone assay data shown in Figure 3E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "135b589a-1d54-4a86-ab95-25e45e747de9",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C38",
+      "claim": "LAGRKO mice did not show any alteration in anxiety level or locomotion in the open field test.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open field test, LAGRKO mice did not show any alteration in anxiety level or locomotion (Figure 3\u2014figure supplement 2), suggesting that the deficit of auditory-cued fear memory in LAGRKO mice was not the result of altered anxiety and locomotor activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by open field test data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "f4ebed85-fdbe-481e-b7cd-9531a1727b9b",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C39",
+      "claim": "The deficit of auditory-cued fear memory in LAGRKO mice was not the result of altered anxiety and locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open field test, LAGRKO mice did not show any alteration in anxiety level or locomotion (Figure 3\u2014figure supplement 2), suggesting that the deficit of auditory-cued fear memory in LAGRKO mice was not the result of altered anxiety and locomotor activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of differences in open field test behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "ca9f8d25-ae9b-4739-bfc0-51eb711eaed4",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C40",
+      "claim": "LAGRKO mice injected with AAV-GR exhibited significantly higher freezing levels during the auditory-cued fear memory test than did LAGRKO mice injected with AAV-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "LAGRKO mice injected with AAV-GR and floxed GR mice injected with AAV-GFP exhibited significantly higher freezing levels during the auditory-cued fear memory test than did LAGRKO mice injected with AAV-GFP (F2,24 = 5.25, p=0.013; one-way ANOVA followed by post hoc Tukey\u2013Kramer test; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiment data shown in Figure 4E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "74f48747-c546-49a0-a45b-0453808f4b37",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C41",
+      "claim": "Floxed GR mice injected with AAV-GFP exhibited significantly higher freezing levels during the auditory-cued fear memory test than did LAGRKO mice injected with AAV-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "LAGRKO mice injected with AAV-GR and floxed GR mice injected with AAV-GFP exhibited significantly higher freezing levels during the auditory-cued fear memory test than did LAGRKO mice injected with AAV-GFP (F2,24 = 5.25, p=0.013; one-way ANOVA followed by post hoc Tukey\u2013Kramer test; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiment data shown in Figure 4E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "0677cdac-3b89-480f-8d73-75f6aac510b5",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C42",
+      "claim": "There was no significant difference in freezing levels between the three mouse groups during training in the rescue experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in freezing levels between the three mouse groups during training (F2,168 = 0.60, p=0.522; two-way repeated measures ANOVA; Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiment data shown in Figure 4C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "d6f37868-fa06-4bf7-aac0-52142632b7bd",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C43",
+      "claim": "There was no significant difference in freezing levels between the three mouse groups during the contextual fear memory test in the rescue experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "and the contextual fear memory test (F2,24 = 0.53, p=0.600; one-way ANOVA; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiment data shown in Figure 4D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "b51c608e-4f21-4f75-92c9-d8fc3a5aa0af",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C44",
+      "claim": "The rescue experiment suggests the specific involvement of LAGR in auditory-cued fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "This rescue experiment further suggests the specific involvement of LAGR in AFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue of the phenotype by AAV-GR injection.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "418ac8e7-4f1e-4278-baef-a5c1946c59b7",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C45",
+      "claim": "Fear conditioning is highly susceptible to modulation by prior stress exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Fear conditioning is highly susceptible to modulation by prior stress exposure (Cordero et al., 2003; Rodr\u00edguez Manzanares et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "d0ed2ec9-a8c0-4e33-9c49-5c00420a55ef",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C46",
+      "claim": "RS exposure 1 hr prior to fear conditioning induced a significant increase in freezing levels during the training in both floxed GR and LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "RS exposure 1 hr prior to fear conditioning induced a significant increase in freezing levels during the training (F3,215 = 32.25, p<0.001; two-way repeated measures ANOVA; Figure 5B) and contextual memory test (F3,43 = 5.03, p=0.004; one-way ANOVA followed by post hoc Tukey\u2013Kramer test; Figure 5C) in both floxed GR and LAGRKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 5B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a4c4f7c8-4a83-4959-ae4d-47bdcfee569d",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C47",
+      "claim": "RS exposure 1 hr prior to fear conditioning induced a significant increase in freezing levels during the contextual memory test in both floxed GR and LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "RS exposure 1 hr prior to fear conditioning induced a significant increase in freezing levels during the training (F3,215 = 32.25, p<0.001; two-way repeated measures ANOVA; Figure 5B) and contextual memory test (F3,43 = 5.03, p=0.004; one-way ANOVA followed by post hoc Tukey\u2013Kramer test; Figure 5C) in both floxed GR and LAGRKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 5C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "229618b3-7651-4dfb-93f4-84744dc561f6",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C48",
+      "claim": "RS exposure 1 hr before fear conditioning induced a significant decrease in auditory-cued freezing in floxed GR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the facilitating effect of prior RS exposure on contextual fear memory, RS exposure 1 hr before fear conditioning induced a significant decrease in auditory-cued freezing in floxed GR mice but not in LAGRKO mice (floxed GR, p=0.016; LAGRKO, p=0.951; unpaired Student's t test; Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 5D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "6347ba92-9412-45d5-9e4b-a7957b0ec740",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C49",
+      "claim": "RS exposure 1 hr before fear conditioning did not induce a significant decrease in auditory-cued freezing in LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the facilitating effect of prior RS exposure on contextual fear memory, RS exposure 1 hr before fear conditioning induced a significant decrease in auditory-cued freezing in floxed GR mice but not in LAGRKO mice (floxed GR, p=0.016; LAGRKO, p=0.951; unpaired Student's t test; Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral data shown in Figure 5D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "50b4549f-81a3-46d6-adf7-1700fdc89e31",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C50",
+      "claim": "The suppressive effect of prior RS on auditory-cued fear memory is LAGR-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the facilitating effect of prior RS exposure on contextual fear memory, RS exposure 1 hr before fear conditioning induced a significant decrease in auditory-cued freezing in floxed GR mice but not in LAGRKO mice (floxed GR, p=0.016; LAGRKO, p=0.951; unpaired Student's t test; Figure 5D), suggesting this suppressive effect is LAGR-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of RS on the two genotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "c09bf989-149d-48e1-a1a9-2ad8b9875668",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C51",
+      "claim": "There was no significant difference in plasma corticosterone levels between floxed GR and LAGRKO mice 1 hr after RS exposure alone.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in plasma corticosterone levels observed between floxed GR and LAGRKO mice at the two time points (1 hr after RS exposure alone, p=0.21; 90 min after RS exposure followed by AFC, p=0.67; unpaired Student's t test; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by corticosterone assay data shown in Figure 5\u2014figure supplement 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "532b087d-523e-40f3-8e69-2593261bc811",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C52",
+      "claim": "There was no significant difference in plasma corticosterone levels between floxed GR and LAGRKO mice 90 min after RS exposure followed by AFC.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in plasma corticosterone levels observed between floxed GR and LAGRKO mice at the two time points (1 hr after RS exposure alone, p=0.21; 90 min after RS exposure followed by AFC, p=0.67; unpaired Student's t test; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by corticosterone assay data shown in Figure 5\u2014figure supplement 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "573b0878-f5d8-4d04-8d36-bacfdc23f8e5",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C53",
+      "claim": "Prior RS exposure suppresses AFC-induced LTP in the LA, leading to the attenuation of auditory-cued fear memory in floxed GR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we hypothesized that prior RS exposure would suppress AFC-induced LTP in the LA, leading to the attenuation of auditory-cued fear memory in floxed GR mice, and that LAGR disruption might impair stress-induced metaplasticity in the LA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors to explain their findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "8940afab-7c5a-4974-877e-de36a7b65d6b",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C54",
+      "claim": "LAGR disruption might impair stress-induced metaplasticity in the LA.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we hypothesized that prior RS exposure would suppress AFC-induced LTP in the LA, leading to the attenuation of auditory-cued fear memory in floxed GR mice, and that LAGR disruption might impair stress-induced metaplasticity in the LA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors to explain their findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "3574ca4b-5d1f-48c3-844a-80d7b78a559a",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C55",
+      "claim": "The optical LTP protocol significantly increased freezing levels during Test 2 compared with Test 1 in floxed GR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The optical LTP protocol significantly increased freezing levels during the Test 2 compared with Test 1 in floxed GR mice but not in LAGRKO mice (floxed GR, p=0.046; LAGRKO, p=0.811; paired Student's t test; Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by optogenetic behavioral data shown in Figure 6C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "d7c1078a-becf-48ee-b6c0-a9ccd819da92",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C56",
+      "claim": "The optical LTP protocol did not significantly increase freezing levels during Test 2 compared with Test 1 in LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The optical LTP protocol significantly increased freezing levels during the Test 2 compared with Test 1 in floxed GR mice but not in LAGRKO mice (floxed GR, p=0.046; LAGRKO, p=0.811; paired Student's t test; Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by optogenetic behavioral data shown in Figure 6D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "5b9e7649-73fe-4024-b002-9e8d087e7e0d",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C57",
+      "claim": "The optogenetic LTP results support the hypothesis that prior RS exposure suppresses AFC-induced LTP in a GR-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our hypothesis that prior RS exposure suppresses AFC-induced LTP in a GR-dependent manner, thus resulting in reduced auditory-cued fear memory in floxed GR mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of optical LTP on the two genotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "9ba03f33-df6b-41e7-8ae7-cc90b3f90e40",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C58",
+      "claim": "The optical LTD protocol significantly reduced freezing levels during Test 2 compared with Test 1 in LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In LAGRKO mice, the optical LTD protocol significantly reduced freezing levels during Test 2 compared with that during Test 1 (p=0.010; paired Student's t test; Figure 6E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by optogenetic behavioral data shown in Figure 6E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a33a5378-8229-446f-ac70-77c3db0af5cb",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C59",
+      "claim": "The optical LTD results further support the hypothesis that prior stress weakens synaptic strength in the LA leading to reduced cued fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In LAGRKO mice, the optical LTD protocol significantly reduced freezing levels during Test 2 compared with that during Test 1 (p=0.010; paired Student's t test; Figure 6E), further supporting the hypothesis that prior stress weakens synaptic strength in the LA leading to reduced cued fear memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the effect of optical LTD on fear memory in LAGRKO mice.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "8ef3153c-8b3c-4c29-b303-2f92088bfd61",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C60",
+      "claim": "Brief light pulses at the recording site produced field responses that were potentiated by the LTP protocol in both floxed GR and LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief light pulses (0.033 Hz) at the recording site produced field responses, which were potentiated by the LTP protocol (Floxed GR, F1,126 = 191.5, p<0.001; LAGRKO, F1,126 = 237.7, p<0.001; two-way repeated measures ANOVA; Figure 6F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vivo electrophysiology data shown in Figure 6F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "d31bb0b8-d25a-4c3b-980b-dee925f64065",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C61",
+      "claim": "Brief light pulses at the recording site produced field responses that were depressed by the LTD protocol in both floxed GR and LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and depressed by the LTD protocol (Floxed GR, F1,126 = 511.9, p<0.001; LAGRKO, F1,126 = 497.3, p<0.001; two-way repeated measures ANOVA; Figure 6G) in both floxed GR and LAGRKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vivo electrophysiology data shown in Figure 6G with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "0641e8cc-3dbb-4a27-80d5-df8c74313680",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C62",
+      "claim": "The LTP and LTD protocols used in the behavioral experiments modify synaptic strength in the expected manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the LTP and LTD protocols used in the behavioral experiments modify synaptic strength in the expected manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the electrophysiological validation experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "7b999352-2108-4de2-8af0-79cfb2f5935a",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C63",
+      "claim": "LAGR exclusively mediates auditory-cued fear responses to strengthened conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we demonstrate that LAGR exclusively mediates auditory-cued fear responses to strengthened conditioning, suggesting a critical role for LAGR in signaling mediated by stress-induced high levels of glucocorticoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a079b899-e307-46bb-b75c-01ad277e2f08",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C64",
+      "claim": "LAGR plays a critical role in signaling mediated by stress-induced high levels of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we demonstrate that LAGR exclusively mediates auditory-cued fear responses to strengthened conditioning, suggesting a critical role for LAGR in signaling mediated by stress-induced high levels of glucocorticoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the selective effect of LAGR disruption on strengthened conditioning.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "03ce8bd9-1fac-473a-96ce-685e230be978",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C65",
+      "claim": "LAGR is indispensable for the suppressive effect of prior RS exposure on auditory-cued fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that LAGR is indispensable for the suppressive effect of prior RS exposure on AFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "7dddba9b-50ab-4b69-8a42-67d738287bf4",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C66",
+      "claim": "Weakening the synaptic strength of auditory inputs to the LA by an LTD protocol significantly reduced auditory-cued fear memory in RS-exposed LAGRKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, weakening the synaptic strength of auditory inputs to the LA by an LTD protocol significantly reduced auditory-cued fear memory in RS-exposed LAGRKO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "599fd000-6ad0-4144-bf3c-97cec7d085fa",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C67",
+      "claim": "Stress-induced metaplasticity occurs in the LA in a GR-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that stress-induced metaplasticity occurs in the LA in a GR-dependent manner, and is responsible for the suppressive effect of prior RS on AFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "eab8ad5c-ec38-43b8-946c-8f10d61e8c37",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C68",
+      "claim": "Stress-induced metaplasticity in the LA is responsible for the suppressive effect of prior RS on auditory-cued fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that stress-induced metaplasticity occurs in the LA in a GR-dependent manner, and is responsible for the suppressive effect of prior RS on AFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "25dacff4-51ae-4ee9-b5c2-2c5a16ee7203",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C69",
+      "claim": "The degree of stress induced by learning itself has been shown to be related to strength of the memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of stress induced by learning itself has been shown to be related to strength of the memory (Cordero et al., 1998; Cordero and Sandi, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "61577cc1-7a62-4d21-80b8-9188b271b435",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C70",
+      "claim": "The increased number of CS \u00d7 US pairings strengthened the connection between auditory CS and US in the LA.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the increased number of CS \u00d7 US pairings strengthened the connection between auditory CS and US in the LA, and LAGR, which is activated by high levels of circulating corticosterone, contributes exclusively to this neural process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral and corticosterone data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a2594e7e-92c0-474a-a01e-7faa605a73ac",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C71",
+      "claim": "LAGR contributes exclusively to strengthening the connection between auditory CS and US in the LA when activated by high levels of circulating corticosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the increased number of CS \u00d7 US pairings strengthened the connection between auditory CS and US in the LA, and LAGR, which is activated by high levels of circulating corticosterone, contributes exclusively to this neural process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral and corticosterone data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "2259c7a3-6a6c-49a6-98a4-b7b8b389afa9",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C72",
+      "claim": "The findings are in agreement with the lower binding affinity of GR for glucocorticoids, leading to the critical role of GR in signaling mediated by stress-induced high levels of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in agreement with the lower binding affinity of GR for glucocorticoids, leading to the critical role of GR in signaling mediated by stress-induced high levels of glucocorticoids (Reul and de Kloet, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of known GR properties.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "253ec4c1-7122-4472-b86c-f0e1953ca188",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C73",
+      "claim": "Stress exposure modulates subsequent learning and memory bidirectionally, either through facilitation or impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidence indicates that stress exposure modulates subsequent learning and memory bidirectionally, either through facilitation or impairment (Raio and Phelps, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "986c001e-052a-4a4b-95ec-41ef745039b6",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C74",
+      "claim": "Glucocorticoid signaling has been thought as a common mechanism for mediating the effects of stress on fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucocorticoid signaling has been thought as a common mechanism for mediating the effects of stress on fear memory (Cordero et al., 2003; Rodr\u00edguez Manzanares et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "d8e26c05-7a65-4d64-97ef-b1d742e51836",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C75",
+      "claim": "A single acute stress exposure 48 hr before fear conditioning had no effect on auditory-cued fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "One previous report demonstrated that a single acute stress exposure 48 hr before fear conditioning had no effect on AFC (Cordero et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "d5ac7c91-50e8-47a2-a751-e904bc424380",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C76",
+      "claim": "GRs control the magnitude and duration of stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "GRs control the magnitude and duration of stress responses, and they are critical in the negative feedback regulation of the HPA axis in response to acute stress (Laryea et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "bd02013c-c433-4128-abbc-ebec66a29458",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C77",
+      "claim": "GRs are critical in the negative feedback regulation of the HPA axis in response to acute stress.",
+      "claim_type": "EXPLICIT",
+      "source": "GRs control the magnitude and duration of stress responses, and they are critical in the negative feedback regulation of the HPA axis in response to acute stress (Laryea et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "047d897a-66aa-4b45-ab7f-bef300bfb1fe",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C78",
+      "claim": "The timing of previous stress exposure is a key determinant of the effects of stress on auditory-cued fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, plasma corticosterone levels were significantly higher 1 hr after RS than 24 hr after RS (data not shown), and it is possible that the timing of previous stress exposure is a key determinant of the effects of stress on auditory-cued fear memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal pattern of corticosterone levels.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "2f1898c8-3876-4e1d-8f07-48cd2d7a079f",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C79",
+      "claim": "A long-lasting glutamatergic transmission in BLA neurons triggered by the application of corticosterone was suppressed by RS 1 hr before slice preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our in vivo evidence showing the LAGR-dependent suppressive effect of prior RS, Karst et al. demonstrated that a long-lasting glutamatergic transmission in BLA neurons triggered by the application of corticosterone was suppressed by RS 1 hr before slice preparation and the suppressive effect of RS was attenuated by treatment with a GR antagonist (Karst et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "7a7bd881-a628-4927-9436-c480e9768d63",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C80",
+      "claim": "The suppressive effect of RS on corticosterone-induced glutamatergic transmission was attenuated by treatment with a GR antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our in vivo evidence showing the LAGR-dependent suppressive effect of prior RS, Karst et al. demonstrated that a long-lasting glutamatergic transmission in BLA neurons triggered by the application of corticosterone was suppressed by RS 1 hr before slice preparation and the suppressive effect of RS was attenuated by treatment with a GR antagonist (Karst et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "11df0fcd-9efa-48f6-8b17-b3b476a9403d",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C81",
+      "claim": "Synaptic changes at auditory inputs to the LA play an essential role in the acquisition and expression of auditory-cued fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic changes at auditory inputs to the LA play an essential role in the acquisition and expression of auditory-cued fear memory (Blair et al., 2001; Rogan et al., 1997; Tsvetkov et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "747e4abd-1a89-421e-9098-ce4babb30b1a",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C82",
+      "claim": "Exposure to a single stress induces LTP in the BLA.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to a single stress induces LTP in the BLA (Sarabdjitsingh et al., 2012; Vouimba et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a62de3bf-e43f-4587-a1a0-e5fca6a57e4b",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C83",
+      "claim": "Prior RS exposure may occlude or suppress subsequent AFC-induced LTP in floxed GR mice, thereby preventing the formation of excessive cued fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that prior RS exposure occludes or suppresses subsequent AFC-induced LTP in floxed GR mice, thereby preventing the formation of excessive cued fear memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "52ea3171-3b2b-4511-b845-c7f8d75e7965",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C84",
+      "claim": "The optogenetic LTP experiment provides the first evidence supporting a causal link between stress-induced metaplasticity in the LA and adaptive fear response to a salient cue in a stressful condition.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we induced LTP at auditory inputs to the LA by optogenetic stimulation, and found a significant increase in auditory-cued fear responses in RS-exposed floxed GR mice. This is the first evidence supporting a causal link between stress-induced metaplasticity in the LA and adaptive fear response to a salient cue in a stressful condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "582bdf70-1711-4311-bc5c-465762fcd622",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C85",
+      "claim": "The activation of GRs is involved in stress-induced amygdalar metaplasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Several in vitro and in vivo electrophysiological studies have demonstrated that the activation of GRs is involved in stress-induced amygdalar metaplasticity (Karst et al., 2010; Kavushansky and Richter-Levin, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "32211a47-f955-49b6-8e1a-a10f3b765682",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C86",
+      "claim": "The activation of LAGR is essential for stress-induced suppression of synaptic plasticity in the LA.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, optogenetic delivery of an LTP protocol failed to alter fear responses to auditory cues in RS-exposed LAGRKO mice, supporting that the activation of LAGR is essential for stress-induced suppression of synaptic plasticity in the LA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the optogenetic experiment results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "9fe00f8a-92f4-4288-8085-adb986e5a9c4",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C87",
+      "claim": "The persistence of LTP induced in the presence of corticosterone is sensitive to previous RS exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this finding, a previous electrophysiological study using brain slices containing the BLA region demonstrated that the persistence of LTP induced in the presence of corticosterone is sensitive to previous RS exposure (Sarabdjitsingh and Jo\u00ebls, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "ae387eae-aaa8-4f43-8890-e9460b3d0c31",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C88",
+      "claim": "The persistence of AFC-induced LTP is suppressed by a previous RS exposure, thereby protecting animals from encoding excessive cued fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the results of our optogenetic experiment, together with existing evidence (Karst et al., 2010; Sarabdjitsingh and Jo\u00ebls, 2014), led us to postulate that the persistence of AFC-induced LTP is suppressed by a previous RS exposure, thereby protecting animals from encoding excessive cued fear memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the current study and previous research.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "95308bba-d338-4338-93a3-7f20d212b857",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C89",
+      "claim": "A short application of corticosterone activates G protein-coupled postsynaptic membrane glucocorticoid receptors (mGRs), leading to the synthesis and release of an endocannabinoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Di et al. demonstrated that a short application of corticosterone activates G protein-coupled postsynaptic membrane glucocorticoid receptors (mGRs), leading to the synthesis and release of an endocannabinoid, which binds to the presynaptic CB1 endocannabinoid receptor to suppress glutamate release (Di et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "8cd9cfea-f526-4982-931a-4175453f0346",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C90",
+      "claim": "The released endocannabinoid binds to the presynaptic CB1 endocannabinoid receptor to suppress glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "Di et al. demonstrated that a short application of corticosterone activates G protein-coupled postsynaptic membrane glucocorticoid receptors (mGRs), leading to the synthesis and release of an endocannabinoid, which binds to the presynaptic CB1 endocannabinoid receptor to suppress glutamate release (Di et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "7571511c-f08a-4624-8b53-596bc77b63fa",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C91",
+      "claim": "Postsynaptic mGRs activation induced by a recent RS exposure may result in reduction of glutamate release during subsequent fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, postsynaptic mGRs activation induced by a recent RS exposure may result in reduction of glutamate release during subsequent fear conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mechanism described by Di et al. (2003).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "62c8bfe4-fdcf-4868-98c4-7938cc73ff77",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C92",
+      "claim": "Membrane-impermeable corticosterone treatment decreases N-methyl-D-aspartate (NMDA)-induced Ca2+ elevation.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study, Sato et al. demonstrated that membrane-impermeable corticosterone treatment decreases N-methyl-D-aspartate (NMDA)-induced Ca2+ elevation, suggesting that activation of mGRs may inhibit Ca2+ influx via the NMDA receptor (Sato et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "8842b940-0af8-4511-880b-ae12e001bed5",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C93",
+      "claim": "Activation of mGRs may inhibit Ca2+ influx via the NMDA receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In another study, Sato et al. demonstrated that membrane-impermeable corticosterone treatment decreases N-methyl-D-aspartate (NMDA)-induced Ca2+ elevation, suggesting that activation of mGRs may inhibit Ca2+ influx via the NMDA receptor (Sato et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "2667c621-ec61-47e9-937d-4fee0b9f1520",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C94",
+      "claim": "The reduced presynaptic glutamate release and inhibition of postsynaptic Ca2+ influx 1 hr after RS exposure may influence the required level of depolarization for long-term maintenance of LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the reduced presynaptic glutamate release and inhibition of postsynaptic Ca2+ influx 1 hr after RS exposure may influence the required level of depolarization for long-term maintenance of LTP (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic interpretation based on previous research and illustrated in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "5e7c1277-88e8-45e7-8404-591a30160ea3",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C95",
+      "claim": "LAGR is indispensible for stress-induced metaplasticity in the LA.",
+      "claim_type": "EXPLICIT",
+      "source": "This study demonstrated that LAGR is indispensible for stress-induced metaplasticity in the LA and for controlling fear responses to salient cues depending on the recent stress history of an animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "f7f31c72-625f-4aa9-b065-dd9558183596",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C96",
+      "claim": "LAGR is indispensible for controlling fear responses to salient cues depending on the recent stress history of an animal.",
+      "claim_type": "EXPLICIT",
+      "source": "This study demonstrated that LAGR is indispensible for stress-induced metaplasticity in the LA and for controlling fear responses to salient cues depending on the recent stress history of an animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "b1174710-bb94-448e-9ebc-df828e3d2c71",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C97",
+      "claim": "Individuals with lower levels of cortisol are more susceptible to developing post-traumatic stress disorder (PTSD).",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with lower levels of cortisol are more susceptible to developing post-traumatic stress disorder (PTSD) (Yehuda, 2006, 1998), suggesting that glucocorticoid signaling dysfunction is involved in the development of PTSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "033065dc-9349-4ff8-8467-5283ea5d1fdf",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C98",
+      "claim": "Glucocorticoid signaling dysfunction is involved in the development of PTSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with lower levels of cortisol are more susceptible to developing post-traumatic stress disorder (PTSD) (Yehuda, 2006, 1998), suggesting that glucocorticoid signaling dysfunction is involved in the development of PTSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between cortisol levels and PTSD susceptibility.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "722b89f9-8d7d-445b-924d-51b6fde0e71a",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C99",
+      "claim": "The findings contribute to understanding how emotional memory is formed under stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings contribute to understanding how emotional memory is formed under stress conditions and provide clues for elucidating the pathophysiology and etiology of stress-related disorders, such as PTSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the broader significance of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "ff30ca3f-e6ef-44f1-9e8d-8256dfb0fe8f",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C100",
+      "claim": "The findings provide clues for elucidating the pathophysiology and etiology of stress-related disorders, such as PTSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings contribute to understanding how emotional memory is formed under stress conditions and provide clues for elucidating the pathophysiology and etiology of stress-related disorders, such as PTSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the broader significance of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "b740dad9-ac9f-4c69-a813-5b43b6e6bdfc",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C101",
+      "claim": "GR was undetectable in approximately 90.88% of LA neurons in floxed GR mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Double immunofluorescence staining with anti-GR and anti-NeuN (a neuronal marker) antibodies showed that GR was undetectable in approximately 70% of LA neurons in LAGRKO mice (floxed GR, 90.88 \u00b1 1.39%; LAGRKO, 20.27 \u00b1 0.95%; Figure 2A,B, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification of double immunofluorescence staining shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "61ee6db5-1e97-47e7-afe0-bd5c5d0c6cc9",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C102",
+      "claim": "The optical LTP protocol increased field EPSP slopes in floxed GR mice from 100 \u00b1 0.8% before LTP to 148.9 \u00b1 3.2% after LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of the average of field EPSP slopes (normalized to the period before optical stimulation) before and after delivering an optical LTP (Floxed GR, n = 4, before LTP, 100 \u00b1 0.8%, after LTP, 148.9 \u00b1 3.2%; LAGRKO, n = 4, before LTP, 100 \u00b1 0.6%, after LTP, 149.3 \u00b1 2.8%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vivo electrophysiology data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "7fcfd869-bfd3-4bde-a3b2-8037038bec0f",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C103",
+      "claim": "The optical LTP protocol increased field EPSP slopes in LAGRKO mice from 100 \u00b1 0.6% before LTP to 149.3 \u00b1 2.8% after LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of the average of field EPSP slopes (normalized to the period before optical stimulation) before and after delivering an optical LTP (Floxed GR, n = 4, before LTP, 100 \u00b1 0.8%, after LTP, 148.9 \u00b1 3.2%; LAGRKO, n = 4, before LTP, 100 \u00b1 0.6%, after LTP, 149.3 \u00b1 2.8%)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vivo electrophysiology data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "503f6662-8fbc-4d69-a871-e6220fe1ec4c",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C104",
+      "claim": "The optical LTD protocol decreased field EPSP slopes in floxed GR mice from 100 \u00b1 0.5% before LTD to 77.4 \u00b1 0.8% after LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "or LTD (Floxed GR, n = 4, before LTD, 100 \u00b1 0.5%, after LTD, 77.4 \u00b1 0.8%; LAGRKO, n = 4, before LTD, 100 \u00b1 0.6%, after LTD, 76.7 \u00b1 0.8%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vivo electrophysiology data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a448f017-b45f-41ad-a3be-4ffa21567650",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "claim_id": "C105",
+      "claim": "The optical LTD protocol decreased field EPSP slopes in LAGRKO mice from 100 \u00b1 0.6% before LTD to 76.7 \u00b1 0.8% after LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "or LTD (Floxed GR, n = 4, before LTD, 100 \u00b1 0.5%, after LTD, 77.4 \u00b1 0.8%; LAGRKO, n = 4, before LTD, 100 \u00b1 0.6%, after LTD, 76.7 \u00b1 0.8%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vivo electrophysiology data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8494c67a-7403-4834-897a-412510687e5a",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully generated LA-selective GR knockout (LAGRKO) mice using Grp-iCre driver crossed with floxed GR mice. Immunofluorescence analysis demonstrated selective disruption of GR in approximately 70% of LA neurons in LAGRKO mice (from 90.88% in controls to 20.27% in LAGRKO), with minimal off-target effects in other brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 and C101 provide converging evidence from X-gal staining and immunofluorescence demonstrating successful and selective GR knockout in the LA. The quantification shows robust reduction in GR expression specifically in LA neurons with minimal disruption elsewhere, validating the genetic model. Statistical data and imaging support the specificity of the knockout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "69580526-9aca-4579-aa93-a09c68c37845",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LAGRKO mice exhibit impaired auditory-cued fear memory specifically under strengthened conditioning (6 CS\u00d7US pairings) but not moderate conditioning (3 CS\u00d7US pairings). This deficit is selective to auditory-cued memory, as contextual fear memory and training performance remain intact. The strengthened conditioning protocol induces significantly higher corticosterone levels, consistent with GR's role in high-stress signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 demonstrate a clear, statistically significant phenotype that is specific to strengthened conditioning and auditory-cued memory. The behavioral data (C34-C36) show selective impairment during tone presentation (p=0.046) without affecting training or contextual memory. Corticosterone measurements (C37) provide mechanistic support, and open field tests (C38-C39) rule out confounding anxiety/locomotor effects. The convergence of these findings strongly supports the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "076af80e-47eb-4c9e-8ba2-b126dfe06c09",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AAV-mediated re-expression of GR in the LA of LAGRKO mice rescues the auditory-cued fear memory deficit, confirming that the behavioral phenotype is specifically due to loss of LAGR rather than off-target effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 demonstrate successful rescue of the phenotype through viral re-expression of GR. The statistical analysis (F2,24 = 5.25, p=0.013) shows significant restoration of auditory-cued fear memory in AAV-GR injected LAGRKO mice to control levels, while training and contextual memory remain unaffected. This genetic rescue experiment provides strong causal evidence for LAGR's specific role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "cf7875f4-950e-4338-9197-782b3191828c",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior restraint stress (RS) 1 hour before conditioning produces bidirectional effects on fear memory that are LAGR-dependent: it enhances contextual fear memory in both genotypes but suppresses auditory-cued fear memory only in floxed GR mice, not in LAGRKO mice. This differential effect occurs despite equivalent corticosterone levels between genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 demonstrate a clear genotype-dependent effect of prior stress on auditory-cued fear memory (floxed GR p=0.016; LAGRKO p=0.951). The bidirectional effects on contextual vs. auditory-cued memory are well-documented with appropriate statistics. Corticosterone measurements (C51-C52) confirm that the differential behavioral effects are not due to differences in HPA axis activation, supporting a receptor-level mechanism. The convergence of behavioral and hormonal data strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "e62d1ddc-ab8e-4fb5-9043-c9a98c121b7d",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic induction of LTP at auditory inputs to the LA rescues auditory-cued fear memory in RS-exposed floxed GR mice but not in LAGRKO mice, supporting the hypothesis that prior stress suppresses AFC-induced LTP in a GR-dependent manner. Electrophysiological validation confirms that the optical protocol produces the expected LTP (increasing field EPSP slopes to ~149% in both genotypes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 demonstrate genotype-specific behavioral effects of optical LTP (floxed GR p=0.046; LAGRKO p=0.811), while C60, C102-C103 provide electrophysiological validation showing equivalent LTP induction in both genotypes. This dissociation between physiological LTP induction and behavioral rescue specifically in LAGRKO mice provides strong evidence for GR-dependent metaplasticity. The convergence of behavioral and electrophysiological data supports the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "042cd5cd-c2ae-415b-887f-bd3287c14a90",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optogenetic induction of LTD at auditory inputs to the LA reduces auditory-cued fear memory in RS-exposed LAGRKO mice, further supporting that stress-induced changes in synaptic strength regulate fear memory. Electrophysiological validation confirms that the optical protocol produces the expected LTD (decreasing field EPSP slopes to ~77% in both genotypes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 show significant behavioral effects of optical LTD in LAGRKO mice (p=0.010), while C61, C104-C105 provide electrophysiological validation of LTD induction. The ability to bidirectionally manipulate fear memory through synaptic plasticity manipulations provides strong causal evidence for the role of synaptic strength in fear memory regulation. The complementary nature of the LTP and LTD experiments strengthens the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study demonstrates that LAGR is essential for stress-induced metaplasticity in the LA, which suppresses fear conditioning-induced LTP at auditory inputs in a GR-dependent manner, thereby protecting animals from encoding excessive cued fear memory under stress conditions and controlling fear responses based on recent stress history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C67-C68, C88, C95-C96 represent the main conclusions synthesized from the experimental findings. These conclusions are well-supported by the convergence of genetic knockout data (C3-C4), rescue experiments (C40-C44), stress manipulation studies (C48-C50), and optogenetic manipulations (C55-C59). The mechanistic model is consistent with prior literature (C79-C80, C87) and provides a coherent explanation for all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a1776072-0807-413d-bd14-b2b728a4fe30",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The optogenetic experiments provide the first causal evidence linking stress-induced metaplasticity in the LA to adaptive fear responses, demonstrating that LAGR activation is essential for stress-induced suppression of synaptic plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C84, C86 represent important mechanistic conclusions supported by the optogenetic manipulation experiments. The validation of optical protocols (C60-C61) combined with genotype-specific behavioral effects (C55-C59) provides strong causal evidence. The authors appropriately claim novelty (C84) as this is the first demonstration of a causal link between amygdalar metaplasticity and adaptive fear behavior in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "e0053551-ea2c-4db8-9c58-c821592fa4d8",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LAGR exclusively mediates auditory-cued fear responses to strengthened conditioning and plays a critical role in signaling mediated by stress-induced high levels of glucocorticoids, consistent with GR's lower binding affinity requiring high hormone levels for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C70-C72 synthesize the conditioning strength experiments with known GR properties. The selective deficit under strengthened but not moderate conditioning (C33-C34), combined with elevated corticosterone levels (C37), supports the interpretation that LAGR is specifically engaged under high-stress conditions. This interpretation is consistent with established GR pharmacology (C13-C15) and appropriately integrates the current findings with prior knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "263c5baa-2105-4932-bebc-a11e22fac62a",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors hypothesized that prior RS exposure suppresses AFC-induced LTP in the LA, leading to attenuation of auditory-cued fear memory in floxed GR mice, and that LAGR disruption impairs stress-induced metaplasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C83 represent hypotheses that were subsequently tested and supported by the optogenetic experiments (C55-C59). While these are speculative statements when first proposed, they are validated by the experimental results that follow. The hypotheses are reasonable based on prior literature (C19-C22, C82) and are appropriately tested through causal manipulation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "0a90038e-b768-43f5-8e82-49ac39c16eff",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The timing of stress exposure is a key determinant of effects on fear memory, potentially through mechanisms involving reduced glutamate release and inhibited Ca2+ influx that influence LTP maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78, C91, C94 propose mechanistic interpretations based on temporal patterns and prior literature (C89-C93). However, these mechanisms were not directly tested in the current study. While the timing hypothesis (C78) is supported by corticosterone measurements, the specific molecular mechanisms (C91, C94) remain speculative. The authors appropriately cite relevant literature but do not provide direct experimental evidence for these specific mechanisms in their system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "adaee357-fdcb-471c-a908-4645619b5a60",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes foundational knowledge about the stress response system, glucocorticoid receptors, and the role of the LA in auditory-cued fear conditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C18 represent established knowledge supported by appropriate citations. These background claims provide necessary context for the study and are well-supported by the cited literature. The claims accurately represent current understanding of the HPA axis, GR/MR properties, and amygdala function in fear conditioning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "45d25f16-9c2d-4380-ae99-0be51ab240fb",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior research has demonstrated GR-dependent metaplasticity in brain slices and stress-induced suppression of LTP, but the in vivo relevance to auditory-cued fear memory strength and the specific role of LAGR remained unknown, representing the knowledge gap addressed by this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 accurately characterize prior work and identify the knowledge gap. The citations to Karst et al. (2010) and others are appropriate, and the identification of unknown aspects (C23-C24) correctly motivates the current study. This represents a fair assessment of the field and justifies the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature demonstrates that fear conditioning is susceptible to stress modulation, with glucocorticoid signaling as a common mechanism, though effects depend on timing and other factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C69, C73-C77 accurately summarize relevant prior literature with appropriate citations. These claims provide context for understanding the bidirectional effects of stress on fear memory and the role of GR in HPA axis regulation. The characterization of prior work is accurate and relevant to the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "06948b9e-91b6-4683-aa06-06e39765c4de",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior research has demonstrated GR involvement in stress-induced amygdalar metaplasticity, stress-induced LTP in the BLA, and the importance of synaptic changes at auditory inputs to the LA for fear memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82, C85, C87 accurately cite and characterize relevant prior literature that supports the mechanistic framework of the current study. The citations are appropriate and the characterizations are accurate, providing important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "a87652bd-4c67-432f-88d5-2b9343cf5d04",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior research has identified rapid, non-genomic mechanisms of glucocorticoid action through membrane receptors, including endocannabinoid-mediated suppression of glutamate release and inhibition of NMDA receptor-mediated Ca2+ influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90, C92-C93 accurately cite prior work by Di et al. (2003) and Sato et al. (2004) describing rapid glucocorticoid effects. These citations are appropriate and provide mechanistic context for understanding how stress might rapidly modulate synaptic plasticity, though these specific mechanisms were not directly tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    },
+    {
+      "id": "3ed0bf9a-901d-41a5-a13f-004904287829",
+      "content_id": "34fd7146-b026-4bf9-8898-042f6e8894d6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings have translational relevance to understanding PTSD, as individuals with lower cortisol levels are more susceptible to PTSD, suggesting glucocorticoid signaling dysfunction is involved. The study contributes to understanding emotional memory formation under stress and provides clues for elucidating stress-related disorder pathophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C100 make translational claims connecting the findings to PTSD. While the citation to Yehuda (C97) is appropriate and the general connection is reasonable, the direct relevance of the specific findings to PTSD pathophysiology is speculative. The claims are appropriately hedged ('contribute to understanding,' 'provide clues') but represent future directions rather than demonstrated results. The translational relevance is plausible but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:15:04.118296Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6a68517e-6109-472f-b897-929a54caebd7",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "3bba8e92-1080-4710-b3b3-9ad6493b198c",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "552df04c-53a8-41e8-9e9e-8942a5f8a3de",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "08612b70-28a2-446b-be4b-647a40e54681",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "88e891b5-71a8-4969-b4ed-e2d0223a01ae",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "670f1033-b065-4e07-bce3-02f3f814cf1e",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "e75221f6-5900-4da7-b288-5d1f44cdad3c",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "9c20f0b8-c683-4d0b-b5a3-91aaf98efeb4",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "b740dad9-ac9f-4c69-a813-5b43b6e6bdfc",
+      "result_id": "8494c67a-7403-4834-897a-412510687e5a"
+    },
+    {
+      "claim_id": "800e1539-9bb2-4f7b-b972-39f1fea95920",
+      "result_id": "69580526-9aca-4579-aa93-a09c68c37845"
+    },
+    {
+      "claim_id": "1235d32d-ea92-414d-aa49-7e305754f199",
+      "result_id": "69580526-9aca-4579-aa93-a09c68c37845"
+    },
+    {
+      "claim_id": "203c9042-efb3-4393-97fc-9d0c85688b37",
+      "result_id": "69580526-9aca-4579-aa93-a09c68c37845"
+    },
+    {
+      "claim_id": "017fd38c-3bf2-4b7d-a5b9-d33d8cda432d",
+      "result_id": "69580526-9aca-4579-aa93-a09c68c37845"
+    },
+    {
+      "claim_id": "f6c33785-57da-4165-bef5-cd7d8059c6c7",
+      "result_id": "69580526-9aca-4579-aa93-a09c68c37845"
+    },
+    {
+      "claim_id": "135b589a-1d54-4a86-ab95-25e45e747de9",
+      "result_id": "69580526-9aca-4579-aa93-a09c68c37845"
+    },
+    {
+      "claim_id": "f4ebed85-fdbe-481e-b7cd-9531a1727b9b",
+      "result_id": "69580526-9aca-4579-aa93-a09c68c37845"
+    },
+    {
+      "claim_id": "ca9f8d25-ae9b-4739-bfc0-51eb711eaed4",
+      "result_id": "076af80e-47eb-4c9e-8ba2-b126dfe06c09"
+    },
+    {
+      "claim_id": "74f48747-c546-49a0-a45b-0453808f4b37",
+      "result_id": "076af80e-47eb-4c9e-8ba2-b126dfe06c09"
+    },
+    {
+      "claim_id": "0677cdac-3b89-480f-8d73-75f6aac510b5",
+      "result_id": "076af80e-47eb-4c9e-8ba2-b126dfe06c09"
+    },
+    {
+      "claim_id": "d6f37868-fa06-4bf7-aac0-52142632b7bd",
+      "result_id": "076af80e-47eb-4c9e-8ba2-b126dfe06c09"
+    },
+    {
+      "claim_id": "b51c608e-4f21-4f75-92c9-d8fc3a5aa0af",
+      "result_id": "076af80e-47eb-4c9e-8ba2-b126dfe06c09"
+    },
+    {
+      "claim_id": "d0ed2ec9-a8c0-4e33-9c49-5c00420a55ef",
+      "result_id": "cf7875f4-950e-4338-9197-782b3191828c"
+    },
+    {
+      "claim_id": "a4c4f7c8-4a83-4959-ae4d-47bdcfee569d",
+      "result_id": "cf7875f4-950e-4338-9197-782b3191828c"
+    },
+    {
+      "claim_id": "229618b3-7651-4dfb-93f4-84744dc561f6",
+      "result_id": "cf7875f4-950e-4338-9197-782b3191828c"
+    },
+    {
+      "claim_id": "6347ba92-9412-45d5-9e4b-a7957b0ec740",
+      "result_id": "cf7875f4-950e-4338-9197-782b3191828c"
+    },
+    {
+      "claim_id": "50b4549f-81a3-46d6-adf7-1700fdc89e31",
+      "result_id": "cf7875f4-950e-4338-9197-782b3191828c"
+    },
+    {
+      "claim_id": "c09bf989-149d-48e1-a1a9-2ad8b9875668",
+      "result_id": "cf7875f4-950e-4338-9197-782b3191828c"
+    },
+    {
+      "claim_id": "532b087d-523e-40f3-8e69-2593261bc811",
+      "result_id": "cf7875f4-950e-4338-9197-782b3191828c"
+    },
+    {
+      "claim_id": "3574ca4b-5d1f-48c3-844a-80d7b78a559a",
+      "result_id": "e62d1ddc-ab8e-4fb5-9043-c9a98c121b7d"
+    },
+    {
+      "claim_id": "d7c1078a-becf-48ee-b6c0-a9ccd819da92",
+      "result_id": "e62d1ddc-ab8e-4fb5-9043-c9a98c121b7d"
+    },
+    {
+      "claim_id": "5b9e7649-73fe-4024-b002-9e8d087e7e0d",
+      "result_id": "e62d1ddc-ab8e-4fb5-9043-c9a98c121b7d"
+    },
+    {
+      "claim_id": "8ef3153c-8b3c-4c29-b303-2f92088bfd61",
+      "result_id": "e62d1ddc-ab8e-4fb5-9043-c9a98c121b7d"
+    },
+    {
+      "claim_id": "61ee6db5-1e97-47e7-afe0-bd5c5d0c6cc9",
+      "result_id": "e62d1ddc-ab8e-4fb5-9043-c9a98c121b7d"
+    },
+    {
+      "claim_id": "7fcfd869-bfd3-4bde-a3b2-8037038bec0f",
+      "result_id": "e62d1ddc-ab8e-4fb5-9043-c9a98c121b7d"
+    },
+    {
+      "claim_id": "9ba03f33-df6b-41e7-8ae7-cc90b3f90e40",
+      "result_id": "042cd5cd-c2ae-415b-887f-bd3287c14a90"
+    },
+    {
+      "claim_id": "a33a5378-8229-446f-ac70-77c3db0af5cb",
+      "result_id": "042cd5cd-c2ae-415b-887f-bd3287c14a90"
+    },
+    {
+      "claim_id": "d31bb0b8-d25a-4c3b-980b-dee925f64065",
+      "result_id": "042cd5cd-c2ae-415b-887f-bd3287c14a90"
+    },
+    {
+      "claim_id": "503f6662-8fbc-4d69-a871-e6220fe1ec4c",
+      "result_id": "042cd5cd-c2ae-415b-887f-bd3287c14a90"
+    },
+    {
+      "claim_id": "a448f017-b45f-41ad-a3be-4ffa21567650",
+      "result_id": "042cd5cd-c2ae-415b-887f-bd3287c14a90"
+    },
+    {
+      "claim_id": "c4e7a8b0-9bda-4772-a23d-3b6356f6dd86",
+      "result_id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb"
+    },
+    {
+      "claim_id": "3851d282-f93c-43db-90cf-862f62565442",
+      "result_id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb"
+    },
+    {
+      "claim_id": "599fd000-6ad0-4144-bf3c-97cec7d085fa",
+      "result_id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb"
+    },
+    {
+      "claim_id": "eab8ad5c-ec38-43b8-946c-8f10d61e8c37",
+      "result_id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb"
+    },
+    {
+      "claim_id": "ae387eae-aaa8-4f43-8890-e9460b3d0c31",
+      "result_id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb"
+    },
+    {
+      "claim_id": "5e7c1277-88e8-45e7-8404-591a30160ea3",
+      "result_id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb"
+    },
+    {
+      "claim_id": "f7f31c72-625f-4aa9-b065-dd9558183596",
+      "result_id": "42ecdb82-5763-4637-8d94-c8cfa718d4fb"
+    },
+    {
+      "claim_id": "0641e8cc-3dbb-4a27-80d5-df8c74313680",
+      "result_id": "a1776072-0807-413d-bd14-b2b728a4fe30"
+    },
+    {
+      "claim_id": "52ea3171-3b2b-4511-b845-c7f8d75e7965",
+      "result_id": "a1776072-0807-413d-bd14-b2b728a4fe30"
+    },
+    {
+      "claim_id": "32211a47-f955-49b6-8e1a-a10f3b765682",
+      "result_id": "a1776072-0807-413d-bd14-b2b728a4fe30"
+    },
+    {
+      "claim_id": "7b999352-2108-4de2-8af0-79cfb2f5935a",
+      "result_id": "e0053551-ea2c-4db8-9c58-c821592fa4d8"
+    },
+    {
+      "claim_id": "a079b899-e307-46bb-b75c-01ad277e2f08",
+      "result_id": "e0053551-ea2c-4db8-9c58-c821592fa4d8"
+    },
+    {
+      "claim_id": "61577cc1-7a62-4d21-80b8-9188b271b435",
+      "result_id": "e0053551-ea2c-4db8-9c58-c821592fa4d8"
+    },
+    {
+      "claim_id": "a2594e7e-92c0-474a-a01e-7faa605a73ac",
+      "result_id": "e0053551-ea2c-4db8-9c58-c821592fa4d8"
+    },
+    {
+      "claim_id": "2259c7a3-6a6c-49a6-98a4-b7b8b389afa9",
+      "result_id": "e0053551-ea2c-4db8-9c58-c821592fa4d8"
+    },
+    {
+      "claim_id": "573b0878-f5d8-4d04-8d36-bacfdc23f8e5",
+      "result_id": "263c5baa-2105-4932-bebc-a11e22fac62a"
+    },
+    {
+      "claim_id": "8940afab-7c5a-4974-877e-de36a7b65d6b",
+      "result_id": "263c5baa-2105-4932-bebc-a11e22fac62a"
+    },
+    {
+      "claim_id": "a62de3bf-e43f-4587-a1a0-e5fca6a57e4b",
+      "result_id": "263c5baa-2105-4932-bebc-a11e22fac62a"
+    },
+    {
+      "claim_id": "047d897a-66aa-4b45-ab7f-bef300bfb1fe",
+      "result_id": "0a90038e-b768-43f5-8e82-49ac39c16eff"
+    },
+    {
+      "claim_id": "7571511c-f08a-4624-8b53-596bc77b63fa",
+      "result_id": "0a90038e-b768-43f5-8e82-49ac39c16eff"
+    },
+    {
+      "claim_id": "2667c621-ec61-47e9-937d-4fee0b9f1520",
+      "result_id": "0a90038e-b768-43f5-8e82-49ac39c16eff"
+    },
+    {
+      "claim_id": "81a14a98-8869-42fb-80b9-27ea6607abad",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "3eb92dbc-32a2-460c-a9ee-0fc95dbbbc60",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "16581272-a177-4f29-ab8c-52c0ac169025",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "4030e06b-2819-46b6-9d13-0f96be9d844f",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "e0e911e4-08d2-44e0-add0-b80c51ea566b",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "84d7c852-7561-422b-b407-a7b9292803f8",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "c45db274-2e7a-4662-9c86-2087a1aa2048",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "50dff2e9-be04-476d-8c0e-4f3ee1ab30fb",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "e1140adb-5ef0-4b06-894e-f8738f5830a4",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "1860e0cb-1bd6-4d83-ba27-e4ac16650d4f",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "70591c43-bd26-463e-87da-eaaf72b8090f",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "97cdc9d6-6064-4445-8368-22ce853e05d0",
+      "result_id": "adaee357-fdcb-471c-a908-4645619b5a60"
+    },
+    {
+      "claim_id": "f9c2196c-b231-4d0a-b9f8-74ee035cabe0",
+      "result_id": "45d25f16-9c2d-4380-ae99-0be51ab240fb"
+    },
+    {
+      "claim_id": "f075878a-e552-4d39-9358-6dd3a6717f85",
+      "result_id": "45d25f16-9c2d-4380-ae99-0be51ab240fb"
+    },
+    {
+      "claim_id": "4366a242-9701-4bbb-8727-fc1f24a5af6e",
+      "result_id": "45d25f16-9c2d-4380-ae99-0be51ab240fb"
+    },
+    {
+      "claim_id": "b4034929-b877-4a31-8bb7-cc899f301909",
+      "result_id": "45d25f16-9c2d-4380-ae99-0be51ab240fb"
+    },
+    {
+      "claim_id": "ddb88552-d101-45ac-b2bb-47c23f777fa9",
+      "result_id": "45d25f16-9c2d-4380-ae99-0be51ab240fb"
+    },
+    {
+      "claim_id": "f4dc3b7d-a601-4986-9c0f-c9289ab87708",
+      "result_id": "45d25f16-9c2d-4380-ae99-0be51ab240fb"
+    },
+    {
+      "claim_id": "418ac8e7-4f1e-4278-baef-a5c1946c59b7",
+      "result_id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c"
+    },
+    {
+      "claim_id": "25dacff4-51ae-4ee9-b5c2-2c5a16ee7203",
+      "result_id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c"
+    },
+    {
+      "claim_id": "253ec4c1-7122-4472-b86c-f0e1953ca188",
+      "result_id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c"
+    },
+    {
+      "claim_id": "986c001e-052a-4a4b-95ec-41ef745039b6",
+      "result_id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c"
+    },
+    {
+      "claim_id": "d8e26c05-7a65-4d64-97ef-b1d742e51836",
+      "result_id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c"
+    },
+    {
+      "claim_id": "d5ac7c91-50e8-47a2-a751-e904bc424380",
+      "result_id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c"
+    },
+    {
+      "claim_id": "bd02013c-c433-4128-abbc-ebec66a29458",
+      "result_id": "f6f912aa-7df8-44d7-9766-67a7f36dd08c"
+    },
+    {
+      "claim_id": "2f1898c8-3876-4e1d-8f07-48cd2d7a079f",
+      "result_id": "06948b9e-91b6-4683-aa06-06e39765c4de"
+    },
+    {
+      "claim_id": "7a7bd881-a628-4927-9436-c480e9768d63",
+      "result_id": "06948b9e-91b6-4683-aa06-06e39765c4de"
+    },
+    {
+      "claim_id": "11df0fcd-9efa-48f6-8b17-b3b476a9403d",
+      "result_id": "06948b9e-91b6-4683-aa06-06e39765c4de"
+    },
+    {
+      "claim_id": "747e4abd-1a89-421e-9098-ce4babb30b1a",
+      "result_id": "06948b9e-91b6-4683-aa06-06e39765c4de"
+    },
+    {
+      "claim_id": "582bdf70-1711-4311-bc5c-465762fcd622",
+      "result_id": "06948b9e-91b6-4683-aa06-06e39765c4de"
+    },
+    {
+      "claim_id": "9fe00f8a-92f4-4288-8085-adb986e5a9c4",
+      "result_id": "06948b9e-91b6-4683-aa06-06e39765c4de"
+    },
+    {
+      "claim_id": "95308bba-d338-4338-93a3-7f20d212b857",
+      "result_id": "a87652bd-4c67-432f-88d5-2b9343cf5d04"
+    },
+    {
+      "claim_id": "8cd9cfea-f526-4982-931a-4175453f0346",
+      "result_id": "a87652bd-4c67-432f-88d5-2b9343cf5d04"
+    },
+    {
+      "claim_id": "62c8bfe4-fdcf-4868-98c4-7938cc73ff77",
+      "result_id": "a87652bd-4c67-432f-88d5-2b9343cf5d04"
+    },
+    {
+      "claim_id": "8842b940-0af8-4511-880b-ae12e001bed5",
+      "result_id": "a87652bd-4c67-432f-88d5-2b9343cf5d04"
+    },
+    {
+      "claim_id": "b1174710-bb94-448e-9ebc-df828e3d2c71",
+      "result_id": "3ed0bf9a-901d-41a5-a13f-004904287829"
+    },
+    {
+      "claim_id": "033065dc-9349-4ff8-8467-5283ea5d1fdf",
+      "result_id": "3ed0bf9a-901d-41a5-a13f-004904287829"
+    },
+    {
+      "claim_id": "722b89f9-8d7d-445b-924d-51b6fde0e71a",
+      "result_id": "3ed0bf9a-901d-41a5-a13f-004904287829"
+    },
+    {
+      "claim_id": "ff30ca3f-e6ef-44f1-9e8d-8256dfb0fe8f",
+      "result_id": "3ed0bf9a-901d-41a5-a13f-004904287829"
+    }
+  ],
+  "comparisons": []
+}

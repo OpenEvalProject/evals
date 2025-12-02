@@ -1,0 +1,1992 @@
+{
+  "submission": {
+    "id": "ba88aa75-727a-44d8-bc63-6a75953258d7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:59:18.568674Z",
+    "updated_at": "2025-12-01T19:59:18.568674Z"
+  },
+  "content": [
+    {
+      "id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "submission_id": "ba88aa75-727a-44d8-bc63-6a75953258d7",
+      "content_type": "manuscript",
+      "content_text": "# Synthetic lethality between the cohesin subunits STAG1 and STAG2 in diverse cancer contexts\n\n## Authors\n\n- Petra van der Lelij<sup>1</sup>\n- Simone Lieb<sup>2</sup>\n- Julian Jude<sup>1</sup> ([ORCID: 0000-0002-9091-9867](https://orcid.org/0000-0002-9091-9867))\n- Gordana Wutz<sup>1</sup>\n- Catarina P Santos<sup>3</sup>\n- Katrina Falkenberg<sup>1</sup>\n- Andreas Schlattl<sup>2</sup>\n- Jozef Ban<sup>5</sup>\n- Raphaela Schwentner<sup>5</sup> ([ORCID: 0000-0001-6839-0322](https://orcid.org/0000-0001-6839-0322))\n- Thomas Hoffmann<sup>1</sup>\n- Heinrich Kovar<sup>5</sup>\n- Francisco X Real<sup>3</sup>\n- Todd Waldman<sup>8</sup>\n- Mark A Pearson<sup>2</sup>\n- Norbert Kraut<sup>2</sup>\n- Jan-Michael Peters<sup>1</sup>\n- Johannes Zuber<sup>1</sup> ([ORCID: 0000-0001-8810-6835](https://orcid.org/0000-0001-8810-6835))\n- Mark Petronczki<sup>2</sup> ([ORCID: 0000-0003-0139-5692](https://orcid.org/0000-0003-0139-5692)) \u2020\n\n### Affiliations\n\n1. Research Institute of Molecular Pathology Vienna Biocenter Vienna Austria\n2. Boehringer Ingelheim RCV GmbH & Co KG Vienna Austria\n3. Spanish National Cancer Research Centre Madrid Spain\n4. Centro de Investigaci\u00f3n Biom\u00e9dica en Red de C\u00e1ncer Madrid Spain\n5. Children\u2019s Cancer Research Institute Vienna Austria\n6. Department for Pediatrics Medical University of Vienna Vienna Austria\n7. Department de Ci\u00e8ncies Experimentals I de la Salut Universitat Pompeu Fabra Barcelona Spain\n8. Lombardi Comprehensive Cancer Center Georgetown University School of Medicine Washington DC United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent genome analyses have identified recurrent mutations in the cohesin complex in a wide range of human cancers. Here we demonstrate that the most frequently mutated subunit of the cohesin complex, STAG2, displays a strong synthetic lethal interaction with its paralog STAG1. Mechanistically, STAG1 loss abrogates sister chromatid cohesion in STAG2 mutated but not in wild-type cells leading to mitotic catastrophe, defective cell division and apoptosis. STAG1 inactivation inhibits the proliferation of STAG2 mutated but not wild-type bladder cancer and Ewing sarcoma cell lines. Restoration of STAG2 expression in a mutated bladder cancer model alleviates the dependency on STAG1. Thus, STAG1 and STAG2 support sister chromatid cohesion to redundantly ensure cell survival. STAG1 represents a vulnerability of cancer cells carrying mutations in the major emerging tumor suppressor STAG2 across different cancer contexts. Exploiting synthetic lethal interactions to target recurrent cohesin mutations in cancer, e.g. by inhibiting STAG1, holds the promise for the development of selective therapeutics.\n\n## Introduction\n\nCohesin is a highly conserved ring-shaped protein complex that is thought to topologically embrace chromatid fibers (Peters and Nishiyama, 2012), which is essential for sister chromatid cohesion and chromosome segregation in eukaryotes. In addition, cohesin participates in DNA repair, genome organization and gene expression (Losada, 2014). The cohesin subunits SMC1, SMC3 and RAD21 (also called SCC1) comprise the core ring of the complex. A fourth universally conserved subunit, a HEAT repeat protein of the Scc3/STAG family, peripherally associates with the core cohesin ring by binding to RAD21 (T\u00f3th et al., 1999), and is required for the dynamic association of cohesin with chromatin (Hu et al., 2011; Murayama and Uhlmann, 2014). Human somatic cells express two paralogs of this protein, called STAG1 and STAG2 (Losada et al., 2000; Sumara et al., 2000).\n\nRecent cancer genome studies identified recurrent mutations in cohesin subunits and regulators in approximately 7.3% of all human cancers (Lawrence et al., 2014; Leiserson et al., 2015; Solomon et al., 2011). STAG2, the most frequently mutated cohesin subunit, emerges as one of only 12 genes that are significantly mutated in four or more major human malignancies (Lawrence et al., 2014). STAG2 mutations have been reported in\u00a0~6% of acute myeloid leukemias and myelodysplastic syndromes (Kon et al., 2013; Thota et al., 2014; Walter et al., 2012), 15\u201322% of Ewing\u2019s sarcomas (Brohl et al., 2014; Crompton et al., 2014; Tirode et al., 2014), and in up to 26% of bladder cancers of various stages and grades (Balb\u00e1s-Mart\u00ednez et al., 2013; Guo et al., 2013; Solomon et al., 2013; Taylor et al., 2014). The deleterious nature of most STAG2 mutations strongly suggests that the gene represents a new tumor suppressor (Hill et al., 2016). STAG2 mutations were initially thought to promote tumorigenesis due to defects in sister chromatid cohesin leading to genome instability (Barber et al., 2008; Solomon et al., 2011). However, the vast majority of cohesin-mutated cancers are euploid (Balb\u00e1s-Mart\u00ednez et al., 2013; Kon et al., 2013), indicating that cohesin mutations may promote tumorigenesis through altering different cohesin functions such as genome organization and transcriptional regulation (Galeev et al., 2016; Mazumdar et al., 2015; Mullenders et al., 2015; Viny et al., 2015). Regardless of the mechanisms driving cohesin mutant tumors, the recent success of poly(ADP-ribose) polymerase inhibitors in the treatment of BRCA-mutated ovarian and prostate cancer demonstrates that exploiting tumor suppressor loss by applying the concept of synthetic lethality in defined patient populations can impact clinical cancer care (Castro et al., 2016; Kim et al., 2015; Mirza et al., 2016; Oza et al., 2015). The estimated half a million individuals with STAG2-mutant malignancies would greatly profit from exploring specific dependencies of these cancers.\n\n## Results\n\nWe hypothesized that STAG2 loss could alter the properties and function of the cohesin complex leading to unique vulnerabilities of STAG2 mutated cells. To identify factors whose inactivation would be synthetic lethal with loss of STAG2 function, we first used CRISPR/Cas9 to inactivate STAG2 in near-diploid, chromosomally stable HCT 116 colon carcinoma cells (Figure 1A). Two clones, STAG2- 505c1 and 502c4, harboring deleterious mutations in STAG2 and lacking detectable STAG2 protein expression were selected for analyses (Figure 1\u2014figure supplement 1 and Supplementary file 1). The isogenic parental and STAG2- HCT 116 cells were transfected with short-interfering RNA (siRNA) duplexes targeting 25 known cohesin subunits and regulators. After normalization to the non-target control siRNA (NTC), the effects of siRNA duplexes targeting individual genes were compared in parental and STAG2- cells. Depletion of the known essential cohesin regulator SGOL1 had a detrimental impact on viability of both parental and STAG2- cells. Remarkably, depletion of STAG1 strongly decreased cell viability in STAG2- cells, while being tolerated by the isogenic parental cells (Figure 1B). The pronounced selective effect of STAG1 depletion on STAG2- cells was confirmed in individual transfection experiments and colony formation assays (Figure 1C,D,E). Expression of an siRNA-resistant STAG1 transgene alleviated the anti-proliferative effect of STAG1 but not of SGOL1 siRNA duplexes in STAG2- HCT 116 cells demonstrating the specificity of the siRNA treatment (Figure 1\u2014figure supplement 2). Double depletion of STAG1 and STAG2 by siRNA in parental cells confirmed their synthetic lethal interaction (Figure 1\u2014figure supplement 3). Co-depletion of p53 and STAG1 indicated that the dependency of STAG2- cells on STAG1 was independent of p53 (Figure 1\u2014figure supplement 4). In contrast to the loss of essential cohesin subunits or regulators, depletion of STAG1 had no effect on cell viability in non-transformed telomerase-immortalized human retinal pigment epithelial cells (hTERT RPE-1) (Figure 1\u2014figure supplement 5). This result is supported by a large-scale genetic loss-of-function study that found that neither STAG1 nor STAG2 is essential for the proliferation of hTERT-RPE1 cells (Hart et al., 2015). To corroborate our genetic interaction findings using an independent strategy, we introduced Cas9 into parental and STAG2- HCT 116 cells as well as KBM-7 leukemia cells for competition assays (Figure 1F and Figure 1\u2014figure supplement 1). Transduction of lentiviruses co-expressing mCherry and single guide RNAs (sgRNAs) targeting essential cohesin subunit genes, such as RAD21 and SMC3, resulted in the rapid loss of the infected and mCherry-positive cells from the population irrespective of STAG2 genotype (Figure 1F). In striking contrast, transduction with sgRNAs targeting STAG1 caused the depletion of STAG2- HCT 116 and KBM-7 cells but not of their parental STAG2 proficient counterparts (Figure 1F). Collectively, these experiments identify STAG1 as a vulnerability of STAG2 mutated cells in engineered solid cancer and leukemia models. STAG1 inactivation has little if any impact on the viability and proliferation of STAG2 wild-type cancer cells and non-transformed cells, but is essential for survival in the absence of STAG2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig1-v3.jpg)\n\n**Figure 1.:** (A) Engineering of an isogenic HCT 116 cell model by CRISPR/Cas9-mediated inactivation of STAG2. The position of the sgRNAs used to create deleterious insertion and deletion mutations in the STAG2 coding sequence is indicated. (B) Parental HCT 116 cells and two STAG2 mutant clones (STAG2-) were subjected to an siRNA screen. Pools of 4 siRNA duplexes targeting 25 known cohesin subunits and regulators were transfected into the three cell lines. Cell viability was measured 7 days after transfection. Following normalization to non-target control (NTC) values, the average cell viability of siRNA pools in parental HCT 116 cells and two STAG2- clones was plotted against each other (n\u00a0=\u00a02 or more independent experiments with 2 biological repeats each). (C) HCT 116 parental cells and STAG2- clones were transfected with the indicated siRNAs. Protein lysates were prepared 72 hr after transfection and analyzed by immunoblotting. (D) Cell viability was assessed 8 days after siRNA transfection using a metabolic assay (n\u00a0=\u00a04 biological repeats, error bars denote standard deviation) and (E) using crystal violet staining. (F) Cas9-GFP expressing isogenic parental and STAG2- HCT 116 and KBM-7 cells were transduced with a lentivirus encoding mCherry and sgRNAs targeting the indicated genes. The percentage of mCherry-positive cells was determined over time by flow cytometry and normalized to the fraction of mCherry-positive cells at the first measurement and sequentially to a control sgRNA (n\u00a0=\u00a01 experimental replicate).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Four different sgRNAs co-expressed with Cas9 from an all-in-one plasmid or a lentiviral vector were used to generate deleterious frameshift insertions or deletion mutations (indels) in STAG2 coding exons. sgRNAs sg502 and sg16 target exon 8 of STAG2, while sgRNAs sg505 and sg19 target exon 9 of the gene. Cognate sgRNA target sequences are underlined. Associated protospacer adjacent motifs (PAMs) are marked by boxes. The predicted Cas9 cleavage sites are marked by triangles. (B) CRISPR/Cas9-generated STAG2 indels in HCT 116 and KBM-7 cell clones as detected by Sanger sequencing. STAG2 is located on the X chromosome. Therefore, only one allele needed to be inactivated in HCT 116 (male) and KBM-7 (near-haploid) cells. (C) Protein lysates prepared from the indicated parental and mutant clones were analyzed for STAG2 protein expression by immunoblotting using antibodies directed against different STAG2 epitopes.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** HCT 116 parental cells, a STAG2 wild-type clone (502wt), and two STAG2- clones (505c1 and 502c4) were transduced with a lentivirus encoding no transgene (empty vector) or an siRNA-resistant and 3xFLAG-tagged STAG1 transgene (FLAG-STAG1). Stably selected cell pools were used for the analysis. (A) Immunofluorescence analysis of FLAG-STAG1 transgene expression\u00a0and nuclear localization in HCT 116 STAG2- 505c1 cells. Scale bar, 20 \u03bcm. (B) Protein extracts prepared from HCT 116 STAG2- 505c1 cells expressing no transgene (empty vector) or a FLAG-STAG1 transgene were subjected to anti-FLAG immunoprecipitation. The input, unbound and precipitated fractions were analyzed by immunoblotting. Co-precipitation of cohesin subunits was only detected in FLAG-STAG1 expressing cells indicating specific incorporation of the transgenic protein into the cohesin complex. (C) Protein extracts prepared from the indicated cell lines that were transduced with an empty vector or a FLAG-STAG1 transgene were analyzed by immunoblotting (left panel) and transfected with NTC, STAG1 and SGOL1 siRNA duplexes (right panel). Cell viability was measured 7 days after transfection and is plotted normalized to the viability of NTC siRNA transfected cells (n\u00a0\u2265\u00a05 biological repeats, error bars denote standard deviation).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) HCT 116 parental cells were co-transfected with NTC siRNA and siRNA duplexes targeting one of the following genes: NTC, PLK1, RAD21, CDCA5, SGOL1, STAG1 or STAG2. HCT 116 parental cells were also co-transfected with siRNA duplexes targeting STAG1 and STAG2. Cell viability was determined 8 days after transfection and is plotted normalized to cell viability of NTC siRNA-transfected cells (n\u00a0=\u00a03 biological repeats, error bars denote standard deviation).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Parental HCT 116 cells and STAG2- 505c1 cells were transfected with NTC (-) or TP53 (+) siRNA duplexes. Protein extracts were prepared 4 days after transfection and analyzed by immunoblotting (left panel). Parental HCT 116 cells and STAG2- 505c1 cells were co-transfected with the indicated siRNA duplexes (right panel). Cell viability was determined 8 days after transfection and is plotted normalized to the cell viability of NTC+NTC or NTC+TP53 siRNA-co-transfected cells (n\u00a0=\u00a03 biological repeats, error bars denote standard deviation).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Human telomerase-immortalized retinal pigment epithelial cells (hTERT RPE-1) were transfected with the indicated siRNA duplexes. Protein extracts were prepared 4 days after transfection and analyzed by immunoblotting (left panel). Cell viability was determined 5 days after transfection and is plotted normalized to the cell viability of NTC siRNA-transfected cells (n\u00a0=\u00a02 independent experiments with 3 biological replicates each, error bars denote standard deviation).\n\nTo elucidate the mechanistic basis for this synthetic lethal interaction, we hypothesized that the combined loss of STAG1 and STAG2, in contrast to loss of either component alone, could severely impair cell division. Chromosome alignment and segregation during mitosis rely on sister chromatid cohesion, the central function of the cohesin complex (Peters and Nishiyama, 2012). Depletion of STAG1 resulted in an increase in the mitotic index and a prolongation of the duration of mitosis in STAG2- but not wild-type cells (Figure 2A and Figure 2\u2014figure supplement 1). Immunofluorescence microscopy revealed a failure to align chromosomes at the metaphase plate upon STAG1 loss in STAG2- cells (Figure 2B). In mitotic chromosome spread analysis STAG2 inactivation caused a partial loss of centromeric cohesion in HCT 116 cells as previously reported (Canudas and Smith, 2009; Kim et al., 2016; Remeseiro et al., 2012; Solomon et al., 2011) (Figure 2C). Depletion of the essential centromeric cohesin protection factor SGOL1 resulted in a complete loss of sister chromatid cohesion in most chromosome spreads irrespective of STAG2 genotype. In striking contrast, STAG1 depletion selectively abrogated sister chromatid cohesion in STAG2- but not parental cells (Figure 2C, single chromatids). The severe mitotic defects observed upon loss of STAG1 in STAG2- cells were accompanied by the emergence of aberrantly sized and shaped interphase nuclei (Figure 2\u2014figure supplement 2) and by a progressive increase in apoptosis (Figure 2D). These results provide a mechanistic basis for the synthetic lethal interaction between STAG1 and STAG2. STAG1 inactivation abrogates sister chromatid cohesion exclusively in STAG2- cells resulting in catastrophic mitotic failure, abnormal cell division and apoptosis. To hold sister chromatids together, cohesin can tolerate the loss of either STAG1 or STAG2 alone but not the loss of both.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig2-v3.jpg)\n\n**Figure 2.:** (A) Parental and STAG2- 505c1 HCT 116 were transfected with NTC and STAG1 siRNA duplexes. Immunofluorescence analysis was performed 72 hr after transfection to determine the mitotic index by scoring the fraction of histone H3 phosphoSer10-positive (H3pS10+) cells (n\u00a0\u2265\u00a01323 cells, error bars denote standard deviation of three independent experiments), and (B) to investigate mitotic spindle geometry and chromosome alignment. Cropped and magnified examples of chromosome alignment are shown in (B). Scale bars, 20 \u03bcm. (C) Giemsa-stained mitotic chromosome spreads were prepared 48 hr after transfection of parental and STAG2- HCT 116 cells with the indicated siRNA duplexes. The status of sister chromatid cohesion of individual metaphase spreads was categorized into normal, partial loss of cohesion or single chromatid phenotypes (n\u00a0=\u00a0100 spreads, error bars denote standard deviation of two independently analyzed slides). Scale bar, 10 \u03bcm. (D) Caspase activity was tracked over time using a live-cell caspase 3/7 substrate cleavage assay in parental and STAG2- 505c1 HCT 116 cells after transfection with the indicated siRNAs or after treatment with 0.3 \u03bcM doxorubicin at t\u00a0=\u00a00 hr (n\u00a0=\u00a02 independent experiments with 4 biological repeats for NTC and STAG1 siRNA each and 1 biological repeat for doxorubicin each).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Parental and STAG2- 505c1 HCT 116 were transfected with NTC and STAG1 siRNA duplexes. Cells were tracked from 0.5 to 72 hr (imaging interval 30 min) after transfection by bright-field live-cell imaging. The duration of mitosis (time elapsed from mitotic cell rounding to anaphase onset) and\u00a0the fate of individual cells were determined (n\u00a0\u2265\u00a043 cells). The duration of mitosis of individual cells is plotted. Blue lines denote mean, red dots denote cells that died in mitosis. Significance levels were quantified using unpaired t test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Parental and STAG2- 505c1 HCT 116 were transfected with NTC and STAG1 siRNA duplexes, fixed and stained with Hoechst 72 hr after transfection. Nuclei were scored for aberrant size (>20 \u03bcm) or morphology (multi-nucleated cells and cells with polylobed nuclei; n\u00a0\u2265\u00a0612 nuclei, error bars denote standard deviation between two independent experiments).\n\nWe next expanded our analysis to patient-derived STAG2 mutations and STAG2-mutant cancer cell lines in order to investigate the disease relevance of the observed synthetic lethality (Figure 3). STAG1 depletion by siRNA abrogated both cell viability and sister chromatid cohesion in HCT 116 cell clones, in which three patient-derived deleterious mutations had been engineered into the STAG2 locus (Kim et al., 2016), but not in parental HCT 116 cells (Figure 3\u2014figure supplement 1). Among solid human cancers, STAG2 mutational inactivation is most prevalent in urothelial bladder cancer and Ewing sarcoma. Therefore, we assembled a panel of 16 bladder cancer cell lines: 11 STAG2-positive, three with deleterious STAG2 mutations (UM-UC-3, UM-UC-6 and VM-CUB-3), one in which STAG2 was inactivated by CRISPR/Cas9 (UM-UC-5 STAG2- 505c6) (Figure 3\u2014figure supplement 2), and two with no detectable STAG2 expression (LGWO1 and MGH-U3) (Supplementary file 2) (Balb\u00e1s-Mart\u00ednez et al., 2013; Solomon et al., 2013). The STAG2 protein expression status in the panel of bladder cancer cell lines was confirmed using immunoblotting (Figure 3A). siRNA experiments revealed that STAG2 status represented a predictive marker for the sensitivity to STAG1 depletion across the bladder cancer cell line panel. Whereas all cell lines were highly sensitive to depletion of the key mitotic kinase PLK1, STAG1 siRNA reduced cell viability in STAG2-negative bladder cancer cells but had little or no effect on STAG2-positive bladder cancer cell lines (Figure 3B). STAG1 depletion prevented colony formation and abolished sister chromatid cohesion selectively in STAG2 mutated UM-UC-3 (F983fs) but not in STAG2 wild-type UM-UC-5 bladder cancer cells (Figure 3C,D). In contrast, SGOL1 depletion abrogated cell growth and cohesion in both cell lines. Consistent with the results obtained in bladder cancer cells, STAG2 mutation status was also linked to STAG1 dependency in a panel of four Ewing sarcoma cell lines (Figure 3E,F and Supplementary file 2) (Solomon et al., 2011; Tirode et al., 2014). Lentiviral transduction of a FLAG-STAG2 transgene into STAG2 mutated UM-UC-3 bladder cancer cells resulted in the restoration of STAG2 expression, nuclear localization of the transgenic protein and its incorporation into the cohesin complex (Figure 3\u2014figure supplement 3). Crucially, restoration of STAG2 expression alleviated the STAG1 dependency of UM-UC-3 cells providing a causal link between STAG2 loss and STAG1 dependency (Figure 3G). These results demonstrate that the synthetic lethal interaction between STAG1 and STAG2 that we discovered in isogenic cell pairs is recapitulated in disease-relevant bladder cancer and Ewing sarcoma cell models.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig3-v3.jpg)\n\n**Figure 3.:** (A) The indicated bladder cancer cell lines were analyzed for STAG2 expression by immunoblotting. (B) The indicated bladder cancer cell lines were transfected with NTC, STAG1 and PLK1 siRNA duplexes. Viability was determined 7 or 10 days after transfection and normalized to the viability of NTC siRNA transfected cells (n\u00a0=\u00a02 independent experiments with 5 biological repeats each, error bars denote standard deviation). (C) STAG2 wild-type UM-UC-5 and STAG2 mutated UM-UC-3 cells were transfected with NTC, STAG1 and SGOL1 siRNA duplexes. Colony formation was analyzed 7 days after transfection by crystal violet staining. (D) 72 hr after siRNA transfection into UM-UC-5 and UM-UC-3 cells, Giemsa-stained chromosome spreads were prepared and analyzed for sister chromatid cohesion phenotypes (n\u00a0=\u00a0100 spreads, error bars denote standard deviation of two independently analyzed slides). (E) The indicated Ewing sarcoma cell lines were analyzed for STAG2 protein expression by immunoblotting. (F) The indicated Ewing sarcoma cell lines were transfected with NTC, STAG1 and SGOL1 siRNA duplexes. Viability was measured 6 days after transfection and normalized to the viability of NTC siRNA transfected cells (n\u00a0=\u00a03 independent experiments with 3 biological replicates each, error bars denote standard deviation). (G) STAG2 mutated UM-UC-3 cells were transduced with a lentivirus encoding a FLAG-STAG2 transgene. Stably selected cell pools were subsequently transfected with NTC, STAG1 or SGOL1 siRNA duplexes. Viability was measured 7 days after transfection and normalized to the viability of NTC siRNA transfected cells (n\u00a0=\u00a04 biological replicates, error bars denote standard deviation).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** HCT 116 cell lines engineered to harbor the indicated deleterious patient-derived STAG2 mutations were transfected with NTC, STAG1 and SGOL1 siRNA duplexes. (A) Protein extracts were prepared 48 hr after transfection and analyzed by immunoblotting. (B) Cell viability was measured 7 days after siRNA transfection and plotted normalized to the viability of NTC-transfected cells (n\u00a0=\u00a04 independent experiments with 5 biological repeats each, error bars denote standard deviation). (C) Sister chromatid cohesion phenotypes were analyzed in Giemsa-stained mitotic chromosome spreads that were prepared 48 hr after siRNA transfection (n\u00a0=\u00a0100 chromosome spreads, error bars denote standard deviation between two independently analyzed slides).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) sgRNA 505 co-expressed with Cas9 from an all-in-one plasmid was used to generate deleterious frameshift insertions or deletion mutations (indels) in STAG2 coding exons. The cognate sgRNA target sequence is underlined. Associated protospacer adjacent motifs (PAMs) are marked by boxes. The predicted Cas9 cleavage site is marked by a triangle. (B) CRISPR/Cas9-generated STAG2 indels in the UM-UC-5 cell clone STAG2- 505c6 as detected by Sanger sequencing. STAG2 is located on the X chromosome. Therefore, two alleles had to be inactivated in UM-UC-5 (female) cells. (C) Protein lysates prepared from the indicated parental and mutant UM-UC-5 clones were analyzed for STAG2 protein expression by immunoblotting.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** STAG2-deficient UM-UC-3 cells were transduced with lentiviral particles encoding no transgene (empty vector) or a 3xFLAG-tagged STAG2 transgene (FLAG-STAG2). Stable selected cell pools were used for further analysis. (A) Expression and nuclear localization of the transgenic FLAG-STAG2 protein was assayed by immunofluorescence microscopy. (B) Non-transduced UM-UC-3 cells, UM-UC-3 cells transduced with an empty vector and UM-UC-3 cells transduced with a FLAG-STAG2 transgene were transfected with NTC or STAG1 siRNA duplexes. Protein lysates prepared 72 hr after siRNA transfection were analyzed by immunoblotting. (C) Protein extracts prepared from UM-UC-3 cells expressing no transgene (empty vector) or a FLAG-STAG2 transgene were subjected to anti-FLAG immunoprecipitation. The input, unbound and precipitated fractions were analyzed by immunoblotting. Co-precipitation of cohesin subunits was only detected in FLAG-STAG2 expressing cells indicating successful incorporation of the transgenic STAG2 protein into the cohesin complex.\n\n## Discussion\n\nHere we identify STAG1 as a strong genetic vulnerability of cells lacking the major emerging tumor suppressor STAG2 (Figure 4). The paralog dependency between STAG1 and STAG2 has recently also been reported in an independent study (Benedetti et al., 2017). We show that the synthetic lethal interaction between STAG1 and STAG2 is observed in isogenic HCT 116 and KBM-7 cells as well as in bladder cancer and Ewing sarcoma cell lines. Thus, the genetic interaction between STAG paralogs is conserved in three major human malignancies: carcinoma, leukemia and sarcoma. Importantly, the finding that cancer cells harboring deleterious STAG2 mutations remain exquisitely dependent on STAG1 demonstrates that this genetic vulnerability is maintained throughout the process of carcinogenesis and not bypassed by adaptive processes, such as the transcriptional activation of the germline-specific paralog STAG3 (Pezzi et al., 2000; Prieto et al., 2001). Furthermore, expression analysis did not reveal upregulation of STAG1 protein or mRNA as a major compensatory mechanism for the loss of STAG2 function in cancer cell lines or patient tumors (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig4-v3.jpg)\n\n**Figure 4.:** In wild-type cells, both cohesin-STAG1 and cohesin-STAG2 complexes redundantly contribute to sister chromatid cohesion and successful cell division. Loss of STAG1 is tolerated in these cells as cohesin-STAG2 complexes alone suffice to support sister chromatid cohesion for cell division. In cancer cells in which STAG2 is mutationally or transcriptionally inactivated, sister chromatid cohesion is now entirely dependent on cohesin-STAG1 complexes. Inactivation of STAG1 in STAG2 mutated cells therefore results in a loss of sister chromatid cohesion followed by mitotic failure and cell death.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A), Immunoblot analysis of protein extracts prepared from the indicated cancer cell lines. (B), STAG1 mRNA expression levels (transcripts per million, TPM) in tumor samples obtained from The Cancer Genome Atlas (TCGA) pan-cancer datasets (left graph) and bladder cancer datasets (right graph). Genetic alteration data were obtained from cBioPortal. The results shown here are in whole or part based upon data generated by the TCGA Research Network: http://cancergenome.nih.gov/. Samples containing alterations resulting in STAG2 amino acid changes (missense mutations, nonsense point mutations or small insertions/deletions) were catagorized as STAG2 mutated (STAG2 mut). The boxplot bodies indicate the first quartile (25%), median, and third quartile (75%). The whiskers extend no further than 1.5 times the distance between the first and the third quartiles to the lowest and largest extremes from the boxplot bodies. All samples exceeding the whisker limits are shown individually as points. Significance tests were performed with the wilcox.test function of the ggsignif v0.2.0 R v3.3.2 package. Significance levels were labeled as follows: n.s.>0.05.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26980/elife-26980-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Expression data were obtained from The Genotype-Tissue Expression (GTEx) project (www.gtexportal.org). STAG1 and STAG2 mRNA expression levels (transcripts per million, TPM) in the indicated normal human tissues are plotted. The boxplot bodies indicate the first quartile (25%), median, and third quartile (75%). The whiskers extend no further than 1.5 times the distance between the first and the third quartiles (inter-quartile range, IQR) to the lower and larger extremes from the boxplot bodies. All samples exceeding the whisker limits are shown individually as points. The dotted line indicates a TPM value of 3.\n\nOur experiments strongly suggest that the loss of sister chromatid cohesion followed by aberrant cell division and cell death is the mechanistic basis underlying the synthetic lethality between STAG1 and STAG2 (Figure 4). Both paralogs associate with the cohesin complex in a mutually exclusive manner (Losada et al., 2000; Sumara et al., 2000). Although STAG1 and STAG2 may confer distinct functionalities to the cohesin complex (Canudas and Smith, 2009; Remeseiro et al., 2012), STAG1 and STAG2 containing complexes act redundantly to ensure sufficient sister chromatid cohesion to support cell division in human somatic cells. While the loss of one paralog is compatible with cell viability and proliferation, the loss of both paralogs abrogates cohesin\u2019s ability to hold sister chromatids together, which results in lethality. These mechanistic findings are consistent with previous studies that employed double siRNA depletion experiments to indicate functional redundancy between STAG1 and STAG2 in maintaining sister chromatid cohesion (Canudas and Smith, 2009; Hara et al., 2014; Remeseiro et al., 2012).\n\nSince STAG1 inactivation has little or no effect on the proliferation of STAG2 proficient cells, selective targeting of STAG1 could offer a large therapeutic window. The\u00a0fact\u00a0that STAG2 mRNA is expressed in all normal human tissues analyzed (Figure 4\u2014figure supplement 2) supports the hypothesis that selective inhibition of STAG1 function would indeed spare most non-cancerous tissues. Potential approaches for therapeutic targeting of STAG1 include the inhibition of the interaction between STAG1 and the cohesin ring subunit RAD21 (Hara et al., 2014) and the selective degradation of STAG1 using proteolysis-targeting chimera (PROTAC) technology (Deshaies, 2015). The high degree of homology between the STAG1 and its paralog STAG2 will be a key challenge to overcome. The mechanisms by which mutations in STAG2 and other cohesin subunits drive tumorigenesis in solid and hematological tissues are not yet firmly established. Our work highlights the fact that such knowledge is not a prerequisite for the identification of selective vulnerabilities.\n\nBoth deleterious STAG2 mutations and the loss of STAG2 expression are strong predictive biomarkers for STAG1 dependence in cell models and could be utilized for patient stratification in the future. Our work demonstrates that unique genetic dependencies of cohesin mutated cancer cells exist. Such vulnerabilities hold the promise for the development of selective treatments for patients suffering from STAG2 mutated cancer.\n\n## Materials and methods\n\n### Antibodies\n\nThe following antibodies were used: C-term. pAb goat anti-STAG2 (Bethyl, Montgomery, TX, US; A300-158A and A300-159A), N-term. mAb rabbit anti-STAG2 (Cell Signaling, Danvers, MA, US; 5882), full length pAb rabbit anti-STAG2 (Cell Signaling, Danvers, MA, US; 4239), mouse anti-GAPDH (Abcam,\u00a0UK; ab8245), rabbit anti-STAG1 (GeneTex, Irvine, CA, US; GTX129912), mouse anti-FLAG (Sigma-Aldrich, St. Louis, MO, US; F3165 and F1804), mouse anti-p53 (Calbiochem, San Diego, CA, US; OP43), rabbit anti-H3pS10 (Merck Millipore, Billerica, MA, US; 06570), FITC Conjugated mouse anti-Tubulin (Sigma-Aldrich, St. Louis, MO, US; F2168), rabbit anti-SGOL1 (Peters laboratory ID A975M), SMC3 (Peters laboratory ID 845), mouse anti-RAD21 (Merck Millipore, Billerica, MA, US; 05\u2013908), rabbit anti-SMC1 (Bethyl, Montgomery, TX, US; A300-055A), and secondary rabbit (P0448), mouse (P0161) and goat (P0160) anti-IgG-HRP (all Dako,\u00a0Denmark).\n\n### CRISPR/Cas9 and cDNA transgene vectors\n\nsgRNA sequences used in this study are listed in Supplementary file 1. The following lentiviral vectors were used to introduce mutations in STAG2 in HCT 116 and UM-UC-5 cells: CRISPR STAG2 Hs0000077505_U6gRNA-Cas9-2A-GFP and CRISPR STAG2 Hs0000077502_U6gRNA-Cas9-2A-GFP (Sigma-Aldrich, St. Louis, MO, US). CRISPR sgRNA STAG2_16 and sgRNA STAG2_19 were co-expressed from U6gRNA 16-U6gRNA 19-EF1\u03b1s-Thy1.1-P2A-neo to introduce mutations in STAG2 in KBM-7 cells. HCT 116 stably expressing Cas9-GFP were obtained by lentiviral transduction with pLentiCRISPR-EF1\u03b1s-Cas9-P2A-GFP-PGK-puro. KBM-7 infected with dox-inducible Cas9 were obtained by sequential retroviral transduction with pWPXLd-EF1A-rtTA3-IRES-EcoRec-PGK-Puro and pSIN-TRE3G-Cas9-P2A-GFP PGK-Blast. pLVX-3xFLAG-STAG1r-IRES-Puro and pLVX-3xFLAG-STAG2r-IRES-Puro lentiviral vectors for siRNA-resistant transgene expression were generated by gene synthesis (GenScript,\u00a0China) based on the STAG1 cDNA sequence NCBI NM_005862.2 and STAG2 cDNA sequence NCBI NM_001042749.2 followed by cloning into the parental pLVX-IRES-Puro vector (Clontech, Mountain View, CA, US). Silent nucleotide changes were introduced into the STAG1 and STAG2 coding sequences within the siRNA target sequences to render the transgenes siRNA-resistant. For competition assays, U6-sgRNA-EF1\u03b1s-mCherry-P2A-neo lentiviral vectors were used.\n\n### Cell culture and lentiviral transduction\n\nHCT 116 cells were cultured in McCoy\u2019s 5A w/glutamax medium supplemented with 10% fetal calf serum (FCS), KBM-7 cells were cultured in IMDM medium supplemented with 10% FCS, sodium butyrate, L-glutamine and antibiotics (all Invitrogen, Waltham, MA, US). hTERT RPE-1 cells were cultured in DMEM:F12 (ATCC: 30\u20132006)+10% FCS+0,01 mg/ml hygromycin B. Bladder cancer cell lines UM-UC-5, UM-UC-6, UM-UC-18, LGWO1, and MGHU-3 were cultured in DMEM +10% FCS w/NEAA, Glutamax and NaPyruvat, 5637, 639 V, 647 V, J82, JMSU-1, KU-19\u201319, RT4 T24, UM-UC-3 and VM-CUB-3 were cultured according to ATCC instructions (ATCC, Manassas, VA, USA). All Ewing sarcoma cell lines were cultured in RPMI +10% FCS. Lentiviral particles were produced using the Lenti-X Single Shot system (Clontech). Following lentiviral infection, stably transduced pools were generated using puromycin selection (HCT 116: 2 \u00b5g/ml, UM-UC-3: 2 \u00b5g/ml, UM-UC-5: 3 \u00b5g/ml). Sources, STAG2 status and authentication information (STR fingerprinting at Eurofins Genomics, Germany) of cell lines used in this study are provided in Supplementary file 2. All cell lines were tested negatively for mycoplasma contamination and have been authenticated by STR fingerprinting. Bladder cancer cell lines J82, RT4 and VM-CUB-3 and Ewing sarcoma cell line SK-N-MC are contained within the ICLAC list of commonly misidentified cell lines but have been STR verified for this study.\n\n### siRNA transfection, cell viability, competition assay and apoptosis assay\n\nFor knockdown experiments, cells were transfected with ON-TARGETplus SMARTpool siRNA duplexes (Dharmacon, Lafayette, CO, US) and the Lipofectamine RNAiMAX reagent according to the manufacturer\u2019s instructions (Invitrogen, Waltham, MA, US). HCT 116 chromosome spreads, apoptosis assay, immunoblotting, immunofluorescence and live cell imaging experiments were performed using a final siRNA concentration of 20 nM. Cell viability and crystal violet staining assays were performed using 10 nM siRNA. hTERT RPE-1 cells and bladder cancer cells were transfected with 10 nM siRNA for cell viability assays, crystal violet staining and chromosome spreads. The UM-UC-3 FLAG-STAG2 cell line was transfected with 20 nM siRNA for immunoblotting. Ewing sarcoma cell lines were co-transfected with 50 nM ON-TARGETplus SMARTpool siRNAs (Dharmacon, Lafayette, CO, US) plus pRetro-Super (Brummelkamp et al., 2002) using Lipofectamin Plus reagent (Invitrogen, Waltham, MA, US). The next day cells were subjected to puromycin (1 \u00b5g/ml) selection for 72 hr (Ban et al., 2014), and cultured for two additional days. Viability was determined using CellTiter-Glo (Promega, Madison, WI, US), and by staining with crystal violet (Sigma-Aldrich, St. Louis, MO, US; HT901). For sgRNA competition assays, Cas9-GFP was expressed constitutively (HCT 116) or was induced by doxycycline addition (KBM-7). mCherry and sgRNAs were introduced by lentiviral transduction. The fraction of mCherry-positive cells was determined at the indicated time points using a Guava easycyte flow cytometer (Merck\u00a0Millipore,\u00a0Germany) and normalized to the first measurement and sequentially to control sgRNAs (non-targeting for HCT 116 and STAG2_19 for KBM-7). Apoptosis was analyzed using the IncuCyte Caspase-3/7 Apoptosis Assay (Essen BioScience, Ann Arbour, MI, US).\n\n### Cell extracts for immunoblotting and FLAG-immunoprecipitation\n\nCell pellets were resuspended in extraction buffer (50 mM Tris Cl pH 8.0, 150 mM NaCl, 1% Nonidet P-40 supplemented with Complete protease inhibitor mix (Roche,\u00a0Switzerland) and Phosphatase Inhibitor cocktails (Sigma-Aldrich, St. Louis, MO, US; P5726 and P0044)); for Figure 1\u2014figure supplement 1 (KBM-7) and Figure 3\u2014figure supplement 1, pellets were resuspended in (25 mM Tris-HCl pH 7.5, 100 mM NaCl, 5 mM MgCl2, 0.2% NP-40, 10% glycerol, 1 mM NaF, Complete protease inhibitor mix (Roche,\u00a0Switzerland), Benzonase (VWR, Radnor, PA, US)) and lysed on ice. For Figure 1\u2014figure supplement 2B and Figure 3\u2014figure supplement 3C, lysates were spun down for 10 min, followed by FLAG-immununoprecipitation using anti-FLAG M2-Agarose Affinity Gel (Sigma-Aldrich, St. Louis, MO, US) for two hours and washing with lysis buffer. Input lysates and immunoprecipitates were resuspended in SDS sample buffer and heated to 95\u00b0C.\n\n### Immunofluorescence, live cell imaging and chromosome spreads\n\nFor immunofluorescence, cells were fixed with 4% paraformaldehyde for 15 min, permeabilized with 0.2% Triton X-100 in PBS for 10 min and blocked with 3% BSA in PBS containing 0.01% Triton X-100. Cells were incubated with primary and secondary antibody (Alexa 594, Molecular Probes, Eugene, OR, US), DNA was counterstained with Hoechst 33342 (Molecular Probes, Eugene, OR, US; H3570) and tubulin was sequentially stained with an FITC-conjugated mouse anti-tubulin antibody (Sigma-Aldrich, St. Louis, MO, US; F2168)). Coverslips and chambers were mounted with ProLong Gold (Molecular Probes, Eugene, OR, US). Images were taken with an Axio Plan2/AxioCam microscope and processed with MrC5/Axiovision software (Zeiss,\u00a0Germany). An IncuCyte (EssenBioScience, Ann Arbor, MI, US) imaging system was used to record live cells, and duration of mitosis was determined by measuring the time from mitotic cell rounding until anaphase onset. Data analysis was performed with Microsoft Excel 2013 and GraphPad Prism 7\u00a0(GraphPad Sofware, La Jolla, CA, US). Significance levels were quantified using unpaired t test. For chromosome spread analysis, nocodazole was added to the medium for 60 min at 100 ng/ml. Cells were harvested and hypotonically swollen in 40% medium/60%tap water for 5 min at room temperature. Cells were fixed with freshly made Carnoy's solution (75% methanol, 25% acetic acid), and the fixative was changed three times. For spreading, cells in Carnoy's solution were dropped onto glass slides and dried. Slides were stained with 5% Giemsa (Merck,\u00a0Germany) for 4 min, washed briefly in tap water and air dried. For chromosome spread analysis two independent slides were scored blindly for each condition.\n\n### Bioinformatic analysis of STAG1 and STAG2 mRNA expression\n\nSTAG2 mRNA expression in tumors (TCGA Research Network: http://cancergenome.nih.gov/) and STAG1 and STAG2 expression in normal human tissues (The Genotype-Tissue Expression (GTEx) project, www.gtexportal.org) (GTEx Consortium, 2013) were analyzed based on the data available from UCSC Xena version 2016-04-12. Expression levels correspond to transcripts per million (TPM). The downloaded values were log2(TPM\u00a0+0.001) values which were transformed to TPM values before generating the figures. STAG2 mutation data were downloaded from cBioPortal (Cerami et al., 2012; Gao et al., 2013) git repository in Sep. 2016. Samples were labeled as STAG2 mutated if they carried an alteration resulting in an amino acid change in STAG2 (i.e. missense or nonsense point mutation or small insertion or deletion). Gene deletions or amplifications were not considered.\n",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "ef7d5d02-edd1-477e-b4c2-e6f452732a3e",
+      "submission_id": "ba88aa75-727a-44d8-bc63-6a75953258d7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea Musacchio, Max Planck Institute of Molecular Physiology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26980.025](https://doi.org/10.7554/eLife.26980.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Hardwired synthetic lethality within the cohesin complex in human cancer cells\" for consideration by eLife. Your article has been favorably evaluated by Sean Morrison (Senior Editor) and three reviewers, one of whom, Andrea Musacchio (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nVan der Lelij et al. reveal a synthetic lethal interaction between the cohesin subunit STAG2 and its paralog STAG1. siRNA-meditated depletion of STAG1 leads to cohesion defects and subsequent cell death in STAG2 knockout cells but hardly if at all in wild type cells. The dependency on STAG1 for viability holds true in STAG2-deficient, but not proficient, bladder and Ewing sarcoma cell lines. Re-expressing STAG2 in one of these cell lines restores viability in the absence of STAG1. Overall, the manuscript presents an important conclusion based on a set of well-performed experiments. The paper should be of interest to the readers of eLife, but also to the clinic given that STAG2 is frequently mutated in human cancers.\n\nEssential revisions:\n\nThe reviewers suggested a few additions that would strengthen your conclusions. We realize that addressing these may further delay publication of the work, and therefore we interpret these comments as suggestions rather than as strict requirements. We note that you might have already collected data that address at least some of these points, in which case you may elect to include them in the revised manuscript.\n\n1) Reviewer 3 notes that it would be helpful to see the effect of STAG1 depletion on non-transformed cells such as RPE1 or BJ-Tert cells. If these cells are far less sensitive to STAG1 depletion than are STAG2 deficient cancer cells, this would further support the authors point that targeting STAG1 may be a good idea for anti-cancer therapy. Including such experiments could give an idea about the possible toxicity of this approach to non-cancer cells.\n\n2) Reviewer 2 notes that it would be helpful to add a comment on whether STAT1 is substantially upregulated at the mRNA and protein levels in all the cell lines and patient derived cell lines. The reviewer would like to see a comprehensive analysis of this in the supplement, and also comments that this is important as it establishes whether STAG2/1 is dominant in cell types or if the genes encoding these two subunits are co-expressed.\n\n3) Reviewer 2 suggests that the statement: \"Thus the genetic interaction between STAG paralogs is context independent and conserved in three major human malignancies\u2026.\" be revised to mention only the \"conserved in three major human malignancies\". The reviewer argues that it is unclear whether there are other contexts in which these paralogs do exhibit differential functions (as with paralogs of other complexes, such as SWI/SNF. This comment extends to normal cells). The reviewer notes that there are data emerging in the field that already suggest the differential functions (as shown by differential chromatin occupancy and gene expression upon single paralog loss) for these two paralogs.\n\n4) Reviewer 2 also asks if it would be possible for the authors to compare the gene expression profiles upon loss of STAG1 and loss of other cohesion subunits in isogenic STAG2-/- lines (i.e. the HCT-116 cell lines they made). This would help delineate which other aspects of cohesion function are responsible for specific gene expression programs in this lineage. In this context, the authors propose that \"Potential approaches for therapeutic targeting of STAG1 include the inhibition of the interaction between STAG1 and the cohesion ring subunit RAD21\u2026\".\n",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "73179244-708e-4bfe-8898-9c5253b62935",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C1",
+      "claim": "Recent genome analyses have identified recurrent mutations in the cohesin complex in a wide range of human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent genome analyses have identified recurrent mutations in the cohesin complex in a wide range of human cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "6945b6ba-5671-413e-87d2-00818802fa0c",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C2",
+      "claim": "STAG2 displays a strong synthetic lethal interaction with its paralog STAG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that the most frequently mutated subunit of the cohesin complex, STAG2, displays a strong synthetic lethal interaction with its paralog STAG1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by multiple experimental approaches including siRNA screens, CRISPR/Cas9 experiments, and competition assays shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "752751c3-914a-47d0-85fa-32dc5bf9f71e",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C3",
+      "claim": "STAG1 loss abrogates sister chromatid cohesion in STAG2 mutated but not in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, STAG1 loss abrogates sister chromatid cohesion in STAG2 mutated but not in wild-type cells leading to mitotic catastrophe, defective cell division and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic claim is supported by chromosome spread analysis shown in Figure 2C demonstrating loss of sister chromatid cohesion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "ecc84ced-66ca-4511-b0c8-45c17bb8ce4a",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C4",
+      "claim": "STAG1 loss in STAG2 mutated cells leads to mitotic catastrophe, defective cell division and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, STAG1 loss abrogates sister chromatid cohesion in STAG2 mutated but not in wild-type cells leading to mitotic catastrophe, defective cell division and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing increased mitotic index, prolonged mitosis duration, chromosome misalignment (Figure 2A, 2B), and increased caspase activity (Figure 2D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "4a5395eb-af90-464c-88a2-40ecf85d442c",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C5",
+      "claim": "STAG1 inactivation inhibits the proliferation of STAG2 mutated but not wild-type bladder cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 inactivation inhibits the proliferation of STAG2 mutated but not wild-type bladder cancer and Ewing sarcoma cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assays across a panel of 16 bladder cancer cell lines shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "1ca3c470-af29-4898-9a26-dde7871e9de3",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C6",
+      "claim": "STAG1 inactivation inhibits the proliferation of STAG2 mutated but not wild-type Ewing sarcoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 inactivation inhibits the proliferation of STAG2 mutated but not wild-type bladder cancer and Ewing sarcoma cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assays across a panel of 4 Ewing sarcoma cell lines shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "ab1cd5f0-1ec9-464b-bcc6-a76cbd616f63",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C7",
+      "claim": "Restoration of STAG2 expression in a mutated bladder cancer model alleviates the dependency on STAG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Restoration of STAG2 expression in a mutated bladder cancer model alleviates the dependency on STAG1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by rescue experiments in UM-UC-3 cells expressing FLAG-STAG2 transgene shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "fe5e587b-2f83-4469-971f-ac46b81a8dfa",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C8",
+      "claim": "STAG1 and STAG2 support sister chromatid cohesion to redundantly ensure cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, STAG1 and STAG2 support sister chromatid cohesion to redundantly ensure cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the synthetic lethality data and mechanistic studies showing that loss of both paralogs abrogates cohesion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "f568afed-7905-4d9e-8ce3-c5b81d76ea69",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C9",
+      "claim": "STAG1 represents a vulnerability of cancer cells carrying mutations in STAG2 across different cancer contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 represents a vulnerability of cancer cells carrying mutations in the major emerging tumor suppressor STAG2 across different cancer contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from multiple cancer types including colon carcinoma, leukemia, bladder cancer, and Ewing sarcoma.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "08e3f3c9-a323-459b-862a-f1a86003f1d0",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C10",
+      "claim": "Cohesin is a highly conserved ring-shaped protein complex that topologically embraces chromatid fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is a highly conserved ring-shaped protein complex that is thought to topologically embrace chromatid fibers (Peters and Nishiyama, 2012), which is essential for sister chromatid cohesion and chromosome segregation in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Peters and Nishiyama, 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "7b929ca2-5603-4d8e-b617-925a5616484e",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C11",
+      "claim": "Cohesin is essential for sister chromatid cohesion and chromosome segregation in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is a highly conserved ring-shaped protein complex that is thought to topologically embrace chromatid fibers (Peters and Nishiyama, 2012), which is essential for sister chromatid cohesion and chromosome segregation in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c05ea5a8-4ec2-4d3f-86c5-42fe54f84534",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C12",
+      "claim": "Cohesin participates in DNA repair, genome organization and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cohesin participates in DNA repair, genome organization and gene expression (Losada, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Losada, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "724ad87b-c82c-4cab-a9ed-eba56b84d00e",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C13",
+      "claim": "The cohesin subunits SMC1, SMC3 and RAD21 comprise the core ring of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin subunits SMC1, SMC3 and RAD21 (also called SCC1) comprise the core ring of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cohesin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "42b57e4e-1e37-460c-8348-6b95d5b9e996",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C14",
+      "claim": "A HEAT repeat protein of the Scc3/STAG family peripherally associates with the core cohesin ring by binding to RAD21.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth universally conserved subunit, a HEAT repeat protein of the Scc3/STAG family, peripherally associates with the core cohesin ring by binding to RAD21 (T\u00f3th et al., 1999), and is required for the dynamic association of cohesin with chromatin (Hu et al., 2011; Murayama and Uhlmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (T\u00f3th et al., 1999).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "8e7b1f6b-6501-4560-a8e8-76ec2ce7a4c6",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C15",
+      "claim": "The Scc3/STAG family protein is required for the dynamic association of cohesin with chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth universally conserved subunit, a HEAT repeat protein of the Scc3/STAG family, peripherally associates with the core cohesin ring by binding to RAD21 (T\u00f3th et al., 1999), and is required for the dynamic association of cohesin with chromatin (Hu et al., 2011; Murayama and Uhlmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (Hu et al., 2011; Murayama and Uhlmann, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "4831e8a5-36b6-496f-8b78-b04586e8d24d",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C16",
+      "claim": "Human somatic cells express two paralogs of the Scc3/STAG protein, called STAG1 and STAG2.",
+      "claim_type": "EXPLICIT",
+      "source": "Human somatic cells express two paralogs of this protein, called STAG1 and STAG2 (Losada et al., 2000; Sumara et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (Losada et al., 2000; Sumara et al., 2000).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "ba00472f-ab9e-4e45-aca1-fb27a8cba306",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C17",
+      "claim": "Recurrent mutations in cohesin subunits and regulators occur in approximately 7.3% of all human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent cancer genome studies identified recurrent mutations in cohesin subunits and regulators in approximately 7.3% of all human cancers (Lawrence et al., 2014; Leiserson et al., 2015; Solomon et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to cancer genome studies (Lawrence et al., 2014; Leiserson et al., 2015; Solomon et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "3cdebfba-eee3-404d-a6a2-57ebb22e6f43",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C18",
+      "claim": "STAG2 is the most frequently mutated cohesin subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG2, the most frequently mutated cohesin subunit, emerges as one of only 12 genes that are significantly mutated in four or more major human malignancies (Lawrence et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to cancer genome analysis (Lawrence et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "22af983d-067d-45f0-8464-40c471951082",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C19",
+      "claim": "STAG2 is one of only 12 genes that are significantly mutated in four or more major human malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG2, the most frequently mutated cohesin subunit, emerges as one of only 12 genes that are significantly mutated in four or more major human malignancies (Lawrence et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to cancer genome analysis (Lawrence et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "1d1121d4-116a-48d0-bdc3-6058e44cbd58",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C20",
+      "claim": "STAG2 mutations have been reported in ~6% of acute myeloid leukemias and myelodysplastic syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG2 mutations have been reported in ~6% of acute myeloid leukemias and myelodysplastic syndromes (Kon et al., 2013; Thota et al., 2014; Walter et al., 2012), 15\u201322% of Ewing's sarcomas (Brohl et al., 2014; Crompton et al., 2014; Tirode et al., 2014), and in up to 26% of bladder cancers of various stages and grades (Balb\u00e1s-Mart\u00ednez et al., 2013; Guo et al., 2013; Solomon et al., 2013; Taylor et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies (Kon et al., 2013; Thota et al., 2014; Walter et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "564343b6-6feb-4fd1-b969-ad8314c62c9d",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C21",
+      "claim": "STAG2 mutations have been reported in 15\u201322% of Ewing's sarcomas.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG2 mutations have been reported in ~6% of acute myeloid leukemias and myelodysplastic syndromes (Kon et al., 2013; Thota et al., 2014; Walter et al., 2012), 15\u201322% of Ewing's sarcomas (Brohl et al., 2014; Crompton et al., 2014; Tirode et al., 2014), and in up to 26% of bladder cancers of various stages and grades (Balb\u00e1s-Mart\u00ednez et al., 2013; Guo et al., 2013; Solomon et al., 2013; Taylor et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies (Brohl et al., 2014; Crompton et al., 2014; Tirode et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "051ef18a-7bda-4aea-8cdb-92eae12f568d",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C22",
+      "claim": "STAG2 mutations have been reported in up to 26% of bladder cancers of various stages and grades.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG2 mutations have been reported in ~6% of acute myeloid leukemias and myelodysplastic syndromes (Kon et al., 2013; Thota et al., 2014; Walter et al., 2012), 15\u201322% of Ewing's sarcomas (Brohl et al., 2014; Crompton et al., 2014; Tirode et al., 2014), and in up to 26% of bladder cancers of various stages and grades (Balb\u00e1s-Mart\u00ednez et al., 2013; Guo et al., 2013; Solomon et al., 2013; Taylor et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies (Balb\u00e1s-Mart\u00ednez et al., 2013; Guo et al., 2013; Solomon et al., 2013; Taylor et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "53e13983-2717-422c-84b7-73e937ee346c",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C23",
+      "claim": "The deleterious nature of most STAG2 mutations strongly suggests that the gene represents a new tumor suppressor.",
+      "claim_type": "EXPLICIT",
+      "source": "The deleterious nature of most STAG2 mutations strongly suggests that the gene represents a new tumor suppressor (Hill et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Hill et al., 2016) and inference from mutation patterns.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "59851d12-05d2-4b9a-91c3-e6256a04587b",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C24",
+      "claim": "STAG2 mutations were initially thought to promote tumorigenesis due to defects in sister chromatid cohesion leading to genome instability.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG2 mutations were initially thought to promote tumorigenesis due to defects in sister chromatid cohesin leading to genome instability (Barber et al., 2008; Solomon et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (Barber et al., 2008; Solomon et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "8645d8cd-62c0-4b6e-aec2-0467ee52a2ed",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C25",
+      "claim": "The vast majority of cohesin-mutated cancers are euploid.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the vast majority of cohesin-mutated cancers are euploid (Balb\u00e1s-Mart\u00ednez et al., 2013; Kon et al., 2013), indicating that cohesin mutations may promote tumorigenesis through altering different cohesin functions such as genome organization and transcriptional regulation (Galeev et al., 2016; Mazumdar et al., 2015; Mullenders et al., 2015; Viny et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies (Balb\u00e1s-Mart\u00ednez et al., 2013; Kon et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "2590f79f-fe6e-4877-8e59-dcceafb0fbcc",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C26",
+      "claim": "Cohesin mutations may promote tumorigenesis through altering genome organization and transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the vast majority of cohesin-mutated cancers are euploid (Balb\u00e1s-Mart\u00ednez et al., 2013; Kon et al., 2013), indicating that cohesin mutations may promote tumorigenesis through altering different cohesin functions such as genome organization and transcriptional regulation (Galeev et al., 2016; Mazumdar et al., 2015; Mullenders et al., 2015; Viny et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies (Galeev et al., 2016; Mazumdar et al., 2015; Mullenders et al., 2015; Viny et al., 2015) and inference from the euploid nature of cohesin-mutated cancers.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "7d812cef-fad6-4417-a4a1-a008352f0d77",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C27",
+      "claim": "Poly(ADP-ribose) polymerase inhibitors have shown success in the treatment of BRCA-mutated ovarian and prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the mechanisms driving cohesin mutant tumors, the recent success of poly(ADP-ribose) polymerase inhibitors in the treatment of BRCA-mutated ovarian and prostate cancer demonstrates that exploiting tumor suppressor loss by applying the concept of synthetic lethality in defined patient populations can impact clinical cancer care (Castro et al., 2016; Kim et al., 2015; Mirza et al., 2016; Oza et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies (Castro et al., 2016; Kim et al., 2015; Mirza et al., 2016; Oza et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "fd295357-2169-4d02-8598-ee2ed6ecf0d7",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C28",
+      "claim": "Exploiting tumor suppressor loss by applying the concept of synthetic lethality in defined patient populations can impact clinical cancer care.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the mechanisms driving cohesin mutant tumors, the recent success of poly(ADP-ribose) polymerase inhibitors in the treatment of BRCA-mutated ovarian and prostate cancer demonstrates that exploiting tumor suppressor loss by applying the concept of synthetic lethality in defined patient populations can impact clinical cancer care (Castro et al., 2016; Kim et al., 2015; Mirza et al., 2016; Oza et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies demonstrating the PARP inhibitor success (Castro et al., 2016; Kim et al., 2015; Mirza et al., 2016; Oza et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "f52e0694-2f2d-476a-9ae0-3b3ea55a5d77",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C29",
+      "claim": "An estimated half a million individuals have STAG2-mutant malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated half a million individuals with STAG2-mutant malignancies would greatly profit from exploring specific dependencies of these cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on mutation frequencies in various cancers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "6e45b2dc-5802-47bf-a48e-7f3b6aabb8b0",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C30",
+      "claim": "CRISPR/Cas9 was used to inactivate STAG2 in near-diploid, chromosomally stable HCT 116 colon carcinoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify factors whose inactivation would be synthetic lethal with loss of STAG2 function, we first used CRISPR/Cas9 to inactivate STAG2 in near-diploid, chromosomally stable HCT 116 colon carcinoma cells (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used, supported by Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "66e161b0-c481-42d8-ac09-00e7cc2c6b97",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C31",
+      "claim": "Two HCT 116 clones, STAG2-505c1 and 502c4, harbor deleterious mutations in STAG2 and lack detectable STAG2 protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Two clones, STAG2- 505c1 and 502c4, harboring deleterious mutations in STAG2 and lacking detectable STAG2 protein expression were selected for analyses (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequencing data in Figure 1\u2014figure supplement 1 and immunoblotting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "154c6d8a-0162-439f-811c-7bb7681550d7",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C32",
+      "claim": "Depletion of SGOL1 had a detrimental impact on viability of both parental and STAG2- HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of the known essential cohesin regulator SGOL1 had a detrimental impact on viability of both parental and STAG2- cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the siRNA screen data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "16a27b4f-27a6-40e0-969a-a19623e52c44",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C33",
+      "claim": "Depletion of STAG1 strongly decreased cell viability in STAG2- cells, while being tolerated by the isogenic parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, depletion of STAG1 strongly decreased cell viability in STAG2- cells, while being tolerated by the isogenic parental cells (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the siRNA screen data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "b8a86627-7761-422c-9509-673f7d8decab",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C34",
+      "claim": "Expression of an siRNA-resistant STAG1 transgene alleviated the anti-proliferative effect of STAG1 siRNA in STAG2- HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of an siRNA-resistant STAG1 transgene alleviated the anti-proliferative effect of STAG1 but not of SGOL1 siRNA duplexes in STAG2- HCT 116 cells demonstrating the specificity of the siRNA treatment (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "daa80135-21eb-42c5-998d-b4dc9b7ec1a9",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C35",
+      "claim": "Double depletion of STAG1 and STAG2 by siRNA in parental cells confirmed their synthetic lethal interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Double depletion of STAG1 and STAG2 by siRNA in parental cells confirmed their synthetic lethal interaction (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by double knockdown experiment data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "ab1cfb0c-e6d0-407c-86f1-9cf15f899a0b",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C36",
+      "claim": "The dependency of STAG2- cells on STAG1 was independent of p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-depletion of p53 and STAG1 indicated that the dependency of STAG2- cells on STAG1 was independent of p53 (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-depletion experiment data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "5b662238-44ee-481e-a274-7583412ea866",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C37",
+      "claim": "Depletion of STAG1 had no effect on cell viability in non-transformed telomerase-immortalized human retinal pigment epithelial cells (hTERT RPE-1).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the loss of essential cohesin subunits or regulators, depletion of STAG1 had no effect on cell viability in non-transformed telomerase-immortalized human retinal pigment epithelial cells (hTERT RPE-1) (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "9c05a238-3bb7-4af4-b389-aef6de91ab77",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C38",
+      "claim": "Neither STAG1 nor STAG2 is essential for the proliferation of hTERT-RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is supported by a large-scale genetic loss-of-function study that found that neither STAG1 nor STAG2 is essential for the proliferation of hTERT-RPE1 cells (Hart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a large-scale study (Hart et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "5246f3ab-1fcb-4197-b561-266bca3624d6",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C39",
+      "claim": "Transduction with sgRNAs targeting STAG1 caused the depletion of STAG2- HCT 116 and KBM-7 cells but not of their parental STAG2 proficient counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, transduction with sgRNAs targeting STAG1 caused the depletion of STAG2- HCT 116 and KBM-7 cells but not of their parental STAG2 proficient counterparts (Figure 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competition assay data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "83f13524-57e6-4f78-8d4e-d7e5ef0d8d6c",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C40",
+      "claim": "STAG1 inactivation has little if any impact on the viability and proliferation of STAG2 wild-type cancer cells and non-transformed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 inactivation has little if any impact on the viability and proliferation of STAG2 wild-type cancer cells and non-transformed cells, but is essential for survival in the absence of STAG2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from multiple cell lines including hTERT RPE-1 and STAG2 wild-type cancer cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "95ad226b-1552-4b0c-bfa6-46a3ce2b65aa",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C41",
+      "claim": "STAG1 is essential for survival in the absence of STAG2.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 inactivation has little if any impact on the viability and proliferation of STAG2 wild-type cancer cells and non-transformed cells, but is essential for survival in the absence of STAG2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by synthetic lethality data from multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "18eb93f8-d853-474f-b5c5-922da3732f37",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C42",
+      "claim": "Depletion of STAG1 by siRNA abrogated both cell viability and sister chromatid cohesion in HCT 116 cell clones with patient-derived deleterious STAG2 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 depletion by siRNA abrogated both cell viability and sister chromatid cohesion in HCT 116 cell clones, in which three patient-derived deleterious mutations had been engineered into the STAG2 locus (Kim et al., 2016), but not in parental HCT 116 cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c991211e-5802-4349-960b-148f8bae1c78",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C43",
+      "claim": "Depletion of STAG1 resulted in an increase in the mitotic index in STAG2- but not wild-type HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of STAG1 resulted in an increase in the mitotic index and a prolongation of the duration of mitosis in STAG2- but not wild-type cells (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "cdcedf29-f91b-44c5-852b-cf02cd0eabe4",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C44",
+      "claim": "Depletion of STAG1 resulted in a prolongation of the duration of mitosis in STAG2- but not wild-type HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of STAG1 resulted in an increase in the mitotic index and a prolongation of the duration of mitosis in STAG2- but not wild-type cells (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live-cell imaging data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "d344aa25-b960-40fc-a6bf-71f2ab31cc84",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C45",
+      "claim": "STAG1 loss resulted in a failure to align chromosomes at the metaphase plate in STAG2- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence microscopy revealed a failure to align chromosomes at the metaphase plate upon STAG1 loss in STAG2- cells (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "fdb712af-99ee-4f59-b27d-4c6131cc6a69",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C46",
+      "claim": "STAG2 inactivation caused a partial loss of centromeric cohesion in HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitotic chromosome spread analysis STAG2 inactivation caused a partial loss of centromeric cohesion in HCT 116 cells as previously reported (Canudas and Smith, 2009; Kim et al., 2016; Remeseiro et al., 2012; Solomon et al., 2011) (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chromosome spread data shown in Figure 2C and citations to prior work (Canudas and Smith, 2009; Kim et al., 2016; Remeseiro et al., 2012; Solomon et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "229ebac7-fee1-4543-9f85-a85f2cfa707a",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C47",
+      "claim": "Depletion of SGOL1 resulted in a complete loss of sister chromatid cohesion in most chromosome spreads irrespective of STAG2 genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of the essential centromeric cohesin protection factor SGOL1 resulted in a complete loss of sister chromatid cohesion in most chromosome spreads irrespective of STAG2 genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chromosome spread data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c9f7d3a4-e348-4aaf-bc7f-6b9163e12122",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C48",
+      "claim": "STAG1 depletion selectively abrogated sister chromatid cohesion in STAG2- but not parental HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, STAG1 depletion selectively abrogated sister chromatid cohesion in STAG2- but not parental cells (Figure 2C, single chromatids).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chromosome spread data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "942a4e93-1241-4a94-9840-bcab6eb1e174",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C49",
+      "claim": "Loss of STAG1 in STAG2- cells was accompanied by the emergence of aberrantly sized and shaped interphase nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The severe mitotic defects observed upon loss of STAG1 in STAG2- cells were accompanied by the emergence of aberrantly sized and shaped interphase nuclei (Figure 2\u2014figure supplement 2) and by a progressive increase in apoptosis (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nuclear morphology analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "263c2fa6-d55f-405b-b5e8-149b3ba14739",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C50",
+      "claim": "Loss of STAG1 in STAG2- cells was accompanied by a progressive increase in apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The severe mitotic defects observed upon loss of STAG1 in STAG2- cells were accompanied by the emergence of aberrantly sized and shaped interphase nuclei (Figure 2\u2014figure supplement 2) and by a progressive increase in apoptosis (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by caspase activity assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "a0602679-d27c-4dc6-b618-a13087ed4b24",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C51",
+      "claim": "STAG1 inactivation abrogates sister chromatid cohesion exclusively in STAG2- cells resulting in catastrophic mitotic failure, abnormal cell division and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 inactivation abrogates sister chromatid cohesion exclusively in STAG2- cells resulting in catastrophic mitotic failure, abnormal cell division and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple lines of data including chromosome spreads, mitotic analysis, and apoptosis assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "061112c1-7fd8-4db4-a683-58a985c4a9ab",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C52",
+      "claim": "To hold sister chromatids together, cohesin can tolerate the loss of either STAG1 or STAG2 alone but not the loss of both.",
+      "claim_type": "EXPLICIT",
+      "source": "To hold sister chromatids together, cohesin can tolerate the loss of either STAG1 or STAG2 alone but not the loss of both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the synthetic lethality data and mechanistic studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "745fcaf1-4663-40a0-a9ee-473139059e0f",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C54",
+      "claim": "The genetic interaction between STAG paralogs is conserved in three major human malignancies: carcinoma, leukemia and sarcoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the genetic interaction between STAG paralogs is conserved in three major human malignancies: carcinoma, leukemia and sarcoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from data showing the interaction in HCT 116 (carcinoma), KBM-7 (leukemia), bladder cancer (carcinoma), and Ewing sarcoma cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "d89c60c6-5ea2-4f61-bf18-834d05b12ebe",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C55",
+      "claim": "Cancer cells harboring deleterious STAG2 mutations remain exquisitely dependent on STAG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the finding that cancer cells harboring deleterious STAG2 mutations remain exquisitely dependent on STAG1 demonstrates that this genetic vulnerability is maintained throughout the process of carcinogenesis and not bypassed by adaptive processes, such as the transcriptional activation of the germline-specific paralog STAG3 (Pezzi et al., 2000; Prieto et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from patient-derived cell lines with STAG2 mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c7cfc6f7-dde8-42e1-944c-80905df4d381",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C56",
+      "claim": "The genetic vulnerability of STAG2 mutant cells to STAG1 loss is maintained throughout the process of carcinogenesis and not bypassed by adaptive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the finding that cancer cells harboring deleterious STAG2 mutations remain exquisitely dependent on STAG1 demonstrates that this genetic vulnerability is maintained throughout the process of carcinogenesis and not bypassed by adaptive processes, such as the transcriptional activation of the germline-specific paralog STAG3 (Pezzi et al., 2000; Prieto et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that established cancer cell lines with STAG2 mutations still depend on STAG1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "37df48f4-29dd-4adf-a1e2-cada10ce316e",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C57",
+      "claim": "Expression analysis did not reveal upregulation of STAG1 protein or mRNA as a major compensatory mechanism for the loss of STAG2 function in cancer cell lines or patient tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression analysis did not reveal upregulation of STAG1 protein or mRNA as a major compensatory mechanism for the loss of STAG2 function in cancer cell lines or patient tumors (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression analysis data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "40fe19cc-3f26-4f1d-971c-a5046c931353",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C58",
+      "claim": "STAG2 status represented a predictive marker for the sensitivity to STAG1 depletion across the bladder cancer cell line panel.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA experiments revealed that STAG2 status represented a predictive marker for the sensitivity to STAG1 depletion across the bladder cancer cell line panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assay data across 16 bladder cancer cell lines shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "b6f9c378-f7fe-48da-a686-8c9aaaeccf5d",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C59",
+      "claim": "All bladder cancer cell lines in the panel were highly sensitive to depletion of the key mitotic kinase PLK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas all cell lines were highly sensitive to depletion of the key mitotic kinase PLK1, STAG1 siRNA reduced cell viability in STAG2-negative bladder cancer cells but had little or no effect on STAG2-positive bladder cancer cell lines (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "160fed29-6aa0-4b12-b3e4-1e3cfe195725",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C60",
+      "claim": "STAG1 siRNA reduced cell viability in STAG2-negative bladder cancer cells but had little or no effect on STAG2-positive bladder cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas all cell lines were highly sensitive to depletion of the key mitotic kinase PLK1, STAG1 siRNA reduced cell viability in STAG2-negative bladder cancer cells but had little or no effect on STAG2-positive bladder cancer cell lines (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "eb1a2f7f-131a-4e2d-8210-9ac8a4ebdc7e",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C61",
+      "claim": "STAG1 depletion prevented colony formation in STAG2 mutated UM-UC-3 but not in STAG2 wild-type UM-UC-5 bladder cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 depletion prevented colony formation and abolished sister chromatid cohesion selectively in STAG2 mutated UM-UC-3 (F983fs) but not in STAG2 wild-type UM-UC-5 bladder cancer cells (Figure 3C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by colony formation assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "b8a7f3de-3b38-4c71-965c-05bd6391996d",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C62",
+      "claim": "STAG1 depletion abolished sister chromatid cohesion selectively in STAG2 mutated UM-UC-3 but not in STAG2 wild-type UM-UC-5 bladder cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "STAG1 depletion prevented colony formation and abolished sister chromatid cohesion selectively in STAG2 mutated UM-UC-3 (F983fs) but not in STAG2 wild-type UM-UC-5 bladder cancer cells (Figure 3C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chromosome spread data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c84f043b-5e5e-488c-801e-3c800710b913",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C63",
+      "claim": "SGOL1 depletion abrogated cell growth and cohesion in both STAG2 wild-type and STAG2 mutated bladder cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SGOL1 depletion abrogated cell growth and cohesion in both cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by colony formation and chromosome spread data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "629e5c8a-9492-4f4b-88b0-907d3f246ba3",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C64",
+      "claim": "STAG2 mutation status was linked to STAG1 dependency in a panel of four Ewing sarcoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results obtained in bladder cancer cells, STAG2 mutation status was also linked to STAG1 dependency in a panel of four Ewing sarcoma cell lines (Figure 3E,F and Supplementary file 2) (Solomon et al., 2011; Tirode et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "0353556b-9cdb-4a52-bd82-731ab02bed46",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C65",
+      "claim": "Lentiviral transduction of a FLAG-STAG2 transgene into STAG2 mutated UM-UC-3 bladder cancer cells resulted in the restoration of STAG2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral transduction of a FLAG-STAG2 transgene into STAG2 mutated UM-UC-3 bladder cancer cells resulted in the restoration of STAG2 expression, nuclear localization of the transgenic protein and its incorporation into the cohesin complex (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence and immunoprecipitation data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "9abef67e-b8ec-424a-bc78-ec65f8495cec",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C66",
+      "claim": "The transgenic FLAG-STAG2 protein localized to the nucleus in UM-UC-3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral transduction of a FLAG-STAG2 transgene into STAG2 mutated UM-UC-3 bladder cancer cells resulted in the restoration of STAG2 expression, nuclear localization of the transgenic protein and its incorporation into the cohesin complex (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "1bbfeb2f-683b-49a6-9056-4731bc8ec014",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C67",
+      "claim": "The transgenic FLAG-STAG2 protein was incorporated into the cohesin complex in UM-UC-3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral transduction of a FLAG-STAG2 transgene into STAG2 mutated UM-UC-3 bladder cancer cells resulted in the restoration of STAG2 expression, nuclear localization of the transgenic protein and its incorporation into the cohesin complex (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoprecipitation data showing co-precipitation with cohesin subunits in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "2695c880-922c-474a-899a-9f7a11b5ae4a",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C68",
+      "claim": "Restoration of STAG2 expression alleviated the STAG1 dependency of UM-UC-3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, restoration of STAG2 expression alleviated the STAG1 dependency of UM-UC-3 cells providing a causal link between STAG2 loss and STAG1 dependency (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "e2743a1e-7327-4f9e-bae8-72c3b8ac0740",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C69",
+      "claim": "Restoration of STAG2 expression provides a causal link between STAG2 loss and STAG1 dependency.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, restoration of STAG2 expression alleviated the STAG1 dependency of UM-UC-3 cells providing a causal link between STAG2 loss and STAG1 dependency (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue experiment showing that restoring STAG2 eliminates STAG1 dependency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "315b23ec-efbe-4b00-a42a-56b8024a725a",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C70",
+      "claim": "The paralog dependency between STAG1 and STAG2 has recently also been reported in an independent study.",
+      "claim_type": "EXPLICIT",
+      "source": "The paralog dependency between STAG1 and STAG2 has recently also been reported in an independent study (Benedetti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an independent study (Benedetti et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c38c24ea-964f-4133-b7b9-555d5bdb1a6c",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C71",
+      "claim": "The genetic vulnerability of STAG2 mutant cells to STAG1 loss is not bypassed by transcriptional activation of the germline-specific paralog STAG3.",
+      "claim_type": "IMPLICIT",
+      "source": "Importantly, the finding that cancer cells harboring deleterious STAG2 mutations remain exquisitely dependent on STAG1 demonstrates that this genetic vulnerability is maintained throughout the process of carcinogenesis and not bypassed by adaptive processes, such as the transcriptional activation of the germline-specific paralog STAG3 (Pezzi et al., 2000; Prieto et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that STAG2 mutant cancer cells remain dependent on STAG1, suggesting STAG3 is not compensating.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "17c464fb-0021-46fb-8d3e-74c0cccfa32c",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C72",
+      "claim": "The loss of sister chromatid cohesion followed by aberrant cell division and cell death is the mechanistic basis underlying the synthetic lethality between STAG1 and STAG2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments strongly suggest that the loss of sister chromatid cohesion followed by aberrant cell division and cell death is the mechanistic basis underlying the synthetic lethality between STAG1 and STAG2 (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple lines of experimental data including cohesion assays, mitotic analysis, and apoptosis measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "8f92e612-2d38-4503-a34c-49c90339d1a0",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C73",
+      "claim": "STAG1 and STAG2 associate with the cohesin complex in a mutually exclusive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Both paralogs associate with the cohesin complex in a mutually exclusive manner (Losada et al., 2000; Sumara et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (Losada et al., 2000; Sumara et al., 2000).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "76222046-61ba-4701-bd0b-1c93464ff860",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C74",
+      "claim": "STAG1 and STAG2 containing complexes act redundantly to ensure sufficient sister chromatid cohesion to support cell division in human somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although STAG1 and STAG2 may confer distinct functionalities to the cohesin complex (Canudas and Smith, 2009; Remeseiro et al., 2012), STAG1 and STAG2 containing complexes act redundantly to ensure sufficient sister chromatid cohesion to support cell division in human somatic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the synthetic lethality data and supported by citations to prior work (Canudas and Smith, 2009; Remeseiro et al., 2012).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "6d12dcb2-e313-4d39-a780-c50211d730c9",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C75",
+      "claim": "While the loss of one STAG paralog is compatible with cell viability and proliferation, the loss of both paralogs abrogates cohesin's ability to hold sister chromatids together, which results in lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "While the loss of one paralog is compatible with cell viability and proliferation, the loss of both paralogs abrogates cohesin's ability to hold sister chromatids together, which results in lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the synthetic lethality data and mechanistic studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "e4047ff6-dcdb-41c9-99f3-86daf0da2f29",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C76",
+      "claim": "Previous studies employed double siRNA depletion experiments to indicate functional redundancy between STAG1 and STAG2 in maintaining sister chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanistic findings are consistent with previous studies that employed double siRNA depletion experiments to indicate functional redundancy between STAG1 and STAG2 in maintaining sister chromatid cohesion (Canudas and Smith, 2009; Hara et al., 2014; Remeseiro et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (Canudas and Smith, 2009; Hara et al., 2014; Remeseiro et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "38f45692-4114-4e7c-b422-875ef87be295",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C77",
+      "claim": "STAG1 inactivation has little or no effect on the proliferation of STAG2 proficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since STAG1 inactivation has little or no effect on the proliferation of STAG2 proficient cells, selective targeting of STAG1 could offer a large therapeutic window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from multiple STAG2 wild-type cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "7f890d83-cfc3-4f27-81ee-5a516e18fa82",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C78",
+      "claim": "Selective targeting of STAG1 could offer a large therapeutic window.",
+      "claim_type": "EXPLICIT",
+      "source": "Since STAG1 inactivation has little or no effect on the proliferation of STAG2 proficient cells, selective targeting of STAG1 could offer a large therapeutic window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the selective effect of STAG1 loss on STAG2 mutant cells.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "4a06cbe8-b924-43c8-aa88-5a78e83ebaf7",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C79",
+      "claim": "STAG2 mRNA is expressed in all normal human tissues analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that STAG2 mRNA is expressed in all normal human tissues analyzed (Figure 4\u2014figure supplement 2) supports the hypothesis that selective inhibition of STAG1 function would indeed spare most non-cancerous tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "89683509-7696-4ac9-bff3-a6a54aa639cc",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C80",
+      "claim": "Selective inhibition of STAG1 function would spare most non-cancerous tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that STAG2 mRNA is expressed in all normal human tissues analyzed (Figure 4\u2014figure supplement 2) supports the hypothesis that selective inhibition of STAG1 function would indeed spare most non-cancerous tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the expression of STAG2 in normal tissues, suggesting they would not depend on STAG1.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "d2463064-5e21-480e-b8ce-4808a03d5f79",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C81",
+      "claim": "Potential approaches for therapeutic targeting of STAG1 include the inhibition of the interaction between STAG1 and the cohesin ring subunit RAD21.",
+      "claim_type": "EXPLICIT",
+      "source": "Potential approaches for therapeutic targeting of STAG1 include the inhibition of the interaction between STAG1 and the cohesin ring subunit RAD21 (Hara et al., 2014) and the selective degradation of STAG1 using proteolysis-targeting chimera (PROTAC) technology (Deshaies, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal supported by citation to prior work (Hara et al., 2014).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "46d3d3d2-cd6b-405a-8d75-9cf26787b320",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C82",
+      "claim": "Potential approaches for therapeutic targeting of STAG1 include the selective degradation of STAG1 using proteolysis-targeting chimera (PROTAC) technology.",
+      "claim_type": "EXPLICIT",
+      "source": "Potential approaches for therapeutic targeting of STAG1 include the inhibition of the interaction between STAG1 and the cohesin ring subunit RAD21 (Hara et al., 2014) and the selective degradation of STAG1 using proteolysis-targeting chimera (PROTAC) technology (Deshaies, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal supported by citation to PROTAC technology (Deshaies, 2015).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "e7e45f5c-f040-401d-a77c-ace096016349",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C83",
+      "claim": "The high degree of homology between STAG1 and its paralog STAG2 will be a key challenge to overcome for therapeutic targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "The high degree of homology between the STAG1 and its paralog STAG2 will be a key challenge to overcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge of protein targeting challenges.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "70900dfc-d645-4592-8613-55cec07414e5",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C84",
+      "claim": "Knowledge of mechanisms by which mutations in STAG2 and other cohesin subunits drive tumorigenesis is not a prerequisite for the identification of selective vulnerabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms by which mutations in STAG2 and other cohesin subunits drive tumorigenesis in solid and hematological tissues are not yet firmly established. Our work highlights the fact that such knowledge is not a prerequisite for the identification of selective vulnerabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful identification of STAG1 as a vulnerability without fully understanding the tumorigenic mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "2663809f-de44-4458-b39d-8a24e42cc745",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C85",
+      "claim": "Both deleterious STAG2 mutations and the loss of STAG2 expression are strong predictive biomarkers for STAG1 dependence in cell models.",
+      "claim_type": "EXPLICIT",
+      "source": "Both deleterious STAG2 mutations and the loss of STAG2 expression are strong predictive biomarkers for STAG1 dependence in cell models and could be utilized for patient stratification in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from multiple cell line models showing correlation between STAG2 status and STAG1 dependency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "35bfb366-f3a5-4432-a93a-3244a2d31fab",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C86",
+      "claim": "STAG2 status could be utilized for patient stratification in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Both deleterious STAG2 mutations and the loss of STAG2 expression are strong predictive biomarkers for STAG1 dependence in cell models and could be utilized for patient stratification in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the predictive value of STAG2 status in cell models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "f15abd50-420e-47d0-91dd-2ea5251c7ce0",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C87",
+      "claim": "Unique genetic dependencies of cohesin mutated cancer cells exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that unique genetic dependencies of cohesin mutated cancer cells exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the identification of STAG1 as a specific dependency of STAG2 mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c9e50f5c-1bea-4a8b-9412-45ddc5d604a0",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C88",
+      "claim": "The genetic dependencies of cohesin mutated cancer cells hold the promise for the development of selective treatments for patients suffering from STAG2 mutated cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Such vulnerabilities hold the promise for the development of selective treatments for patients suffering from STAG2 mutated cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the identified synthetic lethality.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "95375661-9a4a-4a3e-8608-7d278f4930d0",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C89",
+      "claim": "In wild-type cells, both cohesin-STAG1 and cohesin-STAG2 complexes redundantly contribute to sister chromatid cohesion and successful cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type cells, both cohesin-STAG1 and cohesin-STAG2 complexes redundantly contribute to sister chromatid cohesion and successful cell division.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model diagram in Figure 4 and supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c71697ad-bf32-4178-9b65-ccd0c26a8368",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C90",
+      "claim": "Loss of STAG1 is tolerated in wild-type cells as cohesin-STAG2 complexes alone suffice to support sister chromatid cohesion for cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of STAG1 is tolerated in these cells as cohesin-STAG2 complexes alone suffice to support sister chromatid cohesion for cell division.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model diagram in Figure 4 and supported by experimental data from wild-type cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "f4f16ee2-910b-43f5-a7bd-c9bce958f0ab",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C91",
+      "claim": "In cancer cells in which STAG2 is inactivated, sister chromatid cohesion is entirely dependent on cohesin-STAG1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer cells in which STAG2 is mutationally or transcriptionally inactivated, sister chromatid cohesion is now entirely dependent on cohesin-STAG1 complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model diagram in Figure 4 and supported by experimental data from STAG2 mutant cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "98208562-ab03-4e81-a567-c2dc0032d4aa",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C92",
+      "claim": "Inactivation of STAG1 in STAG2 mutated cells results in a loss of sister chromatid cohesion followed by mitotic failure and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of STAG1 in STAG2 mutated cells therefore results in a loss of sister chromatid cohesion followed by mitotic failure and cell death.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model diagram in Figure 4 and supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "73d293de-9f3a-478c-830c-072508a56959",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C93",
+      "claim": "HCT 116 cells are near-diploid and chromosomally stable.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify factors whose inactivation would be synthetic lethal with loss of STAG2 function, we first used CRISPR/Cas9 to inactivate STAG2 in near-diploid, chromosomally stable HCT 116 colon carcinoma cells (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the cell line used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "1f649f6a-026e-416b-8ac9-1c353090eebc",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C94",
+      "claim": "The transgenic FLAG-STAG1 protein was incorporated into the cohesin complex in STAG2- HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-precipitation of cohesin subunits was only detected in FLAG-STAG1 expressing cells indicating specific incorporation of the transgenic protein into the cohesin complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoprecipitation data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "d113122d-cb4b-4c0d-905a-3dbe26ced120",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "claim_id": "C95",
+      "claim": "STAG1 and STAG2 may confer distinct functionalities to the cohesin complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although STAG1 and STAG2 may confer distinct functionalities to the cohesin complex (Canudas and Smith, 2009; Remeseiro et al., 2012), STAG1 and STAG2 containing complexes act redundantly to ensure sufficient sister chromatid cohesion to support cell division in human somatic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (Canudas and Smith, 2009; Remeseiro et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "STAG2 displays a strong synthetic lethal interaction with its paralog STAG1. STAG1 depletion strongly decreased cell viability in STAG2-deficient cells while being tolerated by isogenic parental cells, as demonstrated by siRNA screens, rescue experiments with siRNA-resistant STAG1 transgene, double knockdown experiments, and CRISPR/Cas9-based competition assays in multiple cell line models (HCT 116 and KBM-7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C33-C35, C39-C41 collectively demonstrate the synthetic lethal interaction between STAG1 and STAG2 through multiple independent experimental approaches including siRNA screens (C33), rescue experiments (C34), double depletion (C35), and CRISPR competition assays (C39). The specificity controls and use of multiple methodologies provide strong converging evidence for this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "352b696f-dede-441f-9304-3cef2bfdc3e3",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "STAG1 loss abrogates sister chromatid cohesion selectively in STAG2-mutated but not wild-type cells. This is accompanied by increased mitotic index, prolonged mitosis duration, chromosome misalignment at the metaphase plate, and complete loss of sister chromatid cohesion as demonstrated by chromosome spread analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C43-C48, C51 provide comprehensive mechanistic evidence through multiple complementary assays: mitotic index measurements (C43), live-cell imaging of mitosis duration (C44), immunofluorescence microscopy showing chromosome misalignment (C45), and chromosome spread analysis demonstrating selective loss of cohesion (C46-C48). The data consistently show STAG2-genotype-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "af1da971-3fc3-4026-8729-ac3237b5f147",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "STAG1 loss in STAG2-mutated cells leads to mitotic catastrophe, defective cell division, and apoptosis. The severe mitotic defects are accompanied by aberrantly sized and shaped interphase nuclei and progressive increase in caspase activity, establishing the mechanistic basis for synthetic lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C49-C50, C72, C92 demonstrate the downstream consequences of cohesion loss through nuclear morphology analysis (C49) and caspase activity assays (C50). These data logically connect the cohesion defects to cell death and provide mechanistic explanation for the synthetic lethality (C72, C92).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "600b49ee-e91d-42a6-9f1a-56a06211e9a6",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "STAG1 inactivation inhibits the proliferation of STAG2-mutated but not wild-type bladder cancer cell lines. STAG2 status represents a predictive marker for sensitivity to STAG1 depletion across a panel of 16 bladder cancer cell lines, with STAG1 depletion preventing colony formation and abolishing sister chromatid cohesion selectively in STAG2-mutated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C58-C62 demonstrate the disease relevance of the synthetic lethal interaction in bladder cancer through systematic analysis of 16 cell lines with defined STAG2 status. The data include viability assays (C58-C60), colony formation assays (C61), and chromosome spread analysis (C62), providing multiple lines of evidence for STAG2 status as a predictive biomarker.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "67f6aaff-b1a8-40f5-8795-de250cbc0b40",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "STAG1 inactivation inhibits the proliferation of STAG2-mutated but not wild-type Ewing sarcoma cell lines. STAG2 mutation status is linked to STAG1 dependency in a panel of four Ewing sarcoma cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C64 extend the synthetic lethal interaction to Ewing sarcoma through viability assays across four cell lines with defined STAG2 status. While the sample size is smaller than the bladder cancer panel, the data are consistent with the broader finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "4364184c-2a40-4562-b925-c5a4980f1681",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Restoration of STAG2 expression in STAG2-mutated UM-UC-3 bladder cancer cells alleviates the dependency on STAG1. The transgenic FLAG-STAG2 protein localizes to the nucleus, incorporates into the cohesin complex, and rescues STAG1 dependency, providing a causal link between STAG2 loss and STAG1 dependency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C65-C69 provide critical rescue experiments demonstrating causality. The data show proper localization (C66), incorporation into cohesin complex (C67), and functional rescue of STAG1 dependency (C68-C69). This is a key control establishing that the synthetic lethality is specifically due to STAG2 loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "STAG1 and STAG2 support sister chromatid cohesion redundantly to ensure cell survival. While loss of one paralog is compatible with cell viability, loss of both paralogs abrogates cohesin's ability to hold sister chromatids together, resulting in lethality. In wild-type cells, both cohesin-STAG1 and cohesin-STAG2 complexes redundantly contribute to cohesion, but in STAG2-inactivated cancer cells, cohesion becomes entirely dependent on cohesin-STAG1 complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C52, C74-C75, C89-C91 synthesize the mechanistic model supported by the experimental data. The redundancy model is directly supported by the synthetic lethality data and mechanistic studies showing selective cohesion loss only when both paralogs are absent. The model is clearly illustrated in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "b99e85d8-0fcc-49e6-86a9-b934fb14535e",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "STAG1 represents a vulnerability of cancer cells carrying STAG2 mutations across different cancer contexts (carcinoma, leukemia, and sarcoma). Cancer cells harboring deleterious STAG2 mutations remain dependent on STAG1, demonstrating that this genetic vulnerability is maintained throughout carcinogenesis and not bypassed by adaptive processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C54-C56, C87 are supported by data from multiple cancer types: HCT 116 colon carcinoma, KBM-7 leukemia, bladder cancer, and Ewing sarcoma. The observation that patient-derived STAG2 mutations (C42, C55) maintain STAG1 dependency supports the claim that this vulnerability persists through carcinogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "ab0f682d-efc2-4482-829b-503041faf84f",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 was used to inactivate STAG2 in near-diploid, chromosomally stable HCT 116 colon carcinoma cells, generating two clones (STAG2-505c1 and 502c4) harboring deleterious mutations and lacking detectable STAG2 protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31, C93 describe the generation of the isogenic cell model. The characterization is supported by sequencing data (Figure 1\u2014figure supplement 1) and immunoblotting showing loss of STAG2 protein. This is a well-documented methodological result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "30afc78c-fc27-455f-bfc6-ba931f1de1d1",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Depletion of SGOL1, an essential cohesin regulator, had a detrimental impact on viability and resulted in complete loss of sister chromatid cohesion in both parental and STAG2-deficient cells, irrespective of STAG2 genotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C47, C63 establish SGOL1 as a positive control showing that essential cohesin functions affect cells regardless of STAG2 status. This control validates the specificity of the STAG1-STAG2 synthetic lethal interaction and is supported by viability and chromosome spread data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "5b855eb5-5363-46ba-88b7-ec3c26dc3bcd",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The dependency of STAG2-deficient cells on STAG1 was independent of p53, as demonstrated by co-depletion experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by co-depletion experiment data (Figure 1\u2014figure supplement 4) showing that p53 depletion does not affect the STAG1 dependency. This addresses a potential confounding variable and strengthens the mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "f38ec193-a276-4a48-ac1a-eec8eff6ec77",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "STAG1 depletion had no effect on cell viability in non-transformed hTERT RPE-1 cells, and neither STAG1 nor STAG2 is essential for proliferation of these cells. STAG1 inactivation has little or no effect on the proliferation of STAG2 wild-type cancer cells and non-transformed cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C40, C77 demonstrate the selectivity of STAG1 targeting for STAG2-mutant cells. The data from hTERT RPE-1 cells (C37) and citation to large-scale study (C38) support that STAG1 is not essential in normal cells, which is critical for therapeutic window considerations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "4aeacf66-a74c-43a9-9be1-5afd7cc84ea3",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Depletion of STAG1 by siRNA abrogated both cell viability and sister chromatid cohesion in HCT 116 cell clones with patient-derived deleterious STAG2 mutations but not in parental cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 extends the findings to patient-derived mutations engineered into HCT 116 cells, demonstrating that the synthetic lethality applies to clinically relevant STAG2 mutations. This is supported by data in Figure 3\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "940a0ecb-e08e-4524-a1b5-bf61a261f5be",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Expression analysis did not reveal upregulation of STAG1 protein or mRNA as a major compensatory mechanism for the loss of STAG2 function in cancer cell lines or patient tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by expression analysis data (Figure 4\u2014figure supplement 1) showing no significant STAG1 upregulation in STAG2-mutant samples. This addresses a potential compensatory mechanism and supports the therapeutic rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "74c11a7f-9cb4-4820-bd01-732cc75c246e",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The paralog dependency between STAG1 and STAG2 has been independently reported in another study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 cites an independent study (Benedetti et al., 2017) that corroborates the main finding. This provides external validation of the synthetic lethal interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "c3927e25-2352-4801-9f8f-d7f85d837885",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The genetic vulnerability of STAG2 mutant cells to STAG1 loss is not bypassed by transcriptional activation of the germline-specific paralog STAG3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is inferred from the observation that STAG2-mutant cells remain dependent on STAG1, but no direct measurement of STAG3 expression or function is provided. While the inference is reasonable, the claim would be strengthened by direct evidence of STAG3 status in the tested cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "06702caa-1e79-48f2-bed9-d7a8dfb3e636",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "STAG1 and STAG2 associate with the cohesin complex in a mutually exclusive manner. The transgenic FLAG-STAG1 protein was incorporated into the cohesin complex in STAG2-deficient HCT 116 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C94 are supported by prior literature (C73) and immunoprecipitation data showing co-precipitation of cohesin subunits with FLAG-STAG1 (C94, Figure 1\u2014figure supplement 2B). This validates the functionality of the rescue construct.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "a6bb82e6-3fc0-4468-94ae-acd7efeff9de",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Selective targeting of STAG1 could offer a large therapeutic window because STAG2 mRNA is expressed in all normal human tissues analyzed, suggesting that selective inhibition of STAG1 function would spare most non-cancerous tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C80 are speculative proposals for therapeutic application. While C79 is supported by expression data (Figure 4\u2014figure supplement 2), the inference that STAG1 inhibition would spare normal tissues (C80) and provide a therapeutic window (C78) requires validation in vivo and consideration of tissue-specific requirements. These are reasonable hypotheses but not experimentally demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "383529c2-7d12-4219-99ea-2138beb51738",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Potential approaches for therapeutic targeting of STAG1 include inhibition of the STAG1-RAD21 interaction and selective degradation using PROTAC technology, though the high degree of homology between STAG1 and STAG2 will be a key challenge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C83 are speculative proposals for therapeutic strategies. While the cited approaches (C81-C82) are plausible based on prior work, no experimental validation is provided. The challenge of paralog selectivity (C83) is a reasonable concern but not experimentally addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "a96c52af-b8ab-4f99-8c3a-9e8402fd9c51",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Both deleterious STAG2 mutations and loss of STAG2 expression are strong predictive biomarkers for STAG1 dependence in cell models and could be utilized for patient stratification in the future.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is well-supported by data from multiple cell line models showing correlation between STAG2 status and STAG1 dependency. However, C86 regarding future patient stratification is speculative and would require clinical validation. The biomarker claim in cell models is SUPPORTED, but the clinical application is UNCERTAIN.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "ffb69922-2132-4dac-9665-8dfd3786da46",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The genetic dependencies of cohesin-mutated cancer cells hold promise for the development of selective treatments for patients suffering from STAG2-mutated cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is a speculative proposal based on the identified synthetic lethality. While the preclinical data are strong, translation to clinical treatment requires additional validation including in vivo studies, drug development, and clinical trials. This is a reasonable future direction but not experimentally demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background claims establishing the context of cohesin biology, STAG2 mutations in cancer, and the rationale for synthetic lethality approaches. These include the structure and function of cohesin, the frequency of STAG2 mutations across cancer types, STAG2's role as a tumor suppressor, and the clinical success of synthetic lethality approaches like PARP inhibitors in BRCA-mutant cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C29 provide background context supported by citations to prior literature. These establish the scientific rationale for the study but do not represent new findings. The claims about cohesin structure/function (C10-C16) and STAG2 mutation frequencies (C17-C22) are well-documented in cited literature. The estimate of affected patients (C29) is reasonable but approximate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "a559fafe-ef59-4e83-b663-212f65cba8e3",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Previous studies employed double siRNA depletion experiments to indicate functional redundancy between STAG1 and STAG2 in maintaining sister chromatid cohesion, and STAG1 and STAG2 may confer distinct functionalities to the cohesin complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C95 cite prior work establishing functional redundancy and potential distinct functions of STAG paralogs. These provide context for the current findings and are supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    },
+    {
+      "id": "cd46e0f4-39cd-4a75-9641-af2684386855",
+      "content_id": "215165b3-2624-4c14-ae2d-d1bca381b152",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Knowledge of mechanisms by which mutations in STAG2 and other cohesin subunits drive tumorigenesis is not a prerequisite for the identification of selective vulnerabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is supported by the successful identification of STAG1 as a vulnerability without fully understanding tumorigenic mechanisms. This is a valid conceptual point about synthetic lethality approaches, though it is more of a philosophical observation than an experimental result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:59:18.568674Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6945b6ba-5671-413e-87d2-00818802fa0c",
+      "result_id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b"
+    },
+    {
+      "claim_id": "16a27b4f-27a6-40e0-969a-a19623e52c44",
+      "result_id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b"
+    },
+    {
+      "claim_id": "b8a86627-7761-422c-9509-673f7d8decab",
+      "result_id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b"
+    },
+    {
+      "claim_id": "daa80135-21eb-42c5-998d-b4dc9b7ec1a9",
+      "result_id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b"
+    },
+    {
+      "claim_id": "5246f3ab-1fcb-4197-b561-266bca3624d6",
+      "result_id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b"
+    },
+    {
+      "claim_id": "83f13524-57e6-4f78-8d4e-d7e5ef0d8d6c",
+      "result_id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b"
+    },
+    {
+      "claim_id": "95ad226b-1552-4b0c-bfa6-46a3ce2b65aa",
+      "result_id": "be0f68d5-4a8e-4ae2-9677-34039a10e88b"
+    },
+    {
+      "claim_id": "752751c3-914a-47d0-85fa-32dc5bf9f71e",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "c991211e-5802-4349-960b-148f8bae1c78",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "cdcedf29-f91b-44c5-852b-cf02cd0eabe4",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "d344aa25-b960-40fc-a6bf-71f2ab31cc84",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "fdb712af-99ee-4f59-b27d-4c6131cc6a69",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "229ebac7-fee1-4543-9f85-a85f2cfa707a",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "c9f7d3a4-e348-4aaf-bc7f-6b9163e12122",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "a0602679-d27c-4dc6-b618-a13087ed4b24",
+      "result_id": "352b696f-dede-441f-9304-3cef2bfdc3e3"
+    },
+    {
+      "claim_id": "ecc84ced-66ca-4511-b0c8-45c17bb8ce4a",
+      "result_id": "af1da971-3fc3-4026-8729-ac3237b5f147"
+    },
+    {
+      "claim_id": "942a4e93-1241-4a94-9840-bcab6eb1e174",
+      "result_id": "af1da971-3fc3-4026-8729-ac3237b5f147"
+    },
+    {
+      "claim_id": "263c2fa6-d55f-405b-b5e8-149b3ba14739",
+      "result_id": "af1da971-3fc3-4026-8729-ac3237b5f147"
+    },
+    {
+      "claim_id": "17c464fb-0021-46fb-8d3e-74c0cccfa32c",
+      "result_id": "af1da971-3fc3-4026-8729-ac3237b5f147"
+    },
+    {
+      "claim_id": "98208562-ab03-4e81-a567-c2dc0032d4aa",
+      "result_id": "af1da971-3fc3-4026-8729-ac3237b5f147"
+    },
+    {
+      "claim_id": "4a5395eb-af90-464c-88a2-40ecf85d442c",
+      "result_id": "600b49ee-e91d-42a6-9f1a-56a06211e9a6"
+    },
+    {
+      "claim_id": "40fe19cc-3f26-4f1d-971c-a5046c931353",
+      "result_id": "600b49ee-e91d-42a6-9f1a-56a06211e9a6"
+    },
+    {
+      "claim_id": "b6f9c378-f7fe-48da-a686-8c9aaaeccf5d",
+      "result_id": "600b49ee-e91d-42a6-9f1a-56a06211e9a6"
+    },
+    {
+      "claim_id": "160fed29-6aa0-4b12-b3e4-1e3cfe195725",
+      "result_id": "600b49ee-e91d-42a6-9f1a-56a06211e9a6"
+    },
+    {
+      "claim_id": "eb1a2f7f-131a-4e2d-8210-9ac8a4ebdc7e",
+      "result_id": "600b49ee-e91d-42a6-9f1a-56a06211e9a6"
+    },
+    {
+      "claim_id": "b8a7f3de-3b38-4c71-965c-05bd6391996d",
+      "result_id": "600b49ee-e91d-42a6-9f1a-56a06211e9a6"
+    },
+    {
+      "claim_id": "1ca3c470-af29-4898-9a26-dde7871e9de3",
+      "result_id": "67f6aaff-b1a8-40f5-8795-de250cbc0b40"
+    },
+    {
+      "claim_id": "629e5c8a-9492-4f4b-88b0-907d3f246ba3",
+      "result_id": "67f6aaff-b1a8-40f5-8795-de250cbc0b40"
+    },
+    {
+      "claim_id": "ab1cd5f0-1ec9-464b-bcc6-a76cbd616f63",
+      "result_id": "4364184c-2a40-4562-b925-c5a4980f1681"
+    },
+    {
+      "claim_id": "0353556b-9cdb-4a52-bd82-731ab02bed46",
+      "result_id": "4364184c-2a40-4562-b925-c5a4980f1681"
+    },
+    {
+      "claim_id": "9abef67e-b8ec-424a-bc78-ec65f8495cec",
+      "result_id": "4364184c-2a40-4562-b925-c5a4980f1681"
+    },
+    {
+      "claim_id": "1bbfeb2f-683b-49a6-9056-4731bc8ec014",
+      "result_id": "4364184c-2a40-4562-b925-c5a4980f1681"
+    },
+    {
+      "claim_id": "2695c880-922c-474a-899a-9f7a11b5ae4a",
+      "result_id": "4364184c-2a40-4562-b925-c5a4980f1681"
+    },
+    {
+      "claim_id": "e2743a1e-7327-4f9e-bae8-72c3b8ac0740",
+      "result_id": "4364184c-2a40-4562-b925-c5a4980f1681"
+    },
+    {
+      "claim_id": "fe5e587b-2f83-4469-971f-ac46b81a8dfa",
+      "result_id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662"
+    },
+    {
+      "claim_id": "061112c1-7fd8-4db4-a683-58a985c4a9ab",
+      "result_id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662"
+    },
+    {
+      "claim_id": "76222046-61ba-4701-bd0b-1c93464ff860",
+      "result_id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662"
+    },
+    {
+      "claim_id": "6d12dcb2-e313-4d39-a780-c50211d730c9",
+      "result_id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662"
+    },
+    {
+      "claim_id": "95375661-9a4a-4a3e-8608-7d278f4930d0",
+      "result_id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662"
+    },
+    {
+      "claim_id": "c71697ad-bf32-4178-9b65-ccd0c26a8368",
+      "result_id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662"
+    },
+    {
+      "claim_id": "f4f16ee2-910b-43f5-a7bd-c9bce958f0ab",
+      "result_id": "bf20cdba-be67-41c2-bf3d-ebe20f22f662"
+    },
+    {
+      "claim_id": "f568afed-7905-4d9e-8ce3-c5b81d76ea69",
+      "result_id": "b99e85d8-0fcc-49e6-86a9-b934fb14535e"
+    },
+    {
+      "claim_id": "745fcaf1-4663-40a0-a9ee-473139059e0f",
+      "result_id": "b99e85d8-0fcc-49e6-86a9-b934fb14535e"
+    },
+    {
+      "claim_id": "d89c60c6-5ea2-4f61-bf18-834d05b12ebe",
+      "result_id": "b99e85d8-0fcc-49e6-86a9-b934fb14535e"
+    },
+    {
+      "claim_id": "c7cfc6f7-dde8-42e1-944c-80905df4d381",
+      "result_id": "b99e85d8-0fcc-49e6-86a9-b934fb14535e"
+    },
+    {
+      "claim_id": "f15abd50-420e-47d0-91dd-2ea5251c7ce0",
+      "result_id": "b99e85d8-0fcc-49e6-86a9-b934fb14535e"
+    },
+    {
+      "claim_id": "6e45b2dc-5802-47bf-a48e-7f3b6aabb8b0",
+      "result_id": "ab0f682d-efc2-4482-829b-503041faf84f"
+    },
+    {
+      "claim_id": "66e161b0-c481-42d8-ac09-00e7cc2c6b97",
+      "result_id": "ab0f682d-efc2-4482-829b-503041faf84f"
+    },
+    {
+      "claim_id": "73d293de-9f3a-478c-830c-072508a56959",
+      "result_id": "ab0f682d-efc2-4482-829b-503041faf84f"
+    },
+    {
+      "claim_id": "154c6d8a-0162-439f-811c-7bb7681550d7",
+      "result_id": "30afc78c-fc27-455f-bfc6-ba931f1de1d1"
+    },
+    {
+      "claim_id": "229ebac7-fee1-4543-9f85-a85f2cfa707a",
+      "result_id": "30afc78c-fc27-455f-bfc6-ba931f1de1d1"
+    },
+    {
+      "claim_id": "c84f043b-5e5e-488c-801e-3c800710b913",
+      "result_id": "30afc78c-fc27-455f-bfc6-ba931f1de1d1"
+    },
+    {
+      "claim_id": "ab1cfb0c-e6d0-407c-86f1-9cf15f899a0b",
+      "result_id": "5b855eb5-5363-46ba-88b7-ec3c26dc3bcd"
+    },
+    {
+      "claim_id": "5b662238-44ee-481e-a274-7583412ea866",
+      "result_id": "f38ec193-a276-4a48-ac1a-eec8eff6ec77"
+    },
+    {
+      "claim_id": "9c05a238-3bb7-4af4-b389-aef6de91ab77",
+      "result_id": "f38ec193-a276-4a48-ac1a-eec8eff6ec77"
+    },
+    {
+      "claim_id": "83f13524-57e6-4f78-8d4e-d7e5ef0d8d6c",
+      "result_id": "f38ec193-a276-4a48-ac1a-eec8eff6ec77"
+    },
+    {
+      "claim_id": "38f45692-4114-4e7c-b422-875ef87be295",
+      "result_id": "f38ec193-a276-4a48-ac1a-eec8eff6ec77"
+    },
+    {
+      "claim_id": "18eb93f8-d853-474f-b5c5-922da3732f37",
+      "result_id": "4aeacf66-a74c-43a9-9be1-5afd7cc84ea3"
+    },
+    {
+      "claim_id": "37df48f4-29dd-4adf-a1e2-cada10ce316e",
+      "result_id": "940a0ecb-e08e-4524-a1b5-bf61a261f5be"
+    },
+    {
+      "claim_id": "315b23ec-efbe-4b00-a42a-56b8024a725a",
+      "result_id": "74c11a7f-9cb4-4820-bd01-732cc75c246e"
+    },
+    {
+      "claim_id": "c38c24ea-964f-4133-b7b9-555d5bdb1a6c",
+      "result_id": "c3927e25-2352-4801-9f8f-d7f85d837885"
+    },
+    {
+      "claim_id": "8f92e612-2d38-4503-a34c-49c90339d1a0",
+      "result_id": "06702caa-1e79-48f2-bed9-d7a8dfb3e636"
+    },
+    {
+      "claim_id": "1f649f6a-026e-416b-8ac9-1c353090eebc",
+      "result_id": "06702caa-1e79-48f2-bed9-d7a8dfb3e636"
+    },
+    {
+      "claim_id": "7f890d83-cfc3-4f27-81ee-5a516e18fa82",
+      "result_id": "a6bb82e6-3fc0-4468-94ae-acd7efeff9de"
+    },
+    {
+      "claim_id": "4a06cbe8-b924-43c8-aa88-5a78e83ebaf7",
+      "result_id": "a6bb82e6-3fc0-4468-94ae-acd7efeff9de"
+    },
+    {
+      "claim_id": "89683509-7696-4ac9-bff3-a6a54aa639cc",
+      "result_id": "a6bb82e6-3fc0-4468-94ae-acd7efeff9de"
+    },
+    {
+      "claim_id": "d2463064-5e21-480e-b8ce-4808a03d5f79",
+      "result_id": "383529c2-7d12-4219-99ea-2138beb51738"
+    },
+    {
+      "claim_id": "46d3d3d2-cd6b-405a-8d75-9cf26787b320",
+      "result_id": "383529c2-7d12-4219-99ea-2138beb51738"
+    },
+    {
+      "claim_id": "e7e45f5c-f040-401d-a77c-ace096016349",
+      "result_id": "383529c2-7d12-4219-99ea-2138beb51738"
+    },
+    {
+      "claim_id": "2663809f-de44-4458-b39d-8a24e42cc745",
+      "result_id": "a96c52af-b8ab-4f99-8c3a-9e8402fd9c51"
+    },
+    {
+      "claim_id": "35bfb366-f3a5-4432-a93a-3244a2d31fab",
+      "result_id": "a96c52af-b8ab-4f99-8c3a-9e8402fd9c51"
+    },
+    {
+      "claim_id": "c9e50f5c-1bea-4a8b-9412-45ddc5d604a0",
+      "result_id": "ffb69922-2132-4dac-9665-8dfd3786da46"
+    },
+    {
+      "claim_id": "73179244-708e-4bfe-8898-9c5253b62935",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "08e3f3c9-a323-459b-862a-f1a86003f1d0",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "7b929ca2-5603-4d8e-b617-925a5616484e",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "c05ea5a8-4ec2-4d3f-86c5-42fe54f84534",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "724ad87b-c82c-4cab-a9ed-eba56b84d00e",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "42b57e4e-1e37-460c-8348-6b95d5b9e996",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "8e7b1f6b-6501-4560-a8e8-76ec2ce7a4c6",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "4831e8a5-36b6-496f-8b78-b04586e8d24d",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "ba00472f-ab9e-4e45-aca1-fb27a8cba306",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "3cdebfba-eee3-404d-a6a2-57ebb22e6f43",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "22af983d-067d-45f0-8464-40c471951082",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "1d1121d4-116a-48d0-bdc3-6058e44cbd58",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "564343b6-6feb-4fd1-b969-ad8314c62c9d",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "051ef18a-7bda-4aea-8cdb-92eae12f568d",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "53e13983-2717-422c-84b7-73e937ee346c",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "59851d12-05d2-4b9a-91c3-e6256a04587b",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "8645d8cd-62c0-4b6e-aec2-0467ee52a2ed",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "2590f79f-fe6e-4877-8e59-dcceafb0fbcc",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "7d812cef-fad6-4417-a4a1-a008352f0d77",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "fd295357-2169-4d02-8598-ee2ed6ecf0d7",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "f52e0694-2f2d-476a-9ae0-3b3ea55a5d77",
+      "result_id": "65ac3d58-f8f8-429a-89b8-fe17a06558a0"
+    },
+    {
+      "claim_id": "e4047ff6-dcdb-41c9-99f3-86daf0da2f29",
+      "result_id": "a559fafe-ef59-4e83-b663-212f65cba8e3"
+    },
+    {
+      "claim_id": "d113122d-cb4b-4c0d-905a-3dbe26ced120",
+      "result_id": "a559fafe-ef59-4e83-b663-212f65cba8e3"
+    },
+    {
+      "claim_id": "70900dfc-d645-4592-8613-55cec07414e5",
+      "result_id": "cd46e0f4-39cd-4a75-9641-af2684386855"
+    }
+  ],
+  "comparisons": []
+}

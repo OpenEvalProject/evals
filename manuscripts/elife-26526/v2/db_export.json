@@ -1,0 +1,1769 @@
+{
+  "submission": {
+    "id": "229c01ed-47ac-4a92-b135-7a50d80c81c5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:58:00.863233Z",
+    "updated_at": "2025-12-01T21:58:00.863233Z"
+  },
+  "content": [
+    {
+      "id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "submission_id": "229c01ed-47ac-4a92-b135-7a50d80c81c5",
+      "content_type": "manuscript",
+      "content_text": "# The liquid structure of elastin\n\n## Authors\n\n- Sarah Rauscher<sup>1</sup> ([ORCID: 0000-0001-9860-3237](https://orcid.org/0000-0001-9860-3237))\n- R\u00e9gis Pom\u00e8s<sup>1</sup> ([ORCID: 0000-0003-3068-9833](https://orcid.org/0000-0003-3068-9833)) \u2020\n\n### Affiliations\n\n1. Molecular Medicine The Hospital for Sick Children Toronto Canada\n2. Department of Biochemistry University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe protein elastin imparts extensibility, elastic recoil, and resilience to tissues including arterial walls, skin, lung alveoli, and the uterus. Elastin and elastin-like peptides are hydrophobic, disordered, and undergo liquid-liquid phase separation upon self-assembly. Despite extensive study, the structure of elastin remains controversial. We use molecular dynamics simulations on a massive scale to elucidate the structural ensemble of aggregated elastin-like peptides. Consistent with the entropic nature of elastic recoil, the aggregated state is stabilized by the hydrophobic effect. However, self-assembly does not entail formation of a hydrophobic core. The polypeptide backbone forms transient, sparse hydrogen-bonded turns and remains significantly hydrated even as self-assembly triples the extent of non-polar side chain contacts. Individual chains in the assembly approach a maximally-disordered, melt-like state which may be called the liquid state of proteins. These findings resolve long-standing controversies regarding elastin structure and function and afford insight into the phase separation of disordered proteins.\n\n## Introduction\n\nThe elasticity of skin, lungs, major arteries, and other vertebrate tissues is imparted by the fibrous structural protein, elastin. Networks of elastic fibres are formed in the extracellular matrix from the monomeric precursor, tropoelastin. Elastic fibres are subject to minimal turnover during a lifetime and are highly durable under repetitive physiological strain (Shapiro et al., 1991; Davis, 1993). For example, elastic fibres in the arterial wall enable the tissue to undergo over two billion cycles of extension and relaxation to smooth the flow of blood down the arterial tree, largely without mechanical failure. The remarkable durability and functional resilience of elastic fibres arise from intrinsic features of the monomer. Tropoelastin is a 60 kDa modular protein composed of alternating hydrophobic and cross-linking domains (Muiznieks et al., 2010). Although both types of domains contribute to the proper supramolecular assembly and the mechanical properties of the polymeric elastin network, the cross-linking domains are understood to bestow cohesiveness and durability to the material, whereas the hydrophobic domains confer the propensities for self-assembly and elastic recoil (Rauscher and Pom\u00e8s, 2012). Solutions of tropoelastin and elastin-like peptides (ELPs)\u00a0self-aggregate via liquid-liquid phase separation upon increasing temperature, a process known as coacervation. This process has been shown to be primarily driven by the self-association of hydrophobic domains (Muiznieks et al., 2010; Urry et al., 1974; Bellingham et al., 2001; Toonkool et al., 2001). The capacity for temperature-controlled self-assembly make elastin-like peptides well-suited for biomaterials applications (Almine et al., 2010) and drug delivery (Shi et al., 2013).\n\nDespite the biological importance of elastin and eighty years of study using a myriad of biophysical techniques (Meyer and Ferri, 1937), neither the molecular basis of self-assembly nor the structure of the self-assembled state are known. Numerous structural models of elastin have been proposed, which span a range from highly-ordered (Venkatachalam and Urry, 1981) to maximally-disordered (Hoeve and Flory, 1958; Flory, 1974) and emphasize either the hydrophobic effect (Venkatachalam and Urry, 1981; Weis-Fogh and Anderson, 1970; Gray et al., 1973; Li et al., 2001a) or conformational entropy (Hoeve and Flory, 1958; Flory, 1974; Dorrington et al., 1975) as the dominant contribution to the elastic recoil force.\n\nHigh conformational entropy is the key feature of the earliest model proposed for elastin\u2019s structure: the random network model (Hoeve and Flory, 1958; Flory, 1974). Based on thermoelasticity measurements indicating that elastin\u2019s recoil force is almost entirely entropic, Hoeve and Flory postulated that elastin\u2019s structure is an isotropic, rubber-like polymer network consisting of cross-linked, random chains (Hoeve and Flory, 1958; Flory, 1974). However, thermoelasticity measurements on elastin samples were carried out using alcohol diluents (Hoeve and Flory, 1958; Flory, 1974; Dorrington and McCrum, 1977; Andrady and Mark, 1980) and therefore rely on the assumption that alcohols do not significantly perturb the structure of elastin. The validity of this assumption has been questioned (Weis-Fogh and Anderson, 1970; Ellis and Packer, 1976; Gosline, 1978; Chalmers et al., 1999) because the sequence composition of elastin is unusually enriched in hydrophobic residues, which likely interact with alcohols. Other types of mechanical studies have been carried out in a wide variety of solvents (Weis-Fogh and Anderson, 1970; Lillie and Gosline, 2002; Silverstein et al., 2015). Whether or not the idealized random network model applies to the functional state of elastin is not known and remains controversial.\n\nIn contrast to the random network model, specific secondary structure preferences and significant burial of non-polar groups are common features of several other structural models of elastin (Venkatachalam and Urry, 1981; Weis-Fogh and Anderson, 1970; Gray et al., 1973; Li et al., 2001a; Gosline, 1978). Elastin\u2019s highly hydrophobic sequence led several groups to propose that the hydrophobic effect, rather than conformational entropy, is the major driving force of elastic recoil (Weis-Fogh and Anderson, 1970; Gray et al., 1973; Li et al., 2001a; Gosline, 1978). Several models were proposed in which non-polar side chains are arranged to exclude water molecules; the most ordered of these models is the \u03b2-spiral, which consists of repeated \u03b2-turns (Venkatachalam and Urry, 1981). While the \u03b2-spiral model has been shown to be unstable (Li et al., 2001a) spectroscopic data are consistent with the presence of \u03b2-turns (Muiznieks et al., 2010; Tamburro et al., 2003).\n\nTo go beyond these largely qualitative and seemingly contradictory models, high-resolution structural information is required. The conformational heterogeneity and self-association of elastin have impeded crystallographic and spectroscopic investigations and present a significant sampling challenge to molecular simulations (Rauscher and Pom\u00e8s, 2010a; Rauscher et al., 2009). Accordingly, most previous computational studies of elastin-like peptides have been limited to molecular dynamics\u00a0(MD) simulations of peptide monomers, starting with simulations of\u00a0~100 ps in vacuo (Chang and Urry, 1988; Wasserman and Salemme, 1990; Lelj et al., 1992) and moving on to simulations of\u00a0~10\u2013100 ns in explicit water (Li et al., 2001a; Silverstein et al., 2015; Rauscher et al., 2009; Li et al., 2001b; Schreiner et al., 2004; Rauscher et al., 2006; Krukau et al., 2007; Glaves et al., 2008; Li et al., 2014; Condon et al., 2017; Reppert et al., 2016; Tang et al., 2016). Although some of these studies examined assemblies comprising between 2 and 6 peptides (Rauscher et al., 2006; Li et al., 2014; Condon et al., 2017), to our knowledge simulations of larger aggregates of elastin-like (or, indeed, other intrinsically-disordered) peptides have never been reported. Moreover, we have shown that attaining statistically-converged sampling of disordered elastin-like peptides necessitates simulation times in the microsecond time-range (Rauscher et al., 2009; Rauscher and Pom\u00e8s, 2010b).\n\nTo examine the structural and physico-chemical basis for the self-assembly of elastin, we use MD simulations on a massive scale. For the sake of computational feasibility, we neglect cross-linking domains and consider a repetitive sequence, (GVPGV)7, modeled on hydrophobic domains of elastin. Although cross-linking domains are required to form elastomeric materials, they do not undergo coacervation on their own and are not required for coacervation (Urry et al., 1974; Bellingham et al., 2001). Peptides based on GVPGV and other repetitive motifs from the hydrophobic domains of tropoelastin have been shown to coacervate in the absence of cross-linking domains (Urry et al., 1974; Miao et al., 2003; Muiznieks et al., 2014). As such, our model system is not designed to capture all the properties of elastin. Instead, we focus on the phase separation of hydrophobic elastin-like domains, which also provides insight into the structural basis of elasticity. All-atom MD simulations of a monomer and an aggregate of 27 peptides, with a combined sampling time exceeding 200 \u00b5s, are used to provide the first atomistic description of the conformational ensemble of an elastin-like peptide successively in solution and in aggregated form.\n\n## Results and discussion\n\n### Peptide chain dimensions before and after self-assembly\n\nWe first compare the ensembles of the elastin-like peptide in solution (single chain, SC) and as an aggregate (multi-chain, MC) with respect to chain dimensions (Figure 1). Both in solution and in the aggregate, the peptide chains sample heterogeneous, disordered structural ensembles, without a unique, preferred conformation. The ensembles differ significantly with respect to chain dimensions, with aggregated chains being much more expanded on average than the single chain in solution. Not only is the average radius of gyration, Rg, higher for aggregated chains, the variance of Rg is also larger, indicative of a more heterogeneous underlying conformational ensemble.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig1-v2.jpg)\n\n**Figure 1.:** (a) Probability distribution of the radius of gyration, Rg, for SC (blue) and MC (red). Insets show representative backbone conformations of peptide monomer (left) and aggregate (right). (b) Aggregated chains are colored individually and ten of them are also shown below with their corresponding Rg to illustrate the conformational heterogeneity. In all figures, error bars indicate standard error. All the results reported in this and subsequent figures were obtained at 298 K unless otherwise noted.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Running averages of (a)\u00a0the number of hydrogen bonds per residue, XHB, and (b) the\u00a0radius of gyration, Rg.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Probability distribution of the radius of gyration, Rg, for SC (blue) and MC (red) systems obtained using the charmm-modified TIP3P water model (Jorgensen et al., 1983; MacKerell et al., 1998) (as in Figure 1a), and the SC system obtained using the TIP4P-D water model (Piana et al., 2015) (green).\n\nHigh conformational disorder in the aggregate is corroborated by multiple, independent experimental observations on elastin: elastin fibres are optically isotropic (Aaron and Gosline, 1980); the backbone carbonyl order parameter is less than 0.1 (Pometun et al., 2004); carbon chemical shifts are consistent with random coil secondary structure (Pometun et al., 2004); and neutron scattering experiments show that the polypeptide chains in elastin are highly mobile (Perticaroli et al., 2015). High conformational entropy underpins the random network model of elastin structure and function initially proposed by Hoeve and Flory (Hoeve and Flory, 1958; Flory, 1974). In this model, conformational entropy decreases when the chains are stretched and increases upon relaxation, thereby driving elastic recoil. Consistent with the random network model, we find that the peptide chains in the aggregate are highly disordered.\n\n### Disordered, but not random: a probabilistic description of intra- and interchain interactions\n\nIn order to characterize the complex conformational landscape of the disordered ELP chains, we obtained a statistical picture of the different conformational states and interactions accessible to the chains in solution and in the aggregate. Statistical maps of the two types of peptide-peptide interactions, backbone hydrogen bonds and non-polar side\u00a0chain contacts, reflect highly-disordered conformational ensembles (Figure 2). Secondary structure is sparse and limited to transient (sub-ns) hydrogen-bonded turns between residues close in sequence (near-diagonal elements in Figure 2a,b). The most populated structures are VPGV and GVGV \u03b2-turns. The propensity of each of these local interactions, which peaks at 20%, is remarkably well conserved upon aggregation (Table 1), while the total number of peptide-peptide hydrogen bonds per chain increases only moderately (Figure 2c). This evidence for fluctuating \u03b2-turns is consistent with spectroscopic data (Muiznieks et al., 2010; Tamburro et al., 2003) but not with the \u03b2-spiral, a highly-ordered structural model of elastin which requires that repeated \u03b2-turns be formed simultaneously, (Venkatachalam and Urry, 1981) which is never observed in the simulations. As such, our results reconcile spectroscopic evidence for local secondary structure (Muiznieks et al., 2010; Tamburro et al., 2003; Ohgo et al., 2012) with global conformational disorder.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig2-v2.jpg)\n\n**Figure 2.:** Probabilistic description of hydrogen\u00a0bonding (top row) and non-polar (bottom row) interactions of SC (a and d) and MC (b and e) systems. Panels (a), (b), (d) and (e) are contact maps for pairwise interactions between residues. The color of each square indicates the fraction of conformations in the ensemble for which that interaction is present. Nearest- and next-nearest-neighbour contacts are excluded for clarity in (d) and (e). Local interactions consist of sparse backbone hydrogen bonds and corresponding non-polar contacts. Non-local interactions consist primarily of non-specific non-polar contacts between side\u00a0chains. With the absence of preferred non-local interactions, the statistical picture of the conformational ensembles is remarkably simple. Upon aggregation, local structure propensities are retained as non-local hydrophobic contacts become intermolecular contacts (below the diagonal in e). (c) Average number of chain-chain hydrogen bonds per residue, XHB. (f) Average number of non-polar contacts per residue, XNP. Both XHB and XNP are the sum of intramolecular (local and non-local) and intermolecular contributions. Details of the structural analysis methods are provided in Materials and methods and Supplementary file 1, Table S2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The fraction of non-polar contacts between each of the six possible residue pair combinations (V-G, V-V, V-P, P-P, P-G, G-G) is shown for the single chain (a) and multi-chain (b) systems.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** A contact map is shown for each of the 33 independent MC simulations. The color scheme is the same as the one used in Figure 2.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** A contact map is shown for each of the 33 independent MC simulations. The color scheme is the same as the one used in Figure 2.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Probabilistic description of hydrogen\u00a0bonding and non-polar interactions of the SC system obtained using CHARMM 22* with the charmm-modified TIP3P water model (a\u00a0and d; these results are the same as shown in Figure 2a,d) and CHARMM 22* with the TIP4P-D water model (Piana et al., 2015) (b and e). The color of each square in the contact maps indicates the fraction of conformations in the ensemble for which that interaction is present. (c) Average number of intrachain hydrogen bonds per residue for the ensemble obtained with CHARMM22* and charmm-modified TIP3P (c22*) and TIP4P-D (c22*/D). (f) Average number of non-polar contacts per residue. Both XHB and XNP are the sum of local and non-local contributions.\n\n**Table 1.**\n Populations and lifetimes of hydrogen-bonded turns.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Turn</th>\n      <th colspan=\"2\">Population (%)</th>\n      <th colspan=\"2\">Lifetime (ns)</th>\n    </tr>\n    <tr>\n      <th>SC</th>\n      <th>MC</th>\n      <th>SC</th>\n      <th>MC</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>VPGV*</td>\n      <td>18\u00a0\u00b1\u00a01</td>\n      <td>16\u00a0\u00b1\u00a02</td>\n      <td>0.18\u00a0\u00b1\u00a00.02</td>\n      <td>0.19\u00a0\u00b1\u00a00.01</td>\n    </tr>\n    <tr>\n      <td>VPGVG</td>\n      <td>5.9\u00a0\u00b1\u00a00.9</td>\n      <td>4.6\u00a0\u00b1\u00a00.7</td>\n      <td>0.9\u00a0\u00b1\u00a00.3</td>\n      <td>0.8\u00a0\u00b1\u00a00.1</td>\n    </tr>\n    <tr>\n      <td>PGV</td>\n      <td>1.5\u00a0\u00b1\u00a00.1</td>\n      <td>2.0\u00a0\u00b1\u00a00.2</td>\n      <td>0.008\u00a0\u00b1\u00a00.002</td>\n      <td>0.009\u00a0\u00b1\u00a00.001</td>\n    </tr>\n    <tr>\n      <td>PGVG</td>\n      <td>2.3\u00a0\u00b1\u00a00.2</td>\n      <td>2.9\u00a0\u00b1\u00a00.3</td>\n      <td>0.30\u00a0\u00b1\u00a00.05</td>\n      <td>0.39\u00a0\u00b1\u00a00.03</td>\n    </tr>\n    <tr>\n      <td>GVGV</td>\n      <td>20\u00a0\u00b1\u00a03</td>\n      <td>17\u00a0\u00b1\u00a02</td>\n      <td>0.15\u00a0\u00b1\u00a00.02</td>\n      <td>0.24\u00a0\u00b1\u00a00.07</td>\n    </tr>\n  </tbody>\n</table>\n\n_*A hydrogen-bonded turn refers to a hydrogen bond between the first and last residue in the sequences shown. For example, the VPGV turn has a hydrogen bond between valine 1 and valine 4._\n\nEven as it preserves local structural propensities, self-aggregation results in the replacement of non-local intramolecular interactions by intermolecular interactions (Figure 2). In particular, the non-local non-polar contacts that characterize the collapsed isolated chain (Figure 2d) give way to non-specific interactions with neighboring peptides (Figure 2e). In this process, the bulky valine side chains contribute over 70% to all non-polar contacts in the monomeric and assembled states (Figure 2\u2014figure supplement 1). The average number of non-polar contacts per chain nearly triples upon self-assembly (Figure 2f) with a commensurate decrease in the hydration of non-polar sidechains (Figure 3b), indicating that the hydrophobic effect strongly contributes to the formation and the structure of the aggregate. Accordingly, the hydrophobic effect is the major driving force for elastic recoil in several earlier models of elastin (Venkatachalam and Urry, 1981; Weis-Fogh and Anderson, 1970; Gray et al., 1973; Li et al., 2001a; Gosline, 1978). Contrary to these models, however, significant hydrophobic burial is achieved even in the absence of a well-ordered structure.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig3-v2.jpg)\n\n**Figure 3.:** (a). Representative conformation of the aggregate with non-polar side chains (yellow), peptide backbone (oxygen, red; carbon, white; nitrogen, blue), and hydrogen-bonded water molecules (cyan). Peptide chains are shown individually on the periphery with bound water molecules. (b) Average number of water molecules in the hydration shell per residue, Xshell, for SC and MC systems (see Supplementary file 1, Table S2). (c) Average number of hydrogen bonds per residue, XHB. XHB is the sum of peptide-peptide hydrogen bonds (grey) and peptide-water hydrogen bonds (cyan), for both the SC and MC systems. (d) Same conformation as in panel a with bound water molecules shown as a transparent surface and peptides coloured individually. (e) Probability distribution, p(n), of water coordination number, n, for water molecules in the hydration shell of the SC (blue) and the MC (red) systems and in bulk water (cyan) at 298 K. Peptide-bound water molecules in the aggregate have fewer neighbors. The lines are shown to guide the eye.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The final conformation of 5 of the independent simulations is shown in two representations. The color schemes are the same as in Figure 3a and d.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) The scaling of inter-residue distances is shown within a blob-sized segment of 5 residues (linear fit in red) and outside of a blob-sized segment (linear fit in blue). The scaling exponents differ in these two regimes, as expected based on the work of Tran and Pappu, 2006. (b) A histogram of the number of contacts between protein and water molecules per blob-sized segment is shown for both the SC and MC systems. Shading indicates standard error. Chain segments in the aggregate have, on average, far fewer contacts with water molecules, indicating that even the chains on the surface are significantly dehydrated compared to the chain in solution, which also has no water-excluding core.\n\n### Hydration and disorder of the polypeptide backbone\n\nWhile self-assembly effectively buries non-polar side chains (Figure 2e,f), disorder of the polypeptide backbone precludes the formation of a water-excluding hydrophobic core.\u00a0Since there is only a moderate amount of secondary structure, a majority of backbone peptide groups do not form peptide-peptide hydrogen bonds (Figure 2c). Instead, water molecules remain within the aggregate (Figure 3a,d,e, Figure 4) in order to satisfy the hydrogen\u00a0bonding requirements of backbone groups. As a result, there is little loss of backbone hydration upon peptide self-assembly (Figure 3c), even as the side chains become dehydrated (Figure 3b). The high degree of hydration of the aggregate (40.0 \u00b1 0.2% water content by mass, based on the number of water molecules hydrogen-bonded to the peptide) is consistent with experimental measurements of water content between 40% and 60% for elastin derived from various species (Chalmers et al., 1999). In fact, the water content of both the monomer and the aggregate is so high that the probability of any five-residue segment to be completely dehydrated is essentially zero (Figure 3\u2014figure supplement 2b). These results clearly indicate that both systems lack a water-excluding hydrophobic core, a consequence of the high degree of conformational disorder and lack of extended secondary structure imparted by the high proline and glycine content (Rauscher et al., 2006).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig4-v2.jpg)\n\n**Figure 4.:** (a). Density profiles for peptide (red) and water (blue) as a function of the distance from the center of mass (COM) of the peptide is shown for the single chain system. (b) Density profiles for peptide and water as a function of the distance from the COM of the aggregate is shown for the multi-chain system. Shading in (a) and (b) indicates standard error. Note that the large width of the transition region between the homogenous interior and bulk water reflects not only the higher hydration of residues at the surface but also the asphericity of the aggregate (see Figure 3\u2014figure supplement 1).\n\nThe analysis of the average density of peptide and water from the center of mass of the aqueous monomer and of the peptide aggregate quantifies the presence of water throughout the system, even near the center of the peptide, where it represents over 0.2 g/cm3 in both systems (Figure 4). The fact that this value is nearly identical in the monomer and in the aggregate suggests that internal hydration is independent of size and would also be observed in larger and smaller aggregates. The presence of a plateau in water density indicates that the interior of the aggregate is homogeneous and that the aggregate is large enough to lead to the emergence of bulk-like properties expected of a separate liquid phase.\n\n### The liquid structure of elastin\n\nThe structural ensemble of the aggregate is disordered (Figure 1), yet contains a significant propensity for secondary structure in the form of transient hydrogen-bonded turns (Figure 2b, Table 1) and is highly hydrated (Figures 3 and 4). To understand why aggregation induces peptide expansion (Figure 1a), we examine our results in terms of solvent quality. In a poor solvent, solute-solute interactions are energetically more favorable than solvent-solute interactions, leading to a collapse of the polymer chain. Inversely, solvent-solute interactions are preferred in a good solvent, leading to chain expansion. In the ideal limit between the two (the so-called \u2018\u03b8-solvent\u2019), there is no preference for one type of interaction over the other. In this minimally-constrained state, the polymer becomes maximally disordered. The Flory theorem states that in the liquid, phase-separated state, the \u2018polymer melt\u2019, the polymer chains make extensive interactions with one another and become their own \u03b8-solvent, since intramolecular and intermolecular interactions are chemically indistinguishable; as a result of which the chains reach a state of maximal disorder. (Flory, 1953; Flory, 1969; Flory, 1949) Although disordered protein aggregates have been hypothesized to resemble polymer melts, (Fields et al., 1992; Pappu et al., 2008) whether or not they satisfy the Flory theorem is unknown.\n\nThe aggregated ELP chains are extensively solvated by one another (Figure 2c,f), suggesting that they may approach the ideal, \u03b8-solvent limit. To quantify the extent to which the chains approach this ideal limit, we compared the intrachain distance scaling of the conformational ensembles in the simulations to the scaling expected for the ideal, \u03b8-solvent limit (Figure 5). As a model for this ideal state, we use the residue-specific model for a random-coil polypeptide developed by Flory and co-workers (Flory, 1969; Miller et al., 1967). In their model, rotation about the backbone dihedral angles, \u03c6 and \u03c8, is treated as independent of the conformation of neighboring residues in the chain. We update their method to include residue-specific transformation matrices derived directly from the simulation data (see the detailed description of the method in Supplementary file 1). The internal distance scaling profile for the Flory model of the ideal state is fit by a power law with exponent \u03b1\u00a0=\u00a00.54, which is very similar to the expected dimensions of an ideal Flory random coil homopolymer, for which \u03b1\u00a0=\u00a00.5\u00a0(Flory, 1969). Similarly, the dimensions of the chains in the aggregate, with an exponent \u03b1\u00a0=\u00a00.46, closely approach the ideal limit as well. In contrast, the dimensions of the ensemble in solution, with an exponent of \u03b1\u00a0=\u00a00.28, are consistent with those of a polymer in a poor solvent, for which \u03b1\u00a0=\u00a01/3. This result is expected, given the highly hydrophobic composition of the ELP sequence, and the fact that water is a poor solvent for hydrophobic residues. The internal distance scaling profile of the chain in solution exhibits a slight upturn at large sequence separations. This deviation from the behavior expected for a perfectly collapsed, globular homopolymer likely arises from the fact that the conformational landscape of the ELP in solution is more complex than that of a simple homopolymer in a poor solvent due to the presence of specific, highly-populated turns (Table 1 and Figure 2b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig5-v2.jpg)\n\n**Figure 5.:** Root-mean-square distance, <rij2>1/2, between residues i and j as a function of sequence separation, |i-j|, for SC (blue) and MC (red), and for the ideal, random coil state modeled using the SC simulations according to the method of Flory et al. (black) (Flory, 1969; Miller et al., 1967) described in detail in Supplementary file 1. Shading indicates standard error. In each case, the dotted line indicates the power law fit to the data, with the exponent \u03b1 provided next to each curve.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The mean separation distance is shown as a function of sequence separation for 200 ns time intervals of the simulation. The color scheme is given in the legend: each interval is colored from red to yellow, from the beginning to 2.5 \u00b5s. The initial expansion of the chains occurs in the first microsecond of the simulation, followed by a slight further collapse to the equilibrium dimensions.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The scaling of inter-residue distances (the same analysis as shown in Figure 5) is shown for the SC ensemble at a range of temperatures between 298 K and 447 K, covering the entire range of temperatures simulated. The chain undergoes a gradual, steady expansion as temperature with increasing temperature. The inset shows the fitted exponent \u03b1 as a function of temperature. Extrapolating the linear increase in \u03b1 vs. temperature, the chain would reach \u03b1\u00a0=\u00a00.5 (as expected for a random coil) at 664 K.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Root-mean-square distance, <rij2>1/2, between residues i and j as a function of sequence separation, |i-j|, for the ensemble obtained using the CHARMM 22* force field with the TIP4P-D water model (green). Results for SC (blue) and MC (red) systems obtained using the CHARMM 22* force field with the charmm-modified TIP3P water model (as in Figure 5) are shown for comparison. Shading indicates standard error. In each case, the dotted line indicates the power law fit to the data, with the exponent \u03b1 provided next to each curve.\n\nThe dimensions of the chains in the ELP aggregate approach the dimensions predicted for maximally-disordered chains (Figure 5), and therefore the dimensions expected in a polymer melt. Deviation from ideality reflects the finite size of the aggregate, finite chain length, the presence of local secondary structure (Figure 2b), and persistent hydration (Figures 3 and 4). These results suggest that elastin\u2014and polypeptide chains in general\u2014cannot make polymer melts in the idealized, solvent-excluding sense because backbone groups must form hydrogen bonds either with each other, which leads to ordering, or with water molecules, whose presence is required for disorder. Instead, the chains adopt a disordered state with significant backbone hydration, as seen in the representative structures shown in Figure 3a,d and Figure 3\u2014figure supplement 1. The fact that the dimensions of chains within the aggregate are much closer to the ideal state than the single chain in solution indicates that conformational disorder increases significantly upon aggregation. Together, these findings demonstrate how even aggregated peptide chains may approach a state of maximal conformational disorder.\n\n### Peptide chain dynamics in solution and in the aggregate\n\nThe conformational ensembles of the peptide in solution and in the aggregate differ significantly with respect to chain dimensions (Figures 1 and 5), long-range contacts, hydrophobic interactions (Figure 2), and hydration (Figure 3). Despite these large global structural differences, the ensembles strongly resemble each other in terms of local secondary structure: the populations and lifetimes of the hydrogen-bonded turns are nearly identical for both SC and MC systems (Table 1). While the dynamics of turn formation are similar, non-local dynamics of the chain differs dramatically in solution and in the aggregate (Video 1). In particular, the lifetime of the open state (defined as the N- and C-termini not being in contact) increases more than fifty times upon aggregation (21\u00a0\u00b1\u00a01 ns vs. 1140\u00a0\u00b1\u00a030 ns in the SC and MC systems, respectively; Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig6-v2.jpg)\n\n**Figure 6.:** Survival probability of the open state (without a contact between the chain ends) as a function of time for the single chain (SC)\u00a0(a) and for the aggregated chains (MC) (b) . The lifetime of the open state is 21\u00a0\u00b1\u00a01 ns and 1140\u00a0\u00b1\u00a030 ns for the SC and MC systems, respectively.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) The mean squared displacement, MSD, of the central residue of the chain is shown as a function of time. This curve is an average over all chains (27 chains per system) and all simulations (33 in total), using only the second half of the trajectory in each case. Shading indicates standard error of the mean based on the 33 replicate simulations. (b) Anomalous diffusion is seen, and the exponent \u03b1 is 0.578 (obtained by fitting the linear part of the curve for t\u00a0>\u00a020 ns).\n\n![Video 1.](https://cdn.elifesciences.org/articles/26526/elife-26526-video1.mp4.jpg)\n\n**Video 1.:** Each of the 27 peptide chains is colored individually. Frames in the movie correspond to conformations separated by 50 ps time intervals. A smoothing window of 2 frames was applied and all conformations were aligned to the first conformation for clarity using VMD (Humphrey et al., 1996). As can be seen in the movie, both the global structure of the entire aggregate as well as the conformation of individual chains within the aggregate fluctuate on the nanosecond timescale. Chains on the surface of the aggregate occasionally extend outward into the surrounding water (water molecules are not shown for clarity).\n\nReptation theory predicts characteristic signatures for the dynamics of polymer chains in melts (de Gennes, 1979): short timescale motions are predicted to obey Rouse-like dynamics, whereas long timescale motions should be strongly affected by the confinement imposed by neighbouring chains. To determine whether the dynamics of aggregated elastin peptides is characteristic of a melt, we analyzed the diffusion of the central residue of each chain (Figure 6\u2014figure supplement 1). This residue exhibits anomalous diffusion (or sub-diffusion), with its mean-square displacement obeying a power law with exponent \u03b1\u00a0=\u00a00.58. This value is similar to the exponent close to 0.6 found by Harmandaris et al. in atomistic simulations of polyethylene melts (Harmandaris et al., 2003) and is intermediate between 1/2 and 2/3, as expected respectively for a Rouse chain (Rouse, 1953; Teraoka, 2002) and for the Zimm model, an extension of the Rouse model that accounts for hydrodynamic interactions between chain monomers (Teraoka, 2002; Zimm, 1956). Importantly, we find no crossover to a regime with \u03b1\u00a0=\u00a01/4, as one would expect if the chain were moving as if confined in a tube formed by the neighboring chains (that is, the entangled polymer melt regime described by de Gennes [de Gennes, 1979]). The chain length used here may be too short to observe this crossover. Consistent with this hypothesis, Ramos et al. (Ramos et al., 2016) found no crossover for the shortest chain length of hydrogenated polybutadiene that they studied (36 monomers compared to 35 residues in the chain studied here). The absence of crossover may also be due to insufficient simulation length, or to the fact that the chains remain highly hydrated in the aggregate and are not characteristic of a solvent-excluding melt.\n\n### Relevance to elastin-like peptides with cross-linking domains\n\nDespite the moderate size of our aggregate, its melt-like properties suggest that the present study captures the fundamental basis for ELP phase separation. As such, the molecular basis for phase separation uncovered in this study is likely to be relevant to longer ELPs and full-length tropoelastin. In support of this point, our results are in excellent agreement with a recent NMR study of block peptides with alternating cross-linking domains and hydrophobic (GVPGV)7 domains, successively in solution, in the coacervate, and in materials produced by cross-linking (Reichheld et al., 2017). The conformational ensemble of the hydrophobic domain presented in this study is consistent with the NMR results both qualitatively and quantitatively: (i) the peptides are disordered both before and after phase separation; (ii) the secondary structure in the hydrophobic domains consists primarily of sparse and transient \u03b2-turns in the VPGV and GVGV repeats, whose population was estimated to be in the range 20\u201340%, compared to our estimate of 16\u201320%; (iii) this secondary structure does not change significantly upon phase separation; (iv) phase separation entails formation of non-specific, intermolecular hydrophobic contacts; and (v) the protein-rich liquid phase is significantly hydrated. This broad agreement does not mean that the conformational ensembles of the hydrophobic domains are identical in the two model peptides (if only because of the different length of the polypeptide chains), but it indicates that the structural and physical basis for the self-assembly of the hydrophobic domains is not fundamentally affected by the presence of cross-linking domains.\n\n### Disordered aggregates: structure and function of self-assembled elastomeric proteins\n\nThe unusual properties of elastin and ELPs set them apart both from more common types of intrinsically disordered proteins (IDPs) that do not self-aggregate, and from proteins that form amyloid upon aggregation. On the one hand, the majority of IDPs have a high charge content and low sequence hydrophobicity, which allows them to avoid self-aggregation (Uversky et al., 2000), whereas elastin, because of its high content of hydrophobic residues, undergoes self-aggregation. Several computational studies have described structural ensembles of the more common type of IDPs. Among them, the RS peptide, which has a high net charge, was studied in detail using both simulations and experiments (Rauscher et al., 2015). Extensive computational studies of IDPs with varying fraction of charged residues have been carried out (Das and Pappu, 2013).\n\nOn the other hand, unfolded or misfolded proteins are prone to form ordered amyloid aggregates, but the amino acid composition of elastin precludes both folding and amyloid formation (Rauscher et al., 2006). While maintaining both disorder and hydration upon aggregation is crucial for elastic recoil, it is equally important that elastin and other self-assembled elastomeric proteins avoid the formation of the cross-\u03b2-structure characteristic of amyloid fibrils (Rauscher et al., 2006), which are postulated to be a thermodynamically stable state for any polypeptide chain under appropriate solution conditions (Dobson, 2003). Like the native state of globular proteins, the structure of amyloids is characterized by a water-excluding core and extensive backbone self-interactions. The liquid-like structure of elastin is incompatible with both protein folding and the formation of amyloid, and it is achieved through a high combined proportion of proline and glycine residues (Rauscher et al., 2006). Both proline, with its fixed \u03c6 dihedral angle and absence of amide hydrogen, and glycine, with its high entropic penalty for conformational confinement, inhibit the formation of \u03b1-helix and \u03b2-sheet structure, and serve to maintain a high degree of hydration and structural disorder by preventing the formation of a compact, water-excluding core. The essential role of proline and glycine in governing disorder, hydration, and elasticity was shown to extend to many other self-assembled elastomeric proteins (Rauscher et al., 2006), a finding corroborated by a recent study of an array of proline- and glycine-rich disordered proteins (Quiroz and Chilkoti, 2015) as well as by studies of various classes of spider silks (Savage and Gosline, 2008a; Savage and Gosline, 2008b). These results point to a fundamental relationship between sequence composition, conformational disorder, and elastomeric properties of self-assembled elastomeric proteins, including elastin, spider silk, and resilin.\n\nTaken together, these considerations support a model of elastin aggregation and entropic elasticity as shown in Figure 7. This model highlights the contributions of the hydrophobic effect and conformational entropy to protein folding, aggregation, and elastic recoil. Although individual chains approach a state of maximal conformational disorder upon aggregation, excluded volume effects are expected to limit the overall conformational entropy of the aggregate because the conformations are dependent upon those of their neighbors in the protein-dense phase. As such, the present study cannot conclude on whether or not conformational entropy contributes to self-assembly. However, our results are qualitatively consistent with rubber-like elasticity, since the extension of disordered, cross-linked hydrophobic chains should lead to a decrease of conformational entropy of the polymerized material as well as of the individual chains. Thus, both the hydrophobic effect and conformational entropy are expected to contribute to elastic recoil, reconciling the random coil and liquid drop models of elasticity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26526/elife-26526-fig7-v2.jpg)\n\n**Figure 7.:** Schematic description of polypeptide main chains (black), non-polar side chains (yellow), solvating water molecules (blue), and peptide-peptide hydrogen bonds (red) in monomeric (SC, top row) and aggregated (MC, bottom row) states. Globular proteins that unfold or misfold are prone to aggregation, which leads to highly ordered amyloid fibrils. Both the native (a) and amyloid (d) states of globular proteins are characterized by extensive secondary structure and a water-excluding hydrophobic core. Despite their hydrophobic character, elastin and other self-assembled elastomers cannot form such compact structures due to their high content in proline and glycine. Instead, they are hydrated and disordered both in their monomeric (b) and aggregated (e) states, so that they may readily undergo extension and elastic recoil (e-f). The role of the two dominant types of entropy, the hydrophobic effect (\u0394SHP) and chain entropy (\u0394SC), is highlighted. While the hydrophobic effect favors hydrophobic collapse (c\u2192b, f\u2192e), aggregation (b\u2192e), and, if possible, compact, water-excluding states (b\u2192a, e\u2192d), conformational entropy favors disordered (b, e) over extended (c, f) and compact (a, d) states. As a result, both entropic effects contribute to elastic recoil. Adapted with permission from Rauscher et al. (2006), Structure (Rauscher et al., 2006).\n\n### Conclusions\n\nThe present study provides the first atomistic description of a melt-like, disordered protein state, which may be called the liquid state of proteins. The model of elastin-like aggregates derived here represents the first detailed model of a protein coacervate. In spite of its moderate size, this molecular system emulates a biphasic liquid. Peptide aggregation is driven at least in part by the hydrophobic effect, which results in a three-fold increase in burial of non-polar groups for each polypeptide chain compared to the monomeric form. In the aggregate, the individual polypeptide chains approach a state of maximal conformational disorder as predicted by the Flory theorem. As such, the above results show how a classic concept of polymer theory, the polymer melt, is realized in an important but poorly-understood structural protein, and demonstrate the relevance of this concept to the self-assembly (coacervation) and mechanical properties of elastin.\n\nOur results support a unified model of elastin structure and function that recapitulates experimental data and reconciles key aspects of previous qualitative models. The biological function of elastin is incompatible with a unique, ordered structure. In the functional state, its hydrophobic domains form a water-swollen, disordered aggregate characterized by an ensemble of many degenerate conformations with significant backbone hydration and fluctuating local secondary structure. The combination of two entropic forces, the hydrophobic effect and polypeptide chain entropy, governs the elastic recoil central to elastin\u2019s function. These effects are intimately linked. Not only does the replacement of intramolecular contacts between non-polar side chains by intermolecular ones drive elastin self-assembly, it also helps the polypeptide chains of hydrophobic domains approach a state of maximal conformational disorder.\n\nRemarkably, our findings defy conventional wisdom about protein folding, aggregation, and disorder: (1) although the structure of the aggregated peptide chains is nearly maximally disordered, it is not random but instead contains well-defined and significantly-populated secondary structure elements in the form of hydrogen-bonded turns; (2) however, because these turns are local, sparse, and transient, the polypeptide backbone remains highly hydrated on average; as a result, (3) the hydrophobic side\u00a0chains cannot form a compact, water-excluding core even though they are significantly buried.\n\nThe detailed model of the liquid phase of proteins obtained here for elastin is of direct relevance to the self-assembly and mechanical properties of other self-assembled elastomeric proteins, with which elastin shares a high content in proline and glycine (Rauscher et al., 2006; Quiroz and Chilkoti, 2015). In addition, by uncovering the structural and physico-chemical basis for the phase separation of elastin, this study also provides a frame of reference for understanding the phase separation of other functional disordered proteins, including the FG-nucleoporins that compose the selectivity barrier of the nuclear pore complex (Patel et al., 2007) and low-complexity protein assemblies implicated in the intracellular phase separation of membraneless organelles (Toretsky and Wright, 2014; Nott et al., 2015; Elbaum-Garfinkle et al., 2015; Molliex et al., 2015; Feric et al., 2016; Brangwynne et al., 2015). The basic mechanism of self-assembly uncovered in the present study, which entails replacement of weak, degenerate intramolecular interactions by intermolecular ones, is likely to apply to other disordered proteins undergoing single-component phase separation.\n\n## Materials and methods\n\nAtomistic MD simulations with explicit water were performed on an elastin-like peptide (ELP), (GVPGV)7, successively as an isolated chain (single chain, SC) and an aggregate of twenty-seven chains (multi-chain, MC). This sequence, derived from a hydrophobic domain of chicken elastin, is the most extensively studied elastin repeat motif (Muiznieks et al., 2010). An accumulated simulation time of over 200 \u00b5s was required to reach statistical convergence. A description of simulation methods and structural analysis follows. We provide details of: MD simulations and analysis of the conformational ensembles, equilibration of the aggregate simulations, convergence of the simulations, and analysis of the interior/surface of the aggregate. A detailed description of the method used to model the random coil state is included as Supplementary file 1.\n\n### Simulation details\n\n#### Choice of force field\n\nThe CHARMM 22* force field (Piana et al., 2011) and the charmm-modified TIP3P model (Jorgensen et al., 1983; MacKerell et al., 1998) were used for the peptide and water, respectively. This combination of force fields was shown to produce conformational ensembles of an intrinsically disordered protein consistent with both SAXS and NMR measurements in an extensive force field comparison (Rauscher et al., 2015). This force field combination was also used in a landmark MD simulation study in which proteins of multiple structural classes were folded (Lindorff-Larsen et al., 2011). Recent studies of other intrinsically\u00a0disordered proteins using the same force field also demonstrated a good agreement between simulation results and NMR data (Stanley et al., 2014; Somavarapu and Kepp, 2015).\n\nIn earlier MD simulation studies, we computed conformational ensembles of the (GVPGV)7 peptide successively as a single chain (Rauscher and Pom\u00e8s, 2012; Rauscher et al., 2009; Rauscher et al., 2006; Rauscher and Pom\u00e8s, 2010b) and as an aggregate of eight chains (Rauscher and Pom\u00e8s, 2012; Rauscher, 2012) using the OPLS-AA/L force field (Kaminski et al., 2001) together with the TIP3P water model (Jorgensen et al., 1983). Detailed structural properties of the peptide such as hydrogen bonding, non-polar contacts, and hydration propensities differ quantitatively between the ensembles obtained with different force fields; in particular, both SC and MC conformational ensembles obtained using OPLS-AA/L are significantly more collapsed than their counterparts obtained using CHARMM 22*. Nevertheless, it should be noted that all of the qualitative conclusions of the present work regarding the structural and physico-chemical basis of elastin self-aggregation are robust to the differences between these force fields.\n\nTo further examine the dependence of our results, particularly as regards the compactness of the isolated peptide in water, on the choice of force field, we repeated some of the simulations with a different force field combination. Specifically, we performed 18 repeats of a 0.5-\u03bcs MD trajectory using CHARMM22* with TIP4P-D, a modified water force field proposed by Piana et al. to improve the hydration of disordered protein ensembles (Piana et al., 2015). This new set of simulations leads to a less-collapsed (GVPGV)7 monomer (Figure 1\u2014figure supplement 2) with size-scaling exponent 0.40, compared to the value of 0.28 obtained with the TIP3P water model (Figure 5\u2014figure supplement 3). We note that the TIP4P-D force field was observed to destabilize the native state of two folded proteins (Piana et al., 2015). As such, TIP4P-D may underestimate hydrophobic interactions in the hydrophobic IDP studied here. Nevertheless, the fact that the scaling exponent of our monomeric ELP obtained with TIP4P-D is still less than the ideal limit is consistent with hydrophobic collapse and the overall conclusions of the paper. Consistent with the analysis of hydrogen bonding and non-polar contacts with charmm-modified TIP3P (Figure 2), GVGV and VPGV \u03b2-turns are still the most populated structures in the ensemble obtained using TIP4P-D (Figure 2\u2014figure supplement 4). The main difference between the ensembles is a significant reduction in non-polar, non-local contacts in the TIP4P-D ensemble. We note that, despite quantitative differences in average structural properties, all of the qualitative conclusions of this work are consistent with the results of the additional simulations of the SC system carried out with CHARMM 22*/TIP4P-D.\n\n### Simulation of the single chain (SC) system\n\nThe (GVPGV)7 peptide was built in an extended conformation using the program UCSF Chimera (Pettersen et al., 2004). The simulation system consisted of the (GVPGV)7 peptide with neutral termini (-NH2 at the N-terminus and -COOH at the C-terminus) in a rhombic dodecahedral box with 10815 water molecules and 0.15M NaCl. All simulations were carried out using GROMACS version 4.6 (Hess et al., 2008). Periodic boundary conditions were applied. The box was sufficiently large such that no contacts occurred between periodic images. Energy minimization was carried out using the steepest descent algorithm. The short-range electrostatic interactions and Lennard-Jones interactions were evaluated using a cutoff of 9.5 \u00c5. Particle-mesh Ewald summation was used to calculate the long-range electrostatic interactions with a grid spacing of 1.2 \u00c5 and a fourth order interpolation (Essmann et al., 1995). The LINCS algorithm (Hess et al., 1997) was used to constrain covalent bonds and angles involving hydrogen atoms, and the SETTLE algorithm (Miyamoto and Kollman, 1992) was used to constrain bond lengths and angles of water molecules. Virtual sites were used (Feenstra et al., 1999), allowing the use of a 4 fs integration time step. The velocity rescaling thermostat was used for all MD simulations (Bussi et al., 2007). Equilibration simulations in the NPT ensemble were carried out for 10 ns using Berendsen pressure coupling (Berendsen et al., 1984) followed by 10 ns using the Parrinello-Rahman barostat (Parrinello and Rahman, 1981). The snapshot from this simulation with a volume closest to the average volume was then used for subsequent replica exchange (RE) (Sugita and Okamoto, 1999) simulations, which were carried out in the canonical ensemble. Sixty six temperatures between 298 K and 450 K were used. The chains are more expanded at higher temperatures (Figure 5\u2014figure supplement 2), which leads to enhanced sampling. Each replica performed \u223c0.5 \u00d7 106 attempted temperature jumps separated by 2 ps MD simulations. The total simulation time, including all temperatures, was 69.3 \u00b5s. Only the ensemble of conformations at 298 K was used for subsequent analysis. In addition to the replica exchange simulation, twenty 1 \u00b5s long simulations were carried out in the NPT ensemble at 298 K in order to carry out the analysis of chain dynamics and lifetimes of hydrogen-bonded turns. As described above, eighteen 0.5 \u00b5s simulations were carried out using the TIP4P-D water model (Piana et al., 2015) to further assess the dependence of the results on force field choice. All simulation parameters were kept the same, except that a larger simulation system with 16834 water molecules was used because the peptide is on average more expanded in the simulations with TIP4P-D than charmm-modified TIP3P.\n\n### Simulation of the multi-chain (MC) aggregated system\n\nThe system of aggregated peptides was built by selecting 27 conformations at random from the single chain simulations. These conformations were placed on a 3\u00d73\u00d73 grid, maximally separated. The concentration of the system was 102.9 mg/mL, which is higher than the concentration needed to observe aggregation of similar elastin peptides (Bellingham et al., 2001). Thirty three replicate simulations were carried out. For each of these simulations, different random starting conformations were used. The simulation system in each case contained 27 peptides,\u00a0~39000 water molecules, and 0.15 M NaCl. All simulation methods were the same as for the single chain system, except that replica exchange was not used. Instead, long (5 \u00b5s) simulations were carried out in the NPT ensemble\u00a0at 298 K using the Parrinello-Rahman barostat (following 5 ns of initial equilibration in the NVT ensemble). Including all replicate simulations, these production simulations were 165 \u00b5s in length.\n\n### Simulation of water\n\nIn order to compare the water coordination distribution of the hydration shell to that of bulk water, we performed a canonical MD simulation of bulk water at 298 K. The simulation system consisted of\u00a0~14000 water molecules in a rhombic dodecahedral box. The charmm-modified TIP3P model (Jorgensen et al., 1983; MacKerell et al., 1998) for water was used. Following 5 ns of equilibration using Berendsen pressure coupling (Berendsen et al., 1984), production simulations were carried out for 200 ns using the Parrinello-Rahman barostat (Parrinello and Rahman, 1981). All simulation parameters were identical to the other simulations. Two water molecules are considered to be coordinated if their oxygen-oxygen distance is less than 3.5 \u00c5 (Hummer et al., 1996).\n\n### Molecular visualizations, analysis and error estimation\n\nThe representations of conformations in Figures 1a, b, 3a and d, and Figure 3\u2014figure supplement 1 were creating using Visual Molecular Dynamics (VMD) (Humphrey et al., 1996). Refer to Supplementary file 1, Table S2 for definitions of all interactions in Figures 2 and 3. All reported estimates of standard error for the SC system were obtained using a blocking procedure (Flyvbjerg and Petersen, 1989). All reported estimates of standard error for the MC system are standard errors of the mean, obtained by considering the 33 independent MD simulations as 33 independent measurements of the property of interest.\n\n### Delineating the equilibration period of the aggregation simulations\n\nThe initial conformations for the MC simulations were selected at random from the replica exchange simulation of the single chain. These simulations begin with the 27 chains placed on a 3\u00d73\u00d73 grid. In the first part of the simulation, the chains associate to form an aggregate. The chains then rearrange within the aggregate to reach an equilibrium state. In order to delineate the equilibration phase of the simulation, we consider the running average of the radius of gyration and the total number of hydrogen bonds formed in the aggregate. This analysis of the collapse of the aggregates is provided in Figure 1\u2014figure supplement 1. We find that the equilibration period represents a significant fraction of the simulation (50%, 2.5 \u00b5s). This long equilibration period is due to the slow process of the chains expanding within the aggregate, as well as finding optimal packing. While the chains readily form aggregates (nanosecond timescale), chain expansion (approaching the ideal, unperturbed state) occurs on the microsecond timescale in these simulations (Figure 5\u2014figure supplement 1). Only the conformations accumulated after the equilibration period of each simulation are used for further structural analysis.\n\n### Convergence of the aggregation simulations\n\nThe results reported in Figures 1\u20136 are ensemble averages, which include the data from all 33 independent aggregation simulations. We also provide snapshots of the final conformation of 5 of the MC simulations (Figure 3\u2014figure supplement 1), as well as hydrogen bonding and non-polar contact maps of each of the 33 replicates (Figure 2\u2014figure supplements 2 and 3), which demonstrate that each of the individual simulations also exhibits similar structural properties compared to the average results reported in the main text. That is, each of the independent simulations also has similar conformational properties as the entire ensemble.\n\nLong simulations of the aggregate were needed because of the slowed dynamics of interacting chains. To assess the degree to which chain dynamics were slowed upon aggregation, we analyzed the kinetics of end-to-end contact formation. The ends of the polypeptide chain are defined as being in contact if the C- and N- terminus are within a distance of 6 \u212b of each other. The lifetime of the open state was computed using the method outline by Yeh and Hummer (Yeh and Hummer, 2002). The survival probability for the SC and MC chains are shown in Figure 6. The lifetime of the open state is 21\u00a0\u00b1\u00a01 ns and 1140\u00a0\u00b1\u00a030 ns for the SC and MC systems, respectively.\n\n### Analysis of the interior/surface of the aggregate\n\nTo assess whether or not there is a clear distinction between the interior and the surface of the aggregate, we computed the number of contacts between blob-sized segments of the chain and water molecules (Figure 3\u2014figure supplement 2b). As a control, we carried out the same analysis for blob-sized segments in the single\u00a0chain system. Consistent with Das and Pappu (Das and Pappu, 2013) and Pappu et al (Pappu et al., 2008)., we use a blob size of 5 residues (Figure 3\u2014figure supplement 2a). This number corresponds to the spacing between proline residues in the ELP sequence. Note that the fits to the scaling profiles in Figure 5 were carried out for |i-j|\u00a0>\u00a05 because the length of a blob-sized segment was found to be five residues, and the distance scaling within a blob differs from that outside of a blob.\n",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d0662268-e4c1-4085-b5ea-f9c5e04f2b43",
+      "submission_id": "229c01ed-47ac-4a92-b135-7a50d80c81c5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gerhard Hummer, Max Planck Institute of Biophysics Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26526.027](https://doi.org/10.7554/eLife.26526.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The Liquid Structure of Elastin\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Robert Best (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper uses molecular simulations to study the properties of elastin. In extensive simulations of elastin fragments with a simple repeat sequence, the authors find that the peptides are disordered and self-associate to form a dense protein-rich phase. This appears to be the first study that uses all-atom simulations to tackle the formation of liquid-like protein aggregates. The results support many of the features of elastin determined experimentally such as formation of local turn structure, but do not support an overall ordered aggregate which had been proposed in the past. Instead, individual peptides are still able to diffuse, albeit slowly.\n\nIn their reports, the three reviewers raise a number of serious concerns. The main criticisms are that (1) the simulation systems are highly simplified and may not adequately capture all relevant properties of real elastin, (2) the significance of the results is not clear because important negative controls and reference simulations are missing, (3) possible force field issues are not assessed, and (4) the comparison to experiment is weak. A detailed list of the criticisms follows below. These points would have to be addressed in a revision.\n\nEssential revisions:\n\n1) The simulation systems are highly simplified and may not adequately capture all relevant properties of real elastin. Peptides with a simple repeat sequence (VPGVG)7 are studied. Whereas the pentapeptide and related polypentapeptides have been accepted as suitable mimics for the extensive hydrophobic regions of elastin, it is important to discuss the advantages and possible drawbacks and limitations stemming from the choice of sequence. Of particular concern is the fact that the native protein is largely characterized by alternating hydrophobic and crosslinking domains. Although the hydrophobic domains have sequences similar to the model of this study, they are usually flanked by crosslinking domains that have at least partial \u03b1-helical character. As such, it would appear rather unlikely that 27 hydrophobic domains in the native protein would form an aggregate like the one used here.\n\n2) The significance of the results is not clear because important negative controls are missing. Wouldn't any concentrated solution of peptides with a roughly similar sequence composition behave in the same way, i.e., form a solvated blob? It would help to contrast the elastin results to simulations of IDP peptide fragments that do not aggregate and of IDPs that form \"solid\" aggregates in simulations using a similar protocol. In particular, is the extent of hydration in the core of the elastin bundle significantly higher than for other aggregating peptides? The authors mention silk and amyloid as two extremes of hydrated and solid aggregates. There are even reports in the literature that show a tendency to fibrillize (Fred W. Keeley, Catherine M. Bellingham and Kimberley A. Woodhouse, Philosophical Transactions: Biological Sciences, Vol. 357, No. 1418, Elastomeric Proteins: Structures, Biomechanical Properties and Biological Roles (Feb. 28, 2002), pp. 185- 189).\n\n3) The choice of force field seems problematic, because it has been reported to favor overly compact structures in other systems. See e.g. Figure 1 in Piana et al., Curr. Opin. Struct. Biol. v24, p98, 2014, where the scaling of Rg with number of residues comes close to the one-third power, whereas most protein chains in water are closer to ideal chain scaling. Now elastin is quite hydrophobic, so it is possible that all is fine and it should be collapsed anyway, but it would be good to have some discussion of this issue and maybe a comparison with experiments which show that the elastin monomer behavior is reasonable.\n\n4) The comparison to experiment is rather weak and qualitative at best, and therefore should be strengthened. For instance, can the simulations be related quantitatively to the neutron scattering experiments in Perticaroli et al., 2015? In light of the considerable force field issues in IDP simulations (well documented by work also of the authors!), it is very important to have experimental support. Comparisons to specific experiments should be performed in a way that could, at least in principle rule out, this and/or other models.\n",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a46a74d7-cf26-4cb4-9d53-fbf1a8feff19",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C1",
+      "claim": "Elastin imparts extensibility, elastic recoil, and resilience to tissues including arterial walls, skin, lung alveoli, and the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein elastin imparts extensibility, elastic recoil, and resilience to tissues including arterial walls, skin, lung alveoli, and the uterus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biological function of elastin, drawing from general scientific knowledge about this protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "9953f7fa-ed74-4ae7-a3c4-4dfa9ff1489d",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C2",
+      "claim": "Elastin and elastin-like peptides are hydrophobic, disordered, and undergo liquid-liquid phase separation upon self-assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Elastin and elastin-like peptides are hydrophobic, disordered, and undergo liquid-liquid phase separation upon self-assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and is consistent with the simulation results presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "02492893-dd28-435c-8217-f10fe51018af",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C3",
+      "claim": "The aggregated state of elastin-like peptides is stabilized by the hydrophobic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the entropic nature of elastic recoil, the aggregated state is stabilized by the hydrophobic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation data showing increased non-polar contacts and decreased hydration of side chains upon aggregation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "e0204075-fa16-40c6-b081-a7dc89e48b3b",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C4",
+      "claim": "Self-assembly of elastin-like peptides does not entail formation of a hydrophobic core.",
+      "claim_type": "EXPLICIT",
+      "source": "However, self-assembly does not entail formation of a hydrophobic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data showing significant backbone hydration even in the aggregated state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "a0224302-aa8e-45ce-87fd-352cdbf14894",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C5",
+      "claim": "The polypeptide backbone of elastin-like peptides forms transient, sparse hydrogen-bonded turns.",
+      "claim_type": "EXPLICIT",
+      "source": "The polypeptide backbone forms transient, sparse hydrogen-bonded turns and remains significantly hydrated even as self-assembly triples the extent of non-polar side chain contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the simulation data presented in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "6e4d57d4-a2ec-4986-a86a-88b69f844da3",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C6",
+      "claim": "Self-assembly triples the extent of non-polar side chain contacts in elastin-like peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The polypeptide backbone forms transient, sparse hydrogen-bonded turns and remains significantly hydrated even as self-assembly triples the extent of non-polar side chain contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitatively supported by the data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "92df0551-50b6-4540-86b2-83cf859e1eb7",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C7",
+      "claim": "Individual chains in the elastin-like peptide assembly approach a maximally-disordered, melt-like state.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual chains in the assembly approach a maximally-disordered, melt-like state which may be called the liquid state of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the scaling analysis in Figure 5 showing that the aggregated chains approach the ideal random coil dimensions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "425b94de-61e4-4b05-b95d-d3657e1d8efd",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C8",
+      "claim": "Elastic fibres are subject to minimal turnover during a lifetime and are highly durable under repetitive physiological strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Elastic fibres are subject to minimal turnover during a lifetime and are highly durable under repetitive physiological strain (Shapiro et al., 1991; Davis, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "0867f80b-7053-44f2-b17e-845a8c802082",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C9",
+      "claim": "Elastic fibres in the arterial wall enable the tissue to undergo over two billion cycles of extension and relaxation to smooth the flow of blood down the arterial tree, largely without mechanical failure.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, elastic fibres in the arterial wall enable the tissue to undergo over two billion cycles of extension and relaxation to smooth the flow of blood down the arterial tree, largely without mechanical failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established physiological knowledge about arterial elastin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "98f3bb4d-d6ac-4152-b442-f36c36e56415",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C10",
+      "claim": "Tropoelastin is a 60 kDa modular protein composed of alternating hydrophobic and cross-linking domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Tropoelastin is a 60 kDa modular protein composed of alternating hydrophobic and cross-linking domains (Muiznieks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "927b65b1-4b91-4c70-b116-85aadcbdfd80",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C11",
+      "claim": "The hydrophobic domains of tropoelastin confer the propensities for self-assembly and elastic recoil.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both types of domains contribute to the proper supramolecular assembly and the mechanical properties of the polymeric elastin network, the cross-linking domains are understood to bestow cohesiveness and durability to the material, whereas the hydrophobic domains confer the propensities for self-assembly and elastic recoil (Rauscher and Pom\u00e8s, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "a9422456-bc5e-42e8-a08e-cea2e1fe935d",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C12",
+      "claim": "Solutions of tropoelastin and elastin-like peptides self-aggregate via liquid-liquid phase separation upon increasing temperature, a process known as coacervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Solutions of tropoelastin and elastin-like peptides (ELPs) self-aggregate via liquid-liquid phase separation upon increasing temperature, a process known as coacervation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the behavior of elastin-like peptides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "73b73e0e-c3f4-4547-8c50-0c19c5b68e23",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C13",
+      "claim": "Coacervation of tropoelastin and elastin-like peptides has been shown to be primarily driven by the self-association of hydrophobic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This process has been shown to be primarily driven by the self-association of hydrophobic domains (Muiznieks et al., 2010; Urry et al., 1974; Bellingham et al., 2001; Toonkool et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "060b4c9e-0e43-44b7-aa86-3a44a6177389",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C14",
+      "claim": "The capacity for temperature-controlled self-assembly make elastin-like peptides well-suited for biomaterials applications and drug delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "The capacity for temperature-controlled self-assembly make elastin-like peptides well-suited for biomaterials applications (Almine et al., 2010) and drug delivery (Shi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on applications of elastin-like peptides.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "6c054bb3-a750-45e9-8f0b-132f0840f428",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C15",
+      "claim": "Neither the molecular basis of self-assembly nor the structure of the self-assembled state of elastin are known despite eighty years of study.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the biological importance of elastin and eighty years of study using a myriad of biophysical techniques (Meyer and Ferri, 1937), neither the molecular basis of self-assembly nor the structure of the self-assembled state are known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, supported by a historical citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "cfec6956-4f39-47da-a5fb-b309e810f2aa",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C16",
+      "claim": "Numerous structural models of elastin have been proposed, which span a range from highly-ordered to maximally-disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous structural models of elastin have been proposed, which span a range from highly-ordered (Venkatachalam and Urry, 1981) to maximally-disordered (Hoeve and Flory, 1958; Flory, 1974) and emphasize either the hydrophobic effect (Venkatachalam and Urry, 1981; Weis-Fogh and Anderson, 1970; Gray et al., 1973; Li et al., 2001a) or conformational entropy (Hoeve and Flory, 1958; Flory, 1974; Dorrington et al., 1975) as the dominant contribution to the elastic recoil force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous models in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "32221e8c-9d5d-4c2c-b077-dee192a83bbd",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C17",
+      "claim": "The random network model postulates that elastin's structure is an isotropic, rubber-like polymer network consisting of cross-linked, random chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on thermoelasticity measurements indicating that elastin's recoil force is almost entirely entropic, Hoeve and Flory postulated that elastin's structure is an isotropic, rubber-like polymer network consisting of cross-linked, random chains (Hoeve and Flory, 1958; Flory, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a historical model supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "7791250e-f860-4c04-b330-d4e3090dc3b4",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C18",
+      "claim": "Thermoelasticity measurements on elastin samples were carried out using alcohol diluents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, thermoelasticity measurements on elastin samples were carried out using alcohol diluents (Hoeve and Flory, 1958; Flory, 1974; Dorrington and McCrum, 1977; Andrady and Mark, 1980) and therefore rely on the assumption that alcohols do not significantly perturb the structure of elastin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "ac9c14aa-cad9-4bc1-8ec3-0e7b6702ec50",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C19",
+      "claim": "The validity of the assumption that alcohols do not significantly perturb the structure of elastin has been questioned.",
+      "claim_type": "EXPLICIT",
+      "source": "The validity of this assumption has been questioned (Weis-Fogh and Anderson, 1970; Ellis and Packer, 1976; Gosline, 1978; Chalmers et al., 1999) because the sequence composition of elastin is unusually enriched in hydrophobic residues, which likely interact with alcohols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research questioning the methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "a93bed57-0b7e-490d-b4d2-77007c4ee201",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C20",
+      "claim": "The \u03b2-spiral model consists of repeated \u03b2-turns.",
+      "claim_type": "EXPLICIT",
+      "source": "Several models were proposed in which non-polar side chains are arranged to exclude water molecules; the most ordered of these models is the \u03b2-spiral, which consists of repeated \u03b2-turns (Venkatachalam and Urry, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a historical model supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "8f380d85-8522-4f77-a0d7-5555a63804c9",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C21",
+      "claim": "The \u03b2-spiral model has been shown to be unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "While the \u03b2-spiral model has been shown to be unstable (Li et al., 2001a) spectroscopic data are consistent with the presence of \u03b2-turns (Muiznieks et al., 2010; Tamburro et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous computational and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "1b517dd7-186a-4db4-aff5-04c4247fd83f",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C22",
+      "claim": "Spectroscopic data are consistent with the presence of \u03b2-turns in elastin.",
+      "claim_type": "EXPLICIT",
+      "source": "While the \u03b2-spiral model has been shown to be unstable (Li et al., 2001a) spectroscopic data are consistent with the presence of \u03b2-turns (Muiznieks et al., 2010; Tamburro et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous spectroscopic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "e43bca6c-3e58-4fa0-b1da-747fdf3d3039",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C23",
+      "claim": "The conformational heterogeneity and self-association of elastin have impeded crystallographic and spectroscopic investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational heterogeneity and self-association of elastin have impeded crystallographic and spectroscopic investigations and present a significant sampling challenge to molecular simulations (Rauscher and Pom\u00e8s, 2010a; Rauscher et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental challenges supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "64f7e280-fee7-41c7-bfca-a4227ffe2fd4",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C24",
+      "claim": "Attaining statistically-converged sampling of disordered elastin-like peptides necessitates simulation times in the microsecond time-range.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we have shown that attaining statistically-converged sampling of disordered elastin-like peptides necessitates simulation times in the microsecond time-range (Rauscher et al., 2009; Rauscher and Pom\u00e8s, 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous computational work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "ad6e2b5e-2f27-4a2f-9795-154d84764151",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C25",
+      "claim": "Cross-linking domains do not undergo coacervation on their own and are not required for coacervation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although cross-linking domains are required to form elastomeric materials, they do not undergo coacervation on their own and are not required for coacervation (Urry et al., 1974; Bellingham et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "42628655-6e98-48db-a13f-f057dc9b6a1f",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C26",
+      "claim": "Peptides based on GVPGV and other repetitive motifs from the hydrophobic domains of tropoelastin have been shown to coacervate in the absence of cross-linking domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptides based on GVPGV and other repetitive motifs from the hydrophobic domains of tropoelastin have been shown to coacervate in the absence of cross-linking domains (Urry et al., 1974; Miao et al., 2003; Muiznieks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "84270b23-6b3e-401d-b3c0-f33a9f933aed",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C27",
+      "claim": "The average radius of gyration is higher for aggregated chains than for the single chain in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only is the average radius of gyration, Rg, higher for aggregated chains, the variance of Rg is also larger, indicative of a more heterogeneous underlying conformational ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "763b7c84-6d72-4f34-9877-25624017ea51",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C28",
+      "claim": "The variance of radius of gyration is larger for aggregated chains, indicative of a more heterogeneous underlying conformational ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only is the average radius of gyration, Rg, higher for aggregated chains, the variance of Rg is also larger, indicative of a more heterogeneous underlying conformational ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 1a and represents an inference about conformational heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "87f1a9a6-6a7a-4e10-b1a1-f96c480c8f1c",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C29",
+      "claim": "Elastin fibres are optically isotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "High conformational disorder in the aggregate is corroborated by multiple, independent experimental observations on elastin: elastin fibres are optically isotropic (Aaron and Gosline, 1980); the backbone carbonyl order parameter is less than 0.1 (Pometun et al., 2004); carbon chemical shifts are consistent with random coil secondary structure (Pometun et al., 2004); and neutron scattering experiments show that the polypeptide chains in elastin are highly mobile (Perticaroli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "a6b5cc3a-9e36-47c5-b343-85cee87d7349",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C30",
+      "claim": "The backbone carbonyl order parameter of elastin is less than 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "High conformational disorder in the aggregate is corroborated by multiple, independent experimental observations on elastin: elastin fibres are optically isotropic (Aaron and Gosline, 1980); the backbone carbonyl order parameter is less than 0.1 (Pometun et al., 2004); carbon chemical shifts are consistent with random coil secondary structure (Pometun et al., 2004); and neutron scattering experiments show that the polypeptide chains in elastin are highly mobile (Perticaroli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "1c7a813c-5c7e-41b1-b4d4-8c90b4a3d9a1",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C31",
+      "claim": "Carbon chemical shifts of elastin are consistent with random coil secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "High conformational disorder in the aggregate is corroborated by multiple, independent experimental observations on elastin: elastin fibres are optically isotropic (Aaron and Gosline, 1980); the backbone carbonyl order parameter is less than 0.1 (Pometun et al., 2004); carbon chemical shifts are consistent with random coil secondary structure (Pometun et al., 2004); and neutron scattering experiments show that the polypeptide chains in elastin are highly mobile (Perticaroli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "5375256e-d6ea-4992-9061-b44ea4903714",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C32",
+      "claim": "Neutron scattering experiments show that the polypeptide chains in elastin are highly mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "High conformational disorder in the aggregate is corroborated by multiple, independent experimental observations on elastin: elastin fibres are optically isotropic (Aaron and Gosline, 1980); the backbone carbonyl order parameter is less than 0.1 (Pometun et al., 2004); carbon chemical shifts are consistent with random coil secondary structure (Pometun et al., 2004); and neutron scattering experiments show that the polypeptide chains in elastin are highly mobile (Perticaroli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "10f2997e-69a1-4da2-8390-8dd4d6f57d90",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C33",
+      "claim": "The most populated structures in elastin-like peptides are VPGV and GVGV \u03b2-turns.",
+      "claim_type": "EXPLICIT",
+      "source": "The most populated structures are VPGV and GVGV \u03b2-turns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "ca53ea20-948d-4164-bd9b-66290986a3ef",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C34",
+      "claim": "The propensity of VPGV and GVGV \u03b2-turns peaks at 20% and is remarkably well conserved upon aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "The propensity of each of these local interactions, which peaks at 20%, is remarkably well conserved upon aggregation (Table 1), while the total number of peptide-peptide hydrogen bonds per chain increases only moderately (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "8b4c563b-87fa-444e-a13d-7de12aeb7a14",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C35",
+      "claim": "The total number of peptide-peptide hydrogen bonds per chain increases only moderately upon aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "The propensity of each of these local interactions, which peaks at 20%, is remarkably well conserved upon aggregation (Table 1), while the total number of peptide-peptide hydrogen bonds per chain increases only moderately (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "528e902b-8b82-417e-96ad-8943bb09aeb9",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C36",
+      "claim": "The \u03b2-spiral requires that repeated \u03b2-turns be formed simultaneously, which is never observed in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This evidence for fluctuating \u03b2-turns is consistent with spectroscopic data (Muiznieks et al., 2010; Tamburro et al., 2003) but not with the \u03b2-spiral, a highly-ordered structural model of elastin which requires that repeated \u03b2-turns be formed simultaneously, (Venkatachalam and Urry, 1981) which is never observed in the simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "edf19a79-681d-4cae-b0ac-b522afadaf16",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C37",
+      "claim": "The simulation results reconcile spectroscopic evidence for local secondary structure with global conformational disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our results reconcile spectroscopic evidence for local secondary structure (Muiznieks et al., 2010; Tamburro et al., 2003; Ohgo et al., 2012) with global conformational disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation data and comparison with cited experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "58186e34-e426-4d52-b966-80f28b81ceb9",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C38",
+      "claim": "Upon aggregation, local structure propensities are retained as non-local hydrophobic contacts become intermolecular contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Even as it preserves local structural propensities, self-aggregation results in the replacement of non-local intramolecular interactions by intermolecular interactions (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "0fb1da38-838a-4102-8fa9-84a84e57298c",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C39",
+      "claim": "The bulky valine side chains contribute over 70% to all non-polar contacts in the monomeric and assembled states.",
+      "claim_type": "EXPLICIT",
+      "source": "In this process, the bulky valine side chains contribute over 70% to all non-polar contacts in the monomeric and assembled states (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "52b251b4-78a9-46be-9a09-bd4a058cff14",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C40",
+      "claim": "The hydrophobic effect strongly contributes to the formation and the structure of the elastin-like peptide aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of non-polar contacts per chain nearly triples upon self-assembly (Figure 2f) with a commensurate decrease in the hydration of non-polar sidechains (Figure 3b), indicating that the hydrophobic effect strongly contributes to the formation and the structure of the aggregate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation data shown in Figures 2f and 3b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "47e88000-99fa-4729-afd2-e318612541d1",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C41",
+      "claim": "Significant hydrophobic burial is achieved in elastin-like peptides even in the absence of a well-ordered structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to these models, however, significant hydrophobic burial is achieved even in the absence of a well-ordered structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation data showing increased non-polar contacts without ordered structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "cae2611d-a612-4434-a6db-8e2af89458d2",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C42",
+      "claim": "Water molecules remain within the elastin-like peptide aggregate to satisfy the hydrogen bonding requirements of backbone groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there is only a moderate amount of secondary structure, a majority of backbone peptide groups do not form peptide-peptide hydrogen bonds (Figure 2c). Instead, water molecules remain within the aggregate (Figure 3a,d,e, Figure 4) in order to satisfy the hydrogen bonding requirements of backbone groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation data shown in Figures 2c, 3, and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "611c5908-c7b6-49e2-a9fe-1c06feef5b1b",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C43",
+      "claim": "There is little loss of backbone hydration upon peptide self-assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, there is little loss of backbone hydration upon peptide self-assembly (Figure 3c), even as the side chains become dehydrated (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "631138bb-db8f-4cbb-ac46-c7cede8c5b69",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C44",
+      "claim": "The water content of the elastin-like peptide aggregate is 40.0 \u00b1 0.2% by mass.",
+      "claim_type": "EXPLICIT",
+      "source": "The high degree of hydration of the aggregate (40.0 \u00b1 0.2% water content by mass, based on the number of water molecules hydrogen-bonded to the peptide) is consistent with experimental measurements of water content between 40% and 60% for elastin derived from various species (Chalmers et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly calculated from the simulation data and compared with cited experimental measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "f122c39f-ece0-4284-a89c-dc3c3608a4db",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C45",
+      "claim": "Experimental measurements show water content between 40% and 60% for elastin derived from various species.",
+      "claim_type": "EXPLICIT",
+      "source": "The high degree of hydration of the aggregate (40.0 \u00b1 0.2% water content by mass, based on the number of water molecules hydrogen-bonded to the peptide) is consistent with experimental measurements of water content between 40% and 60% for elastin derived from various species (Chalmers et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "56eaa0ab-db8b-4510-acff-b26a8efa5265",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C46",
+      "claim": "The probability of any five-residue segment to be completely dehydrated is essentially zero in both the monomer and the aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the water content of both the monomer and the aggregate is so high that the probability of any five-residue segment to be completely dehydrated is essentially zero (Figure 3\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 3\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "c44c17dc-41dd-4392-aed5-be27c8e1d270",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C47",
+      "claim": "Both the monomer and the aggregate of elastin-like peptides lack a water-excluding hydrophobic core.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly indicate that both systems lack a water-excluding hydrophobic core, a consequence of the high degree of conformational disorder and lack of extended secondary structure imparted by the high proline and glycine content (Rauscher et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation data and supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "57b3e8f9-98f5-4f0c-a4be-1aaeb15db6a0",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C48",
+      "claim": "The interior of the elastin-like peptide aggregate is homogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a plateau in water density indicates that the interior of the aggregate is homogeneous and that the aggregate is large enough to lead to the emergence of bulk-like properties expected of a separate liquid phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the density profile data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "c680aca2-c013-4871-8efd-e075d6f4d505",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C49",
+      "claim": "The elastin-like peptide aggregate is large enough to lead to the emergence of bulk-like properties expected of a separate liquid phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a plateau in water density indicates that the interior of the aggregate is homogeneous and that the aggregate is large enough to lead to the emergence of bulk-like properties expected of a separate liquid phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the density profile data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "8559e471-8ce0-4be8-910b-c02e05b742fc",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C50",
+      "claim": "The Flory theorem states that in the liquid, phase-separated state, the polymer chains make extensive interactions with one another and become their own \u03b8-solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "The Flory theorem states that in the liquid, phase-separated state, the 'polymer melt', the polymer chains make extensive interactions with one another and become their own \u03b8-solvent, since intramolecular and intermolecular interactions are chemically indistinguishable; as a result of which the chains reach a state of maximal disorder. (Flory, 1953; Flory, 1969; Flory, 1949)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of polymer theory supported by citations to Flory's work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "42d2ec95-420a-4e93-8198-9f66b93d20ce",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C51",
+      "claim": "The internal distance scaling profile for the Flory model of the ideal state is fit by a power law with exponent \u03b1 = 0.54.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal distance scaling profile for the Flory model of the ideal state is fit by a power law with exponent \u03b1 = 0.54, which is very similar to the expected dimensions of an ideal Flory random coil homopolymer, for which \u03b1 = 0.5 (Flory, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly calculated from the simulation data using the Flory model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "bdf4a61c-af8d-4dfb-8eb1-5632c49c0457",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C52",
+      "claim": "The dimensions of the chains in the elastin-like peptide aggregate have an exponent \u03b1 = 0.46.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dimensions of the chains in the aggregate, with an exponent \u03b1 = 0.46, closely approach the ideal limit as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly calculated from the simulation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "63050d82-a671-41b1-8697-e17987cc6d39",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C53",
+      "claim": "The dimensions of the ensemble in solution have an exponent of \u03b1 = 0.28, consistent with those of a polymer in a poor solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the dimensions of the ensemble in solution, with an exponent of \u03b1 = 0.28, are consistent with those of a polymer in a poor solvent, for which \u03b1 = 1/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly calculated from the simulation data shown in Figure 5 and compared with polymer theory.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "da87f986-520d-4b23-992d-6b11048157f0",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C54",
+      "claim": "Water is a poor solvent for hydrophobic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is expected, given the highly hydrophobic composition of the ELP sequence, and the fact that water is a poor solvent for hydrophobic residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in physical chemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "b75a746d-b950-403b-b3fd-60c68700333f",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C55",
+      "claim": "The dimensions of the chains in the elastin-like peptide aggregate approach the dimensions predicted for maximally-disordered chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimensions of the chains in the ELP aggregate approach the dimensions predicted for maximally-disordered chains (Figure 5), and therefore the dimensions expected in a polymer melt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the scaling analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "c82a38f7-06cf-4f94-af73-6918d5bc10d5",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C56",
+      "claim": "Elastin and polypeptide chains in general cannot make polymer melts in the idealized, solvent-excluding sense because backbone groups must form hydrogen bonds either with each other or with water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that elastin\u2014and polypeptide chains in general\u2014cannot make polymer melts in the idealized, solvent-excluding sense because backbone groups must form hydrogen bonds either with each other, which leads to ordering, or with water molecules, whose presence is required for disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and general principles of protein chemistry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "3d79ca9a-300c-413f-a1e2-4ade4e07d92a",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C57",
+      "claim": "Conformational disorder increases significantly upon aggregation of elastin-like peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the dimensions of chains within the aggregate are much closer to the ideal state than the single chain in solution indicates that conformational disorder increases significantly upon aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the scaling analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "07b843cc-9ed8-4ee6-a393-3f626bf328e0",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C58",
+      "claim": "The populations and lifetimes of the hydrogen-bonded turns are nearly identical for both single chain and multi-chain systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these large global structural differences, the ensembles strongly resemble each other in terms of local secondary structure: the populations and lifetimes of the hydrogen-bonded turns are nearly identical for both SC and MC systems (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "0ee2231e-2eae-462e-87cc-6bc8dede33dc",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C59",
+      "claim": "The lifetime of the open state increases more than fifty times upon aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the lifetime of the open state (defined as the N- and C-termini not being in contact) increases more than fifty times upon aggregation (21 \u00b1 1 ns vs. 1140 \u00b1 30 ns in the SC and MC systems, respectively; Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "912520d7-e3d1-4015-a54a-fbe8ebf3f3f6",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C60",
+      "claim": "The central residue of elastin-like peptide chains exhibits anomalous diffusion with mean-square displacement obeying a power law with exponent \u03b1 = 0.58.",
+      "claim_type": "EXPLICIT",
+      "source": "This residue exhibits anomalous diffusion (or sub-diffusion), with its mean-square displacement obeying a power law with exponent \u03b1 = 0.58.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly calculated from the simulation data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "242f70d4-bd53-4b66-8e0f-7446a05ef130",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C61",
+      "claim": "The conformational ensemble of the hydrophobic domain presented in this study is consistent with NMR results both qualitatively and quantitatively.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational ensemble of the hydrophobic domain presented in this study is consistent with the NMR results both qualitatively and quantitatively: (i) the peptides are disordered both before and after phase separation; (ii) the secondary structure in the hydrophobic domains consists primarily of sparse and transient \u03b2-turns in the VPGV and GVGV repeats, whose population was estimated to be in the range 20\u201340%, compared to our estimate of 16\u201320%; (iii) this secondary structure does not change significantly upon phase separation; (iv) phase separation entails formation of non-specific, intermolecular hydrophobic contacts; and (v) the protein-rich liquid phase is significantly hydrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the simulation results with cited NMR data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "2f27d2b3-2b26-4403-9844-c168546e84ee",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C62",
+      "claim": "The majority of IDPs have a high charge content and low sequence hydrophobicity, which allows them to avoid self-aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, the majority of IDPs have a high charge content and low sequence hydrophobicity, which allows them to avoid self-aggregation (Uversky et al., 2000), whereas elastin, because of its high content of hydrophobic residues, undergoes self-aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research on IDP properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "c31de260-076a-4279-90fb-400c4d552f64",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C63",
+      "claim": "Elastin undergoes self-aggregation because of its high content of hydrophobic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, the majority of IDPs have a high charge content and low sequence hydrophobicity, which allows them to avoid self-aggregation (Uversky et al., 2000), whereas elastin, because of its high content of hydrophobic residues, undergoes self-aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sequence composition of elastin and general principles of protein aggregation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d7dc15ad-e858-443c-ac1b-84848e46614e",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C64",
+      "claim": "The amino acid composition of elastin precludes both folding and amyloid formation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, unfolded or misfolded proteins are prone to form ordered amyloid aggregates, but the amino acid composition of elastin precludes both folding and amyloid formation (Rauscher et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "b42a13d2-b559-46ec-bd8a-6bd34b0c1ebb",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C65",
+      "claim": "Maintaining both disorder and hydration upon aggregation is crucial for elastic recoil.",
+      "claim_type": "EXPLICIT",
+      "source": "While maintaining both disorder and hydration upon aggregation is crucial for elastic recoil, it is equally important that elastin and other self-assembled elastomeric proteins avoid the formation of the cross-\u03b2-structure characteristic of amyloid fibrils (Rauscher et al., 2006), which are postulated to be a thermodynamically stable state for any polypeptide chain under appropriate solution conditions (Dobson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and cited previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "3b79eb44-2a27-47b9-9c77-b66aceb0268f",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C66",
+      "claim": "Amyloid fibrils are postulated to be a thermodynamically stable state for any polypeptide chain under appropriate solution conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While maintaining both disorder and hydration upon aggregation is crucial for elastic recoil, it is equally important that elastin and other self-assembled elastomeric proteins avoid the formation of the cross-\u03b2-structure characteristic of amyloid fibrils (Rauscher et al., 2006), which are postulated to be a thermodynamically stable state for any polypeptide chain under appropriate solution conditions (Dobson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "88d65f1c-6a36-420c-887d-00e52c6c790a",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C67",
+      "claim": "The liquid-like structure of elastin is incompatible with both protein folding and the formation of amyloid.",
+      "claim_type": "EXPLICIT",
+      "source": "The liquid-like structure of elastin is incompatible with both protein folding and the formation of amyloid, and it is achieved through a high combined proportion of proline and glycine residues (Rauscher et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and cited previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "cdefc111-67d4-48ed-8a96-8ffca0a94651",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C68",
+      "claim": "Both proline and glycine inhibit the formation of \u03b1-helix and \u03b2-sheet structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Both proline, with its fixed \u03c6 dihedral angle and absence of amide hydrogen, and glycine, with its high entropic penalty for conformational confinement, inhibit the formation of \u03b1-helix and \u03b2-sheet structure, and serve to maintain a high degree of hydration and structural disorder by preventing the formation of a compact, water-excluding core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of amino acid properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d342607e-ad9a-46b3-9c41-cf398f15f031",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C69",
+      "claim": "The essential role of proline and glycine in governing disorder, hydration, and elasticity extends to many other self-assembled elastomeric proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The essential role of proline and glycine in governing disorder, hydration, and elasticity was shown to extend to many other self-assembled elastomeric proteins (Rauscher et al., 2006), a finding corroborated by a recent study of an array of proline- and glycine-rich disordered proteins (Quiroz and Chilkoti, 2015) as well as by studies of various classes of spider silks (Savage and Gosline, 2008a; Savage and Gosline, 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "924ec2f6-63e3-4bcd-a7ab-36942cc1ad2b",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C70",
+      "claim": "Both the hydrophobic effect and conformational entropy are expected to contribute to elastic recoil of elastin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both the hydrophobic effect and conformational entropy are expected to contribute to elastic recoil, reconciling the random coil and liquid drop models of elasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and polymer theory.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "395b5be2-0dc4-4b3e-9c38-760cd52569f8",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C71",
+      "claim": "The present study provides the first atomistic description of a melt-like, disordered protein state.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study provides the first atomistic description of a melt-like, disordered protein state, which may be called the liquid state of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work based on the simulation data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d06bcfac-0529-432a-b6b1-07aaec1fd2a4",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C72",
+      "claim": "The model of elastin-like aggregates derived here represents the first detailed model of a protein coacervate.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of elastin-like aggregates derived here represents the first detailed model of a protein coacervate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work based on the simulation data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "117d8a67-4fb7-473e-a899-ca85796e3c91",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C73",
+      "claim": "Peptide aggregation is driven at least in part by the hydrophobic effect, which results in a three-fold increase in burial of non-polar groups for each polypeptide chain compared to the monomeric form.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide aggregation is driven at least in part by the hydrophobic effect, which results in a three-fold increase in burial of non-polar groups for each polypeptide chain compared to the monomeric form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "2ad9a4de-995e-47a4-9109-d71c5489833a",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C74",
+      "claim": "In the elastin-like peptide aggregate, the individual polypeptide chains approach a state of maximal conformational disorder as predicted by the Flory theorem.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aggregate, the individual polypeptide chains approach a state of maximal conformational disorder as predicted by the Flory theorem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the scaling analysis shown in Figure 5 and comparison with polymer theory.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "fa6e960e-1d4b-4393-a663-056c7829c6fc",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C75",
+      "claim": "The biological function of elastin is incompatible with a unique, ordered structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological function of elastin is incompatible with a unique, ordered structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and the known function of elastin.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "8fc1df27-e475-4863-9dab-fbcfe1491250",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C76",
+      "claim": "In the functional state, elastin's hydrophobic domains form a water-swollen, disordered aggregate characterized by an ensemble of many degenerate conformations with significant backbone hydration and fluctuating local secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the functional state, its hydrophobic domains form a water-swollen, disordered aggregate characterized by an ensemble of many degenerate conformations with significant backbone hydration and fluctuating local secondary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "ce15e9c8-d0b5-4032-b158-d30c2abea276",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C77",
+      "claim": "The combination of two entropic forces, the hydrophobic effect and polypeptide chain entropy, governs the elastic recoil central to elastin's function.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of two entropic forces, the hydrophobic effect and polypeptide chain entropy, governs the elastic recoil central to elastin's function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and polymer theory.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d0b379c1-e4bc-46ec-8d47-1c7fe1b26630",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C78",
+      "claim": "The replacement of intramolecular contacts between non-polar side chains by intermolecular ones drives elastin self-assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does the replacement of intramolecular contacts between non-polar side chains by intermolecular ones drive elastin self-assembly, it also helps the polypeptide chains of hydrophobic domains approach a state of maximal conformational disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "22705427-862f-4360-8f57-e5f73f5943a8",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C79",
+      "claim": "Although the structure of the aggregated peptide chains is nearly maximally disordered, it is not random but instead contains well-defined and significantly-populated secondary structure elements in the form of hydrogen-bonded turns.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our findings defy conventional wisdom about protein folding, aggregation, and disorder: (1) although the structure of the aggregated peptide chains is nearly maximally disordered, it is not random but instead contains well-defined and significantly-populated secondary structure elements in the form of hydrogen-bonded turns;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation data shown in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "054a441f-c1bc-4615-9690-a09a7668158c",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C80",
+      "claim": "Because the \u03b2-turns in elastin-like peptides are local, sparse, and transient, the polypeptide backbone remains highly hydrated on average.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) however, because these turns are local, sparse, and transient, the polypeptide backbone remains highly hydrated on average;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "0fe6a9eb-95f8-461f-84d6-a0120752d0fb",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C81",
+      "claim": "The hydrophobic side chains of elastin-like peptides cannot form a compact, water-excluding core even though they are significantly buried.",
+      "claim_type": "EXPLICIT",
+      "source": "as a result, (3) the hydrophobic side chains cannot form a compact, water-excluding core even though they are significantly buried.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation data shown in Figures 2, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "003ffa9b-a2f5-4f7c-8c44-f3442de10b85",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C82",
+      "claim": "The detailed model of the liquid phase of proteins obtained here for elastin is of direct relevance to the self-assembly and mechanical properties of other self-assembled elastomeric proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The detailed model of the liquid phase of proteins obtained here for elastin is of direct relevance to the self-assembly and mechanical properties of other self-assembled elastomeric proteins, with which elastin shares a high content in proline and glycine (Rauscher et al., 2006; Quiroz and Chilkoti, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and cited previous work on sequence similarities.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "fec193e6-27bd-472f-9789-e30fe02b82bc",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C83",
+      "claim": "The basic mechanism of self-assembly uncovered in the present study entails replacement of weak, degenerate intramolecular interactions by intermolecular ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic mechanism of self-assembly uncovered in the present study, which entails replacement of weak, degenerate intramolecular interactions by intermolecular ones, is likely to apply to other disordered proteins undergoing single-component phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d1b2edfc-56d6-4c1a-8c2f-86c0e48fa4e2",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C84",
+      "claim": "The mechanism of self-assembly uncovered in this study is likely to apply to other disordered proteins undergoing single-component phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic mechanism of self-assembly uncovered in the present study, which entails replacement of weak, degenerate intramolecular interactions by intermolecular ones, is likely to apply to other disordered proteins undergoing single-component phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "dc556153-673f-4aad-92d0-f81572eb8741",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C85",
+      "claim": "The CHARMM 22* force field and the charmm-modified TIP3P water model produce conformational ensembles of an intrinsically disordered protein consistent with both SAXS and NMR measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "This combination of force fields was shown to produce conformational ensembles of an intrinsically disordered protein consistent with both SAXS and NMR measurements in an extensive force field comparison (Rauscher et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous validation work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "149b7424-cc64-41d5-a51d-2be3d1ab401c",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C86",
+      "claim": "An accumulated simulation time of over 200 \u00b5s was required to reach statistical convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "An accumulated simulation time of over 200 \u00b5s was required to reach statistical convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "cf57d6fd-b4b6-4a42-8c90-cbb5f4388a82",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C87",
+      "claim": "The concentration of the multi-chain simulation system was 102.9 mg/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of the system was 102.9 mg/mL, which is higher than the concentration needed to observe aggregation of similar elastin peptides (Bellingham et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the simulation setup supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "f1600705-5df8-437e-8ed0-7266dfdd22d2",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C88",
+      "claim": "The equilibration period represents 50% (2.5 \u00b5s) of the multi-chain simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the equilibration period represents a significant fraction of the simulation (50%, 2.5 \u00b5s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly determined from the simulation data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d72d727a-5c20-445f-a0eb-0b231cf3403b",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "claim_id": "C89",
+      "claim": "Chain expansion in the aggregate occurs on the microsecond timescale in these simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "While the chains readily form aggregates (nanosecond timescale), chain expansion (approaching the ideal, unperturbed state) occurs on the microsecond timescale in these simulations (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the simulation data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d61db30f-0083-4217-ac29-6c8c69a844bb",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Elastin-like peptides undergo liquid-liquid phase separation upon self-assembly, forming a disordered aggregate stabilized by the hydrophobic effect. The aggregate lacks a water-excluding hydrophobic core, maintains significant backbone hydration, and contains transient \u03b2-turns. Individual chains approach a maximally-disordered, melt-like state consistent with the Flory theorem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C81 collectively demonstrate the structural basis of elastin self-assembly through extensive MD simulations (>200 \u00b5s). The data show tripling of non-polar contacts (C6, C73), preservation of local \u03b2-turn structure (C33-C35), maintained backbone hydration (C43-C47), and chain dimensions approaching ideal random coil behavior (C51-C53, C55, C74). Multiple independent lines of computational evidence converge on a consistent structural model validated against experimental data (C44-C45, C61).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "fd50cf82-d269-40ef-95b2-9f3bce94d055",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The simulation results are consistent with multiple independent experimental observations on elastin, including optical isotropy, low backbone carbonyl order parameter, random coil chemical shifts, high chain mobility, and NMR data on phase-separated elastin-like peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 cite established experimental findings that corroborate the high conformational disorder observed in simulations. C61 provides detailed quantitative comparison with recent NMR data showing agreement on disorder, \u03b2-turn populations (16-20% vs 20-40%), and hydration. The convergence of simulation and experimental evidence strengthens the structural model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d441d5d4-2af9-4f91-b381-e58448723799",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The aggregated elastin-like peptide chains approach the ideal \u03b8-solvent state predicted by the Flory theorem, with scaling exponent \u03b1=0.46 compared to \u03b1=0.54 for the ideal random coil model and \u03b1=0.28 for the collapsed single chain in poor solvent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57 demonstrate rigorous application of polymer theory to analyze chain dimensions. The scaling analysis (C51-C53) shows aggregated chains approach maximal disorder (\u03b1=0.46 vs ideal 0.54), while single chains in water behave as polymers in poor solvent (\u03b1=0.28 vs theoretical 0.33). C56 provides important caveat that polypeptides cannot form true solvent-excluding melts due to hydrogen bonding requirements. The analysis is mathematically sound and properly contextualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "93b5291a-28b1-41c5-9bc6-51ce4ff873a7",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chain dynamics differ dramatically between solution and aggregate states, with the lifetime of the open state increasing >50-fold upon aggregation (21\u00b11 ns vs 1140\u00b130 ns) and the central residue exhibiting anomalous diffusion with exponent \u03b1=0.58.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are directly supported by kinetic analysis (Figure 6) and mean-square displacement calculations (Figure 6\u2014figure supplement 1). The anomalous diffusion exponent (0.58) is consistent with polymer melt behavior and similar to values reported for polyethylene melts. The dramatic slowing of chain dynamics upon aggregation is well-documented and explains the long equilibration times required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "3838a77d-6f9f-4d6d-955f-58bd69f5ae3f",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both the hydrophobic effect and conformational entropy contribute to elastic recoil of elastin, reconciling the random coil and liquid drop models of elasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70 and C77 represent important mechanistic inferences, but the simulations do not directly measure elastic recoil or the thermodynamic contributions to elasticity. While the data show increased hydrophobic burial (C6, C40) and approach to maximal disorder (C74), the relative contributions of these effects to elastic recoil would require additional simulations of stretched states or free energy calculations. The conclusion is plausible but not definitively demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite 80 years of study, the molecular basis of elastin self-assembly and structure remain controversial, with proposed models ranging from highly-ordered \u03b2-spirals to maximally-disordered random networks, and questions about the validity of thermoelasticity measurements in alcohol solvents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C23 accurately summarize the historical context and controversies in the field, supported by appropriate citations. The description of competing models (C16-C17, C20-C21) and methodological concerns (C18-C19) establishes the motivation for the current study. The statement that the \u03b2-spiral model is unstable (C21) while \u03b2-turns are observed spectroscopically (C22) sets up the reconciliation achieved in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "d79b7ace-d5d2-4954-ad87-dbecc3c7700b",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The simulations used the CHARMM 22* force field with charmm-modified TIP3P water, previously validated for intrinsically disordered proteins, with >200 \u00b5s accumulated simulation time and 50% (2.5 \u00b5s) equilibration period for the multi-chain system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89 describe the computational methodology. C85 cites validation work showing the force field produces ensembles consistent with SAXS and NMR. C86-C89 document the extensive sampling required, with equilibration analysis shown in Figure 1\u2014figure supplement 1. The long equilibration time (C88) is explained by slow chain expansion (C89). Additional validation with TIP4P-D water model (Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 4) strengthens confidence in results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Elastin's high proline and glycine content enables it to maintain disorder and hydration upon aggregation while avoiding both the self-aggregation typical of most IDPs and the amyloid formation typical of misfolded proteins, a property shared with other elastomeric proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C69 place elastin in the broader context of protein disorder and aggregation. The distinction from typical IDPs (C62) and amyloid-forming proteins (C64, C66) is well-supported by citations. The mechanistic role of proline and glycine (C67-C68) is based on established amino acid properties and previous work (C69). The generalization to other elastomeric proteins (C69, C82) is supported by sequence comparisons and cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "3548429c-e45a-4483-a3b9-1f4eaf1eecb3",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This study provides the first atomistic description of a melt-like, disordered protein state and the first detailed model of a protein coacervate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 assert the novelty of the work. These claims are supported by the unprecedented scale of the simulations (>200 \u00b5s, 27-chain aggregate) and the lack of prior atomistic simulations of elastin-like peptide aggregates of this size. The characterization as a 'liquid state' is justified by the scaling analysis (C51-C53) and density profiles (C48-C49) showing bulk-like properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "7474d864-711c-4f61-8a25-caf3c1f34eca",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mechanism of self-assembly\u2014replacement of intramolecular interactions by intermolecular ones\u2014is likely relevant to other elastomeric proteins and disordered proteins undergoing single-component phase separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 extrapolate the findings to other systems. While C82 is supported by sequence similarities (high proline/glycine content) cited in the text, C84 explicitly acknowledges this is speculation. The generalization is plausible given the fundamental nature of the mechanism (C83), but would require additional simulations or experiments on other systems to confirm. The authors appropriately qualify this as 'likely to apply' rather than definitively demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Elastin is a structural protein that imparts elasticity to tissues through its hydrophobic domains, which undergo temperature-dependent coacervation and are responsible for self-assembly and elastic recoil.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C14 provide established background on elastin biology and function, supported by appropriate citations. These claims accurately describe elastin's tissue distribution (C1), durability (C8-C9), domain structure (C10-C11), and coacervation behavior (C12-C13). The information is well-established in the field and properly contextualized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "6d237e63-c91a-48b2-979a-a88774d6e4c0",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Microsecond-timescale simulations are necessary for converged sampling of disordered elastin-like peptides, and peptides based on hydrophobic domains can coacervate without cross-linking domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 justify the computational approach and model system. C24 cites previous work by the authors establishing the need for microsecond sampling. C25-C26 cite experimental work showing that hydrophobic domains alone are sufficient for coacervation, validating the choice to omit cross-linking domains for computational tractability. This is appropriate simplification for studying the phase separation mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    },
+    {
+      "id": "f27591d2-a555-43a8-aebc-2839979ce7e7",
+      "content_id": "6c03ac1b-dd83-4b22-b69b-7ea4bf5a25a8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The biological function of elastin is incompatible with a unique, ordered structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is a key inference supported by the simulation data showing high disorder (C27-C28, C79) and the known requirement for reversible extension and recoil. The claim is consistent with experimental evidence (C29-C32) and the fundamental requirement for conformational entropy in elastic recoil. However, this is an inference about function based on structure rather than direct measurement of mechanical properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:58:00.863233Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9953f7fa-ed74-4ae7-a3c4-4dfa9ff1489d",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "02492893-dd28-435c-8217-f10fe51018af",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "e0204075-fa16-40c6-b081-a7dc89e48b3b",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "a0224302-aa8e-45ce-87fd-352cdbf14894",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "6e4d57d4-a2ec-4986-a86a-88b69f844da3",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "92df0551-50b6-4540-86b2-83cf859e1eb7",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "84270b23-6b3e-401d-b3c0-f33a9f933aed",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "763b7c84-6d72-4f34-9877-25624017ea51",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "10f2997e-69a1-4da2-8390-8dd4d6f57d90",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "ca53ea20-948d-4164-bd9b-66290986a3ef",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "8b4c563b-87fa-444e-a13d-7de12aeb7a14",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "528e902b-8b82-417e-96ad-8943bb09aeb9",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "edf19a79-681d-4cae-b0ac-b522afadaf16",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "58186e34-e426-4d52-b966-80f28b81ceb9",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "0fb1da38-838a-4102-8fa9-84a84e57298c",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "52b251b4-78a9-46be-9a09-bd4a058cff14",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "47e88000-99fa-4729-afd2-e318612541d1",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "cae2611d-a612-4434-a6db-8e2af89458d2",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "611c5908-c7b6-49e2-a9fe-1c06feef5b1b",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "631138bb-db8f-4cbb-ac46-c7cede8c5b69",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "f122c39f-ece0-4284-a89c-dc3c3608a4db",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "56eaa0ab-db8b-4510-acff-b26a8efa5265",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "c44c17dc-41dd-4392-aed5-be27c8e1d270",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "57b3e8f9-98f5-4f0c-a4be-1aaeb15db6a0",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "c680aca2-c013-4871-8efd-e075d6f4d505",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "42d2ec95-420a-4e93-8198-9f66b93d20ce",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "bdf4a61c-af8d-4dfb-8eb1-5632c49c0457",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "63050d82-a671-41b1-8697-e17987cc6d39",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "b75a746d-b950-403b-b3fd-60c68700333f",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "3d79ca9a-300c-413f-a1e2-4ade4e07d92a",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "07b843cc-9ed8-4ee6-a393-3f626bf328e0",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "117d8a67-4fb7-473e-a899-ca85796e3c91",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "2ad9a4de-995e-47a4-9109-d71c5489833a",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "8fc1df27-e475-4863-9dab-fbcfe1491250",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "d0b379c1-e4bc-46ec-8d47-1c7fe1b26630",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "22705427-862f-4360-8f57-e5f73f5943a8",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "054a441f-c1bc-4615-9690-a09a7668158c",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "0fe6a9eb-95f8-461f-84d6-a0120752d0fb",
+      "result_id": "d61db30f-0083-4217-ac29-6c8c69a844bb"
+    },
+    {
+      "claim_id": "87f1a9a6-6a7a-4e10-b1a1-f96c480c8f1c",
+      "result_id": "fd50cf82-d269-40ef-95b2-9f3bce94d055"
+    },
+    {
+      "claim_id": "a6b5cc3a-9e36-47c5-b343-85cee87d7349",
+      "result_id": "fd50cf82-d269-40ef-95b2-9f3bce94d055"
+    },
+    {
+      "claim_id": "1c7a813c-5c7e-41b1-b4d4-8c90b4a3d9a1",
+      "result_id": "fd50cf82-d269-40ef-95b2-9f3bce94d055"
+    },
+    {
+      "claim_id": "5375256e-d6ea-4992-9061-b44ea4903714",
+      "result_id": "fd50cf82-d269-40ef-95b2-9f3bce94d055"
+    },
+    {
+      "claim_id": "242f70d4-bd53-4b66-8e0f-7446a05ef130",
+      "result_id": "fd50cf82-d269-40ef-95b2-9f3bce94d055"
+    },
+    {
+      "claim_id": "8559e471-8ce0-4be8-910b-c02e05b742fc",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "42d2ec95-420a-4e93-8198-9f66b93d20ce",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "bdf4a61c-af8d-4dfb-8eb1-5632c49c0457",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "63050d82-a671-41b1-8697-e17987cc6d39",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "da87f986-520d-4b23-992d-6b11048157f0",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "b75a746d-b950-403b-b3fd-60c68700333f",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "c82a38f7-06cf-4f94-af73-6918d5bc10d5",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "3d79ca9a-300c-413f-a1e2-4ade4e07d92a",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "2ad9a4de-995e-47a4-9109-d71c5489833a",
+      "result_id": "d441d5d4-2af9-4f91-b381-e58448723799"
+    },
+    {
+      "claim_id": "0ee2231e-2eae-462e-87cc-6bc8dede33dc",
+      "result_id": "93b5291a-28b1-41c5-9bc6-51ce4ff873a7"
+    },
+    {
+      "claim_id": "912520d7-e3d1-4015-a54a-fbe8ebf3f3f6",
+      "result_id": "93b5291a-28b1-41c5-9bc6-51ce4ff873a7"
+    },
+    {
+      "claim_id": "924ec2f6-63e3-4bcd-a7ab-36942cc1ad2b",
+      "result_id": "3838a77d-6f9f-4d6d-955f-58bd69f5ae3f"
+    },
+    {
+      "claim_id": "ce15e9c8-d0b5-4032-b158-d30c2abea276",
+      "result_id": "3838a77d-6f9f-4d6d-955f-58bd69f5ae3f"
+    },
+    {
+      "claim_id": "6c054bb3-a750-45e9-8f0b-132f0840f428",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "cfec6956-4f39-47da-a5fb-b309e810f2aa",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "32221e8c-9d5d-4c2c-b077-dee192a83bbd",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "7791250e-f860-4c04-b330-d4e3090dc3b4",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "ac9c14aa-cad9-4bc1-8ec3-0e7b6702ec50",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "a93bed57-0b7e-490d-b4d2-77007c4ee201",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "8f380d85-8522-4f77-a0d7-5555a63804c9",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "1b517dd7-186a-4db4-aff5-04c4247fd83f",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "e43bca6c-3e58-4fa0-b1da-747fdf3d3039",
+      "result_id": "3a35653c-b13f-4c6c-aaee-4ee37c9697c1"
+    },
+    {
+      "claim_id": "dc556153-673f-4aad-92d0-f81572eb8741",
+      "result_id": "d79b7ace-d5d2-4954-ad87-dbecc3c7700b"
+    },
+    {
+      "claim_id": "149b7424-cc64-41d5-a51d-2be3d1ab401c",
+      "result_id": "d79b7ace-d5d2-4954-ad87-dbecc3c7700b"
+    },
+    {
+      "claim_id": "cf57d6fd-b4b6-4a42-8c90-cbb5f4388a82",
+      "result_id": "d79b7ace-d5d2-4954-ad87-dbecc3c7700b"
+    },
+    {
+      "claim_id": "f1600705-5df8-437e-8ed0-7266dfdd22d2",
+      "result_id": "d79b7ace-d5d2-4954-ad87-dbecc3c7700b"
+    },
+    {
+      "claim_id": "d72d727a-5c20-445f-a0eb-0b231cf3403b",
+      "result_id": "d79b7ace-d5d2-4954-ad87-dbecc3c7700b"
+    },
+    {
+      "claim_id": "2f27d2b3-2b26-4403-9844-c168546e84ee",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "c31de260-076a-4279-90fb-400c4d552f64",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "d7dc15ad-e858-443c-ac1b-84848e46614e",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "b42a13d2-b559-46ec-bd8a-6bd34b0c1ebb",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "3b79eb44-2a27-47b9-9c77-b66aceb0268f",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "88d65f1c-6a36-420c-887d-00e52c6c790a",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "cdefc111-67d4-48ed-8a96-8ffca0a94651",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "d342607e-ad9a-46b3-9c41-cf398f15f031",
+      "result_id": "9776f6d9-d6fa-4c9d-9549-caac1865f5c0"
+    },
+    {
+      "claim_id": "395b5be2-0dc4-4b3e-9c38-760cd52569f8",
+      "result_id": "3548429c-e45a-4483-a3b9-1f4eaf1eecb3"
+    },
+    {
+      "claim_id": "d06bcfac-0529-432a-b6b1-07aaec1fd2a4",
+      "result_id": "3548429c-e45a-4483-a3b9-1f4eaf1eecb3"
+    },
+    {
+      "claim_id": "003ffa9b-a2f5-4f7c-8c44-f3442de10b85",
+      "result_id": "7474d864-711c-4f61-8a25-caf3c1f34eca"
+    },
+    {
+      "claim_id": "fec193e6-27bd-472f-9789-e30fe02b82bc",
+      "result_id": "7474d864-711c-4f61-8a25-caf3c1f34eca"
+    },
+    {
+      "claim_id": "d1b2edfc-56d6-4c1a-8c2f-86c0e48fa4e2",
+      "result_id": "7474d864-711c-4f61-8a25-caf3c1f34eca"
+    },
+    {
+      "claim_id": "a46a74d7-cf26-4cb4-9d53-fbf1a8feff19",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "425b94de-61e4-4b05-b95d-d3657e1d8efd",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "0867f80b-7053-44f2-b17e-845a8c802082",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "98f3bb4d-d6ac-4152-b442-f36c36e56415",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "927b65b1-4b91-4c70-b116-85aadcbdfd80",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "a9422456-bc5e-42e8-a08e-cea2e1fe935d",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "73b73e0e-c3f4-4547-8c50-0c19c5b68e23",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "060b4c9e-0e43-44b7-aa86-3a44a6177389",
+      "result_id": "5762f79d-6e3e-41f4-995f-be9f7a4e5823"
+    },
+    {
+      "claim_id": "64f7e280-fee7-41c7-bfca-a4227ffe2fd4",
+      "result_id": "6d237e63-c91a-48b2-979a-a88774d6e4c0"
+    },
+    {
+      "claim_id": "ad6e2b5e-2f27-4a2f-9795-154d84764151",
+      "result_id": "6d237e63-c91a-48b2-979a-a88774d6e4c0"
+    },
+    {
+      "claim_id": "42628655-6e98-48db-a13f-f057dc9b6a1f",
+      "result_id": "6d237e63-c91a-48b2-979a-a88774d6e4c0"
+    },
+    {
+      "claim_id": "fa6e960e-1d4b-4393-a663-056c7829c6fc",
+      "result_id": "f27591d2-a555-43a8-aebc-2839979ce7e7"
+    }
+  ],
+  "comparisons": []
+}

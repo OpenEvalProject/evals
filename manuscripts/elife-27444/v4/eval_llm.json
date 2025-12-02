@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C55",
+      "C56",
+      "C57",
+      "C126"
+    ],
+    "result": "Shigella flexneri infection causes a massive, time-dependent decrease in global SUMO1 and SUMO2/3 conjugates in epithelial cells both in vitro and in vivo. This effect is visible as early as 30 minutes post-infection, becomes nearly complete by 180 minutes, depends on bacterial invasion machinery (T3SS), and requires actin cytoskeleton rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C41 provide comprehensive time-course and dose-response data from multiple cell lines and specific substrates (RanGAP1, PML-IV), supported by Western blots in Figures 1A-G. Claims C55-C56 extend findings to in vivo mouse models (Figure 1H-I). The requirement for T3SS (C35) and actin rearrangements (C36-C38) is demonstrated through mutant strains and cytochalasin D experiments. The data consistently show progressive loss of SUMO conjugates across multiple experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C127"
+    ],
+    "result": "The Shigella-induced loss of sumoylation is mediated by calcium-dependent activation of calpain proteases. Calpain inhibition (MDL28170), calcium chelation (BAPTA-AM), or genetic ablation of calpain regulatory subunit (Capns1) completely prevents SUMO conjugate loss, while calcium/ionomycin treatment alone recapitulates the hyposumoylation phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 demonstrate calpain activation during infection and show that three independent methods of calpain inhibition (pharmacological, siRNA, knockout) all prevent SUMO loss (Figure 2A-C). Claims C70-C75 provide reciprocal evidence that calcium manipulation alone is sufficient to modulate sumoylation (Figure 3A-C). The mechanistic link between calcium, calpain, and SUMO is well-established through multiple complementary approaches with consistent results across different experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SAE2, the catalytic subunit of the SUMO E1 enzyme, is specifically degraded by calpain proteases during Shigella infection. SAE2 shows calpain-dependent degradation starting at 2 hours post-infection, with detection of two major cleavage fragments (~85 kDa and ~70 kDa), and can be directly cleaved by purified calpain-1 and calpain-2 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 demonstrate selective SAE2 degradation (not SAE1 or UBC9) that is prevented by calpain inhibition, siRNA, or knockout (Figure 4A-C). Claims C88-C90 identify specific cleavage products in cells and in vitro (Figure 4D-E), consistent with calpain's known limited proteolysis mechanism (C87). The discrepancy between early SUMO loss (30 min, C84) and late SAE2 degradation (2 hr) is acknowledged but does not invalidate the finding that SAE2 is a calpain substrate. The in vitro cleavage data (C90) provides direct biochemical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Reducing cellular sumoylation through UBC9 or SAE2 depletion significantly increases Shigella invasion and actin foci formation. Both siRNA-mediated knockdown in HeLa cells and genetic knockout in MEFs show ~60% increase in bacterial entry and enhanced actin polymerization at entry sites, without affecting basal actin cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide quantitative data from two independent cell systems (HeLa and MEFs) showing increased bacterial entry and actin foci upon sumoylation impairment (Figure 5A-H). Claim C96 addresses the important control that sumoylation deficiency alone doesn't alter actin cytoskeleton. The consistency across different methods (siRNA vs. knockout) and cell types strengthens the conclusion. Statistical significance is reported (Figure 5 source data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C128",
+      "C149",
+      "C150"
+    ],
+    "result": "RhoGDI\u03b1 is a bona fide SUMO substrate in vivo whose sumoylation is rapidly lost upon Shigella infection, and this desumoylation promotes bacterial entry. RhoGDI\u03b1 knockdown increases bacterial invasion by ~60%, comparable to global sumoylation impairment. A SUMO-deficient RhoGDI\u03b1 mutant (K138R) shows reduced ability to restrict bacterial entry compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 demonstrate endogenous RhoGDI\u03b1 sumoylation and its rapid loss (30 min) during infection via immunoprecipitation (Figure 8). Claims C103-C108 show that RhoGDI\u03b1 depletion or expression of SUMO-deficient mutant increases bacterial entry (Figure 6A-F). The magnitude of effect (~60%) matches that seen with global sumoylation impairment (C104), supporting RhoGDI\u03b1 as a key relevant substrate. The K138 sumoylation site is evolutionarily conserved and previously characterized (C102), adding biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Loss of sumoylation in Ubc9 knockout MEFs leads to increased membrane localization of Rho GTPases (Cdc42, RhoA, Rac1) compared to wild-type cells, as measured by membrane fractionation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 reports a modest but significant increase in membrane-bound Rho GTPases in sumoylation-deficient cells (Figure 6G-H with source data). The ultracentrifugation-based fractionation approach is appropriate, and the finding is consistent with the known function of RhoGDI\u03b1 in sequestering GTPases in the cytosol. However, the effect is described as \"modest,\" and the mechanism linking global sumoylation loss to GTPase localization could involve multiple pathways beyond RhoGDI\u03b1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "SUMO1, SUMO2/3, and RhoGDI\u03b1 are enriched at Shigella entry sites (actin-rich foci). The SUMO signal at these sites represents conjugated proteins rather than free SUMO, as demonstrated by reduced signal in Ubc9 KO cells. RhoGDI\u03b1 recruitment to entry sites occurs independently of sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 demonstrate SUMO enrichment at entry sites using immunofluorescence and Pearson correlation analysis (Figure 7A-D). The control using Ubc9 KO cells (C115-C116) effectively distinguishes conjugated from free SUMO. Claims C117-C119 show RhoGDI\u03b1 localization is sumoylation-independent (Figure 7E-F). The imaging data with quantification provides solid evidence, though the spatial resolution of conventional microscopy limits precise localization analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Shigella-induced sumoylation inhibition requires IpaB/IpaC translocator insertion into the host plasma membrane and actin foci formation, but does not require specific effector proteins (OspB, OspC1, OspD2, OspD3, OspE1, OspE2, OspF, OspG, VirA, IpaH family members, or IpgD). The stress induced at the plasma membrane, rather than efficient bacterial invasion, is sufficient to trigger SUMO loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 systematically exclude multiple effectors using mutant strains (Figure 1\u2014supplement 2A-C). Claims C47-C51 identify IpaB/IpaC requirement and show that the ipaC/pC57 mutant (forms actin foci but doesn't invade efficiently) still induces hyposumoylation, while ipaC/pC351 (no actin foci) does not. This genetic dissection effectively separates membrane stress from invasion. The conclusion (C54) that pore formation and membrane stress drive SUMO loss is well-supported by the mutant analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C130",
+      "C131"
+    ],
+    "result": "This work identifies calcium-activated calpains as powerful modulators of cellular sumoylation levels and establishes sumoylation of RhoGDI\u03b1 as an important mechanism counteracting cytoskeletal remodeling and bacterial entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are summary/conclusion claims that integrate the major findings. Claim C131 (calcium controls sumoylation) is directly supported by the calcium/calpain/SAE2 degradation pathway demonstrated in the study. Claim C130 (RhoGDI\u03b1 sumoylation counteracts bacterial entry) is supported by the functional data showing that loss of RhoGDI\u03b1 sumoylation enhances infection. These represent valid interpretations of the experimental results, though the broader implications (\"powerful modulators,\" \"potentially broad implications\") extend beyond what is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C129"
+    ],
+    "result": "The authors conclude that SUMO modification is essential to restrain pathogenic bacterial entry by limiting cytoskeletal rearrangement induced by bacterial effectors, and that this represents the first characterization of a SUMO substrate targeted by bacteria to enhance infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 uses strong language (\"essential\") that may overstate the findings\u2014the data show that reducing sumoylation enhances entry, but \"essential\" implies necessity that wasn't directly tested (e.g., through gain-of-function experiments). Claim C129 about novelty cannot be fully evaluated without comprehensive literature review, though the authors' knowledge claim seems reasonable given the citations provided. The mechanistic link between sumoylation and cytoskeletal restraint is supported but could involve additional substrates beyond RhoGDI\u03b1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The authors propose a two-wave model where early local calcium responses at entry sites cause localized SAE2 degradation and rapid SUMO-RhoGDI\u03b1 loss (30 min), while later global calcium responses trigger complete SAE2 degradation and generalized SUMO loss (2+ hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C152-C156) are explicitly speculative (\"tempting to speculate,\" \"possible explanation,\" \"would most likely\"). While the model attempts to reconcile the timing discrepancy between early SUMO-RhoGDI\u03b1 loss and late SAE2 degradation, it lacks direct experimental support. The authors acknowledge this is speculative and note that \"definitive clarification...must await development of probes permitting visualization of localized sumoylation dynamics.\" The model is plausible but unproven.",
+    "result_type": "MINOR"
+  }
+]

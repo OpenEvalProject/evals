@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C30",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors developed a droplet-based artificial cell system by encapsulating cycling Xenopus egg extracts in cell-scale microemulsions (10-300 \u00b5m radii). The system produces highly robust, undamped oscillations for up to 32 cycles over 4 days and is amenable to high-throughput analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C17-C18, C30, C55-C56 collectively demonstrate successful development of the droplet system with documented stability, longevity, and analytical capabilities. The experimental data in Figures 1-2 provide strong visual and quantitative evidence for these claims, including droplet size ranges, oscillation duration, and cycle numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The droplet system successfully reconstitutes multiple mitotic processes including chromosome condensation, nuclear envelope breakdown (NEB), nuclear reassembly, and periodic degradation of APC/C substrates (securin and cyclin B). These processes are driven by a self-sustained oscillator centered on Cdk1 and APC/C, with chromosome condensation and NEB occurring nearly simultaneously, while securin degradation lags behind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C19-C28, C62-C74 are well-supported by experimental observations shown in Figure 1C-D and accompanying videos. The multi-channel fluorescence imaging provides direct visual evidence of the temporal coordination of mitotic events, with quantitative time-course analysis confirming the relative timing of different processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C75"
+    ],
+    "result": "The oscillation period and number of cycles can be reliably tuned by varying cyclin B1 mRNA concentration. Higher cyclin B1 concentrations decrease the average period (speeding up oscillations) but also reduce the number of cycles, resulting in a negative correlation between oscillation lifetime and cyclin B1 mRNA amount. At very high concentrations (>10 ng/\u00b5L), the system arrests in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C32-C37, C75 are supported by experimental data in Figure 2C-E showing systematic variation of oscillation properties with cyclin B1 mRNA concentration. The correlation between reporters (C32) validates the measurements, and the dose-dependent effects are clearly demonstrated with appropriate statistical analysis (median and MAD reported).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Droplet size affects oscillation behavior in a size-dependent manner. Smaller droplets exhibit slower oscillations with larger variance in periods, reduced number of oscillations, and smaller variance in cycle number. These size effects become less dramatic for larger droplets or higher cyclin B1 mRNA concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C38-C41 are supported by experimental data in Figure 2F-G showing clear size-dependent trends. The consistency with prior work on transcriptional oscillators (C39, Weitz et al., 2014) provides additional validation. However, the mechanistic basis for these effects (stochasticity vs. partitioning errors mentioned in C80-C82) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors developed an energy depletion model that explains the experimentally observed increases in amplitude, baseline, and period over time. The model incorporates ATP into phosphorylation reactions and shows that decreasing ATP concentration increases the ratio R (Wee1/Cdc25 activity), which modulates oscillation properties. The model successfully recapitulates experimental observations including the effects of cyclin B concentration on period and cycle number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C54, C59, C83-C85 are supported by modeling results in Figure 3 that qualitatively match experimental observations. The model is based on established prior work (Yang and Ferrell, 2013; Tsai et al., 2014) with reasonable modifications. However, the model makes assumptions (e.g., ATP depletion rate, equilibrium assumptions in C109) that are not directly validated experimentally. The claim that synthesis/degradation rate changes have no effect (C54) is model-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C46",
+      "C60",
+      "C61"
+    ],
+    "result": "Energy may be a critical factor for cell cycle behaviors, potentially functioning as a checkpoint to regulate cell cycles. This is supported by the observation that energy requirements change during early embryo development, with energy levels dropping at the mid-blastula stage when cell cycles slow down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16, C46, C60-C61 propose energy as a critical regulator, but this remains speculative. While the model (C46-C59) shows energy depletion can explain observations, direct experimental validation of ATP levels in droplets is not provided. The connection to embryonic development (C60-C61) relies on a single citation (Zotin et al., 1967) and remains hypothetical. Further experiments measuring ATP levels and manipulating energy availability would be needed to support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C107"
+    ],
+    "result": "The droplet system provides advantages for studying stochastic dynamics at the cellular scale, overcoming limitations of in vivo studies such as low throughput and complications from cell growth and division. Smaller droplets contain fewer molecules and exhibit greater stochasticity, with compartmentalization potentially affecting reaction kinetics through both reduced molecule numbers and partition errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C82, C107 present reasonable arguments about stochastic effects and system advantages, but the actual contribution of stochasticity versus other factors (e.g., surface effects, diffusion limitations) to the observed size-dependent behaviors is not rigorously demonstrated. While the system enables high-throughput tracking (C79), explicit stochastic analysis or comparison with deterministic predictions is limited. The speculation about partition errors (C82) lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C29",
+      "C57",
+      "C58"
+    ],
+    "result": "The manuscript provides background on Xenopus egg extracts as a system for studying cell cycle regulation, noting their historical contributions to discovering key regulators and revealing feedback loop architecture. The authors identify limitations of bulk systems and position their work as addressing these limitations while potentially enabling investigation of fundamental oscillator principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9, C29, C57-C58 accurately summarize prior work with appropriate citations and correctly identify limitations of bulk systems. These are primarily literature review claims that provide context. The speculation about future applications (C58) is reasonable but not tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The manuscript describes detailed experimental methods including extract preparation, protein expression, plasmid construction, droplet generation, imaging protocols, and image analysis procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C99 provide methodological details that appear internally consistent and reference appropriate prior work. The methods are sufficiently detailed for the experiments described, though some details (e.g., exact vortexing parameters, reproducibility across batches) could be more explicit. The use of established methods (Gibson assembly, Gillespie algorithm) with proper citations supports these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C108",
+      "C109"
+    ],
+    "result": "The modeling approach makes several assumptions including high Cdk1 concentration relative to cyclin B1, high affinity of cyclins for Cdk1, rapid CAK phosphorylation, and equilibrium of Wee1 with Cdk1 activity. The model uses a parameter r to represent the balance between feedback loops, which is suggested to be critical for oscillatory properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103, C105-C106, C108-C109 describe modeling assumptions that are based on cited literature (Hochegger et al., 2001; Kobayashi et al., 1991, 1994; Tsai et al., 2014) and established modeling approaches (Yang and Ferrell, 2013; Gillespie, 1977). These assumptions are reasonable for the system being modeled, though some (e.g., equilibrium assumption in C109) may be simplifications that could affect quantitative predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The cytoplasmic-only oscillator is claimed to be significantly better than many existing synthetic oscillators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C31 makes a comparative statement without providing specific quantitative comparisons to other synthetic oscillators. While the system does show impressive performance (32 cycles over 4 days), the claim of being 'significantly better' requires explicit comparison with specific systems, statistical analysis, and clear metrics. The statement is too vague to be properly evaluated.",
+    "result_type": "MINOR"
+  }
+]

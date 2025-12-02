@@ -1,0 +1,1157 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The brain needs to predict how the body reacts to motor commands.",
+    "claim_type": "EXPLICIT",
+    "source": "The brain needs to predict how the body reacts to motor commands, but how a network of spiking neurons can learn non-linear body dynamics using local, online and stable learning rules is unclear.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the research problem and motivation, drawing from established understanding in neuroscience and motor control.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "A supervised learning scheme for feedforward and recurrent connections in a network of heterogeneous spiking neurons is presented.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present a supervised learning scheme for the feedforward and recurrent connections in a network of heterogeneous spiking neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main contribution of the paper, demonstrated through the presented model and simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The error in the output is fed back through fixed random connections with a negative gain, causing the network to follow the desired dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "The error in the output is fed back through fixed random connections with a negative gain, causing the network to follow the desired dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architecture of the proposed learning scheme, which is demonstrated in the simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The FOLLOW learning rule is local in the sense that weight changes depend on the presynaptic activity and the error signal projected onto the postsynaptic neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "The rule for Feedback-based Online Local Learning Of Weights (FOLLOW) is local in the sense that weight changes depend on the presynaptic activity and the error signal projected onto the postsynaptic neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a defining characteristic of the proposed learning rule, derived mathematically in the Methods section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The FOLLOW scheme can learn linear, non-linear and chaotic dynamics, as well as the dynamics of a two-link arm.",
+    "claim_type": "EXPLICIT",
+    "source": "We provide examples of learning linear, non-linear and chaotic dynamics, as well as the dynamics of a two-link arm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through multiple simulation examples shown in Figures 2-4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Under reasonable approximations, FOLLOW learning is uniformly stable, with the error going to zero asymptotically.",
+    "claim_type": "EXPLICIT",
+    "source": "Under reasonable approximations, we show, using the Lyapunov method, that FOLLOW learning is uniformly stable, with the error going to zero asymptotically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is proven mathematically in the Methods section using Lyapunov stability analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The brain must acquire a representation of the dynamical system formed by muscles, body, and the outside world to plan movements and initiate corrective actions.",
+    "claim_type": "EXPLICIT",
+    "source": "More precisely, the brain must acquire a representation of the dynamical system formed by our muscles, our body, and the outside world in a format that can be used to plan movements and initiate corrective actions if the desired motor output is not achieved (Pouget and Snyder, 2000; Wolpert and Ghahramani, 2000; Lalazar and Vaadia, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work in motor control.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Visual and/or proprioceptive feedback from spontaneous movements during pre-natal and post-natal development or from voluntary movements during adulthood are important to learn how the body moves in response to neural motor commands.",
+    "claim_type": "EXPLICIT",
+    "source": "Visual and/or proprioceptive feedback from spontaneous movements during pre-natal (Khazipov et al., 2004) and post-natal development (Petersson et al., 2003) or from voluntary movements during adulthood (Wong et al., 2012; Hilber and Caston, 2001) are important to learn how the body moves in response to neural motor commands (Lalazar and Vaadia, 2008; Wong et al., 2012; Sarlegna and Sainburg, 2009; Dadarlat et al., 2015), and how the world reacts to these movements (Davidson and Wolpert, 2005; Zago et al., 2005, 2009; Friston, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by multiple citations to prior experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Supervised learning of recurrent weights to predict or generate non-linear dynamics is difficult in networks of rate units and even more so in networks of spiking neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Supervised learning of recurrent weights to predict or generate non-linear dynamics, given command input, is known to be difficult in networks of rate units, and even more so in networks of spiking neurons (Abbott et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation to prior work and represents established knowledge in the field.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "A biologically plausible learning rule must be online and local.",
+    "claim_type": "EXPLICIT",
+    "source": "Ideally, in order to be biologically plausible, a learning rule must be online that is constantly incorporating new data, as opposed to batch learning where weights are adjusted only after many examples have been seen; and local that is the quantities that modify the weight of a synapse must be available locally at the synapse as opposed to backpropagation through time (BPTT) (Rumelhart et al., 1986) or real-time recurrent learning (RTRL) (Williams and Zipser, 1989) which are non-local in time or in space, respectively (Pearlmutter, 1995; Jaeger, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of biological plausibility constraints, supported by citations to prior work on learning algorithms.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Long-Short-Term-Memory (LSTM) units avoid the vanishing gradient problem in recurrent networks.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though Long-Short-Term-Memory (LSTM) units (Hochreiter and Schmidhuber, 1997) avoid the vanishing gradient problem (Bengio et al., 1994; Hochreiter et al., 2001) in recurrent networks, the corresponding learning rules are difficult to interpret biologically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior work on LSTM.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "LSTM learning rules are difficult to interpret biologically.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though Long-Short-Term-Memory (LSTM) units (Hochreiter and Schmidhuber, 1997) avoid the vanishing gradient problem (Bengio et al., 1994; Hochreiter et al., 2001) in recurrent networks, the corresponding learning rules are difficult to interpret biologically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of LSTM in the context of biological plausibility.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The FOLLOW approach is situated at the crossroads of reservoir computing, FORCE learning, function and dynamics approximation, and adaptive control theory.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach toward learning of recurrent spiking networks is situated at the crossroads of reservoir computing (Jaeger, 2001; Maass et al., 2002; Legenstein et al., 2003; Maass and Markram, 2004; Jaeger and Haas, 2004; Joshi and Maass, 2005; Legenstein and Maass, 2007), FORCE learning (Sussillo and Abbott, 2009, 2012; DePasquale et al., 2016; Thalmeier et al., 2016; Nicola and Clopath, 2016), function and dynamics approximation (Funahashi, 1989; Hornik et al., 1989; Girosi and Poggio, 1990; Sanner and Slotine, 1992; Funahashi and Nakamura, 1993; Pouget and Sejnowski, 1997; Chow and Xiao-Dong Li, 2000; Seung et al., 2000; Eliasmith and Anderson, 2004; Eliasmith, 2005) and adaptive control theory (Morse, 1980; Narendra et al., 1980; Slotine and Coetsee, 1986; Weiping Li et al., 1987; Narendra and Annaswamy, 1989; Sastry and Bodson, 1989; Ioannou and Sun, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This positions the work in relation to prior research, supported by extensive citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "In the original reservoir scheme, learning was restricted to the readout connections.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the original reservoir scheme (Jaeger, 2001; Maass et al., 2002) where learning was restricted to the readout connections, we focus on a learning rule for the recurrent connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Neural network implementations of control theory modified adaptive feedback weights without a synaptically local interpretation.",
+    "claim_type": "EXPLICIT",
+    "source": "Whereas neural network implementations of control theory (Sanner and Slotine, 1992; DeWolf et al., 2016) modified adaptive feedback weights without a synaptically local interpretation, we modify the recurrent weights in a synaptically local manner.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "In FORCE learning, recurrent synaptic weights have to change rapidly during the initial phase of learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to FORCE learning where recurrent synaptic weights have to change rapidly during the initial phase of learning (Sussillo and Abbott, 2009, 2012), we aim for a learning rule that works in the biologically more plausible setting of slow synaptic changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work (FORCE learning), supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Previous work has shown that linear dynamical systems can be represented and learned with local online rules in recurrent spiking networks.",
+    "claim_type": "EXPLICIT",
+    "source": "While previous work has shown that linear dynamical systems can be represented and learned with local online rules in recurrent spiking networks (MacNeil and Eliasmith, 2011; Bourdoukan and Den\u00e8ve, 2015), for non-linear dynamical systems the recurrent weights in spiking networks have typically been computed offline (Eliasmith, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "For non-linear dynamical systems, the recurrent weights in spiking networks have typically been computed offline.",
+    "claim_type": "EXPLICIT",
+    "source": "While previous work has shown that linear dynamical systems can be represented and learned with local online rules in recurrent spiking networks (MacNeil and Eliasmith, 2011; Bourdoukan and Den\u00e8ve, 2015), for non-linear dynamical systems the recurrent weights in spiking networks have typically been computed offline (Eliasmith, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work, supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The FOLLOW learning rule is supervised and requires access to the error in observable outputs.",
+    "claim_type": "EXPLICIT",
+    "source": "The proposed learning rule is supervised, and requires access to the error in observable outputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the proposed method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The output errors are fed back with random, but fixed feedback weights in the FOLLOW scheme.",
+    "claim_type": "EXPLICIT",
+    "source": "The output errors are fed back with random, but fixed feedback weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the proposed method's architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Given a set of fixed error-feedback weights, the FOLLOW learning rule is synaptically local and combines presynaptic activity with the local postsynaptic error variable.",
+    "claim_type": "EXPLICIT",
+    "source": "Given a set of fixed error-feedback weights, the learning rule is synaptically local and combines presynaptic activity with the local postsynaptic error variable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the proposed learning rule's properties.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The command representation neurons project via plastic feedforward connections to a recurrent network.",
+    "claim_type": "EXPLICIT",
+    "source": "These neurons project, via plastic feedforward connections, to a recurrent network of also 3000 to 5000 integrate-and-fire neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architecture of the model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Deterministic leaky integrate-and-fire neurons were used for all numerical simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "For all numerical simulations, we used deterministic leaky integrate and fire (LIF) neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the neuron model used in simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Biases and input weights of the spiking neurons vary between neurons, yielding different frequency versus input curves for different neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Biases and input weights of the spiking neurons vary between one neuron and the next, both in the command representation layer and the recurrent network, yielding different frequency versus input curves for different neurons (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the heterogeneity of the network, illustrated in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The decoding weights can be pre-learned by biologically plausible learning schemes.",
+    "claim_type": "EXPLICIT",
+    "source": "We used an algorithmic learning scheme here, but we expect that these decoding weights can also be pre-learned by biologically plausible learning schemes (D'Souza et al., 2010; Urbanczik and Senn, 2014; Burbank, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about potential biological plausibility, supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The combination of the auto-encoder and the error feedback implies that the output stays close to the reference.",
+    "claim_type": "EXPLICIT",
+    "source": "The combination of the auto-encoder and the error feedback implies that the output stays close to the reference, as explained now.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is derived from the mathematical analysis of the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The FOLLOW learning scheme converges to a stable solution under precise mathematical conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Under precise mathematical conditions, we show in the Methods that the FOLLOW scheme converges to a stable solution, while simultaneously deriving the learning rule.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is proven in the Methods section using Lyapunov stability analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "During learning, the error feedback via the auto-encoder in a loop serves to make the error current available in each neuron for a local synaptic plasticity rule.",
+    "claim_type": "EXPLICIT",
+    "source": "During learning, the error feedback via the auto-encoder in a loop serves two roles: (i) to make the error current available in each neuron, projected correctly, for a local synaptic plasticity rule, and (ii) to drive the spike trains to the target ones for producing the reference output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation of the mechanism of the FOLLOW scheme.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "During learning, the error feedback via the auto-encoder in a loop serves to drive the spike trains to the target ones for producing the reference output.",
+    "claim_type": "EXPLICIT",
+    "source": "During learning, the error feedback via the auto-encoder in a loop serves two roles: (i) to make the error current available in each neuron, projected correctly, for a local synaptic plasticity rule, and (ii) to drive the spike trains to the target ones for producing the reference output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation of the mechanism of the FOLLOW scheme.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "In the FOLLOW scheme, the spike trains are constrained to closely follow the ideal time course throughout learning, so that the present error can be attributed directly to the weights.",
+    "claim_type": "EXPLICIT",
+    "source": "In the FOLLOW scheme, the spike trains are constrained to closely follow the ideal time course throughout learning, so that the present error can be attributed directly to the weights, enabling us to change the weights with a simple perceptron-like learning rule (Rosenblatt, 1961) as in Equation (10), bypassing the credit assignment problem.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation of how the FOLLOW scheme addresses the credit assignment problem, with a citation to the perceptron rule.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "FORCE learning clamps the output and neural activities to be close to ideal during learning by using weight changes that are faster than the time scale of the dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "FORCE learning (Sussillo and Abbott, 2009, 2012; DePasquale et al., 2016; Thalmeier et al., 2016; Nicola and Clopath, 2016) also clamps the output and neural activities to be close to ideal during learning, by using weight changes that are faster than the time scale of the dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work (FORCE learning), supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "In the FOLLOW scheme, clamping is achieved via negative error feedback using the auto-encoder, which allows weight changes to be slow and makes the error current available locally in the post-synaptic neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "In our FOLLOW scheme, clamping is achieved via negative error feedback using the auto-encoder, which allows weight changes to be slow and makes the error current available locally in the post-synaptic neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of FOLLOW with FORCE learning, highlighting the differences.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Other methods used feedback based on adaptive control for learning in recurrent networks of spiking neurons, but were limited to linear systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Other methods used feedback based on adaptive control for learning in recurrent networks of spiking neurons, but were limited to linear systems (MacNeil and Eliasmith, 2011; Bourdoukan and Den\u00e8ve, 2015), whereas the FOLLOW scheme was derived for non-linear systems (see Methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The FOLLOW learning rule is local since all quantities needed on the right-hand-side of Equation (10) could be available at the location of the synapse in the postsynaptic neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "The FOLLOW learning rule is local since all quantities needed on the right-hand-side of Equation (10) could be available at the location of the synapse in the postsynaptic neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the locality of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The FOLLOW scheme enabled a network with 3000 neurons in the recurrent network and 3000 neurons in the motor command representation layer to approximate the non-linear 2-dimensional van der Pol oscillator.",
+    "claim_type": "EXPLICIT",
+    "source": "Our FOLLOW learning scheme enabled a network with 3000 neurons in the recurrent network and 3000 neurons in the motor command representation layer to approximate the non-linear 2-dimensional van der Pol oscillator (Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in the simulation results shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "A superposition of random steps was used as input during learning, with amplitudes drawn uniformly from an interval, changing on two time scales, 50 ms and 4 s.",
+    "claim_type": "EXPLICIT",
+    "source": "We used a superposition of random steps as input, with amplitudes drawn uniformly from an interval, changing on two time scales, 50 ms and 4 s (see Methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the input used during learning.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "With feedback, the error dropped to a very low value, immediately after the start of learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, with feedback, the error dropped to a very low value, immediately after the start of learning (Figure 2B,C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 2B,C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "During learning, the error dropped even further over time.",
+    "claim_type": "EXPLICIT",
+    "source": "During learning, the error dropped even further over time (Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 2D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "In the open-loop testing phase without error feedback, a sharp square pulse as initial input on different 4 s long pedestal values caused the network to track the reference.",
+    "claim_type": "EXPLICIT",
+    "source": "In the open-loop testing phase without error feedback, a sharp square pulse as initial input on different 4 s long pedestal values caused the network to track the reference as shown in Figure 2Aii\u2013Cii panels.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 2Aii\u2013Cii.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "For some values of the constant pedestal input, the phase of the output of the recurrent network differed from that of the reference, but the shape of the non-linear oscillation was well predicted.",
+    "claim_type": "EXPLICIT",
+    "source": "For some values of the constant pedestal input, the phase of the output of the recurrent network differed from that of the reference (Figure 2Bii), but the shape of the non-linear oscillation was well predicted as indicated by the similarity of the trajectories in state space (Figure 2Cii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 2Bii and 2Cii.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The spiking pattern of neurons of the recurrent network changed as a function of time, with inter-spike intervals of individual neurons correlated with the output, and varying over time.",
+    "claim_type": "EXPLICIT",
+    "source": "The spiking pattern of neurons of the recurrent network changed as a function of time, with inter-spike intervals of individual neurons correlated with the output, and varying over time (Figure 2H,I).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 2H,I.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The distributions of firing rates averaged over a 0.25 s period with fairly constant output, and over a 16 s period with time-varying output, were long-tailed, with the mean across neurons maintained at approximately 12\u201313 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "The distributions of firing rates averaged over a 0.25 s period with fairly constant output, and over a 16 s period with time-varying output, were long-tailed, with the mean across neurons maintained at approximately 12\u201313 Hz (Figure 2E,F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 2E,F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The reference was approximated better and learning time was shorter with higher firing rates compared to lower rates.",
+    "claim_type": "EXPLICIT",
+    "source": "The reference was approximated better and learning time was shorter with higher rates (Figure 2\u2014figure supplement 1 \u2013 10,000 s with constant learning rate) compared to the low rates here (Figure 2 \u2013 5,000 s with 20 times the learning rate after 1,000 s).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed by comparing simulation results in Figure 2 and Figure 2\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The readout weights could be approximately learned only for the network having the learned weights and not the shuffled ones.",
+    "claim_type": "EXPLICIT",
+    "source": "The readout weights could be approximately learned only for the network having the learned weights and not the shuffled ones (Figure 2\u2014figure supplement 3), supporting the view that the network does not behave like a reservoir (Methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 2\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The FOLLOW scheme enabled a network with 5000 neurons each in the command representation layer and recurrent network to learn the 3-dimensional non-linear chaotic Lorenz system.",
+    "claim_type": "EXPLICIT",
+    "source": "Our FOLLOW scheme also enabled a network with 5000 neurons each in the command representation layer and recurrent network, to learn the 3-dimensional non-linear chaotic Lorenz system (Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in the simulation results shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The activity of the spiking network exhibits qualitatively the same underlying strange attractor dynamics as the Lorenz system, as seen from the butterfly shape of the attractor in configuration space, and the tent map of successive maxima versus the previous maxima.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, however, the activity of the spiking network exhibits qualitatively the same underlying strange attractor dynamics, as seen from the butterfly shape (Lorenz, 1963) of the attractor in configuration space, and the tent map (Lorenz, 1963) of successive maxima versus the previous maxima (Figure 3D,E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 3D,E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "A feedforward and recurrent network architecture with 5000 neurons in each layer was able to approximate the dynamics of a two-link arm model.",
+    "claim_type": "EXPLICIT",
+    "source": "Still, our feedforward and recurrent network architecture (Figure 1B) with 5000 neurons in each layer was able to approximate these dynamics.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in the simulation results shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The FOLLOW scheme learned to reproduce the arm dynamics even without error feedback for a few seconds during the test phase.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the FOLLOW scheme learned to reproduce the arm dynamics even without error feedback for a few seconds during the test phase (Figure 4 and Video 1 and Video 2), which corresponds to the time horizon needed for the planning of short arm movements.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in the simulation results shown in Figure 4 and Videos 1 and 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The network can perform an acrobot-like task in open-loop condition, suggesting that it has learned the inertial properties of the arm model.",
+    "claim_type": "EXPLICIT",
+    "source": "The control input and the dynamics (Figure 4A\u2013C right panels, Figure 4E and Video 2) show that the network can perform the task in open-loop condition suggesting that it has learned the inertial properties of the arm model, necessary for this simplified acrobot task.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in the simulation results shown in Figure 4 and Video 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The low-dimensional error feedback was able to entrain the network spike times to the reference spike times.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, the low-dimensional error feedback was able to entrain the network spike times to the reference spike times (Figure 5C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Learning was slower with sparser connectivity; but with twice the learning time, a sparse network with about 25% connectivity reached similar performance as the fully connected network with standard learning time.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 6A, we found that learning was slower with sparser connectivity; but with twice the learning time, a sparse network with about 25% connectivity reached similar performance as the fully connected network with standard learning time.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The FOLLOW learning scheme is robust to multiplicative noise on the decoding weights.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the FOLLOW learning scheme is robust to multiplicative noise on the decoding weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is concluded from the simulation results (Figure 6C,D).",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The FOLLOW learning scheme enables a spiking neural network to function as a forward predictive model that mimics a non-linear dynamical system activated by one or several time-varying inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "The FOLLOW learning scheme enables a spiking neural network to function as a forward predictive model that mimics a non-linear dynamical system activated by one or several time-varying inputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main conclusion of the paper, supported by the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The FOLLOW learning rule is supervised, local, and comes with a proof of stability.",
+    "claim_type": "EXPLICIT",
+    "source": "The learning rule is supervised, local, and comes with a proof of stability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "These are the key properties of the FOLLOW learning rule, demonstrated and proven in the paper.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The FOLLOW learning scheme uses error feedback where the error is defined as the difference between predicted output and the actual observed output.",
+    "claim_type": "EXPLICIT",
+    "source": "It is supervised because the FOLLOW learning scheme uses error feedback where the error is defined as the difference between predicted output and the actual observed output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the supervised nature of the learning scheme.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Error feedback forces the output of the system to mimic the reference, an effect that is widely used in adaptive control theory.",
+    "claim_type": "EXPLICIT",
+    "source": "Error feedback forces the output of the system to mimic the reference, an effect that is widely used in adaptive control theory (Narendra and Annaswamy, 1989; Ioannou and Sun, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the mechanism of error feedback, supported by citations to adaptive control theory.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The learning rule is local in the sense that it combines information about presynaptic spike arrival with an abstract quantity that is available in the postsynaptic neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "The learning rule is local in the sense that it combines information about presynaptic spike arrival with an abstract quantity that we imagine to be available in the postsynaptic neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the locality of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The variable representing the postsynaptic quantity is not the postsynaptic firing rate, spike time, or postsynaptic membrane potential, but the error current projected by feedback connections onto the postsynaptic neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to standard Hebbian learning, the variable representing this postsynaptic quantity is not the postsynaptic firing rate, spike time, or postsynaptic membrane potential, but the error current projected by feedback connections onto the postsynaptic neuron, similar in spirit to modern biological implementations of approximated backpropagation (Roelfsema and van Ooyen, 2005; Lillicrap et al., 2016) or local versions of FORCE (Sussillo and Abbott, 2009) learning rules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the postsynaptic quantity used in the learning rule, with citations to related work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The postsynaptic quantity is different from the postsynaptic membrane potential or the total postsynaptic current which would also include input from feedforward and recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "We emphasize that the postsynaptic quantity is different from the postsynaptic membrane potential or the total postsynaptic current which would also include input from feedforward and recurrent connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a clarification of what the postsynaptic quantity is not.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The combination of effects caused by presynaptic spike arrival and error information available in the postsynaptic cell drives weight changes, in loose analogy to standard Hebbian learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus the combination of effects caused by presynaptic spike arrival and error information available in the postsynaptic cell drives weight changes, in loose analogy to standard Hebbian learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the learning rule mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The separation of the error current from the currents at feedforward or recurrent synapses could be spatial or chemical.",
+    "claim_type": "EXPLICIT",
+    "source": "The separation of the error current from the currents at feedforward or recurrent synapses could be spatial (such as suggested in Figure 7A) or chemical if the error current projects onto synapses that trigger a signalling cascade that is different from that at other synapses.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a discussion of possible biological implementations.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The signals triggered by the error currents need to be available throughout the postsynaptic neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, whether it is a spatial or chemical separation, the signals triggered by the error currents need to be available throughout the postsynaptic neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a requirement for the biological implementation of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The plasticity of synapses that are driven by pre-synaptic input in the basal dendrites of cortical pyramidal neurons should be modulated by currents injected in the apical dendrite or on stimulation of feedback connections.",
+    "claim_type": "EXPLICIT",
+    "source": "This leads us to a prediction regarding synaptic plasticity that, say in cortical pyramidal neurons, the plasticity of synapses that are driven by pre-synaptic input in the basal dendrites, should be modulated by currents injected in the apical dendrite or on stimulation of feedback connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a testable prediction of the FOLLOW learning scheme.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "A pre-learned auto-encoder in a high-gain negative feedback loop is a specific prediction of the FOLLOW learning scheme, to be tested in systems-level experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "A pre-learned auto-encoder in a high-gain negative feedback loop is in fact a specific prediction of our learning scheme, to be tested in systems-level experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a testable prediction of the FOLLOW learning scheme.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Typical reaching movements extend over hundreds of milliseconds or a few seconds whereas neuronal spike transmission delays and synaptic time constants can be as short as a few milliseconds.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, typical reaching movements extend over hundreds of milliseconds or a few seconds whereas neuronal spike transmission delays and synaptic time constants can be as short as a few milliseconds.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the time scales of motor movements and neural dynamics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "In the simulations, neuronal and synaptic time constants were set to 20 ms, yet the network dynamics evolved on the time scale of hundreds of milliseconds or a few seconds, even in the open-loop condition when error feedback was switched off.",
+    "claim_type": "EXPLICIT",
+    "source": "In our simulations, neuronal and synaptic time constants were set to 20 ms, yet the network dynamics evolved on the time scale of hundreds of milliseconds or a few seconds, even in the open-loop condition when error feedback was switched off (Figures 2 and 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figures 2 and 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Reservoir computing models exploit recurrent networks of non-linear units in an activity regime close to chaos where temporal dynamics is rich.",
+    "claim_type": "EXPLICIT",
+    "source": "Reservoir computing models exploit recurrent networks of non-linear units in an activity regime close to chaos where temporal dynamics is rich (Jaeger, 2001; Maass et al., 2002; Legenstein et al., 2003; Maass and Markram, 2004; Jaeger and Haas, 2004; Joshi and Maass, 2005; Legenstein and Maass, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about reservoir computing, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Typical applications of reservoir computing are concerned with tasks involving a small set of desired output trajectories.",
+    "claim_type": "EXPLICIT",
+    "source": "While typical applications of reservoir computing are concerned with tasks involving a small set of desired output trajectories (such as switches or oscillators), our FOLLOW learning enables a recurrent network with a single set of parameters to mimic a dynamical system over a broad range of time-dependent inputs with a large family of different trajectories in the output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of FOLLOW with reservoir computing.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "FOLLOW learning enables a recurrent network with a single set of parameters to mimic a dynamical system over a broad range of time-dependent inputs with a large family of different trajectories in the output.",
+    "claim_type": "EXPLICIT",
+    "source": "While typical applications of reservoir computing are concerned with tasks involving a small set of desired output trajectories (such as switches or oscillators), our FOLLOW learning enables a recurrent network with a single set of parameters to mimic a dynamical system over a broad range of time-dependent inputs with a large family of different trajectories in the output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the capability of FOLLOW learning, demonstrated in the simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Initial versions of reservoir computing focused on learning the readout weights.",
+    "claim_type": "EXPLICIT",
+    "source": "Whereas initial versions of reservoir computing focused on learning the readout weights, applications of FORCE learning to recurrent networks of rate units made it possible to also learn the recurrent weights (Sussillo and Abbott, 2009, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the evolution of reservoir computing and FORCE learning, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Applications of FORCE learning to recurrent networks of rate units made it possible to also learn the recurrent weights.",
+    "claim_type": "EXPLICIT",
+    "source": "Whereas initial versions of reservoir computing focused on learning the readout weights, applications of FORCE learning to recurrent networks of rate units made it possible to also learn the recurrent weights (Sussillo and Abbott, 2009, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about FORCE learning, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "In FORCE learning for a multi-dimensional target, multi-dimensional errors were typically fed to distinct parts of the network, as opposed to the distributed encoding used in the FOLLOW network.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in the case of a multi-dimensional target, multi-dimensional errors were typically fed to distinct parts of the network, as opposed to the distributed encoding used in our network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of FOLLOW with FORCE learning.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The time scale of synaptic plasticity in FORCE learning is faster than the time scale of the dynamical system which is unlikely to be consistent with biology.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the time scale of synaptic plasticity in FORCE learning is faster than the time scale of the dynamical system which is unlikely to be consistent with biology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a criticism of FORCE learning in terms of biological plausibility.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Modern applications of FORCE learning to spiking networks inherit the issues of faster-than-dynamics weight changes and non-distributed error encoding.",
+    "claim_type": "EXPLICIT",
+    "source": "Modern applications of FORCE learning to spiking networks (DePasquale et al., 2016; Thalmeier et al., 2016; Nicola and Clopath, 2016) inherit these issues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about modern FORCE learning applications, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Adaptive control of non-linear systems using continuous rate neurons or spiking neurons has primarily focused on learning parameters in adaptive feedback paths, rather than learning weights in a recurrent network.",
+    "claim_type": "EXPLICIT",
+    "source": "Adaptive control of non-linear systems using continuous rate neurons (Sanner and Slotine, 1992; Weiping Li et al., 1987; Slotine and Coetsee, 1986) or spiking neurons (DeWolf et al., 2016) has primarily focused on learning parameters in adaptive feedback paths, rather than learning weights in a recurrent network, using learning rules involving quantities that do not appear in the pre- or post-synaptic neurons, making them difficult to interpret as local to synapses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work in adaptive control, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Recurrent networks of rate units have occasionally been used for control, but trained either via real-time recurrent learning or the extended Kalman filter which are non-local in space, or via backpropagation through time which is offline.",
+    "claim_type": "EXPLICIT",
+    "source": "Recurrent networks of rate units have occasionally been used for control (Zerkaoui et al., 2009), but trained either via real-time recurrent learning or the extended Kalman filter which are non-local in space, or via backpropagation through time which is offline (Pearlmutter, 1995).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Recent studies have used neural network techniques to train inverse models by motor babbling, to describe behavioral data in humans and song birds, albeit with abstract networks.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent studies have used neural network techniques to train inverse models by motor babbling, to describe behavioral data in humans (Berniker and Kording, 2015) and song birds (Hanuschkin et al., 2013), albeit with abstract networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about recent studies, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Optimal control methods or stochastic gradient descent have been applied in recurrent networks of neurons, but with limited biological plausibility of the published learning rules.",
+    "claim_type": "EXPLICIT",
+    "source": "Optimal control methods (Hennequin et al., 2014) or stochastic gradient descent (Song et al., 2016) have also been applied in recurrent networks of neurons, but with limited biological plausibility of the published learning rules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Biologically plausible forms of reward-modulated Hebbian rules on the output weights of a reservoir have been used to learn periodic pattern generation and abstract computations.",
+    "claim_type": "EXPLICIT",
+    "source": "As an alternative to supervised schemes, biologically plausible forms of reward-modulated Hebbian rules on the output weights of a reservoir have been used to learn periodic pattern generation and abstract computations (Hoerzer et al., 2014; Legenstein et al., 2010), but how such modulated Hebbian rules could be used in predicting non-linear dynamics given time-dependent control input remains open.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior work, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The FOLLOW learning scheme does not require full connectivity but also works with biologically more plausible sparse connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Additional features of the FOLLOW learning scheme are that it does not require full connectivity but also works with biologically more plausible sparse connectivity; and it is robust to multiplicative noise in the output decoders, analogous to recent results on approximate error backpropagation in artificial neural networks (Lillicrap et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulation results (Figure 6A).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "The FOLLOW learning scheme is robust to multiplicative noise in the output decoders, analogous to recent results on approximate error backpropagation in artificial neural networks.",
+    "claim_type": "EXPLICIT",
+    "source": "Additional features of the FOLLOW learning scheme are that it does not require full connectivity but also works with biologically more plausible sparse connectivity; and it is robust to multiplicative noise in the output decoders, analogous to recent results on approximate error backpropagation in artificial neural networks (Lillicrap et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the simulation results (Figure 6C,D) and compared to prior work with a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Since the low-dimensional output and all neural currents are spatially averaged over a large number of synaptically-filtered spike trains, neurons in the FOLLOW network do not necessarily need to fire at rates higher than the inverse of the synaptic time scale.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the low-dimensional output and all neural currents are spatially averaged over a large number of synaptically-filtered spike trains, neurons in the FOLLOW network do not necessarily need to fire at rates higher than the inverse of the synaptic time scale.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the firing rate requirements of the FOLLOW network.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The FOLLOW approach used a network of heterogeneous neurons as in the Neural Engineering Framework.",
+    "claim_type": "EXPLICIT",
+    "source": "In conclusion, we used a network of heterogeneous neurons as in the Neural Engineering Framework (Eliasmith and Anderson, 2004), employed a pre-learned auto-encoder to enable negative feedback of error as in adaptive control theory (Morse, 1980; Narendra et al., 1980; Slotine and Coetsee, 1986; Weiping Li et al., 1987; Narendra and Annaswamy, 1989; Sastry and Bodson, 1989; Ioannou and Sun, 2012), and derived and demonstrated a local and online learning rule for recurrent connections that learn to reproduce non-linear dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the approach, with citations to related work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The FOLLOW approach employed a pre-learned auto-encoder to enable negative feedback of error as in adaptive control theory.",
+    "claim_type": "EXPLICIT",
+    "source": "In conclusion, we used a network of heterogeneous neurons as in the Neural Engineering Framework (Eliasmith and Anderson, 2004), employed a pre-learned auto-encoder to enable negative feedback of error as in adaptive control theory (Morse, 1980; Narendra et al., 1980; Slotine and Coetsee, 1986; Weiping Li et al., 1987; Narendra and Annaswamy, 1989; Sastry and Bodson, 1989; Ioannou and Sun, 2012), and derived and demonstrated a local and online learning rule for recurrent connections that learn to reproduce non-linear dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the approach, with citations to related work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The present implementation of the FOLLOW learning scheme in spiking neurons violates Dale's law because synapses originating from the same presynaptic neuron can have positive or negative weights.",
+    "claim_type": "EXPLICIT",
+    "source": "Our present implementation of the FOLLOW learning scheme in spiking neurons violates Dale's law because synapses originating from the same presynaptic neuron can have positive or negative weights, but in a different context extensions incorporating Dale's law have been suggested (Parisien et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation of the current implementation, with a citation to potential solutions.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Neurons in cortical networks are seen to maintain a balance of excitatory and inhibitory incoming currents.",
+    "claim_type": "EXPLICIT",
+    "source": "Neurons in cortical networks are also seen to maintain a balance of excitatory and inhibitory incoming currents (Den\u00e8ve and Machens, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about cortical networks, supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  }
+]

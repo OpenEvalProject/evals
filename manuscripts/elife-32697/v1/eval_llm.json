@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C117"
+    ],
+    "result": "The ph505 tumor model was established and validated. Mutant clones were generated using the Flp/FRT and MARCM systems, showing reduced Ph expression, disrupted polarity, and low viability. Rescue experiments with wild-type ph reduced tumor volume from 46% to 7% and restored eclosion rates to near-normal levels (97% vs 99% control), demonstrating that the tumorigenic phenotype is primarily due to loss of ph. An image analysis pipeline was developed to quantify tumor volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 and C117 collectively establish a well-controlled tumor model with appropriate rescue experiments. The quantitative measurements (C9-C12) show statistically significant differences, and the rescue with wild-type ph (C7-C10, C12) provides strong evidence for specificity. The development of an unbiased quantification method (C117) strengthens the rigor of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The neoplastic behavior of ph505-tumors is attributed solely to transcriptional deregulation rather than genetic instability, as these tumors do not accumulate genetic instabilities even when cultivated for prolonged periods in adult hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by citation to prior work (Sievers et al., 2014) and are consistent with the rescue experiments showing that restoring ph function reverses the phenotype. This establishes that the tumor phenotype is epigenetic rather than due to accumulated mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "RNA-seq analysis of FACS-sorted ph505 tumor cells revealed global transcriptional deregulation with 1337 differentially expressed genes (275 upregulated, 1062 downregulated). Gene set enrichment analysis showed downregulation of neurogenesis-related genes and upregulation of transcription-regulating genes, consistent with PcG proteins functioning as a global regulatory system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 describe a comprehensive RNA-seq analysis with appropriate controls (FACS-sorted tumor vs. neighboring wild-type cells). The statistical threshold (padj <0.01) is stringent, and the gene set enrichment analysis provides biological interpretation. The findings are internally consistent and align with known PcG biology (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C115",
+      "C116"
+    ],
+    "result": "Hierarchical clustering analysis of 83 transcriptome samples showed that ph505-tumor cells cluster with early embryonic developmental stages, suggesting re-establishment of an earlier developmental program. This clustering is not a general feature of all tumors, as other tumor types (brat and RasV12/scrib-) do not cluster with embryos. Computational analysis predicted caudal, grain, and knirps as key transcription factors responsible for the differential expression pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C115-C116 present a well-designed comparative analysis using publicly available datasets. The inclusion of other tumor types as negative controls (C28) strengthens the specificity of the finding. The computational prediction of key TFs (C115-C116) using iRegulon provides testable hypotheses, though the interpretation of clustering as reflecting developmental reprogramming (C27) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "ph505-tumor cells show loss of differentiation markers (ELAV, Eya downregulated) and ectopic expression of embryonic transcription factors (Even-skipped, Abdominal-B, Caudal), but not Homothorax. This suggests that ph505-tumor cells switch cell fate and fail to differentiate, but do not depend on Hth for maintaining the undifferentiated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C32-C38 are supported by both RNA-seq data and protein-level validation through immunostaining. The finding that Hth is not ectopically expressed (C32-C34) distinguishes this tumor model from previously reported mechanisms and is well-supported by both transcriptomic and protein data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "An in vivo RNAi screen of 24 upregulated transcription factors identified knirps as a critical regulator of ph505 tumorigenesis. Knockdown of kni in ph505 clones reduced tumor volume from 46% to 5% (9.2-fold decrease) and increased eclosion rate to near-normal levels. The effect was validated with a second independent RNAi line and was associated with restoration of differentiation markers (ELAV expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C50 describe a systematic screen with appropriate quantification and validation. The use of two independent RNAi lines (C50) controls for off-target effects. The correlation between eclosion rate and tumor volume (C45) is supported by quantitative data. The restoration of ELAV expression (C48-C49) provides mechanistic insight linking kni to the differentiation block.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Transplantation assays demonstrated that knirps plays a crucial role in ph505 tumorigenesis. ph505 tumors showed increasing tumor-bearing hosts (40% to 60%) over time, with tumors detectable by day 7. In contrast, ph505, kni-KD clones showed minimal tumorigenic capacity, with only a single tumor-bearing host observed after 5 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide functional validation of kni's role in tumorigenesis using transplantation assays. The dramatic difference between ph505 and ph505, kni-KD conditions (60% vs ~3% tumor-bearing hosts) provides strong evidence for kni's importance. The time-course data (C51-C52) demonstrates the progressive nature of ph505 tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The anti-oncogenic effects of kni knockdown are not primarily due to increased apoptosis, as blocking apoptosis with p35 did not revert the phenotype. Additionally, kni-KD in neutral FRT19A clones showed no effect on viability or eye development, indicating that the RNAi line does not have non-specific developmental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide important mechanistic insights and controls. The p35 rescue experiment (C56-C57) rules out apoptosis as the primary mechanism. The neutral clone control (C58-C59) demonstrates specificity of the kni-KD effect to the tumor context, strengthening the conclusion that kni's role is context-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Ectopic expression of knirps in wild-type eye-antennal imaginal discs is sufficient to drive tumorigenesis. Kni overexpression leads to cyst formation, disrupted epithelial polarity, reduced viability (35% eclosion rate), and defective eye development. Transplantation assays showed that kni-expressing tissues generate tumors in 15-50% of hosts by 3-5 weeks, establishing knirps as a new oncogene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 provide gain-of-function evidence complementing the loss-of-function data. The multiple phenotypic readouts (cyst formation, polarity disruption, viability, transplantation) provide convergent evidence. The transplantation data (C63) demonstrates tumorigenic sufficiency. The conclusion that kni is a new oncogene (C65) is well-supported by both loss- and gain-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Ectopic knirps expression specifically activates the JAK/STAT pathway but not JNK or Notch pathways in mitotic clones. This suggests that JAK/STAT activation is directly downstream of knirps, while activation of other pathways in ph505-tumors is likely due to other Ph-regulated factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 use pathway-specific reporters to dissect signaling downstream of kni. The selective activation of JAK/STAT (C66-C67) but not JNK or Notch provides mechanistic specificity. The interpretation that other pathways are kni-independent (C68) is logical given the data, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C76"
+    ],
+    "result": "Kni-expressing clones show disrupted expression of differentiation markers (ELAV, Eya) without ectopic Hth activation, similar to ph505 clones. This blockage of normal differentiation is a common feature between ph505 and kni-ectopic tumors, supporting the hypothesis that knirps alone is sufficient to initiate tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 and C76 demonstrate phenotypic similarity between kni-ectopic and ph505 tumors at the level of differentiation markers. The parallel loss of ELAV and Eya (C69-C70) without Hth activation (C71) in both contexts supports the conclusion that kni recapitulates key features of ph505 tumors (C72, C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C111"
+    ],
+    "result": "JAK/STAT signaling contributes to the differentiation block in ph505 and kni-ectopic tumors. Blocking JAK/STAT in ph505-tumors (using dome\u2206CYT) restored ELAV expression to near-normal levels and increased viability to 85% eclosion rate, with some adult flies showing normal eye structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C111 provide functional evidence for JAK/STAT's role in the differentiation block. The restoration of ELAV expression (C74) and viability (C75) upon JAK/STAT blockade provides strong support. The consistency with prior work (C111) strengthens the interpretation. However, the mechanism by which kni activates JAK/STAT remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "Overexpression of the pro-neural transcription factor atonal in ph505 clones suppresses the tumorigenic phenotype, reducing tumor volume from 46% to 3% and increasing eclosion rate from 12% to 84%. Atonal expression restores normal differentiation patterns (ELAV expression) and antagonizes tumor growth by counterbalancing proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C85 demonstrate that forced differentiation can suppress tumorigenesis. The dramatic reduction in tumor volume (C79) and restoration of viability (C80) and differentiation markers (C81) provide strong evidence. The mechanistic link to proliferation (C85) is supported by pH3 quantification data, though the detailed mechanism remains to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Proliferation analysis revealed that ph505-tumor tissues show increased overall proliferation, largely due to increased proliferative cells outside of tumor clones. Atonal overexpression in ph505 clones decreases pH3+ cells inside clones compared to ph505 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide quantitative proliferation data using pH3 as a marker. The finding that increased proliferation is largely non-cell-autonomous (C83) is interesting but somewhat unexpected. The decrease in proliferation within ato-expressing clones (C84) supports the proposed mechanism of ato's anti-tumor effect. However, the non-cell-autonomous proliferation effect deserves further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "ph505-tumors display disrupted cell polarity (confirmed by Armadillo staining) and ectopic expression of MMP1, which is required for matrix degradation and invasive potential of tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 describe established tumor characteristics with appropriate markers. The observations are supported by immunostaining data and consistent with prior literature (citations provided). These are confirmatory findings that validate the tumor model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C11"
+    ],
+    "result": "Only a small number of larvae carrying ph505-tumors reached adulthood, with an eclosion rate of less than 20%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C11 provide consistent quantitative data on the lethality of ph505-tumors. The low eclosion rate is a key phenotypic readout used throughout the study and is well-documented with sample sizes provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The observation that ph505-tumor cells reverse developmental commitments and switch to primitive cell states is consistent with previous findings in neoplastic Drosophila epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 appropriately cites prior work (Khan et al., 2013) to contextualize the findings. This is a supporting citation that helps interpret the data but does not constitute a new finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The manuscript provides extensive background on tumor initiation, cellular identity, epigenetic regulation, PcG proteins, transcription factors, JAK/STAT signaling, differentiation, and therapeutic strategies, establishing the conceptual framework for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C114 represent established knowledge from the literature, appropriately cited to provide context. These are not new findings but rather background information that frames the study's significance. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The abstract summarizes the main findings: ph mutant cells show an embryonic-like signature, knirps is identified as a new oncogene that activates JAK/STAT and blocks differentiation, and tumor growth can be reduced by overexpressing a differentiation factor, demonstrating that epigenetically derailed tumors can be reversed by targeting key transcriptional regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 accurately summarize the major findings of the study. These claims are supported by the detailed results presented in the manuscript. The conclusions are appropriately stated as demonstrated findings rather than speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "The RNA-seq data has been deposited in GEO under accession number GSE101463.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 provides data availability information, which is verifiable and represents good scientific practice for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

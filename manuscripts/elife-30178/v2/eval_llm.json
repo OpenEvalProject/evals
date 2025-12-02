@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript provides background on nucleosome structure, histone modifications (H3K4me, H3K36me, H3K79me), and the existence of asymmetrically modified nucleosomes in various cell types. These claims establish the scientific context and prior knowledge for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are well-supported by citations to established structural and functional studies of nucleosomes and histone modifications. These represent accurate summaries of prior work in the field and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors successfully created a bivalent nucleosome system in yeast by engineering H3A110D and H3L130H mutants that form heterodimers but not homodimers. These mutant histones assemble equally into nucleosomes at a 1:1 ratio in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by multiple complementary experimental approaches including 5-FOA selection (Figure 1E), co-immunoprecipitation (Figure 2A), and ChIP assays (Figure 2B). The data consistently demonstrate equal incorporation of both mutant histones into nucleosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The H3D/H3H mutant strain is functionally viable and largely similar to wild-type cells under most conditions, though it shows reduced growth in raffinose/glycerol medium and altered nucleosome stability at the GAL1 locus. Global histone PTM levels and gene expression profiles are similar to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by multiple experimental approaches including MNase digestion (Figure 2C), growth assays (Figure 2D-E), western blots (Figure 2F), and RNA-Seq (Figure 2G). The data demonstrate that while the system is functional, there are some phenotypic differences from wild-type that should be considered when interpreting results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "N-terminal deletion of one sister H3 tail (amino acids 4-15) results in approximately 50% reduction in H3K4me3 levels, indicating that H3K4 methylation on one tail does not influence methylation on the other tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by western blot data (Figure 3B-C) showing approximately 50% reduction in both H3 N-terminal signal and H3K4me3 in asymmetric deletion mutants. The inference that methylation occurs independently on each tail is reasonable given the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "H3K4me3 levels in asymmetric K4R mutants (H3DK4R/H3H or H3D/H3HK4R) are approximately 50% of wild-type levels, demonstrating that K4me3 on one tail does not influence K4me3 on the other tail. H3K4me3 and H3K36me3 are independently regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by western blot data (Figure 4B-C) showing approximately 50% reduction in H3K4me3 but no change in H3K36me3 in asymmetric K4R mutants. The independence of methylation on sister tails is a reasonable inference from the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Sister H3K4me3 marks independently regulate GAL1 transcription. Single-tail K4R mutants show intermediate GAL1 mRNA levels (2-fold increase) compared to wild-type, while double-tail mutants show a further 2-fold increase. GAL1 mRNA levels are inversely proportional to H3K4me3 levels and correlate with Gal4 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by qRT-PCR data (Figure 4D-E), ChIP data for H3K4me3 (Figure 4F), and Gal4 recruitment (Figure 4G). The data consistently show intermediate phenotypes in asymmetric mutants, supporting independent function of sister H3K4me3 marks. The dose-dependent relationship is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "H3K4me2/3 (but not mono-methylation) on sister H3s contributes to GAL1 regulation. Deletion of SPP1 (affecting H3K4me3) shows intermediate GAL1 expression in asymmetric K4R mutants, while deletion of SDC1 or SET1 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by qRT-PCR data (Figure 4H) combined with knowledge of the differential effects of SPP1, SDC1, and SET1 deletions on H3K4 methylation states. The intermediate phenotype in spp1\u0394 asymmetric mutants supports the conclusion that H3K4me2/3 is the relevant modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "H3K36me3 levels in asymmetric K36R mutants are approximately 50% of wild-type levels, demonstrating that K36me3 on one tail does not affect K36me3 on the other tail. H3K36me3 and H3K4me are independently regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by western blot data (Figure 5B-C) showing approximately 50% reduction in H3K36me3 but no change in H3K4me3 in asymmetric K36R mutants. The independence of methylation on sister tails and between different modifications is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Sister H3K36me3 marks independently regulate suppression of spurious intragenic transcription. Asymmetric K36R mutants show intermediate levels of short transcripts and H4 acetylation compared to wild-type and double mutants. The effects are dependent on Set2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by Northern blot data (Figure 5D), ChIP data for H3K36me3 and H4ac (Figure 5E-F), and Set2 deletion experiments (Figure 5G). The intermediate phenotypes in asymmetric mutants and the inverse correlation between H3K36me3 and H4ac support independent function of sister H3K36me3 marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Sister H3K79me marks act cooperatively to maintain telomeric gene silencing. While H3K79me2/3 levels in asymmetric K79R mutants are approximately 50% of wild-type, these mutants show complete loss of silencing similar to double K79R mutants, indicating cooperative rather than independent function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by western blot data (Figure 6B-C), qRT-PCR of telomeric genes (Figure 6D), and ChIP data (Figure 6E-F). The key observation is that asymmetric mutants show the same silencing loss as double mutants despite having 50% H3K79me levels, strongly supporting cooperative function. This contrasts with the independent function observed for H3K4me3 and H3K36me3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Sister histone modifications differentially affect DNA damage responses. H3K36me and H3K79me marks function independently (showing intermediate sensitivity in asymmetric mutants), while H3K4me marks function cooperatively (single-tail mutants show greater sensitivity to phleomycin than double-tail mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by growth assays on genotoxic agents (Figure 7). The intermediate sensitivity of asymmetric K36R and K79R mutants supports independent function, while the greater sensitivity of single-tail K4R mutants to phleomycin compared to double-tail mutants supports cooperative function. However, the mechanistic basis for these differences is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Genome-wide analysis under glucose starvation reveals that sister H3K4me marks regulate different genes through cooperative (22 genes in Cluster I), independent (191 genes in Cluster II), or redundant (158 genes in Cluster III) mechanisms. Upregulated genes are enriched in Clusters I and II, while downregulated genes are enriched in Cluster III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by RNA-Seq data and statistical analysis using a gene skewness score (GSS) model (Figure 8A-B, Figure 8\u2014figure supplement 1). The classification of genes into three clusters based on their response patterns in asymmetric mutants is methodologically sound. ChIP validation of H3K4me3 levels at representative genes (Figure 8\u2014figure supplement 1C-E) supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Under glucose starvation stress, upregulated genes may require more subtle regulation mechanisms such as asymmetrical modification of sister histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is speculative reasoning based on the observation that upregulated genes are enriched in Clusters I and II. While the observation is supported by data (C63), the mechanistic interpretation that this represents a requirement for \"more subtle regulation\" is not directly tested and remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Many genes in Clusters I, II, and III overlap with genes regulated by SET1 deletion, confirming they are regulated by H3K4me rather than K4R mutation artifacts. Genes in Cluster II (independently regulated by sister H3K4me) are enriched in glycometabolism pathways, suggesting this regulatory mode is important for glucose starvation response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by comparison with SET1 deletion RNA-Seq data (Figure 8C) and KEGG pathway analysis (Figure 8D, Figure 8\u2014figure supplement 1G). The overlap with SET1-regulated genes validates that the observed effects are due to H3K4me rather than K4R mutation artifacts. The enrichment of glycometabolism genes in Cluster II is statistically significant and biologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The on-off regulatory mode for H3K4me applies to genes not specifically responding to external stimuli (Clusters I and III), while the fine-tuning mode evolved to regulate stress-responsive pathway genes (Cluster II).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 represent speculative evolutionary reasoning based on the observed patterns of gene regulation. While the data show different regulatory patterns for different gene clusters, the evolutionary interpretation that the \"fine-tuning mode evolved\" for stress-responsive pathways is not directly tested and remains a hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  }
+]

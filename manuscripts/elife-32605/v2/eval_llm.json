@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "A comprehensive Hydra behavior dataset was collected consisting of 53 videos from 53 Hydra polyps recorded at 5 Hz for an average of 30 minutes each, resulting in 360,000 manually annotated frames. Eight different behaviors were visually identified and annotated: silent, elongation, tentacle swaying, body swaying, bending, contraction, somersaulting, and feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C130-C142 provide comprehensive methodological details about data collection, including sample size (53 videos), recording parameters (5 Hz, 30 min average), total frames (360,000), and experimental conditions. The dataset composition and annotation are well-documented with specific details about animal husbandry, imaging setup, and experimental protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Analysis of behavior duration revealed that most behaviors lasted less than 10 seconds, and within 5-second time windows, most windows contained only one behavior type. Post-hoc comparison of different window sizes (1-20 s) demonstrated that 5-second windows resulted in the best classification performance, leading to the selection of 5 s as the analysis length for a behavior element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by data shown in Figures 1c and 1d, and Figure 2\u2014figure supplement 1a. The empirical observation of behavior duration (C5, C6) combined with systematic comparison of window sizes (C7) provides a data-driven justification for the methodological choice of 5 s windows (C8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Inter-annotator agreement between two human annotators was 52%, indicating substantial subjectivity in manual behavior annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is directly supported by Figure 1\u2014figure supplement 1 showing a confusion matrix between two annotators. This low agreement rate (52%) provides important context for evaluating the performance of automated methods and highlights the challenge of subjective manual annotation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "SVM classifiers achieved perfect training performance (100% accuracy, AUC=1) and strong validation performance (86.8% accuracy, mean AUC=0.97). On independent test data from three Hydra not involved in training, classification accuracies ranged from 71.9% to 93.9% across different behaviors, all significantly above chance. Soft classification allowing multiple labels improved performance to 86.8% on validation data and 59.0% on test data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 and C148-C150 are well-supported by quantitative results presented in Figure 3, Table 1, and accompanying text. The perfect training performance combined with strong validation and test performance demonstrates effective learning without obvious overfitting. The comparison with human annotator variability (C20) and the improvement from soft classification (C148-C150) provide additional validation. However, the drop from validation (86.8%) to test accuracy (59.0% soft, 50.1% hard) suggests some generalization challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The method successfully decomposed the complex somersaulting behavior into a sequence of basic behaviors (tentacle swaying, elongation, body swaying, contraction, elongation, bending, elongation, contraction), demonstrating that the approach can describe combined behaviors using the language of basic behavior types in agreement with human observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by Figure 3e showing the temporal structure of somersaulting classification. The segmented classification matches the expected sequence of behaviors during somersaulting, providing validation that the method can capture complex behavioral sequences. However, this is a qualitative validation rather than quantitative assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "t-SNE embedding of Fisher vectors revealed cluster-like structures corresponding to behavior types. The embedding identified 10 distinct behavior regions representing not only the seven supervised behavior types but also somersaulting and three stages of feeding. Embedding with continuous 5 s windows revealed the same behavior types, and validation showed that embedding could accurately identify behavior types matching manual annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 are supported by Figure 4 showing t-SNE embeddings with clear clustering by behavior type. The discovery of additional behavior regions beyond the seven supervised types (C32) demonstrates the unsupervised method's ability to reveal structure. The consistency between discrete and continuous windows (C33) and agreement with manual labels in validation and test data (C34-C35) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Long-term imaging of a Hydra polyp for 3 days with 12 hr dark/light cycles in a constrained chamber revealed 260 motif regions through embedding analysis. This identified previously defined behavior types and discovered subtypes within behaviors, including three subtypes of elongation and two subtypes of contraction based on the animal's state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by Figure 5 and Videos 12-19. The experimental design (C37-C39) is clearly described, and the discovery of 260 motif regions (C40) with both known behaviors and subtypes (C41-C43) demonstrates the method's ability to reveal fine-grained behavioral structure in long-term recordings. The identification of state-dependent subtypes is a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Unsupervised embedding discovered a previously unannotated egestion behavior (radial contraction occurring within 1 s) and a novel hypostome movement associated with egestion. Validation using an independent width-based detection method showed that detected egestion time points were densely distributed in the discovered egestion region, confirming the method's ability to identify novel behavior types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are strongly supported by Figure 5c-e and Videos 20-21. The discovery of egestion behavior (C44) is validated by an independent detection method based on body width changes (C49), providing orthogonal confirmation. The explanation for why egestion was missed in manual annotation (C47) is reasonable given its fast timescale. This demonstrates a key advantage of the unsupervised approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Lighting conditions (light vs. dark) did not significantly affect the average time spent in six basic behaviors or individual behavior variability. Well-fed Hydra showed no significant change in time spent in elongation compared to starved Hydra, but exhibited significantly less variability in elongation behavior (fed: 5.46\u00b10.53%, starved: 8.95\u00b10.69%, p=0.0047).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by Figure 6a-d with statistical testing. The lack of significant differences in most comparisons (C51-C53) is clearly shown, while the one significant difference in elongation variability (C54) is properly reported with statistics. However, the sample sizes are relatively small (n=6-7), which may limit statistical power to detect smaller effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Large Hydra polyps showed similar silent, body swaying, and contraction patterns to small Hydra, but spent significantly less time in elongation (large: 17.00\u00b10.74%, small: 22.42\u00b11.35%, p=0.0068) and more time in tentacle swaying (large: 41.06\u00b12.70%, small: 34.24\u00b11.24%, p=0.03). Individual behavior variability remained unchanged between size groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by Figure 6e-f with appropriate statistical tests. The size differences (2-3 fold) are substantial (C141), and the behavioral differences are statistically significant with reported p-values. However, the sample sizes are modest (n=7-10), and the imaging duration for this experiment was only 1 hour (C142), which is much shorter than other experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C208"
+    ],
+    "result": "Comparison between Hydra vulgaris and Hydra viridissima (which diverged at the base of Hydra radiation and contains symbiotic algae) revealed that H. viridissima exhibited significantly more elongation (18.63\u00b10.87% vs. 15.74\u00b10.50%, p=0.0303), less bending (1.35\u00b10.17% vs. 2.31\u00b10.27%, p=0.0177), and different variability in bending (1.33\u00b10.20% vs. 2.17\u00b10.26%, p=0.0480), demonstrating that different Hydra species have different basic behavioral repertoires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 and C208 are supported by Figure 6g-h with statistical testing. The evolutionary context (C59) and biological differences (C208) provide rationale for expecting behavioral differences. The statistically significant differences in multiple behaviors (C61-C63) support the conclusion that species differ in behavioral repertoires (C64). Sample sizes are modest (n=5-7) but adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C126",
+      "C127"
+    ],
+    "result": "Hydra vulgaris exhibits essentially the same behavior statistics under dark/light, large/small, and starved/fed conditions, with surprisingly similar overall dwell time and variance of behavioral repertoire across environmental and physiological conditions. Interspecies differences introduce stronger behavioral differences than environmental or physiological conditions, indicating a stable fundamental behavioral repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C126-C127 represent the main finding of the study, synthesizing results from multiple experimental comparisons (C51-C64). The conclusion is supported by the preponderance of non-significant differences within species compared to significant differences between species. However, the interpretation of 'stability' should be qualified by the limited range of conditions tested and the use of a clonal population (C187-C188), which reduces genetic variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C153",
+      "C154",
+      "C155",
+      "C199"
+    ],
+    "result": "An automatic behavior analysis pipeline for Hydra vulgaris was developed using machine learning, combining supervised (SVM) and unsupervised (t-SNE) methods. The framework extracts motion and shape features, constructs a dictionary of visual features, classifies pre-defined behaviors, and identifies unannotated behaviors. The method is applicable to organisms with deformable body shapes and enables investigation of behavioral repertoire stability under different conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125, C153-C155, C199 describe the overall methodological contribution. The pipeline is well-documented with detailed methods, validated through multiple approaches (supervised and unsupervised), and successfully applied to quantify behaviors and discover novel patterns. The claim of general applicability (C154) is reasonable given the method doesn't rely on Hydra-specific features, though actual testing on other organisms would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C164",
+      "C165"
+    ],
+    "result": "The BoW-based approach has limitations: it cannot capture fine-level behavior differences (e.g., single tentacle movements), does not recover transition probabilities between behaviors or behavioral interactions between individuals, treats each time window independently without temporal smoothness constraints, and the types of behaviors discovered are limited by the statistical nature of encoded features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159, C164-C165 honestly acknowledge methodological limitations. These are reasonable limitations given the BoW framework's design, which prioritizes generalizability over fine-grained detail. The authors appropriately discuss these limitations and suggest potential solutions (C160-C162), demonstrating good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The high accuracy of behavior classification, method reproducibility with small variances, and detection of statistical differences between species rule out the possibility that the method is insensitive. The lack of behavioral differences across individuals within species is interpreted as evidence for robust neural control of basic behavioral patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C179 address a potential concern about method sensitivity. The argument is logical: if the method were insensitive, it would not detect the species differences (C178) or achieve high classification accuracy (C176). However, the interpretation (C179) is one possible explanation among several (genetic similarity, passive stability, etc., discussed in C186-C192).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C128",
+      "C129",
+      "C209"
+    ],
+    "result": "The behavioral stability may reflect a 'housekeeping' repertoire conserved for normal physiology and survival, reminiscent of homeostatic mechanisms in crustacean central pattern generators. The Hydra genome contains over 100 neuropeptides that could serve as neuromodulators to maintain stable behavioral output across environmental conditions, potentially representing homeostatic neural control present in the earliest nervous systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180-C185, C128-C129, C209 present speculative interpretations about mechanisms. While the comparison to crustacean CPGs (C181-C182) is reasonable and the presence of neuropeptides (C183) is factual, the proposed mechanisms (C184-C185) are hypothetical. No direct evidence for neuromodulator involvement or homeostatic mechanisms is presented. These are plausible hypotheses for future testing rather than supported conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The behavioral similarity among Hydra specimens could be partly explained by genetic similarity, as animals were derived from the same clonally propagated colony (Hydra AEP strain), making them likely isogenic or genetically very similar. This lack of genetic variability could explain small quantitative variability within the colony and contribute to differences observed across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C190 present an important alternative explanation for behavioral similarity. The use of a clonal population (C187) is a fact, and the inference of genetic similarity (C188) is reasonable. This is an important caveat that appropriately qualifies the main conclusions about behavioral stability, as it's unclear how much variability would be observed in wild populations with greater genetic diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "The behavioral repertoire of cnidarians could be particularly simple and hardwired compared to bilaterians, representing 'passive stability' (unresponsive to environment) rather than 'active stability' (homeostatic control). This distinction mirrors open-loop versus closed-loop control systems in engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C191-C194 present an alternative interpretation to the homeostatic hypothesis. The distinction between passive and active stability (C192-C193) is conceptually clear, but no data are presented to distinguish between these possibilities. The authors appropriately frame this as speculation and suggest reverse engineering the nerve net (C194) as future work to address this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Previous work by Passano and McCullough (1964) reported circadian and feeding-dependent differences in contraction bursts in Hydra littoralis. However, their method measured event frequency via electrical recording, while the current method measures time spent in contractile behavior. Differences in measurement approach and light sources may explain discrepancies between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C171 appropriately contextualize the current findings relative to prior work. The distinction between measuring event frequency (prior work) versus time spent in behavior (current work) is an important methodological difference that could explain different conclusions. This demonstrates careful consideration of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The analysis provides a baseline for future behavioral studies and quantitative analysis of relationships between behavior and neural activity. Combined with GCaMP6s transgenic Hydra lines, it should enable identification of neural networks responsible for each behavior. Future work incorporating temporal models could quantify behavior sequences and investigate complex behaviors like social interactions and learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C202 describe the significance and future applications of the work. The baseline characterization (C195-C196) is clearly established by the current study. The potential applications (C197-C198, C201-C202) are reasonable given existing tools (GCaMP6s lines), though they represent future work rather than current results. These are appropriate forward-looking statements.",
+    "result_type": "MINOR"
+  }
+]

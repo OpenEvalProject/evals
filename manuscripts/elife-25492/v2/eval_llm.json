@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C15",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "GluN2A-NMDAR surface dynamics and synaptic content are minimally affected by glycine or D-serine. Glycine caused a modest 14% decrease in diffusion coefficient, but neither co-agonist altered MSD curves, synaptic content, total surface amount, or total cellular content of GluN2A-NMDAR. Enzymatic scavengers (BsGO, RgDAAO) also had no effect on GluN2A-NMDAR surface dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C15, C19-C22 collectively demonstrate through single-molecule tracking (QD), immunocytochemistry, and enzymatic scavenger experiments that GluN2A-NMDAR are largely unaffected by co-agonist manipulations. The data show consistent lack of effects across multiple experimental approaches with appropriate statistical analyses and adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "D-serine specifically reduces GluN2B-NMDAR surface diffusion and increases confinement, while glycine has minimal effects. D-serine decreased diffusion coefficient by 43% and markedly confined GluN2B-NMDAR movement (MSD analysis). Enzymatic degradation of endogenous glycine (BsGO) decreased GluN2B-NMDAR diffusion, while D-serine degradation (RgDAAO) had no effect. D-serine and BsGO reduced synaptic GluN2B-QD content by ~38% and ~64%, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14, C16-C18 provide converging evidence from single-molecule tracking experiments showing subunit-specific and co-agonist-specific effects on GluN2B-NMDAR. The use of both exogenous co-agonists and enzymatic scavengers strengthens the conclusion that endogenous D-serine regulates GluN2B-NMDAR trafficking. Statistical significance is reported with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "D-serine reduces synaptic GluN2B-NMDAR content without altering total receptor levels. Immunocytochemistry showed D-serine reduced synaptic GluN2B-NMDAR to 68% of control, while total surface and intracellular GluN2B-NMDAR remained unchanged. Western blot analysis of synaptosomes confirmed a 28% decrease in synaptic GluN2B levels with D-serine, with no change in GluN2A or GluN1 subunits, suggesting receptor redistribution rather than degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 demonstrate through multiple complementary techniques (immunocytochemistry, Western blot of synaptosomes) that D-serine specifically reduces synaptic GluN2B-NMDAR content without affecting total receptor levels. The consistency across methods and the specificity for GluN2B (not GluN2A or GluN1) strengthen the conclusion. The inference about redistribution (C31) is reasonable given stable total levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "D-serine effects on GluN2B-NMDAR trafficking require PDZ scaffold protein interactions, specifically with PSD-95. A competing peptide (TAT-GluN2B15) that disrupts GluN2B-PDZ interactions prevented D-serine-induced changes in GluN2B-NMDAR diffusion, confinement, and synaptic content. Co-immunoprecipitation experiments showed D-serine specifically reduced PSD-95 binding to GluN2B-NMDAR (to 81.6% of control) without affecting SAP-102 binding or GluN2A-NMDAR interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 provide strong mechanistic evidence through peptide competition experiments and co-immunoprecipitation that D-serine effects require PDZ protein interactions, specifically PSD-95. The specificity for PSD-95 (not SAP-102) and GluN2B (not GluN2A) strengthens the conclusion. However, the authors note that TAT peptide itself attenuates D-serine effects even at low concentrations, which slightly complicates interpretation but doesn't invalidate the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C92"
+    ],
+    "result": "D-serine, but not glycine, induces conformational changes in NMDAR C-terminus. FLIM-FRET experiments showed D-serine decreased GluN1-GFP lifetime by 23 ps (p<0.05), indicating increased FRET and closer proximity of GluN1 C-termini, while glycine had no effect. NMDA application increased lifetime (decreased FRET), and pre-incubation with NMDA prevented co-agonist effects. The authors conclude D-serine binding modifies NMDAR conformation differently than glycine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C45, C92 present FLIM-FRET data showing differential conformational effects of D-serine versus glycine. However, the authors themselves acknowledge the lifetime change is small (23 ps) and state 'it is not clear if this change is sufficient to modulate the interactions of NMDAR with their intracellular partners.' The conclusion (C92) is an inference that requires stronger FRET reporters for definitive validation, as the authors explicitly note.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C54",
+      "C55"
+    ],
+    "result": "The endogenous co-agonist at CA3-CA1 synapses switches from glycine to D-serine during postnatal development. Electrophysiology with enzymatic scavengers showed glycine is the main co-agonist during the first postnatal week, gradually replaced by D-serine over weeks 2-3. Capillary electrophoresis confirmed glycine levels decreased ~40% from pups to adults, while D-serine increased ~50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C54-C55 provide converging evidence from electrophysiology (enzymatic scavenger effects on NMDA-fEPSPs) and direct biochemical measurements (capillary electrophoresis) for a developmental switch in co-agonist availability. The data are consistent across methods and developmental time points, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Exogenous co-agonist application has minimal effects on GluN2A-NMDAR content across development. In young slices (P10-15), neither glycine nor D-serine altered zinc-mediated inhibition (proxy for GluN2A-NMDAR content). In adult slices, glycine caused a small decrease (52% to 39% zinc inhibition), while D-serine had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 use pharmacological isolation of GluN2A-NMDAR (zinc sensitivity) to show minimal effects of co-agonist manipulations. The data are consistent with the cell culture findings (C20-C22) that GluN2A-NMDAR are largely unaffected by co-agonists. The small glycine effect in adults is noted but doesn't contradict the main conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Co-agonist availability regulates synaptic GluN2B-NMDAR content in a developmentally-dependent manner. In young slices, D-serine reduced GluN2B-NMDAR content (40% to 22% Ro25-6981 inhibition), while glycine had no effect. In adult slices where GluN2B-NMDAR are normally absent, exogenous glycine recruited GluN2B-NMDAR to synapses (1.25% to 22.65% Ro25-6981 inhibition), while D-serine maintained their absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide striking evidence that co-agonist availability directly regulates synaptic GluN2B-NMDAR content in acute slices. The bidirectional effects (D-serine decreases in young, glycine increases in adults) strongly support the hypothesis that co-agonist identity, not just NMDAR activation, determines subunit composition. The effect sizes are large and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "GluN2A- and GluN2B-NMDAR cannot discriminate between glycine and D-serine based on binding affinity or activation efficacy. Dose-response curves in Xenopus oocytes showed indistinguishable EC50 values and maximal currents for both co-agonists on both receptor subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 use recombinant receptors to demonstrate that the differential effects of co-agonists on NMDAR subtypes cannot be explained by differences in binding affinity or efficacy. This is important for ruling out a simple pharmacological explanation and supporting the conformational/trafficking mechanism proposed. The data are from a well-controlled heterologous expression system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C80",
+      "C81",
+      "C82",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose a model where developmental upregulation of D-serine availability drives the GluN2B-to-GluN2A subunit switch by reducing GluN2B-NMDAR surface trafficking, mobility, and synaptic content. They conclude that co-agonist availability is instrumental (not coincidental) in the developmental subunit switch, acting through subunit-specific conformational changes that affect PDZ protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C80-C82, C93-C97 represent the authors' integrative model and conclusions. While these are inferences from the data rather than direct observations, they are well-supported by the convergence of evidence from multiple experimental approaches (single-molecule tracking, immunocytochemistry, biochemistry, electrophysiology, FRET) across developmental stages and preparations (cultured neurons, synaptosomes, acute slices). The model is internally consistent and accounts for the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims about NMDAR co-agonists and developmental regulation. These include: glycine and D-serine are both endogenous co-agonists; D-serine is the main co-agonist in adult forebrain; GluN2B expression peaks in the second postnatal week while GluN2A increases postnatally; synaptic NMDAR are gated by D-serine while extrasynaptic by glycine; co-agonists differentially regulate NMDAR surface dynamics; and both co-agonists alter NMDAR internalization via clathrin-dependent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are background information supported by citations to prior literature. These establish the context for the current study and are appropriately referenced. The authors are accurately representing prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Additional background claims about NMDAR regulation and the GluN2A/2B ratio. These include: NMDAR surface dynamics modulate synaptic signaling and plasticity; the GluN2A/2B ratio varies with development, brain region, and experience; PDZ scaffolds and extracellular molecules regulate the subunit ratio; genetic mouse models show altered NMDAR content; LTP involves differential co-agonist release and subunit ratio changes; various factors alter GluN2B-NMDAR dynamics; and NMDA binding induces conformational changes affecting PSD-95 and PP1 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C63-C78 provide additional background context supported by appropriate citations. These establish the broader framework of NMDAR regulation and justify the study's focus on co-agonist effects. The authors accurately represent prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Speculative mechanistic proposals and therapeutic implications. The authors speculate that: decreased GluN2B-PSD-95 interaction may unmask internalization signals; Scribble1 (which binds GluN2B and AP2) may mediate D-serine-induced internalization; D-serine-induced conformational changes favor interactions with specific PDZ scaffolds promoting internalization; and manipulating co-agonist levels or NMDAR dynamics may offer therapeutic opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C87, C89 are explicitly speculative (using 'may,' 'propose,' 'possible candidates'). While these speculations are reasonable given the data and cited literature, they represent hypotheses for future testing rather than established findings. The authors appropriately frame these as proposals, but they remain unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C90"
+    ],
+    "result": "Methodological validation and translational context. MitoTracker staining colocalizes 85% with presynaptic marker bassoon in hippocampal cultures (validating synaptic identification). NMDAR, glycine, and D-serine are linked to neuropsychiatric disorders like schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C90 provide methodological validation (C90, supported by citations) and translational context (C88, supported by citation). These are appropriately documented and support the study's methods and significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Summary conclusion that D-serine binding specifically reduces GluN2B-NMDAR trafficking and synaptic content through altered PDZ protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a summary inference that accurately reflects the convergent evidence from claims C11-C39. This conclusion is well-supported by the experimental data showing D-serine effects on GluN2B-NMDAR diffusion, synaptic content, and PSD-95 interactions, all prevented by PDZ-disrupting peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "General conclusion that NMDAR co-agonists act as major regulators of NMDAR function through subtype-specific alterations of receptor trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is an overarching conclusion inferred from the experimental findings. It is well-supported by the demonstration of differential effects of co-agonists on GluN2B (but not GluN2A) NMDAR across multiple experimental systems and measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The conformational changes induced by D-serine do not alter ion flux through the receptor, suggesting a metabotropic-like effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is an inference supported by citations but not directly tested in this study. The FLIM-FRET data show conformational changes, but ion flux was not measured. The claim relies on cited literature and the observation that effects occur without full receptor activation. This remains speculative without direct measurement of ion flux under the experimental conditions used.",
+    "result_type": "MINOR"
+  }
+]

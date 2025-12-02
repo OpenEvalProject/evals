@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The type 1 pilus rod structure was determined at 4.2 \u00c5 resolution using cryo-EM from type 1 pili present as contaminants in a T4P preparation. The structure reveals a 70 \u00c5 diameter helical rod with 115\u00b0 rotation and 7.7 \u00c5 translation per subunit, where each FimA subunit interacts with six adjacent subunits through donor strand complementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structure determination is well-supported by multiple lines of evidence including FSC plots (C1), detailed image processing parameters (C135-C138), confirmation of sample identity by sequencing (C132), and structural measurements (C2-C4, C70-C73). The resolution estimate is validated by map quality features and the ability to build an atomic model without ambiguities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Donor strand complementation in the type 1 pilus involves predominantly hydrophobic interactions, with Val5, Val10, and Phe12 from the N-terminal \u03b2-strand inserting into a hydrophobic groove of the adjacent subunit. The structure reveals conformational flexibility in residues 22-33 that differs from previously solved crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural details of donor strand complementation are directly observed in the cryo-EM density (C5, C6, C73) and are supported by comparison with crystal structures (C74). The identification of conformational differences in residues 22-33 (C75, C76) and the inference about functional necessity (C77) are well-justified by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "Sequence analysis of 1,828 FimA proteins reveals that 83.9% of residues are highly conserved, with FimA being significantly more variable than other type 1 pilus components (FimC and FimH). Non-conserved residues are located exclusively on the exterior surface, while residues at subunit interfaces and lining the lumen are 100% conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence conservation analysis is based on a large dataset (C7, C8) with appropriate comparative analysis (C9). The mapping of conservation onto the structure (C10-C12) provides strong support for the functional interpretation. The comparison with other E. coli genes (C85) and differences between FimA variants (C91) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "Evolutionary analysis reveals that 66 codons in fimA are under purifying selection while 5 codons show adaptive selection. All positively selected sites are located on the exterior surface away from subunit interfaces, indicating evolutionary pressure to conserve structural residues while diversifying surface-exposed residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dN/dS analysis is appropriately conducted on 191 unique sequences (C13, C14) with proper accounting for recombination. The mapping of selection pressure onto structure (C15, C94) provides strong support for the interpretation. The conclusion about evolutionary pressures (C96, C97) is well-justified by the combined sequence and structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C95"
+    ],
+    "result": "The fimA gene is carried by 96.3% of UPEC strains analyzed, but there is no single FimA variant found in all UPEC strains. Three branches in the phylogeny show statistically significant episodic diversifying selection, including branches carrying most clinical UPEC strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis is based on a curated dataset of 67 E. coli genomes (C16) with appropriate statistical testing for episodic selection (C17). The observation that UPEC strains are distributed throughout the phylogeny (C95) is directly supported by the phylogenetic tree data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Five FimA mutations (A25R, V32R, V65R, V85R, P145R) abolished pilus assembly, and these mutations occur at residues under strong purifying selection or too conserved for evolutionary analysis, suggesting they disrupt critical interactions with FimC/FimD or proper folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hemagglutination assays demonstrate loss of pilus function (C18), and the correlation with evolutionary conservation (C99, C100) provides strong support for the functional importance. The inference about mechanism (C98) is reasonable given the conservation patterns and structural context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C101",
+      "C102",
+      "C103",
+      "C54",
+      "C62"
+    ],
+    "result": "Expression of FimA mutants V5R, E45R, E121R, A142R, D62R, and D114R resulted in bacterial clumping, with mutations occurring at residues showing variable levels of conservation and purifying selection. The clumping phenotype is associated with mutations in codons under different selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clumping phenotype is directly observed (C19, C101) and the correlation with sequence conservation is documented (C102, C103). The analysis of selection pressure on clumping-associated mutations (C62) provides insight into evolutionary constraints, though the mechanistic interpretation (C54) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C50",
+      "C51",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Optical tweezers measurements reveal that wild-type type 1 pili unwind at 30.3 \u00b1 0.2 pN, while all tested FimA mutants show reduced unwinding force. The A22R variant shows the largest reduction (11.2 \u00b1 0.2 pN), consistent with structural analysis showing Ala22 is tightly packed against residues from other subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optical tweezers measurements are well-controlled with appropriate replication (C20-C22) and the values are consistent with literature (C50). The structural explanation for the A22R phenotype (C23, C51) is well-supported by the cryo-EM model. The interpretation of the unwinding mechanism (C104-C106) is reasonable based on established understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C111"
+    ],
+    "result": "In competitive and single-strain chronic bladder infection experiments, FimA variants D62R, D114R, and A22R were significantly attenuated compared to wild-type, while P132R showed no defect. The A22R variant was completely unable to establish chronic infection, with 100% of mice resolving infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chronic infection experiments are well-designed with appropriate controls and replication (C24-C28). The competitive index data and single-strain infection rates provide convergent evidence for attenuation. The inference that chronic defects are due to acute deficiencies (C111) is reasonable given the temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "FimA variants A22R and D114R significantly impaired IBC formation at 6 hours post-infection, with 70% of A22R-infected mice forming no IBCs. The A22R mutant was severely attenuated in bladder cell invasion starting at 1 hour post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The IBC enumeration data (C29-C31) and invasion assays (C32) provide direct evidence for acute infection defects. The experiments include appropriate time points and controls, with clear quantitative differences between mutants and wild-type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C118",
+      "C127"
+    ],
+    "result": "FimA variants D62R, D114R, and A22R showed 2-log reductions in intestinal colonization compared to wild-type, mirroring defects seen in fim deletion strains. The P132R variant showed a non-significant 1-log reduction. Overall, gut colonization defects were less severe than bladder infection defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The intestinal colonization experiments are appropriately designed with streptomycin pretreatment (C33). The comparison with deletion mutants (C34) provides context for the magnitude of the defect. The observation about differential severity (C127) is supported by direct comparison of the data, though the P132R result lacks statistical significance (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "All FimA mutant strains with chromosomal mutations demonstrated similar levels of hemagglutination compared to wild-type despite some variability in piliation levels, indicating that the mutations do not prevent expression or function of type 1 pili in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hemagglutination assays (C107) and EM analysis of piliation (C108) provide direct evidence that pili are functional in vitro. The correlation between mannose-resistant hemagglutination and clumping (C109) is an interesting observation. The conclusion (C110) is well-supported by the in vitro characterization data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The D62R variant showed defects in chronic but not acute bladder infection, forming similar numbers of IBCs as wild-type at 6 hpi but showing delayed bacterial clearance starting between 10-14 days post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal analysis of D62R infection (C112-C115) reveals a distinct phenotype from other mutants, with normal early infection but delayed clearance. The IBC data (C113) and longitudinal urinalysis (C115) provide strong support for a late-stage defect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Integration of evolutionary and functional analyses reveals that mutations preventing pilus assembly occur at codons under strong purifying selection, while many codons under purifying selection maintain the force required to unwind the pilus rod, suggesting a 'weak' rod is as detrimental as no rod.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of evolutionary analysis with functional data (C63, C65) provides novel insights into selective pressures. The inference about differential harm (C64, C66) is well-reasoned based on the patterns of selection associated with different phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C119",
+      "C120"
+    ],
+    "result": "The mechanical properties of the type 1 pilus rod are essential for mediating E. coli pathogenesis and persistence in both bladder and gut, and these properties appear to have been evolutionarily tuned. The FimA sequence is critical for pilus function and has a major impact on UTI outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C67, C68, C119, C120) is well-supported by the integration of structural, biophysical, evolutionary, and in vivo data. The multiple lines of evidence from different experimental approaches provide strong support for the central thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Comparison with previous NMR models and P pilus structure reveals significant differences in subunit packing and N-terminal organization. The type 1 pilus N-terminus projects outward making no contacts, while the P pilus N-terminus forms a 'staple' contacting multiple subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons are quantitative (C80, C81) and highlight important differences between models and between pilus types (C82, C83). These comparisons provide validation for the current structure and reveal functional differences between pilus types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C128",
+      "C52",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors hypothesize that the A22R mutant pilus lacks sufficient strength to withstand shear forces during urination, leading to bacterial clearance. Alternative mechanisms including protease exposure are considered but not excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are explicitly speculative (C125, C126, C128, C52, C56, C57) and represent hypotheses rather than demonstrated results. While the speculation is reasonable given the data, no direct evidence for the shear force mechanism or protease exposure is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The 100% conservation of lumen-lining residues is likely due to their involvement in subunit-subunit contacts rather than transport function, as every lumen residue either makes contacts or is packed between contact-making residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural analysis of lumen residues (C90) provides a more parsimonious explanation than transport (C89). The claim is supported by detailed examination of residue positions and interactions in the structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C129",
+      "C130"
+    ],
+    "result": "The study demonstrates that cryo-EM can successfully determine near-atomic resolution structures from contaminating filaments in heterogeneous preparations, overcoming the crystallographic challenges of helical polymers that lack crystallographically favorable symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological achievement is well-documented (C121-C123, C130) and the explanation of crystallographic limitations (C129) is accurate. This represents an important technical advance in structural biology methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C69",
+      "C116",
+      "C117"
+    ],
+    "result": "The manuscript provides extensive background on type 1 pili, UPEC pathogenesis, CUP pili diversity, and UTI epidemiology, citing established literature and identifying knowledge gaps regarding FimA immune recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge appropriately cited from the literature (C35-C49, C53, C58-C60, C69, C116, C117). The identification of knowledge gaps (C61) is accurate and motivates the study.",
+    "result_type": "MINOR"
+  }
+]

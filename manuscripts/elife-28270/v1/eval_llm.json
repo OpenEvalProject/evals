@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Native detergents C12E9, CHAPS, and DDM preserve high molecular weight KCC2 complexes (400-1000 kDa) in Blue-Native PAGE, while other detergents result in lower molecular weight migration. C12E9 and CHAPS extract more total KCC2 than other detergents, indicating efficient preservation of native KCC2 multi-protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by BN-PAGE and SDS-PAGE data in Figure 1a and supplementary figures. The data clearly show differential KCC2 migration patterns with different detergents and quantitative differences in extraction efficiency, providing direct experimental evidence for the preservation of native KCC2 complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "C12E9-based solubilization is superior to CHAPS for KCC2 interactome analysis. C12E9 extracts both KCC2a and KCC2b isoforms and shows higher enrichment of known KCC2 interactors (ATP1A1-3, CKB, CKMT1, CFL1), while CHAPS only extracts KCC2a, yielding more KCC2-specific and fewer IgG-specific binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are well-supported by mass spectrometry data in Figure 1b comparing C12E9 and CHAPS extractions. The differential isoform detection and enrichment of known interactors provide strong evidence for C12E9 superiority. The conclusion is logically derived from comparative quantitative proteomics data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Multi-epitope affinity purification mass spectrometry (AP-MS) using three KCC2 antibodies (C-terminal, N-terminal KCC2b-specific, and pS940) from P5 and P50 mouse brain identified 440 potential KCC2 interactors with 99% confidence and 1% FDR. KCC2 peptides showed ~44% sequence coverage and were the most abundant in immunoprecipitates, with antibody specificity confirmed by isoform-specific peptide recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C58-C63 are supported by detailed mass spectrometry data in Figures 2b-c and methods description. The multi-epitope approach, high peptide coverage, antibody specificity validation, and statistical confidence metrics provide robust evidence. The experimental design with 34 AP-MS rounds and appropriate controls strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "After filtering and eliminating spurious interactors, 150 putative KCC2 partners were identified from the LC-MS assay. These were classified into confidence tiers (platinum, gold, silver, bronze) based on replicate enrichment, spectral counts, and MaxP SAINT scores. Combined with 31 previously established KCC2 partners, the comprehensive KCC2 interactome comprises 181 proteins, with developmental stage-specific enrichment patterns (57% mature brain-specific, 27% both stages, 16% developing brain-specific).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 are supported by the detailed filtering methodology and classification criteria described in methods and Figure 3. The tiered confidence system based on multiple quantitative metrics (spectral enrichment, MaxP scores, replicate consistency) provides rigorous protein classification. The developmental analysis and integration of literature-validated partners strengthen the comprehensiveness of the interactome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mapping the KCC2 interactome to known synaptic proteomes revealed that ~43% of KCC2 interactors (77/181) are exclusively enriched at excitatory synapses, while only ~2% (4/181) are exclusive to inhibitory synapses. Additionally, ~15% (30/181) map to both synapse types and ~39% (70/181) do not map to either.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by the systematic mapping analysis shown in Figure 4a-b. The quantitative distribution across synaptic compartments is clearly documented. However, the interpretation depends on the completeness of reference synaptic proteomes, which the authors acknowledge may be incomplete for inhibitory synapses (C136-C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Ingenuity Pathway Analysis revealed KCC2 partners segregate into three functional categories: ion homeostasis, dendritic cytoskeleton rearrangement, and receptor trafficking. The receptor trafficking network shows the highest density (clustering coefficient 0.63, ~4.4 neighbors average), suggesting tight functional linkage. Novel putative partners in this node (PACSIN1, SNAP25, RAB11FIP5, CSNK2A1, DNM1, AP2B1) all have established roles in membrane recycling and glutamate receptor trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by IPA analysis in Figure 4c-e and network topology metrics. The functional categorization is data-driven with high p-values. The dense receptor trafficking network and prior functional characterization of identified proteins (supported by citations C82) provide strong biological plausibility. Network analysis metrics quantitatively support the tight linkage interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Transcriptomic analysis of human brain RNAseq data shows SLC12A5 mRNA is co-expressed with several receptor trafficking node members across multiple brain regions including hippocampus, amygdala, thalamus, cerebellum, and cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by RNAseq analysis in Figure 5a and supplementary data. The co-expression patterns provide independent validation of potential functional relationships identified in the proteomics screen. However, mRNA co-expression does not guarantee protein-protein interaction, and the analysis cannot distinguish KCC2 isoforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The KCC2-PACSIN1 interaction was biochemically validated through co-immunoprecipitation in both directions using brain lysates, with temporally aligned developmental expression patterns. Antibody-shift assays coupled with 2D BN-PAGE demonstrated that native-KCC2 and native-PACSIN1 co-migrate in high molecular weight complexes, confirming stable complex formation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are strongly supported by multiple orthogonal biochemical approaches in Figure 5b-d. Bidirectional co-IP, developmental expression correlation, and antibody-shift assays provide converging evidence for the KCC2-PACSIN1 interaction. The 2D BN-PAGE data demonstrating co-migration is particularly strong evidence for stable complex formation. Multiple biological replicates strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In heterologous expression systems (COS-7 cells), KCC2 shows differential binding to PACSIN family members: robust association with PACSIN1, weak interaction with PACSIN2, and no interaction with PACSIN3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by co-IP experiments in Figure 5e. The differential binding specificity across PACSIN family members is clearly demonstrated. However, these are overexpression experiments in non-neuronal cells, which may not fully recapitulate native interactions. The robust PACSIN1 binding is consistent with the endogenous brain co-IP data (C85-C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Domain mapping experiments using PACSIN1 deletion constructs revealed that the VAR region (aa 326-384) is both necessary and sufficient for KCC2 binding, while neither the SH3 domain nor F-BAR domain alone can mediate the interaction, though their removal does not disrupt binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by systematic deletion analysis in Figure 5f. The data clearly demonstrate that the VAR region alone is sufficient for KCC2 binding. The finding that removing SH3 or F-BAR doesn't disrupt binding while neither domain alone is sufficient indicates the VAR region is the critical binding determinant. This provides mechanistic insight into the interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Whole-cell patch clamp recordings with Cl- loading show that PACSIN1 shRNA knockdown in cultured hippocampal neurons significantly hyperpolarizes EGABA (control: -28.62\u00b13.07 mV vs PACSIN1 shRNA: -37.86\u00b11.73 mV, p=0.013) without affecting GABAAR conductance (p=0.079) or resting membrane potential (p=0.808), indicating increased KCC2-mediated Cl- transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are well-supported by electrophysiology data in Figure 6a-d with appropriate statistical analysis. The selective effect on EGABA without changes in conductance or RMP provides strong evidence for specific enhancement of KCC2 Cl- transport function. Sample sizes (n=9-11) and statistical tests are appropriate. The conclusion logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Gramicidin-perforated patch clamp recordings, which preserve native Cl- gradients, confirm that PACSIN1 knockdown produces a significant hyperpolarizing shift in EGABA (control: -46.93\u00b12.78 mV vs PACSIN1 shRNA: -72.70\u00b14.70 mV, p=0.0005), demonstrating that PACSIN1 knockdown strengthens inhibition through increased KCC2-mediated Cl- extrusion under resting conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are strongly supported by gramicidin-perforated patch data in Figure 6e. This technique avoids the artificial Cl- loading of whole-cell recordings, providing more physiologically relevant evidence. The larger hyperpolarizing shift and highly significant p-value strengthen the conclusion. The convergence of whole-cell and perforated patch results provides robust evidence for PACSIN1's negative regulation of KCC2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Immunofluorescence analysis shows PACSIN1 shRNA knockdown significantly increases KCC2 fluorescence intensity in cultured hippocampal neurons (control: 58.86\u00b12.53 A.U. vs PACSIN1 shRNA: 74.05\u00b12.53 A.U., p<0.0001), demonstrating that reduced PACSIN1 increases KCC2 expression and strengthens inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by immunofluorescence data in Figure 6f with robust statistics (n=32 per group, p<0.0001). However, the fluorescence measurement method (Figure 6 supplement 1) measures peak intensity rather than total or surface KCC2, which may not fully capture expression changes. Claim C115 integrates this with electrophysiology data (C106-C111), providing convergent evidence for PACSIN1's negative regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C120"
+    ],
+    "result": "PACSIN1 overexpression produces a dramatic reduction in KCC2 immunofluorescence (control eGFP: 62.1\u00b12.7 A.U. vs PACSIN1-eGFP: 11.31\u00b13.17 A.U., p<0.0001), providing reciprocal evidence that PACSIN1 robustly and negatively regulates KCC2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C120 are strongly supported by overexpression data in Figure 6g. The dramatic ~82% reduction in KCC2 fluorescence with PACSIN1 overexpression provides compelling reciprocal evidence complementing the knockdown experiments. The bidirectional manipulation (knockdown increases, overexpression decreases KCC2) strongly supports PACSIN1 as a negative regulator. Sample sizes (n=16-23) and statistics are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C45"
+    ],
+    "result": "PACSIN1 is identified as the most abundant KCC2 interactor and highest-confidence partner in the mass spectrometry screen. Functional validation demonstrates that PACSIN1 is a novel and potent negative regulator of KCC2, with shRNA knockdown increasing KCC2 expression and hyperpolarizing Cl- reversal potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C45 represent the central finding integrating proteomics discovery with functional validation. PACSIN1's identification as the top interactor is supported by mass spectrometry data (high spectral counts, MaxP score). The negative regulatory function is comprehensively validated through multiple approaches: bidirectional co-IP (C85-C86), knockdown electrophysiology (C106-C111), knockdown immunofluorescence (C114), and overexpression (C117). The convergence of discovery and validation data strongly supports this major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The comprehensive mouse brain KCC2 functional interactome comprises 181 proteins (150 newly identified plus 31 previously established partners). Network analysis reveals KCC2 partners are highly enriched at excitatory synapses and form a dense network with proteins involved in receptor trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 summarize the major findings from the proteomic screen and network analysis. The 181-protein interactome is supported by rigorous filtering (C64-C73), confidence classification, and integration with literature. The excitatory synapse enrichment (C74-C77) and receptor trafficking network density (C78-C80) are supported by systematic mapping and IPA analysis. This represents a comprehensive resource for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Native detergents C12E9 and CHAPS differentially extract KCC2 isoforms and pull down different subsets of proteins along with common interactors, demonstrating that detergent stabilities of KCC2 protein complexes are distinct, consistent with other ion channel proteomic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by comparative mass spectrometry data in Figure 1b and are consistent with cited ion channel studies. The differential extraction patterns provide important methodological insights for studying native protein complexes. However, the biological significance of these different complexes remains unclear\u2014they may represent distinct functional states or artifacts of differential detergent stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The absence of several previously identified KCC2 interactors (Neto2, GluK2, 4.1N, beta-pix, RCC1, PKC, WNK, SPAK, OSR) in the current screen may be due to weak/transient interactions, regional restriction, antibody epitope blocking, or suboptimal detergent conditions for particular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 are speculative explanations for missing known interactors. While the proposed reasons are plausible and supported by citations to similar issues in other proteomic studies, they remain untested hypotheses. The authors appropriately acknowledge these as caveats rather than definitive explanations. Additional experiments with region-specific samples or alternative methods would be needed to determine which explanation applies to each missing interactor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C138",
+      "C139",
+      "C141"
+    ],
+    "result": "The predominant enrichment of KCC2 interactors at excitatory synapses is consistent with previous findings that KCC2 dwells longer at excitatory synapses. The identification of 29 proteins enriched at both synapse types supports the hypothesis that KCC2 may 'moonlight' between synapses, potentially enabling cell-intrinsic excitation-inhibition balance regulation when synapses are in close proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135, C138-C139, C141 integrate the current findings with prior localization studies and propose a moonlighting hypothesis. While the data showing 29 dual-localized proteins (C139) and excitatory enrichment (C135) are supported, the moonlighting interpretation (C138, C141) remains speculative. The authors appropriately note this 'requires rigorous experimental testing.' The hypothesis is plausible but needs direct evidence of KCC2 movement between synapse types and functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C151",
+      "C155"
+    ],
+    "result": "PACSIN1 negatively regulates KCC2 function by altering surface membrane expression. The authors predict that KCC2 phosphorylation causes PACSIN1 uncoupling, rendering it unable to negatively regulate KCC2. PACSIN1 is proposed as a therapeutic target for upregulating KCC2 during pathological states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is a reasonable hypothesis based on PACSIN1's known endocytic function (C112) and the experimental data showing expression changes. However, direct evidence for altered surface expression (vs. total expression) is limited\u2014the immunofluorescence measures total cellular KCC2. Claims C151 and C155 are predictions/proposals requiring future validation. While the phosphorylation-dependent uncoupling model is plausible given both proteins are PKC-regulated (C150), it lacks direct experimental support. The therapeutic potential (C155) is an inference requiring in vivo validation in disease models.",
+    "result_type": "MAJOR"
+  }
+]

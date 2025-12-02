@@ -1,0 +1,2051 @@
+{
+  "submission": {
+    "id": "d4403fe5-2b11-40af-9389-bd6170971451",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:12:00.049227Z",
+    "updated_at": "2025-12-02T00:12:00.049227Z"
+  },
+  "content": [
+    {
+      "id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "submission_id": "d4403fe5-2b11-40af-9389-bd6170971451",
+      "content_type": "manuscript",
+      "content_text": "# An efficient and scalable pipeline for epitope tagging in mammalian stem cells using Cas9 ribonucleoprotein\n\n## Authors\n\n- Pooran Singh Dewari<sup>1</sup>\n- Benjamin Southgate<sup>1</sup>\n- Katrina Mccarten<sup>1</sup>\n- German Monogarov<sup>3</sup>\n- Eoghan O'Duibhir<sup>1</sup>\n- Niall Quinn<sup>4</sup>\n- Ashley Tyrer<sup>1</sup>\n- Marie-Christin Leitner<sup>1</sup>\n- Colin Plumb<sup>1</sup>\n- Maria Kalantzaki<sup>1</sup>\n- Carla Blin<sup>1</sup>\n- Rebecca Finch<sup>1</sup>\n- Raul Bardini Bressan<sup>1</sup> ([ORCID: 0000-0002-5673-9563](https://orcid.org/0000-0002-5673-9563))\n- Gillian Morrison<sup>1</sup>\n- Ashley M Jacobi<sup>5</sup>\n- Mark A Behlke<sup>5</sup>\n- Alex von Kriegsheim<sup>4</sup>\n- Simon Tomlinson<sup>1</sup>\n- Jeroen Krijgsveld<sup>3</sup>\n- Steven M Pollard<sup>1</sup> ([ORCID: 0000-0001-6428-0492](https://orcid.org/0000-0001-6428-0492)) \u2020\n\n### Affiliations\n\n1. Edinburgh Cancer Research United Kingdom Centre University of Edinburgh Edinburgh United Kingdom\n2. MRC Centre for Regenerative Medicine University of Edinburgh Edinburgh United Kingdom\n3. German Cancer Research Center University of Heidelberg Heidelberg Germany\n4. Institute of Genetics and Molecular Medicine, Edinburgh Cancer Research United Kingdom Centre University of Edinburgh Edinburgh United Kingdom\n5. Integrated DNA Technologies, Inc. Coralville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCRISPR/Cas9 can be used for precise genetic knock-in of epitope tags into endogenous genes, simplifying experimental analysis of protein function. However, Cas9-assisted epitope tagging in primary mammalian cell cultures is often inefficient and reliant on plasmid-based selection strategies. Here, we demonstrate improved knock-in efficiencies of diverse tags (V5, 3XFLAG, Myc, HA) using co-delivery of Cas9 protein pre-complexed with two-part synthetic modified RNAs (annealed crRNA:tracrRNA) and single-stranded oligodeoxynucleotide (ssODN) repair templates. Knock-in efficiencies of ~5\u201330%, were achieved without selection in embryonic stem (ES) cells, neural stem (NS) cells, and brain-tumor-derived stem cells. Biallelic-tagged clonal lines were readily derived and used to define Olig2 chromatin-bound interacting partners. Using our novel web-based design tool, we established a 96-well format pipeline that enabled V5-tagging of 60 different transcription factors. This efficient, selection-free and scalable epitope tagging pipeline enables systematic surveys of protein expression levels, subcellular localization, and interactors across diverse mammalian stem cells.\n\n## Introduction\n\nDefining the protein levels, subcellular localisation and biochemical interactions for the\u00a0>20,000 protein-coding genes in the mammalian genome remains a formidable challenge. Ideally, these would be explored across diverse primary cells \u2013 rather than genetically transformed and corrupted cell lines. Large-scale projects, such as the human protein atlas, have performed systematic characterisation of antibodies against native proteins (Thul et al., 2017). However, there are inherent difficulties in discovering, validating and distributing high-quality antibodies that cover all species and key applications (e.g. immunoblotting, immunoprecipitation, ChIP-Seq and immunocytochemistry).\n\nA complementary strategy is to use epitope tagging: the fusion of small peptide-coding sequences to a protein of interest (e.g. 3XFLAG, HA, V5, and Myc) (Jarvik and Telmer, 1998). In contrast to plasmid-driven cDNA overexpression, which creates artificially high-protein levels, the knock-in of small epitope tags to endogenous genes provides physiologically relevant levels. A small set of pre-validated tag-specific antibodies is then used across diverse downstream experimental applications. This has been a key tool in yeast studies, resulting in global characterization of core protein complexes and their extensive interaction networks (Gavin et al., 2006; Krogan et al., 2006). However, to date this approach has not been widely adopted in mammalian cells, primarily due to the poor efficiency of homologous recombination (HR). Repurposed programmable nucleases now provide a potential solution.\n\nFormation of a site-specific DNA double-strand break (DSBs), will massively enhance HR-mediated repair. This has become straightforward with the discovery and application of clustered regularly interspaced short palindromic repeats (CRISPR) and CRISPR-associated (Cas) proteins as designer site-specific nucleases. CRISPR/Cas9 was uncovered as a form of microbial adaptive immunity (Bhaya et al., 2011) that has been repurposed for genome editing in mammalian cells (Cong et al., 2013; Doudna and Charpentier, 2014).\n\nCas9 is an RNA-guided endonuclease that binds complementary DNA via formation of a 20 bp RNA:DNA heteroduplex. Stable binding of Cas9/gRNA complex at the target site leads to activation of nuclease domains and formation of a double-stranded DNA break (DSB) (Jinek et al., 2014). DSBs are predominantly repaired through the error-prone non-homologous end joining (NHEJ) pathway, resulting in insertion or deletion mutations (indels) (Sander and Joung, 2014). Alternatively, at lower frequencies HR-mediated repair will occur.\n\nSuccessful knock-in of tags, therefore, requires co-delivery of three ingredients to the mammalian cells: the Cas9 protein, a guide RNA, and a donor repair template (i.e. single or double-stranded DNA encoding the tag or reporter with homology arms). These CRISPR components are typically delivered via transient plasmid transfection or viral vectors. Bespoke targeting vector plasmids are usually constructed for delivery of large cargoes or conditional alleles. Selection strategies, such as flow cytometry or use of antibiotic resistance cassettes, are then used to enrich for edited cells.\n\nDespite the successes of current approaches (Dalvai et al., 2015; Savic et al., 2015; Mikuni et al., 2016; Xiong et al., 2017), it is clear that many bottlenecks restrict widespread applications; (i) Production of tailored plasmids for each component can be tedious and time-consuming; (ii) Plasmid-based selection strategies introduce additional regulatory elements that can disrupt normal regulatory processes; (iii) Plasmid DNA, either Cas9/gRNA expression vectors or targeting vectors, can randomly integrate in the genome causing insertional mutagenesis or increasing risks of off-target cleavage (Kim et al., 2014; Liang et al., 2015); (iv) current strategies are often not readily scalable to enable routine exploration of large numbers of genes; (v) recovery of biallelic clonal lines is inefficient. Thus, there remains an unmet need for improved knock-in strategies that can work efficiently in primary mammalian cells, such as pluripotent (ES/iPS), multipotent (tissue stem cells) and cancer stem cells.\n\nImproved efficiencies of CRISPR editing in mammalian cells have been demonstrated using recombinant Cas9 protein (Kim et al., 2014; Ramakrishna et al., 2014; Bressan et al., 2017). Cas9 protein is complexed with in vitro-transcribed (IVT) RNA, to produce a ribonucleoprotein (RNP) complex that can be then delivered into cells. The RNPs are short-lived and cleared by cells within 24\u201348 hr, reducing the risk of both formation of mosaic clones or off-target cleavage (Kim et al., 2014; Lin et al., 2014; Zuris et al., 2015; Cameron et al., 2017). However, RNP-assisted methods have mainly been used for gene knock-out (Kim et al., 2014; Liang et al., 2015), incorporation of point mutations (Ma et al., 2017; Rivera-Torres et al., 2017), or knock-in of restriction enzyme sites (Lin et al., 2014; Schumann et al., 2015). We and others have recently made use of RNP with in vitro-transcribed (IVT) sgRNAs for CRIPSR epitope tagging (Bressan et al., 2017; Liang et al., 2017), yet the efficiencies in the absence of selection are highly variable, and this approach cannot be scaled.\n\nTo avoid IVT, chemically\u00a0modified\u00a0~100 nt-long sgRNAs can be synthesised (Hendel et al., 2015); however, these are prohibitively expensive, limiting applications. Alternatively, a two-part, chemically synthesised, short target-specific crRNA plus a longer generic tracrRNA can be used. This is cheaper (only the crRNA needs to be resynthesised for new targets) and has better performance (Aida et al., 2015; Anderson et al., 2015). This \u2018dual-RNA\u2019 approach has been advanced further by \u2018base, backbone and end\u2019 modifications of cr/tracrRNAs (Rahdar et al., 2015; Kelley et al., 2016) and also by the use of shorter and more effective modified cr/tracrRNAs (Jacobi et al., 2017). Modified synthetic cr/tracrRNAs are resistant to nuclease digestion, limit cellular immune responses, have greater stability, and therefore provide enhanced targeting efficiency (Jacobi et al., 2017).\n\nHere, we explored whether RNPs with synthetic modified two-part guide RNA can enhance efficiency of epitope tagging in mammalian stem cells. We find that co-delivery of a Cas9 RNP (dual-synthetic RNA) with\u00a0~200 bp single-stranded oligodeoxynucleotides (ssODNs) supports highly efficient epitope tagging. This is achieved across a variety of stem cell types without any requirement for plasmids, selection steps, flow-cytometry-based enrichment, or IVT reactions. To provide a proof-of-principle, we developed a novel web-based design tool and demonstrate effective tagging in 96-well plate format. We demonstrate one application, by identifying Olig2 protein partners using immunoprecipitation-mass spectrometry (IP-MS).\n\n## Results\n\n### Cas9 protein complexed with synthetic cr/tracr RNAs enables highly efficient epitope tagging in neural and glioma stem cells\n\nsgRNAs produced by IVT reactions can vary in quality and quantity and are prone to degradation, either during production and/or following delivery into cells. We therefore explored a synthetic modified two-part guide RNA system (annealed 36-mer crRNA: 67-mer tracrRNA) (Anderson et al., 2015; Jacobi et al., 2017).\n\nGuide RNAs were designed to cut proximal to the stop codon in the 3\u2019 UTR of Olig2 or Sox2 (Figure 1A). The efficacy of custom synthetic modified RNAs (csRNAs) was compared to IVT-generated sgRNAs. RNA was complexed with recombinant Cas9 protein and transfected into an adult mouse neural stem (NS) cell line (ANS4), using an optimised nucleofection program. RNP was delivered together with a\u00a0~\u00a0200 bp single-stranded DNA donor encoding the V5 tag, flanked with\u00a0~70 nucleotide homology arms (Figure 1B). After 5 days, cells were analysed using immunocytochemistry (ICC) for the V5 fusion\u00a0protein (Figure 1C). The csRNA-based RNP (csRNP) gave a\u00a0>4-fold and\u00a0>10-fold increase in V5 knock-in efficiency for Olig2 and Sox2, respectively (Figure 1D). Improved knock-in efficiencies were also obtained using an independent cell line (glioma-initiating neural stem cells; termed GNS) (Figure 1D). PCR genotyping and Sanger sequencing confirmed in-frame and error-free insertion of V5 tag sequence at the C-terminus of Olig2 and Sox2 loci (Figure 1\u2014figure supplement 1A). V5-positive cells all displayed the anticipated nuclear localisation and levels with no indication of non-specific expression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of epitope knock-in strategy. A crRNA was designed against the 3\u2019UTR of each target gene. Target site with double-stranded break is shown with Cas9 RNP (grey), PAM in yellow box, and single-stranded donor DNA that harbours PAM-blocking mutations and V5 tag coding sequence flanked by 70-mer homology arms on both sides. (B) Cas9 RNP complexes were assembled in vitro by incubation of recombinant Cas9 protein with either IVT sgRNA or synthetic two-part cr:tracrRNA and electroporated into NS cells. V5 ICC was used to quantify knock-in. (C) Representative ICC images for the detection of Olig2-V5 fusion protein in the bulk populations of transfected cells. (D) HDR-mediated insertion of V5 tag was determined by scoring V5-positive cells (%) in the bulk populations of transfected cells. Results from three independent experiments are shown for Sox2 and Olig2 V5 tagging using mouse neural stem (NS) and glioma-initiating neural stem (GNS) cells. Error bars indicate standard deviation values based on a minimum of two experiments, p-values were derived using unpaired t test. (E) ICC for Sox2 gene epitope tagging at the C-terminus with V5, HA, 3XFLAG, or Myc epitope. Numbers represent percentage of tagged cells in the bulk population for each tagging experiment. (F) Representative bulk population V5 ICC images for Sox2, Sox3, Sox8, and Sox9 V5 knock-in are shown. Average knock-in efficiency from two independent experiments is shown at the bottom (numbers in white).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Schematic of genotyping strategy. Agarose gel on the right. Gene name and guide RNA source (IVT or synthetic two-part gRNA) are indicated on the top of each lane in the gel. (A) Sequencing traces from the respective PCR amplicons were aligned with the expected TF-V5 chimeric sequence, Olig2-V5 and Sox2-V5 are shown. (B) Sox2 gene tagged independently with four different epitope tags in mouse NS BL6 cells, bulk population ICC images for each epitope tag are shown. (C) Mouse BL6 were transfected with RNPs and V5-encoding ultramers for V5 epitope tagging of indicated genes. Representative bulk population V5 ICC images for each TF are shown.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) synthetic two-part gRNA system was used to knock-in V5 tag at the indicated genes in mouse NS cells. Sequence alignment of Sox3-V5, Sox8-V5, and Sox9-V5 sequencing traces with the expected sequences are shown. (B) GNS cells were nucleofected with Sox2-HA and Olig2-V5 ssODNs in a combined reaction (dual-epitope tagging). Transfected cells were analysed for V5 and HA knock-in by ICC; 4% cells were positive for both the tags (marked with arrows in the first panel).\n\nKnock-in efficiency might vary when using distinct biochemical tags. We therefore tested a variety of widely used alternative tags (V5, HA, 3XFLAG, or Myc). Each tag varied substantially in size, and consequently homology arm length (Table 1). Nevertheless, we observed similar rates of knock-in (15\u201321%) across all four tags for Sox2 (Figure 1E; Table 1). An independent adult NS cell culture also gave similar results (9\u201315% knock-in efficiency, Figure 1\u2014figure supplement 1B).\n\n**Table 1.**\n Larger cargos (3XFLAG) could be inserted with high knock-in frequency at mouse Sox2 locus.Table 1\u2014source data 1.Raw data for epitope tag knock-in efficiency using 3XFLAG, HA, V5, and Myc single-stranded donor DNA templates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Mouse NS cells (ANS4)</th>\n      <th></th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>Tag</th>\n      <th>Tag size (bp)</th>\n      <th>Homology arms (bp)</th>\n      <th>Knock-in efficiency (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>3XFLAG</td>\n      <td>66</td>\n      <td>67</td>\n      <td>21.2</td>\n    </tr>\n    <tr>\n      <td>V5</td>\n      <td>42</td>\n      <td>79</td>\n      <td>17.6</td>\n    </tr>\n    <tr>\n      <td>Myc</td>\n      <td>30</td>\n      <td>85</td>\n      <td>14.9</td>\n    </tr>\n    <tr>\n      <td>HA</td>\n      <td>27</td>\n      <td>86</td>\n      <td>15.8</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Mouse NS cells (BL6)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tag</td>\n      <td>Tag size (bp)</td>\n      <td>Homology Arms (bp)</td>\n      <td>Knock-in efficiency (%)</td>\n    </tr>\n    <tr>\n      <td>3XFLAG</td>\n      <td>66</td>\n      <td>67</td>\n      <td>13.7</td>\n    </tr>\n    <tr>\n      <td>V5</td>\n      <td>42</td>\n      <td>79</td>\n      <td>13.9</td>\n    </tr>\n    <tr>\n      <td>Myc</td>\n      <td>30</td>\n      <td>85</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>HA</td>\n      <td>27</td>\n      <td>86</td>\n      <td>14.6</td>\n    </tr>\n  </tbody>\n</table>\n\nHigh knock-in efficiencies were not limited to Sox2 and Olig2. We found that Sox3, Sox8, and Sox9 \u2013 three Sox family members that are expressed in NS cells \u2013 had knock-in efficiencies of 30%, 14% and 26%, respectively (Figure 1F; Figure 1\u2014figure supplement 1C and Figure 1\u2014figure supplement 2A). Furthermore, we could simultaneously knock-in two different tags (Sox2: HA tag; and Olig2: V5 tag) in the same cells using a single transfection (4% double-positive cells, Figure 1\u2014figure supplement 2B).\n\nAltogether, these results indicate that use of the modified two-part synthetic cr/tracrRNA system is more effective than IVT for epitope knock-in in mammalian NS and GNS cells. Using csRNP delivery, we achieved 5\u201330% knock-in efficiency across distinct cell lines for different genes and using different tags. Notably, this was accomplished without the requirement for flow cytometry or plasmid-based selection strategies.\n\n### The high frequency of knock-in using csRNP facilitates simple recovery of biallelic-tagged clonal lines\n\nGeneration of biallelic-tagged clonal lines could be advantageous for downstream applications, as all target protein will be tagged, enabling improved signal-to-noise ratios in assays. Low efficiency of tagging requires screening of hundreds or thousands of clones that need to be screened and genotyped, limiting downstream applications. Heterozygous lines might also harbour indels on the other non-HR untagged allele (Merkle et al., 2015; Bressan et al., 2017), which may cause inappropriate transcriptional/post-transcriptional regulation.\n\nThe improved knock-in efficiency using the csRNP method encouraged us that recovery of biallelic clonal lines might be straightforward. Clonal NS cell lines were established from bulk tagged populations following single-cell deposition to 96-well plates. Tagged clones were then identified following replica plating and ICC for V5 tag (Figure 2A). Biallelic clones were scored using PCR primer-pairs flanking the tag sequence (Figure 2B) and validated using ICC and Sanger sequencing (Figure 2C; Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig2-v2.jpg)\n\n**Figure 2.:** (A) Experimental workflow for generating clonal lines. Cells from the bulk population cultures were single-cell deposited to 96-well plates using flow cytometry. Two weeks later, V5-positive clones were selected by ICC assay and confirmed by PCR genotyping. (B) Representative agarose gel pictures for Sox2-V5 and Sox3-V5 PCR genotyping are shown. Wild-type unedited cells (control) are marked with WT; 1\u00a0kb+\u00a0DNA ladder is marked with L; bi-allelic clones are marked with red asterisks. (C) ICC images of bi-allelic V5 knock-in clones are shown for Sox2 and Sox3 TFs. Nuclear stain DAPI (blue), entire cell stain CellMask HCS (green), and V5 tag (yellow) are shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematics shows the PCR amplification of HDR-edited loci using a primer pair flanking the V5 tag sequence. (B) Sequencing traces for the V5 clonal knock-in lines were aligned with the expected TF-V5 chimeric sequence; Sox2 and Sox3 V5 traces for BL6 clonal lines are shown. Red asterisks denote stop codon, the crRNA is highlighted in green, PAM with blocking mutations in yellow, the cut-site is marked with a double-headed arrow in red. (C) Sequencing trace alignment for V5 knock-in using mouse GNS clonal lines (IENS); Sox2, Sox8, and Sox9 V5 knock-in sequencing traces are shown.\n\nEighty-nine clonal lines were generated from the Sox2-V5 knock-in cells. Thirteen of these were V5-positive by ICC and 11 were correctly targeted as confirmed by PCR (Table 2). Of these four had successfully integrated the V5 tag sequence at both alleles (30% of V5-positive clones) (Table 2). High frequencies of bi-allelic knock-in were also obtained for Sox3-V5 (62.5%). We also derived several biallelic knock-in lines from another independent cell line (IENS, mouse GNS cells): Sox2, Sox3, Sox8 and Sox9 (7%, 26%, 57%, and 15% biallelic knock-in of V5-positive clones, respectively) (Table 2). Thus, biallelic-tagged clonal lines can be readily recovered.\n\n**Table 2.**\n Summary of knock-in lines generated using csRNP delivery.Table summarising knock-in lines derived from mouse NS and GBM-model cells. The percentage bi-allelic knock-in among all V5-positive clones, as confirmed by PCR genotyping, is listed in the last column.Table 2\u2014source data 1.Raw data for V5 ICC and PCR genotyping of clonal knock-in lines.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell type</th>\n      <th>Gene</th>\n      <th>Colonies picked</th>\n      <th>V5 positive (ICC)</th>\n      <th>Correctly targeted (PCR)</th>\n      <th>Bi-allelic clones by PCR (% of total V5 positive)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Mouse NS cells</td>\n      <td>Sox2</td>\n      <td>89</td>\n      <td>13</td>\n      <td>11</td>\n      <td>4\u00a0(30.8%)</td>\n    </tr>\n    <tr>\n      <td>Sox3</td>\n      <td>55</td>\n      <td>8</td>\n      <td>6</td>\n      <td>5\u00a0(62.5%)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Mouse GBM-model cells</td>\n      <td>Sox2</td>\n      <td>242</td>\n      <td>14</td>\n      <td>14</td>\n      <td>1\u00a0(7.1%)</td>\n    </tr>\n    <tr>\n      <td>Sox3</td>\n      <td>96</td>\n      <td>19</td>\n      <td>18</td>\n      <td>5\u00a0(26.3%)</td>\n    </tr>\n    <tr>\n      <td>Sox8</td>\n      <td>96</td>\n      <td>7</td>\n      <td>6</td>\n      <td>4\u00a0(57.1%)</td>\n    </tr>\n    <tr>\n      <td>Sox9</td>\n      <td>469</td>\n      <td>46</td>\n      <td>41</td>\n      <td>7\u00a0(15.2%)</td>\n    </tr>\n    <tr>\n      <td>Foxk2</td>\n      <td>96</td>\n      <td>2</td>\n      <td>2</td>\n      <td>1\u00a0(50%)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Multiple stem cell-types can be epitope-tagged using csRNPs, including non-expressed genes\n\nTo test the general applicability of the csRNP tagging method across other types of stem cells, we compared head-to-head tagging efficiencies between mouse ES cells and NS cells. We initially focussed on four transcription factors (TFs): Sox2, Sox3, Ctcf and Pou3f1, and the chromatin regulator Ezh2; each of these is expressed in both cell types. In each case, we found that mouse ES cells (E14Tg2a) were tagged at similar level of efficiency to the NS cells (knock-in efficiency range 6\u201311%, Figure 3A,B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig3-v2.jpg)\n\n**Figure 3.:** Representative V5 ICC images are shown for V5 tagging of five TFs that are expressed in both mouse NS cells (A) and ES cells (B). V5 ICC images for the three neural-specific TFs Sox9, Pou3f2, and Pou3f3 in mouse NS cells (Figure C, left panel). Mouse ES cells were electroporated with similar three TF-reagents (Figure C, middle panel). Later, ES bulk populations of non-expressed TFs were differentiated into neural lineage and assayed for expression of TF-V5 fusion proteins by ICC (Figure C, right panel). Differentiation into neural stem progenitors was confirmed by Nestin ICC (in green), only V5-positive rossettes for each of the three genes are shown. (D) V5 ICC images for epitope tagging using human ES cells and GBM patient-derived cell lines.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) PCR strategy is shown, a V5 tag-specific reverse primer and a TF exon-specific forward primer were used to amplify HDR-edited alleles using bulk population of ES cells. (B) Agarose gel analysis of PCR products, gene names are indicated at the top of each lane, \u2018- \u2018refers to control unedited cells, \u2018+\u2019 refers to edited cells, 1kb\u00a0+\u00a0DNA ladder is marked with \u2018L\u2019. (C) Sequencing trace alignments for some of the edited genes from (b) are shown, Ctcf and Ezh2 genes are expressed in ES cells, Sox9 is expressed after differentiation of ES cells into neuronal lineage.\n\nNon-expressed genes are often difficult to engineer. We therefore tested csRNPs for several neural-affiliated TFs (Sox9, Pou3f2, and Pou3f3) that are expressed in NS cells but not ES cells (Figure 3C). V5 insertion was first confirmed by PCR genotyping in the bulk populations and suggested both ES cells and NS cells were effectively tagged (Figure 3\u2014figure supplement 1). V5-tagged protein was detected by ICC only in NS cells and not in ES cells (Figure 3C, left and middle panels). However, for each of these genes, upon neural lineage differentiation of the ES cells, we noted a proportion of the Nestin-expressing neural rosettes that were V5-positive; 10.5%, 20%, and 11.8% for Sox9, Pou3f2, and Pou3f3, respectively (Figure 3C, right panel). Thus, non-expressed genes can be successfully tagged in ES cells, without deploying any selection strategies or plasmids. We also assessed csRNP-based tagging in human ES cells. V5 knock-in was successfully demonstrated in human ES cells for SOX2 (Figure 3D). We also tested human GBM-derived cells for OLIG2, SOX2, and SOX9 genes (15\u201370% efficiency) (Figure 3D).\n\nThese data illustrate the power of the csRNP-mediated efficient tagging of non-expressed genes in stem cells, and subsequent monitoring of the tagged protein in their differentiating progeny. We also conclude that the same csRNP epitope tagging approach and reagents can work effectively across diverse mouse and human pluripotent stem cells, neural stem cells, and cancer-derived stem cells.\n\n### DSB distance from the stop codon is a key parameter for successful tagging\n\nTo further define the parameters influencing the reliability and efficiency of tagging, we attempted V5 epitope knock-in at the C-terminus for all 50 Sox and Fox genes. This set of genes included both expressed and non-expressed genes. Previous studies have indicated that the distance of the DSB to the insertion site influences the frequency of successful HR (Bialk et al., 2015; Paquet et al., 2016; Liang et al., 2017). We designed two different target crRNAs in the 3\u2019UTR of the gene for each of the 50 target genes; one cutting proximal and the other distal to the stop codon. For each of the TF, cells were transfected with Cas9 RNP containing either of the crRNA and a common matched ssODN to assess if distance of the cut site from the stop codon influenced knock-in efficiencies (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic showing the relative position of guide RNAs in the 3\u2019 UTR. The first set of gRNA (gRNA1) cuts proximal to the stop codon, the second set (gRNA 2) cuts\u00a0distal. Average distance of cut site from the insertion site is shown for both sets of gRNAs against 50 TFs. (B) Representative V5 ICC images of Sox3, Sox5, and Sox8 V5 knock-in bulk populations obtained with gRNA 1 (left panels) and gRNA 2 (right panels) are shown; % V5 knock-in efficiency for each experiment is shown at the right bottom of V5 panels (numbers in white). (C) Heatmap representation of V5 knock-in efficiency obtained with gRNA1 and gRNA2 for different genes, color code is shown on the right. (D) Example of sequencing traces using the bulk populations of V5-tagged cells for Sox8 and Foxj3. Alignment with the expected TF-V5 chimeric sequence is shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematics showing location of gRNAs, first set of gRNAs cut proximal to the stop codon and shown in red. (B) PCR strategy is shown, a V5 tag-specific reverse primer and a TF exon-specific forward primer were used to amplify HDR-edited regions for each of the 50 TFs. (C) Agarose gel analysis of PCR product. Gene names are indicated at the top of each lane, lanes marked with \u2018+\u2019 denote successful knock-in of the V5-encoding sequence at the target gene (based on the expected size of PCR products), 1kb\u00a0+\u00a0DNA ladder is marked \u2018L\u2019.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematics showing location of gRNAs, second set of gRNAs cut distal to the stop codon and shown in red. (B) PCR strategy is shown, a V5 tag-specific reverse primer and a TF exon-specific forward primer were used to amplify HDR-edited regions for each of the 50 TFs. (C) Agarose gel analysis of PCR product. Gene names are indicated at the top of each lane, lanes marked with \u2018+\u2019 denote successful knock-in of the V5-encoding sequence at the target gene (based on the expected size of PCR products), 1kb\u00a0+\u00a0DNA ladder is marked \u2018L\u2019.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Schematics at the top shows the PCR amplification of HDR-edited loci using a TF exon-specific forward primer and a V5 tag-specific reverse primer. Sequencing traces from the respective PCR amplicons were aligned with the expected TF-V5 chimeric sequence.\n\nBy PCR genotyping, we found that both proximal and distal gRNAs could result in successful tagging in the majority of cases; 30/50 genes (60%) for proximal DSB and 27/50 for the distal DSB (54%) (Figure 4\u2014figure supplements 1, 2 and 3). However, this assay is qualitative. To quantitatively score the knock-in efficiency, we performed V5 ICC assay for the seven expressed TFs (Figure 4B,C). Sanger sequencing confirmed targeted insertion of the V5 tag-coding sequence (Figure 4D). Importantly, by comparing the efficiency of tagging for these seven genes, we noted a consistent trend towards increased tagging efficiency for the most proximal cut site. For example, Sox3 showed 18% and 5% knock-in efficiency, for proximal and distal gRNAs, respectively (Figure 4B). For four genes (Sox9, Foxj3, Fok1 and Foxk2), the distal gRNA did not work, whereas the proximal gRNA facilitated high knock-in efficiency (Figure 4C). There were no genes for which the more distal gRNA worked better than the proximal gRNA. These results suggest proximity of DSB to the stop codon influences the efficiency of knock-in.\n\n### A scalable pipeline for high-throughput knock-in of epitope tags using 96-well microplates\n\nIt is often desirable to explore large numbers of proteins within a shared family, complex or pathway. Methods enabling knock-in of many genes in parallel would be valuable. The gene-specific synthetic short crRNAs and matched ssODN repair templates can be obtained from commercial suppliers in 96-well microplates. Indeed, all steps can be performed easily in 96-well format: preparation of the transfection-ready components via automated liquid handling, benchtop incubation/annealing, 96-well transfection, and automated microscopy to acquire images across 96-well plates. We reasoned that scale-up could therefore be relatively straightforward. A major remaining bottleneck, however, is the need for bioinformatics design tools specifically tailored towards epitope tagging applications.\n\nManually extracting gene sequence data, identifying appropriate gRNAs, and design of modified repair ssODNs, would be laborious and error-prone for hundreds of genes. To automate the batch design of crRNAs and ssODNs, we developed \u2018Tag-IN\u2019, a novel web-based tool (Figure 5, http://tagin.stembio.org). This enables design of appropriate gRNA and ssODNs for both human and mouse species, with flexibility in choice of tag. Our \u2018Tag-IN\u2019 incorporates key design rule and parameters \u2013 e.g. incorporating \u2018Rule Set 2\u2019 for maximised activity (Doench et al., 2016), and \u2018MIT\u2019 scoring model (Hsu et al., 2013) to minimise off-target effects. Our tool also considers optimal distance from the insertion site (stop codon), and outputs the matched ssODNs modified with PAM-blocking mutations and appropriate epitope tag sequence. \u2018Tag-IN\u2019 also enables batch design; critical for the effective scale up to 96-well format (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig5-v2.jpg)\n\n**Figure 5.:** In the first step, crRNAs and matched ssODNs are designed (either single input or batch processing) using the \u2018Tag-IN\u2019 bioinformatics tool. The tool picks top two crRNAs in the 3\u2019UTR (within 8\u201315 bp from stop codon if high-quality crRNAs available) and designs an ssODN for each query based on user\u2019s choice of the epitope tag. After the procurement of CRISPR ingredients from the supplier, the RNPs and matched ssODNs are assembled in vitro in 96-well plates (step 2) and transfected into stem cells using Amaxa shuttle system (step 3). Five days after the transfection, a replica plate is processed for V5 ICC and images are captured using high-content imaging system Operetta (step 4). V5-positive cells from the corresponding wells can be later expanded to derive clonal lines for downstream applications (step 5,6).\n\nUsing the Tag-IN tool, we designed crRNAs and matched V5 encoding repair ssODNs against 185 different transcription factors. Each of these crRNAs/ssODNs were also manually verified to ascertain that the tool picked proximal-cutting crRNA and the ssODNs contained appropriate PAM-blocking mutations and homology arms. These mouse genes were selected based on expression in human glioblastoma stem cells. One gRNA was tested for each gene. The RNPs were prepared using a 96-well head liquid handling device (Felix, CyBio) and then transfected in parallel into mouse GNS cells (Figure 5). Five days later, ICC was performed and V5 knock-in efficiencies were quantified across the entire plate using automated plate image capture (Operetta high-content imaging system, Perkin Elmer). Sox2 tagging was used as a positive control in six wells; these gave consistent V5 knock-in efficiency across the plate, confirming no \u2018edge-effects\u2019 during the procedure (10.5 \u00b1 2.5%) (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig6-v2.jpg)\n\n**Figure 6.:** (A) Heat map of V5 knock-in efficiency across the entire 96-well plate. The positive control Sox2 was included in six different wells (marked with \u2018+\u2019). (B) Representative ICC images of V5 knock-in from figure (a) are shown, nuclear stain DAPI (blue) and TF-V5 fusion protein (yellow) are shown. (C) A 96-well plate heatmap of V5 knock-in for another set of 96 TFs. (D) Representative V5 knock-in panels, as obtained from the Operetta system, for the 96-well plate from (C) are shown, well number is indicated in the merged panel of each TF. Nuclear stain DAPI (blue), entire cell stain CellMask HCS (green), and V5 tag (red) are shown. (E) Top 30 TFs with highest knock-in efficiency from (A) and (C).\n\nRemarkably, for the first 96-well plate, 30 out of 90 TFs were positive for V5 ICC with typical knock-in efficiencies ranging from 6%\u00a0to29% (Figure 6A,B). A second 96-well plate with distinct TFs showed similar knock-in efficiency (5%\u201338%), with 31 out of 95 TFs positive for V5 ICC (Figure 6C,D). These are similar efficiencies to those observed in our earlier single transfections (Figures 1 and 2). V5 ICC confirmed the expected nuclear localisation of these TFs (Figure 6B). Thus,\u00a0~30% of genes were successfully tagged at the first attempt with good knock-in efficiency (Figure 6E).\n\nInterestingly, two of the V5-positive TFs- Cbfb and Ybx1, showed nucleocytoplasmic localisation (Figure 6B,D). This illustrates the valuable information regarding protein localisation and levels data that can be quickly obtained. The frequency of successful genes tagged as scored by V5 ICC in these experiments is likely to be an underestimate, as\u00a0~20% of the failed TFs are low or non-expressed NS lines (Pollard lab, unpublished data). These results clearly demonstrate the ease with which our method can be scaled to 96-well format epitope tagging.\n\n### csRNP-derived knock-in lines can be used for immunoprecipitation-mass spectrometry (IP/MS) to identify protein partners\n\nAs a proof-of-principle of the applications, we performed V5-immunoprecipitation followed by mass spectrometry (IP-MS), to identify interaction partners of Olig2 in mouse GNS cells using the RIME (Mohammed et al., 2016) and ChIP-SICAP (Rafiee et al., 2016) methods. These enable identification of chromatin-bound protein partners \u2013 the latter being more stringent for chromatin-bound proteins. For each assay, we used V5 monoclonal antibody conjugated to magnetic beads. RIME analysis showed high enrichment of the bait protein Olig2 (Figure 7A) and subunits of SWI/SNF complexes and histone deacetylases (HDACs) in the pull-down complexes (Figure 7\u2014source data 1). Physical interaction of Olig2 and SWI/SNF complex has been previously reported and this interaction is essential for oligodendrocyte differentiation (Yu et al., 2013). HDACs have a known functional role in Olig2 function during development.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig7-v2.jpg)\n\n**Figure 7.:** Mouse GNS Olig2-V5 cells were used for the identification of Olig2 interaction partners. (A) RIME analysis, volcano plot showing log(2) fold change plotted against \u2212log(10) p value for endogenously V5-tagged Olig2 samples versus samples generated from an untagged parental cell line. (B) ChIP-SICAP analysis, proteins identified in the chromatin-bound complexes are ranked based on iBAQ score in the descending order.\n\nChIP-SICAP analysis showed strong enrichment of Olig2 and core histone proteins suggesting specific pull-down of chromatin fragments bound by Olig2 TF (Figure 7B). Noteworthy, two other oligodendrocyte lineage transcription factors, Olig1 and Olig3, were detected among the most enriched proteins. Earlier studies reported that sets of genes regulated by various Olig proteins have a partial overlap (Ligon et al., 2007; Meijer et al., 2012), explaining co-occupation of the same DNA-sites as shown by these data. Furthermore, we detected two other members of the basic helix-loop-helix (bHLH) family: Npas3 and Tcf4. The bHLH transcription factors are known to form heterodimers with other bHLH proteins on chromatin (Massari and Murre, 2000) and the presence of Npas3 and Tcf4 may be explained by their direct physical interaction (Figure 7B; Figure 7\u2014source data 1). Both Npas3 and Tcf4 have been reported to be involved in CNS development (Shin and Kim, 2013; Chen et al., 2016). Interestingly, a recent study reporting interactions of Olig2, Tcf4 and Npas3 in mouse neural stem cells by FLAG-affinity purification (Moen et al., 2017) allowed us to correlate interactomes of all the three bHLH proteins with our data. Taken together, our results indicate that Tcf4 and Npas3 co-localise with Olig2 on chromatin, suggesting a functional interaction.\n\nIn addition to protein interactions of Olig2 on-chromatin, we also analysed the flow-through of the streptavidin enrichment, representing interactions with soluble Olig2 (Supplementary file 3). As expected, Olig2, Olig1, and Olig3 were found among the most highly abundant proteins, indicating high specificity of the immunoprecipitation. Furthermore, composition of identified proteins correlates with previous findings: we detected three known interactors of Olig2 (Cul3, Smarca4 and Sox8 (BioGRID, Intact)) and 55 other proteins reported to co-precipitate with Olig2 (Moen et al., 2017) (Supplementary file 3). These included many SWI/SNF family members, and chromatin regulators Cbx3 and Chd4, consistent with RIME. Collectively, our data confirm that V5-tagging can be effectively combined with ChIP-SICAP to identify proteins that co-localise on chromatin or that interact off-chromatin.\n\n### Knock-in of mCherry fluorescent reporter in NS cells using dsDNA blocks and csRNP\n\nInsertion of fluorescent protein-encoding sequences (such as GFP, mCherry) in frame within gene coding regions enables monitoring of eukaryotic protein localisation in live cells. Additionally, fusion proteins can be used for pull-down assays (immunoprecipitation and ChIP). Encouraged by the facile deployment and efficiencies of the Cas9 RNP method for small epitope tagging, we next asked if the same approach could be used for knock-in of relatively large mCherry-encoding DNA sequence (~700 bp) in NS cells. First, we tested the effect of variable length of homology arms on knock-in efficiency (Figure 8A). For these experiments, double-stranded linear DNA fragments harbouring variable homology arms were used as donor DNA templates (PCR-amplified from a previously reported promoterless Sox2-mCherry plasmid) (Bressan et al.). We found that dsDNA with larger homology arms were more effective in mCherry knock-in (Figure 8B), although homology arms as small as 100 bp showed\u00a0~0.29% cells positive for mCherry in the bulk populations. We next tested mCherry knock-in at Olig2 and Foxg1 loci and achieved 0.34% and 0.11% efficiency, respectively (Figure 8C). Live-imaging of mCherry-sorted populations for the three genes (Sox2, Olig2, and Foxg1) showed the expected localisation and levels of fusion proteins in NS cells (Figure 8D). Together, these results show that our csRNP method can be used for knock-in of fluorescent reporters in NS cells.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/35069/elife-35069-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematics of the mCherry knock-in experiment is shown. NS cells were electroplated with Cas9 RNP complex along with a dsDNA donor DNA, which was amplified using a vector plasmid that harbours mCherry encoding sequences flanked by promoter-less Sox2 homology arms. Cells were allowed to recover and expand for 7 days and then analysed by flow-cytometry for mCherry knock-in. (B) Flow-cytometry analysis of mCherry knock-in at Sox2 locus. Effect of variable length of homology arms was assessed, composite graph for all the panels is shown at the right bottom. (C) Flow-cytometry analysis of mCherry knock-in at Olig2 and Foxg1 loci, a donor DNA containing 500 bp homology arms was used for each gene. (D) Live-images of the mCherry-sorted populations are shown. Top panels show phase contrast and mCherry merged; bottom panels show mCherry alone.\n\n## Discussion\n\nAn overarching goal in biology is to determine the key functions of each protein encoded in the genome. Epitope tagging of endogenous genes using CRISPR-assisted knock-in provides new opportunities to interrogate protein function, expression, subcellular localisation and interacting partners. In this study, we demonstrated simple and efficient epitope tag knock-in across a large number of genes in mouse and human stem cells.\n\nUse of Cas9 recombinant protein is critical. We found that when combined with synthetic modified RNAs significant enhancement in the efficiency is possible. This was achieved using faster and more reliable method \u2013 compared to plasmid-based strategies. Importantly, we showed primary mammalian stem cell lines are readily amenable to RNP engineering, without the need for plasmid production, or prior genetic manipulation of the host cell lines. Our method is therefore versatile enough to be implemented by any laboratory in their existing cell lines. All reagents can now be obtained \u2018off the shelf\u2019.\n\nAssembly of RNPs with csRNAs is simple and requires only\u00a0~30 min hands-on-time; this compared favourably to IVT reactions, which require multiple steps, are time-consuming, and result in variable quality of gRNAs. In our hands, these reagents are stable at \u221220o C for many months, and is particularly convenient when re-used across a range of cell types. Perhaps more importantly, use of the custom synthetic cr/tracrRNAs with their modified backbone and protected ends, shields the RNA from cellular RNases. We found greatly reduced toxicity \u2013 one of the key advantages of the csRNP over IVT sgRNA and plasmids-based delivery methods.\n\nWe routinely generated clonal knock-in lines in a time-frame of 4\u20136 weeks. Consistent with a previous report (Liang et al., 2015), we found that RNP complexes target both copies of the genes at high frequency, enabling facile isolation of bi-allelic knock-in clones. Although monoallelic knock-in clones are sufficient for pull-down assays, bi-allelic clones are preferred to have more confidence in the interpretation of downstream assays.\n\nWhile our focus has been on neural stem cells and their malignant counterparts (glioma stem cells), these same methods and reagents can work well in other stem cells, such as ES cells. Indeed, our knock-in data using ES cells revealed that non-expressed genes can be efficiently tagged using the same protocol. Under appropriate differentiation cues, induction of these proteins can be monitored using ICC analysis in the ES cell differentiating progeny. We believe this could be a key application \u2013 rapidly enabling assessment of proteins across a range of lineage contexts.\n\nDespite the excitement, there are also some caveats. Foremost, inevitably there is a risk that C-terminus tagging can potentially compromise protein function, localisation or levels in the edited cells. Not all proteins will be amenable to tagging. If the protein of interest harbours critical C terminal domains, an N-terminus approach could be pursued \u2013 or knock-in to other regions such as structurally neutral linkers, if this is known. In this study, we used PAM-strand (non-complementary strand) for donor DNA synthesis, which is less likely to be cut by Cas9 complex (Gasiunas et al., 2012). We have not compared PAM versus non-PAM donor DNA strands for knock-in efficiency although a recent report suggests that for symmetrical PAM ssODNs, both strands are equally effective for knock-in (Liang et al., 2017).\n\nPrevious findings have reported a higher HDR rate with the guide RNAs that cut near the insertion site (Bialk et al., 2015; Paquet et al., 2016; Liang et al., 2017). Our results corroborate these findings and reveal that cut-to-insertion-site distance is a critical factor for successful knock-in. Lower knock-in efficiency achieved with the distal-cutting gRNAs could be attributed to \u2018partial HDR\u2019 events (Guo et al., 2018), which are not detectable in our ICC end-point assays. Although beyond the scope of our present study, whole-genome sequencing of the CRISPR-edited bulk cells can shed light on the extent of \u2018partial HDR\u2019 events in epitope knock-in experiments. The average size of CRISPR/Cas9-induced indels in mammalian cells has been reported to be around 1\u20135 bp (Paquet et al., 2016). We therefore recommend designing guide RNAs in the 3\u2019UTR, preferably cutting 8\u201315 bp downstream of stop codon, to avoid interfering with the stop codon.\n\nThe ability to scale-up tagging to 96-well format required us to tackle the bottleneck in design. Our newly developed \u2018Tag-IN\u2019 tool simplifies gene sequence retrieval and designing crRNA and ssODN for medium-throughput experiments and is available from any web browser (http://tagin.stembio.org). This can be modified for use with alternative design parameters and distinct tags. We demonstrated one of the key applications by single-cell imaging of the levels and localisation for 60 different transcription factors in glioma stem cells. These were successfully tagged without any screening of gRNAs or ssODN; those that failed could be due to the gRNA not working effectively or the ssODN donor being sub-optimal. These could be re-tested with replacements \u2013 particularly for the ssODN, other tag can be used that works effectively in some instances (data not shown). Alternatively, the protein maybe expressed at levels too low to detect by ICC, but the tag insertion might still be detected by PCR genotyping. This is likely the case for 10\u201320% of the genes we explored.\n\nThe pipeline that emerges is fully scalable and does not require sophisticated tools, expertise, or know-how. There are no significant bottlenecks in either the design, acquisition/production of reagents or delivery into cells. It was possible to generate such data with relatively little labour investment, and the whole pipeline from obtaining the reagents to imaging data was accomplished within three weeks.\n\nIncreasing the throughput further, we can envision systematic surveys of many hundreds or thousands of genes. Because tag-specific antibodies work universally across different cell types and species, this approach should allow cross-species comparisons and will also complement existing efforts to develop and characterise native antibodies. Furthermore, tagging of DNA-binding proteins will allow us to generate comprehensive genome-wide binding sites via ChIP-Seq for key transcription factors, chromatin-modifying enzymes, and other gene regulatory proteins. Although not a focus of the current study, we also find that csRNP is highly effective for gene knockout studies (Pollard laboratory, unpublished and (Jacobi et al., 2017).\n\nWe demonstrated proof-of-principle in identification of Olig2 protein partners. This is likely a key application for future studies; simplifying and scaling up the ability to probe protein complexes in a range of cell types and cell states. Using the Olig2-V5 knockin lines we demonstrated on-chromatin partners in mouse glioma cells using optimised RIME and ChIP-SICAP methods, validating previously reported protein interaction partners. These optimised V5 RIME and ChIP-SICAP methods can now be deployed using the same optimised protocol for other mammalian proteins, particular for those with no good quality antibodies \u2013 a key advantage of epitope tagging.\n\nWith the remarkable developments in single-cell mRNA profiling, and plans for systematic RNA and protein atlases of mammalian cell types (Rozenblatt-Rosen et al., 2017), there is a greater need than ever to relieve the bottleneck of exploring protein products. Descriptive maps of cell types, while valuable, must be complemented by careful and detail molecular and cellular functional studies. Our findings suggest that epitope using CRISPR/Cas-assisted knock-in is now simple and efficient enough that systematic annotation of many hundreds or thousands of endogenous will be possible in mouse and human stem and progenitor cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>SOX2</td>\n      <td>NA</td>\n      <td>Transcript ID_ENSEMBL: ENST00000325404</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>SOX9</td>\n      <td>NA</td>\n      <td>Transcript ID_ENSEMBL: ENST00000245479</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>OLIG2</td>\n      <td>NA</td>\n      <td>Transcript ID_ENSEMBL: ENST00000333337</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>ANS4</td>\n      <td>PMID: 28096221</td>\n      <td></td>\n      <td>mouse neural stem cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>BL6</td>\n      <td>PMID: 28096221</td>\n      <td></td>\n      <td>mouse neural stem cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>IENS</td>\n      <td>PMID: 17936558</td>\n      <td></td>\n      <td>mouse glioma-initiating stem cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>ES (Tg2a)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>mouse embryonic stem cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>MasterShef7 (MS7)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>human embryonic stem cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>G7 human tumour-derived</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell derived from GBM tumours</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>V5 tag</td>\n      <td>eBioscience</td>\n      <td>TCM5 #14-6796-82; RRID:AB_10718239</td>\n      <td>1:1000 Overnight 4\u00b0C</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HA Tag</td>\n      <td>Cell Signalling</td>\n      <td>6E2 #2367; RRID:AB_10691311</td>\n      <td>1:100 Overnight 4\u00b0C</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FLAG tag</td>\n      <td>Sigma-Aldrich</td>\n      <td>#F3165; RRID:AB_259529</td>\n      <td>1:2000 Overnight 4\u00b0C</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Myc tag</td>\n      <td>Cell Signalling</td>\n      <td>9B11 #2276; RRID:AB_331783</td>\n      <td>1:4000 Overnight 4\u00b0C</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor Plus Secondary antibody</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Alexa Fluor Plus 647; RRID:AB_141663</td>\n      <td>1:1000 1 hr RT</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET28a/Cas9-Cys</td>\n      <td>Addgene</td>\n      <td>Addgene, #53261</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cas9 protein</td>\n      <td>Addgene</td>\n      <td>Addgene, #53261</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>crRNAs</td>\n      <td>Integrated DNA Technologies, USA</td>\n      <td>CRISPR-Cas9 crRNA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>tracrRNAs</td>\n      <td>Integrated DNA Technologies, USA</td>\n      <td>CRISPR-Cas9 tracrRNA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Tag-IN tool</td>\n      <td>This paper</td>\n      <td>http://tagin.stembio.org</td>\n      <td>for crRNA ssODN design</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESKGEN tool</td>\n      <td>https://www.deskgen.com/landing/cloud.html</td>\n      <td>https://www.deskgen.com/landing/cloud.html</td>\n      <td>for crRNA ssODN design</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nMouse and human NS and GNS cell lines were cultured essentially as described previously (Conti et al., 2005; Pollard et al., 2006). Laminin was purchased from Cultrex, R and D Systems. ANS4 and BL6 NS cell lines have been described previously (Bressan et al., 2017). Mouse ES (Tg2a) cells were cultured in GMEM supplemented with 10% fetal calf serum, 1x non-essential amino acids,1x glutamine/sodium pyruvate, 1xLIF, 1x Pen/strep and 100 \u03bcM of \u00df-mercaptoethanol. Media was changed every day and cells passaged approximately every other day onto plates pre-coated with 0.1% gelatin. Differentiation of ES cell was performed as described previously (Pollard et al., 2006) with 1 \u00d7 104 cells per cm2 being seeded in N2B27 complete media for 7 days, with media being changed every 1\u20132 days.\n\nMasterShef7 (MS7) human embryonic stem cells (hESCs) were re-cultured in Essential 8 (E8) medium (Gibco, A1517001) on tissue culture plastic coated with Human Recombinant Laminin-521 (BioLamina, LN521) at 5 \u03bcg/ml. Routine passaging was performed by incubating cells for 5 min at 37\u00b0C in 0.5 mM EDTA in PBS. Single-cell dissociation prior to nucleofection was performed by incubating cells for 10 min at 37\u00b0C in accutase. Y-27632 (Cell Guidance Systems, SM02) was included in the culture medium at 10 \u03bcM following initial thawing and after plating following nucleofection. New engineered cell reporters described here are available upon request. No standard cell lines were used. We used primary stem cell lines. Human ES cells were provided by the UK stem cell bank and had appropriate contamination testing and authentication.\n\n### Colony picking and clonal lines generation\n\nClonal cell lines were derived from the bulk populations using either single-cell deposition to 96-well plates or by manual colony picking. Single cells were deposited into 96-well plates using BD FACSAria II cell sorter. Depending on the cell lines, we obtained 30\u201340 colonies per 96-well plate in 2 weeks. For manual colony picking, mouse cells were seeded at clonal density (400 cells per 10 cm dish for NS cells, 100 cells per dish for GNS cells) to a 10 cm dish and incubated in the complete media for 10\u201312 days for colony formation. From each dish, we picked 25\u201330 manually with a P20 pipette. Colonies from both methods were later replica plated into 96-well plates and analysed for successful knock-in using immunocytochemistry against the V5 tag. The V5-positive clones were further expanded for DNA extraction (PCR genotyping) and cryostorage.\n\n### Design of guide RNAs and ssODN repair templates\n\nFor manual design: the 3\u2019UTR sequence and 500 bp sequence upstream of the 3\u2019UTR were retrieved using Biomart tool. The final coding exon and 3\u2019UTR features were manually annotated using SnapGene and the\u00a0~200 bp around the stop codon were used as an input for guide RNA designing. We designed guide RNAs using either the web-based tool form Desktop Genetics (https://www.deskgen.com/landing/) or our own bioinformatics \u2018Tag-IN\u2019 tool (below). High scoring guide RNAs were picked for synthesis (i.e those with cut sites in the 3\u2019UTR, preferably within 8\u201315 bp distance from the stop codon and minimal predicted off-target cleavage). For ssODN design, first the PAM-blocking mutations (NGG\u00a0>NGC or NGT) were introduced into the SnapGene sequence and then the epitope-tag coding sequence was inserted before the stop codon. The\u00a0<200 mer ssODN ultramer was chosen to be the same strand as the guide RNA (also referred to as the PAM-strand, non-complementary strand or non-targeting strand) and is comprised of: a 5\u2019 homology arm (~70 mer), the epitope tag coding sequence, stop codon, and a 3\u2019 homology arm with the PAM-blocking mutations (~70 mer). For some of the ultramers the PAM-strand synthesis had failed and, therefore, the complementary strand (non-PAM strand) was synthesised as a donor DNA.\n\n### Custom synthetic crRNA, tracrRNA, and ssODN\n\nCustom synthetic crRNAs, tracrRNA, and ssODNs were manufactured by Integrated DNA Technologies, USA. The RNA backbone and ends were chemically modified for protection against cellular RNases. The 36-mer crRNA contains a variable gene-specific 20-nt target sequence followed by 16-nt sequence that base-pairs with the tracrRNA. The 67-mer tracrRNA contains the gRNA-scaffold sequence as well as 16-nt sequence complementary to crRNA. The lyophilised crRNA and tracrRNA pellets were resuspended in Duplex buffer (IDT) at 100 \u03bcM concentration and stored in small aliquots at \u221280\u00b0C. ssODN donor DNAs lyophilised pellets were supplied without modifications and resuspended in Duplex buffer (IDT) at 30 \u03bcM concentration.\n\n### Production of in vitro-transcribed sgRNA\n\nDNA template for T7-driven synthesis was prepared by annealing 119-mer, single-stranded, complementary ultramers (from IDT) encoding T7 promoter, guide RNA, and gRNA scaffold sequences. 200 ng of the template were used to synthesise sgRNA with the MEGAscript T7 Transcription Kit. The sgRNA was further purified using MEGAclear Transcription Clean-Up Kit and stored at \u221280\u00b0C.\n\n### Production of recombinant Cas9 protein\n\nBL21(DE3) cells (New England Biolabs, C2527) were transformed with the plasmid pET28a/Cas9-Cys (Addgene, Cambridge, USA,\u00a0plasmid\u00a0#53261) using standard protocols. Cas9 protein expression was induced with 0.5 mM IPTG (Isopropyl \u03b2-D-1-thiogalactopyranoside) (Fisher, 10715114) and the cells were incubated overnight at 20\u00b0C. 24 hr later, bacterial pellets were resuspended in 20 ml of lysis buffer (20 mM Tris-HCl pH 8.0, 500 mM NaCl, 1 mM TCEP, 5 mM imidazole pH 8.0), sonicated and loaded on a HisTrap HP 5 ml column (GE, 17-5248-01). The Cas9 protein was collected in elution buffer (20 mM Tris-HCl pH 8.0, 250 mM NaCl, 10% glycerol, 1 mM TCEP, 250 mM imidazole pH 8.0). The fractions containing Cas9 protein were pooled and loaded into a HiPrep 26/10 Desalting Column (GE, 28-4026-52) to equilibrate in Cas9 buffer (20 mM HEPES-KOH pH 7.5, 150 mM KCl, 1 mM TCEP). The purified Cas9 protein was further concentrated using Vivaspin columns (Vivaspin20, 30 000 MWCO PES, Sartorius stedim, VS2021) as per the users-guide instructions.\n\n### Assembly of the active ribonucleoprotein (Cas9 plus csRNAs)\n\nSynthetic Alt-R CRISPR/Cas9 crRNAs and tracrRNA were supplied by IDT. We prepared Cas9 RNP complexes immediately before electroporation experiments (a detailed protocol in a separate Appendix 1 is available). Cas9 RNPs with IVT sgRNA were assembled (1\u20133 \u03bcg of IVT sgRNA with 5\u201310 \u03bcg of Cas9 protein) as described previously (Bressan et al., 2017). For csRNP preparation, 100 picomoles of each crRNA and tracrRNA were annealed using gradual step-down cooling in the PCR block (5 min at 95\u00b0C, step cool-down from 95\u00b0C to 25\u00b0C at ramp rate 0.1\u00b0C/s, 4\u00b0C (store) at ramp rate 0.5\u00b0C/s). Ribonucleoprotein (RNP) complexes were assembled by adding 10 \u03bcg of recombinant Cas9 protein to the annealed cr/tracrRNAs, incubated at room temperature for 10 min and stored on ice until electroporation into cells. 30 picomoles of single-stranded donor DNA were added to RNP complexes just before electroporation to prepare the complete RNP mix. For mCherry knock-in, csRNPs were prepared similarly and 200 ng of PCR products were used as donor DNA templates per reaction. For multiplex epitope tagging, 100 picomoles of cr/tracrRNA of each Sox2 and Olig2 were mixed together with 20 \u03bcg of rCas9 protein.\n\n### Cell transfection\n\nWe used 4D Amaxa nucleofection system for the delivery of CRISPR ingredients. For NS cells and GNS cells, approximately 1.5 \u00d7 105 cells were resuspended in 20 \u03bcL of Lonza SG cell line buffer and were mixed with the complete RNP mix and electroporated using the DN-100 program (two consecutive pulses for mouse NS cells) or using EN-138 program (one pulse for human GBM-derived cells). For embryonic stem cells, approximately 6 \u00d7 104 cells in 20 \u03bcL of Lonza P3 primary cell buffer were used for each transfection with different programs: one pulse of program CA-120 for mouse ESCs; program CB-150 for human ESCs. After the electroporation, cells were transferred into a 6-well plate and allowed to recover for 3\u20135 days and later seeded into 96-well plates (1\u20132 \u00d7 104 cells per well) for ICC.\n\nFor scale up, RNP assembly and delivery were performed as above, except that RNP complexes were prepared a day before and stored at \u221220\u00b0C. Electroporation was performed using the 96-well Shuttle device (Amaxa, Lonza). Immediately after transfection cells were transferred into a 96-deep-well plate and replica plates for immunocytochemistry assay were prepared by dispensing 1 \u00d7 104 cells into 96-well plate using CyBi-FeliX Liquid Handling Platform.\n\n### Immunocytochemistry and imaging\n\nWe performed ICC on 96-well plates 5 days after transfection. Cells were washed once with PBS and fixed using 4% paraformaldehyde for 10 min at room temperature and then permeabilised in PBST (PBS\u00a0+\u00a00.1% Triton X-100) for 20 min. Samples were incubated with blocking solution (1% goat serum in PBST) for 30 min at room temperature to block non-specific binding of the antibodies. Samples were treated overnight with primary antibodies in blocking solution followed by incubation with appropriate secondary antibodies and 4\u2032,6-diamidino-2-phenylindole (DAPI). Images were acquired using either a Nikon wide-field fluorescence microscope or a PerkinElmer Operetta high-content imaging system. V5-positive cells were scored using Fiji software.\n\nThe following primary antibodies were used: V5 tag (eBioscience, TCM5 #14-6796-82,1:1000); HA Tag (Cell Signalling, 6E2 #2367, 1:100); FLAG tag (Sigma-Aldrich, #F3165, 1:2000); Myc tag (Cell Signalling, 9B11 #2276, 1:4000), Alexa Fluor secondary antibodies mostly Alexa Fluor Plus 647 (Thermo Fisher Scientific, 1:1000). HCS CellMask Green Stain (Thermo Fisher Scientific, #H32714) for nucleocytoplasmic staining was used at 1: 10,000 for 20 min at room temperature.\n\n### Genomic DNA extraction and PCR genotyping\n\nGenomic DNA was extracted either using in-house lysis buffer as described previously (Bressan et al., 2017) (bulk populations from 96-well plate or using DNeasy Blood and Tissue Kit (Qiagen, # 69506, for DNA extraction from clonal lines in a 24-well plate). PCR primers flanking the V5 tag were designed online using Primer3Plus to generate 400\u2013600 bp PCR amplicons. PCR genotyping and Sanger sequencing were done as described previously (Bressan et al., 2017). DNA samples were analysed using 2.5% agarose gels.\n\n### ChIP-SICAP and RIME\n\nApproximately 40 million mouse NS cells from three T150 flasks (150 cm2) were cultured until 70\u201380% confluence and then dissociated into single-cells using accutase. To fix DNA-protein and protein-protein interactions, the cell pellet was resuspended in 1.5% methanol-free formaldehyde (Pierce) in 10 mL PBS for 10 min at room temperature. Excess formaldehyde was quenched by adding 125 mM glycine and incubated for 5 min at room temperature. Cells were washed twice with cold PBS and stored at \u221280\u00b0C until further use. ChIP-SICAP experiments were performed as described previously (Rafiee et al., 2016). Briefly, chromatin from 40 million formaldehyde-fixed cells was sheared by sonication (Bioruptor Pico, Diagenode) down to 150\u2013500 bp fragments, which were used as input for immunoprecipitation with anti V5 antibody (Abcam, 15828) overnight at 4\u00b0C. Antibody was captured with Protein-G beads (LIFE technologies, 10004D), the associated DNA was biotinylated by terminal deoxynucleotidyl transferase (Thermo Fisher, EP0162) in the presence of biotin-11-dCTP (Jena Bioscience, NU-809-BIOX). The antibody was eluted from the beads in 7.5% SDS with 200 mM DTT and the released DNA-protein complexes were caputred by streptavidin magnetic beads (NEB, S1420). After subsequent washes with SDS washing buffer (Tris-CL 1 mM, 1% SDS, 200 mM NaCl, 1 mM EDTA), 20% isopropanol and 40% acetonitrile, the beads were boiled in 0.1% SDS in 50 mM ammonium bicarbonate and 10 mM DTT at 95\u00b0C for 20 min. Proteins were digested overnight with trypsin at 37\u00b0C and the resulting peptides were purified with the SP3 protocol as described previously (Hughes et al., 2014) and analysed using an Orbitrap Fusion LC-MS system.\n\n### crRNA/ssODN design tool\n\nThe implementation of our crRNA/ssODN design tool was completed in four stages: extraction of a target genomic sequence from GRCh38.p5 or GRCm38.p4 genome builds, retrieval of crRNA sequences matching the pattern N20NGG, scoring and ranking of each crRNA using the \u2018Rule Set 2\u2019 (Doench et al., 2016) and \u2018MIT\u2019 scoring models (Hsu et al., 2013), and design of each corresponding ssODN sequence.\n\nTo accommodate genomic sequence extraction, an SQL database of genomic coordinates was built using the Genomic Features package in R. This SQL database was used to retrieve coding DNA sequence (CDS) ranges upon user query with a desired Ensembl transcript Id. Given a CDS range, a genomic sequence was then extracted from a corresponding GRCh38.p5 or GRCm38.p4 Fasta file.\n\nFor each target genomic sequence, crRNAs were extracted limited to the pattern N20NGG. crRNAs were then ranked using two scoring models, \u2018Rule Set 2\u2019 for assessing crRNA efficiency, and the MIT scoring system for crRNA specificity (Hsu et al., 2013; Doench et al., 2016). The former was utilised as a standalone script retrieved from the \u2018sgRNA Designer\u2019 website (https://portals.broadinstitute.org/gpp/public/analysis-tools/sgrna-design) and the latter was implemented as documented on the \u2018CRISPR Design\u2019 website (http://crispr.mit.edu/about). Off targets for each crRNA were found using the short read aligner tool Bowtie, searching up to three mismatches (Langmead et al., 2009). Off targets that then match the PAM pattern NAG and NGG were extracted from the Bowtie output. In addition, crRNAs that cut close to the stop codon (8\u201315 bp in the 3\u2019UTR), and within the UTR region, were prioritised. Given a batch request, the top two ranking crRNAs were selected for output. A maximum distance of 30 bp from the stop codon was chosen as an additional threshold for batch processing.\n\nTo implement ssODN design, user-defined tags were inserted immediately 5I proximal to the stop codon. PAM sequences were changed to minimise potential for Cas9 cleavage of donor sequences. Where the PAM sequence resided in the 3I UTR, our tool modified the NGG PAM to NGC. Intronic or exonic PAM changes instead aimed to produce silent mutations, and where this was not possible, aimed to reduce alterations in function by minimising differences in hydrophobicity and charge. Final ssODN sequences were limited to 200-mer including the tag sequence. We therefore present the \u2018Tag-IN\u2019 design tool, a novel crRNA and ssODN design tool aimed at streamlining CRISPR knock-in experimentation (http://tagin.stembio.org).\n\n### Immunoprecipitation-mass spectrometry\n\nThe Olig2 protein interactors were identified using the Rapid immunoprecipitation mass spectrometry of endogenous protein (RIME) protocol. The nuclear fraction was resuspended using 1 ml of LB1 (50 mM HEPES KOH pH 7.5, 140 mM NaCl, 1 mM EDTA, 10% glycerol, and 0.5% NP-40) with protease and phosphatase inhibitors. Lysate was cleared by centrifugation at 2000 g for 5 min at 4\u00b0C, and the pellet was resuspended with 1 ml of LB2 (10 mM Tris-HCL [pH 8.0], 200 mM NaCl, 1 mM EDTA, and 0.5 mM EGTA), and mixed at 4\u00b0C for 5 min. Lysate was cleared by centrifugation and the pellet was resuspended in 0.5 ml of LB3 (10 mM Tris-HCl [pH 8], 100 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 0.1% Na-deoxycholate, and 0.5% N-lauroylsarcosine). Samples were sonicated in a waterbath sonicator (Diagenode Bioruptor) and cleared by centrifugation. 10 \u00b5L V5 trap magnetic beads (MBL) were used per sample. IPs, washes and on-bead digests were performed using a Thermo Kingfisher Duo, all steps are at 5\u00b0C unless otherwise stated. Beads were transferred into 500 \u03bcL of cleared lysate and incubated for 2 hr with mixing. Beads were then transferred for two washes in RIPA buffer and three washes in non-detergent lysis buffer. On-bead digest was performed by transferring the washed beads into 100 \u03bcL 2M urea, 100 mM Tris-HCl pH 7.5, 1 mM DTT containing 0.3 \u03bcg trypsin (Promega) per sample, beads were incubated at 27\u00b0C for 30 min with mixing to achieve limited proteolysis. The beads were then removed and tryptic digest of the released peptides was allowed to continue for 9 hr at 37\u00b0C. Reduced cysteine residues were alkylated by adding iodoacetamide solution to a final concentration of 50 mM and incubated 30 min at room temperature, in the dark. Trypsin activity was inhibited by acidification of samples to a concentration of 1% TFA. Samples were desalted on a C18 Stage tip and eluates were analysed by HPLC coupled to a Q-Exactive mass spectrometer as described previously (Turriziani et al., 2014). Peptides and proteins were identified and quantified with the MaxQuant software package (1.5.3.8), and label-free quantification was performed by MaxLFQ (Cox et al., 2014). The search included variable modifications for oxidation of methionine, protein N-terminal acetylation, and carbamidomethylation as fixed modification. The FDR, determined by searching a reverse database, was set at 0.01 for both peptides and proteins.\n",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "423dadbd-d8bf-4df9-a02e-ecb4aa1c09b1",
+      "submission_id": "d4403fe5-2b11-40af-9389-bd6170971451",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maarten van Lohuizen, The Netherlands Cancer Institute Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35069.033](https://doi.org/10.7554/eLife.35069.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An efficient and scalable pipeline for epitope tagging in mammalian stem cells using Cas9 ribonucleoprotein\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Fiona Watt as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Hein te Riele (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nDewari et al., present a pipeline for high content epitope tagging of proteins in mammalian cells. Salient features of their approach are: (i) the use of purified CRISPR/Cas9 protein loaded with a 67-mer tracrRNA and a gene-specific 36-mer crRNA to introduce a double-strand break in the 3' UTR of the target gene in close vicinity of the stop codon. The RNP is introduced into cells by electroporation. In Figure 1 they show that the synthetic cr:tracr dual RNA system outperforms in vitro transcribed single guide RNAs. (ii) for homology-directed break repair, they use {plus minus}200 nucleotide single-stranded oligo deoxyribonucleotide templates that instruct the integration of the epitope tag. To prevent recutting, they simultaneously introduce a PAM-disrupting mutation. The frequency of successful tagging is around 15-20%, occasionally even 30%.\n\nOverall, this report is very well written. The figures support the conclusions of the paper and present a convenient guideline for tagging of proteins with small epitopes. As such, the manuscript may be of interest for a broad audience. However, some points need further clarifications.\n\nEssential revisions:\n\n1) The frequency of successful epitope tagging was calculated based on the percentage of cells expressing the epitope (Figure 1). Subcloning and subsequent PCR analysis of V5-positive clones revealed many clones with bi-allelic tagging (Figure 2B, Table 1). However, this analysis also showed not all clones were correctly targeted. E.g., lane 1 of the Sox2-V5 clones and lanes 3 and 6 of the Sox3-V5 clones (Figure 2B). It would be helpful if the authors would add to Table 1 the number of non-correctly targeted clones in order to more precisely determine the targeting efficiency.\n\n2) In subsection \u201cThe high frequency of knock-in using csRNP facilitates simple recovery of biallelictagged clonal lines\u201d, reference is made to Table 2. This apparently should be Table 1. Or Supplementary table 2, which is the same as Table 1?\n\n3) Figure 3C shows that epitope tagging can also be achieved at genes that are not expressed in ES cells. Only after differentiation into neural cells, the V5 tag became visible. However, it seems as if in the differentiated ES cells all neuronal cells expressed V5. How is this possible? Were neural rosettes obtained from single ES cells? Were also V5-negative neuronal rosettes obtained. If so, could an estimation be given on the frequency of epitope tagging at non-expressed genes versus expressed genes in ES cells by comparing the number of V8-negative and -positive rosettes?\n\n4) Figure 4D shows the fusion between two target genes and the V5 tag. However, it is unclear why this information is useful as the fusion is present in the ssODN template. It would be more interesting to see how the sequence around the DSB was repaired.\n\nSimilar data is shown in Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1 and Figure 4\u2014figure supplement 3. From a skeptical point of view, these sequences only show that the ssODNs were properly synthesized. To confirm \"in-frame and error-free insertion of V5 tag sequence at the C-terminus\", mRNA sequencing appears more appropriate to show the tag is really present at the destined site. Reassuringly, Figure 1\u2014figure supplement 2BFigure just shows the modified Sox2 PAM site. Anyway, it is important to indicate that false positives were excluded by properly choosing the position of PCR primers.\n\n5) The higher performance of gRNAs cutting proximal to the insertion site of the epitope tag compared to distal cutting sites shown in Figure 4 is very interesting and may relate to suggested mechanisms of ssODN-templated DSB repair. It would be interesting if the authors could share their opinion on the reasons for the inferior performance of distal gRNAs.\n\n6) The higher performance of tag-proximal gRNAs was only seen by staining for the V5 epitope (Figure 4), not by PCR (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2), according to the authors because the latter is not quantitative. It is not clear why in Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2 some lanes are indicated +, others not. Was this only based on the expected size of the PCR product? Please indicate this in the legend. How discordant were the PCR and ICC results?\n\n7) Related to the above: In subsection \u201cDesign of guide RNAs and ssODN repair templates\u201d it is mentioned that \"the 200-mer ssODN ultramer was chosen to be the same strand as the guide RNA\". Was there a particular reason to choose this strand and not the opposite strand? However, \"for some of the ultramers the PAM-strand synthesis had failed and therefore, the complementary strand (non-PAM strand) was synthesized as a donor DNA.\" It would be very interesting to know how these non-PAM ssODNs performed. Do the authors consider PAM and non-PAM ssODNs equally effective? Has a comparison been made between the two?\n\n8) The above is important with respect to the Tag-IN tool the authors have created. Does the tool always propose a PAM ssODN or can also the reversed strand be chosen? If so, it should be made clear form comparative experiments that the two strands perform equally well.\n\n9) In subsection \u201cA scalable pipeline for high-throughput knock-in of epitope tags using 96-well Microplates\u201d, the results of simultaneous tagging of 185 genes is presented. Plate 1 (Figure 6A) and 2 (Figure 6C) show 30/90 and 31/95 TF2 positive for V5. What was the cutoff here? According to the scale bar, more positive wells are visible with low ({plus minus}2-5%) but detectable V5 signal. On the other hand, what happened to the negative wells ({plus minus}77 in total)? Are these all non-expressed genes? This should be made clear in order to estimate how effective the Tag-IN tool works.\n\n10) What would the authors recommend for tagging proteins with larger tags, such as GFP or luciferase? Would RNPs work similar well with larger double- or single-stranded templates?\n\n11) A large number of stem and progenitor lines have been generated that would be of great value as a resource for the scientific community. Would it be possible to make them available over a cell repository?\n\n12) The presented Tag-IN website was not available online. Thus, the value of it can't be judged.\n\nAlthough likely only a small glitch, there should be measures to ensure that the online tool will be active for years to come after publication.\n\n13) With regard to the tools and resource section selection, addition of a detailed supplementary protocol would be helpful\n",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88067d27-f58d-4421-a72b-5d11672eb085",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C1",
+      "claim": "CRISPR/Cas9 can be used for precise genetic knock-in of epitope tags into endogenous genes.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas9 can be used for precise genetic knock-in of epitope tags into endogenous genes, simplifying experimental analysis of protein function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general capability of the CRISPR/Cas9 system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9f1e636e-744c-4d21-a371-1e92883fdbc6",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C2",
+      "claim": "Cas9-assisted epitope tagging in primary mammalian cell cultures is often inefficient and reliant on plasmid-based selection strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cas9-assisted epitope tagging in primary mammalian cell cultures is often inefficient and reliant on plasmid-based selection strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "b37037be-2b50-482b-80bf-ac081140bb71",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C3",
+      "claim": "Co-delivery of Cas9 protein pre-complexed with two-part synthetic modified RNAs (annealed crRNA:tracrRNA) and single-stranded oligodeoxynucleotide (ssODN) repair templates achieves improved knock-in efficiencies of diverse tags (V5, 3XFLAG, Myc, HA).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate improved knock-in efficiencies of diverse tags (V5, 3XFLAG, Myc, HA) using co-delivery of Cas9 protein pre-complexed with two-part synthetic modified RNAs (annealed crRNA:tracrRNA) and single-stranded oligodeoxynucleotide (ssODN) repair templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding reported in the abstract, supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "cdd26393-7e3a-4a85-8c96-aadefe8a660c",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C4",
+      "claim": "Knock-in efficiencies of ~5\u201330% were achieved without selection in embryonic stem (ES) cells, neural stem (NS) cells, and brain-tumor-derived stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-in efficiencies of ~5\u201330%, were achieved without selection in embryonic stem (ES) cells, neural stem (NS) cells, and brain-tumor-derived stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantitative result is stated in the abstract and supported by data in Figures 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "96fc4c73-f544-4a56-b890-ffd2d8f151ad",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C5",
+      "claim": "Biallelic-tagged clonal lines were readily derived using the csRNP method.",
+      "claim_type": "EXPLICIT",
+      "source": "Biallelic-tagged clonal lines were readily derived and used to define Olig2 chromatin-bound interacting partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 2 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1621b276-9fe1-453b-ba93-98c8014c3ae1",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C6",
+      "claim": "Olig2 chromatin-bound interacting partners were defined using biallelic-tagged clonal lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Biallelic-tagged clonal lines were readily derived and used to define Olig2 chromatin-bound interacting partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This application is stated in the abstract and demonstrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "cbdd4fec-17c1-4c40-9588-5ee4eced1fb6",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C7",
+      "claim": "A 96-well format pipeline enabled V5-tagging of 60 different transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our novel web-based design tool, we established a 96-well format pipeline that enabled V5-tagging of 60 different transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "174cd870-bf6c-4385-bca7-22bb1bb98a30",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C8",
+      "claim": "The human protein atlas has performed systematic characterisation of antibodies against native proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale projects, such as the human protein atlas, have performed systematic characterisation of antibodies against native proteins (Thul et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Thul et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "eb862472-e34e-4d50-b435-4d282684fc2d",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C9",
+      "claim": "There are inherent difficulties in discovering, validating and distributing high-quality antibodies that cover all species and key applications.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are inherent difficulties in discovering, validating and distributing high-quality antibodies that cover all species and key applications (e.g. immunoblotting, immunoprecipitation, ChIP-Seq and immunocytochemistry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "b7bbaf48-74cd-41f0-bb22-ac97deb74a96",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C10",
+      "claim": "Epitope tagging involves the fusion of small peptide-coding sequences to a protein of interest (e.g. 3XFLAG, HA, V5, and Myc).",
+      "claim_type": "EXPLICIT",
+      "source": "A complementary strategy is to use epitope tagging: the fusion of small peptide-coding sequences to a protein of interest (e.g. 3XFLAG, HA, V5, and Myc) (Jarvik and Telmer, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition cited from Jarvik and Telmer, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "e99ea9f7-7eca-4f5f-b645-0af55f4ffabd",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C11",
+      "claim": "Plasmid-driven cDNA overexpression creates artificially high-protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to plasmid-driven cDNA overexpression, which creates artificially high-protein levels, the knock-in of small epitope tags to endogenous genes provides physiologically relevant levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of overexpression approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "eab48460-3339-494f-9109-3c729e159831",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C12",
+      "claim": "Knock-in of small epitope tags to endogenous genes provides physiologically relevant protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to plasmid-driven cDNA overexpression, which creates artificially high-protein levels, the knock-in of small epitope tags to endogenous genes provides physiologically relevant levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the epitope tagging approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9ead02e6-b71e-4731-a64b-c3de6c1b0cb7",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C13",
+      "claim": "Epitope tagging has been a key tool in yeast studies, resulting in global characterization of core protein complexes and their extensive interaction networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been a key tool in yeast studies, resulting in global characterization of core protein complexes and their extensive interaction networks (Gavin et al., 2006; Krogan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Gavin et al., 2006 and Krogan et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "f9396294-3b7c-48b6-9372-b46fab5a39d5",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C14",
+      "claim": "Epitope tagging has not been widely adopted in mammalian cells, primarily due to the poor efficiency of homologous recombination (HR).",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date this approach has not been widely adopted in mammalian cells, primarily due to the poor efficiency of homologous recombination (HR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation explaining why epitope tagging is not widely used in mammalian cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "79919db2-460d-4fea-abd2-56317291c772",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C15",
+      "claim": "Formation of a site-specific DNA double-strand break (DSBs) will massively enhance HR-mediated repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of a site-specific DNA double-strand break (DSBs), will massively enhance HR-mediated repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known mechanism in genome editing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "61d9233e-9166-4548-a664-b3bf2d91d707",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C16",
+      "claim": "CRISPR/Cas9 was uncovered as a form of microbial adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas9 was uncovered as a form of microbial adaptive immunity (Bhaya et al., 2011) that has been repurposed for genome editing in mammalian cells (Cong et al., 2013; Doudna and Charpentier, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bhaya et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "d2151035-bad8-4c4b-bb2a-b4c54064548e",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C17",
+      "claim": "CRISPR/Cas9 has been repurposed for genome editing in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas9 was uncovered as a form of microbial adaptive immunity (Bhaya et al., 2011) that has been repurposed for genome editing in mammalian cells (Cong et al., 2013; Doudna and Charpentier, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Cong et al., 2013 and Doudna and Charpentier, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "2b84a60e-6fb3-4df8-a37d-90f2ad4f90b1",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C18",
+      "claim": "Cas9 is an RNA-guided endonuclease that binds complementary DNA via formation of a 20 bp RNA:DNA heteroduplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 is an RNA-guided endonuclease that binds complementary DNA via formation of a 20 bp RNA:DNA heteroduplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mechanism of Cas9.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "36dd4b6f-ed00-407c-83e0-d128c3f7fb58",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C19",
+      "claim": "Stable binding of Cas9/gRNA complex at the target site leads to activation of nuclease domains and formation of a double-stranded DNA break (DSB).",
+      "claim_type": "EXPLICIT",
+      "source": "Stable binding of Cas9/gRNA complex at the target site leads to activation of nuclease domains and formation of a double-stranded DNA break (DSB) (Jinek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Jinek et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "62c34774-0527-47bf-9a12-20066842efb3",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C20",
+      "claim": "DSBs are predominantly repaired through the error-prone non-homologous end joining (NHEJ) pathway, resulting in insertion or deletion mutations (indels).",
+      "claim_type": "EXPLICIT",
+      "source": "DSBs are predominantly repaired through the error-prone non-homologous end joining (NHEJ) pathway, resulting in insertion or deletion mutations (indels) (Sander and Joung, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Sander and Joung, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1ae60360-b451-419c-9c95-81fe61bbc8a0",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C21",
+      "claim": "HR-mediated repair occurs at lower frequencies than NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, at lower frequencies HR-mediated repair will occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of DNA repair pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "198b5b3a-d66b-48fc-80a4-2441b59534f2",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C22",
+      "claim": "Successful knock-in of tags requires co-delivery of three ingredients to mammalian cells: the Cas9 protein, a guide RNA, and a donor repair template.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful knock-in of tags, therefore, requires co-delivery of three ingredients to the mammalian cells: the Cas9 protein, a guide RNA, and a donor repair template (i.e. single or double-stranded DNA encoding the tag or reporter with homology arms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for CRISPR-mediated knock-in.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "322996ac-e0ab-4f25-85cc-d5e58763ee63",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C23",
+      "claim": "CRISPR components are typically delivered via transient plasmid transfection or viral vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "These CRISPR components are typically delivered via transient plasmid transfection or viral vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a common practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1791452a-664d-40c1-84eb-837c2b6dcc90",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C24",
+      "claim": "Production of tailored plasmids for each component can be tedious and time-consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the successes of current approaches (Dalvai et al., 2015; Savic et al., 2015; Mikuni et al., 2016; Xiong et al., 2017), it is clear that many bottlenecks restrict widespread applications; (i) Production of tailored plasmids for each component can be tedious and time-consuming;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a bottleneck of current approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "fc124baa-f161-4f76-bdc4-89fea0a00f86",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C25",
+      "claim": "Plasmid-based selection strategies introduce additional regulatory elements that can disrupt normal regulatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) Plasmid-based selection strategies introduce additional regulatory elements that can disrupt normal regulatory processes;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of plasmid-based approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "e13b71d1-97a0-4545-b4d5-2dce76d8ce44",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C26",
+      "claim": "Plasmid DNA can randomly integrate in the genome causing insertional mutagenesis or increasing risks of off-target cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) Plasmid DNA, either Cas9/gRNA expression vectors or targeting vectors, can randomly integrate in the genome causing insertional mutagenesis or increasing risks of off-target cleavage (Kim et al., 2014; Liang et al., 2015);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kim et al., 2014 and Liang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "ebe582df-1bfe-4891-99b3-07a84249ddc6",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C27",
+      "claim": "Current strategies are often not readily scalable to enable routine exploration of large numbers of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) current strategies are often not readily scalable to enable routine exploration of large numbers of genes;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "c0abbff3-4de7-4752-93bb-6bfc8b8bf78b",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C28",
+      "claim": "Recovery of biallelic clonal lines is inefficient with current strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "(v) recovery of biallelic clonal lines is inefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "8c77b8d5-c828-471c-a185-bdb89c624d16",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C29",
+      "claim": "Improved efficiencies of CRISPR editing in mammalian cells have been demonstrated using recombinant Cas9 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Improved efficiencies of CRISPR editing in mammalian cells have been demonstrated using recombinant Cas9 protein (Kim et al., 2014; Ramakrishna et al., 2014; Bressan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kim et al., 2014; Ramakrishna et al., 2014; Bressan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "836a72cf-686f-4dbf-91bb-d59d24444c38",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C30",
+      "claim": "Cas9 protein is complexed with in vitro-transcribed (IVT) RNA to produce a ribonucleoprotein (RNP) complex that can be delivered into cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 protein is complexed with in vitro-transcribed (IVT) RNA, to produce a ribonucleoprotein (RNP) complex that can be then delivered into cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the RNP method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "50e1d36b-3c98-40eb-8e62-efaafda80410",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C31",
+      "claim": "RNPs are short-lived and cleared by cells within 24\u201348 hr, reducing the risk of both formation of mosaic clones or off-target cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNPs are short-lived and cleared by cells within 24\u201348 hr, reducing the risk of both formation of mosaic clones or off-target cleavage (Kim et al., 2014; Lin et al., 2014; Zuris et al., 2015; Cameron et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kim et al., 2014; Lin et al., 2014; Zuris et al., 2015; Cameron et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1926737c-3c14-44f7-a127-e8819bb5846d",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C32",
+      "claim": "RNP-assisted methods have mainly been used for gene knock-out.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNP-assisted methods have mainly been used for gene knock-out (Kim et al., 2014; Liang et al., 2015), incorporation of point mutations (Ma et al., 2017; Rivera-Torres et al., 2017), or knock-in of restriction enzyme sites (Lin et al., 2014; Schumann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple sources describing the applications of RNP methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "0af51f2d-b872-4371-968c-5058f5c0d377",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C33",
+      "claim": "RNP with in vitro-transcribed (IVT) sgRNAs has been used for CRISPR epitope tagging, yet the efficiencies in the absence of selection are highly variable.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have recently made use of RNP with in vitro-transcribed (IVT) sgRNAs for CRIPSR epitope tagging (Bressan et al., 2017; Liang et al., 2017), yet the efficiencies in the absence of selection are highly variable, and this approach cannot be scaled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bressan et al., 2017 and Liang et al., 2017, and states a limitation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1c652464-f6ce-41d7-a8aa-2dc3f17f9f55",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C34",
+      "claim": "Chemically modified ~100 nt-long sgRNAs can be synthesised but are prohibitively expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid IVT, chemically modified ~100 nt-long sgRNAs can be synthesised (Hendel et al., 2015); however, these are prohibitively expensive, limiting applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Hendel et al., 2015 and states a limitation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "6946fefe-20af-4066-9906-7fcf7008a875",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C35",
+      "claim": "A two-part, chemically synthesised, short target-specific crRNA plus a longer generic tracrRNA is cheaper and has better performance than full-length sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a two-part, chemically synthesised, short target-specific crRNA plus a longer generic tracrRNA can be used. This is cheaper (only the crRNA needs to be resynthesised for new targets) and has better performance (Aida et al., 2015; Anderson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Aida et al., 2015 and Anderson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "0cf4f12d-6a47-4820-9fd6-2b9e7d24f62b",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C36",
+      "claim": "Base, backbone and end modifications of cr/tracrRNAs have advanced the dual-RNA approach.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'dual-RNA' approach has been advanced further by 'base, backbone and end' modifications of cr/tracrRNAs (Rahdar et al., 2015; Kelley et al., 2016) and also by the use of shorter and more effective modified cr/tracrRNAs (Jacobi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Rahdar et al., 2015; Kelley et al., 2016; and Jacobi et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "bdaabdd7-7de9-4393-9710-32f80fb32807",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C37",
+      "claim": "Modified synthetic cr/tracrRNAs are resistant to nuclease digestion, limit cellular immune responses, have greater stability, and provide enhanced targeting efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Modified synthetic cr/tracrRNAs are resistant to nuclease digestion, limit cellular immune responses, have greater stability, and therefore provide enhanced targeting efficiency (Jacobi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Jacobi et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9393ab7e-3dd8-47dd-bcad-f4624f13d277",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C38",
+      "claim": "The csRNA-based RNP (csRNP) gave a >4-fold increase in V5 knock-in efficiency for Olig2 compared to IVT sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The csRNA-based RNP (csRNP) gave a >4-fold and >10-fold increase in V5 knock-in efficiency for Olig2 and Sox2, respectively (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "172ae5f9-c403-41c7-a941-4bc877c607ee",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C39",
+      "claim": "The csRNA-based RNP (csRNP) gave a >10-fold increase in V5 knock-in efficiency for Sox2 compared to IVT sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The csRNA-based RNP (csRNP) gave a >4-fold and >10-fold increase in V5 knock-in efficiency for Olig2 and Sox2, respectively (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "01615927-f78e-483d-b770-64932459cbb6",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C40",
+      "claim": "Improved knock-in efficiencies were obtained using an independent cell line (glioma-initiating neural stem cells; termed GNS).",
+      "claim_type": "EXPLICIT",
+      "source": "Improved knock-in efficiencies were also obtained using an independent cell line (glioma-initiating neural stem cells; termed GNS) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "669343f3-780d-4d42-bf46-4cd9399b84fa",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C41",
+      "claim": "PCR genotyping and Sanger sequencing confirmed in-frame and error-free insertion of V5 tag sequence at the C-terminus of Olig2 and Sox2 loci.",
+      "claim_type": "EXPLICIT",
+      "source": "PCR genotyping and Sanger sequencing confirmed in-frame and error-free insertion of V5 tag sequence at the C-terminus of Olig2 and Sox2 loci (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "885e7a25-fd9b-460c-bfe2-39aca4933d13",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C42",
+      "claim": "V5-positive cells all displayed the anticipated nuclear localisation and levels with no indication of non-specific expression.",
+      "claim_type": "EXPLICIT",
+      "source": "V5-positive cells all displayed the anticipated nuclear localisation and levels with no indication of non-specific expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the immunocytochemistry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "da948096-9b05-43bf-bf34-4a22f9eaa18d",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C43",
+      "claim": "Similar rates of knock-in (15\u201321%) were observed across all four tags (V5, HA, 3XFLAG, Myc) for Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we observed similar rates of knock-in (15\u201321%) across all four tags for Sox2 (Figure 1E; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "ed4d8d6b-748b-490b-a46d-1aa43b2c6608",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C44",
+      "claim": "An independent adult NS cell culture gave similar knock-in efficiency results (9\u201315% knock-in efficiency).",
+      "claim_type": "EXPLICIT",
+      "source": "An independent adult NS cell culture also gave similar results (9\u201315% knock-in efficiency, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "15d5d47d-139f-4266-b69a-84b8b083a551",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C45",
+      "claim": "Sox3, Sox8, and Sox9 had knock-in efficiencies of 30%, 14% and 26%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sox3, Sox8, and Sox9 \u2013 three Sox family members that are expressed in NS cells \u2013 had knock-in efficiencies of 30%, 14% and 26%, respectively (Figure 1F; Figure 1\u2014figure supplement 1C and Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "443b9d5d-9ee6-43fe-92d7-2182ac262000",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C46",
+      "claim": "Two different tags (Sox2: HA tag; and Olig2: V5 tag) could be simultaneously knocked-in in the same cells using a single transfection (4% double-positive cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we could simultaneously knock-in two different tags (Sox2: HA tag; and Olig2: V5 tag) in the same cells using a single transfection (4% double-positive cells, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "774c4bd5-5423-4a30-8b36-b7dac069a22c",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C47",
+      "claim": "Four out of eleven correctly targeted Sox2-V5 clones had successfully integrated the V5 tag sequence at both alleles (30% of V5-positive clones).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these four had successfully integrated the V5 tag sequence at both alleles (30% of V5-positive clones) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "a45cb91d-7e43-49c0-bacd-8747602e26f0",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C48",
+      "claim": "High frequencies of bi-allelic knock-in were obtained for Sox3-V5 (62.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "High frequencies of bi-allelic knock-in were also obtained for Sox3-V5 (62.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "2eb00b69-9dd9-419b-81ab-ae9add331e97",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C49",
+      "claim": "Several biallelic knock-in lines were derived from mouse GNS cells (IENS): Sox2, Sox3, Sox8 and Sox9 (7%, 26%, 57%, and 15% biallelic knock-in of V5-positive clones, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "We also derived several biallelic knock-in lines from another independent cell line (IENS, mouse GNS cells): Sox2, Sox3, Sox8 and Sox9 (7%, 26%, 57%, and 15% biallelic knock-in of V5-positive clones, respectively) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "0f3c0ee3-64cc-41b2-989e-825ebe4f191c",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C50",
+      "claim": "Mouse ES cells (E14Tg2a) were tagged at similar level of efficiency to NS cells for Sox2, Sox3, Ctcf, Pou3f1, and Ezh2 (knock-in efficiency range 6\u201311%).",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, we found that mouse ES cells (E14Tg2a) were tagged at similar level of efficiency to the NS cells (knock-in efficiency range 6\u201311%, Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "0e8c963b-9ab2-46e4-ad09-901655d70caf",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C51",
+      "claim": "Non-expressed genes (Sox9, Pou3f2, and Pou3f3) can be successfully tagged in ES cells without deploying any selection strategies or plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, non-expressed genes can be successfully tagged in ES cells, without deploying any selection strategies or plasmids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experiments shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9a0a8f93-b44f-4d65-a1a2-43d38e42c8c4",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C52",
+      "claim": "Upon neural lineage differentiation of ES cells, a proportion of Nestin-expressing neural rosettes were V5-positive for Sox9, Pou3f2, and Pou3f3 (10.5%, 20%, and 11.8%, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "However, for each of these genes, upon neural lineage differentiation of the ES cells, we noted a proportion of the Nestin-expressing neural rosettes that were V5-positive; 10.5%, 20%, and 11.8% for Sox9, Pou3f2, and Pou3f3, respectively (Figure 3C, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "852243c9-217f-4b55-98c2-0f23e2c2e4a2",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C53",
+      "claim": "V5 knock-in was successfully demonstrated in human ES cells for SOX2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed csRNP-based tagging in human ES cells. V5 knock-in was successfully demonstrated in human ES cells for SOX2 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "78b1f646-20fe-4186-9262-ea13fe9e72c9",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C54",
+      "claim": "Human GBM-derived cells were successfully tagged for OLIG2, SOX2, and SOX9 genes (15\u201370% efficiency).",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested human GBM-derived cells for OLIG2, SOX2, and SOX9 genes (15\u201370% efficiency) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "c970f6b1-06a6-4bb5-91ba-695f046ddebd",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C55",
+      "claim": "The distance of the DSB to the insertion site influences the frequency of successful HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that the distance of the DSB to the insertion site influences the frequency of successful HR (Bialk et al., 2015; Paquet et al., 2016; Liang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bialk et al., 2015; Paquet et al., 2016; Liang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "a2c0f82f-66d8-4846-9b06-babd97769eb3",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C56",
+      "claim": "By PCR genotyping, both proximal and distal gRNAs could result in successful tagging in the majority of cases; 30/50 genes (60%) for proximal DSB and 27/50 for the distal DSB (54%).",
+      "claim_type": "EXPLICIT",
+      "source": "By PCR genotyping, we found that both proximal and distal gRNAs could result in successful tagging in the majority of cases; 30/50 genes (60%) for proximal DSB and 27/50 for the distal DSB (54%) (Figure 4\u2014figure supplements 1, 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the referenced figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "53f0aa35-de72-4a27-aa86-ee64bdc57d7f",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C57",
+      "claim": "There is a consistent trend towards increased tagging efficiency for the most proximal cut site.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, by comparing the efficiency of tagging for these seven genes, we noted a consistent trend towards increased tagging efficiency for the most proximal cut site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "084c0e12-2ce4-495d-a0d0-d6437c568aa4",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C58",
+      "claim": "Sox3 showed 18% and 5% knock-in efficiency for proximal and distal gRNAs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Sox3 showed 18% and 5% knock-in efficiency, for proximal and distal gRNAs, respectively (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "d8217183-cc10-4ec4-a20a-bdc017dc15d7",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C59",
+      "claim": "For four genes (Sox9, Foxj3, Fok1 and Foxk2), the distal gRNA did not work, whereas the proximal gRNA facilitated high knock-in efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "For four genes (Sox9, Foxj3, Fok1 and Foxk2), the distal gRNA did not work, whereas the proximal gRNA facilitated high knock-in efficiency (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1013c038-49d0-43a1-8b5d-512194ba5e59",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C60",
+      "claim": "There were no genes for which the more distal gRNA worked better than the proximal gRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no genes for which the more distal gRNA worked better than the proximal gRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "c039791e-3263-4631-a533-c3fac6f17062",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C61",
+      "claim": "Proximity of DSB to the stop codon influences the efficiency of knock-in.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest proximity of DSB to the stop codon influences the efficiency of knock-in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experiments in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "2ec5cefe-43ba-42a3-9d70-b5f6b981e041",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C62",
+      "claim": "Sox2 tagging gave consistent V5 knock-in efficiency across the 96-well plate (10.5 \u00b1 2.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Sox2 tagging was used as a positive control in six wells; these gave consistent V5 knock-in efficiency across the plate, confirming no 'edge-effects' during the procedure (10.5 \u00b1 2.5%) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "e8bf0991-44bb-4400-96c3-cea1b0a83d20",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C63",
+      "claim": "For the first 96-well plate, 30 out of 90 TFs were positive for V5 ICC with typical knock-in efficiencies ranging from 6% to 29%.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, for the first 96-well plate, 30 out of 90 TFs were positive for V5 ICC with typical knock-in efficiencies ranging from 6% to29% (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9a784627-4577-4955-bc7c-9def00ff5725",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C64",
+      "claim": "A second 96-well plate with distinct TFs showed similar knock-in efficiency (5%\u201338%), with 31 out of 95 TFs positive for V5 ICC.",
+      "claim_type": "EXPLICIT",
+      "source": "A second 96-well plate with distinct TFs showed similar knock-in efficiency (5%\u201338%), with 31 out of 95 TFs positive for V5 ICC (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "6e8fa129-562f-40e4-aab8-fdebb62bbb4a",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C65",
+      "claim": "~30% of genes were successfully tagged at the first attempt with good knock-in efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ~30% of genes were successfully tagged at the first attempt with good knock-in efficiency (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "291dc96a-c67e-4ee1-92ac-a2e5b913b473",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C66",
+      "claim": "Two of the V5-positive TFs- Cbfb and Ybx1, showed nucleocytoplasmic localisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two of the V5-positive TFs- Cbfb and Ybx1, showed nucleocytoplasmic localisation (Figure 6B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "99de7d2c-d2bf-45a7-a913-be3dc34aaa5e",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C67",
+      "claim": "RIME analysis showed high enrichment of the bait protein Olig2 and subunits of SWI/SNF complexes and histone deacetylases (HDACs) in the pull-down complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "RIME analysis showed high enrichment of the bait protein Olig2 (Figure 7A) and subunits of SWI/SNF complexes and histone deacetylases (HDACs) in the pull-down complexes (Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 7A and source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "3e6e2126-bf0d-4250-970a-14491500bb6c",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C68",
+      "claim": "Physical interaction of Olig2 and SWI/SNF complex has been previously reported and this interaction is essential for oligodendrocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Physical interaction of Olig2 and SWI/SNF complex has been previously reported and this interaction is essential for oligodendrocyte differentiation (Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Yu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "731110a1-ffa3-4247-abde-bd70601ccaf7",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C69",
+      "claim": "HDACs have a known functional role in Olig2 function during development.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs have a known functional role in Olig2 function during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "48d6a4b9-0a31-46f5-9722-41933a7d5c35",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C70",
+      "claim": "ChIP-SICAP analysis showed strong enrichment of Olig2 and core histone proteins suggesting specific pull-down of chromatin fragments bound by Olig2 TF.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-SICAP analysis showed strong enrichment of Olig2 and core histone proteins suggesting specific pull-down of chromatin fragments bound by Olig2 TF (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "cd1ecb52-a79c-42fd-9a9e-3f847af1c291",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C71",
+      "claim": "Two other oligodendrocyte lineage transcription factors, Olig1 and Olig3, were detected among the most enriched proteins in ChIP-SICAP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, two other oligodendrocyte lineage transcription factors, Olig1 and Olig3, were detected among the most enriched proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the ChIP-SICAP analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "fdfcd220-4869-4d1d-a898-ddb2d17b6b5b",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C72",
+      "claim": "Sets of genes regulated by various Olig proteins have a partial overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies reported that sets of genes regulated by various Olig proteins have a partial overlap (Ligon et al., 2007; Meijer et al., 2012), explaining co-occupation of the same DNA-sites as shown by these data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Ligon et al., 2007 and Meijer et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "0b794e66-9b0c-4924-96fc-44629bfad17f",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C73",
+      "claim": "Two other members of the basic helix-loop-helix (bHLH) family, Npas3 and Tcf4, were detected in ChIP-SICAP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we detected two other members of the basic helix-loop-helix (bHLH) family: Npas3 and Tcf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the ChIP-SICAP analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9f593249-fcc1-4af3-8385-0747f1ed6208",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C74",
+      "claim": "bHLH transcription factors are known to form heterodimers with other bHLH proteins on chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The bHLH transcription factors are known to form heterodimers with other bHLH proteins on chromatin (Massari and Murre, 2000) and the presence of Npas3 and Tcf4 may be explained by their direct physical interaction (Figure 7B; Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Massari and Murre, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "abda739a-f627-44bd-be47-a487e684c8e1",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C75",
+      "claim": "Both Npas3 and Tcf4 have been reported to be involved in CNS development.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Npas3 and Tcf4 have been reported to be involved in CNS development (Shin and Kim, 2013; Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Shin and Kim, 2013 and Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "2889fbda-8f5e-4754-bc4b-451c9d0c42e1",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C76",
+      "claim": "A recent study reported interactions of Olig2, Tcf4 and Npas3 in mouse neural stem cells by FLAG-affinity purification.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study reporting interactions of Olig2, Tcf4 and Npas3 in mouse neural stem cells by FLAG-affinity purification (Moen et al., 2017) allowed us to correlate interactomes of all the three bHLH proteins with our data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Moen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "744a2ed1-7e7e-4614-aeed-9351e8fc59f9",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C77",
+      "claim": "Tcf4 and Npas3 co-localise with Olig2 on chromatin, suggesting a functional interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that Tcf4 and Npas3 co-localise with Olig2 on chromatin, suggesting a functional interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the ChIP-SICAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "290dba8b-fb68-448a-a3a9-03045dfcfab4",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C78",
+      "claim": "Three known interactors of Olig2 (Cul3, Smarca4 and Sox8) were detected in the flow-through of the streptavidin enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, composition of identified proteins correlates with previous findings: we detected three known interactors of Olig2 (Cul3, Smarca4 and Sox8 (BioGRID, Intact)) and 55 other proteins reported to co-precipitate with Olig2 (Moen et al., 2017) (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result and cited from BioGRID, Intact, and Moen et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "0b620bd5-f66f-427c-aef9-a669c828a8fc",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C79",
+      "claim": "55 other proteins reported to co-precipitate with Olig2 were detected in the flow-through of the streptavidin enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, composition of identified proteins correlates with previous findings: we detected three known interactors of Olig2 (Cul3, Smarca4 and Sox8 (BioGRID, Intact)) and 55 other proteins reported to co-precipitate with Olig2 (Moen et al., 2017) (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result and cited from Moen et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "dfaae289-67c6-4362-80f2-27c3c50ace94",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C80",
+      "claim": "dsDNA with larger homology arms were more effective in mCherry knock-in.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that dsDNA with larger homology arms were more effective in mCherry knock-in (Figure 8B), although homology arms as small as 100 bp showed ~0.29% cells positive for mCherry in the bulk populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "cbd642f0-e1fa-46a5-8bf2-cbec96a79ba6",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C81",
+      "claim": "Homology arms as small as 100 bp showed ~0.29% cells positive for mCherry in the bulk populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that dsDNA with larger homology arms were more effective in mCherry knock-in (Figure 8B), although homology arms as small as 100 bp showed ~0.29% cells positive for mCherry in the bulk populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "f3329feb-ec2d-4718-91b3-b2fa7f6c18bf",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C82",
+      "claim": "mCherry knock-in at Olig2 and Foxg1 loci achieved 0.34% and 0.11% efficiency, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested mCherry knock-in at Olig2 and Foxg1 loci and achieved 0.34% and 0.11% efficiency, respectively (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9dd7efbe-228a-4132-9ec0-f94b5c4c5d91",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C83",
+      "claim": "Live-imaging of mCherry-sorted populations for Sox2, Olig2, and Foxg1 showed the expected localisation and levels of fusion proteins in NS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-imaging of mCherry-sorted populations for the three genes (Sox2, Olig2, and Foxg1) showed the expected localisation and levels of fusion proteins in NS cells (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "8273f6b5-ecd9-4a80-9b02-f6fba293730f",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C84",
+      "claim": "The csRNP method can be used for knock-in of fluorescent reporters in NS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that our csRNP method can be used for knock-in of fluorescent reporters in NS cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the mCherry knock-in experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "9afd8d30-c1f0-4aea-b449-84f67499844c",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C85",
+      "claim": "Use of Cas9 recombinant protein is critical for achieving significant enhancement in knock-in efficiency when combined with synthetic modified RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of Cas9 recombinant protein is critical. We found that when combined with synthetic modified RNAs significant enhancement in the efficiency is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1d1296ae-4fe5-4d46-b750-f5e7dda048d9",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C86",
+      "claim": "The method is faster and more reliable compared to plasmid-based strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "This was achieved using faster and more reliable method \u2013 compared to plasmid-based strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "6fdbf546-f24a-4347-bfc7-cb7535ee7284",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C87",
+      "claim": "Primary mammalian stem cell lines are readily amenable to RNP engineering, without the need for plasmid production, or prior genetic manipulation of the host cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we showed primary mammalian stem cell lines are readily amenable to RNP engineering, without the need for plasmid production, or prior genetic manipulation of the host cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "86189d84-2d8d-47ee-b82b-40cc94614495",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C88",
+      "claim": "Assembly of RNPs with csRNAs is simple and requires only ~30 min hands-on-time.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly of RNPs with csRNAs is simple and requires only ~30 min hands-on-time; this compared favourably to IVT reactions, which require multiple steps, are time-consuming, and result in variable quality of gRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical advantage in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "7c6ca999-2311-4241-b7fe-355f21727de1",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C89",
+      "claim": "IVT reactions require multiple steps, are time-consuming, and result in variable quality of gRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly of RNPs with csRNAs is simple and requires only ~30 min hands-on-time; this compared favourably to IVT reactions, which require multiple steps, are time-consuming, and result in variable quality of gRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of IVT methods in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "fe606103-1dcc-4e0e-8db5-531bd45e213b",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C90",
+      "claim": "csRNA reagents are stable at \u221220\u00b0C for many months.",
+      "claim_type": "EXPLICIT",
+      "source": "In our hands, these reagents are stable at \u221220o C for many months, and is particularly convenient when re-used across a range of cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical observation in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "e1004a96-eb5e-4427-8d5c-10e91989a197",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C91",
+      "claim": "Use of the custom synthetic cr/tracrRNAs with their modified backbone and protected ends shields the RNA from cellular RNases.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more importantly, use of the custom synthetic cr/tracrRNAs with their modified backbone and protected ends, shields the RNA from cellular RNases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mechanism explaining improved performance in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "88f7a007-71d7-49e4-b9b1-33998e1deddb",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C92",
+      "claim": "Greatly reduced toxicity was found with csRNP compared to IVT sgRNA and plasmids-based delivery methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We found greatly reduced toxicity \u2013 one of the key advantages of the csRNP over IVT sgRNA and plasmids-based delivery methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed advantage in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "7ef9b870-9b44-47ac-8e0e-91ff11923a52",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C93",
+      "claim": "Clonal knock-in lines were routinely generated in a time-frame of 4\u20136 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "We routinely generated clonal knock-in lines in a time-frame of 4\u20136 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical outcome in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "69375869-cc8f-4f01-a2c2-ebc899a41fce",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C94",
+      "claim": "RNP complexes target both copies of the genes at high frequency, enabling facile isolation of bi-allelic knock-in clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a previous report (Liang et al., 2015), we found that RNP complexes target both copies of the genes at high frequency, enabling facile isolation of bi-allelic knock-in clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding consistent with prior work, cited from Liang et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "548873d9-acc4-4bc8-9fef-41aafa7b43c4",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C95",
+      "claim": "C-terminus tagging can potentially compromise protein function, localisation or levels in the edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Foremost, inevitably there is a risk that C-terminus tagging can potentially compromise protein function, localisation or levels in the edited cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "549490dc-e9c1-40e5-a575-e8cf48839cdd",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C96",
+      "claim": "Not all proteins will be amenable to tagging.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all proteins will be amenable to tagging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "f874bfef-5971-4548-b73b-242e36916a35",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C97",
+      "claim": "PAM-strand (non-complementary strand) for donor DNA synthesis is less likely to be cut by Cas9 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used PAM-strand (non-complementary strand) for donor DNA synthesis, which is less likely to be cut by Cas9 complex (Gasiunas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Gasiunas et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "83d258a4-3e47-46e8-b2ee-c2386a5f29ba",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C98",
+      "claim": "For symmetrical PAM ssODNs, both strands are equally effective for knock-in.",
+      "claim_type": "EXPLICIT",
+      "source": "We have not compared PAM versus non-PAM donor DNA strands for knock-in efficiency although a recent report suggests that for symmetrical PAM ssODNs, both strands are equally effective for knock-in (Liang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Liang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "578aadbe-92dd-47b0-9632-2093e1c8f4da",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C99",
+      "claim": "A higher HDR rate is achieved with guide RNAs that cut near the insertion site.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous findings have reported a higher HDR rate with the guide RNAs that cut near the insertion site (Bialk et al., 2015; Paquet et al., 2016; Liang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bialk et al., 2015; Paquet et al., 2016; Liang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "c031b402-80b1-4219-ad6e-b7e2fd596a88",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C100",
+      "claim": "Lower knock-in efficiency achieved with distal-cutting gRNAs could be attributed to 'partial HDR' events.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower knock-in efficiency achieved with the distal-cutting gRNAs could be attributed to 'partial HDR' events (Guo et al., 2018), which are not detectable in our ICC end-point assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Guo et al., 2018 as a possible explanation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "3d3b4580-51af-487e-9e14-87e58b731fab",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C101",
+      "claim": "The average size of CRISPR/Cas9-induced indels in mammalian cells has been reported to be around 1\u20135 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The average size of CRISPR/Cas9-induced indels in mammalian cells has been reported to be around 1\u20135 bp (Paquet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Paquet et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "c8013849-57ae-48f1-ab27-a4e00707406c",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C102",
+      "claim": "It is recommended to design guide RNAs in the 3'UTR, preferably cutting 8\u201315 bp downstream of stop codon, to avoid interfering with the stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore recommend designing guide RNAs in the 3'UTR, preferably cutting 8\u201315 bp downstream of stop codon, to avoid interfering with the stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation based on the findings in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "f21ffa6b-80ad-45fb-b24b-944cd2294139",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C103",
+      "claim": "The pipeline is fully scalable and does not require sophisticated tools, expertise, or know-how.",
+      "claim_type": "EXPLICIT",
+      "source": "The pipeline that emerges is fully scalable and does not require sophisticated tools, expertise, or know-how.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the developed pipeline in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "2a7d8040-6018-475f-b3b3-5ec16a77b673",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C104",
+      "claim": "The whole pipeline from obtaining the reagents to imaging data was accomplished within three weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "It was possible to generate such data with relatively little labour investment, and the whole pipeline from obtaining the reagents to imaging data was accomplished within three weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical outcome in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1da06cc7-41e5-4b94-80b9-640c39d62a26",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C105",
+      "claim": "Tag-specific antibodies work universally across different cell types and species.",
+      "claim_type": "EXPLICIT",
+      "source": "Because tag-specific antibodies work universally across different cell types and species, this approach should allow cross-species comparisons and will also complement existing efforts to develop and characterise native antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of epitope tagging in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "0b3981bd-e73f-4d52-8a3f-e0fec3ee7ff5",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C106",
+      "claim": "Tagging of DNA-binding proteins will allow comprehensive genome-wide binding sites via ChIP-Seq for key transcription factors, chromatin-modifying enzymes, and other gene regulatory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, tagging of DNA-binding proteins will allow us to generate comprehensive genome-wide binding sites via ChIP-Seq for key transcription factors, chromatin-modifying enzymes, and other gene regulatory proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application in the Discussion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "e613078c-502d-479b-9c5e-f49a70ff091c",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "claim_id": "C107",
+      "claim": "csRNP is highly effective for gene knockout studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not a focus of the current study, we also find that csRNP is highly effective for gene knockout studies (Pollard laboratory, unpublished and (Jacobi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an additional finding, with citation to Jacobi et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The csRNP method (Cas9 protein complexed with synthetic modified crRNA:tracrRNA and ssODN templates) achieves 5-30% knock-in efficiency for diverse epitope tags (V5, HA, 3XFLAG, Myc) across multiple genes (Olig2, Sox2, Sox3, Sox8, Sox9) in neural stem cells and glioma-initiating cells without selection. This represents a >4-10 fold improvement over IVT sgRNA methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C46 provide quantitative data from multiple independent experiments showing consistent knock-in efficiencies across different tags, genes, and cell lines. The data is supported by ICC, PCR genotyping, and Sanger sequencing (C41), demonstrating both the efficiency and accuracy of the method. The comparison to IVT methods provides appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "deb7bae9-a029-4273-8b96-f7a946f74e2d",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Biallelic-tagged clonal lines can be readily generated using the csRNP method, with 7-62.5% of V5-positive clones showing biallelic integration across different genes and cell lines. Clonal lines were routinely generated within 4-6 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 provide specific quantitative data from Table 2 showing biallelic knock-in frequencies across multiple genes in different cell lines. The data is validated by PCR genotyping and sequencing. Claims C93-C94 provide practical timeline information consistent with the experimental workflow described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "b6265942-6d7a-4013-96a5-f34702da1fee",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The csRNP method works effectively across diverse stem cell types including mouse ES cells, human ES cells, and human GBM-derived cells, achieving 6-70% knock-in efficiency. Non-expressed genes can be successfully tagged in ES cells and detected upon differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 demonstrate broad applicability across multiple cell types with quantitative efficiency data. The non-expressed gene tagging (C51-C52) is particularly well-supported, showing that tagged proteins become detectable upon differentiation (10.5-20% of Nestin-positive cells), validated by both PCR and ICC.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Proximity of the DSB to the stop codon significantly influences knock-in efficiency. Proximal gRNAs (cutting 8-15 bp from stop codon) consistently show higher efficiency than distal gRNAs, with 60% success rate for proximal vs 54% for distal cuts across 50 genes tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 provide systematic data from 50 genes comparing proximal vs distal gRNA cutting sites. The trend is consistent across multiple examples (C58-C59), with no counter-examples (C60). The conclusion (C61) is appropriately supported by the data, though C55 cites prior work establishing the principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A scalable 96-well format pipeline enabled V5-tagging of 185 transcription factors, with ~30% (61/185) successfully tagged at first attempt with 5-38% efficiency. The entire pipeline from reagent procurement to imaging was accomplished within three weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 provide quantitative data from two independent 96-well plates showing consistent success rates and efficiencies. The positive control (Sox2) showed consistent efficiency across the plate (C62), validating the robustness of the method. Claims C103-C104 provide practical information about scalability and timeline, supported by the experimental workflow described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "de8a8b09-e3b2-4389-8328-1513bcb994a9",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Olig2-V5 knock-in lines were used to identify chromatin-bound interacting partners via RIME and ChIP-SICAP, detecting known interactors (SWI/SNF complexes, HDACs) and novel co-localizing bHLH proteins (Olig1, Olig3, Npas3, Tcf4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C79 demonstrate a proof-of-principle application using two complementary IP-MS methods. The detection of known interactors (C68-C69, C78-C79) validates the approach, while novel findings (C71, C73) are supported by prior literature showing functional relationships (C72, C74-C76). The conclusion about co-localization (C77) is appropriately cautious, suggesting rather than proving functional interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "6c2568a4-b880-4db5-907b-d6f13060502b",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The csRNP method can be used for knock-in of larger fluorescent reporters (mCherry, ~700 bp) in NS cells, achieving 0.11-1.61% efficiency depending on homology arm length and target gene, with proper localization of fusion proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 provide systematic data showing the effect of homology arm length on knock-in efficiency for larger cargos. While efficiencies are lower than for small epitope tags (0.11-1.61% vs 5-30%), the method works across multiple genes with appropriate protein localization (C83). The conclusion (C84) is appropriately supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "e32e7d92-e8c9-44bc-a34f-728977cf15df",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The csRNP method offers multiple practical advantages over plasmid-based and IVT methods: faster assembly (~30 min), greater stability (-20\u00b0C for months), reduced toxicity, and no requirement for plasmid production or prior genetic manipulation of cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C92 summarize key advantages demonstrated throughout the manuscript. The comparison to IVT methods (C88-C89) is supported by the head-to-head data in C38-C39. Claims about stability (C90) and reduced toxicity (C92) are stated as observations from the authors' experience. The mechanistic explanation for improved performance (C91) is reasonable given the known properties of modified RNAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "801b6c31-f325-4dc6-8d52-91292886ca8e",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Current CRISPR-based epitope tagging methods face multiple limitations including inefficiency in primary cells, reliance on plasmid-based selection, time-consuming plasmid production, risk of insertional mutagenesis, poor scalability, and inefficient recovery of biallelic clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C14-C28 establish the context and limitations of existing methods. These are primarily knowledge claims citing prior literature (C14, C26) or stating well-established challenges in the field. The claims appropriately motivate the need for the improved method presented in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "192d7ea2-f1ab-4408-b88e-ac2ee2022497",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Epitope tagging provides physiologically relevant protein levels compared to overexpression approaches and has been successfully used in yeast for global protein complex characterization, but faces challenges in mammalian cells due to antibody limitations and poor HR efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 provide background context citing appropriate literature. These establish the rationale for epitope tagging approaches and explain why they have not been widely adopted in mammalian systems. All claims are appropriately supported by citations or represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "82716730-ab74-453d-a342-89c5d73fff73",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 mechanisms and RNP delivery methods are well-established, with synthetic modified dual-RNA systems offering advantages over IVT sgRNAs and full-length synthetic sgRNAs in terms of cost, performance, stability, and reduced cellular immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C37 provide comprehensive background on CRISPR mechanisms and RNP methods, all appropriately cited from prior literature. These establish the foundation for the authors' approach and explain why they chose synthetic modified dual-RNA systems. The claims represent accurate summaries of established knowledge and prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The csRNP method has limitations and caveats: C-terminus tagging may compromise protein function, not all proteins are amenable to tagging, and design considerations (PAM strand selection, gRNA proximity to stop codon) affect success rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C102 appropriately acknowledge limitations and provide design recommendations. The caveats about potential effects on protein function (C95-C96) are reasonable. The design recommendations (C102) are supported by the data in C56-C61. Claims C97-C101 cite prior work or acknowledge gaps in the current study (C98).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    },
+    {
+      "id": "c278e624-5fec-4bb5-9986-6e3df73d4b25",
+      "content_id": "855296ec-33ef-45b8-befa-a8bb78aa57a9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The csRNP epitope tagging approach enables universal applications across cell types and species, potential for systematic ChIP-Seq studies, and is also effective for gene knockout studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C105 states a general advantage of epitope tagging but is not directly tested in this study. Claim C106 is speculative about future applications (\"will allow us to generate\"). Claim C107 references unpublished data and a single citation, making it difficult to evaluate. These represent potential applications rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:00.049227Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b37037be-2b50-482b-80bf-ac081140bb71",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "cdd26393-7e3a-4a85-8c96-aadefe8a660c",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "9393ab7e-3dd8-47dd-bcad-f4624f13d277",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "172ae5f9-c403-41c7-a941-4bc877c607ee",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "01615927-f78e-483d-b770-64932459cbb6",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "669343f3-780d-4d42-bf46-4cd9399b84fa",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "885e7a25-fd9b-460c-bfe2-39aca4933d13",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "da948096-9b05-43bf-bf34-4a22f9eaa18d",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "ed4d8d6b-748b-490b-a46d-1aa43b2c6608",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "15d5d47d-139f-4266-b69a-84b8b083a551",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "443b9d5d-9ee6-43fe-92d7-2182ac262000",
+      "result_id": "8f7fbe8a-7ae3-47b4-a377-c9576a556ba8"
+    },
+    {
+      "claim_id": "96fc4c73-f544-4a56-b890-ffd2d8f151ad",
+      "result_id": "deb7bae9-a029-4273-8b96-f7a946f74e2d"
+    },
+    {
+      "claim_id": "774c4bd5-5423-4a30-8b36-b7dac069a22c",
+      "result_id": "deb7bae9-a029-4273-8b96-f7a946f74e2d"
+    },
+    {
+      "claim_id": "a45cb91d-7e43-49c0-bacd-8747602e26f0",
+      "result_id": "deb7bae9-a029-4273-8b96-f7a946f74e2d"
+    },
+    {
+      "claim_id": "2eb00b69-9dd9-419b-81ab-ae9add331e97",
+      "result_id": "deb7bae9-a029-4273-8b96-f7a946f74e2d"
+    },
+    {
+      "claim_id": "7ef9b870-9b44-47ac-8e0e-91ff11923a52",
+      "result_id": "deb7bae9-a029-4273-8b96-f7a946f74e2d"
+    },
+    {
+      "claim_id": "69375869-cc8f-4f01-a2c2-ebc899a41fce",
+      "result_id": "deb7bae9-a029-4273-8b96-f7a946f74e2d"
+    },
+    {
+      "claim_id": "0f3c0ee3-64cc-41b2-989e-825ebe4f191c",
+      "result_id": "b6265942-6d7a-4013-96a5-f34702da1fee"
+    },
+    {
+      "claim_id": "0e8c963b-9ab2-46e4-ad09-901655d70caf",
+      "result_id": "b6265942-6d7a-4013-96a5-f34702da1fee"
+    },
+    {
+      "claim_id": "9a0a8f93-b44f-4d65-a1a2-43d38e42c8c4",
+      "result_id": "b6265942-6d7a-4013-96a5-f34702da1fee"
+    },
+    {
+      "claim_id": "852243c9-217f-4b55-98c2-0f23e2c2e4a2",
+      "result_id": "b6265942-6d7a-4013-96a5-f34702da1fee"
+    },
+    {
+      "claim_id": "78b1f646-20fe-4186-9262-ea13fe9e72c9",
+      "result_id": "b6265942-6d7a-4013-96a5-f34702da1fee"
+    },
+    {
+      "claim_id": "c970f6b1-06a6-4bb5-91ba-695f046ddebd",
+      "result_id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee"
+    },
+    {
+      "claim_id": "a2c0f82f-66d8-4846-9b06-babd97769eb3",
+      "result_id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee"
+    },
+    {
+      "claim_id": "53f0aa35-de72-4a27-aa86-ee64bdc57d7f",
+      "result_id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee"
+    },
+    {
+      "claim_id": "084c0e12-2ce4-495d-a0d0-d6437c568aa4",
+      "result_id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee"
+    },
+    {
+      "claim_id": "d8217183-cc10-4ec4-a20a-bdc017dc15d7",
+      "result_id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee"
+    },
+    {
+      "claim_id": "1013c038-49d0-43a1-8b5d-512194ba5e59",
+      "result_id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee"
+    },
+    {
+      "claim_id": "c039791e-3263-4631-a533-c3fac6f17062",
+      "result_id": "1cbc7dd7-f33c-4b5d-9d5a-db1ff8fd08ee"
+    },
+    {
+      "claim_id": "cbdd4fec-17c1-4c40-9588-5ee4eced1fb6",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "2ec5cefe-43ba-42a3-9d70-b5f6b981e041",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "e8bf0991-44bb-4400-96c3-cea1b0a83d20",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "9a784627-4577-4955-bc7c-9def00ff5725",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "6e8fa129-562f-40e4-aab8-fdebb62bbb4a",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "291dc96a-c67e-4ee1-92ac-a2e5b913b473",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "f21ffa6b-80ad-45fb-b24b-944cd2294139",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "2a7d8040-6018-475f-b3b3-5ec16a77b673",
+      "result_id": "fb0e0b06-404e-4bf9-a1d9-19708ee68560"
+    },
+    {
+      "claim_id": "1621b276-9fe1-453b-ba93-98c8014c3ae1",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "99de7d2c-d2bf-45a7-a913-be3dc34aaa5e",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "3e6e2126-bf0d-4250-970a-14491500bb6c",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "731110a1-ffa3-4247-abde-bd70601ccaf7",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "48d6a4b9-0a31-46f5-9722-41933a7d5c35",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "cd1ecb52-a79c-42fd-9a9e-3f847af1c291",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "fdfcd220-4869-4d1d-a898-ddb2d17b6b5b",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "0b794e66-9b0c-4924-96fc-44629bfad17f",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "9f593249-fcc1-4af3-8385-0747f1ed6208",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "abda739a-f627-44bd-be47-a487e684c8e1",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "2889fbda-8f5e-4754-bc4b-451c9d0c42e1",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "744a2ed1-7e7e-4614-aeed-9351e8fc59f9",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "290dba8b-fb68-448a-a3a9-03045dfcfab4",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "0b620bd5-f66f-427c-aef9-a669c828a8fc",
+      "result_id": "de8a8b09-e3b2-4389-8328-1513bcb994a9"
+    },
+    {
+      "claim_id": "dfaae289-67c6-4362-80f2-27c3c50ace94",
+      "result_id": "6c2568a4-b880-4db5-907b-d6f13060502b"
+    },
+    {
+      "claim_id": "cbd642f0-e1fa-46a5-8bf2-cbec96a79ba6",
+      "result_id": "6c2568a4-b880-4db5-907b-d6f13060502b"
+    },
+    {
+      "claim_id": "f3329feb-ec2d-4718-91b3-b2fa7f6c18bf",
+      "result_id": "6c2568a4-b880-4db5-907b-d6f13060502b"
+    },
+    {
+      "claim_id": "9dd7efbe-228a-4132-9ec0-f94b5c4c5d91",
+      "result_id": "6c2568a4-b880-4db5-907b-d6f13060502b"
+    },
+    {
+      "claim_id": "8273f6b5-ecd9-4a80-9b02-f6fba293730f",
+      "result_id": "6c2568a4-b880-4db5-907b-d6f13060502b"
+    },
+    {
+      "claim_id": "9afd8d30-c1f0-4aea-b449-84f67499844c",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "1d1296ae-4fe5-4d46-b750-f5e7dda048d9",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "6fdbf546-f24a-4347-bfc7-cb7535ee7284",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "86189d84-2d8d-47ee-b82b-40cc94614495",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "7c6ca999-2311-4241-b7fe-355f21727de1",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "fe606103-1dcc-4e0e-8db5-531bd45e213b",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "e1004a96-eb5e-4427-8d5c-10e91989a197",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "88f7a007-71d7-49e4-b9b1-33998e1deddb",
+      "result_id": "e32e7d92-e8c9-44bc-a34f-728977cf15df"
+    },
+    {
+      "claim_id": "88067d27-f58d-4421-a72b-5d11672eb085",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "9f1e636e-744c-4d21-a371-1e92883fdbc6",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "f9396294-3b7c-48b6-9372-b46fab5a39d5",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "79919db2-460d-4fea-abd2-56317291c772",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "198b5b3a-d66b-48fc-80a4-2441b59534f2",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "322996ac-e0ab-4f25-85cc-d5e58763ee63",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "1791452a-664d-40c1-84eb-837c2b6dcc90",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "fc124baa-f161-4f76-bdc4-89fea0a00f86",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "e13b71d1-97a0-4545-b4d5-2dce76d8ce44",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "ebe582df-1bfe-4891-99b3-07a84249ddc6",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "c0abbff3-4de7-4752-93bb-6bfc8b8bf78b",
+      "result_id": "801b6c31-f325-4dc6-8d52-91292886ca8e"
+    },
+    {
+      "claim_id": "174cd870-bf6c-4385-bca7-22bb1bb98a30",
+      "result_id": "192d7ea2-f1ab-4408-b88e-ac2ee2022497"
+    },
+    {
+      "claim_id": "eb862472-e34e-4d50-b435-4d282684fc2d",
+      "result_id": "192d7ea2-f1ab-4408-b88e-ac2ee2022497"
+    },
+    {
+      "claim_id": "b7bbaf48-74cd-41f0-bb22-ac97deb74a96",
+      "result_id": "192d7ea2-f1ab-4408-b88e-ac2ee2022497"
+    },
+    {
+      "claim_id": "e99ea9f7-7eca-4f5f-b645-0af55f4ffabd",
+      "result_id": "192d7ea2-f1ab-4408-b88e-ac2ee2022497"
+    },
+    {
+      "claim_id": "eab48460-3339-494f-9109-3c729e159831",
+      "result_id": "192d7ea2-f1ab-4408-b88e-ac2ee2022497"
+    },
+    {
+      "claim_id": "9ead02e6-b71e-4731-a64b-c3de6c1b0cb7",
+      "result_id": "192d7ea2-f1ab-4408-b88e-ac2ee2022497"
+    },
+    {
+      "claim_id": "61d9233e-9166-4548-a664-b3bf2d91d707",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "d2151035-bad8-4c4b-bb2a-b4c54064548e",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "2b84a60e-6fb3-4df8-a37d-90f2ad4f90b1",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "36dd4b6f-ed00-407c-83e0-d128c3f7fb58",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "62c34774-0527-47bf-9a12-20066842efb3",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "1ae60360-b451-419c-9c95-81fe61bbc8a0",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "8c77b8d5-c828-471c-a185-bdb89c624d16",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "836a72cf-686f-4dbf-91bb-d59d24444c38",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "50e1d36b-3c98-40eb-8e62-efaafda80410",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "1926737c-3c14-44f7-a127-e8819bb5846d",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "0af51f2d-b872-4371-968c-5058f5c0d377",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "1c652464-f6ce-41d7-a8aa-2dc3f17f9f55",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "6946fefe-20af-4066-9906-7fcf7008a875",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "0cf4f12d-6a47-4820-9fd6-2b9e7d24f62b",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "bdaabdd7-7de9-4393-9710-32f80fb32807",
+      "result_id": "82716730-ab74-453d-a342-89c5d73fff73"
+    },
+    {
+      "claim_id": "548873d9-acc4-4bc8-9fef-41aafa7b43c4",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "549490dc-e9c1-40e5-a575-e8cf48839cdd",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "f874bfef-5971-4548-b73b-242e36916a35",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "83d258a4-3e47-46e8-b2ee-c2386a5f29ba",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "578aadbe-92dd-47b0-9632-2093e1c8f4da",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "c031b402-80b1-4219-ad6e-b7e2fd596a88",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "3d3b4580-51af-487e-9e14-87e58b731fab",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "c8013849-57ae-48f1-ab27-a4e00707406c",
+      "result_id": "4aaa1bff-e4ce-4efa-b80c-6562989786b2"
+    },
+    {
+      "claim_id": "1da06cc7-41e5-4b94-80b9-640c39d62a26",
+      "result_id": "c278e624-5fec-4bb5-9986-6e3df73d4b25"
+    },
+    {
+      "claim_id": "0b3981bd-e73f-4d52-8a3f-e0fec3ee7ff5",
+      "result_id": "c278e624-5fec-4bb5-9986-6e3df73d4b25"
+    },
+    {
+      "claim_id": "e613078c-502d-479b-9c5e-f49a70ff091c",
+      "result_id": "c278e624-5fec-4bb5-9986-6e3df73d4b25"
+    }
+  ],
+  "comparisons": []
+}

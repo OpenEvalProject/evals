@@ -1,0 +1,1658 @@
+{
+  "submission": {
+    "id": "70f5854b-151b-401a-a4d9-b716d598c612",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:01:37.976330Z",
+    "updated_at": "2025-12-01T19:01:37.976330Z"
+  },
+  "content": [
+    {
+      "id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "submission_id": "70f5854b-151b-401a-a4d9-b716d598c612",
+      "content_type": "manuscript",
+      "content_text": "# Learning multiple variable-speed sequences in striatum via cortical tutoring\n\n## Authors\n\n- James M Murray<sup>1</sup> ([ORCID: 0000-0003-3706-4895](https://orcid.org/0000-0003-3706-4895)) \u2020\n- G Sean Escola<sup>1</sup> ([ORCID: 0000-0003-0645-1964](https://orcid.org/0000-0003-0645-1964))\n\n### Affiliations\n\n1. Center for Theoretical Neuroscience Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSparse, sequential patterns of neural activity have been observed in numerous brain areas during timekeeping and motor sequence tasks. Inspired by such observations, we construct a model of the striatum, an all-inhibitory circuit where sequential activity patterns are prominent, addressing the following key challenges: (i) obtaining control over temporal rescaling of the sequence speed, with the ability to generalize to new speeds; (ii) facilitating flexible expression of distinct sequences via selective activation, concatenation, and recycling of specific subsequences; and (iii) enabling the biologically plausible learning of sequences, consistent with the decoupling of learning and execution suggested by lesion studies showing that cortical circuits are necessary for learning, but that subcortical circuits are sufficient to drive learned behaviors. The same mechanisms that we describe can also be applied to circuits with both excitatory and inhibitory populations, and hence may underlie general features of sequential neural activity pattern generation in the brain.\n\n## Introduction\n\nUnderstanding the mechanisms by which neural circuits learn and generate the complex, dynamic patterns of activity that underlie behavior and cognition remains a fundamental goal of neuroscience. Of particular interest are sparse sequential activity patterns that are time-locked to behavior and have been observed experimentally in multiple brain areas including cortex (Luczak et al., 2007; Jin et al., 2009; Harvey et al., 2012), basal ganglia (Jin et al., 2009; Rueda-Orozco and Robbe, 2015; Mello et al., 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015; Bakhurin et al., 2017), hippocampus (N\u00e1dasdy et al., 1999; Pastalkova et al., 2008; MacDonald et al., 2013; Eichenbaum, 2014), and songbird area HVC (Hahnloser et al., 2002; Kozhevnikov and Fee, 2007). These experiments reveal key features of the relationship to behavior that must be recapitulated in any circuit-level model of sequential neural activity. First, these sequences have been shown to temporally rescale (i.e., contract and dilate) as behavior speeds up and slows down (Mello et al., 2015; Gouv\u00eaa et al., 2015), while human psychophysics experiments have shown that after learning a behavior (e.g., an arm reach trajectory) at one speed of execution, it can be reliably expressed at other speeds without additional learning (Goodbody and Wolpert, 1998; Joiner et al., 2011; Shmuelof et al., 2012). Thus the neural circuits underlying such behaviors must be able to extrapolate from the sequential activity generated at a particular speed during learning to temporally rescaled patterns. Second, the same neural circuits exhibit the capacity to flexibly generate different sequential activity patterns for different behaviors (Pastalkova et al., 2008; Harvey et al., 2012; MacDonald et al., 2013). Third, the process of learning imposes additional constraints on models of sequence generating circuits beyond the need for biologically plausible learning rules. As discussed in greater detail below, lesion and inactivation experiments have been shown to prevent learning without impairing the expression of learned behaviors (Miyachi et al., 1997; Kawai et al., 2015) suggesting that the neural circuitry of learning and execution can be decoupled.\n\nThese results indicate a need for a comprehensive model to study the generation of sparse, sequential neural activity. Such a model should facilitate temporal rescaling and extrapolation to new speeds, flexibly change in order to meet changing contexts or behavioral goals, and decouple learning from performance. Several mechanisms have been proposed for generating sparse sequences, for example continuous attractor models (Rokni and Sompolinsky, 2012), reservoir computing networks (Rajan et al., 2016), and feedforward excitatory architectures including synfire chains (Abeles, 1991; Goldman, 2009; Fiete et al., 2010; Veliz-Cuba et al., 2015). Each of these models suffers limitations, however. For example: attractor models require finely tuned synaptic connectivity and single-neuron tuning properties; trained recurrent neural networks lack biologically plausible learning rules and connectivity constraints; and synfire chains have limited ability to temporally rescale their dynamics. In this work we propose a model which allows for (i) arbitrary speeding up and slowing down of the activity pattern without relearning of the synaptic weights, (ii) the flexible expression of multiple sequential patterns, and (iii) an arbitrary sequence to be learned from a time-dependent external input and reproduced once that external input is removed.\n\nAlthough the basic mechanisms that we propose may be realized in any brain area where sequences have been observed, for a specific example and to compare to experimental results, we focus on neural activity in striatum, where sparse activity sequences have been observed in recurrently connected populations of inhibitory medium spiny neurons (MSNs) in rodents during locomotion (Rueda-Orozco and Robbe, 2015) and lever-press delay tasks (Mello et al., 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015). The striatum collects inputs from many areas of cortex and thalamus, plays an important part in controlling learned movements using its projections via the output structures of basal ganglia to motor thalamus and brainstem (Parent, 1990; Grillner and Robertson, 2015), and has a central role in reinforcement learning (Graybiel, 2005). MSNs, which constitute over 90% of the neurons in striatum (Gerfen and Surmeier, 2011), exhibit stereotyped sequential firing patterns during learned motor sequences and learned behaviors in which timing plays an important role, with sparse firing sequences providing a seemingly ideal representation for encoding time and providing a rich temporal basis that can be read out by downstream circuits to determine behavior (Jin et al., 2009; Mello et al., 2015; Rueda-Orozco and Robbe, 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015; Bakhurin et al., 2017). Such neural activity has been shown in rodents to strongly correlate with time judgement in a fixed-interval lever-press task (Gouv\u00eaa et al., 2015), and with kinematic parameters such as the animal\u2019s position and speed in a task in which the animal was trained to remain on a treadmill for a particular length of time (Rueda-Orozco and Robbe, 2015). In addition, pharmacological attenuation of neural activity in sensorimotor striatum has been shown to impair such behavior (Miyachi et al., 1997; Mello et al., 2015; Rueda-Orozco and Robbe, 2015), suggesting that sequential firing patterns in striatum are likely to play a causal role in an animal\u2019s ability to perform timekeeping and learned motor sequences. While motor cortex is also known to play a major role in both the learning and directing of motor behaviors such as limb movements in both primates (Fritsch and Hitzig, 1870; Georgopoulos et al., 1982, 1986; Moran and Schwartz, 1999; Kakei et al., 1999) and rodents (Wise and Donoghue, 1986; Kleim et al., 1998; Whishaw, 2000; Harrison et al., 2012), cortical lesion studies have long pointed to the ability of subcortical structures to direct a large repertoire of movements, particularly \u2018innate\u2019 movements and learned movements that don\u2019t require dexterous hand motion (Lawrence and Kuypers, 1968; Sorenson and Ellison, 1970; Bjursten et al., 1976; Passingham et al., 1983).\n\nImportantly, sequences of neural activity in the striatum exhibit the ability to temporally rescale their dynamics, dilating or contracting the sequence duration by up to a factor of five in proportion to the time-delay interval for obtaining a reward (Mello et al., 2015). A successful model should therefore have the ability to dynamically rescale its activity, ideally with the ability to generalize to new speeds after training at a particular speed, and without requiring relearning of the synaptic weights each time there is switching to a slower or faster trial.\n\nAs in other brain areas, neural representations within striatum are specific to the behavior being performed and to the context in which it is executed (Jin and Costa, 2010; Tecuapetla et al., 2014). In constructing a model of sequential activity patterns, it is therefore important that neurons be able to participate in multiple sequences in a flexible, context-dependent manner. This might involve the selective activation, concatenation, and recycling of particular subsequences, as well as the capability of a circuit to switch between different operational modes, e.g. input-driven versus autonomously driven. All of these will be important features of the model that we construct below.\n\nAddressing the roles of cortical and striatal circuits in the learning and performance of motor skills, one set of recent studies has shown that rats are unable to learn precisely timed lever-press sequences when motor cortex is lesioned, but are able to successfully perform the sequence if the lesion occurs after the learning has already taken place (Kawai et al., 2015; Otchy et al., 2015). It was therefore suggested that motor cortex may act as a \u2018tutor\u2019 to subcortical brain circuits during learning, and that these lower brain circuits eventually internalize the activity pattern, allowing them to drive behavior without receiving further instruction from the tutor once the behavior has been learned (Kawai et al., 2015). We therefore develop a model of such a tutor-to-student circuit, in which a cortical tutor teaches a particular activity sequence to striatum, which eventually becomes able to perform the sequence autonomously.\n\nIn this paper, we propose a model for how striatum could be structured in order to produce sequential activity patterns that can rescale to faster and slower speeds, flexibly select and combine particular subsequences specific to particular behaviors, and decouple learning from performance in a way consistent with the lesion experiments discussed above. A key element is the presence of synaptic depression at the inhibitory synapses between MSNs, which has been shown to exist experimentally (Tecuapetla et al., 2007) and which competes with the effect of feedforward excitatory input to determine the rate of switching of activity from one neuron cluster to the next. By adjusting the relative levels of these parameters, it is possible to dilate or contract the time dependence of neural activity sequences by an order of magnitude or more. Furthermore, we show that our striatal model can encode multiple sequences that can be expressed individually or pieced together into longer sequences as selected by the external input. Next, learning is addressed by introducing an anti-Hebbian plasticity rule at the synapses between MSNs, and we show how this enables the circuit to obtain the desired structure and internalize the dynamical activity pattern, so that temporally patterned input from cortex eventually becomes unnecessary as the behavior is learned. Finally, we show that the same mechanisms can be applied to circuits with both excitatory and inhibitory units, and hence may provide an explanation for the sequential firing patterns that have been observed in other brain areas including hippocampus (N\u00e1dasdy et al., 1999; Pastalkova et al., 2008; MacDonald et al., 2013; Eichenbaum, 2014) and cortex (Luczak et al., 2007; Jin et al., 2009; Harvey et al., 2012).\n\n## Results\n\n### Synaptic depression enables temporally controllable sparse activity sequences in striatum\n\nExperimentally observed population activity patterns in striatum during learned behaviors are sparse and sequential, and these are the main features that we want our model network to exhibit in a robust manner. In order to achieve sparse activity, we make use of the well-known fact that recurrent inhibition can lead to a winner-take-all steady state in which a single unit or group of units (where a unit consists of a cluster of MSNs) becomes active and inhibits the other units in the network from becoming active. Indeed, recurrent inhibition is a hallmark feature of MSNs in striatum, and such a picture has previously been suggested to apply to striatum (Wickens et al., 1991; Beiser and Houk, 1998; Fukai, 1999). Although individual inhibitory synapses between MSNs are relatively sparse and weak on the scale of the currents needed to drive spiking in these neurons (Jaeger et al., 1994; Tepper et al., 2004), active populations of many MSNs firing together may more effectively mediate suppression between populations, in particular if these populations are also receiving sufficient background excitation from cortex and/or thalamus to keep them near the firing threshold (Ponzi and Wickens, 2010, 2013; Angulo-Garcia et al., 2016), possibly in a metastable depolarized \u2018up state\u2019 (Wilson, 1993).\n\nIn addition to sparse activity, our model also requires a mechanism by which the activity can be made to switch from one unit to another, otherwise the network would lock into a single winner-take-all state. While other mathematically similar approaches are possible (see Appendix 1 for further discussion), in this paper we propose that this mechanism is short-term plasticity in the form of depressive adaptation at synapses between MSNs. Such synaptic depression has in fact been observed experimentally (Tecuapetla et al., 2007). The effect of synaptic depression is to weaken the amount of inhibition from an active unit onto inactive units over time. If all units also receive constant external excitatory input, then eventually the inhibition may weaken sufficiently that the net input to one of the inactive units becomes positive, at which point the activity switches to this unit, and it begins to inhibit the other units. This competition between synaptic depression and the level of external input is the basic mechanism that determines the dynamics of activity switching. In particular, adjusting the level of external input can change the duration of time that it takes for activity to switch from one unit to the next, thus providing a mechanism for controlling the speed of an activity sequence in a robust manner without requiring any change in intrinsic properties of the neurons or temporally precise input to the network.\n\nThe dynamics of $x_{i}\u2062(t)$, which we think of as describing the activity level of a cluster of MSNs, and the associated synaptic depression factors $y_{j}\u2062(t)$ in our network model are described by the following equations:\n\n$$\n\\tau\\frac{dx_{i}}{dt}=\u2212x_{i}+\u03d5(\\sumj=1NW_{ij}x_{j}y_{j}+x_{i}^{in})\\tau_{y}\\frac{dy_{j}}{dt}=\u2212(y_{j}\u22121)(1\u2212x_{j})\u2212(y_{j}\u2212\\beta)x_{j}.\n$$\n\nThe first equation describes the activity of unit $i$ as being determined by a nonlinear function acting on recurrent and external inputs. The recurrent synapses are inhibitory, with weights $W_{i\u2062j}\\leq0$, and the external input is excitatory, with $x_{i}^{in}\\geq0$. For concreteness, we take the nonlinear function to be the sigmoidal function $\u03d5(x)=1/(1+e^{\u2212\\lambdax})$, where $\\lambda$ is a gain parameter. The second equation in (1) describes the dynamics of synaptic depression, where the dynamic variable $y_{j}\u2062(t)$ represents the depression of all outgoing synapses from unit $j$ with characteristic timescale $\\tau_{y}$, which we take to be much greater than the membrane time constant $\\tau$\u00a0(Tecuapetla et al., 2007). The first term on the right-hand side of the equation drives $y_{j}$ to attain a resting state value of 1 if the presynaptic unit $j$ is inactive, so that the synapse is fully potentiated. If the presynaptic unit becomes active, with $x_{j}\u22481$, then the second term drives $y_{j}$ toward $\\beta$, where $0\\leq\\beta\u00a0<\u00a01$, so that the synaptic weight depotentiates to a finite minimum value when the presynaptic unit is active (Tecuapetla et al., 2007).\n\nAs described above and discussed in detail in Appendix 1, the model defined by (1) exhibits activity switching between units due to competition between the two terms in the argument of the nonlinear function $\u03d5\u2062(x)$. The second term is a positive external input, which tends to make $x_{i}$ active. The first term is a negative input from other units in the network, and becomes weaker over time as other units remain active due to decreasing synaptic weight $W_{i\u2062j}\u2062y_{j}\u2062(t)$. When the first term eventually becomes smaller than the second, the net input becomes positive, causing $x_{i}$ to become active and begin to inhibit other units.\n\nIn Figure 1a\u2013b, we show a striatal model that is fully connected by inhibitory synapses, where all off-diagonal elements have the same inhibitory weight (\u22121) except for those connecting unit j to unit j+1, which are depotentiated by an amount \u03b7. This means that if unit j is currently active, then unit j+1 will become active next since it experiences the least amount of inhibition. Figure 1c\u2013d show that the expected sequence of activity (which is repeating due to the fact that we also depotentiate the weight between the last and first units) is indeed obtained in such a network, and that the magnitude of the constant external input can be used to control the rate of switching. The period of the activity sequence slows down tremendously as xin approaches the synaptic depression parameter \u03b2. This slowing down allows for the temporal dynamics to be smoothly and reliably controlled, providing a potential mechanism consistent with recent experiments showing dramatic dilation of the time-dependence in population recordings of striatal neurons (Mello et al., 2015), without requiring new learning of the synaptic weights from one trial to the next. While an infinite range of dynamical scaling can be obtained in the idealized limit of \u03c4/\u03c4y\u21920 and \u03bb\u2192\u221e, Figure 1d shows that attaining both very long and short switch times T is possible even away from this idealized limit. Finally, Figure 1e shows that a substantial dynamical range of sequence speeds can be obtained even if control over the precise value of the input xin is limited, as may be the case due to noise in the system, preventing extremely slow and extremely fast sequence speeds.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26084/elife-26084-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic diagram of a 10-unit striatal network. Units receive constant external excitatory input and mutually inhibit each other. The burgundy synapses correspond to a depotentiated path through the network that enables sequential activity. (b) The synaptic weight matrix for the network shown in \u2018a\u2019, with subdiagonal weights depotentiated by $\u03b7=0.2$. (c) The magnitude of the constant input $x^{in}$ to the network can be used to control the rate at which the activity switches from one population to the next. The units in the network are active in sequential order, with the speed of the sequence increasing as the excitatory input to the network is increased. Parameters for the synaptic depression are $\\beta=0.2$ and $\\tau_{y}=20\u2062\\tau$, the gain parameter is $\\lambda=20$, synapses connecting sequentially active units are depotentiated by $\u03b7=0.1$, and the effective input is $x^^{in}\u2261x^{in}/(1-\u03b7)$. (d) The switch time as a function of the level input to the network. Points are determined by numerically solving Equation 1; curve is the theoretical result (equation shown in figure; see Appendix 1 for details). If the input is limited to the range $\\beta+\u0394\\leqx^^{in}\\leq1-\u0394$ (e.g. because reliable functioning in the presence of noise would require the input to stay away from the boundaries within which switching occurs), then $T_{max}$ and $T_{min}$ are the maximum and minimum possible switching periods that can be obtained. (e) The temporal scaling factor is shown as a function of $\u0394$ for different values of the synaptic depression parameter $\\beta$. The red dot corresponds to the ratio of the red dots in \u2018d\u2019.\n\n### Targeted external input selects which of several sequences striatum expresses\n\nWe can extend the model described so far to multiple\u2014and even overlapping\u2014behaviors by positing that the external input from cortex and/or thalamus targets the particular subset of MSNs needed to express a particular behavior. If multiple sequences are encoded in the weights between different populations of MSNs, then the external input can be thought of as a \u2018spotlight\u2019 that activates the behavior that is most appropriate in a particular context, with the details of that behavior encoded within the striatum itself, as shown in Figure 2. These subpopulations may even be partially overlapping, with the overlapping portions encoding redundant parts of the corresponding behaviors. In this way, a wide variety of motor behaviors could be encoded without requiring a completely distinct sequence for every possible behavior. This model dissociates the computations of the selection and expression of motor sequence behaviors. The inputs to striatum select a sequence (possibly composed of several subsequences) by targeting a certain subpopulation of MSNs, and then the striatum converts this selection into a dynamical pattern of neural activity that expresses the behavior in time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26084/elife-26084-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic illustration of partially overlapping striatal activity sequences selectively activated by external input. The arrows do not represent synaptic connections, but rather the sequence of activity within an assembly. Overlapping parts of the striatal activity sequences encode redundancies in portions of the corresponding behaviors (in this case, the middle portion of a paw movement trajectory). (b) Left panels show network activities in which only the shaded units receive external input. Right panels show the weights, with only the outlined weights being relevant for the network dynamics for each behavior.\n\nIn addition to having multiple activity patterns being driven by different sets of tonically active inputs, the network is capable of operating in two distinct modes, as shown in Figure 3. In the first mode, the dynamics of neural activity is determined by the recurrent connectivity, as in the preceding examples, with external excitatory input providing a tonic \u2018go\u2019 signal to drive the network. In the second mode, on the other hand, the external input is strongly time-dependent and unique for each unit. Such input effectively overrides the pattern stored in the recurrent connectivity and enslaves the network dynamics to top-down input. In addition to providing an alternative route to controlling the network dynamics, such time-dependent external input can also play a role in facilitating learning, as we discuss below.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26084/elife-26084-fig3-v2.jpg)\n\n**Figure 3.:** If input to the network (top) is tonic, the recurrent weights cause the network to produce a particular activity sequence (bottom), as in Figure 1, with the magnitude of the input controlling the speed of the sequence. Alternatively, if the input is strongly time-dependent, then the network dynamics are enslaved to the input pattern. In this case each unit receives a unique pulsed input, with the input to unit four highlighted for illustration.\n\n### Anti-Hebbian plasticity enables sequence learning\n\nA striatal network with initially random connectivity can learn to produce sparse sequential activity patterns when driven by time-dependent cortical input. We again consider a network described by (1), but now with distinct time-dependent external inputs $x_{i}^{in}\u2062(t)$ to each unit $i$, and dynamic synaptic weights described by\n\n$$\n\\frac{dW_{ij}}{dt}=\u2212\\alpha_{1}W_{ij}x_{i}x\u00af_{j}\u2212\\alpha_{2}(W_{ij}+1)(1\u2212x_{i})x\u00af_{j},\n$$\n\nwhere $x\u00af_{j}$ is the activity of unit $j$, low-pass filtered over a time scale $\\tau_{w}$, and $\\alpha_{1}$ and $\\alpha_{2}$ control the rates of learning. Roughly, $x\u00af_{j}\u2062(t)$ will be nonzero if unit $j$ has been recently active over the time window from $t-\\tau_{w}$ to $t$. The first term in (2) thus causes $W_{i\u2062j}\u21920$ if postsynaptic unit $i$ is active together with or immediately following presynaptic unit $j$. Otherwise, if $j$ is active but $i$ is not active, the second term causes $W_{i\u2062j}\u2192-1$. (It is important that $\\tau_{w}$ should not exceed the typical time for which a unit remains active, or else there will be synaptic depotentiation not only between sequentially active units, but also between units separated by two or more steps in the sequence.) Equation (2) thus describes an anti-Hebbian learning rule, according to which synapses connecting units that fire together or in sequence are depotentiated, while others are potentiated.\n\nFigure 4 shows that sequences can develop in the network when it is subjected to several cycles of time-varying external input. Figure 4a shows that a network initially having no special features in its connectivity matrix can acquire such structure through anti-Hebbian plasticity by subjecting it to a repeated sequence of pulse-like inputs, which induce a regular pattern of sequential activity. It also shows that tonic input to the network leads to sparse activity sequences both before and after training, with short, random sequences occurring before training and long, specific sequences occurring after training. We have found that successful sequence learning can occur for a range of input sequence speeds when the pulse width is \u2273\u03c4y, but that some units in the sequence will be skipped if the input varies on time scales \u226a\u03c4y (data not shown). In Figure 4b, the regular input to each unit is replaced by a superposition of sinusoids with random amplitudes and phase shifts. (We presume that in the brain cortical input to the striatum is structured in a meaningful way rather than random, determined by a reinforcement learning process that we are not modeling explicitly. Our use of random input here, however, illustrates that robust sequences emerge naturally in striatum even in the case where the input is not highly structured.) This input leads to a particular activity sequence in the network, with only one unit being active at a given time due to the inhibitory competition between units. Meanwhile, synaptic weights between sequentially active units are depotentiated by anti-Hebbian learning, eventually leading to a weight matrix (labeled 't=500\u2062\u03c4y' in Figure 4b) in which each unit that is active at some time during the sequence is described by a column with a single depotentiated entry, which corresponds to the next unit to become active in the sequence. Figure 4c illustrates that it is also possible to train a network that has previously learned one sequence to produce a new unrelated sequence. The evolution of the synaptic weights during the learning and relearning phases is illustrated in Figure 4d, where the number of training cycles required for learning the sequence is determined by the learning rates \u03b11 and \u03b12 in (2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26084/elife-26084-fig4-v2.jpg)\n\n**Figure 4.:** (a) A regular sequence of pulse-like inputs (only 10 inputs are shown for clarity; $25\u2062\\tau_{y}$ = 1 cycle) (left) leads to a sequential activity pattern (center) and, via anti-Hebbian plasticity, converts a random connectivity matrix (at $t=0$) to a structured matrix after 20 cycles (at $t=500\u2062\\tau_{y}$) (right). The input during the first half of the first cycle and the last half of the last cycle has been replaced by constant input to all units, which leads to a short random sequence before training and to a long specific sequence following training, with the sequence speed determined by the level of tonic input. (b) Starting with random connectivity between units (at $t=0$), each unit is driven with a distinct time-varying input consisting of a random superposition of sine waves (two cycles of which are shown for 10 inputs) which produces a repeating activity sequence. Anti-Hebbian learning results in a structured matrix after 20 cycles (at $t=500\u2062\\tau_{y}$). (c) 20 cycles with a new input elicits a different activity pattern and overwrites the prior connectivity to a new structured matrix (at $t=1000\u2062\\tau_{y}$). (d) The evolution of the synaptic weights during the learning in \u2018b\u2019 and \u2018c\u2019. The blue, green, and red lines show the average weights of synapses involved in the first pattern, the second pattern, and neither pattern, respectively. (The weights shown in blue are not all repotentiated in the second training period due to the fact that some of these synapses are from units that are not active in the second sequence. For these weights $x\u00af_{j}\u22480$ in Equation 2, and thus they do not learn.) (e) The average time for switching from one unit to the next as a function of the constant external input after learning. (f) The switch times are robust to random perturbations of the weights. Starting with the final weights in \u2018c\u2019, each weight is perturbed by $\u0394\u2062W_{i\u2062j}=p\u2062\u03be_{i\u2062j}\u2062\u27e8W_{i\u2062j}\u27e9$, where $\u03be_{i\u2062j}\u223c\u2062(0,1)$ is a normal random variable, and $p=0.02$, 0.05, or 0.10. The perturbed switch times (slightly offset for visibility) are averaged over active units and realizations of the perturbation. Learning-related parameters are $\\tau_{w}=3\u2062\\tau$, $\\alpha_{1}=0.05/\\tau$, and $\\alpha_{2}=0.02/\\tau$.\n\nAfter the network has been trained in this way, it is able to reproduce the same pattern of activity even after the time-dependent input is replaced by a constant excitatory input to all units. This is similar to the network model studied in above, although now with the active units appearing in random order. Figure 4e shows that, as in the earlier network model, the level of external input can be used to control the speed of the activity sequence, with the dynamical range spanning more than an order of magnitude. Finally, Figure 4f shows that, again replacing the time-varying input with constant external input to all units, the activity pattern and sequence speed in this trained network are robust with respect to random perturbations of the weights $W_{i\u2062j}$. For comparison, we show in Appendix 2\u2014figure 1 that performance is severely degraded by comparable perturbations in a reservoir computing system.\n\nPrevious models have shown that neural activity sequences can emerge from initially unstructured networks of excitatory neurons via spike-timing-dependent plasticity (STDP) (Fiete et al., 2010; Veliz-Cuba et al., 2015; Ravid Tannenbaum and Burak, 2016). Compared with these earlier works, our model has the advantage of being able to dynamically adjust the speed of the activity sequence, as shown in Figure 4e (cf. however Refs. [Veliz-Cuba et al., 2015; Pehlevan et al., 2015; Tristan et al., 2014], where some temporal rescaling in activity patterns has been obtained using distinct mechanisms). In addition, our model does not require the assumption of heterosynaptic competition limiting the summed synaptic weights into and out of each unit, as in Ref. (Fiete et al., 2010).\n\nTaken together, the above results show, within the context of a highly simplified network model, that time-varying input can lead to robust activity sequences, but that this input is no longer necessary once the circuit has internalized the sequence. Further, the speed of the dynamics can be adjusted using the overall level of external input to the network. Taken as a model of striatum, it therefore provides a possible explanation of the motor cortex lesion studies of Ref. (Kawai et al., 2015), as well as the variable-delay lever press experiments of Ref. (Mello et al., 2015).\n\n### A sparsely connected spiking model supports learning and execution of time-flexible sequences\n\nFigure 5 shows that, as in the continuous version of the model, temporally patterned input and recurrent plasticity can be used to train\u00a0a recurrent inhibitory network having no initial structure in the recurrent weights to perform a particular firing sequence, with only one cluster of neurons active at any one time. Recent experimental work has indeed identified clusters of neurons in striatum that appear to function as transiently active cell assemblies (Barbera et al., 2016). Because we interpret the units studied in the continuous case above as clusters of neurons rather than individual neurons, full connectivity between units can be easily obtained even if connectivity between neurons is sparse, since some neurons in one cluster will always have synapses to some neurons in any other cluster if the clusters are sufficiently large. In Figure 5, the connection probability between all pairs of neurons is p=0.2, showing that sparse connectivity between neurons is sufficient to enable one population to effectively inhibit another, as in the continuous model. Although we have adopted a simplified scheme in which each spiking neuron participates in only one cell assembly of concurrently active neurons, making the mapping from the neurons in the spiking model onto the units in the continuous model straightforward, the approach could be extended using the standard theory of attractor networks to allow for each spiking neuron to participate in multiple assemblies (see Ref. [Curti et al., 2004], as well as Ch. 17 of Ref. [Gerstner et al., 2014]). In addition, while the highly structured input used to train the network may at first appear highly artificial, we point out that similar sparse sequential activity patterns have been observed in motor cortex, which is a main input to striatum, in rodents performing a learned lever-press task (Peters et al., 2014; Dhawale et al., 2015).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26084/elife-26084-fig5-v2.jpg)\n\n**Figure 5.:** (a) Input currents to each of 8 distinct clusters of 100 neurons each (offset for clarity). This input pattern causes sequential activation of the clusters and is repeated noisily several times while the recurrent weights are learned. (b) Schematic anti-Hebbian spike-timing-dependent plasticity (STDP) rule for recurrent inhibitory synapses, showing that synapses are depotentiated when pre- and post-synaptic spikes are coincident or sequential, and potentiated if they are not. (This STDP curve applies whenever there is a presynaptic spike; there is no weight change in the absence of a presynaptic spike; see Materials and methods for specific mathematical details.) (c) Average recurrent inhibitory weights between clusters in a spiking network after learning with STDP. (d) After the weights have been learned, driving the network with tonic inputs of varying amplitudes leads to a rescaling of the period of the activity pattern. (e) Two examples of the time-rescaled activity patterns in the trained network with different values of tonic input current.\n\nThe STDP rule according to which recurrent inhibitory synapses are modified is shown in Figure 5b. The rule is anti-Hebbian, with postsynaptic spikes occurring at approximately the same time as or slightly after a presynaptic spike leading to weakening of the synapse, while presynaptic spikes occurring in isolation lead to a slight potentiation of the synapse. Figure 5c shows that this rule leads, after several repetitions of the input sequence, to a connectivity structure similar to that obtained in the continuous model, with decreased inhibition of a population onto itself and onto the next population in the sequence. Finally, as shown in Figure 5d,e, once the weights have been learned, constant input is sufficient to induce the desired firing pattern in the network, with the magnitude of this input controlling the rate at which the pattern progresses. Thus, as for the continuous network studied in above, the spiking network is able to learn a firing pattern from an external source, and later autonomously generate the same pattern over a wide range of speeds. Further details of the spiking model are presented in Materials and methods.\n\n### Sparse sequential firing in an excitatory network with shared inhibition\n\nAlthough, motivated by experimental results involving the basal ganglia, we have developed a model of recurrently connected inhibitory units, the same basic mechanisms for sequence learning can be applied to obtain sparse sequential firing patterns with flexible time encoding in a network of excitatory units with shared inhibition, a common motif used to obtain sparse coding of both static and dynamic neural activity patterns in models of cortical circuits. Such a network can be made to produce variable-speed sequential patterns just as in the circuit with direct lateral inhibition studied above. In this model, illustrated in Figure 6a, switching from from one excitatory unit to the next is again controlled by competition between the level of background input and synaptic depression at excitatory synapses, with the relative values of these quantities determining the rate at which activity jumps from one unit to the next. It is described by the following equations:(3)\u03c4dxidt=\u2212xi+\u03d5(\u2211jJijxj\u2212JEIxI+xiin)\u03c4IdxIdt=\u2212xI+\u03d5I(JIE\u2211jxj),\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26084/elife-26084-fig6-v2.jpg)\n\n**Figure 6.:** (a) A network of $N$ excitatory units are connected by self-excitation, feedforward excitation, and shared inhibition. (b) Just as in the recurrent inhibitory network, this network exhibits sparse sequential firing when the excitatory synapses are made depressing, with the speed of the sequence controlled by the level of external input. Parameters are $\\beta=0.2,\u00a0\\tau_{y}=20\\tau,\\tau_{I}=\\tau,\u00a0J^{EI}=J^{IE}=1,\u00a0J_{ij}=0.6\\delta_{ij}+0.2\\delta_{j+1,j}$.\n\nwhere $x_{i}\u2062(t)$ is the activity of an excitatory unit, $x_{I}\u2062(t)$ is the activity of a shared inhibitory unit, and we assume $J_{i\u2062j},J^{EI},J^{IE}\\geq0$. In the case where the timescale characterizing inhibition is much faster than that characterizing excitation ($\\tau_{I}/\\tau\u21920$) and the nonlinearity of the transfer function for the inhibitory units can be ignored ($\u03d5_{I}\u2062(x)\u2248x$), (3) becomes the following:\n\n$$\n\\frac{dx_{i}}{dt}=\u2212x_{i}+\u03d5(\u2212\\sumj(J^{I}\u2212J_{ij})x_{j}+x_{i}^{in}),\n$$\n\nwhere we have defined $J^{I}\u2261J^{EI}\u2062J^{IE}$. In the case where $J^{I}\\geqJ_{i\u2062j}$, and if excitatory synapses are made to be depressing by letting $x_{j}\u2062(t)\u2192x_{j}\u2062(t)\u2062y_{j}\u2062(t)$ on the right hand sides of the above equations, then this is precisely the model that was introduced in (1).\n\nFigure 6b shows that the behavior of such a circuit with shared inhibition exhibits sparse sequential firing patterns virtually identical to those in the recurrent inhibitory network, even in the case where the above assumptions requiring inhibition to be fast and linear are relaxed by letting $\\tau_{I}=\\tau$ and $\u03d5_{I}\u2062(x)=\u0398\u2062(x)\u2062tanh\u2061(x)$, where $\u0398\u2062(x)$ is the Heaviside step function. However, the dynamic range of temporal scaling factors that can be obtained in this case is somewhat more limited than in the model with direct lateral inhibition, with an approximately four-fold speed increase obtained in Figure 6b, compared with over an order of magnitude obtained in Figure 1. This is due at least in part to the finite timescale $\\tau_{I}$ of the shared inhibitory population, which limits the speed at which activity switching can occur. This suggests that a purely inhibitory network, such as the the one realized in striatum, may provide an advantage over an excitatory network with shared inhibition if involved in variable-speed tasks requiring a large dynamical range.\n\nAlthough we shall not explore the effects of synaptic plasticity for this model in detail, the mapping of the network with shared inhibition onto the model previously studied, as shown in Equation (4), means that sequence learning can also take place within this model. This requires that recurrent connections between excitatory synapses should follow a Hebbian plasticity rule, according to which synapse $J_{i\u2062j}$ is potentiated if unit $i$ fires immediately after unit $j$.\n\nWhile models of sequence generation in networks containing both excitatory and inhibitory recurrent connections have been constructed previously, they generally have had limited or no control over sequence speed (Fiete et al., 2010; Litwin-Kumar and Doiron, 2014; Pehlevan et al., 2015; Tully et al., 2016). The ability to generate variable-speed sequential activity patterns may be relevant for various frontal and motor cortical areas, which can be described by the circuit architecture shown in Figure 6a, and which can exhibit sparse sequences similar to those in striatum during time-dependent decision making and motor-control tasks (Harvey et al., 2012; Peters et al., 2014; Dhawale et al., 2015). Given that these same cortical areas act as inputs to striatum, this mechanism for producing sparse sequences in circuits with shared inhibition may enable cortical networks to provide a pulse-like \u2018tutoring\u2019 input to striatum, as in Figure 5.\n\n## Discussion\n\nWe have presented a model in which a network of recurrently connected inhibitory units internalize stereotyped sequential activity patterns based on temporally patterned input. Moreover, the same activity pattern can be reproduced after learning even after removing the temporally patterned input, and the speed of the activity pattern can be adjusted simply by varying the overall level of excitatory input, without requiring additional learning. As a model of striatum, we suggest that it may provide an explanation for recent experiments showing that (i) sparse sequences of neural activity in striatum dilate and contract in proportion to the delay interval in timekeeping tasks (Mello et al., 2015), and (ii) motor cortex is necessary to learn new behaviors but not to perform already-learned behaviors (which are presumably directed at least in part by subcortical brain circuits such as the striatum) (Kawai et al., 2015).\n\nIn unlesioned animals, the ability to progress between two modes of control\u2014one in which the dynamical neural activity in the basal ganglia is enslaved to top-down input from cortex, and another in which subcortical brain circuits generate dynamics autonomously\u2014may form the basis of a cognitive strategy enabling performance of behaviors more reliably and with less cognitive effort as performance at a particular task becomes increasingly expert. As illustrated in Figure 3, the network can rapidly switch between these modes even after learning of a particular pattern has taken place, perhaps somewhat similar to the switching between the \u2018practice\u2019 and \u2018performance\u2019 modes of male songbirds in the absence or presence of a female, respectively (Kao et al., 2005). It is also well known that important differences exist in rodents, monkeys, and humans between goal-directed and habitual behaviors (for reviews, see Refs. [Yin and Knowlton, 2006; Graybiel, 2008; Dolan and Dayan, 2013; Jahanshahi et al., 2015]), and exploring the relation between these behavioral modes and the cortically and non-cortically driven modes described above is an important direction for future study. The question of where learned motor sequence memories are ultimately stored in the brain has been a subject of debate, with some studies favoring cortex\u2014perhaps aided by \u2018tutoring\u2019 input from basal ganglia\u2014as the ultimate storage site (Desmurget and Turner, 2010; H\u00e9lie et al., 2015), and others favoring subcortical structures such as sensorimotor striatum (Miyachi et al., 1997; Kawai et al., 2015). While our theory proposes a prominent role for striatum in storing motor sequence memories, it is also consistent with the possibility that motor sequence memories are effectively stored in both cortex and basal ganglia, so that inactivating either area in isolation will not necessarily abolish the learned behavior.\n\nAssuming that the function of cortical input is to select from a set of possible learned behaviors as illustrated in Figure 2, we can ask what might be the potential role of corticostriatal plasticity, which many studies have shown is important for reward-based learning of motor behaviors in rodents, making these synapses a likely site for reinforcement learning (Reynolds et al., 2001; Barnes et al., 2005; Yin et al., 2009). If a behavior leads to a greater-than-expected reward, then a (possibly dopamine-mediated) feedback signal can cause the recently active corticostriatal synapses to be strengthened, making that behavior more likely to be performed in that particular context in the future, lowering the threshold for activation and possibly speeding up the activity sequence underlying a desired behavior, making the basal ganglia circuit important for controlling the \u2018vigor\u2019 associated with movements (Yttri and Dudman, 2016; Dudman and Krakauer, 2016). Although the model that we have developed focuses on plasticity within striatum rather than corticostriatal plasticity, it is worth emphasizing that it is consistent with both types of plasticity being present, with corticostriatal plasticity likely involved with action selection and degree of vigor, whereas MSN-to-MSN plasticity may be more important for encoding kinematic details of a given behavior. The scenario just outlined can be viewed as a generalization of recent models of reinforcement learning in mammals (Fee, 2012) to behaviors with temporally rich structure. Again using the spotlight analogy, it is also easy to see how multiple behaviors can be concatenated if the cortical and/or thalamic inputs activating the appropriate neuron assemblies are active together or in sequence. This provides a natural mechanism by which \u2018chunking\u2019 of simple behaviors into more complex behaviors might take place in the striatum (Jin and Costa, 2010, 2015).\n\nRegarding the dynamical rescaling of neural firing patterns, several previous theoretical frameworks have been proposed for interval timing, including pacemaker-accumulators (Gibbon, 1977), in which a constant pacemaker signal is integrated until a threshold is reached; superposed neural oscillators (Meck et al., 2008), in which oscillations at different frequencies lead to constructive interference at regular intervals; and sequence-based models (Killeen and Fetterman, 1988; Miller and Wang, 2006; Escola et al., 2009), in which a network passes through a sequence of states over time. The last of these is most similar to the model that we present, though with the important difference that it involves stochastic rather than deterministic switching of activity from one unit to the next and hence has much greater trial-to-trial variability. In addition to these models, some previous theoretical works have attempted to use external input to control the speed of a \u2018moving bump\u2019 of neural activity within the framework of continuous attractors (Burak and Fiete, 2009; Rokni and Sompolinsky, 2012). However, in both of these previous studies, obtaining a moving activity bump requires external input that couples to different types of neurons in different ways. This is not required by the model presented here, for which the activity bump still propagates even if the input to all units is identical.\n\nIt is also useful to contrast our model with other possible approaches within the framework of reservoir computing, starting with a random recurrent neural network (RNN) and training it to produce a sparse sequential pattern of activity either in the recurrent units themselves (Rajan et al., 2016) or in a group of readout units. Such training can be accomplished for example using recursive least squares learning (Sussillo and Abbott, 2009; Laje and Buonomano, 2013; DePasquale et al., 2016; Goudar and Buonomano, 2017) or various backpropagation-based algorithms (Martens and Sutskever, 2011). However, as we show in Appendix 2\u2014figure 1, such a trained RNN generically tends to be much more sensitive to perturbations in the recurrent weights. In addition, the successful training of such an RNN requires many examples spanning the entire range of time scaling that one wishes to produce, whereas the network that we present can learn a sequence at one particular speed and then generalize to faster or slower speeds simply by changing one global parameter, making this network more flexible as well as more robust. This is reminiscent of the ability of human subjects learning a motor skill to successfully generalize to faster and slower speeds after training at a single fixed speed (Shmuelof et al., 2012).\n\nWe conclude by summarizing the experimental predictions suggested by our model. Central to the model is the anti-Hebbian plasticity rule that enables the inhibitory network to learn sequential patterns. Experimental results on medium spiny neurons in vitro have shown that recurrent synapses do in fact potentiate when presynaptic spiking is induced without postsynaptic spiking (Rueda-Orozco et al., 2009), as one would expect from the second term in (2). To our knowledge, however, the question of whether paired pre- and postsynaptic spiking would lead to depotentiation, as described by the first term in the equation, has not yet been addressed experimentally. Both Hebbian and anti-Hebbian forms of STDP at inhibitory synapses have been found in other brain areas, as reviewed in Ref. (Vogels et al., 2013). Because recurrently driven sequential activity of the sort that we describe requires depotentiation of inhibitory synapses between neurons both within the same cluster and from one cluster to the next sequentially active cluster, any activity-dependent learning rule must be qualitatively similar to the anti-Hebbian STDP curve shown in Figure 5b. The absence of such a learning rule would render it unlikely that learned recurrent connections within striatum play a major role in shaping learned sequences of neural activity, hence making this an important test of the theory.\n\nOur model also predicts that the overall level of external excitatory input to the network should affect the speed of the animal\u2019s time judgement and/or behavior. By providing differing levels of input to a population of striatal MSNs optogenetically, it could be tested whether the speed of the neural activity sequence among these cells is affected. An alternative, and perhaps less technically challenging, approach would be to measure the overall activity level in the network, which should increase as the speed of the sequence increases. This effect should persist as long as saturation effects in activity levels do not become prominent (which does occur in the continuous model we present, but not in our spiking model). Changing the strength of recurrent inhibition should have a similar effect to changing the input level, although this would have to be done selectively to synapses between MSNs without disrupting feedforward inhibition from interneurons within striatum. Alternatively, dopamine may be able to cause a change of the sequence speed by modifying the synaptic depression parameter ($\\beta$ in our model), and there is evidence from in vitro experiments that this indeed occurs (Tecuapetla et al., 2007). Thus changes in tonic dopamine levels should be able to effect temporal rescaling by modulating the input gain and/or recurrent synaptic depression, and indeed there has already been some evidence that such dopamine modulation occurs (Soares et al., 2016). However, it is as yet unknown whether direct- and indirect-pathway MSNs, which project to different targets within the basal ganglia (Gerfen and Surmeier, 2011), play distinct roles with regard to interval timing. Including both types of MSN in the model will be a natural extension for future work and will allow for more direct comparison with existing models of basal ganglia function (Maia and Frank, 2011; Schroll and Hamker, 2013).\n\nOur theory also predicts that the neural activity pattern in striatum should be the same in trained animals before and after cortical lesions and that this neural activity should play a role in driving the animal\u2019s behavior. Investigating the neural activity in striatum and its role in generating behavior in lesioned animals would thus provide an important test of the theory. Observing the activity in cortex itself may also be useful. The theory suggests that time-dependent variability in cortical input is likely to decrease as an animal becomes more expert at performing a task, or as it switches between behavioral modes. This could be studied via population recordings from striatum-projecting neurons in motor cortex.\n\nFinally, while the lesion experiments of Ref. (Kawai et al., 2015) suggest that the instructive tutoring input to striatum likely originates in motor cortex, the source of the non-instructive input driving behavior and controlling speed after learning is unknown. It would be interesting for future experiments to explore whether the non-instructive input originates primarily from other cortical areas, or alternatively from thalamus, thereby endowing this structure with a functionally distinct role from cortex in driving behavior.\n\n## Materials and methods\n\nThe following model describes a network of exponential integrate-and-fire neurons with synaptic depression used in Figure 5:\n\n$$\nC\\frac{dV_{i}}{dt}=g_{L}(E_{L}\u2212V_{i})+g_{L}\u0394_{T}exp\u2061[(V_{i}\u2212V_{T})/\u0394_{T}]+I_{i}(t)\\frac{dx_{ij}}{dt}=\\frac{1\u2212x_{ij}}{\\tau_{x}}\u2212ux_{ij}(t\u22120^{+})\\sumt_{j}\\delta(t\u2212t_{j})I_{i}(t)=I_{i}^{ext}(t)+uQ\\sumj=1Nx_{ij}(t)W_{ij}\\sumt_{j}\\delta(t\u2212t_{j}),\n$$\n\nwhere the membrane potential $V_{i}\u2062(t)$ is defined for each neuron $i$, and the dynamical synaptic depression variable $x_{i\u2062j}\u2062(t)$, which can be interpreted as the fraction of available neurotransmitter at a synapse, is defined for each synapse, with $x_{i\u2062j}\u2062(t-0^{+})$ meaning that the value of $x_{i\u2062j}$ just before the presynaptic spike should be used. When the membrane potential of neuron $i$ diverges, that\u00a0is, $V_{i}\u2062(t)\u2192\u221e$, a spike is emitted from neuron $i$, and the potential is reset to the resting potential $E_{L}$. Each time a presynaptic neuron $j$ fires a spike at time $t_{j}$, the depression variable is updated as $x_{i\u2062j}\u2192(1-u)\u2062x_{i\u2062j}$, where $u$ is the fraction of neurotransmitter that is used up during each spike ($0\\lequ\\leq1$). The amount of electric charge that enters the postsynaptic cell during a presynaptic spike from neuron $j$ is $u\u2062x_{i\u2062j}\u2062(t)\u2062Q\u2062W_{i\u2062j}$, where $Q$ has units of charge, and $u$, $x_{i\u2062j}$, and $W_{i\u2062j}$ are dimensionless. In terms of the original model described in the main text, each cluster of neurons corresponds to one of the units from the continuous model. As before, the competition between external input current and synaptic depression is used to obtain control over the temporal dynamics. The external inputs used in Figure 5 are given by\n\n$$\nI_{i}^{ext}(t)=x_{0}+x_{1}sin^{8}\u2061(\\frac{\\pit}{T}+\\theta_{i})\n$$\n\nwhere $x_{0}=0.2$\u00a0nA, $x_{1}=0.5$\u00a0nA, $T=800$\u00a0ms, and $\\theta_{i}=\\pi\u2062n_{i}/8$ gives the phase shift of the input to each population $n_{i}=1,\u2026,8$. Noise, which was normally distributed and drawn independently for each cycle of the input, was added to $x_{0}$, $x_{1}$, and $\\theta_{i}$, as well as by adding to (6) higher-frequency terms $\u223csin\u2061(8\u2062\\pi\u2062t/T)$ and $sin\u2061(12\u2062\\pi\u2062t/T)$ with random amplitudes and phase shifts. The other parameters used in Figure 5 are $C=300$\u00a0pF, $g_{L}=30$\u00a0nS, $E_{L}=-70$\u00a0mV, $V_{T}=-50$\u00a0mV, $\u0394_{T}=2$\u00a0mV, $\\tau_{x}=200$\u00a0ms, $u=0.5$, $\\tau_{pre}=20$\u00a0ms, $\\tau_{post}=5$\u00a0ms, $Q=1.5$\u00a0pC, $A=0.05$, $a=0.002$.\n",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "57e68fba-a693-4553-a09b-d1a0ba3f6fb9",
+      "submission_id": "70f5854b-151b-401a-a4d9-b716d598c612",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael J Frank, Brown University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26084.010](https://doi.org/10.7554/eLife.26084.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Learning multiple variable-speed sequences in striatum via cortical tutoring\" for consideration by eLife. Your article has been favorably evaluated by Richard Ivry (Senior Editor) and two reviewers, one of whom, Michael Frank, is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Mark D Humphries (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors propose a model for how the striatum can generate sequences of neuron activity, of variable duration, from non-sequential input, and how they can emerge from tutoring from cortex, and can progress at varying speeds. Their mechanism rests on some form of adaptation \u2013 here picked to be synaptic depression at MSN-MSN synapses, given this has existing experimental evidence. With adaptation as the mechanism, dilation of temporal sequences can occur solely through changing the level of input drive. Learning such sequences is proposed to occur via anti-Hebbian plasticity at MSN-MSN synapses. Finally, the authors show that their results generalise to a sparse, spiking network model. Thus, the model makes sense of biophysical data (synaptic depression), shows how it can explain experimental data on population dynamics, and makes clear, testable experimental predictions.\n\nEssential revisions:\n\nBoth reviewers were quite enthusiastic about your contribution, but just wanted to see you address the following points.\n\n1) We would like to know a bit more about the dependencies of the model's behaviour on its parameters, particularly for learning. These can take the form of further text, or small simulations \u2013 we will defer to your preference here. Specifically, the tutoring (Figure 4) requires that the input sequence is periodically repeated; presumably the time-scale of the period of the sequence has to be >> \u03c4y? What is the lower-limit here? In other words, how does the time-scale of interaction between neurons set by \u03c4y dictate the fastest period of the tutoring sequence? Presumably this is also a function of xin, just as for the switch time in the constant input case to the static network (Figure 1D).\n\n2) Currently learning in the model is mediated by anti-Hebbian plasticity. The authors state in the Discussion that it still seems to be an open question as to whether this form of plasticity is appropriate for MSNs. Are there other learning rules that might also work for the model? Have the authors tried other learning rules? It might be nice to see more work or at least a discussion of potential alternative learning rules should the prediction of anti-Hebbian plasticity prove to be not well supported experimentally. This is not a criticism but rather something that is likely of interest to readers.\n",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "887175e0-7b8f-43ba-addf-31f4015eef6f",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C1",
+      "claim": "Sparse, sequential patterns of neural activity have been observed in cortex during timekeeping and motor sequence tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Sparse, sequential patterns of neural activity have been observed in numerous brain areas during timekeeping and motor sequence tasks. Inspired by such observations, we construct a model of the striatum, an all-inhibitory circuit where sequential activity patterns are prominent, addressing the following key challenges: (i) obtaining control over temporal rescaling of the sequence speed, with the ability to generalize to new speeds; (ii) facilitating flexible expression of distinct sequences via selective activation, concatenation, and recycling of specific subsequences; and (iii) enabling the biologically plausible learning of sequences, consistent with the decoupling of learning and execution suggested by lesion studies showing that cortical circuits are necessary for learning, but that subcortical circuits are sufficient to drive learned behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Luczak et al., 2007; Jin et al., 2009; Harvey et al., 2012) that observed these patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "5fac4b3f-5cea-4a6a-b8aa-04e138da134e",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C2",
+      "claim": "Sparse, sequential patterns of neural activity have been observed in basal ganglia during timekeeping and motor sequence tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Sparse, sequential patterns of neural activity have been observed in numerous brain areas during timekeeping and motor sequence tasks. Inspired by such observations, we construct a model of the striatum, an all-inhibitory circuit where sequential activity patterns are prominent, addressing the following key challenges: (i) obtaining control over temporal rescaling of the sequence speed, with the ability to generalize to new speeds; (ii) facilitating flexible expression of distinct sequences via selective activation, concatenation, and recycling of specific subsequences; and (iii) enabling the biologically plausible learning of sequences, consistent with the decoupling of learning and execution suggested by lesion studies showing that cortical circuits are necessary for learning, but that subcortical circuits are sufficient to drive learned behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Jin et al., 2009; Rueda-Orozco and Robbe, 2015; Mello et al., 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015; Bakhurin et al., 2017) that observed these patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "56d85d6b-84e2-4bc2-9ef8-9cd5f097af0b",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C3",
+      "claim": "Sparse, sequential patterns of neural activity have been observed in hippocampus during timekeeping and motor sequence tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Sparse, sequential patterns of neural activity have been observed in numerous brain areas during timekeeping and motor sequence tasks. Inspired by such observations, we construct a model of the striatum, an all-inhibitory circuit where sequential activity patterns are prominent, addressing the following key challenges: (i) obtaining control over temporal rescaling of the sequence speed, with the ability to generalize to new speeds; (ii) facilitating flexible expression of distinct sequences via selective activation, concatenation, and recycling of specific subsequences; and (iii) enabling the biologically plausible learning of sequences, consistent with the decoupling of learning and execution suggested by lesion studies showing that cortical circuits are necessary for learning, but that subcortical circuits are sufficient to drive learned behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (N\u00e1dasdy et al., 1999; Pastalkova et al., 2008; MacDonald et al., 2013; Eichenbaum, 2014) that observed these patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "2798d3eb-f4ae-45bc-880b-9671012281e4",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C4",
+      "claim": "Sparse, sequential patterns of neural activity have been observed in songbird area HVC during timekeeping and motor sequence tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Sparse, sequential patterns of neural activity have been observed in numerous brain areas during timekeeping and motor sequence tasks. Inspired by such observations, we construct a model of the striatum, an all-inhibitory circuit where sequential activity patterns are prominent, addressing the following key challenges: (i) obtaining control over temporal rescaling of the sequence speed, with the ability to generalize to new speeds; (ii) facilitating flexible expression of distinct sequences via selective activation, concatenation, and recycling of specific subsequences; and (iii) enabling the biologically plausible learning of sequences, consistent with the decoupling of learning and execution suggested by lesion studies showing that cortical circuits are necessary for learning, but that subcortical circuits are sufficient to drive learned behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Hahnloser et al., 2002; Kozhevnikov and Fee, 2007) that observed these patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "d815c086-5831-4506-8907-ce2862f581ed",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C5",
+      "claim": "Neural activity sequences have been shown to temporally rescale as behavior speeds up and slows down.",
+      "claim_type": "EXPLICIT",
+      "source": "First, these sequences have been shown to temporally rescale (i.e., contract and dilate) as behavior speeds up and slows down (Mello et al., 2015; Gouv\u00eaa et al., 2015), while human psychophysics experiments have shown that after learning a behavior (e.g., an arm reach trajectory) at one speed of execution, it can be reliably expressed at other speeds without additional learning (Goodbody and Wolpert, 1998; Joiner et al., 2011; Shmuelof et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Mello et al., 2015; Gouv\u00eaa et al., 2015) that demonstrated temporal rescaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "b1c79ae3-d2f2-4531-84be-8e98d2158bd7",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C6",
+      "claim": "After learning a behavior at one speed of execution, it can be reliably expressed at other speeds without additional learning.",
+      "claim_type": "EXPLICIT",
+      "source": "First, these sequences have been shown to temporally rescale (i.e., contract and dilate) as behavior speeds up and slows down (Mello et al., 2015; Gouv\u00eaa et al., 2015), while human psychophysics experiments have shown that after learning a behavior (e.g., an arm reach trajectory) at one speed of execution, it can be reliably expressed at other speeds without additional learning (Goodbody and Wolpert, 1998; Joiner et al., 2011; Shmuelof et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to human psychophysics experiments (Goodbody and Wolpert, 1998; Joiner et al., 2011; Shmuelof et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "5c222efa-b18b-4496-8573-c37b7455f19b",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C7",
+      "claim": "The same neural circuits exhibit the capacity to flexibly generate different sequential activity patterns for different behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the same neural circuits exhibit the capacity to flexibly generate different sequential activity patterns for different behaviors (Pastalkova et al., 2008; Harvey et al., 2012; MacDonald et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Pastalkova et al., 2008; Harvey et al., 2012; MacDonald et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "b7b8b16d-b409-4036-b679-ce79e599c7f1",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C8",
+      "claim": "Lesion and inactivation experiments have been shown to prevent learning without impairing the expression of learned behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed in greater detail below, lesion and inactivation experiments have been shown to prevent learning without impairing the expression of learned behaviors (Miyachi et al., 1997; Kawai et al., 2015) suggesting that the neural circuitry of learning and execution can be decoupled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to lesion and inactivation experiments (Miyachi et al., 1997; Kawai et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "5904ecd0-49e2-4181-9cce-092e3c3567e9",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C9",
+      "claim": "Lesion and inactivation experiments suggest that the neural circuitry of learning and execution can be decoupled.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed in greater detail below, lesion and inactivation experiments have been shown to prevent learning without impairing the expression of learned behaviors (Miyachi et al., 1997; Kawai et al., 2015) suggesting that the neural circuitry of learning and execution can be decoupled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the cited lesion and inactivation experiments (Miyachi et al., 1997; Kawai et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "5d978544-3301-4798-ac9e-439cd9645e35",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C10",
+      "claim": "Cortical circuits are necessary for learning, but subcortical circuits are sufficient to drive learned behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Sparse, sequential patterns of neural activity have been observed in numerous brain areas during timekeeping and motor sequence tasks. Inspired by such observations, we construct a model of the striatum, an all-inhibitory circuit where sequential activity patterns are prominent, addressing the following key challenges: (i) obtaining control over temporal rescaling of the sequence speed, with the ability to generalize to new speeds; (ii) facilitating flexible expression of distinct sequences via selective activation, concatenation, and recycling of specific subsequences; and (iii) enabling the biologically plausible learning of sequences, consistent with the decoupling of learning and execution suggested by lesion studies showing that cortical circuits are necessary for learning, but that subcortical circuits are sufficient to drive learned behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lesion studies that are referenced in the context of decoupling learning and execution.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "d002f104-25db-4fcc-949c-4e532456579c",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C11",
+      "claim": "Sparse activity sequences have been observed in recurrently connected populations of inhibitory medium spiny neurons (MSNs) in rodents during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the basic mechanisms that we propose may be realized in any brain area where sequences have been observed, for a specific example and to compare to experimental results, we focus on neural activity in striatum, where sparse activity sequences have been observed in recurrently connected populations of inhibitory medium spiny neurons (MSNs) in rodents during locomotion (Rueda-Orozco and Robbe, 2015) and lever-press delay tasks (Mello et al., 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an experimental study (Rueda-Orozco and Robbe, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "7e26fc3b-caa3-49d4-b486-bf49cedf9902",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C12",
+      "claim": "Sparse activity sequences have been observed in recurrently connected populations of inhibitory medium spiny neurons (MSNs) in rodents during lever-press delay tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the basic mechanisms that we propose may be realized in any brain area where sequences have been observed, for a specific example and to compare to experimental results, we focus on neural activity in striatum, where sparse activity sequences have been observed in recurrently connected populations of inhibitory medium spiny neurons (MSNs) in rodents during locomotion (Rueda-Orozco and Robbe, 2015) and lever-press delay tasks (Mello et al., 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Mello et al., 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "4f230bfb-fb7c-437f-8b6f-6605901638e5",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C13",
+      "claim": "The striatum collects inputs from many areas of cortex and thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatum collects inputs from many areas of cortex and thalamus, plays an important part in controlling learned movements using its projections via the output structures of basal ganglia to motor thalamus and brainstem (Parent, 1990; Grillner and Robertson, 2015), and has a central role in reinforcement learning (Graybiel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Parent, 1990; Grillner and Robertson, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "b6c0c3ef-6ca0-415b-8601-466e93dd1f03",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C14",
+      "claim": "The striatum plays an important part in controlling learned movements using its projections via the output structures of basal ganglia to motor thalamus and brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatum collects inputs from many areas of cortex and thalamus, plays an important part in controlling learned movements using its projections via the output structures of basal ganglia to motor thalamus and brainstem (Parent, 1990; Grillner and Robertson, 2015), and has a central role in reinforcement learning (Graybiel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Parent, 1990; Grillner and Robertson, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "fa831671-caca-457a-94b2-160b21e8dd63",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C15",
+      "claim": "The striatum has a central role in reinforcement learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The striatum collects inputs from many areas of cortex and thalamus, plays an important part in controlling learned movements using its projections via the output structures of basal ganglia to motor thalamus and brainstem (Parent, 1990; Grillner and Robertson, 2015), and has a central role in reinforcement learning (Graybiel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a study (Graybiel, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "4529269e-3ec0-4337-84ea-d867c338413b",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C16",
+      "claim": "MSNs constitute over 90% of the neurons in striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "MSNs, which constitute over 90% of the neurons in striatum (Gerfen and Surmeier, 2011), exhibit stereotyped sequential firing patterns during learned motor sequences and learned behaviors in which timing plays an important role, with sparse firing sequences providing a seemingly ideal representation for encoding time and providing a rich temporal basis that can be read out by downstream circuits to determine behavior (Jin et al., 2009; Mello et al., 2015; Rueda-Orozco and Robbe, 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015; Bakhurin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a study (Gerfen and Surmeier, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "b19be17d-fb28-4dc7-9967-0d7707c8419c",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C17",
+      "claim": "MSNs exhibit stereotyped sequential firing patterns during learned motor sequences and learned behaviors in which timing plays an important role.",
+      "claim_type": "EXPLICIT",
+      "source": "MSNs, which constitute over 90% of the neurons in striatum (Gerfen and Surmeier, 2011), exhibit stereotyped sequential firing patterns during learned motor sequences and learned behaviors in which timing plays an important role, with sparse firing sequences providing a seemingly ideal representation for encoding time and providing a rich temporal basis that can be read out by downstream circuits to determine behavior (Jin et al., 2009; Mello et al., 2015; Rueda-Orozco and Robbe, 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015; Bakhurin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Jin et al., 2009; Mello et al., 2015; Rueda-Orozco and Robbe, 2015; Dhawale et al., 2015; Gouv\u00eaa et al., 2015; Bakhurin et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "bd05781a-f65d-460c-976b-4f7d56fe2d78",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C18",
+      "claim": "Neural activity in striatum has been shown in rodents to strongly correlate with time judgement in a fixed-interval lever-press task.",
+      "claim_type": "EXPLICIT",
+      "source": "Such neural activity has been shown in rodents to strongly correlate with time judgement in a fixed-interval lever-press task (Gouv\u00eaa et al., 2015), and with kinematic parameters such as the animal's position and speed in a task in which the animal was trained to remain on a treadmill for a particular length of time (Rueda-Orozco and Robbe, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an experimental study (Gouv\u00eaa et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "08e8d64b-90cf-465e-98ea-faa9ea09f7e2",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C19",
+      "claim": "Neural activity in striatum has been shown in rodents to correlate with kinematic parameters such as the animal's position and speed in a task in which the animal was trained to remain on a treadmill for a particular length of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Such neural activity has been shown in rodents to strongly correlate with time judgement in a fixed-interval lever-press task (Gouv\u00eaa et al., 2015), and with kinematic parameters such as the animal's position and speed in a task in which the animal was trained to remain on a treadmill for a particular length of time (Rueda-Orozco and Robbe, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an experimental study (Rueda-Orozco and Robbe, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "1831b9f5-51da-450c-b0fb-579774240159",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C20",
+      "claim": "Pharmacological attenuation of neural activity in sensorimotor striatum has been shown to impair behavior in timekeeping and motor sequence tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, pharmacological attenuation of neural activity in sensorimotor striatum has been shown to impair such behavior (Miyachi et al., 1997; Mello et al., 2015; Rueda-Orozco and Robbe, 2015), suggesting that sequential firing patterns in striatum are likely to play a causal role in an animal's ability to perform timekeeping and learned motor sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Miyachi et al., 1997; Mello et al., 2015; Rueda-Orozco and Robbe, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "d33870a3-e46a-4c63-a4d7-b4cc93cc093e",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C21",
+      "claim": "Sequential firing patterns in striatum are likely to play a causal role in an animal's ability to perform timekeeping and learned motor sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, pharmacological attenuation of neural activity in sensorimotor striatum has been shown to impair such behavior (Miyachi et al., 1997; Mello et al., 2015; Rueda-Orozco and Robbe, 2015), suggesting that sequential firing patterns in striatum are likely to play a causal role in an animal's ability to perform timekeeping and learned motor sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the cited pharmacological attenuation experiments (Miyachi et al., 1997; Mello et al., 2015; Rueda-Orozco and Robbe, 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "df70caeb-ed92-4cab-8e44-e3a8aef35826",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C22",
+      "claim": "Motor cortex is known to play a major role in both the learning and directing of motor behaviors such as limb movements in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "While motor cortex is also known to play a major role in both the learning and directing of motor behaviors such as limb movements in both primates (Fritsch and Hitzig, 1870; Georgopoulos et al., 1982, 1986; Moran and Schwartz, 1999; Kakei et al., 1999) and rodents (Wise and Donoghue, 1986; Kleim et al., 1998; Whishaw, 2000; Harrison et al., 2012), cortical lesion studies have long pointed to the ability of subcortical structures to direct a large repertoire of movements, particularly 'innate' movements and learned movements that don't require dexterous hand motion (Lawrence and Kuypers, 1968; Sorenson and Ellison, 1970; Bjursten et al., 1976; Passingham et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Fritsch and Hitzig, 1870; Georgopoulos et al., 1982, 1986; Moran and Schwartz, 1999; Kakei et al., 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "c648b194-e312-4e34-8829-61eb930bf7fe",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C23",
+      "claim": "Motor cortex is known to play a major role in both the learning and directing of motor behaviors such as limb movements in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "While motor cortex is also known to play a major role in both the learning and directing of motor behaviors such as limb movements in both primates (Fritsch and Hitzig, 1870; Georgopoulos et al., 1982, 1986; Moran and Schwartz, 1999; Kakei et al., 1999) and rodents (Wise and Donoghue, 1986; Kleim et al., 1998; Whishaw, 2000; Harrison et al., 2012), cortical lesion studies have long pointed to the ability of subcortical structures to direct a large repertoire of movements, particularly 'innate' movements and learned movements that don't require dexterous hand motion (Lawrence and Kuypers, 1968; Sorenson and Ellison, 1970; Bjursten et al., 1976; Passingham et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Wise and Donoghue, 1986; Kleim et al., 1998; Whishaw, 2000; Harrison et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "1f41d487-1868-4c05-b0f0-ef7e3dc7fa89",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C24",
+      "claim": "Cortical lesion studies have long pointed to the ability of subcortical structures to direct a large repertoire of movements, particularly 'innate' movements and learned movements that don't require dexterous hand motion.",
+      "claim_type": "EXPLICIT",
+      "source": "While motor cortex is also known to play a major role in both the learning and directing of motor behaviors such as limb movements in both primates (Fritsch and Hitzig, 1870; Georgopoulos et al., 1982, 1986; Moran and Schwartz, 1999; Kakei et al., 1999) and rodents (Wise and Donoghue, 1986; Kleim et al., 1998; Whishaw, 2000; Harrison et al., 2012), cortical lesion studies have long pointed to the ability of subcortical structures to direct a large repertoire of movements, particularly 'innate' movements and learned movements that don't require dexterous hand motion (Lawrence and Kuypers, 1968; Sorenson and Ellison, 1970; Bjursten et al., 1976; Passingham et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to cortical lesion studies (Lawrence and Kuypers, 1968; Sorenson and Ellison, 1970; Bjursten et al., 1976; Passingham et al., 1983).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "2fa148a8-9f09-4be6-9bba-ddd9306b5d88",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C25",
+      "claim": "Sequences of neural activity in the striatum exhibit the ability to temporally rescale their dynamics, dilating or contracting the sequence duration by up to a factor of five in proportion to the time-delay interval for obtaining a reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, sequences of neural activity in the striatum exhibit the ability to temporally rescale their dynamics, dilating or contracting the sequence duration by up to a factor of five in proportion to the time-delay interval for obtaining a reward (Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an experimental study (Mello et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "3d3edc9a-a042-4808-901f-fe176b3943db",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C26",
+      "claim": "Neural representations within striatum are specific to the behavior being performed and to the context in which it is executed.",
+      "claim_type": "EXPLICIT",
+      "source": "As in other brain areas, neural representations within striatum are specific to the behavior being performed and to the context in which it is executed (Jin and Costa, 2010; Tecuapetla et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Jin and Costa, 2010; Tecuapetla et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "6e782984-c04f-44c7-a411-b1ec6748668c",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C27",
+      "claim": "Rats are unable to learn precisely timed lever-press sequences when motor cortex is lesioned.",
+      "claim_type": "EXPLICIT",
+      "source": "Addressing the roles of cortical and striatal circuits in the learning and performance of motor skills, one set of recent studies has shown that rats are unable to learn precisely timed lever-press sequences when motor cortex is lesioned, but are able to successfully perform the sequence if the lesion occurs after the learning has already taken place (Kawai et al., 2015; Otchy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Kawai et al., 2015; Otchy et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "0771cb84-8c8c-467d-aed7-41dbcaff9ce2",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C28",
+      "claim": "Rats are able to successfully perform precisely timed lever-press sequences if the motor cortex lesion occurs after the learning has already taken place.",
+      "claim_type": "EXPLICIT",
+      "source": "Addressing the roles of cortical and striatal circuits in the learning and performance of motor skills, one set of recent studies has shown that rats are unable to learn precisely timed lever-press sequences when motor cortex is lesioned, but are able to successfully perform the sequence if the lesion occurs after the learning has already taken place (Kawai et al., 2015; Otchy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Kawai et al., 2015; Otchy et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "ff23cf1d-5f3d-470c-aaaa-e2df081b89d6",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C29",
+      "claim": "Motor cortex may act as a 'tutor' to subcortical brain circuits during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore suggested that motor cortex may act as a 'tutor' to subcortical brain circuits during learning, and that these lower brain circuits eventually internalize the activity pattern, allowing them to drive behavior without receiving further instruction from the tutor once the behavior has been learned (Kawai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a suggestion based on the cited experimental study (Kawai et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "3d68dd6d-0d5e-4a51-972e-33a147b3fe13",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C30",
+      "claim": "Subcortical brain circuits eventually internalize the activity pattern, allowing them to drive behavior without receiving further instruction from the tutor once the behavior has been learned.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore suggested that motor cortex may act as a 'tutor' to subcortical brain circuits during learning, and that these lower brain circuits eventually internalize the activity pattern, allowing them to drive behavior without receiving further instruction from the tutor once the behavior has been learned (Kawai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a suggestion based on the cited experimental study (Kawai et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "9cc22d75-8bf1-4ac5-84bc-38b59e8d6974",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C31",
+      "claim": "Synaptic depression exists at the inhibitory synapses between MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "A key element is the presence of synaptic depression at the inhibitory synapses between MSNs, which has been shown to exist experimentally (Tecuapetla et al., 2007) and which competes with the effect of feedforward excitatory input to determine the rate of switching of activity from one neuron cluster to the next.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an experimental study (Tecuapetla et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "782d2536-d591-4faf-a47d-ae3e7bd8363d",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C32",
+      "claim": "Recurrent inhibition can lead to a winner-take-all steady state in which a single unit or group of units becomes active and inhibits the other units in the network from becoming active.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to achieve sparse activity, we make use of the well-known fact that recurrent inhibition can lead to a winner-take-all steady state in which a single unit or group of units (where a unit consists of a cluster of MSNs) becomes active and inhibits the other units in the network from becoming active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is described as a well-known fact, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "7d244201-5627-4f7a-837a-bfbdf3fb143a",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C33",
+      "claim": "Recurrent inhibition is a hallmark feature of MSNs in striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recurrent inhibition is a hallmark feature of MSNs in striatum, and such a picture has previously been suggested to apply to striatum (Wickens et al., 1991; Beiser and Houk, 1998; Fukai, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Wickens et al., 1991; Beiser and Houk, 1998; Fukai, 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "d8b0c169-2208-4ddd-b721-113943c970b7",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C34",
+      "claim": "Individual inhibitory synapses between MSNs are relatively sparse and weak on the scale of the currents needed to drive spiking in these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual inhibitory synapses between MSNs are relatively sparse and weak on the scale of the currents needed to drive spiking in these neurons (Jaeger et al., 1994; Tepper et al., 2004), active populations of many MSNs firing together may more effectively mediate suppression between populations, in particular if these populations are also receiving sufficient background excitation from cortex and/or thalamus to keep them near the firing threshold (Ponzi and Wickens, 2010, 2013; Angulo-Garcia et al., 2016), possibly in a metastable depolarized 'up state' (Wilson, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Jaeger et al., 1994; Tepper et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "10ffb050-5077-4dc6-9d5a-5cb68a432174",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C35",
+      "claim": "Active populations of many MSNs firing together may more effectively mediate suppression between populations, in particular if these populations are also receiving sufficient background excitation from cortex and/or thalamus to keep them near the firing threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual inhibitory synapses between MSNs are relatively sparse and weak on the scale of the currents needed to drive spiking in these neurons (Jaeger et al., 1994; Tepper et al., 2004), active populations of many MSNs firing together may more effectively mediate suppression between populations, in particular if these populations are also receiving sufficient background excitation from cortex and/or thalamus to keep them near the firing threshold (Ponzi and Wickens, 2010, 2013; Angulo-Garcia et al., 2016), possibly in a metastable depolarized 'up state' (Wilson, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Ponzi and Wickens, 2010, 2013; Angulo-Garcia et al., 2016; Wilson, 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "9d6ac4c0-31cc-4e03-bfe3-6ffcf46ce81e",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C37",
+      "claim": "The magnitude of the constant external input can be used to control the rate of switching in the striatal model.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1c\u2013d show that the expected sequence of activity (which is repeating due to the fact that we also depotentiate the weight between the last and first units) is indeed obtained in such a network, and that the magnitude of the constant external input can be used to control the rate of switching.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "da690472-c782-4eaa-9787-b66e7d6d9167",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C38",
+      "claim": "The period of the activity sequence slows down tremendously as xin approaches the synaptic depression parameter \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The period of the activity sequence slows down tremendously as xin approaches the synaptic depression parameter \u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the mathematical model and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "14b5fb0f-c9c4-4dab-9913-278943d7412b",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C39",
+      "claim": "The external input from cortex and/or thalamus targets the particular subset of MSNs needed to express a particular behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We can extend the model described so far to multiple\u2014and even overlapping\u2014behaviors by positing that the external input from cortex and/or thalamus targets the particular subset of MSNs needed to express a particular behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a theoretical proposition based on the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "5d80f17a-67e8-44c9-a642-685ce8050ee2",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C40",
+      "claim": "The model dissociates the computations of the selection and expression of motor sequence behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "This model dissociates the computations of the selection and expression of motor sequence behaviors. The inputs to striatum select a sequence (possibly composed of several subsequences) by targeting a certain subpopulation of MSNs, and then the striatum converts this selection into a dynamical pattern of neural activity that expresses the behavior in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "11f74c5c-1bbd-4102-83ce-ccddfa751095",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C41",
+      "claim": "A striatal network with initially random connectivity can learn to produce sparse sequential activity patterns when driven by time-dependent cortical input.",
+      "claim_type": "EXPLICIT",
+      "source": "A striatal network with initially random connectivity can learn to produce sparse sequential activity patterns when driven by time-dependent cortical input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the model and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "d5691926-eacc-4150-853e-4b376f26c1bb",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C43",
+      "claim": "After the network has been trained, it is able to reproduce the same pattern of activity even after the time-dependent input is replaced by a constant excitatory input to all units.",
+      "claim_type": "EXPLICIT",
+      "source": "After the network has been trained in this way, it is able to reproduce the same pattern of activity even after the time-dependent input is replaced by a constant excitatory input to all units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the model and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "16d0515b-1266-4f4b-926f-268c5b823e67",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C45",
+      "claim": "The model has the advantage of being able to dynamically adjust the speed of the activity sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with these earlier works, our model has the advantage of being able to dynamically adjust the speed of the activity sequence, as shown in Figure 4e (cf. however Refs. [Veliz-Cuba et al., 2015; Pehlevan et al., 2015; Tristan et al., 2014], where some temporal rescaling in activity patterns has been obtained using distinct mechanisms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4e and comparison with other models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "3c0154e3-e2ff-471a-9065-1db77737bfa7",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C46",
+      "claim": "The model does not require the assumption of heterosynaptic competition limiting the summed synaptic weights into and out of each unit.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our model does not require the assumption of heterosynaptic competition limiting the summed synaptic weights into and out of each unit, as in Ref. (Fiete et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with another model (Fiete et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "7acbff1e-4e20-4567-8f8d-bf3aec79ea48",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C47",
+      "claim": "Time-varying input can lead to robust activity sequences, but this input is no longer necessary once the circuit has internalized the sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the above results show, within the context of a highly simplified network model, that time-varying input can lead to robust activity sequences, but that this input is no longer necessary once the circuit has internalized the sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the results from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "609cb63a-ef4f-4c8c-9611-f183582256b8",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C48",
+      "claim": "The speed of the dynamics can be adjusted using the overall level of external input to the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the speed of the dynamics can be adjusted using the overall level of external input to the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "6e53bdf3-3b3c-41ec-977c-49ba75da2c7d",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C49",
+      "claim": "The model provides a possible explanation of the motor cortex lesion studies of Ref. (Kawai et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken as a model of striatum, it therefore provides a possible explanation of the motor cortex lesion studies of Ref. (Kawai et al., 2015), as well as the variable-delay lever press experiments of Ref. (Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the model and comparison with experimental studies (Kawai et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "545b2406-8361-4461-b2d5-3ed9e09ba076",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C50",
+      "claim": "The model provides a possible explanation of the variable-delay lever press experiments of Ref. (Mello et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken as a model of striatum, it therefore provides a possible explanation of the motor cortex lesion studies of Ref. (Kawai et al., 2015), as well as the variable-delay lever press experiments of Ref. (Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the model and comparison with experimental studies (Mello et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "b58482ac-056c-4fa7-acc9-8f46488ed4bc",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C51",
+      "claim": "Temporally patterned input and recurrent plasticity can be used to train a recurrent inhibitory network having no initial structure in the recurrent weights to perform a particular firing sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 shows that, as in the continuous version of the model, temporally patterned input and recurrent plasticity can be used to train a recurrent inhibitory network having no initial structure in the recurrent weights to perform a particular firing sequence, with only one cluster of neurons active at any one time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "9b5f17b1-37f0-4f79-ba57-90b493031ee3",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C52",
+      "claim": "Recent experimental work has identified clusters of neurons in striatum that appear to function as transiently active cell assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experimental work has indeed identified clusters of neurons in striatum that appear to function as transiently active cell assemblies (Barbera et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an experimental study (Barbera et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "2e46f5a9-ff69-442e-95d2-84b80131f08d",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C53",
+      "claim": "Full connectivity between units can be easily obtained even if connectivity between neurons is sparse, since some neurons in one cluster will always have synapses to some neurons in any other cluster if the clusters are sufficiently large.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we interpret the units studied in the continuous case above as clusters of neurons rather than individual neurons, full connectivity between units can be easily obtained even if connectivity between neurons is sparse, since some neurons in one cluster will always have synapses to some neurons in any other cluster if the clusters are sufficiently large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "e86a9810-3950-4229-b7a1-9d65fdda0d30",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C54",
+      "claim": "Sparse connectivity between neurons is sufficient to enable one population to effectively inhibit another.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 5, the connection probability between all pairs of neurons is p=0.2, showing that sparse connectivity between neurons is sufficient to enable one population to effectively inhibit another, as in the continuous model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "6e1e7902-0daa-4493-8cbe-ba5339996f80",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C55",
+      "claim": "Similar sparse sequential activity patterns have been observed in motor cortex in rodents performing a learned lever-press task.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while the highly structured input used to train the network may at first appear highly artificial, we point out that similar sparse sequential activity patterns have been observed in motor cortex, which is a main input to striatum, in rodents performing a learned lever-press task (Peters et al., 2014; Dhawale et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Peters et al., 2014; Dhawale et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "45a4401e-ad7c-4c93-9fac-7c7add5630c8",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C56",
+      "claim": "Once the weights have been learned, constant input is sufficient to induce the desired firing pattern in the network, with the magnitude of this input controlling the rate at which the pattern progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as shown in Figure 5d,e, once the weights have been learned, constant input is sufficient to induce the desired firing pattern in the network, with the magnitude of this input controlling the rate at which the pattern progresses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "e7345981-fdd5-4207-9c18-bfb63236fe09",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C57",
+      "claim": "The spiking network is able to learn a firing pattern from an external source, and later autonomously generate the same pattern over a wide range of speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as for the continuous network studied in above, the spiking network is able to learn a firing pattern from an external source, and later autonomously generate the same pattern over a wide range of speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the results from the spiking model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "6916daa4-bb87-435d-96c8-7dbd2449fdd5",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C58",
+      "claim": "A network of excitatory units with shared inhibition can be made to produce variable-speed sequential patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, motivated by experimental results involving the basal ganglia, we have developed a model of recurrently connected inhibitory units, the same basic mechanisms for sequence learning can be applied to obtain sparse sequential firing patterns with flexible time encoding in a network of excitatory units with shared inhibition, a common motif used to obtain sparse coding of both static and dynamic neural activity patterns in models of cortical circuits. Such a network can be made to produce variable-speed sequential patterns just as in the circuit with direct lateral inhibition studied above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "63416e86-4556-458c-8ef3-71917818484c",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C60",
+      "claim": "The dynamic range of temporal scaling factors that can be obtained in the model with shared inhibition is somewhat more limited than in the model with direct lateral inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dynamic range of temporal scaling factors that can be obtained in this case is somewhat more limited than in the model with direct lateral inhibition, with an approximately four-fold speed increase obtained in Figure 6b, compared with over an order of magnitude obtained in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of data shown in Figure 6b and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "a7b679e1-3b0d-4bae-80d1-42a3aaf6f943",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C61",
+      "claim": "A purely inhibitory network, such as the one realized in striatum, may provide an advantage over an excitatory network with shared inhibition if involved in variable-speed tasks requiring a large dynamical range.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a purely inhibitory network, such as the the one realized in striatum, may provide an advantage over an excitatory network with shared inhibition if involved in variable-speed tasks requiring a large dynamical range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the comparison of the two models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "f867ed78-fc67-418e-919b-76586d16661c",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C62",
+      "claim": "The ability to generate variable-speed sequential activity patterns may be relevant for various frontal and motor cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to generate variable-speed sequential activity patterns may be relevant for various frontal and motor cortical areas, which can be described by the circuit architecture shown in Figure 6a, and which can exhibit sparse sequences similar to those in striatum during time-dependent decision making and motor-control tasks (Harvey et al., 2012; Peters et al., 2014; Dhawale et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Harvey et al., 2012; Peters et al., 2014; Dhawale et al., 2015) and the model presented.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "5e7a9236-84da-47d0-8553-1bed4353649f",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C63",
+      "claim": "The model may provide an explanation for recent experiments showing that sparse sequences of neural activity in striatum dilate and contract in proportion to the delay interval in timekeeping tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We have presented a model in which a network of recurrently connected inhibitory units internalize stereotyped sequential activity patterns based on temporally patterned input. Moreover, the same activity pattern can be reproduced after learning even after removing the temporally patterned input, and the speed of the activity pattern can be adjusted simply by varying the overall level of excitatory input, without requiring additional learning. As a model of striatum, we suggest that it may provide an explanation for recent experiments showing that (i) sparse sequences of neural activity in striatum dilate and contract in proportion to the delay interval in timekeeping tasks (Mello et al., 2015), and (ii) motor cortex is necessary to learn new behaviors but not to perform already-learned behaviors (which are presumably directed at least in part by subcortical brain circuits such as the striatum) (Kawai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the model and comparison with experimental studies (Mello et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "93df119f-7bb5-48b8-ba32-1b33ea1e6a19",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C64",
+      "claim": "The model may provide an explanation for experiments showing that motor cortex is necessary to learn new behaviors but not to perform already-learned behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We have presented a model in which a network of recurrently connected inhibitory units internalize stereotyped sequential activity patterns based on temporally patterned input. Moreover, the same activity pattern can be reproduced after learning even after removing the temporally patterned input, and the speed of the activity pattern can be adjusted simply by varying the overall level of excitatory input, without requiring additional learning. As a model of striatum, we suggest that it may provide an explanation for recent experiments showing that (i) sparse sequences of neural activity in striatum dilate and contract in proportion to the delay interval in timekeeping tasks (Mello et al., 2015), and (ii) motor cortex is necessary to learn new behaviors but not to perform already-learned behaviors (which are presumably directed at least in part by subcortical brain circuits such as the striatum) (Kawai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the model and comparison with experimental studies (Kawai et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "f6ebbea9-6dc5-4ed4-afc5-27a5b17ff86b",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C65",
+      "claim": "The network can rapidly switch between cortically-driven and autonomously-driven modes even after learning of a particular pattern has taken place.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 3, the network can rapidly switch between these modes even after learning of a particular pattern has taken place, perhaps somewhat similar to the switching between the 'practice' and 'performance' modes of male songbirds in the absence or presence of a female, respectively (Kao et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the model presented and comparison with songbird behavior (Kao et al., 2005).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "42ab92fd-eee0-4242-a126-7d1345998fc8",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C66",
+      "claim": "Important differences exist in rodents, monkeys, and humans between goal-directed and habitual behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also well known that important differences exist in rodents, monkeys, and humans between goal-directed and habitual behaviors (for reviews, see Refs. [Yin and Knowlton, 2006; Graybiel, 2008; Dolan and Dayan, 2013; Jahanshahi et al., 2015]), and exploring the relation between these behavioral modes and the cortically and non-cortically driven modes described above is an important direction for future study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is described as well known and supported by citations to review articles (Yin and Knowlton, 2006; Graybiel, 2008; Dolan and Dayan, 2013; Jahanshahi et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "54853eed-fb70-4c0b-8623-91b4d50de7d5",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C67",
+      "claim": "Corticostriatal plasticity is important for reward-based learning of motor behaviors in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the function of cortical input is to select from a set of possible learned behaviors as illustrated in Figure 2, we can ask what might be the potential role of corticostriatal plasticity, which many studies have shown is important for reward-based learning of motor behaviors in rodents, making these synapses a likely site for reinforcement learning (Reynolds et al., 2001; Barnes et al., 2005; Yin et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to experimental studies (Reynolds et al., 2001; Barnes et al., 2005; Yin et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "5e9bfede-4c65-4917-9d50-f006e554e355",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C68",
+      "claim": "Corticostriatal synapses are a likely site for reinforcement learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the function of cortical input is to select from a set of possible learned behaviors as illustrated in Figure 2, we can ask what might be the potential role of corticostriatal plasticity, which many studies have shown is important for reward-based learning of motor behaviors in rodents, making these synapses a likely site for reinforcement learning (Reynolds et al., 2001; Barnes et al., 2005; Yin et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on the cited experimental studies (Reynolds et al., 2001; Barnes et al., 2005; Yin et al., 2009).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "a1a19826-6deb-4e20-a25c-ad76c547bfd5",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C69",
+      "claim": "The basal ganglia circuit is important for controlling the 'vigor' associated with movements.",
+      "claim_type": "EXPLICIT",
+      "source": "If a behavior leads to a greater-than-expected reward, then a (possibly dopamine-mediated) feedback signal can cause the recently active corticostriatal synapses to be strengthened, making that behavior more likely to be performed in that particular context in the future, lowering the threshold for activation and possibly speeding up the activity sequence underlying a desired behavior, making the basal ganglia circuit important for controlling the 'vigor' associated with movements (Yttri and Dudman, 2016; Dudman and Krakauer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Yttri and Dudman, 2016; Dudman and Krakauer, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "f4791cd9-90d2-4b13-950c-1d391457d973",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C70",
+      "claim": "Corticostriatal plasticity is likely involved with action selection and degree of vigor, whereas MSN-to-MSN plasticity may be more important for encoding kinematic details of a given behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the model that we have developed focuses on plasticity within striatum rather than corticostriatal plasticity, it is worth emphasizing that it is consistent with both types of plasticity being present, with corticostriatal plasticity likely involved with action selection and degree of vigor, whereas MSN-to-MSN plasticity may be more important for encoding kinematic details of a given behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on the model and existing knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "061efed7-f9aa-4479-91ef-2d63b476b2cf",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C71",
+      "claim": "Recurrent synapses in medium spiny neurons potentiate when presynaptic spiking is induced without postsynaptic spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Central to the model is the anti-Hebbian plasticity rule that enables the inhibitory network to learn sequential patterns. Experimental results on medium spiny neurons in vitro have shown that recurrent synapses do in fact potentiate when presynaptic spiking is induced without postsynaptic spiking (Rueda-Orozco et al., 2009), as one would expect from the second term in (2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an experimental study (Rueda-Orozco et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "51813dd6-e1fc-4f94-8dfe-8e9bc77fe1b8",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C72",
+      "claim": "Both Hebbian and anti-Hebbian forms of STDP at inhibitory synapses have been found in other brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Hebbian and anti-Hebbian forms of STDP at inhibitory synapses have been found in other brain areas, as reviewed in Ref. (Vogels et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article (Vogels et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "614040d7-3906-4c0e-9dc0-3fcaf9255370",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C73",
+      "claim": "The overall level of external excitatory input to the network should affect the speed of the animal's time judgement and/or behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also predicts that the overall level of external excitatory input to the network should affect the speed of the animal's time judgement and/or behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "d5365848-0c91-48c4-8023-6b70221d3a9d",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C74",
+      "claim": "Dopamine may be able to cause a change of the sequence speed by modifying the synaptic depression parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, dopamine may be able to cause a change of the sequence speed by modifying the synaptic depression parameter (\u03b2 in our model), and there is evidence from in vitro experiments that this indeed occurs (Tecuapetla et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation supported by citation to an experimental study (Tecuapetla et al., 2007).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "581cb85d-af76-4a95-8e06-c9aa462d9433",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C75",
+      "claim": "Changes in tonic dopamine levels should be able to effect temporal rescaling by modulating the input gain and/or recurrent synaptic depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus changes in tonic dopamine levels should be able to effect temporal rescaling by modulating the input gain and/or recurrent synaptic depression, and indeed there has already been some evidence that such dopamine modulation occurs (Soares et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on the model and supported by citation to an experimental study (Soares et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "9ebe72ba-1503-4df0-951d-a6d8bbb6c83a",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C76",
+      "claim": "The theory predicts that the neural activity pattern in striatum should be the same in trained animals before and after cortical lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory also predicts that the neural activity pattern in striatum should be the same in trained animals before and after cortical lesions and that this neural activity should play a role in driving the animal's behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "33cb95b2-3fe0-412b-97c2-5156031b51b4",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C77",
+      "claim": "Neural activity in striatum should play a role in driving the animal's behavior after cortical lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory also predicts that the neural activity pattern in striatum should be the same in trained animals before and after cortical lesions and that this neural activity should play a role in driving the animal's behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "8c9febd5-7ac7-49f0-afc5-3b5594eba5b9",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "claim_id": "C78",
+      "claim": "The theory suggests that time-dependent variability in cortical input is likely to decrease as an animal becomes more expert at performing a task, or as it switches between behavioral modes.",
+      "claim_type": "EXPLICIT",
+      "source": "The theory suggests that time-dependent variability in cortical input is likely to decrease as an animal becomes more expert at performing a task, or as it switches between behavioral modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1848fa58-68e4-4938-8769-3dca6e4d65fc",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sparse, sequential patterns of neural activity have been observed across multiple brain regions (cortex, basal ganglia, hippocampus, and songbird HVC) during timekeeping and motor sequence tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 collectively establish the widespread observation of sparse sequential activity patterns across diverse brain areas, supported by multiple experimental citations. These are well-established prior findings that motivate the current modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "097d331a-7364-4cb7-a1f2-994cd217fc3e",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Neural activity sequences temporally rescale with behavior speed, and learned behaviors can be expressed at new speeds without additional learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 describe experimentally observed temporal rescaling in neural sequences (Mello et al., 2015; Gouv\u00eaa et al., 2015) and behavioral generalization to new speeds (Goodbody and Wolpert, 1998; Joiner et al., 2011; Shmuelof et al., 2012). These are well-cited prior findings establishing key constraints for the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "c3af62f4-1d1d-4cf9-be3d-9ab652e6927e",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neural circuits can flexibly generate different sequential activity patterns for different behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is supported by multiple experimental citations (Pastalkova et al., 2008; Harvey et al., 2012; MacDonald et al., 2013) demonstrating behavioral flexibility in sequence generation, establishing another key constraint for the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lesion studies demonstrate that cortical circuits are necessary for learning motor sequences but subcortical circuits are sufficient for executing learned behaviors, suggesting a 'cortical tutor' model where motor cortex teaches subcortical structures during learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 and C27-C30 collectively describe the dissociation between learning and execution circuits based on lesion experiments (Miyachi et al., 1997; Kawai et al., 2015; Otchy et al., 2015). The experimental evidence is well-cited, though the 'tutor' interpretation (C29-C30) is an inference from the data rather than direct observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "c51af227-7c19-44d9-acc3-7977bf327fd9",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Medium spiny neurons (MSNs) in striatum, which constitute over 90% of striatal neurons, exhibit sparse sequential firing patterns during motor tasks that correlate with timing and kinematic parameters, and pharmacological attenuation impairs behavior, suggesting a causal role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C16-C21 establish the experimental basis for focusing on striatal MSNs, supported by multiple citations. The causal inference (C21) is reasonable given the pharmacological manipulation data, though it remains correlational rather than definitively causal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "ed3ba2ec-1b7e-4b52-9e3f-d470c30fed36",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The striatum receives inputs from cortex and thalamus, controls learned movements via basal ganglia output pathways, and plays a central role in reinforcement learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 describe well-established anatomical and functional properties of striatum, supported by appropriate citations. These provide essential background for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "c5d6b25d-7f35-421d-a4fb-62fffca08c50",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Motor cortex plays a major role in learning and directing motor behaviors in both primates and rodents, but lesion studies show subcortical structures can direct many movements, particularly non-dexterous learned movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 establish the dual role of cortical and subcortical structures in motor control, supported by extensive citations spanning historical and recent work. This provides context for the cortical-subcortical interaction model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "21360bfc-4310-4e38-80cb-03ad0535d443",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Striatal neural sequences can temporally rescale by up to five-fold in proportion to reward delay intervals, and neural representations are behavior- and context-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 describe key experimental observations (Mello et al., 2015; Jin and Costa, 2010; Tecuapetla et al., 2014) that directly motivate the model's design features for temporal rescaling and behavioral flexibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "f908d484-51fa-4b6a-b457-1a5b8694276d",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Synaptic depression exists at MSN-MSN inhibitory synapses, and while individual synapses are weak, recurrent inhibition can produce winner-take-all dynamics when populations of MSNs fire together with sufficient background excitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 establish the biological basis for the model's key mechanism. Synaptic depression is experimentally verified (Tecuapetla et al., 2007), and the population-level inhibition mechanism is supported by modeling studies (Ponzi and Wickens, 2010, 2013; Angulo-Garcia et al., 2016), though direct experimental validation of population-level winner-take-all dynamics in striatum is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "ad98afa9-0b78-48d5-a300-7582653d7404",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In the model, the magnitude of constant external input controls the rate of activity switching between units, with the sequence period slowing dramatically as input approaches the synaptic depression parameter \u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C48 describe the core temporal control mechanism demonstrated in Figure 1c-d. The mathematical relationship is derived analytically and confirmed numerically, showing robust control over sequence speed spanning more than an order of magnitude.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "6f6090e0-449c-48b5-ab97-5caa981c92df",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model dissociates sequence selection from execution by having external input target specific MSN subpopulations to select behaviors, while striatal dynamics express the temporal pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 describe a theoretical framework demonstrated in Figure 2. The model successfully shows how targeted input can select among multiple learned sequences, though this remains a computational demonstration rather than experimentally validated prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "bc9be385-4ab7-4c3e-8ec2-5fb82f3166b8",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A striatal network with initially random connectivity can learn sparse sequential activity patterns from time-dependent cortical input via anti-Hebbian plasticity, and after learning can reproduce the pattern autonomously with only constant input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C43, and C47 describe the learning mechanism demonstrated in Figures 4-5. The model successfully shows that anti-Hebbian plasticity can structure initially random connectivity to produce learned sequences that persist after removal of patterned input, addressing the cortical tutor hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "32de751f-bff7-494d-9bec-ced2c356a884",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model can dynamically adjust sequence speed without relearning and does not require heterosynaptic competition constraints, providing advantages over previous sequence generation models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 establish advantages over prior models (Fiete et al., 2010; Veliz-Cuba et al., 2015). Figure 4e demonstrates speed control over more than an order of magnitude, and the model's mathematical structure avoids the need for weight normalization constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "0fcfc68d-c077-4424-824d-48eca48f182f",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A spiking network implementation with sparse connectivity (p=0.2) can learn sequences via anti-Hebbian STDP and autonomously generate the pattern at variable speeds controlled by tonic input magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C54, C56-C57 describe the spiking model results shown in Figure 5. The implementation successfully demonstrates that the continuous model's principles translate to biologically realistic spiking neurons with sparse connectivity, strengthening the model's biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "d92070c0-65c9-4895-9ce5-5ffbfd6986f8",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The same mechanisms can be applied to excitatory networks with shared inhibition, but the dynamic range of temporal scaling is more limited (approximately four-fold) compared to direct lateral inhibition (over ten-fold), suggesting purely inhibitory networks may be advantageous for large dynamic range tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C60-C61 describe the alternative architecture shown in Figure 6. The comparison is mathematically derived and numerically demonstrated, though the inference about functional advantage (C61) is speculative and would require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "cffcf80f-bd68-4b7b-83dd-800a8ba6c0c3",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model provides a possible mechanistic explanation for experimental observations that striatal sequences rescale with delay intervals and that motor cortex is necessary for learning but not executing learned behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 and C63-C64 connect the model to key experimental findings (Mello et al., 2015; Kawai et al., 2015). The model successfully reproduces the qualitative features of these experiments, though it remains a computational demonstration rather than direct experimental validation of the proposed mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "9a51063d-55b9-42d9-b551-90acf8e9f0ee",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Recent experiments have identified neuron clusters in striatum functioning as cell assemblies, and sparse neuron-to-neuron connectivity can achieve full unit-to-unit connectivity when units represent sufficiently large clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 cites experimental evidence for cell assemblies (Barbera et al., 2016), and C53 provides logical reasoning for how the model's unit-level connectivity maps to sparse neuron-level connectivity. The reasoning is sound given the cluster interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "480b2b7e-e76d-4b98-8fe7-61a72bb1a017",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Similar sparse sequential activity patterns have been observed in motor cortex of rodents performing learned lever-press tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by experimental citations (Peters et al., 2014; Dhawale et al., 2015), providing justification for the structured input patterns used in the model's learning phase.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "2a7f995c-d651-4780-b4b9-18ce295348ec",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The ability to generate variable-speed sequential activity patterns may be relevant for frontal and motor cortical areas that exhibit similar sparse sequences during decision-making and motor control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 extends the model's relevance beyond striatum, supported by citations showing similar activity patterns in cortex (Harvey et al., 2012; Peters et al., 2014; Dhawale et al., 2015). This is a reasonable inference though remains speculative without direct testing in cortical circuits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "665a52bc-196a-4498-8a61-c020ab3eed26",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The network can rapidly switch between cortically-driven and autonomously-driven modes after learning, analogous to practice versus performance modes in songbirds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 describes a model feature demonstrated in Figure 3, with an analogy to songbird behavior (Kao et al., 2005). The model successfully shows mode switching, though the songbird analogy is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "6087db23-6383-4ccc-b7e8-80bfa03f2b52",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Important differences exist between goal-directed and habitual behaviors across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 cites review articles establishing this as well-known background knowledge. This provides context for discussing potential relationships to the model's cortically-driven versus autonomous modes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "0862cb96-0dd2-4155-a0c5-a33f6a7b5df2",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Corticostriatal plasticity is important for reward-based learning and likely involved in action selection and vigor control, while MSN-to-MSN plasticity may encode kinematic details.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 are supported by experimental citations (Reynolds et al., 2001; Barnes et al., 2005; Yin et al., 2009; Yttri and Dudman, 2016; Dudman and Krakauer, 2016), but C70's functional distinction between plasticity types is speculative and not directly tested in the model or experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "75eec2b8-93ff-4765-ad3a-a8076a4fd516",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Recurrent MSN synapses potentiate when presynaptic spiking occurs without postsynaptic spiking, and both Hebbian and anti-Hebbian STDP forms exist at inhibitory synapses in various brain areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by experimental evidence (Rueda-Orozco et al., 2009) for one component of the anti-Hebbian rule, and C72 cites a review (Vogels et al., 2013) showing diverse STDP forms exist. However, the full anti-Hebbian rule (including depression with coincident spiking) remains experimentally unverified in MSNs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "93c7a444-153a-449e-93bd-6e524dcaaf21",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The model predicts that external input level and dopamine modulation of synaptic depression should affect sequence speed and temporal rescaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 present testable predictions from the model. C74 has some experimental support (Tecuapetla et al., 2007; Soares et al., 2016) for dopamine effects on synaptic depression, making these reasonable predictions, though they remain to be directly tested in the context of sequence timing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    },
+    {
+      "id": "1052faf3-0821-4a67-a0c2-4e318d29d5d5",
+      "content_id": "a2206d1a-94df-4119-9b73-122aad5144ff",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The model predicts that striatal activity patterns should be preserved after cortical lesions in trained animals and that cortical input variability should decrease with expertise or mode switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 present testable predictions that follow logically from the model's structure. These are clear, falsifiable predictions that could validate or refute key aspects of the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:01:37.976330Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "887175e0-7b8f-43ba-addf-31f4015eef6f",
+      "result_id": "1848fa58-68e4-4938-8769-3dca6e4d65fc"
+    },
+    {
+      "claim_id": "5fac4b3f-5cea-4a6a-b8aa-04e138da134e",
+      "result_id": "1848fa58-68e4-4938-8769-3dca6e4d65fc"
+    },
+    {
+      "claim_id": "56d85d6b-84e2-4bc2-9ef8-9cd5f097af0b",
+      "result_id": "1848fa58-68e4-4938-8769-3dca6e4d65fc"
+    },
+    {
+      "claim_id": "2798d3eb-f4ae-45bc-880b-9671012281e4",
+      "result_id": "1848fa58-68e4-4938-8769-3dca6e4d65fc"
+    },
+    {
+      "claim_id": "d815c086-5831-4506-8907-ce2862f581ed",
+      "result_id": "097d331a-7364-4cb7-a1f2-994cd217fc3e"
+    },
+    {
+      "claim_id": "b1c79ae3-d2f2-4531-84be-8e98d2158bd7",
+      "result_id": "097d331a-7364-4cb7-a1f2-994cd217fc3e"
+    },
+    {
+      "claim_id": "5c222efa-b18b-4496-8573-c37b7455f19b",
+      "result_id": "c3af62f4-1d1d-4cf9-be3d-9ab652e6927e"
+    },
+    {
+      "claim_id": "b7b8b16d-b409-4036-b679-ce79e599c7f1",
+      "result_id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6"
+    },
+    {
+      "claim_id": "5904ecd0-49e2-4181-9cce-092e3c3567e9",
+      "result_id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6"
+    },
+    {
+      "claim_id": "5d978544-3301-4798-ac9e-439cd9645e35",
+      "result_id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6"
+    },
+    {
+      "claim_id": "6e782984-c04f-44c7-a411-b1ec6748668c",
+      "result_id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6"
+    },
+    {
+      "claim_id": "0771cb84-8c8c-467d-aed7-41dbcaff9ce2",
+      "result_id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6"
+    },
+    {
+      "claim_id": "ff23cf1d-5f3d-470c-aaaa-e2df081b89d6",
+      "result_id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6"
+    },
+    {
+      "claim_id": "3d68dd6d-0d5e-4a51-972e-33a147b3fe13",
+      "result_id": "811f0f91-7e8f-40b8-b3a3-1374e313c4a6"
+    },
+    {
+      "claim_id": "d002f104-25db-4fcc-949c-4e532456579c",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "7e26fc3b-caa3-49d4-b486-bf49cedf9902",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "4529269e-3ec0-4337-84ea-d867c338413b",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "b19be17d-fb28-4dc7-9967-0d7707c8419c",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "bd05781a-f65d-460c-976b-4f7d56fe2d78",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "08e8d64b-90cf-465e-98ea-faa9ea09f7e2",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "1831b9f5-51da-450c-b0fb-579774240159",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "d33870a3-e46a-4c63-a4d7-b4cc93cc093e",
+      "result_id": "c51af227-7c19-44d9-acc3-7977bf327fd9"
+    },
+    {
+      "claim_id": "4f230bfb-fb7c-437f-8b6f-6605901638e5",
+      "result_id": "ed3ba2ec-1b7e-4b52-9e3f-d470c30fed36"
+    },
+    {
+      "claim_id": "b6c0c3ef-6ca0-415b-8601-466e93dd1f03",
+      "result_id": "ed3ba2ec-1b7e-4b52-9e3f-d470c30fed36"
+    },
+    {
+      "claim_id": "fa831671-caca-457a-94b2-160b21e8dd63",
+      "result_id": "ed3ba2ec-1b7e-4b52-9e3f-d470c30fed36"
+    },
+    {
+      "claim_id": "df70caeb-ed92-4cab-8e44-e3a8aef35826",
+      "result_id": "c5d6b25d-7f35-421d-a4fb-62fffca08c50"
+    },
+    {
+      "claim_id": "c648b194-e312-4e34-8829-61eb930bf7fe",
+      "result_id": "c5d6b25d-7f35-421d-a4fb-62fffca08c50"
+    },
+    {
+      "claim_id": "1f41d487-1868-4c05-b0f0-ef7e3dc7fa89",
+      "result_id": "c5d6b25d-7f35-421d-a4fb-62fffca08c50"
+    },
+    {
+      "claim_id": "2fa148a8-9f09-4be6-9bba-ddd9306b5d88",
+      "result_id": "21360bfc-4310-4e38-80cb-03ad0535d443"
+    },
+    {
+      "claim_id": "3d3edc9a-a042-4808-901f-fe176b3943db",
+      "result_id": "21360bfc-4310-4e38-80cb-03ad0535d443"
+    },
+    {
+      "claim_id": "9cc22d75-8bf1-4ac5-84bc-38b59e8d6974",
+      "result_id": "f908d484-51fa-4b6a-b457-1a5b8694276d"
+    },
+    {
+      "claim_id": "782d2536-d591-4faf-a47d-ae3e7bd8363d",
+      "result_id": "f908d484-51fa-4b6a-b457-1a5b8694276d"
+    },
+    {
+      "claim_id": "7d244201-5627-4f7a-837a-bfbdf3fb143a",
+      "result_id": "f908d484-51fa-4b6a-b457-1a5b8694276d"
+    },
+    {
+      "claim_id": "d8b0c169-2208-4ddd-b721-113943c970b7",
+      "result_id": "f908d484-51fa-4b6a-b457-1a5b8694276d"
+    },
+    {
+      "claim_id": "10ffb050-5077-4dc6-9d5a-5cb68a432174",
+      "result_id": "f908d484-51fa-4b6a-b457-1a5b8694276d"
+    },
+    {
+      "claim_id": "9d6ac4c0-31cc-4e03-bfe3-6ffcf46ce81e",
+      "result_id": "ad98afa9-0b78-48d5-a300-7582653d7404"
+    },
+    {
+      "claim_id": "da690472-c782-4eaa-9787-b66e7d6d9167",
+      "result_id": "ad98afa9-0b78-48d5-a300-7582653d7404"
+    },
+    {
+      "claim_id": "609cb63a-ef4f-4c8c-9611-f183582256b8",
+      "result_id": "ad98afa9-0b78-48d5-a300-7582653d7404"
+    },
+    {
+      "claim_id": "14b5fb0f-c9c4-4dab-9913-278943d7412b",
+      "result_id": "6f6090e0-449c-48b5-ab97-5caa981c92df"
+    },
+    {
+      "claim_id": "5d80f17a-67e8-44c9-a642-685ce8050ee2",
+      "result_id": "6f6090e0-449c-48b5-ab97-5caa981c92df"
+    },
+    {
+      "claim_id": "11f74c5c-1bbd-4102-83ce-ccddfa751095",
+      "result_id": "bc9be385-4ab7-4c3e-8ec2-5fb82f3166b8"
+    },
+    {
+      "claim_id": "d5691926-eacc-4150-853e-4b376f26c1bb",
+      "result_id": "bc9be385-4ab7-4c3e-8ec2-5fb82f3166b8"
+    },
+    {
+      "claim_id": "7acbff1e-4e20-4567-8f8d-bf3aec79ea48",
+      "result_id": "bc9be385-4ab7-4c3e-8ec2-5fb82f3166b8"
+    },
+    {
+      "claim_id": "16d0515b-1266-4f4b-926f-268c5b823e67",
+      "result_id": "32de751f-bff7-494d-9bec-ced2c356a884"
+    },
+    {
+      "claim_id": "3c0154e3-e2ff-471a-9065-1db77737bfa7",
+      "result_id": "32de751f-bff7-494d-9bec-ced2c356a884"
+    },
+    {
+      "claim_id": "b58482ac-056c-4fa7-acc9-8f46488ed4bc",
+      "result_id": "0fcfc68d-c077-4424-824d-48eca48f182f"
+    },
+    {
+      "claim_id": "e86a9810-3950-4229-b7a1-9d65fdda0d30",
+      "result_id": "0fcfc68d-c077-4424-824d-48eca48f182f"
+    },
+    {
+      "claim_id": "45a4401e-ad7c-4c93-9fac-7c7add5630c8",
+      "result_id": "0fcfc68d-c077-4424-824d-48eca48f182f"
+    },
+    {
+      "claim_id": "e7345981-fdd5-4207-9c18-bfb63236fe09",
+      "result_id": "0fcfc68d-c077-4424-824d-48eca48f182f"
+    },
+    {
+      "claim_id": "6916daa4-bb87-435d-96c8-7dbd2449fdd5",
+      "result_id": "d92070c0-65c9-4895-9ce5-5ffbfd6986f8"
+    },
+    {
+      "claim_id": "63416e86-4556-458c-8ef3-71917818484c",
+      "result_id": "d92070c0-65c9-4895-9ce5-5ffbfd6986f8"
+    },
+    {
+      "claim_id": "a7b679e1-3b0d-4bae-80d1-42a3aaf6f943",
+      "result_id": "d92070c0-65c9-4895-9ce5-5ffbfd6986f8"
+    },
+    {
+      "claim_id": "6e53bdf3-3b3c-41ec-977c-49ba75da2c7d",
+      "result_id": "cffcf80f-bd68-4b7b-83dd-800a8ba6c0c3"
+    },
+    {
+      "claim_id": "545b2406-8361-4461-b2d5-3ed9e09ba076",
+      "result_id": "cffcf80f-bd68-4b7b-83dd-800a8ba6c0c3"
+    },
+    {
+      "claim_id": "5e7a9236-84da-47d0-8553-1bed4353649f",
+      "result_id": "cffcf80f-bd68-4b7b-83dd-800a8ba6c0c3"
+    },
+    {
+      "claim_id": "93df119f-7bb5-48b8-ba32-1b33ea1e6a19",
+      "result_id": "cffcf80f-bd68-4b7b-83dd-800a8ba6c0c3"
+    },
+    {
+      "claim_id": "9b5f17b1-37f0-4f79-ba57-90b493031ee3",
+      "result_id": "9a51063d-55b9-42d9-b551-90acf8e9f0ee"
+    },
+    {
+      "claim_id": "2e46f5a9-ff69-442e-95d2-84b80131f08d",
+      "result_id": "9a51063d-55b9-42d9-b551-90acf8e9f0ee"
+    },
+    {
+      "claim_id": "6e1e7902-0daa-4493-8cbe-ba5339996f80",
+      "result_id": "480b2b7e-e76d-4b98-8fe7-61a72bb1a017"
+    },
+    {
+      "claim_id": "f867ed78-fc67-418e-919b-76586d16661c",
+      "result_id": "2a7f995c-d651-4780-b4b9-18ce295348ec"
+    },
+    {
+      "claim_id": "f6ebbea9-6dc5-4ed4-afc5-27a5b17ff86b",
+      "result_id": "665a52bc-196a-4498-8a61-c020ab3eed26"
+    },
+    {
+      "claim_id": "42ab92fd-eee0-4242-a126-7d1345998fc8",
+      "result_id": "6087db23-6383-4ccc-b7e8-80bfa03f2b52"
+    },
+    {
+      "claim_id": "54853eed-fb70-4c0b-8623-91b4d50de7d5",
+      "result_id": "0862cb96-0dd2-4155-a0c5-a33f6a7b5df2"
+    },
+    {
+      "claim_id": "5e9bfede-4c65-4917-9d50-f006e554e355",
+      "result_id": "0862cb96-0dd2-4155-a0c5-a33f6a7b5df2"
+    },
+    {
+      "claim_id": "a1a19826-6deb-4e20-a25c-ad76c547bfd5",
+      "result_id": "0862cb96-0dd2-4155-a0c5-a33f6a7b5df2"
+    },
+    {
+      "claim_id": "f4791cd9-90d2-4b13-950c-1d391457d973",
+      "result_id": "0862cb96-0dd2-4155-a0c5-a33f6a7b5df2"
+    },
+    {
+      "claim_id": "061efed7-f9aa-4479-91ef-2d63b476b2cf",
+      "result_id": "75eec2b8-93ff-4765-ad3a-a8076a4fd516"
+    },
+    {
+      "claim_id": "51813dd6-e1fc-4f94-8dfe-8e9bc77fe1b8",
+      "result_id": "75eec2b8-93ff-4765-ad3a-a8076a4fd516"
+    },
+    {
+      "claim_id": "614040d7-3906-4c0e-9dc0-3fcaf9255370",
+      "result_id": "93c7a444-153a-449e-93bd-6e524dcaaf21"
+    },
+    {
+      "claim_id": "d5365848-0c91-48c4-8023-6b70221d3a9d",
+      "result_id": "93c7a444-153a-449e-93bd-6e524dcaaf21"
+    },
+    {
+      "claim_id": "581cb85d-af76-4a95-8e06-c9aa462d9433",
+      "result_id": "93c7a444-153a-449e-93bd-6e524dcaaf21"
+    },
+    {
+      "claim_id": "9ebe72ba-1503-4df0-951d-a6d8bbb6c83a",
+      "result_id": "1052faf3-0821-4a67-a0c2-4e318d29d5d5"
+    },
+    {
+      "claim_id": "33cb95b2-3fe0-412b-97c2-5156031b51b4",
+      "result_id": "1052faf3-0821-4a67-a0c2-4e318d29d5d5"
+    },
+    {
+      "claim_id": "8c9febd5-7ac7-49f0-afc5-3b5594eba5b9",
+      "result_id": "1052faf3-0821-4a67-a0c2-4e318d29d5d5"
+    }
+  ],
+  "comparisons": []
+}

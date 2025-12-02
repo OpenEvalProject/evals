@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "HIO epithelium transcriptionally resembles immature/fetal human intestinal epithelium. RNA-seq analysis demonstrates that in vitro HIO epithelium correlates more strongly with fetal small intestinal epithelium than adult epithelium (p=5.06\u00d710\u207b\u2079), while transplanted HIO epithelium shows a shift toward adult transcriptome. PCA reveals that developmental stage (PC1, 27.75% variance) and tissue maturation status (PC2, 21.49% variance) are major sources of transcriptional variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C45 provide convergent evidence from multiple analytical approaches (correlation analysis, PCA, differential expression) all supporting the conclusion that HIO epithelium resembles fetal intestine. The statistical significance is strong (p-values ranging from 10\u207b\u2074 to 10\u207b\u00b2\u2078), sample sizes appear adequate (multiple biological replicates), and the analyses are appropriate for RNA-seq data. The shift toward adult transcriptome upon transplantation (C38, C45) provides additional validation of the model system's developmental trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "HIOs can be stably colonized with non-pathogenic E. coli in vitro. Microinjection of E. coli into HIO lumens results in stable bacterial colonization with 77.8% success at 5 CFU/HIO and 100% success at \u2265100 CFU/HIO. Bacteria exhibit rapid expansion in the first 24 hours followed by relatively stable density at 48-72 hours (6.25-fold increase, p=0.036). External culture media remained sterile in 77.08% of E. coli-injected HIOs throughout the timecourse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C47-C56 provide comprehensive characterization of the colonization model with appropriate controls (PBS injection, external media monitoring). The dose-response data (C49-C50) and temporal dynamics (C52-C53) are well-documented with statistical support. The bacterial translocation monitoring (C54-C56) demonstrates barrier integrity in the majority of samples. Sample sizes appear adequate (N=10-48 HIOs depending on experiment) and the methodology is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "E. coli colonization elicits widespread, time-dependent transcriptional responses in HIOs. At 24 hours post-microinjection, 2018 genes were differentially expressed (FDR<0.05), with numbers increasing at 48 and 96 hours. GSEA revealed coordinated changes in innate antimicrobial defense, epithelial barrier production, adaptation to low oxygen, and tissue maturation. Innate defense pathways showed strong early activation (24h) with decreased activation at later timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C57-C64 are supported by appropriate RNA-seq analysis with proper statistical correction (FDR<0.05). The use of GSEA with GO and REACTOME databases is standard practice. Sample sizes (N=3-5 biological replicates of 5-6 pooled HIOs) are adequate for RNA-seq. The temporal dynamics are well-characterized across multiple timepoints. PCA analysis (C59) provides orthogonal validation of global transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Transcriptional responses to E. coli colonization result from both bacterial contact and luminal hypoxia, with NF-\u03baB as a central mediator. Experimental dissection using heat-killed E. coli, hypoxia culture, and NF-\u03baB inhibitor SC-514 revealed distinct gene sets: contact-dependent/NF-\u03baB-dependent (barrier integrity, mucins), hypoxia-associated/NF-\u03baB-independent (defensins), and combined responses (innate/adaptive defense). Different cytokines showed distinct regulatory patterns (IL-6: contact or hypoxia alone; BD-1: hypoxia-dominant; BD-2/IL-8/VEGF: cumulative).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C92-C104 describe a well-designed experimental approach to dissect complex stimuli. The use of heat-killed bacteria, hypoxia culture, and pharmacological inhibition provides orthogonal methods to separate bacterial contact from hypoxia effects. Western blot validation of NF-\u03baB inhibition (C94, Figure 5\u2014figure supplement 1B) strengthens the interpretation. The gene set analysis is systematic and the ELISA data (C102-C104) provide protein-level validation. Sample sizes (N=4-8 HIOs) are adequate for these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "E. coli colonization induces transient epithelial proliferation followed by progenitor reduction and enterocyte differentiation. EdU incorporation showed initial increase at 24h but significant decrease at 48h in E. coli-colonized HIOs. SOX9 expression (progenitor marker) was dramatically reduced at 48-96h post-colonization. DPPIV (brush border enzyme) was robustly expressed in E. coli-colonized HIOs at 48-96h but absent in PBS controls, while LYZ expression became restricted to distinct clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 are supported by complementary approaches: EdU incorporation (proliferation), Ki67 staining (proliferation marker), SOX9 immunofluorescence (progenitor cells), and DPPIV/LYZ staining (differentiation markers). The temporal dynamics are well-characterized. Sample sizes (N=4 HIOs per timepoint) are adequate for immunofluorescence quantification. The interpretation that proliferation is transient and followed by differentiation (C73, C82) is a reasonable inference from the combined data, though the mechanism of daughter cell loss is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "E. coli colonization reduces luminal and epithelial oxygen levels in HIOs. Baseline luminal oxygen was 8.04\u00b10.48%, significantly reduced from external media (18.86\u00b10.37%, p=3.6\u00d710\u207b\u00b9\u00b9). At 24 and 48 hours post-E. coli injection, luminal oxygen was significantly reduced (p=0.04 and p=5.2\u00d710\u207b\u2075), reaching as low as 1.67\u00b10.62% at 48h. A highly significant negative correlation existed between luminal CFU and oxygen concentration (r\u00b2=0.842, p=6.86\u00d710\u207b\u2075). Pimonidazole staining confirmed epithelial hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by direct oxygen measurements using fiberoptic optode and pimonidazole staining for tissue hypoxia. Sample sizes (N=6-14 HIOs) are adequate. The correlation analysis (C89) appropriately links bacterial density to oxygen depletion. The use of heat-killed E. coli and 1% O\u2082 culture as controls in pimonidazole experiments (C90) strengthens the interpretation. The measurements are consistent with known intestinal physiology (supported by citations C83-C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "E. coli colonization increases antimicrobial peptide production at functionally relevant concentrations. DEFB4A/DEFB4B (encoding BD-2) were most highly upregulated AMPs. Live E. coli induced 7.38-fold increase in DEFB4A expression, with hypoxia-cultured HIOs showing ~5.5-fold induction and NF-\u03baB inhibitor-treated HIOs showing ~8-fold increase, indicating hypoxia-dependent, NF-\u03baB-independent regulation. BD-2 secretion increased 3.4-fold at 24h (p=2.7\u00d710\u207b\u2078). BD-2 at 1 \u03bcg/ml significantly reduced E. coli carrying capacity (p=8\u00d710\u207b\u2074) and was more inhibitory than 0.1 \u03bcg/ml (p=0.013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C107-C119 are supported by RNA-seq data, ELISA measurements, and functional bacterial growth assays. The mechanistic dissection using heat-killed bacteria, hypoxia, and NF-\u03baB inhibition (C110-C111) is well-controlled. The functional validation showing BD-2 inhibits bacterial growth at physiologically relevant concentrations (C115-C118) is critical and well-executed with adequate replicates (N=8). Additional validation with E. coli K12 and heat-inactivated BD-2 controls (Figure 6\u2014figure supplement 2) strengthens conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "E. coli colonization promotes mucus layer maturation through NF-\u03baB-dependent, contact-mediated mechanisms. Mucin core proteins and glycotransferases reached peak expression at 48h post-colonization. PAS/AB staining revealed robust mucin layer formation with both acidic and neutral components. MUC5AC showed initial induction at 48h, while MUC2 increased more slowly, peaking at 96h. UEA1 lectin staining confirmed carbohydrate modifications associated with bacterial colonization. E. coli-induced mucin transcription and secretion were suppressed by NF-\u03baB inhibitor SC-514, while hypoxia alone was insufficient to promote mucin synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C122-C133 are supported by RNA-seq, histological staining (PAS/AB), lectin staining (UEA1), and mechanistic experiments with NF-\u03baB inhibition and hypoxia. The temporal dynamics are well-characterized. The demonstration that bacterial contact, not hypoxia, drives mucin production (C130-C133) is important and well-controlled. Sample sizes appear adequate (N=3-10 HIOs depending on experiment). The inference that mucus production is NF-\u03baB-dependent and contact-mediated (C132) is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "E. coli colonization improves epithelial barrier function through NF-\u03baB-dependent mechanisms. RNA-seq showed broad upregulation of adherens junction and cell-cell interaction genes, inhibited by NF-\u03baB inhibitor SC-514. FITC-dextran permeability assays showed PBS or E. coli-injected HIOs retained 94.1\u00b10.3% fluorescence over 20h, while E. coli+SC-514 HIOs retained only 45.5\u00b126.3% (p=0.02). Bacterial translocation occurred in 96% of SC-514-treated HIOs by day 7 versus 23% of E. coli alone (p<2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C32, C134-C138 are supported by RNA-seq, FITC-dextran permeability assays, and bacterial translocation monitoring. The use of NF-\u03baB inhibition to demonstrate mechanism is appropriate. Sample sizes are adequate (N=7-48 HIOs depending on experiment). The large effect size and highly significant p-value for bacterial translocation (C137) strongly support the conclusion. However, the high standard deviation in C136 (\u00b126.3%) suggests substantial variability, though the effect remains statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "E. coli colonization protects immature epithelium from inflammatory cytokine-induced damage. TNF\u03b1 and IFN\u03b3 treatment alone caused rapid, sustained decrease in luminal fluorescence (p=5\u00d710\u207b\u2074), indicating barrier disruption. HIOs colonized with E. coli prior to cytokine treatment retained significantly more fluorescent signal (p=0.042). Immunofluorescence showed TNF\u03b1/IFN\u03b3-treated HIOs had disorganized epithelium with cytoplasmic ZO-1 and disorganized E-cadherin, while E. coli-colonized HIOs retained organized columnar epithelium with proper tight junction localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C142-C146 are supported by FITC-dextran permeability assays and immunofluorescence microscopy. The experimental design appropriately tests whether prior colonization protects against inflammatory challenge. Sample sizes (N=8-9 HIOs) are adequate. The immunofluorescence data (C144-C145) provide mechanistic insight into barrier disruption and protection. Additional validation with occludin and acetylated-tubulin staining (Figure 8\u2014figure supplement 1) strengthens conclusions. The p-value for protection (p=0.042) is modest but significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background and rationale for studying immature intestinal epithelium and host-microbe interactions. The human GI tract is immature at birth and must adapt to oral nutrition and microbial colonization, which can lead to inflammatory disease in premature infants (NEC). Gnotobiotic mouse studies show microbes are important for gut development, but the immature human intestine may differ from murine intestine. HIOs closely resemble immature intestinal tissue and E. coli are dominant early colonizers of the neonatal intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide background context supported by appropriate citations to established literature. These are primarily knowledge claims (C1, C2, C21) or citation-supported statements (C8-C20, C22-C27) that establish the rationale for the study. The citations appear appropriate and the statements are consistent with established knowledge in the field. However, these are not novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C153"
+    ],
+    "result": "The immature epithelium is intrinsically capable of establishing stable host-microbe symbiosis. This conclusion is inferred from the observation that HIOs (consisting of epithelium and loosely structured mesenchyme) can maintain stable co-cultures with E. coli for extended periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C153 represent a major conclusion of the paper, inferred from the stable colonization data (Figure 1). The inference is reasonable given that HIOs lack immune cells, neurons, and vasculature, suggesting the epithelium and mesenchyme are sufficient for establishing symbiosis. However, the term 'intrinsically capable' may overstate the conclusion, as the in vitro system lacks many physiological components. The stable colonization in 77% of HIOs (C56) supports the general conclusion, though 23% showed bacterial translocation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "E. coli strain ECOR2 is closely related to other non-pathogenic human E. coli and distantly related to pathogenic strains. This characterization is based on whole genome sequencing and phylogenetic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 states phylogenetic analysis is shown in Figure 1\u2014figure supplement 3, but the figure legend indicates this figure shows the microinjection protocol, not phylogenetic analysis. This appears to be a figure reference error in the manuscript. The phylogenetic tree is actually shown in a different figure (Figure 1\u2014figure supplement 2 based on the images provided). The analysis itself appears sound, but the incorrect figure reference creates uncertainty about which data supports this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DEFB1/BD-1 and DEFB4A/BD-2 exhibit distinct temporal expression patterns following E. coli colonization. DEFB1/BD-1 were stable at 24h but suppressed at later timepoints, while DEFB4A/BD-2 were strongly induced early and subsided over time. IL-6, IL-8, and VEGF were strongly induced at transcriptional level within 24-48h, with protein secretion peaking at 5-9 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by RNA-seq data (Figure 2D) and ELISA measurements (Figure 2E). The temporal dynamics are well-characterized with adequate sample sizes (N=3-48 HIOs depending on timepoint). The correlation between transcript and protein levels is demonstrated, though the delayed protein secretion for IL-6/IL-8/VEGF (peaking at 5-9 days) versus transcript levels (24-48h) is notable and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C74",
+      "C75",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C105",
+      "C106",
+      "C120",
+      "C121",
+      "C126",
+      "C139",
+      "C140",
+      "C141",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C162"
+    ],
+    "result": "Background statements about bacterial colonization effects, epithelial biology, and disease context. These include established knowledge about bacterial effects on proliferation, Sox9 expression, oxygen gradients, antimicrobial peptides, mucins, barrier function, and necrotizing enterocolitis, all supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C74-C75, C83-C86, C105-C106, C120-C121, C126, C139-C141, C147-C152, C154-C160, C162 are citation-supported background statements that provide context for the experimental findings. The citations appear appropriate and the statements are consistent with established knowledge. These are not novel findings from this manuscript but provide important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C161",
+      "C163"
+    ],
+    "result": "Exposure to pro-inflammatory cytokines causes rapid loss of epithelial barrier integrity in HIOs, while E. coli-colonized HIOs exhibit enhanced barrier resilience. These observations recapitulate known effects in NEC and suggest potential protective effects of colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161 and C163 are supported by FITC-dextran permeability assays shown in Figure 8. These findings connect the HIO model to disease-relevant conditions (NEC) and demonstrate the model recapitulates known pathophysiology. The data support both the validity of the model and the protective effect of colonization, though the mechanism of protection requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C164"
+    ],
+    "result": "Functional maturation from colonization may play an essential role in promoting resolution of physiologic inflammation. This is inferred from the observation that E. coli colonization protects HIOs from cytokine-induced barrier disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C164 is marked as SPECULATION in the evidence type, and the claim uses 'may' indicating uncertainty. While the protective effect of colonization against cytokine challenge is demonstrated (C143-C145), the extrapolation to 'resolution of physiologic inflammation' goes beyond the data. The experiments show protection against acute cytokine challenge, but do not directly demonstrate resolution of inflammation. This represents a reasonable hypothesis for future work but is not directly supported by the current data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Bag-1L is essential for AR function in prostate cancer. Loss of Bag-1L through TALEN-mediated knockout significantly reduces PCa cell growth, AR chromatin binding, and AR-dependent gene transcription. The BAG domain of Bag-1L selectively interacts with the intrinsically disordered AR tau-5 domain, and disrupting this interaction alters AR structural properties, reduces FRET response to DHT, and impairs AR's ability to bind chromatin and regulate androgen-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C38 provide converging evidence from multiple experimental approaches (TALEN knockout, rescue experiments, ChIP-seq, RNA-seq, FRET) demonstrating that Bag-1L is necessary for proper AR folding, chromatin binding, and transcriptional activity. The rescue experiments (C24-C26, C30) provide strong controls showing specificity. The FRET data (C37) directly demonstrates altered AR conformation in Bag-1L KO cells. Statistical significance is reported for key findings (C34: p=3.39\u00d710\u207b\u00b3\u00b9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The BAG domain of Bag-1L binds the AR tau-5 region through specific residues. A triple mutation (K231/232/279A, termed CMut) in the BAG domain significantly disrupts Bag-1L:AR interaction in GST pull-down and co-IP experiments, reduces AR NTD activity, alters AR N/C interaction, and decreases AR chromatin binding and hormone-dependent function. NMR analysis reveals that while \u03b1-helix content is preserved, the mutations cause destabilization and altered 3D structure of the BAG domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C56 are well-supported by multiple orthogonal approaches including GST pull-down (C42), co-IP (C43), mammalian one-hybrid assays (C44), FRET (C45), ChIP-seq (C46), and SILAC-RIME (C50). The NMR data (C54-C55) provides structural validation. The CMut behaves similarly to complete Bag-1L loss, supporting the specificity of the BAG domain:AR tau-5 interaction. However, the claim about broader proteostasis roles (C52-C53) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "NMR spectroscopy demonstrates direct interaction between the wild-type BAG domain and AR AF-1. Addition of wild-type BAG peptide reduces resonance intensities in the C-terminal part of AR AF-1, particularly in the tau-5 region previously identified as partially folded. The interaction also propagates to tau-1. The BAG domain mutant shows much-attenuated effects, confirming diminished interaction strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by NMR data (Figure 3A) showing specific changes in AR AF-1 resonance intensities upon BAG domain binding. The preferential interaction with tau-5 (C58-C59) is supported by both current NMR data and prior work (De Mol et al., 2016). The attenuated effect of the mutant BAG domain (C62) provides internal validation of specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Computational modeling identifies a large 'ligandable' cavity in the BAG domain of Bag-1L that is druggable using peptides or peptidomimetic drugs. The three amino acids critical for AR binding (K231/232/279) lie within or near this cavity. Mutation analysis confirms that K231 and K232 jointly are critical for AR binding, with the triple mutant showing the strongest effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by computational analysis of 44 3D structures using the canSAR platform (C63) and experimental validation through pull-down and luciferase assays (C65). The overlap between computational predictions and experimental mutagenesis data strengthens the conclusion. However, C67 is somewhat speculative as it predicts future therapeutic potential rather than demonstrating it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The small molecule Thio-2, previously shown to bind the BAG domain and inhibit Hsp70:Bag-1 interaction, abrogates the endogenous Bag-1L:AR interaction in LNCaP cells and inhibits androgen-dependent cell growth with IC50 = 17.5 \u03bcM. Unlike AR N-terminal inhibitors (EPI-001, ido-EPI-002) or the AR LBD inhibitor enzalutamide, Thio-2 effectively suppresses Bag-1L function in mammalian one-hybrid assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by co-IP data (C70, Figure 4A), cell growth assays with quantified IC50 (C71, Figure 4B), and mammalian one-hybrid assays comparing Thio-2 to other AR inhibitors (C72, Figure 4C-D). The data demonstrate proof-of-concept for pharmacological disruption of the Bag-1L:AR interaction. However, C73 is speculative about therapeutic potential and would require additional validation including in vivo efficacy and specificity studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Wild-type Bag-1L promotes both androgen-dependent and castration-resistant PCa growth. Re-expression of wild-type Bag-1L rescues growth inhibition in Bag-1L KO cells, while CMut Bag-1L fails to rescue. Overexpression of wild-type Bag-1L increases LNCaP growth in culture and in xenograft models (both intact and castrated mice). In CRPC cell lines (LNCaP-abl, LNCaP95) with endogenously elevated Bag-1L, wild-type overexpression has no additional effect, but CMut Bag-1L exerts a dominant negative effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are well-supported by multiple experimental systems including cell culture growth assays (C74-C76, C79, C81) and mouse xenograft studies (C77-C78). The rescue experiments provide strong evidence for specificity. The dominant negative effect of CMut in CRPC lines (C81) is particularly compelling. Statistical significance is reported for key findings. However, C82 is somewhat speculative in linking these findings to clinical castration resistance without direct clinical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Clinical analysis of matched HSPC and CRPC biopsies from 43 patients shows that nuclear Bag-1 (Bag-1L) levels increase significantly during progression to CRPC (p<0.0001), while cytoplasmic Bag-1 shows little change. In 38 patients treated with abiraterone, nuclear Bag-1 positivity at HSPC diagnosis associates with shorter time to PSA progression (2.8 vs 6.6 months, p=0.02), radiological progression (4.9 vs 9.8 months, p=0.05), and reduced time on abiraterone (4.9 vs 10.4 months, p=0.03). Nuclear AR levels do not predict treatment outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 are supported by immunohistochemistry analysis of matched patient biopsies with appropriate statistical testing (Mann-Whitney, log rank tests). The study design using matched HSPC/CRPC biopsies is a strength. Sample size (n=43 for progression analysis, n=38 for abiraterone response) is modest but adequate for the reported associations. Antibody specificity was validated (Figure 6 supplements 1-3). The lack of association between AR levels and outcomes (C91) provides an important control. However, the study is observational and cannot establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on AR signaling and therapeutic resistance in prostate cancer. AR plays a central role in PCa development. Current therapies targeting androgen synthesis or the AR LBD are initially effective but eventually lead to CRPC. The AR AF-1 domain controls most transactivation function, and AR variants lacking the LBD exist in CRPC, highlighting the need for alternative therapeutic approaches. Targeting the intrinsically disordered AR AF-1 has been challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 represent well-established background knowledge supported by appropriate citations to the literature. These claims provide context for the study but do not represent novel findings. All statements are consistent with current understanding of PCa biology and AR signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on intrinsically disordered regions and Bag-1 biology. IDRs can provide large surface areas for protein-protein interactions and fold upon binding targets. Bag-1 is a multifunctional cochaperone with four isoforms generated by leaky scanning. Bag-1L is the only nuclear isoform and enhances AR transactivation through interactions at both the AR LBD (via GARRPR motif binding BF-3) and AR NTD (via BAG domain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C20 represent established background knowledge supported by appropriate citations. These provide context for understanding the Bag-1L:AR interaction but are not novel findings of this study. The prior work on Bag-1L binding to AR (C18-C20) sets up the specific questions addressed in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C40",
+      "C69",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background on chaperone function, AR domains, and Bag-1 in cancer. Loss of chaperones alters client protein folding. The tau-5 domain has hormone-independent activity. Bag-1 overexpression is observed in drug-resistant cell lines and various cancers. The BF-3 pocket acts as an allosteric modulator. The AR region affected by Bag-1L binding overlaps with the EPI-001 binding site. EPI-506 is in clinical trials for CRPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C40, C69, C100-C103, C107-C109 represent background knowledge supported by appropriate citations. These provide context but are not novel findings. The information about EPI-506 clinical trials (C103) is factual and verifiable through the clinical trial identifier.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C106",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Summary and discussion claims synthesizing the study's findings. The authors conclude that Bag-1L is essential for AR function and PCa growth through direct interaction, that disrupting this interaction reduces PCa growth in multiple models, that Bag-1L levels increase with disease progression and associate with reduced abiraterone benefit, and that the Bag-1L:AR interaction represents a potential therapeutic target. They propose that the GARRPR:BF-3 interaction acts as a modulator rather than regulator of AR activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C118 represent summary statements and interpretations of the experimental findings. Most are well-supported by the data presented (C94-C97, C113-C116). However, several claims are speculative about therapeutic potential (C104, C111, C118) or mechanistic interpretation (C98, C99) and represent hypotheses rather than demonstrated facts. The distinction between modulator vs. regulator (C99) is interpretive. Claims about Thio-2 efficacy (C106) are supported but limited to the specific experimental contexts tested.",
+    "result_type": "MINOR"
+  }
+]

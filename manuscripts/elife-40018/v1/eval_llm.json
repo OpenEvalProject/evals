@@ -1,0 +1,143 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript documents a cultural divide between biology and physics regarding the status of theoretical results. Referee comments and author observations suggest that many biologists do not consider theoretical results as 'Results' and prefer theory to be relegated to Discussion sections, whereas physicists view theory as integral to scientific findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from referee quotes (C1, C2) and author observations (C3, C4) documenting this disciplinary difference. While based on anecdotal evidence rather than systematic study, the claims are internally consistent and represent the author's documented experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Physicists routinely use mathematical models as conceptual tools and have a history of successful theoretical predictions, while theory has also played important historical roles in biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 cite well-established historical facts (Dirac's antiparticles, Einstein's light bending, Higgs prediction) and reference published work (Bialek 2018) documenting theory's role in both physics and biology. These are accurate representations of scientific history.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Interdisciplinary publishing practices have evolved, with physics journals now including biological content, while historical biology papers (Hodgkin-Huxley, Michaelis-Menten) interleaved theory and experiment, contrasting with modern practices that often relegate models to supplementary material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by specific citations to published papers and journals. The historical examples (C12, C13) are verifiable, and the observation about modern practices (C14) is documented with specific citations. The author's observation about physics journals (C10, C11) is supported by cited examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "There exists tension between biological and physical approaches to complexity, but the role of theory in biology is growing and requires new interdisciplinary training approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 characterize disciplinary differences and cite opinion pieces (Shou et al., 2015; Riveline and Kruse, 2017) supporting the growth of theory in biology. While C15 involves stereotyping, it is presented as such and C16 is supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26"
+    ],
+    "result": "In the fictitious experimental scenario, Chlamydomonas cells accumulate in a light sheet, then disperse through random swimming with ~90-degree turns every ~10 seconds when light is removed, with results insensitive to initial gathering size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C26 describe a pedagogical example using simulated data (as disclosed in Methods, C61). The swimming behavior (C21) is supported by citation to Polin et al., 2009. While fictitious, the scenario is internally consistent and appropriately disclosed as illustrative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C53",
+      "C54"
+    ],
+    "result": "The diffusion model demonstrates that cells move from high to low concentration proportional to concentration gradients (Fick's Law), and that different organisms with different diffusion constants obey universal scaling laws independent of microscopic details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C53, C54 present theoretical interpretations and generalizations from the pedagogical example. C35 correctly interprets Fick's Law, C53 articulates the universality principle demonstrated in the analysis, and C54 extends to E. coli with appropriate citation (Berg, 1993). The mathematical derivations support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C56",
+      "C58"
+    ],
+    "result": "Diffusion is ubiquitous in biology, dimensional analysis is a powerful historical technique, and similar analytical approaches (dimensional analysis, scaling collapse) appear throughout biophysics in diverse contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C56, C58 cite established knowledge and published work. C17 correctly identifies diffusion's ubiquity, C18 accurately attributes dimensional analysis to Clerk-Maxwell, C56 provides specific examples with citations (West et al., 1997; Lopez-Garcia et al., 2010), and C58 correctly references Turing's work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The discovery that H. pylori causes stomach ulcers illustrates how experimental results can be superseded by new findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 accurately cites the Marshall and Warren (1984) discovery, which is a well-documented historical fact that revolutionized understanding of stomach ulcers. This serves as an appropriate example of how scientific understanding evolves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The pedagogical data presented were generated through numerical simulation averaging 30,000 realizations of a Langevin equation rather than actual experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 explicitly discloses the computational methodology in the Methods section. This transparency about using simulated data for pedagogical purposes is appropriate and clearly stated, with sufficient detail about the numerical approach (30,000 realizations, D=0.1 mm\u00b2/s).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Chlamydomonas is classified as a single-cell green alga.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 provides accurate basic biological classification of Chlamydomonas, which is well-established taxonomic knowledge.",
+    "result_type": "MINOR"
+  }
+]

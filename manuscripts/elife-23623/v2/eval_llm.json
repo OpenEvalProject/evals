@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14"
+    ],
+    "result": "Hi-C data from diploid yeast confirm the Rabl-like orientation previously observed by microscopy, including centromere clustering at the spindle pole body, telomere clustering at the nuclear periphery, and the nucleolus dividing chromosome XII into two functional domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the Rabl-like orientation from prior literature, while C13-C14 demonstrate that Hi-C data recapitulate these features in diploid hybrids. The convergence of microscopy-based prior knowledge with genome-wide Hi-C observations provides strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C45",
+      "C62"
+    ],
+    "result": "After controlling for the Rabl-like orientation using a polymer model that restricts comparisons by centromeric distance and chromosome arm length, homologous chromosomes exhibit preferential interactions beyond what is predicted by the Rabl-like orientation alone, even in hybrids diverged to ~80% nucleotide identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 establishes prior polymer models, while C17, C45, and C62 demonstrate that experimental Hi-C data exceed polymer model predictions after stringent controls. The use of multiple filtering criteria (centromeric distance, arm length) and comparison to simulations provides rigorous support for homolog pairing beyond structural constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Homolog proximity is substantially greater in saturated cultures than in exponential growth, and this difference cannot be explained by nuclear size changes or cell cycle effects, as polymer models with smaller nuclei show decreased rather than increased homolog proximity, and nocodazole arrest does not substantially reduce pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 collectively address potential confounders (nuclear size, cell cycle) through both experimental manipulation (nocodazole) and computational modeling. The polymer simulations showing opposite effects of nuclear size changes (C21-C22) strengthen the argument that condition-dependent pairing is not merely a geometric consequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Upon galactose induction, the GAL1 locus and its neighbors relocalize from the spindle pole body to nuclear pore complexes at the nuclear periphery, as evidenced by decreased Hi-C interactions with pericentromeric regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 cites prior microscopy studies establishing GAL1 relocalization, while C24 provides genome-wide Hi-C validation. The convergence of targeted microscopy and unbiased Hi-C data supports this known phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C46",
+      "C63"
+    ],
+    "result": "The HAS1-TDA1 locus on chromosome XIII exhibits markedly increased homologous interactions specifically under galactose induction and saturated growth conditions, representing one of the strongest genome-wide interactions and appearing evolutionarily conserved across three interspecific hybrids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 establish the phenomenon with Hi-C data across multiple hybrids and conditions, while C46 and C63 contextualize this as condition- and locus-specific. The ranking as a top genome-wide interaction (C26) and conservation across species (C27) provide strong quantitative and evolutionary support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "HAS1-TDA1 pairing is sequence-dependent, requiring the HAS1pr-TDA1pr intergenic region, as deletions including this region abolish pairing while deletion of the HAS1 coding sequence does not, and ectopic placement of HAS1pr-TDA1pr confers partial inducible pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 present a systematic deletion analysis with appropriate controls. The specificity of the intergenic region requirement (C28), the negative control showing the deletion construct itself doesn't impede pairing (C29), and the ectopic placement experiment (C30) provide converging genetic evidence for sequence-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Confocal microscopy in homozygous S. cerevisiae diploids confirms that HAS1-TDA1 homologs are closer together in galactose-induced and saturated cultures than in glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 provides orthogonal validation of Hi-C findings using microscopy in non-hybrid diploids, strengthening the conclusion that HAS1-TDA1 pairing is not an artifact of hybrid divergence or Hi-C methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The HAS1-TDA1 locus relocalizes to the nuclear periphery upon galactose induction and in saturated culture in a Nup2-dependent but Mlp2-independent manner, suggesting a distinct mechanism from other relocalized genes like GAL1 and INO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 establish peripheral relocalization through microscopy in both haploids and diploids, with genetic dissection showing Nup2 but not Mlp2 requirement. The differential genetic requirements compared to other genes (C34) suggest mechanistic novelty, though the exact mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "HAS1-TDA1 alleles can remain paired in the nucleoplasm in galactose, and peripheral localization exhibits cell cycle dependence, with reduced localization during S-phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 provide microscopy evidence for pairing independent of peripheral localization and cell cycle dynamics. These observations are consistent with prior studies of other relocalized genes and suggest pairing can be maintained after initial nuclear pore-mediated contact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Nup2 is required for HAS1-TDA1 homolog pairing in galactose but not in saturated growth, suggesting distinct mechanisms of pairing under different conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 presents Hi-C data from nup2\u0394 strains showing condition-specific genetic requirements. The differential requirement across conditions is well-supported by the data, though the alternative mechanism in saturated growth remains uncharacterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Nup60 ChIP-seq shows enrichment of GAL1 but not HAS1-TDA1 in galactose-grown cells, suggesting HAS1-TDA1 interacts with nuclear pores differently than GAL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 provide biochemical evidence distinguishing HAS1-TDA1 from GAL1 in nuclear pore interactions. The positive control (GAL1 enrichment) validates the assay, while the lack of HAS1-TDA1 enrichment is consistent with the distinct genetic requirements (Mlp2-independence) and supports a different mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "HAS1 is downregulated and TDA1 is weakly upregulated in both galactose and saturated growth conditions, but these transcriptional changes are modest compared to many other genes, with GAL1 showing ~1000-fold upregulation in galactose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 present RNA-seq data showing transcriptional changes at HAS1-TDA1 are relatively unremarkable in magnitude. The comparison to GAL1 (C44) and genome-wide changes (C43) provides important context that nuclear pore association is not solely driven by strong transcriptional activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The HAS1-TDA1 region is not remarkably conserved, suggesting homolog pairing is mediated by protein interactions rather than direct DNA-DNA homology recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 makes an inference about mechanism based on lack of sequence conservation. While the inference is reasonable and supported by citations to studies of DNA-DNA interactions, the manuscript does not provide direct evidence for the proposed protein-mediated mechanism, making this conclusion speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Nuclear pore interactions may facilitate HAS1-TDA1 pairing by confining alleles to the nuclear periphery, with additional protein-protein interactions potentially prolonging contact duration, as evidenced by paired alleles observed in the nucleoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 present mechanistic speculation about how nuclear pores facilitate pairing. While C50 provides observational support (paired alleles in nucleoplasm), the proposed mechanisms in C48-C49 are hypothetical and lack direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Tda1 phosphorylates Hxk2 to prevent its interaction with Mig1 and release glucose repression in low-glucose conditions, and nuclear pore interaction may facilitate TDA1 upregulation in response to low glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55 describe established biology of the Tda1-Hxk2-Mig1 pathway from prior literature, but C56 is speculative about the functional role of nuclear pore interactions. The authors explicitly state this hypothesis has not been tested, making the functional connection uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Divergent Saccharomyces species form stable hybrids with sufficient sequence divergence (80-90% nucleotide identity) to discriminate homologs by sequencing while maintaining synteny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 establish the hybrid system used throughout the study, supported by prior literature and mappability analysis. This is foundational methodology rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Hi-C data show an off-diagonal line of increased interaction suggestive of homolog pairing, consistent with prior microscopy, recombination, and chromatin conformation capture studies showing homologous loci are closer than nonhomologous loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 establish the initial observation of homolog pairing in Hi-C data and connect it to prior literature. This sets up the more rigorous analysis that follows but is preliminary without controlling for Rabl orientation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Chromosome III left arm and chromosome IX right arm exhibit particularly strong homolog proximity, possibly due to pairing of silenced mating-type loci on chromosome III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 identifies specific regions with strong pairing and provides a plausible explanation for chromosome III based on prior literature. The observation is well-supported by Hi-C data, though the mating-type loci explanation is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Nup2 involvement in meiotic homolog pairing suggests it may play a general role in homolog pairing beyond mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 connects findings to a recent study of meiotic pairing, suggesting broader significance. This is well-supported by citation but represents discussion/interpretation rather than a primary finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Increased transcription may contribute to nuclear pore localization via mRNA-mediated interactions, nuclear pore interactions may mediate epigenetic transcriptional memory, and HAS1-TDA1 pairing may serve functions including trans gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 present speculative mechanisms and potential functions, supported by citations to prior work on other genes but explicitly noted as requiring further experiments. These represent hypotheses rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Studies in Drosophila provide evidence for the generality of nuclear pore roles in transcriptional regulation first observed in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 contextualizes findings within broader eukaryotic biology, supported by citation. This is discussion/interpretation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The diploid yeast genome has a dynamic and complex 3D organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is the overarching conclusion synthesizing all findings. It is well-supported by the collective evidence of condition-dependent and locus-specific genome organization beyond simple Rabl orientation.",
+    "result_type": "MAJOR"
+  }
+]

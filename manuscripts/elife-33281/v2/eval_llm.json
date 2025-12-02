@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C107",
+      "C108",
+      "C109",
+      "C121"
+    ],
+    "result": "The authors developed a probabilistic connectivity model derived from 1000 anatomical connectomes that specifies connection probabilities between neuron pairs. This model reliably produces swimming-like rhythmic activity when combined with a spiking model, and allows calculation of structural characteristics independent of individual network realizations. The model captures fundamental network features sufficient for swimming generation, specifically neuron position along rostro-caudal coordinates and frequency of connection appearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C19, C107, C108, and C121 collectively demonstrate that the probabilistic model successfully generates swimming activity across all simulations (C57, C108) and identifies two key structural properties sufficient for function (C121). The methodology is clearly described (C107) and the model's capability to calculate structural characteristics is demonstrated throughout the results (C4). The convergence of structural and functional validation strongly supports this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C51",
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "The tadpole spinal cord network lacks scale-free properties and hub neurons. Analysis of degree distributions shows they are localized around the mean with no tail, and heterogeneity indices are below the threshold for scale-free networks. This distinguishes the tadpole network from the C. elegans connectome which does exhibit hub structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C51-C52 provide converging evidence from multiple analytical approaches (degree distributions, heterogeneity analysis) that the network is not scale-free. The comparison to C. elegans (C20, C25) provides appropriate context. However, the manuscript notes that degree distribution figures are not shown (C51), which slightly weakens the evidence presentation, though the heterogeneity analysis (Figure 4) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C124"
+    ],
+    "result": "Probabilistic connectomes produce longer swimming periods (68.6\u00b10.8 ms) than anatomical connectomes (58\u00b11.8 ms) due to lower variance in neuron in-degree and out-degree. This results from the independence assumption in the probabilistic model, which loses the dendritic extent variability present in anatomical models. The period can be corrected by reducing cIN-to-dIN inhibitory synaptic strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C58, C63-C67, and C124 form a coherent mechanistic explanation supported by quantitative data (Figure 5). The authors identify the structural difference (variance in degree distributions), explain its origin (independence assumption vs. dendritic extent sampling), demonstrate its functional consequence (longer periods), and show a correction method (C67). This represents thorough analysis of a quantitative discrepancy between models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C58"
+    ],
+    "result": "Swimming period can be accurately predicted from structural properties of the connectome using a linear regression model based on cIN-dIN and dIN-dIN in-degrees (R\u00b2=0.94 for prediction, R\u00b2=0.96 for model fit).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is strongly supported by quantitative evidence in Figure 5C showing high predictive accuracy (R\u00b2=0.94) across 200 new connectomes. The mechanistic basis is explained through the relationship between inhibitory/excitatory balance and post-inhibitory rebound timing. The prediction works universally across both anatomical and probabilistic connectomes, demonstrating robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A minimal swimming subnetwork consisting of only dINs and cINs (excluding aINs and motor neurons) reliably generates swimming-like activity with period 57\u00b10.9 ms across 100 simulations. This confirms experimental findings that aINs have minimal contribution to swimming despite being part of the CPG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C68-C69, and C72 demonstrate through simulation that the dIN-cIN subnetwork is sufficient for swimming generation. This is supported by 100 independent simulations (C68) with quantitative period measurements (C69) and is consistent with experimental observations about aIN inactivity (C70-C71). Figure 6 provides visual confirmation of the swimming pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Simulations with commissural connections removed reproduce experimental findings of single-sided rhythmic activity that is faster than normal swimming. The mechanism differs from swimming: instead of post-inhibitory rebound from cIN inhibition, rhythm is generated by feedback NMDA excitation within the dIN population. dINs segregate into groups with different firing periods (24 ms, 53 ms, 101 ms), with motor neurons firing in-phase with the intermediate group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C73-C83 provide detailed characterization of single-sided rhythm generation supported by simulations (Figure 7) and comparison to experimental data (C73, C82). The mechanistic explanation (C75-C77) is supported by citations to prior experimental and modeling work. Quantitative data on dIN firing groups (C78-C80) and motor neuron behavior (C81, C83) match experimental observations of faster periods in isolated preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "cIN firing reliability during swimming depends on rostro-caudal position, with rostral cINs less likely to fire reliably than caudal cINs. This is predicted by the probabilistic model based on dIN-to-cIN in-degree as a function of position, and confirmed by simulations showing approximately 50% reliability in anatomical connectomes and 70% in probabilistic connectomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide quantitative reliability data, while C91-C94 show the spatial dependence supported by Figure 8. The probabilistic model allows prediction of reliability based on structural properties (in-degree from dINs), which is then validated through functional simulations. The linear correlation (R\u00b2=0.86, Figure 8C) between in-degree and reliability proportion provides strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Ascending dIN axons are critical for sustained swimming. Removal of ascending connections causes swimming failure in 63% of simulations, with failures beginning rostrally and propagating caudally due to reduced excitatory drive. In 36% of simulations, only one body side remains active, and only 1% maintain bilateral swimming with altered period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C99-C103 provide quantitative outcomes from 100 simulations with ascending axons removed, supported by Figure 9. The mechanistic explanation (C100) is consistent with the role of feedback excitation (C101) supported by prior modeling work (C98). The three distinct outcome categories (Cases 1-3) are clearly quantified and the failure mechanism is visualized in Figure 9B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The study predicts that experimental recordings from dINs during single-sided rhythm would reveal a large group spiking faster than ventral root activity and a smaller group spiking slower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a testable prediction based on simulation results (C78-C80) showing distinct dIN firing groups. While this is speculation about future experiments, it is a well-grounded prediction arising directly from the model's behavior and represents an important contribution for guiding experimental work. The prediction is specific and quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Pathological activity patterns (synchrony and mid-cycle dINs) appear in both anatomical and probabilistic models but are significantly reduced in probabilistic connectomes (0.8 vs 6.3 mid-cycle dINs on average). This suggests these phenomena arise from connectivity imperfections that are reduced by the averaging process in the probabilistic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C114 provide quantitative comparisons supported by experimental observations (C110). However, the interpretation that these arise from \"connectivity imperfections\" (C115-C116) is speculative. The reduction in probabilistic models could alternatively reflect loss of biologically important variability rather than improvement. The manuscript acknowledges these as \"apparently-pathological\" but experimental data (C110) shows they occur naturally, raising questions about whether their reduction represents improvement or oversimplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The probabilistic model's assumption of independent Bernoulli variables is a significant limitation. Connectomes generated by the probabilistic model show less variability than anatomical connectomes, potentially making them closer to a theoretical 'ideal' network and producing less 'messy' spiking activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 acknowledges a key limitation, and C118 and C120 document reduced variability as an observation. However, the interpretation that probabilistic connectomes are closer to an \"ideal\" network (C119) is speculative and not directly tested. The reduced variability could represent either an advantage (cleaner analysis) or a problem (loss of biological realism). The manuscript does not provide criteria for what constitutes an \"ideal\" network or test whether reduced variability improves or impairs biological fidelity beyond the swimming period issue already addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Despite individual variation in brain connectivity across animals, behavior remains similar within a species, suggesting that different connectomes share key structural features that produce common functionality. This motivates the search for fundamental organizational principles underlying nervous system function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C8, and C104-C106 establish the biological motivation for the study, supported by appropriate citations (C104). These are well-established observations in neuroscience that frame the research question. While these are background claims rather than novel findings, they are accurately stated and properly contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Previous work established an anatomical model of tadpole spinal cord connectivity based on simulated axon growth guided by chemical gradients. This stochastic model generates different connectomes with statistical properties matching measurements from different individual animals, and when mapped to a Hodgkin-Huxley functional model, reliably produces swimming-like activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 accurately describe prior work by the authors and others, properly supported by citations (C9, C10, C13, C15, C16). These establish the foundation for the current study's probabilistic model. The claims are consistent with the cited literature and provide necessary context for understanding the new contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The anatomical model includes 1382 neurons of seven types organized into sensory pathway, CPG, and motor neuron groups, generating approximately 83,000 synapses. The functional model uses conductance-based Hodgkin-Huxley neurons with parameters based on experimental data, including gap junctions between dINs and randomized synaptic strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 and C44-C47 provide methodological details about model composition and parameterization. These are clearly stated and supported by references to experimental data and prior work (C46, C47). The details are sufficient for understanding the model structure, though full implementation details are appropriately deferred to appendices and code repositories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C50"
+    ],
+    "result": "Hub structures have been identified in some brain networks (e.g., C. elegans) and are likely formed early in development, but not all brain circuits have hubs (e.g., rat reticular formation, zebrafish nervous system). Scale-free networks contain hub nodes and are particularly robust to random node removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C50 provide appropriate background on network topology concepts, properly supported by citations to the relevant literature. These establish the context for analyzing whether the tadpole network exhibits scale-free or hub properties. The claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "For aINs, connection probability decreases with distance between neurons, and their primarily ascending axons make them more likely to contact rostrally-located aINs, as reflected in the probabilistic model's sub-matrix structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 describe observations from the probabilistic model (Figure 2B) that reflect known anatomical features of aIN axon growth. These are straightforward interpretations of the model structure consistent with the underlying anatomical model's properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "All 100 simulations using different probabilistic connectomes produced swimming-like patterns with rhythmic firing, single spikes per cycle, alternating left-right activity, and rostro-caudal delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 reports a key functional validation result: 100% success rate in generating swimming across different probabilistic connectomes. This demonstrates the robustness of the probabilistic model and is supported by the simulation data, though the manuscript notes quantitative differences in period (addressed in other results).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "The probabilistic approach is computationally easier than the anatomical model, allowing direct calculation of graph characteristics from the probability matrix. Some characteristics (mean in/out-degrees) match between models while others differ (variances). The probabilistic model provides a different perspective on anatomical model data while remaining grounded in biological anatomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 and C125-C126 describe practical advantages and relationships between the models. These are supported by the demonstrated ability to calculate characteristics analytically (throughout Results) and by the comparative analyses (e.g., Figure 3). The claims accurately characterize the models' relationship and relative advantages.",
+    "result_type": "MINOR"
+  }
+]

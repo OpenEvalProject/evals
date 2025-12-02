@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C30",
+      "C40",
+      "C46",
+      "C99",
+      "C101"
+    ],
+    "result": "Colonization order significantly affects gut microbiota assembly in mice. Sequential inoculation of two complex cecal communities in different orders (A/B, B/A, AB/AB) resulted in distinct microbiota compositions at day 78, with bacterial profiles clustering by colonization order (p<0.001, R\u00b2=0.21). This demonstrates that individuality in gut microbiota composition can arise solely from variation in the timing by which microbes are acquired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C30, C40, C46, C99, and C101 collectively demonstrate historical contingency through hierarchical clustering (C30), Adonis analysis (C40), and controlled experimental design (C99, C101). The statistical significance (p<0.001) and effect size (R\u00b2=0.21) provide quantitative support, though the effect is smaller than dispersal limitation (R\u00b2=0.66). The experimental design successfully isolated colonization order as the sole variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Early arrival provides a fitness advantage to bacterial types from donor B. Bacterial types unique to donor B showed significantly higher colonization success when introduced first (67\u00b18 in B/A) compared to second (48\u00b110 in A/B) (F=26.5; p=8.66\u00d710\u207b\u00b9\u00b9), while donor A-specific types showed no such effect (p=0.0521).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate differential priority effects between donor communities with strong statistical support (p=8.66\u00d710\u207b\u00b9\u00b9). The interpretation that early arrival offsets fitness disadvantage (C34, C35) is reasonable given the data, though the proposed mechanism (pre-adaptation to facility conditions) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Priority effects predominantly operate at the bacterial type level through inhibitory mechanisms. Twenty bacterial types were significantly affected by colonization order, with 90% showing inhibitory priority effects (higher abundance when introduced first). No effects were observed at higher taxonomic levels (phyla, families, genera), and the taxonomic distribution of affected types mirrored the overall community profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are well-supported by linear mixed model analysis (C47) and compositional analysis (C48-C49). The inference that competitive interactions drive these observations (C50) is reasonable given the pattern of effects. The 90% inhibitory vs. 10% facilitative split (C51-C52) is clearly documented with examples in Figure 4A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Phylogenetic relatedness does not generally predict colonization success, but closely related bacterial types can exhibit niche pre-emption. Overall colonization success showed no relationship to phylogenetic distance to competing community members, but four specific instances were identified where closely related types (>97-99% 16S rRNA similarity) introduced early prevented establishment of related types arriving later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by phylogenetic analysis (Figure 4\u2014figure supplement 1) and specific examples (Figure 4B). The lack of overall phylogenetic signal (C53) combined with specific instances of related-type exclusion (C55) suggests niche overlap is important but not strictly phylogenetically conserved, supporting the inference in C54.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Arrival timing critically affects colonization success for bacterial strains with niche competitors but not for strains without close relatives in the resident community. L. reuteri Lpuph1 and C. cocleatum ATCC 29902T, which were 100% identical in 16S rRNA sequence to bacteria in the donor community, showed significantly higher colonization when introduced early (p=8.99\u00d710\u207b\u2078 and p<2.20\u00d710\u207b\u00b9\u2076, respectively). In contrast, B. vulgatus RJ2H1 and L. johnsonii DPPM, which had no closely related organisms in the donor community, colonized successfully regardless of arrival timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 are strongly supported by qPCR data (Figure 5B) with highly significant p-values and 16S rRNA sequence comparison (Figure 5C). The mechanistic interpretation linking niche overlap to priority effects (C63) is well-supported by the correlation between sequence identity and timing-dependence. The inference is further validated by citation to analogous findings in humans (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C103"
+    ],
+    "result": "Differences in arrival timing of just four bacterial strains can alter the long-term trajectory of gut microbiota assembly. Introduction of a four-strain cocktail at different time points (days 5, 14, 36) resulted in significantly different community structures at day 78 (p=0.041, R\u00b2=0.08), with 26 bacterial types differing in abundance across treatments, none of which were the introduced strains themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 and C103 demonstrate historical contingency through Adonis analysis with statistical significance. The finding that only 4 strains introduced at different times can measurably alter community trajectory (C70, C103) is particularly compelling. However, the effect size is modest (R\u00b2=0.08), and the lack of difference between day 14 and day 36 groups (C68) suggests a critical window rather than continuous timing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C71",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Historical contingency and priority effects occur independently of adaptive immunity. In Rag1-/- mice lacking adaptive immunity, colonization order still significantly affected microbiota structure (p<0.001, R\u00b2=0.25), with 43 bacterial types affected by colonization order (including 19 of 20 types affected in WT mice). The effect of colonization order (R\u00b2=0.15) exceeded that of adaptive immunity (R\u00b2=0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C71, C81-C86 demonstrate that adaptive immunity is not required for historical contingency through comparison of WT and Rag1-/- mice. The statistical support is strong (p<0.001), and the overlap of affected bacterial types between genotypes (C84) indicates similar mechanisms. The envfit analysis (C82) provides quantitative evidence that colonization history has a larger effect than adaptive immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The adaptive immune system modulates but is not essential for priority effects. Rag1-/- mice showed slightly lower diversity in some treatments (p=7.3\u00d710\u207b\u2074 for B/A) and different overall microbiota composition (p<0.001, R\u00b2=0.07) compared to WT mice. The enhanced colonization of donor B-specific bacteria when introduced early in WT mice was not observed in Rag1-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by statistical comparisons between WT and Rag1-/- mice (Figures 6B-E). The adaptive immune system affects specific bacterial types (C75, C76) and modulates some priority effects (C79, C80), but the overall effect size is small (R\u00b2=0.07). The interpretation that adaptive immunity contributes to but is not essential for priority effects is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Priority effects and historical contingency are enhanced in the absence of adaptive immunity. In Rag1-/- mice, L. johnsonii DPPM and B. vulgatus RJ2H1 showed timing-dependent colonization not observed in WT mice (p=1.69\u00d710\u207b\u2075 and p=0.004). The four-strain cocktail experiment showed larger effects in Rag1-/- mice (R\u00b2=0.19) compared to WT mice (R\u00b2=0.08), with 46 vs. 26 bacterial types affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C98 demonstrate paradoxically enhanced historical contingency in Rag1-/- mice through qPCR data (C88-C90), Adonis analysis (C91), and random forest analysis (C92-C93). The comparison of effect sizes (C97) and number of affected types (C96) provides quantitative support. The proposed mechanism involving increased selection pressure due to inflammation (mentioned in Discussion) is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Dispersal limitation causes cage effects through ecological drift. Mice housed in the same cage had more similar microbiota than mice in different cages within the same isolator (p<0.001 for AB/AB), and mice in different isolators showed the largest differences. Cage explained the most variance (R\u00b2=0.66), followed by isolator (R\u00b2=0.46) and colonization order (R\u00b2=0.21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are strongly supported by Adonis analysis with clear hierarchical effects (cage > isolator > colonization order). The interpretation that dispersal limitation causes cage effects even with standardized species pools (C44) is novel and important for experimental design. The inference about ecological drift (C45) is reasonable given the controlled conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Recipient mice harbor higher bacterial diversity than donor communities, suggesting unsaturated niche space. Recipient mice had significantly more bacterial types than donors (p=2\u00d710\u207b\u00b9\u2076) and higher Shannon diversity (p=1.13\u00d710\u207b\u2074), regardless of colonization order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are strongly supported by alpha-diversity analysis (Figure 2B-C) with highly significant p-values. The inference that niche space is unsaturated (C27) is reasonable, and the connection to ecological theory (C28) and fecal microbiota transplantation (C29) provides broader context. However, alternative explanations (e.g., transient colonizers, sampling depth) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Wild mouse microbiota can be successfully transferred and maintained in germ-free laboratory mice. Nearly complete transfer was achieved (99.5% of donor types found in recipients, 93.4% of recipient types found in donors), with 85% of donor A and 82% of donor B bacterial types detected in recipients after 4 weeks. Recipient microbiota clustered tightly with donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C116-C118 demonstrate successful microbiota transfer through sequencing data (Figure 1\u2014figure supplement 1). The high percentages and tight clustering support the conclusion that wild microbiota can be established in laboratory conditions. This validates the experimental model but is primarily a methodological validation rather than a novel biological finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Recipient communities resemble the donor community that arrived first. Overall cecal microbiomes clustered closer to donor A than B, with A/B mice clustering closer to donor A and B/A mice clustering closer to donor B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by NMDS analysis (Figure 3A-B) and Bray-Curtis dissimilarity measurements. This provides visual and quantitative evidence for priority effects at the community level. However, this result is somewhat redundant with the more comprehensive Adonis analysis (C40) and serves primarily as descriptive support for the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Alpha-diversity was not affected by timing of four-strain cocktail introduction. No differences in observed bacterial types (p=0.464) or Shannon Index (p=0.841) were detected across treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by alpha-diversity analysis (Figure 5D). This negative result is important for demonstrating that historical contingency affects community composition (beta-diversity) rather than richness (alpha-diversity), but it is a supporting rather than primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Rag1-/- mice show modest differences in microbiota diversity and composition compared to WT mice. Rag1-/- mice had slightly lower bacterial type numbers in B/A and AB/AB treatments (p=7.3\u00d710\u207b\u2074 and p=0.028) and different overall composition (p<0.001, R\u00b2=0.07), with 21 bacterial types differing in abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by statistical comparisons (Figure 6A-C). The small effect size (R\u00b2=0.07) and modest differences indicate that adaptive immunity has a measurable but limited role in shaping microbiota composition. This provides context for the main finding that historical contingency persists in Rag1-/- mice but is not a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Donor communities share substantial bacterial diversity. Of 395 total bacterial types detected, 101 were unique to donor A, 83 to donor B, and 211 were common to both. Arrival order did not affect colonization of donor A-specific types (p=0.0521).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 provide descriptive statistics about the donor communities and colonization patterns. The data is clearly presented and supports the experimental design, but these are primarily descriptive findings that set up the more important analyses of priority effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background on gut microbiota characteristics. The gut microbiota makes essential contributions to host functions, undergoes dynamic assembly after birth, becomes resilient once established, and exhibits high inter-individual variation (\u03b2-diversity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are standard background information supported by appropriate citations. These claims establish context but do not represent findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Host genetics and diet explain limited microbiota variation. Host genetic variation affects \u03b2-diversity in mice and humans, but most taxa show low heritability, genetic studies show low repeatability, and combined genetic and dietary factors account for only ~10% of variation each. Monozygotic twins show substantial individuality despite genetic similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15 summarize prior literature with appropriate citations. These claims establish the knowledge gap that motivates the current study but are not findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Ecological theory predicts historical contingency in microbiota assembly. Timing and order of species immigration can cause variation through priority effects and monopolization. Mammals are born germ-free and gradually acquire microbiota during a critical early-life window, with priority effects suggested to influence gut microbiota assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 establish the theoretical framework from ecological theory and prior microbiome research. These are appropriately cited background claims that motivate the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C104"
+    ],
+    "result": "Historical contingency may explain unexplained microbiota individuality. Colonization history illuminates a potential cause for high levels of unexplained individuality in host-associated microbial communities. Effects of species arrival history are predicted to be amplified over time and space, and historical events have the potential to contribute substantially to microbiome individuality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C102, and C104 extrapolate from the experimental findings to broader implications. While C100 is a reasonable inference from the data, C102 relies on citation to ecological theory without direct experimental support, and C104 is speculative about cumulative effects of hundreds of species. The claims are plausible but extend beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C113"
+    ],
+    "result": "Clinical implications for early-life interventions. Clinical and medical interventions early in life (antibiotics, C-sections, formula feeding) are likely to have longer lasting consequences, clinical practices could be adjusted to avoid priority effects, and priority effects could provide opportunities to prevent aberrant microbiomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 and C113 are speculative extrapolations to clinical practice. While the experimental findings support the importance of early colonization, the claims about clinical interventions and disease prevention (C105-C106, C113) go beyond what the mouse model data can directly support. These are reasonable hypotheses for future research but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Implications for microbiome modulation strategies. The gut microbiota is resilient to modulation once assembled, and colonization resistance is a major barrier. Bacterial strains can be stably established if closely related species are absent, but not if competitors are present. Early introduction achieves more permanent persistence and can divert the entire microbiota trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are background supported by citations. Claims C109-C112 are supported by the four-strain cocktail experiments (C109, C111-C112 from Figures 5B-E) and C110 is directly demonstrated. However, the practical implications for therapeutic interventions extend somewhat beyond the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Experimental model design and validation. The model uses 10-day-old germ-free mice (earliest age for safe gavage), employs MED analysis for single-nucleotide resolution, recapitulates real-life conditions while controlling variables, standardizes the regional species pool through gavage and isolators, making colonization order the only experimental variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C122 describe methodological choices and experimental design. These are well-justified and appropriately documented, representing sound experimental design rather than results. The model's strengths are clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Mechanistic considerations for Rag1-/- mice. Ex-germ-free Rag1-/- mice develop inflammation in response to bacterial colonization, and stronger selection is predicted to increase competition and priority effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 provide mechanistic context for interpreting Rag1-/- results. C123 is supported by citation, and C124 is supported by ecological theory citation. These help explain the paradoxical enhancement of priority effects in Rag1-/- mice but are interpretive rather than direct findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Theoretical framework for understanding microbiota characteristics. The paradoxical characteristics of gut microbiota (resilience and stability despite inter-individual variability) are consistent with stochastic historical events driving variability. Eco-evolutionary feedbacks ensure communities are composed of adapted members. Low dispersal enhances priority effects and \u03b2-diversity, potentially explaining higher individuality in industrialized societies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C129 present a theoretical framework integrating the findings with ecological theory. While internally consistent and supported by appropriate citations (C125-C128), these are interpretive syntheses rather than direct experimental findings. The speculation about industrialized vs. non-industrialized populations (C129) is particularly uncertain as it extends beyond the experimental system.",
+    "result_type": "MINOR"
+  }
+]

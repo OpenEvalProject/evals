@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript provides extensive background on prions, amyloid aggregates, and the yeast Sup35/[PSI+] system. These claims establish that prions are transmissible amyloid particles associated with diseases and functional roles, that amyloid formation involves nucleation and fibril elongation, that fragmentation increases growth-competent ends and is crucial for prion maintenance, and that synthetic Sup35NM fibrils can transfect yeast cells to induce the [PSI+] phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C30) are well-established facts in the prion and amyloid field, supported by extensive citations to prior research and general knowledge. They provide necessary context for the experimental work and are not contested by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Sup35NM polymerization in vitro shows sigmoidal kinetics with a lag phase of ~5 hr, exponential growth phase of 5-10 hr, and plateau after 20-30 hr. AFM imaging reveals that non-sonicated fibrils form large intertwined networks of long fibrils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are directly supported by the Thioflavin T fluorescence data (Figure 2a) and AFM images (Figure 2b). The sigmoidal kinetics are characteristic of amyloid formation and the AFM images clearly show the fibril network structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60"
+    ],
+    "result": "Controlled sonication progressively fragments Sup35NM fibrils, producing shorter and more dispersed particles. The average fibril length decreases from >210 nm to ~75 nm over 960 s of sonication, while particle width remains constant at ~7.1 nm. The fragmentation produces particles with dimensions consistent with sonication-induced scission of protein filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C52-C56, and C60 are well-supported by extensive AFM imaging and quantitative analysis (Figures 2b, 4, and Table 1). The data show clear trends in particle length reduction with sonication time while width remains constant, consistent with mechanical fragmentation along the fibril axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sucrose density gradient analysis shows that sonication shifts fibril material from heavier to lighter fractions, indicating size reduction. Less than 5% of protein remains as monomer, indicating near-complete polymerization and that sonication does not cause depolymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by the sucrose density gradient data (Figure 3a). The shift in distribution and low monomer content are clearly demonstrated, though the inference about depolymerization (C41) relies on comparison to other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "SDD-AGE analysis shows limited resolution of size changes after initial fibril network breakup (>15 s sonication). The in vivo [PSI+] prion particles overlap in size with in vitro samples sonicated >15 s but not with untreated samples. Non-sonicated synthetic fibrils cannot induce [PSI+], while [PSI+] cell extracts induce 10-40% [PSI+] cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are supported by SDD-AGE data (Figure 3b) and transfection experiments. The limitation of SDD-AGE (C45) is appropriately acknowledged. The comparison between in vivo and in vitro particles (C46-C47, C50-C51) is reasonable but involves some inference about which species are active prions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Non-sonicated Sup35NM fibrils form large networks that do not reflect in vivo prion particle size. Controlled sonication disperses these networks into smaller aggregates and eventually produces particles with size distributions overlapping with in vivo [PSI+] particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are well-supported by the combined AFM, SDD-AGE, and transfection data (Figures 2b, 3b). The inference that non-sonicated fibrils don't reflect in vivo particles is supported by their inability to transfect cells (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Fibril samples with average lengths from 231 nm to 69 nm show transfection efficiencies from 7% to 69%. Transfection efficiency correlates with particle concentration but deviates from simple linear behavior, suggesting that longer particles are less capable of inducing [PSI+] than equal numbers of shorter particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by extensive transfection data (Table 1, Figure 5b). The correlation with particle concentration is clear, and the deviation from linearity (non-zero x-intercept) supports the inference that particle size affects infectivity beyond simple concentration effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "All fibril samples can seed Sup35NM polymerization, with longer sonication producing more efficient seeding. Seeding ability depends solely on particle number (linear with concentration), not particle length. This rules out differential seeding ability and suggests that size-dependent transfection efficiency reflects differential membrane crossing ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are well-supported by seeding assays (Figure 5\u2014figure supplement 2). The linear relationship between seeding and particle concentration (C69) contrasts with the non-linear transfection relationship, supporting the inference that membrane crossing, not seeding ability, is size-dependent (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "There is a striking relationship between fibril length distribution and [PSI+] induction ability. A particle size threshold model with cutoff at ~200 nm (corresponding to ~7 MDa) explains the data: particles below this size can transfect cells while larger particles cannot. Infectivity depends on the concentration of particles within this optimal size range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C74-C78, and C93-C95 represent the central finding. The size threshold model is supported by: (1) the non-linear relationship between total particle concentration and transfection (C64-C65), (2) validation experiments showing equal transfection for samples with equal predicted active concentration (C74), and (3) AFM evidence of persistent clusters >200 nm (C77). The 200 nm cutoff is a simplified model but fits the data well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript discusses the broader context of prion transmission and amyloid infectivity. Fragmentation produces particles of ideal size for transmission. Disease-associated amyloids show prion-like transmission properties, suggesting infectivity exists on a spectrum. Prior work shows size-dependent infectivity in mammalian prions and that Sup35NM can infect mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C92 provide discussion context supported by citations to prior research. The speculation about transmissibility as a general property (C82, C88) and mechanisms (C84) is appropriately presented as inference rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The manuscript concludes that physical dimensions are important parameters for assessing amyloid infectivity. Large fibril networks are likely inert compared to small particles. The authors suggest that promoting assembly into large structures might control prion-like transmission and propose that understanding fragmentation mechanisms could lead to therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 represent conclusions and future directions. The main conclusion (C99) is well-supported by the experimental data. The suggestions about therapeutic strategies (C102-C103) are appropriately presented as speculation based on the findings. The citation to prior work on size-based intracellular propagation (C98) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  }
+]

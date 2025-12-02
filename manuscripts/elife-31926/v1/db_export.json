@@ -1,0 +1,2001 @@
+{
+  "submission": {
+    "id": "c3300c17-2fef-4b19-af58-ca318f13f4fd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:39:25.025372Z",
+    "updated_at": "2025-12-01T21:39:25.025372Z"
+  },
+  "content": [
+    {
+      "id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "submission_id": "c3300c17-2fef-4b19-af58-ca318f13f4fd",
+      "content_type": "manuscript",
+      "content_text": "# Daam2 driven degradation of VHL promotes gliomagenesis\n\n## Authors\n\n- Wenyi Zhu<sup>1</sup>\n- Saritha Krishna<sup>1</sup>\n- Cristina Garcia<sup>1</sup>\n- Chia-Ching John Lin<sup>1</sup>\n- Bartley D Mitchell<sup>3</sup>\n- Kenneth L Scott<sup>4</sup>\n- Carrie A Mohila<sup>5</sup>\n- Chad J Creighton<sup>6</sup>\n- Seung-Hee Yoo<sup>8</sup>\n- Hyun Kyoung Lee<sup>9</sup> \u2020\n- Benjamin Deneen<sup>1</sup> ([ORCID: 0000-0002-6335-1081](https://orcid.org/0000-0002-6335-1081)) \u2020\n\n### Affiliations\n\n1. Center for Cell and Gene Therapy Baylor College of Medicine Houston United States\n2. The Integrative Molecular and Biomedical Sciences Graduate Program Baylor College of Medicine Houston United States\n3. Department of Neurosurgery Baylor College of Medicine Houston United States\n4. Department of Human and Molecular Genetics Baylor College of Medicine Houston United States\n5. Department of Pathology Texas Children\u2019s Hospital Houston United States\n6. Dan L Duncan Cancer Center, Division of Biostatistics Baylor College of Medicine Houston United States\n7. Department of Medicine Baylor College of Medicine Houston United States\n8. Department of Biochemistry and Molecular Biology The University of Texas Heath Science Center at Houston Houston United States\n9. Department of Pediatrics, Division of Neurology Baylor College of Medicine Houston United States\n10. Neurological Research Institute Texas Children\u2019s Hospital Houston United States\n11. Department of Neuroscience Baylor College of Medicine Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVon Hippel-Landau (VHL) protein is a potent tumor suppressor regulating numerous pathways that drive cancer, but mutations in VHL are restricted to limited subsets of malignancies. Here we identified a novel mechanism for VHL suppression in tumors that do not have inactivating mutations. Using developmental processes to uncover new pathways contributing to tumorigenesis, we found that Daam2 promotes glioma formation. Protein expression screening identified an inverse correlation between Daam2 and VHL expression across a host of cancers, including glioma. These in silico insights guided corroborating functional studies, which revealed that Daam2 promotes tumorigenesis by suppressing VHL expression. Furthermore, biochemical analyses demonstrate that Daam2 associates with VHL and facilitates its ubiquitination and degradation. Together, these studies are the first to define an upstream mechanism regulating VHL suppression in cancer and describe the role of Daam2 in tumorigenesis.\n\n## Introduction\n\nTumor suppressor and oncogenic pathways function in part by subverting existing cellular programs to promote cancer \u2018hallmark\u2019 properties that engender malignant growth (Hanahan and Weinberg, 2011). This corruption of normal cellular physiology is mediated by aberrant activities of these tumorigenic pathways, which are predominantly driven by genetic mutation. Importantly, genetic mutation is not the sole source of this dysregulation, as changes in gene expression via promoter methylation or protein turnover can phenotypically resemble driver mutations and contribute to tumorigenesis (Esteller et al., 1999; Hegi et al., 2004; Pineda et al., 2015; Reinstein and Ciechanover, 2006; Semenza, 2003; Shen et al., 2005; Z\u00f6chbauer-M\u00fcller et al., 2001). While these broad regulatory processes have been linked to cancer, the underlying molecular mechanisms that regulate expression of key components of tumorigenic pathways are very poorly characterized.\n\nVHL is a key tumor suppressor that is mutated in Von Hippel-Landau disease, a hereditary cancer predisposition syndrome that often manifests as clear-cell renal carcinoma (ccRCC) (Chen et al., 1995; Gossage et al., 2015; Kim and Kaelin, 2004; Maher et al., 1990). VHL functions by binding to HIF1\u03b1 and hydroxylated Akt and modulating their degradation and activity, respectively. Mutant forms of VHL associated with ccRCC are incapable of binding HIF1\u03b1 or pAkt, resulting in stabilized expression and activation of these proteins, which ultimately facilitates tumorigenesis (Guo et al., 2016; Ivan et al., 2001; Jaakkola et al., 2001; Maxwell et al., 1999; Min et al., 2002; Ohh et al., 2000). While dysregulated HIF1\u03b1 and pAkt are associated with most forms of cancer, mutations in VHL are found predominately in ccRCC. This dichotomy suggests that additional regulatory mechanisms oversee VHL dysregulation or inactivation in other malignancies. Indeed recent studies in glioma have shown that ID2 can interfere with VHL activity in cell lines (Lee et al., 2016) and that it\u2019s subject to regulation by microRNAs (Li et al., 2017). Nevertheless, the upstream mechanisms that directly regulate VHL expression and protein turnover in cancer remain poorly defined.\n\nOne potential mode of tumor suppressor gene regulation is through developmental mechanisms. Developmental processes directly contribute to all forms of malignancy and are utilized by tumorigenic pathways to maintain cells in an undifferentiated and proliferative state (Jackson et al., 2006; Kesari et al., 2005; Stiles and Rowitch, 2008). Given these established molecular and functional interactions, it stands to reason that expression of tumorigenic pathways may be reciprocally regulated by developmental mechanisms. However, whether such reciprocal regulation of tumor suppressor pathways by developmental factors contributes to tumorigenesis is poorly defined.\n\nTo investigate the interface between developmental programs and the regulation of tumor suppressor pathways, we used malignant glioma as a model system. As a molecular entry point for these studies, we focused on Daam2, a key developmental regulator that suppresses glial differentiation and also contributes to dorsal patterning in the developing CNS (Lee et al., 2015; Lee and Deneen, 2012). Here we found that Daam2 promotes tumorigenesis in mouse and human models of malignant glioma. Bioinformatics analysis revealed that Daam2 and VHL expression is inversely correlated across a host of human malignancies. These in silico observations are corroborated by in vivo functional studies, which revealed that Daam2 promotes tumorigenesis by suppressing VHL expression. Mechanistically, we found that Daam2 associates with VHL and facilitates its degradation by the ubiquitin pathway. Together, these studies represent the initial characterization of Daam2 function in glioma and define, for the first time, an upstream regulatory mechanism that controls VHL protein expression in cancer. Moreover, because mutations in VHL are restricted to a limited set of malignancies, we have identified a new mechanism for VHL inactivation in tumors that do not have inactivating mutations.\n\n## Results\n\n### Daam2 is expressed in human and mouse glioma\n\nPreviously, we identified Daam2 as a component of the Wnt receptor complex that directly contributes to dorsal patterning in the embryonic spinal cord and oligodendrocyte differentiation during development and after injury (Lee et al., 2015; Lee and Deneen, 2012). To further explore its role in neurological diseases, we sought to investigate its role in malignancies of the CNS. Towards this we took advantage of the TCGA pan-cancer expression data set (Akbani et al., 2014; Weinstein et al., 2013) and evaluated Daam2 expression across a spectrum of 34 malignancies, finding that it\u2019s most highly expressed in low-grade glioma (LGG) and glioblastoma multiforme (GBM) (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig1-v1.jpg)\n\n**Figure 1.:** (A) Analysis of Daam2 RNA expression across a spectrum of cancers. Data was generated by TCGA Research Network and is publicly available (see methods). Box plots represent 5%, 25%, 50%, 75%, and 95%. Asterisk denotes tumor groups significantly higher (red) or lower (blue) as compared to corresponding non-tumor (\u2018normal\u2019) group. P-values were generated by t-test on log-transformed data. (B) Examples of pathological grading of in situ hybridization analysis of Daam2 expression in human glioma tissue microarrays. Note that a score of 0 demonstrates no expression, while a score of 3 denotes very high expression. (C) Graded pathological scoring (0-low intensity, 3-high intensity) of Daam2 expression in the samples in B; values are the percentage of LGG and GBM tumors from the tissue microarray that were assigned respective score. (D) Immunohistochemistry analysis of Daam2-LacZ expression in mouse glioma generated in Daam2LacZ/+ mice.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Tissue microarray showing in situ hybridization expression analysis of human DAAM2 across 35 LGG (red boxes) and 40 GBM (green boxes). Blue box denotes normal human brain samples. (B) qRT-PCR analysis of DAAM2 in primary human glioma samples and associated non-tumor, white matter. (C\u2013H) Expression of DAAM2 in xenograft tumors generated from GBM1 and GBM2 cell lines. (D\u2013E, G\u2013H) high magnification images of in situ hybridization using antisense probes showing expression of Daam2 mRNA in these tumors. (C, F) Low magnification images of xenograft tumors from GBM1 and GBM2 cell lines showing widespread expression of Daam2 in these tumors. Scale bar in E is 50 nm and is applicable to D-E, G-H.\n\nTo validate DAAM2 expression in human LGG and GBM, we used in situ hybridization (ISH) across a cohort of 35 LGG and 40 GBM primary human samples, finding that DAAM2 demonstrates heterogeneous expression within each glioma sub-type (Figure 1B\u2013C; Figure 1\u2014figure supplement 1). Notably, the majority of tumors exhibited staining intensity scores that exceeded normal brain samples, indicating that Daam2 expression is elevated within glioma tumors. In addition, we assessed DAAM2 expression via qRT-PCR in primary human glioma samples and non-tumor white matter, and consistent with the tissue microarray data, we found that Daam2 expression is elevated in a majority of these primary samples (Figure 1\u2014figure supplement 1). Next, we evaluated Daam2 expression in our mouse model of malignant glioma, where we combine in utero electroporation (IUE), with CRISPR-mediated deletion of Nf1, Pten, and Trp53 (herein CRISPR/IUE) (Figure 2\u2014figure supplement 1) (Chen et al., 2016; Chen and LoTurco, 2012; Chen et al., 2012; Cong et al., 2013; John Lin et al., 2017). This model closely resembles the genetics of GBM (Alcantara Llaguno et al., 2009; Kwon et al., 2008; Zhu et al., 2005) and begins producing tumors detectable around post-natal week 8. Combining this model, with our the Daam2-LacZ mouse line, we performed immunostaining on the resultant tumors, finding that Daam2 exhibits elevated expression levels in tumors, compared to normal brain tissue (Figure 1D; Figure 2\u2014figure supplement 1). Finally, we evaluated Daam2 expression in xenograft tumors generated from primary human GBM cell lines, finding that Daam2 is also highly expressed in these human cell line models (Figure 1\u2014figure supplement 1). Put together, these studies indicate that Daam2 expression is elevated in both human LGG and GBM and is expressed in the associated model systems.\n\n### Overexpression of Daam2 accelerates glioma tumorigenesis\n\nThe expression analysis in human glioma and associated mouse models led us to examine whether Daam2 contributes to glioma tumorigenesis. To assess its role in glioma, we performed overexpression, gain-of-function (GOF) studies in human GBM cell lines, finding that Daam2 accelerates the rate of cell growth in vitro (Figure 2A\u2013B,F). Next, we determined how Daam2 influences anchorage independent growth, via soft agar assay, finding that it also accelerates colony formation (Figure 2C\u2013E). Together, these in vitro studies, indicate that Daam2 promotes cell proliferation and growth in human GBM cell lines\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013B) Cell proliferation analysis of human GBM1 and GBM2 cell lines infected with lentivirus containing Daam2 or GFP control. (C\u2013D) Soft agar assay with GBM1 cell line infected with lentivirus containing Daam2 or GFP control, images are representative. Each of these in vitro experiments was performed in triplicate and replicated three times; quantification is in E, **p=0.036. (F) Representative immuoblots showing ectopic expression of flag-tagged Daam2 in GBM-1 cell line. (G\u2013I) Representative bioluminescence imaging of mice bearing CRISPR-IUE glioma with Daam2 overexpression or control, imaged at 7 weeks of age. Imaging quantification in I is derived from 7 Daam2-overexpression and eight control mice; *p=0.0079. (J\u2013L) Immunohistochemistry analysis of BrdU expression from mice bearing CRISPR-IUE glioma from each experimental condition. Relative number of BrdU expressing cells is quantified in L and is derived from six total mice, four slides per mouse, from each experimental condition; ***p=0.0019. Scale bar in J is 50 nm. Error bars in E, I and L are\u00a0\u00b1\u00a0SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic illustrating the in utero electroporation manipulation used in these model systems to introduce oncogenes or Cas9/guideRNAs for CRISPR gene editing. (B) Timelines illustrating the embryonic electroporation manipulations and the onset of glioma in both the PB-Ras and CRISPR-IUE models. (C) Constructs used to generate glioma in both models. (D\u2013F) Representative images from PB-Ras model at P14; D is whole brain image, E is cross section, and F is H&E staining for histopathological analysis. (G\u2013I) Representative images from CRISPR-IUE model at P70; G is whole brain image, H is cross section, and I is H&E staining for histopathological analysis. (J) Kaplan-Meier Survival Curve for the CRISPR-IUE model. (K\u2013P) Brain cross section demonstrating Daam2 expression in cortical hemispheres using ISH (L,O) and IHC (M,P) in our Ras (K\u2013M) and CRISPR (N\u2013P) mouse models of glioma. Dashed line shows the cortical midline, with the tumor bearing side of the cortex denoted by the red arrow in K and N. (Q\u2013R) IHC showing Daam2-LacZ expression in GFAP-expressing astrocytes in cortex at P14 and adult mice (8 week). Arrows denote co-expression of GFAP and LacZ.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Representative bioluminescence imaging of mice bearing PB-Ras glioma with Daam2 overexpression or control, imaged at 10 days post-natal. Imaging quantification in E is derived from 17 Daam2-overexpression and 20 control mice; *p=0.0019. (C\u2013D) Immunohistochemistry analysis of BrdU expression from mice bearing PB-Ras glioma from each experimental condition. Relative number of BrdU expressing cells is quantified in F and is derived from six total mice, four slides per mouse, from each experimental condition; ***p<0.0001. Scale bar in C is 50 nm. Error bars in E-F are\u00a0\u00b1\u00a0SEM.\n\nTo evaluate the role of Daam2 in tumorigenesis, we turned to mouse models of malignant glioma. The first model combines targeted PiggyBac overexpression of oncogenic Ras-V12 (PB-Ras) in glial precursors with IUE, to generate malignant glioma in mice around post-natal day 14 (Figure 2\u2014figure supplement 1). Combining PiggyBac-mediated overexpression of Daam2 with this Ras-driven model resulted in an acceleration of tumorigenesis (Figure 2\u2014figure supplement 2). To further substantiate these findings in additional mouse models, we next used our CRISPR/IUE model (Figure 2\u2014figure supplement 1). Consistent with the Ras model, combined overexpression of Daam2 in the CRISPR/IUE model, also resulted in accelerated tumorigenesis (Figure 2G\u2013I). BrdU labeling analysis of the resulting tumors from both models revealed that overexpression of Daam2 results in an increase in the number BrdU-expressing cells (Figure 2J\u2013L; Figure 2\u2014figure supplement 2). These data, combined with our in vitro studies, indicate that overexpression of Daam2 promotes glioma cell proliferation and tumorigenesis.\n\n### Loss of Daam2 impairs glioma tumorigenesis\n\nTo further delineate the role of Daam2 in glioma, we next performed a series of complementary loss-of-function (LOF) studies in human and mouse glioma models. In human GBM cell lines we performed shRNAi-mediated knockdown of human Daam2, finding that decreased expression of Daam2 inhibited their rate of growth in vitro (Figure 3A\u2013B; Figure 3\u2014figure supplement 1). Next, we assessed the tumorigenic potential of these GBM cell lines, finding that knockdown of Daam2 resulted in a significant decrease in tumor growth in vivo (Figure 3C\u2013E). These knockdown studies across both in vitro and in vivo systems, complement the overexpression studies, and further substantiate the role of Daam2 in glioma cell proliferation and tumorigenesis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig3-v1.jpg)\n\n**Figure 3.:** (A) qRT-PCR demonstrating effective knockdown of human Daam2 mRNA expression in human GBM1 cell line infected with lentivirus containing Daam2-shRNAi or scrambled control. (B) Cell proliferation analysis of human GBM1 cell line infected with human Daam2-shRNAi or scrambled control lentivirus. (C\u2013E) Representative bioluminescence imaging of mice transplanted with GBM1 cell lines transfected with Daam2-shRNAi or scrambled control, imaged 6 weeks post-transplantation. Imaging quantification is derived from seven mice transplanted with GBM1/Daam2-shRNAi and 5 GBM1/scrambled controls; *p=0.0325. (F\u2013H) Representative bioluminescence imaging of mice bearing CRISPR-IUE glioma generated in Daam2\u00a0\u00b1 or Daam2-/- mice, imaged at 8 weeks of age. Imaging quantification is derived from 8 Daam2-/- and 9 Daam2\u00a0\u00b1 mice; **p=0.0049. (I\u2013K) Immunohistochemistry analysis of BrdU expression from mice bearing CRISPR-IUE glioma from each experimental condition. Relative number of BrdU expressing cells is quantified in K and is derived from six total mice, four slides per mouse, from each experimental condition; ****p=0.00001. Scale bar in I is 50 nm. Error bars in E, H and K are\u00a0\u00b1\u00a0SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Rescue of growth defects manifest in Daam2-shRNAi knockdown cell lines via overexpression of mouse Daam2. In both cases overexpression of mouse Daam2 in the presence of the Daam2-shRNAi (blue line) rescued the growth defects present with Daam2-shRNAi alone (red line). (B) Immunoblot showing ectopic expression of flag-tagged Daam2 in GBM1/2 cell lines expressing the Daam2-shRNAi.\n\nTo further evaluate the necessity for Daam2 in glioma tumorigenesis, we used CRISPR/IUE model to generate malignant glioma in Daam2+/- and Daam2\u2212/\u2212 mice (Lee et al., 2015). As shown in Figure 3F\u2013H, mice lacking Daam2 demonstrated decreased rates of tumor formation in this model compared to the heterozygote control. Moreover, BrdU labeling revealed substantial decreases in the number of proliferating cells in Daam2\u2212/\u2212 tumors (Figure 3I\u2013K). Together, our LOF, and complementing GOF (Figure 2) studies in human and mouse models of glioma indicate that Daam2 promotes cell proliferation and tumorigenesis.\n\n### Daam2 suppresses VHL expression\n\nHaving established that Daam2 functions to promote glioma tumorigenesis, we next sought to uncover the mechanism by which it operates. Previously, we found that Daam2 functions as a positive regulator of Wnt-signaling in the developing CNS (Lee and Deneen, 2012), suggesting that it may also function in this manner in glioma. To evaluate Wnt-activity we used an established Wnt-reporter (TOP-FLASH) and found that modulation of Daam2 expression has a modest effect on Wnt activity in glioma cell lines and did not impact Wnt activity in our mouse model of glioma (Figure 4\u2014figure supplement 1).\n\nThat Wnt-activity is not affected by changes in Daam2 expression raises the question of how Daam2 promotes glioma tumorigenesis. To identify changes in protein expression associated with Daam2-mediated tumorigenesis we performed reverse phase protein lysate microarray (RPPA) on FACS-isolated mouse glioma samples that overexpress Daam2. Analysis revealed a cohort of proteins that are strongly downregulated in glioma samples that overexpress Daam2 (Figure 4A; Figure 4\u2014figure supplement 1; Supplementary file 1). To further substantiate these potential relationships, we leveraged existing TCGA RNA-Seq and RPPA data to determine whether there is an inverse correlation between Daam2 expression and this cohort of proteins across a spectrum of human malignancies (Figure 4\u2014figure supplement 2). This analysis identified von Hippel Landau (VHL) as one of the proteins from this cohort with the most significant inverse correlation score across this spectrum of malignancies, with lung adenocarcinoma and GBM demonstrating the strongest negative correlations between Daam2 and VHL (Figure 4B; Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig4-v1.jpg)\n\n**Figure 4.:** (A) Heatmap analysis of RPPA data showing the core cohort of proteins downregulated by overexpression of Daam2 in the PB-Ras mouse glioma model. (B) Correlation of Daam2 mRNA expression with VHL and Akt pS473 protein expression data and HIF1\u03b1 mRNA expression. Protein and mRNA expression data from samples was obtained from The Cancer Proteome Atlas (TCPA) and correlations with Daam2 mRNA was performed using Pearson\u2019s. Abbreviated cancer type is listed on top panel and number of tumors analyzed in the TCPA dataset for each cancer type is listed in parenthesis; GBM is denoted by green text. Cancer type abbreviations: BLCA: bladder urothelial carcinoma, COAD: Colon Adenocarcinoma, HNSC: head and neck squamous cell carcinoma, READ: rectal carcinoma, LUSC: lung squamous cell carcinoma, UCEC: uterine corpus endometrial carcinoma, BRCA: breast adenocarcinoma, LUAD: lung adenocarcinoma, OV: ovarian serous carcinoma, KIRC: kidney renal clear cell carcinoma, GBM: glioblastoma multiforme. (C\u2013F) Representative immunohistochemical analysis of VHL expression in CRISPR-IUE glioma tumors derived from Daam2-overexpression (D) or knockout of Daam2 (F) and associated controls. (G\u2013J) Representative immunohistochemical analysis of Akt pS473 expression in CRISPR-IUE glioma tumors derived from Daam2-overexpression (H) or knockout of Daam2 (J) and associated controls. Images are representative of analysis performed on six independent tumors for each experimental condition. (K) Immunoblot with antibodies against HIF1\u03b1, Glut1, and VEGFA from protein lysates derived from CRISPR-IUE glioma overexpressing Daam2 or control. Scale bars in C and G are 50 nm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Luciferase reporter assay using Wnt reporter (TOP-Flash) in GBM1 cell lines. Cell line was transfected with Daam2, GFP control, with and without Wnt3a, and the TOP-FLASH reporter to measure Wnt activity. Note that Daam2 alone does not activate Wnt reporter; activation by Daam2 requires presence of canonical Wnt ligand, Wnt3a. Activation by Daam2 in the context of Wnt3a is very mild\u00a0~\u00a01.8 fold. Each experiment was performed in triplicate, with three replicates for each group. (B) FACS analysis of the relative number of TOP-FLASH-BFP expressing cells in our PB-Ras model. We performed IUE with the PB-Ras model and included Daam2 overexpression (GOF) along with the TOP-FLASH-BFP construct. In addition, we generated PB-Ras glioma in our Daam2\u00a0\u00b1 and Daam2-/- mice (LOF) that were also electroporated with the TOP-FLASH-BFP reporter. At post-natal day 12, tumors were harvested, dissociated and subjected to FACS analysis, where we assessed the relative number of BFP+/GFP\u00a0+\u00a0cells within the tumor as an index of Wnt activity across the respective experimental conditions in both the GOF and LOF studies. (C\u2013D) Representative immunohistochemistry staining of PB-Ras, Daam2-GOF tumors with \u03b2-catenin antibodies. This analysis was performed on six different tumors for each condition, four slides per tumor. (E) Heatmap representation of median centered unsupervised hierarchical clustering of RPPA protein expression analysis from P7 and P14 PB-Ras glioma subjected to Daam2-GOF. Please see Supplementary file 1 for the raw data and the methods section for additional details. Note that the bracket denotes a core set of proteins that are downregulated in the presence of Daam2. These proteins are featured in Figure 4a.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Correlation of Daam2 mRNA expression with the core set of proteins downregulated in the PB-Ras Daam2-GOF RPPA analysis. Please also see Figure 4a and\u00a0Figure 4\u2014figure supplement 1,\u00a0panel\u00a0E. Across a broad spectrum of cancers. Protein and mRNA expression data across this broad spectrum of cancer was derived from samples obtained from The Cancer Proteome Atlas (TCPA) and correlations with Daam2 mRNA was performed using Pearson\u2019s. Abbreviated cancer type is listed on top panel and number of tumors analyzed in the TCPA dataset for each cancer type is listed in parenthesis. VHL is highlighted in red box. (B\u2013G) Immunostaining showing Daam2-LacZ and VHL expression in the adult cortex from Daam2LacZ/+ and Daam2LacZ/LacZ mice. Note that the levels of VHL that are co-expressed with Daam2-LacZ are increased in the Daam2LacZ/LacZ mice compared to Daam2LacZ/+ mice (C v. (F).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Representative immunohistochemistry staining of the vascular marker, CD31, in our glioma model, across a series of experimental manipulations. (A\u2013B) CRISPR-IUE glioma in the context of Daam2 GOF and associated control, (C\u2013D) CRISPR-IUE glioma generated in Daam2\u00a0\u00b1\u00a0and Daam2-/- mice; quantification in E-F. In E, *p=0.033. In F, p=0.0026. (G\u2013J) PB-Ras glioma in the context of VHL-GOF, Daam2-GOF, Daam2\u00a0+\u00a0VHL, and control. This analysis was performed on six different tumors for each condition, four slides per tumor. Quantification is in K: *p=0.034, **p=0.044, and ***p=0.023. In E, F, and K error bars are\u00a0\u00b1\u00a0SEM.\n\nVHL is an established tumor suppressor that is frequently mutated in clear cell renal carcinoma (ccRCC) and functions by facilitating the degradation of HIF1\u03b1 and pAkt (Guo et al., 2016; Ivan et al., 2001; Jaakkola et al., 2001; Maxwell et al., 1999; Min et al., 2002; Ohh et al., 2000). Given that Daam2 expression is inversely correlated with VHL, we next assessed whether Daam2 demonstrates congruent correlation with HIF1\u03b1 and pAkt in the panel of human cancers. Analysis of these data revealed that Daam2 expression was positively correlated with HIF1\u03b1 and pAkt protein expression across this cohort of malignancies, with GBM and lung adenocarcinoma also showing the strongest positive correlation (Figure 4B). Together, our RPPA screen and associated bioinformatics analysis of human malignancies indicate that Daam2 expression is inversely correlated with VHL expression and positively correlated with its downstream signaling axis.\n\n### Daam2 promotes tumorigenesis through VHL\n\nThe RPPA data suggests that Daam2 modulates expression of VHL in glioma. To directly test this hypothesis, we evaluated expression of VHL and its signaling axis in our Daam2-GOF and Daam2-LOF mouse tumor models. Immunostaining for VHL in these models corroborated our RPPA data, where VHL expression was dramatically reduced in Daam2-GOF tumors, and increased in the Daam2\u2212/\u2212 tumors (Figure 4C\u2013F). In addition, we also observed elevated levels of VHL protein in the brains of Daam2-/- mice, further reinforcing these expression dynamics (Figure 4\u2014figure supplement 2). Next we assessed expression of VHL\u2019s downstream effectors, pAkt and HIF1\u03b1, finding that both of these proteins demonstrated elevated levels of expression in the Daam2-GOF tumors, and pAkt having decreased levels in the Daam2\u2212/\u2212 tumors (Figure 4G\u2013K). One prediction of elevated HIF1\u03b1 is a concomitant increase in the expression of its target genes. Therefore we assessed the expression of HIF1\u03b1 targets Glut1 and VEGFA in the Daam2-GOF tumors, finding that these proteins also demonstrate increased expression (Figure 4K). Finally, one consequence of these changes in gene expression is elevated levels of angiogenesis (Fan et al., 2014; Keith and Simon, 2007; Semenza, 2004), which we detected in Daam2-GOF tumors via staining for the endothelial marker, CD31 (Figure 4\u2014figure supplement 3). These data, combined with our bioinformatics analysis, indicate that Daam2 suppresses VHL-signaling in malignant glioma.\n\nThese observations raise the question of whether the effects of Daam2 on glioma tumorigenesis are mediated through its suppression of VHL expression.\n\nTo determine whether an epistatic relationship exists, we overexpressed VHL in the presence of Daam2 overexpression in human GBM cell lines, finding that VHL suppresses the increased rate of cell growth mediated by Daam2-alone (Figure 5A\u2013C). Next, we extended these studies to our mouse models of glioma, finding that combined overexpression of VHL with Daam2 similarly suppressed the accelerated rate of tumorigenesis and proliferation mediated by Daam2-alone (Figure 5D\u2013O; T-V). Moreover, overexpression of VHL resulted in concordant suppression of pAkt and angiogenesis in these tumors (Figure 5P\u2013S; Figure 4\u2014figure supplement 3). Put together, these data indicate that Daam2 promotes tumorigenesis by suppressing VHL expression in glioma.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) Cell proliferation analysis of human GBM1 and GBM2 cell lines infected with lentivirus containing GFP control, Daam2, VHL, or Daam2\u00a0+VHL. Associated immunoblots are in C. (D\u2013G, U) Representative bioluminescence imaging of mice bearing PB-Ras glioma with Daam2 overexpression, VHL overexpression, Daam2\u00a0+VHL overexpression, or control, imaged at 10 days post-natal. Imaging quantification in U is derived from 10 Daam2-overexpression, 9 VHL overexpression, 6 Daam2\u00a0+VHL, and 12 control mice; *p=0.0001, **p=0.0046, ***p=0.0016 (H\u2013K, V) Immunohistochemistry analysis of BrdU expression from mice bearing PB-Ras glioma from each experimental condition. Relative number of BrdU expressing cells is quantified in V and is derived from six total mice, four slides per mouse, from each experimental condition; *p=0.0006, **p=0.0009, ***p<0.0001. (L\u2013O) Representative immunohistochemical analysis of VHL expression in PB-Ras glioma from described experimental conditions and associated controls. (P\u2013S) Representative immunohistochemical analysis of Akt pS473 expression in PB-Ras glioma tumors derived from the described experimental conditions and associated controls. (T) Representative immunoblot showing overexpression of Daam2 and VHL in the various experimental conditions. Images in L-O are representative of analysis performed on six independent tumors for each experimental condition. Statistics derived by one-way analysis of variance (ANOVA) and followed by Tukey\u2019s test for between-group comparisons. Scale bar in F is 50 nm. Error bars in U and V are\u00a0\u00b1\u00a0SEM.\n\n### Daam2 facilitates ubiquitination of VHL protein\n\nAnalysis of human cancer data, along with our functional studies in mouse models, strongly suggests that Daam2 expression results in the loss of VHL protein. To determine the mechanism by which Daam2 influences the levels of VHL protein, we next performed a series of immunoprecipitation experiments to evaluate the biochemical relationship between Daam2 and VHL. Using protein lysates extracted from our PB-Ras model of glioma, we found that Daam2 co-immunoprecipitates with VHL (and vice versa), suggesting that these proteins associate (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31926/elife-31926-fig6-v1.jpg)\n\n**Figure 6.:** (A) Immunoprecipitation of Flag-Daam2, followed by immunoblot with VHL on lysates derived from PB-Ras glioma overexpressing Flag-Daam2. Detection of endogenous VHL in the \u2018IP\u2019 lane, indicates Daam2 associates with VHL in mouse glioma. The reverse IP was also performed using HA-VHL to pulldown Flag-Daam2. (B,D) 293 cells were transfected with VHL and Daam2 (or control). 24 hr after transfection, cells were treated with 40 \u03bcg/ml cycloheximide (proteasome inhibitor) and incubated for the indicated time before harvest. Western blotting was performed to monitor VHL levels using anti-VHL antibody. Quantification in D shows the effect of Daam2 on VHL stability. Half-life of VHL (5.082 hr) was significantly decreased in the presence of Daam2 (3.679 hr). Error bars represent mean\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). Half-life was determined via nonlinear, one-phase exponential decay analysis (half-life parameter, K, is significantly different in two conditions: p=0.0081). Error bars represent mean\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). (C) Daam2 enhances VHL ubiquitination. 293 T cells were co-transfected with Flag-VHL, HA-UB(ubiquitin), and Myc-Daam2. Cells were treated with MG132 (10 ug/ml) 6 hr before harvest. Whole-cell lysate were immunoprecipitated with anti-Flag M2 beads then analyzed by western blotting with Flag and HA antibodies.\n\nGiven that Daam2 associates with VHL, and expression of VHL protein is negatively correlated with Daam2, we hypothesized that these expression dynamics are the result of Daam2 promoting the degradation of VHL. To test this we co-transfected Daam2 and VHL in 293 cells, and measured the rate of cyclohexamide-mediated degradation, finding that VHL degradation is enhanced in the presence of Daam2 (Figure 6B,D). The ubiquitination pathway is a central mechanism that oversees protein degradation, (Pickart and Eddins, 2004; Kerscher et al., 2006; Ulrich and Walden, 2010), therefore, we next examined whether Daam2 facilitates the ubiquitintion of VHL. Using in vitro systems, we found that in the presence of elevated levels of Daam2, the extent of VHL ubiquitination is substantially increased and levels of VHL protein demonstrate a concomitantly decrease (Figure 6C). Together, these mechanistic studies reveal that the underlying biochemical relationship between Daam2 and VHL is mediated by ubiquitin-driven protein degradation.\n\n## Discussion\n\nUsing factors critical for central nervous system (CNS) development as an entry point to identify new mechanisms that contribute to tumorigenesis, we found that the glial development factor, Daam2 promotes glioma tumorigenesis across human glioma cell lines and multiple mouse models of glioma. Protein screening and bioinformatics studies revealed that Daam2 and VHL expression is inversely correlated across a broad spectrum of cancers, while functional interrogation of this relationship demonstrated that Daam2 promotes tumorigenesis via suppression of VHL expression. Mechanistically, Daam2 associates with VHL and stimulates its ubiquitination and degradation. Together, these studies are the first to define an upstream mechanism regulating VHL protein turnover in cancer and describe the role of Daam2 in tumorigenesis.\n\n### Daam2 stimulates glioma tumorigenesis\n\nLeveraging existing TCGA expression data across a broad spectrum of malignancies, we found that Daam2 is most highly expressed in glioma and melanoma. These expression characteristics in glioma were confirmed using tissue arrays and functional studies revealed that Daam2 promotes cell proliferation and tumorigenesis in human and mouse glioma models. These are the first studies to describe the role of Daam-family proteins in tumorigenesis. Daam1 and Daam2 have highly conserved formin domains yet exhibit non-overlapping expression patterns in the developing CNS (Habas et al., 2001; Kida et al., 2004; Lee and Deneen, 2012; Nakaya et al., 2004), suggesting distinct functions during development. Indeed, Daam2 functions in this context via canonical Wnt-signaling, while Daam1 operates via the non-canonical Wnt, planar cell polarity (PCP) pathway (Habas et al., 2001; Lee and Deneen, 2012; Li et al., 2011; Liu et al., 2008; Zhu et al., 2012). It will be important to discern whether this functional diversity between Daam1 and Daam2 is also applicable to CNS malignancies. Given that the PCP pathway has been implicated in tumor cell invasion and migration (Anastas and Moon, 2013; Paw et al., 2015; Weeraratna et al., 2002), it is possible that Daam-family proteins also contribute to these features of tumorigenesis. Recent studies have implicated Daam1, Daam2 and other formin-family genes in the migration of breast and neuroblastoma cell lines (Luga et al., 2012), respectively, suggesting that the Daam-family proteins may also contribute to invasion and metastasis in other malignancies.\n\nOur previous studies have shown that Daam2 potentiates canonical Wnt signaling through the clustering of existing Wnt receptor complexes (Lee and Deneen, 2012). While the Wnt pathway has been implicated in several forms of cancer, including medulloblastoma, mutations in key components of the Wnt-pathway and dysregulated Wnt-signaling has not been widely linked to low- or high-grade glioma (Bienz and Clevers, 2000; de La Coste et al., 1998; Klaus and Birchmeier, 2008; Lustig and Behrens, 2003; Morin et al., 1997; Rubinfeld et al., 1997; Zurawel et al., 1998). This, coupled with the fact that Daam2 acts upon existing Wnt receptor complexes, may explain why we did not witness any overt changes in Wnt activity when we manipulated Daam2 expression in our glioma models. Nevertheless, we cannot formally rule out a possible role for Daam2 in canonical or non-canonical Wnt signaling in glioma or in other malignancies driven by Wnt dysregulation.\n\nFinally, our observations that Daam2 expression is increased in a majority of glioma tumors raises the question how it becomes dysregulated. One possibility is that it is actively regulated by transcription factors or microRNAs that are present in glioma. Currently, these mechanisms associated with Daam2 remain undefined and identifying them are key areas of future investigation that will shed new light on how developmental dysregulation influences tumorigenesis. Another possibility to consider is that Daam2 dysregulation is a passive by-product of its expression in a cell lineage that is over-represented in glioma. Daam2 is expressed in both glial lineages (oligodendrocytes and astrocytes), in both precursor and mature stages of development. Both of these lineages are present in one form or another within the bulk tumor, therefore its possible that elevated Daam2 expression is the result of its expression in analogous cell populations that comprise the primary, bulk tumor. Deciphering which scenario (passive or active) is responsible for Daam2 dysregulation in glioma is an important area of future investigation.\n\n### New parallels between development and cancer\n\nOur observation that manipulation of Daam2 expression promoted tumorigenesis, but not canonical Wnt signaling, points to the possibility that it functions through a Wnt-independent mechanism. RPPA and bioinformatics approaches revealed that Daam2 expression is inversely correlated with a cohort of genes (Figure 4\u2014figure supplement 2), including VHL, across a broad spectrum of cancers. Moreover, the RPPA data analysis identified a larger cohort of proteins that were downregulated in the presence of Daam2 in our mouse model of glioma (Figure 4\u2014figure supplement 1). Thus, future studies may also be geared towards delineating the links between Daam2 and these other downregulated candidates (i.e. Claudin-7 and Syk, etc.) in the context of glioma and glial development. These observations, coupled with our findings that Daam2 associates with- and facilitates- the ubiquitination of VHL, suggest that it may also play a role in the ubiquitination pathway. The nature of this prospective relationship between Daam2 and the existing ubiquitination machinery, and whether these relationships are specific to malignancy or can be extended to development are areas of future investigation and represent potentially new parallels between development and cancer. Indeed dysregulation of ubiquitination is linked to protein aggregation associated with several neurological disorders, functioning through both neuronal and glial populations (Jansen et al., 2014\u00a0and\u00a0Hegde and Upadhya, 2007).\n\nAnother feature of Daam2 is that it functions to suppress the differentiation of oligodendrocyte progenitor cells (OPC) during development and after injury (Lee et al., 2015). Studies in mouse models suggest that OPCs may serve as a cell of origin for glioma, while NG2-positive OPC populations are endowed with tumor initiating properties (Ligon et al., 2007; Liu et al., 2011; Persson et al., 2010; Stiles and Rowitch, 2008; Sugiarto et al., 2011; Yadavilli et al., 2015). Moreover, OPCs have latent proliferative capacity that is essential for injury responses, suggesting parallels between the processes that drive injury responses and tumorigenesis. Indeed recent studies have linked the VHL-HIF1\u03b1 signaling axis to OPC development and neonatal hypoxic injury responses (Yuen et al., 2014). That Daam2 promotes tumorigenesis via suppression of VHL and also regulates OPC development and injury responses, suggests that it may also utilize these tumorigenic mechanisms in the context of injury. Together these findings add to the emerging evidence that OPC associated signaling networks play critical roles in glioma pathophysiology and further reinforce the parallels between neurological disorders and cancer biology.\n\n### Regulation of VHL in cancer\n\nAmongst the candidates identified in our RPPA screen, we chose to focus our studies on VHL because it\u2019s a potent effector of tumorigenesis across many forms of cancer. Our mechanistic studies revealed that Daam2 promotes glioma tumorigenesis via suppression of VHL, a classic tumor suppressor that promotes HIF1\u03b1 degradation and inhibits Akt activity. Importantly, inactivating mutations in VHL are predominately found in ccRCC and are very rare in most other forms of cancer, including glioma. These observations raise the critical question of how VHL becomes dysregulated in cancers that do not have these mutations. Our studies define a novel regulatory mechanism that operates upstream of VHL in cancer and provides additional insight into how its expression is extinguished in tumors that do not have inactivating mutations. Moreover, because Daam2-VHL expression demonstrates a robust, inverse correlation across a spectrum of cancers, this is likely to be a generalized mechanism of VHL suppression in cancer. Future areas of investigation include structure/function mapping of the Daam2-VHL domains in the context of ubiquitination, tumorigenesis, and HIF1\u03b1 signaling.\n\nInterestingly, prior studies in yeast have shown that VHL can be degraded via the Hsp70 and Hsp110 chaperone system (McClellan et al., 2005; Melville et al., 2003). Given that Hsp\u2019s are expressed across a host of cancers (Garc\u00eda-Morales et al., 2007; Nylandsted et al., 2002; Sauvageot et al., 2009), it will be important to determine whether Daam2 engages the Hsp chaperone system to facilitate VHL degradation in glioma and other malignancies. Another intriguing possibility is whether VHL can reciprocally degrade Daam2 protein. Given that VHL functions as an E3 ligase and associates with Daam2, this may be another mechanism by which this complex operates. While we did not observe overt decreases in Daam2 protein levels in the presence of VHL (not shown), such a mechanism may be context or cell lineage specific, requiring additional co-factors or environmental conditions (i.e. hypoxia, etc.). Future studies in other cancer models and cell systems will be required to determine if this is the case.\n\nGiven its role as the central regulator of HIF1\u03b1, surprisingly little is known about the regulatory biology surrounding VHL and its role in glioma formation. Studies in glioma cell lines suggest that ID2 interference with VHL activity can deregulate HIF1\u03b1 expression and promote tumorigenesis in xenograft models (Lee et al., 2016). Interestingly, ID2 has also been linked to the suppression of OPC differentiation via direct regulation of cell cycle kinetics (Wang et al., 2001). These observations further reinforce the relationship between OPC development and glioma tumorigenesis and highlight key parallels between ID2 and Daam2 function across these systems, as both genes suppress VHL, inhibit OPC differentiation, and promote glioma tumorigenesis. Because both proteins associated with- and regulate- VHL, albeit via distinct mechanisms, it\u2019s possible that these suppressive functions are coordinated and contribute tumorigenesis. From this, a model emerges where ID2 displaces VHL from the ubiquitin complex, which facilitates its association with Daam2 and its subsequent ubiquitination and degradation. It will be important to decipher whether ID2 and Daam2 functions are in fact coordinated, and the extent to which Hsp proteins participate in this mechanism. Finally, understanding whether and how these prospective relationships are also applicable to OPC development and injury responses may also reveal new insights in CNS repair mechanisms.\n\n## Materials and methods\n\n### In situ hybridization on gliomas\n\nTo detect the expression of human Daam2, we generated mRNA probe and performed in situ hybridization on human gliomas. Human glioma tissue microarray (US Biomax, GL803b) contains 35 LGG and 40 GBM and five adjacent normal brain tissue, single core per case. To generate human Daam2 probe, pCMV-SPORT6 containing huDaam2 mRNA sequence (BC078153) was purchased from Openbiosystems (EHS1001-9143512). Antisense probe was produced by T7 RNA Polymerase followed by Sal1 enzyme digestion. The sense probe was generated by SP6 RNA Polymerase followed by Not1 enzyme digestion. To apply ISH on human TMA, tissue array was firstly de-paraffinized by Xylene, 100% EtOH, 90% EtOH, 70% EtOH, 50% EtOH, two times of 5 min for each step. Then deproteinization was conducted by proteinase K (10 ug/ml) for 5 min, 4% PFA for 15 min, 0.25% acetic anhydride in 0.1M triethanolamine for 5 min, washing with PBS in between for 5 min. Hybridization of the RNA probe at 65\u00b0C for overnight after pre-hybridization at 65\u00b0C for 1 hr. Chromogenic detection was finished the following day. Three times 2xSCC washing at 65\u00b0d for 15 min each first, then rinsing with PBT, 1 hr blocking (20% lamb serum in PBT), 2 hr antibody incubation (DIG-AP, 1:2000), washing with PBT, and 10 min AP blocking. The slide was developing in NBT/BCIP in the dark for overnight. The reaction was stopped by AP buffer once the signal was developed. The intensity grades (0, 1, 2, 3) is scored by the pathologist, Dr. Carrie Mohila. To detect the expression of Daam2 in mouse gliomas, we used mRNA probes (Lee et al., 2015)\n\n### Mice\n\nTo generate mouse gliomas, we used pregnant wild type and Daam2 knockout mice for IUE surgeries. The pregnant wild-type mice were purchased from The Center for Comparative Medicine (CCM) at Baylor College of Medicine (BCM). The Daam2 knockout mice were generated previous studies (Lee et al., 2015). We also purchased SCID (Taconic) mice for human glioma transplantation assay. All procedures were approved by the Institutional Animal Care and Use Committee at Baylor College of Medicine and conform to the US Public Health Service Policy on Human Care and Use of Laboratory Animals.\n\n### Constructs, shRNAi lentivirus, cloning\n\n#### Lentivirus constructs\n\nFor in vitro functional assays in human GBM cell lines, ectopic Flag-tagged Daam2 was cloned into FUIGW plasmid, HA-tagged VHL was cloned into pHage-puro Gateway vector. Human Daam2 shRNAi were purchased from TRC Lentiviral Library, Dharmacon. Mature Antisense- ATGCTCCGGAGGAAATTTAGC was used as the control. The combination of mature Antisense- ATTTAGCCGGTTTATTGCCCG and mature Antisense- ATCAAACGCGTACAGACTCTG was used as the Daam2-shRNAi.\n\n#### PiggyBac constructs\n\nFor PB-Ras glioma model, Flag-tagged Daam2, HA-tagged VHL, and Luciferase were cloned into the pCAG vector. pbCAG-GFP-2a-HRas, pbCAG-GFP were a gift from Dr. LoTurco. For CRISPR glioma model, oligo primers were used to clone sgRNA targeting Nf1, Trp53, and Pten into the pX330-Cas9 vector. p53: 5\u2019-CACCGCCTCGAGCTCCCTCTGAGCC-3\u2019, PTEN: 5\u2019- CACCGAGATCGTTAGCAGAAACAAA-3\u2019, NF1: 5\u2019-CACCGCAGATGAGCCGCCACATCGA-3\u2019\n\n#### Expression constructs\n\nFlag-tagged Daam2, Myc-tagged Daam2, HA-tagged VHL, Flag-tagged VHL, GFP-tagged VHL were cloned into pcDNA, pCS2, pcDNA, p3xFLAG-CMV-9, pmaxFPTM-Green-N, respectively. HA-Ub was gift from Dr. Yoo.\n\n#### Lentivirus generation\n\nLentivirus production was carried out by transfecting FUIGW backbone with Gagpol and VSVG plasmids into 293 T cells in a 15 cm dish using TransIT-293 reagent (Mirus2705. pHage and shRNAi plasmids are transfected with pMD2.G and dr8.2 plasmids. After transfection, lentivirus supernatant was collected twice over 48 hr and ultra-centrifuging at 25,000 rpm for 2 hr. Purified and concentrated virus was diluted with DMEM media.\n\n### Cell growth curve and agar assays\n\n#### Growth curve\n\nFor in vitro human GBM cell line studies, adult GBM-1 and GBM-2 cell lines were kindly provided from Dr. Nabil Ahmed (Hegde et al., 2013) (Ahmed et al., 2010). These cell lines were generated from freshly resected human GBM samples as described in the (Hegde et al., 2013) and Ahmed et al., 2010) and whole transcriptome sequencing confirmed that they are of human origin and contain gene expression patterns consiste with GBM. In addition, these cell lines tested negative for mycoplasma. To manipulate the expression of Daam2 in GBM cell lines, we used the lentivirus as described above. To virally infect human primary GBM cells, 1.5 \u00d7 104 cells were plated in 6-well plates with DMEM\u00a0+10% FBS. Cells were infected with either Daam2 or Daam2 shRNAi virus for 14 hr to make the stable cell line for GOF and LOF study, respectively. Stable Daam2 over-expression (GFP+) cell lines were sorted via FACS. Stable Daam2 shRNAi cell lines were selected by puromycin. To test the relationship between Daam2 and VHL, Daam2 over-expression cell line was infected with VHL virus. To assess rates of cell growth, 2 \u00d7 104 cells were plated in 12-well plates and cells were counted over the course of three days. At each time point, cells were detached by Trypsin and calculated using TC20 Automated Cell Counter (Bio-Rad).\n\n#### Agar assay\n\nFor the agar assay, 2.5 \u00d7 104 cells (cell agar layer) was mixed with 5 ml Iscove\u2019s 1.4% Nobel Agar\u00a0+\u00a040% FBS, covered by top and bottom coating agar layers (2 ml Iscove\u2019s 1.4% Nobel Agar\u00a0+\u00a020% FBS) in a 6 mm plate. We tightly monitored the colony formation for several weeks.\n\n#### qRT-PCR\n\n5 \u00d7 106 cells were cultured in 6-well plates. RNA was extracted using RNeasy Plus Mini Kit (Qiagen, #74134) according to the protocol. 1000 ng RNA was used for reverse transcription into cDNA with a total volume of 20 ul. cDNA was diluted into 100 ul with Nuclease-free water. 5.75 ul cDNA was mixed with SYBR reagent and primers for running qRT-PCR program. The following primers were used: Daam2 Left 5\u2019-caaagcccaaagtggaagc; Daam2 Right 5\u2019-catctgtctaagacgcttgctg.\n\n### In utero electroporation (IUE)\n\nTo generate mouse gliomas, we performed in utero electroporation (IUE). Briefly, the uterine horns were exposed, and DNA combination was injected into the embryonic lateral ventricles along with Fast Green dye as the indicator. Then electroporation was accomplished by BTW tweezertrodes connected with the pulse generator (BTX 8300) in the setting of 33V, 55 ms per pulse for six times, 100 ms intervals. In CRISPR-IUE model, the DNA combination is composed of the \u2018helper-plasmid\u2019 pGLAST-PBase (2.0 ug/ul) and all the other DNA (1.0 ug/ul), including pbCAG-GFP, pbCAG-Luciferase, crNF1, crPTEN, crp53 (Chen and LoTurco, 2012; John Lin et al., 2017). In the HRas-IUE model, the DNA combination is composed of pGLAST-PBase (2.0 ug/ul) and others (1.0 ug/ul), including pbCAG-GFP2aHRas and pbCAG-Luciferase. For the IUE/Daam2/VHL overexpression study, pbCAG-FlagDaam2 (1.0 ug/ul), pbCAG-HA-VHL (1.0 ug/ul) were co-injected with the CRISPR-IUE or the Ras-IUE master mix described above.\n\n### Glioma xenograft assays\n\nSix-week-old SCID male mice (Taconic) were used for human GBM cell line transplantation. 4 \u00d7 104 luciferase-infected primary GBM cells were injected into each mouse brain, at the location of the 1 mm front, 2 mm right, 3 mm deep from the Bregma. Animals were euthanized and perfused at six weeks after transplantation of GBM cells. Brains were fixed in 4% paraformaldehyde and 70% EtOH overnight, respectively. After fixation, brains were embedded in paraffin, sectioned and subjected to molecular and pathological analysis via immunostaining or hematoxylin and eosin staining.\n\n### Bioluminescent imaging and analysis\n\nTo measure the tumor growth after manipulation of Daam2, mice are subjected to bioluminescent imaging before harvesting. Mice were monitored once a week. D-Luciferin (Perkin Elmer, #122799) was diluted to 15 mg/ml with PBS and injected into each mouse at a dose of 10 ul/g body weight. After 10 min, mice were placed inside a Bruker FX Pro Imager for 2 min Bioluminescence Imaging and 10 s X-ray Imaging. X-ray image was transparently overlapped with the bioluminescence image. A free circle surrounded the region of interest (ROI) was selected for the quantification of the luciferase intensity. Relative luciferase intensity was measured as the intensity of control group was normalized as 1; experiment group\u00a0=\u00a0actual value of experiment group/the actual value of control group.\n\n### BrdU assay\n\nTo evaluate tumor proliferation, mice were subjected intraperitoneal injection with BrdU (200 \u03bcg/g body weight) 4 hr before harvesting. Brains were perfused and fixed overnight in 4% paraformaldehyde and 70% EtOH overnight for paraffin embedding. For the BrdU immunohistochemistry, additional 2N HCl treatment was performed.\n\n### Tumor dissection and dissociation\n\nTumors derived from either IUE or transplantation were dissected from whole mouse brains. Tumor regions were visualized as GFP positive tissue under a fluorescence dissection microscope. For paraffin sections, the brain was fixed in 4% Formalin then 70% Ethanol overnight. For western blot and RPPA, GFP-positive tissues were dissociated from the whole brain then homogenized with lysis buffer.\n\n### Hematoxylin and eosin stain (H&E), Immunohistochemistry (IHC), and Antibodies\n\nFor H&E staining, slides were firstly deparaffinized by sequentially three times of 3 min Xylene, 100% EtOH, 95% EtOH, 80% EtOH, 70% EtOH. Hematoxylin was stained for 5 min, then rinsing with tap water till no more color changing. 2\u20133 dips in the acidic solution (1% HCl in 70% EtOH) reduced the background. After rinsing with tap water, Eosin was staining for 1 min, following by tap water rinsing. Finally, dehydration was accomplished by three times of 5 min 95% EtOH, 100% EtOH, and Xylene.\n\nFor IHC, deparaffinization process is the same as H&E staining. Antigen retrieval was performed by 10 min microwaving using Na-Citrate pH6.0. Endogenous peroxidases were blocked using 3% H2O2. After 1 hr serum blocking, slides were incubated with antibody overnight in cold room. The other day, slides were rinsed off in PBS and incubated with secondary antibody for 1 hr. Then DAB and hematoxylin were applied for the color matrix and counterstain. Finally, dehydration was the same as the H&E process. CD31 staining was quantified using approaches described in Tian et al.\u00a0(2017).\n\nThe following antibodies were used for IHC and western blot: BrdU (anti-rat, Abcam, ab6326, 1:200), VHL (anti-rabbit, Santa Cruz, sc5575, 1:20), VHL (anti-mouse, #556347, 1:500), CD31 (anti-rabbit, Abcam, ab28364, 1:100), pAKT (Ser473) (anti-rabbit, Cell Signaling, #9271, 1:1000), HIF1a (anti-mouse, Novus, NB100-105, 1:500), Flag (anti-mouse, Sigma, F1804, 1:1000), HA (anti-rat, Roche, clone 3F10, 1:500), GAPDH (anti-mouse, Millipore, AB2302, 1:1000), and LacZ (anti-rabbit, Cappel, 55976, 1:1000).\n\n### Reverse phase protein array (RPPA)\n\nGFP+ tumor tissues were dissociated under a fluorescence dissection microscope and sorted with FACS machine. Tumor cells were homogenized with ice-cold lysis buffer. Supernatants (tumor lysates) were transferred after centrifuging at 4\u00b0C, 14,000 rpm for 10 min. The lysates were mixed with 4X SDS sample buffer. Samples were boiled for 5 min at a final protein concentration of 1\u20131.5 ug/ul and a total volume of 40 ul. The lysis buffer was composed of 1% Triton X-100, 50 mM HEPES, pH 7.4, 150 mM NaCl, 1.5 mM MgCl2, 1 mM EGTA, 100 mM NaF, 10 mM Na pyrophosphate, 1 mM Na3VO4, 10% glycerol, and contained freshly added protease and phosphatase inhibitors from Roche (# 05056489001 and 04906837001, respectively). Samples were probed with 287 antibodies. The RPPA was performed and analyzed by Functional Proteomics RPPA Core Facility at MD Anderson Cancer Center.\n\n### Immunoprecipitation and in vitro degradation assay\n\n#### Immunoprecipitation\n\nTo test the biochemical association between Daam2 and VHL, we used 293 T cells for co-immunoprecipitation assay. 2\u00a0\u00d7\u00a0105 cells were plated into the six well plate one day before transfection. 500 ng Flag-tagged Daam2 and HA-tagged VHL was transfected by iMFectin DNA Transfection Reagent (GenDEPOT) according to the protocol. Cells were harvested by cold PBS and spin down by centrifuging at 3000 rpm, 5 min. The cell pellet then was lysis by 1 ml lysate buffer (20 mM HEPES pH7.9, 100 mM NaCl, 0.5% TritonX100, 1 mM EDTA, 5% Glycerol) with protease inhibitor (Roche). To fully lysis the cells, cells were subjected 10 s sonication and three times of 10 s vortex. Then cell lysate (supernatant) was collected after 15 min, 13,000 rpm centrifuge. 30 ul samples were collected as Input; the other cell lysate was subjected for overnight IP by adding 12 ul M2 FLAG agarose (Sigma). IP samples were washed with three times cell lysate buffer followed by 13,000 rpm 5 min to spin down and separate the agarose beads. 30 ul 2xSDS loading buffer was added to individual samples, 10 ul of samples were loaded for Western blot. Flag (anti-mouse, Sigma, F1804, 1:1000), VHL (anti-mouse, #556347, 1:500), HA (anti-rat, Roche, clone 3F10, 1:500), GAPDH (anti-mouse, Millipore, AB2302, 1:1000)\n\nFor the in vitro ubiquitin assay, 100 ng Myc-tagged Daam2, 500 ng Flag-tagged VHL, and 600 ng HA-tagged Ub were transfected into six-well plate. 24 hr post- transfection, cells were treated with 40 ug/ml MG132 (proteasome inhibitor) for 6 hr. Lysate buffer for Ubiquitin contained additional de-Ubiquitin reagent (50 ug/ml N-Ethylmaleimide, 75 ug/ml 1,10-Phenanthroline).\n\n### In vitro degradation assay\n\nTo test VHL degradation, 1\u00a0\u00d7\u00a0105 293 T cells were plated into the 12 well plate one day before transfection. 100 ng Myc-tagged Daam2 and GFP-tagged VHL was transfected by iMFectin DNA Transfection Reagent (GenDEPOT) according to the protocol. 30 hr post-transfection, cells were treated with 50 ug/ml CHX for 0, 2, 4, 6 hr respectively. Lysis and Western blot process is the same as previously described. To quantify the protein abundance, the western blot band intensity in 0 hr sample of both VHL -/+D2 groups are set as \u20181', then the intensity of 2, 4, 6 hr degradation western blot band is normalized and plotted using Nonlinear Regression Curve by GraphPad.\n\n### TCGA database analysis and comparative bioinformatics\n\nRNA expression data underlying the results presented in Figure 1 were generated by TCGA Research Network (http://cancergenome.nih.gov/). All data used in this study were publicly available, e.g. from The Broad Institute\u2019s Firehose pipeline (http://gdac.broadinstitute.org/), doi:10.7908/C11G0KM9. From TCGA, we collected molecular data on 10224 tumors of various histological subtypes (ACC project, n\u00a0=\u00a079; BLCA, n\u00a0=\u00a0408; BRCA, n\u00a0=\u00a01095; CESC, n\u00a0=\u00a0304; CHOL, n\u00a0=\u00a036; COAD/READ, n\u00a0=\u00a0623; DLBC, n\u00a0=\u00a048; GBM, n\u00a0=\u00a0161; HNSC, n\u00a0=\u00a0520; KICH, n\u00a0=\u00a066; KIRC, n\u00a0=\u00a0533; KIRP, n\u00a0=\u00a0290; LAML, n\u00a0=\u00a0173; LGG, n\u00a0=\u00a0516; LIHC, n\u00a0=\u00a0371; LUAD, n\u00a0=\u00a0515; LUSC, n\u00a0=\u00a0501; MESO, n\u00a0=\u00a087; OV, n\u00a0=\u00a0262; PAAD, n\u00a0=\u00a0178; PCPG, n\u00a0=\u00a0179; PRAD, n\u00a0=\u00a0497; SARC, n\u00a0=\u00a0259; SKCM, n\u00a0=\u00a0469; TGCT, n\u00a0=\u00a0150; THCA, n\u00a0=\u00a0503; THYM, n\u00a0=\u00a0120; UCEC, n\u00a0=\u00a0545; UCS, n\u00a0=\u00a057; UVM, n\u00a0=\u00a080) from TCGA, for which RNA-seq data (v2 platform alignment) were available. Correlation between VHL and AKT pS473 protein on TCGA samples, were obtained from The Cancer Proteome Atlas, or TCPA, using level four data from the portal (Akbani et al., 2015; Li et al., 2013).\n\n### Statistical analysis\n\nOne-way ANOVA was used to analyze bioluminescent intensity and BrdU-positive cell counts to determine the differences between Ctrl, D2 and D2/VHL groups, followed by Tukey\u2019s test to compare between individual groups, which is demarcated by an asterisk in the graphs. Independent t-test was used to analyze the differences in bioluminescent intensity and BrdU-positive cell counts between Ctrl vs. D2, Het vs. KO, Scrambled-shRNAi vs. D2-shRNAi.\n",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "574e9310-f0f0-4858-8bef-0d6e99180db4",
+      "submission_id": "c3300c17-2fef-4b19-af58-ca318f13f4fd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne Bronner, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31926.018](https://doi.org/10.7554/eLife.31926.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for choosing to send your work, \"Daam2 Driven Degradation of VHL Promotes Gliomagenesis\", for consideration at eLife. Your initial submission has been assessed by a Senior Editor and three reviewers. Although the work is of interest, we regret to inform you that the findings at this stage are too preliminary for further consideration at eLife.\n\nSpecifically, the reviewers felt that the manuscript was interesting but also raised many concerns that would require substantial revisions. These include better demonstration of Daam2 over-expression, confirmation of Daam2 loss of function, better descriptions of the glioblastoma lines, etc. I refer you to the reviews below for details.\n\nReviewer #1:\n\nThe report by Deneen and colleagues reports that coordinate regulation of Daam2 and VHL is observed in many cancers, and that Daam2 expression functions to increase tumorigenicity through suppression of VHL levels (ubiquitin-mediated degradation). The experiments are well executed and convincing.\n\nHow quantitative is the DAAM2 expression described in Figure 1? It would be preferable to look at protein expression in tissue microarrays or perform real time quantitative RT-PCR for these analyses. In addition, it would be useful to compare normal tissue from the exact same location as the tumor whenever possible. This could be performed using mouse gliomas, and should be included to strengthen the importance to gliomas. For example, in the Barres atlas (http://web.stanford.edu/group/barres_lab/brain_rnaseq.html), it appears as though Daam2 is robustly expressed in normal astrocytes.\n\nWhat the developmental expression pattern of Daam2 in the mouse or human? Is it inversely correlated with VHL expression?\n\nDoes Daam2 overexpression increase proliferation or decrease apoptosis?\n\nIn the analysis shown in Figure 4\u2014figure supplement 2, VHL was not the top candidate. How did the authors exclude the other compelling candidates, and why did they focus only on VHL?\n\nIn the TCGA datasets, is there a strong correlation between DAAM2 expression and HIF-1a expression?\n\nOne of the key points of the report is that DAAM2 requires VHL. While they demonstrate sufficiency, the necessity portion of this dependency is not as clearly revealed. What is the effect of VHL expression alone in Figure 5? One elegant way to demonstrate the dependency is to show that mutations that impair VHL-DAAM2 binding reverse the ability of DAAM2 to accelerate glioma growth in vitro and in vivo.\n\nPrevious studies from the Deneen laboratory suggest that DAAM2 regulates Wnt signaling in oligodendrocytes. Was this pathway excluded in the context of tumorigenesis?\n\nReviewer #2:\n\nIn the current manuscript, entitled \"Daam2 Driven Degradation of VHL Promotes Gliomagenesis,\" Zhu and colleagues argue that Daam2 drives glioblastoma development in human and mouse models through a novel regulation of the VHL tumor suppressor. Daam2 overexpression in cells and mice associates with increased cell and tumor growth, while Daam2 depletion in glioma models significantly impairs tumor growth. While Daam2 has been reported to regulate the Wnt pathway by these investigators, they found a lack of association of Daam2 and Wnt here. Thus omic and protein array analyses led them to discover an inverse correlation of Daam2 expression and VHL. Accordingly, Daam2 expression induces HIF1 stabilization and Akt phosphorylation, two mechanistic consequences of VHL loss. The investigators go on to show that Daam2 plays a direct role in the regulation of VHL through a protein protein interaction and a consequent ubiquitylation of VHL. Together the studies identify a new and exciting role for Daam2 in glioma, and a new mechanism of VHL downregulation in cancer, which would have broad implications. The manuscript could be improved by a number of edits.\n\n1) This is not the first study to show an upstream mechanism of VHL regulation in cancer. The authors correctly point out in their Discussion that ID2 has been shown to regulate VHL, there is also a miRNA story in the literature (Li, et al. 2017). Thus while these other observations do not take away from the story here, this point is overstated several times in the text and should be corrected. Likewise, a comment in the Discussion implies that absent of other alterations, it is unclear how VHL function is inactivated in cancer, and the simple answer is tumor hypoxia.\n\n2) Figure 1; high resolution pictures of Daam2 staining that are in the supplemental data should be included in the figure.\n\n3) Better descriptions of the two GBM cell lines would be useful. Do these contain similar driver mutations as the mouse models? Also, quantification of the colony assays would be helpful, rather than simply a representative figure. Do the control cells form colonies at all? Given that they form tumors, one would expect so.\n\n4) Quantification of IHC for example for CD31 would be more convincing than a single picture.\n\n5) HIF elevation in Figure 4B and K begs the question as to whether HIF target genes are also elevated in cells with altered Daam2.\n\n6) Can the authors speculate as to how Daam2 is functioning to facilitate VHL ubiquitylation? Is it an E3 ligase? Is there a domain structure of Daam2 that would support a hypothesis?\n\nReviewer #3:\n\nThe Von Hippel-lindau protein is a tumor suppressor that, through conventional loss-of-function (i.e. germline deletion of one copy followed by somatic l.o.h.) gives rise to cancers of liver, kidney and vagina. In this manuscript, Zhu et al. make the provocative claim that Von Hippel-lindau (VHL) protein may be attenuated in a non-genetic way and thus contribute to a broader array of cancers than hitherto believed including malignant gliomas.\n\nThe point of departure for their work is an in silico survey showing an inverse correlation between expression of the glial developmental factor Daam2 and VHL in a wide variety of cancers including glioma. The authors go on to a set of functional studies with human glioma cell lines and mouse glioma models to show that Daam2 promotes glioma growth by suppressing VHL expression. Mechanistically, the claim is that Daam2 associates with VHL and thereby facilitates its ubiquitination and degradation.\n\nA broad body of labor-intensive and technically challenging work is summarized here. The manuscript is well written. The conclusions would, in principle, be of interest to a broad readership in neuro-oncology and in other fields such as tumor metabolism and molecular therapeutics. Unfortunately, some of the data in this manuscript are, at present, inadequate to support the central claims. My concerns are as follows:\n\n1) Figure 2. The claim of this figure is that Daam2 overexpression accelerates the growth of human glioma cell lines. However, the authors do not actually show that Daam2 is overexpressed. They should provide a western blot towards this end. It is actually a bit curious that infection with lentivirus Daam2 has such a pronounced effect since the authors show us (in Figure 1) that gliomas already have high Daam2.\n\n2) Figure 3. An important claim of this figure is that Daam2 loss-of-function impairs growth of human glioma cells. The loss-of-function was achieved via shRNAi-mediated knockdown but there are two problems with the data. First, there is no western blot to show that Daam2 actually was knocked down. Second, there are growing concerns about off-target effects of shRNAi. The authors need a \"rescue\" experiment with Daam2 construct that is immune to their shRNAi to rule out off-target toxicity.\n\n3) Figure 4\u2014figure supplement 3. The central claim of this figure is that angiogenesis, as marked by CD31, is altered in response to Daam2 levels. The immunostain images shown are not convincing. The authors need to quantify these data.\n\n4) Figure 5A-B. The central claim of these two figures is that ectopic VHL can overcome the accelerated growth induced by overexpression of Daam2 alone. As per comment #1 above, we need western blots \u2013 in this case for both VHL and Daam2. It would be interesting to see if the relationship between Daam2 and VHL is symmetric. If high Daam2 suppresses VHL, does high VHL suppress Daam2?\n\n5) Figure 6A-D. The central claim of this figure is that Daam2 forms a complex with VHL thereby promoting ubiquitination and degradation of VHL. These are very important mechanistic claims. I have some doubts about these data. These are:\n\na) The antibody pulldown experiment needs to be shored up to rule out an adventitious interaction between Daam2 and VHL. Can the pulldown be reversed? Will IP VHL bring down Daam2? Is there any independent evidence of a VHL:Daam2 interaction, e.g. yeast two hybrid trap or proximity ligation assay?\n\nb) Figure 6B, D. The central claim here is that VHL degradation is \"significantly enhanced\" in the presence of Daam2. I disagree with the descriptor of \"significant\". The offset in VHL T1/2 (5.08hr vs 3.68hr) might be \"statistically significant\" as the authors state but the overall difference is nuanced and does not seem adequate to account for the striking differential in VHL immunostain as shown in Figure 4. Author's comments?\n\nOvershadowing all of these concerns with the data is a more fundamental question about the role of Daam2 as a non-genetic driver of gliomagenesis. What is the mechanism of leads to high expression of Daam2 in gliomas (Figure 1). Is Daam2 expressed at hyperphysiologic levels in these tumors or, alternatively, do some gliomas simply arise from Daam2-positive cells? If the latter is true than Daam2 is only permissive for gliomagenesis (along with many other things). If the former is true, then we need to know the mechanism.\n",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "83f46275-07c2-4524-9cb6-3b9061b91165",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C1",
+      "claim": "Daam2 is most highly expressed in low-grade glioma (LGG) and glioblastoma multiforme (GBM) across 34 malignancies in the TCGA pan-cancer expression data set.",
+      "claim_type": "EXPLICIT",
+      "source": "we took advantage of the TCGA pan-cancer expression data set (Akbani et al., 2014; Weinstein et al., 2013) and evaluated Daam2 expression across a spectrum of 34 malignancies, finding that it's most highly expressed in low-grade glioma (LGG) and glioblastoma multiforme (GBM) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of TCGA data shown in Figure 1A and cited references to the TCGA database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "9f6b3e60-b22c-4382-a222-056df16da95f",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C2",
+      "claim": "The majority of LGG and GBM tumors exhibited DAAM2 staining intensity scores that exceeded normal brain samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the majority of tumors exhibited staining intensity scores that exceeded normal brain samples, indicating that Daam2 expression is elevated within glioma tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in situ hybridization analysis across 35 LGG and 40 GBM primary human samples shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "76a20618-410d-4636-a797-91dfb4d8a503",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C3",
+      "claim": "Daam2 expression is elevated in primary human glioma samples compared to non-tumor white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we assessed DAAM2 expression via qRT-PCR in primary human glioma samples and non-tumor white matter, and consistent with the tissue microarray data, we found that Daam2 expression is elevated in a majority of these primary samples (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "63672247-ce1a-4d5e-aa28-bf29e6b1bc67",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C4",
+      "claim": "Daam2 exhibits elevated expression levels in mouse glioma tumors compared to normal brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining this model, with our the Daam2-LacZ mouse line, we performed immunostaining on the resultant tumors, finding that Daam2 exhibits elevated expression levels in tumors, compared to normal brain tissue (Figure 1D; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "50529157-4cc2-4ad9-b78a-e059cbc67ae1",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C5",
+      "claim": "Daam2 is highly expressed in xenograft tumors generated from primary human GBM cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we evaluated Daam2 expression in xenograft tumors generated from primary human GBM cell lines, finding that Daam2 is also highly expressed in these human cell line models (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "9c3a508a-e131-475c-9ed8-057f0b42ce73",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C6",
+      "claim": "Daam2 accelerates the rate of cell growth in human GBM cell lines in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess its role in glioma, we performed overexpression, gain-of-function (GOF) studies in human GBM cell lines, finding that Daam2 accelerates the rate of cell growth in vitro (Figure 2A\u2013B,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell proliferation assays shown in Figure 2A-B,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "ab0bc77c-33a1-4f4f-884e-f5beae8a4e91",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C7",
+      "claim": "Daam2 accelerates anchorage independent colony formation in soft agar assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we determined how Daam2 influences anchorage independent growth, via soft agar assay, finding that it also accelerates colony formation (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by soft agar assay data shown in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "70b01301-1b24-47a8-b99d-de9b3c058f5c",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C8",
+      "claim": "Combined overexpression of Daam2 in the PB-Ras model resulted in an acceleration of tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining PiggyBac-mediated overexpression of Daam2 with this Ras-driven model resulted in an acceleration of tumorigenesis (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioluminescence imaging data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "20ec4808-80fd-404b-add9-ef7b9781ee6c",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C9",
+      "claim": "Combined overexpression of Daam2 in the CRISPR/IUE model resulted in accelerated tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the Ras model, combined overexpression of Daam2 in the CRISPR/IUE model, also resulted in accelerated tumorigenesis (Figure 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioluminescence imaging data shown in Figure 2G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "cd49c97f-a85b-4628-9439-fd6c74fe53ae",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C10",
+      "claim": "Overexpression of Daam2 results in an increase in the number of BrdU-expressing cells in mouse glioma models.",
+      "claim_type": "EXPLICIT",
+      "source": "BrdU labeling analysis of the resulting tumors from both models revealed that overexpression of Daam2 results in an increase in the number BrdU-expressing cells (Figure 2J\u2013L; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU immunohistochemistry data shown in Figure 2J-L and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "87ac6926-59c4-46af-851c-72e6acfae64d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C11",
+      "claim": "Decreased expression of Daam2 via shRNAi inhibited the rate of growth of human GBM cell lines in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In human GBM cell lines we performed shRNAi-mediated knockdown of human Daam2, finding that decreased expression of Daam2 inhibited their rate of growth in vitro (Figure 3A\u2013B; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR and cell proliferation data shown in Figure 3A-B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a0728499-be96-47d0-ba09-5e7abb1f025b",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C12",
+      "claim": "Knockdown of Daam2 resulted in a significant decrease in tumor growth in vivo in xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we assessed the tumorigenic potential of these GBM cell lines, finding that knockdown of Daam2 resulted in a significant decrease in tumor growth in vivo (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioluminescence imaging data shown in Figure 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "69282aeb-50c9-4506-b227-124284929738",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C13",
+      "claim": "Mice lacking Daam2 demonstrated decreased rates of tumor formation in the CRISPR/IUE model compared to heterozygote controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3F\u2013H, mice lacking Daam2 demonstrated decreased rates of tumor formation in this model compared to the heterozygote control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioluminescence imaging data shown in Figure 3F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "0266465f-7cf0-422d-9a34-5b6d48c86231",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C14",
+      "claim": "BrdU labeling revealed substantial decreases in the number of proliferating cells in Daam2\u2212/\u2212 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, BrdU labeling revealed substantial decreases in the number of proliferating cells in Daam2\u2212/\u2212 tumors (Figure 3I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU immunohistochemistry data shown in Figure 3I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "2d94b79b-ebfe-41a3-9c31-080588c8e2c8",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C15",
+      "claim": "Modulation of Daam2 expression has a modest effect on Wnt activity in glioma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate Wnt-activity we used an established Wnt-reporter (TOP-FLASH) and found that modulation of Daam2 expression has a modest effect on Wnt activity in glioma cell lines and did not impact Wnt activity in our mouse model of glioma (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TOP-FLASH reporter assay data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "85299212-7661-427d-8d04-a6879fb084ec",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C16",
+      "claim": "Modulation of Daam2 expression did not impact Wnt activity in the mouse model of glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate Wnt-activity we used an established Wnt-reporter (TOP-FLASH) and found that modulation of Daam2 expression has a modest effect on Wnt activity in glioma cell lines and did not impact Wnt activity in our mouse model of glioma (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FACS analysis of TOP-FLASH-BFP expressing cells shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "450e6df7-a132-481f-9ea0-eccf72ed10b3",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C17",
+      "claim": "RPPA analysis revealed a cohort of proteins that are strongly downregulated in glioma samples that overexpress Daam2.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify changes in protein expression associated with Daam2-mediated tumorigenesis we performed reverse phase protein lysate microarray (RPPA) on FACS-isolated mouse glioma samples that overexpress Daam2. Analysis revealed a cohort of proteins that are strongly downregulated in glioma samples that overexpress Daam2 (Figure 4A; Figure 4\u2014figure supplement 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RPPA data shown in Figure 4A, Figure 4\u2014figure supplement 1, and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "50fafeba-fa80-4516-b18d-b4b17e94e9e5",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C18",
+      "claim": "VHL is one of the proteins with the most significant inverse correlation with Daam2 expression across a spectrum of human malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified von Hippel Landau (VHL) as one of the proteins from this cohort with the most significant inverse correlation score across this spectrum of malignancies, with lung adenocarcinoma and GBM demonstrating the strongest negative correlations between Daam2 and VHL (Figure 4B; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis of TCGA data shown in Figure 4B and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "50933cee-4cef-4c9c-9582-492bfa68d14b",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C19",
+      "claim": "Daam2 expression was positively correlated with HIF1\u03b1 and pAkt protein expression across a cohort of human malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these data revealed that Daam2 expression was positively correlated with HIF1\u03b1 and pAkt protein expression across this cohort of malignancies, with GBM and lung adenocarcinoma also showing the strongest positive correlation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis of TCGA data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "367e88ac-e9a3-44b4-82b4-4dc28e57f06d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C20",
+      "claim": "VHL expression was dramatically reduced in Daam2-GOF tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for VHL in these models corroborated our RPPA data, where VHL expression was dramatically reduced in Daam2-GOF tumors, and increased in the Daam2\u2212/\u2212 tumors (Figure 4C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "c3e46e29-5da9-4732-8929-6a8f6c992c10",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C21",
+      "claim": "VHL expression was increased in Daam2\u2212/\u2212 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for VHL in these models corroborated our RPPA data, where VHL expression was dramatically reduced in Daam2-GOF tumors, and increased in the Daam2\u2212/\u2212 tumors (Figure 4C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "095a1085-2c46-4293-a5e8-92e32d7bea67",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C22",
+      "claim": "Elevated levels of VHL protein were observed in the brains of Daam2-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also observed elevated levels of VHL protein in the brains of Daam2-/- mice, further reinforcing these expression dynamics (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "ea8ba761-ab9c-4f19-ba00-3075a20121c0",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C23",
+      "claim": "pAkt and HIF1\u03b1 demonstrated elevated levels of expression in the Daam2-GOF tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Next we assessed expression of VHL's downstream effectors, pAkt and HIF1\u03b1, finding that both of these proteins demonstrated elevated levels of expression in the Daam2-GOF tumors, and pAkt having decreased levels in the Daam2\u2212/\u2212 tumors (Figure 4G\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry and immunoblot data shown in Figure 4G-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d4882862-508c-455d-ab4f-e05a979ee260",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C24",
+      "claim": "pAkt had decreased levels in the Daam2\u2212/\u2212 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Next we assessed expression of VHL's downstream effectors, pAkt and HIF1\u03b1, finding that both of these proteins demonstrated elevated levels of expression in the Daam2-GOF tumors, and pAkt having decreased levels in the Daam2\u2212/\u2212 tumors (Figure 4G\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 4G-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "45cdbad7-00d8-4248-ba2d-75b49ff8a75c",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C25",
+      "claim": "HIF1\u03b1 target genes Glut1 and VEGFA demonstrate increased expression in Daam2-GOF tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore we assessed the expression of HIF1\u03b1 targets Glut1 and VEGFA in the Daam2-GOF tumors, finding that these proteins also demonstrate increased expression (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data shown in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a5a9b147-7a5c-4e56-bdf0-f17624bc69a8",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C26",
+      "claim": "Elevated levels of angiogenesis were detected in Daam2-GOF tumors via CD31 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, one consequence of these changes in gene expression is elevated levels of angiogenesis (Fan et al., 2014; Keith and Simon, 2007; Semenza, 2004), which we detected in Daam2-GOF tumors via staining for the endothelial marker, CD31 (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD31 immunohistochemistry data shown in Figure 4\u2014figure supplement 3 and cited references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "ef26a548-f1d8-4486-a46b-eac2b6a49618",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C27",
+      "claim": "VHL suppresses the increased rate of cell growth mediated by Daam2-alone in human GBM cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether an epistatic relationship exists, we overexpressed VHL in the presence of Daam2 overexpression in human GBM cell lines, finding that VHL suppresses the increased rate of cell growth mediated by Daam2-alone (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell proliferation assay data shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "4268808f-4f0e-4c07-a460-7eb6b7825eac",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C28",
+      "claim": "Combined overexpression of VHL with Daam2 suppressed the accelerated rate of tumorigenesis mediated by Daam2-alone in mouse models of glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we extended these studies to our mouse models of glioma, finding that combined overexpression of VHL with Daam2 similarly suppressed the accelerated rate of tumorigenesis and proliferation mediated by Daam2-alone (Figure 5D\u2013O; T-V).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioluminescence imaging and BrdU data shown in Figure 5D-O, T-V.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "5f7ce7f9-dfaa-4416-ab6d-ab95f51d8313",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C29",
+      "claim": "Overexpression of VHL resulted in concordant suppression of pAkt and angiogenesis in mouse glioma tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, overexpression of VHL resulted in concordant suppression of pAkt and angiogenesis in these tumors (Figure 5P\u2013S; Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 5P-S and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d90c4139-1a65-49b2-9215-2b5ba9c1734e",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C30",
+      "claim": "Daam2 co-immunoprecipitates with VHL in protein lysates extracted from the PB-Ras model of glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "Using protein lysates extracted from our PB-Ras model of glioma, we found that Daam2 co-immunoprecipitates with VHL (and vice versa), suggesting that these proteins associate (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "51990188-e270-4bb7-9979-ae6025a741e5",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C31",
+      "claim": "VHL degradation is enhanced in the presence of Daam2 in cyclohexamide-mediated degradation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this we co-transfected Daam2 and VHL in 293 cells, and measured the rate of cyclohexamide-mediated degradation, finding that VHL degradation is enhanced in the presence of Daam2 (Figure 6B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cycloheximide chase assay data shown in Figure 6B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "763d4ec5-9a27-4474-88fd-9b3b523323af",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C32",
+      "claim": "The half-life of VHL (5.082 hr) was significantly decreased in the presence of Daam2 (3.679 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification in D shows the effect of Daam2 on VHL stability. Half-life of VHL (5.082 hr) was significantly decreased in the presence of Daam2 (3.679 hr).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by quantification of cycloheximide chase assay shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "9e2ae6da-682c-481b-a281-6a50313c7e48",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C33",
+      "claim": "In the presence of elevated levels of Daam2, the extent of VHL ubiquitination is substantially increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in vitro systems, we found that in the presence of elevated levels of Daam2, the extent of VHL ubiquitination is substantially increased and levels of VHL protein demonstrate a concomitantly decrease (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ubiquitination assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "35e67c2d-46b9-4d6d-a222-24812b10676d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C34",
+      "claim": "Levels of VHL protein demonstrate a concomitant decrease in the presence of elevated levels of Daam2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in vitro systems, we found that in the presence of elevated levels of Daam2, the extent of VHL ubiquitination is substantially increased and levels of VHL protein demonstrate a concomitantly decrease (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ubiquitination assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a6dd985a-4781-4d52-b87a-ba4d053d2841",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C35",
+      "claim": "VHL is a potent tumor suppressor regulating numerous pathways that drive cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Von Hippel-Landau (VHL) protein is a potent tumor suppressor regulating numerous pathways that drive cancer, but mutations in VHL are restricted to limited subsets of malignancies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about VHL function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "6054ce92-b67b-4deb-9923-9dcd90f53fa4",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C36",
+      "claim": "Mutations in VHL are restricted to limited subsets of malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Von Hippel-Landau (VHL) protein is a potent tumor suppressor regulating numerous pathways that drive cancer, but mutations in VHL are restricted to limited subsets of malignancies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about VHL mutations in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "87d974ec-4cc6-45f0-b7dc-d68e89d23845",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C37",
+      "claim": "Daam2 promotes glioma formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using developmental processes to uncover new pathways contributing to tumorigenesis, we found that Daam2 promotes glioma formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple functional studies in human and mouse models shown throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a1f5393c-e6aa-4672-81b5-e4e981ab8622",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C38",
+      "claim": "There is an inverse correlation between Daam2 and VHL expression across a host of cancers, including glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein expression screening identified an inverse correlation between Daam2 and VHL expression across a host of cancers, including glioma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RPPA screening and TCGA data analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "79fe9d07-fb7a-4015-9d4d-c8497fec135d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C39",
+      "claim": "Daam2 promotes tumorigenesis by suppressing VHL expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These in silico insights guided corroborating functional studies, which revealed that Daam2 promotes tumorigenesis by suppressing VHL expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional studies in mouse models shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "fe870f37-52bf-4384-8b9e-746b488a2833",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C40",
+      "claim": "Daam2 associates with VHL.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, biochemical analyses demonstrate that Daam2 associates with VHL and facilitates its ubiquitination and degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by co-immunoprecipitation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "de6ac2f8-0223-40c7-9bbd-1db16140eadf",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C41",
+      "claim": "Daam2 facilitates VHL ubiquitination and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, biochemical analyses demonstrate that Daam2 associates with VHL and facilitates its ubiquitination and degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ubiquitination and degradation assays shown in Figure 6B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "b7f0cf80-6c4c-4109-88e8-cfc8997b5bba",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C42",
+      "claim": "Tumor suppressor and oncogenic pathways function in part by subverting existing cellular programs to promote cancer 'hallmark' properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor suppressor and oncogenic pathways function in part by subverting existing cellular programs to promote cancer 'hallmark' properties that engender malignant growth (Hanahan and Weinberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Hanahan and Weinberg, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "74d1e32b-2b7d-49bd-a432-cdb5a75f0155",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C43",
+      "claim": "Genetic mutation is not the sole source of dysregulation in tumorigenic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, genetic mutation is not the sole source of this dysregulation, as changes in gene expression via promoter methylation or protein turnover can phenotypically resemble driver mutations and contribute to tumorigenesis (Esteller et al., 1999; Hegi et al., 2004; Pineda et al., 2015; Reinstein and Ciechanover, 2006; Semenza, 2003; Shen et al., 2005; Z\u00f6chbauer-M\u00fcller et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "33ad2822-88a6-4274-a7a4-76280fb3164a",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C44",
+      "claim": "VHL is mutated in Von Hippel-Landau disease, a hereditary cancer predisposition syndrome that often manifests as clear-cell renal carcinoma (ccRCC).",
+      "claim_type": "EXPLICIT",
+      "source": "VHL is a key tumor suppressor that is mutated in Von Hippel-Landau disease, a hereditary cancer predisposition syndrome that often manifests as clear-cell renal carcinoma (ccRCC) (Chen et al., 1995; Gossage et al., 2015; Kim and Kaelin, 2004; Maher et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "59a3c44e-1279-4dd9-8d6a-2c494baf2e67",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C45",
+      "claim": "VHL functions by binding to HIF1\u03b1 and hydroxylated Akt and modulating their degradation and activity, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "VHL functions by binding to HIF1\u03b1 and hydroxylated Akt and modulating their degradation and activity, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VHL function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "54b21ddc-37d4-4908-9347-c7bb2871399d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C46",
+      "claim": "Mutant forms of VHL associated with ccRCC are incapable of binding HIF1\u03b1 or pAkt.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant forms of VHL associated with ccRCC are incapable of binding HIF1\u03b1 or pAkt, resulting in stabilized expression and activation of these proteins, which ultimately facilitates tumorigenesis (Guo et al., 2016; Ivan et al., 2001; Jaakkola et al., 2001; Maxwell et al., 1999; Min et al., 2002; Ohh et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "746a8d9c-efb8-4071-a698-cf38ababe72a",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C47",
+      "claim": "Dysregulated HIF1\u03b1 and pAkt are associated with most forms of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "While dysregulated HIF1\u03b1 and pAkt are associated with most forms of cancer, mutations in VHL are found predominately in ccRCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "3040ce49-ae53-4c9e-9033-05f6aa84bfce",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C48",
+      "claim": "Mutations in VHL are found predominately in ccRCC.",
+      "claim_type": "EXPLICIT",
+      "source": "While dysregulated HIF1\u03b1 and pAkt are associated with most forms of cancer, mutations in VHL are found predominately in ccRCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VHL mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "c536a5e9-fb94-46b2-84ab-6bbafc9ed714",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C49",
+      "claim": "ID2 can interfere with VHL activity in glioma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed recent studies in glioma have shown that ID2 can interfere with VHL activity in cell lines (Lee et al., 2016) and that it's subject to regulation by microRNAs (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lee et al., 2016 and Li et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "5daa056c-b393-4ab5-ac0d-e6ad3a1fe244",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C50",
+      "claim": "VHL is subject to regulation by microRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed recent studies in glioma have shown that ID2 can interfere with VHL activity in cell lines (Lee et al., 2016) and that it's subject to regulation by microRNAs (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a42ac149-19cd-4a05-bdac-3469a3ebc345",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C51",
+      "claim": "Developmental processes directly contribute to all forms of malignancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental processes directly contribute to all forms of malignancy and are utilized by tumorigenic pathways to maintain cells in an undifferentiated and proliferative state (Jackson et al., 2006; Kesari et al., 2005; Stiles and Rowitch, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "e072b26f-7d95-42ca-b7e8-c5d1d78041b6",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C52",
+      "claim": "Daam2 is a key developmental regulator that suppresses glial differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a molecular entry point for these studies, we focused on Daam2, a key developmental regulator that suppresses glial differentiation and also contributes to dorsal patterning in the developing CNS (Lee et al., 2015; Lee and Deneen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lee et al., 2015 and Lee and Deneen, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "e6154bbc-6090-45bc-b3f4-d8bfcbe448d9",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C53",
+      "claim": "Daam2 contributes to dorsal patterning in the developing CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "As a molecular entry point for these studies, we focused on Daam2, a key developmental regulator that suppresses glial differentiation and also contributes to dorsal patterning in the developing CNS (Lee et al., 2015; Lee and Deneen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lee et al., 2015 and Lee and Deneen, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a1f90859-38a0-4d3e-980a-53be79225a1e",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C54",
+      "claim": "The CRISPR/IUE model closely resembles the genetics of GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "This model closely resembles the genetics of GBM (Alcantara Llaguno et al., 2009; Kwon et al., 2008; Zhu et al., 2005) and begins producing tumors detectable around post-natal week 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Alcantara Llaguno et al., 2009; Kwon et al., 2008; Zhu et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "9268e719-bfae-453a-80e0-6699b69e7020",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C55",
+      "claim": "The CRISPR/IUE model begins producing tumors detectable around post-natal week 8.",
+      "claim_type": "EXPLICIT",
+      "source": "This model closely resembles the genetics of GBM (Alcantara Llaguno et al., 2009; Kwon et al., 2008; Zhu et al., 2005) and begins producing tumors detectable around post-natal week 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from the model system described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "33bc4b19-fa42-4954-8df0-232462fb01a2",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C56",
+      "claim": "The PB-Ras model generates malignant glioma in mice around post-natal day 14.",
+      "claim_type": "EXPLICIT",
+      "source": "The first model combines targeted PiggyBac overexpression of oncogenic Ras-V12 (PB-Ras) in glial precursors with IUE, to generate malignant glioma in mice around post-natal day 14 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observations from the model system shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "2fa0db32-e15c-418d-b722-da84ff8e59c8",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C57",
+      "claim": "Daam2 functions as a positive regulator of Wnt-signaling in the developing CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we found that Daam2 functions as a positive regulator of Wnt-signaling in the developing CNS (Lee and Deneen, 2012), suggesting that it may also function in this manner in glioma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee and Deneen, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "5f50f933-0ed6-42ee-80eb-2feae27d5eb8",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C58",
+      "claim": "Daam2 potentiates canonical Wnt signaling through the clustering of existing Wnt receptor complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies have shown that Daam2 potentiates canonical Wnt signaling through the clustering of existing Wnt receptor complexes (Lee and Deneen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee and Deneen, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a1611fdd-3108-4598-b6ac-69d633dddf22",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C59",
+      "claim": "Mutations in key components of the Wnt-pathway and dysregulated Wnt-signaling has not been widely linked to low- or high-grade glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Wnt pathway has been implicated in several forms of cancer, including medulloblastoma, mutations in key components of the Wnt-pathway and dysregulated Wnt-signaling has not been widely linked to low- or high-grade glioma (Bienz and Clevers, 2000; de La Coste et al., 1998; Klaus and Birchmeier, 2008; Lustig and Behrens, 2003; Morin et al., 1997; Rubinfeld et al., 1997; Zurawel et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "7429f143-b898-49eb-ad38-a6e5cadc837c",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C60",
+      "claim": "Daam1 and Daam2 have highly conserved formin domains yet exhibit non-overlapping expression patterns in the developing CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Daam1 and Daam2 have highly conserved formin domains yet exhibit non-overlapping expression patterns in the developing CNS (Habas et al., 2001; Kida et al., 2004; Lee and Deneen, 2012; Nakaya et al., 2004), suggesting distinct functions during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "efc43451-9918-4437-8f94-8d5334b74024",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C61",
+      "claim": "Daam2 functions via canonical Wnt-signaling during CNS development.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Daam2 functions in this context via canonical Wnt-signaling, while Daam1 operates via the non-canonical Wnt, planar cell polarity (PCP) pathway (Habas et al., 2001; Lee and Deneen, 2012; Li et al., 2011; Liu et al., 2008; Zhu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "cbc41c4d-6bb7-4b50-9e09-0798f66579d9",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C62",
+      "claim": "Daam1 operates via the non-canonical Wnt, planar cell polarity (PCP) pathway during CNS development.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Daam2 functions in this context via canonical Wnt-signaling, while Daam1 operates via the non-canonical Wnt, planar cell polarity (PCP) pathway (Habas et al., 2001; Lee and Deneen, 2012; Li et al., 2011; Liu et al., 2008; Zhu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "da01446d-7702-4da7-b835-c42859363ad4",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C63",
+      "claim": "The PCP pathway has been implicated in tumor cell invasion and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the PCP pathway has been implicated in tumor cell invasion and migration (Anastas and Moon, 2013; Paw et al., 2015; Weeraratna et al., 2002), it is possible that Daam-family proteins also contribute to these features of tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "2cfdc7a7-5734-4faa-97d3-6d3e0e20d6ed",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C64",
+      "claim": "Daam1, Daam2 and other formin-family genes have been implicated in the migration of breast and neuroblastoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have implicated Daam1, Daam2 and other formin-family genes in the migration of breast and neuroblastoma cell lines (Luga et al., 2012), respectively, suggesting that the Daam-family proteins may also contribute to invasion and metastasis in other malignancies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Luga et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "296ca613-a673-4020-a230-f66c066ae4b2",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C65",
+      "claim": "Daam2 is expressed in both glial lineages (oligodendrocytes and astrocytes), in both precursor and mature stages of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Daam2 is expressed in both glial lineages (oligodendrocytes and astrocytes), in both precursor and mature stages of development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "77502666-7898-4734-bcef-e9120a840bb8",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C66",
+      "claim": "Daam2 functions to suppress the differentiation of oligodendrocyte progenitor cells (OPC) during development and after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Another feature of Daam2 is that it functions to suppress the differentiation of oligodendrocyte progenitor cells (OPC) during development and after injury (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "1c639a0c-25b4-4268-8a3c-ab6ce24fe935",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C67",
+      "claim": "OPCs may serve as a cell of origin for glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in mouse models suggest that OPCs may serve as a cell of origin for glioma, while NG2-positive OPC populations are endowed with tumor initiating properties (Ligon et al., 2007; Liu et al., 2011; Persson et al., 2010; Stiles and Rowitch, 2008; Sugiarto et al., 2011; Yadavilli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d287674f-7a14-48a3-93db-527315d920be",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C68",
+      "claim": "The VHL-HIF1\u03b1 signaling axis has been linked to OPC development and neonatal hypoxic injury responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed recent studies have linked the VHL-HIF1\u03b1 signaling axis to OPC development and neonatal hypoxic injury responses (Yuen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yuen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "3be1877d-72db-484a-a380-2be08e86e016",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C69",
+      "claim": "Inactivating mutations in VHL are predominately found in ccRCC and are very rare in most other forms of cancer, including glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, inactivating mutations in VHL are predominately found in ccRCC and are very rare in most other forms of cancer, including glioma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VHL mutations in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "b0ab251d-cfa0-4d79-afe3-5c952dd29f58",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C70",
+      "claim": "VHL can be degraded via the Hsp70 and Hsp110 chaperone system in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, prior studies in yeast have shown that VHL can be degraded via the Hsp70 and Hsp110 chaperone system (McClellan et al., 2005; Melville et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to McClellan et al., 2005 and Melville et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "7c679053-ba08-4c89-a6f3-d6ffa69057ef",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C71",
+      "claim": "Hsp's are expressed across a host of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Hsp's are expressed across a host of cancers (Garc\u00eda-Morales et al., 2007; Nylandsted et al., 2002; Sauvageot et al., 2009), it will be important to determine whether Daam2 engages the Hsp chaperone system to facilitate VHL degradation in glioma and other malignancies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "4a827e18-8027-4d62-bdb1-17be42fe6696",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C72",
+      "claim": "ID2 interference with VHL activity can deregulate HIF1\u03b1 expression and promote tumorigenesis in xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in glioma cell lines suggest that ID2 interference with VHL activity can deregulate HIF1\u03b1 expression and promote tumorigenesis in xenograft models (Lee et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lee et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "f8f8945b-427a-45cf-9472-3a763e67ef21",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C73",
+      "claim": "ID2 has been linked to the suppression of OPC differentiation via direct regulation of cell cycle kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ID2 has also been linked to the suppression of OPC differentiation via direct regulation of cell cycle kinetics (Wang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "073e5f9c-7dfb-4902-a552-7d09cfe06729",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C74",
+      "claim": "Both ID2 and Daam2 suppress VHL, inhibit OPC differentiation, and promote glioma tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations further reinforce the relationship between OPC development and glioma tumorigenesis and highlight key parallels between ID2 and Daam2 function across these systems, as both genes suppress VHL, inhibit OPC differentiation, and promote glioma tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the data presented in the manuscript and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d1175e1a-537c-4faf-9dc6-f27ac76a7072",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C75",
+      "claim": "VHL functions as an E3 ligase.",
+      "claim_type": "IMPLICIT",
+      "source": "Given that VHL functions as an E3 ligase and associates with Daam2, this may be another mechanism by which this complex operates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VHL function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "e6410c9c-3cfe-4ad5-ac43-0f0b663f078a",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C76",
+      "claim": "Dysregulation of ubiquitination is linked to protein aggregation associated with several neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed dysregulation of ubiquitination is linked to protein aggregation associated with several neurological disorders, functioning through both neuronal and glial populations (Jansen et al., 2014 and Hegde and Upadhya, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jansen et al., 2014 and Hegde and Upadhya, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "54fbce73-fa73-4eb4-a085-de66b13605d8",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C77",
+      "claim": "OPCs have latent proliferative capacity that is essential for injury responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, OPCs have latent proliferative capacity that is essential for injury responses, suggesting parallels between the processes that drive injury responses and tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about OPC biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "7e477817-ec7d-4b0b-a7bf-9bf4b95dc2a2",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C79",
+      "claim": "Daam2 overexpression in GBM1 cell line results in approximately 3-fold increase in cell number by day 9 compared to control.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 2A",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be inferred from the cell proliferation graph in Figure 2A showing GBM-1 cell line growth over 9 days.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "e4456af1-f1a4-4896-b3d6-0f320ec62e11",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C81",
+      "claim": "Daam2 overexpression results in approximately 1.5-fold increase in soft agar colony formation in GBM1 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these in vitro experiments was performed in triplicate and replicated three times; quantification is in E, **p=0.036.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 2E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d497f206-4b17-4a1f-aa9e-3db54df96fc1",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C82",
+      "claim": "Daam2 overexpression in CRISPR-IUE glioma results in approximately 6-fold increase in luciferase activity at 7 weeks compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging quantification in I is derived from 7 Daam2-overexpression and eight control mice; *p=0.0079.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 2I with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "2f54834e-72fb-4e47-96c8-d1c34ffd1c12",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C83",
+      "claim": "Daam2 overexpression in CRISPR-IUE glioma results in approximately 2-fold increase in BrdU-positive cells compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative number of BrdU expressing cells is quantified in L and is derived from six total mice, four slides per mouse, from each experimental condition; ***p=0.0019.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 2L with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "4caba8f9-13ef-4913-9d0f-90995de217ae",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C84",
+      "claim": "Daam2-shRNAi reduces Daam2 mRNA expression to approximately 10% of scrambled control levels in GBM1 cell line.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 3A",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be inferred from the qRT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "28b904ba-14d7-4c6b-b790-af9160ec7968",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C85",
+      "claim": "Daam2-shRNAi in GBM1 cell line reduces tumor growth to approximately 30% of scrambled control at 6 weeks post-transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging quantification is derived from seven mice transplanted with GBM1/Daam2-shRNAi and 5 GBM1/scrambled controls; *p=0.0325.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 3E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "a9f4214d-55f9-4364-b9d2-a7cb25982036",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C86",
+      "claim": "Daam2 knockout in CRISPR-IUE glioma results in approximately 30% of the luciferase activity compared to Daam2+/- controls at 8 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging quantification is derived from 8 Daam2-/- and 9 Daam2 \u00b1 mice; **p=0.0049.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 3H with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d62ae37e-d7c3-4d4a-b964-3bcf0495cf41",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C87",
+      "claim": "Daam2 knockout in CRISPR-IUE glioma results in approximately 50% reduction in BrdU-positive cells compared to Daam2+/- controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative number of BrdU expressing cells is quantified in K and is derived from six total mice, four slides per mouse, from each experimental condition; ****p=0.00001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 3K with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "43c12d64-bb1e-46a4-a16f-aff07b8f8b20",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C88",
+      "claim": "Overexpression of mouse Daam2 rescues the growth defects in Daam2-shRNAi knockdown cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue of growth defects manifest in Daam2-shRNAi knockdown cell lines via overexpression of mouse Daam2. In both cases overexpression of mouse Daam2 in the presence of the Daam2-shRNAi (blue line) rescued the growth defects present with Daam2-shRNAi alone (red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "800295eb-9b7b-4b39-971b-24757f976def",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C89",
+      "claim": "Daam2 and VHL demonstrate an inverse correlation with r=-0.19 and p<1E-25 across multiple cancer types in TCGA data.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified von Hippel Landau (VHL) as one of the proteins from this cohort with the most significant inverse correlation score across this spectrum of malignancies, with lung adenocarcinoma and GBM demonstrating the strongest negative correlations between Daam2 and VHL (Figure 4B; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the correlation analysis in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "be943676-367e-481c-bb08-6ea63575b5cc",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C90",
+      "claim": "Daam2 and HIF1\u03b1 demonstrate a positive correlation with r=0.09 and p<1E-6 across multiple cancer types in TCGA data.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these data revealed that Daam2 expression was positively correlated with HIF1\u03b1 and pAkt protein expression across this cohort of malignancies, with GBM and lung adenocarcinoma also showing the strongest positive correlation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the correlation analysis in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "f0362862-57d8-4859-b743-6e42639b7960",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C91",
+      "claim": "Daam2 and AKT pS473 demonstrate a positive correlation with r=0.27 and p<1E-50 across multiple cancer types in TCGA data.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these data revealed that Daam2 expression was positively correlated with HIF1\u03b1 and pAkt protein expression across this cohort of malignancies, with GBM and lung adenocarcinoma also showing the strongest positive correlation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the correlation analysis in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "55a26982-926e-43b5-9430-0a9d0eec5569",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C92",
+      "claim": "VHL overexpression combined with Daam2 overexpression in PB-Ras glioma reduces luciferase activity to control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging quantification in U is derived from 10 Daam2-overexpression, 9 VHL overexpression, 6 Daam2 +VHL, and 12 control mice; *p=0.0001, **p=0.0046, ***p=0.0016",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 5U with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "837faef7-3435-4167-b4c8-c2b401ab2f6d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C93",
+      "claim": "VHL overexpression combined with Daam2 overexpression in PB-Ras glioma reduces BrdU-positive cells to control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative number of BrdU expressing cells is quantified in V and is derived from six total mice, four slides per mouse, from each experimental condition; *p=0.0006, **p=0.0009, ***p<0.0001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 5V with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "15202110-4d12-4b2c-973b-787220e59191",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C94",
+      "claim": "The half-life parameter K is significantly different between VHL alone and VHL with Daam2 conditions (p=0.0081).",
+      "claim_type": "EXPLICIT",
+      "source": "Half-life was determined via nonlinear, one-phase exponential decay analysis (half-life parameter, K, is significantly different in two conditions: p=0.0081).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure legend for Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "bbebdc48-2674-4200-a106-4efa4145f29d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C95",
+      "claim": "Daam2 overexpression in PB-Ras glioma increases CD31 density approximately 1.5-fold compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "In E, *p=0.033.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 4\u2014figure supplement 3E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "982dc1eb-13c2-4b45-b7e3-169afcbe2a06",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C96",
+      "claim": "Daam2 knockout in CRISPR-IUE glioma reduces CD31 density to approximately 70% of Daam2+/- controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In F, p=0.0026.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 4\u2014figure supplement 3F with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "59c008f4-fa68-4b67-9e38-d8473f023653",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "claim_id": "C97",
+      "claim": "VHL overexpression combined with Daam2 overexpression in PB-Ras glioma reduces CD31 density to control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification is in K: *p=0.034, **p=0.044, and ***p=0.023.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantification in Figure 4\u2014figure supplement 3K with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fc8e4e8e-fcd1-4f05-b79d-383cf84b476b",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Daam2 is highly expressed in human and mouse glioma. TCGA analysis shows Daam2 is most highly expressed in LGG and GBM among 34 malignancies (C1). Tissue microarray analysis of 75 human glioma samples shows elevated DAAM2 staining compared to normal brain (C2), confirmed by qRT-PCR in primary samples (C3). Mouse glioma models and human xenografts also show elevated Daam2 expression (C4, C5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent lines of evidence converge to support elevated Daam2 expression in glioma: TCGA bioinformatics (C1), human tissue microarray with pathological scoring (C2), qRT-PCR validation (C3), and confirmation in both mouse models and human xenografts (C4-C5). The consistency across platforms and species strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "08d091f0-d73c-4dfa-9b2e-e1f8f145fbe0",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Daam2 overexpression promotes proliferation and anchorage-independent growth in human GBM cell lines. Daam2 overexpression accelerates cell growth in vitro (C6) with approximately 3-fold increase by day 9 (C79), and increases soft agar colony formation by approximately 1.5-fold (C7, C81) in GBM cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vitro functional data consistently demonstrate that Daam2 overexpression promotes both proliferation (C6, C79) and anchorage-independent growth (C7, C81) in human GBM cell lines. Statistical significance is reported (p=0.036 for soft agar), experiments were performed in triplicate and replicated three times, providing robust evidence for the oncogenic function of Daam2 in vitro.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "dea8b36c-739d-4528-8629-2e924559e2bc",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Daam2 overexpression accelerates glioma tumorigenesis in vivo in mouse models. Daam2 overexpression accelerates tumor formation in both PB-Ras (C8) and CRISPR/IUE (C9) mouse models, with approximately 6-fold increase in luciferase activity at 7 weeks (C82) and approximately 2-fold increase in BrdU-positive cells (C10, C83) in the CRISPR/IUE model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The gain-of-function studies in two independent mouse models (PB-Ras and CRISPR/IUE) consistently show that Daam2 overexpression accelerates tumorigenesis (C8-C9) with quantitative measurements of tumor burden (C82) and proliferation (C10, C83). Statistical significance is reported (p=0.0079 for imaging, p=0.0019 for BrdU), and the consistency across two different models strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "aa3fb558-cd90-4e3c-83fd-03ab60fe7f02",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Knockdown of Daam2 inhibits GBM cell growth in vitro and tumor growth in vivo. Daam2 shRNAi reduces Daam2 mRNA to approximately 10% of control (C84), inhibits cell growth in vitro (C11), and reduces tumor growth to approximately 30% of control in xenograft models (C12, C85). The growth defect is rescued by overexpression of mouse Daam2 (C88).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The loss-of-function studies using shRNAi demonstrate effective knockdown (C84) that inhibits both in vitro growth (C11) and in vivo tumorigenesis (C12, C85) with statistical significance (p=0.0325). The rescue experiment (C88) provides critical specificity control, confirming that the observed effects are due to Daam2 loss rather than off-target effects. This strengthens the causal relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "bc852d46-2cda-47c0-9253-09bdf4772dbc",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genetic deletion of Daam2 impairs glioma tumorigenesis in vivo. Daam2 knockout mice show decreased tumor formation in the CRISPR/IUE model (C13), with luciferase activity reduced to approximately 30% of heterozygote controls (C86) and approximately 50% reduction in BrdU-positive cells (C14, C87).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic knockout studies provide strong evidence that Daam2 is required for efficient glioma tumorigenesis. The use of germline knockout (rather than shRNAi) eliminates concerns about incomplete knockdown or off-target effects. Statistical significance is reported for both tumor burden (p=0.0049) and proliferation (p=0.00001), with appropriate sample sizes (8-9 mice per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "724a4f1e-a3fd-43ca-8636-2432b738cfc3",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Daam2 modulation has minimal effect on canonical Wnt signaling in glioma. Daam2 expression changes have only modest effects on Wnt activity in glioma cell lines (C15) and no impact on Wnt activity in mouse glioma models (C16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The TOP-FLASH reporter assays in both cell lines (C15) and mouse models (C16) consistently show that Daam2 does not significantly activate canonical Wnt signaling in glioma, despite its known role in Wnt signaling during development. This negative result is important for ruling out the canonical Wnt pathway as the mechanism of Daam2 function in glioma and is supported by appropriate reporter assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "e0d422cf-ef27-4ed7-976c-e2d3fdeca559",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RPPA screening identifies VHL as inversely correlated with Daam2 expression. RPPA analysis of Daam2-overexpressing mouse gliomas reveals a cohort of downregulated proteins (C17), with VHL showing the most significant inverse correlation with Daam2 across multiple human malignancies (C18), including a correlation of r=-0.19, p<1E-25 in TCGA data (C89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The RPPA screening approach is appropriate for unbiased protein expression profiling (C17), and the follow-up bioinformatics analysis using TCGA data provides independent validation of the Daam2-VHL inverse correlation across multiple cancer types (C18, C89). The statistical significance (p<1E-25) and consistency across cancer types strengthen the finding, though the correlation coefficient is modest (r=-0.19).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "9ada77d9-a996-4203-9740-439320d05af4",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Daam2 expression positively correlates with HIF1\u03b1 and pAkt across human malignancies. TCGA analysis shows Daam2 expression is positively correlated with HIF1\u03b1 (r=0.09, p<1E-6) and pAkt (r=0.27, p<1E-50) protein expression (C19, C90, C91), with GBM and lung adenocarcinoma showing the strongest correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The bioinformatics analysis of TCGA data demonstrates statistically significant positive correlations between Daam2 and downstream effectors of VHL (HIF1\u03b1 and pAkt). The correlation with pAkt is stronger (r=0.27) than with HIF1\u03b1 (r=0.09), and both are highly significant. This supports the hypothesis that Daam2 affects the VHL signaling axis, though the modest correlation coefficients suggest additional factors are involved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "92ae368a-b43e-41ec-af69-f23018dd0d83",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Daam2 expression inversely correlates with VHL protein levels in mouse glioma models. VHL expression is dramatically reduced in Daam2-overexpressing tumors (C20) and increased in Daam2 knockout tumors (C21), with elevated VHL also observed in brains of Daam2-/- mice (C22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The immunohistochemistry data from both gain-of-function (C20) and loss-of-function (C21, C22) mouse models consistently demonstrate an inverse relationship between Daam2 and VHL protein levels. The bidirectional effects (decreased VHL with Daam2 overexpression, increased VHL with Daam2 knockout) strengthen the causal relationship. Analysis was performed on six independent tumors per condition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "2298654c-1648-4203-8c4b-5fa2cf000761",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Daam2 modulates expression of VHL downstream effectors pAkt and HIF1\u03b1. Both pAkt and HIF1\u03b1 show elevated expression in Daam2-overexpressing tumors (C23), pAkt is decreased in Daam2 knockout tumors (C24), and HIF1\u03b1 target genes Glut1 and VEGFA are increased in Daam2-overexpressing tumors (C25).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The immunohistochemistry and immunoblot data demonstrate that Daam2 affects the VHL signaling axis, with appropriate changes in downstream effectors (C23-C24) and HIF1\u03b1 target genes (C25). The consistency between protein expression changes and the known VHL signaling pathway supports the mechanistic model. However, the lack of quantification for some of these changes (described as 'elevated' or 'decreased' without statistical analysis) is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "0e1e1b62-b65d-48a2-be96-5228a686bdd9",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Daam2 promotes angiogenesis in glioma tumors. CD31 staining shows elevated angiogenesis in Daam2-overexpressing tumors with approximately 1.5-fold increase (C26, C95), reduced angiogenesis to approximately 70% in Daam2 knockout tumors (C96), and rescue to control levels when VHL is co-overexpressed with Daam2 (C97).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The CD31 immunohistochemistry data consistently show that Daam2 promotes angiogenesis in a VHL-dependent manner. The bidirectional effects (increased with Daam2 overexpression, decreased with Daam2 knockout) and the rescue by VHL co-expression provide strong evidence. Statistical significance is reported for all comparisons (p<0.05), and the results are consistent with the known role of the VHL-HIF1\u03b1 axis in angiogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "7cd8f65f-efb2-42a5-96ae-9a2f04440ddb",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VHL overexpression suppresses Daam2-mediated tumorigenesis. VHL overexpression suppresses the increased cell growth mediated by Daam2 in human GBM cell lines (C27) and suppresses accelerated tumorigenesis in mouse models (C28), reducing luciferase activity (C92) and BrdU-positive cells (C93) to control levels, along with suppression of pAkt and angiogenesis (C29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The epistasis experiments demonstrate that VHL acts downstream of Daam2, as VHL overexpression can suppress Daam2-mediated effects in both cell lines (C27) and mouse models (C28-C29). Statistical significance is reported for all key measurements (p<0.01), and the rescue of multiple phenotypes (proliferation, tumor growth, pAkt, angiogenesis) strengthens the conclusion that Daam2 functions through VHL suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "c99f629b-2e6d-43c0-afdc-3029bb738a5c",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Daam2 physically associates with VHL. Co-immunoprecipitation experiments show that Daam2 and VHL associate in protein lysates from mouse glioma (C30, C40), with reciprocal immunoprecipitation confirming the interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The co-immunoprecipitation data demonstrate a physical interaction between Daam2 and VHL. The reciprocal IP (both Flag-Daam2 pulling down VHL and HA-VHL pulling down Flag-Daam2) strengthens the conclusion. However, the experiments were performed in tumor lysates where both proteins are overexpressed, and it would be important to confirm the interaction at endogenous levels and determine if it is direct or mediated by other proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "82b06c5d-c942-4bf6-ae2e-e78b0c82f25d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Daam2 enhances VHL protein degradation. Cycloheximide chase assays show that VHL degradation is enhanced in the presence of Daam2 (C31), with VHL half-life significantly decreased from 5.082 hr to 3.679 hr (C32, C94, p=0.0081).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cycloheximide chase assay is an appropriate method to measure protein stability, and the data show a statistically significant decrease in VHL half-life in the presence of Daam2 (C31-C32). The quantification using nonlinear regression analysis is appropriate (C94), and the p-value (0.0081) indicates statistical significance. The experiments were performed in triplicate (n=3), providing adequate replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "eaec8286-3ce4-43c3-96be-3b26055094cf",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Daam2 facilitates VHL ubiquitination. In vitro ubiquitination assays show that Daam2 substantially increases VHL ubiquitination (C33, C41) with concomitant decrease in VHL protein levels (C34).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ubiquitination assay demonstrates that Daam2 promotes VHL ubiquitination (C33, C41), which is consistent with the observed decrease in VHL protein levels (C34) and the degradation data (C31-C32). The use of proteasome inhibitor (MG132) and de-ubiquitination reagents in the protocol is appropriate. However, the lack of quantification and limited replication information are minor limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "693c8a05-c704-4a6d-a404-652ef24d2311",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "VHL is a tumor suppressor with restricted mutation patterns. VHL is a potent tumor suppressor (C35) that is mutated in Von Hippel-Landau disease and ccRCC (C36, C44), functions by binding HIF1\u03b1 and pAkt (C45), and mutant forms cannot bind these targets (C46). While dysregulated HIF1\u03b1 and pAkt are common in cancer (C47), VHL mutations are predominantly found in ccRCC (C48, C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent well-established knowledge about VHL function and mutation patterns in cancer, supported by multiple citations to the literature (C35-C36, C44-C48, C69). This background information is accurate and provides important context for the novelty of the current findings, which identify a non-mutational mechanism of VHL inactivation in glioma.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "24596a65-76c7-4f09-a7cb-f825ee6260d0",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Daam2 promotes glioma formation by suppressing VHL expression. The study demonstrates that Daam2 promotes glioma formation (C37), identifies an inverse correlation between Daam2 and VHL across cancers (C38), and shows through functional studies that Daam2 promotes tumorigenesis by suppressing VHL expression (C39).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims integrate the major findings of the manuscript and are well-supported by the collective evidence from expression studies (C1-C5), functional studies (C6-C14), mechanistic studies (C17-C34), and epistasis experiments (C27-C29). The claims accurately represent the main conclusions of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d73a4146-4f9c-4e08-9045-6bd0ee112484",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Tumor suppressor pathways can be dysregulated through non-mutational mechanisms. Tumor suppressor and oncogenic pathways subvert cellular programs to promote cancer (C42), genetic mutation is not the sole source of dysregulation (C43), and developmental processes contribute to malignancy (C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established concepts in cancer biology, supported by appropriate citations (Hanahan and Weinberg, 2011; multiple citations for C43 and C51). This background provides important conceptual framework for the study, which identifies a developmental regulator (Daam2) that dysregulates a tumor suppressor (VHL) through protein degradation rather than mutation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "d34fe9a4-06cc-4599-a2ac-09045c02d1a4",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "ID2 and Daam2 show parallel functions in VHL regulation and glioma. ID2 can interfere with VHL activity in glioma cell lines (C49, C72) and VHL is subject to microRNA regulation (C50). ID2 also suppresses OPC differentiation (C73), and both ID2 and Daam2 suppress VHL, inhibit OPC differentiation, and promote glioma tumorigenesis (C74).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims about ID2 are supported by appropriate citations (Lee et al., 2016; Li et al., 2017; Wang et al., 2001). The parallel between ID2 and Daam2 function (C74) is a reasonable inference based on the cited literature and the current findings, though it is somewhat speculative. The discussion appropriately notes these parallels while acknowledging that the mechanisms differ (ID2 interferes with VHL activity, while Daam2 promotes VHL degradation).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "4da5e2a8-7e64-43b9-9e03-dfb30715525f",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Daam2 is a developmental regulator with known functions in CNS development. Daam2 suppresses glial differentiation and contributes to dorsal patterning in the developing CNS (C52, C53), functions as a positive regulator of Wnt signaling in development (C57, C61), potentiates canonical Wnt signaling through receptor clustering (C58), and suppresses OPC differentiation during development and after injury (C66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about Daam2's developmental functions are supported by appropriate citations to the authors' previous work (Lee et al., 2015; Lee and Deneen, 2012). This background establishes the rationale for investigating Daam2 in glioma, given the known connections between developmental processes and tumorigenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "17335bd0-c40a-4415-b8ee-9a7178b47086",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The mouse glioma models used in the study recapitulate human GBM genetics. The CRISPR/IUE model closely resembles GBM genetics (C54) and produces tumors around post-natal week 8 (C55), while the PB-Ras model generates malignant glioma around post-natal day 14 (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims about the mouse models are supported by appropriate citations (Alcantara Llaguno et al., 2009; Kwon et al., 2008; Zhu et al., 2005) and observations from the current study (C55-C56). The use of two independent models (PB-Ras and CRISPR/IUE) with different genetic drivers and timelines strengthens the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "fa6e6517-56e0-4dd8-89f7-418b8107e874",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Daam family proteins have distinct functions and potential roles in cancer. Wnt pathway mutations are not widely linked to glioma (C59), Daam1 and Daam2 have conserved domains but non-overlapping expression (C60), Daam1 operates via the PCP pathway (C62), which has been implicated in tumor invasion and migration (C63), and Daam family genes have been implicated in cell migration (C64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations and provide important context for understanding the specificity of Daam2 function in glioma. The discussion appropriately notes that while Daam2 functions via canonical Wnt signaling in development, this does not appear to be its primary mechanism in glioma (C15-C16), suggesting context-dependent functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "7bb9b3b6-26ef-476b-8a4b-21413109cdac",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "OPCs are implicated in glioma biology. Daam2 is expressed in both glial lineages (C65), OPCs may serve as a cell of origin for glioma (C67), the VHL-HIF1\u03b1 axis is linked to OPC development and injury responses (C68), and OPCs have latent proliferative capacity essential for injury responses (C77).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations and provide important biological context linking Daam2's developmental functions in OPCs to its role in glioma. The connection between OPC biology and glioma is well-established in the literature (multiple citations for C67), and the observation that both Daam2 and VHL-HIF1\u03b1 signaling are important in OPCs strengthens the biological plausibility of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    },
+    {
+      "id": "80b8dd5b-1a0a-4578-aaab-aa6e3b14983d",
+      "content_id": "8d1be680-a8c6-478a-aae9-39d04eb5ca59",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "VHL degradation may involve chaperone systems and ubiquitination pathways. VHL can be degraded via the Hsp70/Hsp110 chaperone system in yeast (C70), Hsps are expressed in cancers (C71), VHL functions as an E3 ligase (C75), and dysregulation of ubiquitination is linked to neurological disorders (C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations and provide mechanistic context for understanding how Daam2 might facilitate VHL degradation. The discussion appropriately notes that it remains to be determined whether Daam2 engages the Hsp chaperone system (C71) and whether VHL might reciprocally degrade Daam2 (C75), identifying important areas for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:25.025372Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "83f46275-07c2-4524-9cb6-3b9061b91165",
+      "result_id": "fc8e4e8e-fcd1-4f05-b79d-383cf84b476b"
+    },
+    {
+      "claim_id": "9f6b3e60-b22c-4382-a222-056df16da95f",
+      "result_id": "fc8e4e8e-fcd1-4f05-b79d-383cf84b476b"
+    },
+    {
+      "claim_id": "76a20618-410d-4636-a797-91dfb4d8a503",
+      "result_id": "fc8e4e8e-fcd1-4f05-b79d-383cf84b476b"
+    },
+    {
+      "claim_id": "63672247-ce1a-4d5e-aa28-bf29e6b1bc67",
+      "result_id": "fc8e4e8e-fcd1-4f05-b79d-383cf84b476b"
+    },
+    {
+      "claim_id": "50529157-4cc2-4ad9-b78a-e059cbc67ae1",
+      "result_id": "fc8e4e8e-fcd1-4f05-b79d-383cf84b476b"
+    },
+    {
+      "claim_id": "9c3a508a-e131-475c-9ed8-057f0b42ce73",
+      "result_id": "08d091f0-d73c-4dfa-9b2e-e1f8f145fbe0"
+    },
+    {
+      "claim_id": "ab0bc77c-33a1-4f4f-884e-f5beae8a4e91",
+      "result_id": "08d091f0-d73c-4dfa-9b2e-e1f8f145fbe0"
+    },
+    {
+      "claim_id": "7e477817-ec7d-4b0b-a7bf-9bf4b95dc2a2",
+      "result_id": "08d091f0-d73c-4dfa-9b2e-e1f8f145fbe0"
+    },
+    {
+      "claim_id": "e4456af1-f1a4-4896-b3d6-0f320ec62e11",
+      "result_id": "08d091f0-d73c-4dfa-9b2e-e1f8f145fbe0"
+    },
+    {
+      "claim_id": "70b01301-1b24-47a8-b99d-de9b3c058f5c",
+      "result_id": "dea8b36c-739d-4528-8629-2e924559e2bc"
+    },
+    {
+      "claim_id": "20ec4808-80fd-404b-add9-ef7b9781ee6c",
+      "result_id": "dea8b36c-739d-4528-8629-2e924559e2bc"
+    },
+    {
+      "claim_id": "cd49c97f-a85b-4628-9439-fd6c74fe53ae",
+      "result_id": "dea8b36c-739d-4528-8629-2e924559e2bc"
+    },
+    {
+      "claim_id": "d497f206-4b17-4a1f-aa9e-3db54df96fc1",
+      "result_id": "dea8b36c-739d-4528-8629-2e924559e2bc"
+    },
+    {
+      "claim_id": "2f54834e-72fb-4e47-96c8-d1c34ffd1c12",
+      "result_id": "dea8b36c-739d-4528-8629-2e924559e2bc"
+    },
+    {
+      "claim_id": "87ac6926-59c4-46af-851c-72e6acfae64d",
+      "result_id": "aa3fb558-cd90-4e3c-83fd-03ab60fe7f02"
+    },
+    {
+      "claim_id": "a0728499-be96-47d0-ba09-5e7abb1f025b",
+      "result_id": "aa3fb558-cd90-4e3c-83fd-03ab60fe7f02"
+    },
+    {
+      "claim_id": "4caba8f9-13ef-4913-9d0f-90995de217ae",
+      "result_id": "aa3fb558-cd90-4e3c-83fd-03ab60fe7f02"
+    },
+    {
+      "claim_id": "28b904ba-14d7-4c6b-b790-af9160ec7968",
+      "result_id": "aa3fb558-cd90-4e3c-83fd-03ab60fe7f02"
+    },
+    {
+      "claim_id": "43c12d64-bb1e-46a4-a16f-aff07b8f8b20",
+      "result_id": "aa3fb558-cd90-4e3c-83fd-03ab60fe7f02"
+    },
+    {
+      "claim_id": "69282aeb-50c9-4506-b227-124284929738",
+      "result_id": "bc852d46-2cda-47c0-9253-09bdf4772dbc"
+    },
+    {
+      "claim_id": "0266465f-7cf0-422d-9a34-5b6d48c86231",
+      "result_id": "bc852d46-2cda-47c0-9253-09bdf4772dbc"
+    },
+    {
+      "claim_id": "a9f4214d-55f9-4364-b9d2-a7cb25982036",
+      "result_id": "bc852d46-2cda-47c0-9253-09bdf4772dbc"
+    },
+    {
+      "claim_id": "d62ae37e-d7c3-4d4a-b964-3bcf0495cf41",
+      "result_id": "bc852d46-2cda-47c0-9253-09bdf4772dbc"
+    },
+    {
+      "claim_id": "2d94b79b-ebfe-41a3-9c31-080588c8e2c8",
+      "result_id": "724a4f1e-a3fd-43ca-8636-2432b738cfc3"
+    },
+    {
+      "claim_id": "85299212-7661-427d-8d04-a6879fb084ec",
+      "result_id": "724a4f1e-a3fd-43ca-8636-2432b738cfc3"
+    },
+    {
+      "claim_id": "450e6df7-a132-481f-9ea0-eccf72ed10b3",
+      "result_id": "e0d422cf-ef27-4ed7-976c-e2d3fdeca559"
+    },
+    {
+      "claim_id": "50fafeba-fa80-4516-b18d-b4b17e94e9e5",
+      "result_id": "e0d422cf-ef27-4ed7-976c-e2d3fdeca559"
+    },
+    {
+      "claim_id": "800295eb-9b7b-4b39-971b-24757f976def",
+      "result_id": "e0d422cf-ef27-4ed7-976c-e2d3fdeca559"
+    },
+    {
+      "claim_id": "50933cee-4cef-4c9c-9582-492bfa68d14b",
+      "result_id": "9ada77d9-a996-4203-9740-439320d05af4"
+    },
+    {
+      "claim_id": "be943676-367e-481c-bb08-6ea63575b5cc",
+      "result_id": "9ada77d9-a996-4203-9740-439320d05af4"
+    },
+    {
+      "claim_id": "f0362862-57d8-4859-b743-6e42639b7960",
+      "result_id": "9ada77d9-a996-4203-9740-439320d05af4"
+    },
+    {
+      "claim_id": "367e88ac-e9a3-44b4-82b4-4dc28e57f06d",
+      "result_id": "92ae368a-b43e-41ec-af69-f23018dd0d83"
+    },
+    {
+      "claim_id": "c3e46e29-5da9-4732-8929-6a8f6c992c10",
+      "result_id": "92ae368a-b43e-41ec-af69-f23018dd0d83"
+    },
+    {
+      "claim_id": "095a1085-2c46-4293-a5e8-92e32d7bea67",
+      "result_id": "92ae368a-b43e-41ec-af69-f23018dd0d83"
+    },
+    {
+      "claim_id": "ea8ba761-ab9c-4f19-ba00-3075a20121c0",
+      "result_id": "2298654c-1648-4203-8c4b-5fa2cf000761"
+    },
+    {
+      "claim_id": "d4882862-508c-455d-ab4f-e05a979ee260",
+      "result_id": "2298654c-1648-4203-8c4b-5fa2cf000761"
+    },
+    {
+      "claim_id": "45cdbad7-00d8-4248-ba2d-75b49ff8a75c",
+      "result_id": "2298654c-1648-4203-8c4b-5fa2cf000761"
+    },
+    {
+      "claim_id": "a5a9b147-7a5c-4e56-bdf0-f17624bc69a8",
+      "result_id": "0e1e1b62-b65d-48a2-be96-5228a686bdd9"
+    },
+    {
+      "claim_id": "bbebdc48-2674-4200-a106-4efa4145f29d",
+      "result_id": "0e1e1b62-b65d-48a2-be96-5228a686bdd9"
+    },
+    {
+      "claim_id": "982dc1eb-13c2-4b45-b7e3-169afcbe2a06",
+      "result_id": "0e1e1b62-b65d-48a2-be96-5228a686bdd9"
+    },
+    {
+      "claim_id": "59c008f4-fa68-4b67-9e38-d8473f023653",
+      "result_id": "0e1e1b62-b65d-48a2-be96-5228a686bdd9"
+    },
+    {
+      "claim_id": "ef26a548-f1d8-4486-a46b-eac2b6a49618",
+      "result_id": "7cd8f65f-efb2-42a5-96ae-9a2f04440ddb"
+    },
+    {
+      "claim_id": "4268808f-4f0e-4c07-a460-7eb6b7825eac",
+      "result_id": "7cd8f65f-efb2-42a5-96ae-9a2f04440ddb"
+    },
+    {
+      "claim_id": "5f7ce7f9-dfaa-4416-ab6d-ab95f51d8313",
+      "result_id": "7cd8f65f-efb2-42a5-96ae-9a2f04440ddb"
+    },
+    {
+      "claim_id": "55a26982-926e-43b5-9430-0a9d0eec5569",
+      "result_id": "7cd8f65f-efb2-42a5-96ae-9a2f04440ddb"
+    },
+    {
+      "claim_id": "837faef7-3435-4167-b4c8-c2b401ab2f6d",
+      "result_id": "7cd8f65f-efb2-42a5-96ae-9a2f04440ddb"
+    },
+    {
+      "claim_id": "d90c4139-1a65-49b2-9215-2b5ba9c1734e",
+      "result_id": "c99f629b-2e6d-43c0-afdc-3029bb738a5c"
+    },
+    {
+      "claim_id": "fe870f37-52bf-4384-8b9e-746b488a2833",
+      "result_id": "c99f629b-2e6d-43c0-afdc-3029bb738a5c"
+    },
+    {
+      "claim_id": "51990188-e270-4bb7-9979-ae6025a741e5",
+      "result_id": "82b06c5d-c942-4bf6-ae2e-e78b0c82f25d"
+    },
+    {
+      "claim_id": "763d4ec5-9a27-4474-88fd-9b3b523323af",
+      "result_id": "82b06c5d-c942-4bf6-ae2e-e78b0c82f25d"
+    },
+    {
+      "claim_id": "15202110-4d12-4b2c-973b-787220e59191",
+      "result_id": "82b06c5d-c942-4bf6-ae2e-e78b0c82f25d"
+    },
+    {
+      "claim_id": "9e2ae6da-682c-481b-a281-6a50313c7e48",
+      "result_id": "eaec8286-3ce4-43c3-96be-3b26055094cf"
+    },
+    {
+      "claim_id": "35e67c2d-46b9-4d6d-a222-24812b10676d",
+      "result_id": "eaec8286-3ce4-43c3-96be-3b26055094cf"
+    },
+    {
+      "claim_id": "de6ac2f8-0223-40c7-9bbd-1db16140eadf",
+      "result_id": "eaec8286-3ce4-43c3-96be-3b26055094cf"
+    },
+    {
+      "claim_id": "a6dd985a-4781-4d52-b87a-ba4d053d2841",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "6054ce92-b67b-4deb-9923-9dcd90f53fa4",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "33ad2822-88a6-4274-a7a4-76280fb3164a",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "59a3c44e-1279-4dd9-8d6a-2c494baf2e67",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "54b21ddc-37d4-4908-9347-c7bb2871399d",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "746a8d9c-efb8-4071-a698-cf38ababe72a",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "3040ce49-ae53-4c9e-9033-05f6aa84bfce",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "3be1877d-72db-484a-a380-2be08e86e016",
+      "result_id": "693c8a05-c704-4a6d-a404-652ef24d2311"
+    },
+    {
+      "claim_id": "87d974ec-4cc6-45f0-b7dc-d68e89d23845",
+      "result_id": "24596a65-76c7-4f09-a7cb-f825ee6260d0"
+    },
+    {
+      "claim_id": "a1f5393c-e6aa-4672-81b5-e4e981ab8622",
+      "result_id": "24596a65-76c7-4f09-a7cb-f825ee6260d0"
+    },
+    {
+      "claim_id": "79fe9d07-fb7a-4015-9d4d-c8497fec135d",
+      "result_id": "24596a65-76c7-4f09-a7cb-f825ee6260d0"
+    },
+    {
+      "claim_id": "b7f0cf80-6c4c-4109-88e8-cfc8997b5bba",
+      "result_id": "d73a4146-4f9c-4e08-9045-6bd0ee112484"
+    },
+    {
+      "claim_id": "74d1e32b-2b7d-49bd-a432-cdb5a75f0155",
+      "result_id": "d73a4146-4f9c-4e08-9045-6bd0ee112484"
+    },
+    {
+      "claim_id": "a42ac149-19cd-4a05-bdac-3469a3ebc345",
+      "result_id": "d73a4146-4f9c-4e08-9045-6bd0ee112484"
+    },
+    {
+      "claim_id": "c536a5e9-fb94-46b2-84ab-6bbafc9ed714",
+      "result_id": "d34fe9a4-06cc-4599-a2ac-09045c02d1a4"
+    },
+    {
+      "claim_id": "5daa056c-b393-4ab5-ac0d-e6ad3a1fe244",
+      "result_id": "d34fe9a4-06cc-4599-a2ac-09045c02d1a4"
+    },
+    {
+      "claim_id": "4a827e18-8027-4d62-bdb1-17be42fe6696",
+      "result_id": "d34fe9a4-06cc-4599-a2ac-09045c02d1a4"
+    },
+    {
+      "claim_id": "f8f8945b-427a-45cf-9472-3a763e67ef21",
+      "result_id": "d34fe9a4-06cc-4599-a2ac-09045c02d1a4"
+    },
+    {
+      "claim_id": "073e5f9c-7dfb-4902-a552-7d09cfe06729",
+      "result_id": "d34fe9a4-06cc-4599-a2ac-09045c02d1a4"
+    },
+    {
+      "claim_id": "e072b26f-7d95-42ca-b7e8-c5d1d78041b6",
+      "result_id": "4da5e2a8-7e64-43b9-9e03-dfb30715525f"
+    },
+    {
+      "claim_id": "e6154bbc-6090-45bc-b3f4-d8bfcbe448d9",
+      "result_id": "4da5e2a8-7e64-43b9-9e03-dfb30715525f"
+    },
+    {
+      "claim_id": "2fa0db32-e15c-418d-b722-da84ff8e59c8",
+      "result_id": "4da5e2a8-7e64-43b9-9e03-dfb30715525f"
+    },
+    {
+      "claim_id": "5f50f933-0ed6-42ee-80eb-2feae27d5eb8",
+      "result_id": "4da5e2a8-7e64-43b9-9e03-dfb30715525f"
+    },
+    {
+      "claim_id": "efc43451-9918-4437-8f94-8d5334b74024",
+      "result_id": "4da5e2a8-7e64-43b9-9e03-dfb30715525f"
+    },
+    {
+      "claim_id": "77502666-7898-4734-bcef-e9120a840bb8",
+      "result_id": "4da5e2a8-7e64-43b9-9e03-dfb30715525f"
+    },
+    {
+      "claim_id": "a1f90859-38a0-4d3e-980a-53be79225a1e",
+      "result_id": "17335bd0-c40a-4415-b8ee-9a7178b47086"
+    },
+    {
+      "claim_id": "9268e719-bfae-453a-80e0-6699b69e7020",
+      "result_id": "17335bd0-c40a-4415-b8ee-9a7178b47086"
+    },
+    {
+      "claim_id": "33bc4b19-fa42-4954-8df0-232462fb01a2",
+      "result_id": "17335bd0-c40a-4415-b8ee-9a7178b47086"
+    },
+    {
+      "claim_id": "a1611fdd-3108-4598-b6ac-69d633dddf22",
+      "result_id": "fa6e6517-56e0-4dd8-89f7-418b8107e874"
+    },
+    {
+      "claim_id": "7429f143-b898-49eb-ad38-a6e5cadc837c",
+      "result_id": "fa6e6517-56e0-4dd8-89f7-418b8107e874"
+    },
+    {
+      "claim_id": "cbc41c4d-6bb7-4b50-9e09-0798f66579d9",
+      "result_id": "fa6e6517-56e0-4dd8-89f7-418b8107e874"
+    },
+    {
+      "claim_id": "da01446d-7702-4da7-b835-c42859363ad4",
+      "result_id": "fa6e6517-56e0-4dd8-89f7-418b8107e874"
+    },
+    {
+      "claim_id": "2cfdc7a7-5734-4faa-97d3-6d3e0e20d6ed",
+      "result_id": "fa6e6517-56e0-4dd8-89f7-418b8107e874"
+    },
+    {
+      "claim_id": "296ca613-a673-4020-a230-f66c066ae4b2",
+      "result_id": "7bb9b3b6-26ef-476b-8a4b-21413109cdac"
+    },
+    {
+      "claim_id": "1c639a0c-25b4-4268-8a3c-ab6ce24fe935",
+      "result_id": "7bb9b3b6-26ef-476b-8a4b-21413109cdac"
+    },
+    {
+      "claim_id": "d287674f-7a14-48a3-93db-527315d920be",
+      "result_id": "7bb9b3b6-26ef-476b-8a4b-21413109cdac"
+    },
+    {
+      "claim_id": "54fbce73-fa73-4eb4-a085-de66b13605d8",
+      "result_id": "7bb9b3b6-26ef-476b-8a4b-21413109cdac"
+    },
+    {
+      "claim_id": "b0ab251d-cfa0-4d79-afe3-5c952dd29f58",
+      "result_id": "80b8dd5b-1a0a-4578-aaab-aa6e3b14983d"
+    },
+    {
+      "claim_id": "7c679053-ba08-4c89-a6f3-d6ffa69057ef",
+      "result_id": "80b8dd5b-1a0a-4578-aaab-aa6e3b14983d"
+    },
+    {
+      "claim_id": "d1175e1a-537c-4faf-9dc6-f27ac76a7072",
+      "result_id": "80b8dd5b-1a0a-4578-aaab-aa6e3b14983d"
+    },
+    {
+      "claim_id": "e6410c9c-3cfe-4ad5-ac43-0f0b663f078a",
+      "result_id": "80b8dd5b-1a0a-4578-aaab-aa6e3b14983d"
+    }
+  ],
+  "comparisons": []
+}

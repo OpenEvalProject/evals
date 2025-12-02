@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C30",
+      "C31",
+      "C33",
+      "C85"
+    ],
+    "result": "During natural acoustic stimulation, SBC firing rates remained constant at spontaneous levels, unlike the increase observed with pure tones or synthetic stimuli. This effect persisted across different stimulus segments and represents a novel finding not previously demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C30, C31 provide converging experimental evidence with statistical support (p=0.9) showing unchanged SBC firing rates during natural stimulation. C33 and C85 contextualize this as a novel finding distinct from previous synthetic stimulus studies. The data are internally consistent and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C132",
+      "C133"
+    ],
+    "result": "The unchanged SBC firing rates during natural stimulation were accompanied by increased threshold EPSP and failure fraction, indicating strong inhibitory gain control that limits average SBC firing and regulates output gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 provide statistically significant experimental data (p<0.001) for increased threshold EPSP and failure fraction. C36, C37, C132, and C133 provide mechanistic interpretation linking these observations to inhibitory control. The inference is well-supported by the data and consistent with prior work cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C62",
+      "C65",
+      "C84"
+    ],
+    "result": "Both sparsity and reproducibility increased from ANF input to SBC output during natural stimulation. The relative increase was larger for natural stimuli compared to synthetic stimuli, despite lower absolute values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 provide statistically significant data (p<0.001 for increases, p=0.004 and p=0.024 for comparisons with synthetic stimuli). C62, C65, and C84 summarize these findings. The comparison with previous synthetic stimulus data strengthens the conclusion about natural stimulus specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C55",
+      "C138",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Activity-dependent subtractive inhibition model successfully simulated SBC responses, producing similar sparsity, reproducibility, and reconstruction quality as experimental SBC data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 show simulation results match experimental SBC output. C55, C150-C152 demonstrate statistical comparability between simulated and real SBC reconstructions (all p>0.05). C138 confirms the model approximates sparsity and reproducibility increases. The convergence of multiple metrics supports the model validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C46",
+      "C49",
+      "C64",
+      "C68",
+      "C148"
+    ],
+    "result": "Stimulus reconstructions based on ANF input were overall more accurate than SBC output reconstructions, indicating reduced fidelity in SBC representation of the overall stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C49, and C148 provide statistically significant evidence (p=0.017) that SBC reconstruction quality is lower than ANF. C46 shows ANF reconstructions faithfully represent the stimulus. C64 and C68 summarize the reduced fidelity in SBC output. The reconstruction approach provides a population-level assessment supporting this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C50",
+      "C147"
+    ],
+    "result": "EPSPfail-based reconstructions (blocked ANF inputs) delivered the most accurate reconstructions, better than ANF input, but were temporally more variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C50 provide experimental data with statistical support (p=0.006) showing EPSPfail reconstructions exceed ANF quality despite lower spike counts. C147 provides additional comparative evidence. This surprising finding is well-documented but the mechanistic explanation remains incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C56",
+      "C57",
+      "C63",
+      "C67",
+      "C140",
+      "C153",
+      "C156"
+    ],
+    "result": "SBC reconstructions showed enhanced temporal precision with sharper autocorrelation compared to ANF and EPSPfail, reflecting improved envelope fine-structure representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C56, C57, C63, C67 describe enhanced temporal precision in SBC output. C140, C153, C156 provide specific evidence including statistical support (p<0.001 for autocorrelation sharpness). The convergence of multiple temporal metrics supports this conclusion about improved temporal feature extraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C48",
+      "C53",
+      "C69",
+      "C70"
+    ],
+    "result": "SBC reconstructions showed reduced dynamic range and compressed representation, with decreased variance in reconstructed stimulus levels, particularly missing extreme high and low levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C23, C48 describe reduced signal representation in SBC output. C53 provides statistical evidence (p<0.005) for reduced variance. C69-C70 detail the compression mechanism. The conditional level density analysis (Figure 3F-I) provides strong visual and quantitative support for this compression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C149"
+    ],
+    "result": "Temporal dynamics contributed most to reconstruction quality for all signals, while frequency representation was comparably inaccurate. Both temporal and frequency correlations decreased for SBC reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C149 provide statistical evidence (p<0.02 for all comparisons) showing temporal dominance and decreased correlations in SBC reconstructions. The decomposition of reconstruction quality into temporal and frequency components is methodologically sound and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C157"
+    ],
+    "result": "SBC reconstructions showed overrepresentation of 100-150 Hz modulation frequencies, potentially corresponding to the inhibitory time constant measured in vivo (~10 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C157 provide statistically significant evidence (p<0.001) for enhanced 100-150 Hz representation. C59 links this to inhibitory time constants from previous studies. The correspondence between frequency emphasis and inhibitory dynamics is plausible but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C158"
+    ],
+    "result": "Spectral correlation increased for SBC output compared to ANF input, indicating focus on temporal events across frequencies with corresponding loss in frequency fine-structure representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C158 provide statistical evidence (p<0.001 for frequency distance, p<0.02 for response type) for increased spectral correlation. C61 provides mechanistic interpretation. The data support the conclusion but the interpretation involves some inference about functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The limitation in reconstruction gain is hypothesized to result from inhibitory control flattening rate-level curves, with inhibition specifically removing extreme stimulus levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is explicitly stated as a hypothesis. C72 provides supporting evidence from EPSPfail data, and C73 infers that reduced representation is not due to lower firing rates. While the hypothesis is plausible and supported by indirect evidence, it requires direct experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Natural stimuli differ from synthetic stimuli in spectral width, frequency coordination, and modulation profile, leading to less sparse and reproducible ANF responses and larger relative increases at the ANF-SBC junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 provide mechanistic explanation for differences between natural and synthetic stimuli. C87 describes stimulus properties, C88-C89 explain consequences for ANF responses with data support, and C90 explains the resulting relative increases. The reasoning is logical and supported by experimental comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "32 ANFs achieved reconstruction quality comparable to >250 neurons in primary auditory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 provides a comparison with previous cortical studies (Mesgarani et al., 2009). While the comparison is informative about the efficiency of peripheral encoding, it involves cross-study comparison with different stimuli and methods, limiting direct interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Inhibition model parameters were manually estimated to match experimental failure rates and reconstruction properties, as automatic fitting was infeasible due to discrete spike nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 describe the parameter estimation approach with clear justification for manual fitting. While manual parameter estimation introduces subjectivity, the rationale is sound and the resulting model successfully reproduces multiple experimental metrics (as shown in other results).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Both ANF and SBC firing rates increased during pure tone stimulation, and ANF rates increased during natural stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide statistically significant data (p<0.001 for all comparisons) with clear experimental design. These results establish the baseline responses against which the novel finding of unchanged SBC rates during natural stimulation is compared.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The inhibitory integration could be viewed as predictive coding, providing short-term contextual information for detecting changes in stimulus statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 are explicitly speculative, using phrases like 'could be viewed' and 'could be speculated'. While the predictive coding framework is theoretically interesting and cited appropriately, these claims represent hypotheses for future investigation rather than supported conclusions from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SBC focus on temporal information limits sound level representation, which is relevant for sound localization via ILDs, elevation estimation via spectral cues, and potentially sound identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by experimental data showing reduced level representation. C78-C79 cite established knowledge about sound localization mechanisms. C80 is speculative about sound identification. The functional implications are well-grounded in auditory neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C100"
+    ],
+    "result": "Future work should investigate whether absolute or relative increases in sparsity/reproducibility are more important, and explore natural vs. synthetic stimulus relationships using hybrid stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C100 identify appropriate directions for future research based on the current findings. These represent logical extensions of the work rather than unsupported speculation, and C100 cites relevant methodological approaches (SPORCs).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C32",
+      "C45"
+    ],
+    "result": "Previous work established that inhibition at SBCs renders output sparser and more reproducible than ANF input across various synthetic stimuli, can be modeled as scaled subtraction, and emphasizes reliable events while controlling response gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11, C32, and C45 summarize prior work with appropriate citations (primarily Keine et al., 2016). These claims establish the foundation for the current study and are well-supported by the cited literature. They provide essential context for interpreting the novel findings with natural stimuli.",
+    "result_type": "MINOR"
+  }
+]

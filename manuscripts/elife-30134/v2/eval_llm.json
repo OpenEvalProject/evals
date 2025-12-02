@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A mathematical model predicts that partial inhibition of HIV infection can lead to an infection optimum\u2014a peak in live infected cells at intermediate drug concentrations\u2014when multiple infection attempts per cell occur and each attempt increases the probability of cell death. The model shows this optimum depends on parameter values r (probability of infection per attempt) and q (probability of death per attempt), with the peak shifting to higher drug concentrations as q increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C34-C39, and C75-C77 collectively establish the mathematical framework and predictions. The model is internally consistent and logically derives the conditions under which an infection optimum occurs. The mathematical derivations appear sound, and the model makes testable predictions that are subsequently evaluated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C92"
+    ],
+    "result": "ACH-2 cells, which contain a single HIV integration per genome, showed HIV DNA detection in approximately one quarter of cells when assayed by single-cell PCR, establishing the detection efficiency of the assay at ~23%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C92 describe the calibration experiment using ACH-2 cells. The detection of ~25% of cells with known single integrations provides a reasonable estimate of assay sensitivity. This is a critical control for interpreting subsequent HIV DNA copy number measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Coculture infection resulted in a wide distribution of HIV DNA copies per cell (0-9 raw copies, mean ~15 copies after correction), while cell-free infection resulted in zero or one copy per cell. The distribution in coculture infection could not be conclusively determined to be bimodal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C93-C95 describe experimental measurements of HIV DNA copies per cell. The contrast between coculture (multiple copies) and cell-free (single copy) infection is clear and well-documented. The statistical analysis appropriately acknowledges uncertainty about bimodality. The correction for detection efficiency is reasonable given the ACH-2 calibration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In cell line coculture infection with wild-type HIV, a peak in live infected cells was observed at 4 nM EFV. The mathematical model (Equation 3) fit the data with r=0.22 and q=0.17, and independently measured values (r=0.28\u00b10.08, q=0.15\u00b10.07) showed similar behavior, confirming an infection optimum in the cell line system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 demonstrate the infection optimum experimentally in cell lines and validate the model. The fitted parameters are close to independently measured values, providing strong support. The experimental design appropriately distinguishes cell-free from coculture infection and uses proper controls (CTFR staining, mCherry marking).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Time-lapse microscopy showed deterioration in live cell numbers starting at 1 day post-infection without drug, which was averted by addition of EFV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide dynamic evidence supporting the model's predictions about cell death and its prevention by partial inhibition. The time-lapse data directly visualizes the protective effect of EFV on cell survival during infection, though the authors note infection parameters differed due to imaging constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The L100I EFV-resistant mutant showed an infection optimum shifted to 40 nM EFV (compared to 4 nM for wild-type), with IC50=29 nM. Model fits yielded r=0.29 and q=0.13, consistent with the shift in the infection optimum to higher drug concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 demonstrate that the infection optimum shifts with drug resistance, as predicted by the model. The ~10-fold shift in both IC50 and the infection optimum peak is internally consistent. This provides strong evidence that the phenomenon is related to drug inhibition strength rather than non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The neutralizing antibody b12 produced a peak in live infected cells at 5 \u03bcg/ml for both wild-type and L100I mutant virus in coculture infection, but showed monotonic decline in cell-free infection, demonstrating the infection optimum occurs with an unrelated inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 extend the findings to a different class of inhibitor (antibody vs. small molecule), strengthening the generalizability of the results. The identical peak concentration for wild-type and L100I mutant with b12 confirms the L100I resistance is EFV-specific. The contrast with cell-free infection reinforces that multiple infections per cell are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In primary human lymph node cells infected with the L100I mutant, peaks in live infected cells were observed at intermediate EFV concentrations (50-100 nM) across three participants. HIV DNA copies decreased from 21 without drug to 5 at the infection optimum, while the fraction of live infected cells increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 demonstrate the infection optimum in physiologically relevant primary cells from lymph nodes. The consistency across three participants strengthens the finding. The decrease in HIV DNA copies with increased live infected cells directly supports the model's predictions. The EFV concentrations at the optimum (~50-100 nM) are clinically relevant for lymph nodes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The K103N mutant, a clinically relevant EFV-resistant mutation, showed an infection optimum in lymph node cells at 80-160 nM EFV (IC50=26 nM). Model fits yielded r=0.91 and q=0.15. EFV alone without infection did not affect cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 replicate the lymph node findings with a more clinically relevant resistant mutant. The control experiment (C72) rules out direct EFV toxicity as an explanation. However, the fitted r value (0.91) is much higher than measured in cell lines, and the authors acknowledge they could not constrain this parameter in lymph node experiments, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The mathematical model (Equation 3) reproduced experimental results, and an equivalent model assuming death depends on infection can be constructed. However, neither model accurately captures infection dynamics at high drug concentrations away from the infection optimum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide an honest assessment of model performance and limitations. The acknowledgment that the model fails at high drug concentrations is important and appropriately transparent. The equivalence of models with different assumptions about death-infection dependence is noted but not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C32",
+      "C33"
+    ],
+    "result": "Partial inhibition of HIV infection with EFV or neutralizing antibody increased the number of live infected cells in both cell lines and lymph node cells, representing the first experimental demonstration of this phenomenon at the cellular level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C32-C33 summarize the main experimental findings. The results are consistently demonstrated across multiple systems (cell lines, lymph nodes), inhibitors (EFV, b12), and viral strains (wild-type, L100I, K103N). The novelty claim (C33) appears justified given the comprehensive experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The infection optimum may be more important in lymph node cells than peripheral blood cells, should occur with other antiretroviral drug classes, and may be relevant to other infections with multiple pathogens per cell and cell death as an outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 are speculative extrapolations. C81 is supported by limited PBMC data showing minimal peaks, but only three donors were tested. C82 is a reasonable inference but lacks experimental validation. C83 is highly speculative with only one supporting citation. These represent hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The clinical implications may be significant for EFV-resistant HIV, where the infection optimum shifts to physiologically relevant lymph node EFV concentrations (~100 nM), potentially providing an advantage to resistant mutants in partially adherent individuals and facilitating transmission of drug-resistant strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C91 discuss clinical implications but are largely speculative. While the EFV concentrations at the optimum for resistant mutants do overlap with reported lymph node concentrations (C88, supported by citation), the actual clinical impact on reservoir establishment (C86), transmission (C91), and treatment failure (C90) remains hypothetical. These are important considerations but require clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C73",
+      "C74",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript provides extensive background on HIV cytotoxicity, T-cell depletion in lymph nodes, mechanisms of HIV-induced cell death, conditions favoring cell-to-cell spread in lymph nodes, multiple infections per cell, and the optimal virulence concept from ecology, establishing the biological context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C31, C73-C74, C84-C85 summarize prior knowledge and provide context. These are well-supported by citations to the literature. The background appropriately motivates the study and connects it to established concepts in virology and evolutionary ecology. C84 appropriately connects current findings to prior work on reverse transcription and cytotoxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The L100I mutant rarely occurs alone according to the Stanford HIV Drug Resistance Database, while K103N is frequently observed in virologic failure with higher EFV resistance than L100I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 provide appropriate context for the choice of resistant mutants studied. These are factual statements about drug resistance patterns supported by database citations, justifying the use of K103N as a more clinically relevant mutant.",
+    "result_type": "MINOR"
+  }
+]

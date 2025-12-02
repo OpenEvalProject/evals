@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "H3.3K27M mutation causes global reduction of H3K27me2/me3 but not H3K27me1 in both DIPG cells and mouse ES cells, independent of PRC2 complex levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19, C37-C40 collectively demonstrate through Western blot and ChIP-seq data that H3K27me2/me3 are dramatically reduced in H3.3K27M mutant cells while H3K27me1 remains unchanged and PRC2 levels are unaffected. The data from both DIPG cells and engineered mouse ES cells provide strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C100"
+    ],
+    "result": "H3.3K27M mutant proteins localize to actively transcribed genes similar to wild-type H3.3, with enrichment at promoters and gene bodies of highly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by ChIP-seq data in both DIPG cell lines (SF7761, SF8628) and H3.3K27M mutant mouse ES cells showing enrichment at highly transcribed genes. The specificity is confirmed by negative control (C32) showing no signal in wild-type NSCs. This pattern matches known H3.3 localization (C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "PRC2 complex (Ezh2) is redistributed to poised enhancers in H3.3K27M mutant mouse ES cells, where H3.3K27M proteins are present but H3K27me3 is not generated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C58 demonstrate through ChIP-seq and ChIP-PCR that 40% of Ezh2 peaks are unique to mutant cells, co-localize with H3K4me1 and H3K27me3 marks characteristic of poised enhancers (C54-C55), contain higher H3.3K27M levels (C52), but show dramatically reduced H3K27me3 (C53). Validation by ChIP-PCR at three poised enhancers (C56, C58) confirms the redistribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C23"
+    ],
+    "result": "PRC2 complex is not sequestered at active promoters with high levels of H3.3K27M proteins, where H3K27ac is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C23 are supported by the observation that H3.3K27M co-localizes with H3K27ac at active promoters where PRC2 should be absent. This is consistent with the ChIP-seq data showing H3.3K27M enrichment at highly transcribed genes where Ezh2 is not detected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Unsupervised clustering of Ezh2 peaks in DIPG line SF8628 reveals five clusters, with three clusters showing co-localization with H3.3K27M but low H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe clustering analysis of 16,656 Ezh2 peaks in SF8628, identifying five distinct clusters. The analysis shows that clusters 1-2 overlap with H3K27me3 and low H3.3K27M, while clusters 3-5 overlap with H3.3K27M but have very low H3K27me3, supporting the redistribution model in DIPG cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "H3K27me3 peaks are retained at hundreds of genomic loci in H3.3K27M mutant cells, with 676 promoters conserved across two DIPG lines and primary tissue, though at reduced levels compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, C45-C49, C63-C65, C68 demonstrate through ChIP-seq that H3K27me3 peaks persist at specific loci despite global reduction. In mouse ES cells, 17,158 and 16,316 peaks were identified in two clones (C46-C47), almost all overlapping with wild-type peaks (C48) but at reduced levels (C49). In DIPG samples, 676 promoters with H3K27me3 peaks overlapped among three samples (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Low levels of H3.3K27M proteins at retained H3K27me3 peaks correlate with H3K27me3 retention in both mouse ES cells and DIPG cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C69-C72 demonstrate through ChIP-seq analysis that gene promoters with least reduced H3K27me3 have lower H3.3K27M levels (C69, C71) and higher baseline H3K27me3 in wild-type cells (C70). This inverse relationship is confirmed in both mouse ES cells and two DIPG lines (C72), supporting the model that low H3.3K27M allows H3K27me3 retention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Multiple tumor suppressor genes including WT1 and p16 are silenced by H3K27me3-mediated mechanisms in DIPG cells, with WT1 showing significantly lower expression in DIPG tumors compared to non-brainstem high-grade gliomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 show that 80 of 676 genes with H3K27me3 peaks are tumor suppressor genes (C73), with WT1, NGFR, and MME showing lowest expression (C74). Suz12 depletion increases expression of these genes (C75), and WT1 and p16 expression is significantly lower in DIPG tumors than NBS-HGG samples (C76-C77), demonstrating H3K27me3-mediated silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Forced expression of WT1 or targeting p300 to the WT1 promoter inhibits proliferation of H3.3K27M mutant DIPG cells but not wild-type H3.3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C78-C84 demonstrate through two complementary approaches that WT1 silencing promotes DIPG proliferation. Overexpression of WT1 isoforms inhibits proliferation of H3.3K27M mutant cells (C78) but not wild-type cells (C79). Targeting dCas9-p300 to WT1 promoter reduces H3K27me3 and Ezh2 (C80-C81), increases H3K27ac (C82) and WT1 expression (C83), and inhibits proliferation (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Two independent H3.3K27M mutant mouse ES cell clones were generated using CRISPR/Cas9, showing normal growth, karyotype, and reproducible H3.3K27M ChIP-seq peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C41-C44 describe the generation and characterization of two independent H3.3K27M mutant mouse ES clones. The clones show normal growth (C35), normal karyotype (C36), and reproducible ChIP-seq results with 29,424 and 27,048 peaks (C41-C42), of which 22,959 overlap (C43). Specificity is confirmed by minimal overlap with false-positive peaks in wild-type cells (C44).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "A small fraction (6-9%) of H3K27me3 peaks show increased levels in DIPG cells/tissue compared to reference cells/tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 report that 9% of H3K27me3 peaks in SF7761/SF8628 and 6% in primary DIPG tissue show increased H3K27me3 compared to reference samples, based on spike-in normalized ChIP-seq. However, the manuscript notes this apparent discordance with mouse ES data may reflect imperfect reference controls or selective pressure during tumorigenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors propose a model where poised enhancers possess mechanisms for initial PRC2 recruitment, and H3.3K27M proteins sequester PRC2 at these sites, reducing PRC2 availability elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 present a mechanistic model based on the experimental findings. While the model is consistent with the data showing PRC2 redistribution to poised enhancers, the specific mechanism of initial PRC2 recruitment to poised enhancers and the sequestration mechanism remain speculative and require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose that PRC2 redistribution to poised enhancers contributes to tumorigenesis by locally enhancing H3K27me3 and silencing tumor suppressor genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 present a model supported by the data showing PRC2 redistribution (C3, C50-C58), H3K27me3 retention at specific loci (C2, C68), silencing of tumor suppressor genes (C73-C77), and functional importance of WT1 silencing for proliferation (C78-C84). The model integrates multiple lines of evidence, though causality for tumorigenesis requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C90"
+    ],
+    "result": "DIPG is characterized by H3.3K27M mutations in >75% of cases, poor prognosis with ~1 year median survival, and is the most aggressive pediatric brain tumor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C90 provide established background information about DIPG supported by multiple citations. These claims accurately represent the current understanding of DIPG epidemiology and molecular characteristics based on published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on histone H3.3 biology and PRC2 function: H3.3 differs from H3.1/H3.2 by 4-5 amino acids, is assembled in a replication-independent manner, enriched at active genes, while PRC2 catalyzes H3K27me2/me3 at silenced genes and poised enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide established background knowledge about histone biology supported by appropriate citations. These claims accurately represent well-established facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "Prior in vitro studies show PRC2 binds H3K27M peptides/nucleosomes with high affinity and is inhibited, with Ezh2 enriched at H3.3K27M mononucleosomes, though binding affinity may be equal to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C24 summarize prior literature on PRC2-H3K27M interactions. The claims accurately represent published findings, including the apparent contradiction between high-affinity binding/inhibition (C20-C22) and equal binding affinity (C24), which motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior studies show genes with retained H3K27me3 in DIPG are enriched in cancer pathways, Ezh2 is required for DIPG tumorigenesis, and p16 is silenced by H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 accurately summarize prior findings from the authors' and others' work, supported by appropriate citations. These claims provide important context for the current study's focus on H3K27me3-mediated gene silencing in DIPG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background information on WT1, H3.1 mutations, H3.3K36M mutations, DNA methylation in cancer, and related histone biology from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C105 provide relevant background information from published literature, appropriately cited. These claims establish context for the discussion of WT1 as a tumor suppressor, comparisons to other histone mutations, and parallels with DNA methylation changes in cancer.",
+    "result_type": "MINOR"
+  }
+]

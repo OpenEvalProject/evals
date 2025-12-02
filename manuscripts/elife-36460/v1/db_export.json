@@ -1,0 +1,1772 @@
+{
+  "submission": {
+    "id": "c6aefb95-b716-467f-aef9-1d9e9c7c228c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:21:52.247603Z",
+    "updated_at": "2025-12-02T02:21:52.247603Z"
+  },
+  "content": [
+    {
+      "id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "submission_id": "c6aefb95-b716-467f-aef9-1d9e9c7c228c",
+      "content_type": "manuscript",
+      "content_text": "# Intermittent subthalamic nucleus deep brain stimulation induces risk-aversive behavior in human subjects\n\n## Authors\n\n- Shaun R Patel<sup>1</sup> ([ORCID: 0000-0002-9334-2522](https://orcid.org/0000-0002-9334-2522)) \u2020\n- Todd M Herrington<sup>2</sup>\n- Sameer A Sheth<sup>3</sup>\n- Matthew Mian<sup>1</sup>\n- Sarah K Bick<sup>1</sup>\n- Jimmy C Yang<sup>1</sup>\n- Alice W Flaherty<sup>2</sup>\n- Michael J Frank<sup>5</sup> ([ORCID: 0000-0001-8451-0523](https://orcid.org/0000-0001-8451-0523))\n- Alik S Widge<sup>4</sup> ([ORCID: 0000-0001-8510-341X](https://orcid.org/0000-0001-8510-341X))\n- Darin Dougherty<sup>4</sup>\n- Emad N Eskandar<sup>1</sup>\n\n### Affiliations\n\n1. Department Neurosurgery Massachusetts General Hospital, Harvard Medical School Boston United States\n2. Department of Neurology Massachusetts General Hospital, Harvard Medical School Boston United States\n3. Department of Neurosurgery Baylor College of Medicine Houston United States\n4. Department of Psychiatry Massachusetts General Hospital, Harvard Medical School Boston United States\n5. Department of Cognitive, Linguistic and Psychological Sciences Brown University Providence United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe subthalamic nucleus (STN) is a small almond-shaped subcortical structure classically known for its role in motor inhibition through the indirect pathway within the basal ganglia. Little is known about the role of the STN in mediating cognitive functions in humans. Here, we explore the role of the STN in human subjects making decisions under conditions of uncertainty using single-neuron recordings and intermittent deep brain stimulation (DBS) during a financial decision-making task. Intraoperative single-neuronal data from the STN reveals that on high-uncertainty trials, spiking activity encodes the upcoming decision within a brief (500 ms) temporal window during the choice period, prior to the manifestation of the choice. Application of intermittent DBS selectively prior to the choice period alters decisions and biases subject behavior towards conservative wagers.\n\n## Introduction\n\nDeep brain stimulation (DBS) is a remarkable therapy that has revolutionized the potential for treating neurological and neuropsychiatric illness by directly modifying neural function, though the underlying mechanism of action remains unknown. In its simplest form, DBS can be thought of as a pacemaker for the brain. Current DBS devices deliver continuous electrical stimulation to a targeted brain region to modify or reset abberant neural activity or synchrony (Herrington et al., 2016a). A major area of current research is in identifying more refined methods of stimulation delivery by exploring the timing of stimulation delivery, multi-site stimulation, and real-time sensing and stimulation.\n\nThe subthalamic nucleus (STN) is a small almond-shaped nucleus in the basal ganglia classically known for its role in inhibiting motor responses as part of the indirect pathway (Schmidt and Berke, 2017; Schmidt et al., 2013). More recently, a growing body of literature has begun to uncover a more nuanced role of the STN in higher-order cognitive processes such as, emotional processing (Le Jeune et al., 2009; Le Jeune et al., 2008; Drapier et al., 2006; Eitan et al., 2013), response inhibition (Frank et al., 2007; Cavanagh et al., 2011; Isoda and Hikosaka, 2008), and even psychiatric illness (Mallet et al., 2008).\n\nThe STN is also an important deep brain stimulation (DBS) target for the treatment of movements disorders such as Parkinson\u2019s Disease (PD). DBS surgery provides one of only a few opportunities to record neuronal responses in humans subjects engaged in cognitive tasks (Z\u00e9non et al., 2016; Herz et al., 2016; Cavanagh et al., 2011; Zaghloul et al., 2012). In addition, researchers can leverage implanted DBS electrodes as a neuromodulation tool to study the role of the STN in an extra-operative setting. As such, numerous researchers have utilized this approach to interrogate the function of the STN in conflict (Frank et al., 2007; Schroeder et al., 2002), decision-making (Seymour et al., 2016; Seinstra et al., 2016; Wylie et al., 2010; Zaehle et al., 2017; Cavanagh et al., 2011), and emotional processing (Le Jeune et al., 2008; Le Jeune et al., 2009).\n\nStudies of STN stimulation using current generation DBS systems have been limited by the systems\u2019 design to deliver continuous stimulation. This is a critical limitation to using DBS to explore dynamic aspects of cognition and might be an important source of variability on DBS effects reported in the literature. We hypothesized that targeting stimulation to specific temporal windows during the evolution of a cognitive process (e.g., decision-making), rather than delivering long periods of continuous stimulation, will be critical to understanding the cognitive function and developing new neuromodulation therapies going forward.\n\nIn this study, we explore the role of the STN in making decisions under conditions of uncertainty. We employed single-neuronal recordings and intermittent electrical stimulation in human subjects while they engaged in a financial decision-making task (Patel et al., 2012). We find that the STN is selectively activated during a brief window for high-uncertainty trials from single-neuronal data. To assess the role of the STN in decision-making during this brief temporal window, we built a custom device which allowed us to precisely deliver intermittent stimulation within short temporal windows. We found that a brief, high-frequency stimulation pulse delivered prior to the choice period promoted a reduction in risk-seeking behavior. To the best of our knowledge, this is the first study to apply intermittent DBS in humans actively engaged in a cognitive task and the first to demonstrate a reduction in risk-seeking behavior following STN DBS.\n\n## Results\n\nThe task is analogous to the classic card game, War. Each player was dealt a card \u2013 the player with the highest card won (Figure 1a). Subjects were first presented with their card. They were then prompted to make either a $5 or $20 wager based on the perceived value of their hand. After a wager was selected, the opponent\u2019s hand was revealed followed by visual feedback on the outcome of the trial. For each trial, subjects either won or lost the wagered amount. To simplify the game, we reduced the deck to even cards from 2 through 10 of one suit. Thus, if a subject was dealt a 10-card, the optimal choice would be to place a $20 wager as the outcome is likely to be positive or at worst a draw. Conversely, if the subject received a 2-card the optimal choice would be to place a $5 wager. Uniquely, there is no optimal strategy for the 6-card \u2013 the outcome is probabilistically equal.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of the gambling task. A fixation point is presented to indicate the start of the trial. Next, the subject\u2019s card is presented alongside with the back of the computer\u2019scard. Subjects are then presented with the option of placing a $5 or $20 wager. Following a delay, the computer\u2019s card is revealed and feedback is presented. (B) Average z-scored and raw (inset) reaction times by card for intraoperative population ($F_{4,10}=10.2$, $p=4.0\\times10^{\u22124}$; ANOVA). Reaction times were the longest for the high-uncertainty trials and amongst the lowest for the low-uncertainty trials. (C) Average percentage of high wagers by card value. Intraoperative subjects displayed a strong risk-averse bias that was particularly noticeable on high-uncertainty trials in which a high wager was placed only 24% of the time on average, deviating significantly from a 50/50 strategy ($\u03c7_{1,11}^{2}=42.24$, $p=1.44\\times10^{\u22125}$).\n\n### Signals of decision-making in the STN\n\nWe collected behavioral and neurophysiological data from six subjects (five men, one woman; $63.2\\pm6.8$ years old; mean $\\pm$ Sc.D.; Table 1) that underwent DBS surgery for PD. On average subjects performed 1.83 sessions of the gambling task with an average of 105.2 trials per session.\n\n**Table 1.**\n Summary table for neuroimaging and intraoperative study populations.Mean and standard deviation data are given for 24 healthy control subjects (19 male, 5 female) and 6 Parkinson\u2019s Disease patients (five men, one female).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Mean</th>\n      <th>Standard Deviation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Neuroimaging (n\u00a0=\u00a024)</td>\n      <td>Age (years)</td>\n      <td>36</td>\n      <td>7.5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Intraoperative (n\u00a0=\u00a06)</td>\n      <td>Age (years)</td>\n      <td>63.2</td>\n      <td>6.8</td>\n    </tr>\n    <tr>\n      <td>Disease Duration (years)</td>\n      <td>8.2</td>\n      <td>3.3</td>\n    </tr>\n    <tr>\n      <td>Levodopa dose (mg, daily)</td>\n      <td>530</td>\n      <td>300</td>\n    </tr>\n  </tbody>\n</table>\n\nThe gambling task was designed such that on any given trial a positive outcome was probabilistically weighted by the subject\u2019s card. As such, we expected an engaged participant to display longer reaction times for trials in which the outcome was unpredictable; whereas on predictable trials we expected behavior to converge to an optimal strategy resulting in shorter reaction times. We found such a trend ($F_{4,10}=10.2$, $p=4.0\\times10^{\u22124}$; ANOVA; Figure 1b). Specifically, 6-card trials had the highest average reaction time ($1.16\\pm.19$s and $1.33\\pm.61$s; mean $\\pm$ Sc.D., respectively) consistent with the unpredictable nature of the outcome (i.e. an equal chance of winning and losing). Similarly, reaction times for the most predictabletrials were amongst the lowest.\n\nFirst, we examined behavior on trials in which subjects were dealt a 6-card. A behavioral deviation from a 50/50 betting strategy on these trials would indicate a risk-seeking or risk-averse bias. Overall, we found that subjects had a risk-averse bias placing a high wager only 24% of the time ($\u03c7_{1,11}^{2}=42.24$, $p=1.44\\times10^{\u22125}$; Figure 1c). In this study, all intraoperative subjects were off dopaminergic medications at least 12 hr prior to surgery. The low-dopamine state may have contributed to subject\u2019s risk-avoidant behavior (St Onge et al., 2011; Claassen et al., 2011).\n\nCurrent models suggest that STN activity inhibits responses during cognitively demanding situations (Frank, 2006; Frank et al., 2007). This inhibition may serve to allow for additional time to process internal and environmental information before ultimately arriving at and executing a decision. To explore this hypothesis in our study we leveraged the intrinsic symmetry of the behavioral paradigm, and divided trials into low and high cognitive demand. The 10- and 2-cards are extreme situations in which the player is probabilistically likely or unlikely to win, respectively \u2014 we call these low-uncertainty trials. Conversely, on the 6-card trials the player has an equal probability of winning and losing and there is no optimal strategy \u2014 we call these high-uncertainty trials.\n\nWe examined single-neuronal data from the STN using standard stereotactic and intraoperative microelectrode mapping procedures. We collected 27 well-isolated neurons with an average of $3.1\\pm1.1$ (mean $\\pm$ Sc.D.) neurons per subject (Figure 2\u2014figure supplement 1). All analyses were performed on normalized and pooled spiking data. We apriori selected a 500 ms window during the choice period based on previous findings (Patel et al., 2012) and explored the relationship between STN activity and the level of uncertainty on a given trial. To do this, we applied a regression model predicting z-scored spike counts as a function of the card value and wager. Interestingly, we found an interaction effect between card value and wager ($F_{9,1450}=2.55$, $p=0.02$; ANOVA) but no main effects for card value ($F_{9,1450}=1.69$, $p=0.14$) or wager ($F_{9,1450}=2.68$, $p=0.10$). Further exploration revealed a significant effect on high-uncertainty trials ($t_{1450}=\u22122.38$, $p=0.01$; xtbfFig. 2a; Figure 2\u2014figure supplements 2, 3 and 4) which was not present on low-uncertainty trials ($t_{1450}=\u22121.02$, $p=0.30$; $t_{1450}=\u22120.16$, $p=0.86$; 2- and 10-cards respectively; Figure 2b). Interestingly, we found trending activity for the 4- and 8-trials ($t_{1450}=\u22121.730$, $p=0.08$; $t_{1450}=\u22121.78$, $p=0.07$) which contain an intermediate degree of uncertainty. No other stimulus epoch correlated with subject behavior (Table 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-v1.jpg)\n\n**Figure 2.:** (A) Peri-stimulus time histogram for low wagers (red) vs. high wagers (blue) on high-uncertainty trials zeroed to the onset of the choice period (left panel) and button press (right panel). STN activity predicted the upcoming decision during a 500 ms window (gray bar) during the choice period ($t_{1450}=\u22122.38$, $p=0.01$) but not during the button press ($t_{1450}=\u22121.16$, $p=0.24$). (B) Peri-stimulus time histogram for low wagers (red) and high wagers (blue) on low-uncertainty trials referenced to the onset of the choice period (left panel) and button press (right panel). STN activity did not encode the upcoming decision for low-uncertainty trials during the choice period ($t_{1450}=\u22121.02$, $p=0.30$; $t_{1450}=\u22120.16$, $p=0.86$) or the button press ($t_{1450}=\u22121.48$, $p=0.13$; $t_{1450}=\u22120.44$, $p=0.65$). Shaded regions in (A) and (B) represent standard errors. (C) Average z-scored reaction times for low (red) and high (blue) wagers on high-uncertainty trials. Reaction times were longer for high wagers compared with low wagers ($t_{6}=\u22123.28$, $p=0.01$). (D) Similarly, reaction times were not significantly modulated by the wager on low-uncertainty trials ($t_{9}=1.17$, $p=0.27$).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A and B) Inter-spike interval histogram (ISI) plots. Inset displays log ISI distributions. (C and D) Inter-spike interval return maps visualizing second order spike train patterns.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Peri-stimulus time histogram for the low wager (red) and high wager (blue) on 4-card trials referenced to the choice period ($t$(8)\u00a0=\u00a0\u22121.89, $p$ = 0.09). f(B) Peri-stimulus time histogram for bet low (red) and bet high (blue) on 8-card trials referenced to the choice period($t$(13)\u00a0=\u00a0\u22122.06, $p$ = 0.5). Both the 4- and 8-card trials represent an intermediate level of uncertainty and encode upcoming decisions during the 500 ms window (black bar).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Peri-stimulus time histogram of all trials zeroed on button press for bet low (red) and bet high (blue) trials ($t$(19)=0.68, $p$ = 0.5). The uncertainty signal occurs late in the choice period. To ensure that this was not movement related, we show that there was no differential STN activity around the button press.\n\n**Table 2.**\n Summary of neural task responses.t-tests were performed for differences in neural responses across task epochs between low- and high-uncertainty trials.\u00a0Windows of comparison, mean differences, t-values, and p-values are reported for the population with 13 degrees of freedom.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Epoch</th>\n      <th>Window</th>\n      <th>\u0394</th>\n      <th>T</th>\n      <th>P</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Fixation</td>\n      <td>0\u2013500 ms</td>\n      <td>\u22121.52</td>\n      <td>1.25</td>\n      <td>0.23</td>\n    </tr>\n    <tr>\n      <td>Card</td>\n      <td>0\u2013500 ms</td>\n      <td>\u22121.34</td>\n      <td>0.70</td>\n      <td>0.49</td>\n    </tr>\n    <tr>\n      <td>Choice</td>\n      <td>0\u2013500 ms</td>\n      <td>\u22121.79</td>\n      <td>1.31</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td>Choice</td>\n      <td>500\u20131000 ms</td>\n      <td>\u22123.75</td>\n      <td>2.96</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>Feedback</td>\n      <td>0\u2013500 ms</td>\n      <td>0.17</td>\n      <td>\u22120.17</td>\n      <td>0.86</td>\n    </tr>\n  </tbody>\n</table>\n\nThis signal is unlikely to represent an overt finger movement because our task design balances the presentation of the $five and $20 wagers equally to the left- and right-hand side of the screen. Also, we found no difference in activity between wagers centered on the button press ($F_{9,1450}=0.24$, $p=0.98$; Figure 2a,b) suggesting this signal was not movement-related. In addition, there was no relationship between the wager ($t_{23}=0.09$, $p=0.92$) or the outcome ($t_{23}=0.71$, $p=0.48$) on the previous trial.\n\nLastly, we found that z-scored reaction times on high-uncertainty trials were longer when subjects placed a high vs. low wager ($t_{6}=\u22123.28$, $p=0.01$; Figure 2c). There was no difference in reaction times on low-uncertainty trials for high vs. low wager ($t_{9}=1.17$, $p=0.27$; Figure 2d).\n\n### Effects of intermittent STN stimulation on behavior\n\nWe have shown that STN activity within a brief temporal window during the choice period predicts the upcoming wager selectively for high but not low-uncertainty trials. Interestingly, previous human neurophysiology studies have described similar conflict signals arising earlier during the stimulus presentation epoch (Zaghloul et al., 2012; Sheth et al., 2012). To explore this discrepancy, we used intermittent DBS to test whether altering STN activity during this finite time window would alter the subject\u2019s ultimate decision using intermittent DBS. We recruited 13 subjects (12 men, one woman; $62.6\\pm7.4$ years old; mean $\\pm$ Sc.D.; Table 3) who had previously undergone STN DBS surgery for PD. All subjects had completed surgery at least 6 months prior tithe study.\n\n**Table 3.**\n Summary table for intermittent stimulation study population.Mean and standard deviation data are given for 13 subjects (12 men and one woman) who participated in the intermittent stimulation study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Mean (n\u00a0=\u00a013)</th>\n      <th>Standard Deviation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age (years)</td>\n      <td>62.6</td>\n      <td>7.4</td>\n    </tr>\n    <tr>\n      <td>Disease Duration (years)</td>\n      <td>15.5</td>\n      <td>5.6</td>\n    </tr>\n    <tr>\n      <td>Time since surgery (years)</td>\n      <td>3.9</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td>Levodopa dose (mg, daily)</td>\n      <td>575</td>\n      <td>310</td>\n    </tr>\n    <tr>\n      <td>Therapeutic left voltage (volts)</td>\n      <td>2.9</td>\n      <td>0.8</td>\n    </tr>\n    <tr>\n      <td>Therapeutic right voltage (volts)</td>\n      <td>2.9</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>Therapeutic frequency (Hz)</td>\n      <td>180</td>\n      <td>14.3</td>\n    </tr>\n    <tr>\n      <td>Study voltage (volts)</td>\n      <td>1.0</td>\n      <td>0.9</td>\n    </tr>\n  </tbody>\n</table>\n\nThrough patients\u2019 implanted DBS electrodes we applied intermittent electrical stimulation to the STN while subjects were engaged in the same gambling task. Specifically, we applied one of three different stimulation categories randomly on 6-card trials, either giving: no stimulation, 1 s of stimulation during the fixation epoch, or 1 s of stimulation prior to the choice period. To control for observational effects of turning on/off the stimulator (e.g. feeling a sensation when the stimulator turns on), we systematically lowered the voltage setting\u2014blinded to the subject\u2014to a sub-threshold level prior to each experimental session. In addition, we characterized the latency from the trigger to current delivery and found it to be 174 $\\pm$0.002 ms ($n$=26; mean $\\pm$ Sc.D.; Figure 3\u2014figure supplement 1). All other settings (e.g. electrode contacts, frequency, and pulse-width) were unaltered from therapeutic levels and were returned to normal following the study.\n\nOn average subjects performed 2 sessions of the gambling task with an average of 108 trials per session. Similar to the intraoperative experiment, we found that subjects demonstrated understanding of the underlying structure of the task ($F_{4,26}=5.83$, $p=0.0002$; ANOVA; Figure 3a). The fastest reaction times were observed for low-uncertainty trials ($1.19\\pm.76$ seconds, $1.11\\pm.71$ seconds; mean $\\pm$ Sc.D.; 2- and 10-cards respectively); and on average, the high-uncertainty trials wreathe slowest ($1.46\\pm1.16$ seconds; mean $\\pm$ Sc.D.). Unlike during the intraoperative sessions, subjects were on their clinical regimen of dopamine replacement therapy during this experiment. We did not observe the same risk-averse behavior on 6-card trials ($\u03c7_{1,27}^{2}=34.13$, $p=0.13$; Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig3-v1.jpg)\n\n**Figure 3.:** (A) Average z-scored reaction times by card ($F_{4,26}=5.83$, $p=0.0002$; ANOVA) and average raw reaction times (inset). Reaction times were the longest for the high-uncertainty trials and the lowest for the low-uncertainty trials. (B) Average percentage of high wagers by card value. Subjects did not significantly deviate from a 50/50 strategy ($\u03c7_{1,27}^{2}=34.13$, $p=0.13$). (C) Bet high percentage by intermittent stimulation condition. Subjects displayed risk-averse behavior when stimulation was delivered prior to the choice period, placing a high wager 15% less than when stimulation was omitted ($\u03c7_{1,11}^{2}=42.24$, $p=1.44\\times10^{\u22125}$). (D) Bet high percentage on the no stimulation condition (square marker) and on the choice period condition (circle). The arrow indicates the direction of change, risk-averse (blue) or risk-seeking (red). 8/11 subjects displayed a trend towards risk-averse behavior. (E) Scatter plot of percentage change in high wagers during the choice period against high wager percentage on the no stimulation condition, for increases (red) and decreases (blue) in high wagers. Subjects that tended to place a high wager in the baseline (no stimulation) condition tended to experience the greatest change with stimulation. (F) Average z-scored reaction times for low (blue) and high (red) wagers by stimulation condition. No overall effect of stimulation was observed on reaction times ($F_{2,577}=1.37$, $p=0.25$; ANOVA) or wager ($F_{1,577}=0.31$, $p=0.57$; ANOVA). However, there was a difference in reaction times for high vs. low wagers selectively during the choice period ($t_{22}=3.72$, $p=0.001$).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The implanted pulse generator is activated telemetrically by a hand-held controller. The controller is computer-controlled via a TTL pulse (blue trace). The latency between the rising edge of the TTL pulse and the onset of stimulation through the electrode contact is shown by the dashed line (n\u00a0=\u00a026; 174 $\\pm$0.002 ms; mean $\\pm$ Sc.D.). The black trace represents an example stimulation train (five volts, 100 Hz). Baseline activity for the TTL pulse (blue trace) is adjusted for visualization.\n\nGuided by our neurophysiological findings, we expected that modulation of intrinsic decision signaling prior to the choice period would selectively bias subject behavior. As such, we expected no difference when stimulation was delivered during the fixation period compared to when it was omitted. The data confirmed this hypothesis ($F_{2,28}=2.93$, $p=0.05$; ANOVA). In contrast, when stimulation was delivered prior to the choice period, we found that on average subjects had a strong risk-averse bias and placed a high wager only 33.0 $\\pm$4.83% (mean $\\pm$ s.e.m.) of the time, on average an absolute 15% less than the no stimulation group ($t_{28}=2.77$, $p=0.009$; Figure 3c). Importantly, there was no difference between the omitted and fixation stimulation conditions ($t_{28}=0.14$, $p=0.88$), on which subjects placed a high wager on average of 48.3 $\\pm$5.92% and 49.2 $\\pm$ 5.6% of the time (mean $\\pm$ s.e.m.), respectively.\n\nTo further explore the effects of intermittent stimulation on decision-making we more closely examined the effects within individual subjects. To do so, we plotted each subject\u2019s average high wager percentage when stimulation was omitted and delivered at the choice period (Figure 3d). Overall, we found subjects spanned a large range in baseline tendency for placing high wagers, ranging from 11% to 100%. We found that 7 out of 11 subjects displayed a reduction in risk-seeking behavior (Table 4). Of the seven subjects the average magnitude of change was 12.8% (range: 1\u201318%). Interestingly, we observed that the magnitude of the reduction in risk-seeking behavior correlated with their initial starting point ($t_{7}=2.46$, $p=0.05$; Figure 3e). For the three subjects that showed an increase in risk-seeking behavior, the average magnitude of change was 12.1% (range: 2\u201322%). The same correlation did not appear to exist in the this group ($t_{2}=1.13$, $p=0.46$), though the sample size is limited. One subject experienced no change in either direction from the stimulation.\n\n**Table 4.**\n Stimulation effect on individual subjects.Fraction of high-wagers when stimulation was omitted and applied prior to the choice period. The change in decision-making is highlighted blue for a decrease and red for an increase in risk-seeking choices.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>No stim</th>\n      <th>pre-Choice</th>\n      <th>Change</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1.00</td>\n      <td>0.83</td>\n      <td>blue-0.16</td>\n    </tr>\n    <tr>\n      <td>0.75</td>\n      <td>0.60</td>\n      <td>blue-0.15</td>\n    </tr>\n    <tr>\n      <td>0.71</td>\n      <td>0.57</td>\n      <td>blue-0.14</td>\n    </tr>\n    <tr>\n      <td>0.57</td>\n      <td>0.38</td>\n      <td>blue-0.18</td>\n    </tr>\n    <tr>\n      <td>0.52</td>\n      <td>0.40</td>\n      <td>blue-0.12</td>\n    </tr>\n    <tr>\n      <td>0.44</td>\n      <td>0.56</td>\n      <td>red0.11</td>\n    </tr>\n    <tr>\n      <td>0.35</td>\n      <td>0.38</td>\n      <td>red0.02</td>\n    </tr>\n    <tr>\n      <td>0.28</td>\n      <td>0.17</td>\n      <td>blue-0.11</td>\n    </tr>\n    <tr>\n      <td>0.23</td>\n      <td>0.23</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>0.21</td>\n      <td>0.20</td>\n      <td>blue-0.01</td>\n    </tr>\n    <tr>\n      <td>0.11</td>\n      <td>0.33</td>\n      <td>red0.22</td>\n    </tr>\n  </tbody>\n</table>\n\nLastly, we explored whether stimulation had an effect on subject\u2019s reaction time performance. We found that there was no overall main effect of stimulation epoch ($F_{2,577}=1.37$, $p=0.25$; ANOVA) or wager ($F_{1,577}=0.31$, $p=0.57$; ANOVA) on reaction time. However, we did find an interaction effect between stimulation epoch and wager ($F_{2,577}=4.15$, $p=0.01$; Figure 3f). Specifically, during the choice period stimulation condition, reaction times were faster when subjects placed a high wager compared with a low wager ($t_{22}=3.72$, $p=0.001$), supporting previous findings (Frank et al., 2007). No similar differences were observed for the omitted and fixation stimulation conditions.\n\n## Discussion\n\nWe used a multi-modal approach consisting of single-neuronal recordings and intermittent stimulation to characterize the neurophysiological role of the STN in decision-making under uncertainty. To do so, we used a financial decision-making task designed to interrogate risk-taking behavior. Using this task, we categorized trials into high and low-uncertainty. We defined high-uncertainty as trials in which the probability of a positive and negative outcome are equal. As a result there was no optimal behavioral strategy. Conversely, low-uncertainty trials were cases in which the outcome was heavily biased towards or against a positive outcome. On these trials, subject behavior was reliably stereotyped towards the most appropriate wager to maximize gains or minimize losses. We found that on high-uncertainty trials STN neural activity encoded the upcoming decision in a discrete 500 ms temporal window immediately before the choice period. In a recent functional imaging study, Fleming et al. found a bilateral increase in BOLD response localized to the STN selectively for high-uncertainty trials where subjects responded against a status-quo bias. Although their study uses perceptual decisions, we demonstrate that the same underlying mechanism may extend to value-based decisions made under conditions of uncertainty. Other studies have observed similar neural responses in the STN following conflict related encoding (Cavanagh et al., 2011; Zaghloul et al., 2012) and control signal encoding (Isoda and Hikosaka, 2008; Wiecki and Frank, 2013).Unfortunately, the task design in the present study does not let us dissect the influence of conflict, control, and uncertainty on the observed neural responses reported here. This remains an open question within the STN literature body. It is worth noting the possibility that the observed STN neural response in this experiment is a combination of conflict and control. More specifically, a departure from a prepotent response (i.e. placing a high wager) induces STN activity and allows for the recruitment of control centers to mediate a new decision. This would be supported by computational models (Wiecki and Frank, 2013) and experimental data (Coulthard et al., 2012) but require further investigation to tease apart.\n\nFurthermore, Cavanaugh et al. have previously shown that increases in local-field potential oscillations in the medial prefrontal cortex and STN correlate with trial-by-trial decision conflict and that continuous electrical stimulation through implanted DBS electrodes can prevent adjustments in decision thresholds ultimately resulting in rapid or impulsive decision-making (Cavanagh et al., 2011). In contrast, in our data the application of intermittent DBS prior to the choice period resulted in an increasein risk-averse decisions and in reaction times for those decision. One potential explanation for these seemingly conflicting findings is that the effects of stimulation may vary depending on the duration of stimulation. It has previously been suggested that short bursts of high-frequency STN stimulation serve to increase local firing rates which are subsequently silenced with prolonged stimulation (Lee et al., 2009). Continuous, high-frequency stimulation has also been proposed to act as an informational lesion, essentially overwriting the normal time-varying activity of the target (Herrington et al., 2016b). Our finding also appears to correspond to the observed neurophysiological data from this study, where a slight increase in overall STN activity during the choice period correlates with placing a low wager. An interesting limitation of the stimulation study is that stimulation was only delivered on the high-uncertainty trials, limiting our ability to understand the constraints of its effect on modifying behavior on medium- or low-uncertainty trials. We would hypothesize the effect would be limited or not present on low-uncertainty trials given that no differential encoding was observed, however this remains to be studied.\n\nInterestingly, our findings differ from other human neurophysiology studies in which conflict activity was observed during the stimulus presentation, as opposed to the choice period, in the dorsal anterior cingulate (Sheth et al., 2012) and the STN (Zaghloul et al., 2012). To further explore the temporal dynamics of the observed signal, we performed a second experiment in which we applied intermittent STN stimulation through implanted DBS electrodes selectively during high-uncertainty trials. Stimulation was delivered either during the fixation period, choice period, or it was omitted. This technique is uniquely different than previous studies using DBS as a method to interrogate neural circuits because we implemented a system for rapidly turning on and off the implanted device, permitting us to time-lock delivery to specific task-epochs. This approach may further reduce confounding effects of long-term stimulation, such as carry-over effects. As a result, we found that intermittent stimulation prior to the choice period\u2014the same interval during which we observed the neurophysiological decision signal from the first experiment\u2014selectively altered subject behavior. No differences were observed in subject behavior when stimulation was omitted or delivered during the fixation period. We found that stimulation prior to the choice period interrupted subjects\u2019 ability to appropriately slow responses when betting against their bias (i.e. when they placed a high bet), resulting in a shortened reaction time, consistent with previous work (Frank et al., 2007; Cavanagh et al., 2011).\n\nAlthough we attempted to reduce confounding effects by demonstrating both physiological and stimulation evidence to support our claim, our experimental design has several fundamental limitations. In the first experiment, we perform intraoperative recordings in patients undergoing a neurosurgical procedure. Naturally, there are several limitations for performing studies in the operating room, such as the length of each experimental session. For this reason, the total number of trials and neurons we are able to record can often be limited. In this study, we focus our neurophysiological findings to population responses. Despite this limitation, however, we find the reported effects to be consistent across the population. In addition, we compensate for this limitation by developing a novel stimulation method to carefully test the relationship between our neurophysiological findings and subject behavior. Furthermore, the subjects in this study all suffer from advanced PD, a disease known to affect natural reward processing. For obvious reasons, these experiments are constrained to populations requiring neurosurgical treatment, and direct comparisons to a healthy population are limited to behavioral measures.\n\nIn conclusion, we provide functional imaging and neurophysiological evidence in human subjects demonstrating the critical role of the STN in encoding decisions under conditions of uncertainty. Moreover, we demonstrate that electrical stimulation of the STN within a finite temporal window can selectively bias subject behavior towards more risk-averse decisions. Together, this provides evidence for the role of precision neuromodulation approaches and closed-loop deep brain stimulation for the advancement of neurological and neuropsychiatric therapies.\n\n## Materials and methods\n\n### Study subjects\n\nWe recruited six subjects undergoing STN DBS for the treatment of Parkinson\u2019s disease to participate in the intraoperative neurophysiology study. Each individual was evaluated and considered for surgery by a multidisciplinary team of neurologists, neurosurgeons, and psychiatrists. Once approved and scheduled for surgery an independent member of the research team approached each patient to describe the possibility of study inclusion. At that time risks and benefits were clearly addressed to each subject. All study subjects enrolled voluntarily and provided informed consent under guidelines approved by the Massachusetts General Hospital Institutional Review Board. Subjects were free to withdraw from the study at any time without consequence to operative approach or clinical care. This study was approved by the Massachusetts General Hospital Institutional Review Board (protocol number 2001P000877). For a more detailed description on performing cognitive studies with microelectrode recording during DBS, see (Patel et al., 2013).\n\n### Task presentation\n\nA computer monitor was fixed to an adjustable arm and mounted to the operating bed and positioned comfortably within the viewing distance of the patient. A button box was similarly mounted to the operating bed and placed comfortably under the patient\u2019s right hand. Subjects were in a comfortable reclined position. The behavioral task was presented using custom written software in Matlab (Math works, Natick, MA), Monkey logic (www.monkeylogic.org) (Asaad and Eskandar, 2008a; Asaad and Eskandar, 2008b; Asaad et al., 2013).\n\nThe task is analogous to the classic card game, War. On each trial, the subject and computer are each dealt a card and the player with the higher card wins. To simplify the game the deck is limited to five cards: even cards from 2 through 10 from one suit. The rules were carefully explained to each subject prior to the study. Each trial requires the subject to evaluate his/her card, determine its value, and place a $five or $20 wager with the goal of maximizing profits. Thus, when the subject is dealt a 10-card, the optimal choice is to place a $20 wager as the outcome is likely positive or at worst a draw. Conversely, the optimal choice for a 2-card is to place a $five wager since the outcome is likely negative or at best a draw. There is no optimal strategy for the 6-card\u2014the outcome is probabilistically equal.\n\nEach trial began with a fixation point presented at the center of the screen for 350 ms to indicate the start of trial (Figure 1a). Next, the subject\u2019s card and the back of the opponent\u2019s card were displayed for 1000 ms. Two red circles then appeared, indicating the mapping of each button (left and right buttons) to its respective wagers ($five and $20). The button map was presented randomly such that the $five and $20 wagers are assigned to the left and right buttons equally. The presentation of the button map also serves as the choice period, indicating when to initiate a wager. The time it took the subject to press a button was considered the reaction time with a maximum of 5 s. Following the wager, there was a randomized delay period of 250\u2013500 ms, which was immediately followed by the presentation of the subject\u2019s and computer\u2019s card for 1000\u20131250 ms. Lastly, feedback was given for 1000 ms by displaying an image of a $five or $20 bill with text indicating the outcome. In the case of a draw, only text is displayed. Subjects were monetarily rewarded following their participation in the study.\n\n### Electrophysiology\n\nFor a detailed description, please see (Patel et al., 2013). Intraoperative microelectrode recordings were performed using three Para-sagittal tungsten microelectrodes (Figure 1b). The electrodes were advanced using a motorized Alpha Omega (Alpha-Omega Engineering, Nazareth, Israel) Microdrive. Intraoperative motor testing was performed at\u00a0<1 mm increments throughout the dorsolateral-ventromedial axis of the STN to characterize the motor and non-motor compartments. Recordings were band-pass filtered between 300 Hz and 6.5 kHz by an Alpha Omega acquisition system. Data was recorded at 20 kHz by a PowerLinc 1401 acquisition system (Cambridge Electronic Design, Cambridge, England) and stored for post-hoc analysis. Offline, the neurophysiology data was sorted into individual neuronal records using a template clustering method (Offline Sorter, Plexon, Houston, TX). Data from each electrode was sorted separately.\n\n### Behavioral and neuronal analysis\n\nAll analyses were performed using a combination of iPython and R. Because of inter-subject variability in baseline motor performance, we explored reaction time differences by first z-scoring data using each session\u2019s mean and variance reaction time. Normalized subject data and allowed for equal comparisons for group level analyses. We then applied either a one-way or two-way ANOVA on the z-scored reaction time data to assess statistical differences. Post-hoc analyses were performed using two-tailed $t$-tests.\n\nTo visualize neural activity, the instantaneous firing rate was approximated by convolving a Gaussian kernel (sigma\u00a0=\u00a0150 ms) with 1 ms binned spike trains. Because of the limitations in the number of trials recorded in each experimental session, statistical analyses at the individual cell level were rarely significant, and instead all analyses were performed at the population level. Statistical differences between population responses were assessed using two-tailed $t$-tests during pre-defined 500 ms windows: 500\u20131000 during the choice period and \u2212250\u2013250 centered on the button press based on a previous study (Patel et al., 2012).\n\nTo explore the relationship between neural activity and the decision, we applied a linear regression model of the form: $Z=\\beta_{0}+\\beta_{c}C+\\beta_{w}W+\\beta_{cw}C\\timesW$, where $Z$ is a vector of z-scored spike counts (relative to each neuron) in a 500 ms window, $C$ is the card value, $W$ is the wager, and $C\\timesW$ the interaction between the two terms. Both $C$ and $W$ are categorical variables and represented with dummy variables in the regression model. Coefficients were estimated through a least-squares approach.\n\n### Intermittent stimulation\n\nThirteen study participants were recruited from STN DBS patients identified by their movement disorders neurologist to participate in the intermittent stimulation study. A study staff member contacted potential study participants by telephone to introduce the study and invite the patient to participate. On the day of the study, after obtaining written informed consent, the patient\u2019s deep brain stimulator was turned off. Subsequently the stimulation voltage was lowered in small increments with the stimulator being turned on and off in a blinded fashion until a voltage threshold was reached at which the patient was unable to detect the stimulation. The stimulator controller was secured over the patient\u2019s pulse generator, and after approximately 15 min with the stimulator off, the patient began playing the task.\n\nThe task was conducted during the day in a quiet room. Patients were permitted to take short breaks as needed during the task. We used three different stimulation conditions on 6-card trials: 1 s of stimulation at the fixation epoch, 1 s of stimulation at the choice period, or no stimulation was delivered. This design allowed each subject to act as his own control, helping to account for variance due to differing disease, medication, and electrode location factors between patients and also allowed us to control for general versus time specific effects of stimulation. This study was approved by the Massachusetts General Hospital Institutional Review Board (protocol number 2007P001806).\n",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "fee8881b-f101-4ad9-8e38-904a4b17c66c",
+      "submission_id": "c6aefb95-b716-467f-aef9-1d9e9c7c228c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Veit Stuphorn, Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36460.019](https://doi.org/10.7554/eLife.36460.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Intermittent subthalamic nucleus deep brain stimulation induces risk-aversive behavior in human subjects\" for consideration by eLife. Your article has been reviewed by Richard Ivry as the Senior Editor, a Reviewing Editor, and three reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Birte Forstmann (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis study provides evidence for a role of the subthalamic nucleus (STN) in modulating risk-attitude in humans. This is based on three different experimental methods. First, the authors show that human STN is particularly active during decisions under risk, when uncertainty is high. Second, spiking activity of single STN units are significantly more active for risk-averse choices during high uncertainty, but not low uncertainty trials. Third, short-duration DBS stimulation while subjects make a decision increases the number of risk-averse choices. This last finding indicates that the increased STN activity might be causally related to the shift in risk attitude.\n\nAll reviewers thought that the topic of your study addresses a very interesting and timely question, and that your basic experimental design is sound, and sufficient to support the main conclusions. The reviewers liked in particular that you combined a number of different experimental techniques to investigate a common underlying question. That is a great strength of the paper. However, the reviewers also noted a number of weakness that need to be addressed, before the paper can be considered for publication.\n\nEssential revisions:\n\n1) There are considerable reservations among the reviewers regarding the fMRI experiments included in the paper. First, there are issues with the comparability of study populations. All reviewers agreed that you should have tested healthy age-matched controls, since behavioral strategies might change with age. Secondly, there are issues with the MRI scanning protocol and data analyses. The description of the MRI protocol lacks a lot of important information and in light of the recent literature, it appears unlikely that (a) sufficient tSNR, and (b) anatomical specificity to extract signal from the STN is obtained in this study (see, e.g., de Hollander et al., (2017); de Hollander et al., (2015)). This is particular worrisome since voxels were resampled to 2mm voxels, and subsequently smoothed with a three-dimensional Gaussian kernel of 6 mm width (FWHM). In light of these shortcomings, we request that you take out the description of the fMRI experiments from the paper.\n\n2) The exact functional interpretation of the STN activity is not clearly expressed. There are a number of possibilities: (1) a 'conflict' signal that represents the presence of two mutually incompatible response tendencies, (2) 'uncertainty' in the economic sense of risk (i.e., high variability in the response outcome distribution), (3) a 'control signal' that inhibits the risk-seeking response and thus biases choices towards risk-avoiding behavior. Addressing this question requires the inclusion of a computational model that makes clear the author's interpretation of STN activity. Specifically, could choice behavior on the \"6\" trials be modeled using choice and reward history in such a way as to predict behavior? Such a model might produce parameters that could be more systematically related to observe STN responses and behavior to identify what decision-related parameters might be driving neural activity or modified by stimulation.\n\n3) The basic result that intermittent DBS during the choice period on high-uncertainty trials leads to risk averse behavior is supported by the evidence provided; however, if stimulation had been delivered on all trials (not just 6-card trials), it would have been possible to determine if the effect of stimulation was restricted to conditions with high uncertainty, or if stimulation led to a systematic, consistent bias toward risk averse behavior irrespective of uncertainty. The authors should include such experiments, if possible. If these experiments are too effortful, we strongly suggest that the authors consider this issue as a notable limitation of the study in their discussion, specifically addressing how their interpretation would change depending on what broader patterns might have been observed.\n",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "53fb1c39-3508-401d-a1e0-c69aa757bc01",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C1",
+      "claim": "The subthalamic nucleus (STN) is a small almond-shaped subcortical structure classically known for its role in motor inhibition through the indirect pathway within the basal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "The subthalamic nucleus (STN) is a small almond-shaped subcortical structure classically known for its role in motor inhibition through the indirect pathway within the basal ganglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the STN's classical role in motor function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "4dc77f41-7332-4049-87ff-27e9bf441dfe",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C2",
+      "claim": "On high-uncertainty trials, STN spiking activity encodes the upcoming decision within a brief (500 ms) temporal window during the choice period, prior to the manifestation of the choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Intraoperative single-neuronal data from the STN reveals that on high-uncertainty trials, spiking activity encodes the upcoming decision within a brief (500 ms) temporal window during the choice period, prior to the manifestation of the choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-neuronal recordings presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "19b3edfd-42f0-4ccd-a4a2-c80a3ed86e54",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C3",
+      "claim": "Application of intermittent DBS selectively prior to the choice period alters decisions and biases subject behavior towards conservative wagers.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of intermittent DBS selectively prior to the choice period alters decisions and biases subject behavior towards conservative wagers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data from the intermittent stimulation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "d7e5974f-31d5-415a-9673-851a77da1747",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C4",
+      "claim": "Current DBS devices deliver continuous electrical stimulation to a targeted brain region to modify or reset aberrant neural activity or synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Current DBS devices deliver continuous electrical stimulation to a targeted brain region to modify or reset abberant neural activity or synchrony (Herrington et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "5558fa5a-5afb-4624-aee7-92b6577f491c",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C5",
+      "claim": "The STN has a role in emotional processing.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a growing body of literature has begun to uncover a more nuanced role of the STN in higher-order cognitive processes such as, emotional processing (Le Jeune et al., 2009; Le Jeune et al., 2008; Drapier et al., 2006; Eitan et al., 2013), response inhibition (Frank et al., 2007; Cavanagh et al., 2011; Isoda and Hikosaka, 2008), and even psychiatric illness (Mallet et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "da1c3d16-a43b-453b-9f81-1c002cc1ac92",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C6",
+      "claim": "The STN has a role in response inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a growing body of literature has begun to uncover a more nuanced role of the STN in higher-order cognitive processes such as, emotional processing (Le Jeune et al., 2009; Le Jeune et al., 2008; Drapier et al., 2006; Eitan et al., 2013), response inhibition (Frank et al., 2007; Cavanagh et al., 2011; Isoda and Hikosaka, 2008), and even psychiatric illness (Mallet et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "b414d7ad-783f-42f4-b2c7-3fb13429a5d4",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C7",
+      "claim": "The STN has a role in psychiatric illness.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a growing body of literature has begun to uncover a more nuanced role of the STN in higher-order cognitive processes such as, emotional processing (Le Jeune et al., 2009; Le Jeune et al., 2008; Drapier et al., 2006; Eitan et al., 2013), response inhibition (Frank et al., 2007; Cavanagh et al., 2011; Isoda and Hikosaka, 2008), and even psychiatric illness (Mallet et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "c9716f84-fd15-4a21-8630-067e0223ed4d",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C8",
+      "claim": "The STN is an important deep brain stimulation (DBS) target for the treatment of movement disorders such as Parkinson's Disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "The STN is also an important deep brain stimulation (DBS) target for the treatment of movements disorders such as Parkinson's Disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about DBS therapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "a8b16a79-2baf-4fd8-8f62-28d6c2f00cb8",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C9",
+      "claim": "DBS surgery provides one of only a few opportunities to record neuronal responses in human subjects engaged in cognitive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "DBS surgery provides one of only a few opportunities to record neuronal responses in humans subjects engaged in cognitive tasks (Z\u00e9non et al., 2016; Herz et al., 2016; Cavanagh et al., 2011; Zaghloul et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies that have used this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "4f7d3002-3350-4887-8233-23ae8acc2bf4",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C10",
+      "claim": "Studies of STN stimulation using current generation DBS systems have been limited by the systems' design to deliver continuous stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of STN stimulation using current generation DBS systems have been limited by the systems' design to deliver continuous stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the technical limitations of existing DBS systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "e76523a3-abce-451e-a2e1-fdfdaeede599",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C11",
+      "claim": "Targeting stimulation to specific temporal windows during the evolution of a cognitive process, rather than delivering long periods of continuous stimulation, will be critical to understanding the cognitive function and developing new neuromodulation therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that targeting stimulation to specific temporal windows during the evolution of a cognitive process (e.g., decision-making), rather than delivering long periods of continuous stimulation, will be critical to understanding the cognitive function and developing new neuromodulation therapies going forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "56d03df2-2d0b-47a5-a03e-ca9169eeec52",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C12",
+      "claim": "This is the first study to apply intermittent DBS in humans actively engaged in a cognitive task.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is the first study to apply intermittent DBS in humans actively engaged in a cognitive task and the first to demonstrate a reduction in risk-seeking behavior following STN DBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "4b98efb2-f68d-45ba-afac-a4c09a17cd0e",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C13",
+      "claim": "This is the first study to demonstrate a reduction in risk-seeking behavior following STN DBS.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is the first study to apply intermittent DBS in humans actively engaged in a cognitive task and the first to demonstrate a reduction in risk-seeking behavior following STN DBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "7a0ab5bb-efd3-420d-8ea9-1dba1cb4dd9d",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C15",
+      "claim": "Subjects performed on average 1.83 sessions of the gambling task with an average of 105.2 trials per session.",
+      "claim_type": "EXPLICIT",
+      "source": "On average subjects performed 1.83 sessions of the gambling task with an average of 105.2 trials per session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is descriptive data about the experimental sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "052a18e7-3e87-4786-a9d1-1c65314651e7",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C19",
+      "claim": "All intraoperative subjects were off dopaminergic medications at least 12 hr prior to surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, all intraoperative subjects were off dopaminergic medications at least 12 hr prior to surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "1d1cd528-050a-411a-b7f9-01a8d8b39231",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C20",
+      "claim": "The low-dopamine state may have contributed to subjects' risk-avoidant behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-dopamine state may have contributed to subject's risk-avoidant behavior (St Onge et al., 2011; Claassen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "9474efa3-30c3-4606-a1c7-55642dc33a9e",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C21",
+      "claim": "STN activity inhibits responses during cognitively demanding situations according to current models.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models suggest that STN activity inhibits responses during cognitively demanding situations (Frank, 2006; Frank et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to computational models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "9383b12d-0c26-45f1-a611-cdf3d85cb942",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C29",
+      "claim": "No other stimulus epoch correlated with subject behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "No other stimulus epoch correlated with subject behavior (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary finding from the neural data analysis across different task epochs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "9b3cbafe-36f6-4582-9954-51d9719d91c9",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C30",
+      "claim": "The STN activity signal is unlikely to represent an overt finger movement because the task design balances the presentation of the $5 and $20 wagers equally to the left- and right-hand side of the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal is unlikely to represent an overt finger movement because our task design balances the presentation of the $five and $20 wagers equally to the left- and right-hand side of the screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the task design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "b007ff5b-6cab-4541-a3cd-86a07e492501",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C37",
+      "claim": "All subjects in the intermittent stimulation study had completed surgery at least 6 months prior to the study.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects had completed surgery at least 6 months prior tithe study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the inclusion criteria for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "f6623d79-620b-4c8a-b658-4bc401eee195",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C38",
+      "claim": "Subjects in the intermittent stimulation study performed on average 2 sessions of the gambling task with an average of 108 trials per session.",
+      "claim_type": "EXPLICIT",
+      "source": "On average subjects performed 2 sessions of the gambling task with an average of 108 trials per session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is descriptive data about the experimental sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "6c7a17aa-eea4-4503-bbad-8d1a7e4b8d0f",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C42",
+      "claim": "Subjects in the intermittent stimulation study were on their clinical regimen of dopamine replacement therapy during the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike during the intraoperative sessions, subjects were on their clinical regimen of dopamine replacement therapy during this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "45caf310-a9a7-41e2-8ee7-a18114e0e1d7",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C48",
+      "claim": "7 out of 11 subjects displayed a reduction in risk-seeking behavior with choice period stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 7 out of 11 subjects displayed a reduction in risk-seeking behavior (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the individual subject analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "7b66b216-6d2f-4dcf-b3a7-43b07d1b6668",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C49",
+      "claim": "For the seven subjects that showed a reduction in risk-seeking behavior, the average magnitude of change was 12.8% (range: 1\u201318%).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the seven subjects the average magnitude of change was 12.8% (range: 1\u201318%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the individual subject analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "eb1be976-8bba-4f09-93fa-8b27a872457b",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C51",
+      "claim": "Three subjects showed an increase in risk-seeking behavior with an average magnitude of change of 12.1% (range: 2\u201322%).",
+      "claim_type": "EXPLICIT",
+      "source": "For the three subjects that showed an increase in risk-seeking behavior, the average magnitude of change was 12.1% (range: 2\u201322%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the individual subject analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "ecb1ec81-8183-4026-936e-c35997d13ec0",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C52",
+      "claim": "One subject experienced no change in either direction from the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "One subject experienced no change in either direction from the stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the individual subject analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "1b8d2e70-c8e3-4386-a0d6-15e971df3e32",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C57",
+      "claim": "No similar differences in reaction times were observed for the omitted and fixation stimulation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "No similar differences were observed for the omitted and fixation stimulation conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding from the behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "ac8f9f8c-761b-469e-85fa-58fed4cec385",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C58",
+      "claim": "Fleming et al. found a bilateral increase in BOLD response localized to the STN selectively for high-uncertainty trials where subjects responded against a status-quo bias.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent functional imaging study, Fleming et al. found a bilateral increase in BOLD response localized to the STN selectively for high-uncertainty trials where subjects responded against a status-quo bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "5e19b63c-06d4-4353-9e40-872e9db8392d",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C59",
+      "claim": "The same underlying mechanism observed by Fleming et al. may extend to value-based decisions made under conditions of uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their study uses perceptual decisions, we demonstrate that the same underlying mechanism may extend to value-based decisions made under conditions of uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of the current findings with previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "f96b2a19-18eb-486c-80be-3b3809f7cb3d",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C60",
+      "claim": "Other studies have observed similar neural responses in the STN following conflict related encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have observed similar neural responses in the STN following conflict related encoding (Cavanagh et al., 2011; Zaghloul et al., 2012) and control signal encoding (Isoda and Hikosaka, 2008; Wiecki and Frank, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "2f865c6d-5bc9-4c1a-9e17-5ac5fdfd6978",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C61",
+      "claim": "Other studies have observed similar neural responses in the STN following control signal encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have observed similar neural responses in the STN following conflict related encoding (Cavanagh et al., 2011; Zaghloul et al., 2012) and control signal encoding (Isoda and Hikosaka, 2008; Wiecki and Frank, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "cfe6300c-1d06-41f7-8331-b42f3c0a26f4",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C62",
+      "claim": "The task design in the present study does not allow dissection of the influence of conflict, control, and uncertainty on the observed neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the task design in the present study does not let us dissect the influence of conflict, control, and uncertainty on the observed neural responses reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "541d0a63-71d3-41d5-883b-dce02498bd52",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C63",
+      "claim": "The observed STN neural response may be a combination of conflict and control.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting the possibility that the observed STN neural response in this experiment is a combination of conflict and control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "fbb63f11-6847-43e8-ad72-0cf07d802e16",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C64",
+      "claim": "A departure from a prepotent response (i.e. placing a high wager) may induce STN activity and allow for the recruitment of control centers to mediate a new decision.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, a departure from a prepotent response (i.e. placing a high wager) induces STN activity and allows for the recruitment of control centers to mediate a new decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "4a1d2b54-18e2-4fae-87be-0bffa377dd85",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C65",
+      "claim": "The interpretation that STN activity allows recruitment of control centers would be supported by computational models and experimental data but requires further investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be supported by computational models (Wiecki and Frank, 2013) and experimental data (Coulthard et al., 2012) but require further investigation to tease apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for further research, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "1525030a-0868-4b16-a0e7-1ee268f07a8a",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C66",
+      "claim": "Cavanaugh et al. previously showed that increases in local-field potential oscillations in the medial prefrontal cortex and STN correlate with trial-by-trial decision conflict.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Cavanaugh et al. have previously shown that increases in local-field potential oscillations in the medial prefrontal cortex and STN correlate with trial-by-trial decision conflict and that continuous electrical stimulation through implanted DBS electrodes can prevent adjustments in decision thresholds ultimately resulting in rapid or impulsive decision-making (Cavanagh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "26c4ebf5-baf5-4e71-b35f-88c3d97f85d7",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C67",
+      "claim": "Cavanaugh et al. showed that continuous electrical stimulation through implanted DBS electrodes can prevent adjustments in decision thresholds ultimately resulting in rapid or impulsive decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Cavanaugh et al. have previously shown that increases in local-field potential oscillations in the medial prefrontal cortex and STN correlate with trial-by-trial decision conflict and that continuous electrical stimulation through implanted DBS electrodes can prevent adjustments in decision thresholds ultimately resulting in rapid or impulsive decision-making (Cavanagh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "3a045c68-eb25-46e7-a346-9299db755896",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C68",
+      "claim": "The effects of stimulation may vary depending on the duration of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential explanation for these seemingly conflicting findings is that the effects of stimulation may vary depending on the duration of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the discrepancy between findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "a74cc102-bb71-4c19-b9d2-b8412f4b4903",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C69",
+      "claim": "Short bursts of high-frequency STN stimulation serve to increase local firing rates which are subsequently silenced with prolonged stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been suggested that short bursts of high-frequency STN stimulation serve to increase local firing rates which are subsequently silenced with prolonged stimulation (Lee et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "e33160d9-da6d-4ee9-b62a-81e1ff5a3de6",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C70",
+      "claim": "Continuous, high-frequency stimulation has been proposed to act as an informational lesion, essentially overwriting the normal time-varying activity of the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous, high-frequency stimulation has also been proposed to act as an informational lesion, essentially overwriting the normal time-varying activity of the target (Herrington et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research proposing a mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "9b12c5a0-efae-48a7-84d2-0e55220de02e",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C71",
+      "claim": "The finding that intermittent stimulation increases risk-averse behavior corresponds to the observed neurophysiological data where a slight increase in overall STN activity during the choice period correlates with placing a low wager.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding also appears to correspond to the observed neurophysiological data from this study, where a slight increase in overall STN activity during the choice period correlates with placing a low wager.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the stimulation and recording findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "a6a5089f-4372-4f80-baca-8518aa0f9c3f",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C72",
+      "claim": "A limitation of the stimulation study is that stimulation was only delivered on the high-uncertainty trials, limiting the ability to understand the constraints of its effect on modifying behavior on medium- or low-uncertainty trials.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting limitation of the stimulation study is that stimulation was only delivered on the high-uncertainty trials, limiting our ability to understand the constraints of its effect on modifying behavior on medium- or low-uncertainty trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "d4042fd9-4396-4b4d-b641-dfc934f20b45",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C73",
+      "claim": "The authors hypothesize the effect of stimulation would be limited or not present on low-uncertainty trials given that no differential encoding was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We would hypothesize the effect would be limited or not present on low-uncertainty trials given that no differential encoding was observed, however this remains to be studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the neurophysiological findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "3d2f9488-ee8a-493d-b80d-fd9ac7f0d0ad",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C74",
+      "claim": "The current findings differ from other human neurophysiology studies in which conflict activity was observed during the stimulus presentation, as opposed to the choice period, in the dorsal anterior cingulate and the STN.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our findings differ from other human neurophysiology studies in which conflict activity was observed during the stimulus presentation, as opposed to the choice period, in the dorsal anterior cingulate (Sheth et al., 2012) and the STN (Zaghloul et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous research findings supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "2952e149-3dbb-4430-8421-61ea3c07470b",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C75",
+      "claim": "The intermittent stimulation technique is uniquely different than previous studies using DBS because it implements a system for rapidly turning on and off the implanted device, permitting time-locked delivery to specific task-epochs.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique is uniquely different than previous studies using DBS as a method to interrogate neural circuits because we implemented a system for rapidly turning on and off the implanted device, permitting us to time-lock delivery to specific task-epochs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the novel methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "2f5b1b26-4dd7-4664-94dc-3eef24fea9d4",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C76",
+      "claim": "The intermittent stimulation approach may further reduce confounding effects of long-term stimulation, such as carry-over effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach may further reduce confounding effects of long-term stimulation, such as carry-over effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative benefit of the methodological approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "8a4bf63c-d69e-4821-b49c-33b3244f7f6b",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C77",
+      "claim": "Stimulation prior to the choice period interrupted subjects' ability to appropriately slow responses when betting against their bias (i.e. when they placed a high bet), resulting in a shortened reaction time.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that stimulation prior to the choice period interrupted subjects' ability to appropriately slow responses when betting against their bias (i.e. when they placed a high bet), resulting in a shortened reaction time, consistent with previous work (Frank et al., 2007; Cavanagh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the behavioral data analysis, supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "4f235316-219f-4724-83c9-750aeb67d867",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C78",
+      "claim": "There are several limitations for performing studies in the operating room, such as the length of each experimental session.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first experiment, we perform intraoperative recordings in patients undergoing a neurosurgical procedure. Naturally, there are several limitations for performing studies in the operating room, such as the length of each experimental session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a methodological limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "f48e0862-3357-4fcf-a9d9-fb42a35cd5e8",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C79",
+      "claim": "The total number of trials and neurons recorded in the intraoperative study can often be limited.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, the total number of trials and neurons we are able to record can often be limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a methodological limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "a945aaeb-c521-4766-9b46-53202a000fd2",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C80",
+      "claim": "The neurophysiological findings focus on population responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we focus our neurophysiological findings to population responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analytical approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "96b6c740-83b7-4023-8e56-c3a85f409c8f",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C81",
+      "claim": "The reported effects are consistent across the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this limitation, however, we find the reported effects to be consistent across the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "eb59e200-ab76-49c1-97d5-82b8f6d2d63c",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C82",
+      "claim": "The subjects in this study all suffer from advanced PD, a disease known to affect natural reward processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the subjects in this study all suffer from advanced PD, a disease known to affect natural reward processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation related to the patient population, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "80db1bbe-75b9-4354-9b53-53a85d54451b",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C83",
+      "claim": "These experiments are constrained to populations requiring neurosurgical treatment, and direct comparisons to a healthy population are limited to behavioral measures.",
+      "claim_type": "EXPLICIT",
+      "source": "For obvious reasons, these experiments are constrained to populations requiring neurosurgical treatment, and direct comparisons to a healthy population are limited to behavioral measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "aea80ce4-a015-4b3f-99e3-23ad5059eddc",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C84",
+      "claim": "The study provides functional imaging and neurophysiological evidence in human subjects demonstrating the critical role of the STN in encoding decisions under conditions of uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we provide functional imaging and neurophysiological evidence in human subjects demonstrating the critical role of the STN in encoding decisions under conditions of uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "7d20bb4f-4fdd-45da-8479-177b21eb6431",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C85",
+      "claim": "Electrical stimulation of the STN within a finite temporal window can selectively bias subject behavior towards more risk-averse decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we demonstrate that electrical stimulation of the STN within a finite temporal window can selectively bias subject behavior towards more risk-averse decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "b1066865-6a0c-4953-948d-9e04ff29845f",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C86",
+      "claim": "The findings provide evidence for the role of precision neuromodulation approaches and closed-loop deep brain stimulation for the advancement of neurological and neuropsychiatric therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this provides evidence for the role of precision neuromodulation approaches and closed-loop deep brain stimulation for the advancement of neurological and neuropsychiatric therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "d4d18f8a-f92d-4e30-abbf-10a709dca142",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C87",
+      "claim": "Each individual was evaluated and considered for surgery by a multidisciplinary team of neurologists, neurosurgeons, and psychiatrists.",
+      "claim_type": "EXPLICIT",
+      "source": "Each individual was evaluated and considered for surgery by a multidisciplinary team of neurologists, neurosurgeons, and psychiatrists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the clinical evaluation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "c75aa756-173f-4c3f-844d-b3e314aa4130",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C88",
+      "claim": "All study subjects enrolled voluntarily and provided informed consent under guidelines approved by the Massachusetts General Hospital Institutional Review Board.",
+      "claim_type": "EXPLICIT",
+      "source": "All study subjects enrolled voluntarily and provided informed consent under guidelines approved by the Massachusetts General Hospital Institutional Review Board.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ethical approval and consent process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "be092ccd-6408-4ace-9dd4-10e9e4464034",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C89",
+      "claim": "The intraoperative study was approved by the Massachusetts General Hospital Institutional Review Board (protocol number 2001P000877).",
+      "claim_type": "EXPLICIT",
+      "source": "This study was approved by the Massachusetts General Hospital Institutional Review Board (protocol number 2001P000877).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "6929a94b-6e04-49b3-a405-ec4c4f653bcf",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C90",
+      "claim": "The behavioral task was presented using custom written software in Matlab, Monkey logic.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral task was presented using custom written software in Matlab (Math works, Natick, MA), Monkey logic (www.monkeylogic.org) (Asaad and Eskandar, 2008a; Asaad and Eskandar, 2008b; Asaad et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods with citations to the software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "faa9f35f-5718-45d4-9600-7f17b11931c9",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C91",
+      "claim": "The task is analogous to the classic card game, War.",
+      "claim_type": "EXPLICIT",
+      "source": "The task is analogous to the classic card game, War.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "b419a95d-a48f-4ddb-8a68-834650424849",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C92",
+      "claim": "The deck is limited to five cards: even cards from 2 through 10 from one suit.",
+      "claim_type": "EXPLICIT",
+      "source": "To simplify the game the deck is limited to five cards: even cards from 2 through 10 from one suit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "455c69f7-206c-46a6-998c-9a559a323a0f",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C93",
+      "claim": "Each trial requires the subject to evaluate his/her card, determine its value, and place a $5 or $20 wager with the goal of maximizing profits.",
+      "claim_type": "EXPLICIT",
+      "source": "Each trial requires the subject to evaluate his/her card, determine its value, and place a $five or $20 wager with the goal of maximizing profits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "1eaf49b0-8b5f-4a19-8609-900d5ea721dd",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C94",
+      "claim": "Each trial began with a fixation point presented at the center of the screen for 350 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Each trial began with a fixation point presented at the center of the screen for 350 ms to indicate the start of trial (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the task timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "60039cb4-5c8d-4efc-941d-511d50fa8350",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C95",
+      "claim": "The subject's card and the back of the opponent's card were displayed for 1000 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the subject's card and the back of the opponent's card were displayed for 1000 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "c98932f2-da3f-4b6a-ac3d-672c87d3ec7e",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C96",
+      "claim": "The button map was presented randomly such that the $5 and $20 wagers are assigned to the left and right buttons equally.",
+      "claim_type": "EXPLICIT",
+      "source": "The button map was presented randomly such that the $five and $20 wagers are assigned to the left and right buttons equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task design to control for motor confounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "284a71ad-4369-4a1f-a90c-e40462bc5abf",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C97",
+      "claim": "The time it took the subject to press a button was considered the reaction time with a maximum of 5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The time it took the subject to press a button was considered the reaction time with a maximum of 5 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "0d3d663f-047a-4908-881f-c3f20b8a387b",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C98",
+      "claim": "Following the wager, there was a randomized delay period of 250\u2013500 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the wager, there was a randomized delay period of 250\u2013500 ms, which was immediately followed by the presentation of the subject's and computer's card for 1000\u20131250 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "ad67b12d-20e7-458c-bedf-02d6afb73e06",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C99",
+      "claim": "Feedback was given for 1000 ms by displaying an image of a $5 or $20 bill with text indicating the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, feedback was given for 1000 ms by displaying an image of a $five or $20 bill with text indicating the outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "a3893219-6816-4035-82b0-da6f4a2be0cb",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C100",
+      "claim": "Subjects were monetarily rewarded following their participation in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were monetarily rewarded following their participation in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the compensation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "cb808312-cdda-4573-8b15-b63484f9e01e",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C101",
+      "claim": "Intraoperative microelectrode recordings were performed using three para-sagittal tungsten microelectrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intraoperative microelectrode recordings were performed using three Para-sagittal tungsten microelectrodes (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the recording methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "0859d864-39f4-4eca-8b09-32af43a9443b",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C102",
+      "claim": "The electrodes were advanced using a motorized Alpha Omega Microdrive.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrodes were advanced using a motorized Alpha Omega (Alpha-Omega Engineering, Nazareth, Israel) Microdrive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the recording equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "26604a48-4212-492c-adfb-8619a2655842",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C103",
+      "claim": "Recordings were band-pass filtered between 300 Hz and 6.5 kHz by an Alpha Omega acquisition system.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were band-pass filtered between 300 Hz and 6.5 kHz by an Alpha Omega acquisition system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the signal processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "652f69f3-f080-4b2c-a41e-5b312a5a9f3c",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C104",
+      "claim": "Data was recorded at 20 kHz by a PowerLinc 1401 acquisition system.",
+      "claim_type": "EXPLICIT",
+      "source": "Data was recorded at 20 kHz by a PowerLinc 1401 acquisition system (Cambridge Electronic Design, Cambridge, England) and stored for post-hoc analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data acquisition methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "64f70201-7891-45ef-9546-831438f3b8be",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C105",
+      "claim": "The neurophysiology data was sorted into individual neuronal records using a template clustering method (Offline Sorter, Plexon).",
+      "claim_type": "EXPLICIT",
+      "source": "Offline, the neurophysiology data was sorted into individual neuronal records using a template clustering method (Offline Sorter, Plexon, Houston, TX).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the spike sorting methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "82af28a2-1a0b-44d2-b68f-a58881d2a9c5",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C106",
+      "claim": "All analyses were performed using a combination of iPython and R.",
+      "claim_type": "EXPLICIT",
+      "source": "All analyses were performed using a combination of iPython and R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "cf609191-b643-4e1f-b16b-d83346fbcdaf",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C107",
+      "claim": "Reaction time data was z-scored using each session's mean and variance reaction time to account for inter-subject variability in baseline motor performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of inter-subject variability in baseline motor performance, we explored reaction time differences by first z-scoring data using each session's mean and variance reaction time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data normalization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "1c2db5a9-3627-470f-b94e-dd3c16a8c8b3",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C108",
+      "claim": "The instantaneous firing rate was approximated by convolving a Gaussian kernel (sigma = 150 ms) with 1 ms binned spike trains.",
+      "claim_type": "EXPLICIT",
+      "source": "To visualize neural activity, the instantaneous firing rate was approximated by convolving a Gaussian kernel (sigma = 150 ms) with 1 ms binned spike trains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the neural data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "16952aa4-2eb5-4b4b-9dca-7bb28a216c85",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C109",
+      "claim": "Statistical analyses at the individual cell level were rarely significant due to limitations in the number of trials recorded in each experimental session.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the limitations in the number of trials recorded in each experimental session, statistical analyses at the individual cell level were rarely significant, and instead all analyses were performed at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the analytical approach based on data limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "13a824a8-cd9f-41df-8367-1db0d94cfa98",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C112",
+      "claim": "Coefficients in the regression model were estimated through a least-squares approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Coefficients were estimated through a least-squares approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the parameter estimation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "6a32aede-89bd-4dea-9855-26075d15d3b4",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C113",
+      "claim": "The intermittent stimulation study was approved by the Massachusetts General Hospital Institutional Review Board (protocol number 2007P001806).",
+      "claim_type": "EXPLICIT",
+      "source": "This study was approved by the Massachusetts General Hospital Institutional Review Board (protocol number 2007P001806).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "32a9dbb2-fcd3-4949-8f2e-697a4118df22",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C114",
+      "claim": "On the day of the intermittent stimulation study, the patient's deep brain stimulator was turned off after obtaining written informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "On the day of the study, after obtaining written informed consent, the patient's deep brain stimulator was turned off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "c5310777-035f-47cb-8965-67a61dc17718",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C115",
+      "claim": "The stimulation voltage was lowered in small increments with the stimulator being turned on and off in a blinded fashion until a voltage threshold was reached at which the patient was unable to detect the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently the stimulation voltage was lowered in small increments with the stimulator being turned on and off in a blinded fashion until a voltage threshold was reached at which the patient was unable to detect the stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the blinding procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "ea6a2c4e-814f-4a27-b351-8b6de0b0d6d5",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C116",
+      "claim": "After approximately 15 min with the stimulator off, the patient began playing the task.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulator controller was secured over the patient's pulse generator, and after approximately 15 min with the stimulator off, the patient began playing the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "f5db0888-4e7b-4d0c-ac04-bb19a9a06d3b",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C117",
+      "claim": "Three different stimulation conditions were used on 6-card trials: 1 s of stimulation at the fixation epoch, 1 s of stimulation at the choice period, or no stimulation was delivered.",
+      "claim_type": "EXPLICIT",
+      "source": "We used three different stimulation conditions on 6-card trials: 1 s of stimulation at the fixation epoch, 1 s of stimulation at the choice period, or no stimulation was delivered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "6889e93f-9da4-4d96-bc43-5f49512691cf",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "claim_id": "C118",
+      "claim": "The design allowed each subject to act as his own control, helping to account for variance due to differing disease, medication, and electrode location factors between patients.",
+      "claim_type": "EXPLICIT",
+      "source": "This design allowed each subject to act as his own control, helping to account for variance due to differing disease, medication, and electrode location factors between patients and also allowed us to control for general versus time specific effects of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the rationale for the within-subjects design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5df5c10c-89f3-45a3-b0b7-90786227ebae",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The STN is a subcortical structure classically known for motor inhibition but has emerging roles in emotional processing, response inhibition, psychiatric illness, and is a DBS target for Parkinson's Disease treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C8 establish background knowledge about the STN's classical motor role and emerging cognitive functions, all supported by established knowledge (C1, C8) and multiple citations to prior literature (C5-C7). These provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "a2fae4b3-84fb-433b-b000-310f1dc6b360",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "STN spiking activity encodes the upcoming decision within a 500 ms temporal window during the choice period on high-uncertainty trials, and this signal is not motor-related.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C29-C30 demonstrate decision encoding in STN during a specific temporal window with appropriate controls for motor confounds (balanced button mapping). The population-level analysis (C80-C81) is justified given limited trial numbers, and statistical significance is reported (p=0.01, C2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "03b5918e-2141-4611-b456-6b852693700a",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Intermittent DBS applied prior to the choice period biases behavior toward risk-averse decisions, with 7/11 subjects showing reduced risk-seeking (average 12.8% reduction) and altered reaction times for high wagers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C48-C49, C77 demonstrate the behavioral effect of temporally-targeted stimulation with appropriate statistical support (p=0.009, p=0.001). The individual subject variability (C48-C52) is transparently reported, showing heterogeneity in response but overall trend toward risk aversion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "d63275dc-2bf4-4c7a-9ab7-df1b2517968c",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "This study represents the first application of intermittent DBS in humans during a cognitive task and the first demonstration of reduced risk-seeking behavior following STN DBS using a novel rapid on/off stimulation system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12-C13 assert novelty based on authors' literature knowledge, which cannot be independently verified without comprehensive literature review. The technical innovation (C75) is clearly described, but the novelty claims (C12-C13) rely on inference rather than definitive evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "3bb9558a-d307-41ea-ad65-9c890cb2c270",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The intraoperative study involved 6 PD patients off dopaminergic medications performing 1.83 sessions with 105.2 trials per session, while the stimulation study involved 13 post-surgical patients on medications performing 2 sessions with 108 trials per session.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C19, C37-C38, C42 provide clear methodological details about the two study cohorts. The difference in dopaminergic state between studies (C19, C42) is appropriately documented, and C20 acknowledges potential confounding effects with supporting citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "b31a052f-6466-4484-9223-ec0e04c5805d",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The stimulation study used three conditions (fixation, choice period, or no stimulation) in a within-subjects design, with no behavioral differences observed for omitted versus fixation stimulation conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C117-C118 describe the experimental design with appropriate controls. The within-subjects design (C118) controls for inter-patient variability, and the lack of effect for fixation stimulation (C57) serves as a temporal control supporting specificity of the choice-period effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "14586350-1dd1-4537-ad11-d76ae2c620b1",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The findings extend prior work showing STN involvement in uncertainty and conflict, though the temporal dynamics differ from some previous studies that observed conflict signals during stimulus presentation rather than the choice period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61, C74 appropriately contextualize findings within prior literature through multiple citations. The comparison with Fleming et al. (C58-C59) and acknowledgment of temporal differences (C74) demonstrate appropriate scientific discourse, though C59 involves inference about mechanism generalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "e331f839-9643-4c28-ac2c-d81f417f4325",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The task design cannot dissect the relative contributions of conflict, control, and uncertainty to the observed STN responses, though the signal may represent a combination of conflict and control mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 appropriately acknowledge a significant limitation of the study design. The speculation about combined conflict/control mechanisms (C63-C64) is clearly marked as requiring further investigation (C65) with supporting citations, demonstrating appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "25c49e94-9bdb-4b6f-9b9d-d98b0838c283",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The finding that intermittent stimulation increases risk-averse behavior contrasts with prior work showing continuous DBS leads to impulsive decisions, potentially explained by duration-dependent effects where short bursts increase STN activity while prolonged stimulation acts as an informational lesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C71 attempt to reconcile conflicting findings through speculation about stimulation duration effects (C68-C70). While the proposed mechanism is supported by citations (C69-C70), the explanation remains speculative and the correspondence with neurophysiological data (C71) is inferential rather than directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "ee1f5c1d-7d9f-4ef1-a8b1-9cafc2a3e228",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A limitation is that stimulation was only delivered on high-uncertainty trials, and the authors hypothesize effects would be limited on low-uncertainty trials where no differential encoding was observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 appropriately acknowledge an experimental limitation and provide a reasonable hypothesis based on the neurophysiological findings. The acknowledgment that this remains untested (C73) demonstrates appropriate scientific transparency about the study's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "a2504310-eec7-4554-95b7-cc552190b71d",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study has inherent limitations including restricted session length and trial numbers in the operating room, focus on population-level responses, and constraint to PD patients who may have altered reward processing, limiting direct comparisons to healthy populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 transparently acknowledge multiple methodological limitations. The justification for population-level analysis (C80-C81) is reasonable given constraints, and the acknowledgment of disease-related confounds (C82-C83) demonstrates appropriate awareness of generalizability limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "1d66a5bb-20d9-4f6a-bc21-a3275bcedd81",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study provides neurophysiological evidence for STN's role in encoding decisions under uncertainty and demonstrates that temporally-targeted electrical stimulation can bias behavior toward risk-averse decisions, supporting precision neuromodulation approaches for neurological and neuropsychiatric therapies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 appropriately summarize the main findings supported by the data presented. However, C86's inference about broader therapeutic implications is speculative and represents a logical leap from the specific findings to general clinical applications without direct supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "ab6fcece-288e-419c-8059-fce02af11299",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The studies received appropriate ethical approval from Massachusetts General Hospital IRB, and all subjects provided informed consent voluntarily.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89, C113 document appropriate ethical procedures with specific protocol numbers. These are standard methodological requirements that are clearly stated and verifiable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "d65d9bd0-77d2-4298-9556-9e45ae407162",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The gambling task was a card game analogous to War, using a simplified 5-card deck, with specific timing for each trial phase (fixation 350ms, stimulus 1000ms, choice <5000ms, delay 250-500ms, outcome 1000-1250ms, feedback 1000ms), balanced button mapping, and monetary rewards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C100 provide comprehensive methodological details about the behavioral task with specific timing parameters and design features. The balanced button mapping (C96) appropriately controls for motor confounds, and all details are clearly specified for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "f1ec20ea-31a5-4363-8716-1c93a9df966e",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Intraoperative recordings used three tungsten microelectrodes with Alpha Omega equipment, band-pass filtered 300Hz-6.5kHz, sampled at 20kHz, spike-sorted offline, analyzed using iPython and R with z-scored reaction times, Gaussian kernel smoothing for firing rates, and population-level statistics with least-squares regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C109, C112 provide detailed technical specifications for data acquisition and analysis. The justification for population-level analysis (C109) is reasonable given trial limitations, and the normalization approach (C107) appropriately addresses inter-subject variability. All methods are sufficiently detailed for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "02c0a08d-e2e5-4a60-97fe-389008fe12aa",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "For the stimulation study, the DBS device was turned off after consent, voltage was lowered in a blinded fashion to sub-threshold levels, and subjects began the task after 15 minutes with the stimulator off.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C116 describe appropriate blinding procedures to control for sensory detection of stimulation. The systematic voltage reduction (C115) and washout period (C116) demonstrate methodological rigor in controlling for confounding effects of stimulation awareness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "d6466ca7-20c8-408c-8f0a-660706a884c4",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Current DBS devices deliver continuous stimulation, and DBS surgery provides opportunities for human neuronal recordings during cognitive tasks, but studies have been limited by continuous stimulation design. The authors hypothesize that targeting stimulation to specific temporal windows will be critical for understanding cognitive function and developing new therapies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C9-C11 establish the rationale for the study. C4 and C9 are supported by citations, C10 is a reasonable inference about technical limitations, and C11 is clearly stated as a hypothesis. Together they provide appropriate motivation for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    },
+    {
+      "id": "ed55dc51-4466-476c-9601-aa3f38dc5dc8",
+      "content_id": "810823dc-ce03-4a4c-903f-5dba6c67fbea",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Current models suggest STN activity inhibits responses during cognitively demanding situations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is supported by citations to computational models (Frank 2006, 2007) and provides theoretical context for interpreting the experimental findings. This represents established theoretical framework rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:21:52.247603Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "53fb1c39-3508-401d-a1e0-c69aa757bc01",
+      "result_id": "5df5c10c-89f3-45a3-b0b7-90786227ebae"
+    },
+    {
+      "claim_id": "5558fa5a-5afb-4624-aee7-92b6577f491c",
+      "result_id": "5df5c10c-89f3-45a3-b0b7-90786227ebae"
+    },
+    {
+      "claim_id": "da1c3d16-a43b-453b-9f81-1c002cc1ac92",
+      "result_id": "5df5c10c-89f3-45a3-b0b7-90786227ebae"
+    },
+    {
+      "claim_id": "b414d7ad-783f-42f4-b2c7-3fb13429a5d4",
+      "result_id": "5df5c10c-89f3-45a3-b0b7-90786227ebae"
+    },
+    {
+      "claim_id": "c9716f84-fd15-4a21-8630-067e0223ed4d",
+      "result_id": "5df5c10c-89f3-45a3-b0b7-90786227ebae"
+    },
+    {
+      "claim_id": "4dc77f41-7332-4049-87ff-27e9bf441dfe",
+      "result_id": "a2fae4b3-84fb-433b-b000-310f1dc6b360"
+    },
+    {
+      "claim_id": "9383b12d-0c26-45f1-a611-cdf3d85cb942",
+      "result_id": "a2fae4b3-84fb-433b-b000-310f1dc6b360"
+    },
+    {
+      "claim_id": "9b3cbafe-36f6-4582-9954-51d9719d91c9",
+      "result_id": "a2fae4b3-84fb-433b-b000-310f1dc6b360"
+    },
+    {
+      "claim_id": "a945aaeb-c521-4766-9b46-53202a000fd2",
+      "result_id": "a2fae4b3-84fb-433b-b000-310f1dc6b360"
+    },
+    {
+      "claim_id": "96b6c740-83b7-4023-8e56-c3a85f409c8f",
+      "result_id": "a2fae4b3-84fb-433b-b000-310f1dc6b360"
+    },
+    {
+      "claim_id": "19b3edfd-42f0-4ccd-a4a2-c80a3ed86e54",
+      "result_id": "03b5918e-2141-4611-b456-6b852693700a"
+    },
+    {
+      "claim_id": "45caf310-a9a7-41e2-8ee7-a18114e0e1d7",
+      "result_id": "03b5918e-2141-4611-b456-6b852693700a"
+    },
+    {
+      "claim_id": "7b66b216-6d2f-4dcf-b3a7-43b07d1b6668",
+      "result_id": "03b5918e-2141-4611-b456-6b852693700a"
+    },
+    {
+      "claim_id": "eb1be976-8bba-4f09-93fa-8b27a872457b",
+      "result_id": "03b5918e-2141-4611-b456-6b852693700a"
+    },
+    {
+      "claim_id": "ecb1ec81-8183-4026-936e-c35997d13ec0",
+      "result_id": "03b5918e-2141-4611-b456-6b852693700a"
+    },
+    {
+      "claim_id": "8a4bf63c-d69e-4821-b49c-33b3244f7f6b",
+      "result_id": "03b5918e-2141-4611-b456-6b852693700a"
+    },
+    {
+      "claim_id": "56d03df2-2d0b-47a5-a03e-ca9169eeec52",
+      "result_id": "d63275dc-2bf4-4c7a-9ab7-df1b2517968c"
+    },
+    {
+      "claim_id": "4b98efb2-f68d-45ba-afac-a4c09a17cd0e",
+      "result_id": "d63275dc-2bf4-4c7a-9ab7-df1b2517968c"
+    },
+    {
+      "claim_id": "2952e149-3dbb-4430-8421-61ea3c07470b",
+      "result_id": "d63275dc-2bf4-4c7a-9ab7-df1b2517968c"
+    },
+    {
+      "claim_id": "2f5b1b26-4dd7-4664-94dc-3eef24fea9d4",
+      "result_id": "d63275dc-2bf4-4c7a-9ab7-df1b2517968c"
+    },
+    {
+      "claim_id": "7a0ab5bb-efd3-420d-8ea9-1dba1cb4dd9d",
+      "result_id": "3bb9558a-d307-41ea-ad65-9c890cb2c270"
+    },
+    {
+      "claim_id": "052a18e7-3e87-4786-a9d1-1c65314651e7",
+      "result_id": "3bb9558a-d307-41ea-ad65-9c890cb2c270"
+    },
+    {
+      "claim_id": "1d1cd528-050a-411a-b7f9-01a8d8b39231",
+      "result_id": "3bb9558a-d307-41ea-ad65-9c890cb2c270"
+    },
+    {
+      "claim_id": "b007ff5b-6cab-4541-a3cd-86a07e492501",
+      "result_id": "3bb9558a-d307-41ea-ad65-9c890cb2c270"
+    },
+    {
+      "claim_id": "f6623d79-620b-4c8a-b658-4bc401eee195",
+      "result_id": "3bb9558a-d307-41ea-ad65-9c890cb2c270"
+    },
+    {
+      "claim_id": "6c7a17aa-eea4-4503-bbad-8d1a7e4b8d0f",
+      "result_id": "3bb9558a-d307-41ea-ad65-9c890cb2c270"
+    },
+    {
+      "claim_id": "1b8d2e70-c8e3-4386-a0d6-15e971df3e32",
+      "result_id": "b31a052f-6466-4484-9223-ec0e04c5805d"
+    },
+    {
+      "claim_id": "f5db0888-4e7b-4d0c-ac04-bb19a9a06d3b",
+      "result_id": "b31a052f-6466-4484-9223-ec0e04c5805d"
+    },
+    {
+      "claim_id": "6889e93f-9da4-4d96-bc43-5f49512691cf",
+      "result_id": "b31a052f-6466-4484-9223-ec0e04c5805d"
+    },
+    {
+      "claim_id": "ac8f9f8c-761b-469e-85fa-58fed4cec385",
+      "result_id": "14586350-1dd1-4537-ad11-d76ae2c620b1"
+    },
+    {
+      "claim_id": "5e19b63c-06d4-4353-9e40-872e9db8392d",
+      "result_id": "14586350-1dd1-4537-ad11-d76ae2c620b1"
+    },
+    {
+      "claim_id": "f96b2a19-18eb-486c-80be-3b3809f7cb3d",
+      "result_id": "14586350-1dd1-4537-ad11-d76ae2c620b1"
+    },
+    {
+      "claim_id": "2f865c6d-5bc9-4c1a-9e17-5ac5fdfd6978",
+      "result_id": "14586350-1dd1-4537-ad11-d76ae2c620b1"
+    },
+    {
+      "claim_id": "3d2f9488-ee8a-493d-b80d-fd9ac7f0d0ad",
+      "result_id": "14586350-1dd1-4537-ad11-d76ae2c620b1"
+    },
+    {
+      "claim_id": "cfe6300c-1d06-41f7-8331-b42f3c0a26f4",
+      "result_id": "e331f839-9643-4c28-ac2c-d81f417f4325"
+    },
+    {
+      "claim_id": "541d0a63-71d3-41d5-883b-dce02498bd52",
+      "result_id": "e331f839-9643-4c28-ac2c-d81f417f4325"
+    },
+    {
+      "claim_id": "fbb63f11-6847-43e8-ad72-0cf07d802e16",
+      "result_id": "e331f839-9643-4c28-ac2c-d81f417f4325"
+    },
+    {
+      "claim_id": "4a1d2b54-18e2-4fae-87be-0bffa377dd85",
+      "result_id": "e331f839-9643-4c28-ac2c-d81f417f4325"
+    },
+    {
+      "claim_id": "1525030a-0868-4b16-a0e7-1ee268f07a8a",
+      "result_id": "25c49e94-9bdb-4b6f-9b9d-d98b0838c283"
+    },
+    {
+      "claim_id": "26c4ebf5-baf5-4e71-b35f-88c3d97f85d7",
+      "result_id": "25c49e94-9bdb-4b6f-9b9d-d98b0838c283"
+    },
+    {
+      "claim_id": "3a045c68-eb25-46e7-a346-9299db755896",
+      "result_id": "25c49e94-9bdb-4b6f-9b9d-d98b0838c283"
+    },
+    {
+      "claim_id": "a74cc102-bb71-4c19-b9d2-b8412f4b4903",
+      "result_id": "25c49e94-9bdb-4b6f-9b9d-d98b0838c283"
+    },
+    {
+      "claim_id": "e33160d9-da6d-4ee9-b62a-81e1ff5a3de6",
+      "result_id": "25c49e94-9bdb-4b6f-9b9d-d98b0838c283"
+    },
+    {
+      "claim_id": "9b12c5a0-efae-48a7-84d2-0e55220de02e",
+      "result_id": "25c49e94-9bdb-4b6f-9b9d-d98b0838c283"
+    },
+    {
+      "claim_id": "a6a5089f-4372-4f80-baca-8518aa0f9c3f",
+      "result_id": "ee1f5c1d-7d9f-4ef1-a8b1-9cafc2a3e228"
+    },
+    {
+      "claim_id": "d4042fd9-4396-4b4d-b641-dfc934f20b45",
+      "result_id": "ee1f5c1d-7d9f-4ef1-a8b1-9cafc2a3e228"
+    },
+    {
+      "claim_id": "4f235316-219f-4724-83c9-750aeb67d867",
+      "result_id": "a2504310-eec7-4554-95b7-cc552190b71d"
+    },
+    {
+      "claim_id": "f48e0862-3357-4fcf-a9d9-fb42a35cd5e8",
+      "result_id": "a2504310-eec7-4554-95b7-cc552190b71d"
+    },
+    {
+      "claim_id": "a945aaeb-c521-4766-9b46-53202a000fd2",
+      "result_id": "a2504310-eec7-4554-95b7-cc552190b71d"
+    },
+    {
+      "claim_id": "96b6c740-83b7-4023-8e56-c3a85f409c8f",
+      "result_id": "a2504310-eec7-4554-95b7-cc552190b71d"
+    },
+    {
+      "claim_id": "eb59e200-ab76-49c1-97d5-82b8f6d2d63c",
+      "result_id": "a2504310-eec7-4554-95b7-cc552190b71d"
+    },
+    {
+      "claim_id": "80db1bbe-75b9-4354-9b53-53a85d54451b",
+      "result_id": "a2504310-eec7-4554-95b7-cc552190b71d"
+    },
+    {
+      "claim_id": "aea80ce4-a015-4b3f-99e3-23ad5059eddc",
+      "result_id": "1d66a5bb-20d9-4f6a-bc21-a3275bcedd81"
+    },
+    {
+      "claim_id": "7d20bb4f-4fdd-45da-8479-177b21eb6431",
+      "result_id": "1d66a5bb-20d9-4f6a-bc21-a3275bcedd81"
+    },
+    {
+      "claim_id": "b1066865-6a0c-4953-948d-9e04ff29845f",
+      "result_id": "1d66a5bb-20d9-4f6a-bc21-a3275bcedd81"
+    },
+    {
+      "claim_id": "d4d18f8a-f92d-4e30-abbf-10a709dca142",
+      "result_id": "ab6fcece-288e-419c-8059-fce02af11299"
+    },
+    {
+      "claim_id": "c75aa756-173f-4c3f-844d-b3e314aa4130",
+      "result_id": "ab6fcece-288e-419c-8059-fce02af11299"
+    },
+    {
+      "claim_id": "be092ccd-6408-4ace-9dd4-10e9e4464034",
+      "result_id": "ab6fcece-288e-419c-8059-fce02af11299"
+    },
+    {
+      "claim_id": "6a32aede-89bd-4dea-9855-26075d15d3b4",
+      "result_id": "ab6fcece-288e-419c-8059-fce02af11299"
+    },
+    {
+      "claim_id": "6929a94b-6e04-49b3-a405-ec4c4f653bcf",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "faa9f35f-5718-45d4-9600-7f17b11931c9",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "b419a95d-a48f-4ddb-8a68-834650424849",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "455c69f7-206c-46a6-998c-9a559a323a0f",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "1eaf49b0-8b5f-4a19-8609-900d5ea721dd",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "60039cb4-5c8d-4efc-941d-511d50fa8350",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "c98932f2-da3f-4b6a-ac3d-672c87d3ec7e",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "284a71ad-4369-4a1f-a90c-e40462bc5abf",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "0d3d663f-047a-4908-881f-c3f20b8a387b",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "ad67b12d-20e7-458c-bedf-02d6afb73e06",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "a3893219-6816-4035-82b0-da6f4a2be0cb",
+      "result_id": "d65d9bd0-77d2-4298-9556-9e45ae407162"
+    },
+    {
+      "claim_id": "cb808312-cdda-4573-8b15-b63484f9e01e",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "0859d864-39f4-4eca-8b09-32af43a9443b",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "26604a48-4212-492c-adfb-8619a2655842",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "652f69f3-f080-4b2c-a41e-5b312a5a9f3c",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "64f70201-7891-45ef-9546-831438f3b8be",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "82af28a2-1a0b-44d2-b68f-a58881d2a9c5",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "cf609191-b643-4e1f-b16b-d83346fbcdaf",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "1c2db5a9-3627-470f-b94e-dd3c16a8c8b3",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "16952aa4-2eb5-4b4b-9dca-7bb28a216c85",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "13a824a8-cd9f-41df-8367-1db0d94cfa98",
+      "result_id": "f1ec20ea-31a5-4363-8716-1c93a9df966e"
+    },
+    {
+      "claim_id": "32a9dbb2-fcd3-4949-8f2e-697a4118df22",
+      "result_id": "02c0a08d-e2e5-4a60-97fe-389008fe12aa"
+    },
+    {
+      "claim_id": "c5310777-035f-47cb-8965-67a61dc17718",
+      "result_id": "02c0a08d-e2e5-4a60-97fe-389008fe12aa"
+    },
+    {
+      "claim_id": "ea6a2c4e-814f-4a27-b351-8b6de0b0d6d5",
+      "result_id": "02c0a08d-e2e5-4a60-97fe-389008fe12aa"
+    },
+    {
+      "claim_id": "d7e5974f-31d5-415a-9673-851a77da1747",
+      "result_id": "d6466ca7-20c8-408c-8f0a-660706a884c4"
+    },
+    {
+      "claim_id": "a8b16a79-2baf-4fd8-8f62-28d6c2f00cb8",
+      "result_id": "d6466ca7-20c8-408c-8f0a-660706a884c4"
+    },
+    {
+      "claim_id": "4f7d3002-3350-4887-8233-23ae8acc2bf4",
+      "result_id": "d6466ca7-20c8-408c-8f0a-660706a884c4"
+    },
+    {
+      "claim_id": "e76523a3-abce-451e-a2e1-fdfdaeede599",
+      "result_id": "d6466ca7-20c8-408c-8f0a-660706a884c4"
+    },
+    {
+      "claim_id": "9474efa3-30c3-4606-a1c7-55642dc33a9e",
+      "result_id": "ed55dc51-4466-476c-9601-aa3f38dc5dc8"
+    }
+  ],
+  "comparisons": []
+}

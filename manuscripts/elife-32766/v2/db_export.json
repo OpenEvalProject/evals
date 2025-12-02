@@ -1,0 +1,1560 @@
+{
+  "submission": {
+    "id": "c58a05c8-c904-4b2d-82b9-d1d47bf29454",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:27:59.197309Z",
+    "updated_at": "2025-12-01T23:27:59.197309Z"
+  },
+  "content": [
+    {
+      "id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "submission_id": "c58a05c8-c904-4b2d-82b9-d1d47bf29454",
+      "content_type": "manuscript",
+      "content_text": "# A dynamic mechanism for allosteric activation of Aurora kinase A by activation loop phosphorylation\n\n## Authors\n\n- Emily F Ruff<sup>1</sup>\n- Joseph M Muretta<sup>2</sup>\n- Andrew R Thompson<sup>2</sup>\n- Eric W Lake<sup>1</sup>\n- Soreen Cyphers<sup>1</sup>\n- Steven K Albanese<sup>3</sup> ([ORCID: 0000-0003-0973-5030](https://orcid.org/0000-0003-0973-5030))\n- Sonya M Hanson<sup>3</sup> ([ORCID: 0000-0001-8960-5353](https://orcid.org/0000-0001-8960-5353))\n- Julie M Behr<sup>3</sup>\n- David D Thomas<sup>2</sup>\n- John D Chodera<sup>3</sup> ([ORCID: 0000-0003-0542-119X](https://orcid.org/0000-0003-0542-119X))\n- Nicholas M Levinson<sup>1</sup> ([ORCID: 0000-0003-4338-8087](https://orcid.org/0000-0003-4338-8087)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology University of Minnesota Minneapolis United States\n2. Department of Biochemistry, Molecular Biology, and Biophysics University of Minnesota Minneapolis United States\n3. Computational and Systems Biology Program, Sloan Kettering Institute Memorial Sloan Kettering Cancer Center New York United States\n4. Gerstner Sloan Kettering Graduate School Memorial Sloan Kettering Cancer Center New York United States\n5. Tri-Institutional Program in Computational Biology and Medicine Weill Cornell Medical College New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany eukaryotic protein kinases are activated by phosphorylation on a specific conserved residue in the regulatory activation loop, a post-translational modification thought to stabilize the active DFG-In state of the catalytic domain. Here we use a battery of spectroscopic methods that track different catalytic elements of the kinase domain to show that the ~100 fold activation of the mitotic kinase Aurora A (AurA) by phosphorylation occurs without a population shift from the DFG-Out to the DFG-In state, and that the activation loop of the activated kinase remains highly dynamic. Instead, molecular dynamics simulations and electron paramagnetic resonance experiments show that phosphorylation triggers a switch within the DFG-In subpopulation from an autoinhibited DFG-In substate to an active DFG-In substate, leading to catalytic activation. This mechanism raises new questions about the functional role of the DFG-Out state in protein kinases.\n\n## Introduction\n\nStringent regulatory control of protein kinases is critically important for the integrity of cellular signal transduction. The catalytic activity of protein kinases is regulated by finely-tuned allosteric mechanisms that reversibly switch the kinase domain between active and inactive conformational states (Huse and Kuriyan, 2002). Disruption of these mechanisms, leading to constitutive kinase activity, is a major cause of human cancer, and small molecules that inhibit specific disease-associated kinases are an increasingly important component of many modern cancer therapies (Zhang et al., 2009).\n\nPhosphorylation on a specific site in the activation loop of the kinase domain is the most widely conserved regulatory mechanism in kinases (Johnson et al., 1996). X-ray structures show that ionic interactions between the phosphate moiety and a surrounding pocket of basic residues stabilize the activation loop in a conserved active conformation (Knighton et al., 1991; Yamaguchi and Hendrickson, 1996; Steichen et al., 2012). In this active state, a catalytic asp-phe-gly (DFG) motif at the N-terminal end of the activation loop adopts an active \u2018DFG-In\u2019 conformation, with the aspartate residue of the DFG motif pointing into the active site to coordinate Mg-ATP, and the C-terminal segment of the activation loop positioned to bind peptide substrates. The DFG-In state is stabilized by the assembly of a network of hydrophobic residues, termed the regulatory spine, that lock together the N-terminal lobe, the \u03b1C-helix, the DFG motif and the C-terminal lobe of the kinase (Kornev et al., 2006; Kornev et al., 2008). In the absence of phosphorylation on the activation loop, kinase activity is usually restrained by rearrangements of the activation loop and DFG motif into specific autoinhibited conformations. An important autoinhibited state, called \u2018DFG-Out\u2019, involves a flip in the backbone torsion angles of the DFG motif, reorienting the DFG aspartate out of the active site to prevent magnesium coordination, repositioning the activation loop to block peptide binding, and disassembling the regulatory spine (Hubbard et al., 1994; Nagar et al., 2003; Mol et al., 2004). This conformational change dramatically alters the chemical makeup of the active site, and selective recognition of the DFG-Out state underlies the mechanism of action of many small-molecule kinase inhibitors (Liu and Gray, 2006).\n\nThe serine/threonine kinase Aurora A (AurA) is an essential mitotic protein that controls a variety of cellular processes including mitotic spindle assembly, centrosome maturation, and mitotic entry (Glover et al., 1995; Hannak et al., 2001; Berdnik and Knoblich, 2002; Mac\u016frek et al., 2008; Seki et al., 2008). These functions of AurA are driven by two distinct activation mechanisms of the kinase operating in different spatiotemporal contexts. At the centrosome, AurA must first be activated by autophosphorylation on the activation loop threonine residue T288 in order to carry out its centrosomal functions. At the mitotic spindle, AurA is instead activated by binding to the spindle assembly factor Tpx2 (Kufer et al., 2002). This spindle-associated pool of AurA must be maintained in the unphosphorylated state by the phosphatase PP6 in order for spindle assembly to proceed faithfully (Zeng et al., 2010; Toya et al., 2011). Extensive in vitro studies have confirmed that Tpx2 and phosphorylation can act independently to increase AurA kinase activity by up to several hundred-fold (Zorba et al., 2014; Dodson and Bayliss, 2012).\n\nWe recently showed that activation of AurA by Tpx2 is driven by a population shift from a DFG-Out to the DFG-In state (Cyphers et al., 2017). Since crystal structures of phosphorylated AurA bound to Tpx2 show the T288 phosphothreonine residue forming the canonical ionic interactions thought to stabilize the DFG-In state (Bayliss et al., 2003; Zhao et al., 2008; Clark et al., 2009), it has been assumed that phosphorylation also triggers a transition from the DFG-Out to the DFG-In state. In this paper, we show that phosphorylation on T288 in fact activates AurA through a completely different mechanism than Tpx2. Three complementary spectroscopic methods, infrared spectroscopy, F\u00f6rster resonance energy transfer, and double electron-electron resonance, all show that phosphorylation does not trigger a switch to the DFG-In state, and that phosphorylated AurA continually samples both DFG-In and DFG-Out conformational states. Instead, phosphorylation triggers a conformational switch from a previously unknown inactive DFG-In substate to a fully activated DFG-In substate, enhancing the catalytic activity of the DFG-In subpopulation within a dynamic conformational ensemble.\n\n## Results\n\n### Phosphorylation of AurA on T288 does not switch the kinase into the DFG-In state\n\nWe set out to explain how phosphorylation of AurA on T288 leads to a ~100 fold increase in catalytic activity (Figure 1\u2014figure supplement 1a) (Zorba et al., 2014; Dodson and Bayliss, 2012). We previously used an infrared (IR) probe that tracks the DFG motif of AurA to show that Tpx2 binding triggers a conformational change from the DFG-Out to the DFG-In state (Cyphers et al., 2017), resulting in the assembly of the active site and the regulatory spine (Figure 1\u2014figure supplement 2). In this method, a cysteine residue is introduced at position Q185 at the back of the active site of AurA, and chemical labeling is used to introduce a nitrile infrared probe at this position (Fafarman et al., 2006). To test whether phosphorylation of AurA also causes a conformational shift of the DFG motif, we prepared samples of AurA Q185C phosphorylated on T288. Homogeneous phosphorylation and nitrile labeling were verified by western blotting and mass spectrometry (Figure 1\u2014figure supplement 1).\n\nIR spectra of nitrile-labeled phosphorylated AurA showed predominantly a single absorbance band centered at 2158 cm\u22121 (Figure 1a, solid black line). We previously assigned this peak in IR spectra of unphosphorylated AurA to the DFG-Out form of the kinase, in which the nitrile probe is buried in a hydrophobic pocket (Figure 1b, lower panel) (Cyphers et al., 2017). Addition of saturating amounts of Tpx2 peptide (residues 1\u201343 of human Tpx2) to the IR samples caused a dramatic spectral change wherein the central peak at 2158 cm\u22121 is largely replaced by two new peaks at 2149 cm\u22121 and 2164 cm\u22121 (Figure 1a, dashed black line). These changes are indicative of a shift to the DFG-In state, in which water molecules coordinated to the DFG motif form hydrogen bonds to the nitrile probe, causing pronounced spectral shifts (Figure 1b, upper right panel) (Cyphers et al., 2017). To confirm that the peak at 2158 cm\u22121 arises from the DFG-Out state, we mutated residue W277, which is positioned directly against the IR probe in the DFG-Out state, but is displaced away from it in the DFG-in state, to alanine (Figure 1b). IR spectra of the W277A mutant showed a clear spectral shift of the 2158 cm\u22121 peak (Figure 1c), consistent with this peak arising from the DFG-Out state.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig1-v2.jpg)\n\n**Figure 1.:** (a) IR spectra of nitrile-labeled phosphorylated AurA. The apo sample (solid black line), and the sample bound to Tpx2 (dashed black line), were measured at 5\u00b0C, and the kinase bound to ADP (colored lines) was measured at the indicated temperatures. Arrows indicate peaks assigned to the DFG-In and DFG-Out states. The inset shows the same experiments performed with unphosphorylated AurA. Single representative spectra are shown, normalized to peak maxima. (b) Overview of the structure of AurA in the active conformation bound to ADP (yellow) and Tpx2 (beige), with enlarged views of the DFG-In (right, PDB ID: 1OL5) and DFG-Out (bottom, PDB ID: 5L8K) states with the nitrile probe (Q185CN) modeled into the structures. (c) Second derivatives of IR spectra of apo WT and W277A AurA, showing the ~1.5 cm\u22121 spectral shift of the 2158 cm\u22121 peak (arrow).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Kinase assay data (ATP turnover per second) showing the catalytic activity of AurA measured using a spectrophotometric coupled enzyme assay (ADP Quest). Assays were performed with phosphorylated (blue) and unphosphorylated (red) Cys-lite AurA constructs with and without 10 \u03bcM Tpx2 peptide. Arrows indicate activation by phosphorylation. Values represent mean values \u00b1 s.d.; n = 3. (b) Ion exchange chromatograms showing repeated rounds of purification used to isolate homogeneously phosphorylated nitrile-labeled (\u2018Q185CN\u2019) AurA. For each run, the fractions containing mostly phosphorylated kinase were pooled and subjected to another round of ion exchange until only the phosphorylated species was present. The dotted line is the chromatogram of homogeneously phosphorylated Cys-lite kinase (without the Q185C mutation). (c) Kinase activity assays showing activity of labeled AurA samples from the first and final round of purification compared to the activity of the Cys-lite kinase. Activity was measured in the presence and absence of 10 \u03bcM Tpx2. Note that the Q185C and Q185CN forms of AurA have substantially reduced kinase activity in the absence of Tpx2 due to disruption of an active site hydrogen bond network mediated by Q185 (see the Cyphers et al., 2017\u00a0reference). (d) Western blot using a phospho-specific antibody against pT288 AurA shows enrichment of the phosphorylated kinase in runs 2 and 3. The Cys-lite kinase (without the Q185C mutation) is shown as a positive control. (e) Mass spectra of the purified nitrile-labeled construct phosphorylated at T288.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Crystal structure of active AurA in the DFG-In state (PDB ID: 1OL5). The regulatory spine is shown as a surface representation, and the water-mediated hydrogen bonds linking Q185 and the catalytic Glu-Lys pair (E181 and K162) are shown as dashed yellow lines (see the Cyphers et al., 2017\u00a0reference). Bound nucleotide and magnesium ions are indicated. (b) Structure of AurA in the DFG-Out state (PDB ID: 5L8K). In the remodeled regulatory spine, residue W277 takes the place of the DFG phenylalanine residue, and the Q185 residue becomes buried in a hydrophobic pocket. Nucleotide is bound in the structure despite the loss of magnesium coordination.\n\nThe addition of ADP to apo AurA resulted in the appearance of a DFG-In subpopulation, apparent in the IR spectra as small shoulders on either side of the main 2158 cm\u22121 peak. Experiments performed over a range of temperatures showed that this DFG-In subpopulation increases at higher temperature (Figure 1a, colored lines), but does not reach the level observed in the presence of Tpx2. A similar DFG-In subpopulation was also detected in unphosphorylated AurA bound to ADP (Cyphers et al., 2017) (Figure 1a, inset), highlighting that although nucleotide binding shifts the DFG equilibrium towards the DFG-In state, phosphorylation does not seem to enhance this effect. These IR results suggested that phosphorylation alone does not substantially change the DFG-In/Out equilibrium of AurA, unlike Tpx2 binding. However, as replacement of the Q185 residue with the nitrile probe was found to alter the activation properties of AurA (Cyphers et al., 2017), it was necessary to confirm this interpretation using an alternative method.\n\n### The phosphorylated activation loop adopts a range of conformations in solution, and only becomes highly ordered upon Tpx2 binding\n\nWe used intramolecular FRET to track movements of the activation loop of AurA with and without phosphorylation on T288, using a construct with a native Q185 residue (Cyphers et al., 2017). Donor (D) and acceptor (A) fluorophores (Alexa 488 and Alexa 568, respectively) were incorporated on the activation loop (S284C) and \u03b1D helix (L225C) using maleimide chemistry (Cyphers et al., 2017). These labeling positions were chosen to track the movement of the activation loop across the active-site cleft as the kinase switches from the DFG-Out to the DFG-In state, with the dyes predicted to be further apart in the DFG-In state (Figure 2a). Phosphorylation of the protein on T288 was confirmed by tryptic mass spectrometry (Figure 2\u2014figure supplement 1), and the labeled phosphorylated sample exhibited robust catalytic activity in the absence of Tpx2, and was further activated ~4 fold by the addition of Tpx2 (Figure 2\u2014figure supplement 1c) (Zorba et al., 2014; Dodson and Bayliss, 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig2-v2.jpg)\n\n**Figure 2.:** (a) (left) Schematics showing the labeling scheme used to detect the DFG-In/Out transition by FRET. (right) Structures of the DFG-Out (top) and DFG-In (bottom) states of AurA, highlighting the \u03b2-sheet hydrogen bonds constraining the N- and C-terminal segments of the activation loop. The S284C labeling site is shown as a sphere. (b) (top) Time-resolved fluorescence waveforms for D-only (dashed lines) and D + A (solid lines) phosphorylated AurA in the presence and absence of 125 \u03bcM Tpx2 and 1 mM AMPPNP. Data are for a single representative experiment, normalized to the fluorescence peak. (bottom) Comparison of single-Gaussian distance distribution fits to fluorescence lifetime data obtained with unphosphorylated (left) and phosphorylated AurA (right). (c) Binding constants of ADP (top panels) and Tpx2 (bottom panels) for phosphorylated (blue) and unphosphorylated (red) AurA determined with and without the other ligand pre-bound to the kinase. Data represent mean values \u00b1 s.d.; n = 3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a and b) LC-MS spectra of the phosphorylated AurA construct (C290A C393S L225C S84C) used for FRET experiments labeled with (a) donor and (b) both donor and acceptor fluorophores. All samples show at least one phosphorylation (1P), and the degree of second-site phosphorylation (2P) varied between preparations, but we did not observe significant variation in behavior among preparations (activity, or KD for ADP or Tpx2). (c) Kinase assay data showing unlabeled and labeled AurA are active and activated by Tpx2 binding to a similar extent. Data represent the average of three replicate experiments \u00b1 s.d. (d) Tryptic LC-MS/MS of the phosphorylated Cys-lite construct used for IR and EPR experiments, showing results for one of several observed tryptic peptides containing the T288 residue. The diagnostic b3 ion, which demonstrates that the extra mass of 80 daltons on this peptide is associated with T288, is labeled.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Emission spectra of donor-only (left) and donor + acceptor (right) labeled phosphorylated AurA in the presence of different concentrations of ADP. Single representative experiments. (b) Steady-state fluorescence anisotropy measurements for representative donor + acceptor (left) and donor-only (right) phosphorylated AurA samples measured at the indicated excitation and emission wavelengths for apo AurA and AurA bound to the indicated ligands, demonstrating minimal changes in anisotropy between biochemical states. (c) Pairs of replicate steady-state FRET experiments with phosphorylated (top) and unphosphorylated (bottom) AurA, showing titrations of Tpx2 performed in the absence of ADP (apo), and in the presence of ADP (+ADP). Double-headed arrows highlight the incomplete conformational shift observed upon Tpx2 binding with the unphosphorylated samples.\n\nSteady-state fluorescence emission spectra were measured for D- and D + A labeled forms of both unphosphorylated and phosphorylated AurA. In either phosphorylation state, titrating ADP or Tpx2 onto the kinase resulted in enhanced fluorescence emission from the donor dye and reduced emission from the acceptor, indicating a decrease in FRET efficiency (Figure 2\u2014figure supplement 2) consistent with a shift towards the DFG-In state. To gain more insight into the conformation of the activation loop and how it is altered by phosphorylation and ligand binding, we performed time-resolved (TR) FRET experiments to quantify energy transfer through its effect on the fluorescence lifetime of the donor dye. TR fluorescence decays were recorded using time-correlated single-photon counting (TCSPC) (Figure 2b, top panel), and were then fit to a structural model consisting of a Gaussian distribution of inter-fluorophore distances (Muretta et al., 2013; Agafonov et al., 2009; Nesmelov et al., 2011) to represent the ensemble of conformations sampled in solution (Figure 2b, bottom panels).\n\nThe distance distributions measured for the phosphorylated and unphosphorylated kinase in the absence of ligands are strikingly similar (Figure 2b, bottom panels). In both cases, a broad distribution centered around ~30 angstroms is observed for apo AurA, indicating that the activation loop is highly flexible regardless of the phosphorylation state (Figure 2b, black). This broad distribution is consistent with the DFG-Out state, in which the C-terminal half of the activation loop lacks contacts with the rest of the kinase domain, and is typically disordered in X-ray structures (Wu et al., 2013; Coumar et al., 2009; Fancelli et al., 2006) (Figure 2a, top panel). In contrast, when the phosphorylated and unphosphorylated samples were saturated with both Tpx2 peptide and nucleotide (either ADP or the non-hydrolysable ATP-analog AMPPNP), narrow distributions were observed that were shifted to ~54 angstroms (Figure 2b, blue). This indicates adoption of a well-defined structure consistent with the DFG-In state, in which the segment of the loop containing the labeling site is anchored to the C-terminal lobe of the kinase by flanking \u03b2-sheet interactions (Bayliss et al., 2003) (Figure 2a, bottom panel). In the presence of ADP or AMPPNP alone the observed distance distributions were intermediate in both distance and width between the other samples, consistent with nucleotide binding driving unphosphorylated and phosphorylated AurA into a similar equilibrium between DFG-Out and DFG-In states (Figure 2b, red), as was observed in the IR experiments.\n\n### Phosphorylation and Tpx2 have synergistic effects on AurA conformation and nucleotide binding\n\nWe used steady-state fluorescence to measure the equilibrium dissociation constants of ADP and Tpx2 for unphosphorylated and phosphorylated AurA (Figure 2c). Importantly, ADP bound to phosphorylated and unphosphorylated AurA with similar affinities (Figure 2c, top left panel), indicating that the interaction of the kinase with nucleotide is not substantially affected by phosphorylation on the activation loop. This is consistent with our IR and TR-FRET experiments, which show that phosphorylation by itself fails to trigger the long-range conformational change presumably required to couple the phosphorylation site on the activation loop to the distant ATP-binding site. In contrast, Tpx2, which does trigger a conformational change from the DFG-Out to the DFG-In state in both unphosphorylated and phosphorylated AurA, also enhances the binding affinity of nucleotides in both cases (Figure 2c, compare top panels).\n\nWhile phosphorylation does not affect nucleotide binding to apo AurA, we found that it does substantially enhance the binding of Tpx2 to the exterior surface of the kinase, increasing the affinity by a factor of ~20 (Figure 2c, bottom panels). This is remarkable considering that phosphorylation does not appear to stabilize the DFG-In state, and that there are no direct contacts between the T288 residue and Tpx2 (Bayliss et al., 2003). In addition, once Tpx2 is bound, phosphorylation does lead to an enhancement of nucleotide affinity (Figure 2c, top right panel, compare red and blue), indicating that allosteric coupling between the phosphorylation site and the active site, missing in apo AurA, is established in the AurA:Tpx2 complex. These trends in the affinity data are in good agreement with previous enzyme kinetics measurements (Dodson and Bayliss, 2012). Interestingly, the synergy observed between Tpx2 and phosphorylation is also reflected in our TR-FRET experiments (Figure 2b). A comparison between the unphosphorylated and phosphorylated samples bound to Tpx2 shows that while the unphosphorylated sample requires nucleotide to fully shift to the active state, Tpx2 alone is sufficient to achieve this in phosphorylated AurA, and the further addition of nucleotide has little effect (Figure 2b, compare yellow and blue). The same trend was observed in steady-state FRET experiments (Figure 2\u2014figure supplement 2c, double-headed arrows). Together these data suggest a model in which the allosteric effects of phosphorylation are somehow masked in apo AurA, and only become apparent when Tpx2 switches the kinase to the DFG-In state, at which point phosphorylation further stabilizes this state.\n\n### Phosphorylation promotes a single functional conformation in the DFG-In state\n\nWhile our results reveal synergy between phosphorylation and Tpx2, they do not answer the key question of how phosphorylation itself activates AurA. Indeed, the IR and FRET data clearly show that phosphorylation on T288 by itself does not cause a substantial shift towards the DFG-In state, and that the phosphorylated kinase, like the unphosphorylated enzyme, instead samples a range of different conformations spanning the DFG-In and DFG-Out states. We hypothesized that phosphorylation must instead drive catalytic activation of AurA by altering the structure and dynamics of the DFG-In subpopulation, presumably allowing it to populate catalytically competent geometries.\n\nTo provide insight into how phosphorylation alters the structure and dynamics of the DFG-In state, we performed molecular dynamics simulations of the wild-type kinase. Simulations were initiated from the X-ray structure of DFG-In AurA bound to ADP and Tpx2 (PDB ID: 1OL5) (Bayliss et al., 2003), and were run in the presence and absence of Tpx2 and with and without phosphorylation on T288. For each of these four biochemical states, 250 trajectories up to 500 nanoseconds in length were obtained on the distributed computing platform Folding@home, for a total of over 100 microseconds of aggregate simulation time for each biochemical state. Analysis of the DFG conformation revealed that the simulations remained predominantly in their initial DFG-In state (Figure 3\u2014figure supplement 1), suggesting that the simulation time was insufficient to capture the slow conformational change to the DFG-Out state. The simulations can thus be regarded as probing the conformational dynamics of the DFG-In kinase.\n\nThe T288 phosphorylation site lies in the C-terminal segment of the activation loop, the correct positioning of which is essential for the binding of peptide substrates (Figure 3a). In the crystal structure used to initiate the simulations, this segment of the loop appears to be stabilized by interactions between the pT288-phosphate moiety and three arginine residues: R180 from the \u03b1C helix, R286 from the activation loop, and the highly conserved R255 from the catalytic loop \u2018HRD motif\u2019 (Figure 3a) (Bayliss et al., 2003). To probe the integrity of these interactions in the simulations, and to investigate loop dynamics in their absence, we examined the distribution of distances between the C\u03b6 atoms of either R180 or R255 and the C\u03b1 atoms of T288 following equilibration within the DFG-In state (Figure 3\u2014figure supplement 1b). We also tracked the distance between the L225 and S284 C\u03b1 atoms (the sites used for incorporating spectroscopic probes) to capture movements of the activation loop along a roughly orthogonal axis across the active site cleft.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig3-v2.jpg)\n\n**Figure 3.:** (a) Structure of active, phosphorylated AurA bound to Tpx2 and ADP (PDB ID: 1OL5) showing the interactions between pT288 and the surrounding arginine residues. The S284 and L225 C\u03b1 atoms are shown as black spheres. (b) Contour plots showing the L225 C\u03b1 - S284 C\u03b1 distances plotted against the T288 C\u03b1 - R255 C\u03b6 distances for all four biochemical conditions. The active and autoinhibited DFG-In states observed for the unphosphorylated kinase in the absence of Tpx2 (red), and the shift in the L225-S284 distance between them, are indicated. (c) Simulation snapshot showing the helical turn in the activation loop and the position of the T288 sidechain at the C-terminal end of the helix. (d) The L225 - S284 distance is plotted against the dihedral angle defined by the C\u03b1 atoms of residues 283\u2013286 (pseudodihedral). The helical conformation in the autoinhibited state is indicated. (e) Kinase activity (shown as ATP turnover per second) for phosphorylated WT (blue) and phosphorylated R180A (purple) AurA unlabeled FRET constructs in the presence and absence of 10 \u03bcM Tpx2. The decrease in the activity in the absence of Tpx2 due to the R180A mutation is highlighted by the arrow. Data represent mean values \u00b1 s.d.; n = 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Contour plots of the distribution of backbone torsion angles \u03d5 and \u03c6 for Asp 274 of the DFG motif across all simulations. The corresponding values for the DFG-In and DFG-Out states, taken from PDB IDs 1OL5 and 5L8K, respectively, are indicated in the top left panel for reference. All simulations stay close to the torsion values in the DFG-In x-ray structure used to initiate the simulations (PDB ID: 1OL5) of \u03d5 = 50, \u03c6 = 80. (b) Distributions of the T288 C\u03b2 - R180 C\u03b6 (top) and T288 C\u03b1 - R255 C\u03b6 (bottom) distances determined from MD simulations of AurA performed in the indicated biochemical states.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The structure of AurA bound to Tpx2 in the active conformation is shown in red for comparison.\n\nWe plotted the simulated L225-S284 distances as a function of the R255-T288 distance to assess how Tpx2 and phosphorylation affect the conformation of the activation loop (Figure 3b). As expected, the simulations of unphosphorylated AurA without Tpx2 show that the activation loop is highly dynamic, reflected as relatively broad distributions of L225-S284 and R255-T288 distances (Figure 3b, bottom right panel). The N-terminal lobe of the kinase was particularly dynamic in these simulations, and local unfolding occurred within the \u03b1C-helix in many of the trajectories, as seen previously in simulations of the epidermal growth factor receptor (Shan et al., 2012) as well as in X-ray structures of the related AGC-family kinase Akt in the unphosphorylated state (Yang et al., 2002a). In striking contrast, the simulations showed that phosphorylated AurA is locked into a single conformation with a long L225-S284 distance (42 \u00c5, cf. 41 \u00c5 in the 1OL5 x-ray structure) and short R255-T288 distance (~5 \u00c5, cf. 5.5 \u00c5 in 1OL5), indicative of a stable active state in which the loop is fully ordered and the phosphothreonine residue forms ion-pairing interactions with R255 and R180 (Figure 3b, bottom left panel, and Figure 3\u2014figure supplement 1b). Interestingly, phosphorylation alone is almost as effective at constraining the loop in the active state as phosphorylation and Tpx2 together (Figure 3b, left panels). In contrast, the simulations show that the activation loop of unphosphorylated AurA bound to Tpx2 remains somewhat dynamic (Figure 3b, top right panel), and additional phosphorylation significantly stabilizes the loop.\n\n### Phosphorylation disrupts an autoinhibitory DFG-In substate\n\nAlthough unphosphorylated AurA is highly dynamic in the absence of Tpx2, the activation loop is not in fact disordered in the simulations. Instead, two discrete subpopulations are observed: one subpopulation corresponding to the active-like state with a long L225-S284 distance (~43 \u00c5), and another with a much shorter distance (~38 \u00c5), representing a DFG-In conformation in which the activation loop is not correctly positioned for catalytic function (Figure 3b, lower right panel). Manual inspection of the trajectories revealed that in this subpopulation the tip of the activation loop folds into a short helical turn spanning residues P282-R286, with the P282 proline residue serving as the N-terminal capping residue (Kumar and Bansal, 1998) in most of the trajectories (Figure 3c). Calculating the pseudodihedral angle for the C\u03b1 atoms of S283-R286 across all trajectories confirmed that the inactive subpopulation possessed well-defined helical pseudodihedral values of 50\u201375\u00b0 (Figure 3d). Although this conformation has not been observed in X-ray structures of AurA, the formation of short helices in the activation loop is a common feature of the inactive states of other protein kinases (Sicheri et al., 1997; Wood et al., 2004; Lee et al., 2010; De Bondt et al., 1993).\n\nAn interesting feature of the autoinhibited DFG-In substate observed in the simulations is that the T288 residue, which immediately follows the helical segment in the protein sequence, is positioned close to the C-terminal end of the helix in almost all of the trajectories (Figure 3c), with the sidechain hydroxyl forming hydrogen bonds to the backbone carbonyls of residues R285 and R286 in many of the simulation snapshots. We reasoned that upon phosphorylation of T288, the proximity of the phosphate group to the negatively-charged end of the helix dipole (Hol et al., 1978) would destabilize this autoinhibited substate, promoting the refolding of the activation loop to the active conformation.\n\nWe wondered why the helical conformation of the activation loop has not been observed in X-ray structures of AurA. In fact, the activation loop adopts the active conformation in only a small subset of AurA structures, specifically those determined either in the presence of Tpx2 (Bayliss et al., 2003; Zhao et al., 2008; Clark et al., 2009) or other protein factors that stabilize the active state (Richards et al., 2016). Instead, almost all of the structures of AurA in the DFG-In state (76 structures out of 138 total structures of AurA in the PDB) were determined in the same hexagonal crystal form in which the kinase adopts an inactive conformation with the activation loop misaligned and the peptide binding site disassembled. Upon examination of the crystal lattice we noticed that this conformational state of the activation loop appears to be induced by a crystal contact between the peptide binding site and a neighboring molecule in the lattice (Figure 3\u2014figure supplement 2). This apparent crystallographic artifact may have prevented previous observation of the helical autoinhibited DFG-In substate visualized in our simulations, which model the kinase in solution rather than in the crystallographic context.\n\nOur MD simulations, which represent over a millisecond of simulation data, predict that phosphorylation has profound effects on the activation-loop conformation of AurA within the DFG-In state, both disrupting an autoinhibited substate and promoting an active substate that is primed for catalytic function. In an attempt to confirm the simulation result that the T288 phosphothreonine residue of phosphorylated AurA is correctly coordinated in the active state, we mutated its ion-pairing partner R180 to an alanine residue and measured the effect on kinase activity. The R180A mutant possessed 4-fold lower activity in the absence of Tpx2, whereas the activity in the presence of Tpx2 was only modestly affected (Figure 3e). This is consistent with the catalytic activity of phosphorylated AurA arising from a population of molecules adopting the canonical active state in which the phosphothreonine residue is correctly ion-paired.\n\n### DEER experiments confirm that phosphorylation alters the structure of the DFG-In state, rather than shifting the DFG equilibrium\n\nTo assess the effects of phosphorylation on the structure of the DFG-In state predicted by our simulations, we used double electron-electron resonance (DEER), a pulsed electron paramagnetic resonance (EPR) spectroscopy technique (Jeschke, 2012). DEER experiments measure the dipole-dipole interactions of unpaired electron spins to provide high-resolution information about the distribution of spin-spin distances in the sample. Two MTSL spin labels were incorporated into AurA at the same positions used for FRET experiments (L225C and S284C). Labeling and phosphorylation were confirmed by mass spectrometry, and MTSL-labeled samples retained close to full kinase activity (Figure 4\u2014figure supplement 1). Samples were flash frozen in the presence of saturating concentrations of nucleotides and/or Tpx2, and DEER experiments were performed at 65 K.\n\nWe first sought to confirm our above results that the phosphorylated kinase still samples both the DFG-Out and DFG-In states. DEER spectra (background-corrected dipolar evolution data) take the form of a damped oscillating signal in which the mean distance between the spin labels is encoded in the cube root of the oscillation period, and the width of the distance distribution is encoded in the degree of damping. DEER spectra acquired for the phosphorylated kinase bound to ADP or AMPPNP showed a rapidly decaying and heavily damped signal, consistent with the activation loop adopting multiple conformations (Figure 4a and Figure 4\u2014figure supplement 2a, blue lines). Extraction of spin-spin distances from the DEER spectra using Tikhonov regularization (Chiang et al., 2005) confirmed the presence of a broad distribution of distances, spanning ~35 to~55 angstroms (Figure 4b, blue). Control experiments with the model peptide substrate kemptide, which conforms to the consensus phosphorylation site sequence for AurA (Ferrari et al., 2005), showed no effect on the conformational ensemble of the phosphorylated kinase (Figure 4\u2014figure supplement 2b). However, DEER spectra of phosphorylated AurA bound to Tpx2 decayed much less rapidly, indicating increased spin-spin distance, and exhibited pronounced oscillations, indicating a high degree of structural order (Figure 4a, yellow). The corresponding distance distribution displayed a single dominant peak at 52 angstroms (Figure 4b, yellow), representing a ~5 angstrom longer mean spin-spin distance than seen in the samples lacking Tpx2, consistent with the activation loop now adopting the extended DFG-In conformation (see Figure 2a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig4-v2.jpg)\n\n**Figure 4.:** (a) Background-corrected DEER spectra of unphosphorylated AurA bound to ADP (red), and phosphorylated AurA bound to either ADP (blue) or to Tpx2 (yellow). The inset shows an enlarged view of the spectra for the +ADP samples. (b) Population densities obtained by Tikhonov regularization for the data shown in (a), with prominent peaks in the distributions indicated. The increased sampling of distances beyond ~50 angstroms in the phosphorylated kinase bound to ADP is highlighted with darker blue shading. Data are from single representative experiments of two independent repeats. (c) Spin-spin distance distributions obtained by molecular dynamics simulations initiated from X-ray structures of AurA in either the DFG-Out state (purple) or the fully-active DFG-In state with both Tpx2 and phosphorylation (pink). The inset shows schematics of the spin-labeling scheme. (d) X-ray structure of SNS-314 bound to AurA highlighting interactions with the DFG motif, structured water molecules and the catalytic glutamate (E181) specific to the DFG-In state (PDB ID: 3D15). (e) DEER spectra (main panel) and distance distributions (inset) measured for unphosphorylated (red) and phosphorylated (blue) AurA bound to SNS-314. The distributions are vertically aligned with those shown in (b) to facilitate comparison. (f) Hypothesized energy landscape for AurA, highlighting the effect of phosphorylation on the DFG-In state.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a and b) Whole protein LC-MS spectra of (a) unphosphorylated AurA C290S C247A C393S L225C S284C and (b) phosphorylated AurA C290A C247A C393S L225C S284C homogeneously labeled with two MTSL spin labels. (c) Kinase assay data showing unlabeled and MTSL-labeled AurA are active and activated by Tpx2 binding to a similar extent. Data represent the average of three replicate experiments \u00b1 s.d.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) DEER spectra and distance distributions (inset) for unphosphorylated (red) and phosphorylated (blue) AurA bound to the non-hydrolyzable ATP-analog AMPPNP. The distribution for phosphorylated AurA bound to Tpx2 is shown as a yellow dotted line for comparison. The increased sampling of distances beyond ~50 angstroms in the phosphorylated kinase bound to AMPPNP is highlighted with darker blue shading (bottom). (b) DEER spectra and distance distributions (inset) for phosphorylated AurA bound to ADP alone (dark blue) or ADP and 10 mM kemptide substrate peptide (light blue).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32766/elife-32766-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** DEER spectra (a) and distance distributions (b) obtained with unphosphorylated (red) and phosphorylated (blue) AurA labeled with MTSL at L225C and S283C and bound to SNS-314. The inset in a shows a schematic representation of the labeling scheme. The arrows in b highlight the increase in distance observed with phosphorylation.\n\nTo bolster these DEER experiments we performed molecular dynamics simulations of MTSL-labeled phosphorylated AurA in either the DFG-Out state (PDB ID: 5L8K) or the fully-active DFG-In state (PDB ID: 1OL5, AurA bound to Tpx2), totaling 75\u2013110 microseconds of aggregate simulation data for each state. In these simulations, sampling of different spin label rotamers, combined with motion of the protein, gives rise to a range of predicted spin-spin distances. Although the simulated distributions for the DFG-In and DFG-Out states overlap, the DFG-In distribution is skewed to longer distances: distances beyond 45 angstroms are more populated in the DFG-In simulations, and distances beyond 50 angstroms are almost exclusively associated with the DFG-In state (Figure 4c). Prominent peaks are present in the DFG-In distribution at ~44,~48 and~52 angstroms (Figure 4c). The 44- and 52-angstrom predicted spin-spin distances are also observed in the DEER experiment performed with phosphorylated AurA bound to Tpx2 (Figure 4b, yellow), whereas the 48-angstrom peak was not observed experimentally; presumably the corresponding rotamer state is too sparsely populated to be detected at the low temperature of the DEER experiment. The simulations nonetheless confirm that the 52-angstrom spin-spin distance, which is so prominent in the experiment performed in the presence of Tpx2, almost certainly arises from the DFG-In state, and underscore that in the absence of Tpx2 phosphorylated AurA occupies a mixture of DFG-In and DFG-Out states, consistent with the IR and FRET experiments above.\n\nWe next turned to assessing how phosphorylation alters the structure of the DFG-In state. DEER experiments performed on unphosphorylated AurA bound to ADP gave qualitatively similar results to those obtained with the phosphorylated kinase bound to ADP, with a broad distribution of spin-spin distances consistent with similar populations of DFG-In and DFG-Out states (Figure 4b, compare red and blue). However, close inspection of the DEER spectra revealed subtle differences between the unphosphorylated and phosphorylated samples (Figure 4a inset), and the corresponding distributions indicated that distances beyond 50 angstroms were more populated in the phosphorylated sample (Figure 4b, dark blue shading). The same trend was observed in experiments performed with AMPPNP instead of ADP (Figure 4\u2014figure supplement 2a). We wondered whether the presence of a substantial DFG-Out subpopulation in these samples might be obscuring a more dramatic structural change occurring in the DFG-In subpopulation. To test this, we used the ATP-competitive AurA inhibitor SNS-314, which preferentially binds to the DFG-In state of AurA (Oslob et al., 2008) (Figure 4d), to induce a homogeneous population of DFG-In kinase. Strikingly, DEER spectra measured on unphosphorylated and phosphorylated AurA bound to SNS-314 showed pronounced oscillations with differing periods, indicating that both samples adopt well-defined structures, but that the major spin-spin distances are different in the two cases (Figure 4e). Indeed, the Tikhonov distributions showed sharp peaks at 49 and 53 angstroms for the unphosphorylated and phosphorylated kinase, respectively (Figure 4e, inset).\n\nContrasting these results with those obtained with ADP (Figure 4b) highlights that the binding of SNS-314 stringently enforces adoption of the DFG-In state and dramatically simplifies the conformational ensemble. Importantly, the resulting unobstructed view of the DFG-In state shows that phosphorylation does indeed lead to a pronounced structural change of the activation loop, reflected in the increase in spin-spin distance from 49 to 53 angstroms shown in Figure 4e. The distance distribution obtained for phosphorylated AurA bound to SNS-314 (Figure 4e, blue) is very similar to that observed in the presence of Tpx2 (Figure 4b, yellow), confirming that these longer spin-spin distances (52\u201353 \u00c5) arise from the catalytically active DFG-In conformation, whereas the shorter spin-spin distance observed with unphosphorylated AurA bound to SNS-314 (~49 \u00c5) corresponds to a structurally-distinct DFG-In conformation. This phosphorylation-driven structural change was also detected in a separate set of DEER experiments in which the S284 labeling site was moved to S283, and SNS-314 again used to isolate the DFG-In state (Figure 4\u2014figure supplement 3).\n\nInterestingly, the 4-angstrom increase in spin-spin distance observed in the DEER experiments performed with the L225/S284 labeling sites (Figure 4e inset) is similar to the difference in the L225-S284 C\u03b1 distances predicted by the MD simulations for the autoinhibited and active DFG-In substates (Figure 3b, bottom right panel). The DEER experiments thus support the model that phosphorylation triggers a switch from an autoinhibited DFG-In substate to the active DFG-In substate (see Figure 3c). We conclude that while phosphorylated AurA samples the DFG-Out and DFG-In states to a similar extent as the unphosphorylated kinase, the structure and dynamics of the DFG-In subpopulation are profoundly altered by phosphorylation, leading to catalytic activation.\n\nOur proposed model for the autoinhibited DFG-In substate of AurA provides an explanation for several puzzling observations. Firstly, the presence of a third state explains how phosphorylation can promote the active state without triggering a shift in the DFG equilibrium, the central result of this paper. By eliminating the autoinhibited DFG-In substate, phosphorylation redistributes the ensemble between the DFG-Out and active DFG-In substates (Figure 4f). The fact that this does not substantially change the DFG equilibrium suggests that the stabilizing ionic interactions between the phosphothreonine and the arginine residues (see Figure 3a) are offset by an energetic penalty associated with refolding the activation loop into the active configuration.\n\nSecondly, our model accounts for the synergy between phosphorylation and Tpx2, observed in our fluorescence experiments, and reported previously (Dodson and Bayliss, 2012; McIntyre et al., 2017). By unfolding the activation loop from the autoinhibited DFG-In state, phosphorylation promotes the formation of the Tpx2-interaction surface by the N-terminal segment of the activation loop, resulting in dramatically enhanced binding affinity. By binding tightly to this surface, Tpx2 in turn compensates for the energetic cost of reconfiguring the activation loop, allowing the effects of phosphorylation to be manifested as a further stabilization of the active DFG-In state, as we observed in our fluorescence experiments in terms of an additional conformational shift and enhanced nucleotide binding. While definitive confirmation of the structural model for the autoinhibited DFG-In state awaits further experiments, our DEER data are fully consistent with this model, which provides a mechanism for the activation of AurA by phosphorylation that accounts for the available structural, dynamic and biochemical data.\n\n## Discussion\n\nThe majority of eukaryotic protein kinases are activated by phosphorylation on the activation loop at a site equivalent to T288 in AurA (Johnson et al., 1996). X-ray structures have suggested that the functional role of this phosphorylation is to trap the kinase in an active DFG-In state and rigidify the flexible activation loop in a specific configuration that promotes catalysis and substrate binding (Knighton et al., 1991; Yamaguchi and Hendrickson, 1996; Steichen et al., 2012). Our results show that phosphorylation can drive catalytic activation of a protein kinase without restraining the protein in the DFG-In state, providing a contrasting and highly dynamic view of an activated kinase in which major conformational changes of catalytic elements may occur continuously during the catalytic cycle. Of note, a recent single-molecule fluorescence study also reported that phosphorylated AurA dynamically transitions between multiple structural states (Gilburt et al., 2017).\n\nBinding of Tpx2 to unphosphorylated AurA causes a pronounced population shift from the DFG-Out to the DFG-In state (Cyphers et al., 2017), in striking contrast with the phosphorylation-mediated activation mechanism described here. Our simulation data also reveal differences in how phosphorylation and Tpx2 affect the DFG-In subpopulation, with Tpx2 less effective at constraining the C-terminal segment of the activation loop. Thus it appears that phosphorylation and Tpx2 activate AurA through quite different - albeit complementary - mechanisms, with phosphorylation triggering a structural switch within the DFG-In subpopulation, and Tpx2 instead promoting a DFG flip to increase the population of the DFG-In state. Although we have not explicitly tracked the dynamics of the important \u03b1C-helix in this work, our previous work showed that the binding of Tpx2 substantially stabilized the \u03b1C-helix and the associated regulatory spine (Cyphers et al., 2017). Given that the R180 residue on the \u03b1C-helix directly recognizes the pT288 phosphothreonine residue, and that the R180A mutation interferes with activity of the phosphorylated enzyme, phosphorylation is presumably also coupled to the \u03b1C-helix. However, while this coupling likely contributes to the switch from the autoinhibited DFG-In substate to the active DFG-In substate, our spectroscopic experiments show, surprisingly, that these interactions are not sufficiently stabilizing to substantially increase the overall population of the DFG-In state. Thus, phosphorylation can be thought of as tuning the free energy surface for the DFG-In state - favoring the active substate over the autoinhibited substate - as opposed to changing the relative free energies of the DFG-In and DFG-Out states.\n\nIt is interesting to consider the dual activation mechanisms of AurA in the light of the closely-related AGC-family kinases. The AGC kinases possess a C-terminal hydrophobic motif that docks in cis onto a pocket above the \u03b1C-helix in a manner that closely resembles the interaction of Tpx2 with AurA (Fr\u00f6din et al., 2002; Yang et al., 2002b). Activation of the AGC kinases by activation loop phosphorylation and hydrophobic motif engagement are tightly coupled events (Alessi et al., 1996) and are both important for activation (Batkin et al., 2000). The contrasting ability of AurA to be independently activated by phosphorylation or Tpx2 is dependent upon a unique active-site water network that strengthens the regulatory spine of the kinase relative to that of the AGC kinases (Cyphers et al., 2017). Interestingly, when Tpx2 and phosphorylation act together, they are capable of overriding the deleterious effects of mutations in the regulatory spine designed to disrupt the water network and render the spine more like that of an AGC kinase (Cyphers et al., 2017). Presumably the synergistic effects of Tpx2 and phosphorylation on the conformational dynamics of the kinase, in which the \u03b1C-helix is stabilized by Tpx2 engagement and the activation loop is locked into the active DFG-In conformation, renders the additional stabilization provided by the water network redundant. It is likely that the fully-activated AGC kinases, with their hydrophobic motifs engaged on the \u03b1C-helix and their activation loops phosphorylated, closely resemble this conformationally-rigid form of AurA.\n\nIn contrast, the highly dynamic nature of AurA activated only by phosphorylation may be a unique property of the Aurora kinases that reflects the loss of the hydrophobic motif in this lineage. These motions may facilitate further regulation of AurA by additional cellular factors, allowing for graded levels of catalytic activity. For instance, phosphorylated AurA has been shown to interact with Cep-192 (Joukov et al., 2014), Bora (Mac\u016frek et al., 2008; Seki et al., 2008), and Ajuba (Hirota et al., 2003) at the centrosome, and these interactions can further regulate AurA activity towards specific substrates. Although a model peptide substrate did not modulate AurA dynamics in our experiments, in the context of the higher-order signaling complexes found at the centrosome substrates may be presented at sufficiently high local concentration to further stabilize the activation loop in the active conformation and promote phosphoryl transfer. In this context it is noteworthy that the oncogenic transcription factor N-Myc binds to AurA through a pseudosubstrate interaction, and does indeed appear to stabilize the phosphorylated kinase in the active conformation (Richards et al., 2016). These observations are consistent with the overarching view that protein kinases evolve under strong selective pressure to optimize their responsiveness to regulatory inputs, and not for maximal catalytic efficiency.\n\nIt is unclear whether activation of AurA by both phosphorylation and Tpx2 occurs in normal cells, where the Tpx2-bound spindle pool of AurA is thought to be predominantly unphosphorylated (Zeng et al., 2010; Toya et al., 2011), and the centrosomal pool is not bound to Tpx2 (Kufer et al., 2002). The doubly-activated form of the kinase is prominent, however, in the tumors of ~10% of melanoma patients, where mutational inactivation of the PP6 phosphatase leads to accumulation of phosphorylated AurA bound to Tpx2 on the mitotic spindle, resulting in chromosome instability and DNA damage that can be partially reversed by AurA inhibitors (Hammond et al., 2013; Hodis et al., 2012; Gold et al., 2014). The distinct conformational dynamics of doubly-activated AurA might provide opportunities for the development of improved inhibitors that selectively target this form of the kinase in melanoma cells.\n\nThe DFG flip has long been considered one of the key regulatory mechanisms used by nature to control the catalytic activity of protein kinases (Hubbard et al., 1994; Nagar et al., 2003), but the difficulty of directly observing this structural change in solution and correlating it with activity has hampered efforts to conclusively demonstrate its regulatory role. Although AurA does adopt the DFG-Out state, our results show that activation of the enzyme by phosphorylation is not mediated by a DFG flip, but rather by inducing activating conformational changes within the DFG-In state. It is noteworthy that many other protein kinases, including non-receptor and receptor tyrosine kinases (Wood et al., 2004; Xu et al., 1997) and the cyclin-dependent kinases (De Bondt et al., 1993), employ an autoinhibitory DFG-In state, as opposed to the DFG-Out state, for regulatory control. A major remaining question is whether the substantial DFG-Out subpopulation of phosphorylated AurA performs an important biological function, and whether this is a unique feature of AurA itself, or a more general property of activated protein kinases.\n\n## Materials and methods\n\n### Expression and purification of AurA constructs\n\nAurora A kinase domain constructs were expressed in E.coli and purified as previously described (Cyphers et al., 2017). We used a Cys-lite form of AurA (C290A C393S) that has been previously shown to possess robust kinase activity within 2-fold of WT AurA, and can be purified from bacteria in homogeneously T288-phosphorylated form (Burgess and Bayliss, 2015; Rowan et al., 2013). For IR and EPR experiments it was necessary to mutate an additional cysteine (C247) to alanine to avoid non-specific labeling. Site-directed mutagenesis was performed using the QuikChange Lightning kit (Agilent). Phosphorylation was verified by mass spectrometry and activity assays.\n\n### IR spectroscopy\n\nPhosphorylated Q185C AurA protein samples (human AurA residues 122\u2013403 containing an N-terminal hexahistidine tag) were prepared using a cysteine-light form of the kinase in which all endogenous solvent-accessible cysteines were removed by mutagenesis (Q185C, C247A, C290A, C393S). After Nickel-affinity purification, repeated rounds of cation exchange chromatography were used to isolate the homogeneous singly phosphorylated species, with enrichment of the phosphorylated species tracked during purification by western blotting and activity assays (Figure 1\u2014figure supplement 1). Nitrile labeling of the purified protein was performed using a 1.5:1 molar ratio of DTNB (Ellman\u2019s reagent), followed by 50 mM KCN, and excess labeling reagents were removed using a fast desalting column (GE Healthcare). Incorporation of a single nitrile label was confirmed by whole-protein mass spectrometry (Figure 1\u2014figure supplement 1). Samples for IR spectroscopy were prepared by concentrating labeled protein (50\u2013100 \u03bcM) in the presence or absence of 4 mM ADP and 8 mM MgCl2, and/or excess Tpx2 peptide (~150 \u03bcM, residues 1\u201343 of human Tpx2, Selleckchem) in FTIR buffer (20 mM Hepes, pH 7.5, 300 mM NaCl, 20% glycerol). Samples were concentrated to ~1 mM and loaded into a calcium fluoride sample cell mounted in a temperature-controlled housing (Biotools) for IR experiments. IR spectra were recorded on a Vertex 70 FTIR spectrometer (Bruker) equipped with a liquid nitrogen cooled indium antimonide detector with 2 cm\u22121 spectral resolution. Spectra were averaged across 256 scans, background subtracted using absorbance spectra of the buffer flow-through from sample concentration, and baselined using the polynomial method in the OPUS software (Bruker).\n\n### Kinase assays\n\nKinase activity was measured using the ADP Quest coupled kinase assay (DiscoverX) in a fluorescence plate reader (Tecan Infinite M1000 PRO) as described previously (Cyphers et al., 2017). Assays were performed using 2, 5, 10, 100, or 200 nM kinase (depending on the protein variant), 1 mM kemptide peptide substrate (Anaspec), 10 \u03bcM Tpx2 residues 1\u201343 (Selleckchem), and 50 \u03bcM ATP (Sigma Aldrich). Activity was determined by fitting the fluorescence intensity as a function of time using linear regression. Background ATPase activity was determined using samples lacking peptide substrate, and was subtracted from the activity in the presence of substrate peptide. The average fluorescence for several ADP concentrations in the dynamic range of the assay was used to construct a calibration curve, and convert the background-corrected activity to ATP turnover numbers. Activities given are the average of three experiments, where error bars are the standard deviation of the replicates.\n\n### Fluorescence and F\u00f6rster resonance energy transfer (FRET) experiments\n\nFor FRET experiments, the AurA variant C290S/A C393S L225C S284C was expressed, purified and labeled with donor (Alexa 488, Invitrogen) and acceptor (Alexa 568) using cysteine-maleimide chemistry, as previously described (Cyphers et al., 2017). Labeled samples were validated using activity assays and mass spectrometry and retained close to full kinase activity (Figure 2\u2014figure supplement 1).\n\n### Steady-state FRET\n\nLigand titration FRET experiments were performed in a Fluoromax 4 Spectrofluorometer (Horiba) at 22\u00b0C. Assays were performed in 15 mM HEPES pH 7.5, 20 mM NaCl, 1 mM EGTA, 0.02% Tween-20, 10 mM MgCl2, 1% DMSO and 0.1 mg/mL bovine-\u03b3-globulins at AurA concentrations of 5\u201350 nM. Bulk FRET efficiency and inter-fluorophore distance were calculated from the ratios of the donor fluorescence in the presence and absence of acceptor, assuming a value of 62 angstroms for the F\u00f6rster radius, as previously described (Cyphers et al., 2017). The steady-state anisotropy was below 0.2 for all samples and was similar across biochemical conditions (Figure 2\u2014figure supplement 2b).\n\nDissociation constants KD were determined using the spectra obtained with the D + A labeled sample. The ratio FD/FA (where FD is the donor fluorescence maximum and FA is the acceptor fluorescence maximum), a highly sensitive measure of ligand binding, was fit as a function of ligand concentration. For calculation of the KD for Tpx2 with saturating ADP bound, KD is near the concentration of fluorescent protein. Ligand depletion was accounted for by fitting the raw data to determine the plateau FD/FA value (representing ligand saturation), calculating the percent saturation for each total ligand concentration, and then back calculating the concentration of free ligand. FD/FA was then re-fit as a function of free ligand concentration.\n\n### Time-resolved (TR) FRET\n\nThe time-correlated single photon counting instrument used to collect time-resolved fluorescence data has been previously described (Agafonov et al., 2009). The instrument response function was obtained with the emission polarization set at vertical, while fluorescence data were collected with the emission polarization set at 54.7o, with a GFP band pass filter in place (Semrock).\n\nExperimental buffer contained 15 mM HEPES pH 7.5, 20 mM NaCl, 1 mM EGTA, 0.02% Tween-20, 10 mM MgCl2. Experiments were performed at 100\u2013200 nM unphosphorylated or phosphorylated FRET-labeled AurA, in the presence and absence of 100\u2013125 \u03bcM Tpx2 and 0.2\u20131 mM ADP or AMPPNP; one phosphorylated AurA experiment also contained 1 mM DTT. For both unphosphorylated and phosphorylated AurA, three independent experiments were performed and analyzed.\n\nData fitting was performed as previously described (Muretta et al., 2013). Briefly, time-resolved fluorescence waveforms were fit using custom software designed for analysis of time-resolved fluorescence (Muretta et al., 2010). The instrument response function and the model of the fluorescence decay were convolved to fit the measured time-resolved fluorescence waveform. Donor-only fluorescence waveforms were modeled using a multiexponential decay function, which accounts for the intrinsic lifetimes of the dye, with two exponentials required to fit the Alexa 488 fluorescence decay. Donor +acceptor (D + A) waveforms were modeled from the amplitudes and lifetimes present in the matched donor-only sample and modified so that a distance-dependent resonance energy transfer term, corresponding to a Gaussian distribution of inter-probe distances, describes the decrease in fluorescence lifetime relative to the donor-only control. The mean distance and full-width half maximum of the Gaussian functions were fit individually for each D + A and D-only pairing, while the parameters that described general conditions of the experiment common among all samples, such as the fraction of a given D + A sample lacking acceptor dye, were globally linked.\n\n### EPR experiments\n\nDEER samples were prepared using the Cys-lite mutant construct of AurA C290S/A C393S C247A L225C S284C (or S283C), purified as described above. AurA was labeled with MTSL (Santa Cruz Biotechnology), purified by cation exchange chromatography, and concentrated. Labeling was verified using mass spectrometry, and MTSL-labeled samples retained close to full activity of unlabeled AurA in the presence and absence of Tpx2 (Figure 4\u2014figure supplement 1). The protein was then buffer exchanged into the experimental buffer, which was 20 mM HEPES pH 7.5, 300 mM NaCl, 10% deuterated glycerol, 2% v/v H2O in D2O. For DEER experiments, samples containing 30\u201360 \u03bcM MTSL-labeled AurA were prepared in the presence and absence of 100\u2013200 \u03bcM Tpx2 and 300 \u03bcM ADP (8 mM MgCl2 was added to samples containing ADP). Final samples varied in v/v H2O concentration from 2\u201314%; however, no significant differences were observed in Tikhonov distributions derived from experiments performed in protonated and deuterated buffers. Samples were flash-frozen in an isopropanol dry ice bath followed by liquid nitrogen. Data shown are from one of two replicate experiments.\n\nDEER spectra were detected at 65 K using an Elexsys E580 Q-Band spectrometer (Bruker Biospin) equipped with an ER 5107D2 resonator (Bruker Biospin) using the standard 4-pulse pulse sequence with \u03c0/2 and \u03c0 pulses (including ELDOR) set to 16 and 32 ns respectively. The pump frequency was set to the central resonance position of the nitroxide echo-detected field swept spectrum while the observe position was set 24 G up-field to avoid excitation bandwidth overlap (Agafonov et al., 2009).\n\nData were analyzed using custom software written in Mathematica which was based heavily on DeerAnalysis 2017 (Jeschke et al., 2006). The raw spectra were phase and background corrected assuming a homogeneous background model to produce the DEER waveform. Distance distributions were determined using Tikhonov regularization, with an optimal smoothing parameter chosen using a combination of the l-curve and leave one out cross validation (LOOCV) techniques (Edwards and Stoll, 2016). After choice of smoothing parameter, a range of background fits were performed to identify stable populations in the distance distributions, with highly unstable, long distance populations being largely attributable to errors in the background fit and model choice (Jeschke, 2011).\n\n### Molecular dynamics simulations\n\n#### System preparation\n\n##### Modeling WT unphosphorylated AurA\n\nWT AurA in complex with ADP was simulated with and without Tpx2. All simulations were started from the X-ray structure of WT AurA bound to Tpx2 and ADP in the presence of three magnesium ions (PDB ID: 1OL5 [Bayliss et al., 2003]). From the crystal structure, PDBFixer (https://github.com/pandegroup/pdbfixer) version 1.2 was used to model in Tpx2 residues 23\u201329 (unresolved in 1OL5), add hydrogens belonging to standard dominant protein residue protonation states at pH 7.4, and remove phosphorylation from threonine residues 287 and 288 (Eastman et al., 2013). Crystallographic waters were retained to prevent nonphysical collapse of hydrophilic pockets during minimization. The chain containing Tpx2 was then removed for simulations without Tpx2 (-Tpx2) and retained for simulations with Tpx2 (+Tpx2). Sulfate ions present in the crystal structure were manually removed. The crystallographic ADP (containing only heavy atoms) was extracted from the structure and converted to a protonated Tripos mol2 file using OpenEye toolkit OEChem v2015.June (Marcou and Rognan, 2007; Stahl and Mauser, 2005). The protein structure was then loaded as an OpenMM version 7.0.1 Modeller object, and the protonated ADP was reintroduced through conversion from mol2 to OpenMM format via MDTraj 1.4.2 (Eastman et al., 2013; McGibbon et al., 2015).\n\n##### Modeling WT phosphorylated AurA\n\nSimulations of phosphorylated WT AurA in complex with ADP were prepared as above, but the phosphothreonines (denoted TPO in the PDB file) at positions 287 and 288 were left in place and parameterized using the Sticht T1P AMBER parameters (Homeyer et al., 2006) retrieved from the AMBER parameter database (Bryce, 2015). The AMBER phosphothreonine parameter file was converted to OpenMM ffxml using a python script that has been made publically available (Chodera, 2017; copy archived at https://github.com/choderalab/AurA-materials), and subsequently converted into a hydrogen specification file for OpenMM\u2019s Modeller by hand. The PDB file generated by PDBFixer was loaded into an OpenMM Modeller object where the hydrogens and bonds were added to the TPO residues using a Forcefield object instantiated with the AMBER99Bildn parameters as well as the custom TPO parameters described above. All crystallographic waters, ADP, sulfate ions and magnesium ions were handled as with the unphosphorylated WT AurA simulations.\n\n##### Parameterization the WT AMBER simulations\n\nAn OpenMM ForceField was instantiated using AMBER99SBildn force field parameters (Meagher et al., 2003) for the protein and TIP3P water model, along with ADP parameters generated by Carlson and accessed from the Amber Parameter Database (Homeyer et al., 2006; Bryce, 2015; Meagher et al., 2003). The phosphorylated simulations also used custom phosphothreonine parameters described above (Homeyer et al., 2006; Bryce, 2015).\n\n##### Minimization and equilibration for the WT AMBER simulations\n\nLocal energy minimization was performed in three separate steps in order to gradually introduce bond constraints. An OpenMM System was instantiated with no constraints on bonds or angles for the first minimization, which took place in vacuum (with crystallographic waters) with no constraints on bonds or angles. After this minimization, a new System was instantiated with constraints on the lengths of all bonds involving a hydrogen atom, and minimization was repeated. The structure and positions of all atoms were then put into a new OpenMM Modeller object, where TIP3P waters were added to a cubic box extending 11 \u00c5 beyond the outermost protein atoms, along with neutralizing counterions and sufficient excess NaCl to achieve an effective salt concentration of 300 mM. Another System with constrained bonds to hydrogen was created from the solvated structure and minimized. To minimally relax the structure before deploying simulations to Folding@Home, 5000 steps of Langevin dynamics were run using a Langevin integrator with a time step of 2.0 fs, temperature of 300.0 K, and collision rate of 5.0 ps\u22121. Nonbonded forces were modeled using the particle-mesh Ewald (PME) method with default parameters with a cutoff distance of 9.0 \u00c5. All other settings remained at default values, except double precision was used throughout the minimization-and-equilibration process.\n\n##### Production simulation for WT amber simulations\n\nThe resulting system, integrator, and state data from minimal equilibrations were serialized to XML format for simulation on Folding@Home using a simulation core based on OpenMM 6.3 (Eastman et al., 2013; Shirts and Pande, 2000) for both the phosphorylated and unphosphorylated systems. This entire process was repeated five times each phosphorylation simulations with and without Tpx2 to set up individual Folding@home RUNs, with each RUN representing a distinct initial configuration generated by the minimization-and-equilibration procedure. For each of the RUNs, 50 CLONEs with different initial random velocities and random seeds were simulated on Folding@home, where each clone ran for a maximum of 500 ns (250 million Langevin dynamics steps of 2 fs timestep with all-atom output frames saved every 125,000 steps using single precision and a Monte Carlo Barostat with pressure of 1 atm, temperature of 300 Kelvin, and barostat update interval of 50 steps), generating over 100 \u03bcs of aggregate simulation data for each of the WT conditions (with and without Tpx2).\n\n##### Modeling Spin Probe-labeled AurA\n\nBecause AMBER parameters for spin probes were not widely available, we used the equivalently modern CHARMM36 generation of forcefields for MTSL-labeled AurA, simulated in complex with ADP and with and without both TPX2 and phosphorylation, for a total of four possible combinations per starting structure. Simulations were started from two different starting configurations: DFG-in (PDB ID: 1OL5) and DFG-out (5L8K (Burgess et al., 2016)). For the crystal structure of 1OL5, Schr\u00f6dinger\u2019s PrepWizard (Sastry et al., 2013) (release 2016\u20134) was used to model in Tpx2 residues 23\u201329 (unresolved in 1OL5), and add in hydrogens at pH 7.4 for both protein residues and ADP. The protonation state of ADP was assigned the lowest energy state using Epik at pH 7.4 \u00b1 2. Hydrogen bonding was optimized using PROPKA at pH 7.4 \u00b1 2. The entire structure was minimized using OPLS3 and an RMSD convergence cutoff of 0.3 \u00c5. Because TPX2 is not present in the 5L8K structure, the coordinates and crystal waters of Tpx2 in 1OL5 after preparation were transferred to the unprepared 5L8K after aligning the kinase domain to 1OL5 and deleting the vNAR domain (chain B) from 5L8K. 5L8K was then prepared using the same protocol as above, removing any organic solvent molecules but retaining all crystal waters. All three structures were run through CHARMM-GUI Solvator tool (Jo et al., 2008) (http://www.charmm-gui.org/?doc=input/solvator). In the first stage of this tool, all crystal waters and magnesiums in the structures where retained, while sulfates were deleted. Tpx2 was deleted at this stage for the non-Tpx2 conditions. Phosphorylation was either built in or deleted for the threonine at residue 288 in the second stage of the Solvator tool. Also in this stage, residues 225 and 284 were mutated to cysteines and the MTSL spin label (named CYR1) was added to those residues. C290 was mutated to serine in the unphosphorylated conditions and alanine in the phosphorylated conditions, to match the DEER experimental conditions. After the PDB file was generated, a rectangular solvent box was generated using 10 \u00c5 edge distance fit to the protein size, with 300 mM NaCl placed using the Monte-Carlo method.\n\n##### Parameterization the MTSL labeled CHARMM simulations\n\nAn OpenMM ForceField was instantiated using CHARM36 (Best et al., 2012) force field parameters for the protein and water model, along with ADP, TPO, and CYR1 parameter files output by CHARMM-GUI.\n\n##### Minimization and equilibration for the MTSL labeled CHARMM simulations\n\nA local energy minimization was performed with no constraints on bonds or angles, which took place in the solvated water box output by CHARMM-GUI and loaded into an OpenMM object. After minimization, 5000 steps of NVT dynamics were run using a Langevin integrator with a time step of 1.0 fs, temperature of 50K and a collision rate of 90.0 ps\u22121. Nonbonded forces were modeled using the particle-mesh Ewald (PME) method with a cutoff distance of 9.0 \u00c5. All other settings remained at default values, except mixed precision was used throughout. After this, a second equilibration was run using 500000 steps of NPT dynamics using a Langevin integrator with a temperature of 300 Kelvin, collision rate of 90 ps\u22121, and timestep of 2.0 fs. A Monte Carlo Barostat was used with pressure of 1 atm and barostat update interval of 50 steps. To minimally relax this structure, 500000 steps of Langevin dynamics were run using a Langevin integrator with a two fs time step, 300 K temperature, and a collision rate of 5 ps\u22121.\n\n##### Production simulation for MTSL labeled CHARMM simulations\n\nThe resulting system, integrator, and state data from the minimization and equilibration were serialized to XML format for simulation on Folding@Home using a simulation core based on OpenMM 6.3. This was done for all eight conditions, where each combination of starting structure, phosphorylation status and Tpx2 status was set up as a RUN. For each of the RUNs, 100 CLONEs with different initial random velocities and random seeds were simulated on Folding@home, where each clone ran for a maximum of 3 \u03bcs (1.5 billion Langevin dynamics steps with all-atom output frames saved every 250,000 steps using mixed precision and a Monte Carlo Barostat with pressure of 1 atm, 300 Kelvin, and barostat frequency of 50). In aggregate, each of the 12 configurations totaled between 75-110\u03bcs per starting configuration.\n\n##### Data analysis\n\nDistances and torsions were computed using the compute_distances and compute_dihedrals functions in MDTraj v 1.8.0. For the WT Amber simulations, the first 100 ns of each CLONE were discarded. The first 250 ns were discarded for the CHARMM MTSL labeled AurA simulations to allow sufficient relaxation following the introduction of spin probes. Distance probability plots were generated using Seaborn v0.8.1 (https://doi.org/10.5281/zenodo.883859) distplot using the norm_hist parameter. The distance and dihedral contour plots were generated using the kdeplot function in Seaborn v0.8.1. All analysis scripts have been made publically available (Hubbard et al., 1994).\n",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "3b12c853-33df-4ae6-a45e-04da37f5c5e2",
+      "submission_id": "c58a05c8-c904-4b2d-82b9-d1d47bf29454",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32766.018](https://doi.org/10.7554/eLife.32766.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A dynamic mechanism for allosteric activation of Aurora kinase A by activation loop phosphorylation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Philip Cole as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Stefan Knapp (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers agree that this is a very detailed analysis of the dynamic features of the activation loop of an important protein kinase, and in particular of the DFG motif. It is more comprehensive than any previous study and also introduces new concepts for thinking about this important conserved feature of every protein kinase. The spectroscopic studies are well done and informative and some of the technologies are new. However, the overall organization of the paper is a weakness and the major concepts were not clearly articulated and in some cases appear contradictory. Most importantly, it was felt that the DFG motif cannot be considered independently of the other concerted and correlated motions that are mediated by the C-Helix and by the Tpx2 motif that docks directly onto the C-Helix. It is felt that key issues were lost in the interpretation of the results and in the discussion. To submit a revised manuscript there would need to be major revisions as outlined below. Given the potential importance of these findings we would be willing to consider a substantially revised manuscript.\n\n1) A major concern has to do with the relative roles of Tpx2 and phosphorylation in vivo. You note that Tpx2 operates at the mitotic spindle, where the kinase is kept unphosphorylated by the action of PP6, whereas at the centrosome activation is by phosphorylation at T288 on the activation loop, implying two distinct activation mechanisms. There was no discussion of what Tpx2 actually does in addition to recruiting a phosphatase. Your studies, as well as earlier literature, indicate that Tpx2 and phosphorylation can act synergistically in vitro, but it is not entirely clear whether phosphorylation alone or another factor that serves a role similar to Tpx2 might operate at the centrosome. A revised manuscript would require a clear mechanistic discussion concerning the role of activation loop phosphorylation and Tpx2 docking onto the C-Helix, which are correlated motions.\n\n2) The reviewers feel that the kinetic data in the last part of the paper are not particularly solid. For example, the stopped-flow experiments lead to the model that the DFG-Out configuration is needed for nucleotide release and could be an intermediate step in the catalytic cycle. However, these experiments were performed in the absence of a peptide substrate. What happens under conditions where peptide is present? Overall, the arguments regarding a possible role of the \"out\" conformation in nucleotide release are not sufficiently substantiated, so we would ask that these portions be dropped from the manuscript unless they are fortified with more extensive measurements with peptide substrate.\n\n3) The activation segment clearly serves to activate kinases, but phosphorylation also provides the docking site for substrates. It is conceivable that binding of a specific substrate will stabilize the DFG-in conformation further and this effect could be dependent on a particular substrate. MYC for instance has been recently described as a substrate that interacts in a fashion that is dependent on the DFG conformation (DFG-out inhibitors displace it). Thus, it is likely that the dynamic properties will change in the presence of specific substrates.\n\n4) Another concern is that ADP and not ATP was used here; this is convenient as ATP will probably lead to additional autophosphorylation during the measurements. However, the \u03b3 phosphate, as well as the second metal ion, forms important interactions with the DFG and will almost certainly influence its dynamic properties, especially if the phosphatase is also nearby. ADP concentrations (50-100 uM) are significantly lower than ATP (1-5 mM) concentrations in cells. While AMP-PNP, a non-hydrolyzable ATP analog may not completely mimic ATP, it would be better that ADP. Why was it not used? These issues should be discussed to address the concern that the proposed model is more generally relevant than just to the narrow conditions studied here.\n\n5) The conclusion that the DFG-In population doesn't shift with phosphorylation is based in part on the nitrile-labeled Q185C data in Figure 1. However, Dodson and Bayless, 2012, showed that the labeled Q185C has very little activity without Tpx2. So can they be sure that these data reflect the native enzyme rather than an artifact of the mutation/labeling? The trFRET-derived population data look more convincing in this regard, since they show that labeling has modest effects on activity. On the other hand, with the DEER data, the broader distribution of the phos+ADP vs. unphos +ADP in Figure 3A does suggest a degree of population shift, and includes some species around the 52 \u00c5 peak found with Tpx2. What happens if the authors try to fit Gaussians around the major peaks? Overall there are a number of inconsistencies in the different sets of experiments. As indicated above introducing the kinetic data in contrast to the steady state data only adds further confusion.\n\n6) More explicit reference to earlier validation of the spectroscopic techniques, including effects (or lack thereof) on enzyme activity by the introduction of cysteines and probes, use of ADP vs. ATP as a cofactor, etc. should be provided. What new techniques and data are introduced here?\n\n7) To state that regulation of Aurora A by phosphorylation and by Tpx2 are normally mutually exclusive is a simplification that is not substantiated by your data. Without more data and information on the time scales and physiological partners of Aurora A under different conditions, this statement seems to be an over simplification.\n\n8) Another concern is with the final statement in the discussion regarding the evolution of kinases. The evolutionary pressure for kinases is probably not to optimize for catalytic efficiency (i.e. substrate binding and product release) but rather to optimize for regulation via a switch mechanism, which is what you are characterizing here.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A dynamic mechanism for allosteric activation of Aurora kinase A by activation loop phosphorylation\" for further consideration at eLife. Your revised article has been favorably evaluated by Philip Cole (Senior Editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe reviewers agree that your revised manuscript is substantially improved, including the addition of new data with AMP-PNP and the removal of the kinetic data, focusing on the dynamic features of the DFG motif and the synergy between the activation loop and the TPX2 docking motif. This is a comprehensive analysis of the dynamic features of these regions that converge at the active site and provides a foundation for others to think about this region. The use of multiple biophysical techniques is a great strength. Although each kinase is regulated in unique ways, all involve the critical coupling of these regions, and these motions are tightly regulated. The results are thus highly relevant to a large set of investigators in the signaling area.\n\nHaving said this, the reviewers feel that interpretation of the results need further revision; these do not require additional experiments:\n\n1) The questions addressed in point 3 in the rebuttal letter highlight the peptide substrates and in fact talk about substrates likely diffusing in and out of the active site. These substrates bind weakly (Km 10 mM) so it is not likely that these are physiologically relevant. Indeed, experiments at high peptide concentration indicate no changes on the activation segment conformation. It is important to emphasize that in cells the substrates are not peptides, but proteins that are often tethered to a signaling complex by motifs that are not at the active site. Such substrates can have docking sites that increase their local concentration; if they are tethered by an additional site they are not limited by diffusion once the kinase is activated, even if it is activated in a very transient way. The authors should comment on this, as the whole system may be seen in a different way if one considers it as a tightly assembled signaling complex. In this scenario it is very likely that there could be an as yet unidentified functional equivalent of Tpx2 in the mitotic spindle.\n\n2) The authors note that MYC binds as a pseudosubstrate to AurA. It has, however, also been shown that type II inhibitors displace MYC, thus there is presumably tight coupling between the activation segment and substrate binding. It would be good to discuss this a bit more.\n\n3) The authors argue that the \"\u2026C-helix is likely also coupled to these elements, but we note that the scale of the conformational changes of the C-helix in AurA is small (as is the case in the entire AGC lineage due to the constraining influence of the B-helix in these proteins)\". This is not evident from crystal structures that show flexibility of the alphaC helix. Admittedly, these structures lack the N-terminus but if the N-terminus constrains alphaC movement this would also pose a problem for the construct used in the spectroscopic data that uses a similar boundary. The authors should attempt to reconcile this issue in the discussion.\n\n4) The synergy between the two regions \u2013 the TPX2 docking site (referred to as the hydrophobic motif in other AGC kinases) and the activation loop \u2013 is a fascinating conclusion. While this synergy is critical in all kinases and highly regulated, it is not easily trackable in other kinases. Aurora A with its trans mechanism for docking to the hydrophobic motif is an exceptional model system to tease apart this synergy but the results are in general likely to be applicable to other kinases. The authors should at least pose the question of whether phosphorylation of the activation loop actually \"drives\" the assembly of the active kinase or \"facilitates\" the assembly of the active kinase.\n\n5) The authors should state clearly that the driving force for evolution of the protein kinases is likely to be regulation and not highest efficiency catalysis.\n\n6) With regard to correlated motions of the C-Helix and the Hydrophobic Spine, we think it is important to include this motif in your analyses as these all seem to be related motions, including the water molecules that you describe. Even though the C-Helix does not substantially move in the AGC kinases, as you point out, it is the alignment of the spine residues that is critical and in the case of the AGC kinases there has been much attention paid to the \"capping\" of the R-spine with the hydrophobic motif \u2013 a process that is highly regulated in unique ways for each AGC kinase. With Aurora A you have a very unique system which allows you to tease apart the allosteric features of the hydrophobic motif as it comes from a different protein. However, the concepts are likely to be similar. It would at least be useful to see one figure that compares the DFG motif and the water molecules, as well as the second Mg ion, with the R-spine in the DFG-In and DFG-out position \u2013 even if it is in the supplement.\n\n7) There is a question that relates to the C185 position, which is where you place one of the labels. This residue clearly is packed against the DFG phenylalanine in the DFG-out position. Cys itself is quite hydrophobic as is your probe. You demonstrate that the properties of the modified protein resemble those of the wt protein. However, do you know what happens if you replace this Cys with an Ala? Is this an activating mutation? It would seem that the unique position of this Cys might contribute to maintaining the DFG out inhibited state. Is this a possibility?\n",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "099c492e-f19f-40cc-8b46-17339ad745d5",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C1",
+      "claim": "Phosphorylation of Aurora A on T288 leads to a ~100 fold increase in catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We set out to explain how phosphorylation of AurA on T288 leads to a ~100 fold increase in catalytic activity (Figure 1\u2014figure supplement 1a) (Zorba et al., 2014; Dodson and Bayliss, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Zorba et al., 2014; Dodson and Bayliss, 2012) and reference to experimental data in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "74e6e8f4-ba6a-4c15-ab82-c74223211272",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C2",
+      "claim": "Tpx2 binding triggers a conformational change from the DFG-Out to the DFG-In state in Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously used an infrared (IR) probe that tracks the DFG motif of AurA to show that Tpx2 binding triggers a conformational change from the DFG-Out to the DFG-In state (Cyphers et al., 2017), resulting in the assembly of the active site and the regulatory spine (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Cyphers et al., 2017) and reference to Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "ae5985d3-008c-498e-9aa5-7319c3c142df",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C3",
+      "claim": "IR spectra of nitrile-labeled phosphorylated Aurora A showed predominantly a single absorbance band centered at 2158 cm\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "IR spectra of nitrile-labeled phosphorylated AurA showed predominantly a single absorbance band centered at 2158 cm\u22121 (Figure 1a, solid black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental IR spectroscopy data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "9a05aa81-c43f-476c-aec4-3729f7a4b2ff",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C4",
+      "claim": "The peak at 2158 cm\u22121 in IR spectra of Aurora A corresponds to the DFG-Out form of the kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously assigned this peak in IR spectra of unphosphorylated AurA to the DFG-Out form of the kinase, in which the nitrile probe is buried in a hydrophobic pocket (Figure 1b, lower panel) (Cyphers et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to prior work (Cyphers et al., 2017) and reference to structural data in Figure 1b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "a04c981c-afc2-4279-abf2-4bdf61933dcd",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C5",
+      "claim": "Addition of saturating amounts of Tpx2 peptide to phosphorylated Aurora A causes the central IR peak at 2158 cm\u22121 to be largely replaced by two new peaks at 2149 cm\u22121 and 2164 cm\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of saturating amounts of Tpx2 peptide (residues 1\u201343 of human Tpx2) to the IR samples caused a dramatic spectral change wherein the central peak at 2158 cm\u22121 is largely replaced by two new peaks at 2149 cm\u22121 and 2164 cm\u22121 (Figure 1a, dashed black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental IR spectroscopy data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5d9a56de-e966-465b-82bd-8e2cb4bbaeb9",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C6",
+      "claim": "The IR spectral changes upon Tpx2 binding are indicative of a shift to the DFG-In state.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes are indicative of a shift to the DFG-In state, in which water molecules coordinated to the DFG motif form hydrogen bonds to the nitrile probe, causing pronounced spectral shifts (Figure 1b, upper right panel) (Cyphers et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to prior work (Cyphers et al., 2017) and reference to structural data in Figure 1b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "262893f0-9957-43da-9246-58da539cfb71",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C7",
+      "claim": "The W277A mutation causes a clear spectral shift of the 2158 cm\u22121 peak in IR spectra of Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "IR spectra of the W277A mutant showed a clear spectral shift of the 2158 cm\u22121 peak (Figure 1c), consistent with this peak arising from the DFG-Out state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental IR spectroscopy data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "2d7a686f-1db7-4be3-990d-58ee6681f237",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C8",
+      "claim": "Phosphorylation of Aurora A on T288 does not substantially change the DFG-In/Out equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "These IR results suggested that phosphorylation alone does not substantially change the DFG-In/Out equilibrium of AurA, unlike Tpx2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the IR spectroscopy results described in the preceding paragraphs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "e832cc65-86fa-421a-8e77-20d4f1b18c4f",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C9",
+      "claim": "Phosphorylated Aurora A exhibits robust catalytic activity in the absence of Tpx2 and is further activated ~4 fold by the addition of Tpx2.",
+      "claim_type": "EXPLICIT",
+      "source": "the labeled phosphorylated sample exhibited robust catalytic activity in the absence of Tpx2, and was further activated ~4 fold by the addition of Tpx2 (Figure 2\u2014figure supplement 1c) (Zorba et al., 2014; Dodson and Bayliss, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental kinase activity data shown in Figure 2\u2014figure supplement 1c and citations to prior work (Zorba et al., 2014; Dodson and Bayliss, 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "286763ed-7ace-4004-8899-c9741397036c",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C10",
+      "claim": "The distance distributions measured by FRET for phosphorylated and unphosphorylated Aurora A in the absence of ligands are strikingly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance distributions measured for the phosphorylated and unphosphorylated kinase in the absence of ligands are strikingly similar (Figure 2b, bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-resolved FRET data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "782d0edb-7ed9-48db-b8f8-5ec3c50fc346",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C11",
+      "claim": "A broad distance distribution centered around ~30 angstroms is observed for apo Aurora A regardless of phosphorylation state, indicating that the activation loop is highly flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, a broad distribution centered around ~30 angstroms is observed for apo AurA, indicating that the activation loop is highly flexible regardless of the phosphorylation state (Figure 2b, black).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-resolved FRET data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "d6aa08de-a0e5-47c6-b71c-225d1c1aa7e1",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C12",
+      "claim": "When phosphorylated and unphosphorylated Aurora A samples are saturated with both Tpx2 peptide and nucleotide, narrow distance distributions shifted to ~54 angstroms are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the phosphorylated and unphosphorylated samples were saturated with both Tpx2 peptide and nucleotide (either ADP or the non-hydrolysable ATP-analog AMPPNP), narrow distributions were observed that were shifted to ~54 angstroms (Figure 2b, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-resolved FRET data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "1f23212e-263c-498f-aaec-ab5dc28d8ffd",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C13",
+      "claim": "The narrow distance distributions at ~54 angstroms indicate adoption of a well-defined structure consistent with the DFG-In state.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates adoption of a well-defined structure consistent with the DFG-In state, in which the segment of the loop containing the labeling site is anchored to the C-terminal lobe of the kinase by flanking \u03b2-sheet interactions (Bayliss et al., 2003) (Figure 2a, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-resolved FRET data and citation to structural data (Bayliss et al., 2003) shown in Figure 2a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "8ccb1cc6-f149-47de-814c-2c3294d3b300",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C14",
+      "claim": "ADP binds to phosphorylated and unphosphorylated Aurora A with similar affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ADP bound to phosphorylated and unphosphorylated AurA with similar affinities (Figure 2c, top left panel), indicating that the interaction of the kinase with nucleotide is not substantially affected by phosphorylation on the activation loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by equilibrium dissociation constant measurements shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "77322189-5c54-4f61-91d3-f94bfe4ebf66",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C15",
+      "claim": "Tpx2 enhances the binding affinity of nucleotides to both unphosphorylated and phosphorylated Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Tpx2, which does trigger a conformational change from the DFG-Out to the DFG-In state in both unphosphorylated and phosphorylated AurA, also enhances the binding affinity of nucleotides in both cases (Figure 2c, compare top panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by equilibrium dissociation constant measurements shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "76563433-6b44-4ffb-8fce-c905826998b3",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C16",
+      "claim": "Phosphorylation substantially enhances the binding of Tpx2 to Aurora A, increasing the affinity by a factor of ~20.",
+      "claim_type": "EXPLICIT",
+      "source": "While phosphorylation does not affect nucleotide binding to apo AurA, we found that it does substantially enhance the binding of Tpx2 to the exterior surface of the kinase, increasing the affinity by a factor of ~20 (Figure 2c, bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by equilibrium dissociation constant measurements shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "7bf732d2-a6a7-4b4b-8ac4-fc6e91e340ae",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C17",
+      "claim": "Once Tpx2 is bound, phosphorylation leads to an enhancement of nucleotide affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, once Tpx2 is bound, phosphorylation does lead to an enhancement of nucleotide affinity (Figure 2c, top right panel, compare red and blue), indicating that allosteric coupling between the phosphorylation site and the active site, missing in apo AurA, is established in the AurA:Tpx2 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by equilibrium dissociation constant measurements shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "9077fecc-d4ac-4073-994f-63aba0b5a223",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C18",
+      "claim": "Molecular dynamics simulations of wild-type Aurora A remained predominantly in the initial DFG-In state.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the DFG conformation revealed that the simulations remained predominantly in their initial DFG-In state (Figure 3\u2014figure supplement 1), suggesting that the simulation time was insufficient to capture the slow conformational change to the DFG-Out state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "08b02d09-2699-4be1-846b-2c0465bac484",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C19",
+      "claim": "Phosphorylated Aurora A is locked into a single conformation with a long L225-S284 distance (42 \u00c5) and short R255-T288 distance (~5 \u00c5) in molecular dynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, the simulations showed that phosphorylated AurA is locked into a single conformation with a long L225-S284 distance (42 \u00c5, cf. 41 \u00c5 in the 1OL5 x-ray structure) and short R255-T288 distance (~5 \u00c5, cf. 5.5 \u00c5 in 1OL5), indicative of a stable active state in which the loop is fully ordered and the phosphothreonine residue forms ion-pairing interactions with R255 and R180 (Figure 3b, bottom left panel, and Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data shown in Figure 3b and Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "488db030-3b55-4aae-9d59-29b0189b1bf7",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C20",
+      "claim": "Unphosphorylated Aurora A without Tpx2 shows two discrete subpopulations in molecular dynamics simulations: one corresponding to the active-like state with a long L225-S284 distance (~43 \u00c5), and another with a much shorter distance (~38 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Although unphosphorylated AurA is highly dynamic in the absence of Tpx2, the activation loop is not in fact disordered in the simulations. Instead, two discrete subpopulations are observed: one subpopulation corresponding to the active-like state with a long L225-S284 distance (~43 \u00c5), and another with a much shorter distance (~38 \u00c5), representing a DFG-In conformation in which the activation loop is not correctly positioned for catalytic function (Figure 3b, lower right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "1717ff2f-ffe0-4625-ba7f-12f523a155b4",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C21",
+      "claim": "In the autoinhibited DFG-In subpopulation, the tip of the activation loop folds into a short helical turn spanning residues P282-R286.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual inspection of the trajectories revealed that in this subpopulation the tip of the activation loop folds into a short helical turn spanning residues P282-R286, with the P282 proline residue serving as the N-terminal capping residue (Kumar and Bansal, 1998) in most of the trajectories (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by molecular dynamics simulation data shown in Figure 3c and citation to prior work (Kumar and Bansal, 1998).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "b13e0c76-c5e7-4b3b-b56d-8b1245651bb5",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C22",
+      "claim": "The R180A mutant of Aurora A possesses 4-fold lower activity in the absence of Tpx2, whereas the activity in the presence of Tpx2 is only modestly affected.",
+      "claim_type": "EXPLICIT",
+      "source": "The R180A mutant possessed 4-fold lower activity in the absence of Tpx2, whereas the activity in the presence of Tpx2 was only modestly affected (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by kinase activity assay data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "b0ebcd01-4cae-4083-9049-cd981df99541",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C23",
+      "claim": "DEER spectra acquired for phosphorylated Aurora A bound to ADP or AMPPNP showed a rapidly decaying and heavily damped signal, consistent with the activation loop adopting multiple conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "DEER spectra acquired for the phosphorylated kinase bound to ADP or AMPPNP showed a rapidly decaying and heavily damped signal, consistent with the activation loop adopting multiple conformations (Figure 4a and Figure 4\u2014figure supplement 2a, blue lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DEER spectroscopy data shown in Figure 4a and Figure 4\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "74194b45-ec53-46bb-aba3-ebe1505496d5",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C24",
+      "claim": "DEER spectra of phosphorylated Aurora A bound to Tpx2 decayed much less rapidly and exhibited pronounced oscillations, indicating increased spin-spin distance and a high degree of structural order.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DEER spectra of phosphorylated AurA bound to Tpx2 decayed much less rapidly, indicating increased spin-spin distance, and exhibited pronounced oscillations, indicating a high degree of structural order (Figure 4a, yellow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DEER spectroscopy data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "c03b3f62-20ee-4020-8570-498cbad07aaa",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C25",
+      "claim": "The distance distribution for phosphorylated Aurora A bound to Tpx2 displayed a single dominant peak at 52 angstroms.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding distance distribution displayed a single dominant peak at 52 angstroms (Figure 4b, yellow), representing a ~5 angstrom longer mean spin-spin distance than seen in the samples lacking Tpx2, consistent with the activation loop now adopting the extended DFG-In conformation (see Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DEER spectroscopy data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "8ab2552a-c2f1-4301-af5b-ce957a3c0f50",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C26",
+      "claim": "DEER experiments show that distances beyond 50 angstroms are more populated in phosphorylated Aurora A bound to ADP compared to unphosphorylated Aurora A bound to ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, close inspection of the DEER spectra revealed subtle differences between the unphosphorylated and phosphorylated samples (Figure 4a inset), and the corresponding distributions indicated that distances beyond 50 angstroms were more populated in the phosphorylated sample (Figure 4b, dark blue shading).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DEER spectroscopy data shown in Figure 4a and Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5dacc403-0b17-4a0b-971e-fc841e030b3c",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C27",
+      "claim": "DEER spectra measured on unphosphorylated and phosphorylated Aurora A bound to SNS-314 showed pronounced oscillations with differing periods, indicating that both samples adopt well-defined structures with different major spin-spin distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, DEER spectra measured on unphosphorylated and phosphorylated AurA bound to SNS-314 showed pronounced oscillations with differing periods, indicating that both samples adopt well-defined structures, but that the major spin-spin distances are different in the two cases (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DEER spectroscopy data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "672efeb7-2f59-49d6-9882-d97f9113021a",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C28",
+      "claim": "The Tikhonov distributions for Aurora A bound to SNS-314 showed sharp peaks at 49 and 53 angstroms for the unphosphorylated and phosphorylated kinase, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Tikhonov distributions showed sharp peaks at 49 and 53 angstroms for the unphosphorylated and phosphorylated kinase, respectively (Figure 4e, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DEER spectroscopy data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "c466f044-5f69-40f3-a717-3b0cb45c45bd",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C29",
+      "claim": "Phosphorylation triggers a switch from an autoinhibited DFG-In substate to an active DFG-In substate in Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that while phosphorylated AurA samples the DFG-Out and DFG-In states to a similar extent as the unphosphorylated kinase, the structure and dynamics of the DFG-In subpopulation are profoundly altered by phosphorylation, leading to catalytic activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of IR, FRET, DEER, and molecular dynamics simulations described throughout the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5ef8fb48-a232-4d8d-b7de-430f0b0d2a82",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C30",
+      "claim": "Aurora A is an essential mitotic protein that controls a variety of cellular processes including mitotic spindle assembly, centrosome maturation, and mitotic entry.",
+      "claim_type": "EXPLICIT",
+      "source": "The serine/threonine kinase Aurora A (AurA) is an essential mitotic protein that controls a variety of cellular processes including mitotic spindle assembly, centrosome maturation, and mitotic entry (Glover et al., 1995; Hannak et al., 2001; Berdnik and Knoblich, 2002; Mac\u016frek et al., 2008; Seki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Glover et al., 1995; Hannak et al., 2001; Berdnik and Knoblich, 2002; Mac\u016frek et al., 2008; Seki et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "4121f970-e7e4-4cc5-9485-01f4a6108e38",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C31",
+      "claim": "At the centrosome, Aurora A must first be activated by autophosphorylation on the activation loop threonine residue T288 in order to carry out its centrosomal functions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the centrosome, AurA must first be activated by autophosphorylation on the activation loop threonine residue T288 in order to carry out its centrosomal functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Aurora A function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "e360a644-bab7-4dc7-974e-c858988e3f50",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C32",
+      "claim": "At the mitotic spindle, Aurora A is activated by binding to the spindle assembly factor Tpx2.",
+      "claim_type": "EXPLICIT",
+      "source": "At the mitotic spindle, AurA is instead activated by binding to the spindle assembly factor Tpx2 (Kufer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Kufer et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "0707cfbb-e533-47e7-916d-b01fb992285f",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C33",
+      "claim": "The spindle-associated pool of Aurora A must be maintained in the unphosphorylated state by the phosphatase PP6 in order for spindle assembly to proceed faithfully.",
+      "claim_type": "EXPLICIT",
+      "source": "This spindle-associated pool of AurA must be maintained in the unphosphorylated state by the phosphatase PP6 in order for spindle assembly to proceed faithfully (Zeng et al., 2010; Toya et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Zeng et al., 2010; Toya et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "2aaeafd5-2459-4834-bdd4-6a70c0c22be2",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C34",
+      "claim": "Tpx2 and phosphorylation can act independently to increase Aurora A kinase activity by up to several hundred-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive in vitro studies have confirmed that Tpx2 and phosphorylation can act independently to increase AurA kinase activity by up to several hundred-fold (Zorba et al., 2014; Dodson and Bayliss, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Zorba et al., 2014; Dodson and Bayliss, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "264a7f46-f7c7-497d-8b28-94dca9288a52",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C35",
+      "claim": "Crystal structures of phosphorylated Aurora A bound to Tpx2 show the T288 phosphothreonine residue forming canonical ionic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since crystal structures of phosphorylated AurA bound to Tpx2 show the T288 phosphothreonine residue forming the canonical ionic interactions thought to stabilize the DFG-In state (Bayliss et al., 2003; Zhao et al., 2008; Clark et al., 2009), it has been assumed that phosphorylation also triggers a transition from the DFG-Out to the DFG-In state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior structural work (Bayliss et al., 2003; Zhao et al., 2008; Clark et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "45dd0d9b-9a1d-4d16-8035-8d2500736fb9",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C36",
+      "claim": "Phosphorylation on a specific site in the activation loop of the kinase domain is the most widely conserved regulatory mechanism in kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation on a specific site in the activation loop of the kinase domain is the most widely conserved regulatory mechanism in kinases (Johnson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Johnson et al., 1996).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "47b744bb-0d09-434e-9007-abb41f4b9d5c",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C37",
+      "claim": "X-ray structures show that ionic interactions between the phosphate moiety and a surrounding pocket of basic residues stabilize the activation loop in a conserved active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray structures show that ionic interactions between the phosphate moiety and a surrounding pocket of basic residues stabilize the activation loop in a conserved active conformation (Knighton et al., 1991; Yamaguchi and Hendrickson, 1996; Steichen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior structural work (Knighton et al., 1991; Yamaguchi and Hendrickson, 1996; Steichen et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "d6f6ed56-4453-49de-9783-1f2ca29d4719",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C38",
+      "claim": "In the active state, a catalytic asp-phe-gly (DFG) motif at the N-terminal end of the activation loop adopts an active 'DFG-In' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this active state, a catalytic asp-phe-gly (DFG) motif at the N-terminal end of the activation loop adopts an active 'DFG-In' conformation, with the aspartate residue of the DFG motif pointing into the active site to coordinate Mg-ATP, and the C-terminal segment of the activation loop positioned to bind peptide substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about kinase structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "7426d5a8-026d-4618-9963-017fc3b8d53d",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C39",
+      "claim": "The DFG-In state is stabilized by the assembly of a network of hydrophobic residues, termed the regulatory spine.",
+      "claim_type": "EXPLICIT",
+      "source": "The DFG-In state is stabilized by the assembly of a network of hydrophobic residues, termed the regulatory spine, that lock together the N-terminal lobe, the \u03b1C-helix, the DFG motif and the C-terminal lobe of the kinase (Kornev et al., 2006; Kornev et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Kornev et al., 2006; Kornev et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "0c0e9cf3-c9b7-4b5f-a515-c8f00f6dd75f",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C40",
+      "claim": "An important autoinhibited state, called 'DFG-Out', involves a flip in the backbone torsion angles of the DFG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "An important autoinhibited state, called 'DFG-Out', involves a flip in the backbone torsion angles of the DFG motif, reorienting the DFG aspartate out of the active site to prevent magnesium coordination, repositioning the activation loop to block peptide binding, and disassembling the regulatory spine (Hubbard et al., 1994; Nagar et al., 2003; Mol et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Hubbard et al., 1994; Nagar et al., 2003; Mol et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "e45f43a2-7b38-4874-a635-08f3a32ddd17",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C41",
+      "claim": "Selective recognition of the DFG-Out state underlies the mechanism of action of many small-molecule kinase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformational change dramatically alters the chemical makeup of the active site, and selective recognition of the DFG-Out state underlies the mechanism of action of many small-molecule kinase inhibitors (Liu and Gray, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Liu and Gray, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "3fdacdff-e643-48e5-8bb2-0ea2f18ba641",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C42",
+      "claim": "Disruption of kinase regulatory mechanisms, leading to constitutive kinase activity, is a major cause of human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of these mechanisms, leading to constitutive kinase activity, is a major cause of human cancer, and small molecules that inhibit specific disease-associated kinases are an increasingly important component of many modern cancer therapies (Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Zhang et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "996b6c6c-55a1-4350-91ad-78b4b13cc7e8",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C43",
+      "claim": "The majority of eukaryotic protein kinases are activated by phosphorylation on the activation loop at a site equivalent to T288 in Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of eukaryotic protein kinases are activated by phosphorylation on the activation loop at a site equivalent to T288 in AurA (Johnson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Johnson et al., 1996).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "9f3f26ef-100e-4544-8a87-32c6c2213f06",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C44",
+      "claim": "Phosphorylation and Tpx2 activate Aurora A through quite different albeit complementary mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it appears that phosphorylation and Tpx2 activate AurA through quite different - albeit complementary - mechanisms, with phosphorylation triggering a structural switch within the DFG-In subpopulation, and Tpx2 instead promoting a DFG flip to increase the population of the DFG-In state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "1dafa7c2-8a19-4fef-8956-58c6ab09c2a5",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C45",
+      "claim": "Phosphorylation triggers a structural switch within the DFG-In subpopulation of Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it appears that phosphorylation and Tpx2 activate AurA through quite different - albeit complementary - mechanisms, with phosphorylation triggering a structural switch within the DFG-In subpopulation, and Tpx2 instead promoting a DFG flip to increase the population of the DFG-In state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "6b26690c-4dde-4a1a-920a-d913583faad0",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C46",
+      "claim": "Tpx2 promotes a DFG flip to increase the population of the DFG-In state in Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it appears that phosphorylation and Tpx2 activate AurA through quite different - albeit complementary - mechanisms, with phosphorylation triggering a structural switch within the DFG-In subpopulation, and Tpx2 instead promoting a DFG flip to increase the population of the DFG-In state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by prior work (Cyphers et al., 2017) and the current study's results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "3d918bc2-ab69-4db5-ad5d-eac4bf859690",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C47",
+      "claim": "The AGC kinases possess a C-terminal hydrophobic motif that docks in cis onto a pocket above the \u03b1C-helix in a manner that closely resembles the interaction of Tpx2 with Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "The AGC kinases possess a C-terminal hydrophobic motif that docks in cis onto a pocket above the \u03b1C-helix in a manner that closely resembles the interaction of Tpx2 with AurA (Fr\u00f6din et al., 2002; Yang et al., 2002b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Fr\u00f6din et al., 2002; Yang et al., 2002b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "38796801-1166-4330-9d63-95364387ecfa",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C48",
+      "claim": "Activation of the AGC kinases by activation loop phosphorylation and hydrophobic motif engagement are tightly coupled events.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the AGC kinases by activation loop phosphorylation and hydrophobic motif engagement are tightly coupled events (Alessi et al., 1996) and are both important for activation (Batkin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Alessi et al., 1996; Batkin et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5c288710-d438-4a15-9a79-c74977a52d84",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C49",
+      "claim": "The contrasting ability of Aurora A to be independently activated by phosphorylation or Tpx2 is dependent upon a unique active-site water network that strengthens the regulatory spine of the kinase relative to that of the AGC kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The contrasting ability of AurA to be independently activated by phosphorylation or Tpx2 is dependent upon a unique active-site water network that strengthens the regulatory spine of the kinase relative to that of the AGC kinases (Cyphers et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Cyphers et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "b1979d61-257a-4932-9e6a-6459c2758022",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C50",
+      "claim": "Mutational inactivation of the PP6 phosphatase in ~10% of melanoma patients leads to accumulation of phosphorylated Aurora A bound to Tpx2 on the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "The doubly-activated form of the kinase is prominent, however, in the tumors of ~10% of melanoma patients, where mutational inactivation of the PP6 phosphatase leads to accumulation of phosphorylated AurA bound to Tpx2 on the mitotic spindle, resulting in chromosome instability and DNA damage that can be partially reversed by AurA inhibitors (Hammond et al., 2013; Hodis et al., 2012; Gold et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Hammond et al., 2013; Hodis et al., 2012; Gold et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "a3a2e873-80fa-4126-bd5a-9aa2a85813ed",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C51",
+      "claim": "Many other protein kinases, including non-receptor and receptor tyrosine kinases and the cyclin-dependent kinases, employ an autoinhibitory DFG-In state for regulatory control.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that many other protein kinases, including non-receptor and receptor tyrosine kinases (Wood et al., 2004; Xu et al., 1997) and the cyclin-dependent kinases (De Bondt et al., 1993), employ an autoinhibitory DFG-In state, as opposed to the DFG-Out state, for regulatory control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Wood et al., 2004; Xu et al., 1997; De Bondt et al., 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "bcfaadde-f068-4cd2-a4d1-781e359d109d",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C52",
+      "claim": "The ~100 fold activation of Aurora A by phosphorylation occurs without a population shift from the DFG-Out to the DFG-In state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use a battery of spectroscopic methods that track different catalytic elements of the kinase domain to show that the ~100 fold activation of the mitotic kinase Aurora A (AurA) by phosphorylation occurs without a population shift from the DFG-Out to the DFG-In state, and that the activation loop of the activated kinase remains highly dynamic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined results of IR, FRET, and DEER experiments described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "a5e3240f-d779-4801-beb5-f150b9a42168",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C53",
+      "claim": "The activation loop of phosphorylated Aurora A remains highly dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use a battery of spectroscopic methods that track different catalytic elements of the kinase domain to show that the ~100 fold activation of the mitotic kinase Aurora A (AurA) by phosphorylation occurs without a population shift from the DFG-Out to the DFG-In state, and that the activation loop of the activated kinase remains highly dynamic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined results of IR, FRET, and DEER experiments described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "2c244b2b-c239-47a3-85af-bda2b5de2b9b",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C54",
+      "claim": "Phosphorylation triggers a switch within the DFG-In subpopulation from an autoinhibited DFG-In substate to an active DFG-In substate, leading to catalytic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, molecular dynamics simulations and electron paramagnetic resonance experiments show that phosphorylation triggers a switch within the DFG-In subpopulation from an autoinhibited DFG-In substate to an active DFG-In substate, leading to catalytic activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by molecular dynamics simulations and EPR (DEER) experiments described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "974d4ad6-aefe-4fd3-86cc-57497eff097e",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C55",
+      "claim": "A recent single-molecule fluorescence study reported that phosphorylated Aurora A dynamically transitions between multiple structural states.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a recent single-molecule fluorescence study also reported that phosphorylated AurA dynamically transitions between multiple structural states (Gilburt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Gilburt et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "a2e37e5f-1f18-4e56-9539-d850e088888e",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C56",
+      "claim": "Phosphorylated Aurora A interacts with Cep-192, Bora, and Ajuba at the centrosome, and these interactions can further regulate Aurora A activity towards specific substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, phosphorylated AurA has been shown to interact with Cep-192 (Joukov et al., 2014), Bora (Mac\u016frek et al., 2008; Seki et al., 2008), and Ajuba (Hirota et al., 2003) at the centrosome, and these interactions can further regulate AurA activity towards specific substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Joukov et al., 2014; Mac\u016frek et al., 2008; Seki et al., 2008; Hirota et al., 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "362094ef-d421-4bde-9615-cacb9c752cc0",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C57",
+      "claim": "The oncogenic transcription factor N-Myc binds to Aurora A through a pseudosubstrate interaction and stabilizes the phosphorylated kinase in the active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context it is noteworthy that the oncogenic transcription factor N-Myc binds to AurA through a pseudosubstrate interaction, and does indeed appear to stabilize the phosphorylated kinase in the active conformation (Richards et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Richards et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "cbf70641-4735-4de8-b094-e8677db7d60b",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C58",
+      "claim": "The Tpx2-bound spindle pool of Aurora A is thought to be predominantly unphosphorylated in normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear whether activation of AurA by both phosphorylation and Tpx2 occurs in normal cells, where the Tpx2-bound spindle pool of AurA is thought to be predominantly unphosphorylated (Zeng et al., 2010; Toya et al., 2011), and the centrosomal pool is not bound to Tpx2 (Kufer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Zeng et al., 2010; Toya et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "4015ce48-1971-42e0-b0ba-7cb93d58791a",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C59",
+      "claim": "The centrosomal pool of Aurora A is not bound to Tpx2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear whether activation of AurA by both phosphorylation and Tpx2 occurs in normal cells, where the Tpx2-bound spindle pool of AurA is thought to be predominantly unphosphorylated (Zeng et al., 2010; Toya et al., 2011), and the centrosomal pool is not bound to Tpx2 (Kufer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Kufer et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "2e7b2c59-d75f-4606-bba3-edff8c981ac1",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C60",
+      "claim": "The formation of short helices in the activation loop is a common feature of the inactive states of other protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this conformation has not been observed in X-ray structures of AurA, the formation of short helices in the activation loop is a common feature of the inactive states of other protein kinases (Sicheri et al., 1997; Wood et al., 2004; Lee et al., 2010; De Bondt et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Sicheri et al., 1997; Wood et al., 2004; Lee et al., 2010; De Bondt et al., 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "fc5a53d8-11e1-4077-b6bc-bd9c2bf0e712",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C61",
+      "claim": "SNS-314 preferentially binds to the DFG-In state of Aurora A.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we used the ATP-competitive AurA inhibitor SNS-314, which preferentially binds to the DFG-In state of AurA (Oslob et al., 2008) (Figure 4d), to induce a homogeneous population of DFG-In kinase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to prior work (Oslob et al., 2008) and reference to Figure 4d.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "612a2979-4a1d-435b-98cf-ecd33199a435",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C62",
+      "claim": "The 4-angstrom increase in spin-spin distance observed in DEER experiments with L225/S284 labeling sites is similar to the difference in L225-S284 C\u03b1 distances predicted by MD simulations for the autoinhibited and active DFG-In substates.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 4-angstrom increase in spin-spin distance observed in the DEER experiments performed with the L225/S284 labeling sites (Figure 4e inset) is similar to the difference in the L225-S284 C\u03b1 distances predicted by the MD simulations for the autoinhibited and active DFG-In substates (Figure 3b, bottom right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of DEER data (Figure 4e) and MD simulation data (Figure 3b).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "9e345696-b538-4746-8351-497fdcca15e2",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C63",
+      "claim": "The stabilizing ionic interactions between the phosphothreonine and the arginine residues are offset by an energetic penalty associated with refolding the activation loop into the active configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that this does not substantially change the DFG equilibrium suggests that the stabilizing ionic interactions between the phosphothreonine and the arginine residues (see Figure 3a) are offset by an energetic penalty associated with refolding the activation loop into the active configuration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that phosphorylation does not shift the DFG equilibrium despite forming stabilizing interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "47355410-5e41-4dd6-ac5b-5f617ecaebcf",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C64",
+      "claim": "By unfolding the activation loop from the autoinhibited DFG-In state, phosphorylation promotes the formation of the Tpx2-interaction surface by the N-terminal segment of the activation loop, resulting in dramatically enhanced binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "By unfolding the activation loop from the autoinhibited DFG-In state, phosphorylation promotes the formation of the Tpx2-interaction surface by the N-terminal segment of the activation loop, resulting in dramatically enhanced binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results showing synergy between phosphorylation and Tpx2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "95ee1799-db2d-4284-a00b-ebdf385fa70e",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C65",
+      "claim": "By binding tightly to the Tpx2-interaction surface, Tpx2 compensates for the energetic cost of reconfiguring the activation loop, allowing the effects of phosphorylation to be manifested as a further stabilization of the active DFG-In state.",
+      "claim_type": "EXPLICIT",
+      "source": "By binding tightly to this surface, Tpx2 in turn compensates for the energetic cost of reconfiguring the activation loop, allowing the effects of phosphorylation to be manifested as a further stabilization of the active DFG-In state, as we observed in our fluorescence experiments in terms of an additional conformational shift and enhanced nucleotide binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results showing synergy between phosphorylation and Tpx2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "39479c3c-e066-447b-8809-3e54afc5645b",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C66",
+      "claim": "Phosphorylation can drive catalytic activation of a protein kinase without restraining the protein in the DFG-In state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that phosphorylation can drive catalytic activation of a protein kinase without restraining the protein in the DFG-In state, providing a contrasting and highly dynamic view of an activated kinase in which major conformational changes of catalytic elements may occur continuously during the catalytic cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined results of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "9f56e492-0a32-4e58-b29f-f2bc10bb35c1",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C67",
+      "claim": "Phosphorylation is presumably coupled to the \u03b1C-helix through the R180 residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the R180 residue on the \u03b1C-helix directly recognizes the pT288 phosphothreonine residue, and that the R180A mutation interferes with activity of the phosphorylated enzyme, phosphorylation is presumably also coupled to the \u03b1C-helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the R180A mutation data and structural knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "76d4cda3-c715-4e0c-8c7d-c52dd42f98a9",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C68",
+      "claim": "Phosphorylation can be thought of as tuning the free energy surface for the DFG-In state\u2014favoring the active substate over the autoinhibited substate\u2014as opposed to changing the relative free energies of the DFG-In and DFG-Out states.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, phosphorylation can be thought of as tuning the free energy surface for the DFG-In state - favoring the active substate over the autoinhibited substate - as opposed to changing the relative free energies of the DFG-In and DFG-Out states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5fe15cae-1e55-422e-ad6b-1b10057ce505",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C69",
+      "claim": "The highly dynamic nature of Aurora A activated only by phosphorylation may be a unique property of the Aurora kinases that reflects the loss of the hydrophobic motif in this lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the highly dynamic nature of AurA activated only by phosphorylation may be a unique property of the Aurora kinases that reflects the loss of the hydrophobic motif in this lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on comparison with AGC kinases.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "2b7009a6-835b-4d24-b296-0cdbc2e2cbdb",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C70",
+      "claim": "The motions of phosphorylated Aurora A may facilitate further regulation by additional cellular factors, allowing for graded levels of catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These motions may facilitate further regulation of AurA by additional cellular factors, allowing for graded levels of catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a functional role for the observed dynamics.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "96e749e6-0fec-4155-ad5d-591f8470d93e",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C71",
+      "claim": "In the context of higher-order signaling complexes at the centrosome, substrates may be presented at sufficiently high local concentration to further stabilize the activation loop in the active conformation and promote phosphoryl transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a model peptide substrate did not modulate AurA dynamics in our experiments, in the context of the higher-order signaling complexes found at the centrosome substrates may be presented at sufficiently high local concentration to further stabilize the activation loop in the active conformation and promote phosphoryl transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a mechanism for substrate effects in cellular context.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "8eb5a09e-3d33-4e74-9edb-9a94317379f0",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C72",
+      "claim": "Protein kinases evolve under strong selective pressure to optimize their responsiveness to regulatory inputs, and not for maximal catalytic efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the overarching view that protein kinases evolve under strong selective pressure to optimize their responsiveness to regulatory inputs, and not for maximal catalytic efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about kinase evolution and regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "b7df2c7f-ce1b-40a2-93a1-2bd99a160ec5",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C73",
+      "claim": "The distinct conformational dynamics of doubly-activated Aurora A might provide opportunities for the development of improved inhibitors that selectively target this form of the kinase in melanoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The distinct conformational dynamics of doubly-activated AurA might provide opportunities for the development of improved inhibitors that selectively target this form of the kinase in melanoma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a potential therapeutic application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "d9786903-3361-4e15-9983-0abe8329c681",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "claim_id": "C74",
+      "claim": "A major remaining question is whether the substantial DFG-Out subpopulation of phosphorylated Aurora A performs an important biological function.",
+      "claim_type": "EXPLICIT",
+      "source": "A major remaining question is whether the substantial DFG-Out subpopulation of phosphorylated AurA performs an important biological function, and whether this is a unique feature of AurA itself, or a more general property of activated protein kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim identifies an open question arising from the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "892c5d3c-b1dd-488a-bc42-595f6beae086",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IR spectroscopy experiments show that phosphorylation of Aurora A on T288 does not substantially change the DFG-In/Out equilibrium. Phosphorylated Aurora A predominantly shows a 2158 cm\u207b\u00b9 peak corresponding to the DFG-Out state, similar to unphosphorylated Aurora A. Addition of Tpx2 causes a dramatic shift to the DFG-In state (peaks at 2149 and 2164 cm\u207b\u00b9), but phosphorylation alone does not produce this shift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C8 provide converging IR spectroscopy evidence that phosphorylation does not shift the DFG equilibrium. The W277A mutation control (C7) validates the peak assignment, and temperature-dependent experiments with ADP show similar behavior for phosphorylated and unphosphorylated Aurora A. This is a key finding that challenges the prevailing model of kinase activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "e4c4576b-a9a6-430c-b954-c8c72a78df91",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Time-resolved FRET experiments demonstrate that phosphorylated and unphosphorylated Aurora A have strikingly similar distance distributions in the absence of ligands (~30 \u00c5, broad), indicating high flexibility of the activation loop regardless of phosphorylation state. Both forms adopt a narrow, well-defined structure at ~54 \u00c5 when saturated with Tpx2 and nucleotide, consistent with the DFG-In state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 provide orthogonal FRET-based evidence supporting the IR results. The similar distance distributions for phosphorylated and unphosphorylated Aurora A in the absence of ligands (C10-C11) confirm that phosphorylation does not substantially alter the conformational ensemble. The shift to ~54 \u00c5 with Tpx2+nucleotide (C12-C13) is consistent with the DFG-In state and validates the experimental approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "265a7d6b-be6d-4c97-b93a-282bec156807",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phosphorylation and Tpx2 exhibit synergistic effects on Aurora A. Phosphorylation does not affect nucleotide binding to apo Aurora A (similar KD for ADP), but enhances Tpx2 binding affinity ~20-fold. Once Tpx2 is bound, phosphorylation enhances nucleotide affinity, establishing allosteric coupling between the phosphorylation site and active site that is absent in apo Aurora A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 demonstrate important synergistic effects through equilibrium binding measurements. The lack of effect of phosphorylation on nucleotide binding to apo Aurora A (C14) is consistent with the lack of DFG shift, while the enhanced Tpx2 binding (C16) and subsequent nucleotide affinity enhancement (C17) reveal mechanistic coupling. The data are internally consistent and well-supported by Figure 2c.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5752bbaf-2de9-4331-ac91-322a2ce7de7e",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations reveal that phosphorylated Aurora A is locked into a single active DFG-In conformation (L225-S284 distance ~42 \u00c5, R255-T288 distance ~5 \u00c5), while unphosphorylated Aurora A without Tpx2 samples two discrete DFG-In subpopulations: an active-like state (~43 \u00c5) and an autoinhibited state (~38 \u00c5) where the activation loop tip folds into a short helical turn (residues P282-R286).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 provide computational evidence for distinct DFG-In substates. The simulations remained in the DFG-In state (C18), allowing characterization of substates. The identification of a helical autoinhibited substate (C21) is novel and mechanistically important. However, the simulations did not capture DFG-Out to DFG-In transitions, limiting their ability to assess the DFG equilibrium directly. The findings are consistent with experimental data but represent predictions requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "1539d481-bb71-4595-aa2d-fed255c8c79c",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The R180A mutation in Aurora A reduces activity 4-fold in the absence of Tpx2, while activity in the presence of Tpx2 is only modestly affected, supporting the role of R180 in recognizing the phosphothreonine residue in the active state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 provides experimental validation of the MD simulation predictions regarding the importance of R180-pT288 interactions. The selective effect in the absence of Tpx2 is consistent with the proposed mechanism. However, only one mutant was tested, and the modest 4-fold effect suggests R180 is not the sole determinant of activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "771b9f9c-c8e6-4c0a-89f9-18a771825527",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DEER spectroscopy shows that phosphorylated Aurora A bound to ADP or AMPPNP exhibits a broad distance distribution consistent with multiple conformations, while binding to Tpx2 produces a narrow distribution with a dominant peak at 52 \u00c5. Subtle differences indicate that distances beyond 50 \u00c5 are more populated in phosphorylated versus unphosphorylated Aurora A bound to ADP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 provide high-resolution EPR evidence supporting the dynamic nature of phosphorylated Aurora A. The broad distributions (C23) are consistent with sampling of multiple states, while Tpx2 binding produces a well-ordered structure (C24-C25). The subtle differences between phosphorylated and unphosphorylated samples (C26) suggest phosphorylation does alter the DFG-In subpopulation, though the effect is modest without Tpx2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "9496ec5b-549e-4bed-9bf3-0b5c7db7db42",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DEER experiments with the DFG-In-selective inhibitor SNS-314 reveal distinct structures for unphosphorylated (49 \u00c5) and phosphorylated (53 \u00c5) Aurora A, demonstrating that phosphorylation induces a 4 \u00c5 structural change within the DFG-In state. This distance change is similar to the difference predicted by MD simulations between autoinhibited and active DFG-In substates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28, C61-C62 provide critical experimental evidence for the central hypothesis. By using SNS-314 to isolate the DFG-In state (C61), the authors reveal a clear phosphorylation-dependent structural change (C27-C28). The agreement with MD predictions (C62) strengthens both approaches. This is strong evidence for the proposed mechanism of activation within the DFG-In state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "7979b423-fead-4139-8752-283568aad0a5",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Phosphorylation triggers a switch from an autoinhibited DFG-In substate to an active DFG-In substate in Aurora A, leading to ~100-fold catalytic activation without a population shift from DFG-Out to DFG-In. The activation loop of phosphorylated Aurora A remains highly dynamic, continuously sampling both DFG-In and DFG-Out states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C45, C52-C54 represent the central conclusions of the study, integrating evidence from IR, FRET, DEER, and MD simulations. The convergence of multiple orthogonal techniques strongly supports this novel mechanism. The ~100-fold activation (C52) is well-documented in prior work (C1), and the current study provides a mechanistic explanation. This challenges the prevailing model of kinase activation and is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "99697fd9-7c8d-41f1-81c4-531fc5f7214e",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The stabilizing ionic interactions between phosphothreonine and arginine residues are offset by an energetic penalty for refolding the activation loop, explaining why phosphorylation does not shift the DFG equilibrium. Phosphorylation tunes the free energy surface within the DFG-In state, favoring the active over autoinhibited substate. Synergy with Tpx2 arises because phosphorylation promotes formation of the Tpx2-interaction surface, while Tpx2 binding compensates for the energetic cost of loop reconfiguration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C68 provide a thermodynamic framework explaining the experimental observations. The model is internally consistent and accounts for the synergy between phosphorylation and Tpx2 (C16-C17). However, these are inferences from the data rather than direct measurements of free energies. The model is plausible and well-reasoned but would benefit from additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "66b68ef3-24a6-470d-8050-d0f148279d81",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Phosphorylation and Tpx2 activate Aurora A through different but complementary mechanisms: phosphorylation triggers a structural switch within the DFG-In subpopulation, while Tpx2 promotes a DFG flip to increase the population of the DFG-In state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C46 summarize the distinct mechanisms of activation. The evidence for Tpx2-mediated DFG flip (C46) comes from prior work (Cyphers et al., 2017) and is supported by current IR and FRET data (C2, C5-C6). The phosphorylation mechanism (C44) is the novel contribution of this study. The complementary nature is well-supported by the synergy data (C16-C17).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "37612df7-648e-490a-801d-6296ddc3071b",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Phosphorylation of Aurora A on T288 leads to ~100-fold increase in catalytic activity, and phosphorylated Aurora A exhibits robust activity in the absence of Tpx2 with further ~4-fold activation upon Tpx2 addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C9 establish the functional context for the study. The ~100-fold activation by phosphorylation (C1) is supported by prior work and Figure 1\u2014figure supplement 1a. The ~4-fold additional activation by Tpx2 (C9) is consistent with prior studies and validates the labeled constructs used in this study. These are well-established findings that motivate the mechanistic investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "82302e52-8ff8-4bb1-87e0-05d0246bba4c",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Tpx2 binding triggers a conformational change from the DFG-Out to the DFG-In state in Aurora A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C2 summarizes prior work (Cyphers et al., 2017) that is confirmed and extended in the current study. The IR spectroscopy data (C5-C6) and FRET data (C12-C13) in the current manuscript support this mechanism. This provides important context for understanding the distinct mechanism of phosphorylation-mediated activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "72b77eaa-90e7-49b6-a0df-b321d64da0ec",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Phosphorylation can drive catalytic activation of a protein kinase without restraining the protein in the DFG-In state, providing a dynamic view of an activated kinase where major conformational changes occur continuously during the catalytic cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 represents a major conceptual conclusion that challenges the prevailing static view of kinase activation. This is well-supported by the combined spectroscopic and computational evidence showing that phosphorylated Aurora A samples both DFG-In and DFG-Out states while maintaining high activity. This has broad implications for understanding kinase regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context of Aurora A function, the general mechanisms of kinase regulation by phosphorylation and DFG conformational changes, and the prevailing model that phosphorylation stabilizes the DFG-In state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C43 provide essential background from prior literature. These are well-established facts supported by appropriate citations. They establish the biological importance of Aurora A, the prevailing model of kinase activation by phosphorylation, and the DFG-In/Out conformational switch. These claims provide the foundation for understanding why the current findings are significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "5a270c80-30f0-40a5-9215-c7ee1c5d4573",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The AGC kinases possess a C-terminal hydrophobic motif that resembles Tpx2 interaction with Aurora A. In AGC kinases, activation loop phosphorylation and hydrophobic motif engagement are tightly coupled. Aurora A's ability to be independently activated by phosphorylation or Tpx2 depends on a unique active-site water network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 provide comparative context with AGC kinases, supported by appropriate citations. This comparison helps explain why Aurora A exhibits distinct activation mechanisms. The unique water network (C49) is from prior work (Cyphers et al., 2017) and provides a structural basis for the independent activation mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "fb784c08-480a-4cd0-b8dc-8d1606d46f16",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In ~10% of melanoma patients, PP6 phosphatase inactivation leads to accumulation of doubly-activated (phosphorylated + Tpx2-bound) Aurora A on the mitotic spindle. In normal cells, the Tpx2-bound spindle pool is predominantly unphosphorylated and the centrosomal pool is not bound to Tpx2. The distinct conformational dynamics of doubly-activated Aurora A might provide opportunities for selective inhibitor development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C58-C59, C73 discuss the biological and therapeutic context. The melanoma connection (C50) is supported by appropriate citations. The spatial separation of activation mechanisms in normal cells (C58-C59) is from prior work. The therapeutic speculation (C73) is reasonable but remains to be tested. These claims provide important biological context but are not central findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "bfdfec04-b607-49d8-833c-2f16c66ae7f0",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Many other protein kinases employ an autoinhibitory DFG-In state for regulatory control, and formation of short helices in the activation loop is a common feature of inactive states of other protein kinases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C60 provide comparative context showing that autoinhibitory DFG-In states and helical activation loop conformations are observed in other kinases. This is supported by appropriate citations and suggests the findings may have broader implications beyond Aurora A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    },
+    {
+      "id": "7aa7d005-ebe4-4848-9182-6358ee537193",
+      "content_id": "0dad7df9-1e0f-47ca-8d29-760b3d022f70",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Discussion claims addressing prior single-molecule studies, potential regulation by additional cellular factors, evolutionary considerations, and open questions about the functional role of the DFG-Out subpopulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C57, C67, C69-C72, C74 are primarily speculative or discuss prior work. C55 cites a single-molecule study consistent with the current findings. C56-C57 discuss potential regulation by other factors. C67 infers coupling to the \u03b1C-helix. C69-C72 are speculative about evolutionary and functional implications. C74 identifies an important open question. These are reasonable discussions but lack direct experimental support in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:27:59.197309Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ae5985d3-008c-498e-9aa5-7319c3c142df",
+      "result_id": "892c5d3c-b1dd-488a-bc42-595f6beae086"
+    },
+    {
+      "claim_id": "9a05aa81-c43f-476c-aec4-3729f7a4b2ff",
+      "result_id": "892c5d3c-b1dd-488a-bc42-595f6beae086"
+    },
+    {
+      "claim_id": "a04c981c-afc2-4279-abf2-4bdf61933dcd",
+      "result_id": "892c5d3c-b1dd-488a-bc42-595f6beae086"
+    },
+    {
+      "claim_id": "5d9a56de-e966-465b-82bd-8e2cb4bbaeb9",
+      "result_id": "892c5d3c-b1dd-488a-bc42-595f6beae086"
+    },
+    {
+      "claim_id": "262893f0-9957-43da-9246-58da539cfb71",
+      "result_id": "892c5d3c-b1dd-488a-bc42-595f6beae086"
+    },
+    {
+      "claim_id": "2d7a686f-1db7-4be3-990d-58ee6681f237",
+      "result_id": "892c5d3c-b1dd-488a-bc42-595f6beae086"
+    },
+    {
+      "claim_id": "286763ed-7ace-4004-8899-c9741397036c",
+      "result_id": "e4c4576b-a9a6-430c-b954-c8c72a78df91"
+    },
+    {
+      "claim_id": "782d0edb-7ed9-48db-b8f8-5ec3c50fc346",
+      "result_id": "e4c4576b-a9a6-430c-b954-c8c72a78df91"
+    },
+    {
+      "claim_id": "d6aa08de-a0e5-47c6-b71c-225d1c1aa7e1",
+      "result_id": "e4c4576b-a9a6-430c-b954-c8c72a78df91"
+    },
+    {
+      "claim_id": "1f23212e-263c-498f-aaec-ab5dc28d8ffd",
+      "result_id": "e4c4576b-a9a6-430c-b954-c8c72a78df91"
+    },
+    {
+      "claim_id": "8ccb1cc6-f149-47de-814c-2c3294d3b300",
+      "result_id": "265a7d6b-be6d-4c97-b93a-282bec156807"
+    },
+    {
+      "claim_id": "77322189-5c54-4f61-91d3-f94bfe4ebf66",
+      "result_id": "265a7d6b-be6d-4c97-b93a-282bec156807"
+    },
+    {
+      "claim_id": "76563433-6b44-4ffb-8fce-c905826998b3",
+      "result_id": "265a7d6b-be6d-4c97-b93a-282bec156807"
+    },
+    {
+      "claim_id": "7bf732d2-a6a7-4b4b-8ac4-fc6e91e340ae",
+      "result_id": "265a7d6b-be6d-4c97-b93a-282bec156807"
+    },
+    {
+      "claim_id": "9077fecc-d4ac-4073-994f-63aba0b5a223",
+      "result_id": "5752bbaf-2de9-4331-ac91-322a2ce7de7e"
+    },
+    {
+      "claim_id": "08b02d09-2699-4be1-846b-2c0465bac484",
+      "result_id": "5752bbaf-2de9-4331-ac91-322a2ce7de7e"
+    },
+    {
+      "claim_id": "488db030-3b55-4aae-9d59-29b0189b1bf7",
+      "result_id": "5752bbaf-2de9-4331-ac91-322a2ce7de7e"
+    },
+    {
+      "claim_id": "1717ff2f-ffe0-4625-ba7f-12f523a155b4",
+      "result_id": "5752bbaf-2de9-4331-ac91-322a2ce7de7e"
+    },
+    {
+      "claim_id": "b13e0c76-c5e7-4b3b-b56d-8b1245651bb5",
+      "result_id": "1539d481-bb71-4595-aa2d-fed255c8c79c"
+    },
+    {
+      "claim_id": "b0ebcd01-4cae-4083-9049-cd981df99541",
+      "result_id": "771b9f9c-c8e6-4c0a-89f9-18a771825527"
+    },
+    {
+      "claim_id": "74194b45-ec53-46bb-aba3-ebe1505496d5",
+      "result_id": "771b9f9c-c8e6-4c0a-89f9-18a771825527"
+    },
+    {
+      "claim_id": "c03b3f62-20ee-4020-8570-498cbad07aaa",
+      "result_id": "771b9f9c-c8e6-4c0a-89f9-18a771825527"
+    },
+    {
+      "claim_id": "8ab2552a-c2f1-4301-af5b-ce957a3c0f50",
+      "result_id": "771b9f9c-c8e6-4c0a-89f9-18a771825527"
+    },
+    {
+      "claim_id": "5dacc403-0b17-4a0b-971e-fc841e030b3c",
+      "result_id": "9496ec5b-549e-4bed-9bf3-0b5c7db7db42"
+    },
+    {
+      "claim_id": "672efeb7-2f59-49d6-9882-d97f9113021a",
+      "result_id": "9496ec5b-549e-4bed-9bf3-0b5c7db7db42"
+    },
+    {
+      "claim_id": "fc5a53d8-11e1-4077-b6bc-bd9c2bf0e712",
+      "result_id": "9496ec5b-549e-4bed-9bf3-0b5c7db7db42"
+    },
+    {
+      "claim_id": "612a2979-4a1d-435b-98cf-ecd33199a435",
+      "result_id": "9496ec5b-549e-4bed-9bf3-0b5c7db7db42"
+    },
+    {
+      "claim_id": "c466f044-5f69-40f3-a717-3b0cb45c45bd",
+      "result_id": "7979b423-fead-4139-8752-283568aad0a5"
+    },
+    {
+      "claim_id": "1dafa7c2-8a19-4fef-8956-58c6ab09c2a5",
+      "result_id": "7979b423-fead-4139-8752-283568aad0a5"
+    },
+    {
+      "claim_id": "bcfaadde-f068-4cd2-a4d1-781e359d109d",
+      "result_id": "7979b423-fead-4139-8752-283568aad0a5"
+    },
+    {
+      "claim_id": "a5e3240f-d779-4801-beb5-f150b9a42168",
+      "result_id": "7979b423-fead-4139-8752-283568aad0a5"
+    },
+    {
+      "claim_id": "2c244b2b-c239-47a3-85af-bda2b5de2b9b",
+      "result_id": "7979b423-fead-4139-8752-283568aad0a5"
+    },
+    {
+      "claim_id": "9e345696-b538-4746-8351-497fdcca15e2",
+      "result_id": "99697fd9-7c8d-41f1-81c4-531fc5f7214e"
+    },
+    {
+      "claim_id": "47355410-5e41-4dd6-ac5b-5f617ecaebcf",
+      "result_id": "99697fd9-7c8d-41f1-81c4-531fc5f7214e"
+    },
+    {
+      "claim_id": "95ee1799-db2d-4284-a00b-ebdf385fa70e",
+      "result_id": "99697fd9-7c8d-41f1-81c4-531fc5f7214e"
+    },
+    {
+      "claim_id": "76d4cda3-c715-4e0c-8c7d-c52dd42f98a9",
+      "result_id": "99697fd9-7c8d-41f1-81c4-531fc5f7214e"
+    },
+    {
+      "claim_id": "9f3f26ef-100e-4544-8a87-32c6c2213f06",
+      "result_id": "66b68ef3-24a6-470d-8050-d0f148279d81"
+    },
+    {
+      "claim_id": "6b26690c-4dde-4a1a-920a-d913583faad0",
+      "result_id": "66b68ef3-24a6-470d-8050-d0f148279d81"
+    },
+    {
+      "claim_id": "099c492e-f19f-40cc-8b46-17339ad745d5",
+      "result_id": "37612df7-648e-490a-801d-6296ddc3071b"
+    },
+    {
+      "claim_id": "e832cc65-86fa-421a-8e77-20d4f1b18c4f",
+      "result_id": "37612df7-648e-490a-801d-6296ddc3071b"
+    },
+    {
+      "claim_id": "74e6e8f4-ba6a-4c15-ab82-c74223211272",
+      "result_id": "82302e52-8ff8-4bb1-87e0-05d0246bba4c"
+    },
+    {
+      "claim_id": "39479c3c-e066-447b-8809-3e54afc5645b",
+      "result_id": "72b77eaa-90e7-49b6-a0df-b321d64da0ec"
+    },
+    {
+      "claim_id": "5ef8fb48-a232-4d8d-b7de-430f0b0d2a82",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "4121f970-e7e4-4cc5-9485-01f4a6108e38",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "e360a644-bab7-4dc7-974e-c858988e3f50",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "0707cfbb-e533-47e7-916d-b01fb992285f",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "2aaeafd5-2459-4834-bdd4-6a70c0c22be2",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "264a7f46-f7c7-497d-8b28-94dca9288a52",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "45dd0d9b-9a1d-4d16-8035-8d2500736fb9",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "47b744bb-0d09-434e-9007-abb41f4b9d5c",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "d6f6ed56-4453-49de-9783-1f2ca29d4719",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "7426d5a8-026d-4618-9963-017fc3b8d53d",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "0c0e9cf3-c9b7-4b5f-a515-c8f00f6dd75f",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "e45f43a2-7b38-4874-a635-08f3a32ddd17",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "3fdacdff-e643-48e5-8bb2-0ea2f18ba641",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "996b6c6c-55a1-4350-91ad-78b4b13cc7e8",
+      "result_id": "5b53843c-a3ae-4846-9c29-e8c2d1f7e6f2"
+    },
+    {
+      "claim_id": "3d918bc2-ab69-4db5-ad5d-eac4bf859690",
+      "result_id": "5a270c80-30f0-40a5-9215-c7ee1c5d4573"
+    },
+    {
+      "claim_id": "38796801-1166-4330-9d63-95364387ecfa",
+      "result_id": "5a270c80-30f0-40a5-9215-c7ee1c5d4573"
+    },
+    {
+      "claim_id": "5c288710-d438-4a15-9a79-c74977a52d84",
+      "result_id": "5a270c80-30f0-40a5-9215-c7ee1c5d4573"
+    },
+    {
+      "claim_id": "b1979d61-257a-4932-9e6a-6459c2758022",
+      "result_id": "fb784c08-480a-4cd0-b8dc-8d1606d46f16"
+    },
+    {
+      "claim_id": "cbf70641-4735-4de8-b094-e8677db7d60b",
+      "result_id": "fb784c08-480a-4cd0-b8dc-8d1606d46f16"
+    },
+    {
+      "claim_id": "4015ce48-1971-42e0-b0ba-7cb93d58791a",
+      "result_id": "fb784c08-480a-4cd0-b8dc-8d1606d46f16"
+    },
+    {
+      "claim_id": "b7df2c7f-ce1b-40a2-93a1-2bd99a160ec5",
+      "result_id": "fb784c08-480a-4cd0-b8dc-8d1606d46f16"
+    },
+    {
+      "claim_id": "a3a2e873-80fa-4126-bd5a-9aa2a85813ed",
+      "result_id": "bfdfec04-b607-49d8-833c-2f16c66ae7f0"
+    },
+    {
+      "claim_id": "2e7b2c59-d75f-4606-bba3-edff8c981ac1",
+      "result_id": "bfdfec04-b607-49d8-833c-2f16c66ae7f0"
+    },
+    {
+      "claim_id": "974d4ad6-aefe-4fd3-86cc-57497eff097e",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "a2e37e5f-1f18-4e56-9539-d850e088888e",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "362094ef-d421-4bde-9615-cacb9c752cc0",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "9f56e492-0a32-4e58-b29f-f2bc10bb35c1",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "5fe15cae-1e55-422e-ad6b-1b10057ce505",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "2b7009a6-835b-4d24-b296-0cdbc2e2cbdb",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "96e749e6-0fec-4155-ad5d-591f8470d93e",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "8eb5a09e-3d33-4e74-9edb-9a94317379f0",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    },
+    {
+      "claim_id": "d9786903-3361-4e15-9983-0abe8329c681",
+      "result_id": "7aa7d005-ebe4-4848-9182-6358ee537193"
+    }
+  ],
+  "comparisons": []
+}

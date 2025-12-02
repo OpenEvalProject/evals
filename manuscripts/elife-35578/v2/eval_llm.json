@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Two crystallographic structures of MtbFtsZ protofilaments were solved, revealing two distinct lateral interfaces (lateral interface 1 and lateral interface 2) mediating antiparallel protofilament assembly. The new structure was determined at 2.7 \u00c5 resolution with Rfree = 27.3%, showing lateral interface 2 involves residues on helices H3, H4, and H5 burying ~870 \u00c5\u00b2, while the previously identified lateral interface 1 involves residues burying ~210 \u00c5\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic data (C17, C72, C73) provide solid structural evidence for two distinct lateral interfaces (C19, C20, C21). The resolution and refinement statistics are acceptable for a 2.7 \u00c5 structure, though the Rfree of 27.3% is somewhat high. The structural details including buried surface areas and specific residues involved are clearly documented with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "Both MtbFtsZ and EcFtsZ form protofilament bundles in vitro in the presence of DEAE-dextran, suggesting lateral interfaces are conserved across species. The charged residues at both lateral interfaces are generally conserved, and the interactions are weak and electrostatic in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Electron microscopy data (C15, Figure 1A-B) directly demonstrate bundle formation for both species. Sequence conservation analysis (C22, Figure 1\u2014figure supplement 1) supports functional relevance. The inference about weak interactions (C25) is supported by structural observations and cited prior work, though direct quantitative measurements of interaction strength are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31"
+    ],
+    "result": "In vivo photocrosslinking experiments confirm that both lateral interfaces mediate FtsZ interactions in living cells. Rationally designed pBpa variants at lateral interface residues (R78, N79, D82, R85, R89, K155, S231) formed crosslinked dimers upon UV irradiation, and unbiased random screening independently identified residues R78, D82, and R85 at lateral interface 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The photocrosslinking data (C26, Figure 2B) provide direct evidence for lateral interactions in vivo. The convergence of rational design and random screening (C28, C31, Figure 3B) strengthens the conclusion. Controls using AviTagged FtsZ demonstrate specificity. The methodology is sound and the results are reproducible across two independent approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Disruption of lateral interfaces through specific mutations (K121L, D304L) renders cells unable to divide, while these mutants retain the ability to form protofilaments and maintain GTPase activity. Double mutants that restore complementarity across lateral interface 1 (D304L/S231E, D304L/S231Q) rescue function, demonstrating the physiological importance of lateral interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Complementation assays (C32, C33, Figure 4) clearly show loss of function for specific mutants. The retention of protofilament formation and GTPase activity (C35, C36) argues against misfolding. The rescue by compensatory double mutations (C39, Figure 5) provides strong evidence that the defect is specifically due to disrupted lateral interactions rather than other structural perturbations. The logic is sound and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Lateral interactions are predominantly mediated by van der Waals interactions sensitive to surface geometry, with charge complementarity enhancing associations. These lateral interactions are much weaker on a per-subunit basis compared to longitudinal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis results (Figure 5) showing variable complementation outcomes for different hydrophobic substitutions support the van der Waals mechanism (C41). The rescue by charge-swapped double mutants (C39) supports the enhancing role of electrostatics (C42). The inference about relative weakness (C43) is consistent with the structural data and functional studies, though direct quantitative binding measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Protofilament formation is a prerequisite for lateral interactions to occur. Introduction of the longitudinal interface-disrupting mutation A181E into pBpa variants abolished all lateral crosslinking, demonstrating that lateral interactions require pre-assembled protofilaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The photocrosslinking experiments with A181E-containing variants (C44, Figure 6) provide direct evidence that disrupting longitudinal assembly prevents lateral interactions. The concentration argument (C45, C46) based on cited values supports the assumption that most FtsZ exists as protofilaments in vivo. The experimental design is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C75"
+    ],
+    "result": "Lateral interactions are essential for Z-ring assembly. Laterally disruptive mutants (K121L, D304L) incorporate into Z-rings at low cellular proportions (~40%) but are excluded at high proportions (~60%), while non-disruptive mutants (R78L) incorporate efficiently at both levels. This dose-dependent effect is consistent with a threshold model where protofilaments with excessive disruptive subunits cannot overcome the entropic cost of Z-ring incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence microscopy data (C51, C52, C53, Figure 7C-E) clearly demonstrate dose-dependent Z-ring incorporation. Western blots (Figure 7B, D) confirm expression levels. The modeling framework (C49, C50, C75, Figure 7\u2014figure supplements) provides a mechanistic explanation consistent with the data. The use of both disruptive and non-disruptive controls strengthens the interpretation. The conclusion that lateral interactions are important for Z-ring assembly (C54) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C67"
+    ],
+    "result": "The inherently weak lateral interactions enable FtsZ protofilaments to self-organize into a dynamic Z-ring rather than forming stable static higher-order structures. The authors propose that transient lateral interactions modulate treadmilling velocities upon protofilament collision rather than mediating stable antiparallel bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data demonstrate that lateral interactions are weak and functionally important (C61), the mechanistic model (C63) is speculative and not directly tested. The inference that weak interactions preclude stable higher-order structures (C67) is reasonable but indirect. The claim about antiparallel arrangement precluding treadmilling (C62) is logical but the proposed alternative mechanism (C63) lacks direct experimental support. This represents an interpretive framework rather than a directly demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background knowledge about FtsZ structure, function, and assembly is established, including its role in Z-ring formation, cell division, and comparison to tubulin. Prior work has suggested lateral interfaces are important but their precise nature remained unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for the study and accurately represent the state of the field. The knowledge gap (C14) is appropriately identified and motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C64",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Summary of study findings and comparison to prior work. The study directly observed two lateral interfaces crystallographically and confirmed them in vivo via photocrosslinking. The mechanism of FtsZ treadmilling is proposed to be distinct from actin, and prior electron cryotomography and reconstitution studies are discussed in context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the main findings (C59, C60) which are supported by the data discussed in other result groups. The comparison to actin (C64) is a reasonable inference. The citations to prior work (C68, C69, C70) are appropriate and accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C74"
+    ],
+    "result": "Methodological details including the location of K140 at the longitudinal interface and the complementation assay criterion (80% colony formation threshold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward methodological claims. C29 is supported by structural knowledge and citations. C74 describes the experimental criterion used, which is clearly stated in the methods.",
+    "result_type": "MINOR"
+  }
+]

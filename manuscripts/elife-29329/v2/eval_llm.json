@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ATAC-seq was performed on E15.5 mouse proximal and distal femoral growth zones, yielding 28,257 proximal and 27,958 distal peaks with 23,764 shared peaks. The growth plate at this stage possesses all chondrocyte zones and corresponds to approximately E48-51 of human development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C74-C76 provide comprehensive methodological details and quantitative results from the ATAC-seq experiment. The experimental design is clearly described with appropriate developmental staging (C1-C3), specific tissue dissection procedures (C76), cell numbers used (C75), and reproducible quantitative outcomes (C4-C7). The genomic distribution patterns (C8) are consistent with expected open chromatin profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Liftover of mouse ATAC-seq peaks to the human genome was successful for 87.7% of proximal and 88.6% of distal peaks, yielding 25,829 total unique peaks. These conserved sites likely reflect genes involved in vertebrate musculoskeletal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 report the liftover procedure with clear quantitative results and appropriate interpretation. The high success rate (>87%) supports cross-species conservation, and the interpretation (C11) is appropriately cautious and supported by citations. The union calculation (C12) is mathematically consistent with the individual datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "ATAC-seq peaks are enriched near genes associated with skeletal development phenotypes and GO Biological Processes relevant to chondrogenesis, including 'Cartilage condensation', 'Positive regulation of chondrocyte differentiation', and 'Chondrocyte proliferation'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 report GREAT analysis results showing biologically relevant enrichments. The phenotype terms (C13) and GO terms (C14) are appropriate for growth plate tissue and provide validation that the ATAC-seq peaks capture relevant biology. Figure 1c supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ATAC-seq peaks show significant overlap with Sox9 binding sites (86.4% Class I, 44.6% Class II, 93.8% super-enhancers) and active chromatin marks (85.1% RNA Pol II, 86.7% H3K4me3, 87.4% H3K27ac) but lower overlap with repressive marks (33.7% H3K27me3), all significant at p<0.001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C24 provide extensive validation against published ChIP-seq datasets with appropriate statistical testing (permutation analyses, p<0.001). The high overlap with active marks and lower overlap with repressive marks (C23) is biologically consistent and validates the ATAC-seq approach. The differential overlap patterns support the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Mouse femur ATAC-seq peaks overlap with human limb development and chondrocyte datasets: 45.2% of E47 human limb bud H3K27ac peaks and 13.3% of human adult BMDC H3K27ac peaks. The ATAC-seq data identified 14 of 26 previously-discovered regulatory elements near cartilage genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 demonstrate cross-species and cross-developmental stage validation with appropriate statistical significance (p<0.001). The ability to recapture known regulatory elements (C27) provides independent validation. The lower overlap with cultured BMDCs (C26) compared to embryonic limb (C25) is appropriately interpreted as reflecting in vivo developmental properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Height GWAS variants show significant enrichment at ATAC-seq peaks (317 loci or ~46% overlap, p=0.0059 by GoShifter), with greater enrichment than other chondrocyte datasets and no enrichment in non-skeletal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate statistically significant enrichment using appropriate permutation-based methods (GoShifter). The comparative analysis showing stronger enrichment than other datasets (C30) and lack of enrichment in control tissues (C31) supports specificity. The p-value of 0.0059 is appropriately conservative for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Height GWAS loci are significantly enriched near differentially expressed growth plate genes (p<0.001, z-score: 8.54), with 46 loci (~6.7%) containing variants that overlap ATAC-seq peaks and reside near differentially expressed genes (p<0.001, z-score: 6.36). eQTL variants for 157 growth plate genes are enriched at ATAC-seq peaks (p=0.0004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate multiple layers of enrichment with appropriate statistical testing using matched random loci. The combined enrichment (C34) is more stringent than individual criteria and remains highly significant. The eQTL enrichment (C35) provides independent functional validation. Z-scores are substantial (>6) indicating robust effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C36"
+    ],
+    "result": "Statistical fine-mapping using PICS identified a 95% credible set of 32,846 SNPs (48.2% reduction), with 468 variants spanning 192 loci overlapping ATAC-seq peaks. Applying stringent criteria (credible set + ATAC-seq + differentially expressed gene) identified 59 variants across 26 loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80, C36 describe appropriate statistical fine-mapping methodology with clear quantitative results. The 48.2% reduction (C79) demonstrates effective prioritization. The progressive filtering to 59 variants (C36) represents a substantial and useful reduction for functional follow-up. The PICS method is well-established and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C84"
+    ],
+    "result": "At the CHSY1 locus, rs9920291 is predicted to alter HOXD13 binding and shows allelic regulatory activity. The region acts as a repressor (p=7.83\u00d710\u207b\u2076), with the height-increasing T allele showing weaker repression (p=0.0014). CRISPR deletion upregulates CHSY1 expression (p=7.83\u00d710\u207b\u2076 for 135bp, p=3.64\u00d710\u207b\u2074 for 17bp), and HOXD13 overexpression increases CHSY1 expression (p=1.63\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44, C57-C60, C84 provide comprehensive functional validation with multiple converging lines of evidence: computational prediction (C37), luciferase assays (C38-C39), eQTL data (C40), allelic expression (C41), CRISPR deletion (C42-C43), and overexpression (C44). All experiments show appropriate statistical significance (p<0.001) and biological consistency. The mechanistic model linking HOXD13, rs9920291, and CHSY1 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The height-associated variant rs4911178 at the GDF5 locus resides in an ATAC-seq peak active in femoral growth plates, and separate work has shown the underlying enhancer drives GDF5 expression with allele-specific activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 identify a previously validated locus, demonstrating that the ATAC-seq approach can recapitulate known functional variants. The citation to separate work (C62) provides independent validation. This serves as a positive control for the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "De novo motif analysis identified enriched transcription factor binding motifs including Atf3, Msx2, Pbx1, and Ctcf. Height GWAS variants within ATAC-seq peaks show enrichment for predicted CTCF-disrupting variants (p<0.01, z-score: 6.01) and PBX1 motifs (adjusted p=1.91\u00d710\u207b\u00b9\u2070\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 report motif enrichment with appropriate statistical testing and biological relevance supported by citations. The enrichment of height variants at these motifs (C46-C47) provides mechanistic insight. The extremely low p-value for PBX1 (C47) suggests strong enrichment, though such extreme values should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Height is highly heritable (70-90% genetic), with GWAS identifying ~700 loci, each with small effects (<0.5 cm/allele). Most variants (>80%) are non-coding and tend to fall in epigenetically defined regulatory regions. The growth plate, containing multiple chondrocyte zones, is critical for determining height through endochondral ossification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 provide appropriate background context with citations to established literature. These are well-accepted facts in the field and provide necessary context for interpreting the study's findings. The heritability estimates (C48), GWAS results (C49-C50), and biological knowledge (C54-C56) are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study demonstrates that integrating growth plate epigenetic data with GWAS results can identify biological mechanisms for height variation. The ATAC-seq peaks show tissue-specific enrichment for height variants not observed in other datasets, and combining statistical and functional fine-mapping enables prioritization of causal variants for functional testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 represent interpretive conclusions and discussion points that are well-supported by the data presented. The tissue specificity (C66-C67, C70), lack of enrichment for unrelated traits (C71), and utility of the integrated approach (C72) are all supported by the results. The claim of novelty (C73) regarding CHSY1 functional validation is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Among 46 loci meeting stringent criteria (ATAC-seq peak + differentially expressed gene), 44 candidate genes were identified, including major signaling molecules (IHH, HHIP), transcription factors (RUNX2), and extracellular matrix factors (CHSY1, EXTL1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 appropriately cite prior work identifying differentially expressed genes (C81) and report the number of candidate genes identified (C82). The functional categorization (C83) is appropriate and provides biological context. The slight discrepancy between 46 loci and 44 genes is explained by some loci having multiple genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Raw sequencing data and processed peak files have been deposited in NCBI GEO (GSE100585).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 provides appropriate data availability information with a specific accession number, enabling reproducibility and data sharing as required by scientific standards.",
+    "result_type": "MINOR"
+  }
+]

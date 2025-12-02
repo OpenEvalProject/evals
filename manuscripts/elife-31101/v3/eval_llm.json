@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C65",
+      "C66"
+    ],
+    "result": "Hippocampal neurons were cultured on polyacrylamide hydrogels with elastic moduli of 0.1, 1, and 20 kPa, verified by atomic force microscopy, with comparable laminin coating across substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C65, and C66 establish the experimental system. The preparation methods are clearly described, AFM verification is provided (C65), and laminin coating is confirmed to be comparable across substrates (C66), ruling out coating differences as a confounding variable. The cell enrichment data (C2) validates the neuronal culture purity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Neurons exhibit bistable, substrate stiffness-dependent neurite initiation: on soft gels (0.1 kPa), nearly 100% of cells form segmented lamellipodia that become neurites, while on stiff substrates (20 kPa), most cells form broad lamellipodia and fail to initiate neurites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 provide converging morphological evidence with quantitative data showing clear bistable behavior. The threshold of lamellipodium occupancy (<1/3 periphery) for neurite formation is well-documented. Claim C9 appropriately concludes that soft substrates matching brain stiffness are sufficient for neurite initiation, supported by both experimental data and citations to brain mechanical properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Substrate stiffness regulates differential gene expression: soft substrates (0.1 kPa) upregulate endocytic genes (Cltc, Dab2, Myo6), while stiff substrates (20 kPa) upregulate adhesion genes (Vcl, Nrcam, Robo2, Cdh11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 present microarray data validated by QuantiGene Plex assay and single-molecule RNA FISH. The filtering criteria are clearly stated (fold change \u22651.5, p<0.05), and the differential expression patterns are confirmed across multiple detection methods. The smFISH data (C13-C14) provides single-cell validation correlating gene expression with morphological phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Neurons on soft substrates exhibit elevated endocytic activity compared to stiff substrates, as measured by FM4-64 uptake and QD-BDNF internalization, which is abolished by dynamin inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 provide quantitative measurements of endocytosis using two independent assays (FM4-64 and QD-BDNF). The ~1.6-1.7 fold differences are statistically significant and consistent across methods. Pharmacological and genetic inhibition of dynamin (C17) confirms the endocytic nature of the uptake, providing mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Inhibition of endocytosis by expressing dominant-negative dynamin II (DynIIK44A) impairs neurite formation and radial migration of cortical neurons in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 demonstrate the in vivo relevance of endocytosis for neurite formation. The in utero electroporation approach is appropriate, and the phenotypic analysis shows clear migration defects and loss of polarized morphology. The rescue by control conditions validates the specificity of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Rac1 activity is elevated on soft substrates and accumulates at segmented lamellipodia in an endocytosis-dependent manner, and is required for neurite initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 use multiple complementary approaches (pulldown assay, immunofluorescence, FRET imaging) to demonstrate substrate-dependent Rac1 activation. The requirement for endocytosis is shown by both pharmacological and genetic inhibition (C25-C27). The specificity is supported by the lack of effect of ROCK and PI3K inhibitors (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Paxillin expression is elevated on soft substrates and its expression pattern matches endocytic factors rather than adhesion factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 present Western blot data showing differential protein expression patterns. The observation that paxillin expression matches endocytic rather than adhesion factors is unexpected and well-documented. The quantification shows statistically significant differences (C32), though the biological significance of the fold-changes could be discussed more thoroughly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Paxillin preferentially colocalizes with endocytic factors (AAK1, CHC) on soft substrates and with adhesion factors (p-FAK, vinculin) on stiff substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 use membrane flotation assays and high-resolution confocal microscopy with quantitative colocalization analysis (Pearson's coefficients). The >30% co-fractionation with endocytic vesicles in brain (C33) and >40% colocalization with endocytic factors on soft gels (C35) provide strong evidence for substrate-dependent paxillin localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Paxillin binds to endocytic factors (CIP4, clathrin, dynamin) and adhesion factors (vinculin) in a substrate stiffness-dependent and competitive manner, with the F-BAR domain of CIP4 required for paxillin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 combine LC-MS/MS, co-immunoprecipitation, and domain mapping to demonstrate competitive binding. The in vitro GST pulldown assays (C39) and domain deletion studies (C40) provide mechanistic insight. The competitive binding assays (C41) show dose-dependent effects, supporting the bistable switch model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Paxillin and CIP4 are required for endocytosis on soft substrates, as demonstrated by reduced FM4-64 uptake and QD-BDNF internalization upon knockdown, and enhanced uptake upon paxillin overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 use loss-of-function (shRNA knockdown) and gain-of-function (overexpression) approaches to demonstrate paxillin's role in endocytosis. The requirement for the LIM domain (C43) links the functional effect to CIP4 binding. The ~8-fold reduction in QD-BDNF internalization (C44) is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Paxillin knockdown impairs neurite formation on soft substrates by reducing Rac1 accumulation, and expression of paxillin domain mutants can shift cells between segmented and broad lamellipodium phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 demonstrate that paxillin is functionally required for neurite formation. The domain mutant experiments (C47-C48) provide strong evidence for the competitive binding model, showing that disrupting endocytic factor binding (\u0394LIM3-4) or adhesion factor binding (\u0394LD1) shifts phenotypes in predictable directions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Paxillin is highly expressed in embryonic brain during neurite formation (E13-E18), and paxillin knockdown in vivo causes migration defects and impaired neurite formation, which are rescued by shRNA-resistant paxillin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 establish the in vivo relevance of paxillin. The developmental expression pattern (C50) correlates with neurite formation timing. The in utero electroporation experiments (C51-C52) show clear phenotypes (~42% accumulation in SVZ, ~25% lacking neurites), and the rescue experiment (C53) confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Paxillin functions as a molecular switch that determines neuronal fate by preferentially binding to either endocytic or adhesion machinery depending on substrate stiffness, with soft substrates (<1 kPa) promoting timely neurite initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 synthesize the experimental findings into a coherent model. The bistable switch mechanism is well-supported by the competitive binding data, substrate-dependent localization, and functional consequences. The conclusion that soft substrates are sufficient for neurite initiation (C56) is directly supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "The paxillin-mediated switch may allow neurons to establish networks only in permissive environments, could occur in other ectodermal cells, and may shift from endocytic to adhesive functions during development and at synaptic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C64 are largely speculative interpretations extending beyond the presented data. While the speculation is reasonable and grounded in the experimental findings, these claims lack direct experimental support. The developmental timing hypothesis (C60-C61) is plausible given the expression data but requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The manuscript appropriately cites prior literature on brain tissue stiffness, neuronal mechanosensitivity, durotaxis, endocytosis-Rac1 coupling, and paxillin/vinculin/CIP4 structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 represent background knowledge appropriately cited from the literature. These claims provide context for the experimental work and are supported by the referenced studies. The structural information about paxillin (C72) and vinculin (C73) is well-established in the field.",
+    "result_type": "MINOR"
+  }
+]

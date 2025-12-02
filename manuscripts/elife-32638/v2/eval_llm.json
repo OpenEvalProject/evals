@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C45",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors developed semisynthetic NAD(P) biosensors (NAD-Snifit and NADP-Snifit) with superior properties including ratiometric readout, large dynamic range (8.9-fold for NADP-Snifit), pH insensitivity (pH 6.8-8), tunable response range, and long-wavelength excitation (560 nm). The sensors use synthetic fluorophores (TMR and SiR) that are bright, photostable, show minimal bleed-through, and are pH-insensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18, C24-C27, C45, and C118-C121 collectively demonstrate the sensor properties through in vitro characterization data (Figures 2a-b, Appendix 1). The experimental measurements of labeling kinetics, dynamic range, c50 values, and pH sensitivity are well-documented with appropriate controls and replicates (n=3 independent titrations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C19"
+    ],
+    "result": "The authors designed NADP-Snifit based on human sepiapterin reductase (SPR) as the NADP-binding protein, exploiting the \u03c0-stacking interaction (3.3 \u00c5 distance) between sulfa drugs and the nicotinamide moiety of NADP+ to create a FRET-based sensor using SNAP-tag and Halo-tag self-labeling proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe the rational design principle supported by structural data (PDB 4HWK, Figure 1a) and citations to prior work on SPR inhibitors (Chidley et al., 2011; Haruki et al., 2012). The design hypothesis (C22) was successfully validated by experimental characterization showing NADP+-dependent FRET changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors engineered NAD-Snifit by introducing mutations A41D and R42W into SPR to switch cofactor specificity from NADP+ to NAD+, guided by structural comparison with NAD-specific enzymes. The resulting sensor is specific for NAD+ with c50 of 63 \u00b1 12 \u00b5M, maintains 8-fold dynamic range, and shows no response to NADP+ up to 1 mM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe a rational protein engineering approach based on known structural determinants of cofactor specificity (Kallberg et al., 2010; Tanaka et al., 1996). The experimental validation (Figure 2d) demonstrates successful specificity switching with quantitative characterization of binding parameters and specificity testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C129"
+    ],
+    "result": "The authors quantified free cytosolic NAD+ levels in multiple cell lines, finding 70-120 \u00b5M in U2OS cells and 40-70 \u00b5M across different cell lines (U2OS, NIH/3T3, HeLa, HEK-293T), with values agreeing between FLIM and emission ratio imaging methods and consistent with prior cpVenus-based sensor measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C129 present quantitative measurements using two independent methods (FLIM and emission ratio imaging) that agree well (Table 1). The values are consistent with prior literature (Cambronne et al., 2016), providing validation. Sample sizes are adequate (n=60 for ratio imaging, n=10 for FLIM).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors discovered that free NADPH/NADP+ ratios are maintained at high levels in cells with mitochondria showing significantly higher ratios (175-219) compared to cytosol (56-65) and nucleus (40-51). This represents the first direct quantification of free cellular NADPH/NADP+ and demonstration of compartmental differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 present novel findings supported by quantitative FLIM and emission ratio imaging data (Table 1, Appendix 1-table 3). The measurements show clear compartmental differences with adequate sample sizes (n=60 for ratio imaging, n=10 for FLIM). The novelty claim (C70-C71) is reasonable given the lack of prior direct measurements of free NADPH/NADP+.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors monitored real-time cellular responses to oxidative stress, showing that H2O2 perfusion rapidly decreases cytosolic NADPH/NADP+ ratios (from ~70 to 35 with 10 \u00b5M H2O2, down to 20 with 200 \u00b5M H2O2) within 5 minutes, followed by rapid recovery within 10 minutes after washout, with transient overshoot to higher ratios (~150) before returning to basal levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84, C87-C90 describe time-resolved measurements (Figure 3) with appropriate controls showing H2O2 does not directly affect the sensor (C77, Appendix 1-figure 1p). The kinetic data (n=10 cells) demonstrates cellular metabolic adaptation. Long-term imaging controls (C89) confirm signal stability over >2 hours, validating the observed transient changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C96"
+    ],
+    "result": "The authors evaluated NAD+ biosynthetic precursors (NA, NAM, NMN, NR) in U2OS cells, finding that NMN and NR increase cytosolic free NAD+ by 1.2-1.3 fold (estimated up to 1.6-fold increase), while NA and NAM show slight but significant increases. None of the precursors substantially affect NADPH/NADP+ ratios or interact with the sensor in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 present flow cytometry data (Table 2, Figure 4) with appropriate controls showing no direct sensor interaction (Appendix 1-figures 5,6). Statistical analysis is performed (n=3 independent experiments) with significance testing. The modest effects on NAD+ are quantified with appropriate error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C128"
+    ],
+    "result": "The authors tested whether free NADPH/NADP+ is independent of free NAD+ using FK866 (NAMPT inhibitor), finding that FK866 depletes free cytosolic and mitochondrial NAD+ but shows no significant influence on cytosolic or mitochondrial NADPH/NADP+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 and C128 present experimental evidence (Table 2) testing the independence of NADPH/NADP+ from NAD+ pools. The use of FK866 as a specific NAMPT inhibitor provides a clean test of this hypothesis, with statistical analysis showing no significant effect on NADPH/NADP+ despite NAD+ depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C107"
+    ],
+    "result": "The authors compared effects of biguanides (metformin, phenformin) and rotenone on cellular NAD(P) levels, finding similar patterns: increased cytosolic NAD+, decreased mitochondrial NAD+, and decreased cytosolic and mitochondrial NADPH/NADP+. This similarity supports the hypothesis that biguanides inhibit complex I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 present comparative pharmacological data (Table 2) showing parallel effects of biguanides and the known complex I inhibitor rotenone. The inference about mechanism (C111) is reasonable given the similar metabolic signatures, though the authors appropriately cite that biguanide targets remain uncertain (C107, Owen et al., 2000).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors found that oligomycin A (ATP synthase inhibitor) produces distinct effects from complex I inhibition: large mitochondrial decrease in free NAD+ (1.6-fold FRET ratio change) and large increase in free NADPH/NADP+ (1.4-fold FRET ratio change).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 present quantitative flow cytometry data (Table 2) showing that ATP synthase inhibition produces opposite effects on NADPH/NADP+ compared to complex I inhibition, demonstrating the sensors can distinguish different metabolic perturbations. The measurements include appropriate replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The authors found that 6-aminonicotinamide (6-AN), a competitive inhibitor of glucose-6-phosphate dehydrogenase, decreases free cytosolic NADPH/NADP+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 presents flow cytometry data (Table 2) showing the expected effect of inhibiting the pentose phosphate pathway on NADPH/NADP+ ratios. This serves as a positive control demonstrating the sensor responds to perturbations of NADPH production.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C32"
+    ],
+    "result": "The authors characterized NADP-Snifit's response to NADPH/NADP+ ratios, finding no intramolecular ligand binding in absence of NADP+, no binding to SPR:NADPH binary complex, and r50 of 30 \u00b1 3 for NADPH/NADP+ ratio. Based on known cellular ratios (10-100), the sensor reports on NADPH/NADP+ rather than free NADP+ in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C32 present in vitro characterization data (Figure 2c, Appendix 1-Figures 1a-b) demonstrating the sensor's response to cofactor ratios. The inference about cellular application (C32) is logical given the sensor's r50 and reported cellular NADPH/NADP+ ratios (C31), though this assumes literature values are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors inferred that NAD-Snifit in cells reports on free NAD+ levels based on its c50 (63 \u00b5M) being appropriate for reported cellular free NAD+ (~100 \u00b5M) and NAD+/NADH ratios (100-600 cytosol, 4-10 mitochondria).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 present an inference about sensor application based on comparison of in vitro c50 with literature values for cellular NAD+ and NAD+/NADH ratios (citations to Zhang et al., 2002; Cambronne et al., 2016; Veech et al., 1969; Zhao et al., 2015; Williamson et al., 1967). The logic is sound, though it relies on accuracy of prior measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors found that both sensors show two-fold increase in c50 when temperature increases from 25\u00b0C to 37\u00b0C, but NADP-Snifit's r50 is unaffected, indicating SPR has similar temperature dependencies for NADPH and NADP+ binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present temperature-dependence data (Appendix 1-Figures 1e-g) with appropriate inference about binding thermodynamics. The observation that r50 is temperature-independent while c50 changes supports the conclusion about similar temperature dependencies for both cofactors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors characterized NADP-Snifit kinetics, finding opening (NADP+ dissociation) has t1/2 of 25 \u00b1 1 s and closing (NADP+ binding) has t1/2 <1 s. They infer NAD-Snifit should be at least as fast due to lower affinity, making both sensors suitable for monitoring fluctuations on seconds timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 present kinetic data (Appendix 1-Figures 1h-i) for NADP-Snifit. The inference about NAD-Snifit kinetics (C51) is reasonable based on the relationship between affinity and kinetics, though direct measurement would be preferable. The conclusion about temporal resolution (C52) is supported by the measured kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The authors demonstrated tunability of sensor response range by replacing tethered sulfamethoxazole with sulfachloropyridazine (lower affinity ligand), which raised NADP-Snifit's c50 from 29 \u00b1 7 nM to 1.9 \u00b1 0.3 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 presents experimental data (Appendix 1-figures 1j,k) demonstrating the modular design principle allows rational tuning of sensor properties by changing the tethered ligand. This validates the design approach and provides practical utility for adapting sensors to different concentration ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors characterized intracellular labeling efficiency (100% for SiR-Halo, 92% for CP-TMR-SMX) and demonstrated that incomplete labeling does not affect quantitative analysis, as calibration curves with 20% vs 100% CP-TMR-SMX labeling overlay and FRET ratio is independent of fluorophore intensity in flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present important validation data (Appendix 1-figures 3a-b, Figure 2f) showing the ratiometric approach is robust to incomplete labeling. This addresses a potential concern about the semisynthetic approach and supports quantitative applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors determined intracellular sensor concentrations are 1-5 \u00b5M and argued this produces negligible additional NAD(P) buffering because endogenous dehydrogenases and SPR are highly abundant (Beck et al., 2011; Zhang et al., 2002), with comparable SPR levels confirmed across multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 address the important concern about sensor perturbation of cellular NAD(P) pools. The sensor concentration measurements (Appendix 1-table 2) and comparison with endogenous protein abundance (citations and Western blot data in Appendix 1-figures 3c-d) support the conclusion that buffering effects should be minimal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The authors speculated that higher mitochondrial NADPH/NADP+ ratios could be partially due to higher mitochondrial pH pushing NAD(P) transhydrogenase and dehydrogenases toward NADPH formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 presents a mechanistic hypothesis (supported by citation to Rydstr\u00f6m, 2006) to explain the observed compartmental differences in NADPH/NADP+. While plausible, this remains speculative as the authors did not directly test pH effects or measure transhydrogenase activity. Additional experiments would be needed to validate this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C90"
+    ],
+    "result": "The authors attributed the transient NADPH/NADP+ overshoot after H2O2 washout to metabolic adaptation involving glucose-6-phosphate dehydrogenase activation and rerouting of metabolic flux from glycolysis to pentose phosphate pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 and C90 present an interpretation of the observed overshoot phenomenon supported by citations to prior work on metabolic adaptation (Patra and Hay, 2014; Ralser et al., 2007; Kuehne et al., 2015). While the authors did not directly measure enzyme activities or metabolic fluxes, the interpretation is consistent with established metabolic responses to oxidative stress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors compared their measurements of free cytosolic NADPH/NADP+ during oxidative stress (>10 even with 100 \u00b5M H2O2) with a prior study reporting NADPH/NADP+ <1 in cell lysates under similar conditions, highlighting the importance of measuring NAD(P) in biologically relevant context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 present a comparison with prior work (Cameron et al., 2016) showing substantial differences between free cellular measurements and lysate measurements. This effectively demonstrates the value of the new sensors for measuring free, compartmentalized NAD(P) levels versus bulk measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors demonstrated that flow cytometry measurements with the sensors can detect FRET ratio changes as low as 5% and can be used to probe drug mechanisms and screen for compounds affecting NAD+ or NADPH/NADP+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 present conclusions about sensor applications based on the pharmacological experiments (Figure 4, Table 2). The sensitivity claim (C115) is supported by the data showing detection of small changes. The inference about screening applications (C116) is reasonable given the demonstrated sensitivity and throughput of flow cytometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors concluded that NAD(P)-Snifits distinguish themselves from protein-only sensors by using synthetic fluorophores and rational design principles that permit generation of sensors with large ratio changes, adaptable response range and colors, exemplifying synergy between synthetic chemistry and protein engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C122-C123 present summary conclusions about the advantages of the semisynthetic approach. These are supported by the demonstrated properties throughout the paper, including tunability (C53), spectral variants (Appendix 1-figures 1l-n), and superior performance characteristics compared to existing sensors described in the introduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "The authors found that sensor dynamic range in digitonin-permeabilized cells and cell lysates was identical to values determined in buffer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 presents validation data (Appendix 1-figures 3e-f) showing the sensor properties are maintained in cellular environments. This supports using in vitro calibration parameters for cellular quantifications, though the authors note difficulties with digitonin permeabilization for full calibration curves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors reviewed prior work on NAD(P) biology and existing sensors, noting limitations including pH sensitivity, short excitation wavelengths, modest dynamic ranges, and lack of sensors for free NADPH/NADP+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 present background information about NAD(P) biology and existing sensors, supported by appropriate citations. These establish the context and motivation for developing new sensors but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C73",
+      "C74",
+      "C94",
+      "C95",
+      "C107",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors cited prior literature on cellular NAD(P) levels, enzyme structures, antioxidant systems, NAD+ precursor effects, and drug mechanisms to provide context for their measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C33-C36, C73-C74, C94-C95, C107, C125-C127 present established knowledge from prior literature with appropriate citations. These provide necessary context but represent prior work rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The authors stated that future developments will focus on in vivo applications, which might require generating labeling substrates with increased membrane permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 presents a statement about future research directions. This is a reasonable goal given current limitations of the semisynthetic approach for in vivo applications, but represents planned rather than completed work.",
+    "result_type": "MINOR"
+  }
+]

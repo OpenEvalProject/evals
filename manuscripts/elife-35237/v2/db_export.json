@@ -1,0 +1,1156 @@
+{
+  "submission": {
+    "id": "a507d72d-f00c-4a79-99c4-9782098e96b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:32:42.950670Z",
+    "updated_at": "2025-12-02T00:32:42.950670Z"
+  },
+  "content": [
+    {
+      "id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "submission_id": "a507d72d-f00c-4a79-99c4-9782098e96b6",
+      "content_type": "manuscript",
+      "content_text": "# Whole brain comparative anatomy using connectivity blueprints\n\n## Authors\n\n- Rogier B Mars<sup>1</sup> ([ORCID: 0000-0001-6302-8631](https://orcid.org/0000-0001-6302-8631)) \u2020\n- Stamatios N Sotiropoulos<sup>1</sup> ([ORCID: 0000-0003-4735-5776](https://orcid.org/0000-0003-4735-5776))\n- Richard E Passingham<sup>4</sup>\n- Jerome Sallet<sup>4</sup> ([ORCID: 0000-0002-7878-0209](https://orcid.org/0000-0002-7878-0209))\n- Lennart Verhagen<sup>4</sup>\n- Alexandre A Khrapitchev<sup>5</sup> ([ORCID: 0000-0002-7616-6635](https://orcid.org/0000-0002-7616-6635))\n- Nicola Sibson<sup>5</sup>\n- Saad Jbabdi<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Wellcome Centre for Integrative Neuroimaging, Centre for Functional MRI of the Brain (FMRIB), Nuffield Department of Clinical Neurosciences John Radcliffe Hospital, University of Oxford Oxford United Kingdom\n2. Donders Institute for Brain, Cognition and Behaviour Radboud University Nijmegen Nijmegen Netherlands\n3. Sir Peter Mansfield Imaging Centre, School of Medicine University of Nottingham Nottingham United Kingdom\n4. Wellcome Centre for Integrative Neuroimaging, Department of Experimental Psychology University of Oxford Oxford United Kingdom\n5. Cancer Research UK and Medical Research Council Oxford Institute for Radiation Oncology, Department of Oncology University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nComparing the brains of related species faces the challenges of establishing homologies whilst accommodating evolutionary specializations. Here we propose a general framework for understanding similarities and differences between the brains of primates. The approach uses white matter blueprints of the whole cortex based on a set of white matter tracts that can be anatomically matched across species. The blueprints provide a common reference space that allows us to navigate between brains of different species, identify homologous cortical areas, or to transform whole cortical maps from one species to the other. Specializations are cast within this framework as deviations between the species\u2019 blueprints. We illustrate how this approach can be used to compare human and macaque brains.\n\n## Introduction\n\nThe ultimate goal of comparative and evolutionary neuroscience is to understand the organization of each species' brain as an adaptation to its unique ecological niche. However, the study of specific adaptations cannot be performed without an appreciation of the common organizational principles of different brains. To understand what is unique about the brain of a given species, a useful starting point is to cast it in the context of a common template. Unique properties and adaptations of a species\u2019 brain can then be understood as deviations from the template.\n\nIn higher primates, white matter organization has striking commonalities between the different species (Thiebaut de Schotten et al., 2012). Several association pathways have been identified in humans, chimpanzees, and macaques (Rilling et al., 2008; Hecht et al., 2013). These pathways share core properties such as the broad brain areas that they connect, but differ in the details of their branching patterns, suggesting a common connectivity backbone with varying degrees of connectivity specialization. We propose that common white matter pathways can be used to form blueprints of cortical connections to enable comparisons of cortical organization between higher primates.\n\nWe exploit the idea that cortical regions can be described by their unique sets of connections to the rest of the brain (Passingham et al., 2002), a feature that we have previously shown is useful in comparing brain organization between species (Mars et al., 2016). Thus, we can investigate neural organization using the architecture of the main white matter fibers. The bodies of the major fiber bundles can be identified reliably in different species and allow identification of homologous fiber bundles. This allowed us to construct a map of each of the main white matter tracts and to describe cortical grey matter organization in terms of this map (Figure 1). We term the matrix describing the connectivity of each vertex of the grey matter surface with each white matter tract the connectivity blueprint. These connectivity blueprints provide a common space in which we can ask how each part of the grey matter in one species maps onto the other species.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35237/elife-35237-fig1-v2.jpg)\n\n**Figure 1.:** (a) 39 tracts common across both species were defined and reconstructed using probabilistic tractography. (b) The resulting connectivity matrices were then multiplied by connectivity matrices defining the connectivity of each vertex of the grey matter to the rest of the brain, creating a full connectivity blueprint (c) describing how each vertex is connected to each tract. (d) These blueprints can then be compared using the KL divergence as a comparative metric indicating how each vertex' connectivity fingerprint in one brain differs from that of each vertex in an other brain.\n\nWe illustrate this approach by comparing human and macaque cortex. We demonstrate that the connectivity blueprints can be used to predict the location of cortical areas across species. Furthermore, by quantifying the distances between the blueprints of different parts of the two brains, we quantify where these brains have tended to specialize since their last common ancestor. We demonstrate that such areas overlap with known specializations in the human and macaque lineages.\n\nOur results show how connectivity blueprints can be used for comparative anatomy of humans and macaques, but the approach can be generalized to all higher primates where the blueprints can be identified. This method thus provides a powerful approach to comparative anatomy, and allows one to quantitatively define common principles and unique specializations in the brains of related animals.\n\n## Results\n\n### Comparing connectivity blueprints can identify homologous areas across brains\n\nWe first investigated whether the connectivity blueprints could be used to identify known homologs between the two species. Although the early visual areas are present in both humans and macaques, their location and the amount of cortical territory they occupy differs in the two species (Orban et al., 2004). A particularly challenging case is presented by areas sensitive to visual motion. The MT\u00a0+complex is located in the ventrolateral part of the posterior temporal cortex in the human brain (hMT+; Malikovic et al., 2016), but is located more dorsally in the ventral bank of the posterior superior temporal sulcus in the macaque monkey (Paxinos et al., 2000) (Figure 2, left panel). hMT\u00a0+\u00a0can be identified as a region of high myelin in the posterior temporal cortex that can be visualized using the ratio of T1- and T2-weighted MRI scans (Glasser and Van Essen, 2011; Large et al., 2016). The peak of hMT\u00a0+\u00a0is reached by tracts associated with the visual system such as the occipital radiations and the ventral occipital fascicle, but also by longitudinal tracts such as the inferior longitudinal fascicle (Yeterian and Pandya, 2010). We created a map of the macaque cortex indicating how different each vertex's connectivity profile was to that of a vertex in hMT+. This map showed the lowest divergence, that\u00a0is highest similarity, in the ventral bank of the macaque STS, as predicted from the macaque cytoarchitectonic atlas. Thus, comparison of connectivity blueprints can identify homologous areas across brains, even when their relative location has changed.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35237/elife-35237-fig2-v2.jpg)\n\n**Figure 2.:** (left panel) MT+\u00a0complex.\u00a0Human MT+\u00a0can be defined as an area of high cortical myelin in the ventral occipitotemporal cortex (top left). Its connectivity fingerprint (shading indicates standard error) indicates strong projections from visual tracts such as the optic radiation\u00a0(OR), vertical occipital fascicle\u00a0(VOF), inferior fronto-occipital fascicle\u00a0(IFO), and inferior longitudinal fascicle\u00a0(ILF) (bottom row). According to previous work, macaque MT+\u00a0is located in the ventral bank of the superior temporal sulcus (middle right). Calculating the KL divergence of the connectivity fingerprint of human MT+\u00a0and the connectivity fingerprint of each macaque vertex (top right) shows the lowest divergence in the STS, with a thresholded image identifying the area predicted by previous work (middle left). (right panel) Area F6. Macaque area F6 (left) receives projections from, among others, the frontal aslant\u00a0(FA) and the superior longitudinal fascicle\u00a0(SLF) (bottom row). Calculating the KL divergence of the connectivity fingerprint of macaque F6 and the connectivity fingerprint of each human vertex shows the lowest divergence on the medial wall, with a thresholded image identifying human pre-SMA (right).\n\nWe next tested whether we could predict the location of the human pre-supplementary motor area (pre-SMA), based on macaque area F6. It has been well-established that these two regions share similar functions across the two species (Nachev et al., 2008) and can be matched based on their connectivity profiles (Sallet et al., 2013; Mars et al., 2016). Previous studies, however, matched the regions based on the profile of functional connectivity with known homologous brain regions in frontal and parietal cortex, rather than using white matter tracts that can potentially be identified in all higher primates. We defined macaque area F6 based on the atlas of Markov et al. (2011). Its connectivity fingerprint shows that it receives widespread connections, including from the superior longitudinal fascicle, the cingulum bundle, and the frontal aslant (cf. Thiebaut de Schotten et al., 2012). We determined the Kullback-Leibler (KL) divergence between the connectivity fingerprint of F6 and that of each vertex of the human cortex. This map identified an area of the human medial prefrontal cortex, anterior to the supplementary motor area proper (Figure 2, right panel) and consistent with previous localizations of this area in the human (Nachev et al., 2008; Mars et al., 2016), as most similar to macaque area F6. This result demonstrates that matching connectivity blueprints across species can also be used to predict the location of areas outside early visual cortex.\n\n### Connectivity blueprints can predict organization of the cortical surface across brains\n\nAs well as calculating divergence maps for a single vertex or a single area, the approach can be generalized to transform features of organization across the entire cortex between species. One such map that is easily obtainable from neuroimaging is a T1/T2-weighted map, which has been suggested to partly reflect the presence of cortical myelin (Glasser et al., 2014). T1/T2-weighted maps show a number of distinctive features across the human cortical hemisphere that are qualitatively similar to myelination maps, such as high values in primary sensory areas, low values in prefrontal and parietal association cortex, and intermediate values in frontal oculomotor areas. Using the connectivity blueprint as a reference space, we can transform a whole brain map from one species onto the other based on fingerprint similarities (see Materials\u00a0and\u00a0methods). We used this approach to predict the T1/T2-weighted map of the macaque cortex based on the same map in humans (Figure 3). The predicted map showed striking similarities to the actual macaque myelin map (Glasser et al., 2014), replicating the high myelin in the primary visual, auditory, and sensorimotor cortex and the low myelin in the prefrontal cortex.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35237/elife-35237-fig3-v2.jpg)\n\n**Figure 3.:** The connectivity blueprint can be applied to use the human T1/T2-weighted map (top left) and predict the same map in the macaque (middle left). The predicted macaque map shows strong similarity to an actual macaque map based on 19 macaques from the Yerkes dataset (Donahue et al., 2018). The scatter plot on the top right shows how well the predicted map follows the data (straight line is y\u00a0=\u00a0x). To assess the variability in the predicted map, we calculated a distribution based on individual variability (using all pairs of human/macaque datasets to build separate blueprints to drive the predictions). The resulting distribution was compared to the measured map (Z=(mean-data)/std) (middle right and bottom right). These assessments demonstrate that the predicted map shows striking similarities to the actual map, but important differences are noticeable in part of the association cortex.\n\nThere are also areas in which the predicted macaque T1/T2-weighted map differs from the actual map. For instance, the predicted map showed an intermediate level of myelin in the macaque inferior parietal cortex, whereas in reality this is an area with low myelin content. Thus, there are parts of the cortex whose organization we could not predict well based on the connectivity blueprint. While this could be due to limitations in the methods, it is noticeable that the poorer predictions are mostly located in the association cortex. These are areas whose organization might be unique to one of the two brains studied. We therefore sought to quantify dissimilarity in connectivity\u00a0profiles between humans and macaques across the entire cortex.\n\n### Connectivity blueprints identify unique aspects of brain organization\n\nWe investigated which parts of both the human and macaque brains are unique by creating a map of the distance of each vertex to its closest match in the other species. The greater the distance, the more likely this vertex has a connectivity profile that is not represented in the other species; in other words, the more likely this area has changed in its connectional organization since the last common ancestor of human and macaque. The resulting connectional dissimilarity map showed a large region of human inferior parietal and posterior temporal cortex, precuneus, and to a lesser extent parts of the frontal cortex that could not be predicted from any part of the macaque brain (Figure 4, top panel). Importantly, the between-species predictability did not correlate with any particular aspect of the connectivity fingerprint, such as a map of the entropy of tract distribution (i.e., whether a region is reached strongly by few tracts or equally strongly by multiple tracts) (Figure 4). Similarly, the connectional dissimilarity map overlapped with, but was different to a map of cortical expansion (Van Essen and Dierker, 2007), indicating that reorganization and expansion reflect separate aspects of brain reorganization (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35237/elife-35237-fig4-v2.jpg)\n\n**Figure 4.:** (A) A map of the minimum KL divergence of each vertex with all vertices in the other species brain indicates which areas are least similar across the two brain (top panels). This map can be compared with an entropy map showing the diversity of tracts reaching each vertex (bottom left) and a landmark-based cortical expansion map (figure generated from data available from the SUMSDB archive (http://brainvis.wustl.edu/sumsdb/archive_index.html) (Van Essen and Dierker, 2007) (bottom right). (B) We compared the KL divergence map to the entropy and expansion maps. Diagonal shows the distribution of values of each map, upper right scatter plots show relationship between all vertices of the pairs of maps; bottom left maps show the local correlations between two maps.\n\nThe largest area in the human brain that showed\u00a0a high connectional dissimilarity to the macaque is a section of inferior parietal and posterior temporal cortex. This section spans multiple cortical areas. We compared the fingerprint of the vertex with the highest minimum KL divergence in the human brain, that\u00a0is, the vertex that has the least similar match in the macaque, to the fingerprint of the most similar macaque vertices (Figure 5). This showed that this vertex is reached very prominently by the arcuate fascicle (AF). The vertex is located in the posterior part of the temporal cortex, an area that often shows activation in phonological or semantic tasks (Price, 2000). Other parts of the cortex showing a high minimum divergence included the anterior part of the human angular gyrus. The angular gyrus has also been suggested to receive stronger AF connectivity than its proposed macaque homolog area PG (Rilling et al., 2008). This part of angular gyrus shows activation during phoneme detection (Simon et al., 2002) and has stronger grey matter density in bilinguals and adults who have learned to read compared to illiterates (Carreiras et al., 2009). Consistent with this role, neurons in macaque area PG show visual responses (Rozzi et al., 2008). Human angular gyrus receives input from the visual word form area (Saygin et al., 2016). Together, these results are consistent with the suggestion that the human brain contains areas with an organization not seen in the macaque in areas recruited into the language system.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35237/elife-35237-fig5-v2.jpg)\n\n**Figure 5.:** The highlighted vertex on the human cortical surface has a connectivity fingerprint dissimilar to any found in the macaque. The vertex's connectivity fingerprint shows a much stronger influence of the arcuate fascicle\u00a0(AF) even when compared to the most similar vertices in the macaque (the blue line is the average of the top 1% most similar macaque vertices). Shading indicates standard errors.\n\nOther human areas that have a connectivity fingerprint that was poorly predicted based on the macaque include the medial parietal cortex 7 m and areas in the lateral frontal cortex, including parts of dorsal prefrontal cortex. The medial parietal cortex is reached by the first branch of the superior longitudinal fascicle and this innervation seems stronger in the human brain. Based on shape analysis of structural imaging data of the human and chimpanzee, Bruner and colleagues have suggested that this area is preferentially expanded in the human brain (Bruner et al., 2017). The current results suggest that this expansion is accompanied by a change in connectivity. In the frontal cortex, the forceps minor of the corpus callosum seems stronger in the human than in the macaque, suggesting increased interhemispheric connectivity within the prefrontal cortex in this species.\n\n### Translation of cortical atlases based on the connectivity blueprint\n\nAnother application of the blueprint approach to comparative anatomy is to use it to translate between brain atlases. Comparative atlases of different species' brains are rare in neuroscience, with most atlases focusing on a single species without explicit comparisons to others. The blueprint approach, however, can be used to translate between such different atlases. As an example we take the atlases of the human and vervet monkey cortex produced by Brodmann (Brodmann, 1905; Brodmann, 1908) which were converted to the human and macaque monkey surface in the Caret software (Van Essen et al., 2012). Brodmann labeled cytoarchitectonic areas in both species, but the labeling was not meant to indicate homologies (Brodmann, 1909; Petrides et al., 2012). We calculated the divergence between Brodmann areas in the two species and illustrated their similarities by projecting them to the same 2D space using spectral reordering (Higham et al., 2007) (Figure 6). At the gross level, this showed that regions within similar cortical systems group together in the 2D representation across the species. For instance, macaque primary visual areas 17 and 18 showed the smallest distance to human visual areas 17 and 18 and greatest to areas 24 and 25 belonging to the cingulate cortex and early sensorimotor areas 3 and 4 that do not receive any direct visual projections. Similarly, areas 23, 24, and 25, all reached by the cingulum bundle, tended to cluster together.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35237/elife-35237-fig6-v2.jpg)\n\n**Figure 6.:** The connectivity blueprints can be used to compare the connectivity fingerprint of cortical atlases of different species as illustrated here using Brodmann's maps of the human and monkey (left). Using spectral clustering, the divergence of the maps can be illustrated in a 2D representation, clustering together regions with the most similar connectivity fingerprint (left). Inset on the bottom right shows the atlas areas.\n\nThe fact that the nomenclature of Brodmann's maps is not always consistent between species is illustrated by monkey area 7 in the inferior parietal lobule (IPL). This area showed smallest dissimilarity to human area 40 rather than human area 7. This is consistent with the location of these areas, with human area 40 located on the angular gyrus of the IPL and human area 7 belonging to the superior parietal cortex (see highlighted area in Figure 6). This result confirms earlier suggestions that the IPLs in the two species are indeed most similar to one another (cf. Mars et al. [2011]) even though human IPL receives stronger arcuate connections, as demonstrated above. In sum, these results show that our approach can be used to translate existing cortical atlases across species, unifying previously diverse anatomical endeavors.\n\n## Discussion\n\nWe have presented an approach to quantitatively compare cortical organization across species using their connectivity blueprint. We were able to predict known homologies between humans and macaques, such as the similarity of areas in visual cortex and the location of medial pre-SMA, but also to identify areas of diverging connectional reorganizations since the last common ancestor of humans and macaques. Moreover, we were able to provide a quantitative comparison of previously established atlases of the two species. We discuss the implications of this approach below, leaving a detailed discussion of its contribution to understanding macaque/human differences, including differences in lateralization and a further exploration of uniquely human aspects of temporal and frontal cortex organization, to a future communication.\n\nComparing the organization of the brains of related species is a fundamental challenge in neuroscience. Translational work relies on the assumption of evolutionary conservation, while evolutionary neuroscience aims to identify specializations explaining each species' unique adaptations (Preuss et al., 2001). Although cortical atlases are available for a number of model species, such as the macaque and marmoset monkeys, these are often not built with explicit comparisons in mind (Petrides et al., 2012). Moreover, the laborious and invasive nature of traditional cortical mapping studies means there are few maps even of our closest relatives, such as the great apes. The current work exploits the benefits of neuroimaging to quickly acquire detailed anatomical data from whole brains, both in-vivo or based on post-mortem preserved tissue. The simplicity of this approach means it can be widely applied and easily extended.\n\nThe current results demonstrate which parts of the human cortex have a large connectional dissimilarity to the macaque. Earlier direct comparisons between the human and macaque cortex used surface-based registration based on a few known homologous cortical landmarks to create an expansion map showing which areas in the human brain have disproportionally expanded compared to the macaque (Van Essen and Dierker, 2007). This map showed areas of expansion in lateral prefrontal, inferior parietal, temporoparietal, and medial frontal cortex. Our connectional dissimilarity map is not an expansion map, but rather a map of connectional reorganization. Thus, the two maps describe separate aspects of cortical specialization, both of which are important in understanding what makes any one brain unique. Note, however, that the concept of the blueprint can also be used to create expansion maps that, rather than relying on morphological landmarks, use the blueprint as an anchor for measuring expansions. Similarly, a connectivity profile forms a different aspect of organization than the diversity of connections that a region receives, as indicated by our entropy map of tract distributions. There are different types of cortical organization that can result in a unique connectivity fingerprint, including invasion of new cortical territory as in the case of the arcuate and a change in the balance of connections due to strengthening of a particular connection (cf. Mars et al., 2018). A future step will be to create comparative maps that specifically quantify these different types of cortical reorganization.\n\nOur approach to comparative anatomy effectively defines a common space, the connectivity blueprint, for the brains of different species based on connections with white matter tracts. This approach was chosen because the body of these tracts can be reliably identified, ensuring that the common space is based on properties that are homologous. The tracts were established using recipes developed by the authors. Although in agreement with the published literature, this inevitably requires some judgment calls. An alternative would be to describe the tracts based on observer-independent approaches (O'Muircheartaigh and Jbabdi, 2018), an approach that we aim to investigate in the future. However, if there is doubt regarding a particular tract, the current approach can also be used to test hypotheses regarding its course by testing the effect of various configurations on the similarity of the two brains. For example, one could search for a set of white matter tracts, a blueprint, that minimizes differences between cortical organization, under a parsimonious assumption of no connectional reorganization.\n\nThe ultimate strength in this approach is in its flexibility. It can be used to predict features of cortical organization such as the T1/T2-weighted map we have shown here, but also to predict how specific systems translate between species (e.g., the multiple demand network, Mitchell et al., 2016) or task-related activations when two species perform a similar task. Importantly, the approach can be generalized further by adapting the common space to include data from other modalities, including resting state functional MRI networks and maps of grey matter tissue properties such as myelin content or relative cortical thickness.\n\nIn summary, a connectivity blueprint approach to comparative anatomy can allow us to bridge cortical organizations in higher primates. Ultimately, this will lead to a reference template that represents common connectional organizations, deviations from which indicating species-specific specializations.\n\n## Materials\u00a0and\u00a0methods\n\n### Macaque data\n\nFour post-mortem macaque diffusion MRI datasets were used. Data from one male macaque (Macaca fascicularis) from a previous study (de Crespigny et al., 2005) were obtained and preprocessed as described in Jbabdi et al. (2013). Relevant imaging parameters were: 4.7T Oxford magnet equipped with BGA12 gradients; 3D segmented spin-echo EPI (430 um isotropic resolution, eight shots, TE\u00a0=\u00a033 ms, TR 350 ms, 120 isotropically distributed diffusion directions, b-value\u00a0=\u00a08000 s/mm2.\n\nThree additional macaque (Macaca mulatta) datasets (two male) were acquired locally on a 7T magnet with an Agilent DirectDrive console (Agilent Technologies, Santa Clara, CA, USA) using a 2D diffusion-weighted spin-echo protocol with single line readout (DW-SEMS, TE/TR: 25 ms/10 s; matrix size: 128 \u00d7 128; resolution: 0.6 x 0.6 mm; number of slices: 128; slice thickness: 0.6 mm). In these three monkeys, nine non-diffusion-weighted (b\u00a0=\u00a00 s/mm2) and 131 diffusion-weighted (b\u00a0=\u00a04000 s/mm2) volumes were acquired with diffusion directions distributed over the whole sphere. The brains were soaked in PBS before scanning and placed in fomblin during the scan. The b\u00a0=\u00a00 images were averaged and spatial signal inhomogeneities were restored. Diffusion-weighted images were processed using FMRIB's Diffusion Toolbox, first to fit diffusion tensors and estimate the mean diffusivity and fractional anisotropy, followed by voxel-wise model fitting of diffusion orientations using BedpostX, using a crossing fiber model limited to three fiber directions (Behrens et al., 2007).\n\n### Human data\n\nHuman in-vivo data was obtained from the minimally pre-processed data provided by the Human Connectome Project (www.humanconnectome.org) (Van Essen et al., 2013). All acquisition parameters and processing pipelines are described in detail in U\u011furbil et al. (2013), Sotiropoulos et al. (2013), and Glasser et al. (2013). The diffusion MRI data consisted of three shells (b-values\u00a0=\u00a01000, 2000, and 3000 s/mm2) with 270 diffusion directions equally spread amongst the shells, and six b\u00a0=\u00a00 s/mm2 acquisitions within each shell, with a spatial resolution of 1.25 mm isotropic voxels. Ten subjects were chosen randomly from the Q900 data release. Data were pre-processed with the HCP pipeline, which involves susceptibility-induced distortion correction (Andersson et al., 2003) and eddy-current distortion and motion correction (Andersson and Sotiropoulos, 2016). A crossing fibre model adapted to multi-shell data (Jbabdi et al., 2012) was fitted to the data prior to tractography.\n\n### Surfaces\n\nModels of the cortical surface were used for both humans and monkeys, including the pial surface and the white-gray matter interface. For humans, individual surface models were used, as provided through the HCP pipeline (Glasser et al., 2013), based on a Freesurfer surface reconstruction (Dale et al., 1999). For the macaque, we used surface reconstructions of one macaque with high quality structural MRI and nonlinearly (FSL\u2019s FNIRT) warped the other three macaque brains to enable using the same surface models in all four macaques. Macaque surfaces were then transformed to F99 standard space (Van Essen, 2002) to facilitate the combination of tractography results. All the surfaces (macaque and human) were downsampled from\u00a0~32 to\u00a0~10 k vertices prior to tractography analyses.\n\n### Extracting the anatomical blueprint\n\nProbabilistic diffusion tractography (Behrens et al., 2007) as implemented in FSL's probtrackx2 was used to extract the anatomical blueprints of macaques and humans. We extended an automated tractography tool (autoPtx, De Groot et al., 2013) to include a set of 39 major white matter bundles (18 on each hemisphere, and three cross-hemispheric pathways). Each bundle was reconstructed using a set of seed/inclusion/exclusion masks drawn in standard space (MNI152 for humans and F99 for macaques [Van Essen, 2002]). Tractography protocols for building the blueprints, code, and results are available for download from Gitlab at https://git.fmrib.ox.ac.uk/rmars/comparing-connectivity-blueprints.git (Jbabdi et al., 2018);\u00a0copy archived\u00a0at\u00a0https://github.com/elifesciences-publications/rmars-comparing-connectivity-blueprints ).\n\n### Creating connectivity blueprints\n\nAs shown in Figure 1, a connectivity blueprint consists of a (cortex) x (tracts) matrix where the tracts dimension is shared across both species. We build this matrix in two steps. First, we create a (cortex) x (whole brain) matrix by seeding probabilistic streamlines in standard space from every cortical vertex and recording the number of samples reaching each brain voxel (at 1 mm/2 mm resolution for F99 macaque/MNI152 human). This is done using the \u2018matrix2\u2019 mode in probtrackx2. Second, we multiplied the resulting matrix with a (brain) x (tracts) matrix, thus creating a (cortex) x (tracts) matrix. Rows of this matrix can be interpreted (once normalized to sum to one) as the probability distribution of streamlines from a given vertex to connect to each of the 39 tracts.\n\n### Comparing connectivity blueprints\n\nWe here introduce some mathematical notation: let M and H be the connectivity blueprint matrices for macaques and humans. For example, Mik quantifies the probability that vertex i in the macaque cortex connects to tract k. We normalize the rows of M and H to sum to 1, thus turning the rows into a discrete probability distribution.\n\nTo compare the fingerprint of vertex i in macaque to vertex j in humans, we use the symmetric Kullback-Leibler (KL) divergence (Kullback and Leibler, 1951) as a dissimilarity measure:\n\n$$\nD_{ij}=\\sumkM_{ik}log_{2}\u2061\\frac{M_{ik}}{H_{jk}}+\\sumkH_{jk}log_{2}\u2061\\frac{H_{jk}}{M_{ik}}\n$$\n\nSimilarly, the same distance measure can be used to compare two vertices within species.\n\n### Mapping between species\n\nThe similarity matrix calculated above can be used to transform a map from one species to the other using distance weighted interpolation (as done to map the myelin map from human to macaque in the Results section).\n\nGiven a map on the human cortex hi where i indexes vertices, we obtain a transformed macaque map m as follows:\n\n$$\nm_{j}=\\frac{\\sumD_{ji}^{\\gamma}h_{i}}{\\sumD_{ji}^{\\gamma}}\n$$\n\nwhere we used $\\gamma=\u22124.$\n",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "a27ebd47-2989-4924-921d-8a826dc9bb87",
+      "submission_id": "a507d72d-f00c-4a79-99c4-9782098e96b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Klaas Enno Stephan, University of Zurich and ETH Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35237.012](https://doi.org/10.7554/eLife.35237.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Whole brain comparative anatomy using connectivity blueprints\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Klaas Stephan as Reviewing Editor and Sabine Kastner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michel Thiebaut de Schotten (Reviewer #1); Daniel S Margulies (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents a novel approach to comparative anatomy across species, based on the idea of matching white matter tracts. This paper focuses on the comparison of human and macaque monkey brains. After identifying homologous tracts of the human and macaque monkey brains, these \"connectivity blueprints\" are used to define a common space for assessing how parts of grey matter in one species maps onto the other species. The correspondence across species is quantified using a dissimilarity measure from information theory, the Kullback-Leibler (KL) divergence.\n\nBoth reviewers and the handling editor found that the paper is original, innovative and of considerable importance for advancing the investigation of species differences and similarities in connectivity. We have a few suggestions for your consideration that may further improve the paper.\n\nEssential revisions:\n\n1) The authors implement a vertex-wise mapping to transform the human myelin map to the macaque monkey cortex, which they visually compare with a previously published map. While this analysis does establish proof-of-concept, and the results are indeed striking, it would be helpful to further present a direct statistical comparison of the two macaque monkey maps. For example, at this stage, the authors may want to consider how the question could already be assessed of where the species diverge based on the differences in myelin maps, and whether the localized divergence may be meaningful.\n\n2) The whole-cortex comparison is the focus of the following analyses, which present the divergence maps across species, and visually compare them to previously published maps of connectivity entropy and cortical expansion based on landmarks. Again, while the visual comparison is certainly valid for providing a general impression of the overarching consistency and more subtle deviations across these approaches, any quantitative comparison of the maps that could help to reveal specific deviations would help further support the utility of the current approach based on connectivity correspondence. As the cortical maps presented in the macaque myelin and cortical expansion figures are both publicly available, this would be a feasible addition to the current manuscript, and would establish more rigorous comparison of different approaches to comparative cortical mapping.\n",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ad66ebb-e386-4224-b0e3-6dc4cde21265",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C1",
+      "claim": "White matter organization has striking commonalities between different primate species.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher primates, white matter organization has striking commonalities between the different species (Thiebaut de Schotten et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thiebaut de Schotten et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "64c5f492-faf1-40d4-af07-4c170ef500bc",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C2",
+      "claim": "Several association pathways have been identified in humans, chimpanzees, and macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Several association pathways have been identified in humans, chimpanzees, and macaques (Rilling et al., 2008; Hecht et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rilling et al., 2008 and Hecht et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "d91a8dcf-34f5-4983-9df2-7f61ea9b30e9",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C3",
+      "claim": "White matter pathways share core properties such as the broad brain areas that they connect, but differ in the details of their branching patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways share core properties such as the broad brain areas that they connect, but differ in the details of their branching patterns, suggesting a common connectivity backbone with varying degrees of connectivity specialization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of pathways across species",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "bd0404dd-173f-4bf9-b68f-a065e9a030dd",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C4",
+      "claim": "Cortical regions can be described by their unique sets of connections to the rest of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We exploit the idea that cortical regions can be described by their unique sets of connections to the rest of the brain (Passingham et al., 2002), a feature that we have previously shown is useful in comparing brain organization between species (Mars et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Passingham et al., 2002 and Mars et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "c4561d91-3d0d-4312-9c91-bf1ad41c8f39",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C5",
+      "claim": "The bodies of major fiber bundles can be identified reliably in different species.",
+      "claim_type": "EXPLICIT",
+      "source": "The bodies of the major fiber bundles can be identified reliably in different species and allow identification of homologous fiber bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' knowledge and methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "3353b16b-e480-4310-8b8a-fe046204f9f9",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C6",
+      "claim": "39 tracts common across both species were defined and reconstructed using probabilistic tractography.",
+      "claim_type": "EXPLICIT",
+      "source": "(a) 39 tracts common across both species were defined and reconstructed using probabilistic tractography.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in methods and shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "5859d613-cef8-4e36-9301-01c509fc910e",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C7",
+      "claim": "The MT+ complex is located in the ventrolateral part of the posterior temporal cortex in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The MT +complex is located in the ventrolateral part of the posterior temporal cortex in the human brain (hMT+; Malikovic et al., 2016), but is located more dorsally in the ventral bank of the posterior superior temporal sulcus in the macaque monkey (Paxinos et al., 2000) (Figure 2, left panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Malikovic et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "713f103b-309b-4bc7-afba-475a21607129",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C8",
+      "claim": "The MT+ complex is located more dorsally in the ventral bank of the posterior superior temporal sulcus in the macaque monkey.",
+      "claim_type": "EXPLICIT",
+      "source": "The MT +complex is located in the ventrolateral part of the posterior temporal cortex in the human brain (hMT+; Malikovic et al., 2016), but is located more dorsally in the ventral bank of the posterior superior temporal sulcus in the macaque monkey (Paxinos et al., 2000) (Figure 2, left panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Paxinos et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "a2dcdc5a-f5ce-405a-b59a-62c15eacef8b",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C9",
+      "claim": "hMT+ can be identified as a region of high myelin in the posterior temporal cortex that can be visualized using the ratio of T1- and T2-weighted MRI scans.",
+      "claim_type": "EXPLICIT",
+      "source": "hMT + can be identified as a region of high myelin in the posterior temporal cortex that can be visualized using the ratio of T1- and T2-weighted MRI scans (Glasser and Van Essen, 2011; Large et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Glasser and Van Essen, 2011 and Large et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "8fad4643-5f41-4c1a-8cb2-dfce73e99970",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C10",
+      "claim": "The peak of hMT+ is reached by tracts associated with the visual system such as the occipital radiations and the ventral occipital fascicle, but also by longitudinal tracts such as the inferior longitudinal fascicle.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak of hMT + is reached by tracts associated with the visual system such as the occipital radiations and the ventral occipital fascicle, but also by longitudinal tracts such as the inferior longitudinal fascicle (Yeterian and Pandya, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yeterian and Pandya, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "3a8701d6-9b60-4454-af73-cdd49ec44bac",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C11",
+      "claim": "Comparison of connectivity blueprints identified the ventral bank of the macaque STS as most similar to human MT+.",
+      "claim_type": "EXPLICIT",
+      "source": "We created a map of the macaque cortex indicating how different each vertex's connectivity profile was to that of a vertex in hMT+. This map showed the lowest divergence, that is highest similarity, in the ventral bank of the macaque STS, as predicted from the macaque cytoarchitectonic atlas.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "1b270a6c-c6d3-4c2e-b78c-489e85b4ab02",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C12",
+      "claim": "Comparison of connectivity blueprints can identify homologous areas across brains, even when their relative location has changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, comparison of connectivity blueprints can identify homologous areas across brains, even when their relative location has changed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the MT+ example",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "415be9f2-8647-40c5-b712-01c58c56a380",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C13",
+      "claim": "Human pre-SMA and macaque area F6 share similar functions across the two species.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been well-established that these two regions share similar functions across the two species (Nachev et al., 2008) and can be matched based on their connectivity profiles (Sallet et al., 2013; Mars et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nachev et al., 2008, Sallet et al., 2013, and Mars et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "88900045-473b-44b0-8559-e6f1090a694a",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C14",
+      "claim": "Macaque area F6 receives widespread connections, including from the superior longitudinal fascicle, the cingulum bundle, and the frontal aslant.",
+      "claim_type": "EXPLICIT",
+      "source": "Its connectivity fingerprint shows that it receives widespread connections, including from the superior longitudinal fascicle, the cingulum bundle, and the frontal aslant (cf. Thiebaut de Schotten et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis and supported by citation to Thiebaut de Schotten et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "232c5282-5667-4605-8e20-0e7686d2ddb9",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C15",
+      "claim": "The KL divergence between the connectivity fingerprint of macaque F6 and each vertex of the human cortex identified an area of the human medial prefrontal cortex, anterior to the supplementary motor area proper, as most similar to macaque area F6.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the Kullback-Leibler (KL) divergence between the connectivity fingerprint of F6 and that of each vertex of the human cortex. This map identified an area of the human medial prefrontal cortex, anterior to the supplementary motor area proper (Figure 2, right panel) and consistent with previous localizations of this area in the human (Nachev et al., 2008; Mars et al., 2016), as most similar to macaque area F6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "66e33bcd-b26a-478e-8ad9-f4c11a4f0a28",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C16",
+      "claim": "T1/T2-weighted maps partly reflect the presence of cortical myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "One such map that is easily obtainable from neuroimaging is a T1/T2-weighted map, which has been suggested to partly reflect the presence of cortical myelin (Glasser et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glasser et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "67f4daa0-2d6e-40f4-ac4a-9082878bf390",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C17",
+      "claim": "T1/T2-weighted maps show high values in primary sensory areas, low values in prefrontal and parietal association cortex, and intermediate values in frontal oculomotor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "T1/T2-weighted maps show a number of distinctive features across the human cortical hemisphere that are qualitatively similar to myelination maps, such as high values in primary sensory areas, low values in prefrontal and parietal association cortex, and intermediate values in frontal oculomotor areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of T1/T2-weighted maps",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "92fb7b81-408e-496b-bf06-2f424aed30e5",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C18",
+      "claim": "The predicted macaque T1/T2-weighted map based on human data showed striking similarities to the actual macaque myelin map.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted map showed striking similarities to the actual macaque myelin map (Glasser et al., 2014), replicating the high myelin in the primary visual, auditory, and sensorimotor cortex and the low myelin in the prefrontal cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "d02a3e62-9f12-4bf1-8b16-8bb4ef07bc61",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C19",
+      "claim": "The predicted macaque T1/T2-weighted map showed an intermediate level of myelin in the macaque inferior parietal cortex, whereas in reality this is an area with low myelin content.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the predicted map showed an intermediate level of myelin in the macaque inferior parietal cortex, whereas in reality this is an area with low myelin content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of predicted and actual maps",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "40a6ea7c-cfa5-4ac6-8bb1-baabb2f8bb91",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C20",
+      "claim": "Poorer predictions are mostly located in the association cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While this could be due to limitations in the methods, it is noticeable that the poorer predictions are mostly located in the association cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the analysis of prediction errors",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "20630215-f070-47bd-9b79-bd83336d9373",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C21",
+      "claim": "A large region of human inferior parietal and posterior temporal cortex, precuneus, and parts of the frontal cortex could not be predicted from any part of the macaque brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting connectional dissimilarity map showed a large region of human inferior parietal and posterior temporal cortex, precuneus, and to a lesser extent parts of the frontal cortex that could not be predicted from any part of the macaque brain (Figure 4, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "0a79a349-3976-4e25-a561-64acc41edd91",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C22",
+      "claim": "The connectional dissimilarity map did not correlate with any particular aspect of the connectivity fingerprint, such as a map of the entropy of tract distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the between-species predictability did not correlate with any particular aspect of the connectivity fingerprint, such as a map of the entropy of tract distribution (i.e., whether a region is reached strongly by few tracts or equally strongly by multiple tracts) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "ecd00d0b-008e-481d-ab90-2d73da4a575a",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C23",
+      "claim": "The connectional dissimilarity map overlapped with, but was different to a map of cortical expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the connectional dissimilarity map overlapped with, but was different to a map of cortical expansion (Van Essen and Dierker, 2007), indicating that reorganization and expansion reflect separate aspects of brain reorganization (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 4 and citation to Van Essen and Dierker, 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "34c83f97-18c0-4962-b4ff-54898e09f6ae",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C24",
+      "claim": "Reorganization and expansion reflect separate aspects of brain reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the connectional dissimilarity map overlapped with, but was different to a map of cortical expansion (Van Essen and Dierker, 2007), indicating that reorganization and expansion reflect separate aspects of brain reorganization (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of connectional dissimilarity and expansion maps",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "7392c3b0-0034-48ef-aa4f-2fbfc7168e04",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C25",
+      "claim": "The vertex with the highest minimum KL divergence in the human brain is reached very prominently by the arcuate fascicle.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the fingerprint of the vertex with the highest minimum KL divergence in the human brain, that is, the vertex that has the least similar match in the macaque, to the fingerprint of the most similar macaque vertices (Figure 5). This showed that this vertex is reached very prominently by the arcuate fascicle (AF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "3cabe976-593a-4400-9e31-2af98dd65b15",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C26",
+      "claim": "The vertex with the highest minimum KL divergence is located in the posterior part of the temporal cortex, an area that often shows activation in phonological or semantic tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The vertex is located in the posterior part of the temporal cortex, an area that often shows activation in phonological or semantic tasks (Price, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Price, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "142c29fc-f363-4f91-b212-8e25ee943f17",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C27",
+      "claim": "The anterior part of the human angular gyrus receives stronger AF connectivity than its proposed macaque homolog area PG.",
+      "claim_type": "EXPLICIT",
+      "source": "The angular gyrus has also been suggested to receive stronger AF connectivity than its proposed macaque homolog area PG (Rilling et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rilling et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "c66de856-1177-41b4-8ddc-6289a3f7b067",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C28",
+      "claim": "Part of angular gyrus shows activation during phoneme detection.",
+      "claim_type": "EXPLICIT",
+      "source": "This part of angular gyrus shows activation during phoneme detection (Simon et al., 2002) and has stronger grey matter density in bilinguals and adults who have learned to read compared to illiterates (Carreiras et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Simon et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "b73f5286-5aa0-480b-9fa9-9a1337d13e49",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C29",
+      "claim": "Part of angular gyrus has stronger grey matter density in bilinguals and adults who have learned to read compared to illiterates.",
+      "claim_type": "EXPLICIT",
+      "source": "This part of angular gyrus shows activation during phoneme detection (Simon et al., 2002) and has stronger grey matter density in bilinguals and adults who have learned to read compared to illiterates (Carreiras et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Carreiras et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "919b1344-0622-4ee9-acd3-fb42bac2537d",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C30",
+      "claim": "Neurons in macaque area PG show visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this role, neurons in macaque area PG show visual responses (Rozzi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rozzi et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "5a7d9555-e3f2-459b-92b2-cb3618810cc7",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C31",
+      "claim": "Human angular gyrus receives input from the visual word form area.",
+      "claim_type": "EXPLICIT",
+      "source": "Human angular gyrus receives input from the visual word form area (Saygin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saygin et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "bc956657-d59a-451a-87ed-2a5beca59d89",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C32",
+      "claim": "The human brain contains areas with an organization not seen in the macaque in areas recruited into the language system.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results are consistent with the suggestion that the human brain contains areas with an organization not seen in the macaque in areas recruited into the language system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the analysis of connectivity differences in language-related areas",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "6d473fac-eab5-4b52-a853-d1f15ccac899",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C33",
+      "claim": "The medial parietal cortex is reached by the first branch of the superior longitudinal fascicle and this innervation seems stronger in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The medial parietal cortex is reached by the first branch of the superior longitudinal fascicle and this innervation seems stronger in the human brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "abdc5a30-a1b6-44e4-a0cc-6193356fdf7b",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C34",
+      "claim": "Medial parietal cortex area 7m is preferentially expanded in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on shape analysis of structural imaging data of the human and chimpanzee, Bruner and colleagues have suggested that this area is preferentially expanded in the human brain (Bruner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bruner et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "e4f3f86c-f551-4062-865e-20fb7be66c8c",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C35",
+      "claim": "The expansion of medial parietal cortex is accompanied by a change in connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The current results suggest that this expansion is accompanied by a change in connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the connectivity analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "51c36d7c-55a1-4177-859c-4c2377f2b260",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C36",
+      "claim": "The forceps minor of the corpus callosum seems stronger in the human than in the macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "In the frontal cortex, the forceps minor of the corpus callosum seems stronger in the human than in the macaque, suggesting increased interhemispheric connectivity within the prefrontal cortex in this species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "f8d72847-8b65-442f-bcba-41bae523f8f4",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C37",
+      "claim": "Humans have increased interhemispheric connectivity within the prefrontal cortex compared to macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "In the frontal cortex, the forceps minor of the corpus callosum seems stronger in the human than in the macaque, suggesting increased interhemispheric connectivity within the prefrontal cortex in this species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the stronger forceps minor in humans",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "c3f61ed8-c383-48f0-bf05-e0cd83ce45c6",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C38",
+      "claim": "Regions within similar cortical systems group together in the 2D representation across species.",
+      "claim_type": "EXPLICIT",
+      "source": "At the gross level, this showed that regions within similar cortical systems group together in the 2D representation across the species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "0112ec0a-bb97-4585-8440-a77c74900730",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C39",
+      "claim": "Macaque primary visual areas 17 and 18 showed the smallest distance to human visual areas 17 and 18.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, macaque primary visual areas 17 and 18 showed the smallest distance to human visual areas 17 and 18 and greatest to areas 24 and 25 belonging to the cingulate cortex and early sensorimotor areas 3 and 4 that do not receive any direct visual projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "53de465a-6d42-4e80-aac3-3eef3659a34e",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C40",
+      "claim": "Areas 23, 24, and 25, all reached by the cingulum bundle, tended to cluster together.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, areas 23, 24, and 25, all reached by the cingulum bundle, tended to cluster together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "251c9e85-2e62-4646-910d-b9b62a47c8ab",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C41",
+      "claim": "Monkey area 7 in the inferior parietal lobule showed smallest dissimilarity to human area 40 rather than human area 7.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the nomenclature of Brodmann's maps is not always consistent between species is illustrated by monkey area 7 in the inferior parietal lobule (IPL). This area showed smallest dissimilarity to human area 40 rather than human area 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "b386aa19-940f-43cb-a043-7cf89302ea8e",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C42",
+      "claim": "Human area 40 is located on the angular gyrus of the IPL and human area 7 belongs to the superior parietal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the location of these areas, with human area 40 located on the angular gyrus of the IPL and human area 7 belonging to the superior parietal cortex (see highlighted area in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on established anatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "3676b2df-7649-464d-b9e4-4fa4a7b12f56",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C43",
+      "claim": "The IPLs in humans and macaques are most similar to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms earlier suggestions that the IPLs in the two species are indeed most similar to one another (cf. Mars et al. [2011]) even though human IPL receives stronger arcuate connections, as demonstrated above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mars et al., 2011 and current data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "3018e2ac-4faf-4021-96a3-8b52a71dadf9",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C44",
+      "claim": "Human IPL receives stronger arcuate connections than macaque IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms earlier suggestions that the IPLs in the two species are indeed most similar to one another (cf. Mars et al. [2011]) even though human IPL receives stronger arcuate connections, as demonstrated above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis presented earlier in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "7a5bf159-f84e-435b-8258-e99c0583b40c",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C45",
+      "claim": "Comparative atlases of different species' brains are rare in neuroscience.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative atlases of different species' brains are rare in neuroscience, with most atlases focusing on a single species without explicit comparisons to others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on general knowledge of the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "ad13a5e1-1020-49f2-b822-68f8395e2fb1",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C46",
+      "claim": "Brodmann's labeling was not meant to indicate homologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Brodmann labeled cytoarchitectonic areas in both species, but the labeling was not meant to indicate homologies (Brodmann, 1909; Petrides et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brodmann, 1909 and Petrides et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "08321c60-e1bf-484f-ad4c-7d62f52004c0",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C47",
+      "claim": "An expansion map shows which areas in the human brain have disproportionally expanded compared to the macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier direct comparisons between the human and macaque cortex used surface-based registration based on a few known homologous cortical landmarks to create an expansion map showing which areas in the human brain have disproportionally expanded compared to the macaque (Van Essen and Dierker, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van Essen and Dierker, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "e4ce64d9-7fd7-44aa-acf0-8c2a762ad377",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C48",
+      "claim": "The expansion map showed areas of expansion in lateral prefrontal, inferior parietal, temporoparietal, and medial frontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This map showed areas of expansion in lateral prefrontal, inferior parietal, temporoparietal, and medial frontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the expansion map from Van Essen and Dierker, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "0a321896-6893-4510-a9fb-c7a2566c6ffc",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C49",
+      "claim": "The connectional dissimilarity map is not an expansion map, but rather a map of connectional reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our connectional dissimilarity map is not an expansion map, but rather a map of connectional reorganization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' interpretation of their results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "0ca99f2f-19e2-463a-a9eb-9e3102bac6a5",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C50",
+      "claim": "The connectional dissimilarity map and expansion map describe separate aspects of cortical specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the two maps describe separate aspects of cortical specialization, both of which are important in understanding what makes any one brain unique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of the two types of maps",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "eae0932a-30b5-47f7-a8a5-22253b4741b6",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C51",
+      "claim": "Four post-mortem macaque diffusion MRI datasets were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Four post-mortem macaque diffusion MRI datasets were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "fefc652a-ec26-4440-9f8a-dce5c5d86e61",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C52",
+      "claim": "Human in-vivo data was obtained from the minimally pre-processed data provided by the Human Connectome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "Human in-vivo data was obtained from the minimally pre-processed data provided by the Human Connectome Project (www.humanconnectome.org) (Van Essen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section with citation to Van Essen et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "7b5d69d2-6c81-4c22-ae75-1b8506d620ac",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C53",
+      "claim": "Ten subjects were chosen randomly from the Q900 data release.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten subjects were chosen randomly from the Q900 data release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "28c7294a-5874-4e1f-85bf-7aa30709ca3f",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C54",
+      "claim": "Probabilistic diffusion tractography was used to extract the anatomical blueprints of macaques and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Probabilistic diffusion tractography (Behrens et al., 2007) as implemented in FSL's probtrackx2 was used to extract the anatomical blueprints of macaques and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section with citation to Behrens et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "ad2635de-9aed-48ec-9331-db8e69f15498",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C55",
+      "claim": "An automated tractography tool was extended to include a set of 39 major white matter bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended an automated tractography tool (autoPtx, De Groot et al., 2013) to include a set of 39 major white matter bundles (18 on each hemisphere, and three cross-hemispheric pathways).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section with citation to De Groot et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "f63e466a-fb60-43de-bf61-3b315e63790f",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "claim_id": "C56",
+      "claim": "The symmetric Kullback-Leibler divergence was used as a dissimilarity measure to compare connectivity fingerprints.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the fingerprint of vertex i in macaque to vertex j in humans, we use the symmetric Kullback-Leibler (KL) divergence (Kullback and Leibler, 1951) as a dissimilarity measure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section with citation to Kullback and Leibler, 1951",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c30f7286-4def-4a6b-86e1-c057af4de218",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish that white matter organization shows commonalities across primate species, with major fiber bundles identifiable across species. They define 39 common white matter tracts across humans and macaques using probabilistic tractography to create connectivity blueprints based on the principle that cortical regions can be described by their unique connection patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by citations to prior work (C1-C4) and methodological descriptions with visual evidence in Figure 1 (C5-C6). The approach builds on established principles of connectivity-based parcellation and extends validated tractography methods to create a common reference framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "2604d156-c64a-4e9c-b5a5-f3354082736a",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The connectivity blueprint approach successfully identifies homologous area MT+ across human and macaque brains despite different anatomical locations. Using KL divergence to compare connectivity fingerprints, the method correctly localizes macaque MT+ to the ventral bank of the STS, matching the known anatomical location from cytoarchitectonic atlases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 provide converging evidence from anatomical knowledge (C7-C10), empirical data analysis shown in Figure 2 (C11), and logical inference (C12). The successful prediction of a known homology serves as strong validation of the method's ability to identify corresponding areas across species even when relative positions differ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "233d5b51-8b9a-47c4-91a8-8a4cad20c5e5",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The connectivity blueprint method successfully identifies human pre-SMA as homologous to macaque area F6 based on connectivity fingerprints. The KL divergence analysis localizes the human homolog to the medial prefrontal cortex anterior to SMA proper, consistent with prior functional and connectivity studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are supported by prior literature establishing functional homology (C13), tractography data showing connectivity patterns (C14), and empirical KL divergence analysis (C15) shown in Figure 2. This provides independent validation of the method beyond the visual system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "b98d2cdf-8ca9-40b8-8f4f-ed376478a698",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The connectivity blueprint can predict cortical organization features across species. The method successfully predicts macaque T1/T2-weighted maps from human data, showing striking similarities in primary sensory areas but notable discrepancies in association cortex, particularly inferior parietal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 demonstrate both the utility and limitations of the approach. The successful prediction of myelin patterns in primary areas (C18) validates the method, while acknowledged failures in association cortex (C19-C20) are appropriately interpreted as potential biological differences rather than purely methodological limitations. Figure 3 provides visual and quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "e364fa76-2add-40d8-b3e1-8e3cfe471395",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A connectional dissimilarity map identifies regions of human cortex with connectivity patterns not found in macaque, particularly in inferior parietal, posterior temporal, and precuneus regions. This dissimilarity is independent of connectivity entropy and represents a distinct aspect of brain organization from cortical expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by empirical analysis shown in Figure 4. The demonstration that connectional dissimilarity does not correlate with entropy (C22) and differs from expansion maps (C23) strengthens the interpretation that this represents genuine reorganization rather than methodological artifacts. The inference that reorganization and expansion are separate (C24) is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "f647ee27-9658-495a-9fa7-647700ca2417",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Human regions showing greatest connectional dissimilarity from macaque are characterized by strong arcuate fascicle connectivity and are located in language-related areas including posterior temporal cortex and angular gyrus. These areas show functional associations with phonological and semantic processing in humans, while macaque homologs show primarily visual responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 integrate empirical connectivity data (C25, Figure 5) with extensive literature on functional specialization (C26-C31). The convergence of connectivity differences with known functional specializations for language provides strong support for the interpretation that these represent genuine evolutionary reorganization (C32). All functional claims are appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "4c4f5648-08e6-4569-8825-0f0862a7f155",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Human medial parietal cortex (area 7m) shows stronger connectivity from the superior longitudinal fascicle compared to macaque. This connectivity change accompanies the preferential expansion of this region in humans documented by prior morphometric studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 combine empirical connectivity data (C33) with cited morphometric evidence (C34) to infer that expansion is accompanied by connectivity reorganization (C35). The inference is reasonable given the data, though the causal relationship between expansion and connectivity change cannot be determined from these cross-sectional comparative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "6b3916ae-1c6e-4e4b-a725-1ffc350b153e",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The forceps minor of the corpus callosum appears stronger in humans than macaques, suggesting increased interhemispheric connectivity within prefrontal cortex in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C37 are based on visual inspection of connectivity data without quantitative statistical comparison. The use of \"seems stronger\" (C36) and \"suggesting\" (C37) appropriately indicates uncertainty, but no formal statistical test or effect size is provided. The inference requires validation with quantitative analysis and consideration of potential confounds from differences in brain size and imaging parameters between species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "8b03d896-72e8-4313-8619-c957f63b319b",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The connectivity blueprint approach can translate between existing cortical atlases across species. Applying the method to Brodmann's maps shows that regions within similar functional systems cluster together, and reveals that nomenclature inconsistencies (e.g., macaque area 7 matching human area 40 rather than human area 7) reflect genuine anatomical relationships rather than homology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 demonstrate a practical application of the method with data shown in Figure 6. The clustering of functionally related areas (C38-C40) validates the biological meaningfulness of the approach. The identification of nomenclature inconsistencies (C41-C42) and confirmation of IPL homology (C43) despite connectivity differences (C44) shows the method can distinguish genuine homology from connectivity specialization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "fc30da82-ed4d-4332-92fc-d48654ab35af",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The connectivity blueprint approach provides a novel framework for comparative neuroanatomy that differs from existing expansion maps. While expansion maps show which areas have disproportionally grown, connectional dissimilarity maps reveal reorganization of connectivity patterns, representing separate and complementary aspects of cortical specialization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 appropriately contextualize the work within the field. The distinction between expansion and reorganization (C49-C50) is supported by the empirical demonstration in Figure 4 that these maps show different patterns. The conceptual framework is clearly articulated and the complementary nature of these approaches is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    },
+    {
+      "id": "6995f6e9-c380-4395-8541-a460731fdecd",
+      "content_id": "88350b84-b7b7-4070-bbb0-c12f42cfefed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study uses appropriate neuroimaging data and methods: four post-mortem macaque diffusion MRI datasets, ten human subjects from the Human Connectome Project, probabilistic tractography to reconstruct 39 white matter bundles, and symmetric KL divergence as the dissimilarity metric for comparing connectivity fingerprints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 describe the methodological approach with appropriate detail and citations. The use of established HCP data (C52), validated tractography methods (C54-C55), and appropriate statistical measures (C56) supports reproducibility. However, the small sample sizes (4 macaques, 10 humans) and lack of reported statistical testing of between-species differences are limitations not fully addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:32:42.950670Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ad66ebb-e386-4224-b0e3-6dc4cde21265",
+      "result_id": "c30f7286-4def-4a6b-86e1-c057af4de218"
+    },
+    {
+      "claim_id": "64c5f492-faf1-40d4-af07-4c170ef500bc",
+      "result_id": "c30f7286-4def-4a6b-86e1-c057af4de218"
+    },
+    {
+      "claim_id": "d91a8dcf-34f5-4983-9df2-7f61ea9b30e9",
+      "result_id": "c30f7286-4def-4a6b-86e1-c057af4de218"
+    },
+    {
+      "claim_id": "bd0404dd-173f-4bf9-b68f-a065e9a030dd",
+      "result_id": "c30f7286-4def-4a6b-86e1-c057af4de218"
+    },
+    {
+      "claim_id": "c4561d91-3d0d-4312-9c91-bf1ad41c8f39",
+      "result_id": "c30f7286-4def-4a6b-86e1-c057af4de218"
+    },
+    {
+      "claim_id": "3353b16b-e480-4310-8b8a-fe046204f9f9",
+      "result_id": "c30f7286-4def-4a6b-86e1-c057af4de218"
+    },
+    {
+      "claim_id": "5859d613-cef8-4e36-9301-01c509fc910e",
+      "result_id": "2604d156-c64a-4e9c-b5a5-f3354082736a"
+    },
+    {
+      "claim_id": "713f103b-309b-4bc7-afba-475a21607129",
+      "result_id": "2604d156-c64a-4e9c-b5a5-f3354082736a"
+    },
+    {
+      "claim_id": "a2dcdc5a-f5ce-405a-b59a-62c15eacef8b",
+      "result_id": "2604d156-c64a-4e9c-b5a5-f3354082736a"
+    },
+    {
+      "claim_id": "8fad4643-5f41-4c1a-8cb2-dfce73e99970",
+      "result_id": "2604d156-c64a-4e9c-b5a5-f3354082736a"
+    },
+    {
+      "claim_id": "3a8701d6-9b60-4454-af73-cdd49ec44bac",
+      "result_id": "2604d156-c64a-4e9c-b5a5-f3354082736a"
+    },
+    {
+      "claim_id": "1b270a6c-c6d3-4c2e-b78c-489e85b4ab02",
+      "result_id": "2604d156-c64a-4e9c-b5a5-f3354082736a"
+    },
+    {
+      "claim_id": "415be9f2-8647-40c5-b712-01c58c56a380",
+      "result_id": "233d5b51-8b9a-47c4-91a8-8a4cad20c5e5"
+    },
+    {
+      "claim_id": "88900045-473b-44b0-8559-e6f1090a694a",
+      "result_id": "233d5b51-8b9a-47c4-91a8-8a4cad20c5e5"
+    },
+    {
+      "claim_id": "232c5282-5667-4605-8e20-0e7686d2ddb9",
+      "result_id": "233d5b51-8b9a-47c4-91a8-8a4cad20c5e5"
+    },
+    {
+      "claim_id": "66e33bcd-b26a-478e-8ad9-f4c11a4f0a28",
+      "result_id": "b98d2cdf-8ca9-40b8-8f4f-ed376478a698"
+    },
+    {
+      "claim_id": "67f4daa0-2d6e-40f4-ac4a-9082878bf390",
+      "result_id": "b98d2cdf-8ca9-40b8-8f4f-ed376478a698"
+    },
+    {
+      "claim_id": "92fb7b81-408e-496b-bf06-2f424aed30e5",
+      "result_id": "b98d2cdf-8ca9-40b8-8f4f-ed376478a698"
+    },
+    {
+      "claim_id": "d02a3e62-9f12-4bf1-8b16-8bb4ef07bc61",
+      "result_id": "b98d2cdf-8ca9-40b8-8f4f-ed376478a698"
+    },
+    {
+      "claim_id": "40a6ea7c-cfa5-4ac6-8bb1-baabb2f8bb91",
+      "result_id": "b98d2cdf-8ca9-40b8-8f4f-ed376478a698"
+    },
+    {
+      "claim_id": "20630215-f070-47bd-9b79-bd83336d9373",
+      "result_id": "e364fa76-2add-40d8-b3e1-8e3cfe471395"
+    },
+    {
+      "claim_id": "0a79a349-3976-4e25-a561-64acc41edd91",
+      "result_id": "e364fa76-2add-40d8-b3e1-8e3cfe471395"
+    },
+    {
+      "claim_id": "ecd00d0b-008e-481d-ab90-2d73da4a575a",
+      "result_id": "e364fa76-2add-40d8-b3e1-8e3cfe471395"
+    },
+    {
+      "claim_id": "34c83f97-18c0-4962-b4ff-54898e09f6ae",
+      "result_id": "e364fa76-2add-40d8-b3e1-8e3cfe471395"
+    },
+    {
+      "claim_id": "7392c3b0-0034-48ef-aa4f-2fbfc7168e04",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "3cabe976-593a-4400-9e31-2af98dd65b15",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "142c29fc-f363-4f91-b212-8e25ee943f17",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "c66de856-1177-41b4-8ddc-6289a3f7b067",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "b73f5286-5aa0-480b-9fa9-9a1337d13e49",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "919b1344-0622-4ee9-acd3-fb42bac2537d",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "5a7d9555-e3f2-459b-92b2-cb3618810cc7",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "bc956657-d59a-451a-87ed-2a5beca59d89",
+      "result_id": "f647ee27-9658-495a-9fa7-647700ca2417"
+    },
+    {
+      "claim_id": "6d473fac-eab5-4b52-a853-d1f15ccac899",
+      "result_id": "4c4f5648-08e6-4569-8825-0f0862a7f155"
+    },
+    {
+      "claim_id": "abdc5a30-a1b6-44e4-a0cc-6193356fdf7b",
+      "result_id": "4c4f5648-08e6-4569-8825-0f0862a7f155"
+    },
+    {
+      "claim_id": "e4f3f86c-f551-4062-865e-20fb7be66c8c",
+      "result_id": "4c4f5648-08e6-4569-8825-0f0862a7f155"
+    },
+    {
+      "claim_id": "51c36d7c-55a1-4177-859c-4c2377f2b260",
+      "result_id": "6b3916ae-1c6e-4e4b-a725-1ffc350b153e"
+    },
+    {
+      "claim_id": "f8d72847-8b65-442f-bcba-41bae523f8f4",
+      "result_id": "6b3916ae-1c6e-4e4b-a725-1ffc350b153e"
+    },
+    {
+      "claim_id": "c3f61ed8-c383-48f0-bf05-e0cd83ce45c6",
+      "result_id": "8b03d896-72e8-4313-8619-c957f63b319b"
+    },
+    {
+      "claim_id": "0112ec0a-bb97-4585-8440-a77c74900730",
+      "result_id": "8b03d896-72e8-4313-8619-c957f63b319b"
+    },
+    {
+      "claim_id": "53de465a-6d42-4e80-aac3-3eef3659a34e",
+      "result_id": "8b03d896-72e8-4313-8619-c957f63b319b"
+    },
+    {
+      "claim_id": "251c9e85-2e62-4646-910d-b9b62a47c8ab",
+      "result_id": "8b03d896-72e8-4313-8619-c957f63b319b"
+    },
+    {
+      "claim_id": "b386aa19-940f-43cb-a043-7cf89302ea8e",
+      "result_id": "8b03d896-72e8-4313-8619-c957f63b319b"
+    },
+    {
+      "claim_id": "3676b2df-7649-464d-b9e4-4fa4a7b12f56",
+      "result_id": "8b03d896-72e8-4313-8619-c957f63b319b"
+    },
+    {
+      "claim_id": "3018e2ac-4faf-4021-96a3-8b52a71dadf9",
+      "result_id": "8b03d896-72e8-4313-8619-c957f63b319b"
+    },
+    {
+      "claim_id": "7a5bf159-f84e-435b-8258-e99c0583b40c",
+      "result_id": "fc30da82-ed4d-4332-92fc-d48654ab35af"
+    },
+    {
+      "claim_id": "ad13a5e1-1020-49f2-b822-68f8395e2fb1",
+      "result_id": "fc30da82-ed4d-4332-92fc-d48654ab35af"
+    },
+    {
+      "claim_id": "08321c60-e1bf-484f-ad4c-7d62f52004c0",
+      "result_id": "fc30da82-ed4d-4332-92fc-d48654ab35af"
+    },
+    {
+      "claim_id": "e4ce64d9-7fd7-44aa-acf0-8c2a762ad377",
+      "result_id": "fc30da82-ed4d-4332-92fc-d48654ab35af"
+    },
+    {
+      "claim_id": "0a321896-6893-4510-a9fb-c7a2566c6ffc",
+      "result_id": "fc30da82-ed4d-4332-92fc-d48654ab35af"
+    },
+    {
+      "claim_id": "0ca99f2f-19e2-463a-a9eb-9e3102bac6a5",
+      "result_id": "fc30da82-ed4d-4332-92fc-d48654ab35af"
+    },
+    {
+      "claim_id": "eae0932a-30b5-47f7-a8a5-22253b4741b6",
+      "result_id": "6995f6e9-c380-4395-8541-a460731fdecd"
+    },
+    {
+      "claim_id": "fefc652a-ec26-4440-9f8a-dce5c5d86e61",
+      "result_id": "6995f6e9-c380-4395-8541-a460731fdecd"
+    },
+    {
+      "claim_id": "7b5d69d2-6c81-4c22-ae75-1b8506d620ac",
+      "result_id": "6995f6e9-c380-4395-8541-a460731fdecd"
+    },
+    {
+      "claim_id": "28c7294a-5874-4e1f-85bf-7aa30709ca3f",
+      "result_id": "6995f6e9-c380-4395-8541-a460731fdecd"
+    },
+    {
+      "claim_id": "ad2635de-9aed-48ec-9331-db8e69f15498",
+      "result_id": "6995f6e9-c380-4395-8541-a460731fdecd"
+    },
+    {
+      "claim_id": "f63e466a-fb60-43de-bf61-3b315e63790f",
+      "result_id": "6995f6e9-c380-4395-8541-a460731fdecd"
+    }
+  ],
+  "comparisons": []
+}

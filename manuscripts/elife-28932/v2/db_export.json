@@ -1,0 +1,1996 @@
+{
+  "submission": {
+    "id": "8f14bc89-3f9a-43ec-8fb2-5d400454fa92",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:50:17.099386Z",
+    "updated_at": "2025-12-01T21:50:17.099386Z"
+  },
+  "content": [
+    {
+      "id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "submission_id": "8f14bc89-3f9a-43ec-8fb2-5d400454fa92",
+      "content_type": "manuscript",
+      "content_text": "# Diagnostic potential for a serum miRNA neural network for detection of ovarian cancer\n\n## Authors\n\n- Kevin M Elias<sup>1</sup> ([ORCID: 0000-0003-1502-5553](https://orcid.org/0000-0003-1502-5553))\n- Wojciech Fendler<sup>2</sup> ([ORCID: 0000-0002-5083-9168](https://orcid.org/0000-0002-5083-9168))\n- Konrad Stawiski<sup>4</sup> ([ORCID: 0000-0002-6550-3384](https://orcid.org/0000-0002-6550-3384))\n- Stephen J Fiascone<sup>1</sup>\n- Allison F Vitonis<sup>2</sup>\n- Ross S Berkowitz<sup>1</sup>\n- Gyorgy Frendl<sup>2</sup>\n- Panagiotis Konstantinopoulos<sup>2</sup>\n- Christopher P Crum<sup>2</sup>\n- Magdalena Kedzierska<sup>11</sup>\n- Daniel W Cramer<sup>2</sup>\n- Dipanjan Chowdhury<sup>2</sup> ([ORCID: 0000-0001-5645-3752](https://orcid.org/0000-0001-5645-3752)) \u2020\n\n### Affiliations\n\n1. Division of Gynecologic Oncology, Department of Obstetrics and Gynecology Brigham and Women\u2019s Hospital, Dana-Farber Cancer Institute Boston United States\n2. Harvard Medical School Boston United States\n3. Surgical ICU Translational Research Center Brigham and Women\u2019s Hospital Boston United States\n4. Department of Biostatistics and Translational Medicine Medical University of Lodz Lodz Poland\n5. Department of Radiation Oncology Dana-Farber Cancer Institute Boston United States\n6. Obstetrics and Gynecology Epidemiology Center, Department of Obstetrics and Gynecology Brigham and Women\u2019s Hospital Boston United States\n7. Department of Epidemiology Harvard School of Public Health Boston United States\n8. Department of Anesthesiology, Perioperative and Pain Medicine Brigham and Women\u2019s Hospital Boston United States\n9. Department of Medical Oncology Dana-Farber Cancer Institute Boston United States\n10. Division of Women\u2019s and Perinatal Pathology, Department of Pathology Brigham and Women\u2019s Hospital Boston United States\n11. Department of Clinical Oncology Medical University of Lodz Lodz Poland\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent studies posit a role for non-coding RNAs in epithelial ovarian cancer (EOC). Combining small RNA sequencing from 179 human serum samples with a neural network analysis produced a miRNA algorithm for diagnosis of EOC (AUC 0.90; 95% CI: 0.81\u20130.99). The model significantly outperformed CA125 and functioned well regardless of patient age, histology, or stage. Among 454 patients with various diagnoses, the miRNA neural network had 100% specificity for ovarian cancer. After using 325 samples to adapt the neural network to qPCR measurements, the model was validated using 51 independent clinical samples, with a positive predictive value of 91.3% (95% CI: 73.3\u201397.6%) and negative predictive value of 78.6% (95% CI: 64.2\u201388.2%). Finally, biologic relevance was tested using in situ hybridization on 30 pre-metastatic lesions, showing intratumoral concentration of relevant miRNAs. These data suggest circulating miRNAs have potential to develop a non-invasive diagnostic test for ovarian cancer.\n\n## Introduction\n\nInvasive epithelial ovarian cancer (EOC) is the leading cause of death from gynecologic cancer among women in developed countries (Siegel et al., 2016). Most women with EOC present with advanced stage disease, where 5 year survival rates average 25\u201330%, highlighting the need for an effective screening strategy. Unfortunately, two large-scale randomized clinical trials involving ultrasound and CA125, including the Prostate, Lung, Colorectal, and Ovarian Cancer (PLCO) trial and the United Kingdom Collaborative Trial of Ovarian Cancer Screening (UKCTOCS) trial did not demonstrate a meaningful impact on overall survival from EOC (Zhu et al., 2011; Jacobs et al., 2016). These and other non-experimental longitudinal studies reaffirm CA125 can detect advanced disease but with poorer sensitivity for early stage and non-serous cancers. In addition, CA125 has limited specificity, with the majority of abnormal CA125 values being\u00a0the result of non-gynecologic malignancies or benign gynecologic conditions (Moss et al., 2005). The hope that adding more biomarkers to CA125 would improve screening was not realized in a re-analysis of the PLCO data as well as a recent longitudinal study from the European Prospective Investigation of Nutrition and Cancer (Zhu et al., 2011; Terry et al., 2016). In a separate strategy to improve EOC outcome, several panels (which have CA125 as part of them) have received FDA approval to be used in the differential diagnosis of EOC to encourage referral of EOC cases to centers with greater expertise in cancer surgery and chemotherapeutic treatment (Karst and Drapkin, 2010). However, these have not been effective for early diagnosis.\n\nAmong the alternatives to serum proteins for the diagnosis or early detection of EOC, circulating microRNAs (miRNAs) have shown great potential (Nakamura et al., 2016). miRNAs are short (18\u201324 nucleotide) non-coding RNAs that regulate gene expression through post-transcriptional modification of mRNA transcripts. miRNAs have several advantages over protein measures: (1) PCR amplifies detection of rare transcripts in blood; (2) all miRNAs use the same units of measure, easing incorporation into multiplexed panels; and (3) miRNAs play a critical role in ovarian cancer biology, whereas the function of CA125 is unknown (Deb et al., 2017; Katz et al., 2015). Moreover, non-invasive sampling of circulating miRNAs has a clear advantage over analytes obtained through biopsy (Wang et al., 2016).\n\nPreliminary studies have suggested that circulating miRNAs profiles are altered in women with ovarian cancer (Nakamura et al., 2016; Chung et al., 2013; Langhe et al., 2015; Resnick et al., 2009; Zuberi et al., 2015; Samuel and Carter, 2016). In addition, miRNAs have prognostic significance for EOC survival (Merritt et al., 2008; Bagnoli et al., 2016; Cramer and Elias, 2016). However, efforts to develop a diagnostic signature based on circulating miRNAs have been hampered by issues regarding the best statistical approach to develop a model, reproducibility of miRNA measurement across technology platforms (e.g. qPCR, next generation sequencing, microarray), and the biologic heterogeneity of EOC (Nakamura et al., 2016). In this study, our objective was to develop a serum-based miRNA model for the diagnosis of ovarian cancer that could address these concerns and demonstrate the biologic and clinical relevance of this diagnostic tool.\n\n## Results\n\nTo produce our diagnostic circulating miRNA signature from human sera, we constructed a study population of pre-treatment (prior to either surgery or chemotherapy) subjects comprising 179 women selected from three independent prospective studies (ERASMOS, PMP, and NECC) (Table 1). ERASMOS contributed consecutive cases presenting for evaluation of an adnexal mass, while PMP allowed enrichment of the population for specific histopathologic diagnoses. NECC added healthy controls age-matched to PMP. After completing small RNA sequencing on the sera, subjects were randomly assigned into model training and testing sets (Figure 1). After the randomization, the training and testing sets were demographically similar, and there were no differences in the distribution of histopathological diagnoses between the sets (Table 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig1-v2.jpg)\n\n**Figure 1.:** (a) Protocol for miRNA sequencing, filtering, batch adjustment and separation into the training and testing sets. (b) Protocol for model development and testing.\n\n**Table 1.**\n Demographics of patients in the model study populations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>ERASMOS (n\u00a0=\u00a060)</th>\n      <th>PMP/NECC (n\u00a0=\u00a0119*)</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age, years, median (SD)\u2020</td>\n      <td>57 (9.8)</td>\n      <td>56 (7.1)</td>\n      <td>0.44</td>\n    </tr>\n    <tr>\n      <td>CA-125, units/ml, median (SD) \u2020</td>\n      <td>155 (689.8)</td>\n      <td>88.1 (1335.5)</td>\n      <td>0.72</td>\n    </tr>\n    <tr>\n      <td>Histology, n (%)\u2021</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Control</td>\n      <td>0 (0)</td>\n      <td>15 (12.6)</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>Serous cystadenoma/cystadenofibroma</td>\n      <td>7 (11.7)</td>\n      <td>14 (11.8)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Endometrioma</td>\n      <td>0 (0)</td>\n      <td>15 (12.6)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other benign lesion</td>\n      <td>9 (15.0)</td>\n      <td>0 (0)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Borderline mucinous tumor</td>\n      <td>2 (3.3)</td>\n      <td>0 (0)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Borderline serous tumor</td>\n      <td>5 (8.3)</td>\n      <td>15 (12.6)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage I/II serous adenocarcinoma</td>\n      <td>5 (8.3)</td>\n      <td>20 (16.8)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage III/IV serous adenocarcinoma</td>\n      <td>19 (31.2)</td>\n      <td>10 (8.4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage I/II clear cell/endometrioid adenocarcinoma</td>\n      <td>6 (10.0)</td>\n      <td>20 (16.8)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage III/IV clear cell/endometrioid adenocarcinoma</td>\n      <td>0 (0)</td>\n      <td>10 (8.4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mucinous adenocarcinoma</td>\n      <td>1 (1.7)</td>\n      <td>0 (0)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other ovarian cancer</td>\n      <td>10 (10.0)</td>\n      <td>0 (0)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage, n (%)\u2021</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Not applicable</td>\n      <td>16 (26.7)</td>\n      <td>59 (49.6)</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>I</td>\n      <td>9 (15.0)</td>\n      <td>22 (18.5)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>II</td>\n      <td>8 (13.3)</td>\n      <td>18 (15.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>III</td>\n      <td>19 (31.2)</td>\n      <td>18 (15.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>IV</td>\n      <td>8 (13.3)</td>\n      <td>2 (1.7)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Grade, n (%)\u2021</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Not applicable</td>\n      <td>16 (26.7)</td>\n      <td>44 (37.0)</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td>Borderline</td>\n      <td>7 (11.7)</td>\n      <td>15 (12.6)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1 (well-differentiated)</td>\n      <td>6 (10.0)</td>\n      <td>12 (10.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2 (moderately differentiated)</td>\n      <td>3 (5.0)</td>\n      <td>12 (10.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3 (poorly differentiated)</td>\n      <td>28 (46.7)</td>\n      <td>36 (30.3)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_ERASMOS \u2013 Effects of Regional Analgesia on Serum miRNA after Oncology Surgery StudyPMP \u2013 Pelvic Mass ProtocolNECC \u2013 New England Case Control study*15samples from NECC, 114 samples from PMP\u2020student\u2019s t-test\u2021chi-square test_\n\n**Table 2.**\n Demographics of patients after stratified random sampling into training and testing sets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Training (n\u00a0=\u00a0135)</th>\n      <th>Testing (n\u00a0=\u00a044)</th>\n      <th>p-value</th>\n    </tr>\n    <tr>\n      <th>Age, years, median (SD) *</th>\n      <th>56 (8.1)</th>\n      <th>56 (8.3)</th>\n      <th>1.0</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CA-125, units/ml, median (SD) *</td>\n      <td>126.5 (1193.5)</td>\n      <td>105.6 (577.8)</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td>Pathology, n (%)\u2020</td>\n      <td></td>\n      <td></td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Control</td>\n      <td>11 (8.1)</td>\n      <td>4 (9.1)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Benign lesions</td>\n      <td>34 (25.2)</td>\n      <td>11 (25.0)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Borderline tumors</td>\n      <td>16 (11.9)</td>\n      <td>5 (11.4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage I/II invasive cancers</td>\n      <td>41 (30.4)</td>\n      <td>12 (27.3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stage III/IV invasive cancers</td>\n      <td>33 (24.4)</td>\n      <td>12 (27.3)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*student\u2019s t-test\u2020chi-square test_\n\nWe then deployed a series of statistical tools, including machine-learning approaches to analyze the miRNA-seq data to create an algorithm with the best performance for discriminating cases of ovarian cancer from either benign tumors, non-invasive (\u2018borderline\u2019) tumors, or healthy controls. This began by using three different potential strategies for selecting miRNA variable inputs to build the models: significance-based (by t-test), correlation-based feature subset, or expression fold change (Table 3). Each miRNA variable list method was entered into one of 11 different models, which were compared both by AUC (Table 4) as well as sensitivity and specificity (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig2-v2.jpg)\n\n**Figure 2.:** Sensitivity (blue bars) and specificity (orange bars) of the classifiers on the testing set depending on the method of variable selection. Whiskers denote 95% Confidence Intervals. (a) \u2013 Performance of models created on the subset of miRNAs selected using the significance-based filter. (b) Performance of models created on variables selected using the CFS subset algorithm. (c) Performance of models created using variables selected by the fold change-based filter. The red arrow denotes the model with the best performance characteristics, the neural network analysis using the fold change-based filter variable.\n\n**Table 3.**\n miRNA variables used in model building identified through univariate testing\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Significance-based selection</th>\n      <th>Correlation-based feature subset selection</th>\n      <th>Expression fold change selection</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>miR-29a-3p</td>\n      <td>miR-16-2-3p</td>\n      <td>miR-23b-3p</td>\n    </tr>\n    <tr>\n      <td>miR-30d-5p</td>\n      <td>miR-200a-3p</td>\n      <td>miR-29a-3p</td>\n    </tr>\n    <tr>\n      <td>miR-200a-3p</td>\n      <td>miR-200c-3p</td>\n      <td>miR-32\u20135 p</td>\n    </tr>\n    <tr>\n      <td>miR-200c-3p</td>\n      <td>miR-320b</td>\n      <td>miR-92a-3p</td>\n    </tr>\n    <tr>\n      <td>miR-320d</td>\n      <td>miR-320d</td>\n      <td>miR-150\u20135 p</td>\n    </tr>\n    <tr>\n      <td>miR-320c</td>\n      <td></td>\n      <td>miR-200a-3p</td>\n    </tr>\n    <tr>\n      <td>miR-450b-5p</td>\n      <td></td>\n      <td>miR-200c-3p</td>\n    </tr>\n    <tr>\n      <td>miR-203a</td>\n      <td></td>\n      <td>miR-203a</td>\n    </tr>\n    <tr>\n      <td>miR-486\u20133 p</td>\n      <td></td>\n      <td>miR-320c</td>\n    </tr>\n    <tr>\n      <td>miR-1246</td>\n      <td></td>\n      <td>miR-320d</td>\n    </tr>\n    <tr>\n      <td>miR-1307\u20135 p</td>\n      <td></td>\n      <td>miR-335\u20135 p</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>miR-450b-5p</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>miR-1246</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>miR-1307\u20135 p</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Performance of the eleven statistical models on the testing set by variable selection method.Results are shown for the testing set.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Variable selection method</th>\n    </tr>\n    <tr>\n      <th>Statistical model</th>\n      <th>Significance-based variable subset AUC (95% CI)</th>\n      <th>Correlation-based feature selection subset AUC (95% CI)</th>\n      <th>Fold change-based variable subset AUC (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Linear discriminant analysis</td>\n      <td>0.80 (0.66\u20130.93)</td>\n      <td>0.76 (0.62\u20130.90)</td>\n      <td>0.78 (0.64\u20130.92)</td>\n    </tr>\n    <tr>\n      <td>Logistic regression</td>\n      <td>0.81 (0.68\u20130.94)</td>\n      <td>0.75 (0.61\u20130.90)</td>\n      <td>0.82 (0.70\u20130.94)</td>\n    </tr>\n    <tr>\n      <td>Neural network</td>\n      <td>0.84 (0.72\u20130.96)</td>\n      <td>0.75 (0.60\u20130.89)</td>\n      <td>0.90 (0.81\u20130.99)</td>\n    </tr>\n    <tr>\n      <td>Support vector machine</td>\n      <td>0.77 (0.63\u20130.91)</td>\n      <td>0.73 (0.58\u20130.87)</td>\n      <td>0.77 (0.63\u20130.91)</td>\n    </tr>\n    <tr>\n      <td>Multivariate adaptive regression splines</td>\n      <td>0.57 (0.40\u20130.74)</td>\n      <td>0.66 (0.49\u20130.82)</td>\n      <td>0.73 (0.58\u20130.88)</td>\n    </tr>\n    <tr>\n      <td>Naive Bayes classifier</td>\n      <td>0.75 (0.60\u20130.89)</td>\n      <td>0.68 (0.52\u20130.84)</td>\n      <td>0.75 (0.60\u20130.89)</td>\n    </tr>\n    <tr>\n      <td>Least Absolute Deviation regression tree</td>\n      <td>0.77 (0.63\u20130.91)</td>\n      <td>0.61 (0.44\u20130.78)</td>\n      <td>0.69 (0.53\u20130.84)</td>\n    </tr>\n    <tr>\n      <td>Functional tree</td>\n      <td>0.78 (0.64\u20130.91)</td>\n      <td>0.77 (0.63\u20130.91)</td>\n      <td>0.68 (0.52\u20130.84)</td>\n    </tr>\n    <tr>\n      <td>Bayesian network</td>\n      <td>0.72 (0.56\u20130.87)</td>\n      <td>0.67 (0.52\u20130.83)</td>\n      <td>0.72 (0.56\u20130.87)</td>\n    </tr>\n    <tr>\n      <td>Random forest</td>\n      <td>0.78 (0.64\u20130.91)</td>\n      <td>0.71 (0.56\u20130.86)</td>\n      <td>0.76 (0.62\u20130.90)</td>\n    </tr>\n    <tr>\n      <td>Elastic net</td>\n      <td>0.80 (0.67\u20130.93)</td>\n      <td>0.76 (0.62\u20130.90)</td>\n      <td>0.79 (0.66\u20130.92)</td>\n    </tr>\n  </tbody>\n</table>\n\nAlthough many of the models performed well, the neural network model employing miRNA expression fold changes was the only model to meet our pre-specified statistical objective with an AUC of 0.90 (95% CI: 0.81\u20130.99; p=0.03 over a theoretical AUC of 0.75). The network consisted of 14 individual miRNAs with seven neurons in the hidden layer (Source code 1). As the network relied on complex interactions between miRNA levels we tested whether its performance was not biased by batch adjustment performed at the initial step of the analysis. The neural network worked equally well on the adjusted and unadjusted raw datasets with an AUC of 0.93 (95%CI: 0.89\u20130.98) on the training and 0.90 (95%CI 0.80\u20130.99) on the testing set (Figure 3; Supplementary file 1A [by model] and 1B [by sample]). In post-hoc secondary analyses, the neural network worked equally well for older and younger patients, serous and non-serous histologies, and early and advanced stage disease (Supplementary file 2A-C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig3-v2.jpg)\n\n**Figure 3.:** (a) Performance of the neural network on the training set of raw, non-batch-adjusted data (red line) and in the batch-adjusted training set (black line) (b) Performance of the neural network on raw (red line) and batch-adjusted (black line) data in the testing set.\n\nSerum CA125 data were available for 120 subjects (Supplementary file 1B and 3A). Among these, the neural network (AUC 0.93; 95% CI 0.88\u20130.97) significantly outperformed CA125 (AUC 0.74; 95% CI 0.65\u20130.83; p=0.001; Figure 4). The primary advantage of the neural network over CA125 was avoiding false positives (8/43 for the neural network versus 23/43 for CA125; p=0.002) (Supplementary file 2A). Notably, the neural network and CA125 levels were independent of one another (Figure 4\u2014figure supplement 1; Supplementary file 3B). We tested using the neural network and CA125 in a tiered testing strategy, subjecting all negative neural network algorithm results to a second review with CA125, but found this would increase the probability of a false positive test result from 4.2% (5/120) to 19.2% (23/120) and a false negative rate from 5.8% (7/120) to 13.3% (16/120) (Figure 4\u2014figure supplement 2). The alternative of initial screening with CA125 followed by neural network yielded only three additional correctly diagnosed cases of invasive cancer at the expense of 19 additional false positive results.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig4-v2.jpg)\n\n**Figure 4.:** The neural network (AUC 0.93; 95% CI 0.88\u20130.97) significantly outperformed CA125 (AUC 0.74; 95% CI 0.65\u20130.83) in terms of overall operating characteristics (p=0.001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) miR-23b (b) miR-29a (c) miR-32 (d) miR-320d (e) miR-1246 (f) miR-92a (g) miR-150 (h) miR-200a (i) miR305 (j) miR-1307 (k) miR-200c (l) miR-203a (m) miR-320c (n) miR-450b. None of the correlations were significant in either the training or testing set.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Subjecting all negative neural network algorithm results to a second review with CA-125 would increase the probability of a false positive test result from 4.2% (5/120) to 19.2% (23/120) and a false negative rate from 5.8% (7/120) to 13.3% (16/120). If the tests were considered hierarchical so that only samples classified as negative by the neural network were then examined by CA-125, this would identify three additional cases of invasive cancer but at the expense of 19 additional false positive results. FP \u2013 false positive, TP \u2013 true positive, FN \u2013 false negative, TN \u2013 true negative.\n\nThe specificity of the neural network algorithm for the diagnosis of ovarian cancer was tested using an external, independent, dataset previously published by Keller, et al (Keller et al., 2011). These data were generated via a third technology platform, probe-based microarray, which fortunately contained all 14 miRNAs from our original signature, allowing for 1:1 mapping without exclusions (Supplementary file 4A and Supplementary file 6). The neural network perfectly classified patients in the training set (AUC 1.00, 95% CI 1.00\u20131.00) and provided very good discriminatory power on the testing set (AUC 0.93, 95% CI 0.81\u20131.00), with an overall sensitivity of 75% and specificity of 100%. The signature was specific to ovarian cancer compared to all other diagnoses, as it did not show any clinically-efficient diagnostic capabilities for any of the 12 other morbidities analysed in the set and showed good performance in distinguishing ovarian cancer samples against all other diagnoses combined (AUC 0.92, 95% CI 0.82\u20131.00) (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig5-v2.jpg)\n\n**Figure 5.:** The neural network 14 miRNA signature did not separate any other diagnoses from the control group in the published dataset by Keller, et al 13. The study also included 70 healthy controls. The number of subjects (n) denotes the number of cases of the given diagnosis in the Keller, et al dataset. (a) Pancreatic ductal cancer (n\u00a0=\u00a045); (b) Prostate cancer (n\u00a0=\u00a023); (c) Stomach cancer (n\u00a0=\u00a013); (d) Other pancreatic cancers (n\u00a0=\u00a048); (e) Melanoma (n\u00a0=\u00a035); (f) Lung cancer (n\u00a0=\u00a032); (g) Periodontitis (n\u00a0=\u00a018); (h) Pancreatitis (n\u00a0=\u00a038); (i) Multiple sclerosis (n\u00a0=\u00a023); (j) Acute MI (n\u00a0=\u00a020); (k) Chronic obstructive pulmonary disease (n\u00a0=\u00a024); (l) Sarcoidosis (n\u00a0=\u00a045). (m) Overall, neural network was highly specific for ovarian cancer cases against all other diagnoses (i.e. healthy controls or other cancers).\n\nHaving established our miRNAs of interest using next generation sequencing, we next sought to validate the sequencing data across technology platforms by measuring the miRNAs from the neural network using qPCR. While small RNA sequencing is a more robust technology for miRNA discovery, qPCR is a more time efficient and cost-effective diagnostic tool. For this we used 120 samples from PMP and NECC for which we had excess RNA. We internally validated the 14 miRNAs in the neural network (plus an additional nine potential reference miRNAs derived from the sequencing data) by qPCR and recalibrated the algorithm to accept qPCR inputs (Supplementary file 6). We then performed a global sensitivity analysis on the best neural network for qPCR data and iteratively removed the variables which did the least in terms of improving the classifier\u2019s performance. This reduced the neural network to only seven miRNAs (miR-29a-3p, miR-92a-3p, miR-200c-3p, miR-320c, miR-335\u20135 p, miR-450b-5p, and miR-1307\u20135 p) plus four normalizers (miR-423\u20133 p, miR-191\u20135 p, miR-221\u20133 p, and miR-103a-3p). To increase the statistical power of this qPCR-based classifier and create a fully locked-down model for clinical application, we added 205 more samples from PMP and NECC, including more than 100 additional healthy controls, to create a 325 subject population for qPCR model development (Table 5).\n\n**Table 5.**\n Clinical characteristics of the qPCR model set.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristic</th>\n      <th>qPCR model set (N\u00a0=\u00a0325)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age, years, median (SD)</td>\n      <td>58.0 (10.1)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Grade, n (%)</td>\n    </tr>\n    <tr>\n      <td>Borderline</td>\n      <td>15 (4.6)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>21 (6.4)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>27 (8.3)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>100 (30.8)</td>\n    </tr>\n    <tr>\n      <td>unspecified</td>\n      <td>10 (3.1)</td>\n    </tr>\n    <tr>\n      <td>Not applicable</td>\n      <td>150 (46.2)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">FIGO Stage, n (%)</td>\n    </tr>\n    <tr>\n      <td>I/II</td>\n      <td>75 (23.1)</td>\n    </tr>\n    <tr>\n      <td>III/IV</td>\n      <td>83 (25.5)</td>\n    </tr>\n    <tr>\n      <td>Not applicable</td>\n      <td>167 (51.4)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Histology, n (%)</td>\n    </tr>\n    <tr>\n      <td>Control</td>\n      <td>123 (37.8)</td>\n    </tr>\n    <tr>\n      <td>Serous cystadenoma/cystadenofibroma</td>\n      <td>14 (4.3)</td>\n    </tr>\n    <tr>\n      <td>Endometrioma</td>\n      <td>15 (4.6)</td>\n    </tr>\n    <tr>\n      <td>Borderline serous tumor</td>\n      <td>15 (4.6)</td>\n    </tr>\n    <tr>\n      <td>Serous adenocarcinoma</td>\n      <td>100 (30.8)</td>\n    </tr>\n    <tr>\n      <td>Endometrioid/clear cell adenocarcinoma</td>\n      <td>48 (14.8)</td>\n    </tr>\n    <tr>\n      <td>Mucinous adenocarcinoma</td>\n      <td>10 (3.8)</td>\n    </tr>\n  </tbody>\n</table>\n\nThese samples were randomized 3:1 into training and testing sets to create a neural network. The resulting network performed well with an AUC 0.89 on the training set and AUC 0.80 on the testing set.\n\nWe then tested the clinical performance of the final, locked-down diagnostic test on a completely independent external sample set collected from 51 preoperative patients treated in Lodz, Poland (Table 6). In this population, the neural network had a positive predictive value of 91.3% (95% CI: 73.3\u201397.6%) and a negative predictive value of 78.6% (95% CI: 64.2\u201388.2%) with an AUC of 0.85 (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig6-v2.jpg)\n\n**Table 6.**\n Clinical characteristics of the external validation set.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristic</th>\n      <th>Polish external validation set (N\u00a0=\u00a051)</th>\n    </tr>\n    <tr>\n      <th>Age, years, median (SD)</th>\n      <th>55.5 (16.1)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Grade, n (%)</td>\n    </tr>\n    <tr>\n      <td>Borderline</td>\n      <td>4 (7.8)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>2 (3.9)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>7 (13.7)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>13 (25.5)</td>\n    </tr>\n    <tr>\n      <td>unspecified</td>\n      <td>3 (5.9)</td>\n    </tr>\n    <tr>\n      <td>Benign</td>\n      <td>22 (43.1)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">FIGO Stage, n (%)</td>\n    </tr>\n    <tr>\n      <td>I</td>\n      <td>7 (13.7)</td>\n    </tr>\n    <tr>\n      <td>II</td>\n      <td>3 (5.9)</td>\n    </tr>\n    <tr>\n      <td>III</td>\n      <td>18 (35.3)</td>\n    </tr>\n    <tr>\n      <td>IV</td>\n      <td>1 (2.0)</td>\n    </tr>\n    <tr>\n      <td>Benign</td>\n      <td>22 (43.1)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Histology, n (%)</td>\n    </tr>\n    <tr>\n      <td>Serous cystadenoma/cystadenofibroma</td>\n      <td>6 (11.8)</td>\n    </tr>\n    <tr>\n      <td>Endometrioma/endometriosis</td>\n      <td>10 (19.6)</td>\n    </tr>\n    <tr>\n      <td>Mature teratoma</td>\n      <td>6 (11.8)</td>\n    </tr>\n    <tr>\n      <td>Borderline serous tumor</td>\n      <td>2 (3.9)</td>\n    </tr>\n    <tr>\n      <td>Borderline seromucinous tumor</td>\n      <td>2 (3.9)</td>\n    </tr>\n    <tr>\n      <td>Serous adenocarcinoma</td>\n      <td>4 (7.8)</td>\n    </tr>\n    <tr>\n      <td>Mucinous adenocarcinoma</td>\n      <td>1 (2.0)</td>\n    </tr>\n    <tr>\n      <td>Endometrioid adenocarcinoma</td>\n      <td>1 (2.0)</td>\n    </tr>\n    <tr>\n      <td>Clear Cell Adenocarcinoma</td>\n      <td>9 (17.6)</td>\n    </tr>\n    <tr>\n      <td>Mixed adenocarcinoma</td>\n      <td>3 (5.9)</td>\n    </tr>\n    <tr>\n      <td>Adenocarcinoma unspecified</td>\n      <td>7 (13.7)</td>\n    </tr>\n  </tbody>\n</table>\n\nIdeally, a serum biomarker should have biologic relevance to the clinical disease. To this end, we returned to the ERASMOS patient set to examine if the expression levels of the miRNAs changed in the cancer patients after surgical cytoreduction. Among the patients with ovarian cancer in the study, 27 had both preoperative and postoperative serum miRNAs profiled. These included 4/7 target miRNAs in the qPCR neural network model. Circulating levels of all three miRNAs decreased within 72 hr of tumor removal, with significant changes for miR-200a-3p and miR-200c-3p (Figure 7A\u2013D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig7-v2.jpg)\n\n**Figure 7.:** n\u00a0=\u00a027.\n\nWe also wanted to test if the miRNAs were in fact coming from the earliest lesions of this disease. For this, we assembled paraffin-embedded tissue sections from independent sets of 15 cases of serous tubal intraepithelial carcinomas and 15 Stage I high grade (serous or Grade three endometrioid) epithelial ovarian cancers. Immunohistochemistry was performed on sequential sections for TP53 and Ki67 to highlight the lesions. We then performed in situ hybridization for three of the miRNAs in our neural network; mir-200c-3p, mir-335\u20135 p, and mir-92a-3p (Figure 8). In 100% of the samples, there was complete overlap between lesional cells and the miRNAs crucial for neural network performance, suggesting that the miRNAs detected in the serum are present even in early lesions in the fallopian tube epithelium and raising the possibility of detection of pre-metastatic disease.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig8-v2.jpg)\n\n**Figure 8.:** Sections of fallopian tubes showing serous tubal intraepithelial carcinoma (STIC) lesions and Stage I high grade serous ovariancancer (HGSOC). Lesional cells are indicated by TP53 and Ki-67 staining. (top) STIC lesion in continuity with normal fallopian tube. 20x. (middle) STIC lesion in continuity with normal fallopian tube and invasive cancer with p53-null lesion. 10x. (bottom) HGSOC intraluminal to the fallopian tube. 10x.\n\nFinally, we have constructed a web calculator (http://biostat.umed.pl/ovaries) to demonstrate how to use these models. The calculator accepts various inputs describing on the method of circulating miRNA quantification (sequencing, qPCR, or microarray) and returns the estimated probability of ovarian cancer for a given patient.\n\n## Discussion\n\nWe have described the development of a diagnostic model for ovarian cancer using sequencing of circulating miRNA. This is the first study in ovarian cancer to combine next generation sequencing technology for serum miRNA with machine learning techniques. Not only does sequencing provide greater sensitivity for miRNA detection than other methods, but expression levels of various miRNAs are not linearly related and relationships among miRNAs tend to be obscured by more basic statistical approaches. The neural network as presented has several advantages over a traditional biomarker like CA125. The neural network recognized more Stage I/II ovarian cancers and had significantly fewer false positives. This likely reflects an ability to discriminate relevant biology more than to quantify tumor burden. For example, the neural network correctly classified 35/43 (81%) borderline tumors as being non-invasive neoplasms, compared to just 20/43 (47%; p=0.002) for CA125. An additional strength of our study is the incorporation of multiple independent datasets. The ERASMOS specimens were obtained from cases enrolled sequentially, reflecting the natural frequency of different ovarian tumor subtypes in the clinical population, including the fact that most women with invasive ovarian cancer present with advanced stage disease. The Pelvic Mass Protocol samples allowed us to enrich the study population for less common clinical cases that would be expected to confound a conventional screening algorithm, including benign complex ovarian masses, borderline tumors, early stage cancers, and non-serous histologic subtypes. NECC provided age-matched healthy controls. The specificity of our model was tested using a publicly available dataset from Keller, et al where we showed that the neural network performed well across disease stages, histologic subtypes, and diagnostic platforms. This ability to specifically identify ovarian cancers and discriminate ovarian cancer from other diagnoses sets the current work apart from prior miRNA studies (Nakamura et al., 2016; Chung et al., 2013; Resnick et al., 2009; Zuberi et al., 2015; H\u00e4usler et al., 2010; Zheng et al., 2013). Finally, we tested our signature using a completely external, independent set of samples from Poland, showing that in a clinical sample set the test performed well without additional modifications.\n\nThere appears to be biologic relevance to the serum miRNAs in the neural network. The rapid change in circulating levels after surgical cytoreduction for mir-200a and mir-200c suggests these are being produced actively by tumors. Although other miRNAs did not have as great of a decrease, this may reflect differing half-lives for different miRNA species. In future work, it would be interesting to measure changes over a longer time frame than 72 hr, but that was the endpoint for ERASMOS, which is an anesthesia-focused study. We also demonstrated expression of several miRNAs from the neural network in pre-metastatic lesions. This both confirms prior work suggesting that these miRNAs are detectable in advanced ovarian cancers specimens and adds the new finding that these miRNAs are expressed in very early stage and even pre-invasive lesions (Bagnoli et al., 2016). Future work will examine the kinetics of these miRNA changes in tumor pathogenesis.\n\nThe phase II specimens used in this study are like those used to support development of assay panels subsequently approved for the differential diagnosis of ovarian cancer vs. a benign pelvic mass. The first panel, named OVA1, was approved by the FDA in 2009 and consisted of 5 analytes including CA125 (Zhang et al., 2004; Ueland et al., 2011). While those authors emphasized the assay\u2019s negative predictive value of 95% (when combined with physician assessment), the assay had an AUC of only 0.80 (95% CI: 0.73\u20130.88) for pre-menopausal women and 0.82 (95% CI: 0.77\u20130.87) for post-menopausal women. The second panel was approved in 2011 and consisted of just two markers, CA125 and HE4, combined with menopausal status (Moore et al., 2010). While the ROMA algorithm had an overall AUC for discriminating cancer from benign tumors of 0.91 (95% CI: 0.88\u20130.94), this was in the setting of including borderline tumors as malignancies. Moreover, the positive predictive value of the test for distinguishing benign masses from Stage I/II EOC was only 0.27. In 2016, the FDA approved an updated version of the OVA1 test which retained CA125 but replaced 2 of the markers with HE4 and FSH (Coleman et al., 2016). This improved the overall AUC to 0.92 (95% CI: 0.89\u20130.96) for the assay alone and 0.94 (95% CI: 0.91\u20130.97) when combined with physician assessment, although 80% of the tumors in this study were benign. Although the above panels included some clinical information and therefore are not equivalent to our panel, we point out that the AUC of our panel to distinguish a malignant from benign pelvic mass was similar, while not including borderline tumors as positive results and agnostic to clinical or imaging information. As timely referral to a gynecologic oncologist is a strong predictor of ovarian cancer survival, we believe that there is a role for a test based on blood markers alone (Earle et al., 2006).\n\nFDA approval of the various panels for use in the differential diagnosis of pelvic masses did not extend to their use in the general population. Based upon the results of the PLCO and UKCTOCS randomized clinical trials (or so called \u2018phase 4\u2019) the US Preventive Services Task Force and the Society of Gynecologic Oncology (SGO) have not recommended routine screening for ovarian cancer (Zhu et al., 2011; Skates et al., 2001). However, screening with CA125 and transvaginal ultrasound is recommended by the National Comprehensive Cancer Network guidelines and the SGO for women with known hereditary syndromes of ovarian cancer (such as women with germline BRCA1/2 mutations), even though there is currently no evidence that this screening strategy improves survival in elevated risk populations (Schorge et al., 2010).\n\nRecent studies (Chung et al., 2013; Langhe et al., 2015; Resnick et al., 2009; Zuberi et al., 2015) have identified circulating (serum/plasma) miRNAs that are altered in ovarian carcinomas, and there is limited overlap with miRNAs that emerged from our analysis. One possible cause of this difference is the limited number of samples examined in these studies. For example, in Langhe et al, a training set of 5 serous ovarian carcinomas and five benign serous cystadenomas were selected for the initial experiments. The validation set was 20 serous ovarian carcinomas and 20 benign serous cystadenomas. In Resnick et al, 28 ovarian carcinoma patients and 15 healthy controls were used to identify to differential expression of circulating miRNAs. Such limited numbers diminish the statistical robustness of the results. Another possible cause for the differences is the miRNA expression profiling platform. Recently a study (Mestdagh et al., 2014) systematically compared 12 different miRNA expression platforms. Specifically, for serum miRNAs there was a 12-fold difference between the highest and lowest number of detected miRNA when identical samples were profiled by different platforms. According to this report the LNA-based platform from Exiqon has the highest specificity but maybe limited for sensitivity thereby for detection. To circumvent both these concerns we started with next-generation sequencing of 179 samples which captures all small RNAs and addresses any issues of detection or specificity due to limitations of platforms. Next, we did validation using the Exiqon qRT-PCR platform on 325 local samples, and a further validation using an additional cohort of 51 samples from Poland. The large number of samples along with the methodologies used for identification and validation of the circulating miRNAs in our study provides strong support for our conclusions and distinguishes our work from prior reports.\n\nOur study does have several limitations. Whether our miRNA panel will prove useful in the differential diagnosis of early detection will require further study in the following areas. First, additional study is necessary to determine whether integrating clinical risk factors could further improve its performance. Second, confirmation in other phase II data sets are necessary to validate our study results and demonstrate its generalizability. Third, specimens collected and stored months or years prior to a clinical diagnosis (so called phase III specimens) are necessary to demonstrate the model\u2019s potential in the early detection of EOC in a general population or elevated risk setting. For the former, we have access to PLCO specimens; and for the latter, we plan to apply for specimens to the National Clinical Trials Network. Fourth, a logical extension of our work is to determine whether our current miRNA panel (or a new one) would be useful in predicting survival after EOC. A tissue-based MiROvaR signature involving 35 miRNAs for predicting EOC prognosis has recently been described (Bagnoli et al., 2016). Although several miRNAs appear in the tissue signature and our model (Supplementary file 4B), full concordance is unlikely since the tissue model was built to predict prognosis whereas our model was built to predict diagnosis. In addition, about two-thirds of the miRNAs in the tissue signature are not reliably detectable in circulation, which can be attributed to the fact that relatively few miRNAs circulate in serum (Mestdagh et al., 2014; Dinh et al., 2016). Our serum panel is reliant on a smaller number of miRNAs simply because the neural model prioritizes ones that provide novel information. If miRNAs are correlated (for example within the same chromosomal cluster), they will be invariant and knowing one will convey sufficient information about the rest for them to be excluded from model building. Finally, more is to be learned about the basic biology of serum miRNA. Are they all coming from cancer cells or also other cells in the tumor microenvironment? (Likely, both are included in the signature). It is noteworthy that two of the miRNAs are members of the mir-200 family, confirming prior reports identifying these miRNAs as overexpressed in ovarian cancer (Zuberi et al., 2015; Pecot et al., 2013). Some of the miRNAs incorporated into the neural network algorithm have connections to other disease types. For example, miR-1246 has been identified in the serum of ovarian cancer, lung cancer, prostate cancer, and stroke patients (Todeschini et al., 2017; Zhang et al., 2016; Alhasan et al., 2016; Li et al., 2015). However, as noted in Figure 5, the network as a whole was specific to ovarian cancer, again emphasizing the importance of multimarker panels.\n\nIn conclusion, serum miRNA adds to the toolbox of options to diagnose ovarian cancer. We plan several future studies to characterize the miRNA neural network. Whether serum miRNA offers a lead time advantage over other putative biomarkers remains to be proven. We need to study the performance characteristics of the miRNA neural network in high risk and low risk populations. Finally, we are performing laboratory investigations to elucidate the biologic function of these miRNAs and to understand the kinetics of miRNA expression in ovarian cancer pathogenesis. With our improved understanding of miRNA analytic approaches, we can develop better models for this and other diseases.\n\n## Materials and methods\n\n### Reporting guidelines\n\nResults have been reported according to the Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD) guidelines (Reporting Standards Document) (Collins et al., 2015). The checklist appears in the Supplement.\n\n### Study subjects for model development\n\nOur model was developed from two \u2018phase II\u2019 specimen sets (i.e. samples collected from women prior to surgery or chemotherapy) - Effects of Regional Analgesia on Serum microRNAs after Oncology Surgery (ERASMOS) and the Pelvic Mass Protocol (Cramer et al., 2010; Elias et al., 2015). To these, healthy controls were selected from subjects who participated in the New England Case-Control (NECC) study, a large epidemiologic study matching cases of ovarian cancer to geographically situated controls (Rice et al., 2013). These studies were approved by the Dana-Farber Cancer Institute Institutional Review Board Protocol 05\u2013060 (NECC study), Brigham and Women\u2019s Hospital Institutional Review Board Protocol 2000-P-001678 (Pelvic Mass Protocol), and Dana-Farber/Harvard Cancer Center Institutional Review Board Protocol 12\u2013532 (ERASMOS). All subjects were enrolled after signing informed consent, and samples were collected fresh in 13 \u00d7 75 mm BD Vacutainer Plus Plastic Serum tubes (BD Life Sciences, Franklin Lakes, NJ) with spray-coated silica. Samples were allowed to clot 1 hr at room temperature before processing, then spun down by centrifugation at 1300 x g x 10 min, aliquoted into 1.5 ml vials and stored at \u2013 80 C. Samples from the other studies were thawed and aliquoted for the current study and then refrozen.\n\nERASMOS enrolled 60 patients from 03/2013 \u2013 05/2015 from the Gynecologic Oncology service at DFCI and BWH. Patients were approached consecutively for enrollment. Eligible patients were scheduled to undergo exploratory laparotomy for a pelvic mass suspicious for invasive epithelial ovarian cancer. Serum blood samples were collected preoperatively and postoperatively for each patient and then stratified for analysis by anesthetic and analgesic exposure. The primary endpoint of the study is overall survival; study results have not been published to date as the final data are not mature.\n\nThe Pelvic Mass Protocol (PMP) enrolled women referred to the DFCI/BWH Gynecologic Oncology service over the period 1992 to 2013 (Williams et al., 2014). Of some 455 women with a pelvic mass enrolled, we selected a total of 120 samples from the following categories: serous cystadenoma (Samuel and Carter, 2016), serous borderline tumor (Samuel and Carter, 2016), Stage I/II invasive serous adenocarcinoma (H\u00e4usler et al., 2010), and Stage III/IV invasive serous adenocarcinoma (Wang et al., 2016), endometrioma (Samuel and Carter, 2016), Stage I/II invasive clear cell or endometrioid adenocarcinoma (H\u00e4usler et al., 2010), or Stage III/IV invasive clear cell or endometrioid adenocarcinoma (Wang et al., 2016). Overall, 37% of the subjects had benign disease, 12.6% had borderline tumors, 10.1% had low grade carcinomas, and 40.4% had high grade carcinomas. One sample of serous cystadenoma was excluded as an outlier due to a recent cardiovascular event as evidenced by extreme elevation of myocardial ischemia-associated miRNAs. From the most recent phase (2004\u20132008) of the NECC study, we selected fifteen age and race matched healthy controls matched to the demographics of the EOC cases and benign disease controls from the PMP study. There was no overlap of subjects between the two studies. The samples sizes were based on a plan for a 2:1 ratio of early stage (Stage I/II) cancer cases to advanced stage (Stage III/IV) cases, a 1:1 ratio of invasive cancer cases: benign/borderline/control subjects, and for balanced numbers of healthy control: benign serous: benign endometrioid: borderline serous subjects. Borderline endometrioid or clear cell tumors were exceedingly rare and thus not included. For the qPCR model, we added 113 epithelial ovarian cancer cases and 113 healthy controls, matched for age and collection year. 20 failed quality control, leaving 206 additional samples to add to the 119 samples originally profiled from PMP and creating a 325 sample set for qPCR-based model building and cut-off calibration.\n\n### Study subjects for external validation\n\nSerum samples were collected from consecutive women undergoing surgical evaluation at the Medical University of Lodz, Poland, for a pelvic mass in association with an IRB-approved tumor collection protocol. All subjects were enrolled after signing informed consent, and samples were collected fresh in 13 \u00d7 75 mm BD Vacutainer Plus Plastic Serum tubes (BD Life Sciences, Franklin Lakes, NJ) with spray-coated silica. Samples were allowed to clot 1 hr at room temperature before processing, then spun down by centrifugation at 1300 x g x 10 min, aliquoted into 1.5 ml vials and stored at \u2013 80 C. Samples were thawed only for the present study.\n\n### Outcome\n\nSamples were classified as either invasive cancer or benign/borderline/controls. Although borderline tumors are not strictly benign, they are clinically indolent and seldom fatal, thus we grouped them with benign lesions as our goal was to diagnose the tumors most contributing to mortality. For each patient, an estimated probability of\u00a0>0.5 was classified as predicting invasive ovarian cancer.\n\n### Next generation sequencing\n\nFor next generation sequencing (NGS), sample preparation, library construction, and miRNA sequencing were performed by Exiqon, Inc. (Vedb\u00e6k, Denmark). 500 \u03bcl of human serum from each sample were analyzed in duplicate. RNA from each serum sample was isolated using the miRCURYTM RNA isolation kit (Exiqon, Vedb\u00e6k, Denmark) per the manufacturer\u2019s protocol optimized for serum. The quality of the isolated RNA was checked using qPCR. Total RNA was converted into microRNA NGS libraries using the NEBNEXT library generation kit (New England Biolabs Inc., Ipswich, MA) per the manufacturer\u2019s instructions. Each individual RNA sample had adaptors ligated to its 3\u2019 and 5\u2019 ends and converted into cDNA. Then the cDNA was pre-amplified with specific primers containing sample-specific indices. After 18 cycles of pre-PCR the libraries were purified on QiaQuick columns and the insert efficiency evaluated by a Bioanalyzer 2100 instrument on a high sensitivity DNA chip (Agilent Inc., Lexington, MA). The microRNA cDNA libraries were size fractionated on a LabChip XT (PerkinElmer Waltham, MA) and a band representing adaptors and 15\u201340 bp insert excised using the manufacturer\u2019s instructions. Samples were then quantified using qPCR and concentration standards. Based on the quality of the inserts and the concentration measurements, the libraries were pooled in equimolar concentrations (all concentrations of libraries to be pooled were of the same concentration). The library pools were finally quantified again with qPCR and the optimal concentration of the library pool used to generate the clusters on the surface of a flowcell before sequencing using v3 sequencing methodology according to the manufacturer instructions (Illumina Inc., Dedham, MA). Samples were sequenced on the Illumina NextSeq 500 system (Illumina Inc., Dedham, MA) using a single-end read length of 50 nucleotides at an average of 10 million reads per sample. Sequence tags were mapped to miRbase 20 (http://www.mirbase.org/). After sequencing adapters were trimmed off as part of the base calling, trimming of adapters from the dataset revealed distinct peaks representing microRNA (~18\u201322 nt). Putative microRNAs not in standard miRBase or Rfam classification were identified based on the prediction algorithm miRPara and are included with the sequencing data in the GEO file (Wu et al., 2011). Expression levels were quantified in tags per million (TPM) (unadjusted data and batch-adjusted data available in Supplementary file 6). TPM is a unit used to measure expression in NGS experiments. The number of reads for a particular miRNA is divided by the total number of mapped reads and multiplied by 1 million. Raw sequencing data are accessible as. fastq files through the Gene Expression Omnibus (GEO) database, www.ncbi.nlm.nih.gov/geo Accession GSE94533. The most stable miRNAs from the sequencing data were selected as normalizers using the NormFinder algorithm (Andersen et al., 2004).\n\n### qPCR\n\nmiRNAs incorporated into the final neural network model were confirmed using qPCR with Exiqon (Vedb\u00e6k, Denmark) LNA-containing miRNA-specific probes. We selected nine potential reference miRNAs (hsa-miR-423\u20133 p, hsa-miR-103a-3p, hsa-miR-222\u20133 p, hsa-miR-221\u20133 p, hsa-miR-191\u20135 p, hsa-miR-181a-5p, hsa-miR-148b-3p, hsa-miR-146b-5p, and hsa-let-7c-5p) from the miRNA sequencing data using the NormFinder algorithm (Andersen et al., 2004). Both the 14 miRNAs from the test set and nine potential reference miRNAs were profiled using Exiqon\u2019s pick-and-mix array with LNA-containing miRNA-specific probes. Small RNA from each serum sample was isolated using the miRCURY RNA isolation kit (Exiqon, Vedb\u00e6k, Denmark) per the manufacturer\u2019s protocol optimized for serum. The quality of the isolated RNA was checked using qPCR. All miRNAs were polyadenylated and reverse transcribed into cDNA in a single reaction step. cDNA and ExiLENT SYBR Green master mix were transferred to qPCR panels pre-loaded with primers using a pipetting robot. Amplification was performed using a Roche Lightcycler 480 (Roche, Basel, Switzerland). Amplification quality was determined by generating melting curves. Raw Cq values and melting points, detected by the Lightcycler software, were exported. Assays with several melting points or with melting points deviating from assay specifications were flagged and removed from the dataset. Reactions with amplification efficiency below 1.6 were also removed. Assays giving Cq values within 5 Cq values of the negative control sample were also removed from the dataset.\n\nSpike-in positive controls and no template negative controls were included. Minimum detection values for qPCR were established at 37 cycles; miRNAs with no amplification before that number of qPCR cycles were assumed to have their expression undetectable, and a quantification cycle (Cq) value of 37 was imputed as a substitute value. Raw, background filtered, and normalized data appear in the supplement (Supplementary file 6) in accordance with Minimum Information for Publication of Quantitative Real-Time PCR Experiments (MIQE) Guidelines (Bustin et al., 2009). Data were normalized to the average of the assays detected in all samples (n\u00a0=\u00a0120 samples). The nine selected reference miRNAs were reevaluated after profiling for their stability across the arrays and the average Cq of the two best ones (miR-423\u20133 p and miR-103a-3p) was selected as the reference for dCq calculations of the 14-miRNA and the 7-miRNA diagnostic sets using the NormFinder method.\n\n### Comparison of preoperative and postoperative samples\n\nIndividual miRNAs measurements from preoperative and postoperative serum samples from the ERASMOS study had been measured previously using multiplexed miRNA hydrogel probes (FirePlex, Abcam, Cambridge, MA) on a flow cytometer. Samples were profiled in duplicate, then replicates were merged. Fluorescence intensity values across all samples were normalized with Firefly Analysis Workbench (Abcam, Cambridge, MA) using the geNorm algorithm to identify appropriate normalizers (Vandesompele et al., 2002).\n\n### Sample size estimation\n\nWe sought a testing set showing a superiority of 0.1 in the area under the receiver operating characteristic curve (AUC) against a value of 0.75 (assumed as a null hypothesis for a clinically useful biomarker) with a statistical power of 80% and a type 1 error probability\u00a0<0.05 (Hanley and McNeil, 1982). For statistical power estimation purposes we assumed that the model predictions would be moderately correlated with CA-125 levels (r\u00a0>\u00a00.3). The calculation yielded a required testing set of 44 patients (22 with invasive cancer and 22 without invasive cancer). To train the classifiers, we assumed the training set would require 3-fold more patients (N\u00a0=\u00a0132) bringing the total number of required patient samples to 176 samples. We increased the sample size to 180 to account for potential clinical or technical outliers.\n\n### Model development\n\n#### Variable selection\n\nmiRNAs were filtered for miRNAs present in at least 50% of both datasets at a detection threshold of 10 tags per million reads (tpm), leaving 192 miRNAs to test in our models. The data were batch-adjusted using ComBat to account for the different study populations (Figure 9; Supplementary file 6) (Johnson et al., 2007). Subject samples were then randomized into \u2018training\u2019 and \u2018testing\u2019 sets in an approximate 70:30 ratio.\n\nAs the dataset included more variables than cases, direct model development on the full dataset would have resulted in overfitted results. Hence, typically for such data mining problems we preselected the variables for classification model development using three methods \u2013 a significance filter (using a student\u2019s t-test \u2013 Supplementary file 6), a group-stratified fold change filter, and a correlation-based feature selection (CFS) (Witten, 2016). For the significance filter, we assumed miRNAs with p<0.05 and false discovery rate (FDR)\u00a0<\u00a00.05 for cancer vs benign/borderline/controls as significant. For the fold change filter, we selected miRNAs that showed fold changes\u00a0<\u00a00.8 or>1.2 for cancer vs benign/borderline/control comparisons convergent in both the PMP/NECC and ERASMOS datasets. Correlation-based Feature Subset Selection (CFS) is a wrapper feature selection method that evaluates the worth of a subset of attributes by considering the individual predictive ability of each feature along with the degree of redundancy between them. Subsets of features that were highly correlated with the class while having low intercorrelation were preferred in the process (Hall, 1998). Search of the space of attribute subsets was performed by greedy hillclimbing augmented with a backtracking facility. This method of searching, called \u2018Best First\u2019, started with the empty set of attributes and searched the set forward.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig9-v2.jpg)\n\n**Figure 9.:** (Left) Before batch effect removal. (Right) After batch effect removal using ComBat . ERASMOS \u2013 Effects of Regional Analgesia on Serum miRNA after Oncology Surgery Study. PMP \u2013 Pelvic Mass Protocol. NECC \u2013 New England Case Control study.\n\n### Classification models\n\nAll three sets of variables were analyzed using 11 different classification models for a total of 33 different algorithms. Six models (linear discriminant analysis, logistic regression, multivariate adaptive regression splines, naive Bayes, neural network, and support vector machine) were developed using STATISTICA Data Miner 12.5 (StatSoft, Tulsa, OK, USA). The remaining five models (functional tree, LAD tree, Bayesian network, elastic net regression, and random forest) were created using Weka 3.9.0 (University of Waikato, New Zealand). Detailed descriptions of the classification models appear below. Interestingly, relationships among individual miRNA species were non-linear, so these relationships would likely have been obscured as evidenced by a simple hierarchical clustering of the statistically significant miRNAs from univariate analysis (Figure 10).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/28932/elife-28932-fig10-v2.jpg)\n\n**Figure 10.:** While most of the patients with cancer clustered together, considerable heterogeneity was evident, and no clear separation of the groups could be achieved using any single miRNA.\n\nAll three sets of variables were analyzed using 11 different classification models for a total of 33 different algorithms. Six models (linear discriminant analysis, logistic regression, multivariate adaptive regression splines, naive Bayes, neural network, and support vector machine) were developed using STATISTICA Data Miner 12.5 (StatSoft, Tulsa, OK, USA). The remaining five models (functional tree, LAD tree, Bayesian network, elastic net regression, and random forest) were created using Weka 3.9.0 (University of Waikato, New Zealand). Interestingly, relationships among individual miRNA species were non-linear, so these relationships would likely have been obscured as evidenced by a simple hierarchical clustering of the statistically significant miRNAs from univariate analysis (Figure 7).\n\n### Neural network\n\nFor the neural network, we built 5000 neural networks for each variable selection method (15000 networks in total) and retained the best one in terms of performance in properly assigning cases to classes in the test set. The networks were built in a semi-automated way. Their structure was of a multilayer perceptron with a number of neurons in the hidden layer iteratively optimized from (n variables)/3 to (n variables)*1.5 to avoid overfitting. Admissible linking functions between the neuron layers were linear, logistic, hyperbolic tangential, and exponential. Neuron weights were calculated using the BFGS (Broyden-Fletcher-Goldfarb-Shanno) algorithm and the network was trained in each epoch using an error back-propagation algorithm to optimize weights in each pass (Broyden, 1970; Fletcher, 1970; Goldfarb, 1970; Shanno, 1970; Shanno and Kettler, 1970).\n\n### Linear discriminant analysis\n\nThe method creates a new set of spatial coordinates that allow for linear separation of the groups. The most discriminative features were extracted on the basis of their correlations and the model used a backward stepwise variable selection algorithm only retaining in the model variables that showed final F values\u00a0>\u00a05. This two-step filtering (variable selection after one of the three initial variable filtering algorithms) of the variables used in sample classification was aimed at the reduction of the number of miRNAs required for the model to work. Depending on the number of variables selected by the filters, the discriminatory function of the LDA was based on a reduced set of miRNAs that passed the F value threshold and were retained in the model. For the subset of miRNAs filtered by statistical significance, the model used three miRNAs: miR-30d-5p, miR-200c-3p and miR-320d. For CFS variable selection the model used three miRNAs: miR-320d, miR-200a-3p and miR-16-2-3p. The variable selection method based on stratified fold change used a yet another different set of miRNAs: miR-200c-3p, miR-320d and miR-150\u20135 p.\n\n### Logistic regression\n\nAs above, the logistic regression model was built using a backward stepwise variable selection procedure, with variables showing p<0.15 being retained in the final model. The procedure allowed for second order interactions between the variables to detect potential subgroup-specific effects. A standard quasi-Newton estimation procedure was performed in model development. After exclusion of variables with p values\u00a0>\u00a00.15 in the multivariate model, the miRNAs remaining in the classifier were miR-30d-5p, miR-320d, miR-200c-3p, miR-1246, and an interaction of miR-200c-30p*miR-1246. A logistic regression model based on miRNAs selected by the CFS variable algorithm required only two miRNAs to work: miR-200c-3p and miR-320d. A logistic regression classifier built on the fold change filter-selected miRNAs used three miRNAs: miR-150\u20135 p, miR-320d, miR-1246, and an interaction between miR-200c-30p*miR-1246. Results of all three models were convergent and the crucial role of miR-200c/miR-320d was confirmed by all models. The logistic regression model was very similar in terms of performance to the neural net in the CFS-selected variable subset. This was a logical consequence of a strong variable filtering leaving too few input variables for the network to identify subtle patterns.\n\n### Multivariate adaptive regression splines\n\nAn alternative approach to modeling of the classification function was the MARS model \u2013 a modification of a multivariate joint-point regression which estimates a number of basal function most appropriate for data from specific fragments of the multidimensional dataset. The method is used in complex function modeling of non-monotonous or non-linear associations. Within our analysis we used a MARS model that allowed for up to third degree interactions between the variables, allowing for up to 1.5*(n variables) basal function in each model and penalizing the introduction of additional basal functions by a factor of 2. Interactions between variables were tested for improvement of model performance up to the degree of three. During the model building procedure we iteratively removed variables absent in any of the basal functions until only miRNAs used in at least one basal function remained in the MARS model. Using 11 miRNAs filtered on the basis of significance we created a MARS model composed of 14 basal functions. All functions were transformation of five, single miRNAs: miR-30d-5p, miR-200c-3p, miR-450b-5p, miR-200a-3p, and miR-1307\u20133 p. The MARS model built on CFS-filtered variables consisted of 7 basal functions based on four miRNAs: miR-200c-3p, miR-320d, miR-16-2-3p, and miR-320b. The final MARS model built on 14 miRNAs filtered by the stratified fold change threshold was optimized at 10 basal functions based on 5 miRNAs: miR-200c-3p, miR-150\u20135 p, miR-200a-3p, miR-92\u20133 p, miR-203a, and miR-320c. All MARS models showed relatively poor performance hinting at issues with model overfitting and low specificity (for example, the ROC AUC for the significance-based and CFS variable selection inputs did not meet statistical significance).\n\n### Elastic net regression\n\nAn elastic-net regularized generalized linear model is a linear regression using coordinate descent. In order to train this model we have used Java implementation of a component of the R package \u2018glmnet\u2019 in WEKA software. As we wanted to use a regression method for classification, class was binarized and one regression model was built for each class value (i.e. meta-scheme classification via regression). The alpha elastic-net mixing parameter was chosen to be 0.001 while the epsilon value for generating the lambda sequence was set to 10\u22124. Additionally, a covariance update method was used. This resulted in the following formula: weka.classifiers.meta.ClassificationViaRegression -W weka.classifiers.functions.ElasticNet -- -m2 y -alpha 0.001 -lambda_seq -thr 1.0E-7 -mxit 10000000 -numModels 100 -infolds 10 -eps 1.0E-4 -sparse n -stderr_rule n -addStats n. Please note that reproduction of model induction may require installing additional packages from WEKA package manager.\n\nElastic net is a type of linear modeling. As so, application of classification via regression resulted in construction of 2 linear functions equations and as the class was binary \u2013 those equations had equally opposite coefficients. For example, classifier for class cancer in CFS-based dataset was based on the equation:\n\n$$\nP(17)=\u22120.110hsa\u2212miR\u221216\u22122\u22123p+0.050hsa\u2212miR\u2212200a\u22123p+0.275hsa\u2212miR\u2212200c\u22123p+0.043hsa\u2212miR\u2212320b+0.261hsa\u2212miR\u2212320d\u22120.031\n$$\n\nModel files can be loaded in WEKA for further evaluation.\n\n### Support vector machine\n\nThis classifier was built with a set of different entry parameters: kernel function types, function parameters, and hinge loss function. Admissible kernel functions were linear, polynomial (2nd and 3rd order) and radial basis function (gamma from 0.1 to 1 tested in 0.1 increments).All possible combinations were tested and the resulting best model was selected on the basis of classifier performance in the test set. All SVM models codes for significance, CFS and stratified fold change-based variable selection algorithms are available as pmml files. The models performed worse than simpler classification tools (logistic regression/linear discriminant analysis), possibly due to a small number of cases available for testing.\n\n### Na\u00efve bayes classifier\n\nA priori class probabilities were estimated empirically on the basis of class frequencies in the dataset, normal distribution was assumed for all log-10 transformed miRNA expression values quantified as transcripts per million. The exact probability estimator of the na\u00efve Bayes classifier showed similar performance on all three variable subsets, achieving accuracy comparable to that of the SVM model\n\n### LAD tree\n\nMulti-class alternating decision tree using the LogitBoost strategy (LAD Tree [http://www.cs.waikato.ac.nz/~bernhard/papers/ecml2002.pdf]). The number of boosting iterations to use, which determined the size of the trees, was set to be 10.\n\nFormula: weka.classifiers.trees.LADTree -B 10. Please note that reproduction of model induction may require installing additional packages from WEKA package manager.\n\nLADTree is a completely deterministic tree that allows decision making by counting respective probabilities on the pathway though the tree. Those trees and probabilities are available as buffer text files and WEKA model files. It is notable, that our configuration allowed the algorithm to consider a maximum of 10 miRNAs in the final schema.\n\n### Functional tree\n\nFunctional trees are logistic classification decision trees that have logistic regression functions at the inner nodes or leaves. Training of models was performed again by WEKA software. As in default settings, the minimum number of instances at which a node is considered for splitting was 15, number of iterations for LogitBoost was also 15 and no weight trimming was applied.\n\nFormula: weka.classifiers.trees.FT -I 15 F 0 -M 15 -W 0.0. Please note that reproduction of model induction may require installing additional packages from WEKA package manager.\n\nAll functional trees were models with one node. In order to infer how this model works, evaluation of values for linear combination function at each node for every class has to be done. For example, for cancer in the CFS-processed dataset the formula is:\n\n$$\nF1=\u22121.75+[hsa\u2212miR\u221216\u22122\u22123p]\u2217\u22120.29+[hsa\u2212miR\u2212200a\u22123p]\u22170.08+[hsa\u2212miR\u2212200c\u22123p]\u22171.07+[hsa\u2212miR\u2212320b]\u2217\u22120.21+[hsa\u2212miR\u2212320d]\u22171.29\n$$\n\nF1\u00a0=\u00a0\u22121.75\u00a0+\u00a0[hsa-miR-320d] * 1.29\n\nAs our classifiers are binary, the result for the second class (F2) should be an opposite number (F1 = -F2). In the next step the value of the following formula should be calculated and compared to threshold of the node:\n\n$$\n\\frac{e^{F1}}{e^{F1}+e^{F2}}\n$$\n\nModel files can be loaded in WEKA for further evaluation.\n\n### Bayesian network\n\nA Bayes Network was trained using a K2 search algorithm, which is a hill climbing algorithm restricted by an order on the variables. The initial network used for structure learning was a Naive Bayes Network and there could be only one parent a node. Conditional probability tables of a Bayes network were driven directly from data once the structure has been learned (with alpha value equal to 0.5). Formula: weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5. Please note that reproduction of model induction may require installing additional packages from WEKA package manager. Structures of networks as well as LogScores are available as buffer text files. Model files can be loaded in WEKA for further evaluation.\n\n### Random forest\n\nRandom forest is a technique of random decision forests that considers K randomly chosen attributes at each node. K was calculated as integer of 1 plus binary logarithm of number of predictors. Minimum proportion of the variance needed at a node in order for splitting to be performed was set to 0.001. No backfitting was performed.\n\nFormula: weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1. Please note that reproduction of model induction may require installing additional packages from WEKA package manager. Random forest is a form of bagging with 100 iterations and base learner. Model files can be loaded in WEKA for further evaluation.\n\n### Basic statistical analysis\n\nDifferences in the distribution of histopathologic diagnoses, grade, and stage between the study populations were calculated using chi-square tests. Differences in false-positive and false-negative assignment were compared using Fisher\u2019s exact test. Differences in age and CA125 levels between the study populations were calculated using a Mann-Whitney U test. For all tests, a two-tailed p-value<0.05 was considered significant. For the ROC curves, cut-off values for prediction with the best diagnostic performance were established using the Youden index (sensitivityc\u00a0+\u00a0specificityc \u2013 1) (Youden, 1950). Preoperative and postoperative serum samples from patients enrolled in ERASMOS were compared using a Wilcoxon matched pairs sign rank test.\n\n### Code availability\n\nComputer codes are available as raw pmml files in the supplement.\n\n### Public dataset\n\nThe neural network approach was applied to an independent, publicly available published dataset by Keller, et al. GEO Accession GSE31568 (Keller et al., 2011) In that study, the authors collected blood samples from 454 individuals, including 15 women with ovarian cancer and 70 healthy controls. Further clinical annotation of the samples was not provided. The samples include a variety of other diagnoses (stomach cancer, sarcoidosis, prostate cancer, periodontitis, pancreatitis, pancreatic cancer, multiple sclerosis, melanoma, lung cancer, chronic obstructive pulmonary disease, Wilms tumor, and acute myocardial infarction). Circulating miRNAs were quantified using a highly specific primer extension\u2013based microarray that shows a very small degree of cross-hybridization (Supplementary file 6) (Vorwerk et al., 2008).\n\n### Pathology samples\n\nParaffin blocks were selected from the surgical pathology files of the Brigham and Women\u2019s Hospital per BWH IRB Protocol #2016P002742. Hematoxylin and eosin sections of the cases were reviewed by a gynecologic pathologist (CC). The tissues had been routinely fixed in 10% neutral formalin and embedded in paraffin. Immunohistochemistry for TP53 and Ki-67 were performed using commercially available antibodies as previously described (Perets et al., 2013). Appropriate positive and negative (without primary antibodies) controls were used simultaneously for each antibody. In situ hybridization was performed using commercially available RNA probes from Exiqon (Vedb\u00e6k, Denmark) according to the manufacturer\u2019s instructions. All probe concentrations were 1 nM. A probe for the small nuclear RNA U6 served as a positive control while a non-targeting scramble RNA probe served as negative control.\n",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "cc876bc7-20f9-4412-8e79-befd4edd36ee",
+      "submission_id": "8f14bc89-3f9a-43ec-8fb2-5d400454fa92",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Charles L Sawyers, Memorial Sloan-Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28932.037](https://doi.org/10.7554/eLife.28932.037)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Diagnostic potential for a serum miRNA neural network for detection of ovarian cancer\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAlthough all reviewers acknowledge the strengths of the topic of predicting early stage disease and the analysis, the consensus is that the work lacks sufficient novelty for the general audience of eLife. Specifically, there are a couple of prior publications on miR detection in serum of ovarian cancer patients, and we are not persuaded that the machine learning algorithms used here represent the level of innovation we require. Second, the biological underpinnings of the predictive miR signature are not addressed, nor is the source of the miRs (are they from tumor cells?). Third, in the absence of a biological hypothesis, we would expect further work to eliminate many of the caveats raised about clinical utility, tumor samples with various histologies, further validation, etc.\n\nReviewer #1:\n\nThe authors present a paradigm for serum detection of ovarian cancer. They employ a neural network to discriminate between cancer and noncancer specimens and demonstrate specificity with published data. The paper has many strengths including a range of ovarian cancer specimens of various histologic subtypes and stages. There is very nice demonstration of training, test and external validation. Enthusiasm is somewhat weakened, due to:\n\n1) Multiple statistical algorithms are tested leading to some concern for overfitting during creation of the original model.\n\n2) There is little to no detail about the histology and stage of the external validation specimens and the small sample size of only 15 ovarian cases for external validation remains hidden within the methods. It would be good to know the histology and stage and more details about the collection methods for the external validation samples.\n\n3) It is not clear how the samples were collected in Keller et al. and whether they were all from newly diagnosed patients prior to treatment.\n\nOverall, this seems like a very promising signature, but past experience would suggest some additional externally validated samples should be included.\n\nReviewer #2:\n\nElias and colleagues have evaluated the utility of circulating miRNA as a potential tool to assist in the diagnosis of ovarian cancer. They identify miRNAs and an algorithm that distinguishes individuals without ovarian cancer from patients with cancer.\n\nThere are many publications describing miRNAs as a biomarker in ovarian cancer. Although the authors mention some of these previous studies examining circulating miRNAs in the Introduction, it is unclear whether the miRNAs utilised in the neural network algorithm overlap with those described in previous studies. It would strengthen the manuscript to compare the findings to previous work more explicitly.\n\nThe manuscript could also be strengthened by examining the potential of the algorithm and miRNAs to predict prognosis, as a biomarker that can be utilised for diagnosis and prognosis is very desirable.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for choosing to send your work entitled \"Diagnostic potential for a serum miRNA neural network for detection of ovarian cancer\" for consideration at eLife. Your letter of appeal has been considered by a Senior Editor and a Reviewing Editor, and we are prepared to consider a revised submission with no guarantees of acceptance.\n\nWe are particularly interested in the inclusion of data regarding the biological underpinnings of the miR signature and additional external validation on another cohort of patients. It will also be important to emphasize the novelty relative to prior published analyses of serum miRs in ovarian cancer. As a dataset but without a biological rationale for the set of enriched miRNAS, this work appears to be more appropriately considered as a Tools and Resources paper, rather than as a Research Article.\n",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "85c583e3-cd5d-4b60-94b3-556f85eb0d3e",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C1",
+      "claim": "Invasive epithelial ovarian cancer (EOC) is the leading cause of death from gynecologic cancer among women in developed countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Invasive epithelial ovarian cancer (EOC) is the leading cause of death from gynecologic cancer among women in developed countries (Siegel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Siegel et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "60137cd0-5f8c-414f-9329-ce17a1af6b0c",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C2",
+      "claim": "Most women with EOC present with advanced stage disease, where 5 year survival rates average 25\u201330%.",
+      "claim_type": "EXPLICIT",
+      "source": "Most women with EOC present with advanced stage disease, where 5 year survival rates average 25\u201330%, highlighting the need for an effective screening strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about EOC prognosis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "94dd93eb-483d-47cc-9cf4-959b011bf125",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C3",
+      "claim": "Two large-scale randomized clinical trials involving ultrasound and CA125 (PLCO and UKCTOCS) did not demonstrate a meaningful impact on overall survival from EOC.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, two large-scale randomized clinical trials involving ultrasound and CA125, including the Prostate, Lung, Colorectal, and Ovarian Cancer (PLCO) trial and the United Kingdom Collaborative Trial of Ovarian Cancer Screening (UKCTOCS) trial did not demonstrate a meaningful impact on overall survival from EOC (Zhu et al., 2011; Jacobs et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhu et al., 2011 and Jacobs et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "bacf91e9-f5a4-45b9-8c4d-687f1aec1805",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C4",
+      "claim": "CA125 can detect advanced disease but has poorer sensitivity for early stage and non-serous cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "These and other non-experimental longitudinal studies reaffirm CA125 can detect advanced disease but with poorer sensitivity for early stage and non-serous cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to longitudinal studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "a488ba23-5f63-4a27-9d91-4288a3bf9fb6",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C5",
+      "claim": "CA125 has limited specificity, with the majority of abnormal CA125 values being the result of non-gynecologic malignancies or benign gynecologic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CA125 has limited specificity, with the majority of abnormal CA125 values being the result of non-gynecologic malignancies or benign gynecologic conditions (Moss et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moss et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "26f62047-6f73-4652-a1fb-7beb4f64f37e",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C6",
+      "claim": "Adding more biomarkers to CA125 did not improve screening in a re-analysis of the PLCO data and a recent longitudinal study from EPIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The hope that adding more biomarkers to CA125 would improve screening was not realized in a re-analysis of the PLCO data as well as a recent longitudinal study from the European Prospective Investigation of Nutrition and Cancer (Zhu et al., 2011; Terry et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhu et al., 2011 and Terry et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "0212671c-9228-4c22-984a-aa38e3a3d119",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C7",
+      "claim": "Several panels including CA125 have received FDA approval for differential diagnosis of EOC to encourage referral to centers with greater expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate strategy to improve EOC outcome, several panels (which have CA125 as part of them) have received FDA approval to be used in the differential diagnosis of EOC to encourage referral of EOC cases to centers with greater expertise in cancer surgery and chemotherapeutic treatment (Karst and Drapkin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karst and Drapkin, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "0f7b2862-84aa-4621-b302-929e4bdc7eab",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C8",
+      "claim": "FDA-approved panels including CA125 have not been effective for early diagnosis of EOC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these have not been effective for early diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion about FDA-approved panels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "6c993490-609f-4065-993c-f9b45e642933",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C9",
+      "claim": "Circulating microRNAs (miRNAs) have shown great potential for diagnosis or early detection of EOC.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the alternatives to serum proteins for the diagnosis or early detection of EOC, circulating microRNAs (miRNAs) have shown great potential (Nakamura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nakamura et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "33e07f54-ed1c-4256-afd5-a7ac6bdebb1e",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C10",
+      "claim": "miRNAs are short (18\u201324 nucleotide) non-coding RNAs that regulate gene expression through post-transcriptional modification of mRNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNAs are short (18\u201324 nucleotide) non-coding RNAs that regulate gene expression through post-transcriptional modification of mRNA transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about miRNA biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "5f965fe1-ab22-47c9-825e-0202b48893ac",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C11",
+      "claim": "PCR amplifies detection of rare transcripts in blood.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNAs have several advantages over protein measures: (1) PCR amplifies detection of rare transcripts in blood",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about PCR technology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "54a4e3bf-4122-4a9f-b2a0-938d8b1e88b4",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C12",
+      "claim": "All miRNAs use the same units of measure, easing incorporation into multiplexed panels.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) all miRNAs use the same units of measure, easing incorporation into multiplexed panels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a property of miRNA measurement",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "b4f8967a-ba65-413f-b79c-1e0c0e35cb6e",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C13",
+      "claim": "miRNAs play a critical role in ovarian cancer biology.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) miRNAs play a critical role in ovarian cancer biology, whereas the function of CA125 is unknown (Deb et al., 2017; Katz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deb et al., 2017 and Katz et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "41ce86a8-1866-46b5-9b9a-9d04eb38b964",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C14",
+      "claim": "The function of CA125 is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) miRNAs play a critical role in ovarian cancer biology, whereas the function of CA125 is unknown (Deb et al., 2017; Katz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deb et al., 2017 and Katz et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d59cd5ff-eead-40fa-9df3-eeb05ffe2ca2",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C15",
+      "claim": "Non-invasive sampling of circulating miRNAs has a clear advantage over analytes obtained through biopsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, non-invasive sampling of circulating miRNAs has a clear advantage over analytes obtained through biopsy (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d00a1dff-f4d1-47c1-acfb-a491ad69e987",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C16",
+      "claim": "Preliminary studies have suggested that circulating miRNAs profiles are altered in women with ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary studies have suggested that circulating miRNAs profiles are altered in women with ovarian cancer (Nakamura et al., 2016; Chung et al., 2013; Langhe et al., 2015; Resnick et al., 2009; Zuberi et al., 2015; Samuel and Carter, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "e0544003-bf7e-4b70-93df-8093d770b0df",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C17",
+      "claim": "miRNAs have prognostic significance for EOC survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, miRNAs have prognostic significance for EOC survival (Merritt et al., 2008; Bagnoli et al., 2016; Cramer and Elias, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Merritt et al., 2008, Bagnoli et al., 2016, and Cramer and Elias, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "1b011903-928b-40f9-9f34-77fc673d5029",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C18",
+      "claim": "Efforts to develop a diagnostic signature based on circulating miRNAs have been hampered by issues regarding statistical approach, reproducibility across technology platforms, and biologic heterogeneity of EOC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, efforts to develop a diagnostic signature based on circulating miRNAs have been hampered by issues regarding the best statistical approach to develop a model, reproducibility of miRNA measurement across technology platforms (e.g. qPCR, next generation sequencing, microarray), and the biologic heterogeneity of EOC (Nakamura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nakamura et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "21eb3818-9c97-447f-bf0e-dac9da1f9a5b",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C19",
+      "claim": "The study population comprised 179 women selected from three independent prospective studies (ERASMOS, PMP, and NECC).",
+      "claim_type": "EXPLICIT",
+      "source": "To produce our diagnostic circulating miRNA signature from human sera, we constructed a study population of pre-treatment (prior to either surgery or chemotherapy) subjects comprising 179 women selected from three independent prospective studies (ERASMOS, PMP, and NECC) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design and sample collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "e4bd8d84-4800-4d00-80cf-5cfd5740e41b",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C20",
+      "claim": "ERASMOS contributed consecutive cases presenting for evaluation of an adnexal mass.",
+      "claim_type": "EXPLICIT",
+      "source": "ERASMOS contributed consecutive cases presenting for evaluation of an adnexal mass, while PMP allowed enrichment of the population for specific histopathologic diagnoses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "571008fe-2487-4c00-8bd1-c3b7c022073f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C21",
+      "claim": "PMP allowed enrichment of the population for specific histopathologic diagnoses.",
+      "claim_type": "EXPLICIT",
+      "source": "ERASMOS contributed consecutive cases presenting for evaluation of an adnexal mass, while PMP allowed enrichment of the population for specific histopathologic diagnoses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "41b19dd6-39d4-45c0-a290-fe9254ff5dba",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C22",
+      "claim": "NECC added healthy controls age-matched to PMP.",
+      "claim_type": "EXPLICIT",
+      "source": "NECC added healthy controls age-matched to PMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "fb58f414-c2c9-4f9d-b07a-e2523fa41bb1",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C23",
+      "claim": "After randomization, the training and testing sets were demographically similar.",
+      "claim_type": "EXPLICIT",
+      "source": "After the randomization, the training and testing sets were demographically similar, and there were no differences in the distribution of histopathological diagnoses between the sets (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d4429ceb-2252-4bbe-8f8a-f49ef52472bd",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C24",
+      "claim": "There were no differences in the distribution of histopathological diagnoses between the training and testing sets.",
+      "claim_type": "EXPLICIT",
+      "source": "After the randomization, the training and testing sets were demographically similar, and there were no differences in the distribution of histopathological diagnoses between the sets (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "ac434fc0-ede8-44bd-a981-bfba6e241cdd",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C25",
+      "claim": "The neural network model employing miRNA expression fold changes had an AUC of 0.90 (95% CI: 0.81\u20130.99).",
+      "claim_type": "EXPLICIT",
+      "source": "Although many of the models performed well, the neural network model employing miRNA expression fold changes was the only model to meet our pre-specified statistical objective with an AUC of 0.90 (95% CI: 0.81\u20130.99; p=0.03 over a theoretical AUC of 0.75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the testing set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "91f0959a-c823-422e-b876-1d8ffc31ec89",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C26",
+      "claim": "The neural network model was the only model to meet the pre-specified statistical objective (p=0.03 over a theoretical AUC of 0.75).",
+      "claim_type": "EXPLICIT",
+      "source": "Although many of the models performed well, the neural network model employing miRNA expression fold changes was the only model to meet our pre-specified statistical objective with an AUC of 0.90 (95% CI: 0.81\u20130.99; p=0.03 over a theoretical AUC of 0.75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "c93ba10f-f058-464b-a524-dbddbc46d260",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C27",
+      "claim": "The neural network consisted of 14 individual miRNAs with seven neurons in the hidden layer.",
+      "claim_type": "EXPLICIT",
+      "source": "The network consisted of 14 individual miRNAs with seven neurons in the hidden layer (Source code 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the structure of the neural network model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "36178de2-1174-4bb3-9121-da3af6042c7d",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C28",
+      "claim": "The neural network worked equally well on adjusted and unadjusted raw datasets with an AUC of 0.93 (95%CI: 0.89\u20130.98) on the training and 0.90 (95%CI 0.80\u20130.99) on the testing set.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural network worked equally well on the adjusted and unadjusted raw datasets with an AUC of 0.93 (95%CI: 0.89\u20130.98) on the training and 0.90 (95%CI 0.80\u20130.99) on the testing set (Figure 3; Supplementary file 1A [by model] and 1B [by sample]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3 and supplementary files",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "bf3765f8-9f68-4656-8192-fcd3c59b0b76",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C29",
+      "claim": "The neural network worked equally well for older and younger patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In post-hoc secondary analyses, the neural network worked equally well for older and younger patients, serous and non-serous histologies, and early and advanced stage disease (Supplementary file 2A-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by post-hoc secondary analyses in supplementary files",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "da07af33-92fa-420d-b1b0-c0f200ee1854",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C30",
+      "claim": "The neural network worked equally well for serous and non-serous histologies.",
+      "claim_type": "EXPLICIT",
+      "source": "In post-hoc secondary analyses, the neural network worked equally well for older and younger patients, serous and non-serous histologies, and early and advanced stage disease (Supplementary file 2A-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by post-hoc secondary analyses in supplementary files",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "1dd5e0f2-d5e7-47f6-b996-63449e12e9f3",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C31",
+      "claim": "The neural network worked equally well for early and advanced stage disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In post-hoc secondary analyses, the neural network worked equally well for older and younger patients, serous and non-serous histologies, and early and advanced stage disease (Supplementary file 2A-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by post-hoc secondary analyses in supplementary files",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "ac83bd9a-4a87-4bf2-b0f8-a30a92d1a8a6",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C32",
+      "claim": "Serum CA125 data were available for 120 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum CA125 data were available for 120 subjects (Supplementary file 1B and 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the available data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "b0102b19-7290-4005-867e-f9f264c80519",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C33",
+      "claim": "Among 120 subjects with CA125 data, the neural network (AUC 0.93; 95% CI 0.88\u20130.97) significantly outperformed CA125 (AUC 0.74; 95% CI 0.65\u20130.83; p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the neural network (AUC 0.93; 95% CI 0.88\u20130.97) significantly outperformed CA125 (AUC 0.74; 95% CI 0.65\u20130.83; p=0.001; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "56563e77-6f46-4367-87df-4878fcd6cf32",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C34",
+      "claim": "The primary advantage of the neural network over CA125 was avoiding false positives (8/43 for the neural network versus 23/43 for CA125; p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "The primary advantage of the neural network over CA125 was avoiding false positives (8/43 for the neural network versus 23/43 for CA125; p=0.002) (Supplementary file 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison in supplementary file",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "844cb3c3-6357-43fb-aec3-6cfc808a14b3",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C35",
+      "claim": "The neural network and CA125 levels were independent of one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the neural network and CA125 levels were independent of one another (Figure 4\u2014figure supplement 1; Supplementary file 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d9beb73b-447d-419c-bc67-b98e4d0783d7",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C36",
+      "claim": "Using the neural network and CA125 in a tiered testing strategy would increase the probability of a false positive test result from 4.2% (5/120) to 19.2% (23/120).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested using the neural network and CA125 in a tiered testing strategy, subjecting all negative neural network algorithm results to a second review with CA125, but found this would increase the probability of a false positive test result from 4.2% (5/120) to 19.2% (23/120) and a false negative rate from 5.8% (7/120) to 13.3% (16/120) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "cec25fad-5a75-4d40-a4ac-aa2d7f5e1b10",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C37",
+      "claim": "Using the neural network and CA125 in a tiered testing strategy would increase the false negative rate from 5.8% (7/120) to 13.3% (16/120).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested using the neural network and CA125 in a tiered testing strategy, subjecting all negative neural network algorithm results to a second review with CA125, but found this would increase the probability of a false positive test result from 4.2% (5/120) to 19.2% (23/120) and a false negative rate from 5.8% (7/120) to 13.3% (16/120) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "eff81c7a-dc79-4ba8-8f9b-9f8050789206",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C38",
+      "claim": "Initial screening with CA125 followed by neural network yielded only three additional correctly diagnosed cases of invasive cancer at the expense of 19 additional false positive results.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative of initial screening with CA125 followed by neural network yielded only three additional correctly diagnosed cases of invasive cancer at the expense of 19 additional false positive results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of tiered testing strategy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "9b6beaf9-3e49-43e8-a0f9-0482cad0c850",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C39",
+      "claim": "The neural network perfectly classified patients in the Keller et al. training set (AUC 1.00, 95% CI 1.00\u20131.00).",
+      "claim_type": "EXPLICIT",
+      "source": "The neural network perfectly classified patients in the training set (AUC 1.00, 95% CI 1.00\u20131.00) and provided very good discriminatory power on the testing set (AUC 0.93, 95% CI 0.81\u20131.00), with an overall sensitivity of 75% and specificity of 100%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of the Keller et al. dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "2688ab78-1e76-4ffa-8fea-e8c18a7121d9",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C40",
+      "claim": "The neural network provided very good discriminatory power on the Keller et al. testing set (AUC 0.93, 95% CI 0.81\u20131.00), with an overall sensitivity of 75% and specificity of 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural network perfectly classified patients in the training set (AUC 1.00, 95% CI 1.00\u20131.00) and provided very good discriminatory power on the testing set (AUC 0.93, 95% CI 0.81\u20131.00), with an overall sensitivity of 75% and specificity of 100%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of the Keller et al. dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "e7a3459f-4cc6-4fdc-ae5b-6f293d517c84",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C41",
+      "claim": "The signature was specific to ovarian cancer compared to all other diagnoses in the Keller et al. dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The signature was specific to ovarian cancer compared to all other diagnoses, as it did not show any clinically-efficient diagnostic capabilities for any of the 12 other morbidities analysed in the set and showed good performance in distinguishing ovarian cancer samples against all other diagnoses combined (AUC 0.92, 95% CI 0.82\u20131.00) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "e194605c-6316-40b0-b415-9bda720eae8f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C42",
+      "claim": "The neural network did not show clinically-efficient diagnostic capabilities for any of the 12 other morbidities analysed in the Keller et al. dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The signature was specific to ovarian cancer compared to all other diagnoses, as it did not show any clinically-efficient diagnostic capabilities for any of the 12 other morbidities analysed in the set and showed good performance in distinguishing ovarian cancer samples against all other diagnoses combined (AUC 0.92, 95% CI 0.82\u20131.00) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "4a1b1beb-57e5-4a6e-a067-58282d1db409",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C43",
+      "claim": "The neural network showed good performance in distinguishing ovarian cancer samples against all other diagnoses combined (AUC 0.92, 95% CI 0.82\u20131.00) in the Keller et al. dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The signature was specific to ovarian cancer compared to all other diagnoses, as it did not show any clinically-efficient diagnostic capabilities for any of the 12 other morbidities analysed in the set and showed good performance in distinguishing ovarian cancer samples against all other diagnoses combined (AUC 0.92, 95% CI 0.82\u20131.00) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "e60d7211-70c6-40b4-97ec-8aeed035e948",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C44",
+      "claim": "Global sensitivity analysis reduced the neural network to only seven miRNAs (miR-29a-3p, miR-92a-3p, miR-200c-3p, miR-320c, miR-335\u20135 p, miR-450b-5p, and miR-1307\u20135 p) plus four normalizers (miR-423\u20133 p, miR-191\u20135 p, miR-221\u20133 p, and miR-103a-3p).",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed a global sensitivity analysis on the best neural network for qPCR data and iteratively removed the variables which did the least in terms of improving the classifier's performance. This reduced the neural network to only seven miRNAs (miR-29a-3p, miR-92a-3p, miR-200c-3p, miR-320c, miR-335\u20135 p, miR-450b-5p, and miR-1307\u20135 p) plus four normalizers (miR-423\u20133 p, miR-191\u20135 p, miR-221\u20133 p, and miR-103a-3p).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the optimization process for the qPCR model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "fa969575-b732-4e8c-a0e7-c7b036aa9f03",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C45",
+      "claim": "The qPCR-based neural network performed well with an AUC 0.89 on the training set and AUC 0.80 on the testing set.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting network performed well with an AUC 0.89 on the training set and AUC 0.80 on the testing set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of the qPCR model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "123fc246-462d-42b8-9cab-3b8ad6b1e072",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C46",
+      "claim": "In the Polish external validation set, the neural network had a positive predictive value of 91.3% (95% CI: 73.3\u201397.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "In this population, the neural network had a positive predictive value of 91.3% (95% CI: 73.3\u201397.6%) and a negative predictive value of 78.6% (95% CI: 64.2\u201388.2%) with an AUC of 0.85 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of the Polish validation set shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "e6dd6070-34ef-4d14-a591-5448eebc8288",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C47",
+      "claim": "In the Polish external validation set, the neural network had a negative predictive value of 78.6% (95% CI: 64.2\u201388.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "In this population, the neural network had a positive predictive value of 91.3% (95% CI: 73.3\u201397.6%) and a negative predictive value of 78.6% (95% CI: 64.2\u201388.2%) with an AUC of 0.85 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of the Polish validation set shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "f82fb5ea-6202-445d-aa4b-d0b80ce3e1d6",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C48",
+      "claim": "In the Polish external validation set, the neural network had an AUC of 0.85.",
+      "claim_type": "EXPLICIT",
+      "source": "In this population, the neural network had a positive predictive value of 91.3% (95% CI: 73.3\u201397.6%) and a negative predictive value of 78.6% (95% CI: 64.2\u201388.2%) with an AUC of 0.85 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of the Polish validation set shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "bb7b97c0-5d11-413f-a9f7-af9d25ae60f8",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C49",
+      "claim": "Circulating levels of miR-200a-3p and miR-200c-3p decreased significantly within 72 hr of tumor removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Circulating levels of all three miRNAs decreased within 72 hr of tumor removal, with significant changes for miR-200a-3p and miR-200c-3p (Figure 7A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "dc038770-3692-4649-86d4-ce2400ef9ea4",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C50",
+      "claim": "In 100% of the samples, there was complete overlap between lesional cells and the miRNAs crucial for neural network performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In 100% of the samples, there was complete overlap between lesional cells and the miRNAs crucial for neural network performance, suggesting that the miRNAs detected in the serum are present even in early lesions in the fallopian tube epithelium and raising the possibility of detection of pre-metastatic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in situ hybridization analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "c703d3a9-352a-4ccf-bdbb-dfc268d3fbad",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C51",
+      "claim": "The miRNAs detected in the serum are present even in early lesions in the fallopian tube epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In 100% of the samples, there was complete overlap between lesional cells and the miRNAs crucial for neural network performance, suggesting that the miRNAs detected in the serum are present even in early lesions in the fallopian tube epithelium and raising the possibility of detection of pre-metastatic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from in situ hybridization data showing miRNA presence in early lesions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "7ef12e98-a333-4191-a18c-c73d324fda6c",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C52",
+      "claim": "The presence of miRNAs in early lesions raises the possibility of detection of pre-metastatic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In 100% of the samples, there was complete overlap between lesional cells and the miRNAs crucial for neural network performance, suggesting that the miRNAs detected in the serum are present even in early lesions in the fallopian tube epithelium and raising the possibility of detection of pre-metastatic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the finding of miRNAs in early lesions",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "49b11a6e-357e-4f18-b13f-a06e7d19cd2d",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C53",
+      "claim": "This is the first study in ovarian cancer to combine next generation sequencing technology for serum miRNA with machine learning techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first study in ovarian cancer to combine next generation sequencing technology for serum miRNA with machine learning techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a novel contribution of the study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "a669dc2f-ad08-46a4-822e-a32adbfa01cb",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C54",
+      "claim": "Sequencing provides greater sensitivity for miRNA detection than other methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does sequencing provide greater sensitivity for miRNA detection than other methods, but expression levels of various miRNAs are not linearly related and relationships among miRNAs tend to be obscured by more basic statistical approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about sequencing technology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "0fb50536-29d8-43b8-af3d-483de622fb35",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C55",
+      "claim": "Expression levels of various miRNAs are not linearly related.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does sequencing provide greater sensitivity for miRNA detection than other methods, but expression levels of various miRNAs are not linearly related and relationships among miRNAs tend to be obscured by more basic statistical approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a characteristic of miRNA data",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "7f484824-afe4-4885-afeb-4e7560f8406e",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C56",
+      "claim": "Relationships among miRNAs tend to be obscured by more basic statistical approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does sequencing provide greater sensitivity for miRNA detection than other methods, but expression levels of various miRNAs are not linearly related and relationships among miRNAs tend to be obscured by more basic statistical approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of basic statistical methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "8784946b-c691-4102-850c-ae829db7627f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C57",
+      "claim": "The neural network correctly classified 35/43 (81%) borderline tumors as being non-invasive neoplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the neural network correctly classified 35/43 (81%) borderline tumors as being non-invasive neoplasms, compared to just 20/43 (47%; p=0.002) for CA125.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of neural network and CA125 performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "b5047110-868f-4c9e-bcb7-19ccbaeacddd",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C58",
+      "claim": "CA125 correctly classified 20/43 (47%) borderline tumors as being non-invasive neoplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the neural network correctly classified 35/43 (81%) borderline tumors as being non-invasive neoplasms, compared to just 20/43 (47%; p=0.002) for CA125.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of neural network and CA125 performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "68668281-f316-4393-9023-ab0a9068217f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C59",
+      "claim": "The ERASMOS specimens were obtained from cases enrolled sequentially, reflecting the natural frequency of different ovarian tumor subtypes in the clinical population.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERASMOS specimens were obtained from cases enrolled sequentially, reflecting the natural frequency of different ovarian tumor subtypes in the clinical population, including the fact that most women with invasive ovarian cancer present with advanced stage disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "2de6104a-6a58-406c-b0cd-fed17cf3047c",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C60",
+      "claim": "Most women with invasive ovarian cancer present with advanced stage disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERASMOS specimens were obtained from cases enrolled sequentially, reflecting the natural frequency of different ovarian tumor subtypes in the clinical population, including the fact that most women with invasive ovarian cancer present with advanced stage disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about ovarian cancer presentation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "a3a9d100-91ed-49b6-85e1-25193030bd1c",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C61",
+      "claim": "The Pelvic Mass Protocol samples allowed enrichment of the study population for less common clinical cases including benign complex ovarian masses, borderline tumors, early stage cancers, and non-serous histologic subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pelvic Mass Protocol samples allowed us to enrich the study population for less common clinical cases that would be expected to confound a conventional screening algorithm, including benign complex ovarian masses, borderline tumors, early stage cancers, and non-serous histologic subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "de601345-06ed-42dc-bffa-f07e789be221",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C62",
+      "claim": "NECC provided age-matched healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "NECC provided age-matched healthy controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "6af5ee55-ed12-4bff-98db-319e16067203",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C63",
+      "claim": "The neural network performed well across disease stages, histologic subtypes, and diagnostic platforms in the Keller et al. dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of our model was tested using a publicly available dataset from Keller, et al where we showed that the neural network performed well across disease stages, histologic subtypes, and diagnostic platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of the Keller et al. dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d0fbe743-64fd-4107-a534-995cdb2c91ee",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C64",
+      "claim": "The ability to specifically identify ovarian cancers and discriminate ovarian cancer from other diagnoses sets the current work apart from prior miRNA studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability to specifically identify ovarian cancers and discriminate ovarian cancer from other diagnoses sets the current work apart from prior miRNA studies (Nakamura et al., 2016; Chung et al., 2013; Resnick et al., 2009; Zuberi et al., 2015; H\u00e4usler et al., 2010; Zheng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to prior studies cited",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "df856a61-3408-4b32-ac70-b77d59ab5a31",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C65",
+      "claim": "The rapid change in circulating levels of mir-200a and mir-200c after surgical cytoreduction suggests these are being produced actively by tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid change in circulating levels after surgical cytoreduction for mir-200a and mir-200c suggests these are being produced actively by tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of decreased levels after tumor removal",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "1fa87d6b-4e37-4c39-a42d-95abef4fb0fd",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C66",
+      "claim": "Other miRNAs did not have as great of a decrease after surgery, which may reflect differing half-lives for different miRNA species.",
+      "claim_type": "EXPLICIT",
+      "source": "Although other miRNAs did not have as great of a decrease, this may reflect differing half-lives for different miRNA species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed differences",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "e0aa803d-5957-4866-bcc8-685855680414",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C67",
+      "claim": "The study confirmed prior work suggesting that these miRNAs are detectable in advanced ovarian cancers specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "This both confirms prior work suggesting that these miRNAs are detectable in advanced ovarian cancers specimens and adds the new finding that these miRNAs are expressed in very early stage and even pre-invasive lesions (Bagnoli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bagnoli et al., 2016",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "53aa398d-a2b6-4a9a-80c5-f109413f0b97",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C68",
+      "claim": "The study adds the new finding that these miRNAs are expressed in very early stage and even pre-invasive lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "This both confirms prior work suggesting that these miRNAs are detectable in advanced ovarian cancers specimens and adds the new finding that these miRNAs are expressed in very early stage and even pre-invasive lesions (Bagnoli et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in situ hybridization data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "fde78d22-a9ce-4198-a5a5-09508ba22ad9",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C69",
+      "claim": "The phase II specimens used in this study are like those used to support development of assay panels subsequently approved for the differential diagnosis of ovarian cancer vs. a benign pelvic mass.",
+      "claim_type": "EXPLICIT",
+      "source": "The phase II specimens used in this study are like those used to support development of assay panels subsequently approved for the differential diagnosis of ovarian cancer vs. a benign pelvic mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to prior FDA-approved panels",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "61b3e162-e821-4614-9a34-5471dcfab843",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C70",
+      "claim": "The OVA1 panel was approved by the FDA in 2009 and consisted of 5 analytes including CA125.",
+      "claim_type": "EXPLICIT",
+      "source": "The first panel, named OVA1, was approved by the FDA in 2009 and consisted of 5 analytes including CA125 (Zhang et al., 2004; Ueland et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhang et al., 2004 and Ueland et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "230fdf79-b5bd-403a-aaf1-7a09bb8392b7",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C71",
+      "claim": "The OVA1 assay had an AUC of only 0.80 (95% CI: 0.73\u20130.88) for pre-menopausal women and 0.82 (95% CI: 0.77\u20130.87) for post-menopausal women.",
+      "claim_type": "EXPLICIT",
+      "source": "While those authors emphasized the assay's negative predictive value of 95% (when combined with physician assessment), the assay had an AUC of only 0.80 (95% CI: 0.73\u20130.88) for pre-menopausal women and 0.82 (95% CI: 0.77\u20130.87) for post-menopausal women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies on OVA1",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "9dd0f2b3-ee62-4310-a5b6-486063e096ed",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C72",
+      "claim": "The second panel (ROMA) was approved in 2011 and consisted of CA125 and HE4, combined with menopausal status.",
+      "claim_type": "EXPLICIT",
+      "source": "The second panel was approved in 2011 and consisted of just two markers, CA125 and HE4, combined with menopausal status (Moore et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moore et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "7e95215a-631a-4627-8fcd-80e9b81f768a",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C73",
+      "claim": "The ROMA algorithm had an overall AUC for discriminating cancer from benign tumors of 0.91 (95% CI: 0.88\u20130.94), but this was in the setting of including borderline tumors as malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "While the ROMA algorithm had an overall AUC for discriminating cancer from benign tumors of 0.91 (95% CI: 0.88\u20130.94), this was in the setting of including borderline tumors as malignancies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies on ROMA",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "0fa880b0-b4d6-44c3-8438-28db1f0aa17f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C74",
+      "claim": "The positive predictive value of the ROMA test for distinguishing benign masses from Stage I/II EOC was only 0.27.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the positive predictive value of the test for distinguishing benign masses from Stage I/II EOC was only 0.27.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies on ROMA",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d883e9d7-4e20-4c92-82f1-e830806d7170",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C75",
+      "claim": "In 2016, the FDA approved an updated version of the OVA1 test which retained CA125 but replaced 2 of the markers with HE4 and FSH.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2016, the FDA approved an updated version of the OVA1 test which retained CA125 but replaced 2 of the markers with HE4 and FSH (Coleman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Coleman et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "c0057eeb-3f75-4132-af92-dad788a8fe49",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C76",
+      "claim": "The updated OVA1 test improved the overall AUC to 0.92 (95% CI: 0.89\u20130.96) for the assay alone and 0.94 (95% CI: 0.91\u20130.97) when combined with physician assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "This improved the overall AUC to 0.92 (95% CI: 0.89\u20130.96) for the assay alone and 0.94 (95% CI: 0.91\u20130.97) when combined with physician assessment, although 80% of the tumors in this study were benign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies on updated OVA1",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "0781386d-2665-4f7e-ba49-e64c6a1c9957",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C77",
+      "claim": "80% of the tumors in the updated OVA1 study were benign.",
+      "claim_type": "EXPLICIT",
+      "source": "This improved the overall AUC to 0.92 (95% CI: 0.89\u20130.96) for the assay alone and 0.94 (95% CI: 0.91\u20130.97) when combined with physician assessment, although 80% of the tumors in this study were benign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies on updated OVA1",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "432fa4e6-ae36-42dd-8a8e-e58550705255",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C78",
+      "claim": "Timely referral to a gynecologic oncologist is a strong predictor of ovarian cancer survival.",
+      "claim_type": "EXPLICIT",
+      "source": "As timely referral to a gynecologic oncologist is a strong predictor of ovarian cancer survival, we believe that there is a role for a test based on blood markers alone (Earle et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Earle et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "6303ffe1-c116-4837-aab9-da5414a3d4e1",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C79",
+      "claim": "FDA approval of the various panels for use in the differential diagnosis of pelvic masses did not extend to their use in the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "FDA approval of the various panels for use in the differential diagnosis of pelvic masses did not extend to their use in the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about FDA approval scope",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "3cd38e3e-5602-4aa9-94bd-5df880d162d2",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C80",
+      "claim": "Based on PLCO and UKCTOCS trials, the US Preventive Services Task Force and the Society of Gynecologic Oncology have not recommended routine screening for ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Based upon the results of the PLCO and UKCTOCS randomized clinical trials (or so called 'phase 4') the US Preventive Services Task Force and the Society of Gynecologic Oncology (SGO) have not recommended routine screening for ovarian cancer (Zhu et al., 2011; Skates et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhu et al., 2011 and Skates et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "b0df1de5-5a07-44d9-b9e6-3fb75c17a530",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C81",
+      "claim": "Screening with CA125 and transvaginal ultrasound is recommended by the National Comprehensive Cancer Network guidelines and the SGO for women with known hereditary syndromes of ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, screening with CA125 and transvaginal ultrasound is recommended by the National Comprehensive Cancer Network guidelines and the SGO for women with known hereditary syndromes of ovarian cancer (such as women with germline BRCA1/2 mutations), even though there is currently no evidence that this screening strategy improves survival in elevated risk populations (Schorge et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schorge et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "668d2aec-fa57-412d-b6c9-1aaf2e6c266f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C82",
+      "claim": "There is currently no evidence that screening with CA125 and transvaginal ultrasound improves survival in elevated risk populations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, screening with CA125 and transvaginal ultrasound is recommended by the National Comprehensive Cancer Network guidelines and the SGO for women with known hereditary syndromes of ovarian cancer (such as women with germline BRCA1/2 mutations), even though there is currently no evidence that this screening strategy improves survival in elevated risk populations (Schorge et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schorge et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "f781ae0c-1afd-49ab-a81a-de55de207a5a",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C83",
+      "claim": "Recent studies have identified circulating (serum/plasma) miRNAs that are altered in ovarian carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies (Chung et al., 2013; Langhe et al., 2015; Resnick et al., 2009; Zuberi et al., 2015) have identified circulating (serum/plasma) miRNAs that are altered in ovarian carcinomas, and there is limited overlap with miRNAs that emerged from our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "6b3251e4-a47b-4595-9d83-854d1666a150",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C84",
+      "claim": "There is limited overlap between miRNAs identified in recent studies and miRNAs that emerged from the current analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies (Chung et al., 2013; Langhe et al., 2015; Resnick et al., 2009; Zuberi et al., 2015) have identified circulating (serum/plasma) miRNAs that are altered in ovarian carcinomas, and there is limited overlap with miRNAs that emerged from our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to prior studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d003add1-38aa-4d3b-8e6a-c99cb6de2318",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C85",
+      "claim": "Limited sample numbers in prior studies diminish the statistical robustness of the results.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible cause of this difference is the limited number of samples examined in these studies. For example, in Langhe et al, a training set of 5 serous ovarian carcinomas and five benign serous cystadenomas were selected for the initial experiments. The validation set was 20 serous ovarian carcinomas and 20 benign serous cystadenomas. In Resnick et al, 28 ovarian carcinoma patients and 15 healthy controls were used to identify to differential expression of circulating miRNAs. Such limited numbers diminish the statistical robustness of the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison to prior studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "5e7d249e-c678-45d3-b85e-2670ba42592f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C86",
+      "claim": "A study systematically compared 12 different miRNA expression platforms and found a 12-fold difference between the highest and lowest number of detected miRNA when identical samples were profiled by different platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently a study (Mestdagh et al., 2014) systematically compared 12 different miRNA expression platforms. Specifically, for serum miRNAs there was a 12-fold difference between the highest and lowest number of detected miRNA when identical samples were profiled by different platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mestdagh et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "f6bfd255-320d-4c23-a4b0-f2d97275f426",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C87",
+      "claim": "The LNA-based platform from Exiqon has the highest specificity but may be limited for sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this report the LNA-based platform from Exiqon has the highest specificity but maybe limited for sensitivity thereby for detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Mestdagh et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "9e6939d7-8541-4068-af55-cda07c27ce32",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C88",
+      "claim": "Two of the miRNAs in the neural network are members of the mir-200 family.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that two of the miRNAs are members of the mir-200 family, confirming prior reports identifying these miRNAs as overexpressed in ovarian cancer (Zuberi et al., 2015; Pecot et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zuberi et al., 2015 and Pecot et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "57005490-4682-4eb2-b4f2-6a350392fbfe",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C89",
+      "claim": "Prior reports identified mir-200 family miRNAs as overexpressed in ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that two of the miRNAs are members of the mir-200 family, confirming prior reports identifying these miRNAs as overexpressed in ovarian cancer (Zuberi et al., 2015; Pecot et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zuberi et al., 2015 and Pecot et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "f3a2e629-0278-4ad8-9363-3a03ddca186d",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C90",
+      "claim": "miR-1246 has been identified in the serum of ovarian cancer, lung cancer, prostate cancer, and stroke patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, miR-1246 has been identified in the serum of ovarian cancer, lung cancer, prostate cancer, and stroke patients (Todeschini et al., 2017; Zhang et al., 2016; Alhasan et al., 2016; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "aac4f977-d8b7-4d56-8384-dd175840ada0",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C91",
+      "claim": "The neural network as a whole was specific to ovarian cancer despite individual miRNAs being associated with other diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as noted in Figure 5, the network as a whole was specific to ovarian cancer, again emphasizing the importance of multimarker panels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "9428ecfc-eec2-46b1-8726-1e57ce5fa50f",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C92",
+      "claim": "Combining small RNA sequencing from 179 human serum samples with a neural network analysis produced a miRNA algorithm for diagnosis of EOC (AUC 0.90; 95% CI: 0.81\u20130.99).",
+      "claim_type": "EXPLICIT",
+      "source": "Combining small RNA sequencing from 179 human serum samples with a neural network analysis produced a miRNA algorithm for diagnosis of EOC (AUC 0.90; 95% CI: 0.81\u20130.99).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "dfabf577-5483-40a5-8d42-b5812c8ecd37",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C93",
+      "claim": "The miRNA neural network model significantly outperformed CA125.",
+      "claim_type": "EXPLICIT",
+      "source": "The model significantly outperformed CA125 and functioned well regardless of patient age, histology, or stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "bf20c36b-d827-4fc5-bd6e-50e1d2e3d6ff",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C94",
+      "claim": "The miRNA neural network functioned well regardless of patient age, histology, or stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The model significantly outperformed CA125 and functioned well regardless of patient age, histology, or stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by post-hoc analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "4ae23373-ecc3-4e4a-81bd-263129ccf5bd",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C95",
+      "claim": "Among 454 patients with various diagnoses, the miRNA neural network had 100% specificity for ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 454 patients with various diagnoses, the miRNA neural network had 100% specificity for ovarian cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of the Keller et al. dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "a0167e2b-6eed-4650-9db3-a49c5a76e339",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C96",
+      "claim": "After using 325 samples to adapt the neural network to qPCR measurements, the model was validated using 51 independent clinical samples.",
+      "claim_type": "EXPLICIT",
+      "source": "After using 325 samples to adapt the neural network to qPCR measurements, the model was validated using 51 independent clinical samples, with a positive predictive value of 91.3% (95% CI: 73.3\u201397.6%) and negative predictive value of 78.6% (95% CI: 64.2\u201388.2%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the validation process",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "2bd4c34e-9d14-4f80-b20e-4672f862627d",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C97",
+      "claim": "Biologic relevance was tested using in situ hybridization on 30 pre-metastatic lesions, showing intratumoral concentration of relevant miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, biologic relevance was tested using in situ hybridization on 30 pre-metastatic lesions, showing intratumoral concentration of relevant miRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in situ hybridization data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "0c01c0c9-d573-4eca-911b-9653cd79e9b4",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "claim_id": "C98",
+      "claim": "Circulating miRNAs have potential to develop a non-invasive diagnostic test for ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest circulating miRNAs have potential to develop a non-invasive diagnostic test for ovarian cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on the study findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Current screening and diagnostic approaches for ovarian cancer are inadequate. CA125 has limited sensitivity for early-stage and non-serous cancers and poor specificity. Large randomized trials (PLCO, UKCTOCS) showed no survival benefit from CA125/ultrasound screening. Adding biomarkers to CA125 did not improve screening performance. FDA-approved panels have not been effective for early diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 establish the clinical context and limitations of current ovarian cancer diagnostics through multiple cited studies. The claims about CA125 limitations, failed screening trials, and ineffective FDA-approved panels are well-supported by appropriate citations and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "57008523-de54-4a88-9a9a-56ad8872fe99",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Circulating miRNAs represent a promising alternative biomarker for ovarian cancer diagnosis with several advantages over protein markers, including PCR amplification, uniform measurement units, and biological relevance to cancer. However, prior efforts have been hampered by methodological challenges including statistical approaches, platform reproducibility, and disease heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C18 establish the rationale for miRNA-based diagnostics through appropriate citations. The advantages of miRNAs (C11-C15) and prior evidence of altered profiles in ovarian cancer (C16-C17) are supported by citations. The acknowledged challenges (C18) provide important context for the current study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "842125aa-4030-4e3b-85a7-832ddf5af4d4",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study assembled a well-designed cohort of 179 pre-treatment samples from three independent studies (ERASMOS, PMP, NECC) that were randomized into demographically similar training and testing sets with balanced histopathological diagnoses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe the study design with appropriate detail. The use of multiple independent cohorts with different enrichment strategies is a strength. The randomization produced balanced training/testing sets as evidenced by Table 2 (C23-C24), supporting proper experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "ba3f412a-1e70-4167-a751-7e6eb58707c2",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A neural network model using 14 miRNAs achieved an AUC of 0.90 (95% CI: 0.81-0.99) on the testing set, meeting pre-specified statistical objectives. The model performed consistently on both batch-adjusted and unadjusted data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 present the primary diagnostic model with appropriate statistical metrics. The neural network met pre-specified criteria (p=0.03 vs. AUC 0.75) and showed robustness to batch adjustment. However, the testing set was relatively small (n=44), and the wide confidence interval (0.81-0.99) suggests some uncertainty in the estimate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "2bbb05af-11cd-426f-803d-f61bb9f0f1ba",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Post-hoc analyses showed the neural network performed equally well across patient age, histologic subtypes (serous vs. non-serous), and disease stage (early vs. advanced).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C31 describe important subgroup analyses but are labeled as 'post-hoc' and reference only supplementary files without presenting the actual performance metrics or sample sizes in each subgroup. The claim of 'equally well' performance lacks quantitative support and statistical testing for interactions. These analyses should have been pre-specified given the known heterogeneity of ovarian cancer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "9c65d981-f9a5-4ecf-89e3-ba9fd8345abf",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In 120 subjects with CA125 data, the neural network (AUC 0.93) significantly outperformed CA125 (AUC 0.74, p=0.001), primarily by reducing false positives (8/43 vs. 23/43, p=0.002). The two markers were independent of each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 provide a direct comparison to the clinical standard with appropriate statistical testing. The superior performance is well-documented with specific metrics. The independence of the markers (C35) is an important finding supported by Figure 4 supplement 1. However, the subset with CA125 data (120/179) may introduce selection bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "80164c1c-2396-49e0-9f14-2451be27e310",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tiered testing strategies combining the neural network with CA125 would worsen performance, increasing both false positive rates (4.2% to 19.2%) and false negative rates (5.8% to 13.3%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 demonstrate that combining the markers does not improve performance, which is logical given their independence (C35). The analysis is supported by Figure 4 supplement 2. This finding argues against combination strategies and supports using the neural network alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "a500c911-2606-4a89-9737-956522a1c7dd",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "External validation using the Keller et al. dataset (454 patients with 13 different diagnoses) showed the neural network had 100% specificity for ovarian cancer with 75% sensitivity (AUC 0.93 on testing set), and did not detect any of 12 other diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 demonstrate disease specificity using an independent public dataset with multiple disease types. The 100% specificity on the testing set is impressive but should be interpreted cautiously given the small number of ovarian cancer cases (15 total). The perfect classification on the training set (C39, AUC 1.00) suggests possible overfitting. The cross-platform validation (microarray vs. sequencing) is a strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "88a52a3a-9cff-4854-9241-7041e8be6e88",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Global sensitivity analysis reduced the model to 7 miRNAs plus 4 normalizers for qPCR implementation, achieving AUC 0.89 on training and 0.80 on testing sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 describe model optimization for clinical translation. The reduction from 14 to 7 miRNAs simplifies implementation while maintaining reasonable performance. However, the drop in testing set AUC from 0.90 (sequencing) to 0.80 (qPCR) is notable and may reflect platform differences or overfitting to the sequencing data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "1510a6bf-09cb-4806-9d88-ace605b7b618",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Independent external validation in 51 Polish patients showed positive predictive value of 91.3% (95% CI: 73.3-97.6%), negative predictive value of 78.6% (95% CI: 64.2-88.2%), and AUC of 0.85.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 provide crucial independent validation in a completely separate cohort from a different country. The performance metrics are clinically relevant (PPV, NPV) and reasonably strong. However, the sample size is small (n=51), leading to wide confidence intervals. The lower NPV (78.6%) compared to PPV suggests the test may miss some cancers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "8e714cf6-ee4e-41d4-b112-bb421f53c691",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Circulating levels of miR-200a-3p and miR-200c-3p decreased significantly within 72 hours of tumor removal, suggesting active tumor production. Other miRNAs showed smaller decreases, possibly reflecting different half-lives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C65-C66 provide biological validation showing tumor-derived miRNAs. The significant decrease in miR-200 family members after surgery (C49) supports their tumor origin. The speculation about half-lives (C66) is reasonable but unproven. The 72-hour timepoint is relatively short; longer follow-up would strengthen conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "dc19391b-d052-43e1-b545-352c73da3633",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In situ hybridization of 30 pre-metastatic lesions showed 100% overlap between lesional cells and key miRNAs, demonstrating their presence in early-stage and pre-invasive lesions, raising the possibility of detecting pre-metastatic disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C67-C68 provide important biological validation. The 100% concordance (C50) between lesional cells and miRNA expression is striking and supports the biological relevance of the signature. The finding in pre-invasive lesions (C68) is novel and important. However, the claim about detecting 'pre-metastatic disease' (C52) is speculative and would require prospective validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d2f27e80-ef53-4604-a0ee-c13e867b235a",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This is the first study combining next-generation sequencing of serum miRNAs with machine learning for ovarian cancer diagnosis. Sequencing provides superior sensitivity, and machine learning can capture non-linear relationships among miRNAs that basic statistics would miss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 establish the methodological novelty. The combination of NGS and machine learning (C53) is appropriately claimed as novel for ovarian cancer. The advantages of sequencing (C54) and the non-linear nature of miRNA relationships (C55-C56) justify the analytical approach, as evidenced by Figure 10 showing complex clustering patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "ff19c7f4-9c7c-46e5-a98f-db9b317b2532",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The neural network correctly classified 81% of borderline tumors as non-invasive, compared to only 47% for CA125 (p=0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 demonstrate an important clinical advantage in distinguishing borderline from invasive tumors. This is clinically relevant as borderline tumors have different management. The statistical significance (p=0.002) supports the superiority of the neural network for this distinction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "bb7ef529-823d-453f-8e7b-727ff6222362",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study design incorporated multiple cohorts with complementary strengths: ERASMOS provided consecutive cases reflecting natural disease frequency, PMP enriched for challenging cases, and NECC provided age-matched controls. External validation demonstrated performance across platforms and disease characteristics, distinguishing this work from prior miRNA studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 describe the study's design strengths. The multi-cohort approach (C59-C62) addresses different aspects of clinical heterogeneity. The external validation across platforms (C63) and disease specificity (C64) are important strengths that distinguish this from prior work with smaller, more homogeneous samples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study's phase II design is comparable to prior FDA-approved panels (OVA1, ROMA). The neural network's performance (AUC 0.90-0.93) compares favorably to OVA1 (AUC 0.80-0.82) and ROMA (AUC 0.91), with the advantage of not including borderline tumors as malignancies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 provide important context by comparing to FDA-approved tests. The comparisons are appropriate given similar study designs. The neural network's performance is competitive or superior, with the important distinction of correctly classifying borderline tumors as non-malignant. However, direct head-to-head comparisons in the same population would be more definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "3d9b6713-7ddd-489a-9675-1dcecbced89a",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Current guidelines do not recommend routine ovarian cancer screening in the general population based on failed trials, but screening is recommended for high-risk women despite lack of survival benefit evidence. Timely referral to specialists is a strong predictor of survival, supporting the need for blood-based tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 accurately summarize current clinical guidelines and their evidence base through appropriate citations. This context justifies the need for improved diagnostic tests. The apparent contradiction in recommending screening for high-risk women without survival evidence (C81-C82) highlights the clinical dilemma.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "76b69bff-fe2a-48de-9a55-34868d6ffd50",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior miRNA studies identified altered circulating miRNAs in ovarian cancer, but with limited overlap to the current study. Differences may reflect small sample sizes in prior studies (e.g., 5-28 cases) and platform variability, with 12-fold differences in miRNA detection across platforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 appropriately contextualize prior work and explain discrepancies. The critique of small sample sizes (C85) is valid and well-documented. The platform variability issue (C86-C87) is supported by citation to Mestdagh et al. and justifies the current study's approach using NGS followed by qPCR validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "585ca0fc-8930-46ef-a4da-d34fb2d0bed8",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The neural network includes miR-200 family members previously associated with ovarian cancer. While individual miRNAs like miR-1246 are found in multiple diseases, the network as a whole was specific to ovarian cancer, emphasizing the importance of multimarker panels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 address biological plausibility and specificity concerns. The inclusion of miR-200 family members (C88-C89) validates against prior literature. The acknowledgment that individual miRNAs lack specificity (C90) but the panel is specific (C91) is well-supported by Figure 5 and emphasizes the value of the multimarker approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    },
+    {
+      "id": "03244d4e-d802-48b5-ac36-3700a54d64ea",
+      "content_id": "898c828a-0008-47e6-a905-56d56d8c7cde",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study developed a miRNA neural network diagnostic for ovarian cancer (AUC 0.90) that outperformed CA125 and functioned across patient subgroups, showed 100% specificity among 454 patients with various diagnoses, was validated in 51 independent samples (PPV 91.3%, NPV 78.6%), and demonstrated biological relevance in pre-metastatic lesions, suggesting potential for non-invasive ovarian cancer diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C98 summarize the main findings. The diagnostic performance (C92-C94) is well-supported by the data. The specificity claim (C95) is strong but based on small numbers. The independent validation (C96) and biological validation (C97) strengthen the conclusions. However, the conclusion about 'potential' (C98) is appropriately cautious, as the study acknowledges limitations and need for further validation in phase III specimens.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:17.099386Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "85c583e3-cd5d-4b60-94b3-556f85eb0d3e",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "60137cd0-5f8c-414f-9329-ce17a1af6b0c",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "94dd93eb-483d-47cc-9cf4-959b011bf125",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "bacf91e9-f5a4-45b9-8c4d-687f1aec1805",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "a488ba23-5f63-4a27-9d91-4288a3bf9fb6",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "26f62047-6f73-4652-a1fb-7beb4f64f37e",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "0212671c-9228-4c22-984a-aa38e3a3d119",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "0f7b2862-84aa-4621-b302-929e4bdc7eab",
+      "result_id": "fac7eff2-9eac-44af-9cf3-0f9d22e94998"
+    },
+    {
+      "claim_id": "6c993490-609f-4065-993c-f9b45e642933",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "33e07f54-ed1c-4256-afd5-a7ac6bdebb1e",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "5f965fe1-ab22-47c9-825e-0202b48893ac",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "54a4e3bf-4122-4a9f-b2a0-938d8b1e88b4",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "b4f8967a-ba65-413f-b79c-1e0c0e35cb6e",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "41ce86a8-1866-46b5-9b9a-9d04eb38b964",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "d59cd5ff-eead-40fa-9df3-eeb05ffe2ca2",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "d00a1dff-f4d1-47c1-acfb-a491ad69e987",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "e0544003-bf7e-4b70-93df-8093d770b0df",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "1b011903-928b-40f9-9f34-77fc673d5029",
+      "result_id": "57008523-de54-4a88-9a9a-56ad8872fe99"
+    },
+    {
+      "claim_id": "21eb3818-9c97-447f-bf0e-dac9da1f9a5b",
+      "result_id": "842125aa-4030-4e3b-85a7-832ddf5af4d4"
+    },
+    {
+      "claim_id": "e4bd8d84-4800-4d00-80cf-5cfd5740e41b",
+      "result_id": "842125aa-4030-4e3b-85a7-832ddf5af4d4"
+    },
+    {
+      "claim_id": "571008fe-2487-4c00-8bd1-c3b7c022073f",
+      "result_id": "842125aa-4030-4e3b-85a7-832ddf5af4d4"
+    },
+    {
+      "claim_id": "41b19dd6-39d4-45c0-a290-fe9254ff5dba",
+      "result_id": "842125aa-4030-4e3b-85a7-832ddf5af4d4"
+    },
+    {
+      "claim_id": "fb58f414-c2c9-4f9d-b07a-e2523fa41bb1",
+      "result_id": "842125aa-4030-4e3b-85a7-832ddf5af4d4"
+    },
+    {
+      "claim_id": "d4429ceb-2252-4bbe-8f8a-f49ef52472bd",
+      "result_id": "842125aa-4030-4e3b-85a7-832ddf5af4d4"
+    },
+    {
+      "claim_id": "ac434fc0-ede8-44bd-a981-bfba6e241cdd",
+      "result_id": "ba3f412a-1e70-4167-a751-7e6eb58707c2"
+    },
+    {
+      "claim_id": "91f0959a-c823-422e-b876-1d8ffc31ec89",
+      "result_id": "ba3f412a-1e70-4167-a751-7e6eb58707c2"
+    },
+    {
+      "claim_id": "c93ba10f-f058-464b-a524-dbddbc46d260",
+      "result_id": "ba3f412a-1e70-4167-a751-7e6eb58707c2"
+    },
+    {
+      "claim_id": "36178de2-1174-4bb3-9121-da3af6042c7d",
+      "result_id": "ba3f412a-1e70-4167-a751-7e6eb58707c2"
+    },
+    {
+      "claim_id": "bf3765f8-9f68-4656-8192-fcd3c59b0b76",
+      "result_id": "2bbb05af-11cd-426f-803d-f61bb9f0f1ba"
+    },
+    {
+      "claim_id": "da07af33-92fa-420d-b1b0-c0f200ee1854",
+      "result_id": "2bbb05af-11cd-426f-803d-f61bb9f0f1ba"
+    },
+    {
+      "claim_id": "1dd5e0f2-d5e7-47f6-b996-63449e12e9f3",
+      "result_id": "2bbb05af-11cd-426f-803d-f61bb9f0f1ba"
+    },
+    {
+      "claim_id": "ac83bd9a-4a87-4bf2-b0f8-a30a92d1a8a6",
+      "result_id": "9c65d981-f9a5-4ecf-89e3-ba9fd8345abf"
+    },
+    {
+      "claim_id": "b0102b19-7290-4005-867e-f9f264c80519",
+      "result_id": "9c65d981-f9a5-4ecf-89e3-ba9fd8345abf"
+    },
+    {
+      "claim_id": "56563e77-6f46-4367-87df-4878fcd6cf32",
+      "result_id": "9c65d981-f9a5-4ecf-89e3-ba9fd8345abf"
+    },
+    {
+      "claim_id": "844cb3c3-6357-43fb-aec3-6cfc808a14b3",
+      "result_id": "9c65d981-f9a5-4ecf-89e3-ba9fd8345abf"
+    },
+    {
+      "claim_id": "d9beb73b-447d-419c-bc67-b98e4d0783d7",
+      "result_id": "80164c1c-2396-49e0-9f14-2451be27e310"
+    },
+    {
+      "claim_id": "cec25fad-5a75-4d40-a4ac-aa2d7f5e1b10",
+      "result_id": "80164c1c-2396-49e0-9f14-2451be27e310"
+    },
+    {
+      "claim_id": "eff81c7a-dc79-4ba8-8f9b-9f8050789206",
+      "result_id": "80164c1c-2396-49e0-9f14-2451be27e310"
+    },
+    {
+      "claim_id": "9b6beaf9-3e49-43e8-a0f9-0482cad0c850",
+      "result_id": "a500c911-2606-4a89-9737-956522a1c7dd"
+    },
+    {
+      "claim_id": "2688ab78-1e76-4ffa-8fea-e8c18a7121d9",
+      "result_id": "a500c911-2606-4a89-9737-956522a1c7dd"
+    },
+    {
+      "claim_id": "e7a3459f-4cc6-4fdc-ae5b-6f293d517c84",
+      "result_id": "a500c911-2606-4a89-9737-956522a1c7dd"
+    },
+    {
+      "claim_id": "e194605c-6316-40b0-b415-9bda720eae8f",
+      "result_id": "a500c911-2606-4a89-9737-956522a1c7dd"
+    },
+    {
+      "claim_id": "4a1b1beb-57e5-4a6e-a067-58282d1db409",
+      "result_id": "a500c911-2606-4a89-9737-956522a1c7dd"
+    },
+    {
+      "claim_id": "e60d7211-70c6-40b4-97ec-8aeed035e948",
+      "result_id": "88a52a3a-9cff-4854-9241-7041e8be6e88"
+    },
+    {
+      "claim_id": "fa969575-b732-4e8c-a0e7-c7b036aa9f03",
+      "result_id": "88a52a3a-9cff-4854-9241-7041e8be6e88"
+    },
+    {
+      "claim_id": "123fc246-462d-42b8-9cab-3b8ad6b1e072",
+      "result_id": "1510a6bf-09cb-4806-9d88-ace605b7b618"
+    },
+    {
+      "claim_id": "e6dd6070-34ef-4d14-a591-5448eebc8288",
+      "result_id": "1510a6bf-09cb-4806-9d88-ace605b7b618"
+    },
+    {
+      "claim_id": "f82fb5ea-6202-445d-aa4b-d0b80ce3e1d6",
+      "result_id": "1510a6bf-09cb-4806-9d88-ace605b7b618"
+    },
+    {
+      "claim_id": "bb7b97c0-5d11-413f-a9f7-af9d25ae60f8",
+      "result_id": "8e714cf6-ee4e-41d4-b112-bb421f53c691"
+    },
+    {
+      "claim_id": "df856a61-3408-4b32-ac70-b77d59ab5a31",
+      "result_id": "8e714cf6-ee4e-41d4-b112-bb421f53c691"
+    },
+    {
+      "claim_id": "1fa87d6b-4e37-4c39-a42d-95abef4fb0fd",
+      "result_id": "8e714cf6-ee4e-41d4-b112-bb421f53c691"
+    },
+    {
+      "claim_id": "dc038770-3692-4649-86d4-ce2400ef9ea4",
+      "result_id": "dc19391b-d052-43e1-b545-352c73da3633"
+    },
+    {
+      "claim_id": "c703d3a9-352a-4ccf-bdbb-dfc268d3fbad",
+      "result_id": "dc19391b-d052-43e1-b545-352c73da3633"
+    },
+    {
+      "claim_id": "7ef12e98-a333-4191-a18c-c73d324fda6c",
+      "result_id": "dc19391b-d052-43e1-b545-352c73da3633"
+    },
+    {
+      "claim_id": "e0aa803d-5957-4866-bcc8-685855680414",
+      "result_id": "dc19391b-d052-43e1-b545-352c73da3633"
+    },
+    {
+      "claim_id": "53aa398d-a2b6-4a9a-80c5-f109413f0b97",
+      "result_id": "dc19391b-d052-43e1-b545-352c73da3633"
+    },
+    {
+      "claim_id": "49b11a6e-357e-4f18-b13f-a06e7d19cd2d",
+      "result_id": "d2f27e80-ef53-4604-a0ee-c13e867b235a"
+    },
+    {
+      "claim_id": "a669dc2f-ad08-46a4-822e-a32adbfa01cb",
+      "result_id": "d2f27e80-ef53-4604-a0ee-c13e867b235a"
+    },
+    {
+      "claim_id": "0fb50536-29d8-43b8-af3d-483de622fb35",
+      "result_id": "d2f27e80-ef53-4604-a0ee-c13e867b235a"
+    },
+    {
+      "claim_id": "7f484824-afe4-4885-afeb-4e7560f8406e",
+      "result_id": "d2f27e80-ef53-4604-a0ee-c13e867b235a"
+    },
+    {
+      "claim_id": "8784946b-c691-4102-850c-ae829db7627f",
+      "result_id": "ff19c7f4-9c7c-46e5-a98f-db9b317b2532"
+    },
+    {
+      "claim_id": "b5047110-868f-4c9e-bcb7-19ccbaeacddd",
+      "result_id": "ff19c7f4-9c7c-46e5-a98f-db9b317b2532"
+    },
+    {
+      "claim_id": "68668281-f316-4393-9023-ab0a9068217f",
+      "result_id": "bb7ef529-823d-453f-8e7b-727ff6222362"
+    },
+    {
+      "claim_id": "2de6104a-6a58-406c-b0cd-fed17cf3047c",
+      "result_id": "bb7ef529-823d-453f-8e7b-727ff6222362"
+    },
+    {
+      "claim_id": "a3a9d100-91ed-49b6-85e1-25193030bd1c",
+      "result_id": "bb7ef529-823d-453f-8e7b-727ff6222362"
+    },
+    {
+      "claim_id": "de601345-06ed-42dc-bffa-f07e789be221",
+      "result_id": "bb7ef529-823d-453f-8e7b-727ff6222362"
+    },
+    {
+      "claim_id": "6af5ee55-ed12-4bff-98db-319e16067203",
+      "result_id": "bb7ef529-823d-453f-8e7b-727ff6222362"
+    },
+    {
+      "claim_id": "d0fbe743-64fd-4107-a534-995cdb2c91ee",
+      "result_id": "bb7ef529-823d-453f-8e7b-727ff6222362"
+    },
+    {
+      "claim_id": "fde78d22-a9ce-4198-a5a5-09508ba22ad9",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "61b3e162-e821-4614-9a34-5471dcfab843",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "230fdf79-b5bd-403a-aaf1-7a09bb8392b7",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "9dd0f2b3-ee62-4310-a5b6-486063e096ed",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "7e95215a-631a-4627-8fcd-80e9b81f768a",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "0fa880b0-b4d6-44c3-8438-28db1f0aa17f",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "d883e9d7-4e20-4c92-82f1-e830806d7170",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "c0057eeb-3f75-4132-af92-dad788a8fe49",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "0781386d-2665-4f7e-ba49-e64c6a1c9957",
+      "result_id": "d8d26d98-12eb-4b6e-90ba-d8a39c32308c"
+    },
+    {
+      "claim_id": "432fa4e6-ae36-42dd-8a8e-e58550705255",
+      "result_id": "3d9b6713-7ddd-489a-9675-1dcecbced89a"
+    },
+    {
+      "claim_id": "6303ffe1-c116-4837-aab9-da5414a3d4e1",
+      "result_id": "3d9b6713-7ddd-489a-9675-1dcecbced89a"
+    },
+    {
+      "claim_id": "3cd38e3e-5602-4aa9-94bd-5df880d162d2",
+      "result_id": "3d9b6713-7ddd-489a-9675-1dcecbced89a"
+    },
+    {
+      "claim_id": "b0df1de5-5a07-44d9-b9e6-3fb75c17a530",
+      "result_id": "3d9b6713-7ddd-489a-9675-1dcecbced89a"
+    },
+    {
+      "claim_id": "668d2aec-fa57-412d-b6c9-1aaf2e6c266f",
+      "result_id": "3d9b6713-7ddd-489a-9675-1dcecbced89a"
+    },
+    {
+      "claim_id": "f781ae0c-1afd-49ab-a81a-de55de207a5a",
+      "result_id": "76b69bff-fe2a-48de-9a55-34868d6ffd50"
+    },
+    {
+      "claim_id": "6b3251e4-a47b-4595-9d83-854d1666a150",
+      "result_id": "76b69bff-fe2a-48de-9a55-34868d6ffd50"
+    },
+    {
+      "claim_id": "d003add1-38aa-4d3b-8e6a-c99cb6de2318",
+      "result_id": "76b69bff-fe2a-48de-9a55-34868d6ffd50"
+    },
+    {
+      "claim_id": "5e7d249e-c678-45d3-b85e-2670ba42592f",
+      "result_id": "76b69bff-fe2a-48de-9a55-34868d6ffd50"
+    },
+    {
+      "claim_id": "f6bfd255-320d-4c23-a4b0-f2d97275f426",
+      "result_id": "76b69bff-fe2a-48de-9a55-34868d6ffd50"
+    },
+    {
+      "claim_id": "9e6939d7-8541-4068-af55-cda07c27ce32",
+      "result_id": "585ca0fc-8930-46ef-a4da-d34fb2d0bed8"
+    },
+    {
+      "claim_id": "57005490-4682-4eb2-b4f2-6a350392fbfe",
+      "result_id": "585ca0fc-8930-46ef-a4da-d34fb2d0bed8"
+    },
+    {
+      "claim_id": "f3a2e629-0278-4ad8-9363-3a03ddca186d",
+      "result_id": "585ca0fc-8930-46ef-a4da-d34fb2d0bed8"
+    },
+    {
+      "claim_id": "aac4f977-d8b7-4d56-8384-dd175840ada0",
+      "result_id": "585ca0fc-8930-46ef-a4da-d34fb2d0bed8"
+    },
+    {
+      "claim_id": "9428ecfc-eec2-46b1-8726-1e57ce5fa50f",
+      "result_id": "03244d4e-d802-48b5-ac36-3700a54d64ea"
+    },
+    {
+      "claim_id": "dfabf577-5483-40a5-8d42-b5812c8ecd37",
+      "result_id": "03244d4e-d802-48b5-ac36-3700a54d64ea"
+    },
+    {
+      "claim_id": "bf20c36b-d827-4fc5-bd6e-50e1d2e3d6ff",
+      "result_id": "03244d4e-d802-48b5-ac36-3700a54d64ea"
+    },
+    {
+      "claim_id": "4ae23373-ecc3-4e4a-81bd-263129ccf5bd",
+      "result_id": "03244d4e-d802-48b5-ac36-3700a54d64ea"
+    },
+    {
+      "claim_id": "a0167e2b-6eed-4650-9db3-a49c5a76e339",
+      "result_id": "03244d4e-d802-48b5-ac36-3700a54d64ea"
+    },
+    {
+      "claim_id": "2bd4c34e-9d14-4f80-b20e-4672f862627d",
+      "result_id": "03244d4e-d802-48b5-ac36-3700a54d64ea"
+    },
+    {
+      "claim_id": "0c01c0c9-d573-4eca-911b-9653cd79e9b4",
+      "result_id": "03244d4e-d802-48b5-ac36-3700a54d64ea"
+    }
+  ],
+  "comparisons": []
+}

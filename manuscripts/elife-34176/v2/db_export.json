@@ -1,0 +1,2155 @@
+{
+  "submission": {
+    "id": "86a2ab4e-160a-4d78-96b2-2a5605088387",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:41:25.532484Z",
+    "updated_at": "2025-12-02T00:41:25.532484Z"
+  },
+  "content": [
+    {
+      "id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "submission_id": "86a2ab4e-160a-4d78-96b2-2a5605088387",
+      "content_type": "manuscript",
+      "content_text": "# Modulation of formin processivity by profilin and mechanical tension\n\n## Authors\n\n- Luyan Cao<sup>1</sup>\n- Mikael Kerleau<sup>1</sup>\n- Emiko L. Suzuki<sup>1</sup>\n- Hugo Wioland<sup>1</sup> ([ORCID: 0000-0001-5254-9642](https://orcid.org/0000-0001-5254-9642))\n- Sandy Jouet<sup>1</sup>\n- Berengere Guichard<sup>1</sup>\n- Martin Lenz<sup>2</sup> ([ORCID: 0000-0002-2307-1106](https://orcid.org/0000-0002-2307-1106))\n- Guillaume Romet-Lemonne<sup>1</sup> ([ORCID: 0000-0002-4938-1065](https://orcid.org/0000-0002-4938-1065)) \u2020\n- Antoine Jegou<sup>1</sup> ([ORCID: 0000-0003-0356-3127](https://orcid.org/0000-0003-0356-3127)) \u2020\n\n### Affiliations\n\n1. Institut Jacques Monod, CNRS, Universit\u00e9 Paris Diderot Paris France\n2. LPTMS, CNRS, Universit\u00e9 Paris-Sud, Universit\u00e9 Paris-Saclay Orsay France\n\n\u2020 Corresponding author\n\n## Abstract\n\nFormins are major regulators of actin networks. They enhance actin filament dynamics by remaining processively bound to filament barbed ends. How biochemical and mechanical factors affect formin processivity are open questions. Monitoring individual actin filaments in a microfluidic flow, we report that formins mDia1 and mDia2 dissociate faster under higher ionic strength and when actin concentration is increased. Profilin, known to increase the elongation rate of formin-associated filaments, surprisingly decreases the formin dissociation rate, by bringing formin FH1 domains in transient contact with the barbed end. In contrast, piconewton tensile forces applied to actin filaments accelerate formin dissociation by orders of magnitude, largely overcoming profilin-mediated stabilization. We developed a model of formin conformations showing that our data indicates the existence of two different dissociation pathways, with force favoring one over the other. How cells limit formin dissociation under tension is now a key question for future studies.\n\n## Introduction\n\nThe diversity of actin filament networks in cells stems from a few key nucleators, such as formins and the Arp2/3 complex, which have very specific activities (Blanchoin et al., 2014; Bovellan et al., 2014; Wales et al., 2016). In cells, formins are responsible for the generation of elongated, unbranched actin filament structures such as the ones found in filopodia, stress fibers, the cytokinetic ring, and within the nucleus (Isogai and Innocenti, 2016). Formin malfunction is linked to a number of pathologies, such as angiogenesis (Phng et al., 2015), neuropathies (Roos et al., 2015) and cancer (Choi et al., 2016).\n\nFormins function as homodimers and most isoforms share a similar mode of activation, where the interaction of activators with N-terminal domains releases auto-inhibition and mediates the anchoring of formins to membranes. Formin functional domains, Formin Homology Domains 1 (FH1) and 2 (FH2), are responsible for their most salient features: their ability to track both growing and depolymerizing filament barbed ends and to accelerate their elongation from profilin-actin (Higashida et al., 2004; J\u00e9gou et al., 2013; Kovar and Pollard, 2004; Mizuno et al., 2011; Romero et al., 2004). Rapid elongation is achieved by the FH1 domains, seen as flexible chains containing polyproline tracks, which bind profilin-actin complexes and deliver them to the barbed end (Higashida et al., 2004; Kovar and Pollard, 2004; Romero et al., 2004). Barbed end tracking is achieved by the translocation of the FH2 dimer, which encircles the actin subunits at the barbed end (Otomo et al., 2005).\n\nFormin processivity, quantified by the dissociation rate of the formin from the barbed end, determines for how long filaments interact with a formin. While a formin resides at the barbed end, it decreases barbed end affinity for Capping Protein (Bombardier et al., 2015; Shekhar et al., 2015; Zigmond et al., 2003), modulates its elongation, and can maintain it anchored to a membrane. Processivity is thus a pivotal characteristic, determining formins\u2019 ability to shape filament networks and transmit forces.\n\nFormin processivity has long been identified as an essential feature of formins and occasional measurements have revealed quantitative differences between isoforms (Bilancia et al., 2014; Kovar et al., 2006; Paul and Pollard, 2008; Romero et al., 2004; Vizcarra et al., 2014). Negative regulators bind to FH2 to displace formin from filament barbed ends (Chesarone et al., 2009; Chesarone-Cataldo et al., 2011), whereas Ena/VASP, via its EVH1 domain, is able to bind to FH1 domains without impacting formin processivity (Bilancia et al., 2014). While processivity seems mainly governed by FH2-actin interactions, the DAD domain (or \u2018tail\u2019), found next to the FH2 domain at the C-terminus, has been reported to contribute to the processivity of Drosophila formin Capuccino (Vizcarra et al., 2014). The dissociation rate of yeast formin Bni1p has been proposed to scale with filament elongation velocity, suggesting the existence of a transient, weakly bound state occurring upon actin subunit addition (Paul and Pollard, 2008).\n\nToday, many important aspects of formin processivity remain unclear. The possible involvement of formin\u2019s other domains and the modulation of formin processivity by various physiological factors have yet to be determined. In particular, pulling forces such as the ones exerted on actin filaments in cells (Romet-Lemonne and J\u00e9gou, 2013) have been reported to modulate formin elongation (Courtemanche et al., 2013; J\u00e9gou et al., 2013; Kubota et al., 2017; Yu et al., 2017; Zimmermann et al., 2017) but their impact on processivity is an open question.\n\nHere, we systematically quantify the dissociation rate of mammalian formins mDia1 and mDia2 in different in vitro conditions. Using microfluidics to monitor and manipulate individual actin filaments (Figure 1), we find that the dissociation rate is modulated by ionic strength (Figure 2) as well as by actin and profilin concentrations (Figure 3). Profilin prolongs formin residence at the barbed end via its interaction with the FH1 domain, allowing rapid elongations without enhancing formin dissociation. We find that tension applied on filaments has a dramatic impact on the formin dissociation rate, which increases by several orders of magnitude, independently of other parameters (Figure 4). We compare the impact of these different factors on the typical lengths reached by the formin-elongated filaments (Figure 5). A mathematical model describing the possible formin states at the barbed end is developed and confronted to our experimental data (Figure 6). It indicates that, when an actin subunit is added to the barbed end, the formin goes through a dissociation-prone transition, which is relatively insensitive to force, and which can be stabilized by FH1-profilin-barbed end interactions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013C) Different experimental configurations using microfluidics for the study of formin processivity, showing sketches of the side view (top) and typical kymographs of individual filaments (bottom). (A) Alexa 488 labeled actin filaments are elongated from surface-anchored spectrin-actin seeds. Transient exposure to a formin solution puts formins on filament barbed ends, which elongate faster (here in the presence of 1 \u00b5M 15% Alexa 488 labeled actin\u00a0+5 \u00b5M profilin, at 100 mM KCl). Upon formin dissociation, the barbed end elongates slower. Images were acquired in TIRF microscopy. See Video 1. (B) Same configuration as in (A), but the filaments are exposed to a periodic alternation of different conditions: here a solution of unlabeled actin (0.3 \u00b5M actin, 50 mM KCl) for 100 s and a solution of 15% Alexa 488 labeled actin (0.5 \u00b5M actin\u00a0+2 \u00b5M profilin, 50 mM KCl) for 20 s. Images were acquired in epifluorescence while exposing to unlabeled actin. See Video 2. (C) Configuration where formins are anchored to the surface by their C-terminus. Filaments were nucleated using a solution of labeled actin and elongated by flowing in a solution of unlabeled actin (here, 0.3 \u00b5M actin, at 50 mM KCl), until the filaments eventually detached and disappeared. The viscous drag applied on the filaments was kept low (<0.1 pN) by working with low flow rates. Images were acquired in epifluorescence. See Video 3. (D) Domain architecture and boundaries for the mDia1 and mDia2 formin constructs used in this study. (E) Survival fractions of mDia1(FH1-FH2-DAD) formin-bound barbed ends as a function of time, obtained from three independent experiments performed in the same conditions, in the experimental configuration shown in (A). Curves are fitted by a mono-exponential decay to obtain formin dissociation rate koff.\n\n![Video 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-video1.mp4.jpg)\n\n**Video 1.:** Images were acquired in TIRF. Full field of view is 137 \u00d7 137 \u00b5m. Interval between images is 5 s (movie is accelerated 75x). The solution flows from left to right. Corresponds to Figure 1A of the main text.\n\n![Video 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-video2.mp4.jpg)\n\n**Video 2.:** The filaments are transiently exposed to a solution of 11 nM mDia1(FH1-FH2-DAD) for 5 s, after frame number 5. Images were acquired in epifluorescence while exposing to unlabeled actin. Full field of view is 137 \u00d7 137 \u00b5m. Interval between images is 120 s (movie is accelerated 360x). The solution flows from left to right. Corresponds to Figure 1B of the main text.\n\n![Video 3.](https://cdn.elifesciences.org/articles/34176/elife-34176-video3.mp4.jpg)\n\n**Video 3.:** Full field of view is 221 \u00d7 221 \u00b5m. Images were acquired in epifluorescence. Interval between images is 10 s (movie is accelerated 70x). A minimal flow is applied. The solution flows from left to right. Corresponds to Figure 1C of the main text.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig2-v2.jpg)\n\n**Figure 2.:** (A,B) Effect of salt concentration on the survival fraction of formin-bound barbed ends (A), on the formin dissociation rates (B, log-linear scale) as well as on the barbed end elongation rates (B, inset). The dissociation rates in (B) result from the exponential fits (black lines) shown in (A). Each data point corresponds to a population of 30\u201340 filaments. (C,D) Effect of the actin Alexa 488 labeling fraction on the survival fraction of formin-bound barbed ends (C), on the formin dissociation rates (D) and on the barbed end elongation rates (D, inset). Each data point in (D) corresponds to a population of 30\u201340 filaments. Error bars on formin dissociation rates indicate 65% confidence intervals based on exponential fits and sample size (see Materials and methods), and error bars on elongation rates indicate standard deviations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig2-figsupp1-v2.jpg)\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig3-v2.jpg)\n\n**Figure 3.:** (A, C) Variation of the mDia1 (A) or mDia2 (C) formin dissociation rate as a function of the barbed end elongation rate. Each data set (N\u00a0=\u00a030\u201340 filaments) was obtained with a fixed profilin concentration and different actin concentrations, at 100 mM KCl. Each point corresponds to an independent experiment, performed with 15% Alexa 488-labeled actin, except for the data of mDia1 without profilin which were acquired with unlabeled actin (as described in Figure 1B). (B, D) Variation of the formin dissociation rate and the barbed end elongation rate (inset) as a function of profilin concentration, (B) for mDia1 formins with a full length FH1 (FH1-FH2-DAD) and with a truncated FH1 containing only two polyproline tracks (FH1(2PP)-FH2-DAD), and (D) for mDia2(FH1-FH2-DAD). The data was obtained with 15% Alexa 488-labeled actin, at 100 mM KCl. The same profilin dependence was observed using unlabeled actin, for both 50 and 100 mM KCl (Figure 2\u2014figure supplement 1). Each data point corresponds to the average of 1\u20133 independent experiments. (E) Variation of the formin dissociation rate as a function of the barbed end elongation rate: for mDia1(FH2-DAD) homodimers in the presence or absence of profilin, and for mDia1(FH1-FH2-DAD) in the absence of profilin, all with unlabeled actin. (F) Sketch illustrating the profilin-mediated interaction between FH1 and the barbed end, forming the \u2018ring complex\u2019, which appears to prevent the dissociation of formin from the barbed end. Error bars on formin dissociation rates indicate 65% confidence intervals based on exponential fits and sample size (see Materials and methods), and error bars on elongation rates indicate standard deviations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Each data point corresponds to an independent experiment (N\u00a0=\u00a030\u201340 filaments) which was conducted at 100 mM KCl. Error bars indicate standard deviations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Survival fraction of mDia1 formin-anchored filaments (N\u00a0=\u00a030 for each curve), exposed to negligible force (<0.1 pN) while elongating with 1 \u00b5M actin and either zero (blue), 10 \u00b5M (gray) or 20 \u00b5M profilin-R88E mutant (black). Inset: average elongation rates measured in the same conditions (subset of N\u00a0=\u00a011\u201313 filaments, for each condition). Error bars represent standard deviations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sketch of the experimental configuration, similar to that of Figure 1C, but where significant forces are applied using various flow rates. The applied force scales with the filament length. (B) Survival fractions of mDia1-anchored filaments, elongating with 1 \u00b5M actin\u00a0+10 \u00b5M profilin, using different flow rates to reach different force ranges: each filament underwent 0.051 pN/\u00b5m (initial filament length\u00a0=\u00a04.9 \u00b5m, N\u00a0=\u00a046 filaments), 0.204 pN/\u00b5m (initial filament length\u00a0=\u00a03.2 \u00b5m, N\u00a0=\u00a049) or 0.501 pN/\u00b5m (initial filament length\u00a0=\u00a02.6 \u00b5m, N\u00a0=\u00a049) for \u2018low\u2019, \u2018medium\u2019 and \u2018high\u2019 flow rate curves, respectively. (C\u2013E) mDia1 formin dissociation rate as a function of applied force (log-linear plots), for different actin concentrations in the absence of profilin (C); for 1 \u00b5M actin with different profilin concentrations (D); for 0.3 \u00b5M actin in presence or absence of FH1 domains (E, top); and for 1 \u00b5M actin, 4 \u00b5M profilin for mDia1 (FH1-FH2-DAD) formins either anchored by their FH1 N-terminus or FH2 C-terminus (E, bottom). Experiments were carried out by elongating the filaments with unlabeled actin, at 50 mM KCl. (F) mDia1 and mDia2 formin dissociation rates as a function of applied force (log-linear plots), for different profilin and unlabeled actin concentrations, at 100 mM KCl. Dissociation rates were obtained by local fits of the slope in survival fractions similar to the ones shown in (B) (see Materials and methods). Each data point is either obtained from a single experiment or is the average of 2\u20133 independent experiments. The data points at zero force were measured independently, using the configuration shown in Figure 1B (striped filaments). The error bars indicate standard deviations when several independent experiments were grouped (data from individual experiments for (C) and (D) are shown in Supp. Figure 4\u2014figure supplement 2).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Nucleation of new filaments from surface-anchored mDia1 formins. The anchored mDia1(FH1-FH2-DAD) formins that participated in a pulling force experiment with 1 \u00b5M actin 4 \u00b5M profilin in a moderate flow (i.e. reaching a pulling force\u00a0~1\u20134 pN before filaments detached) as depicted in Figure 4, were subjected to a renucleation assay to assess if they were still present on the coverslip surface and functional. The renucleation assay consisted in exposing them alternatively, at the same flow rate, to a solution of F-buffer at 25 mM KCl, 2 \u00b5M 15% Alexa 488-labeled actin, 0.4 \u00b5M profilin and to a solution of F-buffer at 100 mM KCl, 1 \u00b5M unlabeled actin, 4 \u00b5M profilin, for 15 s each. The formins that were observed renucleating a filament (\u20181 st renucleation\u2019, light blue), eventually let go of that filament and could be observed nucleating another filament (\u20182nd renucleation\u2019, dark blue). The dashed line indicates that 74% of the formins had nucleated a new filament after 500 s.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** mDia1 formin dissociation rate as a function of applied force (log-linear plots): for different actin concentrations in the absence of profilin (left); for 1 \u00b5M actin with different profilin concentrations (right). Dissociation rates were obtained by local fits of the slope in survival fractions similar to the ones shown in Figure 4B (see Materials and methods). Each data point is obtained from a single experiment. Error bars indicate the standard deviations for force and the\u00a0\u00b10.13% uncertainty on the dissociation rate, accounting for formin detachments from the surface (see Materials and methods). Grouping these data in bins of similar forces resulted in the plots shown in Figure 4C and D.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** C-terminus anchored mDia2 (FH1-FH2-DAD) formin elongation rate as a function of the applied tension for 2 \u00b5M unlabeled actin in absence (left) or in presence of 4 \u00b5M profilin (right), at 100 mM KCl. Data from both conditions are simultaneously fitted, according to the model from (J\u00e9gou et al., 2013), resulting in the probability to be in the open state p0\u00a0=\u00a069%, and kon\u00a0=\u00a01.5 and 18.4 \u00b5M\u22121.s\u22121 in the absence or presence of profilin, respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig5-v2.jpg)\n\n**Figure 5.:** Mean flament length (A) as a function of actin concentration, in the absence of profilin, normalized by its value at 1 \u00b5M actin (which equals 0.65 \u00b5m for mDia1 and 8.22 \u00b5m for mDia2); (B) mean length as a function of profilin concentration, at 1 \u00b5M actin, normalized by its value in the absence of profilin; (C) mean length as a function of force, at 2 \u00b5M actin 4 \u00b5M profilin for mDia2, and at 1 \u00b5M actin 4 \u00b5M profilin for mDia1, normalized by its value in the absence of force (83.7 \u00b5m for mDia2 and 7.45 \u00b5m for mDia1). All data were acquired at 100 mM KCl. Error bars indicate standard deviations.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig6-v2.jpg)\n\n**Figure 6.:** (A) Sketch summarizing the conformations adopted by the FH2 dimer and the actin filament barbed end in our model, in the absence of profilin (for a complete description of the model, see Appendix 1). The system is in rapid equilibrium between an open and a closed state (depicted here as in the \u2018stair-stepping\u2019 model) and only the open state allows the addition of a new actin subunit at the barbed end. Following this elongation event, the system is in a transition state, which decays rapidly into a new open-closed rapid equilibrium. Formin dissociation from the barbed end can occur while the system is in the open state (with rate koffO) or in the transition state (rate koffT). The global, observable dissociation rate koff comprises these two routes. (B,C) Predictions of the model for the variation of the dissociation rate koff as a function of force, in log-linear representations. In both cases, koffT is the dominant contribution at zero force. In B, koffO increases more strongly than koffT when force is applied and thus becomes dominant at high force (computed with working distances \u03b4O=\u03b4 and \u03b4T=0, see Appendix 1). In C, koffT increases more strongly than koffO when force is applied (\u03b4O=0 and \u03b4T=\u03b4, see Appendix 1).\n\n## Results\n\n### Single-filament Microfluidics is an efficient means to measure formin processivity under various conditions\n\nWe have carried out experiments using a standard microfluidics chamber with three inlets, in different configurations (Figure 1A\u2013C and Materials\u00a0and\u00a0methods). Using anchored spectrin-actin seeds we have monitored the growth of free actin filaments barbed ends, which we exposed to a solution of formin for typically ten seconds and resumed exposing to constant concentrations of actin and profilin. The presence of formin at the barbed end was visible thanks to its faster elongation (in the presence of profilin). This configuration was used with fluorescently labeled actin (Figure 1A) or alternating exposure to labeled actin with unlabeled actin, producing striped filaments, which allowed us to measure formin related rate constants when incorporating fully unlabeled actin segments (Figure 1B, Materials and methods). Another configuration consisted in anchoring formins to the coverslip surface, nucleating and elongating filaments from these formins (Figure 1C). This allowed us to monitor the elongation of filaments from unlabeled actin, and the dissociation of the formin from the barbed end was revealed by the detachment of the filament which is then carried away by the flow. This configuration applies calibrated forces to the filament-formin interaction (J\u00e9gou et al., 2013), which can be kept very low (<0.1 pN) using a low microfluidics flow rate, or made significant, up to several pN, by increasing the flow rate (Figure 4). Except for the variant with striped filaments, we have used these experimental configurations in earlier studies (J\u00e9gou et al., 2013; Montaville et al., 2014; Shekhar et al., 2015).\n\nThese different configurations allowed us to measure, under a given set of conditions, the survival fraction of filaments that still bear a formin at their barbed end as a function of time (Figure 1E), giving access to the formin dissociation rate constant koff. The experimental configurations shown in Figure 1B and C were specifically used to determine koff with unlabeled actin or with no profilin. We have verified that the results were not affected by our choice of experimental configuration.\n\nWe used purified actin from rabbit muscle, either unlabeled or labeled on lysine 328 with Alexa 488 (T\u00f3th et al., 2016). We used recombinant formin constructs (Figure 1D): mDia1(FH1-FH2-DAD) with full length functional domains; a truncated mDia1(FH1(2PP)-FH2-DAD) with an FH1 domain that contained only the two polyproline (PP) tracks closest to the FH2 domain; mDia1(FH2-DAD) which contained no FH1 domain at all; and mDia2(FH1-FH2-DAD).\n\n### Impact of ionic strength and actin labeling on formin processivity\n\nVarying KCl concentration in our assay buffer (see Materials and methods), we found that the ionic strength had a strong impact on formin dissociation (Figure 2A,B). In comparison, the same variations of the ionic strength had a limited impact on the barbed end elongation rate, with or without formins (Figure 2B, inset). In order for formin dissociation rates to be in a range that could be measured accurately, we have used either 50 or 100 mM KCl depending on whether we were studying mDia1 or mDia2 formins, and whether mechanical tension was applied. We have verified that the effects we report in the rest of this paper are not qualitatively affected by the choice of ionic strength (Figure 2\u2014figure supplement 1).\n\nLabeling actin with a fluorophore can hinder its polymerization or its interaction with regulatory proteins (Chen et al., 2012; Kuhn and Pollard, 2005) and lead to unsuspected artefacts (Niedermayer et al., 2012). Here, our labeling of actin on lysine 328 with Alexa 488 fluorophore had no measurable impact on the elongation rate of formin-free barbed ends, but slowed down their elongation with formins significantly and enhanced formin dissociation rate (Figure 2C,D). Using our microfluidics setup to measure reaction rates with unlabeled actin (Figure 1B,C), we have verified that the conclusions we drew from the observation of 15% Alexa 488-labeled actin filaments were not biased by labeling (Figure 2\u2014figure supplement 1).\n\n### Profilin increases formin processivity, involving FH1 domains\n\nFor a given profilin concentration, the barbed end elongation rate velong scales with the actin concentration (with or without formin, Figure 3\u2014figure supplement 1) and we observed that the formin dissociation rate koff increased with actin concentration, and thus with the elongation rate (Figure 3A,C). This confirmed earlier observations on yeast formin Bni1p (Paul and Pollard, 2008). However, for both mDia1 and mDia2, the amplitude of the increase of the formin dissociation rate with actin concentration appeared to depend significantly on profilin concentration (Figure 3A,C). As a result, there is no universal scaling of koff with the elongation rate. In fact, using different sets of actin and profilin concentrations, one can obtain identical elongation rates with very different formin dissociation rates.\n\nTo investigate this point further, we measured the formin dissociation rate as a function of profilin concentration at a fixed actin concentration and found that koff decreased with increasing profilin concentration (Figure 3B,D). In contrast with actin, the modulation of the elongation rate by profilin is biphasic (Kovar et al., 2006): low profilin concentrations increase velong as actin becomes profilin-actin, while higher concentrations slow down elongation as excess profilin competes with profilin-actin for polyproline binding sites on FH1 domains and barbed ends (Figure 3B,D insets). Importantly, the decrease of koff was also observed in the lower range of profilin concentrations, where the elongation rate greatly increases with profilin. It thus appears that profilin itself reduces formin detachment, independently of the barbed end elongation rate.\n\nIn order to estimate the role of the FH1 domains in the profilin-induced reduction of the dissociation rate, we repeated these measurements using a truncated mDia1 formin construct, FH1(2PP)-FH2-DAD, where both FH1 domains of the formin homodimer only contained two profilin-binding polyproline tracks. We found that the truncated formin still enhanced filament elongation from profilin-actin, though not as strongly as the formin with full-length FH1 (Figure 3B inset). It still exhibited a reduction of koff with profilin concentration (Figure 3B), but the dissociation rate of FH1(2PP)-FH2-DAD was consistently higher than of wild type FH1-FH2-DAD for all profilin concentrations tested. These results confirm that the formin dissociation rate does not generally scale with the elongation rate. They also suggest that FH1 polyproline tracks, which are responsible for rapid elongation, are also responsible for the decrease of koff in the presence of profilin.\n\nTo further investigate the contribution of the FH1 domains, we then asked whether the reduction of the dissociation rate by profilin required its binding to the FH1 domain, or if the rapid equilibrium of profilin with the barbed end was enough to stabilize its interaction with the formin. We reasoned that if the latter hypothesis was correct, the processivity of mDia1(FH2-DAD) dimers (with no FH1 domains) should be enhanced by the binding of profilin to the barbed end. To test this, we compared the FH2 dimer dissociation rate for different barbed end elongation rates, obtained in the presence or absence of profilin (Figure 3E). We found that the presence of a large excess of profilin, which significantly puts the barbed end in a profilin-bound state and slows down its elongation (J\u00e9gou et al., 2011; Pernier et al., 2016), led to the same FH2 dimer dissociation rate as when the same elongation rates were reached without profilin. Thus, in the absence of FH1 domains, profilin simply reduces the dissociation rate of the FH2 dimer by slowing down barbed elongation. These results indicate that FH1 is required in order for profilin to decrease the formin dissociation rate koff independently of the barbed end elongation rate. In the absence of profilin, FH1-FH2 behaved like FH2 (Figure 3E), indicating that the presence of FH1 domains alone, in the absence of profilin, has no impact on processivity. Mutant profilin-R88E, which binds to FH1 but not to actin (Kovar et al., 2006; Lu and Pollard, 2001), has no impact on processivity (Figure 3\u2014figure supplement 2), indicating that the interaction of profilin with G-actin and/or filament barbed ends is required in order to decrease the formin dissociation rate.\n\n### Mechanical tension strongly decreases formin processivity\n\nIn cells, anchored formins are exposed to mechanical tension applied to actin filaments, typically as a consequence of myosin activity. We thus investigated the impact of such forces on formin processivity. To do so, we performed experiments with surface-anchored formins, in the configuration shown in Figure 1C, but using higher flow rates in order to apply significant tension to the filaments (Figure 4A). In a previous study, we have shown that the force at the anchoring point scales with the filament length (J\u00e9gou et al., 2013), and thus increases as the filaments elongate over time. Here, the sigmoidal shape of the survival fractions over time indicated an increase of the dissociation rate koff with the applied force (Figure 4B). In order to avoid making assumptions regarding the force-dependence of the dissociation rate koff, we determined koff at different forces by local fits of the survival fractions (see Materials and methods). We verified that the filament detachment events observed during the experiment corresponded to filament-formin dissociations (as sketched in Figure 4A) by checking that formins were still on the surface at the end of the experiment (see Materials and methods and Figure 4\u2014figure supplement 1).\n\nWe found that mechanical tension had a dramatic impact on the formin dissociation rate, which increased by a few orders of magnitude when piconewton forces were applied (Figure 4C\u2013F). Interestingly, the differences in dissociation rate linked to differences in actin concentrations seemed to disappear when force is applied: the weaker values of koff increased more steeply with force, resulting in a convergence of the dissociation rates when tension was applied (clearly visible for mDia1, in the log-linear representation of Figure 4C and Figure 4\u2014figure supplement 2A). Likewise, the dissociation constant increased with tension in a seemingly identical fashion whether the filaments were elongating from actin alone or with an excess of profilin (Figure 4D,F and Figure 4\u2014figure supplement 2B).\n\nWe found a similar increase of koff with tension for mDia1 FH2 dimers (i.e. without FH1 domains), and for mDia1 FH1-FH2 dimers anchored via their FH1 or their FH2 domains (i.e. whether force is applied to FH2 alone or to FH1 as well) (Figure 4E). These observations indicate that FH1 domains do not participate in the mechanical modulation of formin processivity.\n\n## Discussion\n\n### Processivity mostly relies on FH2-filament interactions, with an unexpected contribution of FH1 domains\n\nFormin control of actin filament elongation at the barbed end is mediated by its homology domains FH1 and FH2, as well as its tail domain, DAD (Gould et al., 2011; Vizcarra et al., 2014). We quantified formin processivity by measuring its dissociation rate koff. Our data indicate that FH2-barbed end interactions are destabilized by ions (Figure 2A). These results confirm that salt bridges mediating FH2-actin interactions, which have been predicted from molecular dynamics simulations (Baker et al., 2015), are essential determinants of the residence time of formin at the barbed end. Our data also indicate that FH2-actin interactions are destabilized by the presence of a fluorescent label on actin subunits (Figure 2C), consistent with the notion that the lateral contacts of FH2 with actin subunits are essential to maintain the formin at the barbed end (Otomo et al., 2005).\n\nUnexpectedly, we show here that FH1 domains also contribute to keeping formin at the barbed end (Figure 3). Since both FH1 domains and profilin-actin interactions (Figure 3\u2014figure supplement 2) are required for profilin to reduce formin dissociation, our results appear in good agreement with the proposition that FH1 delivers profilin-actin to the barbed end by forming a \u2018ring complex\u2019 (Vavylonis et al., 2006), where profilin simultaneously interacts with the barbed end and one polyproline track of one of the two FH1 domains. The ring complex is also likely formed when profilin is brought to the barbed end by FH1 without an actin monomer. It seems natural that, in such a configuration, the FH1 domains would constitute an obstacle to the dissociation of the FH2 dimer from the filament barbed end (Figure 3F). It is difficult to estimate the frequency at which the ring complex is formed, based on the low affinity of profilin for polyproline tracks (Perelroizen et al., 1994) and actin barbed ends (Pernier et al., 2016). However, we can assume that the ring complex is formed at least when delivering profilin-actin to the barbed end, and this may be enough to significantly decrease the rate of detachment associated with the addition of new actin subunits (i.e., detachment from the transition state, later discussed and illustrated in Figure 6).\n\nThis contribution of FH1 domains also confers a new function to profilin: not only does it allow a rapid barbed end elongation, it also helps maintain formin at the barbed end. If rapid elongation were to be achieved without profilin, formins would dissociate very rapidly (Figure 3A,C).\n\nWe have also shown that, when mDia1 FH1 domains were severely truncated, reducing their number of polyproline tracks from 14 to 2, they were still able to perform their tasks regarding both the acceleration of elongation and the reduction of dissociation in the presence of profilin (Figure 3B). These observations are consistent with earlier results on yeast formin Bni1p showing that polyproline tracks located closest to the FH2 domain can mediate a robust polymerization rate in absence of the other polyproline tracks (Courtemanche and Pollard, 2012; Paul and Pollard, 2008).\n\nThis FH1-profilin-mediated stabilization does not seem to resist pulling forces, since the formin dissociation rate increases equally fast in the presence of profilin as without profilin (Figure 4C,D and F), or even when FH1 domains are absent (Figure 4E).\n\nThe different factors that we report here to affect formin processivity may also modulate the resulting average filament length (i.e. the filament elongation rate divided by the formin dissociation rate) in a non-trivial way (Figure 5). An increase in actin concentration increases the elongation rate while reducing processivity, and as a result the filament length varies moderately (Figure 5A). In contrast, increasing the profilin concentration efficiently generates longer filaments (Figure 5B) since both processivity and elongation rates are strongly increased. The application of mechanical tension drastically decreases the resulting filament length (Figure 5C) because the increase in elongation rate (see\u00a0J\u00e9gou et al., 2013) for mDia1, Figure 4\u2014figure supplement 3 for mDia2) is very moderate compared to the decrease in processivity. For both mDia1 and mDia2, filament length is typically reduced ten-fold every 3 pN. Compared to mDia1, mDia2 elongates filaments more slowly in all the conditions we tested, but it is far more processive, resulting in the formation of much longer filaments. This feature appears to reflect differences in their FH2-DAD domains since it persists in the\u00a0absence of profilin.\n\n### Modeling FH2 conformations at the barbed end\n\nPutting the contributions of FH1 domains and profilin aside, our results show that the elongation velocity, hence the addition of actin subunits, enhances formin dissociation from the barbed end (Figure 3A). This suggests that the FH2 dimer goes through a transient, weakly bound state, every time a new actin subunit is added (Figure 6A), as already proposed by (Paul and Pollard, 2008). Based on this idea, we have built a mathematical model predicting the elongation velocity velong and dissociation rate koff for a barbed-end associated formin as a function protein concentrations and force. This model and its predictions are presented in detail in Appendix 1.\n\nAs our model includes a substantial number of chemical reactions and associated reaction rates, we focus less on obtaining precise fits to the experimental data - which are somewhat trivial and uninformative when a large number of adjustable parameters are involved - and instead demonstrate that the qualitative shape of the curves predicted by our model is consistent with our experimental measurements. This shows that the agreement between our model and the data is essential, and not an accident of a specific set of values for the fitting parameters.\n\nOur model, while it does not attempt to explicitly describe the details of FH1 activity, as done by Vavylonis and colleagues (Vavylonis et al., 2006), does include an effective affinity of profilin for barbed ends, and is able to account for our experimental data on profilin by simply considering that the presence of profilin at the barbed end blocks formin dissociation (Appendix 1 and figures therein). Our model thus ties together our observations in a global, consistent description. It also provides insights into the FH2 dimer conformations and the effect of applied tension, which we now summarize here.\n\nStructural details of Bni1p(FH2)-actin interactions (Otomo et al., 2005) have led to the proposal that, as they wait for the addition of a new actin subunit, the FH2 dimer and the barbed end are in a rapid equilibrium between an elongation-competent \u2018open\u2019 state and an elongation-forbidding \u2018closed\u2019 state. In the frame of the subsequently proposed \u2018stair-stepping\u2019 model, FH2 hemidimer translocation (along the filament\u2019s main axis and over a distance of one actin monomer size) is associated to this rapid equilibrium. In contrast, the \u2018stepping-second\u2019 model proposes that the open-closed equilibrium involves no such FH2 hemidimer translocation, which would instead take place after each subunit addition and thus be related to the aforementioned transition state (Paul and Pollard, 2008).\n\nOur earlier work showing that tension accelerates mDia1-mediated elongation (J\u00e9gou et al., 2013) and more recent work applying tension with magnetic tweezers (Yu et al., 2017), both indicate that the open-closed equilibrium corresponds to a working distance of one monomer size, consistent with the stair-stepping model. We have thus chosen this model for our schematic representations of the open-closed equilibrium (Figure 6), even though our data on formin dissociation does not favor one model over the other. The conclusions we draw from our present model of formin dissociation do not require the stair-stepping context.\n\nOur model for dissociation primarily includes the notion that the FH2 dimer goes through a transient, dissociation-prone conformation every time a new actin subunit is added. As sketched in Figure 6A, formin can thus dissociate following two routes: (1) the FH2 dimer unbinds from the barbed end from the open state during its rapid open-closed equilibrium, with a rate koffO(f), or (2) the FH2 dimer unbinds during the transition state that follows subunit addition, with a rate koffT(f).\n\nIn the absence of force, our data show a strong dependence of formin dissociation on actin concentration, i.e. on elongation rate (Figure 3A and C) meaning that koffT(f\u00a0=\u00a00) is the dominant contribution to the global koff(f\u00a0=\u00a00). When pulling forces are applied, the formin dissociation rates for different actin concentrations converge, i.e. koff(f) does not depend on actin concentration anymore (Figure 4C and F). The model predicts such a behavior when koffO(f) increases with force more strongly than koffT(f), and thus becomes dominant at high forces (Figure 6B). In contrast, the situation where koffT(f) remains the dominant contribution to dissociation results in curves for koff(f) at different actin concentrations that remain well separated at high forces (Figure 6C). Together our model and data thus indicate that, while dissociation from the transition state is the dominant route at low force, it is the dissociation from the open state that dominates at high force.\n\n### How do cells manage formin dissociation in a mechanical context?\n\nOur results show that mechanical tension plays a dominant role in the modulation of formin processivity. The dramatic enhancement of formin dissociation, upon application of piconewton forces, appears difficult to compensate with the other factors we have tested, such as actin and profilin concentrations. In cells, where filaments are likely to be tensed mainly because of myosin activity, our results raise questions regarding how these filaments may remain in interaction with membrane-anchored formins. Since it seems unlikely that filaments detach from membranes as soon as moderate forces are applied, they may cumulate alternative anchoring strategies, or see their interaction with formins reinforced by other factors.\n\nIn cells, formin-elongated filaments are often found in bundles, a situation which could allow dissociated formins to rapidly rebind to barbed ends. Also, recent studies have shown that regulatory proteins could directly bind to formins and modulate their activity (e.g., Ena/VASP (Bilancia et al., 2014), CLIP170 (Henty-Ridilla et al., 2016), or Spire/FMN2 interactions (Montaville et al., 2014)). The stabilization of formin-filament interactions in a mechanical context by such proteins is a hypothesis that should be addressed in future experiments.\n\n## Materials\u00a0and\u00a0methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Thermo Fischer</td>\n      <td>Cat# C600003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Rabbit)</td>\n      <td>Rabbit muscle</td>\n      <td>INRA Jouy-en-Josas</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Mouse\u00a0mDia1(FH1-FH2-DAD)</td>\n      <td>Uniprot</td>\n      <td>O08808</td>\n      <td>seq. 552\u20131255 aa</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Mouse\u00a0mDia2(FH1-FH2-DAD)</td>\n      <td>Uniprot</td>\n      <td>Q9Z207</td>\n      <td>seq. 521\u20131171 aa</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human profilin-1</td>\n      <td>Uniprot</td>\n      <td>P07737</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PentaHis Biotin conjugate</td>\n      <td>Qiagen</td>\n      <td>34440</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 488 succinimidyl ester</td>\n      <td>Life Technologies</td>\n      <td>Cat#A20000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Protino Ni-NTA Agarose beads</td>\n      <td>Macherey-Nagel</td>\n      <td>Cat#745400.25</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HiLoad 16/60 Superdex 200 gel filtration column</td>\n      <td>GE Healthcare</td>\n      <td>Cat#28-9893-35</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>numpy/scipy packages</td>\n      <td>Python</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Proteins and buffers\n\nSkeletal muscle actin was purified from rabbit muscle acetone powder (Pel-freeze) following the protocol described in (Wioland et al., 2017), adapted from the original protocol (Spudich and Watt, 1971). Actin was fluorescently labeled on accessible surface lysine 328 of F-actin (T\u00f3th et al., 2016), using Alexa 488-NHS (LifeTechnologies).\n\nRecombinant mouse formins mDia1(SNAP-FH1-FH2-DAD-6xHis) and mDia2(SNAP-FH1-FH2-DAD-6xHis) were expressed in E. Coli Rosetta 2 (DE3) and purified following the protocol described in (Romero et al., 2004).\n\nRecombinant human profilin I was expressed in E. Coli BL21 Star (DE3) and purified following the protocol described in details in Wioland et al. (2017), based on the original protocol by Gieselmann et al. (2008).\n\nSpectrin-actin seeds were purified from human erythrocytes as described in Wioland et al. (2017), based on the original protocol by Casella et al. (1986).\n\nExperiments were performed in F-buffer (5 mM Tris-HCl pH 7.8, 1 mM MgCl2, 0.2 mM EGTA, 0.2 mM ATP, 10 mM DTT and 1 mM DABCO) with various concentrations of KCl, as indicated in the main text and figures.\n\n### Microfluidics setup and experiments\n\nProtein solutions were injected into a Poly-Dimethyl-Siloxane (PDMS, Sylgard) chamber, 20 \u00b5m or 40 \u00b5m in height, 800 \u00b5m in width and 1 cm in length. Chambers were mounted on glass coverslips previously cleaned for 20 min in ultrasonic baths of 1M KOH, ethanol and dH20. PDMS chambers and glass coverslips were UV-treated (UVO cleaner, Jelight) to allow them to bind tightly to each other. We used cross-shaped channels with three inlets. We controlled the pressure in the reservoir and measured the flow rate in each channel using an MFCS and Flow Units (Fluigent).\n\nFor experiments with anchored pointed ends (configurations shown in Figure 1A,B) the chamber was first filled with F-buffer without KCl. We then injected actin-spectrin seeds, 10 pM for 5 min, which adsorbed to the glass surface non-specifically. The surface was then passivated with 5% bovine serum albumin for at least 10 min.\n\nThe anchoring of formins to the coverslip surface (configurations shown in Figures 1C and 4A) was achieved in various ways, with similar results. Surfaces were first passivated and functionalized with biotin, either with PLL-PEG containing a fraction of PLL-PEG-biotin (SuSoS, Switzerland) or with a mixture of BSA and biotinylated BSA. The surfaces were then incubated for 5 min with neutravidin (20 \u00b5g/mL) and rinsed. The various formin constructs all contained a C-terminal 6xHis tag to anchor them via a biotinylated anti-His (penta-His, Qiagen). To anchor specifically the mDia1 (FH1-FH2-DAD) via its N-terminus, we used a biotinylated SNAP-tag construct.\n\n### Microscopy and image acquisition\n\nThe microfluidic setup was placed on a Nikon TiE inverted microscope, equipped with a 60x oil-immersion objective. We either used TIRF, HiLo or epifluorescence depending on the background fluorophore concentration in solution. Two different TiE microscope setups were used. The TIRF setup was controlled by Metamorph, illuminated in TIRF or epifluorescence by 100 mW tunable lasers (iLAS2, Roper Scientific), and images were acquired by an Evolve EMCCD camera (Photometrics). The other TiE setup was controlled by micromanager (Edelstein et al., 2014), illuminated with a 200W Xcite lamp (Lumen dynamics) and images were acquired by an sCMOS Orca-Flash4.0 V2+\u00a0camera (Hamamatsu).\n\nImages were analyzed using ImageJ software.\n\nThe experiments were performed at room temperature, in an air-conditioned environment. We nonetheless measured day-to-day variations of room temperature, between 19\u00b0C and 23\u00b0C, and found that these temperature changes correlated with variations in filament elongation rates and formin dissociation rates: higher temperatures favored faster elongation and faster dissociation. To minimize the impact of such variations, and obtain consistent data, experiments and their controls were systematically repeated on the same day.\n\n### Data analysis\n\nTo avoid any bias related to the selection of filaments during analysis, a rectangular region containing a few tens of filaments was randomly chosen in the microscope field of view, and all the filaments in this region were analyzed. Within this population, filaments were excluded from our analysis only in the following specific cases. We excluded filaments whose ends were difficult to locate because they overlapped with other filaments. We also excluded filaments that sometimes seemed to stick to the surface or, in the case of experiments with anchored formins, appeared to stall (see Supp. Movies).\n\nMovies were analyzed with ImageJ. The Subtract Background plugin was sometimes used to enhance the contrast, with a rolling ball radius of 50 pixels.\n\n### Quantifying formin dissociation rates and their error bars, in the absence of force\n\nFor each experiment, from a randomly chosen filament population, we noted the time at which each individual formin dissociated from the barbed end. The survival fraction of each experiment was then fitted by a single exponential using the numpy/scipy numerical packages of Python.\n\nIn order to quantify the statistical uncertainty in the estimation of the dissociation rate koff resulting from the exponential fits of the survival fractions S(t) (shown for example in Figures 1,2A; Figure 2C), we performed numerical simulations of the experiment (using Python). The program simulated a large number (M\u00a0=\u00a010,000) of experiments, each consisting in N filaments randomly losing their formin with rate constant k0. The survival fraction of each simulated experiment was fitted by a single exponential, resulting in the generation of M estimated rates kest. The distribution of these kest, centered on k0, allowed us to compute the width of the confidence intervals. We could thus verify that a 65% confidence interval corresponded to errors of approximately k0/N0.5.\n\n### Analysis of experiments with striped filaments\n\nOur standard experiment (Figure 1A) relied on the ability to image filaments and on the acceleration of their elongation by formins in order to assess their presence at the barbed end. In order to determine the elongation velocity and the formin dissociation rate in conditions where actin could not be directly imaged (i.e. unlabeled actin) and/or when the presence of formin was not readily detected by a change in elongation velocity (i.e. in the absence of profilin), other configurations were used. A possible alternative was to anchor the formins to the coverslip surface and work with low forces (Figure 1C). In order to obtain results with unanchored formins and zero force, we have used a \u2018striped filaments\u2019 protocol (illustrated in Figure 1B). It consisted in exposing filaments to alternating conditions: a duration \u2206t1 with condition 1 (the condition of interest, with unknown elongation rate v1 and formin dissociation rate k1), and a duration \u2206t2 with condition 2 (containing profilin and labeled actin, with predetermined elongation rate v2 and formin dissociation rate k2). The resulting, striped filament population was imaged at interval (\u2206t1+\u2206t2) and had a measurable elongation rate v=(\u2206t1 v1+\u2206t2 v2)/(\u2206t1+\u2206t2) and formin dissociation rate k=(\u2206t1 k1+\u2206t2 k2)/(\u2206t1+\u2206t2). Knowing v2 and k2, we could thus determine v1 and k1. The results we obtained were consistent with those from experiments with anchored formins, at very low force.\n\n### Analysis of experiments with pulling forces\n\nWe measured the fraction S(t) of filaments growing from surface-anchored formins that remained attached over time, while force was applied on the filaments by viscous drag. The observed filament detachment rate kobs(t) = (dS/dt)/S(t) increases over time, as the filaments get longer and the average force exerted on them thus increases. This force has been calibrated (J\u00e9gou et al., 2013) and we can compute the average force f(t) exerted on the population of filaments, homogeneous in length.\n\nAn important point is to verify whether the filament detachment events that we observe during our experiment do correspond to formin-filament dissociation events. We thus sought to estimate what percentage of the monitored formins were still present and functional at the end of an experiment. To do so, following the experiment, we exposed the surface to a solution of actin to test which formins could nucleate new filaments. We observed that\u00a0~74% of formins were still present and able to nucleate filaments during this test (Figure 4\u2014figure supplement 1), regardless of the force applied during the experiment (between 0 and 6 pN). This indicated that at least 74% of the formins monitored during the experiment were still anchored and functional when their filament was observed to detach from the surface. The measured filament detachment rate kobs thus reflected the formin dissociation rate koff within a reasonable error: 0.74 kobs\u00a0<\u00a0koff\u00a0<\u00a0kobs (corresponding to the vertical error bars shown in Figure 4\u2014figure supplement 2).\n\nWe could thus plot the formin dissociation rate koff as a function of the applied force f. Each individual experiment generated a survival fraction S(t) (as in Figure 4B) from which we deduced a number of points koff(f), as shown in Figure 4\u2014figure supplement 2. The horizontal error bars indicate the standard deviations in f, based on the length dispersion of the filaments. Experiments carried out with different microfluidics flow rates explored different ranges of force, with some overlap between experiments. For clarity, data points were grouped in bins of similar force, and averaged. The resulting plots are shown in Figure 4, where the error bars indicate the standard deviations for f and for koff within each bin.\n",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "140d6240-c708-4f63-ae56-eb16279d79fb",
+      "submission_id": "86a2ab4e-160a-4d78-96b2-2a5605088387",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laurent Blanchoin, Laboratoire de Physiologie Cellulaire Vegetal France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34176.026](https://doi.org/10.7554/eLife.34176.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Modulation of formin processivity by profilin and mechanical tension\" for consideration by eLife. Your article has been favorably evaluated by Anna Akhmanova (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nKerleau and colleagues use TIRF microscopy to monitor formin-mediated actin filament elongation coupled with microfluidic flow to address the impact of profilin, formin FH1 domains, elongation rates and force on the dissociation rate of formin from actin filament barbed ends. Although faster polymerization tends to increase the rate of formin dissociation from filament ends, introduction of profilin into the reaction allows formin to remain associated with growing ends for a longer period of time. Notably, application of tensile force overcomes this stabilizing effect of profilin. To interpret their experimental results, the authors introduce a computational model with two potential pathways for the dissociation of formin from a filament end. Based on this model, they conclude that one of the pathways is favored in the absence of tension, whereas the other is preferred when force is applied to formin-bound filaments.\n\nThe work is expertly performed and analyzed, and the results are clearly described. Formin processivity is a key feature of formin function that is currently under-explored and not well understood. The results described in this paper will thus significantly add to the field's understanding of the mechanism of formin-mediated actin polymerization.\n\nEssential revisions:\n\nThere is quite a bit of variability in the specific rate constants between diverse formins. The impact of this investigation would certainly be enhanced if additional formins were assayed. The authors could study in particular the effect of profilin and force on the dissociation rate of another formin.\n\n1) It would be extremely helpful for the clarity of the study to plot the survival fraction (of formin) as a function of actin subunits added, instead of as a function of time. This would immediately take into account differences in actin filament elongation rate that occur under the large array of conditions used in the study. This information is in the manuscript with regards to plots of dissociation rate as a function of elongation rate, but perhaps would make the data easier to understand. Furthermore, I believe plotting as a function of actin subunits added (instead of time) would allow for a better baseline with which to compare mDia1 (this study) and other studies that come out with other formins that have vastly different elongation rates over different conditions. This would also take into account changes in elongation rate caused by force (Figure 4).\n\n2) According to the Figure 1, actin filaments are around 30 \u00b5m. This is very long compared with the cellular context. How the length of the filament will affect the main conclusions presented here, especially on the tension effect?\n\n3) It would be helpful if the authors included a description of how they fit their survival plot data. I presume that they fit single-exponential decays to their data, but this is not explicitly stated in the text.\n\n4) Since the gating factor of mDia1 is close to 1 (at low profilin concentrations), are the FH2 dimers assumed to nearly always be in a dissociative state? For formins with lower gating factors, how would the time spent in the \"closed\" FH2 conformation affecting the fitting for, or interpretation of, koff rates?\n\n5) It has been reported (Kovar et al., 2006) that the gating factor of mDia1 is profilin-dependent. Did the authors observe a decrease in the elongation rates mediated by the FH2-DAD construct in the presence of profilin? If so, this would suggest that the FH2 dimer begins to populate the non-dissociative, \"closed\" state for a more significant amount of time as the concentration of profilin increases. Would this affect the measured off-rates?\n\n6) The authors interpret the stabilizing effect of profilin (in the absence of force) to be a result of the formation of a transient \"ring complex\" state in which profilin is bound both to the barbed end and to a polyproline track within the FH1 domain. Given the very weak affinities (>100 \u00b5M) of profilin for the barbed end and for short polyproline tracks such as those found in the FH1 domain of mDia1, what is the probability of populating this state, and how does it compare to the length of time spent in either of the dissociative states?\n\n7) An alternative scenario that could account for the stabilizing effect of profilin on formin's processivity would be an allosteric effect of profilin binding to the FH1 domain. This profilin-FH1 complex would be populated to a higher degree than would the \"ring complex\" at low profilin concentrations. Was this scenario considered, and if so, why was it ruled out?\n",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b3077c3-0d4c-4b17-8c7b-41e5744e06ef",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C1",
+      "claim": "Formins are major regulators of actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Formins are major regulators of actin networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about formin function, representing established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "03bfd2b8-3557-4b8d-b1cf-d601241ea314",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C2",
+      "claim": "Formins enhance actin filament dynamics by remaining processively bound to filament barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "They enhance actin filament dynamics by remaining processively bound to filament barbed ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of formins in the scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "c12386c0-1d31-4039-aef7-b819854f548e",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C3",
+      "claim": "mDia1 and mDia2 formins dissociate faster under higher ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring individual actin filaments in a microfluidic flow, we report that formins mDia1 and mDia2 dissociate faster under higher ionic strength and when actin concentration is increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2A,B showing the effect of salt concentration on formin dissociation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "d7a761f7-101c-408d-91b9-9ac7d350bc32",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C4",
+      "claim": "mDia1 and mDia2 formins dissociate faster when actin concentration is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring individual actin filaments in a microfluidic flow, we report that formins mDia1 and mDia2 dissociate faster under higher ionic strength and when actin concentration is increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 3A,C showing the relationship between actin concentration and formin dissociation rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "16d9f486-9d3a-4dad-95ef-320ad02e151f",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C5",
+      "claim": "Profilin increases the elongation rate of formin-associated filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Profilin, known to increase the elongation rate of formin-associated filaments, surprisingly decreases the formin dissociation rate, by bringing formin FH1 domains in transient contact with the barbed end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, referenced as known information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "eea585a9-b9d8-48bb-a406-64a61c36b52d",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C6",
+      "claim": "Profilin decreases the formin dissociation rate by bringing formin FH1 domains in transient contact with the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "Profilin, known to increase the elongation rate of formin-associated filaments, surprisingly decreases the formin dissociation rate, by bringing formin FH1 domains in transient contact with the barbed end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 3B,D showing decreased dissociation rates with increasing profilin concentration, and by experiments with truncated FH1 domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "e0580a79-0e65-4b0f-a6a4-8be1c00fc1ba",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C7",
+      "claim": "Piconewton tensile forces applied to actin filaments accelerate formin dissociation by orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, piconewton tensile forces applied to actin filaments accelerate formin dissociation by orders of magnitude, largely overcoming profilin-mediated stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 4C-F showing dramatic increases in dissociation rates with applied force.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "f1800423-39ab-4547-92f8-ca90386d1f91",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C8",
+      "claim": "Mechanical tension largely overcomes profilin-mediated stabilization of formin processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, piconewton tensile forces applied to actin filaments accelerate formin dissociation by orders of magnitude, largely overcoming profilin-mediated stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 4D,F showing that dissociation rates increase similarly with force regardless of profilin concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "17b2aaa0-1770-440c-ac38-f2c75cd1d0b9",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C9",
+      "claim": "There exist two different dissociation pathways for formins from barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a model of formin conformations showing that our data indicates the existence of two different dissociation pathways, with force favoring one over the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data and mathematical modeling presented in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "0860a8e0-f940-4dbe-9548-be1e1ed87772",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C10",
+      "claim": "Force favors one dissociation pathway over the other.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a model of formin conformations showing that our data indicates the existence of two different dissociation pathways, with force favoring one over the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on modeling and interpretation of experimental data showing convergence of dissociation rates at high force.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "c6403264-9338-4d83-a5fb-c0f2cdaa2e55",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C11",
+      "claim": "Formins are responsible for the generation of elongated, unbranched actin filament structures in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, formins are responsible for the generation of elongated, unbranched actin filament structures such as the ones found in filopodia, stress fibers, the cytokinetic ring, and within the nucleus (Isogai and Innocenti, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "04e267cf-2045-4916-a553-758a66dd0bda",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C12",
+      "claim": "Formins are found in filopodia, stress fibers, the cytokinetic ring, and within the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, formins are responsible for the generation of elongated, unbranched actin filament structures such as the ones found in filopodia, stress fibers, the cytokinetic ring, and within the nucleus (Isogai and Innocenti, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "7d005c7c-1711-4e9a-9c5c-c15c76dea7cb",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C13",
+      "claim": "Formin malfunction is linked to angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin malfunction is linked to a number of pathologies, such as angiogenesis (Phng et al., 2015), neuropathies (Roos et al., 2015) and cancer (Choi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "2956f118-772b-47b9-aabc-f1608297dd29",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C14",
+      "claim": "Formin malfunction is linked to neuropathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin malfunction is linked to a number of pathologies, such as angiogenesis (Phng et al., 2015), neuropathies (Roos et al., 2015) and cancer (Choi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "bd4fbf75-8d27-42d3-88ff-d8d666510718",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C15",
+      "claim": "Formin malfunction is linked to cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin malfunction is linked to a number of pathologies, such as angiogenesis (Phng et al., 2015), neuropathies (Roos et al., 2015) and cancer (Choi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "e7ab696c-2f23-4cc1-bef3-5d47f0a859ba",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C16",
+      "claim": "Formins function as homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Formins function as homodimers and most isoforms share a similar mode of activation, where the interaction of activators with N-terminal domains releases auto-inhibition and mediates the anchoring of formins to membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about formin structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "fe680f32-a97d-4bb6-805b-0f5ad0ac2b65",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C17",
+      "claim": "Most formin isoforms share a similar mode of activation where the interaction of activators with N-terminal domains releases auto-inhibition and mediates the anchoring of formins to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Formins function as homodimers and most isoforms share a similar mode of activation, where the interaction of activators with N-terminal domains releases auto-inhibition and mediates the anchoring of formins to membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about formin regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "77ae63f5-666f-4587-90de-ab152a62d5b4",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C18",
+      "claim": "Formin FH1 and FH2 domains are responsible for their ability to track both growing and depolymerizing filament barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin functional domains, Formin Homology Domains 1 (FH1) and 2 (FH2), are responsible for their most salient features: their ability to track both growing and depolymerizing filament barbed ends and to accelerate their elongation from profilin-actin (Higashida et al., 2004; J\u00e9gou et al., 2013; Kovar and Pollard, 2004; Mizuno et al., 2011; Romero et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "aff506ff-7afb-4590-8b10-7cfcd9272742",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C19",
+      "claim": "Formin FH1 and FH2 domains are responsible for their ability to accelerate elongation from profilin-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin functional domains, Formin Homology Domains 1 (FH1) and 2 (FH2), are responsible for their most salient features: their ability to track both growing and depolymerizing filament barbed ends and to accelerate their elongation from profilin-actin (Higashida et al., 2004; J\u00e9gou et al., 2013; Kovar and Pollard, 2004; Mizuno et al., 2011; Romero et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "afece9d2-bae7-4c23-a631-af93d6ca3c45",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C20",
+      "claim": "Rapid elongation is achieved by the FH1 domains which bind profilin-actin complexes and deliver them to the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid elongation is achieved by the FH1 domains, seen as flexible chains containing polyproline tracks, which bind profilin-actin complexes and deliver them to the barbed end (Higashida et al., 2004; Kovar and Pollard, 2004; Romero et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "9e655592-a759-4009-93f7-7bef4c35efb2",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C21",
+      "claim": "FH1 domains are flexible chains containing polyproline tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid elongation is achieved by the FH1 domains, seen as flexible chains containing polyproline tracks, which bind profilin-actin complexes and deliver them to the barbed end (Higashida et al., 2004; Kovar and Pollard, 2004; Romero et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about FH1 domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "0da0f391-2dd6-4870-bc53-0d8c71b7e38a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C22",
+      "claim": "Barbed end tracking is achieved by the translocation of the FH2 dimer, which encircles the actin subunits at the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "Barbed end tracking is achieved by the translocation of the FH2 dimer, which encircles the actin subunits at the barbed end (Otomo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "7ad2ff34-5c9e-4ddd-8da7-a67ffe847cd4",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C23",
+      "claim": "Formin processivity is quantified by the dissociation rate of the formin from the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin processivity, quantified by the dissociation rate of the formin from the barbed end, determines for how long filaments interact with a formin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided by the authors for their experimental approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "84a3a737-afe4-434d-be95-0b1c07b767a4",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C24",
+      "claim": "While a formin resides at the barbed end, it decreases barbed end affinity for Capping Protein.",
+      "claim_type": "EXPLICIT",
+      "source": "While a formin resides at the barbed end, it decreases barbed end affinity for Capping Protein (Bombardier et al., 2015; Shekhar et al., 2015; Zigmond et al., 2003), modulates its elongation, and can maintain it anchored to a membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "f6f51315-e412-4746-99b7-968f23c41f10",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C25",
+      "claim": "While a formin resides at the barbed end, it modulates elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "While a formin resides at the barbed end, it decreases barbed end affinity for Capping Protein (Bombardier et al., 2015; Shekhar et al., 2015; Zigmond et al., 2003), modulates its elongation, and can maintain it anchored to a membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about formin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "bc3c5cc9-e632-40ad-b9a9-58d90464a51a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C26",
+      "claim": "While a formin resides at the barbed end, it can maintain the barbed end anchored to a membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "While a formin resides at the barbed end, it decreases barbed end affinity for Capping Protein (Bombardier et al., 2015; Shekhar et al., 2015; Zigmond et al., 2003), modulates its elongation, and can maintain it anchored to a membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about formin function in cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "7f30de3a-6540-4b9a-8b15-a6e5b4200ca1",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C27",
+      "claim": "Quantitative differences in processivity exist between formin isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin processivity has long been identified as an essential feature of formins and occasional measurements have revealed quantitative differences between isoforms (Bilancia et al., 2014; Kovar et al., 2006; Paul and Pollard, 2008; Romero et al., 2004; Vizcarra et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "b375db5d-f1e7-4566-b8eb-168dd08779cf",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C28",
+      "claim": "Negative regulators bind to FH2 to displace formin from filament barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative regulators bind to FH2 to displace formin from filament barbed ends (Chesarone et al., 2009; Chesarone-Cataldo et al., 2011), whereas Ena/VASP, via its EVH1 domain, is able to bind to FH1 domains without impacting formin processivity (Bilancia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "44a3fda4-a902-4077-a910-9daff7594b48",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C29",
+      "claim": "Ena/VASP is able to bind to FH1 domains without impacting formin processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative regulators bind to FH2 to displace formin from filament barbed ends (Chesarone et al., 2009; Chesarone-Cataldo et al., 2011), whereas Ena/VASP, via its EVH1 domain, is able to bind to FH1 domains without impacting formin processivity (Bilancia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "475e77fd-bfde-4260-9acb-c20e150357b2",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C30",
+      "claim": "Ena/VASP binds to FH1 domains via its EVH1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative regulators bind to FH2 to displace formin from filament barbed ends (Chesarone et al., 2009; Chesarone-Cataldo et al., 2011), whereas Ena/VASP, via its EVH1 domain, is able to bind to FH1 domains without impacting formin processivity (Bilancia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "b60f3e83-6764-47ab-8d9f-feef982c2194",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C31",
+      "claim": "Processivity seems mainly governed by FH2-actin interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While processivity seems mainly governed by FH2-actin interactions, the DAD domain (or 'tail'), found next to the FH2 domain at the C-terminus, has been reported to contribute to the processivity of Drosophila formin Capuccino (Vizcarra et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature and the authors' experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "2067cd74-5950-4849-88a8-6065428b3151",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C32",
+      "claim": "The DAD domain has been reported to contribute to the processivity of Drosophila formin Capuccino.",
+      "claim_type": "EXPLICIT",
+      "source": "While processivity seems mainly governed by FH2-actin interactions, the DAD domain (or 'tail'), found next to the FH2 domain at the C-terminus, has been reported to contribute to the processivity of Drosophila formin Capuccino (Vizcarra et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "9ea2c671-5f6d-4fe4-a3a8-5fb2f1a301e8",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C33",
+      "claim": "The dissociation rate of yeast formin Bni1p has been proposed to scale with filament elongation velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation rate of yeast formin Bni1p has been proposed to scale with filament elongation velocity, suggesting the existence of a transient, weakly bound state occurring upon actin subunit addition (Paul and Pollard, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "a58d80a8-662f-4214-affc-ed243c830e3b",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C34",
+      "claim": "A transient, weakly bound state occurs upon actin subunit addition.",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation rate of yeast formin Bni1p has been proposed to scale with filament elongation velocity, suggesting the existence of a transient, weakly bound state occurring upon actin subunit addition (Paul and Pollard, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from cited literature and is supported by the authors' own data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "1ae18380-d643-43c9-9327-44812dc90cf9",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C35",
+      "claim": "Pulling forces have been reported to modulate formin elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, pulling forces such as the ones exerted on actin filaments in cells (Romet-Lemonne and J\u00e9gou, 2013) have been reported to modulate formin elongation (Courtemanche et al., 2013; J\u00e9gou et al., 2013; Kubota et al., 2017; Yu et al., 2017; Zimmermann et al., 2017) but their impact on processivity is an open question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "bcef7d16-3050-4ae7-8e0b-34f94c8a2b3a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C36",
+      "claim": "The impact of pulling forces on formin processivity is an open question.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, pulling forces such as the ones exerted on actin filaments in cells (Romet-Lemonne and J\u00e9gou, 2013) have been reported to modulate formin elongation (Courtemanche et al., 2013; J\u00e9gou et al., 2013; Kubota et al., 2017; Yu et al., 2017; Zimmermann et al., 2017) but their impact on processivity is an open question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "2eb966cc-6ea3-4211-8b86-ab6584a4775f",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C37",
+      "claim": "Ionic strength has a strong impact on formin dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying KCl concentration in our assay buffer (see Materials and methods), we found that the ionic strength had a strong impact on formin dissociation (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "a98c5354-c626-4454-90fe-f854c330b63c",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C38",
+      "claim": "Ionic strength has a limited impact on the barbed end elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the same variations of the ionic strength had a limited impact on the barbed end elongation rate, with or without formins (Figure 2B, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "10410f74-a243-4957-8d08-6493231a1086",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C39",
+      "claim": "Labeling actin on lysine 328 with Alexa 488 fluorophore had no measurable impact on the elongation rate of formin-free barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our labeling of actin on lysine 328 with Alexa 488 fluorophore had no measurable impact on the elongation rate of formin-free barbed ends, but slowed down their elongation with formins significantly and enhanced formin dissociation rate (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "59d06914-73b7-402a-9cc4-2c3f6c7deba7",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C40",
+      "claim": "Labeling actin on lysine 328 with Alexa 488 fluorophore slowed down elongation with formins significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our labeling of actin on lysine 328 with Alexa 488 fluorophore had no measurable impact on the elongation rate of formin-free barbed ends, but slowed down their elongation with formins significantly and enhanced formin dissociation rate (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "186876d6-91f0-46d1-bd71-658f950c1766",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C41",
+      "claim": "Labeling actin on lysine 328 with Alexa 488 fluorophore enhanced formin dissociation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our labeling of actin on lysine 328 with Alexa 488 fluorophore had no measurable impact on the elongation rate of formin-free barbed ends, but slowed down their elongation with formins significantly and enhanced formin dissociation rate (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "67f550b4-af11-4531-8cee-690b5b15ed6a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C42",
+      "claim": "For a given profilin concentration, the barbed end elongation rate scales with the actin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "For a given profilin concentration, the barbed end elongation rate velong scales with the actin concentration (with or without formin, Figure 3\u2014figure supplement 1) and we observed that the formin dissociation rate koff increased with actin concentration, and thus with the elongation rate (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "868abb7e-f861-4618-95a4-63a0a26caee0",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C43",
+      "claim": "The formin dissociation rate increased with actin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "For a given profilin concentration, the barbed end elongation rate velong scales with the actin concentration (with or without formin, Figure 3\u2014figure supplement 1) and we observed that the formin dissociation rate koff increased with actin concentration, and thus with the elongation rate (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "62f5c00e-56b6-4368-bdf0-24b9ba6551a4",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C44",
+      "claim": "The amplitude of the increase of the formin dissociation rate with actin concentration depends significantly on profilin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for both mDia1 and mDia2, the amplitude of the increase of the formin dissociation rate with actin concentration appeared to depend significantly on profilin concentration (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "d92242d9-e800-497b-9188-582467175238",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C45",
+      "claim": "There is no universal scaling of formin dissociation rate with the elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, there is no universal scaling of koff with the elongation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations showing different relationships under different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "49bd8b57-8ce9-4b05-943f-5d379a263a0b",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C46",
+      "claim": "One can obtain identical elongation rates with very different formin dissociation rates using different sets of actin and profilin concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, using different sets of actin and profilin concentrations, one can obtain identical elongation rates with very different formin dissociation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing the independent effects of actin and profilin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "2864af41-c90f-4615-9b16-9964b1c7b6a5",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C47",
+      "claim": "The formin dissociation rate decreased with increasing profilin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this point further, we measured the formin dissociation rate as a function of profilin concentration at a fixed actin concentration and found that koff decreased with increasing profilin concentration (Figure 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "e851e055-976e-4132-93b2-820af2f1f234",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C48",
+      "claim": "Low profilin concentrations increase elongation rate as actin becomes profilin-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with actin, the modulation of the elongation rate by profilin is biphasic (Kovar et al., 2006): low profilin concentrations increase velong as actin becomes profilin-actin, while higher concentrations slow down elongation as excess profilin competes with profilin-actin for polyproline binding sites on FH1 domains and barbed ends (Figure 3B,D insets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation and experimental data shown in Figure 3B,D insets.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "c0a0e169-a533-4670-a44a-f389d4d6e3bc",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C49",
+      "claim": "Higher profilin concentrations slow down elongation as excess profilin competes with profilin-actin for polyproline binding sites on FH1 domains and barbed ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with actin, the modulation of the elongation rate by profilin is biphasic (Kovar et al., 2006): low profilin concentrations increase velong as actin becomes profilin-actin, while higher concentrations slow down elongation as excess profilin competes with profilin-actin for polyproline binding sites on FH1 domains and barbed ends (Figure 3B,D insets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation and experimental data shown in Figure 3B,D insets.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "a323d476-517f-468e-938b-f9353fd6886b",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C50",
+      "claim": "The decrease of formin dissociation rate was observed in the lower range of profilin concentrations, where the elongation rate greatly increases with profilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the decrease of koff was also observed in the lower range of profilin concentrations, where the elongation rate greatly increases with profilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations from Figure 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "9e949cee-8314-4906-95e9-1c1aaa575b50",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C51",
+      "claim": "Profilin itself reduces formin detachment, independently of the barbed end elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "It thus appears that profilin itself reduces formin detachment, independently of the barbed end elongation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing decreased dissociation rates with profilin even when elongation rates are similar.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "b360b628-d7e5-4b5d-8fd5-b091cdc8b7ec",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C52",
+      "claim": "The truncated mDia1 formin construct FH1(2PP)-FH2-DAD still enhanced filament elongation from profilin-actin, though not as strongly as the formin with full-length FH1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the truncated formin still enhanced filament elongation from profilin-actin, though not as strongly as the formin with full-length FH1 (Figure 3B inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "c89c9fa2-e770-446a-8bb7-122f6fb056d8",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C53",
+      "claim": "The truncated formin FH1(2PP)-FH2-DAD still exhibited a reduction of dissociation rate with profilin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "It still exhibited a reduction of koff with profilin concentration (Figure 3B), but the dissociation rate of FH1(2PP)-FH2-DAD was consistently higher than of wild type FH1-FH2-DAD for all profilin concentrations tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "0d2192c5-06a4-429c-ba9b-631419c2fc11",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C54",
+      "claim": "The dissociation rate of FH1(2PP)-FH2-DAD was consistently higher than of wild type FH1-FH2-DAD for all profilin concentrations tested.",
+      "claim_type": "EXPLICIT",
+      "source": "It still exhibited a reduction of koff with profilin concentration (Figure 3B), but the dissociation rate of FH1(2PP)-FH2-DAD was consistently higher than of wild type FH1-FH2-DAD for all profilin concentrations tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "08a06bed-18d9-4a8a-ac11-712c0c95d1e1",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C55",
+      "claim": "The formin dissociation rate does not generally scale with the elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that the formin dissociation rate does not generally scale with the elongation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental observations with different constructs and conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "b298c657-0071-4f52-90a5-2727cdcd941c",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C56",
+      "claim": "FH1 polyproline tracks are responsible for the decrease of dissociation rate in the presence of profilin.",
+      "claim_type": "EXPLICIT",
+      "source": "They also suggest that FH1 polyproline tracks, which are responsible for rapid elongation, are also responsible for the decrease of koff in the presence of profilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from experiments comparing full-length and truncated FH1 constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "f274110a-addb-4780-a524-5088124e5a6c",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C57",
+      "claim": "The presence of a large excess of profilin significantly puts the barbed end in a profilin-bound state and slows down its elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the presence of a large excess of profilin, which significantly puts the barbed end in a profilin-bound state and slows down its elongation (J\u00e9gou et al., 2011; Pernier et al., 2016), led to the same FH2 dimer dissociation rate as when the same elongation rates were reached without profilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "72f97632-45d9-4a5a-9ae9-807b067b1f75",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C58",
+      "claim": "In the absence of FH1 domains, profilin simply reduces the dissociation rate of the FH2 dimer by slowing down barbed elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the absence of FH1 domains, profilin simply reduces the dissociation rate of the FH2 dimer by slowing down barbed elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from experimental data comparing FH2-DAD with and without profilin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "fce273e3-3b8e-43f0-87bb-f8f1366ea05a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C59",
+      "claim": "FH1 is required in order for profilin to decrease the formin dissociation rate independently of the barbed end elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that FH1 is required in order for profilin to decrease the formin dissociation rate koff independently of the barbed end elongation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experiments with FH2-DAD constructs lacking FH1 domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "64561a29-3174-4009-9c4e-c73ac0649ae0",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C60",
+      "claim": "In the absence of profilin, FH1-FH2 behaved like FH2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of profilin, FH1-FH2 behaved like FH2 (Figure 3E), indicating that the presence of FH1 domains alone, in the absence of profilin, has no impact on processivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "2aa3eb9a-375c-4461-bf8d-d5b6b4447126",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C61",
+      "claim": "The presence of FH1 domains alone, in the absence of profilin, has no impact on processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of profilin, FH1-FH2 behaved like FH2 (Figure 3E), indicating that the presence of FH1 domains alone, in the absence of profilin, has no impact on processivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "577cd8c5-3cf7-461c-9631-8af7ab1baa68",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C62",
+      "claim": "Mutant profilin-R88E binds to FH1 but not to actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant profilin-R88E, which binds to FH1 but not to actin (Kovar et al., 2006; Lu and Pollard, 2001), has no impact on processivity (Figure 3\u2014figure supplement 2), indicating that the interaction of profilin with G-actin and/or filament barbed ends is required in order to decrease the formin dissociation rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "61b314d1-fbd8-42d2-9804-df14b56a1954",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C63",
+      "claim": "Mutant profilin-R88E has no impact on processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant profilin-R88E, which binds to FH1 but not to actin (Kovar et al., 2006; Lu and Pollard, 2001), has no impact on processivity (Figure 3\u2014figure supplement 2), indicating that the interaction of profilin with G-actin and/or filament barbed ends is required in order to decrease the formin dissociation rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "879573b7-36bb-429c-9b16-9c5f68a42e83",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C64",
+      "claim": "The interaction of profilin with G-actin and/or filament barbed ends is required in order to decrease the formin dissociation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant profilin-R88E, which binds to FH1 but not to actin (Kovar et al., 2006; Lu and Pollard, 2001), has no impact on processivity (Figure 3\u2014figure supplement 2), indicating that the interaction of profilin with G-actin and/or filament barbed ends is required in order to decrease the formin dissociation rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data with profilin-R88E mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "1931c8ae-8b7d-47a0-9015-1b2719ad3144",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C65",
+      "claim": "In cells, anchored formins are exposed to mechanical tension applied to actin filaments, typically as a consequence of myosin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, anchored formins are exposed to mechanical tension applied to actin filaments, typically as a consequence of myosin activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "5fb71a42-9dad-43ac-b2ba-68f0ab66a392",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C66",
+      "claim": "The force at the anchoring point scales with the filament length.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we have shown that the force at the anchoring point scales with the filament length (J\u00e9gou et al., 2013), and thus increases as the filaments elongate over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "1c3f7027-03e6-4305-a8db-cadab0f95159",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C67",
+      "claim": "The sigmoidal shape of the survival fractions over time indicated an increase of the dissociation rate with the applied force.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the sigmoidal shape of the survival fractions over time indicated an increase of the dissociation rate koff with the applied force (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the shape of the experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "1e34d4ff-cc97-4fe4-a1e0-cd75f9b55851",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C68",
+      "claim": "Approximately 74% of formins were still present and able to nucleate filaments after being subjected to forces between 0 and 6 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that ~74% of formins were still present and able to nucleate filaments during this test (Figure 4\u2014figure supplement 1), regardless of the force applied during the experiment (between 0 and 6 pN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "718ee2c9-3a28-48ac-a318-ec3366767d80",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C69",
+      "claim": "The differences in dissociation rate linked to differences in actin concentrations disappear when force is applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the differences in dissociation rate linked to differences in actin concentrations seemed to disappear when force is applied: the weaker values of koff increased more steeply with force, resulting in a convergence of the dissociation rates when tension was applied (clearly visible for mDia1, in the log-linear representation of Figure 4C and Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "aecc2f29-2f1f-4a72-8727-fe2989994686",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C70",
+      "claim": "The dissociation constant increased with tension in a seemingly identical fashion whether the filaments were elongating from actin alone or with an excess of profilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the dissociation constant increased with tension in a seemingly identical fashion whether the filaments were elongating from actin alone or with an excess of profilin (Figure 4D,F and Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D,F and Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "332dd67e-af0e-4ce9-8157-71dfb8a54fea",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C71",
+      "claim": "A similar increase of dissociation rate with tension was found for mDia1 FH2 dimers (without FH1 domains).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a similar increase of koff with tension for mDia1 FH2 dimers (i.e. without FH1 domains), and for mDia1 FH1-FH2 dimers anchored via their FH1 or their FH2 domains (i.e. whether force is applied to FH2 alone or to FH1 as well) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "00408a89-aa96-4eb8-b2d5-58b68e7a7234",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C72",
+      "claim": "A similar increase of dissociation rate with tension was found for mDia1 FH1-FH2 dimers anchored via their FH1 or their FH2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a similar increase of koff with tension for mDia1 FH2 dimers (i.e. without FH1 domains), and for mDia1 FH1-FH2 dimers anchored via their FH1 or their FH2 domains (i.e. whether force is applied to FH2 alone or to FH1 as well) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "483e8ac8-556f-4962-950d-0128b230f5ab",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C73",
+      "claim": "FH1 domains do not participate in the mechanical modulation of formin processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that FH1 domains do not participate in the mechanical modulation of formin processivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from experiments showing similar force-dependence with and without FH1 domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "c79d25b0-a5cd-411c-8b96-a35edd3c1a9a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C74",
+      "claim": "FH2-barbed end interactions are destabilized by ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that FH2-barbed end interactions are destabilized by ions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "414fbdc8-3350-4ffc-bdb0-9ac2629c145f",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C75",
+      "claim": "Salt bridges mediating FH2-actin interactions have been predicted from molecular dynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that salt bridges mediating FH2-actin interactions, which have been predicted from molecular dynamics simulations (Baker et al., 2015), are essential determinants of the residence time of formin at the barbed end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "14ad997e-a297-433e-ad7b-495b359eca94",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C76",
+      "claim": "Salt bridges mediating FH2-actin interactions are essential determinants of the residence time of formin at the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that salt bridges mediating FH2-actin interactions, which have been predicted from molecular dynamics simulations (Baker et al., 2015), are essential determinants of the residence time of formin at the barbed end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on ionic strength effects combined with cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "cf66651b-ce3c-44a6-bd84-22c8ed74197e",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C77",
+      "claim": "FH2-actin interactions are destabilized by the presence of a fluorescent label on actin subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also indicate that FH2-actin interactions are destabilized by the presence of a fluorescent label on actin subunits (Figure 2C), consistent with the notion that the lateral contacts of FH2 with actin subunits are essential to maintain the formin at the barbed end (Otomo et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "15db88ac-a2e5-4598-8c31-84007334a0e7",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C78",
+      "claim": "The lateral contacts of FH2 with actin subunits are essential to maintain the formin at the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also indicate that FH2-actin interactions are destabilized by the presence of a fluorescent label on actin subunits (Figure 2C), consistent with the notion that the lateral contacts of FH2 with actin subunits are essential to maintain the formin at the barbed end (Otomo et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to published literature and is consistent with the authors' data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "78ee365b-ce3e-4a97-8abc-9c8e722907fb",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C79",
+      "claim": "Both FH1 domains and profilin-actin interactions are required for profilin to reduce formin dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both FH1 domains and profilin-actin interactions (Figure 3\u2014figure supplement 2) are required for profilin to reduce formin dissociation, our results appear in good agreement with the proposition that FH1 delivers profilin-actin to the barbed end by forming a 'ring complex' (Vavylonis et al., 2006), where profilin simultaneously interacts with the barbed end and one polyproline track of one of the two FH1 domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "853f2a37-c7e3-45b4-b315-7e3e0ffaf3b4",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C80",
+      "claim": "FH1 delivers profilin-actin to the barbed end by forming a 'ring complex' where profilin simultaneously interacts with the barbed end and one polyproline track of one of the two FH1 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both FH1 domains and profilin-actin interactions (Figure 3\u2014figure supplement 2) are required for profilin to reduce formin dissociation, our results appear in good agreement with the proposition that FH1 delivers profilin-actin to the barbed end by forming a 'ring complex' (Vavylonis et al., 2006), where profilin simultaneously interacts with the barbed end and one polyproline track of one of the two FH1 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature and is consistent with the authors' experimental findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "e7e15744-1064-4a18-9f56-3e42ae499ec4",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C81",
+      "claim": "The ring complex is also likely formed when profilin is brought to the barbed end by FH1 without an actin monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The ring complex is also likely formed when profilin is brought to the barbed end by FH1 without an actin monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the ring complex model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "8f9bfdc4-9369-41f4-9d6d-ffb2a695c692",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C82",
+      "claim": "In the ring complex configuration, the FH1 domains would constitute an obstacle to the dissociation of the FH2 dimer from the filament barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems natural that, in such a configuration, the FH1 domains would constitute an obstacle to the dissociation of the FH2 dimer from the filament barbed end (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation about the mechanism by which the ring complex stabilizes formin binding.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "9a88b4e0-1b93-4de8-9f24-d5983578389b",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C83",
+      "claim": "The ring complex is formed at least when delivering profilin-actin to the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we can assume that the ring complex is formed at least when delivering profilin-actin to the barbed end, and this may be enough to significantly decrease the rate of detachment associated with the addition of new actin subunits (i.e., detachment from the transition state, later discussed and illustrated in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation based on the ring complex model and experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "06f3335e-4ecb-4321-b593-1a32773f0e51",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C84",
+      "claim": "Profilin allows rapid barbed end elongation and helps maintain formin at the barbed end.",
+      "claim_type": "EXPLICIT",
+      "source": "This contribution of FH1 domains also confers a new function to profilin: not only does it allow a rapid barbed end elongation, it also helps maintain formin at the barbed end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings showing profilin's dual role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "72935339-1618-4b7b-be58-a71415786553",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C85",
+      "claim": "If rapid elongation were to be achieved without profilin, formins would dissociate very rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "If rapid elongation were to be achieved without profilin, formins would dissociate very rapidly (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 3A,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "ed4619be-2a10-443f-886e-330d097491d0",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C86",
+      "claim": "When mDia1 FH1 domains were severely truncated, reducing their number of polyproline tracks from 14 to 2, they were still able to accelerate elongation and reduce dissociation in the presence of profilin.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also shown that, when mDia1 FH1 domains were severely truncated, reducing their number of polyproline tracks from 14 to 2, they were still able to perform their tasks regarding both the acceleration of elongation and the reduction of dissociation in the presence of profilin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "6599d9b9-9726-488d-9874-a842d2c8fafe",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C87",
+      "claim": "Polyproline tracks located closest to the FH2 domain can mediate a robust polymerization rate in absence of the other polyproline tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with earlier results on yeast formin Bni1p showing that polyproline tracks located closest to the FH2 domain can mediate a robust polymerization rate in absence of the other polyproline tracks (Courtemanche and Pollard, 2012; Paul and Pollard, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "2c3ecca2-8474-4223-b89a-8538aa3e537d",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C88",
+      "claim": "FH1-profilin-mediated stabilization does not resist pulling forces.",
+      "claim_type": "EXPLICIT",
+      "source": "This FH1-profilin-mediated stabilization does not seem to resist pulling forces, since the formin dissociation rate increases equally fast in the presence of profilin as without profilin (Figure 4C,D and F), or even when FH1 domains are absent (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 4C,D,E,F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "d53af6e9-c9c7-47af-8975-8565a9754e8e",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C89",
+      "claim": "An increase in actin concentration increases the elongation rate while reducing processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in actin concentration increases the elongation rate while reducing processivity, and as a result the filament length varies moderately (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "8f3b9518-fd74-4578-927a-acd181e83e3a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C90",
+      "claim": "Increasing the profilin concentration efficiently generates longer filaments since both processivity and elongation rates are strongly increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increasing the profilin concentration efficiently generates longer filaments (Figure 5B) since both processivity and elongation rates are strongly increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "74fe1f93-4360-478a-8b69-fa2046469974",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C91",
+      "claim": "The application of mechanical tension drastically decreases the resulting filament length.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of mechanical tension drastically decreases the resulting filament length (Figure 5C) because the increase in elongation rate (see J\u00e9gou et al., 2013) for mDia1, Figure 4\u2014figure supplement 3 for mDia2) is very moderate compared to the decrease in processivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "cd3e1f1c-90ca-4ccd-9c85-b6e7c52a4d6a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C92",
+      "claim": "For both mDia1 and mDia2, filament length is typically reduced ten-fold every 3 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "For both mDia1 and mDia2, filament length is typically reduced ten-fold every 3 pN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary derived from the experimental data on force effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "3018c8a7-9534-45ef-beea-a3fcc54e8d7e",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C93",
+      "claim": "Compared to mDia1, mDia2 elongates filaments more slowly in all the conditions tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to mDia1, mDia2 elongates filaments more slowly in all the conditions we tested, but it is far more processive, resulting in the formation of much longer filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing mDia1 and mDia2 throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "292f2dcd-e49b-43ab-ab36-4ea3d83c21ef",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C94",
+      "claim": "mDia2 is far more processive than mDia1, resulting in the formation of much longer filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to mDia1, mDia2 elongates filaments more slowly in all the conditions we tested, but it is far more processive, resulting in the formation of much longer filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing mDia1 and mDia2 throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "004405db-140a-4ae1-ae9f-6f398612d964",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C95",
+      "claim": "The difference in processivity between mDia1 and mDia2 appears to reflect differences in their FH2-DAD domains since it persists in the absence of profilin.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature appears to reflect differences in their FH2-DAD domains since it persists in the absence of profilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "939827ca-0847-4cf2-a64c-c026c07c7040",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C96",
+      "claim": "The FH2 dimer goes through a transient, weakly bound state every time a new actin subunit is added.",
+      "claim_type": "EXPLICIT",
+      "source": "Putting the contributions of FH1 domains and profilin aside, our results show that the elongation velocity, hence the addition of actin subunits, enhances formin dissociation from the barbed end (Figure 3A). This suggests that the FH2 dimer goes through a transient, weakly bound state, every time a new actin subunit is added (Figure 6A), as already proposed by (Paul and Pollard, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data and is supported by citation to published literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "39e055bb-5477-4b4d-a05d-c8bc6394a39c",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C97",
+      "claim": "The FH2 dimer and the barbed end are in a rapid equilibrium between an elongation-competent 'open' state and an elongation-forbidding 'closed' state.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural details of Bni1p(FH2)-actin interactions (Otomo et al., 2005) have led to the proposal that, as they wait for the addition of a new actin subunit, the FH2 dimer and the barbed end are in a rapid equilibrium between an elongation-competent 'open' state and an elongation-forbidding 'closed' state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "1d7fcf5c-5cea-4561-85dd-47446a238861",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C98",
+      "claim": "In the stair-stepping model, FH2 hemidimer translocation is associated with the rapid open-closed equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "In the frame of the subsequently proposed 'stair-stepping' model, FH2 hemidimer translocation (along the filament's main axis and over a distance of one actin monomer size) is associated to this rapid equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a model from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "af0d1952-0a34-418f-b864-ed9b8aad0f58",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C99",
+      "claim": "In the stepping-second model, the open-closed equilibrium involves no FH2 hemidimer translocation, which would instead take place after each subunit addition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the 'stepping-second' model proposes that the open-closed equilibrium involves no such FH2 hemidimer translocation, which would instead take place after each subunit addition and thus be related to the aforementioned transition state (Paul and Pollard, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an alternative model from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "f36c5c54-d87d-4baf-b74a-86eea04b140d",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C100",
+      "claim": "Tension accelerates mDia1-mediated elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our earlier work showing that tension accelerates mDia1-mediated elongation (J\u00e9gou et al., 2013) and more recent work applying tension with magnetic tweezers (Yu et al., 2017), both indicate that the open-closed equilibrium corresponds to a working distance of one monomer size, consistent with the stair-stepping model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature including the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "b4ee5750-2b21-4e6f-88e3-62e472e81e92",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C101",
+      "claim": "The open-closed equilibrium corresponds to a working distance of one monomer size, consistent with the stair-stepping model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our earlier work showing that tension accelerates mDia1-mediated elongation (J\u00e9gou et al., 2013) and more recent work applying tension with magnetic tweezers (Yu et al., 2017), both indicate that the open-closed equilibrium corresponds to a working distance of one monomer size, consistent with the stair-stepping model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "e5cedf48-2dcf-40c9-b449-a133ceed1c77",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C102",
+      "claim": "The formin can dissociate following two routes: from the open state during its rapid open-closed equilibrium, or during the transition state that follows subunit addition.",
+      "claim_type": "EXPLICIT",
+      "source": "As sketched in Figure 6A, formin can thus dissociate following two routes: (1) the FH2 dimer unbinds from the barbed end from the open state during its rapid open-closed equilibrium, with a rate koffO(f), or (2) the FH2 dimer unbinds during the transition state that follows subunit addition, with a rate koffT(f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key feature of the mathematical model developed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "abf2cc46-e6ec-4870-b930-bf84e838b427",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C103",
+      "claim": "In the absence of force, koffT(f = 0) is the dominant contribution to the global koff(f = 0).",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of force, our data show a strong dependence of formin dissociation on actin concentration, i.e. on elongation rate (Figure 3A and C) meaning that koffT(f = 0) is the dominant contribution to the global koff(f = 0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 3A and C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "408f7d19-89b6-41a6-9f4d-b9ba49bf99f6",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C104",
+      "claim": "When pulling forces are applied, the formin dissociation rates for different actin concentrations converge.",
+      "claim_type": "EXPLICIT",
+      "source": "When pulling forces are applied, the formin dissociation rates for different actin concentrations converge, i.e. koff(f) does not depend on actin concentration anymore (Figure 4C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "5c2674a2-ae62-4abb-97ab-1cf0353c7071",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C105",
+      "claim": "koffO(f) increases with force more strongly than koffT(f), and thus becomes dominant at high forces.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts such a behavior when koffO(f) increases with force more strongly than koffT(f), and thus becomes dominant at high forces (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the mathematical model that is consistent with experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "5b01d155-11bc-43f2-adfb-4d645ad2c6d4",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C106",
+      "claim": "While dissociation from the transition state is the dominant route at low force, it is the dissociation from the open state that dominates at high force.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our model and data thus indicate that, while dissociation from the transition state is the dominant route at low force, it is the dissociation from the open state that dominates at high force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mathematical model and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "b70d7606-3b78-4039-9770-a68e8c9d77c9",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C107",
+      "claim": "Mechanical tension plays a dominant role in the modulation of formin processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that mechanical tension plays a dominant role in the modulation of formin processivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing dramatic effects of force.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "5f01b0bf-5ec4-425c-9251-7825f7972eab",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C108",
+      "claim": "The dramatic enhancement of formin dissociation upon application of piconewton forces appears difficult to compensate with actin and profilin concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The dramatic enhancement of formin dissociation, upon application of piconewton forces, appears difficult to compensate with the other factors we have tested, such as actin and profilin concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data comparing the magnitude of different effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "311d2395-7177-474d-8226-8a9865caccd1",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C109",
+      "claim": "In cells, filaments are likely to be tensed mainly because of myosin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, where filaments are likely to be tensed mainly because of myosin activity, our results raise questions regarding how these filaments may remain in interaction with membrane-anchored formins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "6181487c-0f88-4aeb-be28-c1bc651a9736",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C110",
+      "claim": "Filaments in cells may cumulate alternative anchoring strategies or see their interaction with formins reinforced by other factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it seems unlikely that filaments detach from membranes as soon as moderate forces are applied, they may cumulate alternative anchoring strategies, or see their interaction with formins reinforced by other factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms in cells based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "83d5d1ee-73dc-4ba5-b94f-cf4944f2d6be",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C111",
+      "claim": "In cells, formin-elongated filaments are often found in bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, formin-elongated filaments are often found in bundles, a situation which could allow dissociated formins to rapidly rebind to barbed ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "231297d5-62bf-4b4b-8202-0872ef9691f9",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C112",
+      "claim": "Regulatory proteins could directly bind to formins and modulate their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, recent studies have shown that regulatory proteins could directly bind to formins and modulate their activity (e.g., Ena/VASP (Bilancia et al., 2014), CLIP170 (Henty-Ridilla et al., 2016), or Spire/FMN2 interactions (Montaville et al., 2014)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "6aabdebf-5541-49d7-b3ab-b069c9a2f6c5",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "claim_id": "C113",
+      "claim": "The stabilization of formin-filament interactions in a mechanical context by regulatory proteins is a hypothesis that should be addressed in future experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The stabilization of formin-filament interactions in a mechanical context by such proteins is a hypothesis that should be addressed in future experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1fb271cc-ff6b-4361-a600-d0c8a5aa0f37",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ionic strength strongly affects formin dissociation rate but has limited impact on elongation rate. Higher KCl concentrations increase formin dissociation rates (C3, C37), while elongation rates remain relatively stable (C38). This effect is attributed to destabilization of FH2-barbed end interactions by ions (C74), confirming the importance of salt bridges in FH2-actin interactions predicted by molecular dynamics simulations (C75, C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C37, C38 are directly supported by experimental data in Figure 2A,B showing dose-dependent effects of KCl on dissociation but not elongation. Claims C74, C76 provide mechanistic interpretation consistent with cited computational predictions (C75). The experimental design appropriately controls for ionic strength effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "2dbdf3ac-2ff0-4e73-afb7-02ab3003a804",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Alexa 488 labeling of actin on lysine 328 differentially affects formin-mediated versus formin-free elongation. Labeling has no measurable impact on formin-free barbed end elongation (C39) but significantly slows formin-mediated elongation (C40) and enhances formin dissociation rate (C41). This suggests FH2-actin lateral contacts are essential for formin processivity (C77, C78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by experimental data in Figure 2C,D. The differential effect on formin-mediated versus formin-free elongation provides strong evidence for the mechanistic interpretation (C77, C78). The authors appropriately validated their findings using unlabeled actin controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "29fb03c6-2d3a-475f-a210-fa4e3545422b",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Formin dissociation rate increases with actin concentration and elongation rate, but this relationship depends on profilin concentration. While elongation rate scales with actin concentration (C42), the formin dissociation rate also increases with actin concentration (C43, C4), with the amplitude of this increase depending significantly on profilin concentration (C44). Consequently, there is no universal scaling of dissociation rate with elongation rate (C45, C46).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are directly supported by experimental data in Figures 3A,C and Figure 3\u2014figure supplement 1. The inference that no universal scaling exists (C45, C46) logically follows from the observation that identical elongation rates can be achieved with different dissociation rates by varying actin and profilin concentrations. This challenges prior models proposing simple scaling relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "343a491d-9244-406c-b211-39127a500adc",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Profilin decreases formin dissociation rate independently of its effect on elongation rate. The dissociation rate decreases with increasing profilin concentration (C47, C6), even in the lower profilin concentration range where elongation rate greatly increases (C48, C50). This indicates profilin itself reduces formin detachment independently of the barbed end elongation rate (C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C48, C49 are supported by experimental data in Figure 3B,D showing biphasic effects of profilin on elongation but monotonic decrease in dissociation rate. The key observation (C50) that dissociation decreases even when elongation increases strongly supports the inference (C51) that profilin has an elongation-independent stabilizing effect. This is a novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "3192f1af-d99d-41d3-913c-d4672cd6bcba",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FH1 polyproline tracks are responsible for profilin-mediated reduction in formin dissociation rate. A truncated mDia1 construct with only 2 polyproline tracks (FH1(2PP)-FH2-DAD) still shows reduced dissociation with profilin (C53) and enhanced elongation (C52), but has consistently higher dissociation rates than wild-type across all profilin concentrations (C54). This confirms dissociation rate does not generally scale with elongation rate (C55) and suggests FH1 polyproline tracks mediate the profilin-dependent stabilization (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by experimental data in Figure 3B. The truncation experiment provides strong evidence for the role of FH1 domains, as the truncated construct retains partial function but shows quantitatively different behavior. The inference (C56) is well-supported by the structure-function relationship demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FH1 domains are required for profilin to decrease formin dissociation rate independently of elongation rate. Experiments with FH2-DAD dimers (lacking FH1) show that excess profilin reduces dissociation only by slowing elongation (C57, C58), indicating FH1 is required for the elongation-independent effect (C59). FH1 domains alone have no impact on processivity without profilin (C60, C61). Mutant profilin-R88E, which binds FH1 but not actin, has no impact on processivity (C62, C63), indicating profilin-actin/barbed end interaction is required (C64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by experimental data in Figure 3E comparing FH2-DAD and FH1-FH2-DAD constructs. Claims C62-C64 are supported by data in Figure 3\u2014figure supplement 2. The combination of domain deletion and point mutation experiments provides strong evidence for the mechanistic model requiring both FH1 and profilin-actin interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Profilin stabilizes formin processivity through a 'ring complex' mechanism involving FH1 domains. Since both FH1 domains and profilin-actin interactions are required (C79), the results support a model where FH1 delivers profilin-actin via a 'ring complex' where profilin simultaneously contacts the barbed end and FH1 polyproline tracks (C80). This configuration likely creates a steric obstacle to FH2 dissociation (C81, C82, C83). This confers a dual function to profilin: enabling rapid elongation while maintaining formin at the barbed end (C84, C85). Truncated FH1 constructs retain both functions (C86), consistent with prior work showing proximal polyproline tracks are sufficient (C87).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are well-supported by the experimental data from domain deletion and mutant profilin experiments. Claims C81-C83 represent reasonable mechanistic speculation based on the ring complex model from cited literature (Vavylonis et al., 2006) and the experimental observations. Claims C84-C87 are supported by experimental data in Figure 3B and citations. The model is internally consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "02736624-e372-4cc5-a116-222d54e283af",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Piconewton tensile forces dramatically increase formin dissociation rate by orders of magnitude, largely overcoming profilin-mediated stabilization. Applied force increases dissociation rates exponentially (C7, C67), with ~74% of formins remaining functional after force application (C68). Differences in dissociation rates due to actin concentration converge under force (C69), and force increases dissociation similarly with or without profilin (C70, C8). Similar force-dependence is observed for FH2 dimers alone and FH1-FH2 dimers anchored via either domain (C71, C72), indicating FH1 domains do not participate in mechanical modulation (C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C67-C72 are strongly supported by experimental data in Figure 4B-F. The control experiment (C68, Figure 4\u2014figure supplement 1) validates that observed detachments represent formin-filament dissociation rather than formin detachment from the surface. The convergence of dissociation rates under force (C69, C70) and similar behavior across constructs (C71, C72) provide strong evidence for the inference (C73) that force acts primarily on FH2-actin interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "d981dcea-28e2-4eab-9035-eff45ce25d4b",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mechanical tension plays a dominant role in modulating formin processivity that cannot be easily compensated by biochemical factors. FH1-profilin-mediated stabilization does not resist pulling forces (C88), and mechanical tension plays a dominant role in processivity modulation (C107). The dramatic enhancement of dissociation upon piconewton force application appears difficult to compensate with actin and profilin concentrations (C108).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C107 are well-supported by the experimental data showing force effects dominate over profilin effects (Figure 4C-F). Claim C108 is a reasonable inference from comparing the magnitude of force effects (orders of magnitude) versus biochemical effects (typically less than 10-fold). This represents a key conclusion about the relative importance of mechanical versus biochemical regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Different factors modulate formin processivity and filament length in distinct ways, with differences between mDia1 and mDia2. Increasing actin concentration increases elongation while reducing processivity, resulting in moderate filament length changes (C89). Increasing profilin efficiently generates longer filaments by increasing both processivity and elongation (C90). Applied tension drastically decreases filament length (C91), with typical 10-fold reduction every 3 pN for both formins (C92). mDia2 elongates more slowly but is far more processive than mDia1, producing much longer filaments (C93, C94), with differences reflecting FH2-DAD domain properties (C95).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 are supported by experimental data in Figure 5A-C and Figure 4\u2014figure supplement 3. Claims C93-C95 are supported by comparative data throughout the study. The analysis appropriately integrates processivity and elongation rate to predict filament length, providing functional context for the measured kinetic parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A two-pathway dissociation model explains force-dependent formin processivity. The FH2 dimer goes through a transient, weakly bound transition state upon actin subunit addition (C96), allowing dissociation via two routes: from the open state during open-closed equilibrium (rate koffO) or from the transition state following subunit addition (rate koffT) (C102, C9). At zero force, koffT dominates as evidenced by strong actin concentration dependence (C103). Under force, dissociation rates for different actin concentrations converge (C104), consistent with koffO increasing more strongly with force than koffT and becoming dominant at high force (C105, C106, C10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96, C102 describe the mathematical model developed in the paper. Claims C103-C106 represent model predictions that are consistent with experimental observations in Figures 3A,C and 4C,F. The model provides a mechanistic framework that unifies observations across different experimental conditions. While the model involves assumptions, it makes testable predictions that match the data qualitatively.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on formin biology and prior knowledge. Formins are major regulators of actin networks (C1, C2) responsible for generating elongated, unbranched structures in cells (C11, C12) and linked to various pathologies (C13-C15). Formins function as homodimers (C16, C17) with FH1 and FH2 domains mediating barbed end tracking and elongation (C18-C22). Formin processivity, quantified by dissociation rate, determines functional outcomes (C23-C26). Prior work revealed isoform differences (C27), regulatory mechanisms (C28-C30), and proposed scaling with elongation velocity (C33, C34). The impact of pulling forces on processivity was an open question (C35, C36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature (C1-C2, C5, C11-C32) or identify the knowledge gap addressed by the study (C33-C36). All are appropriately cited or represent standard definitions. These provide essential context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "927ffbdf-5fad-486a-9234-98f3711e880a",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior models of formin conformational dynamics. Structural studies led to proposals of open-closed equilibrium between elongation-competent and elongation-forbidding states (C97). The 'stair-stepping' model associates FH2 translocation with this equilibrium (C98), while the 'stepping-second' model proposes translocation occurs after subunit addition (C99). Prior work including the authors' suggests the open-closed equilibrium corresponds to one monomer working distance, consistent with stair-stepping (C100, C101).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately describe prior models from the literature (C97-C99) and cite relevant work (C100-C101). They provide theoretical context for interpreting the current results but represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    },
+    {
+      "id": "fa91f977-eb62-47d3-ae20-233e3bc5e70f",
+      "content_id": "62b4efda-26e5-4143-b7d3-c76af84d8525",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Implications for cellular formin function and future directions. In cells, filaments are likely tensed by myosin activity (C109), raising questions about how formins remain membrane-associated under force. Possible mechanisms include alternative anchoring strategies or reinforcement by other factors (C110), rapid rebinding in filament bundles (C111), or stabilization by regulatory proteins (C112, C113).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C109 represents established knowledge. Claims C110-C113 are speculations about cellular mechanisms that could explain the apparent paradox revealed by the in vitro findings. These are reasonable hypotheses for future investigation but lack experimental support in the current study. The speculation is appropriate for a Discussion section but does not constitute a supported result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:25.532484Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c12386c0-1d31-4039-aef7-b819854f548e",
+      "result_id": "1fb271cc-ff6b-4361-a600-d0c8a5aa0f37"
+    },
+    {
+      "claim_id": "2eb966cc-6ea3-4211-8b86-ab6584a4775f",
+      "result_id": "1fb271cc-ff6b-4361-a600-d0c8a5aa0f37"
+    },
+    {
+      "claim_id": "a98c5354-c626-4454-90fe-f854c330b63c",
+      "result_id": "1fb271cc-ff6b-4361-a600-d0c8a5aa0f37"
+    },
+    {
+      "claim_id": "c79d25b0-a5cd-411c-8b96-a35edd3c1a9a",
+      "result_id": "1fb271cc-ff6b-4361-a600-d0c8a5aa0f37"
+    },
+    {
+      "claim_id": "414fbdc8-3350-4ffc-bdb0-9ac2629c145f",
+      "result_id": "1fb271cc-ff6b-4361-a600-d0c8a5aa0f37"
+    },
+    {
+      "claim_id": "14ad997e-a297-433e-ad7b-495b359eca94",
+      "result_id": "1fb271cc-ff6b-4361-a600-d0c8a5aa0f37"
+    },
+    {
+      "claim_id": "10410f74-a243-4957-8d08-6493231a1086",
+      "result_id": "2dbdf3ac-2ff0-4e73-afb7-02ab3003a804"
+    },
+    {
+      "claim_id": "59d06914-73b7-402a-9cc4-2c3f6c7deba7",
+      "result_id": "2dbdf3ac-2ff0-4e73-afb7-02ab3003a804"
+    },
+    {
+      "claim_id": "186876d6-91f0-46d1-bd71-658f950c1766",
+      "result_id": "2dbdf3ac-2ff0-4e73-afb7-02ab3003a804"
+    },
+    {
+      "claim_id": "cf66651b-ce3c-44a6-bd84-22c8ed74197e",
+      "result_id": "2dbdf3ac-2ff0-4e73-afb7-02ab3003a804"
+    },
+    {
+      "claim_id": "15db88ac-a2e5-4598-8c31-84007334a0e7",
+      "result_id": "2dbdf3ac-2ff0-4e73-afb7-02ab3003a804"
+    },
+    {
+      "claim_id": "d7a761f7-101c-408d-91b9-9ac7d350bc32",
+      "result_id": "29fb03c6-2d3a-475f-a210-fa4e3545422b"
+    },
+    {
+      "claim_id": "67f550b4-af11-4531-8cee-690b5b15ed6a",
+      "result_id": "29fb03c6-2d3a-475f-a210-fa4e3545422b"
+    },
+    {
+      "claim_id": "868abb7e-f861-4618-95a4-63a0a26caee0",
+      "result_id": "29fb03c6-2d3a-475f-a210-fa4e3545422b"
+    },
+    {
+      "claim_id": "62f5c00e-56b6-4368-bdf0-24b9ba6551a4",
+      "result_id": "29fb03c6-2d3a-475f-a210-fa4e3545422b"
+    },
+    {
+      "claim_id": "d92242d9-e800-497b-9188-582467175238",
+      "result_id": "29fb03c6-2d3a-475f-a210-fa4e3545422b"
+    },
+    {
+      "claim_id": "49bd8b57-8ce9-4b05-943f-5d379a263a0b",
+      "result_id": "29fb03c6-2d3a-475f-a210-fa4e3545422b"
+    },
+    {
+      "claim_id": "eea585a9-b9d8-48bb-a406-64a61c36b52d",
+      "result_id": "343a491d-9244-406c-b211-39127a500adc"
+    },
+    {
+      "claim_id": "2864af41-c90f-4615-9b16-9964b1c7b6a5",
+      "result_id": "343a491d-9244-406c-b211-39127a500adc"
+    },
+    {
+      "claim_id": "e851e055-976e-4132-93b2-820af2f1f234",
+      "result_id": "343a491d-9244-406c-b211-39127a500adc"
+    },
+    {
+      "claim_id": "c0a0e169-a533-4670-a44a-f389d4d6e3bc",
+      "result_id": "343a491d-9244-406c-b211-39127a500adc"
+    },
+    {
+      "claim_id": "a323d476-517f-468e-938b-f9353fd6886b",
+      "result_id": "343a491d-9244-406c-b211-39127a500adc"
+    },
+    {
+      "claim_id": "9e949cee-8314-4906-95e9-1c1aaa575b50",
+      "result_id": "343a491d-9244-406c-b211-39127a500adc"
+    },
+    {
+      "claim_id": "b360b628-d7e5-4b5d-8fd5-b091cdc8b7ec",
+      "result_id": "3192f1af-d99d-41d3-913c-d4672cd6bcba"
+    },
+    {
+      "claim_id": "c89c9fa2-e770-446a-8bb7-122f6fb056d8",
+      "result_id": "3192f1af-d99d-41d3-913c-d4672cd6bcba"
+    },
+    {
+      "claim_id": "0d2192c5-06a4-429c-ba9b-631419c2fc11",
+      "result_id": "3192f1af-d99d-41d3-913c-d4672cd6bcba"
+    },
+    {
+      "claim_id": "08a06bed-18d9-4a8a-ac11-712c0c95d1e1",
+      "result_id": "3192f1af-d99d-41d3-913c-d4672cd6bcba"
+    },
+    {
+      "claim_id": "b298c657-0071-4f52-90a5-2727cdcd941c",
+      "result_id": "3192f1af-d99d-41d3-913c-d4672cd6bcba"
+    },
+    {
+      "claim_id": "f274110a-addb-4780-a524-5088124e5a6c",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "72f97632-45d9-4a5a-9ae9-807b067b1f75",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "fce273e3-3b8e-43f0-87bb-f8f1366ea05a",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "64561a29-3174-4009-9c4e-c73ac0649ae0",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "2aa3eb9a-375c-4461-bf8d-d5b6b4447126",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "577cd8c5-3cf7-461c-9631-8af7ab1baa68",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "61b314d1-fbd8-42d2-9804-df14b56a1954",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "879573b7-36bb-429c-9b16-9c5f68a42e83",
+      "result_id": "66ad3a09-81b0-438f-997f-f2fa6ae6c6f0"
+    },
+    {
+      "claim_id": "78ee365b-ce3e-4a97-8abc-9c8e722907fb",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "853f2a37-c7e3-45b4-b315-7e3e0ffaf3b4",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "e7e15744-1064-4a18-9f56-3e42ae499ec4",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "8f9bfdc4-9369-41f4-9d6d-ffb2a695c692",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "9a88b4e0-1b93-4de8-9f24-d5983578389b",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "06f3335e-4ecb-4321-b593-1a32773f0e51",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "72935339-1618-4b7b-be58-a71415786553",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "ed4619be-2a10-443f-886e-330d097491d0",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "6599d9b9-9726-488d-9874-a842d2c8fafe",
+      "result_id": "cc7832e2-ede6-4b6e-8232-1374e07c0c28"
+    },
+    {
+      "claim_id": "e0580a79-0e65-4b0f-a6a4-8be1c00fc1ba",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "f1800423-39ab-4547-92f8-ca90386d1f91",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "1c3f7027-03e6-4305-a8db-cadab0f95159",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "1e34d4ff-cc97-4fe4-a1e0-cd75f9b55851",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "718ee2c9-3a28-48ac-a318-ec3366767d80",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "aecc2f29-2f1f-4a72-8727-fe2989994686",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "332dd67e-af0e-4ce9-8157-71dfb8a54fea",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "00408a89-aa96-4eb8-b2d5-58b68e7a7234",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "483e8ac8-556f-4962-950d-0128b230f5ab",
+      "result_id": "02736624-e372-4cc5-a116-222d54e283af"
+    },
+    {
+      "claim_id": "2c3ecca2-8474-4223-b89a-8538aa3e537d",
+      "result_id": "d981dcea-28e2-4eab-9035-eff45ce25d4b"
+    },
+    {
+      "claim_id": "b70d7606-3b78-4039-9770-a68e8c9d77c9",
+      "result_id": "d981dcea-28e2-4eab-9035-eff45ce25d4b"
+    },
+    {
+      "claim_id": "5f01b0bf-5ec4-425c-9251-7825f7972eab",
+      "result_id": "d981dcea-28e2-4eab-9035-eff45ce25d4b"
+    },
+    {
+      "claim_id": "d53af6e9-c9c7-47af-8975-8565a9754e8e",
+      "result_id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d"
+    },
+    {
+      "claim_id": "8f3b9518-fd74-4578-927a-acd181e83e3a",
+      "result_id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d"
+    },
+    {
+      "claim_id": "74fe1f93-4360-478a-8b69-fa2046469974",
+      "result_id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d"
+    },
+    {
+      "claim_id": "cd3e1f1c-90ca-4ccd-9c85-b6e7c52a4d6a",
+      "result_id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d"
+    },
+    {
+      "claim_id": "3018c8a7-9534-45ef-beea-a3fcc54e8d7e",
+      "result_id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d"
+    },
+    {
+      "claim_id": "292f2dcd-e49b-43ab-ab36-4ea3d83c21ef",
+      "result_id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d"
+    },
+    {
+      "claim_id": "004405db-140a-4ae1-ae9f-6f398612d964",
+      "result_id": "c6452f9c-7d8e-4b5d-bf6c-dd99d10b194d"
+    },
+    {
+      "claim_id": "17b2aaa0-1770-440c-ac38-f2c75cd1d0b9",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "0860a8e0-f940-4dbe-9548-be1e1ed87772",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "939827ca-0847-4cf2-a64c-c026c07c7040",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "e5cedf48-2dcf-40c9-b449-a133ceed1c77",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "abf2cc46-e6ec-4870-b930-bf84e838b427",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "408f7d19-89b6-41a6-9f4d-b9ba49bf99f6",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "5c2674a2-ae62-4abb-97ab-1cf0353c7071",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "5b01d155-11bc-43f2-adfb-4d645ad2c6d4",
+      "result_id": "d0b2ea4b-3c0e-4d8f-9397-db44af3ba4a2"
+    },
+    {
+      "claim_id": "6b3077c3-0d4c-4b17-8c7b-41e5744e06ef",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "03bfd2b8-3557-4b8d-b1cf-d601241ea314",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "c6403264-9338-4d83-a5fb-c0f2cdaa2e55",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "04e267cf-2045-4916-a553-758a66dd0bda",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "7d005c7c-1711-4e9a-9c5c-c15c76dea7cb",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "2956f118-772b-47b9-aabc-f1608297dd29",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "bd4fbf75-8d27-42d3-88ff-d8d666510718",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "e7ab696c-2f23-4cc1-bef3-5d47f0a859ba",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "fe680f32-a97d-4bb6-805b-0f5ad0ac2b65",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "77ae63f5-666f-4587-90de-ab152a62d5b4",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "aff506ff-7afb-4590-8b10-7cfcd9272742",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "afece9d2-bae7-4c23-a631-af93d6ca3c45",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "9e655592-a759-4009-93f7-7bef4c35efb2",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "0da0f391-2dd6-4870-bc53-0d8c71b7e38a",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "7ad2ff34-5c9e-4ddd-8da7-a67ffe847cd4",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "84a3a737-afe4-434d-be95-0b1c07b767a4",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "f6f51315-e412-4746-99b7-968f23c41f10",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "bc3c5cc9-e632-40ad-b9a9-58d90464a51a",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "7f30de3a-6540-4b9a-8b15-a6e5b4200ca1",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "b375db5d-f1e7-4566-b8eb-168dd08779cf",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "44a3fda4-a902-4077-a910-9daff7594b48",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "475e77fd-bfde-4260-9acb-c20e150357b2",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "b60f3e83-6764-47ab-8d9f-feef982c2194",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "2067cd74-5950-4849-88a8-6065428b3151",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "9ea2c671-5f6d-4fe4-a3a8-5fb2f1a301e8",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "a58d80a8-662f-4214-affc-ed243c830e3b",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "1ae18380-d643-43c9-9327-44812dc90cf9",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "bcef7d16-3050-4ae7-8e0b-34f94c8a2b3a",
+      "result_id": "127d9517-ad8d-46dd-aebe-85b2d1b5cf65"
+    },
+    {
+      "claim_id": "39e055bb-5477-4b4d-a05d-c8bc6394a39c",
+      "result_id": "927ffbdf-5fad-486a-9234-98f3711e880a"
+    },
+    {
+      "claim_id": "1d7fcf5c-5cea-4561-85dd-47446a238861",
+      "result_id": "927ffbdf-5fad-486a-9234-98f3711e880a"
+    },
+    {
+      "claim_id": "af0d1952-0a34-418f-b864-ed9b8aad0f58",
+      "result_id": "927ffbdf-5fad-486a-9234-98f3711e880a"
+    },
+    {
+      "claim_id": "f36c5c54-d87d-4baf-b74a-86eea04b140d",
+      "result_id": "927ffbdf-5fad-486a-9234-98f3711e880a"
+    },
+    {
+      "claim_id": "b4ee5750-2b21-4e6f-88e3-62e472e81e92",
+      "result_id": "927ffbdf-5fad-486a-9234-98f3711e880a"
+    },
+    {
+      "claim_id": "311d2395-7177-474d-8226-8a9865caccd1",
+      "result_id": "fa91f977-eb62-47d3-ae20-233e3bc5e70f"
+    },
+    {
+      "claim_id": "6181487c-0f88-4aeb-be28-c1bc651a9736",
+      "result_id": "fa91f977-eb62-47d3-ae20-233e3bc5e70f"
+    },
+    {
+      "claim_id": "83d5d1ee-73dc-4ba5-b94f-cf4944f2d6be",
+      "result_id": "fa91f977-eb62-47d3-ae20-233e3bc5e70f"
+    },
+    {
+      "claim_id": "231297d5-62bf-4b4b-8202-0872ef9691f9",
+      "result_id": "fa91f977-eb62-47d3-ae20-233e3bc5e70f"
+    },
+    {
+      "claim_id": "6aabdebf-5541-49d7-b3ab-b069c9a2f6c5",
+      "result_id": "fa91f977-eb62-47d3-ae20-233e3bc5e70f"
+    }
+  ],
+  "comparisons": []
+}

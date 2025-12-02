@@ -1,0 +1,2321 @@
+{
+  "submission": {
+    "id": "2cd9548a-d7a4-4be3-9433-52c237a9c843",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:27:26.971650Z",
+    "updated_at": "2025-12-01T20:27:26.971650Z"
+  },
+  "content": [
+    {
+      "id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "submission_id": "2cd9548a-d7a4-4be3-9433-52c237a9c843",
+      "content_type": "manuscript",
+      "content_text": "# Allosteric control of an asymmetric transduction in a G protein-coupled receptor heterodimer\n\n## Authors\n\n- Junke Liu<sup>1</sup>\n- Zongyong Zhang<sup>1</sup>\n- David Moreno-Delgado<sup>2</sup>\n- James AR Dalton<sup>3</sup> ([ORCID: 0000-0002-5279-4581](https://orcid.org/0000-0002-5279-4581))\n- Xavier Rovira<sup>2</sup> ([ORCID: 0000-0002-9764-9927](https://orcid.org/0000-0002-9764-9927))\n- Ana Trapero<sup>5</sup>\n- Cyril Goudet<sup>2</sup> ([ORCID: 0000-0002-8255-3535](https://orcid.org/0000-0002-8255-3535))\n- Amadeu Llebaria<sup>5</sup> ([ORCID: 0000-0002-8200-4827](https://orcid.org/0000-0002-8200-4827))\n- Jes\u00fas Giraldo<sup>3</sup> ([ORCID: 0000-0001-7082-4695](https://orcid.org/0000-0001-7082-4695))\n- Qilin Yuan<sup>1</sup>\n- Philippe Rondard<sup>2</sup> ([ORCID: 0000-0003-1134-2738](https://orcid.org/0000-0003-1134-2738))\n- Siluo Huang<sup>1</sup> ([ORCID: 0000-0002-8052-4677](https://orcid.org/0000-0002-8052-4677)) \u2020\n- Jianfeng Liu<sup>1</sup> ([ORCID: 0000-0002-0284-8377](https://orcid.org/0000-0002-0284-8377)) \u2020\n- Jean-Philippe Pin<sup>2</sup> ([ORCID: 0000-0002-1423-345X](https://orcid.org/0000-0002-1423-345X)) \u2020\n\n### Affiliations\n\n1. College of Life Science and Technology, Collaborative Innovation Center for Genetics and Development, and Key Laboratory of Molecular Biophysics of Ministry of Education Huazhong University of Science and Technology Wuhan China\n2. Institut de G\u00e9nomique Fonctionnelle CNRS, INSERM, Universit\u00e9 de Montpellier Montpellier France\n3. Institut de Neuroci\u00e8ncies and Unitat de Bioestad\u00edstica Universitat Aut\u00f2noma de Barcelona Barcelona Spain\n4. Network Biomedical Research Center on Mental Health Barcelona Spain\n5. MCS, Laboratory of Medicinal Chemistry and Synthesis Institute for Advanced Chemistry of Catalonia (IQAC-CSIC) Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nGPCRs play critical roles in cell communication. Although GPCRs can form heteromers, their role in signaling remains elusive. Here we used rat metabotropic glutamate (mGlu) receptors as prototypical dimers to study the functional interaction between each subunit. mGluRs can form both constitutive homo- and heterodimers. Whereas both mGlu2 and mGlu4 couple to G proteins, G protein activation is mediated by mGlu4 heptahelical domain (HD) exclusively in mGlu2-4 heterodimers. Such asymmetric transduction results from the action of both the dimeric extracellular domain, and an allosteric activation by the partially-activated non-functional mGlu2 HD. G proteins activation by mGlu2 HD occurs if either the mGlu2 HD is occupied by a positive allosteric modulator or if mGlu4 HD is inhibited by a negative modulator. These data revealed an oriented asymmetry in mGlu heterodimers that can be controlled with allosteric modulators. They provide new insight on the allosteric interaction between subunits in a GPCR dimer.\n\n## Introduction\n\nMany cell surface receptors form multi-protein complexes for signaling integration (Klingenberg, 1981; Salter, 2003; Altier et al., 2006; Gonz\u00e1lez-Maeso et al., 2008). Among them, G protein-coupled receptors (GPCRs) are the most abundant and constitute the main targets in drug development (Lagerstr\u00f6m and Schi\u00f6th, 2008). Although most GPCRs can signal in a monomeric form (El Moustaine et al., 2012; White et al., 2007; Whorton et al., 2007), increasing studies revealed that they can associate into both homo and heteromeric complexes (Prezeau et al., 2010; Ferr\u00e9 et al., 2014; Gomes et al., 2016; Maurel et al., 2008; Albizu et al., 2010). Interestingly, GPCR heteromers may generate original functional pharmacological entities different from each of the homomers (Ferr\u00e9 et al., 2014; Gomes et al., 2016; Bellot et al., 2015; Wertman and Dupr\u00e9, 2013; Fribourg et al., 2011; Urizar et al., 2011). Whether such GPCR association is real in native tissue is still a matter of intense debate (Bouvier and H\u00e9bert, 2014; Lambert and Javitch, 2014). Understanding how a receptor can control the activity of its partner (Gonz\u00e1lez-Maeso et al., 2008; Albizu et al., 2010; Fribourg et al., 2011; Vilardaga et al., 2008; Han et al., 2009) will certainly help clarify this important issue, opening ways to control the function of GPCR heteromers.\n\nMetabotropic glutamate receptors (mGluRs) are class C GPCRs and are well-recognized constitutive homodimers (Kniazeff et al., 2011; Pin and Bettler, 2016). These receptors are divided into three groups: group I (mGlu1,5), II (mGlu2,3) and III (mGlu4,6,7,8), on the basis of sequence homology, pharmacological profile and cellular signaling. Recently, mGluRs were shown to also form heterodimers with specific subunit composition (Doumazane et al., 2011; Kammermeier, 2012). Of note, whereas the different mGluRs were commonly described as having specific brain distribution supporting their homodimeric nature, localization studies revealed subcellular co-localization of different mGluRs such as mGlu1 and 5 (Pandya et al., 2016), mGlu2 and 4 (Yin et al., 2014), mGlu7 and 8 (Ferraguti et al., 2005). Further studies supported the existence of mGlu2-4 and 1\u20135 heterodimers in the brain (Pandya et al., 2016; Yin et al., 2014; Moreno Delgado et al., 2017). Being identified very recently, not much is known about the possible clinical relevance of mGlu heterodimers, but already homodimeric mGlu4, rather than heterodimeric mGlu2-4, were proposed as a better target for Parkinson\u2019s disease treatment (Niswender et al., 2016). In contrast, mGlu2-4 heterodimers control synaptic activity at the level of the cortico-striatal terminals in the striatum (Yin et al., 2014) and lateral perforant path terminals in the dendate gyrus (Moreno Delgado et al., 2017).\n\nThe mGlu subunits are multidomain proteins composed of a Venus flytrap domain (VFT) containing the orthosteric binding site, connected via a cysteine-rich domain (CRD) to a heptahelical domain (HD) involved in G protein coupling (Pin and Bettler, 2016; Wu et al., 2014; Dor\u00e9 et al., 2014; Kunishima et al., 2000; Tsuchiya et al., 2002). In the case of mGlu homodimers, structural and biophysical studies revealed a symmetrical conformational change during activation at the level of the VFTs (Doumazane et al., 2013; Rondard et al., 2006; Huang et al., 2011; Xue et al., 2015; Olofsson et al., 2014; Vafabakhsh et al., 2015). Indeed, while activating one VFT is sufficient to partially activate the homodimers, activating both VFTs is required for full activity both in homodimeric (Kniazeff et al., 2004; Brock et al., 2007; Levitz et al., 2016) and heterodimeric receptors (Moreno Delgado et al., 2017). Surprisingly, this symmetric activation of the VFT dimer leads to an asymmetric activation of the HD dimer, only one HD being active at a time (Hlavackova et al., 2012; Hlavackova et al., 2005; Goudet et al., 2005). Whether mGlu heterodimer activation is symmetric or asymmetric, and whether either subunit can be involved in signaling remains unknown. Such analysis will likely bring interesting observation for the understanding of the allosteric coupling between GPCRs within hetero-complexes.\n\nIn this study, we choose mGlu2-4 heterodimer as a prototype heterodimer, as its existence in the brain has been documented (Yin et al., 2014; Moreno Delgado et al., 2017). We show that whereas both mGlu2 and mGlu4 HDs are capable of activating G proteins, only mGlu4 HD does it in mGlu2-4 heterodimers. Although a conformational change in the mGlu2 HD occurs that can be prevented by a mGlu2 negative allosteric modulator (NAM), it is not sufficient for a direct activation of G proteins, but important for the G protein coupling by the associated mGlu4 HD. This further documents the asymmetric activation of dimeric GPCRs. Furthermore, we demonstrated that manipulating the conformation of either mGlu2 or mGlu4 HD with positive and negative allosteric modulators can reorient the asymmetry towards mGlu2 activating G proteins. This demonstrates a differential ability of mGlu2 and mGlu4 HD to reach a G protein activating state. But most importantly, these data reveal strong allosteric interactions between two GPCRs in a dimeric complex. Such allosteric coupling can be controlled with small molecules allosteric modulators revealing a way to modulate heteromeric receptor activity, and expanding the possibilities of using such small molecules to precisely control signaling events. This illustrates how such hetero-complexes can control signals originating from various GPCR ligands targeting a cell.\n\n## Results\n\n### mGlu2-4 heterodimer activates G protein through mGlu4\n\nThe difficulty in studying GPCR heterodimers is that the co-expression of two different receptors leads to three populations of dimers, both homodimers and the heterodimer, making difficult the study of the specific properties of the heterodimeric entity. We then used a quality control system that allows cell surface targeting of the heterodimer only (Brock et al., 2007). We engineered chimeric mGlu2 and mGlu4 subunits containing complementary coiled-coil regions (C1 and C2) derived from the GABAB receptor and intracellular retention signals (KKXX) (Huang et al., 2011; Kniazeff et al., 2004). We constructed mGlu2 and mGlu4 mutants with either C1 or C2, such as HAmGlu2C1KKXX (2C1), FlagmGlu2C2KKXX (2C2), HAmGlu4C1KKXX (4C1) and FlagmGlu4C2KKXX (4C2). By combination of C1 and C2 containing subunits, we can obtain the mGlu2-4 heterodimers specifically at the cell surface, as well as the mGlu2 (2-2) and mGlu4 (4-4) homodimers as controls (Figure 1A,B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig1-v5.jpg)\n\n**Figure 1.:** (A) Cartoons illustrating mGlu2 and mGlu4 homodimers, and mGlu2-4 (2\u20134 or 4\u20132) heterodimers with each subunit carrying the quality control C1 or C2 system as C terminal tails, and the indicated HA or Flag tag at their N terminus. (B) Quantification of cell surface expressed HA-tagged or Flag-tagged constructs by ELISA on intact cells transfected with the indicated subunits (2C1, 2C2, 4C1, 4C2) alone or together. Data are expressed as means\u00a0\u00b1\u00a0SEM (n\u00a0\u2265\u00a03). **p<0.01, ***p<0.001 (unpaired t test). (C, D, E, F) Intracellular Ca2+ responses mediated by the indicated subunits upon stimulation with increasing concentrations of glutamate, in the presence of the chimeric Gqi9, with the control subunits (C), the mGlu2 homodimer with no, one or both subunits mutated (D), same with mGlu4 homodimer (E) or mGlu2-4 heterodimer (F). The red cross indicates the subunit carries the FS mutation that prevents G protein activation. Data are expressed as means\u00a0\u00b1\u00a0SEM of triplicates from a typical experiment repeated at least three times.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig1-figsupp1-v5.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Intracellular Ca2+ response mediated by indicated subunits co-expressed with the chimeric Gqi9 upon stimulation with DCG-IV (30 \u03bcM, green), L-AP4 (30 \u03bcM, red) or glutamate (1 mM, blue). Data are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig1-figsupp2-v5.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Quantification of cell surface-total expression of HA-tagged or Flag-tagged constructs (as indicated in Figure 1) by ELISA on intact cells transfected with indicated subunits. Data were obtained from a same cells used for with Figure 1D,E,F and expressed as means\u00a0\u00b1\u00a0SEM of triplicates from a typical experiment repeated at least three times.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig1-figsupp3-v5.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Intracellular Ca2+ responses mediated by indicated subunits upon stimulation with increasing concentration of glutamate, in the presence of the chimeric Gqi9. (B) Cartoons illustrating the receptor combinations used in panels C and D. (C) Intracellular Ca2+ response mediated by indicated subunits co-expressed with Gqi9 upon stimulation with DCG-IV (30 \u03bcM), L-AP4 (30 \u03bcM), or DCG-IV\u00a0+L-AP4. (D) Same as in C with Gqo. Data are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times.\n\nSuch receptor constructs retained their ability to activate G proteins (we used the chimeric Gqi and Gqo proteins that enable coupling of these receptors to the PLC pathway [Conklin et al., 1993; Blahos et al., 1998]) when at the cell surface, with the expected action of mGlu2 (DCG-IV) and mGlu4 (L-AP4) selective agonists (Figure 1\u2014figure supplement 1). When activated with glutamate, mGlu2 and mGlu2-4 displayed a similar potency and efficacy, while glutamate had a lower efficacy at mGlu4 (Figure 1C, Figure 1\u2014source data 1). Note that all these receptor combinations were expressed at a similar level at the cell surface (Figure 1B).\n\nMutating the conserved Phe residue into Ser in the third intracellular loop of mGluRs abolished their ability to activate G proteins (Kniazeff et al., 2004; Hlavackova et al., 2005). When introduced into the C1 and C2 constructs, neither mGlu2-F756S, nor mGlu4-F781S activated G proteins (Figure 1D,E). When only one subunit carries the mutation, a larger decrease in glutamate efficacy was observed in mGlu2 dimers than in mGlu4 dimers (Figure 1D,E, Figure 1\u2014source data 1). When such mutation was introduced in the mGlu2 subunit of the mGlu2-4 heterodimer, a glutamate-mediated response similar to the control was observed (Figure 1D,F, Figure 1\u2014source data 1). In contrast, in the heterodimer containing the mutated mGlu4 subunit no response could be observed (Figure 1F) despite a correct expression level at the cell surface (Figure 1\u2014figure supplement 2). As a control, introducing the FS mutation in both subunits of mGlu2-4 heterodimer abolished glutamate-induced G protein signaling (Figure 1\u2014figure supplement 3A). Even when the selective mGlu2 and mGlu4 agonists DCG-IV and L-AP4 were used, signal could be generated with the heterodimers mutated in the mGlu2 subunit, but not in those mutated in the mGlu4 subunits (Figure 1\u2014figure supplement 3B\u2013D). Such data strongly suggest that in the heterodimer, G protein activation is exclusively mediated by mGlu4 HD. Of note, similar results were obtained with either mGlu2C1-4C2 or 4C1-2C2 heterodimers, indicating that the modified C terminal domains do not influence the asymmetric activation (Figure 1C,F).\n\n### Asymmetric activation of mGlu2-4 HDs relies on the HDs only\n\nIn order to understand how a symmetric mGlu2-4 activation at the level of the VFT dimer could control an asymmetric activation of the HD dimer, we examined whether this could result from the specific association of one HD with its extracellular domain (ECD, composed of the VFT and the CRD). We then generated various constructs leading to the surface expression of receptor combinations composed of a 2\u20134 heterodimeric HD, but carrying either two mGlu2 ECDs (2-2ECD4HD; Figure 2A), two mGlu4 ECDs (4-4ECD2HD; Figure 2B), or in which the ECDs were swapped between the two subunits (2ECD4HD-4ECD2HD; Figure 2C). Constructs leading to the receptor combinations containing two mGlu2 VFTs (Figure 2\u2014figure supplement 1A), two mGlu4 VFTs (Figure 2\u2014figure supplement 1B), or in which the VFTs were swapped between the two subunits (Figure 2\u2014figure supplement 1C) were also generated. For any of these combinations, we also analyzed the functional consequence of mutating either the mGlu2 or mGlu4 HD (Figure 2 and Figure 2\u2014figure supplement 1). Thanks to the C1 C2 terminal tails, a correct and specific expression of any of the indicated dimer combinations at the cell surface could be verified thanks to the HA or Flag N-terminal epitopes (Figure 2\u2014figure supplements 2 and 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig2-v5.jpg)\n\n**Figure 2.:** In (A), (B) and (C) cartoons illustrating the heterodimer combinations used with one or both subunits carrying the FS mutation (red cross) that prevents G protein activation are indicated on the top. For each subunit, white domains are from mGlu2, while the grey domains are from mGlu4. The chimeric protein made of mGlu2 ECD and mGlu4 HD is named 2ECD4HD and the reverse chimera named 4ECD2HD. The intracellular Ca2+ responses mediated by the indicated subunit compositions (color coded, as indicated on top of the cartoons) upon stimulation with DCG-IV (30 \u03bcM), L-AP4 (30 \u03bcM) or glutamate (1 mM) shown at the bottom. (A) Data obtained with heterodimers containing both ECDs (VFT and CRD) from mGlu2. (B) Data obtained with heterodimers containing both ECDs from mGlu4. (C) Data obtained with heterodimers in which the ECDs were swapped between the two subunits. Data are means\u00a0\u00b1SEM (n\u00a0\u2265\u00a03). **p<0.01, ***p<0.001 (unpaired t test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig2-figsupp1-v5.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Same as Figure 2 excepted that only the VFT is swapped, and not the entire CRD. In (A), (B) and (C) cartoons illustrating the heterodimer combinations used with one or both subunits carrying the FS mutation (red cross) that prevents G protein activation are indicated on the top. For each subunit, white domains are from mGlu2, while the grey domains are from mGlu4. The chimeric protein made of mGlu2 VFT and mGlu4 CRD\u00a0+\u00a0HD is named 2VFT4HD and the reverse chimera named 4VFT2HD. The intracellular Ca2+ responses mediated by the indicated subunit compositions (color coded, as indicated on top of the cartoons) upon stimulation with DCG-IV (30 \u03bcM), L-AP4 (30 \u03bcM) or glutamate (1 mM) shown at the bottom. (A) Data obtained with heterodimers containing both VFT from mGlu2. (B) Data obtained with heterodimers containing both VFTs from mGlu4. (C) Data obtained with heterodimers in which the VFTs were swapped between the two subunits. Data are means\u00a0\u00b1SEM (n\u00a0\u2265\u00a03). **p<0.01, ***p<0.001 (unpaired t test).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig2-figsupp2-v5.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Quantification of cell surface-total expression of HA-tagged or Flag-tagged constructs by ELISA on intact cells transfected with the indicated subunits as in Figure 2. Data were generated from the same cells used in Figure 2 and are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig2-figsupp3-v5.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Quantification of cell surface-total expression of HA-tagged or Flag-tagged constructs by ELISA on intact cells transfected with the indicated subunits as in Sup Figure 4. Data were generated from the same cells used in Sup Figure 4 and are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times.\n\nWhen activated by glutamate, we found that any combination carrying a wild-type mGlu4 HD (with or without a mutated mGlu2 HD) generated Ca2+ signals (Figure 2 and Figure 2\u2014figure supplement 1). In contrast, none of those carrying a mutated mGlu4 HD were functional (Figure 2 and Figure 2\u2014figure supplement 1) despite their expression at the cell surface (Figure 2\u2014figure supplements 2 and 3). Similarly, activating specifically the mGlu2 VFT with DCG-IV, or the mGlu4 VFT with L-AP4 led to G protein signaling of receptor combinations carrying at least one mGlu2 VFT, or one mGlu4 VFT, respectively, as long as the receptor contained a wild-type mGlu4 HD. No response could be generated with these agonists in receptor combinations carrying a mutated mGlu4 HD (Figure 2 and Figure 2\u2014figure supplement 1).\n\nWe then examined the functional consequence of locking the ECD dimer in its active orientation. We previously reported that an inter-subunit disulfide bound between a Cys introduced at position 521 of the mGlu2 CRD led to a fully active dimer (mGlu2C) (Huang et al., 2011). Mutating the equivalent position in mGlu4 (His523Cys) also generated a fully active receptor (mGlu4C) (Figure 3A), as revealed by the accumulation of inositol monophosphate after LiCl addition. Note that the constitutive activation of phospholipase C cannot be quantified through intracellular Ca2+ measurements because Ca2+ concentrations return close to basal values under constant PLC activity. When both mGlu2C and mGlu4C were co-expressed, an inter-subunit DTT-sensitive covalent linkage could be demonstrated, providing the natural inter-VFT disulfide bound is mutated (Figure 3B). Such a receptor combination also displayed a full constitutive activity (Figure 3A). In that case again, the high constitutive or glutamate-induced signaling could be observed in the heterodimer combinations containing a wild-type mGlu4 HD but not in those in which the mGlu4 HD contained the FS mutation (Figure 3A) despite a correct expression of all constructs (Figure 3\u2014figure supplement 1)\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig3-v5.jpg)\n\n**Figure 3.:** (A) Cartoons illustrating the heterodimer combinations used with mGlu2 or mGlu4 subunits carrying the FS mutation (red cross) that prevents G protein activation (top). The red line linking both CRDs indicates the disulfide bridge that constrains the dimer into an active state. Inositol phosphate (IP) accumulation in cells expressing the dimer combinations after incubation with or without glutamate (1 mM). Data are means\u00a0\u00b1SEM (n\u00a0\u2265\u00a03). ***p<0.001 (unpaired t test). (B) On the top, the cartoons indicate the heterodimeric combinations analyzed by western blots (bottom) with or without DTT treatment. The natural inter-subunit disulfide bridge in the control dimer (wt) is indicated in (a), leading to the lack of monomers in the non-reducing conditions. When mutating both Cys involved in this natural crosslink (C121A in mGlu2 and C136A in mGlu4), both subunits can dissociate into monomers even in the absence of DTT (b). Adding a new disulfide bridge in the CRD (L521C in mGlu2 and H523C in mGlu4) (c) restores the subunit cross-linking. By using SNAP-tag labeling with a cell-impermeant fluorescein substrate, only the cell surface subunits are labeled, and then detected on the blot. Data are from a typical experiment repeated three times.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig3-figsupp1-v5.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Quantification of cell surface-total expression of HA-tagged or Flag-tagged constructs by ELISA on intact cells transfected with the indicated subunits as in Figure 3A. Data were generated from the same cells used in Figure 3A and are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times.\n\nTaken together, these results demonstrate that any ways the dimeric ECD of the mGlu2-4 heterodimer is activated the mGlu4 HD is always responsible for G protein activation. This strongly suggests that the asymmetric activity of the mGlu2-4 HD dimer is an intrinsic property of this membrane part of the receptor.\n\n### mGlu2 HD is involved in the activation of mGlu4 HD\n\nAlthough mGlu2 HD is not directly responsible for G protein activation in the mGlu2-4 heterodimer, it may still play a role in the activation process. We then used MNI137, an mGlu2 NAM (Hemstapat et al., 2007) known to stabilize the mGlu2 HD in its inactive conformation. We found that MNI137 partially inhibited mGlu2-4 heterodimer while it largely inhibited the response of the mGlu2 homodimer, whether the dimer was activated by glutamate (Figure 4A, Figure 4\u2014source data 1) or was constitutively active through the inter-CRD disulfide bridge (Figure 4B, Figure 4\u2014source data 2). Of note, similar data were obtained in a receptor combination in which the mGlu2 subunit is incapable of G protein coupling. This revealed that a conformational change in the mGlu2 HD prevented by MNI137 binding is required to fully activate the mGlu4 HD.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig4-v5.jpg)\n\n**Figure 4.:** In each panel, cartoons (color coded) illustrating the dimer compositions used are indicated on the top, and intracellular Ca2+ responses mediated by indicated dimer combinations upon stimulation with glutamate (1 mM) and increasing concentration of the mGlu2 NAM, MNI137 (purple square). The inactivating FS mutation is shown as a red cross. (A) Effect of MNI137 on homodimeric mGlu2 and mGlu4 receptors, and on the mGlu2-4 heterodimer carrying or not the FS mutation in the mGlu4 subunit activated by glutamate (blue arrow). (B) Effect of MNI137 on the constitutively active dimers resulting from the CRD disulfide cross-linking. (C) Effect of increasing concentrations of MNI137 on the mGlu2-4 heterodimer activated by the mGlu2 agonist DCG-IV (30 \u03bcM, green arrow), L-AP4 (30 \u03bcM, red arrow) or both. (D) Intracellular Ca2+ response under control condition, or after stimulation with DCG-IV (30 \u03bcM, green arrow) with or without MNI137 (10 \u03bcM) with the indicated dimer combinations. Data are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times (A, B, C), or from three independent experiments (D). ***p<0.001 (unpaired t test).\n\nTo clarify how mGlu2 HD in the heterodimer controls mGlu4 HD activation, we activated the heterodimer with specific agonist of either mGlu2 or mGlu4. Interestingly, we found that MNI137 blocked mGlu2-4 heterodimer signaling induced by either DCG-IV or L-AP4 respectively whereas MNI137 inhibited only partially signaling induced by the combination of DCG IV and L-AP4 as observed with glutamate (Figure 4A,C, Figure 4\u2014source data 3). These data revealed the prominent role of mGlu2 HD in activating mGlu4 HD when only one VFT is activated. Consistent with this conclusion, activation of both VFTs with DCG-IV in receptor combinations containing two mGlu2 VFTs is only partially inhibited by MNI137, with a smaller inhibition (39.2 \u00b1 4.7%, n\u00a0=\u00a03) when both CRDs are from mGlu2, compared to the situation where the mGlu4 HD is associated with the mGlu4 CRD (64.3 \u00b1 3.8% inhibition, n\u00a0=\u00a03, p<0.05) (Figure 4D).\n\n### Allosteric control of the asymmetric activation of mGlu2-4 HDs\n\nWe then examined why mGlu2 HD could not mediate G protein activation within the mGlu2-4 heterodimer. We first analyzed the effect of an mGlu4 NAM (OptoGluNAM4.1) that we recently reported to prevent mGlu4 HD activation (Rovira et al., 2016). Surprisingly, this compound, while inhibiting agonist-mediated mGlu4 activity (Rovira et al., 2016), had no effect on the mGlu2-4 heterodimer (Figure 5A). Most interestingly, when using an mGlu2-4 combination in which the mGlu4 HD is unable to activate G protein, then a heterodimer unable to activate G proteins, the addition of OptoGluNAM4.1 allowed glutamate to generate a signal (Figure 5A, Figure 5\u2014source data 1). This suggests that, by preventing mGlu4 HD to reach its active state, mGlu2 HD can take over for G protein activation in the heterodimer.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig5-v5.jpg)\n\n**Figure 5.:** Intracellular Ca2+ response mediated by the indicated subunits upon stimulation with increasing concentration of glutamate with/without a mGlu4 NAM (optoGluNAM4.1, purple square, 30 \u03bcM) or a mGlu2 PAM (LY487379, yellow triangle, 10 \u03bcM). (A) The mGlu4 NAM allows mGlu2 HD coupling to G proteins in the heterodimer. (B) The mGlu2 PAM allows mGlu2 HD coupling to G proteins. Data are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times.\n\nSuch a proposal is supported by a second set of experiments, in which we favored mGlu2 HD activation in the mGlu2-4 heterodimer using the mGlu2 PAM LY487379. This compound had no significant effect on the mGlu2-4 heterodimer signaling capacity (Figure 5B, Figure 5\u2014source data 1) or on the mGlu2-4 heterodimer mutated in mGlu2 HD (Figure 5\u2014source data 1). However, on the non-functional mGlu2-4 combination where the mGlu4 HD is mutated, the mGlu2 PAM LY487379 allowed glutamate to activate G proteins, therefore revealing a possible coupling of the mGlu2 HD in this heterodimer.\n\nTaken together, these data revealed that under normal conditions, the coupling of mGlu2-4 is mediated by mGlu4 HD, but the mGlu2 HD can still generate signaling providing its activation is facilitated by a PAM, or by the inhibition of mGlu4 HD with a NAM (Figure 5).\n\n### Asymmetric transduction of mGlu heterodimers\n\nThe above data were generated using mGlu2 and mGlu4 subunits carrying a modified C-terminal tail containing a quality control system. We then used another approach to validate our observation not only with mGlu2 and mGlu4 subunits with unmodified C-terminal tails, but also with other possible combinations of mGlu heterodimers (Figure 6). To that aim, we co-expressed two subunits, with one carrying the mutation preventing G protein activation. By specifically activating this mutated subunit, a functional response may only be generated with the heterodimer containing the wild-type subunit, providing the latter can be responsible for G protein activation in the heterodimer.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig6-v5.jpg)\n\n**Figure 6.:** (A\u2013B) schemes illustrating the method used to study the coupling properties of mGlu heterodimers composed of mGlu2 (group-II) and a group-III subunit with the wild-type C-terminal tails. In (A), activating specifically the mGlu2 subunit unable to activate G protein (F756S, red cross) can generate a signal only if associated with a functional group-III subunit. (B) Same as in (A) with the inactive group-III subunit (F781S, F773S, F784S, F777S in mGlu4-6-7-8, respectively) and a specific group-III agonist. (C\u2013F) functional coupling of the indicated subunits under the condition indicated on the top (black, control; green, group-II agonist (DCG-IV, 30 \u03bcM); blue, group-II agonist with mGlu2 NAM (DCG-IV, 30 \u03bcM and MNI137 10 \u03bcM); red, group-III agonist (L-AP4, 30 \u03bcM for mGlu4-6-8, LSP4-2022, 300 \u03bcM for mGlu7). (C) Data obtained with cells expressing both mGlu2 and mGlu4, with either the inactive mGlu2 (2X) or the inactive mGlu4 (4X). (D, E and F), same as in C using mGlu6, mGlu7 or mGlu8 constructs, respectively. Data are means\u00a0\u00b1SEM (n\u00a0\u2265\u00a03). **p<0.01, ***p<0.001 (unpaired t test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig6-figsupp1-v5.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Quantification of cell expression of HA-tagged constructs by ELISA on cells transfected with the indicated subunits. (B) Intracellular Ca2+ response mediated by the indicated subunits upon stimulation with DCG-IV (30 \u03bcM) for mGluR2-3, L-AP4 (30 \u03bcM) for mGluR4-6-8, LSP4-2022 (300 \u03bcM) for mGluR7 or glutamate (1 mM). Data in A and B were generated from the same transfected cells, and are means\u00a0\u00b1SEM of triplicates from a typical experiment repeated at least three times.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig6-figsupp2-v5.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Same as Figure 7, except mGlu3 was used instead of mGlu2. (A) and (B) schemes illustrating the method used to study the coupling properties of mGlu heterodimers composed of mGlu3 (group-II) and a group-III subunit. In (A), activating specifically the mGlu3 subunit unables to activate G protein (F765S, red cross) can generate a signal only if associated with a functional group-III subunit. (B) Same as in (A) with the inactive group-III subunit (F781S, F773S, F784S, F777S in mGlu4-6-7-8, respectively) and a specific group-III agonist. (C-D) functional coupling of the indicated subunits under the condition indicated on the top (black, control; green, group-II agonist (DCG-IV, 30 \u03bcM); blue, group-II agonist with mGlu2/3 NAM (DCG-IV, 30 \u03bcM and MNI137 10 \u03bcM); red, group-III agonist (L-AP4, 30 \u03bcM for mGlu4-6-8, LSP4-2022, 300 \u03bcM for mGlu7). (C) Data obtained with cells expressing both mGlu3 and mGlu4, with either the inactive mGlu3 (3X) or the inactive mGlu4 (4X). (D, E and F) same as in C using mGlu6, mGlu7 or mGlu8 constructs, respectively. Data are means\u00a0\u00b1SEM (n\u00a0\u2265\u00a03). **p<0.01, ***p<0.001 (unpaired t test).\n\nUsing the non-functional mGlu4FS, co-expressed with mGlu2, no signal could be generated upon activation with the mGlu4 agonist L-AP4, in agreement with mGlu4 HD being the G protein-coupling domain in the mGlu2-4 heterodimer (Figure 6A). Consistent with this, activating an mGlu2FS mutant with DCG-IV generated a signal providing this subunit is co-expressed with mGlu4 (Figure 6A). Note that under these experimental conditions, cells expressed three types of dimers, the mGlu2 and mGlu4 homodimers and the mGlu2-4 heterodimer. Accordingly, if mGlu4 was the FS mutated subunit, L-AP4 had no effect, while DCG-IV could generate a signal through mGlu2 homodimers. In contrast, if mGlu2FS mutant was used, DCG-IV could generate a signal through the 2\u20134 heterodimer, and L-AP4 through the mGlu4 homodimers. Correct expression and function of all constructs was verified (Figure 6\u2014figure supplement 1). These data confirmed that the asymmetric activation of the mGlu2-4 HDs is not the consequence of the presence of the C1-C2 intracellular domains.\n\nThe same approach was conducted with all possible heterodimeric receptors made of mGlu2 or mGlu3 associated with any of the group-III mGluRs: mGlu4, 6, 7 and 8. As depicted in Figure 6C\u2013F and Figure 6\u2014figure supplement 2, similar data were obtained with any of these 4 types of heterodimers for mGlu2 and for mGlu3. These data indicate that in all these cases, the group-III subunit is responsible for G protein activation in these heterodimers. As observed with the mGlu2-4 heterodimer (Figure 4), the mGlu2 NAM, MNI137, inhibited signaling of all these heterodimers (Figure 6C\u2013F). This is consistent with the mGlu2 HD, though not directly involved in G protein coupling, being important to allow the group-III subunit to signal in these heterodimeric receptors.\n\n## Discussion\n\nOur data revealed important information on how two G protein-activating units communicate within a heterodimeric complex. We found that in the mGlu2-4 heterodimer, only the mGlu4 subunit activates G proteins, and we revealed a complex allosteric interaction between the two HDs. Indeed, the mGlu2 subunit retains its ability to signal providing its activation is favored using mGlu2 PAMs, or preventing the activation of mGlu4 HD with a NAM. Such findings, schematized in Figure 7, will certainly help elucidate the functional control of one GPCR by another, and how this can be modulated, then providing novel opportunities to decipher the role of possible GPCR heterodimers.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26985/elife-26985-fig7-v5.jpg)\n\n**Figure 7.:** State 1. the inactive heterodimer in its basal state. State 2: Glutamate (blue disk) activation of both subunits leads to G protein activation by mGlu4 HD, also involving a conformational change in the mGlu2 HD. State 3: the addition of mGlu2 NAM (green square) largely decreases coupling efficacy of the mGlu2-4 heterodimer activated by glutamate (3a), or suppress detectable coupling if either the mGlu2 (3b) or mGlu4 (3c) is specifically activated. State 4: heterodimeric mGlu2-4 coupling through the mGlu2 HD thanks to the addition of a mGlu4 NAM (purple square, 4a), or a mGlu2 PAM (yellow triangle, 4b).\n\nThe key information reported here is that, even though both HDs in the mGlu2-4 heterodimer are capable of activating G proteins, only that of mGlu4 does it (Figure 7, State 2). This is not only observed with the mGlu2-4 but with any other heterodimers made of mGlu2 and a group-III mGlu subunits, where the group-III HD is always responsible for coupling. Such asymmetric activation of a GPCR dimer has often been observed (Vilardaga et al., 2008; Han et al., 2009; Galvez et al., 2001; Duthey et al., 2002; Levoye et al., 2006; Xu et al., 2004). Even in the mGlu homodimers, only one subunit is active at a time, although in that case, each subunit has the same probability of being active (Hlavackova et al., 2012; Hlavackova et al., 2005; Goudet et al., 2005). For the well-characterized heterodimeric GPCRs, such as the GABAB and the T1R taste receptors, also one subunit only is responsible for G protein activation (Galvez et al., 2001; Duthey et al., 2002; Xu et al., 2004), although this was assumed to result from the inability of the other subunit to signal. Our data suggest that instead, the inability of signaling of one subunit may result from an inhibitory effect of the other subunit while in its fully active state. This is indeed likely the case for the GABAB receptor for which the GABAB1 subunit, not involved in coupling in the heterodimer, has been reported to signal when expressed alone (Baloucoune et al., 2012; Richer et al., 2009). Similar asymmetric coupling has also been reported for class A GPCR heterodimers, where the activation of one receptor prevents the activation of the other (Vilardaga et al., 2008; Han et al., 2009; Levoye et al., 2006). These observations reinforce the idea of a strong negative cooperativity between the HDs in a dimeric GPCR complex, where the activation of one subunit suppresses the ability of the other to signal. This conclusion is further supported by numerous studies reporting negative cooperativity in agonist binding on dimeric GPCRs (Albizu et al., 2010; Urizar et al., 2005).\n\nWhile mGlu4 homodimer coupling efficacy measured is lower than that of mGlu2, it is interesting to note that the coupling efficacy of mGlu2-4 heterodimer is similar to that of mGlu2 receptors. Because in both mGlu4 and mGlu2-4, the G protein activation is mediated by the mGlu4 HD, this means that the mGlu2 subunit potentiates mGlu4 efficacy. Such a low coupling efficacy of mGlu4 homodimers may well be the consequence of a weaker action of the mGlu4 ECD dimer on the HDs, consistent with the weaker coupling of heterodimers containing two mGlu4 ECDs (Figure 2). It may also possibly result in part from another level of interaction between the HDs within a dimeric receptor. Even though the mGlu2 HD does not directly activate the G protein in the heterodimer, it is important for the full activation of the mGlu4 HD (Figure 7). Indeed, the mGlu2 HD likely changes its conformation to exert this positive effect, even though this conformation is not sufficient for G protein coupling (Figure 7). This is well demonstrated by the partial inhibition of the mGlu2-4 activity (mediated by the mGlu4 HD) by a specific mGlu2 NAM known to stabilize the mGlu2 HD in its inactive state (Hemstapat et al., 2007) (Figure 7, State 3a). Such an action of the mGlu2 HD is even more prominent if the VFT dimer is asymmetrically activated, with only one VFT occupied by an agonist (Figure 7, States 3b, 3c). Such data revealed important allosteric interaction between two HDs in a GPCR dimer, not expected so far. They are however perfectly in line with the role of the GABAB1 HD in the activation process of the heterodimeric GABAB receptor, the latter being involved in a direct activation of the GABAB2 HD through an intra-molecular conformational change (Monnier et al., 2011).\n\nOur data then further strengthen the multiple allosteric interactions between class C GPCR domains in the activation process, with the activation of one HD within the dimer being controlled in two ways. The first one is by the reorientation of the VFTs with an efficient coupling when the reorientation is symmetric (both VFTs activated), and a less efficient coupling in case only one VFT is activated (Moreno Delgado et al., 2017; Kniazeff et al., 2004). Of note, the sequence of the CRDs that link the VFTs to the HDs also plays a role, as indicated here by the differential coupling efficacies of receptor combinations containing either the mGlu2 CRD or the mGlu4 CRD (Figure 2, Figure 2\u2014figure supplement 1, Figure 4D). The second pathway comes from a conformational change in the associated HD likely through a direct interaction between the two HDs in the dimer, consistent with our previous data with the heterodimeric GABAB receptor (Monnier et al., 2011). The second component is higher when the first, VFT mediated, is weak, due either to the activation of only one VFT (Figure 4), or to specific combinations of the CRDs (Figure 2, Figure 4D).\n\nSuch allosteric interaction most likely results from a contact between the two HDs via an interface that can communicate information from one HD to the other. This can be achieved if the interface involves component of the HD that changes conformation depending on the state of the subunit. Recently, we reported that, even though both HDs in a class C GPCR contact each other through TM4 and 5 in the basal state, as also reported for many class A GPCR dimers (Guo et al., 2005; Manglik et al., 2012), we surprisingly identified TM6 as being involved in the dimer interface of the active receptor dimer (Xue et al., 2015). TM6 is the TM that moves the most during class A GPCR activation (Rasmussen et al., 2011a; Rasmussen et al., 2011b), also likely in class C GPCRs (Pin and Bettler, 2016) for which the allosteric coupling between both HDs in a GPCR dimer is of fundamental mechanistic importance. More work is obviously needed to analyze the TM rearrangement in class C GPCR activation.\n\nAnother major observation is that it is possible, using small molecules to reorient the G protein coupling from one subunit to the other \u2013 i.e. from the mGlu4 HD to the mGlu2 HD in the mGlu2-4 heterodimer (Figure 7, States 4a, 4b). Indeed, by either preventing the activation of the mGlu4 HD with an mGlu4 specific NAM (Figure 7, States 4b), or by stabilizing the mGlu2 HD in its active conformation with a specific mGlu2 PAM (Figure 7, States 4b), the G protein coupling is transferred from the mGlu4 to the mGlu2 subunit. This observation suggests that the mGlu4 HD is likely more prone to reach a G protein activating state than the mGlu2 HD, and the fully active form of mGlu4 HD prevents the mGlu2 HD from reaching a G protein activating state. Such observation opens interesting possibilities to decipher the specific role of each subunit in this mGlu2-4 heterodimer, especially in specific brain area where it is expressed.\n\nThere is much interest in the development of allosteric modulators, since these are expected to have less side effects for several reasons (Changeux and Christopoulos, 2016; Conn et al., 2014; Foster and Conn, 2017; May et al., 2007). Such small molecules target a site that is under less pressure during evolution, such that it is possible to identify subtype selective molecules, in contrast to compound acting in the orthosteric binding site highly conserved between homologous receptors. In addition, PAMs do not constantly activate the receptor, then do not favor receptor desensitization and internalization. Moreover, because they enhance the action of endogenous ligands, they increase the response when and where needed for an improved physiological response. Here we reveal a novel property of such small molecules: their ability to control the asymmetric activation of a GPCR dimer.\n\nTaken together, the present study illustrates the complex allosteric interaction occurring between two associated G protein-activating units, with both positive and negative interactions. Indeed, a conformational change in one subunit is needed for a full G protein activation by its associated subunit, although the interaction also prevents the first subunit from activating G proteins. Because more and more data are consistent with the existence of GPCR heteromers, our finding will certainly bring much interest in elucidating their possible roles in integrating signals targeting either subunit.\n\n## Materials and methods\n\n### Materials\n\nL-glutamate was purchased from Sigma. DCG-IV, L-AP4, MNI137 and LY487379 were from Tocris Bioscience. LSP4-2022 was a provided by Dr. F. Acher (Paris, France). Glutamate-pyruvate transaminase (GPT) was purchased from Roche. Lipofectamine 2000 and Fluo-4-AM were from Life Technologies. SNAP-Green was from NEN Biolabs.\n\n### Plasmids and transfection\n\nThe pRK5 plasmids encoding the HA-tagged wild-type mGluR2-3-4-6-7-8 from rat were described previously (Huang et al., 2011). The site-directed mutations in the pRK5 plasmid were generated using QuikChange mutagenesis protocol (Agilent Technologies). The sequence coding C1 (the 47-residue coiled-coil sequence of the C-terminal of GABAB1), or C2 (the 49-residue coiled-coil region of GABAB2), followed by the endoplasmic reticulum retention signal KKTN. HAmGluR2C1KKXX (2C1) and FlagmGluR2C2KKXX (2C2) (with and without a N-terminal SNAP tag) have been reported previously (Xue et al., 2015). Using the same strategy, the last 38 residues in mGluR4 C terminus (HA, flag and SNAP-tagged versions of mGlu4 were used) were replaced by C1KKXX or C2KKXX to obtained HAmGluR4C1KKXX (4C1), FlagmGluR4C2KKXX (4C2). The chimeras (2VFT4HD, 4VFT2HD) were obtained by introducing a Bgl II restriction site in both mGlu2 and mGlu4 subunits, Ala497Arg mutation in mGluR2 and same sense mutations at Arg517Ser518 in mGluR4 were induced to make the restriction site. Chimeras (2ECD4HD, 4ECD2HD) were obtained by exchanging the ECD domain before the Pro557 in mGluR2 and Pro577 in mGluR4.\n\nHEK-293 cells (ATCC, CRL-1573, lot: 3449904) were cultured in DMEM supplemented with 10% FBS and transfected by electroporation as described elsewhere. Absence of mycoplasma was routinely checkedusing the MycoAlert Mycoplasma detection kit (LT07-318 (Lonza, Amboise, France), according to the manufacturer protocol. Ten millions cells were transfected with 2 \u03bcg of each plasmid of indicated and completed to a total amount of 10 \u03bcg with the plasmid encoding the pRK5 empty vector. To allow efficient coupling of the receptor to the phospholipase C pathway, cells were also transfected with the chimeric G protein G\u03b1qi9 (1 \u03bcg) or G\u03b1qo (1 \u03bcg), and the glutamate transporter EAAC1 (1 \u03bcg). For cell-surface expression and functional assays of indicated subunits, experiments were performed after incubation for 36 hr (12 hr at 37\u00b0C,\u00a05% CO2 and then 24 hr at 30\u00b0C, 5% CO2).\n\n### SNAP fluorescent-labeled blot experiments\n\nCells after electroporation, adherent HEK293 cells plated in 12-well plates were labeled with 300 nM SNAP-Green in culture medium at 37\u00b0C for 1 hr. Cells were lysed with lysis buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1% Nonidet P-40, 0.5% sodium deoxycholate, 0.1%SDS and protease inhibitors) at 4\u00b0C for 1.5 hr. After centrifugation at 12,000 g for 30 min, supernatants were added with loading buffer (NuPAGE LDSsample buffer 4, Invitrogen) for 10 min. Electrophoresis was performed using precast NuPAGE Novex 8% Tris-acetate gels (Life Technologies) and blotted onto nitrocellulose membranes. Membranes were imaged on an Odyssey infrared scanner (LI-COR Biosciences, Lincoln, NE, USA) at 800 nm for SNAP-Green (Xue et al., 2015).\n\n### Cell surface quantification by ELISA\n\nCell surface expression of the indicated subunits was detected by ELISA. HA- and Flag-tagged subunits were co-transfected into HEK293 cells seeded into 96-well microplates. Cell surface expression and total expression (treated with 0.05% triton) was detected with a monoclonal rat anti-HA antibody (3F10, Roche) or rat anti-Flag (F1804, Sigma) and a goat anti-rat second antibody coupled to HRP (Jackson Immunoresearch, West Grove, PA) as previously described (Monnier et al., 2011). Bound antibody was detected by chemoluminescence using SuperSignal substrate (Pierce) and a 2103 EnVision Multilabel Plate Reader (Perkin Elmer, Waltham, MA, USA).\n\n### Intracellular calcium release and inositol phosphate measurement\n\nIntracellular Ca2+ release was measured as described (Hlavackova et al., 2005). In brief, cells were pre-incubated for 1 hr with the Ca2+ -sensitive Fluo-4 acetoxymethyl ester (Invitrogen). The fluorescence signals (excitation at 485 nm and emission at 525 nm) were then measured for 60 s (Flex-Station, Molecular Devices). Agonist was added after the first 20 s. The Ca2+ response is given as the agonist-stimulated fluorescence increase. Concentration response curves were fitted using Graph Pad Prism.\n\nInositol phosphate (IP) accumulation in HEK293 cells co-transfected with indicated subunits was measured after stimulation with agonist for 30 min in 96-well microplates as previously described (Hlavackova et al., 2005). After incubation in the presence of LiCl (10 mM, 30 min) and termination of the reaction with 0.1 M formic acid, the supernatant was recovered and purified by ion exchange chromatography using DOWEX resin. Radioactivity was measured using a Wallac1450 MicroBeta microplate liquid scintillation counter (Perkin Elmer, Waltham, MA, USA).\n\n### Statistical analysis\n\nStatistical analyses were performed on at least three individual data sets analyzed by Graphpad prism using unpaired t-tests.\n",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "034a7944-b097-4092-9f89-fb76e27aee18",
+      "submission_id": "2cd9548a-d7a4-4be3-9433-52c237a9c843",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lucy Forrest, NINDS United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26985.024](https://doi.org/10.7554/eLife.26985.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Allosteric control of an asymmetric transduction in a GPCR heterodimer\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Dmitry Veprintsev (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports an investigation of the allosteric control between subunits in a heterodimer of metabotropic glutamate receptor 2 and 4, using an elegant and ingenious quality control system that assures surface expression of only the intended dimers. The study reports asymmetric activation of dimeric metabotropic glutamate receptors, such that if a mGlu2 subunit is present, mGlu4 is responsible for the G protein activation in the heterodimer. By using subtype specific agonists, as well as swapping the extracellular domains between the subtypes, the authors were also able to show that it is possible to activate signaling by the heterodimer via activation of the mGlu2 extracellular domain. Using constitutively-active cross-linked extracellular domains the authors also demonstrate that no matter how the extracellular domains are activated, it is the mGlu4 that is responsible for signaling.\n\nEssential revisions:\n\nThe reviewers are enthusiastic about the manuscript. However, they raise a number of concerns that must be adequately addressed before the paper can be accepted.\n\n1) Two of the reviewers raise serious doubts about the interpretation of the molecular dynamics simulations. These concerns can be summarized as: (1) the fluctuations of loop regions in a homology model during a simulation could have many origins unrelated to the activation mechanism, and since appropriate methodological details were not provided [the sequence identity of the template; the final alignment and curations of the alignment; the loop lengths and templates; structural reliability measures for those segments; providing the model as supplementary material], it is not clear that the models are sufficiently reliable in these regions to avoid such artifacts; (2) even if the models were reliable, it is entirely possible that differences in fluctuations of ~1 \u00c5 would not be robust to repeated, parallel simulations (n>1); and (3) critically, the underlying assumption that asymmetric dynamics in a dimer should be detectable as fluctuations on the timescale of microseconds in the monomer is speculative. For these reasons, this section of the manuscript should be removed before resubmission, and the conclusions adjusted accordingly.\n\n2) The overall message of the manuscript should be communicated more consistently throughout the manuscript. In particular, from the data and from the discussion it is clear that some conformational change, but maybe not the full activation of mGlu2, is required for the allosteric activation of the mGlu4. In other places (abstract, end of introduction) this effect is described too simplistically as 'negative cooperativity'.\n\nIn addition, the statement in the abstract: 'revealed a dynamics \"winner-take-all\" mechanism in mGlu heterodimers, providing new insight on the allosteric control between subunits in a GPCR dimer\u2019 implies some kinetic aspects and time-resolution of the measurements while no kinetic measurements were presented. Rewording this statement could help avoid confusion.\n\n3) Cell-surface expression levels are not always clearly reported. Statistical analysis of the expression levels would aid in interpretation of the results, specifically in Figure 1\u2014figure supplement 2 and Figure 2\u2014figure supplement 2 and 3. Similarly, in Figure 1B, cell surface expression is only statistically compared with mock and not among the different heteromers. In this case, the data look similar, but this does not seem to be the case for several of the supplemental figures (see below).\n\n4) Figures 1, 2, 4 and 5 show the same type of data but use different Y axes (Fluorescence units or fold change over Mock, or normalised to the highest value). This makes it difficult to compare the experiments. It would be better to use the same Y axis \u2013 whichever is the most informative.\n\n5) Figure 1C and F \u2013 the signal amplitude for the 2-4 heterodimer seem to be inconsistent on these two panels while it is consistent on others.\n\n6) Figure 4A and B \u2013 The data presented are inconsistent with the previously presented data (compounded by the use of a different normalization along Y) and with the statement that the signaling is mediated via mGlu4. In the presence of NAM and a deactivating mutations signaling was observed. Panel D: are the differences in Ca2+ release between the two different 2-4 heteromers statistically significantly different? And if so: what could be an explanation for this (it seems that the inhibition of Ca2+ release is less profound when CRD is also from mGlu2)?\n\n7) A more in-depth discussion of the following results is required:a) While it is concluded that the allosteric control of signaling is mediated via the 7TM domains, it is also worth discussing the possibility that some allosteric control could be mediated via the 7TM-VFT1-VFT2-7TM path, and only via the direct 7TM-7TM path. Three must be bi-directional allosteric connections between the 7TM and the VFT domains, and the allosteric coupling between the individual VFT domain has also been shown by the authors themselves.\n\nb) In Figure 1C: glutamate has a lower efficacy at mGlu4-4 compared to 2-2, 2-4, 4-2. Is that because 2 positively affects 4? This matter is not discussed. The high efficacy (Ca2+ release) of 2-4 and 4-2 in Figure 1C is not seen in Figure 1F.\n\nc) In Figure 1D: why does mutation of one of the two monomers in mGlu2-2 lead to a larger decrease in glutamate efficacy than in mGlu4 dimers? Does mGlu2-2 couple to 2 G-proteins to reach highest activity, in contrast to mGlu4-4, 4-2 or 2-4 for which coupling to 1 G-protein is sufficient? Again, the use of different y-axes complicates ready comparison.\n\nd) In Figure 1\u2014figure supplement 3 C: why are there differences between 2x-4 and 4-2x? Could this be due to differences in expression level?\n\ne) In Figure 2: the receptors consisting of VFT and CRD derived from mGlu2 consistently show a higher Ca2+ release. This fact is not discussed.\n\nf) In Figure 3, it is not clear why IP accumulation is monitored in this particular experiment as opposed to Ca2+ release in the others.\n\ng) In Figure 3\u2014figure supplement 1, there are differences in expression levels: do they correlate with efficacy?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your revised work entitled \"Allosteric control of an asymmetric transduction in a G protein-coupled receptor heterodimer\" for consideration by eLife. Your revisions and responses have been reviewed by a Reviewing Editor, and the evaluation has been overseen by a Senior Editor.\n\nWe are willing to accept the manuscript for publication, provided that the molecular simulations are excluded. Although the nominal accuracy of the models on which the simulations are based appears to be reasonable (50% identity, high coverage), thereby addressing one of our previous concerns, it remains questionable whether the conclusions extracted from these simulations are sufficiently robust and convincing. The fundamental claim that microsecond-scale fluctuations of these two intracellular loops relate to the activation of a ligand-bound dimer is speculation \u2013 particularly for an apo, monomeric receptor. Critically, this claim is also not convincingly supported by the simulation data provided, based on the information added to the revision. Only one MD trajectory was calculated for the mGlu2 model, and although the trajectories are 5 microseconds-long, analysis of RMSD versus time shows the models continue to drift away from the starting structure throughout the simulation; therefore, it is unclear whether the observed fluctuations reflect functional dynamics or inaccuracies of the models. Indeed, no molecular explanation is given as to why one protein is \"more dynamic\" than another, leaving open the strong possibility that this difference owes to the differences in the quality of the models or how the simulations were set up or conducted. On top of this, the simulations include an apo monomer, rather than a ligand-bound dimer whose actions are being monitored in the experiments. In summary, the molecular simulations are insufficient to support the hypothesis put forward, and the relevance of the observations is too tenuous. It is our opinion that the speculation of the underlying mechanism for activation of mGlu4 vs mGlu2 is equally plausible without the simulations.\n\n\u2013 There is a typo in the revised abstract: \"their role in receptor remains elusive\" (insert signaling)\n\n\u2013 There is no reference to rat mGlu2 being used in the abstract, as indicated in the response regarding the title.\n\n\u2013 In the Discussion section: The phrase: \"the consequence of the mGlu4 ECD dimer\", is confusing and possibly incomplete, since it refers also to data relating to mGlu2.\n",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4b1a44b9-41b7-4a54-85d7-59bf2d54d3d1",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C1",
+      "claim": "GPCRs play critical roles in cell communication.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCRs play critical roles in cell communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about GPCRs that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "3c95c366-0b3f-4a3e-b432-06dbd5f42ea5",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C2",
+      "claim": "GPCRs can form heteromers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although GPCRs can form heteromers, their role in signaling remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to scientific literature on GPCR heteromers.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "cf48b264-324a-492b-bfe8-6eabb576ab0d",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C3",
+      "claim": "The role of GPCR heteromers in signaling remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Although GPCRs can form heteromers, their role in signaling remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "33cf3ea1-b44a-4df0-a586-ae08853fb865",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C4",
+      "claim": "mGluRs can form both constitutive homo- and heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "mGluRs can form both constitutive homo- and heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research on mGluR dimerization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "b2442624-a56e-4697-991f-3fc2b97a240f",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C5",
+      "claim": "Both mGlu2 and mGlu4 couple to G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas both mGlu2 and mGlu4 couple to G proteins, G protein activation is mediated by mGlu4 heptahelical domain (HD) exclusively in mGlu2-4 heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "b38fcce3-68a1-4880-a51f-cce89135c6fd",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C6",
+      "claim": "G protein activation is mediated by mGlu4 heptahelical domain (HD) exclusively in mGlu2-4 heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas both mGlu2 and mGlu4 couple to G proteins, G protein activation is mediated by mGlu4 heptahelical domain (HD) exclusively in mGlu2-4 heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "86a03fd8-a747-428a-8fdd-92991f6a5c32",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C7",
+      "claim": "Asymmetric transduction in mGlu2-4 heterodimers results from the action of both the dimeric extracellular domain and an allosteric activation by the partially-activated non-functional mGlu2 HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Such asymmetric transduction results from the action of both the dimeric extracellular domain, and an allosteric activation by the partially-activated non-functional mGlu2 HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "512d4ead-7bf1-42a3-be78-0281d9ea179c",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C8",
+      "claim": "G proteins activation by mGlu2 HD occurs if the mGlu2 HD is occupied by a positive allosteric modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "G proteins activation by mGlu2 HD occurs if either the mGlu2 HD is occupied by a positive allosteric modulator or if mGlu4 HD is inhibited by a negative modulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with allosteric modulators.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "4e9c21d6-9db5-4376-a0e3-e41a9d8db5e4",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C9",
+      "claim": "G proteins activation by mGlu2 HD occurs if mGlu4 HD is inhibited by a negative modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "G proteins activation by mGlu2 HD occurs if either the mGlu2 HD is occupied by a positive allosteric modulator or if mGlu4 HD is inhibited by a negative modulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with allosteric modulators.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "9927288c-a4cb-4134-a600-c6dc605a4385",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C10",
+      "claim": "There is an oriented asymmetry in mGlu heterodimers that can be controlled with allosteric modulators.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed an oriented asymmetry in mGlu heterodimers that can be controlled with allosteric modulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "a4c1a510-9b4f-4160-8241-1ce2dd38d7b6",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C11",
+      "claim": "Many cell surface receptors form multi-protein complexes for signaling integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Many cell surface receptors form multi-protein complexes for signaling integration (Klingenberg, 1981; Salter, 2003; Altier et al., 2006; Gonz\u00e1lez-Maeso et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "76b5cff2-223f-47e5-85a7-656d00b51d64",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C12",
+      "claim": "GPCRs are the most abundant cell surface receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, G protein-coupled receptors (GPCRs) are the most abundant and constitute the main targets in drug development (Lagerstr\u00f6m and Schi\u00f6th, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8774b94f-64c0-4e64-836d-ffa50c20f21c",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C13",
+      "claim": "GPCRs constitute the main targets in drug development.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, G protein-coupled receptors (GPCRs) are the most abundant and constitute the main targets in drug development (Lagerstr\u00f6m and Schi\u00f6th, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "c1b21d98-64ba-4d59-bec5-67e7427d0b1c",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C14",
+      "claim": "Most GPCRs can signal in a monomeric form.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most GPCRs can signal in a monomeric form (El Moustaine et al., 2012; White et al., 2007; Whorton et al., 2007), increasing studies revealed that they can associate into both homo and heteromeric complexes (Prezeau et al., 2010; Ferr\u00e9 et al., 2014; Gomes et al., 2016; Maurel et al., 2008; Albizu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "7151158c-0fe3-4cd2-9bcb-c27a334a0dfc",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C15",
+      "claim": "GPCRs can associate into both homo and heteromeric complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most GPCRs can signal in a monomeric form (El Moustaine et al., 2012; White et al., 2007; Whorton et al., 2007), increasing studies revealed that they can associate into both homo and heteromeric complexes (Prezeau et al., 2010; Ferr\u00e9 et al., 2014; Gomes et al., 2016; Maurel et al., 2008; Albizu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "b864fbfc-03a7-4d74-92e3-929a746c1c57",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C16",
+      "claim": "GPCR heteromers may generate original functional pharmacological entities different from each of the homomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GPCR heteromers may generate original functional pharmacological entities different from each of the homomers (Ferr\u00e9 et al., 2014; Gomes et al., 2016; Bellot et al., 2015; Wertman and Dupr\u00e9, 2013; Fribourg et al., 2011; Urizar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8a52d1fc-5f90-41b5-a4d9-75a4e9728a3a",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C17",
+      "claim": "Whether GPCR association is real in native tissue is still a matter of intense debate.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether such GPCR association is real in native tissue is still a matter of intense debate (Bouvier and H\u00e9bert, 2014; Lambert and Javitch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and represents the current state of the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "adf35322-2b5c-4b9d-bd20-a52925dfd2ab",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C18",
+      "claim": "Metabotropic glutamate receptors (mGluRs) are class C GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabotropic glutamate receptors (mGluRs) are class C GPCRs and are well-recognized constitutive homodimers (Kniazeff et al., 2011; Pin and Bettler, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "c1c81f85-b849-4730-bc34-794004ef5af7",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C19",
+      "claim": "mGluRs are well-recognized constitutive homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabotropic glutamate receptors (mGluRs) are class C GPCRs and are well-recognized constitutive homodimers (Kniazeff et al., 2011; Pin and Bettler, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "3d0dbfd0-2246-4f38-8e0b-6f8f1cd6f7c3",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C20",
+      "claim": "mGluRs are divided into three groups: group I (mGlu1,5), II (mGlu2,3) and III (mGlu4,6,7,8), on the basis of sequence homology, pharmacological profile and cellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These receptors are divided into three groups: group I (mGlu1,5), II (mGlu2,3) and III (mGlu4,6,7,8), on the basis of sequence homology, pharmacological profile and cellular signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mGluR classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "1372c14e-ba35-43c7-8887-7bf51e8e2386",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C21",
+      "claim": "mGluRs were shown to also form heterodimers with specific subunit composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, mGluRs were shown to also form heterodimers with specific subunit composition (Doumazane et al., 2011; Kammermeier, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "0f72d61f-10cd-474b-a3b5-43c9daa4c1d9",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C22",
+      "claim": "Localization studies revealed subcellular co-localization of mGlu1 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, whereas the different mGluRs were commonly described as having specific brain distribution supporting their homodimeric nature, localization studies revealed subcellular co-localization of different mGluRs such as mGlu1 and 5 (Pandya et al., 2016), mGlu2 and 4 (Yin et al., 2014), mGlu7 and 8 (Ferraguti et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8b49655d-c851-428d-986c-1928263b97ca",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C23",
+      "claim": "Localization studies revealed subcellular co-localization of mGlu2 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, whereas the different mGluRs were commonly described as having specific brain distribution supporting their homodimeric nature, localization studies revealed subcellular co-localization of different mGluRs such as mGlu1 and 5 (Pandya et al., 2016), mGlu2 and 4 (Yin et al., 2014), mGlu7 and 8 (Ferraguti et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "64019b95-8483-4905-9dee-8b1cdce60850",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C24",
+      "claim": "Localization studies revealed subcellular co-localization of mGlu7 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, whereas the different mGluRs were commonly described as having specific brain distribution supporting their homodimeric nature, localization studies revealed subcellular co-localization of different mGluRs such as mGlu1 and 5 (Pandya et al., 2016), mGlu2 and 4 (Yin et al., 2014), mGlu7 and 8 (Ferraguti et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e0e64105-7f9f-4fa3-b589-ef52357e76f7",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C25",
+      "claim": "Studies supported the existence of mGlu2-4 and 1\u20135 heterodimers in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies supported the existence of mGlu2-4 and 1\u20135 heterodimers in the brain (Pandya et al., 2016; Yin et al., 2014; Moreno Delgado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "a69bbd83-522c-42bb-a06b-e3e871160e11",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C26",
+      "claim": "Homodimeric mGlu4, rather than heterodimeric mGlu2-4, were proposed as a better target for Parkinson's disease treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Being identified very recently, not much is known about the possible clinical relevance of mGlu heterodimers, but already homodimeric mGlu4, rather than heterodimeric mGlu2-4, were proposed as a better target for Parkinson's disease treatment (Niswender et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "ac8e463e-aec1-4629-97c3-03ec719f0a47",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C27",
+      "claim": "mGlu2-4 heterodimers control synaptic activity at the level of the cortico-striatal terminals in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mGlu2-4 heterodimers control synaptic activity at the level of the cortico-striatal terminals in the striatum (Yin et al., 2014) and lateral perforant path terminals in the dendate gyrus (Moreno Delgado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "3c8ed080-7ad7-4bd1-9f55-f06ab2ccc691",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C28",
+      "claim": "mGlu2-4 heterodimers control synaptic activity at the level of lateral perforant path terminals in the dendate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mGlu2-4 heterodimers control synaptic activity at the level of the cortico-striatal terminals in the striatum (Yin et al., 2014) and lateral perforant path terminals in the dendate gyrus (Moreno Delgado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "a495eb2b-6d6b-4256-9651-6d9bea3fd504",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C29",
+      "claim": "mGlu subunits are multidomain proteins composed of a Venus flytrap domain (VFT) containing the orthosteric binding site, connected via a cysteine-rich domain (CRD) to a heptahelical domain (HD) involved in G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "The mGlu subunits are multidomain proteins composed of a Venus flytrap domain (VFT) containing the orthosteric binding site, connected via a cysteine-rich domain (CRD) to a heptahelical domain (HD) involved in G protein coupling (Pin and Bettler, 2016; Wu et al., 2014; Dor\u00e9 et al., 2014; Kunishima et al., 2000; Tsuchiya et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "f48812ed-f7cb-4f91-bd6b-24596777d304",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C30",
+      "claim": "Structural and biophysical studies revealed a symmetrical conformational change during activation at the level of the VFTs in mGlu homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of mGlu homodimers, structural and biophysical studies revealed a symmetrical conformational change during activation at the level of the VFTs (Doumazane et al., 2013; Rondard et al., 2006; Huang et al., 2011; Xue et al., 2015; Olofsson et al., 2014; Vafabakhsh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "c2b9c1c7-8bd2-4b56-b2b0-3524e4c2c9ca",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C31",
+      "claim": "Activating one VFT is sufficient to partially activate the homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while activating one VFT is sufficient to partially activate the homodimers, activating both VFTs is required for full activity both in homodimeric (Kniazeff et al., 2004; Brock et al., 2007; Levitz et al., 2016) and heterodimeric receptors (Moreno Delgado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "f82da325-014a-479c-8b5c-a2e5314bdf41",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C32",
+      "claim": "Activating both VFTs is required for full activity in homodimeric receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while activating one VFT is sufficient to partially activate the homodimers, activating both VFTs is required for full activity both in homodimeric (Kniazeff et al., 2004; Brock et al., 2007; Levitz et al., 2016) and heterodimeric receptors (Moreno Delgado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "c022f90e-7ffa-482b-9031-1208e13c1ea2",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C33",
+      "claim": "Activating both VFTs is required for full activity in heterodimeric receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while activating one VFT is sufficient to partially activate the homodimers, activating both VFTs is required for full activity both in homodimeric (Kniazeff et al., 2004; Brock et al., 2007; Levitz et al., 2016) and heterodimeric receptors (Moreno Delgado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "1575b66a-cd9f-4242-af99-d1d73079dec0",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C34",
+      "claim": "Symmetric activation of the VFT dimer leads to an asymmetric activation of the HD dimer, only one HD being active at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this symmetric activation of the VFT dimer leads to an asymmetric activation of the HD dimer, only one HD being active at a time (Hlavackova et al., 2012; Hlavackova et al., 2005; Goudet et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "3a98cfc8-2970-497b-b966-efd35de1a979",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C35",
+      "claim": "The existence of mGlu2-4 heterodimer in the brain has been documented.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we choose mGlu2-4 heterodimer as a prototype heterodimer, as its existence in the brain has been documented (Yin et al., 2014; Moreno Delgado et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "07ea9764-6bfa-4dfa-a196-e03859ddac95",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C36",
+      "claim": "Only mGlu4 HD activates G proteins in mGlu2-4 heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that whereas both mGlu2 and mGlu4 HDs are capable of activating G proteins, only mGlu4 HD does it in mGlu2-4 heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "03e7921c-bbc0-47c4-915c-14a5a96af493",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C37",
+      "claim": "A conformational change in the mGlu2 HD occurs that can be prevented by a mGlu2 negative allosteric modulator (NAM).",
+      "claim_type": "EXPLICIT",
+      "source": "Although a conformational change in the mGlu2 HD occurs that can be prevented by a mGlu2 negative allosteric modulator (NAM), it is not sufficient for a direct activation of G proteins, but important for the G protein coupling by the associated mGlu4 HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "d5090617-fbc9-47ef-80f8-43ede2327fc0",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C38",
+      "claim": "The conformational change in mGlu2 HD is not sufficient for a direct activation of G proteins, but important for the G protein coupling by the associated mGlu4 HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a conformational change in the mGlu2 HD occurs that can be prevented by a mGlu2 negative allosteric modulator (NAM), it is not sufficient for a direct activation of G proteins, but important for the G protein coupling by the associated mGlu4 HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "fd31c934-9abf-4a1a-a29c-7548318a5c61",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C39",
+      "claim": "Manipulating the conformation of either mGlu2 or mGlu4 HD with positive and negative allosteric modulators can reorient the asymmetry towards mGlu2 activating G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrated that manipulating the conformation of either mGlu2 or mGlu4 HD with positive and negative allosteric modulators can reorient the asymmetry towards mGlu2 activating G proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "9adb353c-0c15-4bea-976a-b663a3a02e46",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C40",
+      "claim": "There is a differential ability of mGlu2 and mGlu4 HD to reach a G protein activating state.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates a differential ability of mGlu2 and mGlu4 HD to reach a G protein activating state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "ca379e5d-a383-4e37-b532-f6db3d2c85f0",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C41",
+      "claim": "There are strong allosteric interactions between two GPCRs in a dimeric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "But most importantly, these data reveal strong allosteric interactions between two GPCRs in a dimeric complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "71b06870-26c2-49d6-92b0-a73fcafa2bd2",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C42",
+      "claim": "Allosteric coupling between GPCRs in a dimeric complex can be controlled with small molecules allosteric modulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Such allosteric coupling can be controlled with small molecules allosteric modulators revealing a way to modulate heteromeric receptor activity, and expanding the possibilities of using such small molecules to precisely control signaling events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "b97c43cb-a018-4042-a8e6-e5340ecc9b5d",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C43",
+      "claim": "Chimeric mGlu2 and mGlu4 subunits containing complementary coiled-coil regions (C1 and C2) derived from the GABAB receptor and intracellular retention signals (KKXX) were engineered.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used a quality control system that allows cell surface targeting of the heterodimer only (Brock et al., 2007). We engineered chimeric mGlu2 and mGlu4 subunits containing complementary coiled-coil regions (C1 and C2) derived from the GABAB receptor and intracellular retention signals (KKXX) (Huang et al., 2011; Kniazeff et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "4a4f01ce-3967-478f-b174-7fb660668b9c",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C44",
+      "claim": "By combination of C1 and C2 containing subunits, mGlu2-4 heterodimers can be obtained specifically at the cell surface, as well as the mGlu2 (2-2) and mGlu4 (4-4) homodimers as controls.",
+      "claim_type": "EXPLICIT",
+      "source": "By combination of C1 and C2 containing subunits, we can obtain the mGlu2-4 heterodimers specifically at the cell surface, as well as the mGlu2 (2-2) and mGlu4 (4-4) homodimers as controls (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach and is supported by Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "17fd1760-6be8-48db-8cd9-3a45d60a31c4",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C45",
+      "claim": "Receptor constructs with C1 and C2 retained their ability to activate G proteins when at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Such receptor constructs retained their ability to activate G proteins (we used the chimeric Gqi and Gqo proteins that enable coupling of these receptors to the PLC pathway [Conklin et al., 1993; Blahos et al., 1998]) when at the cell surface, with the expected action of mGlu2 (DCG-IV) and mGlu4 (L-AP4) selective agonists (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "22bdb7c1-ec02-40f5-a675-efecb542f8da",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C46",
+      "claim": "When activated with glutamate, mGlu2 and mGlu2-4 displayed a similar potency and efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "When activated with glutamate, mGlu2 and mGlu2-4 displayed a similar potency and efficacy, while glutamate had a lower efficacy at mGlu4 (Figure 1C, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "eb3bee49-7f37-43de-b10f-962f24737b0c",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C47",
+      "claim": "Glutamate had a lower efficacy at mGlu4.",
+      "claim_type": "EXPLICIT",
+      "source": "When activated with glutamate, mGlu2 and mGlu2-4 displayed a similar potency and efficacy, while glutamate had a lower efficacy at mGlu4 (Figure 1C, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "5be6d298-bdde-44dc-823f-a2406455b2e6",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C48",
+      "claim": "All receptor combinations were expressed at a similar level at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that all these receptor combinations were expressed at a similar level at the cell surface (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "6a9289aa-507c-4eed-8ae0-6dbd58781b70",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C49",
+      "claim": "Mutating the conserved Phe residue into Ser in the third intracellular loop of mGluRs abolished their ability to activate G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the conserved Phe residue into Ser in the third intracellular loop of mGluRs abolished their ability to activate G proteins (Kniazeff et al., 2004; Hlavackova et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "a8faccd0-49c4-4910-b99a-6839d522018b",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C50",
+      "claim": "Neither mGlu2-F756S, nor mGlu4-F781S activated G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "When introduced into the C1 and C2 constructs, neither mGlu2-F756S, nor mGlu4-F781S activated G proteins (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "33bb81cb-af0b-4bae-85eb-10c7b0aae4d7",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C51",
+      "claim": "When only one subunit carries the FS mutation, a larger decrease in glutamate efficacy was observed in mGlu2 dimers than in mGlu4 dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "When only one subunit carries the mutation, a larger decrease in glutamate efficacy was observed in mGlu2 dimers than in mGlu4 dimers (Figure 1D,E, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "5457f750-0162-4562-abcb-7975427366f0",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C52",
+      "claim": "When the FS mutation was introduced in the mGlu2 subunit of the mGlu2-4 heterodimer, a glutamate-mediated response similar to the control was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When such mutation was introduced in the mGlu2 subunit of the mGlu2-4 heterodimer, a glutamate-mediated response similar to the control was observed (Figure 1D,F, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "1754e707-689a-4283-a6e4-930bfe3665d8",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C53",
+      "claim": "In the heterodimer containing the mutated mGlu4 subunit no response could be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the heterodimer containing the mutated mGlu4 subunit no response could be observed (Figure 1F) despite a correct expression level at the cell surface (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "1ad9f984-b175-40bf-8a62-0e9e8f421fa6",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C54",
+      "claim": "Introducing the FS mutation in both subunits of mGlu2-4 heterodimer abolished glutamate-induced G protein signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, introducing the FS mutation in both subunits of mGlu2-4 heterodimer abolished glutamate-induced G protein signaling (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "984d068e-a5b6-4a58-9f1f-fd61a031f9f6",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C55",
+      "claim": "Signal could be generated with the heterodimers mutated in the mGlu2 subunit when the selective mGlu2 and mGlu4 agonists DCG-IV and L-AP4 were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when the selective mGlu2 and mGlu4 agonists DCG-IV and L-AP4 were used, signal could be generated with the heterodimers mutated in the mGlu2 subunit, but not in those mutated in the mGlu4 subunits (Figure 1\u2014figure supplement 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "923f8072-2ab5-43bd-b18f-cf62e3189041",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C56",
+      "claim": "Signal could not be generated with the heterodimers mutated in the mGlu4 subunits when the selective mGlu2 and mGlu4 agonists DCG-IV and L-AP4 were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when the selective mGlu2 and mGlu4 agonists DCG-IV and L-AP4 were used, signal could be generated with the heterodimers mutated in the mGlu2 subunit, but not in those mutated in the mGlu4 subunits (Figure 1\u2014figure supplement 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "916d6b1e-8380-423d-87d0-c7b8e1218fb8",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C57",
+      "claim": "In the heterodimer, G protein activation is exclusively mediated by mGlu4 HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Such data strongly suggest that in the heterodimer, G protein activation is exclusively mediated by mGlu4 HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "4c5bce5e-3ab2-4ace-a213-dda1dfebf4fa",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C58",
+      "claim": "Similar results were obtained with either mGlu2C1-4C2 or 4C1-2C2 heterodimers, indicating that the modified C terminal domains do not influence the asymmetric activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, similar results were obtained with either mGlu2C1-4C2 or 4C1-2C2 heterodimers, indicating that the modified C terminal domains do not influence the asymmetric activation (Figure 1C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e264c839-3bab-4e09-b5cb-02349bc22924",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C59",
+      "claim": "For any of the receptor combinations containing two mGlu2 VFTs, two mGlu4 VFTs, or in which the VFTs were swapped between the two subunits, a correct and specific expression of any of the indicated dimer combinations at the cell surface could be verified.",
+      "claim_type": "EXPLICIT",
+      "source": "Thanks to the C1 C2 terminal tails, a correct and specific expression of any of the indicated dimer combinations at the cell surface could be verified thanks to the HA or Flag N-terminal epitopes (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e6d034f4-48d0-4219-81cd-d7bd0ae55948",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C60",
+      "claim": "When activated by glutamate, any combination carrying a wild-type mGlu4 HD (with or without a mutated mGlu2 HD) generated Ca2+ signals.",
+      "claim_type": "EXPLICIT",
+      "source": "When activated by glutamate, we found that any combination carrying a wild-type mGlu4 HD (with or without a mutated mGlu2 HD) generated Ca2+ signals (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "a4d53e6c-b6fd-437f-9a52-d79591cc4f19",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C61",
+      "claim": "None of the receptor combinations carrying a mutated mGlu4 HD were functional.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, none of those carrying a mutated mGlu4 HD were functional (Figure 2 and Figure 2\u2014figure supplement 1) despite their expression at the cell surface (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "84f65862-d433-4903-9e2f-772a35710ba2",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C62",
+      "claim": "Activating specifically the mGlu2 VFT with DCG-IV, or the mGlu4 VFT with L-AP4 led to G protein signaling of receptor combinations carrying at least one mGlu2 VFT, or one mGlu4 VFT, respectively, as long as the receptor contained a wild-type mGlu4 HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activating specifically the mGlu2 VFT with DCG-IV, or the mGlu4 VFT with L-AP4 led to G protein signaling of receptor combinations carrying at least one mGlu2 VFT, or one mGlu4 VFT, respectively, as long as the receptor contained a wild-type mGlu4 HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "5ea5e1c2-eaa7-4edb-8205-410d7b9f1aba",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C63",
+      "claim": "No response could be generated with these agonists in receptor combinations carrying a mutated mGlu4 HD.",
+      "claim_type": "EXPLICIT",
+      "source": "No response could be generated with these agonists in receptor combinations carrying a mutated mGlu4 HD (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "4335e54d-51e1-4897-b9ab-6efc651baadc",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C64",
+      "claim": "Mutating position 521 of the mGlu2 CRD to Cys led to a fully active dimer (mGlu2C).",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that an inter-subunit disulfide bound between a Cys introduced at position 521 of the mGlu2 CRD led to a fully active dimer (mGlu2C) (Huang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "4d02b26e-f9a6-42c5-8b35-5aeef9d4abd0",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C65",
+      "claim": "Mutating the equivalent position in mGlu4 (His523Cys) also generated a fully active receptor (mGlu4C).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the equivalent position in mGlu4 (His523Cys) also generated a fully active receptor (mGlu4C) (Figure 3A), as revealed by the accumulation of inositol monophosphate after LiCl addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "cf9d8835-deb1-46c9-ad7b-9fdcd20d8f9d",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C66",
+      "claim": "When both mGlu2C and mGlu4C were co-expressed, an inter-subunit DTT-sensitive covalent linkage could be demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "When both mGlu2C and mGlu4C were co-expressed, an inter-subunit DTT-sensitive covalent linkage could be demonstrated, providing the natural inter-VFT disulfide bound is mutated (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "0b249b64-ef9d-4dd9-a6dc-5942b1f86f15",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C67",
+      "claim": "The receptor combination with both mGlu2C and mGlu4C displayed a full constitutive activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a receptor combination also displayed a full constitutive activity (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "fdc04c3b-e8f2-4977-94e8-bf0d360ccb68",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C68",
+      "claim": "The high constitutive or glutamate-induced signaling could be observed in the heterodimer combinations containing a wild-type mGlu4 HD but not in those in which the mGlu4 HD contained the FS mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In that case again, the high constitutive or glutamate-induced signaling could be observed in the heterodimer combinations containing a wild-type mGlu4 HD but not in those in which the mGlu4 HD contained the FS mutation (Figure 3A) despite a correct expression of all constructs (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "42594e43-2b05-4e5c-9893-c71b6f9f8786",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C69",
+      "claim": "Any ways the dimeric ECD of the mGlu2-4 heterodimer is activated the mGlu4 HD is always responsible for G protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results demonstrate that any ways the dimeric ECD of the mGlu2-4 heterodimer is activated the mGlu4 HD is always responsible for G protein activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "57dfcbfd-d49e-443b-98b7-64f3bbc0decf",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C70",
+      "claim": "The asymmetric activity of the mGlu2-4 HD dimer is an intrinsic property of this membrane part of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that the asymmetric activity of the mGlu2-4 HD dimer is an intrinsic property of this membrane part of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e11566c1-1599-4df4-858d-cd13cd8a0aab",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C71",
+      "claim": "MNI137 is an mGlu2 NAM known to stabilize the mGlu2 HD in its inactive conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used MNI137, an mGlu2 NAM (Hemstapat et al., 2007) known to stabilize the mGlu2 HD in its inactive conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "1232fc06-5968-4e69-b6ac-c67c3239f7f6",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C72",
+      "claim": "MNI137 partially inhibited mGlu2-4 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MNI137 partially inhibited mGlu2-4 heterodimer while it largely inhibited the response of the mGlu2 homodimer, whether the dimer was activated by glutamate (Figure 4A, Figure 4\u2014source data 1) or was constitutively active through the inter-CRD disulfide bridge (Figure 4B, Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "3426709a-aef1-4a63-8175-2246c6f95135",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C73",
+      "claim": "MNI137 largely inhibited the response of the mGlu2 homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MNI137 partially inhibited mGlu2-4 heterodimer while it largely inhibited the response of the mGlu2 homodimer, whether the dimer was activated by glutamate (Figure 4A, Figure 4\u2014source data 1) or was constitutively active through the inter-CRD disulfide bridge (Figure 4B, Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "109f9383-86b4-483c-9a43-5cb57dd3538a",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C74",
+      "claim": "Similar data were obtained in a receptor combination in which the mGlu2 subunit is incapable of G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, similar data were obtained in a receptor combination in which the mGlu2 subunit is incapable of G protein coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "7846be02-3eef-4a80-aad0-12f9f3add208",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C75",
+      "claim": "A conformational change in the mGlu2 HD prevented by MNI137 binding is required to fully activate the mGlu4 HD.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that a conformational change in the mGlu2 HD prevented by MNI137 binding is required to fully activate the mGlu4 HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8b3b73d8-ad7d-4261-9fcd-77ba90f57a3a",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C76",
+      "claim": "MNI137 blocked mGlu2-4 heterodimer signaling induced by either DCG-IV or L-AP4 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that MNI137 blocked mGlu2-4 heterodimer signaling induced by either DCG-IV or L-AP4 respectively whereas MNI137 inhibited only partially signaling induced by the combination of DCG IV and L-AP4 as observed with glutamate (Figure 4A,C, Figure 4\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "4cfd70d8-42c1-4bb4-b7be-2aad4e6b73f6",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C77",
+      "claim": "MNI137 inhibited only partially signaling induced by the combination of DCG IV and L-AP4 as observed with glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that MNI137 blocked mGlu2-4 heterodimer signaling induced by either DCG-IV or L-AP4 respectively whereas MNI137 inhibited only partially signaling induced by the combination of DCG IV and L-AP4 as observed with glutamate (Figure 4A,C, Figure 4\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "f2b511fa-1827-420a-98d7-4fc14205d2c1",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C78",
+      "claim": "mGlu2 HD plays a prominent role in activating mGlu4 HD when only one VFT is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed the prominent role of mGlu2 HD in activating mGlu4 HD when only one VFT is activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "17f7c1e8-0f5b-4057-be6e-d09161047e87",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C79",
+      "claim": "Activation of both VFTs with DCG-IV in receptor combinations containing two mGlu2 VFTs is only partially inhibited by MNI137, with a smaller inhibition (39.2 \u00b1 4.7%, n = 3) when both CRDs are from mGlu2, compared to the situation where the mGlu4 HD is associated with the mGlu4 CRD (64.3 \u00b1 3.8% inhibition, n = 3, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this conclusion, activation of both VFTs with DCG-IV in receptor combinations containing two mGlu2 VFTs is only partially inhibited by MNI137, with a smaller inhibition (39.2 \u00b1 4.7%, n = 3) when both CRDs are from mGlu2, compared to the situation where the mGlu4 HD is associated with the mGlu4 CRD (64.3 \u00b1 3.8% inhibition, n = 3, p<0.05) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "1f9b3d7c-5744-401b-9e43-25092efee416",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C80",
+      "claim": "OptoGluNAM4.1 is an mGlu4 NAM that prevents mGlu4 HD activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We first analyzed the effect of an mGlu4 NAM (OptoGluNAM4.1) that we recently reported to prevent mGlu4 HD activation (Rovira et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "633a31d0-65aa-4e3b-b6e6-dfca661a6d54",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C81",
+      "claim": "OptoGluNAM4.1, while inhibiting agonist-mediated mGlu4 activity, had no effect on the mGlu2-4 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this compound, while inhibiting agonist-mediated mGlu4 activity (Rovira et al., 2016), had no effect on the mGlu2-4 heterodimer (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "19d673c8-4880-4705-b75e-b9397649a866",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C82",
+      "claim": "When using an mGlu2-4 combination in which the mGlu4 HD is unable to activate G protein, the addition of OptoGluNAM4.1 allowed glutamate to generate a signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, when using an mGlu2-4 combination in which the mGlu4 HD is unable to activate G protein, then a heterodimer unable to activate G proteins, the addition of OptoGluNAM4.1 allowed glutamate to generate a signal (Figure 5A, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e7f643d4-c7dc-4ab8-ac8f-45ab49e77a3b",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C83",
+      "claim": "By preventing mGlu4 HD to reach its active state, mGlu2 HD can take over for G protein activation in the heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, by preventing mGlu4 HD to reach its active state, mGlu2 HD can take over for G protein activation in the heterodimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "a631c8c1-def6-49c7-9bf2-1e995280f3e9",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C84",
+      "claim": "The mGlu2 PAM LY487379 had no significant effect on the mGlu2-4 heterodimer signaling capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "This compound had no significant effect on the mGlu2-4 heterodimer signaling capacity (Figure 5B, Figure 5\u2014source data 1) or on the mGlu2-4 heterodimer mutated in mGlu2 HD (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8d3f70ae-6e07-49bc-8c05-ed83801b8b23",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C85",
+      "claim": "On the non-functional mGlu2-4 combination where the mGlu4 HD is mutated, the mGlu2 PAM LY487379 allowed glutamate to activate G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, on the non-functional mGlu2-4 combination where the mGlu4 HD is mutated, the mGlu2 PAM LY487379 allowed glutamate to activate G proteins, therefore revealing a possible coupling of the mGlu2 HD in this heterodimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "2e174b65-de43-4129-8737-47f4b0cef1bd",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C86",
+      "claim": "Under normal conditions, the coupling of mGlu2-4 is mediated by mGlu4 HD, but the mGlu2 HD can still generate signaling providing its activation is facilitated by a PAM, or by the inhibition of mGlu4 HD with a NAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data revealed that under normal conditions, the coupling of mGlu2-4 is mediated by mGlu4 HD, but the mGlu2 HD can still generate signaling providing its activation is facilitated by a PAM, or by the inhibition of mGlu4 HD with a NAM (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "447d3632-08f2-4174-ad4c-b815bb3d446c",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C87",
+      "claim": "The asymmetric activation of the mGlu2-4 HDs is not the consequence of the presence of the C1-C2 intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirmed that the asymmetric activation of the mGlu2-4 HDs is not the consequence of the presence of the C1-C2 intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e66543e4-f254-4e6d-a825-075ac5476797",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C88",
+      "claim": "In all heterodimers made of mGlu2 or mGlu3 associated with any of the group-III mGluRs (mGlu4, 6, 7 and 8), the group-III subunit is responsible for G protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 6C\u2013F and Figure 6\u2014figure supplement 2, similar data were obtained with any of these 4 types of heterodimers for mGlu2 and for mGlu3. These data indicate that in all these cases, the group-III subunit is responsible for G protein activation in these heterodimers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C\u2013F and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "965a1f68-ffb9-46cf-9f2c-b9b00cc41517",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C89",
+      "claim": "The mGlu2 NAM, MNI137, inhibited signaling of all heterodimers made of mGlu2 or mGlu3 associated with any of the group-III mGluRs.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed with the mGlu2-4 heterodimer (Figure 4), the mGlu2 NAM, MNI137, inhibited signaling of all these heterodimers (Figure 6C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "5c3364d7-5fdd-403f-b05f-4f11fb6a5138",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C90",
+      "claim": "The mGlu2 HD, though not directly involved in G protein coupling, is important to allow the group-III subunit to signal in these heterodimeric receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the mGlu2 HD, though not directly involved in G protein coupling, being important to allow the group-III subunit to signal in these heterodimeric receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "6c67944c-f94f-49e0-afd4-aaeb771f124d",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C91",
+      "claim": "In the mGlu2-4 heterodimer, only the mGlu4 subunit activates G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed important information on how two G protein-activating units communicate within a heterodimeric complex. We found that in the mGlu2-4 heterodimer, only the mGlu4 subunit activates G proteins, and we revealed a complex allosteric interaction between the two HDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "0b5d16a2-4c40-45bf-baaf-d18f4d92baf9",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C92",
+      "claim": "There is a complex allosteric interaction between the two HDs in the mGlu2-4 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed important information on how two G protein-activating units communicate within a heterodimeric complex. We found that in the mGlu2-4 heterodimer, only the mGlu4 subunit activates G proteins, and we revealed a complex allosteric interaction between the two HDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "45210c1f-e500-4c9b-af38-c68cea3b3d4b",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C93",
+      "claim": "The mGlu2 subunit retains its ability to signal providing its activation is favored using mGlu2 PAMs, or preventing the activation of mGlu4 HD with a NAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the mGlu2 subunit retains its ability to signal providing its activation is favored using mGlu2 PAMs, or preventing the activation of mGlu4 HD with a NAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "b8c7d064-a866-4c9b-aaae-52788016c9ae",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C94",
+      "claim": "Even in the mGlu homodimers, only one subunit is active at a time, although in that case, each subunit has the same probability of being active.",
+      "claim_type": "EXPLICIT",
+      "source": "Such asymmetric activation of a GPCR dimer has often been observed (Vilardaga et al., 2008; Han et al., 2009; Galvez et al., 2001; Duthey et al., 2002; Levoye et al., 2006; Xu et al., 2004). Even in the mGlu homodimers, only one subunit is active at a time, although in that case, each subunit has the same probability of being active (Hlavackova et al., 2012; Hlavackova et al., 2005; Goudet et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e700bf61-2636-4ca8-9929-282a46fdb047",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C95",
+      "claim": "For the heterodimeric GABAB and T1R taste receptors, one subunit only is responsible for G protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the well-characterized heterodimeric GPCRs, such as the GABAB and the T1R taste receptors, also one subunit only is responsible for G protein activation (Galvez et al., 2001; Duthey et al., 2002; Xu et al., 2004), although this was assumed to result from the inability of the other subunit to signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "7c74aca2-e5d6-4f54-98bd-73f826ce2793",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C96",
+      "claim": "The inability of signaling of one subunit may result from an inhibitory effect of the other subunit while in its fully active state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that instead, the inability of signaling of one subunit may result from an inhibitory effect of the other subunit while in its fully active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8797b28b-20d4-40ff-a023-546d629d62d0",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C97",
+      "claim": "The GABAB1 subunit, not involved in coupling in the heterodimer, has been reported to signal when expressed alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This is indeed likely the case for the GABAB receptor for which the GABAB1 subunit, not involved in coupling in the heterodimer, has been reported to signal when expressed alone (Baloucoune et al., 2012; Richer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "bb2cbbcb-df79-48c8-9a0e-757851d276f9",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C98",
+      "claim": "Similar asymmetric coupling has been reported for class A GPCR heterodimers, where the activation of one receptor prevents the activation of the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar asymmetric coupling has also been reported for class A GPCR heterodimers, where the activation of one receptor prevents the activation of the other (Vilardaga et al., 2008; Han et al., 2009; Levoye et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "aa8aa2e1-afa8-4e81-8b3b-65486db5c5fc",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C99",
+      "claim": "There is a strong negative cooperativity between the HDs in a dimeric GPCR complex, where the activation of one subunit suppresses the ability of the other to signal.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations reinforce the idea of a strong negative cooperativity between the HDs in a dimeric GPCR complex, where the activation of one subunit suppresses the ability of the other to signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "09e7ae9d-b069-4029-bc28-ef056ce79526",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C100",
+      "claim": "Numerous studies report negative cooperativity in agonist binding on dimeric GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is further supported by numerous studies reporting negative cooperativity in agonist binding on dimeric GPCRs (Albizu et al., 2010; Urizar et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "bb66ec01-31a8-42ec-a57b-9d56677e2121",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C101",
+      "claim": "The coupling efficacy of mGlu4 homodimer is lower than that of mGlu2.",
+      "claim_type": "EXPLICIT",
+      "source": "While mGlu4 homodimer coupling efficacy measured is lower than that of mGlu2, it is interesting to note that the coupling efficacy of mGlu2-4 heterodimer is similar to that of mGlu2 receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "c1139ca6-4d85-491b-a9e9-b64692b5ef7d",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C102",
+      "claim": "The coupling efficacy of mGlu2-4 heterodimer is similar to that of mGlu2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "While mGlu4 homodimer coupling efficacy measured is lower than that of mGlu2, it is interesting to note that the coupling efficacy of mGlu2-4 heterodimer is similar to that of mGlu2 receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "7358a1c9-2cd6-4148-9001-1150e5fc64e1",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C103",
+      "claim": "The mGlu2 subunit potentiates mGlu4 efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Because in both mGlu4 and mGlu2-4, the G protein activation is mediated by the mGlu4 HD, this means that the mGlu2 subunit potentiates mGlu4 efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "47f52944-f8dd-4d29-82a4-7259c109c218",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C104",
+      "claim": "The low coupling efficacy of mGlu4 homodimers may be the consequence of a weaker action of the mGlu4 ECD dimer on the HDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a low coupling efficacy of mGlu4 homodimers may well be the consequence of a weaker action of the mGlu4 ECD dimer on the HDs, consistent with the weaker coupling of heterodimers containing two mGlu4 ECDs (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "dec237f7-2ed0-4f6d-846d-53c616d9106d",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C105",
+      "claim": "The mGlu2 HD likely changes its conformation to exert a positive effect on mGlu4 HD activation, even though this conformation is not sufficient for G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the mGlu2 HD likely changes its conformation to exert this positive effect, even though this conformation is not sufficient for G protein coupling (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "ce7a2679-2214-42a6-95f2-767ae28c9adc",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C106",
+      "claim": "The action of the mGlu2 HD is even more prominent if the VFT dimer is asymmetrically activated, with only one VFT occupied by an agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an action of the mGlu2 HD is even more prominent if the VFT dimer is asymmetrically activated, with only one VFT occupied by an agonist (Figure 7, States 3b, 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "2bcdee83-da88-491a-aca2-fedb3802624d",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C107",
+      "claim": "The GABAB1 HD is involved in a direct activation of the GABAB2 HD through an intra-molecular conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "They are however perfectly in line with the role of the GABAB1 HD in the activation process of the heterodimeric GABAB receptor, the latter being involved in a direct activation of the GABAB2 HD through an intra-molecular conformational change (Monnier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "f1422044-4821-4c0d-87f5-3223a5788dc3",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C108",
+      "claim": "The activation of one HD within the dimer is controlled by the reorientation of the VFTs with an efficient coupling when the reorientation is symmetric (both VFTs activated), and a less efficient coupling in case only one VFT is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "The first one is by the reorientation of the VFTs with an efficient coupling when the reorientation is symmetric (both VFTs activated), and a less efficient coupling in case only one VFT is activated (Moreno Delgado et al., 2017; Kniazeff et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "cb5b18b1-5aa1-4979-8206-fd236236120e",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C109",
+      "claim": "The sequence of the CRDs that link the VFTs to the HDs plays a role in coupling efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the sequence of the CRDs that link the VFTs to the HDs also plays a role, as indicated here by the differential coupling efficacies of receptor combinations containing either the mGlu2 CRD or the mGlu4 CRD (Figure 2, Figure 2\u2014figure supplement 1, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2, Figure 2\u2014figure supplement 1, and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "3aacf9ce-9b5d-41e1-9f03-046988bd2129",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C110",
+      "claim": "The second pathway of HD activation comes from a conformational change in the associated HD likely through a direct interaction between the two HDs in the dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The second pathway comes from a conformational change in the associated HD likely through a direct interaction between the two HDs in the dimer, consistent with our previous data with the heterodimeric GABAB receptor (Monnier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "730e203d-f83e-4c1a-8d21-a6f6f2b74340",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C111",
+      "claim": "The second component of HD activation is higher when the first, VFT mediated, is weak.",
+      "claim_type": "EXPLICIT",
+      "source": "The second component is higher when the first, VFT mediated, is weak, due either to the activation of only one VFT (Figure 4), or to specific combinations of the CRDs (Figure 2, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4, Figure 2, and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "7019161c-9e7f-41ef-9d1b-c30a498e91bd",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C112",
+      "claim": "Allosteric interaction between HDs most likely results from a contact between the two HDs via an interface that can communicate information from one HD to the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Such allosteric interaction most likely results from a contact between the two HDs via an interface that can communicate information from one HD to the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "01691679-9420-4ae5-9089-57da778b558b",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C113",
+      "claim": "Both HDs in a class C GPCR contact each other through TM4 and 5 in the basal state.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we reported that, even though both HDs in a class C GPCR contact each other through TM4 and 5 in the basal state, as also reported for many class A GPCR dimers (Guo et al., 2005; Manglik et al., 2012), we surprisingly identified TM6 as being involved in the dimer interface of the active receptor dimer (Xue et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "04b44947-e2cf-4ed9-9d14-167ced139b35",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C114",
+      "claim": "TM6 is involved in the dimer interface of the active receptor dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we reported that, even though both HDs in a class C GPCR contact each other through TM4 and 5 in the basal state, as also reported for many class A GPCR dimers (Guo et al., 2005; Manglik et al., 2012), we surprisingly identified TM6 as being involved in the dimer interface of the active receptor dimer (Xue et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "476ff42c-ad2a-48c8-ba39-f856071217f8",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C115",
+      "claim": "TM6 is the TM that moves the most during class A GPCR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "TM6 is the TM that moves the most during class A GPCR activation (Rasmussen et al., 2011a; Rasmussen et al., 2011b), also likely in class C GPCRs (Pin and Bettler, 2016) for which the allosteric coupling between both HDs in a GPCR dimer is of fundamental mechanistic importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "d7b0b31b-85f6-4ad5-84a7-3f11c2aded22",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C116",
+      "claim": "It is possible, using small molecules to reorient the G protein coupling from one subunit to the other \u2013 i.e. from the mGlu4 HD to the mGlu2 HD in the mGlu2-4 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Another major observation is that it is possible, using small molecules to reorient the G protein coupling from one subunit to the other \u2013 i.e. from the mGlu4 HD to the mGlu2 HD in the mGlu2-4 heterodimer (Figure 7, States 4a, 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "cb76223a-b647-4bc4-aff9-06e53b64f59b",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C117",
+      "claim": "By either preventing the activation of the mGlu4 HD with an mGlu4 specific NAM, or by stabilizing the mGlu2 HD in its active conformation with a specific mGlu2 PAM, the G protein coupling is transferred from the mGlu4 to the mGlu2 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by either preventing the activation of the mGlu4 HD with an mGlu4 specific NAM (Figure 7, States 4b), or by stabilizing the mGlu2 HD in its active conformation with a specific mGlu2 PAM (Figure 7, States 4b), the G protein coupling is transferred from the mGlu4 to the mGlu2 subunit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "40316f3a-8fa0-4b1f-9b5f-564706c7801b",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C118",
+      "claim": "The mGlu4 HD is likely more prone to reach a G protein activating state than the mGlu2 HD.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the mGlu4 HD is likely more prone to reach a G protein activating state than the mGlu2 HD, and the fully active form of mGlu4 HD prevents the mGlu2 HD from reaching a G protein activating state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "526b5605-0831-45b6-9c99-f9f86ca67688",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C119",
+      "claim": "The fully active form of mGlu4 HD prevents the mGlu2 HD from reaching a G protein activating state.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the mGlu4 HD is likely more prone to reach a G protein activating state than the mGlu2 HD, and the fully active form of mGlu4 HD prevents the mGlu2 HD from reaching a G protein activating state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "fd43f604-60d3-4e58-b61c-05685faf3a9b",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C120",
+      "claim": "Allosteric modulators are expected to have less side effects because they target a site that is under less pressure during evolution, such that it is possible to identify subtype selective molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "There is much interest in the development of allosteric modulators, since these are expected to have less side effects for several reasons (Changeux and Christopoulos, 2016; Conn et al., 2014; Foster and Conn, 2017; May et al., 2007). Such small molecules target a site that is under less pressure during evolution, such that it is possible to identify subtype selective molecules, in contrast to compound acting in the orthosteric binding site highly conserved between homologous receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "cf061d3e-eabd-4608-b92b-7aa7d63c5383",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C121",
+      "claim": "PAMs do not constantly activate the receptor, then do not favor receptor desensitization and internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PAMs do not constantly activate the receptor, then do not favor receptor desensitization and internalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about PAMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "3bf38723-eaff-4f19-a761-e029b6e1ee04",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C122",
+      "claim": "PAMs enhance the action of endogenous ligands, they increase the response when and where needed for an improved physiological response.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, because they enhance the action of endogenous ligands, they increase the response when and where needed for an improved physiological response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about PAMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "b555c846-8f70-4ea8-b803-5cacfa75670f",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C123",
+      "claim": "Allosteric modulators have the ability to control the asymmetric activation of a GPCR dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we reveal a novel property of such small molecules: their ability to control the asymmetric activation of a GPCR dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "58b76db3-4363-40dc-8498-2a048bf1d6d4",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C124",
+      "claim": "The present study illustrates the complex allosteric interaction occurring between two associated G protein-activating units, with both positive and negative interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the present study illustrates the complex allosteric interaction occurring between two associated G protein-activating units, with both positive and negative interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "8f0dab71-e3a6-4e13-901b-96303b248f90",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "claim_id": "C125",
+      "claim": "A conformational change in one subunit is needed for a full G protein activation by its associated subunit, although the interaction also prevents the first subunit from activating G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a conformational change in one subunit is needed for a full G protein activation by its associated subunit, although the interaction also prevents the first subunit from activating G proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In mGlu2-4 heterodimers, G protein activation is exclusively mediated by the mGlu4 heptahelical domain (HD), not the mGlu2 HD. This was demonstrated using F\u2192S mutations that abolish G protein coupling: heterodimers with mutated mGlu4 HD were non-functional, while those with mutated mGlu2 HD retained activity comparable to wild-type heterodimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C63 provide converging experimental evidence using FS mutations, selective agonists (DCG-IV, L-AP4), and multiple receptor constructs (C1/C2 combinations, domain swaps) all consistently showing mGlu4 HD is required for signaling. The data include proper controls (expression levels in C48, C59) and multiple independent approaches (Figures 1-2), strongly supporting the asymmetric transduction mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The mGlu2 HD undergoes a conformational change that is essential for full activation of the mGlu4 HD in the heterodimer, but this conformational change is not sufficient for direct G protein activation. This was demonstrated using the mGlu2 NAM MNI137, which partially inhibited mGlu2-4 heterodimer activity and completely blocked signaling when only one VFT was activated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79 provide dose-response data (Figure 4) showing differential inhibition by MNI137 depending on activation state (one vs. two VFTs activated). The partial inhibition pattern and dependence on VFT activation state provide strong evidence for allosteric coupling between the HDs. Statistical significance is reported (p<0.05) and controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Allosteric modulators can reorient the asymmetric G protein coupling in mGlu2-4 heterodimers from mGlu4 HD to mGlu2 HD. An mGlu4 NAM (OptoGluNAM4.1) or mGlu2 PAM (LY487379) enabled the otherwise non-functional mGlu2 HD to activate G proteins when the mGlu4 HD was inactivated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 demonstrate pharmacological control of asymmetry using complementary approaches (NAM blocking mGlu4, PAM enhancing mGlu2). Figure 5 shows that non-functional heterodimers (with mutated mGlu4) become functional upon modulator addition. This represents a novel finding with clear experimental support, though the mechanism would benefit from additional structural or biophysical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "1ef4b3dd-47b9-46af-8f05-dc9765060f76",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The asymmetric transduction mechanism generalizes to all heterodimers formed between group-II mGluRs (mGlu2/3) and group-III mGluRs (mGlu4/6/7/8), where the group-III subunit is always responsible for G protein activation. This was demonstrated using wild-type receptors without C1/C2 modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 are supported by systematic testing across multiple heterodimer combinations (Figure 6C-F, Figure 6\u2014figure supplement 2). The use of FS mutations in co-expression experiments with selective agonists provides clear evidence. Importantly, C87 confirms the findings are not artifacts of the C1/C2 system. However, sample sizes (n\u22653) are modest and some heterodimer combinations show variable expression levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A quality control system using complementary coiled-coil domains (C1/C2) and retention signals enables specific cell surface expression of mGlu2-4 heterodimers while excluding homodimers. The engineered receptors retain functional G protein coupling with expected agonist selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 describe the experimental system validated by ELISA (Figure 1B) and functional assays (Figure 1C, Figure 1\u2014figure supplement 1). Expression levels are comparable across constructs (C48) and functional responses show expected pharmacology. This is a well-established approach (cited to prior work) appropriately applied here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "9fc7f186-60ae-41af-a2a5-5cd4b4c81a54",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Introducing inter-subunit disulfide bridges in the CRD (mGlu2-L521C/mGlu4-H523C) locks the heterodimer in a constitutively active state. Even in this locked active conformation, only the mGlu4 HD mediates G protein activation, demonstrating that asymmetric HD activation is an intrinsic property of the transmembrane domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by IP accumulation assays (Figure 3A) and western blot confirmation of disulfide bridge formation (Figure 3B). The constitutively active mutants show the same asymmetry as agonist-activated receptors, strengthening the conclusion that asymmetry is intrinsic to the HDs. DTT sensitivity confirms the disulfide bridge mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "16dade13-4b97-4bcd-8113-5949eb13d8c9",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mGlu2-4 heterodimer exhibits coupling efficacy similar to mGlu2 homodimers, which is higher than mGlu4 homodimers. This indicates that the mGlu2 subunit potentiates mGlu4 HD efficacy in the heterodimer, possibly through enhanced ECD-mediated activation or allosteric HD interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 are supported by dose-response data (Figure 1C) showing similar maximal responses for mGlu2 and mGlu2-4 but lower efficacy for mGlu4. Claim C103 is a reasonable inference from C101-C102 given that mGlu4 HD mediates coupling in both cases. However, the mechanistic explanation in C104 is somewhat speculative and would benefit from more direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "6ad33319-18b0-4276-8da9-312b590fb9c9",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study reveals strong allosteric interactions between the two HDs in the mGlu2-4 heterodimer, including both positive cooperativity (mGlu2 HD enhancing mGlu4 HD activation) and negative cooperativity (active mGlu4 HD preventing mGlu2 HD activation). This demonstrates differential intrinsic abilities of the two HDs to reach G protein-activating states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims synthesize the major findings into a mechanistic model. Claims C40-C42 and C92 are well-supported by the experimental data (Figures 4-5). Claims C99, C118-C119, and C124-C125 represent interpretations consistent with the data, though some aspects (e.g., the precise molecular basis of negative cooperativity) remain to be fully elucidated. The model is consistent with prior work on GPCR dimers (C94-C100).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "e25acecb-01ab-4288-9a38-36ecdb8591fd",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HD activation in mGlu heterodimers is controlled by two pathways: (1) VFT reorientation transmitted through the CRDs, with symmetric activation being more efficient than asymmetric, and (2) direct allosteric interactions between the two HDs. The second pathway compensates when the first is weak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C111 are supported by data showing differential coupling efficacies with different VFT/CRD combinations (Figures 2, 4D) and differential effects of MNI137 depending on VFT activation state (Figure 4). Claim C112 is a reasonable mechanistic inference, though direct structural evidence for HD-HD contacts is cited from prior work (C113-C115) rather than demonstrated here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The asymmetric activation observed in mGlu2-4 heterodimers is consistent with broader patterns in GPCR dimers, including mGlu homodimers, GABAB receptors, T1R taste receptors, and class A GPCR heterodimers, where negative cooperativity between subunits is common and one subunit's activation can suppress the other's signaling capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims contextualize the findings within the broader GPCR literature. All are supported by appropriate citations (C49, C94-C98, C100, C107, C113-C115) to prior work. The comparison strengthens the interpretation of the current results and suggests general principles, though the claims themselves represent prior knowledge rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    },
+    {
+      "id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2",
+      "content_id": "6a73b581-bd04-4ebb-81c0-b3e5c155f600",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context on GPCRs, mGluRs, and allosteric modulators, including their importance in cell signaling, classification, dimerization properties, and therapeutic potential. These represent established knowledge from the literature that frames the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C35 and C120-C122 provide background information supported by appropriate citations to prior work. These are accurately represented statements of established knowledge that provide necessary context for the experimental findings. They are not novel findings from this study but are correctly cited and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:27:26.971650Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b38fcce3-68a1-4880-a51f-cce89135c6fd",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "07ea9764-6bfa-4dfa-a196-e03859ddac95",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "a8faccd0-49c4-4910-b99a-6839d522018b",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "33bb81cb-af0b-4bae-85eb-10c7b0aae4d7",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "5457f750-0162-4562-abcb-7975427366f0",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "1754e707-689a-4283-a6e4-930bfe3665d8",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "1ad9f984-b175-40bf-8a62-0e9e8f421fa6",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "984d068e-a5b6-4a58-9f1f-fd61a031f9f6",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "923f8072-2ab5-43bd-b18f-cf62e3189041",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "916d6b1e-8380-423d-87d0-c7b8e1218fb8",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "4c5bce5e-3ab2-4ace-a213-dda1dfebf4fa",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "e6d034f4-48d0-4219-81cd-d7bd0ae55948",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "a4d53e6c-b6fd-437f-9a52-d79591cc4f19",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "84f65862-d433-4903-9e2f-772a35710ba2",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "5ea5e1c2-eaa7-4edb-8205-410d7b9f1aba",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "42594e43-2b05-4e5c-9893-c71b6f9f8786",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "6c67944c-f94f-49e0-afd4-aaeb771f124d",
+      "result_id": "e90c071f-ffe2-4c07-9778-63252ad7b9e4"
+    },
+    {
+      "claim_id": "86a03fd8-a747-428a-8fdd-92991f6a5c32",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "03e7921c-bbc0-47c4-915c-14a5a96af493",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "d5090617-fbc9-47ef-80f8-43ede2327fc0",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "e11566c1-1599-4df4-858d-cd13cd8a0aab",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "1232fc06-5968-4e69-b6ac-c67c3239f7f6",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "3426709a-aef1-4a63-8175-2246c6f95135",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "109f9383-86b4-483c-9a43-5cb57dd3538a",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "7846be02-3eef-4a80-aad0-12f9f3add208",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "8b3b73d8-ad7d-4261-9fcd-77ba90f57a3a",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "4cfd70d8-42c1-4bb4-b7be-2aad4e6b73f6",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "f2b511fa-1827-420a-98d7-4fc14205d2c1",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "17f7c1e8-0f5b-4057-be6e-d09161047e87",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "7358a1c9-2cd6-4148-9001-1150e5fc64e1",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "dec237f7-2ed0-4f6d-846d-53c616d9106d",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "ce7a2679-2214-42a6-95f2-767ae28c9adc",
+      "result_id": "ca0e58b7-5421-40db-a5c6-d5ebdf6cb7b1"
+    },
+    {
+      "claim_id": "512d4ead-7bf1-42a3-be78-0281d9ea179c",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "4e9c21d6-9db5-4376-a0e3-e41a9d8db5e4",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "fd31c934-9abf-4a1a-a29c-7548318a5c61",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "1f9b3d7c-5744-401b-9e43-25092efee416",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "633a31d0-65aa-4e3b-b6e6-dfca661a6d54",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "19d673c8-4880-4705-b75e-b9397649a866",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "e7f643d4-c7dc-4ab8-ac8f-45ab49e77a3b",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "a631c8c1-def6-49c7-9bf2-1e995280f3e9",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "8d3f70ae-6e07-49bc-8c05-ed83801b8b23",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "2e174b65-de43-4129-8737-47f4b0cef1bd",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "45210c1f-e500-4c9b-af38-c68cea3b3d4b",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "d7b0b31b-85f6-4ad5-84a7-3f11c2aded22",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "cb76223a-b647-4bc4-aff9-06e53b64f59b",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "b555c846-8f70-4ea8-b803-5cacfa75670f",
+      "result_id": "af369f61-a1d2-4f06-8da8-d11ae14b94d6"
+    },
+    {
+      "claim_id": "e66543e4-f254-4e6d-a825-075ac5476797",
+      "result_id": "1ef4b3dd-47b9-46af-8f05-dc9765060f76"
+    },
+    {
+      "claim_id": "965a1f68-ffb9-46cf-9f2c-b9b00cc41517",
+      "result_id": "1ef4b3dd-47b9-46af-8f05-dc9765060f76"
+    },
+    {
+      "claim_id": "5c3364d7-5fdd-403f-b05f-4f11fb6a5138",
+      "result_id": "1ef4b3dd-47b9-46af-8f05-dc9765060f76"
+    },
+    {
+      "claim_id": "447d3632-08f2-4174-ad4c-b815bb3d446c",
+      "result_id": "1ef4b3dd-47b9-46af-8f05-dc9765060f76"
+    },
+    {
+      "claim_id": "b97c43cb-a018-4042-a8e6-e5340ecc9b5d",
+      "result_id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3"
+    },
+    {
+      "claim_id": "4a4f01ce-3967-478f-b174-7fb660668b9c",
+      "result_id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3"
+    },
+    {
+      "claim_id": "17fd1760-6be8-48db-8cd9-3a45d60a31c4",
+      "result_id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3"
+    },
+    {
+      "claim_id": "22bdb7c1-ec02-40f5-a675-efecb542f8da",
+      "result_id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3"
+    },
+    {
+      "claim_id": "eb3bee49-7f37-43de-b10f-962f24737b0c",
+      "result_id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3"
+    },
+    {
+      "claim_id": "5be6d298-bdde-44dc-823f-a2406455b2e6",
+      "result_id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3"
+    },
+    {
+      "claim_id": "e264c839-3bab-4e09-b5cb-02349bc22924",
+      "result_id": "a3210274-857a-4ae2-a8ad-69d03adf3fb3"
+    },
+    {
+      "claim_id": "4335e54d-51e1-4897-b9ab-6efc651baadc",
+      "result_id": "9fc7f186-60ae-41af-a2a5-5cd4b4c81a54"
+    },
+    {
+      "claim_id": "4d02b26e-f9a6-42c5-8b35-5aeef9d4abd0",
+      "result_id": "9fc7f186-60ae-41af-a2a5-5cd4b4c81a54"
+    },
+    {
+      "claim_id": "cf9d8835-deb1-46c9-ad7b-9fdcd20d8f9d",
+      "result_id": "9fc7f186-60ae-41af-a2a5-5cd4b4c81a54"
+    },
+    {
+      "claim_id": "0b249b64-ef9d-4dd9-a6dc-5942b1f86f15",
+      "result_id": "9fc7f186-60ae-41af-a2a5-5cd4b4c81a54"
+    },
+    {
+      "claim_id": "fdc04c3b-e8f2-4977-94e8-bf0d360ccb68",
+      "result_id": "9fc7f186-60ae-41af-a2a5-5cd4b4c81a54"
+    },
+    {
+      "claim_id": "57dfcbfd-d49e-443b-98b7-64f3bbc0decf",
+      "result_id": "9fc7f186-60ae-41af-a2a5-5cd4b4c81a54"
+    },
+    {
+      "claim_id": "bb66ec01-31a8-42ec-a57b-9d56677e2121",
+      "result_id": "16dade13-4b97-4bcd-8113-5949eb13d8c9"
+    },
+    {
+      "claim_id": "c1139ca6-4d85-491b-a9e9-b64692b5ef7d",
+      "result_id": "16dade13-4b97-4bcd-8113-5949eb13d8c9"
+    },
+    {
+      "claim_id": "7358a1c9-2cd6-4148-9001-1150e5fc64e1",
+      "result_id": "16dade13-4b97-4bcd-8113-5949eb13d8c9"
+    },
+    {
+      "claim_id": "47f52944-f8dd-4d29-82a4-7259c109c218",
+      "result_id": "16dade13-4b97-4bcd-8113-5949eb13d8c9"
+    },
+    {
+      "claim_id": "9adb353c-0c15-4bea-976a-b663a3a02e46",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "ca379e5d-a383-4e37-b532-f6db3d2c85f0",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "71b06870-26c2-49d6-92b0-a73fcafa2bd2",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "0b5d16a2-4c40-45bf-baaf-d18f4d92baf9",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "aa8aa2e1-afa8-4e81-8b3b-65486db5c5fc",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "40316f3a-8fa0-4b1f-9b5f-564706c7801b",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "526b5605-0831-45b6-9c99-f9f86ca67688",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "58b76db3-4363-40dc-8498-2a048bf1d6d4",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "8f0dab71-e3a6-4e13-901b-96303b248f90",
+      "result_id": "6ad33319-18b0-4276-8da9-312b590fb9c9"
+    },
+    {
+      "claim_id": "f1422044-4821-4c0d-87f5-3223a5788dc3",
+      "result_id": "e25acecb-01ab-4288-9a38-36ecdb8591fd"
+    },
+    {
+      "claim_id": "cb5b18b1-5aa1-4979-8206-fd236236120e",
+      "result_id": "e25acecb-01ab-4288-9a38-36ecdb8591fd"
+    },
+    {
+      "claim_id": "3aacf9ce-9b5d-41e1-9f03-046988bd2129",
+      "result_id": "e25acecb-01ab-4288-9a38-36ecdb8591fd"
+    },
+    {
+      "claim_id": "730e203d-f83e-4c1a-8d21-a6f6f2b74340",
+      "result_id": "e25acecb-01ab-4288-9a38-36ecdb8591fd"
+    },
+    {
+      "claim_id": "7019161c-9e7f-41ef-9d1b-c30a498e91bd",
+      "result_id": "e25acecb-01ab-4288-9a38-36ecdb8591fd"
+    },
+    {
+      "claim_id": "6a9289aa-507c-4eed-8ae0-6dbd58781b70",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "b8c7d064-a866-4c9b-aaae-52788016c9ae",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "e700bf61-2636-4ca8-9929-282a46fdb047",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "7c74aca2-e5d6-4f54-98bd-73f826ce2793",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "8797b28b-20d4-40ff-a023-546d629d62d0",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "bb2cbbcb-df79-48c8-9a0e-757851d276f9",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "09e7ae9d-b069-4029-bc28-ef056ce79526",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "2bcdee83-da88-491a-aca2-fedb3802624d",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "01691679-9420-4ae5-9089-57da778b558b",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "04b44947-e2cf-4ed9-9d14-167ced139b35",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "476ff42c-ad2a-48c8-ba39-f856071217f8",
+      "result_id": "9e9ef9d2-248b-4770-b23f-4d58d4c0cbda"
+    },
+    {
+      "claim_id": "4b1a44b9-41b7-4a54-85d7-59bf2d54d3d1",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "3c95c366-0b3f-4a3e-b432-06dbd5f42ea5",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "cf48b264-324a-492b-bfe8-6eabb576ab0d",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "a4c1a510-9b4f-4160-8241-1ce2dd38d7b6",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "76b5cff2-223f-47e5-85a7-656d00b51d64",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "8774b94f-64c0-4e64-836d-ffa50c20f21c",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "c1b21d98-64ba-4d59-bec5-67e7427d0b1c",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "7151158c-0fe3-4cd2-9bcb-c27a334a0dfc",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "b864fbfc-03a7-4d74-92e3-929a746c1c57",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "8a52d1fc-5f90-41b5-a4d9-75a4e9728a3a",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "adf35322-2b5c-4b9d-bd20-a52925dfd2ab",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "c1c81f85-b849-4730-bc34-794004ef5af7",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "3d0dbfd0-2246-4f38-8e0b-6f8f1cd6f7c3",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "1372c14e-ba35-43c7-8887-7bf51e8e2386",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "0f72d61f-10cd-474b-a3b5-43c9daa4c1d9",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "8b49655d-c851-428d-986c-1928263b97ca",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "64019b95-8483-4905-9dee-8b1cdce60850",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "e0e64105-7f9f-4fa3-b589-ef52357e76f7",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "a69bbd83-522c-42bb-a06b-e3e871160e11",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "ac8e463e-aec1-4629-97c3-03ec719f0a47",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "3c8ed080-7ad7-4bd1-9f55-f06ab2ccc691",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "a495eb2b-6d6b-4256-9651-6d9bea3fd504",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "f48812ed-f7cb-4f91-bd6b-24596777d304",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "c2b9c1c7-8bd2-4b56-b2b0-3524e4c2c9ca",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "f82da325-014a-479c-8b5c-a2e5314bdf41",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "c022f90e-7ffa-482b-9031-1208e13c1ea2",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "1575b66a-cd9f-4242-af99-d1d73079dec0",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "3a98cfc8-2970-497b-b966-efd35de1a979",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "fd43f604-60d3-4e58-b61c-05685faf3a9b",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "cf061d3e-eabd-4608-b92b-7aa7d63c5383",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    },
+    {
+      "claim_id": "3bf38723-eaff-4f19-a761-e029b6e1ee04",
+      "result_id": "331fb73c-4c4f-4c65-9d06-cb0a8e83bac2"
+    }
+  ],
+  "comparisons": []
+}

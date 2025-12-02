@@ -1,0 +1,1349 @@
+{
+  "submission": {
+    "id": "1e682308-86e4-48bc-a549-d5a40b60884e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:06:18.319530Z",
+    "updated_at": "2025-12-01T20:06:18.319530Z"
+  },
+  "content": [
+    {
+      "id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "submission_id": "1e682308-86e4-48bc-a549-d5a40b60884e",
+      "content_type": "manuscript",
+      "content_text": "# The packing density of a supramolecular membrane protein cluster is controlled by cytoplasmic interactions\n\n## Authors\n\n- Elisa Merklinger<sup>1</sup> ([ORCID: 0000-0002-7257-1895](https://orcid.org/0000-0002-7257-1895))\n- Jan-Gero Schloetel<sup>1</sup>\n- Pascal Weber<sup>1</sup> ([ORCID: 0000-0002-6369-2708](https://orcid.org/0000-0002-6369-2708))\n- Helena Batoulis<sup>1</sup>\n- Sarah Holz<sup>1</sup>\n- Nora Karnowski<sup>2</sup>\n- J\u00e9r\u00f4me Finke<sup>1</sup>\n- Thorsten Lang<sup>1</sup> ([ORCID: 0000-0002-9128-0137](https://orcid.org/0000-0002-9128-0137)) \u2020\n\n### Affiliations\n\n1. Membrane Biochemistry Life and Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany\n2. Chemical Biology Life and Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMolecule clustering is an important mechanism underlying cellular self-organization. In the cell membrane, a variety of fundamentally different mechanisms drive membrane protein clustering into nanometre-sized assemblies. To date, it is unknown whether this clustering process can be dissected into steps differentially regulated by independent mechanisms. Using clustered syntaxin molecules as an example, we study the influence of a cytoplasmic protein domain on the clustering behaviour. Analysing protein mobility, cluster size and accessibility to myc-epitopes we show that forces acting on the transmembrane segment produce loose clusters, while cytoplasmic protein interactions mediate a tightly packed state. We conclude that the data identify a hierarchy in membrane protein clustering likely being a paradigm for many cellular self-organization processes.\n\n## Introduction\n\nMolecular components of cells are organized on the large scale through compartmentalization, but also on the nm- to \u03bcm-scale via self-organization of molecules into clusters. For the clustering of cytosolic or membrane components, interactions must be strong enough to mediate clustering, but at the same\u00a0time they should be weak enough\u00a0to prevent irreversibly forming, cytotoxic aggregates.\n\nA prominent example of such self-organization occurs in the cell membrane, where membrane proteins form microdomains. In the last decade, super-resolution microscopy revealed that such domains are spherical structures with dimensions in the 100 nm range (Lang and Rizzoli, 2010), frequently circumscribed as protein clusters. The identified mechanisms underlying clustering are mostly based on forces mediated by the membrane leaflets. Such include hydrophobic mismatch, lipid wetting, protein-lipid ionic sequestering and depletion attraction forces (for review see Destainville et al., 2016; Recouvreux and Lenne, 2016). However, it was observed that protein isoforms locate to separate clusters (Uhles et al., 2003; Kai et al., 2006; Low et al., 2006), difficult to explain with forces exclusively propagated by the membrane. Therefore, also highly specific protein-protein interactions must contribute to the clustering process.\n\nThe question arises whether all these mechanisms additively shift the equilibrium between free and clustered molecules towards the more clustered state, or whether clustering is a step-wise process with specific mechanisms responsible for defined stages. For example, pre-clustering could be mediated via less specific interactions between the small membrane embedded protein segment and its environment. Then, highly specific interactions involving large protein domains could determine the conformational arrangement of the molecules.\n\nAt present, for most protein clusters not much more is known than their size and composition. One exception is the cluster formed by the SNARE-protein syntaxin 1A, for which a quantitative model is available (Sieber et al., 2007; van den Bogaart et al, 2013). Several approaches show that syntaxin nano-clusters are composed of 50\u201375 molecules, have a size of 50\u201360 nm and exchange molecules with each other (Sieber et al., 2007; Rickman et al., 2010; Knowles et al., 2010; Barg et al., 2010). Syntaxin domains disperse when cholesterol is depleted (Lang et al., 2001; Chamberlain et al., 2001), are dependent on ionic interactions between PIPs (phosphatidylinositol phosphates) and a polybasic stretch that can disrupt (Murray and Tamm, 2009, 2011) or promote (van den Bogaart et al, 2011) clustering, and hydrophobic mismatch is also implicated in clustering (Milovanovic et al., 2015).\n\nHence, forces acting on the transmembrane segment (TMS) play a pivotal role in syntaxin clustering. In fact, the TMS of syntaxin is capable of forming clusters on its own (Sieber et al., 2006). However, the SNARE-motif of the cytoplasmic domain targets free syntaxin molecules to already existing syntaxin clusters and thus slows down syntaxin mobility (Sieber et al., 2007, 2006). This suggests that cytoplasmic interactions increase the time a syntaxin molecule resides in a clustered structure, before it is again released and diffuses to the next cluster. It has been speculated whether these interactions have any consequences on the inner architecture of syntaxin clusters as two different molecule arrangements are conceivable: one assuming that molecules are spaced by a few nanometres, and another one in which the SNARE-motifs of the syntaxins are in direct contact (Sieber et al., 2007). For differentiating between these scenarios, differences in inter-molecule distances in the nanometre-range must be resolved in a large crowd of molecules. Such resolutions are currently not achievable by super-resolution microscopy as PALM/STORM that allow for single molecule localization with a precision in the 10 nm range. Even if resolutions of 1\u20132 nm were achieved, it would be difficult to label all the molecules without employing GFP that due to its own physical extension precludes distances shorter than its barrel extensions (2.4\u20134.2 nm; Orm\u00f6 et al., 1996). Moreover, inter-fluorophore distances in the nm range would cause strong self-quenching, diminishing the signal required for molecule localization.\n\nHere we tackle the question from several angles applying methods that are capable\u00a0of\u00a0sensing loose and tight molecular packing in the nm-range. We find that the N-terminal segment of the SNARE-motif is sufficient for tight packing of syntaxin molecules which form loosely packed clusters in the absence of cytoplasmic interactions. A hierarchical model of syntaxin clustering is discussed.\n\n## Results\n\nSyntaxin 1A has a large N-terminal domain, followed by a linker region and a SNARE-motif connected to a TMS (Figure 1). Many studies investigating syntaxin clustering attach the GFP label to the molecule\u2019s C-terminus. Then, the lateral distribution is investigated directly by super-resolution imaging of fixed samples (Rickman et al., 2010), or indirectly in live cells by interpreting tracks of individual molecules (Barg et al., 2010) or syntaxin\u2019s apparent lateral diffusion (Sieber et al., 2007) in terms of clustering behaviour. In neuronal cells, cytoplasmic interactions restrict the mobility of the molecule, which may either indicate a role of the cytoplasmic domain in the clustering process (Sieber et al., 2007), or reflect interactions with syntaxin\u2019s neuronal binding partner SNAP25 (Ribrault et al., 2011). For better clarification, we study the role of the cytoplasmic domain in a non-neuronal cell line (HepG2 cells) that expresses neither syntaxin 1A nor SNAP25. Two deletion constructs were compared to wild-type syntaxin: syx-\u0394Cyt, lacking essentially the entire cytoplasmic region, and syx-\u0394S, from which a N-terminal portion of the SNARE-motif is deleted (Figure 1). The latter construct is generated to narrow down the interacting segment to the SNARE-motif, as previous findings proposed its involvement in homophilic interactions for clustering (Sieber et al., 2007).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig1-v2.jpg)\n\n**Figure 1.:** Pictogram illustrating the constructs\u2019 domain structure, the botulinum neurotoxin C1 (BoNT/C1) cleavage site and the tag\u00a0positions. In case of the CAAX constructs, the TM domain and parts of the pbs were exchanged for a CAAX box from K-Ras that after prenylation anchors the construct to the plasma membrane. Lower legend; N-terminal short peptide (NTP, grey), globular N-terminal domain (Habc; dark grey), SNARE motif section\u00a0divided into an N- and a C-terminal part (n-SM and c-SM in blue and dark blue, respectively), polybasic stretch (pbs; orange) and the remaining transmembrane region (tmr; red), and the prenylated CAAX-box (yellow). Two types of tags were used, a monomeric variant of GFP or a triple myc-tag, both fused via a 12 amino acid linker to the extracellular site. The myc-tags were attached to the extracellular site to minimise the possibility of intracellular conformational changes masking the epitope of the myc-tag. The CAAX constructs carry the myc-tag at the N-terminus and were comparatively studied with N-terminally myc-tagged syntaxin (not shown). Upper right box, accessibility of the antibody to the myc-tag depends on the molecule packing density.\n\nIt has been reported that syntaxin expressed in non-neuronal cells does not efficiently reach the cell membrane, unless Munc18 is co-expressed (Rowe et al., 1999). To estimate the plasma membrane targeting efficiency of our constructs, we quantified the fraction of the expressed proteins in the plasma membrane by acidic pH-quenching of the fluorescence of their GFP molecules (Patterson et al., 1997) that are extracellularly exposed. In\u00a0addition,\u00a0we used as reference points GFP located at the cytoplasmic site (GFP-SNAP25) that should be resistant to pH changes of the extracellular environment, and a GFP in the endocytic pathway (VAMP8-GFP; Antonin et al., 2000) also located in the lumen of acidic organelles. To reveal GFP fractions in acidic organelles, we applied bafilomycin that specifically inhibits V-ATPases (Bowman et al., 1988), thereby dissipating pH gradients between lysosomal/endosomal compartments and the cytosol. As shown in Figure 2, we find a slight drop of fluorescence for GFP-SNAP25, possibly due to small cell lesions induced by the DMSO solvent (which is observed at concentrations above 0.5%; Qi et al., 2008). VAMP8, as expected, has a large fraction of intracellular fluorescence that increases further after bafilomycin treatment. The non-quenched fluorescence of the syntaxin constructs ranges between 20\u201340% and does not significantly increase after bafilomycin treatment. When the intracellular distribution was alternatively\u00a0analysed by super-resolution microscopy on fixed cells, the variability between the constructs was reduced, which may indicate that optical sectioning microscopy is less capable than pH quenching for resolving intracellular and plasmalemmal fractions (Figure 2\u2014figure supplement 1). Collectively, the data show that not all overexpressed proteins reach the plasma membrane. However, there are only minor differences in the plasma membrane targeting efficiency between the syntaxin variants.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig2-v2.jpg)\n\n**Figure 2.:** HepG2 cells expressing GFP-labelled SNAP25, syntaxin, syx-\u0394S, syx-\u0394Cyt, or VAMP8 were incubated at 37\u00b0C for 45 min (a) without or (b) with 0.2 \u00b5M bafilomycin. The GFP-signal was imaged at pH7.4, followed by another image taken at pH4.3. Images in one column are shown at the same scaling. (c) Remaining cell fluorescence upon acidification is expressed in percent. Values are given as means \u00b1 S.E.M. (n\u00a0=\u00a03 independent experiments; for one experiment values from 16 to 38 cells per construct and condition were averaged).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells expressing either syntaxin-GFP, syx-\u0394S-GFP, syx-\u0394Cyt-GFP, VAMP8-GFP, syntaxin-myc, syx-\u0394S-myc or syx-\u0394Cyt-myc were fixed and permeabilised prior to immunostaining with an antibody raised against the respective tag. The plasma membrane was counterstained with fluorescent labelled concanavalin A (not shown). (a) Images from the GFP-labelled constructs. The upper\u00a0right insets show an x-y overview. Using this overview as reference an x-z slice was imaged every 10 \u00b5m (with reference to these overview images from top to bottom; the individual x-z-slices are shown as image collage) by two colour STED microscopy imaging concanavalin A (Alexa594) and the antibody labelling (Atto647). (b) Fraction of the intracellular signal. Values are given as means \u00b1 SEM (n\u00a0=\u00a02\u20133 independent experiments with 7\u201326 cells per condition).\n\nWhen studying the mobility of the constructs by fluorescence recovery after photobleaching (FRAP), we find increased mobility in the order syntaxin, syx-\u0394S and syx-\u0394Cyt (Figure 3). In these experiments we observed no relation between expression level and mobility for syx-\u0394S and syx-\u0394Cyt, while syntaxin apparently displays a trend towards lower mobility the higher it is expressed (Figure 3d). As the analysed syntaxin-GFP cells tended to be dimmer the effect of the intact SNARE-motif on mobility restriction (Figure\u00a03c)\u00a0is potentially underestimated. In addition to live cells, we also studied the constructs in isolated basal plasma membrane sheets. In this preparation, recovery from intracellular structures can be excluded. We made the same two observations. First, constructs become faster in the same order as in cells, and second, only the mobility of syntaxin tends to be slower at higher expression levels (Figure 4). Therefore, we can safely conclude that also in non-neuronal cells, independent from interactions with SNAP25, an intact SNARE-motif is required for restricting the mobility of syntaxin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig3-v2.jpg)\n\n**Figure 3.:** Comparative fluorescence recovery after photobleaching analysis of GFP-labelled full length syntaxin and the deletion constructs syx-\u0394S and syx-\u0394Cyt (for details see Figure 1). (a) Live cells expressing the indicated constructs are imaged by confocal microscopy at the basal plasma\u00a0membrane. In a squared region of interest (ROI) fluorescence is bleached (compare pre-bleach and post-bleach images). Then images are taken at 1 Hz for several minutes to monitor the recovery of fluorescence in the ROI whose half-time is inversely proportional to the apparent lateral diffusion coefficient (or molecule mobility). Images are shown at the same scalings. (b) Averaged recovery traces from several cells imaged for one experiment. Values are given as means \u00b1 S.D. To better illustrate the traces, only every second point of the measurement is shown. (c) Half-times of recovery obtained by fitting hyperbola functions to traces as shown in (b). Values are given as means \u00b1 S.E.M. (n\u00a0=\u00a03 independent experiments; Kruskal-Wallis one way analysis of variance on ranks (p=0.011; *p<0.05); 8\u201318 cells per construct and experiment). (d) Half-times of recovery were also determined for individual cells. Values obtained from all experiments were plotted versus the pre-bleach intensity (a relative measure for the expression level). Only for full length syntaxin at higher expression levels a trend is\u00a0observed\u00a0towards longer half-times of recovery.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig4-v2.jpg)\n\n**Figure 4.:** (a) Membrane sheets from cells expressing the indicated constructs were used in FRAP experiments as described in Figure 3. Images are shown at the same scalings. (b) Averaged recovery traces from 9 to 15 membrane sheets imaged for one experiment. Values are given as means \u00b1 S.D. Only every second measurement point is shown (c) Half-times of recovery. Values are given as means \u00b1 S.E.M. (n\u00a0=\u00a03 independent experiments; Kruskal-Wallis one way analysis of variance on ranks (p=0.004; **p<0.01); 9\u201317 membrane sheets per construct and experiment). (d) Half-times of recovery from all individual membrane sheets collected from all experiments, plotted versus the pre-bleach intensity. As in intact cells, only full length syntaxin tends to longer half-times of recovery at increased intensity levels.\n\nThough the GFP-molecule was proven to be a suitable tool for studying aspects of syntaxin-clustering, interference with the clustering process cannot be entirely excluded as its physical extensions would impede distances between syntaxin\u2019s C-termini shorter than \u22482.5 nm. To exclude such effects we used the smaller and less globular myc-tag (Figure 1) supposed to generate none or less steric stress while enabling the use of antibodies as probes for packing density (Batoulis et al., 2016). If densely packed, an antibody bound to one myc-tag will prevent binding of additional antibodies to the neighboured myc-tags (Figure 1). Hence, substoichiometric labelling is increased the closer the epitopes are packed in the clustered structures. Likewise, shielding can be attenuated upon looser packing.\n\nFirst, we investigated the lateral distribution of the myc-tagged\u00a0constructs by super-resolution microscopy (for subcellular distribution analysis see Figure 2\u2014figure supplement 1). Because high resolutions in STED microscopy require strong staining intensities, we applied a classical first and secondary antibody staining. As HepG2 cells lack endogenous syntaxin, starting from a zero background the influence of the expression level on clustering can be studied over a wide dynamic range. We find that cluster number per area strongly depends on the average staining intensity of the membrane and is in the order\u00a0of\u00a0magnitude reported previously for neuronal cells (14\u201319 clusters/\u03bcm2; Sieber et al., 2007; Bar-On et al., 2012), whereas increase in cluster intensity and size is less dependent on the average staining intensity (Figure 5c). Spherical clusters are always observed for syntaxin that never yielded as high staining intensities as the other constructs. For syx-\u0394S, at high intensities we\u00a0found\u00a0also elongated structures or even large areas covered by rather homogenous fluorescence (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig5-v2.jpg)\n\n**Figure 5.:** (a) Plasma membrane with stained syntaxin-myc. Left and middle, images taken in the confocal and STED mode, respectively. A region of interest (white box; for magnified view see right panel) was defined for analysing the image intensity in the confocal image (used for plotting in c) and the cluster characteristics in the STED image. (b) Images from the different constructs as indicated, chosen with similar intensities (I\u00a0=\u00a0intensity; values are given in a.u. in the image). (c) Clusters per area, cluster intensity and cluster size, plotted versus the average image intensity. (d) Average cluster size for syntaxin-myc and syx-\u0394S-myc determined under variable experimental conditions. As indicated, samples were stained with antibodies recognizing either the extracellular C-terminus (anti-myc; left graph is a zoom-in view of the right plot in c) or the intracellular N-terminus (anti-HPC1). Apart from CW-STED with a green dye and 600 mW depletion laser intensity\u00a0(left\u00a0panel), pulsed STED with a red dye was employed at 350 or 450 mW depletion laser intensity. Only the overlapping intensity range is shown. Black (syntaxin-myc) and blue (syx-\u0394S-myc) lines indicate the average size. (c and d) Each data point represents one membrane sheet (size and intensity are average values of all clustered structures identified on one membrane sheet). Values from three independent experiments are pooled.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Pulsed STED micrographs of plasma membranes with syx-\u0394S stained by the HPC1-antibody (from left to right the staining intensities increase). Note that clusters occasionally fuse into string-like domains that however could be as well non-resolved clusters. At very high expression levels, individual clusters are either not resolved or indeed dispersed, forming a homogenous distribution. Comparable images of syntaxin and syx-\u0394Cyt cannot be illustrated as syntaxin does not allow for bright staining and syx-\u0394Cyt is lacking the epitope for N-terminal staining, respectively.\n\nAt first glance constructs behave similarly, with a tendency towards larger and brighter clusters upon shortening or\u00a0deleting\u00a0of the SNARE motif (Figure 5c). The small trend in size difference between syntaxin and syx-\u0394S clusters was also noted when a different dye for STED de-excitation is used, and\u00a0also\u00a0when, instead of the myc-tag the N-terminal domain was stained (Figure 5d). Albeit the absolute measured sizes depend on the label and the intensity of the de-excitation laser, we still can conclude that clusters tend to increase their size upon shortening of the SNARE-motif.\n\nThere are two possible explanations for the comparatively dim staining intensities of the syntaxin-myc construct: it may either be expressed at lower levels or the myc epitopes are less accessible for\u00a0antibodies\u00a0than in the other constructs. To examine this further, we comparatively studied transfected cells by microscopy and western blot: while in microscopy epitope accessibility scales with packing density, for western blot analysis cells are lysed, wherefore it is insensitive to differences in packing density. When relating the immunostaining signal of syntaxin and syx-\u0394S to their respective western blot signal we find a roughly three-fold brighter staining for syx-\u0394S (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig6-v2.jpg)\n\n**Figure 6.:** Cells were transfected with plasmids encoding for syntaxin-myc or syx-\u0394S-myc employing low or high plasmid concentrations and each transfection was split into two fractions (one for microscopy and one for western blot analysis). After one day the \u2018low\u2019 and \u2018high\u2019 syntaxin-myc/syx-\u0394S-myc pairs were subjected to comparative analysis by microscopy and western blot. (a) For microscopy, fixed cells were stained for their nuclei by DAPI (upper panels represent large overviews of the blue channel) and for the myc-tag by immunostaining (green channel; lower left panels show magnified views from the boxed regions in the blue channel). Using mock transfected cells we set a threshold value to eliminate the offset of background signal. The lower right black-and-white images show the background corrected images. The integral of the thresholded\u00a0myc-signal was determined and related to total number of cells, yielding the average myc-signal in epifluorescence (EF). (b) For western blot analysis, equal amounts of total protein were loaded for analysis by SDS-PAGE and western blotting, using transferrin receptor as a loading control (LC). Myc-band intensities were quantified and normalized to the respective transferrin receptor loading control, giving WB. (c) Strong variability of the absolute values both in microscopy and western blot analysis yielded highly variable absolute values of the EF/WB ratios\u00a0(for details see Figure 6\u2014figure supplement 1). Therefore, for each of the syntaxin-myc/syx-\u0394S-myc pairs, the ratio of syx-\u0394S-myc was related to the ratio of syntaxin-myc, yielding the \u2018normalized EF/WB ratios\u2019 plotted in (c). Dotted line indicates a value of 1 (no effect). Values are shown as a dot plot with the\u00a0mean \u00b1 S.E.M. (n\u00a0=\u00a014 transfection pairs from 28 transfections; statistics was performed on the non-normalized ratios (see Figure 6\u2014figure supplement 1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Shown are the ratios from in total 28 individual syntaxin-myc or syx-\u0394S transfections that are grouped into 14 pairs (left, 4 transfections per experiment, yielding a \u2018low\u2019 and a \u2018high\u2019 pair; right, averaged ratios displayed as means \u00b1 SEM). The great difference in the absolute values of the ratios is due to variations in the western blotting technique and also variable imaging conditions. p=0.005 (paired t- test on the 14 pairs; **p<0.01).\n\nFor further evaluation of the epitope accessibility approach, we tested whether staining can be increased after cleaving off the SNARE-motif by the clostridial toxin botulinum neurotoxin C1 (BoNT/C1). Syx-\u0394S has the same cleavage site, yielding an identical C-terminal cleavage product (Figure 1). However, as syx-\u0394S is less clustered from the beginning, co-expressed BoNT/C1 should affect staining of syntaxin stronger in comparison to syx-\u0394S. As shown in Figure 7, BoNT/C1 does not change staining for syx-\u0394S-myc, but leads to a significant increase of syntaxin-myc staining. This supports the idea that the cytoplasmic domain, specifically the SNARE-motif, packs molecules denser and thereby decreases the staining intensity of the extracellular epitopes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig7-v2.jpg)\n\n**Figure 7.:** (a) Cells expressing syntaxin-myc or syx-\u0394S-myc were co-transfected (BoNT/C1)\u00a0or not (control) with the light chain of botulinum neurotoxin C1 (BoNT/C1) fused to GFP. One day after transfection cells were fixed, stained for myc and imaged for quantification of the myc- (a) and GFP-intensity (not shown). Images are shown at the same scalings. (b) Staining quantified from outlined cells. While BoNT/C1 did not change the size of syx-\u0394S cells, it produced \u2248 30% smaller syntaxin-myc cells, indicating that syntaxin-myc cells may concentrate their fluorescence on smaller areas. This may lead to an overestimation of the BoNT/C1 induced increase in brightness. Therefore the mean intensities were related to\u00a0the average size of the cells. Values are given as means \u00b1 S.E.M. (n\u00a0=\u00a05). t-test on syntaxin-myc/syntaxin-myc\u00a0+\u00a0BoNT/C1, p=0.034 (*p<0.05); t-test on syx-\u0394S-myc/syx-\u0394S-myc\u00a0+ BoNT/C1, p=0.998 (ns, not significant p>0.05).\n\nA crystal structure analysis of the ternary SNARE-complex showed that the helical-conformation of syntaxin extends beyond the protein\u2019s SNARE-motif and continues until its C-terminus (Stein et al., 2009). It is thus possible that in live cells the SNARE-motif\u00a0section, pbs and TMR (Figure 1) form one straight \u03b1-helix, too, and that such a conformation is a prerequisite for tight packing. To test whether preventing this continuous helix would affect clustering, we replaced the pbs-TMR segment by a CAAX region (syx-CAAX; for structure see Figure 1). We compared this syx-CAAX construct to both syntaxin and syx-\u0394S with a CAAX membrane anchor (syx-\u0394S-CAAX). All constructs were organized in clusters, and both syx-CAAX and syx-\u0394S-CAAX were much more accessible for antibody staining than syntaxin (Figure 8). We therefore propose that straight extended helices are advantageous for tight protein/cluster packing.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig8-v2.jpg)\n\n**Figure 8.:** Cells were transfected with plasmids encoding for N-terminally myc-tagged syntaxin (myc-syntaxin), myc-syx-CAAX or myc-syx-\u0394S-CAAX (see Figure 1 for details). Visualization on membrane sheets shows that also the CAAX-constructs form clusters (Figure 8\u2014figure supplement 1). Constructs were analysed as described in Figure 6. (a) Microscopy images from fixed cells expressing the indicated constructs. Shown are magnified views from the images as overlays (blue, DAPI; green, myc-staining). (b) From the same transfections\u00a0the western blot analysis is shown. Top, loading control (LC)\u00a0using transferrin receptor staining; bottom, myc-signal. (c) Absolute epifluorescence signals (EF) related to the corresponding absolute western blot signals (WB). Values are given as means \u00b1 S.E.M. (n\u00a0=\u00a03), (t-test: p=0.021 for myc-syntaxin/myc-syx-CAAX; p=0.005 for myc-syntaxin/myc-syx-\u0394S-CAAX; *p<0.05, **p<0.01).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20705/elife-20705-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Shown are membrane sheets with comparable staining intensities. Note that on average the CAAX-constructs yielded brighter stainings.\n\n## Discussion\n\nHere, we apply three approaches for probing the packing density of syntaxin clusters. One employs GFP labelling with the advantage that all syntaxin-molecules are visualized. Though the extracellular GFP-tag has no access to the intracellular domains, it still could prevent clustering of molecules at distances shorter than 2.4 nm. In particular, if clustering is driven by SNARE-zippering with the helical conformation of the SNARE-motif extending into the membrane, extracellular GFP would cause mechanical tension. In neuronal cells this should be less of a problem, as endogenous syntaxin molecules mix with GFP-labelled syntaxin in the same cluster, increasing\u00a0the\u00a0space between different syntaxin-GFP molecules. Perhaps GFP is the reason why the half-time of recovery is shorter for syntaxin in HepG2 cells (lacking endogenous syntaxin) when compared to PC12 cells (Sieber et al., 2007). In any case, syx-\u0394S molecules move faster than syntaxin molecules.\n\nWhen myc-tagging is employed, the antibody signal per myc-tag increases by \u22483-fold upon partial deletion of the SNARE-motif. This finding has two implications. First, it indicates that clustered syx-\u0394S molecules are more spaced. Second, when evaluating the staining pattern of syntaxin and syx-\u0394S in STED microscopy, image pairs should be compared in which syx-\u0394S staining is three-fold brighter. Otherwise, as we currently do, one underestimates the size increase in syx-\u0394S clusters.\n\nIn conclusion, mobility\u00a0measurements, cluster-size and myc-epitope\u00a0accessibility suggest that deletions of the cytoplasmic region produce a state of looser packing. This means that the number of syx-\u0394S molecules accommodated in a cluster phase is not limited by space or packing density, which is of conceptual significance. Importantly, in the presence of the full cytoplasmic domain the same copy number of molecules accumulate in fewer clusters, necessarily yielding a higher packing density.\n\nInterestingly, though absolute figures on size are difficult to obtain, no matter which construct and at which expression level cluster size seems to be in a range from 70 to 100 nm, which is also the typical size of other membrane protein clusters (Lang and Rizzoli, 2010). Factors restricting the further growth of nano-cluster phases are likely very basic mechanisms, including a combination of cholesterol effects, hydrophobic mismatch and ionic lipid-protein sequestering (Recouvreux and Lenne, 2016).\n\nThough at this point we can only speculate on the exact nature of the clustering reaction, two parallels between the SNARE-clustering reaction and SNARE-interactions for membrane fusion give some hints. First, the SNARE-motif N-terminal portion, which we found to be crucial for mobility restriction in this study, is also required for zippering from the N- to the C-termini of a heterologous SNARE-motif bundle (S\u00f8rensen et al., 2006). A very similar mobility pattern as in this study was previously observed in neuronal PC12 cells that express high levels of endogenous syntaxin 1A along with its primary binding partner SNAP25. Here, syntaxin lacking the entire N-terminus and the linker region becomes proceedingly faster upon removal of more and more amino acids from the SNARE-motif (Sieber et al., 2007). Second, in the ternary SNARE complex syntaxin helicity extends into the membrane (Stein et al., 2009). Such helicity extension also seems to be important for SNARE-clustering as indicated by our CAAX experiment. Although we cannot exclude that other, yet unidentified proteins participate in clustering, we propose the simplest core clustering reaction would be a homophilic or heterophilic SNARE-zipper. Because the syntaxin molecule carries a net negative charge, electrostatic repulsions likely preclude direct contact of all SNARE motifs. It is tempting to speculate whether such dense packing can be achieved in the presence of Ca2+ that increases the packing density of negatively charged proteins, among them syntaxin 1A (Zilly et al., 2011).\n\nIn conclusion, two basic mechanisms underlie membrane protein clustering: loose clustering for which the TMS is sufficient, and cytoplasmic interactions which mediate tight cluster packing. Initially, loose-cluster formation is crucial, as without proper membrane propagated forces (e.g. cholesterol depletion) clusters disperse. In other words the cytoplasmic reaction alone is not sufficient for cluster formation, at least not for tightly packed clusters as suggested by the CAAX experiment. Because essentially all membrane domains depend on cholesterol (Saka et al., 2014), we propose that the here identified hierarchical model of membrane protein clustering is of general significance.\n\nMoreover, the data show that size does not necessarily scale with the number of molecules the structure contains. It is not sufficient to know the representative distribution of components for the understanding of self-organization processes. Instead, a relation between size and the relative number of underlying molecules is required. Doing so we anticipate many self-organization processes could be further\u00a0dissected, allowing an understanding of the architecture of cellular clusters and other supramolecular assemblies.\n\n## Materials\u00a0and\u00a0methods\n\n### Cloning\n\nSyntaxin constructs are based on the sequence of rat syntaxin1A (NP_446240.2; SNARE motif and pbs are identical to human syntaxin 1A (NP_004594.1) differing in T21A, I278V, I283V and G288A). Syntaxin-GFP and syx-\u0394Cyt-GFP are described in Sieber et al. (2006) (corresponding to Sx1A-GFP and Sx1A, TMR-GFP, respectively). Syx-\u0394S-GFP was obtained by fusion PCR using Syntaxin-GFP as a template. The restriction sites NheI and NotI were used for insertion of the PCR product into the backbone of the expression vector pEGFP-N1 (Clontech, Mountain View, GenBank accession number: U55761), where the EGFP carries a mutation to abolish GFP dimerization (Zacharias et al., 2002), in the following called pmEGFP-N1. For the C-terminal myc-tagged syntaxin variants, syntaxin-GFP and syx-\u0394Cyt-GFP with the C-terminal linker LVPRARDPPVAT were used as templates for PCR amplification generating HindIII and XbaI restriction sites. For syx-\u0394S an additional fusion PCR step was performed before further subcloning of all three constructs into the vector pDL208 based on a pcDNA 3.1Hygro(+) where a triple myc tag was inserted (Lohmann, 2013). VAMP8-GFP was obtained by subcloning of VAMP8 from VAMP8-mCherry (kindly provided by Jens Rettig and described in Marshall et al., 2015) into the backbone of the\u00a0pmEGFP-N1 vector using NheI and KpnI restriction sites. In GFP-SNAP25 a mEGFP is fused N-terminally to rat SNAP-25B (NP_112253.1) (Halemani et al., 2010). The BoNT/C1/LC-GFP (LC, light chain) plasmid is based on pmEGFP-N1 were the light chain of botulinum neurotoxin C1 (BoNT/C1; Zilly et al., 2006) was inserted using\u00a0the EcoRI and KpnI restriction sites. The CAAX box was fused C-terminally to amino acid Q258. The constructs are based on an N-terminally myc-tagged syntaxin 1A (Sieber et al., 2006) used as a template for single step PCR in the case of myc-syx-CAAX and a fusion PCR for myc-syx-\u0394S-CAAX. Using the NheI and NotI restriction sites, the PCR\u00a0products were inserted into a vector containing the polybasic amino acid stretch and the CAAX box of K-Ras (AAAKSKTKCVIM; CAAX box in italic) fused\u00a0to\u00a0a RFP tagged synaptojanin (kindly provided by Silvio Rizzoli and described in Malecz et al., 2000;\u00a0cut out beforehand by NheI and NotI restriction sites). All constructs were verified by sequencing.\n\n### Cell culture and generation of membrane sheets\n\nHepG2 cells (Cell Lines Service; CLS Cat# 300198; RRID: CVCL_0027) were maintained and propagated essentially as described previously (Schreiber et al., 2012). Cells were tested negative for mycoplasma (GATC Biotech, job number 95361). Cells were plated on glass coverslips coated with poly-L-lysine for fluorescence microscopy. Neon electroporation system (Thermo Fisher Scientific) was used to transfect cells as described previously (Schreiber et al., 2012). Cells were used for experiments 1 day after transfection.\n\nFor membrane sheet generation, cells were subjected to a short ultrasound pulse in ice-cold sonication buffer (120 mM potassium glutamate, 20 mM potassium acetate, 20 mM HEPES-KOH, 10 mM EGTA; pH 7.2). For FRAP experiments membrane sheets were kept for imaging in sonication buffer. For STED microscopy membrane sheets were rinsed with PBS (136 mM NaCl, 2.7 mM KCl, 1.47 mM KH2PO4, 8.1 mM Na2HPO4), fixed and immunostained (see below).\n\n### Epifluorescence microscopy\n\nFor epifluorescence microscopy an Olympus IX81-ZDC fluorescence microscope (Zilly et al., 2011) with a 60 \u00d7 1.49 NA apochromat objective or a 10 \u00d7 0.4 NA universal plan apochromat objective was used. For fluorescence excitation and detection we employed a MT20E Illumination system (Olympus) with a 150 W Xenon lamp and the filter sets F36-500 DAPI HC (for DAPI or TMA-DPH), F36-525 EGFP HC (for GFP or Alexa488), and F46-009 Cy5 ET (for\u00a0Atto647N;\u00a0all filters\u00a0from AHF Analysentechnik, Tuebingen, Germany). For imaging, an EMCCD camera (ImagEM C9100-13, Hamamatsu Photonics, Hamamatsu, Japan) was used. Fixed samples were imaged in PBS containing TMA-DPH (ThermoFisherScientific,\u00a0#T204)\u00a0that visualizes membranes, or in PBS without\u00a0TMA-DPH\u00a0when DAPI (Sigma-Aldrich,\u00a0#D9542)\u00a0was used for staining of cell nuclei. Live cells in the GFP pH\u00a0quenching experiments were imaged in phosphate salt solutions (different from PBS, see below). Images were analysed with ImageJ (for details see below) and are shown at arbitrary scaling, if not stated otherwise.\n\n### pH-quenching of GFP\n\nOne day after transfection with plasmids encoding for either syntaxin-GFP, syx-\u0394S-GFP, syx-\u0394Cyt-GFP, GFP-SNAP25 or VAMP8-GFP cells were treated with 0.2 \u00b5M bafilomycin A1 (diluted from a stock solution in DMSO, yielding 1% DMSO in the working solution) from Streptomyces griseus (Sigma-Aldrich, #B1793) or in controls with DMSO alone (1%) for 45 min at 37\u00b0C. Using the 10x objective several cells were imaged in phosphate buffer pH7.4 (30.5 mM sodium chloride, 81 mM Na2HPO4, 19 mM NaH2PO4). Buffer was exchanged to phosphate salt\u00a0solution pH4.3 (30.5 mM sodium chloride, 8 mM Na2HPO4, 92 mM NaH2PO4) by three brief washes with the new solution, followed by a 2\u20133 min incubation. Then the same cells were imaged again.\n\nFor analysis, in ImageJ cells were outlined manually and mean fluorescence intensity in the generated ROIs was corrected for local background. For every cell,\u00a0the intensity value at pH 4.3 was related to the intensity at pH 7.4.\n\n### FRAP\n\nFor\u00a0fluorescence recovery after photobleaching (FRAP) experiments HepG2 cells were transfected with plasmids encoding for syntaxin-GFP, syx-\u0394S-GFP or syx-\u0394Cyt-GFP. Experiments were performed at 37\u00b0C. Cells were analysed in Ringer solution (130 mM NaCl, 4 mM KCl, 1 mM CaCl2, 1 mM MgCl2, 48 mM D(+)\u03b1Glucose, 10 mM HEPES pH7.4) and membrane sheets in sonication buffer. For imaging we used an Olympus Fluoview 1000 laser scanning microscope (Zilly et al., 2011) adjusting the pixel size to 414 nm and ROIs for bleaching were 12 pixel x 12 pixel. In order to have samples with comparable intensities, bright cells or membrane sheets with high levels of syx-\u0394S-GFP and syx-\u0394Cyt-GFP were not selected for imaging. Bleaching was performed using the 488 nm and 405 nm laser at full intensities. Recordings were taken at 1 Hz, starting with a 10 picture pre-bleach sequence, followed by a bleach event for 500 ms and a 200 s post-bleach sequence. Per mounted coverslip up to 4 cells or membrane sheets were analysed. For membrane sheets we analysed for syntaxin-GFP whether there is a correlation between the sequence number (first to last recorded membrane sheet, which correlates with the time after membrane sheet generation) and the half-time of recovery, which was not the case.\n\nAnalysis of the experiments was done essentially as published in Zilly et al. (2011). In brief, to detect out of focus drift a control region in a non-bleached area was used comparing background corrected fluorescence of the first 10 frames to the last 3 frames. If intensity differed by more than\u00a0\u00b115% the measurement was excluded from further analysis. Intensity recovery traces obtained from the ROIs were background corrected and all traces from one experiment were averaged. The average trace was fitted to a hyperbolic function with an offset obtaining the half time of recovery. For plotting intensity versus half time of recovery, hyperbola functions were fitted to traces from individual cells. Fits with a lower R2 than 0.7 were omitted from the analysis, still leaving 5\u201313 cells or 5\u201315 membrane sheets per construct and experiment.\n\n### Immunostaining\n\nCells or membrane sheets were fixed in 4% PFA in PBS for 30\u201345 min at RT. PFA was quenched with 50 mM NH4Cl in PBS. Samples were blocked with 3% BSA in PBS for 1\u20132 hr at RT prior to immunostaining. Monoclonal mouse antibodies were used for the detection of the myc-tag (ThermoFisherScientific, Cat# MA1-21316, RRID: AB_558473) and syntaxin (HPC1; Sigma, #S0664, RRID: AB_477483; used only in pulsed STED experiments). GFP was detected employing a polyclonal rabbit antibody (Abcam, #ab290, RRID: AB_303395). Incubation with the first antibody diluted 1:200 or 1:400 in 3% BSA in PBS lasted 1.5 hr at RT for the BoNT/C1 experiment (as secondary antibody Atto647N labeled goat-anti-mouse (Sigma, #50185) was used; all secondary antibodies were diluted 1:200), overnight at 4\u00b0C for experiments in which myc-tag staining was related to western blot (secondary antibodies were Alexa488 labelled goat-anti-mouse (ThermoFisherScientific, #A11001) or donkey-anti-mouse (ThermoFisherScientific, #A21202)) or pulsed STED microscopy on membrane sheets (as secondary antibody Atto647N labeled goat-anti-mouse (Sigma, #50185) was used), for 24 hr at 4\u00b0C for CW-STED microscopy on membrane sheets (secondary antibody was Alexa488 labelled goat anti-mouse (ThermoFisherScientific, #A11001)) or 2 hr for STED microscopy on cells (secondary antibody was Atto647N labelled goat-anti-mouse (Sigma, #50185) or Atto647N labelled goat-anti-rabbit (Sigma, #40839)), followed by 3 washing steps with PBS. Secondary antibody incubation was performed at RT for 1 hr for the BoNT/C1 experiments, the experiments in which the myc-tag staining was related to WB signals and STED experiments on cells, 2 hr for pulsed STED microscopy on membrane sheets and overnight at 4\u00b0C for CW-STED microscopy on membrane sheets likewise in 3% BSA in PBS again followed by 3 washing steps with PBS. For STED microscopy on immuno-stained membrane\u00a0sheets\u00a0samples were embedded with ProLong Gold Antifade Mountant (ThermoFisher Scientific, #P10144) using\u00a0microscopy slides, sealed and stored at 4\u00b0C prior to imaging.\n\n### STED microscopy\n\nA TCS-SP8 gated-STED microscope (Leica, Mannheim, Germany; available at the DZNE imaging facility, located at the CAESAR, Bonn, Germany) was used for CW-STED high resolution imaging of myc-stained membrane sheets. Images were recorded at 200 Hz exciting at 488 nm (using a white-light laser at 20% power), depleting with a 592 nm CW-STED beam (at 50% intensity), detecting at 495-570 nm with time-gating from 1 to 6.5 ns (using a hybrid detector),\u00a0and with a pixel size of 20 nm.\n\nPulsed STED high resolution imaging on membrane sheets and fixed cells was performed on myc- or HPC1-stained samples using a four-channel confocal laser scanning microscope equipped with an easy-3D STED module (Abberior Instruments; G\u00f6ttingen, Germany; available at the LIMES institute imaging facility, Bonn, Germany). Fast DiO membrane stain images were recorded exciting with a pulsed 488 nm laser (0.2 mW) and detecting from 500 to 520 nm and 532\u2013558 nm via avalanche photo diodes (APD). For Super-resolution images, Atto-647 was excited using a pulsed 640 nm laser (0.3 mW), depleted using a pulsed 775 nm laser (350 or 450 mW) and detected at 650\u2013720 nm with time-gating from 1.25 to 9.25 ns (using an APD),\u00a0and with a pixel size of 20 \u00d7 20 nm.\n\nSpot analysis was performed employing a custom ImageJ macro. Using the ImageJ function \u2018Find Maxima\u2019, Syntaxin spots were identified in DOG (difference of Gaussians)-filtered STED images within squared ROIs (180 pixels x 180 pixels and 130 pixel x 130 pixel for CW-STED and pulsed-STED images, respectively). Further analysis of the spot features was performed on raw STED images placing circular ROIs (5 pixel diameter) at the identified spot positions. Weak spots with a low mean intensity (100 or 4 a.u. for CW and pulsed STED images respectively) were excluded. Extracted parameters were the mean intensity of the spot ROI, the spot size based on a Gaussian fit of a line scan (15 \u00d7 3 pixels, horizontal or vertical depending on fit quality) and the nearest neighbour distance based on the centre of mass within spot ROIs. Subsequently, spot parameters were averaged for each membrane sheet and related to the background-corrected mean of the myc- or HPC1-intensity of the membrane sheets in the confocal channel (recorded simultaneously with the STED image). For calculating mean spot intensities, all spots were included, for the mean size only spots with at least 5\u20136 pixels nearest neighbour distance and suitable Gaussian fit quality (R2\u00a0\u22650.9, assuring a well-centred peak, reasonable offset and peak height). For CW-STED, plots show mean sheet values for three independent experiments with a total of 38\u201339 sheets (2924\u20133185 spots) per condition for cluster size and 39\u201349 sheets (4678\u20139385 spots) for cluster counts and intensities. For pulsed STED, three independent experiments were included with a total of 22\u201345 sheets (1336\u20132010 spots) per condition for cluster size and 33\u201348 sheets (2407\u20136054 spots) for cluster counts and intensities.\n\nOnly for STED microscopy on whole cells, fixed cells were labelled with 100 \u03bcg/mL concanavalin A conjugated to Alexa594 (ThermoFisher Scientific, # C11253) in HBSS (Hanks' Balanced Salt Solution; ThermoFisher Scientific, #14175053) for 30 min followed by permeabilisation for immunostaining with 0.5% Triton-X100 in PBS for 10 min prior to the blocking step. During immunostaining all solutions contained 0.05% Triton-X100. Imaging was performed in PBS on the easy3D STED microscope using a water immersion objective. Samples were screened for transfected cells in the epifluorescence mode of the microscope. Cells were then recorded in confocal mode in the x,y-plane for an overview image (110 \u00d7 110 \u03bcm, pixel size 300 nm) of the concanavalin and the antibody staining. In the overview image horizontally 10 x,z-sections were defined for scanning, with a distance of 10 \u03bcm, which were imaged in the concanavalin and in the antibody channels employing the 3D-STED modus of the microscope (starting the scan at the basal membrane; for illustration images were rotated by 180\u00b0) and 200 mW STED laser deexcitation power (100% power distribution to the 3D-STED donut) at a pixel size of 50 nm in x and 96.3 nm in z. For the concanavalin channel, Alexa-594 was excited using a pulsed 561 nm laser (0.03 mW) and detected at 605-625 nm with time-gating from 0.78 to 8.78 ns via an APD. For the antibody channel, Atto647N was excited using a pulsed 640 nm laser (0.1 mW) and detected at 650-720 nm with the same time gating. For STED images, 6% Alexa-594 bleed-through into the Atto647 image was found in single stains (concanavalin A-Alexa594 only), which was subtracted from the Atto647 recordings.\n\nFor analysis, the cell membrane was traced by a ROI in the concanavalin A image in each slice of one cell. This ROI was expanded by five pixels defining an inner ROI delineating the cytosol and an outer ROI delineating the whole cell. ROIs were then transferred to the corresponding STED images of the antibody staining. The integral of the fluorescence signal was measured in the cytosol and the whole cell ROIs and was summed up for the slices of one cell. Averaged values of non transfected control cells were subtracted for background correction and the value for the cytosolic signal was related to the total fluorescence signal of the respective cell.\u00a0Images are shown at arbitrary scaling, if not stated otherwise.\n\n### Comparison epifluorescence and western blot\n\nFor the comparison of microscopic fluorescence and western blot signals HepG2 cells were transfected with plasmids encoding for syntaxin-myc or syx-\u0394S-myc using different plasmid concentrations (a low concentration of 10 \u00b5g per 4 \u00d7 106 cells for both constructs; a high concentration of 20 \u00b5g or 30 \u00b5g per 4 \u00d7 106 cells for syntaxin-myc and syx-\u0394S-myc, respectively). This yielded a \u2018low\u2019 and \u2018high\u2019 pair of syntaxin-myc/syx-\u0394S-myc transfected cells (the plasmid concentrations were adjusted to get for each pair a roughly similar expression level in the western blot). In separate experiments cells were transfected with plasmids encoding for myc-syntaxin, myc-syx-CAAX or myc-\u0394S-CAAX using for each construct 10 \u00b5g plasmid DNA per 4 \u00d7 106 cells.\n\nAfter the transfection, cells were split into two fractions: one for coverslips for microscopy and the other part was transferred to a cell culture dish for western blot analysis. After one day, cells were immunostained as described above. Prior to the blocking step they were permeabilized with 0.2% Triton X-100 in PBS\u00a0for\u00a010\u00a0min, and 0.2% Triton X-100 was added to all solutions during immunostaining. Prior to imaging, cells were stained with DAPI (0.1 \u00b5g/ml) (Sigma-Aldrich, # D9542) in PBS for 10 min at RT followed by three washing steps with PBS. For imaging, cells were selected in the DAPI channel followed by taking images in the DAPI channel and the green channel (recording Alexa488). For analysis, a threshold of background signal in the green channel was manually determined from mock transfected cells that underwent the same staining protocol. The threshold value was subtracted from all images prior to the calculation of their integrated fluorescence intensity. For each image, the integrated intensities were divided by the number of cells in the corresponding images which was obtained by counting the DAPI stained nuclei by the \u2018Find Maxima\u2019 tool in ImageJ. Bright DAPI aggregates were distinguished from nuclei by an intensity threshold. For each transfection and construct, the values from all images were averaged yielding the value \u2018EF\u2019 (epifluorescence).\n\nIn parallel, for western blot analysis cells were scraped off the flask in ice-cold PBS, centrifuged and lysed in RIPA buffer (Santa Cruz, #sc-24948) for 30 min on ice, intermitted by two 5 min incubations in an ice cold ultrasound bath. Lysates were centrifuged at 14,000 x g for 15 min. Protein content of the supernatant was determined using a BCA assay (Thermo Fisher Scientific, #23225). 4x Laemmli buffer was added to 5 to 25 \u00b5g of total protein per lane and samples were heated for 10 min at 95\u00b0C. Samples in Laemmli buffer were subjected to SDS-PAGE. A wet electroblotting system (BioRad) was used to transfer proteins to a nitrocellulose membrane (Carl Roth, Germany). For the detection of the myc-tag a mouse monoclonal antibody was used (ThermoFisherScientific, Cat# MA1-21316, RRID: AB_558473), transferrin receptor was detected with a rabbit polyclonal antibody (abcam, Cat# ab84036, RRID: AB_10673794). Prior to the blocking step and antibody incubation, the membrane was cut into an upper and lower part for separate detection of transferrin receptor and myc-tag, respectively. Blocking was performed at RT in Odyssey Blocking Buffer (P/N 927\u20134000, Licor Bioscience) diluted with PBS in a 1:1 ratio. First antibody (1:1000 dilution) incubation in Odyssey Blocking Buffer with PBS/0.1%Tween20 (PBS-T) (1:1) was over night at 4\u00b0C. Membranes were washed 4 times for 5 min with PBS-T prior to the incubation with the secondary antibodies (using goat-anti-mouse-IRDye800CW (Odyssey, #926\u201332210; diluted 1:10,000) and goat-anti-rabbit- IRDye800CW (Odyssey, #926\u201332211; diluted 1:15,000) diluted in Odyssey Blocking Buffer with PBS-T (1:1) for 1 hr at RT followed by four washing steps in PBS-T for 5 min. Membranes were washed with PBS to remove the detergent prior to imaging with an Odyssey near-infrared imaging system (LI-COR Biosciences). Analysis of western blots was performed using the gel analyser plugin in ImageJ. Peak areas were related to the corresponding signal of the transferrin receptor loading control from the same lane, yielding for each transfection and construct the value \u2018WB\u2019.\u00a0For the calculation of the signal ratios, EF was divided by WB.\n\n### Botulinum toxin co-expression\n\nHepG2 cells were transfected with 10\u00a0\u00b5g of plasmid encoding for syntaxin-myc or syx-\u0394S-myc only or together with a plasmid encoding the light chain of botulinum neurotoxin C1 C-terminally fused to GFP (BoNT/C1-GFP). To keep BoNT/C1-GFP expression low, its plasmid was used at a 10-fold lower concentration (1\u00a0\u00b5g\u00a0per\u00a0transfection). After 1 day cells were fixed, stained for the myc-tag (anti-myc/goat-anti-mouse-Atto647N) and imaged with an epifluorescence microscope in the presence of TMA-DPH in the blue (TMA-DPH), green (GFP) and the far-red (Atto647N) channel. For analysis, cell footprints were outlined in the myc-channel creating a ROI for measuring size and fluorescence intensity in the GFP as well as the myc-channel. Intensities were corrected for background fluorescence. From the single transfected cells (no BoNT/C1-GFP) the mean autofluorescence in the GFP channel was calculated. Cells from the double transfection with lower values in the GFP channel than the calculated autofluorescence were considered not to contain BoNT/C1-GFP and thus were omitted from further analysis. Since cell size changed among the conditions (especially upon co-transfection of syntaxin-myc and BoNT/C1-LC-GFP cell size decreased), the intensity of the myc-signal was corrected for variations in the average size of the cells (22\u201353 cells per condition and experiment).\n",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "775c64a4-d61b-4e97-8372-a6ccacd8801c",
+      "submission_id": "1e682308-86e4-48bc-a549-d5a40b60884e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reinhard Jahn, Max Planck Institute for Biophysical Chemistry , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20705.016](https://doi.org/10.7554/eLife.20705.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The packing density of a supramolecular membrane protein cluster is controlled by cytoplasmic interactions\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Rory Duncan (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another. Generally, all reviewers agree that your study is interesting and, in principle merits publication in eLife. However, some revisions are required, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript addresses the packing density of proteins within protein clusters in the plasma membrane. As an example the authors use the well-studied SNARE syntaxin1 for which clustering was shown previously to be mediated by a combination of independent interactions involving the transmembrane domain, positively charged clusters, and interactions between the cytoplasmic parts of the proteins. Using syntaxin mutants containing C-terminal myc-tags, the authors show that full-length syntaxin 1 is less accessible to antibody binding compared to deletion mutants due to steric hindrance within the domains. These data prove that the SNARE domain contributes to the clustering of syx1 in membrane domains, and the authors propose a model where both membrane and cytosolic protein interactions contribute to syx1 clustering. Moreover, using super-resolution microscopy, the authors confirm that the average number of molecules within a given cluster appears, at least to a certain extent, to be independent of the expression level, with higher expression levels yielding more instead of larger clusters.\n\nEssential revisions:\n\n1) Much of the data (Figures 4\u20136) relies on the assumption that 100% of the GFP- and myc-tagged syx1 mutants locate to the plasma membrane. If this is not the case and a fraction of the syx1 mutants are retained at ER/Golgi or sorted to endo/lysosomes, the assumption that the decreased GFP fluorescence is due to self-quenching does not hold. The same is true for the experiments with the myc-tagged proteins, where the reduced antibody binding can be equally well explained by intracellular pools of protein. This is especially a concern since Munc18-1, which is probably not expressed by HepG2 cells, might be required for targeting of syx1 to the plasma membrane (Rowe et al., JCS, 1999, 112: 1865). For the GFP-tagged constructs, the plasma membrane localization is shown in Figure 2\u2014figure supplement 1. However, these experiments are not conclusive, as syx1-GFP in acidic organelles will already be quenched and this population cannot be accounted for. In addition, the cells will die at pH4.3 resulting in dissipation of membrane gradients and quenching of intracellular pools. To make these experiments more convincing, the authors should include control experiments with bafilomycin/NH4Cl, and show 3D confocal stacks with antibody labeling of syx1 and a plasma membrane protein. Control experiments with a transmembrane SNARE residing in intracellular compartments should also be included. To prove that the decreased fluorescence is really due to self-quenching, photobleaching curves where the fluorescence should initially increase should be provided. Finally, the 100% plasma membrane localization should be demonstrated for the myc-tagged syx1 mutants.\n\n2) Does the recovery after photobleaching proceed at near identical rates in intact cell membranes versus sheets? These data are easy to acquire and analyse and would give some support to the ideas in the paper. Further, 1 Hz is very slow for FRAP recover curves and slow rates could mask multi-component behaviors. If possible I would like to see a comparison as a control with significantly higher sampling rates.\n",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c19a7ba-b411-4081-bdc2-ca3a3f51f89e",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C1",
+      "claim": "Syntaxin 1A has a large N-terminal domain, followed by a linker region and a SNARE-motif connected to a TMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Syntaxin 1A has a large N-terminal domain, followed by a linker region and a SNARE-motif connected to a TMS (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural description of syntaxin 1A that is illustrated in Figure 1 and represents established knowledge about the protein's domain organization.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "4fc5cd9b-12a7-40f8-886d-20a465c21a15",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C2",
+      "claim": "Many studies investigating syntaxin clustering attach the GFP label to the molecule's C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies investigating syntaxin clustering attach the GFP label to the molecule's C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practice in the field, drawing on established research approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "b21a0d78-3fab-4aea-942c-6d67c61ac526",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C3",
+      "claim": "In neuronal cells, cytoplasmic interactions restrict the mobility of syntaxin.",
+      "claim_type": "EXPLICIT",
+      "source": "In neuronal cells, cytoplasmic interactions restrict the mobility of the molecule, which may either indicate a role of the cytoplasmic domain in the clustering process (Sieber et al., 2007), or reflect interactions with syntaxin's neuronal binding partner SNAP25 (Ribrault et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies (Sieber et al., 2007; Ribrault et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "b46d3b9a-9deb-4fc6-874a-7055292120df",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C4",
+      "claim": "HepG2 cells express neither syntaxin 1A nor SNAP25.",
+      "claim_type": "EXPLICIT",
+      "source": "For better clarification, we study the role of the cytoplasmic domain in a non-neuronal cell line (HepG2 cells) that expresses neither syntaxin 1A nor SNAP25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the characteristics of the HepG2 cell line used in the study, representing established knowledge about this cell line.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "375964ad-6aca-4428-a9fa-69b5fcfe824b",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C5",
+      "claim": "Syntaxin expressed in non-neuronal cells does not efficiently reach the cell membrane unless Munc18 is co-expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that syntaxin expressed in non-neuronal cells does not efficiently reach the cell membrane, unless Munc18 is co-expressed (Rowe et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rowe et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "53ea4d71-f4bd-47a7-bea2-06a0c72d77b4",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C6",
+      "claim": "GFP-SNAP25 should be resistant to pH changes of the extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we used as reference points GFP located at the cytoplasmic site (GFP-SNAP25) that should be resistant to pH changes of the extracellular environment, and a GFP in the endocytic pathway (VAMP8-GFP; Antonin et al., 2000) also located in the lumen of acidic organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cytoplasmic location of GFP-SNAP25, which would not be exposed to extracellular pH changes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "953d26fb-958d-47af-ba20-b4073eb6a924",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C7",
+      "claim": "VAMP8-GFP is located in the endocytic pathway and in the lumen of acidic organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we used as reference points GFP located at the cytoplasmic site (GFP-SNAP25) that should be resistant to pH changes of the extracellular environment, and a GFP in the endocytic pathway (VAMP8-GFP; Antonin et al., 2000) also located in the lumen of acidic organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Antonin et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "70d3d452-56ba-4885-8d65-56d9477a3d10",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C8",
+      "claim": "Bafilomycin specifically inhibits V-ATPases.",
+      "claim_type": "EXPLICIT",
+      "source": "To reveal GFP fractions in acidic organelles, we applied bafilomycin that specifically inhibits V-ATPases (Bowman et al., 1988), thereby dissipating pH gradients between lysosomal/endosomal compartments and the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bowman et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "63bfe104-4281-4ee4-8f7c-809405c2c485",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C9",
+      "claim": "Bafilomycin dissipates pH gradients between lysosomal/endosomal compartments and the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "To reveal GFP fractions in acidic organelles, we applied bafilomycin that specifically inhibits V-ATPases (Bowman et al., 1988), thereby dissipating pH gradients between lysosomal/endosomal compartments and the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of V-ATPase inhibition by bafilomycin.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "fdb09976-380c-4dc3-9fca-cf71ed09cf66",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C10",
+      "claim": "A slight drop of fluorescence was found for GFP-SNAP25, possibly due to small cell lesions induced by the DMSO solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2, we find a slight drop of fluorescence for GFP-SNAP25, possibly due to small cell lesions induced by the DMSO solvent (which is observed at concentrations above 0.5%; Qi et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on data shown in Figure 2 and includes a speculative explanation supported by a citation to Qi et al., 2008.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "4ba6cb5a-b2cd-4f32-8f7a-f7664c9823d9",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C11",
+      "claim": "VAMP8 has a large fraction of intracellular fluorescence that increases further after bafilomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "VAMP8, as expected, has a large fraction of intracellular fluorescence that increases further after bafilomycin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from the pH-quenching experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "0e5162a3-0fc9-4568-adf9-0e2aa5f52e52",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C12",
+      "claim": "The non-quenched fluorescence of the syntaxin constructs ranges between 20\u201340% and does not significantly increase after bafilomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-quenched fluorescence of the syntaxin constructs ranges between 20\u201340% and does not significantly increase after bafilomycin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from the pH-quenching experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "2690ff74-2620-4bbb-a0a2-cf9910c91416",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C13",
+      "claim": "Not all overexpressed proteins reach the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the data show that not all overexpressed proteins reach the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the pH-quenching and super-resolution microscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "71819230-3d73-4aa9-97e1-ebb45954085f",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C14",
+      "claim": "There are only minor differences in the plasma membrane targeting efficiency between the syntaxin variants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are only minor differences in the plasma membrane targeting efficiency between the syntaxin variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the pH-quenching and super-resolution microscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "66e71708-5749-4c45-bc52-0a4071c535dd",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C15",
+      "claim": "Constructs become faster in the order syntaxin, syx-\u0394S and syx-\u0394Cyt.",
+      "claim_type": "EXPLICIT",
+      "source": "When studying the mobility of the constructs by fluorescence recovery after photobleaching (FRAP), we find increased mobility in the order syntaxin, syx-\u0394S and syx-\u0394Cyt (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on FRAP experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "bd84900a-668a-4749-9cc7-4b03e3d42afb",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C16",
+      "claim": "Only the mobility of syntaxin tends to be slower at higher expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments we observed no relation between expression level and mobility for syx-\u0394S and syx-\u0394Cyt, while syntaxin apparently displays a trend towards lower mobility the higher it is expressed (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on FRAP experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "8c0dba89-4ba0-4b44-b120-baae29864a0f",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C17",
+      "claim": "In non-neuronal cells, independent from interactions with SNAP25, an intact SNARE-motif is required for restricting the mobility of syntaxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we can safely conclude that also in non-neuronal cells, independent from interactions with SNAP25, an intact SNARE-motif is required for restricting the mobility of syntaxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from FRAP experiments in both live cells and isolated plasma membrane sheets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "f4abe6fe-d578-497c-bf05-7841fb36988b",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C18",
+      "claim": "The GFP molecule's physical extensions would impede distances between syntaxin's C-termini shorter than \u22482.5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the GFP-molecule was proven to be a suitable tool for studying aspects of syntaxin-clustering, interference with the clustering process cannot be entirely excluded as its physical extensions would impede distances between syntaxin's C-termini shorter than \u22482.5 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known physical dimensions of GFP.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "a1a2ff3f-c4f6-4178-a9fa-720b6da39042",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C19",
+      "claim": "If densely packed, an antibody bound to one myc-tag will prevent binding of additional antibodies to the neighboured myc-tags.",
+      "claim_type": "EXPLICIT",
+      "source": "If densely packed, an antibody bound to one myc-tag will prevent binding of additional antibodies to the neighboured myc-tags (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the principle of steric hindrance in densely packed epitopes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "ef420721-ba3a-4c05-943a-b04659a67fce",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C20",
+      "claim": "Substoichiometric labelling is increased the closer the epitopes are packed in the clustered structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, substoichiometric labelling is increased the closer the epitopes are packed in the clustered structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the principle of antibody accessibility in densely packed structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "f8943469-baec-4384-8e57-e795df36e6db",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C21",
+      "claim": "Cluster number per area strongly depends on the average staining intensity of the membrane and is in the order of magnitude reported previously for neuronal cells (14\u201319 clusters/\u03bcm2).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cluster number per area strongly depends on the average staining intensity of the membrane and is in the order of magnitude reported previously for neuronal cells (14\u201319 clusters/\u03bcm2; Sieber et al., 2007; Bar-On et al., 2012), whereas increase in cluster intensity and size is less dependent on the average staining intensity (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on STED microscopy data shown in Figure 5c and is compared to previous studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "59979062-cc5b-4088-8b96-e5f3e6985a89",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C22",
+      "claim": "Increase in cluster intensity and size is less dependent on the average staining intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cluster number per area strongly depends on the average staining intensity of the membrane and is in the order of magnitude reported previously for neuronal cells (14\u201319 clusters/\u03bcm2; Sieber et al., 2007; Bar-On et al., 2012), whereas increase in cluster intensity and size is less dependent on the average staining intensity (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on STED microscopy data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "a13d7de5-9d9c-46b2-8c4b-2614e0ce7f82",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C23",
+      "claim": "Spherical clusters are always observed for syntaxin that never yielded as high staining intensities as the other constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Spherical clusters are always observed for syntaxin that never yielded as high staining intensities as the other constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on STED microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "a789287e-e65f-416f-a1ad-8e7204a1859b",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C24",
+      "claim": "For syx-\u0394S, at high intensities elongated structures or even large areas covered by rather homogenous fluorescence were found.",
+      "claim_type": "EXPLICIT",
+      "source": "For syx-\u0394S, at high intensities we found also elongated structures or even large areas covered by rather homogenous fluorescence (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on STED microscopy observations shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "2edc2f4d-b1a0-48f0-b394-85afca1e31c2",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C25",
+      "claim": "Clusters tend to increase their size upon shortening of the SNARE-motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Albeit the absolute measured sizes depend on the label and the intensity of the de-excitation laser, we still can conclude that clusters tend to increase their size upon shortening of the SNARE-motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from STED microscopy data comparing syntaxin and syx-\u0394S clusters under various conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "d5d6b02d-13d3-40a0-ad46-fba36114035f",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C26",
+      "claim": "When relating the immunostaining signal of syntaxin and syx-\u0394S to their respective western blot signal, syx-\u0394S shows a roughly three-fold brighter staining.",
+      "claim_type": "EXPLICIT",
+      "source": "When relating the immunostaining signal of syntaxin and syx-\u0394S to their respective western blot signal we find a roughly three-fold brighter staining for syx-\u0394S (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparative microscopy and western blot data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "6c7218ca-9df3-4568-bcad-5a1bb5baf4d9",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C27",
+      "claim": "BoNT/C1 does not change staining for syx-\u0394S-myc.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7, BoNT/C1 does not change staining for syx-\u0394S-myc, but leads to a significant increase of syntaxin-myc staining.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "d7bf399f-4795-4c82-800c-144a8d8277d1",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C28",
+      "claim": "BoNT/C1 leads to a significant increase of syntaxin-myc staining.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7, BoNT/C1 does not change staining for syx-\u0394S-myc, but leads to a significant increase of syntaxin-myc staining.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "1d59c0f5-1128-4052-954a-32f8164759a7",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C29",
+      "claim": "The cytoplasmic domain, specifically the SNARE-motif, packs molecules denser and thereby decreases the staining intensity of the extracellular epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the idea that the cytoplasmic domain, specifically the SNARE-motif, packs molecules denser and thereby decreases the staining intensity of the extracellular epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the BoNT/C1 cleavage experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "d01d02b3-6a64-4cea-8d5b-2a464d85d610",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C30",
+      "claim": "A crystal structure analysis of the ternary SNARE-complex showed that the helical-conformation of syntaxin extends beyond the protein's SNARE-motif and continues until its C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure analysis of the ternary SNARE-complex showed that the helical-conformation of syntaxin extends beyond the protein's SNARE-motif and continues until its C-terminus (Stein et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stein et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "00d86acf-b727-4973-9e0e-659fd57e8f33",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C31",
+      "claim": "Both syx-CAAX and syx-\u0394S-CAAX were much more accessible for antibody staining than syntaxin.",
+      "claim_type": "EXPLICIT",
+      "source": "All constructs were organized in clusters, and both syx-CAAX and syx-\u0394S-CAAX were much more accessible for antibody staining than syntaxin (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "43fb6475-d11c-465a-adc1-cf4a432195bc",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C32",
+      "claim": "Straight extended helices are advantageous for tight protein/cluster packing.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that straight extended helices are advantageous for tight protein/cluster packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the CAAX construct experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "39d08612-6c96-437c-97f5-63f9c125b976",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C33",
+      "claim": "Mobility measurements, cluster-size and myc-epitope accessibility suggest that deletions of the cytoplasmic region produce a state of looser packing.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, mobility measurements, cluster-size and myc-epitope accessibility suggest that deletions of the cytoplasmic region produce a state of looser packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental approaches including FRAP, STED microscopy, and epitope accessibility assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "8f7e03cb-ae76-44c5-823b-ea59c3ef1c02",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C34",
+      "claim": "The number of syx-\u0394S molecules accommodated in a cluster phase is not limited by space or packing density.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the number of syx-\u0394S molecules accommodated in a cluster phase is not limited by space or packing density, which is of conceptual significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that syx-\u0394S forms looser clusters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "9dfa6859-67da-441a-9a33-59c0379ea68c",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C35",
+      "claim": "In the presence of the full cytoplasmic domain the same copy number of molecules accumulate in fewer clusters, necessarily yielding a higher packing density.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in the presence of the full cytoplasmic domain the same copy number of molecules accumulate in fewer clusters, necessarily yielding a higher packing density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the clustering behavior of full-length syntaxin and deletion constructs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "aaa1112e-b96c-4938-8b36-7de16b97f653",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C36",
+      "claim": "Cluster size seems to be in a range from 70 to 100 nm, which is also the typical size of other membrane protein clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, though absolute figures on size are difficult to obtain, no matter which construct and at which expression level cluster size seems to be in a range from 70 to 100 nm, which is also the typical size of other membrane protein clusters (Lang and Rizzoli, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on STED microscopy data and is compared to previous studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "c585dcf2-30dc-40f1-a537-e9d898714115",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C37",
+      "claim": "Factors restricting the further growth of nano-cluster phases are likely very basic mechanisms, including a combination of cholesterol effects, hydrophobic mismatch and ionic lipid-protein sequestering.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors restricting the further growth of nano-cluster phases are likely very basic mechanisms, including a combination of cholesterol effects, hydrophobic mismatch and ionic lipid-protein sequestering (Recouvreux and Lenne, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation to Recouvreux and Lenne, 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "d5284607-ebc2-46b9-8e7f-5b066872c8c2",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C38",
+      "claim": "The SNARE-motif N-terminal portion is required for zippering from the N- to the C-termini of a heterologous SNARE-motif bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the SNARE-motif N-terminal portion, which we found to be crucial for mobility restriction in this study, is also required for zippering from the N- to the C-termini of a heterologous SNARE-motif bundle (S\u00f8rensen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to S\u00f8rensen et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "3024f28d-0386-4016-99c0-8725ef84fe4b",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C39",
+      "claim": "In the ternary SNARE complex syntaxin helicity extends into the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in the ternary SNARE complex syntaxin helicity extends into the membrane (Stein et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stein et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "17524eda-c82b-4eea-a194-c64064a02916",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C40",
+      "claim": "The simplest core clustering reaction would be a homophilic or heterophilic SNARE-zipper.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot exclude that other, yet unidentified proteins participate in clustering, we propose the simplest core clustering reaction would be a homophilic or heterophilic SNARE-zipper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "b1ed628e-0488-42f0-9261-3c9721ae66b8",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C41",
+      "claim": "The syntaxin molecule carries a net negative charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the syntaxin molecule carries a net negative charge, electrostatic repulsions likely preclude direct contact of all SNARE motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biochemical properties of syntaxin, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "1a728b2d-4230-4b3e-a964-f9d6b46dd7b3",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C42",
+      "claim": "Ca2+ increases the packing density of negatively charged proteins, among them syntaxin 1A.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate whether such dense packing can be achieved in the presence of Ca2+ that increases the packing density of negatively charged proteins, among them syntaxin 1A (Zilly et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation to Zilly et al., 2011.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "47c366b1-e892-4267-925c-aa7b28786401",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C43",
+      "claim": "Two basic mechanisms underlie membrane protein clustering: loose clustering for which the TMS is sufficient, and cytoplasmic interactions which mediate tight cluster packing.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, two basic mechanisms underlie membrane protein clustering: loose clustering for which the TMS is sufficient, and cytoplasmic interactions which mediate tight cluster packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from all the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "6d2ecfc2-9826-41ee-bcf0-07b9c2cc6d15",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C44",
+      "claim": "Without proper membrane propagated forces (e.g. cholesterol depletion) clusters disperse.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, loose-cluster formation is crucial, as without proper membrane propagated forces (e.g. cholesterol depletion) clusters disperse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and previous knowledge about cholesterol's role in clustering.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "b59cf17c-5fe4-4663-9808-33a41b30b53a",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C45",
+      "claim": "The cytoplasmic reaction alone is not sufficient for cluster formation, at least not for tightly packed clusters as suggested by the CAAX experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words the cytoplasmic reaction alone is not sufficient for cluster formation, at least not for tightly packed clusters as suggested by the CAAX experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the CAAX construct experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "bce8c38e-c71b-44d0-9b17-712d9b7ea011",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C46",
+      "claim": "Essentially all membrane domains depend on cholesterol.",
+      "claim_type": "EXPLICIT",
+      "source": "Because essentially all membrane domains depend on cholesterol (Saka et al., 2014), we propose that the here identified hierarchical model of membrane protein clustering is of general significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Saka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "5347b5f7-4bc5-4920-8437-83a5da56b103",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C47",
+      "claim": "The hierarchical model of membrane protein clustering identified in this study is of general significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Because essentially all membrane domains depend on cholesterol (Saka et al., 2014), we propose that the here identified hierarchical model of membrane protein clustering is of general significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the experimental findings and the general dependence of membrane domains on cholesterol.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "87bbbf84-ff4d-4b29-9704-27ab2f55d4e5",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C48",
+      "claim": "Size does not necessarily scale with the number of molecules the structure contains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the data show that size does not necessarily scale with the number of molecules the structure contains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that clusters of different constructs have similar sizes but different packing densities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "8c377ba0-44a3-47fc-9d0f-ea11afc2a8e3",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C49",
+      "claim": "Forces acting on the transmembrane segment produce loose clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysing protein mobility, cluster size and accessibility to myc-epitopes we show that forces acting on the transmembrane segment produce loose clusters, while cytoplasmic protein interactions mediate a tightly packed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental approaches presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "cd8877b4-742d-4870-a471-cee91bb326ab",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C50",
+      "claim": "Cytoplasmic protein interactions mediate a tightly packed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysing protein mobility, cluster size and accessibility to myc-epitopes we show that forces acting on the transmembrane segment produce loose clusters, while cytoplasmic protein interactions mediate a tightly packed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental approaches presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "d9f46a8e-2fbe-4ee6-b261-dc4ed797d3b2",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C51",
+      "claim": "The data identify a hierarchy in membrane protein clustering likely being a paradigm for many cellular self-organization processes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the data identify a hierarchy in membrane protein clustering likely being a paradigm for many cellular self-organization processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "e6005523-b05c-4ba5-a0ef-ceeda48838b6",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C52",
+      "claim": "Syntaxin nano-clusters are composed of 50\u201375 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Several approaches show that syntaxin nano-clusters are composed of 50\u201375 molecules, have a size of 50\u201360 nm and exchange molecules with each other (Sieber et al., 2007; Rickman et al., 2010; Knowles et al., 2010; Barg et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "8a3bc144-fe14-460e-acf2-f2d16e54a122",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C53",
+      "claim": "Syntaxin nano-clusters have a size of 50\u201360 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Several approaches show that syntaxin nano-clusters are composed of 50\u201375 molecules, have a size of 50\u201360 nm and exchange molecules with each other (Sieber et al., 2007; Rickman et al., 2010; Knowles et al., 2010; Barg et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "5bb30298-46fc-4733-8500-f74afa3c4638",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C54",
+      "claim": "Syntaxin nano-clusters exchange molecules with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Several approaches show that syntaxin nano-clusters are composed of 50\u201375 molecules, have a size of 50\u201360 nm and exchange molecules with each other (Sieber et al., 2007; Rickman et al., 2010; Knowles et al., 2010; Barg et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "fea1bdfa-32c9-4354-b4dd-500b5a2b32da",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C55",
+      "claim": "Syntaxin domains disperse when cholesterol is depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Syntaxin domains disperse when cholesterol is depleted (Lang et al., 2001; Chamberlain et al., 2001), are dependent on ionic interactions between PIPs (phosphatidylinositol phosphates) and a polybasic stretch that can disrupt (Murray and Tamm, 2009, 2011) or promote (van den Bogaart et al, 2011) clustering, and hydrophobic mismatch is also implicated in clustering (Milovanovic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lang et al., 2001 and Chamberlain et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "8f9dc855-c918-49e4-b706-47d17af8eaa1",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C56",
+      "claim": "Syntaxin clustering is dependent on ionic interactions between PIPs and a polybasic stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "Syntaxin domains disperse when cholesterol is depleted (Lang et al., 2001; Chamberlain et al., 2001), are dependent on ionic interactions between PIPs (phosphatidylinositol phosphates) and a polybasic stretch that can disrupt (Murray and Tamm, 2009, 2011) or promote (van den Bogaart et al, 2011) clustering, and hydrophobic mismatch is also implicated in clustering (Milovanovic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Murray and Tamm, 2009, 2011 and van den Bogaart et al, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "ac1c487f-6139-422f-be8b-c3cf605327a6",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C57",
+      "claim": "Hydrophobic mismatch is implicated in syntaxin clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Syntaxin domains disperse when cholesterol is depleted (Lang et al., 2001; Chamberlain et al., 2001), are dependent on ionic interactions between PIPs (phosphatidylinositol phosphates) and a polybasic stretch that can disrupt (Murray and Tamm, 2009, 2011) or promote (van den Bogaart et al, 2011) clustering, and hydrophobic mismatch is also implicated in clustering (Milovanovic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Milovanovic et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "eea2e40e-34be-4161-9fb1-d6e3a1520e5c",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C58",
+      "claim": "The TMS of syntaxin is capable of forming clusters on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the TMS of syntaxin is capable of forming clusters on its own (Sieber et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sieber et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "1d071bdc-1bd7-480e-a063-f6c6aaab5314",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C59",
+      "claim": "The SNARE-motif of the cytoplasmic domain targets free syntaxin molecules to already existing syntaxin clusters and thus slows down syntaxin mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the SNARE-motif of the cytoplasmic domain targets free syntaxin molecules to already existing syntaxin clusters and thus slows down syntaxin mobility (Sieber et al., 2007, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Sieber et al., 2007, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "56655483-0b9d-4c22-b4f3-6c7febb775af",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C60",
+      "claim": "Cytoplasmic interactions increase the time a syntaxin molecule resides in a clustered structure, before it is again released and diffuses to the next cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that cytoplasmic interactions increase the time a syntaxin molecule resides in a clustered structure, before it is again released and diffuses to the next cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that the SNARE-motif slows down syntaxin mobility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "be9703e3-8aae-4f8b-aaad-b113e8b745b2",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C61",
+      "claim": "Super-resolution microscopy revealed that membrane protein microdomains are spherical structures with dimensions in the 100 nm range.",
+      "claim_type": "EXPLICIT",
+      "source": "In the last decade, super-resolution microscopy revealed that such domains are spherical structures with dimensions in the 100 nm range (Lang and Rizzoli, 2010), frequently circumscribed as protein clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lang and Rizzoli, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "8917265f-91ab-4f37-a965-253e10cf1bce",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C62",
+      "claim": "Protein isoforms locate to separate clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was observed that protein isoforms locate to separate clusters (Uhles et al., 2003; Kai et al., 2006; Low et al., 2006), difficult to explain with forces exclusively propagated by the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Uhles et al., 2003; Kai et al., 2006; Low et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "86cd86ef-6395-4800-8f67-3be5b8917627",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "claim_id": "C63",
+      "claim": "HepG2 cells were tested negative for mycoplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were tested negative for mycoplasma (GATC Biotech, job number 95361).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the quality control of the cell line used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9af02110-3d41-4511-8350-a410d5f6ef0e",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "pH-quenching experiments demonstrate that syntaxin constructs have 20-40% non-quenched fluorescence that does not significantly increase after bafilomycin treatment, indicating that not all overexpressed proteins reach the plasma membrane, but there are only minor differences in plasma membrane targeting efficiency between syntaxin variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 are supported by experimental data shown in Figure 2. The pH-quenching approach with appropriate controls (GFP-SNAP25 and VAMP8-GFP) provides valid evidence for plasma membrane localization. The conclusion that targeting efficiency is similar across constructs is appropriately drawn from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "595de153-e6f3-40f4-8c39-25f67b38f30f",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FRAP experiments in live cells and isolated membrane sheets demonstrate that syntaxin constructs become progressively faster in the order syntaxin, syx-\u0394S, and syx-\u0394Cyt, with only full-length syntaxin showing expression-dependent mobility reduction. This establishes that an intact SNARE-motif is required for restricting syntaxin mobility in non-neuronal cells, independent of SNAP25 interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are well-supported by FRAP data in Figures 3 and 4. The use of both live cells and isolated membrane sheets strengthens the conclusion by eliminating confounding intracellular recovery. Statistical analysis (Kruskal-Wallis test, p<0.05) supports the mobility differences. The conclusion about SNARE-motif requirement is appropriately drawn from the systematic deletion analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "31ca774b-cea2-4644-b469-3caa47aa4240",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "STED microscopy reveals that cluster number per area depends on staining intensity (14-19 clusters/\u03bcm\u00b2), while cluster size and intensity are less dependent on staining intensity. Syntaxin forms spherical clusters with lower staining intensities, while syx-\u0394S forms elongated structures at high intensities. Clusters tend to increase in size upon SNARE-motif shortening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are supported by STED microscopy data in Figure 5. The cluster density is consistent with prior neuronal studies. However, the conclusion about size increase (C25) is qualified by the authors' acknowledgment that absolute sizes depend on labeling and laser intensity, which appropriately recognizes technical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "961e65e5-f4ad-4e06-8da8-f2a596656540",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Comparative analysis of immunostaining and western blot signals demonstrates that syx-\u0394S shows approximately three-fold brighter staining than syntaxin when normalized to protein expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by data in Figure 6 and Figure 6\u2014figure supplement 1. The experimental design appropriately controls for expression level differences by normalizing microscopy signals to western blot signals. Statistical analysis (paired t-test, p=0.005) supports the three-fold difference. This provides evidence for differential epitope accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "59f42e1d-cec3-48b8-bf8b-845587276633",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BoNT/C1 cleavage of the SNARE-motif significantly increases syntaxin-myc staining but does not affect syx-\u0394S-myc staining, supporting the conclusion that the cytoplasmic domain, specifically the SNARE-motif, packs molecules more densely and thereby decreases extracellular epitope accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by experimental data in Figure 7. The differential effect of BoNT/C1 on syntaxin versus syx-\u0394S provides strong evidence for the role of the SNARE-motif in packing density. Statistical analysis (t-test, p=0.034) supports the significance. The experimental design appropriately uses syx-\u0394S as a control since it lacks the N-terminal SNARE-motif but has the same cleavage site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "20c67dfe-24ba-451f-9c26-f7ef11d13d91",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CAAX-anchored constructs (syx-CAAX and syx-\u0394S-CAAX) show much higher antibody accessibility than full-length syntaxin, suggesting that straight extended helices are advantageous for tight packing and that cytoplasmic interactions alone are insufficient for tight cluster formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, and C45 are supported by data in Figure 8. The CAAX experiment provides evidence that disrupting the continuous helix from SNARE-motif through transmembrane domain affects packing. Statistical analysis (t-test, p<0.05) supports the accessibility differences. However, the conclusion about helical structure (C32) involves some inference beyond direct structural measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "bcb048bc-54e0-4382-948c-b43abf7f06f9",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Integration of mobility measurements, cluster size analysis, and epitope accessibility demonstrates that cytoplasmic domain deletions produce looser packing, with syx-\u0394S clusters not limited by space or packing density. Full-length syntaxin accumulates the same number of molecules in fewer, more densely packed clusters, establishing that cluster size does not necessarily scale with molecule number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C48 represent the synthesis of multiple experimental approaches (FRAP, STED, epitope accessibility). The conclusion is well-supported by converging evidence from independent methods. The inference about packing density (C34-C35) is logical given the combined data, though it involves some interpretation beyond direct measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "f3141914-008b-4318-81a7-f56beac82ead",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cluster size ranges from 70-100 nm across all constructs and expression levels, consistent with typical membrane protein cluster sizes. Factors restricting cluster growth likely include cholesterol effects, hydrophobic mismatch, and ionic lipid-protein sequestering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C36 is supported by STED data, though the authors acknowledge difficulty in obtaining absolute size measurements. Claim C37 is speculative and relies on a citation rather than experimental evidence from this study. The proposed mechanisms are plausible but not directly tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "5963a4b0-e8f4-4082-8e06-079a2532d9f0",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that the simplest core clustering reaction would be a homophilic or heterophilic SNARE-zipper, though electrostatic repulsions from syntaxin's net negative charge likely preclude direct contact of all SNARE motifs. Ca\u00b2\u207a may enable dense packing by increasing packing density of negatively charged proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40 and C42 are explicitly speculative proposals not directly tested in this study. Claim C41 about syntaxin's negative charge is established knowledge. While the SNARE-zipper hypothesis is consistent with the data, alternative mechanisms are not ruled out, and the Ca\u00b2\u207a hypothesis is not experimentally tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "95549a5e-7d6f-41a8-8267-6f68715a5d97",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study identifies a hierarchical model of membrane protein clustering with two basic mechanisms: loose clustering mediated by transmembrane segment forces, and tight cluster packing mediated by cytoplasmic interactions. Loose-cluster formation is necessary as cholesterol depletion causes cluster dispersion, and cytoplasmic interactions alone are insufficient for tight cluster formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45, C49-C50 represent the main conclusions of the study, supported by the comprehensive experimental evidence from FRAP, STED, and epitope accessibility experiments. The hierarchical model is well-supported by the systematic deletion analysis. The claim about cholesterol (C44) relies on prior knowledge and inference rather than direct experimental evidence in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "78ad33d0-5e77-4916-a429-e485ac15b862",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that the hierarchical model of membrane protein clustering identified in this study is of general significance for cellular self-organization processes, based on the universal dependence of membrane domains on cholesterol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C47 and C51 are speculative proposals about the generalizability of findings. While claim C46 about cholesterol dependence is supported by citation, the broader claim of general significance (C47, C51) extends beyond the syntaxin-specific data presented. This represents an interesting hypothesis but requires validation in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "213ea5d0-5707-4646-aa31-d655f5340b10",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The physical dimensions of GFP (~2.5 nm) could impede close packing of syntaxin C-termini. In densely packed clusters, antibody binding to one myc-tag prevents binding to neighboring tags due to steric hindrance, with substoichiometric labeling increasing as epitopes are more closely packed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 describe the methodological rationale for using myc-tags to probe packing density. These are reasonable inferences based on known physical dimensions of GFP and antibodies. The principle of steric hindrance in densely packed epitopes is well-established and forms the basis for the epitope accessibility experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "c39234ae-d85f-40be-adba-ee18eee3d7f0",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study establishes the experimental system using HepG2 cells that lack endogenous syntaxin 1A and SNAP25, with syntaxin constructs having defined domain structures. Control constructs (GFP-SNAP25, VAMP8-GFP) and bafilomycin treatment are used to validate the pH-quenching approach for assessing plasma membrane localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 describe the experimental system, constructs, and methodological controls. These are well-supported by established knowledge (C1-C4, C6, C8-C9) and appropriate citations (C3, C5, C7, C8). The choice of HepG2 cells is appropriate for isolating the role of the cytoplasmic domain from SNAP25 interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "e08d5761-ebce-45e4-afb6-63130c9e568a",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior structural studies show that syntaxin helicity extends beyond the SNARE-motif to the C-terminus in the ternary SNARE complex, and the N-terminal portion of the SNARE-motif is required for N-to-C terminal zippering in heterologous SNARE bundles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C38, and C39 accurately cite prior structural and functional studies (Stein et al., 2009; S\u00f8rensen et al., 2006). These provide important context for interpreting the current findings about the role of the SNARE-motif in clustering.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "a91340c4-701c-4c6d-9ad9-5221a385a361",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies established that syntaxin nano-clusters contain 50-75 molecules with 50-60 nm size, exchange molecules, depend on cholesterol and PIP interactions, and involve hydrophobic mismatch. The transmembrane segment can form clusters independently, while the SNARE-motif targets molecules to existing clusters and slows mobility. Protein isoforms locate to separate clusters, suggesting specific protein-protein interactions contribute to clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C62 accurately summarize prior literature with appropriate citations. These establish the knowledge foundation for the current study and justify the research questions. The citations appear accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    },
+    {
+      "id": "2885cb10-9cb6-407f-9fed-5dafd60dcb6f",
+      "content_id": "e5109259-58f0-4153-a42c-6d22a8039ad3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "HepG2 cells used in the study tested negative for mycoplasma contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is a quality control statement supported by documentation. This is important for ensuring experimental validity but represents routine methodological reporting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:06:18.319530Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fdb09976-380c-4dc3-9fca-cf71ed09cf66",
+      "result_id": "9af02110-3d41-4511-8350-a410d5f6ef0e"
+    },
+    {
+      "claim_id": "4ba6cb5a-b2cd-4f32-8f7a-f7664c9823d9",
+      "result_id": "9af02110-3d41-4511-8350-a410d5f6ef0e"
+    },
+    {
+      "claim_id": "0e5162a3-0fc9-4568-adf9-0e2aa5f52e52",
+      "result_id": "9af02110-3d41-4511-8350-a410d5f6ef0e"
+    },
+    {
+      "claim_id": "2690ff74-2620-4bbb-a0a2-cf9910c91416",
+      "result_id": "9af02110-3d41-4511-8350-a410d5f6ef0e"
+    },
+    {
+      "claim_id": "71819230-3d73-4aa9-97e1-ebb45954085f",
+      "result_id": "9af02110-3d41-4511-8350-a410d5f6ef0e"
+    },
+    {
+      "claim_id": "66e71708-5749-4c45-bc52-0a4071c535dd",
+      "result_id": "595de153-e6f3-40f4-8c39-25f67b38f30f"
+    },
+    {
+      "claim_id": "bd84900a-668a-4749-9cc7-4b03e3d42afb",
+      "result_id": "595de153-e6f3-40f4-8c39-25f67b38f30f"
+    },
+    {
+      "claim_id": "8c0dba89-4ba0-4b44-b120-baae29864a0f",
+      "result_id": "595de153-e6f3-40f4-8c39-25f67b38f30f"
+    },
+    {
+      "claim_id": "f8943469-baec-4384-8e57-e795df36e6db",
+      "result_id": "31ca774b-cea2-4644-b469-3caa47aa4240"
+    },
+    {
+      "claim_id": "59979062-cc5b-4088-8b96-e5f3e6985a89",
+      "result_id": "31ca774b-cea2-4644-b469-3caa47aa4240"
+    },
+    {
+      "claim_id": "a13d7de5-9d9c-46b2-8c4b-2614e0ce7f82",
+      "result_id": "31ca774b-cea2-4644-b469-3caa47aa4240"
+    },
+    {
+      "claim_id": "a789287e-e65f-416f-a1ad-8e7204a1859b",
+      "result_id": "31ca774b-cea2-4644-b469-3caa47aa4240"
+    },
+    {
+      "claim_id": "2edc2f4d-b1a0-48f0-b394-85afca1e31c2",
+      "result_id": "31ca774b-cea2-4644-b469-3caa47aa4240"
+    },
+    {
+      "claim_id": "d5d6b02d-13d3-40a0-ad46-fba36114035f",
+      "result_id": "961e65e5-f4ad-4e06-8da8-f2a596656540"
+    },
+    {
+      "claim_id": "6c7218ca-9df3-4568-bcad-5a1bb5baf4d9",
+      "result_id": "59f42e1d-cec3-48b8-bf8b-845587276633"
+    },
+    {
+      "claim_id": "d7bf399f-4795-4c82-800c-144a8d8277d1",
+      "result_id": "59f42e1d-cec3-48b8-bf8b-845587276633"
+    },
+    {
+      "claim_id": "1d59c0f5-1128-4052-954a-32f8164759a7",
+      "result_id": "59f42e1d-cec3-48b8-bf8b-845587276633"
+    },
+    {
+      "claim_id": "00d86acf-b727-4973-9e0e-659fd57e8f33",
+      "result_id": "20c67dfe-24ba-451f-9c26-f7ef11d13d91"
+    },
+    {
+      "claim_id": "43fb6475-d11c-465a-adc1-cf4a432195bc",
+      "result_id": "20c67dfe-24ba-451f-9c26-f7ef11d13d91"
+    },
+    {
+      "claim_id": "b59cf17c-5fe4-4663-9808-33a41b30b53a",
+      "result_id": "20c67dfe-24ba-451f-9c26-f7ef11d13d91"
+    },
+    {
+      "claim_id": "39d08612-6c96-437c-97f5-63f9c125b976",
+      "result_id": "bcb048bc-54e0-4382-948c-b43abf7f06f9"
+    },
+    {
+      "claim_id": "8f7e03cb-ae76-44c5-823b-ea59c3ef1c02",
+      "result_id": "bcb048bc-54e0-4382-948c-b43abf7f06f9"
+    },
+    {
+      "claim_id": "9dfa6859-67da-441a-9a33-59c0379ea68c",
+      "result_id": "bcb048bc-54e0-4382-948c-b43abf7f06f9"
+    },
+    {
+      "claim_id": "87bbbf84-ff4d-4b29-9704-27ab2f55d4e5",
+      "result_id": "bcb048bc-54e0-4382-948c-b43abf7f06f9"
+    },
+    {
+      "claim_id": "aaa1112e-b96c-4938-8b36-7de16b97f653",
+      "result_id": "f3141914-008b-4318-81a7-f56beac82ead"
+    },
+    {
+      "claim_id": "c585dcf2-30dc-40f1-a537-e9d898714115",
+      "result_id": "f3141914-008b-4318-81a7-f56beac82ead"
+    },
+    {
+      "claim_id": "17524eda-c82b-4eea-a194-c64064a02916",
+      "result_id": "5963a4b0-e8f4-4082-8e06-079a2532d9f0"
+    },
+    {
+      "claim_id": "b1ed628e-0488-42f0-9261-3c9721ae66b8",
+      "result_id": "5963a4b0-e8f4-4082-8e06-079a2532d9f0"
+    },
+    {
+      "claim_id": "1a728b2d-4230-4b3e-a964-f9d6b46dd7b3",
+      "result_id": "5963a4b0-e8f4-4082-8e06-079a2532d9f0"
+    },
+    {
+      "claim_id": "47c366b1-e892-4267-925c-aa7b28786401",
+      "result_id": "95549a5e-7d6f-41a8-8267-6f68715a5d97"
+    },
+    {
+      "claim_id": "6d2ecfc2-9826-41ee-bcf0-07b9c2cc6d15",
+      "result_id": "95549a5e-7d6f-41a8-8267-6f68715a5d97"
+    },
+    {
+      "claim_id": "b59cf17c-5fe4-4663-9808-33a41b30b53a",
+      "result_id": "95549a5e-7d6f-41a8-8267-6f68715a5d97"
+    },
+    {
+      "claim_id": "8c377ba0-44a3-47fc-9d0f-ea11afc2a8e3",
+      "result_id": "95549a5e-7d6f-41a8-8267-6f68715a5d97"
+    },
+    {
+      "claim_id": "cd8877b4-742d-4870-a471-cee91bb326ab",
+      "result_id": "95549a5e-7d6f-41a8-8267-6f68715a5d97"
+    },
+    {
+      "claim_id": "bce8c38e-c71b-44d0-9b17-712d9b7ea011",
+      "result_id": "78ad33d0-5e77-4916-a429-e485ac15b862"
+    },
+    {
+      "claim_id": "5347b5f7-4bc5-4920-8437-83a5da56b103",
+      "result_id": "78ad33d0-5e77-4916-a429-e485ac15b862"
+    },
+    {
+      "claim_id": "d9f46a8e-2fbe-4ee6-b261-dc4ed797d3b2",
+      "result_id": "78ad33d0-5e77-4916-a429-e485ac15b862"
+    },
+    {
+      "claim_id": "f4abe6fe-d578-497c-bf05-7841fb36988b",
+      "result_id": "213ea5d0-5707-4646-aa31-d655f5340b10"
+    },
+    {
+      "claim_id": "a1a2ff3f-c4f6-4178-a9fa-720b6da39042",
+      "result_id": "213ea5d0-5707-4646-aa31-d655f5340b10"
+    },
+    {
+      "claim_id": "ef420721-ba3a-4c05-943a-b04659a67fce",
+      "result_id": "213ea5d0-5707-4646-aa31-d655f5340b10"
+    },
+    {
+      "claim_id": "0c19a7ba-b411-4081-bdc2-ca3a3f51f89e",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "4fc5cd9b-12a7-40f8-886d-20a465c21a15",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "b21a0d78-3fab-4aea-942c-6d67c61ac526",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "b46d3b9a-9deb-4fc6-874a-7055292120df",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "375964ad-6aca-4428-a9fa-69b5fcfe824b",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "53ea4d71-f4bd-47a7-bea2-06a0c72d77b4",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "953d26fb-958d-47af-ba20-b4073eb6a924",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "70d3d452-56ba-4885-8d65-56d9477a3d10",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "63bfe104-4281-4ee4-8f7c-809405c2c485",
+      "result_id": "c39234ae-d85f-40be-adba-ee18eee3d7f0"
+    },
+    {
+      "claim_id": "d01d02b3-6a64-4cea-8d5b-2a464d85d610",
+      "result_id": "e08d5761-ebce-45e4-afb6-63130c9e568a"
+    },
+    {
+      "claim_id": "d5284607-ebc2-46b9-8e7f-5b066872c8c2",
+      "result_id": "e08d5761-ebce-45e4-afb6-63130c9e568a"
+    },
+    {
+      "claim_id": "3024f28d-0386-4016-99c0-8725ef84fe4b",
+      "result_id": "e08d5761-ebce-45e4-afb6-63130c9e568a"
+    },
+    {
+      "claim_id": "e6005523-b05c-4ba5-a0ef-ceeda48838b6",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "8a3bc144-fe14-460e-acf2-f2d16e54a122",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "5bb30298-46fc-4733-8500-f74afa3c4638",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "fea1bdfa-32c9-4354-b4dd-500b5a2b32da",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "8f9dc855-c918-49e4-b706-47d17af8eaa1",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "ac1c487f-6139-422f-be8b-c3cf605327a6",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "eea2e40e-34be-4161-9fb1-d6e3a1520e5c",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "1d071bdc-1bd7-480e-a063-f6c6aaab5314",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "56655483-0b9d-4c22-b4f3-6c7febb775af",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "be9703e3-8aae-4f8b-aaad-b113e8b745b2",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "8917265f-91ab-4f37-a965-253e10cf1bce",
+      "result_id": "a91340c4-701c-4c6d-9ad9-5221a385a361"
+    },
+    {
+      "claim_id": "86cd86ef-6395-4800-8f67-3be5b8917627",
+      "result_id": "2885cb10-9cb6-407f-9fed-5dafd60dcb6f"
+    }
+  ],
+  "comparisons": []
+}

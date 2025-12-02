@@ -1,0 +1,1607 @@
+{
+  "submission": {
+    "id": "1a9e2f83-fc67-446d-be5d-d2c2c5688d53",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:00:52.053425Z",
+    "updated_at": "2025-12-02T02:00:52.053425Z"
+  },
+  "content": [
+    {
+      "id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "submission_id": "1a9e2f83-fc67-446d-be5d-d2c2c5688d53",
+      "content_type": "manuscript",
+      "content_text": "# Functional gradients of the cerebellum\n\n## Authors\n\n- Xavier Guell<sup>1</sup> ([ORCID: 0000-0002-0684-0954](https://orcid.org/0000-0002-0684-0954)) \u2020\n- Jeremy D Schmahmann<sup>2</sup>\n- John DE Gabrieli<sup>1</sup>\n- Satrajit S Ghosh<sup>1</sup> ([ORCID: 0000-0002-5312-6729](https://orcid.org/0000-0002-5312-6729)) \u2020\n\n### Affiliations\n\n1. McGovern Institute for Brain Research Massachusetts Institute of Technology Cambridge United States\n2. Laboratory for Neuroanatomy and Cerebellar Neurobiology, Department of Neurology Massachusetts General Hospital, Harvard Medical School Boston United States\n3. Ataxia Unit, Cognitive Behavioral Neurology Unit, Department of Neurology Massachusetts General Hospital, Harvard Medical School Boston United States\n4. Department of Otolaryngology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA central principle for understanding the cerebral cortex is that macroscale anatomy reflects a functional hierarchy from primary to transmodal processing. In contrast, the central axis of motor and nonmotor macroscale organization in the cerebellum remains unknown. Here we applied diffusion map embedding to resting-state data from the Human Connectome Project dataset (n = 1003), and show for the first time that cerebellar functional regions follow a gradual organization which progresses from primary (motor) to transmodal (DMN, task-unfocused) regions. A secondary axis extends from task-unfocused to task-focused processing. Further, these two principal gradients revealed novel functional properties of the well-established cerebellar double motor representation (lobules I-VI and VIII), and its relationship with the recently described triple nonmotor representation (lobules VI/Crus I, Crus II/VIIB, IX/X). Functional differences exist not only between the two motor but also between the three nonmotor representations, and second motor representation might share functional similarities with third nonmotor representation.\n\n## Introduction\n\nComprehending the relationship between macroscale structure and function is fundamental to understanding the nervous system. One central principle in the study of the cerebral cortex is that macroscale anatomy reflects a functional hierarchy from primary to transmodal processing (Mesulam, 1998, 2008). For example, higher-level aspects of movement planning and decision making are situated predominantly in the anterior aspects of the frontal lobe close to the primary motor cortex, while spatial attention and spatial awareness processes predominantly engage regions of the posterior parietal lobe that are closer to the primary somatosensory cortex (Andersen and Cui, 2009). Similarly, higher-level aspects of auditory processing such as language comprehension (e.g. Wernicke\u2019s area) are situated closer to the primary auditory cortex, while higher-level aspects of motor processing such as language production (e.g. Broca\u2019s area) are situated closer to the primary motor cortex.\n\nIn contrast, and despite its growing importance in basic and clinical neuroscience, the central axis of motor and nonmotor macroscale organization in the cerebellum remains unknown. The cerebellum has extensive connectivity with motor and nonmotor aspects of the extracerebellar structures. In addition to anatomy, evidence from clinical, behavioral and neuroimaging studies indicates that the human cerebellum is engaged not only in motor control but also in cognitive and affective processing (Schmahmann and Pandya, 1991; Schmahmann, 1996; Baillieux et al., 2008; Stoodley and Schmahmann, 2009; Thompson and Steinmetz, 2009; Tedesco et al., 2011; Stoodley et al., 2012; E et al., 2014; Koziol et al., 2014; Guell et al., 2015; Hoche et al., 2016, 2018; Schmahmann and Pandya, 1997a, Schmahmann and Pandya, 1997b1997b; Middleton and Strick, 1994; Schmahmann and Sherman, 1998; Levisohn et al., 2000; Riva and Giorgi, 2000; Ravizza et al., 2006; Schmahmann et al., 2007). Further, structural and functional analyses have identified cerebellar abnormalities not only in primary cerebellar injury or degeneration, but also in many psychiatric and neurological diseases that degrade cognition and affect. Examples include major depressive disorder, anxiety disorders, bipolar disorder, schizophrenia, attention deficit and hyperactivity disorder, autism spectrum disorder (Phillips et al., 2015; Arnold Anteraper et al., 2018), posttraumatic stress disorder (Wang et al., 2016), fibromyalgia (Kim et al., 2015), Alzheimer\u2019s disease (Guo et al., 2016), frontotemporal dementia (Guo et al., 2016), vascular dementia (Bastos Leite et al., 2006), Huntington\u2019s disease (Wolf et al., 2015), multiple sclerosis (Wilkins, 2017) and Parkinson\u2019s disease (Wu and Hallett, 2013). Unmasking the basic hierarchical principles of cerebellar macroscale organization can therefore have large impact in basic and clinical neuroscience.\n\nThe study of connectivity gradients in resting state fMRI data - an aspect of cerebellar functional neuroanatomy that remains largely unexplored - can provide critical information necessary to address this knowledge gap. The fact that there are no cerebellar cortical association fibers (Schmahmann, 1996; Schmahmann and Pandya, 2008) makes it difficult to analyze intra-cerebellar progressive hierarchical relationships using anatomical techniques. Resting-state functional connectivity from fMRI data becomes, in this case, a useful approach to interrogate functional relationships between nearby cerebellar structures which are not directly connected. Contrasting with the common practice of partitioning neural structures into discrete areas with sharp boundaries (Damoiseaux et al., 2006; Yeo et al., 2011), Margulies and colleagues (Margulies et al., 2016) provided a simple and powerful description of the \u2018principal gradient\u2019 of resting-state functional connectivity in the cerebral cortex using diffusion map embedding. This gradient extended from primary/unimodal cortices to regions corresponding to the default mode network (DMN), confirming the primary-unimodal-transmodal hierarchical principle of the cerebral cortex (Mesulam, 1998, 2008). Similarly, Sepulcre and colleagues (Sepulcre et al., 2012) revealed transitions from primary sensory cortices to higher-order brain systems using stepwise functional connectivity. The present study is the first to use these analyses in the cerebellum.\n\nHere we set out to describe the principal gradients of intra-cerebellar connectivity by using resting-state diffusion map embedding. We aim to unmask the central axis of motor and nonmotor macroscale organization of the cerebellum, analogous to the fundamental primary-unimodal-transmodal hierarchical principle of cerebral cortex (Mesulam, 1998, 2008). To further characterize the functional significance and implications of these continuous gradients, we aimed to analyze their relationship with discrete cerebellar parcellations including task activity maps, resting state maps, and distinct areas of motor (first\u00a0=\u00a0I-VI, second\u00a0=\u00a0VIII) and nonmotor representation (first\u00a0=\u00a0VI/Crus I, second\u00a0=\u00a0Crus II/VIIB, third\u00a0=\u00a0IX/X) (Buckner et al., 2011; Guell et al., 2018a). We took advantage of the newly available and unparalleled power of the Human Connectome Project (HCP) dataset, where each participant (n\u00a0=\u00a01003) provided one full hour of resting-state data. We incorporated task activity maps (motor, working memory, emotion, social, and language processing) from a previously analyzed subset of the same group of participants (Guell et al., 2018a) (n\u00a0=\u00a0787). Maps of cerebellar representation of cerebral cortical resting-state networks were obtained from the study of Buckner et al. (2011), calculated in a different group of participants (n\u00a0=\u00a01000). Data-driven clustering and stability analyses were used to compare our findings with previous discrete cerebellar parcellations, as well as to validate our hypothesis-driven divisions. A supplementary analysis of cerebello-cerebral connectivity was used to validate our interpretation of asymmetries between the two motor and three nonmotor regions of cerebellar representation. Analysis of single participants from our cohort tested the robustness of our findings at the individual level, and a parallel analysis of functional gradients based on connectivity from the cerebellum to the cerebral cortex investigated the relationship between intra-cerebellar and cerebello-cerebral principles of organization.\n\n## Results\n\nOur analyses included data from 1003 participants of the Human Connectome Project (HCP) (Van Essen et al., 2013). We calculated functional gradients by analyzing the similarity of intra-cerebellar resting-state functional connectivity patterns of all cerebellar data points using diffusion map embedding (Figure 1\u2014figure supplement 1). The principal component resulting from this analysis (gradient 1) captures the main axis of macroscale functional organization of the cerebellum, and additional orthogonal components (gradient 2, 3, etc.) capture additional functional organizational properties. The resulting gradients were interpreted by analyzing their relationship to task activity (Guell et al., 2018a) and resting-state network (Buckner et al., 2011) cerebellar maps from previous studies, explored and compared to previous cerebellar parcellations using clustering analyses, and also compared to functional gradients calculated in the cerebellum using connectivity data between the cerebellum and the cerebral cortex (rather than intra-cerebellar connectivity data). We also analyzed asymmetries between the two motor (I-VI, VIII) and three nonmotor regions of cerebellar representation (VI/Crus I, Crus II/VIIB, IX/X) (Guell et al., 2018a) by comparing their relative position along gradients 1 and 2. As a supplementary analysis, we also contrasted cerebello-cerebral connectivity from each of these areas of representation. Analyses using single-subject data rather than group-averaged data tested whether our findings remained observable at the individual subject level.\n\n### Cerebellum gradients and relationship with discrete task activity and resting-state maps\n\nGradient 1 explained the largest part of variability in resting-state connectivity patterns within the cerebellum (Figure 1A). It extended bilaterally from lobules IV/V/VI and lobule VIII to posterior aspects of Crus I and Crus II as well as medial regions of lobule IX. Overlap with task activity maps (Figure 1B) revealed that Gradient 1 is anchored at one end by cerebellar motor regions and at the other end by regions engaged in the language task of the HCP dataset. Regions situated between the two extreme ends corresponded to areas involved in working memory and emotion task processing. Social processing was diffusely distributed across Gradient 1. Overlap with cerebellar representations of cerebral cortical resting-state networks (Figure 1B) revealed that Gradient 1 extends from sensorimotor network to DMN regions of the cerebellum. Ventral/dorsal attention and frontoparietal networks were situated between the two extreme ends.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig1-v1.jpg)\n\n**Figure 1.:** Gradient 1 extended from language task/DMN to motor regions. Gradient 2 isolated working memory/frontoparietal network areas. (A) Cerebellum flatmap atlas and gradients 1 and 2. (B) A scatterplot of the first two gradients. Each dot corresponds to a cerebellar voxel, position of each dot along x and y axis corresponds to position along Gradient 1 and Gradient 2 for that cerebellar voxel, and color of the dot corresponds to task activity (top) or resting-state network (bottom) associated with that particular voxel.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) This example presents a schematic representation of diffusion map embedding.\u00a0It illustrates the calculation of the principal functional gradient of 4 cerebellar voxels (red, green, blue, magenta) based on their functional connectivity with two target cerebellar voxels (yellow, orange). (B) Connectivity from each cerebellar voxel (red, green, blue, magenta) to the two target cerebellar voxels (yellow, orange) is represented as a two-dimensional vector. (C) All vectors can be represented in the same two-dimensional space. (D) Cosine distance between each pair of vectors is calculated, and (E) an affinity matrix is constructed as (1-cosine distance) for each pair of vectors. This affinity matrix represents the similarity of the connectivity patterns of each pair of voxels. (F) A Markov chain is constructed using information from the affinity matrix. Information from the affinity matrix is thus used to represent the probability of transition between each pair of vectors. In this way, there will be higher transition probability between pairs of voxels with similar connectivity patterns. This probability of transition between each pair of vectors can be analyzed as a symmetric transformation matrix, thus allowing the calculation of eigenvectors. (G) Eigenvectors derived from this transformation matrix represent the principal orthogonal directions of transition between all pairs of voxels. Here we illustrate the first resulting component of this analysis \u2013 the principal functional gradient of our four cerebellar voxels (red, green, blue, magenta) based on their connectivity with our two target cerebellar voxels (yellow, orange) progresses from the blue, to the green, to the magenta, to the red voxel. (H) This order is mapped back into our cerebellum map, allowing us to generate functional neuroanatomical descriptions. Of note, our cerebellar functional gradients were calculated using functional connectivity values of each cerebellar voxel with the rest of cerebellar voxels (rather than between four voxels and only two target cerebellar voxels, as in this example). Vectors in our analysis thus possessed many more than just two dimensions, but cosine distance can also be calculated between pairs of high-dimensional vectors. Diffusion map embedding using functional connectivity values from each cerebellar voxel to all cerebellar voxels thus captures the principal gradients of cerebellar functional neuroanatomy.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Left: variance explained by each gradient; red diamonds correspond to the first eight gradients. Right: Gradients 1\u20138. Gradients 3 and 4 revealed laterality asymmetries in areas of nonmotor processing (Crus I, Crus II, VIIB and IX) but not in areas of motor processing (IV/V/VI and VIII). Notably, these asymmetries were constrained to areas of nonmotor processing (asymmetries are not present in motor lobules IV/V/VI and VIII). Consistent with this observation, left/right asymmetries in cerebellar processing have been described in multiple nonmotor tasks (Hu et al., 2008) but not in motor processing. One extreme of Gradient 5, 7 and 8 included unilateral or bilateral aspects of lobule IX (extreme shown in red for Gradient 5 and 8 and in blue for Gradient 7). Gradient 6 included at one extreme anterior portions of Crus I and Crus II. The other end included medial Crus I and Crus II as well medial regions of lobule VIIB. The added percentage of variability explained by each following gradient was minimal.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Top: Variance explained by each gradient; red diamonds correspond to the first four gradients. Bottom: Gradients 1\u20134 with 4 and 10 sigma (\u03c3) values for smoothing of connectivity gradients. (B) A scatterplot of the first two gradients. Each dot corresponds to a cerebellar voxel, position of each dot along x and y axis corresponds to position along Gradient 1 and Gradient 2 for that cerebellar voxel, and color of the dot corresponds to task activity associated with that particular voxel. Scatterplots are shown for sigma\u00a0=\u00a04 (top) and sigma\u00a0=\u00a010 (bottom) values for smoothing of connectivity gradients. Task activity z maps are thresholded at z\u00a0>\u00a04 and include 4 mm spatial smoothing as provided by HCP, in addition to sigma\u00a0=\u00a02 smoothing using workbench command -cifti-smoothing.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Top row: Gradients 1 and 2 could also be observed when analyzing concatenated dataseries from a group of 32 participants, highlighting the applicability of our methodology to group studies with small cohorts of unrelated subjects. Bottom row: When calculating gradients within each individual participant of this subgroup and evaluating any of the first four resulting gradients, gradients with a distribution similar to gradient 1 could be observed in most cases (29 out of 32 participants). Gradients with a distribution similar to gradient 2 could be observed in half of the participants. Gradients are shown here only in cases where one of the first four components matched the distribution of gradient 1 or 2 for each subject. It is possible that additional components other than the first four contained a distribution similar to gradient 2. Future studies aiming to perform group comparison statistics using functional gradients would benefit from alternate alignment strategies (e.g. using Procrustes analysis; exploring this methodology is outside the scope of this article). Future studies may also analyze whether cerebellar functional gradients inter-subject variability can predict relevant behavioral aspects such as task performance, disease diagnosis, prognosis, or treatment response. Exploring such applications is also outside the scope of this article.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Silhouette coefficient analysis revealed an optimal number of 14 and 18 clusters for k-means and spectral cluster, respectively. Both clustering approaches revealed a distribution of parcels similar to the 17-network cerebello-cerebral connectivity parcellation from Buckner et al. (2011). (B) K-means and spectral clustering using five clusters and gradients 1 and 2 revealed a distribution of parcels similar to the 7-network cerebello-cerebral connectivity parcellation from Buckner et al. (2011), as well as a pattern of inverted representations (inverted pattern indicated with an asterisk). We used five clusters instead of 7 given the relatively small representation of two of the networks (visual and limbic) in Buckner et al. (2011), and the first two gradients given that those reflect the double/triple representation distribution which is observed in the 7-networks map from Buckner et al. (2011). Note that while Buckner et al. (2011) applied a winner-takes-all algorithm to determine the strongest functional correlation of each cerebellar voxel to one of the 7 or 17 cerebral cortical resting-state networks, our analysis included cerebellum-to-cerebellum correlations only.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Language task activity map corresponds to Cohen\u2019s d map thresholded at 0.5 from Guell et al. (2018a).\n\nGradient 2, the component accounting for the second-most variance, included at one end the anterior portions of Crus I and Crus II bilaterally (Figure 1A). These regions corresponded to areas engaged in the HCP working-memory task (Figure 1B). The same areas were included in cerebellar representations of the frontoparietal resting-state network. The other end of Gradient 2 included both regions involved in motor processing and regions involved in language processing; these areas correspond, respectively, to sensorimotor network and DMN regions. Additional gradients are shown in Figure 1\u2014figure supplement 2.\n\nData from a single participant revealed a similar distribution of gradients 1 and 2 and a similar relationship with the same single subject motor, language and working-memory task processing (Figure 1\u2014figure supplement 3). Functional gradients calculated using concatenated and normalized time series of 32 unrelated participants also revealed a similar distribution of gradients 1 and 2 (Figure 1\u2014figure supplement 4). Within this group, individual subjects revealed gradients with a similar distribution in most cases for gradient 1 (29 out of 32 participants), and in half of the cases for gradient 2. Future studies aiming to perform group comparison statistics using functional gradients might benefit from alternate alignment strategies (see details in legend of Figure 1\u2014figure supplement 4).\n\nFunctional gradients calculated using functional connectivity values from the cerebellum to the cerebral cortex (rather than from the cerebellum to the cerebellum) revealed a remarkably similar distribution (Figure 2). In addition, clustering of connectivity gradients revealed discrete networks similar to cerebello-cerebral connectivity parcellations from Buckner et al. (2011) (Figure 1\u2014figure supplement 5).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig2-v1.jpg)\n\n**Figure 2.:** Left scatterplot represents intra-cerebellar gradient 1 (y axis) vs. cerebellum-to-cerebral-cortex gradient 1 (x axis). Right scatterplot represents intra-cerebellar gradient 2 (y axis) vs. cerebellum-to-cerebral-cortex gradient 2 (x axis). Scatterplot colors correspond to cerebellar task activation maps as shown in Figure 1: motor (blue), working memory (task-focused cognitive processing) (green), and language (task-unfocused cognitive processing) (red). As in the case of intra-cerebellar functional gradient 1 (left y axis), cerebello-cortical gradient 1 (left x axis) distinguishes motor (blue) vs. task-positive cognitive processing (green) vs. task-negative cognitive processing (red). Similarly, as in the case of intra-cerebellar functional gradient 2 (right y axis), cerebello-cortical gradient 2 (right x axis) isolates task-positive cognitive processing (green).\n\n### Investigation of individual areas of motor and nonmotor representation\n\nResting-state as well as task processing analyses have revealed a cerebellar double motor (lobules I-VI and VIII) and triple non-motor representation (lobules VI/Crus I, Crus II/VIIB and IX/X) (Buckner et al., 2011; Guell et al., 2018a), but the functional significance of this distribution remains unknown. To investigate individual areas of motor and nonmotor representation, we isolated Gradient 1 highest 5% voxels within each area of nonmotor representation (\u2018High-G1\u2019), Gradient 2 highest 5% voxels within each area of nonmotor representation (\u2018High-G2\u2019), and Gradient 1 lowest 5% voxels within each area of motor representation (\u2018Low-G1\u2019) (Figure 3A). This parcellation is functionally meaningful because High-G1/High-G2 correspond to different nonmotor task activity and resting-state network maps (language and DMN vs. working memory and frontoparietal/ventral-dorsal attention), and Low-G1 corresponds to areas of motor processing (Figure 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig3-v1.jpg)\n\n**Figure 3.:** Second motor and third nonmotor representations (shown in red) were consistently located at less extreme positions along Gradient 1 and/or 2. This observation suggests that second motor representation is functionally distinct from first motor representation, and that third nonmotor representation is functionally distinct from first/second nonmotor representation. Because second motor and third nonmotor representations (shown in red) were consistently located at less extreme positions along Gradient 1 and/or 2, differences between second and first motor representation might be similar to the differences between third and first/second nonmotor representations. Specifically, second motor and third nonmotor representations might both correspond to a less extreme level of information processing (namely, information processing at a functional space which is distant from Gradient 1 or Gradient 2 extreme values). The same relationship was observed in task and resting-state network maps (Figure 3\u2014figure supplement 1), as well as when using thresholds other than 5% (from 0.5% to 15%, Figure 3\u2014figure supplement 2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig3-figsupp1-v1.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig3-figsupp2-v1.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Our hypothesis-driven parcellation based on Gradient 1 lowest 5% voxels at each area of motor representation (blue), and Gradient 1 (orange) and Gradient 2 (pink) highest 5% voxels at each area of nonmotor representation. (B) Using gradients 1 and 2 after normalization, Silhouette Coefficient analysis of k-means and spectral clustering reveals that three is the optimal number of clusters. K-means and spectral clustering using three clusters reveals a separation that encompasses our hypothesis-driven High-G1/Hig-G2/Low-G1 division.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** As in the group analysis, second motor and third nonmotor representations (shown in red) were consistently located at less extreme positions along Gradient 1 and/or 2. Given the asymmetries between left and right hemisphere in the analysis of a single subject (see Figure 1\u2014figure supplement 3), maps in these figures include only the right hemisphere for Gradient 1 lowest 5% values and only the left hemisphere for Gradient 1 and 2 highest 5% values. Opacity of black dots in these plots was decreased to improve the visibility of green, blue and red dots. Gradients were smoothed with sigma\u00a0=\u00a04.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/36652/elife-36652-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Lowest values of Gradient 1 target motor regions. Lowest value of Gradient 1 in the area of second motor representation revealed stronger connectivity with areas close to, but not at, primary motor and somatosensory cortex (A, left column). Higher values of Gradient 1 target DMN regions (B, right image). Gradient 1 peak at the area of third nonmotor representation revealed stronger connectivity with DMN/frontoparietal regions (A, right column). Higher values of Gradient 2 target ventral attention network regions (B, left image). Gradient 2 peak at the area of third nonmotor representation revealed stronger connectivity with DMN/frontoparietal regions (A, middle column). We interpret all these connectivity contrasts as a reflection of a less extreme level of information processing along the motor/nonmotor dimension (from primary motor/somatosensory cortex [maximum motor] to regions surrounding these structures, and from DMN [maximum non-motor] to frontoparietal/DMN areas); or along the task-focus/task unfocused dimension (from ventral attention [maximum task-focus] to frontoparietal/DMN areas). Colors correspond to resting-state networks as described in Yeo et al. (2011): dark purple, visual; blue, somatomotor; green, dorsal attention; violet, ventral attention; cream, limbic; orange, frontoparietal; red, default network.\n\nFurther, we isolated each individual representation in task activity maps from Guell et al. (2018a) and resting-state network maps from Buckner et al. (2011). Specifically, we isolated first motor (I-VI) and second motor representation (VIII) of the motor task map and somatomotor network. Language task and DMN were separated in first and contiguous second nonmotor (VI/Crus I/Crus II/VIIB) and third nonmotor (IX/X) representations, given the contiguous first and second representations of these maps in Crus I/Crus II. All other tasks and resting-state maps were divided in first nonmotor (VI/Crus I), second nonmotor (Crus II/VIIB) and third nonmotor representation (IX/X).\n\nWhen analyzing the position of each individual representation along Gradient 1 and 2, second motor and third nonmotor representations were consistently located at less extreme positions along these two gradients. We observed this consistently across gradient-derived parcellations (High-G1/Hig-G2/Low-G1, Figure 3) as well as task and resting-state network maps (Figure 3\u2014figure supplement 1). Second motor and third nonmotor representations are shown in red in Figure 3 and Figure 3\u2014figure supplement 1. Note, for example, that second motor representation in Low-G1, motor task, and somatomotor network was located at a less extreme position along Gradient 2. Following a similar logic, third representation of High-G1, language task, and DMN was located at a less extreme position along Gradient 1. Third representation of High-G2 and frontoparietal network was located at a less extreme position along Gradient 2. Third representation of emotion, social task, ventral attention, dorsal attention, and limbic networks showed a less clear distribution, but was nonetheless consistently located at more central (i.e. less extreme) position along Gradient 1 and/or 2. This organization could not be observed in working memory task and visual network given that these maps were not represented in lobules IX/X.\n\nA data-driven clustering of the first two gradients resulted in a division of gradients 1 and 2 in three areas encompassing our High-G1/High-G2/Low-G1 parcellation (Figure 3\u2014figure supplement 3), further supporting this hypothesis-driven division. The same relationship between the two motor and three nonmotor areas of representation was observed in the analysis of a single subject with only one resting-state run of 15 min (Figure 3\u2014figure supplement 4). A supplementary cerebello-cerebral connectivity analysis revealed additional differences in cerebral cortical connectivity from each area of representation (Figure 3\u2014figure supplement 5).\n\n## Discussion\n\nThis is the first study to investigate the progressive, hierarchical organization of the cerebellum. Contrasting with the fundamental and well-established primary-unimodal-transmodal hierarchical organization in the cerebral cortex (Mesulam, 1998, 2008), the principal axis of cerebellar motor and nonmotor organization remains unknown. We describe for the first time that cerebellar functional regions follow a gradual organization which progresses from primary (motor) to transmodal (DMN, task-unfocused) regions. Further, the relationship between the two principal gradients and the two motor and three nonmotor areas of representation revealed for the first time that there are functional differences not only between the two motor but also between the three nonmotor areas of representation. An initial novel hypothesis regarding the nature of these differences is generated by noting that nonmotor processing in lobules IX/X (third nonmotor representation) might share functional similarities with motor processing in lobule VIII (second motor representation). These interpretations are further supported by data-driven clustering and cerebello-cerebral functional connectivity analyses. These findings, from an exceptionally large and high-quality dataset, provide new and fundamental insights into the functional organization of the human cerebellum, unmask new testable questions for future studies, and yield an unprecedented tool for the topographical interpretation of cerebellar findings.\n\n### Gradient 1 extends from motor to nonmotor areas: cerebellar macroscale organization is sensorimotor-fugal\n\nGradient 1 extended from regions corresponding to motor task activity and sensorimotor network representation to regions corresponding to language task activity and DMN representation (Figure 1B). The overlap between language task activity and DMN may be due to the language task contrast which subtracted listening to stories minus answering arithmetic questions. This subtraction may capture processes similar to those that engage DMN regions, such as autobiographical memory retrieval, daydreaming, and conceiving the perspective of others (Buckner et al., 2008). Consistent with this hypothesis, HCP language task activity also overlapped with DMN in the cerebral cortex (Figure 1\u2014figure supplement 6). Working memory task processing was situated at a middle point along Gradient 1, similar to the distribution of frontoparietal and ventral attention networks (Figure 1B). It is reasonable to conceptualize working memory as a nonmotor task which is not as distant from motor function as a story listening task, justifying its middle position along Gradient 1. Similarly, tasks that activate DMN regions such as daydreaming and mind wandering (Mason et al., 2007; Christoff et al., 2009; Stawarczyk et al., 2011) can be conceptualized as more distant from motor processing than goal-directed cognitive control and decision-making processes that activate frontoparietal network regions (Vincent et al., 2008). Ventral and dorsal attention networks were located far from DMN along Gradient 1 (Figure 1B), consistent with the view that DMN and ventral/dorsal attention networks are two opposing brain systems (Fox et al., 2005). The frontoparietal network is conceptualized as a mediator between the two (Vincent et al., 2008), justifying its position between ventral/dorsal attention networks and DMN along Gradient 1 (Figure 1B). This conceptualization of Gradient 1 is also coherent with a previous report analyzing cerebellar activity at multiple time points, from motor planning to motor output (H\u00fclsmann et al., 2003). The authors described a lateromedial succession \u2018from will to action\u2019 which is in accordance with the direction of Gradient 1 from nonmotor to motor regions in our analysis.\n\nThis is the first study to report a sensorimotor-fugal macroscale organization in the cerebellum; that\u00a0is, a hierarchical organization that progresses away from sensorimotor function. A different study using diffusion map embedding analysis in the cerebral cortex reported similar results (Margulies et al., 2016). In that case, the principal gradient extended from primary cortices (visual, somatosensory/motor, and auditory) to regions corresponding to the DMN. As in the cerebellum, the frontoparietal network was also located between DMN and ventral/dorsal attention networks, and working memory task activity was also located at a middle position along the principal gradient. Of note, the cerebellum does not show functional connectivity with primary visual or auditory cortices (Buckner et al., 2011), but is anatomically and functionally connected with areas of primary sensorimotor processing and consistently engaged in simple motor tasks. It is therefore reasonable to consider that a gradient from motor to DMN areas in the cerebellum is the equivalent of a gradient from motor/visual/auditory to DMN areas in the cerebral cortex.\n\nThis finding strongly suggests that cerebellum and cerebral cortex share a similar macroscale principle of organization, namely, that both structures share a hierarchical organization which gradually progresses away from unimodal streams of information processing. While this organization has long been defended in the cerebral cortex (Mesulam, 1998; Margulies et al., 2016; Sepulcre et al., 2012), the present analysis is the first to reveal an analogous principle in the cerebellum. This is a notable observation for two reasons. First, gradients obtained in our analysis correspond to intrinsic connectivity profiles of cerebellar voxels with the rest of the cerebellum only, rather than with the rest of the brain. Therefore, our analysis reflects the organization of the cerebellum without invoking its connectivity profiles with the cerebral hemispheres. In this way, the fact that we observed a similar principle of organization between the cerebral cortex and the cerebellum does not constitute an imposition of cerebro-cerebellar connectivity on our method of analysis (unlike in Buckner et al., 2011). Second, the notion that there is a hierarchical organization in the cerebral cortex which gradually progresses away from unimodal streams of information (Mesulam, 1998; Margulies et al., 2016; Sepulcre et al., 2012) is implicitly predicated on the anatomical knowledge that there are synapses linking adjacent cerebral cortical regions (Schmahmann and Pandya, 2009). Unlike the cerebral cortex, there are no short or long cerebellar cortical association fibers linking adjacent or distant cerebellar cortical areas with each other (Schmahmann, 1996; Schmahmann and Pandya, 2008). It is therefore nontrivial to observe this parallel organization in the cerebellum. Our hypothesis is that such a functional organization is a consequence of the arrangement of cerebello-cerebral anatomical connections which in turn affect correlations in resting-state activity between cerebellar regions. Consistent with this possibility, cerebellar functional gradients calculated from cerebello-cerebral connectivity revealed a distribution similar to the intra-cerebellar functional gradients (Figure 2). The same possibility raises further questions regarding the precise distribution of cerebello-cerebral anatomical connections that would be required to achieve such a parallel mapping of functional gradients in the cerebral cortex and cerebellum.\n\nThe finding that a similar distribution of the first two gradients and their relationship with motor, language and working memory task processing can be observed at an individual level (Figure 1\u2014figure supplement 3) supports the assertion that this organization is not an artifact generated as a result of averaging a large number of subjects, and highlights the potential application of this fundamental principle in future small group or single subject investigations (see Figure 1\u2014figure supplement 4).\n\n### Integrating gradient 1 and gradient 2: task processing in the cerebellum understood in terms of distance from motor processing and amount of task-focus\n\nGradient 1 extended from motor to nonmotor (task-unfocused, DMN) regions. In contrast, Gradient 2 (the component accounting for the second-most variance) was anchored at one end by working memory task and frontoparietal network regions. The other extreme of Gradient 2 corresponded to both extremes of Gradient 1, namely, (i) regions corresponding to motor task activity and sensorimotor network and (ii) regions corresponding to language task activity and DMN representation. The functional significance of this distribution might be analyzed as follows. Working memory HCP task corresponds to Two back (respond if current stimulus matches the item two back) minus Zero back (respond if current stimulus matches target cue presented at start of block). HCP language task correspond to Story (listen to stories) minus Math (answer arithmetic questions). HCP motor tasks corresponds to Movement (tap left fingers, or tap right fingers, or squeeze right toes, or squeeze left toes, or move tongue) minus Average (average of the other four movements). What dimension corresponding to the working memory task is equally absent in the language and the motor task contrasts? One possible explanation is task focus. Whereas the working memory task contrast isolates a higher load of working memory (therefore a higher load of task focus), task focus is eliminated from the language task contrast after subtracting the math condition, and task focus is eliminated from the motor task contrast after subtracting the average of other movements. Coherently, frontoparietal and ventral attention networks (the extreme of Gradient 2, Figure 1B) are task-positive networks (Vincent et al., 2008) while DMN and somatosensory network (the other extreme of Gradient 2) are not.\n\nIn this way, Gradient 1 and Gradient 2 classify information processing in the cerebellum along two dimensions: distance from motor processing (Gradient 1) and amount of task-focus (Gradient 2). HCP motor task contrast isolates pure motor processing and eliminates task-focus demands. In consequence, HCP motor task is situated at a minimal position in Gradient 1 (i.e. maximally motor) and at a minimal position in Gradient 2 (i.e. minimally task-focused) (Figure 1B). HCP working memory task isolates a higher load of working memory by subtracting a two-back minus a zero-back condition. The isolated cognitive process is closely related to task focus and is therefore situated at a maximum position in Gradient 2. At the same time, working memory represents a nonmotor process and is therefore situated higher than the HCP motor task along Gradient 1. This notwithstanding, working memory is situated lower than the HCP language task along Gradient 1. This order seems logical by considering that goal-nondirected processes targeted by the HCP language task contrast are more distant from pure motor processing than those goal-directed processes isolated by the working memory task contrast. Similarly, mind-wandering states are, by definition, task-unfocused, explaining the position of the HCP language task at the lowest extreme of Gradient 2.\n\nOur interpretation of task focus in the cerebellum in terms of distance from motor processing and amount of task-focus is also coherent with the general distribution of data points when plotting Gradient 1 against Gradient 2 (see plots in Figure 1B). First, there are no cerebellar voxels with simultaneous maximum Gradient 1 and Gradient 2 values. Maximum Gradient 1 values correspond to DMN regions, and DMN processes are task-unfocused by definition. Therefore, Gradient 1 maximum values must have low Gradient 2 values. Second, there are no cerebellar voxels with simultaneous minimum Gradient 1 and maximum Gradient 2 values. This distribution is consistent with the notion that increasing attentional demands of a motor task adds nonmotor computational demands. Accordingly, Gradient 1 lowest values cannot increase their position along Gradient 2 without simultaneously acquiring a higher position along Gradient 1.\n\nWhile HCP motor, working memory, and language task activity maps were situated at extreme regions along Gradient 1 and/or 2 (Figure 1B), social and emotion processing did not adhere to any extreme along these gradients. One possibility is that functional gradients 1 and 2 fail to capture relevant aspects pertaining to the domains of emotion processing and social cognition, making the distribution of our social and emotion tasks along these gradients uninterpretable. Another possibility is that distribution of these two tasks along gradients 1 and 2 may indeed provide valid insights into the organization and nature of social and emotion processing in the cerebellum, as follows. Social processing task activity map spanned across Gradient 1, perhaps reflecting a multimodal nature of social processing in the cerebellum in the dimension of motor to nonmotor processing. The conceptualization of social processing in the cerebellum as an activity that engages multiple levels of information processing along the motor-nonmotor dimension may relate to the concomitant impairment of social skills, nonmotor tests such as Rey\u2019s figure or Tower test, and some motor abilities (e.g. equilibrium and limb coordination) in autism spectrum disorders (Paquet et al., 2016). Emotion processing was situated at a central position in both Gradient 1 and 2. We understand this distribution as an inability to clearly classify emotion processing along the gradients of distance from motor processing (Gradient 1) and amount of task focus (Gradient 2). Higher working memory load as isolated by the HCP working memory task corresponds to a level of information processing with high task-focus demands. At the same time, the subtraction of the HCP language task isolates task-unfocused processes which are maximally removed from pure motor processing. The results of the HCP emotion processing task contrast, on the other hand, are not as well defined along these dimensions. The subtraction of Faces (\u2018decide which of two angry/fearful faces on the bottom of the screen match the face at the top of the screen\u2019) minus Shapes (same task performed with shapes instead of faces) isolates higher emotional content in the information that is processed. It may be argued that this higher emotional content corresponds to an intermediate position between pure motor and high-nonmotor level information processing (explaining the intermediate position along Gradient 1), and that this higher emotional content results in mildly increased task focus (explaining the intermediate position along Gradient 2).\n\n### Confirmation of the double/triple representation hypothesis\n\nResting-state as well as task processing analyses have revealed a cerebellar double motor (lobules I-VI and VIII) and triple non-motor representation (lobules VI/Crus I, Crus II/VIIB and IX/X) (Buckner et al., 2011; Guell et al., 2018a). The distribution of Gradient 1, the component that explains the greatest variability in resting-state intra-cerebellar connectivity patterns, confirms this organization. Gradient 1 lowest values correspond to lobules IV/V/VI and VIII (Figure 1A, dark blue regions in Gradient 1), demarcating the two areas of motor representation. The highest values correspond to lobules Crus I, Crus II, and lobule IX (Figure 1A, dark red regions in Gradient 1) - these regions correspond to the first, contiguous second, and third nonmotor representation areas, respectively. Taken together, the double motor/triple nonmotor organization has now been shown in cerebellar representations of cerebral resting-state networks (Buckner et al., 2011), cerebellar task activity (Guell et al., 2018a), cerebro-cerebellar functional connectivity from cerebral cortical task activity peaks (Guell et al., 2018a), and gradients of intra-cerebellar patterns of functional connectivity (the present study). Gradient 2 also revealed a similar distribution, with its maximum values located in Crus I, Crus II/VIIB, and lobules IX/X.\n\nA very similar organization was also found when calculating functional gradients based on connectivity from the cerebellum to the cerebral cortex (Figure 2). Clustering of connectivity gradients revealed discrete networks resembling cerebello-cerebral connectivity parcellations in Buckner et al. (2011), and also replicated their double\u00a0motor/triple\u00a0nonmotor representation distribution (Figure 1\u2014figure supplement 5). These observations support the generalizability of the double\u00a0motor/triple\u00a0nonmotor representation hypothesis to multiple directions of functional connectivity, namely, cerebello-cerebral and intra-cerebellar.\n\nA \u2018network approach to the localization of complex functions\u2019 rather than \u2018an exclusive concentration of function within individual centers in the brain\u2019 (Mesulam, 1981) has long been adopted in the cerebral cortex (Yeo et al., 2011; Mesulam, 1981, 1986; Goldman-Rakic, 1988), although some complex functions are indeed organized into focally specific brain regions (Kanwisher et al., 1997; Saxe and Kanwisher, 2003). Accumulating evidence for a double motor/triple nonmotor organization in the cerebellum warrants an analogous shift in the understanding of cerebellar functional neuroanatomy. Just as \u2018each distributed network consists of association areas spanning frontal, parietal, temporal and cingulate cortices\u2019 (Mesulam, 1981), the data indicate that each nonmotor cerebellar network consists of three representations spanning VI/Crus I, Crus II/VIIB and IX/X. There are no intrinsic anatomical connections linking these cerebellar areas, but tract tracing studies in monkeys hint at the possibility of an anatomical correlate of the double motor/triple nonmotor organization. This conclusion is based on shared cerebello-cerebral cortical loops: lobules I-VI and VIII receive input from and project to M1, and lobules Crus I/Crus II and IX/X receive input from and project to area 46 (Kelly and Strick, 2003). Further, as in the cerebral cortex, distributed networks may exist adjacent to each other within each area of nonmotor representation in the cerebellum. In the same way that 'adjacent areas in the parietal cortex belonging to separate networks are differentially connected to adjacent areas of corresponding networks in the frontal, temporal and cingulate cortices\u2019 (Yeo et al., 2011; Selemon and Goldman-Rakic, 1988; Cavada and Goldman-Rakic, 1989a, 1989b), adjacent areas in VI/Crus I belonging to separate networks are differentially related to adjacent areas of corresponding networks in Crus II/VIIB and IX/X. This is revealed by non-overlapping nonmotor task activity maps within each area of representation in Guell et al. (2018a), the unmasking of multiple resting-state networks within each area of representation in Buckner et al. (2011), and the distribution of Gradient 1 in the present analysis. Task contrasts or connectivity analyses might reveal incomplete engagement of the triple nonmotor cerebellar network - a discussion regarding this incomplete engagement would be appropriate in these cases. For instance, incomplete engagement of the triple nonmotor network might be functionally meaningful, for\u00a0example, activity in the areas of first and second representations, but not in the area of third representation. Similarly, future studies may discuss group contrasts where a given neurological or psychiatric disease results in functional or structural cerebellar abnormalities within only one area of motor or nonmotor representation. This approach might be critical for the understanding of cerebellar systems physiology and pathophysiology. Consequently, a critical next step towards a more comprehensive and nuanced understanding of cerebellar functional neuroanatomy is the investigation of distinct contributions of each area of motor and nonmotor representation. The following section addresses this question.\n\n### Second motor (VIII) and third nonmotor representation regions (IX/X) are situated at a less extreme level along Gradient 1 and/or 2: Cerebellar motor and nonmotor representations are functionally distinct, and second motor representation might share functional similarities with third nonmotor representation\n\nA review (Sokolov et al., 2017) frames the question of \u2018the functional significance of the two (or three) cortical representation maps in the cerebellum\u2019 as one of the principal outstanding enigmas in cerebellar neuroscience. Our present study provides the data to attempt to address this question for the first time, as follows.\n\nSecond motor representation (lobule VIII) and third nonmotor representations (lobule IX/X) were consistently located at less extreme positions along Gradient 1 and/or 2 when compared to their first motor and first/second nonmotor representations, respectively. This pattern was observed in all maps analyzed, including gradient-derived cerebellar parcellations (Figure 3), task activity maps (from Guell et al., 2018a, Figure 3\u2014figure supplement 1), and resting-state maps (from Buckner et al., 2011, Figure 3\u2014figure supplement 1). Further, this distribution was also observed in 15 min of resting-state data in a single subject (Figure 3\u2014figure supplement 4). This observation indicates that the contribution of the second motor representation (lobule VIII) is different from the contribution of the first motor representation (lobules I-VI), as expected from previous clinical (Stoodley et al., 2016; Schmahmann et al., 2009) and functional connectivity (Kipping et al., 2013) observations. Crucially, it also indicates that the contribution of the third nonmotor representation (lobules IX/X) is different from the contribution of the first and second nonmotor representations (lobules VI/Crus I/Crus II/VIIB). These conservative conclusions are, on their own, novel in the field of cerebellar systems neuroscience. We further speculate that a less extreme position along Gradient 1 and/or 2 in both third nonmotor and second motor representation represents, in both cases, a less extreme level of information processing. \u2018Extreme\u2019 here refers to the poles of the sensorimotor-fugal organization (Gradient 1) and the task-focus/task-unfocus organization (Gradient 2). Specifically, a less extreme position along Gradient 1 corresponds to a less extreme level of information processing along the motor/nonmotor dimension, and a less extreme position along Gradient 2 corresponds to a less extreme level of information processing along the task-unfocused/task focused dimension. Because this pattern of a less extreme level of information processing is observed in both second motor representation and third nonmotor representation, we argue that nonmotor activity in lobules IX and X (third nonmotor representation) might emerge from, and follow the logic of, motor processing in lobule VIII (second motor representation). This notion is inspired by the organization of the cerebral cortex where multimodal or association cortical areas are related to their nearby unimodal areas. For example, Broca\u2019s area is close to the primary motor cortex, while Wernicke\u2019s area is close to the primary auditory cortex. The analogy in the cerebellum is that nonmotor activity in lobules IX and X is adjacent to, and therefore follows the logic of, motor activity in lobule VIII. Restated, the relationship between first motor and second motor representation resembles the relationship between first/second nonmotor and third nonmotor representations, just as the relationship between primary motor and primary auditory cortex reflects the relationship between Broca\u2019s area and Wernicke\u2019s area.\n\nThe data show that the second representation of motor task activity, sensorimotor network, and \u2018Low-G1\u2019 (motor) maps were consistently located at a higher position along Gradient 2 when compared to their first representation. This suggests that while the first motor representation is engaged in pure motor processing as isolated by the Movement (e.g. tap left fingers) minus Average (average of the other four movements) contrast, second motor representation is engaged in motor processes that require higher task focus. In this way, second motor representation corresponds to a less extreme level of task-unfocused motor information processing. Following a similar logic, third representation of language task, DMN, and \u2018High-G1\u2019 maps were consistently located at a lower position along Gradient 1 when compared to their first and contiguous second representations. While these first and contiguous second representations are at an extreme level of information processing (i.e. maximally nonmotor), third representation is in a less extreme position (i.e. less extreme in the motor/nonmotor dimension). Also consistent with this logic, the third representation of working memory, frontoparietal network, and \u2018High-G2\u2019 maps were consistently located at a lower position along Gradient 2 when compared to their first and second representations. These first and second representations were at an extreme level of information processing \u2013 specifically, maximally task-focused. The third representation was located further from this extreme, that\u00a0is, less extreme in the task-unfocused/task-focused dimension. Ventral and dorsal attention networks were not located at one clear gradient extreme, but their distribution of three representations also followed the logic that third representation (lobule IX/X) was located at a less extreme position along Gradient 1 and/or 2.\n\nOf note, the second representation of working memory, frontoparietal network, and \u2018High-G2\u2019 was located similar to its first representation. This proximity between the first and second nonmotor\u00a0representations indicates that the relationship between second motor and third nonmotor representation does not apply to the relationship between second motor and second nonmotor representation. Restated, nonmotor processes in lobules IX/X share hierarchical principles with motor processing in lobule VIII (an analogous \u2018less extreme\u2019 level of information processing) - in contrast, this relationship does not apply between nonmotor processing in lobules Crus II/VIIB and motor processing in lobule VIII.\n\nA cerebello-cerebral connectivity analysis further supports the hypothesis that second motor and third nonmotor regions of representation correspond to a less extreme level of information processing when compared to their first motor and first/second nonmotor representations, respectively. These analyses are shown in Figure 3\u2014figure supplement 5: while connectivity from first motor representation corresponds to cerebral cortical somatomotor network, connectivity from second motor representation engages areas adjacent to, but not directly at, somatomotor network (as shown previously by Kipping and colleagues [Kipping et al., 2013]). Similarly, while connectivity from first/second task-focused nonmotor representation corresponds to cerebral cortical task-positive networks, connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-positive networks. Following the same logic, while connectivity from first/second task-unfocused nonmotor representation corresponds to cerebral cortical task-negative networks (Default Mode Network), connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-negative networks.\n\nThe constellation of symptoms that follow cerebellar strokes of the posterior inferior cerebellar artery (PICA) may also support our hypothesis. PICA occlusion commonly results in the infarction of lobule VIII (second motor representation) but not of lobules IV/V/VI (first motor representation). Notably, these lesions result in little or no motor deficits (Stoodley et al., 2016; Schmahmann et al., 2009). Our hypothesis that second motor representation corresponds to a less extreme level of pure motor information processing might explain the lack of pure cerebellar motor symptoms (gait ataxia, appendicular dysmetria, dysarthria) after PICA stroke. Whereas the pattern of deficits arising from lesions of the second motor representation may go undetected with the standard neurological motor examination, our data predict that fine discriminative testing may reveal deficits in motor-related tasks that require high task focus. This might include motor performance abnormalities that only manifest in the presence of distractors. However, PICA strokes also damage other lobules such as Crus II and VIIB - deficits in motor tasks requiring high task focus may be difficult to dissociate from nonmotor abnormalities arising from infarction of cerebellar regions other than lobule VIII. We are not aware of any report of isolated lobule VIII injury in humans - however, Dow, (1938) performed isolated ablation of lobule VIII in three rhesus monkeys. The author reported that 'In all three animals in which the pyramis (i.e. lobule VIII) alone was damaged little that was abnormal could be detected, except that the animal when running down a long corridor apparently was unable to stop quickly enough to avoid crashing head-on against the end wall. No visual defect was present. The abnormality was never observed later than the third or fourth day after operation\u2019. Aberrant motor behavior in the absence of classical cerebellar motor symptoms may be consistent with our reasoning. fMRI task activity analyses have made claims regarding distinct functional contributions of the cerebellar second motor representation (Habas et al., 2004; Diedrichsen et al., 2005; Habas and Cabanis, 2006; Bohland and Guenther, 2006; Tourville et al., 2008); however, none has demonstrated statistically significant lobule VIII activity in the absence of lobule IV/V/VI activity for any given task contrast. Kipping and colleagues (Kipping et al., 2013) reported lobule VIII functional connectivity with cerebral cortical regions other than motor and premotor regions, a pattern of connectivity consistent with our hypothesis that the second motor representation is located at a less extreme level of motor processing.\n\nWe showed that during a working memory task there was activity in the cerebellum in the first and second nonmotor representations, but not in the third representation (Guell et al., 2018a). In contrast, functional connectivity was observed in all three areas of representation when seeding from the cerebral cortical peak of the working memory task. In the light of the present observations, our interpretation is that functional connectivity revealed the full pattern of triple representation of task-focused mid-nonmotor processing areas, but when engaged with a working memory task, the third representation in the network was not recruited due to excessive task-focus demands (i.e. due to an extreme level of information processing along the task-unfocused/task-focused dimension).\n\nSome anatomical peculiarities of lobules IX/X conform to the notion of a functionally distinct nonmotor contribution of these lobules. Glickstein and colleagues (Glickstein et al., 1994) reported that the principal target of pontine visual cells in monkeys is lobule IX. A specific type of cell, the Calretinin-positive unipolar brush cell, is preferentially located in lobules IX and X in many species (Di\u00f1o et al., 1999; Mugnaini et al., 2011) and receives vestibular afferents (Di\u00f1o et al., 2001). Accordingly, lobules IX and X are classically considered to represent the vestibulocerebellum. One highly speculative proposal is that the incorporation of visual/vestibular streams of information in lobules IX/X, but not in lobules VI/Crus I/Crus II/VIIB, might be related to the asymmetries we describe between the third and the first/second nonmotor representations. Indeed, some lines of study investigate the link between vestibular function and limbic and cognitive functions including visuospatial reasoning (Hitier et al., 2014; Bigelow and Agrawal, 2015; Rajagopalan et al., 2017). The notion that asymmetry between nonmotor representations may arise from heterogeneity in cerebellar patterns of connectivity, rather than cytoarchitecture or physiology, is in accord with the notion of a Universal Cerebellar Transform (Schmahmann, 1996, Schmahmann, 1991; Guell et al., 2018b).\n\n### Concluding remarks and relevance for future investigations\n\nThis is the first study to describe the principal gradient of macroscale function in the cerebellum. Previous studies have segregated the cerebellum into discretely arranged functional regions (Buckner et al., 2011; Guell et al., 2018a). This leads to the fundamental question: What is the relationship between the cerebellar regions that subserve these distinct networks? Following a logic similar to the fundamental and well-established primary-unimodal-transmodal hierarchical organization in the cerebral cortex (Mesulam, 1998; Margulies et al., 2016), we report that cerebellar macroscale organization is sensorimotor-fugal. Regions further from the central aspect of lobules IV/V/VI and VIII are, accordingly, further from cerebellar motor function in a gradient from motor to maximally non-motor (mind-wandering, non-goal oriented) function. This concept is analogous to the well-established knowledge in the cerebral cortex that regions progressively further from primary cortices (motor/somatosensory, auditory, visual) are progressively involved in more abstract, transmodal, non-primary processing. This fundamental concept has greatly influenced topographical investigations in the cerebral cortex, and it is reasonable to consider that the present description may equally influence cerebellar investigations. The publicly available cerebellum gradient maps from the present study in multiple file formats and structural spaces (https://github.com/xaviergp/cerebellum_gradients, folder \u2018FINAL_GRADIENTS\u2019) will facilitate the inclusion of the sensorimotor-fugal principle of cerebellar macroscale organization in future investigations.\n\nThe distribution of these principal gradients confirmed the double motor/triple nonmotor organization in the cerebellum, highlighting the need to refer to this organization when discussing cerebellar functional or structural findings. Close attention to this network organization may become critical for the understanding of cerebellar structure and function in health and disease. Clusters in lobules IV/V/VI and VIII are commonly interpreted as first and second representations of motor processing. The same reasoning should be applied to nonmotor findings, for example, in the interpretation of degeneration of Crus I and IX in Alzheimer\u2019s disease (Guo et al., 2016).\n\nOne important additional implication of the analysis of connectivity gradients in the present study is the unmasking of functional differences not only between the two motor cerebellar representations (as expected from previous clinical (Stoodley et al., 2016; Schmahmann et al., 2009) and functional connectivity (Kipping et al., 2013) observations), but also between the three nonmotor cerebellar representations (Figure 3, Figure 3\u2014figure supplement 1). An initial hypothesis regarding the nature of these differences is generated by noting hierarchical similarities between second motor (VIII) and third nonmotor (IX/X) representations in gradient-derived parcellations, task activity, and resting-state maps. We interpret this relationship as an indication that nonmotor processing in lobules IX/X emerges from, and follows the logic of, motor processing in lobule VIII \u2013 specifically, processing in both regions corresponds to a less extreme level of information processing when compared to nonmotor processing in VI/Crus I/Crus II and motor processing in I-VI. This hypothesis may be useful in the interpretation of future cerebellar neuroimaging findings. For example, this hypothesis may help interpret or highlight the potential relevance of isolated abnormalities in lobule VIII and IX in ADHD (Hove et al., 2015). A virtue of this hypothesis is that it is testable using task fMRI. For example, future studies may contrast motor task conditions with high versus low task-focus demands (to isolate second motor representation), task-focused nonmotor task conditions with lower versus higher task-focus demands (to isolate third task-focused nonmotor representation), and task-unfocused nonmotor task conditions which can be removed from motor processing by, for example, modulating the amount of mental object manipulation (to isolate the third task-unfocused nonmotor representation).\n\nIn sum, we describe a fundamental sensorimotor-fugal principle of organization in the cerebellum, confirm the double motor/triple nonmotor representation organization, unmask functional differences not only between the two motor but also between the three nonmotor areas of representation, and hint at the possibility that second motor and third nonmotor representations might share functional similarities. Our findings and analyses represent a significant conceptual advance in cerebellar systems neuroscience, and introduce novel approaches and testable questions to the investigation of cerebellar topography and function.\n\n## Materials and methods\n\nAll code used in this study is openly available at https://github.com/xaviergp/cerebellum_gradients (Guell, 2018; copy archived at https://github.com/elifesciences-publications/cerebellum_gradients).\n\n### Human connectome project data\n\nfMRI\u00a0data\u00a0were provided by the Human Connectome Project (HCP), WU-Minn Consortium (Van Essen et al., 2013). We analyzed data from 1003 participants who completed all resting-state sessions (age mean\u00a0=\u00a028.71, SD\u00a0=\u00a03.71, 470 male, 533 female), four 15 min scans per subject), included in the group average preprocessed dense connectome S1200 HCP release. Of note, many participants within this group of 1003 participants were related. There were 120 pairs of monozygotic twins, and 64 pairs of dizygotic twins (as determined by genetic testing in the data provided by HCP). Of the 635 remaining individuals, there were 132 pairs of related participants, 37 groups of 3 related participants, 10 groups of 4 related participants, and 3 groups of 5 related participants. In total, there were 798 related and 205 unrelated participants. While brain organization is expected to be more similar between pairs of related subjects than between pairs of unrelated subjects, this feature of our data was not accounted for in our analysis. Analysis of a subset of 32 unrelated participants tested whether our findings were also observable in cohorts of unrelated subjects. EPI data acquired by the WU-Minn HCP used multi-band pulse sequences (Moeller et al., 2010; Feinberg et al., 2010; Setsompop et al., 2012; Xu et al., 2013). HCP structural scans are defaced using the algorithm by Milchenko and Marcus (Milchenko and Marcus, 2013). HCP MRI data pre-processing pipelines are primarily built using tools from FSL and FreeSurfer (Glasser et al., 2013; Jenkinson et al., 2012; Fischl, 2012). HCP structural pre-processing includes cortical myelin maps generated by the methods introduced by Glasser and Van Essen (Glasser and Van Essen, 2011). HCP task-fMRI analyses uses FMRIB\u2019s Expert Analysis Tool (Jenkinson et al., 2012; Woolrich et al., 2001). All group fMRI data used in the present study included 2 mm spatial smoothing and areal-feature aligned data alignment (\u2018MSMAll\u2019) (Robinson et al., 2014). We did not conduct any further preprocessing beyond what was already implemented by the HCP. Results were visualized in volumetric space as provided by HCP as well as on a cerebellar flat map using the SUIT toolbox for SPM (Diedrichsen, 2006; Diedrichsen et al., 2009; Diedrichsen and Zotow, 2015).\n\n### Diffusion map embedding\n\nDiffusion map embedding methodology was introduced by Coifman and colleagues (Coifman et al., 2005), and its application to the HCP resting-state data as performed in this study is thoroughly described in Margulies et al. (2016). Instead of analyzing data corresponding to the cerebral cortex (Margulies et al., 2016), the present study included only voxels corresponding to the cerebellum. We used data from the S1200 release (n\u00a0=\u00a01003) instead of the S900 release (n\u00a0=\u00a0820). In brief, cerebellar data in the preprocessed HCP \u2018dense connectome\u2019 includes correlation values of each cerebellar voxel with the rest of cerebellar voxels. In this way, each cerebellar voxel has a spatial distribution of cerebellar correlations (a \u2018connectivity pattern\u2019). Diffusion map embedding is a nonlinear dimensionality reduction technique and can be used to analyze similarities between functional connectivity based networks. As in Principal Component Analysis (PCA), diffusion map embedding results in a first component (or \u2018principal gradient\u2019) that accounts for as much of the variability in the data as possible. Each following component (each following gradient) accounts for the highest variability possible under the constraint that all gradients are orthogonal to each other. The final result of a dense connectome matrix PCA analysis would take the form of a mosaic; if this method was applied, each cerebellar voxel would be assigned to a particular network with discrete borders. In contrast, diffusion embedding extracts overlapping \u2018gradients\u2019 of connectivity patterns from the initial matrix. For example, in Margulies et al. (2016), gradient 1 extended from primary cortices to DMN areas, gradient 2 extended from motor and auditory cortices to the visual cortex, etc. Each voxel is then assigned a position within each gradient. In Margulies et al. (2016), a voxel corresponding to a DMN area would be assigned an extreme position in gradient 1 (e.g. a value of 6.7 in a unitless scale from \u22125.4 to 6.9) and a middle position in gradient 2 (e.g. a value of 1.8 in a unitless scale from \u22123.0 to 5.7). In this way, the result of diffusion embedding is not one single mosaic of discrete networks, but multiple, continuous maps (gradients). Each gradient reflects a given progression of connectivity patterns (e.g. from DMN to sensorimotor, from motor/auditory cortex to visual cortex, etc.), each gradient accounts for a given percentage of variability in the data, and each voxel has a position within each gradient. An illustration of this method is provided in Figure 1\u2014figure supplement 1.\n\nIt is important to highlight that our initial dense connectome matrix includes the profile of connectivity of each cerebellar voxel with the rest of the cerebellum only, rather than with the rest of the brain. In this way, our analysis reflects the intrinsic organization of the cerebellum without invoking its connectivity profiles with the cerebral hemispheres or other brain structures. This approach allows the possibility of identifying cerebellar properties that might otherwise be obscured in whole-brain connectivity analyses. The latter approach would emphasize the relationship between cerebellar structures and cerebral resting-state networks, and potentially miss relevant gradients of connectivity patterns within cerebellar resting-state data.\n\nDiffusion map embedding and task processing analyses were also performed using a 15 min resting-state run from a single subject. To avoid selection bias, we chose to analyze the HCP participant corresponding to the \u2018single subject\u2019 download package of the HCP database. Resting-state smoothing of single-subject data was performed on the resulting gradients after diffusion map embedding calculations to avoid introducing artefactual correlations. Group and single subject evaluation of an additional group of 32 participants was performed to explore the applicability of our method to smaller group investigations. These participants corresponded to the first 32 participants of the \u2018100 unrelated\u2019 download package of the HCP database. Analysis of this subgroup of 32 participants was performed using a normalized and concatenated dataseries file of all 32 participants, including one 15 min resting-state run per subject. Gradients resulting from the 32-participants group analysis were not smoothed. Individual subject analyses within this subgroup of 32 participants were performed using one 15 min resting-state run per subject, and smoothing (sigma\u00a0=\u00a04) was performed on the resulting gradients after diffusion map embedding calculations.\n\nThere are no cerebellar cortical association fibers (Schmahmann, 1996; Schmahmann and Pandya, 2008). Intra-cerebellar functional gradients may be driven by cerebello-cerebral interactions, and it is therefore reasonable to consider that intra-cerebellar and cerebello-cortical functional gradients may be similar. For this reason, we also calculated functional gradients in the cerebellum using functional connectivity values from the cerebellum to the cerebral cortex (rather than within the cerebellum) in the average 1003 participants connectivity matrix.\n\n### Task activity and resting-state network maps\n\nCerebellar task activity data from a subset of 787 HCP participants were analyzed in a previous study by our group (Guell et al., 2018a). Guell and colleagues (Guell et al., 2018a) provided Cohen\u2019s d task activity maps thresholded at 0.5 (medium effect size). A sample size of 787 participants ensures that a Cohen\u2019s d value higher than 0.5 will be statistically significant even after correction for multiple comparisons in the cerebellum. These tasks include the following contrasts: Movement (tap left fingers, or tap right fingers, or squeeze right toes, or squeeze left toes, or move tongue) minus Average (average of the other four movements), assessing motor function (Buckner et al., 2011); Two back (subject responds if current stimulus matches the item two back) minus Zero back (subject responds if current stimulus matches target cue presented at start of block), assessing working memory; Story (listen to stories) minus Math (answer arithmetic questions), assessing language processing (Binder et al., 2011); TOM (view socially interacting geometric objects) minus Random (view randomly moving geometric objects), assessing social cognition (Castelli et al., 2000; Wheatley et al., 2007); and Faces (decide which of two angry/fearful faces on the bottom of the screen match the face at the top of the screen) minus Shapes (same task performed with shapes instead of faces), assessing emotion processing (Hariri et al., 2002).\n\nCerebellar resting-state network maps were obtained from Buckner et al. (2011). Buckner\u2019s study applied a winner-takes-all algorithm to determine the strongest functional correlation of each cerebellar voxel to one of the 7 or 17 cerebral cortical resting-state networks defined by Yeo and colleagues (Yeo et al., 2011). This analysis used data from 1000 participants. Additional methodological information regarding these task activity and resting-state network data is included in Supplementary file 1.\n\n### Clustering analyses\n\nClustering analyses on the resulting diffusion map embedding gradients included k-means clustering, spectral clustering, and silhouette coefficient analysis (Hastie et al., 2009) using the scikit-learn toolbox (Pedregosa et al., 2011). K-means separates samples in a previously specified number of clusters, minimizes the sum of the squared differences of each data point from the mean within each cluster, but makes the assumption that clusters are convex. Spectral clustering does not have a convexity constraint, provides a valuable alternative method of analysis to validate k-means clustering results, but still requires a specification of a number of clusters. Silhouette coefficient analysis makes it possible to select the optimal number of clusters by optimizing the separation distance between clusters. We normalized the gradients prior to clustering when calculations included all 8 gradients; if normalization is not performed, gradient 1 obscures the contribution of the last gradients given its much larger range of values.\n\n### Cerebello-cerebral functional connectivity\n\nWe aimed to compare asymmetries between the two motor (I-VI, VIII) and three nonmotor regions of cerebellar representation (VI/Crus I, Crus II/VIIB, IX/X) by comparing their relative position along diffusion embedding gradients. As a supplementary analysis, we also contrasted cerebello-cerebral connectivity from these regions using diffusion embedding gradient peaks within each of these areas of representation (e.g. contrasting cerebral cortical connectivity between first and second motor regions of representation). Cerebello-cerebral and intra-cerebellar connectivity Fisher\u2019s z transformed values were obtained from the preprocessed HCP \u2018dense connectome\u2019 (n\u00a0=\u00a01003); maps were contrasted using the method for comparing correlated correlation coefficients described by Meng and colleagues (Meng et al., 1992); and p maps were corrected for multiple comparisons within the cerebral cortex using p<0.05 voxel-based false discovery rate calculations.\n",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "e24d48ab-baa7-4c60-a38c-01e8455bb352",
+      "submission_id": "1a9e2f83-fc67-446d-be5d-d2c2c5688d53",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andreea Bostan, University of Pittsburgh United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36652.021](https://doi.org/10.7554/eLife.36652.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Functional gradients of the cerebellum\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Andreas Bostan (Guest Revieewing Editor) David Van Essen (Senior Editor).\n\nThe reviewers have discussed the reviews and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers find that the manuscript submitted by Guell et al. describes novel and interesting findings on the functional organization of the cerebellum. They adapted a technique that was recently used by Marguiles et al. (2016) to describe a principal axis for spatial organization in the cerebral cortex (primary sensorimotor to multimodal regions). This mapping technique seems to be interesting and potentially useful to derive novel insights about the cerebellum. Based on their results, the authors put forth a novel framework for studying and understanding the functions of the cerebellar cortex. Three central conclusions seem essential for establishing this framework:\n\n1) For a better understanding of cerebellar function, it is important to establish a functional parcellation of the cerebellar cortex, in contrast (and/or along) with partitioning it into discrete areas based on anatomical boundaries (e.g. cerebellar lobules).\n\n2) Two main gradients for the organization of cerebellar function can be described. The first identifies a progression from uni-modal (motor) to trans-modal processing regions. The second identifies a progression from task-focused to task-unfocused regions.\n\n3) The localization of the \"double motor\" and \"triple non-motor\" representations along the two main gradients indicate that the respective motor and non-motor sub-regions of the cerebellum are functionally distinct.\n\nOverall, the reviewers would like the authors to have a more clear presentation of the results and a more focused discussion of their relevance.\n\nEssential revisions:\n\n1) The authors use several analyses to show that the organizational framework described here is very much in line with both task-fMRI activations and resting-state connectivity with the cerebral cortex. However, it would be useful for the authors to (more clearly and succinctly) emphasize the novel aspects of their work and the insights that their perspective adds to what we already know about the functional organization of the cerebellar cortex.\n\n2) The methods discussing how the task-based and resting-state activations are integrated into this framework need to be clarified. Many methods are provided by reference only and not explained. Given the strong modeling focus of this manuscript, the reviewers suggest that the authors find a way to provide more details regarding their methodological choices.\n\n3) One distinct aspect of their approach is the fact that they just focus on cerebellar resting-state activity, without invoking cerebellar connections with the rest of the brain. However, given the absence of intra-cerebellar connections, it is unclear how much of the functional connectivity within the cerebellum is driven by anything else but its connections with other regions of the brain, particularly the cerebral cortex. This raises the question of whether a full-brain analysis (rather than a cerebellum-specific analysis) would compare to the present results. The reviewers strongly suggest that the authors consider adding a cortical connectivity component to this manuscript.\n\n4) An exciting aspect of the current manuscript is that the authors successfully replicate the results at the individual level. This suggests that this framework would be well suited for conducting small-sample studies of clinical populations. To emphasize this point, it would be nice to see more examples of replication at the individual level and/or replication in sub-samples. In order to encourage studies of clinical populations using this framework, it might also be useful if the authors provided an insight into the proportion of individuals in which the two main gradients can be reproduced at the individual level.\n\n5) The authors discuss more than two gradients, but it is unclear how relevant their discussion is, given the limited variability that they explain and that they do not appear to replicate (well) at the individual level. Maybe this data could be included in just the supplementary information.\n\n6) The notion of two main gradients of cerebellar organization indicates that some tasks (e.g. standard social/emotional processing tasks) may not be particularly well suited for identifying the functional role of the cerebellum. The authors may consider this (or a similar) perspective, instead of trying to fit the results from all functional tasks into their framework.\n\n7) The results offer interesting insights regarding the double motor and triple non-motor representations. Although the nomenclature (\"double\" and \"triple\") suggests otherwise, the results indicate that the different cerebellar motor and non-motor representations are non-redundant and functionally distinct \u2013 this is a new and interesting idea that is worth both emphasizing and clarifying (Figure 2 presents these results, but is particularly difficult to follow with the given choices in color coding and nomenclature).\n\n8) Several sections (particularly in the Introduction and Discussion) are fairly speculative and go beyond the scope of the manuscript. These distract the reader from the main points of the manuscript and should be simplified.\n",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9ba69411-584a-47ef-bc17-8c8cc125dba3",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C1",
+      "claim": "The central axis of motor and nonmotor macroscale organization in the cerebellum remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and despite its growing importance in basic and clinical neuroscience, the central axis of motor and nonmotor macroscale organization in the cerebellum remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction, contrasting with the known organization of the cerebral cortex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "dd32e25c-7472-42cf-a3e5-759971b29972",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C3",
+      "claim": "The human cerebellum is engaged not only in motor control but also in cognitive and affective processing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to anatomy, evidence from clinical, behavioral and neuroimaging studies indicates that the human cerebellum is engaged not only in motor control but also in cognitive and affective processing (Schmahmann and Pandya, 1991; Schmahmann, 1996; Baillieux et al., 2008; Stoodley and Schmahmann, 2009; Thompson and Steinmetz, 2009; Tedesco et al., 2011; Stoodley et al., 2012; E et al., 2014; Koziol et al., 2014; Guell et al., 2015; Hoche et al., 2016, 2018; Schmahmann and Pandya, 1997a, Schmahmann and Pandya, 1997b1997b; Middleton and Strick, 1994; Schmahmann and Sherman, 1998; Levisohn et al., 2000; Riva and Giorgi, 2000; Ravizza et al., 2006; Schmahmann et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by extensive citations to clinical, behavioral, and neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "d16d819e-c7fd-4de9-9378-99f409fe4abd",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C4",
+      "claim": "There are no cerebellar cortical association fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that there are no cerebellar cortical association fibers (Schmahmann, 1996; Schmahmann and Pandya, 2008) makes it difficult to analyze intra-cerebellar progressive hierarchical relationships using anatomical techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to anatomical studies by Schmahmann and colleagues.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "cb5843a3-11b6-49bf-9aeb-bb555a8d624c",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C5",
+      "claim": "Gradient 1 explained the largest part of variability in resting-state connectivity patterns within the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradient 1 explained the largest part of variability in resting-state connectivity patterns within the cerebellum (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "3e2d69b7-1bb2-406f-ab4f-a0ccc3d5aced",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C6",
+      "claim": "Gradient 1 extended bilaterally from lobules IV/V/VI and lobule VIII to posterior aspects of Crus I and Crus II as well as medial regions of lobule IX.",
+      "claim_type": "EXPLICIT",
+      "source": "It extended bilaterally from lobules IV/V/VI and lobule VIII to posterior aspects of Crus I and Crus II as well as medial regions of lobule IX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the results describing Gradient 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "2df6c1d2-f37c-47fd-a91a-bf7191f676d7",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C7",
+      "claim": "Gradient 1 is anchored at one end by cerebellar motor regions and at the other end by regions engaged in the language task.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap with task activity maps (Figure 1B) revealed that Gradient 1 is anchored at one end by cerebellar motor regions and at the other end by regions engaged in the language task of the HCP dataset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "77fcb2d0-dd59-4e02-a8d5-f4a1c41b0d27",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C8",
+      "claim": "Gradient 1 extends from sensorimotor network to DMN regions of the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap with cerebellar representations of cerebral cortical resting-state networks (Figure 1B) revealed that Gradient 1 extends from sensorimotor network to DMN regions of the cerebellum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b722e7fa-d925-40ec-b7b9-5d8eeb16da31",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C9",
+      "claim": "Ventral/dorsal attention and frontoparietal networks were situated between the two extreme ends of Gradient 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventral/dorsal attention and frontoparietal networks were situated between the two extreme ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in results describing Gradient 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "fd670546-1335-4513-bc81-e6502fd9bb3d",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C10",
+      "claim": "Gradient 2 included at one end the anterior portions of Crus I and Crus II bilaterally.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradient 2, the component accounting for the second-most variance, included at one end the anterior portions of Crus I and Crus II bilaterally (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "f3c0956a-cc37-4493-9ce8-bfa773971caf",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C11",
+      "claim": "The anterior portions of Crus I and Crus II corresponded to areas engaged in the HCP working-memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions corresponded to areas engaged in the HCP working-memory task (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "83ddfce6-e81b-4fc2-9c54-a402d8278a72",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C12",
+      "claim": "The other end of Gradient 2 included both regions involved in motor processing and regions involved in language processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The other end of Gradient 2 included both regions involved in motor processing and regions involved in language processing; these areas correspond, respectively, to sensorimotor network and DMN regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in results describing Gradient 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "dd635e64-c643-4e04-a55f-463271f83e09",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C13",
+      "claim": "Functional gradients calculated using functional connectivity values from the cerebellum to the cerebral cortex revealed a remarkably similar distribution to intra-cerebellar gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional gradients calculated using functional connectivity values from the cerebellum to the cerebral cortex (rather than from the cerebellum to the cerebellum) revealed a remarkably similar distribution (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in results and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "d24f9a23-3964-4df7-b8a3-f30b65ab9380",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C14",
+      "claim": "Second motor representation (lobule VIII) and third nonmotor representations (lobule IX/X) were consistently located at less extreme positions along Gradient 1 and/or 2 when compared to their first motor and first/second nonmotor representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Second motor representation (lobule VIII) and third nonmotor representations (lobule IX/X) were consistently located at less extreme positions along Gradient 1 and/or 2 when compared to their first motor and first/second nonmotor representations, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in results describing the analysis of motor and nonmotor representations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "934909bb-6101-48f7-89d1-091cd390686a",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C15",
+      "claim": "Cerebellar functional regions follow a gradual organization which progresses from primary (motor) to transmodal (DMN, task-unfocused) regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we applied diffusion map embedding to resting-state data from the Human Connectome Project dataset (n = 1003), and show for the first time that cerebellar functional regions follow a gradual organization which progresses from primary (motor) to transmodal (DMN, task-unfocused) regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "7512eafb-f4ff-405c-af80-226436f676e5",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C16",
+      "claim": "A secondary axis extends from task-unfocused to task-focused processing.",
+      "claim_type": "EXPLICIT",
+      "source": "A secondary axis extends from task-unfocused to task-focused processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "f94a3de3-de97-4374-998e-40f67aeae7fa",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C17",
+      "claim": "Functional differences exist not only between the two motor but also between the three nonmotor representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional differences exist not only between the two motor but also between the three nonmotor representations, and second motor representation might share functional similarities with third nonmotor representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b99f4bd3-028a-4553-a1af-81d348424d2e",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C18",
+      "claim": "Second motor representation might share functional similarities with third nonmotor representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional differences exist not only between the two motor but also between the three nonmotor representations, and second motor representation might share functional similarities with third nonmotor representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative finding in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "e6fdd0e3-5219-47ca-877e-20d8e9c4f1f5",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C19",
+      "claim": "The cerebellum has a double motor representation in lobules I-VI and VIII.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state as well as task processing analyses have revealed a cerebellar double motor (lobules I-VI and VIII) and triple non-motor representation (lobules VI/Crus I, Crus II/VIIB and IX/X) (Buckner et al., 2011; Guell et al., 2018a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "edac8b46-277d-43f0-b041-812e455bcc5c",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C20",
+      "claim": "The cerebellum has a triple nonmotor representation in lobules VI/Crus I, Crus II/VIIB, and IX/X.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state as well as task processing analyses have revealed a cerebellar double motor (lobules I-VI and VIII) and triple non-motor representation (lobules VI/Crus I, Crus II/VIIB and IX/X) (Buckner et al., 2011; Guell et al., 2018a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "63e28972-a3f8-49c4-a5bc-83c420b0fadc",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C21",
+      "claim": "This is the first study to investigate the progressive, hierarchical organization of the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first study to investigate the progressive, hierarchical organization of the cerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "75ab1dc8-d463-4dd0-bf93-9f84f1b31f0a",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C22",
+      "claim": "Cerebellar macroscale organization is sensorimotor-fugal.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first study to report a sensorimotor-fugal macroscale organization in the cerebellum; that is, a hierarchical organization that progresses away from sensorimotor function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion as a main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "40e258c2-2910-4442-aafb-ba74c6b7d658",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C23",
+      "claim": "Cerebellum and cerebral cortex share a similar macroscale principle of organization.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding strongly suggests that cerebellum and cerebral cortex share a similar macroscale principle of organization, namely, that both structures share a hierarchical organization which gradually progresses away from unimodal streams of information processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference from the data comparing cerebellar and cortical gradients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "e3d1e549-c202-4107-ac00-327f7812660f",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C24",
+      "claim": "The overlap between language task activity and DMN may be due to the language task contrast which subtracted listening to stories minus answering arithmetic questions.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap between language task activity and DMN may be due to the language task contrast which subtracted listening to stories minus answering arithmetic questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the observed overlap.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "11d8be9b-1a75-4d70-b9de-a220de085585",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C25",
+      "claim": "Working memory represents a nonmotor task which is not as distant from motor function as a story listening task.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reasonable to conceptualize working memory as a nonmotor task which is not as distant from motor function as a story listening task, justifying its middle position along Gradient 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conceptual interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "3ecd719a-652e-4e18-a26b-11b773fb8b22",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C26",
+      "claim": "DMN and ventral/dorsal attention networks are two opposing brain systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventral and dorsal attention networks were located far from DMN along Gradient 1 (Figure 1B), consistent with the view that DMN and ventral/dorsal attention networks are two opposing brain systems (Fox et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Fox et al. and observed in the data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b8c7ac76-688e-444e-9005-1bebb063fb4d",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C27",
+      "claim": "The frontoparietal network is conceptualized as a mediator between DMN and ventral/dorsal attention networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The frontoparietal network is conceptualized as a mediator between the two (Vincent et al., 2008), justifying its position between ventral/dorsal attention networks and DMN along Gradient 1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Vincent et al. and observed in the data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "17dac515-1ca2-4954-88b2-8d99d3bf3677",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C28",
+      "claim": "The cerebellum does not show functional connectivity with primary visual or auditory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the cerebellum does not show functional connectivity with primary visual or auditory cortices (Buckner et al., 2011), but is anatomically and functionally connected with areas of primary sensorimotor processing and consistently engaged in simple motor tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buckner et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "7ba34997-3815-4bb5-bc70-b5d337fb69db",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C29",
+      "claim": "The cerebellum is anatomically and functionally connected with areas of primary sensorimotor processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the cerebellum does not show functional connectivity with primary visual or auditory cortices (Buckner et al., 2011), but is anatomically and functionally connected with areas of primary sensorimotor processing and consistently engaged in simple motor tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "d730bdd3-96d4-4ca0-ae97-54bbcf38d3fb",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C30",
+      "claim": "The cerebellum is consistently engaged in simple motor tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the cerebellum does not show functional connectivity with primary visual or auditory cortices (Buckner et al., 2011), but is anatomically and functionally connected with areas of primary sensorimotor processing and consistently engaged in simple motor tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "e0ee56e5-9bc4-4750-8b53-b6fe11b9e171",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C31",
+      "claim": "There are no short or long cerebellar cortical association fibers linking adjacent or distant cerebellar cortical areas with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the cerebral cortex, there are no short or long cerebellar cortical association fibers linking adjacent or distant cerebellar cortical areas with each other (Schmahmann, 1996; Schmahmann and Pandya, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "1135debe-992d-4ff0-8937-20d62cac1363",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C32",
+      "claim": "The functional organization of the cerebellum is a consequence of the arrangement of cerebello-cerebral anatomical connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Our hypothesis is that such a functional organization is a consequence of the arrangement of cerebello-cerebral anatomical connections which in turn affect correlations in resting-state activity between cerebellar regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a hypothesis to explain the observed functional organization.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "d92e8626-9424-4065-b1aa-1259b9ff41e6",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C33",
+      "claim": "Gradient 1 and Gradient 2 classify information processing in the cerebellum along two dimensions: distance from motor processing (Gradient 1) and amount of task-focus (Gradient 2).",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, Gradient 1 and Gradient 2 classify information processing in the cerebellum along two dimensions: distance from motor processing (Gradient 1) and amount of task-focus (Gradient 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the two gradients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "6cf56043-9953-4222-8e67-ec9c2175deb2",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C34",
+      "claim": "HCP motor task is situated at a minimal position in Gradient 1 (i.e. maximally motor) and at a minimal position in Gradient 2 (i.e. minimally task-focused).",
+      "claim_type": "EXPLICIT",
+      "source": "HCP motor task is situated at a minimal position in Gradient 1 (i.e. maximally motor) and at a minimal position in Gradient 2 (i.e. minimally task-focused) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "8c955b83-c5f3-41dd-87c5-864ab47d225e",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C35",
+      "claim": "Working memory is situated at a maximum position in Gradient 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolated cognitive process is closely related to task focus and is therefore situated at a maximum position in Gradient 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the working memory task position.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "02153bff-97f7-412f-941c-67370a67fb1d",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C36",
+      "claim": "There are no cerebellar voxels with simultaneous maximum Gradient 1 and Gradient 2 values.",
+      "claim_type": "EXPLICIT",
+      "source": "First, there are no cerebellar voxels with simultaneous maximum Gradient 1 and Gradient 2 values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the data distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "ff4fc775-433a-40e3-8f1a-ad3421d047ca",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C37",
+      "claim": "There are no cerebellar voxels with simultaneous minimum Gradient 1 and maximum Gradient 2 values.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, there are no cerebellar voxels with simultaneous minimum Gradient 1 and maximum Gradient 2 values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the data distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "a16340de-9bed-42c7-9f32-5fbc53bae27d",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C38",
+      "claim": "The distribution of Gradient 1 confirms the double motor/triple nonmotor organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of Gradient 1, the component that explains the greatest variability in resting-state intra-cerebellar connectivity patterns, confirms this organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a confirmation of previous findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "6688aab2-5825-45f4-a7b9-48e39afea531",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C39",
+      "claim": "Gradient 1 lowest values correspond to lobules IV/V/VI and VIII.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradient 1 lowest values correspond to lobules IV/V/VI and VIII (Figure 1A, dark blue regions in Gradient 1), demarcating the two areas of motor representation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "650fb2c5-225d-402f-8bea-ba2d257fca6f",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C40",
+      "claim": "The highest values of Gradient 1 correspond to lobules Crus I, Crus II, and lobule IX.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest values correspond to lobules Crus I, Crus II, and lobule IX (Figure 1A, dark red regions in Gradient 1) - these regions correspond to the first, contiguous second, and third nonmotor representation areas, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "aadea414-18cb-4702-8721-c1b8857e8f59",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C41",
+      "claim": "The double motor/triple nonmotor organization has been shown in cerebellar representations of cerebral resting-state networks, cerebellar task activity, cerebro-cerebellar functional connectivity from cerebral cortical task activity peaks, and gradients of intra-cerebellar patterns of functional connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the double motor/triple nonmotor organization has now been shown in cerebellar representations of cerebral resting-state networks (Buckner et al., 2011), cerebellar task activity (Guell et al., 2018a), cerebro-cerebellar functional connectivity from cerebral cortical task activity peaks (Guell et al., 2018a), and gradients of intra-cerebellar patterns of functional connectivity (the present study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a summary of evidence from multiple studies including the present one.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "89338a96-e1fe-4498-9e29-2a31a810d1ee",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C42",
+      "claim": "Each nonmotor cerebellar network consists of three representations spanning VI/Crus I, Crus II/VIIB and IX/X.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as 'each distributed network consists of association areas spanning frontal, parietal, temporal and cingulate cortices' (Mesulam, 1981), the data indicate that each nonmotor cerebellar network consists of three representations spanning VI/Crus I, Crus II/VIIB and IX/X.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the data by analogy to cerebral cortex organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "72394993-5e8e-4280-82f0-7df33e20bee0",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C43",
+      "claim": "Lobules I-VI and VIII receive input from and project to M1.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is based on shared cerebello-cerebral cortical loops: lobules I-VI and VIII receive input from and project to M1, and lobules Crus I/Crus II and IX/X receive input from and project to area 46 (Kelly and Strick, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelly and Strick.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "af654318-8977-4f23-a3e8-bc2f5e65eb4f",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C44",
+      "claim": "Lobules Crus I/Crus II and IX/X receive input from and project to area 46.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is based on shared cerebello-cerebral cortical loops: lobules I-VI and VIII receive input from and project to M1, and lobules Crus I/Crus II and IX/X receive input from and project to area 46 (Kelly and Strick, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelly and Strick.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "746716d9-ff78-42d4-80c7-bf55a8775773",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C45",
+      "claim": "The contribution of the second motor representation (lobule VIII) is different from the contribution of the first motor representation (lobules I-VI).",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that the contribution of the second motor representation (lobule VIII) is different from the contribution of the first motor representation (lobules I-VI), as expected from previous clinical (Stoodley et al., 2016; Schmahmann et al., 2009) and functional connectivity (Kipping et al., 2013) observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the data, supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "17dd5e49-87b7-4cc8-9b72-451f91705a06",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C46",
+      "claim": "The contribution of the third nonmotor representation (lobules IX/X) is different from the contribution of the first and second nonmotor representations (lobules VI/Crus I/Crus II/VIIB).",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, it also indicates that the contribution of the third nonmotor representation (lobules IX/X) is different from the contribution of the first and second nonmotor representations (lobules VI/Crus I/Crus II/VIIB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a novel conclusion from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "65590634-0a73-4095-8f25-1379a61eab10",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C47",
+      "claim": "A less extreme position along Gradient 1 and/or 2 in both third nonmotor and second motor representation represents a less extreme level of information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "We further speculate that a less extreme position along Gradient 1 and/or 2 in both third nonmotor and second motor representation represents, in both cases, a less extreme level of information processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculation based on the observed data patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b82cd3e4-3975-4c75-826e-8cd9e114dad2",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C48",
+      "claim": "Nonmotor activity in lobules IX and X might emerge from, and follow the logic of, motor processing in lobule VIII.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this pattern of a less extreme level of information processing is observed in both second motor representation and third nonmotor representation, we argue that nonmotor activity in lobules IX and X (third nonmotor representation) might emerge from, and follow the logic of, motor processing in lobule VIII (second motor representation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative interpretation of the observed pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "7a01bfa1-bc8a-47b7-b265-175336d73eb8",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C49",
+      "claim": "The second representation of motor task activity, sensorimotor network, and 'Low-G1' maps were consistently located at a higher position along Gradient 2 when compared to their first representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that the second representation of motor task activity, sensorimotor network, and 'Low-G1' (motor) maps were consistently located at a higher position along Gradient 2 when compared to their first representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "8f166b11-da47-407d-a82c-860301a3663c",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C50",
+      "claim": "While the first motor representation is engaged in pure motor processing, second motor representation is engaged in motor processes that require higher task focus.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that while the first motor representation is engaged in pure motor processing as isolated by the Movement (e.g. tap left fingers) minus Average (average of the other four movements) contrast, second motor representation is engaged in motor processes that require higher task focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the observed position differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "57bd4306-de09-42f8-80e3-a1f9190c4ef4",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C51",
+      "claim": "Third representation of language task, DMN, and 'High-G1' maps were consistently located at a lower position along Gradient 1 when compared to their first and contiguous second representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a similar logic, third representation of language task, DMN, and 'High-G1' maps were consistently located at a lower position along Gradient 1 when compared to their first and contiguous second representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b763a50b-002e-48ff-85a9-4a34c7b7ecdb",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C52",
+      "claim": "The third representation of working memory, frontoparietal network, and 'High-G2' maps were consistently located at a lower position along Gradient 2 when compared to their first and second representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with this logic, the third representation of working memory, frontoparietal network, and 'High-G2' maps were consistently located at a lower position along Gradient 2 when compared to their first and second representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "562db96f-7875-4f14-8c0b-f7045e0dd84e",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C53",
+      "claim": "PICA occlusion commonly results in the infarction of lobule VIII but not of lobules IV/V/VI.",
+      "claim_type": "EXPLICIT",
+      "source": "PICA occlusion commonly results in the infarction of lobule VIII (second motor representation) but not of lobules IV/V/VI (first motor representation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "655a6283-1d89-47c1-918e-8569c1486132",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C54",
+      "claim": "PICA lesions result in little or no motor deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these lesions result in little or no motor deficits (Stoodley et al., 2016; Schmahmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "1d9321bb-aff9-4632-b993-75ead0bc619d",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C55",
+      "claim": "The principal target of pontine visual cells in monkeys is lobule IX.",
+      "claim_type": "EXPLICIT",
+      "source": "Glickstein and colleagues (Glickstein et al., 1994) reported that the principal target of pontine visual cells in monkeys is lobule IX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glickstein et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "c4de685c-0bf6-40fc-b3e9-f70dc6a17ac3",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C56",
+      "claim": "Calretinin-positive unipolar brush cells are preferentially located in lobules IX and X in many species.",
+      "claim_type": "EXPLICIT",
+      "source": "A specific type of cell, the Calretinin-positive unipolar brush cell, is preferentially located in lobules IX and X in many species (Di\u00f1o et al., 1999; Mugnaini et al., 2011) and receives vestibular afferents (Di\u00f1o et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "a78c0fba-a7a6-43a5-97f0-e00602ffc8b8",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C57",
+      "claim": "Lobules IX and X are classically considered to represent the vestibulocerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, lobules IX and X are classically considered to represent the vestibulocerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "7e43fb90-6326-4120-b629-c434f81740cf",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C58",
+      "claim": "The study analyzed data from 1003 participants of the Human Connectome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses included data from 1003 participants of the Human Connectome Project (HCP) (Van Essen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "ee5b3045-616b-49a7-8b63-b8f56f539b63",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C59",
+      "claim": "Each HCP participant provided one full hour of resting-state data.",
+      "claim_type": "EXPLICIT",
+      "source": "We took advantage of the newly available and unparalleled power of the Human Connectome Project (HCP) dataset, where each participant (n = 1003) provided one full hour of resting-state data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "9e8825b4-9569-4f51-8d75-2846c60ac6c9",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C60",
+      "claim": "Task activity maps included motor, working memory, emotion, social, and language processing from 787 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We incorporated task activity maps (motor, working memory, emotion, social, and language processing) from a previously analyzed subset of the same group of participants (Guell et al., 2018a) (n = 787).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b1453f61-bcee-4b73-a1f7-613e91dafab1",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C61",
+      "claim": "Maps of cerebellar representation of cerebral cortical resting-state networks were obtained from Buckner et al. (2011) calculated in 1000 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Maps of cerebellar representation of cerebral cortical resting-state networks were obtained from the study of Buckner et al. (2011), calculated in a different group of participants (n = 1000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "30955853-86bd-45fc-9356-107c415d1457",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C62",
+      "claim": "Diffusion map embedding is a nonlinear dimensionality reduction technique.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion map embedding is a nonlinear dimensionality reduction technique and can be used to analyze similarities between functional connectivity based networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "cfc03b15-d629-4e6e-acd0-8c4ea6e42596",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C63",
+      "claim": "The initial dense connectome matrix includes the profile of connectivity of each cerebellar voxel with the rest of the cerebellum only.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to highlight that our initial dense connectome matrix includes the profile of connectivity of each cerebellar voxel with the rest of the cerebellum only, rather than with the rest of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "d15e4d75-983c-4f60-854f-767d1d47c991",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C64",
+      "claim": "The analysis reflects the intrinsic organization of the cerebellum without invoking its connectivity profiles with the cerebral hemispheres or other brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, our analysis reflects the intrinsic organization of the cerebellum without invoking its connectivity profiles with the cerebral hemispheres or other brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological feature of the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "5fe1d401-fb84-4962-9cec-53f1fdfde2af",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C65",
+      "claim": "Clustering of connectivity gradients revealed discrete networks similar to cerebello-cerebral connectivity parcellations from Buckner et al. (2011).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, clustering of connectivity gradients revealed discrete networks similar to cerebello-cerebral connectivity parcellations from Buckner et al. (2011) (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "9dd5def3-0774-4bb1-a6e6-311b136cb9c1",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C66",
+      "claim": "A similar distribution of gradients 1 and 2 could be observed when analyzing concatenated dataseries from a group of 32 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Top row: Gradients 1 and 2 could also be observed when analyzing concatenated dataseries from a group of 32 participants, highlighting the applicability of our methodology to group studies with small cohorts of unrelated subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the legend of Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "cf2fcfd2-ab40-463d-930e-04c9d91c6f46",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C67",
+      "claim": "Gradients with a distribution similar to gradient 1 could be observed in most cases (29 out of 32 participants) when calculating gradients within each individual participant.",
+      "claim_type": "EXPLICIT",
+      "source": "Bottom row: When calculating gradients within each individual participant of this subgroup and evaluating any of the first four resulting gradients, gradients with a distribution similar to gradient 1 could be observed in most cases (29 out of 32 participants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the legend of Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "a4439a65-fc06-46ab-9a0f-837f8ad550bc",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C68",
+      "claim": "Gradients with a distribution similar to gradient 2 could be observed in half of the participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradients with a distribution similar to gradient 2 could be observed in half of the participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the legend of Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b066ab11-39f6-4b70-93d7-ecfbfa51704e",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C69",
+      "claim": "Gradients 3 and 4 revealed laterality asymmetries in areas of nonmotor processing but not in areas of motor processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Gradients 3 and 4 revealed laterality asymmetries in areas of nonmotor processing (Crus I, Crus II, VIIB and IX) but not in areas of motor processing (IV/V/VI and VIII).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the legend of Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "49104b1a-971e-488c-8603-f633176a4fe6",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C70",
+      "claim": "Left/right asymmetries in cerebellar processing have been described in multiple nonmotor tasks but not in motor processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, left/right asymmetries in cerebellar processing have been described in multiple nonmotor tasks (Hu et al., 2008) but not in motor processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "e0dc0702-850f-4606-b250-b2d77bb0603a",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C71",
+      "claim": "Connectivity from first motor representation corresponds to cerebral cortical somatomotor network.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses are shown in Figure 3\u2014figure supplement 5: while connectivity from first motor representation corresponds to cerebral cortical somatomotor network, connectivity from second motor representation engages areas adjacent to, but not directly at, somatomotor network (as shown previously by Kipping and colleagues [Kipping et al., 2013]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the discussion and shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "78a77462-7eb7-4bfa-9f9a-0e1a93931b77",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C72",
+      "claim": "Connectivity from second motor representation engages areas adjacent to, but not directly at, somatomotor network.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses are shown in Figure 3\u2014figure supplement 5: while connectivity from first motor representation corresponds to cerebral cortical somatomotor network, connectivity from second motor representation engages areas adjacent to, but not directly at, somatomotor network (as shown previously by Kipping and colleagues [Kipping et al., 2013]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the discussion, shown in Figure 3\u2014figure supplement 5, and supported by citation to Kipping et al.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "c791eafb-3ba3-47db-81c8-191f45dd0003",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C73",
+      "claim": "Connectivity from first/second task-focused nonmotor representation corresponds to cerebral cortical task-positive networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, while connectivity from first/second task-focused nonmotor representation corresponds to cerebral cortical task-positive networks, connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-positive networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "e7ff870f-7701-4a30-998a-849a977522da",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C74",
+      "claim": "Connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-positive networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, while connectivity from first/second task-focused nonmotor representation corresponds to cerebral cortical task-positive networks, connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-positive networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "4f325b32-e46d-4ec4-ad5f-8b3df21648bb",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C75",
+      "claim": "Connectivity from first/second task-unfocused nonmotor representation corresponds to cerebral cortical task-negative networks (Default Mode Network).",
+      "claim_type": "EXPLICIT",
+      "source": "Following the same logic, while connectivity from first/second task-unfocused nonmotor representation corresponds to cerebral cortical task-negative networks (Default Mode Network), connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-negative networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "dde5b7de-cd7b-4ebb-8057-2a18309e6a36",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C76",
+      "claim": "Connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-negative networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the same logic, while connectivity from first/second task-unfocused nonmotor representation corresponds to cerebral cortical task-negative networks (Default Mode Network), connectivity from third task-focused nonmotor representation engages areas adjacent to, but not directly at, task-negative networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "220af127-dbde-4c1c-8b44-68cb1c03228e",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C77",
+      "claim": "Data-driven clustering of the first two gradients resulted in a division of gradients 1 and 2 in three areas encompassing the High-G1/High-G2/Low-G1 parcellation.",
+      "claim_type": "EXPLICIT",
+      "source": "A data-driven clustering of the first two gradients resulted in a division of gradients 1 and 2 in three areas encompassing our High-G1/High-G2/Low-G1 parcellation (Figure 3\u2014figure supplement 3), further supporting this hypothesis-driven division.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "6b825450-8a0b-4d33-b174-65dd05a10c9c",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "claim_id": "C78",
+      "claim": "The same relationship between the two motor and three nonmotor areas of representation was observed in the analysis of a single subject with only one resting-state run of 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The same relationship between the two motor and three nonmotor areas of representation was observed in the analysis of a single subject with only one resting-state run of 15 min (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a21d12d-404c-41f3-913c-da07d835456a",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Gradient 1, the principal gradient of cerebellar functional organization, extends from motor regions (lobules IV/V/VI and VIII) to nonmotor regions (posterior Crus I/II and medial lobule IX), corresponding to a sensorimotor-to-DMN axis. This represents a sensorimotor-fugal hierarchical organization in the cerebellum, progressing from primary motor to transmodal task-unfocused processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 provide consistent anatomical and functional descriptions of Gradient 1 from the data (n=1003), with visual confirmation in Figure 1. Claims C15 and C22 state the main interpretation. The gradient distribution is clearly shown, the task/network overlaps are documented, and the sensorimotor-fugal interpretation is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gradient 2, the secondary gradient, extends from working memory/frontoparietal network regions (anterior Crus I/II) to both motor and language/DMN regions. This gradient represents a task-focus dimension, with working memory at maximum task-focus and motor/language tasks at minimum task-focus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 describe the anatomical distribution of Gradient 2 with reference to Figure 1. Claims C16, C33-C35 provide the functional interpretation as a task-focus axis. The data support this two-dimensional framework (distance from motor processing and task-focus), though the interpretation of task-focus is somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cerebellum and cerebral cortex share a similar macroscale organizational principle, with both exhibiting hierarchical organization progressing away from unimodal processing. This similarity is supported by comparable gradient distributions when calculated using cerebello-cerebral versus intra-cerebellar connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 states the main conclusion, supported by C13 showing similar gradient distributions for cerebello-cerebral connectivity (Figure 2). Claims C26-C32 provide supporting context about network relationships and anatomical constraints. The parallel between cerebellar and cortical organization is well-demonstrated, though the mechanistic explanation (C32) remains hypothetical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "7d6845fd-cc15-44e7-bc91-580d683c814e",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The distribution of Gradient 1 confirms the previously described double motor (lobules I-VI and VIII) and triple nonmotor (VI/Crus I, Crus II/VIIB, IX/X) representation organization in the cerebellum, with lowest gradient values in motor regions and highest values in nonmotor regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 describe how Gradient 1 distribution confirms the double/triple representation pattern, with visual support in Figure 1A. Claim C41 summarizes convergent evidence from multiple methodologies. Claims C19-C20 establish the prior knowledge being confirmed. The gradient data provide strong independent confirmation of this organizational principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Second motor representation (lobule VIII) and third nonmotor representation (lobules IX/X) are located at less extreme positions along Gradients 1 and/or 2 compared to first motor and first/second nonmotor representations, indicating functional differences between these representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C49, C51-C52 document the consistent pattern of less extreme positioning for second motor and third nonmotor representations across multiple maps. Claims C45-C46 state the functional interpretation. This pattern is shown in Figure 3 and supplementary figures, and is consistent across gradient-derived parcellations, task maps, and resting-state networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "eacb2d23-5730-4828-a7a1-626238d0d167",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Functional differences exist between motor representations and between nonmotor representations, with the speculative hypothesis that second motor representation (lobule VIII) might share functional similarities with third nonmotor representation (lobules IX/X) in representing less extreme levels of information processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17 and C46 state functional differences are demonstrated, which is supported by the gradient positioning data. However, claims C18, C47-C48 are explicitly speculative about the nature of these differences and the relationship between second motor and third nonmotor representations. The hypothesis is plausible but requires additional experimental validation beyond gradient positioning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "e172a444-24f6-4351-a2b4-80892b94e99c",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The distribution of voxels in gradient space reveals constraints on cerebellar functional organization: no voxels have simultaneous maximum G1 and G2 values, and no voxels have simultaneous minimum G1 and maximum G2 values. These patterns are interpreted as reflecting the incompatibility of maximum task-unfocused nonmotor processing with maximum task-focus, and the necessity of nonmotor demands when increasing task-focus in motor regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 describe observed constraints in the data distribution. Claims C24-C25 provide conceptual interpretations of task positioning. The observations are clearly stated and the interpretations are reasonable given the gradient framework, though the mechanistic explanations are inferential. The data patterns are consistent with the proposed two-dimensional organizational scheme.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "13e95cc3-fd12-4f23-a7e8-3835f7cdc4eb",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Data-driven clustering analyses of connectivity gradients reveal discrete networks similar to previous cerebello-cerebral connectivity parcellations and support the hypothesis-driven High-G1/High-G2/Low-G1 division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 reports clustering results matching Buckner et al. (2011) parcellations (Figure 1\u2014supplement 5). Claim C77 shows data-driven clustering supports the hypothesis-driven parcellation (Figure 3\u2014supplement 3). These analyses provide independent validation of the gradient-based interpretations and demonstrate consistency with prior discrete parcellation approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "2a41ee83-d004-4ab4-bda5-36fda2ba2bea",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Similar gradient distributions can be observed in smaller groups (32 concatenated subjects) and in individual subjects, with Gradient 1 reliably present in most individuals (29/32) and Gradient 2 present in half, demonstrating the robustness and potential applicability of the method to smaller cohorts and individual-level analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 report gradient reproducibility in smaller samples and individuals (Figure 1\u2014supplement 4). Claim C78 shows the motor/nonmotor relationship is observable in single subjects (Figure 3\u2014supplement 4). These findings support the generalizability of the main results, though the lower reproducibility of Gradient 2 at the individual level suggests it may be less robust or require more data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "276c4149-c06b-4528-a012-dc402993ae23",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cerebello-cerebral connectivity analyses reveal that second motor representation connects to areas adjacent to (but not directly at) somatomotor cortex, and third nonmotor representation connects to areas adjacent to (but not directly at) task-positive and task-negative networks, supporting the interpretation of less extreme information processing in these representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 describe supplementary cerebello-cerebral connectivity analyses (Figure 3\u2014supplement 5) showing differential connectivity patterns for second motor and third nonmotor representations. These findings provide independent support for the gradient-based interpretations, though the connectivity differences are described qualitatively rather than with statistical comparisons. Claim C72 cites prior work (Kipping et al., 2013) supporting the second motor finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "ad09f8e8-7570-44ac-95e6-32770721c48e",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Gradients 3 and 4 reveal laterality asymmetries in nonmotor processing regions (Crus I, Crus II, VIIB, IX) but not in motor regions (IV/V/VI, VIII), consistent with prior reports of left/right asymmetries in cerebellar nonmotor but not motor tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 describes the laterality pattern in Gradients 3-4 (Figure 1\u2014supplement 2). Claim C70 provides supporting citation (Hu et al., 2008). The observation is clearly documented in the supplementary data and is consistent with prior literature, representing a secondary finding about cerebellar functional organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "d160d836-f790-460c-a2d0-8efd3925575c",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Each nonmotor cerebellar network consists of three representations spanning VI/Crus I, Crus II/VIIB, and IX/X, analogous to distributed networks in cerebral cortex. This organization has an anatomical correlate in shared cerebello-cerebral loops, with lobules I-VI and VIII projecting to M1, and Crus I/II and IX/X projecting to area 46.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 states the network interpretation by analogy to cerebral cortex organization. Claims C43-C44 provide anatomical support from tract tracing studies (Kelly and Strick, 2003). The interpretation is reasonable given the gradient data and prior anatomical knowledge, though the analogy to cortical networks is conceptual rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "a7dcd8e0-1910-48c0-82f9-847532007df8",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Clinical and anatomical observations about lobules VIII and IX/X are discussed as potentially consistent with the gradient findings: PICA lesions affecting lobule VIII produce minimal motor deficits; lobule IX receives pontine visual input and contains specialized cells receiving vestibular input; and lobules IX/X are classically considered vestibulocerebellum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 cite prior clinical and anatomical literature to provide context for the gradient findings. These are established observations from other studies (properly cited) that are discussed as potentially supporting the interpretation of functional differences between representations. The claims accurately represent prior knowledge, though the connections to the gradient findings are speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study analyzed resting-state fMRI data from 1003 HCP participants (1 hour per participant) using diffusion map embedding on intra-cerebellar connectivity, and incorporated task activity maps from 787 participants and resting-state network maps from 1000 participants (Buckner et al., 2011).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 describe the data sources and methodological approach. The sample sizes are clearly stated, the method (diffusion map embedding) is appropriately described (C62), and the key methodological feature of using intra-cerebellar connectivity only (C63-C64) is emphasized. These methodological details are well-documented and appropriate for the analyses performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "b124f168-4f52-4265-af5a-da1afe2b8127",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior to this study, the central axis of motor and nonmotor macroscale organization in the cerebellum was unknown, and this is the first study to investigate the progressive, hierarchical organization of the cerebellum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C21 establish the novelty of the study. These are reasonable characterizations of the state of knowledge, as prior cerebellar studies focused on discrete parcellations rather than continuous gradients of organization. The claim of being 'first' is supported by the literature review in the introduction, though such claims are always subject to potential oversight of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    },
+    {
+      "id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3",
+      "content_id": "154620f7-fff5-4c16-9f4e-43bd965a3af6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work has established that the cerebellum is engaged in motor, cognitive, and affective processing; has double motor and triple nonmotor representations; lacks cortical association fibers; and shows functional connectivity with sensorimotor but not primary visual/auditory cortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C19-C20, C28-C31 summarize established knowledge from prior studies with appropriate citations. These background claims are well-supported by the cited literature and provide necessary context for interpreting the gradient findings. The claims accurately represent the current state of knowledge about cerebellar functional organization and anatomy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:00:52.053425Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cb5843a3-11b6-49bf-9aeb-bb555a8d624c",
+      "result_id": "7a21d12d-404c-41f3-913c-da07d835456a"
+    },
+    {
+      "claim_id": "3e2d69b7-1bb2-406f-ab4f-a0ccc3d5aced",
+      "result_id": "7a21d12d-404c-41f3-913c-da07d835456a"
+    },
+    {
+      "claim_id": "2df6c1d2-f37c-47fd-a91a-bf7191f676d7",
+      "result_id": "7a21d12d-404c-41f3-913c-da07d835456a"
+    },
+    {
+      "claim_id": "77fcb2d0-dd59-4e02-a8d5-f4a1c41b0d27",
+      "result_id": "7a21d12d-404c-41f3-913c-da07d835456a"
+    },
+    {
+      "claim_id": "b722e7fa-d925-40ec-b7b9-5d8eeb16da31",
+      "result_id": "7a21d12d-404c-41f3-913c-da07d835456a"
+    },
+    {
+      "claim_id": "934909bb-6101-48f7-89d1-091cd390686a",
+      "result_id": "7a21d12d-404c-41f3-913c-da07d835456a"
+    },
+    {
+      "claim_id": "75ab1dc8-d463-4dd0-bf93-9f84f1b31f0a",
+      "result_id": "7a21d12d-404c-41f3-913c-da07d835456a"
+    },
+    {
+      "claim_id": "fd670546-1335-4513-bc81-e6502fd9bb3d",
+      "result_id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260"
+    },
+    {
+      "claim_id": "f3c0956a-cc37-4493-9ce8-bfa773971caf",
+      "result_id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260"
+    },
+    {
+      "claim_id": "83ddfce6-e81b-4fc2-9c54-a402d8278a72",
+      "result_id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260"
+    },
+    {
+      "claim_id": "7512eafb-f4ff-405c-af80-226436f676e5",
+      "result_id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260"
+    },
+    {
+      "claim_id": "d92e8626-9424-4065-b1aa-1259b9ff41e6",
+      "result_id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260"
+    },
+    {
+      "claim_id": "6cf56043-9953-4222-8e67-ec9c2175deb2",
+      "result_id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260"
+    },
+    {
+      "claim_id": "8c955b83-c5f3-41dd-87c5-864ab47d225e",
+      "result_id": "de8e5fa8-20e9-424f-90a9-0cd3f54ef260"
+    },
+    {
+      "claim_id": "40e258c2-2910-4442-aafb-ba74c6b7d658",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "dd635e64-c643-4e04-a55f-463271f83e09",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "3ecd719a-652e-4e18-a26b-11b773fb8b22",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "b8c7ac76-688e-444e-9005-1bebb063fb4d",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "17dac515-1ca2-4954-88b2-8d99d3bf3677",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "7ba34997-3815-4bb5-bc70-b5d337fb69db",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "d730bdd3-96d4-4ca0-ae97-54bbcf38d3fb",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "e0ee56e5-9bc4-4750-8b53-b6fe11b9e171",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "1135debe-992d-4ff0-8937-20d62cac1363",
+      "result_id": "c7d9bdc1-9246-4edd-a8e7-a79405acb897"
+    },
+    {
+      "claim_id": "a16340de-9bed-42c7-9f32-5fbc53bae27d",
+      "result_id": "7d6845fd-cc15-44e7-bc91-580d683c814e"
+    },
+    {
+      "claim_id": "6688aab2-5825-45f4-a7b9-48e39afea531",
+      "result_id": "7d6845fd-cc15-44e7-bc91-580d683c814e"
+    },
+    {
+      "claim_id": "650fb2c5-225d-402f-8bea-ba2d257fca6f",
+      "result_id": "7d6845fd-cc15-44e7-bc91-580d683c814e"
+    },
+    {
+      "claim_id": "aadea414-18cb-4702-8721-c1b8857e8f59",
+      "result_id": "7d6845fd-cc15-44e7-bc91-580d683c814e"
+    },
+    {
+      "claim_id": "e6fdd0e3-5219-47ca-877e-20d8e9c4f1f5",
+      "result_id": "7d6845fd-cc15-44e7-bc91-580d683c814e"
+    },
+    {
+      "claim_id": "edac8b46-277d-43f0-b041-812e455bcc5c",
+      "result_id": "7d6845fd-cc15-44e7-bc91-580d683c814e"
+    },
+    {
+      "claim_id": "d24f9a23-3964-4df7-b8a3-f30b65ab9380",
+      "result_id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d"
+    },
+    {
+      "claim_id": "746716d9-ff78-42d4-80c7-bf55a8775773",
+      "result_id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d"
+    },
+    {
+      "claim_id": "17dd5e49-87b7-4cc8-9b72-451f91705a06",
+      "result_id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d"
+    },
+    {
+      "claim_id": "7a01bfa1-bc8a-47b7-b265-175336d73eb8",
+      "result_id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d"
+    },
+    {
+      "claim_id": "8f166b11-da47-407d-a82c-860301a3663c",
+      "result_id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d"
+    },
+    {
+      "claim_id": "57bd4306-de09-42f8-80e3-a1f9190c4ef4",
+      "result_id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d"
+    },
+    {
+      "claim_id": "b763a50b-002e-48ff-85a9-4a34c7b7ecdb",
+      "result_id": "0c6991a7-7bed-48c5-92e7-90b4848b1d1d"
+    },
+    {
+      "claim_id": "f94a3de3-de97-4374-998e-40f67aeae7fa",
+      "result_id": "eacb2d23-5730-4828-a7a1-626238d0d167"
+    },
+    {
+      "claim_id": "b99f4bd3-028a-4553-a1af-81d348424d2e",
+      "result_id": "eacb2d23-5730-4828-a7a1-626238d0d167"
+    },
+    {
+      "claim_id": "65590634-0a73-4095-8f25-1379a61eab10",
+      "result_id": "eacb2d23-5730-4828-a7a1-626238d0d167"
+    },
+    {
+      "claim_id": "b82cd3e4-3975-4c75-826e-8cd9e114dad2",
+      "result_id": "eacb2d23-5730-4828-a7a1-626238d0d167"
+    },
+    {
+      "claim_id": "02153bff-97f7-412f-941c-67370a67fb1d",
+      "result_id": "e172a444-24f6-4351-a2b4-80892b94e99c"
+    },
+    {
+      "claim_id": "ff4fc775-433a-40e3-8f1a-ad3421d047ca",
+      "result_id": "e172a444-24f6-4351-a2b4-80892b94e99c"
+    },
+    {
+      "claim_id": "e3d1e549-c202-4107-ac00-327f7812660f",
+      "result_id": "e172a444-24f6-4351-a2b4-80892b94e99c"
+    },
+    {
+      "claim_id": "11d8be9b-1a75-4d70-b9de-a220de085585",
+      "result_id": "e172a444-24f6-4351-a2b4-80892b94e99c"
+    },
+    {
+      "claim_id": "5fe1d401-fb84-4962-9cec-53f1fdfde2af",
+      "result_id": "13e95cc3-fd12-4f23-a7e8-3835f7cdc4eb"
+    },
+    {
+      "claim_id": "220af127-dbde-4c1c-8b44-68cb1c03228e",
+      "result_id": "13e95cc3-fd12-4f23-a7e8-3835f7cdc4eb"
+    },
+    {
+      "claim_id": "9dd5def3-0774-4bb1-a6e6-311b136cb9c1",
+      "result_id": "2a41ee83-d004-4ab4-bda5-36fda2ba2bea"
+    },
+    {
+      "claim_id": "cf2fcfd2-ab40-463d-930e-04c9d91c6f46",
+      "result_id": "2a41ee83-d004-4ab4-bda5-36fda2ba2bea"
+    },
+    {
+      "claim_id": "a4439a65-fc06-46ab-9a0f-837f8ad550bc",
+      "result_id": "2a41ee83-d004-4ab4-bda5-36fda2ba2bea"
+    },
+    {
+      "claim_id": "6b825450-8a0b-4d33-b174-65dd05a10c9c",
+      "result_id": "2a41ee83-d004-4ab4-bda5-36fda2ba2bea"
+    },
+    {
+      "claim_id": "e0dc0702-850f-4606-b250-b2d77bb0603a",
+      "result_id": "276c4149-c06b-4528-a012-dc402993ae23"
+    },
+    {
+      "claim_id": "78a77462-7eb7-4bfa-9f9a-0e1a93931b77",
+      "result_id": "276c4149-c06b-4528-a012-dc402993ae23"
+    },
+    {
+      "claim_id": "c791eafb-3ba3-47db-81c8-191f45dd0003",
+      "result_id": "276c4149-c06b-4528-a012-dc402993ae23"
+    },
+    {
+      "claim_id": "e7ff870f-7701-4a30-998a-849a977522da",
+      "result_id": "276c4149-c06b-4528-a012-dc402993ae23"
+    },
+    {
+      "claim_id": "4f325b32-e46d-4ec4-ad5f-8b3df21648bb",
+      "result_id": "276c4149-c06b-4528-a012-dc402993ae23"
+    },
+    {
+      "claim_id": "dde5b7de-cd7b-4ebb-8057-2a18309e6a36",
+      "result_id": "276c4149-c06b-4528-a012-dc402993ae23"
+    },
+    {
+      "claim_id": "b066ab11-39f6-4b70-93d7-ecfbfa51704e",
+      "result_id": "ad09f8e8-7570-44ac-95e6-32770721c48e"
+    },
+    {
+      "claim_id": "49104b1a-971e-488c-8603-f633176a4fe6",
+      "result_id": "ad09f8e8-7570-44ac-95e6-32770721c48e"
+    },
+    {
+      "claim_id": "89338a96-e1fe-4498-9e29-2a31a810d1ee",
+      "result_id": "d160d836-f790-460c-a2d0-8efd3925575c"
+    },
+    {
+      "claim_id": "72394993-5e8e-4280-82f0-7df33e20bee0",
+      "result_id": "d160d836-f790-460c-a2d0-8efd3925575c"
+    },
+    {
+      "claim_id": "af654318-8977-4f23-a3e8-bc2f5e65eb4f",
+      "result_id": "d160d836-f790-460c-a2d0-8efd3925575c"
+    },
+    {
+      "claim_id": "562db96f-7875-4f14-8c0b-f7045e0dd84e",
+      "result_id": "a7dcd8e0-1910-48c0-82f9-847532007df8"
+    },
+    {
+      "claim_id": "655a6283-1d89-47c1-918e-8569c1486132",
+      "result_id": "a7dcd8e0-1910-48c0-82f9-847532007df8"
+    },
+    {
+      "claim_id": "1d9321bb-aff9-4632-b993-75ead0bc619d",
+      "result_id": "a7dcd8e0-1910-48c0-82f9-847532007df8"
+    },
+    {
+      "claim_id": "c4de685c-0bf6-40fc-b3e9-f70dc6a17ac3",
+      "result_id": "a7dcd8e0-1910-48c0-82f9-847532007df8"
+    },
+    {
+      "claim_id": "a78c0fba-a7a6-43a5-97f0-e00602ffc8b8",
+      "result_id": "a7dcd8e0-1910-48c0-82f9-847532007df8"
+    },
+    {
+      "claim_id": "7e43fb90-6326-4120-b629-c434f81740cf",
+      "result_id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d"
+    },
+    {
+      "claim_id": "ee5b3045-616b-49a7-8b63-b8f56f539b63",
+      "result_id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d"
+    },
+    {
+      "claim_id": "9e8825b4-9569-4f51-8d75-2846c60ac6c9",
+      "result_id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d"
+    },
+    {
+      "claim_id": "b1453f61-bcee-4b73-a1f7-613e91dafab1",
+      "result_id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d"
+    },
+    {
+      "claim_id": "30955853-86bd-45fc-9356-107c415d1457",
+      "result_id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d"
+    },
+    {
+      "claim_id": "cfc03b15-d629-4e6e-acd0-8c4ea6e42596",
+      "result_id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d"
+    },
+    {
+      "claim_id": "d15e4d75-983c-4f60-854f-767d1d47c991",
+      "result_id": "62ace1d1-5004-4fa7-bc29-81f99d38b27d"
+    },
+    {
+      "claim_id": "9ba69411-584a-47ef-bc17-8c8cc125dba3",
+      "result_id": "b124f168-4f52-4265-af5a-da1afe2b8127"
+    },
+    {
+      "claim_id": "63e28972-a3f8-49c4-a5bc-83c420b0fadc",
+      "result_id": "b124f168-4f52-4265-af5a-da1afe2b8127"
+    },
+    {
+      "claim_id": "dd32e25c-7472-42cf-a3e5-759971b29972",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    },
+    {
+      "claim_id": "d16d819e-c7fd-4de9-9378-99f409fe4abd",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    },
+    {
+      "claim_id": "e6fdd0e3-5219-47ca-877e-20d8e9c4f1f5",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    },
+    {
+      "claim_id": "edac8b46-277d-43f0-b041-812e455bcc5c",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    },
+    {
+      "claim_id": "17dac515-1ca2-4954-88b2-8d99d3bf3677",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    },
+    {
+      "claim_id": "7ba34997-3815-4bb5-bc70-b5d337fb69db",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    },
+    {
+      "claim_id": "d730bdd3-96d4-4ca0-ae97-54bbcf38d3fb",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    },
+    {
+      "claim_id": "e0ee56e5-9bc4-4750-8b53-b6fe11b9e171",
+      "result_id": "3e4fe843-9905-4a9e-ab31-e42b9785ccb3"
+    }
+  ],
+  "comparisons": []
+}

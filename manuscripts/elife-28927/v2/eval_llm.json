@@ -1,0 +1,457 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C17",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The hybrid brain network model integrates individual structural connectivity from diffusion MRI with functional EEG source activity to drive neural mass dynamics, representing a novel multimodal fusion approach that is both physiologically and anatomically grounded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14, C17, C48-C50 collectively describe the hybrid model architecture and its novelty. The model construction is clearly documented in the methods, with structural connectivity from tractography (C2, C13) and EEG source activity driving populations (C3, C14). The multimodal fusion perspective (C48-C50) is well-articulated as an alternative interpretation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C15",
+      "C20",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The hybrid model predicted individual subject-specific resting-state fMRI time series and spatial network topologies over 20 minutes of activity for 15 subjects, with predictions significantly better than control models and validated through five-fold cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C15, C20, C51-C56, C65-C67 describe the primary prediction result. The study design (15 subjects, C51), parameter optimization (C55-C56), and statistical validation (C65-C67) are clearly documented. Cross-validation showed no significant difference between training and validation sets (C66-C67), supporting generalizability. Figure 3 provides visual evidence of prediction quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C68",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The hybrid model reproduced spatial topologies of fMRI functional connectivity networks, with predictions significantly better than the \u03b1-regressor and comparable to or better than the noise-driven model, though hybrid and random permutation models showed similar FC prediction quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C68, C73-C77 describe FC prediction results. The model predicted both static and dynamic FC better than the \u03b1-regressor (C73-C74, C77) and better than the noise model (C75). The observation that hybrid and permutation models showed similar FC predictions (C76) is explained by preserved long-range dynamics. Figure 4 provides supporting evidence with statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C43",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The hybrid model reproduced the inverse relationship between \u03b1-rhythm phase and firing rates on fast time scales (~100 ms) and revealed that this phenomenon results from ongoing excitation-inhibition balance, where EPSCs drive inhibitory populations that generate inverted IPSCs, leading to firing rate modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22-C23, C43, C78-C90 describe the fast time scale mechanism. The model reproduced empirically observed \u03b1-phase/firing relationships (C78, citing Haegens et al. 2011). The mechanistic explanation (C79-C90) is detailed with grand average waveforms (Figure 5) showing how EPSC-driven inhibitory populations generate proportional IPSCs (C84-C86), resulting in biologically plausible E/I ratios (C88, citing Xue et al. 2014). The mechanism is internally consistent and supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C25",
+      "C37",
+      "C38",
+      "C44",
+      "C45",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The hybrid model identified a mechanism transforming \u03b1-power fluctuations into slow fMRI oscillations through half-wave rectification by inhibitory populations, where increased \u03b1-power leads to increased feedback inhibition and decreased fMRI amplitude, explaining empirically observed anti-correlations between \u03b1-power and fMRI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C24-C25, C37-C38, C44-C45, C91-C106 describe the slow time scale mechanism. The model reproduced inverse \u03b1-power/fMRI relationships (C91-C92, citing empirical studies). The mechanistic explanation (C93-C106) details how inhibitory population rectification (C95-C96) introduces slow frequency components (C99-C100), with low-pass filtering by synaptic gating and hemodynamics (C103-C104). Robustness was tested at 9, 10, and 11 Hz (C105). Figure 6 provides detailed waveform evidence. The mechanism is well-supported though speculative elements exist (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C26",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The hybrid model reproduced fMRI power-law scaling (\u03b2 = -0.73) and revealed that long-range structural coupling amplifies slower oscillations more than faster oscillations through frequency-dependent accumulation of excitatory activity, transforming the \u03b1-band power spectrum (\u03b2 = -0.53) into steeper fMRI power-law scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C26, C40-C42, C46-C47, C107-C127 describe power-law scaling mechanisms. Empirical fMRI showed \u03b2 = -0.82 (C107), simulated fMRI \u03b2 = -0.73 (C109), while \u03b1-power had \u03b2 = -0.53 (C108-C109). Deactivating long-range coupling eliminated the difference (C112-C113), demonstrating its causal role (C115). The mechanism (C116-C127) explains how slow synaptic time constants (C122) enable accumulation during slower oscillations (C123-C125). Figure 7 provides comprehensive evidence. Rigorous model selection criteria were used to establish power-law scaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C128",
+      "C129",
+      "C130",
+      "C175",
+      "C176"
+    ],
+    "result": "The hybrid model demonstrated that excitation-inhibition balance is crucial for the emergence of scale invariance and long-range correlations, with parameter space exploration showing that increased long-range coupling requires proportionally increased local feedback inhibition for optimal predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C128-C130, C175-C176 describe the role of E/I balance. Parameter space exploration (C128) revealed diagonal patterns indicating the need for balanced excitation and inhibition (C129). The finding that E/I balance is crucial for scale invariance (C130) is supported by Figure 7 supplements showing 2D parameter distributions. The mechanistic interpretation (C176) about constructive interference is more speculative but follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C27"
+    ],
+    "result": "The hybrid model revealed how network interactions of neural populations lead to the emergence of empirical phenomena and their connections across multiple temporal scales in a time scale hierarchy, linking fast \u03b1-phase effects to slow fMRI oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C27 describe the multi-scale integration. The model successfully linked phenomena across time scales from ~100 ms (\u03b1-cycles) to slow fMRI oscillations (<0.1 Hz). The hierarchical organization is demonstrated through the mechanistic explanations in Figures 5-7, showing how fast E/I balance (Figure 5) relates to slow \u03b1-power modulation (Figure 6) and power-law scaling (Figure 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Control comparisons showed that the hybrid model outperformed the noise-driven model and random permutation model, while the \u03b1-regressor showed good time series prediction but poor functional connectivity prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe control comparisons. Three controls were tested: noise-driven model (C60), random permutation (C61), and \u03b1-regressor (C62). Visual inspection (C63-C64) and quantitative comparisons (Figure 3) showed the hybrid model's superiority for time series prediction. The \u03b1-regressor's limitations for FC prediction (C73) provide important context for interpreting the hybrid model's advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Prediction quality varied over time and was highest during epochs of highest variance in resting-state network temporal modes, with upper quartile epochs significantly better predicted than lower quartile epochs, possibly reflecting increased synchrony of electrical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C162-C164 describe temporal variability in predictions. Sliding window analysis (C69) showed correlation with RSN variance (C70), with significant differences between quartiles (C71). The interpretation about synchrony (C70, C163) is speculative but reasonable. The alternative explanation about source reconstruction limitations (C164) is appropriately marked as speculation. Figure 3c-d provides supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Maximum correlation coefficients were significantly larger when empirical and simulated data belonged to the same subject compared to different subjects, demonstrating subject-specificity of predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 describes subject-specificity testing. The statistical test (p<<0.01, Wilcoxon rank sum) provides strong evidence that the model captures individual differences. This validates that the model is not simply fitting generic features but individual-specific patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Three global parameters were optimized: global coupling strength (G), excitatory input scaling (\u03c9BG^E), and inhibitory input scaling (\u03c9BG^I), with exhaustive parameter space searches performed for each subject.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe the parameter optimization approach. The three parameters are clearly defined and their roles explained. Figure 3\u2014figure supplement 1 shows parameter space convergence. The exhaustive search approach is appropriate for the three-parameter space, though computational cost would be prohibitive for higher dimensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C133",
+      "C136"
+    ],
+    "result": "EEG source activity serves as an approximation of excitatory postsynaptic input currents (EPSCs), increasing biological plausibility of model activity and providing a way to systematically probe neural systems while maintaining biologically realistic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C133, C136 describe the rationale for using EEG as input. The approach is supported by citations (Buzs\u00e1ki et al. 2012, Haider et al. 2016, etc.) and represents a reasonable approximation. The authors acknowledge limitations (C139-C142) while defending the approach's utility. The biological plausibility is enhanced compared to noise-driven models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C159"
+    ],
+    "result": "Parameter space convergence for different metrics of brain activity toward a single optimal subspace indicates model validity, with structural coupling shown to be critical for fMRI prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134, C159 describe model validation through parameter convergence. Figure 3\u2014figure supplement 1 shows convergence to optimal parameters. The finding that deactivating coupling decreases prediction quality (C159, C40) demonstrates the importance of structural connectivity. This convergence across multiple metrics (time series, FC, power-law) supports model validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "The inferred mechanisms constitute candidate hypotheses requiring empirical falsification, with the model making concrete predictions on waveforms of input currents, firing rates, synaptic activities, and fMRI signals that can be empirically tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 appropriately frame the results as testable hypotheses. This is a critical caveat acknowledging that computational models generate predictions requiring experimental validation. The specific predictions about waveforms (Figures 5-7) are concrete and falsifiable, representing good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The hybrid model has limitations including dependence on externally injected activity rather than being autonomous, coarse spatial resolution of EEG, inability to disentangle EPSCs from other currents, and uncertainty about how EEG relates to EPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 acknowledge important limitations. The model's dependence on external input (C138) is a fundamental constraint. EEG limitations (C139-C140) are well-recognized in the field. The discussion of theoretical expectations (C141) versus empirical observations (C142, citing Lakatos et al.) shows appropriate nuance. These limitations are honestly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "Coupling time delays were not addressed in this study as they were non-essential for the described phenomena, though previous studies demonstrated their importance for large-scale dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 acknowledge the omission of conduction delays. The justification that delays were non-essential (C160) is reasonable for the phenomena studied, though the citation of prior work showing their importance (C161, Deco et al. 2011, Jirsa 2008, 2009) indicates this is a simplification that may need future attention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The observed processes may not be specific to \u03b1-oscillations but may apply to other frequencies or non-oscillatory components, though the \u03b1-rhythm was the main driver for the hybrid model's fMRI time series prediction as indicated by comparable correlations with the \u03b1-regressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C168 discuss the generalizability beyond \u03b1-oscillations. The caveat that processes may apply to other frequencies (C165) is appropriate given that full-band EEG was injected (C167). The observation that \u03b1 was the main driver (C168) is supported by comparable correlations with the \u03b1-regressor. This represents honest interpretation of the results' scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "The results extend the scheme from Mazaheri and Jensen (2010) by providing an explicit explanation of how symmetrically oscillating \u03b1-range signals generate asymmetric firing rates and inhibitory pulses, with long-range input decreasing during high \u03b1-power states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 position the work relative to prior theory. The extension of Mazaheri and Jensen's model (C148) is well-articulated, providing mechanistic detail beyond the baseline-shift hypothesis. The finding about long-range input (C149) is supported by Figure 6b but appropriately notes need for further study. This represents incremental but meaningful theoretical progress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The results support a neural origin of fMRI resting-state oscillations rather than purely hemodynamic phenomena, with implications that physiological noise correction methods might remove neurally-relevant variance from fMRI experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C158 address the neural vs. hemodynamic origin debate. While the model provides a mechanistic explanation for neural origins (C153), the uncertainty about non-neuronal contributions (C150) remains. The citations supporting neural origins (C151-C152) are balanced against concerns about physiological confounds. The implications for noise correction (C158) are speculative. The model provides evidence but doesn't definitively resolve this debate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C177",
+      "C178"
+    ],
+    "result": "The results provide an explanation for scale-free fMRI power spectra as an emergent property of long-range network interaction rather than cellular-level processes, potentially unifying spatial long-range correlations and power-law scaling within self-organized criticality theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169-C174, C177-C178 address criticality and power-law origins. The model provides a network-level explanation (C171, C177) that doesn't require microscopic parameter tuning. However, the authors appropriately note that power-laws alone don't prove criticality (C172) and that the exact role of E/I balance is unclear (C174). The connection to self-organized criticality (C178) is speculative. The results are suggestive but not definitive regarding criticality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The modeling approach may play a key role in identifying mechanisms underlying pathophysiology of disorders linked to E/I imbalance and altered connectivity, potentially guiding therapeutic interventions, making it a valuable tool for neuroscience research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C179-C182 discuss clinical applications. While disorders are linked to E/I imbalance and connectivity alterations (C179-C180, with citations), the potential for the model to identify mechanisms (C181) and guide therapy is speculative. No clinical data are presented. The claim about being a valuable tool (C182) is reasonable but the clinical utility remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C16",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background knowledge claims about brain network models, resting-state networks, \u03b1-rhythms, excitation-inhibition balance, and power-law scaling establish the scientific context and knowledge gaps addressed by the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C16, C28-C36 provide background knowledge with appropriate citations. These establish the scientific context: brain network model definitions (C12-C13), RSN characteristics (C28), \u03b1-rhythm properties (C31-C33), E/I balance (C34), and knowledge gaps (C30, C36). The citations are appropriate and the knowledge claims are standard in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Prior work on \u03b1-rhythm bistability, GABAergic input, and inhibitory mechanisms provides context for the current findings, with previous models requiring autocorrelated noise to reproduce \u03b1-switching behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 discuss relevant prior work. The citations to Freyer et al. (C143-C144) about \u03b1-switching and autocorrelated noise provide important context for why EEG-driven input is valuable. The discussion of cellular studies (C145) and the knowledge gap about inhibitory mechanisms (C146-C147) appropriately positions the current work. These are accurate representations of prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C135",
+      "C137"
+    ],
+    "result": "The approach fuses EEG and fMRI within a biophysically grounded framework to approximate underlying system behavior, with imperfect reproduction pointing to deficits in understanding that can be iteratively improved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C137 describe the philosophical approach to modeling. The fusion of multimodal data (C135) within a biophysical framework is clearly demonstrated. The perspective that imperfections indicate knowledge gaps (C137) represents a mature view of computational modeling as an iterative process. This framing is appropriate and well-articulated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C133"
+    ],
+    "result": "A systematic overexpression screen identified 14 Rab GTPases (Rab3A/B/C/D, Rab5A/B/C, Rab8A/B, Rab10, Rab12, Rab29, Rab35, and Rab43) that are phosphorylated by LRRK2 at conserved switch-II domain residues. This was determined through mass spectrometry analysis of overexpressed Rabs in HEK293 cells with and without LRRK2 co-expression and inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38-C40, C72, and C133 are well-supported by the systematic MS-based screen shown in Figure 1B-D, which demonstrates LRRK2-dependent phosphorylation with appropriate statistical analysis (Tukey's test, p<0.05) and inhibitor controls. The experimental design includes proper negative controls (inhibitor treatment) and technical replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C73",
+      "C134"
+    ],
+    "result": "Ten Rab proteins (Rab3A/B/C/D, Rab8A/B, Rab10, Rab12, Rab35, and Rab43) show endogenous LRRK2-dependent phosphorylation in cells. This was validated through multiple complementary approaches including immunoprecipitation, targeted mass spectrometry, and phospho-specific antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C73, and C134 are supported by multiple lines of evidence including endogenous IP-MS experiments (Figure 2B-F), phos-tag assays (Figure 2A), and validation with phospho-specific antibodies (Figure 2C-E). The use of LRRK2 knock-in MEFs and inhibitor controls strengthens the conclusions about endogenous phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Rab29 is uniquely phosphorylated by LRRK2 at two adjacent residues (T71 and S72) in the switch-II domain. Individual mutation of either site to alanine does not prevent phosphorylation of the remaining site, and both modifications were confirmed using phospho-specific antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are well-supported by MS data showing double phosphorylation, mutagenesis experiments demonstrating independent phosphorylation of each site (Figure 1\u2014figure supplement 3), and validation with two distinct phospho-specific antibodies (Figure 1E). The experimental design appropriately tests the independence of the two phosphorylation events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "All pathogenic LRRK2 mutations tested (G2019S, R1441G, Y1699C) increase phosphorylation of 13 Rab substrates as assessed by phos-tag mobility shift assays. Rab12 could not be assessed by this method due to complex banding patterns, and Rab6C, Rab9B, and Rab41 showed no LRRK2-dependent phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by phos-tag data in Figure 2A showing consistent mobility shifts for 13 Rabs across different LRRK2 mutations. The acknowledgment of technical limitations for Rab12 and negative results for Rab6C/9B/41 demonstrates appropriate interpretation of the assay limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Endogenous phosphorylation of Rab3A, Rab8A, Rab10, and Rab12 by LRRK2-Y1699C was confirmed by MS, while Rab3B required enhanced sensitivity methods. Rab5A phosphorylation was only detected in overexpression conditions, not at endogenous levels, suggesting cell-type or context-specific requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by quantitative MS data (Figure 2B) and targeted SIM-MS experiments (Figure 2\u2014figure supplement 1). The distinction between overexpression and endogenous phosphorylation for Rab5A is appropriately documented, though the speculation about accessory factors (C59) remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "A pan-phospho-Rab antibody recognizing the LRRK2-phosphorylated switch-II motif was developed and validated. This antibody efficiently immunoprecipitates multiple phosphorylated Rabs (Rab3, Rab8, Rab10, Rab35, Rab43) but fails to recognize phospho-Rab29, likely due to sequence differences or double phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 are well-supported by western blot validation (Figure 2C-E), MS analysis of immunoprecipitates showing enrichment of specific Rabs (Figure 2F, Figure 2\u2014figure supplement 2), and use of CRISPR knockout-validated antibodies. The failure to recognize pRab29 is documented with reasonable speculation about causes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Rab5A phosphorylation occurs only under overexpression conditions, while endogenous analysis of Rab5B, Rab5C, and Rab29 was limited by lack of suitable antibodies for enrichment or detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 accurately describe technical limitations of the study. The distinction for Rab5A is data-driven, while the limitation for Rab5B/C and Rab29 is appropriately acknowledged as a constraint on the conclusions that can be drawn.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C136"
+    ],
+    "result": "Phosphomimetic S/T\u2192E mutations at LRRK2 phosphorylation sites abolish binding of all tested Rabs to GDI1/2 and Rab escort proteins (CHM/CHML), except for Rab29 constructs which showed no GDI binding regardless of mutation. This demonstrates that switch-II phosphorylation is a general regulatory mechanism of the Rab cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 and C136 are supported by systematic MS analysis of phosphomimetic mutants (Figure 3\u2014figure supplement 1A,B). However, the conclusion about phosphomimetic accuracy is later contradicted (C142), and the Rab29 anomaly suggests potential protein misfolding issues that weaken the generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "GDI proteins preferentially associate with non-phosphorylated forms of Rab8A in both overexpressed and endogenous settings. Several novel interaction partners (WDR81, WDR91, OCRL) also show preferential binding to non-phosphorylated Rab8A, with phosphorylation abolishing OCRL binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 and C89 are supported by quantitative MS data from Rab8A immunoprecipitations with and without LRRK2 inhibition (Figure 3A,B). The identification of novel interactors and their phosphorylation-dependent binding is well-documented, though functional validation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C92",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C106",
+      "C107",
+      "C108",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "RILPL1 and RILPL2 are phospho-specific effectors that bind preferentially to LRRK2-phosphorylated Rabs. RILPL1 interacts with phospho-Rab8A and Rab10, while RILPL2 binds phospho-Rab8A, Rab10, and Rab12. This interaction is mediated by conserved basic residues in the RH domain and was validated across multiple experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C92-C108 are extensively supported by multiple complementary approaches: MS-based interactomics (Figure 3A-C, G-H), co-immunoprecipitation with phos-tag validation (Figure 3D), mutagenesis of RH domain residues (Figure 3E-F, Figure 3\u2014figure supplement 3), and endogenous validation in LRRK2-R1441C MEFs. The convergence of evidence from different methods strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Three conserved basic residues (R291, R293, K310 in RILPL1; equivalent positions in RILPL2) in the RH domain are critical for binding to LRRK2-phosphorylated Rabs. Individual mutation of these residues to glutamate abolishes the interaction with phospho-Rabs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by systematic mutagenesis experiments (Figure 3E-F, Figure 3\u2014figure supplement 3A) showing loss of interaction upon mutation of specific residues but not others (R300, K324). The structure-function analysis appropriately identifies key binding determinants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C130",
+      "C149",
+      "C150"
+    ],
+    "result": "Hyperactive LRRK2 mutants (R1441G, G2019S) cause a two-fold reduction in primary cilia formation in fibroblasts, which is rescued by LRRK2 kinase inhibition. This establishes a novel connection between LRRK2 kinase activity and ciliogenesis regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C121-C124 are supported by quantitative immunofluorescence microscopy in two independent cell systems (LRRK2-R1441G MEFs and 3T3 cells with LRRK2-G2019S, Figure 4A-E). The use of kinase inhibitors demonstrates dependency on LRRK2 activity. Statistical analysis shows significant effects (p<10^-3 to 10^-4), and the replication in two systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Wild-type Rab8A localizes to cilia in ~80% of ciliated cells, while phosphomimetic (T72E) and non-phosphorylatable (T72A) mutants fail to localize to cilia. However, expression of these mutants alone does not affect overall ciliation rates, suggesting involvement of additional LRRK2 targets or compensation by endogenous Rab8A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by localization studies (Figure 4F-H) showing differential ciliary targeting of Rab8A variants. However, the lack of effect on ciliation rates limits mechanistic conclusions. The speculation about other LRRK2 targets (C129) is reasonable but untested, preventing a definitive mechanistic link between Rab8A phosphorylation and the ciliogenesis defect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C69"
+    ],
+    "result": "Kinases other than LRRK2 phosphorylate the switch-II domain of some Rabs. Of 37 Rabs found phosphorylated in this domain, only 14 are LRRK2 substrates. Examples include Rab7A (phosphorylated during B cell signaling) and Rab1A (TAK1 substrate), while Rab1A, Rab7, and Rab13 show LRRK2-independent phosphorylation in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 and C69 are supported by MS data showing phosphorylation of multiple Rabs that is not sensitive to LRRK2 inhibition (Figure 2F), combined with literature citations. This appropriately contextualizes LRRK2 specificity within broader Rab regulation, though the identity of alternative kinases for most Rabs remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Phosphomimetic S/T\u2192E substitutions do not accurately replicate LRRK2-induced phosphorylation effects on Rab protein interactions, as different binding partners were observed. This indicates that systematic analysis of endogenously phosphorylated Rabs is necessary, though low phosphorylation stoichiometry poses technical challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C142 is supported by comparison of interactome data from phosphomimetic mutants versus LRRK2-phosphorylated Rabs, showing different interaction profiles. This is an important methodological finding that contradicts the earlier generalization in C136. Claims C143-C144 appropriately identify future research needs and technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C13",
+      "C18",
+      "C20",
+      "C48",
+      "C59",
+      "C62",
+      "C91",
+      "C109",
+      "C129",
+      "C131",
+      "C132",
+      "C135",
+      "C143",
+      "C151",
+      "C152",
+      "C154"
+    ],
+    "result": "Multiple speculative claims about mechanisms, future directions, and pathological implications are presented, including: Rab-mediated defects may contribute to LRRK2 pathologies; multiple cell types may act in concert in PD; LRRK2 substrate specificity may depend on co-localization; and ciliation defects may contribute to PD pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C13, C18, C20, C48, C59, C62, C91, C109, C129, C131-C132, C135, C143, C151-C152, and C154 are appropriately labeled as speculative or requiring future work. While these are reasonable hypotheses based on the data, they lack direct experimental support in the current study. These represent important directions for future investigation but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C87",
+      "C88",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C145",
+      "C153"
+    ],
+    "result": "Background claims about LRRK2, Parkinson's disease, Rab GTPases, and primary cilia are presented, citing established literature. These include: LRRK2 mutations cause PD; LRRK2 regulates vesicular traffic; Rabs are master regulators of trafficking; cilia defects cause ciliopathies; and various Rabs are involved in ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12, C14-C16, C19, C21-C33, C76-C79, C87-C88, C90, C93-C96, C110-C117, C119, C145, and C153 are appropriately supported by citations to prior literature and represent established knowledge in the field. These provide necessary context for the current work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

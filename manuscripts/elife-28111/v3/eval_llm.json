@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The Beat and Side protein families are evolutionarily conserved across Drosophilid species, with Beats having two IgSF domains and Sides having five IgSF domains followed by an FNIII domain. Phylogenetic analysis reveals that both families originated through successive gene duplication events predating Drosophilid speciation, with 14 Beat proteins organized into seven clusters and eight Side paralogs showing similar inter-species divergence levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 provide converging phylogenetic, structural, and bioinformatic evidence for the evolutionary history and domain architecture of Beat and Side families. The phylogenetic analysis (C35, C38, C41, C42) is supported by Figure 1, and the structural characterization (C36, C37, C40) is based on multiple domain prediction tools. The inference about pre-speciation duplication (C42) is appropriately supported by the phylogenetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Bio-Plex Interactome Assay (BPIA) is a new high-throughput method that uses magnetic polystyrene beads with different fluorescent dye ratios to simultaneously analyze up to 100 (Bio-Plex 200) or 500 (Bio-Plex 3D) distinct protein interactions in a single sample. The method employs pentamerized AP-fusion baits captured via biotin-streptavidin interaction and dimeric Fc-fusion preys, with high signal-to-background ratio and no bait jumping between bead regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C43-C51 collectively describe the BPIA methodology with appropriate technical detail. The method is well-documented in Figure 2A and Materials and methods. Control experiments (C51) confirm no bait jumping, and the biotin-streptavidin KD (C50) is appropriately cited. The reversal of bait/prey roles from ECIA (C47) is clearly stated and justified by avidity considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Using the BPIA, three new Beat-Side interactions were discovered: Beat-VI::Side-II, Beat-Ic::Side-III, and Beat-Ic::Side. The BPIA successfully detected all ECIA-identified interactions except Beat-Ia::Side (likely due to poor bait expression), and the assay works with both purified and unpurified prey proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C52-C55 describe the primary discovery results from the BPIA screen. The data in Figures 2B, 2C, and 3 support the identification of three new interactions. The comparison with ECIA results (C54) is appropriate, and the explanation for the Beat-Ia::Side failure (C55) is a reasonable inference from the data showing signal in only one orientation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Surface plasmon resonance (SPR) confirmed Beat-Side interactions with KD values in the micromolar range: Beat-Va/Side-VI (0.76 \u03bcM), Beat-Vb/Side-VI (2.3 \u03bcM), Beat-Vc/Side-VI (9.4 \u03bcM), Beat-VI/Side-II (2.78 \u03bcM), and Beat-Ic/Side-III (63.5 \u03bcM). These affinities are typical for cell adhesion molecule interactions and consistent with previously measured Beat-Ia::Side interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C56-C61 present SPR validation data shown in Figure 4. The KD measurements are appropriately reported with error estimates, and the comparison to cell adhesion molecule affinities (C58) is properly cited. The technical limitation for Beat-Ic::Side (C61) is transparently reported. The SPR data provide strong orthogonal validation of the BPIA results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Beat-V::Side-VI interactions are the strongest in both ECIA and BPIA assays. Cell-based binding assays show that Beat-Va and Beat-Vb, but not Beat-Ia, bind to Side-VI on S2 cells. In embryos overexpressing Beat-Vb, Side-VI-AP strongly stains muscle fibers, while in wild-type embryos, punctate Side-VI-AP staining is observed on motor axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide multiple lines of evidence for Beat-V::Side-VI interactions using different assays. The comparative strength (C62) is supported by Figures 2B and 3. Cell-based binding (C63) is shown in Figure 5\u2014figure supplement 1, and live embryo staining (C64, C65) is shown in Figure 5 and Figure 5\u2014figure supplement 2. These orthogonal approaches strengthen the interaction validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Expression pattern analysis reveals that most side genes (except side-VIII) are expressed in peripheral tissues traversed by motor and sensory axons, while side-VIII is restricted to CNS neurons. Side-VI shows particularly dynamic expression at motor axon choice points, including muscles 12 and 13 (ISNb targets), dorsal sensory neurons, the PT cell at the ISN branch point, and TN targets (LBD and DMC). This expression pattern suggests Sides function as peripheral guidance cues for Beat-expressing neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C66-C80 describe comprehensive expression analysis supported by in situ hybridization data in Figure 6. The spatial and temporal expression patterns are well-documented with appropriate stage-specific descriptions. The inference that Beats are neuronal receptors for peripherally-expressed Sides (C6) is reasonable given the complementary expression patterns, though this remains correlative rather than functionally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Beat-V genes encoding Side-VI receptors are differentially expressed in identified motor neurons. Beat-Va is expressed at high levels in RP2 and lower levels in aCC but absent from RP1,3,4,5, while beat-Vb shows the opposite pattern with high expression in RP1,3,4,5 and lower expression in aCC/RP2. Beat-I genes also show differential expression, with beat-Ia in both ISN (aCC/RP2) and ISNb (RP1,3,4,5) neurons, while beat-Ic is restricted to aCC/RP2 and pCC. This demonstrates that embryonic expression patterns have diversified between clustered beat paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C83-C93 present detailed motor neuron expression analysis supported by in situ hybridization data in Figure 7. The differential expression of beat-Va and beat-Vb (C89-C92) is clearly shown and provides evidence for functional specialization. The conclusion about expression pattern diversification (C93) is an appropriate inference from the data. The combination of specific motor neuron markers (RN2-Gal4, Lim3A-tau-myc) with in situ hybridization provides strong cellular resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "At the third instar larval stage, side-VI is expressed in all glutamatergic motor neurons, as demonstrated by GFP reporter expression at all type 1b and 1s neuromuscular junctions using a side-VI-T2A-GAL4 driver line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe larval expression using a GAL4 reporter line, supported by data in Figure 6\u2014figure supplement 1. The inference that side-VI is expressed in all glutamatergic motor neurons (C82) is reasonable based on the NMJ staining pattern, though this is indirect evidence. The lack of embryonic expression from this driver is noted, suggesting possible regulatory differences between developmental stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Genetic analysis reveals low-penetrance motor axon guidance defects in beat-V and side-VI mutants, with approximately 1/5 of hemisegments showing muscle 12 innervation defects and ISN guidance defects. Since most muscle 12s are innervated normally, Beat-V::Side-VI interactions likely contribute to but are not solely responsible for RP5 axon targeting, suggesting involvement of redundant guidance cues including Wnt-4 and Capricious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C100 describe unpublished mutant phenotype data that cannot be fully evaluated. While the low penetrance (C94, C95) is reported, the data are not shown. The inference about redundancy (C97, C100) is reasonable given the low penetrance and the cited expression of other guidance molecules (C98, C99), but without seeing the actual phenotypic data, statistical analysis, or controls, the strength of this result cannot be fully assessed. The speculation about redundant cues (C100) is plausible but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In the pupal optic lobe, beat and side genes show highly specific expression patterns in photoreceptors and lamina neurons, with different paralogs specific to different cell types (e.g., beat-VII in L2, beat-VI in L5, side-II in L1, side-IV in L2). This suggests Beat-Side interactions may be important for determining synaptic connections within the CNS, analogous to the Dpr-DIP system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C112 describe optic lobe expression patterns based on cited RNAseq data (C102-C111, from Tan et al., 2015). The cell-type-specific expression is well-documented in the cited work. However, the functional speculation (C101, C112) about synaptic connection determination remains hypothetical, as no functional data are presented. The analogy to Dpr-DIP interactions is reasonable but the claim appropriately uses cautious language ('may be', 'might be').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior work established that an ECIA interactome screen identified a Beat-Side interaction network, with Beat-Ia and Side forming a ligand-receptor pair central to motor axon guidance. The ECIA detected 106 interactions including the known Beat-Ia::Side interaction and seven of 14 Beats binding to four of eight Sides. The screen also identified the Dpr-DIP network. Beat-Ia on motor axons binds Side on muscles to regulate axon defasciculation, with strong motor axon phenotypes in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C17-C34 summarize prior work that is appropriately cited throughout. These claims establish the context for the current study and are supported by multiple citations to published work (\u00d6zkan et al., 2013; Fambrough and Goodman, 1996; Sink et al., 2001; Pipes et al., 2001; and others). This background information is accurately represented and provides essential context for understanding the significance of the new BPIA results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Cell-surface and secreted proteins (CSSPs) comprise up to one-sixth of human genes and control intercellular signaling, making them important therapeutic targets. However, CSSPs are underrepresented in global interactomes due to technical challenges: they require extracellular expression for proper folding, often have weak micromolar-range affinities, and transmembrane domains complicate purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 provide background on CSSPs and the technical challenges of studying them. These are appropriately cited to published literature (Bushell et al., 2008; van der Merwe et al., 1994; Wright, 2009; and others) and represent established knowledge in the field. This background effectively motivates the development of the BPIA method and explains why new approaches are needed for CSSP interactome studies.",
+    "result_type": "MINOR"
+  }
+]

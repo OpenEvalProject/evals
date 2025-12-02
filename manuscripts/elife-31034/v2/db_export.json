@@ -1,0 +1,2172 @@
+{
+  "submission": {
+    "id": "e862abdf-aed3-4156-928a-9589db0841e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:44:43.872099Z",
+    "updated_at": "2025-12-02T00:44:43.872099Z"
+  },
+  "content": [
+    {
+      "id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "submission_id": "e862abdf-aed3-4156-928a-9589db0841e8",
+      "content_type": "manuscript",
+      "content_text": "# Targeted cortical reorganization using optogenetics in non-human primates\n\n## Authors\n\n- Azadeh Yazdan-Shahmorad<sup>1</sup> ([ORCID: 0000-0001-5212-509X](https://orcid.org/0000-0001-5212-509X)) \u2020\n- Daniel B Silversmith<sup>2</sup> ([ORCID: 0000-0003-1771-1856](https://orcid.org/0000-0003-1771-1856)) \u2020\n- Viktor Kharazia<sup>2</sup>\n- Philip N Sabes<sup>1</sup> ([ORCID: 0000-0001-8397-6225](https://orcid.org/0000-0001-8397-6225))\n\n### Affiliations\n\n1. Department of Physiology University of California, San Francisco San Francisco United States\n2. Center for Integrative Neuroscience University of California, San Francisco San Francisco United States\n3. Departments of Bioengineering and Electrical Engineering University of Washington Seattle United States\n4. UC Berkeley \u2013 UCSF Graduate Program in Bioengineering University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBrain stimulation modulates the excitability of neural circuits and drives neuroplasticity. While the local effects of stimulation have been an active area of investigation, the effects on large-scale networks remain largely unexplored. We studied stimulation-induced changes in network dynamics in two macaques. A large-scale optogenetic interface enabled simultaneous stimulation of excitatory neurons and electrocorticographic recording across primary somatosensory (S1) and motor (M1) cortex (Yazdan-Shahmorad et al., 2016). We tracked two measures of network connectivity, the network response to focal stimulation and the baseline coherence between pairs of electrodes; these were strongly correlated before stimulation. Within minutes, stimulation in S1 or M1 significantly strengthened the gross functional connectivity between these areas. At a finer scale, stimulation led to heterogeneous connectivity changes across the network. These changes reflected the correlations introduced by stimulation-evoked activity, consistent with Hebbian plasticity models. This work extends Hebbian plasticity models to large-scale circuits, with significant implications for stimulation-based neurorehabilitation.\n\n## Introduction\n\nMany neurological and psychiatric disorders arise from dysfunctional neural dynamics at the network level, which in turn stem from aberrant neural connectivity (Stam, 2014; Wu et al., 2016; Edwardson et al., 2013; Yahata et al., 2016; DeSalvo et al., 2014; Skudlarski et al., 2010). The brain shows marked plasticity across a variety of learning and memory tasks (Takeuchi et al., 2014; Bliss et al., 2014) and during recovery after brain injury or stroke (Edwardson et al., 2013; Hara, 2015; Murphy and Corbett, 2009), and many have proposed to take advantage of this innate plasticity to treat neural disorders (Miller et al., 2010; Jackson et al., 2006; Lucas and Fetz, 2013; Edwardson et al., 2013). In principle, brain stimulation protocols can be designed to leverage this plasticity in order to rewire aberrant neural connectivity, potentially curing these disorders. Implementing such treatments requires a better understanding of how stimulation-induced plasticity drives changes in network connectivity and network dynamics.\n\nThe simple Hebbian model of plasticity (Donald, 1949) and spike-timing dependent versions of it (Bi and Poo , 2001) explain a large body of data on activity-dependent plasticity, including both in vitro (Massobrio et al., 2015; Abrahamsson et al., 2016), and in vivo (Andersen et al., 2017; Feldman, 2012; Shulz and Jacob, 2010) studies. Despite the extensive work studying Hebbian plasticity at the cellular level, it remains unclear how synaptic plasticity leads to large-scale functional reorganization. Recently, several studies have shown large-scale plasticity following brain stimulation that is consistent with Hebbian mechanisms (Jackson et al., 2006; Lucas and Fetz, 2013; Seeman et al., 2017; Nishimura et al., 2013; Rebesco and Miller, 2011; Rebesco et al., 2010; Song et al., 2013; Lajoie et al., 2017). In particular, Fetz and colleagues implemented an activity-dependent stimulation protocol, effectively introducing an artificial connection between two sites in the motor cortex (Jackson et al., 2006; Lucas and Fetz, 2013). Continuous reinforcement of this artificial connection led to a stable functional change in stimulation-evoked movements, indicating that stimulation induces large-scale plasticity. Recently these results were reproduced in a modeling work at the network level (Lajoie et al., 2017). Similar results have been observed using open-loop stimulation protocols to induce targeted plasticity between two cortical sites (Rebesco and Miller, 2011; Seeman et al., 2017). Notably, these papers have reported off-target effects, but these were either interpreted as global changes in excitability or were not explained. Although the results from closed-loop and open-loop experiments suggest large-scale plasticity, the underlying neural network changes remain unexplored.\n\nHere, we measure connectivity across sensorimotor cortex and track changes in network connectivity in response to open-loop stimulation. This work takes advantage of a large-scale optogenetic interface (Yazdan-Shahmorad et al., 2016) that enables us to simultaneously stimulate populations of excitatory neurons while recording large-scale \u03bc-electrocorticography (\u03bc-ECoG) activity across two brain areas, S1 and M1. We first establish and compare two measures of functional connectivity that provide complementary views of the mechanisms of plasticity. Next, we investigate how stimulation impacts connectivity between and within cortical areas. We then test whether stimulation-evoked activity drives large-scale network plasticity in a Hebbian manner. The goal of this work is to investigate large-scale functional reorganization following stimulation, which will inform future neurorehabilitation strategies.\n\n## Results\n\nWe performed optogenetic stimulation via laser illumination of the cortical surface while simultaneously recording surface potentials (\u00b5ECoG) from about 1.5 cm2 of primary somatosensory (S1) and motor (M1) cortices (Figure 1). The viral vector used to obtain opsin expression targeted excitatory neurons (see supplementary material for details; Figure 1\u2014figure supplement 1). These neurons have strong projections within and between the two brain areas (Murray and Keller, 2011; Kinnischtzke et al., 2014; Weiler et al., 2008). Activating these excitatory cells should increase the excitability of the underlying network, improving the likelihood of neuroplastic change (Iriki et al., 1989). In two macaque monkeys we explored stimulation-induced changes in network connectivity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig1-v2.jpg)\n\n**Figure 1.:** Photo of the \u00b5ECoG array placement over M1 and S1 in Monkey G (left panel) and the placement of lasers on top of the array in two different configurations (middle panel: Monkey G and right panel: Monkey J).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Using immunohistochemistry, we confirmed that EYFP reporter expression was present in both S1 and M1. YFP-positive cells in these areas were morphologically identified as pyramidal neurons, and were in layers II-III, V-VI. To confirm this we further analyzed the tissue using markers for inhibitory neurons such as parvalbumin, somatostatin and calbindin as well as GAD67/65 and examined cell bodies and axonal terminals at the areas around the site of infusion. We found no evidence for co-localization between EGFP and any of the inter-neuronal markers therefore excluding the possibility for significant opsin presence in cells other than pyramidal neurons, and confirmed that optical stimulation was selectively activating excitatory pyramidal neurons in M1 and S1. (A) Low magnification image of the coronal section processed anti-GFP antibody showing the medio-lateral aspect of YFP expression in the somatosensory cortex of monkey J (areas 1, 2, 3). The black arrowhead indicates the location of the injector needle track; the adjacent tissue (black frame) is microscopically enlarged in B to show laminar distribution of the YFP-positive cells. In monkey G (Yazdan-Shahmorad et al., 2016), we saw some cortical thinning post-mortem. In contrast, the histology for monkey J, presented here does not show change in the cortical thickness. (B) Densely YFP-positive cells are located predominantly in layers II-III and V-VI, and also show typical pyramidal morphology (cells in white frames are further enlarged in panels C-E). White arrowheads on bottom panels C-E point to typical pyramidal cells in layers II-III (C); layer V (D); and layer VI (E). Scale bars: A, 2 mm; B, 200 \u03bcm; C-E, 100 \u03bcm. (F) Stained parvalbumin neurons (red) and YFP-expressing cells (green), no overlap indicated high specificity. Scale bar: 30 \u03bcm.\n\n### Two measures of functional connectivity between M1 and S1 show strong correlation\n\nWe quantified inter-area functional connectivity between S1 and M1 using two different measures\u2014one based on the network response to optogenetic stimulation and the other based on spontaneous neural activity.\n\nThe first measure focused on how the response to optical stimulation propagates through the network. Optogenetic stimulation in S1 and M1 evoked responses across both cortical areas, and we characterized these responses according to their amplitudes and delays (Figure 2A and E). The delays exhibited a bimodal distribution with a 3\u20136 ms separation between the early and late responses (Figure 2B and F). Classifying the responses across electrodes by delay recovers the spatial separation between the two cortical areas\u2014following a boundary along the central sulcus\u2014with shorter delays in the area being stimulated (S1 or M1; primary responses) and longer delays in the other area (M1 or S1; secondary responses) (Figure 2C and G). The short delay of the secondary responses suggests close functional connectivity between these areas. We quantified this connectivity with the stimulus-evoked response ratio (SERR). SERR was defined as the peak-to-trough amplitude of the secondary responses (A2) normalized by the peak-to-trough amplitude of the primary response (A1), with both responses measured in the high gamma (60\u2013200 Hz) filtered signal (see dashed-line inset boxes in Figure 2,A and E). The SERR is a measure of the connectivity between the site of stimulation and sites in the other cortical area (see Figure 2D and H).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig2-v2.jpg)\n\n**Figure 2.:** (A) Primary (blue) and secondary (orange) evoked responses to light stimulation. The dark blue rectangle represents the duration of light stimulation. Shaded areas show standard error. The delays of evoked responses are calculated as the time difference between the onset of stimulation and the time of the response trough (vertical lines at d1 and d2). (B) Distribution of the delays color-coded based on the primary and secondary light-evoked responses. (C) Evoked responses across the array, color-coded based on the delays. As shown here there is a spatial separation of primary and secondary responses that corresponds to the locations of M1 and S1. This suggests that due to functional connectivity between M1 and S1, we see a delayed (secondary) response in S1 to light stimulation in M1. (D) S1 connectivity with the site of stimulation. The blue circle shows the location of stimulation in M1. The black line shows the location of central sulcus with respect to the recording array. The size of the red circles represents the strength of connectivity between each site and the stimulation location for the recording sites with secondary responses across S1. SERR Connectivity is defined as the peak-to-trough of filtered high gamma responses (60\u2013200 Hz: trace plots shown on the dashed rectangle on A) at each site (orange) normalized to the peak-to-trough of high gamma at the site of stimulation (blue). (E\u2013H) Same as A-D with the same array placement and S1 stimulation.\n\nThe second measure evaluates functional connectivity during spontaneous activity. We focused on the coherence in field potential recordings between electrodes, a widely used measure of connectivity that captures the degree of phase-locking between two signals (Lang et al., 2012; Bastos and Schoffelen, 2015). We calculated the coherence between the site of stimulation and the secondary sites across different frequency bands.\n\nBecause SERR and coherence are derived independently from recordings with and without simultaneous stimulation, they might reflect fundamentally different aspects of network connectivity. Therefore, in each experiment we compared these two measures prior to conditioning stimulation. Figure 3A shows two examples comparing SERR to coherence in the theta band (4\u20138 Hz). To quantify the relationship between these measures, we performed linear regression between them across channels (Figure 3B\u2013C). An example showing a strong relationship between SERR and theta band coherence is shown in Figure 3B. This analysis was repeated for all coherence frequency bands and for all experiments; the mean and standard error of the regression parameters are shown in Figure 3C. The two measures of functional connectivity were highly correlated: across sessions, the distribution of regression slopes was significantly different from 0 (t-test: p=3.73e-06), and 69 percent of individual experiments showed significant linear regressions (p<0.05). This finding indicates that at baseline, before any conditioning, the stimulation-evoked response reflects network dynamics across the frequency spectrum.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig3-v2.jpg)\n\n**Figure 3.:** (A) S1 (Top panel) and M1 (bottom panel) theta coherence and SERR connectivity with the site of stimulation in monkey G. The blue circle shows the location of stimulation. The black line shows the location of central sulcus with respect to the recording array. The size of the red and white circles represents the strength of connectivity between each secondary site and the stimulation location. (B) An example session showing relationship between SERR and theta coherence. The black line shows the linear regression fit. (C) Linear relationship between evoked response and coherence across different frequencies. Summary data showing the mean and standard error (shaded region) of regression parameters (shown in B) across frequencies.\n\n### Stimulation strengthens inter-area connectivity\n\nWe used a simple stimulation protocol\u2014we delivered 5 ms laser light pulses at a frequency of 5 or 7 Hz at either one or two cortical sites (Figure 4A). For our initial analyses, and unless otherwise noted, when stimulating at two cortical sites, we alternated stimulation between the two light sources to avoid any interference between the evoked responses from each light source. In each experiment, conditioning stimulation was applied for 50 min, and we evaluated functional connectivity every 10 min during blocks of passive baseline recording and active testing (100 light pulses delivered through each laser). We also conducted control sessions with the same passive recording and testing blocks, but with no stimulation during the conditioning blocks.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig4-v2.jpg)\n\n**Figure 4.:** (A) Experimental protocol. Conditioning stimulation was interrupted by periodic connectivity measurements including passive recording and active testing. Either one or two non-interfering lasers were used. (B) Examples of changes in SERR across the recording array in monkey G. Red circles show initial connectivity and white circles show connectivity after 50 min. of conditioning. (C) Summary of SERR changes across all experiments. Each symbol represents the connectivity averaged over all secondary channels for one experiment. Filled markers show significant changes (paired t-test; p<0.05, the p-values for each experiment are listed in the supplementary spreadsheet). (D) Changes in SERR when stimulating in either S1 or M1 in comparison to control. Error bars represent standard error and asterisks show significant changes (paired t-test; Control: p=0.8, laser in S1: p=0.01, laser in M1: p=1.6e-04). (E) Examples of changes in theta (4\u20138 Hz) coherence across the recording array. (F) Summary of theta coherence changes across all experiments. Each marker represents the connectivity averaged over all channels for one experiment. Filled markers show significant changes (paired t-test; p<0.05, the p-values for each experiment are listed in the supplementary spreadsheet). (G) Change in coherence across different frequency bands in comparison to controls. Asterisk show significant difference between the two groups (unpaired t-test, Bonferroni corrected; p<0.05, the p-values are listed in the supplementary spreadsheet). (H) Linear relationship between SERR and coherence across different frequencies for pre-stim, post-stim and the change in both measures. Summary data showing the mean and standard error (shaded region) of regression slope and r2 as a function of coherence frequency (see the example regression for the theta-band in Figure 3B).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Replication of Figure 4H for control (no stimulation) sessions. Each line shows the mean and standard error (shaded region) of regression slope and r2 as a function of the coherence frequency.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Change in power from pre- to post-conditioning across monkeys and non-interference experiments. Bars reflect standard errors around the mean change in power in each 4 Hz frequency band. (A) Average change in power across secondary recording sites normalized to the change in power at the stimulation site. (B) Average change in power across secondary recording sites. (C) Average change in power at the stimulation site.\n\nA representative example experiment, shown in Figure 4B, shows that stimulation in M1 leads to significant increases (paired t-test, p=3.88e\u221211) in mean SERR. Similar increases in SERR were observed for a majority of experiments (14 out of 18 experiments) across both monkeys (Figure 4C). The increases in connectivity were symmetric between the two cortical areas (Figure 4D). No significant change in mean SERR was observed in control sessions without conditioning stimulation (Figure 4D). Furthermore, the increase in SERR was significantly larger for stimulation sessions than control sessions (unpaired t-test: p=0.0036)\n\nWe next asked whether conditioning increased coherence-based measures of inter-area connectivity. We did observe increases in mean theta band (4\u20138 Hz) coherence following conditioning, as shown in Figure 4E for the same dataset used in Figure 4B (paired t-test, p=0.03). The increase in theta coherence was significant for the majority of experiments (13 out of 20; Figure 4E), and the effect was localized to the theta band (Figure 4G; paired t-test, p=0.017; Bonferroni correction for multiple comparisons). We also looked for change in the theta-band power as a result of stimulation and did not see any significant changes, supporting the conclusion that changes in coherence reflect changes in functional connectivity (See Figure 4\u2014figure supplement 2).\n\n### Stimulation weakens correlation between measures of functional connectivity\n\nWe showed in Figure 3C above that SERR and coherence are correlated measures of functional connectivity in the baseline condition. Here we ask how this relationship is changed by stimulation. Figure 4H (black lines) replicates the baseline data from Figure 3C, along with new data showing the correlation between these measures at the end of each experiment (green lines) and between their conditioning-induced changes (yellow lines). After conditioning, the cross-channel correlation between these measures significantly decreased (paired t-test, p=6.3e-10), and the changes in connectivity were uncorrelated (t-test on distribution of regression slopes, p=0.85). This suggests that the stimulation affects the two measures differently.\n\nTo further address this, we replicated this analysis for our control (no stimulation) sessions. In this case, we did not see a significant decrease in the correlation between measures after control sessions (paired t-test, p=0.36; see Figure 4\u2014figure supplement 1). Additionally, a direct comparison between the median decrease in the correlation for stimulation versus control sessions showed a significant difference when all frequencies were considered (p=0.0025), though the difference was not significant when only compared in the theta band. Together, these results show that the stimulation-induced changes in these two measures of connectivity do not correlate with each other at a fine-scale. This may reflect the fact that the two measures are not functionally equivalent, despite their correlation, i.e., they capture related, but not identical, aspects of connectivity.\n\n### Stimulation drives increases in inter-area connectivity within 10 min blocks\n\nAs shown in Figure 1B, our stimulation protocol included 5 repetitions of baseline recording, testing, and conditioning. This design allowed us to track connectivity changes across time, after each 10 min increment of conditioning. Additionally, since neural activity was recorded throughout the experiment, we were able to measure changes in SERR during conditioning blocks. Figure 5A shows the evolution of mean inter-area connectivity for both measures in an example session. To account for differences in network connectivity across monkeys and sessions, we also analyzed the changes in each measure with respect to the baseline pre-conditioning measurements (Figure 5B). For this example session (Figure 5A), and on average across all sessions (Figure 5B), there is a trend of increasing connectivity across the session that starts within the first 10 min conditioning block. These increases in inter-area connectivity measured with SERR and coherence (Figure 5B) were correlated across time (Pearson correlation coefficient\u00a0=\u00a00.26). Additionally, the rate of strengthening was consistent across conditioning blocks; we detected a significant increase in SERR (p<0.05) at\u00a0~\u00a04.5 min of stimulation in 4 out of 5 conditioning blocks (see Figure 5\u2014figure supplement 1 for comparison with control sessions).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig5-v2.jpg)\n\n**Figure 5.:** (A) An example of the dynamics of mean inter-area SERR and coherence in an experiment. Black lines show linear regression to each conditioning block. (B) Dynamics of change in SERR and theta coherence with respect to baseline connectivity across all experiments (shaded area show standard error).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Replication of Figure 5B for control (no stimulation) sessions. Dynamics of change in SERR and theta coherence with respect to baseline connectivity across all experiments (shaded area show standard error).\n\nNote that the stimulation-induced plasticity was not reinforced during baseline recording blocks. Given the length of the conditioning (10 min) and baseline recording (5 min in most experiments) blocks, one might expect that stimulation-induced changes would revert back to baseline. We did observe a significant decrease (paired t-test, p=2.9e-05) in the SERR between the last 100 pulses of the conditioning block and the following test block, indicating some unlearning of the stimulation-induced connectivity changes.\n\n### Stimulation drives fine-scale changes across the network that are consistent with Hebbian learning\n\nWe next evaluated the fine-scale effects of conditioning across the entire network. Since SERR is restricted to connectivity from the stimulation site, this analysis was conducted using only changes in pairwise coherence. Figure 6A shows data from an example session, with connectivity changes represented as a set of heatmaps: the heatmap at each recording site represents the change in pairwise coherence between that electrode and all of the other electrodes. A magnified example heatmap is shown in Figure 6A, right; top panel. This example shows heterogeneous changes in connectivity across the network.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig6-v2.jpg)\n\n**Figure 6.:** (A) An example session highlighting the similarity between the stimulus-evoked coherence (middle panel) and the change in baseline coherence (left panel) across the array in Monkey J. At each recording site across the array, a heatmap represents the respective coherence between that location with all other recording sites. Enlarged examples for a single location are compared in the right panel. The black line shows the location of central sulcus on the array and rectangles show the location of the magnified examples. The average value across the array was subtracted for visualization. (B) Linear regression between stimulus-evoked coherence and the change in baseline coherence for the example session shown in A. (C) Summary of regression parameters across single-site and non-interference experiments. Errorbars show standard error.\n\nWe next asked whether such heterogeneous changes are to be expected. A Hebbian plasticity model suggests that the fine-scale changes in connectivity should reflect the statistics of plasticity-inducing activity. In this case, we predicted that correlated stimulation-evoked activity between two cortical sites would strengthen the functional connectivity between them, while uncorrelated or anti-correlated stimulation-evoked activity would weaken their functional connectivity. We quantified stimulation-induced correlations by measuring the pairwise coherence during the conditioning block and subtracting out the coherence calculated during baseline recording (thought to be representative of initial connectivity). We refer to this difference as the stimulus-evoked coherence. Indeed, in the example session of Figure 6A, one can see a similarity between the pattern of changes in baseline coherence across the array (left panel) with the stimulus-evoked coherence (middle panel).\n\nTo quantify this similarity, we used linear regression to predict changes in baseline coherence across sites based on the stimulus-evoked coherence. Importantly, both of these quantities use the initial baseline coherence as a reference. So to avoid spurious correlations introduced by subtracting the same data from the two regression variables, we split the baseline recording blocks into two intervals and used the data from only one interval for each regressor (See Materials and Methods for more details). Data from the example session in Figure 6A is shown as a scatter plot in Figure 6B, along with the calculated regression parameters. The plot shows a strong correlation between the stimulus-evoked coherence and changes in baseline coherence. This relationship was consistent across our data (Figure 6C): the distribution of linear regression slopes across experimental sessions and monkeys was significant (paired t-test: p=2.41e-19; 101 out of 105 experimental blocks had significant (p<0.05) linear regression models). These results support a Hebbian model for network-wide changes in connectivity.\n\nTo further test this model, we conducted some experimental sessions using a more complex spatio-temporal pattern of optical stimulation. Specifically, by reducing the latency between the two light sources to either 10 or 30 ms (Figure 7A), we introduce interference between evoked responses from the two light sources (Figure 7B). We repeated the analysis of mean inter-area coherence changes (c.f. Figure 4F) for these sessions, and we did not see a consistent increase in mean inter-area connectivity (Figure 7C). Nevertheless, we found that stimulus-evoked coherence continued to predict changes in baseline coherence (paired t-test on the distribution of regression slopes: p=1.37e-28; linear regression slopes with p<0.05: 160 out 170 blocks; Figure 7D, see Figure 7\u2014figure supplement 1 for an example session). Furthermore, the regression parameters were similar to those obtained with the simple stimulation patterns (Figure 6C), and both simple and complex stimulation experiments yielded regression slopes that were significantly larger than those obtained from control sessions (long-latency vs. control sessions, ranksum test: p=0.048; short-latency vs. control sessions, ranksum test: p=0.037; see Figure 7\u2014figure supplement 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig7-v2.jpg)\n\n**Figure 7.:** (A) Same stimulation protocol as described in 4A. However, here we reduced the latency between to the two lasers to 10 ms or 30 ms, creating a more complicated pattern of stimulation. (B) An example of the stimulus-evoked activity across the array from Monkey G. Blue circles show the locations of stimulation. The inset shows the enlarged pattern of evoked response at the framed electrode, which is located close to both lasers. (C) Summary of inter-area theta coherence changes for all interference experiments across both monkeys. (D) Summary of regression parameters across all interference experiments. Errorbars show standard error.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) An example showing similarity between the input coherence (right panel) and the change in baseline coherence (left panel) in monkey J. Same as Figure 6A. (B) Linear regression between input coherence and the change in baseline coherence for the example session shown in A.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31034/elife-31034-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Summary of regression fits of the change in theta coherence vs. the stimulus-evoked theta coherence. Slope and r2 values are reported as averages across stimulation blocks for non-interference stimulation (also reported in Figure 6C), interference-stimulation (also reported in Figure 7D), and control sessions. Error bars show standard error.\n\nThese results demonstrate a robust relationship between stimulus-evoked correlations and changes in baseline connectivity across the network. These findings are well explained by a Hebbian model of large-scale stimulation-induced plasticity.\n\n## Discussion\n\nIn this study we investigated how the functional connectivity between and across sensory and motor areas changes in response to stimulation. With optogenetics, we selectively manipulated local populations of excitatory neurons within this sensorimotor network. We compared two different methods to measure functional connectivity at both gross- and fine-scales, and demonstrated how these measures change in response to conditioning stimulation. We showed that these changes are consistent with Hebbian synaptic plasticity rules, extending Hebbian models of stimulation-driven plasticity to large-scale networks. This work demonstrates the feasibility of driving targeted plasticity with optogenetic stimulation. This framework is a starting point for designing principled approaches to large-scale neuroplasticity and stimulation-based therapies for neurological and neuropsychiatric disorders.\n\n### Measures of Functional connectivity between M1 and S1\n\nFunctional connectivity between M1 and S1 has been demonstrated in fMRI (Matsui et al., 2011; McGregor and Gribble, 2015), electrophysiology (Iriki et al., 1989; Yazdan-Shahmorad et al., 2016; Prsa et al., 2017), and anatomical studies (Kosar et al., 1985; Petrof et al., 2015). To evaluate stimulation-induced changes across these areas we investigated two measures of functional connectivity, one based on stimulation and one based on natural neural processing. Variants of SERR (Seeman et al., 2017; Feldmeyer and Sakmann, 2000; Klinshov et al., 2014) and coherence (Bastos and Schoffelen, 2015; Lang et al., 2012) have been used previously to evaluate functional connectivity. However, to our knowledge they have never been used in combination or compared.\n\nIn principle, these two measures reflect different aspects of functional connectivity. SERR is a more direct measure of the projections from the stimulation site. Importantly, stimulation likely evokes activity from both terminals and cell bodies located at the stimulation site, though C1V1 does not express well down at the axon (Rajasethupathy et al., 2015). Secondary responses arise from a combination of synaptic, antridromic, and indirect (network) effects. That said, based on the timing of the evoked responses and the limited expression of C1V1 in axon terminals, we expect the amplitude of secondary responses normalized to primary response amplitudes to reflect synaptic connectivity. Coherence, on the other hand, measures the broader effects of network-wide dynamics.\n\nDespite these differences, we saw that the measures are robustly correlated across channels at the beginning of our experiments. This would be expected in a network where stability was maintained with a Hebbian mechanism. In other words, direct connectivity, as reflected in SERR, drives correlated activity, which is reflected in coherence; conversely, correlated activity drives changes in connectivity (see Network effects). These coupled mechanisms lead the network to a stable, steady state (Fox and Stryker, 2017; Toyoizumi et al., 2014; Zenke and Gerstner, 2017).\n\nNotably, however, our conditioning protocol caused the two measures of connectivity to become less correlated across electrodes. This might seem surprising given that conditioning led to a significant mean increase in connectivity between S1 and M1 for both measures and that the changes in coherence were robustly predicted by the stimulus-evoked coherence. However, this decrease in the correlation between the measures after conditioning seems to be limited to high frequencies and may reflect a transient instability of the network due to the stimulation-induced perturbations in connectivity.\n\n### Stimulation changes the functional connectivity between M1 and S1\n\nPrevious work has demonstrated that either activity dependent (Jackson et al., 2006; Lucas and Fetz, 2013; Nishimura et al., 2013; Rebesco et al., 2010; Song et al., 2013) or paired electrical stimulation (Rebesco and Miller, 2011; Seeman et al., 2017) can lead to plastic changes in both primate and rodent cortex. Here we demonstrated that optogenetic stimulation at even a single location strengthens inter-area functional connectivity between brain areas. A similar observation was reported for one session of single-site electrical stimulation (Seeman et al., 2017). This result is consistent with spike-timing dependent plasticity (STDP) rules (Bi and Poo , 2001). In particular, since the time difference between the activation of the primary (pre-synaptic) and secondary (post-synaptic) responses to optical stimulation is about 3\u20136 ms, repetitive stimulation should strengthen the connectivity from the site of stimulation to the other area. While stimulation-induced long-term potentiation (LTP) and STDP have been observed within local circuits (Iriki et al., 1989; Feldman, 2012; Shulz and Jacob, 2010), and have been posited as the mechanism of stimulation-induced plasticity within M1 (Lajoie et al., 2017) this is the first study explaining large-scale changes across cortical networks. Notably, conditioning drove increases in coherence between S1 and M1 only in the theta band (4\u20138 Hz). This result is difficult to interpret because the conditioning stimulation frequency (5 or 7 Hz) itself lies within the range of the theta band. It is possible that Hebbian mechanisms are selectively enhancing connectivity at the conditioning frequency. It\u2019s also possible that theta band coherence best reflects the plastic connections between these areas. Since we did not vary stimulation frequency outside of this range, no strong conclusions can be drawn.\n\n### Dynamics of connectivity changes\n\nThe temporal dynamics of both measures reveal a trend of increasing inter-area connectivity throughout the experiment. This trend suggests that neuroplastic changes start almost immediately after the start of stimulation. Interestingly, we observed unlearning of the stimulation-induced changes during passive recording, though some of the stimulation-induced changes persisted. Previous studies have shown that longer conditioning sessions (3\u201348 hr) result in changes that are stable over timescales comparable to the length of conditioning (Jackson et al., 2006; Lucas and Fetz, 2013; Seeman et al., 2017; Nishimura et al., 2013; Rebesco and Miller, 2011). Further experiments are required to estimate the stability of plasticity following optogenetic stimulation over longer time scales.\n\n### Network effects\n\nGiven that Hebbian rules have been used extensively to explain synaptic plasticity, we wanted to explore the idea that large-scale stimulation-induced changes are consistent with Hebbian plasticity. The strongest test of the Hebbian model is to compare the correlations directly induced by stimulation with the changes in network correlations observed after conditioning. Our ability to record artifact-free signals during stimulation allowed us to perform this test. We did find a predictive linear relationship between stimulus-evoked coherence and the changes in baseline coherence after conditioning. Furthermore, the model held for both simple and complex spatiotemporal patterns of stimulation-evoked activity.\n\n### Comparison with previous sensory cortical plasticity literature\n\nThere is a large body of research on sensory cortical plasticity (Merzenich et al., 1983; Qi et al., 2011). This study differs in two key dimensions. First, previous work has largely focused on how changes in the statistics of sensory input and/or motor output affect the cortical representation in sensory cortex. In contrast, we have directly manipulated cortical circuits, without a detailed knowledge of the somatotopic map. Also, earlier work studied plasticity on the time scale of days to months, while we are studying changes across minutes. Despite these differences, both appear to support a key role for Hebbian learning in sensorimotor cortical plasticity. Still, a deeper understanding of the relationship between these bodies of work would require a study of intermediate time-frames as well, along with detailed cortical mapping. These are important questions for future work.\n\n### Limitations of the setup\n\nThe large-scale interface used in this study enabled robust estimation of functional connectivity and stimulation-evoked correlations. However, there are several limitations in our experimental setup. First, surface stimulation combined with high blue light absorption and scattering in tissue limits the depth of light penetration (Yizhar et al., 2011). The ability to target specific cortical layers would help us understand the anatomical basis of the plasticity we observed. Second, surface \u00b5ECoG recordings reflect a summation of nearby neural activity, making comparisons to explicit synaptic learning rules difficult. Depth recordings would reveal more detailed information about spike timing, the role of different cortical layers, and the relationship between synaptic and large-scale plasticity. Lastly, the \u00b5ECoG arrays were placed acutely for each experiment. To investigate the long-term effects of stimulation we need stable, chronic recordings.\n\n### Clinical applications\n\nOur results offer a proof-of-concept that optogenetic stimulation can drive predictable changes in network-scale connectivity. The success of optogenetics in NHP represents an important step forward for translational use (Doroudchi et al., 2011; Han, 2012). The continued rapid progress in the field has the potential to bring cell-type specific neuromodulation therapies to the clinic. However, even where therapeutic approaches ultimately wind up using electrical stimulation, the advantages of optogenetics make it a powerful tool for better understanding the underlying mechanisms of plasticity and, thus, for the development of therapeutic applications of neuromodulation. This framework also provides scientific insight into the mechanisms of neural plasticity. Future efforts should focus on linking the plasticity results presented here with improvements in motor function or sensory perception, which will have important implications for stimulation-based therapies.\n\n## Materials and Methods\n\nTwo adult male rhesus monkeys (monkey G: 8 years old, 17.5 Kg; monkey J: 7 years old, 16.5 Kg) were used in this study. We used the same animals and interface published in (Yazdan-Shahmorad et al., 2016). All procedures were performed under the approval of the University of California, San Francisco Institutional Animal Care and Use Committee and were compliant with the Guide for the Care and Use of Laboratory Animals.\n\n### Optogenetic Interface\n\nHere, we give a brief summary of our large-scale optogenetic interface (details in (Yazdan-Shahmorad et al., 2016). We combined three existing techniques to implement a practical, large-scale interface for both manipulation and recording from the surface of the brain in two rhesus macaque monkeys. We used an efficient technique for infusion of the optogenetics viral vector (AAV5.CamKIIa.C1V1(E122T/E162T).TS.eYFP.WPRE.hGH, 2.5\u00a0\u00d7\u00a01012 virus molecules/ml; Penn Vector Core, University of Pennsylvania, PA, USA, Addgene number: 35499) into primary somatosensory (S1) and motor (M1) cortices based on convection-enhanced delivery (CED). We infused 200 \u03bcL of virus in four sites (two in M1 and two in S1) in monkey G and 250 \u03bcL in five sites (two in M1 and three in S1) of monkey J. Infusion rate started at 1 \u00b5l/min and was increased to 5 \u00b5l/min. Following infusion we used an artificial dura to protect the brain while maintaining optical access. We verified expression with epifluorescent imaging. To record the evoked responses in both M1 and S1, we used either one or two 96 channel micro-electrocorticography (\u03bc-ECoG) arrays that were designed to allow minimally-attenuated (Ledochowitsch et al., 2015) optical access. In both animals, we observed reliable light evoked neural responses from the large channel-expressing areas.\n\n### Data acquisition\n\nOptical stimulation was applied using a fiber optic (core/cladding diameter: 62.5/125 um, Fiber Systems, TX, USA) that was connected to a 488 nm laser (PhoxX 488\u201360, Omicron-Laserage, Germany) and was positioned above the array (Figure 1). We used a Tucker-Davis Technologies system (FL, USA) for \u00b5-ECoG recording and to control the laser stimulus.\n\nWe chose the locations of stimulation based on the results of our epifluorescent imaging (see (Yazdan-Shahmorad et al., 2016)) and whether we got a physiological response to light stimulation. Based on detailed histological and electrophysiological analyses, (see (Yazdan-Shahmorad et al., 2016)) we estimate that there was a uniform distribution of expression around our infusion sites and at the locations that we chose to stimulate.\n\nThe monkeys were awake sitting in primate chairs for the duration of experiments. To ensure that the monkey remained awake, we provided random reward as well as audio and visual stimuli (displaying a cartoon). In addition, we visually monitored the animal throughout the experiment.\n\n### Stimulation and recording protocol\n\nOur stimulation and recording paradigms consisted of baseline recording, testing and conditioning blocks (Figure 4A). During baseline recording blocks we collected 5 min or 30 s of baseline activity. In test blocks we delivered 100 light pulses (five msec duration at 5 Hz) to each laser; pulses were alternated between laser sites in blocks of 10 pulses each in order to reduce the effects of habituation. For the conditioning blocks we stimulated through one or two lasers at a frequency of 5 or 7 Hz for 10 min. We repeated this protocol five times for each experiment. Our experiments consisted of single- and two-site stimulation with different laser configurations: i) one or two lasers in M1, ii) one or two lasers in S1 and iii) one laser in M1 and one laser in S1. For two-site stimulation, the delay between the two lasers was 10, 30, 70 or 100 ms. We also included control sessions in which we kept the structure of passive recording and active testing blocks, but did not stimulate during the conditioning blocks.\n\n### Quantification and Statistical Analysis\n\n#### Preprocessing\n\nAll processing and statistical analyses were performed using custom MATLAB (MA, USA) code. After signal acquisition, broadband surface potentials (sampled at 24 kHz) were visually inspected, and faulty recording sites were removed from further analysis. Next, stimulation-triggered responses were visually inspected for photoelectric artifacts (characterized by their timing, and amplitude; see (Yazdan-Shahmorad et al., 2016; Ledochowitsch et al., 2015)), and removed from analysis. Next, two measures of connectivity were defined to quantify the strength of functional connectivity between M1 and S1.\n\n#### Stimulus-Evoked Response Ratio\n\nDuring test blocks, we delivered 100 stimulus pulses at 5 Hz through each laser. To capture high-fidelity timing of the signal and avoid significant phase distortions we acausally band-pass filtered [0.1\u2013500 Hz] the broadband signal. We first calculated the delay between the onset of the stimulus pulse and the response measured at each electrode. We calculated the delay from an average waveform across the distribution of evoked responses (bootstrapped 1000 times). This bootstrapped averaging was less susceptible to artifacts and noise that could dominate the signal on individual trials. The average evoked response lasted no longer than 30 ms with the trough of the response occurring in the first 5\u201315 ms. We defined the delay of the evoked response as the time of the trough within 20 ms of stimulation onset (Figure 2A and E). The distribution of delays across recording sites (Figure 2B and F) was bimodal with a delay greater than 1.5 ms between the modes. We manually set a threshold based on this delay distribution to distinguish between \u2018primary\u2019 and \u2018secondary\u2019 sites, i.e. those in the same area as the stimulation site and those in the other area. Sessions without a secondary response were excluded from further analysis (see Table 1 for details).\n\n**Table 1.**\n Summary of the sessions for both monkeys.The data was collected in two to three week periods for each animal. Depending on the health of the animal and the quality of the neural recordings one to four experiments were performed per day.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Monkey G</th>\n      <th>Monkey J</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of sessions</td>\n      <td>37</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>Number of sessions analyzed</td>\n      <td>29</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>Number of control sessions</td>\n      <td>3</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Number of single-site and long latency sessions</td>\n      <td>6</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Number of short-latency sessions</td>\n      <td>20</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\nNext, we calculated the amplitude of each evoked response. We downsampled the raw surface field potentials to 1 kHz (after applying a lowpass Chebychev filter for anti-aliasing) and applied an acausal band-pass filter to capture high gamma activity (60\u2013200 Hz)), which is known to be representative of neural activity of local cortical columns (Suzuki and Larkum, 2017; Yazdan-Shahmorad et al., 2013). The peak (maximum) and trough (minimum) of the evoked waveform were identified within a 20 ms window after each laser pulse (Figure 2AE, in dashed inset boxes) and the peak-to-trough difference was computed. The SERR was then defined as the average (across 100 repeated laser pulses) of the ratio of two peak-to-trough amplitudes, the one for the secondary site over the one for the stimulation site. We considered other measures for calculating SERR, including commonly used measures such as the amplitude or slope of the broadband stimulus-evoked response (see Table 2). High gamma peak-to-trough amplitude yielded the most robust results.\n\n**Table 2.**\n Comparison between different measures for calculating SERR.We decided a priori to calculate the SERR using the high gamma peak to trough as a response metric, since high gamma potentials are thought to represent the population activity of local cortical columns (Yazdan-Shahmorad et al., 2013; Suzuki and Larkum, 2017). Post-hoc, we performed further analysis to investigate whether the other measures (listed in the above table) show similar effects to the high-gamma peak to trough. As shown here, all of the measures show a significant increase following stimulation (second column) whereas they do not show a significant change after control sessions in which there is no stimulation applied (first column). However, other measures are more variable and do not show increases relative to the control sessions (third column). Furthermore, only high-gamma peak to trough and broadband amplitude are significantly correlated with coherence in the baseline condition (fourth column). Overall, this suggests that the amplitude of the high-gamma signal is the best of these metrics for estimating connectivity. All effect sizes in this table reflect the median change in connectivity across sessions for each measure; p-values reflect the output of signrank (columns 1 and 2) and ranksum (column 3) statistical tests.Table 2\u2014source code 1.Statistics of SERR and other connectivity measures for each session in each experimental condition.Table 2\u2014source data 1.SERR and other connectivity measures for each session in each experimental condition.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Evoked Response Measure</th>\n      <th>Change in Connectivity during Control Sessions</th>\n      <th>Change in Connectivity during Long Latency Stim Sessions</th>\n      <th>Change in Connectivity in Control Sessions Vs. Change in Connectivity in Stim Sessions</th>\n      <th>Correlation Between Coherence (Across Freqs) and Evoked Response Connectivity Measure</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>high-gamma peak to trough (SERR)</td>\n      <td>eff_size\u00a0=\u00a00.018 p=1.0</td>\n      <td>eff_size\u00a0=\u00a00.118 p=1.6e-04</td>\n      <td>eff_size\u00a0=\u00a00.100 p=6.6e-03</td>\n      <td>avg_slope\u00a0=\u00a00.57 p=3.7e-06</td>\n    </tr>\n    <tr>\n      <td>high-gamma energy</td>\n      <td>eff_size\u00a0=\u00a00.09 p=0.38</td>\n      <td>eff_size\u00a0=\u00a00.86 p=3.3e-03</td>\n      <td>eff_size\u00a0=\u00a00.77 p=0.184</td>\n      <td>avg_slope\u00a0=\u00a00.037 p=0.144</td>\n    </tr>\n    <tr>\n      <td>broadband energy</td>\n      <td>eff_size\u00a0=\u00a00.28 p=0.22</td>\n      <td>eff_size\u00a0=\u00a00.39 p=5.4e-04</td>\n      <td>eff_size\u00a0=\u00a00.12 p=0.386</td>\n      <td>avg_slope\u00a0=\u00a0\u22120.02 p=0.652</td>\n    </tr>\n    <tr>\n      <td>broadband amplitude</td>\n      <td>eff_size\u00a0=\u00a00.21 p=0.30</td>\n      <td>eff_size\u00a0=\u00a00.23 p=4.6e-04</td>\n      <td>eff_size\u00a0=\u00a00.01 p=0.184</td>\n      <td>avg_slope\u00a0=\u00a00.183 p=0.002</td>\n    </tr>\n    <tr>\n      <td>broadband slope</td>\n      <td>eff_size\u00a0=\u00a00.09 p=0.22</td>\n      <td>eff_size\u00a0=\u00a00.23 p=4.6e-04</td>\n      <td>eff_size\u00a0=\u00a00.13 p=0.184</td>\n      <td>avg_slope\u00a0=\u00a00.028 p=0.318</td>\n    </tr>\n  </tbody>\n</table>\n\nChanges in SERR were calculated by taking the difference in SERR between the initial and final testing blocks for each secondary site. A paired, two-sided t-test was used to determine whether SERR changes were significant across secondary recording sites. Similarly, a paired, two-sided t-test was applied to determine significance across sessions separately for controls (in which no stimulation was applied during conditioning), stimulation in M1, and stimulation in S1. Unpaired, two-sided t-tests were used to directly compare the change in SERR between all stimulation sessions and all control sessions. P-values less than. 05 were considered significant.\n\n#### Coherence\n\nFirst, broadband surface potentials were downsampled to 1 kHz (after applying a lowpass Chebychev filter for anti-aliasing). Then pairwise coherences were calculated in 10 s Hamming windows in 4 Hz frequency bands. The coherence between channels x and y is defined as:\n\n$$\nC_{xy}(f)=\\frac{|G_{xy}(f)|^{2}}{G_{xx}(f)G_{yy}(f)}\n$$\n\nwhere Gxx and Gyy refer to power spectral density of channels x and y respectively, and Gxy refers to their cross-spectral density. For simplicity, in future equations we refer to the coherence between channels x and y as C. Coherence in the theta band (4\u20138 Hz) was used in all analyses, unless otherwise specified.\n\nChanges in inter-area coherence were calculated by taking the difference in coherence between the initial and final recording blocks. Significant changes after individual sessions were detected with a paired, two-sided t-test across secondary sites. Across sessions, changes in inter-area coherence in each frequency band were compared between stimulation sessions and control sessions with an unpaired, two-sided t-test, applying the Bonferroni correction for multiple comparisons.\n\n#### Connectivity Dynamics\n\nBoth the SERR and inter-area theta coherence were measured for each baseline recording and each test block during the experiment. To measure connectivity during the conditioning block, the block was sectioned into 100-pulse segments, and the SERR was calculated for each of these segments. To understand the connectivity trends, we pooled experiments together and calculated the average connectivity measures. To account for initial differences in connectivity across sessions and monkeys, we calculated the average changes in each connectivity measure with respect to its initial value and computed their Pearson correlation across sessions and blocks.\n\n#### Network Analysis\n\nSince stimulation evokes a network-wide pattern of activity, the coherence during conditioning blocks (Cc) is different than the coherence calculated during baseline recording blocks (Cr). This difference, or \u2018stimulus-evoked coherence\u2019 captures the correlations introduced through stimulation. We propose that these correlations drive plasticity in a Hebbian manner, so that the change in baseline coherence between pre- and post-conditioning reflects the stimulus-evoked coherence. Therefore, we assessed how well the change in recording coherence is predicted, across blocks and electrode pairs, by the stimulus-evoked coherence using linear regression,\n\n$$\n(C_{c}\u2212C_{r,pre})=B^\u2217(C_{r,post}\u2212C_{r,pre}),\n$$\n\nwhere $B^$ are the fit regression parameters. However, this simple regression analysis is biased, since the same $C_{r}$ is used on the left and right side of this equation. To avoid the spurious correlations that would therefore arise, we split the recording blocks into 5s non-overlapping windows and calculated the coherence separately for the odd (\u03b1) and even (\u03b2) windows. We then averaged the coherence for each set of windows (Cr,\u03b1 and Cr,\u03b2) and used these as independent measures of baseline coherence for the regression,\n\n$$\n(C_{c}\u2212C_{r,pre,\\alpha})=B^\u2217(C_{r,post,\\alpha}\u2212C_{r,pre,\\beta}).\n$$\n\n### Histology analysis\n\nMonkeys were deeply sedated (per above Surgical procedures) and perfused transcardially with heparinized phosphate buffered saline (PBS) followed by cold 4% paraformaldehyde in phosphate buffer. The brain was extracted and post-fixed in the same fixative for 24 hr at 4\u00b0C and then dissected into twelve 6 mm-thick coronal blocks using a custom matrix. After 7\u201310 days incubation in 30% sucrose, blocks were frozen and cut on a cryostat (Microm, Germany) into 50 \u03bcm thick sections. Representative sections were selected from each block and processed for EYFP immunocytochemistry using a free-floating technique. Sections were initially washed in PBS, incubated in 3% hydrogen peroxide in PBS for 10 min to quench endogenous peroxidase activity, then rinsed in two changes of 50% ethanol followed by three changes of PBS for 5 min each. Next we incubated the sections in 5% normal donkey serum in PBS for 1 hr to block non-specific binding. Primary rabbit polyclonal anti-GFP antibody (Abcam, RRID: AB_303395) was diluted 1:15,000 in PBS containing 0.01% Triton X-100 and was applied to the tissue for 48 hr at 4\u00b0C. Sections were then rinsed in PBS, incubated in biotinylated donkey anti-rabbit antibody, (1:2,000, Jackson Immunoresearch) for 12 hr at 4\u00b0C, rinsed and incubated in ExtrAvidin (Sigma-Aldrich, 1:5,000) for 5\u20136 hr in room temperature. Peroxidase was detected using a diaminobenzidine (DAB) chromogenic reagent (Sigma-Aldrich). Sections were rinsed in PBS, mounted on gelatin-coated slides, air dried, dehydrated in graded alcohols, cleared in xylene and coverslipped with D.P.X. mounting media (Sigma-Aldrich). Additional adjacent sections were stained with cresyl violet (Nissl) using standard techniques, to reveal cortical cytoarchitecture.\n\nDouble immunofluorescence was performed using the similar to above approach although using combinations of primary antibodies from different host species for GFP and for the interneuron markers. Primary antibodies were: rabbit polyclonal anti-GFP antibody (1:10,000, Abcam, GFP ab290); goat polyclonal anti-GFP antibody (1:1,000, Abcam, ab5450). These were paired with one of the following primary antibodies: mouse monoclonal antibody for parvalbumin, (1:1,000, Sigma-Aldrich P3088); mouse monoclonal antibody for calbindin (1:800 Sigma-Aldrich CB-955); rat monoclonal antibody for somatostatin (1:200, Millipore MAP354); rabbit polyclonal anti-GAD65/67 (1:500, Millipore AB1511); a cocktail of mouse monoclonal antibody for GAD67 (1:500, Millipore MAB5406) and mouse monoclonal antibody for GAD65 (1:1,000, Sigma-Aldrich G1166). Sections were blocked using normal donkey serum and processed for 4\u20136 hr in a mix of matching secondary antibodies; all of which were raised in donkey (Thermo Fisher Scientific, 1:300): anti-rabbit Alexa Fluor 488, anti-goat Alexa Fluor 488 (both for GFP). Interneuron markers were visualized using anti-mouse Alexa Fluor 594, anti-rat Alexa Fluor 594; anti-rabbit Alexa Fluor 594. Sections were mounted using Vectashield (Vector Labs) and imaged using Zeiss LSM510 Meta confocal microscope (Zeiss, Germany) and 90i imaging system equipped with a CCD camera (Nikon, Japan).\n",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "c37248d2-9de2-409f-a229-dc44d251c758",
+      "submission_id": "e862abdf-aed3-4156-928a-9589db0841e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Charles E Schroeder, Columbia University College of Physicians and Surgeons United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31034.045](https://doi.org/10.7554/eLife.31034.045)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Targeted cortical reorganization using optogenetics in non-human primates\" for consideration by eLife. Your article has been favorably evaluated by Sabine Kastner (Senior Editor) and three reviewers, one of whom, Charles Schroeder (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Luke Sjulson (Reviewer #2); Michael Michaelides (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper reports on investigation of stimulation-induced changes in intracortical functional connectivity in 2 monkeys. S1 and M1 were studied with dense arrays of micro-ECoG electrodes positioned at the Pial surfaces of the areas. Stimulation-related changes in both \"high-gamma\" band activity (~related to neuronal firing) and changes in resting theta band coherence at rest were examined. Stimulation was provided by optogenetic methods that were designed to be selective to excitatory (pyramidal) neurons. The experiments are a significant technical achievement, and the idea of evoking and measuring plasticity between two brain regions is interesting. The main effect of periods of conditioning stimulation was a general increase in connectivity by all measures, though it had heterogeneous characteristics whose underpinnings were unclear. The authors conclude that their findings generalize the concept of Hebbian plasticity to the network scale and that this has clinical implications. Despite the paper's strengths, numerous problems prevent the main scientific result of optogenetic Hebbian plasticity from being established clearly. Additionally, parts of the manuscript are sufficiently confusing that it was difficult to understand what the experimental conditions were in order to evaluate them.\n\nEssential revisions:\n\n1) \"Traditional\" somatosensory plasticity work in monkeys (Merzenich, Kaas, Garraghty, etc.) relates to re-organization after input change due to injury or some other perturbation. How does the present study interface with that extensive body of findings? Notably the somatosensory reorganization work focuses on the somatotopic representation in S1, but that is not dealt with at all here (see next point) noted, the somatosensory and motor system are already interconnected, but within area there is a somatotopic organization, and across areas, connectivity tends to be between ~ corresponding somatotopic representations. It would add greatly to the clarity of this paper if this point were addressed.\n\n2) No mention of the monkeys' state of anesthesia is made here. Presumably they were anesthetized. Regardless, that issue point be clearly discussed, as one would reasonably expect that the monkeys' state would have a large impact on the plasticity of the system.\n\n3) SERR is a critical measure for this paper, and it needs to be described and illustrated in much more detail \u2013 see below Figure 2 also. In particular, why is the peak to trough the measure of interest, rather than, e.g., power in the 60-200 Hz band over a defined post-stimulation epoch. Additionally, if the lag of the response peak in the secondary response (Figure 2A-B) is important in that case, why not here as well? How exactly were the peaks and troughs scored and how is peak to trough amplitude measured?\n\n4) The manuscript tacitly promotes a description of the experiment that may not be correct, in which excitatory cells in S1 and M1 are stimulated independently. In reality, there are substantial projections from S1 to M1 and vice versa, and illumination of either structure would be expected to evoke action potentials in both the illuminated somata and the axon terminals of neurons from the other structure. Xiong et al. (https://www.ncbi.nlm.nih.gov/pubmed/25731173) and others have measured this effect in vivo using techniques similar to those used in this manuscript. One feature of C1V1 that may work in the authors' favor is that it traffics poorly to long-range projections (https://www.ncbi.nlm.nih.gov/pubmed/26436451), but nevertheless, the authors must address this point. One suggestion would be to break down the temporal components of the LFP responses as in Xiong et al.\n\n5) In Figure 4, the authors show comparisons with a \"No Stim\" condition. However, the no stim condition is not plotted in 4G or any of the subsequent figures in the paper. Additionally, the various statistical tests for increased connectivity are not compared against the no stim condition, as they should be.\n\n6) I think the main claim being made by this paper is that correlated stimulation causes strengthening of functional connectivity, and uncorrelated stimulation weakens it. However, the paper is sufficiently unclear that it is difficult to determine whether that is in fact the claim the authors intend to make. Figure 1B shows only one protocol, but the Materials and methods section lists multiple protocols in incomprehensible fashion. This manuscript needs a transparent explanation of what the experimental conditions were, and Figures 6-7 need to contain direct statistical comparisons of these conditions against each other (including the \"no stim\" condition). Ideally all of the experimental conditions should be illustrated as in Figure 1B.\n\n7) In their 2016 publication, the authors report the use of an AAV5 C1V1 virus. Here they report a pseudotyped AAV2/5. Are these the same virus? If not why did the authors switch. Neither show up on the UPENN vector core website catalog. Were they custom made? This is important information that should be shared so that other research groups are able to perform similar experiments if they so wish to. Also in the 2016 publication, the authors reported that the artificial dura led to anatomical changes in the targeted area. The authors used the same approach in these experiments but any such effects or measures were not reported. Did they observe such changes here?\n\n8) The authors show convincing and high quality immunohistochemical data however they did not report whether they attempted to quantify the number of cells that expressed the opsin in each monkey, especially at the site of stimulation and whether this was related to their network connectivity measures. It would have been useful (but not necessary at this point if they do not have this data) if they had chosen to stimulate in different regions and then examined their downstream measures as a function of cell transduction. In relation to the above point, how did the authors decide on the specific areas within each region to stimulate? Was this based on where the injections were made?\n",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c0fccdb6-9add-4f79-99b9-4cdb57944120",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C1",
+      "claim": "A large-scale optogenetic interface enabled simultaneous stimulation of excitatory neurons and electrocorticographic recording across primary somatosensory (S1) and motor (M1) cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A large-scale optogenetic interface enabled simultaneous stimulation of excitatory neurons and electrocorticographic recording across primary somatosensory (S1) and motor (M1) cortex (Yazdan-Shahmorad et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Yazdan-Shahmorad et al., 2016) and is described as a method used in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "41aa48a7-1abb-421d-8919-0e230f005859",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C2",
+      "claim": "The network response to focal stimulation and the baseline coherence between pairs of electrodes were strongly correlated before stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We tracked two measures of network connectivity, the network response to focal stimulation and the baseline coherence between pairs of electrodes; these were strongly correlated before stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by experimental data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "33c9f836-492a-498a-8a63-8c40f37dfadd",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C3",
+      "claim": "Within minutes, stimulation in S1 or M1 significantly strengthened the gross functional connectivity between these areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Within minutes, stimulation in S1 or M1 significantly strengthened the gross functional connectivity between these areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by experimental data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "7665c9a5-e73d-44c9-a290-07b57b1ef1f2",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C4",
+      "claim": "Stimulation led to heterogeneous connectivity changes across the network.",
+      "claim_type": "EXPLICIT",
+      "source": "At a finer scale, stimulation led to heterogeneous connectivity changes across the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by data in Figure 6A showing varied changes across recording sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "e3bf3f3a-e7b8-472b-9907-4a496f14a61f",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C5",
+      "claim": "The connectivity changes reflected the correlations introduced by stimulation-evoked activity, consistent with Hebbian plasticity models.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes reflected the correlations introduced by stimulation-evoked activity, consistent with Hebbian plasticity models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by regression analysis in Figures 6 and 7 showing correlation between stimulus-evoked coherence and changes in baseline coherence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "36b55077-69ef-47d2-8503-8d740b5c3939",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C6",
+      "claim": "Many neurological and psychiatric disorders arise from dysfunctional neural dynamics at the network level, which in turn stem from aberrant neural connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many neurological and psychiatric disorders arise from dysfunctional neural dynamics at the network level, which in turn stem from aberrant neural connectivity (Stam, 2014; Wu et al., 2016; Edwardson et al., 2013; Yahata et al., 2016; DeSalvo et al., 2014; Skudlarski et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "d517cc43-ee72-42ab-8bcb-2c9ffb0c9742",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C7",
+      "claim": "The brain shows marked plasticity across a variety of learning and memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain shows marked plasticity across a variety of learning and memory tasks (Takeuchi et al., 2014; Bliss et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "ec5a12fb-b315-47e4-94ba-a4e9932281fb",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C8",
+      "claim": "The brain shows marked plasticity during recovery after brain injury or stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain shows marked plasticity across a variety of learning and memory tasks (Takeuchi et al., 2014; Bliss et al., 2014) and during recovery after brain injury or stroke (Edwardson et al., 2013; Hara, 2015; Murphy and Corbett, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "8a52488d-8730-42dc-8f4c-834fd87a6fd4",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C9",
+      "claim": "The simple Hebbian model of plasticity and spike-timing dependent versions of it explain a large body of data on activity-dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The simple Hebbian model of plasticity (Donald, 1949) and spike-timing dependent versions of it (Bi and Poo , 2001) explain a large body of data on activity-dependent plasticity, including both in vitro (Massobrio et al., 2015; Abrahamsson et al., 2016), and in vivo (Andersen et al., 2017; Feldman, 2012; Shulz and Jacob, 2010) studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "24ac7d70-e8ff-4501-b218-f99c1f4f436a",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C10",
+      "claim": "The viral vector used to obtain opsin expression targeted excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The viral vector used to obtain opsin expression targeted excitatory neurons (see supplementary material for details; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by histological data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "91953e0d-07ab-4d78-8ceb-99643353c0dd",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C11",
+      "claim": "Excitatory neurons have strong projections within and between M1 and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons have strong projections within and between the two brain areas (Murray and Keller, 2011; Kinnischtzke et al., 2014; Weiler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "3a7929d6-bf89-40bf-b250-d6b8e9127023",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C12",
+      "claim": "Activating excitatory cells should increase the excitability of the underlying network, improving the likelihood of neuroplastic change.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating these excitatory cells should increase the excitability of the underlying network, improving the likelihood of neuroplastic change (Iriki et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation and represents a theoretical expectation based on prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "55884f46-896c-4251-ba27-b50dd1d29fd4",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C13",
+      "claim": "The delays of evoked responses exhibited a bimodal distribution with a 3\u20136 ms separation between the early and late responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The delays exhibited a bimodal distribution with a 3\u20136 ms separation between the early and late responses (Figure 2B and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2B and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "e2dae490-15f8-4668-b5d3-7d3f1e52ea97",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C14",
+      "claim": "Classifying the responses across electrodes by delay recovers the spatial separation between the two cortical areas\u2014following a boundary along the central sulcus\u2014with shorter delays in the area being stimulated and longer delays in the other area.",
+      "claim_type": "EXPLICIT",
+      "source": "Classifying the responses across electrodes by delay recovers the spatial separation between the two cortical areas\u2014following a boundary along the central sulcus\u2014with shorter delays in the area being stimulated (S1 or M1; primary responses) and longer delays in the other area (M1 or S1; secondary responses) (Figure 2C and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by spatial maps in Figure 2C and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "cbe00fec-03a0-4eea-b784-7049969ad56e",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C15",
+      "claim": "The short delay of the secondary responses suggests close functional connectivity between M1 and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "The short delay of the secondary responses suggests close functional connectivity between these areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observed timing of responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "7a9032f0-fd71-4aad-9964-f16c75f5d11f",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C16",
+      "claim": "SERR and coherence are derived independently from recordings with and without simultaneous stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because SERR and coherence are derived independently from recordings with and without simultaneous stimulation, they might reflect fundamentally different aspects of network connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "9c780324-e711-4393-a2be-39f1368e1a5c",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C17",
+      "claim": "The two measures of functional connectivity (SERR and coherence) were highly correlated at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The two measures of functional connectivity were highly correlated: across sessions, the distribution of regression slopes was significantly different from 0 (t-test: p=3.73e-06), and 69 percent of individual experiments showed significant linear regressions (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the correlation between measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "f768ca1d-9948-4a9d-809c-9a4467e47dbe",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C18",
+      "claim": "At baseline, before any conditioning, the stimulation-evoked response reflects network dynamics across the frequency spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that at baseline, before any conditioning, the stimulation-evoked response reflects network dynamics across the frequency spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the correlation between SERR and coherence across frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "d9a95fcd-0c93-4cc5-a7db-f12d1902d49e",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C19",
+      "claim": "Conditioning stimulation was applied for 50 min in each experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In each experiment, conditioning stimulation was applied for 50 min, and we evaluated functional connectivity every 10 min during blocks of passive baseline recording and active testing (100 light pulses delivered through each laser).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "51109c71-cd0c-474f-bfc5-ceb42d2ee0f2",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C20",
+      "claim": "Stimulation in M1 leads to significant increases in mean SERR.",
+      "claim_type": "EXPLICIT",
+      "source": "A representative example experiment, shown in Figure 4B, shows that stimulation in M1 leads to significant increases (paired t-test, p=3.88e\u221211) in mean SERR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "40118499-3d10-46aa-8a03-5cde71e1b0de",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C21",
+      "claim": "Similar increases in SERR were observed for a majority of experiments (14 out of 18 experiments) across both monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar increases in SERR were observed for a majority of experiments (14 out of 18 experiments) across both monkeys (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by summary data across experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "5aee765d-920f-4387-889a-474ead537bca",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C22",
+      "claim": "The increases in connectivity were symmetric between the two cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The increases in connectivity were symmetric between the two cortical areas (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data comparing stimulation in S1 vs M1 shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "2bb51084-e679-4370-90ec-b7bcf6b052e6",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C23",
+      "claim": "No significant change in mean SERR was observed in control sessions without conditioning stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant change in mean SERR was observed in control sessions without conditioning stimulation (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by control data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "8ad3902c-12ae-4ffc-ac5b-ad02a9df5beb",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C24",
+      "claim": "The increase in SERR was significantly larger for stimulation sessions than control sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the increase in SERR was significantly larger for stimulation sessions than control sessions (unpaired t-test: p=0.0036)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison between stimulation and control sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "4f5a891f-da90-4303-a1fb-e18ddcb8c150",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C25",
+      "claim": "Conditioning increased mean theta band (4\u20138 Hz) coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "We next asked whether conditioning increased coherence-based measures of inter-area connectivity. We did observe increases in mean theta band (4\u20138 Hz) coherence following conditioning, as shown in Figure 4E for the same dataset used in Figure 4B (paired t-test, p=0.03).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "106ca6bb-98db-4fab-8695-a91b9920ce79",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C26",
+      "claim": "The increase in theta coherence was significant for the majority of experiments (13 out of 20).",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in theta coherence was significant for the majority of experiments (13 out of 20; Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by summary data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "997c93ac-6a0c-4b92-97bc-21e1ba5b25d2",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C27",
+      "claim": "The effect of conditioning on coherence was localized to the theta band.",
+      "claim_type": "EXPLICIT",
+      "source": "and the effect was localized to the theta band (Figure 4G; paired t-test, p=0.017; Bonferroni correction for multiple comparisons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis across frequency bands shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "f45f9b97-2b57-4323-8b49-c05d98a0a4da",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C28",
+      "claim": "No significant changes in theta-band power were observed as a result of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also looked for change in the theta-band power as a result of stimulation and did not see any significant changes, supporting the conclusion that changes in coherence reflect changes in functional connectivity (See Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by power analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "6bd9c8b0-0a79-4fdf-9eab-406ce51898ee",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C29",
+      "claim": "After conditioning, the cross-channel correlation between SERR and coherence significantly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "After conditioning, the cross-channel correlation between these measures significantly decreased (paired t-test, p=6.3e-10)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis comparing pre- and post-conditioning correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "fef7a3e1-4ac6-49cd-bdf5-b2e453284669",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C30",
+      "claim": "The changes in SERR and coherence were uncorrelated.",
+      "claim_type": "EXPLICIT",
+      "source": "and the changes in connectivity were uncorrelated (t-test on distribution of regression slopes, p=0.85).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the relationship between changes in the two measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "af52c389-0d0e-4937-8932-1bda26024f3c",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C31",
+      "claim": "The stimulation affects SERR and coherence differently.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the stimulation affects the two measures differently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the decreased correlation between measures after stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "a13636a6-08be-4d96-ad0c-a459c5a6b877",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C32",
+      "claim": "In control (no stimulation) sessions, there was no significant decrease in the correlation between SERR and coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, we did not see a significant decrease in the correlation between measures after control sessions (paired t-test, p=0.36; see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by control data analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "95e23499-fc4d-4c41-9317-c3aec7b88a61",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C33",
+      "claim": "There is a trend of increasing connectivity across the session that starts within the first 10 min conditioning block.",
+      "claim_type": "EXPLICIT",
+      "source": "For this example session (Figure 5A), and on average across all sessions (Figure 5B), there is a trend of increasing connectivity across the session that starts within the first 10 min conditioning block.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by temporal analysis shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "bd2110a2-e8e7-418c-bb97-8874ba8af49d",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C34",
+      "claim": "The increases in inter-area connectivity measured with SERR and coherence were correlated across time.",
+      "claim_type": "EXPLICIT",
+      "source": "These increases in inter-area connectivity measured with SERR and coherence (Figure 5B) were correlated across time (Pearson correlation coefficient = 0.26).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis of temporal dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "3c615ea4-d68b-43ca-a7f6-7cd6913d1a54",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C35",
+      "claim": "The rate of strengthening was consistent across conditioning blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the rate of strengthening was consistent across conditioning blocks; we detected a significant increase in SERR (p<0.05) at ~ 4.5 min of stimulation in 4 out of 5 conditioning blocks (see Figure 5\u2014figure supplement 1 for comparison with control sessions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of SERR changes within conditioning blocks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "30e317a3-bd0a-4a20-b5df-8111b500ab6b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C36",
+      "claim": "There was a significant decrease in the SERR between the last 100 pulses of the conditioning block and the following test block, indicating some unlearning of the stimulation-induced connectivity changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We did observe a significant decrease (paired t-test, p=2.9e-05) in the SERR between the last 100 pulses of the conditioning block and the following test block, indicating some unlearning of the stimulation-induced connectivity changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis comparing SERR at the end of conditioning vs. test blocks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "b41f0467-25a5-4b9e-8a01-b417523980c1",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C37",
+      "claim": "Stimulation led to heterogeneous changes in connectivity across the network.",
+      "claim_type": "EXPLICIT",
+      "source": "This example shows heterogeneous changes in connectivity across the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the heatmap data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "e3c21f1f-4f79-4d27-9bea-a0cfa499707a",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C38",
+      "claim": "A Hebbian plasticity model suggests that the fine-scale changes in connectivity should reflect the statistics of plasticity-inducing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A Hebbian plasticity model suggests that the fine-scale changes in connectivity should reflect the statistics of plasticity-inducing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a theoretical prediction based on Hebbian plasticity principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "f639e5dd-7ea1-4da5-9974-78ed2d77d29b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C39",
+      "claim": "Correlated stimulation-evoked activity between two cortical sites would strengthen the functional connectivity between them, while uncorrelated or anti-correlated stimulation-evoked activity would weaken their functional connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, we predicted that correlated stimulation-evoked activity between two cortical sites would strengthen the functional connectivity between them, while uncorrelated or anti-correlated stimulation-evoked activity would weaken their functional connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on Hebbian plasticity theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "98b14cb3-653f-4da7-976a-14182c678578",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C40",
+      "claim": "There is a similarity between the pattern of changes in baseline coherence across the array with the stimulus-evoked coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the example session of Figure 6A, one can see a similarity between the pattern of changes in baseline coherence across the array (left panel) with the stimulus-evoked coherence (middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual comparison of heatmaps in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "7f10e666-2506-4f53-b2d1-00423d79add4",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C41",
+      "claim": "There is a strong correlation between the stimulus-evoked coherence and changes in baseline coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "The plot shows a strong correlation between the stimulus-evoked coherence and changes in baseline coherence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by regression analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "6b9a6657-a1fd-45df-a2cb-14007ba6c56e",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C42",
+      "claim": "The relationship between stimulus-evoked coherence and changes in baseline coherence was consistent across experimental sessions and monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship was consistent across our data (Figure 6C): the distribution of linear regression slopes across experimental sessions and monkeys was significant (paired t-test: p=2.41e-19; 101 out of 105 experimental blocks had significant (p<0.05) linear regression models).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis across all experiments shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "675e5b57-b541-4260-9170-f3ce144c9739",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C43",
+      "claim": "The results support a Hebbian model for network-wide changes in connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a Hebbian model for network-wide changes in connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the correlation between stimulus-evoked coherence and connectivity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "16b6bb78-a1a7-4ac0-835d-67fe9f934bab",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C44",
+      "claim": "With interference stimulation patterns, there was no consistent increase in mean inter-area connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated the analysis of mean inter-area coherence changes (c.f. Figure 4F) for these sessions, and we did not see a consistent increase in mean inter-area connectivity (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "b4dc22ea-ec77-413e-afa3-0864b3778c3b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C45",
+      "claim": "With interference stimulation, stimulus-evoked coherence continued to predict changes in baseline coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we found that stimulus-evoked coherence continued to predict changes in baseline coherence (paired t-test on the distribution of regression slopes: p=1.37e-28; linear regression slopes with p<0.05: 160 out 170 blocks; Figure 7D, see Figure 7\u2014figure supplement 1 for an example session).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of interference stimulation experiments shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "2d4f6ef3-7342-4380-9bee-923361b90650",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C46",
+      "claim": "The regression parameters for interference stimulation were similar to those obtained with the simple stimulation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the regression parameters were similar to those obtained with the simple stimulation patterns (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of regression parameters across stimulation types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "0947bb89-1a2f-4787-af47-c112e44b5982",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C47",
+      "claim": "Both simple and complex stimulation experiments yielded regression slopes that were significantly larger than those obtained from control sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "and both simple and complex stimulation experiments yielded regression slopes that were significantly larger than those obtained from control sessions (long-latency vs. control sessions, ranksum test: p=0.048; short-latency vs. control sessions, ranksum test: p=0.037; see Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical comparison with control sessions shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "7f214be4-d1da-4178-a704-212749cc27a3",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C48",
+      "claim": "There is a robust relationship between stimulus-evoked correlations and changes in baseline connectivity across the network.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate a robust relationship between stimulus-evoked correlations and changes in baseline connectivity across the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the findings from both simple and interference stimulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "e69b361f-609f-40d9-9ddb-ce6023152a91",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C49",
+      "claim": "The findings are well explained by a Hebbian model of large-scale stimulation-induced plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are well explained by a Hebbian model of large-scale stimulation-induced plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the experimental results in the context of Hebbian theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "d831d079-da43-43da-8d87-4572f367ba99",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C50",
+      "claim": "Functional connectivity between M1 and S1 has been demonstrated in fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional connectivity between M1 and S1 has been demonstrated in fMRI (Matsui et al., 2011; McGregor and Gribble, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior fMRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "f916708a-e751-48f6-92b1-a104a08159b3",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C51",
+      "claim": "Functional connectivity between M1 and S1 has been demonstrated in electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional connectivity between M1 and S1 has been demonstrated in fMRI (Matsui et al., 2011; McGregor and Gribble, 2015), electrophysiology (Iriki et al., 1989; Yazdan-Shahmorad et al., 2016; Prsa et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior electrophysiology studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "650cb0f8-c2af-451d-a2eb-29d0f266d0a1",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C52",
+      "claim": "Functional connectivity between M1 and S1 has been demonstrated in anatomical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional connectivity between M1 and S1 has been demonstrated in fMRI (Matsui et al., 2011; McGregor and Gribble, 2015), electrophysiology (Iriki et al., 1989; Yazdan-Shahmorad et al., 2016; Prsa et al., 2017), and anatomical studies (Kosar et al., 1985; Petrof et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "833d3693-bf64-45c4-91ec-261411d24327",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C53",
+      "claim": "Variants of SERR have been used previously to evaluate functional connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants of SERR (Seeman et al., 2017; Feldmeyer and Sakmann, 2000; Klinshov et al., 2014) and coherence (Bastos and Schoffelen, 2015; Lang et al., 2012) have been used previously to evaluate functional connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies using SERR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "5bc6183b-b954-45c5-a021-ea6164f2711d",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C54",
+      "claim": "Coherence has been used previously to evaluate functional connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants of SERR (Seeman et al., 2017; Feldmeyer and Sakmann, 2000; Klinshov et al., 2014) and coherence (Bastos and Schoffelen, 2015; Lang et al., 2012) have been used previously to evaluate functional connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies using coherence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "7bfafa7a-a120-4d0a-895b-a9bc897387a0",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C55",
+      "claim": "SERR and coherence have never been used in combination or compared before this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to our knowledge they have never been used in combination or compared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a novelty statement about the current study's approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "4bd40091-5afe-490e-a2ca-193392118b74",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C56",
+      "claim": "SERR is a more direct measure of the projections from the stimulation site.",
+      "claim_type": "EXPLICIT",
+      "source": "SERR is a more direct measure of the projections from the stimulation site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of what SERR measures based on the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "528ed1a1-b10a-4198-af9c-906c962e7b9b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C57",
+      "claim": "Stimulation likely evokes activity from both terminals and cell bodies located at the stimulation site.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, stimulation likely evokes activity from both terminals and cell bodies located at the stimulation site, though C1V1 does not express well down at the axon (Rajasethupathy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference about optogenetic stimulation and supported by citation about C1V1 expression.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "269549ec-e050-4b0f-b73f-f9e67689e9a5",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C58",
+      "claim": "C1V1 does not express well down at the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "though C1V1 does not express well down at the axon (Rajasethupathy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work on C1V1 expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "0658110d-421c-424a-9875-9f90cc3c36b6",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C59",
+      "claim": "Secondary responses arise from a combination of synaptic, antidromic, and indirect (network) effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary responses arise from a combination of synaptic, antridromic, and indirect (network) effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the mechanisms underlying secondary responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "3e730518-6302-4a0f-a751-11440f750567",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C60",
+      "claim": "Based on the timing of the evoked responses and the limited expression of C1V1 in axon terminals, the amplitude of secondary responses normalized to primary response amplitudes is expected to reflect synaptic connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, based on the timing of the evoked responses and the limited expression of C1V1 in axon terminals, we expect the amplitude of secondary responses normalized to primary response amplitudes to reflect synaptic connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on response timing and C1V1 expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "42699fa7-749f-474f-84e7-320f5dc4d8f6",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C61",
+      "claim": "Coherence measures the broader effects of network-wide dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Coherence, on the other hand, measures the broader effects of network-wide dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of what coherence measures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "c844f250-2fcc-44b6-820e-7e822c30caf5",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C62",
+      "claim": "The correlation between SERR and coherence would be expected in a network where stability was maintained with a Hebbian mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be expected in a network where stability was maintained with a Hebbian mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a theoretical expectation based on Hebbian plasticity principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "dd8bbccb-62ad-4f6e-923c-0737727a0b85",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C63",
+      "claim": "Direct connectivity, as reflected in SERR, drives correlated activity, which is reflected in coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, direct connectivity, as reflected in SERR, drives correlated activity, which is reflected in coherence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the relationship between SERR and coherence based on network dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "062ee0d0-a1d1-4d18-a1f7-00cadfb5661b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C64",
+      "claim": "Correlated activity drives changes in connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "conversely, correlated activity drives changes in connectivity (see Network effects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on Hebbian plasticity principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "fe16a296-5ac1-48e3-9f2d-4805e2603d18",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C65",
+      "claim": "Coupled mechanisms of connectivity driving correlated activity and correlated activity driving connectivity lead the network to a stable, steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "These coupled mechanisms lead the network to a stable, steady state (Fox and Stryker, 2017; Toyoizumi et al., 2014; Zenke and Gerstner, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to theoretical work on network stability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "00fdc9a5-c2ba-436e-be3a-9e1622a5f702",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C66",
+      "claim": "The decrease in the correlation between SERR and coherence after conditioning seems to be limited to high frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this decrease in the correlation between the measures after conditioning seems to be limited to high frequencies and may reflect a transient instability of the network due to the stimulation-induced perturbations in connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the frequency-dependent changes in correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "5b9e245f-7197-40ef-bf56-3d2d2e28d08e",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C67",
+      "claim": "The decrease in correlation between SERR and coherence may reflect a transient instability of the network due to the stimulation-induced perturbations in connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this decrease in the correlation between the measures after conditioning seems to be limited to high frequencies and may reflect a transient instability of the network due to the stimulation-induced perturbations in connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative interpretation of the observed decrease in correlation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "2ea3f63f-4456-49e9-985c-e4df4dcf0474",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C68",
+      "claim": "Previous work has demonstrated that either activity dependent stimulation can lead to plastic changes in both primate and rodent cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has demonstrated that either activity dependent (Jackson et al., 2006; Lucas and Fetz, 2013; Nishimura et al., 2013; Rebesco et al., 2010; Song et al., 2013) or paired electrical stimulation (Rebesco and Miller, 2011; Seeman et al., 2017) can lead to plastic changes in both primate and rodent cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "55e224f0-58b4-404b-8ea8-f9e755bc036c",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C69",
+      "claim": "Paired electrical stimulation can lead to plastic changes in both primate and rodent cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has demonstrated that either activity dependent (Jackson et al., 2006; Lucas and Fetz, 2013; Nishimura et al., 2013; Rebesco et al., 2010; Song et al., 2013) or paired electrical stimulation (Rebesco and Miller, 2011; Seeman et al., 2017) can lead to plastic changes in both primate and rodent cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "8eb335f3-3bff-48c5-a95e-cf7d9527372b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C70",
+      "claim": "Optogenetic stimulation at even a single location strengthens inter-area functional connectivity between brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrated that optogenetic stimulation at even a single location strengthens inter-area functional connectivity between brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key finding of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "afae7668-efa0-455e-a8fa-c2ee2e1a2e12",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C71",
+      "claim": "A similar observation of single-site stimulation strengthening connectivity was reported for one session of single-site electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar observation was reported for one session of single-site electrical stimulation (Seeman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "deedf6d7-4ec2-4c07-b593-889ee186afdf",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C72",
+      "claim": "The result that single-site stimulation strengthens inter-area connectivity is consistent with spike-timing dependent plasticity (STDP) rules.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with spike-timing dependent plasticity (STDP) rules (Bi and Poo , 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the results in the context of STDP theory, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "663fe510-fa6b-426d-8ebf-b55e35c20c16",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C73",
+      "claim": "Since the time difference between the activation of the primary (pre-synaptic) and secondary (post-synaptic) responses to optical stimulation is about 3\u20136 ms, repetitive stimulation should strengthen the connectivity from the site of stimulation to the other area.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, since the time difference between the activation of the primary (pre-synaptic) and secondary (post-synaptic) responses to optical stimulation is about 3\u20136 ms, repetitive stimulation should strengthen the connectivity from the site of stimulation to the other area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on STDP principles and the observed timing of responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "782a2177-1347-4765-91c1-7462df7abfde",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C74",
+      "claim": "Stimulation-induced long-term potentiation (LTP) and STDP have been observed within local circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "While stimulation-induced long-term potentiation (LTP) and STDP have been observed within local circuits (Iriki et al., 1989; Feldman, 2012; Shulz and Jacob, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "0b54506e-9e7a-4d4f-92d0-6384d0239dba",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C75",
+      "claim": "LTP and STDP have been posited as the mechanism of stimulation-induced plasticity within M1.",
+      "claim_type": "EXPLICIT",
+      "source": "and have been posited as the mechanism of stimulation-induced plasticity within M1 (Lajoie et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a modeling study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "456df32b-2282-49a7-ac32-804040956837",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C76",
+      "claim": "This is the first study explaining large-scale changes across cortical networks using Hebbian plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "this is the first study explaining large-scale changes across cortical networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a novelty statement about the current study's contribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "5763f814-1d96-4370-91c5-06ef701e855f",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C77",
+      "claim": "The conditioning stimulation frequency (5 or 7 Hz) lies within the range of the theta band.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is difficult to interpret because the conditioning stimulation frequency (5 or 7 Hz) itself lies within the range of the theta band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the relationship between stimulation frequency and theta band.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "d1d8f1b1-b051-44ff-9080-7c5ab6368583",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C78",
+      "claim": "It is possible that Hebbian mechanisms are selectively enhancing connectivity at the conditioning frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that Hebbian mechanisms are selectively enhancing connectivity at the conditioning frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative interpretation of the theta-band specific effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "62009774-7fde-44f3-b7f7-27eb1934042b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C79",
+      "claim": "It's possible that theta band coherence best reflects the plastic connections between M1 and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "It's also possible that theta band coherence best reflects the plastic connections between these areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative interpretation of the theta-band specific effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "1c8474bd-f003-4e93-be0b-60eba23b1d0a",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C80",
+      "claim": "Neuroplastic changes start almost immediately after the start of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend suggests that neuroplastic changes start almost immediately after the start of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the temporal dynamics of connectivity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "78928bc7-2087-4079-8c1d-af21a77e9747",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C81",
+      "claim": "Unlearning of the stimulation-induced changes was observed during passive recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed unlearning of the stimulation-induced changes during passive recording, though some of the stimulation-induced changes persisted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing decreased SERR during baseline recording blocks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "9a0c5285-8911-4df2-9c38-e2e2969c63c9",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C82",
+      "claim": "Some of the stimulation-induced changes persisted during passive recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed unlearning of the stimulation-induced changes during passive recording, though some of the stimulation-induced changes persisted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing that connectivity did not fully return to baseline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "d8f98013-fba3-4d3f-a835-350b9e8dc60b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C83",
+      "claim": "Previous studies have shown that longer conditioning sessions (3\u201348 hr) result in changes that are stable over timescales comparable to the length of conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that longer conditioning sessions (3\u201348 hr) result in changes that are stable over timescales comparable to the length of conditioning (Jackson et al., 2006; Lucas and Fetz, 2013; Seeman et al., 2017; Nishimura et al., 2013; Rebesco and Miller, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "75c7222b-5b7c-43ce-a5a2-5f9cc3f29de9",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C84",
+      "claim": "The ability to record artifact-free signals during stimulation allowed testing of the Hebbian model by comparing stimulus-evoked correlations with changes in network correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ability to record artifact-free signals during stimulation allowed us to perform this test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological advantage of the optogenetic approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "028accfe-0043-4e39-b0ce-6da3c62102fc",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C85",
+      "claim": "There is a predictive linear relationship between stimulus-evoked coherence and the changes in baseline coherence after conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We did find a predictive linear relationship between stimulus-evoked coherence and the changes in baseline coherence after conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key finding supported by regression analysis in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "b0bf1742-3077-46e3-9d33-facc2a093296",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C86",
+      "claim": "The Hebbian model held for both simple and complex spatiotemporal patterns of stimulation-evoked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the model held for both simple and complex spatiotemporal patterns of stimulation-evoked activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from both non-interference and interference stimulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "a90b8e8e-0e16-4f68-aaad-5ce1896ad7df",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C87",
+      "claim": "Previous work on sensory cortical plasticity has largely focused on how changes in the statistics of sensory input and/or motor output affect the cortical representation in sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "First, previous work has largely focused on how changes in the statistics of sensory input and/or motor output affect the cortical representation in sensory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the focus of prior research in sensory cortical plasticity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "d687fb09-f848-492f-9362-ff0c8f27b6c4",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C88",
+      "claim": "The current study directly manipulated cortical circuits, without a detailed knowledge of the somatotopic map.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we have directly manipulated cortical circuits, without a detailed knowledge of the somatotopic map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a key difference between the current study and prior sensory plasticity work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "0ba85047-b7d0-44d5-af27-16e0dab1a469",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C89",
+      "claim": "Earlier work on sensory plasticity studied plasticity on the time scale of days to months.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, earlier work studied plasticity on the time scale of days to months, while we are studying changes across minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a temporal difference between the current study and prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "047cf52b-eb56-449f-a855-f6a95064a862",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C90",
+      "claim": "The current study studied plasticity changes across minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, earlier work studied plasticity on the time scale of days to months, while we are studying changes across minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the timescale of plasticity studied in the current work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "b8b77f6a-4c1a-457f-83b2-ae97e4904a36",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C91",
+      "claim": "Both the current study and prior sensory plasticity work appear to support a key role for Hebbian learning in sensorimotor cortical plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these differences, both appear to support a key role for Hebbian learning in sensorimotor cortical plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation connecting the current findings to prior sensory plasticity literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "52bfd765-507c-4c19-bb6d-28bfa6447a67",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C92",
+      "claim": "Surface stimulation combined with high blue light absorption and scattering in tissue limits the depth of light penetration.",
+      "claim_type": "EXPLICIT",
+      "source": "First, surface stimulation combined with high blue light absorption and scattering in tissue limits the depth of light penetration (Yizhar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a limitation of the experimental approach, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "00aba64f-3c2b-4673-b75f-7bee4807b0e6",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C93",
+      "claim": "Surface \u00b5ECoG recordings reflect a summation of nearby neural activity, making comparisons to explicit synaptic learning rules difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, surface \u00b5ECoG recordings reflect a summation of nearby neural activity, making comparisons to explicit synaptic learning rules difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a limitation of the recording method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "046e9810-bf8b-4b6a-9f72-e837cd8c147d",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C94",
+      "claim": "The results offer a proof-of-concept that optogenetic stimulation can drive predictable changes in network-scale connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results offer a proof-of-concept that optogenetic stimulation can drive predictable changes in network-scale connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary interpretation of the study's main findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "c934e223-8e40-4f7a-a22d-9b3eba518eea",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C95",
+      "claim": "The success of optogenetics in NHP represents an important step forward for translational use.",
+      "claim_type": "EXPLICIT",
+      "source": "The success of optogenetics in NHP represents an important step forward for translational use (Doroudchi et al., 2011; Han, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations discussing translational potential of optogenetics.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "867c94f6-dc65-4b5d-96f1-3890c4766edc",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C96",
+      "claim": "Even where therapeutic approaches ultimately wind up using electrical stimulation, the advantages of optogenetics make it a powerful tool for better understanding the underlying mechanisms of plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even where therapeutic approaches ultimately wind up using electrical stimulation, the advantages of optogenetics make it a powerful tool for better understanding the underlying mechanisms of plasticity and, thus, for the development of therapeutic applications of neuromodulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the value of optogenetics for understanding plasticity mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "6e3f16c8-823d-457b-8770-f972cd4355d5",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C97",
+      "claim": "Two adult male rhesus monkeys were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Two adult male rhesus monkeys (monkey G: 8 years old, 17.5 Kg; monkey J: 7 years old, 16.5 Kg) were used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "98942aac-e302-4411-81a1-3e91bcfc74c9",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C98",
+      "claim": "All procedures were performed under the approval of the University of California, San Francisco Institutional Animal Care and Use Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were performed under the approval of the University of California, San Francisco Institutional Animal Care and Use Committee and were compliant with the Guide for the Care and Use of Laboratory Animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "092ff9eb-b418-4ade-a0cb-1a583fd78f4a",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C99",
+      "claim": "200 \u03bcL of virus was infused in four sites (two in M1 and two in S1) in monkey G.",
+      "claim_type": "EXPLICIT",
+      "source": "We infused 200 \u03bcL of virus in four sites (two in M1 and two in S1) in monkey G",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the viral infusion protocol for one monkey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "7b27a16e-635b-4076-b07a-76c9f3d1050a",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C100",
+      "claim": "250 \u03bcL of virus was infused in five sites (two in M1 and three in S1) in monkey J.",
+      "claim_type": "EXPLICIT",
+      "source": "and 250 \u03bcL in five sites (two in M1 and three in S1) of monkey J.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the viral infusion protocol for the other monkey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "e203765a-7533-4a34-a8b0-d58edd9a80db",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C101",
+      "claim": "Infusion rate started at 1 \u00b5l/min and was increased to 5 \u00b5l/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Infusion rate started at 1 \u00b5l/min and was increased to 5 \u00b5l/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the infusion protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "6ec3b59a-5fb5-455e-a9be-f129e3ee12ed",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C102",
+      "claim": "In both animals, reliable light evoked neural responses were observed from the large channel-expressing areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In both animals, we observed reliable light evoked neural responses from the large channel-expressing areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a key observation confirming successful optogenetic expression and function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "3ff3453e-7258-4173-9860-f417d2af9828",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C103",
+      "claim": "The monkeys were awake sitting in primate chairs for the duration of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The monkeys were awake sitting in primate chairs for the duration of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "ce9103e7-11ab-4dc2-aec6-aa80fd34e2b0",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C104",
+      "claim": "High gamma activity (60\u2013200 Hz) is known to be representative of neural activity of local cortical columns.",
+      "claim_type": "EXPLICIT",
+      "source": "and applied an acausal band-pass filter to capture high gamma activity (60\u2013200 Hz)), which is known to be representative of neural activity of local cortical columns (Suzuki and Larkum, 2017; Yazdan-Shahmorad et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work on high gamma activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "bdc63f06-51bc-40a6-824a-34f551571a9c",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C105",
+      "claim": "Sessions without a secondary response were excluded from further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sessions without a secondary response were excluded from further analysis (see Table 1 for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes an exclusion criterion for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "c21f9e01-1bc9-4ed6-87e6-2fcc8ba5135d",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C106",
+      "claim": "EYFP reporter expression was present in both S1 and M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunohistochemistry, we confirmed that EYFP reporter expression was present in both S1 and M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis described in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "250deb93-b735-4aaf-bec4-04182c078912",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C107",
+      "claim": "YFP-positive cells in S1 and M1 were morphologically identified as pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "YFP-positive cells in these areas were morphologically identified as pyramidal neurons, and were in layers II-III, V-VI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis described in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "fc81f7aa-54a3-4f5a-86ca-7a3a60eb7871",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C108",
+      "claim": "YFP-positive cells were in layers II-III, V-VI.",
+      "claim_type": "EXPLICIT",
+      "source": "YFP-positive cells in these areas were morphologically identified as pyramidal neurons, and were in layers II-III, V-VI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis described in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "4d3615cf-cd5d-482c-9bf3-58668a4fb4a0",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C109",
+      "claim": "No evidence for co-localization between EGFP and any of the inter-neuronal markers was found.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence for co-localization between EGFP and any of the inter-neuronal markers therefore excluding the possibility for significant opsin presence in cells other than pyramidal neurons, and confirmed that optical stimulation was selectively activating excitatory pyramidal neurons in M1 and S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis using interneuron markers described in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "e46ab674-642b-497d-a017-3d57f8e8bcac",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "claim_id": "C110",
+      "claim": "Optical stimulation was selectively activating excitatory pyramidal neurons in M1 and S1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence for co-localization between EGFP and any of the inter-neuronal markers therefore excluding the possibility for significant opsin presence in cells other than pyramidal neurons, and confirmed that optical stimulation was selectively activating excitatory pyramidal neurons in M1 and S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis described in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9f376f3-143e-4356-a838-73b9c33d4c3c",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A large-scale optogenetic interface was developed and validated in two rhesus macaques, enabling simultaneous optogenetic stimulation of excitatory pyramidal neurons and \u03bcECoG recording across M1 and S1 cortex. Histological analysis confirmed selective expression in excitatory neurons across cortical layers II-III and V-VI, with no co-localization with interneuron markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10, C97-C103, and C106-C110 collectively establish the experimental system. The optogenetic interface is well-characterized through histology (C106-C110), viral infusion protocols are documented (C99-C101), and functional validation is confirmed (C102). The methodological details are sufficient and the histological evidence strongly supports selective targeting of excitatory neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "26003842-3bb0-4ab6-8766-cef8c9e67b99",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two measures of functional connectivity\u2014stimulus-evoked response ratio (SERR) and baseline coherence\u2014were established and shown to be strongly correlated at baseline. Optogenetic stimulation evoked bimodal response patterns with 3-6 ms separation, spatially segregating primary and secondary responses across M1 and S1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 and C2 demonstrate robust baseline correlation between SERR and coherence (p=3.73e-06, 69% of experiments significant). The bimodal response distribution (C13) and spatial segregation (C14) are supported by data in Figure 2. The statistical evidence is strong, though the interpretation that this reflects 'network dynamics across the frequency spectrum' (C18) is somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "8a7da138-05ac-46c9-a59f-f89d7b367f41",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation (50 min, 5-7 Hz) in either S1 or M1 significantly strengthened inter-area functional connectivity as measured by SERR. The effect was symmetric between areas, observed in 14/18 experiments, and significantly larger than control sessions without stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20-C24 provide converging evidence for stimulation-induced increases in SERR. Statistical support is strong (p=3.88e-11 for example session, p=0.0036 vs. controls). The symmetry between S1 and M1 stimulation (C22) and control comparisons (C23-C24) strengthen the conclusion. Sample sizes are adequate (14/18 experiments showing effect).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "5138a4bd-9d8a-4b56-9582-26ad15a76a6b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic conditioning increased theta-band (4-8 Hz) coherence between M1 and S1 in the majority of experiments (13/20), with the effect localized specifically to the theta band. Changes in theta-band power were not significant, supporting that coherence changes reflect functional connectivity rather than power changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 demonstrate theta-band specific effects with appropriate statistical corrections (Bonferroni, p=0.017). The control for power changes (C28) is important and strengthens the interpretation. However, the authors acknowledge difficulty interpreting this result since stimulation frequency (5-7 Hz) falls within theta band (C77), which introduces potential confounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "cfff9ddd-b909-435a-b6d4-ad22cc115092",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "After conditioning, the correlation between SERR and coherence significantly decreased (p=6.3e-10), and changes in the two measures were uncorrelated (p=0.85). This effect was specific to stimulation sessions and not observed in controls, suggesting differential effects of stimulation on the two connectivity measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 show statistically significant decorrelation after stimulation with appropriate controls. The interpretation (C31) that stimulation affects measures differently is reasonable given the data. However, C66-C67 note this may be frequency-dependent and transient, introducing some uncertainty about the mechanism and generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "c1f89f8a-2546-451f-8049-0092054e40a3",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Connectivity changes began within the first 10-minute conditioning block and increased progressively across the session. SERR and coherence changes were temporally correlated (r=0.26). Significant SERR increases were detected at ~4.5 min in 4/5 blocks. Partial unlearning occurred during passive recording periods, though some changes persisted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 and C80-C82 establish rapid onset and temporal dynamics of plasticity. The detection of changes within 4.5 min (C35) is well-supported. The observation of partial unlearning (C36, C81) with some persistence (C82) is important for understanding plasticity stability. The temporal correlation between measures (C34) is modest but significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "499fa547-fb1d-4c02-a473-287601848599",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Stimulation produced heterogeneous connectivity changes across the network that were predicted by stimulus-evoked coherence patterns. Linear regression showed stimulus-evoked coherence significantly predicted changes in baseline coherence (p=2.41e-19, 101/105 blocks significant), consistent with Hebbian plasticity models where correlated activity strengthens connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C37-C43 provide strong evidence for Hebbian-like plasticity at network scale. The regression analysis is robust (96% of blocks significant) and the methodological approach to avoid spurious correlations by splitting baseline data is appropriate. The consistency across experiments and monkeys strengthens the conclusion. This is a key finding extending Hebbian principles to large-scale networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "4828da1e-57a1-4997-8c55-c3162d3d22d7",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "With interference stimulation patterns (10-30 ms latency between lasers), mean inter-area connectivity did not consistently increase, but stimulus-evoked coherence continued to predict baseline coherence changes (p=1.37e-28, 160/170 blocks significant). Regression parameters were similar to simple stimulation and significantly larger than controls, supporting Hebbian plasticity across diverse stimulation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 and C86 demonstrate robustness of the Hebbian relationship across stimulation patterns. The lack of mean connectivity increase with interference (C44) contrasts with simple stimulation, but the preserved predictive relationship (C45-C47) supports the Hebbian model. Statistical evidence is very strong (94% of blocks significant). This generalization strengthens the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SERR and coherence reflect different but related aspects of connectivity: SERR more directly measures projections from stimulation sites (influenced by synaptic, antidromic, and network effects), while coherence captures broader network dynamics. Their baseline correlation is expected in networks with Hebbian stability mechanisms where connectivity drives correlated activity and vice versa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 provide a theoretical framework for interpreting the two measures. The distinction between measures is reasonable given the methodologies. The Hebbian stability argument (C62, C65) is supported by citations to theoretical work. However, some claims are inferential (C59-C60, C63-C64) and the interpretation of what each measure captures could benefit from more direct validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single-site optogenetic stimulation strengthens inter-area connectivity, consistent with STDP rules given the 3-6 ms delay between primary and secondary responses. This is the first study explaining large-scale network changes across cortical areas using Hebbian plasticity principles, extending prior work on local circuits and single-area plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 position the findings in context of STDP and prior work. The STDP interpretation (C72-C73) is reasonable given response timing, though direct evidence for STDP mechanisms is not provided. The novelty claim (C76) appears justified as prior work focused on local circuits or single areas. The connection to prior literature (C71, C74-C75) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "877e6cbf-aa21-4973-952f-6c882652b609",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The theta-band specificity of coherence changes is difficult to interpret because the conditioning frequency (5-7 Hz) falls within the theta band. Possible explanations include selective Hebbian enhancement at conditioning frequency or that theta coherence best reflects plastic connections between M1 and S1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C79 acknowledge an interpretive challenge. C77 correctly identifies the confound between stimulation and measurement frequencies. C78-C79 offer speculative explanations without additional data to distinguish between them. The authors appropriately flag this as uncertain, but it remains a limitation for interpreting the theta-band results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "aa0e3c29-f315-4c92-bfbd-56006c52564b",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The optogenetic approach enabled artifact-free recording during stimulation, allowing direct testing of Hebbian models by comparing stimulus-evoked correlations with network changes. A predictive linear relationship was found between stimulus-evoked coherence and baseline coherence changes. Prior work suggests longer conditioning (3-48 hr) produces more stable changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 highlight methodological advantages and contextualize findings. The artifact-free recording (C84) is a key advantage over electrical stimulation. The linear relationship (C85) is well-supported by data in Figures 6-7. The citation to prior work on stability (C83) appropriately contextualizes the 50-min conditioning duration used here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "07518000-4724-40c5-98ee-a3c4aeca0369",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study differs from prior sensory plasticity work by directly manipulating cortical circuits without detailed somatotopic mapping and examining changes over minutes rather than days-to-months. Despite these differences, both approaches support a key role for Hebbian learning in sensorimotor cortical plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 appropriately contextualize the work relative to sensory plasticity literature. The distinctions (C88-C90) are clearly stated. The synthesis (C91) is reasonable but somewhat inferential, as the authors acknowledge that 'a deeper understanding of the relationship between these bodies of work would require a study of intermediate time-frames.' This is an appropriate discussion point.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "4098ea75-1373-492f-8016-82c52fa4cca4",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The experimental approach has limitations: surface stimulation with blue light limits penetration depth due to absorption and scattering, and surface \u03bcECoG recordings reflect summed activity, making direct comparisons to synaptic learning rules difficult.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 appropriately acknowledge technical limitations. C92 is supported by citation and represents a known constraint of optogenetics. C93 correctly identifies that \u03bcECoG measures population activity rather than single-cell or synaptic events. These are honest assessments that appropriately qualify the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "e8fa9097-8eb9-4165-959f-16749c0262c5",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The results provide proof-of-concept that optogenetic stimulation can drive predictable network-scale connectivity changes. Success in non-human primates represents progress toward translational applications, and optogenetics remains valuable for understanding plasticity mechanisms even if therapeutic applications ultimately use electrical stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 offer appropriate forward-looking perspectives. C94 is a reasonable summary of the main findings. C95-C96 discuss translational potential with appropriate caution, acknowledging that clinical applications may use electrical rather than optogenetic stimulation. These are measured interpretations of the work's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establish that neurological disorders arise from aberrant connectivity, the brain shows plasticity during learning and recovery, Hebbian models explain activity-dependent plasticity, M1-S1 connectivity has been demonstrated across modalities, and prior work has shown stimulation-induced plasticity. High gamma activity represents local cortical column activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9, C11-C12, C50-C55, C68-C69, and C104 provide background context supported by appropriate citations. These establish the scientific foundation and prior knowledge base for the study. The citations appear appropriate and the claims accurately represent the cited work based on the context provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "21f9265c-13fc-4c47-a2b9-5b67d33b9f81",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The decreased correlation between SERR and coherence after conditioning may be limited to high frequencies and may reflect transient network instability due to stimulation-induced perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 are explicitly speculative ('seems to be,' 'may reflect'). While the frequency-dependence observation has some data support, the interpretation as 'transient instability' is not directly tested. This represents a reasonable hypothesis but lacks sufficient evidence for strong support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    },
+    {
+      "id": "b3e915bd-7a49-4c95-abf6-c04e60933ee8",
+      "content_id": "7105b32b-9363-4353-a748-fb1b377646a7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Sessions without secondary responses were excluded from analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 describes an exclusion criterion that is methodologically appropriate\u2014sessions without inter-area responses cannot assess inter-area connectivity. Table 1 documents which sessions were analyzed. This is a reasonable quality control measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:44:43.872099Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c0fccdb6-9add-4f79-99b9-4cdb57944120",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "24ac7d70-e8ff-4501-b218-f99c1f4f436a",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "6e3f16c8-823d-457b-8770-f972cd4355d5",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "98942aac-e302-4411-81a1-3e91bcfc74c9",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "092ff9eb-b418-4ade-a0cb-1a583fd78f4a",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "7b27a16e-635b-4076-b07a-76c9f3d1050a",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "e203765a-7533-4a34-a8b0-d58edd9a80db",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "6ec3b59a-5fb5-455e-a9be-f129e3ee12ed",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "3ff3453e-7258-4173-9860-f417d2af9828",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "c21f9e01-1bc9-4ed6-87e6-2fcc8ba5135d",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "250deb93-b735-4aaf-bec4-04182c078912",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "fc81f7aa-54a3-4f5a-86ca-7a3a60eb7871",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "4d3615cf-cd5d-482c-9bf3-58668a4fb4a0",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "e46ab674-642b-497d-a017-3d57f8e8bcac",
+      "result_id": "a9f376f3-143e-4356-a838-73b9c33d4c3c"
+    },
+    {
+      "claim_id": "55884f46-896c-4251-ba27-b50dd1d29fd4",
+      "result_id": "26003842-3bb0-4ab6-8766-cef8c9e67b99"
+    },
+    {
+      "claim_id": "e2dae490-15f8-4668-b5d3-7d3f1e52ea97",
+      "result_id": "26003842-3bb0-4ab6-8766-cef8c9e67b99"
+    },
+    {
+      "claim_id": "cbe00fec-03a0-4eea-b784-7049969ad56e",
+      "result_id": "26003842-3bb0-4ab6-8766-cef8c9e67b99"
+    },
+    {
+      "claim_id": "7a9032f0-fd71-4aad-9964-f16c75f5d11f",
+      "result_id": "26003842-3bb0-4ab6-8766-cef8c9e67b99"
+    },
+    {
+      "claim_id": "9c780324-e711-4393-a2be-39f1368e1a5c",
+      "result_id": "26003842-3bb0-4ab6-8766-cef8c9e67b99"
+    },
+    {
+      "claim_id": "f768ca1d-9948-4a9d-809c-9a4467e47dbe",
+      "result_id": "26003842-3bb0-4ab6-8766-cef8c9e67b99"
+    },
+    {
+      "claim_id": "41aa48a7-1abb-421d-8919-0e230f005859",
+      "result_id": "26003842-3bb0-4ab6-8766-cef8c9e67b99"
+    },
+    {
+      "claim_id": "33c9f836-492a-498a-8a63-8c40f37dfadd",
+      "result_id": "8a7da138-05ac-46c9-a59f-f89d7b367f41"
+    },
+    {
+      "claim_id": "d9a95fcd-0c93-4cc5-a7db-f12d1902d49e",
+      "result_id": "8a7da138-05ac-46c9-a59f-f89d7b367f41"
+    },
+    {
+      "claim_id": "51109c71-cd0c-474f-bfc5-ceb42d2ee0f2",
+      "result_id": "8a7da138-05ac-46c9-a59f-f89d7b367f41"
+    },
+    {
+      "claim_id": "40118499-3d10-46aa-8a03-5cde71e1b0de",
+      "result_id": "8a7da138-05ac-46c9-a59f-f89d7b367f41"
+    },
+    {
+      "claim_id": "5aee765d-920f-4387-889a-474ead537bca",
+      "result_id": "8a7da138-05ac-46c9-a59f-f89d7b367f41"
+    },
+    {
+      "claim_id": "2bb51084-e679-4370-90ec-b7bcf6b052e6",
+      "result_id": "8a7da138-05ac-46c9-a59f-f89d7b367f41"
+    },
+    {
+      "claim_id": "8ad3902c-12ae-4ffc-ac5b-ad02a9df5beb",
+      "result_id": "8a7da138-05ac-46c9-a59f-f89d7b367f41"
+    },
+    {
+      "claim_id": "4f5a891f-da90-4303-a1fb-e18ddcb8c150",
+      "result_id": "5138a4bd-9d8a-4b56-9582-26ad15a76a6b"
+    },
+    {
+      "claim_id": "106ca6bb-98db-4fab-8695-a91b9920ce79",
+      "result_id": "5138a4bd-9d8a-4b56-9582-26ad15a76a6b"
+    },
+    {
+      "claim_id": "997c93ac-6a0c-4b92-97bc-21e1ba5b25d2",
+      "result_id": "5138a4bd-9d8a-4b56-9582-26ad15a76a6b"
+    },
+    {
+      "claim_id": "f45f9b97-2b57-4323-8b49-c05d98a0a4da",
+      "result_id": "5138a4bd-9d8a-4b56-9582-26ad15a76a6b"
+    },
+    {
+      "claim_id": "6bd9c8b0-0a79-4fdf-9eab-406ce51898ee",
+      "result_id": "cfff9ddd-b909-435a-b6d4-ad22cc115092"
+    },
+    {
+      "claim_id": "fef7a3e1-4ac6-49cd-bdf5-b2e453284669",
+      "result_id": "cfff9ddd-b909-435a-b6d4-ad22cc115092"
+    },
+    {
+      "claim_id": "af52c389-0d0e-4937-8932-1bda26024f3c",
+      "result_id": "cfff9ddd-b909-435a-b6d4-ad22cc115092"
+    },
+    {
+      "claim_id": "a13636a6-08be-4d96-ad0c-a459c5a6b877",
+      "result_id": "cfff9ddd-b909-435a-b6d4-ad22cc115092"
+    },
+    {
+      "claim_id": "95e23499-fc4d-4c41-9317-c3aec7b88a61",
+      "result_id": "c1f89f8a-2546-451f-8049-0092054e40a3"
+    },
+    {
+      "claim_id": "bd2110a2-e8e7-418c-bb97-8874ba8af49d",
+      "result_id": "c1f89f8a-2546-451f-8049-0092054e40a3"
+    },
+    {
+      "claim_id": "3c615ea4-d68b-43ca-a7f6-7cd6913d1a54",
+      "result_id": "c1f89f8a-2546-451f-8049-0092054e40a3"
+    },
+    {
+      "claim_id": "30e317a3-bd0a-4a20-b5df-8111b500ab6b",
+      "result_id": "c1f89f8a-2546-451f-8049-0092054e40a3"
+    },
+    {
+      "claim_id": "1c8474bd-f003-4e93-be0b-60eba23b1d0a",
+      "result_id": "c1f89f8a-2546-451f-8049-0092054e40a3"
+    },
+    {
+      "claim_id": "78928bc7-2087-4079-8c1d-af21a77e9747",
+      "result_id": "c1f89f8a-2546-451f-8049-0092054e40a3"
+    },
+    {
+      "claim_id": "9a0c5285-8911-4df2-9c38-e2e2969c63c9",
+      "result_id": "c1f89f8a-2546-451f-8049-0092054e40a3"
+    },
+    {
+      "claim_id": "7665c9a5-e73d-44c9-a290-07b57b1ef1f2",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "b41f0467-25a5-4b9e-8a01-b417523980c1",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "e3c21f1f-4f79-4d27-9bea-a0cfa499707a",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "f639e5dd-7ea1-4da5-9974-78ed2d77d29b",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "98b14cb3-653f-4da7-976a-14182c678578",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "7f10e666-2506-4f53-b2d1-00423d79add4",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "6b9a6657-a1fd-45df-a2cb-14007ba6c56e",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "675e5b57-b541-4260-9170-f3ce144c9739",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "e3bf3f3a-e7b8-472b-9907-4a496f14a61f",
+      "result_id": "499fa547-fb1d-4c02-a473-287601848599"
+    },
+    {
+      "claim_id": "16b6bb78-a1a7-4ac0-835d-67fe9f934bab",
+      "result_id": "4828da1e-57a1-4997-8c55-c3162d3d22d7"
+    },
+    {
+      "claim_id": "b4dc22ea-ec77-413e-afa3-0864b3778c3b",
+      "result_id": "4828da1e-57a1-4997-8c55-c3162d3d22d7"
+    },
+    {
+      "claim_id": "2d4f6ef3-7342-4380-9bee-923361b90650",
+      "result_id": "4828da1e-57a1-4997-8c55-c3162d3d22d7"
+    },
+    {
+      "claim_id": "0947bb89-1a2f-4787-af47-c112e44b5982",
+      "result_id": "4828da1e-57a1-4997-8c55-c3162d3d22d7"
+    },
+    {
+      "claim_id": "7f214be4-d1da-4178-a704-212749cc27a3",
+      "result_id": "4828da1e-57a1-4997-8c55-c3162d3d22d7"
+    },
+    {
+      "claim_id": "e69b361f-609f-40d9-9ddb-ce6023152a91",
+      "result_id": "4828da1e-57a1-4997-8c55-c3162d3d22d7"
+    },
+    {
+      "claim_id": "b0bf1742-3077-46e3-9d33-facc2a093296",
+      "result_id": "4828da1e-57a1-4997-8c55-c3162d3d22d7"
+    },
+    {
+      "claim_id": "4bd40091-5afe-490e-a2ca-193392118b74",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "528ed1a1-b10a-4198-af9c-906c962e7b9b",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "269549ec-e050-4b0f-b73f-f9e67689e9a5",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "0658110d-421c-424a-9875-9f90cc3c36b6",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "3e730518-6302-4a0f-a751-11440f750567",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "42699fa7-749f-474f-84e7-320f5dc4d8f6",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "c844f250-2fcc-44b6-820e-7e822c30caf5",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "dd8bbccb-62ad-4f6e-923c-0737727a0b85",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "062ee0d0-a1d1-4d18-a1f7-00cadfb5661b",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "fe16a296-5ac1-48e3-9f2d-4805e2603d18",
+      "result_id": "daf3c0b5-2dd9-4fb1-9394-bec52372cf82"
+    },
+    {
+      "claim_id": "8eb335f3-3bff-48c5-a95e-cf7d9527372b",
+      "result_id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3"
+    },
+    {
+      "claim_id": "afae7668-efa0-455e-a8fa-c2ee2e1a2e12",
+      "result_id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3"
+    },
+    {
+      "claim_id": "deedf6d7-4ec2-4c07-b593-889ee186afdf",
+      "result_id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3"
+    },
+    {
+      "claim_id": "663fe510-fa6b-426d-8ebf-b55e35c20c16",
+      "result_id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3"
+    },
+    {
+      "claim_id": "782a2177-1347-4765-91c1-7462df7abfde",
+      "result_id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3"
+    },
+    {
+      "claim_id": "0b54506e-9e7a-4d4f-92d0-6384d0239dba",
+      "result_id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3"
+    },
+    {
+      "claim_id": "456df32b-2282-49a7-ac32-804040956837",
+      "result_id": "0e2f82d2-673b-48a2-837a-5dd4a809b9a3"
+    },
+    {
+      "claim_id": "5763f814-1d96-4370-91c5-06ef701e855f",
+      "result_id": "877e6cbf-aa21-4973-952f-6c882652b609"
+    },
+    {
+      "claim_id": "d1d8f1b1-b051-44ff-9080-7c5ab6368583",
+      "result_id": "877e6cbf-aa21-4973-952f-6c882652b609"
+    },
+    {
+      "claim_id": "62009774-7fde-44f3-b7f7-27eb1934042b",
+      "result_id": "877e6cbf-aa21-4973-952f-6c882652b609"
+    },
+    {
+      "claim_id": "d8f98013-fba3-4d3f-a835-350b9e8dc60b",
+      "result_id": "aa0e3c29-f315-4c92-bfbd-56006c52564b"
+    },
+    {
+      "claim_id": "75c7222b-5b7c-43ce-a5a2-5f9cc3f29de9",
+      "result_id": "aa0e3c29-f315-4c92-bfbd-56006c52564b"
+    },
+    {
+      "claim_id": "028accfe-0043-4e39-b0ce-6da3c62102fc",
+      "result_id": "aa0e3c29-f315-4c92-bfbd-56006c52564b"
+    },
+    {
+      "claim_id": "a90b8e8e-0e16-4f68-aaad-5ce1896ad7df",
+      "result_id": "07518000-4724-40c5-98ee-a3c4aeca0369"
+    },
+    {
+      "claim_id": "d687fb09-f848-492f-9362-ff0c8f27b6c4",
+      "result_id": "07518000-4724-40c5-98ee-a3c4aeca0369"
+    },
+    {
+      "claim_id": "0ba85047-b7d0-44d5-af27-16e0dab1a469",
+      "result_id": "07518000-4724-40c5-98ee-a3c4aeca0369"
+    },
+    {
+      "claim_id": "047cf52b-eb56-449f-a855-f6a95064a862",
+      "result_id": "07518000-4724-40c5-98ee-a3c4aeca0369"
+    },
+    {
+      "claim_id": "b8b77f6a-4c1a-457f-83b2-ae97e4904a36",
+      "result_id": "07518000-4724-40c5-98ee-a3c4aeca0369"
+    },
+    {
+      "claim_id": "52bfd765-507c-4c19-bb6d-28bfa6447a67",
+      "result_id": "4098ea75-1373-492f-8016-82c52fa4cca4"
+    },
+    {
+      "claim_id": "00aba64f-3c2b-4673-b75f-7bee4807b0e6",
+      "result_id": "4098ea75-1373-492f-8016-82c52fa4cca4"
+    },
+    {
+      "claim_id": "046e9810-bf8b-4b6a-9f72-e837cd8c147d",
+      "result_id": "e8fa9097-8eb9-4165-959f-16749c0262c5"
+    },
+    {
+      "claim_id": "c934e223-8e40-4f7a-a22d-9b3eba518eea",
+      "result_id": "e8fa9097-8eb9-4165-959f-16749c0262c5"
+    },
+    {
+      "claim_id": "867c94f6-dc65-4b5d-96f1-3890c4766edc",
+      "result_id": "e8fa9097-8eb9-4165-959f-16749c0262c5"
+    },
+    {
+      "claim_id": "36b55077-69ef-47d2-8503-8d740b5c3939",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "d517cc43-ee72-42ab-8bcb-2c9ffb0c9742",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "ec5a12fb-b315-47e4-94ba-a4e9932281fb",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "8a52488d-8730-42dc-8f4c-834fd87a6fd4",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "91953e0d-07ab-4d78-8ceb-99643353c0dd",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "3a7929d6-bf89-40bf-b250-d6b8e9127023",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "d831d079-da43-43da-8d87-4572f367ba99",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "f916708a-e751-48f6-92b1-a104a08159b3",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "650cb0f8-c2af-451d-a2eb-29d0f266d0a1",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "833d3693-bf64-45c4-91ec-261411d24327",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "5bc6183b-b954-45c5-a021-ea6164f2711d",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "7bfafa7a-a120-4d0a-895b-a9bc897387a0",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "2ea3f63f-4456-49e9-985c-e4df4dcf0474",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "55e224f0-58b4-404b-8ea8-f9e755bc036c",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "ce9103e7-11ab-4dc2-aec6-aa80fd34e2b0",
+      "result_id": "92a1ed9b-5c69-49aa-ac1a-02f81e30f1f7"
+    },
+    {
+      "claim_id": "00fdc9a5-c2ba-436e-be3a-9e1622a5f702",
+      "result_id": "21f9265c-13fc-4c47-a2b9-5b67d33b9f81"
+    },
+    {
+      "claim_id": "5b9e245f-7197-40ef-bf56-3d2d2e28d08e",
+      "result_id": "21f9265c-13fc-4c47-a2b9-5b67d33b9f81"
+    },
+    {
+      "claim_id": "bdc63f06-51bc-40a6-824a-34f551571a9c",
+      "result_id": "b3e915bd-7a49-4c95-abf6-c04e60933ee8"
+    }
+  ],
+  "comparisons": []
+}

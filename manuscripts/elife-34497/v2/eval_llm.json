@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors developed a k-nearest neighbors (kNN) classifier that automatically detects grooming behavior in Drosophila with >90% accuracy across multiple genotypes. The algorithm uses three features (periphery movement, core movement, and centroid displacement) extracted from video frames, trained on 25,000 manually labeled frames, and validated on independent test sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide comprehensive methodological details and validation results. The accuracy (92.1%) and sensitivity (95.5%) metrics are supported by independent test data (C60-C62), and robustness across genotypes is demonstrated with error rates <10% (C63-C65). The feature extraction and classification approach is well-documented (C45-C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C124",
+      "C125"
+    ],
+    "result": "Flies spend approximately 13% of their waking time grooming under standard laboratory conditions. This represents ~6% of total daily time for iso31+ flies, with strain variation observed (Canton-S flies groom ~19% of awake time). Grooming occurs even during periods of reduced locomotor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative behavioral measurements are directly supported by data in Figure 4B (C69) and supplementary figures (C72). The calculation of 13% awake time is mathematically consistent with the reported daily percentages (C70). Strain variation is appropriately documented (C71-C72), and the observation during low locomotor activity adds biological context (C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C75",
+      "C80",
+      "C81",
+      "C82",
+      "C107",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C173"
+    ],
+    "result": "The timing of grooming behavior is controlled by the circadian clock involving period, cycle, and clock genes. Wild-type flies show robust 24-hour rhythms in constant darkness (100% of flies, p=0.01), with period mutants showing appropriately shifted rhythms (perS: ~19hr, perL: ~29hr) and per0 flies showing arrhythmicity. Mutations in cyc01 and clkJrk also abolish grooming rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The circadian control is strongly supported by multiple lines of evidence: persistence of rhythms in constant darkness (C80, C143-C145), appropriate period shifts in perS and perL mutants matching published values (C81, C153), loss of rhythms in per0, cyc01, and clkJrk mutants (C154-C155), and statistical significance across all individuals tested (C144). The genetic dissection using well-characterized circadian mutants provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C108",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C163",
+      "C174",
+      "C175"
+    ],
+    "result": "The duration/amount of grooming is regulated by cycle and clock genes through a mechanism that appears independent of period. While per0 mutation does not affect grooming duration, cyc01 and clkJrk mutations significantly increase grooming time, suggesting clock-independent but cyc/clk-dependent pathways control grooming amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dissociation between timing and duration control is well-supported by contrasting effects of different circadian mutants. The per0 data (C83, C157) shows no change in grooming amount despite loss of rhythmicity, while cyc01 and clkJrk show increased grooming (C85, C158) with different compensatory changes in other behaviors (C159-C160). This differential genetic requirement strongly supports the dual control model (C87, C163).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C132",
+      "C137",
+      "C138",
+      "C139",
+      "C142",
+      "C147"
+    ],
+    "result": "Grooming is driven by internal programs rather than external stimuli. Kinetic analysis shows grooming patterns are distinct from locomotion and feeding, genetic manipulations produce contrasting changes in these behaviors, and computational shuffling experiments demonstrate that grooming rhythmicity is independent of locomotion and wakefulness rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim for internal control is supported by multiple independent lines of evidence: distinct kinetics from locomotion/feeding (C76), contrasting genetic effects (C77), and computational simulations showing independence of rhythms (C137-C138, C147). The shuffling experiments (C137-C138) provide particularly strong evidence that grooming rhythms don't simply follow from other rhythmic behaviors. However, the claim of complete independence from external stimuli is somewhat overstated as the experiments don't rule out all possible external triggers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C161",
+      "C162"
+    ],
+    "result": "The relationship between grooming and other behaviors (sleep, locomotion) is complex and genotype-dependent. Sleep-deficient mutants show divergent grooming phenotypes (fumin: increased grooming; sss: decreased grooming), and cyc01/clkJrk mutations affect grooming through different compensatory mechanisms, suggesting multiple pathways can reset grooming levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The divergent phenotypes in sleep mutants (C167-C168) and differential effects of cyc01 vs clkJrk (C159-C160) are well-documented in Figure 6. The conclusion about complex regulation (C170) is appropriately cautious and supported by the data. The comparison to published sleep studies (C162) provides additional context, though the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C26",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C121",
+      "C123",
+      "C187"
+    ],
+    "result": "The experimental apparatus uses commercially available DAM tubes in a controlled chamber with infrared imaging, allowing simultaneous monitoring of ~20 flies over multiple days. The design is compatible with standard circadian/sleep equipment and allows flies to move freely over ~10 body lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The apparatus design is thoroughly documented with specific dimensions and components (C32-C34, C187). The claims about accessibility and compatibility with existing equipment (C35, C114-C116) are reasonable given the use of standard DAM tubes. The throughput capability (C118) and mobility allowance (C121) are directly stated and consistent with the described setup.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C66",
+      "C68"
+    ],
+    "result": "The algorithm classifies behavior into three mutually exclusive categories at the event level: grooming (legs rubbing/sweeping body), locomotion (whole body translation), and rest (absence of grooming/locomotion). Additional classifications for feeding (>3s proximity to food) and sleep (\u22655min rest) were derived from these primary categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral definitions are clearly stated and operationally defined (C36-C38, C66). The three-tier classification approach (C39-C40) is justified for the study's goals. The mutual exclusivity at the event level (C68) is appropriate, though the manuscript correctly notes this doesn't hold for binned data. The feeding and sleep definitions follow established conventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C171",
+      "C172",
+      "C175"
+    ],
+    "result": "The data provide evidence for a dual control model of programmed grooming in Drosophila, with one regulatory system controlling temporal patterns and another controlling duration. The apparent independence of these mechanisms is supported by differential genetic requirements (per for timing; cyc/clk for both timing and duration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the genetic dissection experiments showing differential roles for circadian genes (C173-C175). The dual control model (C94, C172) is a reasonable interpretation of the data, though the manuscript appropriately notes that complete independence hasn't been definitively demonstrated (C175). The comparison to sleep regulation (C99) provides useful conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C90"
+    ],
+    "result": "The immune system may constitute an internal program driving grooming, as the immune-deficient imd mutant shows reduced grooming, though a Toll pathway mutant (PGRP-SAseml) shows no significant change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The imd mutant data (C91) suggests immune involvement, but the lack of effect in PGRP-SAseml (C92) complicates interpretation. With only two immune mutants tested and conflicting results, the evidence is insufficient to strongly support the hypothesis (C90). The manuscript appropriately notes that further studies are needed. This represents preliminary data requiring additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The dual control mechanism of grooming is reminiscent of the two-process (circadian and homeostatic) framework used in sleep regulation, though homeostatic control of grooming has not been demonstrated in this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to sleep regulation (C99) is appropriately presented as an analogy rather than demonstrated fact. The explicit acknowledgment that homeostatic control hasn't been shown (C100) demonstrates appropriate scientific caution. This represents a conceptual framework for future studies rather than a tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C113",
+      "C120",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The platform is accessible (publicly available code, easy assembly), can monitor multiple flies simultaneously for days, and processes 8-hour videos of 20 flies in ~7 hours on standard desktop computers. The method trades detailed grooming mode classification for the ability to analyze circadian-scale recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The practical capabilities are well-documented with specific computational requirements (C183) and processing times. The trade-offs between detail and throughput (C113) are honestly presented. The claims about accessibility (C101) and potential applications (C120, C181-C182) are reasonable given the described system, though the actual impact will depend on adoption by other labs.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2036 @@
+{
+  "submission": {
+    "id": "b6762290-1544-4dd9-aa35-f086e1132cb2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:24:34.563081Z",
+    "updated_at": "2025-12-02T01:24:34.563081Z"
+  },
+  "content": [
+    {
+      "id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "submission_id": "b6762290-1544-4dd9-aa35-f086e1132cb2",
+      "content_type": "manuscript",
+      "content_text": "# Stem cell heterogeneity drives the parasitic life cycle of Schistosoma mansoni\n\n## Authors\n\n- Bo Wang<sup>1</sup> ([ORCID: 0000-0001-8880-1432](https://orcid.org/0000-0001-8880-1432)) \u2020\n- Jayhun Lee<sup>3</sup>\n- Pengyang Li<sup>1</sup>\n- Amir Saberi<sup>3</sup>\n- Huiying Yang<sup>1</sup>\n- Chang Liu<sup>4</sup>\n- Minglei Zhao<sup>4</sup>\n- Phillip A Newmark<sup>3</sup> ([ORCID: 0000-0003-0793-022X](https://orcid.org/0000-0003-0793-022X)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering Stanford University Stanford United States\n2. Department of Developmental Biology Stanford University School of Medicine Stanford United States\n3. Department of Cell and Developmental Biology Howard Hughes Medical Institute, University of Illinois at Urbana-Champaign Urbana United States\n4. Department of Biochemistry and Molecular Biology University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSchistosomes are parasitic flatworms infecting hundreds of millions of people. These parasites alternate between asexual reproduction in molluscan hosts and sexual reproduction in mammalian hosts; short-lived, water-borne stages infect each host. Thriving in such disparate environments requires remarkable developmental plasticity, manifested by five body plans deployed throughout the parasite\u2019s life cycle. Stem cells in Schistosoma mansoni provide a potential source for such plasticity; however, the relationship between stem cells from different life-cycle stages remains unclear, as does the origin of the germline, required for sexual reproduction. Here, we show that subsets of larvally derived stem cells are likely sources of adult stem cells and the germline. We also identify a novel gene that serves as the earliest marker for the schistosome germline, which emerges inside the mammalian host and is ultimately responsible for disease pathology. This work reveals the stem cell heterogeneity driving the propagation of the schistosome life cycle.\n\n## Introduction\n\nFlatworms include more than 44,000 parasitic species that form one of the largest groups of metazoan endoparasites (Loker and Hofkin, 2015). Their life cycles typically involve asexually and sexually reproducing stages, each with its own distinct body plan and strategy to enhance transmission between multiple hosts (Clark, 1974; Pearce and MacDonald, 2002; Viney and Cable, 2011). Although the life cycles of these parasites were established more than a century ago, they have only recently been studied in cellular and molecular terms (Matthews, 2011). Since many parasitic flatworms are pathogenic, their life cycles are also the routes for disease transmission (Hoffmann et al., 2014). Therefore, a deeper understanding of these life cycles is significant from both basic science and medical perspectives, as blocking transmission is an effective approach to fighting parasitic diseases.\n\nFocusing on the cells that may drive such parasitic life cycles, we study Schistosoma, a parasitic flatworm infecting over 250 million people, which causes the major neglected tropical disease, schistosomiasis (Hoffmann et al., 2014). Schistosomes are transmitted through snail intermediate and human definitive hosts. Their life cycle begins with the parasite egg excreted from the mammalian host into water, releasing a free-swimming miracidium larva. The miracidium penetrates a snail host and transforms into a mother sporocyst that undergoes asexual clonal expansion to produce many daughter sporocysts that leave the mother and colonize other snail tissues. These daughters either self-renew to produce more daughters or enter embryogenesis to produce infective cercariae (Cheng and Bier, 1972; Jourdane and Theron, 1980; Whitfield and Evans, 1983; Taft et al., 2009). This cloning process is repeated, allowing massive numbers of cercariae to be produced from a single miracidium. Mature cercariae emerge from the snail into water, then burrow through the skin of a mammalian host to become schistosomula. This transition initiates the sexual portion of the life cycle. Schistosomula then migrate to species-specific niches in the host vasculature and develop into juvenile worms (Basch, 1991; Wilson, 2009). Juveniles remodel their tissues extensively to build a functional digestive system, and after they begin feeding on host blood, undergo massive growth and develop sexual reproductive organs de novo (Clegg, 1965). Male and female worms pair to produce fertilized eggs, which are excreted to continue the life cycle.\n\nA long-standing hypothesis proposes that a lineage of totipotent stem cells, called \u2018germinal cells\u2019, persists throughout the schistosome life cycle and drives reproduction (Cort et al., 1954; Clark, 1974; Whitfield and Evans, 1983). Histological and ultrastructural studies defined these cells in miracidia and sporocysts by their stem cell-like morphology and rapid proliferation (Schutte, 1974; Pan, 1980). Recently, we showed that these germinal cells indeed drive proliferation within developing sporocysts and share some molecular signatures with stem cells from diverse organisms (Wang et al., 2013). In contrast, the cellular source of the schistosome germline, which underlies sexual reproduction in the mammalian host, remains an open question. Furthermore, because somatic stem cells were only recently identified in adult schistosomes (Collins et al., 2013), the relationships between germinal cells, germ cells, and somatic stem cells are unclear.\n\nTo clarify these relationships, we transcriptionally profiled stem cells from Schistosoma mansoni asexual (sporocyst) and sexual (juvenile) stages at both population and single-cell levels. We identified four transcriptionally distinct populations and validated this heterogeneity by in situ hybridization. By characterizing the behavior of these stem cells at major developmental transitions, we found that larvally derived stem cells serve as the source for the parasite\u2019s adult stem cells. We also identified a novel gene that is activated during development inside the mammalian host and serves as the earliest marker for the schistosome germline. This work reveals the stem cell heterogeneity underlying the development and propagation of these important parasites.\n\n## Results\n\n### Single-cell RNAseq defines three major sporocyst stem cell classes\n\nEach miracidium carries 10\u201320 germinal cells (Pan, 1980; Cort et al., 1954; Wang et al., 2013), which expand massively and differentiate to produce many daughter sporocysts (Figure 1A, and Figure 1\u2014figure supplement 1). Our recent work has shown that germinal cells exhibit heterogeneity within this population (Wang et al., 2013), revealed by the distinct proliferation kinetics and expression of a schistosome homolog of nanos (Wang and Lehmann, 1991), a conserved regulator of germ cell development (Juliano et al., 2010; Wang et al., 2007) also expressed in the schistosome adult stem cells (Collins et al., 2013). To characterize this heterogeneity further, we isolated and transcriptionally profiled these stem cells from in vitro-transformed mother sporocysts (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the schistosome life cycle. Images depicting developmental stages shown in Figure 2 are labeled accordingly. (B) Dissociated cells were gated using forward scattering (FSC), side scattering (SSC), and DyeCycle Violet (DCV) fluorescence to isolate S or G2/M phase cells from mother sporocysts. Dead cells and debris (<30% of total events) were pre-excluded based on high TOTO-3 fluorescence. Right: Sorted G2/M phase cells from mother sporocysts visualized by DIC and fluorescence microscopy. (C) PCA of 35 single-cell transcriptomes of sporocyst stem cells. Summative variances are reported in percentages. Assignment of cell classes is based on hierarchical clustering. (D) Selected genes with heavy loadings are plotted in projection on the first 2 PCs. The projection on each axis represents the correlation coefficient of the respective gene with each principal component. (E) Box plots of expression levels of selected class-dependent genes. ago2-1 expression is also shown as a ubiquitous stem cell marker. Boxes indicate quartiles and medians, whiskers show maxima and minima, and dots represent outliers (above and below 1.5X interquartile range). *p<0.01 (t-test). p-values were estimated based on multiple models using either TPM or log2(TPM\u00a0+1) as expression values.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The schistosome-infected snail, 2 weeks post-infection, was removed from its shell and treated to render the tissues transparent and labeled with fluorescently tagged sWGA that binds strongly to the parasite. This tiled image is\u00a0~1.5 cm in width, 2 mm in thickness, and contains\u00a0~10 billion voxels. Top: a confocal section. Bottom:\u00a0~200 confocal sections are combined to produce a depth-colored projection. (B) Representative images of mother sporocyst (left), and daughter sporocyst containing cercarial embryos (right) inside the snail host. (C) Two-day EdU labeling to detect proliferating cells in mother sporocysts (dashed circles) in a snail 1 week post-infection. Note EdU+\u00a0schistosome cells possess large nucleoli stained by POPO-1. EdU+\u00a0snail cells (outside of the circles) have compact nuclei without visible nucleoli.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Confocal maximum intensity projections of FISH on in vitro-transformed mother sporocysts using probes to detect the indicated transcripts. Labeled germinal cells are mostly posterior to the degenerating brain from miracidia (dashed circles). Asterisks: tail of each sporocyst; arrowheads: co-expression. Insets: magnified boxed cells.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** A total of 6661 transcripts are detected in at least three single cells. The levels represent the cut-off in fold difference, disk sizes scale with the number of genes specific to the respective class, triangle sides scale with the number of genes differentially expressed between respective class pairs. The differentially expressed genes are defined by two sample t-test (p<0.05), using the more stringent estimate from the assumptions of either unequal or equal population variances. For consistency in quantifying p-values, genes specific to individual classes are defined as being enriched with respect to both the other two classes.\n\nPrincipal component analysis (PCA) of single-cell transcriptomes revealed three major cell classes (Figure 1C). We designated these classes based upon their respective markers: \u03ba-cells (kappa indicates klf+nanos-2+); \u03c6-cells (phi indicates fgfrA,B+); and \u03b4-cells (delta indicates double-positive for nanos-2 and fgfrA,B). The difference between \u03ba and \u03b4/\u03c6-cells extends along PC1, and contributes to\u00a0~30% of the total variance among cells, whereas the difference between \u03b4 and \u03c6-cells is secondary, delineated by PC2 and contributing\u00a0~10% of the total variance. For example, nanos-2 exhibits almost equal loadings on both PCs, negative on PC1, positive on PC2, consistent with its expression in both \u03ba and \u03b4-cells. Based on projections along the first two PCs (Treutlein et al., 2014), we identified additional genes that contribute to the distinctions between classes: a schistosome p53 homolog and a zinc finger protein (zfp-1) expressed abundantly in \u03b4-cells and at lower levels in \u03c6-cells; and a hes family transcription factor (hesl) expressed specifically in \u03c6-cells (Figure 1D and E, Supplementary file 1). We validated these transcriptomic findings by fluorescent in situ hybridization (FISH) on in vitro-cultured mother sporocysts (Figure 1\u2014figure supplement 2). Unfortunately, the \u03ba class-specific marker klf was expressed at very low levels (Figure 1E), beneath the detection limits of our current FISH protocol.\n\nIn addition to these class-defining genes, the divergence of the three cell classes is manifested by hundreds of other genes that exhibit various levels of statistically significant differences between classes (Figure 1\u2014figure supplement 3). However, these genes comprise only a small fraction of transcripts detected in these cells (N\u00a0=\u00a06,661), and most of them are not enriched in stem cells compared to differentiated cells. Notably, very few transcripts are specific to individual cell classes, with \u03c6-cells showing the fewest specific markers. These observations confirm that sporocyst stem cells, regardless of the subpopulation to which they belong, share a common transcriptomic profile.\n\n### Stem cell classes display distinct spatiotemporal patterns throughout asexual development\n\nExamining fgfrA and nanos-2 enabled us to distinguish all three cell classes in situ: \u03c6-cells express fgfrA, \u03ba-cells express nanos-2, and \u03b4-cells express both. Thus, we followed these cells throughout intramolluscan development by monitoring fgfrA and nanos-2 expression. After the first week of infection, asexually produced embryos\u2013 identified as compact, spherical cell clusters (Schutte, 1974) and from which daughter sporocysts will arise\u2013 begin to develop (Figure 2A). \u03c6-cells were distributed beneath the parasite\u2019s outer layer and excluded from daughter embryos. \u03b4-cells were found in large clusters within embryos. \u03ba-cells clustered with \u03b4-cells in embryos and were found in extraembryonic tissues as singlets or doublets, suggested to be the source of developing embryos in previous histological studies (Schutte, 1974).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig2-v1.jpg)\n\n**Figure 2.:** (A) FISH of nanos-2 and fgfrA reveals spatial distributions of cell classes in a mother sporocyst containing daughter embryos (dashed circles), 10 days post-infection (dpi). sWGA (grey) labels the parasite surface (tegument). Arrows: extraembryonic \u03ba-cells. Right: rendered image of that shown to the left. Spheres: cell centers; yellow arrowheads: \u03d5-cells beneath the surface. (B) Mature daughter sporocysts contained in a mother sporocyst 15 dpi. Dashes outline the body surfaces of daughters. In daughters, \u03ba-cells comprised 522 out of 592 counted stem cells in these daughters, while fewer \u03b4-cells (61/592) and \u03c6-cells (9/592) were observed. (C) Daughter sporocysts in snail ovotestis, 25 dpi. (D) Early cercarial embryo before the tail bud forms. \u03c6-cells were found concentrated both anteriorly and posteriorly, where the mouth and tail bud form; only two \u03ba-cells were detected posterior to the two penetration glands. (E) Later development during cercarial embryogenesis. \u03c6-cells were mostly located in the tails; the \u03ba-cell pair were posterior to the glands. (F) Mature cercarial body in daughter sporocysts 30 dpi (dorsal view). 1: anterior midline cell; 2L, 2R: anterior lateral cells; 3L, 3R: posterior lateral cells. Arrowheads: \u03ba-cells, asterisks: \u03d5-cells, arrows: \u03b4-cells. sWGA: penetration glands. Note that only the cercarial body is transmitted to the mammalian host, whereas tails are discarded outside of the host epidermis during penetration. (G) \u03ba-cell clusters, magnified from (F), contain multiple cells each (single confocal section). Arrows: individual nuclei in \u03ba-cell clusters. Scale bars: 20 \u00b5m. All images are maximum intensity projections from 30 \u00b5m tissue cryosections. Since animals are thicker than the sections, parasite surface and penetration glands were used to determine the orientation and position of the sections.\n\nTwo weeks post-infection, mother sporocysts contain many mature daughter sporocysts that are ready to leave the mother and migrate elsewhere in the snail. At this stage \u03ba-cells comprised the vast majority (>85%) of stem cells in these daughters (Figure 2B); fewer \u03b4-cells were observed and \u03c6-cells were mostly excluded. However, one week later, when post-migratory daughters colonized new regions of host tissue (Figure 2C), all three classes reappeared as intermingled populations, consistent with \u03ba-cells generating the other stem cell types.\n\nIntramolluscan development culminates with the production of infectious cercariae. In early cercarial embryos (dashed circle in Figure 2D\u20132E), \u03c6-cells were found concentrated both anteriorly and posteriorly, where the mouth and tail bud form, respectively. Additionally, two clusters of \u03ba-cells were observed posterior to the penetration glands (Figure 2D\u20132E), at the site of the germinal cell cluster, considered gonadal primordia based on histological and ultrastructural studies (Cheng and Bier, 1972; Dorsey et al., 2002). In the mature cercarial body (Figure 2F\u20132G), the \u03ba-cell pair posterior to the glands expands into two clusters that contain multiple cells each. In parallel, five \u03b4-cells were detected in a regular pattern around the penetration glands, with one at the midline and two pairs laterally (Figure 2E), whereas \u03c6-cells are absent at this stage. Since the cercarial body (but not the tail) penetrates the mammalian host, only \u03b4 and \u03ba-cells, but not \u03c6-cells, may be passed to the intramammalian (sexual) stage.\n\n### Larvally derived stem cells drive initial proliferation in schistosomula\n\nAfter emerging from the snail into water, cercariae burrow through mammalian host skin and their bodies transform into the next life-cycle stage, the schistosomula. At this stage, the parasites do not grow for several weeks, until they reach the hepatic portal vein. Thus, the extent of proliferation in the initial days after infection has been unclear (Clegg, 1965), with mitotic cells only detected 4 days post-infection (Clegg and Smithers, 1972). Furthermore, because the adult stem cells have only been identified recently (Collins et al., 2013), their developmental origin has yet to be investigated. The identification of \u03b4 and \u03ba-cells in cercariae provides a potential source of new multipotent cells upon entry into the mammalian host.\n\nWe mimicked this transition by exposing cercariae to ex vivo mouse tail-skin biopsies and collecting transformed schistosomula on the other side of the skin (Clegg and Smithers, 1972; Protasio et al., 2013). Following skin penetration, we assayed proliferation in schistosomula via EdU labeling (Figure 3A). Between 22\u00a0and\u00a036 hr post-transformation, we observed five EdU+\u00a0cells around the penetration glands, anterior to the ventral sucker (Figure 3B), and confirmed that they were \u03b4-cells (fgfrA+nanos-2+) (Figure 3C). During the next 12 hr, these cells completed mitosis, indicated by the appearance of five EdU+\u00a0doublets (Figure 3B). Thereafter, the number of EdU+\u00a0nuclei steadily increased (Figure 3D), but proliferation was restricted anteriorly to the ventral sucker, until one week later, when two clusters of\u00a0~2\u20133 EdU+\u00a0cells appeared in the \u2018germinal cell cluster\u2019 region posterior to the ventral sucker, where \u03ba-cells are found (Figure 3B, Days 9\u201310). EdU+ cells were not detected in irradiated worms (Figure 3E), consistent with previous reports that irradiation leads to developmental defects and reduced pathogenicity (Wilson, 2009). These results suggest that a small, fixed number of \u03ba and \u03b4-cells are transmitted to the mammalian host. Because these cells appear to be the only dividing cells in schistosomula, they are likely the source of the recently identified stem cells in adult schistosomes (Collins et al., 2013; 2016).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of in vitro transformation from cercariae to schistosomula and EdU labelling. (B) EdU+ cells are detected medially (1) and laterally (2L, 2R, 3L,3R) at the locations of \u03b4-cells in cercarial bodies (ventral view). These cells divide to generate doublets, indicated by arrows. The time of EdU pulse post-transformation is indicated. Images are maximum intensity projections of confocal stacks. (C) Confocal maximum intensity projection of FISH of nanos-2 and fgfrA on schistosomula at 2 days post-transformation confirms that only \u03b4-cells incorporated EdU. Right: magnified images of boxed cells. (D) Quantification of EdU incorporation after transformation; x axis: length of EdU treatment post-transformation. Means and standard deviations are specified. N: number of worms analyzed. (E) Irradiated cercariae exhibit no EdU+ cells after transformation, which confirms that EdU specifically labels proliferating cells.\n\n### Stem cells in juveniles reveal germline and somatic populations\n\nIntramammalian growth initiates after schistosomula migrate into the portal vein, around 2 weeks post-infection (Clegg, 1965; Basch, 1981). To characterize proliferation driving juvenile growth, we harvested\u00a0EdU-labeled parasites 3 weeks post-infection. Worms displayed a range of sizes based upon differences in arrival time, enabling a developmental time course to be reconstructed from a static time point. EdU labeling revealed a posterior growth zone (PGZ) that extended as the parasites grew (Figure 4A). In more mature juveniles, all cells in primordial testes and ovaries also incorporated EdU (Figure 4B). To compare proliferating cells from juveniles to sporocyst stem cells, we transcriptionally profiled isolated cells undergoing division (S and G2/M phase) from juveniles and sporocysts (Figure 4\u2014figure supplement 1). Five-hundred\u00a0and\u00a0seventy-three genes were commonly enriched in both populations, including previously identified schistosome stem cell markers (e.g. nanos-2, ago2-1, and fgfrA), and cell cycle-associated transcripts (h2a, cyclin B, and PCNA) (Wang et al., 2013; Collins et al., 2013). Taken together, proliferating cells from juveniles resemble the sporocyst stem cells both morphologically and transcriptionally (Figure 4\u2014figure supplement 1), suggesting that these cells represent juvenile stem cells, which support both somatic growth and germline development in the mammalian host.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013B) Distributions of EdU+ cells in three-week-old juveniles. Note the high density of EdU+ cells toward the posterior of the worms. (B) More mature males with partly developed lateral body extensions and females with a visible uterus display EdU+ cells in primordial gonads and the posterior growth zone (PGZ). (C) Hierarchical clustering of 85 juvenile stem cells distinguishes two major cell classes. Gene names in blue: cell class-dependent genes identified in the sporocyst stem cells; gene names in grey: top genes upregulated in juvenile stem cells compared to sporocyst stem cells. Expression levels were standardized gene-by-gene by mean-centering and dividing by the standard deviation of expressing cells. (D) Domain diagram of Eled, predicted by TMHMM 2.0 (Krogh et al., 2001). TM: transmembrane domain. S/T rich domain: extracellular domain enriched in serine/threonine.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Dissociated cells were gated using FSC, SSC, and DCV fluorescence to isolate S or G2/M phase cells from juveniles. Dead cells and debris (<30% of total events) were pre-excluded based on high TOTO-3 fluorescence. (B) Sorted G2/M phase cells from juveniles visualized by DIC and fluorescence microscopy. (C) Proliferating cells in juveniles are irradiation-sensitive. Calcein AM fluorescence measures cytoplasmic content. Percentages are normalized to total number of live cell events. (D) Single confocal sections to show similar nuclear morphology of EdU+ cells in soma (left) and primordial gonads (right) in juvenile worms. (E) Comparison of expression levels in log space for all genes encoded by the S. mansoni genome (n\u00a0=\u00a010,765) between juveniles and sporocysts. (F) Comparisons of expression levels in log space for all transcripts (n\u00a0=\u00a010,765) between sorted G2/M cells from juveniles vs. mother sporocysts. (G) Comparison of enrichment in stem cells in log space for all genes between juveniles and sporocysts. Previously characterized stem cell genes in Wang et al. (2013) are highlighted. All these genes are enriched in the sorted cell populations. (H) Comparisons of expression levels in log space for all transcripts between juvenile cells at S phase vs. G2/M phase. This result suggests that cell-cycle status is unlikely to contribute to the observed cell heterogeneity. Although our single-cell analyses rely exclusively on the G2/M phase cells, at the population level, G2/M and S phase cells are largely transcriptionally identical. This conclusion is surprising but consistent with the previous single-cell analyses of proliferating stem cells in schistosome\u2019s free-living cousin, the planarian (van Wolfswinkel et al., 2014).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Histogram showing variations in CT values corresponding to h2a levels from individual juvenile stem cells on StepOne Real-time PCR platform. 4 CT around the plate median were selected for multiplex qPCR on the Fluidigm Biomark platform, which showed similar variations in h2a level. (B) Positions of nested primer sets on ago2-1, mier, and hmt coding sequences, three genes that cover the full dynamic range in gene expression levels. Two sets of primers were measured simultaneously for each of the three genes to estimate technical noise. (C) Single-cell qPCR determined expression levels of ago2-1, mier, and hmt based on two amplicons show linear relations. The spread from linear relations quantifies the technical uncertainty in this method. Technical noise was determined as 2\u00a0~3 CT and inversely proportional to gene expression level.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) PCA of the single-cell qPCR results revealed that most assayed genes extended along PC1, which appears to scale with average expression levels among cells. The top class-specific markers in sporocyst stem cells, including nanos-2, fgfrA, p53, zfp-1, and hesl were opposed on PC2 by eled. Although eled is undetectable in sporocyst stem cells but is among the most abundant transcripts in juvenile stem cells, cellular heterogeneity was not dominated by differences between sporocyst and juvenile stem cells, since all other top genes in this category (i.e. genes upregulated in juvenile vs. sporocyst stem cells, orange) had small loadings on PC2. Blue: cell class-dependent genes identified in the sporocyst stem cells; arrowheads: ago2-1, mier, and hmt are represented by two independent primer sets. (B) Box plots of expression levels of selected class-dependent genes. Boxes indicate quartiles and medians, whiskers show maxima and minima, and dots represent outliers (above and below 1.5X interquartile range). For all genes, the difference is statistically significant (p<10\u22124, t-test). Note that the limit of detection of the single-cell qPCR experiments was determined as 22 CT; undetected genes or CT values greater than 22 were all adjusted to 22. Expression values in log space were calculated as 22-CT. The technical noise was determined as 2\u20133 CT. (C) Confocal sections of FISH to detect p53, zfp-1, and nanos-2. Dashed circles: testes lobes. p53 and zfp-1, are only expressed in \u03b4\u2019-cells and excluded from primordial gonads, whereas nanos-2 is expressed in both soma and a subset of germ cells.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) RNAseq read mapping confirms the annotation of eled (Smp_041540). Exons are shown as green boxes connected by introns (lines). Start and stop codon are also specified. Reads that bridge the two exons are shown by dotted lines. Total RNA was extracted from juvenile worms. (B) Sequence alignment of eled homologs from various schistosome species. Alignment was generated by ClustalOmega (Li et al., 2015) using sequences of Uniprot IDs specified in the figure. Secondary structural elements are predicted by PSIPRED server based on S. mansoni sequence (Buchan et al., 2013). Identical, very similar, and similar amino acids are indicated by \u2018*\u2019, \u2018:\u2019, and \u2018.\u2019, respectively. Colors represent residues with different properties. Orange: A, V, F, P, M, I, L, W; red: D, E; blue: R, K; green: S, T, Y, H, C, N, G, Q.\n\nAre \u03ba and \u03b4-cells maintained during juvenile development? Since \u03ba and \u03b4-cells can be distinguished by a small set of transcripts, we measured expression of 87 genes, including all identified cell class-specific factors, across single juvenile proliferating cells by multiplex qPCR (Figure 4\u2014figure supplement 2, and Supplementary file 2) (van Wolfswinkel et al., 2014). The assayed gene set contained the class-specific factors identified from sporocyst stem cells and the most highly enriched genes in juvenile vs. sporocyst stem cells. Hierarchical clustering identified two major cell classes (Figure 4C). \u03b4\u2019-cells are similar to \u03b4-cells, but express abundantly both \u03b4 and \u03c6-cell markers (including nanos-2, fgfrA, p53, zfp-1, and hesl), indicating that these cells are the likely source of the adult somatic stem cells (Collins et al., 2013; 2016).\n\nThe other class abundantly expresses a novel schistosome-specific factor, eledh (eled), which is undetectable in sporocysts but is among the most abundant transcripts in juvenile stem cells (Supplementary file 3). We designated this class \u03b5 (epsilon indicates eled+), which displays lower expression of nanos-2 and fgfrA, and similar to \u03ba-cells, lacks expression of p53, zfp-1, and hesl (Figure 4C, and Figure 4\u2014figure supplement 3). Based on these similarities in gene expression, we propose that \u03b5-cells are likely derivatives of \u03ba-cells (see Discussion for more details). eled is a single-copy gene (Smp_041540) that was previously annotated as a nuclear hormone receptor, dhr4 (Protasio et al., 2012; Berriman et al., 2009); however, our analysis suggests that this gene does not encode a hormone receptor (Figure 4\u2014figure supplement 4). As described below, this gene antagonizes nanos (Greek for \u2018dwarf\u2019); therefore, we named Smp_041540 eledh (Sindarin for \u2018elf\u2019), based on the antagonistic relationship between dwarves and elves in Tolkien\u2019s world. Homologs of eled are found across Schistosoma species, whereas planarian and tapeworm genomes appear to lack them. Figure 4D shows the predicted architecture of eled, which has a transmembrane domain at the N-terminus (probability\u00a0~100%), a putative transmembrane domain at the C-terminus (probability\u00a0~35%), and an extracellular domain in between (probability\u00a0~85%). The extracellular domain contains 19% serine and 17% threonine, presenting the highest serine/threonine fraction in known proteins.\n\nIn juveniles eled expression was detected in primordial testes, ovaries, and vitellaria, as well as in a gradient increasing toward the PGZ, which lacks reproductive organs in males (Figure 5A). This pattern is distinct from that of the proliferation marker, h2a, which labels all stem cells and is more evenly distributed. Quantitatively, overlay of eled and h2a revealed that all gonadal eled+\u00a0cells (Figure 5B) and\u00a0~80% of somatic eled+\u00a0cells (966/1269, from two male juveniles) were also h2a+. Conversely, all germ cells within gonadal primordia were eled+, but only\u00a0~50% of the somatic h2a+ cells in the PGZ (1679/3576) and\u00a0~10% of the somatic h2a+\u00a0cells outside the PGZ (769/5366) expressed eled. In mature adults, eled expression was limited to reproductive organs (Figure 5C). Thus, somatic \u03b5-cells may be a transitory source of new tissue underlying massive juvenile growth in the PGZ.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig5-v1.jpg)\n\n**Figure 5.:** (A) FISH detects eled and h2a expression in juveniles. The boundary of the\u00a0PGZ is defined by a sharp drop of eled+ cells. eled signal in testes and ovary was over saturated in order to detect weaker expression in soma. (B) Double FISH of eled and h2a in juvenile gonads. Insets: magnified boxed areas. (C) eled expression in adults. eled+ cells were only detected in reproductive organs (insets). Note high expression in testes and anterior ovary, where oogonial stem cells are found, but low expression in the posterior ovary, where germ cells differentiate.\n\n### eled is the earliest schistosome germline marker and functions in opposition to nanos\n\nExpression of eled in gonadal primordia led us to examine earlier stages of germ cell development. We found that eled expression precedes nanos-1, which is germline specific both in juveniles (Figure 6\u2014figure supplement 1) and adults (Iyer et al., 2016; Wang and Collins, 2016): only a subset of eled+\u00a0cells in gonadal primordia co-express nanos-1, and the number of eled+nanos-1+\u00a0cells increases over the course of development (Figure 6A,B). Quantification reveals a sharp transition as worm length exceeds\u00a0~400 \u00b5m: before the transition, none of the gonadal eled+\u00a0cells is nanos-1+; after the transition, most if not all of the gonadal eled+\u00a0cells become nanos-1+ (Figure 6C). These results suggest that germ cells may be derived from \u03b5-cells early in juvenile development, and eled is the earliest germline marker yet identified in schistosomes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig6-v1.jpg)\n\n**Figure 6.:** (A) Double FISH of eled and nanos-1 in 3-week juveniles, showing the emergence of nanos-1 expression in gonadal primordia. (B) Magnified boxed gonadal regions in (A). Images are numbered from less to more mature worms. Images are confocal sections. Empty arrowheads: eled+nanos-1-; solid arrowheads: eled+nanos-1+. (C) Quantification of nanos-1 expression in eled+ presumptive germ cells as a function of worm length. Symbols represent cell counts in individual animals. Note the sharp transition at worm length\u00a0~400 \u00b5m (N\u00a0=\u00a013).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** WISH of (A) nanos-1 and (B) nanos-2 in juveniles (top: male; bottom: female). While nanos-2 is expressed in both \u03b5 and \u03b4\u2019-cells, the other schistosome nanos homolog, nanos-1, only shows expression in testes, ovary, and vitellaria.\n\nTo characterize functional interactions between eled and nanos, we knocked down gene function using RNA interference (RNAi) (Mann et al., 2010; Collins et al., 2013; Wang et al., 2013). For these experiments, juveniles were soaked in double-stranded RNA (dsRNA) continuously in vitro for 2 weeks. We focused on male juveniles because female development was retarded under in vitro culture. To assess gene expression changes after RNAi, we performed whole-mount in situ hybridization (WISH); we used confocal microscopy to examine testis structure.\n\neled RNAi resulted in upregulation of nanos-2 in the PGZ (Figure 7A), where the somatic \u03b5- cells are located. Knockdown of nanos-1 or nanos-2 resulted in degenerated testes and loss of differentiated germ cells; however, the remaining gonads maintained eled expression (Figure 7A and B). By contrast, knockdown of eled resulted in premature accumulation of sperm in juvenile testes (Figure 7B). Thus, eled appears to inhibit, whereas nanos genes are required for, germ cell differentiation. Together, these results suggest that eled antagonizes the two schistosome nanos homologs: in the soma, it suppresses nanos-2 expression in \u03b5-cells in the PGZ; in the germline, it inhibits germ cell differentiation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig7-v1.jpg)\n\n**Figure 7.:** (A) WISH images showing the expression of eled, nanos-1, and nanos-2 in male juveniles after RNAi. +: higher nanos-2 expression compared to the control; -: regressed testes; asterisks: RNAi depletion of the target transcripts. (B) Confocal sections of DAPI-stained testes in RNAi worms. Nuclear morphologies are consistent with (1) undifferentiated spermatogonium, (2) spermatocyte; (3) round spermatid, (4) elongating spermatid, and (5) sperm. In nanos-1 or nanos-2 (RNAi) animals, all testis lobes regressed; whereas in eled (RNAi) animals, worms with more than two testis lobes with accumulation of sperm were counted as manifesting the phenotype (schistosomes normally possess 6\u20138 testis lobes). N: number of worms analyzed in one biological replicate;\u00a0penetrance was consistent between 4\u00a0biological replicates.\n\n## Discussion\n\nThroughout their life cycles, parasitic flatworms undergo dramatic morphological changes as they switch from free-living, infectious stages to endoparasitic forms residing in different hosts; the cellular basis of this developmental plasticity is largely unknown. Here, we have used single-cell transcriptional profiling to characterize schistosome stem cells during intramolluscan and intramammalian development. We found that these stem cells are a heterogeneous population, consisting of four major classes, distinguished by several distinct markers. This analysis enabled cellular and molecular studies to trace the origin of the adult stem cells back to a handful of larvally derived cells packaged into the infectious stage; it also provided evidence for the origin of the schistosome germline.\n\nDuring intramolluscan asexual development we find three classes of stem cells that can be distinguished by expression of either or both nanos-2 and fgfr: \u03ba (klf+nanos-2+); \u03c6 (fgfrA+); and \u03b4 (nanos-2+fgfrA+) cells. Our data are consistent with the proposed lineage depicted in Figure 8. We posit that \u03ba cells serve as \u2018embryonic\u2019 stem cells: in addition to nanos-2 they express a klf homolog and are found isolated in developing mother sporocysts. This observation is consistent with classic histological studies suggesting that such isolated germinal cells serve as the source of developing embryos (Schutte, 1974; Pan, 1965). These studies reported that the scattered stem cells may persist in mother sporocysts for months and continuously undergo asymmetric divisions, with one daughter cell forming an embryo while the other remains undifferentiated (Schutte, 1974). We found that \u03ba-cells are dramatically enriched in mature, pre-migratory daughter sporocysts, consistent with the idea that these cells generate the other stem cell types observed in post-migratory daughter sporocysts.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/35449/elife-35449-fig8-v1.jpg)\n\n**Figure 8.:** \u03ba-cells are at the top of the hierarchy, and express nanos-2 and klf. Activation of several genes associated with somatic stem cell function in adults (fgfrA/B; p53; zfp-1) leads to the specification of \u03b4-cells, which we propose serve to generate somatic tissues. Downregulation of nanos-2 and activation of hesl in \u03b4-cells leads to the formation of \u03c6-cells, which are associated with many transitory larval structures, including the sporocyst epidermis (tegument) and the cercarial tail. Only a small number of \u03ba and \u03b4-cells is transmitted from the asexual to the sexual life-cycle stages. After entry into the mammalian host, activation of hesl in \u03b4-cells leads to \u03b4\u2019-cells, which appear to serve as the source of the adult somatic stem cells. \u03ba-cells downregulate nanos-2 and activate expression of an intramammalian stage-specific transcript, eled, generating \u03b5-cells, which are distributed in gonadal primordia and the posterior growth zone. During maturation, gonadal \u03b5-cells subsequently activate germline-specific nanos-1, which commits \u03b5-cells to germline fate.\n\nActivation of several genes associated with somatic stem cell function in adults (e.g. fgfrA/B; p53; zfp-1) leads to the specification of \u03b4-cells from \u03ba-cells; we propose that \u03b4-cells serve to generate somatic tissues. We suggest that downregulation of nanos-2 and activation of hesl in \u03b4-cells leads to the formation of \u03c6-cells. The restricted distribution of \u03c6-cells in transitory larval structures, including the sporocyst epidermis (tegument) and the cercarial tail (Figure 2A,E), is consistent with the observations that \u03c6-cells are not transmitted between life-cycle stages and are absent during the sexual stage. Our previous work identified rapidly cycling stem cells that do not express nanos-2 (in contrast to slower-cycling cells that do) (Wang et al., 2013); thus, \u03c6-cells appear to be a lineage-committed, transit-amplifying population that produces temporary larval tissues. The distinction between \u03ba, \u03b4, and \u03c6-cells is also consistent with early histological studies that observed germinal cells in three characteristic tissue locations within mother sporocysts: either scattered among daughter embryos, clustered inside of embryos, or situated close to mother sporocyst walls (Schutte, 1974; Pan, 1965).\n\nThe result of larval development in the snail is the\u00a0production of cercariae, free-swimming infectious forms that penetrate mammalian skin to continue the life cycle. We observed five \u03b4-cells, localized in a stereotypical pattern in the cercarial body. Using mouse skin explants to mimic the transformation that occurs after parasites enter their mammalian host, we found that these five cells proliferate during the first 24 hr after transformation. Given the similarities between the transcriptional profiles of \u03b4-cells and the somatic stem cells found in juvenile parasites (\u03b4\u2019-cells that also express hesl), as well as their early proliferation upon penetrating host skin, we suggest that \u03b4-cells serve as the source of the somatic stem cells identified in adult schistosomes. Because there is no growth during the first 2 weeks post-infection (Clegg, 1965; Wilson, 2009), these early-proliferating cells may contribute to the tissue remodeling (e.g. of the tegument or digestive system) required for the parasite\u2019s subsequent growth and maturation.\n\nCercariae also contain two clusters of \u03ba-cells, in the germinal cell cluster that is proposed to be the gonadal primordia (Schutte, 1974; Dorsey et al., 2002). These cells do not proliferate in the initial days after transformation; instead, we detect proliferation in the posterior of the schistosomula 9\u201310 days after transformation in vitro. Based on the antagonistic interaction between eled and nanos, we suggest that \u03ba-cells downregulate nanos-2 and activate expression of eled. eled is specific to the intramammalian stage of the life cycle and defines \u03b5-cells. The absence of \u03b4/\u03b4\u2019-cell markers, fgfr, zfp-1, p53, and hesl, in both \u03ba and \u03b5-cells favors the model that \u03ba/\u03b5-cells form a separate lineage from \u03b4/\u03b4\u2019-cells. Expression of eled is dynamic: during juvenile development, eled is expressed in gonadal primordia and in a subset of proliferating cells in the posterior growth zone. In mature adults, eled expression is maintained in the reproductive system but is no longer detected somatically. Thus, \u03b5-cells can either give rise to germline or to a transient somatic population that appears to drive the massive posterior growth exhibited by these parasites. During maturation, gonadal \u03b5-cells subsequently activate germline-specific nanos-1. We suggest that the activation of nanos-1 commits \u03b5-cells to germline fate. How eled+ cells choose to generate germline (nanos-1+) vs. posterior somatic cells (nanos-1-) will be an important avenue for future studies.\n\nFunctional analysis of eled was limited to juvenile male parasites harvested after 3 weeks of growth in the mouse, due to technical constraints imposed by the parasite\u2019s life cycle. Under these experimental conditions, eled (RNAi) males exhibited premature production of sperm; thus, eled appears to act as a brake on germ cell differentiation. Because it is also the earliest germline marker yet identified and could play a role in germ cell specification, new experimental techniques will have to be developed to analyze gene function during the first 3 weeks of development in the mammalian host, when the germline is formed. Similarly, rigorous experimental testing of the proposed lineage relationships between the stem cell classes (Figure 8) will require introduction of lineage-tracing techniques in these parasites.\n\nPrevious work noted similarities between schistosome stem cells and the neoblasts that drive regeneration in free-living planarians (Wang et al., 2013; Collins et al., 2013). The heterogeneity we detected in schistosome stem cells is also reminiscent of that observed in the planarian neoblasts (van Wolfswinkel et al., 2014), and we observed a striking overlap in a group of genes co-regulated between stem cell classes from both organisms. The genes fgfr, zfp-1, and p53 were defined as markers of an epidermally committed population in planarians (van Wolfswinkel et al., 2014). These genes are abundantly expressed in \u03b4/\u03b4\u2019-cells, the major somatic population in schistosomes. Recently, schistosome adult stem cells were shown to have a strong differentiation bias toward the tegumental lineage (Collins et al., 2016); the necessity of zfp-1 family genes for proper tegumental fate or, more generally, for proper differentiation, further linked these parasites to their free-living ancestors (Wendt et al., 2018). Furthermore, in the planarian embryo, blastomeres produce temporary embryonic tissues but also give rise to neoblasts by downregulating a set of embryo-specific genes and upregulating genes associated with adult development (e.g., zfp-1 and p53) (Davies et al., 2017). Our data suggest that a similar transition may also occur between \u03ba-cells and \u03b4/\u03b4\u2019-cells. Beyond planarians and schistosomes, stem cells have also been described in other parasitic flatworms, including tapeworms (Hoffmann et al., 2014; Koziol and Brehm, 2015; McCusker et al., 2016). We expect that single-cell approaches applied to additional parasitic flatworms will provide a broader overview of the role of stem cell heterogeneity in driving such complex life cycles.\n\nThis study presents an important step toward understanding the fundamental mechanisms driving the propagation and long-term survival of schistosomes. As the causative agents of a neglected tropical disease impacting hundreds of millions of people, these parasites present a major threat to global health. Schistosome infection is currently treated with a single drug, praziquantel, which is used in mass drug administration programs (Hoffmann et al., 2014; Sokolow et al., 2015). With concerns about resistant strains emerging (Hoffmann et al., 2014), it becomes increasingly important to understand the fundamental mechanisms driving the propagation and long-term survival of these parasites. Characterizing the roles of the stem cell populations defined here in schistosome transmission, reproductive development, and survival may ultimately lead to novel approaches to reduce the burden imposed by these parasites (Matthews, 2011; Valentim et al., 2013; Hoffmann et al., 2014).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain (Schistosoma mansoni)</td>\n      <td>NMRI</td>\n      <td>BEI Resources</td>\n      <td>NR-21963</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Digoxigenin-POD</td>\n      <td>Roche</td>\n      <td>11207733910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Digoxigenin-AP</td>\n      <td>Roche</td>\n      <td>11093274910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-DNP-HRP</td>\n      <td>PerkinElmer</td>\n      <td>FP1128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Fluorescein-POD</td>\n      <td>Roche</td>\n      <td>11426346910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid-pJC53.2</td>\n      <td>Addgene</td>\n      <td>26536</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>succinylated Wheat Germ Agglutinin (sWGA)</td>\n      <td>Vector Laboratories</td>\n      <td>FL-1021S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Carboxyrhodamine 110 azide</td>\n      <td>Click Chemistry Tools</td>\n      <td>AZ105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Alexa Fluor 488 azide</td>\n      <td>Invitrogen</td>\n      <td>A10266</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>5-ethynyl-2-deoxyuridine (EdU)</td>\n      <td>Invitrogen</td>\n      <td>A10044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Vybrant DyeCycle Violet (DCV)</td>\n      <td>Invitrogen</td>\n      <td>V35003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>POPO-1</td>\n      <td>Invitrogen</td>\n      <td>P3580</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>TOTO-3</td>\n      <td>Invitrogen</td>\n      <td>T3604</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Calcein AM</td>\n      <td>Invitrogen</td>\n      <td>C3100MP</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Parasite harvesting\n\nIn vitro-transformed mother sporocysts were obtained as detailed previously (Wang et al., 2013; Mann et al., 2010; Ivanchenko et al., 1999). Briefly, S. mansoni (strain NMRI) eggs were purified from livers harvested from schistosome-infected mice (Swiss Webster, female,\u00a0~7 weeks post-infection). Free-swimming miracidia were hatched from eggs in artificial pond water and transformed in vitro to mother sporocysts by exchanging pond water with sporocyst culture medium supplemented with 1X Antibiotic-Antimycotic (Gibco) and 20 \u00b5g/mL gentamycin (Gemini) at 37\u00b0C in 5% CO2/5% O2 for 48 hr. S. mansoni cercariae were shed from infected Biomphalaria glabrata snails about 5\u20138 weeks post-infection by exposing snails to bright light at 26\u00b0C for 1\u20132 hr. Schistosomula were transformed from cercariae using skin transformation (Clegg and Smithers, 1972; Protasio et al., 2013), in which cercariae were placed on ex vivo mouse skin biopsies (Swiss-Webster, Taconic) overlaid on Basch medium 169 (Basch, 1981) to collect parasites that passed through the skin. Juvenile and adult worms were obtained from infected mice (Swiss Webster NR-21963,\u00a0~3 or 6\u20137 weeks post-infection, respectively) by hepatic portal vein perfusion using 37\u00b0C DMEM. Worms were cultured at 37\u00b0C/5% CO2 in Basch Medium 169 supplemented with 1X Antibiotic-Antimycotic.\n\nIn adherence to the Animal Welfare Act and the Public Health Service Policy on Humane Care and Use of Laboratory Animals, all experiments with and care of mice were performed in accordance with protocols approved by the Institutional Animal Care and Use Committees (IACUC) of: Stanford University (protocol approval number 30366); University of Illinois at Urbana-Champaign (protocol approval number 15134); University of Wisconsin\u2013Madison (protocol approval number M005569).\n\n### Culture media\n\nArtificial pond water: 0.125 mg/L FeCl3\u20226H2O, 32.25 mg/L CaCl2\u20222H2O, 25 mg/L MgSO4\u20227H2O, 42.5 mg/L KH2PO4, 1.875 mg/L (NH4)2SO4, pH 7.2.\n\nMedium F (Mann et al., 2010; Ivanchenko et al., 1999): 1X BME vitamins, 1X BME amino acids, 6 mg/L serine, 2.9 mg/L proline, 2.4 mg/L L-alanine, 2.8 mg/L aspartic acid, 4.7 mg/L glutamic acid, 2.4 mg/L glycine, 2.4 mg/L \u03b2-alanine, 40 mg/L malic acid, 30 mg/L ketoglutaric acid, 10 mg/L succinic acid, 5 mg/L fumaric acid, 10 mg/L citric acid, 70 mg/L Na2HPO4, 0.53 g/L CaCl2\u20222H2O, 0.15 g/L KCl, 0.45 g/L MgSO4\u20227H2O, 1.5 g/L NaCl, 4.5 g/L galactose, 1 g/L glucose, 25 mM HEPES, pH 7.\n\nSporocyst culture medium is modified from Ivanchenko et al. (1999): 10% heat inactivated FBS, 23.5% Medium F, 23.5% DMEM/F12, 10% Schneider\u2019s Drosophila Medium, 2 g/L lactalbumin hydrolysate, 0.6 g/L galactose, 55 \u00b5M 2-mercaptoethanol, 0.005% Chemically defined lipid (Invitrogen).\n\nModified Basch 169 medium (Mann et al., 2010): 1 g/L lactalbumin hydrolysate, 1 g/L glucose, 8 mg/L insulin, 1 \u03bcM serotonin, 1 \u03bcM hydrocortisone, 0.5 \u03bcM hypoxanthine, 0.2 \u03bcM triiodothyronine, 0.5X MEM vitamins, 5% Schneider\u2019s Drosophila Medium, 10% heat inactivated FBS, 10 mM HEPES, pH 7.\n\n### Parasite treatments\n\nTo ablate dividing cells, cercariae or juveniles were exposed to either 200 Gy of \u03b3-irradiation on a Gammacell-220 Excel with a Co60 source (Nordion) or 250 Gy of X-ray irradiation on a CellRad Faxitron source and cultured for 48 hr for juveniles and 72 hr for schistosomula.\n\nFor EdU labeling, schistosomula were pulsed with 2\u20135 \u00b5M EdU. Juveniles were pulsed with 10 \u00b5M EdU overnight. EdU incorporation was detected by click reaction with 20\u201350 \u00b5M Alexa Fluor azide conjugates (Invitrogen) as described previously (Wang et al., 2013; Collins et al., 2013). Experiments were confirmed on three biological replicates, each containing a cohort of juvenile worms (N\u00a0=~50) collected from a separate infection. For schistosomula, two to three independent replicates were performed, each batch with\u00a0~10\u201315 worms for each condition. Confirming the specificity of EdU labeling, EdU+ cells were not detected in irradiated schistosomula or juveniles (Figure 3D, and Figure 4\u2014figure supplement 1C). For infected snails, animals were fed with \u2018gel food\u2019 containing 60 mg/mL spiruline and 1 mg/mL low-melting agarose in artificial pond water supplemented with 40 \u00b5M EdU (Invitrogen). Following the EdU pulse, the snails were washed, cultured at 26\u00b0C for 1\u20132 d, and fixed as described in the previous section.\n\nRNAi was performed using previously described protocols (Wang et al., 2013; Collins et al., 2013). Clones were generated using oligonucleotide primers listed in Supplementary file 3. For RNAi, juveniles were soaked in\u00a0~20 \u00b5g/mL dsRNA for 2 weeks, with media containing dsRNA refreshed daily. We noticed that worm density is critical to achieve efficient knockdown. We used 20\u201330 juveniles per mL of medium. Each RNAi was repeated on at least three biological replicates (each replicate is from a separate infection). Every biological replicate contained two technical replicates (each replicate is one well of a 24-well plate and contains 20\u201330 worms). In rare situations, wells with juveniles showing significantly lower activities at the end of RNAi treatments were excluded from downstream analysis, as this deterioration in overall physiology is likely caused by poor culture conditions. To assess gene expression changes after RNAi, we performed WISH as signal development can be quenched while still in the linear range. The development was performed in parallel in control and RNAi animals and stopped simultaneously. Imaging was performed with identical illumination and exposure settings.\n\n### In situ hybridization\n\nRNA FISH experiments were performed as detailed previously (Wang et al., 2013; Collins et al., 2013) with modifications specific to each life-cycle stage. To observe various intramolluscan stages, schistosome-infected B. glabrata snails (10, 15, 25, or 30 days post-infection, dpi) were relaxed in sodium pentobarbital solution (0.5 mg/mL) for 6 hr, killed in hot water (70\u201390\u00b0C) for 30 s, deshelled, and fixed in 4% formaldehyde in artificial pond water supplemented with 0.2% Triton X-100% and 1% NP-40 for 24 hr at 4\u00b0C. The snail tissue was then bleached in a formamide bleaching solution (0.5% formamide, 0.5% SSC, and 1.2% H2O2) for 90 min, equilibrated in 30% sucrose/PBSTx (PBS with 0.3% Triton X-100) overnight, embedded in TBS tissue freezing medium, and cryosectioned at 30 \u00b5m thickness. Dried cryosections of snail tissues were then rehydrated in PBSTx on gelatin-coated slides, permeabilized by 2 \u00b5g/mL proteinase K for 5 min, and post-fixed for 10 min. Schistosomula were killed with ice-cold 1% HCl for 30\u201360 s before fixation. Fixed, dehydrated in vitro-transformed mother sporocysts were rehydrated, permeabilized by 2 \u00b5g/mL proteinase K (proK, Invitrogen) for 5 min, and post-fixed for 10 min in 4% formaldehyde in PBSTx. Schistosomula were bleached in the formamide bleaching solution for 10 min, and permeabilized by 5 \u00b5g/mL proteinase K for 10 min. Juveniles were killed in 6 M MgCl2 for 30 s-5 min, fixed for 4 hr, dehydrated in methanol, incubated in 3% H2O2 in methanol for 30 min, then rehydrated, permeabilized by 10 \u00b5g/mL proteinase K for 10 min, and post-fixed. Adults were permeabilized by 5 \u00b5g/mL proteinase K for 45 min.\n\nThe hybridization step was carried out at 52\u00b0C overnight as described previously (Wang et al., 2013; Collins et al., 2013). Following washes, samples were blocked with 5% heat-inactivated horse serum and 0.5% Roche Western Blocking Reagent in PBSTx, and then incubated with antibody peroxidase conjugates at 4\u00b0C overnight. Detection was performed using tyramide signal amplification (TSA) with lab-made reagents (King and Newmark, 2013). For double FISH, the first peroxidase reaction was quenched for 30 min in 0.1% sodium azide solution before detection of the second gene. Imaging was performed in scale solution (30% glycerol, 0.1% Triton X-100, 4 M urea in PBS supplemented with 2 mg/mL sodium ascorbate). Clones used for riboprobe and dsRNA synthesis were generated as described previously (Wang et al., 2013; Collins et al., 2013), with oligonucleotide primers listed in Supplementary file 3. WISH follows the same procedure of FISH, except that the detection was carried out using antibody phosphatase conjugates for chromogenic development with NBT/BCIP (Sigma).\n\nAll FISH/WISH experiments were repeated on at least three biological replicates, each from a separate infection. All expression patterns throughout developmental stages were confirmed on multiple animals, specifically,\u00a0~150 in vitro-transformed mother sporocysts,\u00a0~5 mother and daughter sporocysts in snails,\u00a0~20 cercarial embryos,\u00a0~10 schistosomula,\u00a0~10 juveniles, and\u00a0~5 adults per biological replicate. For intramolluscan stages, as parasites are thicker than 30 \u00b5m (the cryosection thickness), we used parasite surface and penetration glands to determine the orientation and the position of the sections.\n\nTo assign cell classes using FISH signals, confocal stacks were obtained from a laser-scanning microscope using over-sampled resolutions recommended by Imaris (Bitplane). The stacks were resampled to give isotropic voxels, and subjected to Gaussian filtering and background subtraction. Center of labeled cell bodies was segmented channel-by-channel with Imaris using parameters empirically determined to minimize the need for manual curation. Overlapping cells from two channels were merged, and the assignment of cell classes for each individual cell was based on the ratio of integrated intensity within 10 \u00b5m (the cell diameter) around the respective determined centers between two channels. This analysis provides quantification of co-localization to support our observation of anatomical distributions of different cell classes.\n\n### Cell sorting and RNAseq\n\nWe developed a fluorescence-activated cell sorting (FACS) strategy to isolate proliferative stem cells. We used DyeCycle Violet (DCV) to label live cells proportionally to their DNA content and sorted replicating cells at either S or G2/M phase (Hayashi et al., 2006). Schistosomes are covered by a syncytial outer layer impenetrable to typical digestive enzymes used for cell dissociation (Hahnel et al., 2013). To overcome this barrier, we briefly treated the parasites with detergents, followed by trypsin to dissociate tissues into cell suspensions. This method dramatically improved the yield of dissociation and reduced the duration of enzymatic digestion to maximize cell viability. Specifically, in vitro-transformed mother sporocysts were permeabilized in PBS containing 0.1% Triton X-100% and 0.1% NP-40 for 20 s, and washed thoroughly to remove the surfactants. The permeabilized sporocysts were dissociated in 0.125% trypsin in HBSS for 10 min and triturated with a 1 mL pipette for 10 min. Cell suspensions were passed through a 100 \u03bcm nylon mesh (Falcon Cell Strainer) and centrifuged at 150 g for 5 min. Cell pellets were gently resuspended, passed through a 30 \u03bcm nylon mesh, and stained with Vybrant DyeCycle Violet (5 \u00b5M, Invitrogen), TOTO-3 (0.2 \u00b5M, Invitrogen), and calcein AM (0.1 \u00b5g/mL, Invitrogen) in sporocyst culture medium for 30\u201345 min. Dissociation of juveniles was performed similarly but with the following modifications: juveniles were permeabilized for 30 s, dissociated in 0.25% trypsin for 20 min, and triturated with serially narrowed flamed-tip glass. Dissociated cells were analyzed on an LSR II flow cytometer or sorted using a FACAria II flow sorter (BD Biosciences), with dead cells excluded based on TOTO-3 fluorescence. We confirmed that the FACS signature of the proliferative cells disappeared as early as 2 days after worms received high doses of X-ray irradiation (Figure 4\u2014figure supplement 1C). All flow sort profiles were confirmed on at least three biological replicates.\n\n250,000 stem cells from either sporocysts or juveniles were sorted directly into lysis buffer (Qiagen) supplemented with 0.6% 2-mercaptoethanol (Sigma), and total RNA was purified using Qiagen RNeasy mini kit. After DNase treatment and poly(A) selection, stranded RNA-seq libraries were prepared using TruSeq Stranded RNA Sample Prep kit (Illumina), pooled in equimolar concentrations, and sequenced on a HiSeq2500 sequencer (Illumina) to acquire 100- or 160 bp reads with a depth of 40\u2013100 million reads per library. To compare these transcriptomes of purified cell populations to those of whole animals, we also extracted total RNA from approximately 10,000 miracidia, in vitro-transformed mother sporocysts (48 hr post-transformation), or cercariae, or about 1000 juvenile worms, using the standard Trizol (Invitrogen) extraction method. All RNAseq data have been submitted to SRA and are available under accession number PRJNA395457.\n\n### Single-cell RNAseq\n\nSingle stem cells from in vitro-transformed mother sporocysts were captured on a medium-sized (10\u201317 \u00b5m) microfluidic RNA-seq chip (Fluidigm) using the Fluidigm C1 system. Sorted cells were resuspended at a density of 300 cells/\u00b5L, with size distribution and number density confirmed on a TC20 cell counter (Bio-rad). The single-cell suspension was then mixed with Fluidigm suspension reagent at 7:3 ratio and loaded onto the chip immediately. After capture, chambers on the chip were examined quickly by phase-contrast microscopy to assess the number, size, and morphology of captured cells and by fluorescence microscopy to examine the live-dead cell stain, and only chambers containing single round-shaped live cells were included in the downstream procedures. cDNAs were prepared on the chip using SMARTer Ultra Low RNA kit for Illumina (Clontech) following the manufacturer\u2019s instructions. cDNA quality was quantitated by qPCR analysis of two quality-control genes (ago2-1 and h2a) on an Applied Biosystems Step One Plus station using GoTaq qPCR reagents (Promega). Libraries were constructed from this cDNA using Illumina Nextera XT DNA Sample Preparation kit. Library size distribution and concentration were assessed using High Sensitivity DNA analysis kit on an Agilent Bioanalyzer, as well as fluorometrically using Qubit Fluorometer (Invitrogen). Libraries were then sequenced on a HiSeq 2500 to obtain 100 bp reads at a depth of 3\u201310 million reads per cell. Data from four biological replicates were pooled together for analysis, but two of them were later excluded from final results, as they had a\u00a0high \u2018dead cell\u2019 rate.\n\nMapping of reads to the annotated S. mansoni genome (Protasio et al., 2012) was performed using CLC Genomics Workbench 7.0 (CLC Bio) using standard settings. Expression levels were estimated based on transcripts per million (TPM). Ratio of expression levels between libraries was calculated using TPM+1, and TPM values below or equal to one were considered as being dominated by noise (Kumar et al., 2014). In a subset of cells that passed quality control based on live-dead stains, quantitative PCR (qPCR) failed to detect ago2-1 and h2a, two ubiquitous stem cell markers (Wang et al., 2013; Collins et al., 2013). RNAseq on these cells exhibited lower overall genomic mapping rates (<60%), and detected significantly fewer transcripts per cell, more intergenic reads, and strong amplification bias towards the most abundant housekeeping genes. These cells were excluded from downstream analysis. The remaining libraries were then inspected for uniformity in mapping depth throughout the ago2-1 transcript and the outlier cells were further excluded, as the schistosome stem cells (many of them were dividing) may be sensitive to the microfluidic capture process, leading to mRNA degradation. Although this stringent data selection step reduced the number of cells analyzed, it suppressed variations between cells that are likely attributable to technical artifacts.\n\nPCA was performed using genes expressed in at least three cells and showing variance and bimodality coefficient of expression levels across all cells greater than empirically determined thresholds. Hierarchical clustering was performed using Euclidean distance metric on expression levels standardized gene-by-gene by mean-centering and dividing by the standard deviation of expressing cells. Assignment of cell classes is based on hierarchical clustering. As TPM values are well characterized as log-normal distributions for housekeeping genes, log2(TPM+1) was used as a measure of expression level in PCA and hierarchical clustering.\n\n### Single-cell qRT-PCR\n\nFor single-cell analysis of juvenile stem cells, cells were sorted directly into 96-well plates that contained 5 \u03bcL 1X CellsDirect One-Step Reaction mix (Invitrogen) supplemented with 0.05 \u03bcL RNaseOUT (Invitrogen) in each well. Sorted cells were immediately frozen on dry ice and kept at \u221280\u00b0C until reverse transcription (RT). After thawing plates containing sorted cells, each well was supplemented with 5 \u03bcL 1X CellsDirect One-Step Reaction mix that also contained 0.2 \u03bcL SuperScript III/Platinum Taq mix (Invitrogen) and outer primer pairs with a final concentration of 10 nM per primer. Reverse transcription was performed at 50\u00b0C for 20 min and stopped by heating the plate to 95\u00b0C for 2 min. The cDNA was then amplified for 20 cycles (95\u00b0C 15 s, 60\u00b0C 4 min) before digestion of the remaining outer primers with ExoI (20 U/well, New England Biolabs) at 37\u00b0C for 30 min and inactivation of the RT enzyme at 80\u00b0C for 15 min. Amplified cDNA samples were diluted 1:6 in water. We performed 10 technical replicates (each replicate consisting of one 96-well plate).\n\nFor quality control, 5 \u03bcL of each well was used to quantify h2a levels by qPCR. We randomly picked cells from wells that generated CT values within 4 CT around the most probable values (~75% of total wells) for multiplex qPCR on the Fluidigm Biomark platform. For each reaction, 5 \u03bcL of diluted cDNA was loaded on a 96.96 DynamicArray IFC chip (Fluidigm) along with negative controls. Expression levels were assessed using inner (nested) primers for each gene. The primer sets are listed in Supplementary file 2.\n\nCT values from the DynamicArray chip qPCR were determined from amplification curves with Fluidigm Real-time PCR analysis software using auto (detectors) thresholding and linear (derivative) baseline correction with a quality threshold of 0.65. The limit of detection was determined as 22 CT based on negative controls; undetected genes or CT values greater than 22 were all adjusted to 22. Expression values in log space were calculated as 22-CT. About 10% of cells showing substantially fewer numbers of genes detected were excluded from downstream analysis. To estimate technical variability, two independent sets of nested primers were designed for three genes, ago2-1, mier (Smp_101370), and hmt (Smp_055310), expression levels of which cover the full dynamic range of the qPCR analysis. The technical noise was determined as 2\u20133 CT and inversely correlated with gene expression level. PCA was performed on 90 amplicons (87 genes with the extra three technical-variability controls). Subsequently, genes with the highest scores in the first two PCs were identified and used for hierarchical clustering of cells. For hierarchical clustering, expression levels were standardized gene-by-gene by mean-centering and dividing by the standard deviation of expressing cells.\n\n### In toto imaging of schistosome-infected snails\n\nFixed and bleached whole snails were rendered transparent by clearing in 50, 75, and 100% tetrahydrofuran (THF) in water, followed by dichloromethane, and hexane, successively, for 12\u201324 hr at each step (Ert\u00fcrk et al., 2012). Specimens were then rehydrated through 100% THF, 50% THF, and PBSTx (PBS with 0.3% Triton X-100), and then bleached either in 6% H2O2 in PBSTx overnight or in 0.5% formamide, 0.5X SSC, and 1.2% H2O2 for 90 min. Lectin stainings were performed as previously described (Wang et al., 2013), with 12\u201324 hr incubation times at every step. Imaging was performed in RapiClear (Sunjinlab).\n",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "7fd8e6c8-0daa-4a29-945b-30d64ac4aac3",
+      "submission_id": "b6762290-1544-4dd9-aa35-f086e1132cb2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alejandro S\u00e1nchez Alvarado, Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35449.028](https://doi.org/10.7554/eLife.35449.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Stem cell heterogeneity drives the parasitic life cycle of Schistosoma mansoni\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Alejandro S\u00e1nchez Alvarado as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Marianne Bronner as the Senior Editor. The following individuals involved in review of your submission have also agreed to reveal their identity: Peter W Reddien (Reviewer #2); Peter Olson (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nWang et al., provide the first detailed single-cell analysis of stem cell heterogeneity in Schistosoma mansoni, a parasitic organism of great global clinical importance, across not one but multiple stages of its remarkably complex life cycle.\n\nThe authors use extensive transcriptome profiling of multiple and single, proliferating cells, together with ISH, qPCR and functional analyses that substantiate their quantitative results. It represents another major advance by these authors in our understanding of the genetics that underpin development in parasitic flatworms, and an important comparator to planarians, tapeworms and other flatworms \u2013 a phylum of 'super regenerators' that have long merited wider investigation.\n\nMost notable perhaps is the discovery and robust evidence provided for the existence of a factor capable of inducing the germline in this parasite. Pinpointing the nature of germ cell origins in this animal as being driven by induction is, in our opinion, a great contribution to our understanding of parasitology.\n\nEssential revisions:\n\n1) Unless we missed it, there is little to no detailed description of the molecular nature of eled. For starters, Is eled an acronym? If so where in the paper is it defined? The first instance of its occurrence we could find was in the last paragraph of the subsection \u201cStem cells in juveniles reveal germline and somatic populations\u201d, as \"eledh\". Later in the Discussion, eled is described as being \"\u2026specific to the intramammalian stage of the life cycle and defines the final class of schistosome stem cells, \u03b5-cells, identified in this study\", which strikes us as a byzantine circular definition of this molecule. Given the importance ascribed to this molecule as an inducer of the germline, more detail would be expected. Is this molecule unique to S. mansoni or is it present in other parasites, for example? Is it a single copy gene in the S. mansoni genome or are there isoforms/duplicated genes? Are there any recognizable motifs? What type of molecule is it predicted to be, i.e., secreted, transcription factor, membrane associated, etc.? Maybe we should know this, but I figure that if we don't most of the broad readership of eLife may share the same puzzlement. Whether there is or there is no specific information available for this gene should be explicitly stated or the reader is left with the impression of an entirely mysterious molecule.\n\n2) Figure 2. The authors used single of expression of fgfrA (negative for nanos-2) to mark phi cells; similarly expression of nanos-2 but not fgfrA to mark nu cells. The absence of expression of a marker is weaker classification evidence than the presence of a unique marker because absence could be in some instances explained by technical detection limitation. klf and hesl would in principle, be more specific class markers. If these probes provide weaker signal would they work in case study single channel FISH to corroborate conclusions? Additionally, the presence of a single marker in common in the embryos to the sporocytes doesn't necessarily indicate these cells lack unique stage-specific attributes. For example, the early blastomeres of a planarian embryo express embryo-specific genes. This could be noted in the text.\n\n3) Epsilon cells: We surmise that the argument for a contribution to soma in posterior growth is because of the very abundant presence of these cells in the posterior of males, which lack sexual structures in this region. If so, this could be explicitly stated. Do available methods allow assessment of whether the phenotype of eled RNAi animals is consistent with the model that epsilon cells produce posterior somatic cells for substantial posterior growth? Moreover, what happens to klf expression in juveniles? Is it expressed in epsilon cells? Also, the model in Figure 7 could list klf and nanos as expressed in nu cells. Addressing these issues would improve the clarity of the manuscript.\n\n4) Because this manuscript is laying down an important foundation for defining stem cell lineages in S. mansoni, we would like to see a much more fleshed out discussion of the lineages proposed in Figure 7. As presented, there is some ambiguity as to the source of the eled cells. For instance, the first paragraph of the subsection \u201cStem cell classes display distinct spatiotemporal patterns throughout asexual development\u201d seems central to aspects of the lineage argument but are not clearly worded, and further discussion evidence from Schutte 74 might help the arguments made. Also, how much expression overlap is there between cell types as they arise during the complex development of this parasite? For instance, are there transcriptional cohorts shared between nu cells and epsilon and \u03b4 cells? Or what about \u03b4 and \u03b4 prime and \u03b4 and psi cells? In other words, understanding why the present model is favored over others would strengthen the conclusion of this otherwise fascinating paper.\n",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1db2686d-618b-449c-a9bb-ff03d75a692c",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C1",
+      "claim": "Schistosomes are parasitic flatworms infecting hundreds of millions of people.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes are parasitic flatworms infecting hundreds of millions of people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the global health impact of schistosomes, supported by established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "2f478cac-e384-48e8-abe7-e9ffbaa99c1d",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C2",
+      "claim": "Schistosomes alternate between asexual reproduction in molluscan hosts and sexual reproduction in mammalian hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "These parasites alternate between asexual reproduction in molluscan hosts and sexual reproduction in mammalian hosts; short-lived, water-borne stages infect each host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known life cycle of schistosomes, which is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "74f97701-2196-473f-abeb-96b98b0304cc",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C3",
+      "claim": "Schistosomes deploy five body plans throughout their life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thriving in such disparate environments requires remarkable developmental plasticity, manifested by five body plans deployed throughout the parasite's life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about schistosome morphology based on established knowledge of their life cycle stages.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "91e95260-a0cb-452e-97d0-7bc847ffba03",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C4",
+      "claim": "Subsets of larvally derived stem cells are likely sources of adult stem cells in Schistosoma mansoni.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that subsets of larvally derived stem cells are likely sources of adult stem cells and the germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including single-cell transcriptomics and in situ hybridization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "423fba00-9e31-45f8-b8d7-3004b101780b",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C5",
+      "claim": "Subsets of larvally derived stem cells are likely sources of the germline in Schistosoma mansoni.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that subsets of larvally derived stem cells are likely sources of adult stem cells and the germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data including gene expression analysis and lineage tracing through developmental stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "0c237e6d-9d0f-41a3-b62c-7fee48922f8b",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C6",
+      "claim": "A novel gene serves as the earliest marker for the schistosome germline.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identify a novel gene that serves as the earliest marker for the schistosome germline, which emerges inside the mammalian host and is ultimately responsible for disease pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing eled expression patterns in developing juveniles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "56d34bf4-b3d9-4ef7-8c2d-32b1cd96d205",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C7",
+      "claim": "The schistosome germline emerges inside the mammalian host.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identify a novel gene that serves as the earliest marker for the schistosome germline, which emerges inside the mammalian host and is ultimately responsible for disease pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing eled expression beginning after transformation to schistosomula.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "fe2b28b9-95fd-4922-b1e5-d1a7ed19dc76",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C8",
+      "claim": "Flatworms include more than 44,000 parasitic species.",
+      "claim_type": "EXPLICIT",
+      "source": "Flatworms include more than 44,000 parasitic species that form one of the largest groups of metazoan endoparasites (Loker and Hofkin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation to Loker and Hofkin, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "ffa333c4-44d1-40ce-a787-30ed3708f1fd",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C9",
+      "claim": "Parasitic flatworms form one of the largest groups of metazoan endoparasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Flatworms include more than 44,000 parasitic species that form one of the largest groups of metazoan endoparasites (Loker and Hofkin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Loker and Hofkin, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "5fc38640-38c9-498e-b8c7-94f797fdd4cf",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C10",
+      "claim": "Parasitic flatworm life cycles typically involve asexually and sexually reproducing stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Their life cycles typically involve asexually and sexually reproducing stages, each with its own distinct body plan and strategy to enhance transmission between multiple hosts (Clark, 1974; Pearce and MacDonald, 2002; Viney and Cable, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing parasitic flatworm life cycles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "2f1044cd-7382-4dd6-af1b-2f55a5b4cfbd",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C11",
+      "claim": "Each life cycle stage of parasitic flatworms has its own distinct body plan.",
+      "claim_type": "EXPLICIT",
+      "source": "Their life cycles typically involve asexually and sexually reproducing stages, each with its own distinct body plan and strategy to enhance transmission between multiple hosts (Clark, 1974; Pearce and MacDonald, 2002; Viney and Cable, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on parasitic flatworm biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "f8572df3-ca8c-4af1-af5f-ad3180e0fe73",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C12",
+      "claim": "Schistosoma infects over 250 million people.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the cells that may drive such parasitic life cycles, we study Schistosoma, a parasitic flatworm infecting over 250 million people, which causes the major neglected tropical disease, schistosomiasis (Hoffmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about disease burden supported by citation to Hoffmann et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "41e9f6b9-d339-46ef-8479-f96d54f315f3",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C13",
+      "claim": "Schistosoma causes schistosomiasis, a major neglected tropical disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the cells that may drive such parasitic life cycles, we study Schistosoma, a parasitic flatworm infecting over 250 million people, which causes the major neglected tropical disease, schistosomiasis (Hoffmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "69f6c5bd-9ebc-46a1-8105-11d803e01838",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C14",
+      "claim": "Each miracidium carries 10\u201320 germinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Each miracidium carries 10\u201320 germinal cells (Pan, 1980; Cort et al., 1954; Wang et al., 2013), which expand massively and differentiate to produce many daughter sporocysts (Figure 1A, and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and confirmed by the authors' own work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "58f6d6fe-afcd-44b6-9aee-88614e413c29",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C15",
+      "claim": "Germinal cells expand massively and differentiate to produce many daughter sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "Each miracidium carries 10\u201320 germinal cells (Pan, 1980; Cort et al., 1954; Wang et al., 2013), which expand massively and differentiate to produce many daughter sporocysts (Figure 1A, and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and visual evidence in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "ac1192da-e1ca-4d61-ae9f-ccc9884f71d2",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C16",
+      "claim": "Germinal cells exhibit heterogeneity within the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work has shown that germinal cells exhibit heterogeneity within this population (Wang et al., 2013), revealed by the distinct proliferation kinetics and expression of a schistosome homolog of nanos (Wang and Lehmann, 1991), a conserved regulator of germ cell development (Juliano et al., 2010; Wang et al., 2007) also expressed in the schistosome adult stem cells (Collins et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous work and other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "0c8ec154-2a7f-4e5f-ae6d-850ae364ed25",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C17",
+      "claim": "Principal component analysis of single-cell transcriptomes revealed three major cell classes in sporocyst stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) of single-cell transcriptomes revealed three major cell classes (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "06d25186-f5d6-44ed-b35f-2cab2ec4fb5c",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C18",
+      "claim": "The three sporocyst stem cell classes are designated \u03ba-cells (klf+nanos-2+), \u03c6-cells (fgfrA,B+), and \u03b4-cells (nanos-2+fgfrA,B+).",
+      "claim_type": "EXPLICIT",
+      "source": "We designated these classes based upon their respective markers: \u03ba-cells (kappa indicates klf+nanos-2+); \u03c6-cells (phi indicates fgfrA,B+); and \u03b4-cells (delta indicates double-positive for nanos-2 and fgfrA,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single-cell transcriptomic data and validated by FISH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "c635c8b0-8ab7-4fd9-b347-120cac84d464",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C19",
+      "claim": "The difference between \u03ba and \u03b4/\u03c6-cells extends along PC1 and contributes to ~30% of the total variance among cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between \u03ba and \u03b4/\u03c6-cells extends along PC1, and contributes to ~30% of the total variance among cells, whereas the difference between \u03b4 and \u03c6-cells is secondary, delineated by PC2 and contributing ~10% of the total variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on principal component analysis of single-cell transcriptomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "554c4881-b87c-441e-b791-e182cdfe554d",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C20",
+      "claim": "The difference between \u03b4 and \u03c6-cells is delineated by PC2 and contributes ~10% of the total variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between \u03ba and \u03b4/\u03c6-cells extends along PC1, and contributes to ~30% of the total variance among cells, whereas the difference between \u03b4 and \u03c6-cells is secondary, delineated by PC2 and contributing ~10% of the total variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on principal component analysis of single-cell transcriptomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "932755c3-2301-4ab8-8e90-1fe33a88f740",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C21",
+      "claim": "A schistosome p53 homolog is expressed abundantly in \u03b4-cells and at lower levels in \u03c6-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on projections along the first two PCs (Treutlein et al., 2014), we identified additional genes that contribute to the distinctions between classes: a schistosome p53 homolog and a zinc finger protein (zfp-1) expressed abundantly in \u03b4-cells and at lower levels in \u03c6-cells; and a hes family transcription factor (hesl) expressed specifically in \u03c6-cells (Figure 1D and E, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell transcriptomic data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "fbb3d9d6-879e-4ac0-9c6a-71251fd4580a",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C22",
+      "claim": "A zinc finger protein (zfp-1) is expressed abundantly in \u03b4-cells and at lower levels in \u03c6-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on projections along the first two PCs (Treutlein et al., 2014), we identified additional genes that contribute to the distinctions between classes: a schistosome p53 homolog and a zinc finger protein (zfp-1) expressed abundantly in \u03b4-cells and at lower levels in \u03c6-cells; and a hes family transcription factor (hesl) expressed specifically in \u03c6-cells (Figure 1D and E, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell transcriptomic data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "786394aa-2251-495f-9b88-b8beb6ac186f",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C23",
+      "claim": "A hes family transcription factor (hesl) is expressed specifically in \u03c6-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on projections along the first two PCs (Treutlein et al., 2014), we identified additional genes that contribute to the distinctions between classes: a schistosome p53 homolog and a zinc finger protein (zfp-1) expressed abundantly in \u03b4-cells and at lower levels in \u03c6-cells; and a hes family transcription factor (hesl) expressed specifically in \u03c6-cells (Figure 1D and E, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell transcriptomic data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "8d35e005-c6ef-4c1b-baac-aaaac431acb6",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C24",
+      "claim": "The transcriptomic findings were validated by fluorescent in situ hybridization on in vitro-cultured mother sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated these transcriptomic findings by fluorescent in situ hybridization (FISH) on in vitro-cultured mother sporocysts (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FISH data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "8c3bc7a1-e552-4091-af5d-0e1e4f0787cf",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C25",
+      "claim": "klf was expressed at very low levels, beneath the detection limits of the FISH protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the \u03ba class-specific marker klf was expressed at very low levels (Figure 1E), beneath the detection limits of our current FISH protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on expression data shown in Figure 1E and technical limitations of FISH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "4423283e-5640-40a9-a527-98661fae121a",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C26",
+      "claim": "\u03c6-cells were distributed beneath the parasite's outer layer and excluded from daughter embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c6-cells were distributed beneath the parasite's outer layer and excluded from daughter embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in situ hybridization data showing spatial distribution of cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "206fe42f-8606-4db5-aa4a-6238a4de6a3a",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C27",
+      "claim": "\u03b4-cells were found in large clusters within embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b4-cells were found in large clusters within embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in situ hybridization data showing spatial distribution of cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "173a4ef3-eee8-4a76-a272-a71f31438321",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C28",
+      "claim": "\u03ba-cells clustered with \u03b4-cells in embryos and were found in extraembryonic tissues as singlets or doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03ba-cells clustered with \u03b4-cells in embryos and were found in extraembryonic tissues as singlets or doublets, suggested to be the source of developing embryos in previous histological studies (Schutte, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in situ hybridization data and supported by citation to previous histological work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "fa2c1dd4-aa5b-4f9e-a284-96818aef1306",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C29",
+      "claim": "\u03ba-cells comprised the vast majority (>85%) of stem cells in mature daughter sporocysts two weeks post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Two weeks post-infection, mother sporocysts contain many mature daughter sporocysts that are ready to leave the mother and migrate elsewhere in the snail. At this stage \u03ba-cells comprised the vast majority (>85%) of stem cells in these daughters (Figure 2B); fewer \u03b4-cells were observed and \u03c6-cells were mostly excluded.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of FISH data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "fc490122-79da-4cdd-9025-524b1d41ee72",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C30",
+      "claim": "All three cell classes reappeared as intermingled populations one week after daughter sporocysts colonized new regions of host tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one week later, when post-migratory daughters colonized new regions of host tissue (Figure 2C), all three classes reappeared as intermingled populations, consistent with \u03ba-cells generating the other stem cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 2C and supports an inference about cell lineage relationships.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "200c5f42-ab60-46b8-b4f7-681ab99aa948",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C31",
+      "claim": "\u03ba-cells generate the other stem cell types.",
+      "claim_type": "IMPLICIT",
+      "source": "However, one week later, when post-migratory daughters colonized new regions of host tissue (Figure 2C), all three classes reappeared as intermingled populations, consistent with \u03ba-cells generating the other stem cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that \u03ba-cells dominate in pre-migratory daughters and all three classes reappear after migration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "3e2dfb55-f1e5-48ec-b981-7754d639a073",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C32",
+      "claim": "In early cercarial embryos, \u03c6-cells were found concentrated both anteriorly and posteriorly, where the mouth and tail bud form.",
+      "claim_type": "EXPLICIT",
+      "source": "In early cercarial embryos (dashed circle in Figure 2D\u20132E), \u03c6-cells were found concentrated both anteriorly and posteriorly, where the mouth and tail bud form, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 2D-2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "d08f5d23-9e8b-41e9-8b9c-3e0dc3cdf479",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C33",
+      "claim": "Two clusters of \u03ba-cells were observed posterior to the penetration glands in early cercarial embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, two clusters of \u03ba-cells were observed posterior to the penetration glands (Figure 2D\u20132E), at the site of the germinal cell cluster, considered gonadal primordia based on histological and ultrastructural studies (Cheng and Bier, 1972; Dorsey et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 2D-2E and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "60c671ec-d7b0-47c3-a2b9-39b5ccb44482",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C34",
+      "claim": "In the mature cercarial body, the \u03ba-cell pair posterior to the glands expands into two clusters that contain multiple cells each.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature cercarial body (Figure 2F\u20132G), the \u03ba-cell pair posterior to the glands expands into two clusters that contain multiple cells each.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 2F-2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "024bf9a1-be9e-4dfd-97ca-aafbfe663072",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C35",
+      "claim": "Five \u03b4-cells were detected in a regular pattern around the penetration glands in mature cercarial bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, five \u03b4-cells were detected in a regular pattern around the penetration glands, with one at the midline and two pairs laterally (Figure 2E), whereas \u03c6-cells are absent at this stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "483dcdf1-36cf-45ea-a30b-301afc1dd668",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C36",
+      "claim": "\u03c6-cells are absent in mature cercarial bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, five \u03b4-cells were detected in a regular pattern around the penetration glands, with one at the midline and two pairs laterally (Figure 2E), whereas \u03c6-cells are absent at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on FISH data showing no \u03c6-cell markers in mature cercariae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "04087d93-fd3c-44fb-89ea-574ebf427880",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C37",
+      "claim": "Only \u03b4 and \u03ba-cells, but not \u03c6-cells, may be passed to the intramammalian (sexual) stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the cercarial body (but not the tail) penetrates the mammalian host, only \u03b4 and \u03ba-cells, but not \u03c6-cells, may be passed to the intramammalian (sexual) stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that \u03c6-cells are absent from cercarial bodies and only bodies penetrate the host.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "fcabe316-8350-4824-a80a-3d6b39353546",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C38",
+      "claim": "Between 22 and 36 hr post-transformation, five EdU+ cells were observed around the penetration glands, anterior to the ventral sucker.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 22 and 36 hr post-transformation, we observed five EdU+ cells around the penetration glands, anterior to the ventral sucker (Figure 3B), and confirmed that they were \u03b4-cells (fgfrA+nanos-2+) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU labeling and FISH data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "0af7b56f-6e0d-4e43-9895-501a615353ce",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C39",
+      "claim": "The five EdU+ cells observed 22-36 hr post-transformation were confirmed to be \u03b4-cells (fgfrA+nanos-2+).",
+      "claim_type": "EXPLICIT",
+      "source": "Between 22 and 36 hr post-transformation, we observed five EdU+ cells around the penetration glands, anterior to the ventral sucker (Figure 3B), and confirmed that they were \u03b4-cells (fgfrA+nanos-2+) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU labeling combined with FISH for fgfrA and nanos-2 shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "0c00707c-a115-4c6d-97a4-396c42e5ede9",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C40",
+      "claim": "During the 12 hr after initial EdU labeling, the five \u03b4-cells completed mitosis, indicated by the appearance of five EdU+ doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "During the next 12 hr, these cells completed mitosis, indicated by the appearance of five EdU+ doublets (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU labeling data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "312c547d-03f9-4f5e-91a8-003135b35532",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C41",
+      "claim": "One week after transformation, two clusters of ~2\u20133 EdU+ cells appeared in the 'germinal cell cluster' region posterior to the ventral sucker, where \u03ba-cells are found.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, the number of EdU+ nuclei steadily increased (Figure 3D), but proliferation was restricted anteriorly to the ventral sucker, until one week later, when two clusters of ~2\u20133 EdU+ cells appeared in the 'germinal cell cluster' region posterior to the ventral sucker, where \u03ba-cells are found (Figure 3B, Days 9\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU labeling data shown in Figure 3B and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "fbaf9e9e-e4ab-43d4-ac87-680af0c84a7b",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C42",
+      "claim": "EdU+ cells were not detected in irradiated worms.",
+      "claim_type": "EXPLICIT",
+      "source": "EdU+ cells were not detected in irradiated worms (Figure 3E), consistent with previous reports that irradiation leads to developmental defects and reduced pathogenicity (Wilson, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU labeling data shown in Figure 3E and supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "167310b0-9bc6-465a-8f5f-76d8283b768a",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C43",
+      "claim": "A small, fixed number of \u03ba and \u03b4-cells are transmitted to the mammalian host.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a small, fixed number of \u03ba and \u03b4-cells are transmitted to the mammalian host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of specific numbers of proliferating cells at defined locations after transformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "fb85b2cf-57b5-49ea-af8a-1fcb23ed8802",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C44",
+      "claim": "\u03ba and \u03b4-cells are likely the source of the stem cells in adult schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because these cells appear to be the only dividing cells in schistosomula, they are likely the source of the recently identified stem cells in adult schistosomes (Collins et al., 2013; 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on EdU labeling data and supported by citations to previous work identifying adult stem cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "ec791438-9352-454f-867b-125880bceddf",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C45",
+      "claim": "EdU labeling revealed a posterior growth zone (PGZ) that extended as the parasites grew.",
+      "claim_type": "EXPLICIT",
+      "source": "EdU labeling revealed a posterior growth zone (PGZ) that extended as the parasites grew (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU labeling data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "5a7263ce-19fa-4da4-acf6-85ed74374348",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C46",
+      "claim": "In more mature juveniles, all cells in primordial testes and ovaries incorporated EdU.",
+      "claim_type": "EXPLICIT",
+      "source": "In more mature juveniles, all cells in primordial testes and ovaries also incorporated EdU (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU labeling data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "97b11b61-e10c-4729-8895-584169316704",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C47",
+      "claim": "Five-hundred and seventy-three genes were commonly enriched in both juvenile and sporocyst proliferating cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Five-hundred and seventy-three genes were commonly enriched in both populations, including previously identified schistosome stem cell markers (e.g. nanos-2, ago2-1, and fgfrA), and cell cycle-associated transcripts (h2a, cyclin B, and PCNA) (Wang et al., 2013; Collins et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptomic comparison between juvenile and sporocyst stem cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "73deecd8-699d-456c-bf69-6ee7b1325994",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C48",
+      "claim": "Proliferating cells from juveniles resemble sporocyst stem cells both morphologically and transcriptionally.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, proliferating cells from juveniles resemble the sporocyst stem cells both morphologically and transcriptionally (Figure 4\u2014figure supplement 1), suggesting that these cells represent juvenile stem cells, which support both somatic growth and germline development in the mammalian host.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological observations and transcriptomic data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "aaa06225-6508-4965-8e4c-aa8ccbd764f9",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C49",
+      "claim": "Hierarchical clustering of 85 juvenile stem cells distinguishes two major cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering identified two major cell classes (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single-cell qPCR data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "42f0ff23-822f-4769-9513-03492f437d5f",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C50",
+      "claim": "\u03b4'-cells are similar to \u03b4-cells, but express abundantly both \u03b4 and \u03c6-cell markers.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b4'-cells are similar to \u03b4-cells, but express abundantly both \u03b4 and \u03c6-cell markers (including nanos-2, fgfrA, p53, zfp-1, and hesl), indicating that these cells are the likely source of the adult somatic stem cells (Collins et al., 2013; 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single-cell qPCR data and supported by citations to previous work on adult stem cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "22fa3062-5c90-4c53-abf1-3c40193c2749",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C51",
+      "claim": "\u03b4'-cells are the likely source of the adult somatic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b4'-cells are similar to \u03b4-cells, but express abundantly both \u03b4 and \u03c6-cell markers (including nanos-2, fgfrA, p53, zfp-1, and hesl), indicating that these cells are the likely source of the adult somatic stem cells (Collins et al., 2013; 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "318c260e-4356-476f-bf13-49cb19b1a5b1",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C52",
+      "claim": "eled is undetectable in sporocysts but is among the most abundant transcripts in juvenile stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The other class abundantly expresses a novel schistosome-specific factor, eledh (eled), which is undetectable in sporocysts but is among the most abundant transcripts in juvenile stem cells (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single-cell qPCR and RNAseq data comparing sporocyst and juvenile stem cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "a1bb81f0-1b7c-4625-95aa-96059eabae8a",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C53",
+      "claim": "\u03b5-cells display lower expression of nanos-2 and fgfrA, and similar to \u03ba-cells, lack expression of p53, zfp-1, and hesl.",
+      "claim_type": "EXPLICIT",
+      "source": "We designated this class \u03b5 (epsilon indicates eled+), which displays lower expression of nanos-2 and fgfrA, and similar to \u03ba-cells, lacks expression of p53, zfp-1, and hesl (Figure 4C, and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single-cell qPCR data shown in Figure 4C and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "2c096ecd-6551-47ff-b925-a67cdd597e89",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C54",
+      "claim": "\u03b5-cells are likely derivatives of \u03ba-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these similarities in gene expression, we propose that \u03b5-cells are likely derivatives of \u03ba-cells (see Discussion for more details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on similarities in gene expression patterns between \u03b5-cells and \u03ba-cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "74fc4d85-c910-4fac-a775-9448e4f8a676",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C55",
+      "claim": "eled is a single-copy gene (Smp_041540).",
+      "claim_type": "EXPLICIT",
+      "source": "eled is a single-copy gene (Smp_041540) that was previously annotated as a nuclear hormone receptor, dhr4 (Protasio et al., 2012; Berriman et al., 2009); however, our analysis suggests that this gene does not encode a hormone receptor (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis and supported by citations to genome annotations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "88f62bcf-f19c-4bd3-9d5d-5f5909554db4",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C56",
+      "claim": "eled was previously annotated as a nuclear hormone receptor, dhr4, but does not encode a hormone receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "eled is a single-copy gene (Smp_041540) that was previously annotated as a nuclear hormone receptor, dhr4 (Protasio et al., 2012; Berriman et al., 2009); however, our analysis suggests that this gene does not encode a hormone receptor (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 4\u2014figure supplement 4 and contradicts previous annotations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "9879e6e3-9bf4-47c8-bc9f-f44395de7d34",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C57",
+      "claim": "Homologs of eled are found across Schistosoma species.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologs of eled are found across Schistosoma species, whereas planarian and tapeworm genomes appear to lack them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic analysis across flatworm species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "e8fdc5d4-07d4-4666-b9bd-73ce81a8a6d6",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C58",
+      "claim": "Planarian and tapeworm genomes appear to lack eled homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologs of eled are found across Schistosoma species, whereas planarian and tapeworm genomes appear to lack them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic analysis across flatworm species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "9da81736-c306-4cb0-9016-a03725365420",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C59",
+      "claim": "eled has a transmembrane domain at the N-terminus with ~100% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D shows the predicted architecture of eled, which has a transmembrane domain at the N-terminus (probability ~100%), a putative transmembrane domain at the C-terminus (probability ~35%), and an extracellular domain in between (probability ~85%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational prediction of protein structure shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "97799bff-55b2-4204-8c32-97122e904c72",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C60",
+      "claim": "eled has a putative transmembrane domain at the C-terminus with ~35% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D shows the predicted architecture of eled, which has a transmembrane domain at the N-terminus (probability ~100%), a putative transmembrane domain at the C-terminus (probability ~35%), and an extracellular domain in between (probability ~85%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational prediction of protein structure shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "49b4e604-8074-40fd-afae-7d6c1a6343a0",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C61",
+      "claim": "eled has an extracellular domain with ~85% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D shows the predicted architecture of eled, which has a transmembrane domain at the N-terminus (probability ~100%), a putative transmembrane domain at the C-terminus (probability ~35%), and an extracellular domain in between (probability ~85%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational prediction of protein structure shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "c4740646-4c51-4ba2-8468-b29fb1a2b9e1",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C62",
+      "claim": "The extracellular domain of eled contains 19% serine and 17% threonine, presenting the highest serine/threonine fraction in known proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular domain contains 19% serine and 17% threonine, presenting the highest serine/threonine fraction in known proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of the eled protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "c0f5ffb7-77e6-4f5a-8a11-b173ef71c0c6",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C63",
+      "claim": "In juveniles, eled expression was detected in primordial testes, ovaries, and vitellaria, as well as in a gradient increasing toward the PGZ.",
+      "claim_type": "EXPLICIT",
+      "source": "In juveniles eled expression was detected in primordial testes, ovaries, and vitellaria, as well as in a gradient increasing toward the PGZ, which lacks reproductive organs in males (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "1fc08088-c8ee-46f2-be25-4da100363d10",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C64",
+      "claim": "All gonadal eled+ cells are also h2a+.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, overlay of eled and h2a revealed that all gonadal eled+ cells (Figure 5B) and ~80% of somatic eled+ cells (966/1269, from two male juveniles) were also h2a+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of double FISH data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "9787dfbe-bf37-4046-8645-35abcb04f29f",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C65",
+      "claim": "~80% of somatic eled+ cells are also h2a+.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, overlay of eled and h2a revealed that all gonadal eled+ cells (Figure 5B) and ~80% of somatic eled+ cells (966/1269, from two male juveniles) were also h2a+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of double FISH data from two male juveniles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "f6c1b331-a39c-46fe-bd3e-f7850b3fdde5",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C66",
+      "claim": "All germ cells within gonadal primordia are eled+.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, all germ cells within gonadal primordia were eled+, but only ~50% of the somatic h2a+ cells in the PGZ (1679/3576) and ~10% of the somatic h2a+ cells outside the PGZ (769/5366) expressed eled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of double FISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "381727b4-6235-4a6f-b60c-e575393444f7",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C67",
+      "claim": "~50% of the somatic h2a+ cells in the PGZ express eled.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, all germ cells within gonadal primordia were eled+, but only ~50% of the somatic h2a+ cells in the PGZ (1679/3576) and ~10% of the somatic h2a+ cells outside the PGZ (769/5366) expressed eled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of double FISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "3c140c8a-66e4-4b8a-b439-397602e60c6a",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C68",
+      "claim": "~10% of the somatic h2a+ cells outside the PGZ express eled.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, all germ cells within gonadal primordia were eled+, but only ~50% of the somatic h2a+ cells in the PGZ (1679/3576) and ~10% of the somatic h2a+ cells outside the PGZ (769/5366) expressed eled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of double FISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "b033725a-d2fd-409a-99fa-e7b96f9e486b",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C69",
+      "claim": "In mature adults, eled expression was limited to reproductive organs.",
+      "claim_type": "EXPLICIT",
+      "source": "In mature adults, eled expression was limited to reproductive organs (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "160277b5-bc5b-4235-84c6-605e428af030",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C70",
+      "claim": "Somatic \u03b5-cells may be a transitory source of new tissue underlying massive juvenile growth in the PGZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, somatic \u03b5-cells may be a transitory source of new tissue underlying massive juvenile growth in the PGZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that eled is expressed in the PGZ in juveniles but not in adults.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "ad97d61a-b8ad-481a-a0c9-60ab1203e690",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C71",
+      "claim": "eled expression precedes nanos-1 expression in gonadal primordia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that eled expression precedes nanos-1, which is germline specific both in juveniles (Figure 6\u2014figure supplement 1) and adults (Iyer et al., 2016; Wang and Collins, 2016): only a subset of eled+ cells in gonadal primordia co-express nanos-1, and the number of eled+nanos-1+ cells increases over the course of development (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on double FISH data shown in Figure 6A,B and Figure 6\u2014figure supplement 1, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "3c94cf1e-e0d6-4e80-9d27-3e119027e076",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C72",
+      "claim": "nanos-1 is germline specific in juveniles and adults.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that eled expression precedes nanos-1, which is germline specific both in juveniles (Figure 6\u2014figure supplement 1) and adults (Iyer et al., 2016; Wang and Collins, 2016): only a subset of eled+ cells in gonadal primordia co-express nanos-1, and the number of eled+nanos-1+ cells increases over the course of development (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FISH data shown in Figure 6\u2014figure supplement 1 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "193ccd01-3c1c-41b9-9359-85d24856161b",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C73",
+      "claim": "The number of eled+nanos-1+ cells increases over the course of development.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that eled expression precedes nanos-1, which is germline specific both in juveniles (Figure 6\u2014figure supplement 1) and adults (Iyer et al., 2016; Wang and Collins, 2016): only a subset of eled+ cells in gonadal primordia co-express nanos-1, and the number of eled+nanos-1+ cells increases over the course of development (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on double FISH data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "8838709d-c382-47d5-a86e-0ea68001fc87",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C74",
+      "claim": "There is a sharp transition at worm length ~400 \u00b5m: before the transition, none of the gonadal eled+ cells is nanos-1+; after the transition, most if not all of the gonadal eled+ cells become nanos-1+.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification reveals a sharp transition as worm length exceeds ~400 \u00b5m: before the transition, none of the gonadal eled+ cells is nanos-1+; after the transition, most if not all of the gonadal eled+ cells become nanos-1+ (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of double FISH data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "25c4e045-0c2c-4917-8734-0d5ac5cacc56",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C75",
+      "claim": "Germ cells may be derived from \u03b5-cells early in juvenile development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that germ cells may be derived from \u03b5-cells early in juvenile development, and eled is the earliest germline marker yet identified in schistosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that eled expression precedes nanos-1 in gonadal primordia.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "51ec832f-c0a0-4d2b-9095-4178f4dc9423",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C76",
+      "claim": "eled is the earliest germline marker yet identified in schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that germ cells may be derived from \u03b5-cells early in juvenile development, and eled is the earliest germline marker yet identified in schistosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observation that eled is expressed before nanos-1 in developing germ cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "cda52918-d222-4ec9-b2c7-64ccb16904f1",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C77",
+      "claim": "eled RNAi resulted in upregulation of nanos-2 in the PGZ.",
+      "claim_type": "EXPLICIT",
+      "source": "eled RNAi resulted in upregulation of nanos-2 in the PGZ (Figure 7A), where the somatic \u03b5- cells are located.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on WISH data after RNAi shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "f6a20d4a-965a-4335-84b4-79854697c03f",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C78",
+      "claim": "Knockdown of nanos-1 or nanos-2 resulted in degenerated testes and loss of differentiated germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of nanos-1 or nanos-2 resulted in degenerated testes and loss of differentiated germ cells; however, the remaining gonads maintained eled expression (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on WISH and confocal microscopy data after RNAi shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "5a3ee200-e63b-4b10-a3c5-c7b4347ee93f",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C79",
+      "claim": "After nanos-1 or nanos-2 knockdown, the remaining gonads maintained eled expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of nanos-1 or nanos-2 resulted in degenerated testes and loss of differentiated germ cells; however, the remaining gonads maintained eled expression (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on WISH data after RNAi shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "115f3b32-330d-4673-977d-85d236c2d0b8",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C80",
+      "claim": "Knockdown of eled resulted in premature accumulation of sperm in juvenile testes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, knockdown of eled resulted in premature accumulation of sperm in juvenile testes (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on confocal microscopy data after RNAi shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "459b27c1-5a92-4ef6-9988-e1d76b5cb57d",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C81",
+      "claim": "eled appears to inhibit germ cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, eled appears to inhibit, whereas nanos genes are required for, germ cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that eled knockdown leads to premature sperm accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "884947a5-1b49-46fd-97c9-ab158a3cad43",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C82",
+      "claim": "nanos genes are required for germ cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, eled appears to inhibit, whereas nanos genes are required for, germ cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that nanos knockdown leads to loss of differentiated germ cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "097028cc-73d3-4ee1-a886-e98d827861c1",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C83",
+      "claim": "eled antagonizes the two schistosome nanos homologs: in the soma, it suppresses nanos-2 expression in \u03b5-cells in the PGZ; in the germline, it inhibits germ cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that eled antagonizes the two schistosome nanos homologs: in the soma, it suppresses nanos-2 expression in \u03b5-cells in the PGZ; in the germline, it inhibits germ cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on RNAi experiments showing opposite effects of eled and nanos knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "f668e99c-74f4-434d-ac5d-6298a41ec43c",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C84",
+      "claim": "\u03ba-cells serve as 'embryonic' stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that \u03ba cells serve as 'embryonic' stem cells: in addition to nanos-2 they express a klf homolog and are found isolated in developing mother sporocysts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns and spatial distribution of \u03ba-cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "0b3217ad-1d1c-49c9-9c82-aea5f7f74971",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C85",
+      "claim": "Scattered stem cells may persist in mother sporocysts for months and continuously undergo asymmetric divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies reported that the scattered stem cells may persist in mother sporocysts for months and continuously undergo asymmetric divisions, with one daughter cell forming an embryo while the other remains undifferentiated (Schutte, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schutte, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "50f5cb81-783f-4dd1-bbf9-dd558e80fbce",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C86",
+      "claim": "\u03ba-cells generate the other stem cell types observed in post-migratory daughter sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03ba-cells are dramatically enriched in mature, pre-migratory daughter sporocysts, consistent with the idea that these cells generate the other stem cell types observed in post-migratory daughter sporocysts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that \u03ba-cells dominate in pre-migratory daughters and all cell types reappear after migration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "45b2a613-38e1-489e-8683-6f0006b700b1",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C87",
+      "claim": "\u03b4-cells serve to generate somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of several genes associated with somatic stem cell function in adults (e.g. fgfrA/B; p53; zfp-1) leads to the specification of \u03b4-cells from \u03ba-cells; we propose that \u03b4-cells serve to generate somatic tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns and the observation that these genes are associated with somatic stem cell function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "4eabba2b-bd76-4308-845e-0be2d9192a51",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C88",
+      "claim": "Downregulation of nanos-2 and activation of hesl in \u03b4-cells leads to the formation of \u03c6-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that downregulation of nanos-2 and activation of hesl in \u03b4-cells leads to the formation of \u03c6-cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns distinguishing \u03c6-cells from \u03b4-cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "57d5c30d-ed4d-4de0-bd44-0570d05a65e4",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C89",
+      "claim": "\u03c6-cells appear to be a lineage-committed, transit-amplifying population that produces temporary larval tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work identified rapidly cycling stem cells that do not express nanos-2 (in contrast to slower-cycling cells that do) (Wang et al., 2013); thus, \u03c6-cells appear to be a lineage-committed, transit-amplifying population that produces temporary larval tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns, proliferation kinetics, and spatial distribution of \u03c6-cells, supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "59b05883-a4d6-4a2a-b2b4-5cfee1a27fe1",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C90",
+      "claim": "\u03b4-cells serve as the source of the somatic stem cells identified in adult schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the similarities between the transcriptional profiles of \u03b4-cells and the somatic stem cells found in juvenile parasites (\u03b4'-cells that also express hesl), as well as their early proliferation upon penetrating host skin, we suggest that \u03b4-cells serve as the source of the somatic stem cells identified in adult schistosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on transcriptional similarities and proliferation patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "5bb43ece-ef76-4d0c-b9a1-a06849c7530e",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C91",
+      "claim": "\u03ba-cells downregulate nanos-2 and activate expression of eled to form \u03b5-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the antagonistic interaction between eled and nanos, we suggest that \u03ba-cells downregulate nanos-2 and activate expression of eled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns and functional interactions between eled and nanos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "71819257-c984-4627-92d8-9485fbfad020",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C92",
+      "claim": "The absence of \u03b4/\u03b4'-cell markers in both \u03ba and \u03b5-cells favors the model that \u03ba/\u03b5-cells form a separate lineage from \u03b4/\u03b4'-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of \u03b4/\u03b4'-cell markers, fgfr, zfp-1, p53, and hesl, in both \u03ba and \u03b5-cells favors the model that \u03ba/\u03b5-cells form a separate lineage from \u03b4/\u03b4'-cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression patterns distinguishing these cell populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "82649dcb-1596-474e-9c3d-725a7e171290",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C93",
+      "claim": "\u03b5-cells can either give rise to germline or to a transient somatic population that appears to drive the massive posterior growth exhibited by these parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, \u03b5-cells can either give rise to germline or to a transient somatic population that appears to drive the massive posterior growth exhibited by these parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that eled is expressed in both gonadal primordia and the PGZ.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "e7cfcdfb-e88d-478a-8ec6-e80de7aea218",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C94",
+      "claim": "The activation of nanos-1 commits \u03b5-cells to germline fate.",
+      "claim_type": "EXPLICIT",
+      "source": "During maturation, gonadal \u03b5-cells subsequently activate germline-specific nanos-1. We suggest that the activation of nanos-1 commits \u03b5-cells to germline fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that nanos-1 is germline-specific and its expression follows eled expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "3442d29d-5c1b-4032-83a8-983305132d5f",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C95",
+      "claim": "Under experimental conditions, eled (RNAi) males exhibited premature production of sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these experimental conditions, eled (RNAi) males exhibited premature production of sperm; thus, eled appears to act as a brake on germ cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAi experiments and confocal microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "892d128f-551e-43c4-88b6-b6e7b2242698",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C96",
+      "claim": "The heterogeneity detected in schistosome stem cells is reminiscent of that observed in the planarian neoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneity we detected in schistosome stem cells is also reminiscent of that observed in the planarian neoblasts (van Wolfswinkel et al., 2014), and we observed a striking overlap in a group of genes co-regulated between stem cell classes from both organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with published data on planarian neoblasts, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "83886bdb-3abf-41e8-af87-6ed6a77bb200",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C97",
+      "claim": "The genes fgfr, zfp-1, and p53 were defined as markers of an epidermally committed population in planarians.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes fgfr, zfp-1, and p53 were defined as markers of an epidermally committed population in planarians (van Wolfswinkel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to van Wolfswinkel et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "4bfd9020-8084-437f-b491-b5d159def7b7",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C98",
+      "claim": "Schistosome adult stem cells have a strong differentiation bias toward the tegumental lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, schistosome adult stem cells were shown to have a strong differentiation bias toward the tegumental lineage (Collins et al., 2016); the necessity of zfp-1 family genes for proper tegumental fate or, more generally, for proper differentiation, further linked these parasites to their free-living ancestors (Wendt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Collins et al., 2016 and Wendt et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "2417e434-257d-413f-95e8-9fbfc06c3b87",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C99",
+      "claim": "In the planarian embryo, blastomeres produce temporary embryonic tissues but also give rise to neoblasts by downregulating a set of embryo-specific genes and upregulating genes associated with adult development (e.g., zfp-1 and p53).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the planarian embryo, blastomeres produce temporary embryonic tissues but also give rise to neoblasts by downregulating a set of embryo-specific genes and upregulating genes associated with adult development (e.g., zfp-1 and p53) (Davies et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davies et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "d12205fc-d351-4663-b7f2-0e1effe6bc39",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C100",
+      "claim": "A similar transition to that observed in planarian embryos may occur between \u03ba-cells and \u03b4/\u03b4'-cells in schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that a similar transition may also occur between \u03ba-cells and \u03b4/\u03b4'-cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on similarities in gene expression patterns between schistosome and planarian stem cell transitions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "81f20e50-54e5-48b1-8d99-0613c2a635d0",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C101",
+      "claim": "Schistosome infection is currently treated with a single drug, praziquantel.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosome infection is currently treated with a single drug, praziquantel, which is used in mass drug administration programs (Hoffmann et al., 2014; Sokolow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "d1a60762-f349-40c9-b875-2675bdb288be",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "claim_id": "C102",
+      "claim": "There are concerns about resistant strains of schistosomes emerging.",
+      "claim_type": "EXPLICIT",
+      "source": "With concerns about resistant strains emerging (Hoffmann et al., 2014), it becomes increasingly important to understand the fundamental mechanisms driving the propagation and long-term survival of these parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hoffmann et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell transcriptomic analysis of sporocyst stem cells revealed three major cell classes (\u03ba, \u03c6, and \u03b4) distinguished by expression of klf, nanos-2, fgfrA/B, p53, zfp-1, and hesl. These findings were validated by fluorescent in situ hybridization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 provide converging evidence from PCA analysis, marker gene identification, and FISH validation. The technical limitation noted in C25 (klf detection) is appropriately acknowledged and does not undermine the overall classification scheme, which relies on multiple markers per cell class.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "76723e17-17cb-4828-8998-7a95a1184f43",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The three stem cell classes display distinct spatiotemporal patterns during sporocyst development, with \u03ba-cells dominating in pre-migratory daughter sporocysts (>85%) and all three classes reappearing after migration, suggesting \u03ba-cells generate the other cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 provide spatial and temporal data from FISH experiments showing cell class distributions at different developmental stages. The inference in C31 that \u03ba-cells generate other cell types is consistent with the quantitative data showing their enrichment before migration and the reappearance of all classes after migration, though direct lineage tracing would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "535571f1-7ce7-4726-b064-30031a9b6376",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "During cercarial development, \u03c6-cells localize to transient structures (mouth, tail), while \u03ba-cells form clusters at gonadal primordia and five \u03b4-cells appear in a stereotypical pattern around penetration glands. Only \u03b4 and \u03ba-cells are transmitted to the mammalian host.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 provide detailed spatial localization data from FISH experiments at specific developmental stages. The inference in C37 that only \u03b4 and \u03ba-cells are transmitted is logically sound based on the observation that \u03c6-cells are absent from cercarial bodies and only bodies penetrate the host.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "After transformation to schistosomula, five \u03b4-cells proliferate within 22-36 hours, followed by \u03ba-cell proliferation at 9-10 days. These cells appear to be the only dividing cells and are likely the source of adult stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 provide EdU labeling data with temporal resolution and cell type confirmation by FISH. The irradiation control (C42) validates the specificity of EdU labeling. The inferences in C43-C44 are well-supported by the observation that these are the only proliferating cells detected, though the conclusion would be strengthened by longer-term lineage tracing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "2471e60a-3ad3-488b-a1fd-fde9a3ae0182",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Juvenile parasites display a posterior growth zone (PGZ) with proliferating cells that resemble sporocyst stem cells morphologically and transcriptionally, with 573 genes commonly enriched in both populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 provide EdU labeling data showing spatial patterns of proliferation and transcriptomic comparison demonstrating molecular similarities. The convergence of morphological and transcriptional evidence supports the conclusion that juvenile proliferating cells represent stem cells, though the inference in C48 about their dual role in somatic growth and germline development requires additional functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "9ca74c05-cd26-486b-acbb-dd19856d2d1c",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single-cell qPCR analysis of juvenile stem cells identified two major classes: \u03b4'-cells (expressing both \u03b4 and \u03c6 markers) likely representing adult somatic stem cells, and \u03b5-cells (eled+) likely derived from \u03ba-cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 provide single-cell qPCR data distinguishing two cell classes based on marker expression. The inferences about cell origins and fates (C51, C54) are reasonable based on gene expression similarities but would benefit from direct lineage tracing. The identification of eled as a novel marker is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The novel gene eled (Smp_041540) is a single-copy, schistosome-specific gene encoding a protein with transmembrane domains and an extracellular serine/threonine-rich domain, distinct from the previously annotated nuclear hormone receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 provide genomic, comparative, and structural analysis of eled. The correction of the previous annotation (C56) is supported by sequence analysis. The structural predictions (C59-C62) are based on computational methods with specified probability scores, appropriately acknowledging uncertainty. The comparative genomic analysis (C57-C58) supports the schistosome-specific nature of the gene.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "c48a8127-20fc-4fa3-967b-e015d25bb744",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In juveniles, eled is expressed in gonadal primordia and in a gradient toward the PGZ, with all gonadal eled+ cells also expressing h2a. In adults, eled expression is restricted to reproductive organs, suggesting somatic \u03b5-cells are transitory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 provide quantitative double FISH data showing eled expression patterns across developmental stages. The quantification is rigorous with specific cell counts provided. The inference in C70 about transitory somatic \u03b5-cells is well-supported by the developmental restriction of eled expression from soma to gonads.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "95fbaae1-792b-40f4-ab8c-e6d3cc9218a6",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "eled expression precedes nanos-1 in gonadal primordia, with a sharp developmental transition at ~400 \u03bcm worm length where eled+ cells begin expressing nanos-1, establishing eled as the earliest germline marker in schistosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 provide temporal expression data from double FISH with quantitative analysis showing a clear developmental transition. The inference in C75 that germ cells derive from \u03b5-cells is consistent with the temporal sequence, though direct lineage tracing would strengthen this conclusion. The claim in C76 that eled is the earliest germline marker is well-supported by the precedence over nanos-1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RNAi experiments demonstrate that eled antagonizes nanos genes: eled knockdown causes premature sperm accumulation while nanos knockdown causes germ cell loss, with eled suppressing nanos-2 in somatic cells and inhibiting germ cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 provide functional data from RNAi experiments with clear phenotypic outcomes. The opposite effects of eled and nanos knockdown support the antagonistic relationship proposed in C83. However, the experiments are limited to male juveniles cultured in vitro for 2 weeks, and the authors acknowledge that earlier developmental stages cannot be analyzed with current techniques, limiting the scope of functional conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "6994dc90-4e37-4788-add5-283f4586b368",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a developmental model where \u03ba-cells serve as embryonic stem cells that generate \u03b4-cells (somatic) and \u03b5-cells (germline/PGZ), with \u03c6-cells representing transit-amplifying cells for temporary larval structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C94 present a comprehensive lineage model integrating gene expression patterns, spatial distributions, and functional data. While the model is internally consistent and well-reasoned, most lineage relationships are inferred rather than directly demonstrated. The authors appropriately acknowledge in the Discussion that 'rigorous experimental testing of the proposed lineage relationships...will require introduction of lineage-tracing techniques.' Without direct lineage tracing, the hierarchical relationships remain hypothetical despite strong circumstantial evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "a0bb5dc8-c45a-4503-8849-4849847db92c",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "eled RNAi in male juveniles results in premature sperm production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is directly supported by confocal microscopy observations after RNAi treatment shown in Figure 7B. The phenotype is clear and reproducible across biological replicates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "69a49147-2fd0-48c0-9e49-b440f716aad4",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Schistosome stem cell heterogeneity parallels that observed in planarian neoblasts, with conserved expression of fgfr, zfp-1, and p53 in epidermally/tegumentally committed populations and similar developmental transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100 provide comparative analysis supported by citations to planarian literature. The overlap in gene expression patterns and developmental transitions is well-documented. However, this is primarily a comparative observation rather than a novel experimental finding, serving to contextualize the schistosome results within broader flatworm biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "611b08d6-e118-47bd-bd06-5a261922c32d",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Schistosomes are parasitic flatworms with complex life cycles involving multiple hosts and body plans, infecting hundreds of millions of people and causing schistosomiasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C8-C13 provide established background information about schistosome biology and disease burden, supported by appropriate citations. These are well-established facts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "46f48110-ad7c-413a-93c7-a2261e114977",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Miracidia carry 10-20 germinal cells that exhibit heterogeneity and expand to produce daughter sporocysts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 are supported by citations to previous work including the authors' own studies. These establish the biological context for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "d6722c4d-f2a6-4ca2-bc34-3a2a8aba5fad",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Schistosome infection is treated with praziquantel, with concerns about emerging drug resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 provide medical context supported by citations. This is established knowledge motivating the importance of the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "60d63e93-d876-4b6a-b577-5b6fca56dad7",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Larvally derived stem cells are likely sources of adult stem cells and the germline in S. mansoni.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 represent the main conclusions of the manuscript, supported by the collective evidence from multiple experimental approaches including single-cell transcriptomics, FISH, EdU labeling, and RNAi. While direct lineage tracing would strengthen these conclusions, the convergent evidence from multiple lines of investigation provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    },
+    {
+      "id": "31b8b202-3f9c-46d4-b5b7-ce6ef613afc6",
+      "content_id": "26905c81-1149-4e4c-b985-4b8428500f93",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A novel gene (eled) serves as the earliest marker for the schistosome germline, which emerges inside the mammalian host.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 are well-supported by temporal expression data showing eled expression precedes nanos-1 and begins after transformation to schistosomula. This represents a significant discovery for understanding schistosome germline development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:24:34.563081Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c8ec154-2a7f-4e5f-ae6d-850ae364ed25",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "06d25186-f5d6-44ed-b35f-2cab2ec4fb5c",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "c635c8b0-8ab7-4fd9-b347-120cac84d464",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "554c4881-b87c-441e-b791-e182cdfe554d",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "932755c3-2301-4ab8-8e90-1fe33a88f740",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "fbb3d9d6-879e-4ac0-9c6a-71251fd4580a",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "786394aa-2251-495f-9b88-b8beb6ac186f",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "8d35e005-c6ef-4c1b-baac-aaaac431acb6",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "8c3bc7a1-e552-4091-af5d-0e1e4f0787cf",
+      "result_id": "bdace65e-7e6b-49f0-8ff2-ba234efb450c"
+    },
+    {
+      "claim_id": "4423283e-5640-40a9-a527-98661fae121a",
+      "result_id": "76723e17-17cb-4828-8998-7a95a1184f43"
+    },
+    {
+      "claim_id": "206fe42f-8606-4db5-aa4a-6238a4de6a3a",
+      "result_id": "76723e17-17cb-4828-8998-7a95a1184f43"
+    },
+    {
+      "claim_id": "173a4ef3-eee8-4a76-a272-a71f31438321",
+      "result_id": "76723e17-17cb-4828-8998-7a95a1184f43"
+    },
+    {
+      "claim_id": "fa2c1dd4-aa5b-4f9e-a284-96818aef1306",
+      "result_id": "76723e17-17cb-4828-8998-7a95a1184f43"
+    },
+    {
+      "claim_id": "fc490122-79da-4cdd-9025-524b1d41ee72",
+      "result_id": "76723e17-17cb-4828-8998-7a95a1184f43"
+    },
+    {
+      "claim_id": "200c5f42-ab60-46b8-b4f7-681ab99aa948",
+      "result_id": "76723e17-17cb-4828-8998-7a95a1184f43"
+    },
+    {
+      "claim_id": "3e2dfb55-f1e5-48ec-b981-7754d639a073",
+      "result_id": "535571f1-7ce7-4726-b064-30031a9b6376"
+    },
+    {
+      "claim_id": "d08f5d23-9e8b-41e9-8b9c-3e0dc3cdf479",
+      "result_id": "535571f1-7ce7-4726-b064-30031a9b6376"
+    },
+    {
+      "claim_id": "60c671ec-d7b0-47c3-a2b9-39b5ccb44482",
+      "result_id": "535571f1-7ce7-4726-b064-30031a9b6376"
+    },
+    {
+      "claim_id": "024bf9a1-be9e-4dfd-97ca-aafbfe663072",
+      "result_id": "535571f1-7ce7-4726-b064-30031a9b6376"
+    },
+    {
+      "claim_id": "483dcdf1-36cf-45ea-a30b-301afc1dd668",
+      "result_id": "535571f1-7ce7-4726-b064-30031a9b6376"
+    },
+    {
+      "claim_id": "04087d93-fd3c-44fb-89ea-574ebf427880",
+      "result_id": "535571f1-7ce7-4726-b064-30031a9b6376"
+    },
+    {
+      "claim_id": "fcabe316-8350-4824-a80a-3d6b39353546",
+      "result_id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594"
+    },
+    {
+      "claim_id": "0af7b56f-6e0d-4e43-9895-501a615353ce",
+      "result_id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594"
+    },
+    {
+      "claim_id": "0c00707c-a115-4c6d-97a4-396c42e5ede9",
+      "result_id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594"
+    },
+    {
+      "claim_id": "312c547d-03f9-4f5e-91a8-003135b35532",
+      "result_id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594"
+    },
+    {
+      "claim_id": "fbaf9e9e-e4ab-43d4-ac87-680af0c84a7b",
+      "result_id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594"
+    },
+    {
+      "claim_id": "167310b0-9bc6-465a-8f5f-76d8283b768a",
+      "result_id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594"
+    },
+    {
+      "claim_id": "fb85b2cf-57b5-49ea-af8a-1fcb23ed8802",
+      "result_id": "3e9f7fb6-8f70-414d-ac3b-b52e8011b594"
+    },
+    {
+      "claim_id": "ec791438-9352-454f-867b-125880bceddf",
+      "result_id": "2471e60a-3ad3-488b-a1fd-fde9a3ae0182"
+    },
+    {
+      "claim_id": "5a7263ce-19fa-4da4-acf6-85ed74374348",
+      "result_id": "2471e60a-3ad3-488b-a1fd-fde9a3ae0182"
+    },
+    {
+      "claim_id": "97b11b61-e10c-4729-8895-584169316704",
+      "result_id": "2471e60a-3ad3-488b-a1fd-fde9a3ae0182"
+    },
+    {
+      "claim_id": "73deecd8-699d-456c-bf69-6ee7b1325994",
+      "result_id": "2471e60a-3ad3-488b-a1fd-fde9a3ae0182"
+    },
+    {
+      "claim_id": "aaa06225-6508-4965-8e4c-aa8ccbd764f9",
+      "result_id": "9ca74c05-cd26-486b-acbb-dd19856d2d1c"
+    },
+    {
+      "claim_id": "42f0ff23-822f-4769-9513-03492f437d5f",
+      "result_id": "9ca74c05-cd26-486b-acbb-dd19856d2d1c"
+    },
+    {
+      "claim_id": "22fa3062-5c90-4c53-abf1-3c40193c2749",
+      "result_id": "9ca74c05-cd26-486b-acbb-dd19856d2d1c"
+    },
+    {
+      "claim_id": "318c260e-4356-476f-bf13-49cb19b1a5b1",
+      "result_id": "9ca74c05-cd26-486b-acbb-dd19856d2d1c"
+    },
+    {
+      "claim_id": "a1bb81f0-1b7c-4625-95aa-96059eabae8a",
+      "result_id": "9ca74c05-cd26-486b-acbb-dd19856d2d1c"
+    },
+    {
+      "claim_id": "2c096ecd-6551-47ff-b925-a67cdd597e89",
+      "result_id": "9ca74c05-cd26-486b-acbb-dd19856d2d1c"
+    },
+    {
+      "claim_id": "74fc4d85-c910-4fac-a775-9448e4f8a676",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "88f62bcf-f19c-4bd3-9d5d-5f5909554db4",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "9879e6e3-9bf4-47c8-bc9f-f44395de7d34",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "e8fdc5d4-07d4-4666-b9bd-73ce81a8a6d6",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "9da81736-c306-4cb0-9016-a03725365420",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "97799bff-55b2-4204-8c32-97122e904c72",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "49b4e604-8074-40fd-afae-7d6c1a6343a0",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "c4740646-4c51-4ba2-8468-b29fb1a2b9e1",
+      "result_id": "53bbc3e9-1ada-4fb4-9dd3-b9ce94bc8eee"
+    },
+    {
+      "claim_id": "c0f5ffb7-77e6-4f5a-8a11-b173ef71c0c6",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "1fc08088-c8ee-46f2-be25-4da100363d10",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "9787dfbe-bf37-4046-8645-35abcb04f29f",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "f6c1b331-a39c-46fe-bd3e-f7850b3fdde5",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "381727b4-6235-4a6f-b60c-e575393444f7",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "3c140c8a-66e4-4b8a-b439-397602e60c6a",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "b033725a-d2fd-409a-99fa-e7b96f9e486b",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "160277b5-bc5b-4235-84c6-605e428af030",
+      "result_id": "c48a8127-20fc-4fa3-967b-e015d25bb744"
+    },
+    {
+      "claim_id": "ad97d61a-b8ad-481a-a0c9-60ab1203e690",
+      "result_id": "95fbaae1-792b-40f4-ab8c-e6d3cc9218a6"
+    },
+    {
+      "claim_id": "3c94cf1e-e0d6-4e80-9d27-3e119027e076",
+      "result_id": "95fbaae1-792b-40f4-ab8c-e6d3cc9218a6"
+    },
+    {
+      "claim_id": "193ccd01-3c1c-41b9-9359-85d24856161b",
+      "result_id": "95fbaae1-792b-40f4-ab8c-e6d3cc9218a6"
+    },
+    {
+      "claim_id": "8838709d-c382-47d5-a86e-0ea68001fc87",
+      "result_id": "95fbaae1-792b-40f4-ab8c-e6d3cc9218a6"
+    },
+    {
+      "claim_id": "25c4e045-0c2c-4917-8734-0d5ac5cacc56",
+      "result_id": "95fbaae1-792b-40f4-ab8c-e6d3cc9218a6"
+    },
+    {
+      "claim_id": "51ec832f-c0a0-4d2b-9095-4178f4dc9423",
+      "result_id": "95fbaae1-792b-40f4-ab8c-e6d3cc9218a6"
+    },
+    {
+      "claim_id": "cda52918-d222-4ec9-b2c7-64ccb16904f1",
+      "result_id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f"
+    },
+    {
+      "claim_id": "f6a20d4a-965a-4335-84b4-79854697c03f",
+      "result_id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f"
+    },
+    {
+      "claim_id": "5a3ee200-e63b-4b10-a3c5-c7b4347ee93f",
+      "result_id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f"
+    },
+    {
+      "claim_id": "115f3b32-330d-4673-977d-85d236c2d0b8",
+      "result_id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f"
+    },
+    {
+      "claim_id": "459b27c1-5a92-4ef6-9988-e1d76b5cb57d",
+      "result_id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f"
+    },
+    {
+      "claim_id": "884947a5-1b49-46fd-97c9-ab158a3cad43",
+      "result_id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f"
+    },
+    {
+      "claim_id": "097028cc-73d3-4ee1-a886-e98d827861c1",
+      "result_id": "3f9bb503-0792-4ad9-8bbf-0aa3b56eb86f"
+    },
+    {
+      "claim_id": "f668e99c-74f4-434d-ac5d-6298a41ec43c",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "0b3217ad-1d1c-49c9-9c82-aea5f7f74971",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "50f5cb81-783f-4dd1-bbf9-dd558e80fbce",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "45b2a613-38e1-489e-8683-6f0006b700b1",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "4eabba2b-bd76-4308-845e-0be2d9192a51",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "57d5c30d-ed4d-4de0-bd44-0570d05a65e4",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "59b05883-a4d6-4a2a-b2b4-5cfee1a27fe1",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "5bb43ece-ef76-4d0c-b9a1-a06849c7530e",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "71819257-c984-4627-92d8-9485fbfad020",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "82649dcb-1596-474e-9c3d-725a7e171290",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "e7cfcdfb-e88d-478a-8ec6-e80de7aea218",
+      "result_id": "6994dc90-4e37-4788-add5-283f4586b368"
+    },
+    {
+      "claim_id": "3442d29d-5c1b-4032-83a8-983305132d5f",
+      "result_id": "a0bb5dc8-c45a-4503-8849-4849847db92c"
+    },
+    {
+      "claim_id": "892d128f-551e-43c4-88b6-b6e7b2242698",
+      "result_id": "69a49147-2fd0-48c0-9e49-b440f716aad4"
+    },
+    {
+      "claim_id": "83886bdb-3abf-41e8-af87-6ed6a77bb200",
+      "result_id": "69a49147-2fd0-48c0-9e49-b440f716aad4"
+    },
+    {
+      "claim_id": "4bfd9020-8084-437f-b491-b5d159def7b7",
+      "result_id": "69a49147-2fd0-48c0-9e49-b440f716aad4"
+    },
+    {
+      "claim_id": "2417e434-257d-413f-95e8-9fbfc06c3b87",
+      "result_id": "69a49147-2fd0-48c0-9e49-b440f716aad4"
+    },
+    {
+      "claim_id": "d12205fc-d351-4663-b7f2-0e1effe6bc39",
+      "result_id": "69a49147-2fd0-48c0-9e49-b440f716aad4"
+    },
+    {
+      "claim_id": "1db2686d-618b-449c-a9bb-ff03d75a692c",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "2f478cac-e384-48e8-abe7-e9ffbaa99c1d",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "74f97701-2196-473f-abeb-96b98b0304cc",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "fe2b28b9-95fd-4922-b1e5-d1a7ed19dc76",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "ffa333c4-44d1-40ce-a787-30ed3708f1fd",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "5fc38640-38c9-498e-b8c7-94f797fdd4cf",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "2f1044cd-7382-4dd6-af1b-2f55a5b4cfbd",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "f8572df3-ca8c-4af1-af5f-ad3180e0fe73",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "41e9f6b9-d339-46ef-8479-f96d54f315f3",
+      "result_id": "611b08d6-e118-47bd-bd06-5a261922c32d"
+    },
+    {
+      "claim_id": "69f6c5bd-9ebc-46a1-8105-11d803e01838",
+      "result_id": "46f48110-ad7c-413a-93c7-a2261e114977"
+    },
+    {
+      "claim_id": "58f6d6fe-afcd-44b6-9aee-88614e413c29",
+      "result_id": "46f48110-ad7c-413a-93c7-a2261e114977"
+    },
+    {
+      "claim_id": "ac1192da-e1ca-4d61-ae9f-ccc9884f71d2",
+      "result_id": "46f48110-ad7c-413a-93c7-a2261e114977"
+    },
+    {
+      "claim_id": "81f20e50-54e5-48b1-8d99-0613c2a635d0",
+      "result_id": "d6722c4d-f2a6-4ca2-bc34-3a2a8aba5fad"
+    },
+    {
+      "claim_id": "d1a60762-f349-40c9-b875-2675bdb288be",
+      "result_id": "d6722c4d-f2a6-4ca2-bc34-3a2a8aba5fad"
+    },
+    {
+      "claim_id": "91e95260-a0cb-452e-97d0-7bc847ffba03",
+      "result_id": "60d63e93-d876-4b6a-b577-5b6fca56dad7"
+    },
+    {
+      "claim_id": "423fba00-9e31-45f8-b8d7-3004b101780b",
+      "result_id": "60d63e93-d876-4b6a-b577-5b6fca56dad7"
+    },
+    {
+      "claim_id": "0c237e6d-9d0f-41a3-b62c-7fee48922f8b",
+      "result_id": "31b8b202-3f9c-46d4-b5b7-ce6ef613afc6"
+    },
+    {
+      "claim_id": "56d34bf4-b3d9-4ef7-8c2d-32b1cd96d205",
+      "result_id": "31b8b202-3f9c-46d4-b5b7-ce6ef613afc6"
+    }
+  ],
+  "comparisons": []
+}

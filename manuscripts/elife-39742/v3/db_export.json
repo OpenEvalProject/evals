@@ -1,0 +1,2017 @@
+{
+  "submission": {
+    "id": "477415b0-9dab-474a-a7b9-b68125832904",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:28:42.096901Z",
+    "updated_at": "2025-12-02T02:28:42.096901Z"
+  },
+  "content": [
+    {
+      "id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "submission_id": "477415b0-9dab-474a-a7b9-b68125832904",
+      "content_type": "manuscript",
+      "content_text": "# CRISPR knockouts reveal an endogenous role for ancient neuropeptides in regulating developmental timing in a sea anemone\n\n## Authors\n\n- Nagayasu Nakanishi<sup>1</sup> ([ORCID: 0000-0001-7516-5078](https://orcid.org/0000-0001-7516-5078)) \u2020\n- Mark Q Martindale<sup>2</sup> ([ORCID: 0000-0002-5805-5640](https://orcid.org/0000-0002-5805-5640))\n\n### Affiliations\n\n1. Department of Biological Sciences University of Arkansas Fayetteville United States\n2. Whitney Laboratory for Marine Bioscience University of Florida St. Augustine United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuropeptides are evolutionarily ancient peptide hormones of the nervous and neuroendocrine systems, and are thought to have regulated metamorphosis in early animal ancestors. In particular, the deeply conserved Wamide family of neuropeptides\u2014shared across Bilateria (e.g. insects and worms) and its sister group Cnidaria (e.g. jellyfishes and corals)\u2014has been implicated in mediating life-cycle transitions, yet their endogenous roles remain poorly understood. By using CRISPR-Cas9-mediated reverse genetics, we show that cnidarian Wamide\u2014referred to as GLWamide\u2014regulates the timing of life cycle transition in the sea anemone cnidarian Nematostella vectensis. We find that mutant planula larvae lacking GLWamides transform into morphologically normal polyps at a rate slower than that of the wildtype control larvae. Treatment of GLWamide null mutant larvae with synthetic GLWamide peptides is sufficient to restore a normal rate of metamorphosis. These results demonstrate that GLWamide plays a dispensable, modulatory role in accelerating metamorphosis in a sea anemone.\n\n## Introduction\n\nNeuropeptides are evolutionarily ancient hormones\u2014secreted, diffusible signaling-molecules\u2014that are expressed in many cells of the nervous and neuroendocrine systems of Bilateria (e.g. vertebrates, insects and worms) and its sister group Cnidaria (e.g. jellyfishes, corals and sea anemones) (Grimmelikhuijzen and Hauser, 2012; Grimmelikhuijzen et al., 2002; Hartenstein, 2006; Walker et al., 2009). They are short polypeptides generated from larger precursor proteins through proteolytic cleavage, and are stored in membrane-bound secretory vesicles that are distributed throughout the neuron. For some, peptide \u03b1-amidation occurs via a post-translational, enzymatic conversion of a C-terminal glycine into an amide group, and is often critical for biological activity (reviewed in [Eipper et al., 1992]). Intercellular signaling occurs when neuropeptides are released from the secretory vesicles into the extracellular space and received by receptors of target cells. Neuropeptides have been implicated in regulating a wide range of biological processes\u2014from behavior, physiology, and development\u2014in animals with nervous systems (summarized in [Strand, 1999]). Given that neuropeptides were early neurotransmitters in the evolution of nervous systems, testing hypotheses about the conserved roles of neuropeptides in extant animals is directly relevant to understanding how the primitive nervous system may have functioned.\n\nComparative genomic evidence suggests that several peptide hormones are shared across Bilateria and Cnidaria, namely an insulin-related peptide, glycoprotein hormone, prokineticin, and amidated peptides with carboxy-terminal sequences Wamide, RFamide and RYamide (J\u00e9kely, 2013). Among them, only amidated peptides have been shown to occur in neurons of both bilaterians and cnidarians (e.g. (Conzelmann and J\u00e9kely, 2012; Conzelmann et al., 2013; Grimmelikhuijzen, 1985; Koizumi et al., 2004; Schmich et al., 1998a); see also (Walker et al., 2009) for a review of literature on RFamide), and thus are here considered bona fide conserved neuropeptides. The precursor protein of these neuropeptides typically encodes multiple copies of immature neuropeptides (e.g. (Conzelmann and J\u00e9kely, 2012; Darmer et al., 1991; Leviev and Grimmelikhuijzen, 1995), some of which can differ in amino acid sequence; this indicates that an immature neuropeptide sequence can duplicate and diverge within a gene. Paralogous neuropeptides can thus be generated from a single gene, or from different genes that emerged by gene duplication (i.e. paralogous genes). Neuropeptides can also be lost during evolution; for example, deuterostome bilaterians (e.g. chordates and echinoderms) lack Wamide precursor orthologs (Conzelmann et al., 2013), and the RYamide-encoding gene appears absent from the genome of anthozoan cnidarians (sea anemones and corals; e.g. (Anctil, 2009).\n\nThe ancestral function of the conserved neuropeptides is enigmatic, but a few lines of evidence suggest that Wamide may have conserved roles in metamorphosis regulation across Bilateria and Cnidaria (Conzelmann et al., 2013; Schoofs and Beets, 2013). First, Wamide is expressed in larval nervous systems in bilaterians (e.g. (Conzelmann et al., 2013; Hua et al., 1999) and cnidarians (e.g. [Leitz and Lay, 1995]). Second, exogenous Wamides have effects on molecular, behavioral and/or morphogenetic processes underlying life cycle transition across animals. For instance, Wamide neuropeptides (also known as allatostatin-B, prothoracicostatic peptides, myoinhibitory peptides (MIP), and GLWamide) can inhibit the synthesis of juvenile hormone in crickets (Lorenz et al., 1995) and that of ecdysteroids (the molting hormone) in a silkworm (Hua et al., 1999). Also, they can induce larval settlement of trochophore larvae in annelids (Conzelmann et al., 2013), and metamorphosis of planula larvae into polyps in hydrozoan and scleractinian (hard coral) cnidarians (Erwin and Szmant, 2010; Iwao et al., 2002; Leitz et al., 1994; Schmich et al., 1998b). Third, Wamide signaling appears to be necessary for life cycle transition across Bilateria and Cnidaria. The evidence comes from the annelid bilaterian Platynereis dumerilii, where morpholino-mediated knockdown of MIP receptor expression blocked MIP-induced larval settlement behavior (Conzelmann et al., 2013); but see Discussion), and the hydrozoan cnidarian Hydractinia echinate, where RNAi-mediated knockdown of GLWamide precursor expression can decrease rates of metamorphosis, and synthetic GLWamide could rescue metamorphosis-less phenotype that resulted from pharmacological inhibition of neuropeptide amidation (Plickert et al., 2003). However, reduced rates of metamorphosis in GLWamide-deficient hydrozoan larvae were not consistently observed across independent experiments despite a near-complete loss of endogenous GLWamide precursor transcripts. It was therefore proposed that quantitatively small amounts of GLWamide might be sufficient for larvae to remain competent to metamorphosis induction. This hypothesis has yet to be directly confirmed by gene knockout approaches.\n\nHere we used CRISPR-Cas9-mediated mutagenesis to generate knockout mutant lines for a Wamide precursor gene in the sea anemone cnidarian Nematostella vectensis, and examined the development of knockout mutants relative to the wildtype. In contrast to the hypothesis that Wamide is necessary for life cycle transition in H. echinate, we report that Wamide knockout mutant larvae can transform into morphologically normal polyps in N. vectensis. However, knockout mutant larvae undergo metamorphosis at slower rates than the wildtype control larvae, and this developmental phenotype could be rescued by treatment of the mutant larvae with synthetic GLWamide peptides. These results demonstrate that Wamide has a dispensable, modulatory role as an accelerator of metamorphosis in N. vectensis.\n\n## Results\n\nThe genome of the sea anemone Nematostella vectensis (Putnam et al., 2007) encodes one Wamide (GLWamide,\u00a0MH939200) precursor homolog (Nv126270) (Anctil, 2009). The GLWamide precursor gene was predicted to contain a single exon based on in silico gene prediction (http://genome.jgi.doe.gov/cgi-bin/dispGeneModel?db=Nemve1&id=126270); however, comparison of the N. vectensis genome and cDNA sequences instead shows that the GLWamide gene consists of two exons (Figure 1\u2014figure supplement 1A). The analysis of putative endoproteolytic cleavage sites (i.e. acidic and basic amino acid residues; (Darmer et al., 1991; Leviev and Grimmelikhuijzen, 1995) and C-terminal amidation sites (i.e. C-terminal Gly residue) in the predicted precursor protein sequence suggests that the GLWamide gene encodes different copy numbers of nine distinct GLWamide peptides that vary in N-terminal sequence (Figure 1\u2014figure supplement 1B,C). We note that previously documented NvLWamide-like gene (Nv242283; (Havrilak et al., 2017) is predicted to generate and release QCPPGLWGC peptides, but not GLWamides, because of the lack of the canonical amidation signal, glycine, at the C-terminus (see Figure 5\u2014figure supplement 1 for experimental validation).\n\nWe first characterized the spatiotemporal expression patterns of GLWamide during planula development in N. vectensis. We used in situ hybridization and immunostaining to detect GLWamide precursor transcripts and GLWamide peptides, respectively. Consistent with previously published gene/peptide expression data (Nakanishi et al., 2012; Watanabe et al., 2014), GLWamide precursor transcripts were first detected in ectodermal sensory cells in the outer epithelium and in the pharynx during early-mid planula development (arrowheads in Figure 1A,B; inset in A) when a bundle of long cilia known as the apical tuft develops at the aboral pole. At the mid-planula stage, GLWamide transcripts appear in a subset of endodermal epithelial cells in the body column (arrowheads in Figure 1D). Interestingly, GLWamide-positive sensory cells in the pharynx were often asymmetrically distributed along the directive axis, oriented perpendicular to the oral-aboral axis (inset in Figure 1D; [Watanabe et al., 2014]).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig1-v3.jpg)\n\n**Figure 1.:** Z-projections of confocal sections of Nematostella vectensis at planula stages, labeled with an antisense riboprobe against GLWamide precursor transcript (\u2018glw\u2019) and an antibody against acetylated \u2202-tubulin (\u2018acTub\u2019). Nuclei are labeled with DAPI. All panels show side views of animals with the blastopore/mouth facing up. The left columns (A and C) show superficial planes of section at the level of the ectoderm, and the right columns (B and D) show longitudinal sections through the center. (A, B) early planula. GLWamide transcripts are found in ectodermal sensory cells that are present in the outer epithelium and the pharynx (arrowheads in A and B). The inset in A show transcript-expressing epithelial cells in boxed regions with the apical side of the cell facing up. Note the spindle-shaped morphology characteristic of cnidarian sensory cells (Thomas and Edwards, 1991). (C, D) mid-planula. A subset of endodermal cells begin to express GLWamide transcript (arrowheads in D). The inset in D shows transverse sections of the pharynx, revealing the asymmetry in the spatial distribution of GLWamide-positive sensory cells. Abbreviations: ph pharynx; ec ectoderm; en endoderm; at apical tuft. Scale bar: 50 \u00b5m (A-D); 10 \u00b5m (inset in A).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic view of the GLWamide genomic locus, located in scaffolds 229 of the N. vectensis genome (v.1.0; http://genome.jgi.doe.gov/Nemve1/Nemve1.home.html). Gene structure based on gene model prediction is shown at the top, and the revised structure based on the comparison of the N. vectensis genome and cDNA sequences is shown at the bottom. The number above the schematic indicate genomic coordinates within the scaffold. Grey boxes are untranslated regions; aqua-colored boxes are translated regions. Blue bars show predicted translation start sites; red bars show predicted translation termination sites; yellow bars show predicted GLWamide-encoding regions described below. The region boxed in purple is missing in the currently available genome of N. vectensis (v.1.0). Note that the revised gene structure contains two exons. (B) cDNA and deduced amino acid sequence of the GLWamide gene. Short peptides that are either repeated or similar, and are likely to be released by proteolytic cleavages are circled in yellow. It is assumed that single or multiple acidic and basic residues become cleaved as suggested in another sea anemone Anthopleura elegantissima (Darmer et al., 1991; Leviev and Grimmelikhuijzen, 1995). A purple arrowhead indicates the intron position. (C) Amino acid sequence alignment for GLWamides I-IX. We assume that upon release of the peptide, an N-terminal glutamine is spontaneously converted into a pyroglutamic acid residue (<Glu), and a C-terminal glycine becomes amidated by an \u03b1-amidating enzyme (cf. [Darmer et al., 1991]). The numbers on the right of each peptide sequence indicate copy numbers of each peptide that a single precursor protein is predicted to generate.\n\nImmunostaining revealed GLWamide peptide expression in a number of neuronal processes of the ectodermal and endodermal nervous systems at the mid-late planula stage (Figure 2A,B). Ectodermal sensory cells of the body column extend basal processes aborally or laterally, but not toward the oral direction (Figure 2C,D), while GLWamide-positive pharyngeal sensory cells extend neurites in any direction (Figure 2E,F). In the endoderm, GLWamide expression is detected in neurons that form longitudinal neurite bundles (Figure 2G,H). These results demonstrate that, prior to transformation into a polyp through formation of oral tentacles, GLWamides are expressed in neurons and their neurites that constitute ectodermal and endodermal neural networks of the planula larva.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig2-v3.jpg)\n\n**Figure 2.:** Z-projections of confocal sections of Nematostella vectensis at mid-late planula stages, labeled with antibodies against GLWamide (\u2018GLWa\u2019) and acetylated \u2202-tubulin (\u2018acTub\u2019). Nuclei are labeled with DAPI. All panels show side views of animals with the blastopore/mouth facing up. (A and B) show sections through the entire animals. (C and D) show superficial planes of section at the level of the surface ectoderm. (E and F) show longitudinal sections through the center at the level of the pharyngeal sensory cells. (G and H) show longitudinal sections at the level of the endodermal neurons. Boxed regions in C, E and G are magnified in D, F and H, respectively. Note that ectodermal neurons in the surface ectoderm extend neurites laterally and aborally, but not orally (arrowheads in D), while pharyngeal ectodermal neurons extend neurites in all three directions (arrowheads in F). Endodermal neurons extend neurites that are part of longitudinally oriented neuronal bundles (arrowheads in H). Abbreviations: at apical tuft; cb cell body; ph pharynx; ec ectoderm; en endoderm. Scale bar: 50 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Confocal sections of a free-swimming ephyra of Aurelia sp.1, labeled with antibodies against GLWamide (\u2018GLWa\u2019) and tyrosinated \u2202-tubulin (\u2018tyrTub\u2019). The panel shows an oral view of a rhopalium (rh) with its distal end (i.e. a lithocyst (lc)) pointing toward the upper left. Arrowheads show GLWamide-positive ectodermal sensory cells that are clustered in the proximal region of the rhopalium. This immunostaining pattern is consistent with that previously documented by using an antibody against EQPGLWamide (Nakanishi et al., 2009), indicating that the anti-GLWamide antibody used in this study can cross-react with GLWamides with divergent N-terminal sequences. Abbreviation: mnn motor nerve net. Scale bar: 50 \u00b5m.\n\nNext we determined whether GLWamide neuropeptidergic input from the planula nervous system is required for metamorphic transition into a polyp in N. vectensis. To achieve this, we took a CRISPR-Cas9-mediated mutagenesis approach to generate animals with null alleles at the GLWamide locus. Several single guide RNA (sgRNA) species targeting the 5\u2019 and 3\u2019 regions of the gene (Materials and methods; Figure 3) were synthesized and microinjected with the endonuclease Cas9 into zygotes to produce double-strand DNA breaks at each of the target sites in the genome. This approach can create null mutant alleles at the target gene locus in two ways: (1) by introducing frameshift-causing indel mutations in the 5\u2019 region of the gene via an error-prone, non-homologous end-joining (NHEJ) DNA repair mechanism, so that the translated peptide sequence is altered, and (2) by deleting the protein-coding region of the gene upon cleavages at flanking sites (cf. [Nakayama et al., 2013]). However, injected animals--here referred to as 'F0' animals--were usually mosaic mutants (Figure 3\u2014figure supplement 1; [Servetnick et al., 2017]); mutagenesis occurred mosaically in an F0 embryo so that individual cells would carry different mutations, or no mutation at all. Therefore, it could not be assumed that every cell in an F0 animal harbored a null mutation at the locus of interest.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic views of the GLWamide locus and mutant alleles (glw-a, glw-b and glw-c). Blue bars show predicted translation start sites; red bars show predicted translation termination sites; yellow bars show predicted GLWamide-encoding regions (Figure 1\u2014figure supplement 1). Purple arrowheads show sgRNA target sites. Insertions are labeled in green, and deletions are shown blank. Asterisks show the sites of frameshift-causing mutations. Blue arrows mark regions targeted in the PCR analysis shown to the right; reverse primers are numbered (1 - 3). Note that mutant allele-specific primers (1 - 3) generate PCR products from genomic DNA samples of heterozygous mutants, but not from those of wildtype animals. (B-D) Nucleotide and translated amino acid sequences of wild-type and mutant alleles boxed in A. sgRNA target sites are shown in purple, and PAM sites are shown in pink. Predicted translation start sites are boxed in blue; predicted translation termination sites are boxed in red. Insertions are labeled in green, replacements in blue, and deletions boxed in dotted orange lines. Predicted immature neuropeptide sequences are boxed in yellow (cf. Figure 1\u2014figure supplement 1). (E) a schematic showing the procedure of genotyping F2 embryos for developmental analyses. F2 embryos generated by F1 heterozygous mutant crosses were transversely bisected along the oral-aboral axis, and the oral halves were allowed to regulate and develop into polyps. Genomic DNA was extracted from single aboral halves and was used to genotype each embryo by PCR. The primers (2) and (3) were used to identify glw-b/glw-c embryos. '+' indicates a wildtype allele.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Schematic views of the GLWamide locus (left), and genomic DNA PCR results of an uninjected wildtype embryo (\u2018WT\u2019) and an F0 embryo injected with locus-specific sgRNAs and Cas9 (\u2018glw\u2019) (right). Blue bars show predicted translation start sites; red bars show predicted translation termination sites; yellow bars show predicted GLWamide-encoding regions as in Figure 2. Purple arrowheads show sgRNA target sites. Blue arrows mark regions targeted in the PCR analysis shown to the right. Note that genomic PCR of the WT embryo shows expected sizes of PCR fragments (1757 bp for primary PCR (\u20181\u2019), and 1647 bp for secondary nested PCR (\u20182\u2019)), while F0 embryos show additional bands of smaller sizes (arrowheads), indicating that targeted deletions of different sizes have occurred mosaically in each embryo. Primer sequences used for genomic PCR are: \u20181\u2019 Forward 5\u2019-GACACGACAGACACCGAAAACG-3\u2019, \u20181\u2019 Reverse 5\u2019-GCATTTGGCAAATAAAACGCACATG-3\u2019, \u20182\u2019 Forward 5\u2019-AATGTGAACAACGACGACGACAACG-3\u2019, \u20182\u2019 Reverse 5\u2019-GGAGTGGTTTCCAAATCTCCCGAGC-3\u2019.\n\nWe thus aimed to produce knockout mutant lines. First, F0 mosaic mutants were crossed with wild-type animals to generate F1 animals. Subsequently, F1 animals harboring a null mutant allele at the GLWamide locus were identified by genotyping each individual using genomic DNA extracted from pieces of oral tentacles. Upon screening, we found three different null mutant alleles at the GLWamide locus (glw-a, glw-b, and glw-c), all of which carried frameshift mutations predicted to inhibit normal translation of neuropeptide precursor sequences (Figure 3A\u2013D). glw F1 heterozygous mutants included one female with the genotype glw-a/+ (i.e. wildtype), one female with the genotype glw-b/+, one female with the genotype glw-c/+, and four males with the genotype glw-c/+. We then crossed F1 heterozygous mutants with one another to generate null mutants in, on average, a quarter of the F2 progeny. For instance, the glw-b/+ female and the glw-c/+ male were crossed to generate glw heterozygous null mutants with the genotype glw-b/glw-c.\n\nTo monitor development of null mutants, we first genotyped individual F2 embryos at the gastrula stage (i.e. at 1 dpf) (Figure 3E). Taking advantage of the ability of the oral half of the gastrula embryo to develop into a polyp (cf. [Fritzenwanker et al., 2007; Lee et al., 2007]), a piece of an aboral tissue of each F2 embryo was surgically separated and used for genomic DNA extraction, while the remaining embryo was individually maintained and allowed to regulate and develop into polyps. The genomic DNA extracted from an aboral tissue of each embryo was subsequently used as a template for PCR with allele-specific primers to determine the genotype of the embryo. The F2 embryos were then sorted by genotype, and null mutant and wildtype groups were used for subsequent analyses of development.\n\nTo determine whether GLWamide null mutants can undergo metamorphosis from a planula into a polyp in N. vectensis, we analyzed the morphology of the null mutants, glw-b/glw-c, and the wildtype control animals at 3dpf and 5dpf by using confocal microscopy. At 3dpf, glw-b/glw-c null mutants appeared to be morphologically identical to normal swimming planula larvae (Figure 4A\u2013C,G\u2013I), with an aboral apical tuft (at in Figure 4B,H) and an endoderm in which longitudinal muscle fibers are developing (arrowheads in Figure 4C,I). By 5dpf, the majority of glw-b/glw-c null mutants had transformed into morphologically\u00a0normal\u00a0primary polyps (glw-b/glw-c, 80% (n\u00a0=\u00a035); wildtype control, 78.6% (n\u00a0=\u00a056); Figure 4D\u2013F,J\u2013L). They show morphological hallmarks of metamorphosis, including the development of parietal and retractor muscles in the endoderm (pm and rm in Figure 4D,J), the loss of the apical tuft (arrowheads in Figure 4E,K; [Nakanishi et al., 2012]), and the formation of oral tentacles with polyp-specific cell types such as the hair cells (Figure 4F,L; (Nakanishi et al., 2012; Watson et al., 2009). Other glw null mutants--namely, glw-a/glw-c (F2) and glw-a/glw-a (F3)\u2014also metamorphosed (data not shown). These results demonstrate that GLWamide of the larval nervous system is dispensable for metamorphosis in N. vectensis, and that cnidarian metamorphosis can occur via a GLWamide-independent mechanism.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig4-v3.jpg)\n\n**Figure 4.:** Confocal sections of wild-type (A-F) and mutant (glw-b/glw-c, G-L) Nematostella vectensis, labeled with an antibody against acetylated \u2202-tubulin (acTub). Filamentous actin is labeled with phalloidin (Pha), and nuclei are labeled with DAPI. All panels show side views of animals with the blastpore/mouth facing up. (A-C, G-I): mid-planula. Similar to the wild-type, glw-b/glw-c mutant planulae develop apical tufts (at) at the aboral pole; in addition, the basal translocation of nuclei in the aboral-most ectoderm (arrowheads in A, G, M), as well as the development of myofilaments in the endoderm (arrowheads in C, I), are evident. (D-F, J-L) primary polyp. glw-b/glw-c mutants develop into morphologically normal primary polyps, forming a set of four oral tentacles (D, J) with longitudinally oriented muscle fibers in the endoderm (arrowheads in F, L) and hair cells in the ectoderm--a polyp-specific cell type in N. vectensis (Nakanishi et al., 2012; Watson et al., 2009)-- characterized by a single cilium (ci) surrounded at the base by stereocilia (st) (insets in F, L). Note also the development of eight sets of longitudinally oriented parietal (pm) and retractor (rm) muscles in the endoderm of the body column (D, J), and the loss of apical tufts (arrowheads in E, K), in wild-type as well as glw-b/glw-c mutant animals. Abbreviations: ph pharynx; ec ectoderm; en endoderm. Scale bar: 50 \u00b5m; 5 \u00b5m (inset in F, L).\n\nBecause it has been proposed that the original function of (neuro)peptides, before emergence of the nervous system, was to regulate regenerative responses upon injury and/or stress as growth factors (Moroz, 2009), we also examined the regenerative capacity of GLWamide knockout mutants. F2 glw-b/glw-c and wildtype control juvenile polyps were transversely cut into oral and aboral halves, which were given two weeks to regenerate the aboral and oral regions, respectively. Regeneration occurred normally in glw-b/glw-c mutants; the oral half regenerated the aboral region (glw-b/glw-c, 100% (n\u00a0=\u00a06); wildtype control, 83.3% (n\u00a0=\u00a06), and the aboral half regenerated the oral structures such as the pharynx and oral tentacles (glw-b/glw-c, 100% (n\u00a0=\u00a06); wildtype control, 100% (n\u00a0=\u00a06). We also note that although pharmacological evidence suggests a role in oocyte maturation and spawning in a hydrozoan cnidarian (Takeda et al., 2013), GLWamide knockout mutants can generate functional gametes in response to light and temperature cues provided to induce spawning. Thus, GLWamides are not essential for regeneration or reproduction in N. vectensis.\n\nWe next considered the possibility that GLWamide might act to accelerate metamorphosis. We tested this alternative hypothesis by examining the time course of polyp formation in GLWamide null mutants relative to that in wildtype control animals. For this experiment, we crossed F2 glw-a/glw-c adults with each other to generate F3 null mutants, and F2 glw+/glw+ adults with each other to generate F3 wildtype control animals (Figure 5\u2014figure supplement 1); glw-a/glw-c and glw+/glw+ F2 adults were siblings. Possible genotypes of null mutants examined were glw-a/glw-a, glw-a/glw-c, or glw-c/glw-c. Eggs of null mutants and wildtype control animals were fertilized by dropping egg packages into sperm-containing water at the same time (i.e. within a one-minute time window). Fertilized eggs were subsequently de-jellied, and animals were raised in constant darkness at 16\u00b0C; development at this temperature occurs slower than that at room temperature (20\u201325\u00b0C). At 2 dpf, healthy-appearing animals (i.e. without tissue damage) were transferred into wells of 24 well plates, each containing approximately 20 individuals in 1 ml of 1/3 seawater (wildtype, n\u00a0=\u00a06 experiments; mutants, n\u00a0=\u00a09 experiments). Half of the water in each well was replaced daily. For each experiment, we quantified the proportions of animals that were at the tentacle-bud or primary polyp stage from 6 dpf to 10 dpf. We observed no detectable difference in larval morphology at 5 dpf between null mutants and wildtype control animals, and thus we assume that larval development occurs normally at the morphological level. We used the number of polyps counted at 17 dpf as the total number of animals competent to become polyps for each experiment; the remaining animals that have not undergone metamorphosis by 17 dpf showed signs of abnormal development, and thus were excluded from the analysis. On average 17.5 animals, ranging from 14 to 20, were examined per experiment. We found that the wildtype control animals began to metamorphose at 6dpf, and the majority (~86%) had begun transforming by 8 dpf, while the null mutants began to metamorphose at 7dpf, and less than half (~42%) had begun metamorphosis by 8 dpf (Figure 5); the differences at 7 and 8 dpf were statistically significant (\u03b1\u00a0=\u00a00.05). Thus GLWamide null mutants metamorphosed at a slower rate than the wildtype control.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig5-v3.jpg)\n\n**Figure 5.:** A line graph showing changes in the proportions of animals at the tentacle-bud or primary polyp stage from 6 dpf to 10 dpf in F3 GLWamide null mutants (\u2018-/-\u2018), F3 wildtype control animals (\u2018+/+'), and F3 GLWamide null mutants treated with synthetic GLWamide peptides (\u2018-/- with GLWa\u2019) at 16\u00b0C. The proportions of metamorphosing and metamorphosed animals were significantly lower in null mutants at 7 and 8 dpf relative to the wildtype controls and null mutants treated with GLWamide (one-tailed t-test: -/- relative to +/+, 7 dpf p<10^\u22123, 8 dpf p<10^\u22124; -/- relative to -/- with GLWa, 7 dpf p<10^\u22123, 8 dpf, p<10^\u22124). Total numbers of experiments: -/- n = 9; +/+ n = 6; -/- with GLWa n = 9. Filled circles represent data points (+/+ in blue, -/- in red and -/- with GLWa in green). * denotes statistically significant difference (\u03b1 = 0.05).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39742/elife-39742-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Confocal sections of F3 wild-type (A, B) and mutant (glw-/glw-, C, D) Nematostella vectensis, labeled with antibodies against GLWamide (\u2018GLWa\u2019) and acetylated \u2202-tubulin (\u2018acTub\u2019). All panels show side views of animals with the blastpore/mouth facing up. (A, C) Mid-planula. (B, D) Primary polyp. All panels show Z-projections of sections through the entire animals. F3 null mutants were generated by crossing F2 glw-a/glw-c adults with each other, and F3 wildtype animals were generated by crossing F2 glw+/glw+ adults with each other; glw-a/glw-c and glw+/glw+\u00a0F2 adults were siblings. Possible genotypes of F3 glw-/glw- null mutants were therefore glw-a/glw-a, glw-a/glw-c, or glw-c/glw-c. Note the lack of GLWamide immunostaining in glw-/glw- null mutants, which provides experimental evidence that there are no other GLWamide-like peptides present at the developmental stages investigated. Thus NvLWamide-like does not generate GLWamides, as predicted from the amino acid sequence data (see main text). Scale bar: 50 \u00b5m.\n\nTo confirm that GLWamide deficiency is indeed responsible for this developmental delay, we tested whether treatment of GLWamide null mutants with synthetic GLWamide peptides (CEAGAPGLWamide), which were used to generate the anti-GLWamide antibody, would be sufficient to rescue the phenotype in developmental timing. Incubation of the mutants (n\u00a0=\u00a09 experiments) with 10 \u03bcM GLWamide began at 2 dpf and continued through 10 dpf with half of the peptide-containing media being replaced daily. On average 17.2 animals, ranging from 12 to 23, were examined per experiment. We observed that, similar to the wildtype animals, the null mutants treated with GLWamide began metamorphosis at 6 dpf, and the majority (~84%) had started metamorphosis by 8 dpf, showing statistically higher proportions of metamorphosing animals at 7 and 8 dpf relative to untreated null mutants (\u03b1\u00a0=\u00a00.05; Figure 5). Taken together, we conclude that GLWamide regulates metamorphosis by accelerating the process in N. vectensis.\n\n## Discussion\n\nHere we created the first neuropeptide knockout animals from an early-evolving animal group Cnidaria, and examined the endogenous function of deeply conserved (GL)Wamide neuropeptides in the sea anemone cnidarian Nematostella vectensis. We report that in N. vectensis GLWamide neuropeptides are expressed in ectodermal and endodermal nervous systems of the planula larva, but are not essential for transformation of the planula into a polyp. Instead we find that GLWamides regulate the timing of polyp formation by accelerating the metamorphic process in N. vectensis. These results raise the possibility that the ancestral role of Wamide neuropeptides in animals may have been to regulate the timing of life cycle transition.\n\nIndeed, several lines of evidence indicate that the Wamide neuropeptide is an accelerator, but not an essential regulator, of metamorphosis in animals. First, as described above, exogenous Wamides can trigger life cycle transition across annelids and cnidarians (Conzelmann et al., 2013; Erwin and Szmant, 2010; Iwao et al., 2002; Leitz et al., 1994; Schmich et al., 1998b), and our results show slower rates of life cycle transition in GLWamide mutant larvae in sea anemones. These data support Wamide\u2019s role as an accelerator of metamorphosis across animals.\n\nSecond, Wamides do not appear necessary for life cycle transition in animals where functional perturbation data are available. For instance, although in the annelid polychaete Platynereis, MIP (Wamide) receptor expression is necessary for MIP-induced larval settlement behavior (Conzelmann et al., 2013), reducing the expression of MIP by morpholino antisense oligonucleotide inhibits feeding behavior in the juvenile, but not metamorphosis (Williams et al., 2015). This could mean that there is a compensatory mechanism, possibly through as-yet-unknown ligands for the \u2018MIP\u2019 receptor. Alternative possibilities that silencing of the MIP gene was incomplete and the residual MIPs were sufficient for trigerring the transition, or that MIP does not endogenously regulate larval settlement and metamorphosis, cannot be ruled out, however; application of knockout approaches as employed in this study will be necessary to test these hypotheses. It is also possible that metamorphosis is decoupled from larval settlement so that MIP-regulated settlement behavior is not essential for metamorphosis in Platynereis. In the hydrozoan cnidarian Hydractinia echinata it is noteworthy that in one of the three experimental conditions where RNAi was used to knockdown GLWamide expression, the rate of metamorphosis was significantly reduced at 24 hr after induction (by CsCl), but it increased to a normal level 24 hr later (Plickert et al., 2003). This observation is consistent with a role of GLWamide as an accelerator, but not an essential regulator, of metamorphosis; however, an alternative possiblity that GLWamide expression recovered at later stages (due to reagent degradation and/or dilution) cannot be ruled out without gene knockout data. In the present study, our gene knockout data clearly demonstrate that GLWamides are not required for life cycle transition in the sea anemone cnidarian N. vectensis. We note that our data leave open the possibility that other amidated peptides could be necessary for metamorphosis in N. vectensis.\n\nThird, animals that undergo metamorphosis do not necessarily have Wamide neuropeptides. For example, deuterostome bilaterians lack Wamide homologs (Conzelmann et al., 2013) despite metamorphosis being common in some of the lineages (e.g. echinoderms, hemichordates, ascidians, and vertebrates). Similarly, members of Porifera (sponges)\u2014an outgroup to Eumetazoa\u2014typically undergo metamorphosis, and yet Wamides have not been found in a sponge genome (Srivastava et al., 2010). Thus Wamide-independent mechanisms of metamorphosis must exist in some animal lineages.\n\nTaken together, comparative evidence suggests that the ancestral Wamide neuropeptidergic signaling was not an indispensable component of the developmental regulatory system, but may have functioned to fine-tune the timing of life cycle transition by accelerating the developmental process\u2014possibly in response to specific environmental cues\u2014in the last common ancestor of Eumetazoa. Understanding how ancestral Wamides may have controlled developmental timing\u2014the nature of the sensory stimuli that trigger a release of Wamides, and identities of Wamide receptors and target developmental regulatory genes, in particular\u2014requires further investigation into Wamide function across Eumetazoa.\n\nIn addition to developmental timing, Wamides appear to be involved in regulating organismal behavior in extant animals. For instance, treatment with MIPs can suppress spontaneous contractions of the hindgut in insects (Schoofs et al., 1991). In the annelid Platynereis, in contrast, MIPs increase gut peristalsis and are necessary for feeding behavior (Williams et al., 2015). In cnidarians, exogenous GLWamides can induce muscle contractions in hydrozoan and anthozoan polyps (Takahashi et al., 2003) and stimulate migration of planula larvae in Hydractinia (Katsukura et al., 2004); however, it remains to be confirmed whether GLWamides endogenously control these behavioral processes. Demystifying the endogenous behavioral function(s) of deeply conserved neuropeptides\u2014Wamides as well as others (e.g. RFamides)\u2014across Eumetazoa will be important for illuminating how the primitive nervous system of the last common ancestor of Eumetazoa may have coordinated organismal behavior\u2014another fundamental problem of neural evolution that remains enigmatic.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Nematostella vectensis)</td>\n      <td>F2 glw-a/glw-c</td>\n      <td>this paper</td>\n      <td>Nv F2 glw-a/glw-c_ this paper</td>\n      <td>See the Results section of the paper for a description of the biological sample.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GLWamide (rabbit)</td>\n      <td>this paper</td>\n      <td>Anti-GLWamide_this paper:AB_2737386</td>\n      <td>(1:200) See the Materials and Methods section of the paper for a description of the antibody.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal culture\n\nNematostella vectensis were cultured as previously described (Fritzenwanker and Technau, 2002; Hand and Uhlinger, 1992).\n\n### RNA extraction, cDNA synthesis and gene cloning\n\nTotal RNA was extracted from a mixture of planulae and primary polyps using TRIzol (Thermo Fisher Scientific). cDNAs were synthesized using the BD SMART RACE cDNA Amplification Kit (BD Biosciences, San Jose, CA, USA). GLWamide gene sequence (Anctil, 2009) was retrieved from the Joint Genome Institute genome database (Nematostella vectensis v1.0; http://genome.jgi-psf.org/Nemve1/Nemve1.home.html; gene ID number 126270). 5\u2019 and 3\u2019 RACE were conducted in order to confirm in silico predicted gene sequences, and to generate templates for RNA probes for in situ hybridization experiments. RACE PCR fragments were cloned into the pGEM-T plasmid vector using the pGEM-T Vector Systems (Promega), and were sequenced at Macrogen Corp., Maryland.\n\n### Generation of an antibody against GLWamide\n\nAn antibody against a synthetic peptide CEAGAPGLWamide corresponding in amino acid sequence to GLWamide I (Figure 1\u2014figure supplement 1) was generated in rabbit (YenZym Antibodies, LLC). Following immunization, the resultant antiserum was affinity purified with the CEAGAPGLWamide peptide. The affinity purified antibody was then affinity-absorbed with KECPPGLWGC-cooh and KECLPGVWG-cooh, which correspond to predicted peptides generated by NvLWamide-like (Nv242283), to produce a GLWamide-specific antibody. However, this antibody likely cross-reacts with GLWamides regardless of the N-terminal sequence, as immunohistochemistry in Aurelia ephyrae (larval medusae) shows a staining pattern consistent with that previously documented by using an antibody against EQPGLWamide (Figure 2\u2014figure supplement 1; [Nakanishi et al., 2009]).\n\n### CRISPR-Cas9-mediated mutagenesis\n\nUsing the published method (Nakayama et al., 2013), sgRNAs were in vitro transcribed from PCR-amplified templates by using MEGAscript transcription kits (Ambion). To generate sgRNA templates, we designed 5\u2019 and 3\u2019 oligonucleotides as follows.\n\n5\u2019 oligonucleotide:\n\n5\u2019-AATTAATACGACTCACTATAGn18-19GTTTTAGAGCTAGAAATAGC-3\u2019 where the RNA promoter (T7 is shown) is in bold and the sgRNA target sequence is in italic. The first G in the sgRNA target sequence is necessary for transcription by RNA polymerase.\n\n3\u2019 oligonucleotide:\n\n5\u2019-GATCCGCACCGACTCGGTGCCACTTTTTCAAGTTGATAACGGACTAGCCTTATTTTAACTTGCTATTTCTAGCTCTAAAAC-3\u2019\n\n19\u201320 nt-long sgRNA target sites were identified in genomic locus for NvGLW by using the Targeter website (http://zifit.partners.org) (Hwang et al., 2013). To minimize off-target effects, target sites that had 17 bp-or-higher sequence identity elsewhere in the genome (Nematostella vectensis v1.0; http://genome.jgi.doe.gov/Nemve1/Nemve1.home.html) were excluded. Selected target sequences were as follows.\n\n5\u2019-GGCTGGTGCACCAGGCCTCT-3\u2019 (Cr1)\n\n5\u2019-GATCTTTTACCCCAGAGGCC-3\u2019 (Cr2)\n\n5\u2019-GGTCTATGGGGTAGAGAAGC-3\u2019 (Cr3)\n\n5\u2019-GGGCTGCGTTATACTTGTCT-3\u2019 (Cr4)\n\n5\u2019-GGTACACTCTAACAGATTGT-3\u2019 (Cr5)\n\nsgRNA species were mixed at equal concentrations, and the sgRNA mix and Cas9 endonuclease (PNA Bio, PC15111, Thousand Oaks, CA, USA) were co-injected into fertilized eggs at concentrations of 500 ng/\u00b5l and 1000 ng/\u00b5l, respectively.\n\n### Genotyping of embryos\n\nGenomic DNA from single embryos or pieces of polyp tentacles from single polyps was extracted by using a published protocol (Ikmi et al., 2014), and the targeted genomic loci were amplified by PCR. To determine the sequence of mutant alleles, PCR products from genomic DNA extracted from F1 mutant polyps were gel-purified, cloned and sequenced by using a standard procedure. Using the sequence information of mutant alleles, allele-specific primers were designed in order to genotype single F2 embryos. Primers used are listed below.\n\nFor sequencing mutant alleles,\n\nForward 5\u2019- AATGTGAACAACGACGACGACAACG-3\u2019\n\nReverse 5\u2019- GGAGTGGTTTCCAAATCTCCCGAGC \u22123\u2019\n\nFor genotyping,\n\nForward 5\u2019- CATGCGGAGACCAAGCGCAAGGC-3\u2019 (Figure 3A)\n\nReverse (glw-a) 5\u2019-CCAGATGCCTGGTGATAC-3\u2019 ([1] in Figure 3A)\n\nReverse (glw-b) 5\u2019- CCCAGAGCCAGAGCCTGGCG-3\u2019 ([2] in Figure 3A)\n\nReverse (glw-c) 5\u2019- CGGCCGGCGCATATATAG-3\u2019 ([3] in Figure 3A)\n\n### Immunofluorescence, in situ hybridization, and confocal microscopy\n\nAnimal fixation, immunohistochemistry, and in situ hybridization were performed as previously described (Nematostella vectensis, (Martindale et al., 2004; Nakanishi et al., 2012); Aurelia sp.1 (Nakanishi et al., 2009)). For immunohistochemistry, we used primary antibodies against GLWamide (rabbit, 1:200), acetylated \u2202-tubulin (mouse, 1:500, Sigma T6793) and tyrosinated \u2202-tubulin (mouse, 1:500, Sigma T9028), and secondary antibodies AlexaFluor 568 (mouse. 1:200, Molecular Probes) and AlexaFluor 647 (mouse, 1:200, Molecular Probes). Nuclei were labeled using fluorescent dyes DAPI (1:1,000, Molecular Probes), and filamentous actin was labeled using AlexaFluor 488-conjugated phalloidin (1:25, Molecular Probes). For in situ hybridization, antisense digoxigenin-labeled riboprobes were synthesized by using the MEGAscript transcription kits according to manufacturer\u2019s recommendation (Ambion), and were used at the final concentration of 1 ng/\u03bcl. Fluorescent images were recorded using a Zeiss LSM 710 or Leica SP5 Confocal Microscopes. Images were viewed using ImageJ.\n",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "1723e917-a029-41c9-a1b4-a69480af55f5",
+      "submission_id": "477415b0-9dab-474a-a7b9-b68125832904",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alejandro S\u00e1nchez Alvarado, Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39742.020](https://doi.org/10.7554/eLife.39742.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"CRISPR knockouts reveal an endogenous role for ancient neuropeptides in regulating developmental timing in a sea anemone\" for consideration by eLife. Your article has been reviewed by Diethard Tautz as the Senior Editor, Alejandro S\u00e1nchez Alvarado as the Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nNakanishi and Martindale use a knockout approach to study the role of GLWamide neuropeptides play in polyp morphogenesis in the Cnidarian, Nematostella vectensis. The authors find that GLWamides are not required for the polyp transition but significantly accelerate polyp morphogenesis. Because of the ancient origin of these peptides, the authors propose that Wamide peptides likely have an evolutionarily-conserved role in accelerating developmental transitions in both cnidarians and bilaterians. While many of the findings are not unexpected based on past studies and could, therefore, be viewed as incremental, we are enthusiastic and view the study as innovative and highly important because it: (1) uses modern, definitive genetic techniques to address this question for the first time; and (2) provides a roadmap for using Nematostella for complex reverse genetic experiments. In fact, this is one of the first studies that has used F2 and F3 non-mosaic CRISPR KO animals (rather than mosaic F0) in a cnidarian. As such, this work sets a new standard for cnidarian loss-of-function research. Progress in our understanding of the evolution of physiological systems has been hampered by lack of tractable cnidarian model organisms, so it is exciting to see this kind of study.\n\nEssential revisions:\n\nBecause of the importance of this study, we would like for the authors to address the following issues:\n\n1) The results that were obtained from the experiments reported are interesting; however, the authors' conclusion is based on the assumption that the gene in question is the only GLWamide-encoding gene in Nematostella. What is the evidence that no other related peptide is present (i.e., very short seq: LWG followed by K or R; easy to overlook), given also that the current genome assembly isn't great (see Figure 5\u2014figure supplement 1)?\n\n2) The antibody they used was generated against CEAGAPGLWamide and would probably not detect other Wamide-like peptides. The delayed metamorphosis reported by the authors is also consistent with the presence of an additional XWamide/LWamide that may induce metamorphosis less effectively. Also, Nematostella metamorphosis is different from other studied cnidarians (hydrozoans and corals) in that it does not require an exogenous trigger. Hence, these findings could be true for Nematostella but not necessarily for other cnidarians, where a microbial film or LWamide change metamorphosis rates from <5% in their absence to >95% when applied. Our recommendation: either provide evidence to exclude other LWamide encoding genes in Nematostella or, adapt the conclusion to the actual findings.\n\n3) The paper would benefit from a better discussion of previous work done on the role of LWamides in cnidarians. For example, McFarlane et al. (1987), Takahashi et al. (1997), and Katsukura et al. (2004) reported that LWamide peptides (also known in Hydra as hym-54) cause a rhythmic contraction in sea anemone and hydrozoan muscles (at lower concentrations). Has there been any defect in locomotion or phototaxis in KO animals?\n\n4) The authors write that previous work suggested the Wamides are required for metamorphosis. This is not entirely correct, and the text should be carefully revised. Conzelmann et al. showed that exogenous MIP can 'induce' or 'trigger' larval settlement and that the effects on the cilia require the MIP-receptor. They did not claim that MIP is 'required' for settlement.\n\n5) In the Discussion section, the authors refer to a study by Plickert et al. on the role of GLWamide peptides in regulating Hydractinia metamorphosis. Plickert et al. concluded that GLWamide was required for metamorphosis in Hydractinia. This was based on two lines of evidence. One was the RNAi knockdown of the proneuropeptide that led to a delay/reduced rate in metamorphosis. The other was the pharmacological inhibition of the \u03b1-amidating enzyme that is required to convert the C-terminal Gly into an amide group during neuropeptide maturation. Inhibition of this enzyme with the copper chelators diethyl-dithiocarbamate (DDC) or tetra-ethyl-thiuram-disulfide (TETD) completely blocked metamorphosis. This effect could be rescued by synthetic GLWamide. Nakanishi and Martindale only mention the RNAi results and argue that the data in the Plickert et al. paper are consistent with GLWamide having an accelerating role. However, they should also discuss the inhibitor results and the rescue by the peptide, which suggest a requirement of amidated peptides.\n\n6) It may well be that there are species-specific differences in the involvement of GLWamides in the regulation of metamorphosis. The discussion presents the role of GLWamides and MIPs in general, assuming a conserved role. It should be made clear when the authors talk about the function of the peptide in Nematostella and when they suggest a conservation of function in other species.\n\n7) The following two statements should be carefully reworded:\n\nIntroduction: the authors write that \"Contrary to the hypothesis that Wamide is necessary for life cycle transition, we report that Wamide knockout mutant larvae can transform into morphologically normal polyps.\"\n\nand\n\nResults section: \"The above results are incompatible with the previously proposed hypothesis that GLWamide is an indispensable component of the regulatory system controlling cnidarian metamorphosis (e.g. Plickert et al., 2003).\"\n\nThis work was done in Nematostella and the hypothesis that Wamide is necessary for lifecycle transition was proposed based on experiments in Hydractinia. The two diverged in or prior to the Cambrian. See also previous comments about the copper chelator experiments in Hydractinia.\n\n8) The authors write that \"in the annelid polychaete Platynereis, MIP (Wamide) receptor expression is necessary for larval settlement behavior (Conzelmann et al., 2013) \u2026 reducing the expression of MIP by morpholino antisense oligonucleotide inhibits feeding behavior in the juvenile, but not metamorphosis (Williams, Conzelmann, and Jekely, 2015). This suggests the presence of as-yet-unknown ligands for the \"MIP\" receptor.\" The conclusion that the Platynereis MIP receptor has other ligands is not supported by the available data. First, the morpholino-mediated knockdown of the MIP receptor by Conzelmann et al. only abrogated the effect of MIP on ciliary closures. A longer-term effect on spontaneous settlement behavior (i.e. without extra MIP addition) was not investigated. So, the statement \"receptor expression is necessary for larval settlement\" is not precise. Likewise, the observation that MIP knockdown by morpholinos inhibits feeding behavior in the juvenile, but not metamorphosis, does not mean that the MIP receptor has other ligands. Instead, what has been shown recently, is that MIP peptides signal through two different receptors in Platynereis. One is the MIP GPCR, a sex-peptide-receptor ortholog, the other one is a peptide-gated channel. Peptide-gated channels are also present in the hydrozoan Hydra. The authors should rewrite this part of the Discussion section. In light of these studies, the authors may also want to discuss the potential nature of the Nematostella GLWamide receptor(s).\n\n9) The raw data in Figure 5 should be supplied. In addition, the authors should replete the data to show the spread of the data points.\n\nSome raw confocal image stack of the GLWamide in situs and immunos should be uploaded as source data files.\n\n10) One final shared concern is with the interpretation of staining results, where it is suggested that GLWamide is expressed in sensory neurons. It is customary in the Nematostella community to refer to some neurons as sensory based on their position and potential similarity to putative cnidarian sensory cell types listed in the literature. However, we are not aware of any direct physiological or genetic evidence indicating that these cells play a sensory role in Nematostella, or what senses they may underlie. Furthermore, it is not known if such cells have non-sensory functions in neuronal signaling. It might, therefore, be best to say these cells are putative sensory cells or could be sensory cells and discuss the evidence for that in more detail. If there is indeed solid evidence, then perhaps that should be taken into account in the discussion: does the presence of GLWamide in specific sensory cells link specific environmental cues to polyp morphogenesis?\n",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b0f2c2d-fc4a-41e9-b1e9-69b7295630c2",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C1",
+      "claim": "Neuropeptides are evolutionarily ancient peptide hormones of the nervous and neuroendocrine systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides are evolutionarily ancient peptide hormones of the nervous and neuroendocrine systems, and are thought to have regulated metamorphosis in early animal ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and introduction, drawing from scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "aedefee7-0e6f-4a73-a10f-b76f76c0e372",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C2",
+      "claim": "Neuropeptides are thought to have regulated metamorphosis in early animal ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides are evolutionarily ancient peptide hormones of the nervous and neuroendocrine systems, and are thought to have regulated metamorphosis in early animal ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about ancestral function based on comparative evidence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "0c725cc8-1cdb-4a0d-ae5a-c8483fbffbb1",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C3",
+      "claim": "The Wamide family of neuropeptides is shared across Bilateria and Cnidaria.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the deeply conserved Wamide family of neuropeptides\u2014shared across Bilateria (e.g. insects and worms) and its sister group Cnidaria (e.g. jellyfishes and corals)\u2014has been implicated in mediating life-cycle transitions, yet their endogenous roles remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge based on comparative genomics and phylogenetic relationships.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "7652560d-af57-41da-abcf-ceb52dc2470e",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C4",
+      "claim": "Wamide neuropeptides have been implicated in mediating life-cycle transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the deeply conserved Wamide family of neuropeptides\u2014shared across Bilateria (e.g. insects and worms) and its sister group Cnidaria (e.g. jellyfishes and corals)\u2014has been implicated in mediating life-cycle transitions, yet their endogenous roles remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research cited throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "f5674f87-4282-448e-84cf-07e2cedbf595",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C5",
+      "claim": "The endogenous roles of Wamide neuropeptides remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the deeply conserved Wamide family of neuropeptides\u2014shared across Bilateria (e.g. insects and worms) and its sister group Cnidaria (e.g. jellyfishes and corals)\u2014has been implicated in mediating life-cycle transitions, yet their endogenous roles remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of knowledge in the field, providing rationale for the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "feb44f06-fa3d-44dd-8d6e-1f36a879b036",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C6",
+      "claim": "GLWamide regulates the timing of life cycle transition in Nematostella vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "By using CRISPR-Cas9-mediated reverse genetics, we show that cnidarian Wamide\u2014referred to as GLWamide\u2014regulates the timing of life cycle transition in the sea anemone cnidarian Nematostella vectensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "8c4ef2af-47e5-4701-bf30-5828c0ea0d4d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C7",
+      "claim": "Mutant planula larvae lacking GLWamides transform into morphologically normal polyps at a rate slower than wildtype control larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that mutant planula larvae lacking GLWamides transform into morphologically normal polyps at a rate slower than that of the wildtype control larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing knockout mutants to wildtype controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "4eb26ef6-9c8e-4835-a251-e1dd42e5cc7d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C8",
+      "claim": "Treatment of GLWamide null mutant larvae with synthetic GLWamide peptides is sufficient to restore a normal rate of metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of GLWamide null mutant larvae with synthetic GLWamide peptides is sufficient to restore a normal rate of metamorphosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by rescue experiments with synthetic peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "cbdeeb9e-2161-469b-800d-b2c40d9aa306",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C9",
+      "claim": "GLWamide plays a dispensable, modulatory role in accelerating metamorphosis in Nematostella vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that GLWamide plays a dispensable, modulatory role in accelerating metamorphosis in a sea anemone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data showing delayed but not blocked metamorphosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "a74b2d55-8edf-4dc7-91aa-304e6a5e4495",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C10",
+      "claim": "Neuropeptides are expressed in many cells of the nervous and neuroendocrine systems of Bilateria and Cnidaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides are evolutionarily ancient hormones\u2014secreted, diffusible signaling-molecules\u2014that are expressed in many cells of the nervous and neuroendocrine systems of Bilateria (e.g. vertebrates, insects and worms) and its sister group Cnidaria (e.g. jellyfishes, corals and sea anemones) (Grimmelikhuijzen and Hauser, 2012; Grimmelikhuijzen et al., 2002; Hartenstein, 2006; Walker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "95dbf5b0-3528-4040-a48c-db6936c496b3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C11",
+      "claim": "Neuropeptides are short polypeptides generated from larger precursor proteins through proteolytic cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "They are short polypeptides generated from larger precursor proteins through proteolytic cleavage, and are stored in membrane-bound secretory vesicles that are distributed throughout the neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about neuropeptide biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "4cda69c6-908c-44f6-836b-16c6bff2d52c",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C12",
+      "claim": "Neuropeptides are stored in membrane-bound secretory vesicles that are distributed throughout the neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "They are short polypeptides generated from larger precursor proteins through proteolytic cleavage, and are stored in membrane-bound secretory vesicles that are distributed throughout the neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about neuropeptide cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "f36c4e21-6368-43f9-a864-1e327651c63e",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C13",
+      "claim": "Peptide \u03b1-amidation occurs via a post-translational, enzymatic conversion of a C-terminal glycine into an amide group.",
+      "claim_type": "EXPLICIT",
+      "source": "For some, peptide \u03b1-amidation occurs via a post-translational, enzymatic conversion of a C-terminal glycine into an amide group, and is often critical for biological activity (reviewed in [Eipper et al., 1992]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "1a5e65b3-2e4c-4869-8726-601f4a565dbc",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C14",
+      "claim": "Peptide \u03b1-amidation is often critical for biological activity of neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "For some, peptide \u03b1-amidation occurs via a post-translational, enzymatic conversion of a C-terminal glycine into an amide group, and is often critical for biological activity (reviewed in [Eipper et al., 1992]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "92845bd6-4ea9-49a7-a066-1875fd69f658",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C15",
+      "claim": "Intercellular signaling occurs when neuropeptides are released from secretory vesicles into the extracellular space and received by receptors of target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercellular signaling occurs when neuropeptides are released from the secretory vesicles into the extracellular space and received by receptors of target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about neuropeptide signaling mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "127e94e4-602e-440f-b10f-ee080dd0236a",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C16",
+      "claim": "Neuropeptides have been implicated in regulating behavior, physiology, and development in animals with nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides have been implicated in regulating a wide range of biological processes\u2014from behavior, physiology, and development\u2014in animals with nervous systems (summarized in [Strand, 1999]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a summary article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "22bb8977-5d28-4053-969d-27cadc8714de",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C17",
+      "claim": "Neuropeptides were early neurotransmitters in the evolution of nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that neuropeptides were early neurotransmitters in the evolution of nervous systems, testing hypotheses about the conserved roles of neuropeptides in extant animals is directly relevant to understanding how the primitive nervous system may have functioned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about nervous system evolution.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "415d4bef-a794-408d-ae17-6451844765d3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C18",
+      "claim": "Several peptide hormones are shared across Bilateria and Cnidaria, including insulin-related peptide, glycoprotein hormone, prokineticin, and amidated peptides with carboxy-terminal sequences Wamide, RFamide and RYamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative genomic evidence suggests that several peptide hormones are shared across Bilateria and Cnidaria, namely an insulin-related peptide, glycoprotein hormone, prokineticin, and amidated peptides with carboxy-terminal sequences Wamide, RFamide and RYamide (J\u00e9kely, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative genomic evidence cited in the text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "1617f4a7-66c9-44f0-a037-0a21d3cab413",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C19",
+      "claim": "Only amidated peptides have been shown to occur in neurons of both bilaterians and cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, only amidated peptides have been shown to occur in neurons of both bilaterians and cnidarians (e.g. (Conzelmann and J\u00e9kely, 2012; Conzelmann et al., 2013; Grimmelikhuijzen, 1985; Koizumi et al., 2004; Schmich et al., 1998a); see also (Walker et al., 2009) for a review of literature on RFamide), and thus are here considered bona fide conserved neuropeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "e6a6e900-2cf4-464a-9306-fd0fdee1b0a9",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C20",
+      "claim": "Amidated peptides are considered bona fide conserved neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, only amidated peptides have been shown to occur in neurons of both bilaterians and cnidarians (e.g. (Conzelmann and J\u00e9kely, 2012; Conzelmann et al., 2013; Grimmelikhuijzen, 1985; Koizumi et al., 2004; Schmich et al., 1998a); see also (Walker et al., 2009) for a review of literature on RFamide), and thus are here considered bona fide conserved neuropeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited evidence of neuronal expression in both groups.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "13022fa6-787c-4836-b56c-2a09f163727a",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C21",
+      "claim": "The precursor protein of conserved neuropeptides typically encodes multiple copies of immature neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The precursor protein of these neuropeptides typically encodes multiple copies of immature neuropeptides (e.g. (Conzelmann and J\u00e9kely, 2012; Darmer et al., 1991; Leviev and Grimmelikhuijzen, 1995), some of which can differ in amino acid sequence; this indicates that an immature neuropeptide sequence can duplicate and diverge within a gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on neuropeptide precursor structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "80e9a753-6ae8-4ea6-9734-93fc37a7c835",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C22",
+      "claim": "Immature neuropeptide sequences encoded by precursor proteins can differ in amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The precursor protein of these neuropeptides typically encodes multiple copies of immature neuropeptides (e.g. (Conzelmann and J\u00e9kely, 2012; Darmer et al., 1991; Leviev and Grimmelikhuijzen, 1995), some of which can differ in amino acid sequence; this indicates that an immature neuropeptide sequence can duplicate and diverge within a gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "e1843ef5-2032-4d8f-8f61-580e82b98b5d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C23",
+      "claim": "An immature neuropeptide sequence can duplicate and diverge within a gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The precursor protein of these neuropeptides typically encodes multiple copies of immature neuropeptides (e.g. (Conzelmann and J\u00e9kely, 2012; Darmer et al., 1991; Leviev and Grimmelikhuijzen, 1995), some of which can differ in amino acid sequence; this indicates that an immature neuropeptide sequence can duplicate and diverge within a gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of multiple, divergent copies within precursor proteins.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "67bf7279-9312-4e25-9236-dca273eb0d67",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C24",
+      "claim": "Paralogous neuropeptides can be generated from a single gene or from different genes that emerged by gene duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "Paralogous neuropeptides can thus be generated from a single gene, or from different genes that emerged by gene duplication (i.e. paralogous genes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about evolutionary mechanisms based on the structure of neuropeptide genes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "95a047b8-7247-4da1-8d91-7639d955ea17",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C25",
+      "claim": "Neuropeptides can be lost during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides can also be lost during evolution; for example, deuterostome bilaterians (e.g. chordates and echinoderms) lack Wamide precursor orthologs (Conzelmann et al., 2013), and the RYamide-encoding gene appears absent from the genome of anthozoan cnidarians (sea anemones and corals; e.g. (Anctil, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations showing absence of specific neuropeptides in certain lineages.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "c1a26604-58f3-441f-800d-62f3af7b4f49",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C26",
+      "claim": "Deuterostome bilaterians lack Wamide precursor orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides can also be lost during evolution; for example, deuterostome bilaterians (e.g. chordates and echinoderms) lack Wamide precursor orthologs (Conzelmann et al., 2013), and the RYamide-encoding gene appears absent from the genome of anthozoan cnidarians (sea anemones and corals; e.g. (Anctil, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to comparative genomic research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "508ae288-21e2-47da-9d54-ca74380e603e",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C27",
+      "claim": "The RYamide-encoding gene appears absent from the genome of anthozoan cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides can also be lost during evolution; for example, deuterostome bilaterians (e.g. chordates and echinoderms) lack Wamide precursor orthologs (Conzelmann et al., 2013), and the RYamide-encoding gene appears absent from the genome of anthozoan cnidarians (sea anemones and corals; e.g. (Anctil, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to genomic analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "dc9b34d9-afdb-4899-8153-5d3f0933e27c",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C28",
+      "claim": "Wamide is expressed in larval nervous systems in bilaterians.",
+      "claim_type": "EXPLICIT",
+      "source": "First, Wamide is expressed in larval nervous systems in bilaterians (e.g. (Conzelmann et al., 2013; Hua et al., 1999) and cnidarians (e.g. [Leitz and Lay, 1995]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "84209346-bd86-424d-b5a1-b355294267e4",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C29",
+      "claim": "Wamide is expressed in larval nervous systems in cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "First, Wamide is expressed in larval nervous systems in bilaterians (e.g. (Conzelmann et al., 2013; Hua et al., 1999) and cnidarians (e.g. [Leitz and Lay, 1995]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "2210bcd8-c3f5-4078-8c08-77c761b3dbd2",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C30",
+      "claim": "Exogenous Wamides have effects on molecular, behavioral and/or morphogenetic processes underlying life cycle transition across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, exogenous Wamides have effects on molecular, behavioral and/or morphogenetic processes underlying life cycle transition across animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple examples cited in the following sentences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "922358da-7218-43b8-8fe6-a115ccc28c86",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C31",
+      "claim": "Wamide neuropeptides can inhibit the synthesis of juvenile hormone in crickets.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Wamide neuropeptides (also known as allatostatin-B, prothoracicostatic peptides, myoinhibitory peptides (MIP), and GLWamide) can inhibit the synthesis of juvenile hormone in crickets (Lorenz et al., 1995) and that of ecdysteroids (the molting hormone) in a silkworm (Hua et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "70ea554b-d6cd-44ce-80d9-a637ccefdcbd",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C32",
+      "claim": "Wamide neuropeptides can inhibit the synthesis of ecdysteroids in a silkworm.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Wamide neuropeptides (also known as allatostatin-B, prothoracicostatic peptides, myoinhibitory peptides (MIP), and GLWamide) can inhibit the synthesis of juvenile hormone in crickets (Lorenz et al., 1995) and that of ecdysteroids (the molting hormone) in a silkworm (Hua et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b00f63c1-0c95-4607-81d6-b39f3dce81eb",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C33",
+      "claim": "Wamide neuropeptides can induce larval settlement of trochophore larvae in annelids.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, they can induce larval settlement of trochophore larvae in annelids (Conzelmann et al., 2013), and metamorphosis of planula larvae into polyps in hydrozoan and scleractinian (hard coral) cnidarians (Erwin and Szmant, 2010; Iwao et al., 2002; Leitz et al., 1994; Schmich et al., 1998b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "407f4ea9-7ea3-4c95-9f63-5af26535cf39",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C34",
+      "claim": "Wamide neuropeptides can induce metamorphosis of planula larvae into polyps in hydrozoan and scleractinian cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, they can induce larval settlement of trochophore larvae in annelids (Conzelmann et al., 2013), and metamorphosis of planula larvae into polyps in hydrozoan and scleractinian (hard coral) cnidarians (Erwin and Szmant, 2010; Iwao et al., 2002; Leitz et al., 1994; Schmich et al., 1998b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b5377f3d-8b5c-47c4-acb1-9d4f8b1c99a3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C35",
+      "claim": "Wamide signaling appears to be necessary for life cycle transition across Bilateria and Cnidaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, Wamide signaling appears to be necessary for life cycle transition across Bilateria and Cnidaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on evidence from knockdown experiments cited in the following sentences.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "7be78c50-27c3-4a7b-bbfe-6dac59585421",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C36",
+      "claim": "Morpholino-mediated knockdown of MIP receptor expression blocked MIP-induced larval settlement behavior in Platynereis dumerilii.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence comes from the annelid bilaterian Platynereis dumerilii, where morpholino-mediated knockdown of MIP receptor expression blocked MIP-induced larval settlement behavior (Conzelmann et al., 2013); but see Discussion), and the hydrozoan cnidarian Hydractinia echinate, where RNAi-mediated knockdown of GLWamide precursor expression can decrease rates of metamorphosis, and synthetic GLWamide could rescue metamorphosis-less phenotype that resulted from pharmacological inhibition of neuropeptide amidation (Plickert et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "73e3e2fb-5ddb-4325-9ece-d763c3137350",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C37",
+      "claim": "RNAi-mediated knockdown of GLWamide precursor expression can decrease rates of metamorphosis in Hydractinia echinate.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence comes from the annelid bilaterian Platynereis dumerilii, where morpholino-mediated knockdown of MIP receptor expression blocked MIP-induced larval settlement behavior (Conzelmann et al., 2013); but see Discussion), and the hydrozoan cnidarian Hydractinia echinate, where RNAi-mediated knockdown of GLWamide precursor expression can decrease rates of metamorphosis, and synthetic GLWamide could rescue metamorphosis-less phenotype that resulted from pharmacological inhibition of neuropeptide amidation (Plickert et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "418d8217-684e-449c-8a3c-fdaf1bf2f932",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C38",
+      "claim": "Synthetic GLWamide could rescue metamorphosis-less phenotype that resulted from pharmacological inhibition of neuropeptide amidation in Hydractinia echinate.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence comes from the annelid bilaterian Platynereis dumerilii, where morpholino-mediated knockdown of MIP receptor expression blocked MIP-induced larval settlement behavior (Conzelmann et al., 2013); but see Discussion), and the hydrozoan cnidarian Hydractinia echinate, where RNAi-mediated knockdown of GLWamide precursor expression can decrease rates of metamorphosis, and synthetic GLWamide could rescue metamorphosis-less phenotype that resulted from pharmacological inhibition of neuropeptide amidation (Plickert et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "82291d75-e59e-453d-9373-ab56e3b709fe",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C39",
+      "claim": "Reduced rates of metamorphosis in GLWamide-deficient hydrozoan larvae were not consistently observed across independent experiments despite a near-complete loss of endogenous GLWamide precursor transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reduced rates of metamorphosis in GLWamide-deficient hydrozoan larvae were not consistently observed across independent experiments despite a near-complete loss of endogenous GLWamide precursor transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from prior research that motivates the current study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "5ceb054a-cda6-4df8-8c09-1c11bde45c83",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C40",
+      "claim": "It was proposed that quantitatively small amounts of GLWamide might be sufficient for larvae to remain competent to metamorphosis induction.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore proposed that quantitatively small amounts of GLWamide might be sufficient for larvae to remain competent to metamorphosis induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain inconsistent results in prior research.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b9941a95-ee64-455c-a056-d9743f3d1478",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C41",
+      "claim": "The genome of Nematostella vectensis encodes one Wamide (GLWamide) precursor homolog (Nv126270).",
+      "claim_type": "EXPLICIT",
+      "source": "The genome of the sea anemone Nematostella vectensis (Putnam et al., 2007) encodes one Wamide (GLWamide, MH939200) precursor homolog (Nv126270) (Anctil, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic data and citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "bb69f4e6-59da-4100-aad3-1dc9c3427e94",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C42",
+      "claim": "The GLWamide precursor gene was predicted to contain a single exon based on in silico gene prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLWamide precursor gene was predicted to contain a single exon based on in silico gene prediction (http://genome.jgi.doe.gov/cgi-bin/dispGeneModel?db=Nemve1&id=126270); however, comparison of the N. vectensis genome and cDNA sequences instead shows that the GLWamide gene consists of two exons (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational gene prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "8afbb741-9e4e-4894-92d0-3fb3b9d635fe",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C43",
+      "claim": "Comparison of the N. vectensis genome and cDNA sequences shows that the GLWamide gene consists of two exons.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLWamide precursor gene was predicted to contain a single exon based on in silico gene prediction (http://genome.jgi.doe.gov/cgi-bin/dispGeneModel?db=Nemve1&id=126270); however, comparison of the N. vectensis genome and cDNA sequences instead shows that the GLWamide gene consists of two exons (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing genome and cDNA sequences, shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "c0849639-f9af-4610-8d2d-51ec53d6433e",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C44",
+      "claim": "The GLWamide gene encodes different copy numbers of nine distinct GLWamide peptides that vary in N-terminal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of putative endoproteolytic cleavage sites (i.e. acidic and basic amino acid residues; (Darmer et al., 1991; Leviev and Grimmelikhuijzen, 1995) and C-terminal amidation sites (i.e. C-terminal Gly residue) in the predicted precursor protein sequence suggests that the GLWamide gene encodes different copy numbers of nine distinct GLWamide peptides that vary in N-terminal sequence (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis of the precursor protein sequence, shown in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b1c1284c-4d12-48bf-a221-4fba2385e1f0",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C45",
+      "claim": "NvLWamide-like gene (Nv242283) is predicted to generate and release QCPPGLWGC peptides, but not GLWamides, because of the lack of the canonical amidation signal, glycine, at the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that previously documented NvLWamide-like gene (Nv242283; (Havrilak et al., 2017) is predicted to generate and release QCPPGLWGC peptides, but not GLWamides, because of the lack of the canonical amidation signal, glycine, at the C-terminus (see Figure 5\u2014figure supplement 1 for experimental validation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis and experimental validation shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "f40ee0fa-450b-432b-b7ac-d41fc1a59552",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C46",
+      "claim": "GLWamide precursor transcripts were first detected in ectodermal sensory cells in the outer epithelium and in the pharynx during early-mid planula development.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously published gene/peptide expression data (Nakanishi et al., 2012; Watanabe et al., 2014), GLWamide precursor transcripts were first detected in ectodermal sensory cells in the outer epithelium and in the pharynx during early-mid planula development (arrowheads in Figure 1A,B; inset in A) when a bundle of long cilia known as the apical tuft develops at the aboral pole.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 1A,B and consistent with prior publications.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "4939991d-bf04-477a-99d0-74753e8f9e5a",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C47",
+      "claim": "GLWamide transcripts appear in a subset of endodermal epithelial cells in the body column at the mid-planula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the mid-planula stage, GLWamide transcripts appear in a subset of endodermal epithelial cells in the body column (arrowheads in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b95e0765-c467-4c82-bd49-9a02f07c6696",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C48",
+      "claim": "GLWamide-positive sensory cells in the pharynx were often asymmetrically distributed along the directive axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GLWamide-positive sensory cells in the pharynx were often asymmetrically distributed along the directive axis, oriented perpendicular to the oral-aboral axis (inset in Figure 1D; [Watanabe et al., 2014]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 1D inset and consistent with prior publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "63a61140-fbeb-41c3-9e98-c053855f44af",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C49",
+      "claim": "GLWamide peptide expression is detected in neuronal processes of the ectodermal and endodermal nervous systems at the mid-late planula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining revealed GLWamide peptide expression in a number of neuronal processes of the ectodermal and endodermal nervous systems at the mid-late planula stage (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "762c46ec-dd52-4453-8217-da7077592701",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C50",
+      "claim": "Ectodermal sensory cells of the body column extend basal processes aborally or laterally, but not toward the oral direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectodermal sensory cells of the body column extend basal processes aborally or laterally, but not toward the oral direction (Figure 2C,D), while GLWamide-positive pharyngeal sensory cells extend neurites in any direction (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "c1a64ed6-c338-42c8-b6fb-c73e8d74b1cc",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C51",
+      "claim": "GLWamide-positive pharyngeal sensory cells extend neurites in any direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectodermal sensory cells of the body column extend basal processes aborally or laterally, but not toward the oral direction (Figure 2C,D), while GLWamide-positive pharyngeal sensory cells extend neurites in any direction (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 2E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "0ee8fb7f-a017-4743-8856-47069fbb9aa6",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C52",
+      "claim": "In the endoderm, GLWamide expression is detected in neurons that form longitudinal neurite bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "In the endoderm, GLWamide expression is detected in neurons that form longitudinal neurite bundles (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 2G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "9f03c66a-6624-4d40-a6d9-043516e53635",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C53",
+      "claim": "Prior to transformation into a polyp, GLWamides are expressed in neurons and their neurites that constitute ectodermal and endodermal neural networks of the planula larva.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that, prior to transformation into a polyp through formation of oral tentacles, GLWamides are expressed in neurons and their neurites that constitute ectodermal and endodermal neural networks of the planula larva.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the expression data presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "5500c5f7-9f4d-4c29-a2ca-c5e7ad3a9760",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C54",
+      "claim": "CRISPR-Cas9-mediated mutagenesis can create null mutant alleles by introducing frameshift-causing indel mutations in the 5' region of the gene via an error-prone, non-homologous end-joining (NHEJ) DNA repair mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach can create null mutant alleles at the target gene locus in two ways: (1) by introducing frameshift-causing indel mutations in the 5' region of the gene via an error-prone, non-homologous end-joining (NHEJ) DNA repair mechanism, so that the translated peptide sequence is altered, and (2) by deleting the protein-coding region of the gene upon cleavages at flanking sites (cf. [Nakayama et al., 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CRISPR-Cas9 mechanisms, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "fbd3eef4-5c2f-4e91-9deb-c833a1f9fa99",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C55",
+      "claim": "CRISPR-Cas9-mediated mutagenesis can create null mutant alleles by deleting the protein-coding region of the gene upon cleavages at flanking sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach can create null mutant alleles at the target gene locus in two ways: (1) by introducing frameshift-causing indel mutations in the 5' region of the gene via an error-prone, non-homologous end-joining (NHEJ) DNA repair mechanism, so that the translated peptide sequence is altered, and (2) by deleting the protein-coding region of the gene upon cleavages at flanking sites (cf. [Nakayama et al., 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CRISPR-Cas9 mechanisms, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b8a0d3f9-2ef6-48b7-b173-b685816713c8",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C56",
+      "claim": "Injected F0 animals were usually mosaic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, injected animals--here referred to as 'F0' animals--were usually mosaic mutants (Figure 3\u2014figure supplement 1; [Servetnick et al., 2017]); mutagenesis occurred mosaically in an F0 embryo so that individual cells would carry different mutations, or no mutation at all.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "5c84f5be-350e-4ffe-8f05-6f6655760a9d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C57",
+      "claim": "Mutagenesis occurred mosaically in an F0 embryo so that individual cells would carry different mutations, or no mutation at all.",
+      "claim_type": "EXPLICIT",
+      "source": "However, injected animals--here referred to as 'F0' animals--were usually mosaic mutants (Figure 3\u2014figure supplement 1; [Servetnick et al., 2017]); mutagenesis occurred mosaically in an F0 embryo so that individual cells would carry different mutations, or no mutation at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mosaic nature of F0 mutants, supported by data and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "4d012e42-84f3-4ce1-b0c4-40dea4b6a3ef",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C58",
+      "claim": "Three different null mutant alleles at the GLWamide locus (glw-a, glw-b, and glw-c) were found, all of which carried frameshift mutations predicted to inhibit normal translation of neuropeptide precursor sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon screening, we found three different null mutant alleles at the GLWamide locus (glw-a, glw-b, and glw-c), all of which carried frameshift mutations predicted to inhibit normal translation of neuropeptide precursor sequences (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data and analysis shown in Figure 3A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "3b87695c-b63c-4499-b86d-4595c3bb63f3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C59",
+      "claim": "The oral half of the gastrula embryo can develop into a polyp in Nematostella vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of the ability of the oral half of the gastrula embryo to develop into a polyp (cf. [Fritzenwanker et al., 2007; Lee et al., 2007]), a piece of an aboral tissue of each F2 embryo was surgically separated and used for genomic DNA extraction, while the remaining embryo was individually maintained and allowed to regulate and develop into polyps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Nematostella development, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "306d326e-4c0a-4637-942c-10dfba9b4bc4",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C60",
+      "claim": "At 3dpf, glw-b/glw-c null mutants appeared to be morphologically identical to normal swimming planula larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "At 3dpf, glw-b/glw-c null mutants appeared to be morphologically identical to normal swimming planula larvae (Figure 4A\u2013C,G\u2013I), with an aboral apical tuft (at in Figure 4B,H) and an endoderm in which longitudinal muscle fibers are developing (arrowheads in Figure 4C,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 4A\u2013C,G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "cb0bc746-edc2-4c2b-baf5-1a0dc4611e47",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C61",
+      "claim": "By 5dpf, 80% of glw-b/glw-c null mutants had transformed into morphologically normal primary polyps.",
+      "claim_type": "EXPLICIT",
+      "source": "By 5dpf, the majority of glw-b/glw-c null mutants had transformed into morphologically normal primary polyps (glw-b/glw-c, 80% (n = 35); wildtype control, 78.6% (n = 56); Figure 4D\u2013F,J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data and confocal microscopy shown in Figure 4D\u2013F,J\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "d3191a0f-2923-4669-b8b8-bec408e0f867",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C62",
+      "claim": "By 5dpf, 78.6% of wildtype control animals had transformed into morphologically normal primary polyps.",
+      "claim_type": "EXPLICIT",
+      "source": "By 5dpf, the majority of glw-b/glw-c null mutants had transformed into morphologically normal primary polyps (glw-b/glw-c, 80% (n = 35); wildtype control, 78.6% (n = 56); Figure 4D\u2013F,J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data and confocal microscopy shown in Figure 4D\u2013F,J\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b84c955a-c1aa-44b6-bbc4-501b4c4abbae",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C63",
+      "claim": "glw-b/glw-c null mutants show morphological hallmarks of metamorphosis, including the development of parietal and retractor muscles in the endoderm, the loss of the apical tuft, and the formation of oral tentacles with polyp-specific cell types such as the hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "They show morphological hallmarks of metamorphosis, including the development of parietal and retractor muscles in the endoderm (pm and rm in Figure 4D,J), the loss of the apical tuft (arrowheads in Figure 4E,K; [Nakanishi et al., 2012]), and the formation of oral tentacles with polyp-specific cell types such as the hair cells (Figure 4F,L; (Nakanishi et al., 2012; Watson et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 4D\u2013F,J\u2013L and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "b06e951d-10d7-4838-8f23-2e2f5f2a8cf3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C64",
+      "claim": "Other glw null mutants--namely, glw-a/glw-c (F2) and glw-a/glw-a (F3)\u2014also metamorphosed.",
+      "claim_type": "EXPLICIT",
+      "source": "Other glw null mutants--namely, glw-a/glw-c (F2) and glw-a/glw-a (F3)\u2014also metamorphosed (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments, though data are not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "fd246341-4ccc-458a-834a-8f4a1793b616",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C65",
+      "claim": "GLWamide of the larval nervous system is dispensable for metamorphosis in N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that GLWamide of the larval nervous system is dispensable for metamorphosis in N. vectensis, and that cnidarian metamorphosis can occur via a GLWamide-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that null mutants can complete metamorphosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "843f0751-ff16-4cba-87cc-2a1d189cb2c8",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C66",
+      "claim": "Cnidarian metamorphosis can occur via a GLWamide-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that GLWamide of the larval nervous system is dispensable for metamorphosis in N. vectensis, and that cnidarian metamorphosis can occur via a GLWamide-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that null mutants can complete metamorphosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "d7153fd0-3cfa-4081-afc3-e20b42ee64c2",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C67",
+      "claim": "F2 glw-b/glw-c and wildtype control juvenile polyps can regenerate after being transversely cut into oral and aboral halves.",
+      "claim_type": "EXPLICIT",
+      "source": "F2 glw-b/glw-c and wildtype control juvenile polyps were transversely cut into oral and aboral halves, which were given two weeks to regenerate the aboral and oral regions, respectively. Regeneration occurred normally in glw-b/glw-c mutants; the oral half regenerated the aboral region (glw-b/glw-c, 100% (n = 6); wildtype control, 83.3% (n = 6), and the aboral half regenerated the oral structures such as the pharynx and oral tentacles (glw-b/glw-c, 100% (n = 6); wildtype control, 100% (n = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regeneration experiments with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "aa6560da-02e1-4f0f-9c6d-125a921ee458",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C68",
+      "claim": "GLWamide knockout mutants can generate functional gametes in response to light and temperature cues provided to induce spawning.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that although pharmacological evidence suggests a role in oocyte maturation and spawning in a hydrozoan cnidarian (Takeda et al., 2013), GLWamide knockout mutants can generate functional gametes in response to light and temperature cues provided to induce spawning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experiments with knockout mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "08bfaebc-732f-4abe-8e80-a8b53135666f",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C69",
+      "claim": "GLWamides are not essential for regeneration or reproduction in N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GLWamides are not essential for regeneration or reproduction in N. vectensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the regeneration and spawning experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "11f8f304-e710-4f5e-95e7-43c726d263e2",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C70",
+      "claim": "Wildtype control animals began to metamorphose at 6dpf, and the majority (~86%) had begun transforming by 8 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the wildtype control animals began to metamorphose at 6dpf, and the majority (~86%) had begun transforming by 8 dpf, while the null mutants began to metamorphose at 7dpf, and less than half (~42%) had begun metamorphosis by 8 dpf (Figure 5); the differences at 7 and 8 dpf were statistically significant (\u03b1 = 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-course data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "41e25a2d-9880-4fb6-afe6-92b886c45ed3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C71",
+      "claim": "GLWamide null mutants began to metamorphose at 7dpf, and less than half (~42%) had begun metamorphosis by 8 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the wildtype control animals began to metamorphose at 6dpf, and the majority (~86%) had begun transforming by 8 dpf, while the null mutants began to metamorphose at 7dpf, and less than half (~42%) had begun metamorphosis by 8 dpf (Figure 5); the differences at 7 and 8 dpf were statistically significant (\u03b1 = 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-course data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "31a235c9-4884-4bd3-bf18-dcfc180bfdd3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C72",
+      "claim": "The differences in metamorphosis rates between wildtype and null mutants at 7 and 8 dpf were statistically significant (\u03b1 = 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the wildtype control animals began to metamorphose at 6dpf, and the majority (~86%) had begun transforming by 8 dpf, while the null mutants began to metamorphose at 7dpf, and less than half (~42%) had begun metamorphosis by 8 dpf (Figure 5); the differences at 7 and 8 dpf were statistically significant (\u03b1 = 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of time-course data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "ba027fa0-8510-4b9d-8d28-0951a2f8ec16",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C73",
+      "claim": "GLWamide null mutants metamorphosed at a slower rate than the wildtype control.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus GLWamide null mutants metamorphosed at a slower rate than the wildtype control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the time-course data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "438fb4d9-d325-4c71-9e47-179b90e60292",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C74",
+      "claim": "Null mutants treated with GLWamide began metamorphosis at 6 dpf, and the majority (~84%) had started metamorphosis by 8 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that, similar to the wildtype animals, the null mutants treated with GLWamide began metamorphosis at 6 dpf, and the majority (~84%) had started metamorphosis by 8 dpf, showing statistically higher proportions of metamorphosing animals at 7 and 8 dpf relative to untreated null mutants (\u03b1 = 0.05; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "87a2d818-d364-4b2e-8df5-ff604737fe23",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C75",
+      "claim": "Null mutants treated with GLWamide showed statistically higher proportions of metamorphosing animals at 7 and 8 dpf relative to untreated null mutants (\u03b1 = 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that, similar to the wildtype animals, the null mutants treated with GLWamide began metamorphosis at 6 dpf, and the majority (~84%) had started metamorphosis by 8 dpf, showing statistically higher proportions of metamorphosing animals at 7 and 8 dpf relative to untreated null mutants (\u03b1 = 0.05; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of rescue experiment data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "6164345d-e2c1-4a8f-a412-1475f199669d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C76",
+      "claim": "GLWamide regulates metamorphosis by accelerating the process in N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we conclude that GLWamide regulates metamorphosis by accelerating the process in N. vectensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the time-course and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "3b458929-c4a4-4379-9714-c9354527a0ad",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C77",
+      "claim": "This is the first neuropeptide knockout animals from an early-evolving animal group Cnidaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we created the first neuropeptide knockout animals from an early-evolving animal group Cnidaria, and examined the endogenous function of deeply conserved (GL)Wamide neuropeptides in the sea anemone cnidarian Nematostella vectensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "46b7e21a-465c-499d-88b2-1ffd70c07ad1",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C78",
+      "claim": "In N. vectensis GLWamide neuropeptides are expressed in ectodermal and endodermal nervous systems of the planula larva.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that in N. vectensis GLWamide neuropeptides are expressed in ectodermal and endodermal nervous systems of the planula larva, but are not essential for transformation of the planula into a polyp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "16bfb692-d634-4a32-94ce-822ac7e68aeb",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C79",
+      "claim": "GLWamide neuropeptides are not essential for transformation of the planula into a polyp in N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that in N. vectensis GLWamide neuropeptides are expressed in ectodermal and endodermal nervous systems of the planula larva, but are not essential for transformation of the planula into a polyp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the observation that null mutants can complete metamorphosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "c3b351cb-91be-4888-9ca6-37817de4cedb",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C80",
+      "claim": "GLWamides regulate the timing of polyp formation by accelerating the metamorphic process in N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead we find that GLWamides regulate the timing of polyp formation by accelerating the metamorphic process in N. vectensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-course data showing delayed metamorphosis in null mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "3653fe3b-268d-46bc-af0c-37f2ef7c6224",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C81",
+      "claim": "The ancestral role of Wamide neuropeptides in animals may have been to regulate the timing of life cycle transition.",
+      "claim_type": "EXPLICIT",
+      "source": "These results raise the possibility that the ancestral role of Wamide neuropeptides in animals may have been to regulate the timing of life cycle transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about ancestral function based on the current findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "13716a13-fc2a-4d4b-9deb-1b64ab2c376a",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C82",
+      "claim": "Exogenous Wamides can trigger life cycle transition across annelids and cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as described above, exogenous Wamides can trigger life cycle transition across annelids and cnidarians (Conzelmann et al., 2013; Erwin and Szmant, 2010; Iwao et al., 2002; Leitz et al., 1994; Schmich et al., 1998b), and our results show slower rates of life cycle transition in GLWamide mutant larvae in sea anemones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "808d1fe5-4555-49ac-9595-621569865e79",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C83",
+      "claim": "Results show slower rates of life cycle transition in GLWamide mutant larvae in sea anemones.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as described above, exogenous Wamides can trigger life cycle transition across annelids and cnidarians (Conzelmann et al., 2013; Erwin and Szmant, 2010; Iwao et al., 2002; Leitz et al., 1994; Schmich et al., 1998b), and our results show slower rates of life cycle transition in GLWamide mutant larvae in sea anemones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the time-course data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "a6b6c9be-accf-44f8-9643-1d43c0112a6a",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C84",
+      "claim": "The data support Wamide's role as an accelerator of metamorphosis across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support Wamide's role as an accelerator of metamorphosis across animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparative evidence across multiple species.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "c3448882-34a6-4cce-8824-535a73c279da",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C85",
+      "claim": "Wamides do not appear necessary for life cycle transition in animals where functional perturbation data are available.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Wamides do not appear necessary for life cycle transition in animals where functional perturbation data are available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on functional studies cited in the following discussion.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "dcaa0008-e30f-46ec-b581-bdbb716a2efd",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C86",
+      "claim": "In Platynereis, reducing the expression of MIP by morpholino antisense oligonucleotide inhibits feeding behavior in the juvenile, but not metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, although in the annelid polychaete Platynereis, MIP (Wamide) receptor expression is necessary for MIP-induced larval settlement behavior (Conzelmann et al., 2013), reducing the expression of MIP by morpholino antisense oligonucleotide inhibits feeding behavior in the juvenile, but not metamorphosis (Williams et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "6dfb3b59-da40-4d99-b4ca-3032e2bf9dbd",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C87",
+      "claim": "In Hydractinia echinata, in one of the three experimental conditions where RNAi was used to knockdown GLWamide expression, the rate of metamorphosis was significantly reduced at 24 hr after induction, but it increased to a normal level 24 hr later.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hydrozoan cnidarian Hydractinia echinata it is noteworthy that in one of the three experimental conditions where RNAi was used to knockdown GLWamide expression, the rate of metamorphosis was significantly reduced at 24 hr after induction (by CsCl), but it increased to a normal level 24 hr later (Plickert et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "496b2b52-6929-416b-b6b4-4da44164a6ee",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C88",
+      "claim": "This observation is consistent with a role of GLWamide as an accelerator, but not an essential regulator, of metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with a role of GLWamide as an accelerator, but not an essential regulator, of metamorphosis; however, an alternative possiblity that GLWamide expression recovered at later stages (due to reagent degradation and/or dilution) cannot be ruled out without gene knockout data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited observation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "ab27abc9-ba18-4c27-a210-03fe4202877f",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C89",
+      "claim": "Gene knockout data clearly demonstrate that GLWamides are not required for life cycle transition in the sea anemone cnidarian N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, our gene knockout data clearly demonstrate that GLWamides are not required for life cycle transition in the sea anemone cnidarian N. vectensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "be17c7dc-470f-4ff6-89cb-cd2a56567046",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C90",
+      "claim": "Other amidated peptides could be necessary for metamorphosis in N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that our data leave open the possibility that other amidated peptides could be necessary for metamorphosis in N. vectensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "3a6ae63a-a2e5-42e0-88ba-ffffafe22534",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C91",
+      "claim": "Deuterostome bilaterians lack Wamide homologs despite metamorphosis being common in some of the lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, deuterostome bilaterians lack Wamide homologs (Conzelmann et al., 2013) despite metamorphosis being common in some of the lineages (e.g. echinoderms, hemichordates, ascidians, and vertebrates).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and general knowledge of deuterostome biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "78e0fd11-bf0e-42a2-aef1-ccfa4b42572d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C92",
+      "claim": "Members of Porifera (sponges) typically undergo metamorphosis, and yet Wamides have not been found in a sponge genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, members of Porifera (sponges)\u2014an outgroup to Eumetazoa\u2014typically undergo metamorphosis, and yet Wamides have not been found in a sponge genome (Srivastava et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to genomic data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "1f026994-fddb-40d5-a0e9-8e2914e6c96c",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C93",
+      "claim": "Wamide-independent mechanisms of metamorphosis must exist in some animal lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus Wamide-independent mechanisms of metamorphosis must exist in some animal lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that some animals undergo metamorphosis without Wamides.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "d3516ab3-97a6-495d-a2c0-66ff2e378601",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C94",
+      "claim": "The ancestral Wamide neuropeptidergic signaling was not an indispensable component of the developmental regulatory system, but may have functioned to fine-tune the timing of life cycle transition by accelerating the developmental process in the last common ancestor of Eumetazoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, comparative evidence suggests that the ancestral Wamide neuropeptidergic signaling was not an indispensable component of the developmental regulatory system, but may have functioned to fine-tune the timing of life cycle transition by accelerating the developmental process\u2014possibly in response to specific environmental cues\u2014in the last common ancestor of Eumetazoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about ancestral function based on comparative evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "f7f55fc2-e959-4427-9493-04199457b24d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C95",
+      "claim": "Treatment with MIPs can suppress spontaneous contractions of the hindgut in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, treatment with MIPs can suppress spontaneous contractions of the hindgut in insects (Schoofs et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "273e4954-af13-4500-b7ef-afc40f5c73a8",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C96",
+      "claim": "In the annelid Platynereis, MIPs increase gut peristalsis and are necessary for feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In the annelid Platynereis, in contrast, MIPs increase gut peristalsis and are necessary for feeding behavior (Williams et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "4c9fe30f-802d-4b54-8319-f801a97a40f3",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C97",
+      "claim": "Exogenous GLWamides can induce muscle contractions in hydrozoan and anthozoan polyps.",
+      "claim_type": "EXPLICIT",
+      "source": "In cnidarians, exogenous GLWamides can induce muscle contractions in hydrozoan and anthozoan polyps (Takahashi et al., 2003) and stimulate migration of planula larvae in Hydractinia (Katsukura et al., 2004); however, it remains to be confirmed whether GLWamides endogenously control these behavioral processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "68d64b4a-4a3b-4643-80cb-63ae123971b5",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C98",
+      "claim": "Exogenous GLWamides can stimulate migration of planula larvae in Hydractinia.",
+      "claim_type": "EXPLICIT",
+      "source": "In cnidarians, exogenous GLWamides can induce muscle contractions in hydrozoan and anthozoan polyps (Takahashi et al., 2003) and stimulate migration of planula larvae in Hydractinia (Katsukura et al., 2004); however, it remains to be confirmed whether GLWamides endogenously control these behavioral processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "7710c2eb-7a8a-47a5-8999-cd7d6e0c7780",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C99",
+      "claim": "It remains to be confirmed whether GLWamides endogenously control muscle contractions and larval migration in cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "In cnidarians, exogenous GLWamides can induce muscle contractions in hydrozoan and anthozoan polyps (Takahashi et al., 2003) and stimulate migration of planula larvae in Hydractinia (Katsukura et al., 2004); however, it remains to be confirmed whether GLWamides endogenously control these behavioral processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "dbe1047b-57bf-4dd9-b739-fcde2372dcbd",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C100",
+      "claim": "The anti-GLWamide antibody used in this study can cross-react with GLWamides with divergent N-terminal sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This immunostaining pattern is consistent with that previously documented by using an antibody against EQPGLWamide (Nakanishi et al., 2009), indicating that the anti-GLWamide antibody used in this study can cross-react with GLWamides with divergent N-terminal sequences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of staining patterns in Figure 2\u2014figure supplement 1 with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "3cfac488-0f07-495c-9af3-4ecb0e96b0be",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C101",
+      "claim": "F3 null mutants lack GLWamide immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "Note the lack of GLWamide immunostaining in glw-/glw- null mutants, which provides experimental evidence that there are no other GLWamide-like peptides present at the developmental stages investigated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "a462335e-292c-43dd-ba66-68b47252e9a9",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C102",
+      "claim": "There are no other GLWamide-like peptides present at the developmental stages investigated in N. vectensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Note the lack of GLWamide immunostaining in glw-/glw- null mutants, which provides experimental evidence that there are no other GLWamide-like peptides present at the developmental stages investigated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the lack of immunostaining in null mutants shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "16a53848-c8ae-4644-a1ed-3b94ef4ed1cd",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "claim_id": "C103",
+      "claim": "NvLWamide-like does not generate GLWamides.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus NvLWamide-like does not generate GLWamides, as predicted from the amino acid sequence data (see main text).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the lack of immunostaining in null mutants (Figure 5\u2014figure supplement 1) and sequence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eae4d7dc-6380-4bf5-a555-9811343d0a6b",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The GLWamide gene in Nematostella vectensis consists of two exons (not one as predicted) and encodes nine distinct GLWamide peptides with varying N-terminal sequences. A related gene, NvLWamide-like, does not generate GLWamides due to lack of the canonical amidation signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are well-supported by genomic and cDNA sequence comparisons (C43), bioinformatic analysis of cleavage and amidation sites (C44), and experimental validation (C45). The correction of the gene structure from in silico prediction demonstrates rigorous experimental verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "82d094ff-f860-4422-a6b1-9f16f3396ec6",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GLWamide is expressed in ectodermal and endodermal neurons of planula larvae, with specific spatial patterns including sensory cells in the outer epithelium and pharynx, and neurons forming longitudinal bundles in the endoderm. Expression shows directional bias in ectodermal neurons and asymmetry in pharyngeal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 are strongly supported by in situ hybridization (Figures 1A-D) and immunostaining data (Figures 2A-H) showing consistent spatial and temporal expression patterns. The data are consistent with prior publications and provide detailed cellular resolution of GLWamide expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "226023ad-dc7b-4709-a953-3e8a9d627b1c",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CRISPR-Cas9 mutagenesis successfully generated three null mutant alleles (glw-a, glw-b, glw-c) at the GLWamide locus, all carrying frameshift mutations. F0 animals were mosaic mutants, necessitating generation of F1 and F2 lines for phenotypic analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are well-supported by sequencing data (Figure 3A-D), PCR genotyping, and established CRISPR methodology. The mosaic nature of F0 animals is documented (Figure 3\u2014figure supplement 1) and appropriately addressed through breeding strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GLWamide null mutants (glw-b/glw-c and other allelic combinations) develop into morphologically normal polyps at rates similar to wildtype controls (80% vs 78.6% by 5dpf), demonstrating that GLWamide is dispensable for metamorphosis in N. vectensis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C66 are strongly supported by confocal microscopy data (Figure 4) showing normal morphological hallmarks of metamorphosis in null mutants, including muscle development, apical tuft loss, and tentacle formation. The quantitative data show no significant difference in metamorphosis completion rates between mutants and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "5266552e-8854-4749-858d-eb93ffe26a2e",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GLWamide null mutants can regenerate normally after bisection and produce functional gametes, demonstrating that GLWamides are not essential for regeneration or reproduction in N. vectensis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C69 are supported by regeneration experiments showing 100% regeneration in mutants (vs 83.3-100% in controls) and observations of functional gamete production. However, the regeneration sample sizes are small (n=6), which limits statistical power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "43e835f3-323d-45c1-8c00-fdde632fb6fb",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GLWamide null mutants undergo metamorphosis at a significantly slower rate than wildtype controls, beginning at 7dpf vs 6dpf, with only ~42% metamorphosed by 8dpf compared to ~86% of wildtype animals (statistically significant at \u03b1 = 0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are well-supported by time-course data (Figure 5) from multiple independent experiments (n=9 for mutants, n=6 for wildtype). Statistical significance is demonstrated at 7 and 8 dpf. The experimental design appropriately controls for developmental timing by synchronizing fertilization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "9274487a-4e76-4e57-8aa9-4c03bc9683ed",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Treatment of GLWamide null mutants with synthetic GLWamide peptides rescues the delayed metamorphosis phenotype, restoring metamorphosis timing to wildtype levels (~84% by 8dpf), demonstrating that GLWamide functions to accelerate metamorphosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are strongly supported by rescue experiments (Figure 5) showing statistically significant restoration of metamorphosis timing in peptide-treated mutants (n=9 experiments). This pharmacological rescue provides compelling evidence for the specific role of GLWamide in regulating metamorphosis timing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GLWamide regulates the timing of life cycle transition in N. vectensis by playing a dispensable, modulatory role in accelerating metamorphosis. Mutants lacking GLWamides transform into morphologically normal polyps but at a slower rate than wildtype, and this phenotype is rescued by synthetic peptide treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9, C78-C80 represent the main findings and are strongly supported by the complete experimental dataset including knockout generation, morphological analysis, time-course studies, and rescue experiments. The conclusion that GLWamide is dispensable but modulatory is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "4c146971-49b3-43b7-a1e7-02f66f5bc8de",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This study created the first neuropeptide knockout animals from the early-evolving animal group Cnidaria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is supported by the successful generation of GLWamide knockout lines using CRISPR-Cas9. The novelty claim appears reasonable given the technical challenges of genetic manipulation in cnidarians, though comprehensive verification of priority would require extensive literature review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "76215f61-731f-480d-b470-201ae2d7401d",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ancestral role of Wamide neuropeptides in animals may have been to regulate the timing of life cycle transition, functioning as an accelerator of metamorphosis across animals including annelids and cnidarians.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C84 involve evolutionary inference about ancestral function. While C82 is supported by citations and C83 by current data, the ancestral inference (C81, C84) is speculative. The comparative evidence is suggestive but insufficient to definitively establish ancestral function without broader phylogenetic sampling and functional data from additional taxa.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "507377cd-6602-4047-9ee0-ee64f736375c",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Wamides do not appear necessary for life cycle transition in animals where functional perturbation data are available, including Platynereis (where MIP knockdown affects feeding but not metamorphosis), Hydractinia (where GLWamide knockdown effects were transient), and N. vectensis (where knockout mutants complete metamorphosis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89 are supported by citations to prior work (C86, C87) and current knockout data (C89). However, the interpretation of prior studies has limitations: morpholino knockdown may be incomplete (C86), and RNAi effects may be transient due to reagent degradation (C88). The current knockout data provide the strongest evidence for dispensability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "d0cc4d49-27f3-4c61-aae2-8a4f73629025",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Wamide-independent mechanisms of metamorphosis exist in some animal lineages, as deuterostome bilaterians and sponges undergo metamorphosis without Wamide homologs. The ancestral Wamide signaling may have functioned to fine-tune developmental timing rather than being indispensable for metamorphosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 are well-supported by genomic data showing absence of Wamides in deuterostomes and sponges that undergo metamorphosis. Claim C94 is a reasonable evolutionary inference based on comparative evidence, though it remains speculative about ancestral function. The logic is sound but the conclusion is tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "2d96d489-86f9-4178-bec2-a5c7c75a4b10",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The anti-GLWamide antibody used cross-reacts with GLWamides having divergent N-terminal sequences. F3 null mutants completely lack GLWamide immunostaining, confirming absence of other GLWamide-like peptides and validating that NvLWamide-like does not generate GLWamides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103 are supported by immunostaining data (Figure 2\u2014figure supplement 1, Figure 5\u2014figure supplement 1) showing antibody cross-reactivity and complete absence of signal in null mutants. This provides important validation of antibody specificity and confirms the predicted lack of GLWamide production from NvLWamide-like.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "5a915753-edb1-4ac0-99bf-39155ba33edd",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing that neuropeptides are ancient signaling molecules, that Wamide neuropeptides are conserved across Bilateria and Cnidaria, and that prior evidence suggested Wamides regulate metamorphosis, though their endogenous roles remained poorly understood with inconsistent results from knockdown studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C40 provide background context supported by multiple citations to prior literature. These establish the rationale for the study by documenting: (1) conservation of Wamides across animal phyla, (2) effects of exogenous Wamides on metamorphosis, (3) inconsistent results from prior knockdown studies, and (4) the need for definitive knockout approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "e36b77b7-11fe-4e51-b345-9ead6f711038",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Other amidated peptides could be necessary for metamorphosis in N. vectensis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is explicitly speculative, acknowledging that the current data do not rule out roles for other neuropeptides. This is an appropriate caveat but cannot be evaluated as supported or unsupported without additional experimental data testing other peptides.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    },
+    {
+      "id": "af8e74d6-bee0-48e9-8d80-195a6c76abfd",
+      "content_id": "938186b9-28a5-473b-b1eb-8ae954fab2c5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Wamides have diverse behavioral functions across animals, including effects on gut motility in insects and annelids, and potential roles in muscle contraction and larval migration in cnidarians, though endogenous functions in cnidarians remain to be confirmed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 are supported by citations to prior research demonstrating effects of exogenous Wamides on various behaviors. Claim C99 appropriately notes that endogenous functions in cnidarians require confirmation through genetic approaches like those used in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:28:42.096901Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9941a95-ee64-455c-a056-d9743f3d1478",
+      "result_id": "eae4d7dc-6380-4bf5-a555-9811343d0a6b"
+    },
+    {
+      "claim_id": "bb69f4e6-59da-4100-aad3-1dc9c3427e94",
+      "result_id": "eae4d7dc-6380-4bf5-a555-9811343d0a6b"
+    },
+    {
+      "claim_id": "8afbb741-9e4e-4894-92d0-3fb3b9d635fe",
+      "result_id": "eae4d7dc-6380-4bf5-a555-9811343d0a6b"
+    },
+    {
+      "claim_id": "c0849639-f9af-4610-8d2d-51ec53d6433e",
+      "result_id": "eae4d7dc-6380-4bf5-a555-9811343d0a6b"
+    },
+    {
+      "claim_id": "b1c1284c-4d12-48bf-a221-4fba2385e1f0",
+      "result_id": "eae4d7dc-6380-4bf5-a555-9811343d0a6b"
+    },
+    {
+      "claim_id": "f40ee0fa-450b-432b-b7ac-d41fc1a59552",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "4939991d-bf04-477a-99d0-74753e8f9e5a",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "b95e0765-c467-4c82-bd49-9a02f07c6696",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "63a61140-fbeb-41c3-9e98-c053855f44af",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "762c46ec-dd52-4453-8217-da7077592701",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "c1a64ed6-c338-42c8-b6fb-c73e8d74b1cc",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "0ee8fb7f-a017-4743-8856-47069fbb9aa6",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "9f03c66a-6624-4d40-a6d9-043516e53635",
+      "result_id": "82d094ff-f860-4422-a6b1-9f16f3396ec6"
+    },
+    {
+      "claim_id": "5500c5f7-9f4d-4c29-a2ca-c5e7ad3a9760",
+      "result_id": "226023ad-dc7b-4709-a953-3e8a9d627b1c"
+    },
+    {
+      "claim_id": "fbd3eef4-5c2f-4e91-9deb-c833a1f9fa99",
+      "result_id": "226023ad-dc7b-4709-a953-3e8a9d627b1c"
+    },
+    {
+      "claim_id": "b8a0d3f9-2ef6-48b7-b173-b685816713c8",
+      "result_id": "226023ad-dc7b-4709-a953-3e8a9d627b1c"
+    },
+    {
+      "claim_id": "5c84f5be-350e-4ffe-8f05-6f6655760a9d",
+      "result_id": "226023ad-dc7b-4709-a953-3e8a9d627b1c"
+    },
+    {
+      "claim_id": "4d012e42-84f3-4ce1-b0c4-40dea4b6a3ef",
+      "result_id": "226023ad-dc7b-4709-a953-3e8a9d627b1c"
+    },
+    {
+      "claim_id": "306d326e-4c0a-4637-942c-10dfba9b4bc4",
+      "result_id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801"
+    },
+    {
+      "claim_id": "cb0bc746-edc2-4c2b-baf5-1a0dc4611e47",
+      "result_id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801"
+    },
+    {
+      "claim_id": "d3191a0f-2923-4669-b8b8-bec408e0f867",
+      "result_id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801"
+    },
+    {
+      "claim_id": "b84c955a-c1aa-44b6-bbc4-501b4c4abbae",
+      "result_id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801"
+    },
+    {
+      "claim_id": "b06e951d-10d7-4838-8f23-2e2f5f2a8cf3",
+      "result_id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801"
+    },
+    {
+      "claim_id": "fd246341-4ccc-458a-834a-8f4a1793b616",
+      "result_id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801"
+    },
+    {
+      "claim_id": "843f0751-ff16-4cba-87cc-2a1d189cb2c8",
+      "result_id": "f7c7f67b-83af-44c8-bed1-e5d210a0a801"
+    },
+    {
+      "claim_id": "d7153fd0-3cfa-4081-afc3-e20b42ee64c2",
+      "result_id": "5266552e-8854-4749-858d-eb93ffe26a2e"
+    },
+    {
+      "claim_id": "08bfaebc-732f-4abe-8e80-a8b53135666f",
+      "result_id": "5266552e-8854-4749-858d-eb93ffe26a2e"
+    },
+    {
+      "claim_id": "11f8f304-e710-4f5e-95e7-43c726d263e2",
+      "result_id": "43e835f3-323d-45c1-8c00-fdde632fb6fb"
+    },
+    {
+      "claim_id": "41e25a2d-9880-4fb6-afe6-92b886c45ed3",
+      "result_id": "43e835f3-323d-45c1-8c00-fdde632fb6fb"
+    },
+    {
+      "claim_id": "31a235c9-4884-4bd3-bf18-dcfc180bfdd3",
+      "result_id": "43e835f3-323d-45c1-8c00-fdde632fb6fb"
+    },
+    {
+      "claim_id": "ba027fa0-8510-4b9d-8d28-0951a2f8ec16",
+      "result_id": "43e835f3-323d-45c1-8c00-fdde632fb6fb"
+    },
+    {
+      "claim_id": "438fb4d9-d325-4c71-9e47-179b90e60292",
+      "result_id": "9274487a-4e76-4e57-8aa9-4c03bc9683ed"
+    },
+    {
+      "claim_id": "87a2d818-d364-4b2e-8df5-ff604737fe23",
+      "result_id": "9274487a-4e76-4e57-8aa9-4c03bc9683ed"
+    },
+    {
+      "claim_id": "6164345d-e2c1-4a8f-a412-1475f199669d",
+      "result_id": "9274487a-4e76-4e57-8aa9-4c03bc9683ed"
+    },
+    {
+      "claim_id": "feb44f06-fa3d-44dd-8d6e-1f36a879b036",
+      "result_id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075"
+    },
+    {
+      "claim_id": "8c4ef2af-47e5-4701-bf30-5828c0ea0d4d",
+      "result_id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075"
+    },
+    {
+      "claim_id": "4eb26ef6-9c8e-4835-a251-e1dd42e5cc7d",
+      "result_id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075"
+    },
+    {
+      "claim_id": "cbdeeb9e-2161-469b-800d-b2c40d9aa306",
+      "result_id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075"
+    },
+    {
+      "claim_id": "46b7e21a-465c-499d-88b2-1ffd70c07ad1",
+      "result_id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075"
+    },
+    {
+      "claim_id": "16bfb692-d634-4a32-94ce-822ac7e68aeb",
+      "result_id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075"
+    },
+    {
+      "claim_id": "c3b351cb-91be-4888-9ca6-37817de4cedb",
+      "result_id": "bae1bcf2-6eba-4541-9c22-256ccbc9d075"
+    },
+    {
+      "claim_id": "3b458929-c4a4-4379-9714-c9354527a0ad",
+      "result_id": "4c146971-49b3-43b7-a1e7-02f66f5bc8de"
+    },
+    {
+      "claim_id": "3653fe3b-268d-46bc-af0c-37f2ef7c6224",
+      "result_id": "76215f61-731f-480d-b470-201ae2d7401d"
+    },
+    {
+      "claim_id": "13716a13-fc2a-4d4b-9deb-1b64ab2c376a",
+      "result_id": "76215f61-731f-480d-b470-201ae2d7401d"
+    },
+    {
+      "claim_id": "808d1fe5-4555-49ac-9595-621569865e79",
+      "result_id": "76215f61-731f-480d-b470-201ae2d7401d"
+    },
+    {
+      "claim_id": "a6b6c9be-accf-44f8-9643-1d43c0112a6a",
+      "result_id": "76215f61-731f-480d-b470-201ae2d7401d"
+    },
+    {
+      "claim_id": "c3448882-34a6-4cce-8824-535a73c279da",
+      "result_id": "507377cd-6602-4047-9ee0-ee64f736375c"
+    },
+    {
+      "claim_id": "dcaa0008-e30f-46ec-b581-bdbb716a2efd",
+      "result_id": "507377cd-6602-4047-9ee0-ee64f736375c"
+    },
+    {
+      "claim_id": "6dfb3b59-da40-4d99-b4ca-3032e2bf9dbd",
+      "result_id": "507377cd-6602-4047-9ee0-ee64f736375c"
+    },
+    {
+      "claim_id": "496b2b52-6929-416b-b6b4-4da44164a6ee",
+      "result_id": "507377cd-6602-4047-9ee0-ee64f736375c"
+    },
+    {
+      "claim_id": "ab27abc9-ba18-4c27-a210-03fe4202877f",
+      "result_id": "507377cd-6602-4047-9ee0-ee64f736375c"
+    },
+    {
+      "claim_id": "3a6ae63a-a2e5-42e0-88ba-ffffafe22534",
+      "result_id": "d0cc4d49-27f3-4c61-aae2-8a4f73629025"
+    },
+    {
+      "claim_id": "78e0fd11-bf0e-42a2-aef1-ccfa4b42572d",
+      "result_id": "d0cc4d49-27f3-4c61-aae2-8a4f73629025"
+    },
+    {
+      "claim_id": "1f026994-fddb-40d5-a0e9-8e2914e6c96c",
+      "result_id": "d0cc4d49-27f3-4c61-aae2-8a4f73629025"
+    },
+    {
+      "claim_id": "d3516ab3-97a6-495d-a2c0-66ff2e378601",
+      "result_id": "d0cc4d49-27f3-4c61-aae2-8a4f73629025"
+    },
+    {
+      "claim_id": "dbe1047b-57bf-4dd9-b739-fcde2372dcbd",
+      "result_id": "2d96d489-86f9-4178-bec2-a5c7c75a4b10"
+    },
+    {
+      "claim_id": "3cfac488-0f07-495c-9af3-4ecb0e96b0be",
+      "result_id": "2d96d489-86f9-4178-bec2-a5c7c75a4b10"
+    },
+    {
+      "claim_id": "a462335e-292c-43dd-ba66-68b47252e9a9",
+      "result_id": "2d96d489-86f9-4178-bec2-a5c7c75a4b10"
+    },
+    {
+      "claim_id": "16a53848-c8ae-4644-a1ed-3b94ef4ed1cd",
+      "result_id": "2d96d489-86f9-4178-bec2-a5c7c75a4b10"
+    },
+    {
+      "claim_id": "6b0f2c2d-fc4a-41e9-b1e9-69b7295630c2",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "aedefee7-0e6f-4a73-a10f-b76f76c0e372",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "0c725cc8-1cdb-4a0d-ae5a-c8483fbffbb1",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "7652560d-af57-41da-abcf-ceb52dc2470e",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "f5674f87-4282-448e-84cf-07e2cedbf595",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "a74b2d55-8edf-4dc7-91aa-304e6a5e4495",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "95dbf5b0-3528-4040-a48c-db6936c496b3",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "4cda69c6-908c-44f6-836b-16c6bff2d52c",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "f36c4e21-6368-43f9-a864-1e327651c63e",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "1a5e65b3-2e4c-4869-8726-601f4a565dbc",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "92845bd6-4ea9-49a7-a066-1875fd69f658",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "127e94e4-602e-440f-b10f-ee080dd0236a",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "22bb8977-5d28-4053-969d-27cadc8714de",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "415d4bef-a794-408d-ae17-6451844765d3",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "1617f4a7-66c9-44f0-a037-0a21d3cab413",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "e6a6e900-2cf4-464a-9306-fd0fdee1b0a9",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "13022fa6-787c-4836-b56c-2a09f163727a",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "80e9a753-6ae8-4ea6-9734-93fc37a7c835",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "e1843ef5-2032-4d8f-8f61-580e82b98b5d",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "67bf7279-9312-4e25-9236-dca273eb0d67",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "95a047b8-7247-4da1-8d91-7639d955ea17",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "c1a26604-58f3-441f-800d-62f3af7b4f49",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "508ae288-21e2-47da-9d54-ca74380e603e",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "dc9b34d9-afdb-4899-8153-5d3f0933e27c",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "84209346-bd86-424d-b5a1-b355294267e4",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "2210bcd8-c3f5-4078-8c08-77c761b3dbd2",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "922358da-7218-43b8-8fe6-a115ccc28c86",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "70ea554b-d6cd-44ce-80d9-a637ccefdcbd",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "b00f63c1-0c95-4607-81d6-b39f3dce81eb",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "407f4ea9-7ea3-4c95-9f63-5af26535cf39",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "b5377f3d-8b5c-47c4-acb1-9d4f8b1c99a3",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "7be78c50-27c3-4a7b-bbfe-6dac59585421",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "73e3e2fb-5ddb-4325-9ece-d763c3137350",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "418d8217-684e-449c-8a3c-fdaf1bf2f932",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "82291d75-e59e-453d-9373-ab56e3b709fe",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "5ceb054a-cda6-4df8-8c09-1c11bde45c83",
+      "result_id": "5a915753-edb1-4ac0-99bf-39155ba33edd"
+    },
+    {
+      "claim_id": "be17c7dc-470f-4ff6-89cb-cd2a56567046",
+      "result_id": "e36b77b7-11fe-4e51-b345-9ead6f711038"
+    },
+    {
+      "claim_id": "f7f55fc2-e959-4427-9493-04199457b24d",
+      "result_id": "af8e74d6-bee0-48e9-8d80-195a6c76abfd"
+    },
+    {
+      "claim_id": "273e4954-af13-4500-b7ef-afc40f5c73a8",
+      "result_id": "af8e74d6-bee0-48e9-8d80-195a6c76abfd"
+    },
+    {
+      "claim_id": "4c9fe30f-802d-4b54-8319-f801a97a40f3",
+      "result_id": "af8e74d6-bee0-48e9-8d80-195a6c76abfd"
+    },
+    {
+      "claim_id": "68d64b4a-4a3b-4643-80cb-63ae123971b5",
+      "result_id": "af8e74d6-bee0-48e9-8d80-195a6c76abfd"
+    },
+    {
+      "claim_id": "7710c2eb-7a8a-47a5-8999-cd7d6e0c7780",
+      "result_id": "af8e74d6-bee0-48e9-8d80-195a6c76abfd"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors successfully adapted Strand-seq, a DNA template strand sequencing technique, to detect sister chromatid exchange (SCE) events genome-wide in single yeast cells. The method involves BrdU incorporation during DNA replication, selective degradation of nascent strands, and directional sequencing to detect strand switches indicative of SCE. The adaptation required engineering yeast strains to express dNK and hENT1 for nucleoside uptake, and the authors validated that BrdU incorporation does not artificially induce SCE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25-C29, C36-C42, and C111-C120 collectively describe the methodological adaptation and validation of Strand-seq for yeast. The experimental controls (C39, C40, C42) demonstrate BrdU does not induce artifacts, and the technical details (C113-C120) show rigorous method development. The validation with hyperrecombinogenic (sgs1\u0394) and recombination-deficient (rad52\u0394) strains (C47, C48) provides strong support for the method's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C43",
+      "C47",
+      "C48"
+    ],
+    "result": "Using Strand-seq, the authors quantified spontaneous SCE rates in wild-type yeast for the first time genome-wide, finding that 23% of wild-type cells have at least one SCE (0.26 SCE events per cell). They validated the approach by showing increased SCE in sgs1\u0394 cells (p<10\u207b\u2079) and no SCE in rad52\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C43, C47, and C48 present the core quantitative findings with appropriate statistical support. The validation using known hyperrecombinogenic (sgs1\u0394) and recombination-null (rad52\u0394) mutants provides strong internal controls. The novelty claim (C35) is supported by the genome-wide, single-cell resolution that previous genetic assays could not achieve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cross-species comparison reveals that while human and mouse cells have ~10-fold more SCE events per cell than yeast, when normalized to genome size, yeast exhibits ~20-fold higher SCE activity per gigabase of DNA, providing the first direct quantitative comparison of recombination activity across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 present a novel comparative analysis using previously published Strand-seq data from mammalian cells. The normalization by genome size (C50) is methodologically sound and reveals a biologically meaningful difference. The claim of novelty (C51) is justified as this represents the first direct, quantitative cross-species comparison using a uniform methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C86",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors provide evidence that most spontaneous SCE events in wild-type cells are not due to DSB repair. They estimated spontaneous DSB rate at ~12% per cell division using rad52\u0394 mortality, and calculated that if all SCE resulted from DSB repair, only 3-4% of cells should have SCE. However, they observed 20% of cells with at least one SCE outside the rDNA locus, suggesting non-DSB lesions initiate most spontaneous SCE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C71-C77, C86, and C121-C125 present a logical argument supported by experimental data. The mortality assay (C121-C125) provides an independent estimate of DSB frequency. The calculation (C75) appropriately uses published crossover frequencies (C74) to derive the expected SCE rate if DSBs were the sole source. The observed rate (C76) significantly exceeds this prediction, supporting the conclusion. However, the calculation assumes all DSBs are repaired by SCR with the same crossover frequency, which may be an oversimplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The strand annealing function of Rad52 is more important than its Rad51-loading function for spontaneous SCE. SCE is reduced 1.7-fold in rad51\u0394 cells (p=0.058) and 4.5-fold in rad52-Y66A cells (p<10\u207b\u2074), with effects restricted to regions outside the rDNA locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 present experimental data with appropriate statistical analysis. The differential effects of rad51\u0394 and rad52-Y66A mutations (C63, C64) support the conclusion about Rad52 function. The spatial restriction to non-rDNA regions (C67, C68) adds biological insight. However, the p-value for rad51\u0394 (p=0.058) is marginally non-significant, which weakens but does not invalidate the conclusion given the magnitude of effect and consistency with rad52-Y66A data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "SCE events at the ribosomal DNA (rDNA) locus occur at a ~3-fold higher rate per gigabase than the rest of the genome, likely due to replication fork barriers. Despite high recombination activity (estimated 3.6 Holliday junctions and 1 DSB per cell cycle), only 6.4% of cells show SCE at the rDNA, indicating most HR events do not result in crossovers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 and C100-C105 present consistent findings about rDNA recombination. The elevated SCE rate (C55) is well-supported by data (C54) and the mechanistic explanation (C57) is appropriately cited. The inference that most HR events are non-crossovers (C104) is logically derived from comparing observed SCE frequency (C102) with estimated recombination intermediates (C103). The mapping resolution limitation (C52) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The DNA lesions causing spontaneous SCE in wild-type cells are distinct from those causing mus81\u0394 sgs1\u0394 synthetic lethality and rmi1\u0394 slow growth. While rad51\u0394 and rad52\u0394 suppress these phenotypes, rad52 class C mutants (defective in strand annealing and spontaneous SCE) cannot, indicating HR repairs multiple types of endogenous non-DSB lesions through different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 and C87-C89 present a genetic epistasis analysis that logically distinguishes different types of DNA lesions. The key observation (C83) that rad52 class C mutants cannot suppress mus81\u0394 sgs1\u0394 lethality or rmi1\u0394 slow growth, despite being defective in spontaneous SCE, provides strong evidence for distinct lesion types. The inference (C84, C85, C89) is well-supported by the genetic data and appropriately cautious in proposing at least two types of non-DSB lesions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors propose that spontaneous SCE may result from single-stranded gaps or nicks, similar to recombination involving inverted repeats. The importance of Rad52 strand annealing for spontaneous SCE resembles inverted repeat recombination, which requires Rad52 but is only modestly reduced by rad51\u0394. Template switching during replication, potentially mediated by Rad52 on the lagging strand, is proposed as a mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C99 present speculative mechanistic models supported by analogies to other systems (E. coli, S. pombe, inverted repeat recombination). While the parallels are interesting and appropriately cited (C91-C99), the direct evidence linking these mechanisms to the observed spontaneous SCE in yeast is limited. The proposal is reasonable but requires additional experimental validation. The negative results with Rad5 pathway mutants (C97, C98) provide some constraints but do not definitively establish the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose that Strand-seq could theoretically detect break-induced replication (BIR) events involving sister chromatids, which would appear as regions with either no reads or both Watson and Crick reads due to conservative DNA synthesis. They suggest Strand-seq in yeast will be advantageous for studying DNA lesions and replication stress at specific genomic locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C110 are entirely speculative about future applications. While the theoretical reasoning about BIR detection (C109) is sound based on the conservative nature of BIR synthesis (C108), no experimental evidence is presented. These are reasonable proposals for future work but do not constitute supported results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors provide background on homologous recombination, sister chromatid exchange, and limitations of existing genetic assays. They establish that sister chromatid recombination is the preferred form of HR in mitotic cells, that SCE is difficult to detect due to lack of sequence changes, and that yeast is an advantageous model system for studying HR mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C7-C15, C17-C24, and C30-C33 present well-established background knowledge appropriately supported by citations. These claims provide necessary context for the study but do not represent novel findings. The limitations of genetic assays (C18-C24) are accurately described and justify the need for the Strand-seq approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C69",
+      "C70"
+    ],
+    "result": "Rad52 has two main biochemical functions: mediating RPA-to-Rad51 exchange for strand invasion and facilitating strand annealing independent of Rad51. The rad52-Y66A class C mutant is defective in strand annealing. At the rDNA locus, Rad52 may have a function independent of both Rad51 and strand annealing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 and C69 present well-established knowledge about Rad52 function supported by appropriate citations. The speculation about Rad52 function at the rDNA locus (C70) is appropriately cautious and based on the observation that SCE at rDNA is unaffected by rad51\u0394 or rad52-Y66A (C68), combined with prior work (C69). This is a reasonable inference but requires further experimental validation.",
+    "result_type": "MINOR"
+  }
+]

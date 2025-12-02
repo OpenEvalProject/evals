@@ -1,0 +1,1784 @@
+{
+  "submission": {
+    "id": "9561699a-a65e-43f4-b54e-41e4e1cc73e3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:16:13.607635Z",
+    "updated_at": "2025-12-01T20:16:13.607635Z"
+  },
+  "content": [
+    {
+      "id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "submission_id": "9561699a-a65e-43f4-b54e-41e4e1cc73e3",
+      "content_type": "manuscript",
+      "content_text": "# The heritability of multi-modal connectivity in human brain activity\n\n## Authors\n\n- Giles L Colclough<sup>1</sup> ([ORCID: 0000-0003-1074-7186](https://orcid.org/0000-0003-1074-7186)) \u2020\n- Stephen M Smith<sup>2</sup>\n- Thomas E Nichols<sup>4</sup>\n- Anderson M Winkler<sup>2</sup>\n- Stamatios N Sotiropoulos<sup>2</sup>\n- Matthew F Glasser<sup>7</sup>\n- David C Van Essen<sup>7</sup> ([ORCID: 0000-0001-7044-4721](https://orcid.org/0000-0001-7044-4721))\n- Mark W Woolrich<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Oxford Centre for Human Brain Activity (OHBA), Wellcome Centre for Integrative Neuroimaging, Department of Psychiatry University of Oxford Oxford United Kingdom\n2. Oxford Centre for Functional MRI of the Brain (FMRIB), Wellcome Centre for Integrative Neuroimaging, Nuffield Department of Clinical Neurosciences University of Oxford Oxford United Kingdom\n3. Department of Engineering Science University of Oxford Oxford United Kingdom\n4. Department of Statistics University of Warwick Coventry United Kingdom\n5. Warwick Manufacturing Group, International Manufacturing Centre University of Warwick Coventry United Kingdom\n6. Sir Peter Mansfield Imaging Centre, School of Medicine University of Nottingham Nottingham United Kingdom\n7. School of Medicine Washington University St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPatterns of intrinsic human brain activity exhibit a profile of functional connectivity that is associated with behaviour and cognitive performance, and deteriorates with disease. This paper investigates the relative importance of genetic factors and the common environment between twins in determining this functional connectivity profile. Using functional magnetic resonance imaging (fMRI) on 820 subjects from the Human Connectome Project, and magnetoencephalographic (MEG) recordings from a subset, the heritability of connectivity among 39 cortical regions was estimated. On average over all connections, genes account for about 15% of the observed variance in fMRI connectivity (and about 10% in alpha-band and 20% in beta-band oscillatory power synchronisation), which substantially exceeds the contribution from the environment shared between twins. Therefore, insofar as twins share a common upbringing, it appears that genes, rather than the developmental environment, have the dominant role in determining the coupling of neuronal activity.\n\n## Introduction\n\nIntrinsic human brain activity enables inference about the pathways and processes of information transfer in the brain. Studying intrinsic activity, when the brain is in a resting state, has given insights into many aspects of healthy and diseased brain function. Resting-state function is characterised by spatially separated regions organised into networks of strongly correlated activity (Beckmann et al., 2005; Smith et al., 2012). These networks represent both local connectivity and longer-range communication. Importantly, the strength of resting-state functional connectivity reflects many aspects of cognitive function. Connectivity in the brain changes throughout the life cycle: networks associated with attention and control may continue to develop in late adolescence (Barnes et al., 2016) and network integrity degrades during the ageing process (Dennis and Thompson, 2014). Many neurological diseases, including schizophrenia and Alzheimer\u2019s disease (Sheline and Raichle, 2013; Greicius, 2008), have been associated with major alterations to the strength and organisation of functional connectivity (Stam and van Straaten, 2012; Stam, 2014; van Straaten and Stam, 2013). In healthy subjects, intrinsic brain activity can predict not only performance in a task, but also the specific regions which\u00a0will show increased activity during that task (Sala-Llonch et al., 2012; Yamashita et al., 2015; Zou et al., 2013; Smith et al., 2013; Tavor et al., 2016). Furthermore, recent evidence suggests that the organisation of human brain function at rest is associated with a broad range of behavioural and life-style traits, and reflects a generalised measure of intelligence (Smith et al., 2015).\n\nHere, we set out to identify the relative importance of genetic and shared environmental factors in determining these fundamental patterns of cortical communication. We employ functional magnetic resonance imaging (fMRI) recordings to perform a heritability analysis on the strength of functional connectivity within a network of 39 regions. Additionally, we perform the same heritability analysis on source-localised magnetoencephalographic (MEG) recordings (Van Veen et al., 1997) from a subset of the subjects. This complementary analysis allows us to focus specifically on communication mediated by the coupling (correlation) of oscillatory amplitudes, within particular frequency bands, using MEG as a more direct measure of neuronal activity that is unaffected by vascular confounds.\n\nWe present separate analyses of functional networks estimated from the fMRI response (Smith et al., 2013), and of MEG-derived networks in the theta (4\u20138 Hz), alpha (8\u201313 Hz) and beta (13\u201330 Hz) oscillatory bands. These bands span the frequency range within which the most convincing patterns of resting-state MEG connectivity have been shown to be expressed (Hipp et al., 2012; Baker et al., 2014; Hillebrand et al., 2012; Brookes et al., 2011; Mantini et al., 2007; Marzetti et al., 2013; de Pasquale et al., 2012; de Pasquale et al., 2016). We employ resting-state recordings from 820 subjects from the Human Connectome Project (HCP; WU-Minn HCP Consortium et al., 2013); these data are publicly available, and have undergone a standardised pre-processing procedure. The HCP is a twin study, and the subjects from the S900 data release with all fMRI (MEG) resting-state scans comprise 103 (19) monozygotic twin pairs, who share 100% of their genetic structure and a common environment, and 54 (13) dizygotic twin pairs, who share 50% of their genetic structure and a common environment. Each subject provided three MEG scans (of 6\u00a0minutes each), and four fMRI scans (of 15 minutes each). This stratified sample allows estimation of the relative effects of genetic influence and environmental factors on the variability observed in connectivity structure.\n\nWe compare the similarity in overall network structure between pairs of subjects, assessing the extent to which the functional connectivity of two subjects becomes more alike as their proportion of shared background and genetics increases. We fit variance-component models on each network edge, using recently\u00a0developed permutation and bootstrap-based methods for fast, accurate, non-parametric statistical inference with family-wise control of type I errors (Chen, 2014). This provides estimates of the mean genetic and shared environmental influences on the observed phenotypic variation in cortical connectivity. We run similar heritability analyses on the oscillatory power and BOLD variance within the regions of interest (ROIs) which constitute the network nodes, to determine whether the observed effects of genes and developmental environment on cortical connectivity could be attributable to simple differences in signal strength. Additionally, we analyse the heritability of cortical folding patterns in each ROI, to investigate whether genetic control of anatomical structure contributes to the heritability of connectivity.\n\n## Results\n\nThe functional connectivity measured with fMRI was estimated among 39 functionally\u00a0defined cortical regions of interest (network nodes) by computing partial correlations between BOLD time courses representing each region. ROIs were spatially contiguous, covered both hemispheres, and were generated using fMRI from HCP subjects\u2014see Materials\u00a0and\u00a0methods. The functional connectivity measured with MEG, corresponding to amplitude coupling of oscillations in each frequency band, was assessed between the same set of regions by correlating fluctuations in oscillatory power (Engel et al., 2013; O'Neill et al., 2015). Potential confounds to these MEG functional connectivity estimates induced by the leakage of source-reconstructed signals were reduced using a multivariate orthogonalisation technique (Colclough et al., 2015). These methods represent established practice for determining networks of functional connectivity in the two modalities (Varoquaux and Craddock, 2013; Smith et al., 2011; Smith et al., 2013; Brookes et al., 2012; Hipp et al., 2012; Colclough et al., 2016; de Pasquale et al., 2012; Hillebrand et al., 2012). The group-averaged functional networks are shown in Figure 1A and rendered in 3D in the supplementary videos.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20178/elife-20178-fig1-v3.jpg)\n\n**Figure 1.:** A. Grand average functional connectome for fMRI and for the theta, alpha and beta MEG oscillatory bands. The coloured edge maps show group-average network matrices for correlations in oscillatory amplitude in each band, and partial correlations in BOLD response, thresholded for visualisation. Nodes are annotated by cortical region, and labelled in Supplementary file 1. 3D renderings of these connectomes are shown in Figure 1\u2014videos 1 to 4. B. Similarity of pairs of network matrices, separated by the relationship status of each pair. Subjects with a shared environment, and a greater proportion of shared genetics, have more similar organisation of neuronal coupling. Violin plots show distributions of distance values between pairs of network matrices estimated from single resting-state recording sessions, on a logarithmic scale relative to the mean network separation over all pairings, for pairs of unrelated subjects (UN), siblings (SI), dizygotic twin pairs (DZ), monozygotic twin pairs (MZ) and for repeated sessions with the same subject (SAME). C. Average genetic and shared environmental contributions to the variability of functional connectivity. The bar charts show the mean genetic component (heritability, $h^{2}$) and mean shared environment component ($c^{2}$) from a variance decomposition model fitted on each network edge, with 95% bootstrapped confidence intervals on the mean. Annotations indicate the difference in contribution between genes and the shared or developmental environment. The values of $h^{2}$ and $c^{2}$ are expressed as proportions of the total variance. The difference between their total and unity is $e^{2}$, the remaining environmental and measurement noise component. D. Average genetic and shared environmental contributions to the variability of oscillatory power, or BOLD response, in each ROI. Stars indicate significant differences in mean value for each of the displayed comparisons: ***p<0.001;\u00a0**p<0.01;\u00a0*p<0.05; n.s., not significant. The non-parametric p-values were computed by permutation and corrected for multiple comparisons over the 21 tests performed.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20178/elife-20178-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Parameter estimates for the influence of additive genetics, $h^{2}$, on each individual network connection, for partial correlations in BOLD time courses derived from each ROI.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20178/elife-20178-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Top left: mean heritability of cortical curvature within each ROI. Bottom left: heritability of each fMRI network connection, averaged onto each relevant ROI. Right, top to bottom: heritability of each MEG network connection in beta, alpha and theta bands, averaged onto each relevant ROI.\n\nThe fMRI connectome shows strong bilateral connectivity, together with fronto-parietal correlations and coupling between the anterior cingulate and posterior cingulate cortices, reflecting well-known patterns of resting-state networks in fMRI (Beckmann et al., 2005; Smith et al., 2012). In the MEG data, the alpha band shows a strongly\u00a0connected visual system, with strong connectivity from\u00a0the visual cortex extending out to the temporal and parietal lobes, and a highly\u00a0coupled posterior cingulate. The beta-band exhibits strong bilateral coupling across the sensorimotor cortices, with connectivity continuing through the superior parietal lobes and down to the\u00a0occipital cortex. The theta band also exhibits visual and motor connectivity. These patterns of connectivity are in general agreement with previously reported results in these frequency bands (Hillebrand et al., 2012; Brookes et al., 2011; Baker et al., 2014; de Pasquale et al., 2012; de Pasquale et al., 2016; Hipp et al., 2012; Marzetti et al., 2013; Mantini et al., 2007; Colclough et al., 2015).\n\nFigure 1B (left-hand plot, middle row) shows that the structure of fMRI and MEG networks of functional activity are progressively more similar as the strength of relationship is increased, from unrelated subjects, through siblings and dizygotic twins to monozygotic twins ($p<10^{-3}$ in each case, except for $p_{M\u2062Z<D\u2062Z}^{\\alpha}=0.003$). (Although siblings and dizygotic twins share the same proportion of genetic material, siblings have different ages and inevitably share less similar environments than do twins. This may account for the significant increase in network similarity from siblings to dizygotic twins.) Also displayed, for comparison, is the distribution of network similarity over repeated recording sessions within the same subject. Tests for significance were performed by assessing the difference in mean of the logarithm of network separation, relative to the mean separation, using a non-parametric permutation-based $t$-test. All 21 tests performed for this paper are quoted after a false discovery rate correction for multiple comparisons.\n\nA three-component variance model was fitted for the variability observed in the strength of coupling in individual edges. This model ascribes proportions of the variance in a phenotype, $\\sigma^{2}$, either to additive shared genetics (A), shared environmental factors (C), or to measurement error and other known sources of variance (E),\n\n$$\n\\sigma^{2}=A+C+E.\n$$\n\nWe estimate each of these components as a fraction of the total variance, giving $h^{2}=A/\\sigma^{2}$, known as the heritability of a trait, $c^{2}=C/\\sigma^{2}$ and $c^{2}=E/\\sigma^{2}$. These components are related by the identity\n\n$$\nh^{2}+c^{2}+e^{2}=1.\n$$\n\nEstimates of the mean heritability and contribution from common environment over these connections were constructed with bootstrapped confidence intervals, and the significance of the mean heritability was\u00a0tested using non-parametric permutation-based methods. Although there is a large amount of variability in the data which is not attributable to either of these factors, we found that additive genetics accounted for 17%, on average, of the functional connectivity measured with fMRI. In MEG, 19% of the variability in oscillatory coupling strengths in the beta band, and 8% in the alpha band, was determined by additive genetics. These estimates and comparisons are presented graphically in Figure 1C, and tabulated with confidence intervals and p-values in Supplementary files 2 and 3.\n\nIn the absence of a permutation scheme which is invariant under the null hypothesis of equal genetic and shared environmental factors, we additionally estimate $h^{2}-c^{2}$ with bootstrapped confidence intervals to investigate the relative importance of these two components. In the fMRI data and in beta-band oscillations, where we also find significant genetic influences, we identify a differential effect of heritability and twins\u2019 shared environment (estimates with 95% confidence intervals, $h^{2}-c^{2}=0.15\u2062[0.13,0.16]$ for the fMRI and $h^{2}-c^{2}=0.13\u2062[0.04,0.22]$ for the beta-band results). Permutation tests for a significant contribution of heritability on each individual functional connection were performed, but no edges were significant after correcting for family-wise error at $\\alpha=0.05$. Parameter estimates for individual fMRI connections are shown in Figure 1\u2014figure supplement 1.\n\nTo investigate whether our results were particular to our choice of parcellation, we re-ran our heritability analyses using the 15-dimensional ICA decomposition of resting-state fMRI recordings released by the HCP. This parcellation contains entire resting-state networks as each node of the decomposition, yielding a functional connectivity matrix that describes inter-network, rather than intra-network relationships. We found significant genetic influences in the fMRI data ($h^{2}=0.29\u2062[0.26,0.33]$, $p=1\\times10^{-4}$, uncorrected), but not for any of the activity recorded with MEG (uncorrected permutation-based $p$-values for $h^{2}>0$ were 0.69, 0.06 and 0.14 for the theta, alpha and beta bands respectively). The parameter estimates and confidence intervals are presented in Supplementary file 4.\n\nThe three-component model was also fitted to the variability in the logarithm of the signal power in each ROI, in both the fMRI and MEG data. Significant influences of genetic factors, on average over the nodes, were found only in the fMRI data (Figure 1D).\n\nFinally, we fitted the heritability model to the cortical surface curvature of each subject, computing average $h^{2}$ within each ROI (Figure 1\u2014figure supplement 2). Cortical curvature exhibits the highest heritability around the sensorimotor areas and insula (as has been reported previously, in an analysis using a different sample of the HCP subjects; Sotiropoulos et al., 2015). We compared this spatial profile of the heritability of curvature to the average heritability of network connections for each ROI within each modality (that is, for each ROI, the average $h^{2}$ of all connections involved with that ROI). In general, no significant positive correlations were found between the spatial arrangement of cortical curvature heritability and the heritability of network connections in particular ROIs. The exception was moderate correlation ($\u03c1=0.39$) with the MEG theta band connectivity pattern, for which there was no significant heritability of connection strength in the first instance. (These data are presented in Supplementary file 5.)\n\n## Discussion\n\nUsing resting-state fMRI and MEG recordings released as part of the HCP, we have constructed the functional network structure that expresses the coupling in MEG oscillatory power within three frequency bands, and fMRI partial correlation networks, among 39 ROIs. Based on these analyses, we make two key claims. First, genetic factors help to determine the strength and form of cortical oscillatory communication and functional connectivity. We have shown that the entire functional network structure is found to be more similar for two subjects the more closely they are related, and we estimate that the average heritability of individual connection strengths is about 15\u201318% for BOLD correlations, and between 13% and 26% (1% and 25%) for correlations in beta-band (alpha-band) power fluctuations. Second, genetic make-up is more important, on average, than the shared environment among twins when determining the strength of these couplings (with a difference of 13\u201316 percentage points in fMRI and 4\u201322% in the MEG beta-band).\n\nOur results are drawn from two imaging modalities, fMRI and MEG, with functional connectivities estimated from the same set of ROIs. Our analyses with these technologies produce complementary assessments of functional connectivity: slow time scale couplings of functional activation indexed by BOLD response, and faster co-ordinations in oscillatory amplitude measured with MEG. (MEG is a more direct measure of neuronal oscillatory activity, unaffected by vascular confounds.) We found, over both modalities (although, for the MEG results, only in the beta\u00a0band), the same differential pattern of influence on functional connectivity from additive genetic factors and twins\u2019 shared developmental environments. Given the range of connectivity structures that are expressed in beta-band oscillations and in the slow time scale couplings measured in fMRI, these results suggest that genes have broad control over functional connectivity in the\u00a0cortex, with a contribution that outweighs shared environmental factors.\n\nThese complementary results in fMRI and MEG alpha- and beta-band oscillations, drawn from the same parcellation, provide strong new support for a neural basis of the genetic influences on BOLD connectivities. The heritability of functional connectivity measured with electrophysiology has been reported before (Posthuma et al., 2005; Schutte et al., 2013;\u00a0recording heritabilities of 20\u201375%, predominantly in the alpha and beta bands). However, these analyses were performed between EEG sensors, using synchronisation likelihood for network estimation, a measure that is sensitive to volume conduction artefacts. We use a connectivity metric that explicitly suppresses these artefacts (Colclough et al., 2015; Brookes et al., 2012; Hipp et al., 2012; O'Neill et al., 2015), reducing the influence of heritable anatomical features and cortical folding patterns on our results. Additionally, by working with cortical reconstructions of the oscillatory sources, we gain not only substantial artefact rejection (Schoffelen and Gross, 2009; Hillebrand et al., 2005) but also interpretability; the functional networks that we identify in the beta\u00a0band and which drive our genetic analyses are mostly in motor and posterior regions, in correspondence with previous findings (Hipp et al., 2012; Baker et al., 2014; Hillebrand et al., 2012; Brookes et al., 2011; Brookes et al., 2012; Mantini et al., 2007; Marzetti et al., 2013; de Pasquale et al., 2012; de Pasquale et al., 2016). Our results therefore advance the strength of the evidence for a neural mechanism that mediates the genetic control over functional connectivity. Current data cannot, however, reveal the mechanistic details of this control. We can speculate that genes will control both network dynamics (in terms of synaptic strengths or conductance delays) as well as biophysical properties (such as the distribution of local neuron populations and their immediate feedback systems)\u2014but in the future it may be possible to combine neuroimaging results with large-scale biophysical models (Deco et al., 2008; Cabral et al., 2014) to better understand these influences.\n\nWe did not find significant genetic control of functional connectivity in the theta frequency band. This may be in part because of the difficulty in cleanly estimating functional connectivity in MEG, particularly outside the alpha and beta\u00a0bands (Colclough et al., 2016), but may also be because the 89 HCP subjects with resting-state MEG scans present a much smaller sample for study than the rfMRI HCP dataset. Even the conclusions from our alpha- and beta-band analyses, while coincident with the results in fMRI, are necessarily summary characterisations of the role of genes and environment on cortical oscillatory coupling. Our claims are based on significant results from robust non-parametric tests, but the confidence intervals on our parameter estimates are inevitably broad.\n\nThe primary parcellation that we employed consists of focal, contiguous regions. Our heritability analyses therefore reflect the genetic and shared environmental influences on the strengths of connections between the component nodes of the established resting-state networks (such as the default mode, motor, visual and dorsal attention networks). In an additional analysis, we found significant effects of additive genetic factors on the strength of inter-network connections in fMRI, using an alternative lower-dimensional parcellation based on 15 entire networks as nodes for the connectome. This suggests that genetic control of functional connectivity extends across multiple spatial scales of synchronisation. For oscillatory activity measured with MEG, it is not clear that it is meaningful to summarise, in the same manner as for an fMRI inter-network analysis, the collective behaviour of these gross network structures using a single time course: there is growing evidence from MEG that the extended networks from the fMRI literature are composed of smaller sub-networks that synchronise and de-synchronise on relatively fast time scales (Baker et al., 2014; de Pasquale et al., 2012; de Pasquale et al., 2016). That we found no significant genetic effects on the connections among this additional set of 15 networks in our MEG data may simply reflect the unsuitability of static whole-network parcellations for this modality.\n\nWe have taken a comprehensive approach to our heritability analyses by controlling for a wide range of potential confounds. Of the heritable effects of physiology, anatomy and noise on functional connectivity, the influences of signal power, cortical folding patterns and subject motion are perhaps most worthy of discussion.\n\nHigher coupling strengths are commonly observed between regions with higher signal power in both fMRI and MEG estimates of functional connectivity. This effect can be caused just by the increased signal to noise ratio in the observed regions, rather than any difference in underlying coupling strength (Friston, 2011). We fitted a genetic and environmental factors model to the power in each ROI of our analysis. In our MEG data, we found no influence of these factors on the measured signal strength, and so can exclude this signal-to-noise effect as a likely confound in the beta-band MEG results. There was a significantly heritable component to signal power in the fMRI data\u2014but this is not surprising in and of itself. To control for its influence on our results, we have included measures of the signal power in each node as confound regressors in all of our genetic analyses of functional connectivity.\u00a0(Signal\u00a0power is not a perfect proxy for the signal to noise ratio, as the measured power will be affected by fluctuations in both the noise and the signal.)\n\nCortical folding patterns have been shown to have modest heritability (Sotiropoulos et al., 2015; Botteron et al., 2008; van Essen et al., 2014); although the strength of genetic control and the mechanism of influence are not yet certain (Tallinen et al., 2016; G\u00f3mez-Robles et al., 2015; Ronan and Fletcher, 2015). This has particular implications for the MEG measurements, where the arrangement of cortical folds will have a strong impact on the signals measured outside the scalp, and on the leakage (or volume conduction) of signals between different sensors. Our connectivity estimates use methods that are robust to source leakage artefacts (Colclough et al., 2015; Brookes et al., 2012; Hipp et al., 2012; O'Neill et al., 2015), and the lack of strong correlations between the spatial profile of the heritability of cortical curvature and the heritability of edges associated with each ROI (as shown in Figure 1\u2014figure supplement 2 and Supplementary file 5) is good evidence, we believe, that this confound has not seriously impacted our findings.\n\nSubjects\u2019 motion inside a scanner during resting-state recordings is heritable (Couvy-Duchesne et al., 2014), and motion is a known resting-state confound for functional connectivity analyses (Siegel et al., 2016). While our pre-processing steps include appropriate registration of images into static reference frames, and the removal of components from the data that are associated with motion, we have additionally included in our genetic analyses a summary measure of participants\u2019 movements within their fMRI scans, to reduce our co-measurement of heritable motion traits. Lastly, we are unable to specifically control for eye movement in our genetic analyses, as no tracked eye recordings are available for the HCP resting-state scans. (Independent components of the sensor data that correspond to eye movements are, however, removed during pre-processing.) However, it is worth noting that although saccades and micro-saccades are thought to be linked to gamma-band oscillatory patterns (Muthukumaraswamy, 2013; Orekhova et al., 2015), which we did not study, there is no strong evidence-base that they influence resting-state recordings at lower frequencies.\n\nWe used variance-component models to represent the observed variability in functional connectivity as a set of contributions from additive genetic factors and from the shared developmental environment in twin pairs. Our conclusions rest on a number of assumptions implicit in this model (Boomsma et al., 2002). These include an assumption that people choose their partners randomly; that the relevant genetic mechanisms are additive; and that there is no significant interaction between genes and the shared environment\u2014an effect which has been reported to exist in various aspects of cognition (Nisbett et al., 2012). Most importantly, we assume that monozygotic and dizygotic twin pairs will equally share exposure to environmental factors in their upbringing. If this is an accurate assumption, then estimates of $c^{2}$ and $h^{2}$ are informative about the relative roles of developmental environment and additive genetics in the variation of functional connectivity phenotypes. While there is evidence in support of the equal-environment assumption (Felson, 2014; Conley et al., 2013), it has been challenged on the basis that monozygotic twins look more alike, behave more alike, and are treated more similarly than dizygotic twins (Joseph, 1998). Without entering into the discussion on this point, we note that if this assumption fails in our sample, it would lead to an overestimation of genetic heritability and an underestimation of the impact of developmental environment, therefore potentially weakening our conclusions on the differential effect of these two influences. Lastly, the $c^{2}$ term in our model cannot be solely identified with developmental environment. It encompasses all effects which are common between twins, which may include intra-uterine and mitochondrial influences, in addition to the shared environmental factors.\n\nOur results add substantially to the evidence for significant genetic control of human cortical connectivity. Structural connectivity, the distribution of the white matter tracts across the brain that enable communication, is known to be highly heritable (Zhu et al., 2015; Jahanshad et al., 2012; Kochunov et al., 2015). (A study of the heritability of structural connections with the HCP dataset estimated a mean heritability of 25%; Sotiropoulos et al., 2015) Previous studies of the heritability of functional connectivity with fMRI (which, in general, fail to control for subject motion, node power or brain size, and some of which focus instead on network topology), do also find significant genetic effects with heritability estimates lying between 20%\u00a0and\u00a060% (Smit et al., 2008; Fornito et al., 2011; van den Heuvel et al., 2013; Thompson et al., 2013; Jansen et al., 2015; Glahn et al., 2010). However, connectivity estimation is noisy, and as heritability is expressed as a fraction of the observed phenotypic variance (including measurement noise), we can expect the parameter estimates of heritability to change as network estimation methods improve. The important comparison, therefore, is of the relative importance of genes to the developmental and environmental factors shared by twins. Our observation of the stronger influence of the former over the latter on functional connectivity is a relationship shared in several other cognitive, behavioural and physiological traits measured in adults (Polderman et al., 2015).\n\nTwin studies cannot probe the precise genetic mechanisms of these influences. Recent work (Hawrylycz et al., 2015; IMAGEN consortium et al., 2015) has correlated the profiles of gene expression in different regions of cortex, and compared these patterns of gene transcription to resting-state fMRI connectivity profiles, identifying sets of genes with co-expression patterns that reflect networks of functional connectivity. However, detailed investigations into the specific genes affecting healthy resting-state connectivity must await large datasets with coincident resting-state functional imaging and genotyping. (Genetic data will soon be available both for the HCP and for the UK Biobank imaging data.)\n\nTaken together, our results provide strong additional evidence for a neural basis of the heritability of functional connectivity in the human brain. We identify genetic influences both in fMRI datasets and in (alpha- and beta-band) electrophysiological recordings, using functional network analyses on the same cortical parcellation. Our results more comprehensively control for a wide range of important confounds than previous work in this area. We have made particular emphasis of the increased importance of genetics over the developmental environment in determining cortical functional connectivity. The relevance and implications of this finding are widespread. Functional connectivity profiles are associated with intelligence, which is well-known to be heritable (Bartels et al., 2002; Neisser et al., 1996). But connectivity is also implicated with a very broad range of behavioural and life-style factors, including earning power, measures of health, various assessments of cognitive performance, and self-reported life satisfaction\u00a0(Smith et al., 2015). As the findings of the Moving To Opportunity experiment in the United States make clear (Ludwig et al., 2013; Chetty et al., 2015), together with results from studies on the effects of schooling, socio-economic environment and adoption (Nisbett et al., 2012), the environment in which individuals develop can still make a significant impact on their performance and long-term outcomes. However, while genes are not the only important factor, results such as these\u00a0presented\u00a0here suggest that nature, more so than nurture, is a major force in determining integrated cognitive function and, by extension, cognitive capability.\n\n## Materials\u00a0and\u00a0methods\n\n### Subjects\n\nFour 15-minute resting-state fMRI recordings from 820 subjects were collected as part of the HCP900 data release by the Human Connectome Project (WU-Minn HCP Consortium et al., 2013; WU-Minn HCP Consortium et al., 2013). Additionally, 89 of these subjects provided three 6-minute resting-state MEG recordings. All subjects are young adults (22\u201335 years of age) and healthy. Of the fMRI (MEG) subjects, there are 103 (19) monozygotic and 54 (13) dizygotic complete twin pairs. Zygosity was determined from subjects\u2019 genotypes when available, and otherwise by self-report.\n\nHCP data were acquired using protocols approved by the Washington University institutional review board. Informed consent was obtained from subjects. Anonymised data are publicly available from ConnectomeDB (db.humanconnectome.org; Hodge et al., 2016). Certain parts of the dataset used in this study, such as the family structures of the subjects, are available subject to restricted data usage terms, requiring researchers to ensure that the anonymity of subjects is protected (WU-Minn HCP Consortium et al., 2013).\n\n### fMRI analysis\n\nResting-state fMRI data were acquired with 2 mm isotropic spatial resolution and a temporal resolution of 0.72 s. The HCP provides comprehensively pre-processed data (WU-Minn HCP Consortium et al., 2013) that are mapped to a standard cortical surface using a multi-modal registration algorithm, MSMAll (Robinson et al., 2014; Glasser et al., 2016), and for which structured artefacts (with origins including motion, heartbeat and cerebro-spinal fluid) have been removed by a combination of ICA and FIX (Salimi-Khorshidi et al., 2014), FSL\u2019s automated noise component classifier.\n\nWe estimated functional connectivity between\u00a039\u00a0fMRI-derived cortical ROIs. We used the parcellation employed in Colclough et al. (Colclough et al., 2015), which contains contiguous regions identified from a resting-state 100-dimensional group-ICA decomposition of fMRI data from the first 200 subjects of the HCP project. Most ROIs have a symmetric counterpart in the opposite hemisphere, except those on the midline such as the posterior cingulate cortex. The parcellation is shown in Figure 2A. This parcellation was chosen because the use of contiguous, focal nodes creates a comprehensible network model between individual regions. The low dimensionality of MEG data restricts us to parcellations of about this number of ROIs or less: as there are only a few hundred sensors, reconstructing time courses for more than approximately 60 different regions would be noisy or nonsensical. This upper bound is supported by models that categorise signals as originating within or without the MEG dewar, which suggest a limit of about 60 measurable cortical sources (Taulu et al., 2005), and by recently developed data-driven parcellations that only find around\u00a070 unique identifiable parcels using combined MEG and EEG data (Farahibozorg et al., 2017). To investigate whether our results were particular to our choice of parcellation, we additionally ran our heritability analyses on a lower-dimensional decomposition: the 15-dimensional group-ICA map computed from the HCP900 data. The nodes in this parcellation represent entire (non-contiguous) functional networks (such as the default mode or motor networks), and the connectivity matrix therefore represents inter-network dependencies. The parcellation is shown in Figure 2B.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20178/elife-20178-fig2-v3.jpg)\n\n**Figure 2.:** (A) Primary parcellation of 39 contiguous clusters, identified from a resting-state 100-dimensional group-ICA decomposition of fMRI data from the first 200 subjects of the HCP project. (B) The 15-dimensional fMRI ICA parcellation computed by the HCP as part of the S900 data release.\n\nA single BOLD time course to represent each ROI was constructed using multiple spatial regression in FSLnets. Partial correlation matrices were constructed using the tools in FSLnets, using mild Tikhonov regularisation ($\\lambda=0.01$) and a conversion to Z-values with Fisher\u2019s transform, referenced to the standard deviation of correlations of null data. Group-level networks were estimated as the mean Z-transformed correlation matrices over all sessions.\n\n### MEG analysis\n\nResting-state MEG data were acquired on a whole-head Magnes 3600 scanner (4D Neuroimaging, San Diego, CA, USA). The data have been pre-processed to compensate for head movement, to remove artefactual segments of time from the recordings (which might relate to head or eye movement), identify recording channels which are faulty, and to regress out artefacts with clear temporal signatures (such as eye-blinks, saccades, muscle artefacts or cardiac interference) using ICA (WU-Minn HCP Consortium et al., 2013). Sensor-space data were down-sampled from 509 Hz to 300 Hz, with the application of an anti-aliasing filter.\n\nMEG data from each session were source-reconstructed using a scalar beamformer (Van Veen et al., 1997; Robinson and Vrba, 1999; Woolrich et al., 2011). Pre-computed single-shell source models are provided by the HCP at multiple resolutions, registered into the standard co-ordinate space of the Montreal Neuroimaging Institute (MNI). Data were filtered into the 1\u201330 Hz band before being beamformed onto a 6 mm grid using normalised lead fields. Covariance estimation was regularised using PCA rank reduction. The rank was conservatively reduced by five more than the number of ICA components removed during preprocessing. Source estimates were normalised by the power of the projected sensor noise. Source-space data were filtered into theta (4\u20138 Hz), alpha (8\u201313 Hz) and beta (13\u201330 Hz) bands.\n\nThe same parcellations were employed for the MEG analysis as for the fMRI. As the MEG source reconstruction was performed over a volumetric grid in the MNI\u2019s standard space, rather than on the cortical surface, we used the volumetric versions of the fMRI ICA decompositions to form the MEG parcellations. A single time-course was constructed to represent each node as the first principal component of the ROI, after weighting the PCA over voxels by the strength of the ICA spatial map. This analysis yielded 39 time-courses for each frequency band and session for our principal parcellation (and 15 for the second).\n\nOne major confound when estimating connectivity in source-localised MEG is the spatially\u00a0local bleeding of estimated sources from their true location into neighbouring regions. We compensate for these spatial leakage confounds, which can induce spurious connectivity estimates, using a symmetric orthogonalisation procedure (Colclough et al., 2015) to remove all shared signal at zero lag between the network nodes. This procedure is a multivariate extension of the orthogonalisation principle proposed in Brookes et al., 2012; Hipp et al., 2012; and\u00a0O'Neill et al., 2015. It identifies the set of ROI time courses least displaced from the initial, uncorrected set, while enforcing mutual orthogonality between them, with no bias related to any reordering of the nodes. This approach suppresses any artificial correlations induced by spatial leakage, at the expense of any zero-lag connections of true neuronal origin. Lastly, power envelopes of the leakage-corrected ROI time-courses were computed by taking the absolute value of the Hilbert transform of the signals, low-pass filtering with a cut-off of 1 Hz, and down-sampling to 2 Hz (Luckhoo et al., 2012). We illustrate this stage in Figure 3.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20178/elife-20178-fig3-v3.jpg)\n\n**Figure 3.:** From a whole-brain source-reconstruction, a single time-course is extracted to represent each ROI. These time-courses are bandpass filtered, then orthogonalised to remove shared signal which is potentially attributable to spatial leakage effects. The power envelope of each time-course is computed, then correlated to form the network matrix.\n\nCorrelations between the power time-courses in each band were computed, converted to Z-values using Fisher\u2019s transform, and standardised with reference to the standard deviation of an empirical null distribution of correlations generated from time-courses with the same temporal properties as the data under test (see Colclough et al., 2015, for a detailed description). As for the fMRI networks, group-level networks were estimated as the mean Z-transformed correlation matrices over all sessions.\n\nWe use slightly different network estimation methods in the two modalities. Both are correlation measures, to maintain the similarity in analysis between the fMRI and MEG data. Partial correlation, used in the fMRI data, is one of the most accurate and robust measures in this modality (Smith et al., 2011; Smith et al., 2013; Marrelec et al., 2006; Varoquaux and Craddock, 2013). However, partial correlation can be difficult to estimate, even with regularisation, and it would not necessarily be the optimal choice for many smaller or lower quality fMRI datasets. An assessment of the repeatability of the most common network estimation measures in MEG showed that regularised partial correlation is relatively unreliable in this modality, and that the full correlation of the power envelopes of oscillatory activity (as we use here) was the most repeatable approach (Colclough et al., 2016). We have therefore attempted to use the best-practice inference methods in each modality. We did repeat our fMRI analysis using full correlation, rather than partial correlations, and found qualitatively similar results, with no difference in the significance of the claims we would make.\n\n### Comparison of entire network structure\n\nSimilarity between pairs of functional networks was measured as the inverse Euclidean distance between the correlation matrices, after a logarithmic projection onto a Euclidean plane locally tangent to the Riemann manifold of positive semi-definite matrices (Barachant et al., 2013;\u00a0Ng et al., 2014). This process can decouple the inter-relations between the elements within each positive-definite network matrix, and can improve the performance of classification algorithms when network matrices are used as discriminative features. It also provides for the definition of a true distance metric, where more similar matrices are projected to more proximate locations on the plane. A suitable Euclidean space for each modality and frequency band was found as the Euclidean plane tangent to the cone of positive semi-definite matrices, taking the geometric mean of the networks computed from all sessions as the tangent point. The separation between each pair of network matrices in each band was computed, forming different distributions of network similarity for pairs of subjects, split by the shared genetics of each pair. To assess whether shared environmental factors and shared genetics were associated with global network structure, we tested the difference in mean between the distributions of the logarithm of network separation for pairs of unrelated subjects and pairs of dizygotic twins, and between pairs of dizygotic twins and monozygotic twins, using a non-parametric t-test based on 20,000 permutations of the group labels. In the fMRI data, we were also able to compare unrelated subjects to siblings, and siblings to dizygotic twins.\n\n### Three-component variance models\n\nAn ACE model for the subject-to-subject variability in connection strength was fitted for each network edge. This model splits the observed phenotypic variability into three factors: (A), additive genetics or heritability ($h^{2}$), (C), common environment ($c^{2}$), and (E), measurement error or external sources of variability. The three factors $h^{2}$, $c^{2}$ and $e^{2}$ are proportions of the total variance, and therefore normalised such that they sum to one. The APACE system of permutation inference (Chen, 2014) was employed, using the mean network matrix (over resting-state recording sessions) for each subject.\n\nOn each edge, we regressed out the effect of age, the square of age, sex, an age and sex interaction, an interaction between sex and the square of age, the cube root of intra-cranial volume and of cortical volume (both estimated with FreeSurfer), a measure of subject motion in the scanner (fMRI_motion) and, for the fMRI data, the MR image reconstruction software version. Summary motion estimates are only available for the fMRI recordings, but we use these values as a proxy measure of subjects\u2019 movements in both modalities. On each network edge, we included a regressor to account for heritable changes in node power, computed as the geometric mean of the power in each of the two nodes that each connection joins. We computed power simply as the standard deviation of the signal (fMRI time course or MEG power envelope) in each node. In the MEG data, where the standard deviation of the power of a virtual sensor is often correlated with its mean, we additionally include, in the same manner, a regressor formed from the ratio of the standard deviation to the mean of the power time course.\n\nFinally, we also regressed out a measure of the noise passed by the beamformer for each subject. Our beamformer is described in Woolrich et al. (2011), and the noise it passes at each voxel is the denominator of equation 4 in that paper,\n\n$$\n(H^{T}(r_{i})I/\\sigma_{e}^{2}H(r_{i})),\n$$\n\nwhere $H$ is the projection of the $N\\times3$ lead field matrix (for $N$ sensors) that maximises power at location $r_{i}$, and $\\sigma_{e}^{2}\u2062I$ is the noise covariance matrix. The scale of the noise is estimated from the smallest eigenvalue of the data covariance matrix. These voxel-wise noise estimates are scaled by the same weightings used to compute the ROI time courses, and averaged over ROIs to create a regressor estimating the noisiness of the beamformer for each subject.\n\nEstimates of heritability were computed on each edge, with family-wise error corrected $p$-values computed by permutation, randomly shuffling monozygotic and dizygotic twin statuses 15,000 times. It is useful to consider a single, summary measure of functional connectivity for the entire functional networks. The mean values of $h^{2}$ and $c^{2}$ were computed over all functional connections; the p-value for mean heritability was computed by permutation, as above; confidence intervals for $h^{2}$, $c^{2}$ and $h^{2}-c^{2}$ were computed by bootstrap re-sampling twin-pairs with replacement, 15,000 times.\n\nThe ACE model was also fitted to the logarithm of the variance of the corrected power envelopes (variance of the BOLD time course) in each ROI. This provided confidence that the conclusions of the ACE model for functional connectivity were not being driven by heritable effects in power or SNR within the network nodes. On each ROI, we removed the same set of regressors as for the functional connectivity analyses (save the power variables) before fitting the model.\n\nLastly, the ACE model was fitted within each ROI to estimates of cortical curvature for each of the subjects in the fMRI sample. We regressed out the effect of age, the square of age, sex, an age and sex interaction, the cube root of intra-cranial volume and of cortical volume, subject motion and the MR image reconstruction software version, before computing the mean heritability ($h^{2}$) over all points within each ROI. To compare spatial profiles of cortical folding with connectivity, we averaged the heritabilities of each network connection onto their constituent nodes, to create a spatial map suggesting the heritability of connectivity by ROI. These maps were correlated with the maps of heritability of cortical curvature in each ROI, and significance assessed by permuting ROIs 5000 times.\n\n### Methodological notes\n\nWe applied a false discovery rate correction to the 21 principal statistical tests conducted for this paper to compensate for the multiple comparisons we perform (Benjamini and Hochberg, 1995). Uncorrected and corrected p-values are available in Supplementary files 3 and 5.\n\nAll analyses were performed in Matlab. MEG network analyses were performed with the MEG-nets software\u00a0(github.com/OHBA-analysis/MEG-ROI-nets), fMRI network analyses with the FSL-nets software\u00a0(fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLNets), and heritability analyses using APACE\u00a0(the Advanced Permutation inference for ACE models (APACE) software is available at warwick.ac.uk/tenichols/apace).\n",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "85e7925e-ea98-4f2f-84e5-ceadc8d9b531",
+      "submission_id": "9561699a-a65e-43f4-b54e-41e4e1cc73e3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jack L Gallant, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20178.020](https://doi.org/10.7554/eLife.20178.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The heritability of multi-modal connectivity in human brain activity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Jack Gallant (Reviewer #1), is a member of our Board or Reviewing Editors and the evaluation has been overseen by Sabine Kastner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: David Glahn (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAlthough the Discussion highlighted some hesitation about the publication of this work in eLife, the reviewers have decided to ask for a revision, which should deal with (1) additional analyses, (2) novelty issues, (3) other smaller issues. Of particular concern is that we are not yet convinced that this work is sufficiently novel; the authors will have to make the case for that.\n\nSummary:\n\nThis study examines genetic influences on resting state MRI and MEG connectivity. The article is clearly written and the data analysis procedures are reasonable as far as they go. However, the genetic influences on resting state have been reported several times using similar methods, and at this point it is unclear whether this paper is appropriate for publication in eLife, or rather whether it merely reflects an incremental increase in scientific knowledge. Furthermore, the current analyses appear to be insufficient. The MEG results are rather underpowered and many essential analytical controls are missing. After consultation the reviewers decided that the paper should be returned to the authors for revisions focusing on (1) elucidating the novel contributions of the work, (2) performing additional analysis as suggested and (3) dealing with a variety of smaller issues.\n\nEssential revisions:\n\n1) The genetic influences on resting state have been reported several times using similar methods. However, the current paper does not really include any detailed comparison of the current results with those reported previously, so it is difficult to judge the novelty of this contribution. In revision the authors should include a detailed discussion of precisely which aspects of the paper are novel. This may require further data analysis apart from what is requested as controls below. It would also be helpful if the authors would make more of an effort to explain some potential causal mechanisms that might underlie their reported relationships.\n\n2) Additional analyses should be included to account for potential contamination of the FC data by confounding factors having nothing to do with cortical connectivity or communication, but which are nevertheless heritable. The obvious candidates here are body motion, head motion, eye movements, or other physiological factors.\n\n3) The results are all based on one particular parcellation. Some evidence should be provided that the results do not depend on this particular choice. The optimal way to address this problem would be to rerun the analysis pipeline using several different parcellation schemes.\n\n4) There appear to be several differences between the way that the fMRI and the MEG data were processed. These should be justified and explained, or a more consistent approach should be used.\n\nReviewer #1:\n\nThis is a fine study as far as it goes and it includes several good controls for potential contaminating factors (though these could be substantially improved). However, the paper is going to require revision and additional data analysis before it is suitable for publication.\n\nAlthough the authors show THAT genetics influences FC, they provide no information about WHY genetics influences FC. Which of the many mechanisms that contribute to observed BOLD FC are influenced by genetics? As the authors note, several of the results reported here (such as the heritability of FC from EEG data) have been reported already in previous studies. It is claimed here that these previous studies are less interpretable than the current study. That may be true, but then the authors need to provide the interpretation. If not then this paper loses a lot of its potential novelty and impact and I am not sure that it will be suitable for publication in this venue. Some effort should be made to explain several of the more interesting and unusual effects as well. For example, it is stated that there is significant heritability in the alpha and beta bands of the MEG data but not in the theta band. Why? What is a plausible mechanism that would generate this pattern of results?\n\nThere is one major class of potential confounds which appear to be given short shrift here: potential contamination of the FC data by confounding factors having nothing to do with cortical connectivity or communication, but which are nevertheless heritable. The problem is that genetic factors might influence processes that are well known to influence correlations in MRI data (and likely MEG data as well). For example, if genetics causes some people to wiggle more in the magnet, that is obviously going to influence FC. (In fact I am fairly certain that I saw another study recently that reported just that effect, though unfortunately I am unable to find it now.)\n\nTo take just one specific example of the above concern, it is reported that the visual system has a high degree of FC in the MEG data. The most likely candidate here would be eye movements, which will clearly affect MEG correlations, and which may also be influenced by genetics. However, I didn't see any report here that the eyes were tracked properly, or that the eye tracking data were regressed out when calculating FC. It is precisely these sorts of potential confounds (i.e., genetic influences operating on behavior that in turn influences FC rather than operating on FC directly) that must be scrupulously accounted for before publication.\n\nPerhaps one good way to get an intuitive handle on these sorts of potential indirect genetic influences would be to run separate analyses to determine the heritability of the various confounds that are known to affect FC, such as motion, eye movements, beamforming errors (in the MEG data). For that matter other factors that might affect FC indirectly might also be heritable. BOLD data taken directly off the scanner are non-Gaussian, and these are Gausianized during pre-processing by a necessarily imprecise procedure. Is the distribution of raw BOLD signals heritable? All these seem plausible, and all could potentially affect FC. A systematic analysis of these factors would seem to be critical for making any strong claims about direct genetic influences on FC.\n\nSmaller issues:\n\nThe claims in the Abstract and Discussion are a bit over-stated in several places given the results because they do not make any reference to places where no heritability is found. For example, while effects in the MEG alpha and beta frequency bands are observed, this is not true for the theta frequency band.\n\nThe figures and the supplementary movies in this paper are rather poor, especially the connectivity figures. There are many excellent choices for visualization software these days.\n\nIssues related to data analysis:\n\nThe pre-processing and data analysis procedures are necessarily complicated, and of course it is always possible that some decision that was made during those procedures might have biased the results. On the other hand, if we started requiring every single step to be addressed in multiple ways to ensure against this sort of bias then none of us would get anywhere! So in the next few paragraphs I only ask for further work on data analysis steps that I think could be particularly problematic, or where additional analysis might provide worthwhile enlightenment.\n\nThe entire data analysis procedure is based on the HCP ICA parcellation. It would inspire more confidence in the conclusions if some analysis was provided that showed whether the choice of parcellation scheme makes any difference on the results or the conclusions. I don't think that it would make much difference in the results if one compared the HCP ICA parcellation to, say, the Glasser HCP parcellation, because these are both fine-scale parcellations that are likely to include more spatial information than can really be supported by genetics data anyway. (In the case of the MEG data, the HCP ICA parcellation may very well have higher resolution than can be supported by either the genetics or the MEG.) It would be immensely helpful to know whether a coarser parcellation schemewould change the results, and I think that knowing the answer to this question might also help us address the question of why these apparent genetic influences are found.\n\nIt looks as if subject motion was removed during pre-processing in both the fMRI and the MEG data, but subject motion was still used as a regressor during ACE modeling in the fMRI data. Subject motion is a problem in both fMRI and MEG, so if it was a problem in the fMRI data even after pre-processing why was pre-processing sufficient for the MEG data? At a minimum it seems that it should also be included in the MEG modeling analysis.\n\nVery small confusing issues:\n\nThis is a side point, but I find it surprising that it is useful/helpful to regress out the MR image reconstruction software version in ACE modeling. This suggests that these data really do live at the very limit of sensitivity, and that confounds and bias really can creep into the data even after pre-processing. It seems like the best practice would be to use the same version of the software to process all the data and I find it a bit worrisome that this was not done.\n\nIn Subsection \u201cE. Three-component variance models\u201d it is stated that the variance partitioning analysis addresses non-negative portions of the variance. Why do these procedures produce negative variance estimates at all? Is this just statistical error?\n\nReviewer #2:\n\nColclough and colleagues examine the genetic influences on resting state MRI and MEG connectivity in \"The heritability of multi-modal connectivity in human brain activity.\" Subjects included 461 individuals with MRI data and a group of 61 primarily overlapping individuals with MEG data all from the Human Connectome Project. Subjects were from extended twin pairs or unrelated individuals. The goals of the article are to estimate the heritability and common genetic influences on resting state and MEG measures of connectivity. The article is clearly written and the analytic plan is both complex and reasonable. Unfortunately, the findings represent only an incremental increase in scientific knowledge, as the genetic influences on resting state have been reported several times using conceptually similar methods. While the MEG results are novel, that analysis is rather underpowered, as the authors appropriately note in the Discussion. Thus, while I believe the findings should be reported, the authors should either describe the work as replication or conduct additional analyses that will increase novelty.\n\nReviewer #3:\n\nThis is an excellent article, which combines state-or-the-art resting-state MEG analysis methods with new approaches to assessing heritability and environmental facts in this type of electrophysiological dataset. As such it both helps to drive the field forward and will be of general interest to the eLife readership. I recommend publication after the following issues are addressed:\n\n1) I think the authors should clarify why 39 cortical regions are chosen, as opposed to other common parcellation schemes, which often have 50-100 regions.\n\n2) I'm surprised that the Authors did not at least attempt to reconstruct networks in the higher gamma band. Why only theta/alpha/beta?\n\n3) One of my main concerns is the use of partial correlations in the FMRI analysis and simple correlations in the MEG network analysis. Why this difference? The Authors cite two of their own papers as justification but this not particularly convincing. Could we have a short justification here?\n\n4) The authors state that the beta-band \"exhibits broad connectivity over the whole cortex\". That doesn't really appear to be the case looking at Figure 1. In ay case, what does that statement actually mean \u2013 it's quite a woolly phrase that is not backed up by any kind of quantification.\n\n5) The authors look at both genetic and environmental factors in terms of contribution to signal power (in both FMRI and MEG), partly as a control for these as confounds in the connectivity analyses, but also as interesting exploratory analyses in their own right. I have two concerns here. 1) Can the authors please describe how \"power\" was assessed in the FMRI signal? I assume this is some measure of temporal variation around the mean of the voxel time series? 2) For the MEG, the power passed by a beamformer in an RSN analysis can be quite dependent on geometric effects (even after weights normalisation). Wouldn't a better measure of 'activity\" in the MEG amplitude envelopes be some measure of temporal variability? The standard deviation (SD) is often used, but the SD of the virtual-sensor and the Mean are often correlated in beamformer reconstructions, so a better measure might be some proportional change (e.g. SD/Mean). \"Activity\" in both the FMRI and MEG time series could thus be assessed using the same (or very similar) metric.\n\n6) In the ACE model, quite a few nuisance covariates are regressed out of the model before heritability/environmental effects were assessed. How were these parameters (and their second-order versions) chosen? In addition, when regressing out some many parameters, is there an issue with statistical power in the MEG analyses as some of the groups only have relatively few subjects (i.e. 11 monozygotic twin pairs)?\n\n7) Finally, with these \"nuisance\" regressors Is there a potential problem with interaction with heritability? For example age is 100% matched in the twin-pairs, but is presumably not matched for the non-related pairings.\n",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "61835ef7-f974-439a-9bfb-941b5f70655d",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C1",
+      "claim": "Patterns of intrinsic human brain activity exhibit a profile of functional connectivity that is associated with behaviour and cognitive performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterns of intrinsic human brain activity exhibit a profile of functional connectivity that is associated with behaviour and cognitive performance, and deteriorates with disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about functional connectivity supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "6024a03a-6bef-4d1c-83f9-8359d6a9349d",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C2",
+      "claim": "Functional connectivity deteriorates with disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterns of intrinsic human brain activity exhibit a profile of functional connectivity that is associated with behaviour and cognitive performance, and deteriorates with disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "1b9402f9-4b9c-4729-b913-9d096f67081f",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C3",
+      "claim": "Genes account for about 15% of the observed variance in fMRI connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "On average over all connections, genes account for about 15% of the observed variance in fMRI connectivity (and about 10% in alpha-band and 20% in beta-band oscillatory power synchronisation), which substantially exceeds the contribution from the environment shared between twins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis on 820 subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "111af63c-22f5-4d96-8960-a09d064a752b",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C4",
+      "claim": "Genes account for about 10% of the observed variance in alpha-band oscillatory power synchronisation.",
+      "claim_type": "EXPLICIT",
+      "source": "On average over all connections, genes account for about 15% of the observed variance in fMRI connectivity (and about 10% in alpha-band and 20% in beta-band oscillatory power synchronisation), which substantially exceeds the contribution from the environment shared between twins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the MEG data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "4c919268-0c87-4206-92f6-156ac555787a",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C5",
+      "claim": "Genes account for about 20% of the observed variance in beta-band oscillatory power synchronisation.",
+      "claim_type": "EXPLICIT",
+      "source": "On average over all connections, genes account for about 15% of the observed variance in fMRI connectivity (and about 10% in alpha-band and 20% in beta-band oscillatory power synchronisation), which substantially exceeds the contribution from the environment shared between twins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the MEG data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "ce864cc2-66f1-4baf-8e83-23c77b0081fc",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C6",
+      "claim": "Genetic contribution to connectivity substantially exceeds the contribution from the environment shared between twins.",
+      "claim_type": "EXPLICIT",
+      "source": "On average over all connections, genes account for about 15% of the observed variance in fMRI connectivity (and about 10% in alpha-band and 20% in beta-band oscillatory power synchronisation), which substantially exceeds the contribution from the environment shared between twins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding from the variance decomposition analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "8976ffbe-015e-48cf-b849-6ba6f6d2ed4f",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C7",
+      "claim": "Genes, rather than the developmental environment, have the dominant role in determining the coupling of neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, insofar as twins share a common upbringing, it appears that genes, rather than the developmental environment, have the dominant role in determining the coupling of neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the comparative heritability analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "12d9f7d0-f338-4ef3-8593-5acc5ea8639e",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C8",
+      "claim": "Spatially separated brain regions are organised into networks of strongly correlated activity during resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying intrinsic activity, when the brain is in a resting state, has given insights into many aspects of healthy and diseased brain function. Resting-state function is characterised by spatially separated regions organised into networks of strongly correlated activity (Beckmann et al., 2005; Smith et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "14efaddd-d7cd-4bda-a077-d66fa8e1c1ff",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C9",
+      "claim": "Resting-state networks represent both local connectivity and longer-range communication.",
+      "claim_type": "EXPLICIT",
+      "source": "These networks represent both local connectivity and longer-range communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about resting-state networks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "8d539309-8b56-47f0-af78-2a6c5564a37a",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C10",
+      "claim": "The strength of resting-state functional connectivity reflects many aspects of cognitive function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the strength of resting-state functional connectivity reflects many aspects of cognitive function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "8c49bea6-6f21-4525-87f9-aa3198312db6",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C11",
+      "claim": "Networks associated with attention and control may continue to develop in late adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity in the brain changes throughout the life cycle: networks associated with attention and control may continue to develop in late adolescence (Barnes et al., 2016) and network integrity degrades during the ageing process (Dennis and Thompson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Barnes et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "81fb1359-d59e-4ad8-b017-1e4751458c22",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C12",
+      "claim": "Network integrity degrades during the ageing process.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity in the brain changes throughout the life cycle: networks associated with attention and control may continue to develop in late adolescence (Barnes et al., 2016) and network integrity degrades during the ageing process (Dennis and Thompson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Dennis and Thompson, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "e919cd04-4083-43bf-bce6-002d23d42e9d",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C13",
+      "claim": "Schizophrenia has been associated with major alterations to the strength and organisation of functional connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many neurological diseases, including schizophrenia and Alzheimer's disease (Sheline and Raichle, 2013; Greicius, 2008), have been associated with major alterations to the strength and organisation of functional connectivity (Stam and van Straaten, 2012; Stam, 2014; van Straaten and Stam, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "821e6647-c06a-4fbf-bfbf-1c87d16e3374",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C14",
+      "claim": "Alzheimer's disease has been associated with major alterations to the strength and organisation of functional connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many neurological diseases, including schizophrenia and Alzheimer's disease (Sheline and Raichle, 2013; Greicius, 2008), have been associated with major alterations to the strength and organisation of functional connectivity (Stam and van Straaten, 2012; Stam, 2014; van Straaten and Stam, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "bcdc55ca-757a-481b-8067-3b8b5b7c55d4",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C15",
+      "claim": "Intrinsic brain activity can predict performance in a task in healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In healthy subjects, intrinsic brain activity can predict not only performance in a task, but also the specific regions which will show increased activity during that task (Sala-Llonch et al., 2012; Yamashita et al., 2015; Zou et al., 2013; Smith et al., 2013; Tavor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "dd5b407b-96de-4589-ba0d-f566c400d29b",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C16",
+      "claim": "Intrinsic brain activity can predict the specific regions which will show increased activity during a task.",
+      "claim_type": "EXPLICIT",
+      "source": "In healthy subjects, intrinsic brain activity can predict not only performance in a task, but also the specific regions which will show increased activity during that task (Sala-Llonch et al., 2012; Yamashita et al., 2015; Zou et al., 2013; Smith et al., 2013; Tavor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "4d5f8a3e-f13f-41ce-90ef-324c1b418dbb",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C17",
+      "claim": "The organisation of human brain function at rest is associated with a broad range of behavioural and life-style traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent evidence suggests that the organisation of human brain function at rest is associated with a broad range of behavioural and life-style traits, and reflects a generalised measure of intelligence (Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Smith et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "fcf20881-09df-421a-ba5d-a75595685e1d",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C18",
+      "claim": "The organisation of human brain function at rest reflects a generalised measure of intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent evidence suggests that the organisation of human brain function at rest is associated with a broad range of behavioural and life-style traits, and reflects a generalised measure of intelligence (Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Smith et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "41ad805e-c3d1-486f-add1-cebb16b807ca",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C19",
+      "claim": "The study employed functional magnetic resonance imaging recordings from 820 subjects from the Human Connectome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "We employ resting-state recordings from 820 subjects from the Human Connectome Project (HCP; WU-Minn HCP Consortium et al., 2013); these data are publicly available, and have undergone a standardised pre-processing procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "e1b47386-f34d-4266-93ad-1206114463ed",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C20",
+      "claim": "The HCP dataset includes 103 monozygotic twin pairs with fMRI resting-state scans.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCP is a twin study, and the subjects from the S900 data release with all fMRI (MEG) resting-state scans comprise 103 (19) monozygotic twin pairs, who share 100% of their genetic structure and a common environment, and 54 (13) dizygotic twin pairs, who share 50% of their genetic structure and a common environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "2a6ba28f-0107-4d81-9b6c-5398e69e1e5d",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C21",
+      "claim": "The HCP dataset includes 54 dizygotic twin pairs with fMRI resting-state scans.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCP is a twin study, and the subjects from the S900 data release with all fMRI (MEG) resting-state scans comprise 103 (19) monozygotic twin pairs, who share 100% of their genetic structure and a common environment, and 54 (13) dizygotic twin pairs, who share 50% of their genetic structure and a common environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "f5ca5ea0-4f7a-4939-9418-85a5632d24c0",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C22",
+      "claim": "The HCP dataset includes 19 monozygotic twin pairs with MEG resting-state scans.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCP is a twin study, and the subjects from the S900 data release with all fMRI (MEG) resting-state scans comprise 103 (19) monozygotic twin pairs, who share 100% of their genetic structure and a common environment, and 54 (13) dizygotic twin pairs, who share 50% of their genetic structure and a common environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "030a98e5-ff3b-4227-a8bb-56b44921e6ed",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C23",
+      "claim": "The HCP dataset includes 13 dizygotic twin pairs with MEG resting-state scans.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCP is a twin study, and the subjects from the S900 data release with all fMRI (MEG) resting-state scans comprise 103 (19) monozygotic twin pairs, who share 100% of their genetic structure and a common environment, and 54 (13) dizygotic twin pairs, who share 50% of their genetic structure and a common environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "c28b554e-b283-4e0f-ae5f-677b6dbd4a62",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C24",
+      "claim": "Monozygotic twins share 100% of their genetic structure and a common environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCP is a twin study, and the subjects from the S900 data release with all fMRI (MEG) resting-state scans comprise 103 (19) monozygotic twin pairs, who share 100% of their genetic structure and a common environment, and 54 (13) dizygotic twin pairs, who share 50% of their genetic structure and a common environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about monozygotic twins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "ea56e7f7-b2de-4855-9991-3cf2d32ab517",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C25",
+      "claim": "Dizygotic twins share 50% of their genetic structure and a common environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCP is a twin study, and the subjects from the S900 data release with all fMRI (MEG) resting-state scans comprise 103 (19) monozygotic twin pairs, who share 100% of their genetic structure and a common environment, and 54 (13) dizygotic twin pairs, who share 50% of their genetic structure and a common environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about dizygotic twins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "a64c2229-0b45-434c-82b8-3871b1a4ceb2",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C26",
+      "claim": "Each subject provided three MEG scans of 6 minutes each.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subject provided three MEG scans (of 6 minutes each), and four fMRI scans (of 15 minutes each).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "553ed863-3d12-4152-9999-312e2fe966da",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C27",
+      "claim": "Each subject provided four fMRI scans of 15 minutes each.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subject provided three MEG scans (of 6 minutes each), and four fMRI scans (of 15 minutes each).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "fe98be7f-6645-457d-992f-0fca01bf7c76",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C28",
+      "claim": "Functional connectivity of two subjects becomes more alike as their proportion of shared background and genetics increases.",
+      "claim_type": "EXPLICIT",
+      "source": "We compare the similarity in overall network structure between pairs of subjects, assessing the extent to which the functional connectivity of two subjects becomes more alike as their proportion of shared background and genetics increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the network similarity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "563210a3-297e-41b9-9e67-5e2f6a054bd8",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C29",
+      "claim": "The fMRI connectome shows strong bilateral connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fMRI connectome shows strong bilateral connectivity, together with fronto-parietal correlations and coupling between the anterior cingulate and posterior cingulate cortices, reflecting well-known patterns of resting-state networks in fMRI (Beckmann et al., 2005; Smith et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the fMRI data analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "5985f859-c1c7-48b6-8651-7267a72b7290",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C30",
+      "claim": "The fMRI connectome shows fronto-parietal correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "The fMRI connectome shows strong bilateral connectivity, together with fronto-parietal correlations and coupling between the anterior cingulate and posterior cingulate cortices, reflecting well-known patterns of resting-state networks in fMRI (Beckmann et al., 2005; Smith et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the fMRI data analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "95f851a9-ceda-4464-bc89-ffc785f527ce",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C31",
+      "claim": "The fMRI connectome shows coupling between the anterior cingulate and posterior cingulate cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "The fMRI connectome shows strong bilateral connectivity, together with fronto-parietal correlations and coupling between the anterior cingulate and posterior cingulate cortices, reflecting well-known patterns of resting-state networks in fMRI (Beckmann et al., 2005; Smith et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the fMRI data analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "683d9c79-c8f4-43a3-9609-e65993a3805e",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C32",
+      "claim": "In the MEG alpha band, the visual system shows strong connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the MEG data, the alpha band shows a strongly connected visual system, with strong connectivity from the visual cortex extending out to the temporal and parietal lobes, and a highly coupled posterior cingulate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the MEG alpha band analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "48bb31c2-6768-4f50-9ad5-405d7590edc3",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C33",
+      "claim": "In the MEG alpha band, there is strong connectivity from the visual cortex extending to the temporal and parietal lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the MEG data, the alpha band shows a strongly connected visual system, with strong connectivity from the visual cortex extending out to the temporal and parietal lobes, and a highly coupled posterior cingulate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the MEG alpha band analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "2c160b06-e6eb-4fe6-b691-4e34bcf1de59",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C34",
+      "claim": "In the MEG alpha band, the posterior cingulate is highly coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "In the MEG data, the alpha band shows a strongly connected visual system, with strong connectivity from the visual cortex extending out to the temporal and parietal lobes, and a highly coupled posterior cingulate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the MEG alpha band analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "f17d8797-335e-479a-911d-beb49fcb750f",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C35",
+      "claim": "The MEG beta-band exhibits strong bilateral coupling across the sensorimotor cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "The beta-band exhibits strong bilateral coupling across the sensorimotor cortices, with connectivity continuing through the superior parietal lobes and down to the occipital cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the MEG beta band analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "499e9f50-4918-4565-88f7-5fdc5142332e",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C36",
+      "claim": "In the MEG beta-band, connectivity continues through the superior parietal lobes and down to the occipital cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The beta-band exhibits strong bilateral coupling across the sensorimotor cortices, with connectivity continuing through the superior parietal lobes and down to the occipital cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the MEG beta band analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "dd177e8f-780d-442e-85c4-a0c80872238c",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C37",
+      "claim": "The MEG theta band exhibits visual and motor connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The theta band also exhibits visual and motor connectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive finding from the MEG theta band analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "98143bdd-03c6-4ba3-a575-0e94ab21b5bc",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C38",
+      "claim": "The observed patterns of MEG connectivity are in general agreement with previously reported results in these frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns of connectivity are in general agreement with previously reported results in these frequency bands (Hillebrand et al., 2012; Brookes et al., 2011; Baker et al., 2014; de Pasquale et al., 2012; de Pasquale et al., 2016; Hipp et al., 2012; Marzetti et al., 2013; Mantini et al., 2007; Colclough et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "0c4a9d5d-0309-4380-a918-aca954efe5f2",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C40",
+      "claim": "Additive genetics accounted for 17%, on average, of the functional connectivity measured with fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is a large amount of variability in the data which is not attributable to either of these factors, we found that additive genetics accounted for 17%, on average, of the functional connectivity measured with fMRI.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the variance component model analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "7cddf63b-b687-4828-aa35-3a98c05d407e",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C41",
+      "claim": "In MEG, 19% of the variability in oscillatory coupling strengths in the beta band was determined by additive genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In MEG, 19% of the variability in oscillatory coupling strengths in the beta band, and 8% in the alpha band, was determined by additive genetics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the variance component model analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "96ffcdeb-2a64-4929-83a6-6291a92fb454",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C42",
+      "claim": "In MEG, 8% of the variability in oscillatory coupling strengths in the alpha band was determined by additive genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In MEG, 19% of the variability in oscillatory coupling strengths in the beta band, and 8% in the alpha band, was determined by additive genetics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the variance component model analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "7e48ae85-a519-413b-a9a6-c12dac0703c5",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C46",
+      "claim": "Using the 15-dimensional ICA decomposition, significant genetic influences were found in fMRI data with h\u00b2=0.29[0.26,0.33], p=1\u00d710\u207b\u2074.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant effects of additive genetic factors on the strength of inter-network connections in fMRI, using an alternative lower-dimensional parcellation based on 15 entire networks as nodes for the connectome. This suggests that genetic control of functional connectivity extends across multiple spatial scales of synchronisation. For oscillatory activity measured with MEG, it is not clear that it is meaningful to summarise, in the same manner as for an fMRI inter-network analysis, the collective behaviour of these gross network structures using a single time course: there is growing evidence from MEG that the extended networks from the fMRI literature are composed of smaller sub-networks that synchronise and de-synchronise on relatively fast time scales (Baker et al., 2014; de Pasquale et al., 2012; de Pasquale et al., 2016). That we found no significant genetic effects on the connections among this additional set of 15 networks in our MEG data may simply reflect the unsuitability of static whole-network parcellations for this modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the alternative parcellation analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "a32ccab0-fe77-4bef-87a0-1027bd605880",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C47",
+      "claim": "No significant genetic effects were found for MEG connectivity using the 15-dimensional ICA parcellation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant effects of additive genetic factors on the strength of inter-network connections in fMRI, using an alternative lower-dimensional parcellation based on 15 entire networks as nodes for the connectome. This suggests that genetic control of functional connectivity extends across multiple spatial scales of synchronisation. For oscillatory activity measured with MEG, it is not clear that it is meaningful to summarise, in the same manner as for an fMRI inter-network analysis, the collective behaviour of these gross network structures using a single time course: there is growing evidence from MEG that the extended networks from the fMRI literature are composed of smaller sub-networks that synchronise and de-synchronise on relatively fast time scales (Baker et al., 2014; de Pasquale et al., 2012; de Pasquale et al., 2016). That we found no significant genetic effects on the connections among this additional set of 15 networks in our MEG data may simply reflect the unsuitability of static whole-network parcellations for this modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the alternative parcellation analysis with interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "5fa24332-942a-49ac-bdc1-5d67d01e419a",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C48",
+      "claim": "Genetic control of functional connectivity extends across multiple spatial scales of synchronisation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant effects of additive genetic factors on the strength of inter-network connections in fMRI, using an alternative lower-dimensional parcellation based on 15 entire networks as nodes for the connectome. This suggests that genetic control of functional connectivity extends across multiple spatial scales of synchronisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding of genetic effects at both the focal ROI level and the inter-network level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "41d70198-0a77-4b08-853d-ad122e2b94ab",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C49",
+      "claim": "No influence of genetic or environmental factors on MEG signal strength was found.",
+      "claim_type": "EXPLICIT",
+      "source": "In our MEG data, we found no influence of these factors on the measured signal strength, and so can exclude this signal-to-noise effect as a likely confound in the beta-band MEG results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of signal power shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "d41380eb-7572-494e-a364-0d02b13dfef4",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C50",
+      "claim": "There was a significantly heritable component to signal power in the fMRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significantly heritable component to signal power in the fMRI data\u2014but this is not surprising in and of itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of signal power shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "d56c0599-1d9e-4a24-89a6-a00c0946f8ae",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C51",
+      "claim": "Cortical folding patterns have modest heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical folding patterns have been shown to have modest heritability (Sotiropoulos et al., 2015; Botteron et al., 2008; van Essen et al., 2014); although the strength of genetic control and the mechanism of influence are not yet certain (Tallinen et al., 2016; G\u00f3mez-Robles et al., 2015; Ronan and Fletcher, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "127da4f2-7cac-4003-9c54-9b3df06e6920",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C52",
+      "claim": "Cortical curvature exhibits the highest heritability around the sensorimotor areas and insula.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical curvature exhibits the highest heritability around the sensorimotor areas and insula (as has been reported previously, in an analysis using a different sample of the HCP subjects; Sotiropoulos et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the cortical curvature analysis shown in Figure 1\u2014figure supplement 2, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "d03597cf-b2b0-4a55-a5eb-cfa75633b747",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C54",
+      "claim": "The heritability of functional connectivity measured with electrophysiology has been reported before with heritabilities of 20\u201375%, predominantly in the alpha and beta bands.",
+      "claim_type": "EXPLICIT",
+      "source": "The heritability of functional connectivity measured with electrophysiology has been reported before (Posthuma et al., 2005; Schutte et al., 2013; recording heritabilities of 20\u201375%, predominantly in the alpha and beta bands).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "139c0487-98d6-43fa-b045-06313238c043",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C55",
+      "claim": "Previous electrophysiology heritability analyses were performed between EEG sensors using synchronisation likelihood, which is sensitive to volume conduction artefacts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these analyses were performed between EEG sensors, using synchronisation likelihood for network estimation, a measure that is sensitive to volume conduction artefacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of previous methods based on knowledge of their limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "a252bc2e-dfd0-4ab7-98d7-8854f1c1c357",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C56",
+      "claim": "The study uses a connectivity metric that explicitly suppresses volume conduction artefacts.",
+      "claim_type": "EXPLICIT",
+      "source": "We use a connectivity metric that explicitly suppresses these artefacts (Colclough et al., 2015; Brookes et al., 2012; Hipp et al., 2012; O'Neill et al., 2015), reducing the influence of heritable anatomical features and cortical folding patterns on our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological feature of the study supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "f5746568-c804-4c58-a4dd-c40bd74bbfca",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C57",
+      "claim": "No significant genetic control of functional connectivity was found in the theta frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find significant genetic control of functional connectivity in the theta frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the MEG theta band analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "a08a5502-6b7b-4a8c-9b90-8837f7641b06",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C58",
+      "claim": "The lack of significant genetic control in theta band may be partly due to difficulty in cleanly estimating functional connectivity in MEG outside the alpha and beta bands.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be in part because of the difficulty in cleanly estimating functional connectivity in MEG, particularly outside the alpha and beta bands (Colclough et al., 2016), but may also be because the 89 HCP subjects with resting-state MEG scans present a much smaller sample for study than the rfMRI HCP dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reasons for the null finding, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "4136d58d-959c-45e8-b281-c98b95cc4467",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C59",
+      "claim": "The smaller MEG sample size (89 subjects) compared to the fMRI dataset may contribute to the lack of significant findings in theta band.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be in part because of the difficulty in cleanly estimating functional connectivity in MEG, particularly outside the alpha and beta bands (Colclough et al., 2016), but may also be because the 89 HCP subjects with resting-state MEG scans present a much smaller sample for study than the rfMRI HCP dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reasons for the null finding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "418774f1-6fb7-439c-b0de-0152d1b8ad96",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C60",
+      "claim": "Structural connectivity is highly heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural connectivity, the distribution of the white matter tracts across the brain that enable communication, is known to be highly heritable (Zhu et al., 2015; Jahanshad et al., 2012; Kochunov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "1d92537c-be96-4b8b-8985-0a3015e4ca43",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C61",
+      "claim": "A study of the heritability of structural connections with the HCP dataset estimated a mean heritability of 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "(A study of the heritability of structural connections with the HCP dataset estimated a mean heritability of 25%; Sotiropoulos et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "ba8e3c93-2bc4-4c9e-b3d4-1a0e1bdf4d63",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C62",
+      "claim": "Previous studies of the heritability of functional connectivity with fMRI find significant genetic effects with heritability estimates between 20% and 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of the heritability of functional connectivity with fMRI (which, in general, fail to control for subject motion, node power or brain size, and some of which focus instead on network topology), do also find significant genetic effects with heritability estimates lying between 20% and 60% (Smit et al., 2008; Fornito et al., 2011; van den Heuvel et al., 2013; Thompson et al., 2013; Jansen et al., 2015; Glahn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "b46da503-1285-44d4-ba4a-385c4843e4f9",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C63",
+      "claim": "Previous fMRI heritability studies generally fail to control for subject motion, node power or brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of the heritability of functional connectivity with fMRI (which, in general, fail to control for subject motion, node power or brain size, and some of which focus instead on network topology), do also find significant genetic effects with heritability estimates lying between 20% and 60% (Smit et al., 2008; Fornito et al., 2011; van den Heuvel et al., 2013; Thompson et al., 2013; Jansen et al., 2015; Glahn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of previous studies based on review of their methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "ae81ded7-37bb-4ce3-b886-3b0d0a3e4527",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C64",
+      "claim": "Heritability estimates can change as network estimation methods improve because heritability is expressed as a fraction of observed phenotypic variance including measurement noise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, connectivity estimation is noisy, and as heritability is expressed as a fraction of the observed phenotypic variance (including measurement noise), we can expect the parameter estimates of heritability to change as network estimation methods improve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of how heritability is calculated.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "917cae1d-be24-4c03-92b5-129270895bdf",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C65",
+      "claim": "Recent work has correlated profiles of gene expression in different cortical regions to resting-state fMRI connectivity profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work (Hawrylycz et al., 2015; IMAGEN consortium et al., 2015) has correlated the profiles of gene expression in different regions of cortex, and compared these patterns of gene transcription to resting-state fMRI connectivity profiles, identifying sets of genes with co-expression patterns that reflect networks of functional connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "3a7fa22c-279f-4139-832f-c3b118ec94e5",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C66",
+      "claim": "Sets of genes with co-expression patterns that reflect networks of functional connectivity have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work (Hawrylycz et al., 2015; IMAGEN consortium et al., 2015) has correlated the profiles of gene expression in different regions of cortex, and compared these patterns of gene transcription to resting-state fMRI connectivity profiles, identifying sets of genes with co-expression patterns that reflect networks of functional connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "2e0c04ac-189a-4e34-9df9-667c3de7f031",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C67",
+      "claim": "Functional connectivity profiles are associated with intelligence, which is well-known to be heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional connectivity profiles are associated with intelligence, which is well-known to be heritable (Bartels et al., 2002; Neisser et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "e85f4222-ee58-49f2-94ea-bcd4eaf9c903",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C68",
+      "claim": "Connectivity is implicated with a broad range of behavioural and life-style factors including earning power, measures of health, various assessments of cognitive performance, and self-reported life satisfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "But connectivity is also implicated with a very broad range of behavioural and life-style factors, including earning power, measures of health, various assessments of cognitive performance, and self-reported life satisfaction (Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "abca1270-70c2-4092-b028-098370624608",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C69",
+      "claim": "The environment in which individuals develop can make a significant impact on their performance and long-term outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "As the findings of the Moving To Opportunity experiment in the United States make clear (Ludwig et al., 2013; Chetty et al., 2015), together with results from studies on the effects of schooling, socio-economic environment and adoption (Nisbett et al., 2012), the environment in which individuals develop can still make a significant impact on their performance and long-term outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "c2bdf47f-134e-45ae-9e19-4cca7a2faa47",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C70",
+      "claim": "Nature, more so than nurture, is a major force in determining integrated cognitive function and cognitive capability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while genes are not the only important factor, results such as these presented here suggest that nature, more so than nurture, is a major force in determining integrated cognitive function and, by extension, cognitive capability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the study's findings about the relative importance of genetic versus environmental factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "52d07203-0d7e-46c3-b812-9103d3969a10",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C71",
+      "claim": "All subjects in the study are young adults aged 22\u201335 years and healthy.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects are young adults (22\u201335 years of age) and healthy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "24c4ea14-3cb2-43d0-8793-67da7f1e7994",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C72",
+      "claim": "Resting-state fMRI data were acquired with 2 mm isotropic spatial resolution and a temporal resolution of 0.72 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state fMRI data were acquired with 2 mm isotropic spatial resolution and a temporal resolution of 0.72 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "5d58ca38-0df5-4692-9fcc-ed34ee97bec5",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C73",
+      "claim": "Functional connectivity was estimated among 39 functionally defined cortical regions of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional connectivity measured with fMRI was estimated among 39 functionally defined cortical regions of interest (network nodes) by computing partial correlations between BOLD time courses representing each region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "48795341-2021-41da-a72c-810ccc0dd036",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C74",
+      "claim": "The parcellation contains contiguous regions identified from a resting-state 100-dimensional group-ICA decomposition of fMRI data from the first 200 subjects of the HCP project.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the parcellation employed in Colclough et al. (Colclough et al., 2015), which contains contiguous regions identified from a resting-state 100-dimensional group-ICA decomposition of fMRI data from the first 200 subjects of the HCP project.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the parcellation method, shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "434b0b80-3977-4577-9e94-06518ee04f90",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C75",
+      "claim": "Most ROIs have a symmetric counterpart in the opposite hemisphere, except those on the midline such as the posterior cingulate cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Most ROIs have a symmetric counterpart in the opposite hemisphere, except those on the midline such as the posterior cingulate cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial organization of the parcellation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "b5584158-3f06-4635-8abe-4640f43f69e9",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C76",
+      "claim": "The low dimensionality of MEG data restricts parcellations to about 60 ROIs or less.",
+      "claim_type": "EXPLICIT",
+      "source": "The low dimensionality of MEG data restricts us to parcellations of about this number of ROIs or less: as there are only a few hundred sensors, reconstructing time courses for more than approximately 60 different regions would be noisy or nonsensical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the technical limitations of MEG.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "dd79967a-4526-4ae0-97a9-76399d6b53ec",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C77",
+      "claim": "Models that categorise signals as originating within or without the MEG dewar suggest a limit of about 60 measurable cortical sources.",
+      "claim_type": "EXPLICIT",
+      "source": "This upper bound is supported by models that categorise signals as originating within or without the MEG dewar, which suggest a limit of about 60 measurable cortical sources (Taulu et al., 2005), and by recently developed data-driven parcellations that only find around 70 unique identifiable parcels using combined MEG and EEG data (Farahibozorg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "fb336f44-4359-4cb8-898d-147172076509",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C78",
+      "claim": "Recently developed data-driven parcellations only find around 70 unique identifiable parcels using combined MEG and EEG data.",
+      "claim_type": "EXPLICIT",
+      "source": "This upper bound is supported by models that categorise signals as originating within or without the MEG dewar, which suggest a limit of about 60 measurable cortical sources (Taulu et al., 2005), and by recently developed data-driven parcellations that only find around 70 unique identifiable parcels using combined MEG and EEG data (Farahibozorg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "7fcad283-eb25-4f34-9e4d-593edc31537e",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C79",
+      "claim": "Resting-state MEG data were acquired on a whole-head Magnes 3600 scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state MEG data were acquired on a whole-head Magnes 3600 scanner (4D Neuroimaging, San Diego, CA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MEG data acquisition equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "6d532980-f136-441f-b50d-a1ee15f0d395",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C80",
+      "claim": "MEG sensor-space data were down-sampled from 509 Hz to 300 Hz with the application of an anti-aliasing filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensor-space data were down-sampled from 509 Hz to 300 Hz, with the application of an anti-aliasing filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MEG data preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "2380e368-df06-4a24-b769-8dac4afcfa81",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C81",
+      "claim": "MEG data from each session were source-reconstructed using a scalar beamformer.",
+      "claim_type": "EXPLICIT",
+      "source": "MEG data from each session were source-reconstructed using a scalar beamformer (Van Veen et al., 1997; Robinson and Vrba, 1999; Woolrich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MEG source reconstruction method with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "30de6e00-a0d9-487e-aebb-17f4bdc4c10f",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C82",
+      "claim": "A symmetric orthogonalisation procedure is used to compensate for spatial leakage confounds in source-localised MEG.",
+      "claim_type": "EXPLICIT",
+      "source": "We compensate for these spatial leakage confounds, which can induce spurious connectivity estimates, using a symmetric orthogonalisation procedure (Colclough et al., 2015) to remove all shared signal at zero lag between the network nodes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the leakage correction method with citation, illustrated in Figure 3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "09c8a621-99a3-47c5-80d4-f936f9209e2f",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C83",
+      "claim": "The symmetric orthogonalisation procedure is a multivariate extension of the orthogonalisation principle proposed in Brookes et al., 2012; Hipp et al., 2012; and O'Neill et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure is a multivariate extension of the orthogonalisation principle proposed in Brookes et al., 2012; Hipp et al., 2012; and O'Neill et al., 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "b0e7856e-b0f2-42ad-a83e-95871b75bbef",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C84",
+      "claim": "The orthogonalisation approach suppresses artificial correlations induced by spatial leakage at the expense of any zero-lag connections of true neuronal origin.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach suppresses any artificial correlations induced by spatial leakage, at the expense of any zero-lag connections of true neuronal origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the leakage correction method based on knowledge of how it works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "11078f3d-ad32-4044-897b-95e89c290630",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C85",
+      "claim": "Partial correlation used in fMRI data is one of the most accurate and robust measures in this modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are correlation measures, to maintain the similarity in analysis between the fMRI and MEG data. Partial correlation, used in the fMRI data, is one of the most accurate and robust measures in this modality (Smith et al., 2011; Smith et al., 2013; Marrelec et al., 2006; Varoquaux and Craddock, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "e34a0062-2485-4be3-8da2-bea63b9d1a84",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C86",
+      "claim": "Regularised partial correlation is relatively unreliable in MEG.",
+      "claim_type": "EXPLICIT",
+      "source": "An assessment of the repeatability of the most common network estimation measures in MEG showed that regularised partial correlation is relatively unreliable in this modality, and that the full correlation of the power envelopes of oscillatory activity (as we use here) was the most repeatable approach (Colclough et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "ffae1925-91e4-4eee-a5dd-5be02b10962e",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C87",
+      "claim": "Full correlation of the power envelopes of oscillatory activity is the most repeatable approach for MEG network estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "An assessment of the repeatability of the most common network estimation measures in MEG showed that regularised partial correlation is relatively unreliable in this modality, and that the full correlation of the power envelopes of oscillatory activity (as we use here) was the most repeatable approach (Colclough et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "7649204c-df96-4631-bdcf-f38748db5343",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C88",
+      "claim": "Repeating the fMRI analysis using full correlation rather than partial correlations yielded qualitatively similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "We did repeat our fMRI analysis using full correlation, rather than partial correlations, and found qualitatively similar results, with no difference in the significance of the claims we would make.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "af8792a3-5d9b-4aec-ac43-f834e907d9d5",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C89",
+      "claim": "Similarity between pairs of functional networks was measured as the inverse Euclidean distance between correlation matrices after logarithmic projection onto a Euclidean plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarity between pairs of functional networks was measured as the inverse Euclidean distance between the correlation matrices, after a logarithmic projection onto a Euclidean plane locally tangent to the Riemann manifold of positive semi-definite matrices (Barachant et al., 2013; Ng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network similarity metric with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "1f24cfbb-3d64-46d4-b22c-2b8823c27bd4",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C92",
+      "claim": "The APACE system of permutation inference was employed for statistical testing.",
+      "claim_type": "EXPLICIT",
+      "source": "The APACE system of permutation inference (Chen, 2014) was employed, using the mean network matrix (over resting-state recording sessions) for each subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical inference method with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "53f16b2a-2a25-44cf-be88-5adfe93f0303",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C93",
+      "claim": "The analysis regressed out effects of age, square of age, sex, age-sex interaction, sex-square of age interaction, cube root of intra-cranial volume, cube root of cortical volume, subject motion, and MR image reconstruction software version.",
+      "claim_type": "EXPLICIT",
+      "source": "On each edge, we regressed out the effect of age, the square of age, sex, an age and sex interaction, an interaction between sex and the square of age, the cube root of intra-cranial volume and of cortical volume (both estimated with FreeSurfer), a measure of subject motion in the scanner (fMRI_motion) and, for the fMRI data, the MR image reconstruction software version.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the confound regression approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "46c7fb29-4f3e-40ab-8172-a93de7b8a46c",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C94",
+      "claim": "A regressor accounting for heritable changes in node power was included on each network edge.",
+      "claim_type": "EXPLICIT",
+      "source": "On each network edge, we included a regressor to account for heritable changes in node power, computed as the geometric mean of the power in each of the two nodes that each connection joins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a confound control measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "99b69b57-5349-4174-9133-9a0ead742c84",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "claim_id": "C97",
+      "claim": "A false discovery rate correction was applied to the 21 principal statistical tests conducted for this paper.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a false discovery rate correction to the 21 principal statistical tests conducted for this paper to compensate for the multiple comparisons we perform (Benjamini and Hochberg, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the multiple comparison correction approach with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Genetic factors account for 15-20% of variance in functional connectivity across modalities. Specifically, genes account for ~17% of fMRI connectivity variance, 19% of MEG beta-band variance, and 8% of MEG alpha-band variance, substantially exceeding shared environmental contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 and C40-C42 present consistent heritability estimates from variance component models with appropriate statistical testing (permutation-based inference, FDR correction). The findings are supported by data from 820 fMRI subjects and 89 MEG subjects using twin study design. Confidence intervals and p-values are reported in supplementary materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "fae7f09a-5328-497b-98eb-43eacb820b6f",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genes have a dominant role over developmental environment in determining neuronal coupling and cognitive function. This conclusion extends to integrated cognitive function and cognitive capability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C70 represent the primary conclusion of the study, directly supported by the differential heritability findings (h\u00b2-c\u00b2 estimates of 0.15[0.13,0.16] for fMRI and 0.13[0.04,0.22] for beta-band). The inference is logically derived from the variance decomposition results, though it relies on the equal-environment assumption for twins which the authors acknowledge may be violated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Network similarity increases with genetic relatedness, and the observed connectivity patterns in fMRI and MEG match established resting-state networks. fMRI shows bilateral, fronto-parietal, and cingulate connectivity; MEG alpha-band shows visual system connectivity; MEG beta-band shows sensorimotor connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by significant permutation tests (p<10\u207b\u00b3) showing progressive network similarity from unrelated subjects through siblings, dizygotic twins, to monozygotic twins (Figure 1B). Claims C29-C37 describe connectivity patterns consistent with prior literature and are supported by citations and visual evidence in Figure 1A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "201a0253-49ab-436a-922a-ee9a72724106",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genetic control of functional connectivity extends across multiple spatial scales. Using a 15-dimensional ICA parcellation, significant genetic influences were found in fMRI (h\u00b2=0.29[0.26,0.33], p=1\u00d710\u207b\u2074) but not in MEG, possibly due to unsuitability of static whole-network parcellations for MEG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 provides specific statistical evidence for genetic effects at the inter-network level in fMRI. Claim C47's null finding for MEG is appropriately interpreted (C47) with reference to MEG's dynamic sub-network structure. Claim C48's inference about multi-scale genetic control is reasonable given significant effects at both focal ROI and inter-network levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "50dbdaea-12da-4f37-bd5f-6570dd1d5526",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Signal power shows heritable components in fMRI but not MEG. The analysis controlled for node power effects by including geometric mean power as a regressor in connectivity analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 report findings from variance component models on signal power (Figure 1D), with appropriate statistical testing. Claim C94 describes the methodological control implemented to prevent confounding of connectivity heritability by power heritability. This represents sound experimental design addressing a known confound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "9a92fa27-3c5a-4157-9764-8556d97b1da6",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cortical curvature exhibits modest heritability, with highest values around sensorimotor areas and insula, consistent with prior HCP analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by multiple citations to prior work. Claim C52 reports findings from the current analysis (Figure 1\u2014figure supplement 2) that replicate prior results from a different HCP sample, providing validation. The lack of correlation between curvature heritability and connectivity heritability (Supplementary file 5) supports that anatomical confounds don't drive the connectivity findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "56209899-1264-4e61-8776-650872bb24c9",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No significant genetic control was found in the theta frequency band, possibly due to technical limitations in MEG connectivity estimation outside alpha/beta bands or insufficient sample size (89 MEG subjects vs 820 fMRI subjects).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 reports a null finding from the variance component analysis. Claims C58-C59 provide reasonable speculation about technical and statistical power limitations, supported by citation to Colclough et al., 2016 regarding MEG connectivity estimation challenges. The authors appropriately acknowledge this as a limitation rather than claiming absence of genetic effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "3ebd59e7-4128-4d27-b359-ba79ffe11268",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study improves upon prior electrophysiology heritability work by using source-localized MEG with symmetric orthogonalization to suppress volume conduction artifacts, which were confounds in previous EEG sensor-space analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 accurately characterize prior work and its limitations. Claims C56, C82-C84 describe the methodological improvements implemented, supported by appropriate citations. The symmetric orthogonalization method (Colclough et al., 2015) is well-established for addressing spatial leakage, though C84 appropriately notes it removes zero-lag connections of true neuronal origin as a trade-off.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "4c56b01e-7173-4dcc-905f-add13efe940d",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior studies show structural connectivity is highly heritable (~25% in HCP) and functional connectivity heritability ranges from 20-60%, though previous fMRI studies generally failed to control for motion, node power, or brain size. Heritability estimates can change as network estimation methods improve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 accurately summarize prior literature with appropriate citations. The critical assessment in C63 is supported by review of cited methods. Claim C64 provides important conceptual insight about how measurement noise affects heritability estimates, which is theoretically sound and contextualizes why this study's estimates differ from some prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study analyzed HCP data from 820 subjects (103 MZ and 54 DZ twin pairs) for fMRI and 89 subjects (19 MZ and 13 DZ twin pairs) for MEG. All subjects were healthy young adults aged 22-35 years, with four 15-minute fMRI scans and three 6-minute MEG scans per subject.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23, C26-C27, and C71 accurately describe the study sample and data collection. These are straightforward descriptive claims about the dataset used, consistent with HCP documentation. The sample sizes are adequate for fMRI twin analyses but more limited for MEG, which the authors acknowledge affects statistical power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "6ad29b22-b965-4cd1-b796-49ed3bfb5440",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Functional connectivity was estimated among 39 contiguous ROIs derived from 100-dimensional ICA decomposition of HCP fMRI data. This parcellation size is appropriate for MEG given technical limitations of ~60 measurable cortical sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 describe the primary parcellation used, which is well-documented and shown in Figure 2A. Claims C76-C78 provide sound justification for the parcellation dimensionality based on MEG's technical constraints, supported by citations to Taulu et al., 2005 and Farahibozorg et al., 2017. The choice represents appropriate methodological consideration of MEG limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "c726363b-002b-4b8a-ac12-a85319f95010",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Different connectivity metrics were used for fMRI (partial correlation) and MEG (full correlation of power envelopes) based on modality-specific reliability. Sensitivity analysis using full correlation for fMRI yielded qualitatively similar results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 justify the methodological choices with appropriate citations showing partial correlation is optimal for fMRI while full correlation is most repeatable for MEG (Colclough et al., 2016). Claim C88 reports a sensitivity analysis confirming robustness of findings to this methodological choice, strengthening confidence in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "a8f9f536-6f38-4251-b9dd-93701a3f9aa5",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Network similarity was measured using Riemannian geometry-based distance metrics. Statistical inference used APACE permutation methods with extensive confound regression (age, sex, brain volumes, motion, reconstruction software) and FDR correction for 21 tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C92 describe sophisticated and appropriate statistical methods with proper citations. Claim C93 details comprehensive confound control addressing known sources of bias. Claim C97 confirms appropriate multiple comparison correction. The statistical approach is rigorous and well-suited to the twin study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "7df7b944-bd37-424a-81de-d7356f9267b1",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Functional connectivity relates to gene expression patterns, intelligence, and broad behavioral/lifestyle factors. While environmental factors can impact outcomes, the current findings suggest genetic factors dominate in determining connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 appropriately contextualize the findings within broader literature on genetics, cognition, and environment. All claims are supported by relevant citations. The authors appropriately acknowledge environmental effects (C69) while maintaining their conclusion about genetic dominance, providing balanced interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "24f0aa4c-7832-4490-9486-559affb83516",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Functional connectivity exhibits established patterns of resting-state networks associated with behavior, cognition, and intelligence, changes across the lifespan, and is altered in neurological diseases. Intrinsic activity can predict task performance and regional activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 provide background context about functional connectivity, all supported by appropriate citations to established literature. These are not novel findings from this study but rather well-accepted prior knowledge that motivates the research question. The characterization of the field is accurate and comprehensive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "38841d29-0fb4-456c-bb90-ae7d00c6fc6b",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Monozygotic twins share 100% of genetic structure while dizygotic twins share 50%, both sharing common environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 state fundamental genetic facts about twin relationships that form the basis of twin study methodology. These are established knowledge correctly applied to justify the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    },
+    {
+      "id": "36b7e8df-b686-4cc0-9077-462e05dbea6c",
+      "content_id": "bedc5399-f037-4cb6-801c-bdf4c4164ed2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "MEG connectivity patterns agree with prior literature. Data acquisition used standard HCP protocols: fMRI at 2mm/0.72s resolution and MEG on Magnes 3600 scanner with beamformer source reconstruction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 validates the MEG findings against prior work with extensive citations. Claims C72, C79-C81 describe standard data acquisition and preprocessing methods appropriate for the analyses. These methodological details are well-documented and follow established best practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:16:13.607635Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1b9402f9-4b9c-4729-b913-9d096f67081f",
+      "result_id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17"
+    },
+    {
+      "claim_id": "111af63c-22f5-4d96-8960-a09d064a752b",
+      "result_id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17"
+    },
+    {
+      "claim_id": "4c919268-0c87-4206-92f6-156ac555787a",
+      "result_id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17"
+    },
+    {
+      "claim_id": "ce864cc2-66f1-4baf-8e83-23c77b0081fc",
+      "result_id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17"
+    },
+    {
+      "claim_id": "0c4a9d5d-0309-4380-a918-aca954efe5f2",
+      "result_id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17"
+    },
+    {
+      "claim_id": "7cddf63b-b687-4828-aa35-3a98c05d407e",
+      "result_id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17"
+    },
+    {
+      "claim_id": "96ffcdeb-2a64-4929-83a6-6291a92fb454",
+      "result_id": "1d64d736-27cd-488d-a92a-1c9dc4bffd17"
+    },
+    {
+      "claim_id": "8976ffbe-015e-48cf-b849-6ba6f6d2ed4f",
+      "result_id": "fae7f09a-5328-497b-98eb-43eacb820b6f"
+    },
+    {
+      "claim_id": "c2bdf47f-134e-45ae-9e19-4cca7a2faa47",
+      "result_id": "fae7f09a-5328-497b-98eb-43eacb820b6f"
+    },
+    {
+      "claim_id": "fe98be7f-6645-457d-992f-0fca01bf7c76",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "563210a3-297e-41b9-9e67-5e2f6a054bd8",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "5985f859-c1c7-48b6-8651-7267a72b7290",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "95f851a9-ceda-4464-bc89-ffc785f527ce",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "683d9c79-c8f4-43a3-9609-e65993a3805e",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "48bb31c2-6768-4f50-9ad5-405d7590edc3",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "2c160b06-e6eb-4fe6-b691-4e34bcf1de59",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "f17d8797-335e-479a-911d-beb49fcb750f",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "499e9f50-4918-4565-88f7-5fdc5142332e",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "dd177e8f-780d-442e-85c4-a0c80872238c",
+      "result_id": "81a2565e-f73a-47b8-8ad2-5ad9e64cc1e8"
+    },
+    {
+      "claim_id": "7e48ae85-a519-413b-a9a6-c12dac0703c5",
+      "result_id": "201a0253-49ab-436a-922a-ee9a72724106"
+    },
+    {
+      "claim_id": "a32ccab0-fe77-4bef-87a0-1027bd605880",
+      "result_id": "201a0253-49ab-436a-922a-ee9a72724106"
+    },
+    {
+      "claim_id": "5fa24332-942a-49ac-bdc1-5d67d01e419a",
+      "result_id": "201a0253-49ab-436a-922a-ee9a72724106"
+    },
+    {
+      "claim_id": "41d70198-0a77-4b08-853d-ad122e2b94ab",
+      "result_id": "50dbdaea-12da-4f37-bd5f-6570dd1d5526"
+    },
+    {
+      "claim_id": "d41380eb-7572-494e-a364-0d02b13dfef4",
+      "result_id": "50dbdaea-12da-4f37-bd5f-6570dd1d5526"
+    },
+    {
+      "claim_id": "46c7fb29-4f3e-40ab-8172-a93de7b8a46c",
+      "result_id": "50dbdaea-12da-4f37-bd5f-6570dd1d5526"
+    },
+    {
+      "claim_id": "d56c0599-1d9e-4a24-89a6-a00c0946f8ae",
+      "result_id": "9a92fa27-3c5a-4157-9764-8556d97b1da6"
+    },
+    {
+      "claim_id": "127da4f2-7cac-4003-9c54-9b3df06e6920",
+      "result_id": "9a92fa27-3c5a-4157-9764-8556d97b1da6"
+    },
+    {
+      "claim_id": "f5746568-c804-4c58-a4dd-c40bd74bbfca",
+      "result_id": "56209899-1264-4e61-8776-650872bb24c9"
+    },
+    {
+      "claim_id": "a08a5502-6b7b-4a8c-9b90-8837f7641b06",
+      "result_id": "56209899-1264-4e61-8776-650872bb24c9"
+    },
+    {
+      "claim_id": "4136d58d-959c-45e8-b281-c98b95cc4467",
+      "result_id": "56209899-1264-4e61-8776-650872bb24c9"
+    },
+    {
+      "claim_id": "d03597cf-b2b0-4a55-a5eb-cfa75633b747",
+      "result_id": "3ebd59e7-4128-4d27-b359-ba79ffe11268"
+    },
+    {
+      "claim_id": "139c0487-98d6-43fa-b045-06313238c043",
+      "result_id": "3ebd59e7-4128-4d27-b359-ba79ffe11268"
+    },
+    {
+      "claim_id": "a252bc2e-dfd0-4ab7-98d7-8854f1c1c357",
+      "result_id": "3ebd59e7-4128-4d27-b359-ba79ffe11268"
+    },
+    {
+      "claim_id": "30de6e00-a0d9-487e-aebb-17f4bdc4c10f",
+      "result_id": "3ebd59e7-4128-4d27-b359-ba79ffe11268"
+    },
+    {
+      "claim_id": "09c8a621-99a3-47c5-80d4-f936f9209e2f",
+      "result_id": "3ebd59e7-4128-4d27-b359-ba79ffe11268"
+    },
+    {
+      "claim_id": "b0e7856e-b0f2-42ad-a83e-95871b75bbef",
+      "result_id": "3ebd59e7-4128-4d27-b359-ba79ffe11268"
+    },
+    {
+      "claim_id": "418774f1-6fb7-439c-b0de-0152d1b8ad96",
+      "result_id": "4c56b01e-7173-4dcc-905f-add13efe940d"
+    },
+    {
+      "claim_id": "1d92537c-be96-4b8b-8985-0a3015e4ca43",
+      "result_id": "4c56b01e-7173-4dcc-905f-add13efe940d"
+    },
+    {
+      "claim_id": "ba8e3c93-2bc4-4c9e-b3d4-1a0e1bdf4d63",
+      "result_id": "4c56b01e-7173-4dcc-905f-add13efe940d"
+    },
+    {
+      "claim_id": "b46da503-1285-44d4-ba4a-385c4843e4f9",
+      "result_id": "4c56b01e-7173-4dcc-905f-add13efe940d"
+    },
+    {
+      "claim_id": "ae81ded7-37bb-4ce3-b886-3b0d0a3e4527",
+      "result_id": "4c56b01e-7173-4dcc-905f-add13efe940d"
+    },
+    {
+      "claim_id": "41ad805e-c3d1-486f-add1-cebb16b807ca",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "e1b47386-f34d-4266-93ad-1206114463ed",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "2a6ba28f-0107-4d81-9b6c-5398e69e1e5d",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "f5ca5ea0-4f7a-4939-9418-85a5632d24c0",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "030a98e5-ff3b-4227-a8bb-56b44921e6ed",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "a64c2229-0b45-434c-82b8-3871b1a4ceb2",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "553ed863-3d12-4152-9999-312e2fe966da",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "52d07203-0d7e-46c3-b812-9103d3969a10",
+      "result_id": "a0c2cc33-1ea1-4c67-a8cd-8275bc3ae332"
+    },
+    {
+      "claim_id": "5d58ca38-0df5-4692-9fcc-ed34ee97bec5",
+      "result_id": "6ad29b22-b965-4cd1-b796-49ed3bfb5440"
+    },
+    {
+      "claim_id": "48795341-2021-41da-a72c-810ccc0dd036",
+      "result_id": "6ad29b22-b965-4cd1-b796-49ed3bfb5440"
+    },
+    {
+      "claim_id": "434b0b80-3977-4577-9e94-06518ee04f90",
+      "result_id": "6ad29b22-b965-4cd1-b796-49ed3bfb5440"
+    },
+    {
+      "claim_id": "b5584158-3f06-4635-8abe-4640f43f69e9",
+      "result_id": "6ad29b22-b965-4cd1-b796-49ed3bfb5440"
+    },
+    {
+      "claim_id": "dd79967a-4526-4ae0-97a9-76399d6b53ec",
+      "result_id": "6ad29b22-b965-4cd1-b796-49ed3bfb5440"
+    },
+    {
+      "claim_id": "fb336f44-4359-4cb8-898d-147172076509",
+      "result_id": "6ad29b22-b965-4cd1-b796-49ed3bfb5440"
+    },
+    {
+      "claim_id": "11078f3d-ad32-4044-897b-95e89c290630",
+      "result_id": "c726363b-002b-4b8a-ac12-a85319f95010"
+    },
+    {
+      "claim_id": "e34a0062-2485-4be3-8da2-bea63b9d1a84",
+      "result_id": "c726363b-002b-4b8a-ac12-a85319f95010"
+    },
+    {
+      "claim_id": "ffae1925-91e4-4eee-a5dd-5be02b10962e",
+      "result_id": "c726363b-002b-4b8a-ac12-a85319f95010"
+    },
+    {
+      "claim_id": "7649204c-df96-4631-bdcf-f38748db5343",
+      "result_id": "c726363b-002b-4b8a-ac12-a85319f95010"
+    },
+    {
+      "claim_id": "af8792a3-5d9b-4aec-ac43-f834e907d9d5",
+      "result_id": "a8f9f536-6f38-4251-b9dd-93701a3f9aa5"
+    },
+    {
+      "claim_id": "1f24cfbb-3d64-46d4-b22c-2b8823c27bd4",
+      "result_id": "a8f9f536-6f38-4251-b9dd-93701a3f9aa5"
+    },
+    {
+      "claim_id": "53f16b2a-2a25-44cf-be88-5adfe93f0303",
+      "result_id": "a8f9f536-6f38-4251-b9dd-93701a3f9aa5"
+    },
+    {
+      "claim_id": "99b69b57-5349-4174-9133-9a0ead742c84",
+      "result_id": "a8f9f536-6f38-4251-b9dd-93701a3f9aa5"
+    },
+    {
+      "claim_id": "917cae1d-be24-4c03-92b5-129270895bdf",
+      "result_id": "7df7b944-bd37-424a-81de-d7356f9267b1"
+    },
+    {
+      "claim_id": "3a7fa22c-279f-4139-832f-c3b118ec94e5",
+      "result_id": "7df7b944-bd37-424a-81de-d7356f9267b1"
+    },
+    {
+      "claim_id": "2e0c04ac-189a-4e34-9df9-667c3de7f031",
+      "result_id": "7df7b944-bd37-424a-81de-d7356f9267b1"
+    },
+    {
+      "claim_id": "e85f4222-ee58-49f2-94ea-bcd4eaf9c903",
+      "result_id": "7df7b944-bd37-424a-81de-d7356f9267b1"
+    },
+    {
+      "claim_id": "abca1270-70c2-4092-b028-098370624608",
+      "result_id": "7df7b944-bd37-424a-81de-d7356f9267b1"
+    },
+    {
+      "claim_id": "61835ef7-f974-439a-9bfb-941b5f70655d",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "6024a03a-6bef-4d1c-83f9-8359d6a9349d",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "12d9f7d0-f338-4ef3-8593-5acc5ea8639e",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "14efaddd-d7cd-4bda-a077-d66fa8e1c1ff",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "8d539309-8b56-47f0-af78-2a6c5564a37a",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "8c49bea6-6f21-4525-87f9-aa3198312db6",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "81fb1359-d59e-4ad8-b017-1e4751458c22",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "e919cd04-4083-43bf-bce6-002d23d42e9d",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "821e6647-c06a-4fbf-bfbf-1c87d16e3374",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "bcdc55ca-757a-481b-8067-3b8b5b7c55d4",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "dd5b407b-96de-4589-ba0d-f566c400d29b",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "4d5f8a3e-f13f-41ce-90ef-324c1b418dbb",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "fcf20881-09df-421a-ba5d-a75595685e1d",
+      "result_id": "24f0aa4c-7832-4490-9486-559affb83516"
+    },
+    {
+      "claim_id": "c28b554e-b283-4e0f-ae5f-677b6dbd4a62",
+      "result_id": "38841d29-0fb4-456c-bb90-ae7d00c6fc6b"
+    },
+    {
+      "claim_id": "ea56e7f7-b2de-4855-9991-3cf2d32ab517",
+      "result_id": "38841d29-0fb4-456c-bb90-ae7d00c6fc6b"
+    },
+    {
+      "claim_id": "98143bdd-03c6-4ba3-a575-0e94ab21b5bc",
+      "result_id": "36b7e8df-b686-4cc0-9077-462e05dbea6c"
+    },
+    {
+      "claim_id": "24c4ea14-3cb2-43d0-8793-67da7f1e7994",
+      "result_id": "36b7e8df-b686-4cc0-9077-462e05dbea6c"
+    },
+    {
+      "claim_id": "7fcad283-eb25-4f34-9e4d-593edc31537e",
+      "result_id": "36b7e8df-b686-4cc0-9077-462e05dbea6c"
+    },
+    {
+      "claim_id": "6d532980-f136-441f-b50d-a1ee15f0d395",
+      "result_id": "36b7e8df-b686-4cc0-9077-462e05dbea6c"
+    },
+    {
+      "claim_id": "2380e368-df06-4a24-b769-8dac4afcfa81",
+      "result_id": "36b7e8df-b686-4cc0-9077-462e05dbea6c"
+    }
+  ],
+  "comparisons": []
+}

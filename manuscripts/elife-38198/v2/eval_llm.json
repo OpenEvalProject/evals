@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "RIC-8 and RGS-7 act independently or redundantly as positive regulators of G\u03b1 in spindle positioning. RNAi of ric-8 or rgs-7 resulted in partial loss of pulling forces, but double RNAi did not further reduce forces. However, germline-inducible knockout of both genes showed synergistic defects resembling G\u03b1(RNAi), with double knockout reducing spindle pole movements by ~68%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 provide experimental data from both RNAi and knockout approaches showing the effects of ric-8 and rgs-7 loss on spindle pole velocities. The synergistic phenotype of the double knockout (C37) strongly supports the conclusion (C38) that RIC-8 and RGS-7 act independently or redundantly. The authors appropriately note RNAi limitations (C33) and address this with knockout alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A germline-optimized (GLO) codon adaptation method was developed to overcome germline silencing of foreign transgenes in C. elegans. The algorithm assembles coding sequences from 12-nucleotide words found in native germline-expressed genes. Combined with poly-AT-cluster rich introns, this approach achieved stable germline expression in 8/8 transgenes tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C44 describe the problem (germline silencing), the solution (GLO algorithm), and experimental validation. The data show that germline-optimized transgenes were expressed while non-optimized versions were silenced (C41, C42). The addition of poly-AT-cluster rich introns further improved stability (C44). This represents a significant methodological advance that enabled the optogenetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The ePDZ-LOV optogenetic system was successfully implemented in C. elegans early embryos. Blue light illumination rapidly induced recruitment of ePDZ::mCherry to membrane-bound PH::LOV, allowing both global and local cortical enrichment. The system showed reversible binding with a dissociation half-time of 42 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present experimental characterization of the ePDZ-LOV system with quantitative data on recruitment kinetics and reversibility. The dissociation kinetics (t\u00bd=42s) are consistent with previous reports. The conclusion (C49) that the system is suitable for controlled protein localization is well-supported by the characterization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cortical recruitment of RGS-7 enhanced spindle pulling forces, while RIC-8 recruitment did not. Global RGS-7 recruitment increased spindle pole movements by 20-25%, and anterior-specific recruitment enhanced anterior pole movement by 25%. These results support RGS-7 functioning as a GAP and RIC-8 acting as a G\u03b1 chaperone rather than a GEF in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide quantitative experimental data from optogenetic recruitment experiments. The differential effects of RGS-7 (increased forces) versus RIC-8 (no significant effect) support the mechanistic conclusions (C56-C57). These results are consistent with the double knockout data and provide functional insight into the roles of these regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "G\u03b1\u00b7GDP and GPR-1/2 can be replaced by a light-inducible membrane anchor, demonstrating that G\u03b1\u00b7GTP is not required for pulling force generation. Light-induced recruitment of ePDZ::GPR-1 to PH::LOV increased spindle pole movements and sustained force generation in the absence of G\u03b1 (anterior +195%, posterior +232%). This establishes that G\u03b1 functions primarily as a regulatable membrane anchor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide strong experimental evidence that membrane-anchored GPR-1 can generate pulling forces without G\u03b1. The large increases in force generation in G\u03b1(RNAi) embryos upon GPR-1 recruitment (C63) directly support the conclusion that G\u03b1 is dispensable for force generation (C64, C67). The similar restoration in G\u03b1(RNAi) and G\u03b1(RNAi);ric-8(RNAi) embryos (C65) further supports that G\u03b1\u00b7GTP is not essential (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Dark state control experiments confirmed that spindle pole movements induced by GPR-1 recruitment are light-dependent and specific. Blue light exposure resulted in substantially elevated pulling forces (+33-35%) compared to dark state experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 present appropriate control experiments addressing potential dark state activity of the optogenetic system. The significant difference between light and dark conditions (C69) supports the conclusion that the observed effects are light-dependent and specific (C70). This control is essential for validating the optogenetic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Membrane invaginations serve as a readout for cortical pulling forces. Control embryos showed 138 invaginations with a characteristic distribution reflecting three cortical domains. GPR-1 recruitment increased invaginations to 174 (+25%) in wild-type and 122 (+249%) in G\u03b1(RNAi) embryos, confirming force generation without G\u03b1. The altered distribution pattern suggests that G\u03b1 regulates the spatial distribution of force-generating events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 establish membrane invaginations as a validated readout based on previous work. Claims C78-C80 provide quantitative data showing increased invaginations upon GPR-1 recruitment, consistent with the spindle severing results. The altered spatial distribution (C81-C83) and the inference about G\u03b1's regulatory role (C86) are well-supported by the data. This provides an independent confirmation of the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Direct cortical anchoring of dynein is insufficient for force generation. Recruitment of ePDZ::DHC-1 to PH::LOV in the absence of wild-type complex components did not result in substantial pulling forces, despite co-recruitment of LIN-5 and dynactin. This indicates that the LIN-5 complex performs essential functions beyond providing a structural dynein anchor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 provide experimental data showing that direct dynein recruitment produces minimal forces in the absence of other complex components. The immunofluorescence data (C99-C101) demonstrate that LIN-5 and dynactin are co-recruited with dynein, yet forces are not generated (C102). This strongly supports the conclusion that direct anchoring is insufficient (C90-C91) and that LIN-5 has additional functions beyond anchoring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C26",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C104",
+      "C105"
+    ],
+    "result": "LIN-5 is a potent activator of dynein-dependent cortical pulling forces. Cortical LIN-5 recruitment greatly increased pulling forces in wild-type embryos (anterior +131%, posterior +68%, 557 invaginations: +303%) and in gpr-1/2(RNAi) embryos (anterior +183%, posterior +244%, 429 invaginations: +1488%). High forces were observed in both G\u03b1(RNAi) and gpr-1/2(RNAi) backgrounds, demonstrating that neither G\u03b1 nor GPR-1/2 are required for force generation when LIN-5 is membrane-anchored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 provide extensive quantitative data showing dramatic increases in pulling forces upon LIN-5 recruitment across multiple genetic backgrounds. The extreme forces observed (C94) and the independence from G\u03b1 and GPR-1/2 (C96-C97) strongly support the conclusion that LIN-5 is a potent dynein activator (C95, C105). The immunofluorescence data (C98) confirm dynein recruitment. This is a central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Light-controlled LIN-5 localization enables experimental manipulation of spindle position, orientation, and cell cleavage plane. Local anterior recruitment inverted the AB:P1 size asymmetry, lateral recruitment induced perpendicular spindle positioning, and recruitment between AB and P1 in gpr-1/2(RNAi) embryos promoted anterior-posterior spindle orientations in both blastomeres with reproducible cleavage furrow positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 provide experimental demonstrations of precise control over spindle positioning and division outcomes through local LIN-5 recruitment. The ability to override normal polarity cues and cell cycle regulation (C6) and control cleavage plane (C7, C111) represents a powerful experimental tool. The data show reproducible manipulation of division outcomes, supporting the conclusions about LIN-5's determining role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose that LIN-5/NuMA functions as an activating adaptor for dynein in cortical pulling, analogous to adaptors required for cargo transport. This model is supported by observations in both C. elegans and human cells, and by structural studies of dynein-dynactin-adaptor complexes. The requirement for anchoring through LIN-5 may prevent inappropriate cytoplasmic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C122 present a mechanistic model integrating the current findings with previous work on dynein activation and recent structural studies. The comparison with cargo transport adaptors (C112, C115-C118) is well-supported by citations. The speculation about conformational requirements (C121) and regulatory mechanisms (C122) is appropriately presented as hypothetical but is consistent with the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors compare their findings with a recent optogenetic study in human cells, noting differences in NuMA co-recruitment kinetics. They speculate that the different timescales (seconds vs. minutes) may explain why NuMA was not observed to co-recruit with dynein in the human cell study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C127 discuss differences between studies but are largely speculative (C124, C127). While the kinetic comparison (C125-C126) is factual, the explanation for the discrepancy remains uncertain. This represents an honest acknowledgment of differences between systems but does not constitute a definitive result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that membrane-tethered LIN-5 could suffice as a dynein anchor and activator, and that the trimeric G\u03b1-GPR-1/2-LIN-5 complex evolved in metazoans to provide context-specific regulation and reduce stochastic activation of pulling forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are well-supported by the experimental data showing that membrane-anchored LIN-5 generates forces and that local regulation controls spindle positioning. The evolutionary speculation (C131) is reasonable given the comparison with yeast Num1 (C128) and the demonstrated regulatory functions of G\u03b1-GPR-1/2, though it remains a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Direct membrane recruitment of GPR-1 overcomes LET-99 regulation, consistent with LET-99 normally antagonizing G\u03b1\u00b7GDP-GPR-1/2 interaction. The characteristic dip in invaginations and GPR-1 localization at 60% embryo length was eliminated upon ectopic GPR-1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 establish the known function of LET-99 from previous work. Claims C81-C83 show that ectopic GPR-1 recruitment bypasses this regulation, as evidenced by the loss of the characteristic dip in both invaginations and GPR-1 localization. The inference (C133) that this supports LET-99 antagonizing G\u03b1\u00b7GDP-GPR-1/2 interaction is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors provide an extensive discussion of RIC-8 function, reviewing conflicting evidence for GEF versus chaperone activity. They argue that their data (showing G\u03b1 can be replaced by a membrane anchor and that RIC-8 knockout is synergistic with RGS-7) question whether RIC-8 functions as a GEF in vivo, suggesting instead a chaperone role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C146 accurately review the literature on RIC-8 function. Claims C147-C151 present logical arguments based on the current experimental data (C149-C150) that challenge the GEF model. The critique of in vitro GEF data (C152-C153) is reasonable, though speculative. The overall argument is well-reasoned and supported by the experimental findings, though the definitive function of RIC-8 remains to be fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C22",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims establishing the biological context: spindle positioning determines cell division outcomes, is driven by dynein-mediated pulling forces, requires the conserved G\u03b1-GPR-1/2-LIN-5 complex, and can be studied in C. elegans one-cell embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C11, C22, C29-C30 present well-established background knowledge supported by extensive citations and the authors' previous work. These provide the foundation for the current study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims on dynein activation and G\u03b1 regulation: mammalian dynein requires adaptors for cargo transport, yeast dynein generates forces without adaptors, and the role of G\u03b1\u00b7GTP in spindle positioning has been proposed but remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 accurately summarize relevant background literature with appropriate citations. These establish the knowledge gaps (C15, C21) that motivate the current study. The distinction between established facts and proposed models is appropriately maintained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors acknowledge that G\u03b1\u00b7GTP has been reported to affect spindle orientation in specific Drosophila tissues through canonical G-protein signaling that aligns cellular polarity with tissue polarity, suggesting G\u03b1\u00b7GTP may contribute indirectly to spindle positioning in tissue-specific contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 accurately cite previous work showing tissue-specific roles for G\u03b1\u00b7GTP in Drosophila. The speculation (C60) that this represents indirect contribution is reasonable and appropriately qualified. This discussion acknowledges the limitations of the current findings and the potential for context-dependent mechanisms.",
+    "result_type": "MINOR"
+  }
+]

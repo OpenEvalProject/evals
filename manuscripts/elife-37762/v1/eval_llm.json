@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C69"
+    ],
+    "result": "The authors measured thermal responses of vector and pathogen traits for RRV transmission using laboratory data from Cx. annulirostris and Ae. vigilax. Thermal optima ranged from 23.4\u00b0C (adult lifespan) to 33.0\u00b0C (parasite development rate), with most traits showing unimodal responses. However, data were sparse, with no single vector species having complete trait data at three or more temperatures, and two key traits (fecundity and adult lifespan) had data from only three temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C69 describe the empirical thermal response data collection and fitting process. The data are presented in Figure 2 with appropriate acknowledgment of limitations (sparse data, incomplete coverage across species, limited temperature points for some traits). The use of Bayesian inference with informative priors from other mosquito species (C69) is a reasonable approach given data limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C72",
+      "C73"
+    ],
+    "result": "The mechanistic model predicts that RRV transmission potential (relative R0) peaks at 26.4\u00b0C and is positive from 17.0\u201331.5\u00b0C. This represents the core thermal response curve for RRV transmission based on the full R0 model incorporating temperature-dependent mosquito density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C72, and C73 present the main model output shown in Figure 3. The thermal optimum and limits are derived from mechanistic modeling that integrates multiple trait thermal responses through Bayesian inference. The results are internally consistent and represent the primary finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Removing temperature-dependence of mosquito density did not substantially affect the peak temperature for transmission (26.6\u00b0C vs 26.4\u00b0C) because optima for transmission and mosquito density were closely aligned. However, the temperature range suitable for transmission was much larger without temperature-dependent mosquito density (12.9\u201333.7\u00b0C vs 17.0\u201331.5\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 describe model comparison results shown in Figure 3. The comparison between full R0 model and constant M model demonstrates that mosquito density thermal responses constrain transmission at thermal limits but not at the optimum. This is a well-supported sensitivity analysis with clear quantitative differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Sensitivity analysis revealed that at the upper thermal limit, fecundity and adult lifespan constrain R0, while at the lower limit, fecundity, larval survival, egg survival, and adult lifespan constrain R0. The optimal temperature was most sensitive to adult lifespan, while uncertainty near the optimum was driven by biting rate and egg raft viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe sensitivity and uncertainty analyses shown in Figure 3\u2014figure supplement 2. The partial derivative analysis (Equations 3-6) and uncertainty propagation methods are mathematically sound. The identification of constraining traits at different temperature ranges provides mechanistic insight into model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C62",
+      "C63"
+    ],
+    "result": "The optimal temperature for RRV (26\u201327\u00b0C) fits within the range found for other mosquito-borne diseases (malaria at 25\u00b0C, dengue in Ae. albopictus at 26\u00b0C, dengue in Ae. aegypti at 29\u00b0C), and for all these diseases, the optimal temperature was largely determined by adult lifespan thermal response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C62, and C63 compare RRV results with previously published models (Figure 4). The comparison is appropriate and well-cited (Mordecai et al. 2013, 2017; Johnson et al. 2015). The identification of adult lifespan as the key driver of thermal optima across diseases is supported by sensitivity analyses in both current and cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The traits constraining thermal limits differed between RRV and malaria. For RRV, the lower limit was constrained by fecundity and survival at all stages, and the upper limit by fecundity and adult lifespan. For malaria, limits were set by parasite development rate (cool) and egg-to-adulthood survival (hot).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe differences in limiting traits between disease systems based on sensitivity analyses. C66 is properly cited to Mordecai et al. 2013. The comparison highlights system-specific differences in thermal constraints, which is important for understanding disease-specific responses to temperature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Model predictions show that in subtropical and temperate locations (Brisbane and south), low temperatures force R0 to zero for part of the year, while in tropical northern Australia (Darwin and Cairns), temperatures remain suitable year-round. Darwin is the only major city where mean temperatures exceed the thermal optimum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe geographic variation in temperature suitability shown in Figures 5 and 6. The predictions are based on applying the validated thermal response model to WorldClim temperature data. The geographic patterns are consistent with the unimodal thermal response curve and represent straightforward application of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C70",
+      "C74"
+    ],
+    "result": "The model accurately predicts national-scale disease seasonality, with human cases peaking two months after population-weighted R0(T). This 8\u201310 week (2 month) lag between temperature and reported cases matches a priori predictions based on mosquito development and disease incubation times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C70, and C74 describe the temporal validation shown in Figure 7. The two-month lag is well-justified by citations to empirical work (Hu et al. 2006, Jacups et al. 2008b, Stewart Ibarra et al. 2013, Mordecai et al. 2017) and biological reasoning. The match between predicted R0(T) seasonality and observed case seasonality provides strong validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The model predictions match known epidemiological patterns: RRV is endemic in tropical Australia with little seasonal variation, seasonally epidemic in subtropical and temperate Australia, and transmission by Cx. annulirostris in inland areas moves south as temperatures increase from spring to summer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 compare model predictions with established epidemiological patterns cited from the literature (Weinstein 1997, Russell 1998). The agreement between mechanistic model predictions and observed patterns provides validation. These are appropriately cited observations that support the model's predictive accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Substituting larval traits from alternative vectors (Ae. camptorhynchus, Ae. notoscriptus) or infection traits for Murray Valley Encephalitis virus did not substantially alter the R0 thermal response, since Cx. annulirostris life history traits strongly constrained transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 describes robustness analysis shown in Figure 3\u2014figure supplement 1. This sensitivity test addresses the limitation that trait data came from multiple species. The finding that alternative trait parameterizations don't substantially change results strengthens confidence in the main model despite data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The upper and lower thermal limits are more uncertain than the optimum because trait responses are harder to measure near thermal limits. Upper thermal limits of mosquito-borne disease transmission are primarily determined by vector life history traits with symmetrical thermal performance curves rather than rate-based traits with asymmetrical curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 describe uncertainty patterns and general conclusions about thermal limits. C67 is supported by uncertainty analysis (Figure 3) and citations to similar findings (Johnson et al. 2015, Mordecai et al. 2017). C68 represents a broader inference from the RRV analysis and comparison with other systems, which is reasonable given the data and sensitivity analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Climate warming will likely increase RRV transmission in temperate southern Australia where most Australians live, but decrease transmission in tropical areas like Darwin, where moderate warming (~3\u00b0C) would push temperatures above the upper thermal limit for most of the year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C61 make predictions about climate change impacts based on the thermal response model. While the directional predictions follow logically from the unimodal thermal response curve (Figure 5), these are speculative projections that don't account for potential vector adaptation, species range shifts, or changes in other environmental factors. The claims appropriately use 'likely' and 'will likely' language, but lack empirical validation or detailed climate projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Statistical evidence for temperature impacts on RRV cases is mixed: incidence is often but not always positively associated with warmer temperatures. Some field evidence supports high temperature constraints: outbreaks were less likely with more days above 35\u00b0C in Queensland, and Cx. annulirostris populations peaked at 25\u00b0C and declined above 32\u00b0C in Victoria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 summarize prior statistical and field studies with appropriate citations. These claims provide context for why a mechanistic model is needed to explain apparently contradictory results. The cited evidence (Gatton et al. 2005, Dhileepan 1996) supports the existence of upper thermal constraints, consistent with the model predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Breeding habitat availability (driven by rainfall, river flow, and tides) is linked to mosquito abundance and RRV cases. Rainfall effects on transmission can be complex: in Western Australia, heavy summer rains can fail to initiate epidemics when low winter rainfall depresses kangaroo recruitment, while in southeastern Australia, large outbreaks occur when high rainfall follows a dry year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 summarize prior research on non-temperature drivers of RRV transmission with extensive citations. These claims provide important context about factors not included in the temperature-only model. The cited studies (multiple sources for C54-C56, Mackenzie et al. 2000 for C57, Woodruff et al. 2002 for C58) support these observations about rainfall and habitat effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8"
+    ],
+    "result": "RRV is the most important mosquito-borne disease in Australia (1500\u20139500 cases/year), potentially at risk of emerging worldwide, has caused explosive epidemics (>500,000 infections in Fiji 1979\u201380), and causes joint pain that can become chronic and disabling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, and C8 provide background on RRV public health importance with appropriate citations (Koolhof et al. 2017, Flies et al. 2018, Klapsing et al. 2005, Harley et al. 2001). These are well-established facts from the literature that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "RRV transmission occurs across a wide latitudinal gradient in Australia where climate varies substantially, and RRV case diagnosis and reporting are more accurate and consistent compared to vector-borne diseases in lower-income settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 provide rationale for why Australia/RRV is a good study system. C3 is general knowledge about Australian geography and RRV distribution. C4 is a reasonable inference about healthcare system differences between high- and low-income countries, though it could benefit from specific citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Previous work has shown that in some settings temperature predicts RRV cases, while in others it does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 summarize contradictory findings from prior statistical studies with appropriate citations. This apparent inconsistency motivates the need for a mechanistic model that can explain when and why temperature effects vary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Thermal responses of ectotherm traits are usually unimodal, and mechanistic models incorporating multiple nonlinear trait thermal responses often predict transmission optima up to 7\u00b0C lower than models assuming linear or monotonic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 describe general principles of thermal biology and modeling with appropriate citations (Dell et al. 2011, Mordecai et al. 2013, 2017). These establish the theoretical framework and justify the modeling approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Previous mechanistic models have predicted optimal temperatures of 25\u00b0C for malaria and West Nile virus, 29\u00b0C for dengue/chikungunya/Zika in Ae. aegypti, and 26\u00b0C for these viruses in Ae. albopictus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 summarize prior modeling results with appropriate citations (Mordecai et al. 2013, Paull et al. 2017, Liu-Helmersson et al. 2014, Wesolowski et al. 2015, Mordecai et al. 2017). These provide comparative context for interpreting the RRV results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "RRV reservoir hosts include marsupials (traditionally considered critical), though recent work suggests placental mammals and birds may be equally important. The virus has been isolated from over 40 mosquito species, with 10 transmitting in lab studies and 4\u20136 species responsible for most human transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe RRV natural history with appropriate citations (Stephenson et al. 2018, Harley et al. 2001, Russell 2002). These provide essential background on the transmission system, though the complexity of multiple vectors and reservoirs is noted as a limitation for the temperature-only model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Different RRV vector species show geographic and seasonal variation: Ae. vigilax and Ae. notoscriptus are more common in tropical/subtropical zones, Ae. camptorhynchus in temperate zones, and Cx. annulirostris throughout all zones. Vectors differ in habitat preferences (freshwater vs. saltmarsh, urban vs. rural) and seasonality (Ae. camptorhynchus peaks earlier and cooler than Ae. vigilax).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 describe vector ecology patterns based on outbreak data compilation (Figure 1) and literature citations (Russell 2002, 1998, Yang et al. 2009, Biggs and Mottram 2008, Carver et al. 2009). The geographic patterns are supported by the compiled outbreak data, though the authors acknowledge this complexity as a limitation since the model uses traits from primarily one species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Empirical work on dengue vectors in Ecuador identified a six-week time lag between temperature and mosquito oviposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 cites specific empirical work (Stewart Ibarra et al. 2013) that helps justify the two-month lag used in the national-scale validation. This is appropriately cited supporting evidence for the temporal lag assumption.",
+    "result_type": "MINOR"
+  }
+]

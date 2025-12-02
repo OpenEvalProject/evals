@@ -1,0 +1,819 @@
+{
+  "submission": {
+    "id": "2363b629-e27a-48c9-852a-8a29d66e9aa8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:23:50.244141Z",
+    "updated_at": "2025-12-02T01:23:50.244141Z"
+  },
+  "content": [
+    {
+      "id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "submission_id": "2363b629-e27a-48c9-852a-8a29d66e9aa8",
+      "content_type": "manuscript",
+      "content_text": "# Biophysical clocks face a trade-off between internal and external noise resistance\n\n## Authors\n\n- Weerapat Pittayakanchit<sup>1</sup> ([ORCID: 0000-0001-7940-3184](https://orcid.org/0000-0001-7940-3184))\n- Zhiyue Lu<sup>1</sup> ([ORCID: 0000-0002-0216-4346](https://orcid.org/0000-0002-0216-4346))\n- Justin Chew<sup>3</sup> ([ORCID: 0000-0003-4749-547X](https://orcid.org/0000-0003-4749-547X))\n- Michael J Rust<sup>1</sup> ([ORCID: 0000-0002-7207-4020](https://orcid.org/0000-0002-7207-4020))\n- Arvind Murugan<sup>1</sup> ([ORCID: 0000-0001-5464-917X](https://orcid.org/0000-0001-5464-917X)) \u2020\n\n### Affiliations\n\n1. Department of Physics University of Chicago Chicago United States\n2. The James Franck Institute University of Chicago Chicago United States\n3. Medical Scientist Training Program, Pritzker School of Medicine University of Chicago Chicago United States\n4. Department of Molecular Genetics and Cell Biology University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany organisms use free running circadian clocks to anticipate the day night cycle. However, others organisms use simple stimulus-response strategies (\u2018hourglass clocks\u2019) and it is not clear when such strategies are sufficient or even preferable to free running clocks. Here, we find that free running clocks, such as those found in the cyanobacterium Synechococcus elongatus and humans, can efficiently project out light intensity fluctuations due to weather patterns (\u2018external noise\u2019) by exploiting their limit cycle attractor. However, such limit cycles are necessarily vulnerable to \u2018internal noise\u2019. Hence, at sufficiently high internal noise, point attractor-based \u2018hourglass\u2019 clocks, such as those found in a smaller cyanobacterium with low protein copy number, Prochlorococcus marinus, can outperform free running clocks. By interpolating between these two regimes in a diverse range of oscillators drawn from across biology, we demonstrate biochemical clock architectures that are best suited to different relative strengths of external and internal noise.\n\n## Introduction\n\nExtracting information from a noisy external signal is fundamental to the survival of organisms in dynamic environments (Bowsher and Swain, 2014). From yeast anticipating the length of starvation (Mitchell et al., 2015) and bacteria estimating sugar availability (Tu et al., 2008), to dictyostelium counting cAMP pulses (Cai et al., 2014), organisms must often infer properties of the environment that are masked by noisy irregular fluctuations in order to be well-adapted (Siggia and Vergassola, 2013; Mora and Wingreen, 2010).\n\nA striking example of regularity in environmental stimuli is the daily day-night cycle of light on earth; organisms from all kingdoms of life use circadian clocks to synchronize - or \u2018entrain\u2019 - in phase to these $24$-hour periodic signals in order to anticipate and prepare for future changes in light (Winfree, 2001). The most remarkable and well-studied examples of clocks are free running circadian clocks, found in organisms ranging from the cyanobacterium S. elongatus to insects, plants and humans. Such clocks use non-linear dynamics to generate self-sustained $24$-hr rhythms of a preferred amplitude even in the absence of external driving. Many salient properties have been ascribed to such free running internal rhythms (Troein et al., 2009; Winfree, 2001).\n\nHowever, several organisms have only damped clocks or \u2018hourglass clocks\u2019; their response to daily changes in light is not a self-sustaining oscillation, but rather a physiological program that decays to a steady state over a day. For example, some strains of P. marinus, a smaller $0.5\u2062\\mu\u2062m$ cyanobacterium with an estimated $50\\times$ smaller protein copy number than S. elongatus (Bryant, 2003; Gutu et al., 2013; Holtzendorff et al., 2008; Dufresne et al., 2003; Kitayama et al., 2003), appear to have such a damped \u2018hourglass\u2019 clock, despite the clock being constituted from Kai proteins similar to those in S. elgonatus.\n\nThe potential benefits and drawbacks of these timing systems are not immediately obvious. In particular, it is unclear when an \u2018hourglass\u2019 clock might be sufficient or even preferred over free running clocks.\n\nHere, we compare such classes of clocks when driven by the day-night cycle of light in fluctuating conditions. One source of fluctuations are amplitude fluctuations in the external day-night signal due to weather patterns\u00a0(Gu et al., 2001) or other environmental disturbances. Phase entrainment to such fluctuating environmental signals is a challenge because while amplitude fluctuations are uninformative of phase, an entrainment mechanism looking for dawn-dusk transitions might conflate such amplitude fluctuations with true variations in phase. Biomolecular clocks also face an internal source of fluctuations (Lestas et al., 2010), due to various causes like finite copy number effects (Tsimring, 2014), bursty transcription, interactions with the cell cycle and cell division (Teng et al., 2013). It is clear that the inability to deal with either of these fluctuations will lead to poor phase entrainment, with a host of associated fitness costs in cyanobacteria (Woelfle et al., 2004), plants, rodents and humans\u00a0(Evans and Davidson, 2013). However, it is not clear what kinds of clock architecture are best at dealing with internal and external fluctuations and whether these demands are compatible.\n\nWe find that free running clocks, based on limit cycle attractors, are a double-edged sword when subject to such internally and externally fluctuating conditions. The flat direction along such continuous limit cycle attractors can selectively project out external amplitude fluctuations while retaining phase information. However, the flat direction along the attractor makes these continuous attractor-based clocks susceptible to internal fluctuations (e.g. low protein copy number [Potoyan and Wolynes, 2014]). In contrast, point attractor-based damped clocks are relatively resistant to internal fluctuations because they have no flat directions. Hence such \u2018hourglass\u2019 clocks out-perform free running clocks at sufficiently high internal noise.\n\nWe first demonstrate our results in diverse biochemical oscillators, drawn from the literature (Leloup et al., 1999; Schmal et al., 2014; Locke et al., 2005; Leloup and Goldbeter, 2003; Goldbeter, 1991; Goodwin, 1965; Gonze and Abou-Jaoud\u00e9, 2013; Kondepudi and Prigogine, 2014; Elowitz and Leibler, 2000; Bu\u015fe et al., 2009; Potvin-Trottier et al., 2016) on clocks in cyanobacteria, plants and mammals to cell cycle and synthetic oscillators. We complement this detailed network-based study with dynamical systems theory that explains the same trade-off in terms of the broad features common to the diverse models studied here. In all cases, our approach involves systematically deforming the dynamics to interpolate between free running and \u2018hourglass\u2019 clocks and using information theoretic measures to quantify clock performance in the presence of fluctuations.\n\nBy continuously interpolating between these clock architectures, our work predicts that a survey of clock systems in different environmental niches will reveal that clock architecture vary systematically with the relative strength of external and internal fluctuations\u00a0(Laughlin, 1981). Further, our work suggests intriguing forward evolution experiments in the lab where the same structured external environment can nevertheless result in distinct regulatory systems, depending on the size of internal fluctuations. Finally, the existence of \u2018hourglass\u2019 clocks are easier to overlook experimentally than free running oscillations. Hence our theoretical demonstration that \u2018hourglass\u2019 clocks have functional benefits in specific conditions highlights the importance of experiments that specifically look for such damped clocks. More broadly, our work highlights the need to experimentally probe regulatory strategies by varying different kinds of noise independently when possible, since the strategies to deal with different kinds of noise are not equivalent and can be in conflict.\n\n## Results\n\n### Free running clocks and damped \u2018hourglass\u2019 clocks\n\nMany organisms like humans and rodents have free running clocks that show self-sustained 24 hr rhythms even in constant dark or light conditions. A particularly simple and well-characterized free running clock is that found in S. elongatus where the clock dynamics can be reproduced by the post-translational dynamics of Kai ABC in vivo as well. Measuring the phosphorylation state at any one of several sites on KaiC reveals an orderly phosphorylation reaction with a period of $24$ hr. As shown in Figure 1a, oscillations of a characteristic amplitude are sustained even in constant darkness or constant light, that\u00a0is, in the absence of a periodic external drive.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37624/elife-37624-fig1-v2.jpg)\n\n**Figure 1.:** (a) Free running circadian clocks, such as the KaiABC protein clock in S. elongatus, show rhythms in both oscillating and constant light (top) or dark (bottom) conditions. (b) In contrast, damped circadian clocks, such as that in P. marinus which lacks Kai A, show rhythms only in changing light conditions and decay to a fixed state in constant conditions. (c) When subject to external noise (i.e., weather-related amplitude fluctuations in light), simulations of the free running clock show low population variance while the damped clock shows high variance. In contrast, Gillespie simulations with high internal noise due to low copy number of Kai molecule reveals that damped clocks are much more robust than free running clocks. (d) A systematic study of clock precision (i.e., mutual information between clock state and time) at fixed external noise but decreasing Kai protein copy number $N$ reveals that free running clocks are preferred at low internal noise but damped clocks are preferable at sufficiently high internal noise.\n\nNot all organisms have a free-running clock; for\u00a0example, many insects (Saunders, 2002) have damped \u2018hourglass\u2019 clocks that decay to a fixed point under constant light or constant dark conditions but show oscillatory dynamics under day-night cycling (see Figure 1b). In fact, a sister cyanobacterial species P. marinus has a KaiBC-protein based clock. While the details of this clock are not fully characterized, the clock lacks the KaiA-mediated negative feedback (Dufresne et al., 2003; Holtzendorff et al., 2008) loop that enables free running oscillations in S. elongatus. Consequently, in constant light or dark conditions, the clock\u2019s state decays to a distinct day or a night state respectively (Holtzendorff et al., 2008).\n\nThus, both classes of clock show regular oscillations when externally driven. With cloudless day-night cycling, both systems can synchronize in phase with the external signal (i.e., \u2018entrain\u2019) and show distinct clock states at distinct times of the day. In this way, the clock state provides the rest of the cell with an estimate of the time of the day. However, while the free running clock has a natural amplitude relatively independent of the external drive, the damped clock\u2019s amplitude is directly set by the external drive.\n\n### External fluctuations\n\nThe day-night pattern of light on earth does not resemble the clean square wave shown in Figure 1a but is rather subject to large amplitude fluctuations during the day due to weather patterns. Such amplitude fluctuations and their spectrum have been quantified (Gu et al., 2001) and also identified as playing a critical role in several studies on the evolution and performance of circadian clocks (Domijan and Rand, 2011; Troein et al., 2009). The biological impact of such changes in light intensity in cyanobacteria have been quantified recently (Teng et al., 2013). The clock must entrain in phase to the external signal while ignoring such amplitude fluctuations.\n\n### Internal fluctuations\n\nIn addition to external fluctuations, circadian clocks also deal with the intrinsically noisy nature of biochemical reactions\u00a0(Swain et al., 2002). Sources of internal noise for clocks include finite copy number effects, bursty transcription, cell division and other sources\u00a0(Tsimring, 2014). In particular, based on their relative sizes\u00a0(Dufresne et al., 2003; Holtzendorff et al., 2008; Bryant, 2003), P. marinus is thought to have far fewer copies of the Kai clock proteins (e.g., $\u223c500$ of KaiC ) than S. elongatus ($\u223cO\u2062(10000)$ copies of KaiC [Gutu et al., 2013; Kitayama et al., 2003]). Such finite numbers of molecules is known to create significant stochasticity in oscillators in the absence of an external signal (Potoyan and Wolynes, 2014).\n\n### Noise resistance of Kai-based clocks\n\nWe tested the impact of such external and internal fluctuations on the contrasting clock architectures in S. elongatus and P. marinus through simulations. We set up explicit Gillespie simulations\u00a0(Gillespie, 2007) of explicit biomolecular models of the post-translational Kai clock that captures the known biochemistry\u00a0(Rust et al., 2007) of S. elongatus\u2019s clock and the putative KaiBC clock\u00a0(Bryant, 2003; Holtzendorff et al., 2008) in P. marinus (Figure 1). We do not include transcriptional coupling (Zwicker et al., 2010) of the clock here and focus on the core post-translational oscillator. See Appendix 1 for details. The ATP levels in these models (Pattanayak et al., 2014) were coupled to an external square wave input of period 24 hr, representing the day-night cycle of light. To model external fluctuations, we modulated the amplitude of the input square wave over a broad range of frequencies, reflecting the broad frequency spectrum quantified by the Harvard Forest database (Moore et al., 1996). To model internal fluctuations, we varied the copy number in these Gillespie simulations.\n\nWith only external fluctuations but suppressing internal fluctuations using high copy numbers, we find that the damped oscillator develops a much larger population variance than the free running clock. In contrast, at low copy number (i.e., high internal noise) but with a noiseless external signal, we find the situation is reversed; the free running clock has significantly higher population variance. See Figure 1c.\n\nTo study this effect quantitatively, we fixed the strength of amplitude fluctuations and increased the internal noise by decreasing the copy number of all Kai proteins in the Gillespie simulation. We measured the resulting mutual information between clock state and objective time of day. (Mutual information is intuitively a measure of population variance along the most informative directions; see Appendix 4 for more.)\n\nWe see that the free running clock has higher precision than the damped clock at low internal noise (high copy number). However, as the internal noise is increased, the precision of the free running clock drops earlier and consequently, the damped oscillator has higher precision at sufficiently high internal noise (low copy number). This is shown in Figure 1d, where the precision measures the mutual information between the clock state and the time. For a fair comparison, in undriven conditions, different clocks are assumed to lose information at the same rate.\n\n### Noise resistance in other biochemical clocks\n\nWhile our study here was motivated by the contrasting Kai protein-based clocks in the two cyanobacterial species S. elongatus and P. marinus, we sought to test the broader validity of our results. Hence we analyzed the internal and external noise resistance in a range of eight well-studied biochemical oscillators in the literature.\n\nThese models range from circadian clocks in numerous organisms - Neurospora (Leloup et al., 1999), Arabidopsis (Schmal et al., 2014; Locke et al., 2005), mammalian cells (Leloup and Goldbeter, 2003) - to other oscillators such as cell cycle models (Goldbeter, 1991), the Goodwin (Goodwin, 1965; Gonze and Abou-Jaoud\u00e9, 2013) oscillator, the Brusselator (Kondepudi and Prigogine, 2014) and the synthetic repressilator (Elowitz and Leibler, 2000; Bu\u015fe et al., 2009) - see Figure 2. While the internal noise properties of these oscillators in undriven conditions have been studied before (Gonze et al., 2002), here we analyzed the contrasting internal and external noise properties of these oscillators under externally driven conditions. The results are shown in Figure 2.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37624/elife-37624-fig2-v2.jpg)\n\n**Figure 2.:** For each oscillator, the regime (green) of largest free running amplitude relative to the driving strength is most robust to external fluctuations but is most fragile to internal noise. In contrast, damped oscillations (red) are robust to internal noise and thus preferable at sufficiently high internal noise. Regimes (purple) of intermediate free running amplitude are preferred at intermediate internal noise levels. (a\u2013g) Diverse biochemical oscillators from the literature were simulated with increasing internal noise $\u03f5_{i\u2062n\u2062t}=1/\\sqrt{N}$ while driven by a periodic square wave light signal with fixed strength external noise, using the external coupling and parameters specified in the original publications (Leloup et al., 1999; Schmal et al., 2014; Locke et al., 2005; Leloup and Goldbeter, 2003; Goldbeter, 1991; Goodwin, 1965; Gonze and Abou-Jaoud\u00e9, 2013; Kondepudi and Prigogine, 2014; Elowitz and Leibler, 2000; Bu\u015fe et al., 2009). Clock precision is defined as mutual information between outputs and time. The original publications identified a Hopf bifurcation parameter in these models, with free running oscillations on one side and damped oscillations on the other. Green and purple data correspond to parameter regimes with large and smaller amplitude free running oscillations relative to driving amplitude while the red data corresponds to a damped oscillator. Details in Appendix 2.\n\nIn each case, we set all kinetic parameters to values specified in the original publications and coupled the external driving signal in the way specified in those original publications. As in the Kai clock simulations, the external signal was a square wave with amplitude fluctuations of fixed strength. Finally, we add Langevin noise to the equations to simulate internal noise; when available, we followed the finite volume prescription for rates in the original publications or related papers to set the size of Langevin noise for each reaction. Simulation and model details are in Appendix\u00a02.\n\nThese models here all exhibit a Hopf bifurcation as kinetic parameters are tuned. The publications (Leloup et al., 1999; Schmal et al., 2014; Locke et al., 2005; Leloup and Goldbeter, 2003; Goldbeter, 1991; Goodwin, 1965; Gonze and Abou-Jaoud\u00e9, 2013; Kondepudi and Prigogine, 2014; Bu\u015fe et al., 2009) identified a parameter which when tuned leads to a Hopf bifurcation; that\u00a0is, on one side of the bifurcation, we find damped oscillations while on the other side, we find free running oscillations of increasing amplitude. We picked three points along this parameter; the green and purple data correspond to free running oscillations of large and smaller natural amplitude relative to the size of the external drive. The red data corresponds to a choice of parameters on the other side of the Hopf bifurcation, that is, to damped oscillations. For the red data, we chose $\\mu$ such that the relaxation timescale was comparable to the period of the external driving force, much as in the Kai model of P. marinus. The damped oscillator is a useful clock only when the relaxation timescale is comparable to the period.\n\nIn each case, we observed the same trade-off as seen in the Kai system; free running oscillations of large amplitude relative to the external drive (green) were most precise when only subject to external noise but are most fragile to internal noise. Damped oscillations in the same oscillator models are more robust and thus are preferable at sufficiently high internal noise. We find that intermediate amplitude free running oscillations show intermediate noise properties. Consequently, we can continuously trade-off resistance to internal noise for resistance to external noise by changing the amplitude of free running oscillations relative to the strength of the external drive.\n\n### Dynamical systems theory of noise resistance\n\nWe have demonstrated a trade-off between external and internal noise resistance in diverse clocks. While it is possible to trace the origin of this trade-off to specific features of each clock, here, we take a different approach based on dynamical systems theory. Dynamical systems theory has been use to make fruitful general predictions about biological clocks since Winfree\u2019s analysis of phase singularities (Winfree, 2001). In a similar vein, we use dynamical systems theory to show this trade-off emerges due to basic features of free running and damped clock dynamics and can thus be expected to hold broadly.\n\n### Limit cycle clocks and point attractor clocks\n\nFree running clocks are phenomenologically well-described by a limit cycle attractor, a non-linear oscillator of fixed amplitude (Winfree, 2001). While such descriptions have been used for numerous biochemical oscillators, limit cycle dynamics can be experimentally seen in molecular detail for the KaiABC clock in S. elongatus as shown in Figure 3a (reproduced from [Leypunskiy et al., 2017]). The clock follows distinct limit cycle dynamics during the day (orange data) and night (black data) (Leypunskiy et al., 2017; Pattanayak et al., 2014), with the day cycle positioned at higher phosphorylation levels due to a higher ATP/ADP ratio.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37624/elife-37624-fig3-v2.jpg)\n\n**Figure 3.:** (a) Experiments on the Kai system at distinct ATP levels corresponding to day and night conditions reveal limit cycles shifted relative to each other in a phosphorylation space for Kai (reproduced from [Leypunskiy et al., 2017[). Similar behavior (Winfree, 2001) is seen in models of diverse biochemical oscillators studied in Figure 2. (b) We build a minimal model of such driven clocks as a limit cycle of radius $R$ whose center is shifted by a distance $L$ between day and night. In cycling conditions (see signal in (d)), an entrained clock\u2019s state executes a trajectory that encompasses both limit cycles as shown (bottom). (c) For damped clocks (Saunders, 2002), phenomenology suggests that the day and night limit cycle dynamics are replaced by a point attractor whose position changes between day and night. The relaxation time between the day and night attractors is comparable to $\u223c12$ hours, giving rise to the trajectory shown in cycling conditions. (d) The plot shows cycling conditions of light intensities that couple to (b) and (c).\n\nThe Kai model and indeed the diverse range of biochemical oscillators in Figure 2 show such a change in the limit cycle between day and night conditions. Here, we build a minimal model of such free-running clocks using circular day and night limit cycles of radius $R$ in a plane. The limit cycle is defined by the dynamics $\\tau_{r\u2062e\u2062l\u2062a\u2062x}\u2062r\u02d9=r-r^{3}/R^{2},\\theta\u02d9=\\omega$ about its own center; but the center of the limit cycle itself moves along the x axis in Figure 3b as $(\u03c1\u2062(t)\u2062L,0)$ where $\u03c1\u2062(t)\\in[0,1]$ is the normalized light intensity level at time $t$ and $L$ is a measure of the physiological changes between day and night (e.g., ATP/ADP ratio change in S. elongatus). Thus, for example in Figure 3b, the system follows the blue dynamics at night and then after dawn it relaxes to the orange day attractor on a time scale $\\tau_{r\u2062e\u2062l\u2062a\u2062x}$. Note that $R$ represents the amplitude of free-running oscillations while $L$ represents the strength or amplitude of the external driving signal.\n\nIn contrast, damped clocks are phenomenologically well-described by a day-time and a night-time point attractor with slow relaxation dynamics between them (Figure 3c), modeled as $r\u02d9=-r/\\tau_{r\u2062e\u2062l\u2062a\u2062x},\\theta\u02d9=\\omega$ about an attractor point whose location varies with current light levels as $(-\u03c1\u2062(t)\u2062L,0)$. Here we assume $2\u2062\\tau_{r\u2062e\u2062l\u2062a\u2062x}\u223c24$ hrs as in P. marinus (Holtzendorff et al., 2008); if relaxation were faster and completed before the day is over, the clock cannot resolve all times of the day.\n\nHere, we will also consider a family of limit cycle clocks of varying $R/L$ to interpolate between large-$R/L$ limit cycles and point attractors (approximated by $R/L=0$).\n\n### External noise\n\nWe begin with the performance of different clocks in the presence of external intensity fluctuations. Weather patterns cause large fluctuations in the intensity of light over a wide range of time-scales as shown in Figure 4a. Much like with biochemical circuits, we subject an in silico population of dynamical system clock models to different realizations of such noisy weather patterns.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37624/elife-37624-fig4-v2.jpg)\n\n**Figure 4.:** (a) Light intensity levels fluctuate on a range of time scales due to weather (power spectrum reproduced from Gu et al., 2001). (b) A population of limit cycle clocks of identical fixed geometry, subject to different realizations of weather conditions, show non-overlapping distributions (purple blobs) at different times of the day. Point attractor clocks form larger and more overlapping distributions. (c) A single representative dark pulse of $\u223c2.4$ duration causes only a $\u0394\u2062\u03a6\u223c30$ min phase lag in limit cycles since the trajectory\u2019s deviation (purple) is fundamentally bounded by the circular attractor. In contrast, $\u0394\u2062\u03a6\u223c4$ hr for the point attractor since the trajectory is in free-fall towards the blue night-time attractor. (d) The geometrically computed $\u0394\u2062\u03a6^{2}$ phase shift for a dark pulse of any fixed duration and time of occurrence (see Appendix 5) drops rapidly as $(R/L)^{-2}$ for large-$R/L$ limit cycles; this theoretical prediction agrees well with the population variance gain over a day in simulations. (e) Consequently, weakly driven limit cycles (i.e., high $R/L$) can tell time with high precision.\n\nWhen subject to weather fluctuations, we see in Figure 4b that the population variance of clock states for limit cycles at given times (purple) is fundamentally limited by the spacing between the day and night limit cycles. Point attractors develop larger overlapping population distributions at different times.\n\nWe can geometrically understand the daytime phase variance increase $\\sigma_{c\u2062l\u2062o\u2062u\u2062d\u2062s}^{2}$ in terms of the phase lag $\u0394\u2062\u03a6$ due to a single, say $2.4$ hr dark pulse, administered during the day. Figure 4c shows that the deviation in trajectory for limit cycle clocks (purple) is fundamentally limited by the presence of a continuous attractor. In contrast, for the point attractor, the trajectory is in free fall towards the night point attractor, with no limit cycle to arrest such a fall. Consequently, the geometrically computed phase shift $\u0394\u2062\u03a6$ due to the particular dark pulse shown in Figure 4c is much smaller for limit cycles ($\u0394\u2062\u03a6\u223c0.5$ hr for the $R,L$ geometry shown) than for point attractors ($\u0394\u2062\u03a6\u223c4$ hr) (see Appendix 5).\n\nIn fact, this contrast in $\u0394\u2062\u03a6$ between limit cycles and point attractors holds for dark pulses of any duration and time of occurrence. The contrast is even greater at small $L/R$ since $(\u0394\u2062\u03a6)^{2}\u223c(L/R)^{2}$ for small $L/R$, as shown geometrically in Appendix 5 and confirmed in simulations that average over random weather conditions (Figure 4d). Hence, limit cycles are more resistant to external fluctuations than point attractors.\n\nTo complete the analysis, we note that phase variance increases additively during the day and falls multiplicatively at dusk (and dawn), that is,\n\n$$\n\\sigma^{2}\u2192d\u2062a\u2062y\\sigma^{2}+\\sigma_{c\u2062l\u2062o\u2062u\u2062d\u2062s}^{2}\u2192d\u2062u\u2062s\u2062k(\\sigma^{2}+\\sigma_{c\u2062l\u2062o\u2062u\u2062d\u2062s}^{2})/s^{2}\u2192n\u2062i\u2062g\u2062h\u2062t(\\sigma^{2}+\\sigma_{c\u2062l\u2062o\u2062u\u2062d\u2062s}^{2})/s^{2}\u2192d\u2062a\u2062w\u2062n(\\sigma^{2}+\\sigma_{c\u2062l\u2062o\u2062u\u2062d\u2062s}^{2})/s^{4}.\n$$\n\nSolving for steady state phase variance ($\\sigma^{2}=(\\sigma^{2}+\\sigma_{c\u2062l\u2062o\u2062u\u2062d\u2062s}^{2})/s^{4}$), we obtain\n\n$$\n\\sigma_{l\u2062i\u2062m\u2062i\u2062t\u2062c\u2062y\u2062c\u2062l\u2062e}^{2,e\u2062x\u2062t}\u223c\u0394\u2062\u03a6^{2}/(s^{4}-1).\n$$\n\nwhere we have equated $\\sigma_{c\u2062l\u2062o\u2062u\u2062d\u2062s}^{2}$ to $\u0394\u2062\u03a6^{2}$ for a typical dark pulse Here, $s^{2}$ represents the variance drop during a dawn/dusk entrainment. As shown in Appendix 5 for external noise (and in Figure 5 for internal noise), this factor $s$, can be geometrically explained by the slope of the circle map relating the two cycles Leypunskiy et al., 2017; we find that $s^{2}-1\u223cL/R$ for large-$R/L$ limit cycles. Plugging this and $\u0394\u2062\u03a6^{2}\u223c(L/R)^{2}$ into Equation1, we see that $\\sigma^{2}\u2192L/R\u21920$ for large -$R/L$ cycles.\n\nFigure 4e shows that the precision (i.e., mutual information between clock state and time) computed from random weather simulations agrees with this theory; clock precision drops as we interpolate from limit cycles to point attractors by changing $L$ (with equivalent results for changing $R$).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37624/elife-37624-fig5-v2.jpg)\n\n**Figure 5.:** (a) We model fluctuations due to finite copy number $N$ as Langevin noise with mean zero and standard deviation $\u03f5_{int}$, resulting in a diffusion constant $\u03f5_{i\u2062n\u2062t}^{2}\u223c1/N$ for the clock state. (b) The flat direction of limit cycles cannot contain diffusion, leading to large increases $\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y}$ in population variance of clock state during each day (and night). In contrast, point attractor dynamics have constant curvature at all times, leading to a constant population variance over time. (c) The variance drops $\\sigma^{2}\u2192\\sigma^{2}/s^{2}$ at dawn and dusk for limit cycles during the off-attractor dynamics between the day and night cycles. As with external noise, the variance drop is predicted by the slope $d\u2062P\u2062(\\theta)/d\u2062\\theta$ of the circle map between the cycles. This dawn/dusk drop goes to zero for large $R/L$ limit cycles but variance still increases during the day and night. (d) The variance for point attractors is $D\u2062\\tau_{r\u2062e\u2062l\u2062a\u2062x}$, a constant determined by the curvature $\\tau_{r\u2062e\u2062l\u2062a\u2062x}^{-1}$ of the harmonic potential. (e) Thus, with only internal noise present, the precision of limit cycle clocks increases with increasing separation $L/R$, asymptotically approaching the performance of point attractors.\n\n### Internal noise\n\nInternal noise due to finite copy number effects in biochemical networks can be modeled exactly using the Gillespie method used in Figure 1. In the context of our dynamical systems model, we follow Gillespie, 2007 and add Langevin noise to all dynamical variables of the system of strength $\u03f5_{i\u2062n\u2062t}\u223c1/\\sqrt{N}$, where $N$ is the overall copy number, with the ratios of different species assumed fixed (see Appendix 3). Such a Langevin approach is an approximation Gillespie, 2007 to the exact Gillespie method used in Figure 1.\n\nWe simulated a population of clocks in externally noiseless day-night light cycles but with internal Langevin noise. We see in Figure 5b that limit cycle populations have significantly higher variance of clock state due to internal noise than point attractors, in contrast to Figure 4b with external noise alone.\n\nWe can understand the weakness of limit cycle attractor relative to the point attractor in terms of diffusion during day/night balanced by dawn/dusk transitions. The flat direction along the limit cycle attractor cannot contain diffusion caused by the Langevin noise during the day/night; hence the phase variance increases by $\\sigma^{2}\u2192\\sigma^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y}$ during a day of length $T_{d\u2062a\u2062y}$ (and similarly at night).\n\nDawn and dusk times reduce the phase variance $\\sigma^{2}\u2192\\sigma^{2}/s^{2}$ as the trajectories originating on, say, the day cycle converge on the night cycle (see Figure 5c and Leypunskiy et al., 2017; Monti and Lubensky, 2017). In fact, we can compute this variance drop $s^{2}$ entirely through geometric considerations. We define the circle map $\u03d5=P\u2062(\\theta)$ as relating originating points $\\theta$ near dusk on the day cycle to final points on the night cycle $\u03d5$ after relaxation (experimentally characterized in Leypunskiy et al., 2017). Then $s^{-1}=d\u2062P\u2062(\\theta)/d\u2062\\theta$. Figure 5c shows that this slope $s^{-1}=d\u2062P\u2062(\\theta)/d\u2062\\theta$, geometrically computed in the SI, agrees with the dawn/dusk variance drop in Langevin simulations and scales as $s^{2}-1\u223cL/R$ for large $R/L$.\n\nThus, the population phase variance changes as\n\n$$\n\\sigma^{2}\u2192D\u2062a\u2062y\\sigma^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y}\u2192D\u2062u\u2062s\u2062k(\\sigma^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y})/s^{2}\u2192N\u2062i\u2062g\u2062h\u2062t(\\sigma^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y})/s^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y}\u2192D\u2062a\u2062w\u2062n((\\sigma^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y})/s^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y})/s^{2}.\n$$\n\nAssuming $T=T_{d\u2062a\u2062y}=T_{n\u2062i\u2062g\u2062h\u2062t}$ and solving for steady-state phase variance ($\\sigma^{2}=((\\sigma^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y})/s^{2}+\u03f5_{i\u2062n\u2062t}^{2}\u2062T_{d\u2062a\u2062y})/s^{2}$), we obtain\n\n$$\n\\sigma_{c\u2062y\u2062c\u2062l\u2062e}^{2,i\u2062n\u2062t}\u223c\\frac{\u03f5_{i\u2062n\u2062t}^{2}\u2062T}{s^{2}-1}\n$$\n\nConsequently, as the cycles become large (large $R/L$), the dawn/dusk variance drop vanishes as $s^{2}-1\u223cL/R\u21920$ while diffusion along the flat direction still adds $\u03f5_{i\u2062n\u2062t}^{2}\u2062T$ to the variance during each day and each night; hence large-$R/L$ limit cycles have large $\\sigma_{c\u2062y\u2062c\u2062l\u2062e}^{2,i\u2062n\u2062t}$ and thus low precision. (Unlike with external noise, internal noise introduces a diffusion length scale and hence changing $L$ and $R$ are not equivalent. To make a fair comparison, we fix $R$ and internal noise while changing $L$ in Figure 5e; see Appendix 3 for more detail about other equivalent choices).\n\nNote that Equation 2 is invalid for strictly undriven clocks (i.e., $s=1$); such clocks show a variance that increases indefinitely with time. Here, we focus on driven clocks, which always settle to the finite variance given by Equation 2.\n\nIn contrast, for point attractors, the population variance stays constant during the day-night cycle and is shown to be\n\n$$\n\\sigma_{p\u2062o\u2062i\u2062n\u2062t}^{2,i\u2062n\u2062t}\u223c\u03f5_{i\u2062n\u2062t}^{2}\u2062\\tau_{r\u2062e\u2062l\u2062a\u2062x}\n$$\n\nin the SI, which matches Langevin simulations (Figure 5d). Since $\\tau_{r\u2062e\u2062l\u2062a\u2062x}\u223cT_{d\u2062a\u2062y}$ to have distinct clock states through the day (Figure 3), we find $\\sigma_{c\u2062y\u2062c\u2062l\u2062e}^{2,i\u2062n\u2062t}\\geq\\sigma_{p\u2062o\u2062i\u2062n\u2062t}^{2,i\u2062n\u2062t}$.\n\nIn summary, in both cases, population variance is reduced by the geometric \u2018curvature\u2019 of the dynamics, that is, convergence of nearby trajectories. Point attractor trajectories experience a constant curvature of $1/\\tau_{r\u2062e\u2062l\u2062a\u2062x}$. But limit cycle clocks experience such \u2018curved\u2019 off-attractor dynamics only at dawn and dusk, which is offset by dephasing\u00a0(Mihalcescu et al., 2004; Gonze et al., 2002) during long periods of zero curvature on the limit cycle (day/night). Hence limit cycles underperform point attractors under high internal noise.\n\n### Combination of external and internal noise\n\nWe now subject the clock systems to both internal and external noise at the same time. We find results (see Figure 6a) that parallel those for explicit molecular models of biochemical oscillators studied in Figure 2. Large-$R/L$ limit cycles outperform other clocks in filtering out external noise when internal noise is low, but their precision degrades more rapidly than other clocks as internal noise $\u03f5_{i\u2062n\u2062t}^{2}\u223c1/N$ is increased. Point attractors have poor precision with only external noise but do not significantly degrade with internal noise and outperform all other clocks at high internal noise. At comparable strengths of internal and external noise, limit cycles with an intermediate value of $R/L$ are most precise. In the SI, we show that the optimal geometry is set by the ratio of internal and external noise strength,\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37624/elife-37624-fig6-v2.jpg)\n\n**Figure 6.:** Large-$R/L$ limit cycle attractors, which correspond to large amplitude free running clocks, outperform all other oscillators in projecting out external noise but are least robust to internal noise.(a) Point attractors and smaller $R/L$ limit cycles (red and purple curves) show low precision (i.e., low mutual information) but do not degrade as much as large-$R/L$ limit cycles with increasing internal noise $\u03f5_{i\u2062n\u2062t}$. Thus this simple dynamical systems model of clocks reproduces and explains the trade-off seen in the complex biochemical clocks shown in Figures 1 and 2. (b,c) Speed-precision trade-off. (b) With external noise alone, the most precise clocks (i.e., large $R/L$ limit cycles) average over longer signal history and are thus the slowest to entrain, that is, slow to transform a population with uniform phase distribution to the steady state distribution. (c) However, with internal noise alone, there is no trade-off between speed and precision; faster entraining clocks (i.e., point attractors) are more accurate since slow clocks are exposed to more internal noise.\n\n$$\n(L/R)_{o\u2062p\u2062t\u2062i\u2062m\u2062a\u2062l}=\\frac{\u03f5_{i\u2062n\u2062t}}{\u03f5_{e\u2062x\u2062t}}.\n$$\n\nIn the SI, also we show that, under certain simplifying assumptions, Equations 1 and 2 can be combined to give an explicit trade-off relationship,\n\n$$\n\\sigma_{i\u2062n\u2062t}^{2}\u2062\\sigma_{e\u2062x\u2062t}^{2}\u223cQ\n$$\n\nwhere $Q=\u03f5_{i\u2062n\u2062t}^{2}\u2062\u03f5_{e\u2062x\u2062t}^{2}$ and where $\\sigma_{i\u2062n\u2062t}^{2}$ is the population angular variance of the clock state due to internal noise when driven by a noiseless external signal and $\\sigma_{e\u2062x\u2062t}^{2}$ is the population angular variance in the absence of internal noise due to amplitude fluctuations of the external signal. Note that angular variance is a better indicator than variance because we want to know how well the system can tell time.\n\nEquation 4 makes our trade-off explicit and also clarifies which parameters are varied and which parameters are held fixed in this trade-off. As long as $Q$ is held fixed, we allow all other parameters to vary \u2013 for example, the overall strength of the external drive $L$, the size of the cycle $R$, and as discussed in the SI, all other parameters characterizing the normal form of limit cycles near a Hopf bifurcation.\n\nHowever, in holding $Q$ fixed, our trade-off does assume that the strength of the external fluctuations $\u03f5_{e\u2062x\u2062t}$ \u2013 that is, the fractional size of amplitude fluctuations in the external signal \u2013 is held fixed. Similarly, we hold $\u03f5_{i\u2062n\u2062t}^{2}$, the phase diffusion constant, fixed \u2013 that is, we are comparing clocks that would show the same population phase variance (in units of radians) over the same time in undriven conditions. See Appendix 3 for alternative comparisons and other details.\n\n### Speed-precision trade-off\n\nAnother measure of clock quality is the entrainment speed, that is, the time taken to reach steady state population variance, starting from a population uniformly distributed in clock phase. In Figure 6b, we see that with external noise only, the most precise clocks (i.e., small-$L/R$ limit cycles) are the slowest to entrain because they retain a longer history of the external signal, allowing them to average out external noise better.\n\nBut strikingly, such a speed-precision trade-off is absent if internal noise is high. In Figure 6c, only internal noise is present and the external signal has no fluctuations. We see that clocks most robust to internal noise are also the fastest to entrain. Intuitively, the phase of slow entraining clocks is affected by the cumulative effect of internal fluctuations over a longer period of time. With both external and internal noise present, clocks with intermediate entraining speed - that is, intermediate $(L/R)_{o\u2062p\u2062t\u2062i\u2062m\u2062a\u2062l}=\u03f5_{i\u2062n\u2062t}/\u03f5_{e\u2062x\u2062t}$ - will have the highest precision.\n\n## Discussion\n\nFree running circadian clocks are a remarkable result of evolution in a changing but predictable environment and are thought to provide numerous benefits (Troein et al., 2009). Here, we showed that the limit cycle attractor underlying such a clock is able to effectively project out weather-related amplitude changes that are perpendicular to the flat direction of the attractor. Similar roles for the flat direction of continuous attractors in projecting out external (or input) fluctuations have been explored in neuroscience (Burak and Fiete, 2012); Seung (1996), for example, for head and eye motor control and spatial navigation. However, we also found that the same flat direction becomes a vulnerability with internal fluctuations since such fluctuations cannot be restricted to be perpendicular to the attractor.\n\nWe confirmed the trade-off between resistance to external and internal noise in diverse models of biochemical clocks and oscillators, using parameters inferred from experimental data by the original publications (Leloup et al., 1999; Schmal et al., 2014; Locke et al., 2005; Leloup and Goldbeter, 2003; Goldbeter, 1991; Goodwin, 1965; Gonze and Abou-Jaoud\u00e9, 2013; Kondepudi and Prigogine, 2014; Elowitz and Leibler, 2000; Bu\u015fe et al., 2009). The trade-off in each of these models can be given explanations that are specific to those models; for example, one can identify specific bottlenecks for external and internal noise in these models\u00a0(Cheong et al., 2011). However, we have provided an alternative kind of analysis based on the geometry of the dynamical systems involved. Such an explanation misses aspects specific to each clock - for example, how specific biologically tuneable parameters in each model affect internal and external noise resistance. However, the dynamical systems picture has the advantage in that it identifies the common origin of the trade-off across these systems. Such a dynamical systems picture has been fruitful in making other general but falsifiable predictions in biology (Gan and O'Shea, 2017; Leypunskiy et al., 2017; Corson and Siggia, 2017), going back to Winfree\u2019s phase singularity (Winfree, 2001).\n\nOur dynamical systems theory shows that the critical parameter for noise resistance is the strength of the external driving relative to the amplitude of free running oscillations, captured by the geometric ratio $L/R$ in our analysis. Weak driving provides resistance to external noise while strong driving provides resistance to internal noise. While our dynamical systems theory involve planar circular limit cycles, the models in Figure 2 have complex non-planar non-circular limit cycles and yet reproduce our trade-off. Finally, while the internal noise discussed here is set by finite copy number, this dependence is not essential to the results here. Any source of disturbance (e.g., bursty transcription) that perturbs the phase of the oscillator in constant light conditions is equivalent to internal noise. Similarly, external noise can involve any kind of fluctuation (e.g., multiplicative fluctuations, phase fluctuations) of the external signal that does not result in a persistent phase shift of the external signal itself.\n\nOur work suggests that the damped oscillators are not merely poor cousins of the remarkable free running oscillators found for example, in S. elongatus. At the low protein copy numbers such as those found in P. marinus, damped clocks keep time more reliably than free running clocks. (Low copy number has been linked to a trend towards reduced genome size and cell size in P. marinus [Bryant, 2003].) In addition to the noisy internal environment of P. marinus, the external environment might also play a role in selecting a damped clock; P. marinus is typically found in the open ocean, where the external environment may be more regular than the fresh water habitat of S. elongatus. In addition to P. marinus, damped oscillators are found elsewhere in biology, often in specific physiological conditions (Saunders, 2002; Kidd et al., 2015). Understanding the benefits and drawbacks of such damped oscillators in different conditions is critical since such oscillations are easily overlooked experimentally, in comparison to free running oscillations.\n\nWhile numerous upstream and downstream considerations can modify (Rand et al., 2004; Domijan and Rand, 2011) the ultimate biological impact of fluctuations, we find that the core oscillator\u2019s geometry in itself can continuously trade off protection against external fluctuations for protection against internal fluctuations in the diverse range of models studied here.\n\nNote added in proofs: The study of Monti et al. (2018, in press) independently arrived at the conclusion that free running clocks based on limit-cycles are more robust to external noise. Experiments in Chew et al.\u00a0(2018, in press) suggest that the free running clock in S. elongatus is less robust to internal noise than the hourglass clock in P. marinus.\n\n## Materials and methods\n\nWe incorporated most of our methods in Results and Discussion. For details beyond those presented in Results, please see Appendices. Code to simulate the systems can be found at\u00a0https://github.com/WeerapatP/elife_tradeoff_clocks\u00a0(Pittayakanchit, 2018;\u00a0copy archived at\u00a0https://github.com/elifesciences-publications/elife_tradeoff_clocks).\n",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "d46a0981-f27d-4c24-8d7a-e6e2e09d48be",
+      "submission_id": "2363b629-e27a-48c9-852a-8a29d66e9aa8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aleksandra M Walczak, \u00c9cole Normale Sup\u00e9rieure France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37624.021](https://doi.org/10.7554/eLife.37624.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Biophysical clocks face a trade-off between internal and external noise resistance\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Sandeep Krishna (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis paper addresses the question of noise in circadian clocks from a theoretical point of view, contrasting two main strategies for telling time: a free-running entrained clock (two limit cycles), and a set of two attractors, one for the day and one for the night (two attractors). The main insight is that these two strategies differ in how they can absorb external vs. internal noise. The limit cycle strategy is robust to external noise, but not to internal one. The opposite is true for the attractor strategy. This finding is consistent with experimental observations in bacteria.\n\nAll of the reviewers and the editor agreed that the paper develops an elegant and interesting theory, which is critically tested. All the reviewers praised the manuscript. The reviewers raised a number of comments (both regarding the work and the presentation) that should be addressed before publication.\n\nReviewer 1:\n\nEvolutionarily speaking, I would expect the hourglass model to be the ancestral state, so it is not clear that, say, in P. marinus, it is really adaptive not to have a (more evolved) clock. A convincing argument could be that in some contexts a clock \"de-evolved\" towards an hourglass model. It would be good if the authors could comment on this.\n\nReviewer 2:\n\n1) The approximation the authors make in writing Langevin equations needs to be explained better, it's very unclear right now. To be specific, in the one case where they show a Langevin equation for a circadian oscillator (Appendix 2 Equation 5), I'm fine with Appendix 2 Equations 6 and 7. I assume the simulations use this matrix and their simulations for the other oscillators also use a similar matrix (if so, the authors should say this explicitly, and if not, then the following worry holds for these simulations too). Similarly, Appendix 6 Equation 41 (Gillespie's previous work) is fine too. But I don't understand exactly how the authors get Appendix 6 Equation 42 because for f(z\u2192,t) they say they use the original nonlinear form from the purely deterministic equations. One way to get Appendix 6 Equation 42 from Appendix 6 Equation 41 (or whichever other deterministic equation set one starts with) would be to linearize Appendix 6 Equation 41 around some (fixed) point N*_A, N*_B \u2013 in the linear regime I can see how the noise terms R+ and R- would reduce to the noise term in Appendix 6 Equation 42 but then f(z\u2192,t) would also be linear in (N_A-N*_A), (N_B-N*_B) etc. I don't see any rigorous way to keepf(z\u2192,t) as the same nonlinear function of N_A, N_B, etc., without also keeping R+ and R- to be the nonlinear functions of N_A and N_B that they are in Appendix 6 Equation 41. Ideally, I would like to see a rigorous derivation, say where Appendix 6 Equation 42 arises from Appendix 6 Equation 41 as some small parameter is sent to zero. If that's not possible then perhaps the authors can at least compare this approximation with the full Gillespie simulation for the S. elongatus and P. marinus oscillators they show in Figure 1 of the main text. Since they have the full Gillespie simulation there, it should be easy to write the Master equation, derive the nonlinear Langevin equation (akin to Appendix 6 Equation 41) and then make exactly the same approximation. I would like to see in such a case where (i.e., for what parameter values in the model) the approximation gives results that match the Gillespie simulation and where it doesn't (the latter is important \u2013 it's very useful for a reader to know where the approximation fails; e.g., does it fail say for very spiky oscillations where one variable spends a lot of time near zero but periodically rises to a high value?). My expectation is actually that the results will not be too different, so I don't anticipate that this will invalidate any of the trends the authors see, but it's important to check this.\n\n2) The authors have used a particular type of external noise, namely they add noise to the amplitude of a square pulse. As far as I can tell there's no variability in the time at which the square pulse drops to zero or the time when it rises (let me call such variability \"noise in the phase of the square wave\"). (If I have misunderstood and their external noise does include this then what is written below can be ignored, but the authors could try to be more clear in their description of the external noise.) Their argument in the dynamical systems section makes me think that such noise in the phase of the square wave would cause the limit cycle oscillators to diffuse in the direction tangent to the trajectory, just as they do with internal noise. But I would still call this external noise because it doesn't have a 1/sqrt(N) dependence. So is the distinction really between external and internal noise (which I interpret as noise that is independent of N vs. 1/sqrt(N)), or is it between noise that affects the phase and noise that doesn't, irrespective of whether it has a 1/sqrt(N) dependence? In the circadian case, maybe there is an argument to say that this is just semantics, because external noise due to weather fluctuations won't change the phase of the day-night cycle. I agree with this, but I'm looking at their results beyond circadian clocks alone, because the audience for their paper will include biologists interested in other oscillators too. For instance, NF-\u03baB oscillations may well be driven by periodic cytokine secretions and \"external noise\" might well perturb the phase as well as the amplitude of the oscillating cytokine. In such a case, if the real difference in behaviour between limit cycles and hourglass clocks is actually in their response to noise that affects the phase of the driving signal vs noise that does not, then the nomenclature external vs internal noise will inadvertently mislead people. I think simply looking at the behaviour of their phenomenological oscillators with noise in the phase of the square wave will clear this up.\n\n3) The authors have come up with some neat measures to compare the oscillators they look at. In particular, I think the precision measure (first shown in Figure 1D) based on mutual information will prove to be very useful for other researchers in a variety of contexts. Having a measure like this is critical for this study because otherwise how do you compare different models with different parameter values, different variables, and perhaps even different dimensions? So I actually think the authors undersell themselves here \u2013 the measure and its purpose deserves more than one throwaway line in the main text (I doubt anyone will get anything out of \"variance along the most informative directions\"). If the authors don't want to bring the mathematics into the main text, at least they should say more about comparing models when they talk about Figure 1D (incidentally, although it's clear where they talk about Figure 1D in the main text, an explicit reference to \"Figure 1D\" is missing and may be useful for a reader who has looked at that figure first and is trying later to find where it is discussed in the text.)\n\n4) In their dynamical systems models, the limit cycle has a constant amplitude. I'm curious: how much would their argument be affected if the radius R in fact changed a lot over the course of the trajectory? (again I'm thinking of very spiky oscillations, or more complex oscillations with non-planar phase plots, which may not be relevant for circadian systems but may be relevant for other biological oscillations.) Wouldn't a varying R cause a non-zero curvature for the limit cycle? If so, then the timing of the day-night transition and whether it happens where curvature is zero or not may become important. How would a large variation of internal noise along the trajectory, due say to R becoming close to zero, affect their results? I'll leave it to the authors to decide whether any of this is in the scope of the current paper or not, but perhaps a quick discussion of the approximation involved in keeping R fixed on the trajectory is warranted.\n\n5) Whenever the authors talk of the hourglass clocks they present them as having damped oscillations. From their arguments, surely this is not necessary and the system would work as well or as badly if it was not spiraling into the fixed point (eigenvalues having an imaginary component), but rather had an \"overdamped\" approach (real, negative eigenvalues)? As far as I can tell, as long as the relaxation time is of the same order as the day-night cycle the behaviour should be the same.\n\n6) I found parts of the manuscript hard to follow. I needed to flip back and forth between the main text and supplement a fair bit, which to me indicates that some of the supplement needs to go into the main text, or parts of the main text need more amplification. I already mentioned the too brief discussion of the precision measure. In the main text, it also took me a while to figure out what s was (just before Equation 1) \u2013 it would help to define this more clearly. And it would help to call out specific sections of the supplement instead of using the generic \"see SI\". Within the supplement, why not just write out the Langevin equations soon after Appendix 3 Equation 14 rather than asking the reader to jump to find it? And I also think it would be good to include the diffusion matrix the authors have used for each of the \"Other oscillators\", so that it is clear that they have not used the approximation in Appendix 6 Equation 42 for these simulations (or have they?).\n\n7) Just out of curiosity \u2013 a typical argument made for explaining some aspects of the architecture of circadian oscillators lies in other features such as temperature compensation. Have the authors thought about whether limit cycles or hourglasses do better at temperature compensation?\n\n8) There are a few typos:\n\nSubsection \u201cLimit cycle clocks and point attractor clocks\u201d, second paragraph: diverge should be diverse.\n\nSubsection \u201cSimulations\u201d, fourth paragraph: Langeving should be Langevin\n\nAppendix 6 Equation 39 and Appendix 6 Equation 41: dNa should be dNA.\n\nReviewer 3:\n\nMy only concern is with regards to very dense, technical and somewhat cumbersome presentation of the Results. This could be an example where the principle \"less is more\" could be applicable. The main and most important idea of the paper is clear from Figure 1 and the universal character of the discovered trend shown in Figure 2 is impressive. However, the subsequent analysis in the main text it is very hard to follow and requires full immersion to an appendix to understand. This could be more appropriate for a more specialized journal. Results about trade-off in Figure 6 seems very interesting but presented in a brief passing here.\n",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d8d7c8af-c315-4c6a-9f8c-4bdcb9cdc93d",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C1",
+      "claim": "Many organisms use free running circadian clocks to anticipate the day night cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Many organisms use free running circadian clocks to anticipate the day night cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about circadian clocks that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "82c97cc7-5484-4a89-b46b-1b7babec3566",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C2",
+      "claim": "Some organisms use simple stimulus-response strategies ('hourglass clocks').",
+      "claim_type": "EXPLICIT",
+      "source": "However, others organisms use simple stimulus-response strategies ('hourglass clocks') and it is not clear when such strategies are sufficient or even preferable to free running clocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about different timing mechanisms in organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "171c79b5-3dee-4b6a-b87a-f5b41d8f4acc",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C3",
+      "claim": "Free running clocks can efficiently project out light intensity fluctuations due to weather patterns by exploiting their limit cycle attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that free running clocks, such as those found in the cyanobacterium Synechococcus elongatus and humans, can efficiently project out light intensity fluctuations due to weather patterns ('external noise') by exploiting their limit cycle attractor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by simulations and theoretical analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "da7ad76f-fd78-4598-997b-2a95b39eb616",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C4",
+      "claim": "Limit cycles are necessarily vulnerable to internal noise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such limit cycles are necessarily vulnerable to 'internal noise'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from dynamical systems analysis and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "7927c825-2e47-4387-b080-7ed134596e01",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C5",
+      "claim": "At sufficiently high internal noise, point attractor-based 'hourglass' clocks can outperform free running clocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, at sufficiently high internal noise, point attractor-based 'hourglass' clocks, such as those found in a smaller cyanobacterium with low protein copy number, Prochlorococcus marinus, can outperform free running clocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by simulations and theoretical analysis in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "90e063a7-96b4-47c8-81a0-8a2a2f8a1b3f",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C7",
+      "claim": "Free running circadian clocks are found in organisms ranging from the cyanobacterium S. elongatus to insects, plants and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The most remarkable and well-studied examples of clocks are free running circadian clocks, found in organisms ranging from the cyanobacterium S. elongatus to insects, plants and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the distribution of circadian clocks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "a52a8152-9329-4d9f-ae62-306d80a108e1",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C11",
+      "claim": "The P. marinus clock lacks the KaiA-mediated negative feedback loop that enables free running oscillations in S. elongatus.",
+      "claim_type": "EXPLICIT",
+      "source": "While the details of this clock are not fully characterized, the clock lacks the KaiA-mediated negative feedback (Dufresne et al., 2003; Holtzendorff et al., 2008) loop that enables free running oscillations in S. elongatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dufresne et al., 2003 and Holtzendorff et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "54035e47-11e1-4d51-8300-a425faa4519b",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C12",
+      "claim": "In constant light or dark conditions, the P. marinus clock's state decays to a distinct day or night state respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in constant light or dark conditions, the clock's state decays to a distinct day or a night state respectively (Holtzendorff et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Holtzendorff et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "e601e997-76f0-468f-9d61-508de2d16701",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C13",
+      "claim": "The day-night pattern of light on earth is subject to large amplitude fluctuations during the day due to weather patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The day-night pattern of light on earth does not resemble the clean square wave shown in Figure 1a but is rather subject to large amplitude fluctuations during the day due to weather patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about environmental conditions that is common knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "9e969e6a-006e-422d-a394-be05b0f45d51",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C14",
+      "claim": "Amplitude fluctuations in light due to weather patterns and their spectrum have been quantified.",
+      "claim_type": "EXPLICIT",
+      "source": "Such amplitude fluctuations and their spectrum have been quantified (Gu et al., 2001) and also identified as playing a critical role in several studies on the evolution and performance of circadian clocks (Domijan and Rand, 2011; Troein et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gu et al., 2001; Domijan and Rand, 2011; Troein et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "74fe9614-511e-4f77-8b89-cfaf411899a7",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C15",
+      "claim": "The biological impact of changes in light intensity in cyanobacteria have been quantified recently.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological impact of such changes in light intensity in cyanobacteria have been quantified recently (Teng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Teng et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "4cf619a4-0606-46f6-b1ed-c3913866ada9",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C16",
+      "claim": "Sources of internal noise for clocks include finite copy number effects, bursty transcription, cell division and other sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Sources of internal noise for clocks include finite copy number effects, bursty transcription, cell division and other sources (Tsimring, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tsimring, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "4df535c2-3ed1-4c8e-9b2c-a0c1b2f0a077",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C19",
+      "claim": "With only external fluctuations but suppressing internal fluctuations using high copy numbers, the damped oscillator develops a much larger population variance than the free running clock.",
+      "claim_type": "EXPLICIT",
+      "source": "With only external fluctuations but suppressing internal fluctuations using high copy numbers, we find that the damped oscillator develops a much larger population variance than the free running clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "cc0b6436-1c3e-41b8-ae0c-053ac759c81d",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C20",
+      "claim": "At low copy number (high internal noise) but with a noiseless external signal, the free running clock has significantly higher population variance than the damped clock.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at low copy number (i.e., high internal noise) but with a noiseless external signal, we find the situation is reversed; the free running clock has significantly higher population variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations presented in the manuscript and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "e5b12678-38cc-4062-8d93-fc1e654cad58",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C21",
+      "claim": "The free running clock has higher precision than the damped clock at low internal noise (high copy number).",
+      "claim_type": "EXPLICIT",
+      "source": "We see that the free running clock has higher precision than the damped clock at low internal noise (high copy number).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "19852473-205e-481f-b4d3-52b5320a46c9",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C22",
+      "claim": "As internal noise is increased, the precision of the free running clock drops earlier than the damped oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the internal noise is increased, the precision of the free running clock drops earlier and consequently, the damped oscillator has higher precision at sufficiently high internal noise (low copy number).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "83b95402-7516-4d03-b960-ab33f1aea598",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C23",
+      "claim": "The damped oscillator has higher precision at sufficiently high internal noise (low copy number).",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the internal noise is increased, the precision of the free running clock drops earlier and consequently, the damped oscillator has higher precision at sufficiently high internal noise (low copy number).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "91564899-a8b8-4974-aba6-c76e2b9caf60",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C24",
+      "claim": "In each biochemical oscillator model studied, the regime of largest free running amplitude relative to the driving strength is most robust to external fluctuations but is most fragile to internal noise.",
+      "claim_type": "EXPLICIT",
+      "source": "For each oscillator, the regime (green) of largest free running amplitude relative to the driving strength is most robust to external fluctuations but is most fragile to internal noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations of diverse biochemical oscillators shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "984a7d9f-8ec9-41dd-a767-95e6e95bdc64",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C25",
+      "claim": "Damped oscillations are robust to internal noise and thus preferable at sufficiently high internal noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, damped oscillations (red) are robust to internal noise and thus preferable at sufficiently high internal noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "78b1cece-ac5a-468d-b570-6630991d567f",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C26",
+      "claim": "Regimes of intermediate free running amplitude are preferred at intermediate internal noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Regimes (purple) of intermediate free running amplitude are preferred at intermediate internal noise levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "ef76096e-15a1-4004-9aaf-3d880071bb0e",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C27",
+      "claim": "Experiments on the Kai system at distinct ATP levels corresponding to day and night conditions reveal limit cycles shifted relative to each other in a phosphorylation space.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments on the Kai system at distinct ATP levels corresponding to day and night conditions reveal limit cycles shifted relative to each other in a phosphorylation space for Kai (reproduced from [Leypunskiy et al., 2017[).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Leypunskiy et al., 2017 and shown in Figure 3a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "fbc04589-7782-46eb-b694-15b4b460ed88",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C28",
+      "claim": "The flat direction along limit cycle attractors can selectively project out external amplitude fluctuations while retaining phase information.",
+      "claim_type": "EXPLICIT",
+      "source": "The flat direction along such continuous limit cycle attractors can selectively project out external amplitude fluctuations while retaining phase information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from dynamical systems analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "433142fc-f478-495a-bc5f-2a31a30f6183",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C29",
+      "claim": "The flat direction along the attractor makes continuous attractor-based clocks susceptible to internal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the flat direction along the attractor makes these continuous attractor-based clocks susceptible to internal fluctuations (e.g. low protein copy number [Potoyan and Wolynes, 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion with a citation to Potoyan and Wolynes, 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "084ed827-ba91-4d74-90b7-0f7726c965ad",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C30",
+      "claim": "Point attractor-based damped clocks are relatively resistant to internal fluctuations because they have no flat directions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, point attractor-based damped clocks are relatively resistant to internal fluctuations because they have no flat directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from dynamical systems analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "2db0b039-4235-477a-805d-c04f289cbc3f",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C31",
+      "claim": "The population variance of clock states for limit cycles at given times is fundamentally limited by the spacing between the day and night limit cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "When subject to weather fluctuations, we see in Figure 4b that the population variance of clock states for limit cycles at given times (purple) is fundamentally limited by the spacing between the day and night limit cycles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "a9a173b4-b585-4234-b60d-e50b43ab487a",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C32",
+      "claim": "Point attractors develop larger overlapping population distributions at different times when subject to weather fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Point attractors develop larger overlapping population distributions at different times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "1d486c7d-80a9-4b22-a48c-10fd6e71dde3",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C33",
+      "claim": "The deviation in trajectory for limit cycle clocks is fundamentally limited by the presence of a continuous attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4c shows that the deviation in trajectory for limit cycle clocks (purple) is fundamentally limited by the presence of a continuous attractor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical conclusion illustrated in Figure 4c.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "a67edd6b-037d-46e2-b2a5-fa84c9665547",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C34",
+      "claim": "For point attractors, the trajectory is in free fall towards the night point attractor, with no limit cycle to arrest such a fall.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the point attractor, the trajectory is in free fall towards the night point attractor, with no limit cycle to arrest such a fall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion illustrated in Figure 4c.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "82d1e367-8653-427e-80f4-57afac68860b",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C36",
+      "claim": "Limit cycles are more resistant to external fluctuations than point attractors.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, limit cycles are more resistant to external fluctuations than point attractors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion derived from theoretical analysis and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "b61e7cda-9004-4efd-acae-7a73746fbe2a",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C38",
+      "claim": "Point attractor dynamics have constant curvature at all times, leading to a constant population variance over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, point attractor dynamics have constant curvature at all times, leading to a constant population variance over time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical conclusion illustrated in Figure 5b.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "83c07b43-7d1e-464a-b6c3-de36fd90405b",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C39",
+      "claim": "Limit cycle populations have significantly higher variance of clock state due to internal noise than point attractors.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated a population of clocks in externally noiseless day-night light cycles but with internal Langevin noise. We see in Figure 5b that limit cycle populations have significantly higher variance of clock state due to internal noise than point attractors, in contrast to Figure 4b with external noise alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "87c9a42b-c41b-48f6-8493-fb2355515a23",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C43",
+      "claim": "With internal noise alone, there is no trade-off between speed and precision; faster entraining clocks (point attractors) are more accurate since slow clocks are exposed to more internal noise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with internal noise alone, there is no trade-off between speed and precision; faster entraining clocks (i.e., point attractors) are more accurate since slow clocks are exposed to more internal noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 6c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "c5b44226-2556-4f6f-917d-92e290aef11e",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C44",
+      "claim": "P. marinus is typically found in the open ocean, where the external environment may be more regular than the fresh water habitat of S. elongatus.",
+      "claim_type": "EXPLICIT",
+      "source": "P. marinus is typically found in the open ocean, where the external environment may be more regular than the fresh water habitat of S. elongatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the ecological niches of these organisms, drawing from established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "6e59adf5-c6a7-4542-b0aa-cfd3a0883395",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C45",
+      "claim": "Low copy number has been linked to a trend towards reduced genome size and cell size in P. marinus.",
+      "claim_type": "EXPLICIT",
+      "source": "(Low copy number has been linked to a trend towards reduced genome size and cell size in P. marinus [Bryant, 2003].)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bryant, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "fbd0786e-b8cb-408f-8317-f9883eb689ae",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C46",
+      "claim": "Damped oscillators are found elsewhere in biology, often in specific physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to P. marinus, damped oscillators are found elsewhere in biology, often in specific physiological conditions (Saunders, 2002; Kidd et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Saunders, 2002 and Kidd et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "923ad127-2a82-45e8-89b4-6e9549dc00be",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C48",
+      "claim": "The study of Monti et al. (2018, in press) independently arrived at the conclusion that free running clocks based on limit-cycles are more robust to external noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Note added in proofs: The study of Monti et al. (2018, in press) independently arrived at the conclusion that free running clocks based on limit-cycles are more robust to external noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to an independent study that reached similar conclusions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "faee64c7-143c-4d0e-932a-ef5cf4ca1770",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "claim_id": "C49",
+      "claim": "Experiments in Chew et al. (2018, in press) suggest that the free running clock in S. elongatus is less robust to internal noise than the hourglass clock in P. marinus.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in Chew et al. (2018, in press) suggest that the free running clock in S. elongatus is less robust to internal noise than the hourglass clock in P. marinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to experimental work that supports the theoretical predictions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b1347c48-9a3c-4832-8671-c3069948fe34",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Free running clocks (limit cycle attractors) efficiently filter external noise by exploiting their flat direction but are vulnerable to internal noise, while damped 'hourglass' clocks (point attractors) show the opposite pattern. At high internal noise, damped clocks outperform free running clocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C19-C23 collectively demonstrate the core trade-off through Gillespie simulations of Kai-based clocks. The simulations show that free running clocks have lower population variance under external noise (C19) but higher variance under internal noise (C20), with precision measurements (C21-C23) confirming the crossover point. The theoretical mechanism is explained through limit cycle geometry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "efac04f2-dece-4cc4-ae14-6ce83d54cc64",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The trade-off between external and internal noise resistance is generalizable across diverse biochemical oscillator models, with large-amplitude free running oscillations most robust to external noise but fragile to internal noise, while damped oscillations show the opposite pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 demonstrate that the trade-off holds across eight different biochemical oscillator models from the literature (Neurospora, Arabidopsis, mammalian, cell cycle, Goodwin, Brusselator, repressilator). The consistency across diverse systems with different biochemical architectures supports the generality of the finding, though the analysis relies on parameters from original publications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The flat direction along limit cycle attractors enables selective filtering of external amplitude fluctuations while retaining phase information, but this same flat direction makes limit cycles susceptible to internal fluctuations. Point attractors lack flat directions and thus resist internal noise better.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 provide a mechanistic explanation through dynamical systems theory. The geometric analysis shows that limit cycles constrain trajectory deviations under external noise (C31, C33) while point attractors show larger deviations (C32, C34). The theoretical predictions are supported by simulations showing variance patterns consistent with the geometric constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "c99ed576-d62b-4527-86ea-1c8e919286cb",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Under internal noise, limit cycle populations develop significantly higher variance than point attractor populations due to diffusion along the flat direction, while point attractors maintain constant curvature and thus constant variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by Langevin simulations showing the predicted variance patterns. The theoretical explanation based on constant curvature for point attractors versus zero curvature along limit cycles is geometrically sound and matches simulation results in Figure 5b.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "8cf19f30-48fe-4b86-993d-1a3892216339",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "With internal noise alone, there is no speed-precision trade-off; faster entraining clocks (point attractors) are more accurate because slower clocks accumulate more internal noise over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by simulations in Figure 6c showing that point attractors both entrain faster and maintain higher precision under internal noise. The reasoning that slower clocks are exposed to cumulative internal noise for longer periods is logically sound and consistent with the diffusion-based model of internal noise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "be4e3af2-f86c-4376-860e-8dfb5f440aff",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experiments on the Kai system reveal limit cycles shifted relative to each other in phosphorylation space at different ATP levels corresponding to day and night conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is supported by citation to Leypunskiy et al., 2017 and reproduced experimental data shown in Figure 3a. This provides empirical foundation for the limit cycle model used in the theoretical analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "0b39e29f-b128-4d23-b74c-5b07f57c33cb",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The P. marinus clock lacks the KaiA-mediated negative feedback loop found in S. elongatus and consequently decays to distinct day or night states in constant conditions, representing a damped 'hourglass' clock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 are supported by citations to Dufresne et al., 2003 and Holtzendorff et al., 2008. These establish the biochemical basis for P. marinus as a damped oscillator model system, though the authors note the clock is not fully characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "b3d2a760-0882-45ab-9fca-588b10749e36",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "P. marinus inhabits the open ocean with potentially more regular external conditions than S. elongatus's freshwater habitat, and has reduced genome/cell size linked to low protein copy number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 provide ecological and cellular context for why P. marinus might favor a damped clock. C45 is supported by citation to Bryant, 2003. C44 is presented as a hypothesis about environmental regularity that could explain clock architecture differences, though direct measurements of environmental variability in these habitats are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "a0332674-2e77-4665-88a5-a08a6eff73f1",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Independent studies provide corroborating evidence: Monti et al. (2018) confirmed limit cycles are more robust to external noise, and Chew et al. (2018) experimentally showed S. elongatus is less robust to internal noise than P. marinus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 cite independent work that supports the main findings. These citations strengthen the conclusions by showing convergent evidence from both theoretical (Monti et al.) and experimental (Chew et al.) approaches, though the papers are listed as 'in press' and full details are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    },
+    {
+      "id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1",
+      "content_id": "859539a5-f71f-44c5-8547-e612b783d2c0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background context: Circadian clocks are widespread across organisms, exist in both free-running and hourglass forms, and face both external noise from weather fluctuations and internal noise from finite copy number and other sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7, C13-C16, and C46 establish the biological and physical context for the study. These are well-established facts supported by appropriate citations and general knowledge in the field. They provide necessary background but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:23:50.244141Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "171c79b5-3dee-4b6a-b87a-f5b41d8f4acc",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "da7ad76f-fd78-4598-997b-2a95b39eb616",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "7927c825-2e47-4387-b080-7ed134596e01",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "4df535c2-3ed1-4c8e-9b2c-a0c1b2f0a077",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "cc0b6436-1c3e-41b8-ae0c-053ac759c81d",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "e5b12678-38cc-4062-8d93-fc1e654cad58",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "19852473-205e-481f-b4d3-52b5320a46c9",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "83b95402-7516-4d03-b960-ab33f1aea598",
+      "result_id": "b1347c48-9a3c-4832-8671-c3069948fe34"
+    },
+    {
+      "claim_id": "91564899-a8b8-4974-aba6-c76e2b9caf60",
+      "result_id": "efac04f2-dece-4cc4-ae14-6ce83d54cc64"
+    },
+    {
+      "claim_id": "984a7d9f-8ec9-41dd-a767-95e6e95bdc64",
+      "result_id": "efac04f2-dece-4cc4-ae14-6ce83d54cc64"
+    },
+    {
+      "claim_id": "78b1cece-ac5a-468d-b570-6630991d567f",
+      "result_id": "efac04f2-dece-4cc4-ae14-6ce83d54cc64"
+    },
+    {
+      "claim_id": "fbc04589-7782-46eb-b694-15b4b460ed88",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "433142fc-f478-495a-bc5f-2a31a30f6183",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "084ed827-ba91-4d74-90b7-0f7726c965ad",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "2db0b039-4235-477a-805d-c04f289cbc3f",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "a9a173b4-b585-4234-b60d-e50b43ab487a",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "1d486c7d-80a9-4b22-a48c-10fd6e71dde3",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "a67edd6b-037d-46e2-b2a5-fa84c9665547",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "82d1e367-8653-427e-80f4-57afac68860b",
+      "result_id": "16ccbba0-bb12-40cc-bfeb-088cc56d9412"
+    },
+    {
+      "claim_id": "b61e7cda-9004-4efd-acae-7a73746fbe2a",
+      "result_id": "c99ed576-d62b-4527-86ea-1c8e919286cb"
+    },
+    {
+      "claim_id": "83c07b43-7d1e-464a-b6c3-de36fd90405b",
+      "result_id": "c99ed576-d62b-4527-86ea-1c8e919286cb"
+    },
+    {
+      "claim_id": "87c9a42b-c41b-48f6-8493-fb2355515a23",
+      "result_id": "8cf19f30-48fe-4b86-993d-1a3892216339"
+    },
+    {
+      "claim_id": "ef76096e-15a1-4004-9aaf-3d880071bb0e",
+      "result_id": "be4e3af2-f86c-4376-860e-8dfb5f440aff"
+    },
+    {
+      "claim_id": "a52a8152-9329-4d9f-ae62-306d80a108e1",
+      "result_id": "0b39e29f-b128-4d23-b74c-5b07f57c33cb"
+    },
+    {
+      "claim_id": "54035e47-11e1-4d51-8300-a425faa4519b",
+      "result_id": "0b39e29f-b128-4d23-b74c-5b07f57c33cb"
+    },
+    {
+      "claim_id": "c5b44226-2556-4f6f-917d-92e290aef11e",
+      "result_id": "b3d2a760-0882-45ab-9fca-588b10749e36"
+    },
+    {
+      "claim_id": "6e59adf5-c6a7-4542-b0aa-cfd3a0883395",
+      "result_id": "b3d2a760-0882-45ab-9fca-588b10749e36"
+    },
+    {
+      "claim_id": "923ad127-2a82-45e8-89b4-6e9549dc00be",
+      "result_id": "a0332674-2e77-4665-88a5-a08a6eff73f1"
+    },
+    {
+      "claim_id": "faee64c7-143c-4d0e-932a-ef5cf4ca1770",
+      "result_id": "a0332674-2e77-4665-88a5-a08a6eff73f1"
+    },
+    {
+      "claim_id": "d8d7c8af-c315-4c6a-9f8c-4bdcb9cdc93d",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    },
+    {
+      "claim_id": "82c97cc7-5484-4a89-b46b-1b7babec3566",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    },
+    {
+      "claim_id": "90e063a7-96b4-47c8-81a0-8a2a2f8a1b3f",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    },
+    {
+      "claim_id": "e601e997-76f0-468f-9d61-508de2d16701",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    },
+    {
+      "claim_id": "9e969e6a-006e-422d-a394-be05b0f45d51",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    },
+    {
+      "claim_id": "74fe9614-511e-4f77-8b89-cfaf411899a7",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    },
+    {
+      "claim_id": "4cf619a4-0606-46f6-b1ed-c3913866ada9",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    },
+    {
+      "claim_id": "fbd0786e-b8cb-408f-8317-f9883eb689ae",
+      "result_id": "bdd512b0-004d-42ea-9b8b-2846c0d6fdd1"
+    }
+  ],
+  "comparisons": []
+}

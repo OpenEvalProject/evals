@@ -1,0 +1,1905 @@
+{
+  "submission": {
+    "id": "648f4de1-9dbf-44b4-8c90-10e6d4b88ad2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:55:15.519067Z",
+    "updated_at": "2025-12-01T19:55:15.519067Z"
+  },
+  "content": [
+    {
+      "id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "submission_id": "648f4de1-9dbf-44b4-8c90-10e6d4b88ad2",
+      "content_type": "manuscript",
+      "content_text": "# Microfluidic-based mini-metagenomics enables discovery of novel microbial lineages from complex environmental samples\n\n## Authors\n\n- Feiqiao Brian Yu<sup>1</sup> ([ORCID: 0000-0003-3416-3046](https://orcid.org/0000-0003-3416-3046))\n- Paul C Blainey<sup>3</sup>\n- Frederik Schulz<sup>4</sup> ([ORCID: 0000-0002-4932-4677](https://orcid.org/0000-0002-4932-4677))\n- Tanja Woyke<sup>4</sup> ([ORCID: 0000-0002-9485-5637](https://orcid.org/0000-0002-9485-5637))\n- Mark A Horowitz<sup>1</sup>\n- Stephen R Quake<sup>2</sup> ([ORCID: 0000-0002-1613-0809](https://orcid.org/0000-0002-1613-0809)) \u2020\n\n### Affiliations\n\n1. Department of Electrical Engineering Stanford University Stanford United States\n2. Department of Bioengineering Stanford University Stanford United States\n3. MIT Department of Biological Engineering and Broad Institute of Harvard and MIT Cambridge United States\n4. Department of Energy Joint Genome Institute Walnut Creek United States\n5. Chan Zuckerberg Biohub San Francisco United States\n6. Department of Applied Physics Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetagenomics and single-cell genomics have enabled genome discovery from unknown branches of life. However, extracting novel genomes from complex mixtures of metagenomic data can still be challenging and represents an ill-posed problem which is generally approached with ad hoc methods. Here we present a microfluidic-based mini-metagenomic method which offers a statistically rigorous approach to extract novel microbial genomes while preserving single-cell resolution. We used this approach to analyze two hot spring samples from Yellowstone National Park and extracted 29 new genomes, including three deeply branching lineages. The single-cell resolution enabled accurate quantification of genome function and abundance, down to 1% in relative abundance. Our analyses of genome level SNP distributions also revealed low to moderate environmental selection. The scale, resolution, and statistical power of microfluidic-based mini-metagenomics make it a powerful tool to dissect the genomic structure of microbial communities while effectively preserving the fundamental unit of biology, the single cell.\n\n## Introduction\n\nAdvances in sequencing technologies have enabled the development of shotgun\u00a0metagenomics and single-cell approaches to investigate environmental microbial communities. These studies revealed many previously uncharacterized genomes (Brown et al., 2015; Eloe-Fadrosh et al., 2016; Kashtan et al., 2014; Rinke et al., 2013), increasing the total number of sequenced microbial genomes to more than 50,000 (Joint Genome Institute\u2019s Integrated Microbial Genomes database, accessed December 1, 2016). However, the majority of environmental microbial diversity remains uncharacterized due to limitations in current techniques. Conventional shotgun metagenomic sequencing offers the ability to assemble genomes from a\u00a0single\u00a0heterogeneous sample, but is effective only if the complexity of the sample is not too great (Howe et al., 2014). Furthermore, it is often difficult to separate contigs belonging to closely related organisms because techniques designed to resolve these differences, such as tetranucleotide analysis, depend on ad hoc assumptions about nucleotide usage (Dick et al., 2009). It is possible to perform rigorous assemblies from independent single-cell genome amplifications but at the expense of lowering throughput (Rinke et al., 2014; Blainey, 2013). In addition, when performed in plates, single-cell sequencing approaches are typically expensive and laborious, although microfluidic approaches have helped to alleviate that limitation (Blainey et al., 2011).\n\nWe report here a new mini-metagenomics approach which combines the advantages of shotgun and single-cell metagenomic analyses. This approach uses microfluidic parallelization to separate an environmental sample into many small sub-samples containing 5\u201310 cells, significantly reducing complexity of each sub-sample and allowing high quality assembly while enabling higher throughput than typical single-cell methods. Although each sub-sample contains a limited mixture of several genomes, single-cell resolution is regained through correlations of genome co-occurrence across sub-samples, which in turn enables a rigorous statistical interpretation of confidence and genome association.\n\nWe validated this approach using a synthetic mixture of defined microbial species and then applied it to analyze two hot spring samples from Yellowstone National Park. Among 29 genomes larger than 0.5 Mbps, most belong to known bacterial and archaeal phyla but represent novel lineages at lower taxonomic levels; three genomes represent deeply branching novel phylogenies. Functional analysis revealed different metabolic pathways that cells may use to achieve the same biochemical process such as nitrogen and sulfur reduction. Using information associated with genome occurrence across sub-samples, we further assessed abundance and genome variations at the single-cell level. Our analyses demonstrate the power of the mini-metagenomic approach in de-convolving genomes from complex samples and assessing diversity in a mixed microbial population.\n\n## Results\n\n### Evaluating microfluidic-based mini-metagenomics using a mock community reveals improved whole genome amplification\n\nMicrofluidic-based mini-metagenomics begins with microfluidic partitioning of each environmental sample randomly into 96 sub-samples with 5\u201310 cells per sub-sample (Figure 1A). 96 lysis and MDA (Multiple Displacement Amplification) reactions are performed in independent chambers of an automated and commercially available Fluidigm C1 Integrated Fluidic Circuit (IFC) (Figure 1B, Figure 1\u2014figure supplement 1), which significantly reduces the time and effort required to perform these reactions. The C1 IFC has been used previously for mammalian single-cell RNA-seq and genome analysis experiments (Wu et al., 2014; Pollen et al., 2014; Treutlein et al., 2014; Gawad et al., 2014). The hardware, including the microfluidic circuit, was not altered for the mini-metagenomic experiments, but we did adapt a new reagent kit and designed scripts and protocols for amplifying genomic DNA from microbial cells. After whole-genome amplification, DNA from each sub-sample is harvested into a 96 well plate, and all subsequent wet lab steps are performed on the bench top. Sequencing libraries are prepared with distinct barcodes labeling DNA derived from each sub-sample and sequenced on the Illumina Nextseq platform (Figure 1C). Because of the small volumes used for microfluidic reactions, precious microbial samples and/or low cell concentrations that may not yield enough DNA for shotgun metagenomics can still be analyzed using this process. Another advantage of using a microfluidic platform is the enclosed reaction environment that limits potential contamination often observed with low input MDA reactions in well plates, a problem that, with other approaches, requires sophisticated protocols for contamination prevention and removal (Woyke et al., 2011). In addition, smaller MDA reaction volumes (~300 nL) are associated with lower gain and less amplification bias, which effectively improves coverage uniformity of amplified genomes (de Bourcy et al., 2014) (Materials and methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig1-v1.jpg)\n\n**Figure 1.:** (A) An environmental microbial sample is loaded onto a Fluidigm C1 IFC at the appropriate concentration so that cells are randomly dispersed into 96 microfluidic chambers at 5\u201310 cells per chamber. (B) Lysis and MDA are performed on the microfluidic device to generate 1\u2013100 ng genomic DNA per sub-sample. (C) Nextera libraries are prepared from the amplified DNA off-chip and sequenced using 2 \u00d7 150 bp runs on the Illumina NextSeq platform. (D) Sequencing reads from each sub-sample are first assembled independently, then (E) sub-sample contigs are combined to form longer mini-metagenomic contigs. Contigs longer than 10 kbp are processed in the following steps. (F) Reads from each sub-sample are aligned to mini-metagenomic contigs\u00a0>\u00a010 kbp. (G) An occurrence map is generated, demonstrating the presence pattern of each contig in all sub-samples based on coverage. (H) Finally, contigs are binned into genome clusters based on a pairwise p value generated from co-occurrence information. Steps enclosed in the gray rectangle (A, B) are performed on the Fluidigm C1 IFC. Step C is carried out in 96 well plates. Steps D to H are performed in silico.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cells are distributed randomly into 96 chambers with no size selection. Enzymatic lysis, DNA denaturation, and whole genome amplification via MDA (Multiple Displacement Amplification) occurs on chip. Amplified DNA is harvested for off-chip library preparations, sequencing, and bioinformatic analyses. (B) Image of a Fluidigm C1 IFC. The polydimethylsiloxane (PDMS) chip is located in the center of a plastic cartridge, which contains wells for inputting cells, reagents, and for\u00a0harvesting amplified genomic DNA. The cartridge has the dimensions of a standard cell culture plate. Below the image of the C1 IFC, the PDMS microfluidic chip located in the center of the plastic cartridge is enlarged and partially filled with food coloring to illustrate high level organizations of the microfluidic circuit. Each chip contains 96 independent reaction systems split into a mirrored 48 \u00d7 2 array, extending from the center channel (filled with red food coloring) to the left and right edges of the chip. The cell loading path (dashed black arrow) and reagent entrance channel (solid green arrow) are denoted. (C) Each reaction system contains one capture chamber and five sequential reaction chambers with different sizes. The first 3 reaction chambers of all reactions systems are filled with food coloring in (B). Two adjacent reaction systems (dashed purple lines in (B) are selected to demonstrate their functions. Red bars represent microfluidic valves whose open and closed states are shown through their cross sections. Green arrows represent flow directions of reagents. All reaction chambers are initially empty (i.e. filled with air). (i) During cell loading, capture chambers are connected and cells are randomly distributed across all capture chambers. Following cell loading, all reaction systems are isolated via valves. Sample images of the microfluidic chambers are shown (black scale bars represent 200 \u03bcm). Sequential reactions of (ii) enzymatic lysis to release DNA, (iii) alkaline denaturation and neutralization, and (iii) MDA to amplify DNA are carried out by filling additional empty chambers with reagents. Amplified DNA is flushed into harvest wells for extraction and subsequent off-chip steps.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A mock community is constructed and processed using the microfluidic-based mini-metagenomic pipeline. (A) Reads from each subsample are mapped back to known reference genomes. Over 90% of reads map uniquely to one of the five species. Improperly aligned reads are typically reads of poor sequencing quality or are too short to have good alignment scores. Less than 2% are unmapped. (B) Typically, 15% of raw sequencing reads are trimmed based on quality scores. 5% reads are unmapped or improperly mapped, mostly represented by short library fragments. Less than 1% are chimeric reads.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Compared to the single-cell method, mini-metagenomics showed a superior rarefaction curve. The percent genome coverage recovered from the mini-metagenomic method was higher than using single-cell metagenomic methods for all sequencing depths. (B) Given a particular read coverage percentage, both mini-metagenomic and single-cell methods yielded similar contig coverage ratios.\n\nSequence data is processed through a custom bioinformatics pipeline that takes advantage of information encapsulated in distinct yet related sub-samples (Yu, 2017). Reads from each sub-sample are trimmed and assembled into sub-sample contigs (Figure 1D), creating genome subassemblies. Since cells representing the same genome may appear in multiple sub-samples, overlapping genome subassemblies can be identified. Therefore, combined assembly of sub-sample reads and contigs results in longer mini-metagenomic contigs from which more meaningful biological information can be inferred (Figure 1E). With this mini-metagenomic approach, cells from the same phylogenetic groups are randomly partitioned into different sub-samples, providing a physically defined approach to bin metagenomic contigs. Aligning reads from each sub-sample to mini-metagenomic contigs enables us to determine the co-occurrence pattern of each contig (Figure 1F,G). Based on presence patterns across sub-samples, a p value for each pair of contigs is computed based on Fisher\u2019s exact test (Materials and methods), where a small p is interpreted as an indicator that two contigs belong to cells of the same genome. Finally, co-occurrence based p values are used as a pairwise distance metric for sequence-independent contig\u00a0clustering (Figure 1H; Materials and methods).\n\nWe tested performance of the mini-metagenomic amplification on the Fluidigm C1 IFC using a mixture of five bacterial species with known genomes (E. vietnamensis, S. oneidensis, E. coli, M. ruber, and P. putida) (Table 1; Materials and methods). We first used a dilution of the control sample at\u00a0~10 cells per sub-sample. Then, we further diluted the control sample so that each sub-sample contained 0.5 cells on average, effectively performing microfluidic single-cell MDA with the same downstream steps (Materials and methods). Performing MDA from multiple cells in a 300 nL microfluidic chamber improved genome coverage at similar sequencing depths because smaller MDA reaction volumes tend to reduce amplification gain and bias (de Bourcy et al., 2014; Zong et al., 2012).\n\n**Table 1.**\n Species used to construct mock bacterial communities.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species name</th>\n      <th>GC content (%)</th>\n      <th>Culture source</th>\n      <th>Growth medium</th>\n      <th>Assession numbers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Echinicola vietnamensis KMM6221</td>\n      <td>44.7</td>\n      <td>DSM 17526</td>\n      <td>Marine broth</td>\n      <td>NC_019904.1</td>\n    </tr>\n    <tr>\n      <td>Shewanella oneidensis MR1</td>\n      <td>45.9</td>\n      <td>JGI</td>\n      <td>LB</td>\n      <td>NC_004347.2</td>\n    </tr>\n    <tr>\n      <td>Escherichia coli MG1655</td>\n      <td>50.8</td>\n      <td>ATCC 700926</td>\n      <td>LB</td>\n      <td>NC_000913.3</td>\n    </tr>\n    <tr>\n      <td>Pseudomonas putida F1</td>\n      <td>61.9</td>\n      <td>ATCC 700007</td>\n      <td>Nutrient medium</td>\n      <td>NC_009512.1</td>\n    </tr>\n    <tr>\n      <td>Meiothermus ruber</td>\n      <td>63.4</td>\n      <td>DSM 1279</td>\n      <td>Termus ruber medium</td>\n      <td>NC_013946.1</td>\n    </tr>\n  </tbody>\n</table>\n\nThirty mini-metagenomic and 36 single-cell limiting dilution sub-samples yielded 169 and 194 million paired end reads, respectively. Initial trimming removed 14 \u00b1 1.1% (s.d.) reads; 80 \u00b1 1.5% (s.d.) of the remaining reads mapped uniquely to reference genomes (Figure 1\u2014figure supplement 2A). Unmapped reads made up only 3% of all reads (Figure 1\u2014figure supplement 2B). Improperly mapped reads (3 \u00b1 0.9% s.d.) were mostly short, low quality sequences, and chimeras represented\u00a0<1% of the reads. Mini-metagenomic MDA reactions produced higher median coverage than single-cell MDA reactions at all sequencing depths (Figure 1\u2014figure supplement 3A). The proportion of assembled genome as a function of aligned genome, however, did not differ significantly between mini-metagenomic and single-cell methods (Figure 1\u2014figure supplement 3B). Therefore, data from mock bacterial communities demonstrate that with the mini-metagenomic method, less sequencing cost is required to recover similar genome coverage as compared to single-cell experiments, with the improvement mostly associated with the amplification rather than assembly steps.\n\n### Microfluidic-based mini-metagenomics enables contig binning based on co-occurrence patterns\n\nNext, we performed microfluidic mini-metagenomic sequencing on two hot spring samples from Yellowstone National Park (Figure 2; Materials and methods). Sample #1 was collected from Bijah Spring and sample #2 was collected from Mound Spring (Table 2). 121 and 133 million paired end reads were obtained from the two samples respectively. We removed sub-samples with less than 800,000 paired end reads, yielding 49 and 93 sub-samples respectively. After quality filtering,\u00a0>90% reads from each sub-sample were incorporated into contigs during independent assemblies (Figure 2\u2014figure supplement 1). Re-assembling combined sub-sample reads increased contig length (Figure 2\u2014figure supplement 2A). We obtained 643 and 1474 contigs longer than 10 kbp from the two samples, respectively, and used these contigs for subsequent analyses (Figure 2\u2014figure supplement 2B; Table 3). To compare this performance to shotgun metagenomic assemblies, we obtained 32.5 million and 51.4 million shotgun metagenomic reads from Bijah Spring and Mound Spring samples and down sampled combined mini-metagenomic reads to match shotgun sequencing depths. After assembly (Materials and methods), we observed that for the Bijah Spring sample, where 49 sub-samples were available, the shotgun metagenomic assembly produced more contigs over 10 kbp (Figure 2\u2014figure supplement 3A). However, for the Mound Spring sample, where 93 sub-samples were used, the mini-metagenomic assembly produced more contigs over 10 kbp. The largest contig from the mini-metagenomic assembly was also longer for the Mound Spring sample (Figure 2\u2014figure supplement 3B). Therefore, it is likely that increasing the number of mini-metagenomic sub-samples improves assembly performance compared to shotgun metagenomics. It is also possible that the observed assembly improvement is due to higher complexity of the Mound Spring bacterial community, validating our hypothesis that the mini-metagenomic method benefits the analysis of complex microbial populations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig2-v1.jpg)\n\n**Figure 2.:** Two samples from Bijah Spring in Mammoth Norris Corridor (A, C) and Mound Spring in Lower Geyser Spring Basin (B, D) were collected from Yellowstone National Park and analyzed using the microfluidic-based mini-metagenomic pipeline. (A, B) Heat maps of contig coverage across sub-samples are clustered hierarchically to reveal contigs that appear in similar sets of sub-samples (left). Colors represent logarithm of coverage in terms of number of base pairs in base 2. Pairwise p values generated using Fisher\u2019s exact test based on co-occurrence pattern of contig pairs reveal contig clusters (right). Shading here represents logarithm of p value in base 10 after correcting for multiple comparisons. (C, D) tSNE dimensionality reduction generated from pairwise p values. Each point represents a 10 kbp or longer contig. Colors represent assignment of each contig to a particular phylum based on annotation of genes on the contig. Black X\u2019s represent contigs unable to be assigned to any phylum because too many genes have unknown annotation. Genome bins larger than 0.5 Mbp are numbered and those with substantial numbers of single-copy marker genes for incorporation into Figure 4 are labeled in bold. Dotted circles outline genomes predominantly containing contigs unassigned at the phylum level.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Approximately 90% of the reads were routinely incorporated into contigs 1 kbp or greater in every sub-sample for (A) Bijah and (B) Mound Spring samples.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Sub-sample N50 and largest contig size in comparison with N50 and largest contig size for the combined assembly of all sub-samples reads. Assessment was done on contigs longer than 500 bps. Plot represents Mound Spring statistics. (B) Distribution of contig lengths for samples from Bijah (blue) and Mound (red) Springs. Plot shows only contigs greater than 10 kbp. Histogram of covered contig length from reads belonging to every sub-sample in (C) Bijah Spring and (D) Mound Spring samples. Coverage of 211 bps was required for a contig to be designated as present in a sub-sample.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Mini-metagenomic reads from all subsamples (49 for Bijah Spring and 93 for Mound Spring) were combined and randomly subsampled to the same depth as shotgun metagenomic sequencing depth of 32.5 million and 51.4 million reads, respectively. Mini-metagenomic reads were assembled using SPAdes (Bankevich et al., 2012) while Shotgun metagenomic reads were assembled using Megahit (Li et al., 2015). Contigs over 10 kbps were tabulated using Quast (Gurevich et al., 2013). (A) Number of contigs over 10 kbps showing that shotgun metagenomics generated more contigs over 10 kbps in the Bijah Spring sample but less contigs in Mound Spring sample compared to mini-metagenomic assemblies. (B) Largest contig from shotgun metagenomic assembly was longer than the largest mini-metagenomic contig in the Bijah Spring sample but was shorter in the Mound Spring sample.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Here, brown squares represent sub-samples in which the contig is present and white squares represent those from which the contig is missing. The computed p value using the equation. Where. a = number of sub-samples where X is present and Y is present. b = number of sub-samples where X is absent and Y is present. c = number of sub-samples where X is present and Y is absent. d = number of sub-samples where X is absent and Y is absent. p represents the probability of incorrectly rejecting the null hypothesis that presence patterns of the two contigs X and Y occur randomly. (A) Presence patterns of X1 and Y1 are correlated because we obtain a small p. (B) We cannot reject the null hypothesis here due to the large p obtained.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Cluster\u00a0results applying DBscan to the\u00a0output of tSNE dimensional reduction based on pairwise p value matrix.\u00a0Plots represent (A) Bijah Spring and (B) Mound Spring samples. Cluster numbers correspond to labels in Figure 2C,D. Gray contigs represent those that were not incorporated into a large enough contig cluster.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Gene count as a function of contig length\u00a0for (A) Bijah and (B) Mound Spring samples. Only contigs larger than 10 kbp are shown. The linear relationship is consistent with little non-coding regions in bacterial genomes, increasing the likelihood that these contigs represent biological entities instead of sequencing artifacts.\n\n**Table 2.**\n Information of hot spring samples from Yellowstone National Park.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Sample #1</th>\n      <th>Sample #2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NPS study number</td>\n      <td>YELL_05788</td>\n      <td>YELL_05788</td>\n    </tr>\n    <tr>\n      <td>Sample area</td>\n      <td>Mammoth Norris Corridor</td>\n      <td>Lower Geyser Basin</td>\n    </tr>\n    <tr>\n      <td>Location name</td>\n      <td>Bijah Spring</td>\n      <td>Mound Spring</td>\n    </tr>\n    <tr>\n      <td>Sample type</td>\n      <td>Sediment</td>\n      <td>Sediment</td>\n    </tr>\n    <tr>\n      <td>Collection time</td>\n      <td>September 11, 2009 5:00pm</td>\n      <td>September 14, 2009 2:25pm</td>\n    </tr>\n    <tr>\n      <td>Location</td>\n      <td>44.761133 N, 110.730900 W</td>\n      <td>44.564833 N, 110.859933 W</td>\n    </tr>\n    <tr>\n      <td>Location type</td>\n      <td>Hot spring</td>\n      <td>Hot spring</td>\n    </tr>\n    <tr>\n      <td>Temperature (\u00b0C)</td>\n      <td>65</td>\n      <td>55</td>\n    </tr>\n    <tr>\n      <td>pH</td>\n      <td>7.0</td>\n      <td>9.0</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Yellowstone sample sequencing and assembly statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Sample #1</th>\n      <th>Sample #2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IMG genome ID</td>\n      <td>3300006068</td>\n      <td>3300006065</td>\n    </tr>\n    <tr>\n      <td>Number of molecules sequenced</td>\n      <td>120.5 M</td>\n      <td>133.1 M</td>\n    </tr>\n    <tr>\n      <td>Number of contigs (&gt;10 kbp)</td>\n      <td>643</td>\n      <td>1474</td>\n    </tr>\n    <tr>\n      <td>Number of subsamples analyzed</td>\n      <td>49</td>\n      <td>93</td>\n    </tr>\n  </tbody>\n</table>\n\nAnother advantage of mini-metagenomics lies in the information from sub-samples. In order to bin contigs into genomes, reads from each sub-sample were aligned back to mini-metagenomic contigs and coverage was tabulated (Figure 2A,B, Figure 2\u2014figure supplement 2C,D). Many contig sets share similar coverage patterns across sub-samples, suggesting that they originate from the same genome. Because MDA results in variable coverage profiles, we generated a binary occurrence map by applying a coverage threshold (Materials and methods). Pairwise p values were computed with Fisher\u2019s exact test (Figure 2A,B, Figure 2\u2014figure supplement 4). Finally, dimensionality reduction using pairwise p values as a distance metric generated clusters of contigs belonging to the same genomes (Maaten and Hinton, 2008) (Figure 2\u2014figure supplement 5).\n\nTo verify the validity of presence-based contig clusters, we annotated all predicted open reading frames (ORFs) (Huntemann et al., 2016) (Materials and methods). The relationship between contig length and the number of genes found is linear (Figure 2\u2014figure supplement 6), consistent with small non-coding regions in bacterial genomes. Annotations were found for\u00a0~50% of the genes, and lineage assignment was performed using JGI\u2019s IMG/ER pipeline for metagenome annotation based on gene annotations from the same contig (Huntemann et al., 2016). If protein sequences of most genes on a contig were distantly related to known sequences, the contig was designated as unknown (Figure 2C,D) (Materials and methods). Approximately 70% of all contigs were assigned at the phylum level. Contigs with known assignment and from the same cluster always belonged to the same phylum, demonstrating that the presence-based method can correctly bin metagenomic contigs into genomes (Figure 2C,D). Some unassigned contigs are scattered among genome bins with known phylum level assignments and likely represent novel genes. Genome bins containing predominantly unassigned contigs are indicated by dotted circles (Figure 2C,D) and likely represent deeply branching lineages.\n\nWe selected 29 partial genome bins from both hot spring samples with genome sizes over 0.5 Mbp for downstream analyses (Figure 3A). Assessment of genome bins demonstrated various levels of completeness and\u00a0<5% marker gene duplication (Figure 3B,C). Genome completeness was not necessarily correlated with genome size because completeness was assessed through single-copy marker genes using CheckM (Parks et al., 2015). Using lineage assignment based on gene annotations, we identified eight genome bins with known phylum level assignments from the Bijah Spring sample. Three genomes (Bijah #3, Bijah #5, and Bijah #14) had unknown assignments (Figure 2C). In the Mound Spring sample, more reads and sub-samples resulted in 14 genomes with known phylum level assignments and three unassigned genomes (Mound #3, Mound #4, and Mound #7) were extracted (Figure 2D). A singleton contig 3.3 Mbp in length (#40) was also included as a separate genome. In both environmental samples, the ability to separate distinct clusters of Bacteroidetes contigs represents an advantage of our sequence-independent binning approach, where the presence of bacterial species across microfluidic chambers is determined only by Poisson distribution. Hence, the likelihood that closely related bacterial cells were isolated into the same chambers was small.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig3-v1.jpg)\n\n**Figure 3.:** Genomes of Bijah Spring and Mound Spring samples are sorted by assembled genome size (A). Names represent phylum level assignment based on annotated genes (Figure 2), concatenated marker gene phylogenetic tree (Figure 4), or individual marker gene trees (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2). (B) Genome completeness is assessed through single-copy marker genes; those incorporated into Figure 4 have phyla names colored in blue (for short branching lineages) or red (for deeply branching lineages). (C) Degree of marker gene duplication in assembled genomes assessed using CheckM (Parks et al., 2015).\n\nSince extracted genomes of known phyla often represented novel lineages at lower taxonomic levels, we attempted to identify their phylogenetic placements. Seventeen genomes (shown in bold in Figure 2C,D), including four unassigned genomes, were complete enough for phylogenetic tree construction based on 56 single copy marker genes (Eloe-Fadrosh et al., 2016) (Figure 4; Materials and methods). All marker gene based phylogenetic assignments were consistent with annotation based assignments. We identified 13 genomes with short to medium branch length from known lineages (red), and four deeply branching lineages that may represent potentially novel phyla (red and starred). In addition to bacterial lineages, we also extracted partial archaeal genomes belonging to Euryarchaeota (Mound #16) and Bathyarchaeota (Mound #14) (Figure 4). The remaining two genomes (Bijah #14 and Mound #3) with unassigned phylogeny that were also not complete enough for incorporation into the final phylogenetic tree were examined independently. Phylogenetic trees built from blast results of individual ribosomal protein sequences suggest that both genomes belonged to the phylum Ignavibacteriae (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig4-v1.jpg)\n\n**Figure 4.:** Query genomes which potentially represent novel phyla are marked with a star, and those falling into known phyla are highlighted in yellow. Bootstrap support values are displayed at the nodes as filled circles in the following categories: no support (black;\u00a0<50), weak support (grey; 50\u201370), moderate support (white; 70\u201390), while absence of circles indicates strong support (>90 bootstrap support). For details on taxon sampling and tree inference, see Materials and methods.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Three longest ribosomal protein sequences identified in the genome were used including (A) ribosomal protein S1, (B) ribosomal protein S4, (C) ribosomal protein S16.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Three longest ribosomal protein sequences identified in the genome were used including (A) ribosomal protein L1, (B) ribosomal protein L10, (C) ribosomal protein L15.\n\n### Functional analyses reveal dominant energy metabolism in Yellowstone hot spring samples\n\nTo understand more about the metabolism of these organisms, we performed BLAST of all ORFs contained in each genome against the KEGG database and mapped results onto KEGG modules (Materials and methods). Figure 5 illustrates the proportion of identified KEGG module genes from each genome belonging to pathways associated with nitrogen, methane, and sulfur metabolism. At the community level, the Mound Spring population displayed higher potential for methanogenesis than the Bijah Spring population, and methanogenesis can be carried out by members of the Euryarchaeota (Mound # 16) lineages involving mcr and hdr complex (Ferry, 2011). Formaldehyde assimilation, on the other hand, could be carried out in both communities. In nitrogen metabolism, we identified five genomes including Ignavibacteriae (Mound #40), Bacteroidetes (Mound #2), Nitrospirae (Mound #19), Thermodesulfobacteria (Mound #21), and Ignavibacteriae (Bijah #2) carrying nar, nrf, and nir genes, possibly participating in the conversion of nitrate to ammonia (Sodergren and DeMoss, 1988; Einsle et al., 1999; Cantera and Stein, 2007). Interestingly, the archaeal genome belonging to Bathyarchaeota (Mound #14) carries nifD and nifH, capable of converting nitrogen directly to ammonia (Fani et al., 2000) (Figure 5B). Although we did not identify denitrification genes in the Mound Spring community, a genome extracted from Bijah Spring belonging to Spirochaetes carried nirS, norBC, and nosZ genes, capable of reducing nitrite to nitrogen (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig5-v1.jpg)\n\n**Figure 5.:** Abundant genes involved in energy metabolism of (A) Bijah Spring and (B) Mound Spring genomes. Each row represents description of a pathway based on KEGG energy metabolism modules. Each column represents one genome bin. Shading of each square represents the ratio of genes in each KEGG module that are also present in a particular genome bin. Modules are labeled as nitrogen metabolism, methane metabolism, or sulfur metabolism.\n\nBacterial clades associated with thermophilic environments in the Yellowstone National Park are known for their sulfur reduction (converting sulfate to sulfide) activities (Henry et al., 1994; Inskeep et al., 2013). Two well characterized pathways are assimilatory and dissimilatory processes, where sulfur is either incorporated into cellular materials or serves only as the terminal electron acceptor (PeckPeck, 1961). We identified genes associated with the assimilatory sulfate reduction pathway (cysNC, sat, cysC, cysH, and cysI) from three Mound Spring genomes including Ignavibacteriae (Mound #40), Bacteroidetes (Mound #2), Fervidibacteria (Mound #8) and one Bijah Spring genome \u2013 Spirochaetes (Bijah #7). In the Mound Spring population, we also identified key genes (dsrAB) responsible for dissimilatory sulfate reduction from Nitrospirae (Mound #19) and Termodesulfobacteria (Mound #21) genomes (Figure 5). These insights based on genes with known annotations demonstrate the ability of mini-metagenomics to reveal different metabolic pathways associated with individual genomes within and across environmental samples.\n\n### Microfluidic-based mini-metagenomics facilitates assessment of genome abundance and population diversity with single-cell resolution\n\nUnlike typical shotgun metagenomic methods that use coverage depth as a proxy for genome abundance, mini-metagenomics uses occurrence of genomes across sub-samples to estimate abundance through counting cells. Thresholding coverage depth into an occurrence profile can be seen as digitizing an otherwise noisy analog signal, potentially reducing the effect of amplification bias, copy number variation, and genome size across genomes. Because cells were well-mixed before loading into the Fluidigm C1 IFC and that the microfluidic structures inside each chamber were much larger than the size of a microbial cell, cells were distributed randomly into microfluidic chambers, with occurrence profiles satisfying a Poisson distribution. We quantified the number of detected cells of all genomes in both samples (Figure 6A,C,D; Materials and methods). Assembled genomes from the Bijah sample covered one order of magnitude in abundance. Genomes #10 (Deferribacteres) and #8 (Chlorobi) were most abundant, with 49 and 29 cells represented. On the lower end, Bijah #5 (S2R-29) was only represented in four sub-samples, most likely representing only four cells (Figure 6C). In the Mound Spring sample, more sub-samples were sequenced, allowing the quantification of\u00a0a\u00a0larger abundance range\u00a0across two orders of magnitude (Figure 6D). Mound #40 (Ignavibacteria) was the most abundant lineage, appearing in all but seven sub-samples. The abundance of this genome was likely the reason for the successful assembly of its entire genome (Figure 6B). Mound #7 (Chlorobi) and deeply branching Mound #15 were also abundant, allowing the capture of 36 and 65 cells respectively. For rare organisms, we detected Mound #11 (Bacteroidetes) and Mound #14 (Bathyarchaeota), which were present at\u00a0<1%. Comparing with relative abundance computed from shotgun coverage, we observed general agreement in relative abundance profiles, although a couple of genomes in Bijah Springs displayed large differences (Figure 6\u2014figure supplement 1A). Relative abundances were higher for less abundant genomes when the mini-metagenomic method was use, demonstrating its sensitivity to extracting rare phylogenies (Figure 6\u2014figure supplement 1A). In total, examining genomes larger than 0.5 Mbp, we captured 192 and 509 cells from Bijah and Mound Springs, respectively, corresponding to four to six cells per sub-sample. Even though this number was smaller than our intended ten cells per chamber, the difference was likely due to lysis inefficiency or smaller genomes excluded from our analysis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig6-v1.jpg)\n\n**Figure 6.:** (A) Abundance is derived from the occurrence pattern of contig clusters, where Poisson distribution is used to infer the\u00a0number of cells processed. (B) SNPs are tabulated and normalized by the\u00a0total size of sequenced genome. Most SNPs are in coding regions of the genome, of which the majority are synonymous. (C, D) Map of genome occurrence patterns across all sub-samples for (C) Bijah and (D) Mound Springs samples. White demonstrates the presence of at least one cell of a particular genome in a sub-sample. The total number of cells can be inferred using Poisson statistics.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Comparison between genome abundance computed using mini-metagenomics and shotgun metagenomics. Shotgun metagenomic abundance was computed by counting the number of shotgun reads mapped to genomes generated using mini-metagenomics. Mapping was accomplished using bowtie2 with options --very-sensitive -I 100 -X 2000. Abundance profiles were normalized by either the total number of cells or the total number of reads, yielding a measure of relative abundance. (B) Taxonomic specificity of selected genomes. Six genomes with more than 50% of the contigs having phylogenetic lineage assignments at the species level were selected from both springs (black). The plot displays the number of contigs in the genome (dark blue), the number of contigs with genus level assignments (green), and the number of contigs assigned to the species shown on the left of the plot (yellow). Almost all contigs in a genome were assigned to the same species. Two genomes (red) had high levels of specificity at genus level assignments but were predominantly unassigned at the species level: Methanobacterium and Thermodesulfobacterium. These genomes represented novel species in respective genera.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26580/elife-26580-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Observed SNP rates as a function of (A, C) genome size and (B, D) genome abundance for all genomes in (A, B) Bijah and (C, D) Mound Springs samples.\u00a0SNP rate was quantified by summing all observed SNPs for a particular genome in all cells and normalizing to the total length of DNA sequenced from those cells. There does not seem to be any clear correlations between SNP rate and genome size or abundance.\n\nIn addition to quantifying abundance through counting single cells, genetic variation among individual cells with the same genome can be assessed as well. An examination of species level lineage assignment to contigs revealed that genomes had consistent species level assignments when such assignments were present (Figure 6\u2014figure supplement 1B). Therefore, even though genomes were generated from a collection of cells across sub-samples, these cells represented genetic lineages at the species levels. We quantified observed single nucleotide polymorphisms (SNPs) in each assembled genome normalized to the total assembled genome size (Figure 6B; Materials and methods). We found a wide distribution in SNP abundance among phylogenies. All Ignavibacteriae and three Bacteroidetes genomes have low SNP rates (<1%). In the Bijah Spring sample, members of Spirochaetes, Microgenomates, and S2R-29 contain the most SNPs at 0.3\u20130.4% of the assembled genome. In the Mound Spring sample, members of Thermodesulfobacteria have the most SNPs (0.6%). Several other groups belonging to Bacteroidetes, Fervidibacteria, Euryarchaeota, and deeply branching Mound #4 all have a 0.3\u20130.4% SNP rate. It is not the case that larger, more complete, or more abundant genomes contain more SNPs in a population (Figure 6\u2014figure supplement 2), indicating that the observed SNP rate is a biological property of the particular genome. The ratio of nonsynonymous to synonymous SNP rates (dN/dS) is typically a measure of the strength of environmental selection (Holt et al., 2008), with one indicating no selection and zero indicating strong selection. Among diverse genomes that allow more accurate assessment of SNP ratios, we found dN/dS ranging from 0.4 to 0.9 in the hot spring genomes, illustrating that different phylogenies in the same hot spring environment are subjected to different weak to moderate negative selection pressures. Taken together, the microfluidic-base mini-metagenomic method creates the statistical power from multiple sub-samples to more effectively bin contigs for functional analysis, quantify abundance, and assess genomic variation.\n\n## Discussion\n\nPrevious work has implemented similar concepts of sequencing multiple bacterial cells together in order to increase throughput. However, the authors treated each sub-sample as an independent entity throughout their bioinformatic analysis (McLean et al., 2013). The novelty of our analysis derives from treating information from sub-samples as different but overlapping sections of a more complex metagenome. Such an approach echoes recent work that uses coverage from many shotgun metagenomic samples containing a similar set of microbial phylogenies but with different abundances in order to aid bioinformatic genome binning (Alneberg et al., 2014; Nielsen et al., 2014). Our approach differs with these methods in several aspects. First, our approach generates sub-samples from one, possibly low volume, microbial sample, eliminating the need to collect multiple spatial or temporal metagenomic samples. In addition, because of low complexity, each sub-sample does not need to be sequenced as deeply as using shotgun metagenomic methods, significantly saving sequencing cost. Although each sub-sample queries only a small subset of the true diversity, summation of all sub-samples approximates the original environment. Because of MDA bias, we do not use coverage depth directly for contig binning. Instead, as noted previously, thresholding coverage depth into an occurrence profile digitizes a possibly noisy analog signal. Such digitization reduces sensitivity to amplification and other bias associated with analog coverage signals.\n\nMicrofluidic-based mini-metagenomics provides researchers with two independent experimental design parameters in order to optimize the protocol for microbial samples of different complexities: the average number of cells per microfluidic chamber and the number of chambers to sequence. The statistical power of the presence based binning technique benefits from both the presence and absence of genomes across sub-samples. Therefore, for less complex samples, reducing the number of cells per microfluidic chamber ensures that cells of the same lineage do not appear in all sub-samples. For more complex samples, the number of cells per chamber can be increased to capture higher diversity. One can even carry out multiple runs with different loading densities to tackle both abundant and rare species. Mini-metagenomics uses a commercially available instrument, thereby facilitating its adoption by groups without expertise in microfluidic technologies. More importantly, because microfluidic-based mini-metagenomics provides orthogonal information to tetranucleotide or coverage information derived from traditional metagenomic sequencing, combining these approaches represents an exciting future direction for deriving a more comprehensive picture of the microbial world.\n\n## Materials and methods\n\n### Mock sample construction\n\nThe artificial bacterial community used to test the mini-metagenomic approach was constructed using five model species with different GC content provided by the Joint Genome Institute (Table 1). Each species was cultured in test tubes independently in their respective media until saturation (Table 1). Then, each culture was re-suspended in 1% NaCl. A rough cell count was performed on a hemocytometer under an inverted bright field microscope (Leica DMI 6000). Approximately equal number of cells were combined to create an artificial mixed population. Ultrapure glycerol (Invitrogen) was immediately added to the mixture at 30% and stored at \u221280\u00b0C. At the same time, cultures were serially diluted and plated on 2% agar pad containing respective media for each species. After culturing, colonies were counted to get a more accurate quantification of species abundance in the mixed mock community.\n\n### Environmental sample collection and storage\n\nThe environmental samples used in this study were collected from two separate hot springs in Yellowstone National Park under permit number YELL-2009-SCI-5788 (Table 2). Sample #1 was collected from sediments of the Bijah Spring in the Mammoth Norris Corridor area. Sample #2 was collected from sediment near Mound Spring in the Lower Geyser Basin region. Samples were placed in 2 mL tubes without any filtering and soaked in 50% ethanol onsite. After mixing with ethanol, samples were kept frozen until returning from Yellowstone to Stanford, at which time tubes containing the\u00a0samples were transferred to \u221280\u00b0C for long term storage.\n\n### Sample preparation and dilution for mini-metagenomic pipeline\n\nEach mock sample was thawed on ice and centrifuged at 5000 x g for 10 min at room temperature. Supernatant was removed and cells were re-suspended in 1% NaCl. Each sample from Yellowstone was also thawed on ice. The tube was vortexed briefly to suspend cells but not large particles and debris. 1 mL of sample from the top of the tube was removed, placed in a new 1.5 mL tube, and spun down at 5000 x g for 10 min to pellet the cells. Supernatant was removed and cells were re-suspended in 1% NaCl. After resuspension, cell concentration was quantified using a hemocytometer under bright field and phase microscopy (Leica DMI 6000). Each sample was then diluted in 1% NaCl or PBS to a final concentration of\u00a0~2\u00d7106 cell/mL, corresponding to\u00a0~10 cells per chamber on the Fluidigm C1 microfluidic IFC (Integrated Fluidic Circuit).\n\n### Microfluidic genomic DNA amplification on Fluidigm C1 auto prep system\n\nBecause of the small amount of DNA associated with 5\u201310 cells, DNA contamination was a concern for MDA reactions. To reduce DNA contamination, we treated the C1 microfluidic chip, all tubes, and buffers under UV (Strategene) irradiation for 30 min following suggestions of Woyke et al (Woyke et al., 2011). Reagents containing enzymes, DNA oligonucleotides, or dNTPs were not treated. After UV treatment, the C1 IFC was primed following standard protocol (https://www.fluidigm.com/binaries/content/documents/fluidigm/resources/c1-dna-seq-pr-100-7135/c1-dna-seq-pr-100-7135/fluidigm%3Afile). Priming the C1 IFC involved filling all microfluidic control channels with C1 Harvest Reagent, all capture sites with C1 Blocking Reagent, and the input multiplexer with C1 Preloading Reagent. These reagents were available in all C1 Single-Cell Reagent Kits. The diluted environmental sample was loaded onto the chip using a modified version of the loading protocol where washing was not performed, as the capture sites were too large for microbial cells. Hence, they acted essentially as chambers into which cells were randomly dispersed (Figure 1\u2014figure supplement 1B). Following cell loading, whole genome amplification via MDA was performed on-chip in 96 independent reactions. A lysozyme (Epicenter) digestion step was added before alkaline denaturation of DNA. After alkaline denaturation of DNA, neutralization and MDA were performed (Qiagen REPLI-g single cell kit) (Figure 1\u2014figure supplement 1C). Concentrations of all reagents were adjusted to match the 384 well plate-based protocol developed by the single-cell group at DOE\u2019s Joint Genome Institute but adapted for volumes of the Fluidigm C1 IFC (Rodrigue et al., 2009). Lysozyme digest was performed at 37\u00b0C for 30 min, alkaline denaturation for 10 min at 65\u00b0C, and MDA for 2 hr and 45 min at 30\u00b0C. The detailed custom C1 scripts for cell loading, DNA amplification, and associated protocols including reagent compositions are available through Fluidigm\u2019s ScriptHub at the following link https://www.fluidigm.com/c1openapp/scripthub/script/2017-02/mini-metagenomics-qiagen-repli-1487066131753-8.\n\n### DNA quantification, library preparation and sequencing\n\nAmplified genomic DNA from all sub-samples was harvested into a 96 well plate. The concentration of each sub-sample was quantified in independent wells using the 96 capillary version of the Fragment Analyzer from Advanced Analytical Technologies Inc. (AATI). Because of the size of recovered DNA, we used the high sensitivity large fragment analysis kit (AATI) and followed its standard protocol. The instrument effectively runs 96 independent gel electrophoresis assays, producing an electropherogram for each sub-sample. Using a DNA ladder with known concentrations as reference, the instrument\u2019s software quantifies DNA concentration for each sub-sample by performing smear analysis between user specified ranges. For MDA amplified microbial genomic DNA harvested from Fluidigm\u2019s C1 IFC, one large smear was often present between 1.5 kbp and 30 kbp. Following quantification, DNA from each sub-sample was diluted to 0.1\u20130.3 ng/\u03bcL, the input range of the Nextera XT library prep pipeline. Nextera XT V2 libraries (Illumina) were made with dual sequencing indices, pooled, and purified with 0.75 volumes of AMpure beads (Agencourt). Illumina Nextseq (Illumina) 2 \u00d7 150 bp sequencing runs were performed on each library pool.\n\n### Contig construction\n\nA custom bioinformatic pipeline was used to generate combined biosample contigs (Yu, 2017). Sequencing reads were filtered with Trimmomatic V0.30 in paired end mode with options \u2018ILLUMINACLIP:adapters.fa:3:30:10:3:TRUE SLIDINGWINDOW:10:25 MAXINFO:120:0.3 LEADING:30 TRAILING:30 MINLEN:30\u2019 to remove possible occurrences of Nextera indices and low quality bases (Bolger et al., 2014). Filtered reads from each sub-sample were clustered using DNACLUST, with k\u00a0=\u00a05 and a similarity threshold of 0.98, in order to remove reads from highly covered regions (Ghodsi et al., 2011). Then, assembly was performed using SPAdes V3.5.0 with the sc and careful flags asserted (Bankevich et al., 2012). From all sub-sample assembly output, corrected reads were extracted and combined. The combined corrected reads from all sub-samples were assembled again via SPAdes V3.5.0 with kmer values of 33,55,77,99. Finally contigs longer than 10 kbp were retained for downstream analyses.\n\n### Gene annotation\n\nContigs were uploaded to JGI\u2019s Integrated Microbial Genomes\u2019s Expert Review online database (IMG/ER). Annotated was performed via IMG/ER (Huntemann et al., 2016). Briefly, structural annotations were performed to identify CRISPRs (pilercr), tRNA (tRNAscan), and rRNA (hmmsearch). Protein coding genes were identified with a set of four ab initio gene prediction tools: GeneMark, Prodigal, MetaGeneAnnotator, and FragGeneScan. Finally, functional annotation was achieved by associating protein coding genes with COGs, Pfams, KO terms, EC numbers. Phylogenetic lineage was assigned to each contig based on gene assignment.\n\n### Contig co-occurrence distance score and binning\n\nCorrected reads from each sub-sample were aligned back to assembled contigs over 10 kbp using Bowtie2 V2.2.6 with options \u2018--very-sensitive-local -I 0 -X 1000\u2019 (Langmead and Salzberg, 2012). Total coverage in terms of number of base pairs covered for every contig from every sub-sample was tabulated and subjected to a log transform in base two (Figure 2A,B). A threshold value of 211 was used to determine if a contig had significant presence in a sub-sample. The sensitivity of the contig binning results to this threshold was low, with threshold values of 29\u2013213 producing similar results. After thresholding contig coverage, the occurrence pattern of all contigs across sub-samples was obtained. Based on co-occurrence patterns, a confidence score for each pair of contigs was computed based on Fisher\u2019s exact test (Figure 2A,B). This score represented the probability of incorrectly rejecting the null hypothesis that two contigs displayed a particular co-occurrence pattern by chance and can be interpreted as the likelihood of two contigs belonging to cells of the same genome, with lower values increasing this likelihood. Below, we demonstrate an example of how to calculate a similarity p value based on co-occurrence pattern of two contigs across a set of sub-samples in Figure 2\u2014figure supplement 4. For every pair of contigs X and Y, the null hypothesis states that their co-occurrence patterns are not correlated with each other. Then, we tabulate four values A, B, C, D as shown below.\n\nA = number of sub-samples where X is present and Y is present.\n\nB = number of sub-samples where X is absent and Y is present.\n\nC = number of sub-samples where X is present and Y is absent.\n\nD = number of sub-samples where X is absent and Y is absent.\n\nTo test the null hypothesis, we compute a p value according to the following equation\n\n$$\np=\\frac{(a+ba)(c+dc)}{(a+b+c+da+c)}=\\frac{(a+b)!\u00a0(c+d)!\u00a0(a+c)!\u00a0(b+d)!}{a!\u00a0b!\u00a0c!\u00a0d!\u00a0(a+b+c+d)!}\n$$\n\nFrom the simplified example, we see that X1 and Y1 are both present in eight sub-samples, hence A\u00a0=\u00a08. In addition, B\u00a0=\u00a01, C\u00a0=\u00a02, D\u00a0=\u00a06, yielding p=0.013 (Figure 2\u2014figure supplement 4A). Since p is small, we reject the null hypothesis and conclude that X1 and Y1 are correlated. On the other hand, co-occurrence patterns of X2 and Y2 produces p=0.363, which is not small enough to reject the null hypothesis (Figure 2\u2014figure supplement 4B).\n\nTabulating all pairwise p values, we created a similarity matrix containing values between 0 and 1, which also acted as a pairwise distance metric. Using this pairwise distance metric, we performed dimensionality reduction of all contigs using tSNE (Maaten and Hinton, 2008) (Figure 2C,D, Figure 2\u2014figure supplement 4).\n\n### Phylogenetic lineage construction\n\nA set of 56 universal single copy marker proteins (Supplementary file 1) was used to place novel genomes into a phylogenetic tree together with a representative set of bacterial and archaeal reference genomes. Marker proteins were identified with hmmsearch (version 3.1b2, hmmer.org) using a specific hmm for each of the markers. For every protein, alignments were built with MAFFT (Katoh and Standley, 2013) (v7.294b) using the local pair option (mafft-linsi) and subsequently trimmed with trimAl 1.4 (Capella-Guti\u00e9rrez et al., 2009), removing sites for which more than 90 percent of taxa contained a gap. Query genomes lacking a substantial proportion of marker proteins (less than 28) or which had additional copies of more than one single-copy marker were removed from the data set. In total 17 of 29 Yellowstone hot spring genomes contained sufficient number of marker genes to be included in the tree. Single protein alignments were then concatenated resulting in an alignment of 51,239 sites. Maximum likelihood phylogenies were inferred with ExaML (Kozlov et al., 2015) (version 3.0) using the GAMMA model for rate heterogeneity among sites and the LG substitution matrix (Le and Gascuel, 2008) and 300 non-parametric bootstraps. The resulting phylogenetic tree was visualized in ete3 (Huerta-Cepas et al., 2016).\n\n### Comparison to shotgun metagenomics\n\nBulk genomic DNA were extracted from Yellowstone National Park hot spring samples using Qiagen\u2019s blood and tissue kit using the protocol for DNA extraction from gram positive bacteria. Nextera V2 libraries were constructed and sequenced on Illumina\u2019s Nextseq platform. 32.5 million and 51.4 million reads were obtained from Bijah Spring and Mound Spring samples and trimmed using the same parameters as the mini-metagenomic sequencing reads. Finally, assembly is performed using Megahit (Li et al., 2015), with default options and kmer values of 21, 31, 41, 51, 61, 71. At the same time, we combined all mini-metagenomic reads from sub-samples and down sampled to the same depth randomly as the shotgun metagenomic sequencing experiments and performed re-assembly using SPAdes.\n\n### Analysis of genes involved in energy metabolism\n\nFrom each genomic bin, ORFs assigned KO terms during the annotation process were mapped to all KEGG module involved in energy metabolism. For each KEGG module, we counted the number of KO terms extracted from a particular genome as a ratio of all KO terms present in the module. We did not normalize for genome size or completeness because doing so would artificially increase the importance of genes identified from smaller genomes.\n\n### Assessment of genome completeness and abundance\n\nGenome completeness and marker gene duplication (incorporation of contigs that may not belong to the genome) were quantified via CheckM (Parks et al., 2015). Genome abundance was quantified using contig presence patterns. If more than 50% of the contigs from a particular genome bin were supported by at least one read in a sub-sample, we concluded that there was at least 1 cell in that sub-sample. Otherwise, zero cells were present in that sub-sample. Because a well-mixed cell suspension was originally loaded into the C1 IFC, cells were distributed into these microfluidic chambers (which we call sub-samples) randomly and independently. Hence, the problem of quantifying genome abundance can be simplified into the problem of inferring the total number of randomly distributed cells in all n sub-samples given that k sub-samples contained zero cells. This problem calls for the use of the Poisson distribution. Based on Poisson distribution, assuming we know X, the total number of cells with a particular genome contained in all n sub-samples, the expected number of sub-samples k without cells of that genome is denoted by\n\n$$\n\\frac{k}{n}=e^{\u2212\\frac{X}{n}}\n$$\n\nThen for each genome, the total number of cells X contained in all n sub-samples can be computed with the following expression.\n\n$$\nX=\u2212n\\timesln\\frac{k}{n}\n$$\n\nIn our experiment, for each genome, the number of sub-samples containing zero cells representing that particular genome was tabulated and the most probable number of cells sampled in the microfluidic device was computed via the equation below.\n\n$$\nCell\u00a0Number=\u2212\u00a0(Number\u00a0of\u00a0subsamples)\\times\u00a0ln(\\frac{Number\u00a0of\u00a0subsamples\u00a0with\u00a0zero\u00a0cells}{Number\u00a0of\u00a0subsamples})\n$$\n\n### Assessment of genome variation\n\nSNPs (Single Nucleotide Polymorphism) were tabulated for all genomes from cells observed across all sub-samples by first aligning all reads to contigs in genome bins using samtools version 1.3 mpileup functionality with the \u2013g flag (Li, 2011). Then, bcftools was used to call SNPs. We used several criteria to ensure confidence of observed SNPs. First, a SNP must have a quality score larger than 180 based on reads from all sub-samples. The results were not affected if we increase the threshold to higher numbers. Second, we required five reads to support each SNP location from a sub-sample in order to determine if the genome recovered from that sub-sample contains the dominant or alternate allele. Finally, we required that the alternate allele appear as the only allele in at least one sub-sample. If a sub-sample was determined to be heterozygous for a particular allele with high confidence, it was counted as one dominant and one alternate allele because it likely resulted from multiple cells from the same microfluidic chamber. Based on ORF predications, we then classified each SNP as noncoding, synonymous, or nonsynonymous.\n\n### Data availability\n\nFluidigm C1 IFC script and associated protocols for running the IFC and library preparation are available at https://www.fluidigm.com/c1openapp/scripthub/script/2017-02/mini-metagenomics-qiagen-repli-1487066131753-8\n\nRaw sequencing reads are available from NCBI SRA Run Selector under BioProject PRJNA378813.\n\nAssembled and annotated contigs are available at https://img.jgi.doe.gov/mer/ under IMG Genome IDs 3300006068 and 3300006065. Annotations for the genome Mound #40 (Ignavibacteria) can also be found under Genome ID 2630969008.\n\nAnalysis scripts for contig assembly are available on Github at the following link https://github.com/brianyu2010/Mini-Metagenomic_Analyses\u00a0(Yu, 2017).\u00a0A copy is archived at https://github.com/elifesciences-publications/Mini-Metagenomic_Analyses.\n",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "90a3f636-ea99-4c6a-89d7-220c6da9f9d3",
+      "submission_id": "648f4de1-9dbf-44b4-8c90-10e6d4b88ad2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cameron Thrash, Louisiana State University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26580.026](https://doi.org/10.7554/eLife.26580.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Microfluidic-based mini-metagenomics enables discovery of novel microbial lineages from complex environmental samples\" for consideration by eLife. Your article has been favorably evaluated by Wendy Garrett as the Senior Editor and Cameron Thrash (Reviewer #1) as the Reviewing Editor. The following individuals involved in review of your submission have also agreed to reveal their identity: Brett Baker (Reviewer #2) and Steven Giovannoni (Reviewer #3).\n\nIn general the reviewers were favorable towards publication of this work, but the reviewers have a number of concerns that they would like to see addressed first.\n\nReviewer #1:\n\nThe authors present a novel use of microfluidic cell-sorting of microbial communities to facilitate a \"mini-metagenomics\" approach. I particularly like the combined use of statistics with physical separation in subsamples to refine the binning procedure. While I think this technique was vetted well and has great potential for future application, there are a number of conceptual and technical details I'd like to see fleshed out prior to publication.\n\nSubsection \u201cMicrofluidic-based mini-metagenomics enables contig binning based on co-occurrence patterns\u201d, third paragraph: Please detail the criteria for taxonomic lineage assignment. How many genes per contig were required to have the same taxonomic assignment for that contig to be declared part of that group? At what level of taxonomic assignment did that hold (phylum, class, etc.)? What percent ID was required to \"trust\" the taxonomic assignment for a given gene?\n\nSubsection \u201cMicrofluidic-based mini-metagenomics enables contig binning based on co-occurrence patterns\u201d, last paragraph: Did the single copy marker gene tree agree with the CheckM tree? Did the CheckM tree help with taxonomic assignment for those organisms without sufficient gene-based information and/or those without enough genes to be included in the single copy marker tree?\n\nSubsection \u201cFunctional analyses reveal dominant energy metabolism in Yellowstone hot spring samples\u201d, first paragraph: How novel are these discoveries for metabolism of the group, and was any additional investigation done? I know nrfA genes need vetting (Welsh et al. 2014 AEM), so these kinds of claims could use more evidence than just blast-ing to KEGG. Why is it interesting that the Euryarchaeota genome has nitrogen fixation genes? Does the genome belong to a subclade where this is unusual?\n\nSubsection \u201cMicrofluidic-based mini-metagenomics facilitates assessment of genome abundance and population diversity with single-cell resolution\u201d, first paragraph: How valid is this assumption considering the various shapes and sizes of cells that might be encountered? Please consider and address. Has there been any investigation into whether cell size/morphology biases the microfluidic process?\n\nSubsection \u201cMicrofluidic-based mini-metagenomics facilitates assessment of genome abundance and population diversity with single-cell resolution\u201d, first paragraph: Please describe how well the abundance of the organisms in the mini-metagenomics process reflects the abundance of these organisms in the original samples. I believe this should be possible through comparison with the shotgun metagenomics data. This will provide an improved sense of where in the community rank-abundance curve one may hope to explore with the method. It may also reveal if there are biases related to cells from a specific group, which would help answer my preceding questions regarding cell size and morphology in the microfluidics setting.\n\nSubsection \u201cMicrofluidic-based mini-metagenomics facilitates assessment of genome abundance and population diversity with single-cell resolution\u201d, last paragraph: How confident are the authors in using SNP determination and dN/dS ratios on genomes that are only binned at the phylum level? In other words, at what level of taxonomic specificity do you believe each genome represents? Species? Strain? Because it seems to me that if the genome represents an amalgamation of data from multiple genetic lineages within a phylum, SNP and dN/dS information could be misleading.\n\nReviewer #2:\n\nThe manuscript is well-written. The methods are sound and the results are justified. I think that this approach might be useful in soils, but given that only 29 genomes were recovered from an YNP hot spring, I personally am not convinced there is a cost advantage or an improvement in genomic reconstruction (based on completeness).\n\nHowever, I don't see any details about how much sequencing was actually done? This needs to be included, or perhaps I missed it? I would suggest doing an average cost/genome and perhaps do a comparison with output from whole-community assembly and binning. I understand the latter will vary considerably depending on the habitat, so perhaps use a complex community where genomes have been reconstructed like Rifle groundwater (Wrighton et al. 2014)? This might make it more convincing that there is a real advantage to this approach.\n\nAs an example, we have been able to obtain 57 genomes (>50%) complete from YNP springs from a modest amount of sequencing, 1 lane of HiSeq and 1 lane of MiSeq. Thus, I'm not particularly impressed with the genome completeness of the bins, as most of them are <50% complete.\n\nOverall, as a test of the approach (testing on mixed cultures and natural communities) this paper does well.\n\nDiscussion, first paragraph: \u2013 Sure you reduce the cost of sequencing, but you are not getting as much genome by subsampling the community. So this statement is misleading.\n\nReviewer #3:\n\nThis paper describes a useful re-purposing of a commercially available single-cell genomics technology to produce metagenomic data that is roughly equivalent to a library of single-cell assemblies in quality, despite the limitations of the microfluidics preventing the actual sorting of single-cells. Those interested in the use of single-cell genomics (SCG) for the exploration of microbial communities, may consider this to be a viable and possibly much more practical approach than some SCG methods. In this regard, it is a very useful methods paper that addresses a technical deficit in the ability of microbial ecologists with limited funds, space, or personnel who may wish to perform SCG (or SCG-like) analyses in conjunction with metagenomics.\n",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9855e5ec-5fa5-45db-906d-b34d75ae26b9",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C1",
+      "claim": "Metagenomics and single-cell genomics have enabled genome discovery from unknown branches of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagenomics and single-cell genomics have enabled genome discovery from unknown branches of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the capabilities of metagenomics and single-cell genomics, presented as established fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "35a89ce1-0562-4483-94c0-763f4bd42644",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C2",
+      "claim": "Extracting novel genomes from complex mixtures of metagenomic data can be challenging and represents an ill-posed problem which is generally approached with ad hoc methods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, extracting novel genomes from complex mixtures of metagenomic data can still be challenging and represents an ill-posed problem which is generally approached with ad hoc methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes current limitations in the field, presented as established knowledge about metagenomic analysis challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "e01487a9-8349-4eb3-a405-c3c5d65c9b99",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C3",
+      "claim": "The microfluidic-based mini-metagenomic method offers a statistically rigorous approach to extract novel microbial genomes while preserving single-cell resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present a microfluidic-based mini-metagenomic method which offers a statistically rigorous approach to extract novel microbial genomes while preserving single-cell resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim about the method presented in the manuscript, supported by the experimental data and analyses described throughout the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "deca8284-2c13-4a32-9d07-ddf2e915c3b5",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C4",
+      "claim": "The mini-metagenomic approach was used to analyze two hot spring samples from Yellowstone National Park and extracted 29 new genomes, including three deeply branching lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We used this approach to analyze two hot spring samples from Yellowstone National Park and extracted 29 new genomes, including three deeply branching lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental data presented in the manuscript, including genome assembly and phylogenetic analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "ac36fb27-9d59-49b8-b29f-750a83ceb92d",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C5",
+      "claim": "The single-cell resolution enabled accurate quantification of genome function and abundance, down to 1% in relative abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The single-cell resolution enabled accurate quantification of genome function and abundance, down to 1% in relative abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the abundance quantification data presented in Figure 6 and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "574bbbdf-34ff-4e5f-9e47-aba97579d0ee",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C6",
+      "claim": "Analyses of genome level SNP distributions revealed low to moderate environmental selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses of genome level SNP distributions also revealed low to moderate environmental selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SNP analysis data and dN/dS ratio calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "9c51cfdd-07d1-4443-ac64-d479aa147afc",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C7",
+      "claim": "The total number of sequenced microbial genomes is more than 50,000 as of December 1, 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed many previously uncharacterized genomes (Brown et al., 2015; Eloe-Fadrosh et al., 2016; Kashtan et al., 2014; Rinke et al., 2013), increasing the total number of sequenced microbial genomes to more than 50,000 (Joint Genome Institute's Integrated Microbial Genomes database, accessed December 1, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Joint Genome Institute's Integrated Microbial Genomes database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "c70ba8ba-303d-4d28-b50e-aa645a2e1b38",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C8",
+      "claim": "The majority of environmental microbial diversity remains uncharacterized due to limitations in current techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of environmental microbial diversity remains uncharacterized due to limitations in current techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the state of microbial diversity characterization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "b4d10c57-6cfc-4e9b-be80-7ac50b9fef67",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C9",
+      "claim": "Conventional shotgun metagenomic sequencing is effective only if the complexity of the sample is not too great.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional shotgun metagenomic sequencing offers the ability to assemble genomes from a single heterogeneous sample, but is effective only if the complexity of the sample is not too great (Howe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Howe et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "893f2eb6-3280-4be9-b780-6a7499ca1aca",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C10",
+      "claim": "It is often difficult to separate contigs belonging to closely related organisms because techniques designed to resolve these differences, such as tetranucleotide analysis, depend on ad hoc assumptions about nucleotide usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is often difficult to separate contigs belonging to closely related organisms because techniques designed to resolve these differences, such as tetranucleotide analysis, depend on ad hoc assumptions about nucleotide usage (Dick et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dick et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "28b7440a-3529-49a9-abb0-c0a74270655a",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C11",
+      "claim": "Single-cell sequencing approaches performed in plates are typically expensive and laborious.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when performed in plates, single-cell sequencing approaches are typically expensive and laborious, although microfluidic approaches have helped to alleviate that limitation (Blainey et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Blainey et al., 2011 and represents established knowledge about single-cell sequencing methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "731d94c0-09ed-4b7b-bc39-a83309b22c8c",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C12",
+      "claim": "The mini-metagenomics approach uses microfluidic parallelization to separate an environmental sample into many small sub-samples containing 5\u201310 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach uses microfluidic parallelization to separate an environmental sample into many small sub-samples containing 5\u201310 cells, significantly reducing complexity of each sub-sample and allowing high quality assembly while enabling higher throughput than typical single-cell methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method supported by the experimental design and data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "b5bea575-4a2b-4a3a-8fd7-876bde49708c",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C13",
+      "claim": "Single-cell resolution is regained through correlations of genome co-occurrence across sub-samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Although each sub-sample contains a limited mixture of several genomes, single-cell resolution is regained through correlations of genome co-occurrence across sub-samples, which in turn enables a rigorous statistical interpretation of confidence and genome association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the bioinformatic analysis methods and results presented in the manuscript, particularly the co-occurrence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "ebe37793-343a-473d-8190-d8efb09fe2a2",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C14",
+      "claim": "Among 29 genomes larger than 0.5 Mbps, most belong to known bacterial and archaeal phyla but represent novel lineages at lower taxonomic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 29 genomes larger than 0.5 Mbps, most belong to known bacterial and archaeal phyla but represent novel lineages at lower taxonomic levels; three genomes represent deeply branching novel phylogenies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis data presented in Figure 4 and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "5fa375eb-a7fb-45e2-986b-6d6ad8d7d59c",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C15",
+      "claim": "Three genomes represent deeply branching novel phylogenies.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 29 genomes larger than 0.5 Mbps, most belong to known bacterial and archaeal phyla but represent novel lineages at lower taxonomic levels; three genomes represent deeply branching novel phylogenies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "1a8a0e7e-49fe-478e-9c8d-2f4963910ddb",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C16",
+      "claim": "Functional analysis revealed different metabolic pathways that cells may use to achieve the same biochemical process such as nitrogen and sulfur reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional analysis revealed different metabolic pathways that cells may use to achieve the same biochemical process such as nitrogen and sulfur reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional analysis data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "b29e53eb-29d5-483a-b4cc-94e9fcc985a8",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C17",
+      "claim": "96 lysis and MDA reactions are performed in independent chambers of an automated and commercially available Fluidigm C1 Integrated Fluidic Circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "96 lysis and MDA (Multiple Displacement Amplification) reactions are performed in independent chambers of an automated and commercially available Fluidigm C1 Integrated Fluidic Circuit (IFC) (Figure 1B, Figure 1\u2014figure supplement 1), which significantly reduces the time and effort required to perform these reactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method supported by Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "45e6895d-49db-49d4-9244-1db196a9932d",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C18",
+      "claim": "The C1 IFC has been used previously for mammalian single-cell RNA-seq and genome analysis experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The C1 IFC has been used previously for mammalian single-cell RNA-seq and genome analysis experiments (Wu et al., 2014; Pollen et al., 2014; Treutlein et al., 2014; Gawad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "8883befb-9027-4003-bcaa-75d69cef0769",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C19",
+      "claim": "The hardware, including the microfluidic circuit, was not altered for the mini-metagenomic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The hardware, including the microfluidic circuit, was not altered for the mini-metagenomic experiments, but we did adapt a new reagent kit and designed scripts and protocols for amplifying genomic DNA from microbial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "c43dc21d-1fd8-4532-8f60-d94eee11af6e",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C20",
+      "claim": "Smaller MDA reaction volumes (~300 nL) are associated with lower gain and less amplification bias, which effectively improves coverage uniformity of amplified genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, smaller MDA reaction volumes (~300 nL) are associated with lower gain and less amplification bias, which effectively improves coverage uniformity of amplified genomes (de Bourcy et al., 2014) (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to de Bourcy et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7ca0b6cb-1a78-43b3-a625-49a0947462ee",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C21",
+      "claim": "The enclosed reaction environment of the microfluidic platform limits potential contamination often observed with low input MDA reactions in well plates.",
+      "claim_type": "EXPLICIT",
+      "source": "Another advantage of using a microfluidic platform is the enclosed reaction environment that limits potential contamination often observed with low input MDA reactions in well plates, a problem that, with other approaches, requires sophisticated protocols for contamination prevention and removal (Woyke et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Woyke et al., 2011 and represents an advantage of the method.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "0e9b2f48-df45-4e3e-902a-083b001b1f2e",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C22",
+      "claim": "Thirty mini-metagenomic and 36 single-cell limiting dilution sub-samples yielded 169 and 194 million paired end reads, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty mini-metagenomic and 36 single-cell limiting dilution sub-samples yielded 169 and 194 million paired end reads, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of sequencing data from the mock community experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "343955d7-55af-4529-b34b-e942e7d9e9f8",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C23",
+      "claim": "Initial trimming removed 14 \u00b1 1.1% (s.d.) reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial trimming removed 14 \u00b1 1.1% (s.d.) reads; 80 \u00b1 1.5% (s.d.) of the remaining reads mapped uniquely to reference genomes (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "f07a144a-9cb0-4c36-b615-ff8aefa17caa",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C24",
+      "claim": "80 \u00b1 1.5% (s.d.) of the remaining reads mapped uniquely to reference genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial trimming removed 14 \u00b1 1.1% (s.d.) reads; 80 \u00b1 1.5% (s.d.) of the remaining reads mapped uniquely to reference genomes (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "bb48bd8b-7bb2-4dde-9e76-493c2487dba4",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C25",
+      "claim": "Unmapped reads made up only 3% of all reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Unmapped reads made up only 3% of all reads (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "f549560a-6b09-449e-b800-44dca3eb8813",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C26",
+      "claim": "Chimeras represented <1% of the reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Improperly mapped reads (3 \u00b1 0.9% s.d.) were mostly short, low quality sequences, and chimeras represented <1% of the reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data from the mock community analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "476932e5-4a45-4341-8118-d343e494eff6",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C27",
+      "claim": "Mini-metagenomic MDA reactions produced higher median coverage than single-cell MDA reactions at all sequencing depths.",
+      "claim_type": "EXPLICIT",
+      "source": "Mini-metagenomic MDA reactions produced higher median coverage than single-cell MDA reactions at all sequencing depths (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "b053edd3-e8f3-4d37-8337-d459275f5578",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C28",
+      "claim": "The proportion of assembled genome as a function of aligned genome did not differ significantly between mini-metagenomic and single-cell methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of assembled genome as a function of aligned genome, however, did not differ significantly between mini-metagenomic and single-cell methods (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "e266cbb1-1ef2-41f7-be96-987e2ef72390",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C29",
+      "claim": "With the mini-metagenomic method, less sequencing cost is required to recover similar genome coverage as compared to single-cell experiments, with the improvement mostly associated with the amplification rather than assembly steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, data from mock bacterial communities demonstrate that with the mini-metagenomic method, less sequencing cost is required to recover similar genome coverage as compared to single-cell experiments, with the improvement mostly associated with the amplification rather than assembly steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative analysis of mini-metagenomic and single-cell methods using the mock community.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "3d8f5b0d-b3b9-4a8d-b56f-72d31e3cdc80",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C30",
+      "claim": "Sample #1 was collected from Bijah Spring and sample #2 was collected from Mound Spring.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample #1 was collected from Bijah Spring and sample #2 was collected from Mound Spring (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about sample collection supported by Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "ed309a34-2023-4021-889a-5253f91ce721",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C31",
+      "claim": "121 and 133 million paired end reads were obtained from the two samples respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "121 and 133 million paired end reads were obtained from the two samples respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "6733bf2f-3aaf-401c-97ea-cb92c980f4e3",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C32",
+      "claim": "After quality filtering, >90% reads from each sub-sample were incorporated into contigs during independent assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality filtering, >90% reads from each sub-sample were incorporated into contigs during independent assemblies (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7449b131-4723-4ffe-8971-0ada7fcdb8f2",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C33",
+      "claim": "Re-assembling combined sub-sample reads increased contig length.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-assembling combined sub-sample reads increased contig length (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "ae49cc5a-1643-4a45-bb60-83b892c14fba",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C34",
+      "claim": "643 and 1474 contigs longer than 10 kbp were obtained from the two samples, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 643 and 1474 contigs longer than 10 kbp from the two samples, respectively, and used these contigs for subsequent analyses (Figure 2\u2014figure supplement 2B; Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 2B and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "60c9193a-c342-4fb2-88ab-f13486b0ac23",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C35",
+      "claim": "For the Bijah Spring sample, where 49 sub-samples were available, the shotgun metagenomic assembly produced more contigs over 10 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "After assembly (Materials and methods), we observed that for the Bijah Spring sample, where 49 sub-samples were available, the shotgun metagenomic assembly produced more contigs over 10 kbp (Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "f0469a9f-ccfd-4746-81f5-f95e900fb955",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C36",
+      "claim": "For the Mound Spring sample, where 93 sub-samples were used, the mini-metagenomic assembly produced more contigs over 10 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the Mound Spring sample, where 93 sub-samples were used, the mini-metagenomic assembly produced more contigs over 10 kbp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of assembly comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "71fcfd2e-245a-4bca-9b1d-ce11e507cff7",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C37",
+      "claim": "The largest contig from the mini-metagenomic assembly was longer for the Mound Spring sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest contig from the mini-metagenomic assembly was also longer for the Mound Spring sample (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "f0d7945c-b81c-42f1-bb8b-2a5a4adc7dab",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C38",
+      "claim": "Increasing the number of mini-metagenomic sub-samples likely improves assembly performance compared to shotgun metagenomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that increasing the number of mini-metagenomic sub-samples improves assembly performance compared to shotgun metagenomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of assembly results between Bijah and Mound Spring samples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "8b714151-253e-4eef-919c-311914587713",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C39",
+      "claim": "The observed assembly improvement may be due to higher complexity of the Mound Spring bacterial community.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the observed assembly improvement is due to higher complexity of the Mound Spring bacterial community, validating our hypothesis that the mini-metagenomic method benefits the analysis of complex microbial populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the assembly comparison results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "a31233de-f797-4222-8051-47d81a419265",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C40",
+      "claim": "Approximately 70% of all contigs were assigned at the phylum level.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 70% of all contigs were assigned at the phylum level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of annotation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "c9a048a2-0977-4c44-8754-653df4ac8e20",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C41",
+      "claim": "Contigs with known assignment and from the same cluster always belonged to the same phylum.",
+      "claim_type": "EXPLICIT",
+      "source": "Contigs with known assignment and from the same cluster always belonged to the same phylum, demonstrating that the presence-based method can correctly bin metagenomic contigs into genomes (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the contig clustering and annotation results presented in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7d50321b-8688-46f0-bcd4-5cdc196195c5",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C42",
+      "claim": "29 partial genome bins from both hot spring samples with genome sizes over 0.5 Mbp were selected for downstream analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected 29 partial genome bins from both hot spring samples with genome sizes over 0.5 Mbp for downstream analyses (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the selection criteria for genome bins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "a0c19d41-1487-46f7-8e9c-760ce0adef1a",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C43",
+      "claim": "Assessment of genome bins demonstrated various levels of completeness and <5% marker gene duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of genome bins demonstrated various levels of completeness and <5% marker gene duplication (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "3e016ed8-7e71-47a8-8bce-d56d88235761",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C44",
+      "claim": "Eight genome bins with known phylum level assignments were identified from the Bijah Spring sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Using lineage assignment based on gene annotations, we identified eight genome bins with known phylum level assignments from the Bijah Spring sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of phylogenetic assignment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "c85b0744-42b1-40c0-b9c6-828219864d6e",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C45",
+      "claim": "Three genomes (Bijah #3, Bijah #5, and Bijah #14) had unknown assignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Three genomes (Bijah #3, Bijah #5, and Bijah #14) had unknown assignments (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phylogenetic assignment results presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "b36756f3-ea4d-4b06-a647-ef7c0c48efb5",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C46",
+      "claim": "In the Mound Spring sample, 14 genomes with known phylum level assignments and three unassigned genomes (Mound #3, Mound #4, and Mound #7) were extracted.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Mound Spring sample, more reads and sub-samples resulted in 14 genomes with known phylum level assignments and three unassigned genomes (Mound #3, Mound #4, and Mound #7) were extracted (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phylogenetic assignment results presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "64ba3b3d-e346-48ba-9515-29c1c9767690",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C47",
+      "claim": "A singleton contig 3.3 Mbp in length (#40) was included as a separate genome.",
+      "claim_type": "EXPLICIT",
+      "source": "A singleton contig 3.3 Mbp in length (#40) was also included as a separate genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about genome identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "32a0ba6c-034a-4b4c-95f6-e0c6c907ae83",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C48",
+      "claim": "The ability to separate distinct clusters of Bacteroidetes contigs represents an advantage of the sequence-independent binning approach.",
+      "claim_type": "EXPLICIT",
+      "source": "In both environmental samples, the ability to separate distinct clusters of Bacteroidetes contigs represents an advantage of our sequence-independent binning approach, where the presence of bacterial species across microfluidic chambers is determined only by Poisson distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the binning results, supported by the data showing distinct Bacteroidetes clusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "882ec0d2-05d0-443c-baa2-2bcf65728baf",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C49",
+      "claim": "Seventeen genomes, including four unassigned genomes, were complete enough for phylogenetic tree construction based on 56 single copy marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventeen genomes (shown in bold in Figure 2C,D), including four unassigned genomes, were complete enough for phylogenetic tree construction based on 56 single copy marker genes (Eloe-Fadrosh et al., 2016) (Figure 4; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phylogenetic analysis presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "255769ad-cfb5-468e-af52-4db741af1d59",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C50",
+      "claim": "All marker gene based phylogenetic assignments were consistent with annotation based assignments.",
+      "claim_type": "EXPLICIT",
+      "source": "All marker gene based phylogenetic assignments were consistent with annotation based assignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the consistency of phylogenetic assignment methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "29f02da2-2d70-49da-aaf6-475c76574ef5",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C51",
+      "claim": "13 genomes with short to medium branch length from known lineages were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 13 genomes with short to medium branch length from known lineages (red), and four deeply branching lineages that may represent potentially novel phyla (red and starred).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the phylogenetic tree presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "9e592af5-a9aa-4cfe-bded-ae642d8c9ee1",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C52",
+      "claim": "Four deeply branching lineages that may represent potentially novel phyla were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 13 genomes with short to medium branch length from known lineages (red), and four deeply branching lineages that may represent potentially novel phyla (red and starred).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the phylogenetic tree presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "94112f9d-ed98-4f1b-bb97-d30408e56657",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C53",
+      "claim": "Partial archaeal genomes belonging to Euryarchaeota (Mound #16) and Bathyarchaeota (Mound #14) were extracted.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to bacterial lineages, we also extracted partial archaeal genomes belonging to Euryarchaeota (Mound #16) and Bathyarchaeota (Mound #14) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the phylogenetic analysis presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "a4d4e31c-5cba-4828-9aa9-da1bbf960160",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C54",
+      "claim": "Phylogenetic trees built from blast results of individual ribosomal protein sequences suggest that both genomes Bijah #14 and Mound #3 belonged to the phylum Ignavibacteriae.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic trees built from blast results of individual ribosomal protein sequences suggest that both genomes belonged to the phylum Ignavibacteriae (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis presented in Figure 4\u2014figure supplement 1 and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "bec95cee-8a2d-40fd-bcdf-1c34e73f111e",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C55",
+      "claim": "The Mound Spring population displayed higher potential for methanogenesis than the Bijah Spring population.",
+      "claim_type": "EXPLICIT",
+      "source": "At the community level, the Mound Spring population displayed higher potential for methanogenesis than the Bijah Spring population, and methanogenesis can be carried out by members of the Euryarchaeota (Mound # 16) lineages involving mcr and hdr complex (Ferry, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional analysis data presented in Figure 5 and citation to Ferry, 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "fa9be1b7-1378-444a-9d12-e55c34e40c0d",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C56",
+      "claim": "Methanogenesis can be carried out by members of the Euryarchaeota (Mound # 16) lineages involving mcr and hdr complex.",
+      "claim_type": "EXPLICIT",
+      "source": "At the community level, the Mound Spring population displayed higher potential for methanogenesis than the Bijah Spring population, and methanogenesis can be carried out by members of the Euryarchaeota (Mound # 16) lineages involving mcr and hdr complex (Ferry, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional analysis data and citation to Ferry, 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "91fd5624-7d1c-43b8-ad31-1a98da695d2a",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C57",
+      "claim": "Formaldehyde assimilation could be carried out in both communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Formaldehyde assimilation, on the other hand, could be carried out in both communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional analysis data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "dc96b495-fd4d-43d5-bb09-6e9531e5c9e6",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C58",
+      "claim": "Five genomes including Ignavibacteriae (Mound #40), Bacteroidetes (Mound #2), Nitrospirae (Mound #19), Thermodesulfobacteria (Mound #21), and Ignavibacteriae (Bijah #2) carry nar, nrf, and nir genes, possibly participating in the conversion of nitrate to ammonia.",
+      "claim_type": "EXPLICIT",
+      "source": "In nitrogen metabolism, we identified five genomes including Ignavibacteriae (Mound #40), Bacteroidetes (Mound #2), Nitrospirae (Mound #19), Thermodesulfobacteria (Mound #21), and Ignavibacteriae (Bijah #2) carrying nar, nrf, and nir genes, possibly participating in the conversion of nitrate to ammonia (Sodergren and DeMoss, 1988; Einsle et al., 1999; Cantera and Stein, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional analysis data and citations to Sodergren and DeMoss, 1988; Einsle et al., 1999; Cantera and Stein, 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "29686bd7-baea-4bc7-96c0-92f41b376ec9",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C59",
+      "claim": "The archaeal genome belonging to Bathyarchaeota (Mound #14) carries nifD and nifH, capable of converting nitrogen directly to ammonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the archaeal genome belonging to Bathyarchaeota (Mound #14) carries nifD and nifH, capable of converting nitrogen directly to ammonia (Fani et al., 2000) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional analysis data presented in Figure 5B and citation to Fani et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "2063ef24-972f-400d-a555-aac6fa7ac3cf",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C60",
+      "claim": "A genome extracted from Bijah Spring belonging to Spirochaetes carried nirS, norBC, and nosZ genes, capable of reducing nitrite to nitrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not identify denitrification genes in the Mound Spring community, a genome extracted from Bijah Spring belonging to Spirochaetes carried nirS, norBC, and nosZ genes, capable of reducing nitrite to nitrogen (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional analysis data presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "e2e49c18-68bf-4cd3-af9b-f538c0e6449a",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C61",
+      "claim": "Bacterial clades associated with thermophilic environments in the Yellowstone National Park are known for their sulfur reduction activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial clades associated with thermophilic environments in the Yellowstone National Park are known for their sulfur reduction (converting sulfate to sulfide) activities (Henry et al., 1994; Inskeep et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Henry et al., 1994 and Inskeep et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "2025b314-9db0-4fa7-b10d-484e1f3ca271",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C62",
+      "claim": "Genes associated with the assimilatory sulfate reduction pathway (cysNC, sat, cysC, cysH, and cysI) were identified from three Mound Spring genomes including Ignavibacteriae (Mound #40), Bacteroidetes (Mound #2), Fervidibacteria (Mound #8) and one Bijah Spring genome \u2013 Spirochaetes (Bijah #7).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified genes associated with the assimilatory sulfate reduction pathway (cysNC, sat, cysC, cysH, and cysI) from three Mound Spring genomes including Ignavibacteriae (Mound #40), Bacteroidetes (Mound #2), Fervidibacteria (Mound #8) and one Bijah Spring genome \u2013 Spirochaetes (Bijah #7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "a75606fd-2c64-440e-b437-bab423778e82",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C63",
+      "claim": "Key genes (dsrAB) responsible for dissimilatory sulfate reduction were identified from Nitrospirae (Mound #19) and Termodesulfobacteria (Mound #21) genomes in the Mound Spring population.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Mound Spring population, we also identified key genes (dsrAB) responsible for dissimilatory sulfate reduction from Nitrospirae (Mound #19) and Termodesulfobacteria (Mound #21) genomes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional analysis data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "03bcc182-7d4a-4c62-9687-b43ffecacb89",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C64",
+      "claim": "Mini-metagenomics uses occurrence of genomes across sub-samples to estimate abundance through counting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike typical shotgun metagenomic methods that use coverage depth as a proxy for genome abundance, mini-metagenomics uses occurrence of genomes across sub-samples to estimate abundance through counting cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method for abundance estimation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "9fc3b894-5910-4dcc-8ab7-a58b641f9fae",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C65",
+      "claim": "Thresholding coverage depth into an occurrence profile can be seen as digitizing an otherwise noisy analog signal, potentially reducing the effect of amplification bias, copy number variation, and genome size across genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thresholding coverage depth into an occurrence profile can be seen as digitizing an otherwise noisy analog signal, potentially reducing the effect of amplification bias, copy number variation, and genome size across genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "56940445-899e-44ca-bf99-475df70aa974",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C66",
+      "claim": "Cells were distributed randomly into microfluidic chambers, with occurrence profiles satisfying a Poisson distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Because cells were well-mixed before loading into the Fluidigm C1 IFC and that the microfluidic structures inside each chamber were much larger than the size of a microbial cell, cells were distributed randomly into microfluidic chambers, with occurrence profiles satisfying a Poisson distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the statistical distribution of cells, based on the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7554e0f7-979b-4f58-96dd-32fa45913f85",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C67",
+      "claim": "Assembled genomes from the Bijah sample covered one order of magnitude in abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembled genomes from the Bijah sample covered one order of magnitude in abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the abundance range observed in the Bijah sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "394a701e-62a3-42a2-a1ce-c508bf8b71ef",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C68",
+      "claim": "Genomes #10 (Deferribacteres) and #8 (Chlorobi) were most abundant in the Bijah sample, with 49 and 29 cells represented.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes #10 (Deferribacteres) and #8 (Chlorobi) were most abundant, with 49 and 29 cells represented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by abundance quantification data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "4b6627b7-7cd9-43aa-9d79-fb682967ba65",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C69",
+      "claim": "Bijah #5 (S2R-29) was only represented in four sub-samples, most likely representing only four cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the lower end, Bijah #5 (S2R-29) was only represented in four sub-samples, most likely representing only four cells (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by occurrence data presented in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "eaad1113-4a96-4136-942b-164d8ff2f510",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C70",
+      "claim": "In the Mound Spring sample, genomes covered two orders of magnitude in abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Mound Spring sample, more sub-samples were sequenced, allowing the quantification of a larger abundance range across two orders of magnitude (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by abundance data presented in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "c4871464-806b-41b2-8977-304da2ce1b15",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C71",
+      "claim": "Mound #40 (Ignavibacteria) was the most abundant lineage, appearing in all but seven sub-samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Mound #40 (Ignavibacteria) was the most abundant lineage, appearing in all but seven sub-samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of abundance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "89e50e40-cf3f-4d38-912a-21a82545e7d8",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C72",
+      "claim": "The abundance of Mound #40 genome was likely the reason for the successful assembly of its entire genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of this genome was likely the reason for the successful assembly of its entire genome (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the relationship between abundance and assembly success.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "512d0b70-e02a-479e-afd5-523938794148",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C73",
+      "claim": "Mound #11 (Bacteroidetes) and Mound #14 (Bathyarchaeota) were present at <1%.",
+      "claim_type": "EXPLICIT",
+      "source": "For rare organisms, we detected Mound #11 (Bacteroidetes) and Mound #14 (Bathyarchaeota), which were present at <1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of abundance data for rare organisms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7f2b4e64-ce8d-4cb1-a907-5789bed02741",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C74",
+      "claim": "General agreement in relative abundance profiles was observed when comparing mini-metagenomic and shotgun coverage methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing with relative abundance computed from shotgun coverage, we observed general agreement in relative abundance profiles, although a couple of genomes in Bijah Springs displayed large differences (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison data presented in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "dcda0158-993d-4792-993b-9c795bcd9ff1",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C75",
+      "claim": "Relative abundances were higher for less abundant genomes when the mini-metagenomic method was used, demonstrating its sensitivity to extracting rare phylogenies.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative abundances were higher for less abundant genomes when the mini-metagenomic method was use, demonstrating its sensitivity to extracting rare phylogenies (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison data presented in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "6bfa80c6-3232-485f-b24c-d5dc48bbf46f",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C76",
+      "claim": "Examining genomes larger than 0.5 Mbp, 192 and 509 cells were captured from Bijah and Mound Springs, respectively, corresponding to four to six cells per sub-sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, examining genomes larger than 0.5 Mbp, we captured 192 and 509 cells from Bijah and Mound Springs, respectively, corresponding to four to six cells per sub-sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of cell capture data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "4bf1abad-9a55-4b3a-b536-a087aa96ff69",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C77",
+      "claim": "The difference between intended ten cells per chamber and observed four to six cells was likely due to lysis inefficiency or smaller genomes excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though this number was smaller than our intended ten cells per chamber, the difference was likely due to lysis inefficiency or smaller genomes excluded from our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference in cell numbers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "2e2ec69a-94d5-47b0-8a28-3b3e11a37660",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C78",
+      "claim": "All Ignavibacteriae and three Bacteroidetes genomes have low SNP rates (<1%).",
+      "claim_type": "EXPLICIT",
+      "source": "All Ignavibacteriae and three Bacteroidetes genomes have low SNP rates (<1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of SNP analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "baa2f0e2-7d23-45c7-bfc7-62bf66861d42",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C79",
+      "claim": "In the Bijah Spring sample, members of Spirochaetes, Microgenomates, and S2R-29 contain the most SNPs at 0.3\u20130.4% of the assembled genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Bijah Spring sample, members of Spirochaetes, Microgenomates, and S2R-29 contain the most SNPs at 0.3\u20130.4% of the assembled genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of SNP analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "297cc09f-58be-41c5-8059-ab15e212afaf",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C80",
+      "claim": "In the Mound Spring sample, members of Thermodesulfobacteria have the most SNPs (0.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Mound Spring sample, members of Thermodesulfobacteria have the most SNPs (0.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of SNP analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "aff16a53-80dc-4ccd-b145-a26e8f0a3bdb",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C81",
+      "claim": "It is not the case that larger, more complete, or more abundant genomes contain more SNPs in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not the case that larger, more complete, or more abundant genomes contain more SNPs in a population (Figure 6\u2014figure supplement 2), indicating that the observed SNP rate is a biological property of the particular genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis presented in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "b056f71f-1d1a-4c7f-8e07-99e4334d47b1",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C82",
+      "claim": "The observed SNP rate is a biological property of the particular genome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not the case that larger, more complete, or more abundant genomes contain more SNPs in a population (Figure 6\u2014figure supplement 2), indicating that the observed SNP rate is a biological property of the particular genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of correlation between genome properties and SNP rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "530ced62-7755-4fa9-a4ba-8570dae6639f",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C83",
+      "claim": "The ratio of nonsynonymous to synonymous SNP rates (dN/dS) is typically a measure of the strength of environmental selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of nonsynonymous to synonymous SNP rates (dN/dS) is typically a measure of the strength of environmental selection (Holt et al., 2008), with one indicating no selection and zero indicating strong selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Holt et al., 2008 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7913bd84-fe49-4eac-a312-95ebe6676cc3",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C84",
+      "claim": "Among diverse genomes, dN/dS ranging from 0.4 to 0.9 was found in the hot spring genomes, illustrating that different phylogenies in the same hot spring environment are subjected to different weak to moderate negative selection pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "Among diverse genomes that allow more accurate assessment of SNP ratios, we found dN/dS ranging from 0.4 to 0.9 in the hot spring genomes, illustrating that different phylogenies in the same hot spring environment are subjected to different weak to moderate negative selection pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dN/dS analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "0e9855ee-d521-4246-be05-0dc2c90b1870",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C85",
+      "claim": "Previous work has implemented similar concepts of sequencing multiple bacterial cells together in order to increase throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has implemented similar concepts of sequencing multiple bacterial cells together in order to increase throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "d695fcba-270e-46b2-8f13-cec69e5e73f7",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C86",
+      "claim": "Previous authors treated each sub-sample as an independent entity throughout their bioinformatic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the authors treated each sub-sample as an independent entity throughout their bioinformatic analysis (McLean et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McLean et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "add7efd8-a2c9-4787-b9aa-b840fe99d5be",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C87",
+      "claim": "The novelty of the analysis derives from treating information from sub-samples as different but overlapping sections of a more complex metagenome.",
+      "claim_type": "EXPLICIT",
+      "source": "The novelty of our analysis derives from treating information from sub-samples as different but overlapping sections of a more complex metagenome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novel aspect of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "1597f382-f08b-482b-a5ec-b6bc6e44b884",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C88",
+      "claim": "Recent work uses coverage from many shotgun metagenomic samples containing a similar set of microbial phylogenies but with different abundances in order to aid bioinformatic genome binning.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach echoes recent work that uses coverage from many shotgun metagenomic samples containing a similar set of microbial phylogenies but with different abundances in order to aid bioinformatic genome binning (Alneberg et al., 2014; Nielsen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Alneberg et al., 2014 and Nielsen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "c46e943e-0ee7-4e85-ae6b-a2d5385984e0",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C89",
+      "claim": "The mini-metagenomic approach generates sub-samples from one, possibly low volume, microbial sample, eliminating the need to collect multiple spatial or temporal metagenomic samples.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our approach generates sub-samples from one, possibly low volume, microbial sample, eliminating the need to collect multiple spatial or temporal metagenomic samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "96179646-6759-4b0f-bbbb-e26c122c2e11",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C90",
+      "claim": "Because of low complexity, each sub-sample does not need to be sequenced as deeply as using shotgun metagenomic methods, significantly saving sequencing cost.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, because of low complexity, each sub-sample does not need to be sequenced as deeply as using shotgun metagenomic methods, significantly saving sequencing cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "923590e3-fb0c-4f45-a075-d225e1ccf32a",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C91",
+      "claim": "Summation of all sub-samples approximates the original environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although each sub-sample queries only a small subset of the true diversity, summation of all sub-samples approximates the original environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the relationship between sub-samples and the original sample.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "e6472e39-57ba-433f-8044-fe9fb9e24762",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C92",
+      "claim": "Because of MDA bias, coverage depth is not used directly for contig binning.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of MDA bias, we do not use coverage depth directly for contig binning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "bb40e9ec-824b-4589-9a29-eb1115738f2f",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C93",
+      "claim": "Thresholding coverage depth into an occurrence profile digitizes a possibly noisy analog signal, reducing sensitivity to amplification and other bias associated with analog coverage signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, as noted previously, thresholding coverage depth into an occurrence profile digitizes a possibly noisy analog signal. Such digitization reduces sensitivity to amplification and other bias associated with analog coverage signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7e4d109a-3ff9-4738-beb7-5eb88a682902",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C94",
+      "claim": "Microfluidic-based mini-metagenomics provides researchers with two independent experimental design parameters: the average number of cells per microfluidic chamber and the number of chambers to sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidic-based mini-metagenomics provides researchers with two independent experimental design parameters in order to optimize the protocol for microbial samples of different complexities: the average number of cells per microfluidic chamber and the number of chambers to sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design flexibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "44cf1b31-ab7e-4245-b894-64b67b5d4a02",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C95",
+      "claim": "The statistical power of the presence based binning technique benefits from both the presence and absence of genomes across sub-samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The statistical power of the presence based binning technique benefits from both the presence and absence of genomes across sub-samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the statistical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "50279a22-1e53-4512-80b2-5301dec52aaa",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C96",
+      "claim": "For less complex samples, reducing the number of cells per microfluidic chamber ensures that cells of the same lineage do not appear in all sub-samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, for less complex samples, reducing the number of cells per microfluidic chamber ensures that cells of the same lineage do not appear in all sub-samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "7a9ea617-c522-4522-96d3-db72510cca12",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C97",
+      "claim": "For more complex samples, the number of cells per chamber can be increased to capture higher diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "For more complex samples, the number of cells per chamber can be increased to capture higher diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "d49cfc60-76ee-4a8a-839e-0bc20e19ad76",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C98",
+      "claim": "Mini-metagenomics uses a commercially available instrument, thereby facilitating its adoption by groups without expertise in microfluidic technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Mini-metagenomics uses a commercially available instrument, thereby facilitating its adoption by groups without expertise in microfluidic technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the accessibility of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "878f2878-1bf4-4d60-8073-c58a224cccbc",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "claim_id": "C99",
+      "claim": "Microfluidic-based mini-metagenomics provides orthogonal information to tetranucleotide or coverage information derived from traditional metagenomic sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, because microfluidic-based mini-metagenomics provides orthogonal information to tetranucleotide or coverage information derived from traditional metagenomic sequencing, combining these approaches represents an exciting future direction for deriving a more comprehensive picture of the microbial world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the complementary nature of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a microfluidic-based mini-metagenomic method that partitions environmental samples into 96 sub-samples containing 5-10 cells each, using a commercially available Fluidigm C1 IFC. Single-cell resolution is regained through statistical analysis of genome co-occurrence patterns across sub-samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C12, C13, C17, C19, C20, and C21 collectively describe the core methodological innovation. The method is well-documented with experimental details, supported by figures showing the workflow, and validated through mock community experiments. The use of smaller MDA volumes and enclosed microfluidic environment are supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "be201b0e-ca26-4c62-8ceb-82d939601531",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Validation using a mock bacterial community demonstrated that mini-metagenomics produces higher median genome coverage than single-cell methods at equivalent sequencing depths, with >80% of reads mapping uniquely to reference genomes and <1% chimeric reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 present comprehensive validation data from mock community experiments. The quantitative metrics (read mapping rates, coverage statistics) are clearly reported with standard deviations and supported by supplementary figures. The comparison between mini-metagenomic and single-cell methods provides direct evidence for the method's advantages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "71b4565a-ffaf-4a63-b958-f47e455a0567",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Application of mini-metagenomics to two Yellowstone hot spring samples yielded 643 and 1474 contigs >10 kbp. For the Mound Spring sample with 93 sub-samples, mini-metagenomics produced more and longer contigs than shotgun metagenomics, suggesting improved performance with increased sub-sample numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 describe the assembly results from environmental samples with specific quantitative data supported by figures and tables. The comparison to shotgun metagenomics is direct and controlled for sequencing depth. However, C39 is somewhat speculative about community complexity, though the inference is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "98c4e391-2df9-4486-b532-845dd1a44577",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The presence-based contig binning method correctly clusters contigs into genomes, with all contigs from the same cluster belonging to the same phylum. The method uses Fisher's exact test on co-occurrence patterns and assumes Poisson distribution of cells across chambers, avoiding biases from MDA amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41, C48, C64, C65, C66, C92, and C93 describe the statistical binning approach and its validation. The claim that contigs from the same cluster always belonged to the same phylum (C41) provides strong validation. The statistical framework is clearly described and the Poisson assumption is justified by the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "From the two hot spring samples, 29 genomes >0.5 Mbp were extracted, including 13 genomes from known lineages and four deeply branching lineages representing potentially novel phyla. Phylogenetic analysis based on 56 single-copy marker genes was consistent with annotation-based assignments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C14, C15, C42-C54 present the genome discovery results with clear quantitative data and phylogenetic support. The use of 56 marker genes for phylogenetic placement is rigorous, and the consistency between marker gene and annotation-based assignments (C50) validates the approach. Genome completeness and contamination metrics are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "f75b9a6f-842b-48b3-b50a-d4639ecca103",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Functional analysis revealed diverse metabolic pathways for nitrogen, sulfur, and methane metabolism across the microbial communities. The Mound Spring population showed higher methanogenesis potential, while different genomes employed distinct pathways for nitrogen and sulfur reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C55-C63 describe functional analysis results supported by Figure 5 and KEGG module mapping. Specific genes are identified in specific genomes with appropriate citations for their functions. The analysis reveals metabolic diversity within and between communities, though the claims are largely descriptive rather than mechanistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "73427da5-6677-4769-b506-2b0c3705543c",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The method enabled accurate quantification of genome abundance down to <1% relative abundance by counting cell occurrences across sub-samples using Poisson statistics. Abundances ranged over one order of magnitude in Bijah Spring and two orders in Mound Spring, with general agreement with shotgun metagenomic estimates but higher sensitivity for rare genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C64, C67-C76 present abundance quantification results with clear statistical framework. The Poisson-based approach is well-justified, and validation against shotgun metagenomics (C74, C75) demonstrates both agreement and advantages. The detection of rare organisms at <1% abundance (C73) demonstrates sensitivity. However, C77 acknowledges lower than expected cell recovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "3b75c101-004d-482d-b19d-e021ce63d8c0",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SNP analysis revealed variable genetic diversity across genomes (0.1-0.6% SNP rates) that was independent of genome size or abundance. dN/dS ratios of 0.4-0.9 indicated weak to moderate negative selection pressures varying across phylogenies within the same environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C78-C84 present population genetic analysis with clear quantitative results. The lack of correlation between SNP rates and genome properties (C81) is supported by supplementary figures. The dN/dS analysis (C83, C84) is appropriately interpreted with proper citation for the metric's meaning. The analysis demonstrates single-cell resolution capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mini-metagenomic approach offers several advantages over existing methods: it generates sub-samples from a single sample, requires less sequencing depth per sub-sample, uses commercially available instrumentation, and provides orthogonal information to traditional metagenomic approaches. The method offers flexible experimental design through adjustable cell numbers and sub-sample counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C91, C94-C99 describe methodological advantages and comparisons to prior work. The advantages are supported by the validation experiments and environmental sample results. The comparison to prior work (C85-C88) is appropriately cited. The flexibility claims (C94-C97) are logical inferences from the method design. The use of commercial instrumentation (C98) is factual.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "22423a5f-705b-4b17-aa7d-537090f31f51",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context that while metagenomics and single-cell genomics have enabled genome discovery, current methods face limitations including challenges with complex samples, difficulties separating closely related organisms, and the expense of plate-based single-cell approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7-C11 provide background context supported by appropriate citations. These are established facts in the field rather than novel findings. C7 provides a specific database statistic with proper attribution. The limitations described (C2, C9, C10, C11) are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "a74dda6f-f79d-4b22-a92e-aa846aa59c7b",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Fluidigm C1 IFC has been previously used for mammalian single-cell RNA-seq and genome analysis experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is a factual statement about prior use of the instrument, supported by multiple citations. This provides context for the adaptation to microbial samples but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    },
+    {
+      "id": "82035807-93d7-4954-a2cf-8aca1399476c",
+      "content_id": "c7e81e60-f4a8-4104-adbe-51eec0fb9f21",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observed cell recovery of 4-6 cells per sub-sample was lower than the intended 10 cells, likely due to lysis inefficiency or exclusion of smaller genomes from analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 acknowledges a discrepancy between intended and observed cell numbers and offers speculative explanations. While the observation is data-based, the explanations are not tested. This represents an honest limitation but the cause remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:55:15.519067Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e01487a9-8349-4eb3-a405-c3c5d65c9b99",
+      "result_id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896"
+    },
+    {
+      "claim_id": "731d94c0-09ed-4b7b-bc39-a83309b22c8c",
+      "result_id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896"
+    },
+    {
+      "claim_id": "b5bea575-4a2b-4a3a-8fd7-876bde49708c",
+      "result_id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896"
+    },
+    {
+      "claim_id": "b29e53eb-29d5-483a-b4cc-94e9fcc985a8",
+      "result_id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896"
+    },
+    {
+      "claim_id": "8883befb-9027-4003-bcaa-75d69cef0769",
+      "result_id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896"
+    },
+    {
+      "claim_id": "c43dc21d-1fd8-4532-8f60-d94eee11af6e",
+      "result_id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896"
+    },
+    {
+      "claim_id": "7ca0b6cb-1a78-43b3-a625-49a0947462ee",
+      "result_id": "809baabe-cc8e-4a29-b9bd-9c033e1a8896"
+    },
+    {
+      "claim_id": "0e9b2f48-df45-4e3e-902a-083b001b1f2e",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "343955d7-55af-4529-b34b-e942e7d9e9f8",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "f07a144a-9cb0-4c36-b615-ff8aefa17caa",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "bb48bd8b-7bb2-4dde-9e76-493c2487dba4",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "f549560a-6b09-449e-b800-44dca3eb8813",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "476932e5-4a45-4341-8118-d343e494eff6",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "b053edd3-e8f3-4d37-8337-d459275f5578",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "e266cbb1-1ef2-41f7-be96-987e2ef72390",
+      "result_id": "be201b0e-ca26-4c62-8ceb-82d939601531"
+    },
+    {
+      "claim_id": "3d8f5b0d-b3b9-4a8d-b56f-72d31e3cdc80",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "ed309a34-2023-4021-889a-5253f91ce721",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "6733bf2f-3aaf-401c-97ea-cb92c980f4e3",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "7449b131-4723-4ffe-8971-0ada7fcdb8f2",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "ae49cc5a-1643-4a45-bb60-83b892c14fba",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "60c9193a-c342-4fb2-88ab-f13486b0ac23",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "f0469a9f-ccfd-4746-81f5-f95e900fb955",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "71fcfd2e-245a-4bca-9b1d-ce11e507cff7",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "f0d7945c-b81c-42f1-bb8b-2a5a4adc7dab",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "8b714151-253e-4eef-919c-311914587713",
+      "result_id": "71b4565a-ffaf-4a63-b958-f47e455a0567"
+    },
+    {
+      "claim_id": "a31233de-f797-4222-8051-47d81a419265",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "c9a048a2-0977-4c44-8754-653df4ac8e20",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "32a0ba6c-034a-4b4c-95f6-e0c6c907ae83",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "03bcc182-7d4a-4c62-9687-b43ffecacb89",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "9fc3b894-5910-4dcc-8ab7-a58b641f9fae",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "56940445-899e-44ca-bf99-475df70aa974",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "e6472e39-57ba-433f-8044-fe9fb9e24762",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "bb40e9ec-824b-4589-9a29-eb1115738f2f",
+      "result_id": "98c4e391-2df9-4486-b532-845dd1a44577"
+    },
+    {
+      "claim_id": "deca8284-2c13-4a32-9d07-ddf2e915c3b5",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "ebe37793-343a-473d-8190-d8efb09fe2a2",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "5fa375eb-a7fb-45e2-986b-6d6ad8d7d59c",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "7d50321b-8688-46f0-bcd4-5cdc196195c5",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "a0c19d41-1487-46f7-8e9c-760ce0adef1a",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "3e016ed8-7e71-47a8-8bce-d56d88235761",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "c85b0744-42b1-40c0-b9c6-828219864d6e",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "b36756f3-ea4d-4b06-a647-ef7c0c48efb5",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "64ba3b3d-e346-48ba-9515-29c1c9767690",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "882ec0d2-05d0-443c-baa2-2bcf65728baf",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "255769ad-cfb5-468e-af52-4db741af1d59",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "29f02da2-2d70-49da-aaf6-475c76574ef5",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "9e592af5-a9aa-4cfe-bded-ae642d8c9ee1",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "94112f9d-ed98-4f1b-bb97-d30408e56657",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "a4d4e31c-5cba-4828-9aa9-da1bbf960160",
+      "result_id": "a54dd904-85b7-4fe5-b024-dd76c2fc233f"
+    },
+    {
+      "claim_id": "1a8a0e7e-49fe-478e-9c8d-2f4963910ddb",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "bec95cee-8a2d-40fd-bcdf-1c34e73f111e",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "fa9be1b7-1378-444a-9d12-e55c34e40c0d",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "91fd5624-7d1c-43b8-ad31-1a98da695d2a",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "dc96b495-fd4d-43d5-bb09-6e9531e5c9e6",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "29686bd7-baea-4bc7-96c0-92f41b376ec9",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "2063ef24-972f-400d-a555-aac6fa7ac3cf",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "e2e49c18-68bf-4cd3-af9b-f538c0e6449a",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "2025b314-9db0-4fa7-b10d-484e1f3ca271",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "a75606fd-2c64-440e-b437-bab423778e82",
+      "result_id": "f75b9a6f-842b-48b3-b50a-d4639ecca103"
+    },
+    {
+      "claim_id": "ac36fb27-9d59-49b8-b29f-750a83ceb92d",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "03bcc182-7d4a-4c62-9687-b43ffecacb89",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "7554e0f7-979b-4f58-96dd-32fa45913f85",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "394a701e-62a3-42a2-a1ce-c508bf8b71ef",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "4b6627b7-7cd9-43aa-9d79-fb682967ba65",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "eaad1113-4a96-4136-942b-164d8ff2f510",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "c4871464-806b-41b2-8977-304da2ce1b15",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "89e50e40-cf3f-4d38-912a-21a82545e7d8",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "512d0b70-e02a-479e-afd5-523938794148",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "7f2b4e64-ce8d-4cb1-a907-5789bed02741",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "dcda0158-993d-4792-993b-9c795bcd9ff1",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "6bfa80c6-3232-485f-b24c-d5dc48bbf46f",
+      "result_id": "73427da5-6677-4769-b506-2b0c3705543c"
+    },
+    {
+      "claim_id": "574bbbdf-34ff-4e5f-9e47-aba97579d0ee",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "2e2ec69a-94d5-47b0-8a28-3b3e11a37660",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "baa2f0e2-7d23-45c7-bfc7-62bf66861d42",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "297cc09f-58be-41c5-8059-ab15e212afaf",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "aff16a53-80dc-4ccd-b145-a26e8f0a3bdb",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "b056f71f-1d1a-4c7f-8e07-99e4334d47b1",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "530ced62-7755-4fa9-a4ba-8570dae6639f",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "7913bd84-fe49-4eac-a312-95ebe6676cc3",
+      "result_id": "3b75c101-004d-482d-b19d-e021ce63d8c0"
+    },
+    {
+      "claim_id": "0e9855ee-d521-4246-be05-0dc2c90b1870",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "d695fcba-270e-46b2-8f13-cec69e5e73f7",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "add7efd8-a2c9-4787-b9aa-b840fe99d5be",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "1597f382-f08b-482b-a5ec-b6bc6e44b884",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "c46e943e-0ee7-4e85-ae6b-a2d5385984e0",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "96179646-6759-4b0f-bbbb-e26c122c2e11",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "923590e3-fb0c-4f45-a075-d225e1ccf32a",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "7e4d109a-3ff9-4738-beb7-5eb88a682902",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "44cf1b31-ab7e-4245-b894-64b67b5d4a02",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "50279a22-1e53-4512-80b2-5301dec52aaa",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "7a9ea617-c522-4522-96d3-db72510cca12",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "d49cfc60-76ee-4a8a-839e-0bc20e19ad76",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "878f2878-1bf4-4d60-8073-c58a224cccbc",
+      "result_id": "c80ee0ea-65f2-4502-8a7c-930abdb8f371"
+    },
+    {
+      "claim_id": "9855e5ec-5fa5-45db-906d-b34d75ae26b9",
+      "result_id": "22423a5f-705b-4b17-aa7d-537090f31f51"
+    },
+    {
+      "claim_id": "35a89ce1-0562-4483-94c0-763f4bd42644",
+      "result_id": "22423a5f-705b-4b17-aa7d-537090f31f51"
+    },
+    {
+      "claim_id": "9c51cfdd-07d1-4443-ac64-d479aa147afc",
+      "result_id": "22423a5f-705b-4b17-aa7d-537090f31f51"
+    },
+    {
+      "claim_id": "c70ba8ba-303d-4d28-b50e-aa645a2e1b38",
+      "result_id": "22423a5f-705b-4b17-aa7d-537090f31f51"
+    },
+    {
+      "claim_id": "b4d10c57-6cfc-4e9b-be80-7ac50b9fef67",
+      "result_id": "22423a5f-705b-4b17-aa7d-537090f31f51"
+    },
+    {
+      "claim_id": "893f2eb6-3280-4be9-b780-6a7499ca1aca",
+      "result_id": "22423a5f-705b-4b17-aa7d-537090f31f51"
+    },
+    {
+      "claim_id": "28b7440a-3529-49a9-abb0-c0a74270655a",
+      "result_id": "22423a5f-705b-4b17-aa7d-537090f31f51"
+    },
+    {
+      "claim_id": "45e6895d-49db-49d4-9244-1db196a9932d",
+      "result_id": "a74dda6f-f79d-4b22-a92e-aa846aa59c7b"
+    },
+    {
+      "claim_id": "4bf1abad-9a55-4b3a-b536-a087aa96ff69",
+      "result_id": "82035807-93d7-4954-a2cf-8aca1399476c"
+    }
+  ],
+  "comparisons": []
+}

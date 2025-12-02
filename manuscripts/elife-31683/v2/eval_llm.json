@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors identified approximately 2600-3610 novel Tbx5-dependent ncRNAs through deep sequencing of wildtype and Tbx5-mutant mouse atria. These ncRNAs showed robust differential expression across biological replicates, with 85% located within 2 Mbp of Tbx5-dependent protein-coding genes. The ncRNAs displayed characteristic features including bimodal length distribution, predominantly unidirectional transcription, and low sequence conservation similar to known lncRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C31 provide converging evidence from RNA-seq experiments with appropriate statistical thresholds (FDR < 0.05, FC > 1.5), biological replicates (n=3-4), and comprehensive characterization of the identified ncRNAs. The genomic features are well-documented with specific quantitative metrics and comparisons to known lncRNA databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C78"
+    ],
+    "result": "Tbx5-dependent ncRNAs were enriched for tissue-specific marks of active enhancers genome-wide, including DNase hypersensitivity, open chromatin (ATAC-seq), H3K27Ac, and TBX5 occupancy. The intersection of differential ncRNA expression with cardiac DNase hypersensitivity identified 1703 candidate regulatory elements from 28,393 TBX5-bound DNase regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C36, C78 demonstrate enrichment of Tbx5-dependent ncRNAs at multiple independent enhancer marks using published datasets and new ATAC-seq data. The meta-gene analysis (Figure 2A) and genomic views (Figures 1E-F) provide visual and quantitative support. The intersection analysis is statistically rigorous with empirical p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44"
+    ],
+    "result": "Tbx5-dependent ncRNAs emanated from regions enriched for TBX5-binding that demonstrated Tbx5-dependent enhancer activity. Functional validation showed 11 of 12 candidate enhancers had robust cis-activity in HL-1 cardiomyocytes (p-values 3.3e-6 to 0.03), with 10 of 11 showing TBX5-dependence through T-box motif mutation. Tbx5-activated enhancers showed significant enrichment for T-box motifs (enrichment score = 6.7, p=0.03), and TBX5 ChIP-seq showed high enrichment at open chromatin locations with Tbx5-dependent ncRNAs (72/152 locations, OR=18, p<2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C37-C39, C43-C44 provide multiple lines of converging evidence: luciferase assays with appropriate controls and statistics, motif enrichment analysis, and ChIP-seq validation. The high success rate (11/12 enhancers) and strong effect sizes (9 enhancers >10-fold, 3 >50-fold activation) support the functional relevance of the identified regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C71"
+    ],
+    "result": "Tbx5-dependent transcription increased the predictive power of DNase hypersensitivity, H3K27 acetylation, and open chromatin by ATAC-Seq by more than 2-fold for precision with similar specificity when compared against VISTA database enhancers. From 16,000 open regions, 145 local Tbx5-dependent ncRNAs marking 152 candidate enhancers were identified (empirical p<0.0001). The differential ncRNA approach provides non-redundant data compared to other enhancer identification methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C71 demonstrate improved enhancer prediction using an independent validation dataset (VISTA database with 240 cardiac and 1162 non-cardiac enhancers). The >2-fold improvement in precision is quantified in Figure 2D, and the statistical significance of the enrichment is established through simulation studies. The comparison to existing methods is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Tbx5-dependent ncRNA transcription provided a quantitative metric of Tbx5-dependent enhancer activity, correlating with target gene expression. 86% of downregulated and 66% of upregulated Tbx5-dependent ncRNAs were local to correspondingly regulated Tbx5-dependent coding genes (empirical p<0.001 and p=0.003). 4C-Seq demonstrated significant enhancer-promoter interactions, and a significant correlation (coefficient=0.58, p<2e-16) was observed between fold-changes of Tbx5-dependent enhancer transcription and adjacent gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C52 establish a quantitative relationship between enhancer ncRNA and target gene expression through multiple approaches: directional coherence analysis with empirical p-values, 4C-Seq physical interaction data, Pi-score analysis (81/93 enhancers), and Pearson correlation. The convergence of these independent methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "RACER is a novel Tbx5-dependent long noncoding RNA located 25 kb upstream of Ryr2 that is required for Ryr2 expression. The Ryr2 enhancer directed cardiac expression in zebrafish transgenic lines, with T-box motif mutations reducing cardiac expression frequency (67/166 wildtype vs 20/84 mutant, p=0.011). Knockdown of RACER caused 55% decrease in RACER expression and 50% decrease in Ryr2 mRNA, while Ryr2 mRNA knockdown did not affect RACER expression. Gene Ontology analysis of Tbx5-activated enhancer targets showed enrichment for calcium ion-related processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C53-C60 provide comprehensive characterization of RACER through multiple experimental approaches: in vivo zebrafish validation, antisense-mediated knockdown with appropriate controls, and functional GO enrichment analysis. The asymmetric relationship (RACER knockdown affects Ryr2 but not vice versa) supports a regulatory role. Statistical significance is reported for key experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RACER is functionally required for normal calcium handling in cardiomyocytes. In untransfected HL-1 cells, \u03b2-adrenergic stimulus increased calcium transient rate (33.3\u00b17.4 to 84.8\u00b19.9, p<0.05). Both Ryr2 mRNA knockdown and RACER knockdown blocked this \u03b2-adrenergic response, demonstrating that RACER is necessary for Ryr2-dependent calcium kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 demonstrate functional consequences of RACER knockdown using calcium imaging with appropriate controls and statistical analysis. The parallel effects of Ryr2 mRNA and RACER knockdown on calcium handling provide strong evidence for RACER's functional role in the Tbx5-dependent calcium handling network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C73"
+    ],
+    "result": "Six Tbx5-dependent enhancer lncRNAs, including RACER, were significantly enriched in the chromatin versus soluble nuclear fraction (qPCR p<6e-3, n=3), with enrichment similar to the canonical chromatin-binding ncRNA Xist. Control RNA from Gapdh showed no chromatin enrichment. All validated Tbx5-dependent ncRNAs were chromatin-enriched RNAs (cheRNAs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C73 demonstrate chromatin localization through nuclear fractionation with appropriate positive (Xist) and negative (Gapdh) controls. The statistical significance is reported, and the consistency across multiple lncRNAs strengthens the conclusion. The classification as cheRNAs is supported by the biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "RACER is necessary for RNA Polymerase 2 recruitment or stabilization at the Ryr2 promoter. Knockdown of RACER caused a significant decrease in Pol2 occupancy at the Ryr2 promoter (8.7\u00b10.79 fold to 1.6\u00b10.20 fold, p=0.02) with no change at the housekeeping gene Btf3 (21.3\u00b15.99 fold vs 14.3\u00b14.85 fold, p=0.46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide mechanistic insight through ChIP-qPCR with appropriate controls (housekeeping gene Btf3). The specific effect at Ryr2 promoter but not Btf3 demonstrates specificity. Statistical significance is reported with appropriate tests. This provides a plausible mechanism for RACER's function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A candidate enhancer at the Sln locus, not identified by TBX5 ChIP-seq in HL-1 cells, showed Tbx5-dependent ncRNA transcription. Follow-up ChIP-qPCR confirmed TBX5 occupancy (p=0.03 vs control Gapdh locus), and the element demonstrated robust TBX5-dependent activity in luciferase assays (p=2.3E-4 WT vs T-box mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 demonstrate that ncRNA-based identification can detect functional enhancers missed by ChIP-seq, addressing a limitation of ChIP-based approaches. The validation through ChIP-qPCR and luciferase assays with appropriate controls and statistics supports this as a true TBX5-dependent enhancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Intersection of DNase I hypersensitivity, H3K27Ac, and TBX5 occupancy identified over 15,000 common genomic locations, while ATAC-seq intersection identified over 7500 locations. The high concordance suggested lack of specificity for functional TBX5-dependent enhancers, consistent with observations that genomic enhancer marks and TF ChIP lack specificity and that only a small percentage of candidate enhancers prove functional in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 establish the motivation for the study by demonstrating limitations of existing approaches. The large overlap between datasets and citation of prior work (Zentner and Scacheri 2012; Visel et al. 2007) support the conclusion that traditional enhancer marks lack specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Atrial open chromatin showed enrichment for motifs of TF families such as MYC and E2F that provide non-tissue-specific transcriptional functions, while Tbx5-activated enhancers showed enrichment for the T-box motif itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by motif enrichment analysis shown in Figure 2E. The contrast between general open chromatin (enriched for housekeeping TF motifs) and Tbx5-dependent enhancers (enriched for T-box motifs) demonstrates the specificity gained by the ncRNA-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C70",
+      "C72",
+      "C75"
+    ],
+    "result": "The authors conclude that TF-dependent enhancer transcription can illuminate components of TF-dependent gene regulatory networks. Enhancer-borne ncRNAs mark active cis-regulatory elements and are essential for their function. Differential TF-dependent ncRNA-seq may provide a direct readout of differential enhancer function, and the dependence of target gene transcription on enhancer transcription may be a fundamental aspect of TF-driven cis-regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C69, C70, C72, C75 represent the main conclusions drawn from the collective findings. These are well-supported by the experimental data showing: (1) ncRNAs mark functional enhancers (validation rate 11/12), (2) ncRNAs are required for target gene expression (RACER knockdown experiments), (3) quantitative correlation between ncRNA and gene expression (r=0.58), and (4) mechanistic role in Pol2 recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing that TBX5 is a cardiac transcription factor regulating cardiac channel genes to maintain rhythm, that cardiac rhythm is under transcriptional control, and that genetic studies have implicated ion channels and transcription factors in cardiac conduction and arrhythmias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 are background knowledge claims supported by appropriate citations including the authors' prior work (Nadadur et al., 2016). These establish the biological context and rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C76",
+      "C77"
+    ],
+    "result": "Background claims about enhancer transcription: the noncoding genome is pervasively transcribed, ncRNAs emanate from enhancers, enhancer transcription may be functionally required, eRNA expression correlates with nearby gene expression, and eRNA expression can predict tissue-specific enhancers. Enhancer-associated RNAs are canonically under-polyadenylated and ncRNAs are highly tissue-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23, C76-C77 are background knowledge claims supported by appropriate citations to prior literature. These establish the conceptual framework for using ncRNA transcription to identify functional enhancers and justify the experimental approach (non-polyadenylated RNA sequencing).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "CheRNAs have been shown to act locally to promote proximal gene transcription in a tissue-specific fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is a background claim supported by citations (Werner and Ruthenburg 2015; Werner et al. 2017) that provides context for interpreting the chromatin enrichment results and the local regulatory function of RACER.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The differential ncRNA approach provides non-redundant data compared to other state-of-the-art methods for defining enhancers using genomic accessibility or histone status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by the VISTA database validation (Figure 2D) showing >2-fold improvement in precision, and by examples like the Sln locus where ncRNA-based identification found enhancers missed by ChIP-seq. The non-redundancy is demonstrated through the limited overlap in Venn diagrams and improved predictive performance.",
+    "result_type": "MAJOR"
+  }
+]

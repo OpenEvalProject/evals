@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The ZRS enhancer exists in differential chromatin states across the limb bud: H3K4me1 is enriched throughout the distal mesenchyme (both anterior and posterior), while H3K27ac is enriched specifically in the distal posterior region (ZPA) and is skewed toward the 5' spatiotemporal domain of the ZRS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C19 are supported by ChIP-qPCR and ChIP-on-chip data (Figure 1B, 1D) showing differential enrichment patterns. The spatial dissection approach provides appropriate controls (proximal vs distal, anterior vs posterior). The interpretation that H3K4me1 marks a poised state while H3K27ac marks active enhancers is consistent with established chromatin biology (C8, C9). Statistical significance is indicated (C10, C12) and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31"
+    ],
+    "result": "The 14Fp limb-derived cell line recapitulates the poised chromatin state of the ZRS (H3K4me1+/H3K27ac-) and Shh can be activated by TSA treatment, with H3K27ac enrichment and RNA Pol II recruitment occurring at both the ZRS and Shh promoter within 6-24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 establish the 14Fp cell line as a valid model system. RNA-seq confirms expression of limb markers except Shh (C20), ChIP-on-chip shows the poised state (C21-C22), and TSA treatment induces Shh with temporal correlation to H3K27ac enrichment (C23-C27). Control cell lines (E14, MD) lacking H3K4me1 at ZRS do not respond to TSA (C28), supporting specificity. Pol II recruitment data (C30-C31) further validates ZRS involvement. Time course experiments and multiple replicates strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C78"
+    ],
+    "result": "Upon TSA-induced activation, the ZRS physically interacts with the Shh promoter as demonstrated by 4C-seq, with highly significant interactions detected at 18 and 24 hours (q-values <5\u00d710\u207b\u00b9\u2070 and <7.8\u00d710\u207b\u00b3\u2075 respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C78 are supported by 4C-seq data (Figure 3A) showing statistically significant ZRS-Shh promoter interactions upon activation. The q-values indicate robust statistical significance. Quality control gels (Figure 2\u2014figure supplement 3D-F) demonstrate proper library preparation. The interpretation that chromatin reorganization occurs upon activation is reasonable, though the claim that proximity occurs regardless of activity (C34, citing Williamson 2016) suggests the increased interaction reflects functional engagement rather than mere spatial proximity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "FGF signaling is required for establishing and maintaining the poised state of the ZRS: FGF inhibition (NIN/BGJ) reduces H3K4me1 enrichment at the ZRS in both cell lines and limb explants, while FGF8/10 treatment of proximal limb tissue induces H3K4me1 enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 and C70-C72 demonstrate FGF's role through loss-of-function (NIN/BGJ inhibition) and gain-of-function (FGF8/10 treatment) experiments. ChIP data show H3K4me1 loss upon FGF inhibition (C41-C42) and gain upon FGF treatment (C43). Controls include Grem1/Etv4 expression changes confirming FGF pathway modulation (C39-C40) and Rbm33 as a genomic control unaffected by treatment (C41). Cell viability assays (Figure 4\u2014figure supplement 1A-B) rule out toxicity. The convergence of cell line and ex vivo limb culture data strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C81",
+      "C86",
+      "C87"
+    ],
+    "result": "GABP\u03b1 activates the ZRS by recruiting p300 and increasing H3K27ac: GABP\u03b1 and p300 co-localize at the ZRS, physically interact, and GABP\u03b1 overexpression increases H3K27ac and Shh expression while displacing the repressor ETV4. FGF signaling is required for GABP\u03b1/p300 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 and C81-C87 are supported by multiple complementary approaches: ChIP-on-chip shows co-localization (C47), co-IP demonstrates physical interaction (C48), siRNA knockdown reduces Shh activation (C49), and overexpression increases Shh and H3K27ac (C50-C51, C53). The displacement of ETV4 upon GABP\u03b1 overexpression (C52, C86) suggests competitive binding. FGF dependence (C55-C56) links this mechanism to the priming pathway. The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ETV4 represses ZRS activity by recruiting HDAC2 to maintain low H3K27ac levels: ETV4 and HDAC2 co-localize at the ZRS and physically interact, knockdown of either factor induces Shh expression, and both are displaced upon TSA treatment or GABP\u03b1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 and C88-C93 establish ETV4's repressive mechanism through ChIP-on-chip showing co-localization (C61-C62), co-IP demonstrating interaction (C63, C90), and functional validation via siRNA knockdown (C59-C60, C64, C91). The lack of additive effect with Hdac1/Hdac2 double knockdown (C60) suggests specificity for HDAC2. Displacement upon activation (C65, C92) is consistent with relief of repression. The data converge to support a coherent repressive mechanism, though the claim that ETV4 is 'one of the dominant factors' (C88) may be overstated without quantitative comparison to other repressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C67",
+      "C68",
+      "C73",
+      "C94",
+      "C97"
+    ],
+    "result": "ZRS activation is a two-step process: FGF signaling first primes the ZRS broadly across the distal mesenchyme (establishing H3K4me1), then additional signals in the posterior ZPA activate the enhancer (establishing H3K27ac), with FGF playing dual roles by both priming the enhancer and inducing the repressor ETV4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C67-C68, C73, C94, and C97 synthesize the findings into a coherent model. The two-step model is supported by the differential spatial patterns of H3K4me1 (broad distal) vs H3K27ac (posterior ZPA), the FGF requirement for H3K4me1, and the balance between GABP\u03b1 activation and ETV4 repression. The dual role of FGF (C97) is supported by data showing FGF induces both priming and ETV4 expression (C96). This integrative model is well-supported by the experimental data, though the identity of 'additional signals' in the posterior remains undefined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C95"
+    ],
+    "result": "The poised state of the ZRS explains why disease-causing mutations cause ectopic Shh expression restricted to the distal mesenchyme: mutations can only activate the enhancer where it is already primed by FGF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 and C95 connect the findings to disease mechanisms. The observation that all examined ZRS mutations cause ectopic expression only in the distal mesenchyme (C76) is consistent with the requirement for the poised state. This is supported by prior work (C75, citing Anderson 2012) and provides a mechanistic explanation for the spatial restriction of disease phenotypes. The logic is sound and integrates well with the experimental findings, though this result is more interpretive than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C13",
+      "C101"
+    ],
+    "result": "Background on ZRS enhancer: The ZRS is a ~780 bp enhancer located 1 Mb from Shh that controls spatiotemporal Shh expression in the limb ZPA, contains two functional domains (5' spatiotemporal and 3' long-range), and is mutated in >20 limb malformation syndromes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C7, C13, and C101 provide established background information supported by multiple citations to prior work. These are well-documented facts in the field and provide necessary context. This is foundational knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C29"
+    ],
+    "result": "Background on chromatin marks: H3K4me1 marks poised and active enhancers, H3K27ac (with H3K4me1) marks active enhancers, and RNA Pol II occupies active regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C29 cite established chromatin biology principles (Heintzman 2007, Rada-Iglesias 2012, De Santa 2010, Kim 2010). These are well-accepted in the field and provide the interpretive framework for the ChIP experiments. This is background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C69",
+      "C96"
+    ],
+    "result": "Background on FGF signaling in limb development: FGF10 and AER-derived FGFs maintain the distal progress zone and Shh expression in the ZPA, with FGF inducing ETV4 expression and repressing Grem1 as part of a feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C38, C69, and C96 cite established roles of FGF signaling in limb development from multiple prior studies. These provide necessary context for interpreting the FGF experiments. This is background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C57",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C102",
+      "C103"
+    ],
+    "result": "Background on ETS factors at ZRS: GABP\u03b1/ETS1 activate the ZRS and recruit p300 (shown in other systems), while ETV4/ETV5 repress ZRS activity, with mutations disrupting this balance causing limb defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C57, C80, C82-C84, C102-C103 cite prior work on ETS factor roles at the ZRS (Lettice 2012) and GABP\u03b1-p300 interactions in other systems (Kang 2008, Resendes 2006, Ravel-Chapuis 2007). These provide context for the mechanistic studies. The current work extends these findings by demonstrating the mechanisms in the limb system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C99",
+      "C100"
+    ],
+    "result": "Background on ZRS-Shh chromatin interactions: Prior 3C studies showed physical ZRS-Shh promoter interactions in expressing limb regions, with the intervening domain being constitutively compacted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C99-C100 cite prior 3C and FISH studies (Amano 2009, Williamson 2016) establishing that ZRS-Shh interactions occur in expressing tissues. This provides context for the 4C-seq experiments showing increased interactions upon activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Methods: The 14Fp cell line was derived from posterior distal E11.5 forelimb buds from Immortomouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 describes the cell line derivation with appropriate citation (Jat 1991). This is a methodological detail necessary for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1215 @@
+{
+  "submission": {
+    "id": "ae40bc83-faa7-4343-8d49-8bf270af5d6c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:11:30.298708Z",
+    "updated_at": "2025-12-01T22:11:30.298708Z"
+  },
+  "content": [
+    {
+      "id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "submission_id": "ae40bc83-faa7-4343-8d49-8bf270af5d6c",
+      "content_type": "manuscript",
+      "content_text": "# The mechanism of variability in transcription start site selection\n\n## Authors\n\n- Libing Yu<sup>1</sup>\n- Jared T Winkelman<sup>1</sup>\n- Chirangini Pukhrambam<sup>2</sup>\n- Terence R Strick<sup>4</sup>\n- Bryce E Nickels<sup>2</sup> \u2020\n- Richard H Ebright<sup>1</sup> ([ORCID: 0000-0001-8915-7140](https://orcid.org/0000-0001-8915-7140)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry Rutgers University Piscataway United States\n2. Waksman Institute Rutgers University Piscataway United States\n3. Department of Genetics Rutgers University Piscataway United States\n4. Ecole Normale Sup\u00e9rieure Institut de Biologie de l\u2019Ecole Normale Sup\u00e9rieure (IBENS), CNRS, INSERM, PSL Research University Paris France\n5. Programme Equipe Labellis\u00e9es Ligue Contre le Cancer Paris France\n6. Institut Jacques Monod, CNRS, UMR7592, University Paris Diderot Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring transcription initiation, RNA polymerase (RNAP) binds to promoter DNA, unwinds promoter DNA to form an RNAP-promoter open complex (RPo) containing a single-stranded \u2018transcription bubble,\u2019 and selects a transcription start site (TSS). TSS selection occurs at different positions within the promoter region, depending on promoter sequence and initiating-substrate concentration. Variability in TSS selection has been proposed to involve DNA \u2018scrunching\u2019 and \u2018anti-scrunching,\u2019 the hallmarks of which are: (i) forward and reverse movement of the RNAP leading edge, but not trailing edge, relative to DNA, and (ii) expansion and contraction of the transcription bubble. Here, using in vitro and in vivo protein-DNA photocrosslinking and single-molecule nanomanipulation, we show bacterial TSS selection exhibits both hallmarks of scrunching and anti-scrunching, and we define energetics of scrunching and anti-scrunching. The results establish the mechanism of TSS selection by bacterial RNAP and suggest a general mechanism for TSS selection by bacterial, archaeal, and eukaryotic RNAP.\n\n## Introduction\n\nDuring transcription initiation, RNA polymerase (RNAP) and one or more transcription initiation factor bind to promoter DNA through sequence-specific interactions with core promoter elements, unwind a turn of promoter DNA to form an RNAP-promoter open complex (RPo) containing an unwound \u2018transcription bubble,\u2019 and select a transcription start site (TSS). The distance between core promoter elements and the TSS can vary. TSS selection is a multi-factor process, in which the outcome reflects the contributions of promoter sequence and reaction conditions. TSS selection by bacterial RNAP and the bacterial transcription initiation factor \u03c3 involves four promoter-sequence determinants: (i) distance relative to the promoter \u221210 element (preference for TSS selection at the position 7 bp downstream of the promoter \u221210 element; Aoyama and Takanami, 1985; S\u00f8rensen et al., 1993; Jeong and Kang, 1994; Liu and Turnbough, 1994; Walker and Osuna, 2002; Lewis and Adhya, 2004; Vvedenskaya et al., 2015; Winkelman et al., 2016a; Winkelman et al., 2016b); (ii) identities of the template-strand nucleotide at the TSS and the template-strand nucleotide immediately upstream of the TSS (strong preference for a template-strand pyrimidine at the TSS and preference for a template-strand purine immediately upstream of the TSS; Aoyama and Takanami, 1985; S\u00f8rensen et al., 1993; Jeong and Kang, 1994; Liu and Turnbough, 1994; Walker and Osuna, 2002; Lewis and Adhya, 2004; Vvedenskaya et al., 2015; Winkelman et al., 2016a; Winkelman et al., 2016b); (iii) the promoter \u2018core recognition element,\u2019 a segment of nontemplate-strand sequence spanning the TSS that interacts sequence-specifically with RNAP (preference for nontemplate-strand G immediately downstream of the TSS; Vvedenskaya et al., 2016), and (iv) the promoter \u2018discriminator element,\u2019 a nontemplate-strand sequence immediately downstream of the promoter \u221210 element that interacts sequence-specifically with \u03c3 (preference for TSS selection at upstream positions for purine-rich discriminator sequences, and preference for TSS selection at downstream positions for pyrimidine-rich discriminator sequences; Winkelman et al., 2016a, 2016b). In addition to these four promoter-sequence determinants, the concentrations of initiating NTPs (S\u00f8rensen et al., 1993; Liu and Turnbough, 1994; Walker and Osuna, 2002; Vvedenskaya et al., 2015; Wilson et al., 1992; Qi and Turnbough, 1995; Tu and Turnbough, 1997; Walker et al., 2004; Turnbough, 2008; Turnbough and Switzer, 2008) and DNA topology (Vvedenskaya et al., 2015) also influence TSS selection.\n\nIt has been hypothesized that variability in the distance between core promoter elements and the TSS is accommodated by DNA \u2018scrunching\u2019 and \u2018anti-scrunching,\u2019 the defining hallmarks of which are: (i) forward and reverse movements of the RNAP leading edge, but not the RNAP trailing edge, relative to DNA, and (ii) expansion and contraction of the transcription bubble (Vvedenskaya et al., 2015; Winkelman et al., 2016a, 2016b; Vvedenskaya et al., 2016; Robb et al., 2013). In previous work, we showed that TSS selection exhibits the first hallmark of scrunching in vitro (Winkelman et al., 2016a). Here, we show that TSS selection also exhibits the first hallmark of scrunching in vivo, show that TSS selection exhibits the second hallmark of scrunching and anti-scrunching, and define the energetics of scrunching and anti-scrunching.\n\n## Results and discussion\n\n### TSS selection exhibits first hallmark of scrunching--movements of RNAP leading edge but not RNAP trailing edge--both in vitro and in vivo\n\nIn our prior work, we demonstrated that bacterial TSS selection in vitro exhibits the first hallmark of scrunching by defining, simultaneously, the TSS, the RNAP leading-edge position, and RNAP trailing-edge position for transcription complexes formed on a library of 106 promoter sequences (Winkelman et al., 2016a). We used RNA-seq to define the TSS, and we used unnatural-amino-acid-mutagenesis, incorporating the photoactivatable amino acid p-benzoyl-L-phenylalanine (Bpa), and protein-DNA photocrosslinking to define RNAP-leading-edge and trailing-edge positions (Winkelman et al., 2016a). The results showed that the discriminator element (Haugen et al., 2006; Feklistov et al., 2006) influences TSS selection and does so through effects on sequence-specific \u03c3-DNA interaction that select between two alternative paths of the DNA nontemplate strand (Winkelman et al., 2016a). The results further showed that, as the TSS changes for different discriminator sequences, the RNAP-leading-edge position changes, but the RNAP-trailing-edge position does not change (Winkelman et al., 2016a). For example, replacing a GGG discriminator by a CCT discriminator causes a 2 bp downstream change in TSS (from the position 7 bp downstream of the \u221210 element to the position 9 bp downstream of the \u221210 element, due to differences in sequence-specific \u03c3-DNA interaction that result in different paths of the DNA nontemplate strand), causes a 2 bp downstream change in RNAP leading-edge position, but does not cause a change in RNAP trailing-edge position (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig1-v2.jpg)\n\n**Figure 1.:** (A) RNAP leading-edge and trailing-edge positions at promoters having GGG discriminator (TSS 7 bp downstream of \u221210 element; top) and CCT discriminator (TSS 9 bp downstream of \u221210 element; bottom). Changes in TSS selection result from changes in discriminator-sequence-dependent DNA scrunching. Gray, RNAP; yellow, \u03c3; blue, \u221210-element nucleotides; dark purple, GGG-discriminator nucleotides; light purple, CCT-discriminator nucleotides; i and i\u00a0+\u00a01, NTP binding sites; arrow, TSS; boxes, DNA nucleotides (nontemplate-strand nucleotides above template-strand nucleotides; nucleotides downstream of \u221210 element numbered); red, trailing-edge Bpa and nucleotide crosslinked to Bpa; pink, leading-edge Bpa and nucleotide crosslinked to Bpa. Scrunching is indicated by bulged-out nucleotides. Distance between leading-edge and trailing-edge crosslinks is indicated below RNAP. (B) RNAP trailing-edge crosslinking (top), TSS (middle), and RNAP leading-edge crosslinking (bottom) for promoters having GGG discriminator and CCT discriminator, in vitro (lanes 5\u20136) and in vivo (lanes 7\u20138). Horizontal dashed lines relate bands on gel (left) to nucleotide sequences (right).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Left column, procedure for mapping RNAP trailing edge relative to DNA in vivo. Right column, procedure for mapping RNAP leading edge relative to DNA in vivo. (A) Three-plasmid merodiploid system for co-production, in E. coli cells, of Bpa-labeled, decahistidine-tagged, mutationally inactivated, RNAP-derivative (gray, with red or pink circle indicating Bpa, triangle indicating decahistidine tag, and black X indicating mutational inactivation), in presence of unlabeled, untagged, wild-type RNAP (light gray). First plasmid carries gene for RNAP subunit with a nonsense (TAG) codon at the site for incorporation of Bpa (residue \u03b2\u02b9T48 for trailing edge; residue \u03b2\u02b9R1148 for leading edge); second plasmid carries genes for engineered Bpa-specific nonsense-supressor tRNA and Bpa-specific amino-acyl-tRNA synthetase; third plasmid carries promoter of interest; and chromosome carries wild-type RNAP subunit genes. (B) Procedure for protein-DNA photocrosslinking, entailing UV-irradiation of cells, lysis of cells, immobilized-metal-ion affinity chromatography (IMAC), denaturation, primer extension with 32P-5\u2019-end-labeled primer (asterisk denotes label), electrophoresis, and storage-phosphor imaging. Brackets represent steps performed in cells.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) RNAP leading-edge and trailing-edge positions for wild-type RNAP (WT; left) and mutationally inactivated RNAP (\u03b2\u02b9D460A; right) at promoters having GGG discriminator (TSS 7 bp downstream of \u221210 element; top) and CCT discriminator (TSS 9 bp downstream of \u221210 element; bottom). Black X, mutational inactivation due to \u03b2\u02b9D460A substitution. Other colors as in Figure 1A. (B) RNAP trailing-edge crosslinking (top), TSS (middle), and RNAP leading-edge crosslinking (bottom) for wild-type RNAP (WT; left) and mutationally inactivated RNAP (\u03b2\u02b9D460A; right) at promoters having GGG discriminator and CCT discriminator, in absence and presence of NTPs. Horizontal dashed lines relate bands on gel (left) to nucleotide sequences (right).\n\nHere, to determine whether bacterial TSS selection in vivo also exhibits the first hallmark of scrunching, we adapted the above unnatural-amino-acid-mutagenesis and protein-DNA-photocrosslinking procedures to define RNAP leading-edge and trailing-edge positions in TSS selection in living cells (Figure 1, Figure 1\u2014figure supplements 1\u20132). We developed approaches to assemble, trap, and UV-irradiate RPo formed by a Bpa-labeled RNAP derivative in living cells, to extract crosslinked material from cells, and and to map crosslinks at single-nucleotide resolution (Figure 1\u2014figure supplement 1). In order to assemble, trap, and UV-irradiate RPo in living cells, despite the presence of high concentrations of initiating substrates that rapidly convert RPo into transcribing complexes, we used a mutationally inactivated RNAP derivative, \u03b2\u2019D460A, that lacks a residue required for binding of the RNAP-active-center catalytic metal ion and initiating substrates (Zaychikov et al., 1996) (Figure 1\u2014figure supplements 1\u20132). Control experiments confirm that, in vitro, in both the absence and presence of initiating substrates, the mutationally inactivated RNAP derivative remains trapped in RPo, exhibiting the same pattern of leading-edge and trailing-edge crosslinks as for\u00a0wild-type RNAP in the absence of initiating substrates (Figure 1\u2014figure supplement 2). In order to introduce Bpa at the leading-edge and trailing-edge of RPo in living cells, we co-produced, in Escherichia coli, a Bpa-labeled, decahistidine-tagged, mutationally inactivated RNAP derivative in the presence of unlabeled, untagged, wild-type RNAP, using a three-plasmid system comprising (i) a plasmid carrying a gene for RNAP \u03b2\u2019 subunit that contained a nonsense codon at the site for incorporation of Bpa, the \u03b2\u02b9D460A mutation, and a decahistidine coding sequence; (ii) a plasmid carrying genes for an engineered Bpa-specific nonsense-suppressor tRNA and an engineered Bpa-specific aminoacyl-tRNA synthase (Chin et al., 2002); and (iii) a plasmid containing a promoter of interest (Figure 1\u2014figure supplement 1A). (Using this merodiploid system, with both a plasmid-borne mutant gene for \u03b2\u02b9 subunit and a chromosomal wild-type gene for \u03b2\u02b9 subunit, enabled analysis of the mutationally inactivated RNAP derivative without loss of viability.) In order to perform RNAP-DNA crosslinking and to map resulting RNAP-DNA crosslinks, we then\u00a0grew cells in medium containing Bpa, UV-irradiated cells, lysed cells, purified crosslinked material using immobilized metal-ion-affinity chromatography targeting the decahistidine tag on the Bpa-labeled, decahistidine-tagged, mutationally inactivated RNAP derivative, and mapped crosslinks using primer extension (Figure 1\u2014figure supplement 1B). The results showed an exact correspondence of crosslinking patterns in vitro and in vivo (Figure 1B, \u2018in vitro\u2019 vs. \u2018in vivo\u2019 lanes). The RNAP leading edge crosslinked 2 bp further downstream on CCT than on GGG, whereas the RNAP trailing edge crosslinked at the same positions on CCT and GGG (Figure 1B). We conclude that TSS selection in vivo shows the first hallmark of scrunching.\n\n### TSS selection exhibits second hallmark of scrunching--changes in size of transcription bubble\n\nThe results in Figure 1 establish that TSS selection in vitro and in vivo exhibits the first hallmark of scrunching. However, definitive demonstration that TSS selection involves scrunching also requires demonstration of the second hallmark of scrunching: that\u00a0is, changes in transcription-bubble size. To determine whether bacterial TSS selection exhibits the second hallmark of scrunching we used a magnetic-tweezers single-molecule DNA-nanomanipulation assay that enables detection of RNAP-dependent DNA unwinding with near-single-base-pair spatial resolution and sub-second temporal resolution (Revyakin et al., 2004, 2005, 2006) to assess whether TSS selection correlates with transcription-bubble size for GGG and CCT promoters (Figure 2). The results indicate that transition amplitudes for RNAP-dependent DNA unwinding upon formation of RPo with CCT are larger than those for formation of RPo with GGG, on both positively and negatively supercoiled templates (Figure 2B, left and center). Transition-amplitude histograms confirm that transition amplitudes with CCT are larger than with GGG, on both positively and negatively supercoiled templates (Figure 2B, right). By combining the results with positively and negatively supercoiled templates to deconvolve effects of RNAP-dependent DNA unwinding and RNAP-dependent compaction (Revyakin et al., 2004, 2005, 2006), we find a 2 bp difference in RNAP-dependent DNA unwinding for CCT vs. GGG (Figure 2C), corresponding exactly to the 2 bp difference in TSS selection (Figure 1B). We conclude that TSS selection shows the second hallmark of scrunching.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig2-v2.jpg)\n\n**Figure 2.:** (A) Magnetic-tweezers single-molecule DNA nanomanipulation (Revyakin et al., 2004; Revyakin et al., 2005; Revyakin et al., 2006). End-to-end extension (l) of a mechanically stretched, positively supercoiled (left), or negatively supercoiled (right), DNA molecule is monitored. Unwinding of n turns of DNA by RNAP results in compensatory gain of n positive supercoils or loss of n negative supercoils, and movement of the bead by n*56 nm. (B) Single-molecule time traces and transition-amplitude histograms for RPo at promoters having GGG discriminator or CCT discriminator. Upper subpanel, positively supercoiled DNA; lower subpanel, negatively supercoiled DNA. Green points, raw data (30 frames/s); red points, averaged data (1 s window); horizontal black lines, wound and unwound states of GGG promoter; dashed horizontal black line, unwound state of CCT promoter; vertical dashed lines, means; \u0394lobs,pos, transition amplitude with positively supercoiled DNA; \u0394lobs,neg, transition amplitude with negatively supercoiled DNA;\u00a0\u0394$l\u00af$obs,pos, mean\u00a0\u0394lobs,pos; \u0394$l\u00af$obs,neg, mean \u0394lobs,neg. (C) Differences in \u0394$l\u00af$obs,pos,\u00a0\u0394$l\u00af$obs,neg, and DNA unwinding between GGG-discriminator promoter and CCT-discriminator promoter (means\u00a0\u00b1\u00a0SEM).\n\n### TSS selection downstream and upstream of modal TSS involves scrunching and anti-scrunching, respectively: forward and reverse movements of RNAP leading edge\n\nAccording to the hypothesis that TSS selection involves scrunching or anti-scrunching, TSS selection at the most frequently observed, modal TSS position (7 bp downstream of \u221210 element for majority of discriminator sequences, including GGG) involves neither scrunching nor anti-scrunching, TSS selection downstream of the modal position involves scrunching (transcription-bubble expansion), and TSS selection upstream of the modal position involves anti-scrunching (Vvedenskaya et al., 2015; Winkelman et al., 2016a, 2016b; Vvedenskaya et al., 2016; Robb et al., 2013). The results in Figures 1\u20132 apply to the modal TSS position and a TSS position 2 bp downstream of the modal TSS position. To generalize and extend the results to a range of different TSS positions, including a position upstream of the modal TSS position expected to involve anti-scrunching, we exploited the ability of oligoribonucleotide primers (\u2018nanoRNAs\u2019;\u00a0Goldman et al., 2011) to program TSS selection (Figure 3A, Figure 3\u2014figure supplement 1). We analyzed a consensus bacterial promoter, lacCONS, and used four ribotrinucleotide primers, UGG, GGA, GAA, and AAU, to program TSS selection at positions 6, 7, 8, and 9 bp downstream of the \u221210 element (Figure 3A). Experiments analogous to those in Figure 1 show a one-for-one, bp-for-bp correlation between primer-programmed changes in TSS and changes in RNAP-leading-edge position. The leading-edge crosslink positions with the four primers differed in single-nucleotide increments, but the trailing-edge crosslink positions were the same (Figure 3B). With the primer GGA, which programs TSS selection at the modal position (7 bp downstream of \u221210 element for this discriminator sequence), the leading-edge crosslinks were exactly as in experiments with no primer (Figure 3\u2014figure supplement 1). With primers GAA and AAU, which program TSS selection 1 and 2 bp downstream (positions 8 and 9), leading-edge crosslinks were 1 and 2 bp downstream of crosslinks with GGA (Figure 3B). With primer UGG, which programs TSS selection 1 bp upstream (position 6), leading-edge crosslinks were 1 bp upstream of crosslinks with GGA (Figure 3B). The results show that successive single-base-pair changes in TSS selection are matched by successive single-base-pair changes in RNAP leading-edge position. We conclude that the first hallmark of scrunching is observed for a full range of TSS positions, including, importantly, a position upstream of the modal TSS expected to involve anti-scrunching.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig3-v2.jpg)\n\n**Figure 3.:** (A) Ribotrinucleotide primers program TSS selection at positions 6, 7, 8, and 9 bp downstream of \u221210 element (UGG, GGA, GAA, and AAU). Cyan, green, orange, and red denote primers UGG, GGA, GAA, and AAU, respectively. Rectangle with rounded corners highlights case of primer GGA, which programs TSS selection at same position as in absence of primer (7 bp downstream of \u221210 element). Other colors as in Figure 1A. (B) Use of protein-DNA photocrosslinking to define RNAP leading-edge and trailing-edge positions in vitro. RNAP trailing-edge crosslinking (top), TSS (middle), and RNAP leading-edge crosslinking (bottom) with primers UGG, GGA, GAA, and AAU (lanes 5\u20138). Horizontal dashed lines relate bands on gel (left) to nucleotide sequences (right).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) RNAP leading-edge and trailing-edge positions and RNAP-dependent DNA unwinding with primers programming TSS selection at positions 6, 7, 8, and 9 bp downstream of \u221210 element (left panel), and with no primer (right panel). Black rectangle with rounded corners highlights case of primer GGA, which programs TSS selection at position 7. Gray rectangle with rounded corners highlights case of no primer, which also yields TSS selection at position 7. (B) Use of protein-DNA photocrosslinking to define RNAP leading-edge and RNAP trailing-edge positions. RNAP trailing-edge crosslinking (top), and RNAP leading-edge crosslinking (bottom) with primers UGG, GGA, GAA, and AAU (lanes 5\u20138), and with no primer (lane 9). Horizontal dashed lines relate bands on gel (left) to nucleotide sequences (right).\n\n### TSS selection downstream and upstream of modal TSS involves scrunching and anti-scrunching, respectively: increases and decreases in RNAP-dependent DNA unwinding\n\nWe next used magnetic-tweezers single-molecule DNA-nanomanipulation to analyze primer-programmed TSS selection. To enable single-base-pair resolution, we reduced the DNA-tether length from 2.0 kb to 1.3 kb, thereby reducing noise due to compliance (Figure 4\u2014figure supplement 1; see\u00a0Revyakin et al., 2005). The resulting transition amplitudes, transition-amplitude histograms, and RNAP-dependent DNA unwinding values for TSS selection with saturating concentrations of the four primers show a one-for-one, base-pair-for-base-pair correlation between primer-programmed changes in TSS and changes in RNAP-dependent DNA unwinding (Figure 4). With primer GGA, which programs TSS selection at the modal position (7 bp downstream of the \u221210 element for this discriminator sequence), DNA unwinding was exactly as in experiments with no primer (Figure 4\u2014figure supplement 2). With primers GAA and AAU, which program TSS selection 1 and 2 bp further downstream (positions 8 and 9), DNA unwinding was\u00a0~1 and\u00a0~2 bp greater than with GGA (Figure 4). With primer UGG, which programs TSS selection 1 bp upstream, DNA unwinding was\u00a0~1 bp less than that in experiments with GGA (Figure 4). The results show that successive single-base-pair changes in TSS selection are matched by successive single-base-pair changes in DNA unwinding for a full range of TSS positions including, importantly, a position upstream of the modal TSS expected to involve anti-scrunching. Taken together, the results of protein-DNA photocrosslinking (Figure 3, Figure 3\u2014figure supplement 1) and DNA-nanomanipulation (Figure 4, Figure 4\u2014figure supplement 2) demonstrate, definitively, the scrunching/anti-scrunching hypothesis for TSS selection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig4-v2.jpg)\n\n**Figure 4.:** (A) Use of single-molecule DNA nanomanipulation to define RNAP-dependent DNA unwinding. Single-molecule time traces with primers UGG, GGA, GAA, and AAU\u00a0(positively supercoiled DNA in upper panel; negatively supercoiled DNA in lower panel). Rectangle with rounded corners highlights case of primer GGA, which programs TSS selection at position 7. Colors as in Figure 2B. (B) Transition-amplitude histograms (positively supercoiled DNA in upper\u00a0panel; negatively supercoiled DNA in lower panel). (C) Differences in \u0394$l\u00af$obs,pos,\u00a0\u0394$l\u00af$obs,neg, and DNA unwinding (bottom panel) with primers UGG, GGA, GAA, and AAU (means\u00a0\u00b1\u00a0SEM).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) Single-molecule time traces and transition-amplitude histograms with 2.0 kb DNA fragment [fragment length in previous work (Revyakin et al., 2004; Revyakin et al., 2005) and in Figure 2] (A), and with 1.3 kb DNA fragment (fragment length in Figure 4 and Figure 4\u2014figure supplement 2) (B). Data for positively supercoiled DNA are at top; data for negatively supercoiled DNA are at bottom. Green points, raw data (30 frames/s); red points, averaged data (1 s window). (C) Mean transition amplitudes on positively supercoiled DNA\u00a0(\u0394$l\u00af$obs,pos),\u00a0mean transition amplitudes on negatively supercoiled DNA\u00a0(\u0394$l\u00af$obs,neg), and DNA unwinding (means\u00a0\u00b1\u00a0SEM). Use of 1.3 kb DNA segment provides SEM\u00a0=\u00a00.5 bp for data subsets of n\u00a0=\u00a030, sufficient for single-base-pair resolution.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Single-molecule time traces and transition-amplitude histograms with GGA, which programs TSS selection 7 bp downstream of the \u221210 element, and and with no primer, which also yields TSS selection 7 bp downstream of the \u221210 element (data for positively supercoiled DNA at top; data for negatively supercoiled DNA below). Primer GGA results in same RNAP-dependent DNA unwinding as in absence of primer.\n\n### Energetic costs of scrunching and anti-scrunching\n\nTo quantify the energetic costs of scrunching and anti-scrunching, we measured primer-concentration dependences of lifetimes of unwound states (Figures 5\u20136, Figure 6\u2014figure supplement 1). For each primer, increasing the primer concentration increases the lifetime of the unwound state (tunwound), as expected for coupled equilibria of promoter unwinding, promoter scrunching, and primer binding (Figures 5\u20136). The results in Figure 6D show that the slopes of plots of mean tunwound ($t\u00af$unwound) vs. primer concentration differ for different primers. Fitting the results to the equation describing the coupled equilibria (Figure 6C) yields values of KNpNpN, \u0394GNpNpN, Kscrunch, and \u0394Gscrunch for the four primers (Figure 6E, Figure 6\u2014figure supplement 1). The results indicate that scrunching by 1 bp requires 0.7 kcal/mol, scrunching by 2 bp requires 1.7 kcal/mol, and anti-scrunching by 1 bp requires 1.8 kcal/mol (Figure 6E, Figure 6\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig5-v2.jpg)\n\n**Figure 5.:** (A) Single-molecule time traces at low (left) and high (right) primer concentrations. Black bars, lifetimes of unwound states (tunwound). Colors as in Figure 2B. (B) tunwound distributions and mean tunwound ($t\u00af$unwound). $t\u00af$unwound increases with increasing primer concentrations.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig6-v2.jpg)\n\n**Figure 6.:** (A) Coupled equilibria for promoter scrunching or anti-scrunching (Kscrunch) and primer binding (KNpNpN). (B) Equations for promoter binding (KB), promoter unwinding (k2/k-2), promoter scrunching or anti-scrunching (Kscrunch), and primer binding (KNpNpN). (C) Relationship between $t\u00af$unwound, Kscrunch, KNpNpN, and primer concentration. (D) Dependences of mean lifetimes of unwound states ($t\u00af$unwound) on primer concentration for primers UGG, GGA, GAA, and AAU (means\u00a0\u00b1\u00a0SEM). (E) Values of Kscrunch and \u0394Gscrunch calculated by fitting data in (D) to equation in (C) using k-2\u00a0=\u00a01/$t\u00af$unwound in absence of primer (Revyakin et al., 2004) (means\u00a0\u00b1\u00a0SEM). Colors as in Figure 3. (F) TSS distributions predicted by Boltzmann-distribution probabilities for \u0394Gscrunch values in (E) (left) and observed in analysis of comprehensive library of TSS-region sequences in Vvedenskaya et al., 2015 (right).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32038/elife-32038-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Coupled equilibria for promoter scrunching or anti-scrunching (Kscrunch) and primer binding (KNpNpN) with primers UGG, GGA, GAA, and AAU. Rectangle with rounded corners highlights case of primer GGA, which programs TSS selection corresponding to modal TSS in absence of primer (7 bp downstream of \u221210 element). Colors as in Figure 3A. (B) Intercepts and slopes of linear-regression plots of primer-concentration dependence of $t\u00af$unwound (lines 1\u20132; Figure 6D), and KNpNpN, \u0394GNpNpN, Kscrunch, and \u0394Gscrunch calculated from intercepts and slopes (lines 3\u20136; calculated using equation of Figure 6C and k-2 = 1/$t\u00af$unwound in absence of primer) (Revyakin et al., 2004).\n\nThe results provide the first experimental determination of the energetic costs of scrunching and anti-scrunching in any context. We hypothesize that energetic costs on the same scale,\u00a0~0.7\u20131.8 kcal/mol per scrunched bp, also apply in the structurally and mechanistically related scrunching that occurs during initial transcription by RNAP (Revyakin et al., 2006; Kapanidis et al., 2006). We note that, according to this hypothesis, the scrunching by\u00a0~10 bp that occurs during initial transcription (Revyakin et al., 2006) results in an increase in the state energy of the transcription initiation complex by a total of\u00a0~7\u201318 kcal/mol (~10 x\u00a0~0.7\u20131.8 kcal/mol). This is an increase in state energy potentially sufficient to yield a \u2018stressed intermediate\u2019 (Revyakin et al., 2006; Straney and Crothers, 1987) having scrunching-dependent \u2018stress\u2019 comparable to the free energies of RNAP-promoter and RNAP-initiation-factor interactions that anchor RNAP at a promoter (~7\u20139 kcal/mol for sequence-specific component\u00a0of RNAP-promoter interaction and\u00a0~13 kcal/mol for RNAP-initiation-factor interaction; 24) and therefore is an increase in state energy potentially sufficient to pay energetic costs of breaking RNAP-promoter and RNAP-initiation-factor interactions in the transition from transcription initiation to transcription elongation.\n\n### Energetic costs of scrunching and anti-scrunching in TSS selection explain range and relative utilization of TSS positions\n\nThe \u0394Gscrunch values for bacterial TSS selection obtained in this work account for the range of TSS positions and the relative utilization of different TSS positions in bacterial transcription initiation. The \u0394Gscrunch values for TSS selection at positions 6, 7, 8, and 9 of a promoter where the modal TSS is position 7 (0\u20131.8 kcal/mol) all are less than or comparable to 3kBT (~2 kcal/mol), where kB is the Bolztmann constant and T is temperature in \u00b0K, indicating that TSS selection at these positions requires no energy beyond energy available in the thermal bath. Indeed, the probabilities of TSS selection at positions 6, 7, 8, and 9 as observed in a comprehensive analysis of TSS-region sequences (8%, 55%, 29%, 7%; Vvedenskaya et al., 2015) can be predicted from the Boltzmann-distribution probabilities for the \u0394Gscrunch values for TSS selection at these positions (3%, 70%, 23%, 4%; Figure 6F). The finding that values of \u0394Gscrunch for scrunching and anti-scrunching in TSS selection are\u00a0~1 kcal mol\u22121 bp\u22121 and ~2 kcal mol\u22121 bp\u22121, respectively, implies that TSS selection at positions\u00a0>2 bp downstream or\u00a0>1 bp upstream of the modal position would exceed the energy fluctuations available to 99% of molecules at 20\u201337\u00b0C, and therefore explains the observation that TSS selection\u00a0>2 bp downstream or\u00a0>1 bp upstream of the modal position occurs rarely (Vvedenskaya et al., 2015).\n\n### Unified mechanism of TSS selection by multisubunit RNAP\n\nTSS selection by archaeal RNAP, eukaryotic RNAP I, eukaryotic RNAP II from most species, and eukaryotic RNAP III involves the same range of TSS positions as TSS selection by bacterial RNAP (positions\u00a0\u00b1\u00a02 bp from the modal TSS;\u00a0Learned and Tjian, 1982; Samuels et al., 1984; Thomm and Wich, 1988; Reiter et al., 1990; Fruscoloni et al., 1995; Zecherle et al., 1996). We propose that TSS selection by all of these enzymes is mediated by scrunching and anti-scrunching driven by energy available in the thermal bath. In contrast, TSS selection by S. cerevisiae RNAP II involves a range of TSS positions of 10 s to 100 s of bp (long-range TSS scanning;\u00a0Giardina and Lis, 1993; Kuehner and Brow, 2006). We propose that TSS scanning by S. cerevisiae RNAP II also is mediated by scrunching and anti-scrunching, but, in this case, involves not only energy from the thermal bath, but also energy from the ATPase activity of RNAP II transcription factor TFIIH (Sainsbury et al., 2015). This proposal could account for the ATP-dependent, TFIIH-dependent cycles of DNA compaction and de-compaction of 10 s to 100 s of bp observed in single-molecule optical-tweezer analyses of TSS scanning by S. cerevisiae RNAP II (Fazal et al., 2015).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>strain, strain background(E. coli)</td>\n      <td>BL21(DE3)</td>\n      <td>New England BioLabs</td>\n      <td>Cat# C2527I</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background(E. coli)</td>\n      <td>NiCo21(DE3)</td>\n      <td>New England BioLabs</td>\n      <td>Cat# C2529H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (T. thermophilus)</td>\n      <td>HB8</td>\n      <td>ATCC</td>\n      <td>Cat# ATCC 27634</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pUC18</td>\n      <td>Thermo-Fisher</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pUC18-T20C2-lacCONS-CCT (plasmid)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>progenitors: PCR of T. thermophilus HB8, pUC18</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pUC18-T20C2-lacCONS-CCT (plasmid)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>progenitors: PCR of T. thermophilus HB8, pUC18</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pUC18-T20C2-lacCONS-CCT (plasmid)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>progenitors: PCR of T. thermophilus HB8, pUC18</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pVS10 (plasmid)</td>\n      <td>PMID: 12511572</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pIA900 (plasmid)</td>\n      <td>PMID: 25665556</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pIA900-beta'R1148Bpa (plasmid)</td>\n      <td>PMID: 26257284</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pIA900-beta'T48Bp</td>\n      <td>PMID: 26257284</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pIA900-beta'R1148Bpa;beta'D460A</td>\n      <td>this paper</td>\n      <td></td>\n      <td>progenitor: pIA900</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pIA900-beta'T48Bpa;beta'D460A</td>\n      <td>this paper</td>\n      <td></td>\n      <td>progenitor: pIA900</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pEVOL-pBpF (plasmid)</td>\n      <td>PMID: 12154230; Addgene</td>\n      <td>cat# 31190</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>UGG (oligoribonucleotide)</td>\n      <td>Trilink Biotechnologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>GGA (oligoribonucleotide)</td>\n      <td>Trilink Biotechnologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>GAA (oligoribonucleotide)</td>\n      <td>Trilink Biotechnologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>AAU (oligoribonucleotide)</td>\n      <td>Trilink Biotechnologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>JW 30 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>JW 61 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>JW 62 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>JW 85 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>LY10 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>LY11 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>S128a (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>S1219 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>S1220 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>RPOC820 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>RPOC3140 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>SbfRPOC50 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>Taq_rpoC_F (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>Taq_rpoC_R (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence-based reagent</td>\n      <td>XbaRPOC4050 (oligodeoxyribonucleotide)</td>\n      <td>Integrated DNA Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein (E.coli)</td>\n      <td>RNAP polymerase core enzyme</td>\n      <td>PMID: 12511572</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein (E.coli)</td>\n      <td>sigma70</td>\n      <td>PMID: 9157885</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein (E.coli)</td>\n      <td>RNAP core enzyme derivative beta'R1148Bpa</td>\n      <td>PMID: 26257284</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinantprotein (E.coli)</td>\n      <td>RNAP core enzyme derivative beta'T48Bpa</td>\n      <td>PMID: 26257284</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinantprotein (E.coli)</td>\n      <td>RNAP core enzyme derivative beta'R1148Bpa;D460A</td>\n      <td>this work</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein (E.coli)</td>\n      <td>RNAP core enzyme derivative beta'R1148Bpa;D460A</td>\n      <td>this work</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>Dam methyltransferase</td>\n      <td>New England BioLabs</td>\n      <td>Cat# M0222S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinantprotein</td>\n      <td>restriction endonuclease SbfI-HF</td>\n      <td>New England BioLabs</td>\n      <td>Cat# R3642S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinantprotein</td>\n      <td>restriction endonuclease XbaI</td>\n      <td>New England BioLabs</td>\n      <td>Cat# R0145S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>T4 polynucleotide kinase</td>\n      <td>New England BioLabs</td>\n      <td>Cat# M0201S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-digoxigenin antibody</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 11333089001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>Dynabeads MyOne Streptavidin C1</td>\n      <td>Thermo-Fisher</td>\n      <td>Cat# 650.01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>MagneHis protein purification system</td>\n      <td>Promega</td>\n      <td>Cat# V8500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>TRI reagent</td>\n      <td>Molecular Research Center</td>\n      <td>Cat# TR118</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound,drug</td>\n      <td>carbenicillin</td>\n      <td>Gold Biotechnology</td>\n      <td>cat# c-103-25</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound,drug</td>\n      <td>chloramphenicol</td>\n      <td>Gold Biotechnology</td>\n      <td>cat# c-105-25</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound,drug</td>\n      <td>spectinomycin</td>\n      <td>Gold Biotechnology</td>\n      <td>cat# 22189-32-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound,drug</td>\n      <td>streptomycin</td>\n      <td>Omnipur</td>\n      <td>cat# 3810-74-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>SigmaPlot</td>\n      <td>Systat Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>xvin</td>\n      <td>PMID: 16156080</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Proteins\n\nWild-type E. coli RNAP core enzyme used in transcription experiments was prepared from E. coli strain NiCo21(DE3) (New England BioLabs) transformed with plasmid pIA900 (Svetlov and Artsimovitch, 2015) as described (Winkelman et al., 2015). Wild-type RNAP for single-molecule DNA-nanomanipulation experiments was prepared from E. coli strain BL21(DE3) (New England Biolabs) transformed with plasmid pVS10 (Artsimovitch et al., 2003) as described (Artsimovitch et al., 2003).\n\nBpa-containing RNAP core-enzyme derivatives for in vitro protein-DNA photocrosslinking (\u03b2\u02b9R1148Bpa for analysis of RNAP leading-edge positions; \u03b2\u02b9T48Bpa for analysis of RNAP trailing-edge positions) were prepared from E. coli strain NiCo21(DE3) (New England BioLabs) co-transformed with plasmid pEVOL-pBpF (Chin et al., 2002; Addgene) and plasmid pIA900-\u03b2\u02b9R1148Bpa (Winkelman et al., 2015) or pIA900-\u03b2\u02b9T48Bpa (Winkelman et al., 2015), as in Winkelman et al. (2015).\n\nBpa-containing, mutationally inactivated, RNAP core-enzyme derivatives for in vitro and in vivo protein-DNA photocrosslinking (\u03b2\u02b9R1148Bpa;\u03b2\u02b9D460A for analysis of RNAP leading-edge positions; \u03b2\u02b9T48Bpa;\u03b2\u02b9D460A for analysis of RNAP trailing-edge positions) were prepared from E. coli strain NiCo21(DE3) (New England BioLabs) co-transformed with plasmid pEVOL-pBpF (Chin et al., 2002; Addgene) and plasmid pIA900-\u03b2\u02b9R1148Bpa;\u03b2\u02b9D460A or pIA900-\u03b2\u02b9T48Bpa;\u03b2\u02b9D460A [constructed from pIA900-\u03b2\u02b9R1148-Bpa (Winkelman et al., 2015) and pIA900-\u03b2\u02b9T48-Bpa (Winkelman et al., 2015) by use of site-directed mutagenesis with primer \u2018JW30\u2019, as in Winkelman et al.\u00a0(2015)].\n\n\u03c370 was prepared from E. coli strain BL21(DE3) (New England Biolabs) transformed with plasmid p\u03c370-His (Marr and Roberts, 1997) as described\u00a0(Marr and Roberts, 1997). To form RNAP holoenzyme, 1 \u03bcM RNAP core enzyme and 5 \u03bcM \u03c370 in 10 mM Tris-Cl, pH 8.0, 100 mM KCl, 10 mM MgCl2, 0.1 mM EDTA, 1 mM DTT, and 50% glycerol were incubated 30 min at 25\u00b0C.\n\n### Oligonucleotides\n\nOligodeoxyribonucleotides (desalted) were purchased from IDT (sequences in Supplementary file 1). Oligoribonucleotides (HPLC-purified) were purchased from Trilink Biotechnologies.\n\n### Determination of TSS position in vitro\n\nExperiments in Figure 1B and Figure 1\u2014figure supplement 2B were performed using reaction mixtures (60 \u03bcl) containing 20 nM RNAP holoenzyme derivative, 4 nM plasmid pCDF-CP-lacCONS-GGG or pCDF-CP-lacCONS-CCT, carrying derivatives of the lacCONS promoter (Mukhopadhyay et al., 2001) having a GGG or CCT discriminator [prepared by inserting a synthetic 248 bp DNA fragment (5'- GAAGCCCTGCATTAGGGGTACCCTAGAGCCTGACCGGCATTATAGCCCCAGCGGCGGATCCCTGCGGGTCGACAAGCTTGAATAGCCATCCCAATCGAACAGGCCTGCTGGTAATCGCAGGCCTTTTTATTTGGATGGAGCTCTGAGAGTCTTCGGTGTATGGGTTTTGCGGTGGAAACACAGAAAAAAGCCCGCACCTGACAGTGCGGGCTTTTTTTTTCGACCAAAGGGACGACCGGGTCGTTGGT- 3') between positions 3601 and 460 of pCDF-1b (EMD-Millipore), yielding plasmid pCDF-CP, followed by ligating a 200 bp BglI-digested DNA fragment carrying the lacCONS promoter with GGG or CCT discriminator (5'-GTTCAGAGTTCTACAGTCCGACGATCGCGGATGCTTGACAGAGTGAGCGCAACGCAATAACAGTCATCTAGATAGAACTTTAGGCACCCCAGGCTTGACACTTTATGCTTCGGCTCGTATAATGGGGATGCATGTGAGCGGATAACAATGCGGTTAGGCTTAGAGCGCTTAGTCGATGCTGGAATTCTCGGGTGCCAAGG\u22123' or 5'-GTTCAGAGTTCTACAGTCCGACGATCGCGGATGCTTGACAGAGTGAGCGCAACGCAATAACAGTCATCTAGATAGAACTTTAGGCACCCCAGGCTTGACACTTTATGCTTCGGCTCGTATAATCCTGATGCATGTGAGCGGATAACAATGCGGTTAGGCTTAGAGCGCTTAGTCGATGCTGGAATTCTCGGGTGCCAAGG\u22123'; \u221235 and \u221210 elements underlined; discriminator in bold) with BglI-digested plasmid pCDF-CP], 0 or 1 mM ATP, 0 or 1 mM CTP, 0 or 1 mM GTP, and 0 or 1 mM UTP in 60 \u00b5l 10 mM Tris-Cl, pH 8.0, 70 mM NaCl, 10 mM MgCl2, and 0.1 mg/ml bovine serum albumin. After 20 min at 37\u00b0C, reactions were terminated by addition of 100 \u00b5l 10 mM EDTA pH 8.0 and 1 mg/ml glycogen. Samples were extracted with acid phenol:chloroform (Sambrook and Russell, 2001) (Ambion), and RNA products were recovered by ethanol precipitation (Sambrook and Russell, 2001) and re-suspended in 6.5 \u00b5l water. The RNA products were analyzed by primer extension to define TSS positions. Primer-extension was performed by combining 6.5 \u00b5l RNA products in water, 1 \u00b5l 1 \u00b5M 32P-5'-end-labeled primer \u2018s128a\u2019 [Supplementary file 1; 200 Bq/fmol; prepared using [\u03b332P]-ATP (PerkinElmer) and T4 polynucleotide kinase (New England Biolabs); procedures as in Sambrook and Russell, 2001], and 1 \u00b5l 10x avian myelobastosis virus (AMV) reverse transcriptase buffer (New England BioLabs) heating 10 min at 90\u00b0C, cooling to 40\u00b0C at 0.1 \u00b0C/s, and incubating 15 min at 40\u00b0C; adding 0.5 \u03bcl 10 mM dNTP mix (2.5 mM dATP, 2.5 mM dGTP, 2.5 mM, dCTP, and 2.5 mM dTTP; New England Biolabs) and 1 \u03bcl 10 U/\u03bcl AMV reverse transcriptase (New England BioLabs); and incubating 1 hr at 50\u00b0C. Primer-extension reactions were terminated by heating 20 min at 85\u00b0C; 10 \u03bcl 1x TBE (Sambrook and Russell, 2001), 8 M urea, 0.025% xylene cyanol, and 0.025% bromophenol blue was added; and samples were analyzed by electrophoresis on 8 M urea, 1X TBE polyacrylamide gels UreaGel System; National Diagnostics) (procedures as in Sambrook and Russell, 2001), followed by storage-phosphor imaging (Typhoon 9400 variable-mode imager; GE Life Science). TSS positions were determined by comparison to products of a DNA-nucleotide sequencing reaction obtained using a PCR-generated DNA fragment containing positions \u2212129 to +71 of the lacCONS-GGG promoter and primer \u2018s128a\u2019 (Thermo Sequenase Cycle Sequencing Kit; Affymetrix; methods as per manufacturer). Experiments in Figure 3B, were performed analogously, but using a 1.3 kb DNA fragment carrying positions \u2212687 to +644 of the lacCONS promoter (Mukhopadhyay et al., 2001) prepared by PCR amplification of plasmid pUC18-T20C2-lacCONS [prepared by replacing the SbfI-XbaI segment of plasmid pUC18 (Thermo Scientific) with a 2.0 kb SbfI-XbaI DNA fragment obtained by PCR amplification of Thermus aquaticus rpoC gene with primers Taq_rpoC_F and Taq_rpoC_R (Supplementary file 1) and digestion with XbaI and SbfI-HF (New England BioLabs), yielding plasmid pUC18-T20C2, followed by inserting a synthetic 117 bp DNA fragment carrying the lacCONS promoter (5'-CGGATGCTTGACAGAGTGAGCGCAACGCAATAACAGTCATCTAGATAGAACTTTAGGCACCCCAGGCTTGACACTTTATGCTTCGGCTCGTATAATGTGTGGAATTGTGAGCGGATA-3'; \u221235 and \u221210 elements underlined; discriminator in bold) into the KpnI site of plasmid pUC18-T20C2] with primers \u2018LY10\u2019 and \u2018LY11\u2019 (Supplementary file 1), and performing experiments in the presence of 0 or 1 mM UGG, GGA, GAA, or AAU.\n\n### Determination of TSS position in vivo\n\nE. coli strain NiCo21(DE3) (New England BioLabs) transformed with plasmid pCDF-CP-lacCONS-GGG or pCDF-CP-lacCONS-CCT was plated on LB agar (Sambrook and Russell, 2001) containing 50 \u03bcg/ml spectinomycin and 50 \u03bcg/ml streptomycin, single colonies were inoculated into 25 ml LB broth (Sambrook and Russell, 2001) containing 50 \u00b5g/ml spectinomycin and 50 \u00b5g/ml streptomycin in 125 ml Bellco flasks, and cultures were shaken (220 rpm) at 37\u00b0C. When cell densities reached OD600\u00a0=\u00a00.6, 2 ml aliquots were centrifuged 2 min at 4\u00b0C at 23,000xg, and resulting cell pellets were frozen at \u221280\u00b0C. Cell pellets were thawed in 1 ml TRI Reagent (Molecular Research Center) at 25\u00b0C for 5 min, completely re-suspended by pipetting up and down, incubated 10 min at 70\u00b0C, and centrifuged 2 min at 25\u00b0C at 23,000 x g. Supernatants were transferred to fresh 1.7 ml microfuge tubes, 200 \u00b5l chloroform (Ambion) was added, vortexed, and samples were centrifuged 1 min at 25\u00b0C at 23,000 x g. Aqueous phases were transferred to a fresh tube and nucleic acids were extracted with acid phenol:chloroform (Sambrook and Russell, 2001). Nucleic acids were recovered by ethanol precipitation (Sambrook and Russell, 2001), and re-suspended in 20 \u03bcl 10 mM Tris-Cl, pH 8.0. Primer extension was performed as described in the preceding section.\n\n### Determination of RNAP leading-edge and trailing-edge positions in vitro: protein-DNA photocrosslinking in vitro\n\nExperiments in Figure 1B were performed using reaction mixtures (10 \u03bcl) containing 50 nM Bpa-containing RNAP holoenzyme derivative \u03b2\u02b9R1148Bpa (for analysis of RNAP leading-edge positions) or \u03b2\u02b9T48Bpa (for analysis of RNAP trailing-edge positions) and 4 nM plasmid pCDF-CP-lacCONS-GGG or plasmid pCDF-CP-lacCONS-CCT in 10 mM Tris-Cl, pH 8.0, 70 mM NaCl, 10 mM MgCl2, and 0.1 mg/ml bovine serum albumin. Reaction mixtures were incubated 5 min at 37\u00b0C, UV-irradiated 5 min at 25\u00b0C in a Rayonet RPR-100 photochemical reactor equipped with 16 \u00d7 350 nm tubes (Southern New England Ultraviolet), and resulting protein-DNA crosslinks were mapped using primer extension. Primer-extension reactions (12.5 \u00b5l) were performed by combining 2 \u00b5l aliquot of crosslinking reaction, 1 \u00b5l 1 \u00b5M 32P-5'-end-labeled primer \u2018s128a\u2019 (for analysis of leading-edge positions) or primer \u2018JW85\u2019 (for analysis of trailing-edge positions) [Supplementary file 1; 200 Bq/fmol; prepared using [\u03b332P]-ATP (PerkinElmer) and T4 polynucleotide kinase (New England Biolabs); procedures as in Sambrook and Russell, 2001, 1 \u03bcl 10X dNTPs (2.5 mM dATP, 2.5 mM dCTP, 2.5 mM dGTP, 2.5 mM TTP, 0.5 \u03bcl 5 U/\u03bcl Taq DNA polymerase (New England BioLabs), 5 \u03bcl 5 M betaine, 0.625 \u03bcl 100% dimethyl sulfoxide, and 1.25 \u00b5l 10x Taq DNA polymerase buffer (New England BioLabs); and cycling 16\u201340 times through 30 s at 95\u00b0C, 30 s at 53\u00b0C, and 30 s at 72\u00b0C. Primer-extension reactions were terminated, and primer-extension products were analyzed as in the preceding section. Experiments in Figure 1\u2014figure supplement 2B were performed analogously, but using Bpa-containing, mutationally inactivated, RNAP derivatives \u03b2\u02b9R1148Bpa; \u03b2'D460A (for analysis of RNAP leading-edge positions) and \u03b2\u02b9T48Bpa; \u03b2'D460A (for analysis of RNAP trailing-edge positions)\n\nExperiments in Figure 3B and Figure 3\u2014figure supplement 1B were performed analogously, but using reaction mixtures also containing 0 or 1 mM of ribotrinucleotide primers UGG, GGA, GAA, or AAU, and using 32P-5'-end-labeled primers \u2018JW62\u2019 and \u2018JW61\u2019 (Supplementary file 1) in primer-extension reactions.\n\n### Determination of RNAP leading-edge and trailing-edge positions in vivo: protein-DNA photocrosslinking in vivo\n\nExperiments in Figure 1B were performed using a three-plasmid merodiploid system that enabled production of a Bpa-containing, mutationally inactivated, decahistidine-tagged RNAP holoenzyme derivative in vivo and enabled trapping of RPo consisting of the Bpa-containing, mutationally inactivated, decahistidine-tagged RNAP holoenzyme derivative and a lacCONS promoter with GGG or CCT discriminator in vivo, and UV-irradiation of cells (Figure 1\u2014figure supplement 1).\n\nE. coli strain NiCo21(DE3) (New England BioLabs) transformed sequentially with (i) plasmid pCDF-CP-lacCONS-GGG or plasmid pCDF-CP-lacCONS-CCT, (ii) plasmid pIA900-\u03b2\u02b9T48Bpa; \u03b2\u02b9D460A or plasmid pIA900-\u03b2\u02b9R1148Bpa; \u03b2\u02b9D460A, and (iii) plasmid pEVOL-pBpF (Chin et al., 2002; Addgene) was plated to yield a confluent lawn on LB agar (Sambrook and Russell, 2001) containing 100 \u03bcg/ml carbenicillin, 50 \u03bcg/ml spectinomycin, 50 \u03bcg/ml streptomycin, and 25 \u03bcg/ml chloramphenicol; cells were scraped from the plate and used to inoculate 250 ml LB broth (as described above) containing 1 mM Bpa (Bachem), 100 \u03bcg/ml carbenicillin, 50 \u03bcg/ml spectinomycin, 50 \u03bcg/ml streptomycin, and 25 \u03bcg/ml chloramphenicol in a 1000 ml flask (Bellco) to yield OD600\u00a0=\u00a00.3; the culture was shaken (220 rpm) 1 hr at 37\u00b0C in the dark, isopropyl-\u03b2-D-thiogalactoside was added to 1 mM; and the culture was further shaken (220 rpm) 3 hr at 37\u00b0C in the dark. Aliquots (7 ml) were transferred to 13 mm x 100 mm borosilicate glass test tubes (VWR), UV-irradiated 20 min at 25\u00b0C in a Rayonet RPR-100 photochemical reactor equipped with 16 \u00d7 350 nm tubes (Southern New England Ultraviolet), harvested by centrifuging 15 min at 4\u00b0C at 3000xg, and cell pellets were frozen at \u221220\u00b0C. Cell pellets were thawed 30 min at 4\u00b0C, re-suspended in 40 ml 50 mM Na2HPO4 pH 8.0, 1.4 M NaCl, 20 mM imidazole, 14 mM \u03b2-mercaptoethanol, 0.1% Tween20, and 5% ethanol containing 2 mg egg white lysozyme. Cells were lysed by sonication 5 min at 4\u00b0C., cell lysates were centrifuged 40 min at 4\u00b0C at 23,000xg, and supernatants were added to 1 ml Ni-NTA-agarose (Qiagen,\u00a0Germantown, MD) in 1 ml 50 mM Na2HPO4, pH 8.0, 1.4 M NaCl, 20 mM imidazole, 0.1% Tween-20, 5 mM \u03b2-mercaptoethanol, and 5% ethanol, and incubated 30 min at 4\u00b0C with gentle rocking. The Ni-NTA-agarose was loaded into a 15 ml polyprep column (BioRad), the resulting column was washed with 10 ml of 50 mM Na2HPO4, pH 8.0, 300 mM NaCl, 20 mM imidazole, 0.1% Tween-20, 5 mM \u03b2-mercaptoethanol, and 5% ethanol and eluted with 3 ml of the same buffer containing 300 mM imidazole. The eluate was concentrated to 0.2 ml using an 1000 MWCO Amicon Ultra-4 centrifugal filter (EMD Millipore); the buffer was exchanged to 0.2 ml 20 mM Tris-Cl, pH 8.0, 200 mM KCl, 20 mM MgCl2, 0.2 mM EDTA, and 1 mM DTT using the 1000 MWCO Amicon Ultra-4 centrifugal filter (EMD Millipore); 0.2 ml glycerol was added; and the sample was stored at \u221220\u00b0C. Protein-DNA crosslinks were mapped by denaturation followed by primer extension. Denaturation was performed by combining 25 \u03bcl crosslinked RNAP-DNA, 25 \u03bcl water, 15 \u03bcl 5 M NaCl, and 6 \u03bcl 100 \u00b5g/ml heparin; heating 5 min at 95\u00b0C; cooling on ice. Denatured crosslinked RNAP-DNA was purified by adding 20 \u00b5l MagneHis Ni-particles (Promega) equilibrated and suspended in 10 mM Tris-Cl, pH 8.0, 1.2 M NaCl, 10 mM MgCl2, 10 \u03bcg/ml heparin, and 0.1 mg/ml bovine serum albumin; washing once with 50 \u00b5l 10 mM Tris-Cl, pH 8.0, 1.2 M NaCl, 10 mM MgCl2, 10 \u03bcg/ml heparin, and 0.1 mg/ml bovine serum albumin; washed twice with 50 \u00b5l 1x Taq DNA polymerase buffer (New England BioLabs); and resuspended in 10 \u00b5l 1x Taq DNA polymerase buffer. Primer extension was performed using 2 \u03bcl aliquots of purified denatured crosslinked RNAP-DNA, using procedures essentially as described above for experiments in Figure 1B.\n\n### Determination of RNAP-dependent DNA unwinding by single-molecule DNA-nanomanipulation: DNA constructs\n\n2.0 kb DNA fragments carrying single centrally located lacCONS-GGG, lacCONS-CCT, or lacCONS promoters were prepared by digesting plasmid pUC18-T20C2-lacCONS-GGG or plasmid pUC18-T20C2-lacCONS-CCT [prepared by inserting a synthetic 80 bp DNA fragment carrying a derivative of the lacCONS promoter (Mukhopadhyay et al., 2001) having a GGG or CCT discriminator (5'-CATCTAGATCACATTTTAGGCACCCCAGGCTTGACACTTTATGCTTCGGCTCGTATAATGGGGATGCATGTGAGCGGATA-3' or 5'-CATCTAGATCACATTTTAGGCACCCCAGGCTTGACACTTTATGCTTCGGCTCGTATAATCCTGATGCATGTGAGCGGATA \u22123'; \u221235 and \u221210 elements underlined; discriminator in bold) into the KpnI site of plasmid pUC18-T20C2] or plasmid pUC18-T20C2-lacCONS with XbaI and SbfI-HF (New England BioLabs), followed by agarose gel electrophoresis.\n\n1.3 kb DNA fragments carrying a single centrally located lacCONS promoter were prepared by PCR amplification of plasmid pUC18-T20C2-lacCONS, using primers \u2018LY10\u2019 and \u2018LY11\u2019 (Supplementary file 1), followed by treatment with Dam methyltransferase (New England BioLabs), digestion with XbaI and SbfI-HF (New England BioLabs), and agarose gel electrophoresis.\n\nDNA constructs for magnetic-tweezers single-molecule DNA-nanomanipulation were prepared from the above 2.0 kb and 1.3 kb DNA fragments by ligating, at the XbaI end, a 1.0 kb DNA fragment bearing multiple biotin residues on both strands [prepared by PCR amplification of plasmid pARTaqRPOC-lacCONS using primers \u2018XbaRPOC4050\u2019 and \u2018RPOC3140\u2019 Supplementary file 1) and conditions as described (Revyakin et al., 2004, 2005, 2006, Revyakin et al., 2003\n\n### Determination of RNAP-dependent DNA unwinding by single-molecule DNA-nanomanipulation: data collection\n\nExperiments were performed essentially as described (Revyakin et al., 2004, 2005, 2006, Revyakin et al., 2003\n\nExperiments in Figure 2 (experiments addressing TSS selection for promoters with GGG or CCT discriminator sequence), were performed using standard reactions containing mechanically extended, torsionally constrained, 2.0 kb DNA molecule carrying GGG or CCT promoter (extension force\u00a0=\u00a00.3 pN; superhelical density\u00a0=\u00a00.021 for experiments with positively supercoiled DNA; superhelical density\u00a0=\u00a0\u22120.021 for experiments with negatively supercoiled DNA) and RNAP holoenzyme (10 nM for experiments with positively supercoiled DNA; 0.5 nM for experiments with negatively supercoiled DNA) in 25 mM Na-HEPES, pH 7.9, 75 mM NaCl, 10 mM MgCl2, 1 mM dithiothreitol, 0.1% Tween-20, 0.1 mg/ml bovine serum albumin) at 30\u00b0C. Data from each of three single DNA molecules were pooled [differences in plectoneme size (at superhelical density\u00a0\u00b1\u00a00.021) and \u0394$l\u00af$obs\u00a0\u2264\u00a05%].\n\nExperiments in Figure 4\u2014figure supplement 1 (experiments demonstrating that reduction in DNA-fragment length from 2.0 to 1.3 kb enables single-bp resolution) were performed using standard reactions containing mechanically extended, torsionally constrained, 2.0 kb or 1.3 kb DNA molecule carrying lacCONS promoter (extension force\u00a0=\u00a00.3 pN; initial superhelical density\u00a0=\u00a00.021 or 0.024 for experiments with 2.0 kb or 1.3 kb positively supercoiled DNA; superhelical density\u00a0=\u00a0\u22120.021 or \u22120.024 for experiments with 2.0 kb or 1.3 kb negatively supercoiled DNA) and RNAP holoenzyme (10 nM for experiments with positively supercoiled DNA; 0.5 nM for experiments with negatively supercoiled DNA) in the buffer of the preceding paragraph at 30\u00b0C. For each DNA-fragment length, data were collected on one single DNA molecule.\n\nExperiments in Figure 4 and Figure 4\u2014figure supplement 2 (experiments addressing primer-programmed TSS selection with primers UGG, GGA, GAA, AAU) were performed using standard reactions containing mechanically extended, torsionally constrained 1.3 kb DNA molecule carrying lacCONS promoter (extension force\u00a0=\u00a00.3 pN; initial superhelical density\u00a0=\u00a00.024 for experiments with positively supercoiled DNA; superhelical density\u00a0=\u00a0\u22120.024 for experiments with negatively supercoiled DNA) and RNAP holoenzyme (10 nM for experiments with positively supercoiled DNA; 0.5 nM for experiments with negatively supercoiled DNA) in the buffer of the preceding paragraph at 30\u00b0C. Primers UGG, GGA, GAA, and AAU were present at 0 or 1 mM, 0 or 1 \u00b5M, 0 or 2.5 \u00b5M, and 0 or 1 mM, respectively. For experiments with positively supercoiled DNA, data from each of seven single DNA molecules were normalized based on \u0394$l\u00af$obs,pos in absence of primer and pooled; for experiments with negatively supercoiled DNA, data from each of two single DNA molecules were normalized based on\u00a0\u0394$l\u00af$obs,neg in absence of primer and pooled.\n\nExperiments in Figures 5\u20136 and Figure 6\u2014figure supplement 1 (experiments addressing primer-concentration dependences of tunwound in primer-programmed TSS selection) were performed using standard reactions containing mechanically extended, torsionally constrained, 2.0 kb DNA molecule carrying lacCONS promoter (extension force\u00a0=\u00a00.3 pN; initial superhelical density\u00a0=\u00a00.021) and RNAP holoenzyme (10 nM) in the buffer of the preceding paragraph at 30\u00b0C. Each titration consisted of recordings in absence of primer followed by recordings in presence of primer at increasing concentrations. (0, 0.50, 0.90, 1.3, 250, 500, 750, and 1000 \u03bcM for UGG; 0, 0.25, 0.50, and 1.0 \u00b5M for GGA; 0, 0.50, 1.0, and 1.5 \u00b5M for GAA; 0, 0.40, 0.80, 1.2, 200, 400, 600, and 800 \u03bcM for AAU). For each titration, data were collected on one single DNA molecule.\n\nFor experiments with negatively supercoiled DNA, for which $t\u00af$unwound >> 1 h (Revyakin et al., 2004, 2005, 2006, Revyakin et al., 2003\n\n### Determination of RNAP-dependent DNA unwinding by single-molecule DNA-nanomanipulation: data reduction for determination of DNA unwinding\n\nRaw time traces were analyzed to yield DNA extension (l) as described (Revyakin et al., 2004, 2005, 2006, Revyakin et al., 2003\n\nChanges in l attributable to DNA unwinding (\u0394lu) and changes in l attributable to DNA compaction (\u0394lc) were calculated as: \u0394lu = (\u0394lobs,neg + \u0394lobs,pos)/2, and \u0394lc = (\u0394lobs,pos - \u0394lobs,neg)/2, where \u0394lobs,pos and \u0394lobs,neg are observed changes in l in experiments with positively supercoiled DNA and negatively supercoiled DNA, as described (Revyakin et al., 2004, 2005, 2006, Revyakin et al., 2003\n\n### Determination of RNAP-dependent DNA unwinding by single-molecule DNA-nanomanipulation: data reduction for determination of energetics of scrunching and anti-scrunching\n\nLifetimes of unwound states (tunwound) were extracted from single-molecule traces as described (Revyakin et al., 2004, 2005, 2006, Revyakin et al., 2003\n\nFor experiments in absence of primer (Qi and Turnbough, 1995; Figure 6\u2014figure supplement 1):\n\n$$\nR+P\u21ccK_{B}RPc\u21cck_{\u22122}k_{2}RPo\n$$\n\nwhere R, P, RPc, and RPo denote RNAP holoenzyme, promoter, RNAP-promoter closed complex, and RNAP-promoter open complex; and\n\n$$\nt\u00af_{unwound}=\\frac{1}{k_{\u22122}}\n$$\n\nFor experiments in presence of primer GGA, which programs TSS selection at modal position and therefore does not require scrunching or anti-scrunching for TSS selection (Figure 6\u2014figure supplement 1):\n\n$$\nR+P+NpNpN\u21ccK_{B}RPc+NpNpN\u21cck_{\u22122}k_{2}RPo+NpNpN\u21ccK_{NpNpN}RPo:NpNpN\n$$\n\nwhere NpNpN denotes primer; and\n\n$$\nt\u00af_{unwound}=\\frac{K_{NpNpN}}{k_{\u22122}}\u2217[NpNpN]+\\frac{1}{k_{\u22122}}\n$$\n\nFor experiments in presence of primer UGG, or GAA, or AAU, which program TSS selection at positions different form modal TSS, and therefore require scrunching or anti-scrunching for TSS selection (Figures 4\u20136 and Figure 6\u2014figure supplement 1):\n\n$$\nR+P+NpNpN\u21ccK_{B}RPc+NpNpN\u21cck_{\u22122}k_{2}RPo+NpNpN\u21ccK_{scrunch}RPo^{\u2032}+NpNpN\u21ccK_{NpNpN}RPo^{\u2032}:NpNpN\n$$\n\nwhere RPo' denotes a scrunched or anti-scrunched RPo; and\n\n$$\nt\u00af_{unwound}=\\frac{K_{NpNpN}\u2217K_{scrunch}}{k_{\u22122}}\u2217[NpNpN]+\\frac{1+K_{scrunch}}{k_{\u22122}}\n$$\n\nKscrunch, KNpNpN, \u0394GNpNpN, and \u0394Gscrunch were obtained by fitting slopes and y-intercepts of linear-regression fits of plots of $t\u00af$unwound vs. primer concentration (Figure 6D and Figure 6\u2014figure supplement 1) to the equation of Figure 6C, stipulating Kscrunch\u00a0=\u00a01 and \u0394Gscrunch\u00a0=\u00a00 for primer GGA, which programs TSS selection at modal position and therefore does not require scrunching or anti-scrunching for TSS selection.\n\n### Quantitation and statistical analysis\n\nData in Figure 2 are means\u00a0\u00b1\u00a0SEM of at least 70 technical replicates of each of three biological replicates (three single DNA molecules) for positively supercoiled DNA and at least 50 technical replicates of each of three biological replicates (three single DNA molecules) for negatively supercoiled DNA.\n\nData in Figure 4\u2014figure supplement 1A\u2013B are means\u00a0\u00b1\u00a0SEM of at least 100 technical replicates for a single DNA molecule (positively supercoiled DNA) or at least 70 technical replicates for a single DNA molecule (negatively supercoiled DNA).\n\nData in Figure 4\u2014figure supplement 1C are means\u00a0\u00b1\u00a0SEM of randomly selected subsets of n\u00a0=\u00a030. Similar results were obtained for ten different randomly selected subsets of n\u00a0=\u00a030.\n\nData in Figure 4B\u2013C and Figure 4\u2014figure supplement 2 are means\u00a0\u00b1\u00a0SEM of at least 40 technical replicates for each of seven biological replicates (seven single DNA molecules) for positively supercoiled DNA and at least 50 technical replicates for each of two biological replicates (two single DNA molecules) for negatively supercoiled DNA.\n\nData in Figures 5\u20136 and Figure 6\u2014figure supplement 1 are means\u00a0\u00b1\u00a0SEM of at least 150 technical replicates for one single DNA molecule for each of the four primers.\n",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "da0d96a1-1992-4614-adf8-3a32155ceabc",
+      "submission_id": "ae40bc83-faa7-4343-8d49-8bf270af5d6c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32038.018](https://doi.org/10.7554/eLife.32038.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The mechanism of transcription start site selection\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.\n\nAs you can see from the comments below, the reviewers agree that the work merits publication and is clearly written, adds to the mechanistic understanding of how the chosen transcription start site modulates scrunching and antiscrunching behavior, both in vitro and in vivo. I ask you to revise the manuscript in response to the comments and suggestions. Because of the nature of the comments, I do not believe additional experiments are needed.\n\nReviewer #1:\n\nIn previous studies, Ebright and Nickels determined TSS and positions of leading and trailing edges of E. coli RNA polymerase from randomly mutagenized library of promotor sequences. They found a strong correlation between TSS and leading edge position, not between TSS and trailing edge, leading to the proposal of scrunching and antiscrunching for TSS selection downstream and upstream of canonical TSS, respectively. There are three main results reported here.\n\n1) They developed an in vivo crosslinking to demonstrate that the leading edge movement seen in vitro is also seen in vivo.\n\n2) They used magnetic tweezers to confirm that DNA unwinding is beyond the canonical amount for scrunching and vice versa. Importantly, they could show the change in DNA unwinding amount precisely corresponds to the distance by which TSS moves.\n\n3) Finally, they determined the lifetime of the triplet primer bound state to canonical, scrunched and anti-scrunched transcription bubble as a function of primer concentration, allowing them to estimate the energetic cost of scrunching and anti-scrunching. Satisfyingly, the energetic cost they determined can explain the observed distribution of TSS from the library they studied previously.\n\nGenerally, the work is of high quality and provides additional validation to their prior proposals. There is no surprise or additional insight arising. The third component of this work provides a potentially important set of parameters, but what's unsatisfying is why certain sequences move TSS upstream vs downstream. Can the authors use the known sequence-dependent physical chemistry properties of DNA to predict which direction TSS moves?\n\nReviewer #2:\n\nBased on in vitro experiments, Ebright and Nichols have previously shown that the variability in the distance of the transcription start site (TSS) with respect to core promoter elements occurs through DNA scrunching and anti-scrunching such that the position of the RNAP trailing edge remains fixed, while the leading edge moves on the DNA with concomitant expansion or contraction of the transcription bubble when the RNAP open complex (RPo) is made, and is dependent on the discriminator sequence. In this manuscript, they expand the observations previously published in 2016 by exploring (1) the effect of determinants of TSS selection in vivo, (2) required changes in the transcription bubble in vitro, (3) the source of energy that elicits scrunching and anti-scrunching since, in contrast to this activity in initiation, there is no RNA synthesis. This manuscript, characterized by the development and use of cutting edge approaches, provides answers to important questions in the process of transcription initiation.\n\nTo determine the dynamics of RNAP through TSS changes in vivo, they developed an approach to analyze the RNAP open complex (RPo) in cells. To that end, cells contained three plasmids: (1) carrying the promoter under study, (2) encoding a Bpa-specific nonsense suppressor tRNA and its cognate charging synthase, (3) a \u00df' gene with (i) nonsense mutations where Bpa is incorporated to mark the sites of the RPo leading and training edges by UV crosslinking to the DNA, (ii) a decahistidine-tag for complex isolation and analysis, and (iii) the \u00df'D460A mutation to abrogate the binding of Mg2+ and NTPs at the active site to trap RPo in vivo. Cells containing the wildtype \u00df' subunit were grown in media containing Bpa. in vivo and in vitro TSS and leading and trailing edges were identical indicating that scrunching occurs in vivo and is dependent on the discriminator sequence. Changes in TSS and in leading edges implicate scrunching and concomitant changes in the extent of the transcription bubble, changes that were measured by DNA unwinding to single-nucleotide base pair and sub-second temporal resolution using magnetic-tweezers DNA nano-manipulation under positive and negative supercoiling as developed by Strick.\n\nTo overcome the restriction in TSS provided by the GGG and CTT discriminator sequences, they expanded the range of sites of initiation by taking advantage of primer-programmed TSS selection with primers that determine upstream and downstream initiation from the modal TSS position. As predicted, primer initiation upstream of the modal site involves anti-scrunching. Using measurements of the life times of the unwound state as a function of primer concentration allowed the determination of energy costs and probability of use of the different TSSs. The results indicate that TSS initiation does not require energy beyond that provided by the thermal bath and explain why initiation upstream or downstream of the modal is disfavored.\n\nSubsection \u201cTSS selection exhibits first hallmark of scrunching \u2013 movements of RNAP leading edge but not RNAP trailing edge \u2013 both in vitro and in vivo\u201d from bottom carrying genes for *an* engineered.\n\nReviewer #3:\n\nThis paper reports in vitro and in vivo analyses of the amount of scrunching within the open complex of bacterial RNA polymerase and promoters with various distances between the -10 element and the start of transcription +1 (TSS). The authors employ BpA crosslinking between residues within RNAP and the DNA to demonstrate that the back end of the polymerase stays fixed while the front end moves forward when the length between the -10 element and the TSS increases. Using a magnetic-tweezers single-molecule DNA-nanomanipulation assay, the authors demonstrate that the length of the transcription bubble increases with the length between the -10 element and the TSS. Their determination of primer-concentration dependences of lifetimes of unwound states within open complexes yields the energy needed for scrunching of 1 or 2 bp and anti-scrunching of 1 bp. These values are consistent with the fact that for the vast majority of promoters, whose TSSs vary from the typical +1, these TSS occur at -1, +2 or +3. The authors argue that this energy consideration controls the TSS selection of all multi-subunit polymerases from bacterial, archaea, and eukaryotes and explains why the wide range of TSSs used by S. cerevisiae RNAP II requires ATP-hydrolysis of TFIIH. The current manuscript is an extension of their very recent publication in Science. However, the reported experiments are clear and the paper correlates the amount of scrunching/anti-scrunching with TSS by proper quantification. The paper will be of great interest to anyone who investigates fundamental mechanisms of transcription.\n\nComments:\n\n1) The title is a little bit 'odd' because the reported phenomenon of scrunching/anti-scrunching do not select TSS. They accommodate the TSS selected by other factors. The author may select another title.\n\n2) The authors do not discuss the factors of TSS selection published previously: The context sequence, the preference of a purine at+1, in the absence of a purine at +1 any presence of a purine nearby (-1, +2, +3). The reported discriminator triplet is not the major determinant.\n\n3) It is so hard for the reader to know the TSS for the 64 discriminator sequences used here. I suggest the authors give a summary table for that.\n\n4) The authors glossed over significant contribution of others relevant to TSS \u2013\n\nWinkelman et al., 2016 for example.\n\n5) Is it okay to copy the Abstract more or less as the entire Introduction? I do not think so.\n\n6) Typo subsection \u201cTSS selection exhibits first hallmark of scrunching \u2013movements of RNAP leading edge but not RNAP trailing edge \u2013 both in vitro and in vivo\u201d: \"\u2026carrying genes for n engineered Bpa-specific\u2026\"\n\n7) The logic surrounding the need for TFIIF by S. cerevisiae RNAP II is not clear since all polII's have TFIIF yet only S. cerevisiae scans widely for the TSS.\n\n8) It would be useful for the authors to reference the Straney and Crothers paper (1987) in their background section as the original idea of a 'scrunched' (stressed) intermediate.\n\nThe manuscript is publishable somewhere. I do not recommend publication in its current form. I would like to see a revised manuscript addressing the comments I made above.\n",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1166bb2e-a5dc-4f89-b396-700a5836e0b8",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C1",
+      "claim": "During transcription initiation, RNA polymerase (RNAP) binds to promoter DNA, unwinds promoter DNA to form an RNAP-promoter open complex (RPo) containing a single-stranded 'transcription bubble,' and selects a transcription start site (TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "During transcription initiation, RNA polymerase (RNAP) binds to promoter DNA, unwinds promoter DNA to form an RNAP-promoter open complex (RPo) containing a single-stranded 'transcription bubble,' and selects a transcription start site (TSS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the transcription initiation process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "d10e8148-d560-4c86-b63a-e829898a6f40",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C2",
+      "claim": "TSS selection occurs at different positions within the promoter region, depending on promoter sequence and initiating-substrate concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "TSS selection occurs at different positions within the promoter region, depending on promoter sequence and initiating-substrate concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "e961d47f-fdfa-4a57-965a-574718f56898",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C3",
+      "claim": "Variability in TSS selection has been proposed to involve DNA 'scrunching' and 'anti-scrunching,' the hallmarks of which are: (i) forward and reverse movement of the RNAP leading edge, but not trailing edge, relative to DNA, and (ii) expansion and contraction of the transcription bubble.",
+      "claim_type": "EXPLICIT",
+      "source": "Variability in TSS selection has been proposed to involve DNA 'scrunching' and 'anti-scrunching,' the hallmarks of which are: (i) forward and reverse movement of the RNAP leading edge, but not trailing edge, relative to DNA, and (ii) expansion and contraction of the transcription bubble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior work that the current study tests.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "7aa8fb73-6ee8-4885-9585-32a36f9fe150",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C4",
+      "claim": "Bacterial TSS selection exhibits both hallmarks of scrunching and anti-scrunching in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using in vitro and in vivo protein-DNA photocrosslinking and single-molecule nanomanipulation, we show bacterial TSS selection exhibits both hallmarks of scrunching and anti-scrunching, and we define energetics of scrunching and anti-scrunching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data from protein-DNA photocrosslinking and single-molecule nanomanipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "c42f30de-448d-4a7e-a35d-7d21fdcb2502",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C5",
+      "claim": "The energetics of scrunching and anti-scrunching in bacterial TSS selection have been defined.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using in vitro and in vivo protein-DNA photocrosslinking and single-molecule nanomanipulation, we show bacterial TSS selection exhibits both hallmarks of scrunching and anti-scrunching, and we define energetics of scrunching and anti-scrunching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from single-molecule nanomanipulation experiments measuring primer-concentration dependences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "286359d3-709b-43a6-a7ae-38273bdd95f1",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C6",
+      "claim": "The results establish the mechanism of TSS selection by bacterial RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "The results establish the mechanism of TSS selection by bacterial RNAP and suggest a general mechanism for TSS selection by bacterial, archaeal, and eukaryotic RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "67262170-eb2a-4dd4-a038-4eea8fab4636",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C7",
+      "claim": "The mechanism of TSS selection by bacterial RNAP suggests a general mechanism for TSS selection by bacterial, archaeal, and eukaryotic RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "The results establish the mechanism of TSS selection by bacterial RNAP and suggest a general mechanism for TSS selection by bacterial, archaeal, and eukaryotic RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the bacterial RNAP data and knowledge of similarities across RNAP systems.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "bc6ff841-0a8a-4816-af07-7a857bfa8758",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C8",
+      "claim": "TSS selection by bacterial RNAP involves four promoter-sequence determinants: distance relative to the promoter \u221210 element, identities of template-strand nucleotides at and upstream of the TSS, the promoter core recognition element, and the promoter discriminator element.",
+      "claim_type": "EXPLICIT",
+      "source": "TSS selection by bacterial RNAP and the bacterial transcription initiation factor \u03c3 involves four promoter-sequence determinants: (i) distance relative to the promoter \u221210 element (preference for TSS selection at the position 7 bp downstream of the promoter \u221210 element; Aoyama and Takanami, 1985; S\u00f8rensen et al., 1993; Jeong and Kang, 1994; Liu and Turnbough, 1994; Walker and Osuna, 2002; Lewis and Adhya, 2004; Vvedenskaya et al., 2015; Winkelman et al., 2016a; Winkelman et al., 2016b); (ii) identities of the template-strand nucleotide at the TSS and the template-strand nucleotide immediately upstream of the TSS (strong preference for a template-strand pyrimidine at the TSS and preference for a template-strand purine immediately upstream of the TSS; Aoyama and Takanami, 1985; S\u00f8rensen et al., 1993; Jeong and Kang, 1994; Liu and Turnbough, 1994; Walker and Osuna, 2002; Lewis and Adhya, 2004; Vvedenskaya et al., 2015; Winkelman et al., 2016a; Winkelman et al., 2016b); (iii) the promoter 'core recognition element,' a segment of nontemplate-strand sequence spanning the TSS that interacts sequence-specifically with RNAP (preference for nontemplate-strand G immediately downstream of the TSS; Vvedenskaya et al., 2016), and (iv) the promoter 'discriminator element,' a nontemplate-strand sequence immediately downstream of the promoter \u221210 element that interacts sequence-specifically with \u03c3 (preference for TSS selection at upstream positions for purine-rich discriminator sequences, and preference for TSS selection at downstream positions for pyrimidine-rich discriminator sequences; Winkelman et al., 2016a, 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "af4111e9-09a1-40aa-b866-d22172366b57",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C9",
+      "claim": "There is a preference for TSS selection at the position 7 bp downstream of the promoter \u221210 element.",
+      "claim_type": "EXPLICIT",
+      "source": "distance relative to the promoter \u221210 element (preference for TSS selection at the position 7 bp downstream of the promoter \u221210 element; Aoyama and Takanami, 1985; S\u00f8rensen et al., 1993; Jeong and Kang, 1994; Liu and Turnbough, 1994; Walker and Osuna, 2002; Lewis and Adhya, 2004; Vvedenskaya et al., 2015; Winkelman et al., 2016a; Winkelman et al., 2016b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "e55172ae-7c65-49eb-9334-5887a083da39",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C10",
+      "claim": "There is a strong preference for a template-strand pyrimidine at the TSS and preference for a template-strand purine immediately upstream of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "identities of the template-strand nucleotide at the TSS and the template-strand nucleotide immediately upstream of the TSS (strong preference for a template-strand pyrimidine at the TSS and preference for a template-strand purine immediately upstream of the TSS; Aoyama and Takanami, 1985; S\u00f8rensen et al., 1993; Jeong and Kang, 1994; Liu and Turnbough, 1994; Walker and Osuna, 2002; Lewis and Adhya, 2004; Vvedenskaya et al., 2015; Winkelman et al., 2016a; Winkelman et al., 2016b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "8f3dccd6-78f3-4656-bae5-23f0f1e4f6e0",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C11",
+      "claim": "The promoter core recognition element shows preference for nontemplate-strand G immediately downstream of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "the promoter 'core recognition element,' a segment of nontemplate-strand sequence spanning the TSS that interacts sequence-specifically with RNAP (preference for nontemplate-strand G immediately downstream of the TSS; Vvedenskaya et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "871a9814-5e00-4a2d-88c2-74d85ce346c0",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C12",
+      "claim": "The promoter discriminator element shows preference for TSS selection at upstream positions for purine-rich discriminator sequences, and preference for TSS selection at downstream positions for pyrimidine-rich discriminator sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "the promoter 'discriminator element,' a nontemplate-strand sequence immediately downstream of the promoter \u221210 element that interacts sequence-specifically with \u03c3 (preference for TSS selection at upstream positions for purine-rich discriminator sequences, and preference for TSS selection at downstream positions for pyrimidine-rich discriminator sequences; Winkelman et al., 2016a, 2016b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "aa2877ed-6194-4dd5-bd90-66acd9c7b0ca",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C13",
+      "claim": "The concentrations of initiating NTPs influence TSS selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these four promoter-sequence determinants, the concentrations of initiating NTPs (S\u00f8rensen et al., 1993; Liu and Turnbough, 1994; Walker and Osuna, 2002; Vvedenskaya et al., 2015; Wilson et al., 1992; Qi and Turnbough, 1995; Tu and Turnbough, 1997; Walker et al., 2004; Turnbough, 2008; Turnbough and Switzer, 2008) and DNA topology (Vvedenskaya et al., 2015) also influence TSS selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "3c2d6756-62a4-4977-8902-ce1443330c22",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C14",
+      "claim": "DNA topology influences TSS selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these four promoter-sequence determinants, the concentrations of initiating NTPs (S\u00f8rensen et al., 1993; Liu and Turnbough, 1994; Walker and Osuna, 2002; Vvedenskaya et al., 2015; Wilson et al., 1992; Qi and Turnbough, 1995; Tu and Turnbough, 1997; Walker et al., 2004; Turnbough, 2008; Turnbough and Switzer, 2008) and DNA topology (Vvedenskaya et al., 2015) also influence TSS selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "73718dc6-9eee-401f-8b7d-3d4dfbc5aea1",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C15",
+      "claim": "In previous work, TSS selection was shown to exhibit the first hallmark of scrunching in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work, we showed that TSS selection exhibits the first hallmark of scrunching in vitro (Winkelman et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "e0ffa915-e8ba-4d2c-a6b3-380cd56ed3e9",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C16",
+      "claim": "Replacing a GGG discriminator by a CCT discriminator causes a 2 bp downstream change in TSS from position 7 bp to position 9 bp downstream of the \u221210 element.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, replacing a GGG discriminator by a CCT discriminator causes a 2 bp downstream change in TSS (from the position 7 bp downstream of the \u221210 element to the position 9 bp downstream of the \u221210 element, due to differences in sequence-specific \u03c3-DNA interaction that result in different paths of the DNA nontemplate strand), causes a 2 bp downstream change in RNAP leading-edge position, but does not cause a change in RNAP trailing-edge position (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "022db64f-142a-4f3c-aa31-54185952c220",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C17",
+      "claim": "Replacing a GGG discriminator by a CCT discriminator causes a 2 bp downstream change in RNAP leading-edge position but does not cause a change in RNAP trailing-edge position.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, replacing a GGG discriminator by a CCT discriminator causes a 2 bp downstream change in TSS (from the position 7 bp downstream of the \u221210 element to the position 9 bp downstream of the \u221210 element, due to differences in sequence-specific \u03c3-DNA interaction that result in different paths of the DNA nontemplate strand), causes a 2 bp downstream change in RNAP leading-edge position, but does not cause a change in RNAP trailing-edge position (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "6f1a9434-c642-4d86-9864-84daeef1facb",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C18",
+      "claim": "The discriminator element influences TSS selection through effects on sequence-specific \u03c3-DNA interaction that select between two alternative paths of the DNA nontemplate strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the discriminator element (Haugen et al., 2006; Feklistov et al., 2006) influences TSS selection and does so through effects on sequence-specific \u03c3-DNA interaction that select between two alternative paths of the DNA nontemplate strand (Winkelman et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "8be45eae-a4b6-4505-9cba-1464b2769687",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C19",
+      "claim": "There is an exact correspondence of crosslinking patterns in vitro and in vivo for TSS selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed an exact correspondence of crosslinking patterns in vitro and in vivo (Figure 1B, 'in vitro' vs. 'in vivo' lanes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B comparing in vitro and in vivo results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "cce8d8ef-b433-41f5-b7ef-4c013a345fca",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C20",
+      "claim": "The RNAP leading edge crosslinked 2 bp further downstream on CCT than on GGG, whereas the RNAP trailing edge crosslinked at the same positions on CCT and GGG.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNAP leading edge crosslinked 2 bp further downstream on CCT than on GGG, whereas the RNAP trailing edge crosslinked at the same positions on CCT and GGG (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "be84007c-8841-4653-85ee-60c5b9679e89",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C21",
+      "claim": "TSS selection in vivo shows the first hallmark of scrunching.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that TSS selection in vivo shows the first hallmark of scrunching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vivo crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "56cf0c8b-3172-4a3c-877b-9bfc186ecc30",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C22",
+      "claim": "Transition amplitudes for RNAP-dependent DNA unwinding upon formation of RPo with CCT are larger than those for formation of RPo with GGG, on both positively and negatively supercoiled templates.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that transition amplitudes for RNAP-dependent DNA unwinding upon formation of RPo with CCT are larger than those for formation of RPo with GGG, on both positively and negatively supercoiled templates (Figure 2B, left and center).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "f0b7944d-b77a-4f73-b652-0cde4b3c4774",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C23",
+      "claim": "There is a 2 bp difference in RNAP-dependent DNA unwinding for CCT vs. GGG.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining the results with positively and negatively supercoiled templates to deconvolve effects of RNAP-dependent DNA unwinding and RNAP-dependent compaction (Revyakin et al., 2004, 2005, 2006), we find a 2 bp difference in RNAP-dependent DNA unwinding for CCT vs. GGG (Figure 2C), corresponding exactly to the 2 bp difference in TSS selection (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and comparison to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "333aab90-2e0b-4c3e-a483-93ef1bba0082",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C24",
+      "claim": "The 2 bp difference in RNAP-dependent DNA unwinding for CCT vs. GGG corresponds exactly to the 2 bp difference in TSS selection.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining the results with positively and negatively supercoiled templates to deconvolve effects of RNAP-dependent DNA unwinding and RNAP-dependent compaction (Revyakin et al., 2004, 2005, 2006), we find a 2 bp difference in RNAP-dependent DNA unwinding for CCT vs. GGG (Figure 2C), corresponding exactly to the 2 bp difference in TSS selection (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of experimental data from Figures 1B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "8d0d8a8c-56ec-44ef-b41f-2b256e4e06bd",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C25",
+      "claim": "TSS selection shows the second hallmark of scrunching.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that TSS selection shows the second hallmark of scrunching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the DNA nanomanipulation data showing changes in transcription bubble size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "63ede1d3-f5b2-42f9-81f3-aa30259e1843",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C26",
+      "claim": "According to the scrunching/anti-scrunching hypothesis, TSS selection at the modal TSS position involves neither scrunching nor anti-scrunching, TSS selection downstream of the modal position involves scrunching, and TSS selection upstream of the modal position involves anti-scrunching.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the hypothesis that TSS selection involves scrunching or anti-scrunching, TSS selection at the most frequently observed, modal TSS position (7 bp downstream of \u221210 element for majority of discriminator sequences, including GGG) involves neither scrunching nor anti-scrunching, TSS selection downstream of the modal position involves scrunching (transcription-bubble expansion), and TSS selection upstream of the modal position involves anti-scrunching (Vvedenskaya et al., 2015; Winkelman et al., 2016a, 2016b; Vvedenskaya et al., 2016; Robb et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "8c91fd7b-820a-4bc1-9fe7-a52aa770463d",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C27",
+      "claim": "Successive single-base-pair changes in TSS selection are matched by successive single-base-pair changes in RNAP leading-edge position.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that successive single-base-pair changes in TSS selection are matched by successive single-base-pair changes in RNAP leading-edge position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the primer-programmed TSS selection experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "5f0ad6e2-ad81-4304-a990-2631f9108168",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C28",
+      "claim": "The first hallmark of scrunching is observed for a full range of TSS positions, including a position upstream of the modal TSS expected to involve anti-scrunching.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the first hallmark of scrunching is observed for a full range of TSS positions, including, importantly, a position upstream of the modal TSS expected to involve anti-scrunching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the primer-programmed TSS selection experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "92b83d12-5a14-44f0-8609-46aa810b8d7a",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C29",
+      "claim": "With primer GGA, which programs TSS selection at the modal position, DNA unwinding was exactly as in experiments with no primer.",
+      "claim_type": "EXPLICIT",
+      "source": "With primer GGA, which programs TSS selection at the modal position (7 bp downstream of the \u221210 element for this discriminator sequence), DNA unwinding was exactly as in experiments with no primer (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "5ee2ae11-9a86-4c6f-af04-5a13be2f6f6a",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C30",
+      "claim": "With primers GAA and AAU, which program TSS selection 1 and 2 bp further downstream, DNA unwinding was ~1 and ~2 bp greater than with GGA.",
+      "claim_type": "EXPLICIT",
+      "source": "With primers GAA and AAU, which program TSS selection 1 and 2 bp further downstream (positions 8 and 9), DNA unwinding was ~1 and ~2 bp greater than with GGA (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "4a590fe0-971b-4ce8-b2ef-faba689beaa2",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C31",
+      "claim": "With primer UGG, which programs TSS selection 1 bp upstream, DNA unwinding was ~1 bp less than that in experiments with GGA.",
+      "claim_type": "EXPLICIT",
+      "source": "With primer UGG, which programs TSS selection 1 bp upstream, DNA unwinding was ~1 bp less than that in experiments with GGA (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "efc41a6b-1ad0-4f69-9c71-7dd1a6e8b0c3",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C32",
+      "claim": "Successive single-base-pair changes in TSS selection are matched by successive single-base-pair changes in DNA unwinding for a full range of TSS positions including a position upstream of the modal TSS expected to involve anti-scrunching.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that successive single-base-pair changes in TSS selection are matched by successive single-base-pair changes in DNA unwinding for a full range of TSS positions including, importantly, a position upstream of the modal TSS expected to involve anti-scrunching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the primer-programmed TSS selection experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "95b6eb69-b5a7-4945-a180-3f39b6b44660",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C33",
+      "claim": "The results of protein-DNA photocrosslinking and DNA-nanomanipulation demonstrate, definitively, the scrunching/anti-scrunching hypothesis for TSS selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results of protein-DNA photocrosslinking (Figure 3, Figure 3\u2014figure supplement 1) and DNA-nanomanipulation (Figure 4, Figure 4\u2014figure supplement 2) demonstrate, definitively, the scrunching/anti-scrunching hypothesis for TSS selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "c29bb6a2-8f15-44df-8ad1-991f402fe98e",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C34",
+      "claim": "For each primer, increasing the primer concentration increases the lifetime of the unwound state.",
+      "claim_type": "EXPLICIT",
+      "source": "For each primer, increasing the primer concentration increases the lifetime of the unwound state (tunwound), as expected for coupled equilibria of promoter unwinding, promoter scrunching, and primer binding (Figures 5\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "e8e8ba12-d75d-4f73-b677-15deb704c8bf",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C35",
+      "claim": "Scrunching by 1 bp requires 0.7 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that scrunching by 1 bp requires 0.7 kcal/mol, scrunching by 2 bp requires 1.7 kcal/mol, and anti-scrunching by 1 bp requires 1.8 kcal/mol (Figure 6E, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and calculations shown in Figure 6E and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "35685064-c198-4c15-838d-364b44a666ab",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C36",
+      "claim": "Scrunching by 2 bp requires 1.7 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that scrunching by 1 bp requires 0.7 kcal/mol, scrunching by 2 bp requires 1.7 kcal/mol, and anti-scrunching by 1 bp requires 1.8 kcal/mol (Figure 6E, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and calculations shown in Figure 6E and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "771c3097-c971-4841-bc10-48abc1228ce5",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C37",
+      "claim": "Anti-scrunching by 1 bp requires 1.8 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that scrunching by 1 bp requires 0.7 kcal/mol, scrunching by 2 bp requires 1.7 kcal/mol, and anti-scrunching by 1 bp requires 1.8 kcal/mol (Figure 6E, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and calculations shown in Figure 6E and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "398146af-8781-4cbb-ab06-0484a3d740fb",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C38",
+      "claim": "The results provide the first experimental determination of the energetic costs of scrunching and anti-scrunching in any context.",
+      "claim_type": "EXPLICIT",
+      "source": "The results provide the first experimental determination of the energetic costs of scrunching and anti-scrunching in any context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "00b59815-36ab-48fb-b064-bc0e0628e6b3",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C39",
+      "claim": "Energetic costs on the scale of ~0.7\u20131.8 kcal/mol per scrunched bp also apply in the structurally and mechanistically related scrunching that occurs during initial transcription by RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that energetic costs on the same scale, ~0.7\u20131.8 kcal/mol per scrunched bp, also apply in the structurally and mechanistically related scrunching that occurs during initial transcription by RNAP (Revyakin et al., 2006; Kapanidis et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis extrapolating from the current findings to a related process.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "6de0f25c-35e7-479c-b8f6-8441885fee0f",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C40",
+      "claim": "The scrunching by ~10 bp that occurs during initial transcription results in an increase in the state energy of the transcription initiation complex by a total of ~7\u201318 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that, according to this hypothesis, the scrunching by ~10 bp that occurs during initial transcription (Revyakin et al., 2006) results in an increase in the state energy of the transcription initiation complex by a total of ~7\u201318 kcal/mol (~10 x ~0.7\u20131.8 kcal/mol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the hypothesis about energetic costs per bp.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "bd504cd3-ce90-43e9-8b9b-53250e38e006",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C41",
+      "claim": "The increase in state energy from scrunching during initial transcription is potentially sufficient to yield a 'stressed intermediate' having scrunching-dependent 'stress' comparable to the free energies of RNAP-promoter and RNAP-initiation-factor interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an increase in state energy potentially sufficient to yield a 'stressed intermediate' (Revyakin et al., 2006; Straney and Crothers, 1987) having scrunching-dependent 'stress' comparable to the free energies of RNAP-promoter and RNAP-initiation-factor interactions that anchor RNAP at a promoter (~7\u20139 kcal/mol for sequence-specific component of RNAP-promoter interaction and ~13 kcal/mol for RNAP-initiation-factor interaction; 24) and therefore is an increase in state energy potentially sufficient to pay energetic costs of breaking RNAP-promoter and RNAP-initiation-factor interactions in the transition from transcription initiation to transcription elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the functional significance of the energetic costs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "4e25ec6d-6acd-4acd-8951-ba6d7cc8e6c1",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C42",
+      "claim": "The \u0394Gscrunch values for bacterial TSS selection account for the range of TSS positions and the relative utilization of different TSS positions in bacterial transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394Gscrunch values for bacterial TSS selection obtained in this work account for the range of TSS positions and the relative utilization of different TSS positions in bacterial transcription initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the energetic data and comparison to observed TSS distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "715ad0b2-711f-44b5-8b8c-ab6455b619f1",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C43",
+      "claim": "The \u0394Gscrunch values for TSS selection at positions 6, 7, 8, and 9 of a promoter where the modal TSS is position 7 are all less than or comparable to 3kBT (~2 kcal/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394Gscrunch values for TSS selection at positions 6, 7, 8, and 9 of a promoter where the modal TSS is position 7 (0\u20131.8 kcal/mol) all are less than or comparable to 3kBT (~2 kcal/mol), where kB is the Bolztmann constant and T is temperature in \u00b0K, indicating that TSS selection at these positions requires no energy beyond energy available in the thermal bath.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the energetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "0d3612e3-6955-4cc2-a822-6b7ef5d79e99",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C44",
+      "claim": "TSS selection at positions 6, 7, 8, and 9 requires no energy beyond energy available in the thermal bath.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394Gscrunch values for TSS selection at positions 6, 7, 8, and 9 of a promoter where the modal TSS is position 7 (0\u20131.8 kcal/mol) all are less than or comparable to 3kBT (~2 kcal/mol), where kB is the Bolztmann constant and T is temperature in \u00b0K, indicating that TSS selection at these positions requires no energy beyond energy available in the thermal bath.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the energetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "03c92501-4ee8-4da2-882e-f9001a48caf3",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C45",
+      "claim": "The probabilities of TSS selection at positions 6, 7, 8, and 9 as observed in a comprehensive analysis of TSS-region sequences (8%, 55%, 29%, 7%) can be predicted from the Boltzmann-distribution probabilities for the \u0394Gscrunch values for TSS selection at these positions (3%, 70%, 23%, 4%).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the probabilities of TSS selection at positions 6, 7, 8, and 9 as observed in a comprehensive analysis of TSS-region sequences (8%, 55%, 29%, 7%; Vvedenskaya et al., 2015) can be predicted from the Boltzmann-distribution probabilities for the \u0394Gscrunch values for TSS selection at these positions (3%, 70%, 23%, 4%; Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of predicted and observed TSS distributions shown in Figure 6F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "e9ea84b7-c353-4c23-a061-32220dd95c9b",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C46",
+      "claim": "Values of \u0394Gscrunch for scrunching and anti-scrunching in TSS selection are ~1 kcal mol\u22121 bp\u22121 and ~2 kcal mol\u22121 bp\u22121, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that values of \u0394Gscrunch for scrunching and anti-scrunching in TSS selection are ~1 kcal mol\u22121 bp\u22121 and ~2 kcal mol\u22121 bp\u22121, respectively, implies that TSS selection at positions >2 bp downstream or >1 bp upstream of the modal position would exceed the energy fluctuations available to 99% of molecules at 20\u201337\u00b0C, and therefore explains the observation that TSS selection >2 bp downstream or >1 bp upstream of the modal position occurs rarely (Vvedenskaya et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the energetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "84ade32b-4046-42c2-96fa-27e4c4d67077",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C47",
+      "claim": "TSS selection at positions >2 bp downstream or >1 bp upstream of the modal position would exceed the energy fluctuations available to 99% of molecules at 20\u201337\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that values of \u0394Gscrunch for scrunching and anti-scrunching in TSS selection are ~1 kcal mol\u22121 bp\u22121 and ~2 kcal mol\u22121 bp\u22121, respectively, implies that TSS selection at positions >2 bp downstream or >1 bp upstream of the modal position would exceed the energy fluctuations available to 99% of molecules at 20\u201337\u00b0C, and therefore explains the observation that TSS selection >2 bp downstream or >1 bp upstream of the modal position occurs rarely (Vvedenskaya et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the energetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "4878af63-0b43-4bd0-b276-75efd8c73afd",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C48",
+      "claim": "TSS selection >2 bp downstream or >1 bp upstream of the modal position occurs rarely.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that values of \u0394Gscrunch for scrunching and anti-scrunching in TSS selection are ~1 kcal mol\u22121 bp\u22121 and ~2 kcal mol\u22121 bp\u22121, respectively, implies that TSS selection at positions >2 bp downstream or >1 bp upstream of the modal position would exceed the energy fluctuations available to 99% of molecules at 20\u201337\u00b0C, and therefore explains the observation that TSS selection >2 bp downstream or >1 bp upstream of the modal position occurs rarely (Vvedenskaya et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "126896a8-9eae-4ff7-a0ca-03b4ae59d763",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C49",
+      "claim": "TSS selection by archaeal RNAP, eukaryotic RNAP I, eukaryotic RNAP II from most species, and eukaryotic RNAP III involves the same range of TSS positions as TSS selection by bacterial RNAP (positions \u00b1 2 bp from the modal TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "TSS selection by archaeal RNAP, eukaryotic RNAP I, eukaryotic RNAP II from most species, and eukaryotic RNAP III involves the same range of TSS positions as TSS selection by bacterial RNAP (positions \u00b1 2 bp from the modal TSS; Learned and Tjian, 1982; Samuels et al., 1984; Thomm and Wich, 1988; Reiter et al., 1990; Fruscoloni et al., 1995; Zecherle et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "1009d97b-ae2f-4558-8101-db292bf0ab29",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C50",
+      "claim": "TSS selection by archaeal RNAP, eukaryotic RNAP I, eukaryotic RNAP II from most species, and eukaryotic RNAP III is mediated by scrunching and anti-scrunching driven by energy available in the thermal bath.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that TSS selection by all of these enzymes is mediated by scrunching and anti-scrunching driven by energy available in the thermal bath.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal/hypothesis based on the bacterial RNAP findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "0111be42-8678-4caa-a71d-5eabe2c13ded",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C51",
+      "claim": "TSS selection by S. cerevisiae RNAP II involves a range of TSS positions of 10 s to 100 s of bp (long-range TSS scanning).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TSS selection by S. cerevisiae RNAP II involves a range of TSS positions of 10 s to 100 s of bp (long-range TSS scanning; Giardina and Lis, 1993; Kuehner and Brow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "c7c8c496-37fa-4df1-98c1-fefd70573faa",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C52",
+      "claim": "TSS scanning by S. cerevisiae RNAP II is mediated by scrunching and anti-scrunching involving not only energy from the thermal bath, but also energy from the ATPase activity of RNAP II transcription factor TFIIH.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that TSS scanning by S. cerevisiae RNAP II also is mediated by scrunching and anti-scrunching, but, in this case, involves not only energy from the thermal bath, but also energy from the ATPase activity of RNAP II transcription factor TFIIH (Sainsbury et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal/hypothesis based on the bacterial RNAP findings and knowledge of TFIIH.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "87c29a16-ef0b-476b-85a2-3bfabf6fe719",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C53",
+      "claim": "ATP-dependent, TFIIH-dependent cycles of DNA compaction and de-compaction of 10 s to 100 s of bp have been observed in single-molecule optical-tweezer analyses of TSS scanning by S. cerevisiae RNAP II.",
+      "claim_type": "EXPLICIT",
+      "source": "This proposal could account for the ATP-dependent, TFIIH-dependent cycles of DNA compaction and de-compaction of 10 s to 100 s of bp observed in single-molecule optical-tweezer analyses of TSS scanning by S. cerevisiae RNAP II (Fazal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "2a00b629-6b4d-4371-be5f-4f0ef7b5b92d",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C54",
+      "claim": "The mutationally inactivated RNAP derivative \u03b2'D460A lacks a residue required for binding of the RNAP-active-center catalytic metal ion and initiating substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to assemble, trap, and UV-irradiate RPo in living cells, despite the presence of high concentrations of initiating substrates that rapidly convert RPo into transcribing complexes, we used a mutationally inactivated RNAP derivative, \u03b2'D460A, that lacks a residue required for binding of the RNAP-active-center catalytic metal ion and initiating substrates (Zaychikov et al., 1996) (Figure 1\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "c6f14693-c902-463e-88fa-d0d97c548236",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C55",
+      "claim": "In vitro, in both the absence and presence of initiating substrates, the mutationally inactivated RNAP derivative remains trapped in RPo, exhibiting the same pattern of leading-edge and trailing-edge crosslinks as for wild-type RNAP in the absence of initiating substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments confirm that, in vitro, in both the absence and presence of initiating substrates, the mutationally inactivated RNAP derivative remains trapped in RPo, exhibiting the same pattern of leading-edge and trailing-edge crosslinks as for wild-type RNAP in the absence of initiating substrates (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "d60d2395-981b-4fe1-acd4-dc754f6a544e",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C56",
+      "claim": "Reduction in DNA-fragment length from 2.0 to 1.3 kb enables single-bp resolution in single-molecule DNA-nanomanipulation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable single-base-pair resolution, we reduced the DNA-tether length from 2.0 kb to 1.3 kb, thereby reducing noise due to compliance (Figure 4\u2014figure supplement 1; see Revyakin et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "6e614483-f800-4083-9287-775702ebc645",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "claim_id": "C57",
+      "claim": "Use of 1.3 kb DNA segment provides SEM = 0.5 bp for data subsets of n = 30, sufficient for single-base-pair resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of 1.3 kb DNA segment provides SEM = 0.5 bp for data subsets of n = 30, sufficient for single-base-pair resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 4\u2014figure supplement 1 and supported by data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0949675e-0e9d-44c3-a83a-457804e9a775",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about transcription initiation, TSS selection variability, and the scrunching/anti-scrunching hypothesis. These claims describe the established framework and hypothesis that the study aims to test.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 accurately represent established knowledge and prior hypotheses about transcription initiation and TSS selection. C1 and C2 describe well-established processes, while C3 correctly frames the scrunching/anti-scrunching hypothesis from prior work that this study tests experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "5436a74d-d7c9-40e2-8fca-ff10d779f5c3",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TSS selection in vivo exhibits the first hallmark of scrunching: replacing a GGG discriminator with CCT causes a 2 bp downstream shift in TSS and RNAP leading-edge position without changing trailing-edge position, with exact correspondence between in vitro and in vivo crosslinking patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 are well-supported by experimental data in Figure 1B showing identical crosslinking patterns in vitro and in vivo. The use of a mutationally inactivated RNAP derivative (C54-C55) to trap RPo in vivo is appropriately controlled. The data clearly demonstrate differential movement of leading vs. trailing edges.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "b4f0d286-8e35-495d-87dd-ad3801fd3128",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TSS selection exhibits the second hallmark of scrunching: the 2 bp difference in RNAP-dependent DNA unwinding between CCT and GGG discriminators corresponds exactly to the 2 bp difference in TSS selection, demonstrating transcription bubble expansion/contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by single-molecule DNA nanomanipulation data in Figure 2. The deconvolution of unwinding and compaction effects using both positively and negatively supercoiled DNA is methodologically sound. The exact correspondence between unwinding differences (2 bp) and TSS differences (2 bp) provides strong evidence for the second hallmark.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "12ae4d59-245c-4f1a-a4a0-27d86b8a1f04",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using primer-programmed TSS selection across a full range of positions (6-9 bp from -10 element), successive single-base-pair changes in TSS are matched by single-base-pair changes in both RNAP leading-edge position and DNA unwinding, including positions requiring anti-scrunching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 are well-supported by data in Figures 3-4. The primer-programming approach elegantly tests the scrunching hypothesis across multiple TSS positions. The single-bp resolution achieved by reducing DNA fragment length (C56-C57) is appropriately validated. Critically, the data include anti-scrunching (position 6), establishing bidirectionality of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "7d3c7d90-32da-4341-942d-531f5733c229",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The combined protein-DNA photocrosslinking and DNA-nanomanipulation results definitively demonstrate the scrunching/anti-scrunching hypothesis for TSS selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is a justified conclusion based on the convergent evidence from multiple experimental approaches (C16-C32). Both hallmarks of scrunching are demonstrated across a range of TSS positions in vitro and in vivo, with appropriate controls and single-bp resolution. The use of complementary techniques strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "e580d1db-54f8-465a-8ed6-f7378d905639",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Quantitative energetic analysis reveals that scrunching by 1 bp requires 0.7 kcal/mol, scrunching by 2 bp requires 1.7 kcal/mol, and anti-scrunching by 1 bp requires 1.8 kcal/mol, representing the first experimental determination of scrunching energetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by primer concentration-dependence data in Figures 5-6. The coupled equilibria model (Figure 6A-C) is appropriate, and fitting procedures are described. The energetic values are internally consistent (approximately linear with bp number for scrunching). Statistical analysis with SEM is provided. The novelty claim (C38) appears justified given the literature context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The measured \u0394Gscrunch values (0-1.8 kcal/mol for positions 6-9) account for the observed range and relative utilization of TSS positions in bacterial transcription, as these values are within thermal energy fluctuations (\u22643kBT), and Boltzmann-distribution predictions match observed TSS probabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 are well-supported by the energetic data and comparison to genome-wide TSS distributions (C45, Figure 6F). The thermodynamic reasoning is sound: energies \u22643kBT are accessible via thermal fluctuations, while higher energies would be rare. The predicted TSS probabilities (3%, 70%, 23%, 4%) reasonably match observed values (8%, 55%, 29%, 7%) from prior comprehensive analysis, though not perfectly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "1d83d56c-9705-4108-aec4-99225fadee79",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors hypothesize that similar energetic costs (~0.7-1.8 kcal/mol per bp) apply to scrunching during initial transcription, potentially yielding ~7-18 kcal/mol total stress that could drive promoter escape by breaking RNAP-promoter and RNAP-initiation-factor interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C41 are explicitly speculative hypotheses extending the TSS selection findings to initial transcription. While the reasoning is plausible and the energy scales are compared to known interaction energies, no direct experimental evidence for initial transcription scrunching energetics is provided. This represents an interesting but untested proposal for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "3ff77a43-01e5-4554-a886-726571e917d8",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that TSS selection by archaeal and eukaryotic RNAPs (except S. cerevisiae RNAP II) involves scrunching/anti-scrunching driven by thermal energy, while S. cerevisiae RNAP II scanning involves additional ATP-dependent energy from TFIIH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C53 are speculative proposals based on similarities in TSS position ranges across organisms (C49, supported by citations) and known TFIIH activity (C52-C53, supported by citations). However, no direct experimental evidence for scrunching mechanisms in these other systems is provided. These are reasonable hypotheses for future testing but remain unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "786ea447-b1e0-4880-a3c6-97b8ea341f6f",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study establishes that bacterial TSS selection exhibits both hallmarks of scrunching/anti-scrunching in vitro and in vivo, defines the energetics of these processes, establishes the mechanism for bacterial RNAP, and suggests a general mechanism for all RNAPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 accurately summarize the main findings supported by the experimental data (C16-C48). C7 is a more speculative extension to other RNAP systems, which is appropriately framed as a suggestion rather than a definitive conclusion. The core bacterial RNAP mechanism is well-established by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "95996786-1ae5-433d-918e-49231a5d233d",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about the four promoter-sequence determinants of TSS selection, the influence of NTP concentrations and DNA topology, and prior work showing the first hallmark of scrunching in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C15 and C18 accurately represent prior knowledge supported by extensive citations. These provide appropriate context for the current study. C15 correctly references the authors' own prior work demonstrating the first hallmark in vitro, which the current study extends to in vivo and adds the second hallmark.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "9381961b-3d9e-4f8e-8aeb-1af74264112d",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The scrunching/anti-scrunching hypothesis predicts that TSS selection at the modal position involves neither process, downstream selection involves scrunching, and upstream selection involves anti-scrunching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 accurately represents the hypothesis from prior work that the current study tests. This hypothesis is well-supported by citations and provides the conceptual framework for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "3f40774d-49a9-4fec-a9fe-3d166538a1db",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mutationally inactivated RNAP derivative \u03b2'D460A lacks the catalytic metal ion binding residue and remains trapped in RPo in vitro with the same crosslinking pattern as wild-type RNAP, enabling in vivo analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are well-supported by control experiments in Figure 1\u2014figure supplement 2. The validation that the mutant RNAP exhibits the same crosslinking pattern as wild-type in the absence of NTPs is critical for interpreting the in vivo results. This methodological development is appropriately controlled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    },
+    {
+      "id": "ae77752d-ff2b-4222-8cb7-a1ae8590df7d",
+      "content_id": "218afb8c-fee5-42bd-8179-016652e5192d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Reduction of DNA fragment length from 2.0 to 1.3 kb reduces noise and enables single-bp resolution (SEM = 0.5 bp for n=30) in single-molecule DNA nanomanipulation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by data in Figure 4\u2014figure supplement 1 showing improved resolution with shorter DNA fragments. The SEM calculation and demonstration of single-bp resolution are appropriate for the primer-programmed TSS selection experiments requiring fine discrimination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:30.298708Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1166bb2e-a5dc-4f89-b396-700a5836e0b8",
+      "result_id": "0949675e-0e9d-44c3-a83a-457804e9a775"
+    },
+    {
+      "claim_id": "d10e8148-d560-4c86-b63a-e829898a6f40",
+      "result_id": "0949675e-0e9d-44c3-a83a-457804e9a775"
+    },
+    {
+      "claim_id": "e961d47f-fdfa-4a57-965a-574718f56898",
+      "result_id": "0949675e-0e9d-44c3-a83a-457804e9a775"
+    },
+    {
+      "claim_id": "e0ffa915-e8ba-4d2c-a6b3-380cd56ed3e9",
+      "result_id": "5436a74d-d7c9-40e2-8fca-ff10d779f5c3"
+    },
+    {
+      "claim_id": "022db64f-142a-4f3c-aa31-54185952c220",
+      "result_id": "5436a74d-d7c9-40e2-8fca-ff10d779f5c3"
+    },
+    {
+      "claim_id": "8be45eae-a4b6-4505-9cba-1464b2769687",
+      "result_id": "5436a74d-d7c9-40e2-8fca-ff10d779f5c3"
+    },
+    {
+      "claim_id": "cce8d8ef-b433-41f5-b7ef-4c013a345fca",
+      "result_id": "5436a74d-d7c9-40e2-8fca-ff10d779f5c3"
+    },
+    {
+      "claim_id": "be84007c-8841-4653-85ee-60c5b9679e89",
+      "result_id": "5436a74d-d7c9-40e2-8fca-ff10d779f5c3"
+    },
+    {
+      "claim_id": "56cf0c8b-3172-4a3c-877b-9bfc186ecc30",
+      "result_id": "b4f0d286-8e35-495d-87dd-ad3801fd3128"
+    },
+    {
+      "claim_id": "f0b7944d-b77a-4f73-b652-0cde4b3c4774",
+      "result_id": "b4f0d286-8e35-495d-87dd-ad3801fd3128"
+    },
+    {
+      "claim_id": "333aab90-2e0b-4c3e-a483-93ef1bba0082",
+      "result_id": "b4f0d286-8e35-495d-87dd-ad3801fd3128"
+    },
+    {
+      "claim_id": "8d0d8a8c-56ec-44ef-b41f-2b256e4e06bd",
+      "result_id": "b4f0d286-8e35-495d-87dd-ad3801fd3128"
+    },
+    {
+      "claim_id": "8c91fd7b-820a-4bc1-9fe7-a52aa770463d",
+      "result_id": "12ae4d59-245c-4f1a-a4a0-27d86b8a1f04"
+    },
+    {
+      "claim_id": "5f0ad6e2-ad81-4304-a990-2631f9108168",
+      "result_id": "12ae4d59-245c-4f1a-a4a0-27d86b8a1f04"
+    },
+    {
+      "claim_id": "92b83d12-5a14-44f0-8609-46aa810b8d7a",
+      "result_id": "12ae4d59-245c-4f1a-a4a0-27d86b8a1f04"
+    },
+    {
+      "claim_id": "5ee2ae11-9a86-4c6f-af04-5a13be2f6f6a",
+      "result_id": "12ae4d59-245c-4f1a-a4a0-27d86b8a1f04"
+    },
+    {
+      "claim_id": "4a590fe0-971b-4ce8-b2ef-faba689beaa2",
+      "result_id": "12ae4d59-245c-4f1a-a4a0-27d86b8a1f04"
+    },
+    {
+      "claim_id": "efc41a6b-1ad0-4f69-9c71-7dd1a6e8b0c3",
+      "result_id": "12ae4d59-245c-4f1a-a4a0-27d86b8a1f04"
+    },
+    {
+      "claim_id": "95b6eb69-b5a7-4945-a180-3f39b6b44660",
+      "result_id": "7d3c7d90-32da-4341-942d-531f5733c229"
+    },
+    {
+      "claim_id": "c29bb6a2-8f15-44df-8ad1-991f402fe98e",
+      "result_id": "e580d1db-54f8-465a-8ed6-f7378d905639"
+    },
+    {
+      "claim_id": "e8e8ba12-d75d-4f73-b677-15deb704c8bf",
+      "result_id": "e580d1db-54f8-465a-8ed6-f7378d905639"
+    },
+    {
+      "claim_id": "35685064-c198-4c15-838d-364b44a666ab",
+      "result_id": "e580d1db-54f8-465a-8ed6-f7378d905639"
+    },
+    {
+      "claim_id": "771c3097-c971-4841-bc10-48abc1228ce5",
+      "result_id": "e580d1db-54f8-465a-8ed6-f7378d905639"
+    },
+    {
+      "claim_id": "398146af-8781-4cbb-ab06-0484a3d740fb",
+      "result_id": "e580d1db-54f8-465a-8ed6-f7378d905639"
+    },
+    {
+      "claim_id": "4e25ec6d-6acd-4acd-8951-ba6d7cc8e6c1",
+      "result_id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76"
+    },
+    {
+      "claim_id": "715ad0b2-711f-44b5-8b8c-ab6455b619f1",
+      "result_id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76"
+    },
+    {
+      "claim_id": "0d3612e3-6955-4cc2-a822-6b7ef5d79e99",
+      "result_id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76"
+    },
+    {
+      "claim_id": "03c92501-4ee8-4da2-882e-f9001a48caf3",
+      "result_id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76"
+    },
+    {
+      "claim_id": "e9ea84b7-c353-4c23-a061-32220dd95c9b",
+      "result_id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76"
+    },
+    {
+      "claim_id": "84ade32b-4046-42c2-96fa-27e4c4d67077",
+      "result_id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76"
+    },
+    {
+      "claim_id": "4878af63-0b43-4bd0-b276-75efd8c73afd",
+      "result_id": "9b67f41a-e0b9-4973-9598-b1ad183a9a76"
+    },
+    {
+      "claim_id": "00b59815-36ab-48fb-b064-bc0e0628e6b3",
+      "result_id": "1d83d56c-9705-4108-aec4-99225fadee79"
+    },
+    {
+      "claim_id": "6de0f25c-35e7-479c-b8f6-8441885fee0f",
+      "result_id": "1d83d56c-9705-4108-aec4-99225fadee79"
+    },
+    {
+      "claim_id": "bd504cd3-ce90-43e9-8b9b-53250e38e006",
+      "result_id": "1d83d56c-9705-4108-aec4-99225fadee79"
+    },
+    {
+      "claim_id": "126896a8-9eae-4ff7-a0ca-03b4ae59d763",
+      "result_id": "3ff77a43-01e5-4554-a886-726571e917d8"
+    },
+    {
+      "claim_id": "1009d97b-ae2f-4558-8101-db292bf0ab29",
+      "result_id": "3ff77a43-01e5-4554-a886-726571e917d8"
+    },
+    {
+      "claim_id": "0111be42-8678-4caa-a71d-5eabe2c13ded",
+      "result_id": "3ff77a43-01e5-4554-a886-726571e917d8"
+    },
+    {
+      "claim_id": "c7c8c496-37fa-4df1-98c1-fefd70573faa",
+      "result_id": "3ff77a43-01e5-4554-a886-726571e917d8"
+    },
+    {
+      "claim_id": "87c29a16-ef0b-476b-85a2-3bfabf6fe719",
+      "result_id": "3ff77a43-01e5-4554-a886-726571e917d8"
+    },
+    {
+      "claim_id": "7aa8fb73-6ee8-4885-9585-32a36f9fe150",
+      "result_id": "786ea447-b1e0-4880-a3c6-97b8ea341f6f"
+    },
+    {
+      "claim_id": "c42f30de-448d-4a7e-a35d-7d21fdcb2502",
+      "result_id": "786ea447-b1e0-4880-a3c6-97b8ea341f6f"
+    },
+    {
+      "claim_id": "286359d3-709b-43a6-a7ae-38273bdd95f1",
+      "result_id": "786ea447-b1e0-4880-a3c6-97b8ea341f6f"
+    },
+    {
+      "claim_id": "67262170-eb2a-4dd4-a038-4eea8fab4636",
+      "result_id": "786ea447-b1e0-4880-a3c6-97b8ea341f6f"
+    },
+    {
+      "claim_id": "bc6ff841-0a8a-4816-af07-7a857bfa8758",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "af4111e9-09a1-40aa-b866-d22172366b57",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "e55172ae-7c65-49eb-9334-5887a083da39",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "8f3dccd6-78f3-4656-bae5-23f0f1e4f6e0",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "871a9814-5e00-4a2d-88c2-74d85ce346c0",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "aa2877ed-6194-4dd5-bd90-66acd9c7b0ca",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "3c2d6756-62a4-4977-8902-ce1443330c22",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "73718dc6-9eee-401f-8b7d-3d4dfbc5aea1",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "6f1a9434-c642-4d86-9864-84daeef1facb",
+      "result_id": "95996786-1ae5-433d-918e-49231a5d233d"
+    },
+    {
+      "claim_id": "63ede1d3-f5b2-42f9-81f3-aa30259e1843",
+      "result_id": "9381961b-3d9e-4f8e-8aeb-1af74264112d"
+    },
+    {
+      "claim_id": "2a00b629-6b4d-4371-be5f-4f0ef7b5b92d",
+      "result_id": "3f40774d-49a9-4fec-a9fe-3d166538a1db"
+    },
+    {
+      "claim_id": "c6f14693-c902-463e-88fa-d0d97c548236",
+      "result_id": "3f40774d-49a9-4fec-a9fe-3d166538a1db"
+    },
+    {
+      "claim_id": "d60d2395-981b-4fe1-acd4-dc754f6a544e",
+      "result_id": "ae77752d-ff2b-4222-8cb7-a1ae8590df7d"
+    },
+    {
+      "claim_id": "6e614483-f800-4083-9287-775702ebc645",
+      "result_id": "ae77752d-ff2b-4222-8cb7-a1ae8590df7d"
+    }
+  ],
+  "comparisons": []
+}

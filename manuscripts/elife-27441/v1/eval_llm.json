@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Syt1C2AB assembles into ring-like oligomers in solution when triggered by polyphosphates (PIP2, IP3) and ATP in the presence of Mg2+. These soluble rings have similar dimensions (~32 nm diameter, ~17 copies) and higher density (~5 rings/\u00b5m\u00b2) compared to rings on lipid surfaces, demonstrating that circular oligomerization is an intrinsic property of Syt1 C2 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C22-C27 collectively demonstrate soluble ring formation through converging EM evidence (C3, C22-C24) showing ring structures with consistent dimensions and density. The comparison with lipid surface rings (C26) and inference about intrinsic oligomerization (C27) are well-supported by the experimental data. The stoichiometry estimate (C25) relies on prior helical indexing but is reasonable given the structural similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Multiple polyvalent anions including IP3, ATP, and ADP induce similar ring oligomerization of Syt1C2AB at physiological concentrations, demonstrating that ring formation is a shared property of polyphosphates rather than unique to PIP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are directly supported by EM data (Figures 1D-F) showing ring structures with comparable density for different polyphosphates. The experimental design appropriately tests multiple ligands at relevant concentrations, providing strong evidence for the generality of the oligomerization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C40"
+    ],
+    "result": "Ring oligomerization requires specific molecular interaction between polyvalent anions and the conserved polylysine patch (K326/K327) in the C2B domain, as demonstrated by the absence of rings without polyanions and dramatic reduction (~5 to ~0.4 rings/\u00b5m\u00b2) with polylysine mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C40 are strongly supported by negative control (no rings without polyanions) and mutagenesis data (K326A/K327A mutation) shown in Figure 2A. The inference that this represents direct molecular interaction rather than charge shielding (C33) is well-justified by the specificity of the mutation effect and supported by prior literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C41"
+    ],
+    "result": "Mg2+ plays an independent auxiliary role in stabilizing soluble Syt1C2AB ring oligomers, as evidenced by ~60% reduction in ring density when Mg2+ is excluded, though Mg2+ is not required for ring formation on lipid surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C41 are supported by systematic comparison of ring density with and without Mg2+ (Figure 2B-C). The distinction between solution and lipid surface requirements (C36-C37) provides important mechanistic insight. However, the exact mechanism of Mg2+ stabilization requires further investigation as discussed in later claims about charge shielding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Soluble Syt1C2AB rings are not stable under glycerol density gradient conditions but can be isolated after mild fixation with 0.01% glutaraldehyde.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by experimental data in Figure 2\u2014figure supplement 1. This finding indicates that the soluble rings have relatively weak inter-subunit interactions compared to membrane-bound rings, which is important for understanding the oligomer dynamics. The need for fixation is a limitation but does not invalidate the existence of rings under native conditions as demonstrated by EM and FCS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Fluorescence cross-correlation spectroscopy (FCCS) independently confirms Syt1C2AB oligomerization in solution with ATP and Mg2+, showing that Alexa488 and Alexa647-labeled Syt1 molecules co-migrate in the same diffusional objects, with no cross-correlation observed in the absence of ATP/Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are strongly supported by FCCS data (Figure 3A-B) showing cross-correlation >1 at short time intervals with ATP/Mg2+ and no cross-correlation without these factors. This provides independent validation of the EM observations using a completely different biophysical technique. The inference that oligomers are ATP-derived rather than random associations (C47) is well-justified by the negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "FCS autocorrelation analysis reveals two populations of Syt1C2AB in the presence of ATP/Mg2+: a major fast-diffusing component (~80%, ~600 \u00b5s) corresponding to monomers and a minor slow-diffusing component (~20%, ~4000 \u00b5s) corresponding to oligomers. Without ATP/Mg2+, only the monomeric component is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by quantitative FCS analysis (Figure 3C, Table 1) with appropriate fitting models. The two-component model for ATP/Mg2+ conditions and one-component model for control conditions are statistically justified. The diffusion times are consistent with expected values for monomers and large oligomeric complexes. The ~20% oligomer fraction is reasonable given the measured KD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The polylysine mutant (K326A/K327A) shows only monomeric diffusion properties by FCS even in the presence of ATP/Mg2+, confirming that the polylysine patch is essential for oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by FCS data on the mutant (Figure 3\u2014figure supplement 3) showing single-component diffusion consistent with monomers. This provides independent validation of the mutagenesis results from EM and confirms the mechanistic requirement for the polylysine patch in oligomerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Similar oligomers form with PIP2-diC4 and Mg2+ as confirmed by both autocorrelation and cross-correlation FCS analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by FCS data (Figure 3\u2014figure supplement 4) showing oligomer formation with PIP2, consistent with the EM observations. This confirms that the oligomerization mechanism is general across different polyphosphates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The average copy number of Syt1 in oligomers estimated from FCS is ~16 \u00b1 2, which matches the ~17 copies estimated from EM analysis of ring dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by quantitative analysis combining FCS cross-correlation data with mathematical modeling (Equations 4-6). The agreement between FCS (~16 \u00b1 2) and EM (~17) estimates provides strong validation that both techniques are detecting the same oligomeric species. The calculation relies on several assumptions but the convergence of independent methods is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Hydrodynamic radius calculations from FCS diffusion data yield ~3.1\u00b10.2 nm for monomers and ~24\u00b13 nm for oligomers, consistent with X-ray crystallography dimensions (~4.3 nm) and EM ring dimensions (~32 nm), confirming that FCS and EM detect the same circular oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by appropriate application of the Stokes-Einstein equation for monomers and torus model for ring oligomers. The hydrodynamic radii are in reasonable agreement with structural dimensions from X-ray and EM, though the torus model is an approximation. The convergence of multiple independent measurements (FCS diffusion, EM dimensions, X-ray structure) strongly supports the conclusion that the same ring structures are being observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The affinity constant (KD) for Syt1C2AB oligomerization is ~1 \u00b1 0.3 \u00b5M, corresponding to a free energy of ~\u221213.8 kBT per monomer (~\u2212220 kBT for 16-mer), suggesting that ring oligomers can reasonably assemble under physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by quantitative analysis of FCS data using appropriate equilibrium binding models (Equations 9-10). The KD of ~1 \u00b5M is physiologically relevant given typical Syt1 concentrations on synaptic vesicles. The free energy calculation is thermodynamically sound. However, the inference about physiological assembly (C66) should be tempered by the fact that these are in vitro measurements and cellular conditions may differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Soluble Syt1C2AB rings are insensitive to Ca2+ treatment, forming stable oligomers with Ca2+/ATP similar to Mg2+/ATP, with Ca2+ being slightly more effective than Mg2+ at stabilizing rings. This demonstrates that Ca2+-induced membrane interaction of C2B is essential for ring disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are strongly supported by both EM (Figure 4A) and FCS (Figure 4B) data showing ring formation with Ca2+/ATP. The comparison with prior work on membrane-bound rings (C67-C68) provides important mechanistic insight. The inference that membrane interaction is required for Ca2+-induced disassembly (C73) is well-justified by the differential behavior of soluble vs. membrane-bound rings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82"
+    ],
+    "result": "Neutralizing Ca2+-coordinating aspartic acids in C2B (Syt13A mutant) stabilizes soluble ring oligomers even without divalent cations, demonstrating that C2B Ca2+ loops are involved in ring formation and that Mg2+ stabilizes rings by charge shielding to reduce electrostatic repulsion between monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77, C82 are supported by EM data on the Syt13A mutant (Figure 4C) showing stable rings without Mg2+. This elegant experiment clarifies the role of Mg2+ as charge-shielding rather than direct structural involvement. The inference about C2B loop involvement (C76) is supported by prior structural work and the current mutagenesis data. The mechanism is internally consistent with all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Circular oligomerization is an intrinsic property of Syt1 that can occur independent of membrane surfaces, but strictly requires structurally defined binding of polyphosphates (PIP2 or ATP) to the polylysine motif on C2B domain and is not spontaneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 synthesize the major findings and are well-supported by the collective experimental evidence showing: (1) ring formation in solution (C2-C4, C22-C27), (2) requirement for polyphosphates (C31-C33), (3) requirement for polylysine patch (C32, C55-C56), and (4) absence of rings without these factors (C31, C46, C54). This represents a key conceptual advance in understanding Syt1 oligomerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Oligomerization is triggered by polyphosphate binding to the polylysine patch and stabilized by Mg2+ neutralizing Ca2+-binding aspartic acids. Ring-like polymerization is an intrinsic property of Syt1 with reasonable affinity that can be triggered by C2B-PIP2 interaction during vesicle docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 summarize key mechanistic findings supported by the experimental data on polylysine mutations (C32), Mg2+ effects (C34-C35), Syt13A mutant (C74-C75), and affinity measurements (C64). The inference about triggering by C2B-PIP2 interaction (C8) is reasonable given that PIP2 induces rings, though direct evidence for this occurring during docking would require in vivo studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C85",
+      "C86",
+      "C91"
+    ],
+    "result": "The authors propose that Syt1 rings could pre-form on synaptic vesicles as 'halo'-like structures via ATP binding, then transfer to PIP2 clusters at the plasma membrane to facilitate docking through multivalent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C85-C86, C91 are speculative models based on the experimental findings but lack direct evidence. While the in vitro data support the possibility of ATP-triggered ring formation and the hierarchy of binding affinities is supported by prior work (C87-C90), there is no direct demonstration of pre-formed rings on vesicles or their transfer to the membrane. This remains an interesting hypothesis requiring in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose that Syt1 ring oligomers could maintain the primed pre-fusion state by permitting half-zippered SNAREpins while impeding complete zippering, though the mechanism (passive spacer vs. active SNARE restraint) remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 are speculative mechanistic proposals based on the ring dimensions and prior knowledge of SNARE assembly. While the dimensions are consistent with the proposed function (C93), there is no direct experimental evidence in this study demonstrating that rings actually interact with or regulate SNAREs. The acknowledgment of uncertainty (C94) is appropriate. This represents a testable hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose that Syt1 ring oligomers could synchronize neurotransmitter release by rapidly disintegrating upon Ca2+ binding when membrane interaction occurs, as Ca2+-induced C2B loop insertion into membranes is incompatible with the ring structure. Rings could serve as templates to organize SNAREpins for cooperative triggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101, C103-C104 present a mechanistic model for how rings might regulate fusion. The key observation that soluble rings are Ca2+-insensitive while membrane-bound rings are Ca2+-sensitive (C69-C73, C100-C101) is well-supported. However, the proposed mechanism of rapid disintegration triggering fusion (C99) and template function for SNARE organization (C104) are speculative and lack direct experimental support in this study. The incompatibility of Ca2+-induced membrane insertion with ring structure (C103) is a reasonable inference from structural considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The authors suggest that polyphosphate binding rigidifies the C2B fold to better structure oligomerization surfaces, and that long-range conformational coupling between the polybasic patch and Ca2+-binding sites could explain cooperative PIP2 and Ca2+ binding reported for C2 domain proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 are speculative mechanistic proposals to explain how distant binding sites (polybasic patch and Ca2+ loops) influence each other. While the proposal is reasonable given the spatial separation of these sites and prior reports of cooperative binding, there is no direct structural or biophysical evidence in this study demonstrating conformational coupling or rigidification. This represents an interesting hypothesis requiring structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work established that Syt1 forms Ca2+-sensitive ring-like oligomers (~30 nm, ~17 copies) on membranes containing acidic lipids, and that ring-like oligomers are a conserved feature of C2 domain proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19-C21 accurately cite prior work (Zanetti et al., 2016; Wang et al., 2014) establishing the foundation for the current study. These claims provide essential context and are appropriately attributed to previous publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims about SNARE-mediated synaptic vesicle fusion, Syt1 as the Ca2+ sensor, Syt1's role in docking/priming via PIP2/PS and t-SNARE interactions, and the half-zippered SNARE state maintained by Syt1/Complexin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 accurately summarize established knowledge from the literature with appropriate citations. These provide necessary background context. Claim C18 about Syt1/Complexin maintaining the half-zippered state is appropriately qualified as speculative based on inference from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C80",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C96",
+      "C97",
+      "C102"
+    ],
+    "result": "Background claims from prior work about Ca2+ sensitivity of membrane-bound Syt1 rings, PIP2-mediated vesicle docking, ATP binding properties, cryo-tomography observations of docked vesicles, and Ca2+-induced C2B membrane insertion as the fusion trigger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C80, C87-C90, C96-C97, C102 accurately cite and summarize prior work providing context for interpreting the current findings. These are appropriately attributed to previous publications and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Structural analysis from prior work shows that C2B calcium loops either contribute to or are in close proximity to the C2B-C2B interface in ring oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 appropriately cites prior structural work (Wang et al., 2014) and provides important context for interpreting the Syt13A mutant results. The qualification 'either contribute to or are in close proximity' appropriately reflects the resolution limits of the prior structural analysis.",
+    "result_type": "MINOR"
+  }
+]

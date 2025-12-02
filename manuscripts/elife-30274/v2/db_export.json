@@ -1,0 +1,2067 @@
+{
+  "submission": {
+    "id": "8a919a9e-94a6-4be4-a2f6-48ea112f115f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:52:55.398576Z",
+    "updated_at": "2025-12-01T22:52:55.398576Z"
+  },
+  "content": [
+    {
+      "id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "submission_id": "8a919a9e-94a6-4be4-a2f6-48ea112f115f",
+      "content_type": "manuscript",
+      "content_text": "# Replication Study: Transcriptional amplification in tumor cells with elevated c-Myc\n\n## Authors\n\n- L Michelle Lewis<sup>2</sup>\n- Meredith C Edwards<sup>2</sup>\n- Zachary R Meyers<sup>2</sup>\n- C Conover Talbot<sup>3</sup> ([ORCID: 0000-0002-3758-2425](https://orcid.org/0000-0002-3758-2425))\n- Haiping Hao<sup>3</sup>\n- David Blum<sup>2</sup>\n- Elizabeth Iorns ([ORCID: 0000-0002-1210-2309](https://orcid.org/0000-0002-1210-2309)) \u2020\n- Elizabeth Iorns\n- Rachel Tsui\n- Alexandria Denis ([ORCID: 0000-0002-1210-2309](https://orcid.org/0000-0002-1210-2309))\n- Nicole Perfito\n- Timothy M Errington ([ORCID: 0000-0002-4959-5143](https://orcid.org/0000-0002-4959-5143))\n\n### Affiliations\n\n1. Center for Open Science Charlottesville United States\n2. University of Georgia, Bioexpression and Fermentation Facility Georgia United States\n3. Johns Hopkins University, Deep Sequencing and Microarray Core Facility Maryland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Blum et al., 2015), that described how we intended to replicate selected experiments from the paper \u2018Transcriptional amplification in tumor cells with elevated c-Myc\u2019 (Lin et al., 2012). Here we report the results. We found overexpression of c-Myc increased total levels of RNA in P493-6 Burkitt\u2019s lymphoma cells; however, while the effect was in the same direction as the original study (Figure 3E; Lin et al., 2012), statistical significance and the size of the effect varied between the original study and the two different lots of serum tested in this replication. Digital gene expression analysis for a set of genes was also performed on P493-6 cells before and after c-Myc overexpression. Transcripts from genes that were active before c-Myc induction increased in expression following c-Myc overexpression, similar to the original study (Figure 3F; Lin et al., 2012). Transcripts from genes that were silent before c-Myc induction also increased in expression following c-Myc overexpression, while the original study concluded elevated c-Myc had no effect on silent genes (Figure 3F; Lin et al., 2012). Treating the data as paired, we found a statistically significant increase in gene expression for both active and silent genes upon c-Myc induction, with the change in gene expression greater for active genes compared to silent genes. Finally, we report meta-analyses for each result.\n\n## Introduction\n\nThe Reproducibility Project: Cancer Biology (RP:CB) is a collaboration between the Center for Open Science and Science Exchange that seeks to address concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology (Errington et al., 2014). For each of these papers a Registered Report detailing the proposed experimental designs and protocols for the replications was peer reviewed and published prior to data collection. The present paper is a Replication Study that reports the results of the replication experiments detailed in the Registered Report (Blum et al., 2015) for a 2012 paper by Lin et al., and uses a number of approaches to compare the outcomes of the original experiments and the replications.\n\nIn 2012, Lin et al. reported results that the c-Myc transcription factor, a potent oncogene that is frequently overexpressed in a large percentage of cancers, globally amplifies the expression of actively transcribed genes, opposed to regulating specific target genes. Using the P493-6 cell line, a model for MYC activation in Burkitt\u2019s lymphoma, total levels of RNA per cell were reported to increase when c-Myc was highly expressed compared to conditions where c-Myc expression was low. Additionally, active genes in cells with low c-Myc levels were reported to increase in expression upon c-Myc induction, in contrast to genes that were silent under low c-Myc conditions that did not change.\n\nThe Registered Report for the 2012 paper by Lin et al. described the experiments to be replicated\u00a0(Figure\u00a01B and 3E\u2013F), and summarized the current evidence for these findings (Blum et al., 2015). Since that publication there have been additional studies investigating the ability c-Myc to influence the global gene expression output of cells. Similar to Lin et al. other studies have reported c-Myc dependent amplification of cellular RNA (Hart et al., 2014; Hsu et al., 2015; Nie et al., 2012; Sab\u00f2 et al., 2014), although this observation was not reported in all biological systems (Fagnocchi et al., 2016; Sab\u00f2 et al., 2014; Walz et al., 2014). It has been suggested c-Myc regulates specific genes that indirectly lead to RNA amplification (Sab\u00f2 et al., 2014; Sab\u00f2 and Amati, 2014; Walz et al., 2014). This has also been suggested of MYCN (Duffy et al., 2015). The reported differences could be a result of the intrinsic variation between cell lines in maintaining the transcriptome (Trakhtenberg et al., 2016). Indeed, a recent study reported that distinct transcriptional regulation can be accounted for by differences in promoter affinity under different c-Myc expression levels (Lorenzin et al., 2016).\n\nThe outcome measures reported in this Replication Study will be aggregated with those from the other Replication Studies to create a dataset that will be examined to provide evidence about reproducibility of cancer biology research, and to identify factors that influence reproducibility more generally.\n\n## Results and discussion\n\n### Conditional expression of c-Myc in the B-cell line P493-6\n\nTo test the effects of increased levels of c-Myc on gene expression we used the same human P493-6 B cell line of Burkitt\u2019s lymphoma that contains a conditional tetracycline-repressive MYC transgene (Pajic et al., 2000; Schuhmacher et al., 1999) as the original study. We performed Western blot analysis to confirm c-Myc expression could be reduced to very low levels and then reactivated after removal of tetracycline. This is comparable to what was reported in Figure 1B of Lin et al. (2012) and described in Protocol 1 in the Registered Report (Blum et al., 2015). Since proliferation of P493-6 cells depend on c-Myc expression and the presence of serum (Pajic et al., 2000; Schuhmacher et al., 1999), with serum reported to stimulate a majority of genes independent of c-Myc (Schlosser et al., 2005), we maintained these cells in separate lots of serum to assess whether the results differed. For cells maintained in both lots of serum, treatment with tetracycline resulted in a strong decrease in c-Myc protein levels\u00a0(Figure 1A). After removal of tetracycline, c-Myc levels increased over time approaching the levels observed in tetracycline-free conditions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30274/elife-30274-fig1-v2.jpg)\n\n**Figure 1.:** P493-6 cells were grown in the presence of tetracycline (Tet) for 72 hr and switched into Tet-free growth medium to induce c-Myc expression. Cells were cultured in two separate lots of serum. (A) Representative Western blot using an anti-c-Myc antibody (top panels) or an anti-\u00df-Actin antibody (bottom panel). Two exposures of the anti-c-Myc antibody are presented to facilitate detection of c-Myc. (B) Quantification of total RNA levels (ng of total RNA per 1,000 cells) for cells at 0, 1, and 24 hr after release from Tet. Means reported and error bars represent s.e.m. from three independent biological repeats. For serum lot one, one-way ANOVA on total RNA levels of all groups; F(2, 6)=1.25, p=0.353. Planned contrast between 0 hr and 24 hr; t(6) = 1.02, p=0.347 with a priori alpha level\u00a0=\u00a00.05. For serum lot two, one-way ANOVA on total RNA levels of all groups; F(2, 6)=21.87, p=0.00176. Planned contrast between 0 hr and 24 hr; t(6) = 5.03, p=0.0024 with a priori alpha level\u00a0=\u00a00.05. Additional details for this experiment can be found at https://osf.io/tfd57/.\n\n### Total RNA levels following c-Myc overexpression\n\nWe sought to independently replicate whether increased levels of c-Myc resulted in increased absolute levels of RNA. This experiment is similar to what was reported in Figure 3E of Lin et al. (2012) and used the same extraction method for total RNA quantification, which was described in Protocol 2 in the Registered Report (Blum et al., 2015). Total RNA was isolated from P493-6 cells 0, 1, and 24 hr after tetracycline release and the amount of RNA per 1,000 cells was quantified (Figure 1B). We found that under conditions where c-Myc expression was low (0 hr), there was a mean of 1.55 ng total RNA per 1,000 cells (ng/1 k cells) [n\u00a0=\u00a03, SD\u00a0=\u00a00.20], which increased to 1.77 ng/1 k cells [n\u00a0=\u00a03, SD\u00a0=\u00a00.31] when c-Myc expression was high (24 hr), a 1.14 times increase, for serum lot one, which was not statistically significant (t(6) = 1.02, p=0.347). Serum lot two changed from a mean of 1.57 ng/1 k cells [n\u00a0=\u00a03, SD\u00a0=\u00a00.21] at 0 hr to 2.25 ng/1 k cells [n\u00a0=\u00a03, SD\u00a0=\u00a00.19] at 24 hr, a 1.43 times increase, which was statistically significant (t(6\u00a0=\u00a05.03, p=0.0024). This compares to the original study, which reported a mean of 4.25 ng/1 k cells at 0 hr, which increased to 5.47 ng/1 k cells at 24 hr, a 1.29 times increase in total RNA levels. In both studies there was a minor decrease at 1 hr after tetracycline release when c-Myc levels begin to become detectable. Total RNA per 1,000 cells at 0 hr were much lower in this replication attempt than those reported in the original study, although changes in total RNA levels were in the same direction following c-Myc expression. Similarly, another independent study that measured total RNA from P493-6 cells reported a different level at 0 hr (~3 ng/1 k cells), while also reporting increased levels following c-Myc expression (Sab\u00f2 et al., 2014). There are multiple possible explanations for these differences, such as variation in RNA expression during cell culture passage (Hiorns et al., 2004), low yield of the RNA isolation procedure (e.g. incomplete homogenization), or the high variance associated with manual cell counts using a hemacytometer (Biggs and Macmillan, 1948; Nielson et al., 1991). To summarize, for this experiment we found results that were in the same direction as the original study and not statistically significant for serum lot one, while statistically significant for serum lot two.\n\n### Digital gene expression following c-Myc overexpression\n\nTo test whether c-Myc expression amplifies the existing gene expression program, digital gene expression analysis using the NanoString nCounter platform was performed on a set of genes from multiple functional categories. This experiment is similar to what was reported in Figure 3F and Table S1\u00a0of Lin et al. (2012) and described in Protocols 3\u20134 in the Registered Report (Blum et al., 2015). We quantified mRNA levels/cell of 1369 genes, of which 1212 were the same genes as the 1338 genes interrogated in the original study. We used the same criteria as the original study to classify a gene as silent (expression was less than 0.5 transcript/cell at time 0 hr) or active (more than one transcript/cell at time 0 hr). In cells with low levels of c-Myc (0 hr) there were 708 active genes with a median expression of 4.70, and 580 silent genes with a median expression of 0.032, for serum lot one. For active genes, 75% of the genes increased from 0 hr to 1 hr, 68% increased from 0 hr to 24 hr, and 59% increased from 1 hr to 24 hr upon c-Myc induction. This corresponds to a 1.11, 1.50, and 1.36 times increase in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1). For silent genes, 74% of the genes increased from 0 hr to 1 hr, 66% increased from 0 hr to 24 hr, and 50% increased from 1 hr to 24 hr, corresponding to a 1.19 and 1.13 times increase, and a 0.05 times decrease in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1). Serum lot two gave similar results, although there were variations in the number of genes identified as silent or active as well as the degree of increase among the conditions (Figure 2, Figure 2\u2014figure supplement 1). This compares to the original study that identified 755 active genes with a median expression of 7.06, and 514 silent genes with a median expression of 0.00 (more than half the silent genes did not have a reported expression value). Active genes in the original study, increased 91% from 0 hr to 1 hr, 96% from 0 hr to 24 hr, and 87% from 1 hr to 24 hr upon c-Myc induction, corresponding to a 1.23, 2.45, and 1.99 times increase in median expression, respectively. Silent genes in the original study, increased 23% from 0 hr to 1 hr, 29% from 0 hr to 24 hr, and 30% from 1 hr to 24 hr, with the median expression unchanged among conditions. In addition, we further examined the extent of overlap of active and silent genes between the original study and this replication attempt. Of the 1212 genes that were interrogated in both studies, 88.8% (603/679) of the active genes we identified in serum lot one were also active in the original study (90.1% (612/679) for serum lot two). For silent genes, 96.4% (456/473) of the genes we identified as silent in serum lot one were common with the silent genes identified in the original study (95.8% (453/473) for serum lot two).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30274/elife-30274-fig2-v2.jpg)\n\n**Figure 2.:** P493-6 cells grown in the presence of tetracycline (Tet) for 72 hr for repression of the conditional pmyc-tet construct, were switched into Tet-free growth medium to induce c-Myc expression. Cells were cultured in two separate lots of serum. Transcripts/cell estimates from NanoString nCounter gene expression assays (1369 genes assay) for active (left) and silent (right) genes at 0, 1, and 24 hr after release from Tet. Active genes expressed greater than one transcript/cell. Silent genes expressed less than 0.5 transcript/cell. Box and whisker plots with median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Cells grown in serum lot one: active genes\u00a0=\u00a0708, silent genes\u00a0=\u00a0580. Cells grown in serum lot two: active genes\u00a0=\u00a0719, silent genes\u00a0=\u00a0573. Confirmatory analysis is reported in Table 1 and exploratory statistical analysis is reported in Table 2 and Table 3. Additional details for this experiment can be found at https://osf.io/fn2y4/.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30274/elife-30274-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This is the same experiment as in Figure 2. (A\u2013B, E\u2013F) Gene expression data plotted on a log2 transformed scale for active (A, E) and silent (B, F) genes at 0, 1, and 24 hr after release from Tet for both lots of serum. (C\u2013D, G\u2013H) Box and whisker plots showing gene expression changes (log2 ratio) between the indicated times for active (C, G) and silent (D, H) genes. Median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Additional details for this experiment can be found at https://osf.io/fn2y4/.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30274/elife-30274-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** This is the same experiment as in Figure 2. (A\u2013C, E\u2013G) Scatter plots of log2 transformed gene expression data for all genes analyzed at the indicated times on the y and x axes for both lots of serum. Active genes are blue, silent genes are red, and genes that are neither active or silent (expression was more than 0.5 transcript/cell and less than one transcript/cell at time 0 hr) are white. (D, H) Box and whisker plots showing gene expression changes (log2 ratio) between the indicated times for all genes analyzed for both lots of serum. Median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartile. Additional details for this experiment can be found at https://osf.io/fn2y4/.\n\nTo test whether active genes, as well as silent genes, increased expression during c-Myc induction we performed the confirmatory analysis as outlined in the Registered Report (Blum et al., 2015). This analysis differed from what was reported in the original study by analyzing the data as paired instead of unpaired. As suggested during peer review of the Registered Report, this is because expression of the same gene, analyzed across different conditions, is not independent (Blum et al., 2015). We performed a Wilcoxon signed-rank test on active genes comparing expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr, which were statistically significant for cells grown in both lots of serum (Table 1). The same comparisons were performed on silent genes, which were also statistically significant, with the exception of the silent gene comparison of 1 hr to 24 hr for serum lot one. Considering this was not the test reported in the original study, we conducted these paired analyses on the original data to provide a direct comparison. For both active and silent genes c-Myc induction resulted in statistically significant increases in expression, with the exception of the silent gene comparison from 0 hr to 1 hr (Table 1). This is in contrast to the results of the unpaired tests that were reported in the original study where active genes were reported to have a statistically significant increase in expression and silent genes were reported as not statistically significant for all comparisons. We conducted an exploratory unpaired analysis on the replication data for comparison, which resulted in statistically significant differences among the active gene comparisons as well as half of the silent gene comparisons (Table 2).\n\n**Table 1.**\n Confirmatory statistical tests.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genes</th>\n      <th>Comparison</th>\n      <th>Study</th>\n      <th>Z value</th>\n      <th>P value</th>\n      <th>Sample size (n)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Active</td>\n      <td>0 hr vs 1 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>14.86</td>\n      <td>1.36e-55</td>\n      <td>708</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>11.83</td>\n      <td>2.83e-34</td>\n      <td>719</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>21.17</td>\n      <td>1.05e-130</td>\n      <td>755</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>0 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>9.922</td>\n      <td>3.67e-24</td>\n      <td>708</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>12.77</td>\n      <td>3.77e-40</td>\n      <td>719</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>23.26</td>\n      <td>3.33e-184</td>\n      <td>755</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>4.742</td>\n      <td>1.92e-06</td>\n      <td>708</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>10.04</td>\n      <td>9.91e-25</td>\n      <td>719</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>23.26</td>\n      <td>3.33e-184</td>\n      <td>755</td>\n    </tr>\n    <tr>\n      <td>Silent</td>\n      <td>0 hr vs 1 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>12.61</td>\n      <td>7.11e-40</td>\n      <td>580</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>7.05</td>\n      <td>9.29e-13</td>\n      <td>572</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>\u22121.998</td>\n      <td>0.0457</td>\n      <td>274</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>0 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>8.328</td>\n      <td>2.22e-17</td>\n      <td>579</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>8.156</td>\n      <td>1.03e-16</td>\n      <td>572</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>3.179</td>\n      <td>0.00144</td>\n      <td>276</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>0.6853</td>\n      <td>0.493</td>\n      <td>580</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>4.436</td>\n      <td>8.35e-06</td>\n      <td>573</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>5.806</td>\n      <td>4.11e-09</td>\n      <td>236</td>\n    </tr>\n  </tbody>\n</table>\n\n_These confirmatory statistical tests relate to the data presented in Figure 2. Wilcoxon signed-rank test, which treat the data as paired, were conducted for the original study (Lin et al., 2012) and this replication attempt (RP:CB). Uncorrected p values are reported with an a priori significance threshold of. 0167. Sample sizes reported are based on the sample size used in the tests. Additional details for this experiment can be found at https://osf.io/fn2y4/._\n\n**Table 2.**\n Exploratory statistical tests.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genes</th>\n      <th>Comparison</th>\n      <th>Study</th>\n      <th>W value</th>\n      <th>P value</th>\n      <th>Sample size (n)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Active</td>\n      <td>0 hr vs 1 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>270378</td>\n      <td>0.0103</td>\n      <td>1416</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>274696</td>\n      <td>0.0395</td>\n      <td>1438</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>318799</td>\n      <td>6.67e-05</td>\n      <td>1510</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>0 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>300774</td>\n      <td>7.16e-11</td>\n      <td>1416</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>324564</td>\n      <td>4.74e-17</td>\n      <td>1438</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>400999</td>\n      <td>1.16e-42</td>\n      <td>1510</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>281679</td>\n      <td>5.45e-05</td>\n      <td>1416</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>308954</td>\n      <td>1.45e-10</td>\n      <td>1438</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>372714</td>\n      <td>4.11e-25</td>\n      <td>1510</td>\n    </tr>\n    <tr>\n      <td>Silent</td>\n      <td>0 hr vs 1 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>187682</td>\n      <td>0.000638</td>\n      <td>1160</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>174695</td>\n      <td>0.0602</td>\n      <td>1146</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>127104</td>\n      <td>0.236</td>\n      <td>1028</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>0 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>185804</td>\n      <td>0.00203</td>\n      <td>1160</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>184470</td>\n      <td>0.000289</td>\n      <td>1146</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>132082</td>\n      <td>0.997</td>\n      <td>1028</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>166122</td>\n      <td>0.716</td>\n      <td>1160</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>173608</td>\n      <td>0.0918</td>\n      <td>1146</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>136443</td>\n      <td>0.295</td>\n      <td>1028</td>\n    </tr>\n  </tbody>\n</table>\n\n_These exploratory statistical tests relate to the data presented in Figure 2. Wilcoxon rank sum tests, which treat the data as unpaired, were conducted for the original study (Lin et al., 2012) and this replication attempt (RP:CB). Uncorrected p values are reported. Sample sizes reported are based on treating genes as unpaired between conditions. Additional details for this experiment can be found at https://osf.io/fn2y4/._\n\nImportantly, though, the question of whether the change in expression among active genes is different than silent genes has not been tested. This would require a separate test on their difference (Gelman and Stern, 2006; Nieuwenhuis et al., 2011). To test whether active genes increased in expression during c-Myc induction more than silent genes, we performed an exploratory analysis on the difference in expression of active genes during c-Myc induction (e.g. from 0 hr to 24 hr) compared to the difference in expression of silent genes over that same period (e.g. from 0 hr to 24 hr). For both the original and replication data, there was a statistically significant increase in expression of active genes compared to silent genes (Table 3). This suggests that active genes and silent genes do not have similar rates of expression upon c-Myc induction. To summarize, for this experiment we found results that were in the same direction as the original study and suggest that while both active and silent genes increased in expression upon c-Myc induction, the rate of increase was different.\n\n**Table 3.**\n Exploratory statistical tests.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Comparison</th>\n      <th>Study</th>\n      <th>W value</th>\n      <th>P value</th>\n      <th>Sample size (n)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0 hr vs 1 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>303897</td>\n      <td>7.78e-50</td>\n      <td>1288</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>278646</td>\n      <td>1.1e-27</td>\n      <td>1292</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>349351</td>\n      <td>1.27e-130</td>\n      <td>1269</td>\n    </tr>\n    <tr>\n      <td>0 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>272441</td>\n      <td>5.18e-24</td>\n      <td>1288</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>292865</td>\n      <td>7.4e-39</td>\n      <td>1292</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>368182</td>\n      <td>1.14e-163</td>\n      <td>1269</td>\n    </tr>\n    <tr>\n      <td>1 hr vs 24 hr</td>\n      <td>RP:CB Lot 1</td>\n      <td>235077</td>\n      <td>7.45e-06</td>\n      <td>1288</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>RP:CB Lot 2</td>\n      <td>272028</td>\n      <td>3.73e-23</td>\n      <td>1292</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Lin et al. (2012)</td>\n      <td>332069</td>\n      <td>5.72e-104</td>\n      <td>1269</td>\n    </tr>\n  </tbody>\n</table>\n\n_These exploratory statistical tests relate to the data presented in Figure 2. Wilcoxon rank sum tests were conducted for the original study (Lin et al., 2012) and this replication attempt (RP:CB) on the difference in expression of active genes during c-Myc induction (e.g. from 0 hr to 24 hr) compared to the difference in expression of silent genes over that same period (e.g. from 0 hr to 24 hr). Uncorrected p values are reported. Sample sizes reported are based on number of active and silent genes used in the tests. Additional details for this experiment can be found at https://osf.io/fn2y4/._\n\nThe original study and this replication attempt used the same criteria to characterize a gene as silent or active, but there are many negative consequences of dichotomizing continuous variables, such as information loss, especially with a small gene set (Altman and Royston, 2006; Cohen, 1983). Papers published after the original study took an unbiased view by collecting comprehensive RNA-sequencing data to assess if the transcriptional effects of c-Myc were direct or indirect, concluding c-Myc activates and represses transcription of discrete gene sets, which in turn leads to induced RNA amplification (Sab\u00f2 et al., 2014; Walz et al., 2014). Furthermore, Sab\u00f2 and colleagues also used NanoString technology to quantify a subset of the differentially expressed genes identified by RNA-seq and observed similar results that revealed upward shifts in gene expression upon c-Myc induction (Sab\u00f2 et al., 2014). However, instead of dichotomizing genes as active or silent, gene expression data was presented as continuous. Similarly, we presented the digital gene expression data generated during this replication attempt as continuous, which illustrates a general pattern of overall increased gene expression following c-Myc induction (Figure 2\u2014figure supplement 2). Importantly, though, these results are limited to the 1369 genes interrogated in this study and may or may not reflect how the entire transcriptome of P493-6 cells respond to c-Myc induction.\n\n### Meta-analyses of original and replicated effects\n\nWe performed a meta-analysis using a random-effects model to combine each of the effects described above as pre-specified in the confirmatory analysis plan (Blum et al., 2015). To provide a standardized measure of the effect, a common effect size was calculated for each effect from the original and replication studies. Cohen\u2019s d is the standardized difference between two means using the pooled sample standard deviation. The effect size r is a standardized measure of the strength and direction of the association between two variables, in this case time during c-Myc induction and gene expression. The estimate of the effect size of one study, as well as the associated uncertainty (i.e. confidence interval), compared to the effect size of the other study provides another approach to compare the original and replication results (Errington et al., 2014; Valentine et al., 2011). Importantly, the width of the confidence interval for each study is a reflection of not only the confidence level (e.g. 95%), but also variability of the sample (e.g. SD) and sample size.\n\nThe comparison of total RNA levels at low levels of c-Myc (0 hr) compared to high levels of c-Myc (24 hr) resulted in d\u00a0=\u00a04.19, 95% CI [0.94, 7.37] for the data reported in Figure\u00a03E of the original study (Lin et al., 2012). This compares to d\u00a0=\u00a00.83, 95% CI [\u22120.91, 2.48] for serum lot one and d\u00a0=\u00a04.11, 95% CI [0.90, 7.23] for serum lot two reported in this study. A meta-analysis (Figure 3A) of these effects resulted in d\u00a0=\u00a02.52, 95% CI [0.01, 5.03], which was statistically significant (p=0.0488). The original and replication results are consistent when considering the direction of the effect, which suggests c-Myc induction increases total RNA levels in P493-6 Burkitt\u2019s lymphoma cells. Noticeably, there was substantial within-study variation observed in this replication attempt, due the different serum lots tested. The point estimate of serum lot one was not within the confidence intervals of the original study and serum lot two, and vice versa; however the point estimate of the original study and serum lot two were within the confidence intervals of each other.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30274/elife-30274-fig3-v2.jpg)\n\n**Figure 3.:** Effect size and 95% confidence interval are presented for\u00a0Lin et al., 2012, this replication study (RP:CB), and a random effects meta-analysis of those two effects. Cohen\u2019s d is the standardized difference between the two measurements, with a larger positive value indicating total RNA levels are increased at 24 hr compared to 0 hr. The effect size r is a standardized measure of the correlation (strength and direction) of the association between gene expression and c-Myc induction, with a larger positive value indicating gene expression increased during the course of c-Myc induction. Sample sizes used in\u00a0Lin et al., 2012 and this replication attempt are reported under the study name. (A) Total RNA levels in P493-6 cells 0 hr compared to 24 hr after release from tetracycline (meta-analysis p = 0.0488). (B) Gene expression of active or silent genes are shown for all comparisons. Active genes: 0 hr compared to 1 hr (meta-analysis p = 1.12x10-7), 0 hr compared to 24 hr (meta-analysis p = 7.01x10-4), 1 hr compared to 24 hr (meta-analysis p = 0.0129). Silent genes: 0 hr compared to 1 hr (meta-analysis p = 0.203), 0 hr compared to 24 hr (meta-analysis p = 7.10x10-17), 1 hr compared to 24 hr (meta-analysis p = 0.0571). Additional details for these meta-analyses can be found at https://osf.io/5yscz/.\n\nThere were six comparisons of the gene expression data, three for active genes and three for silent genes (Figure 3B). These calculations were performed analyzing the data as paired, for reasons discussed above and as prespecified in the Registered Report (Blum et al., 2015). For active genes, expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr the meta-analyses were statistically significant (p=1.12\u00d710\u22127, p=7.01\u00d710\u22124, p=0.0129, respectively). In all comparisons the results were consistent when considering the direction of the effect; however the effect size point estimate of each study (original, replication serum lot one, replication serum lot two) was not within the confidence interval of the other studies. Further, the large confidence intervals of the meta-analysis along with statistically significant Cochran\u2019s Q tests suggest heterogeneity between the original and replication studies. For silent genes, the meta-analysis was not statistically significant for gene expression at 0 hr to 1 hr and 1 hr to 24 hr (p=0.203, p=0.0571, respectively) and the effect size point estimate of each study was not within the confidence interval of the other studies. Similar to the active gene comparisons, the large confidence intervals of the meta-analysis along with statistically significant Cochran\u2019s Q tests suggest heterogeneity between the studies. Furthermore, for the 0 hr to 1 hr comparison the original study and replication studies were in opposite directions, while the 1 hr to 24 hr comparison was consistent. Finally, the comparison between 0 hr and 24 hr for silent genes was consistent when considering direction of the effect with a statistically significant meta-analysis (p=7.10\u00d710\u221217). The point estimate of the original study was not within the confidence intervals of the replication studies; however both replication studies with different serum lots were within the confidence intervals of the original study and each other. Overall, the gene expression analysis indicates that the effect sizes observed from the two serum lots tested in this replication attempt, although not identical, were more similar to each other than to the original study.\n\nThis direct replication provides an opportunity to understand the present evidence of these effects. Any known differences, including reagents and protocol differences, were identified prior to conducting the experimental work and described in the Registered Report (Blum et al., 2015). However, this is limited to what was obtainable from the original paper and through communication with the original authors, which means there might be particular features of the original experimental protocol that could be critical, but unidentified. So while some aspects, such as the cell line, induction time course, and the method used to measure gene expression were maintained, others were changed at the time of study design (Blum et al., 2015) that could affect results, such as the analytical approach (Silberzahn et al., 2017) and serum lot (Leek et al., 2010). Furthermore, other aspects were unknown or not easily controlled for. These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016)\u00a0or changes in cellular volume that can impact overall transcript abundance (Padovan-Merhar et al., 2015). Whether these or other factors influence the outcomes of this study is open to hypothesizing and further investigation, which is facilitated by direct replications and transparent reporting.\n\n## Materials and methods\n\nAs described in the Registered Report (Blum et al., 2015), we attempted a replication of the experiments reported in Figures 1B and 3E-F of Lin et al. (2012). A detailed description of all protocols can be found in the Registered Report (Blum et al., 2015). Additional detailed experimental notes, data, and analysis are available on the Open Science Framework (OSF) (RRID:SCR_003238) (https://osf.io/mokeb/; Lewis et al., 2017). This includes the R Markdown file (https://osf.io/vdrsh/) that was used to compose this manuscript, which is a reproducible document linking the results in the article directly to the data and code that produced them (Hartgerink, 2017).\n\n### Cell culture\n\nP493-6 cells (shared by Young lab, Whitehead Institute for Biomedical Research, RRID: CVCL_6783) were maintained in RPMI-1640 supplemented with 1% Ala-Gln and 10% tetracycline-free FBS (Clontech, Mountain View, CA, cat# 631105, lot# 1: A15003, lot# 2: A15032). Cells were grown at 37\u00b0C in a humidified atmosphere at 5% CO2. Quality control data for the cell line are available at https://osf.io/e6ftz/. This includes results confirming the cell line was free of mycoplasma contamination (DDC Medical, Fairfield, Ohio). Additionally, STR DNA profiling of the cell line was performed (DDC Medical, Fairfield, Ohio).\n\nFor repression of the conditional pmyc-tet construct in P493-6 cells, 0.1 \u00b5g/ml tetracycline (Sigma-Aldrich, St.\u00a0Louis, MO, cat# T7660) was added to the culture medium and cells were incubated for 72 hr. Under these conditions, P493-6 cells did not proliferate due to a dependency on the expression of MYC (Schuhmacher et al., 1999). For MYC re-induction, cells were washed three times with growth medium and grown in tetracycline-free culture conditions.\n\n### Western blot\n\nP493-6 cells were harvested at the indicated times and total cell lysates were prepared by pelleting\u00a0~1\u00d7107 cells (determined with a C-chip disposable hemocytometer) at 4\u00b0C at 1,200 rpm for 5 min using a refrigerated centrifuge (Eppendorf, Westbury,\u00a0NY,\u00a0model# 5810R). After cell pellets were washed once with ice-cold 1X PBS, pellets were resuspended in RIPA lysis buffer containing 2X SIGMAFAST Protease inhibitors and 2X Phosphatase inhibitor cocktails 2 and 3. Protein concentrations were determined using the Bradford assay according to the manufacturer\u2019s instructions. Sample buffer was added to protein lysates and 50 \u00b5g of protein along with protein ladder was resolved by SDS-PAGE and transferred to PVDF membrane as described in the Registered Report (Blum et al., 2015). The membrane was blocked with 5% w/v nonfat dry milk in 1X TBS with 0.2% Tween-20 (TBST). Membranes were probed with rabbit anti-c-Myc [clone Y69] (Epitomics,\u00a0Burlingame,\u00a0CA, cat# 1472\u20131; RRID:AB_731658); 1:5000 dilution in 5% w/v nonfat dry milk/TBST and mouse anti-\u00df-actin [clone AC-15] (Sigma-Aldrich, cat# A5441; RRID:AB_476744); 1:10,000 dilution in 5% w/v nonfat dry milk/TBST. Each incubation was followed by washes with TBST and the appropriate secondary antibody: HRP-conjugated donkey anti-rabbit (Sigma-Aldrich, cat# GERPN2124); 1:10,000 dilution in 5% w/v nonfat dry milk/TBST or HRP-conjugated sheep anti-mouse (Sigma-Aldrich, cat# GERPN2124); 1:10,000 dilution in 5% w/v nonfat dry milk/TBST. Membranes were washed with TBST and incubated with ECL Prime Chemiluminescent reagent (Sigma-Aldrich, cat# GERPN2232) according to the manufacturer\u2019s instructions. Western blot images were acquired with G:BOX iChem XT and GeneSnap software (RRID:SCR_014249), version 7.12.02 (Syngene, Frederick, Maryland) and quantified using ImageJ software (RRID:SCR_003070), version 1.50i (Schneider et al., 2012). All images taken are available at https://osf.io/ujg7t/.\n\n### RNA quantification\n\nP493-6 cells were harvested at the indicated times and total RNA extraction was performed by pelleting\u00a0~1\u00d7107 cells (exact number determined with a C-chip disposable hemocytometer) and homogenizing the sample in 1 ml Tri Reagent (Sigma-Aldrich, cat# T9424) according to the manufacturer\u2019s instructions. For each sample 10% v/v miRNA Homogenate Additive was added, vortexed, and incubated on ice for 10 min. For each 1 ml of Tri Reagent, 100 \u00b5l of bromochloropropane was added, vortexed for 15\u201330 s, incubated for 5 min at RT, then centrifuged at 12,000xg for 10 min at 4\u00b0C. The aqueous phase was recovered and total RNA isolation was performed using the miRVana miRNA extraction kit (Ambion, Waltham,\u00a0MA,\u00a0cat# AM1561) according to the manufacturer\u2019s instructions. Recovered RNA was eluated in 100 \u00b5l nuclease-free water. Total RNA concentrations and purity (data available at https://osf.io/jh5r4/) were measured using a NanoDrop ND-1000 (Thermo Fisher Scientific, Waltham, Massachusetts) with the NanoDrop Operating Software, version 3.3, and converted to ng per 1,000 cells.\n\n### RNA extraction and NanoString nCounter digital gene expression assay\n\nP493-6 cells were harvested at the indicated times and 1 \u00d7 106 cells were collected (number determined with a C-chip disposable hemocytometer) and lysed directly in 100 \u00b5l Buffer RLT (Qiagen, Hilden,\u00a0Germany,\u00a0cat# 79216) supplemented with \u00df-mercaptoethanol to yield a concentration of 10,000 cells per \u00b5l. This was performed four independent times. Multiple 4 \u00b5l aliquots were stored and shipped at \u221280\u00b0C with temperature monitored during shipping to avoid freeze/thaw cycles. Lysates were processed according to the Cell Lysate Protocol (nCounter Gene Expression Assay Manual, NanoString Technologies, Seattle, Washington) according to the manufacturer\u2019s instructions and as described in the Registered Report (Blum et al., 2015). Three nCounter Reporter CodeSets (nCounter GX Human Immunology Kit, nCounter GX Human Kinase Kit, nCounter Custom CodeSet) encompassing 1369 genes across multiple functional categories were used. Following hybridization, samples were immediately processed with the nCounter Analysis System (NanoString Technologies, NCT-PREP-120). The count data was collected using the nCounter RCC Collector Worksheet (NanoString Technologies), version 1.6.0 and then positive-, negative-, and housekeeping gene-normalized per nCounter guidelines. Expression for each gene was averaged across the four independent replicate samples. Additionally, for genes that appeared on multiple CodeSets, expression values were averaged together to generate a single value for each gene. A gene was defined as transcriptionally active if its average expression was above one transcript/cell at 0 hr and transcriptionally silent if below 0.5 transcript/cell. A list of all Reporter CodeSets and their expression values (transcripts/cell) are available at Figure 2\u2014source data 1. Additional files and analysis scripts are available at https://osf.io/fn2y4/.\n\n### Statistical analysis\n\nStatistical analysis was performed with R software (RRID:SCR_001905), version 3.3.2 (R Core Team, 2017). All data, csv files, and analysis scripts are available on the OSF (https://osf.io/mokeb/). Confirmatory statistical analysis was pre-registered (https://osf.io/nj8wb/) before the experimental work began as outlined in the Registered Report (Blum et al., 2015). Proposed analysis of gene expression data was conducted by the Wilcoxon signed-rank test using the method proposed by Pratt to handle zero differences (Pratt, 1959), with additional exploratory analysis performed using the Wilcoxon rank sum test as reported in the original study and a Wilcoxon rank sum test on the difference in expression of active genes during c-Myc induction (e.g. from 0 hr to 24 hr) compared to the difference in expression of silent genes over that same period (e.g. from 0 hr to 24 hr). Data were checked to ensure assumptions of statistical tests were met. When described in the results, the Bonferroni correction, to account for multiple testings, was applied to the alpha error by dividing the uncorrected value (.05) by the number of tests performed. Although the Bonferroni method is conservative, it was accounted for in the power calculations to ensure sample size was sufficient. In cases where the number of groups were three and the sample sizes were evenly distributed among the groups, Fisher's LSD test was performed resulting in an a priori significance threshold of. 05. A meta-analysis of a common original and replication effect size was performed with a random effects model and the metafor package (Viechtbauer, 2010) (available at: https://osf.io/5yscz/). The sample sizes reported in Table 1 and Figure 3 for the gene analysis comparisons is based on the sample size used in the Wilcoxon signed-rank test, which removes samples with zero differences after ranking (Pratt, 1959). The raw original study data were shared by the original authors with the summary data published in the Registered Report (Blum et al., 2015) and was used in the power calculations to determine the sample size for this study.\n\n### Deviations from registered report\n\nThe number of flasks, and thus cells, was increased when tetracycline was added to P493-6 cells to account for the cells not proliferating during this period (i.e. there were two Flask B\u2019s as described in the Registered Report, which were pooled prior to seeding). The proposed statistical analysis for the western blot analysis (Protocol 1) described in the Registered Report was not performed since the levels of normalized c-Myc at time 0 hr was at the limit of detection. The number of genes analyzed in the original study, and thus listed in the Registered Report, was reported incorrectly as 1388 instead of 1338 (data shared by original authors). NanoString analysis was conducted using the nCounter RCC Collector Worksheet instead of nSolver Analysis software. Additionally, the statistical tests reported in\u00a0Figure\u00a03F of the original study incorrectly described the comparisons as between 0 hr and 1 hr instead of between 0 hr and 24 hr (scripts shared by original authors). The corrected values are described above for comparisons and used in the meta-analysis. Additional materials and instrumentation not listed in the Registered Report, but needed during experimentation are also listed.\n",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "fa8d4125-5c3b-40e1-a1ac-8c495793d2bc",
+      "submission_id": "8a919a9e-94a6-4be4-a2f6-48ea112f115f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael R Green, Howard Hughes Medical Institute, University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30274.015](https://doi.org/10.7554/eLife.30274.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Replication Study: Transcriptional amplification in tumor cells with elevated c-Myc\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Michael Green as the Reviewing Editor and Sean Morrison as the Senior Editor. The two reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nLewis et al. performed reproducibility experiments for key data of the paper published by Lin et al. 2012 in Cell. In particular, the experiment described in Figure 1B and its bioinformatic analysis in Figure 3E, F were investigated for reproducibility. Lin et al. studied the change of mRNA levels in response to up-regulated levels of c-Myc in the human B cell line P493-6, which carries a conditional tetracycline-regulated c-Myc gene (Tet-off system). Lin et al. reported that the increase of c-Myc levels in P493-6 cells (after removal of tetracyline) was not sufficient to induce expression of silent genes. In contrast, mRNA levels of those genes, which were expressed already before c-Myc induction, were further elevated. However, the data of Lin et al. (Figure 3F) already showed that this general statement is not valid for all silent genes. Several silent genes (per definition less the 0.5 transcripts/cell) showed elevated mRNA levels (up to 20 transcripts/cell) 24h after c-Myc induction. Importantly, the group of silent genes analyzed in the study of Lin et al. was relatively small (only 514 genes) and randomly selected. If all silent genes in P493-6 cells were analyzed in this study (probably many thousands), the group of silent genes with up-regulated mRNA levels would probably be much larger (hundreds of genes). Thus, the analysis of the data in Figure 3F suffers from the definition of gene sets. The statement of the paper that silent genes are not inducible by c-Myc comes mainly from the fact that the set of analyzed silent genes is very small.\n\nThe replication work of Lewis et al. largely confirms the results of Lin et al. (Figure 1B, Figure 3E,F) and shows that elevation of c-Myc levels also elevates the mRNA levels of the same set of genes (potential c-Myc target genes). However, the study of Lewis et al. shows in addition that a larger number of silent genes is inducible by c-Myc and that the rate of induction of c-Myc target genes is generally influenced by the applied serum batch/lot.\n\nBoth studies, Lin et al. and Lewis et al., did not address or discuss the question to which extent the increase in mRNA levels is caused by post-transcriptional mechanisms.\n\nFor the scientific community two questions are of general (high) interest: How does the entire transcriptome of P493-6 cells respond to increased c-Myc levels and how do all the silent genes respond, neither of which were analyzed in this study?\n\nEssential revisions:\n\n1) The paper of Lin et al. led to a great controversy in the c-Myc field, including the labs of Martin Eilers and Bruno Amati, because it ignored that c-Myc also activates inactive genes and represses active genes. Both labs published 2014 two papers back to back in Nature correcting this biased view of the Lin paper. The biased view of the Lin paper is the result of the definition of small genes sets for the analysis and this issue needs to be explicitly discussed in the reproducibility study.\n\n2) Expression levels of c-Myc are much lower than those of the original study, although the changes of c-Myc expression are in the same direction as the original study (subsection \u201cTotal RNA levels following c-Myc overexpression\u201d). Can the authors please discuss this issue?\n\n3) In this study, 580 silent genes were identified with expression level less than 0.5 transcript/cell with a median expression of 0.032. In the original study, 514 genes were identified as silent genes with a median expression of 0.00. If I understand correctly, the current study uses different criteria for a gene to be classified as silent gene. I am curious whether there is a rationale for using 0.5 transcript/cell as the cutoff. In addition, it would be interesting to know how many silent genes are common between the two studies, and how many active genes are common between the two studies (subsection \u201cDigital gene expression following c-Myc overexpression\u201d, first paragraph). The extent of overlap of genes might play a role on some of the inconsistent results between two studies, as mentioned in the meta analysis section (subsection \u201cMeta-analyses of original and replicated effects\u201d, last two paragraphs).\n\n4) The authors should make a R package with a R markdown file and all the associated data.\n",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "453d2406-449e-416b-a9b9-179140c4dcf4",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C1",
+      "claim": "The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange that seeks to address concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology (RP:CB) is a collaboration between the Center for Open Science and Science Exchange that seeks to address concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology (Errington et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Errington et al., 2014, which describes the project.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "6d1fcd6c-116d-4e5e-960f-ef82f834fc14",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C2",
+      "claim": "For each paper in the Reproducibility Project: Cancer Biology, a Registered Report detailing the proposed experimental designs and protocols for the replications was peer reviewed and published prior to data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of these papers a Registered Report detailing the proposed experimental designs and protocols for the replications was peer reviewed and published prior to data collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodology of the RP:CB project and is supported by the citation to the Registered Report (Blum et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c0fcd4ae-7e17-445b-93a9-9c37caba1821",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C3",
+      "claim": "In 2012, Lin et al. reported that c-Myc transcription factor globally amplifies the expression of actively transcribed genes, opposed to regulating specific target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2012, Lin et al. reported results that the c-Myc transcription factor, a potent oncogene that is frequently overexpressed in a large percentage of cancers, globally amplifies the expression of actively transcribed genes, opposed to regulating specific target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "ec3afe15-51ee-4c3c-9341-97112f823b79",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C4",
+      "claim": "c-Myc is a potent oncogene that is frequently overexpressed in a large percentage of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2012, Lin et al. reported results that the c-Myc transcription factor, a potent oncogene that is frequently overexpressed in a large percentage of cancers, globally amplifies the expression of actively transcribed genes, opposed to regulating specific target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about c-Myc in cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "126c3c31-bf95-4213-908c-ab18076de2d8",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C5",
+      "claim": "Using the P493-6 cell line, total levels of RNA per cell were reported to increase when c-Myc was highly expressed compared to conditions where c-Myc expression was low.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the P493-6 cell line, a model for MYC activation in Burkitt's lymphoma, total levels of RNA per cell were reported to increase when c-Myc was highly expressed compared to conditions where c-Myc expression was low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes findings from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "33b3b262-d5b7-415a-80b8-970cd07d5343",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C6",
+      "claim": "Active genes in cells with low c-Myc levels were reported to increase in expression upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, active genes in cells with low c-Myc levels were reported to increase in expression upon c-Myc induction, in contrast to genes that were silent under low c-Myc conditions that did not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes findings from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "5f3a93f5-df9a-4ea5-822a-98d0e675cd61",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C7",
+      "claim": "Genes that were silent under low c-Myc conditions did not change in expression upon c-Myc induction according to the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, active genes in cells with low c-Myc levels were reported to increase in expression upon c-Myc induction, in contrast to genes that were silent under low c-Myc conditions that did not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes findings from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "7b933031-60df-4101-bfe7-8cd80f79483e",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C8",
+      "claim": "Other studies have reported c-Myc dependent amplification of cellular RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Lin et al. other studies have reported c-Myc dependent amplification of cellular RNA (Hart et al., 2014; Hsu et al., 2015; Nie et al., 2012; Sab\u00f2 et al., 2014), although this observation was not reported in all biological systems (Fagnocchi et al., 2016; Sab\u00f2 et al., 2014; Walz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies that reported similar findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "b6433aef-5301-4b17-a806-6d152fa04e3c",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C9",
+      "claim": "c-Myc dependent amplification of cellular RNA was not reported in all biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Lin et al. other studies have reported c-Myc dependent amplification of cellular RNA (Hart et al., 2014; Hsu et al., 2015; Nie et al., 2012; Sab\u00f2 et al., 2014), although this observation was not reported in all biological systems (Fagnocchi et al., 2016; Sab\u00f2 et al., 2014; Walz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies that did not observe this effect in all systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "095ee557-5af6-4919-840a-dffe34332af5",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C10",
+      "claim": "It has been suggested c-Myc regulates specific genes that indirectly lead to RNA amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested c-Myc regulates specific genes that indirectly lead to RNA amplification (Sab\u00f2 et al., 2014; Sab\u00f2 and Amati, 2014; Walz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies that proposed this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "4dd08813-f11e-417b-b9fb-538431ac0228",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C11",
+      "claim": "MYCN has been suggested to regulate specific genes that indirectly lead to RNA amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "This has also been suggested of MYCN (Duffy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Duffy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "a382206c-ba8f-4a65-9a56-8bd47ec9dfc5",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C12",
+      "claim": "The reported differences in c-Myc effects could be a result of the intrinsic variation between cell lines in maintaining the transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "The reported differences could be a result of the intrinsic variation between cell lines in maintaining the transcriptome (Trakhtenberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Trakhtenberg et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "85cec916-982e-4cc5-ae37-0882a45d9672",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C13",
+      "claim": "A recent study reported that distinct transcriptional regulation can be accounted for by differences in promoter affinity under different c-Myc expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent study reported that distinct transcriptional regulation can be accounted for by differences in promoter affinity under different c-Myc expression levels (Lorenzin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lorenzin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "86e6eec5-40bf-426b-bd21-9b8d5f6bc09b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C14",
+      "claim": "Treatment with tetracycline resulted in a strong decrease in c-Myc protein levels in P493-6 cells maintained in both lots of serum.",
+      "claim_type": "EXPLICIT",
+      "source": "For cells maintained in both lots of serum, treatment with tetracycline resulted in a strong decrease in c-Myc protein levels (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "43babcd6-c0f2-4986-a659-917d1fbe87b9",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C15",
+      "claim": "After removal of tetracycline, c-Myc levels increased over time approaching the levels observed in tetracycline-free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of tetracycline, c-Myc levels increased over time approaching the levels observed in tetracycline-free conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the Western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "f0e78532-f422-41c8-a231-f3b2432f42e4",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C16",
+      "claim": "For serum lot one, total RNA levels at 0 hr were 1.55 ng per 1,000 cells (mean, n=3, SD=0.20).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that under conditions where c-Myc expression was low (0 hr), there was a mean of 1.55 ng total RNA per 1,000 cells (ng/1 k cells) [n = 3, SD = 0.20], which increased to 1.77 ng/1 k cells [n = 3, SD = 0.31] when c-Myc expression was high (24 hr), a 1.14 times increase, for serum lot one, which was not statistically significant (t(6) = 1.02, p=0.347).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "4e6bd292-6c70-4cea-89b3-3bc6d46cf55e",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C17",
+      "claim": "For serum lot one, total RNA levels at 24 hr were 1.77 ng per 1,000 cells (mean, n=3, SD=0.31).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that under conditions where c-Myc expression was low (0 hr), there was a mean of 1.55 ng total RNA per 1,000 cells (ng/1 k cells) [n = 3, SD = 0.20], which increased to 1.77 ng/1 k cells [n = 3, SD = 0.31] when c-Myc expression was high (24 hr), a 1.14 times increase, for serum lot one, which was not statistically significant (t(6) = 1.02, p=0.347).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "17feb6b9-7bc2-4b0c-9979-28ff626c2aa7",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C18",
+      "claim": "For serum lot one, total RNA levels increased 1.14 times from 0 hr to 24 hr, which was not statistically significant (t(6) = 1.02, p=0.347).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that under conditions where c-Myc expression was low (0 hr), there was a mean of 1.55 ng total RNA per 1,000 cells (ng/1 k cells) [n = 3, SD = 0.20], which increased to 1.77 ng/1 k cells [n = 3, SD = 0.31] when c-Myc expression was high (24 hr), a 1.14 times increase, for serum lot one, which was not statistically significant (t(6) = 1.02, p=0.347).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "88f0e302-ba52-450e-a9bd-94ad5698b321",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C19",
+      "claim": "For serum lot two, total RNA levels at 0 hr were 1.57 ng per 1,000 cells (mean, n=3, SD=0.21).",
+      "claim_type": "EXPLICIT",
+      "source": "Serum lot two changed from a mean of 1.57 ng/1 k cells [n = 3, SD = 0.21] at 0 hr to 2.25 ng/1 k cells [n = 3, SD = 0.19] at 24 hr, a 1.43 times increase, which was statistically significant (t(6 = 5.03, p=0.0024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "2703eade-4275-4acc-ba04-8fbc0afe2027",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C20",
+      "claim": "For serum lot two, total RNA levels at 24 hr were 2.25 ng per 1,000 cells (mean, n=3, SD=0.19).",
+      "claim_type": "EXPLICIT",
+      "source": "Serum lot two changed from a mean of 1.57 ng/1 k cells [n = 3, SD = 0.21] at 0 hr to 2.25 ng/1 k cells [n = 3, SD = 0.19] at 24 hr, a 1.43 times increase, which was statistically significant (t(6 = 5.03, p=0.0024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "ff6957ee-d29e-4922-8b7c-b3a8a1788e23",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C21",
+      "claim": "For serum lot two, total RNA levels increased 1.43 times from 0 hr to 24 hr, which was statistically significant (t(6) = 5.03, p=0.0024).",
+      "claim_type": "EXPLICIT",
+      "source": "Serum lot two changed from a mean of 1.57 ng/1 k cells [n = 3, SD = 0.21] at 0 hr to 2.25 ng/1 k cells [n = 3, SD = 0.19] at 24 hr, a 1.43 times increase, which was statistically significant (t(6 = 5.03, p=0.0024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c9cd799a-f8ce-494d-ae48-63d0faa4ffd3",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C22",
+      "claim": "The original study reported a mean of 4.25 ng total RNA per 1,000 cells at 0 hr, which increased to 5.47 ng per 1,000 cells at 24 hr, a 1.29 times increase.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study, which reported a mean of 4.25 ng/1 k cells at 0 hr, which increased to 5.47 ng/1 k cells at 24 hr, a 1.29 times increase in total RNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "eaf7861d-0450-4f42-94c3-dee7d0614083",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C23",
+      "claim": "In both the original and replication studies there was a minor decrease in total RNA at 1 hr after tetracycline release when c-Myc levels begin to become detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "In both studies there was a minor decrease at 1 hr after tetracycline release when c-Myc levels begin to become detectable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of data from both studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c49a35d0-6db6-4bfd-a3c6-ff6b52a8f8b4",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C24",
+      "claim": "Total RNA per 1,000 cells at 0 hr were much lower in this replication attempt than those reported in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA per 1,000 cells at 0 hr were much lower in this replication attempt than those reported in the original study, although changes in total RNA levels were in the same direction following c-Myc expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of data from the replication and original studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "fc93d222-b89e-4441-8054-3c7a531c2874",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C25",
+      "claim": "Changes in total RNA levels were in the same direction following c-Myc expression in both the original and replication studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA per 1,000 cells at 0 hr were much lower in this replication attempt than those reported in the original study, although changes in total RNA levels were in the same direction following c-Myc expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of data from the replication and original studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "d4d338c1-4d44-41dd-9517-f587628952ff",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C26",
+      "claim": "Another independent study that measured total RNA from P493-6 cells reported a different level at 0 hr (~3 ng/1 k cells), while also reporting increased levels following c-Myc expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, another independent study that measured total RNA from P493-6 cells reported a different level at 0 hr (~3 ng/1 k cells), while also reporting increased levels following c-Myc expression (Sab\u00f2 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sab\u00f2 et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "cb48596f-e539-442d-8dab-0c3336012167",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C27",
+      "claim": "Variation in RNA expression during cell culture passage is a possible explanation for differences in total RNA levels between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "There are multiple possible explanations for these differences, such as variation in RNA expression during cell culture passage (Hiorns et al., 2004), low yield of the RNA isolation procedure (e.g. incomplete homogenization), or the high variance associated with manual cell counts using a hemacytometer (Biggs and Macmillan, 1948; Nielson et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hiorns et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "80a75e19-61e7-4988-a75b-13fa0288db9a",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C28",
+      "claim": "Low yield of the RNA isolation procedure is a possible explanation for differences in total RNA levels between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "There are multiple possible explanations for these differences, such as variation in RNA expression during cell culture passage (Hiorns et al., 2004), low yield of the RNA isolation procedure (e.g. incomplete homogenization), or the high variance associated with manual cell counts using a hemacytometer (Biggs and Macmillan, 1948; Nielson et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "196a4591-7514-4261-a220-d4ac61fb009d",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C29",
+      "claim": "High variance associated with manual cell counts using a hemacytometer is a possible explanation for differences in total RNA levels between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "There are multiple possible explanations for these differences, such as variation in RNA expression during cell culture passage (Hiorns et al., 2004), low yield of the RNA isolation procedure (e.g. incomplete homogenization), or the high variance associated with manual cell counts using a hemacytometer (Biggs and Macmillan, 1948; Nielson et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Biggs and Macmillan, 1948 and Nielson et al., 1991.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "09c4ea62-f866-446a-963e-2be3c3fec1a6",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C30",
+      "claim": "For serum lot one, in cells with low levels of c-Myc (0 hr) there were 708 active genes with a median expression of 4.70.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells with low levels of c-Myc (0 hr) there were 708 active genes with a median expression of 4.70, and 580 silent genes with a median expression of 0.032, for serum lot one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NanoString gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "0e3b43d3-0db8-4a1e-a5e1-f4c702f52b7a",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C31",
+      "claim": "For serum lot one, in cells with low levels of c-Myc (0 hr) there were 580 silent genes with a median expression of 0.032.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells with low levels of c-Myc (0 hr) there were 708 active genes with a median expression of 4.70, and 580 silent genes with a median expression of 0.032, for serum lot one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NanoString gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "69f8a9ed-597d-45eb-b030-6b48bef9f7f8",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C32",
+      "claim": "For serum lot one active genes, 75% of the genes increased from 0 hr to 1 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For active genes, 75% of the genes increased from 0 hr to 1 hr, 68% increased from 0 hr to 24 hr, and 59% increased from 1 hr to 24 hr upon c-Myc induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NanoString gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "9026e49b-f3b1-497a-b988-87444ce7a803",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C33",
+      "claim": "For serum lot one active genes, 68% of the genes increased from 0 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For active genes, 75% of the genes increased from 0 hr to 1 hr, 68% increased from 0 hr to 24 hr, and 59% increased from 1 hr to 24 hr upon c-Myc induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NanoString gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "6543f4b8-b230-44aa-8a13-be9a5e46ed52",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C34",
+      "claim": "For serum lot one active genes, 59% of the genes increased from 1 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For active genes, 75% of the genes increased from 0 hr to 1 hr, 68% increased from 0 hr to 24 hr, and 59% increased from 1 hr to 24 hr upon c-Myc induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NanoString gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "51254aa2-4985-4516-8727-8ac147ea7d91",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C35",
+      "claim": "For serum lot one active genes, median expression increased 1.11 times from 0 hr to 1 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to a 1.11, 1.50, and 1.36 times increase in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "3fcf92f0-97b6-4b34-96a6-0cf74ffda85b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C36",
+      "claim": "For serum lot one active genes, median expression increased 1.50 times from 0 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to a 1.11, 1.50, and 1.36 times increase in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "d2facd69-6fba-4446-b351-eb2046792578",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C37",
+      "claim": "For serum lot one active genes, median expression increased 1.36 times from 1 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to a 1.11, 1.50, and 1.36 times increase in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c130313d-86be-4909-8eac-29e7515e460b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C38",
+      "claim": "For serum lot one silent genes, 74% of the genes increased from 0 hr to 1 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 74% of the genes increased from 0 hr to 1 hr, 66% increased from 0 hr to 24 hr, and 50% increased from 1 hr to 24 hr, corresponding to a 1.19 and 1.13 times increase, and a 0.05 times decrease in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "434e0ff2-3c8b-4b0e-9b1a-7e0570f4b064",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C39",
+      "claim": "For serum lot one silent genes, 66% of the genes increased from 0 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 74% of the genes increased from 0 hr to 1 hr, 66% increased from 0 hr to 24 hr, and 50% increased from 1 hr to 24 hr, corresponding to a 1.19 and 1.13 times increase, and a 0.05 times decrease in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "25325047-3088-4188-adde-339cacc13bcc",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C40",
+      "claim": "For serum lot one silent genes, 50% of the genes increased from 1 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 74% of the genes increased from 0 hr to 1 hr, 66% increased from 0 hr to 24 hr, and 50% increased from 1 hr to 24 hr, corresponding to a 1.19 and 1.13 times increase, and a 0.05 times decrease in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "51f62b97-d7ce-4e42-a420-a3862fe20c49",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C41",
+      "claim": "For serum lot one silent genes, median expression increased 1.19 times from 0 hr to 1 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 74% of the genes increased from 0 hr to 1 hr, 66% increased from 0 hr to 24 hr, and 50% increased from 1 hr to 24 hr, corresponding to a 1.19 and 1.13 times increase, and a 0.05 times decrease in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "cc4f1f96-e48b-4e2b-9899-b6d83974832b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C42",
+      "claim": "For serum lot one silent genes, median expression increased 1.13 times from 0 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 74% of the genes increased from 0 hr to 1 hr, 66% increased from 0 hr to 24 hr, and 50% increased from 1 hr to 24 hr, corresponding to a 1.19 and 1.13 times increase, and a 0.05 times decrease in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "df7a0bb4-84bf-405c-9c7e-ca9f203f3a0d",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C43",
+      "claim": "For serum lot one silent genes, median expression decreased 0.05 times from 1 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 74% of the genes increased from 0 hr to 1 hr, 66% increased from 0 hr to 24 hr, and 50% increased from 1 hr to 24 hr, corresponding to a 1.19 and 1.13 times increase, and a 0.05 times decrease in median expression, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoString gene expression data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "8c5d7503-eb8a-4a92-b8a1-46f109483eb6",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C44",
+      "claim": "The original study identified 755 active genes with a median expression of 7.06.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that identified 755 active genes with a median expression of 7.06, and 514 silent genes with a median expression of 0.00 (more than half the silent genes did not have a reported expression value).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "81651b71-37d1-487e-bfbd-65833e725fb1",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C45",
+      "claim": "The original study identified 514 silent genes with a median expression of 0.00.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that identified 755 active genes with a median expression of 7.06, and 514 silent genes with a median expression of 0.00 (more than half the silent genes did not have a reported expression value).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "ebec4fc9-f505-4eeb-8dbe-a6eb961f2ca4",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C46",
+      "claim": "In the original study, more than half the silent genes did not have a reported expression value.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to the original study that identified 755 active genes with a median expression of 7.06, and 514 silent genes with a median expression of 0.00 (more than half the silent genes did not have a reported expression value).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "ce62c381-c9f4-4cec-a785-e7e31ec77aa0",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C47",
+      "claim": "In the original study, active genes increased 91% from 0 hr to 1 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Active genes in the original study, increased 91% from 0 hr to 1 hr, 96% from 0 hr to 24 hr, and 87% from 1 hr to 24 hr upon c-Myc induction, corresponding to a 1.23, 2.45, and 1.99 times increase in median expression, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "d14bc93f-6c5c-4333-b70f-b2c630546024",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C48",
+      "claim": "In the original study, active genes increased 96% from 0 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Active genes in the original study, increased 91% from 0 hr to 1 hr, 96% from 0 hr to 24 hr, and 87% from 1 hr to 24 hr upon c-Myc induction, corresponding to a 1.23, 2.45, and 1.99 times increase in median expression, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "62dc9424-6842-4082-918c-8201b4492caf",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C49",
+      "claim": "In the original study, active genes increased 87% from 1 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Active genes in the original study, increased 91% from 0 hr to 1 hr, 96% from 0 hr to 24 hr, and 87% from 1 hr to 24 hr upon c-Myc induction, corresponding to a 1.23, 2.45, and 1.99 times increase in median expression, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "8801477f-7886-4c92-ad4e-6027e30ffe30",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C50",
+      "claim": "In the original study, active genes median expression increased 1.23 times from 0 hr to 1 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Active genes in the original study, increased 91% from 0 hr to 1 hr, 96% from 0 hr to 24 hr, and 87% from 1 hr to 24 hr upon c-Myc induction, corresponding to a 1.23, 2.45, and 1.99 times increase in median expression, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "883f05c3-8c86-4f13-8576-baef8fa2052e",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C51",
+      "claim": "In the original study, active genes median expression increased 2.45 times from 0 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Active genes in the original study, increased 91% from 0 hr to 1 hr, 96% from 0 hr to 24 hr, and 87% from 1 hr to 24 hr upon c-Myc induction, corresponding to a 1.23, 2.45, and 1.99 times increase in median expression, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "40f7179a-5c4b-43e9-8835-b338d81cde99",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C52",
+      "claim": "In the original study, active genes median expression increased 1.99 times from 1 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Active genes in the original study, increased 91% from 0 hr to 1 hr, 96% from 0 hr to 24 hr, and 87% from 1 hr to 24 hr upon c-Myc induction, corresponding to a 1.23, 2.45, and 1.99 times increase in median expression, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "ad1480e6-09d8-4c07-a721-0869babb9d5f",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C53",
+      "claim": "In the original study, silent genes increased 23% from 0 hr to 1 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Silent genes in the original study, increased 23% from 0 hr to 1 hr, 29% from 0 hr to 24 hr, and 30% from 1 hr to 24 hr, with the median expression unchanged among conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "29d97096-f1f2-4e44-973a-bb6f7d259c37",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C54",
+      "claim": "In the original study, silent genes increased 29% from 0 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Silent genes in the original study, increased 23% from 0 hr to 1 hr, 29% from 0 hr to 24 hr, and 30% from 1 hr to 24 hr, with the median expression unchanged among conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "88f6f69d-a966-48e9-81cb-4b9a9f37cc2b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C55",
+      "claim": "In the original study, silent genes increased 30% from 1 hr to 24 hr upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Silent genes in the original study, increased 23% from 0 hr to 1 hr, 29% from 0 hr to 24 hr, and 30% from 1 hr to 24 hr, with the median expression unchanged among conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "e6d71e02-b0c6-4938-950f-b48e68117dbe",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C56",
+      "claim": "In the original study, the median expression of silent genes was unchanged among conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Silent genes in the original study, increased 23% from 0 hr to 1 hr, 29% from 0 hr to 24 hr, and 30% from 1 hr to 24 hr, with the median expression unchanged among conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data from the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "56e3fd0c-bb26-4725-b76e-44a1ed7cd2d4",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C57",
+      "claim": "Of the 1212 genes interrogated in both studies, 88.8% (603/679) of the active genes identified in serum lot one were also active in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 1212 genes that were interrogated in both studies, 88.8% (603/679) of the active genes we identified in serum lot one were also active in the original study (90.1% (612/679) for serum lot two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of gene classifications between studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "6fe3735b-3e75-4ac0-8696-d8872ca8aef2",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C58",
+      "claim": "Of the 1212 genes interrogated in both studies, 90.1% (612/679) of the active genes identified in serum lot two were also active in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 1212 genes that were interrogated in both studies, 88.8% (603/679) of the active genes we identified in serum lot one were also active in the original study (90.1% (612/679) for serum lot two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of gene classifications between studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "15b97c2c-4e26-4c4a-9928-b7db8d9c154d",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C59",
+      "claim": "For silent genes, 96.4% (456/473) of the genes identified as silent in serum lot one were common with the silent genes identified in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 96.4% (456/473) of the genes we identified as silent in serum lot one were common with the silent genes identified in the original study (95.8% (453/473) for serum lot two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of gene classifications between studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "dc54b512-2916-40b5-9271-de3fbc824a3e",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C60",
+      "claim": "For silent genes, 95.8% (453/473) of the genes identified as silent in serum lot two were common with the silent genes identified in the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, 96.4% (456/473) of the genes we identified as silent in serum lot one were common with the silent genes identified in the original study (95.8% (453/473) for serum lot two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of gene classifications between studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "92038d62-390b-4abb-9763-43ef2dce4ffa",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C61",
+      "claim": "Wilcoxon signed-rank tests on active genes comparing expression at 0 hr to 1 hr were statistically significant for cells grown in both lots of serum.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a Wilcoxon signed-rank test on active genes comparing expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr, which were statistically significant for cells grown in both lots of serum (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "2d0afad1-109a-4392-af40-8a2d84708645",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C62",
+      "claim": "Wilcoxon signed-rank tests on active genes comparing expression at 0 hr to 24 hr were statistically significant for cells grown in both lots of serum.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a Wilcoxon signed-rank test on active genes comparing expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr, which were statistically significant for cells grown in both lots of serum (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "914be762-05fe-457c-a845-dc98bd698da9",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C63",
+      "claim": "Wilcoxon signed-rank tests on active genes comparing expression at 1 hr to 24 hr were statistically significant for cells grown in both lots of serum.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a Wilcoxon signed-rank test on active genes comparing expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr, which were statistically significant for cells grown in both lots of serum (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "e5478226-0c82-45e0-b473-08c97f57ca5c",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C64",
+      "claim": "Wilcoxon signed-rank tests on silent genes comparing expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr were statistically significant, with the exception of the silent gene comparison of 1 hr to 24 hr for serum lot one.",
+      "claim_type": "EXPLICIT",
+      "source": "The same comparisons were performed on silent genes, which were also statistically significant, with the exception of the silent gene comparison of 1 hr to 24 hr for serum lot one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "a386c3a1-88cd-4800-88c7-de5ea575c744",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C65",
+      "claim": "For both active and silent genes in the original data, c-Myc induction resulted in statistically significant increases in expression using paired analyses, with the exception of the silent gene comparison from 0 hr to 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "For both active and silent genes c-Myc induction resulted in statistically significant increases in expression, with the exception of the silent gene comparison from 0 hr to 1 hr (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the original data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c6e1dec6-0703-42f1-80ba-def941a79d98",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C66",
+      "claim": "The unpaired tests reported in the original study showed active genes had a statistically significant increase in expression and silent genes were reported as not statistically significant for all comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to the results of the unpaired tests that were reported in the original study where active genes were reported to have a statistically significant increase in expression and silent genes were reported as not statistically significant for all comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the statistical results reported in the original Lin et al. 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "f4056fab-4620-4040-a986-5ce189e367ac",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C67",
+      "claim": "For both the original and replication data, there was a statistically significant increase in expression of active genes compared to silent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For both the original and replication data, there was a statistically significant increase in expression of active genes compared to silent genes (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis results shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "aed995fa-c9b0-4324-81f4-360e7cf83bc6",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C68",
+      "claim": "Active genes and silent genes do not have similar rates of expression upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that active genes and silent genes do not have similar rates of expression upon c-Myc induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the statistical analysis comparing active and silent genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "cc2c939f-c168-4064-bbe6-229c01d71320",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C69",
+      "claim": "While both active and silent genes increased in expression upon c-Myc induction, the rate of increase was different.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, for this experiment we found results that were in the same direction as the original study and suggest that while both active and silent genes increased in expression upon c-Myc induction, the rate of increase was different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "297846d3-f430-4812-8719-84e4a358e3a2",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C70",
+      "claim": "There are many negative consequences of dichotomizing continuous variables, such as information loss, especially with a small gene set.",
+      "claim_type": "EXPLICIT",
+      "source": "The original study and this replication attempt used the same criteria to characterize a gene as silent or active, but there are many negative consequences of dichotomizing continuous variables, such as information loss, especially with a small gene set (Altman and Royston, 2006; Cohen, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Altman and Royston, 2006 and Cohen, 1983.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "a152cdc9-c61b-4a2f-9875-240f1ab34657",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C71",
+      "claim": "Papers published after the original study took an unbiased view by collecting comprehensive RNA-sequencing data to assess if the transcriptional effects of c-Myc were direct or indirect, concluding c-Myc activates and represses transcription of discrete gene sets, which in turn leads to induced RNA amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Papers published after the original study took an unbiased view by collecting comprehensive RNA-sequencing data to assess if the transcriptional effects of c-Myc were direct or indirect, concluding c-Myc activates and represses transcription of discrete gene sets, which in turn leads to induced RNA amplification (Sab\u00f2 et al., 2014; Walz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Sab\u00f2 et al., 2014 and Walz et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "1a71c628-11e1-4183-b9a6-0616dd6376f6",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C72",
+      "claim": "Sab\u00f2 and colleagues used NanoString technology to quantify a subset of the differentially expressed genes identified by RNA-seq and observed similar results that revealed upward shifts in gene expression upon c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Sab\u00f2 and colleagues also used NanoString technology to quantify a subset of the differentially expressed genes identified by RNA-seq and observed similar results that revealed upward shifts in gene expression upon c-Myc induction (Sab\u00f2 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sab\u00f2 et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "1e40074c-c164-4225-b043-4599221c9016",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C73",
+      "claim": "The digital gene expression data generated during this replication attempt presented as continuous illustrates a general pattern of overall increased gene expression following c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we presented the digital gene expression data generated during this replication attempt as continuous, which illustrates a general pattern of overall increased gene expression following c-Myc induction (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "d9370cae-a439-42f2-8aff-6b2a7a6306e2",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C74",
+      "claim": "The results of this study are limited to the 1369 genes interrogated and may or may not reflect how the entire transcriptome of P493-6 cells respond to c-Myc induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, though, these results are limited to the 1369 genes interrogated in this study and may or may not reflect how the entire transcriptome of P493-6 cells respond to c-Myc induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "8f4aaa38-06b5-4cfe-8805-22fe1b2c6c74",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C75",
+      "claim": "The comparison of total RNA levels at low levels of c-Myc (0 hr) compared to high levels of c-Myc (24 hr) resulted in d = 4.19, 95% CI [0.94, 7.37] for the data reported in Figure 3E of the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of total RNA levels at low levels of c-Myc (0 hr) compared to high levels of c-Myc (24 hr) resulted in d = 4.19, 95% CI [0.94, 7.37] for the data reported in Figure 3E of the original study (Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis calculations of the original study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "df05d568-2ab1-4091-a1b4-94ee175e270b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C76",
+      "claim": "The comparison of total RNA levels at 0 hr compared to 24 hr resulted in d = 0.83, 95% CI [\u22120.91, 2.48] for serum lot one in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to d = 0.83, 95% CI [\u22120.91, 2.48] for serum lot one and d = 4.11, 95% CI [0.90, 7.23] for serum lot two reported in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis calculations of the replication data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "2f759e34-c2a0-4097-b7e6-28b84ecb1bd2",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C77",
+      "claim": "The comparison of total RNA levels at 0 hr compared to 24 hr resulted in d = 4.11, 95% CI [0.90, 7.23] for serum lot two in this replication study.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to d = 0.83, 95% CI [\u22120.91, 2.48] for serum lot one and d = 4.11, 95% CI [0.90, 7.23] for serum lot two reported in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis calculations of the replication data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "84239dec-d1c1-4780-894d-aa10a1701f08",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C78",
+      "claim": "A meta-analysis of total RNA levels at 0 hr compared to 24 hr resulted in d = 2.52, 95% CI [0.01, 5.03], which was statistically significant (p=0.0488).",
+      "claim_type": "EXPLICIT",
+      "source": "A meta-analysis (Figure 3A) of these effects resulted in d = 2.52, 95% CI [0.01, 5.03], which was statistically significant (p=0.0488).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on meta-analysis combining original and replication data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "7e3dbee8-dea2-445a-b4ef-2cb974458331",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C79",
+      "claim": "The original and replication results for total RNA levels are consistent when considering the direction of the effect, which suggests c-Myc induction increases total RNA levels in P493-6 Burkitt's lymphoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The original and replication results are consistent when considering the direction of the effect, which suggests c-Myc induction increases total RNA levels in P493-6 Burkitt's lymphoma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of effect directions between studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c4d6e7a9-f133-426e-ad98-c212911bcd87",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C80",
+      "claim": "There was substantial within-study variation observed in this replication attempt, due to the different serum lots tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Noticeably, there was substantial within-study variation observed in this replication attempt, due the different serum lots tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of results between serum lots.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "3cc1fcbc-b95f-45f6-adeb-bb48cef5c2a3",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C81",
+      "claim": "For active genes 0 hr compared to 1 hr, the meta-analysis was statistically significant (p=1.12\u00d710\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "For active genes, expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr the meta-analyses were statistically significant (p=1.12\u00d710\u22127, p=7.01\u00d710\u22124, p=0.0129, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "373d1561-aace-4f46-8912-8f35b10e05f5",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C82",
+      "claim": "For active genes 0 hr compared to 24 hr, the meta-analysis was statistically significant (p=7.01\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "For active genes, expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr the meta-analyses were statistically significant (p=1.12\u00d710\u22127, p=7.01\u00d710\u22124, p=0.0129, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "fecfadba-6544-49d9-a21e-bceb24f8ea36",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C83",
+      "claim": "For active genes 1 hr compared to 24 hr, the meta-analysis was statistically significant (p=0.0129).",
+      "claim_type": "EXPLICIT",
+      "source": "For active genes, expression at 0 hr to 1 hr, 0 hr to 24 hr, and 1 hr to 24 hr the meta-analyses were statistically significant (p=1.12\u00d710\u22127, p=7.01\u00d710\u22124, p=0.0129, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "e991042b-4e85-40ad-aa54-4105ba3cb88f",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C84",
+      "claim": "For all active gene comparisons, the results were consistent when considering the direction of the effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In all comparisons the results were consistent when considering the direction of the effect; however the effect size point estimate of each study (original, replication serum lot one, replication serum lot two) was not within the confidence interval of the other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of effect directions in meta-analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "cea1a784-73b9-453c-a2f5-35fc4903f219",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C85",
+      "claim": "For all active gene comparisons, the effect size point estimate of each study was not within the confidence interval of the other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In all comparisons the results were consistent when considering the direction of the effect; however the effect size point estimate of each study (original, replication serum lot one, replication serum lot two) was not within the confidence interval of the other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of confidence intervals in meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "cc7d9c5b-3e52-4010-9b55-362088809434",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C86",
+      "claim": "For active gene comparisons, the large confidence intervals of the meta-analysis along with statistically significant Cochran's Q tests suggest heterogeneity between the original and replication studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the large confidence intervals of the meta-analysis along with statistically significant Cochran's Q tests suggest heterogeneity between the original and replication studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of heterogeneity in meta-analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "8f0604c9-5bc9-44af-8de9-fb125630626a",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C87",
+      "claim": "For silent genes, the meta-analysis was not statistically significant for gene expression at 0 hr to 1 hr (p=0.203).",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, the meta-analysis was not statistically significant for gene expression at 0 hr to 1 hr and 1 hr to 24 hr (p=0.203, p=0.0571, respectively) and the effect size point estimate of each study was not within the confidence interval of the other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c7956a6c-0054-41f6-9ea3-edac0f846f3c",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C88",
+      "claim": "For silent genes, the meta-analysis was not statistically significant for gene expression at 1 hr to 24 hr (p=0.0571).",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, the meta-analysis was not statistically significant for gene expression at 0 hr to 1 hr and 1 hr to 24 hr (p=0.203, p=0.0571, respectively) and the effect size point estimate of each study was not within the confidence interval of the other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "f067760a-2898-4ce8-aa84-96ab4d17e881",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C89",
+      "claim": "For silent genes 0 hr to 1 hr and 1 hr to 24 hr comparisons, the effect size point estimate of each study was not within the confidence interval of the other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "For silent genes, the meta-analysis was not statistically significant for gene expression at 0 hr to 1 hr and 1 hr to 24 hr (p=0.203, p=0.0571, respectively) and the effect size point estimate of each study was not within the confidence interval of the other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of confidence intervals in meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "a4f1b200-7723-452a-a362-a9eb07f935f7",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C90",
+      "claim": "For silent gene comparisons, the large confidence intervals of the meta-analysis along with statistically significant Cochran's Q tests suggest heterogeneity between the studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the active gene comparisons, the large confidence intervals of the meta-analysis along with statistically significant Cochran's Q tests suggest heterogeneity between the studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of heterogeneity in meta-analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "45b4fd6d-ce67-4f8e-b956-2dbe1dde478e",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C91",
+      "claim": "For the silent gene 0 hr to 1 hr comparison, the original study and replication studies were in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for the 0 hr to 1 hr comparison the original study and replication studies were in opposite directions, while the 1 hr to 24 hr comparison was consistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of effect directions between studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "db460055-1aa3-4458-8c05-0a1dba7f1911",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C92",
+      "claim": "For the silent gene 1 hr to 24 hr comparison, the original study and replication studies were consistent in direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for the 0 hr to 1 hr comparison the original study and replication studies were in opposite directions, while the 1 hr to 24 hr comparison was consistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of effect directions between studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "28769572-2481-4d1f-bf11-29e909b14113",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C93",
+      "claim": "The comparison between 0 hr and 24 hr for silent genes was consistent when considering direction of the effect with a statistically significant meta-analysis (p=7.10\u00d710\u221217).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the comparison between 0 hr and 24 hr for silent genes was consistent when considering direction of the effect with a statistically significant meta-analysis (p=7.10\u00d710\u221217).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on meta-analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "f38bc970-5d62-4f18-a31c-e118225c4daa",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C94",
+      "claim": "For silent genes 0 hr to 24 hr comparison, the point estimate of the original study was not within the confidence intervals of the replication studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The point estimate of the original study was not within the confidence intervals of the replication studies; however both replication studies with different serum lots were within the confidence intervals of the original study and each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of confidence intervals in meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "b01ffb69-db9b-4c02-9237-ba6dabd2a6ea",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C95",
+      "claim": "For silent genes 0 hr to 24 hr comparison, both replication studies with different serum lots were within the confidence intervals of the original study and each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The point estimate of the original study was not within the confidence intervals of the replication studies; however both replication studies with different serum lots were within the confidence intervals of the original study and each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of confidence intervals in meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "f98b79c8-8833-4779-b2dc-cc49dd2abfa5",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C96",
+      "claim": "The gene expression analysis indicates that the effect sizes observed from the two serum lots tested in this replication attempt, although not identical, were more similar to each other than to the original study.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the gene expression analysis indicates that the effect sizes observed from the two serum lots tested in this replication attempt, although not identical, were more similar to each other than to the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of effect sizes across studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "d92ac8e9-564e-4496-b4e1-9819842f3ec3",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C97",
+      "claim": "Proliferation of P493-6 cells depend on c-Myc expression and the presence of serum.",
+      "claim_type": "EXPLICIT",
+      "source": "Since proliferation of P493-6 cells depend on c-Myc expression and the presence of serum (Pajic et al., 2000; Schuhmacher et al., 1999), with serum reported to stimulate a majority of genes independent of c-Myc (Schlosser et al., 2005), we maintained these cells in separate lots of serum to assess whether the results differed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pajic et al., 2000 and Schuhmacher et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "8ca3263a-4468-4e43-b2e2-8b51bce127b9",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C98",
+      "claim": "Serum is reported to stimulate a majority of genes independent of c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "Since proliferation of P493-6 cells depend on c-Myc expression and the presence of serum (Pajic et al., 2000; Schuhmacher et al., 1999), with serum reported to stimulate a majority of genes independent of c-Myc (Schlosser et al., 2005), we maintained these cells in separate lots of serum to assess whether the results differed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Schlosser et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "72bf4937-95df-4b1e-87e5-bcfe0188deb3",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C99",
+      "claim": "Cell line genetic drift is a factor that could affect replication results.",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016) or changes in cellular volume that can impact overall transcript abundance (Padovan-Merhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hughes et al., 2007 and Kleensang et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "8fdd6dc4-dc43-4ab4-88c5-34edc53ed82a",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C100",
+      "claim": "Changes in cellular volume can impact overall transcript abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "These include variables such as cell line genetic drift (Hughes et al., 2007; Kleensang et al., 2016) or changes in cellular volume that can impact overall transcript abundance (Padovan-Merhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Padovan-Merhar et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "32982f6e-c477-4286-a924-f59ec3adb4c9",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C101",
+      "claim": "P493-6 cells contain a conditional tetracycline-repressive MYC transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the effects of increased levels of c-Myc on gene expression we used the same human P493-6 B cell line of Burkitt's lymphoma that contains a conditional tetracycline-repressive MYC transgene (Pajic et al., 2000; Schuhmacher et al., 1999) as the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pajic et al., 2000 and Schuhmacher et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "58951877-d6f5-4c30-bd74-a9398be778b3",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C102",
+      "claim": "P493-6 is a human B cell line of Burkitt's lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the effects of increased levels of c-Myc on gene expression we used the same human P493-6 B cell line of Burkitt's lymphoma that contains a conditional tetracycline-repressive MYC transgene (Pajic et al., 2000; Schuhmacher et al., 1999) as the original study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pajic et al., 2000 and Schuhmacher et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "237ee324-0c65-4ffc-a4b7-8410542f5204",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "claim_id": "C103",
+      "claim": "P493-6 is a model for MYC activation in Burkitt's lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the P493-6 cell line, a model for MYC activation in Burkitt's lymphoma, total levels of RNA per cell were reported to increase when c-Myc was highly expressed compared to conditions where c-Myc expression was low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about the P493-6 cell line.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e13e15b-8ccd-4d04-bf92-57139a6bd3ff",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "This manuscript is part of the Reproducibility Project: Cancer Biology, which conducts replications of high-profile cancer biology papers using pre-registered protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 accurately describe the RP:CB project structure and methodology, supported by appropriate citations. These are factual statements about the project framework rather than experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "9a64929a-a657-436d-9bb6-1d6432e93fe9",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The original Lin et al. 2012 study reported that c-Myc globally amplifies expression of actively transcribed genes but not silent genes, with total RNA levels increasing upon c-Myc overexpression in P493-6 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 accurately summarize the findings from the original Lin et al. 2012 study. These are appropriately cited descriptions of prior work that establish the context for the replication attempt.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "98b384f3-37f8-4946-a908-5c2a183601a2",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Subsequent studies have reported mixed results regarding c-Myc-dependent RNA amplification, with some suggesting indirect mechanisms through regulation of specific gene sets, and differences potentially explained by cell line variation or promoter affinity differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 provide appropriate context from the literature published after the original study. All claims are properly cited and accurately represent the state of knowledge regarding c-Myc's transcriptional effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "0342b970-1d28-47a4-bd03-9ffa64e61509",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Western blot analysis confirmed that tetracycline treatment strongly decreased c-Myc protein levels in P493-6 cells, and c-Myc levels increased over time after tetracycline removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 are supported by Western blot data in Figure 1A showing clear c-Myc suppression with tetracycline and recovery after removal. This validates the experimental system used for the replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Total RNA levels increased upon c-Myc induction in both serum lots tested, though the effect was statistically significant only for serum lot two (1.43-fold increase, p=0.0024) and not for serum lot one (1.14-fold increase, p=0.347). Baseline RNA levels were lower than in the original study, but changes were in the same direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C16-C25 present detailed quantitative data with appropriate statistics. However, the inconsistent statistical significance between serum lots (C18 vs C21) and the substantial difference in baseline RNA levels compared to the original study (C24) raise concerns about reproducibility. The small sample size (n=3 per condition) and high variance in serum lot one limit confidence in the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "4e8f9d20-a384-439c-b777-f1df05662120",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Differences in total RNA levels between studies could be explained by variation in RNA expression during cell culture passage, low yield of RNA isolation procedures, or high variance in manual cell counting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C27-C29 are speculative explanations for observed differences. While C27 and C29 are supported by citations, C28 is purely speculative. These represent possible explanations but lack experimental validation, making them hypotheses rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "a311a1e2-fa4d-4b32-977d-952fa9482a44",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For serum lot one, NanoString analysis identified 708 active genes and 580 silent genes at 0 hr. Active genes showed median expression increases of 1.11-fold (0-1 hr), 1.50-fold (0-24 hr), and 1.36-fold (1-24 hr). Silent genes showed increases of 1.19-fold (0-1 hr) and 1.13-fold (0-24 hr), with a 0.05-fold decrease (1-24 hr).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C43 present detailed NanoString gene expression data with specific quantitative values. The data are internally consistent and supported by Figure 2. However, the magnitude of changes differs substantially from the original study, particularly for active genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "e28557df-445e-448f-98c4-d5579f7d1fb7",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The original study identified 755 active genes with larger fold-changes upon c-Myc induction (1.23 to 2.45-fold increases) and 514 silent genes with median expression unchanged, though 23-30% of silent genes showed some increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C56 accurately describe the original study's findings. The note that more than half of silent genes had no reported expression value (C46) is an important methodological observation that affects interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "5e60ae67-a5c1-4187-b7dd-3180e5acdc79",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There was high overlap in gene classification between the original and replication studies: 88.8-90.1% of active genes and 95.8-96.4% of silent genes were classified the same way.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 demonstrate good concordance in which genes were classified as active or silent between studies. This suggests the experimental systems were comparable despite differences in expression magnitude.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "a26c97bb-8644-45d3-a9d8-305660021e7e",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Wilcoxon signed-rank tests (paired analysis) showed statistically significant increases in expression for active genes at all time comparisons in both serum lots and for silent genes at most comparisons. Re-analysis of original data with paired tests also showed significant increases for both gene types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 present appropriate statistical analyses with paired tests as pre-registered. The results are clearly reported in Table 1. The finding that paired analysis of original data shows significant changes in silent genes (C65) contrasts with the original unpaired analysis, highlighting the importance of analytical approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "50b6679f-262d-4530-ab61-b20b1a8e4cc8",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The original study's unpaired tests showed active genes had statistically significant increases while silent genes did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 accurately describes the original study's statistical findings, providing important context for understanding how analytical approach affects conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "4c5a2d81-6701-4535-ac8b-46ef543ae622",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Both active and silent genes increased in expression upon c-Myc induction, but active genes showed significantly greater increases than silent genes, indicating different rates of expression change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 present an appropriate exploratory analysis comparing the magnitude of change between active and silent genes. The statistical test (Table 3) properly addresses whether the differences between gene types are significant, which is distinct from testing each type separately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "d9aeee41-9c7e-47be-8305-9c30265ef1f0",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Dichotomizing genes as active or silent has limitations including information loss. Subsequent studies using RNA-seq and continuous gene expression data support overall increased gene expression upon c-Myc induction. The current results are limited to 1369 genes and may not reflect the entire transcriptome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 provide important methodological context and limitations. C70 is supported by appropriate statistical citations. C71-C72 accurately cite subsequent studies. C73 is supported by Figure 2\u2014figure supplement 2. C74 appropriately acknowledges study limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "c83182aa-c4c9-4b9e-ae3e-b983415ff54b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Meta-analysis of total RNA levels (0 hr vs 24 hr) showed a statistically significant overall effect (d=2.52, p=0.0488) with consistent direction across studies. However, substantial within-study variation was observed between serum lots, with serum lot two (d=4.11) more similar to the original study (d=4.19) than serum lot one (d=0.83).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C80 present meta-analysis results with appropriate effect size calculations. However, the large confidence intervals, substantial heterogeneity between serum lots (C80), and barely significant p-value (p=0.0488) suggest the overall effect is uncertain. The serum lot dependency indicates uncontrolled experimental variables that affect reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "a3386d7a-86bd-4076-a832-997b6bb4b04b",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Meta-analyses of active gene expression changes were statistically significant for all time comparisons (p<0.05), with consistent effect directions across studies. However, effect size point estimates did not overlap between studies' confidence intervals, and significant heterogeneity was detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C86 show statistical significance in meta-analyses but reveal substantial heterogeneity (C86) and non-overlapping confidence intervals (C85). While the direction of effects is consistent (C84), the magnitude differs significantly between studies, limiting confidence in the precise quantitative reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "For silent genes, meta-analyses showed mixed results: non-significant for 0-1 hr and 1-24 hr comparisons, with opposite directions between original and replication for 0-1 hr. The 0-24 hr comparison was statistically significant (p=7.10\u00d710\u207b\u00b9\u2077) with consistent direction, though the original study's point estimate fell outside replication confidence intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C95 reveal inconsistent results for silent genes across time points. The opposite directions for 0-1 hr (C91) and non-significant meta-analyses for two comparisons (C87-C88) contrast with the highly significant 0-24 hr result (C93). The heterogeneity (C90) and non-overlapping confidence intervals (C89, C94) indicate substantial variability that undermines confidence in reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "57e90c4b-0659-4b09-aea5-5cc9248a75bb",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The two serum lots tested in the replication showed more similar effect sizes to each other than to the original study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by the meta-analysis data showing that while both replication serum lots differed from the original study, they were more consistent with each other (e.g., C95). This suggests systematic differences between the original and replication experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "43f35859-5434-49d3-98b6-a3857aa6e4fc",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "P493-6 cell proliferation depends on c-Myc and serum, with serum stimulating genes independent of c-Myc. Potential factors affecting replication include cell line genetic drift and changes in cellular volume affecting transcript abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 provide appropriate biological context supported by citations. C97-C98 explain the rationale for testing multiple serum lots. C99-C100 identify plausible sources of variation between studies, though these remain speculative without direct testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    },
+    {
+      "id": "f885ac50-ae93-429e-af71-ab348b6ea028",
+      "content_id": "36646dd8-7724-4a28-942f-c6393b29a0b5",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "P493-6 is a human Burkitt's lymphoma B cell line containing a conditional tetracycline-repressive MYC transgene, serving as a model for MYC activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C103 accurately describe the P493-6 cell line model system with appropriate citations. This is established knowledge about the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:52:55.398576Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "453d2406-449e-416b-a9b9-179140c4dcf4",
+      "result_id": "8e13e15b-8ccd-4d04-bf92-57139a6bd3ff"
+    },
+    {
+      "claim_id": "6d1fcd6c-116d-4e5e-960f-ef82f834fc14",
+      "result_id": "8e13e15b-8ccd-4d04-bf92-57139a6bd3ff"
+    },
+    {
+      "claim_id": "c0fcd4ae-7e17-445b-93a9-9c37caba1821",
+      "result_id": "9a64929a-a657-436d-9bb6-1d6432e93fe9"
+    },
+    {
+      "claim_id": "ec3afe15-51ee-4c3c-9341-97112f823b79",
+      "result_id": "9a64929a-a657-436d-9bb6-1d6432e93fe9"
+    },
+    {
+      "claim_id": "126c3c31-bf95-4213-908c-ab18076de2d8",
+      "result_id": "9a64929a-a657-436d-9bb6-1d6432e93fe9"
+    },
+    {
+      "claim_id": "33b3b262-d5b7-415a-80b8-970cd07d5343",
+      "result_id": "9a64929a-a657-436d-9bb6-1d6432e93fe9"
+    },
+    {
+      "claim_id": "5f3a93f5-df9a-4ea5-822a-98d0e675cd61",
+      "result_id": "9a64929a-a657-436d-9bb6-1d6432e93fe9"
+    },
+    {
+      "claim_id": "7b933031-60df-4101-bfe7-8cd80f79483e",
+      "result_id": "98b384f3-37f8-4946-a908-5c2a183601a2"
+    },
+    {
+      "claim_id": "b6433aef-5301-4b17-a806-6d152fa04e3c",
+      "result_id": "98b384f3-37f8-4946-a908-5c2a183601a2"
+    },
+    {
+      "claim_id": "095ee557-5af6-4919-840a-dffe34332af5",
+      "result_id": "98b384f3-37f8-4946-a908-5c2a183601a2"
+    },
+    {
+      "claim_id": "4dd08813-f11e-417b-b9fb-538431ac0228",
+      "result_id": "98b384f3-37f8-4946-a908-5c2a183601a2"
+    },
+    {
+      "claim_id": "a382206c-ba8f-4a65-9a56-8bd47ec9dfc5",
+      "result_id": "98b384f3-37f8-4946-a908-5c2a183601a2"
+    },
+    {
+      "claim_id": "85cec916-982e-4cc5-ae37-0882a45d9672",
+      "result_id": "98b384f3-37f8-4946-a908-5c2a183601a2"
+    },
+    {
+      "claim_id": "86e6eec5-40bf-426b-bd21-9b8d5f6bc09b",
+      "result_id": "0342b970-1d28-47a4-bd03-9ffa64e61509"
+    },
+    {
+      "claim_id": "43babcd6-c0f2-4986-a659-917d1fbe87b9",
+      "result_id": "0342b970-1d28-47a4-bd03-9ffa64e61509"
+    },
+    {
+      "claim_id": "f0e78532-f422-41c8-a231-f3b2432f42e4",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "4e6bd292-6c70-4cea-89b3-3bc6d46cf55e",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "17feb6b9-7bc2-4b0c-9979-28ff626c2aa7",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "88f0e302-ba52-450e-a9bd-94ad5698b321",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "2703eade-4275-4acc-ba04-8fbc0afe2027",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "ff6957ee-d29e-4922-8b7c-b3a8a1788e23",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "c9cd799a-f8ce-494d-ae48-63d0faa4ffd3",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "eaf7861d-0450-4f42-94c3-dee7d0614083",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "c49a35d0-6db6-4bfd-a3c6-ff6b52a8f8b4",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "fc93d222-b89e-4441-8054-3c7a531c2874",
+      "result_id": "16ba4ae8-4c1a-4a84-8d5b-142ef62d554e"
+    },
+    {
+      "claim_id": "d4d338c1-4d44-41dd-9517-f587628952ff",
+      "result_id": "4e8f9d20-a384-439c-b777-f1df05662120"
+    },
+    {
+      "claim_id": "cb48596f-e539-442d-8dab-0c3336012167",
+      "result_id": "4e8f9d20-a384-439c-b777-f1df05662120"
+    },
+    {
+      "claim_id": "80a75e19-61e7-4988-a75b-13fa0288db9a",
+      "result_id": "4e8f9d20-a384-439c-b777-f1df05662120"
+    },
+    {
+      "claim_id": "196a4591-7514-4261-a220-d4ac61fb009d",
+      "result_id": "4e8f9d20-a384-439c-b777-f1df05662120"
+    },
+    {
+      "claim_id": "09c4ea62-f866-446a-963e-2be3c3fec1a6",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "0e3b43d3-0db8-4a1e-a5e1-f4c702f52b7a",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "69f8a9ed-597d-45eb-b030-6b48bef9f7f8",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "9026e49b-f3b1-497a-b988-87444ce7a803",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "6543f4b8-b230-44aa-8a13-be9a5e46ed52",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "51254aa2-4985-4516-8727-8ac147ea7d91",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "3fcf92f0-97b6-4b34-96a6-0cf74ffda85b",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "d2facd69-6fba-4446-b351-eb2046792578",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "c130313d-86be-4909-8eac-29e7515e460b",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "434e0ff2-3c8b-4b0e-9b1a-7e0570f4b064",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "25325047-3088-4188-adde-339cacc13bcc",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "51f62b97-d7ce-4e42-a420-a3862fe20c49",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "cc4f1f96-e48b-4e2b-9899-b6d83974832b",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "df7a0bb4-84bf-405c-9c7e-ca9f203f3a0d",
+      "result_id": "a311a1e2-fa4d-4b32-977d-952fa9482a44"
+    },
+    {
+      "claim_id": "8c5d7503-eb8a-4a92-b8a1-46f109483eb6",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "81651b71-37d1-487e-bfbd-65833e725fb1",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "ebec4fc9-f505-4eeb-8dbe-a6eb961f2ca4",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "ce62c381-c9f4-4cec-a785-e7e31ec77aa0",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "d14bc93f-6c5c-4333-b70f-b2c630546024",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "62dc9424-6842-4082-918c-8201b4492caf",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "8801477f-7886-4c92-ad4e-6027e30ffe30",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "883f05c3-8c86-4f13-8576-baef8fa2052e",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "40f7179a-5c4b-43e9-8835-b338d81cde99",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "ad1480e6-09d8-4c07-a721-0869babb9d5f",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "29d97096-f1f2-4e44-973a-bb6f7d259c37",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "88f6f69d-a966-48e9-81cb-4b9a9f37cc2b",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "e6d71e02-b0c6-4938-950f-b48e68117dbe",
+      "result_id": "e28557df-445e-448f-98c4-d5579f7d1fb7"
+    },
+    {
+      "claim_id": "56e3fd0c-bb26-4725-b76e-44a1ed7cd2d4",
+      "result_id": "5e60ae67-a5c1-4187-b7dd-3180e5acdc79"
+    },
+    {
+      "claim_id": "6fe3735b-3e75-4ac0-8696-d8872ca8aef2",
+      "result_id": "5e60ae67-a5c1-4187-b7dd-3180e5acdc79"
+    },
+    {
+      "claim_id": "15b97c2c-4e26-4c4a-9928-b7db8d9c154d",
+      "result_id": "5e60ae67-a5c1-4187-b7dd-3180e5acdc79"
+    },
+    {
+      "claim_id": "dc54b512-2916-40b5-9271-de3fbc824a3e",
+      "result_id": "5e60ae67-a5c1-4187-b7dd-3180e5acdc79"
+    },
+    {
+      "claim_id": "92038d62-390b-4abb-9763-43ef2dce4ffa",
+      "result_id": "a26c97bb-8644-45d3-a9d8-305660021e7e"
+    },
+    {
+      "claim_id": "2d0afad1-109a-4392-af40-8a2d84708645",
+      "result_id": "a26c97bb-8644-45d3-a9d8-305660021e7e"
+    },
+    {
+      "claim_id": "914be762-05fe-457c-a845-dc98bd698da9",
+      "result_id": "a26c97bb-8644-45d3-a9d8-305660021e7e"
+    },
+    {
+      "claim_id": "e5478226-0c82-45e0-b473-08c97f57ca5c",
+      "result_id": "a26c97bb-8644-45d3-a9d8-305660021e7e"
+    },
+    {
+      "claim_id": "a386c3a1-88cd-4800-88c7-de5ea575c744",
+      "result_id": "a26c97bb-8644-45d3-a9d8-305660021e7e"
+    },
+    {
+      "claim_id": "c6e1dec6-0703-42f1-80ba-def941a79d98",
+      "result_id": "50b6679f-262d-4530-ab61-b20b1a8e4cc8"
+    },
+    {
+      "claim_id": "f4056fab-4620-4040-a986-5ce189e367ac",
+      "result_id": "4c5a2d81-6701-4535-ac8b-46ef543ae622"
+    },
+    {
+      "claim_id": "aed995fa-c9b0-4324-81f4-360e7cf83bc6",
+      "result_id": "4c5a2d81-6701-4535-ac8b-46ef543ae622"
+    },
+    {
+      "claim_id": "cc2c939f-c168-4064-bbe6-229c01d71320",
+      "result_id": "4c5a2d81-6701-4535-ac8b-46ef543ae622"
+    },
+    {
+      "claim_id": "297846d3-f430-4812-8719-84e4a358e3a2",
+      "result_id": "d9aeee41-9c7e-47be-8305-9c30265ef1f0"
+    },
+    {
+      "claim_id": "a152cdc9-c61b-4a2f-9875-240f1ab34657",
+      "result_id": "d9aeee41-9c7e-47be-8305-9c30265ef1f0"
+    },
+    {
+      "claim_id": "1a71c628-11e1-4183-b9a6-0616dd6376f6",
+      "result_id": "d9aeee41-9c7e-47be-8305-9c30265ef1f0"
+    },
+    {
+      "claim_id": "1e40074c-c164-4225-b043-4599221c9016",
+      "result_id": "d9aeee41-9c7e-47be-8305-9c30265ef1f0"
+    },
+    {
+      "claim_id": "d9370cae-a439-42f2-8aff-6b2a7a6306e2",
+      "result_id": "d9aeee41-9c7e-47be-8305-9c30265ef1f0"
+    },
+    {
+      "claim_id": "8f4aaa38-06b5-4cfe-8805-22fe1b2c6c74",
+      "result_id": "c83182aa-c4c9-4b9e-ae3e-b983415ff54b"
+    },
+    {
+      "claim_id": "df05d568-2ab1-4091-a1b4-94ee175e270b",
+      "result_id": "c83182aa-c4c9-4b9e-ae3e-b983415ff54b"
+    },
+    {
+      "claim_id": "2f759e34-c2a0-4097-b7e6-28b84ecb1bd2",
+      "result_id": "c83182aa-c4c9-4b9e-ae3e-b983415ff54b"
+    },
+    {
+      "claim_id": "84239dec-d1c1-4780-894d-aa10a1701f08",
+      "result_id": "c83182aa-c4c9-4b9e-ae3e-b983415ff54b"
+    },
+    {
+      "claim_id": "7e3dbee8-dea2-445a-b4ef-2cb974458331",
+      "result_id": "c83182aa-c4c9-4b9e-ae3e-b983415ff54b"
+    },
+    {
+      "claim_id": "c4d6e7a9-f133-426e-ad98-c212911bcd87",
+      "result_id": "c83182aa-c4c9-4b9e-ae3e-b983415ff54b"
+    },
+    {
+      "claim_id": "3cc1fcbc-b95f-45f6-adeb-bb48cef5c2a3",
+      "result_id": "a3386d7a-86bd-4076-a832-997b6bb4b04b"
+    },
+    {
+      "claim_id": "373d1561-aace-4f46-8912-8f35b10e05f5",
+      "result_id": "a3386d7a-86bd-4076-a832-997b6bb4b04b"
+    },
+    {
+      "claim_id": "fecfadba-6544-49d9-a21e-bceb24f8ea36",
+      "result_id": "a3386d7a-86bd-4076-a832-997b6bb4b04b"
+    },
+    {
+      "claim_id": "e991042b-4e85-40ad-aa54-4105ba3cb88f",
+      "result_id": "a3386d7a-86bd-4076-a832-997b6bb4b04b"
+    },
+    {
+      "claim_id": "cea1a784-73b9-453c-a2f5-35fc4903f219",
+      "result_id": "a3386d7a-86bd-4076-a832-997b6bb4b04b"
+    },
+    {
+      "claim_id": "cc7d9c5b-3e52-4010-9b55-362088809434",
+      "result_id": "a3386d7a-86bd-4076-a832-997b6bb4b04b"
+    },
+    {
+      "claim_id": "8f0604c9-5bc9-44af-8de9-fb125630626a",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "c7956a6c-0054-41f6-9ea3-edac0f846f3c",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "f067760a-2898-4ce8-aa84-96ab4d17e881",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "a4f1b200-7723-452a-a362-a9eb07f935f7",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "45b4fd6d-ce67-4f8e-b956-2dbe1dde478e",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "db460055-1aa3-4458-8c05-0a1dba7f1911",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "28769572-2481-4d1f-bf11-29e909b14113",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "f38bc970-5d62-4f18-a31c-e118225c4daa",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "b01ffb69-db9b-4c02-9237-ba6dabd2a6ea",
+      "result_id": "03c0e7dd-9a0b-4939-90ec-182c2dbe9b83"
+    },
+    {
+      "claim_id": "f98b79c8-8833-4779-b2dc-cc49dd2abfa5",
+      "result_id": "57e90c4b-0659-4b09-aea5-5cc9248a75bb"
+    },
+    {
+      "claim_id": "d92ac8e9-564e-4496-b4e1-9819842f3ec3",
+      "result_id": "43f35859-5434-49d3-98b6-a3857aa6e4fc"
+    },
+    {
+      "claim_id": "8ca3263a-4468-4e43-b2e2-8b51bce127b9",
+      "result_id": "43f35859-5434-49d3-98b6-a3857aa6e4fc"
+    },
+    {
+      "claim_id": "72bf4937-95df-4b1e-87e5-bcfe0188deb3",
+      "result_id": "43f35859-5434-49d3-98b6-a3857aa6e4fc"
+    },
+    {
+      "claim_id": "8fdd6dc4-dc43-4ab4-88c5-34edc53ed82a",
+      "result_id": "43f35859-5434-49d3-98b6-a3857aa6e4fc"
+    },
+    {
+      "claim_id": "32982f6e-c477-4286-a924-f59ec3adb4c9",
+      "result_id": "f885ac50-ae93-429e-af71-ab348b6ea028"
+    },
+    {
+      "claim_id": "58951877-d6f5-4c30-bd74-a9398be778b3",
+      "result_id": "f885ac50-ae93-429e-af71-ab348b6ea028"
+    },
+    {
+      "claim_id": "237ee324-0c65-4ffc-a4b7-8410542f5204",
+      "result_id": "f885ac50-ae93-429e-af71-ab348b6ea028"
+    }
+  ],
+  "comparisons": []
+}

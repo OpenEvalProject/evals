@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "RNA-seq analysis identified 3,898 differentially expressed genes between E8.5 and E10.5 forebrain neuroepithelium, with genes encoding protein biosynthetic machinery (ribosomal proteins, ribosome biogenesis factors, and translation factors) being the most enriched categories in E8.5 tissue. Despite downregulation, the stoichiometry of ribosomal and translation factor genes remained similar between the two ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12, C14, and C91-C94 collectively demonstrate robust transcriptomic changes with appropriate statistical thresholds (q < 0.05), functional annotation clustering, GSEA, and correlation analyses. The RNA-seq data are validated by qRT-PCR (C1, Figure 1\u2014figure supplement 1B, R\u00b2=0.58), and multiple independent analytical approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C81"
+    ],
+    "result": "Ribosome biogenesis decreases from E8.5 to E10.5 in forebrain neuroepithelium, as evidenced by decreased nucleolar volume, reduced 5.8S pre-rRNA levels, and altered cellular ultrastructure. The E8.5 to E10.5 transition represents a critical regulatory stage, as no further reduction in nucleolar volume occurs between E10.5 and E14.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C20, and C81 are supported by multiple orthogonal measurements: 3D nucleolar volume quantification (C15, C16), FISH for pre-rRNA (C17), immunostaining (C2), and TEM analysis (C18-C20). The statistical analyses are appropriate (Welch's ANOVA, t-tests) with adequate sample sizes (n=135-202 nucleoli from 3 embryos per group). The interpretation that E8.5-E10.5 is a critical transition (C81) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25"
+    ],
+    "result": "Protein synthesis rates are higher in E8.5 compared to E10.5 forebrain neuroepithelium, as measured by 35S-methionine incorporation and OPP incorporation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C24, and C25 show variable results across experiments. The 35S-methionine data (C24) show fold changes ranging from 1.1 to 2.0 across three experiments, suggesting inconsistency. The OPP assay (C25) shows statistical significance (p\u22640.01, n=9 embryos), but the authors acknowledge in the Discussion that OPP availability to embryos may differ between ages, and that protein synthesis changes were 'not consistently observed' in genetic manipulation experiments. This inconsistency raises concerns about the robustness of the protein synthesis measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C102"
+    ],
+    "result": "c-MYC expression is approximately 10-fold higher in E8.5 neuroepithelium compared to E10.5 (FPKM: E8.5=28.73, E10.5=2.76) and remains low throughout subsequent cortical development. No compensatory upregulation of Mycn or Mycl occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C33, and C102 are well-supported by RNA-seq data (C32), qRT-PCR validation (Figure 5\u2014figure supplement 1A), immunostaining across multiple developmental stages (C33), and immunoblotting (Figure 5\u2014figure supplement 1B). The lack of compensatory changes in Mycn and Mycl (C102) is documented with specific FPKM values. Multiple independent methods converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C100",
+      "C101"
+    ],
+    "result": "mTOR pathway signaling is decreased at E10.5 compared to E8.5, as evidenced by reduced phosphorylation of 4E-BP1, S6K1, and S6 ribosomal protein, despite unchanged Mtor expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21-C23, C100, and C101 are supported by immunostaining and immunoblotting data showing differential phosphorylation of multiple mTOR pathway components. The observation that Mtor expression itself is unchanged (C100) while pathway activity differs (C101) is consistent with post-translational regulation. The data are internally consistent across multiple pathway components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Interference with c-MYC at E8.5 prematurely decreases ribosome biogenesis, as demonstrated by pharmacological inhibition with KJ-Pyr-9 and genetic Myc deficiency, both resulting in reduced nucleolar volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C37 are supported by two independent loss-of-function approaches: pharmacological inhibition (C35, n=140 nucleoli from 3 embryos per condition, p\u22640.001) and genetic knockout (C37, n=238 control and 97 Myc-/- nucleoli, p\u22640.05). The Myc-deficient phenotypes (C36) are consistent with prior literature (Davis et al., 1993; Zinin et al., 2014). The convergence of pharmacological and genetic approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Persistent c-MYC expression in cortical progenitors increases transcription of protein biosynthetic machinery and enhances ribosome biogenesis. RNA-seq of MYC-overexpressing progenitors identified 135 differentially expressed genes (105 activated, 30 repressed), with ribosomes as the most enriched category. All differentially expressed ribosomal proteins were upregulated, and nucleolar volume was increased at E11.5 and E13.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C38-C43 are supported by RNA-seq of FACS-purified Pax6+ progenitors (C38-C43), functional annotation clustering (C42), and nucleolar volume measurements at two developmental stages (C8, E11.5: p\u22640.0001, n=194 WT and 144 MYC-OE nucleoli; E13.5: p\u22640.001, n=234 WT and 248 MYC-OE nucleoli). The directional consistency of all ribosomal protein changes (C43) is notable. However, the authors acknowledge that protein synthesis changes were 'not consistently observed' despite increased ribosome biogenesis, suggesting additional regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Persistent c-MYC expression in cortical progenitors enhances progenitor proliferation and leads to macrocephaly by birth in Nestin-MYC mice, with increased brain weight, cortical length, and cortical area at P0. The phenotype includes increased BrdU incorporation in Pax6+ progenitors and increased Cux1+ upper layer neurons, but no change in Ctip2+ lower layer neurons. Foxg1-MYC mice show embryonic lethality between E14.5 and birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C44-C51 are supported by multiple measurements across two Cre driver lines (Foxg1-Cre and Nestin-Cre). The macrocephaly phenotype is well-documented with brain weight (C44, E14.5; C9, P0: p\u22640.0001), cortical length (p\u22640.0001), and cortical area (p\u22640.0001) measurements. BrdU incorporation data (C49, p\u22640.05, n=5) and cell counting data (C50, C51) provide mechanistic insight. The lethality in Foxg1-Cre crosses (C45) is documented across 8 litters. Sample sizes are adequate and statistical tests appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The most enriched gene category at E10.5 was neuronal differentiation, including markers of the neuroepithelial-to-radial glial transition (Glast, Blbp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C95-C97 are supported by functional annotation clustering (C13) and RNA-seq data showing upregulation of Glast and Blbp at E10.5 (C95, C96). The interpretation that these markers indicate neuroepithelial-to-radial glial transition (C97) is consistent with established knowledge about these markers. The data are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C82",
+      "C83"
+    ],
+    "result": "The proteomic changes in amniotic fluid (AF) and cerebrospinal fluid (CSF) during early forebrain development match the transcriptomic downregulation of protein biosynthetic machinery in the adjacent neuroepithelium. Among 691 proteins detected in both fluids and tissue, 395 were enriched in E8.5 AF and E8.5 neuroepithelium, with ribosomes/translation as the most enriched category. Many ribosomal proteins were no longer detected in E10.5 CSF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31, C82-C83 are supported by cross-referencing proteomic data (Chau et al., 2015) with the current transcriptomic data. The matching of 493/691 proteins between fluid and tissue expression patterns (C27, C28) provides strong evidence for tissue origin of fluid proteins. Gene ontology analysis (C29) and detailed ribosomal protein mapping (C30, C31) strengthen the conclusion. The interpretation that fluid proteomes provide a biomarker signature (C83) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Many known MYC target genes were enriched in E8.5 compared to E10.5 neuroepithelium, including genes associated with ribosome biogenesis and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by GSEA using published MYC target gene sets (Ben-Porath et al., 2008; Zeller et al., 2003) showing significant enrichment (FDR < 0.0001) in E8.5 tissue. The analysis appropriately uses established gene sets and provides specific examples (Ncl, Rps13, Eif4e). The statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "MYC modulates ribosome biogenesis in the developing forebrain, but additional unidentified mechanisms participate in the regulation of protein biosynthesis at this developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 represent the authors' synthesis of their findings. C84 is well-supported by the convergence of loss-of-function (C6, C35-C37) and gain-of-function (C7-C8) experiments. C85 is a reasonable inference from the observation that despite increased ribosome biogenesis in MYC-OE, protein synthesis changes were not consistently observed. The authors appropriately acknowledge the limitations of their findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Genes with known functions in regulating cerebral cortical neurogenesis, including Igf2 and Insm1, were upregulated in MYC-OE progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 are supported by RNA-seq data from MYC-OE progenitors and qRT-PCR validation for Igf2 (Figure 6\u2014figure supplement 1A, p<0.05, n=6). The functional roles of these genes are supported by appropriate citations (Lehtinen et al., 2011 for Igf2; Farkas et al., 2008; Tavano et al., 2018 for Insm1). The data suggest MYC affects multiple pathways beyond ribosome biogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "RPL10A protein expression was similar between E8.5 and E10.5 despite higher Rpl10a RNA expression at E8.5, suggesting post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C99 are supported by immunoblotting data (C98) and RNA-seq data showing discordant RNA and protein levels. The inference of post-transcriptional mechanisms (C99) is reasonable given the mismatch between transcript and protein levels. This observation highlights the complexity of translational regulation during development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Embryonic lethality in Foxg1-Cre MYC-OE mice may be due to combinatorial effects of MYC overexpression and Foxg1 heterozygosity, perhaps in tissues outside the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is speculative, as acknowledged by the authors ('may be due to'). While the lethality is documented (C45), the proposed mechanism is not tested. The citation to H\u00e9bert and McConnell (2000) provides some support for Foxg1 heterozygosity effects, but the specific contribution of MYC overexpression versus Foxg1 haploinsufficiency is not determined. Additional experiments would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C88",
+      "C89"
+    ],
+    "result": "Background knowledge claims about neural development, ribosome biology, MYC function, and disease associations are appropriately cited and provide context for the experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C80, C88-C89 represent established knowledge from the literature, appropriately cited throughout. These claims provide necessary context for interpreting the experimental results but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

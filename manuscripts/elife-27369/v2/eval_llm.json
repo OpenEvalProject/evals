@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C6"
+    ],
+    "result": "Mg2+ drives an abrupt switch in H-NS DNA-bridging activity between 4-6 mM, with 80% DNA recovery at high H-NS concentrations and no recovery in the absence of H-NS or bait DNA. This transition occurs within a physiologically relevant concentration range (0-10 mM Mg2+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide direct experimental evidence from the DNA-bridging assay (Figure 1a,b) with appropriate controls (C32). The abrupt transition (C33) is clearly demonstrated and occurs within physiologically relevant concentrations (C34), supporting the main finding C6. The assay design is sound with proper negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Mg2+ does not affect the stiffness of fully formed H-NS-DNA complexes at saturation, though it reduces H-NS DNA-binding affinity while increasing cooperativity. The reduction in affinity is attributed to electrostatic shielding of the DNA phosphate backbone by Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by TPM data (Figure 1d) and McGhee-von Hippel analysis (Figure 3\u2014figure supplement 1). The structural stiffness remains unchanged (C36) while binding parameters are altered (C37-C38). The mechanistic interpretation (C39) is reasonable given known electrostatic interactions, though it remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C118"
+    ],
+    "result": "H-NS multimerizes along DNA via the dimer-dimer interaction domain to form stiff filaments. The H-NSY61DM64D mutant, which exists solely as a dimer, cannot form stiff filaments or DNA bridges, demonstrating that H-NS dimers alone are insufficient for these activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 and C118 are well-supported by multiple complementary experiments: size exclusion chromatography (C42-C44, Figure 1\u2014figure supplement 1), EMSA (C45), TPM (C46-C47, Figure 1e), and DNA-bridging assays (C48, Figure 1\u2014figure supplement 3). The mutant design is rational based on structural data (C41), and the results conclusively demonstrate the requirement for multimerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Mg2+ does not affect the multimeric state of H-NS in solution, suggesting that structural effects on individual H-NS units within filaments explain the observed modulation of bridging efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is directly supported by size exclusion chromatography data (Figure 1\u2014figure supplement 1). Claim C52 is a reasonable hypothesis that sets up the MD simulation studies, though it remains speculative until tested. The exclusion of a multimerization-based mechanism (C51) is important for narrowing mechanistic possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C8"
+    ],
+    "result": "MD simulations reveal that H-NS transitions from an 'open' extended conformation to a 'closed' compact conformation at 50 mM KCl. This involves buckling of helix \u03b13 at residues Glu42-Ala49 and interactions between the DNA-binding domain and dimerization domain that render one DNA-binding domain inaccessible, preventing DNA bridging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are supported by MD simulation data (Figure 2a,b, supplementary figures and videos). The structural observations are detailed and internally consistent. However, MD simulations have inherent limitations (50 ns timescale, force field approximations) and were performed without DNA present (acknowledged in C60). The inference about bridging capability (C60) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Mg2+ stabilizes the 'open' bridging-competent conformation of H-NS by preferentially binding to glutamate residues in regions 22-35 and 98-105, shielding interactions between the DNA-binding and dimerization domains, and potentially stabilizing helix \u03b13 through interactions with residues Glu42-Glu44 and Ser45.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by MD simulation data showing Mg2+ localization (Figure 2c, Figure 2\u2014figure supplement 8) and altered contact maps (Figure 2\u2014figure supplement 2b,5). The transient nature of Mg2+ interactions (C66) and specific residue preferences (C64, C67, C69) are well-documented. The mechanistic conclusions (C68, C70) are reasonable inferences from the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The H-NSE43A,E44A,S45A mutant bridges DNA in the absence of Mg2+ (~50% recovery) and reaches saturation at low Mg2+ concentrations, confirming that the glutamate stretch at the buckle is responsible for Mg2+ sensing. Wild-type H-NS shows more cooperative DNA binding than the mutant in the presence of Mg2+, suggesting the conformational transition promotes lateral filament formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are supported by experimental data from DNA-bridging assays (Figure 2\u2014figure supplement 9a) and TPM (Figure 2\u2014figure supplement 9b, Figure 3\u2014figure supplement 1d). The mutant design directly tests the MD simulation predictions, and the results provide strong independent validation. The inference about filament formation (C77) is reasonable given the cooperativity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "KCl abolishes H-NS DNA bridging at concentrations exceeding 120 mM, mirroring the in vivo response of the ProU operon. This effect is specific to K+ rather than the counter-ion, while DNA stiffening is only modestly affected. The in vitro threshold matches the in vivo requirement of >100 mM KCl to alleviate H-NS-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by TPM data (Figure 1f), DNA-bridging assays (Figure 1c), and control experiments with K-glutamate (Figure 1\u2014figure supplement 5). The correlation with in vivo data (C82) is compelling, though the cited work (Cairney et al., 1985) is quite old. The ion specificity controls (C83) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "At high KCl concentrations (130 mM), H-NS adopts multiple 'closed' conformations that block the DNA-binding QGR motif through interactions between DNA-binding domains, with the dimerization domain, and with helix \u03b13. Mg2+ can partially counteract this by shielding residues involved in these interactions, but high K+ concentrations still promote the 'closed' conformation even in the presence of Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C95 are supported by MD simulations at 130 mM KCl (Figure 2b, Figure 2\u2014figure supplement 2c,d). The structural observations are detailed and show multiple 'closed' forms (C91). The partial rescue by Mg2+ (C93-C94) explains why high KCl can override Mg2+ effects. However, C85 is explicitly labeled as speculation, and the MD simulations have the same limitations noted earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Truncated H-NS derivatives targeting the dimerization domain (H-NS1-58) or dimer-dimer interaction domain (H-NS56-82) effectively inhibit DNA bridging, with H-NS56-82 causing complete abolishment. DNA stiffening is only reduced at very high derivative concentrations (30-fold excess), suggesting natural inhibitors like H-NST operate by disrupting DNA bridging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by DNA-bridging assays (Figure 3a) and TPM experiments (Figure 3b). The differential effects on bridging versus stiffening are clear and mechanistically informative. The inference about natural inhibitors (C103) is reasonable but remains speculative without direct testing of H-NST.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Hha and YdgT enhance H-NS-mediated DNA bridging at low Mg2+ concentrations, with YdgT being effective at lower concentrations likely due to higher H-NS affinity. Both proteins increase DNA stiffening, with YdgT causing DNA collapse in TPM when combined with H-NS and Mg2+, attributed to bridge formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 are supported by DNA-bridging assays (Figure 3c) and TPM experiments (Figure 3d). The differential potency of YdgT versus Hha (C106) is a reasonable inference from the concentration-response data. However, C110 notes that DNA collapse data are 'not shown,' which is a significant limitation. The interpretation of DNA collapse as bridging (C111) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "MD simulations reveal that Hha does not prevent helix \u03b13 buckling but instead alters interactions between the dimerization and DNA-binding domains by blocking access to parts of the dimerization domain. In the presence of Mg2+ and Hha, contacts between these domains are further reduced, indicating that Hha stabilizes the 'open' bridging-capable conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 are supported by MD simulations incorporating the H-NS-Hha co-crystal structure (Figure 2b, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 6). The mechanism differs from Mg2+ (no buckle prevention, C113) but achieves a similar outcome (stabilizing 'open' conformation, C117). The structural basis is well-documented in the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "H-NS dimers bind DNA in cis and associate laterally via the dimer-dimer interaction domain to form structurally similar but functionally distinct filaments depending on Mg2+ presence. Mg2+ 'activates' H-NS by promoting a conformational change that renders both DNA-binding domains accessible for bridging. The assembly proceeds through nucleation, lateral filament growth, and bridging to DNA in trans, with each step potentially modulated by osmolarity and protein partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 synthesize the experimental and simulation results into a coherent model (Figure 4). The structural similarity but functional distinction (C121-C122) is supported by TPM data (Figure 1d). The three-step assembly model (C124) is reasonable and consistent with all observations. However, the model remains somewhat speculative, particularly regarding the detailed sequence of events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims establishing H-NS as a key global regulator in Gram-negative bacteria that modulates chromatin organization through DNA-bridging activity, is regulated by environmental factors and protein partners, and exhibits two DNA-binding modes (bridging and stiffening).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 and C96-C98 are background knowledge supported by extensive citations to prior literature. These establish the context for the current study. The claims are well-established in the field, though some citations are relatively old (e.g., C78 cites work from 1985).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C127",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "A diverse spectrum of H-NS modulators alter DNA-bridging activity, and regulation of transcription via H-NS is complex, not proceeding via a single mechanism. The type of complex formed depends on ions, DNA conformation, and modulating proteins, with different genes subject to different types of modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C7 are the main findings stated in the abstract and supported throughout. Claims C127, C134-C136 are general conclusions synthesizing the study's findings. These are well-supported by the totality of the experimental and simulation data, though they remain somewhat general and speculative about gene-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "H-NS represses transcription through multiple mechanisms: occlusion of RNA polymerase from the promoter, trapping RNA polymerase to prevent promoter escape, and interfering with RNA polymerase progression during active transcription. Recent evidence suggests only bridged filaments can interfere with transcription, with lateral filaments being disassembled by RNA polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 are supported by citations to prior literature. These provide context for interpreting the current findings. Claim C129 is explicitly labeled as speculation. The claims synthesize existing knowledge about H-NS repression mechanisms, though the current study does not directly test these mechanisms.",
+    "result_type": "MINOR"
+  }
+]

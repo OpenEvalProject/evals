@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The STN is an excitatory nucleus in the basal ganglia indirect pathway that is implicated in motor control and impulse regulation based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 summarize established anatomical and functional knowledge about the STN from prior literature, all supported by appropriate citations. These background claims provide context for the current study but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior studies show STN activation during stopping, conflict, and surprise, with computational models proposing STN-mediated inhibition of thalamocortical drive, though lesion studies showed modest and non-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C12-C15 accurately summarize prior empirical and computational work on STN function, all supported by appropriate citations. Claim C15 importantly notes the limitations of prior lesion studies, motivating the current optogenetic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C98",
+      "C99"
+    ],
+    "result": "Optogenetic stimulation of STN glutamatergic neurons using ChR2 effectively activates STN neurons and excites their major projection targets (GPe, EP, SNr) as demonstrated by electrophysiology, pharmacology, and Fos expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24, C98-C99 are well-supported by comprehensive validation data including histology (Figure 1A-D), electrophysiology (Figure 1E-F, supplement 1A-G), pharmacology (DNQX sensitivity), and in vivo Fos expression (Figure 1G-I). The methods appropriately validate the optogenetic approach before behavioral testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C29",
+      "C38",
+      "C40",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C75"
+    ],
+    "result": "Brief optogenetic activation of STN projection neurons is sufficient to interrupt or pause ongoing licking behavior, even with minimal stimulation (50 ms pulse or 0.5 mW power).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C28-C29, C38, C40, C54-C56, C61, C75 are strongly supported by behavioral data (Figure 2C-D, G) showing significant increases in 2-lick bouts with ChR2 stimulation across multiple conditions. The robustness across different stimulation parameters (10 mW vs 0.5 mW, 10 pulses vs 1 pulse, unilateral vs bilateral) strengthens the conclusion of sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C43"
+    ],
+    "result": "When STN stimulation does not fully interrupt licking, it induces a pause by shifting inter-lick intervals toward longer durations, particularly reducing licks with 100-200 ms intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by behavioral data (Figure 2H-J) showing rightward shifts in ILI distributions and increased median ILIs. Claim C43 provides the methodological definition of lick bouts (>92% of licks with <750 ms ILI), which is data-supported (Figure 2\u2014supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C100"
+    ],
+    "result": "STN stimulation increases inter-bout intervals and induces compensatory increases in total bouts and licks, suggesting the interruption is not due to aversive effects but represents a behavioral stop/pause mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by data (Figure 2\u2014supplement 1D-G) showing longer IBIs and increased total licking in ChR2 mice. The compensatory increase argues against aversion. However, claim C100 is speculative about the mechanism ('hard' interrupt), and alternative explanations (C101) are acknowledged but not fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A surprise stimulus (light and sound) potently interrupts licking behavior in mice, with habituation over multiple sessions, while STN inhibition alone does not affect licking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C50-C51 are supported by pilot data (Figure 3C, Figure 3\u2014supplement 2) showing surprise-induced interruption and habituation. Claims C48-C49 cite prior literature appropriately. The control showing no effect of laser alone (C33) is important for interpreting the main experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C39",
+      "C41",
+      "C52",
+      "C53",
+      "C57",
+      "C62",
+      "C76"
+    ],
+    "result": "Optogenetic inhibition of STN using Halorhodopsin significantly reduces the interruptive effect of surprise on licking behavior, demonstrating that STN activity is necessary for surprise-induced behavioral interruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C36-C37, C39, C41, C52-C53, C57, C62, C76 are strongly supported by behavioral data (Figure 3E-G, supplement 1H) showing reproducible reduction in surprise-induced interruption with Halo inhibition across multiple cohorts and conditions. The necessity claim is well-justified by the loss-of-function approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C63",
+      "C64",
+      "C65",
+      "C77"
+    ],
+    "result": "The combined optogenetic activation and inhibition experiments provide causal evidence that the STN is both necessary and sufficient for behavioral response suppression, validating prior correlational studies and ruling out epiphenomenal explanations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C63-C65, C77 represent the main conclusions integrating both gain-of-function (ChR2) and loss-of-function (Halo) experiments. The bidirectional optogenetic approach provides strong causal evidence. However, the authors acknowledge limitations (C101-C102) regarding mechanism and lack of in vivo recordings during behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Acute STN inhibition does not alter licking behavior in the absence of surprise, suggesting that involuntary movements from STN lesions result from sustained rather than acute loss of STN output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is supported by data (Figure 3C), but claim C60 is speculative about compensatory changes explaining the difference between acute inhibition and chronic lesions. The speculation is reasonable but lacks direct evidence. The comparison to prior lesion studies (C59) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "This study demonstrates STN can inhibit ongoing actions (100-300 ms after initiation) rather than preventing action initiation, though both mechanisms may rely on similar circuits and have ethological utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 accurately describe the experimental design and its distinction from prior work. Claim C68 is supported by the data. Claim C70 is speculative about ethological utility but represents reasonable interpretation. The acknowledgment of what was not tested (C69) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The findings have broader implications for understanding links between STN-mediated stopping and cognition, and may explain why STN interventions improve Parkinsonian motor deficits by reducing pathological stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 cite prior work appropriately, but claims C73-C74 are speculative about clinical implications. While the speculation is reasonable given the data, it extends beyond what the current experiments directly demonstrate. These represent discussion points rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors acknowledge alternative interpretations (STN stimulation inducing competing behaviors) and limitations (lack of in vivo recordings during behavior), while noting similarity between STN activation and surprise-induced interruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 appropriately acknowledge limitations and alternative explanations. Claim C103 notes an interesting parallel between the two experimental manipulations. These represent honest assessment of the study's limitations and strengthen the overall interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study used appropriate methods including VGLUT2-Cre mice, stereotactic viral injections, optogenetic manipulations, behavioral assays with lickometers, histology, electrophysiology, and statistical analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C97 describe methodological details that are standard and appropriate for this type of study. The methods are sufficiently detailed for reproducibility. Key controls include YFP-only mice, pre-determined exclusion criteria (C87, C93-C94), and blocking light leakage (C96). Statistical threshold of p<0.05 is standard (C97).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study mapped 36,498 eQTLs for 5,643 genes at 5% FDR in 1,012 yeast segregants from a BY\u00d7RM cross, with only 77 genes having no detected eQTL and a median of 6 eQTLs per gene (maximum 21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14, C15, C16, and C17 provide consistent quantitative data on the eQTL mapping results. The large sample size (1,012 segregants) and comprehensive coverage (5,643 of 5,720 genes with eQTLs) support the completeness of the mapping effort. The specific counts and statistical thresholds are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The detected eQTLs explained a median of 71.5% of additive gene expression heritability (median heritability 26%, maximum 95%), with >90% power to detect eQTLs explaining \u22652.5% of variance. Effect sizes were strongly weighted toward small effects (median 1.9% variance explained).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C20, C21, C22, and C23 collectively demonstrate high completeness of eQTL detection through power calculations, heritability estimates, and cross-validation. The median 71.5% of heritability explained is substantially higher than previous studies, and the power analysis (C22) justifies why remaining heritability is likely due to undetected small-effect eQTLs (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17"
+    ],
+    "result": "Most genes had multiple eQTLs, with a median of 6 eQTLs per gene among genes with at least one detected eQTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C17 are consistent and supported by the data. The median of 6 eQTLs per gene demonstrates the polygenic nature of gene expression regulation in this cross. This finding is further validated by comparison to previous indirect estimates (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C112"
+    ],
+    "result": "Most expression variation arose from trans-acting eQTLs: 92% of eQTLs were distant from their target genes, 86% were on different chromosomes, and 98% of genes had at least one distant eQTL. Trans-eQTLs contributed 2.6-fold more to gene expression variance than local eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C31, and C112 provide converging quantitative evidence for the predominance of trans-acting variation. The aggregate effect of distant eQTLs exceeded local eQTLs for 85% of genes (C31), and statistical tests confirmed significance (C29, C30). The 2.6-fold contribution (C112) is consistent with human estimates cited in C113.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Nearly all trans-eQTLs clustered at 102 hotspot locations containing >90% of trans-eQTLs. Hotspots affected a median of 425 genes (range 26-4,594), with the largest hotspots (MKT1, HAP1, KRE33) each affecting >3,600 genes. Trans-eQTLs outside hotspots also clustered more than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C38, and C114-C116 provide detailed characterization of hotspot architecture. The concentration of >90% of trans-eQTLs in 102 hotspots (C33) is a major finding. Specific hotspots are validated by citations to previous studies (C35, C36, C37), and the clustering of non-hotspot trans-eQTLs (C114) suggests additional weak hotspots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C117"
+    ],
+    "result": "Fine-mapping resolved 26 hotspots to regions containing \u22643 genes (58 total genes), including three single-gene hotspots. These genes were highly enriched for transcription factors (19/58 genes, p=4e-9), and almost all transcription factors with predicted damaging variants produced hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43-C46, and C117 demonstrate successful fine-mapping and functional characterization. The validation using previously confirmed causal genes (C45) supports the method's accuracy. The strong enrichment for transcription factors (p=4e-9, C46) and the observation that nearly all TFs with damaging variants create hotspots (C117) provide mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A hotspot affecting 382 genes was fine-mapped to the transcription factor STB5, whose BY allele has reduced activity. Genes with lower expression linked to the BY allele were strongly enriched for STB5 binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide a specific example of hotspot characterization. The fine-mapping to a single gene (C47), functional annotation (C48), prior evidence of allelic differences (C49), and enrichment of binding sites (C50) collectively support STB5 as the causal gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A hotspot affecting 645 genes was fine-mapped to an interval containing ERC1, which carries a frameshift in BY. The BY allele reduced expression of methionine biosynthesis genes (p=2e-22) and reduces cellular SAM levels, suggesting indirect trans effects through metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide another example of hotspot characterization with a non-transcription factor gene. The frameshift variant (C55), prior functional data (C56, C58), and GO enrichment (C57) support ERC1 as causal. This illustrates that hotspots can arise from metabolic rather than transcriptional mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C24",
+      "C25",
+      "C63",
+      "C64",
+      "C133",
+      "C134"
+    ],
+    "result": "Most genes (50-74%) had a local eQTL, but 60% of local eQTLs did not overlap hotspots and had no detectable trans effects on other genes within the study's statistical power. The authors conclude most local eQTLs have no meaningful downstream consequences for gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C24, C25, C63, C64, C133, and C134 consistently show that while local eQTLs are common, most lack trans effects. The high power to detect weak trans effects (C22) strengthens the conclusion that most local eQTLs truly lack downstream consequences (C134). This is supported by citations showing minimal fitness effects of modest expression changes (C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C61",
+      "C62",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Local eQTLs in hotspots were enriched (p=0.007) and had larger effect sizes (p=0.003) than expected. However, the distribution of non-hotspot trans-eQTLs at non-hotspot local eQTLs roughly matched random expectation, with excesses only at extremes (\u22656 trans-eQTLs, p<0.001; zero trans-eQTLs, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C61, C62, and C65-C67 provide statistical evidence for the relationship between local and trans eQTLs. The enrichment of local eQTLs in hotspots (C61, C62) suggests some hotspots arise from local regulatory variation, while the near-random distribution outside hotspots (C65) supports the conclusion that most local eQTLs lack trans effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The HAP1 hotspot affecting 3,640 genes is caused by a transposon insertion in the BY allele that reduces HAP1 function. While 26/69 known HAP1 targets showed strong expression reduction (p<2.2e-16, OR=138), the vast majority of the 3,640 trans-eQTLs must reflect indirect, secondary consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 provide a well-characterized example of direct versus indirect trans effects. The enrichment of known HAP1 targets (C40) validates the hotspot, while the comparison to the total number of known targets (C41) supports the inference that most effects are indirect (C42). This illustrates the cascade model of hotspot effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "For the STB5 and ERC1 hotspots, allele-specific expression (ASE) analysis showed STB5 had no ASE and ERC1 had weak ASE in the opposite direction of its local eQTL. Both genes carry protein-altering variants, suggesting hotspots arise from altered protein function rather than expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 provide evidence that some hotspots arise from coding variants affecting protein function rather than cis-regulatory variants affecting expression. The ASE data (C68, C69) rule out cis-regulatory mechanisms, while the presence of protein-altering variants (C70) and potential autoregulation (C71) suggest alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Comparison to pQTLs for 160 proteins showed distant pQTL hotspots broadly mirrored eQTL hotspots. Of strong eQTLs, 47% overlapped pQTLs (92% estimated by \u03c0\u2081 statistic), while 50% of strong pQTLs overlapped eQTLs (63% by \u03c0\u2081), suggesting most strong eQTLs affect protein levels but a larger fraction of pQTLs are protein-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 provide systematic comparison of mRNA and protein QTLs. The overlap percentages (C74, C75) and \u03c0\u2081 estimates (C76, C77) are internally consistent and support the conclusions (C78, C79). However, the asymmetry in overlap could also reflect differences in statistical power between the two datasets, which is acknowledged in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "An unbiased genome-by-genome scan detected 387 eQTL-eQTL interactions affecting 306 genes (FDR=10%), representing the first unequivocal identification of eQTL interactions from such a scan. Targeted scans with reduced multiple testing identified 784 and 1,464 additional interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C80-C83 document the detection of epistatic interactions. The claim of being the first unbiased genome-wide scan (C81) is a strong statement but is supported by the large sample size and statistical power. The increasing numbers of interactions with reduced multiple testing burden (C82, C83) is expected and supports the validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C119"
+    ],
+    "result": "Epistatic interactions clustered at major hotspots (HAP1: 79 interactions, KRE33: 66 interactions), with many interactions between hotspots (e.g., 30 genes with HAP1\u00d7KRE33 interactions). Of epistatic markers, 72% were within 10kb of additive eQTLs, and \u226584% (by \u03c0\u2081) had additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 and C119 demonstrate that epistatic interactions predominantly involve loci with additive effects. The clustering at hotspots (C84, C85) and high overlap with additive eQTLs (C90, C91) support the conclusion that epistasis typically involves loci that also have main effects (C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The mating type locus showed an additive effect on SAG1 expression (higher in RM/alpha segregants) and an epistatic interaction with GPA1, replicating a previous finding that a BY-specific GPA1 variant modulates SAG1 expression in alpha but not a cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide a specific example of epistasis with biological interpretation. The replication of a previously reported interaction (C95) validates the detection method. The biological context (mating type-specific gene expression) makes the interaction mechanistically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Of 387 interactions, 41% were cis-by-trans interactions. For example, HAP1 interacted with local eQTLs for 15 genes, including SCM4 where the RM alleles at both loci showed synergistic effects. However, local eQTL effect sizes did not consistently differ by hotspot allele for HAP1, KRE33, MKT1, GPA1, or IRA2 (all p\u22650.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 characterize cis-by-trans interactions. The SCM4 example (C98-C102) is well-supported by prior knowledge of HAP1 binding sites (C100, C101). However, the lack of consistent effect size differences (C103, C104) argues against a simple model where TF activity modulates cis-regulatory variant effects, suggesting more complex mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Pairwise interactions explained about 1/10th as much variance as additive loci (median 2.2% per pair), contributing only a small minority of trait variance for gene expression, consistent with previous findings for organism-level traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 quantify the contribution of epistasis to expression variance. The median 2.2% variance per interaction (C106) and the 1/10th ratio to additive effects (C105) are clearly stated. The consistency with organism-level traits (C107) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Only three epistatic pairs existed where neither locus had additive effects (p>0.05), overlapped hotspots, or was on the same chromosome as the target gene. Even these explained only 2.6-3.6% variance, leading to the conclusion that purely epistatic pairs contribute minimally to transcriptome variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide strong evidence against substantial purely epistatic effects. The stringent criteria for defining purely epistatic interactions (C109) and the small number found (3 pairs) support the conclusion (C111). However, the possibility of false negatives due to low power for detecting interactions without main effects should be acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C18",
+      "C20",
+      "C113"
+    ],
+    "result": "The study's findings on trans-eQTL predominance are consistent with prior work in humans and yeast, where genome-wide estimates show trans-eQTLs contribute 1.8-3.4-fold more to expression variance than local eQTLs, and nearly every gene is influenced by eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C18, C20, and C113 provide appropriate context from prior literature. The citations support the claims about human eQTL studies (C11, C12, C13) and the consistency of the current findings with human estimates (C113, C20). The comparison to previous yeast studies (C18) highlights the increased power of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Six of eight transcription factors with predicted damaging variants (GAT1, HMS1, PUT3, RFX1, SRD1, TBS1) were located in hotspots. Previous work linked RFX1's premature stop codon to reduced repressor activity and GAT1 variation to wine production traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate enrichment of TFs with damaging variants in hotspots. The 6/8 ratio is striking, though the small sample size limits statistical power. The citations to prior functional work (C52, C53) provide independent validation for at least two of these hotspots.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C60",
+      "C118"
+    ],
+    "result": "While most known causal variants underlying yeast eQTL hotspots are coding variants, many trans-acting hotspots are caused by variation in genes other than transcription factors, illustrating the importance of indirect trans effects through altered cellular networks and physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C118 are supported by the examples provided (HAP1, MKT1, GPA1, AMN1, SSY1 as coding variants; ERC1 as a non-TF hotspot). The enrichment for TFs (C46) combined with the existence of non-TF hotspots (C118) provides a balanced view of hotspot mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Many additive eQTLs, including several major hotspots, were involved in few or no epistatic interactions. Therefore, epistatic interactions cannot be assumed for all additive loci, and the most fruitful detection strategy is to test loci with additive effects for interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120 and C121 draw appropriate conclusions from the epistasis analysis. The observation that not all additive loci show epistasis (C120) is important for understanding genetic architecture and for designing future studies (C121).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Trans-eQTL hotspots have been observed across many organisms (plants, nematodes, mice, rats, humans), with recent human studies identifying SNPs affecting multiple genes in trans. However, current human studies remain underpowered, and the observation that hotspots are the main source of trans variation required the high power of the present yeast dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 appropriately contextualize the findings within the broader literature. The extensive citations (C122-C127) support the generality of hotspots across species. The acknowledgment of limited power in human studies (C128, C129) is appropriate and suggests the yeast findings may foreshadow future human discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The hotspot loci provide evidence that some regulatory variants can have widespread transcriptome effects through strong direct effects on core genes and weak indirect effects on peripheral genes, consistent with the omnigenic model. Hundreds of hotspots may exist in the human genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 relate the findings to the omnigenic model. While the data support widespread effects from hotspots (C131), the claim that this is 'consistent with' the omnigenic model requires careful interpretation. The omnigenic model posits that local eQTLs at any gene percolate through networks, but the data show most local eQTLs lack trans effects (C133, C134), which argues against the simplest form of the model. The speculation about hundreds of human hotspots (C132) is reasonable but uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Although local eQTLs were detected for most genes, the majority had no detectable trans effects within the study's statistical power. Given sufficient power to detect weak indirect effects, the authors conclude most local eQTLs have no meaningful downstream consequences, and trans-eQTL effects preferentially arise from certain gene classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 draw important conclusions about the genetic architecture of gene expression. The high power of the study (C22) strengthens the conclusion that absence of detected trans effects reflects true absence (C134). The citation of studies showing minimal fitness effects of modest expression changes (C135) provides independent support. The conclusion about preferential trans effects from certain gene classes (C136) is supported by the TF enrichment (C46).",
+    "result_type": "MAJOR"
+  }
+]

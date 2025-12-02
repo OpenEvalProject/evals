@@ -1,0 +1,1696 @@
+{
+  "submission": {
+    "id": "2e20a4db-f59d-4650-91e9-f6ad709449cd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:22:42.149056Z",
+    "updated_at": "2025-12-02T00:22:42.149056Z"
+  },
+  "content": [
+    {
+      "id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "submission_id": "2e20a4db-f59d-4650-91e9-f6ad709449cd",
+      "content_type": "manuscript",
+      "content_text": "# Antagonism in olfactory receptor neurons and its implications for the perception of odor mixtures\n\n## Authors\n\n- Gautam Reddy<sup>1</sup> ([ORCID: 0000-0002-1276-9613](https://orcid.org/0000-0002-1276-9613))\n- Joseph D Zak<sup>2</sup> ([ORCID: 0000-0002-3148-5325](https://orcid.org/0000-0002-3148-5325))\n- Massimo Vergassola<sup>1</sup> \u2020\n- Venkatesh N Murthy<sup>2</sup> ([ORCID: 0000-0003-2443-4252](https://orcid.org/0000-0003-2443-4252)) \u2020\n\n### Affiliations\n\n1. Department of Physics University of California, San Diego La Jolla United States\n2. Department of Molecular Cellular Biology Harvard University Cambridge United States\n3. Center for Brain Science Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNatural environments feature mixtures of odorants of diverse quantities, qualities and complexities. Olfactory receptor neurons (ORNs) are the first layer in the sensory pathway and transmit the olfactory signal to higher regions of the brain. Yet, the response of ORNs to mixtures is strongly non-additive, and exhibits antagonistic interactions among odorants. Here, we model the processing of mixtures by mammalian ORNs, focusing on the role of inhibitory mechanisms. We show how antagonism leads to an effective \u2018normalization\u2019 of the ensemble ORN response, that is, the distribution of responses of the ORN population induced by any mixture is largely independent of the number of components in the mixture. This property arises from a novel mechanism involving the distinct statistical properties of receptor binding and activation, without any recurrent neuronal circuitry. Normalization allows our encoding model to outperform non-interacting models in odor discrimination tasks, leads to experimentally testable predictions and explains several psychophysical experiments in humans.\n\n## Introduction\n\nThe olfactory system, like other sensory modalities, is entrusted to perform certain basic computational tasks. Of primary importance is the specific identification of odors and the recognition of isolated sources or objects in an olfactory scene. A typical scene in a natural environment is complex: the olfactory landscape is determined by the chemical composition of odorants released by the objects, the stoichiometry of the mixture and the physical location of the objects relative to the observer. An efficient olfactory system is expected to eliminate irrelevant background components and de-mix contextually relevant components received as a blend (Ache et al., 2016; Card\u00e9 and Willis, 2008; Gottfried, 2010; Hopfield, 1999; Howard and Gottfried, 2014; Jinks and Laing, 1999; Knudsen et al., 1993; Pentzek et al., 2007; Raguso, 2008; Riffell, 2012; Riffell et al., 2008; Riffell et al., 2014; Rokni et al., 2014; Stevenson and Wilson, 2007; Szyszka and Stierle, 2014; Thomas-Danguin et al., 2014).\n\nThe importance of filtering a complex background is shared by the olfactory and the adaptive immune systems. In the latter, lymphocytes must quickly and accurately identify a small fraction of foreign ligands in a sea of native ligands (Abbas et al., 2014). Inhibitory feedback plays a key role in meeting the challenge of a proper combination of rapidity, sensitivity and specificity (Fran\u00e7ois et al., 2013). Inhibitory interactions in the form of receptor antagonism have indeed been observed in experiments with olfactory receptor neurons (ORNs) (Oka et al., 2004; Takeuchi et al., 2009; Kurahashi et al., 1994), although it has not been quantified systematically. For instance, the response of cells expressing the mOR-EG receptor is strongly suppressed when methyl isoeugenol is delivered together with the receptor\u2019s cognate ligand, eugenol, at equal concentrations (Oka et al., 2004). Further evidence of intensity suppression and overshadowing (i.e. when one odorant makes another indiscernible) in the perception of odorant mixtures comes from psychophysical observations (Lawless, 1997; Keller and Vosshall, 2004; Doty and Laing, 2015; Thomas-Danguin et al., 2014). The importance of peripheral interactions in shaping mixture perception has been directly shown by electrophysiological and psychophysical measurements (Bell et al., 1987; Laing and Willcox, 1987; Chaput et al., 2012). However, the functional role, if any, of inhibition at the ORN level remains unknown.\n\nEach ORN expresses receptors of a particular type, which typically display broad sensitivities to different odorants, whereas each odorant binds promiscuously to receptors of many types. The axons of ORNs of a common type converge onto glomeruli, where the axon terminals form synaptic contacts with mitral and tufted (M/T) projection neurons leading to the cortex, as well as local periglomerular (PG) interneurons. The activation of an\u00a0individual glomerulus therefore represents the activation of a single ORN type. Discriminatory computations are carried out by brain regions such as the olfactory cortex, which receive combinatorial information from the entire ORN ensemble. To achieve a quantitative description of ORN inhibitory effects, it is then imperative to take their global nature into account. In other words, it is necessary to address the knowledge gap between the mixture response properties of a single ORN, the ensemble glomerular response, and ultimately its influence on odor discrimination and perception, which constitutes the goal of the present work.\n\nPrevious computational models that examined discrimination tasks have, for simplicity, assumed a linear summation model of mixture response at the ORN level (Hopfield, 1999; Koulakov et al., 2007; Zhang and Sharpee, 2016; Zwicker et al., 2016; Mathis et al., 2016; Grabska-Barwi\u0144ska et al., 2017). Conversely, our emphasis is on explicitly characterizing the ORNs\u2019 biophysical attributes, with a focus on mixture response properties. A key aspect of the model is that odorant-receptor interactions depend on two distinct features: the sensitivity to binding and the efficiency of activation after binding, respectively. Competitive antagonism occurs when a component in a mixture that binds strongly, activates the downstream transduction pathway less effectively compared to other components. While this might naively seem disadvantageous, we show how an antagonistic encoding model has inherent normalization properties, leading to superior performance in odor discrimination and identification tasks. Finally, we make an explicit connection between a variety of psychophysical observations related to the perception of odorant mixtures and inhibitory effects at the single ORN level, providing a potential neurobiological basis to perceptual phenomena.\n\n## Results\n\n### Biophysics of mammalian olfactory receptor neurons\n\nOdorants in the nasal cavity are captured by G-protein-coupled-receptors located on the cilia of ORNs. The conversion of chemical binding events into transduction currents in the cilia leads to spike signals transmitted to the brain (see Refs. [Pifferi et al., 2010; Kleene, 2008] for reviews). The signal transduction pathway is complex; here, we build a chemical rate model of the mammalian ORN meant to capture its major response properties. The model complements and extends previous work on mixture interactions (Rospars et al., 2008; Cruz and Lowe, 2013). In Figure 1A, we illustrate the transduction pathway as modeled, and present a summarized version below (see Materials and methods for details).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig1-v1.jpg)\n\n**Figure 1.:** (A) Scheme of the modeled ORN signal transduction pathway. (B) The temporal responses of an ORN to odorants $A$ (red) and $B$ (blue) delivered separately and as a mixture (magenta). (C\u2013D) The peak response of the mixture for different concentrations of $A$ and $B$. The three colored curves in (C) are plotted separately in (D) on a single axis, whose scale corresponds to $C_{A}$, $C_{B}$ and $C_{A}+C_{B}$ for $A$, $B$ and the mixture $A+B$, respectively. (E) The response latency vs odorant concentration. The red, dashed line shows the minimum possible latency due to the limiting receptor activation and cAMP production steps in the signal transduction, which varies between a few tens of milliseconds to a few hundred milliseconds depending on the particular odorant-receptor pair under consideration (Ghatpande and Reisert, 2011; Rospars et al., 2003). (F\u2013G) The Ca$^{2+}$-based adaptation properties of the biophysical model. In (F) the first odorant pulse at $t=0$\u00a0is followed by a second pulse at each of the four shown times in separate trials. Full response is recovered after a few tens of seconds. (G) The peak response of a pulse (solid) and a second pulse (dashed) delivered 10 s later against the pulse duration of both pulses.\n\nThe binding of an odorant to a receptor induces the activation of the odor-receptor complex via a two-step process. For an odorant $X$, its interactions at the receptor level are then represented by a two-step process:\n\n$$\nR+X\u21cc\u03ba_{1}RX\u21cc\u03ba_{2}RX^{\u2217}\u00a0,\n$$\n\nwhere $\u03ba_{1}$ and $\u03ba_{2}$ are the ratios of backward to forward rates for the binding and the activation steps. R, RX and RX$^{\u2217}$ represent unbound, bound inactive and bound activated receptors, respectively. Activated complexes convert ATP into cAMP\u00a0molecules via adenylyl cyclase III. The rate of production of cAMP is assumed independent of the available ATP (which is in excess), and is therefore proportional only to the number of activated receptors. The cAMP molecules diffuse locally and cooperatively open nearby cyclic-nucleotide-gated (CNG) channels permeable to Ca$^{2+}$ and Na$^{+}$ ions. Since CNG channels are distributed uniformly along the cilia (Flannery et al., 2006; Takeuchi and Kurahashi, 2005), we ignore the time required for cAMP to diffuse from its production site to the CNG channel. CNG channels have four binding sites for cAMP that exhibit allosteric cooperativity, which leads to nonlinear response functions of the Hill form (Segel, 1993) and constitutes the first stage of signal amplification in the ORN. The generated Ca$^{2+}$ current is then proportional to the number of fully bound CNG channels and is exchanged out of the cell at a constant rate through Na$^{+}$/Ca$^{2+}$ exchangers. Ca$^{2+}$ ions open Cl$^{\u2212}$ channels further downstream, which produces an outward amplifying Cl$^{\u2212}$ current (Boccaccio and Menini, 2007). Spike firing, in proportion to the current, follows. Lastly, ORN adaptation occurs due to the subsequent blocking of the CNG channels by a Ca$^{2+}$-calmodulin complex.\n\nDespite the complexity of the transduction model, the specific identity of odorants plays a role only at the level of receptors (except for masking agents, described below). Odorants are characterized by two parameters (mathematically defined by (Equation 15) in the Materials and methods): the sensitivity, $\u03ba^{\u22121}=\\frac{1+\u03ba_{2}}{\u03ba_{1}\u03ba_{2}}$, which controls the affinity of $X$ to the receptor, and the activation efficacy, $\u03b7$, which combines $\u03ba_{2}$ with parameters of downstream reaction steps to measure the current produced by $X$ once bound. Numerically integrating the set of coupled rate equations presented in the Methods yields the temporal firing rate response of the ORN to pulses of odorant molecules and their mixtures at various concentrations (Figure 1B\u2013D). For single odorants, the model successfully captures the strongly non-linear peak response for different concentrations of the odorant, the latency in response (Rospars et al., 2003), the quadratic rate of cAMP production (Takeuchi and Kurahashi, 2017), and calcium-based adaptation (Kurahashi and Menini, 1997) (Figure 1E\u2013G). Since our focus in subsequent analysis will be on the peak response, its form is reproduced here (see Materials\u00a0and\u00a0methods for details) for a monomolecular odorant delivered at a concentration $C$ for a fixed, short duration:\n\n$$\nF_{C}=\\frac{F_{max}}{1+(\\frac{1+C/\u03ba}{\u03b7C/\u03ba})^{n}}.\n$$\n\nHere, $n$ is the Hill coefficient and $F_{max}$ is the maximum physiologically possible firing rate, which depends on parameters related to the transduction pathway downstream of receptor activation and can be rescaled to unity. The maximal response at saturating concentrations, $F_{\u221e}=F_{max}/(1+\u03b7^{\u2212n})$ is truncated below $F_{max}$ by $\u03b7$, which controls the equilibrium level of activated receptors.\n\nOn stimulation with more than one chemical species, the different species bind and activate the ORN in distinct ways. Its peak response to a pair of odorant molecules $A$ and $B$ is a special case of the general formula (Equation 14) derived in the Materials\u00a0and\u00a0methods, and reads:\n\n$$\nF_{C_{A}+C_{B}}=\\frac{F_{max}}{1+(\\frac{1+C_{A}/\u03ba_{A}+C_{B}/\u03ba_{B}}{\u03b7_{A}C_{A}/\u03ba_{A}+\u03b7_{B}C_{B}/\u03ba_{B}})^{n}}\u00a0.\n$$\n\nStrong amplification by the ion channels render the mixture response hyper-additive at concentrations close to the sensitivity threshold; at higher concentrations, as the receptors become saturated and the odorants compete for limited binding sites, the\u00a0response turns hypo-additive. The reduction in response due to competitive antagonism is determined by the binding affinity of the weaker odorant (with lower activation efficacy) relative to the stronger one.\n\nBefore further theoretical analysis, it is worth clarifying a few points. One may question the relevance of introducing a separate $\u03b7$ parameter, since the saturating ORN response could instead be due to limiting factors downstream of receptor activation. Our assumption is motivated by observations made from spike recordings of single rat ORNs to odorant mixtures, where the responses of the same ORN to saturating concentrations of different odorants yield very different firing rates (Rospars et al., 2008).\u00a0Since odorant-ORN specific interactions occur only at the receptor, the differences at saturation must be due to differences in receptor activation efficacy. Further evidence comes from examining the minimum latency of spiking response to different odorants at saturating concentrations (Figure 1E), which can range from a few hundred milliseconds to a few seconds depending on the odorant-ORN pair (Rospars et al., 2003). The lifetime of odorants bound to a receptor is short (of a few milliseconds) and the probability of activation of a particular G-protein in a 50 ms interval at saturating concentrations is low (Bhandawat et al., 2005). These observations strongly suggest that the latency arises due to a relatively slow build-up of cAMP over many low-probability activation events. The differences in latency at saturating concentrations, when all receptors are bound, is therefore most likely due to differing activation probabilities, in line with our assumptions on $\u03b7$. Note that even though both the sensitivity $\u03ba^{\u22121}$ and the activation efficacy $\u03b7$ depend on $\u03ba_{2}$ (Equation 15), the low probability of activation, which is reflected in the limit $\u03ba_{2}\u226b1$, implies $\u03ba^{\u22121}$ and $\u03b7$ depend separately on $\u03ba_{1}$ and $\u03ba_{2}$.\n\nWhile a purely competitive model of mixture interactions captured many cases from previous experiments on ORN mixture responses, a significant fraction showed discrepancies (Rospars et al., 2008). Non-competitive interactions are particularly manifest in synergy or suppression, which correspond to the mixture response curve lying above or below the individual response curves for each odorant, respectively, neither of which is possible with pure competition. Below, we show how non-competitive antagonistic effects, namely masking, can generate those effects. Non-competitive inhibition due to PI3K-dependent antagonism (Ukhanov et al., 2010) is beyond the scope of this paper.\n\n### Masking\n\nMasking is the phenomenon of non-specific suppression of CNG channel currents (Kurahashi et al., 1994; Takeuchi and Kurahashi, 2017). Experimental evidence suggests that masking agents disrupt the lipid bilayer on the cell membrane, and thereby alter the binding affinity of cAMP to the CNG channels (Takeuchi et al., 2009). Masking agents can also be odorants (like amyl acetate), that\u00a0is, they also bind to receptors and excite the transduction pathway. We suppose that the agents bind to sites on the lipid bilayer, and that multiple masking agents compete for the available sites. Similar to (Equation 1), the effects of a masking agent are determined by its affinity $K_{M}$ for the masking binding sites, and a masking coefficient $\\mu$ (lying between 0 and 1), which measures its inhibitory effects once bound (see Materials\u00a0and\u00a0methods). The latter quantifies the lowered affinity of cAMP for the CNG channels when a masking agent is bound in the vicinity of the channel. Since the activation efficacy $\u03b7$ that appears in (Equation 2) quantifies the effective rate of signal transduction, the effect of a lowered affinity appears as a lowered value for $\u03b7$. Specifically, we show that $\u03b7\u2192(1\u2212\\muM~)\u03b7$, where $M~$ is the fraction of masking sites occupied by the masking agent. It follows that the firing rate at saturating concentrations, which depends on $\u03b7$, is reduced (see [Equation 19] in Materials and methods).\n\nThe model above (and detailed in the Materials and methods) reproduces qualitative features of odorant suppression observed in experiments (Kurahashi et al., 1994; Takeuchi et al., 2013) (Figure 2A,B). We stress that the presented fits serve as qualitative consistency checks; more experimental data on masking agents is required to verify the specifics of the model. Importantly, we show that both suppression and, counterintuitively, synergy are possible mixture interactions that could arise due to masking (Figure 2C,D), both of which have been observed in experiments with single ORNs (Rospars et al., 2008). To define suppression and synergy, we remark that the response curve of the mixture, taking into account competitive binding alone, always lies between the response curves of the individual components. This property is a simple consequence of the fact that the number of activated receptors for a mixture (at a particular total concentration) can never be larger/smaller than the most/least effective odorant delivered alone at the same total\u00a0concentration. Suppression can then be defined as the situation when the mixture response curve is lower than the lowest response curves among the components while synergy occurs when the mixture response is higher than the highest response curve. In our\u00a0model, synergy is qualitatively due to the taming of suppressive effects: for instance, let us consider a component $A$ that binds masking sites more weakly than $B$, yet it is a stronger suppressor. If $A$ binds and activates the ORN more strongly than\u00a0$B$, the net effect of mixing $A$ and $B$ is to reduce the suppressive masking effect of $A$ and unmask its strong activation properties, which can exceed the individual response curves as in Figure 2C.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig2-v1.jpg)\n\n**Figure 2.:** (A) The dashed line shows the response predicted by our model with only the first odorant (delivered during the red time window), while the solid line shows the predicted response when a second pulse of a highly masking odorant is delivered shortly after during the green window (plotted as in (Kurahashi et al., 1994)). (B) Experimental data on the masking effect of various masking agents (circles) and fits to theory (lines). Blue: 2,4,6-trichloroanisole, red: 2,4,6-tribromoanisole, yellow: phenol, Magenta: 2,4,6-trichlorophenol, cyan: trichlorophenetole, black: L-cis diltiazem, green: geraniol. (C\u2013D) Mixture response curves displaying synergy (C) and inhibition (D). The curves are plotted as in Figure 1D.\n\n### Olfactory encoding and antagonism\n\nEquipped with the biophysical model above, we now proceed to investigate the functional consequences of antagonism. To this end, we first define a model of olfactory encoding that focuses on competitive antagonism and introduce simplifying assumptions to highlight the main ideas.\n\nAn odorant is defined by two $N$-dimensional vectors of sensitivities $\u03ba^{\u22121}$ and activation efficacies $\u03b7$ across $N$ distinct ORN receptor types. We take $N=250$, which is large enough to generalize our results across species. Parameters for different odorants are drawn independently from log-normal probability distributions (see Materials\u00a0and\u00a0methods), although our main conclusions below do not depend on their specific form. The width of the $\u03ba^{\u22121}$ distribution reflects the broad sensitivities of odorants, spanning about six orders of magnitude (Saito et al., 2009).\n\nAn odorant caught in a sniff elicits a response in the glomerular ensemble whose individual activations vary in magnitude and progress differently in time. We focus on the vector $y$, which represents the peak responses (Equation 2) to the odorant\u00a0for the different ORN types. The statistics of the glomerular response is encoded in the distribution of $y$, which is directly related to the distribution of $\u03b7$ for saturating concentrations of the odorant.\n\nA straightforward generalization of the expression for the binary mixture response from (Equation 3) allows us to write the mixture response for $K$ components in terms of effective mixture parameters $\u03ba_{mix}$ and $\u03b7_{mix}$ (which\u00a0replace $\u03ba$ and $\u03b7$ in [Equation 2]):\n\n$$\n\u03ba_{mix}^{\u22121}=\\sumi=1K\u2009\\beta_{i}\u03ba_{i}^{\u22121}\u2009;\u2003\u03b7_{mix}=\u03ba_{mix}\\sumi=1K\u2009\u03b7_{i}\\beta_{i}\u03ba_{i}^{\u22121}\n$$\n\nwhere $\\beta_{i}$ is the fraction of component $i$ in the mixture. We first consider for simplicity an equiproportionate mixture, and then show below that this is not a limitation. The key observation made here is that, since sensitivities are broadly distributed, we typically have one term dominating the sum in the expression for $\u03ba_{mix}^{\u22121}$ (see Figure 3B). If we suppose that this dominant term is $\u03ba_{M}^{\u22121}$, we may write:\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig3-v1.jpg)\n\n**Figure 3.:** (A) The response curves of a collection of 10 ORN types to an odorant. The vector $y$ of continuous levels of response at a particular concentration (red, dashed line) yields a binary vector $z$ of activation by imposing a threshold $\\tau$ (blue, dashed). (B) For a particular ORN type, the sensitivities of the five most sensitive odorants in a mixture relative to the sensitivity of the most sensitive odorant are shown. Blue, orange and green colors correspond to the number of components in the mixture, $n_{mix}=$ 10, 50 and 100 respectively. (C) The relative error due to the approximation in (4) for $\u03ba_{mix}^{\u22121}$ (red) and $\u03b7_{mix}$ (blue) as a function of $n_{mix}$. Solid lines refer to an equiproportionate mixture. Conversely, dashed lines refer to the case where concentrations are drawn uniformly in log scale over six orders of magnitude. The comparison indicates that our approximations in the main text become even better when the concentrations are variable.\n\n$$\n\u03ba_{mix}^{\u22121}\u2248\\beta_{M}\u03ba_{M}^{\u22121}\u2009;\u2003\u03b7_{mix}\u2248\u03b7_{M}\u2009,\n$$\n\nfor typical values of $\u03b7_{M}/\u03b7_{i}$ for $i\\neqM$. The expression for $\u03b7_{mix}$ above follows from (Equation 4) when we approximate the sum in the expression for $\u03b7_{mix}$ as $\u03b7_{M}\\beta_{M}\u03ba_{M}^{\u22121}$; multiplying\u00a0this sum with the expression for $\u03ba_{mix}$ in (Equation 5) then yields the approximation. Relation (Equation 5) still holds for complex mixtures as the broad width of the sensitivity distribution ensures the dominance of one of the $\u03ba$\u2019s even for relatively large numbers of components. In Figure 3C, we show that the approximations in Equation 5 result in a relative error in $\u03ba_{mix}^{\u22121}$ and $\u03b7_{mix}$ of about $\u223c40%$ for equiproportionate mixtures with over a hundred components. In other words, it is highly likely that only one component in the mixture occupies the receptors of ORNs of a particular type, and thus the response from these ORNs is determined by the activation efficacy of that specific component.\n\nIn order to measure the strength of competitive antagonism, we introduce the antagonistic factor $\u03c1$. To define $\u03c1$, we note that an odorant $A$ competitively antagonizes odorant $B$ (at equal concentrations) when its sensitivity exceeds that of $B$\u00a0($\u03ba_{A}^{\u22121}>\u03ba_{B}^{\u22121}$), yet its activation efficacy is lower than $B$ ($\u03b7_{A}<\u03b7_{B}$). A quantification of this relationship is the Pearson correlation coefficient between binding and activation strengths across the ORN ensemble:\n\n$$\n\u03c1\u2261Corr(log\u2061\u03ba^{\u22121},log\u2061\u03b7)\u00a0,\n$$\n\nwhere the logarithms conveniently account for the broad range of the two variables.\n\nLet us first consider the extreme case of $\u03c1=1$, when there is no antagonism as the odorant that binds best also has the strongest activation. This corresponds to an ORN behaving as a logical OR gate, a feature shared by any additive model of mixture\u00a0response. From Equation 5, the consequence is that $\u03b7_{mix}$ always takes the maximum value of $\u03b7$ in the mixture, which significantly biases $\u03b7_{mix}$ toward higher values. To see this, we define the sparsity $p$, that\u00a0is, the fraction of glomerular responses above a certain threshold $\\tau$ for an odorant at saturating concentrations; then, the fraction above $\\tau$ for a mixture with $K$ components is given by $1\u2212(1\u2212p)^{K}$. Thus, for any additive model of mixture response, the sparsity quickly saturates to one as $K$ increases and all information about individual components is lost.\n\nOn the contrary, when $\u03ba^{\u22121}$ and $\u03b7$ are independent, that\u00a0is, $\u03c1=0$, $\u03b7_{M}$ is independent of the constraint $\u03ba_{M}^{\u22121}\u226b\u03ba_{i}^{\u22121}$ ($i\\neqM$) implicit in Equation 5 and the distribution of $\u03b7_{mix}$ precisely matches the distribution of the single component $\u03b7_{M}$. The $\u03c1=0$ condition of decorrelation between $\u03ba^{\u22121}$ and $\u03b7$ is important for the argument since, even though Equation 5 holds generally, the constraint that $M$ is the most sensitive odorant biases the statistics of $\u03b7_{mix}$ for $\u03c1>0$. Since the entire distribution of activations across the ORN ensemble is invariant to the number of components in the mixture, we conclude that the statistics of activation is conserved as the complexity of the mixture increases, that\u00a0is, the population response is \u2018normalized\u2019 (Figure 4A\u2013C, Figure 4\u2014figure supplement 1). Remarkably, such a normalization of the mixture response is a direct consequence of antagonism in receptor encoding, independent of any neural circuitry. The upshot is that a sparse representation for a single odorant typically remains sparse for a complex mixture, allowing for improved performance in the detection of individual components (as quantified in the next Section).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig4-v1.jpg)\n\n**Figure 4.:** (A) The fraction of active glomeruli as the number of odorants in the mixture, $n_{mix}$, increases, each of which individually activates 30% of the glomeruli ($\u03c1=0,0.1,0.2,0.5,1$ from the bottom to the top curves). (B) The glomerular pattern of activation for $\u03c1=0$ and $\u03c1=1$ for three values of $n_{mix}$, shown to contrast the sparsity of their glomerular responses. (C) The distribution of the activation efficacy $\u03b7_{mix}$\u00a0over different ORN types for $\u03c1=0$ (cyan) and $\u03c1=1$ (blue) as $n_{mix}$ increases, where $\u03b7$ for each component is drawn from a log-normal (left) or an exponential distribution (right). The distribution is largely invariant w.r.t $n_{mix}$ for $\u03c1=0$, whereas it gets increasingly biased toward higher values for $\u03c1=1$. Normalization is independent of the sparsity of activation (see Figure 4\u2014figure supplement 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Normalization is independent of the sparsity of activation: The fraction of active glomeruli against the number of odors in the mixture, $n_{mix}$, is shown as in Figure 4A for sparsity $p$ = 0.1 and $p$ = 0.2.\n\nNotably, the above arguments rely solely on the broad distribution of the sensitivities, which enables the approximation in Equation 5. Despite the $\u223c40%$ error in this approximation, our arguments for normalization presented above still hold for a mixture with over a hundred components, as shown in Figure 4A. An important consequence is that the approximation becomes even better when the concentrations of the components are allowed to be different, as any variation in the $\\beta_{i}$\u2019s makes the distribution of each term $\\beta_{i}\u03ba_{i}^{\u22121}$ even broader. This is confirmed by the plots in Figure 3C. The result holds generally true for any distribution of $\u03b7$ and any broad distribution of $\u03ba^{\u22121}$; their log-normal forms are used here only to simplify subsequent calculations (Figure 4C).\n\nStructural constraints at the receptor level, however, are likely to hamper a perfect decorrelation $\u03c1=0$. Nevertheless, normalization does not require an exact equality and its effects fade gradually as $\u03c1$ increases (see Figure 4A). The extent of\u00a0the advantageous effects of normalization (and the $\u03c1$ value) depends on the sparsity of activation for single odorants, the number of components in the mixture and their properties. Indeed, the effect of normalization on the detection of an odorant in the presence of a large number of other odorants depends on the balance between two opposing factors. On the one hand, normalization induces an advantageous effect of maintaining sparsity and preventing saturation of the bulb, leading to easier segmentation. On the other hand, the number of active glomeruli corresponding to each odorant is greatly reduced, which makes detection harder.\n\n### Performance in discrimination and identification tasks\n\nTo explore how our model performs in discrimination tasks, we next compute the performance of the antagonistic encoding model described above in detecting a known odorant from a large background of unknown odorants, that\u00a0is, figure-ground segregation (Rokni et al., 2014). The capacity of an optimal Bayesian decoder in the task depends on the mutual information $I(T;y)$ (in bits) that the glomerular pattern $y$ preserves about the presence ($T=1$) or absence ($T=0$) of the target. To simplify the calculation of $I(T;y)$, we convert the vector of continuous values $y$ into a binary vector $z$ by applying a threshold $\\tau$ that partitions the glomeruli into two subsets, active and inactive glomeruli (see Figure 3A). In general, any continuous read-out is demarcated into a few discrete, distinguishable states depending on the level of intrinsic noise in the system. Taking more graded states into account will not change the qualitative result of our calculation. Specifically, as we show\u00a0below, the relative performance between an antagonistic and a non-antagonistic model is still dominated by the loss of information due to glomerular saturation, which occurs independently of the number of gradations in our read-out.\n\nFigure 5A demonstrates that an encoding model with significant antagonism ($\u03c1=0$) contains more information than a non-antagonistic model ($\u03c1=1$) as the background increases in complexity. The results are robust to the presence of significant internal variability in the transduction pathway of an ORN (Figure 5\u2014figure supplement 1). When the number of odorants in the mixture is small, the glomerular pattern for the non-antagonistic model is not saturated and preserves information about the glomeruli activated by each component. For a specified sparsity $p$ (as defined in the previous section as the fraction of glomerular responses above the threshold $\\tau$ at high concentrations), the non-antagonistic case is thus advantageous when the mixture complexity is less than $\u223c1/p$. However, for mixtures of higher complexity, it is useful to introduce correspondingly higher levels of antagonism in order to prevent saturation and still maintain an ability to segment out different components. To further emphasize this point, for different values of $p$, we compute the level of antagonism that maximizes information transmission when the background varies both in composition and complexity (see Materials and methods). We find that for experimentally observed levels (0.1\u20130.3) of sparsity (Saito et al., 2009; Lin et al., 2006; Soucy et al., 2009; Vincis et al., 2012), it is always advantageous to incorporate non-zero levels of antagonism into odorant encoding (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) Figure-ground segregation: (A) The mutual information between the presence of a target odorant and the glomerular activation vector $z$ for the antagonistic factor (13) $\u03c1=0$ (cyan), 0.5 (magenta), 1 (blue) with varying number of background odorants in the mixture. (B) The optimal value $\u03c1^{\u2217}$ of the antagonistic factor $\u03c1$ that maximizes mutual information when the number of background odorants vary from trial\u00a0to trial for different sparsity levels $p$ i.e. the fraction of glomeruli that are activated. The yellow region marks experimentally observed levels of sparsity. The inset shows how the mutual information varies for three values of the sparsity. (C\u2013D) Component separation: ROC curves (the hit rate vs the number of false positives (FPs)) are shown for three values of $\u03c1$ (color scheme as in panel A) and two relevant values of $p$. Inset: Same curves in semi-log scale. The positive effect of antagonism is retained in the case where there is significant internal noise (see Figure 5\u2014figure supplement 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Performance is largely independent of internal noise: The accuracy of a linear classifier in detecting a target odorant is plotted against the number of background odorants for $\u03c1=0$ (cyan) and $\u03c1=1$ (blue), where an effective internal noise of magnitude $\u03f5$ is added (see Materials\u00a0and\u00a0methods).The curves with solid circles correspond to $\u03f5=0$ and the open squares correspond to $\u03f5$ = 0.4.\n\nWe measure the performance of a linear classifier in component separation, the task of identifying several known components from a mixture, for different levels of antagonism. Component separation is qualitatively different as the information about the other known odorants can be recurrently exploited to extract more information about an odorant\u2019s presence or absence (Grabska-Barwi\u0144ska et al., 2017). First, a linear classifier is trained to individually identify 500 known odorants in the presence of other odorants from the set. In the test phase, a mixture which contains 1 to 20 known components, uniformly chosen, is delivered. The hit rate measures the fraction of odorants that were correctly identified, while the false positives (FPs) is the number of odorants out of the 500 that were not actually present but were declared to be present. Generalized Receiver Operating Characteristics (ROC) curves are drawn by varying the detection threshold of the linear classifier for each odorant (Figure 5C\u2013D). We find again that antagonism in receptors yields superior performance, independent of sparsity.\n\n### Antagonism and olfactory psychophysics\n\nPsychophysical observations related to odor perception were the primary investigative tools before neurobiological studies became prominent in the last few decades. Formulating an explicit connection between the vast body of literature on olfactory psychophysics and recent discoveries in neurobiology remains a challenge, particularly since perception is influenced by interactions throughout the olfactory sensory pathway (Jinks and Laing, 1999; Su et al., 2009; Grossman et al., 2008; Wilson and Sullivan, 2011). Various direct and indirect measurements (Bell et al., 1987; Laing and Willcox, 1987; Chaput et al., 2012) strongly hint at the role of receptor-level interactions, although a mechanistic explanation for how these effects may arise has not been proposed. Here, we examine the possible relation between antagonism and observations from psychophysical experiments on the perception of odor mixtures. The upshot is that the combination of competitive antagonism and masking supports the diverse range of well-established psychophysical effects enumerated hereafter.\n\nSpecifically, the list of psychophysical effects relevant here is as follows (see (Lawless, 1997; Keller and Vosshall, 2004; Doty and Laing, 2015; Thomas-Danguin et al., 2014; Takeuchi et al., 2013)). (1) Inhibition and synergy: The former is the strong reduction of perceived intensities when two odorants are mixed, usually at high concentrations; synergy is occasionally observed, namely at low concentrations. (2) Masking: When the concentration of a masking agent, such as 2,4,6- trichloroanisole (called cork taint), is increased, the perceived intensity of the odorant decreases. (3) Symmetric and asymmetric suppression: When two odorants of equal perceived intensities are added, they typically suppress each other in a striking reciprocal fashion so that the perceived intensity of both odorants is still equal but sharply lowered. Asymmetric suppression (sometimes called counteracting), where the intensity of one of the odorant is lowered more than the other, is observed occasionally. (4) Overshadowing: The loss of perception of a less intense odorant when a more intense odorant is present in a mixture.\n\nTo examine the prevalence of inhibition and synergy, we estimate the inferred concentration (or perceived intensity) of a component in the mixture as the concentration at which those precise number of glomeruli corresponding to the odorant would have been\u00a0activated (i.e. above a fixed threshold) had that odorant been delivered alone. In Figure 6A, we show that this simple algorithm leads to an unbiased estimate of the concentration over a broad range of concentrations. Figure 6A further demonstrates that inhibition and synergy naturally arise from competitive antagonism. Stronger inhibition arises at higher concentrations as the glomeruli that are otherwise activated by an odorant when delivered alone are antagonized by the second odorant, leading to lower perceived intensity. At lower concentrations, competitive antagonism plays a limited role; instead, cooperative effects in the ORN transduction pathway result in hyper-additivity, which pushes a few glomeruli above the activation threshold and gives rise to a small synergistic effect. Masking is also readily explained by our model, where the inferred concentration (based on the activated glomeruli) is below the actual concentration as the masking agent\u2019s concentration increases (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig6-v1.jpg)\n\n**Figure 6.:** (A) Inhibition and synergy: The inferred vs the true concentration for a single odorant $A$ (solid, red line) or with an additional odorant $B$. Blue, magenta, cyan: $\u03c1=1,0.5,0$, as defined in (5). Green line: the inferred concentration when $B$ has a high masking coefficient $\\mu_{B}$, as defined in (18) and (20). In all panels, the sparsity of glomerular activation is $p=0.5$. (B) Masking: The inferred concentration of $A$ for increasing concentrations of a masking agent $B$ (blue, orange, green: $\\mu_{B}=0.4,0.7,1$). (C) Symmetric and asymmetric suppression: The fraction of suppressed glomeruli of $A$ ($B$) is plotted in green (yellow) against the ratio of concentrations of $A$ and $B$. Solid/dashed lines: $\u03c1=0,1$. The red line shows the fraction of suppressed glomeruli when $B$ also has a propensity for masking. (D) Overshadowing: The probability of presence of $B$ as computed by the logistic regressor against the ratio of $A$ and $B$ concentrations. The dashed lines show the probability of presence of $A$. Color code is as in panel (A). The above results are independent of the sparsity of activation (see Figure 6\u2014figure supplement 1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34958/elife-34958-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Predicted psychophysical effects of antagonism are independent of the sparsity of activation: The results as shown in Figure 6 for sparsity $p=0.25$ to show that our conclusions are independent of the sparsity level.\n\nTo quantify suppression, we use the fraction of suppressed glomeruli, defined as the fraction of glomeruli which are inactive in the mixture of $A$ and $B$, yet are activated in isolation by odorant $A$($B$) and not activated in isolation by odorant $B$($A$). Figure 6C shows that the reciprocal suppression of intense binary mixtures is conspicuously absent for a non-antagonistic model. To see this, let us suppose that each odorant individually activates half of all glomeruli (i.e. the sparsity $p$ = 0.5). Note, $A$ is more sensitive than $B$ to half (on average) of all the glomeruli that $B$ activates. Then, for $\u03c1=0$, when they are delivered together at equal concentrations, $A$ binds better to half the otherwise active receptors of $B$, activating half of them and suppressing the other half. Since $B$ has precisely the same effect on $A$, each odorant reciprocally suppresses the other. On the other hand, when there is no antagonism, $A$ still binds better to half the active receptors of $B$, but now\u00a0activates all of them, resulting in no suppression. A strong asymmetric suppressive effect is observed when one of the odorants has a capacity for masking.\n\nFinally, to quantify overshadowing, we train a logistic regressor to identify a set of known odorants as in Figure 5C\u2013D. A weak odorant $B$ is delivered along with a stronger odorant $A$ at varying concentration ratios. The probability of presence of $B$ ascomputed by the regressor is compared against the the ratio of concentrations of $A$ and $B$. When the probability of presence goes below the detection threshold (set at 0.5), $B$ is no longer detected and is \u2018overshadowed\u2019. Figure 6D demonstrates that overshadowing for binary mixtures is intensified by antagonism, in spite of its superior discriminatory performance for more complex mixtures.\n\n## Discussion\n\nNatural smells are due to mixtures of many chemicals, yet the need for tight stimulus control in experiments often leads to a focus on individual molecular entities. In this paper, we have characterized mixture interactions with a realistic biophysical model. Importantly, we explored how these interactions can naturally lead to \u2018normalization\u2019 of the glomerular responses, improve the coding capacity of the olfactory system, and account for many observed perceptual phenomena.\n\nThe odorant receptor dynamics in our model is based on a two-step activation process analogous to previous works in vertebrates (Rospars et al., 2008; Cruz and Lowe, 2013) and the fly (Nagel and Wilson, 2011). A key aspect of two-step activation is that it separates sensitivity of ligand binding from activation efficacy (del Castillo and Katz, 1954). At the structural level, this distinction is consistent with observations on the binding and activation of GPCRs (Strange, 2008). The common and parsimonious approximation of a single step (parametrized by a $K_{d}$ for affinity) in binding models, appears too drastic. In contrast to earlier work, we explicitly model the pathway downstream of receptor activation (Pifferi et al., 2010; Kleene, 2008), which features the successive steps of cAMP production, allosteric opening of CNG channels, and ultimately current fluxes. This provides a biophysical basis to the cooperativity effects that were previously introduced ad hoc. Moreover, this explicit formulation allows us to go beyond pure competitive antagonism, which was reported to explain about half the cases and thus requires generalizations (Rospars et al., 2008). In particular, non-competitive antagonistic effects, such as our masking model for the non-specific suppression of the cyclic nucleotide-gated channels permit us to account for synergy and inhibition effects that are impossible for competitive antagonism.\n\nA major focus of our work is the functional role of antagonistic interactions. Antagonistic reduction of glomerular activation can be seen as a form of \u2018normalization of activity\u2019. Normalization with increasing stimulus intensity or complexity is common\u00a0in neural systems (Carandini and Heeger, 2011) and has been thought of as a circuit property that involves inhibitory synaptic interactions (Wachowiak et al., 2002; Cleland et al., 2007). In the olfactory system, this was elegantly demonstrated in the Drosophila antennal lobe, where activation of increasing number of receptors (or glomeruli) proportionally increases inhibition provided to any one glomerular channel (Olsen et al., 2010). Similarly, in fish and mouse olfactory bulbs, increasing stimulus intensity is thought to recruit populations of interneurons (namely, short axon cells) that inhibit principal cells, leading to blunted activity for higher stimulus intensities. In an extreme example of this, a mouse with a particular receptor forcibly expressed widely has remarkably similar activation of the mitral cell population despite the massive increase in the input when the cognate odorant is presented (Roland et al., 2016).\n\nThe key insight from our model is that normalization is granted at the level of receptors by purely statistical reasons, without any additional circuit burden. In the limit of full statistical decorrelation between ligands\u2019 binding affinity and activation\u00a0efficacy, the distribution of activations across the ORN ensemble for a mixture coincides with that of a single monomolecular odorant, a property which has been confirmed in the fly (Stevens, 2016). Why would we need normalization if the optimal way to preserve information is to simply copy the input signal, i.e. have ORNs functioning as pure relays? Copying however requires an unrealistically broad dynamic range, especially for the processing of natural mixtures, where the concentration and the number of components can fluctuate wildly. Normalization at the first layer in the sensory pathway helps avoid early saturation effects that would confound the entire processing pathway. However, nonlinear distortions of the signal do lead to loss of information, and the balance between the two effects calls for their quantification. Our information theoretic calculations demonstrate that detection of a target odorant within a complex mixture is enhanced by antagonistic interactions, and that holds for a wide range of receptor tuning widths, that\u00a0is, the average number of activated glomeruli per odorant.\n\nSome of the predictions from our analysis can be tested experimentally. Direct measurements from mammalian ORNs have been obtained in vitro in many biophysical studies studying signal transduction (Lowe and Gold, 1995; Bhandawat et al., 2005). Although such preparations offer excellent access for measurement, there is significant uncertainty about mimicking the native conditions in terms of delivery of odors (airborne vs solution) as well as the ionic composition of the perfusion medium, which will affect response amplitudes. Electrical recordings from individual ORNs are difficult and have low yield, but have offered tantalizing hints on different nonlinear interactions (Rospars et al., 2008). More extensive data will likely have to rely on glomerular imaging methods (Bozza et al., 2004; Rokni et al., 2014; Mathis et al., 2016), which offer robust signals and extended recording times to obtain measurements at different concentrations and mixture ratios (Soucy et al., 2009). Here too, there are some concerns including potential effects of feedback mediated by olfactory bulb neurons on ORN axon terminals, particularly through GABAb receptors (McGann et al., 2005; McGann, 2013). Carefully controlled experiments that isolate feedforward sensory signals could reveal the prevalence of antagonistic interactions in mammalian ORNs.\n\nExtensive measurements at a large range of concentrations and mixture ratios will allow robust fitting of our model to obtain accurate estimates of the two key parameters, $\u03b7$ and $\u03ba$. A key empirical test of our theory will then rest on the relation between $\u03b7$ and $\u03ba$ for each glomerulus (or ORN). If these two parameters are highly correlated most of the time, then antagonistic interactions of the sort described in our theory will likely have only weak impact on olfaction. Even a modest\u00a0decorrelation, on the other hand, will give rise to important effects on ensemble coding of odor mixtures even at the front end of the olfactory system.\n\nIn addition to functional advantages, we showed that antagonistic effects are consistent with psychophysical effects observed in mixture perception. Experiments show that the perceived intensity level of an odorant is empirically related to the true concentration of the odorant as a power function, reflecting their proportional relationship on a single logarithmic scale (Lawless, 1997; Wojcik and Sirotin, 2014). The intensity level for binary mixtures perception is commonly described via a vector sum of the intensities of each component (Berglund et al., 1973; Laing et al., 1984; Berglund and Olsson, 1993). The vector model captures the level independent, symmetric nature of mixture suppression. The biophysical model presented here is consistent with an even broader range of perceptual phenomena, including level independency, synergy, symmetric and asymmetric suppression, masking and overshadowing. The bottomline is that global antagonistic interactions at the ORN level may play a major role in non-trivial perceptual phenomena.\n\nIn conclusion, ORNs are far from simple relays, and their strong nonlinear interactions crucially affect olfactory processing. Non-competitive antagonistic mechanisms, such as masking effects discussed here, have not been widely studied in mice and they may only occur for selected odorants. While this experimentally necessitates an extensive experimental dataset, the non-competitive effects presented here make their future investigation particularly relevant. Finally, the generality of the potential relations highlighted here between ORN antagonism and psychophysical phenomena motivates their exploration in mice, where a broader arsenal of experimental techniques and manipulations can be leveraged.\n\n## Materials\u00a0and\u00a0methods\n\n### Modeling\n\n#### Competitive binding\n\nWhen a mixture of $K$ monomolecular odorants $X_{1},X_{2},\u2026,X_{K}$ at concentrations $C_{1},C_{2},\u2026,C_{K}$ is presented to an ORN, the odorants compete for the finite number of receptors available on the olfactory cilia. In this Section, we derive the response of the ORN in such a case of competitive binding under the assumptions stated below.\n\nThe binding of an odorant to a receptor induces the activation of the odor-receptor complex, via a two-step GTP-mediated phosphorylation process (Pifferi et al., 2010). For a mixture of odorants, the binding dynamics reads:\n\n$$\nR+X_{1}\u21cc\u03ba_{1,1}RX_{1}\u21cc\u03ba_{2,1}RX_{1}^{\u2217}\u00a0;R+X_{2}\u21cc\u03ba_{1,2}RX_{2}\u21cc\u03ba_{2,2}RX_{2}^{\u2217}\u00a0;\u22ee\u22eeR+X_{K}\u21cc\u03ba_{1,K}RX_{K}\u21cc\u03ba_{2,K}RX_{K}^{\u2217}\u00a0,\n$$\n\nwhere $RX_{i}$ and $RX_{i}^{\u2217}$ symbolize the bound and activated complexes ($i=1,2,\u2026,K$), while $R$, $B_{i}$ and $A_{i}$ denote the number of unbound receptors, receptors bound by odorant $i$ but inactive, and receptors activated by odorant $i$, respectively. The concentration $C_{i}$ of the various odorants is supposed to be in excess for the total number of receptors $R_{tot}=R+\\sum_{i=1}^{K}\u2009A_{i}+\\sum_{i=1}^{K}\u2009B_{i}$. The parameters $\u03ba_{1,i}$ and $\u03ba_{2,i}$ are the ratio of the backward rates tothe forward rates for the two reaction steps involving odorant $i$. We introduce only the ratio of the rates because the time scale of the slowest step, the activation of the odor-receptor complex, is estimated to be a few hundred milliseconds (Rospars et al., 2003). For delivery times of a few seconds or longer, we then assume equilibrium (see below). By using the steady-state relations $B_{i}=C_{i}R/\u03ba_{1,i}$, $A_{i}=B_{i}/\u03ba_{2,i}$, and the above equation for $R_{tot}$, we obtain that the number ofactivated receptors bound to odorant $i$ at equilibrium is\n\n$$\nA_{i}^{\u221e}=\\frac{\\alpha_{i}C_{i}/\u03ba_{i}}{1+\\sumj=1K\u00a0C_{j}/\u03ba_{j}},\n$$\n\nwith $\u03ba_{i}=\\frac{\u03ba_{1,i}\u03ba_{2,i}}{1+\u03ba_{2,i}}$ and $\\alpha_{i}=\\frac{R_{tot}}{1+\u03ba_{2,i}}$. Since a sniff typically lasts only for about a hundred milliseconds, the activation profile of the receptors depends on the full kinetics of sniffing, receptor binding and receptor activation. However, the number of activated receptors after a sniff of 100 ms is still proportional to those at equilibrium. Since our main conclusions below, that\u00a0is, the importance of the two-step activation step and different saturation levels for different odorants, still hold, we have assumed equilibrium for simplicity and clarity of the presentation.\n\nA chain of steps follows receptors\u2019 activation in the transduction pathway. First, activated receptors convert ATP into cAMP molecules via adenylyl cyclase III. Then, the cAMP molecules diffuse locally and open nearby cyclic-nucleotide-gated (CNG) ion channels. The open CNG channels are permeable to Ca$^{2+}$ (and Na$^{+}$) ions, which are crucial in regulating further downstream processes and for adaptation (Kurahashi and Menini, 1997). Finally, Ca$^{2+}$ ions bind to calmodulin (CaM) and the formed complex (Ca-CaM) inhibits the CNG channels, leading to adaptation and, possibly, the termination of the response. The primary depolarizing current is carried by an Cl$^{\u2212}$ efflux out of the cell through Ca$^{2+}$ regulated Cl$^{\u2212}$ channels. We now proceed to model these various steps.\n\nFirst, since CNG channels are spread out along the cilia membrane and cAMP diffusion is restricted to the site of its production (Flannery et al., 2006; Takeuchi and Kurahashi, 2005), successful receptor activation events are largely independent. Indeed, the electrical response is consistent with Poisson statistics, and the voltage-clamped current response close to the threshold is linear (Bhandawat et al., 2010). At concentrations much larger than the threshold, the production of cAMP is linearly proportional to the number of activated receptors, as evidenced by the linear increase of the rate of production of cAMP with time. The degradation of cAMP occurs on a single time scale of a few hundred milliseconds (Takeuchi and Kurahashi, 2005). The effective cAMP dynamics is then succinctly written as:\n\n$$\nRX_{i}^{\u2217}\u2192k_{C}cAMP\u2192d_{C}\u2205,\n$$\n\nwhere $k_{C}$ is the rate of production of cAMP (and implicitly includes the concentration of the converted ATP, which is supposed to be in excess and thereby treated as fixed), $d_{C}$ is the rate of degradation, and the index $i$ runs over the set of $K$ rate equations. Since the production of cAMP occurs immediately downstream of activation and is independent of the activating odorant, the rate of production is simply proportional to the total number of activated receptors. If $C$ is the intracellular cAMP\u00a0concentration, we conclude that the steady state cAMP concentration $C^{\u221e}$ is\n\n$$\nC^{\u221e}=\\frac{k_{C}}{d_{C}}\\sumi=1K\u2009A_{i}^{\u221e}\u2009.\n$$\n\nSecond, CNG channels have four binding sites for cAMP and exhibit allosteric cooperativity (Zheng and Zagotta, 2004), which is generally represented as (Segel, 1993):\n\n$$\nCNG_{0}+cAMP\u21cca_{0}k_{G}CNG_{1}+cAMP\u21cca_{1}k_{G}\u2026CNG_{n\u22121}+cAMP\u21cca_{n\u22121}k_{G}CNG_{n}.\n$$\n\nHere, $k_{G}$ is an overall rate, $n$ is the number of allosteric binding sites for cAMP, and $a_{0},a_{1},\u2026,a_{n\u22121}$ modulate the various steps of the reactions. For allosteric cooperativity, $a_{0}<a_{1},a_{2},\u2026$, which reflects the fact that the binding of one cAMP molecule promotes the binding of further cAMP molecules. Here, we have ignored the inhibitory effect of Ca-CaM, which will be introduced below. Allosteric cooperativity leads to response functions of the Hill form (Segel, 1993). In the limit of strong cooperativity, most of the CNG channels are expected to be either unbound or fully bound, and the steady state number of fully bound CNG channels reduces then to\n\n$$\nCNG_{n}^{\u221e}=\\frac{CNG_{tot}}{1+(k^{\u2032}_{G}C^{\u221e})^{\u2212n}}\u2009.\n$$\n\nHere, $C^{\u221e}$ is the expression (Equation 9), $k_{G}=k_{G}\\prod_{i=0}^{n\u22121}\u2009a_{i}^{1/n}$ and $CNG_{tot}$ is the total number of CNG channels. The Ca$^{2+}$ current is directly proportional to the number of fully bound CNG channels and decreases at a constant rate (Boccaccio and Menini, 2007):\n\n$$\nCNG_{n}\u2192k_{ca}Ca^{2+}\u2192d_{ca}\u2205\n$$\n\nThird, the production of the CaCaM complex by Ca$^{2+}$ and CaM is described as:\n\n$$\nCa^{2+}+CaM,\u21ccK_{CaCaM}CaCaM,\n$$\n\nwhere $K_{CaCaM}$ is the ratio of the forward and backward rates. The effect of calmodulin-mediated feedback inhibition is accounted by assuming CaCaM modulates the CNG opening rate as $k_{G}^{\u2032}\u2192k_{G}^{\u2032}/(1+(\\frac{CaCaM}{CaCaM_{0}})^{2})$. The previous form is empirical, yet we verified that its precise shape and the value of the Hill coefficient do not modify numerical results below as long as a steep sigmoidal shape holds. With the values of the parameters used in our model (given\u00a0below), CaCaM acts on the CNG channel before the cAMP and the activated receptors reach steady state and terminates the response. The resulting set of differential equations does not lend to analytical treatment but can be numerically integrated to give a time series of the ORN response, as shown in Figure 1B. Numerical curves indicate (data not shown) that the Ca$^{2+}$ peak response terminated by CaM is roughly proportional to the steady state Ca$^{2+}$ response without CaM, that\u00a0is, $Ca^{\u221e}\u221d\\frac{k_{Ca}}{d_{Ca}}CNG_{n}^{\u221e}$, which is the approximation that we shall use hereafter.\n\nFinally, the Cl$^{\u2212}$ current is the predominant component of the currents that depolarize ORNs (Li et al., 2016; Boccaccio and Menini, 2007) and is mediated by Ca$^{2+}$-gated Cl$^{\u2212}$ ion channels. This current response induced due to Ca$^{2+}$ is again a Hill function of coefficient greater than one, suggesting further cooperativity (Reisert et al., 2005). We can formally write the steady state Cl$^{\u2212}$ current as $I_{Cl}^{\u221e}=f(Ca^{\u221e})$, where $f$ is some unknown function. The firing rate response $F$ of the ORN is assumed to be proportional to the current, so that $F=k_{f}I_{Cl}^{\u221e}$, where $k_{f}$ is a constant.\n\nBy combining all the equations above, we can write the firing rate as a function of the odorant concentrations $C_{i}$:\n\n$$\nF(C_{1},C_{2},\u2026,C_{K})=k_{f}f(\\frac{CNG_{tot}}{1+(\\frac{1+\\sumi=1K\u00a0C_{i}/\u03ba_{i}}{\\sumi=1K\u00a0\u03b7_{i}C_{i}/\u03ba_{i}})^{n}})\u00a0,\n$$\n\nwhere the odorant-receptor dependent parameters for the $i$th odorant are written explicitly:\n\n$$\n\u03ba_{i}=\\frac{\u03ba_{1,i}\u03ba_{2,i}}{1+\u03ba_{2,i}},\n$$\n\n\n\n$$\n\u03b7_{i}\u221dk_{C}k_{G}^{\u2032}\\alpha_{i}/d_{C},where\u00a0\\alpha_{i}=\\frac{R_{tot}}{1+\u03ba_{2,i}}.\n$$\n\nAs mentioned in the main text, for each odorant $i$, $\u03ba_{i}$ and $\u03b7_{i}$ carry the dependence on the odorants and control their interactions within mixtures. Conversely, the unknown function $f$ is related to downstream processes and therefore expected to not depend on the odorant and receptor type. This point, together with the reduction in the number of free parameters, was our rationale for using the approximation of a linear function $f$. Then, the proportionality constant in $f$ is lumped together with $k_{f}$ and $CNG_{tot}$ in (Equation 14) into a single parameter $F_{max}$, which defines the maximum physiologically possible firing rate of the neuron. Both $F_{max}$ and $n$ are constants that do not depend on the odorant or the receptor type.\n\nWe can finally write a general expression for the ORN response to a mixture of $K$ odorants with concentrations $C_{1},C_{2},\u2026,C_{K}$. Denoting the total concentration by $C=\\sum_{i}^{K}\u2009C_{i}$ and the contribution of the $i$th component by $\\beta_{i}=C_{i}/C$, it follows from (Equation 14) that the response reads\n\n$$\nF(C_{complex})=\\frac{F_{max}}{1+(\\frac{1+C/\u03ba_{mix}}{\u03b7_{mix}C/\u03ba_{mix}})^{n}}\u00a0,\n$$\n\nwhere the \u2018effective\u2019 mixture parameters $\u03b7_{mix}$ and $\u03ba_{mix}$ are\n\n$$\n1/\u03ba_{mix}=\\sumi=1K\u2009\\beta_{i}/\u03ba_{i}\u2009;\u2003\u03b7_{mix}=\u03ba_{mix}\\sumi=1K\u2009\u03b7_{i}\\beta_{i}/\u03ba_{i}\u2009.\n$$\n\nA complex odorant can therefore be treated in a manner similar to monomolecular odorants, namely, by specifying its effective sensitivity and activation efficacy to each receptor type. Note that this holds generally true, irrespective of the linear $f$ chosen in Equation 14 to limit the number of free parameters.\n\nThe parameters used in Figure 1 are as follows \u2013 we first define $k_{1},k_{\u22121}$ as the forward and backward rates for the binding step of Equation 1, and $k_{2},k_{\u22122}$ as the forward and backward rates for the activation step. For panels B,C and D, we use $k_{1}=100s^{\u22121}$, $k_{\u22121}=100s^{\u22121}$, $k_{2}=2s^{\u22121}$, $k_{\u22122}=2s^{\u22121}$ for odorant A and $k_{1}=80s^{\u22121}$, $k_{\u22121}=100s^{\u22121}$, $k_{2}=0.4s^{\u22121}$, $k_{\u22122}=2s^{\u22121}$ for odorant B. The concentration is unity in panels B, F and G. For panels E, F and G, the parameters for odorant A are used. In all panels, we use $k_{C}=2s^{\u22121}$, $d_{C}=1s^{\u22121}$, $k_{G}=10$, $CNG_{tot}=1$, $n=4$, $k_{Ca}=20s^{\u22121}$, $d_{Ca}=0.5s^{\u22121}$, $k_{CaCaM}=1s^{\u22121}$, $CaCaM_{0}=0.05$.\n\n### Masking\n\nHere, we present a phenomenological description of non-competitive masking processes.\n\nWe suppose that masking agents bind sites on the lipid bilayer and compete for their limited number. The suppression timescale and off-timescale are smaller than a few hundred milliseconds (Kurahashi et al., 1994), justifying the assumption of steady state. In steady state, the occupancy fraction of the $i$th masking agent with concentration $M_{i}$ and binding affinity $K_{M_{i}}$ is\n\n$$\nM~_{i}=\\frac{K_{M_{i}}M_{i}}{1+\\sumi\u00a0K_{M_{i}}M_{i}}\u00a0.\n$$\n\nThe disruption of a CNG channel conformation due to agent $i$ is supposed to alter the affinity of cAMP to one of its binding sites on the channel in the reactions (9). The energy of the cAMP bound state is increased by $\u0394\u03f5_{i}$ and its probability is reduced by the corresponding Gibbs factor $e^{\u2212\\beta\u0394\u03f5_{i}}$, where $\\beta=1/kT$ is the inverse temperature. The resulting reduction in the opening of the channels is most conveniently accounted for by a mean-field approach where the channel opening rate $k^{\u2032}_{G}$ appearing in (10) is modified by the masking agents. In other words, $k^{\u2032}_{G}\u2192\u03c7_{M}k^{\u2032}_{G}$ with the suppression factor $\u03c7_{M}<1$ derived below. It follows from the definition (13) of $\u03b7$ that a modification of $k^{\u2032}_{G}$ by $\u03c7_{M}$ carries over to $\u03b7$ as $\u03b7\u2192\u03c7_{M}\u03b7$. Therefore, when saturating concentrations of excitatory odorants are presented together with masking agents that produce a masking coefficient $\u03c7_{M}$, the maximal firing rate is reduced as\n\n$$\nF_{M}(\u221e)=\\frac{F_{max}}{1+1/(\u03c7_{M}\u03b7)^{n}}\u2009.\n$$\n\nwhich reflects the masking effect.\n\nThe dependence of the suppression factor $\u03c7_{M}$ on the concentrations $M_{i}$ of the masking agents is estimated as follows. Let us denote the radius of disruption of the channels by a single masking molecule on the lipid bilayer by $r$, and the surface density of masking binding sites by $\\sigma$. The typical number of masking binding sites surrounding a given CNG channel is then $\\lambda=\\pi\\sigmar^{2}$. The number $n_{mask}$ of masking binding sites within distance $r$ of a CNG channel is assumed to be Poisson distributed, that\u00a0is $P(n_{mask})=\\frac{e^{\u2212\\lambda}\\lambda^{n_{mask}}}{n_{mask}!}$. For a given number of sites $n_{mask}$, the vector of their occupancy numbers $I=(i_{1},i_{2},..i_{K+1})$ is distributed following a multinomial distribution with probabilities given by Equation 18, that\u00a0is, $P(I)=(n_{mask}i_{1},i_{2},\u2026,i_{K+1})\\prodk=1K+1\u00a0M~_{k}^{i_{k}}$. The index $K+1$ corresponds to unoccupancy, $M~_{K+1}=1\u2212\\sumi=1K\u00a0M~_{i}$ and $i_{K+1}=n_{mask}\u2212\\sum_{k}\u2009i_{k}$. The probability of each $I$ is proportional to its Gibbs factor $e^{\u2212\\beta\u0394\u03f5(I)}$, where $\u0394\u03f5(I)$ is the energy shift to the binding of masking agents.\n\nWe consider the first step in Equation 10; similar arguments hold for successive ones. The unmodified $a_{0}k_{G}=e^{\u2212\\beta\u03f5}$ is the ratio between the probability for a channel to be cAMP bound or cAMP unbound, and $\u03f5$ is their energy difference. In the presence of masking, there are multiple cAMP bound and unbound states, which differ in their occupancy of the masking binding sites. The sum over all those states defines the probabilities $P_{b}$ and $P_{u}$ of cAMP bound and unbound, respectively. The suppression factor $\u03c7_{M}$ that modifies $k^{\u2032}_{G}\u2192\u03c7_{M}k^{\u2032}_{G}$ is obtained as the ratio $(e^{\\beta\u03f5}P_{b}/P_{u})^{1/n}$, where the $1/n$ power stems from the definition of $k^{\u2032}_{G}$ in (10). The sum $P_{b}$ is obtained by combining all the previous factors:\n\n$$\nP_{b}=\\sumn_{mask}=0\u221e\u00a0\\frac{e^{\u2212\\lambda}\\lambda^{n_{mask}}}{n_{mask}!}\\sumi_{1},i_{2},..i_{K+1}n_{mask}\u00a0\\frac{e^{\u2212\\beta(\u03f5+\u0394\u03f5(I))}}{Z}(n_{mask}i_{1},i_{2},\u2026,i_{K+1})\\prodk=1K+1\u00a0M~_{k}^{i_{k}}\u00a0.\n$$\n\nwhere $Z$ is a normalization factor. Assuming the masking sites do not affect the energy of the channels when cAMP is unbound, the sum $P_{u}$ has a similar expression with $\u03f5+\u0394\u03f5=0$. It is then verified that $P_{u}=1/Z$. As for $P_{b}$, the\u00a0simplest possible assumptions are that $\u0394\u03f5(i_{1},i_{2},\u2026,i_{K})=\\sum_{k=0}^{K}\u2009i_{k}\u0394\u03f5_{k}$ is additive, and the masking binding sites are dilute, that\u00a0is, $\\lambda$ is small. Equation (20) reduces then to\n\n$$\n\u03c7_{M}^{n}=\\frac{e^{\\beta\u03f5}P_{b}}{P_{u}}=e^{\u2212\\lambda\\sumk\u00a0M~_{k}(1\u2212e^{\u2212\\beta\u0394\u03f5_{k}})}\u22481\u2212\\sumk=1K\u00a0\\mu_{k}M~_{k}\u00a0,\n$$\n\nwhere $\\mu_{k}=\\lambda(1\u2212e^{\u2212\\beta\u0394\u03f5_{k}})$ satisfy $0\\leq\\mu_{k}\\leq1$, and the same inequality holds for $\u03c7_{M}$. In general, masking agents can affect multiple CNG channel subunits (Chen et al., 2006). If a masking agent affects the binding of\u00a0cAMP to $j$ CNG subunits, the suppression effect is $\u03c7_{M}=(1\u2212\\sumi\u00a0\\mu_{i}M~_{i})^{m}$ with $m=j/n$.\n\nThe ratio $1\u2212\\frac{F_{M}(\u221e)}{F(\u221e)}$ in (Equation 19) is plotted in Figure 2B and compared to experimental data. In Figure 2C,D, the parameters for generating the response curves for odorants A and B are $\u03ba_{A}=1,\u03ba_{B}=1,\u03b7_{A}=1,\u03b7_{B}=5$. For synergy (Figure 2C), the masking parameters are $K_{M,A}=10^{\u22125},K_{M,B}=10^{\u22121},\\mu_{A}=0,\\mu_{B}=0.7$, while the corresponding parameters for inhibition (Figure 2D) are $K_{M,A}=1,K_{M,B}=10^{\u22125},\\mu_{A}=0,\\mu_{B}=0.7$. The parameter $m$ is chosen to be unity in both cases.\n\n### Olfactory encoding model\n\nEvery odorant is defined by a vector of binding sensitivities $\u03ba^{\u22121}$ and a vector of activation efficacies $\u03b7$, each with dimensionality $N$, where $N=250$ is the chosen number of receptor types. An odorant\u2019s binding sensitivity to a\u00a0particular receptor type is drawn independently from a log-normal distribution $log\u03ba^{\u22121}\u223cN(0,\\sigma_{\u03ba^{\u22121}})$, where its standard deviation $\\sigma_{\u03ba^{\u22121}}$ is set to $4$ to obtain a six orders of magnitude separation between the most sensitive and least sensitive receptor types (Saito et al., 2009). The activation efficacies are similarly drawn independently for each receptor type such that $log\u03b7\u223cN(0,1)$. The measure of antagonism, $\u03c1$, is defined as\u00a0the Pearson correlation coefficient between $log\u03ba^{\u22121}$ and $log\u03b7$:\n\n$$\n\u03c1\u2261\\frac{\u27e8log\u2061\u03ba^{\u22121}log\u2061\u03b7\u27e9\u2212\u27e8log\u2061\u03ba^{\u22121}\u27e9\u27e8log\u2061\u03b7\u27e9}{\\sigma_{\u03ba^{\u22121}}\\sigma_{\u03b7}}\u00a0\n$$\n\nwhere $\\sigma^{2}$ denotes the variance of the random variables and the angular brackets denote expectation values. To generate an odorant-receptor pair, first $log\u03b7$ is drawn from the standard normal distribution. Then, $log\u2061\u03ba^{\u22121}$ is generated with correlation $\u03c1$ as $log\u03ba^{\u22121}=\\sigma_{\u03ba^{\u22121}}(\u03c1log\u03b7+\\sqrt{1\u2212\u03c1^{2}}\\omega)$, where $\\omega$ is drawn from a standard normal distribution. At saturating concentrations of an odorant, the peak firing rate it elicits for a receptor type with activation efficacy $\u03b7$ is $F_{\u221e}=\\frac{1}{1+\u03b7^{\u2212n}}$ (see (Equation 16), where $F_{max}$ can be chosen to be unity). The rescaled glomerular activation vector $y$ (each component is rescaled between 0 and 1) is given by $y=\\frac{1}{1+\u03b7^{\u2212n}}$, where the transformation is performed on each component of the vector. The probability $p$ that each component exceed a threshold $\\tau$ is given by the probability that a random variable drawn from a standard normal distribution exceed $\\frac{1}{n}log\u2061\\frac{1\u2212\\tau}{\\tau}$. This probability $p$ represents the sparsity of the glomerular activations $z$ at saturating concentrations after thresholding. The sparsity is set by selecting $\\tau=\\frac{1}{1+e^{\u2212n\u03a6^{\u22121}(1\u2212p)}}$, where $\u03a6$ is the cumulative distribution function for a standard normal random variable.\n\n### Figure-ground segregation and component separation\n\nTo quantify the performance of the encoding model in figure-ground segregation, we compute the mutual information between the absence ($T=0$) or presence ($T=1$) of the target odorant $T$ and the glomerular activation pattern $z$. Noise is introduced due to the presence of background odorants of unknown sensitivities and activation efficacies. The mutual information controls the performance of an optimal Bayesian decoder in detecting a target odorant in a background by using the glomerular activation pattern as input. The mutual information is defined as\n\n$$\nI(T;z)=H(T)\u2212H(T|z)\u2009,\n$$\n\nwhere $H(T)$ is the entropy of target presence or absence, which equals one bit (since the target is present in half the trials). The second term on the right hand side $H(T|z)$ (in bits) is given by\n\n$$\nH(T|z)=\u2212\\sumz\u2009Pr(z){Pr(T=1|z)log_{2}Pr(T=1|z)+Pr(T=0|z)log_{2}Pr(T=0|z)}\u2009,\n$$\n\nwhere Bayes\u2019 formula yields $Pr(T=1|z)=\\frac{Pr(z|T=1)}{Pr(z|T=0)+Pr(z|T=1)}$, and $Pr(z)=\\sum_{n_{b}}\u2009Pr(z|n_{b})Pr(n_{b})$, where $Pr(n_{b})$ is the distribution of the number of background odorants. $H(T|z)$ is estimated numerically by using Monte Carlo sampling. The quantities $Pr(z|T=1)$ and $Pr(z|T=0)$ are also computed numerically by observing that $Pr(z|T=1)=\\sum_{n_{b}}\u2009Pr(z|T=1,n_{b})Pr(n_{b})$. Due to the independence of the receptor types and since the background odorants are independently drawn, the probability $Pr(z|T=1,n_{b})$ factorizes into $N$ multiplicative terms, each of which can be pre-computed prior to Monte Carlo sampling. To obtain the results in Figure 5A, we choose $p=0.5$. When the number of background odorants fluctuate (as in Figure 5B), we draw $n_{b}$ from a truncated exponential distribution with a mean of 32 and truncated at a maximum of 128 background odorants.\n\nTo show that internal noise does not affect our results, we compare the performances of antagonistic and non-antagonistic models in figure-ground segregation by including an additional noise term in the expression for ORN response (Equation 16). Specifically, the response of an ORN to a mixture is modified as $\u03b7_{mix}\u2192(1+\u03f5)\u03b7_{mix}$, where $\u03f5$ is an effective noise term that condenses the variability in signal transduction relative to the number of activated receptors. We train a linear classifier to identify a target odorant against a fixed number of background odors. The target odorant and background odorants (of varying composition) are delivered at concentrations drawn from a uniform distribution in the logscale over 3 orders of magnitude. The discrimination accuracy of the linear classifier is shown in Figure 5\u2014figure supplement 1 for $\u03c1=0,1$ and $\u03f5=0$ and 0.4. The results show the superior performance of antagonism when the number of background odors is large even at noise levels of 40%. The higher performance for $\u03f5=0.4$ compared to $\u03f5=0$ for $\u03c1=1$ (at $>30$ background odorants) occurs because the noise can desaturate glomeruli that are otherwise saturated.\n\nFor the component separation task, we use an ensemble of linear classifiers as our decoders. A linear classifier computes the probability of presence of an odorant from the glomerular activation pattern $z$ as $\\frac{1}{1+exp(\u2212(\\theta.z+b))}$, where $\\theta$ and $b$ are the vector of learned weights and bias, respectively. First, linear classifiers are trained to identify odorants from a fixed set $S$ of 500 odorants. During the training phase, each classifier is trained to identify the presence of its target against a background of one to ten odorants also chosen from $S$. In each trial of the test phase, 1 to 20 odorants are uniformly chosen from $S$ and the component separation performance is measured using the fraction of correct identifications (hit rate) and the number of false positives (FPs). An odorant is declared to be present if the probability of presence exceeds a detection threshold. The hit rate and the number of false positives\u00a0are modulated by sliding the detection threshold of each linear classifier, yielding the generalized ROC curves in Figure 5C,D.\n\n### Antagonism and olfactory psychophysics\n\nTo infer the concentration based on the glomerular profile for a single odorant, we first note that glomeruli are progressively recruited as the concentration of the odorant increases depending on their sensitivity to that odorant. Suppose a glomerulus $g_{i}$ corresponding to this odorant is first recruited at concentration $c_{i}$, where $c_{i}$ increases with the index $i$. Then, the contribution of $g_{i}$ to the total inferred log concentration, $logc$, is taken to be $logc_{i}\u2212logc_{i\u22121}$ for $i>1$ and $logc_{1}$ for $i=1$ (here $c_{1}$ corresponds to the concentration at which the most sensitive receptor becomes active). This simple scheme to infer the concentration is accurate for a single odorant (Figure 6A) and can be easily shown to have a concentration invariant Weber ratio $\u223c\\frac{logc_{max}/c_{1}}{pN}$ where $N$ is the number of receptor types, $p$ is the sparsity and $c_{max}$ is the saturating concentration (Koulakov et al., 2007). To obtain the results for mixtures when $\u03c1=0,0.5$ and 1, for each concentration of odorant $A$, another odorant $B$ is delivered at an equal concentration. The log concentration of $A$ is then inferred by computing the sum of the contributions from the glomeruli corresponding to odorant $A$ as described above. The curve corresponding to the masking agent is obtained similarly as above for $\u03c1=0$ with $B$ having a masking coefficient $\\mu_{B}=1$.\n\nTo plot the curves in Figure 6B, odorant $A$ is delivered at a fixed concentration (red, dashed line) and a masking agent is applied at increasing concentrations (horizontal axis). Here, we use $\u03c1=0$ and we assume the masking agent does not bind to anyof the receptors.\n\nTo show symmetric and asymmetric suppression in Figure 6C, the concentration of $A$ is fixed at a saturating concentration and the concentration of $B$ is varied to get different concentration ratios $C_{A}/C_{B}$ (horizontal axis). We define a suppressed glomerulus as one that is active when an odorant is delivered individually yet is inactive when $A$ and $B$ are delivered together. The fraction of suppressed glomeruli for each concentration ratio is averaged over many samplings of the two odorants $A$ and $B$.\n\nTo obtain the results for overshadowing, the different concentration ratios are generated similar to the method described above for Figure 6C. Logistic regressors that can detect odorants $A$ and $B$ are first trained to identify them when delivered alone at varying concentrations. A logistic regressor computes the probability of presence of an odorant given the glomerular pattern of activation. A detection threshold can then be applied on the probability of presence in order to declare the odorant present or absent. In Figure 6D, we show the probability of presence of odorant $B$ as determined by the logistic regressor corresponding to $B$ for different concentration ratios and values of $\u03c1$ (solid lines). Similar curves for odorant $A$ are shown as dashed lines.\n\n### Code availability\n\nCode for the modeling can be accessed at: https://github.com/greddy992/Odor-mixtures (Reddy, 2018); copy archived at https://github.com/elifesciences-publications/Odor-mixtures).\n",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "9ecba37d-1309-4fbf-8d92-c86502ae8b3a",
+      "submission_id": "2e20a4db-f59d-4650-91e9-f6ad709449cd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fred Rieke, Howard Hughes Medical Institute, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34958.014](https://doi.org/10.7554/eLife.34958.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Antagonism in olfactory receptor neurons and its implications for the perception of odor mixtures\" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and three reviewers, one of whom, Fred Rieke, is a member of our Board of Reviewing Editors. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dmitry Rinberg (Reviewer #2); Tim Holy (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife, at least in present form. We would be willing to consider a revised paper as a new submission if you think you can thoroughly address the issues raised in review.\n\nThe reviewers all recognized the importance and novelty of the proposed model, but were less enthusiastic about the experimental basis of the model. A particular area of concern was the lack of any evaluation of the goodness or uniqueness of the model fits. This results in concerns about the validity of the extracted parameters. These issues are detailed in the individual reviews below. Thus, the reviewers agreed that the paper either needed stronger experimental support, or perhaps alternatively the model could be developed more fully and could form the core of a purely theoretical paper.\n\nReviewer #1:\n\nThis paper introduces a biophysical model for olfactory transduction, and then investigates the implications of this model for how mixtures of odors are encoded. I am not an expert in olfaction, so my comments are from the perspective of an interested outsider.\n\nThe paper makes a number of interesting points spanning a large range of olfactory phenomena. My primary concern is that the modeling approach does not seem sufficiently constrained by the data to draw strong conclusions. Examples of these and some smaller issues follow.\n\nModeling\n\nThe experimental tests of the model are somewhat limited. The model is fit to measures of response vs. concentration for individual odors and odor pairs and to masking data. Given the number of free parameters in the model, it does not seem surprising that it is able to capture these data pretty well. But it is unclear whether the model architecture is unique or if the specific fit parameters are unique. This raises concerns about drawing specific mechanistic inferences from the model. For example, a major conclusion is that normalization comes about from the two-stage receptor activation rather than inhibition within the olfactory bulb. But a model incorporating inhibition and a single-stage receptor activation might explain the data well. It is also not clear whether the model will generalize outside of the data to which it is fit, and this limits the strength of the conclusions about perceptual phenomena. A couple specific points related to this:\n\n- The evidence for different saturation levels for different odors in Figure 3 is not great. How badly do models that do not allow for different saturation levels fit the data? If possible, higher odor concentrations would be helpful here. Could the different saturation levels reflect different numbers of ORNs rather than different receptor activation levels? Could saturation reflect inhibitory input rather than receptor properties?\n\n- Some aspects of the data are not particularly well fit \u2013 e.g. some of the masking data and Figure 3Bi bottom right. Some discussion of those discrepancies would be helpful.\n\nReviewer #2:\n\nIn this manuscript, Reddy and colleagues investigate how antagonisms between different odors at ORNs shape odor perception using modeling and in-vivo Ca imaging. They proposed a novel computational model, which may explain multiple olfactory behavioral phenomena. The idea is novel and original. While the majority of previous works were focused on studying individual olfactory receptors and their interaction with one or a few ligands, the authors studied the statistics for multiple receptors and analyzed their role for such psychophysical phenomena as masking and figure-ground segregation.\n\nIt is very important and timely approach and I am looking forward to seeing this paper being published. However, my enthusiasm about experimental part of the paper is significantly lower.\n\n1) The authors experimentally characterized ligand interactions for a few receptors in-vivo, on the level of glomerulus in a whole animal. This is definitely an important step forward. However, it is not clear how these experiments contribute to validation of the model. In a few presented cases, the authors demonstrated an existence of synergy and inhibition among ligands in-vivo, which may be important, but probably is incremental step compared to previous knowledge in the field. The main strength of the model is a prediction of collective phenomena for multiple receptors and psychophysical effects. No attempts were done to estimate relevant parameters from experimental data. Can, for example, an antagonism factor, \u03c1, be estimated based on current data?\n\n2) The presentation of the experimental data is very limited. The authors did not provide a quantitative analysis of the goodness of the model prediction. The figures present just a few examples, without any quantitative validation. What is the confidence interval for individual fit parameters? Visual observation of the glomerulus responses (Figure 3B) make me question an accuracy of estimation of the sensitivity \u03ba_(-1) and activation efficacy \u03b7, because of the response curves sometime do not reach their plateaus at high concentrations. How inaccuracy in estimation of these parameters affect prediction of a mixture responses. The author should provide a quantitative analysis of discrepancies between model prediction and experimentally measured mixture responses.\n\n3) The proposed model is a very important, and the paper is lacking experimental validation, which I would not strongly insist upon. The theoretical work is valuable by itself. However, I would strongly encourage authors to have a discussion about strategies for experimental validation. (The current session \"Experimental validation of the model\" is misleading). What features of the model can and should be tested in the future work? The authors should provide, if possible, an estimation of necessary amount of data for validation their main conclusions.\n\n4) Approximation in relations (6) are non-trivial. However, if there are large number of components in the mixture (\u03b2_i for the most sensitive ligand is small), k_i^(-1)* \u03b2_i for the highest affinity odorant may not be larger than the sum of the rest. The authors should discuss the limitation of this assumption.\n\nReviewer #3:\n\nReddy and colleagues explore olfactory coding both experimentally and theoretically. Consistent with previous studies, they find that some odorant receptors (as measured by imaging glomerular responses) appear to be poorly described by a simple single-state activation model. Experimentally using binary mixtures, they demonstrate competitive antagonism. The manuscript then turns to a theoretical analysis, demonstrating that competitive antagonism can act to normalize responses to large odorant mixtures, with advantageous consequences (in models) for foreground-background segmentation and at least qualitative alignment with previous psychophysical observations.\n\nWhile antagonism has been known for many years, its potential role in normalizing odorant responses has not, to my knowledge, been noted. Previous work on this topic has explored the \"obvious\" mechanism for normalization, circuit inhibition. The mechanism explored here is less obvious, and its discovery counts as a genuinely creative contribution that could change how we think about important phenomena in olfaction.\n\nHowever, the manuscript is not without its flaws:\n\n- A conceptual understanding of how Figure 5C arises seems elusive. The logic and arguments surrounding Equation 6 are, in my opinion, either orthogonal or counterproductive to understanding the mechanism advanced by the authors. However, there appears to be a relatively satisfying argument based on the Holder inequality with p = 1 and q = infinity. In pseudo-LaTeX syntax, if we let s_i = C_i/\u03ba_i, then \u03b7\u22c5s = \\sum_i | \u03b7_i s_i| <= (\\sum_i |s_i|) \\max_i \u03b7_i where \"max\" is the infinity-norm, and thus (if we define S = \\sum_i s_i) F = Fmax / (1 + ((1+S)/(\u03b7\u22c5s))^n) <= Fmax /(1 + ((1+S)/(S max_i \u03b7_i))^n) -> Fmax/(1 + (\\max_i \u03b7_i)^(-n)) in the limit of large S. You will be closer this bound if \u03b7_i is correlated with s_i, and farther (i.e., smaller response) if it is uncorrelated. At least to this reviewer, this argument seems considerably more helpful in developing a conceptual understanding of Figure 5C.\n\n- The experimental demonstration of competitive antagonism is a bit unsatisfying. Some of this may just be presentation (which glomeruli in Figure 3A correspond to the panels in Figure 3B? of the few glomeruli in 3A that visibly display mixture interactions, some are strikingly non-monotonic yet these do not seem to appear in 3B). Other concerns relate to the whole experimental strategy (the potential confound of presynaptic inhibition is treated too superficially, and Vucinic, Cohen, and Kosmidis should be cited in addition to McGann et al., 2005) or to the reliability of the extracted parameters (see below). Finally, one can't help but wish for some attempt to experimentally test whether the predictions of Figure 5C hold.\n\nWith regards to the \"reliability of the extracted parameters\" mentioned above, the main concern is whether the relatively uncorrelated nature of \u03ba and \u03b7 (Figure 3C) really reflects biology or whether this is a consequence of measurement noise. One could address this point and the previous one by showing the error bars for these fits of these parameters. From a technical standpoint, the fitting of the constants (\u03ba and \u03b7 being most important) should perhaps be viewed with some skepticism when \u03ba gets near 1 or higher. In such circumstances, the data may not exist to accurately measure saturation, and hence the measurement of \u03b7 may be unreliable. Some evidence for this can be found in Figure 3C, where there are a few \"outliers\" of very small \u03b7, but notably these occur pretty much only for \u03ba near 1 or higher (log \u03ba^(-1) near zero or lower).\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Antagonism in olfactory receptor neurons and its implications for the perception of odor mixtures\" for further consideration at eLife. Your article has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom, Fred Rieke, is a member of our Board of Reviewing Editors. All of the reviewers felt the emphasis on the model and omission of the experimental data improved the paper. A few issues remain or were introduced in the revisions. These are clear in the individual reviews below. These issues need to be addressed before we can consider the paper further.\n\nReviewer #1:\n\nThis is a resubmission of a paper on olfactory coding. Experimental data has been removed and the paper has been revised to focus on the model for coding of complex odor mixtures. This is a substantial improvement as the experimental data raised a number of questions, and the model itself is an interesting and important contribution. There are several areas in which I think the paper can be strengthened; these center around making the modeling assumptions and structure clearer to a general reader:\n\nModel description.\n\nThe main text would benefit from incorporation of some additional description of key properties of the model so that it can be read without continual reference to the Materials and methods. The description of the transduction model in the second paragraph of the subsection \u201cBiophysics of mammalian olfactory receptor neurons\u201d is one place that should be expanded. Similarly, the impact of masking in the subsection \u201cMasking\u201d should be expanded. Another example is the simplified model first introduced in the first paragraph of the subsection \u201cOlfactory encoding and antagonism\u201d (is there a schematic that could be added to illustrate the key points in Equation 5 \u2013 that might help quite a bit). The seventh paragraph of the aforementioned subsection is another place that could use expansion. The second paragraph of the subsection \u201cPerformance in discrimination and identification tasks\u201d is another (give intuition for why antagonism can be bad, and point to range around 10 odors in 4A where this is true).\n\nDiscrimination analysis.\n\nThe results of the discrimination analysis are likely to depend strongly on the limiting source of noise. In the model, noise comes from randomness in the composition of the background odors. I suspect that noise originating after receptor binding, or after masking, could alter the results of this analysis. Ideally this would get explored in the model. At a minimum the paper should include some discussion of the assumption about where noise enters, and when this assumption is likely to hold.\n\nReviewer #2:\n\nThis is the second submission of the paper by Reddy et.al, about a novel mechanism for normalization in olfactory processing. The authors took away some limited experimental data, which did not add much to the paper and improved a clarity of model presentation. This is a novel and original idea, which should be published.\n\nReviewer #3:\n\nThe revised manuscript is greatly improved, particularly in the explanation of the mechanism by which decorrelated binding/efficacy generates \"flat\" responses as a function of number of odorants in the mixture. The removal of the experimental data is also a step forward, and I look forward to a more extensive test in a future publication. This is an important, insightful, and well-presented contribution.\n",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b39b84d3-53c5-4656-b6b9-40abbaab824d",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C1",
+      "claim": "Natural environments feature mixtures of odorants of diverse quantities, qualities and complexities.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural environments feature mixtures of odorants of diverse quantities, qualities and complexities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about natural environments presented in the abstract without specific experimental data in this manuscript, but draws on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "d36756bc-f36b-4205-9d53-f25c8aa7609c",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C2",
+      "claim": "Olfactory receptor neurons (ORNs) are the first layer in the sensory pathway and transmit the olfactory signal to higher regions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory receptor neurons (ORNs) are the first layer in the sensory pathway and transmit the olfactory signal to higher regions of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the olfactory system architecture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "79d4a9ca-a061-44a8-9892-3c0bc26e1eca",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C3",
+      "claim": "The response of ORNs to mixtures is strongly non-additive, and exhibits antagonistic interactions among odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the response of ORNs to mixtures is strongly non-additive, and exhibits antagonistic interactions among odorants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling results and theoretical analysis presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "82ca77cf-13c0-4d07-8c76-2a2e7574641a",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C4",
+      "claim": "Antagonism leads to an effective 'normalization' of the ensemble ORN response.",
+      "claim_type": "EXPLICIT",
+      "source": "We show how antagonism leads to an effective 'normalization' of the ensemble ORN response, that is, the distribution of responses of the ORN population induced by any mixture is largely independent of the number of components in the mixture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding demonstrated through mathematical modeling and shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "75daaf83-7f10-48b8-9266-ade65d338600",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C5",
+      "claim": "The distribution of responses of the ORN population induced by any mixture is largely independent of the number of components in the mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "We show how antagonism leads to an effective 'normalization' of the ensemble ORN response, that is, the distribution of responses of the ORN population induced by any mixture is largely independent of the number of components in the mixture.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "9c7e696e-f253-4f03-a820-4e089c09ad05",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C6",
+      "claim": "Normalization arises from a novel mechanism involving the distinct statistical properties of receptor binding and activation, without any recurrent neuronal circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "This property arises from a novel mechanism involving the distinct statistical properties of receptor binding and activation, without any recurrent neuronal circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the mathematical model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "53abaf91-9424-4431-a36d-635705ed48bd",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C7",
+      "claim": "Normalization allows the encoding model to outperform non-interacting models in odor discrimination tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization allows our encoding model to outperform non-interacting models in odor discrimination tasks, leads to experimentally testable predictions and explains several psychophysical experiments in humans.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through computational experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "3cf2a35f-9c52-4112-bd6d-c7e5aadddc4c",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C8",
+      "claim": "The antagonistic encoding model explains several psychophysical experiments in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization allows our encoding model to outperform non-interacting models in odor discrimination tasks, leads to experimentally testable predictions and explains several psychophysical experiments in humans.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 6 that reproduce psychophysical phenomena.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "bc95ba0d-34ea-4de3-8931-9344b52d1ca4",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C9",
+      "claim": "Inhibitory feedback plays a key role in the adaptive immune system for proper combination of rapidity, sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory feedback plays a key role in meeting the challenge of a proper combination of rapidity, sensitivity and specificity (Fran\u00e7ois et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fran\u00e7ois et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "47191f45-ed6a-4de6-83a8-04605ec6d6cc",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C10",
+      "claim": "Inhibitory interactions in the form of receptor antagonism have been observed in experiments with olfactory receptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory interactions in the form of receptor antagonism have indeed been observed in experiments with olfactory receptor neurons (ORNs) (Oka et al., 2004; Takeuchi et al., 2009; Kurahashi et al., 1994), although it has not been quantified systematically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "25ec5888-e7a9-44eb-93ca-c56298063646",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C11",
+      "claim": "Receptor antagonism in ORNs has not been quantified systematically.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory interactions in the form of receptor antagonism have indeed been observed in experiments with olfactory receptor neurons (ORNs) (Oka et al., 2004; Takeuchi et al., 2009; Kurahashi et al., 1994), although it has not been quantified systematically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of the field based on the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "b4139d3f-a1e1-4209-bac4-10ddec81ca45",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C12",
+      "claim": "The response of cells expressing the mOR-EG receptor is strongly suppressed when methyl isoeugenol is delivered together with the receptor's cognate ligand, eugenol, at equal concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the response of cells expressing the mOR-EG receptor is strongly suppressed when methyl isoeugenol is delivered together with the receptor's cognate ligand, eugenol, at equal concentrations (Oka et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "710a901a-3547-4fa1-afca-d7a16ae8630b",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C13",
+      "claim": "Evidence of intensity suppression and overshadowing in the perception of odorant mixtures comes from psychophysical observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence of intensity suppression and overshadowing (i.e. when one odorant makes another indiscernible) in the perception of odorant mixtures comes from psychophysical observations (Lawless, 1997; Keller and Vosshall, 2004; Doty and Laing, 2015; Thomas-Danguin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to psychophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "338f6bbc-6fda-4f4d-9a61-d9ccebbfa3fa",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C14",
+      "claim": "The importance of peripheral interactions in shaping mixture perception has been directly shown by electrophysiological and psychophysical measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of peripheral interactions in shaping mixture perception has been directly shown by electrophysiological and psychophysical measurements (Bell et al., 1987; Laing and Willcox, 1987; Chaput et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "722c5a4f-7a26-4ec7-987e-e89bf4da8d73",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C15",
+      "claim": "The functional role of inhibition at the ORN level remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the functional role, if any, of inhibition at the ORN level remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "cfdc2f98-c071-48bd-b393-22a885a1a746",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C16",
+      "claim": "Each ORN expresses receptors of a particular type, which typically display broad sensitivities to different odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Each ORN expresses receptors of a particular type, which typically display broad sensitivities to different odorants, whereas each odorant binds promiscuously to receptors of many types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ORN receptor expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "ee3d0f07-bd4d-49d7-b211-a937cabb76a7",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C17",
+      "claim": "Each odorant binds promiscuously to receptors of many types.",
+      "claim_type": "EXPLICIT",
+      "source": "Each ORN expresses receptors of a particular type, which typically display broad sensitivities to different odorants, whereas each odorant binds promiscuously to receptors of many types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about odorant-receptor interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "ab73adcb-c900-4173-9855-2867cd4dba34",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C18",
+      "claim": "The axons of ORNs of a common type converge onto glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "The axons of ORNs of a common type converge onto glomeruli, where the axon terminals form synaptic contacts with mitral and tufted (M/T) projection neurons leading to the cortex, as well as local periglomerular (PG) interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about the olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "41369fff-baa8-48a3-9cc9-0727f23fb298",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C19",
+      "claim": "The activation of an individual glomerulus represents the activation of a single ORN type.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of an individual glomerulus therefore represents the activation of a single ORN type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the anatomical organization of the olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "1ad64c46-b993-4e40-b87c-f5e68454adf6",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C20",
+      "claim": "Previous computational models that examined discrimination tasks have assumed a linear summation model of mixture response at the ORN level.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous computational models that examined discrimination tasks have, for simplicity, assumed a linear summation model of mixture response at the ORN level (Hopfield, 1999; Koulakov et al., 2007; Zhang and Sharpee, 2016; Zwicker et al., 2016; Mathis et al., 2016; Grabska-Barwi\u0144ska et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of prior work supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "305eb134-5f49-47e2-95a3-736ca1162f40",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C21",
+      "claim": "Odorant-receptor interactions depend on two distinct features: the sensitivity to binding and the efficiency of activation after binding.",
+      "claim_type": "EXPLICIT",
+      "source": "A key aspect of the model is that odorant-receptor interactions depend on two distinct features: the sensitivity to binding and the efficiency of activation after binding, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key assumption of the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "74208991-b72f-430c-8de3-376d92cfc840",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C22",
+      "claim": "Competitive antagonism occurs when a component in a mixture that binds strongly activates the downstream transduction pathway less effectively compared to other components.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive antagonism occurs when a component in a mixture that binds strongly, activates the downstream transduction pathway less effectively compared to other components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the manuscript based on the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "82b9e5e9-297d-43cf-864b-eafc2689b5e8",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C23",
+      "claim": "The biophysical model successfully captures the strongly non-linear peak response for different concentrations of the odorant.",
+      "claim_type": "EXPLICIT",
+      "source": "For single odorants, the model successfully captures the strongly non-linear peak response for different concentrations of the odorant, the latency in response (Rospars et al., 2003), the quadratic rate of cAMP production (Takeuchi and Kurahashi, 2017), and calcium-based adaptation (Kurahashi and Menini, 1997) (Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 1 and compared to cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "970f585c-c579-4b9f-9561-527b3b1e0dd7",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C24",
+      "claim": "The biophysical model successfully captures the latency in response.",
+      "claim_type": "EXPLICIT",
+      "source": "For single odorants, the model successfully captures the strongly non-linear peak response for different concentrations of the odorant, the latency in response (Rospars et al., 2003), the quadratic rate of cAMP production (Takeuchi and Kurahashi, 2017), and calcium-based adaptation (Kurahashi and Menini, 1997) (Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 1E and compared to cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "3994b126-f47e-47b4-a98f-c541960d042b",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C25",
+      "claim": "The biophysical model successfully captures the quadratic rate of cAMP production.",
+      "claim_type": "EXPLICIT",
+      "source": "For single odorants, the model successfully captures the strongly non-linear peak response for different concentrations of the odorant, the latency in response (Rospars et al., 2003), the quadratic rate of cAMP production (Takeuchi and Kurahashi, 2017), and calcium-based adaptation (Kurahashi and Menini, 1997) (Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results and compared to cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "5525372e-27fc-47cc-9f65-73317df0f5cc",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C26",
+      "claim": "The biophysical model successfully captures calcium-based adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "For single odorants, the model successfully captures the strongly non-linear peak response for different concentrations of the odorant, the latency in response (Rospars et al., 2003), the quadratic rate of cAMP production (Takeuchi and Kurahashi, 2017), and calcium-based adaptation (Kurahashi and Menini, 1997) (Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 1F-G and compared to cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "b2cbeb34-9233-41c7-aedd-f994d20467ee",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C27",
+      "claim": "Strong amplification by the ion channels renders the mixture response hyper-additive at concentrations close to the sensitivity threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong amplification by the ion channels render the mixture response hyper-additive at concentrations close to the sensitivity threshold; at higher concentrations, as the receptors become saturated and the odorants compete for limited binding sites, the response turns hypo-additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the model based on the biophysical mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "6a87e0b7-bde3-4fee-aaae-970398ad35ad",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C28",
+      "claim": "At higher concentrations, as the receptors become saturated and the odorants compete for limited binding sites, the response turns hypo-additive.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong amplification by the ion channels render the mixture response hyper-additive at concentrations close to the sensitivity threshold; at higher concentrations, as the receptors become saturated and the odorants compete for limited binding sites, the response turns hypo-additive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the model based on the biophysical mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "73019ad7-424f-4be9-b911-d9c147a22e5e",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C29",
+      "claim": "The responses of the same ORN to saturating concentrations of different odorants yield very different firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assumption is motivated by observations made from spike recordings of single rat ORNs to odorant mixtures, where the responses of the same ORN to saturating concentrations of different odorants yield very different firing rates (Rospars et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "090c644b-0f0f-49a1-a586-4be04a1ff8bd",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C30",
+      "claim": "The minimum latency of spiking response to different odorants at saturating concentrations can range from a few hundred milliseconds to a few seconds depending on the odorant-ORN pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence comes from examining the minimum latency of spiking response to different odorants at saturating concentrations (Figure 1E), which can range from a few hundred milliseconds to a few seconds depending on the odorant-ORN pair (Rospars et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model results in Figure 1E and cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "e8173b13-17f6-4b35-9a52-3d7526cc4c02",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C31",
+      "claim": "The lifetime of odorants bound to a receptor is short (of a few milliseconds).",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of odorants bound to a receptor is short (of a few milliseconds) and the probability of activation of a particular G-protein in a 50 ms interval at saturating concentrations is low (Bhandawat et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "a0db1813-b704-4235-976b-e1f25c9a6f8c",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C32",
+      "claim": "The probability of activation of a particular G-protein in a 50 ms interval at saturating concentrations is low.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of odorants bound to a receptor is short (of a few milliseconds) and the probability of activation of a particular G-protein in a 50 ms interval at saturating concentrations is low (Bhandawat et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "a97afe4b-16a1-46a9-8aaf-a8a2f33c8be0",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C33",
+      "claim": "A purely competitive model of mixture interactions captured many cases from previous experiments on ORN mixture responses, but a significant fraction showed discrepancies.",
+      "claim_type": "EXPLICIT",
+      "source": "While a purely competitive model of mixture interactions captured many cases from previous experiments on ORN mixture responses, a significant fraction showed discrepancies (Rospars et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of prior work based on a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "1a122e24-7c23-4d6e-82bb-80ad266c7ea1",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C34",
+      "claim": "Non-competitive antagonistic effects, namely masking, can generate synergy or suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Below, we show how non-competitive antagonistic effects, namely masking, can generate those effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "550c27ab-e52b-477c-ab67-cad09cd5048a",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C35",
+      "claim": "Masking is the phenomenon of non-specific suppression of CNG channel currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Masking is the phenomenon of non-specific suppression of CNG channel currents (Kurahashi et al., 1994; Takeuchi and Kurahashi, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "be85753f-6898-4317-8cc1-781369d1f37f",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C36",
+      "claim": "Experimental evidence suggests that masking agents disrupt the lipid bilayer on the cell membrane, and thereby alter the binding affinity of cAMP to the CNG channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental evidence suggests that masking agents disrupt the lipid bilayer on the cell membrane, and thereby alter the binding affinity of cAMP to the CNG channels (Takeuchi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "65810693-b259-4c11-8cf0-160f61f7ed49",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C37",
+      "claim": "The model reproduces qualitative features of odorant suppression observed in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The model above (and detailed in the Materials and methods) reproduces qualitative features of odorant suppression observed in experiments (Kurahashi et al., 1994; Takeuchi et al., 2013) (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing model results in Figure 2A-B to cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "78ba309c-6d0c-41d1-8f6b-c6c221c24382",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C38",
+      "claim": "Both suppression and synergy are possible mixture interactions that could arise due to masking.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show that both suppression and, counterintuitively, synergy are possible mixture interactions that could arise due to masking (Figure 2C,D), both of which have been observed in experiments with single ORNs (Rospars et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 2C-D and compared to cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "f4e1b95a-b3dd-4541-9335-1faefabe32a6",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C39",
+      "claim": "Suppression and synergy have been observed in experiments with single ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show that both suppression and, counterintuitively, synergy are possible mixture interactions that could arise due to masking (Figure 2C,D), both of which have been observed in experiments with single ORNs (Rospars et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "edbfe1ce-ee69-473a-8a59-7da31356b214",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C40",
+      "claim": "The response curve of the mixture, taking into account competitive binding alone, always lies between the response curves of the individual components.",
+      "claim_type": "EXPLICIT",
+      "source": "This property is a simple consequence of the fact that the number of activated receptors for a mixture (at a particular total concentration) can never be larger/smaller than the most/least effective odorant delivered alone at the same total concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the competitive binding mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "f0528ef3-3f59-4bcd-9efa-5b00d008cf13",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C43",
+      "claim": "It is highly likely that only one component in the mixture occupies the receptors of ORNs of a particular type.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, it is highly likely that only one component in the mixture occupies the receptors of ORNs of a particular type, and thus the response from these ORNs is determined by the activation efficacy of that specific component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "c7482bc0-9411-47cc-b0b4-ef00f023e655",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C47",
+      "claim": "The statistics of activation is conserved as the complexity of the mixture increases when \u03c1=0.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the entire distribution of activations across the ORN ensemble is invariant to the number of components in the mixture, we conclude that the statistics of activation is conserved as the complexity of the mixture increases, that is, the population response is 'normalized' (Figure 4A\u2013C, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "73301cab-1896-439f-b1e6-61eb9d74da4f",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C48",
+      "claim": "Normalization of the mixture response is a direct consequence of antagonism in receptor encoding, independent of any neural circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, such a normalization of the mixture response is a direct consequence of antagonism in receptor encoding, independent of any neural circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key theoretical conclusion of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "6a66bbda-6791-4e30-bcd8-581510e34df7",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C49",
+      "claim": "A sparse representation for a single odorant typically remains sparse for a complex mixture when \u03c1=0.",
+      "claim_type": "EXPLICIT",
+      "source": "The upshot is that a sparse representation for a single odorant typically remains sparse for a complex mixture, allowing for improved performance in the detection of individual components (as quantified in the next Section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion supported by the normalization property.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "fdf09fe8-48d8-4da9-b74d-1605cf25284b",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C51",
+      "claim": "For experimentally observed levels (0.1\u20130.3) of sparsity, it is always advantageous to incorporate non-zero levels of antagonism into odorant encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that for experimentally observed levels (0.1\u20130.3) of sparsity (Saito et al., 2009; Lin et al., 2006; Soucy et al., 2009; Vincis et al., 2012), it is always advantageous to incorporate non-zero levels of antagonism into odorant encoding (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 5B and compared to cited experimental observations of sparsity levels.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "d63846b1-5485-4a2c-aa95-09c133e71a11",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C52",
+      "claim": "Antagonism in receptors yields superior performance in component separation, independent of sparsity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find again that antagonism in receptors yields superior performance, independent of sparsity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through classification performance results shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "6d38f479-1a8b-4356-879c-124248b073e1",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C53",
+      "claim": "The combination of competitive antagonism and masking supports the diverse range of well-established psychophysical effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The upshot is that the combination of competitive antagonism and masking supports the diverse range of well-established psychophysical effects enumerated hereafter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "54992e67-9651-4966-bd9e-020a09fe20aa",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C54",
+      "claim": "Inhibition and synergy naturally arise from competitive antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6A further demonstrates that inhibition and synergy naturally arise from competitive antagonism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "290cf50a-724a-4764-9d78-ac50833d1fed",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C55",
+      "claim": "Stronger inhibition arises at higher concentrations as the glomeruli that are otherwise activated by an odorant when delivered alone are antagonized by the second odorant.",
+      "claim_type": "EXPLICIT",
+      "source": "Stronger inhibition arises at higher concentrations as the glomeruli that are otherwise activated by an odorant when delivered alone are antagonized by the second odorant, leading to lower perceived intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "c6e0775d-e4f0-452d-b7d6-566ccb01aaca",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C56",
+      "claim": "At lower concentrations, competitive antagonism plays a limited role; instead, cooperative effects in the ORN transduction pathway result in hyper-additivity.",
+      "claim_type": "EXPLICIT",
+      "source": "At lower concentrations, competitive antagonism plays a limited role; instead, cooperative effects in the ORN transduction pathway result in hyper-additivity, which pushes a few glomeruli above the activation threshold and gives rise to a small synergistic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "3b79be0e-f2d0-41ed-9255-bbebed50a5e2",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C57",
+      "claim": "Masking is readily explained by the model, where the inferred concentration is below the actual concentration as the masking agent's concentration increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Masking is also readily explained by our model, where the inferred concentration (based on the activated glomeruli) is below the actual concentration as the masking agent's concentration increases (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "8f8d9235-3bf3-4556-b708-e5381d00d4ae",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C58",
+      "claim": "The reciprocal suppression of intense binary mixtures is conspicuously absent for a non-antagonistic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6C shows that the reciprocal suppression of intense binary mixtures is conspicuously absent for a non-antagonistic model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "abc597a6-29fc-4669-89aa-a899d476a3a4",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C59",
+      "claim": "A strong asymmetric suppressive effect is observed when one of the odorants has a capacity for masking.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong asymmetric suppressive effect is observed when one of the odorants has a capacity for masking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "6d6e2e6c-1868-413b-9a15-3b4b2e2fcec8",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C60",
+      "claim": "Overshadowing for binary mixtures is intensified by antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6D demonstrates that overshadowing for binary mixtures is intensified by antagonism, in spite of its superior discriminatory performance for more complex mixtures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through modeling results shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "28f586e1-0916-4a44-8546-80ce875ac72c",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C61",
+      "claim": "Normalization with increasing stimulus intensity or complexity is common in neural systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization with increasing stimulus intensity or complexity is common in neural systems (Carandini and Heeger, 2011) and has been thought of as a circuit property that involves inhibitory synaptic interactions (Wachowiak et al., 2002; Cleland et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "f73a15a0-edf1-484d-8cd1-d98c3bb426f6",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C62",
+      "claim": "In the Drosophila antennal lobe, activation of increasing number of receptors proportionally increases inhibition provided to any one glomerular channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In the olfactory system, this was elegantly demonstrated in the Drosophila antennal lobe, where activation of increasing number of receptors (or glomeruli) proportionally increases inhibition provided to any one glomerular channel (Olsen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "7c2a4f27-ac64-4f40-a954-f862317f5006",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C63",
+      "claim": "In fish and mouse olfactory bulbs, increasing stimulus intensity is thought to recruit populations of interneurons that inhibit principal cells, leading to blunted activity for higher stimulus intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in fish and mouse olfactory bulbs, increasing stimulus intensity is thought to recruit populations of interneurons (namely, short axon cells) that inhibit principal cells, leading to blunted activity for higher stimulus intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about olfactory bulb circuitry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "9f6ee346-9b43-4147-9160-c7126fffa0c5",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C64",
+      "claim": "A mouse with a particular receptor forcibly expressed widely has remarkably similar activation of the mitral cell population despite the massive increase in the input when the cognate odorant is presented.",
+      "claim_type": "EXPLICIT",
+      "source": "In an extreme example of this, a mouse with a particular receptor forcibly expressed widely has remarkably similar activation of the mitral cell population despite the massive increase in the input when the cognate odorant is presented (Roland et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "062a388a-5102-469c-8929-c598d22c8920",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C65",
+      "claim": "Normalization is granted at the level of receptors by purely statistical reasons, without any additional circuit burden.",
+      "claim_type": "EXPLICIT",
+      "source": "The key insight from our model is that normalization is granted at the level of receptors by purely statistical reasons, without any additional circuit burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key theoretical conclusion of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "cd9b1a35-3172-49bd-b9a7-6b1497b99869",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C66",
+      "claim": "In the limit of full statistical decorrelation between ligands' binding affinity and activation efficacy, the distribution of activations across the ORN ensemble for a mixture coincides with that of a single monomolecular odorant.",
+      "claim_type": "EXPLICIT",
+      "source": "In the limit of full statistical decorrelation between ligands' binding affinity and activation efficacy, the distribution of activations across the ORN ensemble for a mixture coincides with that of a single monomolecular odorant, a property which has been confirmed in the fly (Stevens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction that is supported by a citation to experimental work in flies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "5bff432f-d916-4667-9503-6d4cdfc0ee1d",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C67",
+      "claim": "Normalization at the first layer in the sensory pathway helps avoid early saturation effects that would confound the entire processing pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization at the first layer in the sensory pathway helps avoid early saturation effects that would confound the entire processing pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion about the functional advantage of normalization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "552fb7a7-aeb2-45d7-896b-6dee3e531caa",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C68",
+      "claim": "The perceived intensity level of an odorant is empirically related to the true concentration of the odorant as a power function.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments show that the perceived intensity level of an odorant is empirically related to the true concentration of the odorant as a power function, reflecting their proportional relationship on a single logarithmic scale (Lawless, 1997; Wojcik and Sirotin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "d67bc0ba-7e2c-427d-a4ce-a66e42fdd5fa",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C69",
+      "claim": "The intensity level for binary mixtures perception is commonly described via a vector sum of the intensities of each component.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity level for binary mixtures perception is commonly described via a vector sum of the intensities of each component (Berglund et al., 1973; Laing et al., 1984; Berglund and Olsson, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited psychophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "3259d7e0-5ce4-4e07-969e-9669216fe5e5",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C70",
+      "claim": "The vector model captures the level independent, symmetric nature of mixture suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "The vector model captures the level independent, symmetric nature of mixture suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the vector model from psychophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "7a9d7851-e884-4661-bfb2-4610045b2b6b",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C71",
+      "claim": "The biophysical model is consistent with an even broader range of perceptual phenomena, including level independency, synergy, symmetric and asymmetric suppression, masking and overshadowing.",
+      "claim_type": "EXPLICIT",
+      "source": "The biophysical model presented here is consistent with an even broader range of perceptual phenomena, including level independency, synergy, symmetric and asymmetric suppression, masking and overshadowing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the model's explanatory power, supported by the results in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "cb81fe4d-a76b-473d-b83b-e73c49fbd6a1",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C72",
+      "claim": "Global antagonistic interactions at the ORN level may play a major role in non-trivial perceptual phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "The bottomline is that global antagonistic interactions at the ORN level may play a major role in non-trivial perceptual phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the modeling results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "17dfa8b8-57ac-4eea-a7ae-41f10c55bead",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C73",
+      "claim": "ORNs are far from simple relays, and their strong nonlinear interactions crucially affect olfactory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, ORNs are far from simple relays, and their strong nonlinear interactions crucially affect olfactory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement based on the modeling results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "47be46ab-9c12-427c-a4ef-69367d8fe22b",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C74",
+      "claim": "The odorant receptor dynamics in the model is based on a two-step activation process analogous to previous works in vertebrates and the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "The odorant receptor dynamics in our model is based on a two-step activation process analogous to previous works in vertebrates (Rospars et al., 2008; Cruz and Lowe, 2013) and the fly (Nagel and Wilson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model's basis in prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "bd327733-fe4f-4d2e-a02b-e30722a266ab",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C75",
+      "claim": "A key aspect of two-step activation is that it separates sensitivity of ligand binding from activation efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "A key aspect of two-step activation is that it separates sensitivity of ligand binding from activation efficacy (del Castillo and Katz, 1954).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical point supported by a citation to classic work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "e2fefd5e-f03c-457a-adc2-6866e06b4466",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C76",
+      "claim": "At the structural level, the distinction between binding and activation is consistent with observations on the binding and activation of GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "At the structural level, this distinction is consistent with observations on the binding and activation of GPCRs (Strange, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to work on GPCR structure and function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "e291330c-ac04-4d96-94f0-1ad51e2617f3",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C78",
+      "claim": "The explicit formulation of the pathway downstream of receptor activation allows going beyond pure competitive antagonism.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this explicit formulation allows us to go beyond pure competitive antagonism, which was reported to explain about half the cases and thus requires generalizations (Rospars et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model's advantages, referencing limitations of prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "30019b5a-a6ee-4ac4-8962-a02f6f66a0de",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C79",
+      "claim": "Pure competitive antagonism was reported to explain about half the cases of mixture interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this explicit formulation allows us to go beyond pure competitive antagonism, which was reported to explain about half the cases and thus requires generalizations (Rospars et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of prior work from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "4280ba2d-ac94-4aa1-a842-53f76bd52c95",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C80",
+      "claim": "Direct measurements from mammalian ORNs have been obtained in vitro in many biophysical studies studying signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct measurements from mammalian ORNs have been obtained in vitro in many biophysical studies studying signal transduction (Lowe and Gold, 1995; Bhandawat et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental methods supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "223f110d-c09c-43a6-99bf-36826be489cc",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C81",
+      "claim": "There is significant uncertainty about mimicking the native conditions in in vitro preparations in terms of delivery of odors and the ionic composition of the perfusion medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such preparations offer excellent access for measurement, there is significant uncertainty about mimicking the native conditions in terms of delivery of odors (airborne vs solution) as well as the ionic composition of the perfusion medium, which will affect response amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of experimental limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "0e47d9c6-c54a-4342-a298-21b33549512b",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C82",
+      "claim": "Electrical recordings from individual ORNs are difficult and have low yield, but have offered tantalizing hints on different nonlinear interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical recordings from individual ORNs are difficult and have low yield, but have offered tantalizing hints on different nonlinear interactions (Rospars et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of experimental methods and their findings, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "b0c66264-0254-49b0-91a5-407ccd25823a",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C83",
+      "claim": "Glomerular imaging methods offer robust signals and extended recording times to obtain measurements at different concentrations and mixture ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "More extensive data will likely have to rely on glomerular imaging methods (Bozza et al., 2004; Rokni et al., 2014; Mathis et al., 2016), which offer robust signals and extended recording times to obtain measurements at different concentrations and mixture ratios (Soucy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental methods supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "1dcf6e39-5381-4700-b568-776a63fda3cd",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C84",
+      "claim": "There are concerns about potential effects of feedback mediated by olfactory bulb neurons on ORN axon terminals, particularly through GABAb receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Here too, there are some concerns including potential effects of feedback mediated by olfactory bulb neurons on ORN axon terminals, particularly through GABAb receptors (McGann et al., 2005; McGann, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental confounds supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "e099d7b1-6a32-4144-9406-344d79f4623e",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C85",
+      "claim": "Carefully controlled experiments that isolate feedforward sensory signals could reveal the prevalence of antagonistic interactions in mammalian ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Carefully controlled experiments that isolate feedforward sensory signals could reveal the prevalence of antagonistic interactions in mammalian ORNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "b2424789-0264-4456-8b9e-fb5852c38260",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C87",
+      "claim": "If \u03b7 and \u03ba are highly correlated most of the time, then antagonistic interactions will likely have only weak impact on olfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "If these two parameters are highly correlated most of the time, then antagonistic interactions of the sort described in our theory will likely have only weak impact on olfaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about when the model's effects would be minimal.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "399f8b2c-33e3-4a14-b8ba-502ced986c4a",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C88",
+      "claim": "Even a modest decorrelation between \u03b7 and \u03ba will give rise to important effects on ensemble coding of odor mixtures even at the front end of the olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Even a modest decorrelation, on the other hand, will give rise to important effects on ensemble coding of odor mixtures even at the front end of the olfactory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the model's properties.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "631a3748-60fa-4db7-8652-585ea9207df7",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C89",
+      "claim": "Non-competitive antagonistic mechanisms, such as masking effects, have not been widely studied in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-competitive antagonistic mechanisms, such as masking effects discussed here, have not been widely studied in mice and they may only occur for selected odorants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of experimental work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "22dc166b-1dac-470e-ad05-7acf83c48e28",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "claim_id": "C90",
+      "claim": "Masking effects may only occur for selected odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-competitive antagonistic mechanisms, such as masking effects discussed here, have not been widely studied in mice and they may only occur for selected odorants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the scope of masking effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae8a92bd-f8b2-44e3-a094-e035fa030f30",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model incorporates a two-step activation process for odorant-receptor interactions, separating binding sensitivity (\u03ba) from activation efficacy (\u03b7). This separation enables competitive antagonism when an odorant binds strongly but activates weakly compared to other components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C74-C76 establish the theoretical foundation of the two-step model with strong support from prior work (del Castillo and Katz, 1954; Strange, 2008; Rospars et al., 2008). The distinction between binding and activation is well-grounded in GPCR biology and provides the mechanistic basis for competitive antagonism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "87fc734b-53c7-46c2-a6f4-5a903389623d",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The biophysical model successfully captures key features of single odorant responses including non-linear concentration-response curves, response latency, quadratic cAMP production rate, and calcium-based adaptation, as shown in Figure 1E-G.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 demonstrate model validation against multiple experimental observations (Rospars et al., 2003; Takeuchi and Kurahashi, 2017; Kurahashi and Menini, 1997). Figure 1 shows qualitative agreement with cited experimental data across multiple response properties, providing confidence in the model's biophysical realism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "b843efee-2382-4e21-a7c2-911eef85c4e3",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model predicts that mixture responses are hyper-additive at low concentrations near threshold due to ion channel amplification, but become hypo-additive at higher concentrations due to receptor saturation and competitive binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 present theoretical predictions that follow logically from the biophysical mechanisms in the model (Equations 2-3). The concentration-dependent transition from hyper- to hypo-additivity is a natural consequence of the Hill function cooperativity and competitive binding dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "ce9663bb-bea8-4df1-8e60-ef4d1411c964",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model incorporates masking as a non-competitive antagonistic mechanism where agents disrupt the lipid bilayer and alter cAMP-CNG channel binding. This mechanism can generate both suppression and synergy in mixture responses, as shown in Figure 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 establish masking with experimental support (Kurahashi et al., 1994; Takeuchi et al., 2009, 2013; Rospars et al., 2008). Figure 2A-D shows the model reproduces qualitative features of masking-induced suppression and synergy. However, the authors acknowledge these are qualitative fits requiring more experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "ce7ff8cc-81e5-4a44-ac37-6fdf9ea08faa",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For mixtures, typically only one component dominates receptor occupancy for each ORN type due to the broad distribution of binding sensitivities, and the mixture response curve lies between individual component curves under competitive binding alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C43 present logical inferences from the competitive binding mechanism and broad sensitivity distributions. Figure 3B-C demonstrates that the approximation in Equation 5 has ~40% relative error even for 100-component mixtures, which is substantial but the authors argue the qualitative conclusions still hold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "85bd3c0d-dc08-49e1-92f5-5435929f74ae",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When binding affinity and activation efficacy are uncorrelated (\u03c1=0), antagonism produces normalization: the distribution of ORN population responses remains invariant as mixture complexity increases. This occurs through statistical properties of receptor interactions without neural circuitry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C47-C49 present the central theoretical result. Figure 4A-C demonstrates normalization for \u03c1=0 across different mixture complexities and sparsity levels. The mathematical argument is sound given the approximations in Equation 5, though the ~40% error in those approximations (Figure 3C) introduces some uncertainty about the precision of normalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "90b40b44-9961-4592-a456-2a21dbfa9f52",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The antagonistic encoding model (\u03c1=0) outperforms non-antagonistic models (\u03c1=1) in odor discrimination tasks. For experimentally observed sparsity levels (0.1-0.3), incorporating antagonism is always advantageous for figure-ground segregation and component separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C51-C52 are supported by computational experiments in Figure 5. The mutual information analysis (Figure 5A-B) and classification performance (Figure 5C-D) show clear advantages of antagonism for complex mixtures. Figure 5\u2014supplement 1 demonstrates robustness to internal noise. The cited sparsity levels (Saito et al., 2009; Lin et al., 2006; Soucy et al., 2009; Vincis et al., 2012) provide empirical grounding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "043d7241-46c7-40b6-b3c9-11ca246ca3de",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model combining competitive antagonism and masking reproduces diverse psychophysical phenomena including inhibition, synergy, masking, symmetric/asymmetric suppression, and overshadowing, as demonstrated in Figure 6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C53-C60, C71 connect the model to psychophysical observations. Figure 6A-D shows the model qualitatively reproduces multiple perceptual effects. However, the connection is indirect\u2014the model predicts glomerular patterns, and the authors infer perceived intensity from the number of activated glomeruli. This inference algorithm is simple and not validated against actual perceptual data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "e3fdedc3-3aef-4124-95fa-61abb86083fa",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Experimental evidence supports the model's assumption of separate binding and activation parameters: different odorants produce different firing rates and latencies at saturation, and receptor-odorant binding is transient with low activation probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 cite experimental observations (Rospars et al., 2008, 2003; Bhandawat et al., 2005) that motivate the two-parameter model. The evidence is from prior work and appropriately cited, providing empirical justification for the model's key assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "6994f787-fbd0-45a1-bbb2-c2d42f46baea",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pure competitive antagonism explained only about half of mixture interaction cases in prior experiments, motivating the need for additional mechanisms like masking in the current model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C78-C79 accurately characterize limitations of prior work (Rospars et al., 2008) and justify the model's extensions. This is a fair assessment of the literature that motivates the current work's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Normalization is common in neural systems and typically attributed to circuit-level inhibition. The model shows normalization can arise at the receptor level through statistical mechanisms without neural circuitry, avoiding early saturation in the sensory pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 place the work in context of normalization in neuroscience (Carandini and Heeger, 2011; Olsen et al., 2010; Roland et al., 2016). The theoretical conclusion that normalization arises from receptor statistics is well-supported by the mathematical analysis. Claim C66 cites experimental confirmation in flies (Stevens, 2016), strengthening the biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "f1b4d646-5a42-468d-98f6-a7802b94f382",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Psychophysical studies show perceived intensity relates to concentration as a power function, and binary mixture perception follows a vector sum model that captures symmetric suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 accurately summarize established psychophysical findings (Lawless, 1997; Wojcik and Sirotin, 2014; Berglund et al., 1973; Laing et al., 1984; Berglund and Olsson, 1993). These are appropriately cited prior results that provide context for the model's predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "a6d8e119-9f28-4150-891f-9b04a607001c",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Experimental validation of the model faces challenges: in vitro ORN measurements have uncertainties about native conditions, single-cell recordings are difficult, glomerular imaging may have feedback confounds, but carefully controlled experiments could reveal antagonistic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 provide a balanced assessment of experimental approaches and their limitations (Lowe and Gold, 1995; Bhandawat et al., 2005; Rospars et al., 2008; Bozza et al., 2004; McGann et al., 2005, 2013). This is a fair discussion of experimental challenges and future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "959e980b-1656-46a2-a339-59e4d8926687",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model predicts that if \u03b7 and \u03ba are highly correlated, antagonistic effects will be weak, but even modest decorrelation will produce important effects on mixture coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C88 are speculative predictions about when the model's effects would be significant. While logically consistent with the model, these remain untested hypotheses. The actual correlation between \u03b7 and \u03ba in biological systems is unknown, making it unclear whether the model's regime (\u03c1\u22480) is biologically relevant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "1d60581c-e892-46df-828b-426c9c7b63bb",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Non-competitive antagonistic mechanisms like masking have not been widely studied in mice and may only occur for selected odorants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 provide an honest assessment of the limited experimental data on masking in mice. This acknowledges a key limitation in validating this aspect of the model and appropriately identifies it as an area requiring future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establish that natural environments contain complex odor mixtures, ORNs are the first sensory layer, the functional role of ORN-level inhibition is unknown, and prior models assumed linear mixture responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C15-C20 provide accurate background on olfactory system organization and prior modeling approaches. These are well-established facts appropriately cited or represent general knowledge. They effectively motivate the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "544bf4e8-ce1f-4748-ae21-3b8129b2f641",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ORN responses to mixtures are strongly non-additive with antagonistic interactions, and these interactions crucially affect olfactory processing, suggesting ORNs are not simple relays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C72-C73 represent the manuscript's overarching conclusions. C3 is supported by the modeling throughout the paper. C72-C73 are broader interpretive claims that are reasonable given the results but somewhat speculative regarding the actual role in perception. The connection between receptor-level effects and perception remains indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    },
+    {
+      "id": "e247f24a-ea6f-4df9-9e4d-0df7b6c754bd",
+      "content_id": "003f48d3-2533-471c-8f8f-0b17123eb253",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work shows inhibitory feedback is important in the immune system, receptor antagonism has been observed in ORNs but not systematically quantified, and peripheral interactions affect mixture perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 accurately cite and characterize prior experimental work (Fran\u00e7ois et al., 2013; Oka et al., 2004; Takeuchi et al., 2009; Kurahashi et al., 1994; Lawless, 1997; Bell et al., 1987; Laing and Willcox, 1987; Chaput et al., 2012). These appropriately establish the empirical foundation and knowledge gaps motivating the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:42.149056Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "305eb134-5f49-47e2-95a3-736ca1162f40",
+      "result_id": "ae8a92bd-f8b2-44e3-a094-e035fa030f30"
+    },
+    {
+      "claim_id": "74208991-b72f-430c-8de3-376d92cfc840",
+      "result_id": "ae8a92bd-f8b2-44e3-a094-e035fa030f30"
+    },
+    {
+      "claim_id": "47be46ab-9c12-427c-a4ef-69367d8fe22b",
+      "result_id": "ae8a92bd-f8b2-44e3-a094-e035fa030f30"
+    },
+    {
+      "claim_id": "bd327733-fe4f-4d2e-a02b-e30722a266ab",
+      "result_id": "ae8a92bd-f8b2-44e3-a094-e035fa030f30"
+    },
+    {
+      "claim_id": "e2fefd5e-f03c-457a-adc2-6866e06b4466",
+      "result_id": "ae8a92bd-f8b2-44e3-a094-e035fa030f30"
+    },
+    {
+      "claim_id": "82b9e5e9-297d-43cf-864b-eafc2689b5e8",
+      "result_id": "87fc734b-53c7-46c2-a6f4-5a903389623d"
+    },
+    {
+      "claim_id": "970f585c-c579-4b9f-9561-527b3b1e0dd7",
+      "result_id": "87fc734b-53c7-46c2-a6f4-5a903389623d"
+    },
+    {
+      "claim_id": "3994b126-f47e-47b4-a98f-c541960d042b",
+      "result_id": "87fc734b-53c7-46c2-a6f4-5a903389623d"
+    },
+    {
+      "claim_id": "5525372e-27fc-47cc-9f65-73317df0f5cc",
+      "result_id": "87fc734b-53c7-46c2-a6f4-5a903389623d"
+    },
+    {
+      "claim_id": "b2cbeb34-9233-41c7-aedd-f994d20467ee",
+      "result_id": "b843efee-2382-4e21-a7c2-911eef85c4e3"
+    },
+    {
+      "claim_id": "6a87e0b7-bde3-4fee-aaae-970398ad35ad",
+      "result_id": "b843efee-2382-4e21-a7c2-911eef85c4e3"
+    },
+    {
+      "claim_id": "550c27ab-e52b-477c-ab67-cad09cd5048a",
+      "result_id": "ce9663bb-bea8-4df1-8e60-ef4d1411c964"
+    },
+    {
+      "claim_id": "be85753f-6898-4317-8cc1-781369d1f37f",
+      "result_id": "ce9663bb-bea8-4df1-8e60-ef4d1411c964"
+    },
+    {
+      "claim_id": "65810693-b259-4c11-8cf0-160f61f7ed49",
+      "result_id": "ce9663bb-bea8-4df1-8e60-ef4d1411c964"
+    },
+    {
+      "claim_id": "78ba309c-6d0c-41d1-8f6b-c6c221c24382",
+      "result_id": "ce9663bb-bea8-4df1-8e60-ef4d1411c964"
+    },
+    {
+      "claim_id": "f4e1b95a-b3dd-4541-9335-1faefabe32a6",
+      "result_id": "ce9663bb-bea8-4df1-8e60-ef4d1411c964"
+    },
+    {
+      "claim_id": "1a122e24-7c23-4d6e-82bb-80ad266c7ea1",
+      "result_id": "ce9663bb-bea8-4df1-8e60-ef4d1411c964"
+    },
+    {
+      "claim_id": "f0528ef3-3f59-4bcd-9efa-5b00d008cf13",
+      "result_id": "ce7ff8cc-81e5-4a44-ac37-6fdf9ea08faa"
+    },
+    {
+      "claim_id": "edbfe1ce-ee69-473a-8a59-7da31356b214",
+      "result_id": "ce7ff8cc-81e5-4a44-ac37-6fdf9ea08faa"
+    },
+    {
+      "claim_id": "82ca77cf-13c0-4d07-8c76-2a2e7574641a",
+      "result_id": "85bd3c0d-dc08-49e1-92f5-5435929f74ae"
+    },
+    {
+      "claim_id": "75daaf83-7f10-48b8-9266-ade65d338600",
+      "result_id": "85bd3c0d-dc08-49e1-92f5-5435929f74ae"
+    },
+    {
+      "claim_id": "c7482bc0-9411-47cc-b0b4-ef00f023e655",
+      "result_id": "85bd3c0d-dc08-49e1-92f5-5435929f74ae"
+    },
+    {
+      "claim_id": "73301cab-1896-439f-b1e6-61eb9d74da4f",
+      "result_id": "85bd3c0d-dc08-49e1-92f5-5435929f74ae"
+    },
+    {
+      "claim_id": "6a66bbda-6791-4e30-bcd8-581510e34df7",
+      "result_id": "85bd3c0d-dc08-49e1-92f5-5435929f74ae"
+    },
+    {
+      "claim_id": "9c7e696e-f253-4f03-a820-4e089c09ad05",
+      "result_id": "85bd3c0d-dc08-49e1-92f5-5435929f74ae"
+    },
+    {
+      "claim_id": "53abaf91-9424-4431-a36d-635705ed48bd",
+      "result_id": "90b40b44-9961-4592-a456-2a21dbfa9f52"
+    },
+    {
+      "claim_id": "fdf09fe8-48d8-4da9-b74d-1605cf25284b",
+      "result_id": "90b40b44-9961-4592-a456-2a21dbfa9f52"
+    },
+    {
+      "claim_id": "d63846b1-5485-4a2c-aa95-09c133e71a11",
+      "result_id": "90b40b44-9961-4592-a456-2a21dbfa9f52"
+    },
+    {
+      "claim_id": "3cf2a35f-9c52-4112-bd6d-c7e5aadddc4c",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "6d38f479-1a8b-4356-879c-124248b073e1",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "54992e67-9651-4966-bd9e-020a09fe20aa",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "290cf50a-724a-4764-9d78-ac50833d1fed",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "c6e0775d-e4f0-452d-b7d6-566ccb01aaca",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "3b79be0e-f2d0-41ed-9255-bbebed50a5e2",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "8f8d9235-3bf3-4556-b708-e5381d00d4ae",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "abc597a6-29fc-4669-89aa-a899d476a3a4",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "6d6e2e6c-1868-413b-9a15-3b4b2e2fcec8",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "7a9d7851-e884-4661-bfb2-4610045b2b6b",
+      "result_id": "043d7241-46c7-40b6-b3c9-11ca246ca3de"
+    },
+    {
+      "claim_id": "73019ad7-424f-4be9-b911-d9c147a22e5e",
+      "result_id": "e3fdedc3-3aef-4124-95fa-61abb86083fa"
+    },
+    {
+      "claim_id": "090c644b-0f0f-49a1-a586-4be04a1ff8bd",
+      "result_id": "e3fdedc3-3aef-4124-95fa-61abb86083fa"
+    },
+    {
+      "claim_id": "e8173b13-17f6-4b35-9a52-3d7526cc4c02",
+      "result_id": "e3fdedc3-3aef-4124-95fa-61abb86083fa"
+    },
+    {
+      "claim_id": "a0db1813-b704-4235-976b-e1f25c9a6f8c",
+      "result_id": "e3fdedc3-3aef-4124-95fa-61abb86083fa"
+    },
+    {
+      "claim_id": "a97afe4b-16a1-46a9-8aaf-a8a2f33c8be0",
+      "result_id": "6994f787-fbd0-45a1-bbb2-c2d42f46baea"
+    },
+    {
+      "claim_id": "e291330c-ac04-4d96-94f0-1ad51e2617f3",
+      "result_id": "6994f787-fbd0-45a1-bbb2-c2d42f46baea"
+    },
+    {
+      "claim_id": "30019b5a-a6ee-4ac4-8962-a02f6f66a0de",
+      "result_id": "6994f787-fbd0-45a1-bbb2-c2d42f46baea"
+    },
+    {
+      "claim_id": "28f586e1-0916-4a44-8546-80ce875ac72c",
+      "result_id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a"
+    },
+    {
+      "claim_id": "f73a15a0-edf1-484d-8cd1-d98c3bb426f6",
+      "result_id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a"
+    },
+    {
+      "claim_id": "7c2a4f27-ac64-4f40-a954-f862317f5006",
+      "result_id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a"
+    },
+    {
+      "claim_id": "9f6ee346-9b43-4147-9160-c7126fffa0c5",
+      "result_id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a"
+    },
+    {
+      "claim_id": "062a388a-5102-469c-8929-c598d22c8920",
+      "result_id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a"
+    },
+    {
+      "claim_id": "cd9b1a35-3172-49bd-b9a7-6b1497b99869",
+      "result_id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a"
+    },
+    {
+      "claim_id": "5bff432f-d916-4667-9503-6d4cdfc0ee1d",
+      "result_id": "6aa2ee12-e2d9-49e9-adaa-98b462595f4a"
+    },
+    {
+      "claim_id": "552fb7a7-aeb2-45d7-896b-6dee3e531caa",
+      "result_id": "f1b4d646-5a42-468d-98f6-a7802b94f382"
+    },
+    {
+      "claim_id": "d67bc0ba-7e2c-427d-a4ce-a66e42fdd5fa",
+      "result_id": "f1b4d646-5a42-468d-98f6-a7802b94f382"
+    },
+    {
+      "claim_id": "3259d7e0-5ce4-4e07-969e-9669216fe5e5",
+      "result_id": "f1b4d646-5a42-468d-98f6-a7802b94f382"
+    },
+    {
+      "claim_id": "4280ba2d-ac94-4aa1-a842-53f76bd52c95",
+      "result_id": "a6d8e119-9f28-4150-891f-9b04a607001c"
+    },
+    {
+      "claim_id": "223f110d-c09c-43a6-99bf-36826be489cc",
+      "result_id": "a6d8e119-9f28-4150-891f-9b04a607001c"
+    },
+    {
+      "claim_id": "0e47d9c6-c54a-4342-a298-21b33549512b",
+      "result_id": "a6d8e119-9f28-4150-891f-9b04a607001c"
+    },
+    {
+      "claim_id": "b0c66264-0254-49b0-91a5-407ccd25823a",
+      "result_id": "a6d8e119-9f28-4150-891f-9b04a607001c"
+    },
+    {
+      "claim_id": "1dcf6e39-5381-4700-b568-776a63fda3cd",
+      "result_id": "a6d8e119-9f28-4150-891f-9b04a607001c"
+    },
+    {
+      "claim_id": "e099d7b1-6a32-4144-9406-344d79f4623e",
+      "result_id": "a6d8e119-9f28-4150-891f-9b04a607001c"
+    },
+    {
+      "claim_id": "b2424789-0264-4456-8b9e-fb5852c38260",
+      "result_id": "959e980b-1656-46a2-a339-59e4d8926687"
+    },
+    {
+      "claim_id": "399f8b2c-33e3-4a14-b8ba-502ced986c4a",
+      "result_id": "959e980b-1656-46a2-a339-59e4d8926687"
+    },
+    {
+      "claim_id": "631a3748-60fa-4db7-8652-585ea9207df7",
+      "result_id": "1d60581c-e892-46df-828b-426c9c7b63bb"
+    },
+    {
+      "claim_id": "22dc166b-1dac-470e-ad05-7acf83c48e28",
+      "result_id": "1d60581c-e892-46df-828b-426c9c7b63bb"
+    },
+    {
+      "claim_id": "b39b84d3-53c5-4656-b6b9-40abbaab824d",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "d36756bc-f36b-4205-9d53-f25c8aa7609c",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "722c5a4f-7a26-4ec7-987e-e89bf4da8d73",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "cfdc2f98-c071-48bd-b393-22a885a1a746",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "ee3d0f07-bd4d-49d7-b211-a937cabb76a7",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "ab73adcb-c900-4173-9855-2867cd4dba34",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "41369fff-baa8-48a3-9cc9-0727f23fb298",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "1ad64c46-b993-4e40-b87c-f5e68454adf6",
+      "result_id": "85b5031a-cae9-4ba3-bd54-fb15171d2fd2"
+    },
+    {
+      "claim_id": "79d4a9ca-a061-44a8-9892-3c0bc26e1eca",
+      "result_id": "544bf4e8-ce1f-4748-ae21-3b8129b2f641"
+    },
+    {
+      "claim_id": "cb81fe4d-a76b-473d-b83b-e73c49fbd6a1",
+      "result_id": "544bf4e8-ce1f-4748-ae21-3b8129b2f641"
+    },
+    {
+      "claim_id": "17dfa8b8-57ac-4eea-a7ae-41f10c55bead",
+      "result_id": "544bf4e8-ce1f-4748-ae21-3b8129b2f641"
+    },
+    {
+      "claim_id": "bc95ba0d-34ea-4de3-8931-9344b52d1ca4",
+      "result_id": "e247f24a-ea6f-4df9-9e4d-0df7b6c754bd"
+    },
+    {
+      "claim_id": "47191f45-ed6a-4de6-83a8-04605ec6d6cc",
+      "result_id": "e247f24a-ea6f-4df9-9e4d-0df7b6c754bd"
+    },
+    {
+      "claim_id": "25ec5888-e7a9-44eb-93ca-c56298063646",
+      "result_id": "e247f24a-ea6f-4df9-9e4d-0df7b6c754bd"
+    },
+    {
+      "claim_id": "b4139d3f-a1e1-4209-bac4-10ddec81ca45",
+      "result_id": "e247f24a-ea6f-4df9-9e4d-0df7b6c754bd"
+    },
+    {
+      "claim_id": "710a901a-3547-4fa1-afca-d7a16ae8630b",
+      "result_id": "e247f24a-ea6f-4df9-9e4d-0df7b6c754bd"
+    },
+    {
+      "claim_id": "338f6bbc-6fda-4f4d-9a61-d9ccebbfa3fa",
+      "result_id": "e247f24a-ea6f-4df9-9e4d-0df7b6c754bd"
+    }
+  ],
+  "comparisons": []
+}

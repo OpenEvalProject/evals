@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Actinonin was identified through a phenotypic screen of >400 compounds as a novel inhibitor of apicoplast biogenesis. Actinonin caused P. falciparum growth inhibition in a single replication cycle (EC50 = 3.2 \u03bcM), which shifted ~20-fold to 61 \u03bcM in the presence of IPP, demonstrating specific apicoplast inhibition without delayed death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12-C14, C58-C60 provide converging evidence from the screening approach, dose-response measurements with confidence intervals, and IPP rescue experiments. The data clearly distinguish actinonin from known apicoplast inhibitors and establish its novel mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C63",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Actinonin treatment causes loss of apicoplast genome replication and formation of apicoplast-minus parasites in a single replication cycle, distinguishing it from translation inhibitors like chloramphenicol (which show delayed effects) and metabolic inhibitors like fosmidomycin (which do not affect apicoplast biogenesis under IPP rescue).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C61-C65 are supported by qPCR data showing loss of apicoplast genome, microscopy showing apicoplast-minus parasites, and comparative time-course experiments with chloramphenicol and fosmidomycin. The controls effectively demonstrate the specificity and novelty of actinonin's mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "PfPDF is unlikely to be the target of actinonin in P. falciparum. Despite prior reports of actinonin inhibiting PfPDF in vitro (IC50 = 2.5 \u03bcM, 100-1000 fold weaker than bacterial/human PDF), overexpression of PfPDF-myc did not confer resistance, and chloramphenicol did not suppress actinonin's effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C66-C69 provide multiple lines of negative evidence against PfPDF as the target. The overexpression experiment (C18) is a strong genetic test, and the chloramphenicol epistasis experiment (C19) provides functional evidence. However, the authors acknowledge potential limitations in the overexpression approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C70",
+      "C71",
+      "C88"
+    ],
+    "result": "Actinonin causes apicoplast biogenesis defects in T. gondii with delayed death growth inhibition (EC50 = 14 \u03bcM) and formation of apicoplast-minus parasites, supporting a common mechanism-of-action with P. falciparum despite different growth inhibition kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C70-C71, C88 establish that actinonin targets apicoplast biogenesis in both organisms. The EC50 measurement includes confidence intervals, and microscopy confirms apicoplast loss. The different kinetics between organisms is explained by known biological differences in delayed death phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C72",
+      "C73"
+    ],
+    "result": "Five actinonin-resistant T. gondii clones harbored two identical mutations: N805S in TgFtsH1 metalloprotease domain and G404R in a RING finger protein. Genetic replacement of endogenous TgFtsH1 with the N805S allele caused a 3.5-fold shift in actinonin EC50, fully accounting for the resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C72-C73 are strongly supported by whole genome sequencing identifying convergent mutations and genetic complementation experiments validating the N805S mutation's causative role. The 3.5-fold shift matches the resistance observed in selected clones, providing strong evidence for TgFtsH1 as the target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C74"
+    ],
+    "result": "Multiple lines of evidence support TgFtsH1 as the actinonin target: (1) TgFtsH1 localizes to the apicoplast, (2) actinonin is a peptide mimetic with a metal-binding hydroxamic acid that typically binds metalloprotease active sites, and (3) at higher actinonin concentrations that overcome resistance, growth inhibition no longer shows delayed death, suggesting off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C74 provide supporting evidence for the target identification. C27 is based on prior literature, C28 on chemical structure and known binding properties, and C74 on phenotypic observations at different drug concentrations. Together these strengthen the case for FtsH1 as the primary target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C29",
+      "C80",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PfFtsH1 (Pf3D7_1239700) is the P. falciparum ortholog of TgFtsH1 based on phylogenetic analysis and functional evidence. PfFtsH1 undergoes C-terminal cleavage that is dependent on the apicoplast, strongly suggesting apicoplast localization despite prior reports of mitochondrial localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80, C91-C94 combine phylogenetic analysis from cited literature with new experimental evidence of apicoplast-dependent processing. The western blot showing full-length PfFtsH1-FLAG only in apicoplast-minus parasites (C29) provides strong functional evidence for apicoplast trafficking, resolving the apparent contradiction with prior localization studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C81"
+    ],
+    "result": "Knockdown of PfFtsH1 using tetR-DOZI regulation caused a ~4-fold decrease in parasitemia after 3 replication cycles, which was rescued by IPP addition. qPCR showed steady decrease in apicoplast:nuclear genome ratio upon PfFtsH1 knockdown under IPP rescue, demonstrating that PfFtsH1 is required for apicoplast biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C81 are supported by multiple experimental approaches: western blots confirming knockdown, growth assays showing IPP-rescuable growth defects, and qPCR quantifying apicoplast genome loss. The convergence of these methods provides strong evidence that PfFtsH1 is essential for apicoplast biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C82"
+    ],
+    "result": "Knockdown of PfFtsH1 caused a 58-fold decrease in actinonin EC50, demonstrating hypersensitivity analogous to drug-induced haploinsufficiency. This effect was specific to actinonin and not observed with fosmidomycin or chloramphenicol, indicating that PfFtsH1 is required for actinonin's mechanism-of-action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C82 demonstrate a strong and specific chemical-genetic interaction. The 58-fold sensitization is substantial, and the negative controls with fosmidomycin and chloramphenicol (C35-C36) effectively rule out non-specific effects. This provides compelling functional evidence linking PfFtsH1 to actinonin's mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C83",
+      "C84",
+      "C85",
+      "C41"
+    ],
+    "result": "Purified recombinant PfFtsH1(91-612) showed ATPase and protease activity. Actinonin inhibited PfFtsH1 protease activity with IC50 \u22640.6 \u03bcM, while actinamide (lacking the hydroxamate group) was \u226510-fold less potent (IC50 = 7.3 \u03bcM). This decreased enzymatic inhibition correlated with decreased parasite growth inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C83-C85 provide direct biochemical evidence that actinonin inhibits PfFtsH1. The use of catalytically inactive mutants (C83) validates the assays. The structure-activity relationship with actinamide (C40, C85) supports the importance of the metal-binding hydroxamate group and strengthens the case for direct target engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C42"
+    ],
+    "result": "Apicomplexan FtsH1 is the target of actinonin based on four lines of evidence: (1) actinonin-resistant N805S variant in TgFtsH1, (2) disruption of apicoplast biogenesis upon PfFtsH1 knockdown phenocopying actinonin, (3) specific actinonin-induced sensitization to PfFtsH1 knockdown, and (4) in vitro inhibition of PfFtsH1 protease activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C42 summarize the convergent evidence from resistance genetics, functional knockdown, chemical-genetic interaction, and biochemical inhibition. The multiple independent lines of evidence across two organisms provide strong support for FtsH1 as the actinonin target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C49"
+    ],
+    "result": "PfFtsH1 is the first novel factor required for apicoplast biogenesis identified in a phenotypic screen, and the first FtsH homolog shown to be inhibited by a small molecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43, C49 are supported by the novelty of the findings. Prior apicoplast biogenesis factors were identified through bioinformatics/conservation, while FtsH1 was discovered through unbiased phenotypic screening. The claim about first small molecule inhibition of FtsH is supported by the discussion's literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C100"
+    ],
+    "result": "FtsH1 is a druggable antimalarial target with significant advantages: apicoplast biogenesis is required at all proliferative stages, inhibition causes rapid onset without delayed death, resistance selection was unsuccessful suggesting lower likelihood of clinical resistance, and there are precedents for metalloprotease inhibitor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C44-C48, C100 make forward-looking statements about FtsH1 as a drug target. While the biological properties (C45-C46) are supported by data, the predictions about clinical resistance (C47) are based on inability to select resistance in vitro, which may not predict clinical outcomes. The druggability claims (C48) are reasonable given precedents but require future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "FtsH1's role in apicoplast biogenesis is not conserved in mitochondrial or primary chloroplast homologs and likely represents a novel pathway. Based on bacterial FtsH functions in regulated proteolysis, the authors propose that apicomplexan FtsH1 regulates proteolysis of key apicoplast membrane proteins during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51, C105-C110 propose a mechanistic model based on analogy to bacterial FtsH functions. While the lack of conservation (C50) is supported by literature, the proposed mechanism (C51) is speculative. The candidate substrate (C110) is based only on co-occurrence of mutations. This represents a reasonable hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C97"
+    ],
+    "result": "The identification of FtsH1 as actinonin's target demonstrates that target identification based on homology can be misleading, and that unbiased phenotypic screens combined with resistance selection in T. gondii can uncover novel drug targets in poorly characterized pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C90, C97 are supported by the study's findings. The misidentification of PDF as the likely target (C86) and successful use of T. gondii resistance selection (C90) are demonstrated. These represent valid methodological insights from the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Unlike in T. gondii, disruption of apicoplast biogenesis does not necessarily lead to delayed death in P. falciparum, as demonstrated by actinonin causing immediate growth inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by the comparative data showing actinonin causes single-cycle growth inhibition in P. falciparum but delayed death in T. gondii, despite both showing apicoplast biogenesis defects. This represents an important biological insight about species differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Actinonin preferentially targets metalloproteases from MEROPS clan MA. Of six metalloproteases predicted to localize to the apicoplast, only FtsH and PDF are in clan MA, providing additional support for FtsH1 as the target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by cited literature on actinonin specificity and bioinformatic analysis of apicoplast metalloproteases. This provides additional rationale for why FtsH1 rather than other apicoplast proteases is the target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8"
+    ],
+    "result": "The apicoplast is an essential plastid organelle in P. falciparum and related apicomplexan parasites, derived from secondary endosymbiosis, and required for biosynthesis of essential metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C8 represent well-established background knowledge supported by extensive prior literature. These provide essential context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Existing apicoplast inhibitors have significant limitations: translation inhibitors cause delayed death limiting efficacy, fosmidomycin shows 50% recrudescence in clinical trials, and only isoprenoid biosynthesis is essential in blood-stage Plasmodium. This motivates targeting apicoplast biogenesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C53-C57 summarize prior knowledge about limitations of existing apicoplast inhibitors and provide rationale for the study. These are well-supported by cited literature and the authors' prior work, establishing the need for novel approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C52",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The apicoplast represents an ideal source of parasite-specific drug targets. FtsH1 inhibitors could have broad application like antibiotics, and metalloprotease inhibitors have precedents for clinical development, though they require optimization for stability and selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C98-C99, C101-C104 provide context about drug development potential based on established knowledge about apicoplast biology, clinical use of antibiotics as antiparasitics, and metalloprotease inhibitor development. These are reasonable assessments based on prior work.",
+    "result_type": "MINOR"
+  }
+]

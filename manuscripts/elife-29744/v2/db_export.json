@@ -1,0 +1,1874 @@
+{
+  "submission": {
+    "id": "9c6c11cd-78f7-45c3-90dc-d2ae97594426",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:39:00.590921Z",
+    "updated_at": "2025-12-01T22:39:00.590921Z"
+  },
+  "content": [
+    {
+      "id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "submission_id": "9c6c11cd-78f7-45c3-90dc-d2ae97594426",
+      "content_type": "manuscript",
+      "content_text": "# Sculpting ion channel functional expression with engineered ubiquitin ligases\n\n## Authors\n\n- Scott A Kanner<sup>1</sup> ([ORCID: 0000-0002-1579-8858](https://orcid.org/0000-0002-1579-8858))\n- Travis Morgenstern<sup>2</sup> ([ORCID: 0000-0003-2634-8470](https://orcid.org/0000-0003-2634-8470))\n- Henry M Colecraft<sup>1</sup> ([ORCID: 0000-0002-2340-8899](https://orcid.org/0000-0002-2340-8899)) \u2020\n\n### Affiliations\n\n1. Doctoral Program in Neurobiology and Behavior Columbia University College of Physicians and Surgeons New York United States\n2. Department of Pharmacology Columbia University College of Physicians and Surgeons New York United States\n3. Department of Physiology and Cellular Biophysics Columbia University College of Physicians and Surgeons New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe functional repertoire of surface ion channels is sustained by dynamic processes of trafficking, sorting, and degradation. Dysregulation of these processes underlies diverse ion channelopathies including cardiac arrhythmias and cystic fibrosis. Ubiquitination powerfully regulates multiple steps in the channel lifecycle, yet basic mechanistic understanding is confounded by promiscuity among E3 ligase/substrate interactions and ubiquitin code complexity. Here we targeted the catalytic domain of E3 ligase, CHIP, to YFP-tagged KCNQ1 \u00b1 KCNE1 subunits with a GFP-nanobody to selectively manipulate this channel complex in heterologous cells and adult rat cardiomyocytes. Engineered CHIP enhanced KCNQ1 ubiquitination, eliminated KCNQ1 surface-density, and abolished reconstituted K+ currents without affecting protein expression. A chemo-genetic variation enabling chemical control of ubiquitination revealed KCNQ1 surface-density declined with a ~ 3.5 hr t1/2 by impaired forward trafficking. The results illustrate utility of engineered E3 ligases to elucidate mechanisms underlying ubiquitin regulation of membrane proteins, and to achieve effective post-translational functional knockdown of ion channels.\n\n## Introduction\n\nIntegral surface membrane proteins including ion channels, transporters, and receptors are vital to the survival and function of all cells. Consequently, processes that control the surface abundance and composition of membrane proteins are critical determinants of cellular biology and physiology. Impaired surface trafficking of membrane proteins underlies diverse diseases ranging from cystic fibrosis to cardiac arrhythmias (Gelman and Kopito, 2002; Anderson et al., 2014), motivating a need to better understand fundamental mechanisms controlling membrane protein surface density. The surface repertoire of membrane proteins is regulated by multi-layered maturation and trafficking processes (MacGurn et al., 2012; Foot et al., 2017). As such, the mechanisms governing diverse aspects of membrane protein fate is an intensely studied research area.\n\nUbiquitination determines membrane protein functional expression by regulating multiple steps in the membrane protein lifecycle. Ubiquitin is a 76-residue protein that can be covalently attached to lysine residues on polypeptide substrates through the sequential action of three enzymes: a ubiquitin activation enzyme (E1); a ubiquitin-conjugating enzyme (E2); and a ubiquitin ligase (E3), that catalyzes transfer of ubiquitin to substrates. The human genome encodes 2 E1s, 37 E2s, and\u00a0>600 E3 ubiquitin ligases. Ubiquitin contains seven lysine residues (K6, K11, K27, K29, K33, K48, K63) that, together with its N-terminus (Met1), can serve as secondary attachment points to make diverse polyubiquitin chains with different structures and functions (Komander, 2009). Ubiquitination has classically been ascribed to targeting cytosolic proteins for degradation by the proteasome (Hershko and Ciechanover, 1998). However, it is now evident that ubiquitination of both cytosolic and membrane proteins can lead to more nuanced outcomes including regulating protein trafficking/sorting, stability, and/or function (Komander, 2009; Foot et al., 2017). Nevertheless, precisely how ubiquitination regulates such diverse aspects of protein fate\u2014 and membrane protein fate in particular\u2014 is often poorly understood. Factors that complicate analyses include: (1) multiple E3 ligases may ubiquitinate a single substrate; (2) a particular E3 can typically catalyze ubiquitination of multiple substrates; (3) distinct E3 ligases can have preference for particular ubiquitination profiles (e.g. monoubiquitination versus polyubiquitination) and polyubiquitin chain linkages (e.g. K48 versus K63); (4) lack of temporal control over the ubiquitination process.\n\nThe elusive nature of ubiquitin signaling is exemplified by its regulation of diverse voltage-gated ion channels. KCNQ1 (Kv7.1; Q1), is a voltage-gated K+ channel which together with auxiliary KCNE1 subunits give rise to the slowly activating delayed rectifier current IKs that is important for human ventricular action potential repolarization (Barhanin et al., 1996; Sanguinetti et al., 1996). Loss-of-function mutations in Q1 lead to long QT syndrome type 1 (LQT1), a precarious condition that predisposes affected individuals to exertion-triggered cardiac arrhythmias and sudden cardiac death (Tester et al., 2005). In heterologous expression studies, NEDD4-2, a HECT domain E3 ligase, binds a PY motif on Q1 C-terminus; enhances Q1 ubiquitination; down-regulates Q1 expression; and inhibits IKs current (Jespersen et al., 2007). Understanding precisely how NEDD4-2 accomplishes these distinctive effects is confounded by the promiscuity of this E3 ligase in targeting many other proteins that contain PY motifs (Abriel and Staub, 2005; MacGurn et al., 2012; Goel et al., 2015), as\u00a0well\u00a0as a lack of tight temporal control over its action. This could potentially be resolved if it were possible to target distinct E3 ligase activity to Q1/KCNE1 proteins in a selective and temporally controllable manner.\n\nSeveral studies have applied an approach that utilizes engineered E3 ubiquitin ligases to selectively target cytosolic proteins to direct their degradation by the proteasome (Zhou et al., 2000; Hatakeyama et al., 2005; Caussinus et al., 2011; Ma et al., 2013; Portnoff et al., 2014). The general principle involves replacing the intrinsic substrate-targeting module of an E3 ligase with a motif that directs it to a desired target protein. Here, we sought to determine, for the first time, whether this method could be applied to elucidate mechanisms underlying ubiquitin regulation of ion channel complexes. We engineered E3 ubiquitin ligases to selectively target YFP-tagged Q1 or KCNE1 subunits and assessed the impact on channel surface density, stability, and IKs. We found that targeted ubiquitination of Q1/KCNE1 with distinct engineered ligases dramatically diminished channel surface expression without necessarily affecting total protein expression. We developed a chemo-genetic variation of the approach that enabled controllable targeting of an engineered E3 to the channel using chemical heterodimerization. The temporal control afforded by the chemo-genetic method in combination with fluorescence pulse-chase assays revealed that ubiquitination diminished Q1 surface density by selectively limiting channel delivery to the cell surface, and not by enhancing the rate of endocytosis. To demonstrate the generality of the approach, we used the engineered E3 ligase to selectively eliminate surface expression and currents through voltage-gated L-type Ca2+ (CaV1.2) channels. Similar to Q1, targeted ubiquitination of CaV1.2 markedly decreased channel surface density without impacting total expression, emphasizing a fundamental distinction in the impact of targeted ubiquitination between ion channels and previously studied cytosolic proteins. Beyond enabling original mechanistic insights, the approach provides a potent tool to post-translationally manipulate surface expression of ion channel macromolecular complexes in a manner that complements, and provides particular advantages over, well-established and widely used genomic/mRNA interference methods.\n\n## Results\n\n### Design of engineered ubiquitin ligases to manipulate Q1 functional expression\n\nThe lifecycle of surface ion channels and other membrane proteins involves minimally their genesis and folding in the endoplasmic reticulum (ER); post-translational maturation in the Golgi; their delivery to and removal from their site of action on the plasma membrane; and ultimately their demise by degradation in lysosomes or via the proteasome (Figure 1A). Ubiquitination looms as a powerful mechanism to control membrane protein fate since it potentially influences multiple steps in their lifecycle (Figure 1A). Ubiquitination is mediated by a step-wise cascade of three enzymes (E1, E2, E3), resulting in the covalent attachment of the 76-residue ubiquitin to lysines of a target protein (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig1-v2.jpg)\n\n**Figure 1.:** (A) Dynamic trafficking of membrane proteins among subcellular compartments. Degradation can take place from the ER via the proteasome, or through downstream endocytic compartments via the lysosome. Ubiquitin (purple) is a molecular signal important for mediating multiple steps in membrane protein trafficking, function, and degradation. Forward trafficking (green) and reverse trafficking (red) processes are represented. (B) Enzymatic cascade of ubiquitination, including the ATP-dependent activation of ubiquitin (E1), ubiquitin conjugation (E2), and ultimate ubiquitin transfer to target substrate (E3). CHIP is an E3 ligase, recognizing Hsp70-bound substrates via the TPR binding domain and catalyzing their ubiquitination via the U-box domain (hexagon). (C) Schematic for engineering an E3 ubiquitin ligase and potential outcomes on an ion channel substrate. The substrate-binding TPR domain of CHIP is replaced with GFP-binder, vhh4 nanobody, creating nanoCHIP which has novel selectivity towards YFP-tagged Q1 subunits. The bungarotoxin binding site (BBS) epitope (S1\u2013S2) allows for selective labeling of surface Q1 subunits, YFP signal represents total Q1 expression. This experimental paradigm enables robust analysis of Q1 stability, trafficking, and function.\n\nWe sought to develop a system that enabled selective ubiquitination of the voltage-gated K+ channel pore-forming subunit, Q1, to dissect the mechanistic impact of specific post-translational modification of this protein. We took advantage of the modular design of E3 ligases, which typically have distinct substrate-binding and catalytic domains. For example, CHIP (C-terminus of the Hsp70-interacting protein), is a U-box E3 ligase comprised of a catalytic domain that binds E2 and a tetratricopeptide repeats (TPR) targeting domain that binds Hsp70 (Connell et al., 2001; Murata et al., 2003; Zhang et al., 2005). This modular arrangement enables its function for chaperone-mediated ubiquitination of substrate proteins as a quality control mechanism (Figure 1B). We substituted the TPR domain of CHIP with the vhh4 nanobody, which binds GFP/YFP (but not CFP) (Kubala et al., 2010), creating nanoCHIP. We hypothesized that nanoCHIP would selectively target and catalyze ubiquitination of Q1-YFP, leading to three possible (but not mutually exclusive) outcomes of reducing protein stability, altering trafficking, or modulating channel function (Figure 1C).\n\n### nanoCHIP abolishes Q1 surface population, with modest effect on total channel pool\n\nWe utilized optical fluorescence assays to conveniently measure surface and total pools of Q1-YFP in a robust and high throughput manner. We introduced a 13-residue high-affinity bungarotoxin binding site (BBS) into the extracellular S1-S2 loop of Q1, enabling detection of surface channels in non-permeabilized cells with Alexa Fluor 647-conjugated bungarotoxin (BTX647) (Figure 1C and Figure 2) (Aromolaran et al., 2014). The C-terminal YFP tag provides a fluorescent measure of total Q1 expression (Figure 2A). The nanoCHIP construct was generated in a P2A vector that expressed CFP as a separate reporter protein in a 1:1 ratio with nanoCHIP (Figure 2B). We performed two types of control experiments. First, BBS-Q1-YFP was expressed with nanobody-P2A-CFP alone (nano) (Figure 2A). Second, nanoCHIP was co-expressed with BBS-Q1 lacking the C-terminus YFP tag (Figure 2C). We used flow cytometry to rapidly quantify total (YFP) and surface (red; BTX647) Q1 expression in\u00a0~50,000 live cells, with single cell resolution. Control cells (nano\u00a0+\u00a0BBS-Q1-YFP) displayed robust total Q1 expression (YFP signal) in CFP-positive cells (Figure 2D). Test cells expressing nanoCHIP\u00a0+\u00a0BBS-Q1-YFP showed little change in YFP fluorescence compared to control (YFP\u00a0=\u00a0577\u00a0\u00b1\u00a011 a.f.u, n\u00a0=\u00a01727 for nano; YFP\u00a0=\u00a0630\u00a0\u00b1\u00a018 a.f.u, n\u00a0=\u00a0783 for nanoCHIP), suggesting that the presumed targeted ubiquitination did not substantively affect Q1 stability (Figure 2D,E). By contrast, the surface density of BBS-Q1-YFP between the two conditions revealed an entirely different picture. Whereas control cells (nano) displayed a sizable population of surface BBS-Q1-YFP as reported by robust mean red fluorescence signal (BTX647\u00a0=\u00a0822\u00a0\u00b1\u00a026 a.f.u, n\u00a0=\u00a04837), this surface pool was almost completely eliminated in cells co-expressing nanoCHIP (BTX647\u00a0=\u00a055\u00a0\u00b1\u00a02 a.f.u, n\u00a0=\u00a02257) (Figure 2F,G). To assess specificity, we co-expressed nanoCHIP with BBS-Q1. In sharp contrast to the result obtained with BBS-Q1-YFP, nanoCHIP had no effect on surface expression of BBS-Q1 channels (BTX647\u00a0=\u00a0527\u00a0\u00b1\u00a016 a.f.u, n\u00a0=\u00a06425 for nano; BTX647\u00a0=\u00a0633\u00a0\u00b1\u00a024 a.f.u, n\u00a0=\u00a03657 for nanoCHIP) (Figure 2H,I). These data were obtained with a 1:3 transfection ratio of Q1 to nanoCHIP cDNA. Similar results were obtained using transfection ratios of 1:1 and 1:5 (Figure 2\u2014figure supplement 1). As a further control, co-expression of a CHIP deletion mutant (nanoCHIP*) that abolishes E3 ligase activity (Nikolay et al., 2004) did not alter Q1 surface expression, confirming the requirement of catalytic activity for nanoCHIP-dependent surface modulation (Figure 2\u2014figure supplement 2). We used a similar strategy to selectively target distinct E3 ligase classes to Q1-YFP, notably two members of the RING family (nanoNSlmb and nanoMDM2), as well as NEDD4-2 from the HECT family (nanoNEDD4-2) (Figure 2\u2014figure supplements 3 and 4). We obtained qualitatively similar results with nanoNSlmb and nanoMDM2 to what we observed with nanoCHIP in that they all reduced BBS-Q1-YFP surface density with minimal effects on total expression (Figure 2\u2014figure supplement 3). Interestingly, nanoNEDD4-2 diminished total Q1-YFP expression concomitant with the decreased surface expression (Figure 2\u2014figure supplement 4). Both effects on Q1 stability and surface density were abolished with co-expression of a NEDD4-2 catalytic inactive mutant (nanoNEDD4-2*) (Figure 2\u2014figure supplement 4). Given that nanoCHIP had the most robust effect on reducing Q1 surface density (Figure 2\u2014figure supplement 3) we focused the rest of the study on this engineered E3 ligase.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Cartoons of experimental strategies. BBS-Q1-YFP was co-transfected with either nanobody alone (A) or with nanoCHIP (B). Untagged BBS-Q1 co-expressed with nanoCHIP was used as a control to test for specificity of the approach (C). (D) Flow cytometry analyses of total Q1 expression (YFP fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control) or BBS-Q1-YFP\u00a0+\u00a0nanoCHIP (right).~50,000 cells are represented in dot plots here and throughout. Vertical and horizontal lines represent thresholds for CFP and YFP-positive cells, respectively, based on analyses of single color controls. Represented are CFP-positive cells with YFP signal above (green dots) or below threshold (blue dots); YFP-positive cells with CFP signal below threshold (gray dots); and untransfected cells (black dots). (E) Cumulative distribution histograms of YFP fluorescence for BBS-Q1-YFP co-expressed with either nanobody (black line) or nanoCHIP (red line). Plot generated from population of YFP- and CFP-positive cells. Dotted line is threshold value for YFP signal. (F) Flow cytometry analyses of surface Q1 channels (Alexa647 fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control) or BBS-Q1-YFP\u00a0+\u00a0nanoCHIP (right). Representative confocal images are inset. (G) Cumulative distribution histograms of Alexa647 fluorescence for BBS-Q1-YFP co-expressed with either nanobody (black line) or nanoCHIP (red line). Plot generated from population of CFP-positive cells. Dotted line is threshold value for Alexa647 signal. (H,I) Flow cytometry analyses of surface Q1 channels in cells expressing BBS-Q1 with either nanobody alone or with nanoCHIP. Same format as (F,G).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A,C,E) Flow cytometry analyses of surface Q1 channels (Alexa647 fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control) or BBS-Q1-YFP\u00a0+\u00a0nanoCHIP (right), using 1:1 (A), 1:3 (C), and 1:5 (E) transfection ratios of BBS-Q1-YFP:nanoCHIP plasmids. (B,D,F) Cumulative distribution histograms of Alexa647 fluorescence for BBS-Q1-YFP co-expressed with either nanobody (black line) or nanoCHIP (red line).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Flow cytometry analyses of total Q1 expression (YFP fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control), BBS-Q1-YFP\u00a0+\u00a0nanoCHIP (center), and BBS-Q1-YFP\u00a0+\u00a0nanoCHIP* [\u0394128\u2013229] (right). (B) Cumulative distribution histograms of YFP fluorescence for BBS-Q1-YFP co-expressed with either nanobody alone (black line), nanoCHIP (red line), and nanoCHIP* [\u0394128\u2013229] (blue line). (C) Flow cytometry analyses of surface Q1 channels (Alexa647 fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control), BBS-Q1-YFP\u00a0+\u00a0nanoCHIP (center), and BBS-Q1-YFP\u00a0+\u00a0nanoCHIP* [\u0394128\u2013229] (right). (D) Cumulative distribution histograms of Alexa647 fluorescence for BBS-Q1-YFP co-expressed with either nanobody alone (black line), nanoCHIP (red line), and nanoCHIP* [\u0394128\u2013229] (blue line).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Flow cytometry analyses of total Q1 expression (YFP fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control) or BBS-Q1-YFP\u00a0+\u00a0nanoCHIP, nanoNSlmb (termed deGradFP), or nanoMDM2. (B) Cumulative distribution histograms of YFP fluorescence for BBS-Q1-YFP co-expressed with either nanobody (black line) or nanoCHIP (red line), nanoNSlmb (blue line), or nanoMDM2 (orange line). (C) Flow cytometry analyses of surface Q1 channels (Alexa647 fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control) or BBS-Q1-YFP\u00a0+\u00a0nanoCHIP, nanoNSlmb, or nanoMDM2. (D) Cumulative distribution histograms of Alexa647 fluorescence for BBS-Q1-YFP co-expressed with either nanobody (black line) or nanoCHIP (red line), nanoNSlmb (blue line), or nanoMDM2 (orange line).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Flow cytometry analyses of total Q1 expression (YFP fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control), BBS-Q1-YFP\u00a0+\u00a0nanoNEDD4-2 (center), and BBS-Q1-YFP\u00a0+\u00a0nanoNEDD4-2* [C942S] (right). (B) Cumulative distribution histograms of YFP fluorescence for BBS-Q1-YFP co-expressed with either nanobody alone (black line), nanoNEDD4-2 (red line), and nanoNEDD4-2* [C942S] (blue line). (C) Flow cytometry analyses of surface Q1 channels (Alexa647 fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control), BBS-Q1-YFP\u00a0+\u00a0nanoNEDD4-2 (center), and BBS-Q1-YFP\u00a0+\u00a0nanoNEDD4-2* [C942S] (right). (D) Cumulative distribution histograms of Alexa647 fluorescence for BBS-Q1-YFP co-expressed with either nanobody alone (black line), nanoNEDD4-2 (red line), and nanoNEDD4-2* [C942S] (blue line).\n\n### nanoCHIP increases ubiquitination of Q1\n\nQ1 is known to be ubiquitinated and regulated by heterologously expressed wild-type NEDD4-2 (Jespersen et al., 2007). As a prelude to determining whether nanoCHIP enhances ubiquitination of Q1-YFP, we first sought to reproduce the previously reported NEDD4-2-mediated ubiquitination of Q1 (Jespersen et al., 2007). We transiently expressed Q1-YFP either alone (control) or with NEDD4-2 in HEK293 cells. The cells were lysed under denaturing conditions and Q1-YFP was pulled down with anti-Q1 antibody. Western blot of the immunoprecipitated Q1-YFP using anti-Q1 displayed four bands representing the monomeric, dimeric, trimeric, and tetrameric channel species (Figure 3A). Densitometric analyses of the bands indicated that co-expression with NEDD4-2 reduced the total expression of Q1-YFP (Figure 3A; area under the curve), in agreement with previous results (Jespersen et al., 2007). Flow cytometry measurements were also consistent with this result (Figure 3\u2014figure supplement 1). Having confirmed Q1-YFP pulldown, the membrane was stripped and probed with anti-ubiquitin (Figure 3B). Control cells expressing Q1-YFP alone displayed some ubiquitination reflecting the activity of an endogenous E3 ligase(s). Co-expression of NEDD4-2 substantially increased Q1-YFP ubiquitination compared to the control condition (Figure 3B,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig3-v2.jpg)\n\n**Figure 3.:** (A) Left, Q1 pulldowns probed with anti-Q1 antibody from HEK293 cells expressing Q1-YFP\u00a0\u00b1\u00a0NEDD4-2, and untransfected controls (UT). Right, densitometric analyses of anti-Q1 Western blot bands. (B) Left, Anti-ubiquitin labeling of the stripped Western blot from (A). Right, densitometric analyses of anti-ubiquitin Western blot bands. (C) Relative Q1 ubiquitination computed by ratio of anti-ubiquitin to anti-Q1 signal intensity. (D\u2013F) Anti-Q1 and anti-ubiquitin Western blot signals from HEK293 cells expressing Q1-YFP with either nanobody alone or nanoCHIP. Same format as (A\u2013C). **p<0.01, Student\u2019s t test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Flow cytometry analyses of total Q1 expression (YFP fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control) or BBS-Q1-YFP\u00a0+\u00a0NEDD4-2 (right). (B) Cumulative distribution histograms of YFP fluorescence for BBS-Q1-YFP co-expressed with either nanobody alone (black line) or NEDD4-2 (red line). (C) Flow cytometry analyses of surface Q1 channels (Alexa647 fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0nanobody (left, control) or BBS-Q1-YFP\u00a0+\u00a0NEDD4-2 (right). (D) Cumulative distribution histograms of Alexa647 fluorescence for BBS-Q1-YFP co-expressed with either nanobody alone (black line) or NEDD4-2 (red line).\n\nWith the method for detecting Q1-YFP ubiquitination validated, we turned to the effect of nanoCHIP in this biochemical assay. Consistent with the flow cytometry experiments, nanoCHIP did not substantively affect Q1-YFP total expression (Figure 3D). Nevertheless, nanoCHIP significantly augmented Q1-YFP ubiquitination compared to the control condition, although the effect was smaller than observed with NEDD4-2 (Figure 3E,F). As such, our findings suggest that modest changes in total ubiquitination intensity as detected by conventional Western blot can result in substantial functional and cell biological effects on ion channel surface trafficking.\n\n### nanoCHIP regulation of Q1/KCNE1 complexes\n\nPhysiologically, Q1 is typically associated with auxiliary KCNE subunits that are single transmembrane spanning proteins. There are five distinct KCNE subunits (KCNE1-KCNE5), each of which can profoundly shape the outward K+ current waveform when associated with Q1 (Sun et al., 2012). The interaction of KCNE1 with Q1 transforms the current waveform from one which is small and rapidly activating (Q1 alone) to one that is large and slowly activating (IKs; Q1\u00a0+\u00a0KCNE1) (Barhanin et al., 1996; Sanguinetti et al., 1996). The slowly activating kinetics of IKs is crucial to its physiological role in human cardiac action potential repolarization.\n\nWe determined whether nanoCHIP could regulate the Q1/KCNE1 macromolecular complex. Similar to our observations with Q1 alone, nanoCHIP dramatically reduced surface density of BBS-Q1-YFP co-expressed with KCNE1 (Figure 4A\u2013C), while minimally affecting total protein expression (Figure 4\u2014figure supplement 1). This effect was selective, as in cells expressing BBS-Q1\u00a0+\u00a0KCNE1 (lacking a YFP tag), nanoCHIP had no effect on channel surface density (Figure 4D\u2013F). Finally, we wondered whether we could manipulate the surface expression of Q1 by targeting nanoCHIP to the auxiliary KCNE1 subunit. Indeed, in cells expressing BBS-Q1\u00a0+\u00a0KCNE1-YFP, nanoCHIP effectively and selectively eliminated surface channels (Figure 4G\u2013I and Figure 4\u2014figure supplement 1), demonstrating the potential power of the approach to sculpt ion channel macromolecular complexes by targeting accessory proteins. Consistent with these results, nanoCHIP targeted to KCNE1-YFP markedly increased ubiquitination of co-expressed Q1 (Figure 4J,K).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cartoon of BBS-Q1-YFP\u00a0+\u00a0KCNE1. (A) Flow cytometry analyses of surface Q1 channels (Alexa647 fluorescence) in HEK293 cells expressing BBS-Q1-YFP\u00a0+\u00a0KCNE1 with either nanobody (left, control) or nanoCHIP (right). (C) Cumulative distribution histograms of Alexa647 fluorescence for BBS-Q1-YFP co-expressed with either nanobody (black line) or nanoCHIP (red line). (D\u2013F) Schematic, flow cytometry analyses, and cumulative distribution histograms from cells expressing BBS-Q1\u00a0+\u00a0KCNE1 with either nanobody alone or nanoCHIP. Same format as (A\u2013C). (G\u2013I) Schematic, flow cytometry analyses, and cumulative distribution histograms from cells expressing BBS-Q1\u00a0+\u00a0KCNE1-YFP with either nanobody alone or nanoCHIP. Same format as (A\u2013C). (J) Left, Q1 pulldowns probed with anti-Q1 antibody from HEK293 cells expressing Q1\u00a0+\u00a0KCNE1-YFP with nanobody alone, nanoCHIP, or NEDD4-2. UT, untransfected cells. Right, densitometric analyses of anti-Q1 Western blot bands for the different conditions. (K) Left, Anti-ubiquitin labeling of the stripped Western blot from (J). Right, densitometric analyses of anti-ubiquitin Western blot bands.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Flow cytometry analyses of total Q1 expression (YFP fluorescence) in cells expressing BBS-Q1-YFP\u00a0+\u00a0KCNE1 with either nanobody (left, control) or nanoCHIP (right). (B) Cumulative distribution histograms of YFP fluorescence for BBS-Q1-YFP\u00a0+\u00a0KCNE1 co-expressed with either nanobody (black line) or nanoCHIP (red line). (C,D) Flow cytometry analyses, and cumulative distribution histograms from cells expressing BBS-Q1\u00a0+\u00a0KCNE1-YFP with either nanobody alone or nanoCHIP. Same format as (A,B).\n\nWe next examined the impact of nanoCHIP on functional IKs currents, under conditions that mirrored those used to examine channel trafficking and total Q1 expression. Control Chinese hamster ovary (CHO) cells transfected with Q1-YFP\u00a0+\u00a0KCNE1\u00a0+\u00a0nano displayed robust outward K+ currents with the signature slow activation kinetics of IKs, which were essentially eliminated by nanoCHIP (Figure 5A\u2013C). A similar result was observed in HEK293 cells (Figure 5\u2014figure supplement 1). By contrast, nanoCHIP had no effect on IKs reconstituted with subunits that lacked the YFP tag (Figure 5D\u2013F). Finally, switching the YFP tag to KCNE1 also yielded IKs that was significantly reduced by nanoCHIP (Figure 5G\u2013I).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic, Q1-YFP\u00a0+\u00a0KCNE1. (B) Exemplar family of IKs reconsitituted in CHO cells expressing Q1-YFP\u00a0+\u00a0KCNE1 with either nanobody alone (left) or nanoCHIP (right). (C) Population I-V curves for nano (\u25a0, n\u00a0=\u00a05) and nanoCHIP (\u25a0, n\u00a0=\u00a05). (D\u2013F) Schematic, exemplar currents and population I-V curves for CHO cells expressing Q1\u00a0+\u00a0KCNE1 with either nanobody (\u25b2, n\u00a0=\u00a014) or nanoCHIP (\u25b2, n\u00a0=\u00a012). Same format as (A\u2013C). (G\u2013I) Schematic, exemplar currents and population I-V curves for CHO cells expressing Q1\u00a0+\u00a0KCNE1-YFP with either nanobody (\u25cf, n\u00a0=\u00a013) or nanoCHIP (\u25cf, n\u00a0=\u00a08). Same format as (A\u2013C). **p<0.01, Student's t test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Population I-V curves from HEK293 cells expressing Q1-YFP\u00a0+\u00a0KCNE1 with either nanobody alone (\u25a0, n\u00a0=\u00a09) or nanoCHIP (\u25a0, n\u00a0=\u00a05).\n\n### An inducible system for temporal control of Q1 ubiquitination and trafficking\n\nWe next sought to exploit the rapamycin-induced heterodimerization system to develop an approach that enables acute temporal control of ubiquitination of specific target proteins (Crabtree and Schreiber, 1996). We separated the nanoCHIP catalytic (CHIP) and substrate-binding (nano) domains, and fused them to the rapamycin binding proteins FRB and FKBP, respectively (Inoue et al., 2005; Yang et al., 2007) (Figure 6A). FRB-CHIP and FKBP-nano are expected to have a low affinity for each other under basal conditions. Hence, when these two constructs are co-expressed with BBS-Q1-YFP we would not expect any channel ubiquitination by the engineered FRB-CHIP (Figure 6A). Application of the small molecule rapamycin would then facilitate FRB-FKBP interaction, effectively recruiting the CHIP catalytic domain to BBS-Q1-YFP and initiating ubiquitination (Figure 6A). We tested the effectiveness of this inducible nanoCHIP (iN-CHIP) approach by measuring the kinetics of rapamycin-induced decrease in surface density of BBS-Q1-YFP (Figure 6B). Utilizing the flow cytometry-based fluorescence assay, we observed a time-dependent decrease in the surface pool of BBS-Q1-YFP after adding rapamycin. A measurable effect was seen within 20 min of rapamycin addition to the transfected HEK293 cells; the half-life for reduction of surface channels was 209\u00a0\u00b1\u00a017 mins (Figure 6B,C). In control experiments, rapamycin treatment for 20 hr had no impact on Q1 surface density in cells expressing BBS-Q1 together with FRB-CHIP and FKBP-nano (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig6-v2.jpg)\n\n**Figure 6.:** (A) Cartoon showing FKBP/FRB heterodimerization strategy for rapamycin-induced recruitment of engineered E3 ligase (iN-CHIP) to Q1-YFP. (B) Representative flow cytometry dot plots (left) and histograms (right) showing evolution of surface Q1 channels in cells expressing BBS-Q1-YFP\u00a0+\u00a0FRB-CHIP\u00a0+\u00a0FKBP-nano at varying time intervals after rapamycin induction. (C) Plot of normalized mean Q1 surface density (Alexa647 fluorescence) as a function of time after rapamycin induction (\u0394, n\u00a0=\u00a01355\u20131523 cells; N\u00a0=\u00a03). Smooth curve is an exponential decay function fit to the data: $y=Ae^{\\frac{-t}{\\tau}}+y0$, with A\u00a0=\u00a00.87\u00a0\u00b1\u00a00.03, y0\u00a0=\u00a00.10\u00a0\u00b1\u00a00.02, \u03c4\u00a0=\u00a0208.8\u00a0\u00b1\u00a017.4 mins.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Cumulative distribution histograms of Alexa647 fluorescence in cells expressing BBS-Q1\u00a0+\u00a0FKBP-nano\u00a0+\u00a0FRB-CHIP after addition of DMSO (black) or rapamycin (red) for 20 hr.\n\nIn principle, the nanoCHIP-mediated reduction in BBS-Q1-YFP surface density could be due to: a decreased rate of delivery of new Q1 channels to the surface; an increased rate of internalization (or removal) of Q1 channels from the cell surface; or a combination of the two processes. To distinguish among these possibilities, we employed iN-CHIP along with two optical pulse-chase methods to measure the rates of BBS-Q1-YFP delivery to and removal from the cell surface (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic showing optical pulse-chase assay for measuring BBS-Q1-YFP forward trafficking. Cells expressing BBS-Q1-YFP\u00a0+\u00a0FRB-CHIP\u00a0+\u00a0FKBP-nano were induced with rapamycin and initial surface channels blocked by incubation with untagged \u03b1-bungarotoxin (BTX) at 4\u00b0C. Cells were washed and placed back at 37\u00b0C for varying time intervals (5, 10, 20, 40, 60 min) to resume delivery of new channels to the surface membrane. Newly delivered channels were labeled with Alexa Fluor 647 conjugated BTX (BTX647) at 4\u00b0C and analyzed using flow cytometry. (B) Time evolution of BBS-Q1-YFP delivery to the surface without (\u25cf, n\u00a0=\u00a02878\u20133905 cells; N\u00a0=\u00a02) or with (\u25a0, n\u00a0=\u00a02990\u20133469 cells; N\u00a0=\u00a02) rapamycin induction. Smooth curves are fits of an exponential growth function to the data: $y=Ae^{\\frac{t}{\\tau}}+y0$. For \u25cf; A\u00a0=\u00a0\u221245.1\u00a0\u00b1\u00a03.8, y0\u00a0=\u00a044.1\u00a0\u00b1\u00a03.0, \u03c4\u00a0=\u00a013.4\u00a0\u00b1\u00a03.0 mins. For \u25a0; A\u00a0=\u00a0\u2212180.5\u00a0\u00b1\u00a07.0, y0\u00a0=\u00a0179.9\u00a0\u00b1\u00a07.7, \u03c4\u00a0=\u00a036.1\u00a0\u00b1\u00a03.2 mins. (C) Schematic showing optical assay for measuring BBS-Q1-YFP internalization. Cells expressing BBS-Q1-YFP\u00a0+\u00a0FRB-CHIP\u00a0+\u00a0FKBP-nano were induced with rapamycin and initial surface channels labeled with biotin-conjugated BTX (BTX-biotin) at 4\u00b0C. Cells were washed and incubated at 37\u00b0C for varying time intervals (5, 10, 20, 40, 60 min) to allow for internalization of surface channels. The remaining surface channels were labeled with Alexa Fluor 647-conjugated streptavidin (SA-647) at 4\u00b0C. (D) Time evolution of loss of surface BBS-Q1-YFP channels without (\u25cf, n\u00a0=\u00a03430\u20134919 cells; N\u00a0=\u00a02) or with (\u25a0, n\u00a0=\u00a03336\u20134744 cells; N\u00a0=\u00a02) rapamycin induction. Smooth curves are fits of an exponential decay function to the data: $y=Ae^{\\frac{-t}{\\tau}}+y0$. For \u25cf; A\u00a0=\u00a00.93\u00a0\u00b1\u00a00.03, y0\u00a0=\u00a00.06\u00a0\u00b1\u00a00.02, \u03c4\u00a0=\u00a012.8\u00a0\u00b1\u00a01.1 mins. For \u25a0; A\u00a0=\u00a00.98\u00a0\u00b1\u00a00.03, y0\u00a0=\u00a00.03\u00a0\u00b1\u00a00.03, \u03c4\u00a0=\u00a015.3\u00a0\u00b1\u00a01.3 mins.\n\nHEK293 cells were transiently transfected with BBS-Q1-YFP\u00a0+\u00a0FRB-CHIP\u00a0+\u00a0FKBP-nano. To measure rate of BBS-Q1-YFP delivery to the cell surface, we incubated live, non-permeabilized cells at 4\u00b0C to halt all trafficking processes, and exposed them to unconjugated BTX to block all extracellular BBS epitopes initially present at the plasma membrane (pulse). Cells were then incubated at 37\u00b0C for varying epochs during which trafficking processes resumed, including delivery of new BBS-tagged channels to the surface (chase). Cells were then returned to 4\u00b0C and the newly delivered surface channels labeled with BTX647 and quantified by flow cytometry (Figure 7A). When this experiment was conducted in the absence of rapamycin pre-treatment, we observed robust delivery of new BBS-Q1-YFP to the cell surface during the chase period with a half-life of\u00a0~36\u00a0\u00b1\u00a03 mins (Figure 7B). When cells were pretreated with rapamycin for 3 hr, delivery of new channels to the surface plateaued at a value\u00a0~75% lower compared to control (Figure 7B). Thus, iN-CHIP-induced ubiquitination of BBS-Q1-YFP compromises forward trafficking of channels to the cell surface.\n\nTo evaluate channel removal from the surface, we labeled live, non-permeabilized HEK293 cells (expressing BBS-Q1-YFP\u00a0+\u00a0FRB-CHIP\u00a0+\u00a0FKBP-nano) with biotinylated bungarotoxin (BTX-biotin) at 4\u00b0C (pulse). Cells were then incubated at 37\u00b0C for varying time periods to resume trafficking processes (chase). Following the chase period, cells were labeled with streptavidin-conjugated Alexa Fluor 647 at 4\u00b0C. In this paradigm, red fluorescent labeling would only occur on channels that were initially present at the surface and labeled with BTX-biotin during the pulse period. A decrease in fluorescence with increasing chase times would be expected due to internalization of BTX-biotin-labeled channels (Figure 7C). Indeed, control cells (no rapamycin pre-treatment) displayed an exponential decline in red fluorescence with increasing chase time (Figure 7D). Surprisingly, pre-activation of iN-CHIP with a 3 hr rapamycin pre-treatment had no impact on the rate of BBS-Q1-YFP internalization (Figure 7D). Together, the results indicate that nanoCHIP reduces BBS-Q1-YFP surface density by selectively reducing forward trafficking of the channel.\n\n### Impact of nanoCHIP on Q1 expressed in adult cardiomyocytes\n\nUltimately, the general usefulness of the engineered E3 ligase approach to manipulate functional expression of membrane proteins hinges critically on the system performing robustly in native cells and tissues which have a more complex intracellular environment compared to heterologous cells. We tested the ability of nanoCHIP to suppress the surface density of BBS-Q1-YFP expressed in adult rat ventricular myocytes. We generated adenoviral vectors for BBS-Q1-YFP, nano-P2A-CFP, and nanoCHIP-P2A-CFP and used these to infect cultured cardiomyocytes. Control cells expressing BBS-Q1-YFP\u00a0+\u00a0nano displayed strong YFP/CFP fluorescence as well as QD655 signal on the sarcolemma, indicating robust cell surface density of the channel (Figure 8A,C). By contrast, cardiomyocytes co-expressing nanoCHIP showed a sharply depressed QD655 signal (Figure 8B,C). YFP fluorescence was not significantly different between the two experimental conditions (Figure 8D). These data demonstrate that nanoCHIP is effective in cardiomyocytes, and selectively down-regulates BBS-Q1-YFP surface pool in this native cellular context.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig8-v2.jpg)\n\n**Figure 8.:** (A) Exemplar adult rat cardiomyocyte expressing BBS-Q1-YFP\u00a0+\u00a0nanobody-P2a-CFP. Fluorescence shows surface Q1 (QD655 signal, left), total Q1 (YFP signal, middle) and marker for nanobody expression (CFP signal, right). (B) Exemplar cardiomyocyte co-expressing BBS-Q1-YFP and nanoCHIP. Same format as (A). (C) Comparison of surface Q1 channels in cardiomyocytes co-expressing either nanobody (\u25cf, n\u00a0=\u00a024) or nanoCHIP (\u25a0, n\u00a0=\u00a020). ***p<0.0001, Student\u2019s unpaired t test. (D) Comparison of total Q1 channels in cardiomyocytes co-expressing either nanobody (\u25cf, n\u00a0=\u00a024) or nanoCHIP (\u25a0, n\u00a0=\u00a020).\n\n### nanoCHIP selectively down-regulates surface CaV1.2 channels\n\nTo test the generalizability of the engineered E3 ligase approach for regulating ion channels, we probed whether nanoCHIP could modulate the trafficking of a recombinant voltage-gated calcium channel (CaV1.2). Cav1.2 mediates excitation-contraction coupling and excitation-transcription coupling in heart and neurons, respectively, and is comprised of a pore-forming \u03b11C and accessory (\u03b2, \u03b12\u03b4, \u03b3) subunits (Catterall, 2000). We attached YFP to the C-terminus of \u03b11C to render it a putative substrate for nanoCHIP, and a BBS epitope tag on an extracellular loop to enable fluorescent detection of surface channels (Figure 9A) (Yang et al., 2010; Subramanyam et al., 2013). Similar to our observations with Q1, nanoCHIP selectively eliminated the surface CaV1.2 pool with no impact on total BBS-\u03b11C-YFP expression (Figure 9B\u2013E). Consistent with these results, nanoCHIP essentially abolished CaV1.2 currents reconstituted in HEK 293 cells (Figure 9F,G).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/29744/elife-29744-fig9-v2.jpg)\n\n**Figure 9.:** (A) Schematic of CaV1.2 pore-forming \u03b11C and auxiliary \u03b2 subunit complex. An extracellular BBS epitope tag placed on the domain II S5-S6 loop permits detection of surface channels using Alex Fluor647-conjugated bungarotoxin. A YFP tag on \u03b11C C-terminus reports on the total expression and serves as a docking site for nanoCHIP. (B) Flow cytometry analyses of total \u03b11C expression (YFP fluorescence) in cells expressing BBS-\u03b11C-YFP + \u03b22a together with either nanobody (left, control) or nanoCHIP (right). (C) Cumulative distribution histograms of YFP fluorescence for BBS-\u03b11C-YFP + \u03b22a co-expressed with either nanobody (black line) or nanoCHIP (red line). (D) Flow cytometry analyses of surface \u03b11C (Alexa647 fluorescence) in cells expressing BBS-\u03b11C-YFP + \u03b22a + nanobody (left, control) or BBS-\u03b11C-YFP + \u03b22a + nanoCHIP (right). (E) Cumulative distribution histograms of Alexa647 fluorescence for BBS-\u03b11C-YFP + \u03b22a co-expressed with either nanobody (black line) or nanoCHIP (red line). (F) Exemplar Ba2+ currents from CaV1.2 channels reconstituted in HEK293 cells expressing \u03b11C-YFP + \u03b22a with either nanobody alone (left) or nanoCHIP (right). (G) Population I-V curves for \u03b11C-YFP + \u03b22a reconstituted with either nano (\u25a0, n\u00a0=\u00a010) or nanoCHIP (\u25a0, n\u00a0=\u00a014). *p<0.05, Student's unpaired t test.\n\n## Discussion\n\nIn this work, we have developed a toolset that enables post-translational ubiquitination of proteins in a specific and controllable manner, and applied these to study ubiquitin regulation of two distinct ion channels\u2014 KCNQ1 and CaV1.2. The approach has two major utilities: (1) it provides a method to facilitate mechanistic understanding of how ubiquitination may regulate diverse aspects of membrane protein fate including, trafficking, stability, and function; and (2) it provides a method for regulating functional expression of ion channel macromolecular complexes in a manner that complements, and has particular advantages over, pre-existing genomic/mRNA interference technologies. We discuss these two aspects of the work in the context of previous studies.\n\n### Complexities in decoding ubiquitin regulation of membrane proteins\n\nThe precise mechanisms and signals regulating the dynamic trafficking of ion channels among membrane compartments are not completely understood and difficult to study, in part, due to their complexity and a lack of enabling tools. This is a serious limitation given that a number of ion channelopathies (e.g. cystic fibrosis, epilepsy, Liddle syndrome, cardiac arrhythmias) may arise due to dysregulation in ion channel surface expression (Abriel and Staub, 2005).\n\nUbiquitination is a critical post-translational modification capable of regulating diverse aspects of protein fate including trafficking, sorting, and stability. Several ion channels and transporters are known to be regulated by ubiquitination, including ENaC, ClC-5, KCNQ1, and NaV channels, which have all been found to be regulated by NEDD4-like family ubiquitin ligases (Staub et al., 1997; Abriel et al., 1999; Schwake et al., 2001; Fotia et al., 2004; van Bemmelen et al., 2004; Abriel and Staub, 2005; Jespersen et al., 2007). Many of these channels possess PY motifs (P-P-X-Y-X-X-\u03d5 where P is proline, Y is tyrosine, X is any amino acid, and \u03d5 is a hydrophobic residue) to which NEDD4-like proteins bind using WW protein interaction modules. In co-expression studies, NEDD4-like proteins have been shown to bind to these membrane proteins, to increase their ubiquitination, and to promote their degradation presumably via targeting to lysosomes (Staub et al., 1996; Staub et al., 1997; Abriel et al., 1999). Nevertheless, significant questions remain regarding underlying mechanisms due to complexities in the ubiquitin regulatory system that arises at three levels. First, multiple E3 ligases may converge to regulate a single substrate. Second, a single E3 ligase such as NEDD4-2 catalyzes ubiquitination of multiple substrates. Third, distinct E3 ligases can give rise to monoubiquitination or polyubiquitin chains with differing lysine chain linkages and, thus, divergent functional consequences (Abriel and Staub, 2005; Komander, 2009; MacGurn et al., 2012; Foot et al., 2017).\n\nThe method of specifically targeting E3 catalytic domains to selected membrane proteins offers opportunities to dissect these inherent intricacies of the ubiquitin regulatory system. Using this approach, our results yield new insights into ubiquitin regulation of Q1 and CaV1.2 channels. First, we found that nanoCHIP increased ubiquitination of both YFP-tagged Q1 and CaV1.2 without significantly impacting total protein expression, demonstrating that mere ubiquitination of these channels is not sufficient to direct their degradation. By contrast, NEDD4-2 both enhances ubiquitination and decreases stability of Q1 (Jespersen et al., 2007) (Figure 3A and Figure 3\u2014figure supplement 1). A possible explanation for this difference could lie in the fact that NEDD4-like ubiquitin ligases catalyze ubiquitination of multiple protein substrates, including components of the ESCRT complex involved in sorting membrane proteins on endosomes into multi-vesicular bodies and lysosomes (MacGurn et al., 2012). Alternatively, the intrinsic differences in the type of ubiquitination conferred between NEDD4-2 and CHIP E3 ligase could be important. The finding that nanoNEDD4-2 was more effective than nanoCHIP in reducing Q1 stability, mirroring full-length NEDD4-2, is consistent with this interpretation. Overall, these results emphasize that distinct ligases can differentially impact the stability and subcellular localization of ion channels. Moreover, this work illustrates how engineered E3 ligases can be utilized to systematically and selectively probe the impact of particular E3 ligases on target proteins in the complex cellular environment. The targeted E3 ligase approach is complementary to a recently developed method that uses ubiquitin variants that are selective for distinct HECT ligases, and can either activate or inhibit their cognate E3 (Zhang et al., 2016).\n\nA second unique observation was that iN-CHIP suppressed Q1 surface density by selectively diminishing forward trafficking of the channel, with no apparent effect on the rate of endocytosis. A common assumption is that ubiquitination of membrane proteins enhances their internalization from the cell surface, although recent results suggest a more complex picture in mammalian cells. For example, the E3 ligase Cbl is important to the internalization of activated epidermal growth factor receptors (EGFRs). Nevertheless, mutation of ubiquitination sites on EGFRs did not abolish their endocytosis (Huang et al., 2007). Similarly, a ubiquitin-deficient \u03b22 adrenergic receptor was also internalized to a similar extent as the wild type protein (Shenoy et al., 2001). A complication in our experimental system is that Q1 displays a basal level of ubiquitination due to the activity of an endogenous E3 ligase of unknown identity. It is possible that this basal level of ubiquitination is sufficient to set a level of internalization that is not further enhanced by nanoCHIP.\n\nThe iN-CHIP-induced decrease in forward trafficking is intriguing though questions remain regarding the mechanistic bases of this effect. There are endogenous ubiquitin-mediated quality control mechanisms that would be expected to limit forward trafficking of membrane proteins. For example, the ER-associated degradation (ERAD) pathway is a prominent quality control mechanism which is accomplished by a chaperone-mediated ubiquitination of misfolded membrane proteins which are then retrotranslocated to the cytosol and targeted to the proteasome for degradation (MacGurn et al., 2012; Foot et al., 2017). There are also ubiquitin-dependent quality control mechanisms present at the Golgi which results in the diversion of membrane proteins to endosomes where they are sorted by the ESCRT system into multi-vesicular bodies and fusion with lysosomes (Fire et al., 1998; MacGurn et al., 2012; Foot et al., 2017). Both these quality control pathways result in the degradation of target proteins which is fundamentally different from our observations of the impact of nanoCHIP on Q1 and CaV1.2 channels. Ultimately, precise identification of the intracellular compartments in which nanoCHIP arrested Q1 and CaV1.2 channels reside will be important for deducing the mechanism of the compromised forward trafficking of these channels.\n\n### Engineered E3 ligase approach as a tool to manipulate functional expression of membrane proteins\n\nEliminating protein function by preventing expression or with pharmacological agents is a cornerstone of modern biological research and disease therapy. Several approaches have been developed to eradicate expression of target proteins by interference at the genomic (knockout, zinc finger nucleases, TALENs, CRISPR/Cas) or mRNA (siRNA, shRNA, microRNA) levels (Fire et al., 1998; Gaj et al., 2013; Doudna and Charpentier, 2014; Boettcher and McManus, 2015). These methods are widely used and powerful, but do have certain limitations that may be addressable with the tools developed here. The temporal control and resolution of mRNA interference methods is relatively poor because they are dependent on the degradation of the targeted native protein. For stable proteins with a long half-life this can adversely impact the efficacy of the mRNA interference approach. This gap can be potentially addressed by post-translational degradation of target proteins using engineered ubiquitin ligases. Indeed, several groups have utilized this approach to target diverse cytosolic proteins for degradation in situ. Yet none to date have applied this approach to ion channels, a specialized class of proteins that rely on a very different post-translational lifecycle of maturation, sorting, and trafficking.\n\nThe first implementation of targeted ubiquitination exploited SKP1-CUL1-F-box (SCF) E3 ligase complexes, in which a peptide motif was fused to a modular F-box-domain-containing protein in order to target the retinoblastoma tumor suppressor protein for degradation by a Cullin/RING E3 ligase complex (Zhou et al., 2000). Seeking a more generalizable approach, Caussinius et al fused the N-terminus F-box domain of Slmb (a Drosophila melanogaster F-box protein) to vhhGFP4 (NSlmb-vhhGFP4, also termed deGradFP), which effectively degraded various GFP-tagged proteins in Drosophila (Caussinus et al., 2011). Yet because approaches that exploit SCF complexes have the potential to sequester endogenous components by over-expressed engineered F-box proteins (Hatakeyama et al., 2005; Portnoff et al., 2014), other studies have utilized E3 ligases that are not similarly reliant on endogenous scaffold proteins for their mechanism of action. One such approach replaced the substrate binding (TPR) domain of CHIP to enable targeted ubiquitination and degradation of the proto-oncogenes c-Myc (Hatakeyama et al., 2005) and K-Ras (Ma et al., 2013). Further proof of concept experiments replaced the TPR of CHIP with intrabodies directed against \u03b2-galactosidase and maltose binding protein, which yielded effective destruction of these target proteins in transfected HEK293 cells (Portnoff et al., 2014). More recently, a technique referred to as Trim-Away exploits the high affinity of the E3 ligase TRIM21 for the Fc domain of antibodies for selective degradation of target proteins (Clift et al., 2017).\n\nAgainst this background, nanoCHIP represents a hybrid of these previously engineered E3 ligases, wherein the TPR region of CHIP is replaced with a vhhGFP4 nanobody. Without exception, all previous renditions of this technology have relied on degradation of target proteins as the ultimate expression of efficacy. In comparison, our results suggest a fundamental difference between ion channels and cytosolic proteins in which targeted ubiquitination with nanoCHIP (as well as nanoNSlmb and nanoMDM2) yielded impaired trafficking and functional inactivation without frank degradation of the protein. As such, our results indicate that absolute degradation is not necessary for potent functional knockdown of Q1 and CaV1.2 channels, and highlight the importance of employing functional/cell biological assays to assess the efficacy of post-translational knockdown. Furthermore, we demonstrate here that nanoNEDD4-2 can selectively degrade the ion channel Q1 in situ, emphasizing the potential for customized protein manipulation with engineered E3 ligases.\n\nOne advantage of this post-translational knockdown approach is the potential to uniquely manipulate ion channel macromolecular complexes. Many ion channels, including Q1, are multi-protein complexes made up minimally of pore-forming proteins associated with accessory subunits. For example, Q1 can associate with any of five KCNE auxiliary subunits (KCNE1-KCNE5), each of which confers distinctive functional properties (Sun et al., 2012). Moreover, some KCNE subunits may interact with other K+ channel pore-forming subunits (Abbott et al., 1999; Abbott, 2016). Cardiac ventricular myocytes express all five KCNE subunits together with Q1 (Radicke et al., 2006). Thus, a method to selectively inactivate protein complexes composed of specific Q1/KCNE combinations in heart cells could be powerful in illuminating the physiological logic for having multiple KCNE subunits expressed in heart cells. The capability to inactivate specific macromolecular complexes is beyond the capacity of genomic and mRNA interference approaches since simply knocking out expression of a particular KCNE could have reverberations on multiple channel types, thereby limiting specificity. By contrast, post-translational based methods such as the engineered E3 ligase approach potentially offer a platform to address this blind spot in macromolecular complex inactivation. The observation that targeting nanoCHIP to KCNE1 effectively arrests trafficking of Q1 offers rational strategies in pursuit of this goal.\n\nFinally, it is worth commenting on potential therapeutic dimensions of our findings. Gain-of-function mutations in distinct ion channels cause diverse diseases including but not limited to: (NaV1.7) inherited erythromelalgia and paroxysmal extreme pain disorder (Waxman, 2013); (CaV2.1) familial hemiplegic migraine (Pietrobon, 2010); (CaV1.2) Timothy syndrome (Splawski et al., 2004); (TrpV4) heritable skeletal dysplasia (Rock et al., 2008); (KCNQ1 and HERG) short QT syndrome and familial atrial fibrillation (Giudicessi and Ackerman, 2012). Targeted ubiquitination of overactive channels may provide a viable therapeutic strategy for some gain-of-function channelopathies. Although the nano-E3 ligases reported here are only effective against GFP/YFP-tagged proteins and do not target endogenous proteins, this is addressable by development of antibody mimetic proteins capable of binding specific target peptides in situ with high affinity. Various methods to develop such antibody mimetic proteins have recently emerged, including; nanobodies, single chain variable fragments (scFv), DARPins, and FingRs/monobodies (Koide et al., 1998; Pardon et al., 2014; Pl\u00fcckthun, 2015; Gross et al., 2016; Sha et al., 2017). Furthermore, a chemical strategy has been developed that utilizes hetero-bivalent small molecules referred to as PROTACS (proteolysis-targeting chimeras) to bridge endogenous substrates to endogenous ubiquitin ligases (Schneekloth et al., 2004; Lai and Crews, 2017). Our results suggest that development of PROTACS capable of selectively targeting endogenous E3 ubiquitin ligases to ion channels may be a promising therapy for diverse cardiovascular and neurological diseases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>gene (human)</td>\n      <td>KCNQ1</td>\n      <td></td>\n      <td>NM_000218</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>gene (rabbit)</td>\n      <td>Cav1.2</td>\n      <td></td>\n      <td>NM_001136522</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (E. coli)</td>\n      <td>XL10-Gold</td>\n      <td>Agilent</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cell line (human)</td>\n      <td>HEK293</td>\n      <td>other</td>\n      <td>RRID:CVCL_0045</td>\n      <td>Laboratory of Robert Kass</td>\n    </tr>\n    <tr>\n      <td>cell line (human)</td>\n      <td>CHO</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0214</td>\n      <td>CHO-K1, ATCC, CCL-61</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>nano-P2A-CFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Made from GFP-nanobody (vhhGFP4) (Kubala et al., 2010); see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>nanoCHIP-P2A-CFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Made by gene synthesis (Genewiz); see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>nanoCHIP*-P2A-CFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Made by PCR; see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>nanoNSlmb-P2A-CFP</td>\n      <td>this paper; PMID: 22157958</td>\n      <td></td>\n      <td>Made from pcDNA3_NSlmb-vhhGFP4 (Addgene #35579) (Caussinus et al., 2011); see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>nanoMDM2-P2A-CFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Made from pcDNA3 MDM2 WT (Addgene #16233) (Zhou et al., 2001); see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>CFP-P2A-nanoNEDD4-2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Made from PCI_NEDD4L (Addgene #27000) (Gao et al., 2009); see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>CFP-P2A-nanoNEDD4-2*</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of above; see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>CFP-P2A-NEDD4-2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Made from PCI_NEDD4L (Addgene #27000) (Gao et al., 2009); see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>iN-CHIP</td>\n      <td>this paper</td>\n      <td></td>\n      <td>FRB:CHIP-P2A-CFP-P2A-FKBP:nano; see molecular biology and cloning</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>BBS-KCNQ1-YFP</td>\n      <td>PMID: 25344363</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>BBS-KCNQ1</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>KCNQ1-YFP</td>\n      <td>PMID: 25344363</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>KCNQ1</td>\n      <td>PMID: 25344363</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>KCNE1-YFP</td>\n      <td>PMID: 25344363</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>KCNE1</td>\n      <td>PMID: 25344363</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>BBS-a1C-YFP</td>\n      <td>PMID: 20308247; PMID: 24003157</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>a1C-YFP</td>\n      <td>PMID: 20308247</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>B2a</td>\n      <td>PMID: 20308247</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>biological sample (R. norvegicus)</td>\n      <td>Adult Heart Ventricular Cells</td>\n      <td>PMID: 19532115</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Anti-Q1 antibody, APC-022</td>\n      <td>Alomone</td>\n      <td>RRID:AB_2040099</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Anti-Ubiquitin, VU1</td>\n      <td>LifeSensors</td>\n      <td></td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>Protein A/G Sepharose beads</td>\n      <td>Rockland</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>a-bungarotoxin, Alexa Fluor 647 conjugate</td>\n      <td>Life Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>a-bungarotoxin, Biotin-XX conjugate</td>\n      <td>Life Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>a-bungarotoxin</td>\n      <td>Life Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>Streptavidin, Alexa Fluor 647 conjugate</td>\n      <td>Life Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>Streptavidin, Qdot 655 conjugate</td>\n      <td>Life Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>AdEasy Adenoviral Vector Systems</td>\n      <td>Stratagene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>X-tremeGENE HP DNA Transfection Reagent</td>\n      <td>Roche</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>QuikChange Lightning Site-Directed Mutagenesis Kit</td>\n      <td>Stratagene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Rapamycin</td>\n      <td>Sigma</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>FlowJo</td>\n      <td></td>\n      <td>RRID:SCR_008520</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>PulseFit</td>\n      <td>HEKA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Origin</td>\n      <td></td>\n      <td>RRID:SCR_014212</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Graphpad Prism</td>\n      <td></td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Molecular biology and cloning of plasmid vectors\n\nA customized bicistronic vector (xx-P2A-CFP) was synthesized in the pUC57 vector, in which coding sequence for P2A peptide was sandwiched between an upstream multiple cloning site and enhanced cyan fluorescent protein (CFP) (Genewiz, South Plainfield, NJ). The xx-P2A-CFP fragment was amplified by PCR and cloned into the PiggyBac CMV mammalian expression vector (System Biosciences, Palo Alto, CA) using NheI/NotI sites. To generate nano-xx-P2A-CFP, we PCR amplified the coding sequence for GFP nanobody (vhhGFP4) and cloned it into xx-P2A-CFP using NheI/AflII sites. The nanoCHIP construct was created by gene synthesis (Genewiz), and featured the coding sequence for GFP nanobody (vhhGFP4) (Kubala et al., 2010) in frame with the minimal catalytic unit of CHIP E3 ligase (residues 128\u2013303), separated by a flexible GSG linker. This fragment was amplified by PCR and cloned into the xx-P2A-CFP vector using NheI/AflII sites. To create the catalytically inactive nanoCHIP*, we deleted the coiled-coil domain [\u0394128\u2013229] as previously described (Nikolay et al., 2004), by amplifying the U-box domain of CHIP E3 ligase (residues 230\u2013303), and cloned this fragment into nano-xx-P2A-CFP using AscI/AflII sites separated by a flexible GSG linker.\n\nNSlmb:nano-P2A-CFP was derived from pcDNA3_NSlmb-vhhGFP4 (Addgene #35579,\u00a0Cambridge,\u00a0MA) (Caussinus et al., 2011). We PCR amplified the NSlmb-vhhGFP4 fragment and cloned it into xx-P2A-CFP using NheI/AflII sites. To generate nanoMDM2, we PCR amplified the RING domain (residues 432\u2013491) from MDM2 (Addgene #16233) (Zhou et al., 2001) and cloned this fragment into nano-xx-P2A-CFP using AscI/AflII sites. To create nanoNEDD4L we first PCR amplified the HECT domain (residues 596\u2013975) of NEDD4L (PCI_NEDD4L; Addgene #27000) (Gao et al., 2009) and cloned this fragment into nano-xx-P2A-CFP using AscI/AflII sites. The resulting construct, nanoNEDD4L-P2A-CFP expressed poorly so we swapped positions of the nanoNEDD4L and CFP. We first generated CFP-P2A-xx and then PCR amplified nanoNEDD4L. The resulting fragment was cloned into CFP-P2A-xx using BglII/NotI sites. To create the catalytically inactive nanoNEDD4-2*, we introduced a point mutation at the catalytic cysteine residue [C942S] by site-directed mutagenesis.\n\nKCNQ1/E1 constructs were made as described previously (Aromolaran et al., 2014). Briefly, overlap extension PCR was used to fuse enhanced yellow fluorescent proteins (EYFP) in frame to the C-terminus of KCNQ1 and KCNE1. A 13-residue bungarotoxin-binding site (BBS; TGGCGGTACTACGAGAGCAGCCTGGAGCCCTACCCCGAC) (Sekine-Aizawa and Huganir, 2004; Yang et al., 2010) was introduced between residues 148\u2013149 in the extracellular S1\u2013S2 loop of KCNQ1 using the Quik-Change Lightning Site-Directed Mutagenesis Kit (Stratagene, La Jolla, CA) according to the manufacturer\u2019s instructions.\n\nThe inducible nanoCHIP construct (FRB:CHIP-P2A-CFP-P2A-FKBP:nano) was created in three parts. First, FRB:CHIP-P2A-CFP was created by PCR amplifying the CHIP catalytic domain and cloning the amplified fragment into FRBxx-P2A-CFP vector using AscI/AflII sites. Second, we used overlap extension PCR to create a P2A-FKBP:nano cassette which was then cloned downstream of CFP in the FRB:CHIP-P2A-CFP construct using BglII/NotI sites, generating FRB:CHIP-P2A-CFP-P2A-FKBP-nano.\n\n### Generation of adenoviral vectors\n\nAdenoviral vectors were generated using the pAdEasy system (Stratagene) according to manufacturer\u2019s instructions as previously described (Subramanyam et al., 2013; Aromolaran et al., 2014). Plasmid shuttle vectors (pShuttle CMV) containing cDNA for nano-P2A-CFP, nanoCHIP-P2A-CFP, and BBS-Q1-YFP were linearized with PmeI and electroporated into BJ5183-AD-1 electrocompetent cells pre-transformed with the pAdEasy-1 viral plasmid (Stratagene). PacI restriction digestion was used to identify transformants with successful recombination. Positive recombinants were amplified using XL-10-Gold bacteria, and the recombinant adenoviral plasmid DNA linearized with PacI digestion. HEK cells cultured in 60 mm diameter dishes at 70\u201380% confluency were transfected with PacI-digested linearized adenoviral DNA. Transfected plates were monitored for cytopathic effects (CPEs) and adenoviral plaques. Cells were harvested and subjected to three consecutive freeze-thaw cycles, followed by centrifugation (2,500\u00a0\u00d7\u00a0g) to remove cellular debris. The supernatant (2 mL) was used to infect a 10 cm dish of 90% confluent HEK293 cells. Following observation of CPEs after 2\u20133 d, cell supernatants were used to re-infect a new plate of HEK293 cells. Viral expansion and purification was carried out as previously described (Colecraft et al., 2002). Briefly, confluent HEK293 cells grown on 15 cm culture dishes (x8) were infected with viral supernatant (1 mL) obtained as described above. After 48 hr, cells from all of the plates were harvested, pelleted by centrifugation, and resuspended in 8 mL of buffer containing (in mM) Tris\u00b7HCl 20, CaCl2 1, and MgCl2 1 (pH 8.0). Cells were lysed by four consecutive freeze-thaw cycles and cellular debris pelleted by centrifugation. The virus-laden supernatant was purified on a cesium chloride (CsCl) discontinuous gradient by layering three densities of CsCl (1.25, 1.33, and 1.45 g/mL). After centrifugation (50,000 rpm; SW41Ti Rotor, Beckman-Coulter Optima L-100K ultracentrifuge; 1 hr, 4\u00b0C), a band of virus at the interface between the 1.33 and 1.45 g/mL layers was removed and dialyzed against PBS (12 hr, 4\u00b0C). Adenoviral vector aliquots were frozen in 10% glycerol at \u221280\u00b0C until use.\n\n### Cell culture and transfections\n\nHuman embryonic kidney (HEK293) cells were a kind gift from the laboratory of Dr. Robert Kass (Columbia University). Cells were mycoplasma free, as determined by the MycoFluor Mycoplasma Detection Kit (Invitrogen,\u00a0Carlsbad,\u00a0CA). Low passage HEK293 cells were cultured at 37\u00b0C in DMEM supplemented with 8% fetal bovine serum (FBS) and 100 mg/mL of penicillin\u2013streptomycin. HEK293 cell transfection was accomplished using the calcium phosphate precipitation method. Briefly, plasmid DNA was mixed with 62 \u03bcL of 2.5M CaCl2 and sterile deionized water (to a final volume of 500 \u03bcL). The mixture was added dropwise, with constant tapping to 500 \u03bcL of 2x Hepes buffered saline containing (in mM): Hepes 50, NaCl 280, Na2HPO4 1.5, pH 7.09. The resulting DNA\u2013calcium phosphate mixture was incubated for 20 min at room temperature and then added dropwise to HEK293 cells (60\u201380% confluent). Cells were washed with Ca2+-free phosphate buffered saline after 4\u20136 hr and maintained in supplemented DMEM.\n\nChinese hamster ovary (CHO) cells were obtained from ATCC\u00a0(Manassas,\u00a0VA), and cultured at 37\u00b0C in Kaighn\u2019s Modified Ham\u2019s F-12K (ATCC) supplemented with 8% FBS and 100 mg/mL of penicillin\u2013streptomycin. CHO cells were transiently transfected with desired constructs in 35 mm tissue culture dishes\u2014KCNQ1 (0.5 \u00b5g), KCNE1 (0.5 \u00b5g), and nano-P2A-CFP (0.5 \u00b5g), and nanoCHIP-P2A-CFP (0.5 \u00b5g) using X-tremeGENE HP (1:2 DNA/reagent ratio) according to the manufacturers\u2019 instructions (Roche,\u00a0Indianapolis,\u00a0IN).\n\nPrimary cultures of adult rat heart ventricular cells were prepared as previously described (Colecraft et al., 2002; Subramanyam et al., 2013), in accordance with the guidelines of Columbia University Animal Care and Use Committee. Adult male Sprague\u2013Dawley rats were euthanized with an overdose of isoflurane. Hearts were excised and ventricular myocytes isolated by enzymatic digestion with 1.7 mg Liberase\u2013TM enzyme mix (Roche) using a Langendorff perfusion apparatus. Healthy rod-shaped myocytes were cultured in Medium 199 (Life Technologies) supplemented with (in mM) carnitine (5), creatine (5), taurine (5) penicillin-streptomycin-glutamine (0.5%, Life technologies), and 5% (vol/vol) FBS (Life Technologies) to promote attachment to dishes. After 5 hr, the culture medium was switched to Medium 199 with 1% (vol/vol) serum, but otherwise supplemented as described above. Cultures were maintained in humidified incubators at 37\u00b0C and 5% CO2.\n\n### Flow cytometry assay of total and surface Q1 channels\n\nCell surface and total ion channel pools were assayed by flow cytometry in live, transfected HEK293 cells as previously described (Yang et al., 2010; Aromolaran et al., 2014). Briefly, 48 hr post-transfection, cells cultured in 6-well plates gently washed with ice cold PBS containing Ca2+ and Mg2+ (in mM: 0.9 CaCl2, 0.49 MgCl2, pH 7.4), and then incubated for 30 min in blocking medium (DMEM with 3% BSA) at 4\u00b0C. HEK293 cells were then incubated with 1 \u03bcM Alexa Fluor 647 conjugated \u03b1-bungarotoxin (BTX647; Life Technologies) in DMEM/3% BSA on a rocker at 4\u00b0C for 1 hr, followed by washing three times with PBS (containing Ca2+ and Mg2+). Cells were gently harvested in Ca2+-free PBS, and assayed by flow cytometry using a BD LSRII Cell Analyzer (BD Biosciences, San Jose, CA, USA). CFP- and YFP-tagged proteins were excited at 407 and 488 nm, respectively, and Alexa Fluor 647 was excited at 633 nm.\n\nOptical pulse chase assays to monitor rates of channel forward trafficking and internalization were conducted on live, transfected HEK293 cells. For the iN-CHIP treatment groups, cells were pretreated with 1 \u03bcM rapamycin for 3 hr prior to the experiments. Cells were placed on 4\u00b0C to halt trafficking processes and washed twice with PBS containing Ca2+ and Mg2+. For forward trafficking experiments, cells were incubated with 5 \u00b5M untagged BTX in DMEM/3% BSA at 4\u00b0C for 1 hr to block surface channels, and then washed three times with PBS containing Ca2+ and Mg2+. Cells were incubated with DMEM/3% BSA and placed at 37\u00b0C to resume trafficking for different time intervals (0, 5, 10, 20, 40, 60 min). Cells were then returned to 4\u00b0C and newly delivered channels were labeled with 1 \u00b5M BTX647 in DMEM/3% BSA for 1 hr. Finally, cells were washed three times with PBS containing Ca2+ and Mg2+, gently harvested in Ca2+-free PBS, and assayed by flow cytometry. For internalization experiments, cells were incubated in DMEM/3% BSA blocking medium for 30 min at 4\u00b0C, followed by a pulse of 1 \u03bcM biotinylated \u03b1-bungarotoxin (BTX-biotin; Life Technologies) for 1 hr with gentle rocking at 4\u00b0C. Cells were washed three times in PBS containing Ca2+ and Mg2+ and placed in DMEM/3% BSA at 37\u00b0C for different time intervals (0, 5, 10, 20, 40, 60 min) to resume trafficking. Cells were returned to 4\u00b0C, washed once with PBS, and channels remaining at the surface were labeled with streptavidin-conjugated Alexa Fluor 647 (Life Technologies). Finally, cells were washed twice more with PBS with Ca2+ and Mg2+, harvested in Ca2+-free PBS, and assayed by flow cytometry.\n\n### Confocal detection of total and surface Q1 expression in cardiomyocytes\n\nAt 48 hr post-infection, adult rat cardiomyocytes cultured on 35 mm MatTek dishes (MatTek Corporation,\u00a0Ashland,\u00a0MA) were gently washed with M199 media (with 0.9 mM CaCl2, 0.49 mM MgCl2, pH 7.4) and fixed with 4% formaldehyde for 10 min at room temperature (RT). Cardiomyocytes were washed three times with PBS, and incubated for 30 min in blocking medium (M199 with 3% BSA). Cardiomyocytes were then incubated with 1 \u03bcM BTX-biotin in M199/3% BSA at room temperature for 1 hr followed by washing three times with PBS to remove unbound biotinylated BTX. Cells were then incubated with 10 nM streptavidin-conjugated Quantum Dot 655 (QD655; Life Technologies) for 1 hr at 4\u00b0C in the dark, washed three times with PBS, and imaged with Nikon Ti Eclipse inverted microscope for scanning confocal microscopy.\n\n### Electrophysiology\n\nFor potassium channel measurements, whole-cell membrane currents were recorded at room temperature in CHO cells using an EPC-10 patch-clamp amplifier (HEKA Electronics,\u00a0Lambrecht/Pfalz,\u00a0Germany) controlled by the PatchMaster software (HEKA). A coverslip with adherent CHO cells was placed on the glass bottom of a recording chamber (0.7\u20131 mL in volume) mounted on the stage of an inverted Nikon Eclipse Ti-U microscope. Micropipettes were fashioned from 1.5 mm thin-walled glass and fire-polished. Internal solution contained (mM): 133 KCl, 0.4 GTP, 10 EGTA, 1 MgSO4, 5 K2ATP, 0.5 CaCl2, and 10 HEPES (pH 7.2). External solution contained (in mM): 147 NaCl, 4 KCl, 2 CaCl2, and 10 HEPES (pH 7.4). Pipette resistance was typically 1.5 M\u03a9 when filled with internal solution. I\u2013V curves were generated from a family of step depolarizations (\u221240 to\u00a0+100 mV in 10 mV steps from a holding potential of \u221250 mV). Currents were sampled at 20 kHz and filtered at 5 kHz. Traces were acquired at a repetition interval of 10 s.\n\nFor calcium channel measurements, whole-cell recordings were carried out in HEK293 cells at room temperature. Internal solution contained (mM): 135 Cs Methanesulfonate, 5 CsCl, 5 EGTA, 1 MgCl2, 4 MgATP, 10 HEPES (pH 7.2). External solution contained (mM): 140 tetraethylammonium-methanesulfonate, 5 BaCl2, 10 HEPES (pH 7.4). Leak and capacitive currents were subtracted using a P/4 protocol. I-V curves were generated from a family of step depolarizations (\u221260 to\u00a0+100 mV in 10 mV steps from a holding potential of \u221290 mV). Currents were sampled at 20 kHz and filtered at 5 kHz. Traces were acquired at a repetition interval of 10 s.\n\n### Immunoprecipitation and Western blotting\n\nHEK293 cells were washed once with PBS without Ca2+, harvested, and resuspended in RIPA lysis buffer containing (in mM) Tris (20, pH 7.4), EDTA (1), NaCl (150), 0.1% (wt/vol) SDS, 1% Triton X-100, 1% sodium deoxycholate and supplemented with protease inhibitor mixture (10 \u03bcL/ mL, Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO), PMSF (1 mM, Sigma-Aldrich), and PR-619 deubiquitinase inhibitor (50 \u00b5M, LifeSensors,\u00a0Malvern,\u00a0PA). Lysates were prepared by incubation at 4\u00b0C for 1 hr, with occasional vortex, and cleared by centrifugation (10,000\u00a0\u00d7\u00a0g, 10 min, 4\u00b0C). Supernatants were transferred to new tubes, with aliquots removed for quantification of total protein concentration determined by the bis-cinchonic acid protein estimation kit (Pierce Technologies,\u00a0Waltham,\u00a0MA). Lysates were pre-cleared by incubation with 10 \u00b5L Protein A/G Sepharose beads (Rockland) for 40 min at 4\u00b0C and then incubated with 0.75 \u00b5g anti-Q1 (Alomone,\u00a0Jerusalem,\u00a0Israel) for 1 hr at 4\u00b0C. Equivalent total protein amounts were added to spin-columns containing 25 \u00b5L Protein A/G Sepharose beads, tumbling overnight at 4\u00b0C. Immunoprecipitates were washed 3\u20135 times with RIPA buffer, spun down at 500\u00a0\u00d7\u00a0g, eluted with 40 \u00b5L of warmed sample buffer [50 mM Tris, 10% (vol/vol) glycerol, 2% SDS, 100 mM DTT, and 0.2 mg/mL bromophenol blue], and boiled (55\u00b0C, 15 min). Proteins were resolved on a 4\u201312% Bis\u00b7Tris gradient precast gel (Life Technologies) in Mops-SDS running buffer (Life Technologies) at 200 V constant for\u00a0~1 hr. We loaded 10 \u03bcL of the PageRuler Plus Prestained Protein Ladder (10\u2013250 kDa, Thermo Fisher,\u00a0Waltham,\u00a0MA) alongside the samples. Protein bands were transferred by tank transfer onto a nitrocellulose membrane (3.5 hr, 4\u00b0C, 30 V constant) in transfer buffer (25 mM Tris pH 8.3, 192 mM glycine, 15% (vol/vol) methanol, and 0.1% SDS). The membranes were blocked with a solution of 5% nonfat milk (BioRad) in tris-buffered saline-tween (TBS-T) (25 mM Tris pH 7.4, 150 mM NaCl, and 0.1% Tween-20) for 1 hr at RT and then incubated overnight at 4\u00b0C with primary antibodies (anti-Q1, Alomone) in blocking solution. The blots were washed with TBS-T three times for 10 min each and then incubated with secondary horseradish peroxidase-conjugated antibody for 1 hr at RT. After washing in TBS-T, the blots were developed with a chemiluminiscent detection kit (Pierce Technologies) and then visualized on a gel imager. Membranes were then stripped with harsh stripping buffer (2% SDS, 62 mM Tris pH 6.8, 0.8% \u00df-mercaptoethanol) at 50\u00b0C for 30 min, rinsed under running water for 2 min, and washed with TBST (3x, 10 min). Membranes were pre-treated with 0.5% glutaraldehyde and re-blotted with anti-ubiquitin (VU1, LifeSensors) as per the manufacturers\u2019 instructions.\n\n### Data and statistical analyses\n\nData were analyzed off-line using FlowJo, PulseFit (HEKA), Microsoft Excel, Origin and GraphPad Prism software. Statistical analyses were performed in Origin or GraphPad Prism using built-in functions. Statistically significant differences between means (p<0.05) were determined using Student\u2019s t test for comparisons between two groups. Data are presented as means\u00a0\u00b1\u00a0s.e.m.\n",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "e5755a04-c8a7-4982-b0e1-918a5389dc33",
+      "submission_id": "9c6c11cd-78f7-45c3-90dc-d2ae97594426",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29744.022](https://doi.org/10.7554/eLife.29744.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Sculpting ion channel functional expression with engineered ubiquitin ligases\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. Two reviewers have agreed to reveal their identity: Hugues Abriel (Reviewer 1) and Jim Trimmer (Reviewer 3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nYour study describes a clever system to regulate membrane protein expression at the cell surface and also provides a degree of temporal control that will be useful to study the role of these proteins in various cellular signaling pathways. The primary common concern of the reviewers is that the manuscript in its present form is mainly methodological without a biologically significant insight. In our opinion, it is unrealistic to expect that any new data to address these concerns can be added within the timeframe of a normal revision process. Please do not hesitate to contact us if you have questions.\n\nReviewer #1:\n\nThis manuscript by Kanner and colleagues presents results of sophisticated experiments where the authors used \"engineered\" proteins to study the consequences of ubiquitination of ion channels, in particular, the KCNQ1 potassium channel by the ubiquitin ligase CHIP. This is done by adding tags and protein-protein interaction motives to these proteins and looking at either their total cellular expression or specific membrane expression. The paper not only describes the CHIP-dependent ubiquitination of KCNQ1, but also its ubiquitination by other E3 ligases such as the NEDD4-2 ligase, already shown to ubiquitinate KCNQ1. This cellular system was also active on a more \"complex\" ion channel, i.e. the Cav1.2 large protein.\n\nThe presented data are in general well presented and convincing. Some controls are missing, however, such as dead-E3 ligase or mutation of the PY motif of KCNQ1.\n\nOverall the system developed by the authors is convincing and potentially interesting to elucidate the specific and distinct roles of E3 ligases targeting ion channels.\n\nSubstantive concerns:\n\nThe main serious concern related to this work is that at this stage this is \"only\" a methodological paper describing a sophisticated way to artificially ubiquitinate a target, in this case the KCNQ1 channel. What do we learn? The only original new finding would be that the reduced membrane expression of KCNQ1 when CHIP is active and co-expressed seems to be caused by reduced forward trafficking. Note that this effect could be challenged with the use of the brefeldin A.\n\nI think that this approach may have been useful to address many open questions as to the \"site of action\" of the different ligases, the types of ubiquitination of the specific ligases, and others. Another problem is the fact that all these systems are still very \"artificial\" and all what will be learned can be very different from really native conditions.\n\nReviewer #2:\n\nIn this manuscript, Kanner et al. fused the catalytic domain of the E3 ligase CHIP to nanobody recognizing GFP/YFP and targeted this nanoCHIP to YFP-tagged KCNQ1 +/- its associated subunit KCNE1 (a K+ channel defective in LongQT) to ubiquitinate and degrade or endocytose this channel in cells, in order to generate a tool to regulate/eliminate this channel at will. They found that this maneuver reduced cell surface levels of this K+ channel by decreasing its forward trafficking to the plasma membrane, but not increasing its internalization.\n\nEvaluation:\n\nThe authors developed a neat system to post-translationally regulate PM protein levels at will, and moreover, generated an inducible system that enables temporal control of targeting of these TM proteins. This is a very useful tool that can be of great benefit for future studies. This paper, however, has some issues, as follows:\n\n1) Novelty: There have been quite a few papers published (several of them cited by the authors) that already describe various systems to regulate cellular stability of proteins at will by targeting them for degradation by E3 ligases (including CHIP). Some of them actually tested the system in vivo (in mice). The paper here combines some of the published methods into an improved one, but the idea is not novel, nor use of CHIP to achieve the goal.\n\n2) The proteins targeted are not necessarily the ones that are the cognate substrates for the chosen E3 ligase. While this is OK to get rid of a specific protein (akin to knockdown or knockout, but with better regulation post-translationally) for analyses such as cell fate, survival/proliferation, or other whole cell function(s), using this method for analysis of regulation of trafficking and endocytosis of a channel that is artificially targeted in this manner in cells may be problematic. In fact, it is probably not a surprise that CHIP regulates forward trafficking of this channel (based on its known function in cells), but not its endocytosis. Endogenously, it is quite likely that other E3 ligases (e.g. Nedd4-2) regulate Q1 endocytosis. Indeed, Figure 3\u2014figure supplement 1 actually suggests that i.e., the biological significance of studying trafficking/endocytosis of a PM protein with an artificial E3 ligase (that anyway only weakly ubiquitinates it) is not clear.\n\n3) Adding a tag to proteins (YFP here) requires their overexpression, thus creating an artifact. The authors suggest that the method they created can be used with antibodies to endogenous proteins, but (i) they have not done it, and (ii) such a system will rely on exquisitely specific antibodies (or parts of them), which are not easy to generate, let alone prove that they target a single protein in a cell.\n\n4) CHIP-mediated ubiquitination of Q1 (Figure 3) is very weak and not convincing (and the experiments lack loading controls).\n\n5) The data in Figure 3\u2014figure supplement 1 (showing Nedd4-2 mediated enhanced removal of Q1 from the cell surface) are not in agreement with those shown in Figure 2 and described in the subsection \u201cnanoCHIP abolishes Q1 surface population, with modest effect on total channel pool\u201d. Please explain the discrepancy.\n\n6) Why was channel function analysis (Figure 5) done on CHO cells while all biochemical/IF studies on 293 cells?\n\nReviewer #3:\n\nThe manuscript by Kanner and Colecraft focuses on the development of a novel and innovative technique for modulating expression of membrane proteins. They utilize a fusion between an intrabody (in this case a nanobody) with the catalytic domain of an E3 ubiquitin ligase to generate a \"nanochip\" capable of specifically modulating target protein activity. They show specific downregulation of activity of their target of choice, the KCNQ1 ion channel, by targeting wither the principle KCNQ1 or auxiliary KCNE1 subunit. They provide data to support a model whereby the downregulation occurs via loss of cell surface expression of the ion channel (that is, a decrease in n), as opposed to downregulating the activity of cell surface channels (via effects on open probability or single channel conductance). They also provide support for a mechanism whereby it is cell surface delivery of the ion channels that is the basis of the nanochip-mediated downregulation. The data are generally of high quality (although see concerns below), and are not overinterpreted. The writing is very clear, and the figures are for the most part of high quality and clear.\n\nOne concern with the data is that in the flow cytometry plots (Figures 2, 4, 6, and 9), there are substantial populations of KCNQ1expressing cells with YFP but not CFP signals, and vice versa. There are many cells with levels of CFP at the same level of those with maximal YFP levels, but that have no YFP (those in the upper left quadrant), and vice-versa (in the lower right quadrant). This also holds for BTX labeling, with lots of cells with one or the other. This does not make sense given how the authors describe the experiments. In both cases I would have expected something more like a diagonal line, with the origin in the lower left, and then going towards the upper right, such that the levels of the two labels are correlated. This also holds for the analysis of the KCNE1 expression and effects of the nanochips (Figure 4).\n\nOne other concern is that it appears that nanochip expression lowers the levels of CFP in expressing cells (and the representation of CFP expressing cells in the population). This should not be the case and suggests non-specific effects of the nanochips on protein expression.\n\nGiven these apparent discrepancies greatly strengthen the paper. This would confirm loss of cell surface expression of KCNQ1 by a technique independent of flow cytometry, which is used exclusively to assay levels of cell surface expression (that is, n) independent of effects of nanochips on channel open probability or single channel conductance. Biotinylation analyses could be combined with the type of anti-ubiquitin blots already presented to further support that ubiquitinated proteins are internalized.\n",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fb105220-bf6e-446c-a1e7-5b21d2c6a35c",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C1",
+      "claim": "Ubiquitination regulates multiple steps in the membrane protein lifecycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination determines membrane protein functional expression by regulating multiple steps in the membrane protein lifecycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction section of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8c673dfc-c1f9-4684-8855-c45a723d1fb0",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C2",
+      "claim": "The human genome encodes 2 E1s, 37 E2s, and >600 E3 ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "The human genome encodes 2 E1s, 37 E2s, and >600 E3 ubiquitin ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the human genome composition presented in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "c45d1473-e2a5-4a10-9ad0-93f139817969",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C3",
+      "claim": "Ubiquitin contains seven lysine residues (K6, K11, K27, K29, K33, K48, K63) that can serve as secondary attachment points to make diverse polyubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitin contains seven lysine residues (K6, K11, K27, K29, K33, K48, K63) that, together with its N-terminus (Met1), can serve as secondary attachment points to make diverse polyubiquitin chains with different structures and functions (Komander, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Komander, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "af1787a8-17da-4ea2-8f43-267c2bbc5143",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C4",
+      "claim": "KCNQ1 together with auxiliary KCNE1 subunits give rise to the slowly activating delayed rectifier current IKs that is important for human ventricular action potential repolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ1 (Kv7.1; Q1), is a voltage-gated K+ channel which together with auxiliary KCNE1 subunits give rise to the slowly activating delayed rectifier current IKs that is important for human ventricular action potential repolarization (Barhanin et al., 1996; Sanguinetti et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Barhanin et al., 1996 and Sanguinetti et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "3ebc3696-bc0a-4ee3-bd55-1d396db8e2b9",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C5",
+      "claim": "Loss-of-function mutations in Q1 lead to long QT syndrome type 1 (LQT1).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in Q1 lead to long QT syndrome type 1 (LQT1), a precarious condition that predisposes affected individuals to exertion-triggered cardiac arrhythmias and sudden cardiac death (Tester et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Tester et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "3466cc85-3d1e-47b5-a004-b11b39b60b35",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C6",
+      "claim": "NEDD4-2 binds a PY motif on Q1 C-terminus and enhances Q1 ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "In heterologous expression studies, NEDD4-2, a HECT domain E3 ligase, binds a PY motif on Q1 C-terminus; enhances Q1 ubiquitination; down-regulates Q1 expression; and inhibits IKs current (Jespersen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Jespersen et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "23608dec-b17e-4709-bd03-64b024bdcb7f",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C7",
+      "claim": "NEDD4-2 down-regulates Q1 expression and inhibits IKs current.",
+      "claim_type": "EXPLICIT",
+      "source": "In heterologous expression studies, NEDD4-2, a HECT domain E3 ligase, binds a PY motif on Q1 C-terminus; enhances Q1 ubiquitination; down-regulates Q1 expression; and inhibits IKs current (Jespersen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Jespersen et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "2b82f29f-ddf0-4917-98f3-4f5524b61e76",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C8",
+      "claim": "nanoCHIP was generated by replacing the TPR domain of CHIP with the vhh4 nanobody.",
+      "claim_type": "EXPLICIT",
+      "source": "We substituted the TPR domain of CHIP with the vhh4 nanobody, which binds GFP/YFP (but not CFP) (Kubala et al., 2010), creating nanoCHIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular engineering approach used to create nanoCHIP.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "21927930-740d-4c5c-8f93-d46a74ea6c9b",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C9",
+      "claim": "The vhh4 nanobody binds GFP/YFP but not CFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We substituted the TPR domain of CHIP with the vhh4 nanobody, which binds GFP/YFP (but not CFP) (Kubala et al., 2010), creating nanoCHIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kubala et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "bec9ec0e-fcac-46ce-945b-6c4f63dd0275",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C10",
+      "claim": "nanoCHIP dramatically reduced surface density of BBS-Q1-YFP while minimally affecting total protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Test cells expressing nanoCHIP + BBS-Q1-YFP showed little change in YFP fluorescence compared to control (YFP = 577 \u00b1 11 a.f.u, n = 1727 for nano; YFP = 630 \u00b1 18 a.f.u, n = 783 for nanoCHIP), suggesting that the presumed targeted ubiquitination did not substantively affect Q1 stability (Figure 2D,E). By contrast, the surface density of BBS-Q1-YFP between the two conditions revealed an entirely different picture. Whereas control cells (nano) displayed a sizable population of surface BBS-Q1-YFP as reported by robust mean red fluorescence signal (BTX647 = 822 \u00b1 26 a.f.u, n = 4837), this surface pool was almost completely eliminated in cells co-expressing nanoCHIP (BTX647 = 55 \u00b1 2 a.f.u, n = 2257) (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative flow cytometry data presented in the text and referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "998e775d-4735-4c59-b39e-6f54c86a8a56",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C11",
+      "claim": "nanoCHIP had no effect on surface expression of BBS-Q1 channels lacking the YFP tag.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess specificity, we co-expressed nanoCHIP with BBS-Q1. In sharp contrast to the result obtained with BBS-Q1-YFP, nanoCHIP had no effect on surface expression of BBS-Q1 channels (BTX647 = 527 \u00b1 16 a.f.u, n = 6425 for nano; BTX647 = 633 \u00b1 24 a.f.u, n = 3657 for nanoCHIP) (Figure 2H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative flow cytometry data demonstrating specificity of the approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "6bafdb97-ac9d-48ee-be93-038ea7376b65",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C12",
+      "claim": "A CHIP deletion mutant (nanoCHIP*) that abolishes E3 ligase activity did not alter Q1 surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As a further control, co-expression of a CHIP deletion mutant (nanoCHIP*) that abolishes E3 ligase activity (Nikolay et al., 2004) did not alter Q1 surface expression, confirming the requirement of catalytic activity for nanoCHIP-dependent surface modulation (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 2\u2014figure supplement 2 and a citation to Nikolay et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d7ce1d23-2257-410a-837d-6bbb88896a2f",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C13",
+      "claim": "nanoNSlmb and nanoMDM2 reduced BBS-Q1-YFP surface density with minimal effects on total expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained qualitatively similar results with nanoNSlmb and nanoMDM2 to what we observed with nanoCHIP in that they all reduced BBS-Q1-YFP surface density with minimal effects on total expression (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "a76720df-48be-46e4-a86f-ad2afab0f91c",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C14",
+      "claim": "nanoNEDD4-2 diminished total Q1-YFP expression concomitant with decreased surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, nanoNEDD4-2 diminished total Q1-YFP expression concomitant with the decreased surface expression (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "39081e30-7aa9-4b6e-a3fd-b0087c1a2ab7",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C15",
+      "claim": "Both effects of nanoNEDD4-2 on Q1 stability and surface density were abolished with co-expression of a NEDD4-2 catalytic inactive mutant (nanoNEDD4-2*).",
+      "claim_type": "EXPLICIT",
+      "source": "Both effects on Q1 stability and surface density were abolished with co-expression of a NEDD4-2 catalytic inactive mutant (nanoNEDD4-2*) (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "438bdf46-b07a-4ffb-a342-1760fb65f7d6",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C16",
+      "claim": "Q1 is known to be ubiquitinated and regulated by heterologously expressed wild-type NEDD4-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Q1 is known to be ubiquitinated and regulated by heterologously expressed wild-type NEDD4-2 (Jespersen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Jespersen et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "5dab421d-5f8c-4ab5-af66-45fd2f994193",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C17",
+      "claim": "Co-expression with NEDD4-2 reduced the total expression of Q1-YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Densitometric analyses of the bands indicated that co-expression with NEDD4-2 reduced the total expression of Q1-YFP (Figure 3A; area under the curve), in agreement with previous results (Jespersen et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by densitometric analysis data in Figure 3A and a citation to Jespersen et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "69548e9b-06e2-4456-bcde-74dce559e9c9",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C18",
+      "claim": "Co-expression of NEDD4-2 substantially increased Q1-YFP ubiquitination compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of NEDD4-2 substantially increased Q1-YFP ubiquitination compared to the control condition (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data presented in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "f87a2055-d5e3-45c9-8297-d4c35503a7b6",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C19",
+      "claim": "nanoCHIP did not substantively affect Q1-YFP total expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the flow cytometry experiments, nanoCHIP did not substantively affect Q1-YFP total expression (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data presented in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "a3084100-35bf-4332-bc5f-1ad372e8f61f",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C20",
+      "claim": "nanoCHIP significantly augmented Q1-YFP ubiquitination compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, nanoCHIP significantly augmented Q1-YFP ubiquitination compared to the control condition, although the effect was smaller than observed with NEDD4-2 (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data presented in Figure 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "30ebd999-41b1-419c-a323-75a40804fd1d",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C21",
+      "claim": "The effect of nanoCHIP on Q1-YFP ubiquitination was smaller than observed with NEDD4-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, nanoCHIP significantly augmented Q1-YFP ubiquitination compared to the control condition, although the effect was smaller than observed with NEDD4-2 (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data presented in Figure 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d151cef3-8478-45ef-8ef8-6e1bc079be51",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C22",
+      "claim": "The interaction of KCNE1 with Q1 transforms the current waveform from small and rapidly activating to large and slowly activating (IKs).",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of KCNE1 with Q1 transforms the current waveform from one which is small and rapidly activating (Q1 alone) to one that is large and slowly activating (IKs; Q1 + KCNE1) (Barhanin et al., 1996; Sanguinetti et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Barhanin et al., 1996 and Sanguinetti et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "61daa85b-25af-48f8-a953-d37a57d9f0f8",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C23",
+      "claim": "nanoCHIP dramatically reduced surface density of BBS-Q1-YFP co-expressed with KCNE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our observations with Q1 alone, nanoCHIP dramatically reduced surface density of BBS-Q1-YFP co-expressed with KCNE1 (Figure 4A\u2013C), while minimally affecting total protein expression (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data presented in Figure 4A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "097866a9-bea2-4e8f-bf4b-e423760de4f9",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C24",
+      "claim": "nanoCHIP had no effect on channel surface density in cells expressing BBS-Q1 + KCNE1 (lacking a YFP tag).",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was selective, as in cells expressing BBS-Q1 + KCNE1 (lacking a YFP tag), nanoCHIP had no effect on channel surface density (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data presented in Figure 4D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "6c3af23c-575c-43c2-8e55-e6efaf0fc27e",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C25",
+      "claim": "nanoCHIP targeted to KCNE1-YFP effectively and selectively eliminated surface channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we wondered whether we could manipulate the surface expression of Q1 by targeting nanoCHIP to the auxiliary KCNE1 subunit. Indeed, in cells expressing BBS-Q1 + KCNE1-YFP, nanoCHIP effectively and selectively eliminated surface channels (Figure 4G\u2013I and Figure 4\u2014figure supplement 1), demonstrating the potential power of the approach to sculpt ion channel macromolecular complexes by targeting accessory proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data presented in Figure 4G\u2013I and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "580255b0-e89a-4e74-a53c-06c7ccb67bb8",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C26",
+      "claim": "nanoCHIP targeted to KCNE1-YFP markedly increased ubiquitination of co-expressed Q1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, nanoCHIP targeted to KCNE1-YFP markedly increased ubiquitination of co-expressed Q1 (Figure 4J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data presented in Figure 4J,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "5038379f-25a0-4c04-a51c-96e294ffe121",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C27",
+      "claim": "Control CHO cells transfected with Q1-YFP + KCNE1 + nano displayed robust outward K+ currents with the signature slow activation kinetics of IKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Control Chinese hamster ovary (CHO) cells transfected with Q1-YFP + KCNE1 + nano displayed robust outward K+ currents with the signature slow activation kinetics of IKs, which were essentially eliminated by nanoCHIP (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data presented in Figure 5A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "36f9795c-c33b-4ab1-8921-921cd0f6844a",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C28",
+      "claim": "IKs currents were essentially eliminated by nanoCHIP in CHO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Control Chinese hamster ovary (CHO) cells transfected with Q1-YFP + KCNE1 + nano displayed robust outward K+ currents with the signature slow activation kinetics of IKs, which were essentially eliminated by nanoCHIP (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data presented in Figure 5A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "bae7f7db-eefd-4bd7-8388-40c9b4607ced",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C29",
+      "claim": "nanoCHIP had no effect on IKs reconstituted with subunits that lacked the YFP tag.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, nanoCHIP had no effect on IKs reconstituted with subunits that lacked the YFP tag (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data presented in Figure 5D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "2ef6a349-0177-4bf1-bad1-0a54cc44a8c5",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C30",
+      "claim": "Switching the YFP tag to KCNE1 yielded IKs that was significantly reduced by nanoCHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, switching the YFP tag to KCNE1 also yielded IKs that was significantly reduced by nanoCHIP (Figure 5G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data presented in Figure 5G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "83064006-af84-415c-b233-d5c7162949ed",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C31",
+      "claim": "The inducible nanoCHIP (iN-CHIP) approach enables acute temporal control of ubiquitination of specific target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We next sought to exploit the rapamycin-induced heterodimerization system to develop an approach that enables acute temporal control of ubiquitination of specific target proteins (Crabtree and Schreiber, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development of the iN-CHIP system with a citation to Crabtree and Schreiber, 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "3fe994d1-f346-4b93-89a6-e86b2ae6c5b8",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C32",
+      "claim": "A measurable effect of rapamycin on surface BBS-Q1-YFP was seen within 20 min of rapamycin addition.",
+      "claim_type": "EXPLICIT",
+      "source": "A measurable effect was seen within 20 min of rapamycin addition to the transfected HEK293 cells; the half-life for reduction of surface channels was 209 \u00b1 17 mins (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry time-course data presented in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "1c778173-d39c-4fcd-9b9b-9409c723cb6e",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C33",
+      "claim": "The half-life for reduction of surface channels by iN-CHIP was 209 \u00b1 17 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "A measurable effect was seen within 20 min of rapamycin addition to the transfected HEK293 cells; the half-life for reduction of surface channels was 209 \u00b1 17 mins (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry time-course data and exponential decay fitting presented in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "821663c3-aa91-423b-8e6b-56539399e928",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C34",
+      "claim": "Rapamycin treatment for 20 hr had no impact on Q1 surface density in cells expressing BBS-Q1 together with FRB-CHIP and FKBP-nano.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments, rapamycin treatment for 20 hr had no impact on Q1 surface density in cells expressing BBS-Q1 together with FRB-CHIP and FKBP-nano (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control data presented in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "c6e84fce-7eaf-4a46-89da-2788142b9efe",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C35",
+      "claim": "When cells were pretreated with rapamycin for 3 hr, delivery of new BBS-Q1-YFP channels to the surface plateaued at a value ~75% lower compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "When this experiment was conducted in the absence of rapamycin pre-treatment, we observed robust delivery of new BBS-Q1-YFP to the cell surface during the chase period with a half-life of ~36 \u00b1 3 mins (Figure 7B). When cells were pretreated with rapamycin for 3 hr, delivery of new channels to the surface plateaued at a value ~75% lower compared to control (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optical pulse-chase assay data presented in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8c922ff3-41d5-48ed-9c50-4b3b0559714f",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C36",
+      "claim": "iN-CHIP-induced ubiquitination of BBS-Q1-YFP compromises forward trafficking of channels to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, iN-CHIP-induced ubiquitination of BBS-Q1-YFP compromises forward trafficking of channels to the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the forward trafficking assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "b1b27e3a-56d7-4125-bba9-85eecb8f6020",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C37",
+      "claim": "Pre-activation of iN-CHIP with a 3 hr rapamycin pre-treatment had no impact on the rate of BBS-Q1-YFP internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, pre-activation of iN-CHIP with a 3 hr rapamycin pre-treatment had no impact on the rate of BBS-Q1-YFP internalization (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by internalization assay data presented in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "b219bcba-2c4b-4f10-b353-47b2d3c15602",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C38",
+      "claim": "nanoCHIP reduces BBS-Q1-YFP surface density by selectively reducing forward trafficking of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the results indicate that nanoCHIP reduces BBS-Q1-YFP surface density by selectively reducing forward trafficking of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined forward trafficking and internalization assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "78cba876-43a9-48ab-8f25-26e388dd1707",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C39",
+      "claim": "Control cardiomyocytes expressing BBS-Q1-YFP + nano displayed strong YFP/CFP fluorescence as well as QD655 signal on the sarcolemma.",
+      "claim_type": "EXPLICIT",
+      "source": "Control cells expressing BBS-Q1-YFP + nano displayed strong YFP/CFP fluorescence as well as QD655 signal on the sarcolemma, indicating robust cell surface density of the channel (Figure 8A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data presented in Figure 8A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "2a4803a5-59b3-470e-9cb3-f7a4196e1773",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C40",
+      "claim": "Cardiomyocytes co-expressing nanoCHIP showed a sharply depressed QD655 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, cardiomyocytes co-expressing nanoCHIP showed a sharply depressed QD655 signal (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data presented in Figure 8B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "ffc47ad1-c378-467c-9177-bc75cdea01c0",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C41",
+      "claim": "YFP fluorescence was not significantly different between cardiomyocytes expressing nano versus nanoCHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "YFP fluorescence was not significantly different between the two experimental conditions (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative fluorescence data presented in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "e38b658f-6b2b-4888-91f0-d97b08ab5185",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C42",
+      "claim": "nanoCHIP is effective in cardiomyocytes and selectively down-regulates BBS-Q1-YFP surface pool.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that nanoCHIP is effective in cardiomyocytes, and selectively down-regulates BBS-Q1-YFP surface pool in this native cellular context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the cardiomyocyte experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "3e3d57fe-ba15-42b7-83f8-b4d743a158a1",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C43",
+      "claim": "nanoCHIP selectively eliminated the surface CaV1.2 pool with no impact on total BBS-\u03b11C-YFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our observations with Q1, nanoCHIP selectively eliminated the surface CaV1.2 pool with no impact on total BBS-\u03b11C-YFP expression (Figure 9B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data presented in Figure 9B\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "73cc52be-f23e-41f7-8d66-7fea9f2320e0",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C44",
+      "claim": "nanoCHIP essentially abolished CaV1.2 currents reconstituted in HEK 293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, nanoCHIP essentially abolished CaV1.2 currents reconstituted in HEK 293 cells (Figure 9F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiology data presented in Figure 9F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "eabd0078-fb51-479b-9823-30a85751b0ca",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C45",
+      "claim": "Targeted ubiquitination of Q1 and CaV1.2 with nanoCHIP yielded impaired trafficking and functional inactivation without frank degradation of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, our results suggest a fundamental difference between ion channels and cytosolic proteins in which targeted ubiquitination with nanoCHIP (as well as nanoNSlmb and nanoMDM2) yielded impaired trafficking and functional inactivation without frank degradation of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined data on Q1 and CaV1.2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "e8984c68-f6be-4853-a4f0-d86866afe9d4",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C46",
+      "claim": "Absolute degradation is not necessary for potent functional knockdown of Q1 and CaV1.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our results indicate that absolute degradation is not necessary for potent functional knockdown of Q1 and CaV1.2 channels, and highlight the importance of employing functional/cell biological assays to assess the efficacy of post-translational knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "7e61489e-84d8-4c08-93dd-8fbd396ab5c6",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C47",
+      "claim": "nanoNEDD4-2 can selectively degrade the ion channel Q1 in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrate here that nanoNEDD4-2 can selectively degrade the ion channel Q1 in situ, emphasizing the potential for customized protein manipulation with engineered E3 ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the nanoNEDD4-2 experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "81ff0e6b-52d3-42f6-9d82-2f37d4ac5172",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C48",
+      "claim": "Modest changes in total ubiquitination intensity as detected by conventional Western blot can result in substantial functional and cell biological effects on ion channel surface trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our findings suggest that modest changes in total ubiquitination intensity as detected by conventional Western blot can result in substantial functional and cell biological effects on ion channel surface trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ubiquitination and trafficking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8c988c55-882c-4857-9463-4e7bf6d3498f",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C49",
+      "claim": "CHIP is a U-box E3 ligase comprised of a catalytic domain that binds E2 and a tetratricopeptide repeats (TPR) targeting domain that binds Hsp70.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, CHIP (C-terminus of the Hsp70-interacting protein), is a U-box E3 ligase comprised of a catalytic domain that binds E2 and a tetratricopeptide repeats (TPR) targeting domain that binds Hsp70 (Connell et al., 2001; Murata et al., 2003; Zhang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Connell et al., 2001; Murata et al., 2003; Zhang et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "ba45f4a9-6578-4e38-85f4-98425d32791f",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C50",
+      "claim": "Dysregulation of trafficking, sorting, and degradation processes underlies diverse ion channelopathies including cardiac arrhythmias and cystic fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of these processes underlies diverse ion channelopathies including cardiac arrhythmias and cystic fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "4a1ef590-1d97-4cda-a462-35c8c08de52a",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C51",
+      "claim": "Engineered CHIP enhanced KCNQ1 ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineered CHIP enhanced KCNQ1 ubiquitination, eliminated KCNQ1 surface-density, and abolished reconstituted K+ currents without affecting protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "28ac2a98-ef85-4f7d-acef-571ae0bf4a6a",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C52",
+      "claim": "Engineered CHIP eliminated KCNQ1 surface-density.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineered CHIP enhanced KCNQ1 ubiquitination, eliminated KCNQ1 surface-density, and abolished reconstituted K+ currents without affecting protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d0ae1cd2-d249-45d8-970b-6cee10c9cda6",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C53",
+      "claim": "Engineered CHIP abolished reconstituted K+ currents without affecting protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineered CHIP enhanced KCNQ1 ubiquitination, eliminated KCNQ1 surface-density, and abolished reconstituted K+ currents without affecting protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d0ac8e7e-13c6-4ae4-b81d-150d372fa422",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C54",
+      "claim": "KCNQ1 surface-density declined with a ~ 3.5 hr t1/2 by impaired forward trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "A chemo-genetic variation enabling chemical control of ubiquitination revealed KCNQ1 surface-density declined with a ~ 3.5 hr t1/2 by impaired forward trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in the results section (209 \u00b1 17 mins \u2248 3.5 hrs).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "32086692-9eb3-43ad-b636-e2629d6cdb92",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C55",
+      "claim": "Impaired surface trafficking of membrane proteins underlies diverse diseases ranging from cystic fibrosis to cardiac arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Impaired surface trafficking of membrane proteins underlies diverse diseases ranging from cystic fibrosis to cardiac arrhythmias (Gelman and Kopito, 2002; Anderson et al., 2014), motivating a need to better understand fundamental mechanisms controlling membrane protein surface density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Gelman and Kopito, 2002 and Anderson et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "66156d75-83aa-4b4b-9efb-9a81ab6bd5b0",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C56",
+      "claim": "The surface repertoire of membrane proteins is regulated by multi-layered maturation and trafficking processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface repertoire of membrane proteins is regulated by multi-layered maturation and trafficking processes (MacGurn et al., 2012; Foot et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to MacGurn et al., 2012 and Foot et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "50c1948c-2e3c-4eb0-83cb-9fb83357c50d",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C57",
+      "claim": "Ubiquitination has classically been ascribed to targeting cytosolic proteins for degradation by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination has classically been ascribed to targeting cytosolic proteins for degradation by the proteasome (Hershko and Ciechanover, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hershko and Ciechanover, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "c09acbd3-2be0-43e3-9ffc-71f492a5f1d5",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C58",
+      "claim": "Ubiquitination of both cytosolic and membrane proteins can lead to more nuanced outcomes including regulating protein trafficking/sorting, stability, and/or function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is now evident that ubiquitination of both cytosolic and membrane proteins can lead to more nuanced outcomes including regulating protein trafficking/sorting, stability, and/or function (Komander, 2009; Foot et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Komander, 2009 and Foot et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8b7bf4fd-9fcf-4416-9e40-a2218c585722",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C59",
+      "claim": "Multiple E3 ligases may ubiquitinate a single substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors that complicate analyses include: (1) multiple E3 ligases may ubiquitinate a single substrate; (2) a particular E3 can typically catalyze ubiquitination of multiple substrates; (3) distinct E3 ligases can have preference for particular ubiquitination profiles (e.g. monoubiquitination versus polyubiquitination) and polyubiquitin chain linkages (e.g. K48 versus K63); (4) lack of temporal control over the ubiquitination process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a complicating factor in understanding ubiquitination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d87c0b52-828f-421b-90ca-8d978e73c96e",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C60",
+      "claim": "A particular E3 can typically catalyze ubiquitination of multiple substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors that complicate analyses include: (1) multiple E3 ligases may ubiquitinate a single substrate; (2) a particular E3 can typically catalyze ubiquitination of multiple substrates; (3) distinct E3 ligases can have preference for particular ubiquitination profiles (e.g. monoubiquitination versus polyubiquitination) and polyubiquitin chain linkages (e.g. K48 versus K63); (4) lack of temporal control over the ubiquitination process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a complicating factor in understanding ubiquitination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "e9c52ec2-fd8e-4f82-9a94-9a54336f94a6",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C61",
+      "claim": "Distinct E3 ligases can have preference for particular ubiquitination profiles and polyubiquitin chain linkages.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors that complicate analyses include: (1) multiple E3 ligases may ubiquitinate a single substrate; (2) a particular E3 can typically catalyze ubiquitination of multiple substrates; (3) distinct E3 ligases can have preference for particular ubiquitination profiles (e.g. monoubiquitination versus polyubiquitination) and polyubiquitin chain linkages (e.g. K48 versus K63); (4) lack of temporal control over the ubiquitination process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a complicating factor in understanding ubiquitination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "45111d98-16af-4d66-b544-6349a58f880c",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C62",
+      "claim": "The slowly activating kinetics of IKs is crucial to its physiological role in human cardiac action potential repolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "The slowly activating kinetics of IKs is crucial to its physiological role in human cardiac action potential repolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "fe8c666e-20c5-418b-98f1-1348745f3db5",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C63",
+      "claim": "A common assumption is that ubiquitination of membrane proteins enhances their internalization from the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "A common assumption is that ubiquitination of membrane proteins enhances their internalization from the cell surface, although recent results suggest a more complex picture in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "b300a3ed-b8ad-46fe-949d-412765bc7efb",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C64",
+      "claim": "Mutation of ubiquitination sites on EGFRs did not abolish their endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the E3 ligase Cbl is important to the internalization of activated epidermal growth factor receptors (EGFRs). Nevertheless, mutation of ubiquitination sites on EGFRs did not abolish their endocytosis (Huang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Huang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "2a9acd5c-551b-4481-aca6-2d2bff965bb1",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C65",
+      "claim": "A ubiquitin-deficient \u03b22 adrenergic receptor was internalized to a similar extent as the wild type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a ubiquitin-deficient \u03b22 adrenergic receptor was also internalized to a similar extent as the wild type protein (Shenoy et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shenoy et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8c66e562-6440-41a1-b32f-2f33cb263845",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C66",
+      "claim": "Q1 displays a basal level of ubiquitination due to the activity of an endogenous E3 ligase of unknown identity.",
+      "claim_type": "EXPLICIT",
+      "source": "A complication in our experimental system is that Q1 displays a basal level of ubiquitination due to the activity of an endogenous E3 ligase of unknown identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "c2667934-0e63-4b89-bda7-7d4887448985",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C67",
+      "claim": "The ER-associated degradation (ERAD) pathway is a prominent quality control mechanism accomplished by chaperone-mediated ubiquitination of misfolded membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the ER-associated degradation (ERAD) pathway is a prominent quality control mechanism which is accomplished by a chaperone-mediated ubiquitination of misfolded membrane proteins which are then retrotranslocated to the cytosol and targeted to the proteasome for degradation (MacGurn et al., 2012; Foot et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to MacGurn et al., 2012 and Foot et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "429b75cd-1e04-4a87-b75e-9379774a42d5",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C68",
+      "claim": "There are ubiquitin-dependent quality control mechanisms present at the Golgi which result in the diversion of membrane proteins to endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also ubiquitin-dependent quality control mechanisms present at the Golgi which results in the diversion of membrane proteins to endosomes where they are sorted by the ESCRT system into multi-vesicular bodies and fusion with lysosomes (Fire et al., 1998; MacGurn et al., 2012; Foot et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Fire et al., 1998; MacGurn et al., 2012; Foot et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "4f10457f-3263-4aac-9797-279aae076c99",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C69",
+      "claim": "The temporal control and resolution of mRNA interference methods is relatively poor because they are dependent on the degradation of the targeted native protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal control and resolution of mRNA interference methods is relatively poor because they are dependent on the degradation of the targeted native protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "36926d8a-4038-4af2-b2a1-42f26f3ca3fb",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C70",
+      "claim": "Several groups have utilized engineered ubiquitin ligases to target diverse cytosolic proteins for degradation in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several groups have utilized this approach to target diverse cytosolic proteins for degradation in situ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "de863032-7cfc-453c-aaf4-806b2245b84b",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C71",
+      "claim": "The first implementation of targeted ubiquitination exploited SKP1-CUL1-F-box (SCF) E3 ligase complexes to target the retinoblastoma tumor suppressor protein for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The first implementation of targeted ubiquitination exploited SKP1-CUL1-F-box (SCF) E3 ligase complexes, in which a peptide motif was fused to a modular F-box-domain-containing protein in order to target the retinoblastoma tumor suppressor protein for degradation by a Cullin/RING E3 ligase complex (Zhou et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Zhou et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "64aed7a7-76f1-49ff-8ffe-8686b52f418d",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C72",
+      "claim": "Caussinius et al fused the N-terminus F-box domain of Slmb to vhhGFP4 (NSlmb-vhhGFP4, also termed deGradFP), which effectively degraded various GFP-tagged proteins in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Seeking a more generalizable approach, Caussinius et al fused the N-terminus F-box domain of Slmb (a Drosophila melanogaster F-box protein) to vhhGFP4 (NSlmb-vhhGFP4, also termed deGradFP), which effectively degraded various GFP-tagged proteins in Drosophila (Caussinus et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Caussinus et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "b5ff2bfd-bd25-4900-bcaa-d2496021a24e",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C73",
+      "claim": "Approaches that exploit SCF complexes have the potential to sequester endogenous components by over-expressed engineered F-box proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet because approaches that exploit SCF complexes have the potential to sequester endogenous components by over-expressed engineered F-box proteins (Hatakeyama et al., 2005; Portnoff et al., 2014), other studies have utilized E3 ligases that are not similarly reliant on endogenous scaffold proteins for their mechanism of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hatakeyama et al., 2005 and Portnoff et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "07111991-5e82-46cc-8181-1ed4629e9735",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C74",
+      "claim": "One approach replaced the substrate binding (TPR) domain of CHIP to enable targeted ubiquitination and degradation of the proto-oncogenes c-Myc and K-Ras.",
+      "claim_type": "EXPLICIT",
+      "source": "One such approach replaced the substrate binding (TPR) domain of CHIP to enable targeted ubiquitination and degradation of the proto-oncogenes c-Myc (Hatakeyama et al., 2005) and K-Ras (Ma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hatakeyama et al., 2005 and Ma et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "51cefa8e-5a6a-4f04-a6bd-4a4d8c37526c",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C75",
+      "claim": "Replacing the TPR of CHIP with intrabodies directed against \u03b2-galactosidase and maltose binding protein yielded effective destruction of these target proteins in transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further proof of concept experiments replaced the TPR of CHIP with intrabodies directed against \u03b2-galactosidase and maltose binding protein, which yielded effective destruction of these target proteins in transfected HEK293 cells (Portnoff et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Portnoff et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d7bca16a-7004-4aa4-b9af-4af202ebf7e5",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C76",
+      "claim": "A technique referred to as Trim-Away exploits the high affinity of the E3 ligase TRIM21 for the Fc domain of antibodies for selective degradation of target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, a technique referred to as Trim-Away exploits the high affinity of the E3 ligase TRIM21 for the Fc domain of antibodies for selective degradation of target proteins (Clift et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Clift et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "a9d8fd27-d3c8-4987-9fa4-9ce194c64d87",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C77",
+      "claim": "All previous renditions of engineered E3 ligase technology have relied on degradation of target proteins as the ultimate expression of efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Without exception, all previous renditions of this technology have relied on degradation of target proteins as the ultimate expression of efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d9325450-edff-4372-aef1-958002850999",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C78",
+      "claim": "Many ion channels are multi-protein complexes made up minimally of pore-forming proteins associated with accessory subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Many ion channels, including Q1, are multi-protein complexes made up minimally of pore-forming proteins associated with accessory subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "e7adf7b0-779f-4dd0-9be3-7d676a86e4ad",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C79",
+      "claim": "Q1 can associate with any of five KCNE auxiliary subunits (KCNE1-KCNE5), each of which confers distinctive functional properties.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Q1 can associate with any of five KCNE auxiliary subunits (KCNE1-KCNE5), each of which confers distinctive functional properties (Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sun et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "5a26edcc-9da6-479b-9c3f-0bdb5fcfc121",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C80",
+      "claim": "Some KCNE subunits may interact with other K+ channel pore-forming subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, some KCNE subunits may interact with other K+ channel pore-forming subunits (Abbott et al., 1999; Abbott, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Abbott et al., 1999 and Abbott, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "7cfcfe1a-381d-4e2d-be9c-0a0513e46f05",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C81",
+      "claim": "Cardiac ventricular myocytes express all five KCNE subunits together with Q1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac ventricular myocytes express all five KCNE subunits together with Q1 (Radicke et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Radicke et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8abd8eca-69c9-4047-b079-079aa43231be",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C82",
+      "claim": "Gain-of-function mutations in distinct ion channels cause diverse diseases including inherited erythromelalgia, paroxysmal extreme pain disorder, familial hemiplegic migraine, Timothy syndrome, heritable skeletal dysplasia, short QT syndrome, and familial atrial fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain-of-function mutations in distinct ion channels cause diverse diseases including but not limited to: (NaV1.7) inherited erythromelalgia and paroxysmal extreme pain disorder (Waxman, 2013); (CaV2.1) familial hemiplegic migraine (Pietrobon, 2010); (CaV1.2) Timothy syndrome (Splawski et al., 2004); (TrpV4) heritable skeletal dysplasia (Rock et al., 2008); (KCNQ1 and HERG) short QT syndrome and familial atrial fibrillation (Giudicessi and Ackerman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to Waxman, 2013; Pietrobon, 2010; Splawski et al., 2004; Rock et al., 2008; Giudicessi and Ackerman, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "f3e86331-84fc-4b6c-a646-9c4ab780861c",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C83",
+      "claim": "Various methods to develop antibody mimetic proteins have recently emerged, including nanobodies, single chain variable fragments (scFv), DARPins, and FingRs/monobodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Various methods to develop such antibody mimetic proteins have recently emerged, including; nanobodies, single chain variable fragments (scFv), DARPins, and FingRs/monobodies (Koide et al., 1998; Pardon et al., 2014; Pl\u00fcckthun, 2015; Gross et al., 2016; Sha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Koide et al., 1998; Pardon et al., 2014; Pl\u00fcckthun, 2015; Gross et al., 2016; Sha et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "86fc0932-1e1c-4572-8226-cf96f73143dc",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C84",
+      "claim": "A chemical strategy has been developed that utilizes hetero-bivalent small molecules referred to as PROTACS (proteolysis-targeting chimeras) to bridge endogenous substrates to endogenous ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a chemical strategy has been developed that utilizes hetero-bivalent small molecules referred to as PROTACS (proteolysis-targeting chimeras) to bridge endogenous substrates to endogenous ubiquitin ligases (Schneekloth et al., 2004; Lai and Crews, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Schneekloth et al., 2004 and Lai and Crews, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "c978ed46-a07c-4e56-a899-a2e20e044394",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C85",
+      "claim": "CaV1.2 mediates excitation-contraction coupling and excitation-transcription coupling in heart and neurons, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Cav1.2 mediates excitation-contraction coupling and excitation-transcription coupling in heart and neurons, respectively, and is comprised of a pore-forming \u03b11C and accessory (\u03b2, \u03b12\u03b4, \u03b3) subunits (Catterall, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Catterall, 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "26c7866f-ed8a-4de7-8649-d7deb97a05d9",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C86",
+      "claim": "The nanoCHIP construct featured the coding sequence for GFP nanobody (vhhGFP4) in frame with the minimal catalytic unit of CHIP E3 ligase (residues 128\u2013303), separated by a flexible GSG linker.",
+      "claim_type": "EXPLICIT",
+      "source": "The nanoCHIP construct was created by gene synthesis (Genewiz), and featured the coding sequence for GFP nanobody (vhhGFP4) (Kubala et al., 2010) in frame with the minimal catalytic unit of CHIP E3 ligase (residues 128\u2013303), separated by a flexible GSG linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular construction of nanoCHIP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "2c248ed2-647f-4e4c-a353-352c32b14667",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C87",
+      "claim": "The catalytically inactive nanoCHIP* was created by deleting the coiled-coil domain [\u0394128\u2013229].",
+      "claim_type": "EXPLICIT",
+      "source": "To create the catalytically inactive nanoCHIP*, we deleted the coiled-coil domain [\u0394128\u2013229] as previously described (Nikolay et al., 2004), by amplifying the U-box domain of CHIP E3 ligase (residues 230\u2013303), and cloned this fragment into nano-xx-P2A-CFP using AscI/AflII sites separated by a flexible GSG linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular construction of nanoCHIP* with a citation to Nikolay et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "eb5b92bf-1a0a-4695-877a-0c6be1915204",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C88",
+      "claim": "A 13-residue high-affinity bungarotoxin binding site (BBS) was introduced into the extracellular S1-S2 loop of Q1.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced a 13-residue high-affinity bungarotoxin binding site (BBS) into the extracellular S1-S2 loop of Q1, enabling detection of surface channels in non-permeabilized cells with Alexa Fluor 647-conjugated bungarotoxin (BTX647) (Figure 1C and Figure 2) (Aromolaran et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the molecular engineering approach with a citation to Aromolaran et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "36a6c947-90cf-4eb3-aeec-e7805f098e9e",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C89",
+      "claim": "The C-terminal YFP tag provides a fluorescent measure of total Q1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal YFP tag provides a fluorescent measure of total Q1 expression (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "15790071-7671-40c5-a621-c54dcb827b50",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "claim_id": "C90",
+      "claim": "The nanoCHIP construct was generated in a P2A vector that expressed CFP as a separate reporter protein in a 1:1 ratio with nanoCHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The nanoCHIP construct was generated in a P2A vector that expressed CFP as a separate reporter protein in a 1:1 ratio with nanoCHIP (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "62f21719-d039-4cdd-9eb8-a6f5ad0aac61",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "nanoCHIP, an engineered E3 ubiquitin ligase created by replacing CHIP's TPR domain with a GFP/YFP-binding nanobody, dramatically reduces surface density of YFP-tagged KCNQ1 channels without affecting total protein expression, and this effect requires catalytic activity and YFP-tag specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 provide converging evidence from molecular design (C8, C9), quantitative flow cytometry showing selective surface reduction (C10, C11), and catalytic requirement controls (C12). The data demonstrate robust, specific, and activity-dependent effects with appropriate controls including tag-dependence and catalytically inactive mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "c797b529-d6a9-4fde-be6a-c91922df272d",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Alternative engineered E3 ligases (nanoNSlmb, nanoMDM2, nanoNEDD4-2) show differential effects on KCNQ1, with nanoNSlmb and nanoMDM2 reducing surface density without affecting total expression, while nanoNEDD4-2 reduces both surface and total expression in a catalytic activity-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 demonstrate that different E3 ligase classes produce distinct outcomes on KCNQ1 trafficking and stability. The data include appropriate catalytic-dead controls (C15) and are supported by flow cytometry measurements in supplementary figures, revealing mechanistic diversity in ubiquitin-mediated regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "9f7fe7e5-18ee-4456-8186-62ee951ba6db",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "nanoCHIP significantly increases KCNQ1-YFP ubiquitination without substantially affecting total protein expression, contrasting with NEDD4-2 which both increases ubiquitination and reduces total expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 are supported by Western blot and densitometry data (Figure 3) showing differential effects of nanoCHIP versus NEDD4-2. The validation of NEDD4-2 effects (C16-C18) provides positive controls, while the nanoCHIP data (C19-C21) demonstrate that modest ubiquitination increases can affect trafficking without degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "43650a20-8249-419b-bd11-68aaa7113016",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "nanoCHIP effectively regulates KCNQ1/KCNE1 macromolecular complexes by targeting either the pore-forming KCNQ1-YFP or auxiliary KCNE1-YFP subunit, demonstrating the approach can manipulate ion channel complexes through accessory protein targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 demonstrate versatility in targeting channel complexes with flow cytometry (C23-C25) and Western blot data (C26) showing that nanoCHIP works on both Q1-YFP+KCNE1 and Q1+KCNE1-YFP configurations. Tag-specificity controls (C24) confirm selectivity, establishing proof-of-concept for complex manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "f382d04b-ad6c-46ed-b2ca-fc89137ec238",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "nanoCHIP abolishes functional IKs currents in a YFP-tag-dependent manner, whether targeting KCNQ1-YFP or KCNE1-YFP subunits, demonstrating functional consequences of targeted ubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 provide electrophysiological validation with patch-clamp recordings showing near-complete current elimination (C27, C28) with appropriate tag-specificity controls (C29) and demonstration that targeting either subunit is effective (C30). This establishes functional relevance beyond trafficking effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "8776a0ab-03f9-49bb-884b-e96dae43261e",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The inducible nanoCHIP (iN-CHIP) system enables rapamycin-controlled temporal regulation of KCNQ1 ubiquitination, with measurable surface density reduction within 20 minutes and a half-life of approximately 209 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 describe development and characterization of the chemically-inducible system with time-course flow cytometry data (C32, C33) and appropriate specificity controls (C34). The quantitative kinetic measurements provide temporal resolution unavailable with constitutive approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "17445c2d-f278-402e-a3f0-0b065f213a30",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "iN-CHIP-induced ubiquitination of KCNQ1 reduces surface density by selectively impairing forward trafficking (~75% reduction) without affecting the rate of channel internalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by optical pulse-chase assays measuring forward trafficking (C35, C36) and internalization (C37) separately. The mechanistic dissection reveals ubiquitination affects anterograde but not retrograde trafficking, providing novel insight into the trafficking step affected.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "652cdc19-abf0-409d-b6cb-754df0cbc926",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "nanoCHIP effectively reduces surface expression of KCNQ1-YFP in adult rat cardiomyocytes without affecting total protein levels, demonstrating efficacy in native cardiac cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 demonstrate translation to physiologically relevant cells using confocal microscopy and adenoviral delivery. The selective surface reduction (C40) without total expression changes (C41) in cardiomyocytes (C42) validates the approach beyond heterologous expression systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "b297cd85-d62d-45ab-a5be-6f435b922993",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "nanoCHIP selectively eliminates surface CaV1.2 channels and abolishes calcium currents without affecting total protein expression, demonstrating generalizability to voltage-gated calcium channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 extend the approach to a different ion channel class with flow cytometry (C43) and electrophysiology (C44) data. This demonstrates the method is not KCNQ1-specific and can be applied to other membrane proteins, supporting broad applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "e0197fdc-f557-44db-a36e-8c7c15cd676e",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Targeted ubiquitination of ion channels with engineered E3 ligases produces functional inactivation through impaired trafficking without requiring protein degradation, representing a fundamental difference from cytosolic protein regulation and demonstrating that modest ubiquitination changes can have substantial functional effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 synthesize key mechanistic insights distinguishing ion channel regulation from prior work on cytosolic proteins. The conclusions are well-supported by the combined data on KCNQ1 and CaV1.2 showing trafficking impairment without degradation (C45, C46), with nanoNEDD4-2 providing a degradation-competent control (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on ubiquitination machinery and KCNQ1 channel biology, including the role of NEDD4-2 in regulating KCNQ1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide established background information supported by appropriate citations. These claims establish the biological context and prior knowledge foundation for the study, including ubiquitin system components (C1-C3), KCNQ1 function (C4-C5), and NEDD4-2 regulation (C6-C7).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "293c1fff-3f27-4b59-829b-30fb15cdc21d",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on membrane protein trafficking, ubiquitination mechanisms, and disease relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C61 provide literature-supported background on CHIP structure (C49), disease context (C50, C55), trafficking regulation (C56), ubiquitination functions (C57-C58), and system complexity (C59-C61). These establish the rationale and knowledge gaps motivating the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "727bb97b-90e1-4994-971c-4e9e302ad5ca",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "KCNE1 interaction with KCNQ1 produces the slowly activating IKs current important for cardiac repolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C62 describe well-established KCNQ1/KCNE1 biology supported by classic citations (Barhanin et al., 1996; Sanguinetti et al., 1996). This provides necessary context for the functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "d4320c83-209e-4b2b-9d16-2174adcd1c10",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion of ubiquitination's role in membrane protein internalization, noting complexity and basal ubiquitination of KCNQ1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 discuss literature on ubiquitination and endocytosis (C63-C65) with appropriate citations, and acknowledge experimental limitations regarding basal KCNQ1 ubiquitination (C66). This contextualizes the internalization results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "3d99543e-e6e1-4067-9d5b-ff05e756f184",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Description of ubiquitin-dependent quality control pathways (ERAD and Golgi-based) for membrane proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 describe established quality control mechanisms with appropriate citations. This provides mechanistic context for interpreting the forward trafficking defects observed with nanoCHIP.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Review of prior engineered E3 ligase approaches for targeting cytosolic proteins, highlighting that all previous methods relied on protein degradation as the readout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 comprehensively review prior art with appropriate citations, establishing that previous engineered E3 ligase work focused on cytosolic protein degradation (C70-C76) and lacked the temporal control (C69) or trafficking focus of the current work (C77).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "5ea99cd0-02d2-4853-aed6-b15ff0a336a9",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Discussion of ion channel macromolecular complexity, focusing on KCNQ1/KCNE interactions and cardiac expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 discuss the complexity of ion channel complexes with appropriate citations, providing rationale for why targeting specific subunit combinations could be valuable for dissecting physiological roles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "183e3691-bd92-43b7-81f1-c4f820940fcb",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Discussion of therapeutic potential, including gain-of-function channelopathies and emerging technologies for protein targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 discuss therapeutic applications with appropriate citations, noting disease targets (C82) and complementary technologies (C83-C84) that could enable translation to endogenous proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "6a0ce9c1-44b4-46c0-b865-3bcd513113b3",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background on CaV1.2 channel function and structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 provides established background on CaV1.2 with appropriate citation (Catterall, 2000), contextualizing the generalization experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "5c860d44-8602-41c7-9ff9-bf0f9a29d2bb",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Detailed molecular construction and experimental design of nanoCHIP and related constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 describe molecular biology methods and experimental design elements. These are methodological details supported by the Materials and Methods section and are essential for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    },
+    {
+      "id": "20a7039a-cd3d-4a12-bb4b-2dba10f9adfd",
+      "content_id": "07bbb366-c892-46f6-a98e-ad0e9666d056",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Summary claims from the abstract stating that engineered CHIP enhanced ubiquitination, eliminated surface density, abolished currents without affecting expression, and that surface density declined with ~3.5 hr half-life by impaired forward trafficking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are high-level summary statements from the abstract that are supported by the detailed experimental results described in other claim groups. These accurately summarize the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:39:00.590921Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b82f29f-ddf0-4917-98f3-4f5524b61e76",
+      "result_id": "62f21719-d039-4cdd-9eb8-a6f5ad0aac61"
+    },
+    {
+      "claim_id": "21927930-740d-4c5c-8f93-d46a74ea6c9b",
+      "result_id": "62f21719-d039-4cdd-9eb8-a6f5ad0aac61"
+    },
+    {
+      "claim_id": "bec9ec0e-fcac-46ce-945b-6c4f63dd0275",
+      "result_id": "62f21719-d039-4cdd-9eb8-a6f5ad0aac61"
+    },
+    {
+      "claim_id": "998e775d-4735-4c59-b39e-6f54c86a8a56",
+      "result_id": "62f21719-d039-4cdd-9eb8-a6f5ad0aac61"
+    },
+    {
+      "claim_id": "6bafdb97-ac9d-48ee-be93-038ea7376b65",
+      "result_id": "62f21719-d039-4cdd-9eb8-a6f5ad0aac61"
+    },
+    {
+      "claim_id": "d7ce1d23-2257-410a-837d-6bbb88896a2f",
+      "result_id": "c797b529-d6a9-4fde-be6a-c91922df272d"
+    },
+    {
+      "claim_id": "a76720df-48be-46e4-a86f-ad2afab0f91c",
+      "result_id": "c797b529-d6a9-4fde-be6a-c91922df272d"
+    },
+    {
+      "claim_id": "39081e30-7aa9-4b6e-a3fd-b0087c1a2ab7",
+      "result_id": "c797b529-d6a9-4fde-be6a-c91922df272d"
+    },
+    {
+      "claim_id": "438bdf46-b07a-4ffb-a342-1760fb65f7d6",
+      "result_id": "9f7fe7e5-18ee-4456-8186-62ee951ba6db"
+    },
+    {
+      "claim_id": "5dab421d-5f8c-4ab5-af66-45fd2f994193",
+      "result_id": "9f7fe7e5-18ee-4456-8186-62ee951ba6db"
+    },
+    {
+      "claim_id": "69548e9b-06e2-4456-bcde-74dce559e9c9",
+      "result_id": "9f7fe7e5-18ee-4456-8186-62ee951ba6db"
+    },
+    {
+      "claim_id": "f87a2055-d5e3-45c9-8297-d4c35503a7b6",
+      "result_id": "9f7fe7e5-18ee-4456-8186-62ee951ba6db"
+    },
+    {
+      "claim_id": "a3084100-35bf-4332-bc5f-1ad372e8f61f",
+      "result_id": "9f7fe7e5-18ee-4456-8186-62ee951ba6db"
+    },
+    {
+      "claim_id": "30ebd999-41b1-419c-a323-75a40804fd1d",
+      "result_id": "9f7fe7e5-18ee-4456-8186-62ee951ba6db"
+    },
+    {
+      "claim_id": "61daa85b-25af-48f8-a953-d37a57d9f0f8",
+      "result_id": "43650a20-8249-419b-bd11-68aaa7113016"
+    },
+    {
+      "claim_id": "097866a9-bea2-4e8f-bf4b-e423760de4f9",
+      "result_id": "43650a20-8249-419b-bd11-68aaa7113016"
+    },
+    {
+      "claim_id": "6c3af23c-575c-43c2-8e55-e6efaf0fc27e",
+      "result_id": "43650a20-8249-419b-bd11-68aaa7113016"
+    },
+    {
+      "claim_id": "580255b0-e89a-4e74-a53c-06c7ccb67bb8",
+      "result_id": "43650a20-8249-419b-bd11-68aaa7113016"
+    },
+    {
+      "claim_id": "5038379f-25a0-4c04-a51c-96e294ffe121",
+      "result_id": "f382d04b-ad6c-46ed-b2ca-fc89137ec238"
+    },
+    {
+      "claim_id": "36f9795c-c33b-4ab1-8921-921cd0f6844a",
+      "result_id": "f382d04b-ad6c-46ed-b2ca-fc89137ec238"
+    },
+    {
+      "claim_id": "bae7f7db-eefd-4bd7-8388-40c9b4607ced",
+      "result_id": "f382d04b-ad6c-46ed-b2ca-fc89137ec238"
+    },
+    {
+      "claim_id": "2ef6a349-0177-4bf1-bad1-0a54cc44a8c5",
+      "result_id": "f382d04b-ad6c-46ed-b2ca-fc89137ec238"
+    },
+    {
+      "claim_id": "83064006-af84-415c-b233-d5c7162949ed",
+      "result_id": "8776a0ab-03f9-49bb-884b-e96dae43261e"
+    },
+    {
+      "claim_id": "3fe994d1-f346-4b93-89a6-e86b2ae6c5b8",
+      "result_id": "8776a0ab-03f9-49bb-884b-e96dae43261e"
+    },
+    {
+      "claim_id": "1c778173-d39c-4fcd-9b9b-9409c723cb6e",
+      "result_id": "8776a0ab-03f9-49bb-884b-e96dae43261e"
+    },
+    {
+      "claim_id": "821663c3-aa91-423b-8e6b-56539399e928",
+      "result_id": "8776a0ab-03f9-49bb-884b-e96dae43261e"
+    },
+    {
+      "claim_id": "c6e84fce-7eaf-4a46-89da-2788142b9efe",
+      "result_id": "17445c2d-f278-402e-a3f0-0b065f213a30"
+    },
+    {
+      "claim_id": "8c922ff3-41d5-48ed-9c50-4b3b0559714f",
+      "result_id": "17445c2d-f278-402e-a3f0-0b065f213a30"
+    },
+    {
+      "claim_id": "b1b27e3a-56d7-4125-bba9-85eecb8f6020",
+      "result_id": "17445c2d-f278-402e-a3f0-0b065f213a30"
+    },
+    {
+      "claim_id": "b219bcba-2c4b-4f10-b353-47b2d3c15602",
+      "result_id": "17445c2d-f278-402e-a3f0-0b065f213a30"
+    },
+    {
+      "claim_id": "78cba876-43a9-48ab-8f25-26e388dd1707",
+      "result_id": "652cdc19-abf0-409d-b6cb-754df0cbc926"
+    },
+    {
+      "claim_id": "2a4803a5-59b3-470e-9cb3-f7a4196e1773",
+      "result_id": "652cdc19-abf0-409d-b6cb-754df0cbc926"
+    },
+    {
+      "claim_id": "ffc47ad1-c378-467c-9177-bc75cdea01c0",
+      "result_id": "652cdc19-abf0-409d-b6cb-754df0cbc926"
+    },
+    {
+      "claim_id": "e38b658f-6b2b-4888-91f0-d97b08ab5185",
+      "result_id": "652cdc19-abf0-409d-b6cb-754df0cbc926"
+    },
+    {
+      "claim_id": "3e3d57fe-ba15-42b7-83f8-b4d743a158a1",
+      "result_id": "b297cd85-d62d-45ab-a5be-6f435b922993"
+    },
+    {
+      "claim_id": "73cc52be-f23e-41f7-8d66-7fea9f2320e0",
+      "result_id": "b297cd85-d62d-45ab-a5be-6f435b922993"
+    },
+    {
+      "claim_id": "eabd0078-fb51-479b-9823-30a85751b0ca",
+      "result_id": "e0197fdc-f557-44db-a36e-8c7c15cd676e"
+    },
+    {
+      "claim_id": "e8984c68-f6be-4853-a4f0-d86866afe9d4",
+      "result_id": "e0197fdc-f557-44db-a36e-8c7c15cd676e"
+    },
+    {
+      "claim_id": "7e61489e-84d8-4c08-93dd-8fbd396ab5c6",
+      "result_id": "e0197fdc-f557-44db-a36e-8c7c15cd676e"
+    },
+    {
+      "claim_id": "81ff0e6b-52d3-42f6-9d82-2f37d4ac5172",
+      "result_id": "e0197fdc-f557-44db-a36e-8c7c15cd676e"
+    },
+    {
+      "claim_id": "fb105220-bf6e-446c-a1e7-5b21d2c6a35c",
+      "result_id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25"
+    },
+    {
+      "claim_id": "8c673dfc-c1f9-4684-8855-c45a723d1fb0",
+      "result_id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25"
+    },
+    {
+      "claim_id": "c45d1473-e2a5-4a10-9ad0-93f139817969",
+      "result_id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25"
+    },
+    {
+      "claim_id": "af1787a8-17da-4ea2-8f43-267c2bbc5143",
+      "result_id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25"
+    },
+    {
+      "claim_id": "3ebc3696-bc0a-4ee3-bd55-1d396db8e2b9",
+      "result_id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25"
+    },
+    {
+      "claim_id": "3466cc85-3d1e-47b5-a004-b11b39b60b35",
+      "result_id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25"
+    },
+    {
+      "claim_id": "23608dec-b17e-4709-bd03-64b024bdcb7f",
+      "result_id": "cfe721b6-7afe-4b72-94bb-d39a288d2a25"
+    },
+    {
+      "claim_id": "8c988c55-882c-4857-9463-4e7bf6d3498f",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "ba45f4a9-6578-4e38-85f4-98425d32791f",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "32086692-9eb3-43ad-b636-e2629d6cdb92",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "66156d75-83aa-4b4b-9efb-9a81ab6bd5b0",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "50c1948c-2e3c-4eb0-83cb-9fb83357c50d",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "c09acbd3-2be0-43e3-9ffc-71f492a5f1d5",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "8b7bf4fd-9fcf-4416-9e40-a2218c585722",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "d87c0b52-828f-421b-90ca-8d978e73c96e",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "e9c52ec2-fd8e-4f82-9a94-9a54336f94a6",
+      "result_id": "293c1fff-3f27-4b59-829b-30fb15cdc21d"
+    },
+    {
+      "claim_id": "d151cef3-8478-45ef-8ef8-6e1bc079be51",
+      "result_id": "727bb97b-90e1-4994-971c-4e9e302ad5ca"
+    },
+    {
+      "claim_id": "45111d98-16af-4d66-b544-6349a58f880c",
+      "result_id": "727bb97b-90e1-4994-971c-4e9e302ad5ca"
+    },
+    {
+      "claim_id": "fe8c666e-20c5-418b-98f1-1348745f3db5",
+      "result_id": "d4320c83-209e-4b2b-9d16-2174adcd1c10"
+    },
+    {
+      "claim_id": "b300a3ed-b8ad-46fe-949d-412765bc7efb",
+      "result_id": "d4320c83-209e-4b2b-9d16-2174adcd1c10"
+    },
+    {
+      "claim_id": "2a9acd5c-551b-4481-aca6-2d2bff965bb1",
+      "result_id": "d4320c83-209e-4b2b-9d16-2174adcd1c10"
+    },
+    {
+      "claim_id": "8c66e562-6440-41a1-b32f-2f33cb263845",
+      "result_id": "d4320c83-209e-4b2b-9d16-2174adcd1c10"
+    },
+    {
+      "claim_id": "c2667934-0e63-4b89-bda7-7d4887448985",
+      "result_id": "3d99543e-e6e1-4067-9d5b-ff05e756f184"
+    },
+    {
+      "claim_id": "429b75cd-1e04-4a87-b75e-9379774a42d5",
+      "result_id": "3d99543e-e6e1-4067-9d5b-ff05e756f184"
+    },
+    {
+      "claim_id": "4f10457f-3263-4aac-9797-279aae076c99",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "36926d8a-4038-4af2-b2a1-42f26f3ca3fb",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "de863032-7cfc-453c-aaf4-806b2245b84b",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "64aed7a7-76f1-49ff-8ffe-8686b52f418d",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "b5ff2bfd-bd25-4900-bcaa-d2496021a24e",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "07111991-5e82-46cc-8181-1ed4629e9735",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "51cefa8e-5a6a-4f04-a6bd-4a4d8c37526c",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "d7bca16a-7004-4aa4-b9af-4af202ebf7e5",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "a9d8fd27-d3c8-4987-9fa4-9ce194c64d87",
+      "result_id": "0046da0d-f6fd-407a-8739-ac6a95a6d62b"
+    },
+    {
+      "claim_id": "d9325450-edff-4372-aef1-958002850999",
+      "result_id": "5ea99cd0-02d2-4853-aed6-b15ff0a336a9"
+    },
+    {
+      "claim_id": "e7adf7b0-779f-4dd0-9be3-7d676a86e4ad",
+      "result_id": "5ea99cd0-02d2-4853-aed6-b15ff0a336a9"
+    },
+    {
+      "claim_id": "5a26edcc-9da6-479b-9c3f-0bdb5fcfc121",
+      "result_id": "5ea99cd0-02d2-4853-aed6-b15ff0a336a9"
+    },
+    {
+      "claim_id": "7cfcfe1a-381d-4e2d-be9c-0a0513e46f05",
+      "result_id": "5ea99cd0-02d2-4853-aed6-b15ff0a336a9"
+    },
+    {
+      "claim_id": "8abd8eca-69c9-4047-b079-079aa43231be",
+      "result_id": "183e3691-bd92-43b7-81f1-c4f820940fcb"
+    },
+    {
+      "claim_id": "f3e86331-84fc-4b6c-a646-9c4ab780861c",
+      "result_id": "183e3691-bd92-43b7-81f1-c4f820940fcb"
+    },
+    {
+      "claim_id": "86fc0932-1e1c-4572-8226-cf96f73143dc",
+      "result_id": "183e3691-bd92-43b7-81f1-c4f820940fcb"
+    },
+    {
+      "claim_id": "c978ed46-a07c-4e56-a899-a2e20e044394",
+      "result_id": "6a0ce9c1-44b4-46c0-b865-3bcd513113b3"
+    },
+    {
+      "claim_id": "26c7866f-ed8a-4de7-8649-d7deb97a05d9",
+      "result_id": "5c860d44-8602-41c7-9ff9-bf0f9a29d2bb"
+    },
+    {
+      "claim_id": "2c248ed2-647f-4e4c-a353-352c32b14667",
+      "result_id": "5c860d44-8602-41c7-9ff9-bf0f9a29d2bb"
+    },
+    {
+      "claim_id": "eb5b92bf-1a0a-4695-877a-0c6be1915204",
+      "result_id": "5c860d44-8602-41c7-9ff9-bf0f9a29d2bb"
+    },
+    {
+      "claim_id": "36a6c947-90cf-4eb3-aeec-e7805f098e9e",
+      "result_id": "5c860d44-8602-41c7-9ff9-bf0f9a29d2bb"
+    },
+    {
+      "claim_id": "15790071-7671-40c5-a621-c54dcb827b50",
+      "result_id": "5c860d44-8602-41c7-9ff9-bf0f9a29d2bb"
+    },
+    {
+      "claim_id": "4a1ef590-1d97-4cda-a462-35c8c08de52a",
+      "result_id": "20a7039a-cd3d-4a12-bb4b-2dba10f9adfd"
+    },
+    {
+      "claim_id": "28ac2a98-ef85-4f7d-acef-571ae0bf4a6a",
+      "result_id": "20a7039a-cd3d-4a12-bb4b-2dba10f9adfd"
+    },
+    {
+      "claim_id": "d0ae1cd2-d249-45d8-970b-6cee10c9cda6",
+      "result_id": "20a7039a-cd3d-4a12-bb4b-2dba10f9adfd"
+    },
+    {
+      "claim_id": "d0ac8e7e-13c6-4ae4-b81d-150d372fa422",
+      "result_id": "20a7039a-cd3d-4a12-bb4b-2dba10f9adfd"
+    }
+  ],
+  "comparisons": []
+}

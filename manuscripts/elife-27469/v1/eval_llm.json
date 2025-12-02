@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C89"
+    ],
+    "result": "The experimental system establishes a homogeneous quiescent cell population in fission yeast. After nitrogen removal, cells arrest in G1 phase with >99.9% septum-free cells by day 1, and septum frequency drops below 1 in 20,000 cells thereafter, indicating minimal cell division during quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 and C89 are well-supported by direct observations in Table 1 showing cell size and septum frequency data. The data demonstrate a rapid and sustained transition to quiescence with minimal cell division, validating the experimental system for studying replication-independent mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "During quiescence, fission yeast accumulates mutations linearly with time at a rate of 0.55 \u00d7 10\u207b\u2077 FOAR mutations per day (0.14 \u00d7 10\u207b\u2077 SNVs and 0.41 \u00d7 10\u207b\u2077 indels per day). The dramatic decrease in redundant mutations over time indicates novel mutations arise during quiescence rather than from pre-existing replication errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C48, and C60-C62 are strongly supported by the linear regression analysis in Figure 2A (R\u00b2 = 0.99) and the observation that redundant mutations fade over time. This provides compelling evidence for time-dependent mutation accumulation during quiescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C64",
+      "C74"
+    ],
+    "result": "The mutational spectrum shifts dramatically during quiescence, with indels increasing from 28% at day 1 to 57-69% at days 8-15, eventually accumulating at similar rates to SNVs (corrected slopes: 0.46 \u00d7 10\u207b\u2077 for SNVs vs 0.47 \u00d7 10\u207b\u2077 for indels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54-C55, C64, and C74 are well-supported by data in Figures 2C-D and Figure 3D, with statistical significance (p<10\u207b\u00b9\u2070). The shift from SNV-dominated to indel-dominated spectrum is a key finding distinguishing quiescence from replicative mutagenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C66",
+      "C67"
+    ],
+    "result": "During quiescence, deletions outnumber insertions (170 deletions vs 50 insertions in days 8+15, p<10\u207b\u2075), resulting in net genome contraction. This contrasts with cycling cells where insertions predominate, suggesting growth and quiescence apply opposite pressures on genome size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56-C57, C66-C67 are supported by data in Table 2 and Figure 2D, with statistical significance and comparison to published MA studies (C65). The reversal of insertion/deletion bias is a novel and well-documented finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C51",
+      "C52",
+      "C53",
+      "C69"
+    ],
+    "result": "The mutational bias toward A/T enrichment decreases during quiescence (from 3.71 at day 1 to 1.58 at days 8+15, p<0.05), primarily due to decreased G:C to A:T transitions and increased A:T to C:G and G:C to C:G transversions. This counteracts the universal A/T enrichment observed during cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C51-C53, and C69 are supported by sequencing data in Table 2 and Figures 2B and 2\u2014figure supplement 1, with statistical significance. The shift in nucleotide bias represents a key qualitative difference between replicative and quiescence-associated mutagenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Whole-genome sequencing of 243 colonies after 3 months of quiescence revealed 149 unique mutations (72 SNVs, 77 indels), confirming the quiescence mutational spectrum. The mutation rate (0.61 mutations/genome) was 3.5-7\u00d7 higher than projected, suggesting non-linearity over extended periods. Mutations fit a Poisson distribution, indicating a uniform mutational force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 are supported by whole-genome sequencing data in Table 5 and statistical analysis in Figure 5. The Poisson fit (P_chi2 = 0.56) strongly supports uniform mutagenesis. However, the higher-than-expected mutation rate (C77-C78) and biphasic viability curve (C107) suggest complexity in long-term quiescence that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Using three correction methods to account for mutations not resulting in FOAR phenotype, the authors estimate a corrected mutation rate of 0.93 \u00d7 10\u207b\u2077 mutations per day in ura4/5 genes, with similar rates for SNVs (0.46 \u00d7 10\u207b\u2077) and indels (0.47 \u00d7 10\u207b\u2077). Extrapolation yields 0.93 \u00d7 10\u207b\u00b3 mutations per genome per day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 rely on complex statistical modeling (Methods 1-3) to correct for unobserved mutations. While the methods are described, the wide range of estimates from different methods (0.93 to 1.86 \u00d7 10\u207b\u2077) and the reliance on assumptions about essential amino acids and phenotypic penetrance introduce uncertainty. The whole-genome data (C77) showing 3.5-7\u00d7 higher rates than projected raises questions about the accuracy of these extrapolations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "An experiment comparing direct FOA plating versus plating after one division showed that FOA does not significantly impact the mutation spectrum, and revealed frequent heterozygosity of mutations that can only be detected after cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by data in Table 3 showing similar mutational profiles regardless of plating method. The observation of 16 unique mutations appearing only after division provides evidence for heterozygosity. This control experiment strengthens confidence that the observed spectrum reflects quiescence biology rather than drug artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The Pcn1-K164R mutant, which cannot switch to translesion synthesis (TLS) mode, accumulates only slightly more FOAR mutants than wild-type and displays the Chronos mutational profile, indicating modest participation of the TLS pathway in quiescence mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by data in Figure 7 showing similar mutation rates and spectra in the Pcn1-K164R mutant. This provides mechanistic insight, though the conclusion is somewhat limited as it only rules out a major role for one specific pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Long-term quiescence experiments show viability drops to ~0.05% at 3 months, with a biphasic curve showing accelerated cell death after three weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by data in Figure 4. This observation is important for interpreting the 3-month whole-genome sequencing results and suggests that mutation accumulation may not remain linear over extended periods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Phenotypic survey revealed no phenotypes at 1 day or 1 month, but 1.1% and 1.8% of colonies displayed phenotypes after 2 and 3 months, respectively. Six sequenced strains had mutations in genes (alg5, alg8, aur1, ccc2, gdi1, oca8) encoding cell wall and membrane trafficking functions that might improve viability during quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 are supported by phenotypic data in Table 6 and whole-genome sequencing. The emergence of phenotypes correlates with extended quiescence duration. However, the speculation that these mutations improve viability (C112) is not directly tested and remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Control experiments showed that ura4\u0394 mutants remain viable for two weeks of quiescence, indicating that FOAR colonies emerging early are not biased by selection and the phenotypic accumulation assay is unbiased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by viability data in Figure 1. This control validates the experimental approach by demonstrating that the assay does not introduce selection bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "At day 1 of quiescence, FOAR mutation frequency ranges from 1-3 \u00d7 10\u207b\u2077, with 72% SNVs and 28% indels, showing a slight insertion bias. This profile is similar to published results for cycling cells in budding and fission yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C42-C45 are supported by data in Figure 2A and Table 2, with appropriate citations. The similarity to cycling cells at day 1 is expected since these mutations likely arose during the last rounds of replication before quiescence entry (C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C86"
+    ],
+    "result": "The main class of indels is \u00b11 bp, accounting for roughly half the events, with more than half occurring within homonucleotide runs. This pattern is consistent across both the ura4/5 targeted study and whole-genome sequencing (>62% \u00b11 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C86 are supported by data in Figure 2D and sequence analysis. The predominance of \u00b11 bp indels in homonucleotide runs suggests a specific mutational mechanism, possibly related to polymerase slippage during repair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "CpG dinucleotides are among the top mutated dinucleotides in ura4 and ura5, consistent with previous observations in other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by data in Figure 2\u2014figure supplement 2 and citations to previous studies. However, the authors note this is difficult to understand given the absence of cytosine methyltransferase in fission yeast, suggesting an unexplained mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Statistical testing showed days 8 and 15 are not significantly different for Ts:Tv and AT bias, so they were combined for analysis. Day 1 is statistically different from days 8+15 (p<0.05 for both metrics).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by chi-square tests. This statistical approach is appropriate for justifying the grouping of time points and demonstrates the temporal shift in mutational spectrum.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C70",
+      "C87",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The authors propose that genomes evolve under two alternating mutational spectra (growth and quiescence) with opposing effects on genome size and composition. They name the quiescence mutational force 'Chronos' and propose it represents a novel genetic force expressed per unit time rather than per generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C63, C70, C87, C98-C99, and C101 represent the main conceptual framework and conclusions of the paper. These are well-supported by the collective data showing distinct mutational spectra in growth versus quiescence. The proposal of 'Chronos' as a time-dependent mutational force is a reasonable interpretation of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The authors acknowledge they cannot exclude that <10\u207b\u2074 of cells divide during quiescence, but favor the 'Chronos model' where DNA lesions arising during quiescence are repaired with errors that generate mutations over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 appropriately acknowledge limitations while proposing a mechanistic model. The caveat about rare dividing cells (C90) is honest given the septum data. The Chronos model (C91) is a reasonable interpretation supported by the data, though direct mechanistic evidence is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C65",
+      "C68",
+      "C88",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The introduction establishes background knowledge about mutation rates, mutational spectra during growth, adaptive mutations, persisters, and quiescence biology in various organisms including fission yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C26, C65, C68, C88, C94-C97 represent background knowledge supported by appropriate citations to the literature. These claims provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors speculate that the replication-driven mutational bias has not reached equilibrium, suggesting counterbalancing forces exist. They propose that alternating mutagenesis modes allow compensatory mutations and may impact germ cell genetics, molecular clock accuracy, and evolutionary theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C102-C105 represent speculative extensions of the findings. While C100 is a reasonable inference from the data, claims C102-C105 are largely speculative and not directly tested. These represent interesting hypotheses for future work but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Summary statement that the proportion of deletions among indels is higher in quiescence than in MA lines of cycling cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is a summary statement supported by the data in C80 and comparisons to published MA studies. This is redundant with other results already grouped.",
+    "result_type": "MINOR"
+  }
+]

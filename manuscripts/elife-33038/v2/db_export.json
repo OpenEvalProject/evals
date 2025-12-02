@@ -1,0 +1,1396 @@
+{
+  "submission": {
+    "id": "cb61c333-cbf6-4f52-a681-3349c66d72e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:21:41.124023Z",
+    "updated_at": "2025-12-01T23:21:41.124023Z"
+  },
+  "content": [
+    {
+      "id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "submission_id": "cb61c333-cbf6-4f52-a681-3349c66d72e6",
+      "content_type": "manuscript",
+      "content_text": "# Role of framework mutations and antibody flexibility in the evolution of broadly neutralizing antibodies\n\n## Authors\n\n- Victor Ovchinnikov<sup>1</sup> ([ORCID: 0000-0002-1793-2352](https://orcid.org/0000-0002-1793-2352))\n- Joy E Louveau<sup>2</sup>\n- John P Barton<sup>3</sup> ([ORCID: 0000-0003-1467-421X](https://orcid.org/0000-0003-1467-421X))\n- Martin Karplus<sup>1</sup> \u2020\n- Arup K Chakraborty<sup>3</sup> ([ORCID: 0000-0003-1268-9602](https://orcid.org/0000-0003-1268-9602)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n2. Harvard-MIT Division of Health Sciences and Technology Massachusetts Institute of Technology Cambridge United States\n3. Department of Chemical Engineering Massachusetts Institute of Technology Cambridge United States\n4. Department of Physics Massachusetts Institute of Technology Cambridge United States\n5. Institute for Medical Engineering and Science Massachusetts Institute of Technology Cambridge United States\n6. Ragon Institute of MGH, MIT and Harvard Cambridge United States\n7. Laboratoire de Chimie Biophysique, ISIS Universite de Strasbourg Strasbourg France\n8. Department of Biological Engineering Massachusetts Institute of Technology Cambridge United States\n9. Department of Chemistry Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEliciting antibodies that are cross reactive with surface proteins of diverse strains of highly mutable pathogens (e.g., HIV, influenza) could be key for developing effective universal vaccines. Mutations in the framework regions of such broadly neutralizing antibodies (bnAbs) have been reported to play a role in determining their properties. We used molecular dynamics simulations and models of affinity maturation to study specific bnAbs against HIV. Our results suggest that there are different classes of evolutionary lineages for the bnAbs. If germline B cells that initiate affinity maturation have high affinity for the conserved residues of the targeted epitope, framework mutations increase antibody rigidity as affinity maturation progresses to evolve bnAbs. If the germline B cells exhibit weak/moderate affinity for conserved residues, an initial increase in flexibility via framework mutations may be required for the evolution of bnAbs. Subsequent mutations that increase rigidity result in highly potent bnAbs. Implications of our results for immunogen design are discussed.\n\n## Introduction\n\nThe HIV/AIDS epidemic affects more than 37 million individuals worldwide, and there were 2 million new infections in 2014 (Deeks et al., 2015). The introduction of antiretroviral drugs in the 1990s has made HIV infection a manageable condition, but less than half of the persons diagnosed with HIV remain in care in the United States. In sub-Saharan Africa, the epicenter of the disease, this problem is far more acute. Vaccination is a way to confront this challenge and eradicate the disease. One major obstacle to developing a universal vaccine is the high mutability of HIV (Korber et al., 2001). In order to prevent new infections, the vaccine-induced immune response must protect against a great diversity of circulating HIV strains. Antibodies (Abs) that can neutralize a broad diversity of HIV strains, known as broadly neutralizing antibodies (bnAbs), are of great interest in this regard because they have shown potential to both prevent new infection in animal models and to control existing infection for some duration in both human and animal models (Barouch et al., 2013; Klein et al., 2012; Mascola et al., 2000; Moldt et al., 2012; Lu et al., 2016).\n\nBnAbs naturally evolve in only a subset of HIV-infected patients, and usually in low titers after several years of infection. The isolation of bnAbs from patients provides proof that the human immune system can evolve such antibodies. Past attempts at eliciting them by vaccination have failed (Kong and Sattentau, 2012; McCoy and Weiss, 2013). Many efforts are currently underway to design immunogens and vaccination strategies that can induce bnAbs. Despite significant progress (Shaffer et al., 2016; Wang et al., 2015; Escolano et al., 2016; Steichen et al., 2016; Bonsignori et al., 2016), a vaccination protocol that can efficiently induce bnAbs in non-human primates or humans is not available.\n\nThe key process in the development of Abs is a Darwinian evolutionary process known as affinity maturation (Shlomchik and Weisel, 2012; Victora and Nussenzweig, 2012). A B cell is activated upon binding of its B cell receptor (BCR) to a part of the proteins (epitope) that constitutes the antigen (e.g., spikes on the surface of viruses). Activated B cells can seed structures called germinal centers (GCs) in lymph nodes where affinity maturation occurs. During affinity maturation (AM) B cells proliferate, and upon induction of the activation-induced cytidine deaminase (AID) gene, mutations are introduced in the receptor at a high rate (somatic hypermutation). The B cells with mutated BCRs then interact with the antigen displayed on the surface of Follicular Dendritic Cells (FDCs). The B cells undergo selection to favor those with receptors that bind more strongly to the target epitope. Upon immunization with a single antigen, as cycles of diversification and selection ensue in the GC, antibodies with increasingly higher affinity for the antigen are produced (Eisen and Siskind, 1964).\n\nFor an HIV vaccine to produce bnAbs, immunization with a single strain of antigen will likely not suffice as it would lead AM to produce strain-specific antibodies. Immunization with multiple variant antigens that have the same amino acid sequence at conserved positions on the viral spike proteins, but diverse amino acids at the surrounding positions, are likely to be required. An example set of conserved residues is the CD4 binding site, which is a part of the epitopes targeted by certain bnAbs. Recent studies have suggested that the variant antigens can act as conflicting selection forces,\u00a0which frustrate the Darwinian evolutionary process of AM under some conditions (Shaffer et al., 2016; Wang et al., 2015). Under some circumstances, the importance of sequential immunization with variant antigens for the induction of bnAbs has been shown (Wang et al., 2015; Escolano et al., 2016; Steichen et al., 2016), and the possibility of designing optimal cocktails of variant antigens has also been noted (Dosenovic et al., 2015; Shaffer et al., 2016).\n\nBnAbs exhibit unusual structural features such as a high degree of somatic hypermutation (including insertions and deletions) in the antigen binding regions known as the complementarity determining regions (CDRs), as well as changes in the surrounding framework regions (FWR) (Scheid et al., 2009; Sok et al., 2013). Most efforts to understand the evolution of bnAbs have concentrated on mutations in the CDRs. However, mutations in FWRs that are spatially separated from the antigen-binding site may also affect binding properties. For example, Klein et al. showed that, for the bnAbs they studied, the reversal of FWR mutations reduces breadth and potency. However, the FWR mutations had no effect on non-broadly neutralizing antibodies (Klein et al., 2013). This finding implies that FWR mutations can be important for the broadly neutralizing activity, and it has been proposed that FWR mutations increase neutralizing breadth by providing the Ab with greater conformational flexibility (Scheid et al., 2011; Klein et al., 2013). A subsequent study of the 4E10 bnAb also found a high degree of plasticity in the mature antibody (Finton et al., 2014).\n\nThe implications of these studies contradict the established paradigm of antibody maturation, which suggests that antibodies progressively become more rigid as AM ensues (Schmidt et al., 2013; Eisen and Chakraborty, 2010; Foote and Milstein, 1994; Wedemayer et al., 1997; Thorpe and Brooks, 2007). Since bnAbs evolve upon undergoing AM induced by multiple variant antigens, different selection forces may be at play.\n\nA recent study on a class of enzymes showed that adaptation to different ligands in a PDZ domain preferentially occurred not only through mutations in the ligand-binding site, but rather through a collection of distant mutations (Raman et al., 2016). These mutations worked allosterically to enable multiple conformational states, therefore allowing binding to a diversity of ligands during adaptation. This finding, and those reported by Nussenzweig and co-workers (Scheid et al., 2011; Klein et al., 2013), led us to hypothesize that mutations in the framework region (FWR) of BCRs could potentially affect the conformational states of the antigen binding region and allow BCRs to bind to a broad range of variant antigens present during AM induced by natural infection or vaccination. This may, in turn, enable B cells to better negotiate the conflicting selection forces represented by the variant antigens and thus facilitate the evolution of bnAbs.\n\nTo explore this hypothesis, we used molecular dynamics (MD) simulations to quantify the structural flexibility of antibodies obtained at different stages of AM in three bnAb lineages. These studies were augmented by a simplified computational model of AM in the presence of multiple variant antigens that simulated the effect of mutations in both the CDR and the FWR to provide insight on the evolution of flexibility and its influence on breadth.\n\nOur results suggest that distinct evolutionary pathways are followed during the evolution of breadth and potency in bnAbs, and we provide mechanistic insights into the underlying reasons. If the binding affinity of the germline BCR to the conserved residues shared by the variant antigens is high, the traditional paradigm where the antibodies become progressively more rigid as AM progresses is predicted. If this is not the case, FWR mutations that increase flexibility are favored. Additional complexities are predicted as breadth and potency evolve. From the standpoint of designing vaccination protocols, our results imply that, if model antigens can prime germline B cells whose BCRs bind strongly to the shared conserved residues of the boosting variant antigens, inducing FWR mutations that influence receptor flexibility is not essential for the evolution of bnAbs. This is significant as it simplifies the task of immunogen design.\n\n## Results\n\n### MD simulations of different bnAb lineages show varying effects of framework mutations\n\n#### Description of the MD simulations\n\nWe used atomistically detailed molecular dynamics (MD) simulations to study how flexibility evolved in three different bnAb lineages (see Table 1): bnAbs 3BNC60 and CH103 bind to the CD4 binding site on the HIV gp120 protein, and bnAb PGT121 binds primarily to glycans near the V3 chain of gp120. We chose these specific lineages because of the availability of high-resolution crystal structures of germline, intermediate, and mature antibodies.\n\n**Table 1.**\n Structures of the broadly neutralizing antibodies investigated in this study.For each lineage, three structures are considered: the matured Ab, an intermediate maturity Ab, and an inferred unmutated germline structure (the exact sequence of the germline B cell that seeds a GC is difficult to know as some junctional diversity could be introduced prior to the GC reaction). Resolution of the structures is indicated after the PDB ID. Only the variable chains of the antibodies were simulated (see Materials\u00a0and\u00a0methods).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Lineage</th>\n      <th>Maturity</th>\n      <th>Pdb id (\u00c5)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>3BNC60</td>\n      <td>Matured</td>\n      <td>3RPI (Scheid et al., 2011) (2.64)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Germline</td>\n      <td>5F7E (Scharf et al., 2016) (1.90)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>P61A reversal*</td>\n      <td>4GW4 (Klein et al., 2013) (2.65)</td>\n    </tr>\n    <tr>\n      <td>CH103</td>\n      <td>Matured</td>\n      <td>4JAN (Fera et al., 2014) (3.15)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>UCA</td>\n      <td>4QHK (Fera et al., 2014) (3.49)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Chimera\u2020</td>\n      <td>4QHL (Fera et al., 2014) (3.15)</td>\n    </tr>\n    <tr>\n      <td>PGT121</td>\n      <td>Matured</td>\n      <td>4FQ1 (Mouquet et al., 2012) (3.0)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Germline</td>\n      <td>4FQQ (Mouquet et al., 2012) (2.4)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Chimera\u2021</td>\n      <td>5CEZ (Garces et al., 2015) (3.0)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Single mutation reverted from bnAb;\u2020Intermediate HC with the LC from the unmutated common ancestor (UCA);\u2021Intermediate HC 3 hr with mature LC 109L._\n\nWe generated five 100ns trajectories for each structure, starting from different initial conditions (velocities; see Materials and methods). The root mean square distances (RMSD) from the initial structures are shown in Figure 1\u2014figure supplement 1. The RMSD time series for each of the five trajectories are concatenated to show that trajectory differences are significant, thus indicating that the trajectories are not correlated and each is meaningful. With the exception of the heavy chain (HC) of the mature 3BNC60, the RMSD are under about 1.5 \u00c5, indicating that the structures are stable in the simulation. Examination of the 3BNC60 trajectory showed local \u03b2-sheet instability near residue P61 which leads to partial unfolding of a beta hairpin in simulation 5 (see Figure 1\u2014figure supplement 1A, and also Figures 1A and 2A, discussed below). This result is consistent (see below) with experiments (Klein et al., 2013). The RMSD graphs also provide a qualitative measure of antibody flexibility. For example, in the 3BNC60 lineage, the HC shows progressively higher RMSD going from the germline (GL) to the mature structure. The reverse is observed for the CH103 HC, although the differences appear smaller than in the 3BNC60 case. The PGT121 lineage exhibits more complexity that is described below in quantitative terms.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig1-v2.jpg)\n\n**Figure 1.:** (A,D) 3BNC60 lineage; (B,E) CH103 lineage; (C,F) PGT121 lineage. In order to compare the three lineages, all sequences are multiply aligned. This procedure creates gaps in the traces corresponding to antibodies with shorter loops in the region; i.e., there are no actual missing residue coordinates. The dashed lines bound the region of one standard deviation above and below the average trace. Bullets indicate mutations acquired during AM. The definitions of FWR and CDR regions are taken from (Scheid et al., 2011).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The RMSD is computed using the backbone atoms of (A) 3BNC60 heavy chain (HC); (B) 3BNC60 light chain (LC); (C) 3BNC60 HC/LC complex; (D) CH103 heavy chain; (E) CH103 light chain; (F) CH103 HC/LC complex; (G) PGT121 heavy chain; (H) PGT121 light chain; (I) PGT121 HC/LC complex. Five independent trajectories for each structure are concatenated together, and separated by vertical dashed lines.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig2-v2.jpg)\n\n**Figure 2.:** (A) Simulation structure of the mature 3BNC60 antibody.\u00a0Antibody framework regions are shown in orange, and the CDR regions are in purple. The conformational flexibility of the CDR regions of the heavy chain is illustrated by overlaying 24 conformations of the CDRs in 4ns intervals from each of the five trajectories. The P61 residue is shown in black; (B) simulation structure of the intermediate PGT121 antibody. The structure is colored as in (A), except that the conformational flexibility is illustrated for the FWR region of the light chain using 24 overlaid orange curves; (C) simulation structure of the mature CH103 antibody. Twenty-four gray curves are overlaid to illustrate the relatively lower overall flexibility of this antibody.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Stabilizing hydrogen bonds between S27 (CDR1) and G68 (FWR3) are indicated in black lines. Letters a-c in parentheses represent insertion codes.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The entire structure was simulated for 400ns (see Materials and methods). The initial structure before simulation is shaded in gray, and the final structure is in color. The variable and constant LC regions are in light and dark blue, respectively. The variable and constant HC regions are in yellow and orange, respectively. For the main MD simulations analyzed in this work only the variable chains were included, as indicated by the rectangle.\n\nTo assess the flexibility quantitatively as a function of residue number, the structures obtained from the all-atom simulations were coarse-grained to a representation of one bead per residue (see Materials and methods) and RMS positional fluctuations from the mean bead position were computed for each bead. More flexible molecules are characterized by larger RMS fluctuations. Further, the standard deviation in the RMSF plots allows one to distinguish between antibody regions that are flexible but stably folded (small Std. Dev.) and antibody regions that are either partially unfolded or have significant conformational heterogeneity across the simulations (high Std. Dev). This coarse-graining also allowed us to calculate the conformational entropy of the antibodies, which is a quantitative thermodynamic measure of their overall flexibility. Toward this end, we used standard quasi-harmonic analysis which treats each bond as a spring (see Materials and methods). Although it is known that the conformational entropy from quasi-harmonic analysis typically overestimates the true conformational entropy (see, e.g., [Tyka et al., 2007]), the relative differences between the structures studied are expected to be meaningful because of the overall structure similarity of antibodies in the same lineage. More flexible molecules are characterized by a larger value of the conformational entropy.\n\n##### Results of the MD simulations\n\nThe results shown in Figure 1A quantify the dramatic effect of the P61A reversal mutation in the heavy chain of 3BNC60. Consistent with experiments, the presence of proline in the mature antibody disrupts the secondary structure of the \u03b2-sheet connecting the CDR2 and FWR3 regions, resulting in partial unfolding of the region (Klein et al., 2013). The magnitude of the fluctuations in the CDR regions is illustrated qualitatively in Figure 2A by overlaying multiple CDR conformations. The fluctuations are highest in the region surrounding the P61 residue. The high fluctuations propagate to other regions (e.g. FWR1/CDR1 and FWR3) because of geometric (but not sequence) proximity (Figure 1). The large RMS fluctuations indicate a more flexible structure, and are thus consistent with the observation that the melting temperature for the P61A reverted 3BNC60 mature antibody was 5K lower than that for the mature bnAb (Klein et al., 2013). Although the P61A single reversal has a dramatic effect on the dynamics of the Ab, it is clear from Figure 1A that other somatic mutations also increase the flexibility of the 3BNC60 heavy chain relative to the germline structure. This is made clear from the values of the calculated conformational entropy (Figure 3), where we observe a progressive increase in the conformational entropy from the germline to intermediate to mature antibody for the 3BNC60 lineage. The conformational entropy of the light chains of the 3BNC60 lineage of antibodies show a modest decline (Figure 3). From these results we conclude that there was a progressive increase in flexibility of the 3BNC60 lineage of antibodies as affinity maturation progressed.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig3-v2.jpg)\n\n**Figure 3.:** Absolute classical quasi-harmonic entropy for the CG antibody model of the heavy (A) and light (B) chains, shown as the contribution to the absolute free energy (\u2212TS). The absolute entropy magnitude tends to be larger for the heavy chains than for the light chains because they have more amino acids (e.g. 123 aa. for 3BNC60 HC vs. 98 aa. for 3BNC60 LC).\n\nThe evolution of flexibility of the heavy chains of the CH103 lineage is opposite to that of 3BNC60 (Figure 1B), since the antibodies become progressively stiffer as the lineage matures. This is reflected in both the RMS fluctuations and the conformational entropy (Figure 1B and Figure 3A). This result indicates that increased flexibility is not always required to achieve breadth, even for antibody lineages that target the same region (the CD4 binding site). In fact, (Fera et al., 2014) attribute the breadth increase in the CH103 lineage to a reorientation of the LC relative to the HC, which alleviates steric clashes with gp120 variants that have longer V5 loops. Furthermore, the variation in flexibility that we report for the CH103 lineage is consistent with earlier studies of non-broadly neutralizing antibodies, which also showed a loss of flexibility during maturation (Chong et al., 1999; Thorpe and Brooks, 2007; Wong et al., 2011), and with the traditional paradigm of affinity maturation (Foote and Milstein, 1994; Wedemayer et al., 1997). The light chains of the CH103 also show a loss of flexibility upon maturation, although this change is more modest.\n\nFor the PGT121 lineage, our MD simulation results exhibit greater complexity. For the heavy chains of this lineage, flexibility changes are observed in the CDR3 region (Figure 1C). In this antibody, CDR3 has a 11 residue insertion relative to the 3BNC60 and CH103 lineages, and is involved in binding to gp120 glycans (Garces et al., 2015). The CDR3 heavy chain compared to the germline loses flexibility with maturation, again consistent with the traditional paradigm. However, our simulations did not show statistically significant flexibility differences outside of the CDR3 (as indicated by 95% confidence limits associated with 2\u00a0\u00d7\u00a0Std. Dev.) suggesting that the overall flexibility reduction of PGT121 HC upon maturation is rather modest. Differences in the conformational entropy for this antibody (Figure 3) are consistent with this observation. Although the flexibility differences for the HC of the PGT121 lineage are modest, the variation in flexibility for the LC is significant. We studied three structures \u2013 the mature PGT121 antibody, the germline structure, and an antibody construct in which a lightly-mutated heavy chain (3 hr with 11% amino acid mutations, [Sok et al., 2013]) was paired with a heavily-mutated light chain (109L with 34% mutations, [Sok et al., 2013]). Since the 109L LC is heavily mutated (i.e., like the mature PGT121 LC, which is 28% mutated [Sok et al., 2013]), the 109L LC can be considered another variant of the mature light chain. Since it is paired with a lightly mutated heavy chain, we consider the 3 hr/109L antibody structure to be representative of an intermediate stage of PGT121 evolution. While the mature variant is less flexible than the germline in the regions FWR3-FWR4, the intermediate construct has high flexibility, particularly in the framework regions (see Figure 1F and Figure 2B). This result underscores that the dramatic flexibility increase observed for the 3BNC60 HC above is not an isolated occurrence. Specifically, both chains of the 3H109L PGT121 intermediate have higher entropies than the corresponding germline and mature structures, with the increase being more pronounced for the light chain (Figure 3), on which we focus below.\n\nTo understand the physical basis for the markedly increased fluctuations in the 3 hr/109L intermediate, we examined the simulated structures and the sequences of the mature PGT121 and of the intermediate 3 hr/109L. In the PGT121 light chain, the FWR3 region near residue 68 is well ordered, and interacts with the CDR1 region near residue S27 (Figure 2\u2014figure supplement 1). Hydrogen bonds are formed between S27 (both, side chain and backbone oxygens) and G68 (backbone amide). In the 109L LC the serine is an alanine, and the stabilizing hydrogen bonds do not form, which allows the FWR3 region to unfold locally near the three residue insertion 66(a)P-66(b)D-66(c)I. In the mature PGT121 light chain, this insertion is mutated to 66(a)D-66(b)S-66(c)P (Figure 2\u2014figure supplement 1), and in conjunction with A27S, results in a stable conformation. However, it is possible that this conformation is only weakly stable, such that minor changes in the adjacent structure (such as the S27A mutation in the CDR1) could cause unfolding. Therefore, the stability of FWR3 in the intermediate 109L LC appears to depend, at least in part, on the sequence identity of CDR1, which might seem surprising because the framework regions are thought to provide a relatively rigid scaffold to which variable and flexible CDR regions are attached. Other sequence differences between the mature LC and 109L in or near the insertion region could also be significant, such as S65T or S66(c)I. However, examination of the trajectory did not implicate these residues in the instability directly, because they are oriented away from the CDR1 loop. These results suggest that the complete explanation for the increased flexibility is quite complicated.\n\nOverall, our results demonstrate that flexibility throughout the antibody can be changed significantly by mutations in both the FWR and CDR regions, and, more generally, that affinity maturation in bnAbs does not follow the rigidification paradigm in all cases.\n\n### A model of AM suggests that the binding affinity of the germline BCR to the conserved regions of the epitope determines the role of framework mutations on bnAb evolution\n\nOur analyses of MD simulation results clearly indicate significant \u2018exceptions\u2019 to the paradigm of antibody rigidification during affinity maturation. For the 3BNC60 lineage, flexibility progressively increased, while the opposite is true for the CH103 lineage. For the PGT121 lineage, our results indicate that the intermediate is more flexible than either the mature or germline antibodies, so that this is an example of a more complex maturation trajectory. The germline for the CH103 lineage bound strongly to the CD4 binding site of the founder HIV envelope glycoprotein (Liao et al., 2013). Conversely, ancestors of 3BNC60 show lower potency and breadth of neutralization (Scheid et al., 2011; Klein et al., 2013). Therefore, although the founder viral strain for the patient from whom 3BNC60 was harvested was not available, this result suggests that the 3BNC60 ancestors bind weakly to the CD4 binding site of the epitope that induced bnAb evolution. In general, it is not likely that a naive germline B cell will have a strong affinity for the shared conserved residues. Thus, we hypothesized that the traditional paradigm of reduced flexibility with maturation applies when the germline BCR binds strongly to the conserved shared residues of the variant antigens that induce the evolution of bnAbs. More complex evolution of flexibility can result when this is not the case, as we found for the 3BNC60 and PGT121 lineages. To explore this hypothesis in light of processes that occur during AM in the presence of variant antigens, we developed a simplified model of AM.\n\n#### Description of the affinity maturation model\n\nPast studies analyzing the evolution of bnAbs in infected persons show that often diversification of viral strains precedes the development of bnAbs (Liao et al., 2013; Doria-Rose et al., 2014; Bhiman et al., 2015). Thus, we studied AM induced by a cocktail of multiple variant antigens. Our computational model of affinity maturation of B cells includes somatic hypermutation (SHM) in the CDR as well as in the FWR. The purpose of our computational model is not the quantitative reproduction of existing experiments or our MD simulation results, but rather to provide mechanistic insights into how mutations in the CDR and FWR regions change the flexibility of Ab structure to influence the development of breadth and potency. As in recent models of the mutation and selection phenomena that occur during AM induced by multiple variant antigens, which predicted phenomena that were experimentally validated (Wang et al., 2015), our model for AM does not explicitly consider the motion of B cells in space or the atomistically detailed structure of BCRs and antigens. The model is conceptually similar to the one described by (Wang et al., 2015) and (Shaffer et al., 2016), but we adopt a different approach to modeling the BCRs, the variant antigens, and their interactions with each other. The present approach explicitly considers the flexibility of the antibody structures in determining the free energy of interactions between BCRs and antigens. We first describe how the binding free energy is estimated, and then show how the various steps of AM are computed (further details are provided in the Materials and methods).\n\nThe variant antigens have a certain fraction \u03bb of their amino acid sequence that is the same. This fraction represents the shared conserved residues of the targeted epitope; (1- \u03bb) is the fraction of amino acids that differ. Each B cell is characterized by its binding energy Ec to the shared conserved region, and its binding energy Evi to the variable part of each antigen i. Lower (i.e., more negative) binding energies indicate stronger binding. Further, the flexibility of the BCR can play an important role in determining the entropy loss on binding. For more rigid BCR structures, there is a smaller loss of entropy upon binding; for more flexible BCRs, the binding free energy is less favorable (for the same binding energy) because of the greater entropy loss. However, since more flexible structures can bind to more diverse antigen variants, increased flexibility can contribute favorably to the binding energy. For simplicity, we characterize the structural flexibility of a BCR by a single parameter Q, which take values between 0 and 1; Q\u00a0=\u00a00 and Q\u00a0=\u00a01 correspond to a highly flexible and a highly rigid structure, respectively. Given the analysis above, we introduce an approximate model for the binding free energy,\u00a0for a BCR characterized by Q, Ec and Evi (defined above) with antigen variant, i, it is defined as:\n\n$$\n(1a)E=Q(\\lambdaE_{c}+(1\u2212\\lambda)E_{vi})+(1\u2212Q)E_{0}(1b)=QE_{w}+(1\u2212Q)E_{0},\n$$\n\nE becomes more favorable as mutations are acquired that increase the binding energy of the BCR to the residues of the antigen. The first term in Equation 1(b), QEw, includes an approximation to the entropy contribution to the free energy, based on the reasonable assumption that the effect of flexibility can be captured by scaling down the energy Ew. As the BCR becomes more flexible (smaller Q), because of the greater entropy loss associated with binding, the net binding free energy (QEw) is smaller for the same value of Ew. E0 corresponds to a moderate favorable \u2018generic\u2019 binding free energy to all variant antigens accessible through conformational plasticity. The second term in Equation 1(b) plays an increasingly important role for flexible BCR structures (smaller values of Q). For simplicity, we assume that mutations in the CDR affect the binding energy (Ec or Evi, depending on their location) and that mutations in the FWR only affect the rigidity of the BCR (Q) and not the binding energy. The model could be refined by taking into account different flexibilities of the epitopes on variant antigens. As there is no way to know the distribution of epitope flexibilities, we have instead studied the influence of varying the value of E0.\n\nMore negative binding free energies correspond to stronger affinities. The absolute value of the binding free energy is arbitrary as free energies are determined only up to an additive constant. We assume that a binding free energy of zero is the minimum required for antigen binding (for example only B cells that bind to antigen with a more favorable binding free energy than zero can seed a Germinal Center (GC)). The binding free energies in our model are expressed in units of kBT (see text following Equation 4 in Materials and methods).\n\nWe simulate the processes that occur during AM using a stochastic model, as is appropriate for an evolutionary process. The set of rules that define AM are derived from experimental studies of affinity maturation with a single antigen (Allen et al., 2007; Berek and Milstein, 1987; Tas et al., 2016; Victora and Nussenzweig, 2012), and these serve as instructions that are executed by the computer. The following steps are executed for the situation where there exists a number of variant antigens displayed on the Follicular Dendritic Cells (FDCs) in the GC.\n\n#### Seeding of a GC and somatic hypermutation\u00a0(SHM)\n\nWe select a few founder B cells that bind to one of the variant antigens with a binding free energy above a threshold (defined above) to seed a GC. The founder B cells expand reaching a population of 1,536 cells. Then, the AID gene turns on and mutations are introduced with a probability determined by experiments: each B cell of the dark zone divides twice per GC cycle (four divisions per day) (Zhang and Shakhnovich, 2010) and a mutation occurs with a probability of 0.20 per sequence per division (Berek and Milstein, 1987). The mutations affect both the CDR and the FWR. Although the FWR constitutes over two thirds of the variable domain by sequence, mutational hotspots have mostly been found in the CDR (Neuberger and Milstein, 1995; Tomlinson et al., 1996; Wagner and Neuberger, 1996). Thus, we assume that the probability that a mutation occurs is higher in the CDR (pCDR) than in the framework (pFWR). The precise values of the parameters used are provided in Supplementary file 1 and 2.\n\n#### CDR mutations\n\nCDR mutations can cause a B cell to undergo apoptosis (for example, by making the BCR unable to fold), be silent (e.g., synonymous mutation), or modify the binding energy. The probability that a CDR mutation will follow one of these paths is governed by probabilities obtained from experiments (Berek and Milstein, 1987). Apoptosis occurs half of the time, 30% of mutations are silent, and 20% are binding energy-affecting mutations (Zhang and Shakhnovich, 2010). Experimental studies of protein-protein interactions indicate that binding energy-affecting mutations are more likely to be deleterious than advantageous (Moal and Fern\u00e1ndez-Recio, 2012). Therefore, in our model, the change in binding energy is sampled from a shifted log-normal distribution whose parameters are chosen to approximate the observed empirical distribution of changes in binding energies upon mutation. In our model, the CDR mutations change Ec or Evi, depending on their location, but do not affect flexibility (Q).\n\n#### FWR mutations\n\nIn the case of a mutation in the FWR, we assume that the likelihood of undergoing apoptosis is very high (80%) to account for the role of the FWR in maintaining the structural integrity of antibodies. Non-lethal mutation yields a change in the flexibility of the structure, which is represented by a change in the rigidity parameter Q that is randomly sampled from a Gaussian distribution. We allow Q to vary between a state of maximum rigidity (Q\u00a0=\u00a01) and a state of high flexibility (Q\u00a0=\u00a00.1). If a mutation would increase Q above one or decrease it below 0.1, we simply set Q equal to the boundary value of 1 or 0.1, respectively. Because FWR regions tend to be farther from the binding interface than CDR regions, we assume that FWR mutations do not directly affect binding energy (Ec or Ev); their effects are introduced indirectly through changes in Q.\n\n#### Selection\n\nAfter SHM, the mutated B cells then migrate to the light zone of the GC, where selection takes place through competition for binding to antigens displayed on FDCs and for receiving T-cell help. We do not model the spatial migration step explicitly, but rather selection occurs after the rounds of division and somatic hypermutation in the dark zone. As our goal is to explore how the qualitative nature of the evolutionary paths followed by B cells in the GC depend upon the strength of binding of the germline B cells to the conserved residues of the epitope, treating migration explicitly is not necessary.\n\nIn the GC, B cells interact with antigen displayed on FDCs. B cells with receptors that bind more strongly to the antigen will likely internalize more antigen. They are thus more likely to display larger numbers of antigen-derived peptides bound to MHC Class II molecules on their surface. The B cells that internalize antigen and display peptide-MHC molecules on their surface compete with each other for the limited number of T helper cells in the GC. If there is a productive interaction of peptide-MHC molecules on B cells undergoing selection and the T cell receptor on the surface of T helper cells, the B cell receives a survival signal, and if it does not, apoptosis results (Foy et al., 1994; Crotty, 2015). B cells that display more peptide-MHC molecules on their surface are more likely to receive this survival signal.\n\nWe model the two-step selection process noted above as follows. First, each B cell successfully internalizes the antigen it encounters with a probability that grows with the binding free energy and then saturates, following a Langmuir form (see Equation 4 in Materials and methods). B cells that successfully internalize antigen can then go on to the second step, while the others die automatically. The B cells that internalize antigen are ranked according to their binding free energy, which is expected to correlate with the concentration of pMHC that they display to T cells, and only the best performers are selected (see Supplementary file 1 and 2 for details on parameter values).\n\nIn the presence of multiple antigen variants present on FDCs, a B cell could interact with and internalize several variants at a time or just one variant. However, there is no experimental data to describe how heterogeneously different antigens are distributed on the surface of FDCs at a given time. It was shown previously that, if B cells interact with multiple variants of the antigen in every cycle, bnAbs are less likely to evolve (Wang et al., 2015; Shaffer et al., 2016). Therefore, in our model we assume that a B cell encounters only one antigen variant on FDCs at a time; a different choice would lower the probability of bnAb evolution. The\u00a0encountered antigen variant is chosen randomly with a uniform probability for each B cell during each round of selection.\n\n#### Recycling, exit for differentiation, and termination of the GC reaction\n\nMost (70%) B cells that are positively selected are recycled for further rounds of mutation-selection while a few randomly selected B cells exit the GC to mimic the differentiation into memory and antibody-producing plasma cells (Oprea and Perelson, 1997). The GC reaction comes to an end in three possible circumstances: 1] All the B cells die, thus extinguishing the GC. 2] If the number of B cells in the GC exceeds 1,536 cells; this is a proxy for the antigen being consumed by the B cells 3] When the number of cycles, or time, exceeds a maximum number (250 cycles, or \u2248 125 days assuming two cycles per day; see Supplementary file 1 and 2 for full parameter values), which is a proxy for the antigen having decayed or loss of antigen from the GC.\n\nAlthough the model that we simulate lacks structural detail, it reproduces experimentally observed order-of-magnitude increases in the binding affinity during AM induced by a single antigen (see Materials and methods and Figure 4\u2014figure supplement 1).\n\n#### Simulated AM trajectories\n\nFor each simulated AM trajectory in the GC, we record the total number of B cells over time as well as the number of acquired energy-affecting CDR mutations and rigidity-affecting FWR mutations. Due to the stochastic nature of B cell evolution during affinity maturation, we carried out 104 simulations for each set of conditions studied, and combined the results to obtain meaningful statistics. Our results thus reflect the probability with which certain types of evolutionary patterns would be observed for each set of conditions that we studied. Because mutation probabilities are less than unity, cell division can generate cells with identical values for binding energies and rigidity. Thus, the GC contains sets, also called clones, of these functionally identical B cells. We analyze the properties of the clone with the largest number of cells at the end of the AM trajectory, and consider this to be representative of the properties of most of the antibodies generated. We also trace the evolutionary trajectories of these clones to determine the history of mutations in the CDR and FWR regions that shaped these final properties. To analyze the antibody breadth, we compute the binding free energy of this largest clone to a panel of 100 antigens different from those against which the antibody matured. For this purpose, we take the overlap parameter \u03bb and the binding strength with the conserved region to be the same as in the simulations of affinity maturation, but the binding strength with the variable region is randomly selected for each new antigen in the panel (Materials and methods). As a proxy for breadth, we compute the median binding free energy with panel antigens of each antibody over the maturation pathway . This allows us to track how breadth evolves during the course of affinity maturation. The higher the magnitude of the median binding free energy the greater the cross-reactivity of the Abs to variant antigens.\n\nThe results described in the main text have been carried out with ten variant antigens that share 90% sequence identity (\u03bb\u00a0=\u00a00.9), and three B cells seeding the GC. The precise number of antigens and the value of \u03bb used in the simulation are not important for the qualitative results that we present (for example, see Materials and methods and Figure 4\u2014figure supplement 2 where results with five antigens are shown). Similarly, increasing the number of seeding B cells to seven did not affect our results.\n\n#### Results of the affinity maturation model\n\nTo explore the hypothesis suggested by our MD simulation results, we considered two classes of activated germline B cells that seed the GC upon immunization with a cocktail of variant antigens: 1) those with a high favorable value of the binding energy to the shared conserved region of the antigens, Ec (such as those that have a long finger-like structure that binds to the CD4 binding site in the VRC01 family of antibodies); and 2) those with a weak/moderate binding energy to the shared conserved regions, which are expected to be more common upon natural infection, since most na\u00efve B cells are unlikely to have strong interactions with the conserved residues prior to affinity maturation. The Abs start with a high value of the rigidity parameter, Q\u00a0=\u00a00.8. The exact initial value of Q had little qualitative effect on the outcome (data not shown).\n\nOur results show strikingly different Ab evolution patterns and outcomes depending on the initial value of Ec (Figure 4). When the germline B cells bind to the conserved residues with relatively high affinity (e.g., Ec\u2248 \u22124), B cells evolve CDR and FWR mutations that strengthen the binding energy (Ec) to the shared conserved residues and reduce the flexibility of the antibody (increase Q); if the initial Q is already high, the increase may be relatively small. This is consistent with our MD simulation results for the CH103 lineage (and the traditional paradigm). The resulting antibodies are both broad and potent as reflected by the median binding free energy to the panel of antigens and the absolute magnitude of Ec (Figure 4). Thus, these antibodies acquire breadth and potency by focusing their interactions with the variant antigens on the shared conserved residues (more favorable Ec). This is the situation with the class of antibodies that acquire breadth and potency by focusing interactions with the CD4 binding site.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig4-v2.jpg)\n\n**Figure 4.:** Here we show statistics of the maturation pathways of the largest clones in our affinity maturation simulations. These figures therefore summarize typical features of antibody maturation across many parallel and independent germinal center reactions. (A) Antibody lineages that initially bind strongly with the conserved region of the antigen are likely to accumulate mutations that increase their binding strength and reduce flexibility. Starting parameters are indicated with an arrow. In our simulations, mutations in the CDR affect binding energies directly, while mutations in the FWR affect flexibility. Typical binding free energies with panel antigens, a proxy for breadth, strengthen steadily over the course of maturation (represented for generations 25, 150 and 400). (B) Antibodies that initially bind weakly with the conserved region typically become more flexible while increasing their binding strength. Such antibodies may subsequently begin to rigidify as they mature. The typical binding free energies with panel antigens increase slightly faster than in the strong conserved binding case above, but final binding free energies are not as strong. (C) The most potent antibodies at the end of the maturation process (generation 400), measured by median binding energy with panel antigens, are those that are the least flexible.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Example trajectories of the total B cell population of germinal centers focused on a single antigen. Two cycles correspond to roughly one day. (B) Typical germinal center reactions end after around 50 days. The number of mutations accumulated (C) and final binding energy (D) are congruent with typical numbers recorded for the maturation of antibodies against a single antigen.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Here we consider trajectories of antibody development for antibodies that initially bind (A) strongly or (B,C) weakly with the conserved region. In this case the affinity maturation process occurs against a panel of antigens with overlap \u03bb\u00a0=\u00a00.8 instead of 0.9, as in the main text. The results are similar to those shown in Figure 4, but with greater selection for flexibility due to maturation against a more diverse panel of antigens.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Stronger, or more negative, E0makes flexibility-increasing framework mutations more beneficial, and thus drives antibodies along 3BNC60-like trajectories (compare with Figure 4B). Here antibodies only begin to rigidify late in the maturation cycle, after Ec has already become quite strong. (B) In contrast, weaker E0 promotes more CH103-like maturation trajectories (compare with Figure 4A). This is because CDR mutations that improve binding with the conserved region (Ec) become relatively more beneficial early in the maturation process. For each set of simulations we have used a weak initial Ec, as in Figure 4B.\n\nIn the case where the binding energy of the germline B cell to the shared conserved residues is weaker (taken to be Ec\u00a0=\u00a00), we find that B cells typically need to acquire FWR mutations that increase their flexibility in order to be able to be positively selected in the presence of multiple variant antigens (Figure 4). This is made evident by the fact that in simulations where changes to flexibility are disallowed, GC reactions are 35% less likely to complete successfully because all the B cells undergo apoptosis as AM ensues (data not shown). Akin to enzymes in a changing environment of substrates (Raman et al., 2016) discussed earlier, the FWR mutations enable the B cells to bind loosely to the diverse variant antigens that act as the selection forces during affinity maturation. Since the value of Ec during the early stages of affinity maturation is not high, one way for the B cells to bind sufficiently strongly to diverse variant antigens and be positively selected is by evolving FWR mutations that increase conformational flexibility. Upon becoming more flexible and thus surviving selection against the variant antigens, in subsequent rounds of mutation and selection, the B cells can start to acquire CDR mutations that increase the binding energy to the conserved residues, thus acquiring breadth. Most bnAbs harvested at this stage of evolution will exhibit high breadth and relatively low potency because the free energy of binding to each variant antigen is not very high. This is because the flexibility of the BCR/antibody implies that a high entropic penalty has to be paid upon binding to the antigens (also see Equation 1 in the limit of small Q). In some cases, however, the flexible bnAbs can also be highly potent. This is because, as our calculations show, some flexible bnAbs that are produced at this stage of AM can develop strong interactions with the conserved residues (Ec\u2248 \u201311). This may be the case for the 3BNC60 antibody, which was isolated from patients with the specific selection criteria of high breadth and potency. As our MD simulation results show, for this lineage, flexibility progressively increases with maturity; 3BNC60 exhibits high breadth, with the potency expected to be comparable to that of CH103. Although we could not find specific comparative data for 3BNC60, another 3B class of bnAb, 3BNC117, is slightly more potent than CH103 (Chuang et al., 2013; Eroshkin et al., 2014). Indirect comparisons based on available data (Scheid et al., 2011; Chuang et al., 2013) suggest that 3BNC55, another bnAb with the P61 FWR mutation is less potent than CH103. This may be because it has not yet acquired the mutations required for strong interactions with the conserved residues, and our calculations (Figure 4) suggest that its flexibility makes 3BNC55 less potent.\n\nFigure 4A shows that, in the case where germline B cells have a weak binding energy Ec, if the evolutionary trajectories progress beyond a reasonably favorable value of Ec (which our simulations show to be roughly equal to E0), then framework mutations that make the structure more rigid are acquired much like the case where germline B cells exhibit a stronger Ec. Thus, the antibodies become more potent because they do not have to lose conformational entropy upon binding (see also Equation 1). Our results show that for the cases where the germline B cells have a low binding energy to the conserved residues, the median binding free energy of the antibodies for the panel of antigens exhibits a broad pattern at generation 400 (Figure 4B). Analyses of our results demonstrate that the population that exhibits lower breadth (median binding free energy) and lower final values of Ec is comprised of those antibodies that are more flexible, while those that continue to evolve and become more rigid have a higher breadth and potency (Figure 4C). This rigidification, following an initial increase in flexibility that enables the development of sufficiently strong interactions with the conserved residues, would explain why the PGT121 bnAb is more potent than 3BNC60. Also, these results are consistent with our MD simulations, which show that the intermediate is more flexible than both the germline or the mature antibodies.\n\nFor cases where the germline B cells exhibit a weak binding energy for the shared conserved residues of the antigens, we also observe some evolutionary trajectories where mutations quickly arise in the CDR regions that increase the affinity to the conserved residues and this is followed by the antibody structures evolving to become even more rigid. Such cases are less common.\n\nThe AM simulation results described above were obtained with a particular value of the \u201cgeneric\u2019\u2019 binding energy E0 (nonspecific binding energy accessible to flexible antibodies; see Equation 1 a,b). We have explored the effects of varying the value of this parameter on our results when the germline B cell does not bind strongly to the conserved residues of the epitope (weak initial Ec). As Figure 4\u2014figure supplement 3 shows, shifting E0 to very strong or weak binding energies affects the preferred antibody maturation pathway. A significantly more favorable value of E0 than that used to obtain the results in Figure 4 makes flexibility-increasing framework mutations more beneficial, and thus drives antibody evolution more along 3BNC60-like trajectories (compare Figure 4\u2014figure supplement 3 with Figure 4B). In this case, antibodies begin to rigidify and become more like the PGT121 lineage later in the maturation cycle, after mutations that make Ec (binding energy to the conserved residues) very strong have been acquired. So, if E0 is stronger than what was used to obtain the results in Figure 4, the qualitative behavior does not change, but the 3BNC60-like antibodies are more likely to be observed for a greater duration of the affinity maturation cycle and are likely to be more potent. If E0 is weaker than what was used to obtain the results in Figure 4, and we use the same antigen concentration as before, most of the B cells die and the GC is likely to be extinguished. This is because affinity maturation is frustrated when there are multiple variant antigens and the initial Ec is weak, as has been described before (Wang et al., 2015; Shaffer et al., 2016), and a path to relieving this frustration by evolving flexibility through FWR mutations is no longer available (because of weak E0). In this circumstance, if the antigen concentration is increased, we find that the GCs are not extinguished with high probability, and more CH103-like maturation trajectories are promoted (compare Figure 4\u2014figure supplement 3 with Figure 4A). This is because CDR mutations that improve binding with the conserved region (stronger Ec) become relatively more beneficial early in the maturation process since E0 is weak and there is little benefit to evolving FWR mutations that affect flexibility. Consistent with the points noted above, varying values of E0 also change the rate of acquiring CDR versus FWR mutations (Figure 6\u2014figure supplement 1), with stronger values of E0 promoting FWR mutations more than in Figure 6B and weaker values of E0 suppressing FWR mutations.\n\n## Discussion\n\nHIV is a highly mutable pathogen that continues to rage in many parts of the world. A promising strategy for the development of a prophylactic vaccine against such pathogens is to design immunization protocols and immunogens that can induce antibodies (bnAbs) that can neutralize diverse circulating mutant strains of the virus. BnAbs that evolve naturally in infected persons exhibit high levels of CDR and FWR mutations. In some instances, FWR mutations are important for breadth (Scheid et al., 2011) and, in at least one case, FWR mutations have been shown to increase antibody flexibility (Scheid et al., 2011; Klein et al., 2013). The standard paradigm, based on the development of strain-specific antibodies is that FWR mutations result in a more rigid antibody structure (Schmidt et al., 2013; Eisen and Chakraborty, 2010; Foote and Milstein, 1994; Wedemayer et al., 1997; Thorpe and Brooks, 2007). Since bnAbs develop by AM in the presence of diverse mutant strains, we explored the hypothesis that FWR mutations increase the number of accessible conformational states of the antigen binding region, thus enabling binding to the variant antigens. This, in turn, may allow B cells to avoid frequent apoptosis due to the conflicting selection forces represented by the variant antigens.\n\nTo test this hypothesis, we first performed atomistically detailed molecular dynamics simulations of the structures of antibodies at three different time points during the maturation process for three bnAb lineages (3BNC60, PGT121, and CH103). Only the 3BNC60 lineage, showed the continuous increase in conformational flexibility previously reported (Scheid et al., 2011; Klein et al., 2013). Structures in the CH103 lineage progressively became more rigid with maturation, consistent with the standard paradigm. For PGT121, the germline and mature forms had similar levels of conformational rigidity, while an intermediate construct was more flexible, suggesting a more complex maturation process.\n\nTo interpret these complex results in light of the evolutionary forces at play during the development of bnAbs by AM, we developed and studied a simple computational model of AM driven by multiple variant antigens. The essential findings from our simulations of affinity maturation are depicted schematically in Figure 5, which illustrates how the three different cases studied here evolve during AM; details are given with Equation (1) and the discussion of Figure 4 above. Specifically, Figure 5 shows the change in rigidity (Q) and the binding energy to conserved residues (Ec)as a function of the value of Ec for the germline B cell. If Ec is sufficiently favorable (Ec \u226a 0), as in the CH1 E103 case (Figure 5, orange), AM follows the classical path of increasing rigidity. If Ec is low (Ec\u2248 0), as is likely the case for 3BNC60 (green) and PGT121 (purple), rigidity initially decreases via mutations in the FWR regions. The increase in flexibility allows the antibodies to bind a broader set of antigens via conformational plasticity, with a relatively low but sufficiently strong affinity, to permit them to survive until they acquire additional mutations that enhance Ec. That is, a more negative (or stronger) binding free energy, E, can be acquired by increasing the magnitude of the second term in Equation 1b at the expense of the first term. Then, further beneficial CDR mutations that strengthen Ec can follow, thus making Ew more negative (stronger binding) for diverse variant antigens. This scenario is consistent with both 3BNC60 and PGT121 cases. Most antibodies harvested at this stage of AM will not be very potent because flexible antibodies lose more entropy upon binding, thus limiting the value of E (green curve); however, some antibodies, such as 3BNC60, can also develop a highly favorable value of Ec. At this stage in the AM process, rigidification can increase the antibody potency further. This is observed in our simulations once Ec is sufficiently high that Ew\u00a0<E0; conformational plasticity is now no longer required and the selection pressure will increase Q to enhance the effect of the first term in Equation 1b. This phenomenon is consistent with the AM trajectories of the PGT121 lineage (purple curve). The reason that PGT121 is more potent than 3BNC60 is likely that it has proceeded further along the evolutionary trajectory and become more rigid.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig5-v2.jpg)\n\n**Figure 5.:** CH103 (in orange) has a strong starting binding energy for the conserved residues, Ec. It follows the traditional evolution pathway and quickly rigidifies while enhancing its Ec. PGT121 (in purple) and 3BNC60 (in green) have germlines with a weaker Ec. To survive selection during affinity maturation with multiple different antigens, they follow the same pathway as some enzymes (Raman et al., 2016) in changing environments: they first become m E1ore flexible which allows them to bind all antigens with limited potency; later they acquire mutations that enhance Ec and increases their binding potency.\n\nIn our model, we observe that the accumulation of mutations in the CDR and FWR regions differs according to the maturation pathway (Figure 6). Antibodies that start with a relatively strong binding with the conserved region (CH103-like) accumulate mostly affinity-improving CDR mutations while some FWR mutations contribute to rigidity (Figure 6A). In contrast, antibodies that start with weaker binding to the conserved region (PGT121- and 3BNC60-like) more rapidly accumulate FWR mutations that improve flexibility during the early stages of AM (Figure 6B). This is a prediction of our model which is supported by experimental results from (Klein et al., 2013) where a phylogenetic analysis of antibodies from the 3BNC60 lineage places two important FWR mutations near the root, suggesting that they emerged early during the developmental process. Later CDR mutations then contribute to increased binding affinity. Our predictions could be further tested by examining the relative rates at which CDR and FWR mutations are acquired during the evolution of the CH103 and PGT121 bnAb lineages.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig6-v2.jpg)\n\n**Figure 6.:** (A) Antibodies that have a strong initial binding energy for the conserved residues, Ec, tend to first accumulate CDR mutations. Later, these antibodies rigidify through framework mutations. (B) Antibodies that have germlines with a weaker starting Ec are more likely to acquire early framework mutations to increase flexibility, improving the odds of surviving selection during affinity maturation with multiple antigens. Note that nearly all lineages possess early framework mutations, in contrast to the maturation trajectories in (A).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33038/elife-33038-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) When E0 is made stronger, i.e. more negative, flexibility-increasing framework mutations are more often preferred, especially early in maturation. This shifts maturation pathways towards more 3BNC60-like trajectories (compare with Figure 6B). (B) For weaker values of E0, flexibility-increasing mutations are less beneficial, and therefore antibodies are more likely to acquire early CDR mutations and proceed along a CH103-like trajectory (compare with Figure 6A). For each set of simulations we have used a weak initial Ec, as in Figure 6B.\n\nThe results have an important implication for the design of immunization strategies to induce bnAbs. If germline B cells can be activated that bind sufficiently strongly to the shared conserved residues of a target epitope of a class of bnAbs (e.g., the CD4 binding site), there is no need for the subsequent immunization with variant immunogens to induce FWR mutations that increase flexibility of the BCRs as AM ensues. Thus, our results suggest that strategies that result in inducing such germline B cells (Steichen et al., 2016; Escolano et al., 2016; Jardine et al., 2016; Jardine et al., 2015; Jardine et al., 2013) would considerably simplify the design of boosting immunogens.\n\nOur study represents a first step in understanding the complex synergies between FWR and CDR mutations that are in play during the evolution of bnAbs. We hope our findings encourage others to further study this fundamental problem at the intersection of immunology and evolutionary biology with important implications for health. Several caveats in our study are worth noting as they provide suggestions for such studies. We were able to study only three bnAb lineages because of the lack of high resolution antibody structures at different points of maturation. Furthermore, we could only study three time points in the evolutionary pathway of each lineage, and for PGT121, the structure we studied is a chimeric construct and not a true intermediate. Our results suggest that complex evolutionary trajectories are followed under different conditions, and structural analysis of various bnAb lineages at multiple time points during their maturation pathway could further test our predictions and reveal new phenomena. For example, studies that provide a finer temporal resolution during AM could reveal additional types of evolutionary trajectories not described by our current results. Iteration between such experiments and development of more refined models would further elucidate the complex processes that occur when AM results in the development of bnAbs.\n\n## Materials and methods\n\nData and some analysis for molecular dynamics simulations are available in a GitHub repository (Barton, 2018).\u00a0A copy is archived at\u00a0https://github.com/elifesciences-publications/paper-bnAb-flexibility.\n\n### Molecular dynamics simulations\n\nAntibody structures listed in Table 1 were downloaded from the PDB databank, and include both the variable regions and the constant regions, which are connected by a single \u03b2-strand for each HC and LC (Figure 2\u2014figure supplement 2). To save simulation cost, the structures were truncated to retain only the variable regions, since the constant regions do not contact the antigens. To truncate all of the antibodies in equivalent locations, a multiple alignment of each chain was performed. The truncation locations correspond to res. 120 and res. 98 for the heavy and light chains of 3BNC60, respectively. Histidine protonation was performed by optimizing visually the hydrogen bonding patterns for each histidine. The CHARMM36 energy function was used for the MD simulations. Each structure was energy-minimized in vacuum using CHARMM (Brooks et al., 2009) with restraints on the protein heavy atoms, and immersed in a cubic box of TIP3P water of sufficient size that the smallest distance between the antibody and the box boundary was 11.5 \u00c5. Na\u2212 and Cl+ ions were added to maintain system neutrality, while achieving an approximate salt concentration of 100 mM. The final system sizes were between 40,000 and 51,000 atoms; variations were mainly due to differences in the CDR loop lengths (e.g., the PGT bnAb has the longest CDR3 region, and had about 51,000 atoms). MD simulations were performed using GPU hardware with the program ACEMD (Harvey et al., 2009).\n\nEach system was equilibrated for 2ns with restraints on the heavy atoms that were resolved in the ray structure. The Berendsen barostat was used with a relaxation time of 10,000 steps to allow the simulation box to resize according to the new composition. We used a Langevin thermostat to maintain temperature at 298K with a friction constant of 0.1ps\u22121. The time-step was 1fs for the first 100ps, and 2fs for the remainder of the equilibration. The non-bonded cutoff was 11.5 \u00c5.\n\nAfter equilibration, each system was simulated for 100ns in the canonical ensemble. To accelerate the simulations, the non-bonded cutoff was set to 9 \u00c5, the switching function was nonzero at 7.25 \u00c5, long-range electrostatics were evaluated at every other simulation step, and hydrogen masses were increased to 4 a.m.u., which allowed the use of a 4fs time step. For all simulations in which the time-step was larger than 1fs, covalent bonds to hydrogens were constrained using SHAKE (Ryckaert et al., 1977). To generate statistics for subsequent fluctuation and covariance analyses, the equilibration and production simulations were performed five times starting with different initial velocities.\n\nTo ensure that the truncation of the antibody constant regions would not impact the conclusions of this study, we also simulated by MD the 3BNC60 antibodies without truncation (i.e. including both the variable and constant regions, for 400ns for each structure. In these simulations, the constant and variable regions remained well-separated (Figure 2\u2014figure supplement 2) suggesting that the interactions between them were relatively weak. Further, the RMSF fluctuations on the basis of these simulations were qualitatively unchanged.\n\n### Analysis of residue fluctuations\n\nRoot mean square residue fluctuations (RMSFs) were used as indicators of protein flexibility. To compute RMSFs for each residue, each antibody system was first coarse-grained (CG) to one bead per residue. The coordinate for each bead was taken as the center-of-mass (COM) of the residue. The fluctuation for residue i is computed as\n\n$$\n\u03c1_{i}=\u27e8\u2016r_{i}^{CG}\u2212\u27e8r_{i}^{CG}\u27e9\u2016^{2}\u27e9^{\\frac{1}{2}},\n$$\n\nwhere riCG is the coordinate triplet of the coarse-grained residue i, and brackets indicate temporal averaging. The average and standard deviation was computed for each i from the five simulation repeats. The RMSF calculations were also performed by considering coordinates of the C\u03b1 atoms only. The results are not shown because they were qualitatively similar.\n\n### Calculation of conformational entropy\n\nQuasi-harmonic entropies of the CG systems were used as a measure of overall flexibility. Mass-weighted covariance matrices were computed for each system, as described by (Brooks et al., 1995), for the HC and LC independently. For each system, the five trajectories were concatenated. This is permissible because the covariance analysis is not time-dependent. Both classical and quantum entropies were computed using the corresponding harmonic oscillator expressions (Andricioaei and Karplus, 2001). Only classical entropies are shown because the relative differences between classical and quantum entropies were similar.\n\n### Affinity maturation model\n\nData and analysis for the affinity maturation simulations, including the code used to generate all figures, are available in a GitHub repository (Barton, 2018).\n\n### Somatic hypermutation in the dark zone\n\nThen, the AID gene turns on so mutations are introduced with a probability determined by experiments: each B cell of the dark zone divides twice per GC cycle (four divisions per day) (Zhang and Shakhnovich, 2010) and mutation appears with a probability of 0.20 per sequence per division (Berek and Milstein, 1987). The mutations affect any amino acids in the variable domains, including both the CDR and the FWR. Although the FWR constitutes over two thirds of the variable domain by sequence, mutational hotspots have mostly been found in the CDR (Neuberger and Milstein, 1995; Tomlinson et al., 1996; Wagner and Neuberger, 1996). Thus, we assume that the probability that a mutation occurs is higher in the CDR (pCDR\u00a0=\u00a00.85) than in the framework (pFWR\u00a0=\u00a00.15).\n\n### CDR mutations\n\nCDR mutations can cause a B cell to undergo apoptosis (for example, by making the BCR unable to fold), be silent (due to redundancy of the genetic code, i.e. synonymous mutation), or modify the binding energy. The probability that a CDR mutation will follow one of these paths is governed by probabilities obtained from experiments (Berek and Milstein, 1987). Hence, apoptosis occurs half of the time, 30% of mutations are silent, and 20% are energy-affecting mutations (Zhang and Shakhnovich, 2010). Energy-affecting mutations are likely to be deleterious. Experiments have determined that in protein-protein interactions, between 5% and 10% of the energy-affecting mutations weaken the binding energy (Moal and Fern\u00e1ndez-Recio, 2012). In our model, the change in binding energy is sampled from a shifted log-normal distribution whose parameters are chosen to approximate the empirical distribution of changes in binding energies upon mutation. This distribution is also used to initialize the binding energies of the founder B cells. We assume that CDR mutations do not affect flexibility (Q). Thus, the random change in binding energy \u0394E (Ec or Ev, depending on the location of the CDR mutation) and the initial variable region binding energies are taken to be\n\n$$\n\u0394E=exp\u2061(\\mu+\\sigmar)\u2212o\n$$\n\nwhere r is a standard normal variable with mean zero and standard deviation equal to one. Here o is a shift parameter, which is needed to center the log-normal distribution properly with respect to zero, and \u03bc, \u03c3 are the mean and standard deviation of the log-normal distribution, respectively. These parameters are described in Supplementary file 1.\n\n### FWR mutations\n\n#### As described in main text\n\n##### Selection in the light zone\n\nAfter SHM, the mutated B cells then migrate to the light zone of the GC, where selection takes plae through competition for binding to antigens and for receiving T-cell help. B cells with the greatest binding free energy for the antigen presented on FDCs will have a better chance to internalize that antigen, break it down into small peptides, and display it on their MHC molecules. These peptide-MHC (pMHC) complexes can then bind to the cognate receptor of T cells. A productive interaction results in a survival signal to the B cell through CD40-CD40 ligand signaling. B cells that do not receive a survival signal die through apoptosis (Foy et al., 1994; Crotty, 2015).\n\nWe model the biology with a two-step selection process. First, each B cell successfully internalizes the antigen it encounters with a probability that grows with the binding free energy and then saturates, following a Langmuir form. The probability that a B cell successfully internalizes an antigen i that it encounters also depends on the antigen concentration Ci. We assume that this probability follows a Langmuir formula:\n\n$$\nP_{int}=\\frac{C_{i}e^{\u2212E}}{1+C_{i}e^{\u2212E}}\n$$\n\nwhere E is given in Equation (1). B cells that successfully internalize antigen can then go on to the second step, while the others die automatically. The B cells that internalize antigen are ranked according to their binding energy, a proxy for the concentration of pMHC that they display to T cells, and only the best performers are selected.\n\nEquation 1 in the main text and the discussion that follows therein describes our model for the effects of CDR and FWR mutations on the binding free energy for antibody binding to variant antigens.\n\n### Recycling to the dark zone, exit for differentiation, and termination of the GC reaction\n\n#### As described in main text.\n\n##### Example: Affinity maturation against a single antigen\n\nOur model depends on several parameters. Some of these are known a priori, e.g. SHM rate and fate of CDR mutations. Others represent biological quantities which have not yet been measured experimentally; for these we can make reasonable guesses. The rest do not have direct biological meaning, and exist on account of the simplified nature of the model. All parameters were adjusted manually until a good fit to experimental data in the single antigen case was obtained; see Figure 4\u2014figure supplement 1. Consistent with the qualitative nature of the model, we did not attempt to choose an \u2018optimal\u2019 set of parameters, for example by precisely fitting the typical number of mutations or GC duration in the single antigen case. A strength of our model is that the qualitative results are robust to some variation in the parameters.\n\nThe dynamics of the GC population depends on the overall probabilities that B cells will survive somatic hypermutation and selection, successfully compete for T cell help, and be recycled back into the GC. The survival and selection probabilities depend implicitly on mutation rates, fractions of lethal versus silent and affinity-affecting mutations, etc. These overall probabilities are more important to the qualitative shape of the GC dynamics than the precise values of the underlying parameters. We write phelp (help_cutoff in the simulation code) as the proportion of successful B cells which are selected (i.e. those that receive T cell help). precycle denotes the proportion of B cells which are recycled back into the GC. The probability that a B cell successfully internalizes an antigen i that it encounters depends is given by Equation 4 above.\n\nFor convenience, all free energies entering into the AM simulations and those shown in the figures are made nondimensional using kBT. The growth rate of the GC is proportional to the product psurv\u00a0\u00d7\u00a0pint\u00a0\u00d7\u00a0phelp\u00d7precycle, where psurv is the probability that a B cell survives somatic hypermutation without lethal or strongly deleterious mutations.\n\nWe roughly tuned these parameters (within known experimental constraints) so that the population experiences a sharp decline at the beginning of AM until a few beneficial mutations appear and allow survival of a few B cells. Then the population plateaus for about 20 days until enough good mutations accumulate to increase the binding energy dramatically. The population then rises quickly until it reaches 1,536 cells by around 60 days. Experimental studies of affinity maturation in the presence of a single antigen showed that the antibodies produced accumulate about 10 mutations and their binding affinity \u2013 which is exponentially proportional to the binding energy (A\u00a0=\u00a0exp(\u2212E/kBT)) \u2013 increases 1,000-fold (Tas et al., 2016). With our chosen parameters, our model reproduces these features well (Figure 4\u2014figure supplement 1).\n\n#### Breadth calculations\n\nEvery B cell divides twice per cycle and its daughter cells have only a small chance of generating a non-lethal mutation. Consequently, the GC contains sets of functionally identical B cells, called B cell clones. All cells of a clone have the same binding energies and rigidity. The size of a clone varies with time and depends on its properties as explained above. We use the clone with the largest number of cells at the end of the reaction as the representative to analyze the events that shaped the final characteristics of most of the antibodies generated by AM. In order to analyze the breadth, we compute the binding free energy of this largest clone against an artificial panel of 100 antigens different from those that the antibody matured against. Here we take the overlap parameter \u03bb and the binding strength with the conserved region to be the same as in the simulations, but the binding strength with the variable region is randomly selected for each new antigen in the panel. Here, the random binding strength is chosen from a log-normal distribution that is broader (standard deviation \u03c3\u00a0=\u00a01) and shifted toward weaker binding (mean \u03bc\u00a0=\u00a03) compared to the one used to generate the binding free energies for the founder B cell-Ab combinations. This choice is based on the assumption that variable regions for a broad cross-section of antigens should be more variable and less likely to bind strongly to the Ab than those encountered in the original host. As a proxy for breadth, we compute the median binding energy of each antibody over the maturation pathway with panel antigens (Figure 4).\n\n#### Robustness to variation in \u03bb\n\nThe value of the overlap parameter we have used in the main text, \u03bb\u00a0=\u00a00.9, is chosen to roughly represent a swarm of diversified but still highly similar antigens that B cells may encounter in a chronically infected individual. We tested the robustness of our model to changes in \u03bb by performing simulations identical to those described above, but with \u03bb\u00a0=\u00a00.8, and with a smaller number of panel antigens (5) to prevent excessive frustration. We also tuned the antigen concentration in simulations to compare overall, qualitative patterns of Ab maturation at comparable survival rates. We find that the same qualitative maturation pathways are also observed in these simulations (Figure 4\u2014figure supplement 2). However, due to the greater dissimilarity between antigens against which the Abs mature, there is stronger selection for flexibility (lower Q).\n",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "67308cd7-554c-4ead-8dd5-d82b51d6a590",
+      "submission_id": "cb61c333-cbf6-4f52-a681-3349c66d72e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aleksandra M Walczak, Ecole Normale Superieure France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33038.021](https://doi.org/10.7554/eLife.33038.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Role of framework mutations and antibody flexibility in the evolution of broadly neutralizing antibodies\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michel Nussenzweig as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Siduo Jiang (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers and the editor all found the work very interesting, the topic pertinent and well presented. The experiments are well-designed and demonstrate very thorough coverage and understanding of affinity maturation, especially in the context of anti-HIV BnAbs. They point out a number of points that all need to be addressed.\n\nEssential revisions:\n\nWhile the explicit-solvent simulations are clearly described, the description of the maturation model needs to be seriously improved. As written, the theoretical basis and definition of the model, as well as computational protocols are presented in a very disorganized fashion. Given that the eLife readership is largely experimental, it is unlikely that the description will be accessible outside of a narrow group of computational researchers. For example, the main text states that the model is coarse-grained, yet the level of graining does not appear to be defined. Based on the Supplementary Information, it appears that this is a population model that has no spatial resolution. As another example, the description of the model starts with a definition of how the system was seeded. However, this is premature, since the model has not been defined. It appears that the actual computational protocol is not mentioned until late in the Supplementary Information (Subsection \u201cSelection in the light zone\u201d). With these types of major issues in the organization of the maturation model description, it is very difficult to determine the significance of the presented analysis. In summary, a concise general form description of the theoretical model should be provided, first. Next, the authors should discuss their specific implementation and parameterization of the model, prior to describing results. Throughout this description, the limits of the model should also be presented.\n\nSubsection \u201cResults of the MD simulations\u201d the fourth paragraph is confusing and not technically correct as written. What you observe is that A27 in the 109L LC, which mutates in Ser in mature LC, does not hbond to G68, which results in an instability of the 3-residue insertion at 66abc. However, mutations of these 3 residues from Pro-Asp-Ile in 109L to Asp-Ser-Pro in mature rescues this instability. The claim is that instability of 66abc \"appears to be a consequence of mutations in the CDR1\u2026\" (Subsection \u201cResults of the MD simulations\u201d), but to prove this, one would need to show that S27 in conjunction with 66(a)P-66(b)D-66(c) of 109L LC results in a stable conformation. I suggest a re-wording such as the following:\n\n\u201cIn the 109L LC, residue 27 is an alanine, and the stabilizing hydrogen bonds do not form, which allows the FWR3 region to unfold locally near the three-residue insertion 66(a)P-66(b)D-66(c). In the mature PGT121 light chain, this insertion is mutated to 66(a)D-66(b)S-66(c)P (Figure 2\u2014figure supplement 1), and in conjunction with A27S, allows the formation a stable conformation. However, it is possible that this conformation is only weakly stable, such that minor changes in the adjacent structure (such as the S27A mutation in the CDR1) could cause unfolding. Therefore, stability of FWR3 in the intermediate 109L LC appears to partially depend on the sequence identify of CDR1, which might seem surprising because the framework regions are thought to provide a relatively rigid scaffold to which variable and flexible CDR regions are attached. Other sequence differences\u2026\u201d (continue with remainder of paragraph).\n\nMinor note: sentence beginning (\"One would therefore expect\u2026\") is somewhat misplaced since all of the mutations discussed in the FWR are stabilizing and not destabilizing.\n\nI am less convinced by the AM model starting subsection\u201d A model of AM suggests that the binding affinity of the germline BCR to the conserved regions of the epitope determines the role of framework mutations on bnAb evolution\u201d. First is the general concern that multiple parameter sets (even though for the chosen set, most are justified by publications albeit with assumptions and simplifications) could have produced the results in Figure 4\u2014figure supplement 1. If #mutations and binding affinity is treated as the \"training\" data, a cross-validation with other experimentally measured values would have been preferred. The parameters are especially crucial since beyond a certain point, small steps as you are performing using an evolutionary algorithm cannot escape a deep local minimum, and the conclusions merely falls out of the math rather than representing real biology. I also have a specific concern with the energy function, which is that E0 is kept constant for each simulation, whereas the value should really reflect the flexibility of the epitope itself. For a cocktail of antigens, this value should be sampled from an empirical distribution. Equ. 1a also currently models changes in entropy of binding as a function of changes in the antibody alone, which is perfectly accurate since we are not considering mutations in the antigen, but this analysis can be extended.\n\nI suggest an easy follow-up experiment that would serve to further validate the model and its chosen parameters, solidify the conclusion that entropy is central to the evolution, and provide insight into the importance of the epitope during AM. Namely, you nicely showed that the profile for a weak initial Ec is bimodal, and that the distribution changes drastically with a small change in \u03bb (in the sensible direction equivalent to decreasing initial Ec, since the energy term is \u03bb*Ec). If the model is accurate, you would expect that a high constant value of E0 to drastically shift the distribution toward PGT121-like antibodies, and that a low value of E0 toward 3BN60-like antibodies. Using the current value in Figure 4 as control, please try two simulations, doubling and halving E0, or altering E0 in those directions as you see appropriate. This is different than altering values of Ec or \u03bb, since that energy product is a variable in the simulation.\n\nSubsection \u201cExample: Affinity maturation against a single antigen\u201d: Please state explicitly whether the initial and constant parameters (or distributions thereof) in the energy function and evolutionary scheme for the 10 antigen cocktail is the same as those used for the single antigen in Figure 4\u2014figure supplement 1. If not, please comment on using the values obtained from Figure 4\u2014figure supplement 1 (or similar values for which you have data) when extended to 10 antigens.\n",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4c4b011c-7c10-461b-9da3-eac2b4c0c3cc",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C1",
+      "claim": "The HIV/AIDS epidemic affects more than 37 million individuals worldwide, and there were 2 million new infections in 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIV/AIDS epidemic affects more than 37 million individuals worldwide, and there were 2 million new infections in 2014 (Deeks et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deeks et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a62ceca6-846f-45b2-98c4-b55d2d63a560",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C2",
+      "claim": "Less than half of the persons diagnosed with HIV remain in care in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "but less than half of the persons diagnosed with HIV remain in care in the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact in the manuscript, likely based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "eaa2da77-5b61-4118-a30a-fefc4fc3b68b",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C3",
+      "claim": "One major obstacle to developing a universal vaccine is the high mutability of HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "One major obstacle to developing a universal vaccine is the high mutability of HIV (Korber et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Korber et al., 2001",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "3fc6256d-c23a-4c97-9a80-6fa0e832751d",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C4",
+      "claim": "Broadly neutralizing antibodies have shown potential to both prevent new infection in animal models and to control existing infection for some duration in both human and animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies (Abs) that can neutralize a broad diversity of HIV strains, known as broadly neutralizing antibodies (bnAbs), are of great interest in this regard because they have shown potential to both prevent new infection in animal models and to control existing infection for some duration in both human and animal models (Barouch et al., 2013; Klein et al., 2012; Mascola et al., 2000; Moldt et al., 2012; Lu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "55d11838-08c1-4496-9ed7-6f60c0df96a5",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C5",
+      "claim": "BnAbs naturally evolve in only a subset of HIV-infected patients, and usually in low titers after several years of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "BnAbs naturally evolve in only a subset of HIV-infected patients, and usually in low titers after several years of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "c893403c-7da3-4a3f-b89b-23926c79fd68",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C6",
+      "claim": "Past attempts at eliciting bnAbs by vaccination have failed.",
+      "claim_type": "EXPLICIT",
+      "source": "Past attempts at eliciting them by vaccination have failed (Kong and Sattentau, 2012; McCoy and Weiss, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kong and Sattentau, 2012 and McCoy and Weiss, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "24192568-b28c-47bf-b194-e5806fcfac6b",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C7",
+      "claim": "A vaccination protocol that can efficiently induce bnAbs in non-human primates or humans is not available.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite significant progress (Shaffer et al., 2016; Wang et al., 2015; Escolano et al., 2016; Steichen et al., 2016; Bonsignori et al., 2016), a vaccination protocol that can efficiently induce bnAbs in non-human primates or humans is not available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as current state of the field with citations to recent progress",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a878d8f9-0524-4aa9-a6a4-a99723da45a1",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C8",
+      "claim": "During affinity maturation, B cells proliferate and mutations are introduced in the receptor at a high rate through somatic hypermutation.",
+      "claim_type": "EXPLICIT",
+      "source": "During affinity maturation (AM) B cells proliferate, and upon induction of the activation-induced cytidine deaminase (AID) gene, mutations are introduced in the receptor at a high rate (somatic hypermutation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes established biological process of affinity maturation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "0c415548-fa49-4cde-9600-ff789aa1708f",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C9",
+      "claim": "BnAbs exhibit unusual structural features such as a high degree of somatic hypermutation in the complementarity determining regions (CDRs), as well as changes in the surrounding framework regions (FWR).",
+      "claim_type": "EXPLICIT",
+      "source": "BnAbs exhibit unusual structural features such as a high degree of somatic hypermutation (including insertions and deletions) in the antigen binding regions known as the complementarity determining regions (CDRs), as well as changes in the surrounding framework regions (FWR) (Scheid et al., 2009; Sok et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scheid et al., 2009 and Sok et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "f2ac6176-567f-458f-818d-5f49b67410b2",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C10",
+      "claim": "Klein et al. showed that, for the bnAbs they studied, the reversal of FWR mutations reduces breadth and potency.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Klein et al. showed that, for the bnAbs they studied, the reversal of FWR mutations reduces breadth and potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to findings from Klein et al. study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "d3f34849-f801-4cec-a12d-0ea4a7997965",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C11",
+      "claim": "FWR mutations had no effect on non-broadly neutralizing antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the FWR mutations had no effect on non-broadly neutralizing antibodies (Klein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klein et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "670eaba5-0fe6-437b-9378-de707b1ea29f",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C12",
+      "claim": "It has been proposed that FWR mutations increase neutralizing breadth by providing the Ab with greater conformational flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been proposed that FWR mutations increase neutralizing breadth by providing the Ab with greater conformational flexibility (Scheid et al., 2011; Klein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scheid et al., 2011 and Klein et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "083b615f-b22e-4dda-865b-3e80c39aa6bd",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C13",
+      "claim": "A subsequent study of the 4E10 bnAb found a high degree of plasticity in the mature antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "A subsequent study of the 4E10 bnAb also found a high degree of plasticity in the mature antibody (Finton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Finton et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "afca80e3-d3f0-4c91-975e-e29edf7081b8",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C14",
+      "claim": "The established paradigm of antibody maturation suggests that antibodies progressively become more rigid as AM ensues.",
+      "claim_type": "EXPLICIT",
+      "source": "The implications of these studies contradict the established paradigm of antibody maturation, which suggests that antibodies progressively become more rigid as AM ensues (Schmidt et al., 2013; Eisen and Chakraborty, 2010; Foote and Milstein, 1994; Wedemayer et al., 1997; Thorpe and Brooks, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations describing the established paradigm",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "036e07ed-baeb-4d1b-abe8-14eac00e05f0",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C15",
+      "claim": "A recent study on a class of enzymes showed that adaptation to different ligands in a PDZ domain preferentially occurred through a collection of distant mutations that worked allosterically to enable multiple conformational states.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study on a class of enzymes showed that adaptation to different ligands in a PDZ domain preferentially occurred not only through mutations in the ligand-binding site, but rather through a collection of distant mutations (Raman et al., 2016). These mutations worked allosterically to enable multiple conformational states, therefore allowing binding to a diversity of ligands during adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Raman et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "9d962abb-00c4-4179-8246-a4ccbc0cc5ff",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C16",
+      "claim": "The P61A reversal mutation in the heavy chain of 3BNC60 disrupts the secondary structure of the \u03b2-sheet connecting the CDR2 and FWR3 regions, resulting in partial unfolding of the region.",
+      "claim_type": "EXPLICIT",
+      "source": "The results shown in Figure 1A quantify the dramatic effect of the P61A reversal mutation in the heavy chain of 3BNC60. Consistent with experiments, the presence of proline in the mature antibody disrupts the secondary structure of the \u03b2-sheet connecting the CDR2 and FWR3 regions, resulting in partial unfolding of the region (Klein et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MD simulation data shown in Figure 1A and citation to Klein et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "97e613bc-79b2-4498-ba00-6e78f48b6cae",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C17",
+      "claim": "The melting temperature for the P61A reverted 3BNC60 mature antibody was 5K lower than that for the mature bnAb.",
+      "claim_type": "EXPLICIT",
+      "source": "The large RMS fluctuations indicate a more flexible structure, and are thus consistent with the observation that the melting temperature for the P61A reverted 3BNC60 mature antibody was 5K lower than that for the mature bnAb (Klein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klein et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a7d4077b-f47b-4e91-89f0-e54204a5a514",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C18",
+      "claim": "There was a progressive increase in flexibility of the 3BNC60 lineage of antibodies as affinity maturation progressed.",
+      "claim_type": "EXPLICIT",
+      "source": "From these results we conclude that there was a progressive increase in flexibility of the 3BNC60 lineage of antibodies as affinity maturation progressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on conformational entropy calculations shown in Figure 3 and RMSF data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "6a0ce10e-2e45-4ea3-a2c0-2c9fd7554043",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C19",
+      "claim": "The evolution of flexibility of the heavy chains of the CH103 lineage is opposite to that of 3BNC60, since the antibodies become progressively stiffer as the lineage matures.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of flexibility of the heavy chains of the CH103 lineage is opposite to that of 3BNC60 (Figure 1B), since the antibodies become progressively stiffer as the lineage matures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MD simulation data shown in Figure 1B and Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "51efebf8-17c3-4017-991d-6e4310129ffc",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C20",
+      "claim": "Fera et al. attribute the breadth increase in the CH103 lineage to a reorientation of the LC relative to the HC, which alleviates steric clashes with gp120 variants that have longer V5 loops.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, (Fera et al., 2014) attribute the breadth increase in the CH103 lineage to a reorientation of the LC relative to the HC, which alleviates steric clashes with gp120 variants that have longer V5 loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fera et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "8393928c-542a-4cc8-9d4f-4e69ee963a05",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C21",
+      "claim": "The variation in flexibility reported for the CH103 lineage is consistent with earlier studies of non-broadly neutralizing antibodies, which also showed a loss of flexibility during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the variation in flexibility that we report for the CH103 lineage is consistent with earlier studies of non-broadly neutralizing antibodies, which also showed a loss of flexibility during maturation (Chong et al., 1999; Thorpe and Brooks, 2007; Wong et al., 2011), and with the traditional paradigm of affinity maturation (Foote and Milstein, 1994; Wedemayer et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "781885a8-3b68-40d2-a3ea-7ac1e52cf062",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C22",
+      "claim": "For the PGT121 lineage, flexibility changes are observed in the CDR3 region of the heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "For the PGT121 lineage, our MD simulation results exhibit greater complexity. For the heavy chains of this lineage, flexibility changes are observed in the CDR3 region (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MD simulation data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "c1ce38bd-471b-467e-87a1-a36acaacf54d",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C23",
+      "claim": "In the PGT121 antibody, CDR3 has a 11 residue insertion relative to the 3BNC60 and CH103 lineages, and is involved in binding to gp120 glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "In this antibody, CDR3 has a 11 residue insertion relative to the 3BNC60 and CH103 lineages, and is involved in binding to gp120 glycans (Garces et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garces et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "96d442f3-3c4d-44e6-892d-1429a43613fb",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C24",
+      "claim": "The intermediate PGT121 construct (3 hr/109L) has high flexibility, particularly in the framework regions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the mature variant is less flexible than the germline in the regions FWR3-FWR4, the intermediate construct has high flexibility, particularly in the framework regions (see Figure 1F and Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MD simulation data shown in Figure 1F and Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "c1bbe3dc-bbad-4c4d-8f36-ab324f9dc7b8",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C25",
+      "claim": "Both chains of the 3H109L PGT121 intermediate have higher entropies than the corresponding germline and mature structures, with the increase being more pronounced for the light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, both chains of the 3H109L PGT121 intermediate have higher entropies than the corresponding germline and mature structures, with the increase being more pronounced for the light chain (Figure 3), on which we focus below.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by conformational entropy data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "92d18421-e686-48d0-8677-736c86581c20",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C26",
+      "claim": "In the PGT121 light chain, the FWR3 region near residue 68 is well ordered and interacts with the CDR1 region near residue S27, with hydrogen bonds formed between S27 and G68.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PGT121 light chain, the FWR3 region near residue 68 is well ordered, and interacts with the CDR1 region near residue S27 (Figure 2\u2014figure supplement 1). Hydrogen bonds are formed between S27 (both, side chain and backbone oxygens) and G68 (backbone amide).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "5e6e767b-7044-4dfd-b76d-b08c8202859e",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C27",
+      "claim": "In the 109L LC, serine at position 27 is an alanine, and the stabilizing hydrogen bonds do not form, which allows the FWR3 region to unfold locally near the three residue insertion 66(a)P-66(b)D-66(c)I.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 109L LC the serine is an alanine, and the stabilizing hydrogen bonds do not form, which allows the FWR3 region to unfold locally near the three residue insertion 66(a)P-66(b)D-66(c)I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis of MD simulation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a8b4824d-2188-4502-a886-ab5ef7d15dcb",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C28",
+      "claim": "Flexibility throughout the antibody can be changed significantly by mutations in both the FWR and CDR regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results demonstrate that flexibility throughout the antibody can be changed significantly by mutations in both the FWR and CDR regions, and, more generally, that affinity maturation in bnAbs does not follow the rigidification paradigm in all cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on MD simulation results for all three lineages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "ee85c8b8-6a9f-4085-bbfc-52b702c08ffc",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C29",
+      "claim": "For the 3BNC60 lineage, flexibility progressively increased during affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 3BNC60 lineage, flexibility progressively increased, while the opposite is true for the CH103 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on MD simulation results shown in Figures 1 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "b14655ed-e05e-419a-9c57-dbef6f9fc3d5",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C30",
+      "claim": "For the CH103 lineage, flexibility progressively decreased during affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 3BNC60 lineage, flexibility progressively increased, while the opposite is true for the CH103 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on MD simulation results shown in Figures 1 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a2cb5bf3-b0e8-4def-97ea-a7f1de7e7ed7",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C31",
+      "claim": "For the PGT121 lineage, the intermediate is more flexible than either the mature or germline antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "For the PGT121 lineage, our results indicate that the intermediate is more flexible than either the mature or germline antibodies, so that this is an example of a more complex maturation trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on MD simulation results shown in Figures 1 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "f4687e4d-b3ef-4814-9813-c5d5b3946beb",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C32",
+      "claim": "The germline for the CH103 lineage bound strongly to the CD4 binding site of the founder HIV envelope glycoprotein.",
+      "claim_type": "EXPLICIT",
+      "source": "The germline for the CH103 lineage bound strongly to the CD4 binding site of the founder HIV envelope glycoprotein (Liao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liao et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "365e2a2d-7950-4260-8cfe-54b8c9f247ec",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C33",
+      "claim": "Ancestors of 3BNC60 show lower potency and breadth of neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ancestors of 3BNC60 show lower potency and breadth of neutralization (Scheid et al., 2011; Klein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scheid et al., 2011 and Klein et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "537dfd66-66d6-4fc1-9a02-d0e4b7950f9a",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C34",
+      "claim": "When the germline BCR binds to the conserved residues with relatively high affinity, B cells evolve CDR and FWR mutations that strengthen the binding energy to the shared conserved residues and reduce the flexibility of the antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "When the germline B cells bind to the conserved residues with relatively high affinity (e.g., Ec\u2248 \u22124), B cells evolve CDR and FWR mutations that strengthen the binding energy (Ec) to the shared conserved residues and reduce the flexibility of the antibody (increase Q); if the initial Q is already high, the increase may be relatively small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "14e6a7af-48a0-4cf4-a9ba-5d19ea6d96fa",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C35",
+      "claim": "When the binding energy of the germline B cell to the shared conserved residues is weaker, B cells typically need to acquire FWR mutations that increase their flexibility in order to be able to be positively selected in the presence of multiple variant antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case where the binding energy of the germline B cell to the shared conserved residues is weaker (taken to be Ec = 0), we find that B cells typically need to acquire FWR mutations that increase their flexibility in order to be able to be positively selected in the presence of multiple variant antigens (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "bc37b852-408c-4c04-b29e-708c50e1dcd3",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C36",
+      "claim": "In simulations where changes to flexibility are disallowed, GC reactions are 35% less likely to complete successfully because all the B cells undergo apoptosis as AM ensues.",
+      "claim_type": "EXPLICIT",
+      "source": "This is made evident by the fact that in simulations where changes to flexibility are disallowed, GC reactions are 35% less likely to complete successfully because all the B cells undergo apoptosis as AM ensues (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on affinity maturation model simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "9c02280b-734e-41c0-a995-b68ca1cad56a",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C37",
+      "claim": "If the evolutionary trajectories progress beyond a reasonably favorable value of Ec, then framework mutations that make the structure more rigid are acquired.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4A shows that, in the case where germline B cells have a weak binding energy Ec, if the evolutionary trajectories progress beyond a reasonably favorable value of Ec (which our simulations show to be roughly equal to E0), then framework mutations that make the structure more rigid are acquired much like the case where germline B cells exhibit a stronger Ec.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a3796640-ff8c-4e3e-a348-8c6b71e1692c",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C38",
+      "claim": "The population that exhibits lower breadth and lower final values of Ec is comprised of those antibodies that are more flexible, while those that continue to evolve and become more rigid have a higher breadth and potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of our results demonstrate that the population that exhibits lower breadth (median binding free energy) and lower final values of Ec is comprised of those antibodies that are more flexible, while those that continue to evolve and become more rigid have a higher breadth and potency (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "5e41768b-3629-41c8-9a18-95e01272879a",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C39",
+      "claim": "The reason that PGT121 is more potent than 3BNC60 is likely that it has proceeded further along the evolutionary trajectory and become more rigid.",
+      "claim_type": "EXPLICIT",
+      "source": "This is observed in our simulations once Ec is sufficiently high that Ew <E0; conformational plasticity is now no longer required and the selection pressure will increase Q to enhance the effect of the first term in Equation 1b. This phenomenon is consistent with the AM trajectories of the PGT121 lineage (purple curve). The reason that PGT121 is more potent than 3BNC60 is likely that it has proceeded further along the evolutionary trajectory and become more rigid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on affinity maturation model simulations and comparison with MD results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "ecc3b8dc-8355-42f8-8ba0-945bb7db6bc8",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C40",
+      "claim": "Antibodies that start with a relatively strong binding with the conserved region (CH103-like) accumulate mostly affinity-improving CDR mutations while some FWR mutations contribute to rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies that start with a relatively strong binding with the conserved region (CH103-like) accumulate mostly affinity-improving CDR mutations while some FWR mutations contribute to rigidity (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "0379a6aa-34b7-4dbb-8ce0-b322f5ff5dd8",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C41",
+      "claim": "Antibodies that start with weaker binding to the conserved region (PGT121- and 3BNC60-like) more rapidly accumulate FWR mutations that improve flexibility during the early stages of AM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, antibodies that start with weaker binding to the conserved region (PGT121- and 3BNC60-like) more rapidly accumulate FWR mutations that improve flexibility during the early stages of AM (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "070874bb-30da-4eff-9efc-3a09533b08c2",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C42",
+      "claim": "A phylogenetic analysis of antibodies from the 3BNC60 lineage places two important FWR mutations near the root, suggesting that they emerged early during the developmental process.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a prediction of our model which is supported by experimental results from (Klein et al., 2013) where a phylogenetic analysis of antibodies from the 3BNC60 lineage places two important FWR mutations near the root, suggesting that they emerged early during the developmental process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klein et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "ca3af9a9-babf-48af-ab26-a1669ddbe76c",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C43",
+      "claim": "If germline B cells can be activated that bind sufficiently strongly to the shared conserved residues of a target epitope, there is no need for the subsequent immunization with variant immunogens to induce FWR mutations that increase flexibility of the BCRs as AM ensues.",
+      "claim_type": "EXPLICIT",
+      "source": "If germline B cells can be activated that bind sufficiently strongly to the shared conserved residues of a target epitope of a class of bnAbs (e.g., the CD4 binding site), there is no need for the subsequent immunization with variant immunogens to induce FWR mutations that increase flexibility of the BCRs as AM ensues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from affinity maturation model results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "b31776fd-2635-426b-946d-f85122f9bb3b",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C44",
+      "claim": "Strategies that result in inducing germline B cells that bind strongly to conserved residues would considerably simplify the design of boosting immunogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that strategies that result in inducing such germline B cells (Steichen et al., 2016; Escolano et al., 2016; Jardine et al., 2016; Jardine et al., 2015; Jardine et al., 2013) would considerably simplify the design of boosting immunogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from model results with citations to relevant strategies",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "777eac60-114b-4d7f-9380-99d21f9aaa2a",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C45",
+      "claim": "The CHARMM36 energy function was used for the MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The CHARMM36 energy function was used for the MD simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological detail stated in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "6512a934-8da6-4cac-af3d-3f93c115e98b",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C46",
+      "claim": "Five 100ns trajectories were generated for each structure, starting from different initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated five 100ns trajectories for each structure, starting from different initial conditions (velocities; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological detail stated in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "3b1b9f9a-200f-42c1-88a1-25f48dc07b8c",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C47",
+      "claim": "Each B cell divides twice per GC cycle (four divisions per day).",
+      "claim_type": "EXPLICIT",
+      "source": "each B cell of the dark zone divides twice per GC cycle (four divisions per day) (Zhang and Shakhnovich, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang and Shakhnovich, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "20963201-6216-49e9-9c5c-7a23420f59cd",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C48",
+      "claim": "A mutation occurs with a probability of 0.20 per sequence per division during somatic hypermutation.",
+      "claim_type": "EXPLICIT",
+      "source": "and a mutation occurs with a probability of 0.20 per sequence per division (Berek and Milstein, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Berek and Milstein, 1987",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "43ad3dac-5bf1-49ad-a4b9-0c88f91a1160",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C49",
+      "claim": "Mutational hotspots have mostly been found in the CDR regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the FWR constitutes over two thirds of the variable domain by sequence, mutational hotspots have mostly been found in the CDR (Neuberger and Milstein, 1995; Tomlinson et al., 1996; Wagner and Neuberger, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Neuberger and Milstein, 1995; Tomlinson et al., 1996; Wagner and Neuberger, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "bb929c6e-2ff3-4aa2-955e-c051f4b40693",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C50",
+      "claim": "Apoptosis occurs half of the time for CDR mutations, 30% of mutations are silent, and 20% are binding energy-affecting mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability that a CDR mutation will follow one of these paths is governed by probabilities obtained from experiments (Berek and Milstein, 1987). Apoptosis occurs half of the time, 30% of mutations are silent, and 20% are binding energy-affecting mutations (Zhang and Shakhnovich, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berek and Milstein, 1987 and Zhang and Shakhnovich, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "e9c6d9e1-bfee-42c1-90b7-4e3d52147c98",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C51",
+      "claim": "Binding energy-affecting mutations are more likely to be deleterious than advantageous.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental studies of protein-protein interactions indicate that binding energy-affecting mutations are more likely to be deleterious than advantageous (Moal and Fern\u00e1ndez-Recio, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moal and Fern\u00e1ndez-Recio, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "0832f69d-a048-4f25-9585-7dd36bd580ec",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C53",
+      "claim": "If B cells interact with multiple variants of the antigen in every cycle, bnAbs are less likely to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown previously that, if B cells interact with multiple variants of the antigen in every cycle, bnAbs are less likely to evolve (Wang et al., 2015; Shaffer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2015 and Shaffer et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "4e554ac3-d33f-4b9d-9492-019a47f3586a",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C54",
+      "claim": "The model reproduces experimentally observed order-of-magnitude increases in the binding affinity during AM induced by a single antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the model that we simulate lacks structural detail, it reproduces experimentally observed order-of-magnitude increases in the binding affinity during AM induced by a single antigen (see Materials and methods and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "93ea0c73-38bf-4478-8486-d6fb4a209aa4",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C55",
+      "claim": "Diversification of viral strains often precedes the development of bnAbs in infected persons.",
+      "claim_type": "EXPLICIT",
+      "source": "Past studies analyzing the evolution of bnAbs in infected persons show that often diversification of viral strains precedes the development of bnAbs (Liao et al., 2013; Doria-Rose et al., 2014; Bhiman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liao et al., 2013; Doria-Rose et al., 2014; Bhiman et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "4fbe889c-9a86-40e3-a207-b310f6a50921",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C56",
+      "claim": "3BNC117 is slightly more potent than CH103.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could not find specific comparative data for 3BNC60, another 3B class of bnAb, 3BNC117, is slightly more potent than CH103 (Chuang et al., 2013; Eroshkin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chuang et al., 2013 and Eroshkin et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "768a30e7-c777-4009-83b5-81b6947178da",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C57",
+      "claim": "3BNC55 is less potent than CH103.",
+      "claim_type": "EXPLICIT",
+      "source": "Indirect comparisons based on available data (Scheid et al., 2011; Chuang et al., 2013) suggest that 3BNC55, another bnAb with the P61 FWR mutation is less potent than CH103.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from cited data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "1c3bbf81-a564-4fd4-b3b5-9d4153ed3819",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C58",
+      "claim": "The conformational entropy from quasi-harmonic analysis typically overestimates the true conformational entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is known that the conformational entropy from quasi-harmonic analysis typically overestimates the true conformational entropy (see, e.g., [Tyka et al., 2007]), the relative differences between the structures studied are expected to be meaningful because of the overall structure similarity of antibodies in the same lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tyka et al., 2007",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "83bf2266-c74b-49dd-a8b1-f58320f0a5fb",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C59",
+      "claim": "The constant and variable regions of antibodies remained well-separated in simulations including both regions.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that the truncation of the antibody constant regions would not impact the conclusions of this study, we also simulated by MD the 3BNC60 antibodies without truncation (i.e. including both the variable and constant regions, for 400ns for each structure. In these simulations, the constant and variable regions remained well-separated (Figure 2\u2014figure supplement 2) suggesting that the interactions between them were relatively weak.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on MD simulation data shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "0f6207c8-1ccc-48f9-9a94-90c00733a82c",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C60",
+      "claim": "The qualitative results of the affinity maturation model are robust to some variation in the parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the qualitative nature of the model, we did not attempt to choose an 'optimal' set of parameters, for example by precisely fitting the typical number of mutations or GC duration in the single antigen case. A strength of our model is that the qualitative results are robust to some variation in the parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about model robustness based on simulation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "6b2c95e9-aafd-47d3-bb4b-f2bfcef8b709",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C61",
+      "claim": "The same qualitative maturation pathways are observed in simulations with \u03bb = 0.8 as with \u03bb = 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the same qualitative maturation pathways are also observed in these simulations (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "acd37cd8-051b-43db-a354-69eacca60ef3",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C62",
+      "claim": "Due to greater dissimilarity between antigens with \u03bb = 0.8, there is stronger selection for flexibility (lower Q).",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the greater dissimilarity between antigens against which the Abs mature, there is stronger selection for flexibility (lower Q).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on affinity maturation model simulations with \u03bb = 0.8",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "37ff1b90-d3b5-466a-a7e8-5206c8c0bc4a",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C63",
+      "claim": "Shifting E0 to very strong or weak binding energies affects the preferred antibody maturation pathway when the germline B cell does not bind strongly to the conserved residues of the epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "We have explored the effects of varying the value of this parameter on our results when the germline B cell does not bind strongly to the conserved residues of the epitope (weak initial Ec). As Figure 4\u2014figure supplement 3 shows, shifting E0 to very strong or weak binding energies affects the preferred antibody maturation pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "3529571b-9806-4796-900b-23a26bf2a3ee",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C64",
+      "claim": "A significantly more favorable value of E0 makes flexibility-increasing framework mutations more beneficial and drives antibody evolution more along 3BNC60-like trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "A significantly more favorable value of E0 than that used to obtain the results in Figure 4 makes flexibility-increasing framework mutations more beneficial, and thus drives antibody evolution more along 3BNC60-like trajectories (compare Figure 4\u2014figure supplement 3 with Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "89b6b3ec-71fa-4170-81a1-f4c43de3faf9",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C65",
+      "claim": "If E0 is weaker than what was used to obtain the results in Figure 4 and the same antigen concentration is used, most of the B cells die and the GC is likely to be extinguished.",
+      "claim_type": "EXPLICIT",
+      "source": "If E0 is weaker than what was used to obtain the results in Figure 4, and we use the same antigen concentration as before, most of the B cells die and the GC is likely to be extinguished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on affinity maturation model simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a4681637-7a26-4e1c-84f9-9a0d5a870915",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C66",
+      "claim": "When E0 is weak and antigen concentration is increased, more CH103-like maturation trajectories are promoted.",
+      "claim_type": "EXPLICIT",
+      "source": "In this circumstance, if the antigen concentration is increased, we find that the GCs are not extinguished with high probability, and more CH103-like maturation trajectories are promoted (compare Figure 4\u2014figure supplement 3 with Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "4f75f3f4-7e46-4260-aafa-d156baef6b68",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "claim_id": "C67",
+      "claim": "Varying values of E0 change the rate of acquiring CDR versus FWR mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the points noted above, varying values of E0 also change the rate of acquiring CDR versus FWR mutations (Figure 6\u2014figure supplement 1), with stronger values of E0 promoting FWR mutations more than in Figure 6B and weaker values of E0 suppressing FWR mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on affinity maturation model simulations shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ec599c12-6063-46ea-a97c-b5b4ca24b266",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MD simulations show that the 3BNC60 antibody lineage progressively increases in flexibility during affinity maturation. The P61A reversal mutation disrupts \u03b2-sheet structure causing partial unfolding, and conformational entropy calculations demonstrate progressive flexibility increase from germline to mature antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 and C29 are well-supported by MD simulation data (Figures 1A, 3) showing RMSF and conformational entropy changes. The P61A mutation effect is consistent with experimental observations (C17), and the progressive flexibility increase is quantified through multiple metrics. The 100ns trajectories with five replicates provide adequate sampling for the conclusions drawn.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "505eecbe-bf2b-41b2-b9b4-39ad2c0a90af",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MD simulations demonstrate that the CH103 antibody lineage becomes progressively more rigid during affinity maturation, following the traditional paradigm. This rigidification is attributed to reorientation of light chain relative to heavy chain and is consistent with non-broadly neutralizing antibody behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 and C30 are supported by MD simulation data (Figures 1B, 3) showing decreased RMSF and conformational entropy. The mechanistic explanation from Fera et al. (C20) provides context, and consistency with prior studies (C21) strengthens the conclusion. However, the magnitude of changes appears smaller than for 3BNC60, which is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MD simulations reveal complex flexibility evolution in the PGT121 lineage where the intermediate (3hr/109L) is more flexible than both germline and mature forms. The increased flexibility in the intermediate is explained by loss of stabilizing hydrogen bonds between S27 and G68 due to the S27A mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 and C31 are supported by MD simulation data (Figures 1C, 1F, 2B, 3) and structural analysis (Figure 2\u2014figure supplement 1). The molecular mechanism involving hydrogen bond disruption is well-characterized. However, C27 acknowledges the explanation is complicated and other residues may contribute. The use of a chimeric construct rather than a true intermediate is a limitation but is appropriately disclosed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "0542b6b9-2dba-4105-8d02-5b11726789a1",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Flexibility throughout antibodies can be significantly changed by mutations in both FWR and CDR regions, and affinity maturation in bnAbs does not always follow the rigidification paradigm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is a synthesis conclusion supported by the combined MD simulation results from all three lineages (C16-C27, C29-C31). The evidence demonstrates diverse flexibility trajectories depending on lineage, contradicting the universal rigidification paradigm. This is a well-supported overarching conclusion from the MD work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "b8407e88-64fe-4fe6-b4eb-4d375908b964",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Affinity maturation model predicts that when germline BCRs bind strongly to conserved residues (high Ec), antibodies evolve by accumulating CDR mutations that strengthen binding and FWR mutations that increase rigidity, following the CH103-like pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C40 are supported by computational model simulations (Figures 4A, 6A). The model reproduces expected behavior for strong initial binding and is consistent with CH103 MD results and experimental data (C32). The qualitative nature of the model is appropriate for the mechanistic insights provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "5c32c902-ed95-4e49-950d-50f717200562",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Affinity maturation model predicts that when germline BCRs bind weakly to conserved residues, antibodies must acquire FWR mutations that increase flexibility early in maturation to survive selection against multiple variant antigens. Without flexibility changes, GC reactions are 35% less likely to succeed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C41 are supported by computational model simulations (Figures 4B, 6B). The 35% failure rate when flexibility changes are disallowed (C36) provides strong evidence for the necessity of flexibility evolution. The prediction of early FWR mutations (C41) is supported by phylogenetic data from Klein et al. (C42), providing experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "9a85f3cd-f4ee-4b1b-b6b3-ba7fcc0fc91c",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The affinity maturation model predicts that after acquiring sufficiently strong binding to conserved residues (Ec), antibodies undergo rigidification through framework mutations, resulting in higher potency. This explains why PGT121 is more potent than 3BNC60.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by model simulations (Figures 4A, 4C) showing the transition from flexibility to rigidity as Ec strengthens. The explanation for PGT121 potency (C39) is consistent with MD results showing intermediate flexibility. However, C39 is somewhat speculative as direct potency comparisons are limited (acknowledged in C56-C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "eb53e9fa-b666-4e5c-be4f-e4f6f28a3736",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model predicts that if germline B cells binding strongly to conserved epitope residues can be activated, there is no need to induce FWR mutations affecting flexibility during subsequent immunization, considerably simplifying immunogen design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are logical inferences from the model results (C34-C41) and represent the key translational implication. The conclusion follows from the observation that strong initial Ec leads to CH103-like trajectories without requiring flexibility evolution. Citations to relevant immunogen design strategies (C44) provide context. This is appropriately framed as a suggestion rather than a definitive prescription.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "97ff5fe2-3cb7-49b2-84b4-94693a757be3",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The affinity maturation model reproduces experimentally observed binding affinity increases and shows qualitative robustness to parameter variations, including changes in antigen similarity (\u03bb).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C60-C62 demonstrate model validation and robustness. Figure 4\u2014figure supplement 1 shows agreement with single-antigen AM experiments. Testing with \u03bb = 0.8 (C61-C62, Figure 4\u2014figure supplement 2) confirms qualitative patterns persist despite parameter changes. The authors appropriately acknowledge the qualitative nature of the model and do not claim quantitative precision.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "1c0ade7d-3c84-4d03-8a3f-76c8f6666b37",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Varying the generic binding energy parameter E0 in the affinity maturation model affects the preferred maturation pathway, with stronger E0 promoting 3BNC60-like trajectories and weaker E0 promoting CH103-like trajectories or GC extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are supported by systematic parameter exploration (Figures 4\u2014figure supplement 3, 6\u2014figure supplement 1). The analysis shows how E0 modulates the balance between flexibility-increasing and rigidity-increasing mutations. The need to adjust antigen concentration when E0 is weak (C66) demonstrates appropriate consideration of parameter interactions. This sensitivity analysis strengthens confidence in the model's qualitative predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a3e35888-3b3e-4c5c-bc2a-35ca71268877",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MD simulations used CHARMM36 force field with five 100ns trajectories per structure. Quasi-harmonic entropy analysis overestimates absolute entropy but relative differences are meaningful. Truncation of constant regions does not affect conclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 and C58-C59 describe methodological details that are appropriately documented. The 100ns \u00d7 5 replicates provide reasonable sampling for flexibility analysis. The caveat about entropy overestimation (C58) is appropriately acknowledged, and the validation of truncation effects (C59, Figure 2\u2014figure supplement 2) addresses a potential concern. These are standard practices for this type of analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "81f8b5b2-c856-4c42-b96b-fa840b802615",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The affinity maturation model incorporates experimentally-derived parameters for B cell division rates, mutation probabilities, mutation outcomes, and the distribution of CDR vs FWR mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 describe model parameters derived from experimental literature with appropriate citations. The parameters for division rates (C47), mutation probabilities (C48), CDR hotspots (C49), mutation outcomes (C50), and deleterious mutation bias (C51) are all supported by cited experimental studies. This grounding in experimental data strengthens the model's biological realism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "02dcff4c-406a-46ad-849c-9cf664aa9887",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that HIV affects 37 million people with 2 million new infections in 2014, bnAbs show promise in animal models, but naturally evolve rarely and past vaccination attempts have failed to induce them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide background context supported by appropriate citations. These establish the motivation for the study. C2 lacks a specific citation but represents established knowledge. C7 appropriately acknowledges recent progress while noting the absence of an efficient protocol. These background claims are well-supported and provide appropriate context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims describe affinity maturation biology, unusual features of bnAbs including high somatic hypermutation in CDRs and FWRs, the role of FWR mutations in breadth, and the contradiction with the traditional rigidification paradigm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C15 provide biological background supported by appropriate citations. The description of affinity maturation (C8), bnAb structural features (C9), FWR mutation effects (C10-C13), and the traditional paradigm (C14) are well-documented. The analogy to PDZ domain adaptation (C15) provides conceptual motivation. These background claims appropriately frame the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "7a25c964-5b81-48b1-8e91-2ee9233cc6da",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Experimental observations from the literature show CH103 germline bound strongly to founder virus, 3BNC60 ancestors showed lower potency/breadth, viral diversification precedes bnAb development, and FWR mutations in 3BNC60 emerged early based on phylogenetic analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 and C42 are supported by appropriate citations and provide key experimental context for interpreting the model results. C55 establishes the biological relevance of sequential antigen exposure. C56-C57 provide indirect potency comparisons with appropriate caveats about data availability. These claims appropriately integrate prior experimental work with the current computational findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    },
+    {
+      "id": "a2f69424-2eea-4ef1-a586-aa3a5916618a",
+      "content_id": "c96d0efc-1e86-49ad-9cf8-5ddf64322e56",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior studies showed that if B cells interact with multiple antigen variants in every cycle, bnAbs are less likely to evolve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by citations to Wang et al. 2015 and Shaffer et al. 2016. This prior finding justifies the modeling choice to have B cells encounter single variants at a time. The claim appropriately acknowledges relevant prior work that informs model design decisions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:41.124023Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d962abb-00c4-4179-8246-a4ccbc0cc5ff",
+      "result_id": "ec599c12-6063-46ea-a97c-b5b4ca24b266"
+    },
+    {
+      "claim_id": "97e613bc-79b2-4498-ba00-6e78f48b6cae",
+      "result_id": "ec599c12-6063-46ea-a97c-b5b4ca24b266"
+    },
+    {
+      "claim_id": "a7d4077b-f47b-4e91-89f0-e54204a5a514",
+      "result_id": "ec599c12-6063-46ea-a97c-b5b4ca24b266"
+    },
+    {
+      "claim_id": "ee85c8b8-6a9f-4085-bbfc-52b702c08ffc",
+      "result_id": "ec599c12-6063-46ea-a97c-b5b4ca24b266"
+    },
+    {
+      "claim_id": "6a0ce10e-2e45-4ea3-a2c0-2c9fd7554043",
+      "result_id": "505eecbe-bf2b-41b2-b9b4-39ad2c0a90af"
+    },
+    {
+      "claim_id": "51efebf8-17c3-4017-991d-6e4310129ffc",
+      "result_id": "505eecbe-bf2b-41b2-b9b4-39ad2c0a90af"
+    },
+    {
+      "claim_id": "8393928c-542a-4cc8-9d4f-4e69ee963a05",
+      "result_id": "505eecbe-bf2b-41b2-b9b4-39ad2c0a90af"
+    },
+    {
+      "claim_id": "b14655ed-e05e-419a-9c57-dbef6f9fc3d5",
+      "result_id": "505eecbe-bf2b-41b2-b9b4-39ad2c0a90af"
+    },
+    {
+      "claim_id": "781885a8-3b68-40d2-a3ea-7ac1e52cf062",
+      "result_id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5"
+    },
+    {
+      "claim_id": "c1ce38bd-471b-467e-87a1-a36acaacf54d",
+      "result_id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5"
+    },
+    {
+      "claim_id": "96d442f3-3c4d-44e6-892d-1429a43613fb",
+      "result_id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5"
+    },
+    {
+      "claim_id": "c1bbe3dc-bbad-4c4d-8f36-ab324f9dc7b8",
+      "result_id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5"
+    },
+    {
+      "claim_id": "92d18421-e686-48d0-8677-736c86581c20",
+      "result_id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5"
+    },
+    {
+      "claim_id": "5e6e767b-7044-4dfd-b76d-b08c8202859e",
+      "result_id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5"
+    },
+    {
+      "claim_id": "a2cb5bf3-b0e8-4def-97ea-a7f1de7e7ed7",
+      "result_id": "89fabda6-2f1d-4ec8-911c-872b6d30c3c5"
+    },
+    {
+      "claim_id": "a8b4824d-2188-4502-a886-ab5ef7d15dcb",
+      "result_id": "0542b6b9-2dba-4105-8d02-5b11726789a1"
+    },
+    {
+      "claim_id": "537dfd66-66d6-4fc1-9a02-d0e4b7950f9a",
+      "result_id": "b8407e88-64fe-4fe6-b4eb-4d375908b964"
+    },
+    {
+      "claim_id": "ecc3b8dc-8355-42f8-8ba0-945bb7db6bc8",
+      "result_id": "b8407e88-64fe-4fe6-b4eb-4d375908b964"
+    },
+    {
+      "claim_id": "14e6a7af-48a0-4cf4-a9ba-5d19ea6d96fa",
+      "result_id": "5c32c902-ed95-4e49-950d-50f717200562"
+    },
+    {
+      "claim_id": "bc37b852-408c-4c04-b29e-708c50e1dcd3",
+      "result_id": "5c32c902-ed95-4e49-950d-50f717200562"
+    },
+    {
+      "claim_id": "0379a6aa-34b7-4dbb-8ce0-b322f5ff5dd8",
+      "result_id": "5c32c902-ed95-4e49-950d-50f717200562"
+    },
+    {
+      "claim_id": "9c02280b-734e-41c0-a995-b68ca1cad56a",
+      "result_id": "9a85f3cd-f4ee-4b1b-b6b3-ba7fcc0fc91c"
+    },
+    {
+      "claim_id": "a3796640-ff8c-4e3e-a348-8c6b71e1692c",
+      "result_id": "9a85f3cd-f4ee-4b1b-b6b3-ba7fcc0fc91c"
+    },
+    {
+      "claim_id": "5e41768b-3629-41c8-9a18-95e01272879a",
+      "result_id": "9a85f3cd-f4ee-4b1b-b6b3-ba7fcc0fc91c"
+    },
+    {
+      "claim_id": "ca3af9a9-babf-48af-ab26-a1669ddbe76c",
+      "result_id": "eb53e9fa-b666-4e5c-be4f-e4f6f28a3736"
+    },
+    {
+      "claim_id": "b31776fd-2635-426b-946d-f85122f9bb3b",
+      "result_id": "eb53e9fa-b666-4e5c-be4f-e4f6f28a3736"
+    },
+    {
+      "claim_id": "4e554ac3-d33f-4b9d-9492-019a47f3586a",
+      "result_id": "97ff5fe2-3cb7-49b2-84b4-94693a757be3"
+    },
+    {
+      "claim_id": "0f6207c8-1ccc-48f9-9a94-90c00733a82c",
+      "result_id": "97ff5fe2-3cb7-49b2-84b4-94693a757be3"
+    },
+    {
+      "claim_id": "6b2c95e9-aafd-47d3-bb4b-f2bfcef8b709",
+      "result_id": "97ff5fe2-3cb7-49b2-84b4-94693a757be3"
+    },
+    {
+      "claim_id": "acd37cd8-051b-43db-a354-69eacca60ef3",
+      "result_id": "97ff5fe2-3cb7-49b2-84b4-94693a757be3"
+    },
+    {
+      "claim_id": "37ff1b90-d3b5-466a-a7e8-5206c8c0bc4a",
+      "result_id": "1c0ade7d-3c84-4d03-8a3f-76c8f6666b37"
+    },
+    {
+      "claim_id": "3529571b-9806-4796-900b-23a26bf2a3ee",
+      "result_id": "1c0ade7d-3c84-4d03-8a3f-76c8f6666b37"
+    },
+    {
+      "claim_id": "89b6b3ec-71fa-4170-81a1-f4c43de3faf9",
+      "result_id": "1c0ade7d-3c84-4d03-8a3f-76c8f6666b37"
+    },
+    {
+      "claim_id": "a4681637-7a26-4e1c-84f9-9a0d5a870915",
+      "result_id": "1c0ade7d-3c84-4d03-8a3f-76c8f6666b37"
+    },
+    {
+      "claim_id": "4f75f3f4-7e46-4260-aafa-d156baef6b68",
+      "result_id": "1c0ade7d-3c84-4d03-8a3f-76c8f6666b37"
+    },
+    {
+      "claim_id": "777eac60-114b-4d7f-9380-99d21f9aaa2a",
+      "result_id": "a3e35888-3b3e-4c5c-bc2a-35ca71268877"
+    },
+    {
+      "claim_id": "6512a934-8da6-4cac-af3d-3f93c115e98b",
+      "result_id": "a3e35888-3b3e-4c5c-bc2a-35ca71268877"
+    },
+    {
+      "claim_id": "1c3bbf81-a564-4fd4-b3b5-9d4153ed3819",
+      "result_id": "a3e35888-3b3e-4c5c-bc2a-35ca71268877"
+    },
+    {
+      "claim_id": "83bf2266-c74b-49dd-a8b1-f58320f0a5fb",
+      "result_id": "a3e35888-3b3e-4c5c-bc2a-35ca71268877"
+    },
+    {
+      "claim_id": "3b1b9f9a-200f-42c1-88a1-25f48dc07b8c",
+      "result_id": "81f8b5b2-c856-4c42-b96b-fa840b802615"
+    },
+    {
+      "claim_id": "20963201-6216-49e9-9c5c-7a23420f59cd",
+      "result_id": "81f8b5b2-c856-4c42-b96b-fa840b802615"
+    },
+    {
+      "claim_id": "43ad3dac-5bf1-49ad-a4b9-0c88f91a1160",
+      "result_id": "81f8b5b2-c856-4c42-b96b-fa840b802615"
+    },
+    {
+      "claim_id": "bb929c6e-2ff3-4aa2-955e-c051f4b40693",
+      "result_id": "81f8b5b2-c856-4c42-b96b-fa840b802615"
+    },
+    {
+      "claim_id": "e9c6d9e1-bfee-42c1-90b7-4e3d52147c98",
+      "result_id": "81f8b5b2-c856-4c42-b96b-fa840b802615"
+    },
+    {
+      "claim_id": "4c4b011c-7c10-461b-9da3-eac2b4c0c3cc",
+      "result_id": "02dcff4c-406a-46ad-849c-9cf664aa9887"
+    },
+    {
+      "claim_id": "a62ceca6-846f-45b2-98c4-b55d2d63a560",
+      "result_id": "02dcff4c-406a-46ad-849c-9cf664aa9887"
+    },
+    {
+      "claim_id": "eaa2da77-5b61-4118-a30a-fefc4fc3b68b",
+      "result_id": "02dcff4c-406a-46ad-849c-9cf664aa9887"
+    },
+    {
+      "claim_id": "3fc6256d-c23a-4c97-9a80-6fa0e832751d",
+      "result_id": "02dcff4c-406a-46ad-849c-9cf664aa9887"
+    },
+    {
+      "claim_id": "55d11838-08c1-4496-9ed7-6f60c0df96a5",
+      "result_id": "02dcff4c-406a-46ad-849c-9cf664aa9887"
+    },
+    {
+      "claim_id": "c893403c-7da3-4a3f-b89b-23926c79fd68",
+      "result_id": "02dcff4c-406a-46ad-849c-9cf664aa9887"
+    },
+    {
+      "claim_id": "24192568-b28c-47bf-b194-e5806fcfac6b",
+      "result_id": "02dcff4c-406a-46ad-849c-9cf664aa9887"
+    },
+    {
+      "claim_id": "a878d8f9-0524-4aa9-a6a4-a99723da45a1",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "0c415548-fa49-4cde-9600-ff789aa1708f",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "f2ac6176-567f-458f-818d-5f49b67410b2",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "d3f34849-f801-4cec-a12d-0ea4a7997965",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "670eaba5-0fe6-437b-9378-de707b1ea29f",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "083b615f-b22e-4dda-865b-3e80c39aa6bd",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "afca80e3-d3f0-4c91-975e-e29edf7081b8",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "036e07ed-baeb-4d1b-abe8-14eac00e05f0",
+      "result_id": "9f5e0633-c8fd-46bb-95ed-a4efde3a44c9"
+    },
+    {
+      "claim_id": "f4687e4d-b3ef-4814-9813-c5d5b3946beb",
+      "result_id": "7a25c964-5b81-48b1-8e91-2ee9233cc6da"
+    },
+    {
+      "claim_id": "365e2a2d-7950-4260-8cfe-54b8c9f247ec",
+      "result_id": "7a25c964-5b81-48b1-8e91-2ee9233cc6da"
+    },
+    {
+      "claim_id": "070874bb-30da-4eff-9efc-3a09533b08c2",
+      "result_id": "7a25c964-5b81-48b1-8e91-2ee9233cc6da"
+    },
+    {
+      "claim_id": "93ea0c73-38bf-4478-8486-d6fb4a209aa4",
+      "result_id": "7a25c964-5b81-48b1-8e91-2ee9233cc6da"
+    },
+    {
+      "claim_id": "4fbe889c-9a86-40e3-a207-b310f6a50921",
+      "result_id": "7a25c964-5b81-48b1-8e91-2ee9233cc6da"
+    },
+    {
+      "claim_id": "768a30e7-c777-4009-83b5-81b6947178da",
+      "result_id": "7a25c964-5b81-48b1-8e91-2ee9233cc6da"
+    },
+    {
+      "claim_id": "0832f69d-a048-4f25-9585-7dd36bd580ec",
+      "result_id": "a2f69424-2eea-4ef1-a586-aa3a5916618a"
+    }
+  ],
+  "comparisons": []
+}

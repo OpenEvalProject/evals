@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C34"
+    ],
+    "result": "The authors introduce the skCSD method, a novel approach that applies the kernel Current Source Density (kCSD) framework to estimate transmembrane current distributions along single-cell morphologies from extracellular recordings. This is the first method to reconstruct CSD of individual neurons using their actual morphologies, restricting current sources to the cell structure and handling arbitrarily complex morphologies with arbitrary electrode configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C13, C17, and C34 establish novelty through literature review and explicit statements. Claims C14, C15, and C16 describe the methodological foundation and capabilities, which are demonstrated throughout the Results section with multiple validation studies. The method is thoroughly validated on simulated data with known ground truth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Increasing electrode density, number, and coverage of the neuronal morphology systematically improves the spatial resolution and reconstruction quality of the skCSD method. This is demonstrated through simulations showing that 128 electrodes can reconstruct higher spatial frequency CSD distributions compared to 8 electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C27-C29 are directly supported by simulation results in Figures 2, 3, and 10. The relationship between electrode parameters and reconstruction quality is systematically tested across multiple morphologies with quantitative error metrics (L1 error, cross-validation error), showing consistent improvement with increased sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The skCSD method can recover synaptic activations from extracellular recordings, with reconstruction precision improving as the number of recording contacts increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by simulation results in Figure 3 showing reconstruction of randomly activated synapses on a ball-and-stick neuron. The ground truth CSD distribution is compared with reconstructions from 8, 32, and 128 electrodes, demonstrating progressive improvement in spatial localization of synaptic inputs with quantified reduction in cross-validation error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The skCSD method provides more detailed information about membrane current distribution than interpolated local field potential (LFP) or standard kCSD analysis when applied to single-cell recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is demonstrated in Figure 5 where skCSD successfully differentiates synaptic inputs on different branches of a Y-shaped neuron in three scenarios, while interpolated potential and standard kCSD reconstructions in the electrode plane cannot distinguish between these cases. This shows the added value of incorporating morphological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The skCSD reconstruction quality is not highly sensitive to specific electrode placement, with random electrode distributions sometimes performing comparably to or better than regular grids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by Figure 6 showing reconstructions from both regular grids and five random placements of electrodes. The averaged reconstructions from random distributions show similar quality to regular arrangements, with some random configurations achieving better sampling of the morphology-covered area.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The skCSD method maintains adequate reconstruction quality even with significant additive noise (SNR = 1), with regularization providing correction except when noise is on the order of the signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is demonstrated in Figure 9 showing reconstructions at SNR values of 16, 4, and 1. Visual inspection and L1 error quantification show that reconstruction degrades systematically with increasing noise but remains interpretable until SNR approaches 1, where noise equals signal amplitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C47",
+      "C48"
+    ],
+    "result": "The skCSD method performed adequately on proof-of-concept experimental data from a hippocampal pyramidal cell, reconstructing general features of spike-triggered average spatiotemporal CSD patterns including somatic sinks and dendritic sources during action potential generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe experimental validation shown in Figures 11 and Video 2. Claims C47-C48 provide experimental details (154 spikes detected, 2 broken channels). The reconstruction shows physiologically plausible patterns of current sinks at soma and sources in dendrites during spiking, though spatial resolution is limited by electrode placement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The morphology loop, a closed curve covering all cell segments, is constructed to provide one-dimensional parametrization of the neuron morphology. This construction is formulated as a special case of the Chinese postman problem from graph theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe a key methodological innovation shown in Figure 1 and detailed in Materials and methods. The approach is mathematically grounded (citation to Kwan, 1962) and enables handling of branching morphologies by visiting terminal segments once, branching points multiple times, and intermediate segments twice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The optimal parameters for skCSD reconstruction are best identified by minimizing the L1 error between reconstruction and ground truth in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by systematic parameter exploration in Figure 7 (basis number, width, regularization) and Figure 10I (comparison of L1-T, L1-V, and CV errors). The authors demonstrate that L1 error minimization gives better results than cross-validation, though CV performs comparably and is more practical for experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The skCSD method acts locally in time, analyzing the collection of potentials at each moment independently without direct relation to past or future signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is explicitly stated and consistent with the mathematical formulation presented in Materials and methods. This is a fundamental property shared with all CSD estimation methods, where the inverse problem is solved independently at each time point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "While the skCSD method can technically be applied to data from a single electrode, the estimate would be poor. As sampling improves with more electrodes, reconstruction quality improves, though it is difficult to determine a priori how many electrodes are sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by the systematic studies in Figures 2, 3, 6, and 10 showing progressive improvement with electrode number. The authors acknowledge the fundamental limitation that insufficient sampling leads to poor reconstruction, analogous to estimating population statistics from small samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "For all simulations in this work, 512 basis functions were used (at least twice the number of electrodes), with basis widths of 8, 16, 32, 64, 128 \u03bcm tested, and regularization parameters of 0.00001, 0.0001, 0.001, 0.01, 0.1 explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe methodological choices explicitly stated in the Parameter selection section. These parameters are systematically varied in Figure 7 to demonstrate their effects on reconstruction quality, providing guidance for parameter selection in future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Patch-clamp is the most common technique for monitoring neuronal membrane potential but is limited to one or two recording sites. Extracellular recordings with modern multielectrode arrays can record from thousands of channels but do not directly measure membrane potentials, instead capturing spiking activity and local field potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide background context supported by appropriate citations (Neher and Sakmann 1976; Buzs\u00e1ki et al. 2012; Einevoll et al. 2013a; Buzs\u00e1ki 2004; Berdondini et al. 2005; Obien et al. 2014). These are well-established facts in the field that motivate the need for the proposed method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "High-density multielectrode recordings have been used for improved spike detection, axon tracking, spike sorting, and reconstruction of current source densities from local field potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 describe established applications of multielectrode technology, each supported by appropriate citations (Rey et al. 2015; Bakkum et al. 2013; Lewandowska et al. 2016; Buzs\u00e1ki 2004; Berdondini et al. 2005; Obien et al. 2014; Muthmann et al. 2015; Pitts 1952; Mitzdorf 1985; W\u00f3jcik 2015). This provides context for the novelty of the proposed approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The skCSD method requires extracellular recordings from a specific neuron whose morphology and location relative to electrodes are known. The necessary data types have been available for some time and have recently become more comprehensive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 describe data requirements and availability, supported by citations (Henze et al. 2000; Gold et al. 2006; J\u00e4ckel et al. 2017). The experimental feasibility is further demonstrated by the proof-of-concept experiment, though the authors acknowledge practical challenges in the Discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The first CSD method specific for investigating membrane currents on single cells was proposed by Somogyv\u00e1ri et al. (2005), but it assumed simplified, linear neuron morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 accurately describe prior work (Somogyv\u00e1ri et al. 2005) and its limitations, providing context for the novelty of the current method which handles arbitrary morphologies. This is consistent with the authors' claim of novelty in C34.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The proposed method may potentially be used to constrain biophysical properties of neuron membranes and facilitate consistency of reconstructed morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C19 are speculative statements about potential future applications (\"we believe that the method proposed here may be used\"). While plausible given the method's capabilities, these applications are not demonstrated in the current work. The claims represent hypotheses for future research rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The code used for this study is available at https://github.com/csdori/skCSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides code availability information, which is verifiable and supports reproducibility. This is a straightforward factual claim about resource availability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "While recording extracellular potential with MEA, filling neurons with dye, and reconstructing morphology are standard techniques, using them simultaneously remains challenging due to device size constraints. Intracellular recording less than 100 \u03bcm from MEA is extremely challenging, though experimental setups with necessary equipment exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 discuss practical experimental challenges, supported by citation to Neto et al. 2016. These claims acknowledge limitations in current experimental practice while noting that the required technology exists, providing realistic context for future applications of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The relation between current sources and recording potentials is given by the Poisson equation. Walter Pitts (1952) showed that for regular grids, the Poisson equation can be approximated to estimate current source distributions. The kernel CSD method (2012) overcame the restriction to regular grids using a kernel approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide accurate historical and theoretical background for CSD methods, supported by appropriate citations (Pitts 1952; Potworowski et al. 2012). This establishes the theoretical foundation upon which skCSD is built.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Simulations used the LFPy package to compute extracellular potentials, assumed .swc morphology format, and used a mouse retinal ganglion cell morphology from NeuroMorpho.Org as a realistic example.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe computational methods with appropriate citations (Lind\u00e9n et al. 2013; Cannon et al. 1998; Kong et al. 2005; Ascoli 2006). These are standard tools and formats in computational neuroscience, properly applied for validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The in vitro experiment followed ethical guidelines (EC Council Directive 86/89/EEC), used 500 \u03bcm horizontal hippocampal slices, recorded with a 16-channel linear multielectrode at 20 kHz sampling frequency with 16-bit resolution, and held the recorded neuron with \u221240 nA current injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide detailed experimental methods that are standard for in vitro electrophysiology. The ethical compliance, tissue preparation, recording parameters, and experimental conditions are clearly documented and appropriate for the proof-of-concept experiment.",
+    "result_type": "MINOR"
+  }
+]

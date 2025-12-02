@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "GR and BRG1 binding patterns were characterized genome-wide after 1 hour of dexamethasone treatment. 29,934 GR peaks were identified specifically in Dex-treated cells, with 58% overlapped by BRG1 peaks. BRG1 binding was reorganized upon hormone treatment, with 12,034 GR peaks bound by BRG1 in both conditions and 5,565 bound by BRG1 in a Dex-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide consistent ChIP-seq data showing GR and BRG1 binding patterns. The peak numbers are validated by comparison to other studies (C2), and the overlap analysis is supported by multiple figures. The data are internally consistent and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C80",
+      "C121"
+    ],
+    "result": "BRG1 pre-occupies a large subset of GR binding sites prior to hormone treatment, consistent with BRG1 involvement in pre-patterning GR binding sites. Approximately 40% of GR binding sites interact with BRG1 prior to hormone treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C9, C80, and C121 are supported by ChIP-seq data showing BRG1 binding at GR sites before hormone treatment. The quantitative estimate of ~40% is consistent with the overlap data presented. This represents a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C24",
+      "C79",
+      "C126"
+    ],
+    "result": "Three distinct classes of GR peaks were defined based on BRG1 binding patterns: Class I (no BRG1), Class II (constitutive BRG1), and Class III (Dex-induced BRG1). Class II peaks represent GR binding to regions pre-patterned by BRG1 and are associated with accessible and transcriptionally active chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C24 are supported by ChIP-seq data showing distinct BRG1 binding patterns at the three GR peak classes. The classification scheme is logical and well-supported by the data. However, the interpretation that Class II peaks are 'pre-patterned' (C79, C126) is inferential and depends on the temporal relationship between BRG1 and GR binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C86",
+      "C122"
+    ],
+    "result": "Class II GR peaks are accessible prior to hormone treatment, while Class I and III peaks are largely inaccessible before hormone treatment. Chromatin accessibility at GR peak classes correlates with BRG1 occupancy patterns. GBSs pre-occupied by BRG1 are more accessible than other GBSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by ATAC-seq data showing differential chromatin accessibility at the three GR peak classes. The correlation between BRG1 binding and accessibility is clearly demonstrated. The data support the conclusion that BRG1 pre-occupancy is associated with increased accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C34",
+      "C35",
+      "C84"
+    ],
+    "result": "The three GR peak classes exhibit distinct histone modification patterns. Class II peaks show H3K27ac enrichment and represent GR binding to active enhancers. Class I and III peaks lack H3K27ac and represent GR binding to inactive or poised enhancers. All classes show H3K4me1 enrichment but with different patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are supported by histone modification ChIP-seq data. The interpretation that Class II peaks represent active enhancers and Class I/III represent inactive/poised enhancers (C22-C23, C34-C35, C84) is reasonable based on the histone modification patterns, though the functional significance requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C81",
+      "C97"
+    ],
+    "result": "GR is more frequently associated with enhancer transcription than gene transcription. BRG1 is broadly enriched at active gene and enhancer TSSs independently of GR, with constitutive BRG1 enrichment at most active TSSs unaffected by Dex treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by ChIP-seq data comparing GR and BRG1 enrichment at gene versus enhancer TSSs. The conclusion that BRG1 is broadly associated with active chromatin independently of GR (C29, C81, C97) is well-supported by the data showing constitutive BRG1 enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Dex-induced increase in BRG1 enrichment was observed at active enhancer TSSs detected in Dex-treated cells and at TSSs with altered transcriptional activity upon Dex exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by BRG1 ChIP-seq data showing hormone-induced BRG1 enrichment at specific TSSs. This represents a subset of BRG1 binding that is hormone-responsive, complementing the finding of constitutive BRG1 binding at most active sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Class II peaks show the highest proximity to active TSSs, with 38% within 1 kb of a TSS in untreated cells and 45% in Dex-treated cells. After Dex treatment, a significant portion of all peak classes are within 1 kb of active TSSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by distance analysis between GR peaks and TSSs. The data show that Class II peaks are most proximal to TSSs and that hormone treatment induces transcriptional activity near many GR peaks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C123"
+    ],
+    "result": "BRG1 knockdown (80-85% reduction) dramatically altered the transcriptional hormone response. 743 of 1244 Dex-regulated DEGs were lost in BRG1-KD cells, while 114 genes gained hormone-responsiveness. BRG1 is required for a robust transcriptional hormone response and plays a critical role in patterning the GR transcriptional response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C41 are supported by RNA-seq data in BRG1-KD cells. However, BRG1 knockdown also caused a partial reduction in nuclear GR levels (C36), which complicates interpretation. While the authors provide evidence that GR reduction is not the dominant factor (C42-C44), the incomplete knockdown and secondary effects on GR levels introduce uncertainty about whether all observed effects are directly due to BRG1 loss. The conclusion that BRG1 is required for the hormone response is supported, but the mechanism remains partially unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The changes in the Dex response in BRG1-KD cells are predominantly driven by BRG1 silencing rather than the modest decrease in nuclear GR levels. GR siRNA (50-70% reduction) resulted in only modest loss of dex-induced transcription compared to BRG1-KD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by Western blot and qPCR data comparing GR siRNA and BRG1-KD effects. This control experiment strengthens the interpretation that BRG1 loss is the primary driver of transcriptional changes, though the incomplete separation of effects remains a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "DEGs tend to have closer and more numerous GR peaks than non-DEGs. Class II peaks are enriched among closest peaks to 'common' and 'gained' DEGs and are closer to DEG TSSs than other classes. BRG1 presence is more critical for hormone responsiveness at genes where GR binding is most distal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by distance and proximity analyses between GR peaks and DEG TSSs. The correlation between GR peak proximity and differential expression is well-documented. The interpretation that BRG1 is more critical for distal GR binding (C51) is reasonable based on the data showing 'lost' DEGs have more distal GR peaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "The three GR peak classes have distinguishable DNA sequence content. Perfect GREs are more common in Class I and III peaks (33-35%) than Class II peaks (19%). Class II peaks show highest enrichment for FOX and GATA motifs and for ENCODE transcription factor ChIP-seq signal. The BRG1-GR interaction could be moderated by other transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by motif analysis and ENCODE ChIP-seq data. The differential motif enrichment across peak classes is clearly demonstrated. The interpretation that other transcription factors moderate BRG1-GR interactions (C60) is reasonable but inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "SP/KLF and POU motifs are specifically enriched under Class II and III peaks, while STAT, NFATC, and OLIG motifs are most strongly enriched under Class I peaks, suggesting different transcription factor interactions at different peak classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by motif analysis. The differential motif enrichment suggests distinct transcription factor interactions at different GR peak classes, though functional validation would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C101"
+    ],
+    "result": "FOXA1 and GATA3 show strong enrichment at Class II GR peaks in both untreated and Dex-treated cells. At Class III peaks, FOXA1 and GATA3 binding increases markedly upon Dex treatment. The pattern of pioneer factor binding correlates with BRG1 binding, and BRG1 binding at Class II sites is predictive of GR interactions with pioneer factor binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C101 are supported by FOXA1 and GATA3 ChIP-seq data. The correlation between pioneer factor and BRG1 binding patterns is clearly demonstrated. This represents a key finding linking BRG1, pioneer factors, and GR binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C124"
+    ],
+    "result": "BRG1 is not required for basal pioneer factor binding at GR peaks but is required for hormone-induced recruitment of FOXA1 and GATA3 to GR peaks. In BRG1-KD cells, Dex-induced increase in FOXA1 and GATA3 enrichment at GR peaks is almost completely blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 and C124 are supported by FOXA1 and GATA3 ChIP-seq data in BRG1-KD cells. The data clearly show that BRG1 is required for hormone-induced changes in pioneer factor enrichment but not for basal binding. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C125"
+    ],
+    "result": "In untreated cells, BRG1 peaks intersect only 16.4% of FOXA1 peaks and 14.5% of GATA3 peaks. Despite similar GRE motif presence, GR binding at FOXA1 and GATA3 peaks is almost entirely restricted to peaks that intersect BRG1 peaks. BRG1 presence at pioneer factor peaks in untreated cells is predictive of subsequent GR binding, and pioneer factor binding alone is not predictive of GR binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 and C125 are supported by peak overlap analysis and ChIP-seq data. The finding that GR binding at pioneer factor sites requires BRG1 co-occupancy is a key result. The conclusion that pioneer factor binding alone is not predictive of GR binding (C78) is well-supported by the data showing GR binding is restricted to BRG1+ pioneer factor sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "GR bound enhancers exist in three distinct chromatin states in mouse mammary adenocarcinoma cells. Class I and III peaks gain chromatin accessibility upon Dex exposure and are associated with Dex-specific enhancer TSSs, representing regulatory elements activated only upon hormone treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by a cited study providing corroborating evidence. Claim C83 is an interpretation supported by ATAC-seq and Start-seq data showing accessibility and transcriptional activity changes at Class I and III peaks upon hormone treatment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The majority of GR binding sites are not associated with transcriptional activity, indicating GR binding is not sufficient to activate transcription. The active chromatin environment at Class II peaks is pre-existing and largely unchanged by Dex exposure. BRG1 binding is not sufficient to generate a fully activated chromatin environment. However, transcriptional activity is gained at ~25-30% of Class I and III peaks upon Dex exposure, suggesting transcriptional induction can occur independently of common active chromatin characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by the combined analysis of ChIP-seq, ATAC-seq, and Start-seq data. The observation that many GR binding sites lack transcriptional activity is well-documented. The finding that transcriptional activity can be induced without corresponding chromatin changes (C91) is interesting but would benefit from additional mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The distal nature of GR binding events and enhancer-like chromatin characteristics indicate that GR signaling largely regulates transcription through modulation of enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is an interpretation supported by the distance of GR binding from gene TSSs and the chromatin characteristics at GR binding sites. This is a reasonable conclusion based on the data, though direct evidence of enhancer-promoter interactions would strengthen this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Long-range chromatin interactions have been implicated in GR transcriptional activity, and clusters of GBSs may interact over long ranges to synergistically regulate transcription. Alternatively, GR and BRG1 could regulate gene expression through decompaction of broad chromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are supported by cited studies but represent prior work rather than findings from this study. Claim C100 is a speculative hypothesis about potential mechanisms. These claims represent discussion of possible mechanisms rather than demonstrated results from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "FOXA1 and BRG1 binding are reorganized upon hormone treatment, with most reorganization occurring at sites not associated with GR binding. The rearrangement may not be dependent on direct GR interaction and could occur secondarily to initial GR binding events. ChIP-seq may fail to detect rapid and dynamic binding events. The hierarchy and timing of FOXA1, BRG1, and GR chromatin interactions remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C111 mix supported observations (C102-C103 supported by ChIP-seq data) with speculative hypotheses (C105-C111). The observation that BRG1 and FOXA1 reorganization occurs at sites without GR binding (C104) is supported by data. However, the temporal relationships and mechanistic explanations (C105-C111) are speculative and acknowledge uncertainty. These represent important questions for future investigation rather than resolved findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Prior work established that BRG1-mediated chromatin remodeling is required for GR transcriptional response at model genes, that GR preferentially binds pre-accessible chromatin, and that pioneer factors pre-occupy and maintain accessibility at GR binding sites. Recent work showed hormone signaling promotes FOXA1 redistribution. Current models of GR activity fail to fully account for the complexities of GR signaling at a genomic scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 summarize established knowledge and prior work from the literature. These are appropriately cited and provide context for the current study. The assessment that current models are insufficient (C118-C119) is a reasonable interpretation based on the complexity revealed by genomic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "GR and other transcriptional activators function via multiple distinct chromatin-based mechanisms to modulate the transcriptional response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is a speculative prediction based on the observation of distinct GR peak classes with different chromatin characteristics. This is a reasonable conclusion from the study's findings, though it represents a predictive model rather than a directly demonstrated result.",
+    "result_type": "MAJOR"
+  }
+]

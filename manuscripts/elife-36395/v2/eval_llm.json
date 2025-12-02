@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Participants successfully learned the IBRE task, reaching >90% accuracy by the end of training. Common diseases were learned more quickly than rare diseases, with significant accuracy differences in early and late training blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide converging behavioral evidence of successful learning with appropriate statistical tests (linear mixed effects model, paired t-tests). The pattern of faster learning for common vs. rare categories is consistent with the IBRE paradigm and provides necessary context for interpreting test phase results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Participants exhibited the inverse base rate effect: they classified ambiguous stimuli as members of the rare category (49.8%) more often than the common category (43.5%), significantly above the 1/4 base rate. Rare responses were slower than common responses, suggesting greater cognitive demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate the core IBRE behavioral phenomenon with appropriate statistical tests (one-sample t-test, linear mixed effects model). The RT difference (C41-C42) provides additional evidence for differential processing, though the interpretation of cognitive demand (C42) is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The dissGCM model, which combines similarity and dissimilarity-based evidence, successfully fit the behavioral data. Model parameters showed that dissimilarity to the common category contributed more evidence (0.153) for rare choices than similarity to the rare category (0.088).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C44, and C132-C135 describe the dissGCM model and its fit to data. The model fit statistic (C135) is provided, and the relative evidence contributions (C44) support the dissimilarity-based account. However, no comparison to alternative models (e.g., standard GCM) is provided in these claims, limiting evaluation of model superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Multivoxel pattern analysis successfully discriminated between visual stimulus categories (objects, scenes, faces) during control trials, validating the MVPA approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate that the MVPA method can distinguish between stimulus categories with appropriate statistical tests. This validation is essential for interpreting the critical test phase MVPA results, though it represents a methodological control rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C78"
+    ],
+    "result": "When participants chose the rare category on ambiguous trials, their brain activation patterns were more similar to the common category features than rare category features. No such difference was observed for common responses. Bayesian analysis supported this dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C54, and C78 provide the primary MVPA finding supporting dissimilarity-based processing. The significant interaction (C47), post-hoc tests (C48-C49), and Bayesian analysis (C52-C53) provide converging evidence. The response-dependent pattern (C54) suggests distinct mechanisms, though alternative explanations are not fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C106"
+    ],
+    "result": "During learning, multivoxel patterns showed strongest activation for perfectly predictive features, followed by imperfectly predictive features, and weakest for non-present features, for both common and rare disease trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C106 demonstrate that MVPA patterns during learning reflect feature predictiveness with appropriate statistical tests. This finding is consistent with attention-based learning models and provides context for understanding test phase patterns, though it does not directly distinguish between similarity and dissimilarity accounts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C103",
+      "C104"
+    ],
+    "result": "Individual differences analysis revealed that participants who more strongly activated common category features during learning showed more base rate neglect at test (r=0.59). No such relationship was found for rare features, common faces, or rare faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 and C103-C104 provide evidence for individual differences consistent with dissimilarity-based theories. The significant correlation for common features (C59) and lack of correlation for other features (C60) is supported by appropriate statistical tests (C61-C63). However, the analysis is correlational and cannot establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C79"
+    ],
+    "result": "Model-based univariate fMRI analysis revealed that similarity-based evidence was positively associated with MTL, vmPFC, and primary motor cortex, and negatively associated with dlPFC, dorsomedial PFC, and posterior parietal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 and C79 describe the neural correlates of similarity-based evidence with appropriate cluster-corrected statistics (Table 2). The findings are consistent with prior literature (C65-C70), though the interpretations (C66, C71) are somewhat speculative. The analysis provides a baseline for comparison with dissimilarity-based evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C81",
+      "C118"
+    ],
+    "result": "Dissimilarity-based evidence was uniquely associated with left rostrolateral PFC activation. No regions showed negative correlations with dissimilarity-based evidence, and the dissimilarity and similarity maps showed distinct topographies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C72-C74, C81, and C118 demonstrate that dissimilarity-based evidence has a unique neural signature involving rlPFC. The lack of negative correlations (C73) and distinct topography (C74) support the interpretation that dissimilarity and similarity processes are not simply anticorrelated. However, the functional interpretation of rlPFC involvement (C81) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "All three model-based contrasts (positive similarity, negative similarity, positive dissimilarity) showed activation in ventral occipitotemporal cortex, regions known for visual object category representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe a common activation pattern across contrasts. The observation (C75) is supported by the data, and the interpretation (C76-C77) is consistent with known functional properties of these regions. However, the speculation about attention vs. retrieval (C77) cannot be resolved with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C116",
+      "C117"
+    ],
+    "result": "The findings suggest that dissimilarity-based processes can be viewed as extensions of similarity-based processing computationally, but may engage distinct neural mechanisms in rlPFC associated with higher-level symbolic processing and integration across abstract representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C86 and C116-C117 present interpretations of the findings. While the neural dissociation is supported by data, the mechanistic interpretations (C82, C85) are speculative. The reconciliation of computational simplicity (C80) with neural distinctiveness (C81) is proposed but not definitively demonstrated. Additional experiments would be needed to test these mechanistic hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The standard GCM could only predict rare choices on ambiguous trials by eliminating accurate base rate knowledge, whereas the dissGCM incorporates base rate knowledge into dissimilarity-based evidence, suggesting participants use base rates in an unanticipated way.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe an additional model comparison showing that the standard GCM fails to account for the IBRE pattern without removing base rate information. This supports the dissGCM's theoretical advantage, though the details of the standard GCM fit are not fully reported (e.g., fit statistics, parameter values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Model attention weights showed greater allocation to rare features, consistent with similarity-based theories, but this did not drive greater MVPA pattern similarity to rare features. The MVPA results likely reflect a combination of attention and memory retrieval processes, possibly mediated by working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C115 address an apparent discrepancy between model parameters and MVPA results. While the observation is valid (C109-C111), the interpretation (C112-C115) is speculative and relies on citations to prior work rather than direct evidence from the current study. The relationship between attention weights and MVPA patterns requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "The study discusses how learning order effects and blocked vs. interleaved learning may relate to the IBRE, noting that frequency manipulations create implicit blocking for common categories. However, the dissGCM is not equipped to account for learning dynamics or individual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C105 discuss theoretical context and limitations. The observations about learning order (C93, C97) and model limitations (C100) are valid, but the connections to the current findings are speculative. The discussion identifies important future directions (C105) but does not provide data to test these ideas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The introduction establishes the theoretical background for the IBRE, describing prior similarity-based and dissimilarity-based accounts, their neural correlates, and the rationale for testing the dissGCM with fMRI using visual category features with known neural topography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C33 provide background knowledge and theoretical context. These claims are well-supported by citations to prior literature and establish the motivation for the current study. The predictions (C30, C33) follow logically from the theoretical framework, though they represent hypotheses rather than findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "The methods describe a well-designed fMRI study with 22 participants (after exclusions), using a three-phase design (localizer, learning, test) with appropriate imaging parameters, preprocessing, and analysis approaches. Data and code are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C142 describe the methodological details. The sample size (C119-C120), experimental design (C122-C131), and analysis methods (C136-C140) are clearly specified. The public data availability (C142) supports reproducibility. However, some details are missing (e.g., power analysis, correction for multiple comparisons in some analyses).",
+    "result_type": "MINOR"
+  }
+]

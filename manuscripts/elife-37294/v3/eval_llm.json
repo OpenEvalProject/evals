@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The conservative treatment CNA cohort (n=107) from the TAPG1 study shows canonical prostate cancer CNAs (8q gain, losses on 6p, 8p, 13q, 16p) at lower frequencies than MSKCC and TCGA cohorts, with mean CNA burden of 5.7% (median 1.5%), similar to other prostate cohorts but lower than TCGA (8.7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C26 provide comprehensive cohort characterization with appropriate citations and quantitative CNA burden measurements. The genomic landscape is validated against established cohorts (MSKCC, TCGA) with consistent methodology (aCGH). Figure 1 supports the CNA frequency comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In the conservative treatment cohort, tumor CNA burden is significantly associated with prostate cancer-specific death (HR 1.49 per 5% CNA burden, p<0.0001), independent of Gleason score (HR 1.44, p<0.0001) and CAPRA score (HR 1.44, p<0.0001), improving concordance index from 0.756 to 0.805.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 present robust statistical analyses with appropriate Cox regression models, multivariable adjustments, and model performance metrics. The hazard ratios with confidence intervals and p-values support the prognostic significance. Figure 2a-b visualizes the associations. However, the cohort has higher Gleason scores than typical due to selection bias for DNA availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In TCGA prostate cancer, CNA burden is associated with biochemical recurrence (HR 1.27, p<0.0001), independent of Gleason score, mutation burden (HR 1.18, p=0.015), purity (HR 1.22, p=0.003), and ploidy (HR 1.32, p=0.002). CNA burden models (C-index 0.691) outperform ploidy models (C-index 0.606).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 demonstrate rigorous multivariable analyses controlling for multiple confounders including purity and ploidy. The comparison of C-indices provides quantitative evidence that CNA burden captures information beyond simple aneuploidy. Statistical methods are appropriate with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Across TCGA cohorts, tumor CNA burden is associated with disease-free survival in breast, endometrial, renal clear cell, thyroid, and colorectal cancers, independent of disease stage (except colorectal where independent of tumor stage). CNA burden also associates with overall survival in breast, endometrial, thyroid, and colorectal cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 extend findings across multiple cancer types with appropriate stage adjustments. Table 2 provides comprehensive statistical results. However, the analyses do not adjust for cancer-specific prognostic factors (e.g., ER status in breast, MSI status in colorectal), which the authors acknowledge as needed future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The MSK-IMPACT clinical sequencing assay, which profiles several hundred cancer genes and 1042 SNPs, has been used on >10,000 tumors. CNA burden from IMPACT correlates highly with whole exome sequencing (rho=0.88, p<0.0001, n=1005), indicating minimal impact from reduced resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 establish technical validation of the clinical assay with strong correlation (rho=0.88) between methods. The comparison uses adequate sample size (n=1005) and appropriate statistical testing. Figure 2\u2014figure supplement 3 supports the correlation. This validates clinical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In IMPACT prostate cohorts, CNA burden associates with overall survival in primary tumors (HR 1.17, p=0.007) and metastatic tumors (HR 1.07, p=0.020), independent of TP53, RB1, PTEN alterations in primary tumors and mutation burden in metastatic tumors (HR 1.08, p=0.011).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 demonstrate prognostic value in clinical sequencing cohorts with appropriate multivariable models. The independence from known driver alterations and mutation burden strengthens the findings. However, C54 notes that specific gene mutations don't reach significance when combined with CNA burden in metastatic tumors, suggesting potential collinearity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In pan-cancer IMPACT cohorts (6610 primary, 4864 metastatic tumors across 53 cancer types), CNA burden is prognostic for overall survival in primary (HR 1.04, p<0.0001) and metastatic tumors (HR 1.02, p=0.005), and cancer-specific death in metastatic tumors (HR 1.05, p=0.026). Purity adjustment maintains significance in primary tumors but results vary by cohort. TMB was not prognostic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C63 present large-scale pan-cancer analyses, but C60-C62 reveal inconsistent effects of purity adjustment across cohorts. Purity-adjusted CNA burden lost significance in prostate subsets (C62) despite remaining significant pan-cancer (C60), and only approached significance in metastatic tumors (C61, p=0.06). This inconsistency suggests complex interactions between purity, platform, and cancer type that are not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Meta-analysis stratified by the 10 most prevalent cancer types shows CNA burden associates with death in primary (HR 1.04, p<0.0001) and metastatic tumors (HR 1.02, p=0.005), but with significant heterogeneity (p=0.003 and p=0.024). Excluding outlier cancer types (colorectal/pancreatic in primary; pancreatic/prostate in metastatic) eliminates heterogeneity, revealing homogeneous associations in core cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 appropriately identify and address heterogeneity using meta-analysis. The exclusion analyses (C68, C70) demonstrate that a core set of cancers shows consistent associations. However, the inverse associations in pancreatic and colorectal cancers (C67, C69) are not mechanistically explained and warrant further investigation. The statistical approach is sound with appropriate heterogeneity testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CNA burden from biopsies associates with prostate cancer death in conservatively treated patients, independent of Gleason score and CAPRA score, potentially informing treatment decisions for intermediate-risk patients considering surveillance versus surgery, or high-risk patients needing multimodal therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 summarize validated findings from earlier analyses. However, C78-C79 are speculative about clinical applications without prospective validation or decision analysis. The potential clinical utility is plausible given the independent prognostic value, but requires validation studies before clinical implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Prior work shows CNAs (regardless of gene identity) associate with survival in pediatric AML, subclonal CNAs associate with survival in NSCLC, CNA signatures predict survival across prostate/breast/lung cancers, and CNA-derived signatures outperform mutation-based signatures in glioblastoma, breast, lung, and ovarian cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 appropriately cite related work to contextualize findings. These are literature citations that support the broader significance of CNA burden beyond the current study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "CNA burden retains prognostic significance after adjusting for known oncogenic alterations (PTEN, TP53, RB1) in primary prostate cancer. In metastatic tumors, combining CNA burden with TP53/RB1 loss renders both marginally non-significant, suggesting potential biological interplay. CNA burden is independent of ploidy, suggesting it doesn't simply reflect aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 demonstrate independence from known drivers and ploidy through appropriate multivariable models. C86-C87 appropriately note the marginal significance in metastatic tumors and speculate about biological mechanisms. The independence from ploidy (C88-C89) is well-supported by C-index comparisons (C38-C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "CNA burden may capture prognostic information about unidentified driver alterations and/or the rate of ongoing CNA generation that produces additional drivers and intratumoral heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 are speculative hypotheses about biological mechanisms without direct experimental evidence. While plausible given the data, these remain untested hypotheses requiring functional studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The prognostic significance of CNA burden can be affected by sample tumor purity, which is independently associated with survival. The effect of purity appears complex and may be influenced by analysis platform, cancer type, and outcome type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 accurately summarize the complex purity findings from multiple analyses (C36, C60-C62). The acknowledgment of complexity and platform/cancer-type dependence is appropriate given the inconsistent results across cohorts. This represents an important limitation requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "In 20 metastatic prostate cancer patients, summed CNA levels from whole genome sequencing of cfDNA correlated with overall survival, suggesting potential for liquid biopsy applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 cites prior work (Xia et al., 2015) suggesting feasibility of cfDNA-based CNA burden assessment. However, the small sample size (n=20) and lack of validation in the current study limit confidence in this application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Tumor CNA burden has prognostic significance independent of tumor mutation burden (TMB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by multivariable analyses in multiple cohorts (C35, C55, C63) showing CNA burden remains significant after adjusting for mutation burden, while TMB itself was not prognostic (C63). This demonstrates complementary prognostic information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CNAs are ubiquitous in cancer, alter more of the genome than other alterations, and specific CNAs/patterns associate with cancer characteristics. Most CNAs are large and harbor multiple drivers. CNA burden (percentage of genome altered) has been associated with prostate cancer recurrence/metastasis across cohorts, extending to low/intermediate risk disease, with potential for risk stratification in active surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide appropriate background context with citations to establish the significance of CNAs and prior work on CNA burden in prostate cancer. These are well-supported by the cited literature and establish the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "CNA burden of primary and metastatic tumors is a prognostic factor across multiple cancer types, measurable by clinical sequencing, potentially modulated by sample purity, with prognostic value varying by cancer type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 accurately summarize the main findings from the abstract. These are supported by the detailed analyses throughout the manuscript, though the purity modulation (C102) introduces some uncertainty as discussed in other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Tumor CNA burden could complement clinical analyses of actionable driver mutations using a single panel-based sequencing assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a reasonable inference given the demonstrated independence from mutation burden (C96) and feasibility with clinical sequencing (C49-C50). However, this remains a potential application requiring prospective validation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

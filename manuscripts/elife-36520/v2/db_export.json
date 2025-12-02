@@ -1,0 +1,2006 @@
+{
+  "submission": {
+    "id": "1cc3f6cd-ba0d-4da1-8b25-0e88f4e002a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:14:41.874339Z",
+    "updated_at": "2025-12-02T02:14:41.874339Z"
+  },
+  "content": [
+    {
+      "id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "submission_id": "1cc3f6cd-ba0d-4da1-8b25-0e88f4e002a4",
+      "content_type": "manuscript",
+      "content_text": "# In vivo detection of optically-evoked opioid peptide release\n\n## Authors\n\n- Ream Al-Hasani<sup>1</sup> ([ORCID: 0000-0002-8781-6234](https://orcid.org/0000-0002-8781-6234)) \u2020\n- Jenny-Marie T Wong<sup>4</sup>\n- Omar S Mabrouk<sup>4</sup>\n- Jordan G McCall<sup>1</sup> ([ORCID: 0000-0001-8295-0664](https://orcid.org/0000-0001-8295-0664))\n- Gavin P Schmitz<sup>1</sup>\n- Kirsten A Porter-Stransky<sup>7</sup>\n- Brandon J Aragona<sup>7</sup>\n- Robert T Kennedy<sup>4</sup> \u2020\n- Michael R Bruchas<sup>1</sup> ([ORCID: 0000-0003-4713-7816](https://orcid.org/0000-0003-4713-7816)) \u2020\n\n### Affiliations\n\n1. Department of Anesthesiology, Division of Basic Research Washington University School of Medicine St. Louis United States\n2. Department of Pharmaceutical and Administrative Sciences St. Louis College of Pharmacy St. Louis United States\n3. Center for Clinical Pharmacology Washington University School of Medicine and St. Louis College of Pharmacy St. Louis United States\n4. Department of Chemistry University of Michigan Ann Arbor United States\n5. Department of Pharmacology University of Michigan Ann Arbor United States\n6. Washington University Pain Center, Washington University School of Medicine St. Louis United States\n7. Department of Psychology University of Michigan Ann Arbor United States\n8. Department of Neuroscience Washington University School of Medicine St. Louis United States\n9. Department of Anesthesiology and Pain Medicine, Center for the Neurobiology of Addiction, Pain, and Emotion University of Washington Washington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThough the last decade has seen accelerated advances in techniques and technologies to perturb neuronal circuitry in the brain, we are still poorly equipped to adequately dissect endogenous peptide release in vivo. To this end we developed a system that combines in vivo optogenetics with microdialysis and a highly sensitive mass spectrometry-based assay to measure opioid peptide release in freely moving rodents.\n\n## Introduction\n\nNeuropeptides are the largest class of signaling molecules in the central nervous system where they act as neurotransmitters, neuromodulators, and hormones (Wotjak et al., 2008). In vivo neuropeptide detection is technically challenging as neuropeptides can be rapidly cleaved by peptidases and undergo posttranslational modifications. To further complicate detection, neuropeptides are found at orders of magnitude lower concentrations compared to classical neurotransmitters (i.e. glutamate, GABA, and the biogenic amines) and adsorb to a variety of surfaces during sample handling (Zhou et al., 2015; Maes et al., 2014).\n\nFor decades, neuropeptides have been assayed with immunoaffinity-based techniques due to their high sensitivity (Maidment et al., 1989; Maidment et al., 1991). However, selectivity remains a concern due to poor antibody specificity for full length vs. truncated peptides that contain identical binding epitopes. Nanoflow liquid chromatography-mass spectrometry (nLC-MS) is a powerful alternative for peptide detection because it provides high sensitivity and specificity without the need for an immunocapture step. To this end, nLC-MS has been used successfully to detect a number of endogenous peptides derived from intracranial sampling techniques such as microdialysis (Van Wanseele et al., 2016).\n\nOpioid peptides are prominent neuromodulators for regulating motivated behaviors. Though understanding their endogenous release properties is critical for dissecting the neural circuits that mediate these behaviors it has been extremely difficult to reliably achieve thus far. The reason primarily being that opioid peptides are very similar in structure and origin making selective detection of peptides and their subtype fragments virtually impossible. All opioid peptides, except nociceptin share a common N-terminal Tyr-GlyGly-Phe signature sequence, which interacts with opioid receptors. The preproenkephalin gene encodes several copies of the pentapeptide Met-enkephalin and one copy of Leu-enkephalin. The preprodynorphin gene also encodes multiple opioid peptides, including dynorphin A, dynorphin B, and neo-endorphin. The preprodynorphin-derived peptides all contain the Leu-enkephalin N-terminal sequence. To further complicate things the enkephalins preferentially bind to the \u03b4 over \u03bc opioid receptor whereas dynorphin preferentially binds to the \u03ba opioid receptor.\n\nDespite these complexities some studies have reliably detected opioid peptides in rat models (DiFeliceantonio et al., 2012; Mabrouk et al., 2011; Lam and Gianoulakis, 2011a; Lam and Gianoulakis, 2011b; Lam et al., 2008; Lam et al., 2010), however, it has not been previously possible to reliably detect evoked neuropeptide release in a cell-type selective manner using transgenic mouse models. However, with the advent of optogenetic approaches allowing researchers to spatially target and manipulate neuronal firing patterns the specific neuronal properties of neuropeptide release can now more likely be empirically determined.\n\nWe and others have recently shown that discrete targeting of the kappa opioid system in the nucleus accumbens (NAc) can modulate both rewarding and aversive behaviors (Al-Hasani et al., 2015; Castro and Berridge, 2014). We showed that photostimulation of dynorphin (dyn) cells in the ventral nucleus accumbens shell (vNAcSh) elicited robust aversive behavior, while photostimulation of dorsal NAcSh dyn (dNAcSh) cells induced a place preference that was positively reinforcing, however, no successful measurements of optogenetically-evoked neuropeptide release in vivo have been reported to date. Furthermore, few reports have extensively investigated regional distinctions within the NAc shell and no reports to our knowledge have successfully measured optogenetically-evoked neuropeptide release in vivo.\n\nTo quantify evoked-neuropeptide release in anatomically and behaviorally distinct regions, we pursued a method to reliably detect neuropeptides in the nucleus accumbens during photostimulation of opioid-containing neurons. We developed a custom optogenetic-microdialysis (opto-dialysis) probe that simultaneously provides photostimulation with the ability to sample local neurochemical release in awake, freely moving mice. We established a targeted nLC-MS method to analyze the opioid peptides dyn (fragment dynorphin A1-8) and enkephalins (leu- and met-), as well as dopamine, GABA and glutamate. We applied these techniques to precisely investigate regional differences between the vNAcSh and dNAcSh neuropeptide release dynamics. This system allows quantification of neuropeptide release while directly controlling cell-type selective neuronal firing in the NAcSh.\n\n## Results\n\nTo establish a quantitative assay, we used a custom synthesized isotopically labeled dyn (DYN*, YGGFLRRI with isotope 13C615N1-leucine) with a mass shift of\u00a0+7 and a\u00a0+3.5 m/z shift (+2 charge state) as an internal standard (IS) to account for variability during the LC injection, surface adsorption, and ionization efficiency. High concentration injections of DYN* were fully resolved by the mass spectrometer and did not result in cross talk with endogenous dyn (Figure 1a and b), demonstrating that the addition of labeled DYN* does not contribute to or interfere with the endogenous dyn signal, while maintaining a similar retention time. To further validate the use of DYN* as an internal standard when detecting opioid peptides we prepared a linear calibration curve with a mixture of dyn, Leu-Enkephalin (LE) and Met-Enkephalin (ME) standards spiked with DYN* and detected all four compounds within 5 min following loading and desalting the sample on the column. Four distinct peaks are shown in the reconstructed ion chromatographic trace, confirming the separation and reliable detection of all three opioid peptides with isotopically labeled DYN* in one sample (Figure 1c). The addition of the DYN* isotope to our assay further improves quantification by improving relative standard deviation for repeated injections of standards (Figure 1d\u2013f). Ratios of dyn, LE, and ME to a consistent DYN* were used for calibrations and analysis of standards for quantitative analysis for all experiments shown here. No effect of dialysate matrix for any targeted analyte was observed (Figure 1g\u2013j).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig1-v2.jpg)\n\n**Figure 1.:** (a) Chemical structures of Dynorphin A 1\u20138, Met-Enkephalin and Leu-Enkephalin (b) Isotopically labeled dynorphin as an internal standard for quantitative analysis.\u00a0High concentration injections of DYN* did not show significant traces of endogenous dyn (inset trace). A 500 pM sample of DYN* was injected while monitoring both the endogenous dyn (491 \u2192 435 m/z) and isotopically labeled DYN* (495 \u2192 438 m/z) mass-to-charge transitions. (c) Nano LC-MS chromatograms of 100 pM standards. Reconstructed ion chromatogram of ME, dyn, DYN*, and LE. (d) Addition of isotopically labeled DYN* results in better quantification of dyn A1-8, (e) Leu-Enkephalin and (f) Met-Enkephalin. (g\u2013j) No effect of ionization suppression from the matrix, as shown for DYN*, Dyn A1-8, Leu-Enkephalin and Met-Enkephalin, respectively. Bulk dialysate was collected and spiked with known amounts of standard. This resulted in a linear response that corresponded with the signal increase from the original sample analyte plus the additional analyte, showing no effect of ionization suppression from the matrix. Four replicates per sample; data shown as average\u00a0\u00b1\u00a0SD.\n\nFor in vivo detection in freely moving mice, we developed a customizable microdialysis probe (i.e. customizable length, depth and sampling area) with an integrated fiber optic to locally sample proximal to the site of photostimulation in the brain (Figure 2a, Figure 2\u2014figure supplemenrt 1a\u2013e). Traditional dialysis probes incorporate inlet and outlet tubing encased in a semi-permeable membrane enclosed with epoxy, and further encased in a stiff cannula for rigidity and robustness. To minimize the size of the opto-dialysis probe we did not include the final external casing and instead took advantage of the natural rigidity of the fiber optic to support the dialysis inlet-outlet assembly (Figure 2a, Figure 2\u2014figure supplemenrt 1a\u2013e). This resulted in a maximal probe diameter of 480 \u03bcm. To maximize concentrations of peptides entering the probe, we used a 60 kDa molecular weight cutoff, polyacrylonitrile membrane with a slight negative charge for optimal peptide recovery (AN69, Hospal, Bologna Italy) (Zhou et al., 2015; Maidment et al., 1989) and showed we can measure changes in peptide stock concentration within the 15 min fraction collection time (Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig2-v2.jpg)\n\n**Figure 2.:** (a) Images of the optodialysis probe. (b) Trace of an in vitro step change from 100 pM of DYN, LE, and ME stock solution to a solution of 1 nM Dyn and 400 pM LE and ME. The arrow indicates the first fraction in which the peptide was expected to change. Data were normalized to fraction 4, the fraction expected to reflect elevated concentration stock change. Data shown as average\u00a0\u00b1\u00a0SD, n\u00a0=\u00a04 probes.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Also see supplementary file 1.\n\nTo evoke and measure in vivo peptide release we injected AAV5-EF1\u03b1-DIO-ChR2-eYFP in to either the vNAcSh or the dNAcSh of preprodynorphin-IRES-cre (dyn-cre) mice and implanted the custom opto-dialysis probes 3 weeks later (Figure 3a). Following recovery artificial cerebrospinal fluid (aCSF) was perfused through the device at 0.8 \u03bcL/min and fractions were collected on ice every 15 min, generating 12 \u03bcL volumes, 2 \u03bcL of which were aliquoted and used for a small molecule detection assay. Three baseline fractions were collected prior to a fraction capturing 15 min of 10 Hz (10 ms pulse width) photostimulation, and six additional fractions were collected following photostimulation. As a positive control for detecting dynamic changes in vivo by nLC-MS and to establish sampled neuron responsivity to stimuli, we infused 100 mM K+ aCSF at the end of each collection experiment. The influx of K+ ions causes depolarization, resulting in vesicular exocytosis, which is expected to evoke a large increase in peptide concentration. Mice were included in the study if 100 mM K+ stimulation resulted in a positive increase in analytes at the end of the experiment (Figure 3\u2014figure supplement 2a\u2013c) and if correct anatomical probe placement and viral expression were confirmed (Figure 3\u2014figure supplement 3a and b). In the current study 81.1% (15/18) of the mice were included in the analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-v2.jpg)\n\n**Figure 3.:** (a) Timeline of experimental procedure outlining viral injection, probe implantation and dialysate collection.\u00a0(b) Extracellular opioid peptide release shown as % baseline in vNAcSh dyn1-8, (left panel, n\u00a0=\u00a08), dNAcSh dyn1-8 (right panel, n\u00a0=\u00a06). (c) vNAcSh Leu-Enkephalin (left panel, n\u00a0=\u00a04), dNAcSh Leu-Enkephalin (right panel, n\u00a0=\u00a06). (d) vNAcSh Met-Enkephalin (left panel, n\u00a0=\u00a07) and dNAcSh Met-Enkephalin (right panel, n\u00a0=\u00a07). (e) Small molecules simultaneously collected and shown as % baseline in vNAcSh Dopamine (left panel, n\u00a0=\u00a07), dNAcSh Dopamine (right panel, n\u00a0=\u00a07).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Reliable depolarisation following K\u00a0+\u00a0was detected for (a) vNAcSh dyn1-8, (left panel, n\u00a0=\u00a08), dNAcSh dyn1-8 (right panel, n\u00a0=\u00a06). (b) vNAcSh Leu-Enkephalin (left panel, n\u00a0=\u00a04), dNAcSh Leu-Enkephalin (right panel, n\u00a0=\u00a06). (c) vNAcSh Met-Enkephalin (left panel, n\u00a0=\u00a07) and dNAcSh Met-Enkephalin (right panel, n\u00a0=\u00a07). Data show as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (b) dNAcSh, closed green circles represent correct hits, open circles represent misses.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (b) vNAcSh Glutamate (left panel, n\u00a0=\u00a07) and dNAcSh Glutamate (right panel, n\u00a0=\u00a07).\n\nA significant increase in dyn was detected in dyn-cre positive mice during photostimulation in both the vNAcSh (interaction effect; t = 3.941, p<0.001) and dNAcSh (interaction effect; t = 3.012, p=0.003), compared to control mice (Figure 3b). Interestingly, in the vNAcSh there was also a sustained increase in dyn after photostimulation (interaction effect; t = 2.499, p=0.014) (Figure 3b). Dyn release during photostimulation was also significantly higher in the vNAcSh compared to the dNAcSh (interaction effect; t = 2.749, p=0.007) and post stimulation (interaction effect; t = 2.806, p=0.006) (Figure 3b). Photostimulation of vNAcSh dyn neurons was previously shown to cause aversive behavior, consistent with early pharmacological studies which linked dyn with negative emotional states (Al-Hasani et al., 2015; Bals-Kubik et al., 1993). Here, we demonstrate sufficiently discrete dynorphin detection to measure different levels of peptide in two regions of the NAc shell separated by 1 mm.\n\nWe simultaneously detected robust release of LE and ME in both the vNAcSh and dNAcSh. During photostimulation of dyn-containing cells in the dNAcSh, LE levels were significantly elevated compared to controls (interaction effect; t\u00a0=\u00a05.384, p<0.0001) (Figure 3c). In contrast, no changes in LE were detected during photostimulation of dyn-containing cells in the vNAcSh (Figure 3c). Converse to this, we observed a significant increase in ME during photostimulation of dyn-containing cells in the vNAcSh (comparing cre\u00a0+\u00a0and cre-, interaction effect; t\u00a0=\u00a02.824, p=0.006). However, the same effect was not significant in the dNAcSh (comparing cre\u00a0+\u00a0and cre-, t\u00a0=\u00a01.78, p=0.053) (Figure 3d). Importantly, we observed a significant change in ME in the dNAcSh when compared to its baseline (t\u00a0=\u00a01.94, p=0.033), and there was no significant difference between the effect of photostimulation in ventral and dorsal (i.e. both are increased). However, the lack of a significance between Cre\u00a0+\u00a0and Cre- in dNAcSh is likely due, at least in part, to the fact the baseline levels of opioid peptides in dNAcSh are higher than the vNAcSh (7.114 pM versus 2.71 pM, respectively). Though data are represented as % of baseline the range of absolute dialysate concentration detected for dyn was 0.28\u20130.44 pM in dNAcSh and 0.13\u20130.28 pM in vNAcSh; LE 1.39\u20133.28 pM in dNAcSh and 1.30\u20132.24 pM in vNAcSh; ME 6.19\u20138.69 pM in dNAcSh and 2.57\u20134.11 pM.\n\nTo determine if peptide release corresponded with small molecule neurotransmitter release, we applied a benzoyl chloride (BzCl) derivatization LC-MS method to monitor three small molecules, dopamine, GABA and glutamate in dialysis samples (Song et al., 2012; Wong et al., 2016). Interestingly, dopamine increased in the dNAcSh during photostimulation (interaction effect; t\u00a0=\u00a05.007, p<0.0001), which persisted following stimulation (interaction effect; t\u00a0=\u00a02.081, p=0.039) (Figure 3e). Levels of GABA also increased in the vNAcSh following photostimulation (t\u00a0=\u00a02.363, p=0.020) and had a prolonged response (t\u00a0=\u00a04.744, p<0.0001) (Figure 3\u2014figure supplement 3a). There were no significant changes in glutamate levels during photostimulation in either vNAcSh or dNAcSh (Figure 3\u2014figure supplement 3b).\n\n## Discussion\n\nThe data show that photostimulation of dyn-containing cells in the vNAcSh and dNAcSh results in a detectable increase in dyn release, which is greater in the vNAcSh. This result correlates with previous behavioral data demonstrating that dyn release likely drives a region dependent preference and aversion behavior (Al-Hasani et al., 2015). We observed a significant increase in LE and dopamine during photostimulation in the dNAcSh. Importantly, we previously observed a preference behavior when photostimulating dyn cells in the dNAcSh and these data suggest that the preference may be related, at least in part, to the detected increases in dopamine and LE. Furthermore, many studies have shown that levels of both dopamine and LE increase during preference or reward (Olds, 1982; Spanagel et al., 1990; Bruijnzeel, 2009). Importantly, using this method it is not possible to know whether LE is derived from pDyn or pENK but in future experiments we can combine this with conditional knockout approaches to selectively delete the peptides in specific cell types, so that we can later determine what happens to these signals in the absence of expression of particular peptides in D1 vs D2 cells and subregions. In addition, we cannot preclude interactions between MSN cell types, specifically that optogenetic activation of D1 cells could impart changes on D2 cell activity thereby releasing Met-Enk, indirectly, and/or via indirect circuits outside the NAc. In addition, dopamine release via D1 MSN stimulation, could be via two mechanisms 1) via indirect suppression of D1 projections back to VTA GABA neurons (Edwards et al., 2017), which acts via GABA-B to disinhibit VTA DA neurons. This would then result in dopamine release in the NAc following D1 stimulation. Furthermore, an alternative, presynaptic regulation of DA release from VTA to NAc projections is also plausible, and recently been investigated by multiple groups (Lemos et al., 2016; Dobbs et al., 2016).\n\nThe observed changes in GABA in both vNAcSh and dNAcSh are as predicted due to the fact that dyn-containing medium spiny neurons are GABAergic. The observed increase in ME is intriguing, as ME is not released from the same cells as dynorphin. There has been some evidence to suggest that enkephalins play a role in regulating disruptions in homeostasis following chronic exposure to drugs of abuse (Kreek and Koob, 1998; Shoblock and Maidment, 2007). Specifically, increases in enkephalin release during drug withdrawal has been shown through peptide tissue content, mRNA levels and microdialysis of extracellular enkephalins in a number of brain regions including the nucleus accumbens (Nylander et al., 1995). Concurrently, studies have measured increases in dynorphin expression during withdrawal (Isola et al., 2008; McCarthy et al., 2010; Przew\u0142ocka et al., 1997; Rylkova et al., 2009; Lindholm et al., 2000). It seems possible therefore that when we are stimulating the release of dynorphin (perhaps mimicking some aspects of withdrawal), levels of met-enkephalin increase in response to this, as a homeostatic mechanism to relieve this withdrawal-like state. This release profile is unique to the vNAcSh suggesting that this region is critical in the regulation of hedonic homeostasis. Though we have previously shown that dyn mRNA expression is similar in the vNAcSh and dNAcSh (Al-Hasani et al., 2015), it would be ideal to also verify the expression pattern and distribution of the enkephalins in the vNAcSh and dNAcSh. Finally, it should be noted that this detection technique maintains the poor temporal resolution of peptide and other microdialysis approaches. Therefore, conclusions regarding the differential transmitter and peptide release profiles should be tempered by the long time course of collection.\n\nThe ability to detect multiple peptides and small molecules in vivo with high sensitivity, as shown here demonstrates the potential of this method. It is, however, important to acknowledge limitations and future considerations with this methodology. Due to the structural similarity between ME/LE and dyn, we included DYN* as our only internal standard. An ideal assay would include isotopically labeled internal standards for each analyte of interest, however, the addition of analytes to detect in the ion trap reduces points per peak and complicates the chromatogram.\n\nIn this current method the 3 peaks of interest, LE/ME/dyn, all appear in the chromatogram in close proximity between 4\u20135.5 min, which may not seem ideal. A way to resolve this would be to flatten out the solvent gradient to better resolve the peaks chromatographically, however the length of the run would be longer, therefore reducing overall throughput. Here it takes 18 min from injection-to-injection and it is important to note that the peaks, while not fully resolved in time, were fully resolved by mass-to-charge ratio, so the separation was sufficient in this case. It is important to consider this delicate balance going forward to detect more peptides in an extended experimental paradigm and for concurrent detection of other peptides within individual samples.\n\nHere, we only detected dyn1-8, LE and ME, but as mentioned in the introduction there are many more fragments that could be involved or altered that we have not measured. We primarily focused on dyn1-8 as this was the fragment that was the most reliable to detect in developing this methodology. Since we were at the early stages of method development it was crucial to limit variability where possible. The limitations to in vivo detection of neuropetides by microdialysis with LC-MS has been thoroughly explored and are largely due to absorption and lack of adequate recovery (Zhou et al., 2015). In this current method, organic modifiers are not added to the perfusate for dialysis or to the sample in the vial, as we validated that there was no peptide carryover/stickiness in the LC-MS lines without such agents. However, it has been shown that the addition of an organic modifier, like acetonitrile, to a sample could be optimized for each peptide fragment and improve quantitation by reducing stickiness to the vial and LC-MS fluidic pathway (Zhou et al., 2015). This approach, however, appears to be dependent on each individual peptide.\n\nThis new approach, we describe here allows for detection of cell-type-specific evoked in vivo neuropeptide release within neural circuits to be observed during freely moving behavior. Neuropeptide biology remains a challenging territory in neuroscience. Methods to detect in vivo release of endogenous peptides are limited, preventing the full understanding of their properties and dynamics. The method described here is a first step in closing this gap in our understanding of neuropeptide-containing circuits during behavior.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Neurotrace</td>\n      <td>Invitrogen</td>\n      <td>RRID:SCR_008410</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Dynorphin A 1\u20138 (dyn)</td>\n      <td>Bachem 4005845</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Leu-Enkephalin (LE)</td>\n      <td>Bachem 4006097</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Met-Enkephalin (ME)</td>\n      <td>Sigma M6638</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Vectashield</td>\n      <td>Vector Labs</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Thermo Xcalibur QuanBrowser</td>\n      <td>ThermoFisher</td>\n      <td>RRID:SCR_008452</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>pAAV-EF1\u03b1-double floxed- hChR2(H134R)-eYFP-WPRE- HGHpA</td>\n      <td>Addgene</td>\n      <td>RRID:SCR_002037</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Agilent 1100 HPLC pump</td>\n      <td>Agilent Technologies</td>\n      <td>RRID:SCR_013575</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>linear ion trap</td>\n      <td>LTQ XL, Thermo Scientific</td>\n      <td>RRID:SCR_014992</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Accela UHPLC system/TSQ Quantum Ultra triple quadrupole mass spectrometer</td>\n      <td>ThermoFisher</td>\n      <td>RRID:SCR_008452</td>\n    </tr>\n  </tbody>\n</table>\n\n### Viral preparation\n\nPlasmids encoding pAAV-EF1\u03b1-DIO-eYFP [final titer 5\u00a0\u00d7\u00a01012 vg/ml], pAAV-EF1\u03b1-double floxed-hChR2(H134R)-eYFP-WPRE-HGHpA [final titer 2\u00a0\u00d7\u00a01013 vg/ml], were obtained from Addgene (AddgeneRRID:SCR_002037) originally from the Deisseroth Laboratory at Stanford University. The DNA was amplified with a Maxiprep kit (Promega) and packaged into AAV5 serotyped viruses by the WUSTL Hope Center Viral Core.\n\n### Animals and surgical procedure\n\nAdult male C57BL/6 mice (Envigo, 5\u20136 weeks of age) were used for initial experiments to determine perfusion media conditions and effects of probe design. For optogenetic studies, adult male preprodynorphin-IRES-cre (dyn-Cre) (RRID:IMSR_JAX:027958) mice were used. Mice were unilaterally injected with 300 nL of AAV5-EF1\u03b1-DIO-ChR2-eYFP with cre recombinase targeting to the Pdyn locus (Washington University in St. Louis, Hope Center Viral Vector Core, viral titer 2\u00a0\u00d7\u00a01013 vg/mL) into either the dNAcSh or vNAcSh and were allowed to recover from surgery at Washington University in St. Louis 1 week prior to shipment. Mice were then shipped to, and acclimated for 2\u20133 weeks at, the University of Michigan before probe implantation.\n\n### Chemicals\n\nDynorphin A1-8 (abbreviated dyn) and Leu-Enkephalin (LE) were purchased from Bachem (4005845 and 4006097, Torrance, CA); Met-Enkephalin (ME) was purchased from Sigma Aldrich (M6638, St. Louis, MO). Isotopically labeled leucine (13C615N1-leucine) was used to create an isotopically labeled dynorphin A 1-8internal standard (DYN*) through the University of Michigan\u2019s protein synthesis core. Water, methanol, and acetonitrile for mobile phases are Burdick and Jackson HPLC grade purchased from VWR (Radnor, PA). All other chemicals were purchased from Sigma Aldrich (St. Louis, MO) unless otherwise noted. Artificial cerebrospinal fluid (aCSF) consisted of 145 mM NaCl, 2.67 mM KCl, 1.4 mM CaCl2, 1.01 mM MgSO4, 1.55 mM Na2HPO4, and 0.45 mM Na2H2PO4 adjusted to pH 7.4 with NaOH. Ringer solution consisted of 148 mM NaCl, 2.7 mM KCl, 2.4 mM CaCl2, and 0.85 mM MgCl2 adjusted pH to 7.4 with NaOH. In experiments that used high K+ ringer solution NaCl was adjusted to 48 mM and KCl was adjusted to 100 mM, all other chemicals remained the same.\n\n### Fabrication of opto-dialysis probe\n\nFabrication of the optogenetic fiber optic probe was made as previously described (Al-Hasani et al., 2015; McCall et al., 2015; Sparta et al., 2011). Fabrication of the microdialysis probe and opto-dialysis probe are described in the supplemental information.\n\n### In vivo microdialysis\n\nMice were group housed in temperature and humidity-controlled rooms with 12-hr light/dark cycles with access to food and water ad libitum. Both the Washington University in St. Louis and University of Michigan Unit for Laboratory Animal Medicine approved animal procedures, and they were in accordance with the National Institute of Health Guidelines for the Care and Use of Laboratory Animals. All experiments were conducted within the guidelines of Animal Research Reporting in vivo Experiments. Surgical procedures for inserting probes were similar to those previously described (Mabrouk et al., 2011; Al-Hasani et al., 2015; McCall et al., 2015; Patterson et al., 2015). Briefly, mice were anesthetized in an induction chamber with 5% isoflurane prior to surgical procedures and placed in a Model 963 stereotaxic frame (David Kopf Instruments, Tujunga, CA, USA) equipped with a mouse ear and bite bar. Mice were maintained under anesthesia with 1\u20132% isoflurane during cannulation procedures. A custom-made 1 mm polyacrylonitrile membrane (Hospal AN69) concentric probe, was inserted into either the dNAcSh (stereotaxic coordinates from bregma:+1.3 anterior-posterior [AP],\u00b10.5 medial-lateral [ML], \u22124.5 mm dorsal-ventral [DV]) or vNAcSh (stereotaxic coordinates from bregma:+1.3 [AP],\u00b10.5 [ML], \u22125.0 mm [DV]). Light power from a 473 nm laser was measured at the membrane to ensure satisfactory light power (defined as\u00a0\u22655 mW at a distance of 1 mm from the end of fiber optic) before implantation of microdialysis probes integrated with fiber optic (opto-dialysis probe). Implanted probes were secured using two bone screws and dental cement. Mice were allowed to recover 24 hr with free access to food and water prior to baseline collection for microdialysis studies.\n\nFor microdialysis studies, the fiber optic was connected to the laser via a tether running through a Ratturn (Bioanalytical Systems, Inc.) along with microdialysis perfusion lines. Microdialysis probes were flushed for 1 hr using a Fusion 400 syringe pump (Chemyx, Stafford, TX USA) at a flow rate of 2 \u03bcL/min. The flow rate was lowered to 0.8 \u03bcL/min and flushed for an additional 1 hr prior to fraction collection. Microdialysis fractions were collected every 15 min, resulting in a 12 \u03bcL sample. 2 \u03bcL of sample was removed for BzCl derivatization (Lam et al., 2010) to monitor small molecules, and the remaining 10 \u03bcL was spiked with 1.1 \u03bcL of 100 pM isotopically labeled DYN* (10 pM final concentration) and was used for peptide analysis.\n\nWhen experiments were completed, mice were euthanized and perfused with paraformaldehyde. Brains were extracted to confirm probe placement and virus expression by histology. Mice with verified virus expression and correct probe placement were included in the data set.\n\n### Optogenetic stimulation\n\nOn the day of the experiment, mice were connected to a laser via a tether alongside the microdialysis perfusion lines. An Arduino UNO was programmed and connected to the 473 nm laser to provide stimulation frequency of 10 Hz, 10 ms pulse width. The laser was manually operated and turned on and off during a single 15 min fraction after three baseline collections. Six additional fractions were collected after the photostimulation, followed by two fractions with high 100 mM K+ ringer solution for a total of 12 fractions.\n\n### Peptide assays with nanoflow LC-MS\n\nAn assay was developed to monitor opioid peptides (dyn, LE, and ME) using nanoflow LC-MS. Capillary columns and electrospray ionization emitter tips were prepared in-house (Mabrouk et al., 2011; Patterson et al., 2015). Capillary columns were prepared using a 10 cm length of 50/360 \u03bcm (inner diameter/outer diameter) fused silica capillary packed with 5 \u03bcm AltimaTM C18 particles to a bed length of 3.5 cm. The column was connected to a fused silica ESI emitter tip using a Teflon connector.\n\n5 \u03bcL samples were injected onto the capillary column. An Agilent 1100 HPLC pump (Agilent Technologies, RRID:SCR_013575, Santa Clara, CA) was used to deliver the elution gradient containing water with 0.1% FA for mobile phase A and mobile phase B was MeOH with 0.1% FA delivered as initial 0% B; 1 min, 30 %B; 4 min, 50% B; 4.1 min 100% B; 7 min, 100% B; 7.1 min, 0%B; and 10 min, 0% B. The capillary column was interfaced to a linear ion trap (LTQ XL, Thermo Scientific, RRID:SCR_014992), operating in positive mode. The MS (Zhou et al., 2015) pathway for opioid peptides dyn, LE, and ME were detected using m/z values of 491 \u2192 435, 556 \u2192 397, and 574 \u2192 397 respectively. Isotopically labeled DYN* (+7 mass shift, isotopically labeled 13C615N1-leucine) internal standard was detected using m/z values of 495 \u2192 438. In vitro recovery of a 1 mm probe for dyn, LE, and ME were 12 \u00b1 2%, 13 \u00b1 3%, and 13 \u00b1 2%.\n\nFresh dyn, LE, and ME standards, spiked with DYN* for the opioid assay were prepared daily. Standards were analyzed with nLC-MS at 0.01, 0.05, 0.1, 1, 10, 20, 50, and 100 pM concentrations in triplicate to determine linearity, reproducibility, and limits of detection. Opioid analytes were normalized to DYN*. Limits of detection for dyn, LE, and ME were 0.2\u00a0\u00b1\u00a00.04, 0.5\u00a0\u00b1\u00a00.3, and 0.6\u00a0\u00b1\u00a00.4 pM, respectively, in 5 \u03bcL and were determined each day of experimentation. Average carry over across all experiments for dyn, LE, and ME were 0.8 \u00b1 0.03%, 0.3 \u00b1 0.3%, and 0.3 \u00b1 0.2% determined by running the highest calibration point immediately followed by a blank and integrating the peak area across the same time. Mice that had average basal levels above the limits of detection and had appropriate probe placement and virus expression were used for the study.\n\n### Small molecule analysis using benzoyl chloride (BzCl) LC-MS\n\nFor small molecule analysis, dialysate samples were derivatized with BzCl and analyzed by LC-MS (Song et al., 2012; Wong et al., 2016). This BzCl assay targeted dopamine, GABA and glutamate. 2 \u00b5L dialysate were aliquoted from the peptide samples and were derivatized with 1.5 \u00b5L sodium carbonate, 100 mM; 1.5 \u00b5L BzCl, 2% (v/v) BzCl in acetonitrile; 1.5 \u00b5L isotopically labeled internal standard mixture diluted in 50% (v/v) acetonitrile containing 1% (v/v) sulfuric acid and spiked with deuterated ACh and Ch (C/D/N isotopes, Pointe-Claire, Canada). Derivatized samples were analyzed using Thermo Fisher Accela UHPLC system interfaced to a Thermo Fisher TSQ Quantum Ultra triple quadrupole mass spectrometer (Thermo Fisher Scientific RRID:SCR_008452) fitted with a HESI II ESI probe, operating in multiple reaction monitoring. 5 \u00b5L samples were injected onto a Phenomenex core-shell biphenyl Kinetex HPLC column (2.1 mm x 100 mm). Mobile phase A was 10 mM ammonium formate with 0.15% formic acid, and mobile phase B was acetonitrile. The mobile phase was delivered an elution gradient at 450 \u00b5L/min as follows: initial, 0% B; 0.01 min, 19% B; 1 min, 26% B; 1.5 min, 75% B; 2.5 min, 100% B; 3 min, 100% B; 3.1 min, 5% B; and 3.5 min, 5% B. Thermo Xcalibur QuanBrowser (Thermo Fisher Scientific RRID:SCR_008452) was used to automatically process and integrate peaks. Each peak was visually inspected to ensure proper integration.\n\n### Assessment of probe placement\n\nMice were anesthetized with pentobarbital and transcardially perfused with ice-cold 4% paraformaldehyde in phosphate buffer (PB). Brains were dissected, post-fixed for 24 hr at 4\u00b0C and cryoprotected with solution of 30% sucrose in 0.1M PB at 4\u00b0C for at least 24 hr, cut into 30 \u00b5m sections and processed for Nissl body staining. Sections were washed three times in PBS and blocked in PBS containing 0.5% Triton X-100 (G-Biosciences) for 1 hr. This was followed by a 1 hr incubation with fluorescent Nissl stain to allow visualization of cell bodies (1:400, Neurotrace, Invitrogen RRID:SCR_008410). Sections were then washed three times in PBS, followed by three 10 min rinses in PB and mounted on glass slides with Hard set Vectashield (Vector Labs) for episcope microscopy. Correct regional expression of the AAV5-DIO-ChR2-eYFP was verified in addition to placement of the opto-dialysis probe in either the vNAcSh or dNAcSh, which are represented on hit maps.\n\n### Statistical analyses\n\nThe University of Michigan Center for Statistical Consultation and Research helped design a linear mixed model analysis appropriate for this study using SPSS Statistics software (SPSS, RRID:SCR_002865). The linear mixed model analysis was chosen to account for variations within and between mice and to account for missing data points within individual animals following sample loss or mechanical failure of the instrument. The linear mixed model was used to determine differences in basal conditions, effect of photostimulation relative to basal conditions, and prolonged effects after photostimulation relative to basal conditions. Linear mixed models were used to compare between genotypes within each region sampled, and between regions within genotypes. In vitro data were represented as mean\u00a0\u00b1\u00a0SD and the in vivo was represented as mean\u00a0\u00b1\u00a0SEM. In all cases significance was defined as p\u22640.05.\n",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "652ef5f4-4f97-4644-b5b5-552acae38a36",
+      "submission_id": "1cc3f6cd-ba0d-4da1-8b25-0e88f4e002a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Julie A Kauer, Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36520.013](https://doi.org/10.7554/eLife.36520.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"in vivo detection of optically-evoked opioid peptide release\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Julie A Kauer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Christopher Evans (Reviewer #2); Richard E Mains (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Given the nature of this contribution, we feel it would best be considered as a Tools and Resources paper where the novelty and potential application of the technique is given paramount consideration. The Short Report format that you adopted for your submission suits this purpose well so the difference will be in title only with little distinction in the manner in which your paper would be posted.\n\nSummary:\n\nThis paper develops a new technique for opioid peptide detection in brain in vivo. The microdialysis probe used to collect samples is directly attached to a fiber optic to allow optogenetic activation of specific cell types. The authors demonstrate that by driving dynorphin-containing neurons, they can detect different levels of dynorphin and other neurotransmitters in distinct parts of the nucleus accumbens.\n\nEssential revisions:\n\nThe reviewers thought that the paper makes a significant contribution to the field, but would like elaboration on several points. The paper presents a novel methodological approach, but more scientific discussion would enhance the presentation.\n\nSpecific points for revision:\n\n1) Some thoughtful explanations are needed and some caveats re statements about some of the findings (e.g. about Figure 3D):\n\nFor example looking at the data for Met-Enk release (Figure 3D) given the variability and approximately equivalent mean, it is difficult to make the statement \u2013 \"detectable increases in ME were observed during photostimulation of dyn-containing cells in the vNAcSh (interaction effect; t =2.824, p=0.006) and not the dNAcSh)\". Some additional analysis should be conducted to assess if there is differences between the regions in this measure.\n\nI don't understand the base line change in Figure 3C vNAcSh in fraction 4 (optical stimulation fraction) \u2013 this would change the conclusions of Leu-Enk-stimulated release in this area. Whether the Leu-Enk measured is derived from pEnk or pDyn is an important question (given opioid receptor selectivity and a \u03b4-Mu agonist released from pDyn cells).\n\n2) The data showing changes in Leu-Enk (and trend for/significant Met-Enk release) following optogenetic of Dyn-containing cells in dorsal and ventral NAc shell could implicate that the Leu Enk is derived from pDyn. However, there are several alternative explanations, including that the Leu-Enk derived from p-Dyn may be swamped by pEnk derived Leu-Enk. Inferences could be made using the pEnk KO mice \u2013 perhaps future experiments.\n\n3) It is difficult to easily understand the release of Met-Enk with optical stimulation of PDyn in the NAc. The MSN pDyn D1 neurons project to the VTA so I am thinking collaterals but the neurotransmitter is GABA (and pDyn of course) which should be inhibitory on Met-Enk containing D2 neurons. How there is stimulated DA release is also a bit of a puzzle since the collaterals are GABAergic. Miss-expression of the virus in cholinergic interneurons could explain some of the results \u2013 hence the request for specificity of ChR expression. The study does assume that expression of ChR2 is discrete and only in pDyn-expressing neurons and some concrete evidence of expression would be important for this paper.\n\n4) Absolute level ranges in the dialysate should be calculable given the internal standard \u2013 ranges are important to be reported given this is predominantly a methodological paper.\n\n5) An important improvement would be to spread out the liquid chromatography step (Figure 1C) to make resolution and subsequent quantification better \u2013 one simply needs to flatten out the solvent gradient a touch to get better. The authors do not need to do this in their figure, but they should discuss/incorporate this technical point as a suggestion future users should consider.\n\nReviewer #1:\n\nThis is primarily a methods paper, but the apposition of microdialysis and optogenetic drive is an elegant addition to the tools available, and the authors do a nice job of presenting a little scientific data along with their methodological advance.\n\nThere is no discussion of how or why dopamine is being released upon dyn-cre optogenetic stimulation. This is an important result for interpretation of numerous results in the field and for interpretation of dyn-cre data going forward. Since presumably dyn-cre cells in accumbens release dynorphin and GABA, how do the authors think this works? Through projections to the VTA? These results affect past work using these mice beyond al-Hasani et al 2015, and this would be worth some discussion.\n\nReviewer #2:\n\nThe authors describe the development of a probe combining optogenetic stimulation and microdialysis for nLC-MS detection of endogenous peptide release in vivo. The regulation of neuropeptide release is an important and very difficult area of research. All elements of the technology proposed have been widely applied previously (dialysis for peptides, nLC-MS for peptide dialysate detection and optogenetics for region-specific stimulated release of neuropeptides). However, the combinational probe and its utility for the prodynorphin system (a notoriously difficult system to assess by dialysis because of dynorphins being \"sticky\" peptides) and in the mouse that has a very small brain, provide innovative aspects. The authors use this methodology in transgenic mice to photostimulate dynorphin cells in the ventral NAcSh to elicit robust aversive behavior and in the dorsal NAcSh to induce place preference with different peptide dialysate profiles attributed.\n\n1) A sentence or two should be added regarding the opioid system and selectivity of Dyn 1-8 and Met/Leu enkephalin for different opioid receptors and which precursors these peptides can be derived (pEnk or pDyn). Also, there are many other different kappa-selective products from pDyn such as \u03b1 and \u03b2 neoendorphin, Dyn 1-17 and Dyn B and some discussion as to why they were not measured in this study is warranted.\n\n2) Whether the Leu-Enk measured is derived from pEnk or pDyn is an important question (given opioid receptor selectivity and a \u03b4-Mu agonist released from pDyn cells). The data showing changes in Leu-Enk (and trend for/significant Met-Enk release) following optogenetic of Dyn-containing cells in dorsal and ventral NAc shell could implicate that the Leu Enk is derived from pDyn. However, there are several alternative explanations, including that the Leu-Enk derived from p-Dyn may be swamped by pEnk derived Leu-Enk. Inferences could be made using the pEnk KO mice \u2013 perhaps future experiments.\n\n3) The inclusion of a peptide isomer standard is important. One problem is sticking of standard peptides to apparatus for analysis (tubing, columns etc.) so the fact that the analysis apparatus is peptide-unseen is important since wash-off with dialysate can give false positive readings. It was not quite clear when the isotopically labeled Dyn 1-8 was introduced to the sample (before or after the dialysis) and an experimental timeline could be added to help understand the protocol. Was the dialysis probe and MS analysis apparatus always na\u00efve to standard peptides?\n\n3) A little puzzling is why there is trending increased K-evoked release of peptide reserves (Figure 3\u2014figure supplement 1Figure 2) in the Cre vs. non Cre animals since depletion might be anticipated after optical stimulation.\n\n4) In Figure 2 the scale of 5mm does not look correct given a 1mm dialysis membrane and Figure 2A could be better resolution.\n\nReviewer #3:\n\nThis brief manuscript describes the development of an approach to couple microdialysis and high-sensitivity mass spec assays with optogenetic (blue light) stimulation of depolarization in cells expressing the Dynorphin family of peptides. Results then look at peptide release and also secretion of several conventional neurotransmitters. The paper is concise and for the most part well explained, with the exceptions below.\n\nThe use of an internal isotopically-labeled standard (DYN*) is a really good idea, modeled after similar approaches in other fields. The comment (Discussion, second paragraph) that more internal standards would be ideal but too costly is not really appropriate, for this reviewer, since the punchline of Figure 1 is that the method is reproducible and capable of reliable measurements. All the standard synthetic peptides have a Tyr residue, hence a good A280, so concentrations are easy to determine. Having more isotopically labeled standards would simply clutter up the chromatograms.\n\nThe AAV-DIO-ChR2-eYFP (also called AAV5.\u2026) needs to be described and presumably accompanied by a literature citation. This construct presumably has a floxed STOP codon in front of the ChR2, which is either a fusion protein with eYFP or uses an IRES. The readers and reviewers should not be left guessing and presuming.\n\nThe infusion of 100 mM K+ (Results, third paragraph) similarly needs more explanation and description. Is this isotonic? Buffered? What other ingredients, since 100 mM is quite hypotonic?\n\nThe experimental description (Results, third paragraph) states that mice were included in the data if K+ stimulated secretion and if correct anatomical probe placement occurred and if viral expression were confirmed = 3 ways to fail. The text should give some indication of the failure rate for each \u2013 are we looking at 10% of mice passing all three tests or 75% or what?\n",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88a2872b-3ea6-418c-b1f6-50eb45f82ac2",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C1",
+      "claim": "A system was developed that combines in vivo optogenetics with microdialysis and mass spectrometry-based assay to measure opioid peptide release in freely moving rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end we developed a system that combines in vivo optogenetics with microdialysis and a highly sensitive mass spectrometry-based assay to measure opioid peptide release in freely moving rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the development of this combined system and its application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "4436d889-4d44-4bb0-ad3b-cf22f9a9f30b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C2",
+      "claim": "Neuropeptides are the largest class of signaling molecules in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides are the largest class of signaling molecules in the central nervous system where they act as neurotransmitters, neuromodulators, and hormones (Wotjak et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wotjak et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c5e7d6be-ae0c-4721-9c59-dc95c17cdc2b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C3",
+      "claim": "Neuropeptides act as neurotransmitters, neuromodulators, and hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides are the largest class of signaling molecules in the central nervous system where they act as neurotransmitters, neuromodulators, and hormones (Wotjak et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional description is supported by citation to Wotjak et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "2e92979f-98b7-4634-9655-52b3415df5a3",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C4",
+      "claim": "Neuropeptides can be rapidly cleaved by peptidases.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo neuropeptide detection is technically challenging as neuropeptides can be rapidly cleaved by peptidases and undergo posttranslational modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of neuropeptides that makes detection challenging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "351f110d-b253-4953-980e-77d48405db3f",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C5",
+      "claim": "Neuropeptides undergo posttranslational modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo neuropeptide detection is technically challenging as neuropeptides can be rapidly cleaved by peptidases and undergo posttranslational modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of neuropeptides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c051771d-1519-4657-81b8-906e4e58fe39",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C6",
+      "claim": "Neuropeptides are found at orders of magnitude lower concentrations compared to classical neurotransmitters.",
+      "claim_type": "EXPLICIT",
+      "source": "To further complicate detection, neuropeptides are found at orders of magnitude lower concentrations compared to classical neurotransmitters (i.e. glutamate, GABA, and the biogenic amines) and adsorb to a variety of surfaces during sample handling (Zhou et al., 2015; Maes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Zhou et al., 2015 and Maes et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c68ca37b-db73-4106-9151-5e0fc3f5a9e2",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C7",
+      "claim": "Neuropeptides adsorb to a variety of surfaces during sample handling.",
+      "claim_type": "EXPLICIT",
+      "source": "To further complicate detection, neuropeptides are found at orders of magnitude lower concentrations compared to classical neurotransmitters (i.e. glutamate, GABA, and the biogenic amines) and adsorb to a variety of surfaces during sample handling (Zhou et al., 2015; Maes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This property is supported by citations to Zhou et al., 2015 and Maes et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "66b42e0e-5fcc-4eec-aa71-fbf5c94fae23",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C8",
+      "claim": "Neuropeptides have been assayed with immunoaffinity-based techniques for decades due to their high sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For decades, neuropeptides have been assayed with immunoaffinity-based techniques due to their high sensitivity (Maidment et al., 1989; Maidment et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This historical practice is supported by citations to Maidment et al., 1989 and 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "15f51406-eea0-44a0-a60c-0ec3e339191a",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C9",
+      "claim": "Selectivity remains a concern for immunoaffinity-based techniques due to poor antibody specificity for full length vs. truncated peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, selectivity remains a concern due to poor antibody specificity for full length vs. truncated peptides that contain identical binding epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of immunoaffinity-based techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "b2bf4368-1d45-4c25-9f5c-03c07e9114d0",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C10",
+      "claim": "Nanoflow liquid chromatography-mass spectrometry (nLC-MS) provides high sensitivity and specificity without the need for an immunocapture step.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanoflow liquid chromatography-mass spectrometry (nLC-MS) is a powerful alternative for peptide detection because it provides high sensitivity and specificity without the need for an immunocapture step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of nLC-MS over immunoaffinity-based techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "b65dc5cf-184c-4d75-8c0f-07b7ac35a64c",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C11",
+      "claim": "nLC-MS has been used successfully to detect a number of endogenous peptides derived from intracranial sampling techniques such as microdialysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, nLC-MS has been used successfully to detect a number of endogenous peptides derived from intracranial sampling techniques such as microdialysis (Van Wanseele et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This application is supported by citation to Van Wanseele et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "0e5c1337-008b-4758-9943-a52b6f07595d",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C12",
+      "claim": "Opioid peptides are prominent neuromodulators for regulating motivated behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Opioid peptides are prominent neuromodulators for regulating motivated behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established role of opioid peptides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "6b8b2968-878d-4679-9744-cee535fd7575",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C13",
+      "claim": "All opioid peptides except nociceptin share a common N-terminal Tyr-Gly-Gly-Phe signature sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "All opioid peptides, except nociceptin share a common N-terminal Tyr-GlyGly-Phe signature sequence, which interacts with opioid receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural characteristic of opioid peptides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "8c45ed9a-09b5-4c16-814e-34fee8f78988",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C14",
+      "claim": "The N-terminal Tyr-Gly-Gly-Phe signature sequence interacts with opioid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "All opioid peptides, except nociceptin share a common N-terminal Tyr-GlyGly-Phe signature sequence, which interacts with opioid receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional property is stated as a known characteristic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "40e135d2-42fe-401a-b340-93a6bca23a11",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C15",
+      "claim": "The preproenkephalin gene encodes several copies of the pentapeptide Met-enkephalin and one copy of Leu-enkephalin.",
+      "claim_type": "EXPLICIT",
+      "source": "The preproenkephalin gene encodes several copies of the pentapeptide Met-enkephalin and one copy of Leu-enkephalin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about the preproenkephalin gene.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "fb70ea30-c8de-41f7-8a19-16702ccf2d62",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C16",
+      "claim": "The preprodynorphin gene encodes multiple opioid peptides, including dynorphin A, dynorphin B, and neo-endorphin.",
+      "claim_type": "EXPLICIT",
+      "source": "The preprodynorphin gene also encodes multiple opioid peptides, including dynorphin A, dynorphin B, and neo-endorphin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about the preprodynorphin gene.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "e7fa201b-5133-46d5-bbdb-00b6f77660a1",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C17",
+      "claim": "The preprodynorphin-derived peptides all contain the Leu-enkephalin N-terminal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The preprodynorphin-derived peptides all contain the Leu-enkephalin N-terminal sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural characteristic of preprodynorphin-derived peptides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "0851b487-9347-4768-9faa-c76428dac62a",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C18",
+      "claim": "Enkephalins preferentially bind to the \u03b4 over \u03bc opioid receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "To further complicate things the enkephalins preferentially bind to the \u03b4 over \u03bc opioid receptor whereas dynorphin preferentially binds to the \u03ba opioid receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known binding preference of enkephalins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "91ce0f66-75ba-49db-aa48-96a425245383",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C19",
+      "claim": "Dynorphin preferentially binds to the \u03ba opioid receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "To further complicate things the enkephalins preferentially bind to the \u03b4 over \u03bc opioid receptor whereas dynorphin preferentially binds to the \u03ba opioid receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known binding preference of dynorphin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "749fb908-f961-4b36-bc30-2da2c9f41d7d",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C20",
+      "claim": "Some studies have reliably detected opioid peptides in rat models.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these complexities some studies have reliably detected opioid peptides in rat models (DiFeliceantonio et al., 2012; Mabrouk et al., 2011; Lam and Gianoulakis, 2011a; Lam and Gianoulakis, 2011b; Lam et al., 2008; Lam et al., 2010), however, it has not been previously possible to reliably detect evoked neuropeptide release in a cell-type selective manner using transgenic mouse models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "6f1b619d-c035-4b71-a9d6-9e6eda41a231",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C21",
+      "claim": "It has not been previously possible to reliably detect evoked neuropeptide release in a cell-type selective manner using transgenic mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these complexities some studies have reliably detected opioid peptides in rat models (DiFeliceantonio et al., 2012; Mabrouk et al., 2011; Lam and Gianoulakis, 2011a; Lam and Gianoulakis, 2011b; Lam et al., 2008; Lam et al., 2010), however, it has not been previously possible to reliably detect evoked neuropeptide release in a cell-type selective manner using transgenic mouse models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the field prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "b5f23248-0e9b-4a7f-8c63-bd81bdc04255",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C22",
+      "claim": "Discrete targeting of the kappa opioid system in the nucleus accumbens can modulate both rewarding and aversive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have recently shown that discrete targeting of the kappa opioid system in the nucleus accumbens (NAc) can modulate both rewarding and aversive behaviors (Al-Hasani et al., 2015; Castro and Berridge, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Al-Hasani et al., 2015 and Castro and Berridge, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "cebfd05f-cf64-4506-8ecc-a98c018c0701",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C23",
+      "claim": "Photostimulation of dynorphin cells in the ventral nucleus accumbens shell elicited robust aversive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that photostimulation of dynorphin (dyn) cells in the ventral nucleus accumbens shell (vNAcSh) elicited robust aversive behavior, while photostimulation of dorsal NAcSh dyn (dNAcSh) cells induced a place preference that was positively reinforcing, however, no successful measurements of optogenetically-evoked neuropeptide release in vivo have been reported to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous finding from the authors' work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "188d6dfc-6eeb-4900-98b3-f9398f61ea90",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C24",
+      "claim": "Photostimulation of dorsal NAcSh dynorphin cells induced a place preference that was positively reinforcing.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that photostimulation of dynorphin (dyn) cells in the ventral nucleus accumbens shell (vNAcSh) elicited robust aversive behavior, while photostimulation of dorsal NAcSh dyn (dNAcSh) cells induced a place preference that was positively reinforcing, however, no successful measurements of optogenetically-evoked neuropeptide release in vivo have been reported to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous finding from the authors' work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "98bfab7d-8cad-46f0-8553-dca6b79e26bb",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C25",
+      "claim": "No successful measurements of optogenetically-evoked neuropeptide release in vivo have been reported prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that photostimulation of dynorphin (dyn) cells in the ventral nucleus accumbens shell (vNAcSh) elicited robust aversive behavior, while photostimulation of dorsal NAcSh dyn (dNAcSh) cells induced a place preference that was positively reinforcing, however, no successful measurements of optogenetically-evoked neuropeptide release in vivo have been reported to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the field that this study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "6f58b7c0-ec0b-4798-a849-07e7efa98e1b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C26",
+      "claim": "Few reports have extensively investigated regional distinctions within the NAc shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, few reports have extensively investigated regional distinctions within the NAc shell and no reports to our knowledge have successfully measured optogenetically-evoked neuropeptide release in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "a1d4657f-1375-4ff8-b49c-4189616e1de5",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C27",
+      "claim": "A custom optogenetic-microdialysis probe was developed that simultaneously provides photostimulation with the ability to sample local neurochemical release in awake, freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a custom optogenetic-microdialysis (opto-dialysis) probe that simultaneously provides photostimulation with the ability to sample local neurochemical release in awake, freely moving mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological development in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "adb5ddb7-4cb7-4810-aeea-935b6dc30624",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C28",
+      "claim": "A targeted nLC-MS method was established to analyze dynorphin, leu-enkephalin, met-enkephalin, dopamine, GABA and glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "We established a targeted nLC-MS method to analyze the opioid peptides dyn (fragment dynorphin A1-8) and enkephalins (leu- and met-), as well as dopamine, GABA and glutamate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological development in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "2d84658d-5128-45a0-8dc2-1ffe60d27cfd",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C29",
+      "claim": "Isotopically labeled dynorphin (DYN*) with 13C615N1-leucine was used as an internal standard with a mass shift of +7 and a +3.5 m/z shift.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish a quantitative assay, we used a custom synthesized isotopically labeled dyn (DYN*, YGGFLRRI with isotope 13C615N1-leucine) with a mass shift of +7 and a +3.5 m/z shift (+2 charge state) as an internal standard (IS) to account for variability during the LC injection, surface adsorption, and ionization efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "511eda1c-8b3d-4d98-87c1-a6721ec38b51",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C30",
+      "claim": "High concentration injections of DYN* were fully resolved by the mass spectrometer and did not result in cross talk with endogenous dynorphin.",
+      "claim_type": "EXPLICIT",
+      "source": "High concentration injections of DYN* were fully resolved by the mass spectrometer and did not result in cross talk with endogenous dyn (Figure 1a and b), demonstrating that the addition of labeled DYN* does not contribute to or interfere with the endogenous dyn signal, while maintaining a similar retention time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "6926a22a-4f19-4559-9290-11f61fbae4f4",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C31",
+      "claim": "The addition of labeled DYN* does not contribute to or interfere with the endogenous dynorphin signal.",
+      "claim_type": "EXPLICIT",
+      "source": "High concentration injections of DYN* were fully resolved by the mass spectrometer and did not result in cross talk with endogenous dyn (Figure 1a and b), demonstrating that the addition of labeled DYN* does not contribute to or interfere with the endogenous dyn signal, while maintaining a similar retention time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data in Figure 1a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "25b91412-e8a7-4435-8be5-27cd5053605f",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C32",
+      "claim": "All three opioid peptides (dynorphin, Leu-Enkephalin, Met-Enkephalin) and isotopically labeled DYN* were detected within 5 min following loading and desalting the sample on the column.",
+      "claim_type": "EXPLICIT",
+      "source": "To further validate the use of DYN* as an internal standard when detecting opioid peptides we prepared a linear calibration curve with a mixture of dyn, Leu-Enkephalin (LE) and Met-Enkephalin (ME) standards spiked with DYN* and detected all four compounds within 5 min following loading and desalting the sample on the column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation result for the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "219c3543-cf84-4154-80cf-cac9c3fbd067",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C33",
+      "claim": "Four distinct peaks are shown in the reconstructed ion chromatographic trace, confirming the separation and reliable detection of all three opioid peptides with isotopically labeled DYN* in one sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Four distinct peaks are shown in the reconstructed ion chromatographic trace, confirming the separation and reliable detection of all three opioid peptides with isotopically labeled DYN* in one sample (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the chromatogram shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "0fa3b8ae-f7ef-4268-9e3e-68b4f0cb0a4b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C34",
+      "claim": "The addition of the DYN* isotope improves quantification by improving relative standard deviation for repeated injections of standards.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of the DYN* isotope to our assay further improves quantification by improving relative standard deviation for repeated injections of standards (Figure 1d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "48761bbe-e7d8-4a27-b55c-4bcf46ab2794",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C35",
+      "claim": "No effect of dialysate matrix for any targeted analyte was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "No effect of dialysate matrix for any targeted analyte was observed (Figure 1g\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 1g-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c5fa0ae6-1a9e-4207-82d6-6a3fc685bcaa",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C36",
+      "claim": "The opto-dialysis probe has a maximal diameter of 480 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a maximal probe diameter of 480 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a specification of the probe design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c43c5b13-9871-47ca-acf7-6f421b77c1f5",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C37",
+      "claim": "A 60 kDa molecular weight cutoff, polyacrylonitrile membrane with a slight negative charge was used for optimal peptide recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize concentrations of peptides entering the probe, we used a 60 kDa molecular weight cutoff, polyacrylonitrile membrane with a slight negative charge for optimal peptide recovery (AN69, Hospal, Bologna Italy) (Zhou et al., 2015; Maidment et al., 1989) and showed we can measure changes in peptide stock concentration within the 15 min fraction collection time (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This design choice is supported by citations to Zhou et al., 2015 and Maidment et al., 1989.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "15a5e92e-1c32-4247-97dc-c8c43ae7457e",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C38",
+      "claim": "Changes in peptide stock concentration can be measured within the 15 min fraction collection time.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize concentrations of peptides entering the probe, we used a 60 kDa molecular weight cutoff, polyacrylonitrile membrane with a slight negative charge for optimal peptide recovery (AN69, Hospal, Bologna Italy) (Zhou et al., 2015; Maidment et al., 1989) and showed we can measure changes in peptide stock concentration within the 15 min fraction collection time (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "7bd0dd6f-d8fb-42c0-afe1-a61c65a6d362",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C39",
+      "claim": "AAV5-EF1\u03b1-DIO-ChR2-eYFP was injected into either the vNAcSh or the dNAcSh of preprodynorphin-IRES-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To evoke and measure in vivo peptide release we injected AAV5-EF1\u03b1-DIO-ChR2-eYFP in to either the vNAcSh or the dNAcSh of preprodynorphin-IRES-cre (dyn-cre) mice and implanted the custom opto-dialysis probes 3 weeks later (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described as part of the experimental procedure and shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "9b75e537-e6b0-46e6-8444-5949fd351b29",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C40",
+      "claim": "Custom opto-dialysis probes were implanted 3 weeks after viral injection.",
+      "claim_type": "EXPLICIT",
+      "source": "To evoke and measure in vivo peptide release we injected AAV5-EF1\u03b1-DIO-ChR2-eYFP in to either the vNAcSh or the dNAcSh of preprodynorphin-IRES-cre (dyn-cre) mice and implanted the custom opto-dialysis probes 3 weeks later (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described as part of the experimental timeline shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "b1a190b5-74ca-4f23-914b-beb27fc60450",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C41",
+      "claim": "Artificial cerebrospinal fluid was perfused through the device at 0.8 \u03bcL/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Following recovery artificial cerebrospinal fluid (aCSF) was perfused through the device at 0.8 \u03bcL/min and fractions were collected on ice every 15 min, generating 12 \u03bcL volumes, 2 \u03bcL of which were aliquoted and used for a small molecule detection assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "2c89ff7d-7071-4a78-b68c-7992d0e0922b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C42",
+      "claim": "Fractions were collected on ice every 15 min, generating 12 \u03bcL volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Following recovery artificial cerebrospinal fluid (aCSF) was perfused through the device at 0.8 \u03bcL/min and fractions were collected on ice every 15 min, generating 12 \u03bcL volumes, 2 \u03bcL of which were aliquoted and used for a small molecule detection assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "dd7ec845-7893-4738-89c5-31cdaced5a6b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C43",
+      "claim": "Three baseline fractions were collected prior to photostimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Three baseline fractions were collected prior to a fraction capturing 15 min of 10 Hz (10 ms pulse width) photostimulation, and six additional fractions were collected following photostimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "8c7038c9-f76d-4eb1-a01c-2d1d6100d669",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C44",
+      "claim": "Photostimulation was delivered at 10 Hz with 10 ms pulse width for 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Three baseline fractions were collected prior to a fraction capturing 15 min of 10 Hz (10 ms pulse width) photostimulation, and six additional fractions were collected following photostimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ca7fb59f-72ed-4e4a-92ff-ca7da897f877",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C45",
+      "claim": "Six additional fractions were collected following photostimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Three baseline fractions were collected prior to a fraction capturing 15 min of 10 Hz (10 ms pulse width) photostimulation, and six additional fractions were collected following photostimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "7acc385c-a36c-4c1f-81be-4f5c22d4ea1d",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C46",
+      "claim": "100 mM K+ aCSF was infused at the end of each collection experiment as a positive control.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control for detecting dynamic changes in vivo by nLC-MS and to establish sampled neuron responsivity to stimuli, we infused 100 mM K+ aCSF at the end of each collection experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "9e4f2aa9-205e-499a-b438-fbd4df506875",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C47",
+      "claim": "The influx of K+ ions causes depolarization, resulting in vesicular exocytosis, which is expected to evoke a large increase in peptide concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The influx of K+ ions causes depolarization, resulting in vesicular exocytosis, which is expected to evoke a large increase in peptide concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the rationale for using K+ as a positive control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "e4ad7180-fcce-4719-bd42-1c76a7a0ae81",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C48",
+      "claim": "Mice were included in the study if 100 mM K+ stimulation resulted in a positive increase in analytes at the end of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were included in the study if 100 mM K+ stimulation resulted in a positive increase in analytes at the end of the experiment (Figure 3\u2014figure supplement 2a\u2013c) and if correct anatomical probe placement and viral expression were confirmed (Figure 3\u2014figure supplement 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inclusion criterion for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "67bc7543-af77-4cb4-ba0a-bd2ac2da4eb2",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C49",
+      "claim": "Mice were included in the study if correct anatomical probe placement and viral expression were confirmed.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were included in the study if 100 mM K+ stimulation resulted in a positive increase in analytes at the end of the experiment (Figure 3\u2014figure supplement 2a\u2013c) and if correct anatomical probe placement and viral expression were confirmed (Figure 3\u2014figure supplement 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inclusion criterion for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "a9559191-4473-45fb-a3a8-796378eb6b55",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C50",
+      "claim": "81.1% (15/18) of the mice were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study 81.1% (15/18) of the mice were included in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the success rate for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "08fb8470-543f-47ba-a57e-722aa17a89f6",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C51",
+      "claim": "A significant increase in dynorphin was detected in dyn-cre positive mice during photostimulation in the vNAcSh compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase in dyn was detected in dyn-cre positive mice during photostimulation in both the vNAcSh (interaction effect; t = 3.941, p<0.001) and dNAcSh (interaction effect; t = 3.012, p=0.003), compared to control mice (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "991beb6b-e456-4ee4-8e53-cd88b7e1743a",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C52",
+      "claim": "A significant increase in dynorphin was detected in dyn-cre positive mice during photostimulation in the dNAcSh compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase in dyn was detected in dyn-cre positive mice during photostimulation in both the vNAcSh (interaction effect; t = 3.941, p<0.001) and dNAcSh (interaction effect; t = 3.012, p=0.003), compared to control mice (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ccf24914-bc53-411d-82ad-cc056146c301",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C53",
+      "claim": "In the vNAcSh there was a sustained increase in dynorphin after photostimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the vNAcSh there was also a sustained increase in dyn after photostimulation (interaction effect; t = 2.499, p=0.014) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "101dcb08-74d7-433e-8c62-04336146634a",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C54",
+      "claim": "Dynorphin release during photostimulation was significantly higher in the vNAcSh compared to the dNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyn release during photostimulation was also significantly higher in the vNAcSh compared to the dNAcSh (interaction effect; t = 2.749, p=0.007) and post stimulation (interaction effect; t = 2.806, p=0.006) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "f0143042-0e4e-42ea-97fb-26aa5d26ffa0",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C55",
+      "claim": "Dynorphin release post stimulation was significantly higher in the vNAcSh compared to the dNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyn release during photostimulation was also significantly higher in the vNAcSh compared to the dNAcSh (interaction effect; t = 2.749, p=0.007) and post stimulation (interaction effect; t = 2.806, p=0.006) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "f5da7279-86a6-42b1-a255-2e522cb99494",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C56",
+      "claim": "Photostimulation of vNAcSh dynorphin neurons was previously shown to cause aversive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Photostimulation of vNAcSh dyn neurons was previously shown to cause aversive behavior, consistent with early pharmacological studies which linked dyn with negative emotional states (Al-Hasani et al., 2015; Bals-Kubik et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Al-Hasani et al., 2015 and Bals-Kubik et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "db5e0f4c-8b26-4aaf-b2eb-eb8aef7b4a81",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C57",
+      "claim": "Early pharmacological studies linked dynorphin with negative emotional states.",
+      "claim_type": "EXPLICIT",
+      "source": "Photostimulation of vNAcSh dyn neurons was previously shown to cause aversive behavior, consistent with early pharmacological studies which linked dyn with negative emotional states (Al-Hasani et al., 2015; Bals-Kubik et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bals-Kubik et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "e47b8e86-a61a-4789-80ab-330486689a9f",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C58",
+      "claim": "During photostimulation of dyn-containing cells in the dNAcSh, Leu-Enkephalin levels were significantly elevated compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "During photostimulation of dyn-containing cells in the dNAcSh, LE levels were significantly elevated compared to controls (interaction effect; t = 5.384, p<0.0001) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "1639cd8c-d2fe-4f6f-9da0-fbb60773203c",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C59",
+      "claim": "No changes in Leu-Enkephalin were detected during photostimulation of dyn-containing cells in the vNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no changes in LE were detected during photostimulation of dyn-containing cells in the vNAcSh (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "1e0b114c-561b-43d2-bc99-5c405b06753f",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C60",
+      "claim": "A significant increase in Met-Enkephalin was observed during photostimulation of dyn-containing cells in the vNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Converse to this, we observed a significant increase in ME during photostimulation of dyn-containing cells in the vNAcSh (comparing cre + and cre-, interaction effect; t = 2.824, p=0.006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "4bb0e5f3-d227-4e5d-9fdf-fc05ce580e84",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C61",
+      "claim": "The same effect on Met-Enkephalin was not significant in the dNAcSh when comparing cre+ and cre- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same effect was not significant in the dNAcSh (comparing cre + and cre-, t = 1.78, p=0.053) (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "8fa48a64-6d0d-4209-98a4-7fe7c9e13701",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C62",
+      "claim": "A significant change in Met-Enkephalin was observed in the dNAcSh when compared to its baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed a significant change in ME in the dNAcSh when compared to its baseline (t = 1.94, p=0.033), and there was no significant difference between the effect of photostimulation in ventral and dorsal (i.e. both are increased).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "affcff3e-3dd5-45ea-a58f-4791a409225b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C63",
+      "claim": "There was no significant difference between the effect of photostimulation on Met-Enkephalin in ventral and dorsal NAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed a significant change in ME in the dNAcSh when compared to its baseline (t = 1.94, p=0.033), and there was no significant difference between the effect of photostimulation in ventral and dorsal (i.e. both are increased).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "6a2abf5c-6730-4839-ab57-78a3fe6adf9c",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C64",
+      "claim": "Baseline levels of opioid peptides in dNAcSh are higher than the vNAcSh (7.114 pM versus 2.71 pM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lack of a significance between Cre + and Cre- in dNAcSh is likely due, at least in part, to the fact the baseline levels of opioid peptides in dNAcSh are higher than the vNAcSh (7.114 pM versus 2.71 pM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measured difference in baseline levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "cbb06122-dcd5-4ee1-b471-384e1f3710a6",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C65",
+      "claim": "The range of absolute dialysate concentration detected for dynorphin was 0.28\u20130.44 pM in dNAcSh and 0.13\u20130.28 pM in vNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Though data are represented as % of baseline the range of absolute dialysate concentration detected for dyn was 0.28\u20130.44 pM in dNAcSh and 0.13\u20130.28 pM in vNAcSh; LE 1.39\u20133.28 pM in dNAcSh and 1.30\u20132.24 pM in vNAcSh; ME 6.19\u20138.69 pM in dNAcSh and 2.57\u20134.11 pM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the measured concentration range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "a82f6b91-ba30-4557-90ff-c545dcf3279d",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C66",
+      "claim": "The range of absolute dialysate concentration detected for Leu-Enkephalin was 1.39\u20133.28 pM in dNAcSh and 1.30\u20132.24 pM in vNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Though data are represented as % of baseline the range of absolute dialysate concentration detected for dyn was 0.28\u20130.44 pM in dNAcSh and 0.13\u20130.28 pM in vNAcSh; LE 1.39\u20133.28 pM in dNAcSh and 1.30\u20132.24 pM in vNAcSh; ME 6.19\u20138.69 pM in dNAcSh and 2.57\u20134.11 pM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the measured concentration range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "82277ea9-cd8e-453f-874c-4177c9a524e6",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C67",
+      "claim": "The range of absolute dialysate concentration detected for Met-Enkephalin was 6.19\u20138.69 pM in dNAcSh and 2.57\u20134.11 pM in vNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Though data are represented as % of baseline the range of absolute dialysate concentration detected for dyn was 0.28\u20130.44 pM in dNAcSh and 0.13\u20130.28 pM in vNAcSh; LE 1.39\u20133.28 pM in dNAcSh and 1.30\u20132.24 pM in vNAcSh; ME 6.19\u20138.69 pM in dNAcSh and 2.57\u20134.11 pM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the measured concentration range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "f3c5f655-2a3b-4445-adc7-66882d6708d4",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C68",
+      "claim": "A benzoyl chloride (BzCl) derivatization LC-MS method was applied to monitor dopamine, GABA and glutamate in dialysis samples.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if peptide release corresponded with small molecule neurotransmitter release, we applied a benzoyl chloride (BzCl) derivatization LC-MS method to monitor three small molecules, dopamine, GABA and glutamate in dialysis samples (Song et al., 2012; Wong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as part of the experimental method and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "f166300d-bcc9-4eb8-be2c-e38e4b5f4af0",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C69",
+      "claim": "Dopamine increased in the dNAcSh during photostimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dopamine increased in the dNAcSh during photostimulation (interaction effect; t = 5.007, p<0.0001), which persisted following stimulation (interaction effect; t = 2.081, p=0.039) (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "32365b19-eb04-4296-9c23-2e39564b22a1",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C70",
+      "claim": "Dopamine increase in the dNAcSh persisted following stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dopamine increased in the dNAcSh during photostimulation (interaction effect; t = 5.007, p<0.0001), which persisted following stimulation (interaction effect; t = 2.081, p=0.039) (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "41bf4be8-f026-42c9-9196-e51c7dfa774e",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C71",
+      "claim": "Levels of GABA increased in the vNAcSh following photostimulation and had a prolonged response.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of GABA also increased in the vNAcSh following photostimulation (t = 2.363, p=0.020) and had a prolonged response (t = 4.744, p<0.0001) (Figure 3\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "34913617-360b-49e3-b4b9-3cce33c25d40",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C72",
+      "claim": "There were no significant changes in glutamate levels during photostimulation in either vNAcSh or dNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant changes in glutamate levels during photostimulation in either vNAcSh or dNAcSh (Figure 3\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in Figure 3\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "1fd6aac8-a461-476b-9f6d-dd531059c83f",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C73",
+      "claim": "Photostimulation of dyn-containing cells in the vNAcSh and dNAcSh results in a detectable increase in dynorphin release, which is greater in the vNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that photostimulation of dyn-containing cells in the vNAcSh and dNAcSh results in a detectable increase in dyn release, which is greater in the vNAcSh.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "37fbde52-8e9c-4160-842d-a131d73f3397",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C74",
+      "claim": "The result correlates with previous behavioral data demonstrating that dynorphin release likely drives a region dependent preference and aversion behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This result correlates with previous behavioral data demonstrating that dyn release likely drives a region dependent preference and aversion behavior (Al-Hasani et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citation to Al-Hasani et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "a3b6aaa7-f145-4b11-b182-60b29b3dfbdb",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C75",
+      "claim": "The preference behavior when photostimulating dynorphin cells in the dNAcSh may be related to the detected increases in dopamine and Leu-Enkephalin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we previously observed a preference behavior when photostimulating dyn cells in the dNAcSh and these data suggest that the preference may be related, at least in part, to the detected increases in dopamine and LE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c2f52fc9-1434-451c-af33-39b8abfe32be",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C76",
+      "claim": "Many studies have shown that levels of both dopamine and Leu-Enkephalin increase during preference or reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many studies have shown that levels of both dopamine and LE increase during preference or reward (Olds, 1982; Spanagel et al., 1990; Bruijnzeel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Olds, 1982; Spanagel et al., 1990; and Bruijnzeel, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "679ce929-3437-471f-9b7f-29d3127b12d3",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C77",
+      "claim": "Using this method it is not possible to know whether Leu-Enkephalin is derived from preprodynorphin or preproenkephalin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, using this method it is not possible to know whether LE is derived from pDyn or pENK but in future experiments we can combine this with conditional knockout approaches to selectively delete the peptides in specific cell types, so that we can later determine what happens to these signals in the absence of expression of particular peptides in D1 vs D2 cells and subregions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "e726c379-4004-4c33-b98e-e0289397f1b3",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C78",
+      "claim": "Optogenetic activation of D1 cells could impart changes on D2 cell activity thereby releasing Met-Enkephalin indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we cannot preclude interactions between MSN cell types, specifically that optogenetic activation of D1 cells could impart changes on D2 cell activity thereby releasing Met-Enk, indirectly, and/or via indirect circuits outside the NAc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible alternative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "39a97dde-21a6-4eed-be80-50f3c3e87037",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C79",
+      "claim": "Dopamine release via D1 MSN stimulation could be via indirect suppression of D1 projections back to VTA GABA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dopamine release via D1 MSN stimulation, could be via two mechanisms 1) via indirect suppression of D1 projections back to VTA GABA neurons (Edwards et al., 2017), which acts via GABA-B to disinhibit VTA DA neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation to Edwards et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "3d3f446c-f758-44e4-b901-4be8ad46bb50",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C80",
+      "claim": "Indirect suppression of D1 projections to VTA GABA neurons acts via GABA-B to disinhibit VTA dopamine neurons, resulting in dopamine release in the NAc.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, dopamine release via D1 MSN stimulation, could be via two mechanisms 1) via indirect suppression of D1 projections back to VTA GABA neurons (Edwards et al., 2017), which acts via GABA-B to disinhibit VTA DA neurons. This would then result in dopamine release in the NAc following D1 stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation to Edwards et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "1aeea47d-3349-4ea1-973e-0688fffab4e2",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C81",
+      "claim": "Presynaptic regulation of dopamine release from VTA to NAc projections is plausible and has been recently investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an alternative, presynaptic regulation of DA release from VTA to NAc projections is also plausible, and recently been investigated by multiple groups (Lemos et al., 2016; Dobbs et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lemos et al., 2016 and Dobbs et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "7b94915e-921b-401b-b36c-eaf4027a4233",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C82",
+      "claim": "The observed changes in GABA in both vNAcSh and dNAcSh are as predicted due to the fact that dyn-containing medium spiny neurons are GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed changes in GABA in both vNAcSh and dNAcSh are as predicted due to the fact that dyn-containing medium spiny neurons are GABAergic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an expected result based on known cell properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ac437467-bb54-4d97-92e0-7b0437e0cc46",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C83",
+      "claim": "The observed increase in Met-Enkephalin is intriguing, as Met-Enkephalin is not released from the same cells as dynorphin.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed increase in ME is intriguing, as ME is not released from the same cells as dynorphin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation that requires explanation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "4132ca00-cfb6-4cac-9304-508d982f8b29",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C84",
+      "claim": "There has been evidence to suggest that enkephalins play a role in regulating disruptions in homeostasis following chronic exposure to drugs of abuse.",
+      "claim_type": "EXPLICIT",
+      "source": "There has been some evidence to suggest that enkephalins play a role in regulating disruptions in homeostasis following chronic exposure to drugs of abuse (Kreek and Koob, 1998; Shoblock and Maidment, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kreek and Koob, 1998 and Shoblock and Maidment, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "25c1d037-4115-433f-85a6-1bf79e2af5c5",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C85",
+      "claim": "Increases in enkephalin release during drug withdrawal has been shown through peptide tissue content, mRNA levels and microdialysis of extracellular enkephalins in a number of brain regions including the nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, increases in enkephalin release during drug withdrawal has been shown through peptide tissue content, mRNA levels and microdialysis of extracellular enkephalins in a number of brain regions including the nucleus accumbens (Nylander et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nylander et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "b1b770b8-b342-4436-8354-12c3f9f46910",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C86",
+      "claim": "Studies have measured increases in dynorphin expression during withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, studies have measured increases in dynorphin expression during withdrawal (Isola et al., 2008; McCarthy et al., 2010; Przew\u0142ocka et al., 1997; Rylkova et al., 2009; Lindholm et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ac696f4b-ef3a-4f34-a3ce-e8bdc8c461b6",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C87",
+      "claim": "When stimulating the release of dynorphin, levels of met-enkephalin may increase in response as a homeostatic mechanism to relieve a withdrawal-like state.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems possible therefore that when we are stimulating the release of dynorphin (perhaps mimicking some aspects of withdrawal), levels of met-enkephalin increase in response to this, as a homeostatic mechanism to relieve this withdrawal-like state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative interpretation of the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "808c32a9-0ded-4d3b-b899-bc567a5db305",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C88",
+      "claim": "The Met-Enkephalin release profile is unique to the vNAcSh suggesting that this region is critical in the regulation of hedonic homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "This release profile is unique to the vNAcSh suggesting that this region is critical in the regulation of hedonic homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the regional differences observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "bd045ced-7401-4166-b6f4-6dc57e0ac5eb",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C89",
+      "claim": "Dynorphin mRNA expression is similar in the vNAcSh and dNAcSh.",
+      "claim_type": "EXPLICIT",
+      "source": "Though we have previously shown that dyn mRNA expression is similar in the vNAcSh and dNAcSh (Al-Hasani et al., 2015), it would be ideal to also verify the expression pattern and distribution of the enkephalins in the vNAcSh and dNAcSh.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Al-Hasani et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "0db44209-f046-4322-b63a-a1e26b0fc1c3",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C90",
+      "claim": "This detection technique maintains the poor temporal resolution of peptide and other microdialysis approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it should be noted that this detection technique maintains the poor temporal resolution of peptide and other microdialysis approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "41ac08a1-9eea-4c08-901e-c773a17cdf96",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C91",
+      "claim": "An ideal assay would include isotopically labeled internal standards for each analyte of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "An ideal assay would include isotopically labeled internal standards for each analyte of interest, however, the addition of analytes to detect in the ion trap reduces points per peak and complicates the chromatogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consideration for future method development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "0d260948-6a28-4efb-954d-0dca9f50dda0",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C92",
+      "claim": "The addition of analytes to detect in the ion trap reduces points per peak and complicates the chromatogram.",
+      "claim_type": "EXPLICIT",
+      "source": "An ideal assay would include isotopically labeled internal standards for each analyte of interest, however, the addition of analytes to detect in the ion trap reduces points per peak and complicates the chromatogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ee07c973-2ba0-49a8-933b-cd5498d7878b",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C93",
+      "claim": "The 3 peaks of interest (LE/ME/dyn) all appear in the chromatogram in close proximity between 4\u20135.5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In this current method the 3 peaks of interest, LE/ME/dyn, all appear in the chromatogram in close proximity between 4\u20135.5 min, which may not seem ideal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the current method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ae5e5c2c-4d57-4a15-a422-e87dc968f15e",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C94",
+      "claim": "It takes 18 min from injection-to-injection in the current method.",
+      "claim_type": "EXPLICIT",
+      "source": "Here it takes 18 min from injection-to-injection and it is important to note that the peaks, while not fully resolved in time, were fully resolved by mass-to-charge ratio, so the separation was sufficient in this case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the current method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ee9b8af1-a763-4179-8021-4d977622e767",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C95",
+      "claim": "The peaks, while not fully resolved in time, were fully resolved by mass-to-charge ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Here it takes 18 min from injection-to-injection and it is important to note that the peaks, while not fully resolved in time, were fully resolved by mass-to-charge ratio, so the separation was sufficient in this case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as justification for the current method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "48126235-18f6-468d-b529-8432e8654339",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C96",
+      "claim": "The study primarily focused on dynorphin 1-8 as this was the fragment that was the most reliable to detect in developing this methodology.",
+      "claim_type": "EXPLICIT",
+      "source": "We primarily focused on dyn1-8 as this was the fragment that was the most reliable to detect in developing this methodology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for the choice of peptide fragment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "81c6482e-6e82-471b-b1da-aab9a6f4bac4",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C97",
+      "claim": "The limitations to in vivo detection of neuropeptides by microdialysis with LC-MS are largely due to absorption and lack of adequate recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "The limitations to in vivo detection of neuropetides by microdialysis with LC-MS has been thoroughly explored and are largely due to absorption and lack of adequate recovery (Zhou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhou et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "67d0d8c6-0aac-4d5b-98a7-361d319397a8",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C98",
+      "claim": "In the current method, organic modifiers are not added to the perfusate for dialysis or to the sample in the vial.",
+      "claim_type": "EXPLICIT",
+      "source": "In this current method, organic modifiers are not added to the perfusate for dialysis or to the sample in the vial, as we validated that there was no peptide carryover/stickiness in the LC-MS lines without such agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the current method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "183ab26c-5be1-4975-9e94-f9d20329e766",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C99",
+      "claim": "There was no peptide carryover/stickiness in the LC-MS lines without organic modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "In this current method, organic modifiers are not added to the perfusate for dialysis or to the sample in the vial, as we validated that there was no peptide carryover/stickiness in the LC-MS lines without such agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "a4e6ff35-5682-490a-8599-3637cfcb77c7",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C100",
+      "claim": "The addition of an organic modifier like acetonitrile to a sample could be optimized for each peptide fragment and improve quantitation by reducing stickiness to the vial and LC-MS fluidic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been shown that the addition of an organic modifier, like acetonitrile, to a sample could be optimized for each peptide fragment and improve quantitation by reducing stickiness to the vial and LC-MS fluidic pathway (Zhou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhou et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "fdc4108d-4404-4738-8971-836b987c7ec6",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C101",
+      "claim": "The approach of adding organic modifiers appears to be dependent on each individual peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, however, appears to be dependent on each individual peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consideration for method optimization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "a93dacbe-05f4-4466-844a-dab07b3c1e5d",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C102",
+      "claim": "This new approach allows for detection of cell-type-specific evoked in vivo neuropeptide release within neural circuits to be observed during freely moving behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This new approach, we describe here allows for detection of cell-type-specific evoked in vivo neuropeptide release within neural circuits to be observed during freely moving behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the method's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ba142bf3-aa6b-41bf-8807-a9a9cd1ddbcd",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C103",
+      "claim": "Methods to detect in vivo release of endogenous peptides are limited, preventing the full understanding of their properties and dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods to detect in vivo release of endogenous peptides are limited, preventing the full understanding of their properties and dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "cefb96c3-3adb-44fa-9163-460a5454c202",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C104",
+      "claim": "The method described is a first step in closing the gap in understanding of neuropeptide-containing circuits during behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The method described here is a first step in closing this gap in our understanding of neuropeptide-containing circuits during behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the significance of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "096a0074-a498-4963-b3e9-ffabc457faa9",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C105",
+      "claim": "In vitro recovery of a 1 mm probe for dynorphin, Leu-Enkephalin, and Met-Enkephalin were 12 \u00b1 2%, 13 \u00b1 3%, and 13 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro recovery of a 1 mm probe for dyn, LE, and ME were 12 \u00b1 2%, 13 \u00b1 3%, and 13 \u00b1 2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measured characteristic of the probe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "ec987968-e227-4ec3-af70-1c0342fbf091",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "claim_id": "C107",
+      "claim": "Average carry over across all experiments for dynorphin, Leu-Enkephalin, and Met-Enkephalin were 0.8 \u00b1 0.03%, 0.3 \u00b1 0.3%, and 0.3 \u00b1 0.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Average carry over across all experiments for dyn, LE, and ME were 0.8 \u00b1 0.03%, 0.3 \u00b1 0.3%, and 0.3 \u00b1 0.2% determined by running the highest calibration point immediately followed by a blank and integrating the peak area across the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measured characteristic of the assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ce592df0-e452-4cf0-904c-64499152e2f3",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a custom opto-dialysis probe and established a targeted nLC-MS method for detecting opioid peptides (dynorphin, Leu-Enkephalin, Met-Enkephalin) using isotopically labeled dynorphin (DYN*) as an internal standard. The method was validated in vitro, showing no cross-talk between labeled and endogenous peptides, linear calibration curves, improved quantification with the internal standard, no matrix effects, and acceptable recovery and carryover rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C38, C105, and C107 collectively demonstrate robust technical validation of the opto-dialysis probe and nLC-MS assay. The data in Figures 1 and 2 show proper separation of peptides, validation of the internal standard approach, and characterization of probe performance. Statistical measures (recovery rates, carryover percentages) are provided with appropriate error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "86574d02-988f-4d6b-a54f-e729cf0c9266",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors performed in vivo experiments by injecting AAV5-EF1\u03b1-DIO-ChR2-eYFP into vNAcSh or dNAcSh of preprodynorphin-IRES-cre mice, implanting opto-dialysis probes 3 weeks later, and collecting fractions during baseline, photostimulation (10 Hz, 10 ms pulse width, 15 min), and post-stimulation periods. Mice were included based on positive K+ control responses and correct probe placement/viral expression, resulting in 81.1% (15/18) inclusion rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C50 describe a well-controlled experimental design with appropriate inclusion criteria. The use of K+ depolarization as a positive control (C46-C48) and verification of probe placement and viral expression (C49) are critical quality controls. The 81.1% success rate indicates reasonable experimental reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c1b595f2-e117-4004-af6b-2520067a0a6c",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Photostimulation of dynorphin-containing cells resulted in significant increases in dynorphin release in both vNAcSh and dNAcSh compared to controls, with significantly higher and sustained release in vNAcSh compared to dNAcSh during and after stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 and C73 are supported by statistical analyses with reported t-values and p-values (p<0.001 to p=0.014) and visual data in Figure 3b. The regional differences between vNAcSh and dNAcSh are quantified with appropriate statistical comparisons. This represents the first successful measurement of optogenetically-evoked dynorphin release in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Photostimulation of dynorphin-containing cells produced region-specific enkephalin release patterns: Leu-Enkephalin increased significantly in dNAcSh but not vNAcSh, while Met-Enkephalin increased significantly in vNAcSh with a trend in dNAcSh. Baseline opioid peptide levels were higher in dNAcSh (7.114 pM) than vNAcSh (2.71 pM), with absolute dialysate concentrations in the sub-picomolar to low picomolar range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C67 are supported by statistical analyses (Figure 3c-d) showing differential enkephalin release patterns between regions. The explanation for the non-significant cre+/cre- comparison in dNAcSh for Met-Enkephalin (C61, C64) is reasonable given higher baseline levels. Absolute concentration ranges are provided, adding quantitative rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "25c3bcc9-f981-45cf-b2bf-67d8a8c75b89",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Small molecule neurotransmitter analysis revealed that dopamine increased significantly in dNAcSh during and after photostimulation, GABA increased in vNAcSh following photostimulation with prolonged response, while glutamate showed no significant changes in either region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 are supported by statistical analyses with reported t-values and p-values, and data shown in Figure 3e and supplementary figures. The BzCl derivatization method is appropriately cited (C68). The differential small molecule release patterns complement the peptide data and are consistent with known cell properties (GABAergic neurons).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "d13657b6-b668-4cbe-a445-247fed3cd3bf",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The observed regional differences in dynorphin and enkephalin release correlate with previous behavioral findings showing that vNAcSh dynorphin stimulation causes aversion while dNAcSh stimulation causes preference, potentially mediated by differential dopamine and Leu-Enkephalin release in dNAcSh.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 appropriately connect the current neurochemical findings to prior behavioral data (Al-Hasani et al., 2015) and established literature on dopamine/enkephalin roles in reward. The interpretation is cautious (\"may be related, at least in part\") and acknowledges the correlational nature of the connection. Claims C56-C57 provide supporting context from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "af477c11-fcf4-4831-8621-e2252396e9ec",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors acknowledge that the method cannot distinguish whether Leu-Enkephalin originates from preprodynorphin or preproenkephalin, and discuss potential indirect mechanisms for Met-Enkephalin release including MSN cell-type interactions and circuit-level effects on dopamine release via VTA projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 appropriately acknowledge methodological limitations and discuss alternative mechanistic explanations with supporting citations (Edwards et al., 2017; Lemos et al., 2016; Dobbs et al., 2016). The discussion is appropriately speculative and identifies future experiments needed to resolve these questions. This represents good scientific practice in acknowledging limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "c2c958e4-4369-4461-8d26-c0fa8394146d",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that Met-Enkephalin release in vNAcSh may represent a homeostatic response to dynorphin release, analogous to enkephalin increases during drug withdrawal, suggesting the vNAcSh is critical for hedonic homeostasis regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C88 present an interesting hypothesis supported by relevant citations about enkephalin roles in drug withdrawal. However, this interpretation is highly speculative (C87 explicitly states \"It seems possible\"). The connection between optogenetic dynorphin stimulation and withdrawal states is indirect. While the hypothesis is plausible, it requires direct experimental validation to be considered supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "88db3d9c-c08b-4419-bd66-ba220341db8a",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss methodological limitations including poor temporal resolution inherent to microdialysis, lack of isotopically labeled internal standards for all analytes, chromatographic peak proximity, focus on dynorphin 1-8 fragment, and decisions regarding organic modifier use in the perfusate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C101 provide transparent discussion of methodological limitations and design choices. The justifications for decisions (e.g., C95 on mass-to-charge resolution compensating for temporal overlap, C96 on focusing on the most reliable fragment) are reasonable. Citations support claims about known limitations (C97, C100). This represents appropriate scientific transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "This work represents the first successful measurement of cell-type-specific, optogenetically-evoked neuropeptide release in freely moving mice, addressing a significant gap in the field where methods to detect in vivo endogenous peptide release have been limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C21, C25, C26, C102-C104 establish the novelty and significance of the work. The claim of being \"first\" for optogenetically-evoked neuropeptide release in transgenic mice is supported by the literature review in the introduction. The technical achievement of combining optogenetics, microdialysis, and sensitive mass spectrometry in freely moving animals is substantial and well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    },
+    {
+      "id": "993fee01-5392-441f-9eea-a9684e69ce59",
+      "content_id": "d3843403-2747-4684-be8b-a2aad071cf38",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction provides background on neuropeptides as signaling molecules, technical challenges in their detection, opioid peptide structure and receptor binding, and prior work on the kappa opioid system in the nucleus accumbens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C24 provide appropriate background context supported by relevant citations. These claims establish the scientific rationale for the study and are consistent with established knowledge in the field. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:14:41.874339Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a1d4657f-1375-4ff8-b49c-4189616e1de5",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "adb5ddb7-4cb7-4810-aeea-935b6dc30624",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "2d84658d-5128-45a0-8dc2-1ffe60d27cfd",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "511eda1c-8b3d-4d98-87c1-a6721ec38b51",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "6926a22a-4f19-4559-9290-11f61fbae4f4",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "25b91412-e8a7-4435-8be5-27cd5053605f",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "219c3543-cf84-4154-80cf-cac9c3fbd067",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "0fa3b8ae-f7ef-4268-9e3e-68b4f0cb0a4b",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "48761bbe-e7d8-4a27-b55c-4bcf46ab2794",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "c5fa0ae6-1a9e-4207-82d6-6a3fc685bcaa",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "c43c5b13-9871-47ca-acf7-6f421b77c1f5",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "15a5e92e-1c32-4247-97dc-c8c43ae7457e",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "096a0074-a498-4963-b3e9-ffabc457faa9",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "ec987968-e227-4ec3-af70-1c0342fbf091",
+      "result_id": "ce592df0-e452-4cf0-904c-64499152e2f3"
+    },
+    {
+      "claim_id": "7bd0dd6f-d8fb-42c0-afe1-a61c65a6d362",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "9b75e537-e6b0-46e6-8444-5949fd351b29",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "b1a190b5-74ca-4f23-914b-beb27fc60450",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "2c89ff7d-7071-4a78-b68c-7992d0e0922b",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "dd7ec845-7893-4738-89c5-31cdaced5a6b",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "8c7038c9-f76d-4eb1-a01c-2d1d6100d669",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "ca7fb59f-72ed-4e4a-92ff-ca7da897f877",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "7acc385c-a36c-4c1f-81be-4f5c22d4ea1d",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "9e4f2aa9-205e-499a-b438-fbd4df506875",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "e4ad7180-fcce-4719-bd42-1c76a7a0ae81",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "67bc7543-af77-4cb4-ba0a-bd2ac2da4eb2",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "a9559191-4473-45fb-a3a8-796378eb6b55",
+      "result_id": "86574d02-988f-4d6b-a54f-e729cf0c9266"
+    },
+    {
+      "claim_id": "08fb8470-543f-47ba-a57e-722aa17a89f6",
+      "result_id": "c1b595f2-e117-4004-af6b-2520067a0a6c"
+    },
+    {
+      "claim_id": "991beb6b-e456-4ee4-8e53-cd88b7e1743a",
+      "result_id": "c1b595f2-e117-4004-af6b-2520067a0a6c"
+    },
+    {
+      "claim_id": "ccf24914-bc53-411d-82ad-cc056146c301",
+      "result_id": "c1b595f2-e117-4004-af6b-2520067a0a6c"
+    },
+    {
+      "claim_id": "101dcb08-74d7-433e-8c62-04336146634a",
+      "result_id": "c1b595f2-e117-4004-af6b-2520067a0a6c"
+    },
+    {
+      "claim_id": "f0143042-0e4e-42ea-97fb-26aa5d26ffa0",
+      "result_id": "c1b595f2-e117-4004-af6b-2520067a0a6c"
+    },
+    {
+      "claim_id": "1fd6aac8-a461-476b-9f6d-dd531059c83f",
+      "result_id": "c1b595f2-e117-4004-af6b-2520067a0a6c"
+    },
+    {
+      "claim_id": "e47b8e86-a61a-4789-80ab-330486689a9f",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "1639cd8c-d2fe-4f6f-9da0-fbb60773203c",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "1e0b114c-561b-43d2-bc99-5c405b06753f",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "4bb0e5f3-d227-4e5d-9fdf-fc05ce580e84",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "8fa48a64-6d0d-4209-98a4-7fe7c9e13701",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "affcff3e-3dd5-45ea-a58f-4791a409225b",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "6a2abf5c-6730-4839-ab57-78a3fe6adf9c",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "cbb06122-dcd5-4ee1-b471-384e1f3710a6",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "a82f6b91-ba30-4557-90ff-c545dcf3279d",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "82277ea9-cd8e-453f-874c-4177c9a524e6",
+      "result_id": "05d2e31e-c8c0-4e1c-bdac-584def6ffbbf"
+    },
+    {
+      "claim_id": "f3c5f655-2a3b-4445-adc7-66882d6708d4",
+      "result_id": "25c3bcc9-f981-45cf-b2bf-67d8a8c75b89"
+    },
+    {
+      "claim_id": "f166300d-bcc9-4eb8-be2c-e38e4b5f4af0",
+      "result_id": "25c3bcc9-f981-45cf-b2bf-67d8a8c75b89"
+    },
+    {
+      "claim_id": "32365b19-eb04-4296-9c23-2e39564b22a1",
+      "result_id": "25c3bcc9-f981-45cf-b2bf-67d8a8c75b89"
+    },
+    {
+      "claim_id": "41bf4be8-f026-42c9-9196-e51c7dfa774e",
+      "result_id": "25c3bcc9-f981-45cf-b2bf-67d8a8c75b89"
+    },
+    {
+      "claim_id": "34913617-360b-49e3-b4b9-3cce33c25d40",
+      "result_id": "25c3bcc9-f981-45cf-b2bf-67d8a8c75b89"
+    },
+    {
+      "claim_id": "37fbde52-8e9c-4160-842d-a131d73f3397",
+      "result_id": "d13657b6-b668-4cbe-a445-247fed3cd3bf"
+    },
+    {
+      "claim_id": "a3b6aaa7-f145-4b11-b182-60b29b3dfbdb",
+      "result_id": "d13657b6-b668-4cbe-a445-247fed3cd3bf"
+    },
+    {
+      "claim_id": "c2f52fc9-1434-451c-af33-39b8abfe32be",
+      "result_id": "d13657b6-b668-4cbe-a445-247fed3cd3bf"
+    },
+    {
+      "claim_id": "f5da7279-86a6-42b1-a255-2e522cb99494",
+      "result_id": "d13657b6-b668-4cbe-a445-247fed3cd3bf"
+    },
+    {
+      "claim_id": "db5e0f4c-8b26-4aaf-b2eb-eb8aef7b4a81",
+      "result_id": "d13657b6-b668-4cbe-a445-247fed3cd3bf"
+    },
+    {
+      "claim_id": "679ce929-3437-471f-9b7f-29d3127b12d3",
+      "result_id": "af477c11-fcf4-4831-8621-e2252396e9ec"
+    },
+    {
+      "claim_id": "e726c379-4004-4c33-b98e-e0289397f1b3",
+      "result_id": "af477c11-fcf4-4831-8621-e2252396e9ec"
+    },
+    {
+      "claim_id": "39a97dde-21a6-4eed-be80-50f3c3e87037",
+      "result_id": "af477c11-fcf4-4831-8621-e2252396e9ec"
+    },
+    {
+      "claim_id": "3d3f446c-f758-44e4-b901-4be8ad46bb50",
+      "result_id": "af477c11-fcf4-4831-8621-e2252396e9ec"
+    },
+    {
+      "claim_id": "1aeea47d-3349-4ea1-973e-0688fffab4e2",
+      "result_id": "af477c11-fcf4-4831-8621-e2252396e9ec"
+    },
+    {
+      "claim_id": "7b94915e-921b-401b-b36c-eaf4027a4233",
+      "result_id": "af477c11-fcf4-4831-8621-e2252396e9ec"
+    },
+    {
+      "claim_id": "ac437467-bb54-4d97-92e0-7b0437e0cc46",
+      "result_id": "af477c11-fcf4-4831-8621-e2252396e9ec"
+    },
+    {
+      "claim_id": "4132ca00-cfb6-4cac-9304-508d982f8b29",
+      "result_id": "c2c958e4-4369-4461-8d26-c0fa8394146d"
+    },
+    {
+      "claim_id": "25c1d037-4115-433f-85a6-1bf79e2af5c5",
+      "result_id": "c2c958e4-4369-4461-8d26-c0fa8394146d"
+    },
+    {
+      "claim_id": "b1b770b8-b342-4436-8354-12c3f9f46910",
+      "result_id": "c2c958e4-4369-4461-8d26-c0fa8394146d"
+    },
+    {
+      "claim_id": "ac696f4b-ef3a-4f34-a3ce-e8bdc8c461b6",
+      "result_id": "c2c958e4-4369-4461-8d26-c0fa8394146d"
+    },
+    {
+      "claim_id": "808c32a9-0ded-4d3b-b899-bc567a5db305",
+      "result_id": "c2c958e4-4369-4461-8d26-c0fa8394146d"
+    },
+    {
+      "claim_id": "bd045ced-7401-4166-b6f4-6dc57e0ac5eb",
+      "result_id": "c2c958e4-4369-4461-8d26-c0fa8394146d"
+    },
+    {
+      "claim_id": "0db44209-f046-4322-b63a-a1e26b0fc1c3",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "41ac08a1-9eea-4c08-901e-c773a17cdf96",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "0d260948-6a28-4efb-954d-0dca9f50dda0",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "ee07c973-2ba0-49a8-933b-cd5498d7878b",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "ae5e5c2c-4d57-4a15-a422-e87dc968f15e",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "ee9b8af1-a763-4179-8021-4d977622e767",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "48126235-18f6-468d-b529-8432e8654339",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "81c6482e-6e82-471b-b1da-aab9a6f4bac4",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "67d0d8c6-0aac-4d5b-98a7-361d319397a8",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "183ab26c-5be1-4975-9e94-f9d20329e766",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "a4e6ff35-5682-490a-8599-3637cfcb77c7",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "fdc4108d-4404-4738-8971-836b987c7ec6",
+      "result_id": "88db3d9c-c08b-4419-bd66-ba220341db8a"
+    },
+    {
+      "claim_id": "88a2872b-3ea6-418c-b1f6-50eb45f82ac2",
+      "result_id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4"
+    },
+    {
+      "claim_id": "a93dacbe-05f4-4466-844a-dab07b3c1e5d",
+      "result_id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4"
+    },
+    {
+      "claim_id": "ba142bf3-aa6b-41bf-8807-a9a9cd1ddbcd",
+      "result_id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4"
+    },
+    {
+      "claim_id": "cefb96c3-3adb-44fa-9163-460a5454c202",
+      "result_id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4"
+    },
+    {
+      "claim_id": "6f1b619d-c035-4b71-a9d6-9e6eda41a231",
+      "result_id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4"
+    },
+    {
+      "claim_id": "98bfab7d-8cad-46f0-8553-dca6b79e26bb",
+      "result_id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4"
+    },
+    {
+      "claim_id": "6f58b7c0-ec0b-4798-a849-07e7efa98e1b",
+      "result_id": "d33cbcce-b633-4ed8-a5fa-0ac7cd3c06a4"
+    },
+    {
+      "claim_id": "4436d889-4d44-4bb0-ad3b-cf22f9a9f30b",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "c5e7d6be-ae0c-4721-9c59-dc95c17cdc2b",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "2e92979f-98b7-4634-9655-52b3415df5a3",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "351f110d-b253-4953-980e-77d48405db3f",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "c051771d-1519-4657-81b8-906e4e58fe39",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "c68ca37b-db73-4106-9151-5e0fc3f5a9e2",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "66b42e0e-5fcc-4eec-aa71-fbf5c94fae23",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "15f51406-eea0-44a0-a60c-0ec3e339191a",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "b2bf4368-1d45-4c25-9f5c-03c07e9114d0",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "b65dc5cf-184c-4d75-8c0f-07b7ac35a64c",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "0e5c1337-008b-4758-9943-a52b6f07595d",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "6b8b2968-878d-4679-9744-cee535fd7575",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "8c45ed9a-09b5-4c16-814e-34fee8f78988",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "40e135d2-42fe-401a-b340-93a6bca23a11",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "fb70ea30-c8de-41f7-8a19-16702ccf2d62",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "e7fa201b-5133-46d5-bbdb-00b6f77660a1",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "0851b487-9347-4768-9faa-c76428dac62a",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "91ce0f66-75ba-49db-aa48-96a425245383",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "749fb908-f961-4b36-bc30-2da2c9f41d7d",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "b5f23248-0e9b-4a7f-8c63-bd81bdc04255",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "cebfd05f-cf64-4506-8ecc-a98c018c0701",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    },
+    {
+      "claim_id": "188d6dfc-6eeb-4900-98b3-f9398f61ea90",
+      "result_id": "993fee01-5392-441f-9eea-a9684e69ce59"
+    }
+  ],
+  "comparisons": []
+}

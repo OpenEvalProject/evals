@@ -1,0 +1,2187 @@
+{
+  "submission": {
+    "id": "b58e5011-f77d-4593-b165-ec7d52d32394",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:17:02.942465Z",
+    "updated_at": "2025-12-01T22:17:02.942465Z"
+  },
+  "content": [
+    {
+      "id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "submission_id": "b58e5011-f77d-4593-b165-ec7d52d32394",
+      "content_type": "manuscript",
+      "content_text": "# Activation of Discs large by aPKC aligns the mitotic spindle to the polarity axis during asymmetric cell division\n\n## Authors\n\n- Ognjen Golub<sup>1</sup>\n- Brett Wee<sup>1</sup>\n- Rhonda A Newman<sup>1</sup>\n- Nicole M Paterson<sup>1</sup>\n- Kenneth E Prehoda<sup>1</sup> ([ORCID: 0000-0003-4214-6158](https://orcid.org/0000-0003-4214-6158)) \u2020\n\n### Affiliations\n\n1. Institute of Molecular Biology, Department of Chemistry and Biochemistry University of Oregon Eugene United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAsymmetric division generates cellular diversity by producing daughter cells with different fates. In animals, the mitotic spindle aligns with Par complex polarized fate determinants, ensuring that fate determinant cortical domains are bisected by the cleavage furrow. Here, we investigate the mechanisms that couple spindle orientation to polarity during asymmetric cell division of Drosophila neuroblasts. We find that the tumor suppressor Discs large (Dlg) links the Par complex component atypical Protein Kinase C (aPKC) to the essential spindle orientation factor GukHolder (GukH). Dlg is autoinhibited by an intramolecular interaction between its SH3 and GK domains, preventing Dlg interaction with GukH at cortical sites lacking aPKC. When co-localized with aPKC, Dlg is phosphorylated in its SH3 domain which disrupts autoinhibition and allows GukH recruitment by the GK domain. Our work establishes a molecular connection between the polarity and spindle orientation machineries during asymmetric cell division.\n\n## Introduction\n\nAnimals are unique in their degree of multicellular organization, with diverse cell types structured into complex tissues and organs. The cellular mechanisms that generate diversity are critical for the development of these highly\u00a0organized structures and their maintenance during homeostasis. Asymmetric division is a common mechanism for generating cellular diversity, as it produces daughter cells that assume distinct fates (Knoblich, 2010; Roubinet and Cabernard, 2014). A critical aspect of the molecular mechanism underlying this process is the segregation of unique fate determinants into the resulting daughter cells. As the asymmetrically dividing cell proceeds through mitosis, unique sets of fate determinants become polarized into discrete cortical domains that are bisected by the cleavage furrow as mitosis is completed (G\u00f6nczy, 2008; Nance and Zallen, 2011). Thus, a key step in asymmetric cell division is the coordination of the polarity axis with the processes that position the cleavage furrow. Because furrow position is controlled by the mitotic spindle (Barr and Gruneberg, 2007; Fededa and Gerlich, 2012; Glotzer, 2005), segregation of fate determinants during asymmetric cell division requires precise coupling between cell polarity and spindle orientation machinery. Here, we use an induced polarity cultured cell system and Drosophila neuroblasts to uncover a mechanism for linking polarity and spindle position during asymmetric cell division.\n\nNeuroblasts populate the fly central nervous system by undergoing repeated asymmetric divisions during embryonic and larval developmental stages (Gallaud et al., 2017; Knoblich, 2010). At the completion of a typical division, one daughter cell retains the neuroblast fate (i.e. self-renewal), whereas the other assumes a differentiated fate (e.g. neuron). The molecular components that specify distinct daughter cell fates form domains opposite one another on the cell cortex. The basal cortical domain contains molecules important for specifying neuronal fate, such as Miranda, Brat, and Prospero. The apical cortical domain contains a number of regulatory proteins including the Par polarity complex, which restricts the neuronal fate determinants to the basal domain (Atwood and Prehoda, 2009; Bailey and Prehoda, 2015; Wirtz-Peitz et al., 2008). This domain also contains proteins that align the spindle along the apical-basal polarity axis, such as Partner of Inscuteable (Pins) and the tumor suppressor Discs large (Dlg) (Lu and Johnston, 2013a; Roubinet and Cabernard, 2014). However, Dlg is also found at non-apical cortical regions (Albertson and Doe, 2003) suggesting that other mechanisms besides polarization are likely to be necessary to ensure its activity is restricted to the apical cortex. Here, we investigate how polarity is coupled to Dlg\u2019s spindle orientation activity.\n\nDlg is a member of the Membrane Associated Guanylate Kinase (MAGUK) family of proteins that regulate diverse cellular processes including adhesion and neuronal synapse formation (Anderson et al., 2016; Oliva et al., 2012). Like other MAGUKs, Dlg contains a GK protein interaction module that binds downstream effector proteins, such as the kinesin Khc73 (Figure 1A) (Albertson and Doe, 2003; Lu and Prehoda, 2013b; Newman and Prehoda, 2009). The Dlg GK domain is required for neuroblast spindle orientation (Siegrist and Doe, 2005), presumably because of its role in recruiting these effectors. Binding of certain GK targets can be blocked, however, by an autoinhibitory intramolecular interaction between the GK and an adjacent SH3 domain (Johnston et al., 2009; Marcette et al., 2009; McGee et al., 2001). Analysis of Dlg function in spindle orientation suggests that autoinhibition plays a critical, albeit paradoxical, role in the process. In cultured Drosophila S2 cells, polarized Dlg GK induces spindle alignment, but polarized SH3GK does not (Marcette et al., 2009), suggesting that the intramolecular interaction inhibits Dlg\u2019s spindle orientation activity. However, the intramolecular interaction is required for Dlg function in vivo as neuroblasts containing a dlg allele that lacks the interaction (dlgsw) is non-functional (Newman and Prehoda, 2009). Thus, autoinhibition prevents Dlg\u2019s spindle orientation activity but is required for spindle positioning in vivo, suggesting that regulation of Dlg\u2019s GK by its SH3 domain is critically important for Dlg function. How this regulatory interaction might be modulated to activate Dlg is unknown, as are the Dlg spindle orientation effectors regulated by the interaction (Figure 1A). As coupling of polarity and spindle orientation is a key aspect of asymmetric cell division, we sought to identify the mechanism by which the Dlg intramolecular interaction is regulated and how its regulation might influence these important cellular processes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig1-v1.jpg)\n\n**Figure 1.:** (A) Dlg domain structure. An intramolecular interaction between the SH3 and GK domains inhibits GK binding to certain effectors. Dlg activators may function by disrupting the intramolecular interaction, allowing a necessary spindle orientation factor to bind. S662 and S676 denote the two sites of modification by aPKC identified by mass spectrometry. The sequences surrounding each phosphorylated serine are shown. (B) Localization of Dlg and aPKC in a metaphase Drosophila larval brain neuroblast showing that Dlg, while enriched at the apical cortex with aPKC, is also found in significant amounts at non-apical regions of the cortex. (B') Quantification of non-apical Dlg signal. (C) Location of aPKC phosphorylation sites mapped on to the structure of the SH3GK module from PSD-95 (PDB ID: 1KJW).\n\n## Results\n\n### aPKC directly phosphorylates the Dlg SH3 and Hook domains\n\nAs described above, an intramolecular interaction within Dlg inhibits its spindle orienting activity, yet Dlg autoinhibition is required for spindle orientation in vivo (Marcette et al., 2009; Newman and Prehoda, 2009). In cells such as Drosophila neuroblasts, Dlg is localized at the apical cell cortex where the spindle is aligned, but also elsewhere on the cortex (Figure 1B,B\u2019) (Siegrist and Doe, 2005), suggesting that it exists in both active (apical) and inactive (non-apical) pools. We reasoned that Dlg may be autoinhibited at non-apical regions but its spindle orienting function activated at the apical cortex. Neuroblasts are polarized by the Par polarity complex whose primary output is the activity of the atypical Protein Kinase C (aPKC) (Atwood and Prehoda, 2009; Knoblich, 2010; Prehoda, 2009). Although aPKC is required for proper spindle alignment (Guilgur et al., 2012; Kim et al., 2009), the mechanism has been unknown. Canonical PKC has been shown to phosphorylate Dlg during cell migration (O'Neill et al., 2011), so we reasoned that aPKC phosphorylation of Dlg might be responsible for activating apical Dlg. To test this hypothesis, we first sought to determine if Dlg is an aPKC substrate and, if so, whether phosphorylation by aPKC might influence Dlg\u2019s spindle orientation activity.\n\nWe incubated purified Dlg with the kinase domain of aPKC in an in vitro kinase phosphorylation assay. To identify possible modification sites, we subjected the resulting Dlg protein to mass spectrometry analysis following incubation with aPKC. This analysis revealed two primary modified residues, S662 located within the SH3 domain, and S676 located just COOH-terminal to the SH3 (sometimes called the \u2018HOOK\u2019 motif) (Figure 1A,C).\n\n### aPKC phosphorylation regulates Dlg SH3GK-mediated spindle orientation activity\n\nTo determine if Dlg phosphorylation by aPKC activates its spindle orientation activity, we used the cultured S2-cell-induced polarity spindle orientation assay (Johnston et al., 2009). In this assay, expression of the cell adhesion molecule Echinoid (Ed) causes S2 cells to form small clusters with Ed restricted to sites of cell-cell contact. Proteins such as Dlg can be fused to Ed\u2019s cytoplasmic\u00a0domain allowing for their ability to orient the spindle along the induced polarity axis to be examined (Figure 2A). Consistent with previous work (Garcia et al., 2014; Johnston et al., 2009; Marcette et al., 2009), we found that S2 spindles are biased toward crescents of Ed fusions with Dlg\u2019s GK domain (Ed:GK), whereas spindles in S2 cells expressing Ed:SH3GK were randomly oriented indistinguishable from those expressing Ed:GFP (Figure 2B\u2013D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig2-v1.jpg)\n\n**Figure 2.:** (A) Induced polarity spindle orientation assay. S2 cells clustered by the Echinoid adhesion protein (green) polarize proteins attached to the Ed COOH-terminus (\u2018X\u2019). The spindle angle is measured between axes defined along the spindle and the middle of the polarized crescent and cell. A representative image (anti-tubulin, red; GFP, green) of a typical analyzed cell cluster is shown. Spindle angle measurements (polar histogram; green represents control and blue represents experimental) for cells expressing (B) Ed fused to GFP (Ed:GFP) (C) Ed fused to the Discs large GK domain (Ed:GK) (D) Ed:SH3GK (E) Ed:SH3GK co-expressed with aPKC (F) Ed:SH3GK with a phosphomimetic aspartic acid at position 662 (G) Ed:SH3GK with a phosphomimetic aspartic acid at position 676 (H) Ed:SH3GK co-expressed with aPKC containing the K293W mutation in its ATP-binding pocket that prevents kinase activity (I) Ed:SH3GK with both aPKC phosphorylation sites mutated to alanine co-expressed with aPKC. For each condition, the number of measurements is shown along with a p-value calculated using a K-S test. Individual measurements are included in comma separated value format in Figure 2\u2014source data 1.\n\nWe next assessed whether Dlg phosphorylation by aPKC can activate spindle orientation by the SH3GK module. While S2 cells expressing Ed:SH3GK alone fail to orient their spindles, coexpression with aPKC induced alignment to SH3GK indistinguishable from that of cells expressing Ed:GK alone (Figure 2C,E). Spindle alignment to SH3GK is dependent upon aPKC\u2019s catalytic activity, as expression of a kinase dead aPKCK293W mutant failed to result in spindle alignment to Ed:SH3GK contacts (Figure 2H). Furthermore, aPKC expression with the non-phosphorylatable Ed:SH3GK2A (S662A, S676A) Dlg variant also failed to result in aligned spindles (Figure 2I) indicating that modification of these sites is necessary for SH3GK-mediated spindle orientation. Furthermore, phosphorylation at either site is sufficient for this activity as S2 spindles aligned to crescents of Ed:SH3GK variants containing mutations meant to mimic phosphorylation (S662D or S676D) in a manner independent of aPKC (Figure 2E-G). Together, these data support a model in which aPKC phosphorylation induces spindle alignment to the SH3GK, presumably by releasing the GK from autoinhibition.\n\n### aPKC regulates Dlg spindle orientation activity in vivo\n\nLoss of aPKC causes the spindle to become misaligned (Guilgur et al., 2012; Kim et al., 2009), although how aPKC activity is linked to spindle positioning has been unknown. To test whether modification of the aPKC sites within Dlg contributes to spindle orientation in vivo, we assessed the effects of mutations at these sites on neuroblast asymmetric cell division. Previously, we found that constitutive activation of Dlg using the dlgsw allele disrupts the interaction between the SH3 and GK domains and results in decoupling of spindle orientation from cortical polarity (Newman and Prehoda, 2009), indicating that autoinhibition of Dlg is required for its role during mitotic spindle orientation in vivo. Since Dlg is localized both at apical and non-apical cortical regions, we hypothesized that misregulation of Dlg by introducing a phosphomimetic mutation (Figure 2H), would result in ectopic Dlg activity and concomitant loss of spindle orientation as observed with dlgsw.\n\nTo test this hypothesis, we generated transgenic fly lines harboring DlgWT and DlgS662D transgenes under control of the UAS promoter (the Dlg2A variant was toxic, precluding its analysis) and examined their ability to rescue the spindle orientation defect of the dlgm52 null allele. Loss of Dlg results in a moderate spindle orientation phenotype in neuroblasts because of redundancy with the Inscuteable pathway (Siegrist and Doe, 2005). We assayed for rescue of the dlgm52 spindle orientation defect in third instar larval neuroblasts (Figure 3A), using worniu-Gal4-driven expression of UAS-DlgWT and UAS-DlgS662D. We confirm that the dlgm52 allele lacks endogenous Dlg in third instar larval neuroblasts based on immunostaining, which resulted in a reduced precision of spindle alignment with cortical polarity (Figure 3B,C) (Albertson and Doe, 2003). Exogenous expression of DlgWT fully rescued this defect; however, neuroblasts expressing Dlg containing the phosphomimetic S662D mutation exhibited a spindle orientation defect indistinguishable from dlgm52 mutants (Figure 3D,E). This effect is consistent with a requirement for Dlg regulation via modification at this site as the S662D mutation activates Dlg such that its activity is no longer restricted to the apical cortex. We did however observe partial rescue by DlgS662D of the polarity defect that results from the loss of Dlg (Figure 3E\u2019,F), suggesting that the SH3-mediated regulation of the GK domain is not part of Dlg\u2019s role in regulating cell polarity (Ohshiro et al., 2000; Peng et al., 2000). We conclude that regulation of the SH3GK Dlg module by aPKC is a critical step in coupling apical polarity to spindle orientation in Drosophila neuroblasts, as misregulation of this interaction with a constitutively active variant of Dlg results in aberrant spindle positioning in vivo.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of Drosophila larval central nervous system showing brain lobes and ventral nerve cord. In\u00a0this study\u00a0we analyzed neuroblasts (green circles) from the brain lobes outside of the optic lobes. Neuroblasts were stained for Dlg, aPKC, the centrosome marker centrosomin (cnn) to measure spindle angle, and the polarized neural fate determinant Miranda (Mira), after dissection from animals with the following genotypes (B) Wild-type (C) dlgm52 null mutant (D) dlgm52 Worniu-Gal4\u00a0>UAS WT Dlg (E) dlgm52 Worniu-Gal4\u00a0>UAS Dlg with a phosphomimetic mutation at site S662 (E') the same genotype as in panel D but showing the variability in Mira polarization we observed. For each condition, a polar histogram with the measured spindle angles is shown along with a p-value calculated by comparison with the wild-type condition using the K-S test. (F) Quantification of neuroblasts exhibiting polarized Mira for the conditions shown in panels B-E'. Individual measurements are included in comma separated value format in Figure 3\u2014source data 1.\n\n### Dlg regulation couples spindle alignment to polarized aPKC\n\nOur data suggest that the Dlg intramolecular SH3GK interaction may function to couple Par complex polarity to spindle orientation, effectively causing the spindle to align to cortical regions containing the Par complex. To directly test this model, we asked whether Dlg could mediate spindle alignment to polarized aPKC crescents in S2 cells. Spindles in S2 cells with polarized Ed:aPKC were randomly oriented (Figure 4A,B) indicating that aPKC alone is insufficient to induce alignment. However, co-expression with Dlg SH3GK, which localizes uniformly to the S2 cell cortex (Figure 4A), yielded spindle orientation levels similar to Ed:SH3GK activated by soluble aPKC (Figure 4C). This observed increase in activity was dependent on aPKC kinase activity, as a kinase dead Ed:aPKCK293W expressed with DlgSH3GK did not result in oriented spindles (Figure 4D). Furthermore, the non-phosphorylatable Dlg SH3GK2A variant also failed to orient the spindle relative to Ed:aPKC crescents (Figure 4E). We conclude that the Dlg SH3GK couples cortically polarized aPKC to spindle position via phosphorylation of the SH3 residues, S662 and S676.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig4-v1.jpg)\n\n**Figure 4.:** Ed:aPKC was polarized in S2 cells and in some cases Dlg was co-expressed. (A) Localization of Ed:aPKC and SH3GK in S2 cells. Spindle measurements were made for the following conditions (B) Ed:aPKC (C) Ed:aPKC co-expressed with Dlg SH3GK (D) Ed:aPKC containing the \u2018kinase-dead\u2019 K293W mutation co-expressed with Dlg SH3GK. (E) Ed:aPKC co-expressed with Dlg SH3GK containing alanine substitutions at the two aPKC phosphorylation sites. For each condition, a polar histogram of measured angles is shown along with a p-value calculated by comparison against Ed:GFP (Ed:aPKC) or Ed:aPKC (all others) using the K-S test. Individual measurements are included in comma separated value format in Figure 4\u2014source data 1.\n\n### aPKC regulates Dlg\u2019s interaction with the GK ligand Gukholder\n\nOur results indicate that aPKC phosphorylation of Dlg\u2019s SH3GK module activates Dlg\u2019s spindle positioning function. As the SH3 represses the ability of the Dlg GK domain to bind certain ligands, phosphorylation could activate the SH3GK by relieving this inhibition and allowing the GK to bind one or more proteins essential for spindle orientation. We surveyed known GK ligands to determine if their binding is repressed by the SH3 domain (i.e. binds to GK but not SH3GK) and, if so, whether activation by aPKC induces binding to SH3GK. The kinesin Khc73 is a good candidate for an aPKC regulated Dlg ligand because it is essential for Dlg-mediated spindle orientation and binds to Dlg\u2019s GK via its MAGUK Binding Stalk (MBS) (Hanada et al., 2000; Lu and Prehoda, 2013b). However, we compared binding of purified Khc73 MBS to Dlg\u2019s GK and SH3GK modules and observed no difference, indicating that its binding is not inhibited by the intramolecular interaction (Figure 5A). In contrast, binding of the GK ligand GukHolder (GukH) is strongly repressed by the SH3 domain (Figure 5A) (Marcette et al., 2009). Modification of either of the aPKC phosphorylation sites with phosphomimetic mutations (S662D or S676D) allows the SH3GK to bind GukH (Figure 5A), indicating that regulation of GukH binding could allow for coupling between aPKC phosphorylation and Dlg-mediated spindle orientation. In this model, aPKC induces GukH recruitment to Dlg and GukH is essential for spindle orientation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig5-v1.jpg)\n\n**Figure 5.:** (A) GK versus SH3GK binding of Khc73 and GukHolder. \u2018Inputs\u2019 are approximately 2 \u00b5g of purified Dlg GK and SH3GK proteins. \u2018GST\u2019 lanes are the results of affinity chromatography with GST alone to measure the amount of background binding. \u2018GST-Khc73MBS\u2019 lanes are the Kinesin Khc73's \u2018MAGUK Binding Stalk\u2019 with the Dlg and GK SH3GK, showing no qualitative effect on binding by the autoinhibitory SH3GK interaction. \u2018GST-GukH749-1044\u2019 lanes are the GukH COOH-terminus with Dlg GK and SH3GK. Binding to the GK but not the SH3GK indicates that GukH is inhibited by the SH3GK intramolecular interaction. Binding to SH3GKs containing phosphomimetic mutations suggests that aPKC phosphorylation overcomes autoinhibition. (B\u2013J) Cultured S2 cells expressing full-length\u00a0GukH and the following Ed fusions with Dlg stained for Ed, GukH and DAPI (B) Ed fused to GFP (C) Ed fused to Dlg GK (D) Ed fused to Dlg SH3GK (E) Ed:SH3GK with phosphomimetic mutation at S662 (F) Ed:SH3GK with phosphomimetic mutation at S676 (G) Ed:SH3GK co-expressed with aPKC (H) Ed:SH3GK co-expressed with \u2018kinase-dead\u2019 aPKC (I) Ed:SH3GK containing alanine mutations at the aPKC phosphorylation sites co-expressed with aPKC (J) Quantification of GukH recruitment to Ed-fusion proteins. The number of measurements is shown in each bar and significance (**p<0.01, ***p<0.001) calculated by comparison with the GFP condition calculated using ANOVA with Dunnett's post-test.\n\nWe next tested whether aPKC induces GukH recruitment to Dlg. Although GukH is known to localize to the neuroblast apical cortex (Albertson and Doe, 2003), the mechanism of its localization has been unknown. We find that while GukH is efficiently recruited to crescents of Ed:GK, it fails to localize to crescents of Ed:GFP or Ed:SH3GK (Figure 5B\u2013D,J), suggesting that the Dlg intramolecular interaction prevents GukH recruitment consistent with our observations with purified components (Figure 5A). GukH is efficiently recruited; however, to crescents of Ed:SH3GK containing either of the phosphomimetic mutations S662D or S676D, or to wild-type Ed:SH3GK when aPKC is expressed (Figure 5E\u2013G,J). Recruitment to Ed:SH3GK by aPKC requires its kinase activity (Figure 5H,J) and the presence of phosphorylatable residues at the SH3 sites (Figure 5I,J). Taken together with our functional spindle orientation results, these data support a model in which aPKC spatially regulates Dlg spindle orientation activity by allowing it to recruit the GK ligand GukH specifically at the apical cortex where aPKC and Dlg colocalize.\n\n### GukH is a microtubule-binding spindle orientation protein\n\nAlthough GukH is required for GK-mediated spindle orientation in S2 cells (Garcia et al., 2014) and is localized to the apical cortex in metaphase neuroblasts (Albertson and Doe, 2003), its requirement for spindle orientation in vivo had not been determined. We generated a Drosophila transgenic line containing a UAS-driven short hairpin RNAi directed against a gukh exon found in all predicted splice forms of the gene product. When we expressed the RNAi using the neuroblast-specific worniu-Gal4 driver, we observed a spindle orientation defect in larval neuroblasts indistinguishable from that observed in neuroblasts from dlg mutants (Figure 3C and 6A,B) (Albertson and Doe, 2003; Siegrist and Doe, 2005). Thus, GukH function is required for spindle orientation in vivo and the gukh phenotype is consistent with its function in the Dlg pathway. Additionally, we find that GukH plays a role in Dlg\u2019s function in cell polarity (Ohshiro et al., 2000; Peng et al., 2000), as GukH is required for Miranda polarity (Figure 6A,B). As GukH is known to bind the tumor suppressor Scribble (Scrib) (Mathew et al., 2002), we tested if GukH influences Scrib localization in neuroblasts. We found that Scrib localization is independent of GukH suggesting that either GukH functions downstream of Scrib, or its role in polarity is Scrib-independent (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig6-v1.jpg)\n\n**Figure 6.:** Spindle angle measurements from larval brain neuroblasts stained for aPKC, \u03b3-tubulin (used to measure spindle angles), and Mira from animals with the following genotypes (A) Worniu-Gal4\u00a0>WT (no RNA expressed) (B) Worniu-Gal4\u00a0>GukH RNAi. Polar histograms of angle measurements are shown along with the p-value calculated by comparison with the control RNAi condition using the K-S test. (C) Localization of GukH in interphase and mitotic S2 cells. Cells were stained for HA to detect tagged\u00a0full-length GukH, Lamin for the nuclear membrane, and pH3 for mitotic chromatin. (D) GST and a GST fusion of the putative GukH microtuble-binding domain (MTBD;\u00a0residues\u00a0404-534) were subjected to ultracentrifugation both in the absence (\u2013MTs) and presence (+MTs) of microtubules. The supernatant and pellet from these experiments are shown. Individual measurements are included in comma separated value format in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Neuroblasts were stained with DAPI (DNA), anti-Dlg, anti-Scrib, and anti-Mira antibodies (A) Worniu-Gal4\u00a0>\u00a0WT (no RNAi) (B) Worniu-Gal4\u00a0>\u00a0GukH RNAi.\n\nHaving established that GukH is required for spindle orientation in vivo, we next sought to characterize the mechanism by which it participates in spindle orientation. We noticed that full-length GukH\u00a0isoform\u00a0C (GukHC) localizes to the nucleus of interphase S2 cells, but becomes diffusely localized to the spindle and cell cortex during mitosis (Figure 6C). GukH\u2019s localization on the spindle in this overexpression context led us to hypothesize that it may bind microtubules (MTs). To test this hypothesis, we purified a fragment of GukH404-534 that contains a highly positively charged region we predicted to be a putative MT-binding domain (MTBD) and tested its ability to bind microtubules using a MT pelleting assay. Compared to the GST-alone negative control, cosedimentation of GukHMTBD revealed significant pelleting with assembled microtubules (Figure 6D). We conclude that GukH is a novel microtubule-binding spindle orientation protein.\n\n### GukH microtubule-binding activity is required for GK-mediated spindle orientation\n\nTo determine whether GukH\u2019s MT-binding activity directly contributes to Dlg-mediated spindle orientation activity, we tested whether its MTBD is required for spindle orientation in S2 cells. We first verified that intact GukH is required for Ed:GK-mediated spindle orientation in S2 cells (Figure 7A,B) by depleting endogenous GukH using RNAi targeted against the gukh 5\u2019 UTR (Garcia et al., 2014). Expression of full-length GukH rescued the loss in activity caused by gukh5\u2019UTR RNAi (Figure 7C), demonstrating that the RNAi is specific to our gene of interest and that this isoform is sufficient for spindle orientation. Expression of GukH lacking its MTBD did not rescue the gukh RNAi spindle orientation phenotype, suggesting that MT-binding activity is essential for GukH to function in the Dlg spindle orientation pathway (Figure 7D). We conclude that GukH is a novel MT-binding protein and this activity is required for Dlg-mediated spindle orientation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/32137/elife-32137-fig7-v1.jpg)\n\n**Figure 7.:** Spindle angles measured in S2 cells expressing Ed fused to Dlg GK exposed to the following RNAi conditions (A) Control RNAi (B) RNAi directed against the gukh 5' UTR (C) gukh5'UTR RNAi with expression of full-length GukH (D) gukh5'UTR RNAi with expression of full-length GukH lacking its microtuble-binding domain (MTBD). For each condition, a polar histogram of the measured angles is shown and a p-value calculated by comparison to the control RNAi condition using the K-S test. (E) Model for coupling of polarity and spindle orientation during asymmetric cell division. When Dlg is not co-localized with aPKC, it is autoinhibited by the SH3GK intramolecular interaction and cannot recruit GukH. Phosphorylation of Dlg by aPKC relieves autoinhibition allowing it to interact with GukH and recruit it to sites containing aPKC. The GukH interaction with microtubules mediates spindle orientation. Individual measurements are included in comma separated value format in Figure 7\u2014source data 1.\n\n## Discussion\n\nThe precise alignment of the mitotic spindle to a cortical mark is important for many cellular processes, including oriented divisions and differentiation (G\u00f6nczy, 2008; Lu and Johnston, 2013a; di Pietro et al., 2016; Roubinet and Cabernard, 2014). The first step in aligning the spindle to the cortex is selecting the cortical site followed by recruitment of protein complexes such as microtubule interacting proteins that will bind to and exert force on astral microtubules. Although the cellular signaling pathways that control cortical site selection ultimately determine where the spindle will be located, we are just beginning to understand the mechanisms that couple signaling systems to spindle orientation complexes. We have identified a mechanism that links the polarity kinase aPKC to an essential spindle orientation factor, GukH via the tumor suppressor Dlg. In previous work (Newman and Prehoda, 2009), we found that autoinhibition of Dlg is required for spindle orientation during neuroblast asymmetric cell division, but the precise role of autoinhibition has been unclear. Here, we show that autoinhibition allows Dlg to function as a regulated adaptor that only recruits GukH when it is phosphorylated by aPKC. Regulation takes advantage of an intramolecular interaction between the Dlg SH3 and GK domains, a common feature of MAGUK proteins (Funke et al., 2005). This mechanism allows Dlg to be recruited to the cortex uniformly, but to only be activated at cortical sites containing aPKC, which may have implications for both spatial and temporal control of spindle orientation. Altogether, these findings suggest that aPKC promotes spindle alignment through Dlg by: (1) phosphorylating Dlg at the apical cell cortex, (2) which prevents SH3-mediated inhibition of GK ligand binding and (3) recruits the downstream spindle orientation protein GukH which (4) establishes a connection to the mitotic spindle by directly binding to microtubules exclusively at the apical cell cortex (Figure 7E). It is important to note that while our work highlights Dlg\u2019s role in connecting aPKC and GukH, it does not exclude a role for other Dlg effectors such as Khc73 (Lu and Prehoda, 2013b) or Banderuola (Mauri et al., 2014) in spindle orientation.\n\nAn important implication of our findings is the identification\u00a0of a new molecular connection between the cortically polarized Par complex and the mitotic spindle. Currently, the best-characterized link between the Par complex and spindle orientation is the scaffolding protein Inscuteable (Knoblich, 2010; Schober et al., 1999; Wodarz et al., 1999). As Inscuteable binds directly to the Par complex member Bazooka (Baz; aka Par-3) and Partner of Inscuteable (Pins; aka LGN), expression of Inscuteable in epithelia and neural stem cells redirects spindle orientation toward the Par complex by directly recruiting Pins and associated spindle orientation proteins such as Mushroom Body Defect (Mud; aka NuMA). Our data demonstrate that aPKC provides an additional link between the Par complex and spindle orientation complexes through phosphorylation and activation of Dlg. In light of biochemical and structural data that Inscuteable and Mud form mutually exclusive complexes with Pins (Mauser and Prehoda, 2012; Zhu et al., 2011), we propose that aPKC-Dlg signaling provides an essential cue from the apical cortex to promote alignment of the mitotic spindle along the apical-basal axis.\n\nAn important prediction of this model is the requirement of aPKC for spindle orientation. In epithelial tissues, such as MDCK epithelial cells, the Drosophila imaginal wing disc epithelium, and Caco-2 epithelial 3D cysts (Durgan et al., 2011; Guilgur et al., 2012; Hao et al., 2010), aPKC is required for spindle alignment within the plane of the epithelium, although it does not appear to be essential for spindle orientation in chick neuroepithelial cells or the Drosophila follicle cell epithelium (Bergstralh et al., 2013; Peyre et al., 2011) but is in neuroblasts and the embryonic epithelium (Guilgur et al., 2012; Kim et al., 2009). These results suggest that the aPKC function in spindle orientation may be cell specific. Dlg is required for planar spindle alignment in the Drosophila follicle cell epithelium (Bergstralh et al., 2013), but the requirement of Dlg in other tissues has not been investigated.\n\nIn addition to unveiling a new link between the Par complex and mitotic spindle orientation proteins, we also identified a regulatory function for Dlg interdomain interactions in mitotic spindle orientation. The SH3GK interaction allosterically regulates GK ligand binding of Dlg and other members of the MAGUK family, although the precise function of this regulatory interaction has not been known. Our work highlights the importance of modulating Dlg interdomain interactions through phosphoregulation and is consistent with previous work showing a cellular role for aPKC-Dlg signaling. A mammalian PKC isoform, PKC\u03b1, phosphorylates human Dlg1 (hDlg1) at a threonine residue within the Hook domain (T656) and regulates primary astrocyte migration (O'Neill et al., 2011). The homologous residue to human Dlg T656 in Drosophila Dlg is S676 that we show is phosphorylated by aPKC, suggesting that phosphorylation of Dlg within the Hook domain by aPKC is an evolutionarily conserved event. Furthermore, the mammalian aPKC homolog, PKC\u03b6, is required for Dlg1 localization to the primary astrocyte leading edge where it binds to the GK-ligand GKAP, which recruits dynein and regulates centrosome positioning during migration (Etienne-Manneville et al., 2005; Manneville et al., 2010). Similar to how aPKC-Dlg signaling restricts GK-binding capacity to the apical cortex in mitotic neuroblasts, PKC phosphorylation of hDlg1 could restrict GK-binding capacity to the leading edge of primary astrocytes, which suggests that Dlg domain allostery can be spatially controlled by phosphoregulation to produce a specific cellular response in diverse cell types.\n\n## Materials and methods\n\n### Cloning, protein expression and purification\n\nDlg PDZSH3GK (residues 474\u2013975) and SH3GK (residues 598\u2013975) fragments were cloned into the pGEX vector for N-terminal GST fusions and the pBH vector for an N-terminal His6 tag. pGEX and pBH vectors were transformed into BL21 Escherichia coli cells and protein expression was induced by addition of 0.5 mM IPTG at 16\u00b0C overnight. Bacterial lysates containing GST fusions were used in qualitative pulldown assays. For His-tag purification, bacterial lysates were incubated with Ni2+-nitrilotriacetic acid resin at 4\u00b0C for 2 hr. The resin was washed with lysis buffer, eluted with Ni2+ elution buffer (50 mM NaH3PO4, 300 mM NaCl, 250 mM imidazole) and dialyzed overnight at 4\u00b0C.\n\nPurification of His-tagged Gukholder (residues 749\u20131044) was performed as previously described for aPKC (Graybill et al., 2012). Briefly, HEK293T cells were transfected with His6-tagged Gukholder cloned into the pCMV vector. The cells were incubated for 72 hr at 37\u00b0C. Lysates were obtained by sonication of cell cultures followed by centrifugation at 15,000 rpm for 30 min at 4\u00b0C. 45% (w/v) ammonium sulfate was added to lysates and the resulting precipitant was centrifuged at 15,000 rpm for 30 min at 4\u00b0C and the pellet was resuspended in Ni2+ lysis buffer (50 mM NaH3PO4, 300 mM NaCl, 10 mM imidazole). Resuspended pellets were incubated with Ni2+-nitrilotriacetic acid resin at 4\u00b0C for 45 min. The resin was washed, eluted, and dialyzed as above.\n\nFull length GukhC cDNA was cloned from an embryonic/larval cDNA library prepared from Oregon-R flies using TRIzol reagent (Thermo Fisher Scientific). Primers used were F \u2013 5\u2019 cacacctaggATGCCCTTCGTCCAGCGCGTGGTGCAG 3\u2019 and R \u2013 5\u2019 atagtttagcggccgcCTACAACGCCGTTTCAAACGAGGGCAG 3\u2019 containing 5\u2019 AvrII and 3\u2019 NotI overhangs for restriction cloning. The PCR product was gel purified and ligated into a modified pMT-HA backbone containing a custom MCS for use with AvrII/NotI. Attempts to amplify isoforms A and E were unsuccessful, suggesting those isoforms may be expressed during later stages of development.\n\n### In vitro kinase assay\n\naPKC phosphorylation of Dlg was performed as previously described (Graybill et al., 2012). Briefly, 20 \u03bcM substrate was pre-incubated with purified aPKC kinase domain in reaction buffer (20 mM HEPES, pH 7.5, 10 mM MgCl2, 1 mM DTT) at 30\u00b0C for 5 min. Reactions were initiated by addition of 1 mM ATP and incubated at 30\u00b0C for 25 min. Reactions were quenched by boiling and analyzed by mass spectrometry (Fred Hutchison Cancer Center Proteomics Core).\n\n### In vitro binding assay\n\nGST fusions of Dlg fragments and mutants were incubated with glutathione agarose beads at 4\u00b0C for 30 min and subsequently washed three times with binding buffer (10 mM HEPES, pH 7.5, 100 mM NaCl, 1 mM dithiothreitol, 0.002% Triton X-100). His-tagged Gukholder (amino acids 749\u20131044) was added to washed beads and incubated at 4\u00b0C for 1 hr. The reactions were then washed three times with binding buffer, eluted by addition of SDS loading buffer, and ran on a 12.5% SDS polyacrylamide gel. SDS-PAGE gels were transferred onto nitrocellulose and blocked in 5% skim milk in TBS-T. Blots were subjected to Western analysis by probing with a primary mouse anti-His antibody (1:1000; Santa Cruz Biotechnology, Santa Cruz CA) and IRDye 800CW goat anti-mouse secondary antibodies and visualized using LiCOR Odyssey.\n\n### MT pelleting assay\n\nRecombinant GST:Gukh fusion proteins were expressed in E. coli BL21-DE(3) cells and purified by binding to glutathione agarose beads, rinsed three times with wash buffer pH 7.4 1 mM, DTT in PBS and eluted with GST elution buffer 10 mM HEPES pH 7.5, 100 mM NaCl, 1 mM DTT. The Gukh microtubule binding domain, GukhMTBD, corresponds to amino acids 404\u2013534 in the Gukholder isoform C sequence, and GukhMTBD-\u2206PBM corresponds to deletion of amino acids 500\u2013512 from the MTBD. Purified proteins were dialyzed in Salt-free Dialysis Buffer, pH 7.4 25 mM Hepes 110 mM KOAc, 20 mM imidazole, 1 mM MgCl2,1 mM EGTA, 0.02% Tween, 5% sucrose, 1 mM DTT and concentrated using a Sartorius VivaSpin 3,000 MW cut-off spin column, and verified for purity and concentration on SDS-PAGE gel. Microtubule binding and pelleting assay was performed as directed in Cytoskeleton Inc. Microtubule Binding Protein Spin Down Assay, Catalog Number: BK029, Lot number 121. Microtubule binding was assessed by diagnostic SDS-PAGE gel.\n\n### S2 cell culture, transfection, and staining\n\nS2 cells were cultured, transfected, stained and visualized as described previously (Wee et al., 2011). Briefly, Dlg fragments and mutants or aPKC were cloned downstream of Ed:GFP or Ed:tdTom in the pMT vector. Flag-tagged Dlg fragments and aPKC were cloned with an N-terminal Flag tag into the pMT vector. Drosophila Schneider\u2019s (S2) cells were maintained in Schneider\u2019s medium (Invitrogen,\u00a0Carlsbad\u00a0CA) with 10% heat-inactivated fetal bovine serum (Cellgro;\u00a0Mediatech,\u00a0Manassas VA) at room temperature. For transfection of S2 cells, approximately 3 \u00d7 106 cells were plated per well and transfected with 1 \u00b5g total DNA according to the Effectene manufacturer\u2019s protocol (Qiagen,\u00a0Venlo,\u00a0Netherlands). Transfection complexes were incubated overnight and protein expression was induced by addition of 0.5 mM CuSO4 for 24 hr. For RNAi experiments, 1 \u00d7 106 cells were transferred to serum-free media before addition of dsRNA, allowed to incubate for 1 hr, and serum-containing media was added to the cells to induce growth. RNAi was performed for 72 hr. Cells were then collected, resuspended in fresh growth medium, and shaken at 175 rpm for 2\u20133 hr to induce localized clustering of Ed transfected cells. 200 \u00b5L of clustered cells were plated on 12 mm diameter coverslips in 24-well plates, allowed to adhere for 1 hr, followed by addition of 300 \u00b5L of fresh growth medium for 3\u20134 hr. Coverslips were fixed in 4% paraformaldehyde (PFA) in PBS, washed three times in washing buffer (0.1% saponin in PBS), and blocked in blocking buffer (0.1% saponin, 1% bovine serum albumin (BSA) in PBS). Primary antibodies used were mouse anti-\u03b1tubulin (1:1000; Santa Cruz\u00a0Biotechnology), mouse anti-HA (1:1000; Covance,\u00a0Denver\u00a0PA), rat anti-tubulin (1:1000; Pierce Biotechnology, Rockford IL), mouse anti-Lamin (1:1000; DSHB), rabbit anti-pH3 (1:7500; Millipore,\u00a0Billerica\u00a0MA), mouse anti-myc (1:1000; Sigma\u00a0Aldrich), and mouse anti-Flag (1:1000; Sigma\u00a0Aldrich). Coverslips were incubated with primary antibodies overnight at 4\u00b0C, washed in washing buffer, incubated with fluorophore-conjugated secondary antibodies (1:500; Jackson Immunoresearch, West Grove PA) in blocking buffer for 2 hr at room temperature, rinsed three times with washing buffer, and mounted on microscope slides using Vectashield Hardset. S2 cell images were acquired using either a Bio-Rad Radiance 2100 confocal microscope using a 1.4NA 60x oil objective, or an Olympus FV1000 confocal microscope using a 1.42NA 60x oil immersion objective. All images were quantified and processed using FIJI (ImageJ), and figures were assembled in GraphPad PRISM 5.0 and Adobe Illustrator CS6.\n\n### Drosophila genetics and brain dissections\n\nStocks used were as follows: w1118 (Bloomington Stock Center) was used as WT; y,v;;UAS-GukhRNAi, homozygous short hairpin insertion on chromosome III was generated by ligating a F/R primer cassette with the sequence: 5\u2019ctagcagtTCCAGCGATCACGAAGTTCTAtagttatattcaagcataTAGAACTTCGTGATCGCTGGAgcg 3\u2019 into pVALIUM20 (TRiP protocol) and injecting plasmid into y,v;;attP2 flies (Genetic Services); y,v;;attP2 was used as the control RNAi; dlgm52/FM7i,B,Act:GFP;Wor-Gal4/Cyo,Act:GFP (gift from Chris Doe lab); FM7i,B,Act:GFP/Y, hemizygous males containing Act:GFP labeled X chromosome for Ctrl rescue selection; FM7i,B,Act:GFP/Y;;UAS-emGFP:DlgWT, homozygous transgene insertion on chromosome III; FM7i,B,Act:GFP;;UAS-emGFP:DlgS662D, homozygous transgene insertion on chromosome III. Gukh RNAi was performed by driving UAS-shRNA expression with the Wor-Gal4 driver at 29\u00b0C. Brains were harvested in third instar larval stages. Dlg deficient third instar larvae were obtained by crossing dlgm52/FM7i,B,Act:GFP; Wor-Gal4/Cyo,Act:GFP females with FM7i,B,Act:GFP males and screening against Act:GFP. The resulting larvae were all GFP- males of genotype dlgm52/Y;Wor-Gal4/+;+/+. Note: dlgm52 hemizygous male larvae die at the larval-pupal transition and exhibit small testes that render them indistinguishable from females. Rescue crosses were performed by crossing dlgm52/FM7i,B,Act:GFP; Wor-Gal4/Cyo,Act:GFP females with transgenic FM7i,B,Act:GFP/Y;;UAS-emGFP:Dlg homozygous males and screening against Act:GFP. The resulting larvae were all GFP- males of genotype dlgm52/Y;Wor-Gal4/+;UAS/+.\n\nAll neuroblasts shown are from 3rd instar larval stage when maternal Dlg load is diminished in neuroblasts. Larval brains were dissected in Schneider\u2019s Media without serum, followed by a 20-min fixation in PBS with 4% paraformaldehyde. Brains were permeabilized with 0.3% Triton-X100 in PBS for 30 min, then blocked in 0.3% Triton-X100% and 1% BSA for 1 hr at room temperature. Primary antibodies were diluted in blocking buffer and incubated overnight at 4\u00b0C.\n\nPrimary antibodies used were mouse anti-Dlg (1:1000; DSHB), rabbit anti-PKC\u03b6 (1:1000; Santa Cruz\u00a0Biotechnology); rabbit anti-Cnn (1:500; gift from Kaufman Lab), rat anti-Mira (1:1000; Abcam,\u00a0Cambridge\u00a0MA), mouse anti-\u03b3tubulin (1:500; Sigma\u00a0Aldrich). Brains were washed 3x with block solution. Secondary antibodies were diluted in blocking buffer but were incubated for 1.5 hr at room temperature.\n\nSecondary antibodies used were donkey anti-mouse Alexa-488, donkey anti-rabbit DyLight-649, donkey anti-rabbit Alexa-647, donkey anti-rat Cy3, all obtained form Jackson Immunoresearch. All secondary antibodies were highly cross-adsorbed against other species in order to minimize cross-reactivity and false-positive signal. Samples were thoroughly washed in PBS then stored and mounted in SlowFade Diamond with DAPI solution (Thermo Fisher Scientific).\n\nBrain scans were performed using either an Olympus FV1000 laser scanning confocal using a 1.3NA 40x oil objective, or a Zeiss LSM880 laser scanning confocal microscope equipped with a S.1 super resolution structured illumination module using a 1.4NA 40x oil objective. Images were quantified and processed using FIJI (ImageJ) and figures assembled in GraphPad PRISM 5.0 and Adobe Illustrator CS6.\n",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "04988ccb-e4a3-412d-8cbd-6cc3604ee0b5",
+      "submission_id": "b58e5011-f77d-4593-b165-ec7d52d32394",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yukiko M Yamashita, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32137.017](https://doi.org/10.7554/eLife.32137.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Activation of Discs large by aPKC couples cell polarity and the mitotic spindle during asymmetric cell division\" for consideration by eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior Editor) and two reviewers, one of whom, Yukiko M Yamashita (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes a mechanism by which spindle orientation is connected to cortical polarity. Specifically, the authors show that Dlg (cortical polarity) is connected to microtubule via GukH, and their interaction is regulated by aPKC-mediated phosphorylation. The study is conducted to a high standard, and the manuscript was reviewed favorably.\n\nEssential revisions:\n\nWhereas the study is conducted to a highest standard, one of the reviewers raised a question as to whether the study provides sufficient progress compared to the existing knowledge in the field, in particular in the light of the authors' own study concerning Dlg and GukH (Newman and Prehoda 2009). (We understand that the previous study did not show GukH's direct interaction with microtubule and thus the present study represents a good advancement in showing directness of the interaction.) With that said, it is important that the manuscript precisely conveys what is the major advancement of the present study, and we ask the authors to revise the manuscript accordingly.\n\nIn addition, the reviewers felt that the manuscript can benefit by addressing some outstanding questions. For example:\n\n1) Can the authors delete the Guk domain and see if it recapitulates the dlg[M52] mutant phenotype? If Guk domain is essential for Dlg function, such experiments will reveal the key mechanism by which Dlg regulates asymmetric neuroblast division.\n\n2) Why over-expressing Dlg[S662D] only rescued mis-alignment of the spindle in ~60% of neuroblasts whereas the full-length completely rescued this phenotype?\n\n3) Mauri et al., proposed Bnd functions in parallel to Dlg. 'They probably should take this paper into consideration, and somehow integrate it into their work to broaden the scope of this study.\n\nReviewer #1:\n\nIn this manuscript, Prehoda and colleagues study how spindle orientation is linked to cell polarity, a critically important question in understanding the mechanism of asymmetric cell divisions. They provide an elegant mechanism by which Dlg is regulated by the activity of aPKC to anchor (or not) GukH, which in turn orients spindle.\n\nThis is a very careful and thorough study that provides a critical new link between cell polarity and spindle orientation. This is an important study that adds to our knowledge in spindle orientation, and I am in favor of publishing this manuscript in eLife.\n\n1) GukH localization in neuroblast? Especially because its localization in S2 cells is not so convincing, I'd love to see its localization in neuroblasts.\n\n2) Figure 6A, B: why does Miranda mislocalize upon GukH RNAi? I might be missing some well-established relationship between apical and basal crescent in neuroblasts, but I thought that disruption of spindle orientation pathway (instead of 'apical polarity pathway') wouldn't cause basal crescent disruption. Even if it's a well-known phenomenon, elaborating it would help accessibility of general readers. Also, in this figure, aPKC is the only apical protein that was examined. It may help understanding of GukH-mediated spindle orientation mechanism if they check other apical proteins.\n\n3) Spindle orientation phenotype of dlg and GukH mutants/RNAi seems to be somewhat weak. Certainly, it can be redundancy with other pathways, such as Insc \u2013 it might be helpful at least to discuss about this point.\n\nReviewer #2:\n\nThe manuscript by Golub et al. explores how spindle orientation is coupled with cortical cell polarity, and insights into how these two processes are precisely coordinated are directly relevant to virtually all biological contexts involving asymmetric cell divisions. Disc large (Dlg) is a classical neoplastic tumor suppressor gene that was initially identified in flies and was subsequently characterized in other vertebrate contexts. A role for Dlg in regulating spindle orientation is well established, but the mechanisms are not understood. Furthermore, how Dlg functions coordinately with cortical polarity cues mainly the Par complex to regulate asymmetric cell division was also poorly understood. This study offers new insights indicating that phosphorylation by aPKC contributes to the activation of Dlg functions in orienting the mitotic spindle. The reviewer appreciates the multidisciplinary approaches used in this study to unravel the mechanism.\n\nAlthough the data are solid and the experiments are well executed, the findings of this study appear extremely narrow, and do not significantly improve our understanding of how cortical cell polarity and spindle orientation are precisely coordinated. This is in part due to an earlier work from the same lab (Newman and Prehoda, 2009) provided some evidence suggesting that the intramolecular changes likely play an importantly role in Dlg functions. A more profound concern in my mind is the significance of this intramolecular interaction in regulating asymmetric cell division in light of another paper by Mauri et al., 2014 reporting that the dlg[sw] mutant brains do not display ectopic neuroblast formation. This study raised the question of how functional significance of the Guk domain to Dlg function. There are clearly multiple parallel mechanisms that are in place to ensure precise coordination of spindle orientation and asymmetric segregation of various membrane-localized proteins. I am having a really hard time appreciating how these new data improve the overall understanding of the regulation of spindle orientation and asymmetric protein segregation.\n\n1) I would like to suggest that these investigators broaden the breadth of their study by connecting their findings with other parallel mechanisms that coordinate spindle orientation and asymmetric protein segregation. For example, how does the protein Bnd described in Mauri et al., fit into the mechanisms that these investigators describe in this manuscript? How do Khc73 and the dynein-dynactin pathway fit into their model?\n\n2) The authors concluded that Dlg regulates spindle orientation, but the images that they showed in most of their figures lacked some sort of Tubulin staining to show spindle orientation.\n\n3) Why didn't the over-expression of Dlg[S662D] rescue the spindle orientation defects as well as polarization of Miranda to the same extend as Dlg[wt] in Figure 3?\n",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "99965d5d-ee03-4e09-8a42-060e97db66eb",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C1",
+      "claim": "Asymmetric division generates cellular diversity by producing daughter cells with different fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric division generates cellular diversity by producing daughter cells with different fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about asymmetric division supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "daa1dc30-b323-44c5-bfc6-d22b5b136b01",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C2",
+      "claim": "In animals, the mitotic spindle aligns with Par complex polarized fate determinants, ensuring that fate determinant cortical domains are bisected by the cleavage furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, the mitotic spindle aligns with Par complex polarized fate determinants, ensuring that fate determinant cortical domains are bisected by the cleavage furrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about asymmetric cell division mechanisms in animals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "f2fd3ac1-1a3c-4dd7-a986-b961d15307cf",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C3",
+      "claim": "The tumor suppressor Discs large (Dlg) links the Par complex component atypical Protein Kinase C (aPKC) to the essential spindle orientation factor GukHolder (GukH).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the tumor suppressor Discs large (Dlg) links the Par complex component atypical Protein Kinase C (aPKC) to the essential spindle orientation factor GukHolder (GukH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by multiple experimental results including binding assays, spindle orientation assays, and in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "fb017eb0-3449-4a2d-9d9c-c0bf09c2ac6f",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C4",
+      "claim": "Dlg is autoinhibited by an intramolecular interaction between its SH3 and GK domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg is autoinhibited by an intramolecular interaction between its SH3 and GK domains, preventing Dlg interaction with GukH at cortical sites lacking aPKC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing differential binding of GukH to GK versus SH3GK constructs, and by previous literature citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "9d5893ce-f4ab-4949-a491-4d5d4e88630a",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C5",
+      "claim": "The intramolecular interaction between SH3 and GK domains prevents Dlg interaction with GukH at cortical sites lacking aPKC.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg is autoinhibited by an intramolecular interaction between its SH3 and GK domains, preventing Dlg interaction with GukH at cortical sites lacking aPKC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that GukH recruitment requires aPKC phosphorylation of Dlg SH3GK.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "9aa00909-36f3-4a81-a77a-cac7e49611f3",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C6",
+      "claim": "When co-localized with aPKC, Dlg is phosphorylated in its SH3 domain which disrupts autoinhibition and allows GukH recruitment by the GK domain.",
+      "claim_type": "EXPLICIT",
+      "source": "When co-localized with aPKC, Dlg is phosphorylated in its SH3 domain which disrupts autoinhibition and allows GukH recruitment by the GK domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry identification of phosphorylation sites, binding assays with phosphomimetic mutants, and GukH recruitment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "7edc4b41-be86-4bfe-8a1a-69173d70c1a2",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C7",
+      "claim": "Asymmetric division produces daughter cells that assume distinct fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric division is a common mechanism for generating cellular diversity, as it produces daughter cells that assume distinct fates (Knoblich, 2010; Roubinet and Cabernard, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "9b2a77a5-35ce-426b-929c-f76a3e4f6ac1",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C8",
+      "claim": "Unique sets of fate determinants become polarized into discrete cortical domains that are bisected by the cleavage furrow as mitosis is completed.",
+      "claim_type": "EXPLICIT",
+      "source": "As the asymmetrically dividing cell proceeds through mitosis, unique sets of fate determinants become polarized into discrete cortical domains that are bisected by the cleavage furrow as mitosis is completed (G\u00f6nczy, 2008; Nance and Zallen, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "ae492193-711c-4dd1-89d2-0c7a3aa40c55",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C9",
+      "claim": "Furrow position is controlled by the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "Because furrow position is controlled by the mitotic spindle (Barr and Gruneberg, 2007; Fededa and Gerlich, 2012; Glotzer, 2005), segregation of fate determinants during asymmetric cell division requires precise coupling between cell polarity and spindle orientation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "44d687de-1efa-414a-a5f1-a73b56889385",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C10",
+      "claim": "Segregation of fate determinants during asymmetric cell division requires precise coupling between cell polarity and spindle orientation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Because furrow position is controlled by the mitotic spindle (Barr and Gruneberg, 2007; Fededa and Gerlich, 2012; Glotzer, 2005), segregation of fate determinants during asymmetric cell division requires precise coupling between cell polarity and spindle orientation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between spindle position and furrow position, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "2c120616-bd08-4d3f-96ee-3e69281023c7",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C11",
+      "claim": "Neuroblasts populate the fly central nervous system by undergoing repeated asymmetric divisions during embryonic and larval developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuroblasts populate the fly central nervous system by undergoing repeated asymmetric divisions during embryonic and larval developmental stages (Gallaud et al., 2017; Knoblich, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "8adbc79d-0fc9-4cc3-9a26-3d7665797db6",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C12",
+      "claim": "At the completion of a typical neuroblast division, one daughter cell retains the neuroblast fate (i.e. self-renewal), whereas the other assumes a differentiated fate (e.g. neuron).",
+      "claim_type": "EXPLICIT",
+      "source": "At the completion of a typical division, one daughter cell retains the neuroblast fate (i.e. self-renewal), whereas the other assumes a differentiated fate (e.g. neuron).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about neuroblast asymmetric division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "d78876d3-cd8a-42cb-803b-fe34d2857979",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C13",
+      "claim": "The basal cortical domain contains molecules important for specifying neuronal fate, such as Miranda, Brat, and Prospero.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal cortical domain contains molecules important for specifying neuronal fate, such as Miranda, Brat, and Prospero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about neuroblast polarity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "945af5cd-757c-4fca-96e2-bbf3f51096d3",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C14",
+      "claim": "The apical cortical domain contains the Par polarity complex, which restricts the neuronal fate determinants to the basal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The apical cortical domain contains a number of regulatory proteins including the Par polarity complex, which restricts the neuronal fate determinants to the basal domain (Atwood and Prehoda, 2009; Bailey and Prehoda, 2015; Wirtz-Peitz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "8a399376-405b-4d67-b325-3baad7b0b733",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C15",
+      "claim": "The apical cortical domain contains proteins that align the spindle along the apical-basal polarity axis, such as Partner of Inscuteable (Pins) and the tumor suppressor Discs large (Dlg).",
+      "claim_type": "EXPLICIT",
+      "source": "This domain also contains proteins that align the spindle along the apical-basal polarity axis, such as Partner of Inscuteable (Pins) and the tumor suppressor Discs large (Dlg) (Lu and Johnston, 2013a; Roubinet and Cabernard, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "b0506f30-981a-4604-8c3f-35b88e2f9ea9",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C16",
+      "claim": "Dlg is found at non-apical cortical regions in neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Dlg is also found at non-apical cortical regions (Albertson and Doe, 2003) suggesting that other mechanisms besides polarization are likely to be necessary to ensure its activity is restricted to the apical cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and by Figure 1B showing Dlg localization at both apical and non-apical regions.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "bdff035b-64cb-4b55-88da-fd6cec4f6018",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C17",
+      "claim": "Mechanisms besides polarization are likely necessary to ensure Dlg activity is restricted to the apical cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Dlg is also found at non-apical cortical regions (Albertson and Doe, 2003) suggesting that other mechanisms besides polarization are likely to be necessary to ensure its activity is restricted to the apical cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Dlg is present at non-apical regions but only functions apically.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "64f0531e-8df0-4d2e-aba3-175ec2e6cb48",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C18",
+      "claim": "Dlg is a member of the Membrane Associated Guanylate Kinase (MAGUK) family of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg is a member of the Membrane Associated Guanylate Kinase (MAGUK) family of proteins that regulate diverse cellular processes including adhesion and neuronal synapse formation (Anderson et al., 2016; Oliva et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "94112f29-3d9c-4f66-992e-9ce2064eb8a6",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C19",
+      "claim": "MAGUK proteins regulate diverse cellular processes including adhesion and neuronal synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg is a member of the Membrane Associated Guanylate Kinase (MAGUK) family of proteins that regulate diverse cellular processes including adhesion and neuronal synapse formation (Anderson et al., 2016; Oliva et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "d9cb1676-6761-4429-be57-59e3000acd82",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C20",
+      "claim": "Dlg contains a GK protein interaction module that binds downstream effector proteins, such as the kinesin Khc73.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other MAGUKs, Dlg contains a GK protein interaction module that binds downstream effector proteins, such as the kinesin Khc73 (Figure 1A) (Albertson and Doe, 2003; Lu and Prehoda, 2013b; Newman and Prehoda, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to previous literature and Figure 1A showing the domain structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "c8afdb8f-0410-4f0c-97db-8da5d975da9c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C21",
+      "claim": "The Dlg GK domain is required for neuroblast spindle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dlg GK domain is required for neuroblast spindle orientation (Siegrist and Doe, 2005), presumably because of its role in recruiting these effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "aaf13b99-9774-4488-8f08-a10d56ab764f",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C22",
+      "claim": "Binding of certain GK targets can be blocked by an autoinhibitory intramolecular interaction between the GK and an adjacent SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of certain GK targets can be blocked, however, by an autoinhibitory intramolecular interaction between the GK and an adjacent SH3 domain (Johnston et al., 2009; Marcette et al., 2009; McGee et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "e587200e-ba2a-4cf9-a693-4857a31e9c62",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C23",
+      "claim": "Polarized Dlg GK induces spindle alignment in cultured Drosophila S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured Drosophila S2 cells, polarized Dlg GK induces spindle alignment, but polarized SH3GK does not (Marcette et al., 2009), suggesting that the intramolecular interaction inhibits Dlg's spindle orientation activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "02afe2a6-5b60-47e0-82e3-778ae5201b43",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C24",
+      "claim": "Polarized SH3GK does not induce spindle alignment in cultured Drosophila S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured Drosophila S2 cells, polarized Dlg GK induces spindle alignment, but polarized SH3GK does not (Marcette et al., 2009), suggesting that the intramolecular interaction inhibits Dlg's spindle orientation activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "64833055-f022-48f4-9338-bd5144e8680b",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C25",
+      "claim": "The intramolecular interaction inhibits Dlg's spindle orientation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured Drosophila S2 cells, polarized Dlg GK induces spindle alignment, but polarized SH3GK does not (Marcette et al., 2009), suggesting that the intramolecular interaction inhibits Dlg's spindle orientation activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that SH3GK does not induce spindle alignment while GK alone does.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "8a0d8faf-5299-4ef8-8290-63919e2a72c4",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C26",
+      "claim": "The intramolecular interaction is required for Dlg function in vivo as neuroblasts containing a dlg allele that lacks the interaction (dlgsw) is non-functional.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the intramolecular interaction is required for Dlg function in vivo as neuroblasts containing a dlg allele that lacks the interaction (dlgsw) is non-functional (Newman and Prehoda, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "952400ee-c17a-4e9d-b719-c3bedde21d26",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C27",
+      "claim": "aPKC directly phosphorylates Dlg at S662 located within the SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed two primary modified residues, S662 located within the SH3 domain, and S676 located just COOH-terminal to the SH3 (sometimes called the 'HOOK' motif) (Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry analysis following in vitro kinase assay with aPKC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "55e1e60a-1ad0-4b20-92a8-dbe7cc1e46be",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C28",
+      "claim": "aPKC directly phosphorylates Dlg at S676 located just COOH-terminal to the SH3 domain in the HOOK motif.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed two primary modified residues, S662 located within the SH3 domain, and S676 located just COOH-terminal to the SH3 (sometimes called the 'HOOK' motif) (Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry analysis following in vitro kinase assay with aPKC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "ab01b14b-65a4-42d0-a74a-ab476aa045ad",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C29",
+      "claim": "S2 spindles are biased toward crescents of Ed fusions with Dlg's GK domain (Ed:GK).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Garcia et al., 2014; Johnston et al., 2009; Marcette et al., 2009), we found that S2 spindles are biased toward crescents of Ed fusions with Dlg's GK domain (Ed:GK), whereas spindles in S2 cells expressing Ed:SH3GK were randomly oriented indistinguishable from those expressing Ed:GFP (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "1fb9a09e-6446-41bc-9c73-a16e11338c12",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C30",
+      "claim": "Spindles in S2 cells expressing Ed:SH3GK were randomly oriented indistinguishable from those expressing Ed:GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Garcia et al., 2014; Johnston et al., 2009; Marcette et al., 2009), we found that S2 spindles are biased toward crescents of Ed fusions with Dlg's GK domain (Ed:GK), whereas spindles in S2 cells expressing Ed:SH3GK were randomly oriented indistinguishable from those expressing Ed:GFP (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B,D and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "0aa1be2e-1522-40d1-8808-5a883cf8369b",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C31",
+      "claim": "Coexpression of Ed:SH3GK with aPKC induced spindle alignment to SH3GK indistinguishable from that of cells expressing Ed:GK alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While S2 cells expressing Ed:SH3GK alone fail to orient their spindles, coexpression with aPKC induced alignment to SH3GK indistinguishable from that of cells expressing Ed:GK alone (Figure 2C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "3d80b0d8-540a-4748-aad9-8df245e9bb5c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C32",
+      "claim": "Spindle alignment to SH3GK is dependent upon aPKC's catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindle alignment to SH3GK is dependent upon aPKC's catalytic activity, as expression of a kinase dead aPKCK293W mutant failed to result in spindle alignment to Ed:SH3GK contacts (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "70ce40af-73db-4cbc-b3bb-01ebbb92cb64",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C33",
+      "claim": "aPKC expression with the non-phosphorylatable Ed:SH3GK2A (S662A, S676A) Dlg variant failed to result in aligned spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, aPKC expression with the non-phosphorylatable Ed:SH3GK2A (S662A, S676A) Dlg variant also failed to result in aligned spindles (Figure 2I) indicating that modification of these sites is necessary for SH3GK-mediated spindle orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "5cb396d2-3b01-4b86-b0fa-64b6c3817fb0",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C34",
+      "claim": "Modification of S662 and S676 is necessary for SH3GK-mediated spindle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, aPKC expression with the non-phosphorylatable Ed:SH3GK2A (S662A, S676A) Dlg variant also failed to result in aligned spindles (Figure 2I) indicating that modification of these sites is necessary for SH3GK-mediated spindle orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that the non-phosphorylatable mutant fails to orient spindles even with aPKC present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "a8d38457-34d7-4165-80bd-cbb6f9f0d2c8",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C35",
+      "claim": "Phosphorylation at either S662 or S676 is sufficient for SH3GK-mediated spindle orientation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, phosphorylation at either site is sufficient for this activity as S2 spindles aligned to crescents of Ed:SH3GK variants containing mutations meant to mimic phosphorylation (S662D or S676D) in a manner independent of aPKC (Figure 2E-G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E-G showing that phosphomimetic mutants orient spindles without aPKC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "c94392fc-ad9d-45eb-a733-90bb278783f3",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C36",
+      "claim": "Loss of aPKC causes the spindle to become misaligned in neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of aPKC causes the spindle to become misaligned (Guilgur et al., 2012; Kim et al., 2009), although how aPKC activity is linked to spindle positioning has been unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "c728a1bf-3460-41f1-b3e9-ffdcb0e7e54b",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C37",
+      "claim": "Loss of Dlg results in a moderate spindle orientation phenotype in neuroblasts because of redundancy with the Inscuteable pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Dlg results in a moderate spindle orientation phenotype in neuroblasts because of redundancy with the Inscuteable pathway (Siegrist and Doe, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "46f38600-1b0f-42ce-ada2-72da5073011b",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C38",
+      "claim": "The dlgm52 allele lacks endogenous Dlg in third instar larval neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm that the dlgm52 allele lacks endogenous Dlg in third instar larval neuroblasts based on immunostaining, which resulted in a reduced precision of spindle alignment with cortical polarity (Figure 3B,C) (Albertson and Doe, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by immunostaining data shown in Figure 3C and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "275102f6-807e-495f-bc12-1efc43611c52",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C39",
+      "claim": "The dlgm52 allele results in reduced precision of spindle alignment with cortical polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm that the dlgm52 allele lacks endogenous Dlg in third instar larval neuroblasts based on immunostaining, which resulted in a reduced precision of spindle alignment with cortical polarity (Figure 3B,C) (Albertson and Doe, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "ba252ba1-0d25-4094-8050-e4ba1ad974d0",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C40",
+      "claim": "Exogenous expression of DlgWT fully rescued the dlgm52 spindle orientation defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenous expression of DlgWT fully rescued this defect; however, neuroblasts expressing Dlg containing the phosphomimetic S662D mutation exhibited a spindle orientation defect indistinguishable from dlgm52 mutants (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "9fb5bb7c-7f31-40df-a150-18d3473641d9",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C41",
+      "claim": "Neuroblasts expressing Dlg containing the phosphomimetic S662D mutation exhibited a spindle orientation defect indistinguishable from dlgm52 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenous expression of DlgWT fully rescued this defect; however, neuroblasts expressing Dlg containing the phosphomimetic S662D mutation exhibited a spindle orientation defect indistinguishable from dlgm52 mutants (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "a9fadcfd-0e3c-4d34-a5e6-17af75144295",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C42",
+      "claim": "The S662D mutation activates Dlg such that its activity is no longer restricted to the apical cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is consistent with a requirement for Dlg regulation via modification at this site as the S662D mutation activates Dlg such that its activity is no longer restricted to the apical cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the phosphomimetic mutant causes spindle orientation defects similar to loss of Dlg.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "45146789-0581-4e49-9add-10e711182911",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C43",
+      "claim": "DlgS662D partially rescues the polarity defect that results from the loss of Dlg.",
+      "claim_type": "EXPLICIT",
+      "source": "We did however observe partial rescue by DlgS662D of the polarity defect that results from the loss of Dlg (Figure 3E',F), suggesting that the SH3-mediated regulation of the GK domain is not part of Dlg's role in regulating cell polarity (Ohshiro et al., 2000; Peng et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E',F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "adb8b621-03e0-411d-804e-6a784e07bfa5",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C44",
+      "claim": "The SH3-mediated regulation of the GK domain is not part of Dlg's role in regulating cell polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "We did however observe partial rescue by DlgS662D of the polarity defect that results from the loss of Dlg (Figure 3E',F), suggesting that the SH3-mediated regulation of the GK domain is not part of Dlg's role in regulating cell polarity (Ohshiro et al., 2000; Peng et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the phosphomimetic mutant can rescue polarity but not spindle orientation, and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "1cc0201f-bf96-4489-adff-c8306c8a747f",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C45",
+      "claim": "Regulation of the SH3GK Dlg module by aPKC is a critical step in coupling apical polarity to spindle orientation in Drosophila neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that regulation of the SH3GK Dlg module by aPKC is a critical step in coupling apical polarity to spindle orientation in Drosophila neuroblasts, as misregulation of this interaction with a constitutively active variant of Dlg results in aberrant spindle positioning in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental data showing that the phosphomimetic mutant causes spindle orientation defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "657c0e36-da0d-480c-abb3-84eeef9154b9",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C46",
+      "claim": "Spindles in S2 cells with polarized Ed:aPKC were randomly oriented.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindles in S2 cells with polarized Ed:aPKC were randomly oriented (Figure 4A,B) indicating that aPKC alone is insufficient to induce alignment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "dc19f44a-046a-4aec-9af5-8ef9b85ce3bc",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C47",
+      "claim": "aPKC alone is insufficient to induce spindle alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindles in S2 cells with polarized Ed:aPKC were randomly oriented (Figure 4A,B) indicating that aPKC alone is insufficient to induce alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Ed:aPKC alone does not orient spindles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "45c5ea63-c005-4a94-99af-8509540f6c28",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C48",
+      "claim": "Co-expression of Ed:aPKC with Dlg SH3GK yielded spindle orientation levels similar to Ed:SH3GK activated by soluble aPKC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-expression with Dlg SH3GK, which localizes uniformly to the S2 cell cortex (Figure 4A), yielded spindle orientation levels similar to Ed:SH3GK activated by soluble aPKC (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "2e576b74-ddf2-4c9f-9c24-b8289e161869",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C49",
+      "claim": "The observed increase in spindle orientation activity was dependent on aPKC kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This observed increase in activity was dependent on aPKC kinase activity, as a kinase dead Ed:aPKCK293W expressed with DlgSH3GK did not result in oriented spindles (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "42a8daa8-51e9-46ba-bdcc-736fd3f1fe90",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C50",
+      "claim": "The non-phosphorylatable Dlg SH3GK2A variant failed to orient the spindle relative to Ed:aPKC crescents.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the non-phosphorylatable Dlg SH3GK2A variant also failed to orient the spindle relative to Ed:aPKC crescents (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "6707ae0d-f821-4392-987b-145e45f3c878",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C51",
+      "claim": "The Dlg SH3GK couples cortically polarized aPKC to spindle position via phosphorylation of the SH3 residues, S662 and S676.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the Dlg SH3GK couples cortically polarized aPKC to spindle position via phosphorylation of the SH3 residues, S662 and S676.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental data showing that aPKC phosphorylation of these sites is necessary for spindle orientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "fd8a6775-6ff1-4bb1-a729-6a8a6577ec8f",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C52",
+      "claim": "The kinesin Khc73 is essential for Dlg-mediated spindle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinesin Khc73 is a good candidate for an aPKC regulated Dlg ligand because it is essential for Dlg-mediated spindle orientation and binds to Dlg's GK via its MAGUK Binding Stalk (MBS) (Hanada et al., 2000; Lu and Prehoda, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "e4a325df-b4e3-4e68-a1d7-5d586a29e87d",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C53",
+      "claim": "Khc73 binds to Dlg's GK via its MAGUK Binding Stalk (MBS).",
+      "claim_type": "EXPLICIT",
+      "source": "The kinesin Khc73 is a good candidate for an aPKC regulated Dlg ligand because it is essential for Dlg-mediated spindle orientation and binds to Dlg's GK via its MAGUK Binding Stalk (MBS) (Hanada et al., 2000; Lu and Prehoda, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "da720e94-a7bd-4726-8e9d-bae8ce27b1a6",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C54",
+      "claim": "Khc73 MBS binding to Dlg is not inhibited by the intramolecular SH3-GK interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we compared binding of purified Khc73 MBS to Dlg's GK and SH3GK modules and observed no difference, indicating that its binding is not inhibited by the intramolecular interaction (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "dbf90b76-22e6-43f8-a548-4ca9be399f37",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C55",
+      "claim": "Binding of the GK ligand GukHolder (GukH) is strongly repressed by the SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, binding of the GK ligand GukHolder (GukH) is strongly repressed by the SH3 domain (Figure 5A) (Marcette et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "b81361bd-ecb2-4430-a89b-50830d225e63",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C56",
+      "claim": "Modification of either S662 or S676 with phosphomimetic mutations (S662D or S676D) allows the SH3GK to bind GukH.",
+      "claim_type": "EXPLICIT",
+      "source": "Modification of either of the aPKC phosphorylation sites with phosphomimetic mutations (S662D or S676D) allows the SH3GK to bind GukH (Figure 5A), indicating that regulation of GukH binding could allow for coupling between aPKC phosphorylation and Dlg-mediated spindle orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "3e1dbb2b-7012-4a94-97e2-a14eec0e120c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C57",
+      "claim": "GukH is known to localize to the neuroblast apical cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although GukH is known to localize to the neuroblast apical cortex (Albertson and Doe, 2003), the mechanism of its localization has been unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "3c089997-342c-4198-a8f5-59f479bfb4d4",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C58",
+      "claim": "GukH is efficiently recruited to crescents of Ed:GK.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that while GukH is efficiently recruited to crescents of Ed:GK, it fails to localize to crescents of Ed:GFP or Ed:SH3GK (Figure 5B\u2013D,J), suggesting that the Dlg intramolecular interaction prevents GukH recruitment consistent with our observations with purified components (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B-D,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "8df9adfa-3773-4a0a-864f-5467eb558800",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C59",
+      "claim": "GukH fails to localize to crescents of Ed:GFP or Ed:SH3GK.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that while GukH is efficiently recruited to crescents of Ed:GK, it fails to localize to crescents of Ed:GFP or Ed:SH3GK (Figure 5B\u2013D,J), suggesting that the Dlg intramolecular interaction prevents GukH recruitment consistent with our observations with purified components (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B-D,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "6ba23cb8-1282-405c-a055-961476b5938b",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C60",
+      "claim": "The Dlg intramolecular interaction prevents GukH recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that while GukH is efficiently recruited to crescents of Ed:GK, it fails to localize to crescents of Ed:GFP or Ed:SH3GK (Figure 5B\u2013D,J), suggesting that the Dlg intramolecular interaction prevents GukH recruitment consistent with our observations with purified components (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that GukH binds to GK but not SH3GK in both purified protein and cell-based assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "02b319c4-4807-4d38-9987-829b1d1ef443",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C61",
+      "claim": "GukH is efficiently recruited to crescents of Ed:SH3GK containing either of the phosphomimetic mutations S662D or S676D.",
+      "claim_type": "EXPLICIT",
+      "source": "GukH is efficiently recruited; however, to crescents of Ed:SH3GK containing either of the phosphomimetic mutations S662D or S676D, or to wild-type Ed:SH3GK when aPKC is expressed (Figure 5E\u2013G,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5E-G,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "f4e1235f-200b-4b79-a6be-0b9d680d687c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C62",
+      "claim": "GukH is efficiently recruited to wild-type Ed:SH3GK when aPKC is expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "GukH is efficiently recruited; however, to crescents of Ed:SH3GK containing either of the phosphomimetic mutations S662D or S676D, or to wild-type Ed:SH3GK when aPKC is expressed (Figure 5E\u2013G,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5E-G,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "2949ebc9-2c30-4dea-b9aa-487d1d283383",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C63",
+      "claim": "Recruitment of GukH to Ed:SH3GK by aPKC requires aPKC kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment to Ed:SH3GK by aPKC requires its kinase activity (Figure 5H,J) and the presence of phosphorylatable residues at the SH3 sites (Figure 5I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5H,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "30f06e7b-f344-443f-be57-0ab68b553b13",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C64",
+      "claim": "Recruitment of GukH to Ed:SH3GK by aPKC requires the presence of phosphorylatable residues at the SH3 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment to Ed:SH3GK by aPKC requires its kinase activity (Figure 5H,J) and the presence of phosphorylatable residues at the SH3 sites (Figure 5I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "df2b3273-079c-4d85-8b59-34aee3485efd",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C65",
+      "claim": "aPKC spatially regulates Dlg spindle orientation activity by allowing it to recruit the GK ligand GukH specifically at the apical cortex where aPKC and Dlg colocalize.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our functional spindle orientation results, these data support a model in which aPKC spatially regulates Dlg spindle orientation activity by allowing it to recruit the GK ligand GukH specifically at the apical cortex where aPKC and Dlg colocalize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model inferred from the combined experimental data on phosphorylation, GukH recruitment, and spindle orientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "2095952d-34fe-4df1-8345-422e7d09ea9d",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C66",
+      "claim": "GukH is required for GK-mediated spindle orientation in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although GukH is required for GK-mediated spindle orientation in S2 cells (Garcia et al., 2014) and is localized to the apical cortex in metaphase neuroblasts (Albertson and Doe, 2003), its requirement for spindle orientation in vivo had not been determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "95f546bb-339c-4e96-a826-01b639851e9a",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C67",
+      "claim": "Expression of RNAi against gukh using the neuroblast-specific worniu-Gal4 driver resulted in a spindle orientation defect in larval neuroblasts indistinguishable from that observed in neuroblasts from dlg mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "When we expressed the RNAi using the neuroblast-specific worniu-Gal4 driver, we observed a spindle orientation defect in larval neuroblasts indistinguishable from that observed in neuroblasts from dlg mutants (Figure 3C and 6A,B) (Albertson and Doe, 2003; Siegrist and Doe, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A,B and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "1cda2bd6-7bfa-42bb-a08d-5533afe4278f",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C68",
+      "claim": "GukH function is required for spindle orientation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GukH function is required for spindle orientation in vivo and the gukh phenotype is consistent with its function in the Dlg pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the RNAi experiments showing spindle orientation defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "82aa14ed-83ac-490d-bc77-4ce8d22f7644",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C69",
+      "claim": "The gukh phenotype is consistent with its function in the Dlg pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GukH function is required for spindle orientation in vivo and the gukh phenotype is consistent with its function in the Dlg pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of the gukh and dlg phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "c45f89eb-22f5-4347-a58d-928a8b8032e1",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C70",
+      "claim": "GukH plays a role in Dlg's function in cell polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find that GukH plays a role in Dlg's function in cell polarity (Ohshiro et al., 2000; Peng et al., 2000), as GukH is required for Miranda polarity (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A,B and citations to previous work on Dlg's role in polarity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "d4131669-3fb7-4cdc-a695-d653d3355f5b",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C71",
+      "claim": "GukH is required for Miranda polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find that GukH plays a role in Dlg's function in cell polarity (Ohshiro et al., 2000; Peng et al., 2000), as GukH is required for Miranda polarity (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "c0d62241-743c-4fe1-83ba-989e0f77b82f",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C72",
+      "claim": "GukH is known to bind the tumor suppressor Scribble (Scrib).",
+      "claim_type": "EXPLICIT",
+      "source": "As GukH is known to bind the tumor suppressor Scribble (Scrib) (Mathew et al., 2002), we tested if GukH influences Scrib localization in neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "f1cbe95b-e749-4b52-b30e-c96017946afd",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C73",
+      "claim": "Scrib localization is independent of GukH.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Scrib localization is independent of GukH suggesting that either GukH functions downstream of Scrib, or its role in polarity is Scrib-independent (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "0e5d294e-078c-4d8a-9db2-49a5fba04a7c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C74",
+      "claim": "Either GukH functions downstream of Scrib, or its role in polarity is Scrib-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Scrib localization is independent of GukH suggesting that either GukH functions downstream of Scrib, or its role in polarity is Scrib-independent (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Scrib localization is not affected by GukH loss.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "092b55e7-b2f8-41df-a888-b4e076d1f30c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C75",
+      "claim": "Full-length GukH isoform C (GukHC) localizes to the nucleus of interphase S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that full-length GukH isoform C (GukHC) localizes to the nucleus of interphase S2 cells, but becomes diffusely localized to the spindle and cell cortex during mitosis (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "32864c3a-5ac7-4498-a3f3-7af4b79824a6",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C76",
+      "claim": "Full-length GukH isoform C becomes diffusely localized to the spindle and cell cortex during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that full-length GukH isoform C (GukHC) localizes to the nucleus of interphase S2 cells, but becomes diffusely localized to the spindle and cell cortex during mitosis (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "1c945b0e-0d6a-4c11-905f-f5ae23e253d5",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C77",
+      "claim": "GukH404-534 contains a highly positively charged region predicted to be a putative MT-binding domain (MTBD).",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we purified a fragment of GukH404-534 that contains a highly positively charged region we predicted to be a putative MT-binding domain (MTBD) and tested its ability to bind microtubules using a MT pelleting assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "d2b326b1-bebd-48b2-a3ba-de5a100357f4",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C78",
+      "claim": "GukHMTBD exhibits significant pelleting with assembled microtubules compared to GST-alone negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the GST-alone negative control, cosedimentation of GukHMTBD revealed significant pelleting with assembled microtubules (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "6958cb44-e4ad-4233-816c-06e6f05b4d20",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C79",
+      "claim": "GukH is a novel microtubule-binding spindle orientation protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that GukH is a novel microtubule-binding spindle orientation protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the microtubule pelleting assay and spindle localization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "5aa3ec1d-9475-4e00-813e-8e85acf452d1",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C80",
+      "claim": "Intact GukH is required for Ed:GK-mediated spindle orientation in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We first verified that intact GukH is required for Ed:GK-mediated spindle orientation in S2 cells (Figure 7A,B) by depleting endogenous GukH using RNAi targeted against the gukh 5' UTR (Garcia et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7A,B and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "89970729-5812-4ceb-aeda-6fa2d8651f6e",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C81",
+      "claim": "Expression of full-length GukH rescued the loss in spindle orientation activity caused by gukh5'UTR RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of full-length GukH rescued the loss in activity caused by gukh5'UTR RNAi (Figure 7C), demonstrating that the RNAi is specific to our gene of interest and that this isoform is sufficient for spindle orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "e04f2640-2ac3-4c65-9213-06bc66b066ac",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C82",
+      "claim": "Expression of GukH lacking its MTBD did not rescue the gukh RNAi spindle orientation phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of GukH lacking its MTBD did not rescue the gukh RNAi spindle orientation phenotype, suggesting that MT-binding activity is essential for GukH to function in the Dlg spindle orientation pathway (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "248842b9-d721-46c7-9ce4-41c4b28e864c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C83",
+      "claim": "MT-binding activity is essential for GukH to function in the Dlg spindle orientation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of GukH lacking its MTBD did not rescue the gukh RNAi spindle orientation phenotype, suggesting that MT-binding activity is essential for GukH to function in the Dlg spindle orientation pathway (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that GukH lacking the MTBD cannot rescue the spindle orientation defect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "95f0c31c-260b-448e-bdba-17330e9a3e6d",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C84",
+      "claim": "GukH is a novel MT-binding protein and this activity is required for Dlg-mediated spindle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that GukH is a novel MT-binding protein and this activity is required for Dlg-mediated spindle orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the microtubule binding assays and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "8af7c1c0-9b78-466c-854b-8eadc1be39bd",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C85",
+      "claim": "The precise alignment of the mitotic spindle to a cortical mark is important for many cellular processes, including oriented divisions and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise alignment of the mitotic spindle to a cortical mark is important for many cellular processes, including oriented divisions and differentiation (G\u00f6nczy, 2008; Lu and Johnston, 2013a; di Pietro et al., 2016; Roubinet and Cabernard, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "b8e46c65-001b-431d-94a5-db2a9552edce",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C86",
+      "claim": "The first step in aligning the spindle to the cortex is selecting the cortical site followed by recruitment of protein complexes such as microtubule interacting proteins that will bind to and exert force on astral microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The first step in aligning the spindle to the cortex is selecting the cortical site followed by recruitment of protein complexes such as microtubule interacting proteins that will bind to and exert force on astral microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about spindle orientation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "2fab191c-4231-4077-934e-4f9787fa4383",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C87",
+      "claim": "Autoinhibition allows Dlg to function as a regulated adaptor that only recruits GukH when it is phosphorylated by aPKC.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that autoinhibition allows Dlg to function as a regulated adaptor that only recruits GukH when it is phosphorylated by aPKC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that GukH recruitment requires aPKC phosphorylation of Dlg.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "764ac141-683f-4496-8b0d-bc5bd25f50e6",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C88",
+      "claim": "Regulation takes advantage of an intramolecular interaction between the Dlg SH3 and GK domains, a common feature of MAGUK proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation takes advantage of an intramolecular interaction between the Dlg SH3 and GK domains, a common feature of MAGUK proteins (Funke et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature on MAGUK proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "7a39a3c9-175c-4f40-b30c-7c2f2f916775",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C89",
+      "claim": "This mechanism allows Dlg to be recruited to the cortex uniformly, but to only be activated at cortical sites containing aPKC.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism allows Dlg to be recruited to the cortex uniformly, but to only be activated at cortical sites containing aPKC, which may have implications for both spatial and temporal control of spindle orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Dlg is present throughout the cortex but only functions where aPKC is present.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "b13dd83b-9e90-4bcb-b193-738f68cc9dbc",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C90",
+      "claim": "The mechanism may have implications for both spatial and temporal control of spindle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism allows Dlg to be recruited to the cortex uniformly, but to only be activated at cortical sites containing aPKC, which may have implications for both spatial and temporal control of spindle orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "5a434791-8820-4d7d-bb5a-220ea2f1b583",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C91",
+      "claim": "The work does not exclude a role for other Dlg effectors such as Khc73 or Banderuola in spindle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that while our work highlights Dlg's role in connecting aPKC and GukH, it does not exclude a role for other Dlg effectors such as Khc73 (Lu and Prehoda, 2013b) or Banderuola (Mauri et al., 2014) in spindle orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat acknowledging that other proteins may also be involved, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "e85f80f2-3b07-4f73-920c-e09771ba1ae1",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C92",
+      "claim": "The best-characterized link between the Par complex and spindle orientation is the scaffolding protein Inscuteable.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the best-characterized link between the Par complex and spindle orientation is the scaffolding protein Inscuteable (Knoblich, 2010; Schober et al., 1999; Wodarz et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "f9230f0c-4299-47e1-919f-17382dadcec5",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C93",
+      "claim": "Inscuteable binds directly to the Par complex member Bazooka (Baz; aka Par-3) and Partner of Inscuteable (Pins; aka LGN).",
+      "claim_type": "EXPLICIT",
+      "source": "As Inscuteable binds directly to the Par complex member Bazooka (Baz; aka Par-3) and Partner of Inscuteable (Pins; aka LGN), expression of Inscuteable in epithelia and neural stem cells redirects spindle orientation toward the Par complex by directly recruiting Pins and associated spindle orientation proteins such as Mushroom Body Defect (Mud; aka NuMA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about Inscuteable function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "ccdea2f8-1987-4fae-9fcb-9584a71f4de7",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C94",
+      "claim": "Expression of Inscuteable in epithelia and neural stem cells redirects spindle orientation toward the Par complex by directly recruiting Pins and associated spindle orientation proteins such as Mushroom Body Defect (Mud; aka NuMA).",
+      "claim_type": "EXPLICIT",
+      "source": "As Inscuteable binds directly to the Par complex member Bazooka (Baz; aka Par-3) and Partner of Inscuteable (Pins; aka LGN), expression of Inscuteable in epithelia and neural stem cells redirects spindle orientation toward the Par complex by directly recruiting Pins and associated spindle orientation proteins such as Mushroom Body Defect (Mud; aka NuMA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about Inscuteable function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "a58e5251-88c5-4051-9d80-46e96cb5ac18",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C95",
+      "claim": "aPKC provides an additional link between the Par complex and spindle orientation complexes through phosphorylation and activation of Dlg.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that aPKC provides an additional link between the Par complex and spindle orientation complexes through phosphorylation and activation of Dlg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "ccbedf8b-c651-4c1c-aed5-7db8b3b81b9e",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C96",
+      "claim": "Inscuteable and Mud form mutually exclusive complexes with Pins.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of biochemical and structural data that Inscuteable and Mud form mutually exclusive complexes with Pins (Mauser and Prehoda, 2012; Zhu et al., 2011), we propose that aPKC-Dlg signaling provides an essential cue from the apical cortex to promote alignment of the mitotic spindle along the apical-basal axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "5549d922-86ec-43c9-a2c1-c732e6dcee93",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C97",
+      "claim": "aPKC-Dlg signaling provides an essential cue from the apical cortex to promote alignment of the mitotic spindle along the apical-basal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of biochemical and structural data that Inscuteable and Mud form mutually exclusive complexes with Pins (Mauser and Prehoda, 2012; Zhu et al., 2011), we propose that aPKC-Dlg signaling provides an essential cue from the apical cortex to promote alignment of the mitotic spindle along the apical-basal axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental data and previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "62330f2b-4cdb-4efb-a1fa-c938ad210d14",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C98",
+      "claim": "In epithelial tissues such as MDCK epithelial cells, the Drosophila imaginal wing disc epithelium, and Caco-2 epithelial 3D cysts, aPKC is required for spindle alignment within the plane of the epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In epithelial tissues, such as MDCK epithelial cells, the Drosophila imaginal wing disc epithelium, and Caco-2 epithelial 3D cysts (Durgan et al., 2011; Guilgur et al., 2012; Hao et al., 2010), aPKC is required for spindle alignment within the plane of the epithelium, although it does not appear to be essential for spindle orientation in chick neuroepithelial cells or the Drosophila follicle cell epithelium (Bergstralh et al., 2013; Peyre et al., 2011) but is in neuroblasts and the embryonic epithelium (Guilgur et al., 2012; Kim et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "1388a823-7432-4072-8aa6-92c3f6785123",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C99",
+      "claim": "aPKC does not appear to be essential for spindle orientation in chick neuroepithelial cells or the Drosophila follicle cell epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In epithelial tissues, such as MDCK epithelial cells, the Drosophila imaginal wing disc epithelium, and Caco-2 epithelial 3D cysts (Durgan et al., 2011; Guilgur et al., 2012; Hao et al., 2010), aPKC is required for spindle alignment within the plane of the epithelium, although it does not appear to be essential for spindle orientation in chick neuroepithelial cells or the Drosophila follicle cell epithelium (Bergstralh et al., 2013; Peyre et al., 2011) but is in neuroblasts and the embryonic epithelium (Guilgur et al., 2012; Kim et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "20f118e8-7583-476a-a4a0-84b8d590396d",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C100",
+      "claim": "aPKC is required for spindle orientation in neuroblasts and the embryonic epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In epithelial tissues, such as MDCK epithelial cells, the Drosophila imaginal wing disc epithelium, and Caco-2 epithelial 3D cysts (Durgan et al., 2011; Guilgur et al., 2012; Hao et al., 2010), aPKC is required for spindle alignment within the plane of the epithelium, although it does not appear to be essential for spindle orientation in chick neuroepithelial cells or the Drosophila follicle cell epithelium (Bergstralh et al., 2013; Peyre et al., 2011) but is in neuroblasts and the embryonic epithelium (Guilgur et al., 2012; Kim et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "1fd31261-3798-47fe-b993-787e18eca447",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C101",
+      "claim": "The aPKC function in spindle orientation may be cell specific.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the aPKC function in spindle orientation may be cell specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that aPKC is required in some cell types but not others.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "f7a017e5-deb5-4537-8255-b7ea3d6a06b4",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C102",
+      "claim": "Dlg is required for planar spindle alignment in the Drosophila follicle cell epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg is required for planar spindle alignment in the Drosophila follicle cell epithelium (Bergstralh et al., 2013), but the requirement of Dlg in other tissues has not been investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "327f6a55-f980-4ec9-9443-8efc69465a89",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C103",
+      "claim": "The SH3GK interaction allosterically regulates GK ligand binding of Dlg and other members of the MAGUK family.",
+      "claim_type": "EXPLICIT",
+      "source": "The SH3GK interaction allosterically regulates GK ligand binding of Dlg and other members of the MAGUK family, although the precise function of this regulatory interaction has not been known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about MAGUK protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "d6e7f74b-660f-4fa2-8b2a-6b9552cfd3af",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C104",
+      "claim": "A mammalian PKC isoform, PKC\u03b1, phosphorylates human Dlg1 (hDlg1) at a threonine residue within the Hook domain (T656) and regulates primary astrocyte migration.",
+      "claim_type": "EXPLICIT",
+      "source": "A mammalian PKC isoform, PKC\u03b1, phosphorylates human Dlg1 (hDlg1) at a threonine residue within the Hook domain (T656) and regulates primary astrocyte migration (O'Neill et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "6fabc924-0081-4bff-b7a8-e5f6a32d3569",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C105",
+      "claim": "The homologous residue to human Dlg T656 in Drosophila Dlg is S676.",
+      "claim_type": "EXPLICIT",
+      "source": "The homologous residue to human Dlg T656 in Drosophila Dlg is S676 that we show is phosphorylated by aPKC, suggesting that phosphorylation of Dlg within the Hook domain by aPKC is an evolutionarily conserved event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment and the experimental data showing S676 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "aa73359e-c0dc-4d77-b604-f04a1ec15fea",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C106",
+      "claim": "Phosphorylation of Dlg within the Hook domain by aPKC is an evolutionarily conserved event.",
+      "claim_type": "EXPLICIT",
+      "source": "The homologous residue to human Dlg T656 in Drosophila Dlg is S676 that we show is phosphorylated by aPKC, suggesting that phosphorylation of Dlg within the Hook domain by aPKC is an evolutionarily conserved event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that homologous residues are phosphorylated in both human and Drosophila.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "7939054c-581a-4dee-9a1c-641aaac6ef11",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C107",
+      "claim": "The mammalian aPKC homolog, PKC\u03b6, is required for Dlg1 localization to the primary astrocyte leading edge where it binds to the GK-ligand GKAP, which recruits dynein and regulates centrosome positioning during migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the mammalian aPKC homolog, PKC\u03b6, is required for Dlg1 localization to the primary astrocyte leading edge where it binds to the GK-ligand GKAP, which recruits dynein and regulates centrosome positioning during migration (Etienne-Manneville et al., 2005; Manneville et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "a885026c-3ad6-424f-beed-441f2478326c",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C108",
+      "claim": "PKC phosphorylation of hDlg1 could restrict GK-binding capacity to the leading edge of primary astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to how aPKC-Dlg signaling restricts GK-binding capacity to the apical cortex in mitotic neuroblasts, PKC phosphorylation of hDlg1 could restrict GK-binding capacity to the leading edge of primary astrocytes, which suggests that Dlg domain allostery can be spatially controlled by phosphoregulation to produce a specific cellular response in diverse cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning drawing parallels between the neuroblast and astrocyte systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "c2065b3f-0de4-469d-af9f-197f0b4e415f",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "claim_id": "C109",
+      "claim": "Dlg domain allostery can be spatially controlled by phosphoregulation to produce a specific cellular response in diverse cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to how aPKC-Dlg signaling restricts GK-binding capacity to the apical cortex in mitotic neuroblasts, PKC phosphorylation of hDlg1 could restrict GK-binding capacity to the leading edge of primary astrocytes, which suggests that Dlg domain allostery can be spatially controlled by phosphoregulation to produce a specific cellular response in diverse cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion inferred from the experimental data and comparison with other systems.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "445ad56d-18bf-4897-901e-1b944ed6e527",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "aPKC directly phosphorylates Dlg at two sites: S662 within the SH3 domain and S676 in the HOOK motif, as identified by mass spectrometry following in vitro kinase assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 are directly supported by mass spectrometry data from in vitro kinase assays (Figure 1A,C). The identification of specific phosphorylation sites using mass spectrometry is a standard and reliable method for determining kinase substrates and modification sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "0d706581-969d-4615-acb3-91e2e9b75654",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "aPKC phosphorylation activates Dlg's spindle orientation activity in S2 cells. Ed:GK orients spindles while Ed:SH3GK does not, but coexpression of Ed:SH3GK with aPKC restores spindle orientation. This activation requires aPKC kinase activity and phosphorylation at S662 and S676, with either site being sufficient for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 are well-supported by systematic S2 cell spindle orientation assays (Figure 2B-I). The experiments include appropriate controls (Ed:GFP, kinase-dead aPKC, non-phosphorylatable mutants) and phosphomimetic mutations that recapitulate aPKC effects. The data consistently demonstrate that aPKC phosphorylation relieves Dlg autoinhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "27373c22-4fba-4bd1-aebd-5e24151155cf",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In vivo validation in Drosophila neuroblasts shows that wild-type Dlg rescues the dlgm52 spindle orientation defect, but the phosphomimetic DlgS662D mutant fails to rescue spindle orientation while partially rescuing polarity defects. This demonstrates that aPKC regulation of Dlg is critical for coupling polarity to spindle orientation in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 are supported by in vivo neuroblast experiments (Figure 3B-F). The rescue experiments with wild-type and phosphomimetic Dlg variants provide strong evidence that regulated phosphorylation is essential for proper Dlg function in spindle orientation. The differential rescue of spindle orientation versus polarity defects supports the model that SH3-GK regulation is specific to spindle orientation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "6d50ec4d-60d5-4edc-bf4f-5decf3ce0ef4",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Polarized Ed:aPKC alone does not orient spindles in S2 cells, but coexpression with uniformly localized Dlg SH3GK induces spindle orientation. This coupling requires aPKC kinase activity and phosphorylatable residues at S662 and S676, demonstrating that Dlg mediates the connection between polarized aPKC and spindle position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 are supported by S2 cell experiments (Figure 4A-E) showing that Dlg acts as a bridge between aPKC and spindle orientation machinery. The requirement for both aPKC kinase activity and phosphorylatable Dlg residues provides strong mechanistic evidence for the proposed coupling mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GukH binding to Dlg is regulated by the SH3-GK autoinhibitory interaction. GukH binds to GK but not SH3GK in vitro, but phosphomimetic mutations (S662D or S676D) or aPKC coexpression restore GukH binding to SH3GK. In cells, GukH is recruited to Ed:GK but not Ed:SH3GK crescents unless aPKC is present or phosphomimetic mutations are introduced, demonstrating that aPKC spatially regulates Dlg activity by controlling GukH recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C65 are well-supported by both in vitro binding assays (Figure 5A) and cellular recruitment experiments (Figure 5B-J). The data consistently show that GukH binding is inhibited by the SH3-GK interaction and that aPKC phosphorylation relieves this inhibition. The quantification of GukH recruitment provides statistical support for the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "0656470a-94fe-4cad-a304-d9e3c0e9d196",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GukH is required for spindle orientation in vivo. RNAi knockdown of GukH in neuroblasts produces spindle orientation defects indistinguishable from dlg mutants, and GukH is also required for Miranda polarity, indicating its role in both Dlg-mediated spindle orientation and cell polarity pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 are supported by in vivo RNAi experiments in neuroblasts (Figure 6A,B). The phenotypic similarity between GukH knockdown and dlg mutants supports GukH's function in the Dlg pathway. The requirement for Miranda polarity extends GukH's role beyond spindle orientation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "26d4ccd5-d6d3-4208-804a-21ff42c50903",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GukH is a novel microtubule-binding protein. Full-length GukH localizes to the nucleus in interphase but redistributes to the spindle and cortex during mitosis. A putative microtubule-binding domain (MTBD, residues 404-534) shows significant microtubule pelleting in vitro compared to GST control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 are supported by localization data (Figure 6C) and microtubule pelleting assays (Figure 6D). The identification of the MTBD is based on sequence analysis and validated by biochemical assays. However, the MTBD identification relies on prediction and a single pelleting assay, which could be strengthened with additional characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "8e6580c4-7b2b-411a-b045-bb83c9414957",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GukH's microtubule-binding activity is essential for Dlg-mediated spindle orientation. RNAi depletion of endogenous GukH abolishes Ed:GK-mediated spindle orientation in S2 cells, which is rescued by full-length GukH but not by GukH lacking the MTBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by rescue experiments in S2 cells (Figure 7A-D). The failure of MTBD-deleted GukH to rescue the spindle orientation defect provides functional evidence that microtubule binding is essential for GukH's role in the Dlg pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "2f1025f3-fc81-4571-8635-f6174a9d1aaf",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dlg functions as a regulated adaptor linking aPKC to GukH through an autoinhibitory mechanism. The SH3-GK intramolecular interaction prevents GukH binding at cortical sites lacking aPKC, but aPKC phosphorylation of the SH3 domain disrupts autoinhibition, allowing GukH recruitment specifically at the apical cortex where aPKC and Dlg colocalize.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C87, and C89 represent the central mechanistic model supported by the combined experimental evidence from in vitro binding, cell-based recruitment, spindle orientation assays, and in vivo validation. The model is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "778e9ae5-fd4e-42e1-b6df-456781997a75",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "aPKC provides a molecular link between the Par complex and spindle orientation machinery through phosphorylation and activation of Dlg. The authors propose that aPKC-Dlg signaling provides an essential cue from the apical cortex to promote spindle alignment along the apical-basal axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95 and C97 are supported by the experimental data demonstrating the aPKC-Dlg-GukH pathway. However, the claim that this provides an \"essential\" cue is somewhat overstated given the known redundancy with the Inscuteable pathway (C37). The data support that it is an important mechanism but not necessarily the sole essential pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "b423e68b-6155-425d-9b45-f8ad2fc77cd4",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Scrib localization is independent of GukH, suggesting either that GukH functions downstream of Scrib or that its role in polarity is Scrib-independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by localization data (Figure 6\u2014figure supplement 1) showing that Scrib localization is unaffected by GukH knockdown. However, this is a negative result that does not definitively establish the relationship between GukH and Scrib in the polarity pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "962b6375-28e8-496b-b9a2-2bf5893f17c6",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The phosphorylation of Dlg at the Hook domain by aPKC is evolutionarily conserved, as the homologous residue to human Dlg1 T656 in Drosophila Dlg is S676, which is phosphorylated by aPKC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 are supported by sequence alignment and the experimental demonstration of S676 phosphorylation (C28). The conservation is inferred from homology and supported by citation to previous work showing PKC\u03b1 phosphorylation of human Dlg1 at T656 (C104).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "a543446d-572c-49a0-ba9e-8046e1fcefe0",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background and context claims about asymmetric cell division, neuroblast biology, and spindle orientation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C15, C85-C86 provide established background knowledge supported by citations to previous literature. These are well-accepted concepts in the field and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "9d24970e-bdd0-4bc6-8379-2c780c0f5bc5",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Dlg is found at non-apical cortical regions in neuroblasts, suggesting that mechanisms besides polarization are necessary to restrict its activity to the apical cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by localization data (Figure 1B) and citation to previous work. This observation motivates the investigation of regulatory mechanisms beyond simple localization and is central to the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about Dlg as a MAGUK protein, its domain structure, autoinhibition, and previous findings about its role in spindle orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26, C88, and C103 provide background on Dlg structure and function supported by citations to previous literature. These establish the known properties of Dlg that form the basis for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "1abf2035-6c7c-451e-a649-499fd4a0844a",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background and discussion claims about aPKC's role in spindle orientation, the Inscuteable pathway, and cell-type specificity of aPKC function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C92-C94, C96, C98-C102 provide context from previous literature about aPKC and Inscuteable pathways. These are well-supported by citations and provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "926abdf1-d7de-4e08-8ef9-8933baa1bbb0",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Khc73 is essential for Dlg-mediated spindle orientation and binds to Dlg's GK domain, but this binding is not inhibited by the SH3-GK intramolecular interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by citations to previous work (C52-C53) and in vitro binding data (C54, Figure 5A). This establishes that Khc73, while important for Dlg function, is not the effector regulated by aPKC phosphorylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "e6f63467-5a1f-4a80-b71a-812d1a5a8bab",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about GukH localization and its requirement for spindle orientation in S2 cells, and its known interaction with Scribble.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C66, and C72 provide background information about GukH supported by citations to previous literature. These establish what was known about GukH prior to this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "25d9f9b5-c5ab-4ad9-b5b2-0cfa276118be",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims about mammalian PKC phosphorylation of Dlg1 and its role in astrocyte migration and centrosome positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104 and C107 provide background on mammalian Dlg1 regulation supported by citations to previous literature. These are used to support the evolutionary conservation argument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    },
+    {
+      "id": "fb33a342-2ecc-4938-8bfd-adb1afe59c7a",
+      "content_id": "9f99d2f1-e8c9-4436-881e-95e8ef954e56",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Speculative claims about broader implications of the findings for spatial and temporal control of spindle orientation, roles of other Dlg effectors, and generalization to other cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 and C108-C109 are speculative statements about implications and future directions. While reasonable based on the data, these are not directly tested in the current study and represent hypotheses for future investigation rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:17:02.942465Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "952400ee-c17a-4e9d-b719-c3bedde21d26",
+      "result_id": "445ad56d-18bf-4897-901e-1b944ed6e527"
+    },
+    {
+      "claim_id": "55e1e60a-1ad0-4b20-92a8-dbe7cc1e46be",
+      "result_id": "445ad56d-18bf-4897-901e-1b944ed6e527"
+    },
+    {
+      "claim_id": "ab01b14b-65a4-42d0-a74a-ab476aa045ad",
+      "result_id": "0d706581-969d-4615-acb3-91e2e9b75654"
+    },
+    {
+      "claim_id": "1fb9a09e-6446-41bc-9c73-a16e11338c12",
+      "result_id": "0d706581-969d-4615-acb3-91e2e9b75654"
+    },
+    {
+      "claim_id": "0aa1be2e-1522-40d1-8808-5a883cf8369b",
+      "result_id": "0d706581-969d-4615-acb3-91e2e9b75654"
+    },
+    {
+      "claim_id": "3d80b0d8-540a-4748-aad9-8df245e9bb5c",
+      "result_id": "0d706581-969d-4615-acb3-91e2e9b75654"
+    },
+    {
+      "claim_id": "70ce40af-73db-4cbc-b3bb-01ebbb92cb64",
+      "result_id": "0d706581-969d-4615-acb3-91e2e9b75654"
+    },
+    {
+      "claim_id": "5cb396d2-3b01-4b86-b0fa-64b6c3817fb0",
+      "result_id": "0d706581-969d-4615-acb3-91e2e9b75654"
+    },
+    {
+      "claim_id": "a8d38457-34d7-4165-80bd-cbb6f9f0d2c8",
+      "result_id": "0d706581-969d-4615-acb3-91e2e9b75654"
+    },
+    {
+      "claim_id": "46f38600-1b0f-42ce-ada2-72da5073011b",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "275102f6-807e-495f-bc12-1efc43611c52",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "ba252ba1-0d25-4094-8050-e4ba1ad974d0",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "9fb5bb7c-7f31-40df-a150-18d3473641d9",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "a9fadcfd-0e3c-4d34-a5e6-17af75144295",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "45146789-0581-4e49-9add-10e711182911",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "adb8b621-03e0-411d-804e-6a784e07bfa5",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "1cc0201f-bf96-4489-adff-c8306c8a747f",
+      "result_id": "27373c22-4fba-4bd1-aebd-5e24151155cf"
+    },
+    {
+      "claim_id": "657c0e36-da0d-480c-abb3-84eeef9154b9",
+      "result_id": "6d50ec4d-60d5-4edc-bf4f-5decf3ce0ef4"
+    },
+    {
+      "claim_id": "dc19f44a-046a-4aec-9af5-8ef9b85ce3bc",
+      "result_id": "6d50ec4d-60d5-4edc-bf4f-5decf3ce0ef4"
+    },
+    {
+      "claim_id": "45c5ea63-c005-4a94-99af-8509540f6c28",
+      "result_id": "6d50ec4d-60d5-4edc-bf4f-5decf3ce0ef4"
+    },
+    {
+      "claim_id": "2e576b74-ddf2-4c9f-9c24-b8289e161869",
+      "result_id": "6d50ec4d-60d5-4edc-bf4f-5decf3ce0ef4"
+    },
+    {
+      "claim_id": "42a8daa8-51e9-46ba-bdcc-736fd3f1fe90",
+      "result_id": "6d50ec4d-60d5-4edc-bf4f-5decf3ce0ef4"
+    },
+    {
+      "claim_id": "6707ae0d-f821-4392-987b-145e45f3c878",
+      "result_id": "6d50ec4d-60d5-4edc-bf4f-5decf3ce0ef4"
+    },
+    {
+      "claim_id": "da720e94-a7bd-4726-8e9d-bae8ce27b1a6",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "dbf90b76-22e6-43f8-a548-4ca9be399f37",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "b81361bd-ecb2-4430-a89b-50830d225e63",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "3c089997-342c-4198-a8f5-59f479bfb4d4",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "8df9adfa-3773-4a0a-864f-5467eb558800",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "6ba23cb8-1282-405c-a055-961476b5938b",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "02b319c4-4807-4d38-9987-829b1d1ef443",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "f4e1235f-200b-4b79-a6be-0b9d680d687c",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "2949ebc9-2c30-4dea-b9aa-487d1d283383",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "30f06e7b-f344-443f-be57-0ab68b553b13",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "df2b3273-079c-4d85-8b59-34aee3485efd",
+      "result_id": "2d0fd9f3-fc78-44a3-8f46-0299d113671e"
+    },
+    {
+      "claim_id": "95f546bb-339c-4e96-a826-01b639851e9a",
+      "result_id": "0656470a-94fe-4cad-a304-d9e3c0e9d196"
+    },
+    {
+      "claim_id": "1cda2bd6-7bfa-42bb-a08d-5533afe4278f",
+      "result_id": "0656470a-94fe-4cad-a304-d9e3c0e9d196"
+    },
+    {
+      "claim_id": "82aa14ed-83ac-490d-bc77-4ce8d22f7644",
+      "result_id": "0656470a-94fe-4cad-a304-d9e3c0e9d196"
+    },
+    {
+      "claim_id": "c45f89eb-22f5-4347-a58d-928a8b8032e1",
+      "result_id": "0656470a-94fe-4cad-a304-d9e3c0e9d196"
+    },
+    {
+      "claim_id": "d4131669-3fb7-4cdc-a695-d653d3355f5b",
+      "result_id": "0656470a-94fe-4cad-a304-d9e3c0e9d196"
+    },
+    {
+      "claim_id": "092b55e7-b2f8-41df-a888-b4e076d1f30c",
+      "result_id": "26d4ccd5-d6d3-4208-804a-21ff42c50903"
+    },
+    {
+      "claim_id": "32864c3a-5ac7-4498-a3f3-7af4b79824a6",
+      "result_id": "26d4ccd5-d6d3-4208-804a-21ff42c50903"
+    },
+    {
+      "claim_id": "1c945b0e-0d6a-4c11-905f-f5ae23e253d5",
+      "result_id": "26d4ccd5-d6d3-4208-804a-21ff42c50903"
+    },
+    {
+      "claim_id": "d2b326b1-bebd-48b2-a3ba-de5a100357f4",
+      "result_id": "26d4ccd5-d6d3-4208-804a-21ff42c50903"
+    },
+    {
+      "claim_id": "6958cb44-e4ad-4233-816c-06e6f05b4d20",
+      "result_id": "26d4ccd5-d6d3-4208-804a-21ff42c50903"
+    },
+    {
+      "claim_id": "5aa3ec1d-9475-4e00-813e-8e85acf452d1",
+      "result_id": "8e6580c4-7b2b-411a-b045-bb83c9414957"
+    },
+    {
+      "claim_id": "89970729-5812-4ceb-aeda-6fa2d8651f6e",
+      "result_id": "8e6580c4-7b2b-411a-b045-bb83c9414957"
+    },
+    {
+      "claim_id": "e04f2640-2ac3-4c65-9213-06bc66b066ac",
+      "result_id": "8e6580c4-7b2b-411a-b045-bb83c9414957"
+    },
+    {
+      "claim_id": "248842b9-d721-46c7-9ce4-41c4b28e864c",
+      "result_id": "8e6580c4-7b2b-411a-b045-bb83c9414957"
+    },
+    {
+      "claim_id": "95f0c31c-260b-448e-bdba-17330e9a3e6d",
+      "result_id": "8e6580c4-7b2b-411a-b045-bb83c9414957"
+    },
+    {
+      "claim_id": "f2fd3ac1-1a3c-4dd7-a986-b961d15307cf",
+      "result_id": "2f1025f3-fc81-4571-8635-f6174a9d1aaf"
+    },
+    {
+      "claim_id": "fb017eb0-3449-4a2d-9d9c-c0bf09c2ac6f",
+      "result_id": "2f1025f3-fc81-4571-8635-f6174a9d1aaf"
+    },
+    {
+      "claim_id": "9d5893ce-f4ab-4949-a491-4d5d4e88630a",
+      "result_id": "2f1025f3-fc81-4571-8635-f6174a9d1aaf"
+    },
+    {
+      "claim_id": "9aa00909-36f3-4a81-a77a-cac7e49611f3",
+      "result_id": "2f1025f3-fc81-4571-8635-f6174a9d1aaf"
+    },
+    {
+      "claim_id": "2fab191c-4231-4077-934e-4f9787fa4383",
+      "result_id": "2f1025f3-fc81-4571-8635-f6174a9d1aaf"
+    },
+    {
+      "claim_id": "7a39a3c9-175c-4f40-b30c-7c2f2f916775",
+      "result_id": "2f1025f3-fc81-4571-8635-f6174a9d1aaf"
+    },
+    {
+      "claim_id": "a58e5251-88c5-4051-9d80-46e96cb5ac18",
+      "result_id": "778e9ae5-fd4e-42e1-b6df-456781997a75"
+    },
+    {
+      "claim_id": "5549d922-86ec-43c9-a2c1-c732e6dcee93",
+      "result_id": "778e9ae5-fd4e-42e1-b6df-456781997a75"
+    },
+    {
+      "claim_id": "f1cbe95b-e749-4b52-b30e-c96017946afd",
+      "result_id": "b423e68b-6155-425d-9b45-f8ad2fc77cd4"
+    },
+    {
+      "claim_id": "0e5d294e-078c-4d8a-9db2-49a5fba04a7c",
+      "result_id": "b423e68b-6155-425d-9b45-f8ad2fc77cd4"
+    },
+    {
+      "claim_id": "6fabc924-0081-4bff-b7a8-e5f6a32d3569",
+      "result_id": "962b6375-28e8-496b-b9a2-2bf5893f17c6"
+    },
+    {
+      "claim_id": "aa73359e-c0dc-4d77-b604-f04a1ec15fea",
+      "result_id": "962b6375-28e8-496b-b9a2-2bf5893f17c6"
+    },
+    {
+      "claim_id": "99965d5d-ee03-4e09-8a42-060e97db66eb",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "daa1dc30-b323-44c5-bfc6-d22b5b136b01",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "7edc4b41-be86-4bfe-8a1a-69173d70c1a2",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "9b2a77a5-35ce-426b-929c-f76a3e4f6ac1",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "ae492193-711c-4dd1-89d2-0c7a3aa40c55",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "44d687de-1efa-414a-a5f1-a73b56889385",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "2c120616-bd08-4d3f-96ee-3e69281023c7",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "8adbc79d-0fc9-4cc3-9a26-3d7665797db6",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "d78876d3-cd8a-42cb-803b-fe34d2857979",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "945af5cd-757c-4fca-96e2-bbf3f51096d3",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "8a399376-405b-4d67-b325-3baad7b0b733",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "8af7c1c0-9b78-466c-854b-8eadc1be39bd",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "b8e46c65-001b-431d-94a5-db2a9552edce",
+      "result_id": "a543446d-572c-49a0-ba9e-8046e1fcefe0"
+    },
+    {
+      "claim_id": "b0506f30-981a-4604-8c3f-35b88e2f9ea9",
+      "result_id": "9d24970e-bdd0-4bc6-8379-2c780c0f5bc5"
+    },
+    {
+      "claim_id": "bdff035b-64cb-4b55-88da-fd6cec4f6018",
+      "result_id": "9d24970e-bdd0-4bc6-8379-2c780c0f5bc5"
+    },
+    {
+      "claim_id": "64f0531e-8df0-4d2e-aba3-175ec2e6cb48",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "94112f29-3d9c-4f66-992e-9ce2064eb8a6",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "d9cb1676-6761-4429-be57-59e3000acd82",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "c8afdb8f-0410-4f0c-97db-8da5d975da9c",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "aaf13b99-9774-4488-8f08-a10d56ab764f",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "e587200e-ba2a-4cf9-a693-4857a31e9c62",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "02afe2a6-5b60-47e0-82e3-778ae5201b43",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "64833055-f022-48f4-9338-bd5144e8680b",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "8a0d8faf-5299-4ef8-8290-63919e2a72c4",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "764ac141-683f-4496-8b0d-bc5bd25f50e6",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "327f6a55-f980-4ec9-9443-8efc69465a89",
+      "result_id": "b01c5a95-3cb8-457e-a9c7-83eb08a9eddf"
+    },
+    {
+      "claim_id": "c94392fc-ad9d-45eb-a733-90bb278783f3",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "c728a1bf-3460-41f1-b3e9-ffdcb0e7e54b",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "e85f80f2-3b07-4f73-920c-e09771ba1ae1",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "f9230f0c-4299-47e1-919f-17382dadcec5",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "ccdea2f8-1987-4fae-9fcb-9584a71f4de7",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "ccbedf8b-c651-4c1c-aed5-7db8b3b81b9e",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "62330f2b-4cdb-4efb-a1fa-c938ad210d14",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "1388a823-7432-4072-8aa6-92c3f6785123",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "20f118e8-7583-476a-a4a0-84b8d590396d",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "1fd31261-3798-47fe-b993-787e18eca447",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "f7a017e5-deb5-4537-8255-b7ea3d6a06b4",
+      "result_id": "1abf2035-6c7c-451e-a649-499fd4a0844a"
+    },
+    {
+      "claim_id": "fd8a6775-6ff1-4bb1-a729-6a8a6577ec8f",
+      "result_id": "926abdf1-d7de-4e08-8ef9-8933baa1bbb0"
+    },
+    {
+      "claim_id": "e4a325df-b4e3-4e68-a1d7-5d586a29e87d",
+      "result_id": "926abdf1-d7de-4e08-8ef9-8933baa1bbb0"
+    },
+    {
+      "claim_id": "da720e94-a7bd-4726-8e9d-bae8ce27b1a6",
+      "result_id": "926abdf1-d7de-4e08-8ef9-8933baa1bbb0"
+    },
+    {
+      "claim_id": "3e1dbb2b-7012-4a94-97e2-a14eec0e120c",
+      "result_id": "e6f63467-5a1f-4a80-b71a-812d1a5a8bab"
+    },
+    {
+      "claim_id": "2095952d-34fe-4df1-8345-422e7d09ea9d",
+      "result_id": "e6f63467-5a1f-4a80-b71a-812d1a5a8bab"
+    },
+    {
+      "claim_id": "c0d62241-743c-4fe1-83ba-989e0f77b82f",
+      "result_id": "e6f63467-5a1f-4a80-b71a-812d1a5a8bab"
+    },
+    {
+      "claim_id": "d6e7f74b-660f-4fa2-8b2a-6b9552cfd3af",
+      "result_id": "25d9f9b5-c5ab-4ad9-b5b2-0cfa276118be"
+    },
+    {
+      "claim_id": "7939054c-581a-4dee-9a1c-641aaac6ef11",
+      "result_id": "25d9f9b5-c5ab-4ad9-b5b2-0cfa276118be"
+    },
+    {
+      "claim_id": "b13dd83b-9e90-4bcb-b193-738f68cc9dbc",
+      "result_id": "fb33a342-2ecc-4938-8bfd-adb1afe59c7a"
+    },
+    {
+      "claim_id": "5a434791-8820-4d7d-bb5a-220ea2f1b583",
+      "result_id": "fb33a342-2ecc-4938-8bfd-adb1afe59c7a"
+    },
+    {
+      "claim_id": "a885026c-3ad6-424f-beed-441f2478326c",
+      "result_id": "fb33a342-2ecc-4938-8bfd-adb1afe59c7a"
+    },
+    {
+      "claim_id": "c2065b3f-0de4-469d-af9f-197f0b4e415f",
+      "result_id": "fb33a342-2ecc-4938-8bfd-adb1afe59c7a"
+    }
+  ],
+  "comparisons": []
+}

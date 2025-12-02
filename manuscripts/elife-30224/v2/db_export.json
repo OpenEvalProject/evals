@@ -1,0 +1,1529 @@
+{
+  "submission": {
+    "id": "da2c11cc-e906-4626-adf1-33c82634b3df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:57:56.517066Z",
+    "updated_at": "2025-12-01T22:57:56.517066Z"
+  },
+  "content": [
+    {
+      "id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "submission_id": "da2c11cc-e906-4626-adf1-33c82634b3df",
+      "content_type": "manuscript",
+      "content_text": "# Loss of functional BAP1 augments sensitivity to TRAIL in cancer cells\n\n## Authors\n\n- Krishna Kalyan Kolluri<sup>1</sup> ([ORCID: 0000-0003-3537-0231](https://orcid.org/0000-0003-3537-0231))\n- Constantine Alifrangis<sup>2</sup> ([ORCID: 0000-0002-5876-6696](https://orcid.org/0000-0002-5876-6696))\n- Neelam Kumar<sup>1</sup> ([ORCID: 0000-0002-4346-2112](https://orcid.org/0000-0002-4346-2112))\n- Yuki Ishii<sup>1</sup>\n- Stacey Price<sup>2</sup>\n- Magali Michaut<sup>3</sup> ([ORCID: 0000-0003-2002-2277](https://orcid.org/0000-0003-2002-2277))\n- Steven Williams<sup>2</sup> ([ORCID: 0000-0002-9382-4337](https://orcid.org/0000-0002-9382-4337))\n- Syd Barthorpe<sup>2</sup>\n- Howard Lightfoot<sup>2</sup>\n- Sara Busacca<sup>4</sup>\n- Annabel Sharkey<sup>4</sup>\n- Zhenqiang Yuan<sup>1</sup>\n- Elizabeth K Sage<sup>1</sup> ([ORCID: 0000-0002-9009-421X](https://orcid.org/0000-0002-9009-421X))\n- Sabarinath Vallath<sup>1</sup>\n- John Le Quesne<sup>4</sup>\n- David A Tice<sup>5</sup>\n- Doraid Alrifai<sup>1</sup>\n- Sylvia von Karstedt<sup>6</sup>\n- Antonella Montinaro<sup>6</sup>\n- Naomi Guppy<sup>7</sup>\n- David A Waller<sup>8</sup>\n- Apostolos Nakas<sup>8</sup>\n- Robert Good<sup>9</sup>\n- Alan Holmes<sup>9</sup>\n- Henning Walczak<sup>6</sup>\n- Dean A Fennell<sup>4</sup>\n- Mathew Garnett<sup>2</sup>\n- Francesco Iorio<sup>10</sup>\n- Lodewyk Wessels<sup>3</sup>\n- Ultan McDermott<sup>2</sup> \u2020\n- Samuel M Janes<sup>1</sup> ([ORCID: 0000-0002-6634-5939](https://orcid.org/0000-0002-6634-5939)) \u2020\n\n### Affiliations\n\n1. Lungs for Living Research Centre, UCL Respiratory University College London London United Kingdom\n2. Wellcome Trust Sanger Institute Cambridge United Kingdom\n3. The Netherlands Cancer Institute Amsterdam Netherlands\n4. CRUK Leicester Centre, Department of Cancer studies University of Leicester Leicester United Kingdom\n5. Oncology Research, MedImmune, Inc. Gaithersburg United States\n6. Centre for Cell Death, Cancer and Inflammation UCL Cancer Institute, University College London London United Kingdom\n7. UCL Advanced Diagnostics University College London London United Kingdom\n8. Department of Thoracic Surgery Glenfield Hospital, University Hospitals of Leicester Leicester United Kingdom\n9. UCL School of Pharmacy University College London London United Kingdom\n10. European Molecular Biology Laboratory European Bioinformatics Institute Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMalignant mesothelioma (MM) is poorly responsive to systemic cytotoxic chemotherapy and invariably fatal. Here we describe a screen of 94 drugs in 15 exome-sequenced MM lines and the discovery of a subset defined by loss of function of the nuclear deubiquitinase BRCA associated protein-1 (BAP1) that demonstrate heightened sensitivity to TRAIL (tumour necrosis factor-related apoptosis-inducing ligand). This association is observed across human early passage MM cultures, mouse xenografts and human tumour explants. We demonstrate that BAP1 deubiquitinase activity and its association with ASXL1 to form the Polycomb repressive deubiquitinase complex (PR-DUB) impacts TRAIL sensitivity implicating transcriptional modulation as an underlying mechanism. Death receptor agonists are well-tolerated anti-cancer agents demonstrating limited therapeutic benefit in trials without a targeting biomarker. We identify BAP1 loss-of-function mutations, which are frequent in MM, as a potential genomic stratification tool for TRAIL sensitivity with immediate and actionable therapeutic implications.\n\n## Introduction\n\nAmongst the most significant therapeutic breakthroughs in cancer has been the discovery of drug-sensitising genomic alterations. Drugs such as the tyrosine kinase inhibitors (TKIs) developed against the BCR-ABL fusion product in chronic myeloid leukaemia (CML) and the receptor products of HER2 mutations in breast cancer have transformed the prognosis of these cancers\u00a0(Druker et al., 2006). Malignant mesothelioma (MM) currently has no biomarker-driven therapies in routine clinical use. The mainstay of medical therapy for all patients remains systemic cytotoxic chemotherapy that offers only limited survival benefit in unselected populations; as such the disease remains invariably fatal\u00a0(Vogelzang et al., 2003). A plethora of genomic studies in MM has identified recurrent mutations in several genes considered to be tumour drivers. CDKN2A, NF2, BAP1 and TP53 are the most frequently mutated\u00a0(Guo et al., 2015; Bueno et al., 2016) and there has been increased focus on these genes and their associated signaling pathways as potential therapeutic targets\u00a0(LaFave et al., 2015).\n\nWe aimed to determine if the mutational status of these tumour driver genes could predict response to a range of existing anti-cancer compounds with a view to identifying genomic biomarkers for responsive subsets of MM. We have previously reported on the ability of such unbiased high-throughput chemical screens in cancer cell lines to identify drug-sensitising mutations in other cancer types\u00a0(Garnett et al., 2012). To this end, we conducted a high-throughput chemical screen of molecularly characterised MM cell lines seeking associations between MM driver gene mutations and compound response. This strategy led to the discovery of a subset of MM cell lines defined by loss-of-function (LOF) mutations in BRCA associated protein-1 (BAP1) that demonstrated heightened sensitivity to the death receptor agonist recombinant tumour necrosis factor\u00a0(TNF)-related apoptosis-inducing ligand (rTRAIL). We validated this finding using in vitro, in vivo and ex vivo models supporting the use of BAP1 as a genomic biomarker to identify TRAIL-sensitive MM tumours and a novel stratified approach to treat MM.\n\nrTRAIL and other death receptor agonists selectively induce apoptosis in cancer cells and have long held promise as anti-cancer agents owing to their broad clinical utility and minimal off-target effects\u00a0(Wiley et al., 1995; Pitti et al., 1996; Ashkenazi et al., 1999). Despite this, successful preclinical studies have not translated to clinical efficacy in trials of unselected populations\u00a0(Herbst et al., 2010; Wainberg et al., 2013; Soria et al., 2010; Lemke et al., 2014a); there have been no trials to date in MM. However, within these trials some patients showed signs of therapeutic benefit and differential sensitivity within cell lines is well known. Retrospective biomarker identification has led to the stratified use of other anti-cancer therapies that initially failed in unselected trials such as activating EGFR mutations and EGFR TKIs\u00a0(Lynch et al., 2004). We propose that BAP1 could potentially act as such a biomarker for the death receptor agonists. BAP1 is a nuclear deubiquitinase and forms multi-protein complexes that regulate the transcription of genes involved in key cellular functions including cell cycle regulation and DNA repair\u00a0(Ismail et al., 2014; Machida et al., 2009). We investigated which BAP1 protein-binding partners, and thus which regulatory complexes, mediate TRAIL sensitivity identifying the BAP1-ASXL1 complex, the Polycomb repressive deubiquitinase (PR-DUB), as key. We further found that loss of BAP1 function modulates mRNA and protein expression of components of the extrinsic apoptotic pathway.\n\n## Results\n\n### A chemical screen uncovers genetic modifiers of drug response in mesothelioma\n\nA 6 day viability screen using 94 drugs including small molecule inhibitors and cytotoxic chemotherapeutics (Supplementary file 1) was performed on 15 MM cell lines (Supplementary file 2) that had been characterised using whole-exome sequencing, copy number analysis and gene expression arrays. We generated 1425 single agent activity data profiles across the 15 cell lines (Figure 1A and Supplementary file 3). To detect novel markers of drug sensitivity, we sought statistical associations between drug response and the mutational status of the cell lines based on five genes identified as candidate drivers of tumourigenesis in MM\u00a0(Guo et al., 2015) (Figure 1\u2014figure supplement 1). There were 24 significant associations (false discovery rate (FDR)\u00a0<\u00a00.2) between single agent response and the presence of a genomic alteration. The most statistically significant sensitising association seen was between BAP1 LOF mutations (mt BAP1) and treatment with recombinant TRAIL (rTRAIL; FDR\u00a0=\u00a00.18, effect size \u22120.48) (Figure 1B,C and Supplementary file 4). No significant effect on cell viability was observed in BAP1 wild-type (wt BAP1) lines when treated with rTRAIL. We subsequently confirmed this association in a larger panel of MM cell lines (Figure 1D and Supplementary file 5). Strikingly, 6 of the 8 cell lines (75%) harbouring a BAP1 LOF mutation were sensitive or partially sensitive to a dose range of rTRAIL while 7 of the 9 cell lines (78%) harbouring wild-type BAP1 were resistant. BAP1 LOF mutations correlated with a loss of BAP1 protein expression in the majority of cell lines (Figure 1E). No sensitising association with BAP1 was observed for pemetrexed or cisplatin, which are current first line agents for the treatment of MM (Figure 1\u2014figure supplement 2A and B). A marginal trend towards increased sensitivity in BAP1 mutant MM lines in response to treatment with the agonistic FAS receptor antibody CH11 and a TNF-\u03b1/IAP inhibitor combination was observed. However, this was not as pronounced as that observed with rTRAIL or the multivalent death receptor five superagonist MEDI3039 (Figure 1\u2014figure supplement 2C,D and E). Thus, while the significant sensitising association observed in the screen appears most specific to death receptor agonists, the trend observed with other TNF superfamily agonists indicates the BAP1-rTRAIL association to be mediated by an underlying mechanism common to this family such as the cytoplasmic extrinsic apoptotic machinery.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig1-v2.jpg)\n\n**Figure 1.:** (A) Area under the curve (AUC) values for 15 malignant mesothelioma (MM) cells treated for 6 days with 94 compounds. Each dot indicates the AUC value for an individual cell line treated. AUC\u00a0<0.7 is indicated by the red dotted line \u2014 only those compounds with\u00a0\u22652 cell lines below this value were analysed for statistically significant associations with gene mutations. The AUC values for rTRAIL are indicated by the red asterisk. (B) A Welch t-test was used to test for significant pharmacogenomics interactions between the 94 single agents in the screen and the presence of driver mutations in any of 5 MM cancer genes. Each volcano plot circle corresponds to a significant gene\u2013drug interaction whose position on the x-axis indicates the corresponding effect size. Both half-axes are positive; the right side (green circles) indicates the effect sizes of sensitivity associations, whereas the left side (red circles) corresponds with the effect sizes of resistance associations. The position on the y-axis indicates the statistical significance of the identified interaction. The size of a given circle is proportional to the number of samples in which the selected functional event involved in the corresponding interaction occurs. Specific examples of associations are indicated where the effect size is large (rTRAIL and BAP1 mutations) or highly significant (cisplatin and CDKN2A mutations). (C) Cell viability between wild-type BAP1 (wt BAP1) (n\u00a0=\u00a010) and mutant BAP1 (mt BAP1) (n\u00a0=\u00a05) MM lines following 6 days of treatment with rTRAIL (t-test; *p=0.015). (D) Cell viability data for 17 MM lines treated for 6 days with a concentration range of rTRAIL (0.4\u201350 ng/ml). MM lines are coloured according to their sensitivity pattern (green\u00a0=\u00a0sensitive (S); orange\u00a0=\u00a0partially sensitive (PS); red\u00a0=\u00a0resistant (R)). *Indicates cell lines harbouring BAP1 mutations. (E) Immunoblot of BAP1 protein expression in BAP1-mutant versus BAP1-wild-type MM cell lines. Sensitivity to rTRAIL treatment is indicated as font colour: green (S); orange (PS); red (R).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** 72 hour cell viability results for 9 MM cell lines (4 BAP1-mutant - green and five wild-type - red) treated with (A) cisplatin (B) pemetrexed (C) FAS receptor agonistic antibody CH11, (D) TNF-\u03b1 and 5 \u03bcM LCL161 or (E) DR5 agonist MEDI3039 assessed by MTT assay.\n\n### The association of loss of BAP1 function with TRAIL sensitivity extends to other tumour types\n\nTo determine if knockdown of BAP1 in wild-type MM cells led to TRAIL sensitivity, we silenced BAP1 expression in four wt BAP1 MM cell lines using a lentiviral shRNA construct. Knockdown of BAP1 resulted in increased cell death following rTRAIL treatment compared with empty vector (EV) control shRNA and the parental cell line in all four MM cell lines (Figure 2A and Figure 2\u2014figure supplement 1B\u00a0and\u00a0C). Loss of BAP1 expression has also been identified in several other tumour types including uveal melanoma (47%)\u00a0(Harbour et al., 2010), clear cell renal carcinoma (CCRC) (14%)\u00a0(Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma (7%)\u00a0(Fujimoto et al., 2015). Notably, knockdown of BAP1 in two CCRC lines resulted in increased sensitivity to rTRAIL in addition to the MDAMB-231 breast cancer line (Figure 2B and Figure 2\u2014figure supplements 2 and 3). We also analysed a panel of 1001 cancer cell lines submitted for whole exome and copy number analysis as part of the COSMIC cell lines project\u00a0(Forbes et al., 2015) and identified nine additional non-mesothelioma cell lines harbouring truncating mutations in BAP1 (http://cancer.sanger.ac.uk/cancergenome/projects/cell_lines/). These include CCRC, bladder and breast cancer lines. Treatment of cancer cell lines harbouring nonsense mutations in BAP1 with rTRAIL resulted in markedly reduced cell viability compared with cancer cell lines harbouring missense mutations (Figure 2\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-v2.jpg)\n\n**Figure 2.:** (A) BAP1-wild-type H2818, MPP-89, H2373 and H2869 MM lines were transduced with BAP1 (shBAP1) or empty vector (EV) shRNA. Immunoblot confirmed BAP1 knockdown in the BAP1 shRNA-transduced cells. Parental and transduced cells were treated with rTRAIL (1000 ng/ml) and cell viability assessed after 72 hr by MTT assay (t-test; ****p<0.0001). (B) The BAP1-wild-type breast cancer line MDAMB-231 and the renal cell carcinoma (RCC) lines Caki-1 and BB65 were transduced with BAP1 (shBAP1) or empty vector (EV) shRNA. Immunoblot confirmed BAP1 knockdown in the BAP1 shRNA transduced cells. Parental and transduced cells were treated with rTRAIL (1000 ng/ml) and cell viability assessed after 72 hr by MTT assay (t-test; ****p<0.0001). (C) The rTRAIL-sensitive H226 MM line, which harbours a homozygous deletion of BAP1, was transduced with either a GFP control, wild-type BAP1 or a mutant BAP1 containing an inactive functional domain: C91A \u2014 inactivating mutation of deubiquitinase catalytic site; \u0394HBM \u2014 deletion of HCF-1-binding motif; T493A \u2014 inactivating mutation of FOXK2-binding site; \u0394ASXL \u2014 deletion of ASXL1/2 protein-binding site; \u0394CTD \u2014 deletion of C-terminal domain containing nuclear localisation signal. These transduced lines were treated with 50 ng/ml rTRAIL and cell death assessed with XTT assay (one-way ANOVA; **p<0.01). (D) The parental and transduced H226 MM lines were treated with a concentration range (1\u2013100 pM) of the small molecule death receptor agonist MEDI3039 and cell viability assessed with XTT assay. (E) The BAP1-wild-type MPP-89 MM line was transduced with ASXL1 (shASXL1), ASXL2 (shASXL2) or empty vector (EV) shRNA. qPCR confirmed a decrease in ASXL1 and ASXL2 mRNA expression in the ASXL1 shRNA and ASXL2 shRNA-transduced cells, respectively (Figure 2\u2014figure supplement 6). Parental and transduced cells were treated with a concentration range (1\u2013100 pM) of MEDI3039 and cell viability assessed with XTT assay. (F) Differential gene expression of apoptosis regulator genes in the catalytically inactive BAP1-mutant (C91A) relative to the wild-type BAP1-transduced (wt BAP1) H226 cells. (G) Immunoblot of apoptosis regulator proteins in the catalytically inactive BAP1-mutant (C91A), inactive ASXL1/2-binding site BAP1-mutant (\u0394ASXL) or wild-type BAP1-transduced (wt BAP1) H226 cells. (H) Flow cytometry analysis of death receptor 4 (DR4) and 5 (DR5) cell surface expression in H226 cells transduced with the catalytically inactive BAP1-mutant (C91A) or wild-type BAP1 (wt BAP1) and of BAP1-wild-type H2818 MM cells transduced with BAP1 (KD) or empty vector (EV) shRNA. The values represent the median fluorescence intensity (MFI).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Three BAP1-wild-type MM cell lines (A)\u00a0MPP-89, (B)\u00a0H2869 and (C)\u00a0H2818 were transduced with empty vector (EV) or BAP1 shRNA (shBAP1).\u00a0Immunoblot confirmed BAP1 knockdown. The parental, EV and shBAP1 cells were treated with rTRAIL for 24 hr and cell death measured by Annexin V/DAPI flow cytometry assay.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The MDAMB-231 breast cancer cell line was transduced with empty vector (EV) or BAP1 shRNA (shBAP1).\u00a0Immunoblot confirmed BAP1 knockdown. Cells were treated with (A) rTRAIL and (B) MEDI3039 and cell viability measured with MTT assay at 72 hr. (C) Cells were treated with rTRAIL for 24 hr and cell death measured with Annexin V/DAPI flow cytometry assay.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Clear cell renal carcinoma cell lines, Caki-1 and BB65, were transduced either with either empty vector (EV) or BAP1 shRNA (shBAP1).\u00a0Immunoblot confirmed BAP1 knockdown. Cells were treated with rTRAIL (A and C) or MEDI3039 (B and D) for 72 hr and cell viability measured by MTT assay.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Bladder (RT4) and breast (HCC1187) cancer cell lines harbouring nonsense mutations in BAP1 show increased sensitivity to rTRAIL compared with renal cell carcinoma or bladder cancer cell lines harbouring missense (769P and RCC10RGB) or wild-type BAP1 (BB65RCC and SW1710). Cell viability was measured after 6 days of treatment with 100 ng/ml rTRAIL.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The rTRAIL-sensitive H2804(A) and H28(B) mesothelioma cell lines, which harbour mutations in BAP1, were transduced with wild-type BAP1 (wt BAP1) or BAP1 with an inactive deubiquitinase catalytic domain (C91A) and treated with a dose range of rTRAIL.Cell death was assessed with Annexin V/DAPI apoptosis assay.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) Cell viability\u00a0of parental, empty vector, ASXL1 and ASXL2 shRNA-transduced MPP-89 cells treated with rTRAIL\u00a0(0\u20131000 ng/ml) for 3 days measured with XTT assay.\u00a0(B) Efficacy of ASXL1 and ASXL2 shRNA knockdown assessed by qPCR.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (A) Immunoblot analysis of H2AK119Ub levels in the parental, GFP-, wild-type BAP1 (wt BAP1)-, deubiquitinase mutant BAP1 (C91A)- and ASXL-binding mutant BAP1 (\u0394ASXL)-transduced H226 MM cell lines.\u00a0(B) Immunofluorescence images of H2AK119Ub staining in the parental, deubiquitinase mutant-transduced (C91A), ASXL-binding mutant-transduced (\u0394ASXL) and wild-type BAP1-transduced H226 cell lines. (C) Quantification of immunofluorescence staining in 2B (normalised to cell number; one-way ANOVA; ***p<0.001).\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Only genes with logFC\u00a0\u22652 and adj.p\u00a0<0.05 are displayed.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** The proteins in the pathway are highlighted in green if the expression in mt BAP1 is significantly less than wt BAP1 and red if the expression in mt BAP1 is significantly more than wt BAP1.\n\n### BAP1 modulates TRAIL sensitivity through PR-DUB activity\n\nBAP1 is a nuclear deubiquitinase that forms multi-protein complexes with transcription factors to regulate gene transcription\u00a0(Jensen et al., 1998; Ventii et al., 2008). To elucidate the mechanism by which BAP1 modulates sensitivity to TRAIL we generated expression vectors containing wild-type or mutant forms of BAP1, each with an inactive functional site or protein-binding domain. These included C91A (mutation in the deubiquitination catalytic site)\u00a0(Jensen et al., 1998; Ventii et al., 2008), \u0394HBM (deletion of the HCF-1-binding site)\u00a0(Misaghi et al., 2009), T493A (mutation in the FOXK2-binding site)\u00a0(Ji et al., 2014), \u0394ASXL (deletion of the ASXL1/2 protein-binding site)\u00a0(Daou et al., 2015) and \u0394CTD (deletion of the C-terminal domain containing the nuclear localisation signal)\u00a0(Ventii et al., 2008). H226 MM cells, which harbour a homozygous deletion of BAP1 and demonstrate complete loss of BAP1 expression, were transduced with a GFP (vector control), a wild-type BAP1 expression vector or one of these five mutant BAP1 expression vectors. rTRAIL sensitivity of the parental BAP1-null H226 MM line was significantly diminished following expression of wild-type BAP1 and each of the mutant constructs except those with an inactive deubiquitinating or ASXL protein-binding site (Figure 2C), implicating the function of these sites in BAP1-induced TRAIL resistance. These effects were replicated using MEDI3039 (Figure 2D). Transduction of two further BAP1-mutant rTRAIL-sensitive cell lines, H28 and H2804, with wild-type BAP1 also induced resistance to rTRAIL while sensitivity was maintained with transduction of the deubiquitinase mutant (Figure 2\u2014figure supplement 5).\n\nThe BAP1 deubiquitinase and ASXL-binding sites are key to the function of the PR-DUB, an epigenetic transcriptional regulatory complex composed of BAP1 and ASXL1. Deubiquitination of the main substrate of the PR-DUB, H2AK119Ub, alters chromatin architecture to modulate gene transcription (Scheuermann et al., 2010). This led us to hypothesise that PR-DUB, rather than exclusively BAP1, function might underlie rTRAIL sensitivity. Consistent with this shRNA silencing of ASXL1, but not ASXL2, induced sensitivity to MEDI3039 and rTRAIL in the BAP1/ASXL1/ASXL2-wild-type MM line MPP-89 (Figure 2E and Figure 2\u2014figure supplement 6). Furthermore, H2AK119Ub expression was unaltered in the rTRAIL-sensitive H226 cells transduced with mutant constructs that disrupt PR-DUB activity, while the rTRAIL-resistant H226 cells transduced with a wild-type BAP1 construct exhibited lower H2AK119Ub levels (Figure 2\u2014figure supplement 7). Thus, as the PR-DUB complex is implicated in transcriptional regulation, differential modulation of specific transcriptional programmes by BAP1 may determine rTRAIL sensitivity. We therefore compared differential gene expression data from BAP1-null H226 cells transduced with the C91A BAP1 mutant or with wild-type BAP1 and carried out a signalling pathway impact analysis (SPIA) ((Figure 2\u2014figure supplements 8 and 9 [SPIA_H226 C91A mutant vs WT]) (http://www.genome.jp/dbget-bin/www_bget?path:map04210). Among those pathways significantly altered when comparing wild-type versus C91A BAP1 (FDR\u00a0<\u00a00.2) was that of apoptosis. In particular, there was altered mRNA expression of components of the extrinsic death pathway (Figure 2F and Supplementary file 6). This manifested as an imbalance in levels of pro- and anti-apoptotic mRNA expression with, for example, significantly decreased levels of the anti-apoptotic cIAP1/2 (p=2.32E-10) and increased levels of the pro-apoptotic death receptor 5 (p=7.79E-10) in the rTRAIL sensitive C91A BAP1-transduced cells relative to the rTRAIL resistant BAP1-wild-type transduced cells. Immunoblot analysis confirmed reduced protein expression of cIAP1/2 and c-FLIP in both C91A and \u0394ASXL BAP1-transduced cells relative to BAP1-wild-type transduced cells (Figure 2G). Flow cytometry analysis confirmed reduced DR4 and DR5 expression in C91A BAP1 transduced relative to BAP1-wild-type-transduced cells. Knockdown of BAP1 in the BAP1 wild-type H2818 line resulted in a significant increase in DR4 expression only (Figure 2H).\n\n### BAP1 loss-of-function sensitises human early passage mesothelial cell lines, human tumour explants and mouse mesothelioma xenograft models to rTRAIL\n\nTo support the clinical relevance of our finding we extended our assays to two further models derived from primary tumour tissue. 25 human early passage MM lines from the UK Mesobank\u00a0(Rintoul et al., 2016) were assessed for BAP1 expression by immunohistochemistry, a technique known to correlate strongly with BAP1 LOF mutations in the absence of strong nuclear staining\u00a0(Nasu et al., 2015). When treated with rTRAIL, those without strong nuclear staining were significantly more sensitive than those with strong nuclear staining (p=0.0067). Of the 12 lines that did not express nuclear BAP1 9 were sensitive, 2 partially sensitive and only one resistant to rTRAIL (Table 1, Figure 3A and Figure 3\u2014figure supplement 1). Remarkably, rTRAIL treatment of tumour explants derived from three patients with MM also revealed increased levels of apoptosis (as measured by poly (ADP-ribose) polymerase (PARP) cleavage) in explants with low BAP1 expression compared with those with high BAP1 expression (Figure 3B and C, Figure 3\u2014figure supplement 2).\n\n**Table 1.**\n BAP1 immunoblot status, nuclear BAP1 staining and rTRAIL sensitivity (50 ng/ml) of the 25 human early passage MM cultures.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample name</th>\n      <th>Western blot</th>\n      <th>Nuclear BAP1-IHC</th>\n      <th>Sensitivity</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>7T</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>8T</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>45</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>14T</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>23T</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>40</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>36</td>\n      <td>Low Expression</td>\n      <td>\u2212</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>26</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>12T</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>3T</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Sensitive</td>\n    </tr>\n    <tr>\n      <td>52</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Partially Sensitive</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Partially Sensitive</td>\n    </tr>\n    <tr>\n      <td>30</td>\n      <td>Low Expression</td>\n      <td>+</td>\n      <td>Partially Sensitive</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>Low Expression</td>\n      <td>+</td>\n      <td>Partially Sensitive</td>\n    </tr>\n    <tr>\n      <td>35</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Partially Sensitive</td>\n    </tr>\n    <tr>\n      <td>24</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Partially Sensitive</td>\n    </tr>\n    <tr>\n      <td>43</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>Resistant</td>\n    </tr>\n    <tr>\n      <td>34</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Resistant</td>\n    </tr>\n    <tr>\n      <td>50T</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Resistant</td>\n    </tr>\n    <tr>\n      <td>33T</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Resistant</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Resistant</td>\n    </tr>\n    <tr>\n      <td>53T</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Resistant</td>\n    </tr>\n    <tr>\n      <td>38</td>\n      <td>+</td>\n      <td>+</td>\n      <td>Resistant</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig3-v2.jpg)\n\n**Figure 3.:** (A) Mean cell viability effect between human early passage MM cell lines (positive nuclear BAP1 staining; n\u00a0=\u00a013 and negative nuclear BAP1 staining; n\u00a0=\u00a012) as assessed by immunohistochemistry following 3 days of treatment with rTRAIL (50 ng/ml) (t-test, p=0.0067). (B) Immunohistochemical images of tumour explants derived from three MM patients treated with either vehicle or rTRAIL for 24 hr. Explants were stained with anti-BAP1 and anti-cleaved PARP (marker for apoptosis) antibodies. (C) The percentage of cleaved PARP-positive cells in tumour explants derived from three patients and treated with either vehicle or 0, 50, 100 and 200 ng/ml of rTRAIL for 24 hr was scored based on the percentage of cells with nuclear cleaved PARP-positive staining. (D) Weights of tumour xenografts derived from BAP1-wild-type (wt BAP1) versus catalytically inactive BAP1-mutant (C91A mt BAP1) transduced MM cells following treatment with either vehicle or TRAIL (600 \u03bcg per mouse) at the time of sacrifice (day 42) (t-test). (E) Serial bioluminescence imaging of BAP1-wild-type (wt BAP1) and catalytically inactive BAP1-mutant (C91A) MM xenografts in mice treated with either vehicle or TRAIL. Mice were imaged on day 0 (after tumour inoculation), day 13 (before TRAIL administration) and day 41 (time of sacrifice). The intensity of luminescence is denoted by colour: red - high luciferase signal (high tumour burden) and blue - low luciferase signal (low tumour burden). (F) A time-course of bioluminescence scores in BAP1-wild-type (wt BAP1) versus catalytically inactive BAP1-mutant (C91A) MM tumour xenografts. Bioluminescence was measured on days 0, 13, 19, 26 and 41, 15 min after injecting the mice with 0.2 ml luciferin intraperitoneally. The number of photons emitted per second indicates the tumour burden (two way ANOVA).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Immunohistochemical analysis and (B) immunoblot. Cultures are grouped by sensitivity to rTRAIL.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Tumour explants were obtained by cutting primary pleural tissue from patients with MM who underwent pleurectomy into fragments of approximately 2 mm3.The explants were treated with vehicle or rTRAIL (50 ng/ml, 100 ng/ml or 200 ng/ml) for 24 hr, following which time explants were fixed and stained for cleaved-PARP (which is a marker of apoptosis).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30224/elife-30224-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Schematic of in vivo experimental protocol.\u00a0Mice were injected with H226 cells transduced with wild-type BAP1 and luciferase or catalytically inactive BAP1-mutant (C91A) and luciferase on the right and left flanks, respectively. Mice were divided into two groups, each of which received 600 \u03bcg TRAIL or vehicle 6 days a week (day 14\u201340). Tumour size was assessed longitudinally with bioluminescence imaging on days 0, 13, 19, 26 and 41. (B) Size of tumours derived from BAP1-wild-type (wt) versus catalytically inactive (C91A) BAP1-mutant (mt) MM cells following treatment with either vehicle or TRAIL (600 \u03bcg per mouse) at time of sacrifice (day 42). A centimetre scale is included in the photograph for comparison.\n\nTo test the in vivo efficacy of TRAIL in inducing apoptosis in BAP1-mutant MM cells, we transduced the H226 BAP1-wild-type and the H226 C91A BAP1-mutant cell lines with luciferase and injected equal numbers of wild-type and mutant cells into the opposite flanks of mice (Figure 3\u2014figure supplement 3A). On day 14 after injection the mice were divided into two groups and injected intraperitoneally with rTRAIL or vehicle for 6 days per week until day 40. At sacrifice rTRAIL-treated BAP1-mutant tumours weighed significantly less than rTRAIL-treated BAP1-wild-type tumours (p=0.020) and vehicle-treated BAP1-mutant tumours (p=0.019) (Figure 3D and Figure 3\u2014figure supplement 3B). BAP1-wild-type tumours showed no response to rTRAIL compared with vehicle. The growth rate of rTRAIL-treated BAP1-mutant tumours was also significantly suppressed compared with rTRAIL-treated BAP1-wild-type and vehicle-treated tumours (p<0.05) as assessed by longitudinal bioluminescence intensity (Figure 3E and F).\n\n## Discussion\n\nMalignant mesothelioma remains a devastating disease with limited systemic treatment options\u00a0(Vogelzang et al., 2003). Biomarker-driven therapies have significantly improved the prognosis for subsets of patients within other cancer types however this strategy has yet to impact MM. Our data support the use of loss of function of BAP1 as a genomic stratification tool to identify rTRAIL-sensitive MM tumours, an approach that may extend to other cancer subtypes. We propose the underlying mechanism involves the transcriptional regulation of expression of components of the apoptotic pathway by the PR-DUB. Our finding has potentially significant and immediately actionable clinical implications for both MM treatment and for the death receptor agonist field.\n\nBAP1 has emerged as a key driver of tumorigenesis in MM\u00a0(Bueno et al., 2016). As such, there has been increased focus on this nuclear deubiquitinase and its associated pathways\u00a0(LaFave et al., 2015). While next-generation sequencing reveals MM BAP1 mutation rates in the order of 20\u201330%\u00a0(Guo et al., 2015; Bueno et al., 2016; Bott et al., 2011), immunohistochemical analysis has identified loss of BAP1 function in up to 67% of MM tumours\u00a0(Nasu et al., 2015) opening our biomarker-driven approach to a significant proportion of MM patients. BAP1 immunohistochemistry accurately identifies loss of BAP1 function as a consequence of genetic and non-genetic mechanisms\u00a0(Nasu et al., 2015) and is already in clinical use as a diagnostic tool; hence the clinical tools for our proposed approach are validated and ready. Our data indicate the BAP1-TRAIL association extends beyond MM to other tumours with loss of BAP1 function. Chromosomal deletions and somatic inactivating mutations have been identified at high frequency in uveal melanoma\u00a0(Harbour et al., 2010), clear cell renal carcinoma\u00a0(Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma\u00a0(Fujimoto et al., 2015), increasing the potential clinical impact of our discovery. Although loss of BAP1 function is seen at far lower rates in breast carcinoma (1%)\u00a0(Stephens et al., 2012) and non-small cell lung carcinoma (1%)\u00a0(Owen et al., 2017), the high incidence of these cancers translates to a large cohort of patients.\n\nFocus on death receptor agonists as anti-cancer agents has generated two decades of preclinical studies and the development of numerous clinically tested compounds, all of which have demonstrated limited therapeutic efficacy at phase I/II trials\u00a0(Herbst et al., 2010; von Pawel et al., 2014; Paz-Ares et al., 2013; Forero-Torres et al., 2013). Strategies to overcome this have included the development of increasingly potent death receptor agonists and combination therapies to address resistance factors within the apoptosis pathway\u00a0(Holland, 2013; Lemke et al., 2014b). As differential sensitivity has been observed in trials, it has been accepted that identification of a biomarker predicting the therapeutic outcome is of paramount importance\u00a0(Ashkenazi, 2015; von Karstedt et al., 2017). There have been previous attempts to identify predictive biomarkers largely focused on molecular expression panels\u00a0(Passante et al., 2013). Ours\u00a0is\u00a0the first unbiased approach to address how\u00a0the genetic make-up of tumours predicts response to rTRAIL treatment. The identification of BAP1 as a potential genomic biomarker has the potential to reignite the death receptor agonist field of research into which significant investment has already been made. The value of retrospective analysis of clinical trials based on the genomic landscape has clearly been demonstrated in the past\u00a0(Lynch et al., 2004) and we wait with interest whether this will be performed on archived tumour tissue, in the context of BAP1 status, from previous trials. Notably there have been no trials of any death receptor agonists in MM or indeed any cancer with a high proportion of BAP1 mutations. We suspect a significantly higher proportion of responders would have been identified in such trials.\n\nOur findings also have implications for death receptor agonists as a therapy for BAP1-wild-type tumours as delineation of the underlying mechanism would offer a novel avenue by which to sensitise these tumours. Our mechanistic data implicate transcriptional regulation by the PR-DUB as key to the capacity of BAP1 to modulate death receptor agonist sensitivity. BAP1 is a master genetic regulator and is known to influence the transcription of thousands of genes as supported by our and others\u2019 gene expression data\u00a0(Dey et al., 2012). While we highlight the extrinsic apoptotic pathway and proteins as being significantly altered by BAP1 status, identifying a single factor to explain BAP1-induced TRAIL resistance is extremely challenging. Of more direct clinical significance is our finding that loss of function of either component of the PR-DUB, BAP1 or ASXL1, results in an increase in death receptor agonist sensitivity. ASXL1 mutations have an important role in the pathogenesis of myeloid neoplasms primarily consisting of nonsense, missense and frameshift mutations resulting in a truncated ASXL1 protein that retains the BAP1-binding domain\u00a0(Boultwood et al., 2010). It has yet to be clarified if this truncated protein possesses dominant-negative or gain-of-function properties in the context of PR-DUB activity\u00a0(Balasubramani et al., 2015). In the case of the former, ASXL1 could potentially predict death receptor agonist sensitivity in myeloid neoplasms. Further research is needed in these malignancies to determine this.\n\nConfirmation of the clinical value of BAP1 as a targeting biomarker for death receptor agonists in early phase clinical trials of mesothelioma is the first priority. The clinical tools for this approach are already validated and established facilitating the translation of our discovery into a desperately needed new therapy for this fatal thoracic cancer.\n\n## Materials\u00a0and\u00a0methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>gene</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BRCA associated protein-1 (human)</td>\n      <td>BAP1</td>\n      <td>Entrez Gene NCBI</td>\n      <td>Gene ID: 8314</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Additional sex combs like 1 (human)</td>\n      <td>ASXL1</td>\n      <td>Entrez Gene NCBI</td>\n      <td>Gene ID: 171023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NOD.CB17-Prkdcscid/NcrCrl</td>\n      <td>NOD SCID mice</td>\n      <td>Charles River Laboratories,\u00a0UK</td>\n      <td>RRID:IMSR_CRL:394</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cell line</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Early passage mesotheliomacell cultures</td>\n      <td>7T, 8T, 45, 19, 14T, 23T, 40, 36, 26, 12T, 3T, 52, 2, 30, 15, 35, 24, 43, 34, 50T, 33T, 18, 53T, 38</td>\n      <td>MesobanK, Mesothelioma UK</td>\n      <td></td>\n      <td>www.mesobank.com Mesothelioma Tissue Bank, Papworth\u00a0Hospital NHS Trust, UK</td>\n    </tr>\n    <tr>\n      <td>NCI-H2373</td>\n      <td>H2373</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_A533</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2803</td>\n      <td>H2803</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_U997</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2452</td>\n      <td>H2452</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_1553</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2722</td>\n      <td>H2722</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_U994</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2369</td>\n      <td>H2369</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_A532</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2795</td>\n      <td>H2795</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_U996</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2869</td>\n      <td>H2869</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_V001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2591</td>\n      <td>H2591</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_A543</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MPP 89</td>\n      <td>MPP-89</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_1427</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2810</td>\n      <td>H2810</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_U999</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2818</td>\n      <td>H2818</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_V000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H513</td>\n      <td>H513</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_A570</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2595</td>\n      <td>H2595</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_A545</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2461</td>\n      <td>H2461</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_A536</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2731</td>\n      <td>H2731</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_U995</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H2804</td>\n      <td>H2804</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_U998</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H28</td>\n      <td>H28</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_1555</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCI-H226</td>\n      <td>H226</td>\n      <td>Szlosarek lab, Barts Cancer Institute,\u00a0UK</td>\n      <td>RRID:CVCL_1544</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MDA-MB-231</td>\n      <td>MDAMB-231</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_0062</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Caki-1</td>\n      <td>Caki-1</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_0234</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BB65</td>\n      <td>BB65</td>\n      <td>Wellcome Trust Sanger Institute,\u00a0UK</td>\n      <td>RRID:CVCL_1078</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BAP1 (C-4) mouse mAb</td>\n      <td>anti-BAP1</td>\n      <td>Santa Cruz Biotechnology, Santa Cruz, CA</td>\n      <td>Cat# sc-28383 RRID:AB_626723</td>\n      <td>1:500 in milk; 1:50 for flow cytometry</td>\n    </tr>\n    <tr>\n      <td>Caspase-8 (1C12) mouse mAb</td>\n      <td>anti-caspase 8</td>\n      <td>Cell Signaling Technology,\u00a0Danvers,\u00a0MA</td>\n      <td>Cat# 9746 RRID:AB_2275120</td>\n      <td>1:1000 in BSA</td>\n    </tr>\n    <tr>\n      <td>FLIP (7F10) mouse mAb</td>\n      <td>anti c-FLIP</td>\n      <td>Enzo Life Sciences,\u00a0Farmingdale,\u00a0NY</td>\n      <td>Cat# ALX-804-961-0100 RRID:AB_2713915</td>\n      <td>1:1000 in milk</td>\n    </tr>\n    <tr>\n      <td>c-IAP1 (D5G9) rabbit mAb</td>\n      <td>anti-cIAP1</td>\n      <td>Cell Signaling Technology,Danvers,\u00a0MA</td>\n      <td>Cat# 7065S RRID:AB_10890862</td>\n      <td>1:1000 in BSA</td>\n    </tr>\n    <tr>\n      <td>c-IAP2 (58C7) rabbit mAb</td>\n      <td>anti-cIAP2</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>Cat# 3130S RRID:AB_10693298</td>\n      <td>1:1000 in BSA</td>\n    </tr>\n    <tr>\n      <td>FADD rabbit pAb</td>\n      <td>anti-FADD</td>\n      <td>Cell Signaling Technology, Danvers\u00a0MA</td>\n      <td>Cat# 2782 RRID:AB_2100484</td>\n      <td>1:1000 in BSA</td>\n    </tr>\n    <tr>\n      <td>XIAP (3B6) rabbit mAb</td>\n      <td>anti-XIAP</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>Cat# 2045 RRID:AB_2214866</td>\n      <td>1:1000 in milk</td>\n    </tr>\n    <tr>\n      <td>survivin rabbit pAb</td>\n      <td>anti-survivin</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>Cat# 2803 RRID:AB_490807</td>\n      <td>1:1000 in BSA</td>\n    </tr>\n    <tr>\n      <td>\u03b1-Tubulin (11H10) Rabbit mAb</td>\n      <td>anti-\u03b1-tubulin</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>#2125</td>\n      <td>1:2000 in milk</td>\n    </tr>\n    <tr>\n      <td>Ubiquityl-Histone H2A (Lys119) (D27C4) XPRabbit mAb</td>\n      <td>anti-H2AK119Ub</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>Cat# 8240P RRID:AB_10891618</td>\n      <td>1:2000 in BSA</td>\n    </tr>\n    <tr>\n      <td>Histone H2A (D6O3A) Rabbit mAb</td>\n      <td>anti-H2A</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>Cat# 12349 RRID:AB_2687875</td>\n      <td>1:1000 in BSA</td>\n    </tr>\n    <tr>\n      <td>Anti-mouse IgG, HRP-linked antibody</td>\n      <td>anti-mouse HRP</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>Cat# 7076 RRID:AB_330924</td>\n      <td>1:2000 in milk</td>\n    </tr>\n    <tr>\n      <td>Anti-rabbit IgG, HRP-linked antibody</td>\n      <td>anti-rabbit HRP</td>\n      <td>Cell Signaling Technology, Danvers,\u00a0MA</td>\n      <td>Cat# 7074 RRID:AB_2099233</td>\n      <td>1:2000 in milk</td>\n    </tr>\n    <tr>\n      <td>Donkey anti-Mouse IgG (H\u00a0+\u00a0L) Highly Cross-Adsorbed Secondary Antibody, AlexaFluor 488</td>\n      <td>AlexaFluor 488-conjugated anti-mouse antibody</td>\n      <td>Thermo Fisher Scientific,\u00a0UK</td>\n      <td>Cat# A-21202 RRID:AB_141607</td>\n      <td>1:200 for flow cytometry</td>\n    </tr>\n    <tr>\n      <td>Annexin V, AlexaFluor 647 conjugate</td>\n      <td>Annexin V AlexaFluor 647-conjugated antibody</td>\n      <td>Thermo Fisher Scientific,\u00a0UK</td>\n      <td>Cat# A23204 RRID:AB_2341149</td>\n      <td>1:100 for flow cytometry</td>\n    </tr>\n    <tr>\n      <td>PE anti-human CD261 (DR4, TRAIL-R1) antibody</td>\n      <td>PE-conjugated antibody to DR4</td>\n      <td>Biolegend,\u00a0UK</td>\n      <td>Cat# 307205 RRID:AB_314669</td>\n      <td>1:100 for flow cytometry</td>\n    </tr>\n    <tr>\n      <td>PE anti-human CD262 (DR5, TRAIL-R2) antibody</td>\n      <td>PE-conjugated antibody to DR5</td>\n      <td>Biolegend,\u00a0UK</td>\n      <td>Cat# 307405 RRID:AB_314677</td>\n      <td>1:100 for flow cytometry</td>\n    </tr>\n    <tr>\n      <td>PE Mouse IgG1, \u03ba Isotype Ctrl Antibody</td>\n      <td>PE isotype control antibody</td>\n      <td>Biolegend,\u00a0UK</td>\n      <td>Cat# 400112</td>\n      <td>1:100 for flow cytometry</td>\n    </tr>\n    <tr>\n      <td>Goat anti-Rabbit IgG (H\u00a0+\u00a0L) Secondary Antibody, AlexaFluor 488 conjugate</td>\n      <td>AlexaFluor 488-conjugated anti-rabbit secondary antibody</td>\n      <td>Thermo Fisher Scientific,\u00a0UK</td>\n      <td>Cat# R37116 RRID:AB_2556544</td>\n      <td>1:200 for flow cytometry</td>\n    </tr>\n    <tr>\n      <td>Anti-Cleaved PARP1 (E51) mAb</td>\n      <td>cleaved PARP primary antibody; anti-cleaved PARP</td>\n      <td>Abcam,\u00a0UK</td>\n      <td>Cat# ab32064 RRID:AB_777102</td>\n      <td>(1:6000) for immunohistochemistry</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BAP1 (NM_004656) Human cDNA Clone</td>\n      <td>pCMV6-AC BAP1 plasmid</td>\n      <td>Origene,\u00a0Rockville,\u00a0MD</td>\n      <td>Cat# SC117256</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pHIV-Luc-ZsGreen</td>\n      <td>ZS-green luciferase plasmid, pHIV-Luc-ZsGreen</td>\n      <td>Bryan Welm Lab, University of Utah, Addgene,\u00a0Logan,\u00a0UT</td>\n      <td>Cat# 39196</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pCMVR8.74</td>\n      <td>pCMV-dR8.74</td>\n      <td>Thrasher lab, UCL, Addgene, UK</td>\n      <td>Cat# 22036</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pMD2.G</td>\n      <td>pMD2.G</td>\n      <td>Thrasher lab, UCL, Addgene, UK</td>\n      <td>Cat# 12259</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sequence based reagent</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>BAP1 GIPZ Lentiviral shRNA</td>\n      <td>BAP1 shRNA</td>\n      <td>UCL RNAi Library (Dharmacon,\u00a0Lafayett,\u00a0CO)</td>\n      <td>V2LHS 41473</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ASXL1 GIPZ Lentiviral shRNA</td>\n      <td>ASXL1 shRNA</td>\n      <td>UCL RNAi Library (Dharmacon,\u00a0Lafayett,\u00a0CO)</td>\n      <td>V2LHS 78829</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ASXL2 GIPZ Lentiviral shRNA</td>\n      <td>ASXL2 shRNA</td>\n      <td>UCL RNAi Library (Dharmacon,\u00a0Lafayette,\u00a0CO)</td>\n      <td>V3LHS_313940</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant Human sTRAIL</td>\n      <td>rTRAIL</td>\n      <td>Peprotech,\u00a0UK</td>\n      <td>Cat# 310\u201304</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell Proliferation Kit XTT</td>\n      <td>XTT reagent</td>\n      <td>Applichem,\u00a0UK</td>\n      <td>A8088</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Q5 Site-Directed Mutagenesis Kit</td>\n      <td>Site directed mutagenesis</td>\n      <td>New England Biolabs, Ipswich, MA</td>\n      <td>Cat# E0554</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rabbit specific HRP/DAB (ABC) Detection IHC Kit</td>\n      <td>rabbit-specific HRP/DAB (ABC) detection IHC kit</td>\n      <td>Abcam,\u00a0UK</td>\n      <td>Cat# ab64261</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MEDI3039</td>\n      <td>MEDI3039</td>\n      <td>MedImmune,\u00a0UK</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GraphPad Prism software</td>\n      <td>Graphpad Prism</td>\n      <td>GraphPad Software, CA, USA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CaVEMan algorithm</td>\n      <td>CaVEMan</td>\n      <td>https://github.com/cancerit/CaVEMan</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pindel algorithm</td>\n      <td>Pindel</td>\n      <td>https://github.com/genome/pindel</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Predicting Integral Copy Numbers In Cancer algorithm</td>\n      <td>PICNIC</td>\n      <td>http://www.sanger.ac.uk/science/tools/picnic</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>FlowJo software</td>\n      <td>Flowjo</td>\n      <td>FlowJo LLC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RIPA buffer</td>\n      <td>RIPA</td>\n      <td>Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO</td>\n      <td>Cat# R0278</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Syto\u2122 60 red fluorescent nucleic acid stain</td>\n      <td>Syto 60</td>\n      <td>Thermo Fisher Scientific,\u00a0UK</td>\n      <td>Cat# S11342</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Thiazolyl Blue Tetrazolium Bromide (MTT)</td>\n      <td>MTT reagent</td>\n      <td>Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO</td>\n      <td>Cat# M2128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>jetPEI DNA transfection reagent</td>\n      <td>jetPEI</td>\n      <td>Source Bioscience,\u00a0UK</td>\n      <td>Cat# 101\u201310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Polybrene</td>\n      <td>Polybrene</td>\n      <td>Sigma-Aldrich, St Louis, MO</td>\n      <td>Cat# 107689</td>\n      <td>8 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Hoechst 33342 Solution (20 mM)</td>\n      <td>Hoechst 33342</td>\n      <td>Thermo Fisher Scientific,\u00a0UK</td>\n      <td>Cat# 62249</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>4\u2019, 6-diamidino-2-phenylindole</td>\n      <td>DAPI</td>\n      <td>Sigma-Aldrich, St Louis, MO</td>\n      <td>Cat# D9542</td>\n      <td>200 \u03bcg/ml</td>\n    </tr>\n  </tbody>\n</table>\n\n### Drug screens\n\n#### Drugs in the screen\n\nCompounds were from academic collaborators or commercial vendors. Each compound, its therapeutically relevant target substrate and pathway and the minimum and maximum screening concentrations are listed in Supplementary file 1. Compounds were stored as 10 \u03bcM aliquots at \u221280\u00b0C and were subjected to a maximum of 5 freeze-thaw cycles. For the screen a fixed single 40 ng/ml concentration of rTRAIL was used, while each of the 94 agents was screened at a 5-point serial 4-fold dilution to give a 256-fold range from the lowest to highest concentration. The concentrations selected for each compound were based on in vitro data to cover the range of concentrations known to inhibit relevant kinase activity and cell viability.\n\n#### Genomic/transcriptomic characterization of mesothelioma cell lines\n\nThe genomic data is available in the COSMIC database\u00a0(Forbes et al., 2015) (http://cancer.sanger.ac.uk/cancergenome/projects/cell_lines/).\n\n#### Substitution and insertion/deletion variant data\n\nExome sequencing was carried out using the Agilent SureSelectXT Human All Exon 50 Mb bait set giving an average 7 Gb of unique mapped reads per sample with an average of 85% of base pairs covered to\u00a0>20 reads. Variants were identified by comparison to a reference single unmatched normal sample. Differences from the reference genome were identified using the CaVEMan and Pindel algorithms identifying substitution and small insertions/deletions respectively (https://github.com/cancerit/CaVEMan; https://github.com/genome/pindel)\u00a0(Ye et al., 2009). The resulting variants were then screened against approximately 8000 normal samples to remove sequencing artefacts and germline variants (428 in-house normal exomes, 6500 normal exomes (NHLBI GO Exome Sequencing Project, June 20th 2012 release), 1000 genomes project (29th March 2012 release) and variants in the dbSNP database that had an associated minor allele frequency.\n\n#### Copy number data\n\nGenome-wide copy number data were obtained for the cell lines using the Affymetrix SNP6 microarray analysed using the \u2018PICNIC\u2019 algorithm, which segments the genome into integer value copy number segments\u00a0(Greenman et al., 2010) (http://www.sanger.ac.uk/genetics/CGP/Software/PICNIC/). All genes were mapped onto this segmentation data to give a gene level copy number analysis. For genes to be classified as amplified the complete coding footprint of the gene had to map onto segment(s) present in eight or more copies. For genes to be classed as homozygously deleted a minimum of 1 bp of coding sequence had to be present within a segment of copy number \u20180\u2019.\n\n#### Cell viability assay in compound screen\n\nCells were seeded in either 96-well or 384-well microplates in RPMI-1640 or DMEM/F12. The optimal cell number for each cell line was determined to ensure that each was in growth phase at the end of the assay (~70% confluency). Adherent cell lines in the screens were plated 1 day prior to treatment with each compound using liquid handling robotics and assayed after 6 days of treatment with either the single agent or in combination with rTRAIL. Cells were fixed in 4% formaldehyde for 30 min and then stained with 1 \u03bcM of the fluorescent nucleic acid stain Syto 60 (Thermo Fisher Scientific,\u00a0UK) for 1 hr. Quantitation of fluorescent signal intensity was performed using a fluorescent plate reader at excitation and emission wavelengths of 630/695 nm. The sensitivity of each cell line to various concentrations of compound was calculated as the fraction of viable cells relative to DMSO-treated cells following a 6 day exposure. All screening plates were subjected to stringent quality control measures and a Z-factor score comparing negative and positive control wells was calculated across all screening plates (median\u00a0=\u00a00.70, upper quartile\u00a0=\u00a00.86, lower quartile\u00a0=\u00a00.47, n\u00a0=\u00a04857 plates).\n\n#### Calculation of AUC values from cell line viability data\n\nWe derived the area under the curve (AUC) parameter from the 6 day cell line viability data to identify cell lines that are sensitive to a specific compound, with decreasing AUC associated with increasing sensitivity. The AUCs were computed using a trapezoid integration below the five measured viability of the dose-response curve and scaled so that a constant viability of 1 gives AUC of 1.\n\n#### Statistical analysis of the effect of genetic features on drug response\n\nWe used 15 mesothelioma cell lines with molecular and drug response data: H2369, H2373, H2461, H2591, H2722, H2731, H2803, H2804, H2810, H2818, H2869, H513, MPP-89, NCI-H2452 and NCI-H28. We selected five genes for inclusion in the analysis (BAP1, TAOK1, NF2, TP53 and CDKN2A). We defined groups of cell lines based on mutations and copy number alterations (homozygous deletions or amplifications) in these genes. This resulted in a set of input features of 4 genes altered in at least 2 of the cell lines (CUL1, RDX and PIK3C2B were not mutated and TAOK1 was only mutated in 1 cell line). For the association of gene mutations with sensitivity to each compound we restricted the set of drugs to test to those with\u00a0\u22652 cell lines with AUC\u00a0<0.7. This resulted in 45 drugs being suitable for analysis (of the overall 94 drugs).\n\n### Cell lines\n\nAll cell lines were sourced from the Wellcome Trust Sanger Institute except the H226 line that was a kind gift from Dr Peter Szlosarek, Barts Cancer Institute. All cell lines were authenticated by genotyping using Short Tandem Repeat (STR) and Sequenom profiling of a panel of 92 single nucleotide polymorphisms for each cell line to ensure non-synonymous cell lines were not used. As a cell line classified as mesothelioma, H513 (on the list of commonly misidentified cell lines) was included in the drug screen of 15 mesothelioma cell lines conducted. Use of this cell line however was not carried forward to further experiments in the paper. The 25 early passage MM cultures were purchased from MesobanK\u00a0(Rintoul et al., 2016). All cell lines and cultures were tested for mycoplasma contamination and confirmed to be negative.\n\n### Cell culture\n\nCell lines were cultured in RPMI-1640 or Dulbecco's modified Eagle's medium and nutrient mix 12 medium (DMEM:F12) supplemented with 10% fetal bovine serum (FBS), penicillin/streptavidin and sodium pyruvate. Early passage human mesothelioma cultures were cultured in RPMI-1640 medium supplemented with 5% FBS, 25 mM HEPES, penicillin/streptavidin and sodium pyruvate. 293 T cells were cultured in Dulbecco's modified Eagle's medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 2 mM L-glutamine. All cells were maintained in a humidified environment at 37\u00b0C and 5% CO2.\n\n### Immunoblotting and antibodies\n\nCells were lysed in radioimmunoprecipitation assay (RIPA) buffer (Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO) with protease inhibitors (Complete-mini; Roche,\u00a0Switzerland) on ice to extract protein. 20 \u03bcg of protein samples were separated by SDS\u2013PAGE and transferred onto nitrocellulose membranes. Membranes were incubated with specific primary antibodies, washed, incubated with secondary antibodies and visualised using an ImageQuant LAS 4000 imaging system (GE Healthcare, Little Chalfont, NY). Antibodies used include BAP1 (Santa Cruz Biotechnology, Santa Cruz, CA) Cat# sc-28383, RRID:AB_626723), caspase 8 (Cell Signaling Technology,\u00a0Danvers,\u00a0MA) Cat# 9746, RRID:AB_2275120), c-FLIP (Enzo Life Sciences,\u00a0Farmingdale,\u00a0NY) Cat# ALX-804-961-0100 RRID:AB_2713915), cIAP1 (Cell Signaling Technology Cat# 7065S, RRID:AB_10890862), cIAP2 (Cell Signaling Technology Cat# 3130S, RRID:AB_10693298), FADD (Cell Signaling Technology Cat# 2782, RRID:AB_2100484), XIAP (Cell Signaling Technology Cat# 2045, RRID:AB_2214866), survivin (Cell Signaling Technology Cat# 2803, RRID:AB_490807), \u03b1-tubulin (Cell Signaling #2125), H2AK119Ub (Cell Signaling Technology Cat# 8240P, RRID:AB_10891618), H2A (Cell Signaling Technology Cat# 12349, RRID:AB_2687875), anti-mouse HRP (Cell Signaling Technology Cat# 7076, RRID:AB_330924) and anti-rabbit HRP (Cell Signaling Technology Cat# 7074, RRID:AB_2099233). To detect the ubiquitination status of the histones, the cells were lysed with TBS buffer containing 1% SDS, protease and phosphatase inhibitors. The cell extract was denatured by heating up at 95\u00b0C for 10 min and centrifuged at 13000 rpm for 10 min. The supernatant was collected and immunoblotted as described above.\n\n### XTT/MTT cell viability assay\n\nCells were seeded in 96-well plates in 100 \u03bcl media per well at a density of 40,000 cells/ml 1 day prior to treatment with soluble recombinant TRAIL (rTRAIL; Peprotech,\u00a0UK) or MEDI3039 (Medimmune,\u00a0UK). XTT (Applichem,\u00a0UK; A8088) or MTT (M-2128, Sigma-Aldrich) reagent was added on day 3. The absorbance was measured with a spectrophotometer at a wavelength of 490 nm or 560 nm for XTT or MTT respectively. Relative cell viability was calculated as a fraction of viable cells relative to untreated cells.\n\n### Plasmids\n\nFull-length BAP1 cDNA was amplified by PCR from pCMV6-AC BAP1 plasmid (Origene (Rockville, MD; SC117256) and cloned into the lentiviral plasmid pCCL-CMV-flT vector previously described\u00a0(Yuan et al., 2015) in place of flT via BamHI and SalI sites, creating the BAP1 vector designated pCCL-CMV-BAP1. Vectors expressing mutant BAP1 constructs were generated by site-directed mutagenesis (New England Biolabs) of the pCCL-CMV-BAP1 vector. The primers used are listed below. All mutations were confirmed by sequencing.\n\nBAP1-F CGTGGATCCGCCACCATGAATAAGGGCTGGCTGGA\n\nBAP1-R GTCGGTCGACTCACTGGCGCTTGGCCTTGTA\n\nC91A-F ATACCCAACTCTGCTGCAACTCATGCCTTGCTG\n\nC91A-R CAGCTGGTGGGCAAAGAACATGTTATTCACAATATCATC\n\nHBM-F CGCTGCTGCCAAGTCCCCCATGCAGGAGGA\n\nHBM-R GCAGCGTCTAGAAAGGCCGGCAGCCGCT\n\nCTD-F CGTGGATCCGCCACCATGAATAAGGGCTGGCTGGA\n\nCTD-R GTCGTTCGAATCAGTCAGGCTTCCGCTGCTTGTGG\n\nT493A-F GCAGACACGGCCTCTGAGATCGGCAGTGCT\n\nT493A-R ACTCTCATTGCTGGGGGTGGGTGA\n\nASXL-F AACTACGATGAGTTCATCTGCACCT\n\nASXL-R CTGGTCATCAATCTTGAACTTCTTCCTC\n\nThe ZS-green luciferase plasmid, pHIV-Luc-ZsGreen (a gift from Bryan Welm, Addgene plasmid #39196) was used for generating ZS-Green luciferase-expressing lentivirus to transduce the H226 cells used in animal experiments.\n\n### RNA interference\n\nShort hairpin RNAs (shRNAs) were expressed as part of a mir30-based GIPZ lentiviral vector (Dharmacon,\u00a0Lafayette,\u00a0CO). The clones used in this study include BAP1 (V2LHS_41473), ASXL1 (V2LHS_78829), ASXL2 (V3LHS_313940) and the empty GIPZ control vector.\n\n### Lentivirus production and cell transfection\n\nLentiviral vectors were produced by co-transfection of 293 T cells with construct plasmids together with the packaging plasmids pCMV-dR8.74 and pMD2.G (kind gifts from Dr Adrian Thrasher, UCL, Addgene plasmid #22036 and #12259) in the presence of a DNA transfection reagent jetPEI (Source Bioscience UK Ltd). Lentiviruses were concentrated by ultracentrifugation at 17,000 rpm (SW28 rotor, Optima LE80K Ultracentrifuge, Beckman Coulter, Brea, CA) for 2 hr at 4\u00b0C. To determine the titres of prepared lentiviruses 293 T cells were transduced with serial dilutions of viruses in the presence of 8 \u03bcg/ml Polybrene (Sigma-Aldrich) and BAP1 expression was assessed by flow cytometry. shRNA- and luciferase-expressing vectors were assessed by analysis of GFP expression. Cell lines were transduced in the presence of 8 \u03bcg/ml Polybrene at a range of MOIs and transduction efficacy was assessed by flow cytometry for BAP1 expression.\n\n### Gene expression analyses\n\nWe pre-processed and normalised raw CEL files from Affymetrix Human Genome U219 array plate hybridisations with the Multi-Array Average (RMA) method\u00a0(Irizarry et al., 2003). We discarded transcripts with low sample variance and consolidated duplicated genes by averaging their expression values across duplicates. The resulting data were subsequently normalised (\u03bc\u00a0=\u00a00, \u03c3\u00a0=\u00a01) sample-wise and gene-median centred. Gene expression was averaged across three biological replicates of H226 transduced cells with either a C91A mutant or a wild-type BAP1 construct. SPIA pathway analysis as described in Tarca et al (Tarca et al., 2009) was performed on those genes with an adjusted p<0.05 and a fold change of\u00a0>1.\n\n### Flow cytometry\n\nAll flow cytometry analysis was performed on a LSR Fortessa analyser (Becton Dickinson, Franklin Lakes, NJ). For analysis of BAP1 expression cells were stained with primary antibody to BAP1 (Santa Cruz Biotechnology Cat# sc-28383, RRID:AB_626723; 1:50) and then with an AlexaFluor 488-conjugated anti-mouse antibody (Thermo Fisher Scientific Cat# A-21202, RRID:AB_141607; 1:200). For analysis of apoptosis and cell death all floating and adherent cells were harvested and stained with an Annexin V AlexaFluor 647-conjugated antibody (Thermo Fisher Scientific Cat# A23204, RRID:AB_2341149) and 4\u2019, 6-diamidino-2-phenylindole (DAPI; Sigma-Aldrich, 200 \u03bcg/ml). For analysis of DR4 and DR5 expression on cell surface cells were stained with PE-conjugated antibody (DR4 - BioLegend, San Diego, CA) Cat# 307205, RRID:AB_314669, DR5 - BioLegend Cat# 307405, RRID:AB_314677, Isotype control - Biolegend #400112; 1:100). FlowJo software was used to analyse all data.\n\n### Immunofluorescence\n\nH226 cells were seeded at 2.5 \u00d7 103 cells per well into 96-well Greiner micro-clear imaging plates in DMEM 10% FBS. After 48 hr, cells were fixed in 4% PFA for 10 min at room temperature and permeabilised in 0.3% NP-40 in PBS for 10 min. Cells were blocked in 1% BSA in 0.1% PBS tween for 1 hr at room temperature. Ubiquityl-histone H2A (Lys119) primary antibody (Cell Signaling, #8240) was incubated overnight at 4\u00b0C, before incubating for 1 hr at room temperature with Alexafluor 488-conjugated anti-rabbit secondary antibody. Nuclei were stained with Hoechst 33342 (Thermo Fisher Scientific Cat# 62249). Images were acquired (n\u00a0=\u00a03) with a BioTek Cytation3 Multimode reader. Using a 10x objective 4 fields of view were acquired per well (n\u00a0=\u00a03) and the level of nuclear ubiquityl-histone H2A intensity was determined within the primary nuclear mask and normalised to total cell number.\n\n### Immunohistochemical analysis of early passage cultures\n\nBAP1 immunohistochemistry of human early passage cell lines was conducted on sections of cell pellets mounted on slides. Automated staining on a Leica Bond III staining platform was used. Slides were incubated with BAP1 primary antibody (Santa Cruz Biotechnology Cat# sc-28383, RRID:AB_626723; 1:150) for 15 min at room temperature. Epitope retrieval was completed using HIER using Leica Bond ER2 (high pH) for 30 min and a Leica Bond Polymer Refine with DAB chromogen detections system used.\n\n### Mesothelioma patient explants\n\nAppropriate ethical approval was obtained from the NHS Health Research Authority National Research Ethics Service to carry out this work (reference 14/LO/1527). Informed consent to conduct research on samples collected and to publish results was obtained from patients. The diagnosis of mesothelioma was confirmed histologically for all patients prior to consent and surgery. Patients underwent pleurectomy, following which primary pleural tissue was sectioned into fragments measuring approximately 2 mm3. These tissue explants were cultured in 50% neurobasal and 50% DMEM:F12, supplemented with B27 (2%), EGF (20 ng/ml) and FGF (10 ng/ml). After 24 hr the explants were treated with rTRAIL (vehicle, 50 ng/ml, 100 ng/ml or 200 ng/ml) for a further 24 hr, following which explants were either fixed for PARP immunohistochemistry. The explants were fixed in 10% neutral-buffered formalin (NBF) for 24 hr and then transferred into 70% ethanol followed by paraffin embedding. Subsequently, 5 \u03bcm sections were used for immunohistochemistry, as previously described\u00a0(Busacca et al., 2016).\n\n#### Immunohistochemistry of patient explants\n\nCleaved PARP primary antibody (Abcam Cat# ab32064, RRID:AB_777102) was used at a 1:6000 dilution and the rabbit-specific HRP/DAB (ABC) detection IHC kit (Abcam) was used for immunohistochemistry, according to the manufacturer\u2019s instructions. Sections were counterstained with haematoxylin and mounted using Vectamount permanent mounting media (Vector Labs, Peterborough, United Kingdom). Images were taken at 40x magnification on a Hamamatsu Nanozoomer Digital slide scanner. Cleaved PARP-positive cells were scored as the percentage of cells with nuclear staining.\n\n### Animals\n\nAll animal studies were approved by the University College London Biological Services Ethical Review Committee and licensed under the UK Home Office regulations and the Evidence for the Operation of Animals (Scientific Procedures) Act 1986 (Home Office, London, UK). Mice were purchased from Charles River, kept in individually ventilated cages under specific pathogen-free conditions and had access to sterile irradiated food and autoclaved water ad libitum.\n\n### Xenograft mouse models\n\n12 8 week old NOD.CB17-Prkdcscid/NcrCrl (NOD SCID) mice (Charles River,\u00a0UK; RRID:IMSR_CRL:394) were injected with 1 \u00d7 106 H226 cells transduced with a plasmid containing wild-type BAP1 and luciferase on the right flank and with a plasmid containing a catalytically inactive BAP1-mutant (C91A) and luciferase on the left flank in a 1:1 mixture of Matrigel (Corning,\u00a0Corning,\u00a0NY) and medium. Tumour size was assessed by bioluminescence in vivo imaging system (IVIS, PerkinElmer, Waltham, MA) 15 min following intraperitoneal injection of 0.2 ml (2 mg) luciferin. Tumours were allowed to establish for 2 weeks prior to baseline assessment of size at day 13. Mice were then divided into two groups each of which received either 600 \u03bcg TRAIL or vehicle 6 days a week from day 14 until day 40. Bioluminescence was measured on days 0, 13, 19, 26 and 41. Mice were sacrificed on day 42 and tumours harvested for measurement. TRAIL used in the mouse experiment was made in Henning Walczak\u2019s laboratory as per the established protocol\u00a0(Ganten et al., 2006).\n\n### Statistical analysis\n\nStatistical analysis was performed using GraphPad Prism (GraphPad Software, CA, USA). t-test was used to analyse differences between two groups whilst the analysis of variance (ANOVA) test with a Tukey post-hoc analysis was used to analyse differences between three groups. For multiple groups measured over multiple time points repeated measures ANOVA was used. All in vitro tests were performed in triplicate and all data are represented as mean values\u00a0\u00b1\u00a0standard error of mean unless otherwise stated.\n",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "6626fed6-3394-40d4-ae3c-2ff592529b13",
+      "submission_id": "da2c11cc-e906-4626-adf1-33c82634b3df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaqu\u00edn M Espinosa, University of Colorado School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30224.031](https://doi.org/10.7554/eLife.30224.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Loss of functional BAP1 is a biomarker for TRAIL sensitivity in cancer\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Charles Sawyers as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew Thorburn (Reviewer #1); Dan Longley (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nKolluri et.al. present convincing data arising from a drug screen in a panel of mesothelioma cell lines that the nuclear deubiquitinase BAP1 regulates TRAIL sensitivity in mesothelioma cells (and some other tumor types too.) Loss of BAP1 expression, which occurs in some cancers, could potentially serve as a biomarker for sensitivity to agonists that target TRAIL receptors (TRAIL R). As noted by the authors TRAIL R-targeted therapeutics have been quite widely tested and usually shown to be safe, however the lack of an ability to identify patients who are likely to benefit from these treatments has stymied development of this class of drugs. Therefore, the area that the authors are addressing is potentially quite important. Reviewers found the data presented to be quite convincing and to support the authors' case that BAP1 can affect TRAIL sensitivity most likely through epigenetic regulation of gene expression by a mechanism involving the AXLS1 protein. However, a number of concerns were raised about the ultimate power of BAP1 status to serve as a biomarker in the clinic, as well as the minimal mechanistic insight provided in the report.\n\nAfter thorough discussion, the reviewers agreed to invite a resubmission of a revised manuscript addressing the following major points:\n\n1) A main concern with the paper in its current form is that it doesn't represent a major advance for the field, in the sense that there are many genes and processes that have been shown to confer TRAIL sensitivity and proposed as potential biomarkers, yet none of them so far have worked out to be useful. Reviewers agreed that more evidence is needed in this regard. First, it's not clear whether the effects are really specific to TRAIL. Many perturbations that make tumor cells more sensitive to apoptosis will appear to confer sensitivity on a canonical apoptosis inducer like TRAIL. Therefore, reviewers request a series of experiments addressing this issue, to define whether or not BAP1 mutation/loss is a general sensitizer to death ligands and/or general apoptotic stimuli. Reviewers suggest testing a different death ligand, such as a Fas agonist (e.g. CH-11 antibody) or, alternatively, a TNF/IAP antagonist combination. For the general apoptotic stimulus, the reviewers propose disease-relevant genotoxic agents such as pemetrexed or cisplatin.\n\n2) Second, reviewers agreed that more work should be performed to establish the notion of BAP1 status as a biomarker for TRAIL efficacy. Although the pattern presented is very strong, many BAP1 positive cells are sensitive to TRAIL and vice versa, indicating that other factors in addition to BAP1 define sensitivity to TRAIL. The report will be significantly strengthened by performing cause-effect relationship experiments in a much larger number of cell lines. More specifically, reviewers would like to see the BAP1 depletion experiments done in a larger panel of cell lines. The report currently shows the effect of BAP1 knockdown in only two cell lines: H226 and MDA-MB-231. All other cause-effect experiments involve artifact-prone overexpression experiments of BAP1 (wt or various mutants). Given the ready access to cell lines and proven shRNAs for BAP1, the conclusions would be significantly strengthened by testing the effect of BAP1 depletion in two additional MM cell lines that are BAP1 positive and TRAIL-resistant. Additionally, BAP1 mutations are most frequent among kidney clear cell carcinomas (CRCC) estimated at 10% by tumorportal.org. The impact of the report would be significantly increased by measuring TRAIL sensitivity upon BAP1 depletion in two CCRC cell lines expressing wild type BAP1.\n\n3) Third, the clinical relevance would be increased by testing a large number of patient samples in the ex vivo analyses in Figure 3B and C and/or to use a more clinically relevant TRAIL receptor agonist.\n\n4) Another major issue was the minimal mechanistic insight as to how BAP1 status regulates sensitivity to TRAIL. What is the impact of BAP1 on known regulators and effectors of the TRAIL receptor pathway? Some data and discussion on the relationship between BAP1 mutation and gene expression of TRAIL-R1/2, FADD, FLIP, caspase-8, etc. is needed. What happens to these genes when WT versus mymutant BAP1 is overexpressed in BAP1 negative cell line?\n\n5) Additionally, insight into how the ASXL1 connection translates into increased cell death should be provided, such as additional measures of key cell death signaling nodes as described in #4 above in experiments where ASXL1 activity/expression has been manipulated.\n\n6) In the absence of true validation of BAP1 status as a biomarker in the clinical setting, the title was deemed overambitious, and reviewers request a more accurate title and some attenuation of some of the conclusions describing BAP1 as a biomarker.\n",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "21b2a2c4-5c8f-45ad-8e23-df67ff37efbe",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C1",
+      "claim": "A 6 day viability screen using 94 drugs was performed on 15 MM cell lines that had been characterised using whole-exome sequencing, copy number analysis and gene expression arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "A 6 day viability screen using 94 drugs including small molecule inhibitors and cytotoxic chemotherapeutics (Supplementary file 1) was performed on 15 MM cell lines (Supplementary file 2) that had been characterised using whole-exome sequencing, copy number analysis and gene expression arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design of the drug screen, including the number of drugs, cell lines, and characterization methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "02eaf9c1-0111-4ea0-aa3b-f200a0f98aa7",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C2",
+      "claim": "The screen generated 1425 single agent activity data profiles across the 15 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated 1425 single agent activity data profiles across the 15 cell lines (Figure 1A and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the number of data profiles generated and references Figure 1A showing the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "7ae6245e-d3eb-439c-aea0-9de16ea0ac9c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C3",
+      "claim": "There were 24 significant associations (false discovery rate (FDR) < 0.2) between single agent response and the presence of a genomic alteration.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 24 significant associations (false discovery rate (FDR) < 0.2) between single agent response and the presence of a genomic alteration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the statistical analysis results identifying significant associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "6f01c0e9-12f6-454e-905a-9dd40b7ebd17",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C4",
+      "claim": "The most statistically significant sensitising association was between BAP1 LOF mutations and treatment with recombinant TRAIL (FDR = 0.18, effect size \u22120.48).",
+      "claim_type": "EXPLICIT",
+      "source": "The most statistically significant sensitising association seen was between BAP1 LOF mutations (mt BAP1) and treatment with recombinant TRAIL (rTRAIL; FDR = 0.18, effect size \u22120.48) (Figure 1B,C and Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical measures (FDR and effect size) for the BAP1-TRAIL association and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "2950a2c9-076d-408e-8583-04a9636e6fbc",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C5",
+      "claim": "No significant effect on cell viability was observed in BAP1 wild-type lines when treated with rTRAIL.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant effect on cell viability was observed in BAP1 wild-type (wt BAP1) lines when treated with rTRAIL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "9af443ef-84b7-40d4-b0e7-8a61b778f0d4",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C6",
+      "claim": "6 of the 8 cell lines (75%) harbouring a BAP1 LOF mutation were sensitive or partially sensitive to a dose range of rTRAIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 6 of the 8 cell lines (75%) harbouring a BAP1 LOF mutation were sensitive or partially sensitive to a dose range of rTRAIL while 7 of the 9 cell lines (78%) harbouring wild-type BAP1 were resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative data on the proportion of BAP1-mutant cell lines sensitive to rTRAIL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "957d43e7-bcaa-490d-adb8-116dd4bd3d25",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C7",
+      "claim": "7 of the 9 cell lines (78%) harbouring wild-type BAP1 were resistant to rTRAIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 6 of the 8 cell lines (75%) harbouring a BAP1 LOF mutation were sensitive or partially sensitive to a dose range of rTRAIL while 7 of the 9 cell lines (78%) harbouring wild-type BAP1 were resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative data on the proportion of BAP1-wild-type cell lines resistant to rTRAIL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "0e5c2d40-bd4c-45f7-a9c5-7f8df704bf7c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C8",
+      "claim": "BAP1 LOF mutations correlated with a loss of BAP1 protein expression in the majority of cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "BAP1 LOF mutations correlated with a loss of BAP1 protein expression in the majority of cell lines (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the correlation and references Figure 1E showing immunoblot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "39531284-d893-4f03-babb-541e2bbc49e2",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C9",
+      "claim": "No sensitising association with BAP1 was observed for pemetrexed or cisplatin.",
+      "claim_type": "EXPLICIT",
+      "source": "No sensitising association with BAP1 was observed for pemetrexed or cisplatin, which are current first line agents for the treatment of MM (Figure 1\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the absence of association for these drugs and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "6e041719-24c0-43cb-9d48-d5bdd2cd4021",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C11",
+      "claim": "Loss of BAP1 expression has been identified in uveal melanoma (47%).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of BAP1 expression has also been identified in several other tumour types including uveal melanoma (47%) (Harbour et al., 2010), clear cell renal carcinoma (CCRC) (14%) (Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma (7%) (Fujimoto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 loss in uveal melanoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "f3f71493-670e-459f-9e59-7ead15f7ad53",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C12",
+      "claim": "Loss of BAP1 expression has been identified in clear cell renal carcinoma (14%).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of BAP1 expression has also been identified in several other tumour types including uveal melanoma (47%) (Harbour et al., 2010), clear cell renal carcinoma (CCRC) (14%) (Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma (7%) (Fujimoto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 loss in clear cell renal carcinoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "8b17baa8-53f0-4513-8c08-10af4c6642d8",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C13",
+      "claim": "Loss of BAP1 expression has been identified in cholangiocarcinoma (7%).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of BAP1 expression has also been identified in several other tumour types including uveal melanoma (47%) (Harbour et al., 2010), clear cell renal carcinoma (CCRC) (14%) (Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma (7%) (Fujimoto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 loss in cholangiocarcinoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "acf0fc7b-3aae-416b-ba29-9094e529351d",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C14",
+      "claim": "Knockdown of BAP1 in two CCRC lines resulted in increased sensitivity to rTRAIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, knockdown of BAP1 in two CCRC lines resulted in increased sensitivity to rTRAIL in addition to the MDAMB-231 breast cancer line (Figure 2B and Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results of BAP1 knockdown in CCRC lines and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "12582e43-ad16-43b1-850f-0da2dd244d84",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C15",
+      "claim": "Knockdown of BAP1 in the MDAMB-231 breast cancer line resulted in increased sensitivity to rTRAIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, knockdown of BAP1 in two CCRC lines resulted in increased sensitivity to rTRAIL in addition to the MDAMB-231 breast cancer line (Figure 2B and Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results of BAP1 knockdown in breast cancer line and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "78e26912-fb81-4be8-bacc-632977e94b9f",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C16",
+      "claim": "Nine additional non-mesothelioma cell lines harbouring truncating mutations in BAP1 were identified in a panel of 1001 cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analysed a panel of 1001 cancer cell lines submitted for whole exome and copy number analysis as part of the COSMIC cell lines project (Forbes et al., 2015) and identified nine additional non-mesothelioma cell lines harbouring truncating mutations in BAP1 (http://cancer.sanger.ac.uk/cancergenome/projects/cell_lines/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports analysis of COSMIC database identifying BAP1-mutant cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "d4071e57-b5e4-46e8-a451-cb9b19293c20",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C17",
+      "claim": "Treatment of cancer cell lines harbouring nonsense mutations in BAP1 with rTRAIL resulted in markedly reduced cell viability compared with cancer cell lines harbouring missense mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of cancer cell lines harbouring nonsense mutations in BAP1 with rTRAIL resulted in markedly reduced cell viability compared with cancer cell lines harbouring missense mutations (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results comparing different types of BAP1 mutations and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "0f63d29a-b68f-4f57-b565-96216195f29a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C18",
+      "claim": "rTRAIL sensitivity of the parental BAP1-null H226 MM line was significantly diminished following expression of wild-type BAP1.",
+      "claim_type": "EXPLICIT",
+      "source": "rTRAIL sensitivity of the parental BAP1-null H226 MM line was significantly diminished following expression of wild-type BAP1 and each of the mutant constructs except those with an inactive deubiquitinating or ASXL protein-binding site (Figure 2C), implicating the function of these sites in BAP1-induced TRAIL resistance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results of BAP1 rescue experiments and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "97a8f627-c7d3-47dc-bf6b-53a9bbbe5bbf",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C19",
+      "claim": "rTRAIL sensitivity was maintained in H226 cells expressing BAP1 with an inactive deubiquitinating site.",
+      "claim_type": "EXPLICIT",
+      "source": "rTRAIL sensitivity of the parental BAP1-null H226 MM line was significantly diminished following expression of wild-type BAP1 and each of the mutant constructs except those with an inactive deubiquitinating or ASXL protein-binding site (Figure 2C), implicating the function of these sites in BAP1-induced TRAIL resistance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results showing that the C91A mutant did not rescue TRAIL resistance and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "ee828f0a-a64f-4794-aa52-86885497ec80",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C20",
+      "claim": "rTRAIL sensitivity was maintained in H226 cells expressing BAP1 with an inactive ASXL protein-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "rTRAIL sensitivity of the parental BAP1-null H226 MM line was significantly diminished following expression of wild-type BAP1 and each of the mutant constructs except those with an inactive deubiquitinating or ASXL protein-binding site (Figure 2C), implicating the function of these sites in BAP1-induced TRAIL resistance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results showing that the \u0394ASXL mutant did not rescue TRAIL resistance and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "733aafbb-f1f4-48eb-b87b-2a96cf332533",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C21",
+      "claim": "The BAP1 deubiquitinase and ASXL-binding sites are key to the function of the PR-DUB.",
+      "claim_type": "EXPLICIT",
+      "source": "The BAP1 deubiquitinase and ASXL-binding sites are key to the function of the PR-DUB, an epigenetic transcriptional regulatory complex composed of BAP1 and ASXL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the functional importance of these sites based on known biology of PR-DUB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "6c26cdfa-884c-496f-b80b-2c9807944985",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C22",
+      "claim": "Deubiquitination of H2AK119Ub alters chromatin architecture to modulate gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Deubiquitination of the main substrate of the PR-DUB, H2AK119Ub, alters chromatin architecture to modulate gene transcription (Scheuermann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the mechanism of PR-DUB function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a83942ba-5efa-4259-8b7e-29d75d66895f",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C23",
+      "claim": "shRNA silencing of ASXL1 induced sensitivity to MEDI3039 and rTRAIL in the BAP1/ASXL1/ASXL2-wild-type MM line MPP-89.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this shRNA silencing of ASXL1, but not ASXL2, induced sensitivity to MEDI3039 and rTRAIL in the BAP1/ASXL1/ASXL2-wild-type MM line MPP-89 (Figure 2E and Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results of ASXL1 knockdown and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "dafe1ab4-3dd1-4fa6-9cf9-0156ce35f0d8",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C24",
+      "claim": "shRNA silencing of ASXL2 did not induce sensitivity to MEDI3039 and rTRAIL in the BAP1/ASXL1/ASXL2-wild-type MM line MPP-89.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this shRNA silencing of ASXL1, but not ASXL2, induced sensitivity to MEDI3039 and rTRAIL in the BAP1/ASXL1/ASXL2-wild-type MM line MPP-89 (Figure 2E and Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results of ASXL2 knockdown showing no effect and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "097c889e-6df9-4b93-9ce3-6e64b26e4f5d",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C25",
+      "claim": "H2AK119Ub expression was unaltered in the rTRAIL-sensitive H226 cells transduced with mutant constructs that disrupt PR-DUB activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, H2AK119Ub expression was unaltered in the rTRAIL-sensitive H226 cells transduced with mutant constructs that disrupt PR-DUB activity, while the rTRAIL-resistant H226 cells transduced with a wild-type BAP1 construct exhibited lower H2AK119Ub levels (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results measuring H2AK119Ub levels and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "35382318-9e69-4bc5-b999-85639b8eace7",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C26",
+      "claim": "rTRAIL-resistant H226 cells transduced with a wild-type BAP1 construct exhibited lower H2AK119Ub levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, H2AK119Ub expression was unaltered in the rTRAIL-sensitive H226 cells transduced with mutant constructs that disrupt PR-DUB activity, while the rTRAIL-resistant H226 cells transduced with a wild-type BAP1 construct exhibited lower H2AK119Ub levels (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results measuring H2AK119Ub levels and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "37caca62-e166-4465-a40e-09f318694bb3",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C27",
+      "claim": "Among pathways significantly altered when comparing wild-type versus C91A BAP1 (FDR < 0.2) was that of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those pathways significantly altered when comparing wild-type versus C91A BAP1 (FDR < 0.2) was that of apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results of pathway analysis comparing gene expression between wild-type and mutant BAP1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "fca9f35f-1cb2-4534-9637-c0637892eb75",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C28",
+      "claim": "There was altered mRNA expression of components of the extrinsic death pathway when comparing wild-type versus C91A BAP1.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, there was altered mRNA expression of components of the extrinsic death pathway (Figure 2F and Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes gene expression analysis results and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a3dbe8c4-5f17-4c7d-bd4b-cdb00265053a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C29",
+      "claim": "There were significantly decreased levels of the anti-apoptotic cIAP1/2 (p=2.32E-10) in the rTRAIL sensitive C91A BAP1-transduced cells relative to the rTRAIL resistant BAP1-wild-type transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This manifested as an imbalance in levels of pro- and anti-apoptotic mRNA expression with, for example, significantly decreased levels of the anti-apoptotic cIAP1/2 (p=2.32E-10) and increased levels of the pro-apoptotic death receptor 5 (p=7.79E-10) in the rTRAIL sensitive C91A BAP1-transduced cells relative to the rTRAIL resistant BAP1-wild-type transduced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical analysis of gene expression differences with p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a0b11a8a-af27-4ed4-a1ad-fe91e57f863c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C30",
+      "claim": "There were increased levels of the pro-apoptotic death receptor 5 (p=7.79E-10) in the rTRAIL sensitive C91A BAP1-transduced cells relative to the rTRAIL resistant BAP1-wild-type transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This manifested as an imbalance in levels of pro- and anti-apoptotic mRNA expression with, for example, significantly decreased levels of the anti-apoptotic cIAP1/2 (p=2.32E-10) and increased levels of the pro-apoptotic death receptor 5 (p=7.79E-10) in the rTRAIL sensitive C91A BAP1-transduced cells relative to the rTRAIL resistant BAP1-wild-type transduced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical analysis of gene expression differences with p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "873c7610-d5c5-4c98-8b59-afc6429cb357",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C31",
+      "claim": "Immunoblot analysis confirmed reduced protein expression of cIAP1/2 and c-FLIP in both C91A and \u0394ASXL BAP1-transduced cells relative to BAP1-wild-type transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot analysis confirmed reduced protein expression of cIAP1/2 and c-FLIP in both C91A and \u0394ASXL BAP1-transduced cells relative to BAP1-wild-type transduced cells (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes immunoblot results confirming protein expression changes and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "e3857ccc-bb37-4f91-baf4-c16a5f69a9b2",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C32",
+      "claim": "Flow cytometry analysis confirmed reduced DR4 and DR5 expression in C91A BAP1 transduced relative to BAP1-wild-type-transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis confirmed reduced DR4 and DR5 expression in C91A BAP1 transduced relative to BAP1-wild-type-transduced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes flow cytometry results measuring death receptor expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "56b1ff06-ea78-48f5-a909-dfdc837725dc",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C33",
+      "claim": "Knockdown of BAP1 in the BAP1 wild-type H2818 line resulted in a significant increase in DR4 expression only.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of BAP1 in the BAP1 wild-type H2818 line resulted in a significant increase in DR4 expression only (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes flow cytometry results of BAP1 knockdown effects on death receptor expression and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "b13216fa-b807-4b42-8f79-e9dbd93b5472",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C34",
+      "claim": "25 human early passage MM lines from the UK Mesobank were assessed for BAP1 expression by immunohistochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "25 human early passage MM lines from the UK Mesobank (Rintoul et al., 2016) were assessed for BAP1 expression by immunohistochemistry, a technique known to correlate strongly with BAP1 LOF mutations in the absence of strong nuclear staining (Nasu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach for assessing BAP1 status in early passage cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "f5b120fd-2d0c-4948-a1af-af40e1ad5c49",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C35",
+      "claim": "Immunohistochemistry correlates strongly with BAP1 LOF mutations in the absence of strong nuclear staining.",
+      "claim_type": "EXPLICIT",
+      "source": "25 human early passage MM lines from the UK Mesobank (Rintoul et al., 2016) were assessed for BAP1 expression by immunohistochemistry, a technique known to correlate strongly with BAP1 LOF mutations in the absence of strong nuclear staining (Nasu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature establishing the correlation between IHC and BAP1 mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "9e199a4d-d6a7-4bd2-9bbc-713f9adbf0d4",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C36",
+      "claim": "Early passage MM lines without strong nuclear BAP1 staining were significantly more sensitive to rTRAIL than those with strong nuclear staining (p=0.0067).",
+      "claim_type": "EXPLICIT",
+      "source": "When treated with rTRAIL, those without strong nuclear staining were significantly more sensitive than those with strong nuclear staining (p=0.0067).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides statistical analysis of the association between BAP1 IHC status and TRAIL sensitivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "579ff811-5a0a-4ffa-bf96-bf77138cd40d",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C37",
+      "claim": "Of the 12 early passage MM lines that did not express nuclear BAP1, 9 were sensitive, 2 partially sensitive and only one resistant to rTRAIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 12 lines that did not express nuclear BAP1 9 were sensitive, 2 partially sensitive and only one resistant to rTRAIL (Table 1, Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides quantitative data on the sensitivity distribution of BAP1-negative early passage cultures and references supporting table and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "6a36fbc0-586e-44aa-8149-1b56868c384b",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C38",
+      "claim": "rTRAIL treatment of tumour explants derived from three patients with MM revealed increased levels of apoptosis in explants with low BAP1 expression compared with those with high BAP1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, rTRAIL treatment of tumour explants derived from three patients with MM also revealed increased levels of apoptosis (as measured by poly (ADP-ribose) polymerase (PARP) cleavage) in explants with low BAP1 expression compared with those with high BAP1 expression (Figure 3B and C, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results from patient tumor explants and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "5032a9fd-2871-4399-bf9f-9bad26c2b527",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C39",
+      "claim": "At sacrifice, rTRAIL-treated BAP1-mutant tumors weighed significantly less than rTRAIL-treated BAP1-wild-type tumors (p=0.020).",
+      "claim_type": "EXPLICIT",
+      "source": "At sacrifice rTRAIL-treated BAP1-mutant tumours weighed significantly less than rTRAIL-treated BAP1-wild-type tumours (p=0.020) and vehicle-treated BAP1-mutant tumours (p=0.019) (Figure 3D and Figure 3\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical analysis of tumor weights from xenograft experiments and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "8a4ad259-6649-40db-b733-d0222f99e548",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C40",
+      "claim": "At sacrifice, rTRAIL-treated BAP1-mutant tumors weighed significantly less than vehicle-treated BAP1-mutant tumors (p=0.019).",
+      "claim_type": "EXPLICIT",
+      "source": "At sacrifice rTRAIL-treated BAP1-mutant tumours weighed significantly less than rTRAIL-treated BAP1-wild-type tumours (p=0.020) and vehicle-treated BAP1-mutant tumours (p=0.019) (Figure 3D and Figure 3\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical analysis of tumor weights from xenograft experiments and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "1e6fd234-130c-48bb-a6fc-5faab7c9ca86",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C41",
+      "claim": "BAP1-wild-type tumors showed no response to rTRAIL compared with vehicle.",
+      "claim_type": "EXPLICIT",
+      "source": "BAP1-wild-type tumours showed no response to rTRAIL compared with vehicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the lack of response in wild-type tumors from xenograft experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "2243e310-0a4f-46ff-93b2-79320e062436",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C42",
+      "claim": "The growth rate of rTRAIL-treated BAP1-mutant tumors was significantly suppressed compared with rTRAIL-treated BAP1-wild-type and vehicle-treated tumors (p<0.05) as assessed by longitudinal bioluminescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate of rTRAIL-treated BAP1-mutant tumours was also significantly suppressed compared with rTRAIL-treated BAP1-wild-type and vehicle-treated tumours (p<0.05) as assessed by longitudinal bioluminescence intensity (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical analysis of tumor growth rates from xenograft experiments and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "239fd70f-0c14-4303-9440-2d2b75d170d2",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C43",
+      "claim": "Malignant mesothelioma currently has no biomarker-driven therapies in routine clinical use.",
+      "claim_type": "EXPLICIT",
+      "source": "Malignant mesothelioma (MM) currently has no biomarker-driven therapies in routine clinical use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the current clinical situation for MM treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a6c958f8-cc4a-4a18-91af-b6e8cc43ec3d",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C44",
+      "claim": "The mainstay of medical therapy for all MM patients remains systemic cytotoxic chemotherapy that offers only limited survival benefit in unselected populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The mainstay of medical therapy for all patients remains systemic cytotoxic chemotherapy that offers only limited survival benefit in unselected populations; as such the disease remains invariably fatal (Vogelzang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the current standard of care and outcomes for MM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "d9c184ec-465b-4511-8ad7-ce3b13237188",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C45",
+      "claim": "CDKN2A, NF2, BAP1 and TP53 are the most frequently mutated genes in MM.",
+      "claim_type": "EXPLICIT",
+      "source": "CDKN2A, NF2, BAP1 and TP53 are the most frequently mutated (Guo et al., 2015; Bueno et al., 2016) and there has been increased focus on these genes and their associated signaling pathways as potential therapeutic targets (LaFave et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature identifying the most frequently mutated genes in MM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "c4f67d7d-d756-4dae-be10-23822c7d0b94",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C46",
+      "claim": "rTRAIL and other death receptor agonists selectively induce apoptosis in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "rTRAIL and other death receptor agonists selectively induce apoptosis in cancer cells and have long held promise as anti-cancer agents owing to their broad clinical utility and minimal off-target effects (Wiley et al., 1995; Pitti et al., 1996; Ashkenazi et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the mechanism and promise of death receptor agonists.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "9001056b-efd3-4392-a95f-f8f3da616759",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C47",
+      "claim": "Successful preclinical studies of death receptor agonists have not translated to clinical efficacy in trials of unselected populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, successful preclinical studies have not translated to clinical efficacy in trials of unselected populations (Herbst et al., 2010; Wainberg et al., 2013; Soria et al., 2010; Lemke et al., 2014a); there have been no trials to date in MM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the failure of death receptor agonists in clinical trials.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "1a1915f6-5d4e-4051-9b52-29a1a68228df",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C48",
+      "claim": "There have been no trials of death receptor agonists to date in MM.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, successful preclinical studies have not translated to clinical efficacy in trials of unselected populations (Herbst et al., 2010; Wainberg et al., 2013; Soria et al., 2010; Lemke et al., 2014a); there have been no trials to date in MM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the absence of clinical trials of death receptor agonists in MM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "e220236e-9622-491b-9625-b998b9015074",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C49",
+      "claim": "BAP1 is a nuclear deubiquitinase and forms multi-protein complexes that regulate the transcription of genes involved in key cellular functions including cell cycle regulation and DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "BAP1 is a nuclear deubiquitinase and forms multi-protein complexes that regulate the transcription of genes involved in key cellular functions including cell cycle regulation and DNA repair (Ismail et al., 2014; Machida et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing BAP1 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "b1c97d3b-02c8-42b7-860f-eec5af1f464a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C50",
+      "claim": "Loss of BAP1 function modulates mRNA and protein expression of components of the extrinsic apoptotic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that loss of BAP1 function modulates mRNA and protein expression of components of the extrinsic apoptotic pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes findings from gene expression and protein analysis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "83a65e77-2e96-4a24-a2e5-e63ef3963e14",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C51",
+      "claim": "Next-generation sequencing reveals MM BAP1 mutation rates in the order of 20\u201330%.",
+      "claim_type": "EXPLICIT",
+      "source": "While next-generation sequencing reveals MM BAP1 mutation rates in the order of 20\u201330% (Guo et al., 2015; Bueno et al., 2016; Bott et al., 2011), immunohistochemical analysis has identified loss of BAP1 function in up to 67% of MM tumours (Nasu et al., 2015) opening our biomarker-driven approach to a significant proportion of MM patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 mutation frequencies in MM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "564ecef6-a57a-42e7-a8f5-ab0ac11d442a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C52",
+      "claim": "Immunohistochemical analysis has identified loss of BAP1 function in up to 67% of MM tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "While next-generation sequencing reveals MM BAP1 mutation rates in the order of 20\u201330% (Guo et al., 2015; Bueno et al., 2016; Bott et al., 2011), immunohistochemical analysis has identified loss of BAP1 function in up to 67% of MM tumours (Nasu et al., 2015) opening our biomarker-driven approach to a significant proportion of MM patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 loss by IHC in MM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "3339c783-c081-48de-ba5b-87f5ac05abac",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C53",
+      "claim": "BAP1 immunohistochemistry accurately identifies loss of BAP1 function as a consequence of genetic and non-genetic mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "BAP1 immunohistochemistry accurately identifies loss of BAP1 function as a consequence of genetic and non-genetic mechanisms (Nasu et al., 2015) and is already in clinical use as a diagnostic tool; hence the clinical tools for our proposed approach are validated and ready.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the utility of BAP1 IHC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "998e44f7-8081-4640-8046-0fdbe3f82bf0",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C54",
+      "claim": "BAP1 immunohistochemistry is already in clinical use as a diagnostic tool.",
+      "claim_type": "EXPLICIT",
+      "source": "BAP1 immunohistochemistry accurately identifies loss of BAP1 function as a consequence of genetic and non-genetic mechanisms (Nasu et al., 2015) and is already in clinical use as a diagnostic tool; hence the clinical tools for our proposed approach are validated and ready.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the current clinical use of BAP1 IHC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "6267045c-66a8-49a8-b304-293dda63657b",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C55",
+      "claim": "Chromosomal deletions and somatic inactivating mutations in BAP1 have been identified at high frequency in uveal melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosomal deletions and somatic inactivating mutations have been identified at high frequency in uveal melanoma (Harbour et al., 2010), clear cell renal carcinoma (Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma (Fujimoto et al., 2015), increasing the potential clinical impact of our discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 alterations in uveal melanoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "64b4a61d-63e8-4b56-afd2-410788fdaa6a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C56",
+      "claim": "Chromosomal deletions and somatic inactivating mutations in BAP1 have been identified at high frequency in clear cell renal carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosomal deletions and somatic inactivating mutations have been identified at high frequency in uveal melanoma (Harbour et al., 2010), clear cell renal carcinoma (Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma (Fujimoto et al., 2015), increasing the potential clinical impact of our discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 alterations in clear cell renal carcinoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "6124d999-51c0-416c-b319-544a54550a26",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C57",
+      "claim": "Chromosomal deletions and somatic inactivating mutations in BAP1 have been identified at high frequency in cholangiocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosomal deletions and somatic inactivating mutations have been identified at high frequency in uveal melanoma (Harbour et al., 2010), clear cell renal carcinoma (Pe\u00f1a-Llopis et al., 2012) and cholangiocarcinoma (Fujimoto et al., 2015), increasing the potential clinical impact of our discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 alterations in cholangiocarcinoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a83f0055-bfb3-4e58-903f-7ffc31be6748",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C58",
+      "claim": "Loss of BAP1 function is seen at 1% in breast carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Although loss of BAP1 function is seen at far lower rates in breast carcinoma (1%) (Stephens et al., 2012) and non-small cell lung carcinoma (1%) (Owen et al., 2017), the high incidence of these cancers translates to a large cohort of patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 loss frequency in breast carcinoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "c7f3c86e-cd27-4dad-839c-e929aafcf6f0",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C59",
+      "claim": "Loss of BAP1 function is seen at 1% in non-small cell lung carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Although loss of BAP1 function is seen at far lower rates in breast carcinoma (1%) (Stephens et al., 2012) and non-small cell lung carcinoma (1%) (Owen et al., 2017), the high incidence of these cancers translates to a large cohort of patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature reporting BAP1 loss frequency in non-small cell lung carcinoma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "cc2ce12d-b80e-454f-9055-2aa930fb6970",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C60",
+      "claim": "Numerous clinically tested death receptor agonist compounds have demonstrated limited therapeutic efficacy at phase I/II trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Focus on death receptor agonists as anti-cancer agents has generated two decades of preclinical studies and the development of numerous clinically tested compounds, all of which have demonstrated limited therapeutic efficacy at phase I/II trials (Herbst et al., 2010; von Pawel et al., 2014; Paz-Ares et al., 2013; Forero-Torres et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing clinical trial outcomes for death receptor agonists.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "47de7aa6-46e8-42fc-913d-7d27c70737d4",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C61",
+      "claim": "Within death receptor agonist trials some patients showed signs of therapeutic benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within these trials some patients showed signs of therapeutic benefit and differential sensitivity within cell lines is well known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states observations from clinical trials suggesting heterogeneous responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "dcd8b940-e89f-44d8-9370-9ab69c4e1b7a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C62",
+      "claim": "Differential sensitivity to death receptor agonists within cell lines is well known.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within these trials some patients showed signs of therapeutic benefit and differential sensitivity within cell lines is well known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about variable sensitivity to death receptor agonists.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "04be8466-3066-4688-a6a7-9e680b0c2ee4",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C63",
+      "claim": "Retrospective biomarker identification has led to the stratified use of other anti-cancer therapies that initially failed in unselected trials such as activating EGFR mutations and EGFR TKIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrospective biomarker identification has led to the stratified use of other anti-cancer therapies that initially failed in unselected trials such as activating EGFR mutations and EGFR TKIs (Lynch et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the precedent for retrospective biomarker identification.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "fb813163-3dba-4fae-9bcf-1ea7e8eba00d",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C64",
+      "claim": "The BAP1-ASXL1 complex, the Polycomb repressive deubiquitinase (PR-DUB), is key to mediating TRAIL sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated which BAP1 protein-binding partners, and thus which regulatory complexes, mediate TRAIL sensitivity identifying the BAP1-ASXL1 complex, the Polycomb repressive deubiquitinase (PR-DUB), as key.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes findings from experiments testing different BAP1 mutants and ASXL knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "c67091ae-a439-4927-9d9e-78ffe6eb0742",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C65",
+      "claim": "Loss of BAP1 augments sensitivity to TRAIL in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of functional BAP1 augments sensitivity to TRAIL in cancer cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the title of the manuscript, summarizing the main finding supported by multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "365b88ef-e987-4f44-a651-53018cd9c4ba",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C66",
+      "claim": "BAP1 loss-of-function mutations are frequent in MM.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify BAP1 loss-of-function mutations, which are frequent in MM, as a potential genomic stratification tool for TRAIL sensitivity with immediate and actionable therapeutic implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the frequency of BAP1 mutations in MM based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "ce1c0e9a-5dac-4715-9728-b52098cc4a1c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C67",
+      "claim": "BAP1 is a potential genomic stratification tool for TRAIL sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify BAP1 loss-of-function mutations, which are frequent in MM, as a potential genomic stratification tool for TRAIL sensitivity with immediate and actionable therapeutic implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes BAP1 as a biomarker based on the experimental findings showing association between BAP1 status and TRAIL sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "8b20ef36-eddb-472b-9782-53f438e66f21",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C68",
+      "claim": "Transduction of two further BAP1-mutant rTRAIL-sensitive cell lines, H28 and H2804, with wild-type BAP1 induced resistance to rTRAIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Transduction of two further BAP1-mutant rTRAIL-sensitive cell lines, H28 and H2804, with wild-type BAP1 also induced resistance to rTRAIL while sensitivity was maintained with transduction of the deubiquitinase mutant (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results of BAP1 rescue experiments in additional cell lines and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "7622a33e-8a97-4c20-8604-c378a346c052",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C69",
+      "claim": "Sensitivity to rTRAIL was maintained in H28 and H2804 cells with transduction of the deubiquitinase mutant BAP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Transduction of two further BAP1-mutant rTRAIL-sensitive cell lines, H28 and H2804, with wild-type BAP1 also induced resistance to rTRAIL while sensitivity was maintained with transduction of the deubiquitinase mutant (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental results showing that the C91A mutant did not rescue TRAIL resistance in these cell lines and references supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "295e9fc3-7e1f-4aac-a5fb-8254fdb054ef",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C70",
+      "claim": "A marginal trend towards increased sensitivity in BAP1 mutant MM lines in response to treatment with the agonistic FAS receptor antibody CH11 was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A marginal trend towards increased sensitivity in BAP1 mutant MM lines in response to treatment with the agonistic FAS receptor antibody CH11 and a TNF-\u03b1/IAP inhibitor combination was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes observations from experiments testing other TNF superfamily agonists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "4340c00e-8082-42fe-b2a8-37c7accc69ed",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C71",
+      "claim": "A marginal trend towards increased sensitivity in BAP1 mutant MM lines in response to treatment with a TNF-\u03b1/IAP inhibitor combination was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A marginal trend towards increased sensitivity in BAP1 mutant MM lines in response to treatment with the agonistic FAS receptor antibody CH11 and a TNF-\u03b1/IAP inhibitor combination was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes observations from experiments testing other TNF superfamily agonists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "1e54b8e8-359e-45df-b869-452f4fb8b40c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C72",
+      "claim": "The trend observed with other TNF superfamily agonists indicates the BAP1-rTRAIL association to be mediated by an underlying mechanism common to this family such as the cytoplasmic extrinsic apoptotic machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this was not as pronounced as that observed with rTRAIL or the multivalent death receptor five superagonist MEDI3039 (Figure 1\u2014figure supplement 2C,D and E). Thus, while the significant sensitising association observed in the screen appears most specific to death receptor agonists, the trend observed with other TNF superfamily agonists indicates the BAP1-rTRAIL association to be mediated by an underlying mechanism common to this family such as the cytoplasmic extrinsic apoptotic machinery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers a common mechanism based on the pattern of responses to different TNF superfamily agonists.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "4b0612a4-3ac0-4703-b870-6b13ecfcb805",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C73",
+      "claim": "Drugs such as tyrosine kinase inhibitors developed against the BCR-ABL fusion product in chronic myeloid leukaemia have transformed the prognosis of these cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs such as the tyrosine kinase inhibitors (TKIs) developed against the BCR-ABL fusion product in chronic myeloid leukaemia (CML) and the receptor products of HER2 mutations in breast cancer have transformed the prognosis of these cancers (Druker et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the impact of targeted therapies in CML.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a31de98e-4469-44a7-b452-2a22ed8d80b6",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "claim_id": "C74",
+      "claim": "Drugs such as tyrosine kinase inhibitors developed against the receptor products of HER2 mutations in breast cancer have transformed the prognosis of these cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs such as the tyrosine kinase inhibitors (TKIs) developed against the BCR-ABL fusion product in chronic myeloid leukaemia (CML) and the receptor products of HER2 mutations in breast cancer have transformed the prognosis of these cancers (Druker et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature describing the impact of targeted therapies in breast cancer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A high-throughput drug screen of 94 compounds across 15 genomically characterized MM cell lines identified BAP1 loss-of-function mutations as significantly associated with sensitivity to recombinant TRAIL (FDR=0.18, effect size -0.48). 75% of BAP1-mutant lines were sensitive or partially sensitive to rTRAIL, while 78% of BAP1-wild-type lines were resistant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide comprehensive experimental evidence including screen design, statistical analysis with appropriate FDR correction, quantitative sensitivity data, and protein expression validation. The association is well-documented with clear statistical significance and biological correlation between BAP1 mutation status and TRAIL sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "2f4ba07c-77d8-4fc4-a107-58386e2bbc35",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The BAP1-TRAIL sensitivity association appears specific to death receptor agonists, with no significant association observed for standard MM chemotherapies (pemetrexed, cisplatin) and only marginal trends for other TNF superfamily agonists (FAS receptor antibody CH11, TNF-\u03b1/IAP inhibitor combination).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C72 demonstrate specificity of the BAP1-TRAIL association through negative controls (standard chemotherapy) and comparison with related agonists. The data support that the mechanism involves the extrinsic apoptotic pathway common to TNF superfamily members, though the effect is most pronounced with death receptor agonists.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BAP1 loss is observed in multiple cancer types including uveal melanoma (47%), clear cell renal carcinoma (14%), and cholangiocarcinoma (7%). Knockdown of BAP1 in wild-type cell lines from MM, CCRC, and breast cancer increased sensitivity to rTRAIL, and nonsense BAP1 mutations conferred greater TRAIL sensitivity than missense mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 extend the BAP1-TRAIL association beyond MM through literature citations, functional knockdown experiments in multiple cancer types, and analysis of mutation type effects. The convergent evidence from multiple experimental approaches and cancer types strongly supports the generalizability of the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a7e50686-da82-480e-a60a-745352285d0d",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BAP1 rescue experiments in BAP1-null H226 cells demonstrated that wild-type BAP1 restored TRAIL resistance, while BAP1 mutants lacking deubiquitinase activity (C91A) or ASXL-binding capacity (\u0394ASXL) maintained TRAIL sensitivity. This implicates the PR-DUB complex (BAP1-ASXL1) and its deubiquitinase activity in mediating TRAIL resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22, C68-C69 provide strong mechanistic evidence through structure-function analysis using multiple BAP1 mutants. The rescue experiments clearly demonstrate that specific functional domains (deubiquitinase and ASXL-binding) are required for BAP1-mediated TRAIL resistance, with consistent results across multiple cell lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "c86fb5f9-5845-40b8-9bb2-389df96da78c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Knockdown of ASXL1, but not ASXL2, in BAP1/ASXL1/ASXL2-wild-type MM cells induced sensitivity to TRAIL and MEDI3039, identifying the BAP1-ASXL1 complex (PR-DUB) as key to mediating TRAIL sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C64 provide complementary evidence to the BAP1 mutant experiments by demonstrating that loss of the binding partner ASXL1 phenocopies BAP1 loss. The specificity for ASXL1 over ASXL2 strengthens the conclusion that the PR-DUB complex specifically mediates this effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "ffd5d76b-9d8b-493c-8175-cdf320749b39",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "H2AK119Ub levels, the main substrate of PR-DUB, were unaltered in TRAIL-sensitive H226 cells expressing PR-DUB-inactive BAP1 mutants, while TRAIL-resistant cells expressing wild-type BAP1 exhibited lower H2AK119Ub levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 provide biochemical evidence linking PR-DUB activity to TRAIL sensitivity through measurement of its substrate H2AK119Ub. The correlation between H2AK119Ub levels and TRAIL sensitivity supports the proposed mechanism involving PR-DUB-mediated transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "43eba644-065e-4e54-bf76-a02d3d3a520a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Loss of BAP1 function modulates expression of extrinsic apoptotic pathway components. Gene expression analysis revealed significantly decreased anti-apoptotic factors (cIAP1/2, p=2.32E-10) and increased pro-apoptotic death receptor 5 (p=7.79E-10) in BAP1-mutant cells. Protein and flow cytometry analyses confirmed reduced cIAP1/2, c-FLIP, and altered death receptor expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33, C50 provide multi-level evidence (mRNA, protein, cell surface) demonstrating that BAP1 loss alters expression of apoptotic pathway components. The highly significant p-values, confirmation at protein level, and functional relevance of the altered genes strongly support the proposed transcriptional mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "a8066387-6f92-4c7e-a4cb-bece4a30bd4a",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In 25 human early passage MM cultures, those lacking nuclear BAP1 staining by immunohistochemistry were significantly more sensitive to rTRAIL than those with positive staining (p=0.0067). Of 12 BAP1-negative cultures, 9 were sensitive, 2 partially sensitive, and only 1 resistant to rTRAIL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 validate the BAP1-TRAIL association in clinically relevant early passage cultures using an established IHC method. The statistical significance and high proportion of sensitive BAP1-negative cultures support the clinical applicability of BAP1 as a predictive biomarker.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "de991aad-ba85-4311-99fb-7ba427510a8e",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Treatment of tumor explants from three MM patients with rTRAIL revealed increased apoptosis (measured by PARP cleavage) in explants with low BAP1 expression compared to those with high BAP1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 provides ex vivo validation in patient-derived tumor tissue, demonstrating that the BAP1-TRAIL association holds in the native tumor microenvironment. However, the small sample size (n=3 patients) limits the strength of this evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "f37c5509-aaae-4a49-a0e7-b0b41919df6c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In xenograft models, rTRAIL-treated BAP1-mutant tumors weighed significantly less than rTRAIL-treated BAP1-wild-type tumors (p=0.020) and vehicle-treated BAP1-mutant tumors (p=0.019). BAP1-wild-type tumors showed no response to rTRAIL, and growth rate of rTRAIL-treated BAP1-mutant tumors was significantly suppressed (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 provide in vivo validation with appropriate controls and statistical analysis. The dual-flank design with internal controls strengthens the evidence. The significant differences in tumor weight and growth rate demonstrate therapeutic efficacy of TRAIL in BAP1-mutant tumors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "fd0816ab-6533-401b-bfb7-6c2d848917a6",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MM currently lacks biomarker-driven therapies, with standard cytotoxic chemotherapy offering limited benefit. BAP1 loss-of-function mutations are frequent in MM and represent a potential genomic stratification tool for TRAIL sensitivity with immediate therapeutic implications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45, C66-C67 establish clinical context and propose BAP1 as a biomarker. The proposal is well-supported by the experimental data presented in the manuscript, though clinical validation in prospective trials is needed to confirm therapeutic utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Death receptor agonists have shown limited clinical efficacy in unselected populations despite promising preclinical data, with no trials conducted in MM. Some patients showed therapeutic benefit, suggesting heterogeneous responses. Retrospective biomarker identification has enabled stratified use of other therapies (e.g., EGFR mutations and TKIs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48, C60-C63 provide literature-based context for the significance of identifying BAP1 as a predictive biomarker. The citations support the historical failure of death receptor agonists in unselected populations and the precedent for retrospective biomarker identification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "605c7f5c-9bcc-4df1-9ee4-4f32d1ddfb65",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BAP1 is a nuclear deubiquitinase that forms multi-protein complexes regulating transcription of genes involved in cell cycle regulation and DNA repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 provides established background on BAP1 function supported by appropriate citations. This contextualizes the mechanistic findings but represents prior knowledge rather than new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "2aae3165-1ec0-48b6-9c3e-52f8636c3366",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "BAP1 mutations occur in 20-30% of MM by sequencing, but IHC identifies loss of BAP1 function in up to 67% of MM tumors. BAP1 IHC accurately identifies loss of function from genetic and non-genetic mechanisms and is already in clinical use as a diagnostic tool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 establish the clinical feasibility of BAP1 testing through literature citations. The discrepancy between mutation frequency and IHC loss suggests additional mechanisms of BAP1 inactivation, potentially expanding the patient population that could benefit from TRAIL therapy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "dc1ee0b5-0488-432c-b826-89f284d05dba",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "BAP1 alterations occur at high frequency in uveal melanoma, clear cell renal carcinoma, and cholangiocarcinoma, and at lower rates (1%) in breast and non-small cell lung carcinoma, though high incidence of these cancers translates to large patient cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 are well-supported by literature citations and establish the broader clinical impact of the BAP1-TRAIL association beyond MM. The acknowledgment of lower frequencies in common cancers with discussion of absolute patient numbers demonstrates appropriate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "0cb1f95e-8bb1-4f85-b3e3-124c545bc5ed",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Targeted therapies such as TKIs against BCR-ABL in CML and HER2 in breast cancer have transformed prognosis in these cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 provide established examples of successful biomarker-driven therapy supported by appropriate citations. This contextualizes the potential impact of BAP1 as a biomarker but represents background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    },
+    {
+      "id": "09bf67ee-807f-4d00-8bda-8aedd056463c",
+      "content_id": "8080977c-cf6e-4a41-a461-053874ce09cb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Loss of functional BAP1 augments sensitivity to TRAIL in cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 represents the overarching conclusion of the manuscript, supported by the totality of experimental evidence across multiple model systems (cell lines, early passage cultures, explants, xenografts) and cancer types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:57:56.517066Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21b2a2c4-5c8f-45ad-8e23-df67ff37efbe",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "02eaf9c1-0111-4ea0-aa3b-f200a0f98aa7",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "7ae6245e-d3eb-439c-aea0-9de16ea0ac9c",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "6f01c0e9-12f6-454e-905a-9dd40b7ebd17",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "2950a2c9-076d-408e-8583-04a9636e6fbc",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "9af443ef-84b7-40d4-b0e7-8a61b778f0d4",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "957d43e7-bcaa-490d-adb8-116dd4bd3d25",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "0e5c2d40-bd4c-45f7-a9c5-7f8df704bf7c",
+      "result_id": "9f6a6d54-9f17-40c2-9ceb-4e511797fd29"
+    },
+    {
+      "claim_id": "39531284-d893-4f03-babb-541e2bbc49e2",
+      "result_id": "2f4ba07c-77d8-4fc4-a107-58386e2bbc35"
+    },
+    {
+      "claim_id": "295e9fc3-7e1f-4aac-a5fb-8254fdb054ef",
+      "result_id": "2f4ba07c-77d8-4fc4-a107-58386e2bbc35"
+    },
+    {
+      "claim_id": "4340c00e-8082-42fe-b2a8-37c7accc69ed",
+      "result_id": "2f4ba07c-77d8-4fc4-a107-58386e2bbc35"
+    },
+    {
+      "claim_id": "1e54b8e8-359e-45df-b869-452f4fb8b40c",
+      "result_id": "2f4ba07c-77d8-4fc4-a107-58386e2bbc35"
+    },
+    {
+      "claim_id": "6e041719-24c0-43cb-9d48-d5bdd2cd4021",
+      "result_id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b"
+    },
+    {
+      "claim_id": "f3f71493-670e-459f-9e59-7ead15f7ad53",
+      "result_id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b"
+    },
+    {
+      "claim_id": "8b17baa8-53f0-4513-8c08-10af4c6642d8",
+      "result_id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b"
+    },
+    {
+      "claim_id": "acf0fc7b-3aae-416b-ba29-9094e529351d",
+      "result_id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b"
+    },
+    {
+      "claim_id": "12582e43-ad16-43b1-850f-0da2dd244d84",
+      "result_id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b"
+    },
+    {
+      "claim_id": "78e26912-fb81-4be8-bacc-632977e94b9f",
+      "result_id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b"
+    },
+    {
+      "claim_id": "d4071e57-b5e4-46e8-a451-cb9b19293c20",
+      "result_id": "2c5a1b5f-780e-4ed7-b0f3-7e833f19739b"
+    },
+    {
+      "claim_id": "0f63d29a-b68f-4f57-b565-96216195f29a",
+      "result_id": "a7e50686-da82-480e-a60a-745352285d0d"
+    },
+    {
+      "claim_id": "97a8f627-c7d3-47dc-bf6b-53a9bbbe5bbf",
+      "result_id": "a7e50686-da82-480e-a60a-745352285d0d"
+    },
+    {
+      "claim_id": "ee828f0a-a64f-4794-aa52-86885497ec80",
+      "result_id": "a7e50686-da82-480e-a60a-745352285d0d"
+    },
+    {
+      "claim_id": "733aafbb-f1f4-48eb-b87b-2a96cf332533",
+      "result_id": "a7e50686-da82-480e-a60a-745352285d0d"
+    },
+    {
+      "claim_id": "6c26cdfa-884c-496f-b80b-2c9807944985",
+      "result_id": "a7e50686-da82-480e-a60a-745352285d0d"
+    },
+    {
+      "claim_id": "8b20ef36-eddb-472b-9782-53f438e66f21",
+      "result_id": "a7e50686-da82-480e-a60a-745352285d0d"
+    },
+    {
+      "claim_id": "7622a33e-8a97-4c20-8604-c378a346c052",
+      "result_id": "a7e50686-da82-480e-a60a-745352285d0d"
+    },
+    {
+      "claim_id": "a83942ba-5efa-4259-8b7e-29d75d66895f",
+      "result_id": "c86fb5f9-5845-40b8-9bb2-389df96da78c"
+    },
+    {
+      "claim_id": "dafe1ab4-3dd1-4fa6-9cf9-0156ce35f0d8",
+      "result_id": "c86fb5f9-5845-40b8-9bb2-389df96da78c"
+    },
+    {
+      "claim_id": "fb813163-3dba-4fae-9bcf-1ea7e8eba00d",
+      "result_id": "c86fb5f9-5845-40b8-9bb2-389df96da78c"
+    },
+    {
+      "claim_id": "097c889e-6df9-4b93-9ce3-6e64b26e4f5d",
+      "result_id": "ffd5d76b-9d8b-493c-8175-cdf320749b39"
+    },
+    {
+      "claim_id": "35382318-9e69-4bc5-b999-85639b8eace7",
+      "result_id": "ffd5d76b-9d8b-493c-8175-cdf320749b39"
+    },
+    {
+      "claim_id": "37caca62-e166-4465-a40e-09f318694bb3",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "fca9f35f-1cb2-4534-9637-c0637892eb75",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "a3dbe8c4-5f17-4c7d-bd4b-cdb00265053a",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "a0b11a8a-af27-4ed4-a1ad-fe91e57f863c",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "873c7610-d5c5-4c98-8b59-afc6429cb357",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "e3857ccc-bb37-4f91-baf4-c16a5f69a9b2",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "56b1ff06-ea78-48f5-a909-dfdc837725dc",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "b1c97d3b-02c8-42b7-860f-eec5af1f464a",
+      "result_id": "43eba644-065e-4e54-bf76-a02d3d3a520a"
+    },
+    {
+      "claim_id": "b13216fa-b807-4b42-8f79-e9dbd93b5472",
+      "result_id": "a8066387-6f92-4c7e-a4cb-bece4a30bd4a"
+    },
+    {
+      "claim_id": "f5b120fd-2d0c-4948-a1af-af40e1ad5c49",
+      "result_id": "a8066387-6f92-4c7e-a4cb-bece4a30bd4a"
+    },
+    {
+      "claim_id": "9e199a4d-d6a7-4bd2-9bbc-713f9adbf0d4",
+      "result_id": "a8066387-6f92-4c7e-a4cb-bece4a30bd4a"
+    },
+    {
+      "claim_id": "579ff811-5a0a-4ffa-bf96-bf77138cd40d",
+      "result_id": "a8066387-6f92-4c7e-a4cb-bece4a30bd4a"
+    },
+    {
+      "claim_id": "6a36fbc0-586e-44aa-8149-1b56868c384b",
+      "result_id": "de991aad-ba85-4311-99fb-7ba427510a8e"
+    },
+    {
+      "claim_id": "5032a9fd-2871-4399-bf9f-9bad26c2b527",
+      "result_id": "f37c5509-aaae-4a49-a0e7-b0b41919df6c"
+    },
+    {
+      "claim_id": "8a4ad259-6649-40db-b733-d0222f99e548",
+      "result_id": "f37c5509-aaae-4a49-a0e7-b0b41919df6c"
+    },
+    {
+      "claim_id": "1e6fd234-130c-48bb-a6fc-5faab7c9ca86",
+      "result_id": "f37c5509-aaae-4a49-a0e7-b0b41919df6c"
+    },
+    {
+      "claim_id": "2243e310-0a4f-46ff-93b2-79320e062436",
+      "result_id": "f37c5509-aaae-4a49-a0e7-b0b41919df6c"
+    },
+    {
+      "claim_id": "239fd70f-0c14-4303-9440-2d2b75d170d2",
+      "result_id": "fd0816ab-6533-401b-bfb7-6c2d848917a6"
+    },
+    {
+      "claim_id": "a6c958f8-cc4a-4a18-91af-b6e8cc43ec3d",
+      "result_id": "fd0816ab-6533-401b-bfb7-6c2d848917a6"
+    },
+    {
+      "claim_id": "d9c184ec-465b-4511-8ad7-ce3b13237188",
+      "result_id": "fd0816ab-6533-401b-bfb7-6c2d848917a6"
+    },
+    {
+      "claim_id": "365b88ef-e987-4f44-a651-53018cd9c4ba",
+      "result_id": "fd0816ab-6533-401b-bfb7-6c2d848917a6"
+    },
+    {
+      "claim_id": "ce1c0e9a-5dac-4715-9728-b52098cc4a1c",
+      "result_id": "fd0816ab-6533-401b-bfb7-6c2d848917a6"
+    },
+    {
+      "claim_id": "c4f67d7d-d756-4dae-be10-23822c7d0b94",
+      "result_id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74"
+    },
+    {
+      "claim_id": "9001056b-efd3-4392-a95f-f8f3da616759",
+      "result_id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74"
+    },
+    {
+      "claim_id": "1a1915f6-5d4e-4051-9b52-29a1a68228df",
+      "result_id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74"
+    },
+    {
+      "claim_id": "cc2ce12d-b80e-454f-9055-2aa930fb6970",
+      "result_id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74"
+    },
+    {
+      "claim_id": "47de7aa6-46e8-42fc-913d-7d27c70737d4",
+      "result_id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74"
+    },
+    {
+      "claim_id": "dcd8b940-e89f-44d8-9370-9ab69c4e1b7a",
+      "result_id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74"
+    },
+    {
+      "claim_id": "04be8466-3066-4688-a6a7-9e680b0c2ee4",
+      "result_id": "5a9aafc8-b2f5-4668-bd24-a4171064ba74"
+    },
+    {
+      "claim_id": "e220236e-9622-491b-9625-b998b9015074",
+      "result_id": "605c7f5c-9bcc-4df1-9ee4-4f32d1ddfb65"
+    },
+    {
+      "claim_id": "83a65e77-2e96-4a24-a2e5-e63ef3963e14",
+      "result_id": "2aae3165-1ec0-48b6-9c3e-52f8636c3366"
+    },
+    {
+      "claim_id": "564ecef6-a57a-42e7-a8f5-ab0ac11d442a",
+      "result_id": "2aae3165-1ec0-48b6-9c3e-52f8636c3366"
+    },
+    {
+      "claim_id": "3339c783-c081-48de-ba5b-87f5ac05abac",
+      "result_id": "2aae3165-1ec0-48b6-9c3e-52f8636c3366"
+    },
+    {
+      "claim_id": "998e44f7-8081-4640-8046-0fdbe3f82bf0",
+      "result_id": "2aae3165-1ec0-48b6-9c3e-52f8636c3366"
+    },
+    {
+      "claim_id": "6267045c-66a8-49a8-b304-293dda63657b",
+      "result_id": "dc1ee0b5-0488-432c-b826-89f284d05dba"
+    },
+    {
+      "claim_id": "64b4a61d-63e8-4b56-afd2-410788fdaa6a",
+      "result_id": "dc1ee0b5-0488-432c-b826-89f284d05dba"
+    },
+    {
+      "claim_id": "6124d999-51c0-416c-b319-544a54550a26",
+      "result_id": "dc1ee0b5-0488-432c-b826-89f284d05dba"
+    },
+    {
+      "claim_id": "a83f0055-bfb3-4e58-903f-7ffc31be6748",
+      "result_id": "dc1ee0b5-0488-432c-b826-89f284d05dba"
+    },
+    {
+      "claim_id": "c7f3c86e-cd27-4dad-839c-e929aafcf6f0",
+      "result_id": "dc1ee0b5-0488-432c-b826-89f284d05dba"
+    },
+    {
+      "claim_id": "4b0612a4-3ac0-4703-b870-6b13ecfcb805",
+      "result_id": "0cb1f95e-8bb1-4f85-b3e3-124c545bc5ed"
+    },
+    {
+      "claim_id": "a31de98e-4469-44a7-b452-2a22ed8d80b6",
+      "result_id": "0cb1f95e-8bb1-4f85-b3e3-124c545bc5ed"
+    },
+    {
+      "claim_id": "c67091ae-a439-4927-9d9e-78ffe6eb0742",
+      "result_id": "09bf67ee-807f-4d00-8bda-8aedd056463c"
+    }
+  ],
+  "comparisons": []
+}

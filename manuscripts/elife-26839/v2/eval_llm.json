@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Underfilling a high NA objective with a 1100 nm laser beam achieves an effective NA of ~0.5 with spatial resolution (lateral FWHM ~2.28 \u03bcm, axial FWHM ~6.95 \u03bcm) comparable to that used for cellular-resolution two-photon calcium imaging, though reduced compared to overfilled configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide converging experimental evidence: the underfilling setup is clearly described (C16), the effective NA calculation is provided (C17), spatial resolution is measured with fluorescent beads (C18-C19), and comparison to literature standards confirms adequacy for cellular imaging (C20). The measurements are appropriately controlled and documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Underfilling the objective produces higher fluorescent signals than overfilling at all depths and enables detection of more neurons at depths >600 \u03bcm from the cortical surface in tdTomato-expressing mouse cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 present systematic comparison data between underfilled and overfilled configurations using quantitative metrics (bright fluorescent signal and Hough transform circle detection). The depth-dependent advantage of underfilling is clearly demonstrated with appropriate controls (equal laser power in both configurations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C25",
+      "C46"
+    ],
+    "result": "Using an underfilled high NA objective with 1100 nm excitation and red GECIs enables detection of neural activity at depths of 1.0-1.2 mm in the intact mouse brain, specifically in the medial prefrontal cortex and hippocampal CA1 region, without invasive tissue removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C25, and C46 collectively establish the core finding with experimental data showing calcium transients detected at 1.0-1.2 mm depths using 170-180 mW laser power. Multiple figures (Figure 2, Videos 2-3) provide visual evidence, and the method is demonstrated in multiple brain regions over several days.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C48"
+    ],
+    "result": "Deep imaging (800-1100 \u03bcm) with 1100 nm laser at 180 mW for 15-30 minutes does not cause detectable histological damage, while shallow imaging with the same or different parameters produces significant tissue inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 and C48 present comprehensive immunostaining data (GFAP, Iba1, HSP70/72) with appropriate positive and negative controls. Statistical comparisons show no significant difference between deep imaging and negative controls, while positive controls (shallow imaging) show expected damage. The experimental design appropriately validates the assay sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Neural activity levels remain stable throughout 25-minute continuous imaging sessions at 900-1100 \u03bcm depths, indicating that the imaging does not alter neural excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 provide functional evidence complementing the histological safety data. The comparison of inferred neural activities between first and last 5-minute periods shows no significant difference (p=0.22, n=63 neurons), supporting the conclusion that imaging does not acutely affect neural function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "During water reward conditioning, approximately 50% of neurons across all cortical depths (100-1200 \u03bcm) show peak activity after water delivery, while ~30% show peak activity during the pre-reward period, with sequential activity patterns validated against shuffled controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe behavioral conditioning results and neural activity patterns with appropriate statistical validation. The ridge-to-background ratio analysis (C37) demonstrates that observed sequential patterns are not artifacts, with highly significant differences from shuffled data (p<0.001 for all three areas).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C60"
+    ],
+    "result": "Neural activity during the pre-reward period is more stable across trials in the deep area (prelimbic cortex, 800-1200 \u03bcm) compared to the superficial area (layer 2/3, 100-300 \u03bcm), indicating more reliable coding of pre-reward activity in the prelimbic area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C60 present trial-to-trial stability analysis using correlation coefficients between randomly separated trial groups. The permutation test (Figure 4\u2014figure supplement 4C) provides statistical support for the depth-dependent difference, and behavioral controls confirm this is not due to differences in animal performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "Hippocampal CA1 neurons can be imaged at 900-1000 \u03bcm depth in young mice without apparent damage, showing predominantly post-reward activity with unstable pre-reward activity patterns across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C42, C44-C45 demonstrate successful hippocampal imaging with appropriate anatomical validation and functional characterization. The contrast with prefrontal cortex findings (stable vs. unstable pre-reward activity) is clearly documented, though the interpretation regarding insufficient conditioning (C70) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C50",
+      "C51"
+    ],
+    "result": "The method cannot image hippocampal CA1 in adult (3-month-old) mice or the infralimbic area at depths >1200 \u03bcm, likely due to increased white matter myelination with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C50-C51 clearly document limitations of the method with appropriate citation to developmental myelination literature (C51). This represents an honest assessment of method boundaries, though the explanation remains partially speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The laser power used for deep imaging (170-180 mW) exceeds that reported in previous studies of cortical layers 5/6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides direct comparison to cited literature values (150 mW, 114 mW, 170 mW), establishing that higher power was required for deeper imaging. This contextualizes the safety validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C49"
+    ],
+    "result": "The effectiveness of underfilling may result from both reduced light scattering and larger focal volume integration, while lack of tissue damage may be due to lower photon density at the focal center and reduced heat from 1100 nm absorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47 and C49 present mechanistic interpretations with citations to optical principles, but these remain speculative explanations not directly tested in the study. While plausible based on cited theory, no experiments directly validate these specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The reduced spatial resolution from underfilling (axial ~7 \u03bcm) is sufficient for single-neuron imaging but may be inadequate for subcellular structures like dendritic spines and axonal boutons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 provide honest assessment of the resolution trade-off with appropriate citation to literature on cross-talk and subcellular imaging requirements. The measured 7 \u03bcm axial resolution is compared to established standards for cellular vs. subcellular imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Prior to this work, two-photon calcium imaging was limited to ~900 \u03bcm depth without cortical invasion, with deeper regions requiring invasive procedures due to refractive index mismatch and light scattering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C7 accurately summarize the state of the field with appropriate citations. These establish the context and motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14"
+    ],
+    "result": "Theoretical optical principles predict that underfilling high NA objectives can increase imaging depth while maintaining collection efficiency, and longer wavelength excitation reduces light scattering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C14 present established optical theory with appropriate citations. These principles form the theoretical foundation for the experimental approach, though C11 includes speculative elements about potential applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "While underfilling has been theoretically predicted and demonstrated in skin, it had not been applied to deep neural activity imaging in behaving animals prior to this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 accurately characterize the novelty of the application with appropriate citations to prior theoretical and limited experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Three-photon imaging with 1300 nm light can access adult hippocampus, suggesting that higher power 1100 nm lasers combined with further technical improvements (lower NA, adaptive optics, improved indicators) may enable imaging of currently inaccessible regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C54 discuss potential future improvements with appropriate citations, but these remain speculative. C52 accurately cites recent work, while C53-C54 propose untested approaches that would require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "For subcellular imaging at depth, a slightly underfilled objective (effective NA ~0.7) combined with adaptive optics may be useful, as adaptive optics can resolve dendritic spines at 600 \u03bcm depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 propose a speculative approach based on cited literature (C58), but the specific combination suggested in C59 has not been tested and represents a hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The prelimbic area processes motivation, attention, and reward information while M2 relates to action selection and motor planning; pre-reward PL activity may reflect reward expectation, though the conditioning task did not require brain state changes before water delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 accurately cite functional roles from literature, but C63 presents speculative interpretation of the observed activity. C64 acknowledges a limitation in the experimental design that prevents definitive functional interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "The intact brain approach enables flexible field-of-view changes, and wide-field objectives could enable simultaneous imaging of functionally connected regions like mFrC and hippocampus, potentially advancing understanding of decision-making circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 describe technical capabilities with appropriate citations, while C68-C69 cite anatomical connectivity. However, C71's prediction about future impact remains speculative, as the proposed simultaneous multi-region imaging has not been demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C40",
+      "C70"
+    ],
+    "result": "Hippocampal CA1 imaging is possible in 4-week-old but not 6-9 week-old mice, and the unstable pre-reward activity in young mice may reflect insufficient conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 cites prior work establishing age-dependent imaging feasibility. C70 offers a speculative but reasonable interpretation of the unstable activity patterns, acknowledging the limitation of using young mice with shorter conditioning.",
+    "result_type": "MINOR"
+  }
+]

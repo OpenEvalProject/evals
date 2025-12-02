@@ -1,0 +1,1653 @@
+{
+  "submission": {
+    "id": "4ee844e6-d6d7-42bc-a762-c32db7b77593",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:34:55.815747Z",
+    "updated_at": "2025-12-01T21:34:55.815747Z"
+  },
+  "content": [
+    {
+      "id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "submission_id": "4ee844e6-d6d7-42bc-a762-c32db7b77593",
+      "content_type": "manuscript",
+      "content_text": "# Metformin extends C. elegans lifespan through lysosomal pathway\n\n## Authors\n\n- Jie Chen<sup>1</sup>\n- Yuhui Ou<sup>1</sup>\n- Yi Li<sup>1</sup>\n- Shumei Hu<sup>1</sup>\n- Li-Wa Shao<sup>1</sup>\n- Ying Liu<sup>1</sup> ([ORCID: 0000-0002-3328-026X](https://orcid.org/0000-0002-3328-026X)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Membrane Biology Institute of Molecular Medicine, Peking-Tsinghua Center for Life Sciences, Peking University Beijing China\n2. Academy for Advanced Interdisciplinary Studies Peking University Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetformin, a widely used first-line drug for treatment of type 2 diabetes (T2D), has been shown to extend lifespan and delay the onset of age-related diseases. However, its primary locus of action remains unclear. Using a pure in vitro reconstitution system, we demonstrate that metformin acts through the v-ATPase-Ragulator lysosomal pathway to coordinate mTORC1 and AMPK, two hubs governing metabolic programs. We further show in Caenorhabditis elegans that both v-ATPase-mediated TORC1 inhibition and v-ATPase-AXIN/LKB1-mediated AMPK activation contribute to the lifespan extension effect of metformin. Elucidating the molecular mechanism of metformin regulated healthspan extension will boost its therapeutic application in the treatment of human aging and age-related diseases.\n\n## Introduction\n\nWith the discovery that aging could be genetically regulated, numerous strategies have been employed to extend lifespan in model organisms, including pharmacologic and dietary interventions (Longo et al., 2015). Identification of a chemical or pharmacological manipulation that could target human aging and lower the risks associated with age-related diseases becomes a central goal of aging research. Administration of metformin, a first-line drug for treatment of type 2 diabetes (T2D), has been shown to extend lifespan in C. elegans and mice (Anisimov et al., 2008; Cabreiro et al., 2013; De Haes et al., 2014; Martin-Montalvo et al., 2013; Onken and Driscoll, 2010; Wu et al., 2016). In addition, metformin has been shown to ameliorate diabetic and cardiovascular diseases in patients (Scarpello, 2003). Metformin also lowered the incidence of several other age-related diseases, such as cancer, metabolic syndrome and cognitive disorders (Foretz et al., 2014). Due to its broad range of health benefits and little side effects, a clinical trial named TAME (Targeting Aging with Metformin) was proposed to evaluate metformin\u2019s protective effects against human aging and age-related diseases (Barzilai et al., 2016). However, despite its intriguing benefits to promote healthy aging, the underlying mode of action of metformin is not well understood and a subject of extensive debate.\n\nMetformin is generally believed to act through activation of AMP-activated protein kinase (AMPK) (Fryer et al., 2002; Hawley et al., 2002; Zhou et al., 2001), a principal energy sensor that when activated, switches on catabolic pathways such as glycolysis and fatty acid oxidation to produce more ATP (Burkewitz et al., 2014; Hardie et al., 2012). It was proposed that metformin might act through inhibition of mitochondrial electron transport chain (ETC) Complex I (El-Mir et al., 2000; Foretz et al., 2014; Owen et al., 2000), resulting in a change of the AMP/ATP ratio and ultimately activating AMPK. However, this idea has been challenged recently (He and Wondisford, 2015), especially when physiological/low concentration (~70 uM) of metformin, which cannot induce AMP/ATP change, is still able to activate AMPK (Cao et al., 2014). An alternative model, in which metformin activates AMPK through the lysosome-dependent pathway was proposed (Zhang et al., 2016). In this model, metformin treatment induces lysosomal localization of the scaffold protein AXIN, which brings its associated protein liver kinase B1 (LKB1) to form a complex with v-ATPase-Ragulator on the surface of lysosome (Zhang et al., 2016; Zhang et al., 2013). LKB1 then phosphorylates the threonine residue in the activation loop of AMPK, leading to AMPK activation (Hawley et al., 1996; Shaw et al., 2004; Woods et al., 2003).\n\nIn addition to AMPK activation, metformin administration also inhibit mechanistic target of rapamycin complex 1 (mTORC1) (Kalender et al., 2010). mTORC1 constitutes another hub for energy and nutrient sensing, and switches on anabolism when activated (Schmelzle and Hall, 2000). The primary pathway for mTORC1 activation requires lysosome-localized Rag GTPases, which form RagA/B\u2013RagC/D heterodimers and recruit mTORC1 to the surface of lysosome through directly binding to the Raptor subunit of mTORC1 (Kim et al., 2008; Sancak et al., 2008). v-ATPase-Ragulator complex on lysosomal surface is required for the spatial regulation and activation of mTORC1 by Rag GTPases (Bar-Peled et al., 2012; Dibble and Manning, 2013; Jewell et al., 2013; Sancak et al., 2010). Two distinct mechanisms have been proposed for metformin-induced mTORC1 inhibition: suppression of Rag GTPases (AMPK-independent mechanism) or AMPK-mediated phosphorylation of Raptor (regulatory associated protein of mTORC1) (AMPK-dependent mechanism) (Howell et al., 2017; Kalender et al., 2010).\n\nDue to its short lifespan and ease of genetic manipulation, C. elegans becomes a powerful model organism to test the efficacy of metformin in promoting healthspan (Burkewitz et al., 2014). It has been shown that metformin treatment greatly extends worm lifespan and improves fitness, for\u00a0example prolonging locomotory ability (Onken and Driscoll, 2010). However, several different mechanisms have been suggested for metformin\u2019s lifespan extension effect in C. elegans. For instance, metformin administration may mimic a dietary restriction (DR) metabolism (Onken and Driscoll, 2010). In addition, alteration of methionine metabolism in C. elegans has been shown to play a partial role (Cabreiro et al., 2013). Recently, metformin has been shown to inhibit mTORC1 due to restricted transit of RagA-RagC GTPase through nuclear pore complex (NPC) (Wu et al., 2016). It is possible that these observations reflect downstream consequences of a primary action of metformin. Therefore, understanding its direct mechanism of action worth further investigation. Elucidating metformin\u2019s mode of action will significantly boost its application to target human aging and prevent age-related diseases.\n\n## Results\n\n### Metformin coordinates mTORC1 and AMPK through the lysosomal pathway\n\nIntrigued by the discoveries that mTORC1 and AMPK share the common activator, v-ATPase-Ragulator complex (Zhang et al., 2014), and that metformin may directly act on the lysosomal pathway to promote AMPK activation (Zhang et al., 2016), we sought to set up a pure in vitro reconstitution system to explore the mechanism of metformin\u2019s action (Figure 1). We stably expressed LAMP1-RFP-FLAG in HEK293T cells to label lysosomes (Figure 1A) and performed FLAG pull-down to enrich lysosomes. The purity of lysosome preparation was confirmed by immunoblotting to test for the absence of early endosome, mitochondria, ER or nuclei (Figure 1B). Immuno-purified Raptor was then provided to the lysosomes. Upon amino acids stimulation, significant portion of Raptor accumulated on the lysosome (Figure 1C,F), indicating the activation of mTORC1 pathway. We then supplemented Concanavalin A (Con A), a v-ATPase inhibitor, or Metformin (Met) to the reconstitution system. Addition of Con A or metformin dissociated Raptor from the lysosome (Figure 1D,G). It has been proposed that AMPK might directly phosphorylates Raptor and thus inhibits mTORC1 (Gwinn et al., 2008). To test if metformin\u2019s effect on mTORC1 inhibition requires AMPK or not, we repeated the in vitro experiments in AMPK knockout MEF cells, and still observed the dissociation of Raptor (Figure 1\u2014figure supplement 1). Taken together, these results suggest that metformin inhibits mTORC1 through the lysosomal pathway independent of AMPK, possibly mimicking Con A to inhibit v-ATPase. Lastly, we provided purified AXIN and LKB1 to the in vitro system. Immuno-purified LKB1 forms a complex with endogenous STRAD and MO25, two proteins essential for optimal LKB1 activity (Figure 1\u2014figure supplement 2). Consistent with previous findings, AXIN/LKB1 were recruited to metformin- or Con A-treated lysosomes, and were sufficient to phosphorylate endogenous AMPK in an amino acid-independent manner (Figure 1E,H) (Zhang et al., 2016; Zhang et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig1-v2.jpg)\n\n**Figure 1.:** (A) HEK293T cells stably expressing LAMP1-RFP-FLAG were mechanically broken. (B) Lysosomes were purified through immunoprecipitation (Organelle markers: LAMP2, lysosome; EEA1, early endosome; Prohibitin, mitochondria; PDI, ER; Histone H3, nucleus). (C) Lysosomal accumulation of purified Myc-raptor upon amino acids stimulation. (D\u2013E) Lysosomal disassociation of Myc-raptor (D), lysosomal accumulation of Myc-AXIN/LKB1 and phosphorylation of AMPK (E) upon Concanamycin A (Con A) or Metformin (Met) treatment. (F\u2013H) Quantifications of immunoblots in (C\u2013E). Immunoblots of Myc-Raptor, Myc-AXIN and Myc-LKB1 were normalized to that of LAMP-RFP-FLAG, and immunoblots of p-AMPK were normalized to that of AMPK. Relative intensities of three independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) AMPK\u03b11/2 double knockout cells stably expressing LAMP1-RFP-FLAG were mechanically broken. (B) Lysosomes were purified through immunoprecipitation (Organelle markers: LAMP2, lysosome; EEA1, early endosome; Prohibitin, mitochondria; PDI, ER; Histone H3, nucleus). (C) Lysosomal accumulation of purified Myc-raptor upon amino acids stimulation. (D\u2013E) Lysosomal disassociation of Myc-raptor (D) and lysosomal accumulation of Myc-AXIN/LKB1 (E) upon Concanamycin A (Con A) or Metformin (Met) treatment. (F\u2013H) Quantifications of immunoblots in (C\u2013E). Immunoblots of Myc-Raptor, Myc-AXIN and Myc-LKB1 were normalized to that of LAMP-RFP-FLAG, and immunoblots of p-AMPK were normalized to that of AMPK. Relative intensities of three independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Representative fluorescent images of mitochondrial stress response reporter strain hsp-6p::gfp cultured under normal condition, or in the presence of metformin or rotenone. (B) Quantification of fluorescent images in (A). Mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates are shown (sample size:\u226540 worms). (C) Representative fluorescent images of Magic Red Cathepsin assay in worms administrated with or without metformin. (D) Quantification of fluorescent images in (C). Mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates are shown (sample size:\u226540 worms). Scale bar: 100 um. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\nIt has been proposed that metformin might change the AMP/ATP ratio through inhibition of mitochondrial ETC complex I, ultimately resulting in AMPK activation (El-Mir et al., 2000; Foretz et al., 2014; Owen et al., 2000). To test if metformin could inhibit mitochondrial function and therefore activate mitochondrial stress response, we treated C. elegans hsp-6p::gfp reporter strain with metformin, or rotenone, a well-known mitochondrial ETC complex I inhibitor. Unlike rotenone, metformin treatment showed no reporter activation (Figure 1\u2014figure supplement 3A,B). It should be noted that others have reported that metformin inhibits ETC complex I through a mechanism distinct from that of rotenone: metformin treatment increases ROS production, whereas rotenone decreases it (De Haes et al., 2014). Because our in vitro reconstitution system excludes mitochondrial contaminants, it highly suggests that metformin inhibits mTORC1 and activates AMPK mainly through the lysosomal pathway. Lastly, we directly measured the metformin\u2019s effect on lysosomal function with the use of a cathepsin assay. Cathepsin is a class of cysteine proteinase localized within lysosomes. A cathepsin assay is a fluorescence-based assay that cleaves cathepsin\u2019s substrate to release fluorescence. Consistent with our idea, metformin administration indeed impaired lysosomal function (Figure 1\u2014figure supplement 3C,D).\n\n### Metformin inhibits TORC1 pathway in C. elegans\n\nBecause our in vitro biochemical results suggested that metformin might act on the v-ATPase-Ragulator complex of the lysosomal pathway to coordinate mTORC1 inhibition and AMPK activation, we next tested if metformin promotes lifespan extension in C. elegans due to similar mechanisms. To confirm that metformin also inhibits TORC1 in C. elegans, we first examined phosphorylation status of RSKS-1, the human ribosomal protein S6 kinase B1 (S6K) homolog in C. elegans. We used an antibody that specifically detects Thr-389, a highly conserved phosphorylation site among species (Figure 2\u2014figure supplement 1A). This antibody was validated with the used of rsks-1 RNAi (Figure 2\u2014figure supplement 1B). Notably, metformin treatment significantly decreased the level of RSKS-1 phosphorylation (Figure 2A,B), suggesting an inhibition of TORC1 pathway. We also tested the subcellular localization of HLH-30, an ortholog of transcription factor EB (TFEB) that translocates to the nucleus upon TORC1 inhibition (Lapierre et al., 2013; Perera and Zoncu, 2016; Settembre et al., 2011). Indeed, HLH-30 translocalized to the nucleus in the tail region of C. elegans upon metformin administration (Figure 2C,D). Once in the nucleus, HLH-30 regulates the transcription of genes related to autophagy, lysosome function and lipid hydrolysis (Lapierre et al., 2013; O'Rourke and Ruvkun, 2013). Consistently, we also observed up-regulation of transcript levels of hlh-30 downstream targets upon metformin treatment (Figure 2E). Taken together, these results indicate that metformin inhibits TORC1 pathway in C. elegans.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative western blotting of RSKS-1 phosphorylation in the presence or absence of Metformin. (B) Quantification of immunoblots in (A). Relative intensities of 3 independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. (C) Representative fluorescent images of HLH-30 nuclei localization in the presence or absence of metformin. (D) Percentage of worms with HLH-30 nuclear localization in (C) was quantified. Mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates are shown (sample size:\u226540 worms). (E) Q-PCR analysis of HLH-30 target genes in the presence or absence of metformin.\u00a0~300 worms were pooled in each sample. Data from three independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) T389 of S6K1 is highly conserved among species. A ClastW of S6K1 protein sequence in different species was plotted by MEGA6. (B) rsks-1 RNAi reduces RSKS-1 phosphorylation level in wild type animals.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative fluorescent images of HLH-30 nuclei localization in wild type or aak-2 mutant animals in the presence or absence of metformin. (B) Percentage of worms with HLH-30 nuclear localization in (A) was quantified. Mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates are shown (sample size:\u00a0\u226540 worms). (C) Q-PCR analysis of HLH-30 target genes in aak-2 mutants with or without metformin treatment.\u00a0~300 worms were pooled in each sample. Data from three independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\nWe also tested if metformin\u2019s effect on TORC1 inhibition requires AMPK in C. elegans. Consistent with our results in AMPK-/- MEF cells (Figure 1\u2014figure supplement 1), metformin treatment of aak-2 (Ce.AMPK) loss-of-function mutants was still able to drive HLH-30 nuclear accumulation (Figure 2\u2014figure supplement 2A,B) and elevate the expression of HLH-30 target genes (Figure 2\u2014figure supplement 2C).\n\n### Metformin extends healthspan partially through TORC1 inhibition\n\nInhibition of TORC1 has been shown to result in lifespan extension (Jia et al., 2004; Vellai et al., 2003); also reviewed by Zoncu et al., 2011). To distinguish if metformin induces lifespan extension solely through Ce.TOR inhibition, or the activation of Ce.AMPK also plays a role, we performed lifespan analysis on control worms or daf-15 heterozygous mutants in the presence or absence of metformin (Figure 3\u2014figure supplement 1A). Compared with the control worms, daf-15 heterozygous mutants had a longer lifespan and a decreased level of RSKS-1 phosphorylation (Figure 3\u2014figure supplement 1B,C), indicating that TORC1 inhibition extends C. elegans lifespan. More importantly, metformin treatment greatly extended the lifespan of daf-15 heterozygous mutants (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig3-v2.jpg)\n\n**Figure 3.:** (A) Lifespan analysis of control worms or daf-15 heterozygous mutants in the presence or absence of metformin. (B) Representative images of Oil-Red-O (ORO) staining of control worms or daf-15 heterozygous mutants in the presence or absence of metformin. (C) Quantification of (B). Error bars represent mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates (sample size: n\u00a0\u2265\u00a040 worms). (D\u2013E) Locomotion (D) and age pigments (E) were measured in control worms or daf-15 heterozygous mutants in the presence or absence of metformin. Mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates are shown (sample size: n\u00a0\u2265\u00a020 worms for locomotion assay; n\u00a0\u2265\u00a040 worms for age pigments assay). (F) Representative fluorescent images of HLH-30 nuclei localization in control worms or daf-15 heterozygous mutants in the presence or absence of metformin. Arrows indicate nuclear localized HLH-30::GFP. (G) Quantification of (F). Percentage of unc-24/+; HLH-30::GFP or unc-24/daf-15; HLH-30::GFP worms with nuclear accumulation of HLH-30 were counted. Error bars represent mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates. (sample size: n\u00a0\u2265\u00a040 worms) (H) Representative western blotting of AAK-2 phosphorylation in the presence or absence of metformin. (I) Quantification of (H).~300 worms were pooled in each protein sample. Error bars represent mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates. ns, no significant difference; *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Generation of daf-15 heterozygous mutants and its corresponding control animals. (B) Representative immunoblottings of RSKS-1 phosphorylation in N2 or daf-15 heterozygous mutants. (C) Quantification of immunoblots in (B). Relative intensities of 3 independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. (D) Schematic representation of experimental design for the detection of healthspan parameters. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013C) Lifespan analysis of hlh-30, pha-4 or skn-1 loss-of-function mutants in the presence or absence of metformin.\n\nTo investigate the metabolic effects of metformin on daf-15 heterozygous mutants, we fed L4 worms with metformin and conducted Oil-Red-O (ORO) staining to detect neutral fat levels (Figure 3\u2014figure supplement 1D). Similar to wild type animals, metformin administration further decreased neutral fat level in daf-15 heterozygous mutants (Figure 3B,C). Aged worms start to show muscle deterioration and decrease locomotion rates (Huang et al., 2004; Onken and Driscoll, 2010). Metformin treatment significantly increased the locomotory ability (counted by the average bends of worm body per 60 s) and reduced age pigments of wild type worms and daf-15 heterozygous mutants (Figure 3\u2014figure supplement 1D, and Figure 3D,E), indicating that metformin also improves fitness of daf-15 heterozygous mutants.\n\nMetformin\u2019s beneficial effect on lifespan and fitness of daf-15 heterozygous mutants could be due to a pathway additive to that of TORC1 inhibition (e.g. AMPK pathway), or simply due to a further suppression of TOR activity in daf-15 heterozygous mutants. To test if metformin could further inhibit TORC1 activity in daf-15 heterozygous mutants, we compared HLH-30 nuclear localization between control animals and daf-15 heterozygous mutants in the presence or absence of metformin treatment. We found that in daf-15 heterozygous mutants, significant portion of HLH-30 already localized in the nucleus, suggesting an inhibition of TORC1 activity. More importantly, metformin administration increased HLH-30 nuclear localization in control worms, but not in daf-15 heterozygous mutants (Figure 3F,G). In addition, we performed lifespan experiments with loss-of-function mutants of known downstream targets of TORC1, which have been reported to mediate TORC1 inhibition-induced longevity\u00a0(Robida-Stubbs et al., 2012). We found that metformin could still extend lifespans of hlh-30, pha-4 or skn-1 mutants (Figure 3\u2014figure supplement 2). These results suggest that metformin may act on a pathway additive to that of TORC1 inhibition to confer fitness benefit. Given that metformin activated AMPK in daf-15 heterozygous mutant to the same level as that in the control worms (Figure 3H,I), it is likely that metformin promotes longevity also through activation of AMPK.\n\n### Metformin extends lifespan through lysosome-dependent activation of AMPK\n\nv-ATPase-Ragulator complex may function as lysosomal acceptor for AXIN/LKB1, which translocate to lysosome and activate AMPK upon metformin treatment (Figure 1E). Thus, to test the lysosome-dependent AMPK activation for metformin-induced lifespan extension, we first performed lifespan analysis on vha-3 (subunit of v-ATPase V0 domain), vha-12 (subunit of v-ATPase V1 domain), lmtr-3 (LAMTOR 3 subunit of Ragulator) and lmtr-2 (LAMTOR 2 subunit of Ragulator) loss-of-function mutants (Figure 4\u2014figure supplement 1 and Figure 4A). VHA-3, VHA-12, LMTR-3 and LMTR-12 all localized on the lysosomes of C. elegans, as they have similar staining pattern with lysosomal marker LMP-1 (Figure 4\u2014figure supplement 2). All these four mutants had impaired lysosomes, which could be rescued with the expression of corresponding gene (Figure 4\u2014figure supplement 3). vha-3 and vha-12 mutants had longer lifespans compared with wild type animals, whereas lifespan of lmtr-2 or lmtr-3 mutants was comparable to that of the wild type animals (Figure 4B and C and Figure 4\u2014figure supplement 4A and B). Lifespan extension in vha-3 and vha-12 mutants might be due to Ce.TOR inhibition, because v-ATPase is required for the spatial regulation and subsequent activation of TORC1. Consistently, failure of lmtr-3 or lmtr-2 to induce lifespan extension suggested that Ce.TOR pathway was not inhibited under lmtr-3 or lmtr-2 deficiency. Indeed, RNAi knockdown of vha-3 but not lmtr-3, was sufficient to induce the nuclear accumulation of HLH-30 and activate HLH-30 downstream targets (Figure 4\u2014figure supplement 4C and D, and Figure 4D\u2013F). In addition, knocking down of vha-3 but not lmtr-3, decreased the level of RSKS-1 phosphorylation (Figure 4G and H).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig4-v2.jpg)\n\n**Figure 4.:** (A) A scheme depicting genes within C. elegans TORC1 and AMPK pathways. (B\u2013C) Lifespan analysis of wild type, vha-3 (B), or lmtr-3 (C) animals in the presence or absence of metformin. (D) Representative fluorescent images of HLH-30 nuclear localization in worms administrated with control, vha-3 or lmtr-3 RNAi. (E) Quantification of (D), percentage of worms with HLH-30 nuclear accumulation. Mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates are shown (sample size: n\u00a0\u2265\u00a040 worms). (F) Q-PCR analysis of HLH-30 target genes in worms administrated with control, vha-3 or lmtr-3 RNAi.\u00a0~\u00a0300 worms were collected for each mRNA sample. Data from 3 independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. (G) Representative immunoblots of RSKS-1 phosphorylation in worms administrated with control, vha-3 or lmtr-3 RNAi. (H) Quantification of (G).~300 worms were pooled in each protein sample. Relative intensities of 3 independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. (I) Representative immunoblots of AAK-2 phosphorylation in wild type, vha-3 or lmtr-3 mutants, in the presence or absence of metformin. (J) Quantification of (I).~300 worms were collected in each protein sample. Relative intensities of 3 independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schemes depicting deletion and PCR primer positions within each mutant. (B) Primer sequences for genotyping. (C) PCR results of genotyping.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013D) Representative fluorescent images to test co-localization of VHA-3, VHA-12, LMTR-2 or LMTR-3 with LMP-1. L1 worms were cultured in the presence or absence of metformin until L4 stage. Scale bar: 10 um.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Representative fluorescent images of Magic Red Cathepsin assay in wild-type, vha-3, vha-12, lmtr-2, or lmtr-3 loss-of-function mutants, and vha-3, vha-12, lmtr-2, or lmtr-3 loss-of-function mutants injected with the corresponding rescue plasmid. Scale bar: 100 um. (B) Quantification of (A). Error bars represent mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates (sample size: n\u00a0\u2265\u00a040). ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013B) Lifespan assays of wild type, vha-12 (A), or lmtr-2 mutants (B) in the presence or absence of metformin. (C\u2013D) Knockdown efficiency of vha-3 (C) or vha-12 RNAi (D). (E) Representative immunoblots of AAK-2 phosphorylation in N2, vha-12, or lmtr-2 mutants treated with or without metformin. (F) Quantification of (E).~300 worms were pooled in each protein sample. p-AAK-2 intensities were normalized to that of tubulin, and relative intensities of 3 independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. (G) Censored worms due to vulva blasting were counted during lifespan analysis of N2, lmtr-3 or lmtr-2 worms in the presence or absence of metformin. Error bars represent mean\u00a0\u00b1\u00a0SEM of two independent biological replicates (sample size:~100 N2 worms;~250 lmtr-2/3 mutants). ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\nMore importantly, metformin administration could not further induce the lifespan extension, nor AAK-2 activation in v-ATPase mutants vha-3 and vha-12, or Ragulator mutants lmtr-3 and lmtr-2 (Figure 4B\u2013C and I\u2013J and Figure 4\u2014figure supplement 4A, B, E and F), suggesting that metformin\u2019s effect on lifespan extension may also depend on the lysosomal pathway of AMPK activation. It should be noted that metformin even shortens the lifespan of lmtr-3 or lmtr-2 mutants (Figure 4C and Figure 4\u2014figure supplement 4B). However, fractions of censored animals were not increased in metformin-treated lmtr-3 or lmtr-2 mutants (Figure 4\u2014figure supplement 4G), suggesting that metformin did not make the mutants sick.\n\nAXIN is a scaffold protein required for lysosomal localization of LKB1 and lysosome-dependent activation of AMPK (Zhang et al., 2016; Zhang et al., 2013). We could not successfully express AXL-1 (C. elegans ortholog of AXIN) with fluorescent tag in worms and test for its subcellular localization. Therefore, we expressed EGFP-tagged AXL-1 in mammalian cells and showed that AXL-1 only localized on the lysosome upon metformin treatment (Figure 5A). Consistently, without metformin administration, axl-1 mutant alone did not perturb lysosomal function (Figure 5B). We then examined the role of AXIN in metformin-induced lifespan extension. Metformin treatment failed to activate AAK-2 (Ce.AMPK) in axl-1 mutant (AXIN-deficient animals) (Figure 5C,D). Consistently, metformin was no longer able to extend lifespan of axl-1 mutant animals (Figure 5E). Similar to axl-1, metformin could not extend lifespan of par-4 (C. elegans ortholog of LKB-1) mutants as well (Figure 5F) (Onken and Driscoll, 2010). Taken together, these genetic evidences indicate that v-ATPase-Ragulator-AXIN-LKB1-based lysosome pathway is required for the metformin\u2019s effects of lifespan extension.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative fluorescent images to test co-localization of AXL-1 with LAMP1. HEK293T cells stably expressing AXL-1-EGFP and LAMP1-RFP-FLAG were cultured in the presence or absence of 2 mM metformin for 12 hr. Scale bar: 10 um. (B) Representative fluorescent images of Magic Red Cathepsin assay in wild type worms or axl-1 mutants. Scale bar: 100 um. Error bars represent mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates (sample size: n\u00a0\u2265\u00a040). (C) Representative immunoblots of AAK-2 phosphorylation in wild type or axl-1 mutants with or without metformin treatment. (D) Quantification of (C).~300 worms were pooled in each protein sample. Relative intensities of 3 independent biological replicates are shown as mean\u00a0\u00b1\u00a0SEM. (E\u2013F) Lifespan analysis of wild type, axl-1 (E), or par-4 mutants (F) in the presence or absence of metformin. ns, no significant difference; *p<0.05; **p<0.01; ***p<0.001.\n\n### Metformin attenuates age-related fitness decline through lysosome-dependent activation of AMPK\n\nIt has been shown that metformin triggers a dietary restriction-like state and extends C. elegans lifespan through AMPK pathway (Onken and Driscoll, 2010). Indeed, metformin administration induced a dietary restriction-like state to decrease neutral fat level in wild type animals (Figure 6A,B). Conversely, vha-3 (v-ATPase V0), lmtr-3 (Ragulator) and axl-1 (AXIN) mutants retained the same levels of ORO staining in the presence or absence of metformin (Figure 6A,B), suggesting that the dietary restriction-like state triggered by metformin requires the lysosome-dependent activation of AMPK.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig6-v2.jpg)\n\n**Figure 6.:** Neutral fat deposition (A\u2013B), locomotion (C\u2013F) and age pigments (G) were measured in wild-type worms, or vha-3, lmtr-3 or axl-1 mutants in the presence or absence of metformin. Error bars represent mean\u00a0\u00b1\u00a0SEM of 3 independent biological replicates. (sample size: n\u00a0\u2265\u00a020 worms for locomotion assay; n\u00a0\u2265\u00a040 worms for ORO staining or age pigments assay). (H) Metformin may target v-ATPase-Ragulator complex and promote longevity through coordination of Ce.TORC1 and Ce.AMPK.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31268/elife-31268-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Under normal condition, v-ATPase is in an active conformation, which mediates lysosomal amino acid signaling to recruit and activate TORC1. Metformin treatment may target v-ATPase and change its conformation, leading to the dissociation and inactivation of TORC1. Meanwhile, v-ATPase-Regulator may act as a platform for the docking of AXIN/LKB1 and subsequent activation of AMPK.\n\nMetformin treatment also significantly increased the locomotory ability and lowered age pigments of wild type worms (Figure 6C and G), indicating that metformin promotes youthful physiology and fitness of C. elegans. Strikingly, mutation of vha-3, lmtr-3 or axl-1 impaired metformin's effects on locomotion and age pigments (Figure 6D\u2013G), suggesting that lysosome-dependent activation of AMPK is also required for metformin-attenuated fitness decline in aged animals.\n\n## Discussion\n\nUsing a pure in vitro reconstitution system that excludes mitochondria, we showed that metformin coordinates mTORC1 inhibition and AMPK activation through lysosomal pathway. We further employed genetic manipulation to show that metformin extends C. elegans lifespan and attenuates age-related fitness decline via similar mechanism that requires v-ATPase-Ragulator-AXIN/LKB1 of the lysosomal pathway (Figure 6H). Metformin may function by targeting and priming v-ATPase-Ragulator complex on lysosome membrane, which serves as a hub to coordinate mTORC1 and AMPK pathways and govern metabolic programs. It is possible that metformin administration might result in a conformational change of v-ATPase-Ragulator complex, which dissociates mTORC1 from lysosome and allows the docking of AXIN/LKB1 for AMPK activation (Figure 6\u2014figure supplement 1). It will be of particular interest in the future to test if v-ATPase is the direct target of metformin. Elucidating the molecular mechanism of metformin-mediated lifespan extension will boost its application in the treatment of human aging and age-related diseases.\n\n## Materials and methods\n\n### Cell culture\n\nHEK293T cells used for protein purification, virus packaging and stable cell line generation, and AMPK\u03b11/2 double knockout (DKO) MEF cells used for stable cell line generation were cultured with DMEM high glucose medium (HyClone, SH30243.01), supplemented with 10% FBS (Gibico, 10099\u2013141) and 1% Penicillin/Streptomycin (HyClone SV30010). 293T HEK cells were obtained from ATCC, not authenticated, and mycoplasma negative. AMPK\u03b11/2 double knockout (DKO) MEF cells were provided by Dr. Benoit Viollet, validated by immunoblotting and determined as mycoplasma negative.\n\n### Generation of stable cell line\n\nHEK293T cells and AMPK\u03b11/2 DKO MEF cells stably expressing LAMP1-RFP-FLAG fusion protein, or HEK293T cells stably expressing AXL-EGFP and LAMP1-RFP-FLAG were generated with the lentiviral packaging and infection system. 0.8 \u00d7 106 HEK293T cells were seeded into one well of a 6-well-plate and cultured with 2 ml medium. After about 20 hr, 0.75 ug pMDLg/pRRE, 0.3 ug pRSV-Rev, 0.45 ug pCI-VSVG and 1.5 ug pLJM1-LAMP1-RFP-FLAG (addgene) plasmids were co-transfected into cells. Medium was changed 8 hr after transfection. Cells were then cultured for additional 24 hr to allow virus production, and 2 ml medium containing virus was harvested (virus packaging). 300 ul virus-containing medium was diluted with 900 ul fresh medium, and added into one well of a 12-well-plate containing HEK293T cells or AMPK\u03b11/2 DKO MEF cells at\u00a0~40% confluence (virus infection). Several hours after infection, cells stably expressing LAMP1-RFP-FLAG were checked by RFP fluorescence.\u00a0~100% HEK293T cells or\u00a0~20% AMPK\u03b11/2 DKO cells contain RFP signal. HEK293T LAMP1-RFP-FLAG stable cell line was then infected by virus carrying AXL-EGFP to generate double stable cell line.\n\n### Protein purification\n\nRecombinant proteins Myc-LKB1 (human), Myc-AXIN (mouse), and Myc-Raptor (human) were immunopurified from HEK293T cells. For purification of each protein, 20 \u00d7 15 cm dishes of HEK293T cells were cultured until 80% confluence. 28 ug of plasmid was transfected to each dish of cells with Lipofectamine 3000 Transfection Reagent. Medium was changed 8 hr after transfection. After additional 24 hr, medium was carefully discarded and cells were rinsed with PBS. 1.5 ml of TX-100 lysis buffer (20 mM Tris-HCl, 150 mM NaCl, 1 mM Na2EDTA, 1 mM EGTA, 2.5 mM Sodium pyrophosphate, 1 mM \u03b2-glycerophosphate, 1% Triton X-100, PH\u00a0=\u00a07.4) supplemented with proteinase inhibitors was added to each dish of cells. Cells were incubated on ice for 10 min, and then scraped off the dishes. Cell lysate was sonicated at 60% Ampl for 5 \u00d7 30 s (SONICS VCX 130 PB,\u00a0UK), and centrifuged at 4\u00b0C, 10000 rpm for 10 min. Supernatant was mixed with 500 ul Myc agarose beads, and rotated overnight at 4\u00b0C. Beads were washed three times with TX-100 lysis buffer and three times with fractionation buffer (50 mM KCl, 90 mM K-Gluconate, 1 mM EGTA, 5 mM MgCl2, 50 mM Sucrose, 5 mM Glucose, 20 mM HEPES, pH\u00a0=\u00a07.4, 2.5 mM ATP and protease inhibitors were added right before usage), and resuspended in 800 ul of fractionation buffer, followed by addition of 10 ul 10 mg/ml Myc peptide. After rotating at 4\u00b0C for 4 hr, Myc tagged protein in 800 ul fractionation buffer was harvested, followed by addition of 160 ul glycerol, and stored at \u221220\u00b0C.\n\n### Lysosome purification and in vitro reconstitution\n\nLAMP1-RFP-FALG stable cells were cultured until confluence. For each sample, 1 \u00d7 10 cm dish of HEK293T cells or 5 \u00d7 10 cm dishes of MEF AMPK\u03b11/2 DKO cells were scraped off the plate, and pelleted at 1000 rpm, room temperature for 3 min. Cell pellet was washed once with fractionation buffer, resuspended in 0.8 ml fractionation buffer, and mechanically broken by spraying six times through a 23G needle attached to a 1 ml syringe. Broken cells were spun down at 2000 g for 10 min at 4\u00b0C to pellet the nuclei, yielding a post-nuclei supernatant (PNS). The PNS was diluted to 2 ml with fractionation buffer, and subjected to immunoprecipitation with 50 ul FLAG magnetic beads (60% slurry) for 2 hr at 4\u00b0C on a rotator. Lysosome on beads was washed three times and resuspended in 300 ul fractionation buffer, supplemented with 1x amino acids (combining 50x Gln-free MEM amino acids mixture with 100x Glutamine solution from Gibico), 250 uM GTP and 100 uM GDP. Lysosome was then rotated at 37\u00b0C, 650 rpm on a Thermomixer (Eppendorf,\u00a0Germany) for 15 min (activation step for Raptor binding). 40 ul of purified Myc-Raptor protein was added, and the system was shaken for additional 25 min (lysosome binding step for Raptor). 10 uM Concanamycin A (ConA) or 300 uM Metformin (Met) was then provided into the reaction system, and incubated for 30 min (Raptor off lysosome membrane step). Lysosome coated magnetic beads were isolated from the reaction system, resuspended with 300 ul fractionation buffer supplemented with 80 ul purified Myc-AXIN and 20 ul purified Myc-LKB1 (formed a complex with endogenous STRAD and MO25), and then shaken on Thermomixer for 25 min (AXIN/LKB1 lysosome translocation and AMPK activation step).\n\n### Western blotting\n\nFor in vitro reconstitution, each sample was prepared with 30 ul 2x laemmli sample buffer. Purified lysosomes were checked with LAMP2 (abcam ab25631), EEA1 (CST 3288), Prohibitin (Santa Cruz 28259), PDI (Santa Cruz 20132), and Histone H3 (Huaxingbio, HX1850) antibodies. Myc tagged proteins were detected with anti-Myc antibody (ImmunoWag YM3203). LAMP1-RFP-FLAG labeled lysosomes were probed with Flag antibody (Sigma F7425). T172 site phosphorylated AMPK\u03b1 subunit and total AMPK\u03b1 subunit were detected with p-AMPK\u03b1 (CST 2535) and AMPK\u03b1 (CST 2532) antibodies respectively. STRAD (Santa Cruz sc-34102) and MO25 (CST 2716 s) antibodies were used to detect Myc-LKB1-STRAD-MO25 complex.\n\nFor detection of AAK-2 or RSKS-1 phosphorylation, worms at indicated stage were lysed with 2x laemmli sample buffer equal to the volume of worm pellet. AAK-2 phosphorylation was probed with human p-AMPK\u03b1 (T172) antibody (CST 2535). RSKS-1 phosphorylation was probed with human p-S6K1 (T389) antibody (CST 9205). Tubulin (abcam ab6161) was used as loading control.\n\n### Nematode culture\n\nDetailed information of Caenorhabditis elegans strains used in this paper was provided in Supplementary file 1\u20132. Worms were maintained on nematode growth medium (NGM) plate with OP50 as standard food. All worms, except for pha-4 and par-4 mutants, were cultured at 20\u00b0C. Metformin was added into molten agar at the concentration of 50 mM while preparing plates. Rotenone stock was prepared at 10 ug/ul in DMSO. 1 ul rotenone stock was diluted with 300ul M9 and added directly onto a 6 cm NGM plate and hood-dried.\n\nRNA interference (RNAi) clones were grown at 37\u00b0C overnight in LB containing 50 ug/ml carbenicillin. 200 ul bacteria were then seeded onto NGM containing 1 mg/ml IPTG and 50 ug/ml carbenicilin, hood-dried and cultured overnight to induce dsRNA expression. L1 stage Worms were then seeded onto bacteria lawn, and raised until L4 stage for efficient knockdowns.\n\n### Lifespan assays\n\n~100 L4 stage (day 0 for lifespan assays) worms (except for lmtr-2, lmtr-3, par-4 and pha-4) were transferred to plates with or without metformin. For lmtr-2 or lmtr-3 mutant strain,~250 worms were used, due to high percentage of censored worms. For par-4 mutant, worms were cultured at 15\u00b0C until L4 stage (day 0 for lifespan assays), and\u00a0~100 worms were transferred to 25\u00b0C for lifespan assay. For pha-4 mutant, worms were cultured at 25\u00b0C until day 1 adult (day 0 for lifespan assays), and\u00a0~100 worms were transferred to 15\u00b0C for lifespan assay. FUDR was used to prevent reproduction. Worms were transferred to new plates and counted every other day. FUDR was omitted after day 12. Animals that did not move when gently prodded were scored as dead. Animals that crawled off the plate or died from vulva bursting were censored.\n\n### Oil-Red-O (ORO) staining\n\nWorms were washed with 1x PBS and resuspended in 120 ul 1x PBS, followed by addition of 120 ul 2x MRWB buffer (160 mM KCl, 40 Mm NaCl, 14 mM Na4EGTA, 1 mM Spermidine-HCl, 0.4 mM Spermine, 30 mM Na-PIPES, 0.2% \u03b2-mercaptoethanol, PH\u00a0=\u00a07.4) containing 2% PFA. Samples were fixed by gently rocking at room temperature for 1 hr. Worms were then washed with 1x PBS to remove PFA, and resuspended in 300 ul 60% isopropanol to dehydrate for 15 min at room temperature. Worms were pelleted and resuspended with 1 ml 60% ORO solution, and rotated overnight at room temperature (Preparation of 60% ORO solution: commercial liquid ORO stain was diluted to 60% with H20, rocked overnight at room temperature, and filtrated with 0.22 um filter right before usage). Worms were settled and ORO staining solution was removed. 200 ul 1x PBS (with 0.01% triton X-100) was added to resuspend the worms. Worms were quickly transferred on to a glass slide and photographed with Zeiss Imager M2 microscope.\n\n### Locomotion assay\n\nWorms were transferred into a drop of M9 on a glass slide, and filmed with Zeiss Imager M2 microscope. Body bends were counted by reviewing each frame of the 60 s film.\n\n### Age pigment fluorescence detection\n\nWorms were mounted onto an agarose pad attached to a glass slide and photographed with Zeiss Imager M2 microscope. Fluorescence intensity was counted by Image J.\n\n### Lysosome function assay\n\nMagic Red stain (ImmunoChemistry Technologies #938,\u00a0Bloomington,\u00a0Minnesota) can be cleaved by cathepsin B, and generate red fluorescent substrate in functional lysosomes. Magic Red stain was prepared in 260x DMSO stock following the manufacturer\u2019s instructions. 3.8 ul stock was 5x diluted with M9, spread onto a well of 24-well-plate containing 1 ml NGM, and dried in hood. For metformin\u2019s effect on lysosomal function, wild type L1 stage worms were raised to L4 stage on control or metformin NGM plate containing Magic Red stain. For cathepsin assay, L4 stage worms were transferred onto Magic Red containing plate and cultured overnight. Worms were photographed with Zeiss Imager M2 microscope and quantified by Image J.\n\n### Lysosomal localization assay\n\nThe longest CDS sequences of lmp-1, vha-3/12 and lmtr-2/3 were amplified from worm genomic DNA, and cloned into expression vector containing rpl-28 promoter (whole body expression). LMP-1::GFP was initially integrated into C. elegans genome through UV irradiation, and worms were backcrossed for six times. mCherry-VHA-3/12 or mCherry-LMTR-2/3 was then injected into worms expressing LMP-1::GFP. Worms were photographed by Zeiss Imager M2 microscope. The longest CDS sequence of axl-1 was amplified from worm genomic DNA and cloned into mammalian expression construct containing CMV promoter and C-terminal EGFP tag. HEK293T cells stably expressing AXL-1-EGFP and LAMP-1-RFP-FLAG were generated as described above. Cells were imaged by Zeiss LSM710 confocal microscope.\n\n### Reporter assays\n\nhsp-6p::gfp reporter worms were photographed by Zeiss Imager M2 microscope and the fluorescent intensity was quantified by Image J. hlh-30p::hlh-30::gfp reporter worms were photographed by Zeiss Imager M2 microscope and percentage of worms with nuclear localization of HLH-30 was counted.\n\nTo monitor HLH-30 nuclear localization in control or daf-15 heterozygous mutant, we injected hlh-30p::hlh-30::gfp construct into control or daf-15 heterozygous mutant respectively. Worms were photographed by Zeiss Imager M2 microscope. Percentage of worms with nuclear localization of HLH-30 was counted.\n\n### RNA extraction and Q-PCR\n\nWorms were washed off plates with M9 and resuspended with TRIzol Reagent and frozen by liquid nitrogen. Total RNA was isolated by chloroform extraction and isopropanol precipitation. 200 ng total RNA was used for reverse transcription with One-Step cDNA Synthesis Kit (TransGen Biotech,\u00a0China). Real-time PCR was carried out using SYBR GREEN PCR Master Mix (Biorad, Hera Claes, California). Quantifications of transcripts were normalized to rpl-32.\n\n#### Q-PCR primers\n\n<table>\n  <thead>\n    <tr>\n      <th>Target gene</th>\n      <th>Forward primer</th>\n      <th>Reverse primer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>rpl-32</td>\n      <td>AGGGAATTGATAACCGTGTCCGCA</td>\n      <td>TGTAGGACTGCATGAGGAGCATGT</td>\n    </tr>\n    <tr>\n      <td>hlh-30</td>\n      <td>CTCATCGGCCGGCGCTCATC</td>\n      <td>AGAACGCGATGCGTGGTGGG</td>\n    </tr>\n    <tr>\n      <td>lgg-1</td>\n      <td>ACCCAGACCGTATTCCAGTG</td>\n      <td>ACGAAGTTGGATGCGTTTTC</td>\n    </tr>\n    <tr>\n      <td>lgg-2</td>\n      <td>CTGCAAATTCCTAGTACCCGAG</td>\n      <td>CATAGAATTTGACACCATTGAGC</td>\n    </tr>\n    <tr>\n      <td>atg-16.2</td>\n      <td>ATGTCATATCTGGATCTGCGG</td>\n      <td>ACGTTGCATCTGAAGAGCGTG</td>\n    </tr>\n    <tr>\n      <td>atg-18</td>\n      <td>AAATGGACATCGGCTCTTTG</td>\n      <td>TGATAGCATCGAACCATCCA</td>\n    </tr>\n    <tr>\n      <td>sul-2</td>\n      <td>ATGGCAGCAGAAGGCACCCG</td>\n      <td>GCCATTTTCCAACCATGCCAGTTGC</td>\n    </tr>\n    <tr>\n      <td>ctsa*</td>\n      <td>TTCTCCTCGAGGCGCGGGAT</td>\n      <td>TCCAACGCCAATTGGGGACTC</td>\n    </tr>\n    <tr>\n      <td>cpr-1</td>\n      <td>CGCCAAGGACAAGCACTTCGGA</td>\n      <td>ACCTTGGCCTTTCCGGCGAC</td>\n    </tr>\n    <tr>\n      <td>lipl-1</td>\n      <td>GTGACATTTGTTTTTCCATAT</td>\n      <td>AGCAAATTAAACCGACCAC</td>\n    </tr>\n    <tr>\n      <td>lipl-2</td>\n      <td>AATACGAGTCAAATCATTGAA</td>\n      <td>GTAACACTCGTTTTTCCATAA</td>\n    </tr>\n    <tr>\n      <td>lipl-3</td>\n      <td>ATGGGCAGGCAAATCCACCA</td>\n      <td>AGTTGTTCTGCGCAATTATA</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "7d5b9d7e-26cc-4534-9d20-b8a979fd06e3",
+      "submission_id": "4ee844e6-d6d7-42bc-a762-c32db7b77593",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hong Zhang, Institute of Biophysics, Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31268.026](https://doi.org/10.7554/eLife.31268.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Metformin Extends Lifespan by Coordination of mTOR and AMPK through Lysosomal Pathway\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers agreed that this is an interesting study that aims to show that metformin acts on TOR and AMPK at the lysosome, and that this site is critical for the effects of metformin on C. elegans lifespan. However, some of the conclusions seem to be based on small changes observed in single experiments, and analysis of more replicates with assessment of statistical significance would make the soundness of the conclusions more convincing. A substantial amount of work needs be conducted to address the concerns raised by the reviewers, and it is unlikely that this can be done within the two\u2013month limit set by eLife, so we are rejecting the paper. Nevertheless, if your results hold up, I do encourage you to resubmit your work after you have obtained sufficient lines of validation.\n\nReviewer #1:\n\nIn this manuscript, the authors used an in vitro system to show that metformin coordinates mTORC1 inhibition and AMPK activation through the lysosomal pathway. They further demonstrated that both TORC1 inhibition and Axin/LKB1\u2013mediated AMPK activation contribute to the lifespan extension effect of metformin in C. elegans. This study provides molecular mechanism of metformin\u2013mediated lifespan extension.\n\nMajor concerns:\n\n1) The authors showed that metformin treatment triggers nuclear localization of HLH\u201330::GFP in the tail region. How the cells in the tail affect the lifespan? Does loss of function of hlh\u201330 suppress the lifespan extension effect of metformin?\n\n2) Metformin treatment further extends lifespan of daf\u201315 heterozygous mutants. This could be due to that metformin acts on a pathway additive to that of TORC1 inhibition. Alternatively, this may be simply due to a partial reduction in mTOR activity in daf\u201315 heterozygous mutants.\n\n3) Quantification results should be provided for Figure 1E, Figure 2A and Figure 3B, C.\n\nReviewer #2:\n\nOverall, this is an interesting study that aims to show that metformin acts on TOR and AMPK at the lysosome, and that this site is critical for the effects of metformin on C. elegans lifespan. While a novel in vitro reconstitution assay has been developed, and several new C. elegans lysosomal mutants have been analyzed, the study fails to make a convincing case, mainly due to insufficient lines of validation and major rigor issues.\n\nLysosomal mutants:\n\nIn addition to major rigor issues (see separate box), another major concern of this article is that the authors are using several new lysosomal mutants, i.e. lmtr\u20132/3 and axl\u20131, but these mutants are inadequately described and characterized. A description of the alleles, whether the mutations are loss\u2013 or gain\u2013of function mutations, and the lysosomal function of these genes have to be established. Similar concerns relate to vha\u20133 and vha\u201312, which were analyzed by RNAi. Of particular interest is whether these genes indeed localize and function within the lysosome. Lysosomal localization assays and functional assays (cathepsin assays) need to be carried out to validate these mutants, considering the rationale of the manuscript overall. Metformin's effects on lysosomal function should also be tested. Of particular concern is Figure 3F, in which the authors describe that 80% of the lmtr\u20132/3 mutants are censored due to vulval rupture. This censoring will greatly affect the sample size and thus the interpretation of the lifespan experiments. Again, it is crucial for the authors to share these details of their lifespan analyses for all mutants tested. The authors should also include par\u20134, the LKB1 homolog in their analyses of the lysosomal mutants.\n\nTOR activity assays:\n\nThroughout the manuscript, the authors are using several readouts to assay TOR activity in C. elegans: HLH\u201330 nuclear localization, DAF\u201316 nuclear localization, increase in hlh\u201330 transcriptional reporter, increase in gcs\u20131 transcriptional reporter, mRNA levels of skn\u20131, daf\u201316 and daf\u201315/Raptor, mRNA levels of TOR pathway components, skn\u20131\u2013dependent target genes. The authors seem to randomly choose the assay in their different experimental conditions or genetic manipulations. While we acknowledge assay limitations for TOR activity in C. elegans, the authors should be consistent and use the same assays throughout. To this point, analysis of S6K phosphorylation would be a direct way to assay TOR pathway status. Finally, analysis of the mRNA levels of HLH\u201330\u2013regulated genes seems relevant to include, considering the use of the HLH\u201330 translocation assay.\n\nTOR inhibition:\n\nThe authors use a daf\u201315 heterozygous mutant to demonstrate that TOR inhibition and Metformin are additive in their effects on lifespan extension. Because the mutant is heterozygous (i.e., not null), this is not a sound conclusion, as Metformin could still exert its effects on the residual daf\u201315/TOR function. To strengthen their conclusion, the authors should rather perform epistasis experiments with known downstream targets of TOR, e.g., with pha\u20134, skn\u20131 and hlh\u201330 mutants. Additionally, the authors should assay the battery of TOR activity assay also with the daf\u201315 heterozygous mutants (especially HLH\u201330 nuclear localization).\n\nFitness assays:\n\nIt would be important to include the daf\u201315 heteroygous mutants in the analysis of fitness or healthspan parameters as a positive control, since metformin should still have a positive and beneficial effect on these mutants. The oil\u2013red\u2013o stainings only inform on decreased fat levels, however not on a mechanism by which this is achieved. The authors need to refrain from making the conclusion that Metformin activates lipolysis, as there is no data supporting this claim. Again, more information on sample size and number of repeats is needed.\n\nin vitro reconstitution assay:\n\nThe authors establish a new in vitro reconstitution assay for lysosomal function. While this assay is innovative, it should be better validated. To this end, phosphorylation of endogenous AMPK should be assayed in all conditions. The presence of the ragulator complex (and the GTPase status if possible) should be tested as well, as provides binding for AXIN and LKB1.\n\nThe authors should discuss the possibility that AMPK directly phosphorylates Raptor and can thus directly inhibit mTORC1 (Gwinn DM et al., 2008). In light of this, it would be interesting to test whether lysosomes isolated from AMPK knock out cells would alter mTORC1 (dis)association from the lysosome.\n\nFurthermore, the authors need to quantify their immunoblots (and add the average of their three repeats as supplemental data), since especially the Myc\u2013Raptor binding seems to be variable in their IP:FLAG experiments.\n\nPanel D should also include the negative control (\u2013 aas, \u2013 ConA, \u2013 Met).\n\nEffects of metformin independent of mitochondria.\n\nThe author's conclusion that metformin acts mainly through the lysosomal pathway and not via mitochondrial inhibition is not well supported. It has been previously shown by De Haes et al., 2014, that metformin, unlike rotenone, does not increase mitochondrial stress (i.e., data included in Figure 1\u2014figure supplement 1); in addition, they showed that metformin can inhibit electron flow from complex I, and that metformin increases ROS production (in contrast to rotenone, which decreases ROS production). The authors should therefore refrain from concluding mitochondrial\u2013independent functions of metformin.\n\nReviewer #3:\n\nWhile this manuscript is potentially interesting, some of the conclusions seem to be based on small changes observed in single experiments, and analysis of more replicates with assessment of statistical significance would make the soundness of the conclusions more convincing.\n\n1) Figure 1D/1E: while these results are potentially interesting, some of the observed effects are quite modest in extent, and I believe that it is essential in such cases to run at least 2 or 3 replicate incubations side\u2013by\u2013side so that the reproducibility of the effects can be assessed. Even better is to quantify the blots and perform statistical analysis.\n\n2) Figure 1E: I was puzzled about the exact conditions in which the experiment shown in this Figure was performed. They claim to observe an increase in Thr172 phosphorylation, which would require ATP, yet it is not clear from the Methods section whether the \"fractionation buffer\" did contain ATP during the incubation with AXIN and LKB1. Also, did the purified Myc\u2013LKB1 contain bound STRADalpha/\u03b2 and/or MO25alpha/\u03b2, with the former in particular being essential for LKB1 activity?\n\n3) Although this may not be common practice within the C. elegans community, it is possible to perform statistical analysis of survival curves such as those shown in Figures 2E, 3A, D and F. I would like to ask why this has not been done.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors resubmitted for further consideration.]\n\nThank you for submitting your article \"Metformin Extends Lifespan by Coordination of mTORC1 and AMPK through Lysosomal Pathway\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Jonathan Cooper as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors showed that metformin extends lifespan through TORC1 inhibition and lysosome\u2013dependent activation of AMPK. They developed an in vitro reconstitution assay to show that metformin coordinates mTORC1 inhibition and AMPK activation through the lysosomal pathway. They further demonstrated that both TORC1 inhibition and Axin/LKB1\u2013mediated AMPK activation contribute to the lifespan extension effect of metformin in C. elegans. This study provides insights into the molecular mechanism of metformin\u2013mediated lifespan extension. Overall, the findings are potentially interesting. This manuscript is suitable for publication in eLife after appropriate revisions.\n\nEssential revisions:\n\n1) It is unclear whether metformin\u2013activated AMPK also could have effects on HLH\u201330/TFEB. The authors should directly test whether Metformin treatment of aak\u20132 mutants leads to HLH\u201330 nuclear localization (and by extension, gene expression of HLH\u201330 target genes). This information would help the authors in their discussion of the involvement of AMPK vs mTOR.\n\n2) The analysis of downstream pathways of TOR is insufficiently characterized and in places contradicting with previous work from Driscoll lab. The authors performed epistasis experiments with known downstream targets of mTOR, e.g., with pha\u20134, skn\u20131 and hlh\u201330 mutants and conclude that metformin can still induce lifespan\u2013extending effects in these mutants. However, this clearly looks like a partial lifespan extension; in the authors' hands, metformin generally produces 40% lifespan extension in wild\u2013type/WT animals (Table S8), but in mutants they only see 14% (hlh\u201330) and 20\u201330% (pha\u20134, smg\u20131) lifespan extension (Table S6). While these lifespan experiments do not appear to have been performed in direct comparison with a WT control, the more reasonable conclusion is that metformin has a partial effect on lifespan in these backgrounds, and therefore that the genes play a partial role in the lifespan extension. Indeed, Onken and Driscoll reported that skn\u20131 is required for metformin\u2013induced longevity. The authors need to revisit their conclusions in light of these comments and previously published data. To this end, they are encouraged to emphasize the lysosome as the site of Metformin action, their most well\u2013supported new finding, and de\u2013focus on dissecting the individual contribution of AMPK and mTOR. A specific suggestion would to move Figure 4A\u2013C to the supplements and Figure 4D\u2013E merged into Figure 3.\n\n3) While the authors have built VHA\u20133 and LMTR\u20133 reporters to confirm localization to the lysosome (were multiple independent strains analyzed and found to behave similarly?), the authors should use these strains for rescue experiments to seek possible functional validation as well.\n\n4) The authors use a mammalian phosphorylation\u2013specific antibody to detect phosphorylation of the worm S6K ortholog RSKS\u20131 as a read\u2013out for TOR activity. The antibody needs to be validated.\n",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "967a4ef1-b244-43ed-8a8c-ce4374c4d92b",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C1",
+      "claim": "Metformin is a widely used first-line drug for treatment of type 2 diabetes (T2D).",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin, a widely used first-line drug for treatment of type 2 diabetes (T2D), has been shown to extend lifespan and delay the onset of age-related diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background information about metformin's clinical use.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "93904291-8e38-47a6-b5f6-6de4a1d12ab1",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C2",
+      "claim": "Metformin has been shown to extend lifespan and delay the onset of age-related diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin, a widely used first-line drug for treatment of type 2 diabetes (T2D), has been shown to extend lifespan and delay the onset of age-related diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations in the introduction section referencing multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "a3fabf4f-58f8-4edd-add5-f7ddaec65cdc",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C3",
+      "claim": "Metformin acts through the v-ATPase-Ragulator lysosomal pathway to coordinate mTORC1 and AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a pure in vitro reconstitution system, we demonstrate that metformin acts through the v-ATPase-Ragulator lysosomal pathway to coordinate mTORC1 and AMPK, two hubs governing metabolic programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through in vitro reconstitution experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "163aa61b-99a1-4b26-8e1b-f9920d50d26d",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C4",
+      "claim": "Both v-ATPase-mediated TORC1 inhibition and v-ATPase-AXIN/LKB1-mediated AMPK activation contribute to the lifespan extension effect of metformin in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show in Caenorhabditis elegans that both v-ATPase-mediated TORC1 inhibition and v-ATPase-AXIN/LKB1-mediated AMPK activation contribute to the lifespan extension effect of metformin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic experiments in C. elegans shown in Figures 3-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "dd0a605a-729d-415a-b7c0-e7396a4b97ce",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C5",
+      "claim": "Administration of metformin has been shown to extend lifespan in C. elegans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of metformin, a first-line drug for treatment of type 2 diabetes (T2D), has been shown to extend lifespan in C. elegans and mice (Anisimov et al., 2008; Cabreiro et al., 2013; De Haes et al., 2014; Martin-Montalvo et al., 2013; Onken and Driscoll, 2010; Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "cb90ea8a-c447-4918-90db-a21b6659e61f",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C6",
+      "claim": "Metformin has been shown to ameliorate diabetic and cardiovascular diseases in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, metformin has been shown to ameliorate diabetic and cardiovascular diseases in patients (Scarpello, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "79573fe4-b660-4172-8269-22193705adeb",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C7",
+      "claim": "Metformin lowered the incidence of several age-related diseases, such as cancer, metabolic syndrome and cognitive disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin also lowered the incidence of several other age-related diseases, such as cancer, metabolic syndrome and cognitive disorders (Foretz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "4526ce0c-1156-4827-baae-9618b8865e85",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C8",
+      "claim": "A clinical trial named TAME (Targeting Aging with Metformin) was proposed to evaluate metformin's protective effects against human aging and age-related diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its broad range of health benefits and little side effects, a clinical trial named TAME (Targeting Aging with Metformin) was proposed to evaluate metformin's protective effects against human aging and age-related diseases (Barzilai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published proposal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "f0da7e32-5871-49ee-8021-b9b656632f2e",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C9",
+      "claim": "Metformin is generally believed to act through activation of AMP-activated protein kinase (AMPK).",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin is generally believed to act through activation of AMP-activated protein kinase (AMPK) (Fryer et al., 2002; Hawley et al., 2002; Zhou et al., 2001), a principal energy sensor that when activated, switches on catabolic pathways such as glycolysis and fatty acid oxidation to produce more ATP (Burkewitz et al., 2014; Hardie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "92255dc0-fa4c-4818-8c81-2f9d85b7ea5e",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C10",
+      "claim": "AMPK is a principal energy sensor that when activated, switches on catabolic pathways such as glycolysis and fatty acid oxidation to produce more ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin is generally believed to act through activation of AMP-activated protein kinase (AMPK) (Fryer et al., 2002; Hawley et al., 2002; Zhou et al., 2001), a principal energy sensor that when activated, switches on catabolic pathways such as glycolysis and fatty acid oxidation to produce more ATP (Burkewitz et al., 2014; Hardie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies describing AMPK function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "08624b8e-0cbe-4380-aba1-b54a5a67213e",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C11",
+      "claim": "It was proposed that metformin might act through inhibition of mitochondrial electron transport chain (ETC) Complex I.",
+      "claim_type": "EXPLICIT",
+      "source": "It was proposed that metformin might act through inhibition of mitochondrial electron transport chain (ETC) Complex I (El-Mir et al., 2000; Foretz et al., 2014; Owen et al., 2000), resulting in a change of the AMP/ATP ratio and ultimately activating AMPK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies proposing this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "fa7ed894-60f6-4d0b-8564-3309aee05cd0",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C12",
+      "claim": "The idea that metformin acts through inhibition of mitochondrial ETC Complex I has been challenged recently.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this idea has been challenged recently (He and Wondisford, 2015), especially when physiological/low concentration (~70 uM) of metformin, which cannot induce AMP/ATP change, is still able to activate AMPK (Cao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies challenging the Complex I mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "32381164-957f-4043-b33c-38125dd37f32",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C13",
+      "claim": "Physiological/low concentration (~70 uM) of metformin, which cannot induce AMP/ATP change, is still able to activate AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this idea has been challenged recently (He and Wondisford, 2015), especially when physiological/low concentration (~70 uM) of metformin, which cannot induce AMP/ATP change, is still able to activate AMPK (Cao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "e58dbb32-f5ca-441a-899b-a37379dcc04f",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C14",
+      "claim": "An alternative model proposes that metformin activates AMPK through the lysosome-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative model, in which metformin activates AMPK through the lysosome-dependent pathway was proposed (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "72055129-2dc1-48f4-b026-f94db89cc658",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C15",
+      "claim": "Metformin treatment induces lysosomal localization of the scaffold protein AXIN.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, metformin treatment induces lysosomal localization of the scaffold protein AXIN, which brings its associated protein liver kinase B1 (LKB1) to form a complex with v-ATPase-Ragulator on the surface of lysosome (Zhang et al., 2016; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "b6d6e3d5-ac32-4452-82ad-1ae32226c47f",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C16",
+      "claim": "LKB1 phosphorylates the threonine residue in the activation loop of AMPK, leading to AMPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "LKB1 then phosphorylates the threonine residue in the activation loop of AMPK, leading to AMPK activation (Hawley et al., 1996; Shaw et al., 2004; Woods et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "67a93e82-6dcf-4fd4-915f-5945c4456d53",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C17",
+      "claim": "Metformin administration inhibits mechanistic target of rapamycin complex 1 (mTORC1).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to AMPK activation, metformin administration also inhibit mechanistic target of rapamycin complex 1 (mTORC1) (Kalender et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "dc8dc627-b01f-43f5-9636-9973cd9b8f21",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C18",
+      "claim": "mTORC1 constitutes a hub for energy and nutrient sensing, and switches on anabolism when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 constitutes another hub for energy and nutrient sensing, and switches on anabolism when activated (Schmelzle and Hall, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "b62f7479-17bd-479f-bfb2-a306841e83b3",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C19",
+      "claim": "The primary pathway for mTORC1 activation requires lysosome-localized Rag GTPases, which form RagA/B\u2013RagC/D heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary pathway for mTORC1 activation requires lysosome-localized Rag GTPases, which form RagA/B\u2013RagC/D heterodimers and recruit mTORC1 to the surface of lysosome through directly binding to the Raptor subunit of mTORC1 (Kim et al., 2008; Sancak et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "2ba880cb-041b-4510-ac73-d503142ae5cb",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C20",
+      "claim": "v-ATPase-Ragulator complex on lysosomal surface is required for the spatial regulation and activation of mTORC1 by Rag GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "v-ATPase-Ragulator complex on lysosomal surface is required for the spatial regulation and activation of mTORC1 by Rag GTPases (Bar-Peled et al., 2012; Dibble and Manning, 2013; Jewell et al., 2013; Sancak et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "5f8e0d2b-6c4d-481e-b51e-c1a5fc807070",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C21",
+      "claim": "Two distinct mechanisms have been proposed for metformin-induced mTORC1 inhibition: suppression of Rag GTPases (AMPK-independent mechanism) or AMPK-mediated phosphorylation of Raptor (AMPK-dependent mechanism).",
+      "claim_type": "EXPLICIT",
+      "source": "Two distinct mechanisms have been proposed for metformin-induced mTORC1 inhibition: suppression of Rag GTPases (AMPK-independent mechanism) or AMPK-mediated phosphorylation of Raptor (regulatory associated protein of mTORC1) (AMPK-dependent mechanism) (Howell et al., 2017; Kalender et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "cc2b417f-3d13-4d00-89ce-5b8ed2b4bde6",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C22",
+      "claim": "C. elegans is a powerful model organism to test the efficacy of metformin in promoting healthspan due to its short lifespan and ease of genetic manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its short lifespan and ease of genetic manipulation, C. elegans becomes a powerful model organism to test the efficacy of metformin in promoting healthspan (Burkewitz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents established knowledge about C. elegans as a model organism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "7b611126-8b89-4ff1-9326-ca8a419cc2b0",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C23",
+      "claim": "Metformin treatment greatly extends worm lifespan and improves fitness, for example prolonging locomotory ability.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that metformin treatment greatly extends worm lifespan and improves fitness, for example prolonging locomotory ability (Onken and Driscoll, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "56b27ccf-7349-449d-b946-09918901c833",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C24",
+      "claim": "Metformin administration may mimic a dietary restriction (DR) metabolism in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, metformin administration may mimic a dietary restriction (DR) metabolism (Onken and Driscoll, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "38e39605-5445-4071-ad82-faf3357073fa",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C25",
+      "claim": "Alteration of methionine metabolism in C. elegans has been shown to play a partial role in metformin's effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, alteration of methionine metabolism in C. elegans has been shown to play a partial role (Cabreiro et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "471bcffb-e419-4b63-ac5f-7f7d4c02cdb3",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C26",
+      "claim": "Metformin has been shown to inhibit mTORC1 due to restricted transit of RagA-RagC GTPase through nuclear pore complex (NPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, metformin has been shown to inhibit mTORC1 due to restricted transit of RagA-RagC GTPase through nuclear pore complex (NPC) (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "e05d9c66-860d-493c-bab4-c65c0f07da29",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C27",
+      "claim": "mTORC1 and AMPK share the common activator, v-ATPase-Ragulator complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrigued by the discoveries that mTORC1 and AMPK share the common activator, v-ATPase-Ragulator complex (Zhang et al., 2014), and that metformin may directly act on the lysosomal pathway to promote AMPK activation (Zhang et al., 2016), we sought to set up a pure in vitro reconstitution system to explore the mechanism of metformin's action (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "0267c66f-fdaa-415e-8454-f43a9c497063",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C28",
+      "claim": "Upon amino acids stimulation, significant portion of Raptor accumulated on the lysosome, indicating the activation of mTORC1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon amino acids stimulation, significant portion of Raptor accumulated on the lysosome (Figure 1C,F), indicating the activation of mTORC1 pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "e60a6748-9f92-4317-93bc-2c18e621b4a0",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C29",
+      "claim": "Addition of Concanavalin A (Con A) or metformin dissociated Raptor from the lysosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of Con A or metformin dissociated Raptor from the lysosome (Figure 1D,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "4efdd38e-569a-49d3-882f-9a559a24b957",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C30",
+      "claim": "Metformin's effect on mTORC1 inhibition does not require AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if metformin's effect on mTORC1 inhibition requires AMPK or not, we repeated the in vitro experiments in AMPK knockout MEF cells, and still observed the dissociation of Raptor (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "2df01f2c-1da7-4aeb-8ea9-d63d3da111fb",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C31",
+      "claim": "Metformin inhibits mTORC1 through the lysosomal pathway independent of AMPK, possibly mimicking Con A to inhibit v-ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that metformin inhibits mTORC1 through the lysosomal pathway independent of AMPK, possibly mimicking Con A to inhibit v-ATPase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results shown in Figure 1 and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "57955d66-4465-45af-8ba9-4a2e9239bdca",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C32",
+      "claim": "AXIN/LKB1 were recruited to metformin- or Con A-treated lysosomes, and were sufficient to phosphorylate endogenous AMPK in an amino acid-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings, AXIN/LKB1 were recruited to metformin- or Con A-treated lysosomes, and were sufficient to phosphorylate endogenous AMPK in an amino acid-independent manner (Figure 1E,H) (Zhang et al., 2016; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and 1H, and is consistent with cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "297dccbe-0f08-46fa-8497-dd6e93f0011d",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C33",
+      "claim": "Unlike rotenone, metformin treatment showed no mitochondrial stress response reporter activation in C. elegans hsp-6p::gfp reporter strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike rotenone, metformin treatment showed no reporter activation (Figure 1\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "99cd1e05-f6c9-4cdd-8673-a13226ac3920",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C34",
+      "claim": "Metformin administration impaired lysosomal function as measured by cathepsin assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our idea, metformin administration indeed impaired lysosomal function (Figure 1\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "5efb7e39-8765-4bd4-a283-8c1dcadd4936",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C35",
+      "claim": "Metformin treatment significantly decreased the level of RSKS-1 phosphorylation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, metformin treatment significantly decreased the level of RSKS-1 phosphorylation (Figure 2A,B), suggesting an inhibition of TORC1 pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "eed55882-4473-40ba-90a6-0a32d9ca55e8",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C36",
+      "claim": "HLH-30 translocalized to the nucleus in the tail region of C. elegans upon metformin administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, HLH-30 translocalized to the nucleus in the tail region of C. elegans upon metformin administration (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "dc1fdf18-ac05-424c-9155-6dd1886f55c8",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C37",
+      "claim": "HLH-30 is an ortholog of transcription factor EB (TFEB) that translocates to the nucleus upon TORC1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the subcellular localization of HLH-30, an ortholog of transcription factor EB (TFEB) that translocates to the nucleus upon TORC1 inhibition (Lapierre et al., 2013; Perera and Zoncu, 2016; Settembre et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "d72f05cb-c328-4a80-a5bb-43be1e4e0ed3",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C38",
+      "claim": "Once in the nucleus, HLH-30 regulates the transcription of genes related to autophagy, lysosome function and lipid hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in the nucleus, HLH-30 regulates the transcription of genes related to autophagy, lysosome function and lipid hydrolysis (Lapierre et al., 2013; O'Rourke and Ruvkun, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "0923b8cf-432f-40f6-a621-d926f177d554",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C39",
+      "claim": "Up-regulation of transcript levels of hlh-30 downstream targets was observed upon metformin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we also observed up-regulation of transcript levels of hlh-30 downstream targets upon metformin treatment (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "fd1af52b-2c6a-40ce-ab5f-e1f1eb1911bd",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C40",
+      "claim": "Metformin inhibits TORC1 pathway in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that metformin inhibits TORC1 pathway in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "3d43857d-9252-4b63-a905-fd864a92b35c",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C41",
+      "claim": "Metformin treatment of aak-2 loss-of-function mutants was still able to drive HLH-30 nuclear accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our results in AMPK-/- MEF cells (Figure 1\u2014figure supplement 1), metformin treatment of aak-2 (Ce.AMPK) loss-of-function mutants was still able to drive HLH-30 nuclear accumulation (Figure 2\u2014figure supplement 2A,B) and elevate the expression of HLH-30 target genes (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2A, 2B, and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "f4bbab15-f18c-4ffe-aaf4-c09d0b47a6c0",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C42",
+      "claim": "Inhibition of TORC1 has been shown to result in lifespan extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of TORC1 has been shown to result in lifespan extension (Jia et al., 2004; Vellai et al., 2003); also reviewed by Zoncu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "58c67da9-126e-4840-b1c6-4062587edbc7",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C43",
+      "claim": "daf-15 heterozygous mutants had a longer lifespan and a decreased level of RSKS-1 phosphorylation compared with control worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the control worms, daf-15 heterozygous mutants had a longer lifespan and a decreased level of RSKS-1 phosphorylation (Figure 3\u2014figure supplement 1B,C), indicating that TORC1 inhibition extends C. elegans lifespan.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "c4af824d-15bd-48fe-a2a7-1fe264483686",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C44",
+      "claim": "Metformin treatment greatly extended the lifespan of daf-15 heterozygous mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, metformin treatment greatly extended the lifespan of daf-15 heterozygous mutants (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "0a0ed594-d325-4209-a637-b224011d53a1",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C45",
+      "claim": "Metformin administration decreased neutral fat level in daf-15 heterozygous mutants similar to wild type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to wild type animals, metformin administration further decreased neutral fat level in daf-15 heterozygous mutants (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "fc1dc30f-a474-4a79-9555-8da97611fb17",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C46",
+      "claim": "Metformin treatment significantly increased the locomotory ability and reduced age pigments of wild type worms and daf-15 heterozygous mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin treatment significantly increased the locomotory ability (counted by the average bends of worm body per 60 s) and reduced age pigments of wild type worms and daf-15 heterozygous mutants (Figure 3\u2014figure supplement 1D, and Figure 3D,E), indicating that metformin also improves fitness of daf-15 heterozygous mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "843fec0b-be18-4c16-8675-2b9865b0e745",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C47",
+      "claim": "In daf-15 heterozygous mutants, significant portion of HLH-30 already localized in the nucleus, suggesting an inhibition of TORC1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in daf-15 heterozygous mutants, significant portion of HLH-30 already localized in the nucleus, suggesting an inhibition of TORC1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F and 3G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "5a4df154-0397-47a7-84d1-0ce24c4c8264",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C48",
+      "claim": "Metformin administration increased HLH-30 nuclear localization in control worms, but not in daf-15 heterozygous mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, metformin administration increased HLH-30 nuclear localization in control worms, but not in daf-15 heterozygous mutants (Figure 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "f4832843-fe07-4029-b90a-039522bf3f91",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C49",
+      "claim": "Metformin could still extend lifespans of hlh-30, pha-4 or skn-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that metformin could still extend lifespans of hlh-30, pha-4 or skn-1 mutants (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "bc733387-62e3-4842-8177-077bf15ea93a",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C50",
+      "claim": "Metformin activated AMPK in daf-15 heterozygous mutant to the same level as that in the control worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that metformin activated AMPK in daf-15 heterozygous mutant to the same level as that in the control worms (Figure 3H,I), it is likely that metformin promotes longevity also through activation of AMPK.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H and 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "8da3f7bc-e698-49a6-a4a2-44a3269a9ae8",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C51",
+      "claim": "Metformin may act on a pathway additive to that of TORC1 inhibition to confer fitness benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that metformin may act on a pathway additive to that of TORC1 inhibition to confer fitness benefit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing metformin's effects in daf-15 heterozygous mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "b9c547d8-686c-4668-a26e-93b69caa48d3",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C52",
+      "claim": "vha-3 and vha-12 mutants had longer lifespans compared with wild type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "vha-3 and vha-12 mutants had longer lifespans compared with wild type animals, whereas lifespan of lmtr-2 or lmtr-3 mutants was comparable to that of the wild type animals (Figure 4B and C and Figure 4\u2014figure supplement 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B, 4C, and Figure 4\u2014figure supplement 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "15e91ae6-6dae-4474-a86b-88b780e6bd3f",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C53",
+      "claim": "Lifespan of lmtr-2 or lmtr-3 mutants was comparable to that of the wild type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "vha-3 and vha-12 mutants had longer lifespans compared with wild type animals, whereas lifespan of lmtr-2 or lmtr-3 mutants was comparable to that of the wild type animals (Figure 4B and C and Figure 4\u2014figure supplement 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B, 4C, and Figure 4\u2014figure supplement 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "b4633e2f-fbe7-4008-987d-66ba318d1eba",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C54",
+      "claim": "RNAi knockdown of vha-3 but not lmtr-3, was sufficient to induce the nuclear accumulation of HLH-30 and activate HLH-30 downstream targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNAi knockdown of vha-3 but not lmtr-3, was sufficient to induce the nuclear accumulation of HLH-30 and activate HLH-30 downstream targets (Figure 4\u2014figure supplement 4C and D, and Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D, 4E, 4F, and Figure 4\u2014figure supplement 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "fd2f86ea-3efc-4c0b-a015-47fa25475458",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C55",
+      "claim": "Knocking down of vha-3 but not lmtr-3, decreased the level of RSKS-1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, knocking down of vha-3 but not lmtr-3, decreased the level of RSKS-1 phosphorylation (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "4a2e0d1f-8c10-4b0f-af97-07ce00f0d411",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C56",
+      "claim": "Metformin administration could not further induce the lifespan extension, nor AAK-2 activation in v-ATPase mutants vha-3 and vha-12, or Ragulator mutants lmtr-3 and lmtr-2.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, metformin administration could not further induce the lifespan extension, nor AAK-2 activation in v-ATPase mutants vha-3 and vha-12, or Ragulator mutants lmtr-3 and lmtr-2 (Figure 4B\u2013C and I\u2013J and Figure 4\u2014figure supplement 4A, B, E and F), suggesting that metformin's effect on lifespan extension may also depend on the lysosomal pathway of AMPK activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B, 4C, 4I, 4J, and Figure 4\u2014figure supplement 4A, 4B, 4E, and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "828f5e42-cfea-41a1-9e0e-8462d4ace209",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C57",
+      "claim": "Metformin's effect on lifespan extension may depend on the lysosomal pathway of AMPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, metformin administration could not further induce the lifespan extension, nor AAK-2 activation in v-ATPase mutants vha-3 and vha-12, or Ragulator mutants lmtr-3 and lmtr-2 (Figure 4B\u2013C and I\u2013J and Figure 4\u2014figure supplement 4A, B, E and F), suggesting that metformin's effect on lifespan extension may also depend on the lysosomal pathway of AMPK activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing metformin's effects in v-ATPase and Ragulator mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "bbbf62f5-93d8-4dd0-a297-834a90227033",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C58",
+      "claim": "Metformin shortens the lifespan of lmtr-3 or lmtr-2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that metformin even shortens the lifespan of lmtr-3 or lmtr-2 mutants (Figure 4C and Figure 4\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and Figure 4\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "fc3d7388-debc-4bad-8933-f9034ec295f3",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C59",
+      "claim": "Fractions of censored animals were not increased in metformin-treated lmtr-3 or lmtr-2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fractions of censored animals were not increased in metformin-treated lmtr-3 or lmtr-2 mutants (Figure 4\u2014figure supplement 4G), suggesting that metformin did not make the mutants sick.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "2d0fa371-f008-4438-880a-280adecc7567",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C60",
+      "claim": "AXIN is a scaffold protein required for lysosomal localization of LKB1 and lysosome-dependent activation of AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "AXIN is a scaffold protein required for lysosomal localization of LKB1 and lysosome-dependent activation of AMPK (Zhang et al., 2016; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "cdccc918-f5a8-4770-9be4-8b77b6587b6a",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C61",
+      "claim": "AXL-1 only localized on the lysosome upon metformin treatment in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we expressed EGFP-tagged AXL-1 in mammalian cells and showed that AXL-1 only localized on the lysosome upon metformin treatment (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "d1e82990-76a0-44f2-a344-ebd6eb3567ea",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C62",
+      "claim": "Without metformin administration, axl-1 mutant alone did not perturb lysosomal function.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, without metformin administration, axl-1 mutant alone did not perturb lysosomal function (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "ba0811b1-87e2-423b-bc02-5a8dce9d79b7",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C63",
+      "claim": "Metformin treatment failed to activate AAK-2 in axl-1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin treatment failed to activate AAK-2 (Ce.AMPK) in axl-1 mutant (AXIN-deficient animals) (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "cf95b623-8f71-4a5e-b517-e21367d89d05",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C64",
+      "claim": "Metformin was not able to extend lifespan of axl-1 mutant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, metformin was no longer able to extend lifespan of axl-1 mutant animals (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "d5172d7b-4f17-4301-87c7-fd568cb1b3a9",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C65",
+      "claim": "Metformin could not extend lifespan of par-4 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to axl-1, metformin could not extend lifespan of par-4 (C. elegans ortholog of LKB-1) mutants as well (Figure 5F) (Onken and Driscoll, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5F and a citation to a published study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "24772719-ff40-4ecf-822a-6c4f149a1cf9",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C66",
+      "claim": "v-ATPase-Ragulator-AXIN-LKB1-based lysosome pathway is required for the metformin's effects of lifespan extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these genetic evidences indicate that v-ATPase-Ragulator-AXIN-LKB1-based lysosome pathway is required for the metformin's effects of lifespan extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "317d60cf-b98b-4358-925a-ce3a98fb338a",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C67",
+      "claim": "Metformin has been shown to trigger a dietary restriction-like state and extend C. elegans lifespan through AMPK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that metformin triggers a dietary restriction-like state and extends C. elegans lifespan through AMPK pathway (Onken and Driscoll, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "6a4b44d7-1aec-4b43-8765-a0c03a299050",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C68",
+      "claim": "Metformin administration induced a dietary restriction-like state to decrease neutral fat level in wild type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, metformin administration induced a dietary restriction-like state to decrease neutral fat level in wild type animals (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "1acd00fa-dcfe-4ed2-9581-716294fe201b",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C69",
+      "claim": "vha-3, lmtr-3 and axl-1 mutants retained the same levels of ORO staining in the presence or absence of metformin.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, vha-3 (v-ATPase V0), lmtr-3 (Ragulator) and axl-1 (AXIN) mutants retained the same levels of ORO staining in the presence or absence of metformin (Figure 6A,B), suggesting that the dietary restriction-like state triggered by metformin requires the lysosome-dependent activation of AMPK.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "c8bba172-d8f8-4da2-8b87-7e0aa801172f",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C70",
+      "claim": "The dietary restriction-like state triggered by metformin requires the lysosome-dependent activation of AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, vha-3 (v-ATPase V0), lmtr-3 (Ragulator) and axl-1 (AXIN) mutants retained the same levels of ORO staining in the presence or absence of metformin (Figure 6A,B), suggesting that the dietary restriction-like state triggered by metformin requires the lysosome-dependent activation of AMPK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing metformin's effects on neutral fat levels in various mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "537f036c-1e60-4030-9ca5-81bd40eb348b",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C71",
+      "claim": "Mutation of vha-3, lmtr-3 or axl-1 impaired metformin's effects on locomotion and age pigments.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, mutation of vha-3, lmtr-3 or axl-1 impaired metformin's effects on locomotion and age pigments (Figure 6D\u2013G), suggesting that lysosome-dependent activation of AMPK is also required for metformin-attenuated fitness decline in aged animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D, 6E, 6F, and 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "3f2bcdc0-60f9-419e-a960-fa11aa6f2e2e",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C72",
+      "claim": "Lysosome-dependent activation of AMPK is required for metformin-attenuated fitness decline in aged animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, mutation of vha-3, lmtr-3 or axl-1 impaired metformin's effects on locomotion and age pigments (Figure 6D\u2013G), suggesting that lysosome-dependent activation of AMPK is also required for metformin-attenuated fitness decline in aged animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing metformin's effects on locomotion and age pigments in various mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "290f9b68-82ce-4ec8-87f4-d8fb3b33fea4",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C73",
+      "claim": "Using a pure in vitro reconstitution system that excludes mitochondria, metformin coordinates mTORC1 inhibition and AMPK activation through lysosomal pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a pure in vitro reconstitution system that excludes mitochondria, we showed that metformin coordinates mTORC1 inhibition and AMPK activation through lysosomal pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "661e9527-be04-4f1d-85f3-14771cbb6285",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C74",
+      "claim": "Metformin extends C. elegans lifespan and attenuates age-related fitness decline via a mechanism that requires v-ATPase-Ragulator-AXIN/LKB1 of the lysosomal pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We further employed genetic manipulation to show that metformin extends C. elegans lifespan and attenuates age-related fitness decline via similar mechanism that requires v-ATPase-Ragulator-AXIN/LKB1 of the lysosomal pathway (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "cdd735c4-41d6-40ec-86c4-793b54e5e917",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C75",
+      "claim": "Metformin may function by targeting and priming v-ATPase-Ragulator complex on lysosome membrane, which serves as a hub to coordinate mTORC1 and AMPK pathways and govern metabolic programs.",
+      "claim_type": "EXPLICIT",
+      "source": "Metformin may function by targeting and priming v-ATPase-Ragulator complex on lysosome membrane, which serves as a hub to coordinate mTORC1 and AMPK pathways and govern metabolic programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculative interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "ebb480f9-0a33-4c70-ae8c-5528ebf0a2ab",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C76",
+      "claim": "Metformin administration might result in a conformational change of v-ATPase-Ragulator complex, which dissociates mTORC1 from lysosome and allows the docking of AXIN/LKB1 for AMPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that metformin administration might result in a conformational change of v-ATPase-Ragulator complex, which dissociates mTORC1 from lysosome and allows the docking of AXIN/LKB1 for AMPK activation (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is a speculative model based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "c7483c19-4f3f-45b4-b8fa-5acd696dd8c0",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C77",
+      "claim": "The purity of lysosome preparation was confirmed by immunoblotting to test for the absence of early endosome, mitochondria, ER or nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The purity of lysosome preparation was confirmed by immunoblotting to test for the absence of early endosome, mitochondria, ER or nuclei (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "8dc48ef0-1338-4f26-bc3b-ad48120ea5d2",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C78",
+      "claim": "Immuno-purified LKB1 forms a complex with endogenous STRAD and MO25, two proteins essential for optimal LKB1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Immuno-purified LKB1 forms a complex with endogenous STRAD and MO25, two proteins essential for optimal LKB1 activity (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "c0675dc6-7dcf-4d4b-b8ca-b6f42f92014c",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C79",
+      "claim": "T389 of S6K1 is highly conserved among species.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an antibody that specifically detects Thr-389, a highly conserved phosphorylation site among species (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "fa716857-da2c-4c40-97dd-66ab35323e4b",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C80",
+      "claim": "VHA-3, VHA-12, LMTR-3 and LMTR-12 all localized on the lysosomes of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "VHA-3, VHA-12, LMTR-3 and LMTR-12 all localized on the lysosomes of C. elegans, as they have similar staining pattern with lysosomal marker LMP-1 (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "05d3ac12-e96e-459a-942f-e55a32ddf48f",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C81",
+      "claim": "All vha-3, vha-12, lmtr-3, and lmtr-2 mutants had impaired lysosomes, which could be rescued with the expression of corresponding gene.",
+      "claim_type": "EXPLICIT",
+      "source": "All these four mutants had impaired lysosomes, which could be rescued with the expression of corresponding gene (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "0a140ed4-dd97-44fe-9748-587fedf32049",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C82",
+      "claim": "Lifespan extension in vha-3 and vha-12 mutants might be due to Ce.TOR inhibition, because v-ATPase is required for the spatial regulation and subsequent activation of TORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Lifespan extension in vha-3 and vha-12 mutants might be due to Ce.TOR inhibition, because v-ATPase is required for the spatial regulation and subsequent activation of TORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results and established knowledge about v-ATPase function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "025bfcdb-9a12-4f98-b6c5-787f554c32db",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "claim_id": "C83",
+      "claim": "Failure of lmtr-3 or lmtr-2 to induce lifespan extension suggested that Ce.TOR pathway was not inhibited under lmtr-3 or lmtr-2 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, failure of lmtr-3 or lmtr-2 to induce lifespan extension suggested that Ce.TOR pathway was not inhibited under lmtr-3 or lmtr-2 deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing no lifespan extension in lmtr mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4a488291-c4cc-45b2-94a3-56185aac1fa6",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using a pure in vitro reconstitution system with purified lysosomes, the authors demonstrate that metformin inhibits mTORC1 by dissociating Raptor from lysosomes and activates AMPK by recruiting AXIN/LKB1 to lysosomes, both through the v-ATPase-Ragulator lysosomal pathway. These effects occur independently of AMPK for mTORC1 inhibition and independently of mitochondria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 provide direct experimental evidence from the in vitro reconstitution system (Figure 1) showing amino acid-stimulated Raptor accumulation on lysosomes, its dissociation upon metformin/ConA treatment, and AXIN/LKB1 recruitment with AMPK phosphorylation. Claim C30 demonstrates AMPK-independence using AMPK knockout cells. The lysosome purity controls (C77) and LKB1 complex validation (C78) strengthen the experimental rigor. The system explicitly excludes mitochondria, addressing a key mechanistic controversy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "d7b41de0-2e48-4eae-866d-825fe0edaf3b",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Metformin does not activate mitochondrial stress response in C. elegans but does impair lysosomal function as measured by cathepsin activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 provide complementary evidence using reporter strains and functional assays. The lack of hsp-6p::gfp activation distinguishes metformin from rotenone (a known mitochondrial inhibitor), while the cathepsin assay directly demonstrates impaired lysosomal function. These results support the lysosomal rather than mitochondrial mechanism of action.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Metformin inhibits TORC1 pathway in C. elegans, as evidenced by decreased RSKS-1 phosphorylation, nuclear translocation of HLH-30/TFEB, and upregulation of HLH-30 target genes. This inhibition occurs independently of AMPK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 provide multiple converging lines of evidence for TORC1 inhibition using phosphorylation status (C35), transcription factor localization (C36), and gene expression (C39). The antibody validation (C79) and AMPK-independence demonstrated in aak-2 mutants (C41) strengthen the conclusions. The use of multiple readouts for the same pathway provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Metformin extends lifespan and improves healthspan in daf-15 heterozygous mutants (which already have reduced TORC1 activity), suggesting metformin acts through an additional pathway beyond TORC1 inhibition, likely through AMPK activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 demonstrate that metformin extends lifespan and improves multiple fitness parameters in daf-15 heterozygous mutants. Claims C47-C48 show that HLH-30 is already nuclear in these mutants and metformin cannot further increase this, indicating TORC1 is already inhibited. However, metformin still activates AMPK to the same level as in controls (C50), and extends lifespan in hlh-30, pha-4, and skn-1 mutants (C49), supporting an additive AMPK-dependent mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Metformin's lifespan extension effect requires the v-ATPase-Ragulator lysosomal pathway. v-ATPase mutants (vha-3, vha-12) show extended lifespan and TORC1 inhibition, while Ragulator mutants (lmtr-2, lmtr-3) do not. Metformin cannot further extend lifespan or activate AMPK in any of these mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 provide genetic evidence that metformin requires v-ATPase and Ragulator for its effects. The differential phenotypes of v-ATPase vs Ragulator mutants (C52-C55, C82-C83) are logically consistent with v-ATPase being required for TORC1 activation. The localization (C80) and rescue experiments (C81) validate the mutants. The inability of metformin to extend lifespan or activate AMPK in these mutants (C56) strongly supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "6da90fb9-a496-4588-a354-6029a66158fe",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Metformin shortens lifespan in lmtr-2/3 mutants, but this is not due to increased sickness as censored animals were not increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 reports a negative effect of metformin in Ragulator mutants, while C59 argues this is not due to toxicity based on censoring rates. However, the mechanism for lifespan shortening is not explained, and the interpretation that metformin 'did not make the mutants sick' based solely on censoring rates is incomplete. Alternative explanations for shortened lifespan are not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The AXIN-LKB1 pathway is required for metformin's lifespan extension effects. AXL-1 localizes to lysosomes only upon metformin treatment, and axl-1 or par-4 (LKB1) mutants show no AMPK activation or lifespan extension in response to metformin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 provide genetic evidence that AXIN and LKB1 are required for metformin's effects. The lysosomal localization of AXL-1 upon metformin treatment (C61) and the lack of baseline lysosomal defects in axl-1 mutants (C62) support a specific metformin-induced recruitment mechanism. The loss of AMPK activation (C63) and lifespan extension (C64-C65) in these mutants provides strong genetic support for the pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "43ce19e4-3447-4fc6-a08c-8cdd9410a357",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Metformin induces a dietary restriction-like metabolic state (reduced neutral fat) that requires the lysosome-dependent AMPK activation pathway, as this effect is abolished in vha-3, lmtr-3, and axl-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 demonstrate that metformin reduces neutral fat in wild-type but not in lysosomal pathway mutants, providing functional evidence that the metabolic effects require the identified pathway. This connects the molecular mechanism to a physiologically relevant metabolic phenotype and is consistent with prior work (C67).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "7668d224-3233-4fc3-93d7-2436469b220e",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lysosome-dependent AMPK activation is required for metformin's beneficial effects on age-related fitness decline, including locomotion and age pigment accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 provides experimental evidence that mutations in vha-3, lmtr-3, or axl-1 abolish metformin's effects on locomotion and age pigments. This extends the mechanism beyond lifespan to healthspan parameters, demonstrating the pathway's importance for multiple aging phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "13bc5dbb-be08-4624-b5ea-b2901cbbd747",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Metformin extends C. elegans lifespan and attenuates age-related fitness decline via a mechanism requiring v-ATPase-Ragulator-AXIN/LKB1 of the lysosomal pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary claim (C74) is well-supported by the collective genetic evidence from Figures 3-6, including lifespan assays, fitness measurements, and molecular readouts across multiple mutant backgrounds. The claim appropriately synthesizes the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "0eabf1a5-a7f7-4f85-95f7-a706dcb18868",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that metformin functions by targeting the v-ATPase-Ragulator complex on lysosome membranes, potentially causing a conformational change that dissociates mTORC1 and allows AXIN/LKB1 docking for AMPK activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C76 are explicitly speculative mechanistic models. While consistent with the experimental data, the direct molecular target of metformin and the proposed conformational changes are not experimentally demonstrated. The model is reasonable but requires direct biochemical validation of metformin binding to v-ATPase and structural studies of conformational changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "8aa5f5a7-297a-4f4b-937b-3c935590870f",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Metformin is a widely used diabetes drug that has been shown to extend lifespan in model organisms and reduce age-related diseases in patients, leading to the proposed TAME clinical trial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C2, C5-C8) are well-established in the literature and supported by the cited references. They provide appropriate context for the study but represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "9f1623c6-b192-4662-9bcd-341d94d327dd",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript reviews existing models for metformin's mechanism of action, including the mitochondrial Complex I hypothesis (which has been challenged) and the alternative lysosome-dependent AMPK activation model, as well as established knowledge about mTORC1 and AMPK signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C9-C21) accurately summarize prior work and established knowledge about AMPK, mTORC1, and proposed metformin mechanisms. They are appropriately cited and provide necessary background for understanding the current study's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    },
+    {
+      "id": "f283ac35-f1b1-4d5d-88ee-8b74d5ecaee0",
+      "content_id": "975401c0-f940-4315-b9b7-0a0f74493d47",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "C. elegans is an established model for studying metformin's effects on aging, with various proposed mechanisms including dietary restriction mimicry, methionine metabolism alterations, and NPC-mediated Rag GTPase restriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C22-C26) appropriately cite prior C. elegans studies on metformin and aging. They establish the rationale for using this model system and acknowledge alternative mechanisms that have been proposed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:34:55.815747Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a3fabf4f-58f8-4edd-add5-f7ddaec65cdc",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "e05d9c66-860d-493c-bab4-c65c0f07da29",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "0267c66f-fdaa-415e-8454-f43a9c497063",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "e60a6748-9f92-4317-93bc-2c18e621b4a0",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "4efdd38e-569a-49d3-882f-9a559a24b957",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "2df01f2c-1da7-4aeb-8ea9-d63d3da111fb",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "57955d66-4465-45af-8ba9-4a2e9239bdca",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "290f9b68-82ce-4ec8-87f4-d8fb3b33fea4",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "c7483c19-4f3f-45b4-b8fa-5acd696dd8c0",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "8dc48ef0-1338-4f26-bc3b-ad48120ea5d2",
+      "result_id": "4a488291-c4cc-45b2-94a3-56185aac1fa6"
+    },
+    {
+      "claim_id": "297dccbe-0f08-46fa-8497-dd6e93f0011d",
+      "result_id": "d7b41de0-2e48-4eae-866d-825fe0edaf3b"
+    },
+    {
+      "claim_id": "99cd1e05-f6c9-4cdd-8673-a13226ac3920",
+      "result_id": "d7b41de0-2e48-4eae-866d-825fe0edaf3b"
+    },
+    {
+      "claim_id": "5efb7e39-8765-4bd4-a283-8c1dcadd4936",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "eed55882-4473-40ba-90a6-0a32d9ca55e8",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "dc1fdf18-ac05-424c-9155-6dd1886f55c8",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "d72f05cb-c328-4a80-a5bb-43be1e4e0ed3",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "0923b8cf-432f-40f6-a621-d926f177d554",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "fd1af52b-2c6a-40ce-ab5f-e1f1eb1911bd",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "3d43857d-9252-4b63-a905-fd864a92b35c",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "c0675dc6-7dcf-4d4b-b8ca-b6f42f92014c",
+      "result_id": "45df410d-795a-48ce-8e5c-3be32ec3d0c0"
+    },
+    {
+      "claim_id": "f4bbab15-f18c-4ffe-aaf4-c09d0b47a6c0",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "58c67da9-126e-4840-b1c6-4062587edbc7",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "c4af824d-15bd-48fe-a2a7-1fe264483686",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "0a0ed594-d325-4209-a637-b224011d53a1",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "fc1dc30f-a474-4a79-9555-8da97611fb17",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "843fec0b-be18-4c16-8675-2b9865b0e745",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "5a4df154-0397-47a7-84d1-0ce24c4c8264",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "f4832843-fe07-4029-b90a-039522bf3f91",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "bc733387-62e3-4842-8177-077bf15ea93a",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "8da3f7bc-e698-49a6-a4a2-44a3269a9ae8",
+      "result_id": "eda7eb69-fa74-4d4f-bf14-889bea69fde1"
+    },
+    {
+      "claim_id": "b9c547d8-686c-4668-a26e-93b69caa48d3",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "15e91ae6-6dae-4474-a86b-88b780e6bd3f",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "b4633e2f-fbe7-4008-987d-66ba318d1eba",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "fd2f86ea-3efc-4c0b-a015-47fa25475458",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "4a2e0d1f-8c10-4b0f-af97-07ce00f0d411",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "828f5e42-cfea-41a1-9e0e-8462d4ace209",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "fa716857-da2c-4c40-97dd-66ab35323e4b",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "05d3ac12-e96e-459a-942f-e55a32ddf48f",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "0a140ed4-dd97-44fe-9748-587fedf32049",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "025bfcdb-9a12-4f98-b6c5-787f554c32db",
+      "result_id": "2fe1fa63-31df-40ad-820f-78d9e3dfa77e"
+    },
+    {
+      "claim_id": "bbbf62f5-93d8-4dd0-a297-834a90227033",
+      "result_id": "6da90fb9-a496-4588-a354-6029a66158fe"
+    },
+    {
+      "claim_id": "fc3d7388-debc-4bad-8933-f9034ec295f3",
+      "result_id": "6da90fb9-a496-4588-a354-6029a66158fe"
+    },
+    {
+      "claim_id": "2d0fa371-f008-4438-880a-280adecc7567",
+      "result_id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d"
+    },
+    {
+      "claim_id": "cdccc918-f5a8-4770-9be4-8b77b6587b6a",
+      "result_id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d"
+    },
+    {
+      "claim_id": "d1e82990-76a0-44f2-a344-ebd6eb3567ea",
+      "result_id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d"
+    },
+    {
+      "claim_id": "ba0811b1-87e2-423b-bc02-5a8dce9d79b7",
+      "result_id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d"
+    },
+    {
+      "claim_id": "cf95b623-8f71-4a5e-b517-e21367d89d05",
+      "result_id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d"
+    },
+    {
+      "claim_id": "d5172d7b-4f17-4301-87c7-fd568cb1b3a9",
+      "result_id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d"
+    },
+    {
+      "claim_id": "24772719-ff40-4ecf-822a-6c4f149a1cf9",
+      "result_id": "198ca5e1-697e-41ad-a14a-98c7b77e7c5d"
+    },
+    {
+      "claim_id": "317d60cf-b98b-4358-925a-ce3a98fb338a",
+      "result_id": "43ce19e4-3447-4fc6-a08c-8cdd9410a357"
+    },
+    {
+      "claim_id": "6a4b44d7-1aec-4b43-8765-a0c03a299050",
+      "result_id": "43ce19e4-3447-4fc6-a08c-8cdd9410a357"
+    },
+    {
+      "claim_id": "1acd00fa-dcfe-4ed2-9581-716294fe201b",
+      "result_id": "43ce19e4-3447-4fc6-a08c-8cdd9410a357"
+    },
+    {
+      "claim_id": "c8bba172-d8f8-4da2-8b87-7e0aa801172f",
+      "result_id": "43ce19e4-3447-4fc6-a08c-8cdd9410a357"
+    },
+    {
+      "claim_id": "537f036c-1e60-4030-9ca5-81bd40eb348b",
+      "result_id": "7668d224-3233-4fc3-93d7-2436469b220e"
+    },
+    {
+      "claim_id": "3f2bcdc0-60f9-419e-a960-fa11aa6f2e2e",
+      "result_id": "7668d224-3233-4fc3-93d7-2436469b220e"
+    },
+    {
+      "claim_id": "661e9527-be04-4f1d-85f3-14771cbb6285",
+      "result_id": "13bc5dbb-be08-4624-b5ea-b2901cbbd747"
+    },
+    {
+      "claim_id": "cdd735c4-41d6-40ec-86c4-793b54e5e917",
+      "result_id": "0eabf1a5-a7f7-4f85-95f7-a706dcb18868"
+    },
+    {
+      "claim_id": "ebb480f9-0a33-4c70-ae8c-5528ebf0a2ab",
+      "result_id": "0eabf1a5-a7f7-4f85-95f7-a706dcb18868"
+    },
+    {
+      "claim_id": "967a4ef1-b244-43ed-8a8c-ce4374c4d92b",
+      "result_id": "8aa5f5a7-297a-4f4b-937b-3c935590870f"
+    },
+    {
+      "claim_id": "93904291-8e38-47a6-b5f6-6de4a1d12ab1",
+      "result_id": "8aa5f5a7-297a-4f4b-937b-3c935590870f"
+    },
+    {
+      "claim_id": "dd0a605a-729d-415a-b7c0-e7396a4b97ce",
+      "result_id": "8aa5f5a7-297a-4f4b-937b-3c935590870f"
+    },
+    {
+      "claim_id": "cb90ea8a-c447-4918-90db-a21b6659e61f",
+      "result_id": "8aa5f5a7-297a-4f4b-937b-3c935590870f"
+    },
+    {
+      "claim_id": "79573fe4-b660-4172-8269-22193705adeb",
+      "result_id": "8aa5f5a7-297a-4f4b-937b-3c935590870f"
+    },
+    {
+      "claim_id": "4526ce0c-1156-4827-baae-9618b8865e85",
+      "result_id": "8aa5f5a7-297a-4f4b-937b-3c935590870f"
+    },
+    {
+      "claim_id": "f0da7e32-5871-49ee-8021-b9b656632f2e",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "92255dc0-fa4c-4818-8c81-2f9d85b7ea5e",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "08624b8e-0cbe-4380-aba1-b54a5a67213e",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "fa7ed894-60f6-4d0b-8564-3309aee05cd0",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "32381164-957f-4043-b33c-38125dd37f32",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "e58dbb32-f5ca-441a-899b-a37379dcc04f",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "72055129-2dc1-48f4-b026-f94db89cc658",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "b6d6e3d5-ac32-4452-82ad-1ae32226c47f",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "67a93e82-6dcf-4fd4-915f-5945c4456d53",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "dc8dc627-b01f-43f5-9636-9973cd9b8f21",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "b62f7479-17bd-479f-bfb2-a306841e83b3",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "2ba880cb-041b-4510-ac73-d503142ae5cb",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "5f8e0d2b-6c4d-481e-b51e-c1a5fc807070",
+      "result_id": "9f1623c6-b192-4662-9bcd-341d94d327dd"
+    },
+    {
+      "claim_id": "cc2b417f-3d13-4d00-89ce-5b8ed2b4bde6",
+      "result_id": "f283ac35-f1b1-4d5d-88ee-8b74d5ecaee0"
+    },
+    {
+      "claim_id": "7b611126-8b89-4ff1-9326-ca8a419cc2b0",
+      "result_id": "f283ac35-f1b1-4d5d-88ee-8b74d5ecaee0"
+    },
+    {
+      "claim_id": "56b27ccf-7349-449d-b946-09918901c833",
+      "result_id": "f283ac35-f1b1-4d5d-88ee-8b74d5ecaee0"
+    },
+    {
+      "claim_id": "38e39605-5445-4071-ad82-faf3357073fa",
+      "result_id": "f283ac35-f1b1-4d5d-88ee-8b74d5ecaee0"
+    },
+    {
+      "claim_id": "471bcffb-e419-4b63-ac5f-7f7d4c02cdb3",
+      "result_id": "f283ac35-f1b1-4d5d-88ee-8b74d5ecaee0"
+    }
+  ],
+  "comparisons": []
+}

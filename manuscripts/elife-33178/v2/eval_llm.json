@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A genome-wide RNAi screen using a luciferase-based NMD reporter identified canonical NMD and EJC factors as top hits, along with ICE1 as a novel candidate NMD factor. The screen used Common Seed Analysis to minimize off-target effects and successfully enriched for known NMD pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design (C43-C51) is well-validated with appropriate controls (UPF1 siRNA, z'-factors >0.5). Recovery of known NMD factors (C55-C58) and all four core EJC components (C56) with high seed-corrected Z-scores demonstrates successful identification of expected biology (C60). The CSA approach (C53) addresses a major limitation of RNAi screens. ICE1 identification (C7, C64) with high Z-score (2.91) is supported by the screen data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "ICE1 depletion increases the abundance of multiple classes of NMD targets including PTC-containing isoforms, uORF-containing mRNAs (CHOP/DDIT3, GADD34/PPP1R15A), and transcripts with long 3'UTRs, as demonstrated by RNAseq and qRT-PCR analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNAseq data (C71-C72) shows specific increases in PTC-containing isoforms with statistical significance (Figure 2A). The SRSF2 example (C77-C79) demonstrates selective effects on NMD+ isoforms. uORF analysis (C82, C90-C92) includes appropriate controls (ASNS) to rule out ISR induction. Long 3'UTR effects (C94-C95, C98) are validated by qRT-PCR. Control analyses removing genes with splicing changes (C86-C87, C97) strengthen the conclusions. The data consistently support ICE1's role across multiple NMD-inducing features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "ICE1 depletion stabilizes NMD target mRNAs, as demonstrated by REMBRANDTS analysis showing high correlation between changes in mRNA abundance and stability (Spearman's \u03c1=0.69), and by metabolic labeling experiments measuring mRNA half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The REMBRANDTS approach (C100-C101) is appropriately applied to distinguish stability from transcriptional effects. The high correlation (C102, p<10^-15) between abundance and stability changes is statistically robust. Overlap with UPF1/UPF3B-stabilized transcripts (C105-C106) supports ICE1's role in the same pathway. Independent validation by metabolic labeling (C108-C109) using 5-EU pulse-chase provides orthogonal evidence. The inclusion of ASNS as a negative control strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "ICE1 depletion increases protein production from NMD target mRNAs without interfering with their translation, as shown by western blot analysis of endogenous NMD substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C114, Figure 3D) shows substantial increases in protein levels for multiple NMD targets upon ICE1 depletion. This is consistent with the luciferase screen results (C113) and demonstrates that stabilized mRNAs remain translationally competent. The observation rules out indirect effects through impaired mRNA export or translation, supporting a direct role in NMD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "ICE1 associates with the core EJC (eIF4AIII, CASC3, MAGOH) in an RNA-independent manner but does not co-purify with endogenous UPF proteins (UPF1, UPF2, UPF3B) under native conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-immunoprecipitation experiments (C116-C122) demonstrate ICE1 interaction with all core EJC components. RNase resistance (C119-C120) indicates protein-protein interactions rather than RNA-mediated bridging. Reciprocal IPs with eIF4AIII antibodies (C122) confirm the interaction. The lack of endogenous ICE1-UPF3B co-IP (C117-C118) but detection with overexpressed UPF3B (C124) suggests transient or weak interactions under physiological conditions. The data support ICE1 as an EJC-associated factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C132",
+      "C133"
+    ],
+    "result": "ICE1 contains a putative C-terminal MIF4G domain that is necessary and sufficient for EJC interaction, and overexpression of this domain acts as a dominant negative to inhibit NMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Computational prediction (C67, Phyre2 with high confidence) identifies a conserved MIF4G domain (C68). Domain mapping experiments (C126-C128) demonstrate the C-terminus is both necessary and sufficient for EJC binding. RNase resistance (C129) confirms direct protein interaction. The dominant-negative effect (C131, C133) on NMD-sensitive transcripts (ANXA1, CGA) provides functional validation. However, the effect is not universal (ATF3 unaffected), suggesting substrate specificity that requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "ICE1 depletion does not affect core EJC assembly but dramatically reduces the association of UPF3B and UPF2 with the EJC, as shown by co-immunoprecipitation of CASC3 with EJC and UPF proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP experiments (C134, Figure 6A) show comparable recovery of core EJC components (eIF4AIII, MAGOH) with CASC3 in control and ICE1-depleted cells, indicating intact core EJC assembly (C135). However, UPF3B recovery is reduced by ~70% and UPF2 is nearly undetectable (C136), quantified from three independent replicates. Similar effects with MIF4G overexpression (C137) support a common mechanism. The data clearly demonstrate ICE1's specific role in UPF3B-EJC association rather than core EJC assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "ICE1 depletion causes UPF3B to accumulate in the nucleus and be depleted from the cytoplasm, with the nuclear:cytoplasmic ratio increasing from 2.89 to 5.59 (p<10^-15), consistent with impaired EJC-mediated nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Imaging flow cytometry (C138-C139, Figure 6B) provides quantitative analysis of thousands of cells showing statistically significant redistribution of GFP-UPF3B. The EJC-binding deficient mutant (C141) shows similar nuclear accumulation, supporting the mechanistic link between EJC binding and nuclear export. The large sample size and statistical significance (Mann-Whitney test, p<10^-15) provide robust evidence. This is consistent with the known role of EJC in UPF3B export (C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Overexpression of UPF3B rescues both the biochemical defect in EJC-UPF3B association and the functional NMD defect caused by ICE1 depletion, demonstrating that ICE1's role in NMD is mediated through promoting UPF3B-EJC assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments provide strong evidence for the proposed mechanism. Biochemical rescue (C144-C145, Figure 7A) shows restored UPF3B-CASC3 co-IP upon UPF3B overexpression. Functional rescue (C146-C147, Figure 7B) demonstrates significant reductions in NMD target abundance. The control showing no effect of UPF3B overexpression in ICE1-replete cells (C148) rules out simple overexpression artifacts. The combined biochemical and functional rescue (C150) strongly supports the model that ICE1 promotes UPF3B-EJC assembly to enable NMD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims establishing the known functions of the NMD pathway, including detection of PTCs, regulation of 5-10% of the transcriptome, the roles of UPF and SMG proteins, and the use of the EJC in vertebrate NMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C32) represent well-established knowledge in the NMD field, supported by extensive citations to published literature. They provide necessary context for the study but do not constitute novel findings. The claims accurately represent current understanding of NMD mechanisms and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C151",
+      "C161",
+      "C169",
+      "C176"
+    ],
+    "result": "ICE1 is validated as a novel peripheral EJC factor essential for EJC-enhanced NMD that promotes UPF3B-EJC association and links nuclear EJC assembly to cytoplasmic NMD substrate detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents the central conclusion of the study, integrating multiple lines of evidence: screen identification (C37), effects on NMD targets (C38), requirement for UPF3B-EJC association (C39), rescue by UPF3B overexpression (C40), and the proposed mechanistic model (C41, C169, C176). The claim is well-supported by the comprehensive biochemical, genetic, and genomic approaches described. The model (C169, Figure 7C) is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The Common Seed Analysis approach successfully minimized off-target effects in the RNAi screen, resulting in high enrichment of known NMD factors and providing a valuable resource for identifying novel NMD components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CSA methodology (C152-C153) is well-established and appropriately applied. The high enrichment of known NMD factors (C153-C154) validates the approach. The comparison to the CRISPR screen (C62-C63) shows complementary strengths, with the siRNA screen particularly effective for EJC factors. The claim about future utility (C155) is reasonable speculation based on the screen's performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ICE1 and USPL1 are known interacting partners that associate with the little elongation complex, and ICE1 is a ~250 kDa nuclear protein not previously implicated in NMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to published research (C65-C66, Hu et al. 2013, Hutten et al. 2014) and the screen results (C64). They provide important context for ICE1's identification and characterization. The novelty of ICE1's role in NMD is clearly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C80",
+      "C88",
+      "C89"
+    ],
+    "result": "Background on specific NMD targets used for validation, including SRSF2 as an example of NMD-based autoregulation and CHOP/GADD34 as ISR members regulated by inhibitory uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide context for the validation experiments and are supported by appropriate citations. They represent established knowledge about specific NMD substrates used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C140"
+    ],
+    "result": "Background claims about NMD mechanism, including dependence on nuclear export and translation, and the role of EJC in UPF3B nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established mechanistic understanding of NMD and are appropriately cited. They provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Discussion of the complexity of NMD substrate classes and the existence of multiple NMD 'branches' with differential substrate preferences among core factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C156-C160) represent current understanding and open questions in the NMD field, appropriately cited and discussed. They provide context for interpreting ICE1's effects on different substrate classes. The acknowledgment of uncertainty (C160) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Discussion of the relationship between ICE1 depletion effects on UPF3B localization, EJC association, and potential impacts on different NMD substrates, including speculative mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims mix observations (C162) with speculative interpretations (C163-C167). While the speculation is reasonable and appropriately qualified, the mechanistic details of how ICE1 affects UPF3B-EJC association and the consequences for different substrate classes require further investigation. The citations to recent work (C167-C168) provide relevant context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C177",
+      "C178"
+    ],
+    "result": "Discussion of the transient nature of ICE1-EJC-UPF3B interactions and speculative mechanisms for how ICE1 might promote UPF3B-EJC association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observations about endogenous vs. overexpressed protein interactions (C170-C174) are data-supported, but the proposed model of transient interactions (C175-C176) and speculative mechanisms (C177-C178) require further experimental validation. The speculation is reasonable and appropriately qualified as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Discussion of evolutionary considerations, regulatory implications, and potential therapeutic applications of manipulating ICE1 to control NMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent broader implications and speculation about the findings. The evolutionary perspective (C179-C180) and comparison to UPF3A (C181-C182) are reasonable but speculative. The regulatory implications (C183-C185) are logical extensions of the findings but require experimental validation. The therapeutic speculation (C186-C187) is appropriately qualified as requiring further work.",
+    "result_type": "MINOR"
+  }
+]

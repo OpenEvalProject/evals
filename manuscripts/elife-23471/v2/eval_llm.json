@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120"
+    ],
+    "result": "Coarse-grained (CG) Monte Carlo simulations were performed to characterize DnaK/DnaJ interactions using a validated potential energy function. The simulations investigated complexes of the J-domain with DnaK NBD in ADP- and ATP-bound states, as well as full-length ATP-bound DnaK, yielding binding affinities (KD = 540 \u03bcM \u00b1 60 for NBD(ADP), KD = 370 \u03bcM \u00b1 35 for NBD(ATP), KD = 23 \u03bcM \u00b1 3 for FL(ATP)) compatible with experimental determinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CG simulation methodology is well-described (C26, C28, C112-C118, C120) with appropriate citations to validated methods. The calculated binding affinities (C31) are explicitly compared with experimental data (C32), showing good agreement. The structural models used are clearly defined (C112-C117) and the simulation protocol is reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C79"
+    ],
+    "result": "CG simulations identified a specific binding site on lobe IIA of the DnaK NBD that predominates across all simulated constructs. The binding interface involves a negatively charged groove on DnaK and the positively charged helix II of the J-domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of the binding site is supported by free energy surfaces (C34, Figure 1C,E,G) and contact probability analysis (C35, C36, Figures 1B and 2A,B). The consistency across different nucleotide states and constructs strengthens the finding. The characterization of the electrostatic complementarity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C86",
+      "C87"
+    ],
+    "result": "CG simulations revealed two major binding modes (HPD-OUT and HPD-IN) characterized by opposite orientations of the J-domain, together accounting for >91% of bound conformations. Both modes were observed across all simulated systems with minimal perturbation by the SBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two binding modes are clearly identified through free energy analysis (C37, Figure 1D,F,H) and cluster analysis (C38, Figure 2). The quantitative population analysis (C42, C43) and consistency across systems (C41, C87) provide strong support. However, the authors acknowledge uncertainty in distinguishing the two modes energetically (free energy difference ~1.5 kcal/mol comparable to model uncertainty).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C100",
+      "C101"
+    ],
+    "result": "The significant increase in binding affinity for full-length DnaK compared to isolated NBD suggests a stabilizing role of the SBD and inter-domain linker in the DnaK/JD complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ~16-fold increase in affinity from NBD(ATP) to FL(ATP) (C31) provides quantitative support for this conclusion (C33, C100). The inference is further supported by comparison with experimental observations on isolated NBD (C101). The mechanistic interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "A novel stochastic MSA matching approach was developed to perform DCA on Hsp70/Hsp40 families, generating 1000 random MSAs from large sequence datasets (20061 Hsp70, 26254 Hsp40 sequences) to identify robust coevolutionary signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological innovation is well-justified given the challenge of promiscuous interactions (C46). The approach is clearly described (C47, C127-C131) with appropriate rationale (C128, C130). The large sequence datasets (C48, C122) provide sufficient statistical power. The method represents a reasonable solution to a genuine technical challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C80"
+    ],
+    "result": "DCA identified three strongly coevolving inter-protein residue pairs (N187-K23, D208-K26, T189-R19) that form evolutionarily conserved binding patches perfectly overlapping with the CG-predicted binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DCA predictions (C49, Figure 3A) show clear statistical significance with high appearance frequencies. The spatial clustering of residues (C50) and perfect overlap with CG predictions (C51, C80) provide strong mutual validation of both computational approaches. The convergence of independent methods significantly strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The HPD-IN conformation shows significantly better agreement with DCA predictions and mutagenesis data (particularly the D35-R167 interaction) compared to HPD-OUT, providing a novel structural model that reconciles experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between HPD-IN and HPD-OUT against DCA predictions is clearly presented (C52, Figure 3B,C). The compatibility with mutagenesis data on D35-R167 interaction (C53, C90, C91) provides independent experimental validation. The contrast with the PRE-NMR model (C92) is appropriately noted. The convergence of multiple lines of evidence strongly supports the HPD-IN model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "DCA analysis on taxonomic subsets revealed that the coevolutionary signal originates predominantly from bacterial sequences, with no strong couplings detected in the eukaryotic subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between bacterial and eukaryotic subsets is clearly documented (C55, C56, Figure 3\u2014figure supplement 1). The inference about signal origin (C57) is well-supported by the data. This finding has important implications for the generalizability of the results and is appropriately discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Short (30 ns) atomistic MD simulations of six systems showed that HPD-IN conformations are significantly more stable than HPD-OUT for isolated NBD, with the difference less pronounced for full-length DnaK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation protocol is well-described (C58, C139-C143) and the stability analysis using dRMS and angular deviation is appropriate (C60, Table 1, Figure 4\u2014figure supplements 2-3). The differential stability between HPD-IN and HPD-OUT (C60) and the effect of the SBD (C61) are clearly documented. The use of backbone restraints (C143) is justified for focusing on inter-protein dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C95",
+      "C96"
+    ],
+    "result": "Extended 1 \u03bcs MD simulations of FL(ATP):JD in HPD-IN conformation revealed multiple conformational states within this binding mode, with transient population of evolutionarily conserved contacts and D35-R167 interaction, consistent with a highly dynamic interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extended simulations (C62) provide appropriate timescale for conformational sampling. The observation of multiple states (C64, Figure 4A) and broad distance distributions (C66, Figure 4B) are well-documented. The inference of transient contacts (C67, C95) is supported by the multi-modal distributions. The compatibility with NMR observations of dynamic interfaces (C96) provides experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C104",
+      "C105",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "GBSA energetic analysis identified four key DnaK fragments contributing to binding, including the inter-domain linker (residues 391-393) and regions of the NBD (residues 206-219, 329-335), with helix II and HPD loop of JD providing the main energetic contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GBSA methodology is appropriately described (C151-C153) and the per-residue decomposition is clearly presented (C68, Figure 5A). The identification of specific binding hotspots (C69, C70) is well-documented. The inference about linker stabilization (C71, C105) is reasonable given the energetic data. The method is standard and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C99"
+    ],
+    "result": "Extended DCA analysis on full-length Hsp70 sequences identified two SBD/JD contacts (H422-E75, Q424-K51) that correspond to the energetically important SBD region, confirming direct interaction between J-domain and both the inter-domain linker and SBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extended DCA analysis (C73, C74, Figure 5C) provides independent validation of the MD-based energetic analysis. The correspondence between DCA predictions and energetically important regions (C75) strengthens both findings. The structural compatibility of K51 with HPD-IN (C76) is noted, though one residue (E74) falls outside the modeled region (C77). The convergence of energetic and evolutionary evidence (C78, C99) strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The predicted binding interface involving helix II of JD and lobe IIA of DnaK NBD (sequence 206-221) is in excellent agreement with previous NMR and mutagenesis experiments, with consistency across all nucleotide states suggesting a primary role throughout the functional cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agreement with experimental data is well-documented through multiple citations (C81, C82). The specific sequence identified (206EIDEVDGEKTFEVLAT221) matches PRE-NMR data (C82). The consistency across nucleotide states (C83) is demonstrated by the CG simulations. This represents strong validation of the computational predictions against independent experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The structural model suggests that JD binding stabilizes the docked linker conformation and may shift DnaK toward an allosterically active state through direct SBD interactions, providing insights into the regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the proximity of JD to the docked linker is demonstrated (C84) and the functional importance of the linker is well-established (C85, C103), the mechanistic proposals about stabilization (C105, C106) and allosteric effects (C107) are largely speculative. The authors appropriately acknowledge this as a hypothesis (C107 includes 'SPECULATION' evidence type). The model is compatible with existing data but lacks direct experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Extended DCA analysis with relaxed threshold (>20% frequency) and comparison with alternative methods (IPA, PPM) confirmed the robustness of the main predicted binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extended analysis (C135, Figure 7) and comparison with alternative methods (C133, Figure 7\u2014figure supplement 1) provide appropriate validation. The filtering of buried residues (C136) is methodologically sound. The conclusion that five of seven surface-exposed contacts concentrate in the CG-predicted interface (C137) supports the robustness claim (C138). This represents thorough validation of the DCA approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study acknowledges that the bovine auxilin:Hsc70 crystal structure shows poor agreement with DnaK/DnaJ data, and whether this reflects artifacts, multiple interfaces, or phylogenetic differences remains an open question for future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of discrepancies with the auxilin:Hsc70 structure (C109) is appropriate and well-cited. The recognition of unresolved questions (C110) demonstrates scientific rigor. The forward-looking statement about methodological contributions (C111) is reasonable. This represents appropriate contextualization of the work within existing literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1803 @@
+{
+  "submission": {
+    "id": "582ba969-b8ac-4b9a-bcea-4cd83ef6dd9d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:10:51.752885Z",
+    "updated_at": "2025-12-02T00:10:51.752885Z"
+  },
+  "content": [
+    {
+      "id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "submission_id": "582ba969-b8ac-4b9a-bcea-4cd83ef6dd9d",
+      "content_type": "manuscript",
+      "content_text": "# Proprioceptive and cutaneous sensations in humans elicited by intracortical microstimulation\n\n## Authors\n\n- Michelle Armenta Salas<sup>1</sup> ([ORCID: 0000-0002-0634-2891](https://orcid.org/0000-0002-0634-2891))\n- Luke Bashford<sup>1</sup> ([ORCID: 0000-0003-4391-2491](https://orcid.org/0000-0003-4391-2491))\n- Spencer Kellis<sup>1</sup> ([ORCID: 0000-0002-5158-1058](https://orcid.org/0000-0002-5158-1058))\n- Matiar Jafari<sup>1</sup>\n- HyeongChan Jo<sup>1</sup>\n- Daniel Kramer<sup>3</sup>\n- Kathleen Shanfield<sup>6</sup>\n- Kelsie Pejsa<sup>1</sup>\n- Brian Lee<sup>3</sup>\n- Charles Y Liu<sup>3</sup>\n- Richard A Andersen<sup>1</sup> ([ORCID: 0000-0002-7947-0472](https://orcid.org/0000-0002-7947-0472)) \u2020\n\n### Affiliations\n\n1. Department of Biology and Biological Engineering California Institute of Technology Pasadena United States\n2. T & C Chen Brain-Machine Interface Center California Institute of Technology Pasadena United States\n3. USC Neurorestoration Center Keck School of Medicine of USC Los Angeles United States\n4. Department of Neurological Surgery Keck School of Medicine of USC Los Angeles United States\n5. UCLA-Caltech Medical Scientist Training Program Los Angeles United States\n6. Rancho Los Amigos National Rehabilitation Center Downey United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPioneering work with nonhuman primates and recent human studies established intracortical microstimulation (ICMS) in primary somatosensory cortex (S1) as a method of inducing discriminable artificial sensation. However, these artificial sensations do not yet provide the breadth of cutaneous and proprioceptive percepts available through natural stimulation. In a tetraplegic human with two microelectrode arrays implanted in S1, we report replicable elicitations of sensations in both the cutaneous and proprioceptive modalities localized to the contralateral arm, dependent on both amplitude and frequency of stimulation. Furthermore, we found a subset of electrodes that exhibited multimodal properties, and that proprioceptive percepts on these electrodes were associated with higher amplitudes, irrespective of the frequency. These novel results demonstrate the ability to provide naturalistic percepts through ICMS that can more closely mimic the body\u2019s natural physiological capabilities. Furthermore, delivering both cutaneous and proprioceptive sensations through artificial somatosensory feedback could improve performance and embodiment in brain-machine interfaces.\n\n## Introduction\n\nThe absence of somatosensation profoundly diminishes a person\u2019s ability to move and interact within their environment (Cole and Cole, 1995; Sainburg et al., 1993). Even with intact vision and hearing, which can provide sensory information about body position, movement, and interaction, basic behaviors such as walking or reach-and-grasp require substantially greater cognitive load without somatosensory feedback. The severity of these deficits underscores how deeply integrated cutaneous and proprioceptive somatosensations are in the neural control of movement, and motivates the problem of restoring sensation when it is missing. However, the complexity of the somatosensory circuit, and the difficulty of writing information into this circuit with sufficient integrity, have posed significant challenges. Recent advances in brain-machine interface (BMI) technology have led to renewed efforts in this area, under the hypothesis that providing closed-loop motor-sensory control and feedback pathways could lead to vital increases in performance (Bensmaia and Miller, 2014). Intracortical microstimulation (ICMS) is a promising technique for implementing a return path in which electrical stimuli are written directly into the somatosensory cortex through implanted electrode arrays. Non-human primates (NHPs) successfully incorporated ICMS information to perform discrimination, detection tasks (Romo et al., 1998; Romo et al., 2000; Tabot et al., 2013; Dadarlat et al., 2015) and as sensory feedback for brain control in BMI tasks (O'Doherty et al., 2011; Klaes et al., 2014), and recent human studies have provided insight into the feeling and perception of the sensations produced through ICMS (Flesher et al., 2016). However, qualities ascribed by human subjects to these sensations (e.g., \u2018tingling\u2019 or \u2018buzzing\u2019) have been mostly artificial in nature (Johnson et al., 2013; Flesher et al., 2016), and it is as yet unclear what range of sensations could be elicited through ICMS. Here, we present novel findings from two experiments: one which tested each electrode over a range of amplitudes with fixed frequency, and one which tested a subset of electrodes over a range of amplitudes and frequencies. We found reliable elicitation of natural cutaneous and proprioceptive sensations spanning a range of stimulus amplitudes and frequencies, obtained from stimulation in S1 of a single human subject (participant FG, Figure 1; see Materials and methods) with a C5-level spinal cord injury. We further show that current amplitude, not frequency, of the electrical stimulus differentiates the modality (i.e., cutaneous or proprioceptive) of the elicited percept at some stimulation sites.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32904/elife-32904-fig1-v1.jpg)\n\n**Figure 1.:** 96-channel microelectrode arrays were implanted into ventral premotor cortex (PMv) and supramarginal gyrus (SMG), and two 48-channel stimulating arrays were implanted into primary somatosensory cortex (S1). The insert shows the in situ array locations.\n\n## Results and discussion\n\nIn Experiment 1, over an eight-week period, electrical stimuli were tested across a range of current amplitudes between 20\u2013100 \u00b5A, with pulse frequency held constant at 150 Hz (see Materials and methods). Stimulation through 46/96 electrodes (48%) prompted at least one response, and there were in total 381 reported sensations out of 1229 non-catch trials (see Materials and methods). There was weak correlation between the number of electrodes that elicited a sensation and the current amplitude (r\u00a0=\u00a00.34, p=0.42, Pearson linear correlation). Additionally, we found no correlation between electrode impedance and the likelihood of elicited percepts (p=0.80, Pearson linear correlation coefficient), pooling all electrode responses over all days. Furthermore, there was no significant difference in the aggregate impedances of either electrodes that produced or did not produce percepts (p=0.707, Kolmogorov-Smirnov two-sample test). No false positives were reported in any catch trials, and we found no effect of trial history in the proportion of reported sensations during stimulation (see Materials\u00a0and\u00a0methods). The stimulation did not trigger any painful sensations, and no adverse events occurred during any of the sessions.\n\nReceptive fields along the upper arm, forearm and hand corresponded to coarse somatotopical organization in the corresponding stimulation sites. Figure 2 shows the most frequently reported receptive field and sensation modality for each electrode across all trials. Of the 46 electrodes with responses, 32 evoked percepts in the upper arm, 18 in the forearm, and two in the hand (palmar surface of digits and a finger pad). In agreement with previous reports, stimulation could produce percepts with variably-sized receptive fields in different electrodes (Flesher et al., 2016). For the majority of electrodes (24/46), receptive fields were reported in the same body region (i.e. upper arm or forearm) or in the same plane (i.e. anterior or posterior) across all tested amplitudes. Coarse somatotopy was present between the medial and lateral arrays (Figure 2B); the medial array was more likely to have reliable receptive fields in the anterior upper arm (46% of medial-array receptive fields), while stimulation on the lateral array induced sensation more frequently on the posterior forearm (51% of lateral-array receptive fields). However, there was no clear somatotopical organization within each array as previously reported (Kim et al., 2015a; Kaas, 1983; Flesher et al., 2016). The coarse somatotopy found across arrays but not within arrays, could be due to the small area of cortex sampled by the implants, and the fact that the implants predominantly covered upper arm and forearm, areas with a less established somatotopic map (Kaas et al., 1979; Kaas, 1983). Another plausible explanation is that the topography in somatosensory cortex has been remapped after injury (Kaas et al., 1983; Florence et al., 1998; Moore et al., 2000)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32904/elife-32904-fig2-v1.jpg)\n\n**Figure 2.:** (A) Receptive field location on anterior (lighter shades) and posterior (darker shades) planes of the right upper arm (green), forearm (pink), and hand (cyan). Grid is the same that the subject referenced during the experiment. (B) Schematic of the two electrode arrays implanted over S1 (Figure 1). Left side panels display the reported receptive fields at each electrode location, and right side panels display the sensation modality (cutaneous - red, proprioceptive - blue). Light gray boxes show electrodes with no reported sensation, while dark gray boxes represent reference channels which are not used in recording. The five electrodes with a thick black outline represent the subset tested in the additional parameter-wide mapping task. Yellow and magenta asterisks mark the inferior-posterior corner of the implants, for the medial and lateral arrays respectively.\n\nFG has reported a wealth of qualitative sensations induced by ICMS\u00a0(Table 1). Unlike paresthetic sensations experienced post-injury, these naturalistic responses were broadly characterized as cutaneous (e.g. squeeze) or proprioceptive (e.g. rightward movement), and as being subjectively similar to sensations experienced prior to injury. At his own discretion, the subject used single-word descriptors to characterize the perceived sensations as accurately as possible. Single-word descriptors have the advantage that they can be compared across large data sets or subjects. However, as experimental advances continue to push the capabilities of ICMS, responses could become more complex and future studies might benefit from more structured descriptors, which take into consideration the complexity of these sensory experiences (Darie et al., 2017).\n\n**Table 1.**\n Descriptions of the most prevalent sensations by percentage of total responses.Entries cover 90% of 381 reported sensations, with the final 10% comprising a mixture of other naturalistic cutaneous and proprioceptive descriptors. Each sensation is accompanied by the mode and 25th-75th percentiles in the distribution of amplitudes that elicited each sensation, and by the same quantities for the perceived reported intensities (on a scale of 1 [weak] to 10 [strong]).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Description</th>\n      <th>% Total Sensations (381 total)</th>\n      <th>Amplitude \u03bcA (mode)</th>\n      <th>Amplitude \u03bcA (25th, 75th percentile)</th>\n      <th>Intensity (mode)</th>\n      <th>Intensity (25th, 75th percentile)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Squeeze</td>\n      <td>24.9</td>\n      <td>40</td>\n      <td>40, 87.5</td>\n      <td>7</td>\n      <td>4, 7</td>\n    </tr>\n    <tr>\n      <td>Tap</td>\n      <td>17.3</td>\n      <td>70</td>\n      <td>40, 80</td>\n      <td>1</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>Right movement</td>\n      <td>9.7</td>\n      <td>90</td>\n      <td>55, 90</td>\n      <td>1</td>\n      <td>1, 3</td>\n    </tr>\n    <tr>\n      <td>Vibration</td>\n      <td>8.1</td>\n      <td>40</td>\n      <td>40, 90</td>\n      <td>2</td>\n      <td>2, 3</td>\n    </tr>\n    <tr>\n      <td>Blowing</td>\n      <td>6.6</td>\n      <td>60</td>\n      <td>30, 80</td>\n      <td>1</td>\n      <td>1, 2</td>\n    </tr>\n    <tr>\n      <td>Forward Movement</td>\n      <td>5.8</td>\n      <td>70</td>\n      <td>40, 80</td>\n      <td>1</td>\n      <td>1, 4</td>\n    </tr>\n    <tr>\n      <td>Pinch</td>\n      <td>5.5</td>\n      <td>40</td>\n      <td>40, 90</td>\n      <td>3</td>\n      <td>3, 6</td>\n    </tr>\n    <tr>\n      <td>Press</td>\n      <td>5.0</td>\n      <td>40</td>\n      <td>40, 70</td>\n      <td>7</td>\n      <td>4, 7</td>\n    </tr>\n    <tr>\n      <td>Upward Movement</td>\n      <td>3.9</td>\n      <td>70</td>\n      <td>70, 85</td>\n      <td>1</td>\n      <td>1.25, 4</td>\n    </tr>\n    <tr>\n      <td>Goosebumps</td>\n      <td>3.1</td>\n      <td>100</td>\n      <td>60, 90</td>\n      <td>5</td>\n      <td>2, 5</td>\n    </tr>\n  </tbody>\n</table>\n\nWe found that 18 electrodes had cutaneous-only responses across all tested current amplitudes, while six electrodes had proprioceptive-only responses; the rest of the electrodes (22/46) had mixed responses, where the perceived modality (cutaneous or proprioceptive) varied as stimulus parameters changed. Of these mixed-response electrodes, 45% evoked mostly cutaneous sensations, 32% evoked mostly proprioceptive sensations, and 23% had an equal number of cutaneous and proprioceptive sensations (Figure 2B). This pattern of cutaneous and proprioceptive evoked sensations complements recent reports of multimodal (i.e. cutaneous and proprioceptive) neurons throughout S1 (Yau et al., 2016; Kim et al., 2015b). While prior single-unit experiments have defined maps from single neurons to specific unimodal receptive fields (Kaas et al., 1979; Kaas, 1983; Friedman et al., 2004; Romo et al., 2000), the above results suggest that more than one variable may be represented when mapping with ICMS. This finding may be the product of different mechanisms by which receptive fields are observed through recording versus stimulation, and could be an important topic for future work. We found a significant difference between the amplitudes that elicited cutaneous or proprioceptive responses, with the distribution of proprioceptive responses skewed towards higher amplitudes (Figure 3A), when pooling across all electrodes and amplitudes that produced a sensation (p=0.039, Kruskal-Wallis nonparametric ANOVA, \u03c72(1,378)=4.41, proprioceptive responses N\u00a0=\u00a079, cutaneous responses N\u00a0=\u00a0302). To assess consistent current delivery across all electrodes, we measured electrode impedance at the beginning of every session and found no significant difference when comparing proprioceptive or cutaneous responses (p=0.237, \u03c72(1,378)=1.39) and, furthermore, we found no significant difference between the impedance of proprioceptive- and cutaneous-only (p=0.922, \u03c72(1,155)=0.01) or mixed-response electrodes (p=0.372, \u03c72(1,221)=0.8). To account for potential bias from an uneven distribution of responses across amplitudes, we compared the proportion of proprioceptive and cutaneous responses in a bootstrapped resampling (N\u00a0=\u00a010000), in which each repetition drew 15 responses at each amplitude from all data pooled across days (Figure 3B). We observed a clear relationship between the number of proprioceptive and cutaneous responses and stimulation amplitudes, measured through overall positive slopes in the 1st-order polynomial fit at each iteration for proprioceptive responses, and negative slopes for cutaneous responses (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32904/elife-32904-fig3-v1.jpg)\n\n**Figure 3.:** (A) Kernel density estimate and box plot showing the difference in the distribution of amplitudes associated with each report of proprioceptive (blue) or cutaneous (red) responses. (B) The median percentage of responses in the bootstrapped sample (solid line) for proprioceptive and cutaneous responses at each amplitude tested. Dashed line shows 1st-order polynomial fit. (C) Kernel density estimates of the distribution of slopes from 1st-order polynomial fits in each bootstrap iteration. (D) Pie charts show the percentage of total stimulations of responses for the subset of electrodes tested over a range of both current amplitudes and pulse frequencies. The left panel shows an individual example electrode (six trials per combination of amplitude and frequency) and the right panel shows data pooled over all five electrodes (30 total stimulations per combination). The percentage of no response (white), proprioceptive (blue) or cutaneous (red) are shown. (E) A normalized histogram of proprioceptive (blue) and cutaneous (red) responses at each of the amplitudes tested in experiment 2.\n\nExperiment 2 tested a subset of 5 electrodes with robust responses across all tested amplitudes in Experiment 1 (Figure 2B, Figure 3D). In a pseudorandomly-interleaved fashion, we stimulated each electrode with five amplitudes (range 20 to 100 \u03bcA) at six different frequencies (range 50 to 300 Hz) over the course of three consecutive days (see Materials and methods). We reproduced the effect of amplitude on sensation modality, either proprioceptive or cutaneous, when pooling across all responses (p=2\u00d710\u22125, \u03c72(1323)= 18.17, Figure 3E). Similar to the main mapping task, we did not find any significant effect on modality due to electrode impedance (p=0.305, \u03c72(1323)=0.8). Furthermore, there was no significance when testing the effect of frequency in eliciting proprioceptive or cutaneous responses (p=0.22, \u03c72(1323)= 1.48).\n\nThis amplitude-specific effect on sensation modality is perhaps surprising given the more commonly observed effect of frequency and pulse-width modulation on sensation in the periphery (Graczyk et al., 2016). Although there is evidence of tactile and proprioceptive inputs co-modulating S1 firing activity (Kim et al., 2015b), we are unaware of any reported effect of amplitude or frequency thresholding for different sensory modalities in the CNS. Proprioceptive sensations are commonly thought to derive from activity in areas 2 or 3a, while cutaneous sensations more likely correspond to activity in areas 3b and 1. From topographical features, we estimate our implants lie in area 1; however, with evidence of interindividual variability in the microstructural organization within S1 (Geyer et al., 1999), and the potential for functional reorganization after injury (Kaas et al., 1983; Florence et al., 1998), it is possible that higher current amplitudes could increase the effective range of stimulation to include sensory areas 3a or 2. Moreover, given the receptive fields activated during stimulation, the two implants are well within the arm and forearm regions of S1, which might receive a larger ratio of proprioceptive-to-cutaneous signals than hand regions (McKenna et al., 1982), making it more likely to activate these different modalities with ICMS.\n\nFG also provided subjective measures of sensation intensity and duration. Sensation intensity was ranked from 1 to 10 (weakest to strongest). In Experiment 1, we found a strong positive correlation between intensity and amplitude (r\u00a0=\u00a00.2, p=2.1\u00d710\u22125, Pearson linear correlation coefficient), with an intensity of 2.4\u00a0\u00b1\u00a01.9 a.u. (mean\u00a0\u00b1s.d.) for 20 \u03bcA and 4.0\u00a0\u00b1\u00a02.1 a.u. for 100 \u03bcA, with a slope of 0.02 (1st-order polynomial, least squares fitting). As subjective measures of intensity are most likely sensitive to day-to-day variability, in post-hoc analysis we also normalized intensity values within each session (see Materials and methods). We measured a negative correlation between the current amplitude and the standard deviation of the intensity (r\u00a0=\u00a0\u22120.6, p=0.12). Duration of the percept was recorded for each response as either short (sensation lasts only briefly at the onset of stimulation), medium (sensation persists throughout the stimulation but not for the full length of the stimulation) or long (sensation lasts the full duration of the stimulation). The majority of responses were short (N\u00a0=\u00a0225), followed by medium (N\u00a0=\u00a0122) with very few long responses (N\u00a0=\u00a012). Stimulus duration was not recorded for 22 responses of the 381 responses. For Experiment 2 this trend was replicated (N\u00a0=\u00a0268, 55 and 1. Short, medium and long, respectively). There was no relationship between duration of the sensation and either amplitude of stimulation (p=0.1, \u03c72(1323)=4.53) or frequency of stimulation (p=0.2, \u03c72(1323)=2.83).\n\nTo our knowledge, this is the first report in human of replicable, purely naturalistic proprioceptive and cutaneous sensations induced through ICMS. Stimulation over a wide range of amplitudes and frequencies generated qualitatively diverse sensations, although percept modality was strongly linked to variations in amplitude. Pairing these natural sensations with BMIs create a unique opportunity to explore how effectively they can be incorporated in a closed-loop BMI system. For example, the ability to evoke proprioceptive sensations could allow the subject to interpret position- or movement-related information, as previously reported in primate studies (Tomlinson and Miller, 2016; Dadarlat et al., 2015), while eliciting cutaneous sensations could improve our ability to deliver richer somatosensory feedback for object manipulation. Together these somatosensory signals have the potential to improve performance and embodiment when using a BMI-controlled external device.\n\n## Materials and methods\n\n### Subject\n\nWe recruited and consented a 32-year-old male participant (FG) with C5-level complete spinal cord injury, 1.5 years post-injury, to participate in a clinical trial of a BMI system with intracortical recording and stimulation. The subject has residual sensation in the anterior-radial section of his upper arm, and some residual sensation in the posterior-radial section of his upper arm and forearm, which present as paresthesias. All procedures were approved by the Institutional Review Boards (IRB) of the University of Southern California (USC) and Rancho Los Amigos National Rehabilitation Hospital (RLA). The implant procedure occurred at Keck Hospital of USC, and study sessions took place at RLA.\n\n### Surgical planning and implantation\n\nSurgical planning followed the protocols described in (Aflalo et al., 2015), with an additional task for identifying an implant location within somatosensory cortex. In this task, a visual cue prompted the experimenter, who was standing next to the MRI, to reach into the MRI machine with a wooden pole and repeatedly press at one of three points on the subjects right upper limb where he previously reported residual paresthetic sensation; biceps, forearm and thenar eminence. The subject was instructed to attend to any residual sensation he felt at each location and report the number of times the experimenter touched him on the cued location (Kastner et al., 1998; Staines et al., 2002). After functional imaging, three target locations for electrode placement were identified; supramarginal gyrus (SMG), ventral premotor cortex (PMv) and primary somatosensory cortex (S1). One 96-channel, platinum-tipped Neuroport microelectrode recording array (Blackrock Microsystems, Salt Lake City, UT) was implanted in each of SMG and PMv. Two 7 \u00d7 7 SIROF (sputtered iridium oxide film)-tipped microelectrode arrays (with 48 physically-connected channels each) were implanted in S1. The SIROF-tipped electrodes have lower impedance than the platinum-tipped electrodes, and thus are better suited to stimulation.\n\n### Stimulation and recording parameters\n\nAll stimuli consisted of biphasic, charge-balanced, cathodic-leading pulses, with 200 \u00b5s width per phase, 53 \u00b5s interphase interval, and one-second stimulus duration delivered to a single electrode on the S1 array only. The maximum charge delivered per phase was 20 nC. We selected these parameters, and set electric charge limits according to safe ranges shown in ICMS studies with NHPs (Kim et al., 2015a). Stimulation was delivered with a Blackrock CereStim device, and stimulation parameters were set and delivered using the CereStim API through MATLAB (The Mathworks Inc, Natick, MA) software (MATLAB code in Source code file 1).\n\n### Task\n\nExperiment 1: After initial assessment of implant viability, we evaluated the effects of stimulation parameters through a percept-detection task. For this primary mapping task, each of the 96 stimulation electrodes were evaluated at eight amplitudes: 20, 30, 40, 60, 70, 80, 90, and 100 \u03bcA, at 150 Hz. The subject was seated in a wheelchair approximately 1.5 meters from a TV screen. The subject was instructed to look at a fixation point in the middle of the screen throughout the experiment. In each trial, after a three-second inter-trial interval, the subject was presented with a large purple circle on the screen indicating that an electric stimulus was being delivered. Then, after a one-second delay, an auditory cue signaled the subject to report whether he felt any sensation. When a sensation was perceived, the subject reported its location on a body and hand map, with anterior and posterior views, by referencing a fine overlaying grid (Figure 1). The subject also reported qualitative characteristics including the perceived stimulus intensity, the perceived duration of stimulation, and a description of the sensation (Table 1). Sensations closer in nature to tactile stimuli were classified as cutaneous, and those triggering a feeling of movement or change in position were classified as proprioceptive. To complete the mapping of amplitude, we ran trial blocks where we randomly selected a subset of electrodes. Each block contained three replicates of stimulation per parameter, per electrode. An additional set of trials, numbering 10% of the total trials in a block, were added as \u2018catch\u2019 trials, where the visual stimuli on the screen and auditory response cue remained identical but the stimulation did not occur. Catch trials were randomly interleaved among the normal trials. In each block, trials were ordered such that stimulation did not occur to the same or adjacent electrodes concurrently.\n\nExperiment 2: For the second mapping task, five electrodes were selected for further evaluation at different amplitudes and frequencies. All the phases of the task and other stimulation parameters were the same as in the previous mapping task. The subset of electrodes selected for this task were those that exhibited the most reliable responses in the first mapping task. We varied the current amplitude (20, 40, 60, 80, 100 \u03bcA) and pulse frequency (50, 100, 150, 200, 250, 300 Hz), and tested each amplitude-frequency combination six times per electrode. The full dataset was obtained over three consecutive days. In each day, each of the five electrodes received two replicates of all possible amplitude and frequency combinations. The order of electrode stimulation was determined pseudorandomly.\n\n### Statistics and analysis methods\n\nThroughout the analysis we used the Kruskal-Wallis nonparametric ANOVA statistical test. We calculated correlations between responses using the Pearson linear correlation coefficient.\n\nTo examine\u00a0whether response history had a significant effect on the proportion of reported sensations (de Lafuente and Romo, 2005), we looked at differences between the distribution of reported sensations during stimulation for three conditions: all trials, trials after a reported sensation (hit) and trials after no reported sensation (miss). We estimated these distributions for each amplitude in a given experimental session across all tested electrodes, and used Kruskal-Wallis nonparametric ANOVA with Dunn-Sidak multiple comparisons correction to test for significance at each amplitude. Furthermore, we generated a shuffle distribution of probabilities with N\u00a0=\u00a010,000 permutations for hits following a hit or a miss for each amplitude. We found no significant difference between the shuffle distributions and the empirical data, with the actual proportion being within the 5th-95th percentile range of the shuffle distribution. For the bootstrapped resampling of proprioceptive and cutaneous responses in Experiment 1, we drew 15 samples at each iteration from the total responses at each amplitude (range 21\u201393 responses across all amplitudes). Where normalized intensity data are reported, we rescaled the raw intensity (range 1\u201310) to a normalized scale (range 0\u20131) for each day by subtracting the minimum and then dividing by the maximum.\n\nRaw data for all analysis presented in this manuscript can be found as downloadable source data \u2018Responses to single-electrode stimulation\u2019. Specific details can also be found in the first sheet of the raw data file.\n",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "869c71fd-827f-4e87-98ce-5845daa63079",
+      "submission_id": "582ba969-b8ac-4b9a-bcea-4cd83ef6dd9d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ranulfo Romo, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32904.010](https://doi.org/10.7554/eLife.32904.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Proprioceptive and Cutaneous Sensations in Humans Elicited by Intracortical Microstimulation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Ranulfo Romo is a member of our Board of Reviewing Editors and the evaluation has been overseen by Richard Ivry as Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Victor de Lafuente (Reviewer #2); Apostolos P Georgopoulos (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and we have worked together to draft this decision letter to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers found your paper contains important results for understanding the role of human somatosensory cortex and brain-machine interface. The reviewers have a number of recommendations for revision, summarized below in terms of major and minor issues.\n\n1) It would be helpful for the authors to explore the effects of trial history on the subject's reports. Similar to de Lafuente and Romo, 2005 (Figure 3F; although we recognize that are no trials equivalent to \"false alarms\"), certain trial outcomes might skew the outcome probabilities in the following trial. For example, it could be the case that successful stimulation (which leads to percept formation) increases the chances of future positive reports. An analysis of this kind will help make an even more complete presentation of the results, and its absence would be noted by future readers.\n\n2) You do not explain the results obtained by microstimulating the PMv and the SMG arrays. Did stimulation with these arrays fail to elicit any sensation? Why would that be case? Please provide a discussion on this issue.\n\n3) Were recordings made from the implanted electrodes (we assume so)? Assuming so, we expect there would be useful information in these data, such as the number of recorded neurons, their basal activity, and how activity changed across the four weeks of the stimulation protocol. This information would be useful in future studies that extend your work.\n\n4) The authors mention that previous ICMS protocols have elicited tingling and buzzing sensations in the patients (Introduction). What was different about the current protocol that led to the reports of more natural sensations?\n",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c02d265-0f07-4db5-8939-53b7f16d9f81",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C1",
+      "claim": "Intracortical microstimulation (ICMS) in primary somatosensory cortex (S1) has been established as a method of inducing discriminable artificial sensation in nonhuman primates and recent human studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering work with nonhuman primates and recent human studies established intracortical microstimulation (ICMS) in primary somatosensory cortex (S1) as a method of inducing discriminable artificial sensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references prior work with nonhuman primates and recent human studies, indicating support from existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f5d73e78-5629-4158-b3cf-7b35beaa870a",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C2",
+      "claim": "Artificial sensations from ICMS do not yet provide the breadth of cutaneous and proprioceptive percepts available through natural stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these artificial sensations do not yet provide the breadth of cutaneous and proprioceptive percepts available through natural stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current limitations of ICMS technology based on the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "af0c245f-2cab-41b8-89cc-e70bc29460a6",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C3",
+      "claim": "Replicable sensations in both cutaneous and proprioceptive modalities localized to the contralateral arm were elicited in a tetraplegic human with two microelectrode arrays implanted in S1.",
+      "claim_type": "EXPLICIT",
+      "source": "In a tetraplegic human with two microelectrode arrays implanted in S1, we report replicable elicitations of sensations in both the cutaneous and proprioceptive modalities localized to the contralateral arm, dependent on both amplitude and frequency of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported from the study's experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "a911ee8b-f45e-4d7f-9c23-5268a40b5d39",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C4",
+      "claim": "The elicited sensations were dependent on both amplitude and frequency of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a tetraplegic human with two microelectrode arrays implanted in S1, we report replicable elicitations of sensations in both the cutaneous and proprioceptive modalities localized to the contralateral arm, dependent on both amplitude and frequency of stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data showing parameter dependence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "d662c9d7-7463-436b-8b22-ceead3eb2764",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C5",
+      "claim": "A subset of electrodes exhibited multimodal properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found a subset of electrodes that exhibited multimodal properties, and that proprioceptive percepts on these electrodes were associated with higher amplitudes, irrespective of the frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "10fa1840-096e-488a-9449-4304b9008e9d",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C6",
+      "claim": "Proprioceptive percepts on multimodal electrodes were associated with higher amplitudes, irrespective of the frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found a subset of electrodes that exhibited multimodal properties, and that proprioceptive percepts on these electrodes were associated with higher amplitudes, irrespective of the frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "e27eb7ef-15dd-4c1b-8559-d4bcb289e248",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C7",
+      "claim": "The results demonstrate the ability to provide naturalistic percepts through ICMS that can more closely mimic the body's natural physiological capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "These novel results demonstrate the ability to provide naturalistic percepts through ICMS that can more closely mimic the body's natural physiological capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "508f3a2c-a35b-4c53-80e3-b6f44915388a",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C8",
+      "claim": "Delivering both cutaneous and proprioceptive sensations through artificial somatosensory feedback could improve performance and embodiment in brain-machine interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, delivering both cutaneous and proprioceptive sensations through artificial somatosensory feedback could improve performance and embodiment in brain-machine interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "7fb86a9f-6d16-4191-a208-d6760c37e8a9",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C9",
+      "claim": "The absence of somatosensation profoundly diminishes a person's ability to move and interact within their environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of somatosensation profoundly diminishes a person's ability to move and interact within their environment (Cole and Cole, 1995; Sainburg et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "70f4e944-ab35-485f-b1eb-efae7087b632",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C10",
+      "claim": "Basic behaviors such as walking or reach-and-grasp require substantially greater cognitive load without somatosensory feedback, even with intact vision and hearing.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with intact vision and hearing, which can provide sensory information about body position, movement, and interaction, basic behaviors such as walking or reach-and-grasp require substantially greater cognitive load without somatosensory feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about sensory integration.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "d3d29a5d-1157-4907-b82a-06393636f67f",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C11",
+      "claim": "Providing closed-loop motor-sensory control and feedback pathways could lead to vital increases in performance in brain-machine interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in brain-machine interface (BMI) technology have led to renewed efforts in this area, under the hypothesis that providing closed-loop motor-sensory control and feedback pathways could lead to vital increases in performance (Bensmaia and Miller, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "7646e4b7-9113-466c-852f-7cf986afeae3",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C12",
+      "claim": "Non-human primates successfully incorporated ICMS information to perform discrimination and detection tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-human primates (NHPs) successfully incorporated ICMS information to perform discrimination, detection tasks (Romo et al., 1998; Romo et al., 2000; Tabot et al., 2013; Dadarlat et al., 2015) and as sensory feedback for brain control in BMI tasks (O'Doherty et al., 2011; Klaes et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior NHP studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "4b4af5dd-f3e4-4e73-b8d4-ea1ec687e95e",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C13",
+      "claim": "Non-human primates successfully used ICMS as sensory feedback for brain control in BMI tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-human primates (NHPs) successfully incorporated ICMS information to perform discrimination, detection tasks (Romo et al., 1998; Romo et al., 2000; Tabot et al., 2013; Dadarlat et al., 2015) and as sensory feedback for brain control in BMI tasks (O'Doherty et al., 2011; Klaes et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior NHP BMI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f28013ce-ed80-4c6a-a151-29f164230ac7",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C14",
+      "claim": "Recent human studies have provided insight into the feeling and perception of the sensations produced through ICMS.",
+      "claim_type": "EXPLICIT",
+      "source": "recent human studies have provided insight into the feeling and perception of the sensations produced through ICMS (Flesher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent human study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "a89b8dfd-9e37-4382-bda1-988af77a6723",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C15",
+      "claim": "Qualities ascribed by human subjects to ICMS sensations (e.g., 'tingling' or 'buzzing') have been mostly artificial in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, qualities ascribed by human subjects to these sensations (e.g., 'tingling' or 'buzzing') have been mostly artificial in nature (Johnson et al., 2013; Flesher et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior human studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "5d6244a3-1dc1-4db7-8147-6f33fa7728d8",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C16",
+      "claim": "It is unclear what range of sensations could be elicited through ICMS.",
+      "claim_type": "EXPLICIT",
+      "source": "it is as yet unclear what range of sensations could be elicited through ICMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "1b768398-c9d1-4d8a-9e53-56785d2be9a4",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C17",
+      "claim": "Participant FG has a C5-level spinal cord injury.",
+      "claim_type": "EXPLICIT",
+      "source": "obtained from stimulation in S1 of a single human subject (participant FG, Figure 1; see Materials and methods) with a C5-level spinal cord injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the study participant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f5dfb779-482d-45dc-a7bf-cc18999f3af0",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C18",
+      "claim": "Current amplitude, not frequency, of the electrical stimulus differentiates the modality (cutaneous or proprioceptive) of the elicited percept at some stimulation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that current amplitude, not frequency, of the electrical stimulus differentiates the modality (i.e., cutaneous or proprioceptive) of the elicited percept at some stimulation sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "59935663-2ddc-4115-891c-a65b02c9e70c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C19",
+      "claim": "96-channel microelectrode arrays were implanted into ventral premotor cortex (PMv) and supramarginal gyrus (SMG).",
+      "claim_type": "EXPLICIT",
+      "source": "96-channel microelectrode arrays were implanted into ventral premotor cortex (PMv) and supramarginal gyrus (SMG), and two 48-channel stimulating arrays were implanted into primary somatosensory cortex (S1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the surgical procedure and is shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "1382c623-5249-4309-a1aa-aede1c13014e",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C20",
+      "claim": "Two 48-channel stimulating arrays were implanted into primary somatosensory cortex (S1).",
+      "claim_type": "EXPLICIT",
+      "source": "96-channel microelectrode arrays were implanted into ventral premotor cortex (PMv) and supramarginal gyrus (SMG), and two 48-channel stimulating arrays were implanted into primary somatosensory cortex (S1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the surgical procedure and is shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "dd0ee7ed-92e8-4e15-a96f-883949467509",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C21",
+      "claim": "In Experiment 1, electrical stimuli were tested across a range of current amplitudes between 20\u2013100 \u00b5A with pulse frequency held constant at 150 Hz over an eight-week period.",
+      "claim_type": "EXPLICIT",
+      "source": "In Experiment 1, over an eight-week period, electrical stimuli were tested across a range of current amplitudes between 20\u2013100 \u00b5A, with pulse frequency held constant at 150 Hz (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "3c0fa92b-8dd1-410a-b75a-546578a0deac",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C22",
+      "claim": "Stimulation through 46/96 electrodes (48%) prompted at least one response.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation through 46/96 electrodes (48%) prompted at least one response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "52ee8534-2771-44f9-a0f2-12341477fcd1",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C23",
+      "claim": "There were 381 reported sensations out of 1229 non-catch trials.",
+      "claim_type": "EXPLICIT",
+      "source": "there were in total 381 reported sensations out of 1229 non-catch trials (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "dec0f529-b3b5-4bcc-a536-79f52a4f726c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C24",
+      "claim": "There was weak correlation between the number of electrodes that elicited a sensation and the current amplitude (r = 0.34, p=0.42).",
+      "claim_type": "EXPLICIT",
+      "source": "There was weak correlation between the number of electrodes that elicited a sensation and the current amplitude (r = 0.34, p=0.42, Pearson linear correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "c6b64698-c549-45a0-9efb-24c7fbe561c5",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C25",
+      "claim": "There was no correlation between electrode impedance and the likelihood of elicited percepts (p=0.80).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found no correlation between electrode impedance and the likelihood of elicited percepts (p=0.80, Pearson linear correlation coefficient), pooling all electrode responses over all days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "293f0620-e20a-436d-bc56-5cfd51e1735d",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C26",
+      "claim": "There was no significant difference in the aggregate impedances of electrodes that produced or did not produce percepts (p=0.707).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there was no significant difference in the aggregate impedances of either electrodes that produced or did not produce percepts (p=0.707, Kolmogorov-Smirnov two-sample test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "d99a3754-4784-4571-91ba-ff87cdc66dc2",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C27",
+      "claim": "No false positives were reported in any catch trials.",
+      "claim_type": "EXPLICIT",
+      "source": "No false positives were reported in any catch trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the experimental data showing subject reliability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "b441b39e-c6e5-42e8-9e98-a463a72b4e91",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C28",
+      "claim": "There was no effect of trial history in the proportion of reported sensations during stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "we found no effect of trial history in the proportion of reported sensations during stimulation (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "57c2cefb-914f-4e8a-b467-00e78f8eb308",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C29",
+      "claim": "The stimulation did not trigger any painful sensations.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation did not trigger any painful sensations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "0e7eb5f6-8935-4102-9a66-f67d18937255",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C30",
+      "claim": "No adverse events occurred during any of the sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "no adverse events occurred during any of the sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a safety observation from the experimental sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "8120a1ae-d00a-4db3-aa31-888df1a9360f",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C31",
+      "claim": "Receptive fields along the upper arm, forearm and hand corresponded to coarse somatotopical organization in the corresponding stimulation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptive fields along the upper arm, forearm and hand corresponded to coarse somatotopical organization in the corresponding stimulation sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the spatial distribution of responses shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "df3d0fac-953b-431f-9363-3048ad7935cf",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C32",
+      "claim": "Of the 46 electrodes with responses, 32 evoked percepts in the upper arm, 18 in the forearm, and two in the hand.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 46 electrodes with responses, 32 evoked percepts in the upper arm, 18 in the forearm, and two in the hand (palmar surface of digits and a finger pad).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "a6c1abfb-9d7f-4d40-aa69-8a955bd69297",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C33",
+      "claim": "Stimulation could produce percepts with variably-sized receptive fields in different electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports, stimulation could produce percepts with variably-sized receptive fields in different electrodes (Flesher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is consistent with prior cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f19c0dc6-b093-4eda-a99b-4d76001ca9df",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C34",
+      "claim": "For the majority of electrodes (24/46), receptive fields were reported in the same body region or in the same plane across all tested amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the majority of electrodes (24/46), receptive fields were reported in the same body region (i.e. upper arm or forearm) or in the same plane (i.e. anterior or posterior) across all tested amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "35d6d598-047a-4065-b66e-29affec4e522",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C35",
+      "claim": "Coarse somatotopy was present between the medial and lateral arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Coarse somatotopy was present between the medial and lateral arrays (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the spatial distribution of responses shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "433b32ff-63d9-434d-a1cb-7c0ca2bbc8fa",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C36",
+      "claim": "The medial array was more likely to have reliable receptive fields in the anterior upper arm (46% of medial-array receptive fields).",
+      "claim_type": "EXPLICIT",
+      "source": "the medial array was more likely to have reliable receptive fields in the anterior upper arm (46% of medial-array receptive fields)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "654c5405-b519-4c9c-8708-1b8d203cfabf",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C37",
+      "claim": "Stimulation on the lateral array induced sensation more frequently on the posterior forearm (51% of lateral-array receptive fields).",
+      "claim_type": "EXPLICIT",
+      "source": "while stimulation on the lateral array induced sensation more frequently on the posterior forearm (51% of lateral-array receptive fields).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "b6a495f2-fde4-4e2f-9db0-c9048d80e368",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C38",
+      "claim": "There was no clear somatotopical organization within each array.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no clear somatotopical organization within each array as previously reported (Kim et al., 2015a; Kaas, 1983; Flesher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data that contrasts with prior cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f4f0ce99-8887-459e-a83e-4ac9616efc51",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C39",
+      "claim": "The coarse somatotopy found across arrays but not within arrays could be due to the small area of cortex sampled by the implants.",
+      "claim_type": "EXPLICIT",
+      "source": "The coarse somatotopy found across arrays but not within arrays, could be due to the small area of cortex sampled by the implants, and the fact that the implants predominantly covered upper arm and forearm, areas with a less established somatotopic map (Kaas et al., 1979; Kaas, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "acbddb55-b5e3-4e73-a7b7-e15d9069c868",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C40",
+      "claim": "The topography in somatosensory cortex may have been remapped after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Another plausible explanation is that the topography in somatosensory cortex has been remapped after injury (Kaas et al., 1983; Florence et al., 1998; Moore et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations to prior work on cortical remapping.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "4e5734eb-980e-45dc-a6b8-14b352732625",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C41",
+      "claim": "FG reported a wealth of qualitative sensations induced by ICMS that were broadly characterized as cutaneous or proprioceptive.",
+      "claim_type": "EXPLICIT",
+      "source": "FG has reported a wealth of qualitative sensations induced by ICMS (Table 1). Unlike paresthetic sensations experienced post-injury, these naturalistic responses were broadly characterized as cutaneous (e.g. squeeze) or proprioceptive (e.g. rightward movement), and as being subjectively similar to sensations experienced prior to injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a qualitative result from the experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "4a6dd972-cf2e-46a0-8893-7cbb8553b89f",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C42",
+      "claim": "The naturalistic responses were subjectively similar to sensations experienced prior to injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike paresthetic sensations experienced post-injury, these naturalistic responses were broadly characterized as cutaneous (e.g. squeeze) or proprioceptive (e.g. rightward movement), and as being subjectively similar to sensations experienced prior to injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a qualitative report from the participant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "03f83997-e59e-4e6f-b60d-4d90fb6f87db",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C43",
+      "claim": "18 electrodes had cutaneous-only responses across all tested current amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 18 electrodes had cutaneous-only responses across all tested current amplitudes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "69612051-69f5-4ff4-bc88-af03c5ddb2fc",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C44",
+      "claim": "Six electrodes had proprioceptive-only responses across all tested current amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "while six electrodes had proprioceptive-only responses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "b279e810-b5dd-4a05-87ac-524b01d82755",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C45",
+      "claim": "22 out of 46 electrodes had mixed responses, where the perceived modality varied as stimulus parameters changed.",
+      "claim_type": "EXPLICIT",
+      "source": "the rest of the electrodes (22/46) had mixed responses, where the perceived modality (cutaneous or proprioceptive) varied as stimulus parameters changed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "0ffa0fdf-57f1-41c8-92e3-4e2dec3f2716",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C46",
+      "claim": "Of the mixed-response electrodes, 45% evoked mostly cutaneous sensations, 32% evoked mostly proprioceptive sensations, and 23% had an equal number of cutaneous and proprioceptive sensations.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these mixed-response electrodes, 45% evoked mostly cutaneous sensations, 32% evoked mostly proprioceptive sensations, and 23% had an equal number of cutaneous and proprioceptive sensations (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f667f0e7-04cf-41da-9dee-804ad74476d9",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C47",
+      "claim": "The pattern of cutaneous and proprioceptive evoked sensations complements recent reports of multimodal neurons throughout S1.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of cutaneous and proprioceptive evoked sensations complements recent reports of multimodal (i.e. cutaneous and proprioceptive) neurons throughout S1 (Yau et al., 2016; Kim et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the findings to prior cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "bbde2c71-46db-4922-aa6b-c6a110ec4d67",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C48",
+      "claim": "There was a significant difference between the amplitudes that elicited cutaneous or proprioceptive responses, with proprioceptive responses skewed towards higher amplitudes (p=0.039).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant difference between the amplitudes that elicited cutaneous or proprioceptive responses, with the distribution of proprioceptive responses skewed towards higher amplitudes (Figure 3A), when pooling across all electrodes and amplitudes that produced a sensation (p=0.039, Kruskal-Wallis nonparametric ANOVA, \u03c72(1,378)=4.41, proprioceptive responses N = 79, cutaneous responses N = 302).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the experimental data analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "e16bd9ee-6b3c-42b9-b162-aa6f7e0e19ee",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C49",
+      "claim": "There was no significant difference in electrode impedance when comparing proprioceptive or cutaneous responses (p=0.237).",
+      "claim_type": "EXPLICIT",
+      "source": "To assess consistent current delivery across all electrodes, we measured electrode impedance at the beginning of every session and found no significant difference when comparing proprioceptive or cutaneous responses (p=0.237, \u03c72(1,378)=1.39)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "152fdfae-ad94-46d9-95a9-c12ee4278d0c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C50",
+      "claim": "There was no significant difference between the impedance of proprioceptive- and cutaneous-only electrodes (p=0.922).",
+      "claim_type": "EXPLICIT",
+      "source": "furthermore, we found no significant difference between the impedance of proprioceptive- and cutaneous-only (p=0.922, \u03c72(1,155)=0.01) or mixed-response electrodes (p=0.372, \u03c72(1,221)=0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "aacc4775-1c2c-4486-813b-2781e048b6f9",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C51",
+      "claim": "There was no significant difference between the impedance of proprioceptive-only and mixed-response electrodes (p=0.372).",
+      "claim_type": "EXPLICIT",
+      "source": "furthermore, we found no significant difference between the impedance of proprioceptive- and cutaneous-only (p=0.922, \u03c72(1,155)=0.01) or mixed-response electrodes (p=0.372, \u03c72(1,221)=0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "4f66e2ce-a849-401b-8757-7edf820b106d",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C52",
+      "claim": "A clear relationship exists between the number of proprioceptive and cutaneous responses and stimulation amplitudes, measured through overall positive slopes for proprioceptive responses and negative slopes for cutaneous responses in bootstrapped resampling.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a clear relationship between the number of proprioceptive and cutaneous responses and stimulation amplitudes, measured through overall positive slopes in the 1st-order polynomial fit at each iteration for proprioceptive responses, and negative slopes for cutaneous responses (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from bootstrapped analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "9d2b2d61-0b3d-47ca-b353-fb9114d702e3",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C53",
+      "claim": "Experiment 2 tested a subset of 5 electrodes with robust responses across all tested amplitudes in Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiment 2 tested a subset of 5 electrodes with robust responses across all tested amplitudes in Experiment 1 (Figure 2B, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design for Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "e60837ed-e5ae-40ef-8273-a5402e4f7454",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C54",
+      "claim": "In Experiment 2, each electrode was stimulated with five amplitudes (range 20 to 100 \u03bcA) at six different frequencies (range 50 to 300 Hz) in a pseudorandomly-interleaved fashion over three consecutive days.",
+      "claim_type": "EXPLICIT",
+      "source": "In a pseudorandomly-interleaved fashion, we stimulated each electrode with five amplitudes (range 20 to 100 \u03bcA) at six different frequencies (range 50 to 300 Hz) over the course of three consecutive days (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "a9d70680-4a8b-4e17-b616-b449aa740c46",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C55",
+      "claim": "The effect of amplitude on sensation modality was reproduced in Experiment 2 when pooling across all responses (p=2\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "We reproduced the effect of amplitude on sensation modality, either proprioceptive or cutaneous, when pooling across all responses (p=2\u00d710\u22125, \u03c72(1323)= 18.17, Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from Experiment 2 data analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "de14bd84-a5a2-4e87-bca1-ea794b6e7802",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C56",
+      "claim": "In Experiment 2, there was no significant effect on modality due to electrode impedance (p=0.305).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the main mapping task, we did not find any significant effect on modality due to electrode impedance (p=0.305, \u03c72(1323)=0.8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from Experiment 2 data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "44c4bd4e-edbf-4a87-be15-5c3b4b0c90d2",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C57",
+      "claim": "In Experiment 2, there was no significance when testing the effect of frequency in eliciting proprioceptive or cutaneous responses (p=0.22).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there was no significance when testing the effect of frequency in eliciting proprioceptive or cutaneous responses (p=0.22, \u03c72(1323)= 1.48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from Experiment 2 data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "1613fe85-9c93-4576-bdbe-4c267a67fb02",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C58",
+      "claim": "The amplitude-specific effect on sensation modality is surprising given the more commonly observed effect of frequency and pulse-width modulation on sensation in the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "This amplitude-specific effect on sensation modality is perhaps surprising given the more commonly observed effect of frequency and pulse-width modulation on sensation in the periphery (Graczyk et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation comparing the findings to prior cited work on peripheral stimulation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "9f0d3381-6266-47c0-a950-1a1901d6a321",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C59",
+      "claim": "There is evidence of tactile and proprioceptive inputs co-modulating S1 firing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is evidence of tactile and proprioceptive inputs co-modulating S1 firing activity (Kim et al., 2015b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "e7195bdf-010a-450f-89d6-e6273d83558a",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C60",
+      "claim": "The authors are unaware of any reported effect of amplitude or frequency thresholding for different sensory modalities in the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "we are unaware of any reported effect of amplitude or frequency thresholding for different sensory modalities in the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "a416dbe1-e037-40e0-ae3a-543a36160daf",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C61",
+      "claim": "Proprioceptive sensations are commonly thought to derive from activity in areas 2 or 3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Proprioceptive sensations are commonly thought to derive from activity in areas 2 or 3a",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about somatosensory cortex organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "6c281769-945c-49b9-9b69-d6710f2e7816",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C62",
+      "claim": "Cutaneous sensations more likely correspond to activity in areas 3b and 1.",
+      "claim_type": "EXPLICIT",
+      "source": "while cutaneous sensations more likely correspond to activity in areas 3b and 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about somatosensory cortex organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "26a75870-f351-4c9b-bdbc-235d9f1976db",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C63",
+      "claim": "From topographical features, the implants are estimated to lie in area 1.",
+      "claim_type": "EXPLICIT",
+      "source": "From topographical features, we estimate our implants lie in area 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on anatomical observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "262163c5-9b37-47bc-b00d-2100370e6f1d",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C64",
+      "claim": "There is evidence of interindividual variability in the microstructural organization within S1.",
+      "claim_type": "EXPLICIT",
+      "source": "however, with evidence of interindividual variability in the microstructural organization within S1 (Geyer et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "3662311d-eb34-4075-b0d3-80c9897b1337",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C65",
+      "claim": "Higher current amplitudes could increase the effective range of stimulation to include sensory areas 3a or 2.",
+      "claim_type": "EXPLICIT",
+      "source": "it is possible that higher current amplitudes could increase the effective range of stimulation to include sensory areas 3a or 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed amplitude effect.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "d68a647d-819a-4691-9d5d-353e66daced2",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C66",
+      "claim": "The two implants are well within the arm and forearm regions of S1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, given the receptive fields activated during stimulation, the two implants are well within the arm and forearm regions of S1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the receptive field data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "fb4fa09a-5a3d-440d-be1d-c50260a06887",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C67",
+      "claim": "Arm and forearm regions of S1 might receive a larger ratio of proprioceptive-to-cutaneous signals than hand regions.",
+      "claim_type": "EXPLICIT",
+      "source": "which might receive a larger ratio of proprioceptive-to-cutaneous signals than hand regions (McKenna et al., 1982)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "00a8b1a5-aa21-4491-9970-8af7bfb24a43",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C68",
+      "claim": "In Experiment 1, there was a strong positive correlation between intensity and amplitude (r = 0.2, p=2.1\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "In Experiment 1, we found a strong positive correlation between intensity and amplitude (r = 0.2, p=2.1\u00d710\u22125, Pearson linear correlation coefficient)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "527ae0bc-4c71-43f2-995c-df99954176e5",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C69",
+      "claim": "Sensation intensity was 2.4 \u00b1 1.9 a.u. (mean \u00b1s.d.) for 20 \u03bcA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "with an intensity of 2.4 \u00b1 1.9 a.u. (mean \u00b1s.d.) for 20 \u03bcA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "0abc8a34-10e2-46a6-a641-d200c8043f78",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C70",
+      "claim": "Sensation intensity was 4.0 \u00b1 2.1 a.u. for 100 \u03bcA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "and 4.0 \u00b1 2.1 a.u. for 100 \u03bcA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "e668a75f-9d94-4480-80d0-b8d8fad92a33",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C71",
+      "claim": "There was a negative correlation between the current amplitude and the standard deviation of the normalized intensity (r = \u22120.6, p=0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured a negative correlation between the current amplitude and the standard deviation of the intensity (r = \u22120.6, p=0.12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "96d66c16-ff70-4672-874e-9557978ebfba",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C72",
+      "claim": "The majority of responses in Experiment 1 were short duration (N = 225), followed by medium (N = 122) with very few long responses (N = 12).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of responses were short (N = 225), followed by medium (N = 122) with very few long responses (N = 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "0aec17a7-2a55-412a-9bc2-98e3cd3c8f9e",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C73",
+      "claim": "In Experiment 2, the trend in duration was replicated (N = 268, 55 and 1 for short, medium and long, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "For Experiment 2 this trend was replicated (N = 268, 55 and 1. Short, medium and long, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from Experiment 2 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "3c4c3d12-fe5b-448f-b662-ca33e926c4d1",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C74",
+      "claim": "There was no relationship between duration of the sensation and amplitude of stimulation (p=0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no relationship between duration of the sensation and either amplitude of stimulation (p=0.1, \u03c72(1323)=4.53)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "dea47569-437e-4685-bb0c-9418568771e9",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C75",
+      "claim": "There was no relationship between duration of the sensation and frequency of stimulation (p=0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "or frequency of stimulation (p=0.2, \u03c72(1323)=2.83).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "8a72783a-0992-457e-bd2b-48d3093dc795",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C76",
+      "claim": "This is the first report in human of replicable, purely naturalistic proprioceptive and cutaneous sensations induced through ICMS.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first report in human of replicable, purely naturalistic proprioceptive and cutaneous sensations induced through ICMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on the authors' knowledge of the field.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "ef5f42cb-9b4c-45ea-af15-fb8a6e5cc91c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C77",
+      "claim": "Stimulation over a wide range of amplitudes and frequencies generated qualitatively diverse sensations.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation over a wide range of amplitudes and frequencies generated qualitatively diverse sensations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "39370e72-cd92-479e-ac0e-7bd3301860a6",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C78",
+      "claim": "Percept modality was strongly linked to variations in amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "although percept modality was strongly linked to variations in amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the key experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f71f9868-ed77-4cc5-92b4-eb405f790a51",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C79",
+      "claim": "The ability to evoke proprioceptive sensations could allow the subject to interpret position- or movement-related information.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the ability to evoke proprioceptive sensations could allow the subject to interpret position- or movement-related information, as previously reported in primate studies (Tomlinson and Miller, 2016; Dadarlat et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, supported by citations to prior primate work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "3ba46fb9-b4ea-467e-8c6f-8346e854143a",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C80",
+      "claim": "Eliciting cutaneous sensations could improve the ability to deliver richer somatosensory feedback for object manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "while eliciting cutaneous sensations could improve our ability to deliver richer somatosensory feedback for object manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "544bf217-3153-4573-8171-79b68749200c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C81",
+      "claim": "Cutaneous and proprioceptive somatosensory signals have the potential to improve performance and embodiment when using a BMI-controlled external device.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these somatosensory signals have the potential to improve performance and embodiment when using a BMI-controlled external device.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "ff2a9cae-b317-46cc-b123-884c07474451",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C82",
+      "claim": "The participant FG is a 32-year-old male with C5-level complete spinal cord injury, 1.5 years post-injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We recruited and consented a 32-year-old male participant (FG) with C5-level complete spinal cord injury, 1.5 years post-injury, to participate in a clinical trial of a BMI system with intracortical recording and stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the study participant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "8855be72-e9a9-45bb-b93d-58b9bdd335cf",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C83",
+      "claim": "The subject has residual sensation in the anterior-radial section of his upper arm.",
+      "claim_type": "EXPLICIT",
+      "source": "The subject has residual sensation in the anterior-radial section of his upper arm, and some residual sensation in the posterior-radial section of his upper arm and forearm, which present as paresthesias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the participant's sensory status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "7f15054d-1734-4599-98ca-607eead2c60c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C84",
+      "claim": "The subject has some residual sensation in the posterior-radial section of his upper arm and forearm, which present as paresthesias.",
+      "claim_type": "EXPLICIT",
+      "source": "The subject has residual sensation in the anterior-radial section of his upper arm, and some residual sensation in the posterior-radial section of his upper arm and forearm, which present as paresthesias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the participant's sensory status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "56967db2-ed86-44b3-89d9-0b08eda8cd8c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C85",
+      "claim": "All procedures were approved by the Institutional Review Boards (IRB) of the University of Southern California (USC) and Rancho Los Amigos National Rehabilitation Hospital (RLA).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Institutional Review Boards (IRB) of the University of Southern California (USC) and Rancho Los Amigos National Rehabilitation Hospital (RLA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "123c4ea4-bcc8-4938-be12-a4cc5cf668d0",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C86",
+      "claim": "The implant procedure occurred at Keck Hospital of USC.",
+      "claim_type": "EXPLICIT",
+      "source": "The implant procedure occurred at Keck Hospital of USC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about where the procedure took place.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "66db6d4b-93a8-4698-af56-4b68a2bce438",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C87",
+      "claim": "Study sessions took place at RLA.",
+      "claim_type": "EXPLICIT",
+      "source": "and study sessions took place at RLA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about where the study sessions occurred.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "dbced06d-d4b7-4c39-9bae-82a864ed6dd0",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C88",
+      "claim": "All stimuli consisted of biphasic, charge-balanced, cathodic-leading pulses, with 200 \u00b5s width per phase, 53 \u00b5s interphase interval, and one-second stimulus duration.",
+      "claim_type": "EXPLICIT",
+      "source": "All stimuli consisted of biphasic, charge-balanced, cathodic-leading pulses, with 200 \u00b5s width per phase, 53 \u00b5s interphase interval, and one-second stimulus duration delivered to a single electrode on the S1 array only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stimulation parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "97ddf9a0-4ebc-4b31-b00a-4cd59ce68384",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C89",
+      "claim": "The maximum charge delivered per phase was 20 nC.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum charge delivered per phase was 20 nC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a safety parameter used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "ef8e058b-39b6-433e-b86d-3a6f7d16914b",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C90",
+      "claim": "The stimulation parameters and charge limits were selected according to safe ranges shown in ICMS studies with NHPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected these parameters, and set electric charge limits according to safe ranges shown in ICMS studies with NHPs (Kim et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for parameter selection based on prior cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "f97ea01a-f64d-4ded-927f-9bb7324cd540",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C91",
+      "claim": "One 96-channel, platinum-tipped Neuroport microelectrode recording array was implanted in each of SMG and PMv.",
+      "claim_type": "EXPLICIT",
+      "source": "One 96-channel, platinum-tipped Neuroport microelectrode recording array (Blackrock Microsystems, Salt Lake City, UT) was implanted in each of SMG and PMv.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "906febe6-1597-40ea-b3ba-777fabb23867",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C92",
+      "claim": "Two 7 \u00d7 7 SIROF-tipped microelectrode arrays (with 48 physically-connected channels each) were implanted in S1.",
+      "claim_type": "EXPLICIT",
+      "source": "Two 7 \u00d7 7 SIROF (sputtered iridium oxide film)-tipped microelectrode arrays (with 48 physically-connected channels each) were implanted in S1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "67113f6b-938f-4131-9868-e077bf4ece62",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "claim_id": "C93",
+      "claim": "SIROF-tipped electrodes have lower impedance than platinum-tipped electrodes and are better suited to stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The SIROF-tipped electrodes have lower impedance than the platinum-tipped electrodes, and thus are better suited to stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about electrode properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ICMS in S1 of a tetraplegic human elicited replicable, naturalistic cutaneous and proprioceptive sensations localized to the contralateral arm. These sensations were dependent on stimulation parameters, with a subset of electrodes exhibiting multimodal properties where proprioceptive percepts were associated with higher amplitudes irrespective of frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C18, C41-C42, and C76 collectively demonstrate the core finding through experimental data from both Experiment 1 and 2. The participant reported naturalistic sensations distinct from post-injury paresthesias, with statistical evidence (C48, C55) showing amplitude-dependent modality differentiation. The multimodal electrode properties and amplitude association are directly supported by quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "837df453-5708-4168-b154-f311f0a2b9cb",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Current amplitude, not frequency, differentiates sensory modality (cutaneous vs proprioceptive) in ICMS-evoked percepts. Proprioceptive responses were significantly associated with higher amplitudes (p=0.039 in Experiment 1, p=2\u00d710\u207b\u2075 in Experiment 2), while frequency showed no significant effect (p=0.22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C52, C55, and C57 provide converging statistical evidence from two independent experiments with appropriate non-parametric tests. The bootstrapped resampling analysis (C52) addresses potential sampling bias. Electrode impedance was controlled (C49-C51, C56), ruling out this confound. The finding is replicated across experiments, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Experiment 1, stimulation across 20-100 \u00b5A at 150 Hz over eight weeks yielded 381 sensations from 46/96 electrodes (48%) across 1229 trials. No false positives occurred in catch trials, no trial history effects were detected, and no adverse events or painful sensations were reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C30 describe the experimental protocol and basic results with appropriate quantitative data. The inclusion of catch trials with zero false positives (C27) and analysis of trial history effects (C28) demonstrate experimental rigor. Safety monitoring (C29-C30) is documented. Statistical tests for impedance effects (C25-C26) show appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "c4e48a12-3158-41de-8452-768fe7553ab1",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Receptive fields showed coarse somatotopical organization between arrays (medial array: 46% anterior upper arm; lateral array: 51% posterior forearm) but no clear somatotopy within arrays. Of 46 responsive electrodes, 32 evoked upper arm percepts, 18 forearm, and 2 hand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 present spatial mapping data with quantitative distributions. The observation of coarse between-array but not within-array somatotopy (C35, C38) is clearly stated and contrasts with prior work. The data are presented with appropriate percentages and counts, though the lack of within-array organization differs from some cited studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "bc0c5294-5dec-499d-9d08-41f99782f27c",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Electrodes exhibited unimodal and multimodal response properties: 18 cutaneous-only, 6 proprioceptive-only, and 22 mixed-response electrodes. Among mixed-response electrodes, 45% were predominantly cutaneous, 32% predominantly proprioceptive, and 23% equally distributed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 provide clear quantitative categorization of electrode response properties totaling all 46 responsive electrodes. C47 appropriately connects findings to prior literature on multimodal S1 neurons. The distribution is well-documented and supports the interpretation of multimodal cortical properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "fcb1777f-e503-4c32-b79b-5ff4d4a79fda",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experiment 2 tested 5 electrodes across 5 amplitudes (20-100 \u00b5A) and 6 frequencies (50-300 Hz) over three days, replicating the amplitude effect on modality (p=2\u00d710\u207b\u2075) with no significant frequency effect (p=0.22) or impedance effect (p=0.305).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 describe a well-designed replication experiment with pseudorandomized presentation. The replication of the amplitude effect with stronger statistical significance (p=2\u00d710\u207b\u2075 vs p=0.039) and continued absence of frequency effects strengthens the primary finding. Appropriate controls for impedance are maintained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "36f7c1bf-e0a7-4f73-9951-3fad325cd977",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Perceived sensation intensity correlated positively with amplitude (r=0.2, p=2.1\u00d710\u207b\u2075), increasing from 2.4\u00b11.9 a.u. at 20 \u00b5A to 4.0\u00b12.1 a.u. at 100 \u00b5A. Amplitude showed negative correlation with intensity variability (r=-0.6, p=0.12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 show statistically significant correlation between amplitude and intensity with appropriate effect size reporting. C71 shows a trend toward reduced variability at higher amplitudes, though not statistically significant (p=0.12). The normalization procedure is described in methods, addressing day-to-day variability concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "7dd9f4d6-00ed-49a7-bdeb-37be31f7c927",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sensation duration was predominantly short (225/381 in Exp 1; 268/324 in Exp 2), with no significant relationship to amplitude (p=0.1) or frequency (p=0.2). The duration distribution was replicated across experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 report consistent duration patterns across both experiments with appropriate statistical tests. The lack of parameter dependence for duration contrasts with the modality and intensity findings, suggesting different underlying mechanisms. Replication strengthens the observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The amplitude-dependent modality effect may result from differential activation of S1 subregions (areas 1, 2, 3a, 3b) at different current levels, potentially influenced by cortical remapping after injury and the arm/forearm region's higher proprioceptive-to-cutaneous signal ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C40 and C63-C67 present speculative mechanistic explanations supported by citations but without direct experimental validation. The anatomical localization (C63) is estimated, not confirmed. While the hypotheses are plausible and grounded in prior literature (C61-C62, C64, C67), they require additional experiments such as imaging or depth-resolved recordings to verify.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "3ba94f89-14a4-4026-b654-bcedd5a25507",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Participant FG, a 32-year-old male with C5 complete spinal cord injury (1.5 years post-injury) with residual paresthetic sensation, received implants of two 48-channel SIROF-tipped arrays in S1 and 96-channel platinum-tipped arrays in PMv and SMG. Stimulation parameters (biphasic, 200 \u00b5s/phase, 20 nC max) followed NHP safety guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C19-C20, C82-C93 provide comprehensive methodological details including participant characteristics, surgical procedures, electrode specifications, and stimulation parameters. The safety parameters are justified by citation to prior NHP work (C90). IRB approval is documented (C85). These details are essential for reproducibility and safety assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work established ICMS in S1 as a method for inducing discriminable artificial sensation in NHPs and humans, though previous human sensations were mostly artificial (e.g., 'tingling', 'buzzing') rather than naturalistic, and the full range of achievable sensations remained unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C15 accurately summarize prior literature with appropriate citations. C2 and C16 correctly identify the gap in knowledge that motivates the current study. The characterization of prior human ICMS sensations as 'artificial' is supported by cited work (C15). This provides appropriate context for the novelty claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    },
+    {
+      "id": "bba1a24a-ab58-43c2-aa98-038149067f74",
+      "content_id": "5eecfe81-e54a-46cc-a798-c86e4cf578be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ability to evoke naturalistic cutaneous and proprioceptive sensations through ICMS could improve BMI performance and embodiment by enabling position/movement interpretation and richer somatosensory feedback for object manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7-C8 and C79-C81 make forward-looking statements about potential applications. While C79 cites supporting primate studies, the actual improvement in BMI performance and embodiment remains speculative and untested in this study. These are reasonable hypotheses but require future experimental validation in closed-loop BMI tasks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:51.752885Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "af0c245f-2cab-41b8-89cc-e70bc29460a6",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "a911ee8b-f45e-4d7f-9c23-5268a40b5d39",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "d662c9d7-7463-436b-8b22-ceead3eb2764",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "10fa1840-096e-488a-9449-4304b9008e9d",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "f5dfb779-482d-45dc-a7bf-cc18999f3af0",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "4e5734eb-980e-45dc-a6b8-14b352732625",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "4a6dd972-cf2e-46a0-8893-7cbb8553b89f",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "8a72783a-0992-457e-bd2b-48d3093dc795",
+      "result_id": "4b70d17e-ce8b-40f0-8586-70b172e2cf91"
+    },
+    {
+      "claim_id": "bbde2c71-46db-4922-aa6b-c6a110ec4d67",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "e16bd9ee-6b3c-42b9-b162-aa6f7e0e19ee",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "152fdfae-ad94-46d9-95a9-c12ee4278d0c",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "aacc4775-1c2c-4486-813b-2781e048b6f9",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "4f66e2ce-a849-401b-8757-7edf820b106d",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "a9d70680-4a8b-4e17-b616-b449aa740c46",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "de14bd84-a5a2-4e87-bca1-ea794b6e7802",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "44c4bd4e-edbf-4a87-be15-5c3b4b0c90d2",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "39370e72-cd92-479e-ac0e-7bd3301860a6",
+      "result_id": "837df453-5708-4168-b154-f311f0a2b9cb"
+    },
+    {
+      "claim_id": "dd0ee7ed-92e8-4e15-a96f-883949467509",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "3c0fa92b-8dd1-410a-b75a-546578a0deac",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "52ee8534-2771-44f9-a0f2-12341477fcd1",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "dec0f529-b3b5-4bcc-a536-79f52a4f726c",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "c6b64698-c549-45a0-9efb-24c7fbe561c5",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "293f0620-e20a-436d-bc56-5cfd51e1735d",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "d99a3754-4784-4571-91ba-ff87cdc66dc2",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "b441b39e-c6e5-42e8-9e98-a463a72b4e91",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "57c2cefb-914f-4e8a-b467-00e78f8eb308",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "0e7eb5f6-8935-4102-9a66-f67d18937255",
+      "result_id": "36d09f2a-5e3f-4219-954f-83b94a5be0e9"
+    },
+    {
+      "claim_id": "8120a1ae-d00a-4db3-aa31-888df1a9360f",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "df3d0fac-953b-431f-9363-3048ad7935cf",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "a6c1abfb-9d7f-4d40-aa69-8a955bd69297",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "f19c0dc6-b093-4eda-a99b-4d76001ca9df",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "35d6d598-047a-4065-b66e-29affec4e522",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "433b32ff-63d9-434d-a1cb-7c0ca2bbc8fa",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "654c5405-b519-4c9c-8708-1b8d203cfabf",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "b6a495f2-fde4-4e2f-9db0-c9048d80e368",
+      "result_id": "c4e48a12-3158-41de-8452-768fe7553ab1"
+    },
+    {
+      "claim_id": "03f83997-e59e-4e6f-b60d-4d90fb6f87db",
+      "result_id": "bc0c5294-5dec-499d-9d08-41f99782f27c"
+    },
+    {
+      "claim_id": "69612051-69f5-4ff4-bc88-af03c5ddb2fc",
+      "result_id": "bc0c5294-5dec-499d-9d08-41f99782f27c"
+    },
+    {
+      "claim_id": "b279e810-b5dd-4a05-87ac-524b01d82755",
+      "result_id": "bc0c5294-5dec-499d-9d08-41f99782f27c"
+    },
+    {
+      "claim_id": "0ffa0fdf-57f1-41c8-92e3-4e2dec3f2716",
+      "result_id": "bc0c5294-5dec-499d-9d08-41f99782f27c"
+    },
+    {
+      "claim_id": "f667f0e7-04cf-41da-9dee-804ad74476d9",
+      "result_id": "bc0c5294-5dec-499d-9d08-41f99782f27c"
+    },
+    {
+      "claim_id": "9d2b2d61-0b3d-47ca-b353-fb9114d702e3",
+      "result_id": "fcb1777f-e503-4c32-b79b-5ff4d4a79fda"
+    },
+    {
+      "claim_id": "e60837ed-e5ae-40ef-8273-a5402e4f7454",
+      "result_id": "fcb1777f-e503-4c32-b79b-5ff4d4a79fda"
+    },
+    {
+      "claim_id": "a9d70680-4a8b-4e17-b616-b449aa740c46",
+      "result_id": "fcb1777f-e503-4c32-b79b-5ff4d4a79fda"
+    },
+    {
+      "claim_id": "de14bd84-a5a2-4e87-bca1-ea794b6e7802",
+      "result_id": "fcb1777f-e503-4c32-b79b-5ff4d4a79fda"
+    },
+    {
+      "claim_id": "44c4bd4e-edbf-4a87-be15-5c3b4b0c90d2",
+      "result_id": "fcb1777f-e503-4c32-b79b-5ff4d4a79fda"
+    },
+    {
+      "claim_id": "00a8b1a5-aa21-4491-9970-8af7bfb24a43",
+      "result_id": "36f7c1bf-e0a7-4f73-9951-3fad325cd977"
+    },
+    {
+      "claim_id": "527ae0bc-4c71-43f2-995c-df99954176e5",
+      "result_id": "36f7c1bf-e0a7-4f73-9951-3fad325cd977"
+    },
+    {
+      "claim_id": "0abc8a34-10e2-46a6-a641-d200c8043f78",
+      "result_id": "36f7c1bf-e0a7-4f73-9951-3fad325cd977"
+    },
+    {
+      "claim_id": "e668a75f-9d94-4480-80d0-b8d8fad92a33",
+      "result_id": "36f7c1bf-e0a7-4f73-9951-3fad325cd977"
+    },
+    {
+      "claim_id": "96d66c16-ff70-4672-874e-9557978ebfba",
+      "result_id": "7dd9f4d6-00ed-49a7-bdeb-37be31f7c927"
+    },
+    {
+      "claim_id": "0aec17a7-2a55-412a-9bc2-98e3cd3c8f9e",
+      "result_id": "7dd9f4d6-00ed-49a7-bdeb-37be31f7c927"
+    },
+    {
+      "claim_id": "3c4c3d12-fe5b-448f-b662-ca33e926c4d1",
+      "result_id": "7dd9f4d6-00ed-49a7-bdeb-37be31f7c927"
+    },
+    {
+      "claim_id": "dea47569-437e-4685-bb0c-9418568771e9",
+      "result_id": "7dd9f4d6-00ed-49a7-bdeb-37be31f7c927"
+    },
+    {
+      "claim_id": "f4f0ce99-8887-459e-a83e-4ac9616efc51",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "acbddb55-b5e3-4e73-a7b7-e15d9069c868",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "1613fe85-9c93-4576-bdbe-4c267a67fb02",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "e7195bdf-010a-450f-89d6-e6273d83558a",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "a416dbe1-e037-40e0-ae3a-543a36160daf",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "6c281769-945c-49b9-9b69-d6710f2e7816",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "26a75870-f351-4c9b-bdbc-235d9f1976db",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "262163c5-9b37-47bc-b00d-2100370e6f1d",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "3662311d-eb34-4075-b0d3-80c9897b1337",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "d68a647d-819a-4691-9d5d-353e66daced2",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "fb4fa09a-5a3d-440d-be1d-c50260a06887",
+      "result_id": "ff19d1b0-a8d2-4fc1-8fe2-c96703a91468"
+    },
+    {
+      "claim_id": "1b768398-c9d1-4d8a-9e53-56785d2be9a4",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "59935663-2ddc-4115-891c-a65b02c9e70c",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "1382c623-5249-4309-a1aa-aede1c13014e",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "ff2a9cae-b317-46cc-b123-884c07474451",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "8855be72-e9a9-45bb-b93d-58b9bdd335cf",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "7f15054d-1734-4599-98ca-607eead2c60c",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "56967db2-ed86-44b3-89d9-0b08eda8cd8c",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "123c4ea4-bcc8-4938-be12-a4cc5cf668d0",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "66db6d4b-93a8-4698-af56-4b68a2bce438",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "dbced06d-d4b7-4c39-9bae-82a864ed6dd0",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "97ddf9a0-4ebc-4b31-b00a-4cd59ce68384",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "ef8e058b-39b6-433e-b86d-3a6f7d16914b",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "f97ea01a-f64d-4ded-927f-9bb7324cd540",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "906febe6-1597-40ea-b3ba-777fabb23867",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "67113f6b-938f-4131-9868-e077bf4ece62",
+      "result_id": "3ba94f89-14a4-4026-b654-bcedd5a25507"
+    },
+    {
+      "claim_id": "0c02d265-0f07-4db5-8939-53b7f16d9f81",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "f5d73e78-5629-4158-b3cf-7b35beaa870a",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "7fb86a9f-6d16-4191-a208-d6760c37e8a9",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "70f4e944-ab35-485f-b1eb-efae7087b632",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "d3d29a5d-1157-4907-b82a-06393636f67f",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "7646e4b7-9113-466c-852f-7cf986afeae3",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "4b4af5dd-f3e4-4e73-b8d4-ea1ec687e95e",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "f28013ce-ed80-4c6a-a151-29f164230ac7",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "a89b8dfd-9e37-4382-bda1-988af77a6723",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "5d6244a3-1dc1-4db7-8147-6f33fa7728d8",
+      "result_id": "fb86da26-3705-42fe-9fe5-2c86f485a6ac"
+    },
+    {
+      "claim_id": "e27eb7ef-15dd-4c1b-8559-d4bcb289e248",
+      "result_id": "bba1a24a-ab58-43c2-aa98-038149067f74"
+    },
+    {
+      "claim_id": "508f3a2c-a35b-4c53-80e3-b6f44915388a",
+      "result_id": "bba1a24a-ab58-43c2-aa98-038149067f74"
+    },
+    {
+      "claim_id": "f71f9868-ed77-4cc5-92b4-eb405f790a51",
+      "result_id": "bba1a24a-ab58-43c2-aa98-038149067f74"
+    },
+    {
+      "claim_id": "3ba46fb9-b4ea-467e-8c6f-8346e854143a",
+      "result_id": "bba1a24a-ab58-43c2-aa98-038149067f74"
+    },
+    {
+      "claim_id": "544bf217-3153-4573-8171-79b68749200c",
+      "result_id": "bba1a24a-ab58-43c2-aa98-038149067f74"
+    }
+  ],
+  "comparisons": []
+}

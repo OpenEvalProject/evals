@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "IMiDs induce CRL4CRBN-dependent degradation of multiple C2H2 zinc finger transcription factors. Mass spectrometry-based proteomics across multiple cell lines identified SALL4 as consistently degraded by all three IMiDs (thalidomide, lenalidomide, pomalidomide), along with 10 additional novel substrates. Eight of the 11 new targets are ZnF proteins containing characteristic IMiD-sensitive domains, and degradation was confirmed to be CRL-dependent via MLN4924 rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 are well-supported by comprehensive mass spectrometry data across multiple cell lines (H9 hESC, Kelly, SK-N-DZ, MM1s) with appropriate statistical thresholds (p<0.001, >1.5-fold change). The CRL-dependent mechanism is validated by rescue experiments with MLN4924 (C20), and the identification of ZnF domains is supported by sequence analysis (C21-C22). The data presentation includes appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SALL4 degradation by IMiDs is dose-dependent, CRL4CRBN-dependent, and reversible. Western blot analysis across multiple cell lines (H9 hESC, Kelly, SK-N-DZ, HEK293T, H661) demonstrated dose-dependent SALL4 protein degradation with all three IMiDs. The degradation was abrogated by proteasome inhibitor (bortezomib), NEDD8 inhibitor (MLN4924), and ubiquitin E1 inhibitor (MLN7243), and was absent in CRBN-/- cells. Time course experiments showed degradation as early as 4h with recovery by 48h post-washout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 and C53-C55 are strongly supported by western blot data across multiple cell lines with appropriate controls. The mechanism is validated through multiple independent approaches: pharmacological inhibition (C43-C45), genetic knockout (C46), and time course/washout experiments (C53-C54). The qPCR data (C41) confirms post-transcriptional regulation. All experiments include appropriate loading controls (GAPDH).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The second zinc finger domain (ZnF2) of SALL4 is the critical degron for IMiD-dependent binding to CRBN. TR-FRET binding assays demonstrated dose-dependent binding of SALL4ZnF2 and SALL4ZnF4 to CRBN, with ZnF4 showing reduced affinity. A tandem construct (SALL4ZnF1-2) exhibited tighter binding than ZnF2 alone, suggesting multivalent recruitment. Point mutations (G416A/N) in ZnF2 abolished IMiD-dependent binding, while mutations in ZnF1 (S388N) did not affect binding of the tandem construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 are well-supported by comprehensive TR-FRET binding data with appropriate controls and mutational analysis. The identification of ZnF2 as critical is supported by multiple lines of evidence: binding affinity measurements (C57-C59), rank order correlation with cellular potency (C61), and mutagenesis studies (C63-C65). The data are internally consistent and follow established principles from prior work on IMiD-dependent substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SALL4ZnF2 is necessary for CRL4CRBN-mediated degradation in cells, while ZnF4 is dispensable. Western blot analysis of Flag-tagged full-length SALL4 variants in Kelly cells showed that wild-type and ZnF4 mutants (G600A/N) were degraded by thalidomide, while ZnF2 mutants (G416A/N) were stable. In vitro ubiquitination assays confirmed IMiD-dependent ubiquitination of SALL4ZnF1-2 by CRL4CRBN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 are strongly supported by cellular degradation assays (western blots) and in vitro ubiquitination assays. The mutagenesis strategy is well-designed, using conservative mutations known to disrupt CRBN binding while maintaining protein fold (C69). The convergence of in vitro binding data, cellular degradation data, and ubiquitination assays provides strong mechanistic evidence for SALL4 as a bona fide IMiD target (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mouse CRBN harbors a critical V388I polymorphism that prevents IMiD-dependent degradation of ZnF substrates. Mice and rats have isoleucine at CRBN position 388, while sensitive primates have valine. Treatment of mouse ESCs with IMiDs did not degrade mmSALL4, and introducing V388I mutation into human CRBN reduced SALL4 binding. Expression of human CRBN in mouse cells enabled degradation of mmIKZF1/3, mmCSNK1A1, mmZFP91, and mmGZF1, but not mmSALL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are well-supported by sequence analysis, binding assays (TR-FRET), and cellular degradation experiments. The data clearly demonstrate that the CRBN polymorphism alone is insufficient to explain species-specific resistance to thalidomide teratogenicity, as human CRBN in mouse cells degrades other targets but not mmSALL4 (C80-C81). This sets up the need for additional species-specific differences in SALL4 itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C90"
+    ],
+    "result": "Species-specific SALL4 degradation depends on both CRBN and SALL4 sequence. In human Kelly cells, ectopically expressed human SALL4 was degraded by IMiDs while mouse SALL4 was resistant. Sequence analysis revealed critical mutations in the ZnF2 domain of mouse and zebrafish SALL4 that abrogate binding to human CRBN and render them insensitive to degradation. Humanizing the mouse SALL4 ZnF2 domain (5 amino acid substitutions) restored thalidomide-mediated degradation in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C89-C90 are strongly supported by western blot data, sequence analysis, and TR-FRET binding assays. The humanization experiment (C89) is particularly compelling, demonstrating that the ZnF2 domain is both necessary and sufficient for species-specific degradation. The conclusion that degradation depends on both CRBN and SALL4 sequences (C90) is well-supported by the combined data from both sets of experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Species-specific teratogenicity correlates with CRBN and SALL4 sequence polymorphisms. Mice with humanized CRBN (I391V) show increased miscarriage but not embryopathies resembling human phenotype. The greater bush baby (insensitive to thalidomide) harbors isoleucine at CRBN V388, while sensitive primates and rabbits have valine. Species can be rendered resistant by mutations in CRBN, SALL4, or both, suggesting thalidomide embryopathy is primarily a human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 are supported by citations to companion studies (C86-C88) and sequence analysis across species (C91-C92). The conclusion that thalidomide embryopathy is primarily human-specific (C94) is well-supported by the combined genetic and biochemical data. However, the companion study data (C86-C88) relies on citations rather than data presented in this manuscript, which slightly weakens the direct support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "SALL4 loss-of-function mutations cause human developmental syndromes that phenocopy thalidomide embryopathy. Familial LOF mutations in SALL4 are causatively linked to Duane Radial Ray syndrome (DRRS) and found in some Holt-Oram syndrome (HOS) patients, both showing large phenotypic overlaps with thalidomide embryopathy. The penetrance of DRRS exceeds 90% in heterozygous carriers. Mouse models with heterozygous Sall4 deletion show miscarriage, ventricular septal defects, and anal stenosis, phenotypes observed in human DRRS and thalidomide syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 are well-supported by citations to human genetic studies and mouse models. The phenotypic overlap between SALL4 mutations and thalidomide embryopathy is documented in the literature (C27-C30). The mouse model data (C33-C36) from cited studies provide strong support for SALL4's role in development. However, these are all literature-based claims rather than new experimental findings from this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Lower vertebrates show inconsistent responses to thalidomide that may reflect off-target effects at high doses. Zebrafish and chicken have isoleucine at CRBN V388 but were reported to show limb/fin defects at 400 \u00b5M thalidomide. However, human plasma concentrations are unlikely to exceed 10 \u00b5M, which causes SALL4 degradation but is 40-fold below the dose teratogenic in zebrafish/chicken. CRBN knockout mice show normal morphology, and humans with homozygous CRBN C391R mutations lack characteristic birth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are supported by citations to prior research and pharmacokinetic studies. The dose comparison (C99-C101) is particularly important for interpreting the zebrafish/chicken data. However, the calculation in C101 (400 \u00b5M) is implicit rather than explicitly stated in the cited literature. The argument that high-dose effects in lower vertebrates may be off-target is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C112",
+      "C113",
+      "C114",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "IMiDs exhibit polypharmacology targeting multiple rapidly-evolving C2H2 zinc finger transcription factors with species-specific effects. The study demonstrates degradation of multiple ZnF transcription factors, a protein class known to evolve rapidly and be highly species-specific. Sequence analysis shows IMiD-dependent ZnF targets are highly divergent even in higher eukaryotes. The expansion in substrate repertoire (especially for pomalidomide) suggests IMiDs exhibit polypharmacology contributing to both efficacy and adverse effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C112-C114, C123-C125 are well-supported by the proteomics data showing multiple ZnF targets and sequence analysis demonstrating divergence. The citations to prior work on ZnF evolution (C103, C113) support the interpretation. The conclusion about polypharmacology (C112, C123) follows logically from the data showing drug-specific substrate profiles. This represents an important synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C119",
+      "C120"
+    ],
+    "result": "SALL4 degradation by IMiDs provides a direct mechanistic link to thalidomide embryopathy. All three IMiDs induce SALL4 degradation, and SALL4 has been causatively linked to birth defects of limbs and organs by human genetics. SALL4 is consistently degraded across all IMiDs, and human geneticists associate heterozygous SALL4 loss with developmental syndromes that phenocopy thalidomide syndrome. The findings provide a direct link between IMiD-induced SALL4 degradation and genetic disorders of SALL4 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108, C119-C120 represent the central conclusion of the paper, synthesizing the experimental findings (SALL4 degradation) with human genetic data (SALL4 mutations cause similar phenotypes). The logic is sound: if heterozygous SALL4 mutations cause phenotypes resembling thalidomide embryopathy, and IMiDs cause SALL4 degradation, then SALL4 degradation likely contributes to teratogenicity. However, this remains correlative rather than causative proof (acknowledged in C120 as 'likely to contribute').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Other IMiD targets are unlikely to cause the defining birth defects of thalidomide. IKZF1/3 are non-causative for birth defects, RNF166 is involved in autophagy, and ZNF692 knockout mice lack teratogenic phenotype. GZF1 mutations are associated with joint laxity and short stature (also found in thalidomide-affected children) but unlikely to cause defining defects. CRBN expression levels influence IMiD efficacy, potentially contributing to tissue selectivity, with hematopoietic lineages having high CRBN levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C115-C117 are supported by citations to prior research and mouse phenotyping data. The argument that other targets are unlikely to cause defining birth defects is reasonable based on the cited evidence. However, the claim about CRBN expression levels (C116) is somewhat speculative ('conceivable') and based on general principles rather than direct experimental evidence in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The findings can inform development of safer CRBN-targeting therapeutics. The identification of SALL4 as a teratogenic target suggests new compounds could be designed to degrade disease-relevant proteins while avoiding developmental transcription factors. IMiD-based PROTACs and novel derivatives (CC-220) can induce ZnF target degradation including SALL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is a forward-looking statement about potential applications, which is reasonable speculation based on the findings but not directly tested. Claim C122 is supported by proteomics data showing CC-220 effects. However, C121 represents future work rather than a demonstrated result, making this more of a discussion point than a validated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C118"
+    ],
+    "result": "Historical context of thalidomide tragedy and current therapeutic use. Thalidomide was marketed in the 1950s as a sedative for morning sickness, leading to thousands of birth defects and increased miscarriages before being identified as causative in 1961. Despite this tragedy, thalidomide and derivatives (IMiDs) are used to treat multiple myeloma and myelodysplastic syndrome. The tragedy affected over 10,000 individuals and shaped drug regulatory procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C118 are historical facts supported by citations to primary historical reports and clinical literature. These provide essential context for the study but are not new findings. The claims are well-documented in the literature and serve as background for understanding the significance of the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior knowledge of IMiD mechanism of action. IMiDs bind CRL4CRBN and promote degradation of zinc finger transcription factors (IKZF1, IKZF3, ZFP91) and non-ZnF targets (CSNK1A1, GSPT1). CRL4CRBN is also implicated in IMiD-independent turnover of GLUL, BSG, MEIS2 and regulation of AMPK. Known substrates share \u03b2-hairpin loop structure and key glycine residue. Mice, rats, and bush babies are resistant to thalidomide teratogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 summarize prior research supported by multiple citations. These establish the known mechanism of IMiD action and the puzzle of species-specific teratogenicity that motivates the current study. All claims are well-supported by the cited literature and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Related proteins are not degraded by IMiDs. Roberts syndrome is caused by ESCO2 mutations, and ESCO2 (along with ZNF143, SALL1, SALL2, SALL3) protein levels were unchanged in mass spectrometry experiments despite robust expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by citation (C37) and mass spectrometry data (C38-C39). The observation that related SALL family members are not degraded (C39) is important for establishing specificity of SALL4 degradation. The data demonstrate that not all ZnF proteins or SALL family members are IMiD targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pharmacokinetic properties of IMiDs. Thalidomide has t1/2 ~6-8h and Cmax ~5-10 \u00b5M at 200-400mg dose. Lenalidomide has t1/2 ~3h and Cmax ~2.5 \u00b5M at 25mg dose. Pomalidomide has t1/2 ~9h and Cmax ~0.05 \u00b5M at 2mg dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by citations to pharmacokinetic studies. These data are important for contextualizing the in vitro concentrations used in experiments and for comparing to doses used in animal studies. The information is well-established in the literature and provides important context for interpreting the biological significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

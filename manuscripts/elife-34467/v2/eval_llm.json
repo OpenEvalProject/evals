@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript establishes background knowledge about hippocampal place cells, sharp-wave ripples, and population burst events (PBEs), citing that place cells represent spatial memory, PBEs contain replay sequences, and these are critical for learning and memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C7-C13, C18-C19) are well-supported by extensive citations to prior literature and represent established knowledge in the field. They provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "The authors recorded hippocampal CA1/CA3 neural activity from rats during linear track and open field tasks using chronically-implanted silicon probes, identified place cells using specific criteria, detected PBEs during immobility periods, and trained Hidden Markov Models using the EM algorithm with Poisson observation models and five-fold cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C46-C49, C51-C54, C56) are clearly described with specific parameters and criteria. The methods are standard and appropriate for the study, though some details about validation and potential confounds could be more explicit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C90",
+      "C126"
+    ],
+    "result": "Hidden Markov models trained exclusively on PBE data (without behavioral information) learned sparse transition matrices and observation models that capture the spatial structure of the environment, demonstrating that PBE activity alone is sufficient to form spatial maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23, C90, and C126 are supported by data in Figures 1-2 showing sparse HMM parameters that differ significantly from shuffled controls. The sparsity analysis using Gini coefficients and comparison to multiple shuffle types provides strong evidence for structured sequential dynamics in PBEs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C93",
+      "C94"
+    ],
+    "result": "HMMs trained on PBEs can decode animal position during behavior through latent-state place fields (lsPFs), though with slightly higher error than direct Bayesian decoding from place cells, suggesting the PBE-learned latent space may not capture all spatial information present during exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C59, C93-C94 are supported by Figure 3 showing position decoding via lsPFs with median error of 5 cm versus 47 cm for shuffled controls. The acknowledgment of higher error compared to Bayesian decoding (C42, C58) demonstrates appropriate interpretation of limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C61",
+      "C101",
+      "C127"
+    ],
+    "result": "HMM model-congruence can identify hippocampal replay events without using place cell information, with significant overlap (60.9% agreement) with traditional Bayesian replay detection methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29, C61, C101, C127 are supported by Figures 4-5 showing that HMM-congruence identifies replay with comparable performance to Bayesian methods. The use of human scorers as ground truth and ROC analysis provides rigorous validation, though the moderate agreement (~70%) indicates both methods have limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Human scoring of replay events revealed variability in opinions and challenges in binary classification, calling into question strict distinctions between replay and non-replay sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C102-C104 are supported by Figure 5 showing inter-rater variability among eight human scorers. This provides important context for evaluating automated methods, though more details on inter-rater reliability metrics would strengthen the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C69"
+    ],
+    "result": "HMM-based replay detection is most effective when there are abundant PBEs (e.g., during novelty or learning), while Bayesian decoding is more effective when there are few PBEs but many repeated behavioral trials. Bayesian decoding performance is independent of HMM quality or PBE number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by the analysis showing HMM performance correlates with PBE number and model quality, while Bayesian performance does not. This represents an important insight about the complementary strengths of the two approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The HMM approach generalizes to two-dimensional open field environments, where transition matrices are less sparse than linear tracks (reflecting greater behavioral freedom), but still capture spatial structure and can decode trajectories, with significant overlap with Bayesian-detected replay events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C72, C74-C76 are supported by Figure 6 showing successful application to open field data with 50 states. The comparison of sparsity between 1D and 2D environments provides insight into how environmental constraints affect learned models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C116"
+    ],
+    "result": "In a dataset with known remote replay, HMMs trained on PBEs captured extra-spatial structure beyond the local environment. When local Bayesian-significant events were removed, model quality decreased slowly, but when remote replay events were removed, quality decreased rapidly. Individual HMM-significant events corresponded to remote environment reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84, C116 are supported by Figure 7 showing differential effects of removing local versus remote replay events on model quality. The proof-of-concept demonstrates potential for detecting extra-spatial content, though this is based on a single dataset and requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C112"
+    ],
+    "result": "HMMs trained on sleep PBEs following an object-location memory task revealed significant sequential structure, demonstrating the method can detect sequences in sleep without behavioral data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C112 are supported by Figure 8 showing significant differences between actual and shuffled PBE scores. This proof-of-concept demonstrates applicability beyond spatial navigation, though functional relevance of detected sequences remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C58",
+      "C59",
+      "C94",
+      "C95"
+    ],
+    "result": "Bayesian decoding from place cells yields lower position error than HMM-based decoding via latent states, suggesting the HMM latent space may not capture all spatial information, though this could improve with more PBE data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C58-C59, C94-C95 acknowledge a limitation of the HMM approach. The comparison is fair and the interpretation appropriately cautious, noting potential for improvement with more data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The Gini coefficient measures sparsity of probability distributions, with 0 indicating uniform distribution (minimal sparsity) and 1 indicating singular distribution (maximal sparsity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 correctly defines the Gini coefficient metric used throughout the analysis. This is standard mathematical knowledge appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Model congruence is proposed as a reasonable continuous metric for PBEs that does not require repeated behavioral sequences and could be used in future analyses instead of binary replay classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 represent reasonable recommendations based on the results, particularly given the demonstrated variability in binary classification. The suggestion for continuous metrics is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors speculate about implications and future directions, including that downstream brain regions might use PBE activity to form spatial models, that place cell activity might serve PBE generation, and that the approach could be extended to non-spatial domains and sleep analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92, C108-C123 are speculative interpretations and suggestions for future work. While reasonable given the results, these represent hypotheses rather than demonstrated findings and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C62"
+    ],
+    "result": "Prior research has shown that hippocampal reactivation rates are higher during awake behavior than sleep, PBE density is higher during novel environment exploration, and replay of non-recent environments has been observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C62 accurately cite and represent prior literature, providing appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Latent variable models have been previously used to analyze hippocampal place cell activity with topological approaches, and similar sequential structure appears in PBE activity, though whether PBE activity must always be sequential remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 appropriately contextualize the current work within prior applications of latent variable models to hippocampal data and identify open questions in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors present a new analytical framework using Hidden Markov Models that enables PBE-first analysis of hippocampal activity, can detect replay without place cell information, and shows promise for understanding extra-spatial and sleep-related sequential reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125, C128-C129 accurately summarize the main contributions of the work, which are well-supported by the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

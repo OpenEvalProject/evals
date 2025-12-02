@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "TRACT is a genetically-encoded system based on ligand-induced intramembrane proteolysis. The system consists of an artificial ligand (CD19mch) expressed in donor neurons and an artificial receptor (SNTG4) expressed in receiver neurons. Upon ligand-receptor binding, the receptor is cleaved, releasing a transcription factor that activates reporter gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C16-C19 collectively describe the molecular components and mechanism of TRACT. The description of the ligand (CD19mch with extracellular, transmembrane, and intracellular domains) and receptor (SNTG4 with antibody, Notch, and Gal4 domains) is explicit and detailed. The mechanism of intramembrane proteolysis and transcriptional activation is clearly stated with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C27",
+      "C28"
+    ],
+    "result": "The original TRACT system without synaptic localization domains failed to reveal synaptic connections in the antennal lobe. Engineering the ligand to be selectively located at the presynaptic cleft was necessary to achieve synaptic specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C27-C28 describe the limitation of the original system and the engineering solution. The failure of the original CD19mch/SNTG4 system to detect synaptic connections is explicitly stated (C27, C28) and consistent with prior work (C8, C9). The rationale for engineering synaptic localization is clearly articulated (C10, C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C44",
+      "C45"
+    ],
+    "result": "Adding domains from synaptic proteins synaptobrevin (nSyb) or syndecan (sdc) to the ligand achieved reliable synaptic tracing in the antennal lobe. With these modified ligands, TRACT labeled both projection neurons (PNs) and local neurons (LNs) that receive synaptic input from ORNs, as confirmed by anatomical markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C29-C33 describe successful labeling with modified ligands. The identification of labeled neurons as PNs (based on axonal projections, cell body location, and ChAT immunopositivity) and LNs (based on lack of axons, GABA immunopositivity, and cell body location) is well-supported by multiple anatomical criteria. Claims C44-C45 appropriately conclude that TRACT can perform anterograde transneuronal tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TRACT with nSyb::CD19 and CD19::sdc ligands selectively labeled uniglomerular projection neurons (uniPNs) whose dendrites branched exclusively into glomeruli where the ligand was expressed. The number of labeled uniPNs matched previously published data, indicating low false positive and false negative rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C40 describe the anatomical specificity test using uniPNs, which have dendrites restricted to single glomeruli. The selective labeling of uniPNs projecting to ligand-expressing glomeruli (C36) and the quantitative agreement with published data (C37, C38, C40) provide strong evidence for synaptic specificity. Claims C79-C81 appropriately interpret these results as indicating low false positive and false negative rates for uniPN detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Detection of multiglomerular projection neurons (multiPNs) was variable and less sensitive than uniPN detection. A single copy of CD19::sdc was sufficient to label multiPNs, while two copies of nSyb::CD19 were required. MultiPNs were detected in only ~50% of cases, possibly due to variable receptor expression or lower synapse density per glomerulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C82-C85 describe differential sensitivity for multiPN detection. The observation that CD19::sdc requires fewer copies than nSyb::CD19 (C41, C101) and the ~50% detection rate (C82) are explicitly stated. The proposed explanations involving receptor expression variability (C83) and lower synapse density (C84) are reasonable hypotheses based on anatomical considerations, though they remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C59"
+    ],
+    "result": "TRACT was applied to the Drosophila circadian circuit to identify postsynaptic targets of PDF neurons. Using nSyb::CD19 ligand in PDF neurons, GFP+ neurons were observed in DN2 (10/18 hemispheres) and DN3 (all brains) clusters, with all GFP+ DN3 neurons also expressing PER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 and C58-C59 describe the application of TRACT to the circadian circuit. The identification of PDF neuron types (C48-C50), the observation of GFP+ neurons in DN2 and DN3 clusters (C53-C55, C58), and the PER+ status of DN3 neurons (C59) are explicitly stated with quantitative data. The DN2 result (C54, C86) confirms a previous report, while DN3 represents a new finding (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "TRACT failed to detect connections between PDF neurons and DN1 or LNd neurons that had been suggested by previous GRASP studies. Several explanations are proposed: GRASP may have detected non-synaptic proximity, receptor expression may be weak in these neurons, or TRACT may preferentially detect neurotransmitter versus neuropeptide release sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 and C90-C94 describe the failure to detect previously reported connections. While the negative result is clearly stated (C56, C57, C90), the explanations are speculative (C91-C94). The discrepancy could reflect false positives in GRASP studies, false negatives in TRACT, or genuine differences in what each method detects. Without additional validation experiments, the interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C103",
+      "C106"
+    ],
+    "result": "The overall pattern of transneuronal labeling with nSyb::CD19 and CD19::sdc ligands is broadly comparable, but some differences exist. Labeling patterns were more consistent between animals with nSyb::CD19 than CD19::sdc in the circadian circuit. The different biological functions and subcellular localizations of nSyb and sdc may result in slightly different ligand targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C103 describe the comparison between the two ligands. The observation of broadly comparable but not identical patterns is explicitly stated. The greater consistency with nSyb::CD19 (C103) is a data-based observation. The proposed explanation based on biological differences between nSyb and sdc (C106) is reasonable speculation grounded in known protein functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The choice of presynaptic targeting domain determines synaptic specificity. Domains from syntaxin, dpr-10, dip-\u03b3, and neurexin enriched ligand at presynaptic sites but resulted in non-specific labeling. In contrast, domains from sdc and nSyb enabled reliable synaptic-specific tracing. Both sdc and nSyb ligands labeled uniPNs equivalently, but CD19::sdc required fewer copies to label multiPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 describe systematic testing of different targeting domains. The failure of syntaxin, dpr-10, dip-\u03b3, and neurexin domains to achieve synaptic specificity (C96-C98) and the success of sdc and nSyb domains (C99) are explicitly stated. The quantitative comparison showing equivalent uniPN labeling (C100) but differential multiPN labeling requirements (C101) is data-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TRACT has multiple advantages as a circuit tracing method: it is fully genetically encoded, requires only three constructs, is reproducible, can be used in any transgenic species, allows in vivo and in vitro studies, enables high-throughput experiments, can drive expression of functional tools, and enables genetic manipulation of neurons based on their synaptic inputs rather than gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C75 enumerate the advantages of TRACT. Most advantages are directly supported by the experimental design and results (C62-C64, C67, C72, C74-C75). Some advantages are reasonable inferences based on the genetic nature of the system (C65-C66, C68-C71, C73), though they represent potential applications rather than demonstrated capabilities. The claim about retrograde tracing (C73) is explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "All connectivity mapping methods face challenges with false negatives and false positives, and validation with complementary methods is advisable. TRACT enables high-throughput discovery of candidate synaptic partners across multiple animals, which can then be validated using low-throughput methods like electrophysiology or electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C108-C113 provide appropriate context about limitations of connectivity methods and the complementary role of TRACT. The acknowledgment of potential false positives and negatives (C76-C77) and the recommendation for validation (C78, C113) demonstrate scientific rigor. The comparison with electrophysiology and electron microscopy (C108-C111) accurately describes their limitations and TRACT's complementary strengths (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "TRACT confirmed the previously reported connection between PDF and DN2 neurons and revealed DN3 neurons as new potential postsynaptic targets. Despite widespread PDF axon projections, only a handful of targets in circadian-relevant brain regions were identified, suggesting a low false positive rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 interpret the circadian circuit results. The confirmation of PDF-DN2 connectivity (C86) validates TRACT against prior work. The identification of DN3 as a new target (C87) is supported by consistency with independent functional data showing PDF effects on DN3 calcium activity. The observation of selective labeling despite widespread axonal projections (C88) reasonably supports the inference of low false positive rates (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Trans-TANGO, a related method published during review, shares the principle of ligand-induced proteolysis with TRACT but uses different molecular mechanisms (TEV protease vs \u03b3-secretase). In the antennal lobe, TRACT detected uniPNs consistent with published data and multiPNs in ~50% of cases, while trans-TANGO detected more uniPNs than expected and no multiPNs. Further experiments are needed to clarify the false positive and false negative rates of both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C124 provide appropriate comparison with trans-TANGO. The description of trans-TANGO's mechanism (C115, C118) and validation approach (C119) is accurate based on citations. The comparison of results in the antennal lobe (C120-C122) is factual. The interpretation by trans-TANGO authors about potential false positives (C123) is appropriately cited. The conclusion that further experiments are needed (C124) is a reasonable assessment given the discrepancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Mapping neuronal connectivity is a major goal of neuroscience, with relevance to understanding neurodevelopmental and psychiatric disorders. TRACT is anticipated to be a useful addition to the toolkit for identifying circuit wiring diagrams and enabling genetic manipulation of synaptically connected neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C125-C127 provide appropriate scientific context and future outlook. The importance of connectivity mapping (C6) and its relevance to disorders (C7, C125) are well-established in the field and appropriately cited. The anticipation that TRACT will be useful (C126-C127) is a reasonable conclusion based on the demonstrated capabilities, though it represents a forward-looking statement rather than a proven result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The Drosophila antennal lobe is organized into discrete glomerular compartments, with well-characterized connectivity. ORNs of each class project to common glomeruli, where they synapse with uniglomerular PNs (which have dendrites in single glomeruli), multiglomerular PNs (which pool input across glomeruli), and local neurons (which interconnect glomeruli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 describe the anatomical organization of the antennal lobe, which serves as the validation system for TRACT. These claims are well-supported by multiple citations to established literature and represent accepted knowledge in the field. This anatomical framework is essential for interpreting the TRACT results and assessing synaptic specificity.",
+    "result_type": "MINOR"
+  }
+]

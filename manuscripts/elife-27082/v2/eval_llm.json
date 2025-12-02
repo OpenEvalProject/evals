@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Bre5 is an RNA-binding protein that binds RNA and single-stranded DNA in vitro, with preferential binding to U-rich sequences, particularly the motif UUUG. The Bre5-Ubp3 complex also exhibits RNA-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 collectively demonstrate Bre5's RNA-binding capability through multiple complementary approaches: crystal structure prediction (C2), in vitro binding assays with recombinant protein (C3-C5), and binding assays with protein purified from yeast (C6-C8). The data show consistent sequence specificity across different experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C21",
+      "C27"
+    ],
+    "result": "Bre5 binds predominantly to RNAPII transcripts in vivo, with enrichment in exon 2 regions of spliced pre-mRNAs (particularly genes with short exon 2) and upstream of 3' cleavage/polyadenylation sites, while being depleted in promoter-proximal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15, C17, C21, and C27 are supported by CRAC data showing consistent binding patterns across multiple analyses (Figures 1C-H). The metagene analyses provide genome-wide evidence, and the identification of the UUUG motif (C17) is consistent with the observed binding specificity. The 15-fold enrichment over control (C10) demonstrates specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C24",
+      "C25"
+    ],
+    "result": "Bre5 can bind RNAPII transcripts independently of Ubp3, though Ubp3 contributes to early pre-mRNA recruitment of Bre5. The major recruitment pathway does not involve Ubp3 binding to ubiquitinated substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C24-C25 are supported by CRAC data in ubp3\u0394 and rsp5-3 strains. The observation that Bre5 binding patterns are largely maintained in ubp3\u0394 (C18) supports independent recruitment (C19, C21), while the increased 2EE/(EI+IE) ratio in ubp3\u0394 (C24) indicates Ubp3 does contribute to early recruitment (C25). The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26"
+    ],
+    "result": "Bre5 preferentially binds to spliced mRNA products rather than unspliced pre-mRNA, with a 2EE/(EI+IE) ratio of 30 compared to 0.2 for RNAPII, indicating association with transcripts following completion of splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C26 are supported by quantitative analysis of splice junction reads from CRAC data. The 150-fold difference in ratios between Bre5 and Rpo21 (30 vs 0.2) provides strong evidence for post-splicing association. The interpretation (C26) is a reasonable inference from this data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Loss of Bre5 results in impaired splicing and altered RNAPII dynamics on an inducible reporter, with increased RNAPII accumulation at the 5' splice site, disrupted periodicity of RNAPII occupancy, and reduced mRNA accumulation. These effects are specifically linked to splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 are supported by comprehensive RT-qPCR and ChIP analyses of the RiboSys reporter (Figure 2). The data show consistent defects in bre5\u0394 across multiple probes and timepoints. The specificity for splicing (C39) is demonstrated by the control experiment with a 5'SS mutant (C40) showing similar signals in WT and bre5\u0394.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Loss of Bre5 or its RNA-binding function leads to decreased levels of unspliced, polyadenylated RNA for endogenous genes, indicating increased cotranscriptional splicing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by RT-qPCR data on endogenous genes (Figure 3A, 3C) and in vivo crosslinking assays of RRM mutants (Figure 3B). The correlation between loss of RNA-binding activity (C43) and reduced unspliced poly(A)+ RNA (C44) supports the mechanistic interpretation (C45). Multiple genes show consistent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C79",
+      "C80"
+    ],
+    "result": "RNAPII is ubiquitinated at multiple sites (K452, K695, K1246 in Rpo21; K886 in Rpb2), but only K1246 ubiquitination is specifically elevated in strains lacking Bre5 or Ubp3, with quantitative MS showing 1.6-fold and 10.5-fold increases in bre5\u0394 and ubp3\u0394 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54, C79-C80 are supported by multiple complementary approaches: Western blots (Figure 4A-B), analytical MS (Figure 4C), and quantitative PRM-MS (Figure 4D). The specificity for K1246 is demonstrated by the absence of changes at other sites (C50-C51). The quantitative data (C53) provides strong evidence for the conclusion (C54, C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The K1246 ubiquitination site is located in an unstructured acid loop close to the entrance of the RNAPII active site, where ubiquitin attachment could potentially interfere with DNA entry and transcription factor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 are supported by structural analysis and citation (Figure 4E). However, C57-C58 are speculative (\"appears likely,\" \"may also interfere\") and lack experimental validation. While the structural positioning is established, the functional consequences of ubiquitination at this site require direct experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Ubiquitinated RNAPII shows a distribution pattern similar to Bre5 binding, with depletion in promoter-proximal regions, enrichment ~200 nt upstream of poly(A) sites, and peaks at the 5' end of exon 2. These patterns are elevated in bre5\u0394 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by mCRAC data (Figure 5). The parallel distributions of Bre5 binding and Ub-RNAPII (C64) strengthen both datasets. The statistical significance of differences in bre5\u0394 (C63) is explicitly stated. However, C59 notes the autoradiograph signal was not consistent across replicates, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The Rpo21K1246R mutant shows a distribution pattern reciprocal to ubiquitinated RNAPII, with reduced levels at TSS and 3'SS, and altered distribution around poly(A) sites, supporting K1246 as a physiologically important ubiquitination target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by CRAC analysis of the K1246R mutant (Figure 6A-C). The viability of the mutant (C65) demonstrates functionality. The reciprocal distribution pattern (C67-C69) provides strong correlative evidence for the model (C70). However, C66 is speculative about the expected relationship, and the reciprocal pattern alone doesn't prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The Rpo21K1246R mutation reduces cotranscriptional splicing efficiency transcriptome-wide, with increased levels of unspliced, poly(A)+ RNA observed for individual genes by RT-qPCR and genome-wide by RNA-seq in both poly(A)+ and Ribominus samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by comprehensive RNA-seq and RT-qPCR data (Figure 6D-J). Multiple independent approaches (RT-qPCR, poly(A)+ RNA-seq, Ribominus RNA-seq, junction analysis) all show consistent increases in unspliced RNA. The genome-wide nature of the effect (C73, C75) and consistency across replicates (Figure 6\u2014supplement 1) strongly support the conclusion (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C77",
+      "C78"
+    ],
+    "result": "Bre5 and Ubp3 show strong synthetic negative growth interactions with RNA surveillance factors (Rrp47, Air1, Trf5), potentially because ubiquitination-induced RNAPII pausing increases transcript release, leading to accumulation of aberrant RNA fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C1 is supported by citations to genetic screens. However, C77-C78 are speculative explanations for the genetic interactions without direct experimental support. The proposed mechanism of increased transcript release and aberrant RNA accumulation requires experimental validation. The genetic interactions are established, but the mechanistic explanation remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Different ubiquitination sites on Rpo21 (K1246 vs K330) may be utilized in different contexts (splicing vs DNA damage), with K695 serving as an alternative site in both cases, potentially reflecting recruitment of different ubiquitin ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 are supported by citations to prior work. However, C85 is speculative (\"suggests the possibility\") and lacks direct experimental evidence. The hypothesis is reasonable given the data, but requires testing of specific ligases and direct comparison of ubiquitination patterns under different stress conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prp19 is a candidate E3 ligase for splicing-dependent RNAPII ubiquitination, though its essential role in splicing makes this difficult to test. Prp3 is unlikely to be a Bre5-Ubp3 target as it is deubiquitinated by Usp4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are supported by citations establishing Prp19's E3 ligase activity and its requirement for splicing. However, no experimental data are provided testing Prp19's role in RNAPII ubiquitination. C88 is a reasonable inference from the citation, but the exclusion of Prp3 as a target is not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The normal function of splicing-linked RNAPII ubiquitination is to transiently slow or pause the polymerase to promote cotranscriptional splicing, with Bre5-Ubp3 deubiquitination allowing elongation to resume, forming a ubiquitination/deubiquitination cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 represent the central model of the paper, supported by the convergence of multiple lines of evidence: Bre5 binding patterns (C90), effects of Bre5 loss on splicing (C91-C92), and effects of K1246R mutation on splicing (C95). The model (C94) is a reasonable synthesis of the data. However, C93 is speculative about the reporter system's sensitivity, and direct measurement of elongation rates would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The K1246 ubiquitination site is distant from the CTD and RNA exit channel, making it unlikely to directly recruit splicing factors (unlike CTD phosphorylation), and distinct from trigger loop mutations that alter elongation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by established knowledge and citations. C98 is a reasonable inference from structural information. C96 acknowledges an important alternative explanation that the K1246R mutation might affect splicing independent of elongation changes. This caveat is appropriate given the correlative nature of much of the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Poly(A) site-proximal changes in RNAPII occupancy and Bre5 binding are likely independent of splicing (given most yeast genes lack introns), while elevated Bre5 occupancy at exon 2 appears independent of polyadenylation. Both splicing-dependent and splicing-independent mechanisms may operate at different locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by logical inference from the data (Figure 1G) and knowledge of yeast gene structure. C102 is supported by citations to prior work. C103 is a reasonable speculation attempting to reconcile different prior reports, though it lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Ubiquitination at K1246 might slow elongation by interfering with DNA entry into the active site or by preventing back-tracking of stalled RNAPII complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 are speculative mechanistic proposals based on structural considerations (Figure 4F) but lack experimental validation. Direct measurements of elongation rates, DNA binding, or back-tracking in the K1246R mutant would be needed to test these hypotheses. The mechanisms remain plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A surveillance or remodeling step may occur upstream of the poly(A) site, associated with RNAPII ubiquitination. The Rpo21K1246R mutant shows reduced pausing upstream and increased occupancy downstream of poly(A) sites, potentially reflecting impaired transcript release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106 and C108 are supported by data and citations. C109 and C111 are supported by CRAC data (Figure 6B). However, C107, C110, and C112 are speculative interpretations without direct experimental validation. The model requires testing through direct measurement of transcript release, RNAPII modifications, and surveillance activities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Loss of Ubp3 increases gene silencing near telomeres and at HML, potentially reflecting increased RNAPII pausing or stalling in silenced regions due to loss of Bre5-Ubp3-mediated deubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C114 are supported by citation to prior work. However, C115 is a speculative hypothesis based on the current data without direct experimental testing. The connection between RNAPII ubiquitination and silencing requires validation through measurement of RNAPII dynamics and ubiquitination in silenced regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Reversible ubiquitination of RNAPII may participate in regulating alternative splicing in human cells, given links between alternative splicing and RNAPII elongation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is supported by citations to review articles. However, C117 is speculative extrapolation from yeast to human cells without experimental evidence. While the hypothesis is reasonable given conservation of RNAPII structure and splicing mechanisms, it requires direct testing in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C28",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Prior work has established multiple functions for Bre5-Ubp3, including roles in DNA damage response, transcription silencing, Tbp1 protection, vesicle trafficking, and ribophagy, with Bre5 identified in poly(A)+ RNA-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C118-C129 are all supported by citations to prior work. These claims establish the context and prior knowledge about Bre5-Ubp3 function. The citations appear appropriate and the claims accurately represent the cited work. This background information motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C16",
+      "C36"
+    ],
+    "result": "Transcription pausing is stronger on genes with short exon 2 sequences, and defects in pre-mRNA splicing lead to accumulation of RNAPII at the 5' splice site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C36 are both supported by citations to prior work (Carrillo Oesterreich et al., 2010; Chathoth et al., 2014). These claims establish relevant prior knowledge that helps interpret the current findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The absence of Ubr2 did not clearly alter mRNA production or RNAPII elongation in the reporter construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by experimental data from the RiboSys reporter (Figure 2). This negative result is important for ruling out Ubr2 as the relevant E3 ligase in this context, though it doesn't exclude other potential ligases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The greater increase in K1246 ubiquitination in ubp3\u0394 compared to bre5\u0394 suggests Ubp3 may function with other cofactors besides Bre5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is a speculative interpretation of the quantitative difference in ubiquitination levels between the two mutants. While the observation is supported by data (C52-C53), the interpretation that Ubp3 has other cofactors is not directly tested. Alternative explanations (e.g., different protein stability, indirect effects) are not excluded.",
+    "result_type": "MINOR"
+  }
+]

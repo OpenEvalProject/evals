@@ -1,0 +1,563 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Small RNA composition changes during Drosophila embryogenesis, with category two small RNAs (endo-siRNA + piRNA) constituting >50% in 0-2hAEL embryos and declining until 12-18hAEL, while miRNA fraction increases concomitantly. In 18-24hAEL, rRNA-derived small RNAs increase without specific size peaks, suggesting they are degradation intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are supported by data shown in Figure 1A and Figure 1\u2014figure supplement 1. The compositional changes are clearly documented through small RNA library analysis with spike-in normalization. The interpretation of rRNA-derived small RNAs as degradation intermediates (C8) is appropriately presented as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Total mature miRNA abundance continuously increases throughout embryogenesis (8-fold from 0-2hAEL to 18-24hAEL), while piRNA population gradually decreases. These trends are consistent with expression patterns of miRNA and piRNA pathway components and with the notion that differentiated cells rely more on miRNA-mediated gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are well-supported by spike-in normalized small RNA library data (Figure 1B) and mRNA expression data for pathway components (Figure 1\u2014figure supplement 2). The biological interpretation is appropriately supported by citations to previous literature and is consistent with the observed data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Spike-in normalized small RNA library analysis accurately estimates miRNA expression levels relative to total RNA, as validated by Northern blotting. Total RNA per embryo remains relatively constant throughout embryogenesis, allowing library analysis to reflect relative abundance per embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are supported by comparison of library analysis with Northern blotting (Figure 2, Figure 2\u2014figure supplement 1) and measurement of total RNA per embryo (Figure 1\u2014figure supplement 3A). The validation demonstrates the reliability of the spike-in normalization approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "K-means clustering analysis groups miRNA genes into four clusters based on expression patterns. Cluster 1 (15 miRNAs) shows highest expression in early stages and consists mainly of maternally deposited miRNAs. Cluster 4 (6 genes) shows decrease in late stages, suggesting instability. The majority (75.8%, 66/87 genes) belong to clusters 2 and 3 showing increasing trends, indicating that increased miRNA abundance is a general trend not caused by a few species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 are supported by k-means clustering analysis shown in Figure 1C and are consistent with previous literature on maternal miRNA degradation (C20-C21) and miRNA stability (C23-C24). The statistical analysis appropriately characterizes the distribution of expression patterns across miRNA genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "AGO1 protein levels are lower in very early embryos (0-2h and 2-4h), which may suggest AGO1 is a limiting factor for miRNA abundance or that lower miRNA levels trigger apo-AGO1 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C28 is supported by Western blot data (Figure 1\u2014figure supplement 3B), but claims C29 and C30 are speculative interpretations. The correlation between AGO1 levels and miRNA abundance is noted but causality is not established. Alternative explanations are appropriately presented but not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The large difference in total miRNA levels (8-fold increase from 0-2hAEL to 18-24hAEL) estimated by spike-in normalization underscores the importance of normalization method selection, as conventional RPM normalization disregards changes in small RNA population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by the observed data and comparison of normalization methods. The methodological point about RPM normalization is based on established knowledge (C32) and the spike-in approach provides a more accurate assessment of absolute abundance changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Pri-miRNAs have shorter half-lives than mature mRNAs or miRNAs. Transient peaks of pri-miRNA levels are often observed, suggesting miRNA transcription is activated in short time-windows. For clusters 2 and 3 miRNAs with highest mature levels in the last window, pri-miRNAs peak earlier while mature miRNA persists for hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by citations to previous literature (C33) and by data shown in Figure 1C. The observation of transient pri-miRNA peaks with persistent mature miRNA is consistent with the known stability differences between pri-miRNAs and mature miRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Multiple linear regression analysis based on two assumptions (transcription determines synthesis rate, degradation is proportional to miRNA abundance) accurately predicts miRNA change rates (r\u00b2=0.81). This suggests that for most miRNAs, production rate per pri-miRNA molecule and degradation rate remain relatively constant throughout embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by the regression analysis shown in Figure 1D. The model assumptions (C37-C38) are reasonable simplifications, and the high r\u00b2 value (C39) supports the conclusion that these factors largely determine miRNA dynamics. However, the authors appropriately acknowledge limitations (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Predicted miRNA change rates tend to be higher than observed in early time windows, possibly due to less efficient processing, slower pri-miRNA degradation, or maternal miRNA effects. In other time windows, prediction errors show no clear trends, suggesting constant production/degradation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C45 are supported by data in Figure 1E. Claims C42-C44 are appropriately presented as speculative explanations for the observed discrepancy. The analysis identifies a specific limitation of the model in early embryos while supporting the general conclusion for later stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Integrated analysis of mature and primary miRNAs confirms that transcription is important for determining mature miRNA expression patterns and suggests global miRNA production and degradation rates are relatively constant during embryogenesis except for early embryos. However, individual predictions may be inaccurate and some miRNAs may be regulated post-transcriptionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by the integrated analysis results. Claims C48-C49 appropriately acknowledge limitations and caveats. The overall conclusion is well-supported while recognizing that exceptions may exist and individual predictions have uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The 5' nucleotide identity influences miRNA-Argonaute interactions, with 5'-U showing highest affinity. Regression analysis coefficients associated with mature miRNA abundance were generally higher for 5'-U miRNAs than others (p=0.01), suggesting 5'-U miRNAs may be more stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is supported by citation (Frank et al., 2010) and C51 by established knowledge. However, C52 shows a statistically significant trend but the authors acknowledge many coefficients were unexpectedly positive, indicating inaccuracy in the analysis (as noted in text). Claim C53 is appropriately speculative. The computational analysis alone is insufficient to support the stability hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Experimental validation shows that mutating 5'-A to 5'-U in miR-283 and two other miRNAs results in ~20% stabilization (p<0.02). Mutating to 5'-C also causes stabilization, while 5'-G mutation has no significant effect. The miR-283 star strand is present at very low levels, confirming measurements reflect mature miRNA half-lives in Argonaute complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are well-supported by experimental data shown in Figure 3B-D and supplementary figures. The Northern blotting experiments with appropriate controls (C55) validate that the measurements reflect mature miRNA stability. The pattern of effects across different nucleotide substitutions (C56-C58) is consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Analysis of 52 mature miRNAs from 13 clusters shows that while most cluster members show similar expression patterns (adjusted p>0.01), four clusters exhibit significant differences in at least one time window. This suggests some miRNAs are regulated by additional mechanisms beyond transcriptional control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by data in Figure 4 and statistical analysis (Supplementary file 5). The expectation of co-regulation (C60-C61) is based on established knowledge, and the observation of exceptions (C62, C65) is well-documented. The inference about additional regulatory mechanisms (C66) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The mir-317 cluster consists of three miRNAs with roles in aging. Five major pri-miRNA isoforms with alternative TSSs and TTSs were identified, including a short isoform covering only mir-277. This short isoform is the main form in embryos with peak expression at 14-18hAEL, coinciding with the time window showing significant differences between miR-277 and miR-317/-34 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by citations to previous literature. Claims C70-C73 are supported by data in Figure 5A and Figure 5\u2014figure supplement 1. The identification of alternative isoforms and their correlation with differential expression patterns provides a mechanistic explanation for the observed cluster member differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Adult tissues use long pri-mir-317 isoforms as the main form, with higher relative levels of miR-317/-34 compared to miR-277 than in embryos. Histone modification changes at alternative TSS sites support the alternative TSS hypothesis. The authors favor the hypothesis that alternative TSS/TTS selection alters relative miRNA levels, though processing intermediates are not formally excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by data in Figure 5A and supplementary figures. Claim C77 is supported by ChIP-seq data (Figure 5\u2014figure supplement 2). Claim C76 is appropriately speculative. Claim C78 represents the authors' interpretation while acknowledging alternative explanations, which is appropriate given the supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The mir-317 cluster is controlled by ecdysone. In Kc167 cells, 20-HE treatment selectively down-regulates long transcripts (TSS1/2), causing stronger decrease of miR-317/-34 than miR-277. Similar trends occur in S2-R+ cells. BG3-c2 cells express only long isoforms and show similar decrease of all three miRNAs upon 20-HE treatment. These results validate that transcriptional control through multiple promoters enables differential regulation within clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 are well-supported by data in Figure 5B-C and supplementary figures. The cell culture experiments with ecdysone treatment provide direct evidence for differential regulation of pri-miRNA isoforms and resulting effects on mature miRNA levels. The validation across multiple cell lines strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The mir-309 cluster is transcribed transiently in very early embryos and is essential for maternal-to-zygotic transition, though individual miRNA roles are not well understood. After 2-4hAEL, the decrease rate of mature miRNA levels reflects degradation rates since there is no evidence for new synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by citations to previous literature and by RNA-seq data (Figure 6A). Claim C93 is a reasonable assumption based on the lack of pri-miRNA expression after 2-4hAEL. This assumption is critical for the subsequent half-life analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "mir-309 cluster miRNAs exhibit distinct degradation rates. K-means clustering divides them into two groups: miR-3/miR-309 (fast) and miR-4/-5/-6/-286 (slow). miR-3/-309 show 3-10 times faster degradation rates. Northern blotting confirms the faster disappearance, excluding sequencing artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are well-supported by data in Figure 4, Figure 6B-D, and Figure 6\u2014figure supplement 1. The clustering analysis appropriately groups miRNAs by degradation kinetics, and the Northern blotting validation (C97) excludes technical artifacts as an explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "AGO1 immunoprecipitation experiments show no obvious difference in loading efficiency between stable and unstable mir-309 cluster miRNAs. Clear reduction of mature miRNAs in supernatant indicates a large fraction are properly loaded to AGO1. Therefore, the difference in reduction rates reflects differences in mature miRNA stability within the Argonaute complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by data in Figure 6E and Figure 6\u2014figure supplement 2. The AGO1-IP experiments appropriately test and exclude the alternative hypothesis that differential loading efficiency explains the observed differences. The conclusion that stability differences occur within Argonaute complexes is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Reanalysis of D. virilis small RNA library data reveals similar trends in relative half-lives of orthologous mir-309 cluster miRNAs, suggesting rapid down-regulation of miR-3/-309 has evolutionarily conserved roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by reanalysis of published data (Ninova et al., 2014) shown in Figure 6B. The conservation of differential degradation rates across species supports the biological importance of this regulatory mechanism. However, the analysis uses different normalization methods (TMM vs spike-in) which could introduce some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "miR-3 and miR-309 share the same seed sequence and regulate overlapping target sets. A genome-wide overexpression screen showed miR-3 overexpression causes embryonic/early larval lethality, while other cluster members do not when individually overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by sequence data (Figure 7A) and citation to Bartel, 2009. Claim C104 is appropriately speculative. Claims C105-C106 are supported by citation to Bejarano et al., 2012. These observations provide context for investigating the biological importance of rapid miR-3/-309 degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Embryos overexpressing miR-3/-309 exhibit denticle organization defects, a phenotype associated with planar cell polarity (PCP) defects. Misexpression of miR-3 in the developing notum causes bristle misorientation, demonstrating biological activity in PCP in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by data in Figure 7B-C. The denticle phenotype (C107) and bristle misorientation (C109) are well-documented. The inference about PCP defects (C108) is supported by citation to Donoughe and DiNardo, 2011 and is consistent with the observed phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Vang encodes a transmembrane protein integral to the Frizzled-mediated PCP pathway. Luciferase sensor assays show Vang 3'UTR expression is significantly repressed by miR-3 co-overexpression, and this repression depends on predicted target sites. These results verify Vang 3'UTR is a bona fide target of miR-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by citations to previous literature. Claims C111-C113 are well-supported by luciferase sensor data in Figure 7D. The site-directed mutagenesis control (C112) appropriately demonstrates specificity of the miRNA-target interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Vang mRNA is up-regulated in mir-309 cluster null mutants and down-regulated upon miR-3/-309 overexpression in mixed stage embryos. In late stage embryos where miR-3/-309 are undetectable, Vang expression is not significantly altered in mutants but can be repressed by overexpression. Overexpressed miR-3/-309 levels do not exceed natural peak levels, confirming physiological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are well-supported by data in Figure 7E and Figure 7\u2014figure supplement 1. The stage-specific effects (C115-C116) are consistent with the rapid degradation of miR-3/-309 and support the biological importance of this regulation. The verification of physiological expression levels (C117-C118) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Reanalysis of RNA-seq data shows the reduction of miR-3/-309 precedes the increase of Vang mRNA, consistent with the hypothesis that rapid degradation of miR-3/-309 is biologically important. Taken together, observations support this notion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by reanalysis shown in Figure 7\u2014figure supplement 2. The temporal relationship between miRNA decrease and target mRNA increase is consistent with the proposed regulatory mechanism. The overall conclusion (C120) is well-supported by the combined experimental and computational evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "3'UTRs tend to avoid seed target sequences of co-expressed miRNAs, leaving evolutionary signatures detectable by population genetics. The hypothesis that miR-3/-309 target sites would be less strongly selected against in zygotic genes is supported by lower zygotic/maternal target allele fraction ratios for miR-3/-309 compared to other mir-309 cluster members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by citations to previous literature. Claim C123 is a reasonable hypothesis based on the low levels of miR-3/-309 in late embryos. Claim C124 is supported by population genetics analysis shown in Figure 7F and Figure 7\u2014figure supplement 3. The analysis appropriately tests the evolutionary predictions of the stability hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Derived Allele Frequency (DAF) analysis shows DAF is generally lower for maternal than zygotic mRNAs for miR-3/-309 target sites, while other mir-309 cluster miRNA target sites show more similar distributions. These results demonstrate miRNA stability has detectable effects on target site evolution and highlight the importance of miRNA degradation rates in shaping gene regulatory networks and evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by DAF analysis shown in Figure 7G and Supplementary file 6. The differential selection patterns between maternal and zygotic genes for miR-3/-309 targets provide strong evolutionary evidence for the biological importance of rapid miRNA degradation. The conclusions appropriately integrate experimental and evolutionary evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Spike-in normalization reveals dynamic changes in small RNA family abundance during embryogenesis. piRNA reads gradually decrease, associated with decreased piwi-clade Argonaute mRNA levels. Total miRNA abundance keeps increasing, a trend conserved broadly including mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 are supported by data in Figure 1B and Figure 1\u2014figure supplement 2, with appropriate citations to previous literature (C130, C133). The discussion appropriately summarizes the major findings regarding global changes in small RNA populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Despite relatively low mRNA levels of miRNA processing factors in late embryos, total miRNA levels increase ~8-fold. One possibility is that general miRNA processing activity is not rate-limiting and transcription largely determines mature miRNA levels, consistent with the predictability of miRNA changes based on transcription and mature miRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 are supported by data in Figure 1\u2014figure supplement 2 and Figure 1D-E. The discussion appropriately identifies an apparent paradox (C135) and proposes a reasonable explanation (C136-C137) consistent with the regression analysis results. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "miRNAs often form clusters and are generally co-transcribed. Some cluster transcripts form intramolecular structures interfering with Drosha processing, and processing efficiency correlates with distance from TSS. The clustered configuration likely adds another layer of regulation to miRNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 are supported by citations to previous literature. The discussion appropriately contextualizes the findings within the broader understanding of miRNA cluster biology and processing regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Due to lack of sensitive in situ detection methods for mature miRNAs, spatial patterns were mainly studied using pri-miRNA detection. The study confirms transcriptional activity is important for miRNA expression, supporting validity of pri-miRNA analyses. However, results need careful interpretation considering alternative pri-miRNA isoforms and miRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by citations and by the study's findings. The discussion appropriately provides guidance on interpreting pri-miRNA detection results based on the findings about alternative isoforms and stability differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "In Drosophila, mir-34 expression is induced in aged flies and null mutants show shortened lifespan with neurodegeneration. miR-34 regulates longevity partly through Eip74EF down-regulation. A plausible possibility is that mir-34 and ecdysone form a double negative feedback loop creating a bistable switch, supported by observations that ecdysone decreases miR-34 levels. The ecdysone pathway plays roles in longevity regulation, and the miR-34/Eip74EF axis may be an upstream mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 and C150 are supported by citations to previous literature. Claims C148-C149 and C151 are appropriately speculative but supported by the study's findings (Figure 5B-C) and previous literature. The discussion appropriately integrates the findings with previous knowledge to propose a regulatory model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "miR-277 plays roles in longevity through TOR signaling modulation and shows reduced expression in aged flies (opposite to miR-34). The independent TSS for mir-277 could enable independent regulation within the cluster. The biological significance of mir-317 cluster organization is unclear, but conservation in Capitella (>600 million years) may suggest the arrangement is essential for proper regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 are supported by citations and established knowledge. Claim C154 is a reasonable inference from the observed alternative TSS usage. Claims C155-C157 appropriately acknowledge uncertainty while noting the evolutionary conservation, which is supported by citation to Peterson et al., 2009.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "Alternative TSS selection in miRNA clusters has been noted in mammalian let-7 cluster, another deeply conserved cluster with conserved gene order. Complex cis-regulatory elements in clusters may impose evolutionary constraints maintaining gene order, explaining why cluster configuration is often preserved during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 is supported by citation to Chang et al., 2015. Claim C159 is appropriately speculative but represents a reasonable hypothesis based on the observed conservation patterns. The discussion appropriately places the findings in broader evolutionary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The mir-309 cluster is fast-evolving with frequent duplications/rearrangements in insects. Homologs show similar patterns in Drosophilids but different organization/functions in mosquitoes. In Aedes aegypti, miR-309 is transiently upregulated after blood feeding with sharp decrease by 48hPBM, suggesting conserved short half-life across dipterans despite functional divergence. The short half-life may be suitable for fast processes like oogenesis and embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 are supported by citations to previous literature and established knowledge. Claim C165 is a reasonable inference from the similar expression patterns. Claim C166 is appropriately speculative. The discussion appropriately considers the evolutionary context of miR-309 stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C167"
+    ],
+    "result": "The evolutionary patterns of miR-3/-309 target sites and misregulation of Vang upon miR-3 overexpression in late embryos suggest the importance of rapid degradation of these miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 appropriately summarizes the integrated evidence from experimental and population genetics analyses shown in Figure 7. The conclusion is well-supported by the combined results.",
+    "result_type": "MINOR"
+  }
+]

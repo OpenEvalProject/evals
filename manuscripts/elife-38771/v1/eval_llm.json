@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The FRRUC (FBXL10-RNF68-RNF2 complex) is recruited to DNA damage sites. The three proteins form a trimeric complex (C1), endogenous proteins co-localize with \u03b3H2A.X at damage sites (C2), and super-resolution imaging shows significant enrichment at DNA damage sites upon NCS treatment (C3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from co-immunoprecipitation (C1), immunofluorescence microscopy (C2), and dSTORM super-resolution imaging with cross-correlation analysis (C3). The multiple orthogonal techniques strengthen the conclusion that the FRRUC is recruited to DNA damage sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The FRRUC is rapidly recruited to laser-induced DNA damage sites with peak recruitment within one minute. GFP-FBXL10, mCherry-RNF68, and GFP-RNF2 are recruited within seconds (C6), peak recruitment occurs within one minute (C7), and RNF2 remains at lesions longer than FBXL10 and RNF68 (C8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by live cell imaging data shown in Figure 1C with quantitative kinetics measurements. The temporal resolution and quantification provide strong evidence for the rapid recruitment kinetics. The differential persistence of RNF2 is consistent with its participation in multiple complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C16"
+    ],
+    "result": "PARP1 and TIMELESS are required for FRRUC recruitment to DNA damage sites. PARP inhibition with Olaparib completely abolishes recruitment (C10, C12), while ATM, ATR, or DNA-PK inhibition does not (C11), and depletion of either PARP1 or TIMELESS abolishes recruitment (C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C16 are supported by live cell imaging data with pharmacological inhibitors and siRNA knockdown experiments shown in Figure 1C and supplementary figures. The specificity for PARP1/TIMELESS versus other DNA damage kinases strengthens the conclusion. Controls for knockdown efficiency are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The FRRUC is required for proper recruitment of cPRC1 complexes (RNF51-RNF2 and RNF110-RNF2) to DNA damage sites. FBXL10 and RNF68 recruitment is independent of RNF51/RNF110 (C21), but RNF51 and RNF110 recruitment depends on PARP1, TIMELESS, and an active FRRUC (C24, C29, C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 are supported by live cell imaging recruitment experiments with siRNA knockdown and rescue experiments using RNF68 mutants (Figure 2). The epistasis analysis showing FRRUC acts upstream of cPRC1s is well-supported. The rescue experiments with structure-function mutants (Y252D and \u0394RING) provide strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Specific amino acids in RNF68 mediate interactions with FBXL10 and RNF2. Four amino acids (QYSV at positions 251-254) are essential for FBXL10 binding (C25), Y252D mutation disrupts FBXL10 binding without affecting RNF2 interaction (C26), Y252A has no effect (C27), and RING domain deletion abrogates RNF2 binding while preserving FBXL10 interaction (C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by co-immunoprecipitation experiments with truncation and point mutants shown in Figure 2\u2014figure supplement 2. The structure-function analysis is systematic and provides clear separation-of-function mutants. These mutants are subsequently used in functional rescue experiments, strengthening their validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The FRRUC mediates H2AK119Ub1 at DNA damage sites. Knockdown of FBXL10, RNF68, or RNF2 reduces H2AK119Ub1 staining on laser damage tracks (C32), as does PARP1/TIMELESS silencing (C33). Rescue experiments confirm specificity (C34), and qChIP shows H2AK119Ub1 induction ~4.2 and ~10.2 kbp from DSBs that is FRRUC-dependent (C35, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by immunofluorescence quantification (Figure 3A) and qChIP experiments (Figure 3C) using the FokI reporter system. The rescue experiments with RNF68 mutants (C34) control for off-target effects. The spatial resolution of qChIP provides quantitative evidence for H2AK119Ub1 spreading from DSBs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The FRRUC is required for transcriptional silencing at DNA damage sites. Nascent RNA production is abolished in control cells upon FokI activation (C38), but significantly restored upon FRRUC depletion or mislocalization (C40, C42). RNAPII Ser2 phosphorylation shows similar patterns (C43). ATM inhibition also restores transcription (C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by multiple orthogonal transcription assays: YFP-MS2 reporter (Figure 4B), 5-EU incorporation (Figure 4D), and RNAPII Ser2 phosphorylation (Figure 4E). The convergence of multiple readouts strengthens the conclusion. Controls for FokI nuclease levels are provided (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The FRRUC promotes DNA damage signaling and recruitment of HRR factors. FRRUC depletion reduces RAD51, BRCA1, and pRPA2 foci (C45, C47, C48) without affecting total RAD51 levels (C46) or \u03b3H2A.X/MDC1 foci (C51, C53). Phosphorylation of RPA2 and CHK1 is reduced (C49, C50), as are ubiquitin-positive foci (C52). Rescue experiments with RNF68 mutants confirm specificity (C54, C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C57 are supported by extensive immunofluorescence foci counting (Figure 5A-B and supplements) and immunoblotting (Figure 5D). The rescue experiments with structure-function mutants (C54, C55) control for off-target effects. The preservation of \u03b3H2A.X levels (C51) indicates similar DNA damage induction across conditions. The epistasis analysis places FRRUC downstream of MDC1 but upstream of RPA2 phosphorylation and RAD51 recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The FRRUC is required for efficient homologous recombination repair (HRR). DR-GFP cells depleted of FBXL10, RNF68, or RNF2 show significantly diminished HRR (C58), as do cells with mislocalized FRRUC due to PARP1 or TIMELESS silencing (C59). Cell cycle distribution is unaffected by these depletions (C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by DR-GFP reporter assay data (Figure 5E) and flow cytometry cell cycle analysis (Figure 5\u2014figure supplement 2D). The cell cycle control (C60) is critical as it rules out indirect effects through altered cell cycle distribution. The consistency with prior reports on PARP1/TIMELESS (C59) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The FRRUC shows pathway specificity for HRR versus NHEJ. No significant reduction in NHEJ is observed upon RNF68 or RNF2 depletion (C61), but FBXL10 depletion reduces NHEJ (C62), suggesting FBXL10 may have NHEJ functions independent of RNF68 and RNF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by EJ5-GFP reporter assay data (Figure 5\u2014figure supplement 2E). The differential effects of FBXL10 versus RNF68/RNF2 depletion on NHEJ are consistent with FBXL10's participation in other protein complexes. The 53BP1 foci data support the NHEJ phenotype for FBXL10.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "H2A levels are reduced at DNA damage sites in a FRRUC-dependent manner. H2A levels are significantly reduced at FokI-induced DSBs (C64), and this reduction is inhibited by FBXL10, RNF68, or RNF2 depletion (C65), suggesting the FRRUC is involved in H2A eviction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by qChIP data (Figure 6\u2014figure supplement 1A) and are consistent with prior reports. The FRRUC-dependence of H2A reduction suggests a mechanistic link between H2AK119Ub1 and histone eviction. However, the mechanism by which ubiquitylation leads to eviction is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The FRRUC is required for H2A.Z recruitment to DNA damage sites. The H2A.Z/H2A ratio increases at DSBs 1 hour after FokI induction (C67), and this increase is abolished by FRRUC depletion (C68). The enrichment is transient (C69) and confirmed by dSTORM imaging (C70, C71). Mislocalization of FRRUC also impairs H2A.Z recruitment (C72). Rescue experiments with RNF68 mutants confirm specificity (C73, C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 are supported by qChIP data (Figure 6A-B) and dSTORM cross-correlation analysis (Figure 6C-D). The use of orthogonal techniques (qChIP and super-resolution imaging) strengthens the conclusion. The rescue experiments with structure-function mutants (C73, C74) control for off-target effects. The temporal dynamics (C69) are consistent with prior reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "TIP48 and TIP49 recruitment to DNA damage sites is independent of the FRRUC. Depletion of FBXL10, RNF68, or RNF2 does not affect TIP48 and TIP49 recruitment (C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by immunofluorescence data (Figure 6\u2014figure supplement 1G-H). This negative result is important as it suggests the FRRUC does not regulate H2A.Z incorporation through TIP48/TIP49 recruitment, but rather through a different mechanism, possibly involving H2A ubiquitylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "FRRUC-dependent H2A mono-ubiquitylation is required for H2A.Z loading. Wild-type H2A and H2A(K119/120R) are equally incorporated in chromatin (C79), but overexpression of H2A(K119/120R) reduces H2A.Z loading at DSBs (C80), indicating that H2A mono-ubiquitylation is required for proper H2A.Z loading (C81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by qChIP data (Figure 6F and Figure 6\u2014figure supplement 1I). The H2A(K119/120R) mutant provides a direct test of the requirement for H2A ubiquitylation in H2A.Z loading. The control showing equal chromatin incorporation (C79) is important. This result is consistent with the RNF68 mutant rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "H2A.Z contributes to transcriptional silencing, DNA damage signaling, and HRR downstream of the FRRUC. H2A mono-ubiquitylation is not impaired by H2A.Z silencing (C82), but H2A.Z depletion increases nascent RNA production near DSBs (C83), reduces 5-EU incorporation and RNAPII Ser2 phosphorylation at damage sites (C85), reduces RPA2 and CHK1 phosphorylation (C86), and impairs HRR (C88). \u03b3H2A.X levels are unaffected (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by multiple assays: immunofluorescence (Figure 7A), YFP-MS2 reporter (Figure 7B), 5-EU incorporation and RNAPII Ser2 staining (Figure 7C-D), immunoblotting (Figure 7E), and DR-GFP reporter (Figure 5E). The epistasis analysis showing H2A.Z acts downstream of H2AK119Ub1 (C82) is important. The convergence of multiple readouts strengthens the conclusion that H2A.Z contributes to multiple aspects of the DDR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The FRRUC is recruited to DNA damage sites in a PARP1- and TIMELESS-dependent manner and promotes H2AK119Ub1, H2A eviction, H2A.Z localization, transcriptional repression, DSB signaling, and HRR. This represents an integration of the major findings of the manuscript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 represent the main conclusions of the manuscript, integrating results from multiple experimental approaches. Each component is supported by the specific results evaluated above. The model in Figure 7F summarizes these findings. The pathway from PARP1/TIMELESS \u2192 FRRUC \u2192 H2AK119Ub1 \u2192 H2A.Z incorporation \u2192 transcriptional silencing and HRR is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The FRRUC is the most upstream ubiquitin ligase responsible for H2AK119Ub1 at DNA damage sites, with cPRC1s maintaining this modification. This is inferred from recruitment kinetics and dependency experiments showing FRRUC recruits before cPRC1s and is required for cPRC1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by the integration of recruitment kinetics data (Figure 1C, Figure 2B-C) and epistasis experiments (Figure 2A). The rapid recruitment of FRRUC (peak ~1 min) compared to cPRC1s (peak ~75 s) and the requirement of FRRUC for cPRC1 recruitment support this conclusion. However, the claim that cPRC1s 'maintain' the modification is more speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "FBXL10, RNF68, and RNF2 display very fast recruitment compared to 70 other DNA repair proteins measured in a recent study, suggesting this represents one of the most upstream events in response to genotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by comparison to published kinetics data from Aleksandrov et al., 2018. The peak recruitment within ~1 minute is indeed very rapid. However, the claim relies on a comparison to a different study in different cells (HeLa vs U-2OS), which introduces some uncertainty. The conclusion is reasonable but should be interpreted with caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The FRRUC-dependent mono-ubiquitylation of H2A is required for H2A.Z loading, but H2A.Z is not required for H2A mono-ubiquitylation. This establishes the epistatic relationship between H2AK119Ub1 and H2A.Z incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by the integration of H2A.Z depletion experiments (Figure 7A showing no effect on H2AK119Ub1) and H2A(K119/120R) overexpression experiments (Figure 6F showing reduced H2A.Z loading). This epistasis analysis clearly places H2AK119Ub1 upstream of H2A.Z incorporation. The mechanism by which ubiquitylation promotes H2A.Z loading is not elucidated but is discussed speculatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The FRRUC could be involved in transcriptional silencing by multiple means: mono-ubiquitylating H2A, facilitating H2A/H2A.Z exchange, and mono-ubiquitylating H2A.Z. H2A.Z may simultaneously loosen chromatin to facilitate DNA repair factor access and mediate transcriptional silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C117 are explicitly speculative (marked as SPECULATION in evidence_type). While the data support that the FRRUC mono-ubiquitylates H2A and promotes H2A.Z incorporation, and that both contribute to transcriptional silencing, the specific mechanisms and whether H2A.Z is mono-ubiquitylated by the FRRUC at DNA damage sites are not directly tested. These are reasonable hypotheses for future work but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The regulation of FBXL10, RNF68, and RNF2 by TIMELESS is unusual since other PARP-dependent factors (XRCC1, Ligase 3) are not affected by TIMELESS depletion, suggesting a specific role of TIMELESS in controlling DSB repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by the differential effects of TIMELESS depletion on FRRUC recruitment (abolished, Figure 1C) versus XRCC1/Ligase 3 recruitment (unaffected, Figure 1\u2014figure supplement 3B). This specificity is notable and suggests TIMELESS has distinct roles in different DNA repair pathways. The interpretation is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "ATM inhibition increases FRRUC recruitment, and ATM might limit the spread of the FRRUC and H2A mono-ubiquitylation to maintain the signal at DSB proximities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is supported by observed recruitment kinetics with ATM inhibitor (Figure 1\u2014figure supplement 2D). However, claim C129 is explicitly speculative. While the observation of increased recruitment with ATM inhibition is interesting, the interpretation that ATM limits FRRUC spread is not directly tested. Spatial analysis of FRRUC distribution with and without ATM inhibition would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "The recruitment of the FRRUC represents an early and critical regulatory step in HRR. This is the main conclusion of the manuscript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by the integration of all experimental results showing: (1) early recruitment kinetics (within 1 minute), (2) requirement for multiple downstream events (H2AK119Ub1, H2A.Z incorporation, transcriptional silencing, RAD51 recruitment), and (3) functional requirement for HRR (DR-GFP assay). The evidence strongly supports that FRRUC recruitment is an early and critical step in HRR.",
+    "result_type": "MAJOR"
+  }
+]

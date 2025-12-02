@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C217",
+      "C219",
+      "C220"
+    ],
+    "result": "The authors present HAWK, an alignment-free k-mer based method for genome-wide association mapping that counts k-mers in sequencing reads, tests for associations between k-mers and categorical phenotypes, and locally assembles significant k-mers to identify sequence differences. The method is applicable to organisms without reference genomes and can map associations to regions not in the reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 describe the core methodology, which is implemented and tested throughout the manuscript. Claims C39-C42 and C217-C220 describe the applicability and advantages of the method, which are supported by experimental validation on simulated data (C112-C115), 1000 Genomes data (C48-C49, C117-C124), and E. coli data (C197-C198, C203, C232). The method successfully identifies associations in all test cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C119",
+      "C120",
+      "C124",
+      "C221"
+    ],
+    "result": "Validation on 1000 Genomes data (87 YRI and 98 TSI individuals) shows that HAWK identifies sequences that largely agree with standard GWAS results, with more than 80% of sites found by genotype calling covered by HAWK sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C49, and C221 state the agreement between methods, which is quantified in C124 (2,658,964 significant sites from genotype calling) and supported by Figure 2a showing 80.3% overlap. The experimental design (C119-C120) uses the same reads for both methods, providing a fair comparison. This validates the core functionality of HAWK.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C41",
+      "C42",
+      "C134",
+      "C139",
+      "C140",
+      "C142",
+      "C143",
+      "C222",
+      "C224"
+    ],
+    "result": "HAWK identifies associations with multiple variant types including SNPs, indels, structural variations, and copy number variations through a single pipeline, including variants in repetitive regions and coding sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C134-C143 describe HAWK's ability to detect diverse variant types, which is demonstrated in Figure 3(a) showing breakdown of variant types (C135) and Figure 3(b) showing genomic locations (C142-C143). The method's design (C41-C42, C224) inherently enables detection of multiple variant types without requiring different pipelines, which is a key advantage over standard GWAS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "HAWK identifies 94,795 YRI-associated and 66,051 TSI-associated sequences (up to 2,666 bp and 12,467 bp respectively) that do not map to the human reference genome hg38, representing 2-4% of associated sequences with almost 60 kbp in sequences >1 kbp for YRI alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C156 provide specific quantitative results about sequences not in the reference genome, which are summarized in Table 2 and claims C225-C226. These results directly demonstrate HAWK's ability to identify associations outside the reference genome (C150, C227), which is a major advantage of the alignment-free approach. The data are internally consistent across multiple population comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C176",
+      "C177",
+      "C228",
+      "C230"
+    ],
+    "result": "Analysis of BEB vs TSI populations reveals significant differences in frequencies of non-synonymous variants in CVD-linked genes, including rs1042034 in APOB where the CC genotype has been associated with higher CVD risk, with higher prevalence of risk alleles in BEB samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 describe the analysis design and findings, supported by epidemiological context (C165-C170) and specific variant results in Table 3 (C173-C177). However, the study design has an important limitation noted in C172: CVD status of individuals was unknown, so this represents population-level differences rather than direct disease association. The findings are hypothesis-generating but require validation in case-control studies with known CVD status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C80",
+      "C183",
+      "C185",
+      "C186"
+    ],
+    "result": "Population stratification can be inferred from k-mer data using PCA on a binary matrix of k-mer presence/absence, with the first two principal components separating YRI and TSI populations while the first component correlates with sequencing depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 states that population structure can be inferred from k-mers, which is demonstrated in Figure 4(a) (C183) showing clear population separation. Claims C185-C186 interpret the PCA results. The methodology (C80) is standard and appropriately applied. This validates an important component of the HAWK pipeline for controlling confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "HAWK can correct for population stratification and other confounders using logistic regression with principal components, with simulations showing associations can be detected with small sample sizes under various conditions (e.g., 100% detection with 80% YRI cases at 100% penetrance, 80% detection at 80% penetrance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 establish the need for confounder correction, while C191-C192 show that only the first two PCs provide substantial adjustment in the YRI-TSI dataset. Simulation results (C193-C196) demonstrate the method's power under various scenarios. However, the simulations are relatively simple and may not capture all complexities of real disease associations. The approach is sound but would benefit from more extensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C197",
+      "C198",
+      "C203",
+      "C232"
+    ],
+    "result": "Application of HAWK to E. coli ampicillin resistance data (189 resistant, 52 sensitive strains) identifies associations with the \u03b2-lactamase TEM (blaTEM) gene, whose presence is known to confer ampicillin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C197-C198 describe the application to E. coli data, with C203 and C232 reporting identification of the blaTEM gene. Figure 5 shows Manhattan plots with strongest associations in the blaTEM gene region. This provides important validation in a microbial system where the causal gene is known, demonstrating HAWK's ability to correctly identify true associations. The result validates the overall approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C77",
+      "C88"
+    ],
+    "result": "HAWK uses Poisson distributions to model k-mer counts for computational efficiency and power, with Bonferroni correction for multiple testing. Simulations show Poisson-based tests have more power than logistic regression-based tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 justifies the Poisson assumption for computational efficiency, and C77 acknowledges that deviations from Poisson are possible, motivating conservative Bonferroni correction. However, C88 states logistic regression has less power based on simulations (Appendix 1-figure 4), but the manuscript also notes in C133 that false positives may result from sequencing depth discrepancies and biases. The Poisson assumption may not hold for all k-mers, particularly those affected by technical biases, and the conservative Bonferroni correction may be overly stringent. More rigorous evaluation of the distributional assumptions is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99"
+    ],
+    "result": "Significant k-mers are assembled using ABySS with hash length 25 to be robust to missing 31-mers, retaining sequences \u226549 bp (the length formed by 25-mers overlapping a SNP on both sides). Sequence pairing is not possible with small sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe the assembly methodology with clear rationale for parameter choices. C93 cites evidence that ABySS covers more sequences than other assemblers. C96 provides the mathematical justification for the 49 bp threshold. C99 acknowledges a limitation regarding sequence pairing with small samples. The methodology is sound and well-justified, though the choice of parameters could benefit from more systematic optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Validation with simulated E. coli data shows HAWK can detect different mutation types (SNPs, short indels <10 bp, long indels 100-1000 bp) with varying sample sizes and 1% sequencing error rate, with results shown in Appendix 1-figure 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 describe simulation validation using wgsim with 1% error rate (C114). The simulations test multiple variant types (C113) and sample sizes, with results in Appendix 1-figure 5 (C115). This provides important validation of HAWK's ability to detect associations under controlled conditions. However, the simulations use relatively simple scenarios and may not capture all complexities of real data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "BLAST analysis of sequences not mapping to hg38 reveals some TSI-enriched sequences map to Epstein-Barr virus (EBV) strain B95-8, a known contaminant from LCL transformation in 1000 Genomes. Other unmapped sequences align to human sequences not in the reference or have no significant hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 identify EBV contamination, which is a known issue in 1000 Genomes data (supported by citation to Santpere et al., 2014). Claims C160-C164 describe BLAST results for other unmapped sequences, showing some align to human sequences not in the reference while others have no hits. This analysis helps characterize the unmapped sequences, though exhaustive analysis is acknowledged as difficult. The identification of EBV contamination demonstrates HAWK can detect non-human sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Multiple sites in the Titin (TTN) gene show differential allele frequencies between BEB and TSI samples. TTN codes for the largest known protein, and while truncating mutations cause dilated cardiomyopathy, effects of other mutation types are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C178 reports differential allele frequencies in TTN (shown in Appendix 1-table 1), while C179-C181 provide context about TTN and known mutation effects. The findings are descriptive and appropriately cautious about interpretation given the lack of knowledge about non-truncating mutations in TTN. This represents an interesting observation but requires functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C214",
+      "C215"
+    ],
+    "result": "Conventional analysis of E. coli data using Bowtie2 mapping, Freebayes variant calling, and Eigenstrat association testing with 10 PCs yielded no genome-wide significant hits, while methods in Earle et al. 2016 are unlikely to scale to large genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C215 describe a conventional analysis pipeline that failed to detect associations (shown in Appendix 1-figure 14), while C211 critiques scalability of prior methods. This comparison demonstrates HAWK's advantages, though the failure of the conventional approach may partly reflect suboptimal analysis choices (e.g., number of PCs, variant calling parameters). The comparison supports HAWK's utility but could be more systematic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Standard GWAS approaches using microarrays or read mapping have limitations including requirement for reference genomes, difficulty with structural variations, missing heritability, and challenges with genotype calling in low coverage or repetitive regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 describe established limitations of standard GWAS approaches, supported by appropriate citations (e.g., C14 cites Altemose et al. 2014 on incomplete reference; C18 cites Zuk et al. 2012 on missing heritability; C22 cites Nielsen et al. 2012 on genotype calling challenges). These claims provide important context and motivation for developing HAWK but represent background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C45"
+    ],
+    "result": "Prior alignment-free methods exist for various applications (transcript abundance, sequence comparison, phylogeny), and bacterial GWAS methods using k-mer presence/absence cannot detect CNVs. The Iqbal et al. 2012 approach can utilize reference information while HAWK currently uses it only post-hoc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 cite prior alignment-free methods in other domains, C36 identifies a limitation of presence/absence methods, and C45 compares to Iqbal et al. 2012. These claims accurately represent prior work and position HAWK in the context of existing methods. They provide important background but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "HAWK is implemented in C++ with multi-threading for efficiency, uses modified Eigenstrat for PCA, R scripts for logistic regression, and is available at http://atifrahman.github.io/HAWK/. Analysis uses Bowtie2 for mapping to GRCh37 (intersection) or hg38 (breakdown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 describe implementation details and software availability, while C110-C111 describe downstream analysis approaches. These are straightforward methodological details that are adequately documented. Software availability (C107) is important for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C123"
+    ],
+    "result": "The 1000 Genomes validation uses population identity as phenotype to avoid confounding by population structure, with VCFtools used to extract genotype information for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 describe the clever experimental design using population identity as phenotype, which avoids confounding while providing a setting where true differences are known to exist. C123 describes use of VCFtools for genotype extraction. This is a sound validation strategy, though it tests population differentiation rather than disease association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "Some false positives may result from discrepancies in sequencing depth and sequencing biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 acknowledges potential sources of false positives. This is an important limitation that is appropriately noted. The manuscript attempts to address this through inclusion of sequencing depth as a covariate in logistic regression, but the Poisson-based test used for initial screening may still be affected by these biases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C235"
+    ],
+    "result": "Results on simulated data, 1000 Genomes data, and E. coli data provide proof-of-principle for HAWK, motivating future extensions to quantitative phenotypes and improved modeling of count randomness in population stratification detection and confounder correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C233 summarizes the validation evidence, which is supported by results throughout the manuscript. Claims C234-C235 identify important future directions, particularly extension to quantitative traits and improved statistical modeling. These are appropriate conclusions given the current proof-of-principle validation, though the method would benefit from application to real disease phenotypes.",
+    "result_type": "MINOR"
+  }
+]

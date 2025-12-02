@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The first dataset comprised 270 IpN cell recordings with an average firing frequency of 67\u00b127 Hz. Of these, 22.2% showed facilitation, 8.5% showed suppression, and 69.3% showed no clear modulation during the CS-US interval. CRs were present in at least 20% of trials in 38% of recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 provide a comprehensive characterization of the first dataset with specific counts, percentages, and statistical measures. The data collection criteria are clearly stated (C7), and the distribution of cell types is quantified with appropriate statistics (C8-C11). The behavioral data (C12) provides context for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Spike facilitation magnitude increased significantly over conditioning (r=0.413, p=0.001), and both facilitation and suppression manifested before conditioned behavior. Both types of modulation were more prevalent in recordings with conditioned behavior than without (facilitation: 29.1% vs 18%, p=0.0463; suppression: 15.5% vs 4.2%, p=0.0025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 establish temporal relationships between neural modulation and behavior with appropriate statistical tests. The correlation analysis (C13) and prevalence comparisons (C15-C16) are properly conducted with Chi-square tests. The temporal precedence of modulation before behavior (C14) is an important observation for understanding causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A second independent dataset was collected from mice showing \u226580% CRs after thorough training, with recordings within ~300 \u03bcm of microstimulation-confirmed eyelid-related IpN sites, using a 220 ms CS and 20 ms US (200 ms CS-US interval).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe the methodological improvements in the second dataset, including behavioral criteria (C17), spatial targeting (C18), and timing parameters (C19). These optimizations address potential limitations of the first dataset and provide stronger evidence for subsequent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In both datasets, facilitation cells showed significant positive trial-by-trial correlations with CR amplitude (57% in dataset 1, 70% in dataset 2). Linear mixed models predicted 0.49% and 0.64% more eyelid closure per Hz increase in facilitation for datasets 1 and 2, respectively. Temporal cross-correlations confirmed facilitation preceded eyelid behavior by 25\u00b125.6 ms (dataset 1) and 33.4\u00b119.3 ms (dataset 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 provide strong evidence for the predictive relationship between IpN facilitation and behavior across two independent datasets. The use of bootstrap testing (C20, C24), linear mixed models (C21, C25), and temporal cross-correlations (C22, C26) provides robust statistical support. The consistency across datasets strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Suppressive cells were less prevalent than facilitation cells and showed weaker correlations with behavior. In dataset 1, 23 cells (8.5%) showed suppression, with only 19% showing significant negative correlations with CR amplitude. Suppression had lower amplitudes and durations than facilitation, and temporal analyses showed near-zero or negative temporal offsets, suggesting suppression reflects rather than predicts behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C40 comprehensively characterize suppressive responses across both datasets. The statistical comparisons between suppression and facilitation (C30-C31) are appropriate, and the temporal analyses (C34, C40) provide critical evidence that suppression does not predict behavior. The consistency across datasets (C38-C40) strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C86"
+    ],
+    "result": "Optogenetic inhibition of IpN during the CS-US interval abolished CRs in all three mice (all p<0.0001), demonstrating that IpN facilitation is necessary for the expression of conditioned eyelid responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C86 provide causal evidence for the necessity of IpN facilitation in CR expression through optogenetic manipulation. The statistical significance is strong (p<0.0001), and the effect was consistent across all three mice. This complements the correlational evidence and establishes causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CS pauses (transient suppressions at 88\u00b112 ms post-CS) were observed in 7 cells in dataset 1 and 41 cells in dataset 2. Cells with CS pauses were more likely to show subsequent facilitation (71.4% vs 21%, p=0.0006 in dataset 1; 95% vs 51%, p<0.0001 in dataset 2). CS pause latency correlated significantly with CR latency (r=0.582, p<0.0001 combined datasets). CS pauses emerged after day 4 of training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 characterize CS pauses and their relationship to behavior and facilitation. The statistical associations are strong (C44, C46), and the correlation between CS pause latency and CR latency (C47) is particularly compelling. The temporal emergence during training (C49) supports the learned nature of this response. The observation of transient increases in 4 cells (C48) is noted but does not undermine the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cells with CS pauses showed significantly higher CR-related firing rate increases (41.5\u00b133.1 vs 15.2\u00b18.9 Hz, p=0.0013 in dataset 1) and higher maximum spike rate velocities (4.9\u00b11.6 vs 1.4\u00b10.5 Hz/ms, p=0.0002 in dataset 1; 5.6\u00b12.5 vs 3.6\u00b11.5 Hz/ms, p=0.0004 in dataset 2) compared to cells without CS pauses. CS pause cells were recorded less deeply in both datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate that CS pauses are associated with stronger and faster facilitation responses. The statistical comparisons are appropriate (Mann-Whitney U tests), and the findings are consistent across both datasets. The spatial relationship (C53) provides additional anatomical context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A US peak response (marked increase 10.6\u00b14.7 ms post-US) was observed in 78.2% of cells in dataset 1. US peak amplitude diminished over training (88\u00b148 vs 29\u00b144 Hz, p<0.0001) and correlated negatively with CR percentage (r=-0.426, p<0.0001) and CR amplitude (r=-0.333, p<0.0001). Among 62 recordings with US peak and CR behavior, 13 showed negative trial-by-trial correlations. US peaks co-occurred with CS-US facilitation more frequently than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 characterize US peak responses and their relationship to learning. The high prevalence (C54), temporal dynamics during training (C55), and negative correlations with behavior (C56-C57) are well-documented with appropriate statistics. The association with CS-US facilitation (C58-C59) suggests functional relationships between different response components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "US pause responses (transient suppression at 28.2\u00b14.9 ms post-US) were observed in 39% of cells in dataset 1. The majority of cells with CS pauses also showed US pauses (86% vs 40%, p=0.0012). US pauses showed spatial organization (more dorsal than US peak cells) and decreased in prevalence and magnitude over training. US pauses were less frequent in the well-trained dataset 2 (23.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 characterize US pause responses and their relationships to other neural responses and training. The co-occurrence with CS pauses (C61) suggests common mechanisms. The spatial organization (C63) and training-related changes (C64-C65) are well-documented. The lower prevalence in dataset 2 (C67) is consistent with the hypothesis that US pauses reflect climbing fiber responses that diminish with learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A second US peak (peaking at 46\u00b17 ms post-US) was observed in 39.4% of cells in dataset 1. Unlike the first US peak, the second peak grew stronger over training in recordings with poor CR performance (r=0.287, p=0.0007). In US-only trials, the second US peak was most substantial (72% prevalence, 94.6\u00b182.9 Hz amplitude), and showed remarkable similarity to the CS pause-facilitation pattern in paired trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 characterize the second US peak and its distinct properties. The differential training effects (C70-C72) distinguish it from the first US peak. The US-only trial data (C76-C77) and the similarity to CS responses (C78) provide important mechanistic insights, though C78 involves some interpretation. The statistical support is adequate throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The data suggest that dynamic modulation of IpN activity during CR generation can be affected through learned Purkinje cell simple spike suppression and through climbing fiber-mediated Purkinje cell complex spike activity, possibly in tandem with activation of mossy fiber and climbing fiber collaterals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 present interpretive conclusions about mechanisms. While C79 accurately summarizes the evidence for IpN facilitation's causal role, C80-C81 involve speculation about the relative contributions of different input pathways. The phrase 'possibly in tandem' (C81) acknowledges uncertainty, but the claims go beyond what the data directly demonstrate. Additional experiments would be needed to definitively establish the contributions of different pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "About one-third of US-responding cells in dataset 1 showed CS-US modulation (facilitation:suppression ratio 2.6:1), while 85% showed modulation in dataset 2 (ratio 4.1:1). The comprehensive trial-by-trial correlational analysis confirms the leading nature of facilitation in IpN cells, consistent with previous work showing facilitation predominates over suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 summarize key findings about the prevalence and nature of IpN modulation. The quantification is clear (C82-C83), and the interpretation (C85) is supported by the temporal analyses presented earlier. The citation of prior work (C84) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Prior work has shown that activation of IpN via optogenetic suppression of Purkinje cells is sufficient to elicit eyelid behavior, and that IpN neurons showing CR-related suppression have been hypothesized to facilitate conditioned behavior through inactivation of antagonistic muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 accurately cite prior work. These claims provide context for the current findings but do not represent new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The transient IpN spike pauses mirror CS- and US-related complex spike responses in Purkinje cells. The translation from complex spike input to pause response is supported by findings that climbing fiber activation can trigger prominent inhibition in cerebellar nuclei, with inhibition strength related to complex spike synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 interpret the IpN pause responses in the context of known cerebellar physiology. The citations to prior work (C90-C91) appropriately support the mechanistic interpretation. The similarity in timing between IpN pauses and Purkinje cell complex spikes (C89) is well-documented in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The CS pause followed by strong excitation fits with the notion of rebound depolarization in cerebellar nuclei. While rebound is well-established in vitro and can be elicited through stimulation, its spontaneous occurrence seems negligible. The current data offer evidence that rebound may occur during learning, which is relevant for models of cerebellar learning that depend on rebound depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C101 discuss rebound depolarization as a potential mechanism. While the pause-excitation pattern is consistent with rebound (C93-C94), and prior work supports the phenomenon under certain conditions (C95-C98), the evidence for spontaneous rebound is limited (C99-C100). Claim C101 appropriately frames the current data as 'some evidence' but acknowledges this remains an open question. Direct demonstration of rebound would require additional experiments (e.g., intracellular recordings, pharmacological manipulations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The US peak had an average latency of 10.6 ms (7-12 ms), consistent with both mossy fiber and climbing fiber collateral activation. Multiple lines of evidence suggest both pathways may contribute: the broad prevalence across IpN suggests mossy fiber involvement, while correlations with behavior and climbing fiber activity suggest climbing fiber contributions. The reduction over training may reflect reduced mossy fiber signaling due to eyelid protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C111 discuss the potential origins of the US peak. While the latency data (C102-C103) and various correlational observations are well-documented, the interpretation involves considerable speculation. The authors appropriately acknowledge uncertainty (e.g., 'may more appropriately fit' in C104, 'may well reflect' in C105, 'suggest it is likely' in C111), but definitive determination of the pathway(s) would require additional experiments such as selective pathway manipulations or recordings from identified input sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Considering the strong convergence of Purkinje cells onto IpN neurons (40:1), only a small portion of IpN neurons might evoke functional behavioral responses. The remaining neurons may relay general sensory information or feed into cognitive processes. This is consistent with dense population coding in the granule cell layer, which may partly result from nucleocortical feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C115 offer speculative interpretations about the functional organization of IpN. While the convergence ratio (C112) is cited from prior work, the inferences about functional vs. non-functional neurons (C112-C113) and the connections to granule cell layer coding (C114-C115) involve considerable speculation. The use of 'may' throughout appropriately indicates uncertainty, but these claims go beyond what the current data demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Climbing fiber input to the cerebellar cortex could provide an additional mechanism for eliciting spike modulation in IpN to fine-tune CR timing. These results underline the relevance of olivary climbing fibers beyond their conventional role as teaching signals, highlighting a unique attribute of the olivocerebellar system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 present interpretive conclusions about the functional significance of the findings. While C116 involves some speculation ('could provide'), it is appropriately qualified and supported by the observed relationships between CS pauses and subsequent facilitation. Claim C117 offers a broader perspective on cerebellar function that is justified by the overall pattern of results.",
+    "result_type": "MAJOR"
+  }
+]

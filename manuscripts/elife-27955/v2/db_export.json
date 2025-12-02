@@ -1,0 +1,2753 @@
+{
+  "submission": {
+    "id": "8c679ac3-3a93-4de9-a2b5-db0c5a0f6dcb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:37:54.513048Z",
+    "updated_at": "2025-12-01T20:37:54.513048Z"
+  },
+  "content": [
+    {
+      "id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "submission_id": "8c679ac3-3a93-4de9-a2b5-db0c5a0f6dcb",
+      "content_type": "manuscript",
+      "content_text": "# The Calcineurin-FoxO-MuRF1 signaling pathway regulates myofibril integrity in cardiomyocytes\n\n## Authors\n\n- Hirohito Shimizu<sup>1</sup> ([ORCID: 0000-0002-9889-3892](https://orcid.org/0000-0002-9889-3892))\n- Adam D Langenbacher<sup>1</sup> ([ORCID: 0000-0002-3752-0208](https://orcid.org/0000-0002-3752-0208))\n- Jie Huang<sup>1</sup>\n- Kevin Wang<sup>1</sup>\n- Georg Otto<sup>2</sup> ([ORCID: 0000-0002-3929-948X](https://orcid.org/0000-0002-3929-948X))\n- Robert Geisler<sup>3</sup>\n- Yibin Wang<sup>4</sup>\n- Jau-Nian Chen<sup>1</sup> ([ORCID: 0000-0001-8807-3607](https://orcid.org/0000-0001-8807-3607)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cell and Developmental Biology University of California, Los Angeles Los Angeles United States\n2. Genetics and Genomic Medicine UCL Institute of Child Health London United Kingdom\n3. Institute of Toxicology and Genetics Karlsruhe Institute of Technology Karlsruhe Germany\n4. Department of Anesthesiology David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States\n5. Department of Medicine and Physiology David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAltered Ca2+ handling is often present in diseased hearts undergoing structural remodeling and functional deterioration. However, whether Ca2+ directly regulates sarcomere structure has remained elusive. Using a zebrafish ncx1 mutant, we explored the impacts of impaired Ca2+ homeostasis on myofibril integrity. We found that the E3 ubiquitin ligase murf1 is upregulated in ncx1-deficient hearts. Intriguingly, knocking down murf1 activity or inhibiting proteasome activity preserved myofibril integrity, revealing a MuRF1-mediated proteasome degradation mechanism that is activated in response to abnormal Ca2+ homeostasis. Furthermore, we detected an accumulation of the murf1 regulator FoxO in the nuclei of ncx1-deficient cardiomyocytes. Overexpression of FoxO in wild type cardiomyocytes induced murf1 expression and caused myofibril disarray, whereas inhibiting Calcineurin activity attenuated FoxO-mediated murf1 expression and protected sarcomeres from degradation in ncx1-deficient hearts. Together, our findings reveal a novel mechanism by which Ca2+ overload disrupts myofibril integrity by activating a Calcineurin-FoxO-MuRF1-proteosome signaling pathway.\n\n## Introduction\n\nThe establishment and maintenance of rhythmic cardiac contractions require tightly regulated Ca2+ signaling and intact contractile machinery. In the heart, a small amount of Ca2+ enters cardiomyocytes upon stimulation by an action potential. This Ca2+ influx induces the release of a larger amount of Ca2+ from the sarcoplasmic reticulum (SR) resulting in an abrupt increase in cytosolic Ca2+ levels and muscle contraction. The re-sequestration of Ca2+ to the SR by SERCA2 and extrusion of Ca2+ from the cell by NCX1 allows the muscle to relax (Bers, 2002). Abnormal Ca2+ handling has been associated with cardiac diseases including heart failure and arrhythmia in humans and animal models (Luo and Anderson, 2013) and structurally defective myofibrils are also often observed in diseased hearts (Lopes and Elliott, 2014). However, whether or not there is a causal relationship between abnormal Ca2+ handling and myofibril disarray in diseased myocytes has not yet been established.\n\nThe RING finger protein MuRF1 (also known as TRIM63) is a muscle-specific E3 ubiquitin protein ligase involved in the regulation of muscle turnover in normal physiology and under pathological conditions. MuRF1 acts on several sarcomeric target proteins, tagging them with polyubiquitin chains for proteasome-dependent degradation (Kedar et al., 2004; Clarke et al., 2007; Cohen et al., 2009; Mearini et al., 2010). Through this mechanism, MuRF1 regulates normal sarcomere protein turnover and removes misfolded and/or damaged proteins in skeletal and cardiac muscles (Lyon et al., 2013; Pagan et al., 2013; Willis et al., 2014). Murf1 expression is elevated under muscle catabolic conditions and overexpression of murf1 in the heart results in a thin ventricular wall and a rapid transition to heart failure upon transaortic constriction, suggesting that MuRF1 is a major player in muscle catabolic processes (Bodine et al., 2001; Labeit et al., 2010; Baehr et al., 2011; Files et al., 2012; Gomes et al., 2012; Bodine and Baehr, 2014). Conversely, knockout of murf1 promotes resistance to muscle atrophy and an exaggerated hypertrophic response to pressure overload (Willis et al., 2007; Willis et al., 2009a; Willis et al., 2009b). In humans, patients with specific murf1 gene variants develop hypertrophic cardiomyopathy at a younger age (Chen et al., 2012; Su et al., 2014), revealing a pathological role for MuRF1 in the progression of cardiac diseases.\n\nIn skeletal muscles, the Forkhead box O (FoxO) transcription factor family serves as a nodal point controlling muscle degradation via the regulation of MuRF1 expression. Under catabolic conditions, the PI3K-Akt pathway is suppressed and hypophosphorylated FoxO translocates into the nucleus causing murf1 induction and muscle atrophy (Lecker et al., 2004; Waddell et al., 2008). Conversely, upon IGF stimulation, the phosphorylation of FoxO by activated AKT sequesters FoxO in the cytoplasm, resulting in reduced murf1 expression and an increase in myocyte mass (Sacheck et al., 2004; Stitt et al., 2004). Similarly, an AKT-FoxO-mediated suppression of murf1 expression in response to insulin has been noted in cardiac muscles (Skurk et al., 2005; Paula-Gomes et al., 2013).\n\nIn this study, we used the zebrafish tremblor/ncx1h mutant to explore the regulatory relationship between Ca2+ homeostasis and the maintenance of cardiac muscle integrity. We have previously shown that ncx1h (also known as slc8a1a) encodes a cardiac specific sodium-calcium exchanger 1 (NCX1) in zebrafish and that the tremblor (tre) mutant lacks functional NCX1h (Langenbacher et al., 2005). NCX1 is a primary Ca2+ efflux mechanism in cardiomyocytes (Ottolia et al., 2013), and consistent with this important role in Ca2+ homeostasis, cytosolic Ca2+ levels are increased and cyclic Ca2+ transients are abolished in tre/ncx1h cardiomyocytes resulting in fibrillation-like chaotic cardiac contractions (Ebert et al., 2005; Langenbacher et al., 2005; Shimizu et al., 2015). Like NCX1-/- mice, tre/ncx1h zebrafish hearts also develop severe myofibril disarray (Koushik et al., 2001; Wakimoto et al., 2003; Ebert et al., 2005), suggesting that a conserved molecular link exists between aberrant Ca2+ handling and myofibril disarray. From a microarray analysis, we found that the expression of murf1 is significantly upregulated in ncx1h-deficient hearts. This MuRF1 upregulation was responsible for the myofibril disarray in ncx1h-deficient hearts, and normal cardiac myofibrils could be restored by genetic and pharmacological manipulation of MuRF1 or proteasome activity. We also found that elevated intracellular Ca2+ levels enhanced murf1 expression via activation of Calcineurin signaling, which dephosphorylates the murf1 transcriptional regulator FoxO, leading to its nuclear translocation. Our findings reveal a novel signaling pathway in which Ca2+ homeostasis modulates the integrity of cardiac muscle structure via murf1 regulation.\n\n## Results and discussion\n\n### NCX1 is required for the maintenance of myofibril integrity in cardiomyocytes\n\nZebrafish ncx1h mutant embryos lack functional NCX1 in myocardial cells resulting in aberrant Ca2+ homeostasis and a fibrillating heart (Ebert et al., 2005; Langenbacher et al., 2005; Shimizu et al., 2015). Similar to the myofibril phenotype observed in NCX1-/- mice, sarcomeres in zebrafish ncx1h mutant cardiomyocytes are damaged (Koushik et al., 1999; Wakimoto et al., 2003; Ebert et al., 2005). To investigate whether NCX1 activity affects the assembly or the maintenance of sarcomeres in myocardial cells, we examined the distribution of \u03b1-actinin protein. In striated muscles, \u03b1-actinin is localized to the Z-line and is a good marker for assessing sarcomere structure. We found that \u03b1-actinin is organized into a periodic banding pattern in both wild type and ncx1h mutant cardiomyocytes at 30 hpf (Figure 1A), suggesting that sarcomere assembly is initiated properly in the absence of NCX1 activity. Interestingly, the sarcomeres degenerate in ncx1h mutant cardiomyocytes a day later resulting in a sporadic distribution of \u03b1-actinin (Figure 1A). Zebrafish myocardial cells of the outer curvature normally assume an elongated, flat shape by two days of development (Auman et al., 2007; Cavanaugh et al., 2015). However, ncx1h mutant cardiomyocytes fail to elongate (Figure 1B) and both atrial and ventricular chambers become dysmorphic (Figure 1C), indicating a requirement for NCX1 activity in the maintenance of myofibril integrity and cardiac chamber morphology.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig1-v2.jpg)\n\n**Figure 1.:** Wild type (WT) and tre/ncx1h (tre) mutant hearts at 30, 48 and 72 hpf. (A) Zebrafish hearts stained for \u03b1-actinin to visualize Z-lines. At 30 hpf, periodic \u03b1-actitin staining was observed in wild type and tre hearts (arrowheads). By 48 hpf, sarcomeres are disassembled in tre hearts. Scale bar, 10 \u03bcm. (B) The cell shape of cardiomyocytes was visualized by Zn8 staining. Scale bar, 10 \u03bcm. (C) Embryonic fish hearts were visualized by GFP expression in the myl7:EGFP transgenic background. Note that tre hearts become dysmorphic after two days of development. Scale bar, 50 \u03bcm.\n\n### Elevated MuRF1 expression in ncx1h-deficient hearts\n\nTo explore molecular pathways by which NCX1 influences myofibril integrity, we isolated hearts from wild type and ncx1h mutant embryos and compared their gene expression profiles. We found that the expression of Muscle Ring-finger protein-1 (MuRF1, also known as TRIM63) is significantly elevated in ncx1h mutant hearts. There are two highly homologous murf1 genes in zebrafish (murf1a/trim63a and murf1b/trim63b) (Macqueen et al., 2014). Phylogenetic analysis showed that zebrafish murf1a and murf1b cluster with other vertebrate murf1 genes (Figure 2A). Both genes span a single exon encoding peptides highly homologous to each other and to their mammalian orthologs (Figure 2B) (Postlethwait, 2007) and are expressed in striated muscles (Figure 2C) (Willis and Patterson, 2006). In situ hybridization and quantitative RT-PCR analyses further confirmed that both murf1a and 1b are upregulated in ncx1 mutant hearts (Figure 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig2-v2.jpg)\n\n**Figure 2.:** (A) Phylogenetic tree of vertebrate murf1, 2, 3 and 4 (also known as trim63, 55, 54 and 101, respectively). The tree was constructed using ClustalX with the neighbor-joining method. Zebrafish (z), Human (h), mouse (m), rat (r), chick (g), frog (x). (B) Alignment of murf1 genes from human, mouse and zebrafish. Blue boxes highlight identical amino acids and grey boxes indicate similar residues. (C) Whole-mount in situ hybridization demonstrating the expression patterns of murf1a and murf1b in the zebrafish embryo.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig3-v2.jpg)\n\n**Figure 3.:** (A) In situ hybridization analysis shows a significant increase of murf1a and murf1b expression in tre hearts. Arrowheads point to the heart. (B) Quantitative RT-PCR analysis shows an upregulation of murf1a and murf1b in tre hearts.\u00a0*\u00a0p<0.05;\u00a0**\u00a0p<0.01.\n\n### MuRF1 regulates myofibril integrity in cardiomyocytes\n\nElevated murf1 expression is associated with muscle atrophy and can induce the breakdown of myofibrils in cultured cardiomyocytes (Kedar et al., 2004). We thus asked whether MuRF1 overexpression in the heart is sufficient to induce cardiomyopathy. To this end, we generated a transgenic fish, myl7:MuRF1a-IRES-GFP, in which MuRF1 and a GFP reporter are expressed under the control of the cardiac-specific myl7 promoter (Figure 4A). As shown in Figure 4B, murf1a expression is upregulated in myl7:MuRF1a-IRES-GFP transgenic hearts. Interestingly, \u03b1-actinin failed to maintain a striated pattern in cardiomyocytes of myl7:MuRF1a-IRES-GFP embryos (Figure 4C), demonstrating that overexpression of MuRF1 leads to sarcomere disassembly in the heart. Consequently, MuRF1-overexpressing hearts become dilated (Figure 4D) and their cardiac function is compromised (Videos 1 and 2). The atrial fractional shortening of myl7:MuRF1a-IRES-GFP hearts was reduced by approximately 10% and ventricular fractional shortening by\u00a0~15% compared to non-transgenic siblings and the heart rate was also reduced by 10% (Figure 4E). Together, these findings demonstrate that overexpression of MuRF1 is sufficient to disrupt myofibril structure and impair cardiac function in vivo.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of the construct that drives cardiac-specific MuRF1a expression. (B) Murf1a expression is upregulated in the 2-day-old myl7:MuRF1a-IRES-GFP heart (right panel) compared to the wild type heart (left panel). (C) \u03b1-actinin staining in 3-day-old wild type (left panel) and transgenic (right panel) cardiomyocytes. Note that sarcomeres are disassembled in myl7:MuRF1a-IRES-GFP cardiomyocytes. (D) Live images of wild type and Tg(myl7:MuRF1a-IRES-GFP) fish at 72 hpf (left panels). Transgenic hearts are GFP positive and become dilated (inset). (E) Heart rate (HR) and atrial fractional shortening (FS) in wild type and myl7:MuRF1a-IRES-GFP embryos at 72 hpf. *p<0.05; ***p<0.001.\n\n![Video 1.](https://cdn.elifesciences.org/articles/27955/elife-27955-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/27955/elife-27955-video2.mp4.jpg)\n\n### Blocking MuRF1-induced protein degradation preserves myofibril integrity in ncx1h mutant hearts\n\nMuRF1\u2019s upregulation upon loss of ncx1h activity, along with its established function as a muscle-specific E3 ubiquitin protein ligase that targets sarcomeric proteins for proteasome degradation, make it a good candidate for the cause of the myofibril disarray present in ncx1h deficient hearts. If MuRF1 upregulation indeed causes sarcomere disassembly, one would predict that blocking MuRF1 activity or its downstream protein degradation pathway might ameliorate the myofibril defects in ncx1 mutant hearts. Since both murf1a and murf1b are upregulated in ncx1h deficient hearts, we knocked down these genes simultaneously. Western blot analysis showed that murf1a/murf1b morpholino knockdown reduced overall MuRF1 protein levels by 27% (Figure 5C). Interestingly, even this modest level of reduction in MuRF1 expression improved sarcomere integrity in ncx1h deficient hearts;\u00a0~80% of ncx1h/murf1a/murf1b triple-deficient embryos had intact sarcomeres (n\u00a0=\u00a024), a significant increase compared to ncx1h mutant hearts (~35%, n\u00a0=\u00a021; p<0.001) (Figure 5A,B). Similarly, treatment with the proteasome inhibitor MG132 suppressed the myofibril disarray caused by NCX1 deficiency. Approximately 72% of MG132-treated ncx1h mutants had a striated \u03b1-actinin pattern, indicating the presence of intact sarcomeres (n\u00a0=\u00a018; p<0.001) (Figure 5A,B), suggesting that upregulation of MuRF1 induces myofibril degradation via a proteasome-dependent mechanism in ncx1h-deficient cardiomyocytes. Prior studies have implied a connection between cardiac contraction and myofibril integrity (Berdougo et al., 2003; Auman et al., 2007; Nishii et al., 2008; Yang et al., 2014). Interestingly, ncx1h/murf1a/murf1b triple-deficient hearts never establish coordinated contractions (Video 3), demonstrating that sarcomere integrity can be uncoupled from the loss of cardiac contractions in the context of aberrant Ca2+ handling-induced heart failure.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig5-v2.jpg)\n\n**Figure 5.:** (A) Z-lines were visualized by \u03b1-actinin staining. By 72 hpf, sarcomeres are disassembled in hearts of uninjected (tre) and control morpholino-injected (tre\u00a0+ctlMO) tremblor embryos. Murf1a/murf1 b knockdown does not affect sarcomere integrity in wild type embryos (WT\u00a0+MO), but prevents sarcomere degradation in tre (tre\u00a0+MO). Similarly, treatment with a proteasome inhibitor, MG132, preserves myofibril integrity in tre cardiomyocytes (tre\u00a0+MG132). Scale bar, 10 \u03bcm. (B) Graph shows % of embryos with periodic \u03b1-actinin staining at 72 hpf. (C) Western blot detecting MuRF1 and \u03b2-actin proteins in uninjected control (WT control) and murf1a/murf1 b knockdown (MuRF1 MO) embryos. Chi-squared test, *p<0.05; **p<0.01; ***p<0.001.\n\n![Video 3.](https://cdn.elifesciences.org/articles/27955/elife-27955-video3.mp4.jpg)\n\n### Ca2+ induces MuRF1a expression\n\nOur study showed that while ncx1h mutant hearts suffer from Ca2+ handling defects and never establish normal Ca2+ cycles or heartbeats, the initial assembly of sarcomeres proceeds properly. Since the Ca2+ handling defects precede the breakdown of sarcomeres, we hypothesized that Ca2+ overload induces murf1 expression in cardiomyocytes and thereby leads to sarcomere disassembly and cardiomyopathy. To examine this hypothesis, we isolated a 6.9 kb genomic fragment upstream of murf1a, MuRF1a (\u22126906). Transgenic analysis showed that this genomic fragment was sufficient to drive GFP expression in cardiac and skeletal muscles (Figure 6A and B), a pattern resembling the endogenous murf1a expression pattern (Figure 2C), indicating that critical regulatory elements are present in this genomic fragment. We then created a MuRF1a (\u22126906) Luciferase reporter construct to test whether this murf1 upstream regulatory element is responsive to Ca2+ signaling. We transfected the MuRF1a (\u22126906) Luciferase reporter into HEK293T cells and induced Ca2+ flux by treatment with the Ca2+ ionophore A23187. Interestingly, the luciferase activity was significantly enhanced by A23187 induction (Figure 6C), demonstrating that murf1 transcription is sensitive to intracellular Ca2+ levels.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic representation of murf1a reporter constructs.\u00a0+\u00a0denotes the presence of GFP expression in the heart and somites. (B) A MuRF1a (\u22126906)-GFP transgenic embryo exhibits GFP expression in the heart and the somites (inset shows higher magnification image of the somites). The right panel shows a higher magnification image of the heart. The asterisk denotes auto-fluorescence from the yolk. (C) A23187 treatment induces luciferase activity driven by the MuRF1a (\u22126906) promoter. Values on the y-axis represent the luciferase activity relative to cells treated with DMSO for 12 hr. (D) Comparison of Ca2+ responsiveness between the MuRF1a (\u2212638) and MuRF1a (\u22126906) promoters. Values on the y-axis represent the fold increase in luciferase activity in response to A23187 treatment compared to DMSO-treated cells at each time point. ***p<0.001; NS, not significant.\n\nWe next tested the expression patterns of a series of deletion constructs of MuRF1a (\u22126906) and found that the 638 bp region immediately upstream of the transcription initiation site, MuRF1a (\u2212638), was sufficient to drive reporter gene expression in cardiac and skeletal muscles (Figure 6A). MuRF1a (\u2212638)-Luc also displayed enhanced luciferase activity upon A23187 induction at levels comparable to MuRF1a (\u22126906)-Luc (Figure 6D), indicating that the 638 bp murf1a proximal region is sufficient to direct Ca2+-mediated murf1 transcription.\n\n### Ca2+ regulates MuRF1 expression via the Calcineurin-FoxO signaling pathway\n\nCalmodulin-dependent protein kinase II (CaMKII) and the calmodulin-dependent protein phosphatase calcineurin (Cn) are two major transducers of Ca2+ signals in cardiomyocytes (Heineke and Molkentin, 2006; Maillet et al., 2013). We asked whether either of these pathways is involved in the regulation of murf1 gene expression. We treated MuRF1a (\u2212638)-Luc-transfected HEK293T cells with either KN62, a chemical inhibitor of CaMKII, or FK506, an inhibitor of Cn. KN62 treatment did not have a significant impact on MuRF1a (\u2212638)-driven expression, but FK506 treatment potently attenuated the A23187-induced increase of MuRF1a (\u2212638)-Luc reporter activity (Figure 7A), suggesting that MuRF1 expression is regulated by a Cn-mediated mechanism. This interpretation is further supported by the observations that Cn overexpression enhances A23187-induced murf1 reporter activity and that the A23187-induced MuRF1 expression is blunted by overexpression of a dominant negative form of Cn (DN-Cn) (Figure 7B) (Kahl and Means, 2004).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig7-v2.jpg)\n\n**Figure 7.:** (A) HEK293T cells were transiently transfected with the MuRF1a (\u2212638) luciferase reporter construct. Cells were incubated with FK506 or KN62 before DMSO or A23187 treatment. (B) Luciferase assay of the MuRF1a (\u2212638) reporter cotransfected with foxo3a, wild type calcineurin (WT-Cn) or dominant-negative calcineurin (DN-Cn). (C) Diagram of the MuRF1a (\u2212638) reporter serial deletion constructs generated for this study. The bar graph (right) shows the luciferase activity of each reporter construct relative to that of the empty expression plasmid. The red dotted box indicates the minimal cis-regulatory element of MuRF1a. The lower diagrams represent an alignment of the zebrafish, Xenopus, mouse and human MuRF1 promoters. Blue circles indicate putative FoxO binding sites (D) Whole-mount in situ hybridization detects foxo3a expression in the zebrafish heart. White arrowheads point to the heart. (E) HEK293T cells were transfected with the MuRF1a (\u2212638) luciferase reporter and foxo3a expression plasmid. (F) HEK293T cells were transfected with the MuRF1a (\u2212638) reporter plasmid and either a wild type or dominant negative foxo3a expression plasmid. Values on the y-axis are expressed relative to the luciferase activity of DMSO treated cells. **p<0.01; ***p<0.001; NS, not significant.\n\nWe next explored the potential molecular mechanisms by which Cn influences MuRF1 expression. We found multiple putative FoxO binding sites located the minimal regulatory regions of zebrafish murf1a/b and within the 1 kb region immediately upstream of the transcription initiation sites of the frog, mouse and human murf1 genes (Figure 7C). Since FoxO is a downstream mediator of Cn signaling (Hudson and Price, 2013) and is involved in the regulation of MuRF1 in skeletal muscles (Stitt et al., 2004; Waddell et al., 2008), we examined the possibility that FoxO mediates Cn\u2019s regulation of MuRF1 expression in cardiomyocytes. There are seven foxo genes in zebrafish (Wang et al., 2009), all of which are expressed in the developing heart (Figure 7D and Figure 8). When co-transfected with the MuRF1a(\u2212638)-Luc reporter, all zebrafish foxo genes tested were capable of enhancing the A23187-induced increase in MuRF1a(\u2212638) luciferase activity (Figure 9). FoxO3a promoted strong murf1a promoter activity (Figure 9) and was used for the remainder of our analyses. We found that FoxO3a enhanced MuRF1a(\u2212638)-Luc reporter activity in a dose-dependent manner (Figure 7E) whereas overexpression of a dominant-negative form of FoxO (DN-foxO), which lacks the transactivation domain but harbors an intact DNA binding domain (Medema et al., 2000; van den Heuvel et al., 2005), abrogated the A23187-induced MuRF1a(\u2212638)-Luc activity (Figure 7F). We next asked whether FoxO mediates Cn signaling to control MuRF1 expression. We found that cotransfection of Cn and FoxO3a enhances murf1a promoter activity (Figure 7B,E) and that FoxO could no longer induce MuRF1a expression in the presence of a dominant negative form of Cn (Figure 7B,E), demonstrating that Ca2+ influences MuRF1 expression via the Cn-FoxO signaling axis.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig8-v2.jpg)\n\n**Figure 8.:** Whole-mount in situ hybridization analysis showing foxo expression in zebrafish embryos. While foxo6a expression is diminished by 48 hpf, all the other foxo genes examined (foxo1a, 1b, 3b, 4, 6a and 6b) are persistently expressed in the heart. Arrowheads point to the heart.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig9-v2.jpg)\n\n**Figure 9.:** Luciferase activity of the MuRF1a (\u2212638) reporter cotransfected with different foxo genes. Values on the y-axis are expressed relative to the luciferase activity of DMSO treated cells. ***p<0.001.\n\n### Cn and FoxO regulate MuRF1 expression in the heart\n\nBased on our finding that a Cn-FoxO-MuRF1 regulatory pathway is activated in response to elevated intracellular Ca2+ levels in cultured cells, we explored the significance of the Cn-FoxO-MuRF1 pathway in the regulation of myofibril integrity in myocardial cells in vivo. The subcellular localization of FoxO is controlled by its phosphorylation status (Huang and Tindall, 2007). We reasoned that the Ca2+ extrusion defect in ncx1h mutant hearts could activate Cn resulting in the dephosphorylation and nuclear translocation of FoxO. To assess the subcellular localization of FoxO in cardiomyocytes, we injected the myl7:FLAG-foxo3a-IRES-EGFP plasmid into zebrafish embryos and used the FLAG-epitope as a proxy to assess the localization of FoxO. Indeed, while FoxO was primarily sequestered in the cytoplasm of cardiomyocytes in wild type zebrafish hearts, FoxO protein was enriched in the nuclei of ncx1h mutant cardiomyocytes (Figure 10A). This nuclear accumulation of FoxO correlated with the increased MuRF1 expression in ncx1h mutant hearts (Figure 3). In addition, we found that MuRF1 expression could also be induced in the heart by overexpression of FoxO3a or a constitutively active form of FoxO3a in which three phosphorylation sites were replaced by with alanines (CA-FoxO3a: T29A, S236A, S299A) (Figure 10B) (Brunet et al., 1999). Conversely, pharmacological inhibition of Cn activity by treatment with FK506 or overexpression of DN-FoxO blunted MuRF1 expression in ncx1h mutant embryos (Figure 10B). Finally, we used \u03b1-actinin as a proxy to examine whether the correlation between FoxO and MuRF1 expression translates to the preservation of sarcomere structure. We found that overexpression of CA-FoxO3a in wild type embryos resulted in a sporadic \u03b1-actinin distribution in cardiomyocytes that resembled the phenotype observed in ncx1h mutant hearts whereas overexpression of DN-FoxO restored a striated \u03b1-actinin pattern in ncx1h mutant hearts (Figure 10C).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/27955/elife-27955-fig10-v2.jpg)\n\n**Figure 10.:** (A) FoxO3a is predominantly localized in the cytoplasm of 2-day-old wild type cardiomyocytes, but is concentrated in the nuclei of tre cardiomyocytes. FoxO3a is pseudo colored in red and nuclei are labeled by DAPI in blue. Scale bar: 10 \u03bcm. (B) In situ hybridization showing stronger MuRF1 signals in tre mutant and CA-foxo3a injected two dpf hearts compared to wild type siblings. Murf1a expression in tre hearts is suppressed by DN-foxo overexpression or FK506 treatment. (C) Immunostaining of \u03b1-actinin in three dpf hearts. Intact sarcomeres were detected in control (uninjected) and DN-foxo3a injected tre hearts whereas disassembled sarcomeres were observed in tre and CA-foxo3a injected hearts. Scale bar: 5 \u03bcm. (D) Model for Ca2+ overload-induced myofibril disarray. Calcineurin dephosphorylates FoxO leading to FoxO nuclear translocation, MuRF1 expression and sarcomere disassembly.\n\n### Conclusion\n\nCompromised Ca2+ homeostasis and damaged cardiac muscle fibers are often observed in deteriorating diseased hearts, but a causative relationship between these outcomes has not previously been demonstrated. In this study, we used the zebrafish ncx1h mutant as an animal model to explore the molecular link between Ca2+ signaling and myofibril integrity in the heart. We showed that NCX1 activity is dispensable for the initial assembly of sarcomeres, but the maintenance of myofibril structure in myocardial cells requires tightly controlled Ca2+ homeostasis and MuRF1 expression.\n\nOur molecular analyses using cultured cells and in vivo studies in zebrafish reveal a FoxO-MuRF1 signaling axis that is critically involved in the Ca2+-dependent regulation of myofibril integrity in the heart. We propose that under normal physiological conditions where the cytosolic diastolic Ca2+ level is low, FoxO is sequestered in the cytoplasm and MuRF1 expression is maintained at a basal level to support the normal turnover of sarcomeric proteins. Under pathological conditions, when diastolic Ca2+ is elevated, the activation of Cn dephosphorylates FoxO and allows its nuclear translocation, leading to upregulation of MuRF1 and the degradation of myofibrils (Figure 10D). Interfering with the Cn-FoxO-MuRF1-proteosome pathway by pharmacological or genetic means can protect the sarcomeric integrity of cardiomyocytes suffering from Ca2+ dysregulation, indicating that the FoxO-MuRF1 signaling axis is a central regulator of the Ca2+-dependent growth and degradation of striated muscles. The activity of the Cn-FoxO-MuRF1 signaling pathway identified in this study is consistent with the roles of the FoxO-MuRF1 pathway in hypertrophy and atrophy responses in skeletal muscles (Sacheck et al., 2004; Stitt et al., 2004; Waddell et al., 2008) and suggests that FoxO-MuRF1 signaling is critical to the maintenance of tissue homeostasis and the response of myocytes to pathological stimuli. Furthermore, cardiac-specific overexpression of MuRF1 results in phenotypes resembling those observed in cardiomyopathy, including the breakdown of sarcomeres and a dilated heart with reduced heart rate and decreased contractility, raising the possibility that misregulation of MuRF1 contributes to the pathological progression of cardiovascular diseases. Interestingly, cardiac patients carrying specific murf1 gene variants have a poor prognosis (Chen et al., 2012; Su et al., 2014), suggesting that MuRF1 has a conserved role in the regulation of cardiac structure and function from lower vertebrates to humans and raising an intriguing possibility that the Cn-FoxO-MuRF1-proteosome pathway may be an attractive point of therapeutic intervention for cardiomyopathies. The complete loss of ncx1h activity in tremblor mutant cardiomyocytes eliminates Ca2+ cycling and causes embryonic lethality, an extreme condition that is more severe than what is observed in patients with chronic heart disease (Ebert et al., 2005; Langenbacher et al., 2005). Future studies using clinically relevant mammalian models will further illuminate the therapeutic potential of targeting the Cn-FoxO-MuRF1-proteosome pathway in the context of cardiovascular disease.\n\n## Materials and methods\n\n### Zebrafish husbandry, chemical treatment and morpholino knockdown\n\nZebrafish tremblor tc318 heterozygotes were bred in the Tg(myl7:EGFP) background and raised as previously described (Westerfield, 2000). Embryos were raised at 28.5\u00b0C and staged as previously described (Kimmel et al., 1995). For Cn or proteasome inhibition, embryos were treated with 10 \u03bcM FK506 (Sigma-Aldrich, St. Louis, MO) or 50 \u03bcM MG132 (Sigma-Aldrich) at 24 hpf. The morpholino-modified antisense oligonucleotides targeting the translation initiation sites of murf1a and murf1b (Table 1, Gene Tools) were microinjected at the 1- to 2 cell stage (8 ng each). This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols of the University of California, Los Angeles. The protocol was approved by the Chancellor's Animal Research Committee of the University of California, Los Angeles.\n\n**Table 1.**\n Primers and morpholinos used in this manuscript\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Experiment</th>\n      <th>Target gene</th>\n      <th>Sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Quantitative RT-PCR</td>\n      <td>murf1a</td>\n      <td>F: 5'- GGAAGAAAACTGCCAGGCACAG \u22123' R: 5'- CTGGGTGATCTGCTCCAGAAGATG \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>murf1b</td>\n      <td>F: 5'- CAGGACAATGCTCAACGTGCC \u22123' R: 5'- CTTGCTCTTTGCCAATACGCTCTAAGAG \u22123'</td>\n    </tr>\n    <tr>\n      <td>Molecular cloning*</td>\n      <td>murf1a</td>\n      <td>F: 5'- CTGAGGTACCAAGCAGTGAAGGTTA \u22123' R: 5'- GCTAGGTACCAGTCTCTCATTGCTT \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>murf1b</td>\n      <td>F: 5'- CTATGGATCCCTGCAGGGAATCATTTAC \u22123' R: 5'- GTTACTCGAGCATTTGTCAATGACCTTG \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>foxo1a</td>\n      <td>F: 5'- GTCTGAATTCCAGTATTGCTGGTACCATG \u22123' R: 5'- CATTGCTAGCACTACCCAGACACCCAG \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>foxo1b</td>\n      <td>F: 5'- GTATGGATCCTTGGTGATGGCAGAACC \u22123' R: 5'- GTATCTCGAGCAGCAGATGACATGTCTATC \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>foxo3a</td>\n      <td>F: 5'- GTATGGATCCGGAGTCGAGGAAATATGG \u22123' R: 5'- GTATCTCGAGCAGTTGCTTTACAGTGGAC \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>foxo3b</td>\n      <td>F: 5'- GTATGGATCCCGACCAAGACAGTAAAGAG \u22123' R: 5'- GTATCTCGAGCTGAGCAATTCCCATCAG \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>foxo4</td>\n      <td>F: 5'- GTCTGAATTCCATCGCACAATGGAGG \u22123' R: 5'- CATTGCTAGCCAACAGTGGAGTTAGCT \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>foxo6a</td>\n      <td>F: 5'- ATGAGGATCCAACTCCATTAGACACAACC \u22123' R: 5'- GCTAGAATTCGTGTGATTGTTGAGGTCC \u22123'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>foxo6b</td>\n      <td>F: 5\u2019- ATGAGGATCCCGGTTTCTTAAGCACAGAAG- 3\u2019 R: 5\u2019- ATGAGAATTCGACATTTATCCAGGCACC- 3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>MuRF1a(\u22126906) MuRF1a(\u2212639) MuRF1a(\u2212582) MuRF1a(\u2212460) MuRF1a(\u221238) Common Reverse primer for MuRF1</td>\n      <td>F: 5'- GTTAGCTAGCCGACTTACTCACTCC \u22123' F: 5'- GTACTTGGAGCGGCCGCAATAA \u22123' F: 5'- GTCAGCTAGCCCAACCCAGACAATATATTACT \u22123' F: 5'- GTCGGCTAGCGGGAAATAATAATATTGTGATTG \u22123' F: 5'- GACTGCTAGCCGGCTGGTATATAAGAC \u22123' R: 5'- GAATCTCGAGTGCTGAGGTAGAGTC \u22123'</td>\n    </tr>\n    <tr>\n      <td>Morpholino</td>\n      <td>Control murf1a murf1b</td>\n      <td>5\u2019-CCTCTTACCTCAGTTACAATTTATA-3\u2019 5\u2019-TTTGACCCGTTTGGATGTCCATTGC-3 5\u2019-AAGAGGCAGTTCGCTGAATGTCCAT-3\u2019</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Restriction enzyme sites are underlined._\n\n### Zebrafish transgenesis\n\nTransgenic constructs, myl7:MuRF1a-IRES-EGFP and myl7:FLAG-foxo3a-IRES-EGFP, were generated using the Tol2kit (Kwan et al., 2007). Wild type embryos were injected at the 1 cell stage with 10\u201320 pg of the transgene plasmid and 20 pg of mRNA encoding Tol2 transposase. Embryos with cardiac-specific EGFP expression were raised as founders.\n\n### Microarray and quantitative PCR\n\nWild type and tre mutant hearts were isolated at 48 hpf as previously described (Geoffrey Burns and MacRae, 2006). Total RNA was purified using the RNeasy micro kit (Qiagen, Valencia, CA). Microarray hybridization was performed in triplicate using the Affymetrix Zebrafish GeneChip containing 15,617 genes. Data were analyzed using scripts written in the statistical programming language R (R Development Core Team, 2014). Differentially expressed genes were identified using linear models and multiple testing correction implemented in the Limma package (Smyth, 2004). The relative expression levels of murf1a and murf1b in the wild type and tre hearts were determined by quantitative PCR using the LightCycler 480 System (Roche Applied Science). GAPDH served as the internal control for normalization. Primer sequences used in this study are listed in Table 1.\n\n### In vivo GFP reporter assay\n\nAn approximately 7.0 kb genomic fragment upstream of the zebrafish murf1a gene (ranging from \u20136906 to\u00a0+80 bp) was amplified from genomic DNA (Table 1). A deletion series of MuRF1a-EGFP construct was generated using the ERASE-A-BASE system (Promega, Madison, WI). For transient expression analysis, each deletion construct was digested with NheI and SalI to release the MuRF1a-EGFP reporter and microinjected into 1 cell stage embryos. A minimum of 20 EGFP-positive embryos of each group were examined at 1 and 2 days post fertilization using a Zeiss SV-11 epifluorescence microscope.\n\n### Whole-mount in situ hybridization, immunostaining and Western analysis\n\nWhole mount in situ hybridization, immunostaining and Western analysis were performed as previously described (Langenbacher et al., 2011; Cavanaugh et al., 2015). The antisense RNA probes were synthesized from pCS2\u00a0+expression constructs containing a partial genomic fragment (foxo5a) or full-length cDNA fragments (murf1a, murf1b, foxo1a, foxo1b, foxo3a, foxo3b, foxo4, and foxo5b) (Table 1). Goat anti-MuRF1 (1:500 dilution, R and D Systems, AF5366) and rabbit anti-goat-HRP (1:15,000 dilution, Thermo Fisher Scientific, 81\u20131620) were used for Western analysis. Phalloidin (1:50, Sigma-Aldrich), anti-sarcomeric \u03b1-actinin (1:1000, clone EA53, Sigma-Aldrich), \u03b1-FLAG (1:100, clone M2, Sigma-Aldrich) and Zn8 (1:100, Developmental Studies Hybridoma Bank, Iowa City, IA) were used for immunostaining. Fluorescence images were acquired using an LSM 510 confocal microscope (Zeiss, Germany) with a 40x water objective. Embryos were classified as having intact sarcomeres if they exhibited at least five adjacent, clearly defined Z-lines marked by \u03b1-actinin in any area of the ventricle.\n\n### Cardiac imaging and analysis\n\nVideos of Tg(myl7:MuRF1-IRES-EGFP) and Tg(myl7:EGFP) hearts were taken at 30 frames per second. Cardiac parameters were assessed by line-scan analysis as previously described (Shimizu et al., 2015).\n\n### Cell-based luciferase assay\n\nHEK293T cells (ATCC, Manassas, VA) were plated into 96-well plates at a density of 32000 cells per well and transfected with 200 ng of the MuRF1a (\u22126906)- or MuRF1a (\u2212638)-luciferase reporter construct, 50 ng of the SV40-Renilla luciferase reporter construct and expression vectors (Cn, DN-Cn, foxo3a, CA-foxo3a or DN-foxo3a). Cells were treated with 5 \u03bcM A23187 (Sigma-Aldrich), 0.5 \u03bcM FK506 (Sigma-Aldrich) or 0.5 \u03bcM KN62 (Sigma-Aldrich). Luciferase activities were determined with the Dual-Glo Luciferase Assay System (Promega) in triplicate at least three times, and the activity of firefly luciferase was normalized to that of Renilla luciferase for transfection efficiency and cell viability. The identity of the HEK293T cell line has been authenticated by STR profiling using the Promega PowerPlexX16 System recommended by the American Type Culture Collection (Laragen, Inc., Culver City, CA). No mycoplasma contamination was detected (Laragen, Inc.).\n\n### Statistics\n\nSample sizes with adequate statistical power were empirically determined based on previous experiments. Samples were randomly allocated into control and experimental groups. Experiments of each condition were performed at least three times on independent biological replicates. Results are presented as the mean\u00a0\u00b1S.E. p-values associated with all comparisons are based on unpaired two-sided Student\u2019s t-tests (n\u00a0\u2265\u00a03) unless otherwise stated. All data values were included in the analysis.\n",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "6ed716fd-794d-4350-983d-b6211d4d0ae1",
+      "submission_id": "8c679ac3-3a93-4de9-a2b5-db0c5a0f6dcb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Deborah Yelon, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27955.017](https://doi.org/10.7554/eLife.27955.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The Calcineurin-FoxO-Murf1 Signaling Pathway Regulates Myofibril Integrity in Cardiomyocytes\" for consideration by eLife. Your article has been favorably evaluated by Didier Stainier (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Shimizu et al. provide valuable insight into a potential mechanism connecting calcium overload and myofibril integrity. Prior studies in both mouse and zebrafish have shown that loss of function of the sodium-calcium exchanger Ncx1 results in myofibril disarray, but the link between this cause and effect has been unclear. Through an appealing combination of approaches both in zebrafish and in cell culture, the authors provide evidence for a model in which abnormal calcium handling in cardiomyocytes leads to calcineurin-mediated translocation of FoxO to the nucleus, upregulating Murf1, which then degrades myofibrils. The authors' experiments are cleverly designed with clear logic, and their results are nicely presented. Their conclusions advance our understanding of the mechanisms responsible for normal myofibril homeostasis and for responses to aberrant stimuli. Moreover, these findings inspire ideas for potential therapeutic approaches for cardiomyopathies.\n\nWhile most results are reported clearly and explained thoroughly, a few elements are left unexplained are could be more strongly supported. Thus, several issues should be addressed in a revised manuscript, as detailed below.\n\nEssential revisions:\n\n1) Prior studies in zebrafish (from the Xu and Yelon labs) have implicated cardiac contractility in the regulation of sarcomere integrity. While it is clear that calcium is overloaded in ncx1 mutants, cardiac contractility is also compromised. Is it possible that the latter change could contribute to the myofibril integrity defects? How might it be possible to distinguish the relative contributions of reduced contractility and calcium overload? Is there any scenario that would allow analysis of the calcineurin-FoxO-Murf1 pathway in the context of calcium overload with normal contractility (or is this impossible to achieve)? At a minimum, is it possible to demonstrate that the calcineurin-FoxO-Murf1 pathway is not triggered by reduction of contractility (perhaps in silent heart mutants, or in blebbistatin treated embryos)? Or, since murf1 morpholinos and MG132 can restore myofibril integrity in ncx1-deficient hearts, is it informative to examine cardiac rhythm in these rescued hearts?\n\n2) Another important issue relates to Ca2+ compartmentalization. Distinct patterns of Ca2+ signals are generated in space and time to stimulate specific cellular responses. Is the Ca2+ that controls muscle contraction also involved in activating calcineurin?\n\n3) Figure 4: Comparing the ventricular morphology in Figure 1C/3A vs. Figure 4B, the ventricle in Tg:murf1 embryos was relatively normal in comparison to what is seen in a ncx1 mutant. Does Tg:murf1 fully recapitulate the phenotype of the ncx1 mutant? Quantification of the level of overexpression of the transgene is likely to help with the interpretation of these data. Along the same lines, the authors state that murf1 overexpression led to impaired cardiac function. However, Figure 4E only shows a reduced atrial fraction shortening, instead of ventricular fraction shortening. Can the authors provide an assessment of ventricular performance in Tg:murf1 embryos?\n\n4) Figure 10: Figure 10A demonstrates that FoxO translocates into the nuclei of some ncx1 mutant cardiomyocytes, yet it seems that many of the ncx1 mutant cardiomyocytes exhibit a decreased level of FoxO or no FoxO. Please clarify.\n\n5) Validation of reagents: A pair of morpholinos are employed in Figure 5 to knockdown murf1a and murf1b function. The sequences of the morpholinos are provided in Table 1, but no validation of these reagents is described. Considering that the morpholinos improve sarcomere integrity in the ncx1 mutants, there is no major concern that they are causing general toxicity, but it would be helpful to describe whatever controls the authors performed for these tools.\n\n6) Validation of reagents: Figure 10A employs a FoxO antibody, but there is no description of this reagent in the Materials and methods. Where does this antibody come from, and how has it been validated?\n",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fe04effa-350e-44f6-8ba3-cd4989617098",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C1",
+      "claim": "Altered Ca2+ handling is often present in diseased hearts undergoing structural remodeling and functional deterioration.",
+      "claim_type": "EXPLICIT",
+      "source": "Altered Ca2+ handling is often present in diseased hearts undergoing structural remodeling and functional deterioration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about diseased hearts that draws from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "afd6d4a5-6799-4792-a834-fd80a29c4a27",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C2",
+      "claim": "The E3 ubiquitin ligase murf1 is upregulated in ncx1-deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the E3 ubiquitin ligase murf1 is upregulated in ncx1-deficient hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microarray analysis and quantitative RT-PCR data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "2e799ce0-0982-4f63-ab65-246fb41f2d7e",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C3",
+      "claim": "Knocking down murf1 activity preserves myofibril integrity in ncx1-deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, knocking down murf1 activity or inhibiting proteasome activity preserved myofibril integrity, revealing a MuRF1-mediated proteasome degradation mechanism that is activated in response to abnormal Ca2+ homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that morpholino knockdown of murf1 restores sarcomere structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d238a4a0-6ac0-451b-ae17-527c402a7f34",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C4",
+      "claim": "Inhibiting proteasome activity preserves myofibril integrity in ncx1-deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, knocking down murf1 activity or inhibiting proteasome activity preserved myofibril integrity, revealing a MuRF1-mediated proteasome degradation mechanism that is activated in response to abnormal Ca2+ homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that MG132 treatment restores sarcomere structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "8b4a4551-712c-44a5-b501-52144630d05d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C5",
+      "claim": "A MuRF1-mediated proteasome degradation mechanism is activated in response to abnormal Ca2+ homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, knocking down murf1 activity or inhibiting proteasome activity preserved myofibril integrity, revealing a MuRF1-mediated proteasome degradation mechanism that is activated in response to abnormal Ca2+ homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing that both murf1 knockdown and proteasome inhibition preserve myofibril integrity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "f0af1e43-db0a-4a86-bddf-a4e4f767a8bc",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C6",
+      "claim": "FoxO accumulates in the nuclei of ncx1-deficient cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we detected an accumulation of the murf1 regulator FoxO in the nuclei of ncx1-deficient cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data showing nuclear localization of FoxO in ncx1 mutant hearts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "b0ef47e4-aa4a-4101-a906-d912c5c94b96",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C7",
+      "claim": "Overexpression of FoxO in wild type cardiomyocytes induces murf1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FoxO in wild type cardiomyocytes induced murf1 expression and caused myofibril disarray, whereas inhibiting Calcineurin activity attenuated FoxO-mediated murf1 expression and protected sarcomeres from degradation in ncx1-deficient hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization data showing increased murf1 expression upon FoxO overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "12c0c44d-2ccb-4f70-9077-b87403e0236d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C8",
+      "claim": "Overexpression of FoxO in wild type cardiomyocytes causes myofibril disarray.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FoxO in wild type cardiomyocytes induced murf1 expression and caused myofibril disarray, whereas inhibiting Calcineurin activity attenuated FoxO-mediated murf1 expression and protected sarcomeres from degradation in ncx1-deficient hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by \u03b1-actinin staining data showing disrupted sarcomere structure upon FoxO overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d32760bd-405e-44aa-b517-3b1aeb6c48b6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C9",
+      "claim": "Inhibiting Calcineurin activity attenuates FoxO-mediated murf1 expression in ncx1-deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FoxO in wild type cardiomyocytes induced murf1 expression and caused myofibril disarray, whereas inhibiting Calcineurin activity attenuated FoxO-mediated murf1 expression and protected sarcomeres from degradation in ncx1-deficient hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization data showing reduced murf1 expression upon FK506 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d07b6708-4119-430f-b59f-436dbbb5c0f1",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C10",
+      "claim": "Inhibiting Calcineurin activity protects sarcomeres from degradation in ncx1-deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FoxO in wild type cardiomyocytes induced murf1 expression and caused myofibril disarray, whereas inhibiting Calcineurin activity attenuated FoxO-mediated murf1 expression and protected sarcomeres from degradation in ncx1-deficient hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by \u03b1-actinin staining data showing preserved sarcomere structure upon FK506 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "4bba7f78-4256-4f2c-b4e0-eb420b4d3ed7",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C11",
+      "claim": "Ca2+ overload disrupts myofibril integrity by activating a Calcineurin-FoxO-MuRF1-proteosome signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings reveal a novel mechanism by which Ca2+ overload disrupts myofibril integrity by activating a Calcineurin-FoxO-MuRF1-proteosome signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from the collective experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "6a0e8ef3-9886-4e0e-a737-71ec51f2734d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C12",
+      "claim": "A small amount of Ca2+ enters cardiomyocytes upon stimulation by an action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In the heart, a small amount of Ca2+ enters cardiomyocytes upon stimulation by an action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cardiac physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "019169a4-2008-485e-b221-e91834cd9a22",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C13",
+      "claim": "Ca2+ influx induces the release of a larger amount of Ca2+ from the sarcoplasmic reticulum resulting in an abrupt increase in cytosolic Ca2+ levels and muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "This Ca2+ influx induces the release of a larger amount of Ca2+ from the sarcoplasmic reticulum (SR) resulting in an abrupt increase in cytosolic Ca2+ levels and muscle contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cardiac excitation-contraction coupling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "6d7f5f61-8608-49fe-92e1-d2ebba196494",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C14",
+      "claim": "The re-sequestration of Ca2+ to the SR by SERCA2 and extrusion of Ca2+ from the cell by NCX1 allows the muscle to relax.",
+      "claim_type": "EXPLICIT",
+      "source": "The re-sequestration of Ca2+ to the SR by SERCA2 and extrusion of Ca2+ from the cell by NCX1 allows the muscle to relax (Bers, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7a0cf03f-611c-4124-9864-9e43605042d7",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C15",
+      "claim": "Abnormal Ca2+ handling has been associated with cardiac diseases including heart failure and arrhythmia in humans and animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Abnormal Ca2+ handling has been associated with cardiac diseases including heart failure and arrhythmia in humans and animal models (Luo and Anderson, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "dd500fe5-955d-4a89-a003-2d68123a4208",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C16",
+      "claim": "Structurally defective myofibrils are often observed in diseased hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "and structurally defective myofibrils are also often observed in diseased hearts (Lopes and Elliott, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "3b55a241-5d61-4d51-b487-6722fd4536f1",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C17",
+      "claim": "Whether or not there is a causal relationship between abnormal Ca2+ handling and myofibril disarray in diseased myocytes has not yet been established.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether or not there is a causal relationship between abnormal Ca2+ handling and myofibril disarray in diseased myocytes has not yet been established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ac00d7fb-85f0-429e-aa3a-5ccb330f2936",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C18",
+      "claim": "MuRF1 is a muscle-specific E3 ubiquitin protein ligase involved in the regulation of muscle turnover in normal physiology and under pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The RING finger protein MuRF1 (also known as TRIM63) is a muscle-specific E3 ubiquitin protein ligase involved in the regulation of muscle turnover in normal physiology and under pathological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MuRF1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "88dae527-00e4-498b-af89-c8c4ca44381c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C19",
+      "claim": "MuRF1 acts on several sarcomeric target proteins, tagging them with polyubiquitin chains for proteasome-dependent degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "MuRF1 acts on several sarcomeric target proteins, tagging them with polyubiquitin chains for proteasome-dependent degradation (Kedar et al., 2004; Clarke et al., 2007; Cohen et al., 2009; Mearini et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "f706ee55-6aa9-450f-9e28-7d74759edd81",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C20",
+      "claim": "MuRF1 regulates normal sarcomere protein turnover and removes misfolded and/or damaged proteins in skeletal and cardiac muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this mechanism, MuRF1 regulates normal sarcomere protein turnover and removes misfolded and/or damaged proteins in skeletal and cardiac muscles (Lyon et al., 2013; Pagan et al., 2013; Willis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "47c48561-1574-4c23-8eea-fbd1478f06d6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C21",
+      "claim": "Murf1 expression is elevated under muscle catabolic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Murf1 expression is elevated under muscle catabolic conditions and overexpression of murf1 in the heart results in a thin ventricular wall and a rapid transition to heart failure upon transaortic constriction, suggesting that MuRF1 is a major player in muscle catabolic processes (Bodine et al., 2001; Labeit et al., 2010; Baehr et al., 2011; Files et al., 2012; Gomes et al., 2012; Bodine and Baehr, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "944c0100-00f8-41b9-915f-e68cb2907df4",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C22",
+      "claim": "Overexpression of murf1 in the heart results in a thin ventricular wall and a rapid transition to heart failure upon transaortic constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Murf1 expression is elevated under muscle catabolic conditions and overexpression of murf1 in the heart results in a thin ventricular wall and a rapid transition to heart failure upon transaortic constriction, suggesting that MuRF1 is a major player in muscle catabolic processes (Bodine et al., 2001; Labeit et al., 2010; Baehr et al., 2011; Files et al., 2012; Gomes et al., 2012; Bodine and Baehr, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e7fb8d7b-8bf7-4673-8ff8-077b76daba4c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C23",
+      "claim": "MuRF1 is a major player in muscle catabolic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Murf1 expression is elevated under muscle catabolic conditions and overexpression of murf1 in the heart results in a thin ventricular wall and a rapid transition to heart failure upon transaortic constriction, suggesting that MuRF1 is a major player in muscle catabolic processes (Bodine et al., 2001; Labeit et al., 2010; Baehr et al., 2011; Files et al., 2012; Gomes et al., 2012; Bodine and Baehr, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited literature showing the effects of MuRF1 overexpression.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "b66868a3-20d6-4306-80d4-704502fa142e",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C24",
+      "claim": "Knockout of murf1 promotes resistance to muscle atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, knockout of murf1 promotes resistance to muscle atrophy and an exaggerated hypertrophic response to pressure overload (Willis et al., 2007; Willis et al., 2009a; Willis et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "bd07611f-39bf-4e9e-bdd8-8f93c94dd28c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C25",
+      "claim": "Knockout of murf1 promotes an exaggerated hypertrophic response to pressure overload.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, knockout of murf1 promotes resistance to muscle atrophy and an exaggerated hypertrophic response to pressure overload (Willis et al., 2007; Willis et al., 2009a; Willis et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "0f3f4da9-d3b8-479e-9c82-8787fa74e348",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C26",
+      "claim": "Patients with specific murf1 gene variants develop hypertrophic cardiomyopathy at a younger age.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, patients with specific murf1 gene variants develop hypertrophic cardiomyopathy at a younger age (Chen et al., 2012; Su et al., 2014), revealing a pathological role for MuRF1 in the progression of cardiac diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "6186352a-5f1f-433f-9be7-77cada715aa8",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C27",
+      "claim": "MuRF1 has a pathological role in the progression of cardiac diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, patients with specific murf1 gene variants develop hypertrophic cardiomyopathy at a younger age (Chen et al., 2012; Su et al., 2014), revealing a pathological role for MuRF1 in the progression of cardiac diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the clinical observations cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "4aed00ff-2887-49bf-a319-6f83e7a9f704",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C28",
+      "claim": "The FoxO transcription factor family serves as a nodal point controlling muscle degradation via the regulation of MuRF1 expression in skeletal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "In skeletal muscles, the Forkhead box O (FoxO) transcription factor family serves as a nodal point controlling muscle degradation via the regulation of MuRF1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FoxO function in skeletal muscle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "94b002a8-0a36-4c22-bc39-da10987b60f0",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C29",
+      "claim": "Under catabolic conditions, the PI3K-Akt pathway is suppressed and hypophosphorylated FoxO translocates into the nucleus causing murf1 induction and muscle atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Under catabolic conditions, the PI3K-Akt pathway is suppressed and hypophosphorylated FoxO translocates into the nucleus causing murf1 induction and muscle atrophy (Lecker et al., 2004; Waddell et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "15352f67-da05-430d-a07d-776623effe20",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C30",
+      "claim": "Upon IGF stimulation, the phosphorylation of FoxO by activated AKT sequesters FoxO in the cytoplasm, resulting in reduced murf1 expression and an increase in myocyte mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, upon IGF stimulation, the phosphorylation of FoxO by activated AKT sequesters FoxO in the cytoplasm, resulting in reduced murf1 expression and an increase in myocyte mass (Sacheck et al., 2004; Stitt et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "12012d54-b98f-4d47-8851-134b8c410a59",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C31",
+      "claim": "An AKT-FoxO-mediated suppression of murf1 expression in response to insulin has been noted in cardiac muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, an AKT-FoxO-mediated suppression of murf1 expression in response to insulin has been noted in cardiac muscles (Skurk et al., 2005; Paula-Gomes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "72d9d02b-7b90-45f6-bdf8-d4a808b55685",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C32",
+      "claim": "ncx1h encodes a cardiac specific sodium-calcium exchanger 1 (NCX1) in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that ncx1h (also known as slc8a1a) encodes a cardiac specific sodium-calcium exchanger 1 (NCX1) in zebrafish and that the tremblor (tre) mutant lacks functional NCX1h (Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "5e7c219c-64c4-4005-a550-e32cf3eacfb7",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C33",
+      "claim": "The tremblor (tre) mutant lacks functional NCX1h.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that ncx1h (also known as slc8a1a) encodes a cardiac specific sodium-calcium exchanger 1 (NCX1) in zebrafish and that the tremblor (tre) mutant lacks functional NCX1h (Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "a23f37d0-ad0d-49fa-b1e6-a6e8acc69945",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C34",
+      "claim": "NCX1 is a primary Ca2+ efflux mechanism in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "NCX1 is a primary Ca2+ efflux mechanism in cardiomyocytes (Ottolia et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "6970b7f4-2b3b-49ab-8757-482594929f06",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C35",
+      "claim": "Cytosolic Ca2+ levels are increased in tre/ncx1h cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "and consistent with this important role in Ca2+ homeostasis, cytosolic Ca2+ levels are increased and cyclic Ca2+ transients are abolished in tre/ncx1h cardiomyocytes resulting in fibrillation-like chaotic cardiac contractions (Ebert et al., 2005; Langenbacher et al., 2005; Shimizu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "f2b95296-98d2-482b-8e96-f21f11b4fe62",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C36",
+      "claim": "Cyclic Ca2+ transients are abolished in tre/ncx1h cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "and consistent with this important role in Ca2+ homeostasis, cytosolic Ca2+ levels are increased and cyclic Ca2+ transients are abolished in tre/ncx1h cardiomyocytes resulting in fibrillation-like chaotic cardiac contractions (Ebert et al., 2005; Langenbacher et al., 2005; Shimizu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d58c85fe-8bf8-4118-98fc-65ac59ce3a1c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C37",
+      "claim": "tre/ncx1h cardiomyocytes exhibit fibrillation-like chaotic cardiac contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "and consistent with this important role in Ca2+ homeostasis, cytosolic Ca2+ levels are increased and cyclic Ca2+ transients are abolished in tre/ncx1h cardiomyocytes resulting in fibrillation-like chaotic cardiac contractions (Ebert et al., 2005; Langenbacher et al., 2005; Shimizu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e53bdba4-f85a-4f6a-919d-98afbb228221",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C38",
+      "claim": "tre/ncx1h zebrafish hearts develop severe myofibril disarray.",
+      "claim_type": "EXPLICIT",
+      "source": "Like NCX1-/- mice, tre/ncx1h zebrafish hearts also develop severe myofibril disarray (Koushik et al., 2001; Wakimoto et al., 2003; Ebert et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "73d1534f-66d4-47b2-ac7b-18ecee73351b",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C39",
+      "claim": "NCX1-/- mice develop severe myofibril disarray.",
+      "claim_type": "EXPLICIT",
+      "source": "Like NCX1-/- mice, tre/ncx1h zebrafish hearts also develop severe myofibril disarray (Koushik et al., 2001; Wakimoto et al., 2003; Ebert et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ddb1d067-7ae6-4945-af7a-11af54dd4741",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C40",
+      "claim": "A conserved molecular link exists between aberrant Ca2+ handling and myofibril disarray.",
+      "claim_type": "EXPLICIT",
+      "source": "Like NCX1-/- mice, tre/ncx1h zebrafish hearts also develop severe myofibril disarray (Koushik et al., 2001; Wakimoto et al., 2003; Ebert et al., 2005), suggesting that a conserved molecular link exists between aberrant Ca2+ handling and myofibril disarray.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of phenotypes between mice and zebrafish.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "10bc0133-64c1-4b9f-b1c5-ba0c91bd2ae6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C41",
+      "claim": "The expression of murf1 is significantly upregulated in ncx1h-deficient hearts based on microarray analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "From a microarray analysis, we found that the expression of murf1 is significantly upregulated in ncx1h-deficient hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microarray data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "a4474c46-4609-4453-81d2-0e51537c33aa",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C42",
+      "claim": "MuRF1 upregulation is responsible for the myofibril disarray in ncx1h-deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "This MuRF1 upregulation was responsible for the myofibril disarray in ncx1h-deficient hearts, and normal cardiac myofibrils could be restored by genetic and pharmacological manipulation of MuRF1 or proteasome activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue experiments showing that reducing MuRF1 activity restores myofibril integrity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "fe88d581-f625-4501-a353-642e2b709343",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C43",
+      "claim": "Normal cardiac myofibrils can be restored by genetic and pharmacological manipulation of MuRF1 or proteasome activity in ncx1-deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "This MuRF1 upregulation was responsible for the myofibril disarray in ncx1h-deficient hearts, and normal cardiac myofibrils could be restored by genetic and pharmacological manipulation of MuRF1 or proteasome activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing rescue of sarcomere structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "6f617e8e-ac32-436b-9ad4-671bc0f2c100",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C44",
+      "claim": "Elevated intracellular Ca2+ levels enhance murf1 expression via activation of Calcineurin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that elevated intracellular Ca2+ levels enhanced murf1 expression via activation of Calcineurin signaling, which dephosphorylates the murf1 transcriptional regulator FoxO, leading to its nuclear translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase assays and pharmacological inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "4cfcdf23-378a-46f7-af9a-43e31763b0bc",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C45",
+      "claim": "Calcineurin dephosphorylates the murf1 transcriptional regulator FoxO, leading to its nuclear translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that elevated intracellular Ca2+ levels enhanced murf1 expression via activation of Calcineurin signaling, which dephosphorylates the murf1 transcriptional regulator FoxO, leading to its nuclear translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed nuclear accumulation of FoxO in ncx1 mutants and the effects of calcineurin inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "fbec5a5b-0d70-4d12-b95c-84915a8a5f2d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C46",
+      "claim": "\u03b1-actinin is organized into a periodic banding pattern in both wild type and ncx1h mutant cardiomyocytes at 30 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03b1-actinin is organized into a periodic banding pattern in both wild type and ncx1h mutant cardiomyocytes at 30 hpf (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "89387a26-b071-4f02-81cb-7a181eb6d2ac",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C47",
+      "claim": "Sarcomere assembly is initiated properly in the absence of NCX1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03b1-actinin is organized into a periodic banding pattern in both wild type and ncx1h mutant cardiomyocytes at 30 hpf (Figure 1A), suggesting that sarcomere assembly is initiated properly in the absence of NCX1 activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that sarcomeres are initially organized normally in ncx1 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d7cf776f-6249-4499-a6e7-cb80194b2d86",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C48",
+      "claim": "The sarcomeres degenerate in ncx1h mutant cardiomyocytes a day later resulting in a sporadic distribution of \u03b1-actinin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the sarcomeres degenerate in ncx1h mutant cardiomyocytes a day later resulting in a sporadic distribution of \u03b1-actinin (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "57221111-66ae-44db-8d01-ec20dc32d2f6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C49",
+      "claim": "Zebrafish myocardial cells of the outer curvature normally assume an elongated, flat shape by two days of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish myocardial cells of the outer curvature normally assume an elongated, flat shape by two days of development (Auman et al., 2007; Cavanaugh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "1b4ea57d-ea7b-4ab2-ae95-af9cb7eab26d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C50",
+      "claim": "ncx1h mutant cardiomyocytes fail to elongate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ncx1h mutant cardiomyocytes fail to elongate (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Zn8 staining data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "599e4ced-2251-4bb4-b06c-7c8600268df8",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C51",
+      "claim": "Both atrial and ventricular chambers become dysmorphic in ncx1h mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "and both atrial and ventricular chambers become dysmorphic (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "de9046d6-d31c-406a-8d10-09da796ec4ce",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C52",
+      "claim": "NCX1 activity is required for the maintenance of myofibril integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating a requirement for NCX1 activity in the maintenance of myofibril integrity and cardiac chamber morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the progressive degeneration of sarcomeres in ncx1 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "b8ff3c73-c460-40f3-b702-df138a673c85",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C53",
+      "claim": "NCX1 activity is required for cardiac chamber morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating a requirement for NCX1 activity in the maintenance of myofibril integrity and cardiac chamber morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dysmorphic chambers observed in ncx1 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d1493776-9a01-41fd-a737-0549ef1821d7",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C54",
+      "claim": "There are two highly homologous murf1 genes in zebrafish (murf1a/trim63a and murf1b/trim63b).",
+      "claim_type": "EXPLICIT",
+      "source": "There are two highly homologous murf1 genes in zebrafish (murf1a/trim63a and murf1b/trim63b) (Macqueen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "5f9612b7-8fd0-4f9a-a511-102523e1cc72",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C55",
+      "claim": "Zebrafish murf1a and murf1b cluster with other vertebrate murf1 genes in phylogenetic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis showed that zebrafish murf1a and murf1b cluster with other vertebrate murf1 genes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic tree data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "698938a9-5ad8-44cc-a359-f0baec7c9092",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C56",
+      "claim": "Both murf1a and murf1b genes span a single exon encoding peptides highly homologous to each other and to their mammalian orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes span a single exon encoding peptides highly homologous to each other and to their mammalian orthologs (Figure 2B) (Postlethwait, 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 2B and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "9cfdbb5b-f1d2-4c9c-a133-1a04451cec3c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C57",
+      "claim": "murf1a and murf1b are expressed in striated muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "and are expressed in striated muscles (Figure 2C) (Willis and Patterson, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 2C and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "43fb2b23-22f6-4a13-9500-001df64874e6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C58",
+      "claim": "Both murf1a and murf1b are upregulated in ncx1 mutant hearts as confirmed by in situ hybridization.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization and quantitative RT-PCR analyses further confirmed that both murf1a and 1b are upregulated in ncx1 mutant hearts (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "246cae0b-af4f-4be2-b8d3-a396e936ebf4",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C59",
+      "claim": "Both murf1a and murf1b are upregulated in ncx1 mutant hearts as confirmed by quantitative RT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization and quantitative RT-PCR analyses further confirmed that both murf1a and 1b are upregulated in ncx1 mutant hearts (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative RT-PCR data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d8050903-1706-40cd-93a7-d8e69ae557fe",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C60",
+      "claim": "Elevated murf1 expression is associated with muscle atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated murf1 expression is associated with muscle atrophy and can induce the breakdown of myofibrils in cultured cardiomyocytes (Kedar et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "91e787b7-4c82-45a5-b14e-5c0c3249a316",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C61",
+      "claim": "Elevated murf1 expression can induce the breakdown of myofibrils in cultured cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated murf1 expression is associated with muscle atrophy and can induce the breakdown of myofibrils in cultured cardiomyocytes (Kedar et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "361d1cf1-b343-4eb8-b602-ebf48a2c2816",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C62",
+      "claim": "murf1a expression is upregulated in myl7:MuRF1a-IRES-GFP transgenic hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4B, murf1a expression is upregulated in myl7:MuRF1a-IRES-GFP transgenic hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "66905df2-f3b6-498f-8886-6744919e05f0",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C63",
+      "claim": "\u03b1-actinin fails to maintain a striated pattern in cardiomyocytes of myl7:MuRF1a-IRES-GFP embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, \u03b1-actinin failed to maintain a striated pattern in cardiomyocytes of myl7:MuRF1a-IRES-GFP embryos (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7dbb8d45-9089-42bc-b7c8-79ee12c5efdb",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C64",
+      "claim": "Overexpression of MuRF1 leads to sarcomere disassembly in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, \u03b1-actinin failed to maintain a striated pattern in cardiomyocytes of myl7:MuRF1a-IRES-GFP embryos (Figure 4C), demonstrating that overexpression of MuRF1 leads to sarcomere disassembly in the heart.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the disrupted \u03b1-actinin pattern observed in MuRF1-overexpressing hearts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "4561ccd6-966c-437b-8afe-aa43abb6a4da",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C65",
+      "claim": "MuRF1-overexpressing hearts become dilated.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, MuRF1-overexpressing hearts become dilated (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "4ed9d0f9-c88c-40ad-8f4a-119da0d95f76",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C66",
+      "claim": "Cardiac function is compromised in MuRF1-overexpressing hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, MuRF1-overexpressing hearts become dilated (Figure 4D) and their cardiac function is compromised (Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by video data and functional measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "0fb0b730-072d-489f-ad5e-ef9dac39e002",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C67",
+      "claim": "The atrial fractional shortening of myl7:MuRF1a-IRES-GFP hearts is reduced by approximately 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "The atrial fractional shortening of myl7:MuRF1a-IRES-GFP hearts was reduced by approximately 10% and ventricular fractional shortening by ~15% compared to non-transgenic siblings and the heart rate was also reduced by 10% (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative cardiac function data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "26d9f862-9a1d-4af2-9e12-1700344f4252",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C68",
+      "claim": "The ventricular fractional shortening of myl7:MuRF1a-IRES-GFP hearts is reduced by approximately 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "The atrial fractional shortening of myl7:MuRF1a-IRES-GFP hearts was reduced by approximately 10% and ventricular fractional shortening by ~15% compared to non-transgenic siblings and the heart rate was also reduced by 10% (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative cardiac function data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "c97a995c-b0a6-4024-9e68-d68ba294cf85",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C69",
+      "claim": "The heart rate of myl7:MuRF1a-IRES-GFP hearts is reduced by 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "The atrial fractional shortening of myl7:MuRF1a-IRES-GFP hearts was reduced by approximately 10% and ventricular fractional shortening by ~15% compared to non-transgenic siblings and the heart rate was also reduced by 10% (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative cardiac function data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "616e2a87-70ae-41c8-b089-42c1ee68b75e",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C70",
+      "claim": "Overexpression of MuRF1 is sufficient to disrupt myofibril structure and impair cardiac function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings demonstrate that overexpression of MuRF1 is sufficient to disrupt myofibril structure and impair cardiac function in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the collective data showing sarcomere disassembly and reduced cardiac function in MuRF1-overexpressing hearts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "77328b12-7b6d-4536-bce2-8a96634fbfe3",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C71",
+      "claim": "murf1a/murf1b morpholino knockdown reduces overall MuRF1 protein levels by 27%.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed that murf1a/murf1b morpholino knockdown reduced overall MuRF1 protein levels by 27% (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "fca05440-7467-4ebd-997a-a0b2a363013d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C72",
+      "claim": "A modest level of reduction in MuRF1 expression improves sarcomere integrity in ncx1h deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even this modest level of reduction in MuRF1 expression improved sarcomere integrity in ncx1h deficient hearts; ~80% of ncx1h/murf1a/murf1b triple-deficient embryos had intact sarcomeres (n = 24), a significant increase compared to ncx1h mutant hearts (~35%, n = 21; p<0.001) (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data and quantification shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "667218e5-363a-4083-9405-dd107987b090",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C73",
+      "claim": "Approximately 80% of ncx1h/murf1a/murf1b triple-deficient embryos have intact sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even this modest level of reduction in MuRF1 expression improved sarcomere integrity in ncx1h deficient hearts; ~80% of ncx1h/murf1a/murf1b triple-deficient embryos had intact sarcomeres (n = 24), a significant increase compared to ncx1h mutant hearts (~35%, n = 21; p<0.001) (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data and quantification shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "619d83d7-3a9b-41d3-87b9-179a1f20012b",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C74",
+      "claim": "Approximately 35% of ncx1h mutant hearts have intact sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even this modest level of reduction in MuRF1 expression improved sarcomere integrity in ncx1h deficient hearts; ~80% of ncx1h/murf1a/murf1b triple-deficient embryos had intact sarcomeres (n = 24), a significant increase compared to ncx1h mutant hearts (~35%, n = 21; p<0.001) (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data and quantification shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "be604f69-b2dd-465e-b90f-5ecb238ac85d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C75",
+      "claim": "Treatment with the proteasome inhibitor MG132 suppresses the myofibril disarray caused by NCX1 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, treatment with the proteasome inhibitor MG132 suppressed the myofibril disarray caused by NCX1 deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data showing preserved sarcomere structure upon MG132 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "67c19764-10ef-4eee-9e67-8d499d3e3cc6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C76",
+      "claim": "Approximately 72% of MG132-treated ncx1h mutants have a striated \u03b1-actinin pattern, indicating the presence of intact sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 72% of MG132-treated ncx1h mutants had a striated \u03b1-actinin pattern, indicating the presence of intact sarcomeres (n = 18; p<0.001) (Figure 5A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data and quantification shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "72e96592-e279-4045-a462-ae7fc834aa46",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C77",
+      "claim": "Upregulation of MuRF1 induces myofibril degradation via a proteasome-dependent mechanism in ncx1h-deficient cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 72% of MG132-treated ncx1h mutants had a striated \u03b1-actinin pattern, indicating the presence of intact sarcomeres (n = 18; p<0.001) (Figure 5A,B), suggesting that upregulation of MuRF1 induces myofibril degradation via a proteasome-dependent mechanism in ncx1h-deficient cardiomyocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the rescue of sarcomere structure by proteasome inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ef2f8b50-6f52-42e0-92d7-15b141035054",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C78",
+      "claim": "Prior studies have implied a connection between cardiac contraction and myofibril integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have implied a connection between cardiac contraction and myofibril integrity (Berdougo et al., 2003; Auman et al., 2007; Nishii et al., 2008; Yang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7f585350-8568-4a1f-bb3e-b07ec4d43b03",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C79",
+      "claim": "ncx1h/murf1a/murf1b triple-deficient hearts never establish coordinated contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ncx1h/murf1a/murf1b triple-deficient hearts never establish coordinated contractions (Video 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by video data shown in Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "f18440d9-cbf2-4406-8898-aeee00fad266",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C80",
+      "claim": "Sarcomere integrity can be uncoupled from the loss of cardiac contractions in the context of aberrant Ca2+ handling-induced heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ncx1h/murf1a/murf1b triple-deficient hearts never establish coordinated contractions (Video 3), demonstrating that sarcomere integrity can be uncoupled from the loss of cardiac contractions in the context of aberrant Ca2+ handling-induced heart failure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that sarcomeres can be preserved despite continued contractile dysfunction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "6409c2f3-93b6-4891-bc3e-638a549cdf1c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C81",
+      "claim": "The 6.9 kb genomic fragment upstream of murf1a is sufficient to drive GFP expression in cardiac and skeletal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic analysis showed that this genomic fragment was sufficient to drive GFP expression in cardiac and skeletal muscles (Figure 6A and B), a pattern resembling the endogenous murf1a expression pattern (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transgenic reporter data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7d061fd7-67fd-4561-a216-996b4082fc7a",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C82",
+      "claim": "The MuRF1a (\u22126906) genomic fragment drives GFP expression in a pattern resembling the endogenous murf1a expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic analysis showed that this genomic fragment was sufficient to drive GFP expression in cardiac and skeletal muscles (Figure 6A and B), a pattern resembling the endogenous murf1a expression pattern (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of transgenic reporter and in situ hybridization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7bc98bfa-df33-407a-90ea-6648d706535a",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C83",
+      "claim": "Critical regulatory elements are present in the 6.9 kb genomic fragment upstream of murf1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic analysis showed that this genomic fragment was sufficient to drive GFP expression in cardiac and skeletal muscles (Figure 6A and B), a pattern resembling the endogenous murf1a expression pattern (Figure 2C), indicating that critical regulatory elements are present in this genomic fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that the fragment recapitulates endogenous expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "385aa83e-a20c-44af-b8af-74178253aff5",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C84",
+      "claim": "The luciferase activity driven by the MuRF1a (\u22126906) promoter is significantly enhanced by A23187 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the luciferase activity was significantly enhanced by A23187 induction (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "125038b6-c861-46a5-919f-3ef52e557e76",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C85",
+      "claim": "murf1 transcription is sensitive to intracellular Ca2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the luciferase activity was significantly enhanced by A23187 induction (Figure 6C), demonstrating that murf1 transcription is sensitive to intracellular Ca2+ levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the Ca2+ ionophore-induced increase in luciferase activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "1aac16f4-5ac8-4466-aba7-1a59e114f572",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C86",
+      "claim": "The 638 bp region immediately upstream of the transcription initiation site is sufficient to drive reporter gene expression in cardiac and skeletal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the expression patterns of a series of deletion constructs of MuRF1a (\u22126906) and found that the 638 bp region immediately upstream of the transcription initiation site, MuRF1a (\u2212638), was sufficient to drive reporter gene expression in cardiac and skeletal muscles (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transgenic reporter data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e8d85d05-7b33-4250-a84e-4f903cdb8ce8",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C87",
+      "claim": "MuRF1a (\u2212638)-Luc displays enhanced luciferase activity upon A23187 induction at levels comparable to MuRF1a (\u22126906)-Luc.",
+      "claim_type": "EXPLICIT",
+      "source": "MuRF1a (\u2212638)-Luc also displayed enhanced luciferase activity upon A23187 induction at levels comparable to MuRF1a (\u22126906)-Luc (Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "5bf68773-af1b-48aa-bf54-7e1b56a954cd",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C88",
+      "claim": "The 638 bp murf1a proximal region is sufficient to direct Ca2+-mediated murf1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "MuRF1a (\u2212638)-Luc also displayed enhanced luciferase activity upon A23187 induction at levels comparable to MuRF1a (\u22126906)-Luc (Figure 6D), indicating that the 638 bp murf1a proximal region is sufficient to direct Ca2+-mediated murf1 transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparable Ca2+ responsiveness of the shorter construct.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "9a768bd4-f4aa-4252-a129-c56d8cf4a886",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C89",
+      "claim": "CaMKII and calcineurin are two major transducers of Ca2+ signals in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Calmodulin-dependent protein kinase II (CaMKII) and the calmodulin-dependent protein phosphatase calcineurin (Cn) are two major transducers of Ca2+ signals in cardiomyocytes (Heineke and Molkentin, 2006; Maillet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ac9f5b3c-4732-4c56-8ea1-8f1a72574bd7",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C90",
+      "claim": "KN62 treatment does not have a significant impact on MuRF1a (\u2212638)-driven expression.",
+      "claim_type": "EXPLICIT",
+      "source": "KN62 treatment did not have a significant impact on MuRF1a (\u2212638)-driven expression, but FK506 treatment potently attenuated the A23187-induced increase of MuRF1a (\u2212638)-Luc reporter activity (Figure 7A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "c06510e6-4940-42aa-ab9a-5f6f9c06118c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C91",
+      "claim": "FK506 treatment potently attenuates the A23187-induced increase of MuRF1a (\u2212638)-Luc reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "KN62 treatment did not have a significant impact on MuRF1a (\u2212638)-driven expression, but FK506 treatment potently attenuated the A23187-induced increase of MuRF1a (\u2212638)-Luc reporter activity (Figure 7A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e1510389-6535-4995-a4e4-87e3f3acd2ea",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C92",
+      "claim": "MuRF1 expression is regulated by a Cn-mediated mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "KN62 treatment did not have a significant impact on MuRF1a (\u2212638)-driven expression, but FK506 treatment potently attenuated the A23187-induced increase of MuRF1a (\u2212638)-Luc reporter activity (Figure 7A), suggesting that MuRF1 expression is regulated by a Cn-mediated mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the selective effect of the calcineurin inhibitor FK506.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "54b73980-3dbd-4af0-9e95-920d76c186a4",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C93",
+      "claim": "Cn overexpression enhances A23187-induced murf1 reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is further supported by the observations that Cn overexpression enhances A23187-induced murf1 reporter activity and that the A23187-induced MuRF1 expression is blunted by overexpression of a dominant negative form of Cn (DN-Cn) (Figure 7B) (Kahl and Means, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "fa097e80-66f9-4373-b707-2f3e422e5aac",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C94",
+      "claim": "The A23187-induced MuRF1 expression is blunted by overexpression of a dominant negative form of Cn (DN-Cn).",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is further supported by the observations that Cn overexpression enhances A23187-induced murf1 reporter activity and that the A23187-induced MuRF1 expression is blunted by overexpression of a dominant negative form of Cn (DN-Cn) (Figure 7B) (Kahl and Means, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "fe4bb5ef-d506-4626-a4dc-30d58db81ccd",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C95",
+      "claim": "Multiple putative FoxO binding sites are located in the minimal regulatory regions of zebrafish murf1a/b.",
+      "claim_type": "EXPLICIT",
+      "source": "We found multiple putative FoxO binding sites located the minimal regulatory regions of zebrafish murf1a/b and within the 1 kb region immediately upstream of the transcription initiation sites of the frog, mouse and human murf1 genes (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "df482e9b-f9e9-4326-a416-f9be5b4d7ffe",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C96",
+      "claim": "Multiple putative FoxO binding sites are located within the 1 kb region immediately upstream of the transcription initiation sites of the frog, mouse and human murf1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found multiple putative FoxO binding sites located the minimal regulatory regions of zebrafish murf1a/b and within the 1 kb region immediately upstream of the transcription initiation sites of the frog, mouse and human murf1 genes (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d75317ea-e4ff-4b95-b32a-663e1b8d0440",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C97",
+      "claim": "FoxO is a downstream mediator of Cn signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Since FoxO is a downstream mediator of Cn signaling (Hudson and Price, 2013) and is involved in the regulation of MuRF1 in skeletal muscles (Stitt et al., 2004; Waddell et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "88f4ecad-41b8-40bb-8674-29359b692458",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C98",
+      "claim": "FoxO is involved in the regulation of MuRF1 in skeletal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Since FoxO is a downstream mediator of Cn signaling (Hudson and Price, 2013) and is involved in the regulation of MuRF1 in skeletal muscles (Stitt et al., 2004; Waddell et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "5dbd786d-29ce-4dd1-8d82-21673f31cf1a",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C99",
+      "claim": "There are seven foxo genes in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "There are seven foxo genes in zebrafish (Wang et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "75237276-cb76-4da1-b8c6-d49320d544fb",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C100",
+      "claim": "All seven foxo genes are expressed in the developing heart.",
+      "claim_type": "EXPLICIT",
+      "source": "all of which are expressed in the developing heart (Figure 7D and Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figures 7D and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "0f39c6b2-a20f-45be-a326-902bd21b3d35",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C101",
+      "claim": "All zebrafish foxo genes tested are capable of enhancing the A23187-induced increase in MuRF1a(\u2212638) luciferase activity when co-transfected with the reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "When co-transfected with the MuRF1a(\u2212638)-Luc reporter, all zebrafish foxo genes tested were capable of enhancing the A23187-induced increase in MuRF1a(\u2212638) luciferase activity (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e735fbce-69c9-4abb-9f88-e77fd6525d59",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C102",
+      "claim": "FoxO3a promotes strong murf1a promoter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxO3a promoted strong murf1a promoter activity (Figure 9) and was used for the remainder of our analyses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "c2fc9e1c-bd4c-4653-b68b-dde49c152dea",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C103",
+      "claim": "FoxO3a enhances MuRF1a(\u2212638)-Luc reporter activity in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that FoxO3a enhanced MuRF1a(\u2212638)-Luc reporter activity in a dose-dependent manner (Figure 7E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "8e6b6a53-277f-49b7-b57e-5e0a23a0fe22",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C104",
+      "claim": "Overexpression of a dominant-negative form of FoxO (DN-foxO) abrogates the A23187-induced MuRF1a(\u2212638)-Luc activity.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas overexpression of a dominant-negative form of FoxO (DN-foxO), which lacks the transactivation domain but harbors an intact DNA binding domain (Medema et al., 2000; van den Heuvel et al., 2005), abrogated the A23187-induced MuRF1a(\u2212638)-Luc activity (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "77023f18-e1db-4abd-9faa-71bb438fcd98",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C105",
+      "claim": "Cotransfection of Cn and FoxO3a enhances murf1a promoter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cotransfection of Cn and FoxO3a enhances murf1a promoter activity (Figure 7B,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figures 7B and 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "8b3bbae3-f665-4fe1-82cf-ad4f78217afc",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C106",
+      "claim": "FoxO can no longer induce MuRF1a expression in the presence of a dominant negative form of Cn.",
+      "claim_type": "EXPLICIT",
+      "source": "and that FoxO could no longer induce MuRF1a expression in the presence of a dominant negative form of Cn (Figure 7B,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figures 7B and 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "820f9035-2585-4817-bfc9-4a79eb258f0a",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C107",
+      "claim": "Ca2+ influences MuRF1 expression via the Cn-FoxO signaling axis.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that Ca2+ influences MuRF1 expression via the Cn-FoxO signaling axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the collective data showing the requirement for both Cn and FoxO in Ca2+-mediated MuRF1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "fff76723-6b72-4ed5-a579-20afdb2ecb95",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C108",
+      "claim": "The subcellular localization of FoxO is controlled by its phosphorylation status.",
+      "claim_type": "EXPLICIT",
+      "source": "The subcellular localization of FoxO is controlled by its phosphorylation status (Huang and Tindall, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "fd187002-83c7-4e5e-bb77-72bb9cfa59cc",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C109",
+      "claim": "The Ca2+ extrusion defect in ncx1h mutant hearts activates Cn resulting in the dephosphorylation and nuclear translocation of FoxO.",
+      "claim_type": "IMPLICIT",
+      "source": "We reasoned that the Ca2+ extrusion defect in ncx1h mutant hearts could activate Cn resulting in the dephosphorylation and nuclear translocation of FoxO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the known roles of Ca2+, Cn, and FoxO phosphorylation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "12f0926f-2e0c-4d51-80cd-62eaef00680c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C110",
+      "claim": "FoxO is primarily sequestered in the cytoplasm of cardiomyocytes in wild type zebrafish hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while FoxO was primarily sequestered in the cytoplasm of cardiomyocytes in wild type zebrafish hearts, FoxO protein was enriched in the nuclei of ncx1h mutant cardiomyocytes (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "cec002d8-6061-4387-965b-01f74df8020d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C111",
+      "claim": "FoxO protein is enriched in the nuclei of ncx1h mutant cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while FoxO was primarily sequestered in the cytoplasm of cardiomyocytes in wild type zebrafish hearts, FoxO protein was enriched in the nuclei of ncx1h mutant cardiomyocytes (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "f21a0e5f-a90e-4e18-8206-87f5957ad5f2",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C112",
+      "claim": "Nuclear accumulation of FoxO correlates with increased MuRF1 expression in ncx1h mutant hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "This nuclear accumulation of FoxO correlated with the increased MuRF1 expression in ncx1h mutant hearts (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the temporal and spatial correlation between FoxO localization and MuRF1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "2bdc53c2-b10a-493b-9682-5571c14e4782",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C113",
+      "claim": "MuRF1 expression can be induced in the heart by overexpression of FoxO3a.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that MuRF1 expression could also be induced in the heart by overexpression of FoxO3a or a constitutively active form of FoxO3a in which three phosphorylation sites were replaced by with alanines (CA-FoxO3a: T29A, S236A, S299A) (Figure 10B) (Brunet et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "2a932f75-0138-40af-995e-b8bb9276cc9e",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C114",
+      "claim": "MuRF1 expression can be induced in the heart by overexpression of a constitutively active form of FoxO3a (CA-FoxO3a: T29A, S236A, S299A).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that MuRF1 expression could also be induced in the heart by overexpression of FoxO3a or a constitutively active form of FoxO3a in which three phosphorylation sites were replaced by with alanines (CA-FoxO3a: T29A, S236A, S299A) (Figure 10B) (Brunet et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "548b78ca-619b-4173-84b8-7a27c10228f3",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C115",
+      "claim": "Pharmacological inhibition of Cn activity by treatment with FK506 blunts MuRF1 expression in ncx1h mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, pharmacological inhibition of Cn activity by treatment with FK506 or overexpression of DN-FoxO blunted MuRF1 expression in ncx1h mutant embryos (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ea238275-fd9c-4951-a951-586e544d1aaa",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C116",
+      "claim": "Overexpression of DN-FoxO blunts MuRF1 expression in ncx1h mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, pharmacological inhibition of Cn activity by treatment with FK506 or overexpression of DN-FoxO blunted MuRF1 expression in ncx1h mutant embryos (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "5bb42015-5aa0-4118-aa94-8e6e516414c2",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C117",
+      "claim": "Overexpression of CA-FoxO3a in wild type embryos results in a sporadic \u03b1-actinin distribution in cardiomyocytes that resembles the phenotype observed in ncx1h mutant hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overexpression of CA-FoxO3a in wild type embryos resulted in a sporadic \u03b1-actinin distribution in cardiomyocytes that resembled the phenotype observed in ncx1h mutant hearts whereas overexpression of DN-FoxO restored a striated \u03b1-actinin pattern in ncx1h mutant hearts (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "aead1a36-f3a3-4a02-8973-29c2a0261b44",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C118",
+      "claim": "Overexpression of DN-FoxO restores a striated \u03b1-actinin pattern in ncx1h mutant hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overexpression of CA-FoxO3a in wild type embryos resulted in a sporadic \u03b1-actinin distribution in cardiomyocytes that resembled the phenotype observed in ncx1h mutant hearts whereas overexpression of DN-FoxO restored a striated \u03b1-actinin pattern in ncx1h mutant hearts (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "59edfd69-a87b-4ede-b4f4-dce5507fb0cb",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C119",
+      "claim": "Compromised Ca2+ homeostasis and damaged cardiac muscle fibers are often observed in deteriorating diseased hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Compromised Ca2+ homeostasis and damaged cardiac muscle fibers are often observed in deteriorating diseased hearts, but a causative relationship between these outcomes has not previously been demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about diseased hearts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ba38f00d-5e38-4026-b2e5-2ad63dfdd79c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C120",
+      "claim": "A causative relationship between compromised Ca2+ homeostasis and damaged cardiac muscle fibers has not previously been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Compromised Ca2+ homeostasis and damaged cardiac muscle fibers are often observed in deteriorating diseased hearts, but a causative relationship between these outcomes has not previously been demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "5272e9cf-2c5b-476f-87ab-d57e525bb303",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C121",
+      "claim": "NCX1 activity is dispensable for the initial assembly of sarcomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that NCX1 activity is dispensable for the initial assembly of sarcomeres, but the maintenance of myofibril structure in myocardial cells requires tightly controlled Ca2+ homeostasis and MuRF1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that sarcomeres initially form normally in ncx1 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "aa8230e6-b327-4ea1-859c-d1d61425dc9e",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C122",
+      "claim": "The maintenance of myofibril structure in myocardial cells requires tightly controlled Ca2+ homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that NCX1 activity is dispensable for the initial assembly of sarcomeres, but the maintenance of myofibril structure in myocardial cells requires tightly controlled Ca2+ homeostasis and MuRF1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the progressive degeneration of sarcomeres in ncx1 mutants with Ca2+ dysregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ba3e1de4-eb45-473f-97ff-99c232c3be1c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C123",
+      "claim": "The maintenance of myofibril structure in myocardial cells requires tightly controlled MuRF1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that NCX1 activity is dispensable for the initial assembly of sarcomeres, but the maintenance of myofibril structure in myocardial cells requires tightly controlled Ca2+ homeostasis and MuRF1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue of sarcomere structure by reducing MuRF1 activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "4a444007-411e-4f30-8046-272c7c36fee3",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C124",
+      "claim": "Under normal physiological conditions where the cytosolic diastolic Ca2+ level is low, FoxO is sequestered in the cytoplasm and MuRF1 expression is maintained at a basal level to support the normal turnover of sarcomeric proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that under normal physiological conditions where the cytosolic diastolic Ca2+ level is low, FoxO is sequestered in the cytoplasm and MuRF1 expression is maintained at a basal level to support the normal turnover of sarcomeric proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings and established knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "97c6a02b-a49f-499e-87e7-2a8fbc67b3de",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C125",
+      "claim": "Under pathological conditions when diastolic Ca2+ is elevated, the activation of Cn dephosphorylates FoxO and allows its nuclear translocation, leading to upregulation of MuRF1 and the degradation of myofibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "Under pathological conditions, when diastolic Ca2+ is elevated, the activation of Cn dephosphorylates FoxO and allows its nuclear translocation, leading to upregulation of MuRF1 and the degradation of myofibrils (Figure 10D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "20035814-44a1-4b52-ae57-50093599052d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C126",
+      "claim": "Interfering with the Cn-FoxO-MuRF1-proteosome pathway by pharmacological or genetic means can protect the sarcomeric integrity of cardiomyocytes suffering from Ca2+ dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interfering with the Cn-FoxO-MuRF1-proteosome pathway by pharmacological or genetic means can protect the sarcomeric integrity of cardiomyocytes suffering from Ca2+ dysregulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the rescue experiments using FK506, DN-FoxO, and murf1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "1fce44ec-d55a-459d-86a9-182a1bb0cb39",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C127",
+      "claim": "The FoxO-MuRF1 signaling axis is a central regulator of the Ca2+-dependent growth and degradation of striated muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the FoxO-MuRF1 signaling axis is a central regulator of the Ca2+-dependent growth and degradation of striated muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing the role of this pathway in regulating muscle structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "0637f15e-5247-4e93-ade2-8967f3b44589",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C128",
+      "claim": "The activity of the Cn-FoxO-MuRF1 signaling pathway is consistent with the roles of the FoxO-MuRF1 pathway in hypertrophy and atrophy responses in skeletal muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of the Cn-FoxO-MuRF1 signaling pathway identified in this study is consistent with the roles of the FoxO-MuRF1 pathway in hypertrophy and atrophy responses in skeletal muscles (Sacheck et al., 2004; Stitt et al., 2004; Waddell et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the findings to established literature on skeletal muscle.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e2a630b8-d41d-4cb6-b046-30acfa33d31d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C129",
+      "claim": "FoxO-MuRF1 signaling is critical to the maintenance of tissue homeostasis and the response of myocytes to pathological stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "and suggests that FoxO-MuRF1 signaling is critical to the maintenance of tissue homeostasis and the response of myocytes to pathological stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings and comparison to skeletal muscle literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "f3d51f5d-f1d0-4a50-b35e-86a4da60b835",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C130",
+      "claim": "Cardiac-specific overexpression of MuRF1 results in phenotypes resembling those observed in cardiomyopathy, including the breakdown of sarcomeres and a dilated heart with reduced heart rate and decreased contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cardiac-specific overexpression of MuRF1 results in phenotypes resembling those observed in cardiomyopathy, including the breakdown of sarcomeres and a dilated heart with reduced heart rate and decreased contractility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the transgenic MuRF1 overexpression data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "44306a3f-c1e8-448f-bcd6-0b110085abec",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C131",
+      "claim": "Misregulation of MuRF1 may contribute to the pathological progression of cardiovascular diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "raising the possibility that misregulation of MuRF1 contributes to the pathological progression of cardiovascular diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings showing MuRF1's role in cardiac dysfunction.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "2cce7d58-1b4c-493a-898f-8f7e410e357d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C132",
+      "claim": "Cardiac patients carrying specific murf1 gene variants have a poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cardiac patients carrying specific murf1 gene variants have a poor prognosis (Chen et al., 2012; Su et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "b1438dc3-2631-4fb8-b92a-5139b0beb1b4",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C133",
+      "claim": "MuRF1 has a conserved role in the regulation of cardiac structure and function from lower vertebrates to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that MuRF1 has a conserved role in the regulation of cardiac structure and function from lower vertebrates to humans",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of findings in zebrafish and clinical observations in humans.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e1d00613-3783-4b3a-8851-1dcf696f3177",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C134",
+      "claim": "The Cn-FoxO-MuRF1-proteosome pathway may be an attractive point of therapeutic intervention for cardiomyopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "and raising an intriguing possibility that the Cn-FoxO-MuRF1-proteosome pathway may be an attractive point of therapeutic intervention for cardiomyopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings showing that targeting this pathway can preserve cardiac structure.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7280e73a-757f-44e5-a116-cabe5626afcf",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C135",
+      "claim": "The complete loss of ncx1h activity in tremblor mutant cardiomyocytes eliminates Ca2+ cycling and causes embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete loss of ncx1h activity in tremblor mutant cardiomyocytes eliminates Ca2+ cycling and causes embryonic lethality, an extreme condition that is more severe than what is observed in patients with chronic heart disease (Ebert et al., 2005; Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on the tremblor mutant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7b4fcab5-0f3d-46a7-97c2-698d7f3d070f",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C136",
+      "claim": "The tremblor mutant represents an extreme condition that is more severe than what is observed in patients with chronic heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete loss of ncx1h activity in tremblor mutant cardiomyocytes eliminates Ca2+ cycling and causes embryonic lethality, an extreme condition that is more severe than what is observed in patients with chronic heart disease (Ebert et al., 2005; Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the severity of the zebrafish mutant phenotype to human disease.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "e91c20d3-86cc-4fb4-97b1-d75752ece55d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "claim_id": "C137",
+      "claim": "Future studies using clinically relevant mammalian models will further illuminate the therapeutic potential of targeting the Cn-FoxO-MuRF1-proteosome pathway in the context of cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Future studies using clinically relevant mammalian models will further illuminate the therapeutic potential of targeting the Cn-FoxO-MuRF1-proteosome pathway in the context of cardiovascular disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions based on the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NCX1 is dispensable for initial sarcomere assembly but required for maintenance of myofibril integrity and cardiac chamber morphology. At 30 hpf, \u03b1-actinin is organized into periodic banding patterns in both wild type and ncx1h mutant cardiomyocytes, but by 48 hpf, sarcomeres degenerate in ncx1h mutants, cardiomyocytes fail to elongate, and cardiac chambers become dysmorphic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 are well-supported by immunostaining data (Figure 1A-C) showing temporal progression from normal sarcomere assembly at 30 hpf to degeneration by 48 hpf in ncx1h mutants. The data clearly demonstrate that NCX1 is required for maintenance but not initial assembly of sarcomeres.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "db19fc8b-ac00-4072-913b-828431686397",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MuRF1 (both murf1a and murf1b) is upregulated in ncx1-deficient hearts. This upregulation was confirmed by microarray analysis, in situ hybridization, and quantitative RT-PCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C41, C58, C59 are supported by multiple independent methods (microarray, in situ hybridization, qRT-PCR) shown in Figure 3, providing strong converging evidence for MuRF1 upregulation in ncx1 mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cardiac-specific overexpression of MuRF1 is sufficient to disrupt myofibril structure and impair cardiac function. In myl7:MuRF1a-IRES-GFP transgenic hearts, \u03b1-actinin fails to maintain striated patterns, hearts become dilated, and cardiac function is compromised with ~10% reduction in atrial fractional shortening, ~15% reduction in ventricular fractional shortening, and 10% reduction in heart rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 are well-supported by transgenic overexpression data (Figure 4) including in situ hybridization, immunostaining, imaging, and quantitative functional measurements. The data demonstrate sufficiency of MuRF1 overexpression to cause cardiomyopathy-like phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Reducing MuRF1 activity or inhibiting proteasome activity preserves myofibril integrity in ncx1-deficient hearts. Morpholino knockdown of murf1a/murf1b (reducing MuRF1 protein by 27%) increased the percentage of ncx1h mutants with intact sarcomeres from ~35% to ~80%. Similarly, MG132 treatment increased intact sarcomeres to ~72%, suggesting MuRF1 induces myofibril degradation via a proteasome-dependent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C71-C77 are supported by rescue experiments (Figure 5) using both genetic (morpholino) and pharmacological (MG132) approaches. The data show statistically significant improvements in sarcomere integrity with both interventions, supporting the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "c74a3942-9d00-45fe-a73a-e98683ac30db",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sarcomere integrity can be uncoupled from cardiac contractions in the context of aberrant Ca2+ handling. ncx1h/murf1a/murf1b triple-deficient hearts never establish coordinated contractions despite having preserved sarcomere structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are supported by video data (Video 3) and immunostaining showing that sarcomeres can be preserved by MuRF1 knockdown even though contractile dysfunction persists. This demonstrates that sarcomere degradation is downstream of contractile dysfunction in this model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A 638 bp region upstream of murf1a is sufficient to direct Ca2+-responsive transcription. The MuRF1a(-6906) and MuRF1a(-638) promoter fragments drive GFP expression in cardiac and skeletal muscles resembling endogenous expression, and both show enhanced luciferase activity upon A23187 (Ca2+ ionophore) treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C88 are supported by transgenic reporter assays (Figure 6) and luciferase assays showing that the 638 bp proximal region is sufficient for tissue-specific expression and Ca2+ responsiveness. The data demonstrate functional regulatory elements in this region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "80ecc34f-297e-4056-99c1-ce665a63e478",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MuRF1 expression is regulated by a Calcineurin-mediated mechanism. FK506 (calcineurin inhibitor) but not KN62 (CaMKII inhibitor) attenuates A23187-induced MuRF1a reporter activity. Calcineurin overexpression enhances murf1 reporter activity while dominant-negative calcineurin blunts it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 are supported by pharmacological inhibition and genetic manipulation experiments (Figure 7A-B) showing selective involvement of calcineurin but not CaMKII in Ca2+-mediated MuRF1 regulation. The data provide strong evidence for calcineurin-dependent regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "4191b4da-95d2-441a-ad23-030607c5d4f6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ca2+ influences MuRF1 expression via the Calcineurin-FoxO signaling axis. Multiple putative FoxO binding sites are present in murf1 promoters across vertebrates. All seven zebrafish foxo genes are expressed in the developing heart and can enhance A23187-induced MuRF1a reporter activity. FoxO3a enhances reporter activity in a dose-dependent manner, while dominant-negative FoxO abrogates it. FoxO requires calcineurin for MuRF1 induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C107 are supported by sequence analysis (Figure 7C), in situ hybridization (Figures 7D, 8), and luciferase assays (Figures 7E-F, 9) showing FoxO binding sites, cardiac expression, and functional requirement for both FoxO and calcineurin in Ca2+-mediated MuRF1 regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "3aeb550e-ccf8-4c03-ae7f-e0167d01ff8d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FoxO accumulates in the nuclei of ncx1-deficient cardiomyocytes. While FoxO is primarily cytoplasmic in wild type hearts, it is enriched in nuclei of ncx1h mutant cardiomyocytes, correlating with increased MuRF1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C110-C112 are supported by immunostaining data (Figure 10A) showing differential subcellular localization of FoxO between wild type and ncx1h mutants. The nuclear accumulation in mutants correlates with the observed MuRF1 upregulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "9059909b-65f2-4119-bdcf-5faf9945a87d",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Overexpression of FoxO in wild type cardiomyocytes induces murf1 expression and causes myofibril disarray. Both wild type FoxO3a and constitutively active FoxO3a (CA-FoxO3a) induce MuRF1 expression and result in sporadic \u03b1-actinin distribution resembling the ncx1h mutant phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C113-C114, C117 are supported by in situ hybridization and immunostaining data (Figure 10B-C) showing that FoxO overexpression is sufficient to induce MuRF1 expression and cause sarcomere disarray in wild type hearts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ce0f3bcf-ea7c-40cb-ae05-a6b07ce79137",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Inhibiting Calcineurin activity or FoxO function protects sarcomeres from degradation in ncx1-deficient hearts. FK506 treatment or DN-FoxO overexpression attenuates MuRF1 expression and restores striated \u03b1-actinin patterns in ncx1h mutant hearts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C115-C116, C118 are supported by rescue experiments (Figure 10B-C) using pharmacological (FK506) and genetic (DN-FoxO) approaches showing that blocking the calcineurin-FoxO pathway prevents sarcomere degradation in ncx1 mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "f81a7ccd-c02e-477f-9cda-dfd21540764e",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ca2+ overload disrupts myofibril integrity by activating a Calcineurin-FoxO-MuRF1-proteasome signaling pathway. The study demonstrates that NCX1 activity is dispensable for initial sarcomere assembly but maintenance requires controlled Ca2+ homeostasis and MuRF1 expression. Elevated Ca2+ activates calcineurin, which dephosphorylates FoxO leading to nuclear translocation, MuRF1 upregulation, and proteasome-mediated myofibril degradation. Interfering with this pathway protects sarcomeric integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C11, C42-C45, C121-C123, C125-C127 represent the main conclusion integrating all experimental findings. The pathway is supported by: (1) temporal data showing initial normal assembly followed by degeneration, (2) MuRF1 upregulation in ncx1 mutants, (3) rescue by MuRF1/proteasome inhibition, (4) Ca2+-responsive MuRF1 transcription, (5) calcineurin-dependent regulation, (6) FoxO nuclear translocation in mutants, and (7) rescue by calcineurin/FoxO inhibition. The collective evidence strongly supports this novel mechanistic pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "328b1e3f-c066-4976-9b4d-83cae3f77ad6",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Zebrafish have two highly homologous murf1 genes (murf1a and murf1b) that cluster with vertebrate murf1 genes, span single exons, and are expressed in striated muscles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by phylogenetic analysis (Figure 2A), sequence alignment (Figure 2B), and in situ hybridization (Figure 2C) characterizing the zebrafish murf1 genes. This provides important context for the experimental model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "ba96fb7a-0018-4611-b234-3ea0c93091ae",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on cardiac Ca2+ handling and disease. The claims establish that altered Ca2+ handling and myofibril defects are observed in diseased hearts, but a causal relationship had not been demonstrated prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C17, C119-C120 provide established background knowledge supported by citations. These claims accurately represent the state of knowledge and identify the gap this study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "61468510-8922-402b-8d64-5443abd1e1c9",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on MuRF1 function. MuRF1 is a muscle-specific E3 ubiquitin ligase that regulates muscle turnover, is elevated under catabolic conditions, and plays pathological roles in muscle atrophy and cardiac disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C27 provide established background on MuRF1 supported by multiple citations. These accurately represent prior knowledge about MuRF1's role in muscle biology and disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "dc8d3f6c-170b-4316-bfaa-979bfbde0fe8",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on FoxO-MuRF1 regulation in skeletal muscle. FoxO transcription factors control muscle degradation via MuRF1 regulation, with the PI3K-Akt pathway regulating FoxO localization and activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 provide established background on FoxO-MuRF1 regulation in skeletal muscle supported by citations. This provides important context for extending these findings to cardiac muscle.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "af856a7a-6fac-4268-a10e-f367883045c0",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on the ncx1h/tremblor zebrafish mutant. The tremblor mutant lacks functional NCX1, has increased cytosolic Ca2+, abolished Ca2+ transients, fibrillation-like contractions, and myofibril disarray similar to NCX1-/- mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 provide background on the experimental model supported by citations to prior work. These establish the validity of the model and its relevance to the study's questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "185208e1-f8b8-4018-a42d-5ca5823f358b",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claim that elevated murf1 expression is associated with muscle atrophy and can induce myofibril breakdown in cultured cardiomyocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 are supported by citation to established literature and provide rationale for testing MuRF1 overexpression effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "5aa0d1e6-b66b-491a-afa3-6769e39638c3",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claim that prior studies have implied a connection between cardiac contraction and myofibril integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by citations and provides context for the finding that sarcomere integrity can be uncoupled from contractile function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "42a46d9f-c4c9-4ccb-8ac0-ad08ac3c3ea5",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background claim that CaMKII and calcineurin are two major transducers of Ca2+ signals in cardiomyocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by citations and provides rationale for testing these pathways in MuRF1 regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "30b10b0b-50b8-40c8-bae1-efaf23559dcc",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background claims that FoxO is a downstream mediator of calcineurin signaling, is involved in MuRF1 regulation in skeletal muscle, and that zebrafish have seven foxo genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 are supported by citations and provide rationale for investigating FoxO in the calcineurin-MuRF1 pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "98d311b7-ac85-45e0-a127-10caf672188c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background claim that subcellular localization of FoxO is controlled by its phosphorylation status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 is supported by citation and provides mechanistic context for FoxO nuclear translocation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "0763272b-b340-44d5-a2e6-fa7bdab21490",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The Calcineurin-FoxO-MuRF1 pathway identified in cardiac muscle is consistent with the FoxO-MuRF1 pathway's roles in skeletal muscle hypertrophy and atrophy, suggesting FoxO-MuRF1 signaling is critical for tissue homeostasis and pathological responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C128-C129 are reasonable interpretations comparing the cardiac findings to established skeletal muscle literature. The consistency across muscle types strengthens the significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "a3d4f48f-c49e-4b6b-aab1-bd1b0531de35",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Discussion of clinical relevance. MuRF1 overexpression causes cardiomyopathy-like phenotypes, patients with murf1 variants have poor prognosis, suggesting MuRF1 has conserved roles and the pathway may be a therapeutic target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C130-C134 are supported by the experimental data (C130) and clinical citations (C132). The inferences about conservation (C133) and therapeutic potential (C131, C134) are reasonable speculations based on the data, though C131 and C134 are explicitly speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "2f5a218a-be5c-40e7-bb00-7a02f61bf4ec",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Discussion of model limitations and future directions. The tremblor mutant represents an extreme condition more severe than human chronic heart disease, and future mammalian studies are needed to assess therapeutic potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C135-C137 appropriately acknowledge model limitations (supported by citations) and identify needed future work. This demonstrates appropriate scientific caution about translational implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "2b04feab-e36e-47cc-b99c-d68c84ddf88c",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Hypothesis that Ca2+ extrusion defect in ncx1h mutants activates calcineurin resulting in FoxO dephosphorylation and nuclear translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is explicitly stated as a hypothesis ('We reasoned that...') and is subsequently tested and supported by the FoxO localization data (C110-C111). This represents appropriate scientific reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    },
+    {
+      "id": "a4632f20-09e7-4ae5-b723-6c7c6e9ee233",
+      "content_id": "55f1be13-614f-4366-9bc5-8b4bf8d9252f",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Proposed model for normal physiology: under normal conditions with low diastolic Ca2+, FoxO is cytoplasmic and MuRF1 expression is basal to support normal protein turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C124 is a proposed model ('We propose that...') for normal physiology. While consistent with the data and established knowledge, the study does not directly test normal physiological conditions or measure basal MuRF1 activity. The model is reasonable but not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:37:54.513048Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fbec5a5b-0d70-4d12-b95c-84915a8a5f2d",
+      "result_id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2"
+    },
+    {
+      "claim_id": "89387a26-b071-4f02-81cb-7a181eb6d2ac",
+      "result_id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2"
+    },
+    {
+      "claim_id": "d7cf776f-6249-4499-a6e7-cb80194b2d86",
+      "result_id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2"
+    },
+    {
+      "claim_id": "1b4ea57d-ea7b-4ab2-ae95-af9cb7eab26d",
+      "result_id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2"
+    },
+    {
+      "claim_id": "599e4ced-2251-4bb4-b06c-7c8600268df8",
+      "result_id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2"
+    },
+    {
+      "claim_id": "de9046d6-d31c-406a-8d10-09da796ec4ce",
+      "result_id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2"
+    },
+    {
+      "claim_id": "b8ff3c73-c460-40f3-b702-df138a673c85",
+      "result_id": "3edec696-a77a-4ca9-969a-5be89f6c1bd2"
+    },
+    {
+      "claim_id": "afd6d4a5-6799-4792-a834-fd80a29c4a27",
+      "result_id": "db19fc8b-ac00-4072-913b-828431686397"
+    },
+    {
+      "claim_id": "10bc0133-64c1-4b9f-b1c5-ba0c91bd2ae6",
+      "result_id": "db19fc8b-ac00-4072-913b-828431686397"
+    },
+    {
+      "claim_id": "43fb2b23-22f6-4a13-9500-001df64874e6",
+      "result_id": "db19fc8b-ac00-4072-913b-828431686397"
+    },
+    {
+      "claim_id": "246cae0b-af4f-4be2-b8d3-a396e936ebf4",
+      "result_id": "db19fc8b-ac00-4072-913b-828431686397"
+    },
+    {
+      "claim_id": "361d1cf1-b343-4eb8-b602-ebf48a2c2816",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "66905df2-f3b6-498f-8886-6744919e05f0",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "7dbb8d45-9089-42bc-b7c8-79ee12c5efdb",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "4561ccd6-966c-437b-8afe-aa43abb6a4da",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "4ed9d0f9-c88c-40ad-8f4a-119da0d95f76",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "0fb0b730-072d-489f-ad5e-ef9dac39e002",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "26d9f862-9a1d-4af2-9e12-1700344f4252",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "c97a995c-b0a6-4024-9e68-d68ba294cf85",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "616e2a87-70ae-41c8-b089-42c1ee68b75e",
+      "result_id": "7e9733ae-d2d6-4f81-aabf-3ec68909fe99"
+    },
+    {
+      "claim_id": "2e799ce0-0982-4f63-ab65-246fb41f2d7e",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "d238a4a0-6ac0-451b-ae17-527c402a7f34",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "77328b12-7b6d-4536-bce2-8a96634fbfe3",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "fca05440-7467-4ebd-997a-a0b2a363013d",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "667218e5-363a-4083-9405-dd107987b090",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "619d83d7-3a9b-41d3-87b9-179a1f20012b",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "be604f69-b2dd-465e-b90f-5ecb238ac85d",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "67c19764-10ef-4eee-9e67-8d499d3e3cc6",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "72e96592-e279-4045-a462-ae7fc834aa46",
+      "result_id": "d4a3cf8d-3fe7-4e1b-8352-5f05af32a0f7"
+    },
+    {
+      "claim_id": "7f585350-8568-4a1f-bb3e-b07ec4d43b03",
+      "result_id": "c74a3942-9d00-45fe-a73a-e98683ac30db"
+    },
+    {
+      "claim_id": "f18440d9-cbf2-4406-8898-aeee00fad266",
+      "result_id": "c74a3942-9d00-45fe-a73a-e98683ac30db"
+    },
+    {
+      "claim_id": "6409c2f3-93b6-4891-bc3e-638a549cdf1c",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "7d061fd7-67fd-4561-a216-996b4082fc7a",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "7bc98bfa-df33-407a-90ea-6648d706535a",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "385aa83e-a20c-44af-b8af-74178253aff5",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "125038b6-c861-46a5-919f-3ef52e557e76",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "1aac16f4-5ac8-4466-aba7-1a59e114f572",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "e8d85d05-7b33-4250-a84e-4f903cdb8ce8",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "5bf68773-af1b-48aa-bf54-7e1b56a954cd",
+      "result_id": "34c4ed44-047e-49cf-9b15-a6ee6cfa5096"
+    },
+    {
+      "claim_id": "ac9f5b3c-4732-4c56-8ea1-8f1a72574bd7",
+      "result_id": "80ecc34f-297e-4056-99c1-ce665a63e478"
+    },
+    {
+      "claim_id": "c06510e6-4940-42aa-ab9a-5f6f9c06118c",
+      "result_id": "80ecc34f-297e-4056-99c1-ce665a63e478"
+    },
+    {
+      "claim_id": "e1510389-6535-4995-a4e4-87e3f3acd2ea",
+      "result_id": "80ecc34f-297e-4056-99c1-ce665a63e478"
+    },
+    {
+      "claim_id": "54b73980-3dbd-4af0-9e95-920d76c186a4",
+      "result_id": "80ecc34f-297e-4056-99c1-ce665a63e478"
+    },
+    {
+      "claim_id": "fa097e80-66f9-4373-b707-2f3e422e5aac",
+      "result_id": "80ecc34f-297e-4056-99c1-ce665a63e478"
+    },
+    {
+      "claim_id": "fe4bb5ef-d506-4626-a4dc-30d58db81ccd",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "df482e9b-f9e9-4326-a416-f9be5b4d7ffe",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "75237276-cb76-4da1-b8c6-d49320d544fb",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "0f39c6b2-a20f-45be-a326-902bd21b3d35",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "e735fbce-69c9-4abb-9f88-e77fd6525d59",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "c2fc9e1c-bd4c-4653-b68b-dde49c152dea",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "8e6b6a53-277f-49b7-b57e-5e0a23a0fe22",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "77023f18-e1db-4abd-9faa-71bb438fcd98",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "8b3bbae3-f665-4fe1-82cf-ad4f78217afc",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "820f9035-2585-4817-bfc9-4a79eb258f0a",
+      "result_id": "4191b4da-95d2-441a-ad23-030607c5d4f6"
+    },
+    {
+      "claim_id": "f0af1e43-db0a-4a86-bddf-a4e4f767a8bc",
+      "result_id": "3aeb550e-ccf8-4c03-ae7f-e0167d01ff8d"
+    },
+    {
+      "claim_id": "12f0926f-2e0c-4d51-80cd-62eaef00680c",
+      "result_id": "3aeb550e-ccf8-4c03-ae7f-e0167d01ff8d"
+    },
+    {
+      "claim_id": "cec002d8-6061-4387-965b-01f74df8020d",
+      "result_id": "3aeb550e-ccf8-4c03-ae7f-e0167d01ff8d"
+    },
+    {
+      "claim_id": "f21a0e5f-a90e-4e18-8206-87f5957ad5f2",
+      "result_id": "3aeb550e-ccf8-4c03-ae7f-e0167d01ff8d"
+    },
+    {
+      "claim_id": "b0ef47e4-aa4a-4101-a906-d912c5c94b96",
+      "result_id": "9059909b-65f2-4119-bdcf-5faf9945a87d"
+    },
+    {
+      "claim_id": "12c0c44d-2ccb-4f70-9077-b87403e0236d",
+      "result_id": "9059909b-65f2-4119-bdcf-5faf9945a87d"
+    },
+    {
+      "claim_id": "2bdc53c2-b10a-493b-9682-5571c14e4782",
+      "result_id": "9059909b-65f2-4119-bdcf-5faf9945a87d"
+    },
+    {
+      "claim_id": "2a932f75-0138-40af-995e-b8bb9276cc9e",
+      "result_id": "9059909b-65f2-4119-bdcf-5faf9945a87d"
+    },
+    {
+      "claim_id": "5bb42015-5aa0-4118-aa94-8e6e516414c2",
+      "result_id": "9059909b-65f2-4119-bdcf-5faf9945a87d"
+    },
+    {
+      "claim_id": "d32760bd-405e-44aa-b517-3b1aeb6c48b6",
+      "result_id": "ce0f3bcf-ea7c-40cb-ae05-a6b07ce79137"
+    },
+    {
+      "claim_id": "d07b6708-4119-430f-b59f-436dbbb5c0f1",
+      "result_id": "ce0f3bcf-ea7c-40cb-ae05-a6b07ce79137"
+    },
+    {
+      "claim_id": "548b78ca-619b-4173-84b8-7a27c10228f3",
+      "result_id": "ce0f3bcf-ea7c-40cb-ae05-a6b07ce79137"
+    },
+    {
+      "claim_id": "ea238275-fd9c-4951-a951-586e544d1aaa",
+      "result_id": "ce0f3bcf-ea7c-40cb-ae05-a6b07ce79137"
+    },
+    {
+      "claim_id": "aead1a36-f3a3-4a02-8973-29c2a0261b44",
+      "result_id": "ce0f3bcf-ea7c-40cb-ae05-a6b07ce79137"
+    },
+    {
+      "claim_id": "8b4a4551-712c-44a5-b501-52144630d05d",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "4bba7f78-4256-4f2c-b4e0-eb420b4d3ed7",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "a4474c46-4609-4453-81d2-0e51537c33aa",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "fe88d581-f625-4501-a353-642e2b709343",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "6f617e8e-ac32-436b-9ad4-671bc0f2c100",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "4cfcdf23-378a-46f7-af9a-43e31763b0bc",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "5272e9cf-2c5b-476f-87ab-d57e525bb303",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "aa8230e6-b327-4ea1-859c-d1d61425dc9e",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "ba3e1de4-eb45-473f-97ff-99c232c3be1c",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "97c6a02b-a49f-499e-87e7-2a8fbc67b3de",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "20035814-44a1-4b52-ae57-50093599052d",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "1fce44ec-d55a-459d-86a9-182a1bb0cb39",
+      "result_id": "f81a7ccd-c02e-477f-9cda-dfd21540764e"
+    },
+    {
+      "claim_id": "d1493776-9a01-41fd-a737-0549ef1821d7",
+      "result_id": "328b1e3f-c066-4976-9b4d-83cae3f77ad6"
+    },
+    {
+      "claim_id": "5f9612b7-8fd0-4f9a-a511-102523e1cc72",
+      "result_id": "328b1e3f-c066-4976-9b4d-83cae3f77ad6"
+    },
+    {
+      "claim_id": "698938a9-5ad8-44cc-a359-f0baec7c9092",
+      "result_id": "328b1e3f-c066-4976-9b4d-83cae3f77ad6"
+    },
+    {
+      "claim_id": "9cfdbb5b-f1d2-4c9c-a133-1a04451cec3c",
+      "result_id": "328b1e3f-c066-4976-9b4d-83cae3f77ad6"
+    },
+    {
+      "claim_id": "fe04effa-350e-44f6-8ba3-cd4989617098",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "6a0e8ef3-9886-4e0e-a737-71ec51f2734d",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "019169a4-2008-485e-b221-e91834cd9a22",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "6d7f5f61-8608-49fe-92e1-d2ebba196494",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "7a0cf03f-611c-4124-9864-9e43605042d7",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "dd500fe5-955d-4a89-a003-2d68123a4208",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "3b55a241-5d61-4d51-b487-6722fd4536f1",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "59edfd69-a87b-4ede-b4f4-dce5507fb0cb",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "ba38f00d-5e38-4026-b2e5-2ad63dfdd79c",
+      "result_id": "ba96fb7a-0018-4611-b234-3ea0c93091ae"
+    },
+    {
+      "claim_id": "ac00d7fb-85f0-429e-aa3a-5ccb330f2936",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "88dae527-00e4-498b-af89-c8c4ca44381c",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "f706ee55-6aa9-450f-9e28-7d74759edd81",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "47c48561-1574-4c23-8eea-fbd1478f06d6",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "944c0100-00f8-41b9-915f-e68cb2907df4",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "e7fb8d7b-8bf7-4673-8ff8-077b76daba4c",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "b66868a3-20d6-4306-80d4-704502fa142e",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "bd07611f-39bf-4e9e-bdd8-8f93c94dd28c",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "0f3f4da9-d3b8-479e-9c82-8787fa74e348",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "6186352a-5f1f-433f-9be7-77cada715aa8",
+      "result_id": "61468510-8922-402b-8d64-5443abd1e1c9"
+    },
+    {
+      "claim_id": "4aed00ff-2887-49bf-a319-6f83e7a9f704",
+      "result_id": "dc8d3f6c-170b-4316-bfaa-979bfbde0fe8"
+    },
+    {
+      "claim_id": "94b002a8-0a36-4c22-bc39-da10987b60f0",
+      "result_id": "dc8d3f6c-170b-4316-bfaa-979bfbde0fe8"
+    },
+    {
+      "claim_id": "15352f67-da05-430d-a07d-776623effe20",
+      "result_id": "dc8d3f6c-170b-4316-bfaa-979bfbde0fe8"
+    },
+    {
+      "claim_id": "12012d54-b98f-4d47-8851-134b8c410a59",
+      "result_id": "dc8d3f6c-170b-4316-bfaa-979bfbde0fe8"
+    },
+    {
+      "claim_id": "72d9d02b-7b90-45f6-bdf8-d4a808b55685",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "5e7c219c-64c4-4005-a550-e32cf3eacfb7",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "a23f37d0-ad0d-49fa-b1e6-a6e8acc69945",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "6970b7f4-2b3b-49ab-8757-482594929f06",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "f2b95296-98d2-482b-8e96-f21f11b4fe62",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "d58c85fe-8bf8-4118-98fc-65ac59ce3a1c",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "e53bdba4-f85a-4f6a-919d-98afbb228221",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "73d1534f-66d4-47b2-ac7b-18ecee73351b",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "ddb1d067-7ae6-4945-af7a-11af54dd4741",
+      "result_id": "af856a7a-6fac-4268-a10e-f367883045c0"
+    },
+    {
+      "claim_id": "d8050903-1706-40cd-93a7-d8e69ae557fe",
+      "result_id": "185208e1-f8b8-4018-a42d-5ca5823f358b"
+    },
+    {
+      "claim_id": "91e787b7-4c82-45a5-b14e-5c0c3249a316",
+      "result_id": "185208e1-f8b8-4018-a42d-5ca5823f358b"
+    },
+    {
+      "claim_id": "ef2f8b50-6f52-42e0-92d7-15b141035054",
+      "result_id": "5aa0d1e6-b66b-491a-afa3-6769e39638c3"
+    },
+    {
+      "claim_id": "9a768bd4-f4aa-4252-a129-c56d8cf4a886",
+      "result_id": "42a46d9f-c4c9-4ccb-8ac0-ad08ac3c3ea5"
+    },
+    {
+      "claim_id": "d75317ea-e4ff-4b95-b32a-663e1b8d0440",
+      "result_id": "30b10b0b-50b8-40c8-bae1-efaf23559dcc"
+    },
+    {
+      "claim_id": "88f4ecad-41b8-40bb-8674-29359b692458",
+      "result_id": "30b10b0b-50b8-40c8-bae1-efaf23559dcc"
+    },
+    {
+      "claim_id": "5dbd786d-29ce-4dd1-8d82-21673f31cf1a",
+      "result_id": "30b10b0b-50b8-40c8-bae1-efaf23559dcc"
+    },
+    {
+      "claim_id": "fff76723-6b72-4ed5-a579-20afdb2ecb95",
+      "result_id": "98d311b7-ac85-45e0-a127-10caf672188c"
+    },
+    {
+      "claim_id": "0637f15e-5247-4e93-ade2-8967f3b44589",
+      "result_id": "0763272b-b340-44d5-a2e6-fa7bdab21490"
+    },
+    {
+      "claim_id": "e2a630b8-d41d-4cb6-b046-30acfa33d31d",
+      "result_id": "0763272b-b340-44d5-a2e6-fa7bdab21490"
+    },
+    {
+      "claim_id": "f3d51f5d-f1d0-4a50-b35e-86a4da60b835",
+      "result_id": "a3d4f48f-c49e-4b6b-aab1-bd1b0531de35"
+    },
+    {
+      "claim_id": "44306a3f-c1e8-448f-bcd6-0b110085abec",
+      "result_id": "a3d4f48f-c49e-4b6b-aab1-bd1b0531de35"
+    },
+    {
+      "claim_id": "2cce7d58-1b4c-493a-898f-8f7e410e357d",
+      "result_id": "a3d4f48f-c49e-4b6b-aab1-bd1b0531de35"
+    },
+    {
+      "claim_id": "b1438dc3-2631-4fb8-b92a-5139b0beb1b4",
+      "result_id": "a3d4f48f-c49e-4b6b-aab1-bd1b0531de35"
+    },
+    {
+      "claim_id": "e1d00613-3783-4b3a-8851-1dcf696f3177",
+      "result_id": "a3d4f48f-c49e-4b6b-aab1-bd1b0531de35"
+    },
+    {
+      "claim_id": "7280e73a-757f-44e5-a116-cabe5626afcf",
+      "result_id": "2f5a218a-be5c-40e7-bb00-7a02f61bf4ec"
+    },
+    {
+      "claim_id": "7b4fcab5-0f3d-46a7-97c2-698d7f3d070f",
+      "result_id": "2f5a218a-be5c-40e7-bb00-7a02f61bf4ec"
+    },
+    {
+      "claim_id": "e91c20d3-86cc-4fb4-97b1-d75752ece55d",
+      "result_id": "2f5a218a-be5c-40e7-bb00-7a02f61bf4ec"
+    },
+    {
+      "claim_id": "fd187002-83c7-4e5e-bb77-72bb9cfa59cc",
+      "result_id": "2b04feab-e36e-47cc-b99c-d68c84ddf88c"
+    },
+    {
+      "claim_id": "4a444007-411e-4f30-8046-272c7c36fee3",
+      "result_id": "a4632f20-09e7-4ae5-b723-6c7c6e9ee233"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "A genome-wide association study (GWAS) on 15,453 UL cases and 392,628 controls identified 22 genome-wide significant loci (p<5\u00d710\u207b\u2078), comprising 1,428 SNPs. After LD pruning (r\u00b2\u22640.3), 50 LD-independent associations remained, with two loci located on the X chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14, C15, and C16 collectively describe the discovery GWAS design and primary findings. The sample sizes, number of significant loci, SNP counts, and LD pruning results are explicitly reported with appropriate statistical thresholds. The methodology appears sound with adequate power for discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The 22 identified loci harbor candidate genes that fall into two biological categories: (1) genome stability genes including TERT, TERC, OBFC1 (telomere maintenance), TP53, and ATM (DNA damage response); and (2) genitourinary development genes including ESR1, GREB1, WT1, WNT4, FOXO1, DMRT1, SALL1, MED12, and CD44.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C59-C87 describe the biological interpretation of GWAS loci. The genomic locations of lead SNPs are explicitly reported (C59, C62, C66, C68, C82, C83), and the functional roles of candidate genes are supported by appropriate citations (C63, C64, C67, C84, C86, C87). The grouping into two biological processes is reasonable given the cited literature, though causality is not formally proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "An initial genomic risk score (GRS) of 50 SNPs showed significant association with UL in the Helsinki cohort (p=8.3\u00d710\u207b\u00b9\u2070). Meta-analysis of UKBB and Helsinki identified rs117245733 at 13q14.11 with suggestive association in both cohorts, plus 112 additional genome-wide significant SNPs. The final GRS model comprised 57 SNPs and replicated in NFBC (p=1.1\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 describe the GRS construction and replication. The statistical associations are explicitly reported with appropriate test statistics and p-values. The meta-analysis approach is standard, and the replication in an independent cohort (NFBC) strengthens the findings. The progression from 50 to 57 SNPs is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C100",
+      "C101"
+    ],
+    "result": "The GRS replicated with significant associations across five ethnic groups. Self-reported 'Black African' individuals had higher mean GRS (4.83) compared to 'White Irish' (4.04), with correspondingly higher UL prevalence (19% vs 6%). The GRS difference explains 8-16% of the increased prevalence in African ancestry populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27, C100-C101 describe multi-ethnic replication and ancestry-specific risk. The GRS associations are significant across all five ethnicities (C23), and the mean GRS differences between African and Irish populations are explicitly reported (C24). The prevalence estimates (C25) cite prior literature. However, the calculation that GRS explains 8-16% of prevalence difference (C26, C27) assumes a linear relationship between GRS and true risk, which is a simplification that may not fully capture the complexity of genetic architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C93"
+    ],
+    "result": "The GRS was specifically associated with MED12 mutation-positive tumors. Among 1,481 tumors from 457 patients, 221 patients (48%) had all MED12-mutation-positive tumors and showed significantly higher GRS (p=7.9\u00d710\u207b\u2074) with OR=2.28 compared to controls. The number of MED12-mutation-positive tumors per patient positively associated with GRS (p=3.2\u00d710\u207b\u2074, RR=1.43), while no association was found for mutation-negative tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28, C30-C37, C93 describe the association between GRS and MED12 mutation status. The tumor mutation screening is comprehensive (1,481 tumors), and the statistical associations are clearly reported with appropriate tests (Wilcoxon rank-sum, negative binomial regression). The differential effect sizes between mutation-positive (OR=2.28) and mutation-negative (OR=1.20) subsets are striking and biologically plausible. The lack of association with mutation-negative tumors (C37, adjusted p=0.053) is borderline and should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C95",
+      "C105"
+    ],
+    "result": "A risk allele (rs5937008) located 250 kb upstream of MED12 on the X chromosome significantly increased the number of MED12-mutation-positive tumors (p=0.0087, RR=1.23). Among 457 patients, the median number of MED12-mutation-positive tumors increased from one to two for risk allele carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C95, C105 describe a specific X-chromosome locus near MED12. The statistical association is significant (p=0.0087) with appropriate negative binomial modeling for count data. The effect (median increase from 1 to 2 tumors) is modest but biologically meaningful. The inference that the risk allele 'facilitates selection' of somatic MED12 mutations (C95) is speculative but reasonable given the data. This represents a novel mechanistic insight linking germline and somatic genetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Expression quantitative trait loci (eQTL) analysis identified 34 genes in tumors and 24 in myometrium passing local permutation significance (p<0.05), including WNT4, CDC42, TNRC6B, FOXO1, and DMRT1 in tumors. However, none passed genome-wide FDR of 10%, and no association was found between the MED12 risk allele and MED12 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C43 describe eQTL findings. While local associations are reported for several candidate genes (C41), the failure to pass genome-wide FDR correction (C42) indicates these may be false positives. The sample sizes (60 tumors, 56 myometrium) are modest for eQTL analysis, limiting power. The lack of association between the MED12 risk allele and MED12 expression (C43) is notable but doesn't rule out other regulatory mechanisms. These findings are suggestive but require validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C72"
+    ],
+    "result": "Methylation QTL (meQTL) analysis of 57 GRS SNPs identified 17,030 cis-meQTLs (nominal p<0.05), with 145 passing 10% FDR. Among candidate genes, FOXO1, TERT, and WNT4 showed significant meQTL associations, with the WNT4 locus showing multiple meQTLs suggesting methylation may regulate WNT4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C72 describe meQTL findings. The large number of nominal associations (17,030) is expected given the number of tests, but 145 passing 10% FDR provides reasonable confidence. The identification of meQTLs at FOXO1, TERT, and WNT4 (C46) is consistent with these being functional loci. The suggestion that methylation regulates WNT4 (C72) is supported by the meQTL data and Figure 5, though functional validation would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Telomere length was significantly shorter in tumors than myometrium (p=0.01). One TERT risk allele (rs2736100) was significantly associated with shorter telomere length in tumors (p=0.01) but not myometrium. Other TERT SNPs and SNPs at TERC and OBFC1 showed no individual associations, though combined effects showed a negative trend (p=0.055).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe telomere length associations. The shorter telomeres in tumors vs myometrium (C47) replicates prior findings with appropriate citation. The association of rs2736100 with telomere length (C48) is significant and tissue-specific (C49), which is biologically interesting. The lack of association for other telomere-related SNPs (C50, C51) and the borderline combined effect (C52, p=0.055) suggest modest effects. The sample size for telomere measurements is not explicitly stated, which limits assessment of power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "No association was detected between genotype and the number of somatic structural variants in whole genome sequencing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 reports a negative finding for structural variants. However, critical details are missing: the number of samples with WGS data, which genotypes were tested, the statistical power to detect associations, and whether the structural variant calls were validated. The manuscript mentions 71 tumors and 51 myometrium samples with WGS, but doesn't specify how many were used for this analysis or provide summary statistics. This negative result cannot be properly evaluated without additional information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DEPICT pathway enrichment analysis of autosomal genome-wide significant SNPs revealed no significant pathway enrichments except one stress-related pathway. ATM was the highest ranking target gene, and uterus/myometrium were among the highest ranking tissue types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe DEPICT results. The lack of significant pathway enrichment (C54) is clearly stated, which is a valid negative finding. The identification of ATM as top gene (C55) and uterus/myometrium as top tissues (C56) provides some validation that the method is detecting relevant biology despite lack of pathway enrichment. The analysis used 1,069 autosomal SNPs, which is appropriate. However, the single stress-related pathway may be a false positive given multiple testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Two of seven previously reported UL susceptibility loci replicated in UKBB: 22q13.1 (TNRC6B) and 11p15.5 (BET1L). The OBFC1 region was identified in the discovery stage, though the specific SNP from prior studies did not replicate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe replication of prior GWAS findings. The replication of 2/7 loci (C57) with the much larger UKBB sample suggests the other loci may have been false positives or population-specific. The identification of the OBFC1 region with a different SNP (C58) is reasonable given LD structure differences between populations. This provides partial validation of prior work while highlighting the value of larger sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "No association was found between GRS and age at hysterectomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 reports a negative association between GRS and age at hysterectomy. This is a clearly stated negative finding with reference to Appendix 1-table 6. While the manuscript doesn't provide detailed statistics in the main text, the negative result is plausible as GRS may affect UL occurrence but not necessarily the timing of surgical intervention, which depends on multiple clinical factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The WNT4 risk allele at 1p36.12 is associated with suggestive upregulation of WNT4 expression. WNT4 is overexpressed in MED12-mutant ULs, and MED12 knockdown reduces WNT4 expression. WNT4, along with other candidate genes (DMRT1, CD44, SALL1, MED12), plays roles in sex determination, stem cell biology, and developmental syndromes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 provide biological context for candidate genes through literature citations. The suggestive upregulation of WNT4 (C69) is supported by Figure 5C, though the eQTL didn't pass genome-wide significance. The cited relationships between WNT4 and MED12 (C70, C71), WNT4's role in development (C73), and the functions of other genes (C77-C81) are all appropriately referenced. These claims synthesize prior knowledge to support biological plausibility of the GWAS findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establish that ULs are common (70% of women by menopause), symptomatic in 20% of women, costly ($34 billion annually in US), have strong genetic influence, and include molecular subtypes (MED12 mutant, FH deficient, HMGA2 overexpressing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 provide background context through appropriate citations. These are established facts from prior literature (Stewart et al. 2017, Cardozo et al. 2012, Gross 2000, Wise et al. 2012, Luoto et al. 2000, Multiple Leiomyoma Consortium et al. 2002, M\u00e4kinen et al. 2011, Mehine et al. 2016) that motivate the current study. The citations appear appropriate and the claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C99",
+      "C102",
+      "C103"
+    ],
+    "result": "The findings partially explain increased UL occurrence in women of African origin. The risk score can stratify women into quartiles differing two-fold in UL risk, representing significant population-level burden given disease incidence. The ESR1 risk SNP has immediate potential value for understanding hormone-genetics interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C99, C102, C103 present interpretive conclusions. The partial explanation of African ancestry prevalence (C6) is supported by the GRS differences (C24-C27). The two-fold risk stratification (C99) is a reasonable summary of the GRS performance. The population-level significance (C102) is a valid inference given 70% lifetime incidence. The potential value of the ESR1 SNP (C103) is speculative but reasonable given the established role of estrogen in UL biology. These are appropriate interpretive statements that don't overstate the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "MED12-mutation-positive tumors do not distribute randomly among patients. Environmental factors may contribute more to MED12 wild-type lesions, potentially including infectious agents based on association with pelvic inflammatory disease. GWAS power is reduced for rare UL subtypes like HMGA2-overexpressing or FH-deficient tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C96-C98 provide mechanistic interpretation and study limitations. The non-random distribution of MED12-mutant tumors (C94) is supported by citation and the current GRS data. The speculation about environmental factors for wild-type lesions (C96) is appropriately tentative, with the pelvic inflammatory disease association (C97) cited from prior work. The acknowledgment of reduced power for rare subtypes (C98) is an important limitation based on statistical principles. These are reasonable interpretations that appropriately distinguish data from speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "TERT is expressed in germ cells and cancers, with well-documented neoplasia-predisposing effects of risk alleles. Previous studies show contradictory results on rs2736100's effect on telomere length. ULs display shortened telomeres, potentially causing chromosomal instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide biological context for TERT findings through literature citations. The expression pattern of TERT (C88), documented cancer associations (C89), contradictory telomere length findings (C90), and shortened telomeres in ULs (C91) are all appropriately cited. The inference that shortened telomeres may cause instability (C92) is reasonable but speculative. These claims appropriately contextualize the current telomere findings within prior literature.",
+    "result_type": "MINOR"
+  }
+]

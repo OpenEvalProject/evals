@@ -1,0 +1,2013 @@
+{
+  "submission": {
+    "id": "50ab1562-1e65-4afd-b6f4-8523666b4b62",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:46:06.565423Z",
+    "updated_at": "2025-12-01T19:46:06.565423Z"
+  },
+  "content": [
+    {
+      "id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "submission_id": "50ab1562-1e65-4afd-b6f4-8523666b4b62",
+      "content_type": "manuscript",
+      "content_text": "# Organ sculpting by patterned extracellular matrix stiffness\n\n## Authors\n\n- Justin Crest<sup>1</sup> ([ORCID: 0000-0003-2368-1462](https://orcid.org/0000-0003-2368-1462))\n- Alba Diz-Mu\u00f1oz<sup>2</sup>\n- Dong-Yuan Chen<sup>1</sup>\n- Daniel A Fletcher<sup>2</sup>\n- David Bilder<sup>1</sup> ([ORCID: 0000-0002-1842-4966](https://orcid.org/0000-0002-1842-4966)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California-Berkeley Berkeley United States\n2. Department of Bioengineering and Biophysics Program University of California-Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow organ-shaping mechanical imbalances are generated is a central question of morphogenesis, with existing paradigms focusing on asymmetric force generation within cells. We show here that organs can be sculpted instead by patterning anisotropic resistance within their extracellular matrix (ECM). Using direct biophysical measurements of elongating Drosophila egg chambers, we document robust mechanical anisotropy in the ECM-based basement membrane (BM) but not in the underlying epithelium. Atomic force microscopy (AFM) on wild-type BM in vivo reveals an anterior\u2013posterior (A\u2013P) symmetric stiffness gradient, which fails to develop in elongation-defective mutants. Genetic manipulation shows that the BM is instructive for tissue elongation and the determinant is relative rather than absolute stiffness, creating differential resistance to isotropic tissue expansion. The stiffness gradient requires morphogen-like signaling to regulate BM incorporation, as well as planar-polarized organization to homogenize it circumferentially. Our results demonstrate how fine mechanical patterning in the ECM can guide cells to shape an organ.\n\n## Introduction\n\nAnimal organs have a bewildering variety of distinctive forms that are critical for their functions. Although originating in a genetic program, morphogenesis of organs ultimately depends on physical forces, and specifically on\u00a0their imbalances, to drive shape change (Thompson, 1917). A central question of morphogenesis is how such force imbalances are created by mechanical anisotropy that is generated within an organ\u2019s components. Current paradigms derive from archetypes of morphogenetic processes such as tissue elongation, and elegant studies have revealed conserved mechanisms that drive elongation across many species. In the Drosophila embryo, planar cell polarized (PCP) myosin contractility at the cell cortex generates junctional rearrangements that extend the germband, whereas in vertebrate embryos, PCP actin-based protrusions drive cell movements that extend the neural plate (Guillot and Lecuit, 2013; Heisenberg and Bella\u00efche, 2013; Vichas and Zallen, 2011; Walck-Shannon and Hardin, 2014). In these textbook examples of morphogenesis, as in others such as gastrulation and epiboly, the force anisotropies that instruct shape are generated within the tissue\u2019s cells.\n\nIn theory, asymmetric organs could be generated not only by spatially\u00a0varying forces produced within cells, but also by spatially\u00a0varying tissue properties that differentially resist uniformly applied forces. In epithelial organs, morphogenetic forces include not only tension between cells that can cause intercellular rearrangements, but also expansion of luminal contents normal to the epithelial plane; resistance to these forces is mediated by cells and by\u00a0the extracellular matrix (ECM), including the basement membranes (BMs) that line all epithelia. In comparison to the action of cellular forces, the role of non-cellular influences on morphogenesis is poorly understood.\n\nA comprehensive study of morphogenetic mechanics requires a tissue that\u00a0is\u00a0subject to both cellular and extracellular influences. The Drosophila egg chamber (or \u2018follicle\u2019) is such a tissue (Figure 1A and Figure 1\u2014figure supplement 1) and undergoes robust elongation during its development (Spradling, 1993). Each follicle is a simple tube-like organ consisting of just two cell types, with a somatic epithelium of \u2018follicle cells\u2019 (FCs) encasing an interconnected cyst of germ cells.\u00a0The epithelium also produces an underlying BM that surrounds the entire follicle. The organ is initially spherical and grows throughout oogenesis, expanding\u00a0~5000 fold in volume over\u00a0~3 days. Expansion for the first 35 hr is isotropic, but subsequently becomes anisotropic as the follicle elongates\u00a0>2-fold specifically along the anterior\u2013posterior (A\u2013P) axis to form the distinctively shaped oval egg (Figure 1A).\u00a0Much of this elongation takes place without cell division. Genes and cell behaviors that are required for egg elongation have been identified, but the mechanical environment that actually shapes the tissue is not known (Bilder and Haigo, 2012; Cetera and Horne-Badovinac, 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig1-v3.jpg)\n\n**Figure 1.:** (A) Elongation of the Drosophila follicle during oogenesis involves three components: the luminal germline, a surrounding epithelium, and an encasing basement membrane (BM)\u00a0(see also Figure 1\u2014figure supplement 1). Aspect ratios of stage 3, 5, and 7 egg chambers stained for DAPI (blue) and phalloidin (red), along with ColIV\u2013GFP (green), are shown. (B) Atomic Force Microscopy (AFM) measurement of BM stiffness in living follicles. Absence of stroma and external position of BM allow direct access of the\u00a0AFM probe. (C) Follicles are probed at different regions along the A\u2013P axis, including the poles via Polydimethylsiloxane\u00a0(PDMS) \u2018egg cartons\u2019. Stiffness measurements are derived from the first 50 nm of force\u2013extension curves. (D) BM stiffness in the follicle center increases during development. Collagen digestion but not F-actin network disruption eliminates nearly all AFM-measured stiffness. (cf Figure 1\u2014figure supplement 1). (E) Regional BM stiffness along the follicle A\u2013P axis; color intensity matches position as in(C). WT follicles develop an A\u2013P symmetrical gradient of mechanical anisotropy. Anterior and posterior poles are not distinguished. (F) fat2- and msn-depleted follicle BMs do not increase stiffness during development and remain mechanically isotropic. Scale bar: 25 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A,B) Cross-section of the acinus-like Drosophila follicle; planar epithelial and luminal expansionary forces, as well as basement membrane-based resistance, are diagrammed. (C\u2013E) As compared to the\u00a0elongation of growing WT follicles (C), growth of follicles following ablation of epithelium (tjGAL4 GAL80ts>Diptheria toxin A chain [D]) is isotropic. Note the\u00a0absence of epithelium-produced BM (inset). The\u00a0aspect ratio is quantitated in (E). (F) Assessment of cortical tension in follicle epithelial cells using laser nanodissection (red) and Myo:GFP localization (blue). (G) Severing of A\u2013P and circumferential cell junctions at anterior, center, and posterior positions results in comparable recoil velocities. Example A\u2013P and circumferential\u00a0cuts in G\u2019 and G\u2019\u2019\u00a0are\u00a0shown. (H) Junctional non-muscle MyoII (Myo:GFP) localization is equivalent along A\u2013P and circumferential cell junctions. Representative example in H\u2019. Scale bars: 25 \u00b5m in (A\u2013C), 5 \u00b5m inset in (G\u2019,H\u2019).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Follicles are indented to generate extension\u2013deflection curves. Only the first 50 nm of deflection (plus 50 nm pre-contact) are used to fit for the Young\u2019s modulus. Four curves are generated per position, averaged, then compared between A\u2013P positions. (B) Indentation piezo (extension) speed optimization. Reduced stiffness at high speeds (0.8\u20131.0 \u00b5m/s) are indicative of viscoelasticity. 0.4 \u00b5m/s provided optimal elasticity accuracy and measurement speed.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Collagenase treatment of follicles prior to AFM does not disrupt cell\u2013cell junctions, as monitored by E-cadherin\u2013GFP. (B) Latrunculin A treatment of follicles prior to AFM effectively displaces Myo:GFP. (C) Hypertonic shrinkage of WT stage 7\u20138 follicles causes a significant reduction in size, but no significant loss of BM stiffness. Scale bar: 20 \u00b5m.\n\nHere we use biophysical tools to measure the mechanical conditions present in elongating follicles. Surprisingly, we find no evidence for differential cell-intrinsic forces within the organ, but instead document a robust spatial gradient in stiffness within the BM. Direct BM manipulation indicates that this mechanical gradient is instructive for tissue elongation. Fine mechanical patterning within the BM, generated by independent mechanisms along both the A\u2013P and circumferential axes, endows the BM with anisotropic resistance to tissue expansion that deforms the growing tissue. These results highlight a new parameter of developmental mechanics by uncovering an unappreciated sophistication in BM mechanical properties that can directly impose organ shape.\n\n## Results\n\n### Cells in elongating follicles are mechanically isotropic\n\nTo understand the conditions that drive elongation of the Drosophila follicle, we first searched for mechanical anisotropy in the organ\u2019s two distinct cell populations. In these assays as well as others below, we examined follicles at stage 8 and earlier, when they display a regular and A\u2013P symmetric morphology. Previous genetic mosaic experiments with several \u2018round egg\u2019 mutations exclude the germline as a site of action (Frydman and Spradling, 2001;\u00a0Wieschaus et al., 1981;\u00a0Viktorinov\u00e1 et al., 2009), while stripping of epithelium in Heteropeza results in round rather than elongated follicles\u00a0(Went and Junquera, 1981). Similarly, we genetically ablated the Drosophila follicle epithelium (as well as its underlying BM), and found that germline growth resulted in a nearly spherical follicle at stages when elongation would normally have initiated (Figure 1\u2014figure supplement 1). Together, these data suggest that the germline is not an intrinsic source of mechanical anisotropy.\n\nTo assess whether the follicle epithelium showed PCP cortical contractility, we laser-ablated cellular junctions at different positions along the A\u2013P axis and measured the recoil. In elongating epithelia including the Drosophila ectoderm and wing, this technique reveals differential tension along A\u2013P and dorsal\u2013ventral\u00a0(D\u2013V) axes, an anisotropy associated with polarized Myosin II accumulation (Bosveld et al., 2012; Etournay et al., 2015; Fernandez-Gonzalez et al., 2009; Rauzi et al., 2008). However, in the elongating follicle epithelium, dissection of junctions resulted in equivalent retraction of A\u2013P and circumferentially\u00a0oriented junctions; polarized accumulation of Myo:GFP was not observed (Figure 1\u2014figure supplement 1). These results suggest that neither follicle\u00a0cell type intrinsically generates anisotropic physical forces.\n\n### Patterned mechanical stiffness in the follicle BM\n\nTo identify the source of mechanical anisotropy, we therefore turned to a non-cellular component of the organ: the ECM, specifically the BM. The Drosophila follicle is enclosed by a BM that, like classic vertebrate BMs, is\u00a0~150 nm thick and contains Collagen IV, laminin, and perlecan (Haigo and Bilder, 2011; Isabella and Horne-Badovinac, 2015; Spradling, 1993). BMs and surrounding ECM are known to have important influences on animal organogenesis (Daley and Yamada, 2013; Morrissey and Sherwood, 2015), but discovery\u00a0of their mechanical roles has been impeded by the difficulty of measuring these directly in vivo. In the Drosophila follicle, the external position of the BM, the absence of a cellular stroma (Figure 1A and Figure 1\u2014figure supplement 1)\u00a0and the ability to develop in culture provided an unprecedented opportunity to assess the mechanical properties of an intact BM, in living tissue under physiological conditions.\n\nWe utilized Atomic Force Microscopy (AFM) to measure BM stiffness, calculating the Young\u2019s modulus from the deflection of a cantilevered probe indenting into the basal follicle surface\u00a0(Figure 1B,C, Figure 1\u2014figure supplement 2). Treatment of follicles with purified collagenase decreased stiffness by 97% without detectable changes to epithelial junctions, whereas disruption of the cellular actomyosin network with Latrunculin A induced no significant change in the\u00a0AFM measurements. Furthermore, reducing the turgor pressure of the follicle with a hypertonic solution (2000\u00a0mOsm sorbitol media) does not have an effect on the BM stiffness (Figure 1D and Figure 1\u2014figure supplement 3). These controls indicate that the quantified stiffness predominantly derives from the BM.\n\nAFM measurements at the center of staged wild-type (WT) follicles showed that the BM gradually stiffens as oogenesis proceeds, increasing from\u00a0~30 KPa at stage 3 to\u00a0~40 KPa at stage 5 and\u00a0~70 KPa at stage 7 (Figure 1D). Interestingly, although stiffness was highly consistent (>5% variance) around the circumferential axis at a given position\u00a0Figure 4F, it significantly varied along the A\u2013P axis (Figure 1E). At stages 3 and 5, poles were\u00a0~50% softer than the central or terminal regions (see Figure 1D for definitions). This difference persisted into later stages, and the central regions further became\u00a0~30% stiffer than the terminal regions. Thus, AFM analysis reveals a symmetrical gradient of BM stiffness along the A\u2013P axis of the follicle.\n\n### BM stiffness is instructive for tissue elongation\n\nIf the BM stiffness gradient is functionally important for organ elongation, it should be perturbed in conditions where elongation fails. We analyzed two distinct genotypes in which follicle elongation is defective: mutants for fat2, which encodes an atypical cadherin that controls basal PCP organization in the follicle epithelium (Viktorinov\u00e1 et al., 2009), and RNAi-depleting\u00a0mutants\u00a0for\u00a0misshapen (msn), which encodes a kinase that negatively regulates integrin-mediated adhesion (Lewellyn et al., 2013). We carried out AFM on staged fat2 follicles and found that, unlike WT\u00a0follicles, BM stiffness did not increase from stage 5 to stage 7 (Figure 1F). Strikingly, fat2 follicles showed no significant differences between the central, terminal, and polar regions at any\u00a0stage. An isotropic and softer BM was also seen in msn-depleted follicles, despite their elevated integrin levels (Lewellyn et al., 2013)\u00a0(Figure 1F). The lack of a BM stiffness gradient in non-elongating follicles is consistent with an important role\u00a0for this mechanical property\u00a0in organ elongation.\n\nThe data described\u00a0above\u00a0suggest the hypothesis that BM stiffness is in fact the anisotropic mechanical property that drives organ shape, deforming the growing tissue. An alternative hypothesis\u00a0is that BM stiffness is instead an indirect consequence of organ shape, passively reflecting undetected changes in cell-intrinsic properties. To distinguish between these possibilities, we directly manipulated BM components. We then measured effects on BM mechanics and subsequent tissue elongation, including manipulations in\u00a0which the A\u2013P stiffness gradient was either eliminated or preserved. The follicle epithelium produces most of its own BM, which can be altered by follicle-wide RNAi or by\u00a0overexpression driven by tj-Gal4 (Figure 2I) (Haigo and Bilder, 2011; Isabella and Horne-Badovinac, 2015; Van De Bor et al., 2015). AFM measurements on follicles depleted for SPARC, a factor involved in early BM incorporation of Collagen IV, showed that BM stiffness was\u00a0~80% of WT levels\u00a0in the central regions, but a gradient with increased elasticity was\u00a0preserved\u00a0at both terminal regions and poles; elongation of these follicles was indistinguishable from that\u00a0in\u00a0WT follicles\u00a0(Figure 2A,B) (Isabella and Horne-Badovinac, 2015; Martinek et al., 2008; Pastor-Pareja and Xu, 2011). These follicles are distinct from those that are uniformly depleted of Collagen IV, which are homogenously soft and\u00a0defective in elongation, resembling fat2- and msn-depleted follicles (Figure 2C\u2013E) (Haigo and Bilder, 2011; Isabella and Horne-Badovinac, 2015). By contrast, uniform overexpression of EHBP1, which elevates Collagen IV fibril deposition, leads to\u00a0~15% increased central stiffness with a\u00a0~20% increased anisotropic gradient, and results in organ hyperelongation (Figure 2F) (Isabella and Horne-Badovinac, 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig2-v3.jpg)\n\n**Figure 2.:** For each follicle genotype, AFM-measured positional stiffness at stages 7\u20138 is shown above and degree of elongation is shown below. Manipulations in (A\u2013F) alter gene expression uniformly via tjGAL4 (I) or homozygous genotype, whereas\u00a0those\u00a0in (G,\u00a0H) alter gene expression regionally using centrally\u00a0expressed mirGAL4 or terminally\u00a0expressed fruGAL4 (J, K). Compared to WT (A), depletion of SPARC (B) softens the BM but preserves the anisotropic gradient; follicles elongate comparably to WT. Depletion of Collagen IV (ColIV)\u00a0throughout the epithelium (C) creates a uniformly soft follicle with severe elongation defects, resembling mutants\u00a0in\u00a0which msn\u00a0is depleted (D) or fat2\u00a0mutants\u00a0(E). EHBP1 overexpression (F) increases stiffness while retaining an anisotropic gradient, and follicles hyperelongate. Depletion of Col IV in the central region alone (G) flattens the gradient while leaving terminal stiffness intact; this results in elongation defects. EHBP1 overexpression in the terminal regions alone (H) also flattens the gradient and results in elongation defects. (L) Aspect ratio vs stiffness anisotropy (defined as the ratio of central stiffness to the mean stiffness throughout the A\u2013P axis) for genotypes (A\u2013H)\u00a0and\u00a0for tj>DomeDN and tj>PerlOE.\n\nWe then turned to spatially restricted GAL4 drivers that allow manipulation of BM components in subsets of the gradient. We depleted Collagen IV specifically in the central FCs (using mirr-GAL4, Figure 2J), where BM stiffness is normally maximal. AFM measurements showed that this manipulation eliminated stiffness differences between the central and terminal regions, and these follicles show significant elongation defects (Figure 2G). To complement this manipulation, we overexpressed EHBP1 locally in the terminal regions (using fru-GAL4, Figure 2K). This also equilibrated stiffness between the central and terminal regions, and again led to rounder follicles (Figure 2H). The data overall (Figure 2L) indicate that a spatially\u00a0varying gradient in BM stiffness is essential for elongation, with absolute BM stiffness playing a lesser role. Importantly, direct manipulation of AFM-measured BM stiffness, associated\u00a0with predictable changes to follicle morphogenesis, argues that the stiffness gradient is instructive for organ shape.\n\n### Anisotropic resistance to tissue expansion by the mechanically patterned BM\n\nTo functionally test whether soft or stiff and isotropic or anisotropic BMs can indeed resist tissue expansion differentially, we adapted an organ-swelling assay (Pastor-Pareja and Xu, 2011). We immersed live follicles in deionized water, creating osmotic stress that leads to water influx into the follicle (Figure 3A,B, Video 1). Acute expansion of the organ challenges the BM, resulting in bursting which can be monitored by live imaging. This assay measures BM rather than epithelial failure\u00a0because the follicle epithelium is disrupted well before bursting and Latrunculin A treatment does not accelerate bursting (Figure 3C,D). We hypothesized that the frequency and speed at which the BM bursts would reflect its overall stiffness, whereas the position at\u00a0which it bursts could indicate the location of a weak point. Consistent with the former hypothesis, WT follicles at stage 8 were more resistant to bursting than those\u00a0at stage 5 (Figure 3C,D). All collagenase-treated follicles burst instantly. Uniformly depleting Collagen IV or SPARC also induced strong increases in bursting frequency, whereas depleting Collagen IV in the central FCs alone did not (Figure 3F). fat2 and msn-depleted follicles showed a phenotype similar to that caused\u00a0by directly weakening the BM, and burst more frequently and rapidly than WT follicles\u00a0(Figure 3C,D,F; Videos 2 and 3), whereas EHBP1-overexpressing follicles were completely resistant to bursting (Figure 3F; Video 3). Consistent with the latter hypothesis, WT follicles burst most frequently at polar regions, although bursting in collagenase-treated follicles showed no such preference, and fat2 follicles burst more frequently than WT follicles\u00a0in non-polar regions (Figure 3E). Other BM manipulations also resulted\u00a0in\u00a0bursting phenotypes consistent with the hypothesis (Figure 3F,G). For instance, depletion of Collagen IV in the central FCs (Mirr>CoIVKD) relocalized swelling and bursting to this region (Video 3). Soft follicles generally burst more frequently and more rapidly, whereas mechanically isotropic follicles swelled more isotropically before bursting (Figure 3F,G). Overall, the organ-swelling experiments support the hypothesis that the WT gradient in BM stiffness provides differential resistance to organ expansion that is greatest along the central meridian, and smallest at the poles where most elongation occurs.\n\n![Video 1.](https://cdn.elifesciences.org/articles/24958/elife-24958-media1.mp4.jpg)\n\n**Video 1.:** Bursting of WT follicles when placed in water as shown in Figure 4B. Follicle nuclei are visualized using histone\u2013mRFP, and BM is labeled with ColIV\u2013GFP fluorescence (green).\n\n![Video 2.](https://cdn.elifesciences.org/articles/24958/elife-24958-media2.mp4.jpg)\n\n**Video 2.:** Rapid bursting of fat2 follicles when placed in water as quantified in Figure 4D. The\u00a0follicle is visualized using FM4-64, and BM is labeled with ColIV\u2013GFP fluorescence (green).\n\n![Video 3.](https://cdn.elifesciences.org/articles/24958/elife-24958-media3.mp4.jpg)\n\n**Video 3.:** As quantified in Figure 4E\u2013G, compared to WT, fat2 follicles burst rapidly and often not at the\u00a0poles, whereas\u00a0follicles uniformly overexpressing EHBP1 (tj>EHBP1) swell anisotropically and do not burst at all. Overexpressing EHBP1 in poles (fru>EHBP1) induces generally isotropic swelling but also prevents bursting. Depleting Coll IV in the central region (mirr>Col IV KD) cause isotropic swelling and central bursting.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig3-v3.jpg)\n\n**Figure 3.:** (A) Design of osmotic-swelling experiments. Immersion in water causes influx (blue arrow) into the follicle (diagrammed in cross-section), resulting in increased turgor pressure (red arrows) that is resisted by the\u00a0BM (green) as the organ swells. (B) WT follicle expressing ColIV\u2013GFP, 1\u00a0min and 24\u00a0min after immersion (cf. Video 1). Position of the\u00a0BM breach is indicated by the\u00a0yellow\u00a0arrowhead. (C) Frequency of follicle BM failure by stage and genotype, along with timing (D) of failure. WT BMs accommodate expansion with increasing efficiency as development proceeds in a manner independent of cellular F-actin; fat2 and collagenased follicles burst frequently and rapidly. (E) Position of BM failure: WT BMs breach most frequently at the\u00a0poles, whereas fat2 and collagenased follicles also breach in other regions. (F) Frequency of BM failure in manipulated stage 7\u20138 follicles and (G) aspect ratio immediately before bursting. Scale bar: 25 \u00b5m.\n\n### Circumferential patterning of the stiffness \u2018corset\u2019\n\nIn what elements does the stiffness gradient lie, and how is it generated? Previous work has suggested that the follicle is shaped by a \u2018molecular corset\u2019, resulting from the PCP organization of cytoskeletal elements or BM fibril-like structures (Bilder and Haigo, 2012; Cetera and Horne-Badovinac, 2015; Gutzeit et al., 1993; Isabella and Horne-Badovinac, 2016; Tucker and Meats, 1976). We used the \u2018tissue flattening\u2019 image analysis tool ImSAnE (Heemskerk and Streichan, 2015; Chen et al., 2016) to analyze follicle BM\u00a0comprehensively, including BM\u00a0around the entire A\u2013P and circumferential axes of the organ (Figure 4A). In addition to PCP fibril organization, this approach revealed two unappreciated features.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig4-v3.jpg)\n\n**Figure 4.:** (A) \u2018Unrolling\u2019 of organ surface by ImSAnE allows quantitation of BM components along both A\u2013P and circumferential axes. Image taken from Chen et al. (2016). (B) Analysis of BM fibril PCP shows WT polarity when Perl or DomeDN are overexpressed or when SPARC is depleted, contrasting with altered polarity in fat2 and absence\u00a0of\u00a0polarity in Col IV-depleted\u00a0mutants. (C, D) Unrolling reveals increased variance in circumferential Col IV levels in fat2 as compared to those\u00a0in\u00a0WT or Perl-overexpressing follicles. The\u00a0heat map indicates lowest (blue) to highest (red) intensities over equivalent\u00a0~35% circumferential segments. (E, F) AFM analysis along the circumferential axis of a follicle at a single central meridian. fat2 mutant\u00a0follicles show high variability in BM stiffness, compared to the consistent values of WT or Perl-overexpressing follicles. Scale bars: 5 \u00b5m (B)\u00a0and 10 \u00b5m\u00a0(C).\n\nFirst, around the circumferential axis, ImSAnE quantitation\u00a0showed that WT follicles display a fairly uniform distribution of Collagen IV fibrils, suggesting a regular supracellular network. By contrast, in fat2 mutant\u00a0follicles, ImSAnE documented not only the loss of BM fibril polarity but also discontinuous and variable distribution of Collagen IV, with regions of high and low deposition (Figure 4B\u2013D). These phenotypes were shared by follicles depleted for msn. Strikingly, in both fat2- and msn-depleted follicles, AFM measurements around the circumference at a single A-P position (Figure 4E) revealed a four-fold increase in the\u00a0variability of stiffness\u00a0when compared to the highly consistent stiffness of WT follicles (Figure 4F). The data raise the possibility that uniform circumferential mechanical properties, dependent on tissue rotation, may also be required for elongation.\n\n### Morphogen-like signaling induces the organ-shaping A\u2013P mechanical gradient\n\nSecond, along the A\u2013P axis, we noted intriguing A\u2013P differences in BM component levels. During elongation, Collagen IV levels are increased in central regions and taper toward the poles (Figure 5A). Perlecan levels, by contrast, are lower at anterior and central regions than elsewhere (Figure 5B). Finally, Laminin levels are fairly uniform but are low at the anterior (Figure 5C). We extended the analysis of Collagen IV, which is a major contributor to BM stiffness (Morrissey and Sherwood, 2015). Quantitation using ImSAnE documented a significant increase of Collagen IV levels in central regions\u00a0as compared to anterior and posterior terminal regions (Figure 5H,I). This pattern is not solely transcriptional as Collagen IV subunit gene expression is not elevated in the central region (Van De Bor et al., 2015) (Figure 5F), and uniform ectopic expression of ColIagen IV subunits (via \u2018FLPout GAL4\u2019) results in non-uniform incorporation of\u00a0ColIagen IV\u00a0into the BM, with\u00a0enhanced levels\u00a0in the follicle center (Figure 5G).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig5-v3.jpg)\n\n**Figure 5.:** Expression of GFP protein traps in BM components, assessed in WT stage 7\u20138 follicles that are physically flattened for visualization: (A) ColIV, (B) aminin B1, and\u00a0(C) Perlecan. Heat maps indicate lowest (blue) to highest (red) intensities. The A\u2013P ColIV pattern is disrupted in stage 7\u20138 follicles mutant for fat2 ([D], cf. Figure 5\u2014figure supplement 1) or with inhibited JAK/STAT signaling (tj>domeDN, [E]) (cf. Figure 5\u2014figure supplement 2). (F) Col IV transcription (ColIV-LacZ reporter expression) is not elevated in the central follicle. (G) Uniform production of ColIV (via hsFLP; act>y+>GAL4 UAS-myr-RFP) throughout the follicle (G\u2019) results in elevated central incorporation. (H) ImSAnE \u2018unrolling\u2019 of the\u00a0ColIV\u2013GFP expressing follicle surface allows quantitation of intensity along the entire A\u2013P axis; note the shorter axis of \u2018round\u2019 genotypes. (I) Along the A\u2013P axis, ColIV levels are significantly elevated in the central region of WT and Perl-overexpressing follicles\u00a0but not of\u00a0fat2 or domeDN-expressing follicles. (J) Elongation failure is\u00a0induced by inhibition of JAK-STAT signaling or by\u00a0overexpression of Perl in follicles. (K) AFM reveals that follicles with inhibited JAK-STAT signaling or Perl overexpression do not develop an A\u2013P stiffness gradient; Perl overexpressing follicles are softer than WT\u00a0follicles. (L) Perl-overexpressing follicles burst easily under osmotic challenge, whereas follicles with inhibited JAK-STAT signaling are more similar to WT. Scale bars: 25 \u00b5m (A\u2013G\u2019)\u00a0and 10 \u00b5m\u00a0(H).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0Loss of basal actin PCP, (B)\u00a0elongation defects, (C)\u00a0Collagen\u00a0IV\u2013GFP pattern\u00a0(compare to Figure 6D) and (D) bursting frequency in distilled water\u00a0are indistinguishable between fat2KO and the well-characterized EMS-generated null allele fat258D. Scale bars: 10 \u00b5m (A) and 20 \u00b5m (C).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) fat2 loss does not disrupt A\u2013P patterning as\u00a0detected by the 10XSTAT\u2013GFP reporter. Scale bar: 20 \u00b5m.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24958/elife-24958-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Depletion of actin regulator Abi following stage 5\u00a0(A) halts rotation\u00a0but (B) does not soften BM at stage\u00a07\u20138\u00a0nor (C)\u00a0alter bursting characteristics at stage\u00a07\u20138; (D) follicles show normal elongation at stage\u00a07\u20138\u00a0(cf. Cetera and Horne-Badovinac, 2015).\n\nWe investigated how these A\u2013P differences in BM composition are regulated. Regional variance in BM stiffness will result from a combination of transcriptional and post-transcriptional regulation (including secretion, incorporation, and higher-order modification) of Collagen IV along with other BM components. We asked whether any of these processes are controlled by an organizer-like activity that exists at the follicle poles, in which secretion of a cytokine signal activates JAK/STAT to distinguish cell fates along the A\u2013P axis (Xi et al., 2003). Interestingly, inhibition of JAK/STAT signaling (via expression of a dominant negative receptor) eliminated the differential A\u2013P distribution of Collagen IV without affecting fibril polarity, and this manipulation gave rise to round follicles and eggs (Figures 4B and 5J). Importantly, AFM measurements demonstrated that these follicles showed relatively high but isotropic BM stiffness (Figure 5K). We conclude that morphogen-like signaling results in BM mechanical patterning that\u00a0drives elongation.\n\nHow do the various mechanical properties described above integrate to shape the organ? \u2018Molecular corset\u2019 models derive in part from analysis of follicles mutant for fat2, the prototypical egg elongation regulator, and their mispolarization of PCP elements such as BM fibrils (Figure 4B). However, fat2 mutant\u00a0follicles also fail to achieve an even distribution of BM around the follicle circumference (Figure 4C,D). Additionally, ImSAnE quantitation reveals that they have perturbed A\u2013P Collagen IV pattern, although no changes in A\u2013P signaling are seen (Figure 5H,I, Figure 5\u2014figure supplement 2). Finally, fat2 mutant\u00a0follicles fail to undergo a whole-tissue rotation event associated with elongation (Haigo and Bilder, 2011; Viktorinov\u00e1 and Dahmann, 2013). To assess the role of active rotation, we depleted the actin regulator Abi at stage 5, which results in rotation arrest as elongation initiates (Cetera et al., 2014). These follicles stiffened comparably to WT, showed bursting response comparable to WT, and also elongated normally (Figure 5- Figure 1\u2014figure supplement 3, Video 4). Conversely, elongation is prevented without disrupting rotation in several genotypes (see below, Video 4), confirming that phenomena other than active rotation are required to\u00a0manipulate follicle shape. Nevertheless, the altered tissue-wide distributions of Collagen IV in fat2 mutants\u00a0complicate interpretations that BM fibril PCP forms the molecular corset.\n\n![Video 4.](https://cdn.elifesciences.org/articles/24958/elife-24958-media4.mp4.jpg)\n\n**Video 4.:** Rotation of tj>Perl and tj>Dome-DN is comparable to that\u00a0of\u00a0WT, whereas tj>abi-RNAi initiated at stage 5 blocks rotation. Scale bar: 10 \u00b5m.\n\nWe were unable to identify manipulations that independently disrupted follicle PCP and the circumferentially continuous BM distribution. Therefore, to investigate the role of BM fibril polarity per se in generating elongation-driving mechanical anisotropy, we uniformly overexpressed Perlecan, which antagonizes the\u00a0constrictive properties of Collagen IV BMs and can induce round eggs (Isabella and Horne-Badovinac, 2015; Pastor-Pareja and Xu, 2011). This manipulation did not change the A\u2013P levels, PCP, or circumferential distribution of Collagen IV fibrils (Figures 4B,D and 5H,I). However, AFM analysis revealed\u00a0that it did\u00a0create a softer BM in which the anisotropic gradient has been eliminated, and the enclosed follicles fail to elongate (Figure 5J,K). In osmotic stress experiments, follicles overexpressing perlecan swelled more isotropically and burst more rapidly than WT follicles\u00a0(Figure 5L). Thus, despite the fact that neither the levels, local PCP, or supracellular organization of Collagen IV fibrils are altered in Perlecan-overexpressing follicles, the BM of these\u00a0follicles had mechanical deficits similar to those\u00a0of\u00a0follicles completely lacking a BM. By contrast, follicles deficient for STAT-dependent A\u2013P signaling also fail to elongate but show normal fibril polarity and organization, and are significantly more resistant to bursting (Figures 4B and 5J\u2013L). Together, these data support a requirement for a circumferentially even distribution of PCP fibrils in elongation. However, they also reveal that PCP fibrils alone\u00a0are insufficient to resist tissue growth\u00a0anisotropically; the organ-shaping stiffness gradient requires patterned A\u2013P BM levels.\n\n## Discussion\n\nOrgan elongation is a fundamental developmental process, and is generally considered to be driven by cell-intrinsic polarized mechanical forces that actively deform tissues. Here, we demonstrate that an elongating tissue can rely instead on mechanical anisotropy patterned into the BM. Our data indicate that this asymmetric resistance within the extracellular environment, rather than asymmetric force generation within the cells, plays the dominant role in molding the follicle, prescribing subsequent morphogenetic cell behaviors. These results direct increased attention to fine BM spatial organization in creating the mechanical environment that shapes each tissue, and may fill the gap between the limited repertoire of cell-based morphogenetic mechanisms and the immense diversity of organ shapes.\n\nStromatic ECMs and BMs surround most animal organs, but their full roles in morphogenesis remain unresolved. Long regarded as an inert scaffold, ECM is known to influence tissue biology through actively regulating ligand availability and adhesion signaling; local BM deposition and degradation also play key roles in the\u00a0branching morphogenesis of several mammalian organs (Daley and Yamada, 2013; Harunaga et al., 2014; Morrissey and Sherwood, 2015; Pastor-Pareja and Xu, 2011; Varner and Nelson, 2014). However, analysis of the\u00a0mechanical properties of vertebrate BMs in vivo is hampered by surrounding cellular stroma, whose removal necessitates non-physiological manipulations. Because of this, only exceptionally robust BMs, such as those of the eye, have been analyzed following denuding protocols (Ali et al., 2016). By contrast, fly follicles lack a cellular stroma, and their topology allows direct access of AFM probes to the BM of an intact living tissue.\n\nOur in vivo biophysical measurements of this native BM reveal an unappreciated degree of tissue-level mechanical patterning. Within each follicle, BM stiffness develops reliably and with spatial properties that are carefully regulated along both the A\u2013P and circumferential axes. Along the A\u2013P axis, a stiffness gradient is built that increases\u00a0~300% along a\u00a0~13-cell, 100 \u03bcm arc at stage 8. Perpendicular to this axis, stiffness around the circumference varies by less than 5% across the same distance. Our\u00a0data reveal that both axes are critical for organ shaping, and merit a significant revision of the \u2018molecular corset\u2019 model previously proposed to mediate elongation (Bilder and Haigo, 2012; Cetera and Horne-Badovinac, 2015; Gutzeit et al., 1993; Isabella and Horne-Badovinac, 2016; Tucker and Meats, 1976). Hypotheses of corset structure have focused on the PCP organization of the basal actin network, the microtubule cytoskeleton, or the fibril-like BM. However, manipulations that preserve PCP alignment but nevertheless result in round follicles demonstrate that mechanical anisotropy at the length scale of individual BM fibrils is not sufficient to drive elongation. Instead, they suggest that consistent circumferential stiffness,\u00a0probably associated with the supracellular BM fibrillar network generated by whole-tissue rotation, is a key element of corset effectiveness. Moreover, manipulations that flatten a pole-derived A\u2013P signaling gradient also flatten the A\u2013P stiffness gradient, and create isotropic organs. Thus, to drive elongation, the corset must also\u00a0be anisotropic on a \u2018global\u2019 tissue-wide scale, in a manner that depends on morphogen-regulated mechanical properties.\n\nThe direct manipulations of BM components presented here, which lead to predicted tissue shape\u00a0outcomes, argue that BM mechanics themselves are instructive for morphogenesis. Flattening the stiffness gradient in several ways, including by locally restricted BM alteration, prevents elongation, whereas hyperelongating follicles have an enhanced stiffness gradient. Although we cannot rule out undetected roles of these manipulations in altering cell behaviors via classical intercellular signaling, we see no evidence for such changes in the underlying epithelium. Instead, our results indicate that elongation is imposed by isotropic tissue growth meeting the anisotropic resistance fashioned within the BM. Consistent with this model, manipulations that alter absolute stiffness but preserve a relative gradient still result in tissue elongation. The extent to which ovarian cells respond compliantly or through well-characterized mechanical feedback mechanisms remain to be determined, but the data point to\u00a0physical properties of the BM as the dominant influence.\n\nOur results reveal a tissue elongation mechanism that is conceptually different from cell-intrinsic force asymmetries. Construction of mechanically patterned resistance in an ECM, along both axes orthogonal to its tissue interface, generates a force imbalance that imposes a specific shape on the growing organ, without necessitating spatially restricted localization of force generators within cells. Emerging examples point to the influence that substantial changes in exogenous physical forces can have in organ morphogenesis (Aigouy et al., 2010; Behrndt et al., 2012; Etournay et al., 2015; Harunaga et al., 2014; rayRay et al., 2015; Shyer et al., 2013) as well as in tumor\u00a0growth (Kaushik et al., 2016). The discovery of precise organ-sculpting resistance within a BM motivates the development of tools and assays to explore, on a fine scale, true in vivo BM mechanical properties in both physiological and pathological contexts.\n\n## Materials and methods\n\n### Drosophila strains\n\nThe\u00a0GAL4 drivers used were tjGAL4, mirrGAL4 and fruGAL4 (Borensztejn et al., 2013); tubGAL80ts was used to control expression temporally\u00a0by shifting flies to 29\u00b0. The Drosophila genome contains two Collagen IV subunit-encoding genes: ColIV\u03b11 (Flybase: Cg25c) and ColIV\u03b12 (Flybase: vkg). For ease, both are referred to in the text and figures as Collagen IV; detailed genotypes for all experiments are listed in Supplementary file 1. Overexpression constructs UAS-DT-A, UAS-Perlecan (Flybase: Trol), UAS-DomeDN, and UAS-EHBP1\u00a0(Giagtzoglou et al., 2012); RNAi constructs against Abi, SPARC, ColIV\u03b11, ColIV\u03b12\u00a0and msn; and GFP protein traps in Collagen IV\u03b12 and perlecan were obtained from the Bloomington stock center. Fosmids carrying LanB1\u2013GFP (Sarov et al., 2016) were obtained from VDRC. Myo\u2013GFP (Flybase: sqh) was provided by Dan Kiehart. Strains\u00a0showing\u00a0ectopic expression of ColIV\u2013GFP (UAS\u2013GFP\u2013ColIV\u03b11 +\u00a0UAS\u2013GFP\u2013ColIV\u03b12)\u00a0were\u00a0provided by S. Noselli (Van De Bor et al., 2015), and\u00a0utilized hsFLP; act>y+>GAL4; UAS-myrRFP, activated by a 30\u00a0min heat shock at 37\u00b0 and immediately imaged with RFP signal to confirm uniform expression. fat2KO, kindly provided by Mike Simon, is a null allele generated by ends-out gene replacement (Maggert et al., 2008) into the first exon and phenocopies other fat2 null alleles (Figure 5\u2014figure supplement 1).\n\n### Imaging and analysis\n\nOvary preparations for fixed and live imaging were performed as previously described (Chen et al., 2016). Phalloidin-staining of fixed follicles used 20 nM phalloidin\u00a0(Sigma). Latrunculin A 50 \u00b5M (Sigma), FM4-64FX 5 \u00b5g/mL (Thermo), and purified Collagenase 1000 U/mL (Worthington LS005273) were diluted in Schneider\u2019s complete media (10 mg/mL insulin, FBS and pen/strep) for live imaging. The measured osmolarity of the standard media was 300\u00a0mOsm. Hypertonic shrinking was performed in standard media supplemented with 1M D-sorbitol (Sigma) to 2000\u00a0mOsm. Fixed follicles were mounted with tape spacers, except for flattened preparations (which lacked spacers)and ImSAnE preparations (which were mounted in a depression slide). Single-plane confocal images were acquired on a Zeiss LSM700 using a Plan Apochromat 20x/NA 0.8 lens or a LD C-Apochromat 40x/NA 1.1 water-immersion lens and processed in Fiji software\u00a0(Schindelin et al., 2012). Representative images were isolated and assembled into figures using Adobe Photoshop and Illustrator CS6.\n\nFor cortical MyoII planar polarity quantification (Munjal et al., 2015), IMSAnE (Heemskerk and Streichan, 2015) was used to \u2018unroll\u2019 the follicle epithelia as previously describedby\u00a0Chen et al., (2016) but\u00a0with modifications. Apical surfaces of interest (SOI) of the epithelia were identified by Sqh-GFP signal. Multilayered cylinder projections of the apical-lateral membranes from the apical-most SOI plus minus 2\u20132.5 \u03bcm were generated by IMSAnE class CylinderMeshWrapper. Maximum intensity projections were background subtracted with the\u00a0Fiji plugin \u2018subtract background\u2019. A\u2013P and circumferential junctions were categorized by 60\u201390\u00b0 and 0\u201330\u00b0 degrees,\u00a0respectively, relative to the A\u2013P axis. Cortical Sqh\u2013GFP was selected manually with line tools (width 8px) on\u00a0>30 junctions of each type; the mean ratio was plotted.\n\nFor ColIV\u2013GFP intensity measurements, in toto images were collected with pixel width of 0.17 \u03bcm and voxel depth of 0.50 \u03bcm without Z-intensity correction. Follicle SOI was identified using basal F-actin signal and generalized sinusoidal projections were generated by the IMSAnE class spherelikeFitter. Maximum intensity projections from multilayered pullbacks\u00a0\u00b13 \u03bcm from the basal epithelia were generated. To measure A\u2013P intensity, five 1-pixel-wide lines were drawn within a 10 \u03bcm wide stripe at the central meridian, where the pullbacks have minimal distortion. To measure circumferential intensity, five circumferential 1-pixel-wide lines were drawn within a 10 \u03bcm wide stripe along the circumferential meridian. Intensities were standardized to follicle length, then compared across follicles. Variance was calculated for each follicle using the Excel var.p formula. Profile plots were generated in Fiji\u00a0software.\n\n### Laser ablation\n\nEcad\u2013GFP follicles were dissected in medium and placed in a glass-bottomed dish. A pulsed Mai-Tai two-photon on a Zeiss LSM 510 confocal microscope was used to sever A\u2013P or circumferential junctions at anterior, central, and posterior positions on the follicle. At 708 nm and 90% power, the ablation time was less than 1 s and the resulting junction relaxation distances were measured within 300 ms. Analysis was executed manually in Fiji software\u00a0normalizing the relaxed distance to the original junction length. Similar results were obtained using a UV Micropoint laser at 50% power and a Nikon Ti-E inverted microscope with a\u00a0Yokogawa X1 confocal spinning disk head, with images continuously collected (500 ms/frame).\n\n### Atomic force microscopy\n\nBM stiffness was measured (Figure 1\u2014figure supplement 2) using either a Bruker Catalyst AFM controlled by Nanoscope 8.10 software or a custom-built AFM controlled by LAbview software, both mounted on an inverted Zeiss AxioObserver Z1 microscope. MLCT-C cantilevers (Bruker) with a pyramidal tip and a nominal spring constant of 10 pN/nm were used in all experiments. The actual spring constant of each cantilever was determined by thermal calibration in air. Measurements were done in fluid. Approach velocity was optimized as 0.4 \u00b5m/sec to ensure the fastest rate of elastic measurement without viscoelastic deformation. Sample rate of deflection was 2048. Retraction speed, which does not affect elasticity measurements, was set to 20 \u00b5m/sec. Follicles were prepared as for live imaging; the cantilever was positioned at the desired position by brightfield microscopy. Each positional measurement was taken four times without moving the cantilever in XY and averaged. Young\u2019s Modulus of elasticity was calculated by fitting the cantilever deflection versus piezo extension curves to the modified Hertz model as described (Rosenbluth et al., 2006), using a custom-written algorithm in MATLAB (Mathworks). Only the first 50 nm of indentation were used to isolate elasticity from just the basement membrane\u00a0(BM). For pole measurements, PDMS egg holders were created using custom-made molds, coated first with poly-D lysine and then treated with complete growth media. Follicles were gently mounted in PBS which was subsequently replaced with media.\n\n### Osmotic swelling\n\nFollicles dissected in complete media were adhered to a\u00a0poly-D lysine glass-bottomed dish (MatTek) before replacing the\u00a0medium twice with dH20. Images were collected at 15 s\u00a0or 30 s intervals on a Zeiss Axioimager with\u00a0a Plan-Neofluor 10x/0.38NA objective.\n\n### Statistical analysis\n\nData were analyzed and displayed using Microsoft Excel. All error bars represent standard errors and centers represent means. At least three biological replicates were undertaken for each experiment and the results are given in Supplementary file 1. All acquired data were included with the exception of the AFM experiments. For these, only follicles in which all three lateral positions could be quantified were used. Statistical analysis for all data used two-tailed t-tests with p-value thresholds of *p<0.05, **p<0.01, and\u00a0***p<0.001.\n",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "e89eee47-ec17-4f79-b0d8-d91b2681ec2a",
+      "submission_id": "50ab1562-1e65-4afd-b6f4-8523666b4b62",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Allan C Spradling, Howard Hughes Medical Institute, Carnegie Institution for Science , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24958.021](https://doi.org/10.7554/eLife.24958.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Organ sculpting by patterned extracellular matrix stiffness\" for consideration by eLife. Your article has been favorably evaluated by Marianne Bronner (Senior Editor) and three reviewers, one of whom, Allan Spradling (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Eric F Wieschaus (Reviewer #2); Nick Brown (Reviewer #3).\n\nSummary:\n\nThe manuscript investigates the mechanisms that restrict circumferential expansion of the Drosophila oocyte during its growth, thereby molding its final elongated shape. The system is specialized and builds on much previous work, but ultimately addresses a question of great generality and importance for understanding cell shape, namely whether anisotropies in (passive) resistance to an isotropic contractions or expansions are sufficient to result in polarized force distributions and morphogenetic movements. Previous works in Drosophila have long indicated that the follicle cells play the predominant role in shaping the oocyte. The initial expectation was that this would be a structure in the follicle cells themselves. What is exciting about the paper is the demonstration that the constraint is really in the ECM secreted by the follicles and the biophysical measurements that quantify and support that view. The demonstration that reprogrammed expression of ECM components and signaling regulators can alter stiffness is also highly significant. With several relatively minor changes described below the paper would be suitable for acceptance.\n\nEssential revisions:\n\n1) The initial experiments to implicate a role for the follicle cells are weak and unnecessary given previous research on this system. The remarkably crude approach of completely ablating the follicular epithelium adds nothing of value and is not currently even interpreted correctly. The ablation of follicle cell junctions along the AP and DV axis is not described in detail nor is much data provided. The failure to detect junction-mediated anisotropy does not strongly implicate the ECM because it does not exclude anisotropy in cellular structures other than junctions, such as basal actin fibers. A better approach would be to cite classical papers by Wieschaus, and by Gutzeit where mosaics are used to show that the length vs circumference ratio is governed by an ovarian cell type that is not germ line derived, most likely the follicle cells.\n\n2) The authors should clarify whether their experiments apply to egg elongation generally or only to early elongation. The authors study the initial elongation of the follicle that takes place from about stage 3 to stage 7. However, most previous papers have studied elongation throughout oogenesis, including significant additional elongation during stages 8-14.\n\n3) The measurement of ECM stiffness using atomic force microscopy is a great strength of the paper. However, relatively few details or controls are shown to validate these measurements. Does the size, shape and exact placement of the tip matter? A large tip might be more relevant to the large scale morphogenetic forces under consideration. The force is applied at right angles to the material, but Young's modulus is conventionally determined by the deformation along the linear dimension of the material. Do the measurements depend on the questionable assumption that the ECM is locally isotropic in all dimensions? More primary data should be shown, rather than just ratios.\n\n4) It is not entirely clear that from the experiments presented whether additional mechanisms are needed for egg elongation beyond the reductions in collagen deposition at the poles expected for geometric reasons due to rotation. Artificially changing polar BM stiffness causes problems, but the authors\u2019 experiments and arguments fail to delineate how precise the gradient must be, and whether graded JAK/STAT signaling is essential because of its effects on the stiffness profile or on BM synthesis. The authors should more clearly justify statements such as: \"[these data]...reveal that PCP fibrils are insufficient alone to anisotropically resist tissue growth; the organ-shaping stiffness gradient requires patterned A-P BM levels\".\n",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "57a34459-429e-468f-987c-87b1e8149b8e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C1",
+      "claim": "The Drosophila egg chamber is a simple tube-like organ consisting of just two cell types, with a somatic epithelium of 'follicle cells' (FCs) encasing an interconnected cyst of germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila egg chamber (or 'follicle') is such a tissue (Figure 1A and Figure 1\u2014figure supplement 1) and undergoes robust elongation during its development (Spradling, 1993). Each follicle is a simple tube-like organ consisting of just two cell types, with a somatic epithelium of 'follicle cells' (FCs) encasing an interconnected cyst of germ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text with citation to Spradling, 1993",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "f5565d20-57f4-4c21-834f-3c2135d9bf17",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C2",
+      "claim": "The epithelium produces an underlying basement membrane (BM) that surrounds the entire follicle.",
+      "claim_type": "EXPLICIT",
+      "source": "The epithelium also produces an underlying BM that surrounds the entire follicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "0939bc54-a385-44c5-a22f-f1a58d34943e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C3",
+      "claim": "The follicle is initially spherical and grows throughout oogenesis, expanding ~5000 fold in volume over ~3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The organ is initially spherical and grows throughout oogenesis, expanding ~5000 fold in volume over ~3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7f9ad935-7c52-47c2-b94a-f91641d3a56f",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C4",
+      "claim": "Expansion for the first 35 hr is isotropic, but subsequently becomes anisotropic as the follicle elongates >2-fold specifically along the anterior\u2013posterior (A\u2013P) axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Expansion for the first 35 hr is isotropic, but subsequently becomes anisotropic as the follicle elongates >2-fold specifically along the anterior\u2013posterior (A\u2013P) axis to form the distinctively shaped oval egg (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text with reference to Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "b2643eb5-0c92-46b6-86d8-ff097da578f1",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C5",
+      "claim": "Much of follicle elongation takes place without cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of this elongation takes place without cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "d8081e40-af37-4bc1-911d-6da59f070738",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C6",
+      "claim": "Collagen digestion eliminates nearly all AFM-measured stiffness in follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen digestion but not F-actin network disruption eliminates nearly all AFM-measured stiffness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "d8614626-7433-4712-a04e-628e74f4c077",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C7",
+      "claim": "F-actin network disruption does not eliminate AFM-measured stiffness in follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen digestion but not F-actin network disruption eliminates nearly all AFM-measured stiffness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "d79d5f85-f17a-435b-b1ab-2a376d84fb5f",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C8",
+      "claim": "WT follicles develop an A\u2013P symmetrical gradient of mechanical anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "WT follicles develop an A\u2013P symmetrical gradient of mechanical anisotropy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "10f0d8b4-367c-4106-a606-5128c81bdea7",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C9",
+      "claim": "fat2-depleted follicle BMs do not increase stiffness during development and remain mechanically isotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "fat2- and msn-depleted follicle BMs do not increase stiffness during development and remain mechanically isotropic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "1c4debef-7463-4b6b-9a84-5e7c068e3b71",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C10",
+      "claim": "msn-depleted follicle BMs do not increase stiffness during development and remain mechanically isotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "fat2- and msn-depleted follicle BMs do not increase stiffness during development and remain mechanically isotropic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "949dfcf8-fd76-4089-94d7-97e2d34941ee",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C11",
+      "claim": "Treatment of follicles with purified collagenase decreased stiffness by 97% without detectable changes to epithelial junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of follicles with purified collagenase decreased stiffness by 97% without detectable changes to epithelial junctions, whereas disruption of the cellular actomyosin network with Latrunculin A induced no significant change in the AFM measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text with quantitative measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "a1de09c4-cf95-4e4b-aeec-04ebfe7f025c",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C12",
+      "claim": "Disruption of the cellular actomyosin network with Latrunculin A induced no significant change in the AFM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of follicles with purified collagenase decreased stiffness by 97% without detectable changes to epithelial junctions, whereas disruption of the cellular actomyosin network with Latrunculin A induced no significant change in the AFM measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text with quantitative measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "18a4f435-718a-4189-892b-d651f9c7e1e9",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C13",
+      "claim": "Reducing the turgor pressure of the follicle with a hypertonic solution (2000 mOsm sorbitol media) does not have an effect on the BM stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reducing the turgor pressure of the follicle with a hypertonic solution (2000 mOsm sorbitol media) does not have an effect on the BM stiffness (Figure 1D and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "62428f7c-8b15-4c6d-877f-8ed7b11437cf",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C14",
+      "claim": "The quantified stiffness predominantly derives from the BM.",
+      "claim_type": "EXPLICIT",
+      "source": "These controls indicate that the quantified stiffness predominantly derives from the BM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the collagenase, Latrunculin A, and hypertonic solution experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "bde4f211-173e-4220-b581-f0cb298ff192",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C15",
+      "claim": "The BM gradually stiffens as oogenesis proceeds, increasing from ~30 KPa at stage 3 to ~40 KPa at stage 5 and ~70 KPa at stage 7.",
+      "claim_type": "EXPLICIT",
+      "source": "AFM measurements at the center of staged wild-type (WT) follicles showed that the BM gradually stiffens as oogenesis proceeds, increasing from ~30 KPa at stage 3 to ~40 KPa at stage 5 and ~70 KPa at stage 7 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with quantitative measurements and shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7306f787-f764-455f-80af-0320550d81a0",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C16",
+      "claim": "Stiffness was highly consistent (>5% variance) around the circumferential axis at a given position.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although stiffness was highly consistent (>5% variance) around the circumferential axis at a given position Figure 4F, it significantly varied along the A\u2013P axis (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with quantitative measurement and shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "b425abbf-375c-43fb-a490-c290bb328934",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C17",
+      "claim": "BM stiffness significantly varied along the A\u2013P axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although stiffness was highly consistent (>5% variance) around the circumferential axis at a given position Figure 4F, it significantly varied along the A\u2013P axis (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "b1ccd8b1-0d31-4996-bce3-5db53af66a99",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C18",
+      "claim": "At stages 3 and 5, poles were ~50% softer than the central or terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "At stages 3 and 5, poles were ~50% softer than the central or terminal regions (see Figure 1D for definitions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with quantitative measurement and reference to Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "8ed76359-78ad-4f67-ad64-78d03f75c7a8",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C19",
+      "claim": "The central regions became ~30% stiffer than the terminal regions at later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference persisted into later stages, and the central regions further became ~30% stiffer than the terminal regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with quantitative measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "6e5bda6b-0fc0-4b62-9e3c-4b30bb56ee29",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C20",
+      "claim": "AFM analysis reveals a symmetrical gradient of BM stiffness along the A\u2013P axis of the follicle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, AFM analysis reveals a symmetrical gradient of BM stiffness along the A\u2013P axis of the follicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on AFM measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "1b5fd901-1041-4c5d-9ed5-807f7f1373c9",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C21",
+      "claim": "fat2 follicles showed that BM stiffness did not increase from stage 5 to stage 7.",
+      "claim_type": "EXPLICIT",
+      "source": "We carried out AFM on staged fat2 follicles and found that, unlike WT follicles, BM stiffness did not increase from stage 5 to stage 7 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "57269863-9374-4b90-97c2-ab131dc880ee",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C22",
+      "claim": "fat2 follicles showed no significant differences between the central, terminal, and polar regions at any stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, fat2 follicles showed no significant differences between the central, terminal, and polar regions at any stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on AFM measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "84139146-a2f7-41e1-9467-e6616716faa0",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C23",
+      "claim": "msn-depleted follicles showed an isotropic and softer BM despite their elevated integrin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "An isotropic and softer BM was also seen in msn-depleted follicles, despite their elevated integrin levels (Lewellyn et al., 2013) (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with citation and shown in Figure 1F",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "a9e5cd8a-68cc-44bf-80a3-8124ce01323c",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C24",
+      "claim": "The lack of a BM stiffness gradient in non-elongating follicles is consistent with an important role for this mechanical property in organ elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of a BM stiffness gradient in non-elongating follicles is consistent with an important role for this mechanical property in organ elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on correlation between stiffness gradient and elongation",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "a7739417-421b-46ca-b3fc-ab286d4edd6f",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C25",
+      "claim": "Follicles depleted for SPARC showed that BM stiffness was ~80% of WT levels in the central regions, but a gradient with increased elasticity was preserved at both terminal regions and poles.",
+      "claim_type": "EXPLICIT",
+      "source": "AFM measurements on follicles depleted for SPARC, a factor involved in early BM incorporation of Collagen IV, showed that BM stiffness was ~80% of WT levels in the central regions, but a gradient with increased elasticity was preserved at both terminal regions and poles; elongation of these follicles was indistinguishable from that in WT follicles (Figure 2A,B) (Isabella and Horne-Badovinac, 2015; Martinek et al., 2008; Pastor-Pareja and Xu, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with quantitative measurement, citations, and shown in Figure 2A,B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "672187a0-0fd9-4fee-954b-8803615634a2",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C26",
+      "claim": "Elongation of SPARC-depleted follicles was indistinguishable from that in WT follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "AFM measurements on follicles depleted for SPARC, a factor involved in early BM incorporation of Collagen IV, showed that BM stiffness was ~80% of WT levels in the central regions, but a gradient with increased elasticity was preserved at both terminal regions and poles; elongation of these follicles was indistinguishable from that in WT follicles (Figure 2A,B) (Isabella and Horne-Badovinac, 2015; Martinek et al., 2008; Pastor-Pareja and Xu, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with citations and shown in Figure 2A,B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "1c37f3b7-8c93-4977-b7d3-a74a1443c241",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C27",
+      "claim": "Follicles uniformly depleted of Collagen IV are homogenously soft and defective in elongation, resembling fat2- and msn-depleted follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "These follicles are distinct from those that are uniformly depleted of Collagen IV, which are homogenously soft and defective in elongation, resembling fat2- and msn-depleted follicles (Figure 2C\u2013E) (Haigo and Bilder, 2011; Isabella and Horne-Badovinac, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with citations and shown in Figure 2C\u2013E",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "dbc19269-1d0e-4409-bc00-01a17b0e8e84",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C28",
+      "claim": "Uniform overexpression of EHBP1 leads to ~15% increased central stiffness with a ~20% increased anisotropic gradient, and results in organ hyperelongation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, uniform overexpression of EHBP1, which elevates Collagen IV fibril deposition, leads to ~15% increased central stiffness with a ~20% increased anisotropic gradient, and results in organ hyperelongation (Figure 2F) (Isabella and Horne-Badovinac, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with quantitative measurements, citation, and shown in Figure 2F",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "8df5a2e4-bf83-4539-8045-ca4cd4683553",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C29",
+      "claim": "Depletion of Collagen IV specifically in the central FCs eliminated stiffness differences between the central and terminal regions, and these follicles show significant elongation defects.",
+      "claim_type": "EXPLICIT",
+      "source": "We depleted Collagen IV specifically in the central FCs (using mirr-GAL4, Figure 2J), where BM stiffness is normally maximal. AFM measurements showed that this manipulation eliminated stiffness differences between the central and terminal regions, and these follicles show significant elongation defects (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 2G and 2J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "a26ca3ff-bc67-4783-94fd-f4409a1b8ae2",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C30",
+      "claim": "Overexpression of EHBP1 locally in the terminal regions equilibrated stiffness between the central and terminal regions, and led to rounder follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "To complement this manipulation, we overexpressed EHBP1 locally in the terminal regions (using fru-GAL4, Figure 2K). This also equilibrated stiffness between the central and terminal regions, and again led to rounder follicles (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 2H and 2K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "ac4efd28-ae8f-458b-a949-d5141017f86a",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C31",
+      "claim": "A spatially varying gradient in BM stiffness is essential for elongation, with absolute BM stiffness playing a lesser role.",
+      "claim_type": "EXPLICIT",
+      "source": "The data overall (Figure 2L) indicate that a spatially varying gradient in BM stiffness is essential for elongation, with absolute BM stiffness playing a lesser role.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary statement based on multiple experiments shown in Figure 2L",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "f844473e-1fe9-4e63-a068-5dd4b0184f4c",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C32",
+      "claim": "Direct manipulation of AFM-measured BM stiffness, associated with predictable changes to follicle morphogenesis, argues that the stiffness gradient is instructive for organ shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, direct manipulation of AFM-measured BM stiffness, associated with predictable changes to follicle morphogenesis, argues that the stiffness gradient is instructive for organ shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on multiple experimental manipulations",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "a98fb9bd-be10-4200-a185-5730d7585742",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C33",
+      "claim": "The follicle epithelium is disrupted well before bursting in the organ-swelling assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This assay measures BM rather than epithelial failure because the follicle epithelium is disrupted well before bursting and Latrunculin A treatment does not accelerate bursting (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "2fccc3a2-5d45-485e-bed4-11e33f30c102",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C34",
+      "claim": "Latrunculin A treatment does not accelerate bursting in the organ-swelling assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This assay measures BM rather than epithelial failure because the follicle epithelium is disrupted well before bursting and Latrunculin A treatment does not accelerate bursting (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "53e6b823-e6d8-4c99-82d7-6407173ae78e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C35",
+      "claim": "WT follicles at stage 8 were more resistant to bursting than those at stage 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the former hypothesis, WT follicles at stage 8 were more resistant to bursting than those at stage 5 (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7870f435-819c-4dce-91e6-9960fc242e86",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C36",
+      "claim": "All collagenase-treated follicles burst instantly.",
+      "claim_type": "EXPLICIT",
+      "source": "All collagenase-treated follicles burst instantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "521962fe-80f7-47c3-ba94-743b38a5acb1",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C37",
+      "claim": "Uniformly depleting Collagen IV or SPARC induced strong increases in bursting frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Uniformly depleting Collagen IV or SPARC also induced strong increases in bursting frequency, whereas depleting Collagen IV in the central FCs alone did not (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "e1454898-45bd-4957-87fb-afea5e19cd50",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C38",
+      "claim": "Depleting Collagen IV in the central FCs alone did not increase bursting frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Uniformly depleting Collagen IV or SPARC also induced strong increases in bursting frequency, whereas depleting Collagen IV in the central FCs alone did not (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "f158d885-47ee-4322-bebf-9365254f263e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C39",
+      "claim": "fat2 and msn-depleted follicles showed a phenotype similar to that caused by directly weakening the BM, and burst more frequently and rapidly than WT follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "fat2 and msn-depleted follicles showed a phenotype similar to that caused by directly weakening the BM, and burst more frequently and rapidly than WT follicles (Figure 3C,D,F; Videos 2 and 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3C,D,F and Videos 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7507490e-2aaf-4c28-a202-14e3affa9e07",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C40",
+      "claim": "EHBP1-overexpressing follicles were completely resistant to bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas EHBP1-overexpressing follicles were completely resistant to bursting (Figure 3F; Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3F and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "01736544-2e0e-4171-b2a5-1eb038f77707",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C41",
+      "claim": "WT follicles burst most frequently at polar regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the latter hypothesis, WT follicles burst most frequently at polar regions, although bursting in collagenase-treated follicles showed no such preference, and fat2 follicles burst more frequently than WT follicles in non-polar regions (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "c317b7ca-ba14-48b8-ad60-0e835fb9aeec",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C42",
+      "claim": "Bursting in collagenase-treated follicles showed no preference for polar regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the latter hypothesis, WT follicles burst most frequently at polar regions, although bursting in collagenase-treated follicles showed no such preference, and fat2 follicles burst more frequently than WT follicles in non-polar regions (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "d9a8d1cc-69af-416b-8108-b79885e17514",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C43",
+      "claim": "fat2 follicles burst more frequently than WT follicles in non-polar regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the latter hypothesis, WT follicles burst most frequently at polar regions, although bursting in collagenase-treated follicles showed no such preference, and fat2 follicles burst more frequently than WT follicles in non-polar regions (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "e63f2e9c-afa2-445a-a3e7-3aeead6b4421",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C44",
+      "claim": "Soft follicles generally burst more frequently and more rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Soft follicles generally burst more frequently and more rapidly, whereas mechanically isotropic follicles swelled more isotropically before bursting (Figure 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "8c87e421-483e-4e31-b663-b962b2ee034a",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C45",
+      "claim": "Mechanically isotropic follicles swelled more isotropically before bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "Soft follicles generally burst more frequently and more rapidly, whereas mechanically isotropic follicles swelled more isotropically before bursting (Figure 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 3F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "88004749-1f25-43e2-93c7-39e954aeff61",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C46",
+      "claim": "The WT gradient in BM stiffness provides differential resistance to organ expansion that is greatest along the central meridian, and smallest at the poles where most elongation occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the organ-swelling experiments support the hypothesis that the WT gradient in BM stiffness provides differential resistance to organ expansion that is greatest along the central meridian, and smallest at the poles where most elongation occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on organ-swelling experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "4b771b4f-bf3b-478d-930e-40d11e86bf0a",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C47",
+      "claim": "WT follicles display a fairly uniform distribution of Collagen IV fibrils around the circumferential axis, suggesting a regular supracellular network.",
+      "claim_type": "EXPLICIT",
+      "source": "First, around the circumferential axis, ImSAnE quantitation showed that WT follicles display a fairly uniform distribution of Collagen IV fibrils, suggesting a regular supracellular network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text based on ImSAnE quantitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "ae350539-6da3-40a4-aec3-2eef62e28c88",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C48",
+      "claim": "In fat2 mutant follicles, ImSAnE documented not only the loss of BM fibril polarity but also discontinuous and variable distribution of Collagen IV, with regions of high and low deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in fat2 mutant follicles, ImSAnE documented not only the loss of BM fibril polarity but also discontinuous and variable distribution of Collagen IV, with regions of high and low deposition (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 4B\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7a157d04-01e6-4072-9df0-e62ce6b05407",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C49",
+      "claim": "In both fat2- and msn-depleted follicles, AFM measurements around the circumference at a single A-P position revealed a four-fold increase in the variability of stiffness when compared to the highly consistent stiffness of WT follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in both fat2- and msn-depleted follicles, AFM measurements around the circumference at a single A-P position (Figure 4E) revealed a four-fold increase in the variability of stiffness when compared to the highly consistent stiffness of WT follicles (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with quantitative measurement and shown in Figure 4E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "e0ed9bab-137e-44b3-9723-48bf682eb318",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C50",
+      "claim": "Uniform circumferential mechanical properties, dependent on tissue rotation, may be required for elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "The data raise the possibility that uniform circumferential mechanical properties, dependent on tissue rotation, may also be required for elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the observed circumferential stiffness variability in mutants",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "20204e2f-ce40-45b6-90c5-3e53846f1d21",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C51",
+      "claim": "During elongation, Collagen IV levels are increased in central regions and taper toward the poles.",
+      "claim_type": "EXPLICIT",
+      "source": "During elongation, Collagen IV levels are increased in central regions and taper toward the poles (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "78661f97-3c20-4984-82b0-91cf8d0f4721",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C52",
+      "claim": "Perlecan levels are lower at anterior and central regions than elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "Perlecan levels, by contrast, are lower at anterior and central regions than elsewhere (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "ef4f2594-3060-438c-a801-52b5eae0b477",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C53",
+      "claim": "Laminin levels are fairly uniform but are low at the anterior.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Laminin levels are fairly uniform but are low at the anterior (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "96f9d52a-20c0-492c-9efb-fb6db6169fb5",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C54",
+      "claim": "ImSAnE quantitation documented a significant increase of Collagen IV levels in central regions as compared to anterior and posterior terminal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation using ImSAnE documented a significant increase of Collagen IV levels in central regions as compared to anterior and posterior terminal regions (Figure 5H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5H,I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "db9d1f62-d205-4f79-9d2e-27f1088ea4b1",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C55",
+      "claim": "The Collagen IV pattern is not solely transcriptional as Collagen IV subunit gene expression is not elevated in the central region.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is not solely transcriptional as Collagen IV subunit gene expression is not elevated in the central region (Van De Bor et al., 2015) (Figure 5F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with citation and shown in Figure 5F",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "d8801d84-e465-41a8-bedf-0dc1f2e0b435",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C56",
+      "claim": "Uniform ectopic expression of Collagen IV subunits results in non-uniform incorporation of Collagen IV into the BM, with enhanced levels in the follicle center.",
+      "claim_type": "EXPLICIT",
+      "source": "and uniform ectopic expression of ColIagen IV subunits (via 'FLPout GAL4') results in non-uniform incorporation of ColIagen IV into the BM, with enhanced levels in the follicle center (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "6312b772-e66f-485a-8c28-35933e241d51",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C57",
+      "claim": "Inhibition of JAK/STAT signaling eliminated the differential A\u2013P distribution of Collagen IV without affecting fibril polarity, and this manipulation gave rise to round follicles and eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, inhibition of JAK/STAT signaling (via expression of a dominant negative receptor) eliminated the differential A\u2013P distribution of Collagen IV without affecting fibril polarity, and this manipulation gave rise to round follicles and eggs (Figures 4B and 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figures 4B and 5J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "0e36d6b8-9082-490e-a1e6-a33e51766015",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C58",
+      "claim": "Follicles with inhibited JAK/STAT signaling showed relatively high but isotropic BM stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, AFM measurements demonstrated that these follicles showed relatively high but isotropic BM stiffness (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "c647654b-4d11-48af-a11d-41a5f2130e5f",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C59",
+      "claim": "Morphogen-like signaling results in BM mechanical patterning that drives elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that morphogen-like signaling results in BM mechanical patterning that drives elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on JAK/STAT signaling experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "e0396eae-4e5c-452b-8192-6b5d1ce61614",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C60",
+      "claim": "fat2 mutant follicles have perturbed A\u2013P Collagen IV pattern, although no changes in A\u2013P signaling are seen.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, ImSAnE quantitation reveals that they have perturbed A\u2013P Collagen IV pattern, although no changes in A\u2013P signaling are seen (Figure 5H,I, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5H,I and Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "69c29f0b-9214-4f89-af0d-058debf9cbcd",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C61",
+      "claim": "Follicles depleted for Abi at stage 5 stiffened comparably to WT, showed bursting response comparable to WT, and also elongated normally.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the role of active rotation, we depleted the actin regulator Abi at stage 5, which results in rotation arrest as elongation initiates (Cetera et al., 2014). These follicles stiffened comparably to WT, showed bursting response comparable to WT, and also elongated normally (Figure 5- Figure 1\u2014figure supplement 3, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text with citation and shown in Figure 5\u2014figure supplement 3 and Video 4",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "f0ecff41-292a-428b-babd-d10736b1604e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C62",
+      "claim": "Elongation is prevented without disrupting rotation in several genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, elongation is prevented without disrupting rotation in several genotypes (see below, Video 4), confirming that phenomena other than active rotation are required to manipulate follicle shape.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Video 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7b8e407d-6245-4e68-971c-d48241b1a59f",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C63",
+      "claim": "Phenomena other than active rotation are required to manipulate follicle shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, elongation is prevented without disrupting rotation in several genotypes (see below, Video 4), confirming that phenomena other than active rotation are required to manipulate follicle shape.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion based on experiments showing dissociation of rotation and elongation",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "0eebdb67-5586-4b1e-a5f3-d32d49ed6643",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C64",
+      "claim": "Uniform overexpression of Perlecan did not change the A\u2013P levels, PCP, or circumferential distribution of Collagen IV fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "This manipulation did not change the A\u2013P levels, PCP, or circumferential distribution of Collagen IV fibrils (Figures 4B,D and 5H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figures 4B,D and 5H,I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "4efef31d-2f1b-45c1-abd6-8beeb34371ca",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C65",
+      "claim": "Uniform overexpression of Perlecan created a softer BM in which the anisotropic gradient has been eliminated, and the enclosed follicles fail to elongate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AFM analysis revealed that it did create a softer BM in which the anisotropic gradient has been eliminated, and the enclosed follicles fail to elongate (Figure 5J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5J,K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "c516c436-87e5-4841-a9b4-bb9e3932dc8e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C66",
+      "claim": "Follicles overexpressing perlecan swelled more isotropically and burst more rapidly than WT follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In osmotic stress experiments, follicles overexpressing perlecan swelled more isotropically and burst more rapidly than WT follicles (Figure 5L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 5L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "8408c0a4-53fb-47eb-be88-407779c08e50",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C67",
+      "claim": "Despite the fact that neither the levels, local PCP, or supracellular organization of Collagen IV fibrils are altered in Perlecan-overexpressing follicles, the BM of these follicles had mechanical deficits similar to those of follicles completely lacking a BM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite the fact that neither the levels, local PCP, or supracellular organization of Collagen IV fibrils are altered in Perlecan-overexpressing follicles, the BM of these follicles had mechanical deficits similar to those of follicles completely lacking a BM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on Perlecan overexpression experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "f1602f92-b50d-4c42-886e-5be0934076f0",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C68",
+      "claim": "Follicles deficient for STAT-dependent A\u2013P signaling fail to elongate but show normal fibril polarity and organization, and are significantly more resistant to bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, follicles deficient for STAT-dependent A\u2013P signaling also fail to elongate but show normal fibril polarity and organization, and are significantly more resistant to bursting (Figures 4B and 5J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figures 4B and 5J\u2013L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "3f8a7d58-45b2-4a9c-ae39-0323e7206ca1",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C69",
+      "claim": "A circumferentially even distribution of PCP fibrils is required for elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support a requirement for a circumferentially even distribution of PCP fibrils in elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "eece17ab-cdc1-4f55-a10a-6a84760987a0",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C70",
+      "claim": "PCP fibrils alone are insufficient to resist tissue growth anisotropically; the organ-shaping stiffness gradient requires patterned A\u2013P BM levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they also reveal that PCP fibrils alone are insufficient to resist tissue growth anisotropically; the organ-shaping stiffness gradient requires patterned A\u2013P BM levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "85d681ef-8b36-4b87-b7dd-e955ca8efb27",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C71",
+      "claim": "Organs can be sculpted by patterning anisotropic resistance within their extracellular matrix (ECM).",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that organs can be sculpted instead by patterning anisotropic resistance within their extracellular matrix (ECM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main claim stated in the abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "06cee9c0-7fcf-4774-85a0-f1147e280438",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C72",
+      "claim": "Atomic force microscopy (AFM) on wild-type BM in vivo reveals an anterior\u2013posterior (A\u2013P) symmetric stiffness gradient, which fails to develop in elongation-defective mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic force microscopy (AFM) on wild-type BM in vivo reveals an anterior\u2013posterior (A\u2013P) symmetric stiffness gradient, which fails to develop in elongation-defective mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "659f50bb-12cc-4cd5-a47f-ffb980778a9c",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C73",
+      "claim": "The BM is instructive for tissue elongation and the determinant is relative rather than absolute stiffness, creating differential resistance to isotropic tissue expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic manipulation shows that the BM is instructive for tissue elongation and the determinant is relative rather than absolute stiffness, creating differential resistance to isotropic tissue expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding stated in the abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "55922bd1-59eb-4d95-a972-a66e293bec35",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C74",
+      "claim": "The stiffness gradient requires morphogen-like signaling to regulate BM incorporation, as well as planar-polarized organization to homogenize it circumferentially.",
+      "claim_type": "EXPLICIT",
+      "source": "The stiffness gradient requires morphogen-like signaling to regulate BM incorporation, as well as planar-polarized organization to homogenize it circumferentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding stated in the abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "ffc4edb3-b00f-4530-8a99-298606ace3e2",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C75",
+      "claim": "Fine mechanical patterning in the ECM can guide cells to shape an organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate how fine mechanical patterning in the ECM can guide cells to shape an organ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion stated in the abstract",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "1954d501-4aa3-4cad-a2e4-9896d4d6df25",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C76",
+      "claim": "Genetic mosaic experiments with several 'round egg' mutations exclude the germline as a site of action.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous genetic mosaic experiments with several 'round egg' mutations exclude the germline as a site of action (Frydman and Spradling, 2001; Wieschaus et al., 1981; Viktorinov\u00e1 et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "684fe1d0-41fb-4f8e-8f94-3242e133c410",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C77",
+      "claim": "Stripping of epithelium in Heteropeza results in round rather than elongated follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "while stripping of epithelium in Heteropeza results in round rather than elongated follicles (Went and Junquera, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "3e971a1e-1603-410f-8956-9e314f73f37b",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C78",
+      "claim": "Genetic ablation of the Drosophila follicle epithelium results in germline growth that produces a nearly spherical follicle at stages when elongation would normally have initiated.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we genetically ablated the Drosophila follicle epithelium (as well as its underlying BM), and found that germline growth resulted in a nearly spherical follicle at stages when elongation would normally have initiated (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "22c0c97b-a390-4f5d-bdd6-2326ea4df891",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C79",
+      "claim": "The germline is not an intrinsic source of mechanical anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the germline is not an intrinsic source of mechanical anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "954957d1-ca6a-44b3-8239-ac1983f4b461",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C80",
+      "claim": "In the elongating follicle epithelium, dissection of junctions resulted in equivalent retraction of A\u2013P and circumferentially oriented junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the elongating follicle epithelium, dissection of junctions resulted in equivalent retraction of A\u2013P and circumferentially oriented junctions; polarized accumulation of Myo:GFP was not observed (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "d972c641-75d9-4593-88b4-1192d5af80c4",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C81",
+      "claim": "Polarized accumulation of Myo:GFP was not observed in the elongating follicle epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the elongating follicle epithelium, dissection of junctions resulted in equivalent retraction of A\u2013P and circumferentially oriented junctions; polarized accumulation of Myo:GFP was not observed (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "1f3377e7-6035-47ec-8375-a9c47d0e6aad",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C82",
+      "claim": "Neither follicle cell type intrinsically generates anisotropic physical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that neither follicle cell type intrinsically generates anisotropic physical forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on laser ablation experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "2d68b620-340b-44da-9550-8eee1acb4c43",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C83",
+      "claim": "The Drosophila follicle is enclosed by a BM that is ~150 nm thick and contains Collagen IV, laminin, and perlecan.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila follicle is enclosed by a BM that, like classic vertebrate BMs, is ~150 nm thick and contains Collagen IV, laminin, and perlecan (Haigo and Bilder, 2011; Isabella and Horne-Badovinac, 2015; Spradling, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "c20e5df3-17e6-4674-b51a-0af6e090f44e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C84",
+      "claim": "Within each follicle, BM stiffness develops reliably and with spatial properties that are carefully regulated along both the A\u2013P and circumferential axes.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each follicle, BM stiffness develops reliably and with spatial properties that are carefully regulated along both the A\u2013P and circumferential axes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on AFM measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "87d56f54-e78b-4c88-95b3-34260783a77e",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C85",
+      "claim": "Along the A\u2013P axis, a stiffness gradient is built that increases ~300% along a ~13-cell, 100 \u03bcm arc at stage 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the A\u2013P axis, a stiffness gradient is built that increases ~300% along a ~13-cell, 100 \u03bcm arc at stage 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with quantitative measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "e797284d-11ed-43a9-ba1b-1966d1ace586",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C86",
+      "claim": "Perpendicular to the A\u2013P axis, stiffness around the circumference varies by less than 5% across the same distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Perpendicular to this axis, stiffness around the circumference varies by less than 5% across the same distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in text with quantitative measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "6835491d-0ae7-48a8-9b85-1e136d81bdc1",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C87",
+      "claim": "Both the A\u2013P and circumferential axes are critical for organ shaping.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that both axes are critical for organ shaping, and merit a significant revision of the 'molecular corset' model previously proposed to mediate elongation (Bilder and Haigo, 2012; Cetera and Horne-Badovinac, 2015; Gutzeit et al., 1993; Isabella and Horne-Badovinac, 2016; Tucker and Meats, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple experiments with citations",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "c7c7d417-ece7-478b-8bab-5777aeaba0da",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C88",
+      "claim": "Manipulations that preserve PCP alignment but nevertheless result in round follicles demonstrate that mechanical anisotropy at the length scale of individual BM fibrils is not sufficient to drive elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, manipulations that preserve PCP alignment but nevertheless result in round follicles demonstrate that mechanical anisotropy at the length scale of individual BM fibrils is not sufficient to drive elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on experimental manipulations",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "82a7e9e4-20a2-4102-a9db-63ff1bcd127d",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C89",
+      "claim": "Consistent circumferential stiffness, probably associated with the supracellular BM fibrillar network generated by whole-tissue rotation, is a key element of corset effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, they suggest that consistent circumferential stiffness, probably associated with the supracellular BM fibrillar network generated by whole-tissue rotation, is a key element of corset effectiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "c6ed9caa-60dd-4c14-8c9c-7023e1d57e8c",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C90",
+      "claim": "To drive elongation, the corset must be anisotropic on a 'global' tissue-wide scale, in a manner that depends on morphogen-regulated mechanical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, manipulations that flatten a pole-derived A\u2013P signaling gradient also flatten the A\u2013P stiffness gradient, and create isotropic organs. Thus, to drive elongation, the corset must also be anisotropic on a 'global' tissue-wide scale, in a manner that depends on morphogen-regulated mechanical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on JAK/STAT signaling experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "84ca698b-e0fb-4294-8728-8bdc4a704575",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C91",
+      "claim": "BM mechanics themselves are instructive for morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct manipulations of BM components presented here, which lead to predicted tissue shape outcomes, argue that BM mechanics themselves are instructive for morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple BM manipulation experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "0ebf8106-9fea-4bbe-944a-df0bbe6cd1f9",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C92",
+      "claim": "Flattening the stiffness gradient in several ways, including by locally restricted BM alteration, prevents elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Flattening the stiffness gradient in several ways, including by locally restricted BM alteration, prevents elongation, whereas hyperelongating follicles have an enhanced stiffness gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "9e76d8a3-46dc-4ca5-84a4-249d4f7d38c3",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C93",
+      "claim": "Hyperelongating follicles have an enhanced stiffness gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Flattening the stiffness gradient in several ways, including by locally restricted BM alteration, prevents elongation, whereas hyperelongating follicles have an enhanced stiffness gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "eb0bfa41-f126-461c-bcd3-79b97d626198",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C94",
+      "claim": "Elongation is imposed by isotropic tissue growth meeting the anisotropic resistance fashioned within the BM.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our results indicate that elongation is imposed by isotropic tissue growth meeting the anisotropic resistance fashioned within the BM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "25cf08a5-d037-4c6b-9fc3-39520be134d6",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C95",
+      "claim": "Manipulations that alter absolute stiffness but preserve a relative gradient still result in tissue elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this model, manipulations that alter absolute stiffness but preserve a relative gradient still result in tissue elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "1aad3f88-c04c-46bc-bcb6-555f7e6aff17",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C96",
+      "claim": "Physical properties of the BM are the dominant influence on follicle shape.",
+      "claim_type": "EXPLICIT",
+      "source": "but the data point to physical properties of the BM as the dominant influence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "6af03c2a-708a-4824-94a4-d8a8fe079cc5",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C97",
+      "claim": "Construction of mechanically patterned resistance in an ECM, along both axes orthogonal to its tissue interface, generates a force imbalance that imposes a specific shape on the growing organ, without necessitating spatially restricted localization of force generators within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Construction of mechanically patterned resistance in an ECM, along both axes orthogonal to its tissue interface, generates a force imbalance that imposes a specific shape on the growing organ, without necessitating spatially restricted localization of force generators within cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion summarizing the findings",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7b5ecf9e-b5cc-4656-bdc3-5a42c39a62d6",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C98",
+      "claim": "The discovery of precise organ-sculpting resistance within a BM motivates the development of tools and assays to explore, on a fine scale, true in vivo BM mechanical properties in both physiological and pathological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of precise organ-sculpting resistance within a BM motivates the development of tools and assays to explore, on a fine scale, true in vivo BM mechanical properties in both physiological and pathological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Implication of the findings for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "37898e00-ff99-4e78-9a44-9795a37ddc8b",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "claim_id": "C99",
+      "claim": "Robust mechanical anisotropy exists in the ECM-based basement membrane but not in the underlying epithelium of elongating Drosophila egg chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Using direct biophysical measurements of elongating Drosophila egg chambers, we document robust mechanical anisotropy in the ECM-based basement membrane (BM) but not in the underlying epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding stated in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "03c64d5c-b58b-4c68-bed7-62a9421ef3da",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Drosophila egg chamber is a simple two-cell-type organ that undergoes robust elongation during oogenesis, expanding ~5000-fold in volume over ~3 days with initial isotropic growth followed by >2-fold anisotropic elongation along the A-P axis, much of which occurs without cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide a well-documented description of the Drosophila follicle structure and developmental dynamics, supported by citations and visual evidence in Figure 1A. These are established facts about the model system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "08496246-716f-4cd2-bdbc-881bb4d95e69",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AFM-measured stiffness in follicles predominantly derives from the basement membrane (BM) rather than cellular components, as demonstrated by collagenase treatment reducing stiffness by 97% while F-actin disruption and hypertonic treatment have no significant effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C11-C14 provide converging experimental evidence using multiple controls (collagenase, Latrunculin A, hypertonic solution) that validate AFM measurements specifically reflect BM stiffness. The quantitative data (97% reduction) and multiple independent controls strongly support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Wild-type follicles develop a spatially patterned BM stiffness gradient along the A-P axis that increases from ~30 kPa at stage 3 to ~70 kPa at stage 7, with poles ~50% softer than central regions and central regions ~30% stiffer than terminal regions, while circumferential stiffness remains highly consistent (<5% variance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 and C8 present quantitative AFM measurements with specific values and statistical comparisons shown in Figures 1D-E and 4F. The data demonstrate both temporal and spatial gradients with appropriate replication and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "067e2bb0-55af-4c77-953a-44db822a6731",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Elongation-defective mutants (fat2 and msn-depleted) fail to develop the BM stiffness gradient observed in wild-type, showing mechanically isotropic and softer BMs with no significant regional differences, consistent with a functional role for the stiffness gradient in elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C21-C24 demonstrate correlation between loss of stiffness gradient and elongation defects in two independent genetic backgrounds (fat2 and msn), supported by AFM data in Figure 1F. While correlation does not prove causation, the consistency across genotypes supports the hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Direct genetic manipulation of BM components demonstrates that the relative stiffness gradient, rather than absolute stiffness, is instructive for elongation: preserving the gradient (SPARC depletion) maintains elongation, eliminating the gradient (uniform ColIV depletion, central ColIV depletion, or terminal EHBP1 overexpression) prevents elongation, and enhancing the gradient (uniform EHBP1 overexpression) causes hyperelongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 present a comprehensive set of genetic manipulations with predicted outcomes shown in Figure 2. The experiments include both uniform and spatially restricted manipulations that systematically test the gradient hypothesis. The correlation between stiffness anisotropy and aspect ratio (Figure 2L) provides strong support for causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "d399888d-1edd-4f5e-9cc6-b5310fb71827",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Osmotic swelling experiments demonstrate that BM mechanical properties determine resistance to organ expansion: softer BMs burst more frequently and rapidly, mechanically isotropic BMs swell isotropically, wild-type BMs burst preferentially at softer polar regions, and the stiffness gradient provides differential resistance greatest at the central meridian and smallest at the poles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C46 describe a functional assay that tests mechanical predictions across multiple genotypes. The results are internally consistent and correlate with AFM measurements. Controls (epithelial disruption timing, Latrunculin A treatment, collagenase treatment) validate that the assay measures BM rather than cellular properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "ba660727-aece-4ecf-b93a-714e7664f346",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wild-type follicles display uniform circumferential distribution of Collagen IV fibrils and consistent stiffness (<5% variance), while fat2 and msn-depleted mutants show discontinuous Collagen IV distribution and four-fold increased circumferential stiffness variability, suggesting that uniform circumferential mechanical properties may be required for elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 present quantitative ImSAnE and AFM data showing circumferential uniformity in wild-type and variability in mutants (Figure 4). Claim C50 appropriately presents this as a possibility rather than a definitive conclusion, acknowledging the correlative nature of the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "c5fdfc62-6126-444e-ad59-a1f4b94a6539",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BM components show distinct A-P distribution patterns during elongation: Collagen IV levels are elevated centrally and taper toward poles, Perlecan is lower anteriorly and centrally, and Laminin is fairly uniform but low anteriorly. The Collagen IV pattern is not solely transcriptional, as uniform ectopic expression results in non-uniform central incorporation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 describe spatial patterns of BM components using ImSAnE quantitation (Figure 5A-C, H-I) and include an important control experiment (C55-C56) showing that the pattern is post-transcriptional. The data are well-documented with appropriate imaging and quantitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "ee0ff211-c679-4d04-8054-6e01fa5a9af0",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Inhibition of JAK/STAT signaling eliminates the differential A-P distribution of Collagen IV without affecting fibril polarity, resulting in round follicles with relatively high but isotropic BM stiffness, demonstrating that morphogen-like signaling patterns BM mechanics to drive elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 link signaling to mechanical patterning through genetic manipulation (dominant negative receptor) with both imaging (Figures 4B, 5J) and AFM data (Figure 5K). The dissociation of fibril polarity from A-P patterning is particularly informative. The conclusion (C59) is well-supported by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "213f4c1c-ff33-4e2b-9fee-509a700e784a",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "fat2 mutant follicles have perturbed A-P Collagen IV pattern despite no changes in A-P signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by ImSAnE quantitation (Figure 5H-I) and signaling reporter analysis (Figure 5\u2014figure supplement 2), demonstrating that fat2 affects BM patterning through a mechanism independent of JAK/STAT signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "9bbf1ec8-4a52-48ba-bd4c-949fe4751aea",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tissue rotation is not required for elongation: Abi depletion at stage 5 arrests rotation but follicles still stiffen, resist bursting, and elongate normally, while several genotypes prevent elongation without disrupting rotation, demonstrating that phenomena other than active rotation are required to manipulate follicle shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 present a critical dissociation experiment showing that rotation and elongation can be uncoupled. The data (Figure 5\u2014figure supplement 3, Video 4) directly challenge previous models emphasizing rotation as the primary mechanism. The bidirectional dissociation (rotation without elongation and elongation without rotation) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "31e642f6-510c-44af-b595-7ac55faf952f",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Uniform Perlecan overexpression eliminates the BM stiffness gradient and prevents elongation without altering Collagen IV levels, PCP, or circumferential distribution, while JAK/STAT inhibition also prevents elongation but maintains normal fibril polarity and organization with increased bursting resistance. These results demonstrate that circumferentially even PCP fibrils are required but insufficient for elongation; the organ-shaping stiffness gradient requires patterned A-P BM levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 present complementary genetic manipulations that dissect the contributions of fibril organization versus BM composition. The Perlecan overexpression experiment (C64-C67) is particularly informative as it disrupts mechanics without affecting structural organization. The comparison with JAK/STAT inhibition (C68) provides additional support. The conclusions (C69-C70) appropriately integrate these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "448467c8-033e-48e3-a0d6-a8676e153586",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The germline is not an intrinsic source of mechanical anisotropy, as demonstrated by genetic mosaic experiments excluding germline action, epithelial stripping in Heteropeza producing round follicles, and genetic ablation of Drosophila follicle epithelium resulting in spherical follicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 combine prior literature (C76-C77) with new experimental data (C78) to exclude the germline as the source of mechanical anisotropy. The genetic ablation experiment provides direct evidence, though the conclusion is appropriately stated as a suggestion rather than definitive proof.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7ee16f3a-b9dc-45c7-bb9f-35ac81e103d3",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Follicle epithelial cells do not intrinsically generate anisotropic physical forces, as laser ablation of junctions results in equivalent retraction along A-P and circumferential orientations without polarized Myosin II accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 present laser ablation data (Figure 1\u2014figure supplement 1) showing absence of differential tension, contrasting with other elongating epithelia. The conclusion is appropriately cautious, suggesting rather than definitively proving the absence of anisotropic forces.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "a0a1a02b-9375-4a01-a8ef-9b10fd0647c6",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Drosophila follicle BM is ~150 nm thick, contains Collagen IV, laminin, and perlecan, and develops reliable spatial mechanical patterning with a ~300% stiffness increase along a ~13-cell, 100 \u03bcm A-P arc at stage 8, while circumferential stiffness varies by less than 5% across the same distance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 summarize key structural and mechanical properties of the BM with specific quantitative measurements. C83 is well-established from prior literature, while C84-C86 present new quantitative characterization from this study's AFM measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "eb011ecf-cf2a-4633-9a73-9cd1e3197fc2",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Both A-P and circumferential axes are critical for organ shaping, requiring revision of the 'molecular corset' model: mechanical anisotropy at the individual fibril scale is insufficient for elongation; instead, consistent circumferential stiffness (associated with supracellular BM network from tissue rotation) and global tissue-wide A-P anisotropy (dependent on morphogen-regulated mechanical properties) are both required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 synthesize multiple experimental findings to propose a revised model. The evidence from Perlecan overexpression (preserving PCP but losing elongation) and JAK/STAT inhibition (flattening A-P gradient) supports the multi-axial requirement. However, C89 includes speculative language ('probably associated with') that is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "b7809ccd-b8e6-4e3f-bb8b-1dcb4927b518",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "BM mechanics are instructive for morphogenesis: direct manipulations of BM components lead to predicted tissue shape outcomes, with flattening of the stiffness gradient preventing elongation, enhanced gradients causing hyperelongation, and manipulations preserving relative gradients maintaining elongation. Elongation is imposed by isotropic tissue growth meeting anisotropic BM resistance, with physical properties of the BM being the dominant influence on follicle shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C96 present the central mechanistic conclusion of the paper, supported by the comprehensive set of genetic manipulations in Figure 2. The predictive power of the model (manipulations leading to expected outcomes) provides strong evidence for causality rather than mere correlation. The conclusion appropriately acknowledges that undetected signaling roles cannot be completely ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "e1fec495-3833-4cf0-9e47-02b069dbce8c",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Construction of mechanically patterned resistance in an ECM along both axes orthogonal to its tissue interface generates a force imbalance that imposes a specific shape on the growing organ without necessitating spatially restricted localization of force generators within cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 presents the overarching conceptual framework supported by the entire body of experimental evidence. This represents a paradigm shift from cell-intrinsic force generation to ECM-based resistance as the primary morphogenetic mechanism. The evidence from multiple experimental approaches (AFM, genetic manipulation, osmotic swelling, laser ablation) converges to support this model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "09425e8d-0d83-4ac7-90f8-8e73d2578240",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Organs can be sculpted by patterning anisotropic resistance within their ECM: AFM reveals an A-P symmetric stiffness gradient in wild-type BM that fails to develop in elongation-defective mutants; genetic manipulation shows the BM is instructive with relative rather than absolute stiffness creating differential resistance; the gradient requires both morphogen-like signaling for A-P patterning and planar-polarized organization for circumferential homogenization; mechanical anisotropy exists in the BM but not in the underlying epithelium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 and C99 represent the main conclusions stated in the abstract, synthesizing the key findings. These are well-supported by the comprehensive experimental evidence presented throughout the manuscript, including AFM measurements, genetic manipulations, osmotic swelling assays, and imaging analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    },
+    {
+      "id": "7d6ec039-83e9-4a69-adce-af90546b20bf",
+      "content_id": "27bc83c1-0842-45b4-b44c-680cbc4c9ca9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The discovery of precise organ-sculpting resistance within a BM motivates the development of tools and assays to explore in vivo BM mechanical properties in both physiological and pathological contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is a forward-looking statement about the implications of the findings. While speculative about future work, it is appropriately framed as motivation rather than a specific prediction, and is well-justified by the novel findings presented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:46:06.565423Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "57a34459-429e-468f-987c-87b1e8149b8e",
+      "result_id": "03c64d5c-b58b-4c68-bed7-62a9421ef3da"
+    },
+    {
+      "claim_id": "f5565d20-57f4-4c21-834f-3c2135d9bf17",
+      "result_id": "03c64d5c-b58b-4c68-bed7-62a9421ef3da"
+    },
+    {
+      "claim_id": "0939bc54-a385-44c5-a22f-f1a58d34943e",
+      "result_id": "03c64d5c-b58b-4c68-bed7-62a9421ef3da"
+    },
+    {
+      "claim_id": "7f9ad935-7c52-47c2-b94a-f91641d3a56f",
+      "result_id": "03c64d5c-b58b-4c68-bed7-62a9421ef3da"
+    },
+    {
+      "claim_id": "b2643eb5-0c92-46b6-86d8-ff097da578f1",
+      "result_id": "03c64d5c-b58b-4c68-bed7-62a9421ef3da"
+    },
+    {
+      "claim_id": "d8081e40-af37-4bc1-911d-6da59f070738",
+      "result_id": "08496246-716f-4cd2-bdbc-881bb4d95e69"
+    },
+    {
+      "claim_id": "d8614626-7433-4712-a04e-628e74f4c077",
+      "result_id": "08496246-716f-4cd2-bdbc-881bb4d95e69"
+    },
+    {
+      "claim_id": "949dfcf8-fd76-4089-94d7-97e2d34941ee",
+      "result_id": "08496246-716f-4cd2-bdbc-881bb4d95e69"
+    },
+    {
+      "claim_id": "a1de09c4-cf95-4e4b-aeec-04ebfe7f025c",
+      "result_id": "08496246-716f-4cd2-bdbc-881bb4d95e69"
+    },
+    {
+      "claim_id": "18a4f435-718a-4189-892b-d651f9c7e1e9",
+      "result_id": "08496246-716f-4cd2-bdbc-881bb4d95e69"
+    },
+    {
+      "claim_id": "62428f7c-8b15-4c6d-877f-8ed7b11437cf",
+      "result_id": "08496246-716f-4cd2-bdbc-881bb4d95e69"
+    },
+    {
+      "claim_id": "bde4f211-173e-4220-b581-f0cb298ff192",
+      "result_id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c"
+    },
+    {
+      "claim_id": "7306f787-f764-455f-80af-0320550d81a0",
+      "result_id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c"
+    },
+    {
+      "claim_id": "b425abbf-375c-43fb-a490-c290bb328934",
+      "result_id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c"
+    },
+    {
+      "claim_id": "b1ccd8b1-0d31-4996-bce3-5db53af66a99",
+      "result_id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c"
+    },
+    {
+      "claim_id": "8ed76359-78ad-4f67-ad64-78d03f75c7a8",
+      "result_id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c"
+    },
+    {
+      "claim_id": "6e5bda6b-0fc0-4b62-9e3c-4b30bb56ee29",
+      "result_id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c"
+    },
+    {
+      "claim_id": "d79d5f85-f17a-435b-b1ab-2a376d84fb5f",
+      "result_id": "edad4ae1-1a1a-483d-8b62-d4a6cd6c304c"
+    },
+    {
+      "claim_id": "10f0d8b4-367c-4106-a606-5128c81bdea7",
+      "result_id": "067e2bb0-55af-4c77-953a-44db822a6731"
+    },
+    {
+      "claim_id": "1c4debef-7463-4b6b-9a84-5e7c068e3b71",
+      "result_id": "067e2bb0-55af-4c77-953a-44db822a6731"
+    },
+    {
+      "claim_id": "1b5fd901-1041-4c5d-9ed5-807f7f1373c9",
+      "result_id": "067e2bb0-55af-4c77-953a-44db822a6731"
+    },
+    {
+      "claim_id": "57269863-9374-4b90-97c2-ab131dc880ee",
+      "result_id": "067e2bb0-55af-4c77-953a-44db822a6731"
+    },
+    {
+      "claim_id": "84139146-a2f7-41e1-9467-e6616716faa0",
+      "result_id": "067e2bb0-55af-4c77-953a-44db822a6731"
+    },
+    {
+      "claim_id": "a9e5cd8a-68cc-44bf-80a3-8124ce01323c",
+      "result_id": "067e2bb0-55af-4c77-953a-44db822a6731"
+    },
+    {
+      "claim_id": "a7739417-421b-46ca-b3fc-ab286d4edd6f",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "672187a0-0fd9-4fee-954b-8803615634a2",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "1c37f3b7-8c93-4977-b7d3-a74a1443c241",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "dbc19269-1d0e-4409-bc00-01a17b0e8e84",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "8df5a2e4-bf83-4539-8045-ca4cd4683553",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "a26ca3ff-bc67-4783-94fd-f4409a1b8ae2",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "ac4efd28-ae8f-458b-a949-d5141017f86a",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "f844473e-1fe9-4e63-a068-5dd4b0184f4c",
+      "result_id": "a7ddcdf8-57f3-45bd-ae8e-57c2710fa33b"
+    },
+    {
+      "claim_id": "a98fb9bd-be10-4200-a185-5730d7585742",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "2fccc3a2-5d45-485e-bed4-11e33f30c102",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "53e6b823-e6d8-4c99-82d7-6407173ae78e",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "7870f435-819c-4dce-91e6-9960fc242e86",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "521962fe-80f7-47c3-ba94-743b38a5acb1",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "e1454898-45bd-4957-87fb-afea5e19cd50",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "f158d885-47ee-4322-bebf-9365254f263e",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "7507490e-2aaf-4c28-a202-14e3affa9e07",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "01736544-2e0e-4171-b2a5-1eb038f77707",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "c317b7ca-ba14-48b8-ad60-0e835fb9aeec",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "d9a8d1cc-69af-416b-8108-b79885e17514",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "e63f2e9c-afa2-445a-a3e7-3aeead6b4421",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "8c87e421-483e-4e31-b663-b962b2ee034a",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "88004749-1f25-43e2-93c7-39e954aeff61",
+      "result_id": "d399888d-1edd-4f5e-9cc6-b5310fb71827"
+    },
+    {
+      "claim_id": "4b771b4f-bf3b-478d-930e-40d11e86bf0a",
+      "result_id": "ba660727-aece-4ecf-b93a-714e7664f346"
+    },
+    {
+      "claim_id": "ae350539-6da3-40a4-aec3-2eef62e28c88",
+      "result_id": "ba660727-aece-4ecf-b93a-714e7664f346"
+    },
+    {
+      "claim_id": "7a157d04-01e6-4072-9df0-e62ce6b05407",
+      "result_id": "ba660727-aece-4ecf-b93a-714e7664f346"
+    },
+    {
+      "claim_id": "e0ed9bab-137e-44b3-9723-48bf682eb318",
+      "result_id": "ba660727-aece-4ecf-b93a-714e7664f346"
+    },
+    {
+      "claim_id": "20204e2f-ce40-45b6-90c5-3e53846f1d21",
+      "result_id": "c5fdfc62-6126-444e-ad59-a1f4b94a6539"
+    },
+    {
+      "claim_id": "78661f97-3c20-4984-82b0-91cf8d0f4721",
+      "result_id": "c5fdfc62-6126-444e-ad59-a1f4b94a6539"
+    },
+    {
+      "claim_id": "ef4f2594-3060-438c-a801-52b5eae0b477",
+      "result_id": "c5fdfc62-6126-444e-ad59-a1f4b94a6539"
+    },
+    {
+      "claim_id": "96f9d52a-20c0-492c-9efb-fb6db6169fb5",
+      "result_id": "c5fdfc62-6126-444e-ad59-a1f4b94a6539"
+    },
+    {
+      "claim_id": "db9d1f62-d205-4f79-9d2e-27f1088ea4b1",
+      "result_id": "c5fdfc62-6126-444e-ad59-a1f4b94a6539"
+    },
+    {
+      "claim_id": "d8801d84-e465-41a8-bedf-0dc1f2e0b435",
+      "result_id": "c5fdfc62-6126-444e-ad59-a1f4b94a6539"
+    },
+    {
+      "claim_id": "6312b772-e66f-485a-8c28-35933e241d51",
+      "result_id": "ee0ff211-c679-4d04-8054-6e01fa5a9af0"
+    },
+    {
+      "claim_id": "0e36d6b8-9082-490e-a1e6-a33e51766015",
+      "result_id": "ee0ff211-c679-4d04-8054-6e01fa5a9af0"
+    },
+    {
+      "claim_id": "c647654b-4d11-48af-a11d-41a5f2130e5f",
+      "result_id": "ee0ff211-c679-4d04-8054-6e01fa5a9af0"
+    },
+    {
+      "claim_id": "e0396eae-4e5c-452b-8192-6b5d1ce61614",
+      "result_id": "213f4c1c-ff33-4e2b-9fee-509a700e784a"
+    },
+    {
+      "claim_id": "69c29f0b-9214-4f89-af0d-058debf9cbcd",
+      "result_id": "9bbf1ec8-4a52-48ba-bd4c-949fe4751aea"
+    },
+    {
+      "claim_id": "f0ecff41-292a-428b-babd-d10736b1604e",
+      "result_id": "9bbf1ec8-4a52-48ba-bd4c-949fe4751aea"
+    },
+    {
+      "claim_id": "7b8e407d-6245-4e68-971c-d48241b1a59f",
+      "result_id": "9bbf1ec8-4a52-48ba-bd4c-949fe4751aea"
+    },
+    {
+      "claim_id": "0eebdb67-5586-4b1e-a5f3-d32d49ed6643",
+      "result_id": "31e642f6-510c-44af-b595-7ac55faf952f"
+    },
+    {
+      "claim_id": "4efef31d-2f1b-45c1-abd6-8beeb34371ca",
+      "result_id": "31e642f6-510c-44af-b595-7ac55faf952f"
+    },
+    {
+      "claim_id": "c516c436-87e5-4841-a9b4-bb9e3932dc8e",
+      "result_id": "31e642f6-510c-44af-b595-7ac55faf952f"
+    },
+    {
+      "claim_id": "8408c0a4-53fb-47eb-be88-407779c08e50",
+      "result_id": "31e642f6-510c-44af-b595-7ac55faf952f"
+    },
+    {
+      "claim_id": "f1602f92-b50d-4c42-886e-5be0934076f0",
+      "result_id": "31e642f6-510c-44af-b595-7ac55faf952f"
+    },
+    {
+      "claim_id": "3f8a7d58-45b2-4a9c-ae39-0323e7206ca1",
+      "result_id": "31e642f6-510c-44af-b595-7ac55faf952f"
+    },
+    {
+      "claim_id": "eece17ab-cdc1-4f55-a10a-6a84760987a0",
+      "result_id": "31e642f6-510c-44af-b595-7ac55faf952f"
+    },
+    {
+      "claim_id": "1954d501-4aa3-4cad-a2e4-9896d4d6df25",
+      "result_id": "448467c8-033e-48e3-a0d6-a8676e153586"
+    },
+    {
+      "claim_id": "684fe1d0-41fb-4f8e-8f94-3242e133c410",
+      "result_id": "448467c8-033e-48e3-a0d6-a8676e153586"
+    },
+    {
+      "claim_id": "3e971a1e-1603-410f-8956-9e314f73f37b",
+      "result_id": "448467c8-033e-48e3-a0d6-a8676e153586"
+    },
+    {
+      "claim_id": "22c0c97b-a390-4f5d-bdd6-2326ea4df891",
+      "result_id": "448467c8-033e-48e3-a0d6-a8676e153586"
+    },
+    {
+      "claim_id": "954957d1-ca6a-44b3-8239-ac1983f4b461",
+      "result_id": "7ee16f3a-b9dc-45c7-bb9f-35ac81e103d3"
+    },
+    {
+      "claim_id": "d972c641-75d9-4593-88b4-1192d5af80c4",
+      "result_id": "7ee16f3a-b9dc-45c7-bb9f-35ac81e103d3"
+    },
+    {
+      "claim_id": "1f3377e7-6035-47ec-8375-a9c47d0e6aad",
+      "result_id": "7ee16f3a-b9dc-45c7-bb9f-35ac81e103d3"
+    },
+    {
+      "claim_id": "2d68b620-340b-44da-9550-8eee1acb4c43",
+      "result_id": "a0a1a02b-9375-4a01-a8ef-9b10fd0647c6"
+    },
+    {
+      "claim_id": "c20e5df3-17e6-4674-b51a-0af6e090f44e",
+      "result_id": "a0a1a02b-9375-4a01-a8ef-9b10fd0647c6"
+    },
+    {
+      "claim_id": "87d56f54-e78b-4c88-95b3-34260783a77e",
+      "result_id": "a0a1a02b-9375-4a01-a8ef-9b10fd0647c6"
+    },
+    {
+      "claim_id": "e797284d-11ed-43a9-ba1b-1966d1ace586",
+      "result_id": "a0a1a02b-9375-4a01-a8ef-9b10fd0647c6"
+    },
+    {
+      "claim_id": "6835491d-0ae7-48a8-9b85-1e136d81bdc1",
+      "result_id": "eb011ecf-cf2a-4633-9a73-9cd1e3197fc2"
+    },
+    {
+      "claim_id": "c7c7d417-ece7-478b-8bab-5777aeaba0da",
+      "result_id": "eb011ecf-cf2a-4633-9a73-9cd1e3197fc2"
+    },
+    {
+      "claim_id": "82a7e9e4-20a2-4102-a9db-63ff1bcd127d",
+      "result_id": "eb011ecf-cf2a-4633-9a73-9cd1e3197fc2"
+    },
+    {
+      "claim_id": "c6ed9caa-60dd-4c14-8c9c-7023e1d57e8c",
+      "result_id": "eb011ecf-cf2a-4633-9a73-9cd1e3197fc2"
+    },
+    {
+      "claim_id": "84ca698b-e0fb-4294-8728-8bdc4a704575",
+      "result_id": "b7809ccd-b8e6-4e3f-bb8b-1dcb4927b518"
+    },
+    {
+      "claim_id": "0ebf8106-9fea-4bbe-944a-df0bbe6cd1f9",
+      "result_id": "b7809ccd-b8e6-4e3f-bb8b-1dcb4927b518"
+    },
+    {
+      "claim_id": "9e76d8a3-46dc-4ca5-84a4-249d4f7d38c3",
+      "result_id": "b7809ccd-b8e6-4e3f-bb8b-1dcb4927b518"
+    },
+    {
+      "claim_id": "eb0bfa41-f126-461c-bcd3-79b97d626198",
+      "result_id": "b7809ccd-b8e6-4e3f-bb8b-1dcb4927b518"
+    },
+    {
+      "claim_id": "25cf08a5-d037-4c6b-9fc3-39520be134d6",
+      "result_id": "b7809ccd-b8e6-4e3f-bb8b-1dcb4927b518"
+    },
+    {
+      "claim_id": "1aad3f88-c04c-46bc-bcb6-555f7e6aff17",
+      "result_id": "b7809ccd-b8e6-4e3f-bb8b-1dcb4927b518"
+    },
+    {
+      "claim_id": "6af03c2a-708a-4824-94a4-d8a8fe079cc5",
+      "result_id": "e1fec495-3833-4cf0-9e47-02b069dbce8c"
+    },
+    {
+      "claim_id": "85d681ef-8b36-4b87-b7dd-e955ca8efb27",
+      "result_id": "09425e8d-0d83-4ac7-90f8-8e73d2578240"
+    },
+    {
+      "claim_id": "06cee9c0-7fcf-4774-85a0-f1147e280438",
+      "result_id": "09425e8d-0d83-4ac7-90f8-8e73d2578240"
+    },
+    {
+      "claim_id": "659f50bb-12cc-4cd5-a47f-ffb980778a9c",
+      "result_id": "09425e8d-0d83-4ac7-90f8-8e73d2578240"
+    },
+    {
+      "claim_id": "55922bd1-59eb-4d95-a972-a66e293bec35",
+      "result_id": "09425e8d-0d83-4ac7-90f8-8e73d2578240"
+    },
+    {
+      "claim_id": "ffc4edb3-b00f-4530-8a99-298606ace3e2",
+      "result_id": "09425e8d-0d83-4ac7-90f8-8e73d2578240"
+    },
+    {
+      "claim_id": "37898e00-ff99-4e78-9a44-9795a37ddc8b",
+      "result_id": "09425e8d-0d83-4ac7-90f8-8e73d2578240"
+    },
+    {
+      "claim_id": "7b5ecf9e-b5cc-4656-bdc3-5a42c39a62d6",
+      "result_id": "7d6ec039-83e9-4a69-adce-af90546b20bf"
+    }
+  ],
+  "comparisons": []
+}

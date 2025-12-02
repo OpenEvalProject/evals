@@ -1,0 +1,1555 @@
+{
+  "submission": {
+    "id": "b78fb55b-bf19-4384-9d82-331264f2a9c4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:22:44.301505Z",
+    "updated_at": "2025-12-02T00:22:44.301505Z"
+  },
+  "content": [
+    {
+      "id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "submission_id": "b78fb55b-bf19-4384-9d82-331264f2a9c4",
+      "content_type": "manuscript",
+      "content_text": "# Large-scale two-photon imaging revealed super-sparse population codes in the V1 superficial layer of awake monkeys\n\n## Authors\n\n- Shiming Tang<sup>1</sup> ([ORCID: 0000-0003-0294-3259](https://orcid.org/0000-0003-0294-3259)) \u2020\n- Yimeng Zhang<sup>4</sup> ([ORCID: 0000-0003-2248-8951](https://orcid.org/0000-0003-2248-8951))\n- Zhihao Li<sup>4</sup>\n- Ming Li<sup>1</sup>\n- Fang Liu<sup>1</sup>\n- Hongfei Jiang<sup>1</sup>\n- Tai Sing Lee<sup>4</sup> \u2020\n\n### Affiliations\n\n1. School of Life Sciences and Peking-Tsinghua Center for Life Sciences Peking University Beijing China\n2. IDG/McGovern Institute for Brain Research Peking University Beijing China\n3. Key Laboratory of Machine Perception Peking University Beijing China\n4. Center for the Neural Basis of Cognition Carnegie Mellon University Pittsburgh United States\n5. School of Computer Science Carnegie Mellon University Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOne general principle of sensory information processing is that the brain must optimize efficiency by reducing the number of neurons that process the same information. The sparseness of the sensory representations in a population of neurons reflects the efficiency of the neural code. Here, we employ large-scale two-photon calcium imaging to examine the responses of a large population of neurons within the superficial layers of area V1 with single-cell resolution, while simultaneously presenting a large set of natural visual stimuli, to provide the first direct measure of the population sparseness in awake primates. The results show that only 0.5% of neurons respond strongly to any given natural image \u2014 indicating a ten-fold increase in the inferred sparseness over previous measurements. These population activities are nevertheless necessary and sufficient to discriminate visual stimuli with high accuracy, suggesting that the neural code in the primary visual cortex is both super-sparse and highly efficient.\n\n## Introduction\n\nThe efficient-coding hypothesis is an important organizing principle of any sensory system (Barlow, 1981; Olshausen and Field, 1996). It predicts that neuronal population responses should be sparse, although the optimal level of sparseness depends on many factors. Most of the experimental evidence of sparse coding comes from the responses of individual neurons that were exposed to a large set of natural image stimuli, measured using single-unit recording techniques (Haider et al., 2010; Hrom\u00e1dka et al., 2008; Rust and DiCarlo, 2012; Vinje and Gallant, 2000). The sparseness of a neuron\u2019s response to a large set of stimuli in these studies was used to infer the sparseness of the population responses. The first direct measurement of population response sparseness was\u00a0performed with two-photon (2P) GCaMP6 signal imaging in rodents (Froudarakis et al., 2014). One potential confound in this work, however, is that GCaMP6 responses are subject to saturation at neuronal firing rates above 60\u201380 Hz (Chen et al., 2013; Froudarakis et al., 2014), leading to the potential to under-estimate the sparseness measures that can capture the peakedness or sharpness of the population response distributions. Thus, direct and accurate measurement of the\u00a0population sparseness of neuronal response, particularly in non-human primates, is\u00a0required.\n\nIn this study, we provided the first direct measurement of population sparseness from V1 of awake macaques. We performed 2P imaging on a large population of neurons using the genetically encoded calcium indicator GCaMP5 (Akerboom et al., 2012; Denk et al., 1990), delivered with adeno-associated viruses (AAVs). We showed previously that GCaMP5 exhibits linear non-saturating responses across a wide range of firing rates (10\u2013150 Hz) (Li et al., 2017),\u00a0allowing us to measure accurately\u00a0the\u00a0response sparseness of almost all of\u00a0the\u00a0neurons in layer two in V1 within a 850 \u00b5m x 850 \u00b5m field of view\u2014the spatial scale of about one hypercolumn.\n\n## Results and discussion\n\nOur 2P imaging of GCaMP5 recorded neuronal population calcium (Ca2+) responses to 2250 natural images in V1 layer two in two awake macaques (about 1000 neurons each). Each monkey performed a fixation task while stimuli were presented to the appropriate retinotopic position in the visual field. Each trial sequence consisted of: a blank screen presented for one second, followed by a visual stimulus for one second. Each activated cell\u2019s region-of-interest (ROI) was defined as the compact region (>25 pixels) in which brightness exceeded three standard deviations (stds) above baseline, for each individual differential image. The standard ratio of fluorescence change (\u0394F/F0) of each of these regions of interest (ROIs) during stimulus presentation was calculated as the neuron\u2019s response (see 'Materials\u00a0and\u00a0methods').\n\nThe receptive fields (RFs) of the neurons were characterized using oriented gratings and bars presented in various positions. The RF centers of the imaged neurons were located between 3o and 5o in eccentricity. In each trial, a stimulus of 4o x 4o in size was presented, randomly drawn from a set of 2250 natural image stimuli (Figure 1, Figure 1\u2014figure supplement 1c). The entire set of stimuli was repeated three times. These natural images evoked robust visual responses in the imaged neurons (Figure 1a,b, Figure 1\u2014figure supplement 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-v2.jpg)\n\n**Figure 1.:** (a, b) Calcium\u00a0images of the neuronal population response to two different natural images (shown in the insets). Typically, only a few neurons, among the nearly 1000 neurons measured (1225 neurons for Monkey A or 982 neurons for Monkey B), responded strongly to a single patch of natural scenes. (c) The overall neuronal population responses to all 2250 natural images. Each cell was color-coded according to the response intensity to its optimal stimulus. (d, e) The distributions of neuronal population responses to the two natural images. Abscissa indicates the 1225 neurons that showed a\u00a0significant response to natural images, in ranked order according to their responses to each image. Ordinate indicates \u0394F/F0. (f, g) Frequency histograms showing the distributions of the number of stimuli (out of 2250) (y-axis) with different population sparseness, measured by the number of neurons activated strongly (x-axis). On\u00a0average,\u00a0fewer than 0.5% of the cells (6 cells out of 1225 for monkey A, and 4.1 cells out of 982 for monkey B) responded above half of their peak responses for any given image.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a, b) Two-photon images of neurons expressing GCaMP5 at zoom 1X\u00a0and 2X respectively. (c) Natural stimuli evoked robust neural activity\u00a0that\u00a0is probed by the\u00a0calcium indicator GCaMP5.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a, b) An average two-photon image from monkey B at two levels of magnification. (c, d) Images\u00a0showing different\u00a0sparse strong neuronal responses to different\u00a0natural stimuli.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-figsupp3-v2.jpg)\n\nWe recorded data\u00a0from 1225 neurons in monkey A and 982 neurons\u00a0in monkey B, and found that only a few neurons in each monkey responded strongly to any given image (Figure 1a,b), though most of the neurons responded strongly to at least one of the images in the set (Figure 1c). The rank-ordered distributions of the population responses were always sharply peaked (Figure 1d,e). On average, the percentage of neurons that responded above each\u2019s half-maximum was 0.49% (6.0/1,225) for monkey A and and 0.42% (4.1/982) for monkey B (Figure 1f,g). This is a measure of population sparseness that can capture the peakedness of the population response distribution (see 'Materials and methods'). In other words, only about 0.5% of the cells responded strongly to each image, indicating a very high degree of sparseness in the strong population responses or a very sharp population response distribution.\n\nWe also examined each neuron\u2019s stimulus specificity or life-time sparseness (Willmore et al., 2011). Interestingly, we found that\u00a0most cells responded strongly to only\u00a0a small number of images in the whole stimulus set (Figure 2a,b). The preferred images for individual neurons often shared common features. For example, neuron 653 of monkey A was most excited when its receptive field (0.8o in diameter) covered the lower rim of the cat\u2019s eye (indicated by the red dashed line in the inset in Figure 2b). The neuron\u2019s preference for the specific curve feature was further confirmed by checking its selectivity to a variety of artificial patterns (Figure 2b). Similarly, neuron 949 of Monkey A was selective to a different specific curvature embedded within the natural stimuli (Figure 2d). A more systematic characterization of these cells using artificial stimulus patterns has\u00a0been reported previously (Tang et al., 2018), and this work showed that many of these neurons are highly selective to specific complex patterns. To measure the sharpness of each neuron\u2019s stimulus tuning curve \u2014\u00a0its life-time response sparseness\u00a0\u2014\u00a0we computed the percentage of the stimuli that excited each neuron\u00a0to\u00a0>50% of the peak response found from the entire stimulus set. This population average was 0.49% (11/2,250) for Monkey A and 0.41% (9.3/2,250) for Monkey B (Figure 2e,f). This suggests that a high degree of stimulus specificity or life-time sparseness goes hand-in-hand with a heightened population sparseness.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig2-v2.jpg)\n\n**Figure 2.:** (a, b) The response of one example cell (cell 653) to the entire set of natural scene stimuli, exhibiting a\u00a0high level\u00a0of\u00a0stimulus specificity. (c, d) Another example cell (cell 949) also shows high stimulus specificity. (e, f) The distributions of the\u00a0stimulus specificity of neurons, in terms of the\u00a0half-height width of the stimulus tuning curves. Each cell would typically respond strongly to fewer than 0.5% of the natural images in our test set.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The tuning curve of neuron #653\u2019s responses (averaged across trials) to the 2250 stimuli. (b) The tuning curve computed from one random shuffle across all trials. (c) The ROC of original trials (red curve) against those of 99 shuffled trials (gray). The AUC of the original data is 0.999. The AUC of the example in (b), colored in blue, is 0.68. (d) The distribution of the AUC\u2019s of all 1000 shuffled cases. The probability that the shuffled AUC can reach the raw data\u2019s AUC is less than 0.001 (p<0.001) for neuron #653.\n\nTo understand how much information was carried in the sparse ensemble of population activities, we evaluated how well the sparse neural responses allow a decoder to discriminate the 2250 stimuli (Quian Quiroga and Panzeri, 2009; Froudarakis et al., 2014). The entire population\u2019s decoding accuracy was 54% for Monkey A and 38% for Monkey B, whereas the chance accuracy was 0.04% (1/2,250) (Figure 3a,b, horizontal dashed lines). These population decoding accuracies estimate the highest achievable decoding performance from the activities recorded for the full population, and serve as the upper limit of accuracy performance that can be achieved by decoders that are made from any subset of neurons in the population (Figure 3a,b, horizontal dashed lines).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig3-v2.jpg)\n\n**Figure 3.:** Y axes show the cross-validated decoding accuracy on the 2,250-way image classification task. Dash lines are the referential \u2018achievable decoding performance\u2019 in accuracy obtained\u00a0using the original entire neural population responses; red lines (\u2018top only\u2019 in key) show the decoding accuracies when different percentages of the\u00a0top responses were kept and lower responses were removed (set to zero); blue lines (\u2018top excluded\u2019 in legends) show the decoding accuracies when different percentages of top responses were removed (set to zero) and lower responses were kept. X axes show the percentage of top responses included (red curves) and excluded (blue curves). Check 'Materials\u00a0and\u00a0methods\u00a0Decoding Analysis' for details. Gray vertical lines highlight the decoding accuracies including or excluding the top 0.5% responses. Since our classification task is a 2250-way one, the chance accuracy is 1/2,250, or about 0.4%.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** See 'Materials and methods' for details. Results were qualitatively similar to those shown in Figure 3.\n\nNow that we know the highest achievable decoding performance of the entire population, we can build on that idea to assess the contribution of strong sparse responses to the overall decoding accuracy. We zeroed all responses below the top 0.5% response threshold and built a new decoding model to discriminate the 2250 stimuli. Here, we assume that\u00a0only the strong signals above the threshold would be conveyed to downstream neurons successfully. Remarkably, a decoding accuracy of 28% for monkey A and 21% for monkey B could be achieved\u00a0with only the top 0.5% of the strongest signals included (Figure 3a,b vertical gray lines). This means\u00a0that transmitting the top 0.5% of the strongest responses for each image was sufficient to realize 50% of the\u00a0maximum\u00a0achievable decoding performance for either monkey.\n\nConversely, we can assess the necessity of the top 0.5% of responses by repeating the decoding experiment after removing the strongest signals by setting them to 0, and keeping the remaining 99.5% of the signals intact. The blue curves in Figure 3a and b show the decoding performance with signals above a range of percentage threshold \u2018removed\u2019. The intersections of the blue curves with the gray lines indicate\u00a0that the decoding performance dropped by 50% when the strongest 0.5% of the signals are removed. Thus, we showed that these strong and sparse signals contain the information\u00a0necessary to\u00a0realize half of the decoding performance.\n\nFigure 3a and b also provides a more complete picture of the decoding performance as a function of percentage threshold. Although the top 0.5% of the signals are both necessary and sufficient for realizing 50% of the performance, 99% of decoding performance is not reached until the top 40% (for monkey A) and top 30% (for monkey B) of the responses are included (saturation of the red curves). However, without the top 5% responses, the decoding performance drops to practically\u00a0zero (blue curve). Thus, the strongest 5% of the responses are necessary for the\u00a0achievement\u00a0of full performance, but insufficient by themselves. In other words, the presence of other weaker signals in the population is required to achieve the full performance. The decoding results revealed that significant information contents are indeed carried by the superb sparse strong responses.\n\nWe note that, in the analyses\u00a0described\u00a0above, the selection of responses that were kept or removed was based on the absolute response magnitude of the cells, rather than on a normalized response magnitude for each cell as determined by its peak response. We made this decision because we assumed that downstream neurons may know where the signals come from, but it\u00a0is\u00a0not clear whether they can know (or remember from historical responses) the peak response magnitude of the neuron that is providing the signals. For better comparison with the population sparseness measure, we repeated the decoding experiment but this time chose the percentage threshold relative to the peak response of each individual neuron. The results were\u00a0qualitatively similar, and showed\u00a0that strong sparse responses still carry a disproportionate amount of information (Figure 3\u2014figure supplement 1). Quantitatively, the top 1.5% of the responses are now required to achieve 50% of the decoder\u2019s highest achievable performance. This suggests that absolute response strengths may potentially convey more discriminable information to downstream neurons. The decrease in performance based on the top 0.5% of\u00a0responses selected on the basis of a relative threshold (Figure 3\u2014figure supplement 1, red curve) is understandable because the relative threshold will include some useless contribution from neurons that\u00a0have weak peak responses and will\u00a0exclude the more useful contribution of some neurons that\u00a0have high peak responses, amplifying the effect of noises particularly when a small number of neurons were selected.\n\nIn conclusion, this study provides the first simultaneous recording of a large dense population of\u00a0neurons\u00a0in V1 at single-cell resolution in response to a large set of natural stimuli, using 2P imaging in awake macaque. Earlier studies had\u00a0provided life-time sparseness measurements in rodents (Hrom\u00e1dka et al., 2008; Haider et al., 2010), non-human primates (Rolls and Tovee, 1995; Vinje and Gallant, 2000; Rust and DiCarlo, 2012) and humans (Quiroga et al., 2005), as well as population sparseness measurement in rodents (Froudarakis et al., 2014),\u00a0but\u00a0our study provides the first direct measurement of sparseness of large-scale neuronal population responses,\u00a0carried\u00a0out in awake macaque monkeys\u00a0and made possible by large-scale 2P imaging techniques. We found that a very small ensemble of neurons from V1\u2019s superficial layer are activated at any one time in response to any given natural image. Using decoding analysis, we showed that the small ensembles of neural responses provide a surprisingly large amount of information to downstream neurons,\u00a0providing for the discrimination of complex image patterns in natural scenes.\n\nEarlier studies inferred population sparseness on the basis of measurements of life-time sparseness. For the first time, we have shown that direct measurements of population sparseness are indeed comparable to life-time sparseness measurements. However, the level of sparseness that\u00a0we observed (0.5% at half maximal response) was considerably higher than that predicted by the earlier life-time estimates\u00a0of\u00a0sparseness, which\u00a0were\u00a0based on single unit recording in macaques (Rust and DiCarlo, 2012). Studies on rodents have yielded a considerable range of estimates of sparseness that vary across measurement techniques (Haider et al., 2010; Hrom\u00e1dka et al., 2008; Froudarakis et al., 2014). A single-unit study that used the cell-attached patch technique might have been the most accurate to date (Hrom\u00e1dka et al., 2008), and it showed that neurons were mostly silent in the awake auditory cortex, inferring that less than 2% of the neuronal population showed \u2018well-driven\u2019 responses (>20 Hz response frequency) to natural sounds. Our imaging shows\u00a0that\u00a0neurons in the superficial layers of V1 are densely packed\u00a0and\u00a0have small cell bodies. Thus,\u00a0it may not be possible to obtain stable and well isolated single-unit signals over several hours using extracellular recording methods. Our study has reduced the biases inherent to previous extracellular recording studies\u00a0\u2014\u00a0in neuronal sampling, in\u00a0stimulus sampling, and in single-cell isolation\u00a0\u2014\u00a0by invoking a response in virtually all of\u00a0the neurons in a single field of view and in a particular layer by\u00a0using a large set of natural stimuli.\n\nThe high degree of population sparseness that\u00a0we observed is consistent with two recent conjectures from theoretical neuroscience. First, based on the metabolic costs of spiking, one group posits that fewer than 1% of the neurons should be substantially active concurrently in any brain area (Lennie, 2003). Second, and more importantly, theoretical sparse-coding studies have suggested that because V1 neurons are at least 200 times more abundant than their thalamic input, V1 neurons could be quite specialized in their feature selectivity and thus highly sparse in their population responses (Olshausen, 2013; Rehn and Sommer, 2007). We have indeed observed this very finding using 2P imaging techniques in the V1 superficial layers (Tang et al., 2018). These findings are reminiscent of the highly specific codes exhibited by neurons in the human medial temporal lobes (Quiroga et al., 2005), suggesting that many V1 neurons might be akin to highly specific \u2018grandmother neurons\u2019, although they may encode information in the form of an extremely sparse population code. The observed high degree of population sparseness\u00a0and life-time sparseness are also consistent with our earlier observation that V1 neurons in this layer were tuned to complex patterns with a great degree of specificity (Tang et al., 2018, see also Hegd\u00e9 and Van Essen, 2007). These findings reveal the complexity and specificity of feature selectivity and the super-sparse neural representation within a V1 hypercolumn, providing new understanding of the neural codes in the macaque primary visual cortex.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Macaque)</td>\n      <td>Rhesus monkeys</td>\n      <td>Beijing Prima Biotech Inc</td>\n      <td>http://www.primasbio.com/cn/Default</td>\n      <td>http://www.primasbio.com/cn/Default</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV1.hSyn.GCaMP5G</td>\n      <td>Penn Vector Core</td>\n      <td>V5072MI-R</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matab 7.12.0 (R2011a)</td>\n      <td>MathWorks</td>\n      <td>Matab 7.12.0 (R2011a)</td>\n      <td>https://www.mathworks.com</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Codes for the decoding analysis and image movement correction</td>\n      <td>This paper</td>\n      <td>Codes for the decoding analysis and image movement correction</td>\n      <td>https://github.com/leelabcnbc/sparse-coding-elife2018 (copy archived athttps://github.com/elifesciences-publications/sparse-coding-elife2018)</td>\n    </tr>\n  </tbody>\n</table>\n\nAll experimental protocols were approved by the Peking University Animal Care and Use Committee, and approved by the Peking University Animal Care and Use Committee (LSC-TangSM-5).\n\n### Subjects\n\nThe study used two adult rhesus monkeys (A and B), who\u00a0were\u00a04 and 5 years of age and weighed 5 and 7 kg,\u00a0respectively (Li et al., 2017). Two sequential surgeries were performed on each animal under general anesthesia and strictly sterile conditions. In the first surgery, a 16 mm hole was drilled in the skull over V1. The dura was opened to expose the cortex, into which 50\u2013100 nl AAV1.hSynap.GCaMP5G.WPRE.SV40 (AV-1-PV2478, titer 2.37e13 (GC/ml), Penn Vector Core) was pressure-injected at a depth of\u00a0~500 \u03bcm. After AAV injection, the dura was sutured, the skull cap was placed back, and the scalp was sutured. Then the animal was returned to its cage for recovery. Antibiotic (Ceftriaxone sodium, Youcare Pharmaceutical Group Co. Ltd., China) was administered for one week. After 45 days, a second surgery was performed, in which three head-posts were implanted on each animal\u2019s skull, two on the forehead and one on the back of the head. A T-shaped steel frame was connected to these head-posts for head stabilization during imaging. The skull and dura were later opened again to explore the cortex. A glass cover-slip (diameter 8 mm and thickness 0.17 mm) was glued to a titanium ring and gently pressed onto the cortical surface. A ring-shape GORE membrane (20 mm in outer diameter) was inserted under the dura. The titanium ring was glued to the dura and skull with dental acrylic to form an imaging chamber. The whole chamber (formed by thick dental acrylic) was covered by a steel shell to prevent breakage of the cover-slip when the animal was returned to the home cage.\n\n### Behavioral task\n\nDuring imaging, each monkey sat in a standard primate chair with head restraint and performed a fixation task, which involved fixating on a small white spot (0.1\u00b0) within a window of 1\u00b0 for over 2 s to obtain a juice reward. Eye position was monitored with an infrared eye-tracking system (ISCAN, Inc.) at 120 Hz.\n\n### Visual stimuli\n\nVisual stimuli were generated using the ViSaGe system (Cambridge Research Systems) and displayed on a 17\u2019 LCD monitor (Acer V173, 80 Hz refresh rate) positioned 45 cm from the animal\u2019s eyes. Each stimulus was presented for 1 s after a 1 s blank within a fixation period of 2 s. We estimated the RF sizes and positions of the imaged neurons with small drifting gratings and bars presented at different locations. The RFs were estimated to be 0.2\u00b0 to 0.8\u00b0 in size with RF locations between 3\u00b0 and 5\u00b0\u00a0in eccentricity for both monkeys.\n\nDrifting and oriented gratings were tested to examine the visual responses of imaged neurons (Li et al., 2017). Small patches (0.8\u00b0 in diameter) of gratings with 100% contrast square waves were presented to the center of RFs of imaged cells, with two spatial frequencies (4.0 and 8.0 cyc/deg) at two temporal frequencies (1 and 2 Hz), six orientations, and two directions (30\u00b0 apart).\n\nA natural stimulus set (NS) of 2,250 4\u00b0\u00a0\u00d7\u00a04\u00b0 stimulus patches extracted from different natural scene photos was used to examine the neuronal responses to natural stimuli. The order of the stimuli was randomized in each session. These stimuli were tested on monkeys A and B, each with at least three repetitions.\n\n### Eye movement control\n\nWe analyzed the distribution of eye-positions during stimulus ON periods. The monkeys\u2019 fixation during stimulus presentation (from 1 to 2 s in the graph) was stable and accurate. The distribution of eye positions during stimulus presentation, with standard deviations smaller than 0.05\u00b0, was significantly smaller than the typical receptive field sizes (ranging from 0.2\u00b0 to 0.8\u00b0) of neurons at 3\u20135\u00b0\u00a0eccentricities. To examine whether the eye movement made\u00a0a significant contribution to the distribution of neuronal population responses, we compared the standard deviations (stds) of eye position in different population response classes of neurons: (1) weak responses (\u0394F/F0\u00a0<0.5), (2) sparse strong responses (one or two cells responded), (3) dense responses (more than ten cells responded). We found no statistically significant differences in the distribution of eye position data in these three classes (Tang et al., 2018), indicating that the observed effects were not caused by movement differences. The ROC and decoding analysis (Figure 1\u2014figure supplement 2), demonstrating the reliability of the neural responses across trials, confirm that the sparse population responses were repeatedly\u00a0evoked by stimuli, and\u00a0not by random eye-movement jitters.\n\n### Two-photon imaging\n\nAfter a recovery period of 10 days after the second surgery, the animals were trained to maintain eye-fixation. Two-photon imaging was performed using a Prairie Ultima IV (In Vivo) 2P microscope (Bruker Nano, Inc., FMBU, formerly Prairie Technologies) powered by a Ti: Sapphire laser (Mai Tai eHP, Spectra Physics). The wavelength of the laser was set at 1000 nm. With a 16\u00a0\u00d7\u00a0objective (0.8 N.A., Nikon), an area of 850 \u03bcm\u00a0\u00d7\u00a0850 \u03bcm was imaged. A standard slow galvonometer scanner was used to obtain static images of cells with high resolution (1024\u00a0\u00d7\u00a01024). The fast and resonant scan (up to 32 frames per second) was used to obtain images of neuron activity. The images were recorded at 8 frames per second by averaging each 4 frames. Infected cells of up to 700 \u03bcm in depth were imaged. We primarily focused on cells that\u00a0were\u00a0160 \u03bcm to 180 \u03bcm deep, which included a high density of infected cells.\n\n### Imaging data analysis\n\nAll data analyses were performed using customized Matlab software (The MathWorks, Natick, MA). The images from each session were first realigned to a template image (the average image of 1000 frames) using a normalized cross-correlation-based translation algorithm, this corrected the X-Y offset of images caused by the relative movements between the objective and the cortex (Li et al., 2017).\n\nThe cell density was high in superficial V1, and many cell bodies were quite dim at rest. It was difficult to identify these cells directly by eye or by algorithm on the basis of their morphology as captured in static images. We therefore identified ROIs for cell bodies on the basis of their responses. The differential images (which were averaged frames of the ON stimulus period, from which we then subtracted the average of the stimulus OFF period, for each stimulus condition) were first filtered using low-pass and high-pass Gaussian filters (5 pixels and 50 pixels). Notably, these two filters were used solely for ROI identifications. In all further analyses, we used the raw data without any filtering. Connected subsets of pixels (>25 pixels) with average pixel value greater than 3 stds in these differential images were identified as active neuronal ROIs. Note that these 3 stds empirical value was used only for deciding the ROIs of the activated cells, and was not used as a cutoff threshold for measuring neuronal responses (Figure 1\u2014figure supplement 3). The ratio of fluorescence change (\u0394F/F0) of these ROIs was calculated for each activated cell. \u0394F\u00a0=\u00a0F F0, where F0 is the baseline activity during the blank screen prior to\u00a0stimulus onset in each trial and F is fluorescence activity in the ROI during stimulus presentation in the trial. A neuropil-correction was performed with an index of 0.7 (Chen et al., 2013).\n\n### Sparseness measure\n\nThe sparseness measure is used to quantify the peakedness of the response distribution. There are several different definitions of sparseness and corresponding sparseness measures (Willmore et al., 2011). One intuitive one for sparse codes, described by Willmore et al., 2011, is that \u201cthe population response distribution that is elicited by each stimulus is peaked (exhibits population sparseness). A peaked distribution is one that contains many small (approximately zero) magnitude values and only a small number of large values. Thus, a neural code will have high population sparseness if only a small proportion of the neurons are strongly active at any given time.\" A measure consistent with this intuition is the percentage of neurons that responded strongly, above a certain threshold relative to their peak response. This measure has been used in other studies (Rust and DiCarlo, 2012), typically with a half-peak response threshold.\n\nThe sparseness measures based on the calculation suggested by Rolls and Tovee (1995)\u00a0and\u00a0by Vinje and Gallant (2000) are popular for quantifying the\u00a0sparseness of spiking data, but they are very sensitive to measurement noise and uncertain baselines because\u00a0of nonlinearities and missing responses in the low spiking-rate range (<10 Hz) in calcium imaging (Li et al., 2017). The sparseness measure\u00a0that we used\u00a0in this study, which is based on the percentage of the cells or stimuli above the half-maximum of each neuron, is much less sensitive to low-level activities (iceberg effect) or baseline fluctuations in the calcium signal.\n\n### Stability and reliability of the neuronal measurements\n\nFor each single neuron, we examined whether the sparse strong responses (\u0394F/F0\u00a0>50% max) observed across the 2250 stimuli were reliable across trials by performing the following ROC analysis (Quiroga et al., 2005). We set all the stimuli that produced mean responses greater than 50% of the observed maximum mean peak of the cell to be in the ON class, and all other stimuli to be in the OFF class. We computed the ROC for classifying the ON class against the OFF class based on the response of each single trial. If the responses above the half-maximum are stable across all trials, then the AUC (the area under the ROC curve) will be close to 1.0, because the ON and OFF classes are readily discriminable. The null hypothesis is that sparse strong responses will be spurious single-trial epileptic responses, and not repeatable across trials. To test this hypothesis, we shuffled all the responses against the stimulus labels, and recomputed the mean responses for all the stimuli across the trials. We performed 1000 shuffles. We found that most of the shuffled cases have much lower average peak responses because of the mismatch of the rigorous sparse responses across trials, suggesting that the sparse responses in the original data\u00a0are\u00a0reliable. To make an even stricter and more fair comparison with the original data on ROC terms, for each shuffle, we recomputed the maximum responses, and used the half of this mean maximum as the\u00a0threshold to sort the stimuli into ON and OFF classes and repeated the ROC analysis to obtain the AUC for this shuffle. The probability of the null hypothesis is the percentage of the time that the AUCs of the 1000 shuffles reach the AUC of the original data. With this ROC analysis, we found\u00a0>96% neurons that\u00a0adhered\u00a0to the null hypothesis (p<0.01) (Figure 1\u2014figure supplement 2).\n\n### Decoding analysis\n\nWe used a nearest centroid classifier to discriminate the 2250 images on the basis of the population responses in each trial. As\u00a0each image was tested three times, the nearest centroid classifier was trained on the basis of two trials for all images and tested on the hold-out trials. We repeated the procedure for each trial, performing 3-fold cross-validations.\n\nFor each monkey, we constructed neural response matrices (with dimension 2250 \u00d7 1225 for monkey A, and 2250 \u00d7 982 for monkey B) for three trials X(1), X(2), and X(3) that store the neural responses to all images in each trial as rows in its matrix. We trained and tested nearest-centroid classifiers via a three-fold cross-validation procedure across trials in a 2250-way image decoding task. Specifically, for trial t, during training, we computed the centroids of the other two trials C(t) (if t\u00a0=\u00a01, C(1)= (X(2) + X(3))/2; if t\u00a0=\u00a02, C(2)= (X(1) + X(3))/2, etc.) and stored C(t) in the classifier; during testing, given some row k of X(t), which is the population neural response vector to image k in trial t, the (trained) classifier computed the Euclidean distances between row k of X(t) and every row of C(t). The model outputted the index (1,2,\u2026,2249,2250) of the row in C(t) that gives the smallest distance. The correct output is k and all other outputs are incorrect. The average decoding accuracy for this trial is defined as the percentage of correct outputs over all rows of X(t). We repeated the above procedure for each trial and reported the average of three (average) decoding accuracies.\n\nIn our experiments, we first set the X(t)s defined above to be the original recorded neural responses and computed the decoding accuracies for both monkeys. We refer to the accuracies obtained from the\u00a0original neural data as \u2018achievable decoding accuracies\u2019. Later, to evaluate the amount of information in the strong sparse portions of the neural data, we set X(t)s to be thresholded versions of the original data. We tried two classes of thresholding methods: \u2018top only\u2019 (red in Figure 3) and \u2018top excluded\u2019 (blue in Figure 3). In \u2018top only\u2019, we only kept the largest\u00a0responses (p%)\u00a0across images and trials in the thresholded version and set the smaller responses\u00a0(100-p%) of the to be zero. In \u2018top excluded\u2019, which is complementary to \u2018top only\u2019, we set the largest responses (p%)\u00a0to be zero and kept the smaller responses\u00a0(100-p%). For both \u2018top only\u2019 and \u2018top excluded\u2019, we evaluated decoding accuracies at the following percentages (crosses in Figure 3): 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80, 90, and 99.\n\nGiven that\u00a0the population sparseness was computed on the basis of the half-maximum of each individual neuron\u2019s response, we also repeated the decoding experiment using a percentage threshold that is relative to each neuron\u2019s peak response, rather than the absolute response threshold, to select the \u2018top responding\u2019 neurons to be included or excluded and reset the responses to be excluded in the data matrix to 0 accordingly for training and testing the decoder\u00a0as\u00a0before.\n\n### Software available\n\nThe code used for the decoding analysis and image movement correction can be found in https://github.com/leelabcnbc/sparse-coding-elife2018 (Zhang et al., 2018; copy archived at https://github.com/elifesciences-publications/sparse-coding-elife2018).\n",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "67c5018f-a6e2-40df-9c52-8b48ef884a70",
+      "submission_id": "b78fb55b-bf19-4384-9d82-331264f2a9c4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, Wake Forest School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33370.014](https://doi.org/10.7554/eLife.33370.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Large-scale two-photon imaging revealed super-sparse population codes in V1 superficial layer of awake monkeys\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Van Essen as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Anna Wang (Reviewer #2); Stanley Klein (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study, Tang and colleagues use two-photon calcium imaging in awake monkeys to investigate the sparseness of responses in V1. All reviewers were enthusiastic about the manuscript, noting that it was technically novel and conceptually important for delineating how V1 encodes the visual world. For instance, 5 important advances were pointed out: (1) No previous study has provided a direct data-based quantitative measure of sparseness in terms of number of cells in the population (<0.5%). This finding demonstrates that very few cells, for a large number of stimulus types (from simple to complex), are needed to encode each stimulus. This is a conclusion that, due to limitations of sampling, could not be arrived at by existing single unit neurophysiology approaches. (2) The study presents a large number of different stimuli, both simple and complex, to a large dense population of single cells, all observed simultaneously in monkey cortex. This is an innovative way to track how all cells within a single locus of cortex respond under a large number of different conditions. (3) This study invites reconsideration of V1 as an area that encodes simple features of visual stimuli. (4) This study opens up new ideas about what a hypercolumn is. (5) Technically, this is a high quality, tour-de-force study of monkey visual cortex that few in the world can achieve.\n\nThe reviewers also pointed out several areas where the manuscript requires improvement, most notably (1) discussing the possibility that GCaMP is missing lower firing rate neurons; (2) improving the clarity and justification of the analysis methods, as well as possible alternate interpretations of current findings; (3) improving the discussion of why these findings are novel, and what are the implications for the role of V1 in visual processing, as well as for the meaning of a hypercolumn; and (5) making the figures more clear. Specific comments and suggestions follow.\n\nEssential revisions:\n\n1) Concerns about GCaMP5.\n\n1a) The authors point to the linearity of GCaMP5 as an advantage of the current study. While this is correct for large enough firing rates, it fails to mention the significant iceberg effect of GCaMP5, which is clearly demonstrated in the authors previous work (only spike rates larger than 10Hz evoke detectable fluorescence changes). In the current paper, the iceberg effect is only acknowledged in passing in the Materials and methods section. This iceberg effect is a serious issue for the current study. This paper reports average firing rates between 15 and 30 Hz, which would suggest that a detection threshold of 10Hz for the calcium imaging indeed will result in an overestimation of sparseness by failing to detect weaker responses. Most of the chronic calcium indicators currently available (including GCaMP6) have this problem, so there is currently no suitable alternative. However, the shortcomings of the chosen indicator, and the resulting potential for overestimating sparseness, should be addressed much more clearly than is currently the case. In its current form the paper is misleading, because it does not acknowledge the confounds of the GCaMP nonlinearities on the sparseness measurements.\n\n1b) One fix for this problem could be to include actual measurements of spike rates for a population of V1 neurons. While those data would suffer from sampling biases not present in the two-photon data, they would still be the strongest possible complement to this data set. Without spike data, it is basically impossible to assess how much of a problem the iceberg effect could be.\n\n1c) Perhaps a sensitivity analysis could be performed to test different assumptions about the response distributions below the Ca signal threshold. For instance, what happens if each \"non-responsive\" neuron is assigned a random response between 0 and 10 spikes/s? How would the sparseness results change in that case? That type of statistical analysis could be useful to estimate or provide bounds to the error in the sparseness measurement caused by the iceberg effect.\n\n1d) The statement that the linearity of GCaMP5 makes the sensor more suitable than GCaMP6 (which potentially saturates at higher rates) is incorrect. Determining sparseness across a population requires a determination of how many neurons are 'on' during a particular stimulus presentation, not accurate measurements of tuning functions. The same holds for determining the life-time sparseness of a neuron, which also only requires a determination of how many stimuli drive a neuron over a baseline level, not the precise tuning function.\n\n2) Concerns about statistical/analysis methods\n\n2a) Sparseness measures. The authors use the half-height bandwidth as a measure for sparseness. This choice is rather arbitrary and should be further justified. It would seem more plausible to count all stimuli that evoke responses that are significantly larger than the baseline. At a minimum, the authors should explore how their assessment of sparseness changes if the criterion threshold is changed (how many stimuli evoke responses that are 10%, 20% etc. of the maximum response). In general, any such measure is problematic because of the iceberg effect of GCaMP mentioned above. This also needs to be discussed more explicitly.\n\n2b) Comparison to traditional sparseness measures. The authors assert that sparseness measures used previously (as the one by Rolls and Tovee) are not applicable here because they are sensitive to changes in baseline level. However, these previous studies used baseline subtracted firing rates to calculate sparseness. The sensitivity of the traditional measures to changes in baseline levels therefore requires further explanation.\n\n2c) Decoding. The 2 analysis parts of the paper are somewhat disconnected. One emphasizes single cell selectivity, whereas the other emphasizes population sparseness. It might be useful to set up the idea that single cell selectivity does or does not predict population sparseness. It seems two concepts are correlated, but I could imagine that this need not be so.\n\nThe first part assesses sparseness by thresholding responses on a per neuron basis. The second part assesses decoding based on groups of neurons by thresholding the population. What happens to the decoding if the response matrix is computed with the thresholding of part 1 applied (i.e., setting all responses below the half maximum for a neuron to 0)?\n\nFurthermore, the discussion of the decoding results should be improved. Currently, it seems to imply a rather arbitrary threshold of around 20% that is considered 'good decoding' (e.g., in the comparison of the decoding results from the top 0.5% \u2013 which are around 20-30%, and the decoding results from the bottom 0.5% \u2013 which are around 15%). Both are far from the chance level, so these statements need to be further justified.\n\nFinally, the authors conclude that the comparison of decoding performance for top and bottom responses demonstrates that strong responses are both necessary and sufficient to transfer relevant information. This is incorrect. The sufficiency is indeed demonstrated (accepting the assertion that decoding performance above some threshold constitutes successful decoding). However, to demonstrate necessity, they would have to demonstrate that successful decoding always implies the occurrence of strong responses. This is not the same as demonstrating that weak responses do not allow 'successful' decoding.\n\n2d) It would be interesting to compare the sparseness of responses evoked by natural images to that evoked by gratings (which in other studies have been shown to drive a large percentage of superficial V1 neurons). This would also allow a better assessment of how many neurons could potentially respond, further alleviating concerns about cell health or other properties of the imaging region (although this concern is largely addressed by the fact that most neurons respond to at least some of the images in the natural image set).\n\n2e) A famous paper by Quiroga, Reddy, Kreiman, Koch and Fried (2005) illustrated extremely high sparsity in cells that responded to images of Jennifer Aniston and Halle Berry. I'm actually surprised that there was no mention in the present paper of that finding by Quiroga. Although a direct comparison may not be appropriate given the differences in areas, it may still be informative to ask whether the V1 cells have greater sparseness than the Jennifer Aniston cell.\n\nAnother reason for connecting to the Quiroga paper is that they also do ROC analyses, but their ROC curves look very different than those of the present paper (see point 5e below). The comparison may provide further evidence that the sparseness calculations, including the ROC calculations, were done properly.\n\n3) Clarification of experimental methods employed.\n\n3a) Cell count. The overall number of cells per imaging region is crucial for estimating sparseness. The ROI-definition procedure adopted by the authors appears reasonable and well justified. However, a few additional details would be useful:\n\n- Additional images of identified cells so that the accuracy of the chosen approach can be assessed.\n\n- How does the imaging region from monkey 2 look like?\n\n- Which manual steps are involved in the procedure (presumably, somebody checks the identified ROIs)?\n\n- Were all data collected on the same day? If not, how are data and cell counts combined across days? How many cells were stable across those days?\n\n- How many of these cells are filled in versus have a ring-like label? This will help to assess how many of the included neurons are presumably healthy and should exhibit normal responses.\n\n3b) Visual stimuli. Only the size of the stimuli are given. What are the other characteristics of the natural image set? Are they in color? Are they isoluminant with the background? What spatial frequencies and colors do they span? How different is their content? Are they part of one of the standard sets of natural images used in other studies?\n\nThe claim that single neurons respond to similar features of stimuli is not well supported and premature [\u201cneuron 653 of monkey A was most excited when its receptive field (0.8o in diameter) covered the lower rim of the cat's 1 eye'. 'neuron 949 of Monkey A was found to be selective to an opposite curvature embedded in its preferred natural stimulus set\u201d].\n\n4) Points for further discussion/elaboration.\n\n4a) The Discussion is focused on issues of sparseness. However, there are two issues that are also worth mentioning. First, this study thus provides a fresh view of what V1 is doing, one that shifts the emphasis from simple orientation selectivity to complex natural stimuli, and which gives novel perspective on how the brain encodes natural stimuli. And second, the results show that, within the span of a single hypercolumn, all stimuli presented could be largely decoded. This supports Hubel and Wiesel's original concept that a hypercolumn contains all the machinery to encode everything at a single point in space, except that the manner of encoding may be distinct from (or more complex than) the original concept of selection from amongst an array of systematically organized ocular dominance, orientation, and color columns.\n\n4b) A very important item that should be made very clear is the last sentence of the Abstract where the authors correctly claim that this is the first paper that shows sparseness of neuronal population responses in V1 in primates. They need to point out that papers like Frouderakis et al. (2014) were in mice and papers like Quiroga, et al. (2005) were in humans but not in V1. The statement at the end of the tenth paragraph of the Results and Discussion needs to make that clear. It is such an important point that it needs to be pointed out in the Introduction and the Conclusion. Other researchers would then become aware of the power of two-photon imaging.\n\n5) Clarification of data/analyses in the figures.\n\n5a) I find Figure 1F and G vs. L and M description very confusing. I think this is the interpretation: For population sparseness, one expects the distribution to show that for most images only few cells respond. For single cell selectivity, one expects each cell to respond to only a few images. Somehow the description of these graphs seems garbled. [E.g. then for each picture only 0.5% of cells responded means: in Monkey A, for 250 pictures 1 cell responded; for ~200 pictures 6 cells responded; for 5 pictures 20 cells responded. Alternative interpretation of graph: 1 cell responded to 250 pictures; 6 cells responded to ~200 pictures; 20 cells responded to 5 pictures? I would not use 'half-height bandwidths'. Use 'number of cells'. Why is stimulus specificity called 'life-time sparseness'? F-G, L-M should be described better to distinguish what each is saying (single cell selectivity vs. population sparseness/redundancy). Maybe partly it is the terminology that is used.]\n\n5b) Figure 1: Why are there points below zero in D and E?\n\n5c) Figure 1: 'Cells 653 and 949 are colored red respectively.' Don't see this.\n\n5d) Figure 2: 0.5% contributes 50% of information and 5% contributes to 80% of information, what are remaining cells doing?\n\n5e) Figure 1\u2014figure supplement 2: Item C shows ROC curves for 99 shuffled trials. The part that wasn't at all clear to me was why did you compare the results to a shuffled version of the results. And why did the shuffled data have such a high hit rate at zero false alarms. I would have thought that the shuffling would greatly reduce the hit rate. That is quite different from Quiroga's (2005) paper, which shows more normal curves with the false positive rate close to zero. If the authors are unable to use the Quiroga method then they should explain why, and why they end up with the very unusual shape for the ROC curves.\n\n5f) Perhaps it would be helpful to the reader to have Figure 1 broken up into multiple figures. By doing that the figures would be larger with details more visible. One improvement that would be helpful for Figures1D, E would be to have the x-axis be a log axis so that the cell rank of the first 20 or so neurons would be more visible. I believe this is the plot that best demonstrates sparseness so it needs to be very clear.\n\nI would suggest also spending substantially more effort clarifying F and F0 on which panels D and E are based. Another question is what is the role of noise for the one second intervals where the stimulus is shown? There is expected to be more noise in that interval than in the interval without the stimulus. How is that noise estimated?\n\n5g) In connection with Figure 1\u2014figure supplement 2 it would be useful to show A and B as histograms in addition to the way they are presently shown.\n\n5h) I suspect Figure 2 is an important figure. However it wasn't at all clear to me how it was calculated. I did figure out that the small inset was a continuation of the large plot that stopped at 10%. I wonder of the inset could be removed if log axes were used for the x-axis and the data would go from say 0.1% to 100%. But more important is to clarify how the red and blue data were calculated.\n",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e07c88a4-a78d-4ebd-8e3a-45a648470961",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C1",
+      "claim": "The efficient-coding hypothesis predicts that neuronal population responses should be sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficient-coding hypothesis is an important organizing principle of any sensory system (Barlow, 1981; Olshausen and Field, 1996). It predicts that neuronal population responses should be sparse, although the optimal level of sparseness depends on many factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barlow (1981) and Olshausen and Field (1996)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "f530a0a9-7253-4229-b6ba-ff7b7886c420",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C2",
+      "claim": "Most experimental evidence of sparse coding comes from responses of individual neurons exposed to large sets of natural image stimuli, measured using single-unit recording techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the experimental evidence of sparse coding comes from the responses of individual neurons that were exposed to a large set of natural image stimuli, measured using single-unit recording techniques (Haider et al., 2010; Hrom\u00e1dka et al., 2008; Rust and DiCarlo, 2012; Vinje and Gallant, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "b1d92620-f302-4beb-8349-aa5e45c652f7",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C3",
+      "claim": "The first direct measurement of population response sparseness was performed with two-photon GCaMP6 signal imaging in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "The first direct measurement of population response sparseness was performed with two-photon (2P) GCaMP6 signal imaging in rodents (Froudarakis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Froudarakis et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "41831a9f-4db3-4289-820c-7665d74cecf1",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C4",
+      "claim": "GCaMP6 responses are subject to saturation at neuronal firing rates above 60\u201380 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential confound in this work, however, is that GCaMP6 responses are subject to saturation at neuronal firing rates above 60\u201380 Hz (Chen et al., 2013; Froudarakis et al., 2014), leading to the potential to under-estimate the sparseness measures that can capture the peakedness or sharpness of the population response distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chen et al., 2013 and Froudarakis et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "0907bf37-a4f9-4eae-8f02-77583aac4aff",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C5",
+      "claim": "GCaMP5 exhibits linear non-saturating responses across a wide range of firing rates (10\u2013150 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously that GCaMP5 exhibits linear non-saturating responses across a wide range of firing rates (10\u2013150 Hz) (Li et al., 2017), allowing us to measure accurately the response sparseness of almost all of the neurons in layer two in V1 within a 850 \u00b5m x 850 \u00b5m field of view\u2014the spatial scale of about one hypercolumn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "45dc9557-8254-482b-ba7f-af5c8ce34dd9",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C6",
+      "claim": "The study recorded neuronal population calcium responses to 2250 natural images in V1 layer two in two awake macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 2P imaging of GCaMP5 recorded neuronal population calcium (Ca2+) responses to 2250 natural images in V1 layer two in two awake macaques (about 1000 neurons each).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental design and data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "53799e39-1f02-4ef5-9178-3e8e50cc6515",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C7",
+      "claim": "The receptive field centers of the imaged neurons were located between 3\u00b0 and 5\u00b0 in eccentricity.",
+      "claim_type": "EXPLICIT",
+      "source": "The RF centers of the imaged neurons were located between 3o and 5o in eccentricity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement reported in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "82477d69-05ed-4abc-a52d-a3f8f9b3ebe3",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C8",
+      "claim": "Natural images evoked robust visual responses in the imaged neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These natural images evoked robust visual responses in the imaged neurons (Figure 1a,b, Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "6145bc36-6e74-4a20-b7a1-6a823887d665",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C9",
+      "claim": "Only a few neurons among nearly 1000 neurons measured responded strongly to a single patch of natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, only a few neurons, among the nearly 1000 neurons measured (1225 neurons for Monkey A or 982 neurons for Monkey B), responded strongly to a single patch of natural scenes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "8f9a3483-bc3d-4994-9511-ee99cc5c2efc",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C10",
+      "claim": "1225 neurons were recorded from monkey A.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded data from 1225 neurons in monkey A and 982 neurons in monkey B, and found that only a few neurons in each monkey responded strongly to any given image (Figure 1a,b), though most of the neurons responded strongly to at least one of the images in the set (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "db6193c9-a0e1-4825-a247-da0f459cbb88",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C11",
+      "claim": "982 neurons were recorded from monkey B.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded data from 1225 neurons in monkey A and 982 neurons in monkey B, and found that only a few neurons in each monkey responded strongly to any given image (Figure 1a,b), though most of the neurons responded strongly to at least one of the images in the set (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "79e1de7c-2c51-4e0b-820d-c9adbb7a2f27",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C12",
+      "claim": "Most neurons responded strongly to at least one of the images in the set.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded data from 1225 neurons in monkey A and 982 neurons in monkey B, and found that only a few neurons in each monkey responded strongly to any given image (Figure 1a,b), though most of the neurons responded strongly to at least one of the images in the set (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "35869c59-c366-4a45-8542-edc333c8859a",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C13",
+      "claim": "The rank-ordered distributions of the population responses were always sharply peaked.",
+      "claim_type": "EXPLICIT",
+      "source": "The rank-ordered distributions of the population responses were always sharply peaked (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "b39e6703-b674-44ab-9521-ad3e29bfab64",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C14",
+      "claim": "On average, 0.49% of neurons responded above each's half-maximum for monkey A.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the percentage of neurons that responded above each's half-maximum was 0.49% (6.0/1,225) for monkey A and and 0.42% (4.1/982) for monkey B (Figure 1f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "366e2311-bbe4-4f64-92b2-678faba3dbeb",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C15",
+      "claim": "On average, 0.42% of neurons responded above each's half-maximum for monkey B.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the percentage of neurons that responded above each's half-maximum was 0.49% (6.0/1,225) for monkey A and and 0.42% (4.1/982) for monkey B (Figure 1f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "f8bcac1c-89a9-45b1-bf40-9bef57ae29f5",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C16",
+      "claim": "Only about 0.5% of the cells responded strongly to each image, indicating a very high degree of sparseness in the strong population responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, only about 0.5% of the cells responded strongly to each image, indicating a very high degree of sparseness in the strong population responses or a very sharp population response distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the measured data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "b44e373c-462f-4cfe-bd62-3db3b13af0a6",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C17",
+      "claim": "Most cells responded strongly to only a small number of images in the whole stimulus set.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that most cells responded strongly to only a small number of images in the whole stimulus set (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "6420ce8c-44b8-4d13-9516-225c62cc32dd",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C18",
+      "claim": "The preferred images for individual neurons often shared common features.",
+      "claim_type": "EXPLICIT",
+      "source": "The preferred images for individual neurons often shared common features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from analysis of neuronal responses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "42685961-12b2-4fd7-9050-f7bd8e0138b8",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C19",
+      "claim": "Neuron 653 of monkey A was most excited when its receptive field covered the lower rim of the cat's eye.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, neuron 653 of monkey A was most excited when its receptive field (0.8o in diameter) covered the lower rim of the cat's eye (indicated by the red dashed line in the inset in Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Specific observation from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "f869a7ef-eaaa-47cf-ba74-d22ce40aac82",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C20",
+      "claim": "The population average life-time sparseness was 0.49% (11/2,250) for Monkey A.",
+      "claim_type": "EXPLICIT",
+      "source": "This population average was 0.49% (11/2,250) for Monkey A and 0.41% (9.3/2,250) for Monkey B (Figure 2e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "1bca40d4-2c81-4042-b1d6-7beff248ba11",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C21",
+      "claim": "The population average life-time sparseness was 0.41% (9.3/2,250) for Monkey B.",
+      "claim_type": "EXPLICIT",
+      "source": "This population average was 0.49% (11/2,250) for Monkey A and 0.41% (9.3/2,250) for Monkey B (Figure 2e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "26ebbe9b-a1ae-4f2d-9a95-b1a4aa514603",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C22",
+      "claim": "A high degree of stimulus specificity or life-time sparseness goes hand-in-hand with a heightened population sparseness.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a high degree of stimulus specificity or life-time sparseness goes hand-in-hand with a heightened population sparseness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the correlation between two measured quantities",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "488edc0a-7cb1-4f48-b725-0595be1f2bd6",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C23",
+      "claim": "The entire population's decoding accuracy was 54% for Monkey A.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire population's decoding accuracy was 54% for Monkey A and 38% for Monkey B, whereas the chance accuracy was 0.04% (1/2,250) (Figure 3a,b, horizontal dashed lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "88b70368-645d-4c39-b193-d284cff46b75",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C24",
+      "claim": "The entire population's decoding accuracy was 38% for Monkey B.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire population's decoding accuracy was 54% for Monkey A and 38% for Monkey B, whereas the chance accuracy was 0.04% (1/2,250) (Figure 3a,b, horizontal dashed lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "e9e6cebf-f8c0-4755-a195-1fd67f3b9351",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C25",
+      "claim": "The chance accuracy for the decoding task was 0.04% (1/2,250).",
+      "claim_type": "EXPLICIT",
+      "source": "The entire population's decoding accuracy was 54% for Monkey A and 38% for Monkey B, whereas the chance accuracy was 0.04% (1/2,250) (Figure 3a,b, horizontal dashed lines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated baseline for comparison",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "d60d51a2-70d8-4ceb-8b1a-5f4c1859e04b",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C26",
+      "claim": "A decoding accuracy of 28% for monkey A could be achieved with only the top 0.5% of the strongest signals included.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a decoding accuracy of 28% for monkey A and 21% for monkey B could be achieved with only the top 0.5% of the strongest signals included (Figure 3a,b vertical gray lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "b0c44afd-db7d-437b-9632-5667330109c7",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C27",
+      "claim": "A decoding accuracy of 21% for monkey B could be achieved with only the top 0.5% of the strongest signals included.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a decoding accuracy of 28% for monkey A and 21% for monkey B could be achieved with only the top 0.5% of the strongest signals included (Figure 3a,b vertical gray lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "eeac8e2e-62ef-4e5a-9fc1-24bcd9655704",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C28",
+      "claim": "Transmitting the top 0.5% of the strongest responses for each image was sufficient to realize 50% of the maximum achievable decoding performance for either monkey.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that transmitting the top 0.5% of the strongest responses for each image was sufficient to realize 50% of the maximum achievable decoding performance for either monkey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from decoding analysis results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "709e7858-abb8-45da-834d-0212f46697aa",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C29",
+      "claim": "The decoding performance dropped by 50% when the strongest 0.5% of the signals are removed.",
+      "claim_type": "EXPLICIT",
+      "source": "The intersections of the blue curves with the gray lines indicate that the decoding performance dropped by 50% when the strongest 0.5% of the signals are removed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "c8b5cbff-7110-4770-8039-2de9796f290b",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C30",
+      "claim": "The top 0.5% of signals are both necessary and sufficient for realizing 50% of the decoding performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we showed that these strong and sparse signals contain the information necessary to realize half of the decoding performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from decoding analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "75b1a1a3-9bcf-4ca8-b1f7-5472d7240ba7",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C31",
+      "claim": "99% of decoding performance is not reached until the top 40% (for monkey A) of the responses are included.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the top 0.5% of the signals are both necessary and sufficient for realizing 50% of the performance, 99% of decoding performance is not reached until the top 40% (for monkey A) and top 30% (for monkey B) of the responses are included (saturation of the red curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "8cf5aec5-b2a1-404a-b0a2-2533a48490d0",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C32",
+      "claim": "99% of decoding performance is not reached until the top 30% (for monkey B) of the responses are included.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the top 0.5% of the signals are both necessary and sufficient for realizing 50% of the performance, 99% of decoding performance is not reached until the top 40% (for monkey A) and top 30% (for monkey B) of the responses are included (saturation of the red curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "09a8a180-1b90-4190-b4ce-6133f5eefd9a",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C33",
+      "claim": "Without the top 5% responses, the decoding performance drops to practically zero.",
+      "claim_type": "EXPLICIT",
+      "source": "However, without the top 5% responses, the decoding performance drops to practically zero (blue curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from decoding analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "76de56af-a77a-4e71-b61a-efbb1d54dafe",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C34",
+      "claim": "The strongest 5% of the responses are necessary for the achievement of full performance, but insufficient by themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the strongest 5% of the responses are necessary for the achievement of full performance, but insufficient by themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from decoding analysis results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "9af8e13d-6354-40a8-b212-5c7098a5906f",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C35",
+      "claim": "The presence of other weaker signals in the population is required to achieve the full performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the presence of other weaker signals in the population is required to achieve the full performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from decoding analysis results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "12459488-a35f-4008-ae32-031b1055fdaa",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C36",
+      "claim": "Significant information contents are carried by the superb sparse strong responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The decoding results revealed that significant information contents are indeed carried by the superb sparse strong responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from decoding analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "f9618b11-4b3a-4e84-b4e2-50b209c15035",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C37",
+      "claim": "This study provides the first direct measurement of population sparseness from V1 of awake macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we provided the first direct measurement of population sparseness from V1 of awake macaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of novelty of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "1ecba652-a916-4b0b-95e2-084c0f18cf7a",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C38",
+      "claim": "This study provides the first simultaneous recording of a large dense population of neurons in V1 at single-cell resolution in response to a large set of natural stimuli, using 2P imaging in awake macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, this study provides the first simultaneous recording of a large dense population of neurons in V1 at single-cell resolution in response to a large set of natural stimuli, using 2P imaging in awake macaque.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of novelty of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "16471a8d-4320-4530-8d85-56a85d2c0425",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C39",
+      "claim": "Earlier studies had provided life-time sparseness measurements in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies had provided life-time sparseness measurements in rodents (Hrom\u00e1dka et al., 2008; Haider et al., 2010), non-human primates (Rolls and Tovee, 1995; Vinje and Gallant, 2000; Rust and DiCarlo, 2012) and humans (Quiroga et al., 2005), as well as population sparseness measurement in rodents (Froudarakis et al., 2014), but our study provides the first direct measurement of sparseness of large-scale neuronal population responses, carried out in awake macaque monkeys and made possible by large-scale 2P imaging techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "ff83174a-bb4a-443b-b9d9-45fbb81d9758",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C40",
+      "claim": "Earlier studies had provided life-time sparseness measurements in non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies had provided life-time sparseness measurements in rodents (Hrom\u00e1dka et al., 2008; Haider et al., 2010), non-human primates (Rolls and Tovee, 1995; Vinje and Gallant, 2000; Rust and DiCarlo, 2012) and humans (Quiroga et al., 2005), as well as population sparseness measurement in rodents (Froudarakis et al., 2014), but our study provides the first direct measurement of sparseness of large-scale neuronal population responses, carried out in awake macaque monkeys and made possible by large-scale 2P imaging techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "29163794-8953-417a-92d6-d5e612e6909c",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C41",
+      "claim": "Earlier studies had provided life-time sparseness measurements in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies had provided life-time sparseness measurements in rodents (Hrom\u00e1dka et al., 2008; Haider et al., 2010), non-human primates (Rolls and Tovee, 1995; Vinje and Gallant, 2000; Rust and DiCarlo, 2012) and humans (Quiroga et al., 2005), as well as population sparseness measurement in rodents (Froudarakis et al., 2014), but our study provides the first direct measurement of sparseness of large-scale neuronal population responses, carried out in awake macaque monkeys and made possible by large-scale 2P imaging techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "b8cc3c85-49f7-476e-a732-a34c078621fc",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C42",
+      "claim": "A very small ensemble of neurons from V1's superficial layer are activated at any one time in response to any given natural image.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a very small ensemble of neurons from V1's superficial layer are activated at any one time in response to any given natural image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "95c30c35-f85a-425f-9aac-54febba0e516",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C43",
+      "claim": "The small ensembles of neural responses provide a surprisingly large amount of information to downstream neurons for the discrimination of complex image patterns in natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using decoding analysis, we showed that the small ensembles of neural responses provide a surprisingly large amount of information to downstream neurons, providing for the discrimination of complex image patterns in natural scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from decoding analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "03cd9a4c-7521-42c0-8dbf-b94c0feed627",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C44",
+      "claim": "Direct measurements of population sparseness are indeed comparable to life-time sparseness measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time, we have shown that direct measurements of population sparseness are indeed comparable to life-time sparseness measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of two types of measurements from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "dbd52fd4-819c-4504-a24f-cc9a076663f4",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C45",
+      "claim": "The level of sparseness observed (0.5% at half maximal response) was considerably higher than that predicted by earlier life-time estimates of sparseness based on single unit recording in macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the level of sparseness that we observed (0.5% at half maximal response) was considerably higher than that predicted by the earlier life-time estimates of sparseness, which were based on single unit recording in macaques (Rust and DiCarlo, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior work cited",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "8858271a-7e04-4598-b93f-e6d730dfc0e8",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C46",
+      "claim": "Studies on rodents have yielded a considerable range of estimates of sparseness that vary across measurement techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on rodents have yielded a considerable range of estimates of sparseness that vary across measurement techniques (Haider et al., 2010; Hrom\u00e1dka et al., 2008; Froudarakis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "c43afa90-a9b6-4f5d-890f-bf10148bd2b8",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C47",
+      "claim": "A single-unit study using the cell-attached patch technique showed that neurons were mostly silent in the awake auditory cortex, inferring that less than 2% of the neuronal population showed 'well-driven' responses (>20 Hz response frequency) to natural sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-unit study that used the cell-attached patch technique might have been the most accurate to date (Hrom\u00e1dka et al., 2008), and it showed that neurons were mostly silent in the awake auditory cortex, inferring that less than 2% of the neuronal population showed 'well-driven' responses (>20 Hz response frequency) to natural sounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hrom\u00e1dka et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "704cec84-5bfc-444b-8f86-111d5c75da54",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C48",
+      "claim": "Neurons in the superficial layers of V1 are densely packed and have small cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our imaging shows that neurons in the superficial layers of V1 are densely packed and have small cell bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "661703ce-617a-4f95-8535-02400b0dd064",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C49",
+      "claim": "It may not be possible to obtain stable and well isolated single-unit signals over several hours using extracellular recording methods in superficial V1 layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it may not be possible to obtain stable and well isolated single-unit signals over several hours using extracellular recording methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation of dense packing and small cell bodies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "1ae5729f-6c8c-431f-b484-8d69ff547b8e",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C50",
+      "claim": "The study has reduced the biases inherent to previous extracellular recording studies in neuronal sampling, stimulus sampling, and single-cell isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study has reduced the biases inherent to previous extracellular recording studies \u2014 in neuronal sampling, in stimulus sampling, and in single-cell isolation \u2014 by invoking a response in virtually all of the neurons in a single field of view and in a particular layer by using a large set of natural stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of methodology with prior approaches",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "1d4ee73a-b433-487c-93cd-222516ea6c6c",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C51",
+      "claim": "The high degree of population sparseness observed is consistent with the conjecture that fewer than 1% of the neurons should be substantially active concurrently in any brain area based on metabolic costs of spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "The high degree of population sparseness that we observed is consistent with two recent conjectures from theoretical neuroscience. First, based on the metabolic costs of spiking, one group posits that fewer than 1% of the neurons should be substantially active concurrently in any brain area (Lennie, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with theoretical prediction cited",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "0997dbaf-6ab2-4441-bc6a-2c81c65a4867",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C52",
+      "claim": "Theoretical sparse-coding studies have suggested that because V1 neurons are at least 200 times more abundant than their thalamic input, V1 neurons could be quite specialized in their feature selectivity and thus highly sparse in their population responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, and more importantly, theoretical sparse-coding studies have suggested that because V1 neurons are at least 200 times more abundant than their thalamic input, V1 neurons could be quite specialized in their feature selectivity and thus highly sparse in their population responses (Olshausen, 2013; Rehn and Sommer, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "e66c2430-37b3-427d-a53e-2498ea80fc26",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C53",
+      "claim": "V1 neurons in the superficial layers are tuned to complex patterns with a great degree of specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have indeed observed this very finding using 2P imaging techniques in the V1 superficial layers (Tang et al., 2018). These findings are reminiscent of the highly specific codes exhibited by neurons in the human medial temporal lobes (Quiroga et al., 2005), suggesting that many V1 neurons might be akin to highly specific 'grandmother neurons', although they may encode information in the form of an extremely sparse population code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tang et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "3f7748e0-148d-467f-b8d3-2613db81be38",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C54",
+      "claim": "Many V1 neurons might be akin to highly specific 'grandmother neurons', although they may encode information in the form of an extremely sparse population code.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are reminiscent of the highly specific codes exhibited by neurons in the human medial temporal lobes (Quiroga et al., 2005), suggesting that many V1 neurons might be akin to highly specific 'grandmother neurons', although they may encode information in the form of an extremely sparse population code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on comparison with cited work",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "3c2c72d8-6bbd-4a05-9924-0e5314f72831",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C55",
+      "claim": "The observed high degree of population sparseness and life-time sparseness are consistent with earlier observations that V1 neurons in this layer were tuned to complex patterns with a great degree of specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed high degree of population sparseness and life-time sparseness are also consistent with our earlier observation that V1 neurons in this layer were tuned to complex patterns with a great degree of specificity (Tang et al., 2018, see also Hegd\u00e9 and Van Essen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "37005a39-f5c0-4303-8edd-2cf2593f4df2",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C56",
+      "claim": "These findings reveal the complexity and specificity of feature selectivity and the super-sparse neural representation within a V1 hypercolumn.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal the complexity and specificity of feature selectivity and the super-sparse neural representation within a V1 hypercolumn, providing new understanding of the neural codes in the macaque primary visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "04c2440f-803f-45f5-8db2-0125a9baadbc",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C57",
+      "claim": "All experimental protocols were approved by the Peking University Animal Care and Use Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental protocols were approved by the Peking University Animal Care and Use Committee, and approved by the Peking University Animal Care and Use Committee (LSC-TangSM-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "9df07a4d-8c25-4557-961d-ee562c8dc501",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C58",
+      "claim": "The study used two adult rhesus monkeys (A and B), who were 4 and 5 years of age and weighed 5 and 7 kg, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The study used two adult rhesus monkeys (A and B), who were 4 and 5 years of age and weighed 5 and 7 kg, respectively (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental subjects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "b78e7fc7-3299-47cb-a055-d800507c5dca",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C59",
+      "claim": "AAV1.hSynap.GCaMP5G.WPRE.SV40 was pressure-injected at a depth of ~500 \u03bcm into the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The dura was opened to expose the cortex, into which 50\u2013100 nl AAV1.hSynap.GCaMP5G.WPRE.SV40 (AV-1-PV2478, titer 2.37e13 (GC/ml), Penn Vector Core) was pressure-injected at a depth of ~500 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "17d3e0da-0347-4bab-8846-d3f0f91bacbc",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C60",
+      "claim": "The monkeys' fixation during stimulus presentation was stable and accurate, with standard deviations smaller than 0.05\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The monkeys' fixation during stimulus presentation (from 1 to 2 s in the graph) was stable and accurate. The distribution of eye positions during stimulus presentation, with standard deviations smaller than 0.05\u00b0, was significantly smaller than the typical receptive field sizes (ranging from 0.2\u00b0 to 0.8\u00b0) of neurons at 3\u20135\u00b0 eccentricities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measurement of eye position during experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "2e10a644-c2c6-40d1-94e0-70dfa692445b",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C61",
+      "claim": "There were no statistically significant differences in the distribution of eye position data in weak responses, sparse strong responses, and dense responses classes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no statistically significant differences in the distribution of eye position data in these three classes (Tang et al., 2018), indicating that the observed effects were not caused by movement differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of eye movement data cited",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "8c029f7e-c7c0-4fed-ac9c-7b76dd3a3905",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C62",
+      "claim": "The observed effects were not caused by eye movement differences.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no statistically significant differences in the distribution of eye position data in these three classes (Tang et al., 2018), indicating that the observed effects were not caused by movement differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from statistical analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "5028d05f-ad1e-42d3-9fdd-069960bf0915",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C63",
+      "claim": "The sparse population responses were repeatedly evoked by stimuli, and not by random eye-movement jitters.",
+      "claim_type": "EXPLICIT",
+      "source": "The ROC and decoding analysis (Figure 1\u2014figure supplement 2), demonstrating the reliability of the neural responses across trials, confirm that the sparse population responses were repeatedly evoked by stimuli, and not by random eye-movement jitters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion from ROC and decoding analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "75fae700-c86c-4852-b52f-e471673a429e",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C64",
+      "claim": "The wavelength of the laser was set at 1000 nm for two-photon imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The wavelength of the laser was set at 1000 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "6bdb0dcb-c2aa-47a1-a75f-a36dd6a87871",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C65",
+      "claim": "An area of 850 \u03bcm \u00d7 850 \u03bcm was imaged with a 16 \u00d7 objective.",
+      "claim_type": "EXPLICIT",
+      "source": "With a 16 \u00d7 objective (0.8 N.A., Nikon), an area of 850 \u03bcm \u00d7 850 \u03bcm was imaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "5bc52cce-4b6a-4587-a0c2-93ae10edb456",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C66",
+      "claim": "Infected cells of up to 700 \u03bcm in depth were imaged.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected cells of up to 700 \u03bcm in depth were imaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "803e3d7f-88a2-4575-8a51-92d2fdbe8819",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C67",
+      "claim": "The study primarily focused on cells that were 160 \u03bcm to 180 \u03bcm deep, which included a high density of infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We primarily focused on cells that were 160 \u03bcm to 180 \u03bcm deep, which included a high density of infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental focus",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "f4638f4f-8c54-429d-a9ee-02976c42c29a",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C68",
+      "claim": "The cell density was high in superficial V1, and many cell bodies were quite dim at rest.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell density was high in superficial V1, and many cell bodies were quite dim at rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from imaging",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "672bd930-f694-4745-b4f0-fdb30eee6f01",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C69",
+      "claim": "It was difficult to identify cells directly by eye or by algorithm on the basis of their morphology as captured in static images.",
+      "claim_type": "EXPLICIT",
+      "source": "It was difficult to identify these cells directly by eye or by algorithm on the basis of their morphology as captured in static images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological challenge",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "cfb843c5-3510-4808-b884-6f20293de6e7",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C70",
+      "claim": "ROIs for cell bodies were identified on the basis of their responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore identified ROIs for cell bodies on the basis of their responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "7b691299-a12a-45be-ba3c-090ee39cf150",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C71",
+      "claim": "More than 96% of neurons adhered to the null hypothesis (p<0.01) in the ROC analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "With this ROC analysis, we found >96% neurons that adhered to the null hypothesis (p<0.01) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "82fe2243-c341-4ce6-9ec1-39051f974397",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C72",
+      "claim": "A nearest centroid classifier was used to discriminate the 2250 images on the basis of the population responses in each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a nearest centroid classifier to discriminate the 2250 images on the basis of the population responses in each trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of analysis method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "78286e8f-7095-4f69-b5c9-32974f306489",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C73",
+      "claim": "The study provides the first direct measure of the population sparseness in awake primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we employ large-scale two-photon calcium imaging to examine the responses of a large population of neurons within the superficial layers of area V1 with single-cell resolution, while simultaneously presenting a large set of natural visual stimuli, to provide the first direct measure of the population sparseness in awake primates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of study's contribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "c2f5bc00-f344-478b-8411-7cc9b16b49ed",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C74",
+      "claim": "Only 0.5% of neurons respond strongly to any given natural image.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that only 0.5% of neurons respond strongly to any given natural image \u2014 indicating a ten-fold increase in the inferred sparseness over previous measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main finding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "d6fd6d1f-373a-43ca-ac4e-ff7c6ebee81f",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C75",
+      "claim": "The observed sparseness indicates a ten-fold increase in the inferred sparseness over previous measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that only 0.5% of neurons respond strongly to any given natural image \u2014 indicating a ten-fold increase in the inferred sparseness over previous measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior work",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "0475ff32-62ad-4f69-874e-04422df9e0c2",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C76",
+      "claim": "These population activities are necessary and sufficient to discriminate visual stimuli with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "These population activities are nevertheless necessary and sufficient to discriminate visual stimuli with high accuracy, suggesting that the neural code in the primary visual cortex is both super-sparse and highly efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from decoding analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "e37b625f-24d2-4bde-a55a-de5798412393",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "claim_id": "C77",
+      "claim": "The neural code in the primary visual cortex is both super-sparse and highly efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "These population activities are nevertheless necessary and sufficient to discriminate visual stimuli with high accuracy, suggesting that the neural code in the primary visual cortex is both super-sparse and highly efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "46799e1f-ed9f-47db-b07b-bbe335545283",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The efficient-coding hypothesis predicts sparse neuronal population responses. Prior experimental evidence comes primarily from single-unit recordings measuring life-time sparseness, with the first direct population sparseness measurement performed using two-photon GCaMP6 imaging in rodents, though GCaMP6 saturates above 60-80 Hz, potentially underestimating sparseness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 accurately summarize the theoretical background and prior work on sparse coding. The citations provided (Barlow 1981, Olshausen and Field 1996, Haider et al. 2010, Hrom\u00e1dka et al. 2008, Rust and DiCarlo 2012, Vinje and Gallant 2000, Froudarakis et al. 2014, Chen et al. 2013) are appropriate and the characterization of GCaMP6 saturation is well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "ab7ff1f5-9616-4336-9142-90b67d79e520",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "This study provides the first direct measurement of population sparseness in awake macaque V1 using two-photon GCaMP5 imaging, which exhibits linear non-saturating responses across 10-150 Hz. The study recorded responses from ~1000 neurons in layer 2 of V1 (with receptive fields at 3-5\u00b0 eccentricity) to 2250 natural images in two awake macaques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C37-C38, and C73 establish the methodological advance and novelty of the study. The use of GCaMP5 over GCaMP6 addresses the saturation issue identified in prior work (C4), and the experimental design is clearly described with appropriate sample sizes. The claim of being 'first' is supported by the literature review showing no prior direct population measurements in awake macaques.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "31c293d3-8c08-4f56-9d25-766f26bb6a20",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Natural images evoked robust but highly sparse responses in V1 layer 2 neurons. Only ~0.5% of neurons (6.0/1225 for monkey A; 4.1/982 for monkey B) responded above half-maximum to any given image, though most neurons responded strongly to at least one image. The rank-ordered population response distributions were sharply peaked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16, C42, and C74 present the core finding on population sparseness with clear quantitative measurements. The data are supported by figures showing calcium imaging responses and population distributions. The measurements are internally consistent across both monkeys, and the ROC analysis (C71) confirms response reliability (p<0.01 for >96% of neurons), ruling out spurious responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "1bd9de92-9fe2-4431-aaf3-2d112c4ced67",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual neurons showed high stimulus specificity (life-time sparseness), responding strongly to only ~0.5% of images (11/2250 for monkey A; 9.3/2250 for monkey B). Preferred images for individual neurons often shared common features, and high life-time sparseness correlated with heightened population sparseness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 demonstrate that life-time sparseness matches population sparseness, a key theoretical prediction. The specific examples (neuron 653, neuron 949) provide concrete illustrations, and the quantitative measurements are consistent with the population sparseness findings. The correlation between life-time and population sparseness (C22) is a logical inference from the data showing both measures at ~0.5%.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "6d9d8d91-518b-419a-967f-bcd9ae005719",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Decoding analysis showed that the top 0.5% of strongest responses were both necessary and sufficient to achieve 50% of maximum decoding performance (28% accuracy for monkey A, 21% for monkey B, compared to maximum of 54% and 38% respectively, with chance at 0.04%). This demonstrates that sparse strong responses carry significant information content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28, C30, and C36 present a well-designed decoding analysis using a nearest centroid classifier with 3-fold cross-validation. The finding that 0.5% of responses achieve 50% of maximum performance is striking and well-supported by Figure 3. The methodology is appropriate for the 2250-way classification task, and the results are consistent across both monkeys.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "97f2b173-675a-43ac-8439-958f0c6fc11e",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Removing the top 0.5% of responses reduced decoding performance by 50%, while achieving 99% of maximum performance required the top 40% (monkey A) or 30% (monkey B) of responses. Without the top 5% of responses, decoding performance dropped to near zero, indicating that weaker signals are necessary for full performance but the strongest 5% are insufficient alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 provide complementary decoding results showing both necessity and insufficiency of different response percentages. The analysis is rigorous, using both 'top only' and 'top excluded' conditions. The findings reveal a nuanced picture: sparse strong responses are critical but not sufficient for full decoding, requiring integration with weaker signals. This is well-supported by Figure 3's red and blue curves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "04431e73-8398-477a-a932-1ac8d560a045",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "This study demonstrates that direct population sparseness measurements are comparable to life-time sparseness measurements. However, the observed sparseness (0.5% at half-maximal response) is considerably higher (10-fold) than earlier life-time estimates from single-unit recordings in macaques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41, C44-C45 appropriately contextualize the findings relative to prior work. The comparison with Rust and DiCarlo (2012) is valid, and the 10-fold difference is clearly stated. The claim that population and life-time sparseness are comparable is supported by the data showing both at ~0.5%. The higher sparseness than previous estimates is attributed to methodological advantages (C50), which is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "f6b67796-2441-4454-9dc6-724af1a9b63b",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study addresses limitations of prior extracellular recording methods. Neurons in superficial V1 are densely packed with small cell bodies, making stable single-unit isolation difficult. This study reduced sampling biases by recording virtually all neurons in a field of view using a large stimulus set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 provide important methodological context. The observation about dense packing and small cell bodies (C48) is supported by the imaging data. The inference about difficulty of extracellular recording (C49) is reasonable given the anatomical constraints. The claim of reduced bias (C50) is justified by the comprehensive sampling approach, though some selection bias remains (only layer 2, only expressing neurons).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "03a8411d-23f4-444f-b26a-3a1ff4daa971",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The observed high population sparseness is consistent with theoretical predictions based on metabolic costs (<1% concurrent activity) and sparse-coding theory (V1 neurons 200\u00d7 more abundant than thalamic input should be highly specialized). The findings align with prior observations that V1 superficial layer neurons are tuned to complex patterns with high specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C55 appropriately connect the empirical findings to theoretical frameworks. The citations to Lennie (2003), Olshausen (2013), Rehn and Sommer (2007), Tang et al. (2018), and Hegd\u00e9 and Van Essen (2007) are appropriate. The consistency between observation and theory strengthens the interpretation, though this remains correlational rather than causal evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "cb775c51-c2cd-4d38-b5e5-234dd0abb7af",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings suggest V1 neurons might be akin to 'grandmother neurons' encoding information in an extremely sparse population code. This reveals complexity and specificity of feature selectivity and super-sparse neural representation within a V1 hypercolumn, suggesting the neural code is both super-sparse and highly efficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54, C56, and C77 make strong interpretive statements that go beyond the data. The 'grandmother neuron' analogy (C54) is explicitly speculative ('might be akin to'). While the data show high sparseness and good decoding performance, claiming neurons are 'grandmother neurons' or that the code is 'highly efficient' requires additional evidence about information capacity, metabolic costs, and behavioral relevance not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "2135f639-c892-4eb9-9b3d-59d2359efc1a",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The small ensembles of sparse neural responses provide sufficient information for discriminating complex image patterns in natural scenes with high accuracy, demonstrating that these population activities are necessary and sufficient for visual discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C76 are supported by the decoding analysis showing that sparse responses achieve substantial discrimination accuracy (28% and 21% from top 0.5%, compared to chance of 0.04%). However, 'high accuracy' is relative\u2014the maximum achievable accuracy was only 54% and 38%, suggesting significant information loss or noise. The claim of 'necessary and sufficient' is supported for 50% performance but not for full performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used appropriate animal protocols (approved by Peking University) with two adult rhesus monkeys. Eye fixation was stable (SD <0.05\u00b0, smaller than RF sizes of 0.2-0.8\u00b0), with no significant differences in eye position across response classes, confirming that sparse responses were stimulus-driven rather than due to eye movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 establish proper experimental controls. The eye movement analysis is critical for validating that sparse responses reflect genuine stimulus selectivity rather than fixation artifacts. The statistical analysis (C61) and ROC/decoding validation (C63) provide converging evidence. The small fixation SD relative to RF size is convincing, though micro-saccades within the fixation window could still contribute to response variability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Two-photon imaging was performed at 1000 nm wavelength over 850\u00d7850 \u03bcm areas, focusing on cells at 160-180 \u03bcm depth. Due to high cell density and dim resting fluorescence, ROIs were identified based on responses rather than morphology. ROC analysis confirmed >96% of neurons showed reliable responses (p<0.01). Decoding used a nearest centroid classifier with 3-fold cross-validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C72 provide essential methodological details. The response-based ROI identification (C70) is justified given the imaging challenges (C68-C69), though this could introduce bias toward more responsive neurons. The ROC validation (C71) is rigorous and addresses concerns about spurious responses. The decoding methodology (C72) is appropriate and well-described. Overall, the methods are sound though some details about ROI selection criteria could affect generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    },
+    {
+      "id": "13753032-3fba-4f66-878b-c01c8106e4dd",
+      "content_id": "9908b45e-4e14-4401-85d1-df640621f3b0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The observed sparseness represents a ten-fold increase over previous measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 states a 10-fold increase in sparseness, but this comparison is problematic. The study measures population sparseness (0.5%) while most prior work measured life-time sparseness using different methods and metrics. The comparison with Rust and DiCarlo (2012) mentioned in C45 is not quantitatively detailed enough to verify the '10-fold' claim. Different sparseness measures and thresholds make direct numerical comparisons difficult.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:22:44.301505Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e07c88a4-a78d-4ebd-8e3a-45a648470961",
+      "result_id": "46799e1f-ed9f-47db-b07b-bbe335545283"
+    },
+    {
+      "claim_id": "f530a0a9-7253-4229-b6ba-ff7b7886c420",
+      "result_id": "46799e1f-ed9f-47db-b07b-bbe335545283"
+    },
+    {
+      "claim_id": "b1d92620-f302-4beb-8349-aa5e45c652f7",
+      "result_id": "46799e1f-ed9f-47db-b07b-bbe335545283"
+    },
+    {
+      "claim_id": "41831a9f-4db3-4289-820c-7665d74cecf1",
+      "result_id": "46799e1f-ed9f-47db-b07b-bbe335545283"
+    },
+    {
+      "claim_id": "0907bf37-a4f9-4eae-8f02-77583aac4aff",
+      "result_id": "ab7ff1f5-9616-4336-9142-90b67d79e520"
+    },
+    {
+      "claim_id": "45dc9557-8254-482b-ba7f-af5c8ce34dd9",
+      "result_id": "ab7ff1f5-9616-4336-9142-90b67d79e520"
+    },
+    {
+      "claim_id": "53799e39-1f02-4ef5-9178-3e8e50cc6515",
+      "result_id": "ab7ff1f5-9616-4336-9142-90b67d79e520"
+    },
+    {
+      "claim_id": "f9618b11-4b3a-4e84-b4e2-50b209c15035",
+      "result_id": "ab7ff1f5-9616-4336-9142-90b67d79e520"
+    },
+    {
+      "claim_id": "1ecba652-a916-4b0b-95e2-084c0f18cf7a",
+      "result_id": "ab7ff1f5-9616-4336-9142-90b67d79e520"
+    },
+    {
+      "claim_id": "78286e8f-7095-4f69-b5c9-32974f306489",
+      "result_id": "ab7ff1f5-9616-4336-9142-90b67d79e520"
+    },
+    {
+      "claim_id": "82477d69-05ed-4abc-a52d-a3f8f9b3ebe3",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "6145bc36-6e74-4a20-b7a1-6a823887d665",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "8f9a3483-bc3d-4994-9511-ee99cc5c2efc",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "db6193c9-a0e1-4825-a247-da0f459cbb88",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "79e1de7c-2c51-4e0b-820d-c9adbb7a2f27",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "35869c59-c366-4a45-8542-edc333c8859a",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "b39e6703-b674-44ab-9521-ad3e29bfab64",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "366e2311-bbe4-4f64-92b2-678faba3dbeb",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "f8bcac1c-89a9-45b1-bf40-9bef57ae29f5",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "b8cc3c85-49f7-476e-a732-a34c078621fc",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "c2f5bc00-f344-478b-8411-7cc9b16b49ed",
+      "result_id": "31c293d3-8c08-4f56-9d25-766f26bb6a20"
+    },
+    {
+      "claim_id": "b44e373c-462f-4cfe-bd62-3db3b13af0a6",
+      "result_id": "1bd9de92-9fe2-4431-aaf3-2d112c4ced67"
+    },
+    {
+      "claim_id": "6420ce8c-44b8-4d13-9516-225c62cc32dd",
+      "result_id": "1bd9de92-9fe2-4431-aaf3-2d112c4ced67"
+    },
+    {
+      "claim_id": "42685961-12b2-4fd7-9050-f7bd8e0138b8",
+      "result_id": "1bd9de92-9fe2-4431-aaf3-2d112c4ced67"
+    },
+    {
+      "claim_id": "f869a7ef-eaaa-47cf-ba74-d22ce40aac82",
+      "result_id": "1bd9de92-9fe2-4431-aaf3-2d112c4ced67"
+    },
+    {
+      "claim_id": "1bca40d4-2c81-4042-b1d6-7beff248ba11",
+      "result_id": "1bd9de92-9fe2-4431-aaf3-2d112c4ced67"
+    },
+    {
+      "claim_id": "26ebbe9b-a1ae-4f2d-9a95-b1a4aa514603",
+      "result_id": "1bd9de92-9fe2-4431-aaf3-2d112c4ced67"
+    },
+    {
+      "claim_id": "488edc0a-7cb1-4f48-b725-0595be1f2bd6",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "88b70368-645d-4c39-b193-d284cff46b75",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "e9e6cebf-f8c0-4755-a195-1fd67f3b9351",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "d60d51a2-70d8-4ceb-8b1a-5f4c1859e04b",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "b0c44afd-db7d-437b-9632-5667330109c7",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "eeac8e2e-62ef-4e5a-9fc1-24bcd9655704",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "c8b5cbff-7110-4770-8039-2de9796f290b",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "12459488-a35f-4008-ae32-031b1055fdaa",
+      "result_id": "6d9d8d91-518b-419a-967f-bcd9ae005719"
+    },
+    {
+      "claim_id": "709e7858-abb8-45da-834d-0212f46697aa",
+      "result_id": "97f2b173-675a-43ac-8439-958f0c6fc11e"
+    },
+    {
+      "claim_id": "75b1a1a3-9bcf-4ca8-b1f7-5472d7240ba7",
+      "result_id": "97f2b173-675a-43ac-8439-958f0c6fc11e"
+    },
+    {
+      "claim_id": "8cf5aec5-b2a1-404a-b0a2-2533a48490d0",
+      "result_id": "97f2b173-675a-43ac-8439-958f0c6fc11e"
+    },
+    {
+      "claim_id": "09a8a180-1b90-4190-b4ce-6133f5eefd9a",
+      "result_id": "97f2b173-675a-43ac-8439-958f0c6fc11e"
+    },
+    {
+      "claim_id": "76de56af-a77a-4e71-b61a-efbb1d54dafe",
+      "result_id": "97f2b173-675a-43ac-8439-958f0c6fc11e"
+    },
+    {
+      "claim_id": "9af8e13d-6354-40a8-b212-5c7098a5906f",
+      "result_id": "97f2b173-675a-43ac-8439-958f0c6fc11e"
+    },
+    {
+      "claim_id": "16471a8d-4320-4530-8d85-56a85d2c0425",
+      "result_id": "04431e73-8398-477a-a932-1ac8d560a045"
+    },
+    {
+      "claim_id": "ff83174a-bb4a-443b-b9d9-45fbb81d9758",
+      "result_id": "04431e73-8398-477a-a932-1ac8d560a045"
+    },
+    {
+      "claim_id": "29163794-8953-417a-92d6-d5e612e6909c",
+      "result_id": "04431e73-8398-477a-a932-1ac8d560a045"
+    },
+    {
+      "claim_id": "03cd9a4c-7521-42c0-8dbf-b94c0feed627",
+      "result_id": "04431e73-8398-477a-a932-1ac8d560a045"
+    },
+    {
+      "claim_id": "dbd52fd4-819c-4504-a24f-cc9a076663f4",
+      "result_id": "04431e73-8398-477a-a932-1ac8d560a045"
+    },
+    {
+      "claim_id": "8858271a-7e04-4598-b93f-e6d730dfc0e8",
+      "result_id": "f6b67796-2441-4454-9dc6-724af1a9b63b"
+    },
+    {
+      "claim_id": "c43afa90-a9b6-4f5d-890f-bf10148bd2b8",
+      "result_id": "f6b67796-2441-4454-9dc6-724af1a9b63b"
+    },
+    {
+      "claim_id": "704cec84-5bfc-444b-8f86-111d5c75da54",
+      "result_id": "f6b67796-2441-4454-9dc6-724af1a9b63b"
+    },
+    {
+      "claim_id": "661703ce-617a-4f95-8535-02400b0dd064",
+      "result_id": "f6b67796-2441-4454-9dc6-724af1a9b63b"
+    },
+    {
+      "claim_id": "1ae5729f-6c8c-431f-b484-8d69ff547b8e",
+      "result_id": "f6b67796-2441-4454-9dc6-724af1a9b63b"
+    },
+    {
+      "claim_id": "1d4ee73a-b433-487c-93cd-222516ea6c6c",
+      "result_id": "03a8411d-23f4-444f-b26a-3a1ff4daa971"
+    },
+    {
+      "claim_id": "0997dbaf-6ab2-4441-bc6a-2c81c65a4867",
+      "result_id": "03a8411d-23f4-444f-b26a-3a1ff4daa971"
+    },
+    {
+      "claim_id": "e66c2430-37b3-427d-a53e-2498ea80fc26",
+      "result_id": "03a8411d-23f4-444f-b26a-3a1ff4daa971"
+    },
+    {
+      "claim_id": "3c2c72d8-6bbd-4a05-9924-0e5314f72831",
+      "result_id": "03a8411d-23f4-444f-b26a-3a1ff4daa971"
+    },
+    {
+      "claim_id": "3f7748e0-148d-467f-b8d3-2613db81be38",
+      "result_id": "cb775c51-c2cd-4d38-b5e5-234dd0abb7af"
+    },
+    {
+      "claim_id": "37005a39-f5c0-4303-8edd-2cf2593f4df2",
+      "result_id": "cb775c51-c2cd-4d38-b5e5-234dd0abb7af"
+    },
+    {
+      "claim_id": "e37b625f-24d2-4bde-a55a-de5798412393",
+      "result_id": "cb775c51-c2cd-4d38-b5e5-234dd0abb7af"
+    },
+    {
+      "claim_id": "95c30c35-f85a-425f-9aac-54febba0e516",
+      "result_id": "2135f639-c892-4eb9-9b3d-59d2359efc1a"
+    },
+    {
+      "claim_id": "0475ff32-62ad-4f69-874e-04422df9e0c2",
+      "result_id": "2135f639-c892-4eb9-9b3d-59d2359efc1a"
+    },
+    {
+      "claim_id": "04c2440f-803f-45f5-8db2-0125a9baadbc",
+      "result_id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b"
+    },
+    {
+      "claim_id": "9df07a4d-8c25-4557-961d-ee562c8dc501",
+      "result_id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b"
+    },
+    {
+      "claim_id": "b78e7fc7-3299-47cb-a055-d800507c5dca",
+      "result_id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b"
+    },
+    {
+      "claim_id": "17d3e0da-0347-4bab-8846-d3f0f91bacbc",
+      "result_id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b"
+    },
+    {
+      "claim_id": "2e10a644-c2c6-40d1-94e0-70dfa692445b",
+      "result_id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b"
+    },
+    {
+      "claim_id": "8c029f7e-c7c0-4fed-ac9c-7b76dd3a3905",
+      "result_id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b"
+    },
+    {
+      "claim_id": "5028d05f-ad1e-42d3-9fdd-069960bf0915",
+      "result_id": "fb37ac98-fd4d-4e8d-a5d9-0f1081c8a14b"
+    },
+    {
+      "claim_id": "75fae700-c86c-4852-b52f-e471673a429e",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "6bdb0dcb-c2aa-47a1-a75f-a36dd6a87871",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "5bc52cce-4b6a-4587-a0c2-93ae10edb456",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "803e3d7f-88a2-4575-8a51-92d2fdbe8819",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "f4638f4f-8c54-429d-a9ee-02976c42c29a",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "672bd930-f694-4745-b4f0-fdb30eee6f01",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "cfb843c5-3510-4808-b884-6f20293de6e7",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "7b691299-a12a-45be-ba3c-090ee39cf150",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "82fe2243-c341-4ce6-9ec1-39051f974397",
+      "result_id": "7c80af12-6e2d-44b9-b461-9791f61ff9cf"
+    },
+    {
+      "claim_id": "d6fd6d1f-373a-43ca-ac4e-ff7c6ebee81f",
+      "result_id": "13753032-3fba-4f66-878b-c01c8106e4dd"
+    }
+  ],
+  "comparisons": []
+}

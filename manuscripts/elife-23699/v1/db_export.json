@@ -1,0 +1,2178 @@
+{
+  "submission": {
+    "id": "60065016-a36a-4fc2-9ab2-1ef1b6818abd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:29:38.769262Z",
+    "updated_at": "2025-12-01T19:29:38.769262Z"
+  },
+  "content": [
+    {
+      "id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "submission_id": "60065016-a36a-4fc2-9ab2-1ef1b6818abd",
+      "content_type": "manuscript",
+      "content_text": "# Evidence from a natural experiment that malaria parasitemia is pathogenic in retinopathy-negative cerebral malaria\n\n## Authors\n\n- Dylan S Small<sup>1</sup> ([ORCID: 0000-0003-4928-2646](https://orcid.org/0000-0003-4928-2646)) \u2020\n- Terrie E Taylor<sup>2</sup>\n- Douglas G Postels<sup>4</sup>\n- Nicholas AV Beare<sup>5</sup>\n- Jing Cheng<sup>7</sup>\n- Ian JC MacCormick<sup>5</sup>\n- Karl B Seydel<sup>2</sup>\n\n### Affiliations\n\n1. Department of Statistics, The Wharton School University of Pennsylvania Philadelphia United States\n2. Department of Osteopathic Medical Specialties, College of Osteopathic Medicine Michigan State University East Lansing United States\n3. Blantyre Malaria Project Blantyre Malawi\n4. Department of Neurology and Ophthalmology, College of Osteopathic Medicine Michigan State University East Lansing United States\n5. Department of Eye and Vision Science University of Liverpool Liverpool United Kingdom\n6. St. Paul\u2019s Eye Unit Royal Liverpool University Hospital Liverpool United Kingdom\n7. Department of Preventive and Restorative Dental Sciences University of California, San Francisco San Francisco United States\n8. Malawi-Liverpool-Wellcome Trust Clinical Research Programme Blantyre Malawi\n\n\u2020 Corresponding author\n\n## Abstract\n\nCerebral malaria (CM) can be classified as retinopathy-positive or retinopathy-negative, based on the presence or absence of characteristic retinal features. While malaria parasites are considered central to the pathogenesis of retinopathy-positive CM, their contribution to retinopathy-negative CM is largely unknown. One theory is that malaria parasites are innocent bystanders in retinopathy-negative CM and the etiology of the coma is entirely non-malarial. Because hospitals in malaria-endemic areas often lack diagnostic facilities to identify non-malarial causes of coma, it has not been possible to evaluate the contribution of malaria infection to retinopathy-negative CM. To overcome this barrier, we studied a natural experiment involving genetically inherited traits, and find evidence that malaria parasitemia does contribute to the pathogenesis of retinopathy-negative CM. A lower bound for the fraction of retinopathy-negative CM that would be prevented if malaria parasitemia were to be eliminated is estimated to be 0.93 (95% confidence interval: 0.68, 1).\n\n## Introduction\n\nCerebral malaria (CM) is responsible for a substantial proportion of the approximately 500,000 annual malaria deaths and 2,000,000 severe malaria cases (WHO, 2014, WHO, 2015). CM is defined by the World Health Organization (WHO) as unarousable coma with circulating malaria (Plasmodium) parasitemia and no known non-malaria causal explanation (WHO, 2000). Based on the presence or absence of malaria-specific retinal changes, CM can be classified as retinopathy-positive (Ret+) or retinopathy-negative (Ret-) (Lewallen et al., 1999; Beare et al., 2006). Ret- CM is a common and devastating condition \u2013 40% of CM cases in our cohort were Ret- and of these, 12% died and 10% developed neurological problems (Table 1). Autopsy data show that children dying of Ret+ CM have a high degree of sequestration of parasitized red blood cells in cerebral vasculature (Taylor et al., 2004), considered the pathological hallmark of CM. The pathogenesis of Ret- CM has been a puzzle, in particular the role of malaria parasitemia (Postels and Birbeck, 2011). In the only autopsy study among children dying with CM, that\u00a0we are aware of\u00a0(\u00a0Taylor et al. (2004)\u00a0with follow-up results in Milner et al. (2015)\u00a0and Barrera et al. (2015)), among children for whom retinopathy was assessed, 41 of 42 children dying with Ret+ CM had substantial cerebral sequestration of parasitized red blood cells in the cerebral microvasculature (defined as\u00a0\u226523% of cerebral capillaries had sequestration) and mostly lacked other identified potential causes of death besides the malaria parasitemia, whereas all 15 children dying with Ret- CM lacked substantial cerebral sequestration (<23% of cerebral capillaries had sequestration) and mostly had non-malarial etiologies of death (see Appendix 1 for causes of death); these numbers update those in Taylor et al. (2004) to include patients enrolled after 2004. Incidental malaria parasitemia is common in people living in areas of high malaria transmission. Therefore, it is possible that at least some children with Ret- CM have a non-malarial etiology of coma and an incidental (asymptomatic) malaria parasitemia. The pathogenesis of Ret-CM is therefore unclear, and the role of malaria parasitemia in the etiology of the acute illness is unknown (Postels and Birbeck, 2011). Our aim of the research presented here was to assess the contribution of acute malaria infection in the pathophysiology of Ret- CM.\n\n**Table 1.**\n Characteristics of study participants at admission, Means\u00a0\u00b1\u00a0SD for continuous variables. The proportions of missing data are shown in Appendix 1. There are 3704 community controls, but their characteristics are not shown because only their genotypes and not their clinical characteristics were collected. Bold denotes p-value less than 0.05.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Retinopathy Positive CM</th>\n      <th>Retinopathy Negative CM</th>\n      <th>Non-Malaria Hospital Controls</th>\n      <th>p-value, Ret + vs. Ret -</th>\n      <th>p-value, Ret + vs. Controls</th>\n      <th>p-value, Ret \u2013 vs. Controls</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of participants</td>\n      <td>438</td>\n      <td>288</td>\n      <td>204</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Female</td>\n      <td>50%</td>\n      <td>52%</td>\n      <td>43%</td>\n      <td>0.54</td>\n      <td>0.11</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>Age (months)</td>\n      <td>40\u00a0\u00b1\u00a026</td>\n      <td>44\u00a0\u00b1\u00a030</td>\n      <td>46\u00a0\u00b1\u00a030</td>\n      <td>0.10</td>\n      <td>0.05</td>\n      <td>0.53</td>\n    </tr>\n    <tr>\n      <td>Mid-upper arm circumference (cm)</td>\n      <td>14.9\u00a0\u00b1\u00a01.6</td>\n      <td>15.0\u00a0\u00b1\u00a01.7</td>\n      <td>14.8\u00a0\u00b1\u00a01.8</td>\n      <td>0.72</td>\n      <td>0.53</td>\n      <td>0.39</td>\n    </tr>\n    <tr>\n      <td>Weight (kg)</td>\n      <td>12\u00a0\u00b1\u00a04</td>\n      <td>13\u00a0\u00b1\u00a05</td>\n      <td>13\u00a0\u00b1\u00a06</td>\n      <td>0.37</td>\n      <td>0.29</td>\n      <td>0.74</td>\n    </tr>\n    <tr>\n      <td>Height (cm)</td>\n      <td>90\u00a0\u00b1\u00a016</td>\n      <td>91\u00a0\u00b1\u00a017</td>\n      <td>91\u00a0\u00b1\u00a020</td>\n      <td>0.30</td>\n      <td>0.40</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>Temperature (\u00b0C)</td>\n      <td>38.6\u00a0\u00b1\u00a01.2</td>\n      <td>38.4\u00a0\u00b1\u00a01.4</td>\n      <td>37.7\u00a0\u00b1\u00a01.5</td>\n      <td>0.03</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Febrile (Temperature\u2265 37.5\u00b0C)</td>\n      <td>81%</td>\n      <td>77%</td>\n      <td>56%</td>\n      <td>0.23</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Pulse rate \u2013 beats/minute</td>\n      <td>152\u00a0\u00b1\u00a026</td>\n      <td>148\u00a0\u00b1\u00a024</td>\n      <td>139\u00a0\u00b1\u00a028</td>\n      <td>0.06</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Respiratory rate \u2013 breaths/minute</td>\n      <td>47\u00a0\u00b1\u00a015</td>\n      <td>45\u00a0\u00b1\u00a013</td>\n      <td>45\u00a0\u00b1\u00a015</td>\n      <td>0.12</td>\n      <td>0.17</td>\n      <td>0.93</td>\n    </tr>\n    <tr>\n      <td>Liver size \u2013 cm below costal margin</td>\n      <td>2.0\u00a0\u00b1\u00a01.9</td>\n      <td>1.5\u00a0\u00b1\u00a01.9</td>\n      <td>1.1\u00a0\u00b1\u00a01.7</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n      <td>0.04</td>\n    </tr>\n    <tr>\n      <td>Spleen size \u2013 cm below costal margin</td>\n      <td>1.7\u00a0\u00b1\u00a02.1</td>\n      <td>1.6\u00a0\u00b1\u00a02.1</td>\n      <td>0.9\u00a0\u00b1\u00a01.6</td>\n      <td>0.56</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>Deep breathing</td>\n      <td>33%</td>\n      <td>25%</td>\n      <td>30%</td>\n      <td>0.03</td>\n      <td>0.59</td>\n      <td>0.18</td>\n    </tr>\n    <tr>\n      <td>Blantyre Coma Score: 0 1 2 3 4 5</td>\n      <td>14% 35% 49% 1% 0% 0%</td>\n      <td>19% 38% 43% 0% 0% 0%</td>\n      <td>28% 40% 23% 3% 0% 5%</td>\n      <td>0.01</td>\n      <td>0.08</td>\n      <td>0.90</td>\n    </tr>\n    <tr>\n      <td>CSF opening pressure \u2013 mm of water</td>\n      <td>176\u00a0\u00b1\u00a075</td>\n      <td>152\u00a0\u00b1\u00a082</td>\n      <td>176\u00a0\u00b1\u00a099</td>\n      <td>0.001</td>\n      <td>0.96</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td>Hematocrit -- %</td>\n      <td>19.8\u00a0\u00b1\u00a06.9</td>\n      <td>28.2\u00a0\u00b1\u00a07.5</td>\n      <td>28.1\u00a0\u00b1\u00a09.6</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td>Platelets</td>\n      <td>81,220\u00b1 67,219</td>\n      <td>161,600\u00b1 124,747</td>\n      <td>248,400\u00b1 162,287</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td>Malaria parasitemia \u2013 parasites/mm3</td>\n      <td>230,500\u00b1 321,924</td>\n      <td>180,500\u00b1 280,676</td>\n      <td>3,619\u00b1 28,917</td>\n      <td>0.03</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>White blood cells</td>\n      <td>13,040\u00b1 9163</td>\n      <td>13,020\u00b1 8923</td>\n      <td>13,930\u00b1 9544</td>\n      <td>0.97</td>\n      <td>0.29</td>\n      <td>0.31</td>\n    </tr>\n    <tr>\n      <td>Lactate \u2013 mmol/liter</td>\n      <td>8.6\u00a0\u00b1\u00a05.0</td>\n      <td>7.3\u00a0\u00b1\u00a04.4</td>\n      <td>5.5\u00a0\u00b1\u00a03.9</td>\n      <td>0.05</td>\n      <td>&lt;0.001</td>\n      <td>0.007</td>\n    </tr>\n    <tr>\n      <td>Blood glucose \u2013 mmol/liter</td>\n      <td>6.1\u00a0\u00b1\u00a03.9</td>\n      <td>6.8\u00a0\u00b1\u00a04.4</td>\n      <td>7.6\u00a0\u00b1\u00a05.3</td>\n      <td>0.03</td>\n      <td>&lt;0.001</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>CSF white cell count \u2013 %\u00a0\u2265\u00a05</td>\n      <td>16%</td>\n      <td>20%</td>\n      <td>24%</td>\n      <td>0.31</td>\n      <td>0.06</td>\n      <td>0.37</td>\n    </tr>\n    <tr>\n      <td>Blood culture positive for pathogen</td>\n      <td>4%</td>\n      <td>2%</td>\n      <td>14%</td>\n      <td>0.51</td>\n      <td>&lt;0.001</td>\n      <td>&lt;0.001</td>\n    </tr>\n    <tr>\n      <td>HIV positive</td>\n      <td>18%</td>\n      <td>17%</td>\n      <td>15%</td>\n      <td>0.91</td>\n      <td>0.59</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">Outcomes</td>\n    </tr>\n    <tr>\n      <td>Discharge outcome: Full recovery Neurological Sequalae Died</td>\n      <td>69% 10% 21%</td>\n      <td>78% 10% 12%</td>\n      <td>57% 15% 28%</td>\n      <td>0.003</td>\n      <td>0.01</td>\n      <td>&lt;0.001</td>\n    </tr>\n  </tbody>\n</table>\n\nFigure 1 depicts three possible pathways to clinically-defined (WHO-defined) CM (Postels and Birbeck, 2011). One pathway is to Ret+ CM for which there is evidence that malaria parasites play a primary role. As noted above, at autopsy, Ret+ CM is associated with the sequestration of parasitized red cells in the cerebral microvasculature (Taylor et al., 2004). Compared to children with Ret- CM, those who are Ret+ have increased concentrations of P. falciparum HRP2, a parasite-produced protein reflecting total body parasite burden (Seydel et al., 2012). Ocular funduscopic findings in Ret+ CM mirror the microvascular pathology observed on fluorescein angiography (MacCormick et al., 2015) and are correlated with the severity of sequestration in both the retina and the brain at autopsy (Barrera et al., 2015). Two pathways to Ret- CM, pathway (a) and pathway (b) are depicted in Figure 1. As noted above, in patients dying with Ret- CM, the cerebral microvasculature does not have substantial sequestered parasitized erythrocytes (<23% of cerebral capillaries have sequestration), plasma concentrations of HRP2 are decreased, and a variety of non-malarial causes of death have been identified (Taylor et al., 2004). For Ret- CM, one potential pathway is asymptomatic parasitemia and another illness that is sufficient, in and of itself, to produce coma (pathway (a) in Figure 1). Another potential pathway is parasitemia leading to uncomplicated malaria illness (e.g., fever) combined with a second insult (innate or acquired), resulting in coma (pathway (b) in Figure 1); the two hits (symptomatic malaria+ innate or acquired second factor) result in the clinical syndrome of Ret- CM. A key unanswered question about the pathogenesis of Ret- CM is, are malaria parasites incidental to coma (only pathway (a) exists) or do they play a role in the pathogenesis of Ret- CM (pathway (b) exists) (Bearden, 2012; Postels and Birbeck, 2011)?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23699/elife-23699-fig1-v1.jpg)\n\n**Figure 1.:** There are three potential pathogenetic routes to WHO-defined cerebral malaria (CM). The first,\u00a0shown in red, is the classical pathway: a malaria infection evolves into retinopathy-positive (Ret+) CM. The second and third possibilities produce retinopathy-negative\u00a0(Ret-) CM. In (a) the coma is entirely the result of another etiology and the malaria parasitemia is incidental. In (b), the coma is a product of the interaction between the malaria parasitemia and an additional cause (or causes) of coma. Sickle cell trait is underrepresented in patients with Ret+ and Ret- cerebral malaria (CM) because of the bottleneck at the transition between 'malaria infection' (asymptomatic malaria) and 'malaria disease' (uncomplicated malaria). Blood group O is underrepresented in patients with Ret+ CM, but not in those with Ret- CM. Taken together, the results for sickle cell trait and blood group O suggest that some Ret- CM cases occur through pathway (b) (because sickle cell trait is underrepresented in Ret- CM) and that malaria parasites contribute to the pathogenesis of these cases, and that sickle cell trait reduces the pathogenetic potential of malaria infection for Ret- CM but do not provide evidence that blood group O reduces the pathogenetic potential of malaria infection for Ret- CM.\n\nWhether malaria parasites play a role in the pathogenesis of Ret- CM could in principle be tested by a randomized experiment. For example, Smith (2007) considered a hypothetical blood-stage malaria vaccine that reduces parasite density by 50%; the vaccine would reduce malaria illness but not the incidence of parasitemia. If such a vaccine existed, then a way to test whether malaria parasites are pathogenetic in Ret- CM would be to randomize a large number of children to either (i) the blood-stage vaccine or (ii) placebo. If malaria parasites are never pathogenetic in Ret- CM, then we would expect no difference in Ret- CM because the blood stage vaccine would fail to prevent the cause of the development of the Ret- CM whereas if malaria parasites are sometimes pathogenetic in Ret- CM in a way that requires the development of uncomplicated malaria illness, then the blood stage vaccine would prevent the development of Ret- CM in some cases. Such an experiment is not currently feasible because no blood-stage vaccine has reached a Phase III trial (Miura, 2016) and even if an effective blood-stage vaccine was developed, the experiment would require a huge sample size to have power to detect a change in Ret- CM rates.\n\nThough a randomized experiment with a blood-stage malaria vaccine that would have power to detect a\u00a0difference in Ret- CM rates is not currently feasible, nature provides traits that protect against malaria illness in a random way through genetic inheritance. The general approach of using genetic variation to construct natural experiments is called Mendelian randomization (Smith and Ebrahim, 2003). The sickle cell trait (HbAS) \u2013 inheritance of one abnormal allele of the betaglobin gene \u2013 protects against symptomatic malaria (Modiano et al., 2001; Taylor et al., 2012; Williams et al., 2005; Willcox et al., 1983). Thus, a person who inherits one abnormal allele of the betaglobin gene has an antimalarial biochemical protection provided by nature. A second inherited trait which affects susceptibility to malaria illness is blood group O (BGO), which protects against CM compared to groups A, B or AB (Cserti and Dzik, 2007; Malaria Genomic Epidemiology Network, 2014). Analogous to the randomized trial described above, possession vs. lack of a malaria protective trait assigns children to an arm in which some malaria illness is prevented vs. not prevented. For possession vs. lack of a trait to be fully analogous to the blood stage vaccine randomized trial described above, possession of the trait cannot affect malaria parasitemia incidence just like assignment to the blood-stage vaccine arm in the randomized trial does not affect malaria parasitemia incidence. If the trait affects malaria parasitemia incidence, then it could decrease the Ret- CM rate not because it decreases coma but because the WHO definition of Ret- CM requires malaria parasitemia; the natural experiment induced by the trait would then be biased for assessing the effect of the trait on coma in the same way that a randomized trial is biased if the treatment could affect the measurement of the outcome (WHO-defined Ret- CM) without affecting the true outcome of interest (coma without malarial retinopathy). For both BGO and HbAS, it is plausible that the traits do not protect against malaria parasitemia incidence as systematic reviews have not found consistent evidence for protection (Uneke, 2007; Taylor et al., 2012); we will assume no protection for our main analysis but do sensitivity analyses that allow for protection. Under the assumptions that a trait does not affect malaria parasitemia incidence and the trait is randomly assigned, then if the trait decreases the probability of developing both Ret+ and Ret- CM, this suggests that malaria parasites contribute to the pathogenesis of both conditions. If the trait decreases the probability of developing Ret+ CM but not Ret- CM, this would suggest that malaria parasites are pathogenetic for Ret+ CM but are either not pathogenetic for Ret-CM or the trait affects an aspect of disease not causal to the development of Ret- CM.\n\n## Results\n\nUsing data gathered from 1996 to 2007 in a study of CM pathogenesis in Blantyre, Malawi (Taylor et al., 2004; Seydel et al., 2015) as well as the MalariaGEN consortium (Malaria Genomic Epidemiology Network, 2008), we compared children with CM to two types of controls \u2013 (1) community controls; (2) hospital controls, children who were admitted to the Paediatric Research Ward with a known non-malarial cause of illness \u2013 meningitis, non-malarial anemia or other non-malaria illness. Table 1 shows admission characteristics of the hospitalized participants. The Blantyre coma score is statistically significantly higher in Ret+ CM patients than Ret- CM patients, but we do not regard the difference as clinically significant. In general, the patients with Ret+ CM were more severely ill than those with Ret- CM (higher lactate, more deep breathing and a higher chance of death). The malaria illness is more severe in Ret+ CM than Ret- CM patients (lower platelet count and more anemia). The higher opening CSF pressures in Ret+ CM patients compared to Ret- CM patients suggests a higher proportion of Ret+CM patients have increased brain volume. Comparing CM cases to non-malaria controls, as expected, laboratory abnormalities associated with malaria infection (e.g. low hematocrit and platelet count) were more frequent in the CM cases.\n\nFor each trait t (t=HBAS or blood group O (BGO)), we test the null hypothesis ($H_{0}^{t}$) that the trait frequency is the same in controls and true Ret- CM cases vs. the alternative hypothesis ($H_{a}^{t}$) that the trait frequency is higher in controls than true Ret- CM cases. Here, true Ret- CM refers to Ret- CM measured without error; in the actual data, retinopathy status may be measured with error and this measurement error is taken into account in the inferences (Materials\u00a0and\u00a0methods). Under a model in which the trait does not affect other potential contributors to Ret- CM besides malaria and does not affect which CM cases are admitted to the Paedeatric Research Ward (as compared to dying before reaching the Ward or recovering before being referred to the Ward), the null hypothesis $H_{0}^{t}$ implies that malaria parasitemia is an incidental finding in children with Ret- CM and/or the trait affects an aspect of disease not causal to development of Ret- CM, while the alternative hypothesis $H_{a}^{t}$\u00a0implies that malaria parasitemia is necessary for some Ret- CM cases and the trait reduces the pathogenetic potential of malaria infection for Ret- CM. Note that if either $H_{0}^{HbAS}$ or $H_{0}^{BGO}$\u00a0is false, this implies that malaria parasitemia plays a pathogenetic role in at least some Ret- CM cases.\n\nWe calculated HbAS and BGO proportions in study subjects and made inferences about odds ratios (Table 2) and tested H0HbASand H0BGO. For both HbAS and BGO, non-malaria hospitalized controls did not differ from community controls (HbAS p-value=0.86; BGO p-value=0.83); therefore, subsequent analyses combined the control groups. Controls had a higher proportion of HbAS than true Ret- CM patients (odds ratio: 14.33, 95% CI: 3.21, 257.24) and true Ret+ CM patients (odds ratio: 1223.22, 95% CI: 9.87,\u221e). For BGO, the controls were comparable to true Ret- CM patients (odds ratio: 1.03, 95% CI: 0.83, 1.29) but higher than true Ret+ CM patients (odds ratio: 1.23, 95% CI: 1.01, 1.50). There is strong evidence to reject H0HbAS(p-value<0.0001) but not H0BGO (p-value=0.79); these results are insensitive to different plausible assumptions about the false discovery rate and false omission rate for malarial retinopathy (Appendix 1). Taken together, these tests suggest that malaria parasitemia is pathogenic for a proportion of Ret- CM cases. Sickle cell trait protects against Ret- CM, but blood group O does not.\n\n**Table 2.**\n The top panel displays sickle cell trait (HbAS) proportions in retinopathy-positive (Ret+) cerebral malaria (CM), retinopathy-negative (Ret-) CM and control groups. The bottom panel displays ABO blood group gene proportions in Ret+ CM, Ret- CM and control groups. The last two rows of each panel display the odds ratios comparing controls to true Ret+ and true Ret- CM groups, which account for the fact that there is measurement error in observed retinopathy status (false discovery rate\u00a0=\u00a00.07 and false omission rate\u00a0=\u00a00.05).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Ret+ CM</th>\n      <th>Ret- CM</th>\n      <th>Non-malaria hospital controls</th>\n      <th>Community controls</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sample size</td>\n      <td>438</td>\n      <td>287</td>\n      <td>192</td>\n      <td>3657</td>\n    </tr>\n    <tr>\n      <td>HbAS*</td>\n      <td>0</td>\n      <td>1</td>\n      <td>8</td>\n      <td>175</td>\n    </tr>\n    <tr>\n      <td>HbAA</td>\n      <td>437</td>\n      <td>286</td>\n      <td>184</td>\n      <td>3482</td>\n    </tr>\n    <tr>\n      <td>Proportion of HbAS</td>\n      <td>0</td>\n      <td>.003</td>\n      <td>.042</td>\n      <td>.048</td>\n    </tr>\n  </tbody>\n</table>\n\n_* HbAS (sickle cell trait) means that that the person has one normal and one abnormal copy of the hemoglobin beta gene. HbAA means the person has two normal copies of the hemoglobin beta gene._\n\nIn Materials\u00a0and\u00a0methods, we formulate a sufficient-component cause model (Rothman, 1976) based on Figure 1 and describe how to make inferences about the fraction of Ret- CM cases that are due to pathway (b) in Figure 1, i.e., the malaria parasitemia attributable fraction of Ret- CM (the fraction of Ret- CM cases that would be prevented if malaria parasitemia were eliminated [Benichou et al., 1998]). The fraction itself cannot be estimated without strong biological assumptions (Greenland and Robins, 1988), but a lower bound can be estimated under plausible assumptions. Table 3 shows inferences for this lower bound under the main model that assumes the traits do not protect against malaria parasitemia incidence and sensitivity analyses. Under the main model, the lower bound is estimated to be\u00a0.93 with 95% confidence interval (.68, 1). For the sensitivity analyses, although the systematic review of Taylor et al. (2012) found no consistent evidence that HbAS reduces malaria parasitemia incidence, some studies reviewed found protection and we consider sensitivity analyses that allow for a small amount of protection (10%) and the largest amount of protection found in all the studies reviewed (41%) (Ntoumi et al., 1997). Also, the sensitivity analyses vary the false discovery rate and false omission rate between 0 and the upper bound estimated in Materials\u00a0and\u00a0methods. Under all scenarios considered, we found evidence for a substantial contribution of malaria parasites to the pathogenesis of Ret- CM with lower 95% confidence bounds ranging from\u00a0.37 to\u00a0.77 and point estimates for the lower bound ranging from\u00a0.86 to\u00a0.95.\n\n**Table 3.**\n Inferences for lower bound on malaria parasitemia attributable fraction of Ret- CM (fraction of Ret- CM cases that would be prevented if malaria parasitemia were to be eliminated) under the sufficient-component cause model based on Figure 1 presented in Materials\u00a0and\u00a0methods. Inferences under the main model and sensitivity analyses that vary the effect of HbAS on malaria parasitemia incidence rate, the false discovery rate ($FDR$) and the false omission rate ($FOR$) for malarial retionopathy.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Effect of HbAS on malaria parasitemia incidence rate</th>\n      <th>FDR</th>\n      <th>FOR</th>\n      <th>Lower bound on malaria parasitemia attributable fraction of Ret- CM Estimate (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Main Model</td>\n    </tr>\n    <tr>\n      <td>No Effect</td>\n      <td>.07</td>\n      <td>.05</td>\n      <td>.93 (.68, 1)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Sensitivity Analyses</td>\n    </tr>\n    <tr>\n      <td>Reduce 10%</td>\n      <td>.07</td>\n      <td>.05</td>\n      <td>.92 (.64, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 41%</td>\n      <td>.07</td>\n      <td>.05</td>\n      <td>.88 (.46, 1)</td>\n    </tr>\n    <tr>\n      <td>No Effect</td>\n      <td>.30</td>\n      <td>.11</td>\n      <td>.94 (.75, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 10%</td>\n      <td>.30</td>\n      <td>.11</td>\n      <td>.94 (.72, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 41%</td>\n      <td>.30</td>\n      <td>.11</td>\n      <td>.91 (.58, 1)</td>\n    </tr>\n    <tr>\n      <td>No Effect</td>\n      <td>0</td>\n      <td>.11</td>\n      <td>.92 (.62, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 10%</td>\n      <td>0</td>\n      <td>.11</td>\n      <td>.91 (.58, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 41%</td>\n      <td>0</td>\n      <td>.11</td>\n      <td>.86 (.37, 1)</td>\n    </tr>\n    <tr>\n      <td>No Effect</td>\n      <td>.30</td>\n      <td>0</td>\n      <td>.95 (.77, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 10%</td>\n      <td>.30</td>\n      <td>0</td>\n      <td>.94 (.74, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 41%</td>\n      <td>.30</td>\n      <td>0</td>\n      <td>.91 (.61, 1)</td>\n    </tr>\n    <tr>\n      <td>No Effect</td>\n      <td>0</td>\n      <td>0</td>\n      <td>.92 (.66, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 10%</td>\n      <td>0</td>\n      <td>0</td>\n      <td>.92 (.63, 1)</td>\n    </tr>\n    <tr>\n      <td>Reduce 41%</td>\n      <td>0</td>\n      <td>0</td>\n      <td>.87 (.44, 1)</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nWe have studied a natural experiment that alters the level of malaria illness and found evidence that children with genetic traits associated with resistance to malaria illness are underrepresented in admissions with both Ret+ and Ret- CM (HbAS) or in admissions with Ret+ CM only (BGO).\n\nFigure 1 shows a model of how HbAS and BGO affect Ret- and Ret+ CM. HbAS protects children with malaria parasitemia from developing uncomplicated malaria illness (e.g., fever) and severe malaria illness (Taylor et al., 2012). By contrast, current evidence suggests that BGO has no effect on developing uncomplicated malaria illness (Uneke, 2007), but does inhibit the cytoadherence of parasitized red blood cells to endothelial cells in the microcirculation, e.g., by affecting rosetting (Rowe et al., 2007) and physical properties of the red cell membrane (M\u00e9ndez et al., 2012), thereby preventing severe malaria illness (Cserti and Dzik, 2007; Migot-Nabias et al., 2000; Uneke, 2007). Consistent with this current evidence, in Figure 1, HbAS prevents Ret- CM through pathway (b), which involves two components (uncomplicated malaria illness + other illness), by preventing one of the components, uncomplicated malaria illness, whereas BGO does not protect against Ret- CM through pathway (b) because it does not prevent uncomplicated malaria illness (Figure 1).\n\nIn Figure 1 pathway (b), Ret- CM results from an interaction between malaria illness and other illness. While the interactions between malaria parasites and other pathogens are incompletely understood and not well investigated, there is evidence for interaction (Obaro and Greenwood, 2011; Mallewa et al., 2013; Postels and Birbeck, 2011). In studies of sepsis and malaria, the effect of microvascular parasite sequestration on the integrity of the gut mucosa is thought to allow bacterial seeding into the blood stream and hence bacteremia (Scott et al., 2011). Another example is that following antigenic challenge from a Plasmodium falciparum candidate vaccine, children coinfected with schistosomiasis had lower acquired specific immune responses than those not infected (Diallo et al., 2010).\n\nAnother way in which malaria parasitemia could play a causal role in Ret- CM besides pathway (b) in Figure 1 is that the parasitemia could be the sole cause of coma. Taylor et al. (2004)\u2019s autopsy study results suggest that among children dying from Ret- CM, malaria parasitemia is typically not the sole cause of death (see Causes of Death in Autopsy study in Appendix 1), but it is possible that in survivors from Ret- CM, malaria parasitemia is the major contributor to acute illness. Whether malarial retinopathy is present or absent in CM could be affected by factors such as the child\u2019s genome, the parasite\u2019s genome and the child\u2019s previous exposures to malaria (Postels and Birbeck, 2011). The protection provided against Ret- CM by HbAS but not BGO could be explained by an interaction between the factor(s) affecting whether malarial retinopathy is present and BGO, e.g., a parasite genotype which causes malarial retinopathy to be absent could interfere with the mechanism by which BGO provides protection against severe malaria.\n\nOur study has several limitations. We only considered the genetic variants of sickle cell trait and blood group because these were the only statistically\u00a0significant (p<.05)\u00a0protective variants in the Malawi sample on which malarial retinopathy was measured, but future work could further test the model in Figure 1 by looking at additional genetic variants that have been found to affect the risk of malaria in other sites in Africa (Malaria Genomic Epidemiology Network, 2014). Our study only addresses CM pathogenesis in children. Adult and pediatric CM have important clinical differences and our results may not be generalizable to adults with Ret- CM. Detection of the presence or absence of malarial retinopathy was determined by several ophthalmologists over the 11 year duration of data collection, the sensitivity of detection of retinal changes may have varied between practitioners. Malarial retinopathy was determined on the basis of ophthalmoscopy alone, but since the time of our study, techniques such as optical coherence tomography that may increase sensitivity have been developed (Joshi et al., 2017). We measure malarial retinopathy at the time of admission, but patients are admitted at different points on the disease trajectory. Malarial retinopathy can change over time; it doesn\u2019t resolve during the 2\u20134 days of hospitalization but can become worse, which is a poor prognostic sign. Although there are limitations in our study to the sensitivity with which malarial retinopathy is measured, even if a moderate number of Ret- CM cases should be Ret+ CM cases in Table 2, e.g., if the false omission rate is\u00a0.5 and the false discovery rate is 0, there is still strong evidence that HbAS has a protective effect for Ret- CM (p-value=0.007; odds ratio: 6.81, 95% CI: (1.50, $\u221e$)). Our main analysis assumed that possession of HbAS or BGO does not affect malaria parasitemia incidence; however, sensitivity analyses showed that our results were not sensitive to plausible violations of this assumption. Our analysis assumed that HbAS and BGO do not have selection effects on which CM cases are admitted to the Paediatric Research Ward as opposed to dying before reaching the Paedieatric Research Ward or being cured before needing to be referred to the ward; another interpretation of our study is that instead of studying \u2018cerebral malaria\u2019 as such, we have studied, \u2018cerebral malaria mild enough to make it to the ward but severe enough not to recover without being taken to the ward.\u2019 Some of the non-malaria hospital controls had malaria parasitemia; since children can sometimes develop severe malaria with relatively low levels of parasitemia, it is possible that malaria contributed to the illness in these control participants. Furthermore, older non-malaria hospital controls may have a selection bias for HbAS since they have survived to an older age (Ackerman et al., 2005). Our results are robust to considering only the community controls (Appendix 1\u2014table 4) which do not suffer from these potential biases of the non-malaria hospital controls.\n\nIn summary, we studied a natural experiment that alters the level of malaria illness experienced by children through genetic variation and found evidence that malaria parasitemia is on the causal pathway to a substantial proportion of Ret- CM cases. Our approach of using genetically inherited traits to study CM pathogenesis could be adapted to illuminate the pathogenesis of other diseases.\n\n## Materials and methods\n\n### Setting and study participants\n\nThe study sample includes children with WHO-defined CM from 1997 to 2007 who were admitted to the Paediatric Research Ward at Queen Elizabeth Central Hospital, a tertiary referral center and teaching hospital in Blantyre, Malawi. The WHO definition of CM requires coma, circulating Plasmodium falciparum parasites, and no other cause of coma evident either by history or physical examination. Patients were enrolled during the rainy season, the time of annual peak incidence of CM. All patients were treated with intravenous quinine as standard antimalarial therapy. Enrollment in the study required explicit written consent from the parent or guardian. There were 947 enrolled patients. Malarial retinopathy was assessed on 726 of these patients and we subsequently limited our analysis to these 726 patients. To assess retinal changes, direct and indirect ophthalmoscopy were performed by an ophthalmologist well versed in findings typical of malarial retinopathy.\n\nWe consider two types of controls in the study. The first type are community controls \u2013 3704 children intended to be representative of the populations to which the cases belonged. Community controls were cord blood samples from Queen Elizabeth Central Hospital, mostly from the newborn nursery. The second type of controls are 194 patients who were admitted during the study period to the Paediatric Research Ward at Queen Elizabeth Central Hospital with a non-malarial cause of illness \u2013 meningitis, non-malarial anemia or other non-malaria illness.\n\n### Advantages of considering two control groups\n\nTwo sources of bias in case-control studies are hidden bias (unmeasured confounding) and selection bias (Rosenbaum, 1987, Rosenbaum, 2002). Hidden bias occurs when there are unmeasured variable(s) that are associated with the exposure and the outcome. Selection bias occurs when control subjects are selected based on a variable that is affected by the exposure. Different control groups might be subject to different amounts of hidden bias and selection bias. If two such control groups have similar exposure rates, this provides evidence against hidden bias and selection bias (Rosenbaum, 1987). Further, if the case group has a different exposure rate than both control groups and the control groups have similar exposure rates, this provides stronger evidence that the exposure has a causal effect on the outcome, rather than the results being biased by hidden bias or selection bias, as compared to a study with a single control group (Rosenbaum, 1987).\n\nCommunity controls are less likely to suffer from selection bias than the hospital controls. Community controls were randomly selected from the same population as the cases. In contrast, hospital controls could suffer from selection bias if the genetic variant of interest was associated with a non-malaria illness -- this type of selection bias is known as Berkson\u2019s bias (Westreich, 2012; Berkson, 1946). Although the hospital controls might suffer from more selection bias than the community controls, the hospital controls have the potential advantage that they would reduce hidden bias if there was population stratification such that the genetic variant was associated with an unmeasured population stratification feature (e.g., housing conditions) that caused both malaria and non-malaria illness.\n\n### Genotypes\n\nParticipants were genotyped using the Sequenom iPLEX MassARRAY platform (Malaria Genomic Epidemiology Network, 2014). The genotyping included 55 SNPs for which there were previously reported associations with severe malaria. Two of the SNPs were found to be statistically\u00a0significantly (p<.05)\u00a0associated with cerebral malaria in Malawi -- HBB rs334, which encodes the sickle cell trait, and ABO rs8176719, which encodes the blood type (O vs. A, B or AB); see Figure 1 in Malaria Genomic Epidemiology Network (2014). These two SNPs were used\u00a0in our analysis.\n\n### Hypotheses\n\nFor a given genetically inherited trait, we consider two competing hypotheses for testing whether malaria parasitemia plays a pathogenic role in Ret- CM. We assume a biological model under which the trait does not affect other illnesses that cause Ret- CM and under which the trait does not have a selection effect on which CM cases are admitted to the Paedieatric Research Ward vs. dying before reaching the Paediatric Research Ward or being cured before needing to be referred to the ward.\n\n#### Null hypothesis\n\nMalaria parasitemia is an incidental finding in children with true Ret- CM and/or the genetic trait affects an aspect of disease not causal to development of true Ret- CM.\n\nLet $\\lambda_{t.r+}$ be the probability that a child with true Ret+ CM has a trait t (e.g., t could be the sickle cell trait or blood type O), $\\lambda_{t.r\u2212}$ the probability that a child with true Ret- CM has the trait t and $\\lambda_{t.co}$ the probability that a control child has the trait t. For the observed data, we take into account that malarial retinopathy may be measured with error. Among children with WHO-defined CM, let $FDR$ be the false discovery rate that a child who is found by the examining ophthalmologist to have Ret+ CM actually has Ret- CM and let $FOR$ be the false omission rate that a child who is found by the examining ophthalmologist to have Ret- CM actually has Ret+ CM.\n\nSuppose malaria parasitemia is an incidental finding in patients with true Ret- CM and/or the trait affects an aspect of malaria infection not experienced by Ret- CM patients. Then the probability of the trait would be the same in controls as in patients with true Ret- CM, $\\lambda_{t.r\u2212}=\\lambda_{t.co}$. If this is the case, we have the following probabilities for observing the trait in the observable groups:\n\n$$\nP(Control\u00a0has\u00a0trait)=\\lambda_{t.co}P(Ret+ CM\u200b\u00a0patient\u00a0has\u00a0trait)=(1\u2212FDR)\u2217\\lambda_{t.r+}+FDR\u2217\\lambda_{t.co}P(Ret- CM\u200b\u00a0patient\u00a0has\u00a0trait)=FOR\u2217\\lambda_{t.r+}+(1\u2212FOR)\u2217\\lambda_{t.co}\n$$\n\n#### Alternative hypothesis\n\nMalaria parasitemia is pathogenic for true Ret- CM and the trait reduces the pathogenic potential of malaria infection for true Ret- CM.\n\nIf malaria parasitemia is pathogenic for true Ret- CM and the trait reduces the pathogenic potential of malaria infection for true Ret- CM, then the trait will reduce the probability of true Ret- CM, $\\lambda_{t.r\u2212}<\\lambda_{t.co}$. We have the following probabilities for observing the trait in the observable groups:\n\n$$\nP(Control\u00a0has\u00a0trait)=\\lambda_{t.co}P(Ret+ CM\u200b\u00a0patient\u00a0has\u00a0trait)=(1\u2212FDR)\u2217\\lambda_{t.r+}+FDR\u2217\\lambda_{t.r\u2212}P(Ret- CM\u200b\u00a0patient\u00a0has\u00a0trait)=FOR\u2217\\lambda_{t.r+}+(1\u2212FOR)\u2217\\lambda_{t.r\u2212}\n$$\n\nTo estimate $FDR$ and $FOR$, we use data from Beare et al., 2002 who compared two ophthalmologists\u2019 concordance in grading malarial retinopathy. As described in the next section, we obtain point estimates of\u00a0.07 and\u00a0.05 and upper bound estimates of\u00a0.30 and\u00a0.11 for $FDR$ and $FOR$ respectively; the main analyses use the point estimates and additional analyses use the upper bound estimates. For fixed values of $FDR$ and $FOR$, we estimate the parameters $\\lambda_{t.r+}$, $\\lambda_{t.r\u2212}$ and $\\lambda_{t.co}$ by maximum likelihood.\n\n### Estimating false discovery and false omission rates for malarial retinopathy\n\nWe use data on 65 patients at Queen Elizabeth Central Hospital in Blantyre, Malawi who were each examined by two ophthalmologists (Beare et al., 2002). Malarial retinopathy is diagnosed if any of the following six signs are present: retinal hemorrhages (RH), macular whitening (MW), foeval whitening (FW), peripheral whitening (PW), vessel changes (VC) and capillary whitening (CW). RH, VC and CW require little observer judgement if they are seen, but they may not be seen, depending on the degree of pupillary dilation and the presence/absence of spontaneous eye movements; for these consider the specificity to be 1 (Beare et al., 2002). Identifying MW, FW and PW requires more experience on the part of the observer; MW and FW are more reproducible, and PW is less so (Beare et al., 2002).\n\nWe first consider the false discovery rate. To estimate an upper bound on the false discovery rate, we assumed that if RH, VC or CW was detected by either ophthalmologist, there was true malarial retinopathy, but if MW, FW or PW was detected without RH, VC or CW, then it was a false discovery; this is likely an overestimate since in some cases where MW, FW or PW was detected without RH, VC or CW, there is likely true malarial retinopathy that was missed by RH, VC and CW. There were 39 patients diagnosed by ophthalmologist 1 with malarial retinopathy, 33 of whom had RH, VC or CW by at least one ophthalmologist and there were 36 patients diagnosed by ophthalmologist 2 with malarial retinopathy, 33 of whom had RH, VC or CW by at least one ophthalmologist. To find a conservative upper bound on the false discovery rate, we consider ophthalmologist 1 and found the 95% Wilson binomial confidence interval (Wilson, 1927) based on 6 out of 39 false discoveries, resulting in an 95% confidence interval of (0.07, 0.30), so resulting in an upper bound of 0.30 for the false discovery rate. To find a point estimate for the false discovery rate, we assume that there was true malarial retinopathy if RH, VC or CW was detected by either ophthalmologist or if FW was detected by both ophthalmologists or if MW was detected by both ophthalmologists since FW and MW were found to be reproducible by Beare et al., 2002, and then we averaged the resulting point estimates for the false discovery rate for the two ophthalmologists ((4/39\u00a0+\u00a01/36)/2), to obtain an estimate of\u00a0.07.\n\nWe next consider the false omission rate. To estimate an upper bound on the false omission rate, we estimate an upper bound on the false omission rate if we were to only use RH, VC and CW to diagnose malarial retinopathy. The actual false omission rate is likely to be at least as small because we also diagnose malarial retinopathy if there\u2019s any of MW, FW or PW and we think that the majority of time when we find MW, FW or PW but not RH, VC and CW, there is true malarial retinopathy, whereas a false omission will be relatively rare. We assume that the false positive rate for RH, VC and CW is 0 and use a model similar to model 1 in Nedelman (1988). Specifically, let $\u03c8$ denote the prevalence of true malarial retinopathy and $\u03b6$\u00a0the false negative probability that an ophthalmologist will fail to detect RH, VC or CW in a child with true malarial retinopathy. Assume that we have two independent ophthalmologists. Then, the probability that both ophthalmologists will detect at least one of RH, VC or CW is $\u03c8(1\u2212\u03b6)^{2}$, the probability that one but not the other ophthalmologist will detect RH, VC or CW is $2\u03c8\u03b6(1\u2212\u03b6)$and the probability that both ophthalmologists will detect none of RH, VC or CW is $\u03c8\u03b6^{2}+1\u2212\u03c8$. The false omission rate is $FOR=\\frac{\u03c8\u03b6}{1\u2212\u03c8+\u03c8\u03b6}$. We found a point estimate of 0.05 for the false omission rate and a 95% confidence interval (using the percentile bootstrap) of (0,\u00a0.11). Thus we take\u00a0.11 as an estimated upper bound for the false omission rate and\u00a0.05 as a point estimate for the false omission rate, recognizing that it is likely to be an upwardly biased point estimate.\n\n### Statistical inference\n\nWe will test the null hypothesis $H_{0}^{t}:\\lambda_{t.r\u2212}=\\lambda_{t.co}$(the probability of the malaria resistance trait t is the same in true Ret- CM cases as controls) versus the alternative hypothesis $H_{a}^{t}:\\lambda_{t.r\u2212}<\\lambda_{t.co}$ (the probability of the malaria resistance trait t is lower in true Ret- CM cases than controls). To test these hypotheses, we will estimate the parameters under the null and alternative hypotheses by maximum likelihood and use the generalized likelihood ratio test with 1 degree of freedom (Rice, 2007). The maximum likelihood estimation takes into account the assumed false discovery rate and false omission rate for malarial retinopathy detection. We will form confidence intervals for the odds ratios of the trait among controls vs. true Ret- CM patients ($[{\\lambda_{t.co}/(1\u2212\\lambda_{t.co})}/{\\lambda_{t.r\u2212}/(1\u2212\\lambda_{t.r\u2212})}]$and the odds ratio of the trait among controls vs. true Ret+ CM patients $[{\\lambda_{t.co}/(1\u2212\\lambda_{t.co})}/{\\lambda_{t.r+}/(1\u2212\\lambda_{t.r+})}]$ by inverting the generalized likelihood ratio test. We will use Fisher\u2019s exact to test whether the odds ratio of the trait differs among the community controls vs. the non-malaria illness controls and construct a 95% confidence interval for this odds ratio.\n\n### Inference for malaria parasitemia attributable fraction for coma among Ret- CM Cases\n\nThe malaria parasitemia attributable fraction for coma among Ret- CM cases is the fraction of coma that would be prevented if malaria parasitemia were to be eliminated among Ret- CM cases. We formulate a model using the sufficient-component cause framework (Rothman, 1976) and estimate the malaria parasitemia attributable fraction for Ret- CM using this model. A sufficient cause for a disease is a set of conditions that inevitably produces the disease. We assume that Ret+ CM can be represented by one sufficient cause: malaria parasitemia + factors that lead the malaria parasitemia to develop into uncomplicated malaria illness (e.g., lack of immunity) + factors that lead the uncomplicated malaria illness to further progress to complicated malaria illness with coma and malarial retinopathy (e.g., genetic complexity of the malaria infection that overwhelms a child\u2019s ability to control the infection). We assume that Ret- CM can be represented by two sufficient causes: (a) malaria parasitemia + another illness that is sufficient, in and of itself, to produce coma without malarial retinopathy; (b) malaria parasitemia + factors that lead the malaria parasitemia to develop into uncomplicated malaria illness + second insult (innate or acquired) that combined with the uncomplicated malarial illness leads to a coma without malarial retinopathy but which would not in and of itself be sufficient to produce coma. These two sufficient causes (a) and (b) for Ret- CM correspond to pathways (a) and (b) to Ret- CM in Figure 1. Let $p$ be the proportion of Ret- CM from sufficient cause (b), which is the malaria parasitemia attributable fraction for coma among Ret- CM cases.\n\nLet $r_{t,p}$ be the factor by which the trait t multiplies the risk of malaria parasitemia (i.e., relative risk of malaria parasitemia for individuals with trait t compared to individuals without trait t),$r_{t,u}$\u00a0be the factor by which the trait multiplies the risk of factors that lead the malaria parasitemia to develop into uncomplicated malaria illness conditional on having malaria parasitemia, $r_{t,c}$ be the factor by which the trait multiplies the risk of factors that lead uncomplicated malaria illness to further progress to complicated malaria illness with coma and malarial retinopathy, $r_{t,a}$\u00a0be the factor by which the trait multiplies the risk of another illness that is sufficient, in and of itself, to produce coma without malarial retinopathy in the presence of malaria parasitemia and $r_{t,s}$ be the factor by which the trait multiplies the risk of a second insult that combined with uncomplicated malaria illness leads to a coma without malaria retinopathy but which would not in and of itself be sufficient to produce coma. We assume that $r_{t,u},r_{t,c}\\leq1$, i.e., that the trait has no effect or a beneficial effect in preventing uncomplicated and complicated malaria.\n\nLet $\\lambda_{t}$ be the proportion of trait t in the population. For a rare disease, this proportion is approximately the proportion of trait t among the controls, $\\lambda_{t}\u2248\\lambda_{t.co}$. Ret+ CM and Ret- CM are both rare diseases \u2013 the vast majority of malaria infections do not progress to cerebral malaria; subsequently we assume $\\lambda_{t}=\\lambda_{t.co}$. We then have\n\n$$\n\\lambda_{t.r^{+}}=\\frac{r_{t,p}r_{t,u}r_{t,c}\\lambda_{t.co}}{r_{t,p}r_{t,u}r_{t,c}\\lambda_{t.co}+1\u2212\\lambda_{t.co}}\n$$\n\n\n\n$$\n\\lambda_{t.r^{\u2212}}=(1\u2212p)\\frac{r_{t,p}r_{t,a}\\lambda_{t.co}}{r_{t,p}r_{t,a}\\lambda_{t.co}+1\u2212\\lambda_{t.co}}+p\\frac{r_{t,p}r_{t,u}r_{t,s}\\lambda_{t.co}}{r_{t,p}r_{t,u}r_{t,s}\\lambda_{t.co}+1\u2212\\lambda_{t.co}}\n$$\n\nFor our main model, we make the following assumptions: (i) $r_{t,p}=1$ -- the trait has no effect on malaria parasitemia; (ii) $r_{t,a}=1$ -- the trait has no effect on illnesses that are sufficient in and of themselves to produce coma without malarial retinopathy in the presence of malaria parasitemia and (iii) $r_{t,s}=1$ -- the trait has no effect on an insult that combined with uncomplicated malaria illness leads to a coma without malaria retinopathy but which would not in and of itself be sufficient to produce coma. We relax the assumption that $r_{t,p}=1$ in sensitivity analyses. Under assumptions (i)-(iii),\n\n$$\n\\lambda_{t.r^{+}}=\\frac{r_{t,u}r_{t,c}\\lambda_{t.co}}{r_{t,u}r_{t,c}\\lambda_{t.co}+1\u2212\\lambda_{t.co}}\\lambda_{t.r^{\u2212}}=(1\u2212p)\\lambda_{t.co}+p\\frac{r_{t,u}\\lambda_{t.co}}{r_{t,u}\\lambda_{t.co}+1\u2212\\lambda_{t.co}}\n$$\n\nThe parameters $\\lambda_{t.co},\\lambda_{t.r^{+}},\\lambda_{t.r^{\u2212}}$\u00a0can be identified from the data and thus Equation (1.1) involve two equations in three unknowns ($p,r_{t,u},r_{t,c}$). The $p$\u00a0is minimized (and hence the malaria parasitemia attributable fraction for coma among Ret- CM cases, is minimized) by letting $r_{t,c}=1$, specifically the minimizing\u00a0$p$\u00a0solves $\\lambda_{t.r^{\u2212}}=(1\u2212p)\\lambda_{t.co}+p\\lambda_{t.r^{+}}$. Let $p_{lb,t}$ represent this lower bound on $p$ based on trait $t$, which is a function of $(\\lambda_{t.co},\\lambda_{t.r^{+}},\\lambda_{t.r^{\u2212}})$; let $p_{lb,t'}$\u00a0represent this lower bound on $p$ based on another trait $t'$, which is a function of $(\\lambda_{t'.co},\\lambda_{t'.r^{+}},\\lambda_{t'.r^{\u2212}})$ and let $p_{lb}=min(p_{lb,t},p_{lb,t'})$ be the lower bound on $p$ based on both traits, which is a function of $(\\lambda_{t.co},\\lambda_{t.r^{+}},\\lambda_{t.r^{\u2212}}$,$\\lambda_{t'.co},\\lambda_{t'.r^{+}},\\lambda_{t'.r^{\u2212}})$. We estimate $p_{lb}$\u00a0by maximum likelihood and form a 95% confidence interval by inverting the generalized likelihood ratio test for $p_{lb}$.\n\nWe conduct sensitivity analyses that allow for $r_{t,p}<1$. Maintaining the assumptions (ii) $r_{t,a}=1$ and (iii) $r_{t,s}=1$, we have that the lower bound on $p$ solves\n\n$$\n\\lambda_{t.r^{\u2212}}=(1\u2212p)\\frac{r_{t,p}\\lambda_{t.co}}{r_{t,p}\\lambda_{t.co}+1\u2212\\lambda_{t.co}}+p\\lambda_{t.r^{+}}\n$$\n\n### Software\n\nThe supplemental file rcode_for_paper.R contains R (R Development Core Team, 2016) code for replicating the analyses in our paper.\n",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "7ccf8427-bf72-494a-8235-b5825e7aa732",
+      "submission_id": "60065016-a36a-4fc2-9ab2-1ef1b6818abd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben Cooper, Mahidol Oxford Tropical Medicine Research Unit , Thailand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23699.014](https://doi.org/10.7554/eLife.23699.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Evidence from a Natural Experiment that Malaria Parasitemia is Pathogenic in Retinopathy-Negative Cerebral Malaria\" for consideration by eLife. Your article has been favorably evaluated by Prabhat Jha (Senior Editor) and three reviewers, one of whom, Ben Cooper (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission have agreed to reveal their identity: Chandy John (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe paper uses data on the distribution of the sickle cell trait and blood type O in different populations to make inferences about the causal role that malaria parasitemia plays in retinopathy-negative cerebral malaria. The work provides strong evidence that malaria parasitemia does contribute to the pathogenesis of retinopathy-negative CM and provides a lower bound malaria parasitemia attributable fraction in retinopathy-negative cerebral malaria.\n\nSummary:\n\nThe reviewers agreed that this is potentially important work, though there was a consensus that it would be far more interesting if it could go beyond the focus on hypothesis testing and expand on the work on estimating the attributable fraction (at present only a lower bound on the lower 95% confidence bound is given). It was felt that this was particularly important given that the null hypothesis (no causal role of malaria in ret-CM) is widely seen as a quite an eccentric position in light of autopsy studies (though, admittedly, it is held by some). In addition to this, there was agreement that the work needed to be better motivated with a more complete discussion of relevant previous work in the Introduction and a more complete consideration of alternative hypotheses that might explain the findings in the Discussion. For example, are there other factors (human or parasite) that interact between uncomplicated malaria and blood group O but not HbAS to alter risk of retneg CM?\n\nEssential revisions:\n\nThe reviewers agreed that all the points made in the full reviews below should be addressed. In particular:\n\ni) The Introduction should contain a full explanation of relevant autopsy studies with numbers, logic of hypothesis, and the motivation for the work more clearly explained.\n\nii) Unless there are compelling reasons why this is not possible (if there are, these should be given), the authors should seek to provide point estimates of the attributable fraction and upper and lower uncertainty bounds. This is likely to require additional assumptions (and may well be facilitated by working within a Bayesian framework), in which case analysis of sensitivity to these assumptions/priors should be provided.\n\niii) The Discussion should be expanded to contain a fuller discussion of alternative hypotheses explaining the data (see in particular comment 3 from reviewer #3) and limitations of the study (see in particular comments from reviewer #2).\n\niv) Points 4 and 5 raised by reviewer #1 require at the minimum some clarification.\n\nReviewer #1:\n\nThe paper uses data on the distribution of the sickle cell trait and blood type O in different populations to make inferences about the causal role that malaria parasitemia plays in retinopathy-negative cerebral malaria. This is a novel and methodologically interesting application of Mendelian randomization ideas which have become very popular in non-communicable disease epidemiology but which are still little used in the communicable disease community. Despite evidence from autopsy studies of patients with retinopathy-negative cerebral malaria (ret-CM), there is still some debate about the role malaria plays in ret-CM so this work does address a real problem. Overall the paper is well-written and does a fairly good job of explaining quite a difficult subject. I believe the findings do represent a substantial advance over previous work.\n\n1) \"An autopsy study found [\u2026] children dying with ret- CM mostly lacked cerebral sequestration and mostly had non-malarial etiologies of death (Taylor et al. 2004)\"\n\nBut I think some of the those dying with ret-CM did have cerebral sequestration which seems to contradict the null. Perhaps as well as emphasising the small sample size, this would be a good time to point out that false positives can occur in retinopathy so the small histopathology studies do not provide conclusive evidence against the null. It also suggests to me that rather more prominence should be given to the estimated lower bound on the malaria parasitemia attributable fraction of ret- CM which currently doesn't get a mention in the abstract. To me, this seems like the most important result.\n\n2) I think it's a good idea to illustrate the ideas here with an idealised unethical RCT, but the example given (Introduction, third paragraph) seems to add to the confusion as it depends on patient outcomes of those with ret-CM, which are not considered in this paper. I think a more relevant (if more expensive) impossible RCT would be to randomize a very large number patients with uncomplicated malaria illness to treatment vs. no-treatment. If the null is true there would be no difference in the incidence of ret-CM in the two arms. This leads on to the natural experiment, as HbAS/BGO are effectively doing similar randomisations.\n\n3) The work rests on the assumption that HbAS has no effect on asymptomatic parasitemia (if it did, different prevalences of HbAS might be expected in those with Ret-CM and the non-malaria controls even if malaria played no role in the CM). While this seems approximately true (and if there is an effect it is likely to be small) this assumption may not be completely rock solid. A meta analysis on protection by HbAS against parasitemia (pubmed id 22445352) concluded \"Taken together, HbAS does not consistently protect from P. falciparum parasitemia.\" Some studies have found protection though, but not consistently. This is something the authors might want to consider addressing in a sensitivity analysis.\n\n4) The FP and FN rate as defined in the subsection \u201cHypotheses\u201d are the conventional definitions (i.e. FP = Pr(test +ve | true -ve), FN=Pr(test -ve| true +ve). Equations in the second to last paragraph of the aforementioned subsection and elsewhere: what is written as FP seems to be Pr(true -ve | test+ve) and similarly for FN. So, I think what is written as FP is actually the FDR (false discovery rate) while what is written as 1-FP is the PPV (prob true +ve | test +ve). Similarly, I think what is given as FN is the FOR (false omission rate) and 1-FN is really the NPV. Fortunately, it looks like the calculations later on for \"FP\" are actually calculating FDR (which is just what is needed). So, I think the numbers are all OK, but the labels need some attention. Note that checking the calculations to see if what is labelled as FN is actually FOR is more difficult and I haven't done this, but it should be checked.\n\n5) Subsection \u201cInference for Proportion of Retinopathy-Negative CM due to path (a) in Figure 1:\u201d onwards confused me. If p=0 (so all ret-CM comes from path B \u2013 that is, all are causally linked to malaria illness) then the proportion of HbAS in the ret-CM patients will be the same as in the control group. This doesn't make sense. I couldn't make sense of the next equation either. Is there a typo here?\n\nReviewer #2:\n\nIn a previous autopsy study, the authors observed that cases of cerebral malaria with retinal changes children had cerebral sequestration of parasitized red blood cells in the cerebral microvasculature and no other identified causes of death besides the malaria parasitemia but in those who were retinopathy negative, few had cerebral sequestration and most had non-malaria etiologies of death. Here, the authors use the fact that HbAS (and blood group O) have been found to protect against symptomatic malaria (or cerebral sequestration) to test whether malaria parasitemia contributes to the deaths in CM ret- by comparing the frequencies of sickle cell in CM ret- vs. controls. Studies using sickle cell and other genetic markers have been used in several studies to test hypotheses, but here this is placed on a more formal footing in the framework of Mendelian randomization.\n\n1) The paper frames the problem as being binary in the Introduction and Methods: e.g. \"If a given trait decreases the probability of developing ret+ but not ret- CM, this would suggest that malaria parasites are pathogenic for ret+ CM but not ret- CM or the trait affects an aspect of disease not causal to the development of ret- CM\".e.g. \"we test the null hypothesis that the trait frequency is the same in controls and true ret- CM cases vs. the alternative hypothesis that the trait frequency is higher in control than true ret- cases.\"\n\nHowever, it is likely that a proportion of CM ret- and a very high proportion of CM ret+ cases were caused or co-caused by the parasitemia. In both groups, there could be a non-zero proportion of coma caused by non-malaria, unless having CM ret+ excludes other causes.\n\nSo, it seems that using significance to test for an association between CM ret- and controls and their sickle cell status does not capture the question. Estimation would be more useful.\n\nThe binary stance is softened later, in the Results section, \"have found evidence that malaria parasitemia is on the causal pathway to a substantial proportion of ret- CM cases\". However, we do not have an estimate of what the proportion is, and this seems to be mostly a guess. A model which estimates the attributable fraction could be considered.\n\n2) The main results are not inconsistent with the hypothesis of the authors, but neither are they strongly supportive of it.\n\nFor HbAS, there was a lower frequency of HbAS in the CM cases compared to the controls, which fits with HbAS being protective against symptomatic malaria. However, there is little evidence that the proportions of HbAS for CM ret+ and CM ret- are similar: there is only 1 HbAS in the two groups, so a non-significant result is inevitable, and the confidence interval stretches from 0.18 to infinity.\n\nFor blood group O, the authors stated that they would expect to see a higher proportion of children with O in the CM ret- compared to CM ret+ group if parasites did not cause CM ret- symptoms since blood group O protects against adherence and severe malaria in the brain. The estimate is in the right direction but the CI includes 1 (0.88, 1.62), and so the result in inconclusive. There is a fair amount of overlap in the CIs for controls vs. CM ret- and controls versus CM ret+, and comparing the p-values would not be appropriate due to a non-significant result indicating \"no evidence of a difference\" rather than \"no difference\", and being partly reliant on the sample sizes, which differ.\n\nComparability of the groups\n\n3) There is a little discussion of the biases for the controls, but none for the CM cases. More discussion would be helpful. It may perhaps be that some CM cases do not reach hospital because they die more quickly, or that the older controls have selection bias for HbAS.\n\nBoth coma score and retinopathy may differ over the course of the illness, and what is seen is just a snapshot at the time of admission.\n\nCan the differences in the Blantyre coma score and other clinical indicators for ret- and ret+ CM in Table 1 be explained?\n\nThe controls are mostly from cord blood samples and some from non-malaria hospital admissions. They are combined in the analysis. While this is not unreasonable, it does make it hard to interpret the results.\n\n4) There would be a need to explain the results of the Taylor et al. 2004 study in the light of the findings.\n\nReviewer #3:\n\nThis is an elegant study that uses the genetic traits of HbS trait and blood group O, both well described as protecting against severe malaria, to assess whether malaria contributes to the disease process (i.e., development of coma) in children with cerebral malaria (CM) who are retinopathy positive (ret+) vs. retinopathy negative (ret-).\n\nThe authors find that HbS is protective against ret+ and ret- CM, while blood group O is protective only against ret+ CM. They posit that this is because HbS protects in the step where asymptomatic parasitemia develops into uncomplicated malaria, while blood group O only protects only in the step from uncomplicated malaria to severe malaria. In this scenario, ret-CM is due to the presence of uncomplicated malaria plus some other factor that leads to coma. Children with HbS are protected from CM, including ret- CM, because they are protected at the stage where asymptomatic parasitemia becomes uncomplicated malaria. However, children with blood group O are protected only against ret+ CM, because in ret-CM, children with blood group O can still develop uncomplicated malaria, and need only the other factor to tip them into coma. They conclude that malaria likely does play a role in some/many cases of ret- CM.\n\nI find the idea behind this innovative assessment compelling. The paper is well written, and the data appear solid, with much larger numbers than most CM studies are able to obtain. So, overall I think this is a well conducted study and of significant interest to the field. I have only a few comments.\n\n1) Some of the \"non-malaria\" hospital controls had malaria parasitemia. Since children can sometimes develop severe malaria with relatively low levels of parasitemia, how can the authors be sure that malaria did not contribute to illness in these control participants?\n\n2) The authors pioneered assessment of PfHRP2 levels in children with CM, and these were shown to distinguish nicely between RP and RN CM. Do they have PfHRP2 levels on even a subset of these individuals? It would be nice to further differentiate whether, for example, those with low or undetectable PfHRP2 had lower mortality, or less/no protection from HbS, for example.\n\n3) I think the authors' hypothesis is the most satisfactory one, but it seems possible that the results could be explained by protection afforded by HbS against development of severe malaria from uncomplicated malaria that is not afforded by BGO in children with ret- CM. In other words, there may be interaction with ret- CM and BGO such that in ret- children, whatever mechanism BGO provides that affords protection in going from uncomplicated malaria to CM is interfered with or less effective. I am not sure what that factor could be, but it could potentially relate to things like parasite genotype. Have the authors considered this possibility as an explanation?\n\n4) Are there any clinical or other indicators that suggest to the authors what the other factor(s) may be in ret- CM that lead children with uncomplicated malaria to go on to develop coma?\n",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1b4dc110-040c-4a63-9624-9ceea220fb52",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C1",
+      "claim": "Cerebral malaria (CM) is responsible for a substantial proportion of the approximately 500,000 annual malaria deaths and 2,000,000 severe malaria cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebral malaria (CM) is responsible for a substantial proportion of the approximately 500,000 annual malaria deaths and 2,000,000 severe malaria cases (WHO, 2014, WHO, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to WHO reports from 2014 and 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "197a209f-b849-4fb9-8425-47c70f16a5af",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C2",
+      "claim": "CM is defined by the World Health Organization (WHO) as unarousable coma with circulating malaria (Plasmodium) parasitemia and no known non-malaria causal explanation.",
+      "claim_type": "EXPLICIT",
+      "source": "CM is defined by the World Health Organization (WHO) as unarousable coma with circulating malaria (Plasmodium) parasitemia and no known non-malaria causal explanation (WHO, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to WHO 2000 defining cerebral malaria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "e43624e1-85e2-458a-b13b-91624ec3d36f",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C3",
+      "claim": "Based on the presence or absence of malaria-specific retinal changes, CM can be classified as retinopathy-positive (Ret+) or retinopathy-negative (Ret-).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the presence or absence of malaria-specific retinal changes, CM can be classified as retinopathy-positive (Ret+) or retinopathy-negative (Ret-) (Lewallen et al., 1999; Beare et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lewallen et al., 1999 and Beare et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "cc26f28a-a888-4415-9d02-aef9269f7419",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C4",
+      "claim": "40% of CM cases in the cohort were Ret-.",
+      "claim_type": "EXPLICIT",
+      "source": "40% of CM cases in our cohort were Ret-",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "bb4b5803-c56d-42fa-83c6-9be4d91cf453",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C5",
+      "claim": "Of Ret- CM cases, 12% died.",
+      "claim_type": "EXPLICIT",
+      "source": "40% of CM cases in our cohort were Ret- and of these, 12% died",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study cohort presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "83ec76d8-c1fd-4201-9442-328e080e1dd6",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C6",
+      "claim": "Of Ret- CM cases, 10% developed neurological problems.",
+      "claim_type": "EXPLICIT",
+      "source": "40% of CM cases in our cohort were Ret- and of these, 12% died and 10% developed neurological problems (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from the study cohort presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "b2dcf167-3e5f-4a88-b71d-c47cf641d2f9",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C7",
+      "claim": "Children dying of Ret+ CM have a high degree of sequestration of parasitized red blood cells in cerebral vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Autopsy data show that children dying of Ret+ CM have a high degree of sequestration of parasitized red blood cells in cerebral vasculature (Taylor et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to autopsy data from Taylor et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "359ae3bb-7029-462e-806e-dddba0a0f2c8",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C8",
+      "claim": "Sequestration of parasitized red blood cells in cerebral vasculature is considered the pathological hallmark of CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Autopsy data show that children dying of Ret+ CM have a high degree of sequestration of parasitized red blood cells in cerebral vasculature (Taylor et al., 2004), considered the pathological hallmark of CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about cerebral malaria pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "9db4adbe-662c-481f-9cf7-1e29bb417de7",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C9",
+      "claim": "Among children for whom retinopathy was assessed, 41 of 42 children dying with Ret+ CM had substantial cerebral sequestration of parasitized red blood cells in the cerebral microvasculature (defined as \u226523% of cerebral capillaries had sequestration).",
+      "claim_type": "EXPLICIT",
+      "source": "among children for whom retinopathy was assessed, 41 of 42 children dying with Ret+ CM had substantial cerebral sequestration of parasitized red blood cells in the cerebral microvasculature (defined as \u226523% of cerebral capillaries had sequestration)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by autopsy data from Taylor et al. (2004) with follow-up results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "67d25875-9e73-4696-afd2-d6dd2ad18f85",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C10",
+      "claim": "Children dying with Ret+ CM mostly lacked other identified potential causes of death besides the malaria parasitemia.",
+      "claim_type": "EXPLICIT",
+      "source": "41 of 42 children dying with Ret+ CM had substantial cerebral sequestration of parasitized red blood cells in the cerebral microvasculature (defined as \u226523% of cerebral capillaries had sequestration) and mostly lacked other identified potential causes of death besides the malaria parasitemia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by autopsy data from Taylor et al. (2004) with follow-up results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "490678be-306d-42b6-9c19-3fbc088da211",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C11",
+      "claim": "All 15 children dying with Ret- CM lacked substantial cerebral sequestration (<23% of cerebral capillaries had sequestration).",
+      "claim_type": "EXPLICIT",
+      "source": "all 15 children dying with Ret- CM lacked substantial cerebral sequestration (<23% of cerebral capillaries had sequestration)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by autopsy data from Taylor et al. (2004) with follow-up results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "e13d7ee1-9692-42c2-898f-91fb7e10ad84",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C12",
+      "claim": "Children dying with Ret- CM mostly had non-malarial etiologies of death.",
+      "claim_type": "EXPLICIT",
+      "source": "all 15 children dying with Ret- CM lacked substantial cerebral sequestration (<23% of cerebral capillaries had sequestration) and mostly had non-malarial etiologies of death (see Appendix 1 for causes of death)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by autopsy data from Taylor et al. (2004) with follow-up results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "acb5d9ca-a23b-411f-990d-06ced26a55f2",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C13",
+      "claim": "Incidental malaria parasitemia is common in people living in areas of high malaria transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidental malaria parasitemia is common in people living in areas of high malaria transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about malaria epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "95555bb6-7174-463a-98af-4b76b7bdd7d8",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C14",
+      "claim": "It is possible that at least some children with Ret- CM have a non-malarial etiology of coma and an incidental (asymptomatic) malaria parasitemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that at least some children with Ret- CM have a non-malarial etiology of coma and an incidental (asymptomatic) malaria parasitemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observation that incidental parasitemia is common.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "daf910e7-2cfd-4004-88c0-62c6dfe6eb8c",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C15",
+      "claim": "The pathogenesis of Ret-CM is unclear, and the role of malaria parasitemia in the etiology of the acute illness is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathogenesis of Ret-CM is therefore unclear, and the role of malaria parasitemia in the etiology of the acute illness is unknown (Postels and Birbeck, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Postels and Birbeck, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "b2cb41ba-ea4d-402b-8c81-63247fb2dd22",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C16",
+      "claim": "A lower bound for the fraction of retinopathy-negative CM that would be prevented if malaria parasitemia were to be eliminated is estimated to be 0.93 (95% confidence interval: 0.68, 1).",
+      "claim_type": "EXPLICIT",
+      "source": "A lower bound for the fraction of retinopathy-negative CM that would be prevented if malaria parasitemia were to be eliminated is estimated to be 0.93 (95% confidence interval: 0.68, 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "2c55315b-7bb4-4ee1-a519-3d9a9fe57a11",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C20",
+      "claim": "There are 3704 community controls in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 3704 community controls, but their characteristics are not shown because only their genotypes and not their clinical characteristics were collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "9f88b6e0-e657-43aa-b9c3-43ef71a2e788",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C39",
+      "claim": "The Blantyre coma score is statistically significantly higher in Ret+ CM patients than Ret- CM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The Blantyre coma score is statistically significantly higher in Ret+ CM patients than Ret- CM patients",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "b5e2d849-3870-4b25-acc9-62ddee9d6dab",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C40",
+      "claim": "The difference in Blantyre coma score between Ret+ CM and Ret- CM patients is not clinically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The Blantyre coma score is statistically significantly higher in Ret+ CM patients than Ret- CM patients, but we do not regard the difference as clinically significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' interpretation of the clinical significance of the statistical difference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "60c6629a-84ea-4c2f-b8e0-1b7296c25157",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C41",
+      "claim": "Patients with Ret+ CM were more severely ill than those with Ret- CM.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the patients with Ret+ CM were more severely ill than those with Ret- CM (higher lactate, more deep breathing and a higher chance of death).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Table 1 showing higher lactate, more deep breathing, and higher mortality in Ret+ CM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "da27bf92-bfbd-4d5a-9b05-e7ea7af1a35d",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C42",
+      "claim": "The malaria illness is more severe in Ret+ CM than Ret- CM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The malaria illness is more severe in Ret+ CM than Ret- CM patients (lower platelet count and more anemia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Table 1 showing lower platelet count and more anemia in Ret+ CM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "1ac75eed-cdf5-4fc9-acb2-dab27d45a2a5",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C43",
+      "claim": "The higher opening CSF pressures in Ret+ CM patients compared to Ret- CM patients suggests a higher proportion of Ret+CM patients have increased brain volume.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher opening CSF pressures in Ret+ CM patients compared to Ret- CM patients suggests a higher proportion of Ret+CM patients have increased brain volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observed difference in CSF opening pressures between groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "68cc257b-0c5a-4767-8e25-d7b95d379cf7",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C44",
+      "claim": "Laboratory abnormalities associated with malaria infection (e.g. low hematocrit and platelet count) were more frequent in the CM cases compared to non-malaria controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing CM cases to non-malaria controls, as expected, laboratory abnormalities associated with malaria infection (e.g. low hematocrit and platelet count) were more frequent in the CM cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "e0919b4c-f3ee-4c21-b9f5-8e05c4cd7b0a",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C45",
+      "claim": "The sickle cell trait (HbAS) protects against symptomatic malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "The sickle cell trait (HbAS) \u2013 inheritance of one abnormal allele of the betaglobin gene \u2013 protects against symptomatic malaria (Modiano et al., 2001; Taylor et al., 2012; Williams et al., 2005; Willcox et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "48ca7f55-001c-4301-8a92-a6fbaa3567ed",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C46",
+      "claim": "Blood group O protects against CM compared to groups A, B or AB.",
+      "claim_type": "EXPLICIT",
+      "source": "A second inherited trait which affects susceptibility to malaria illness is blood group O (BGO), which protects against CM compared to groups A, B or AB (Cserti and Dzik, 2007; Malaria Genomic Epidemiology Network, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "99d6dd15-a5ae-4e88-9d08-f0cebb8498c1",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C47",
+      "claim": "For both BGO and HbAS, it is plausible that the traits do not protect against malaria parasitemia incidence as systematic reviews have not found consistent evidence for protection.",
+      "claim_type": "EXPLICIT",
+      "source": "For both BGO and HbAS, it is plausible that the traits do not protect against malaria parasitemia incidence as systematic reviews have not found consistent evidence for protection (Uneke, 2007; Taylor et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to systematic reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "24d037ad-1591-4f22-b906-2febc06f30be",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C48",
+      "claim": "Non-malaria hospitalized controls did not differ from community controls for HbAS (p-value=0.86).",
+      "claim_type": "EXPLICIT",
+      "source": "For both HbAS and BGO, non-malaria hospitalized controls did not differ from community controls (HbAS p-value=0.86",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "ce322ec9-1c8c-4b83-945d-b7c73541d8ee",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C49",
+      "claim": "Non-malaria hospitalized controls did not differ from community controls for BGO (p-value=0.83).",
+      "claim_type": "EXPLICIT",
+      "source": "For both HbAS and BGO, non-malaria hospitalized controls did not differ from community controls (HbAS p-value=0.86; BGO p-value=0.83)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "96a9e3d7-3cbb-4b9f-b067-a941a1b5213a",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C50",
+      "claim": "Controls had a higher proportion of HbAS than true Ret- CM patients (odds ratio: 14.33, 95% CI: 3.21, 257.24).",
+      "claim_type": "EXPLICIT",
+      "source": "Controls had a higher proportion of HbAS than true Ret- CM patients (odds ratio: 14.33, 95% CI: 3.21, 257.24)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "bb1070a4-e415-4b47-b265-511b197f30ea",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C51",
+      "claim": "Controls had a higher proportion of HbAS than true Ret+ CM patients (odds ratio: 1223.22, 95% CI: 9.87,\u221e).",
+      "claim_type": "EXPLICIT",
+      "source": "Controls had a higher proportion of HbAS than true Ret- CM patients (odds ratio: 14.33, 95% CI: 3.21, 257.24) and true Ret+ CM patients (odds ratio: 1223.22, 95% CI: 9.87,\u221e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "bd1ffbb0-4aa4-4b66-842c-817bff0af3c6",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C52",
+      "claim": "For BGO, the controls were comparable to true Ret- CM patients (odds ratio: 1.03, 95% CI: 0.83, 1.29).",
+      "claim_type": "EXPLICIT",
+      "source": "For BGO, the controls were comparable to true Ret- CM patients (odds ratio: 1.03, 95% CI: 0.83, 1.29)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "c731425c-672b-413c-a755-ef9cb3bd8186",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C53",
+      "claim": "For BGO, the controls had a higher proportion than true Ret+ CM patients (odds ratio: 1.23, 95% CI: 1.01, 1.50).",
+      "claim_type": "EXPLICIT",
+      "source": "For BGO, the controls were comparable to true Ret- CM patients (odds ratio: 1.03, 95% CI: 0.83, 1.29) but higher than true Ret+ CM patients (odds ratio: 1.23, 95% CI: 1.01, 1.50).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "debaa69d-d65d-4009-bf86-2a1334d062a8",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C54",
+      "claim": "There is strong evidence to reject the null hypothesis that HbAS frequency is the same in controls and true Ret- CM cases (p-value<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "There is strong evidence to reject H0HbAS(p-value<0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "2f46493a-84b7-4ee2-a039-51ce6075f06a",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C55",
+      "claim": "There is not evidence to reject the null hypothesis that BGO frequency is the same in controls and true Ret- CM cases (p-value=0.79).",
+      "claim_type": "EXPLICIT",
+      "source": "There is strong evidence to reject H0HbAS(p-value<0.0001) but not H0BGO (p-value=0.79)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "cc3edc27-6010-4ad8-8180-9e6cf7c5c781",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C56",
+      "claim": "Malaria parasitemia is pathogenic for a proportion of Ret- CM cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these tests suggest that malaria parasitemia is pathogenic for a proportion of Ret- CM cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the statistical tests showing HbAS protection but not BGO protection for Ret- CM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "8d1e01b2-2836-4a4c-b67a-1bb12ef16a6f",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C57",
+      "claim": "Sickle cell trait protects against Ret- CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Sickle cell trait protects against Ret- CM, but blood group O does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "1fce61a9-6d85-4c23-b571-b5e175078d21",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C58",
+      "claim": "Blood group O does not protect against Ret- CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Sickle cell trait protects against Ret- CM, but blood group O does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "9ea98d54-57e7-4167-9ab2-1d1694681e9c",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C67",
+      "claim": "Under the main model that assumes the traits do not protect against malaria parasitemia incidence, the lower bound on malaria parasitemia attributable fraction of Ret- CM is estimated to be .93 with 95% confidence interval (.68, 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Under the main model, the lower bound is estimated to be .93 with 95% confidence interval (.68, 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data under the main model assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "62ddeb45-a438-4f0a-9426-ca89400c148e",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C68",
+      "claim": "Under all sensitivity analysis scenarios considered, lower 95% confidence bounds for the malaria parasitemia attributable fraction ranged from .37 to .77.",
+      "claim_type": "EXPLICIT",
+      "source": "Under all scenarios considered, we found evidence for a substantial contribution of malaria parasites to the pathogenesis of Ret- CM with lower 95% confidence bounds ranging from .37 to .77",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sensitivity analyses presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3edb2a0e-2bb0-43a1-bbee-893a5cc33782",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C69",
+      "claim": "Under all sensitivity analysis scenarios considered, point estimates for the lower bound on malaria parasitemia attributable fraction ranged from .86 to .95.",
+      "claim_type": "EXPLICIT",
+      "source": "Under all scenarios considered, we found evidence for a substantial contribution of malaria parasites to the pathogenesis of Ret- CM with lower 95% confidence bounds ranging from .37 to .77 and point estimates for the lower bound ranging from .86 to .95.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sensitivity analyses presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "cd1f2b6a-6380-479b-b887-a0273952e4f0",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C70",
+      "claim": "Children with genetic traits associated with resistance to malaria illness are underrepresented in admissions with both Ret+ and Ret- CM (HbAS).",
+      "claim_type": "EXPLICIT",
+      "source": "We have studied a natural experiment that alters the level of malaria illness and found evidence that children with genetic traits associated with resistance to malaria illness are underrepresented in admissions with both Ret+ and Ret- CM (HbAS)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "305dc58e-4cb0-440e-ba0f-585b2e8458de",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C71",
+      "claim": "Children with genetic traits associated with resistance to malaria illness are underrepresented in admissions with Ret+ CM only (BGO).",
+      "claim_type": "EXPLICIT",
+      "source": "We have studied a natural experiment that alters the level of malaria illness and found evidence that children with genetic traits associated with resistance to malaria illness are underrepresented in admissions with both Ret+ and Ret- CM (HbAS) or in admissions with Ret+ CM only (BGO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "550fef38-b2ba-4012-8f7f-82aab1993ee7",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C72",
+      "claim": "HbAS protects children with malaria parasitemia from developing uncomplicated malaria illness (e.g., fever) and severe malaria illness.",
+      "claim_type": "EXPLICIT",
+      "source": "HbAS protects children with malaria parasitemia from developing uncomplicated malaria illness (e.g., fever) and severe malaria illness (Taylor et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Taylor et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "fce8ea4d-8ab5-4cfb-95fa-5e5e329c2ab6",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C73",
+      "claim": "Current evidence suggests that BGO has no effect on developing uncomplicated malaria illness.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, current evidence suggests that BGO has no effect on developing uncomplicated malaria illness (Uneke, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Uneke, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "5fda13a3-bf42-45b5-aee8-01d4eca9176d",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C74",
+      "claim": "BGO inhibits the cytoadherence of parasitized red blood cells to endothelial cells in the microcirculation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, current evidence suggests that BGO has no effect on developing uncomplicated malaria illness (Uneke, 2007), but does inhibit the cytoadherence of parasitized red blood cells to endothelial cells in the microcirculation, e.g., by affecting rosetting (Rowe et al., 2007) and physical properties of the red cell membrane (M\u00e9ndez et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rowe et al., 2007 and M\u00e9ndez et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "04ffe68e-334d-41b2-8cab-906015c13d75",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C75",
+      "claim": "BGO prevents severe malaria illness.",
+      "claim_type": "EXPLICIT",
+      "source": "but does inhibit the cytoadherence of parasitized red blood cells to endothelial cells in the microcirculation, e.g., by affecting rosetting (Rowe et al., 2007) and physical properties of the red cell membrane (M\u00e9ndez et al., 2012), thereby preventing severe malaria illness (Cserti and Dzik, 2007; Migot-Nabias et al., 2000; Uneke, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "15f2acfd-04c2-4a49-a802-60fb66e88c11",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C76",
+      "claim": "There is evidence for interaction between malaria parasites and other pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "While the interactions between malaria parasites and other pathogens are incompletely understood and not well investigated, there is evidence for interaction (Obaro and Greenwood, 2011; Mallewa et al., 2013; Postels and Birbeck, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "9220c739-74cc-427c-9ba6-54859a2db4aa",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C77",
+      "claim": "The effect of microvascular parasite sequestration on the integrity of the gut mucosa is thought to allow bacterial seeding into the blood stream and hence bacteremia.",
+      "claim_type": "EXPLICIT",
+      "source": "In studies of sepsis and malaria, the effect of microvascular parasite sequestration on the integrity of the gut mucosa is thought to allow bacterial seeding into the blood stream and hence bacteremia (Scott et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Scott et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "740611c8-f665-4db5-a15c-01a6d51c6dc5",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C78",
+      "claim": "Following antigenic challenge from a Plasmodium falciparum candidate vaccine, children coinfected with schistosomiasis had lower acquired specific immune responses than those not infected.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is that following antigenic challenge from a Plasmodium falciparum candidate vaccine, children coinfected with schistosomiasis had lower acquired specific immune responses than those not infected (Diallo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Diallo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "7dca0fb6-0a4d-46dd-8a4d-1475ef0b4571",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C79",
+      "claim": "Among children dying from Ret- CM, malaria parasitemia is typically not the sole cause of death.",
+      "claim_type": "EXPLICIT",
+      "source": "Taylor et al. (2004)'s autopsy study results suggest that among children dying from Ret- CM, malaria parasitemia is typically not the sole cause of death (see Causes of Death in Autopsy study in Appendix 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to autopsy data from Taylor et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "224dc101-4168-4012-9ee6-74d0da1bf8e4",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C80",
+      "claim": "It is possible that in survivors from Ret- CM, malaria parasitemia is the major contributor to acute illness.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is possible that in survivors from Ret- CM, malaria parasitemia is the major contributor to acute illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about survivors of Ret- CM.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "197f3690-4084-484d-bb2b-0395a297e843",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C81",
+      "claim": "Whether malarial retinopathy is present or absent in CM could be affected by factors such as the child's genome, the parasite's genome and the child's previous exposures to malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether malarial retinopathy is present or absent in CM could be affected by factors such as the child's genome, the parasite's genome and the child's previous exposures to malaria (Postels and Birbeck, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Postels and Birbeck, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "2fe5cba2-9b1e-42ea-9c2f-270c83f27946",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C82",
+      "claim": "The protection provided against Ret- CM by HbAS but not BGO could be explained by an interaction between the factor(s) affecting whether malarial retinopathy is present and BGO.",
+      "claim_type": "EXPLICIT",
+      "source": "The protection provided against Ret- CM by HbAS but not BGO could be explained by an interaction between the factor(s) affecting whether malarial retinopathy is present and BGO, e.g., a parasite genotype which causes malarial retinopathy to be absent could interfere with the mechanism by which BGO provides protection against severe malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "a436461e-1d71-4192-a8a0-0b082166496f",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C83",
+      "claim": "Adult and pediatric CM have important clinical differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult and pediatric CM have important clinical differences and our results may not be generalizable to adults with Ret- CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about cerebral malaria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "54b4fc09-1abc-4a91-ac4d-f38a580bf5c8",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C84",
+      "claim": "The results of this study may not be generalizable to adults with Ret- CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult and pediatric CM have important clinical differences and our results may not be generalizable to adults with Ret- CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the limitations of the study's generalizability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "ac4d2fe8-ea01-448a-af7b-25c0d3c4fe89",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C85",
+      "claim": "Detection of the presence or absence of malarial retinopathy was determined by several ophthalmologists over the 11 year duration of data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection of the presence or absence of malarial retinopathy was determined by several ophthalmologists over the 11 year duration of data collection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3358da40-acaf-42bc-9735-f585fd43480b",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C86",
+      "claim": "The sensitivity of detection of retinal changes may have varied between practitioners.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection of the presence or absence of malarial retinopathy was determined by several ophthalmologists over the 11 year duration of data collection, the sensitivity of detection of retinal changes may have varied between practitioners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about potential variability in the study methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "83658b30-709d-4151-a829-31b432d1ad96",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C87",
+      "claim": "Malarial retinopathy was determined on the basis of ophthalmoscopy alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Malarial retinopathy was determined on the basis of ophthalmoscopy alone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "e3f80571-81aa-4d83-85ab-0a9905ee20fa",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C88",
+      "claim": "Techniques such as optical coherence tomography may increase sensitivity for detecting malarial retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "but since the time of our study, techniques such as optical coherence tomography that may increase sensitivity have been developed (Joshi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Joshi et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "b9dbd872-5462-44c1-94d5-4f0604a878fd",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C89",
+      "claim": "Malarial retinopathy is measured at the time of admission.",
+      "claim_type": "EXPLICIT",
+      "source": "We measure malarial retinopathy at the time of admission, but patients are admitted at different points on the disease trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "b4c8a18b-282d-480d-8d1e-5fb83349bb1c",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C90",
+      "claim": "Patients are admitted at different points on the disease trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "We measure malarial retinopathy at the time of admission, but patients are admitted at different points on the disease trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an observation about the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "1de0c2e1-3868-4e9d-bcc4-ae0ac0ffce09",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C91",
+      "claim": "Malarial retinopathy can change over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Malarial retinopathy can change over time; it doesn't resolve during the 2\u20134 days of hospitalization but can become worse, which is a poor prognostic sign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on clinical knowledge about malarial retinopathy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "694721ae-4891-431c-953e-8a6beabc33a4",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C92",
+      "claim": "Malarial retinopathy doesn't resolve during the 2\u20134 days of hospitalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Malarial retinopathy can change over time; it doesn't resolve during the 2\u20134 days of hospitalization but can become worse, which is a poor prognostic sign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on clinical knowledge about malarial retinopathy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "8df71c41-3176-4caf-bd28-727f0b6d6014",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C93",
+      "claim": "Malarial retinopathy can become worse during hospitalization, which is a poor prognostic sign.",
+      "claim_type": "EXPLICIT",
+      "source": "Malarial retinopathy can change over time; it doesn't resolve during the 2\u20134 days of hospitalization but can become worse, which is a poor prognostic sign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on clinical knowledge about malarial retinopathy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "086121de-f08d-4e27-b4c9-832586280324",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C95",
+      "claim": "The main analysis assumed that possession of HbAS or BGO does not affect malaria parasitemia incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our main analysis assumed that possession of HbAS or BGO does not affect malaria parasitemia incidence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an assumption of the main analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "ae71dd68-1c30-43fd-ad0b-1e5e88d3ea50",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C96",
+      "claim": "Sensitivity analyses showed that the results were not sensitive to plausible violations of the assumption that HbAS or BGO does not affect malaria parasitemia incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our main analysis assumed that possession of HbAS or BGO does not affect malaria parasitemia incidence; however, sensitivity analyses showed that our results were not sensitive to plausible violations of this assumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sensitivity analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "5f5cf632-762f-4b50-9856-039c95e8f078",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C97",
+      "claim": "The analysis assumed that HbAS and BGO do not have selection effects on which CM cases are admitted to the Paediatric Research Ward as opposed to dying before reaching the Paedieatric Research Ward or being cured before needing to be referred to the ward.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis assumed that HbAS and BGO do not have selection effects on which CM cases are admitted to the Paediatric Research Ward as opposed to dying before reaching the Paedieatric Research Ward or being cured before needing to be referred to the ward",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an assumption of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "31ceeb90-e945-4aaa-8eb8-660f0414882f",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C98",
+      "claim": "Some of the non-malaria hospital controls had malaria parasitemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the non-malaria hospital controls had malaria parasitemia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "a3711733-3264-4f9c-836a-270724e7100f",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C99",
+      "claim": "It is possible that malaria contributed to the illness in some non-malaria hospital control participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the non-malaria hospital controls had malaria parasitemia; since children can sometimes develop severe malaria with relatively low levels of parasitemia, it is possible that malaria contributed to the illness in these control participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about potential confounding in the control group.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "041c997b-8a9c-449e-84f7-cf9ff430274d",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C100",
+      "claim": "Older non-malaria hospital controls may have a selection bias for HbAS since they have survived to an older age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, older non-malaria hospital controls may have a selection bias for HbAS since they have survived to an older age (Ackerman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference supported by a citation to Ackerman et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "dd3f051d-85c6-4d21-a949-f2cac7f50269",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C101",
+      "claim": "The study sample includes children with WHO-defined CM from 1997 to 2007 who were admitted to the Paediatric Research Ward at Queen Elizabeth Central Hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "The study sample includes children with WHO-defined CM from 1997 to 2007 who were admitted to the Paediatric Research Ward at Queen Elizabeth Central Hospital, a tertiary referral center and teaching hospital in Blantyre, Malawi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study sample and setting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "fed50781-bd12-47d1-806e-e9571f7a2509",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C102",
+      "claim": "Queen Elizabeth Central Hospital is a tertiary referral center and teaching hospital in Blantyre, Malawi.",
+      "claim_type": "EXPLICIT",
+      "source": "The study sample includes children with WHO-defined CM from 1997 to 2007 who were admitted to the Paediatric Research Ward at Queen Elizabeth Central Hospital, a tertiary referral center and teaching hospital in Blantyre, Malawi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study setting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "f942df44-cdd0-4dd8-a337-11b24ee578a3",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C103",
+      "claim": "Patients were enrolled during the rainy season, the time of annual peak incidence of CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients were enrolled during the rainy season, the time of annual peak incidence of CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study enrollment period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "e940283e-6137-4f69-b5ea-85a243b055e2",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C104",
+      "claim": "All patients were treated with intravenous quinine as standard antimalarial therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients were treated with intravenous quinine as standard antimalarial therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the treatment protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "90799be4-49e0-4283-ac9b-84fdd9c74c27",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C105",
+      "claim": "Enrollment in the study required explicit written consent from the parent or guardian.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrollment in the study required explicit written consent from the parent or guardian.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study consent process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "59069fd9-e696-4eb3-8fba-371800c5460a",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C106",
+      "claim": "There were 947 enrolled patients.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 947 enrolled patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "9030f321-5d11-40aa-9cc0-3086f53a917b",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C107",
+      "claim": "Malarial retinopathy was assessed on 726 of the 947 enrolled patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Malarial retinopathy was assessed on 726 of these patients and we subsequently limited our analysis to these 726 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "09e40364-09df-4b36-bcba-dfeed3879313",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C108",
+      "claim": "The analysis was limited to the 726 patients on whom malarial retinopathy was assessed.",
+      "claim_type": "EXPLICIT",
+      "source": "Malarial retinopathy was assessed on 726 of these patients and we subsequently limited our analysis to these 726 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study sample selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "772463f6-c571-48be-a147-cb6da4ad3039",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C109",
+      "claim": "Direct and indirect ophthalmoscopy were performed by an ophthalmologist well versed in findings typical of malarial retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess retinal changes, direct and indirect ophthalmoscopy were performed by an ophthalmologist well versed in findings typical of malarial retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "f663e8ba-137c-4784-a451-36e7b2af6287",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C110",
+      "claim": "Community controls were cord blood samples from Queen Elizabeth Central Hospital, mostly from the newborn nursery.",
+      "claim_type": "EXPLICIT",
+      "source": "Community controls were cord blood samples from Queen Elizabeth Central Hospital, mostly from the newborn nursery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the source of community controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "322d4890-6a6d-47a9-9f9f-af0a7e1fb0fe",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C111",
+      "claim": "Hospital controls were 194 patients who were admitted during the study period to the Paediatric Research Ward at Queen Elizabeth Central Hospital with a non-malarial cause of illness \u2013 meningitis, non-malarial anemia or other non-malaria illness.",
+      "claim_type": "EXPLICIT",
+      "source": "The second type of controls are 194 patients who were admitted during the study period to the Paediatric Research Ward at Queen Elizabeth Central Hospital with a non-malarial cause of illness \u2013 meningitis, non-malarial anemia or other non-malaria illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the hospital control group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "f5ddd7f0-c313-4f82-ba2c-c5bdbf18bcc4",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C112",
+      "claim": "If two control groups have similar exposure rates, this provides evidence against hidden bias and selection bias.",
+      "claim_type": "EXPLICIT",
+      "source": "If two such control groups have similar exposure rates, this provides evidence against hidden bias and selection bias (Rosenbaum, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rosenbaum, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "35ccad11-9546-4b4d-a901-4dc1707eee52",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C113",
+      "claim": "If the case group has a different exposure rate than both control groups and the control groups have similar exposure rates, this provides stronger evidence that the exposure has a causal effect on the outcome, rather than the results being biased by hidden bias or selection bias, as compared to a study with a single control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, if the case group has a different exposure rate than both control groups and the control groups have similar exposure rates, this provides stronger evidence that the exposure has a causal effect on the outcome, rather than the results being biased by hidden bias or selection bias, as compared to a study with a single control group (Rosenbaum, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rosenbaum, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "b07a90bb-c149-4f29-97ed-4c4f8afeed3d",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C114",
+      "claim": "Community controls are less likely to suffer from selection bias than the hospital controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Community controls are less likely to suffer from selection bias than the hospital controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the relative bias in different control groups.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "16310af2-f722-45fa-8a62-983bd854e34b",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C115",
+      "claim": "Community controls were randomly selected from the same population as the cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Community controls were randomly selected from the same population as the cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3dcdc4bd-c4c9-4ea3-be9c-d359e9339daa",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C116",
+      "claim": "Hospital controls could suffer from selection bias if the genetic variant of interest was associated with a non-malaria illness.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hospital controls could suffer from selection bias if the genetic variant of interest was associated with a non-malaria illness -- this type of selection bias is known as Berkson's bias (Westreich, 2012; Berkson, 1946).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about potential bias supported by citations to Westreich, 2012 and Berkson, 1946.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "79b1f3e9-e768-4f5e-a8ce-bb97960923ee",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C117",
+      "claim": "Hospital controls have the potential advantage that they would reduce hidden bias if there was population stratification such that the genetic variant was associated with an unmeasured population stratification feature that caused both malaria and non-malaria illness.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the hospital controls might suffer from more selection bias than the community controls, the hospital controls have the potential advantage that they would reduce hidden bias if there was population stratification such that the genetic variant was associated with an unmeasured population stratification feature (e.g., housing conditions) that caused both malaria and non-malaria illness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference about the potential advantages of hospital controls.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "5735af7b-3ed8-47be-a809-33eb314dd76c",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C118",
+      "claim": "Participants were genotyped using the Sequenom iPLEX MassARRAY platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were genotyped using the Sequenom iPLEX MassARRAY platform (Malaria Genomic Epidemiology Network, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the genotyping methodology and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "fcb8c7c6-fb7f-459f-82ee-ec91b63cdb2e",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C119",
+      "claim": "The genotyping included 55 SNPs for which there were previously reported associations with severe malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "The genotyping included 55 SNPs for which there were previously reported associations with severe malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the genotyping methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "db22aded-7bc3-4a97-8bac-0efeb670d206",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C120",
+      "claim": "Two of the SNPs were found to be statistically significantly (p<.05) associated with cerebral malaria in Malawi -- HBB rs334, which encodes the sickle cell trait, and ABO rs8176719, which encodes the blood type (O vs. A, B or AB).",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the SNPs were found to be statistically significantly (p<.05) associated with cerebral malaria in Malawi -- HBB rs334, which encodes the sickle cell trait, and ABO rs8176719, which encodes the blood type (O vs. A, B or AB); see Figure 1 in Malaria Genomic Epidemiology Network (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis and a citation to Malaria Genomic Epidemiology Network (2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "edaaf747-d0c1-4b3f-a7f1-52a75066b34d",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C121",
+      "claim": "HBB rs334 encodes the sickle cell trait.",
+      "claim_type": "EXPLICIT",
+      "source": "HBB rs334, which encodes the sickle cell trait",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established genetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "17357c2f-b152-4495-9a25-8617c70d4eaf",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C122",
+      "claim": "ABO rs8176719 encodes the blood type (O vs. A, B or AB).",
+      "claim_type": "EXPLICIT",
+      "source": "ABO rs8176719, which encodes the blood type (O vs. A, B or AB)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established genetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "4b9562e0-2164-43c1-b561-1ac87615d8c3",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C123",
+      "claim": "Sickle cell trait is underrepresented in patients with Ret+ and Ret- cerebral malaria (CM) because of the bottleneck at the transition between 'malaria infection' (asymptomatic malaria) and 'malaria disease' (uncomplicated malaria).",
+      "claim_type": "EXPLICIT",
+      "source": "Sickle cell trait is underrepresented in patients with Ret+ and Ret- cerebral malaria (CM) because of the bottleneck at the transition between 'malaria infection' (asymptomatic malaria) and 'malaria disease' (uncomplicated malaria).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is shown in Figure 1 and is an inference from the study results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "32796484-d8bc-4fea-ad09-57e52a4c5652",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C124",
+      "claim": "Blood group O is underrepresented in patients with Ret+ CM, but not in those with Ret- CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood group O is underrepresented in patients with Ret+ CM, but not in those with Ret- CM.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is shown in Figure 1 and is supported by the study results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3d6de6b6-c858-427d-a46a-528c6404df27",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C125",
+      "claim": "The results for sickle cell trait and blood group O suggest that some Ret- CM cases occur through pathway (b).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results for sickle cell trait and blood group O suggest that some Ret- CM cases occur through pathway (b) (because sickle cell trait is underrepresented in Ret- CM)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is an inference from the study results shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "499bbfd6-8adb-4985-af30-520a6560fc23",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C126",
+      "claim": "Malaria parasites contribute to the pathogenesis of Ret- CM cases that occur through pathway (b).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results for sickle cell trait and blood group O suggest that some Ret- CM cases occur through pathway (b) (because sickle cell trait is underrepresented in Ret- CM) and that malaria parasites contribute to the pathogenesis of these cases",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is an inference from the study results shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "9490af5f-a3bf-4728-b9bb-fad8808d356f",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C127",
+      "claim": "Sickle cell trait reduces the pathogenetic potential of malaria infection for Ret- CM.",
+      "claim_type": "EXPLICIT",
+      "source": "sickle cell trait reduces the pathogenetic potential of malaria infection for Ret- CM",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is an inference from the study results shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "25fdacd6-a17e-456b-b208-cd6446b5966b",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C128",
+      "claim": "The study does not provide evidence that blood group O reduces the pathogenetic potential of malaria infection for Ret- CM.",
+      "claim_type": "EXPLICIT",
+      "source": "but do not provide evidence that blood group O reduces the pathogenetic potential of malaria infection for Ret- CM.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is an inference from the study results shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "dd25f9bc-ab25-4b9d-b364-3e33aaf77129",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C129",
+      "claim": "Compared to children with Ret- CM, those who are Ret+ have increased concentrations of P. falciparum HRP2, a parasite-produced protein reflecting total body parasite burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to children with Ret- CM, those who are Ret+ have increased concentrations of P. falciparum HRP2, a parasite-produced protein reflecting total body parasite burden (Seydel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Seydel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3d47fcc7-be8b-4d25-9631-2335198abbb4",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C130",
+      "claim": "Ocular funduscopic findings in Ret+ CM mirror the microvascular pathology observed on fluorescein angiography.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocular funduscopic findings in Ret+ CM mirror the microvascular pathology observed on fluorescein angiography (MacCormick et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to MacCormick et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "091450d5-94ae-4f74-bedb-d02d6a20dc0a",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C131",
+      "claim": "Ocular funduscopic findings in Ret+ CM are correlated with the severity of sequestration in both the retina and the brain at autopsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocular funduscopic findings in Ret+ CM mirror the microvascular pathology observed on fluorescein angiography (MacCormick et al., 2015) and are correlated with the severity of sequestration in both the retina and the brain at autopsy (Barrera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Barrera et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "d81fd7dc-7466-478d-b88e-03a7cb1e8d3d",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C132",
+      "claim": "In patients dying with Ret- CM, the cerebral microvasculature does not have substantial sequestered parasitized erythrocytes (<23% of cerebral capillaries have sequestration).",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, in patients dying with Ret- CM, the cerebral microvasculature does not have substantial sequestered parasitized erythrocytes (<23% of cerebral capillaries have sequestration)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by autopsy data from Taylor et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3a669851-f04e-443e-900f-6079ea9b10d3",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C133",
+      "claim": "In patients dying with Ret- CM, plasma concentrations of HRP2 are decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "in patients dying with Ret- CM, the cerebral microvasculature does not have substantial sequestered parasitized erythrocytes (<23% of cerebral capillaries have sequestration), plasma concentrations of HRP2 are decreased",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an implicit reference to data from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "66987150-03bc-49ef-b15f-047d75c075c8",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "claim_id": "C134",
+      "claim": "In patients dying with Ret- CM, a variety of non-malarial causes of death have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "in patients dying with Ret- CM, the cerebral microvasculature does not have substantial sequestered parasitized erythrocytes (<23% of cerebral capillaries have sequestration), plasma concentrations of HRP2 are decreased, and a variety of non-malarial causes of death have been identified (Taylor et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Taylor et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc2e4693-bdb0-4cb5-a302-bb0bd94c52a4",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the epidemiological context and classification of cerebral malaria (CM), defining it as a WHO-recognized condition characterized by unarousable coma with malaria parasitemia, and classifying it into retinopathy-positive (Ret+) and retinopathy-negative (Ret-) subtypes based on retinal findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by appropriate citations to WHO reports and peer-reviewed literature (Lewallen et al., 1999; Beare et al., 2006). These claims establish standard definitions and classifications that are widely accepted in the field and provide necessary background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "77c14179-1733-496b-927c-249c6d748446",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the study cohort, 40% of CM cases were Ret-, with 12% mortality and 10% developing neurological sequelae, demonstrating that Ret- CM represents a substantial clinical burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 are supported by data presented in Table 1 from the study cohort. The proportions are clearly stated and appear consistent with the tabulated data, providing important descriptive epidemiology of the study population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "2ec11437-ea2f-4158-90eb-787437be1d48",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Autopsy data demonstrate distinct pathological differences between Ret+ and Ret- CM: 41 of 42 children dying with Ret+ CM had substantial cerebral sequestration (\u226523% of capillaries) and lacked other causes of death, while all 15 children dying with Ret- CM lacked substantial sequestration (<23%) and mostly had non-malarial etiologies of death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 are supported by autopsy data from Taylor et al. (2004) with follow-up results. The specific quantitative threshold (23% of cerebral capillaries) and the stark contrast between Ret+ and Ret- cases provide strong pathological evidence for distinct disease mechanisms. The data are clearly presented with specific numbers (41/42 vs. 15/15).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3b76904e-baac-4424-88a7-c996be75870b",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The pathogenesis of Ret- CM remains unclear, with the possibility that some cases represent incidental malaria parasitemia in children with non-malarial causes of coma, given that incidental parasitemia is common in high-transmission areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are supported by appropriate citations (Postels and Birbeck, 2011) and represent established knowledge about malaria epidemiology. The speculation in C14 is appropriately qualified as a possibility rather than a definitive conclusion, and provides important motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study enrolled 947 children with WHO-defined CM from 1997-2007 at Queen Elizabeth Central Hospital in Blantyre, Malawi, with retinopathy assessed in 726 patients who formed the analysis cohort. Controls included 3,704 community controls (cord blood samples) and 194 hospital controls with non-malarial illnesses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C111 provide clear methodological details about study setting, enrollment, sample sizes, and control group selection. The numbers are internally consistent and the methodology is clearly described. The use of two control groups is methodologically sound for addressing different potential biases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "d43a8572-f818-4c3e-936e-05ec933250e6",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Participants were genotyped for 55 SNPs previously associated with severe malaria using the Sequenom iPLEX MassARRAY platform, with two SNPs (HBB rs334 encoding sickle cell trait and ABO rs8176719 encoding blood type O) found to be statistically significantly (p<0.05) associated with cerebral malaria in Malawi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C122 are supported by appropriate citations and describe standard genotyping methodology. The identification of two significant SNPs is supported by reference to Malaria Genomic Epidemiology Network (2014), and the genetic associations are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "7f5111cf-a88f-474b-b3d0-44b245d441ba",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Clinical comparison shows that Ret+ CM patients were more severely ill than Ret- CM patients, with higher lactate, more deep breathing, higher mortality, lower platelet counts, more anemia, and higher CSF opening pressures, though the difference in Blantyre coma scores was not considered clinically significant despite statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by data in Table 1 with appropriate statistical comparisons. The distinction between statistical and clinical significance (C40) is appropriately made. However, the interpretation of clinical significance is subjective and not clearly justified with specific criteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "364a9905-90fc-4d86-9d69-6ce3e1a060fb",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sickle cell trait (HbAS) protects against symptomatic malaria, and blood group O (BGO) protects against CM compared to other blood groups. Systematic reviews have not found consistent evidence that either trait protects against malaria parasitemia incidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are well-supported by multiple citations to established literature (Modiano et al., 2001; Taylor et al., 2012; Williams et al., 2005; Willcox et al., 1983; Cserti and Dzik, 2007; Uneke, 2007). These represent well-established prior knowledge that forms the basis for the study's natural experiment approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "cc96e4be-0781-4d00-8db7-21d1f479a84a",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Non-malaria hospitalized controls did not differ from community controls for either HbAS (p=0.86) or BGO (p=0.83), providing evidence against hidden bias and selection bias between the two control groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by statistical analysis with clear p-values. The similarity between control groups strengthens the study design by suggesting that different potential sources of bias are not substantially affecting the control groups differently, as discussed in the methodological rationale (C112-C113).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "97feb82e-b582-45d7-863b-64db4bbf1a06",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Controls had higher proportions of HbAS than both true Ret- CM (OR: 14.33, 95% CI: 3.21-257.24) and true Ret+ CM (OR: 1223.22, 95% CI: 9.87-\u221e). For BGO, controls were comparable to true Ret- CM (OR: 1.03, 95% CI: 0.83-1.29) but higher than true Ret+ CM (OR: 1.23, 95% CI: 1.01-1.50).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 present odds ratios with confidence intervals from statistical analysis accounting for measurement error in retinopathy status. The extremely wide confidence interval for HbAS in Ret+ CM (C51) reflects the fact that only 0 of 438 Ret+ CM patients had HbAS (Table 2), making the estimate unstable but still informative. The contrasting patterns between HbAS and BGO are central to the study's conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "678112d6-b3fe-471e-99c3-51195c7460ad",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There is strong evidence to reject the null hypothesis that HbAS frequency is the same in controls and true Ret- CM cases (p<0.0001), but not for BGO (p=0.79).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 present clear statistical test results with p-values. The strong rejection for HbAS but not BGO is consistent with the odds ratios in C50-C53 and forms a key part of the evidence that malaria parasitemia is pathogenic in Ret- CM. The statistical methods account for measurement error in retinopathy classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "45a0ed0b-9d1a-4501-997d-748b53631c96",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The differential protection patterns\u2014sickle cell trait protects against Ret- CM but blood group O does not\u2014suggest that malaria parasitemia is pathogenic for a proportion of Ret- CM cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 represent the key inference from the statistical results (C54-C55). The logic is sound: if HbAS (which protects against uncomplicated malaria illness) protects against Ret- CM, but BGO (which only protects against severe malaria through effects on cytoadherence) does not, this suggests malaria parasitemia contributes to Ret- CM pathogenesis through a pathway involving uncomplicated malaria illness. This inference is central to the paper's main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "3b3f0cbb-31f6-44cd-9b73-9a2dc295b226",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Under the main model assuming the genetic traits do not protect against malaria parasitemia incidence, the lower bound on the malaria parasitemia attributable fraction of Ret- CM is estimated to be 0.93 (95% CI: 0.68-1.0), meaning at least 93% of Ret- CM cases would be prevented if malaria parasitemia were eliminated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C67 present the primary quantitative result using a sufficient-component cause model. The statistical analysis is appropriate and the confidence interval is reasonably narrow. However, this estimate relies on several assumptions (detailed in C95-C97) that, while reasonable, cannot be fully verified. The lower bound approach is appropriately conservative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "0dd15464-b2e3-4611-be3b-e0ef26f192a9",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Sensitivity analyses varying assumptions about HbAS effects on parasitemia incidence and measurement error rates for retinopathy yielded lower 95% confidence bounds ranging from 0.37 to 0.77 and point estimates ranging from 0.86 to 0.95 for the malaria parasitemia attributable fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are supported by Table 3, which presents results under 13 different sensitivity analysis scenarios. The robustness of the conclusion across plausible violations of assumptions strengthens confidence in the main result. Even the most conservative scenario (lower bound 0.37) still suggests substantial contribution of malaria to Ret- CM pathogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "713af4a2-b93b-45c9-a6df-69545dc97bf9",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Children with genetic traits associated with resistance to malaria illness are underrepresented in admissions with both Ret+ and Ret- CM (HbAS) or in admissions with Ret+ CM only (BGO).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 accurately summarize the main empirical findings from the genetic association analysis. These results form the foundation for the mechanistic inferences about malaria's role in Ret- CM pathogenesis and are well-supported by the data in Table 2 and the statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "b4b4f8b5-7616-4666-b77e-3b08558f189a",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "HbAS protects against both uncomplicated and severe malaria illness, while BGO has no effect on uncomplicated malaria but inhibits cytoadherence of parasitized red blood cells (through effects on rosetting and membrane properties) and thereby prevents severe malaria illness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by appropriate citations to established literature (Taylor et al., 2012; Uneke, 2007; Rowe et al., 2007; M\u00e9ndez et al., 2012; Cserti and Dzik, 2007). This mechanistic understanding of how the two genetic traits differentially affect malaria pathogenesis is crucial for interpreting the study's findings and is well-established in prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "dd199604-8ddf-4b0f-bc3e-4d69348aea95",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The differential genetic protection patterns shown in Figure 1 suggest that some Ret- CM cases occur through a pathway involving uncomplicated malaria illness combined with another factor (pathway b), with malaria parasites contributing to pathogenesis and sickle cell trait reducing this pathogenic potential, while blood group O does not reduce the pathogenic potential of malaria infection for Ret- CM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C128 present the conceptual model integrating the empirical findings. The logic connecting the differential protection patterns to the proposed pathways is sound: HbAS protection against Ret- CM implicates pathway (b) because HbAS prevents uncomplicated malaria illness, while lack of BGO protection is consistent with pathway (b) because BGO doesn't affect uncomplicated malaria. The model is clearly illustrated in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "778e4867-fdb5-4167-93f8-94d911ddef60",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Evidence exists for interactions between malaria parasites and other pathogens, including effects of microvascular sequestration on gut mucosal integrity leading to bacteremia, and reduced immune responses to malaria vaccines in children coinfected with schistosomiasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by appropriate citations (Obaro and Greenwood, 2011; Mallewa et al., 2013; Postels and Birbeck, 2011; Scott et al., 2011; Diallo et al., 2010). These examples provide biological plausibility for pathway (b) in the conceptual model, where malaria illness interacts with other factors to cause Ret- CM.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "685ef8ab-85ae-4a26-ad4a-44628206a8ec",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Among children dying from Ret- CM, malaria parasitemia is typically not the sole cause of death according to autopsy data, though it is possible that in survivors from Ret- CM, malaria parasitemia is the major contributor to acute illness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by autopsy data from Taylor et al. (2004), while C80 is appropriately qualified as speculative. This distinction between fatal and non-fatal Ret- CM cases is important for interpreting the study's findings, which are based on admitted patients rather than only those who died.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "c85f81f7-4432-4a28-8a78-6b0da3f84a7b",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Factors such as the child's genome, parasite genome, and previous malaria exposures could affect whether malarial retinopathy is present, and the differential protection by HbAS but not BGO against Ret- CM could be explained by interactions between these factors and BGO.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C81 is supported by citation to Postels and Birbeck (2011), but C82 is speculative. While this alternative explanation is plausible, it is not directly tested and remains hypothetical. The authors appropriately present this as a possible explanation rather than a definitive conclusion, but it represents an important limitation in causal interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "47d621ab-0e8f-4645-9bcc-740f73781a60",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Adult and pediatric CM have important clinical differences, and the study results may not be generalizable to adults with Ret- CM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 appropriately acknowledge a limitation in generalizability. The clinical differences between adult and pediatric CM are well-established, and the authors appropriately limit their conclusions to the pediatric population studied. This is an important caveat for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "4362d042-6bd9-4635-a9d5-fe7039d10231",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Retinopathy assessment was performed by multiple ophthalmologists over 11 years using ophthalmoscopy alone, with potential variability in sensitivity between practitioners and timing of assessment. Malarial retinopathy can change over time but doesn't resolve during the 2-4 days of hospitalization, though it can worsen as a poor prognostic sign.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C93 acknowledge important methodological limitations regarding retinopathy assessment. The potential for inter-observer variability (C86) and the use of ophthalmoscopy alone (C87-C88) are appropriately discussed. However, the authors show that their results are robust to substantial measurement error through sensitivity analyses varying FDR and FOR. The clinical observations about retinopathy changes (C91-C93) are based on established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "61650640-d678-4b4b-8ea2-899cbae5fe86",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The main analysis assumed that HbAS and BGO do not affect malaria parasitemia incidence or selection of which CM cases reach the ward, but sensitivity analyses showed results were robust to plausible violations of the parasitemia assumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 clearly state key assumptions and address them through sensitivity analysis. The assumption about parasitemia incidence (C95) is supported by systematic reviews (C47) and tested in sensitivity analyses (C96, Table 3). The selection assumption (C97) is more difficult to test but is acknowledged as a limitation. The transparency about assumptions strengthens the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "ea12fafe-f6dd-4254-abdf-0142905eba56",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Some non-malaria hospital controls had malaria parasitemia, potentially contributing to their illness, and older hospital controls may have selection bias for HbAS due to survival to older age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 identify potential biases in the hospital control group. C98 is a factual observation, C99 is appropriately qualified speculation, and C100 is supported by citation to Ackerman et al. (2005). The authors note that results are robust when using only community controls, which addresses these concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "ce05e336-01b5-462d-bfca-406becd7bbdb",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The use of two control groups (community and hospital) provides methodological advantages: similar exposure rates between control groups provide evidence against hidden bias and selection bias, and community controls are less likely to suffer from selection bias while hospital controls may reduce hidden bias from population stratification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C117 are supported by citation to Rosenbaum (1987) and present sound methodological reasoning. The dual control group design is a strength of the study, allowing assessment of potential biases. The finding that the two control groups have similar trait frequencies (C48-C49) supports the validity of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    },
+    {
+      "id": "251a19a6-5444-4396-a447-56e8c8bf2052",
+      "content_id": "10e976fa-e7e3-435f-b274-39d16890ad97",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Ret+ CM patients have higher P. falciparum HRP2 concentrations than Ret- CM patients, and retinal findings mirror microvascular pathology and correlate with brain sequestration at autopsy. In contrast, Ret- CM patients dying have minimal cerebral sequestration, decreased HRP2, and various non-malarial causes of death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C134 are supported by appropriate citations (Seydel et al., 2012; MacCormick et al., 2015; Barrera et al., 2015; Taylor et al., 2004). These findings establish the biological validity of the retinopathy classification and support the distinct pathophysiology of Ret+ versus Ret- CM, which is fundamental to the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:29:38.769262Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1b4dc110-040c-4a63-9624-9ceea220fb52",
+      "result_id": "cc2e4693-bdb0-4cb5-a302-bb0bd94c52a4"
+    },
+    {
+      "claim_id": "197a209f-b849-4fb9-8425-47c70f16a5af",
+      "result_id": "cc2e4693-bdb0-4cb5-a302-bb0bd94c52a4"
+    },
+    {
+      "claim_id": "e43624e1-85e2-458a-b13b-91624ec3d36f",
+      "result_id": "cc2e4693-bdb0-4cb5-a302-bb0bd94c52a4"
+    },
+    {
+      "claim_id": "cc26f28a-a888-4415-9d02-aef9269f7419",
+      "result_id": "77c14179-1733-496b-927c-249c6d748446"
+    },
+    {
+      "claim_id": "bb4b5803-c56d-42fa-83c6-9be4d91cf453",
+      "result_id": "77c14179-1733-496b-927c-249c6d748446"
+    },
+    {
+      "claim_id": "83ec76d8-c1fd-4201-9442-328e080e1dd6",
+      "result_id": "77c14179-1733-496b-927c-249c6d748446"
+    },
+    {
+      "claim_id": "b2dcf167-3e5f-4a88-b71d-c47cf641d2f9",
+      "result_id": "2ec11437-ea2f-4158-90eb-787437be1d48"
+    },
+    {
+      "claim_id": "359ae3bb-7029-462e-806e-dddba0a0f2c8",
+      "result_id": "2ec11437-ea2f-4158-90eb-787437be1d48"
+    },
+    {
+      "claim_id": "9db4adbe-662c-481f-9cf7-1e29bb417de7",
+      "result_id": "2ec11437-ea2f-4158-90eb-787437be1d48"
+    },
+    {
+      "claim_id": "67d25875-9e73-4696-afd2-d6dd2ad18f85",
+      "result_id": "2ec11437-ea2f-4158-90eb-787437be1d48"
+    },
+    {
+      "claim_id": "490678be-306d-42b6-9c19-3fbc088da211",
+      "result_id": "2ec11437-ea2f-4158-90eb-787437be1d48"
+    },
+    {
+      "claim_id": "e13d7ee1-9692-42c2-898f-91fb7e10ad84",
+      "result_id": "2ec11437-ea2f-4158-90eb-787437be1d48"
+    },
+    {
+      "claim_id": "acb5d9ca-a23b-411f-990d-06ced26a55f2",
+      "result_id": "3b76904e-baac-4424-88a7-c996be75870b"
+    },
+    {
+      "claim_id": "95555bb6-7174-463a-98af-4b76b7bdd7d8",
+      "result_id": "3b76904e-baac-4424-88a7-c996be75870b"
+    },
+    {
+      "claim_id": "daf910e7-2cfd-4004-88c0-62c6dfe6eb8c",
+      "result_id": "3b76904e-baac-4424-88a7-c996be75870b"
+    },
+    {
+      "claim_id": "dd3f051d-85c6-4d21-a949-f2cac7f50269",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "fed50781-bd12-47d1-806e-e9571f7a2509",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "f942df44-cdd0-4dd8-a337-11b24ee578a3",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "e940283e-6137-4f69-b5ea-85a243b055e2",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "90799be4-49e0-4283-ac9b-84fdd9c74c27",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "59069fd9-e696-4eb3-8fba-371800c5460a",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "9030f321-5d11-40aa-9cc0-3086f53a917b",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "09e40364-09df-4b36-bcba-dfeed3879313",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "772463f6-c571-48be-a147-cb6da4ad3039",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "f663e8ba-137c-4784-a451-36e7b2af6287",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "322d4890-6a6d-47a9-9f9f-af0a7e1fb0fe",
+      "result_id": "eb46ccfa-72f9-4b87-bfe1-3d67ffd47f19"
+    },
+    {
+      "claim_id": "5735af7b-3ed8-47be-a809-33eb314dd76c",
+      "result_id": "d43a8572-f818-4c3e-936e-05ec933250e6"
+    },
+    {
+      "claim_id": "fcb8c7c6-fb7f-459f-82ee-ec91b63cdb2e",
+      "result_id": "d43a8572-f818-4c3e-936e-05ec933250e6"
+    },
+    {
+      "claim_id": "db22aded-7bc3-4a97-8bac-0efeb670d206",
+      "result_id": "d43a8572-f818-4c3e-936e-05ec933250e6"
+    },
+    {
+      "claim_id": "edaaf747-d0c1-4b3f-a7f1-52a75066b34d",
+      "result_id": "d43a8572-f818-4c3e-936e-05ec933250e6"
+    },
+    {
+      "claim_id": "17357c2f-b152-4495-9a25-8617c70d4eaf",
+      "result_id": "d43a8572-f818-4c3e-936e-05ec933250e6"
+    },
+    {
+      "claim_id": "9f88b6e0-e657-43aa-b9c3-43ef71a2e788",
+      "result_id": "7f5111cf-a88f-474b-b3d0-44b245d441ba"
+    },
+    {
+      "claim_id": "b5e2d849-3870-4b25-acc9-62ddee9d6dab",
+      "result_id": "7f5111cf-a88f-474b-b3d0-44b245d441ba"
+    },
+    {
+      "claim_id": "60c6629a-84ea-4c2f-b8e0-1b7296c25157",
+      "result_id": "7f5111cf-a88f-474b-b3d0-44b245d441ba"
+    },
+    {
+      "claim_id": "da27bf92-bfbd-4d5a-9b05-e7ea7af1a35d",
+      "result_id": "7f5111cf-a88f-474b-b3d0-44b245d441ba"
+    },
+    {
+      "claim_id": "1ac75eed-cdf5-4fc9-acb2-dab27d45a2a5",
+      "result_id": "7f5111cf-a88f-474b-b3d0-44b245d441ba"
+    },
+    {
+      "claim_id": "68cc257b-0c5a-4767-8e25-d7b95d379cf7",
+      "result_id": "7f5111cf-a88f-474b-b3d0-44b245d441ba"
+    },
+    {
+      "claim_id": "e0919b4c-f3ee-4c21-b9f5-8e05c4cd7b0a",
+      "result_id": "364a9905-90fc-4d86-9d69-6ce3e1a060fb"
+    },
+    {
+      "claim_id": "48ca7f55-001c-4301-8a92-a6fbaa3567ed",
+      "result_id": "364a9905-90fc-4d86-9d69-6ce3e1a060fb"
+    },
+    {
+      "claim_id": "99d6dd15-a5ae-4e88-9d08-f0cebb8498c1",
+      "result_id": "364a9905-90fc-4d86-9d69-6ce3e1a060fb"
+    },
+    {
+      "claim_id": "24d037ad-1591-4f22-b906-2febc06f30be",
+      "result_id": "cc96e4be-0781-4d00-8db7-21d1f479a84a"
+    },
+    {
+      "claim_id": "ce322ec9-1c8c-4b83-945d-b7c73541d8ee",
+      "result_id": "cc96e4be-0781-4d00-8db7-21d1f479a84a"
+    },
+    {
+      "claim_id": "96a9e3d7-3cbb-4b9f-b067-a941a1b5213a",
+      "result_id": "97feb82e-b582-45d7-863b-64db4bbf1a06"
+    },
+    {
+      "claim_id": "bb1070a4-e415-4b47-b265-511b197f30ea",
+      "result_id": "97feb82e-b582-45d7-863b-64db4bbf1a06"
+    },
+    {
+      "claim_id": "bd1ffbb0-4aa4-4b66-842c-817bff0af3c6",
+      "result_id": "97feb82e-b582-45d7-863b-64db4bbf1a06"
+    },
+    {
+      "claim_id": "c731425c-672b-413c-a755-ef9cb3bd8186",
+      "result_id": "97feb82e-b582-45d7-863b-64db4bbf1a06"
+    },
+    {
+      "claim_id": "debaa69d-d65d-4009-bf86-2a1334d062a8",
+      "result_id": "678112d6-b3fe-471e-99c3-51195c7460ad"
+    },
+    {
+      "claim_id": "2f46493a-84b7-4ee2-a039-51ce6075f06a",
+      "result_id": "678112d6-b3fe-471e-99c3-51195c7460ad"
+    },
+    {
+      "claim_id": "cc3edc27-6010-4ad8-8180-9e6cf7c5c781",
+      "result_id": "45a0ed0b-9d1a-4501-997d-748b53631c96"
+    },
+    {
+      "claim_id": "8d1e01b2-2836-4a4c-b67a-1bb12ef16a6f",
+      "result_id": "45a0ed0b-9d1a-4501-997d-748b53631c96"
+    },
+    {
+      "claim_id": "1fce61a9-6d85-4c23-b571-b5e175078d21",
+      "result_id": "45a0ed0b-9d1a-4501-997d-748b53631c96"
+    },
+    {
+      "claim_id": "b2cb41ba-ea4d-402b-8c81-63247fb2dd22",
+      "result_id": "3b3f0cbb-31f6-44cd-9b73-9a2dc295b226"
+    },
+    {
+      "claim_id": "9ea98d54-57e7-4167-9ab2-1d1694681e9c",
+      "result_id": "3b3f0cbb-31f6-44cd-9b73-9a2dc295b226"
+    },
+    {
+      "claim_id": "62ddeb45-a438-4f0a-9426-ca89400c148e",
+      "result_id": "0dd15464-b2e3-4611-be3b-e0ef26f192a9"
+    },
+    {
+      "claim_id": "3edb2a0e-2bb0-43a1-bbee-893a5cc33782",
+      "result_id": "0dd15464-b2e3-4611-be3b-e0ef26f192a9"
+    },
+    {
+      "claim_id": "cd1f2b6a-6380-479b-b887-a0273952e4f0",
+      "result_id": "713af4a2-b93b-45c9-a6df-69545dc97bf9"
+    },
+    {
+      "claim_id": "305dc58e-4cb0-440e-ba0f-585b2e8458de",
+      "result_id": "713af4a2-b93b-45c9-a6df-69545dc97bf9"
+    },
+    {
+      "claim_id": "550fef38-b2ba-4012-8f7f-82aab1993ee7",
+      "result_id": "b4b4f8b5-7616-4666-b77e-3b08558f189a"
+    },
+    {
+      "claim_id": "fce8ea4d-8ab5-4cfb-95fa-5e5e329c2ab6",
+      "result_id": "b4b4f8b5-7616-4666-b77e-3b08558f189a"
+    },
+    {
+      "claim_id": "5fda13a3-bf42-45b5-aee8-01d4eca9176d",
+      "result_id": "b4b4f8b5-7616-4666-b77e-3b08558f189a"
+    },
+    {
+      "claim_id": "04ffe68e-334d-41b2-8cab-906015c13d75",
+      "result_id": "b4b4f8b5-7616-4666-b77e-3b08558f189a"
+    },
+    {
+      "claim_id": "4b9562e0-2164-43c1-b561-1ac87615d8c3",
+      "result_id": "dd199604-8ddf-4b0f-bc3e-4d69348aea95"
+    },
+    {
+      "claim_id": "32796484-d8bc-4fea-ad09-57e52a4c5652",
+      "result_id": "dd199604-8ddf-4b0f-bc3e-4d69348aea95"
+    },
+    {
+      "claim_id": "3d6de6b6-c858-427d-a46a-528c6404df27",
+      "result_id": "dd199604-8ddf-4b0f-bc3e-4d69348aea95"
+    },
+    {
+      "claim_id": "499bbfd6-8adb-4985-af30-520a6560fc23",
+      "result_id": "dd199604-8ddf-4b0f-bc3e-4d69348aea95"
+    },
+    {
+      "claim_id": "9490af5f-a3bf-4728-b9bb-fad8808d356f",
+      "result_id": "dd199604-8ddf-4b0f-bc3e-4d69348aea95"
+    },
+    {
+      "claim_id": "25fdacd6-a17e-456b-b208-cd6446b5966b",
+      "result_id": "dd199604-8ddf-4b0f-bc3e-4d69348aea95"
+    },
+    {
+      "claim_id": "15f2acfd-04c2-4a49-a802-60fb66e88c11",
+      "result_id": "778e4867-fdb5-4167-93f8-94d911ddef60"
+    },
+    {
+      "claim_id": "9220c739-74cc-427c-9ba6-54859a2db4aa",
+      "result_id": "778e4867-fdb5-4167-93f8-94d911ddef60"
+    },
+    {
+      "claim_id": "740611c8-f665-4db5-a15c-01a6d51c6dc5",
+      "result_id": "778e4867-fdb5-4167-93f8-94d911ddef60"
+    },
+    {
+      "claim_id": "7dca0fb6-0a4d-46dd-8a4d-1475ef0b4571",
+      "result_id": "685ef8ab-85ae-4a26-ad4a-44628206a8ec"
+    },
+    {
+      "claim_id": "224dc101-4168-4012-9ee6-74d0da1bf8e4",
+      "result_id": "685ef8ab-85ae-4a26-ad4a-44628206a8ec"
+    },
+    {
+      "claim_id": "197f3690-4084-484d-bb2b-0395a297e843",
+      "result_id": "c85f81f7-4432-4a28-8a78-6b0da3f84a7b"
+    },
+    {
+      "claim_id": "2fe5cba2-9b1e-42ea-9c2f-270c83f27946",
+      "result_id": "c85f81f7-4432-4a28-8a78-6b0da3f84a7b"
+    },
+    {
+      "claim_id": "a436461e-1d71-4192-a8a0-0b082166496f",
+      "result_id": "47d621ab-0e8f-4645-9bcc-740f73781a60"
+    },
+    {
+      "claim_id": "54b4fc09-1abc-4a91-ac4d-f38a580bf5c8",
+      "result_id": "47d621ab-0e8f-4645-9bcc-740f73781a60"
+    },
+    {
+      "claim_id": "ac4d2fe8-ea01-448a-af7b-25c0d3c4fe89",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "3358da40-acaf-42bc-9735-f585fd43480b",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "83658b30-709d-4151-a829-31b432d1ad96",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "e3f80571-81aa-4d83-85ab-0a9905ee20fa",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "b9dbd872-5462-44c1-94d5-4f0604a878fd",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "b4c8a18b-282d-480d-8d1e-5fb83349bb1c",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "1de0c2e1-3868-4e9d-bcc4-ae0ac0ffce09",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "694721ae-4891-431c-953e-8a6beabc33a4",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "8df71c41-3176-4caf-bd28-727f0b6d6014",
+      "result_id": "4362d042-6bd9-4635-a9d5-fe7039d10231"
+    },
+    {
+      "claim_id": "086121de-f08d-4e27-b4c9-832586280324",
+      "result_id": "61650640-d678-4b4b-8ea2-899cbae5fe86"
+    },
+    {
+      "claim_id": "ae71dd68-1c30-43fd-ad0b-1e5e88d3ea50",
+      "result_id": "61650640-d678-4b4b-8ea2-899cbae5fe86"
+    },
+    {
+      "claim_id": "5f5cf632-762f-4b50-9856-039c95e8f078",
+      "result_id": "61650640-d678-4b4b-8ea2-899cbae5fe86"
+    },
+    {
+      "claim_id": "31ceeb90-e945-4aaa-8eb8-660f0414882f",
+      "result_id": "ea12fafe-f6dd-4254-abdf-0142905eba56"
+    },
+    {
+      "claim_id": "a3711733-3264-4f9c-836a-270724e7100f",
+      "result_id": "ea12fafe-f6dd-4254-abdf-0142905eba56"
+    },
+    {
+      "claim_id": "041c997b-8a9c-449e-84f7-cf9ff430274d",
+      "result_id": "ea12fafe-f6dd-4254-abdf-0142905eba56"
+    },
+    {
+      "claim_id": "f5ddd7f0-c313-4f82-ba2c-c5bdbf18bcc4",
+      "result_id": "ce05e336-01b5-462d-bfca-406becd7bbdb"
+    },
+    {
+      "claim_id": "35ccad11-9546-4b4d-a901-4dc1707eee52",
+      "result_id": "ce05e336-01b5-462d-bfca-406becd7bbdb"
+    },
+    {
+      "claim_id": "b07a90bb-c149-4f29-97ed-4c4f8afeed3d",
+      "result_id": "ce05e336-01b5-462d-bfca-406becd7bbdb"
+    },
+    {
+      "claim_id": "16310af2-f722-45fa-8a62-983bd854e34b",
+      "result_id": "ce05e336-01b5-462d-bfca-406becd7bbdb"
+    },
+    {
+      "claim_id": "3dcdc4bd-c4c9-4ea3-be9c-d359e9339daa",
+      "result_id": "ce05e336-01b5-462d-bfca-406becd7bbdb"
+    },
+    {
+      "claim_id": "79b1f3e9-e768-4f5e-a8ce-bb97960923ee",
+      "result_id": "ce05e336-01b5-462d-bfca-406becd7bbdb"
+    },
+    {
+      "claim_id": "dd25f9bc-ab25-4b9d-b364-3e33aaf77129",
+      "result_id": "251a19a6-5444-4396-a447-56e8c8bf2052"
+    },
+    {
+      "claim_id": "3d47fcc7-be8b-4d25-9631-2335198abbb4",
+      "result_id": "251a19a6-5444-4396-a447-56e8c8bf2052"
+    },
+    {
+      "claim_id": "091450d5-94ae-4f74-bedb-d02d6a20dc0a",
+      "result_id": "251a19a6-5444-4396-a447-56e8c8bf2052"
+    },
+    {
+      "claim_id": "d81fd7dc-7466-478d-b88e-03a7cb1e8d3d",
+      "result_id": "251a19a6-5444-4396-a447-56e8c8bf2052"
+    },
+    {
+      "claim_id": "3a669851-f04e-443e-900f-6079ea9b10d3",
+      "result_id": "251a19a6-5444-4396-a447-56e8c8bf2052"
+    },
+    {
+      "claim_id": "66987150-03bc-49ef-b15f-047d75c075c8",
+      "result_id": "251a19a6-5444-4396-a447-56e8c8bf2052"
+    }
+  ],
+  "comparisons": []
+}

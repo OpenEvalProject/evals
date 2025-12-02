@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A large-scale optogenetic interface was developed and validated in two rhesus macaques, enabling simultaneous optogenetic stimulation of excitatory pyramidal neurons and \u03bcECoG recording across M1 and S1 cortex. Histological analysis confirmed selective expression in excitatory neurons across cortical layers II-III and V-VI, with no co-localization with interneuron markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, C97-C103, and C106-C110 collectively establish the experimental system. The optogenetic interface is well-characterized through histology (C106-C110), viral infusion protocols are documented (C99-C101), and functional validation is confirmed (C102). The methodological details are sufficient and the histological evidence strongly supports selective targeting of excitatory neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C2"
+    ],
+    "result": "Two measures of functional connectivity\u2014stimulus-evoked response ratio (SERR) and baseline coherence\u2014were established and shown to be strongly correlated at baseline. Optogenetic stimulation evoked bimodal response patterns with 3-6 ms separation, spatially segregating primary and secondary responses across M1 and S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 and C2 demonstrate robust baseline correlation between SERR and coherence (p=3.73e-06, 69% of experiments significant). The bimodal response distribution (C13) and spatial segregation (C14) are supported by data in Figure 2. The statistical evidence is strong, though the interpretation that this reflects 'network dynamics across the frequency spectrum' (C18) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Optogenetic stimulation (50 min, 5-7 Hz) in either S1 or M1 significantly strengthened inter-area functional connectivity as measured by SERR. The effect was symmetric between areas, observed in 14/18 experiments, and significantly larger than control sessions without stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C24 provide converging evidence for stimulation-induced increases in SERR. Statistical support is strong (p=3.88e-11 for example session, p=0.0036 vs. controls). The symmetry between S1 and M1 stimulation (C22) and control comparisons (C23-C24) strengthen the conclusion. Sample sizes are adequate (14/18 experiments showing effect).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Optogenetic conditioning increased theta-band (4-8 Hz) coherence between M1 and S1 in the majority of experiments (13/20), with the effect localized specifically to the theta band. Changes in theta-band power were not significant, supporting that coherence changes reflect functional connectivity rather than power changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate theta-band specific effects with appropriate statistical corrections (Bonferroni, p=0.017). The control for power changes (C28) is important and strengthens the interpretation. However, the authors acknowledge difficulty interpreting this result since stimulation frequency (5-7 Hz) falls within theta band (C77), which introduces potential confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "After conditioning, the correlation between SERR and coherence significantly decreased (p=6.3e-10), and changes in the two measures were uncorrelated (p=0.85). This effect was specific to stimulation sessions and not observed in controls, suggesting differential effects of stimulation on the two connectivity measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 show statistically significant decorrelation after stimulation with appropriate controls. The interpretation (C31) that stimulation affects measures differently is reasonable given the data. However, C66-C67 note this may be frequency-dependent and transient, introducing some uncertainty about the mechanism and generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Connectivity changes began within the first 10-minute conditioning block and increased progressively across the session. SERR and coherence changes were temporally correlated (r=0.26). Significant SERR increases were detected at ~4.5 min in 4/5 blocks. Partial unlearning occurred during passive recording periods, though some changes persisted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C80-C82 establish rapid onset and temporal dynamics of plasticity. The detection of changes within 4.5 min (C35) is well-supported. The observation of partial unlearning (C36, C81) with some persistence (C82) is important for understanding plasticity stability. The temporal correlation between measures (C34) is modest but significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C5"
+    ],
+    "result": "Stimulation produced heterogeneous connectivity changes across the network that were predicted by stimulus-evoked coherence patterns. Linear regression showed stimulus-evoked coherence significantly predicted changes in baseline coherence (p=2.41e-19, 101/105 blocks significant), consistent with Hebbian plasticity models where correlated activity strengthens connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C37-C43 provide strong evidence for Hebbian-like plasticity at network scale. The regression analysis is robust (96% of blocks significant) and the methodological approach to avoid spurious correlations by splitting baseline data is appropriate. The consistency across experiments and monkeys strengthens the conclusion. This is a key finding extending Hebbian principles to large-scale networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C86"
+    ],
+    "result": "With interference stimulation patterns (10-30 ms latency between lasers), mean inter-area connectivity did not consistently increase, but stimulus-evoked coherence continued to predict baseline coherence changes (p=1.37e-28, 160/170 blocks significant). Regression parameters were similar to simple stimulation and significantly larger than controls, supporting Hebbian plasticity across diverse stimulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C86 demonstrate robustness of the Hebbian relationship across stimulation patterns. The lack of mean connectivity increase with interference (C44) contrasts with simple stimulation, but the preserved predictive relationship (C45-C47) supports the Hebbian model. Statistical evidence is very strong (94% of blocks significant). This generalization strengthens the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SERR and coherence reflect different but related aspects of connectivity: SERR more directly measures projections from stimulation sites (influenced by synaptic, antidromic, and network effects), while coherence captures broader network dynamics. Their baseline correlation is expected in networks with Hebbian stability mechanisms where connectivity drives correlated activity and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 provide a theoretical framework for interpreting the two measures. The distinction between measures is reasonable given the methodologies. The Hebbian stability argument (C62, C65) is supported by citations to theoretical work. However, some claims are inferential (C59-C60, C63-C64) and the interpretation of what each measure captures could benefit from more direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Single-site optogenetic stimulation strengthens inter-area connectivity, consistent with STDP rules given the 3-6 ms delay between primary and secondary responses. This is the first study explaining large-scale network changes across cortical areas using Hebbian plasticity principles, extending prior work on local circuits and single-area plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 position the findings in context of STDP and prior work. The STDP interpretation (C72-C73) is reasonable given response timing, though direct evidence for STDP mechanisms is not provided. The novelty claim (C76) appears justified as prior work focused on local circuits or single areas. The connection to prior literature (C71, C74-C75) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The theta-band specificity of coherence changes is difficult to interpret because the conditioning frequency (5-7 Hz) falls within the theta band. Possible explanations include selective Hebbian enhancement at conditioning frequency or that theta coherence best reflects plastic connections between M1 and S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 acknowledge an interpretive challenge. C77 correctly identifies the confound between stimulation and measurement frequencies. C78-C79 offer speculative explanations without additional data to distinguish between them. The authors appropriately flag this as uncertain, but it remains a limitation for interpreting the theta-band results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The optogenetic approach enabled artifact-free recording during stimulation, allowing direct testing of Hebbian models by comparing stimulus-evoked correlations with network changes. A predictive linear relationship was found between stimulus-evoked coherence and baseline coherence changes. Prior work suggests longer conditioning (3-48 hr) produces more stable changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 highlight methodological advantages and contextualize findings. The artifact-free recording (C84) is a key advantage over electrical stimulation. The linear relationship (C85) is well-supported by data in Figures 6-7. The citation to prior work on stability (C83) appropriately contextualizes the 50-min conditioning duration used here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "This study differs from prior sensory plasticity work by directly manipulating cortical circuits without detailed somatotopic mapping and examining changes over minutes rather than days-to-months. Despite these differences, both approaches support a key role for Hebbian learning in sensorimotor cortical plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 appropriately contextualize the work relative to sensory plasticity literature. The distinctions (C88-C90) are clearly stated. The synthesis (C91) is reasonable but somewhat inferential, as the authors acknowledge that 'a deeper understanding of the relationship between these bodies of work would require a study of intermediate time-frames.' This is an appropriate discussion point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The experimental approach has limitations: surface stimulation with blue light limits penetration depth due to absorption and scattering, and surface \u03bcECoG recordings reflect summed activity, making direct comparisons to synaptic learning rules difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately acknowledge technical limitations. C92 is supported by citation and represents a known constraint of optogenetics. C93 correctly identifies that \u03bcECoG measures population activity rather than single-cell or synaptic events. These are honest assessments that appropriately qualify the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The results provide proof-of-concept that optogenetic stimulation can drive predictable network-scale connectivity changes. Success in non-human primates represents progress toward translational applications, and optogenetics remains valuable for understanding plasticity mechanisms even if therapeutic applications ultimately use electrical stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 offer appropriate forward-looking perspectives. C94 is a reasonable summary of the main findings. C95-C96 discuss translational potential with appropriate caution, acknowledging that clinical applications may use electrical rather than optogenetic stimulation. These are measured interpretations of the work's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C68",
+      "C69",
+      "C104"
+    ],
+    "result": "Background claims establish that neurological disorders arise from aberrant connectivity, the brain shows plasticity during learning and recovery, Hebbian models explain activity-dependent plasticity, M1-S1 connectivity has been demonstrated across modalities, and prior work has shown stimulation-induced plasticity. High gamma activity represents local cortical column activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C11-C12, C50-C55, C68-C69, and C104 provide background context supported by appropriate citations. These establish the scientific foundation and prior knowledge base for the study. The citations appear appropriate and the claims accurately represent the cited work based on the context provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The decreased correlation between SERR and coherence after conditioning may be limited to high frequencies and may reflect transient network instability due to stimulation-induced perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 are explicitly speculative ('seems to be,' 'may reflect'). While the frequency-dependence observation has some data support, the interpretation as 'transient instability' is not directly tested. This represents a reasonable hypothesis but lacks sufficient evidence for strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Sessions without secondary responses were excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 describes an exclusion criterion that is methodologically appropriate\u2014sessions without inter-area responses cannot assess inter-area connectivity. Table 1 documents which sessions were analyzed. This is a reasonable quality control measure.",
+    "result_type": "MINOR"
+  }
+]

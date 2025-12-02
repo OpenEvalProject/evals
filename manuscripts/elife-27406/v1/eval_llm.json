@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "H3-G34R mutation specifically reduces H3K36 tri-methylation and acetylation while retaining/accumulating H3K36 di-methylation. Set2 recruitment to chromatin is normal, but its activity is impaired, and this defect cannot be bypassed by Set2 overexpression. The mutation does not override cell cycle control of Set2 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C18-C27, C29, C35-C38 collectively demonstrate that H3-G34R specifically reduces H3K36me3 and H3K36ac while maintaining/elevating H3K36me2. Multiple lines of evidence support this: Western blots (C18, C19, C35), mass spectrometry (C29), antibody binding assays accounting for epitope recognition (C20), ChIP showing normal Set2 recruitment (C23), and overexpression experiments showing the defect cannot be rescued (C25-C27). The cell cycle data (C35-C37) further validates that the mutation affects Set2 activity throughout the cell cycle without overriding its regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "H3-G34R mutants show milder transcriptional effects than set2\u0394, with partial overlap in gene regulation. Both mutants upregulate antisense transcripts, suggesting H3K36me3 represses antisense transcription. However, H3-G34R and set2\u0394 show opposite regulation of sub-subtelomeric domains, with repression in H3-G34R potentially linked to H3K36me2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 are supported by comprehensive RNA-seq data (Figure 2) showing distinct transcriptional profiles. The data demonstrate that H3-G34R affects fewer genes than set2\u0394 (C41, C42), with 88 genes coordinately upregulated (C44) and differential regulation of sub-subtelomeric regions (C45). The antisense transcript analysis (C47-C49) provides strong evidence for H3K36me3's role in antisense repression. The inference about H3K36me2's role in sub-subtelomeric repression (C51) is logical given the genetic data showing this repression is lost in set2\u0394 but maintained in H3-G34R.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Heterochromatin architecture is intact in H3-G34R cells, with normal H3K9 methylation, Swi6 recruitment, and Cnp1 localization at centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are well-supported by multiple complementary assays: RT-PCR showing similar transcript levels at heterochromatic loci (C52), ChIP data demonstrating normal H3K9me2 and Swi6 enrichment (C53, C54), and Cnp1 ChIP showing normal kinetochore assembly (C55). These converging lines of evidence strongly support the conclusion that heterochromatin architecture is maintained in H3-G34R cells (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "H3-G34R cells exhibit elevated chromosomal instability independent of heterochromatin or kinetochore defects, with increased minichromosome loss (3.5%), chromosome missegregation (7.4%), and aberrant DNA positioning on anaphase spindles (~38%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by multiple chromosome stability assays. The minichromosome loss assay (C57, Figure 3a) shows significant elevation in H3-G34R but not set2\u0394. The lagging chromosome analysis (C59, Figure 3b) and synchronized cell analysis (C60, Figure 3c) provide quantitative evidence of segregation defects. The conclusion (C61) that these defects are independent of heterochromatin/kinetochore dysfunction is justified by the data in Figure 2\u2014figure supplement 1 showing normal heterochromatin markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "H3-G34R cells are selectively sensitive to replication stress-inducing agents (HU, CPT, MMS) but not to replication-independent genotoxins (\u03b3IR, bleomycin). This sensitivity cannot be rescued by Set2 overexpression, and double mutants show additive defects with set2\u0394 on CPT and MMS but not HU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are supported by comprehensive genotoxin sensitivity assays (Figure 4). Serial dilution assays (C63, C64) clearly demonstrate selective sensitivity to replication stress agents. The differential sensitivity pattern between H3-G34R and set2\u0394 (C64, C65) is well-documented. The genetic interaction data (C67) showing additivity on CPT/MMS but not HU suggests distinct mechanisms. The Set2 overexpression experiment (C68, C69) provides strong evidence that the DNA damage sensitivity is not simply due to reduced H3K36me3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "DNA damage checkpoint signaling is functional in H3-G34R cells, with normal \u03b3H2A phosphorylation, Chk1 activation, Cds1 pathway function, and checkpoint-dependent cell elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by multiple checkpoint assays (Figure 5). Western blots show normal \u03b3H2A levels after damage (C70), Chk1 mobility shifts indicate proper activation (C71), RPA foci analysis demonstrates functional Cds1 pathway (C72), and cell elongation assays confirm intact checkpoint arrest (C73). These converging lines of evidence strongly support the conclusion that checkpoint signaling is functional (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "H3-G34R cells have defective homologous recombination (HR) with ~35% efficiency compared to wild-type. The HR defect is distinct from set2\u0394 as shown by additive defects in double mutants (90% reduction). H3-G34R shows epistasis with rad51\u0394 but synergy with PRR and NHEJ mutants, and does not require ORC for recovery from HU stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 are supported by comprehensive DNA repair pathway analysis (Figure 6). The epistasis with rad51\u0394 (C78) and synergy with PRR/NHEJ mutants (C76, C77) provide strong genetic evidence for HR defects. The direct HR assay (C80, C81, Figure 6f) quantitatively demonstrates reduced efficiency. The additive defects in set2\u0394 H3-G34R double mutants (C81, C82) indicate distinct mechanisms. The ORC independence (C75) distinguishes H3-G34R from other replication stress-sensitive mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "H3-G34R cells show altered HR protein dynamics with increased basal RPA and Rad52 foci, but fewer Rad51 and Rad52 foci after MMS treatment. H3-G34R cells exhibit RPA-marked ultrafine anaphase bridges, indicating delayed resolution of replication intermediates contributes to chromosome segregation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by immunofluorescence data (Figure 6g, Figure 6\u2014figure supplement 3). The increased basal foci (C85) and reduced damage-induced foci (C86) are quantified, with Western blots confirming this is not due to protein level changes (C87). The co-localization data (C88) validates that foci mark damage sites. The anaphase bridge observation (C89, Figure 6\u2014figure supplement 3d) provides direct visual evidence linking HR defects to segregation problems (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "H3-G34R mutants show delayed recovery from replication stress with slower induction of DNA damage response. \u03b3H2A accumulation is delayed and persists longer, and Rad52 foci accumulate more slowly during MMS treatment but peak later during recovery. These altered kinetics may contribute to HR repair defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by time-course experiments (Figure 7). Cell proliferation data (C91) and EdU incorporation assays (C92) demonstrate delayed recovery. The \u03b3H2A kinetics (C93, C94, Figure 7c) and Rad52 foci dynamics (C95, C96, Figure 7d) are quantitatively documented over time courses. The conclusion about altered kinetics (C97, C98) is a reasonable inference from the temporal data showing consistent delays in damage response markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Fission yeast sole copy histone strains expressing only H3-G34R maintain normal histone levels, are viable at various temperatures, and have normal chromosomal integrity by PFGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 establish the basic characterization of the model system. The histone gene structure (C10, C11) is well-established knowledge supported by citations. The sole copy strain characterization (C12-C14) is supported by Western blots (Figure 1\u2014figure supplement 1b), growth assays (Figure 1\u2014figure supplement 1d), and PFGE (Figure 1\u2014figure supplement 1e). These data validate the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Mass spectrometry analysis reveals additional histone acetylation changes: slight upregulation of H3K18ac in H3-G34R, and in set2\u0394, slight reduction of H4K16ac and marked increase in H3K14ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by quantitative mass spectrometry data (Figure 1f). The measurements are technical replicates of biological samples, providing robust quantification. These findings complement the primary K36 modification changes and suggest broader chromatin alterations in set2\u0394 compared to H3-G34R.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "H3-G34R cells have an extended doubling time (201 min vs 180 min for H3-WT) and prolonged S phase (completing DNA synthesis at 140-160 min vs 80-100 min for H3-WT after G1 release).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 are supported by cell cycle measurements and FACS analysis (Figure 6\u2014figure supplement 2). The doubling time measurements (C83) are quantified with error estimates. The S phase delay (C84) is documented by FACS profiles showing delayed completion of DNA synthesis. These data provide important context for understanding the replication stress phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background on H3.3-G34R mutations in pediatric high-grade gliomas: G34R mutations occur specifically in H3F3A, co-occur with p53 and ATRX mutations, and prior studies showed reduced K36me2/3 on mutant tails. SETD2 mutations are also found in pHGG but not with histone mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C15, C99-C105 provide established background knowledge about H3.3-G34R mutations in cancer, all supported by appropriate citations to published literature. These claims establish the biological context and rationale for the study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C28",
+      "C33",
+      "C34",
+      "C39",
+      "C40",
+      "C46",
+      "C62",
+      "C106",
+      "C107"
+    ],
+    "result": "Background on H3K36 methylation and acetylation: Set2/SETD2 perform H3K36 methylation, K36 is also acetylated, these modifications are cell cycle regulated and linked to DNA damage responses. Prior studies show H3K36me2 is insufficient for silencing and that SETD2 deletion causes HR defects and delayed \u03b3H2A.X clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C28, C33, C34, C39, C40, C46, C62, C106, C107 provide established background knowledge about H3K36 modifications, all supported by appropriate citations. These claims establish the mechanistic context for interpreting the H3-G34R phenotypes but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

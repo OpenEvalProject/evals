@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The full-length mouse Suv39h2 protein is 477 amino acids and contains an N-terminal basic domain (aa 1-81) that distinguishes it from Suv39h1 (412 aa). Endogenous Suv39h1 is detected at 48 kDa and Suv39h2 at 53 kDa by Western blot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are well-supported by molecular cloning, sequencing, and Western blot data (Figure 1A, 1B). The protein sizes are consistent with the predicted amino acid lengths, and multiple antibodies confirm the molecular weights. The domain structure is validated by sequence analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Suv39h1-EGFP, Suv39h2-EGFP, and Suv39h2-D(T3K81)-EGFP can independently re-establish H3K9me3 to wild-type levels and localize to heterochromatic foci in interphase. However, Suv39h1-EGFP allows two-fold higher MSR transcript levels compared to wild type, while Suv39h2-EGFP and Suv39h2-D(T3K81)-EGFP fully restore MSR silencing, despite similar H3K9me3 ChIP signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by Western blot (Figure 1D), immunofluorescence (Figure 2A), RT-qPCR (Figure 2B), and ChIP-qPCR (Figure 2C) data. The dissociation between H3K9me3 levels and MSR silencing for Suv39h1-EGFP is an important observation suggesting functional differences beyond histone methylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "During mitosis, Suv39h1-EGFP is largely absent from mitotic chromosomes while pericentric H3K9me3 persists. In contrast, Suv39h2-EGFP displays focal accumulation at pericentric regions with higher H3K9me3 levels. The Suv39h2-D(T3K81)-EGFP mutant partially loses focal accumulation at pericentric heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by confocal immunofluorescence analysis of nocodazole-synchronized cells (Figure 2D, 2E). The differential mitotic behavior of Suv39h1 versus Suv39h2, and the partial loss of function in the basic domain deletion mutant, provide strong evidence for the role of the basic domain in mitotic chromatin retention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "In nocodazole-arrested cells, endogenous Suv39h1 and Suv39h1-EGFP show rapid solubilization during MNase digestion, while Suv39h2 and Suv39h2-EGFP remain chromatin-associated. The Suv39h2-D(T3K81)-EGFP mutant is rapidly released, indicating that the basic domain stabilizes Suv39h2 association with mitotic chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by chromatin release assays (Figure 2H, 2J). The quantitative S/P ratio analysis clearly demonstrates differential chromatin retention between Suv39h1 and Suv39h2, and the critical role of the basic domain. The experimental design appropriately controls for cell cycle stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The basic domain of Suv39h2 (aa 1-81) harbors 22 basic residues (19 arginines) and shows modest similarity with RNA binding factors involved in RNA splicing and processing, most closely resembling the arginine-rich motif (ARM) RNA binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by sequence analysis (Figure 1\u2014figure supplement 1) and cited references. The bioinformatic characterization is appropriate, though the similarity is described as 'modest,' which appropriately reflects the limitations of sequence-based predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Full-length 6xHis-MBP-Suv39h2 displays robust RNA binding to MSR-F (KD = 0.8 \u03bcM) and MSR-R (KD = 0.4 \u03bcM), with 3-8 fold higher affinity than Suv39h1. Deletion of the extended basic domain (aa 1-116) reduces binding to Suv39h1 levels, while the isolated basic domain (aa 1-117) maintains high-affinity binding (KD = 0.4-0.6 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by EMSA data (Figure 3B). The KD values are calculated from dose-response curves, and the deletion analysis provides strong evidence for the basic domain as the primary RNA-binding module. The use of recombinant proteins allows for direct biochemical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The extended basic domain of Suv39h2 (GST-Suv39h2basicD(1-117)) specifically binds single-stranded RNA but not ssDNA, dsDNA, dsRNA, or DNA:RNA hybrids. It shows highest affinity for MSR and TERRA RNA (KD \u2264 2 \u03bcM), intermediate binding to pRNA, Oct4P4, minor satellite, and LINE L1MdA 5'UTR forward RNA (KD > 2 \u03bcM), and no binding to LINE L1MdA 5'UTR reverse, SINE B1, or poly(A) RNA. GST-HP1\u03b1 shows no robust binding within the tested concentration range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by comprehensive EMSA analysis (Figure 3C, 3D, Figure 3\u2014figure supplement 1). The systematic testing of different nucleic acid substrates and multiple RNA sequences provides strong evidence for sequence/structure selectivity rather than non-specific electrostatic binding. The HP1\u03b1 control is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MSR transcripts are A/U-rich (64%) with extended single-stranded regions by SHAPE analysis, while LINE L1MdA 5'UTR is G/C-rich (61%) and primarily folded into dsRNA. RNA sequences with the highest degree of predicted single-stranded regions (MSR and TERRA) are favored substrates for the basic domain of Suv39h2, while those with the lowest (L1MdA 5'UTR-R and SINE B1) are not bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by sequence composition analysis, SHAPE-directed RNA structural modeling (Figure 4B, 4C), and correlation with EMSA binding data (Figure 4D). The SHAPE analysis provides experimental validation of RNA secondary structure, strengthening the in silico predictions. The correlation between ssRNA content and binding affinity is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Suv39h enzymes exclusively associate with poly-nucleosomes in untreated samples. Suv39h2-EGFP and Suv39h2(T3K81)-EGFP prefer higher-order nucleosomes (fractions 12-17), while Suv39h1-EGFP shows broader distribution extending into mono-nucleosomes. Dnmt3a accumulates with nucleosomes but less with poly-nucleosomes, while HP1\u03b1 sediments in nucleosome-free fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C53-C57 are supported by sucrose gradient fractionation and Western blot analysis (Figure 5A, first panel). The differential sedimentation profiles of Suv39h enzymes, Dnmt3a, and HP1\u03b1 are clearly demonstrated. The cited reference for Dnmt3a (Jeong et al., 2009) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The association of Suv39h enzymes with poly-nucleosomes is attenuated by RNaseH treatment and lost upon RNaseA digestion. RNaseH causes buildup of Suv39h-EGFP and H3K9me3 in the pellet. RNaseA (350 mM salt) shifts Suv39h1-EGFP and Suv39h2-EGFP toward mono/di-nucleosomes and specifically abrogates Suv39h2(T3K81)-EGFP chromatin association. RNaseA (100 mM salt) causes near-complete nucleosomal collapse with all Suv39h-EGFP products accumulating in the pellet, while Dnmt3a remains detectable in residual di/tri-nucleosome fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C58-C64 are supported by sucrose gradient fractionation after RNase treatments (Figure 5A, panels 2-4). The differential effects of RNaseH versus RNaseA at different salt concentrations (validated in Figure 5\u2014figure supplement 1) provide strong evidence for RNA-dependent chromatin association. The specific loss of Suv39h2(T3K81)-EGFP after RNaseA (350 mM) is particularly compelling for the role of the basic domain in ssRNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "MSR RNA remains chromatin-associated, showing progressive enrichment in nucleosome fractions (not nucleosome-free fractions) with higher signals in Suv39h dn versus wild-type ES cells. Approximately 80% of total MSR RNA is chromatin-associated, with the highest chromatin/nucleoplasm ratio among repeat classes. RNA-seq shows MSR transcripts give elevated reads in chromatin (1800 counts) versus nucleoplasm (450 counts), while LINE L1MdA and SINE B1 show similar counts in both fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C65-C72 are supported by RT-qPCR of sucrose gradient fractions (Figure 5B), subcellular fractionation (Figure 5\u2014figure supplement 3), and RNA-seq (Figure 5C). The multiple orthogonal approaches strengthen the conclusion. The specific enrichment of MSR RNA in chromatin versus other repeat classes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Major satellite repeats are expressed from both strands with multiple transcriptional start sites. MSR RNA is transcribed by RNA Polymerase II, is not protected at the 5' end, and largely lacks a poly(A) tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by strand-specific RNA-seq (Figure 6\u2014figure supplement 1A), RNA polymerase II inhibition experiments (Figure 6\u2014figure supplement 1B), terminator exonuclease treatment (Figure 6\u2014figure supplement 1C), and poly(A) selection (Figure 6\u2014figure supplement 1D). The characterization is comprehensive and uses appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Major satellite transcripts range from ~0.5 to >7 kb with forward orientation expression considerably higher than reverse. MSR transcripts are elevated in Suv39h dn ES cells. RNaseH treatment causes pronounced reduction of MSR hybridization signal, with complete loss after RNaseA (100 mM salt). LINE L1MdA RNA shows only minor reduction upon RNaseH digestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by Northern blot analysis (Figure 6A) with strand-specific probes. The differential RNaseH sensitivity between MSR and LINE L1MdA RNA is clearly demonstrated and consistent with the proposed RNA:DNA hybrid formation for MSR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RNaseH sensitivity is an intrinsic property of MSR RNA, much less pronounced for LINE L1MdA RNA, and not found for SINE B1 or housekeeping genes. RDIP with S9.6 antibody shows 2.1% (wild type) and 3.2% (Suv39h dn) enrichment for MSR, drastically reduced by RNaseH. LINE L1MdA 5'UTR is also enriched (particularly in Suv39h dn) and RNaseH-sensitive, while SINE B1 shows no S9.6 reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84-C91 are supported by RT-qPCR of RNaseH-treated chromatin RNA (Figure 6B) and RDIP-qPCR (Figure 6C). The S9.6 antibody is well-established for detecting RNA:DNA hybrids, though the authors appropriately note it can react with other non-canonical structures (Figure 6\u2014figure supplement 2). The RNaseH sensitivity provides strong evidence for RNA:DNA hybrid formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "MSR transcripts are derepressed in Suv39h dn ES cells in both interphase and nocodazole-synchronized conditions. In synchronized cells, full-length Suv39h1-EGFP and Suv39h2-EGFP silence MSR below wild-type levels, while Suv39h2-D(T3K81)-EGFP only represses to near wild-type levels with modestly reduced H3K9me3 ChIP signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by RT-qPCR (Figure 2B, 2F) and ChIP-qPCR (Figure 2G) in nocodazole-synchronized cells. The data demonstrate functional consequences of the basic domain deletion during mitosis, though the effect is more modest than for chromatin retention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "De novo silencing of intact LINE elements may require synergistic activity of both Suv39h1 and Suv39h2 enzymes, as individual Suv39h-EGFP products cannot restore LINE silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by RT-qPCR data (Figure 2\u2014figure supplement 1) showing that none of the individual Suv39h-EGFP constructs restore LINE silencing. However, this is an inference from negative data. The claim is appropriately stated as speculative ('may require'), and alternative explanations (e.g., requirement for specific post-translational modifications, protein levels) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "An RNA-nucleosome scaffold is proposed as the physiological template for stable association of Suv39h enzymes to chromatin, based on RNA-dependent association with poly-nucleosomes and loss upon RNase treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by the integration of multiple experimental findings: RNA-dependent poly-nucleosome association (Figure 5A), MSR RNA chromatin association (Figure 5B, 5C), and RNase sensitivity. While this is an interpretive claim, it is well-supported by the data. The model is consistent with all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "A model is proposed in which mouse heterochromatin is composed of a higher-order RNA-nucleosome scaffold containing MSR RNA:DNA hybrids and significant portions of single-stranded MSR-repeat RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 integrates multiple lines of evidence: MSR RNA chromatin association, RNaseH sensitivity indicating RNA:DNA hybrids, SHAPE analysis showing ssRNA regions, and RDIP detection of RNA:DNA hybrids. While this is a speculative model (appropriately stated as 'we propose'), it is well-supported by the comprehensive experimental data. The model is illustrated in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background claims establishing prior knowledge about mouse heterochromatin composition, MSR transcription requirements in development, cell cycle regulation of MSR transcripts, and RNA binding properties of heterochromatin factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C101 are supported by cited references and represent established knowledge in the field. These provide appropriate context for the current study but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

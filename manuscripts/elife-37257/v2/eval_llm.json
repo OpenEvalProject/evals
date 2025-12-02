@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes the structural composition and assembly of the cardiac IKs channel, describing KV7.1 as a six-transmembrane segment protein (S1-S6) with S1-S4 forming voltage-sensing domains and S5-S6 forming the pore domain, and KCNE1 as a single-transmembrane auxiliary subunit that interacts with KV7.1 in the lipid-filled space between voltage-sensing domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C20 are well-supported by established literature (multiple citations to foundational studies) and represent accepted structural knowledge of the IKs channel complex. The structural descriptions are consistent with cited cryo-EM and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C28"
+    ],
+    "result": "PUFAs activate KV7.1 through an electrostatic mechanism by incorporating into the outer membrane leaflet near S3 and S4, where negatively charged PUFAs like DHA electrostatically promote outward S4 movement, shifting the voltage dependence of channel opening toward more negative voltages in a pH-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C23, C28 are supported by the authors' previous work (Liin et al., 2015b) with experimental data from Xenopus oocytes. The electrostatic mechanism is demonstrated through pH-dependent effects and voltage-shift measurements shown in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C24",
+      "C25",
+      "C29"
+    ],
+    "result": "KCNE1 co-expression abolishes the activating effect of DHA on KV7.1 at physiological pH (7.4) by decreasing local pH at the DHA-binding site, causing protonation of the DHA carboxyl head and rendering it uncharged and ineffective, with the pH dependence shifted by approximately 1 pH unit compared to KV7.1 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C24, C25, C29 are supported by previous experimental data (Liin et al., 2015b) showing abolished DHA effects at pH 7.4 and shifted pH-response curves (Figure 1E). The protonation mechanism is inferred from pH-dependence studies and supported by PUFA analogue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Mutations removing or neutralizing charged residues in the extracellular N-terminus of KCNE1 (E1/\u0394N2-38, E1/D39C/E43C, E1/K41C) did not restore KV7.1-like pH dependence of the DHA effect, indicating that extracellular charged amino acids in KCNE1 are not responsible for DHA protonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by experimental data in Figure 2B-C showing that all three KCNE1 N-terminal mutants maintained KV7.1+E1-like pH dependence with similar apparent pKa values. The conclusion is appropriately drawn from the negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Neutralization of negatively charged residues in the S5-P-helix loop of KV7.1 (E284C, D286C, E290C, E295C, D301C) produced a range of pH-response curves between WT KV7.1+E1 and KV7.1 alone, with E290C showing the largest effect by fully restoring KV7.1-like pH dependence, suggesting that negatively charged residues in this loop, especially E290, promote DHA protonation in KV7.1+E1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by systematic mutagenesis data in Figure 3B-C showing graded effects of different mutations, with E290C producing pH-response curves overlapping with KV7.1 alone. The conclusion about E290's role is well-supported by the magnitude of effect and apparent pKa measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C51"
+    ],
+    "result": "The E290C mutation only affects DHA pharmacology when KV7.1 is co-expressed with KCNE1, as KV7.1/E290C alone showed pH-response curves similar to WT KV7.1, indicating that E290 promotes DHA protonation specifically in the presence of KCNE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, C51 are supported by comparative experiments in Figure 4A-C showing that E290C mutation has no effect on KV7.1 alone but restores DHA sensitivity when co-expressed with KCNE1. This demonstrates KCNE1-dependent effects of E290.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C49",
+      "C50"
+    ],
+    "result": "Chemical modification of KV7.1/E290C+E1 with negatively charged MTSES\u207b to restore the negative charge at position 290 dramatically reduced DHA's ability to shift V50 at pH 8.2, restoring WT KV7.1+E1-like response, demonstrating that the negative charge at position 290 is critical for tuning DHA protonation and that neutralization of E290 fully restores KV7.1-like pharmacological sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C49-C50 are supported by MTSES modification experiments in Figure 4D-F showing that restoring negative charge at E290 reverses the effect of the E290C mutation. This provides strong evidence that charge, not just residue identity, is important for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The positively charged PUFA analogue AA+ shifts V50 of KV7.1 and KV7.1+E1 by approximately +10 and +23 mV respectively, but mutation of E290 significantly reduced the AA+-induced V50 shift in KV7.1+E1 to levels similar to WT KV7.1 alone, supporting the role of E290 in modulating local pH and PUFA protonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by AA+ experiments in Figure 4G showing differential effects on KV7.1 vs KV7.1+E1 and reduction of the KCNE1 effect by E290C mutation. This provides orthogonal validation of the E290 protonation mechanism using a positively charged compound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48"
+    ],
+    "result": "Neutralization of negatively charged residues in the S5-P-helix loop of KV7.1 restored PUFA effects on KV7.1+KCNE1, with E290 at the top of the turret having the largest impact on DHA protonation, while charged residues in the extracellular part of KCNE1 were not important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47, C48 summarize the main experimental findings supported by systematic mutagenesis data in Figures 2-4. The conclusion is well-supported by converging evidence from multiple mutants and experimental approaches including pH-dependence curves and chemical modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C62"
+    ],
+    "result": "The authors propose a mechanistic model in which KCNE1 indirectly promotes PUFA protonation by inducing conformational rearrangements in KV7.1 that move the S5-P-helix loop and its acidic residues (especially E290) closer to the PUFA-binding site, thereby decreasing local pH and causing PUFA protonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C52, C62 present the proposed mechanism supported by experimental data showing KCNE1-dependent effects of S5-P-helix loop mutations. The model is consistent with structural data from cited studies (disulfide bond formation, cryo-EM structures) and explains all experimental observations, though direct structural evidence of the conformational change is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The proposed mechanism is supported by structural considerations showing that E290 is located in the middle of the S5-P-helix loop and can reach the putative DHA binding site, while D301 is farther away in the P-helix, consistent with their differential effects. Published structural data show the S5-P-helix loop forms a negatively charged cap and can reach KCNE1 through disulfide bond formation and molecular dynamics simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 integrate structural information from cited studies (Sun and MacKinnon 2017, Xu et al. 2013, Chung et al. 2009) with the functional data. The structural rationalization is consistent with the magnitude of effects observed for different residues and provides plausible support for the proposed mechanism, though it relies on inference from related structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Removal of N-terminal KCNE1 residues or neutralization of charged residues in the N-terminus is insufficient to restore KV7.1-like pH dependence of the DHA effect, suggesting that the KCNE1 transmembrane segment binding to KV7.1 induces the conformational rearrangement rather than direct N-terminal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by the negative results from KCNE1 N-terminal mutants (Figure 2) and provides important mechanistic insight by ruling out direct N-terminal involvement. The conclusion logically follows from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "PUFA analogues with lower pKa head groups that prevent protonation at physiological pH can activate KV7.1+E1, and the inhibiting effect of the positively charged PUFA analogue AA+ is potentiated by KCNE1, consistent with KCNE1-induced changes in local pH affecting PUFA protonation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by citations to previous work (Liin et al., 2015b, 2016) demonstrating that PUFA analogues with different pKa values show predicted responses based on the protonation mechanism. This provides validation of the pH-dependent mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes the clinical context that over 300 mutations in KV7.1 and KCNE1 genes cause cardiac arrhythmias, with loss-of-function mutations reducing IKs currents leading to Long QT syndrome, a risk factor for ventricular fibrillation and sudden cardiac death, and that up to 30% of patients are not protected by current treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by appropriate citations to clinical literature (Hedley et al. 2009, Nerbonne and Kass 2005, Goldenberg et al. 2006, Priori et al. 2004) and represent established clinical knowledge providing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The IKs channel is a proposed target for anti-arrhythmic drugs, and while several KV7.1 activators have been identified, many are impaired by KCNE1 through diverse mechanisms including competition for binding sites or blocking access, though some compounds like mefenamic acid and DIDS show enhanced effects with KCNE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C15, C63-C67 provide literature context supported by multiple citations describing the pharmacological landscape of KV7.1 activators and KCNE1's effects. This establishes the rationale for understanding KCNE1's mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose that detailed mechanistic understanding of how KCNE1 impairs KV7.1 activator sensitivity will enable rational drug design to circumvent KCNE1-induced impairment and may open new avenues for treating cardiac arrhythmias like Long QT syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 are speculative statements about potential future applications. While the mechanistic insights provided could inform drug design, no actual drug design or therapeutic validation is presented. The claims represent reasonable speculation but lack experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study used Xenopus oocytes expressing KV7.1 and KCNE1 constructs with two-electrode voltage clamp recordings, with appropriate ethical approval, and accounted for PUFA binding to chamber walls by reporting effective concentrations at 70% of nominal concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe methodological details that are clearly stated and appropriately referenced (C74 cites B\u00f6rjesson et al. 2008 for the concentration correction). The methods are standard for this type of electrophysiology study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Prior structural studies showed that cysteines in the S5-P-helix loop of KV7.1 can form disulfide bonds with KCNE1 N-terminus residues, and that the S5-P-helix loop exerts electrostatic effects on S4 in other KV channels due to close proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 accurately cite prior work (Xu et al. 2013, Broomand et al. 2007, Elinder et al. 2016) that provides structural context for the hypothesis that the S5-P-helix loop could be near the PUFA binding site.",
+    "result_type": "MINOR"
+  }
+]

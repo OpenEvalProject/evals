@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A genome-wide association study was performed using 159 umbilical cord fibroblasts genotyped for 2.5 million SNPs, measuring circadian period, phase, amplitude, and PER1/PER2 expression. Large inter-individual differences were observed, and polymorphisms up to p=10\u207b\u2077 were identified for each clock parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C17 describe the experimental design and primary GWAS findings. The sample size (159 individuals), genotyping density (2.5M SNPs), phenotypic measurements, and statistical significance levels are clearly stated and supported by Manhattan plots and supplementary data. The study design is appropriate for an eQTL-based GWAS approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "No SNPs achieved genome-wide significance (p<5\u00d710\u207b\u2078), but allele enrichment analysis in extreme chronotypes ('larks' vs 'owls') showed that differential allelic frequency increases at p<10\u207b\u2075 or p<10\u207b\u2076 thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 acknowledge the limitation of not reaching genome-wide significance while providing validation through enrichment analysis in extreme phenotypes. The enrichment data (Figure 1b,c) supports that SNPs at relaxed thresholds show meaningful biological signal, though the sample size for this validation (35 individuals) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "At suggestive significance (p<10\u207b\u2075), correlations were observed between PER1 and PER2 expression (p=0.024), period and phase (p=1.48e-10), and period and amplitude (p=0.009). However, the most significant alleles in one category were not among the most significant in another, suggesting independent genetic regulation of circadian parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe trait correlations with appropriate statistical tests. The observed correlations between related traits (PER1/PER2, period/phase) are biologically expected. The lack of overlap in top alleles across traits (C21) is an interesting observation, though the interpretation of 'resilience' may be speculative given the modest sample size and lack of genome-wide significant hits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Gene annotation identified 59 genes putatively affecting chronotype using FDR<0.1 and chromatin conformation capture criteria. The two most significant SNPs (rs920400, p=1.0E\u207b\u2077; rs10195385, p=1.9E\u207b\u2077) affecting PER2 expression lie in the COPS7B enhancer region and show strong 3C signals with COPS7B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe the gene annotation pipeline and highlight the top finding. The use of 3C data (Figure 2a) to link distal SNPs to COPS7B is appropriate and strengthens the annotation. However, the FDR<0.1 threshold is relatively relaxed, and the authors acknowledge this by applying additional 3C criteria for genes >50kb from SNPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "RNAi screening of 60 candidate genes showed that 28 genes significantly affected circadian period and 29 affected amplitude. The distribution of RSA scores for these genes showed increased probability of affecting circadian clock compared to random genes (period: p=0.0016 increased, p=0.14 reduced; amplitude: p=0.0002 reduced, p=0.034 increased, p=0.0013 combined).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe functional validation via RNAi screening with appropriate statistical analysis (RSA scores, Kruskal-Wallis and Kolmogorov-Smirnov tests). The validation rate (~47-48% of genes showing effects) is reasonable for a GWAS-derived gene list. The statistical significance for amplitude is stronger than for period, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C2"
+    ],
+    "result": "Gene ontology and GSEA pathway analysis identified protein catabolism as a major enriched pathway, with five of the top six GSEA pathways involved in macromolecular catabolism. Half of all positive genes were involved in metabolic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32-C34 describe pathway enrichment analysis using two independent methods (GO and GSEA). The convergence on protein catabolism from both approaches strengthens the conclusion. The data is supported by Figures 3a-c and supplementary materials. This represents a key biological insight from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Genes related to protein catabolism showed increased probability of both long and short period phenotypes (p=0.009 overall; p=0.044 shorter, p=0.0008 longer) and significant skew toward reduced circadian amplitude (p=0.024 reduced, p=0.47 increased).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide focused analysis on the protein catabolism gene set with appropriate statistical tests. The bidirectional effects on period (both increases and decreases) and the skew toward amplitude reduction are clearly demonstrated in Figure 3e-f. This supports the biological importance of this pathway for circadian function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "PER2 expression levels varied significantly by rs920400 genotype (AA vs GG, p=0.00026), and strong positive correlations existed between COPS7B and PER2 expression within each genotype (AA: r=0.9327, p=0.0007; AG: r=0.9455, p=0.0004; GG: r=0.8666, p=0.0054).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 demonstrate genotype-expression relationships with strong correlations and significant p-values. The within-genotype correlations are remarkably high (r>0.86), suggesting a functional relationship between COPS7B and PER2 expression. However, the sample sizes per genotype are not stated, which would be important for evaluating the robustness of these correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "siRNA knockdown of COPS7B reduced its expression by 68%, correspondingly reduced PER2 expression, decreased circadian amplitude more than 10-fold (p=2.93\u00d710\u207b\u2077), and lengthened circadian period by 1.15 hr (p=3.27\u00d710\u207b\u2075) in U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe functional validation experiments with strong statistical significance. The effects on both amplitude and period are substantial and highly significant. The data is supported by Figure 4b-d. This provides direct experimental evidence linking COPS7B to circadian function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Targeting COPS4 produced more severe phenotypes than COPS7B (amplitude reduced >10-fold, p=3.59E\u207b\u2077; period lengthened 8.8 hr, p=4.02E\u207b\u2075, followed by arrhythmicity). This phenotype is opposite to that observed by eliminating PER proteins directly, suggesting indirect effects on PER2 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate that the effect is mediated by the COP9 signalosome complex rather than COPS7B alone, and provide mechanistic insight. The comparison to PER protein elimination (C46, citing Zheng et al., 2001) is logical and supports the hypothesis of indirect regulation. The more severe phenotype with COPS4 knockdown is consistent with its central role in the complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In HEK293T cells, COPS7B interacted bidirectionally with BMAL1, PER2, and CRY1 by co-immunoprecipitation. Pulse-chase experiments showed that COPS7B knockdown reduced BMAL1 half-life from 7.3 hr to 4.4 hr, while CRY1 and PER2 degradation timecourses remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate physical interactions and identify BMAL1 as the specific target for COP9-mediated stabilization. The co-IP data (Figure 5a,b) and pulse-chase experiments (Figure 5c) are appropriate methods. The selective effect on BMAL1 stability is a key mechanistic finding, though the authors note that interactions with other proteins in HEK cells may not reflect the physiological situation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "In rhythmic U2OS cells, COP9 signalosome interacted only with BMAL1 (not PER2 or CRY1). COPS7B showed circadian nuclear abundance in phase with BMAL1 but antiphase to PER and CRY proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate context-dependent interactions in rhythmic cells. The selective interaction with BMAL1 in U2OS cells (Figure 5d) contrasts with promiscuous interactions in HEK cells, suggesting physiological specificity. The rhythmic nuclear accumulation of COPS7B in phase with BMAL1 (Figure 6a) provides a temporal mechanism for selective stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In mouse liver, Cops7b transcripts were markedly circadian while other COP9 subunits showed arrhythmic transcription. Cops7b was expressed at the lowest level among subunits. All COP9 subunits were rhythmically imported into liver nuclei in phase with BMAL1 peak accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide in vivo validation using published transcriptomic data and new mass spectrometry data. The rhythmic transcription of Cops7b (Figure 6b) and rhythmic nuclear import of all COP9 subunits (Figure 6c) support the model. The low expression level of Cops7b suggests it may be rate-limiting for complex assembly, though this is not explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The COPS7B-associated alleles rs920400 and rs10195385 were significantly associated only with PER2 expression (p~10\u207b\u2077), not with other clock properties (all p>0.2). This weak correlation across traits is attributed to robust tolerance of small changes in cellular clock properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 presents a puzzling observation: the top SNPs affect PER2 expression but not other circadian parameters, despite RNAi showing COPS7B affects multiple parameters. The explanation in C63 (robust tolerance) is speculative and supported only by a single citation. This discrepancy could reflect: (1) true biological buffering, (2) insufficient statistical power, (3) indirect effects in RNAi vs. subtle genetic variation, or (4) measurement issues. The interpretation requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C71"
+    ],
+    "result": "The COP9 signalosome is imported into the nucleus in timed fashion to stabilize BMAL1, opposing proteasome-mediated degradation. Circadian clock properties depend on a genetically-encoded competition between stabilizing (signalosome) and destabilizing (proteasome) forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C71 present the central mechanistic model. This is supported by: (1) rhythmic nuclear import of COP9 (C54), (2) selective BMAL1 stabilization (C48-C50), (3) constitutive nuclear proteasome presence (C66), and (4) functional effects of COP9 depletion (C43-C45). The model is well-supported by the experimental data, though direct demonstration of competition between signalosome and proteasome for BMAL1 is not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "There is no overlap between top candidate alleles in recent questionnaire-based GWAS studies and the cellular GWAS approach presented in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 notes the lack of overlap with behavioral GWAS studies. This is stated clearly and represents an important observation about the relationship between cellular and behavioral phenotypes. However, the authors appropriately note that it's unclear how cellular clock properties propagate to behavioral chronotype, which could explain the lack of overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The COP9 signalosome has been implicated in regulating ubiquitin-mediated proteolysis through de-neddylation of cullins, interacts with casein kinase 2, and regulates circadian behavior in Neurospora crassa and Drosophila melanogaster (where it stabilizes ubiquitin ligases to promote TIMELESS degradation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C64-C65, C67 provide literature context for COP9 signalosome function. These are appropriately cited and establish precedent for COP9 involvement in circadian regulation and protein stability. The comparison to Drosophila (C67) highlights that COP9 can have opposite effects (stabilizing vs. destabilizing) depending on the target, which is relevant for interpreting the mammalian findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The proteasome is constitutively present in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by mass spectrometry data (Figure 6\u2014figure supplement 1b) showing non-rhythmic nuclear proteasome levels. This observation is important for the model because it establishes that rhythmic COP9 import, not proteasome availability, provides temporal specificity for BMAL1 stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Additional pathways identified include Hedgehog signaling (through casein kinase 1 and WNT molecules involved in cell cycle-circadian synchronization) and cell cycle proteins (reflecting coupling between cell division and circadian cycles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe additional enriched pathways with appropriate citations. These represent secondary findings that provide broader context for circadian regulation. The connections to cell cycle and developmental signaling are interesting but not deeply explored in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Time-of-day-specific factors might be required for the interaction between COP9 signalosome and clock proteins other than BMAL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is speculative, inferred from the differential interaction patterns between HEK and U2OS cells. While the observation is valid, the explanation is not tested. Alternative explanations (e.g., differences in expression levels, post-translational modifications, or experimental conditions) are not ruled out. This represents a hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1832 @@
+{
+  "submission": {
+    "id": "685324d2-ff63-46f1-a276-b394702acf3c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:30:35.777847Z",
+    "updated_at": "2025-12-01T20:30:35.777847Z"
+  },
+  "content": [
+    {
+      "id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "submission_id": "685324d2-ff63-46f1-a276-b394702acf3c",
+      "content_type": "manuscript",
+      "content_text": "# Identification and dynamics of the human ZDHHC16-ZDHHC6 palmitoylation cascade\n\n## Authors\n\n- Laurence Abrami<sup>1</sup>\n- Tiziano Dallavilla<sup>1</sup>\n- Patrick A Sandoz<sup>1</sup> ([ORCID: 0000-0002-8379-7267](https://orcid.org/0000-0002-8379-7267))\n- Mustafa Demir<sup>1</sup>\n- B\u00e9atrice Kunz<sup>1</sup>\n- Georgios Savoglidis<sup>2</sup>\n- Vassily Hatzimanikatis<sup>2</sup> ([ORCID: 0000-0001-6432-4694](https://orcid.org/0000-0001-6432-4694)) \u2020\n- F Gisou van der Goot<sup>1</sup> ([ORCID: 0000-0002-8522-274X](https://orcid.org/0000-0002-8522-274X)) \u2020\n\n### Affiliations\n\n1. Global Health Institute, Faculty of Life Sciences Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n2. Laboratory of Computational Systems Biotechnology, Faculty of Basic Sciences Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nS-Palmitoylation is the only reversible post-translational lipid modification. Knowledge about the DHHC palmitoyltransferase family is still limited. Here we show that human ZDHHC6, which modifies key proteins of the endoplasmic reticulum, is controlled by an upstream palmitoyltransferase, ZDHHC16, revealing the first palmitoylation cascade. The combination of site specific mutagenesis of the three ZDHHC6 palmitoylation sites, experimental determination of kinetic parameters and data-driven mathematical modelling allowed us to obtain detailed information on the eight differentially palmitoylated ZDHHC6 species. We found that species rapidly interconvert through the action of ZDHHC16 and the Acyl Protein Thioesterase APT2, that each species varies in terms of turnover rate and activity, altogether allowing the cell to robustly tune its ZDHHC6 activity.\n\n## Introduction\n\nCells constantly interact with and respond to their environment. This requires tight control of protein function in time and in space, which largely occurs through reversible post-translational modifications of proteins, such as phosphorylation, ubiquitination and S-palmitoylation. The latter consist in the addition on an acyl chain, generally C16 in mammals, to cysteine residues, thereby altering the hydrophobicity of the protein and tuning its function (Blaskovic et al., 2014; Chamberlain and Shipston, 2015). More precisely, palmitoylation may control the interaction of a protein with membranes or specific membrane domains, affect its conformation, trafficking, stability and/or activity (Blaskovic et al., 2014; Chamberlain et al., 2013; Conibear and Davis, 2010; Fukata et al., 2016). In the cytosol, the acyl chain is attached to the protein via a thioester bond through the action of DHHC palmitoyltransferases, a family of multispanning transmembrane proteins (Blaskovic et al., 2014; Chamberlain et al., 2013; Conibear and Davis, 2010; Fukata et al., 2016).\n\nThe list of proteins undergoing palmitoylation is ever increasing ([Blanc et al., 2015], http://swisspalm.epfl.ch/) and the modification is found to be important in numerous key cellular processes including neuronal development and activity (Fukata and Fukata, 2010), cardiac function (Pei et al., 2016), systemic inflammation (Beard et al., 2016), innate immunity to viruses (Mukai et al., 2016), cell polarity (Chen et al., 2016), EGF-signalling (Runkle et al., 2016), protease activity (Skotte et al., 2017) and cancer (Coleman et al., 2016; Thuma et al., 2016).\n\nWhile novel roles and targets of palmitoylation are constantly reported, little is known about the regulation and dynamics of this post-translational modification. Here we focused on one of the 23 human palmitoyltransferase, ZDHHC6, which localizes to the endoplasmic reticulum (ER) and controls a panel of key ER substrates such as the ER chaperone calnexin (Lakkaraju et al., 2012), the ER E3 ligase gp78 (Fairbank et al., 2012), the IP3 receptor (Fredericks et al., 2014) as well as cell surface proteins such as the transferrin receptor (Senyilmaz et al., 2015). For each of these proteins, palmitoylation controls stability, localization, trafficking and/or function.\n\nAs most DHHC enzymes, ZDHHC6 is a tetra-spanning membrane protein. It has a short N-terminal extension and a long C-terminal tail composed of an approximately 100-residue domain of unknown structure followed by a variant SH3_2 domain (Figure 1A, Figure 1\u2014figure supplement 1). At the C-terminus, it contains a KKNR motif which when transferred to the ZDHHC3 enzyme leads to its relocalization from the Golgi to the ER (Gorleku et al., 2011), suggesting that it contributes to the ER localization of ZDHHC6.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of ZDHHC6 enzyme. The potential ER retention motif is KKNR.\u00a0(B) Analysis of protein acylation in control HAP cells (Ctrl) versus ZDHHC6 KO HAP (KO). HAP cell membranes were recovered by centrifugation and incubated with MMTS and then with hydroxylamine (+HA) or with Tris (-HA) together with free thiol group binding beads. Eluted fractions were analysed by immunoblotting with the indicated antibodies. PNS represents 1/10 of the input fraction.\u00a0(C) ZDHHC6 acylation in mouse tissues. 400 \u00b5g total proteins extracted from mouse lung were incubated with MMTS and then with hydroxylamine (+HA) or with Tris (-HA) together with free thiol group binding beads. Eluted fractions were analysed by immunoblotting with the indicated antibodies. \u2018In\u2019 represents 1/10 of the input fraction. Calnexin and the ER shaping protein CLIMP-63 (Lakkaraju et al., 2012; Schweizer et al., 1993) were used as positive controls and the cysteine-less protein Trap\u03b1 as negative control. (D) Palmitoylation of ZDHHC6 cysteine mutants. HeLa cells were transfected with plasmids encoding WT or the indicated Myc-tagged ZDHHC6 mutant constructs for 24 hr. Cells were then metabolically labelled for 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with Myc antibodies, subjected to SDS-PAGE and analysed by autoradiography (3H-palm), quantified using the Typhoon Imager or by immunoblotting with the indicated antibodies.\u00a0(E) Quantification of 3H-palmitic acid incorporation into ZDHHC6. Quantified values were normalized to protein expression level. The calculated value of 3H-palmitic acid incorporation into WT ZDHHC6 was set to 100% and all mutants were expressed relative to this (n\u00a0=\u00a04, error bars represent standard deviation).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Identical amino acids are highlighted by dark blue. Palmitoylated cysteines are highlighted in red boxes. SH3-2 like domain and DHHC domains are underlined in red.\n\nHere we show that ZDHHC6 function, localization and stability are all regulated through the dynamic multi-site palmitoylation of its SH3_2 domain. Interestingly, palmitoylation occurs via an upstream palmitoyltransferase, ZDHHC16, revealing for the first time the existence of palmitoylation cascades. Depalmitoylation is mediated by the Acyl Protein Thioesterase APT2. Palmitoylation can occur on three different sites, leading to potentially eight different ZDHHC6 species defined by acyl site occupancy. These species can interconvert through the actions of ZDHHC16 and APT2. Using mathematical modelling combined with various kinetic measurements on WT and mutant ZDHHC6, we probed the complexity of this system and its importance for ZDHHC6 activity. Altogether, this study shows that palmitoylation affects the quaternary assembly of ZDHHC6, its localization, stability and function. Moreover we show that the presence of 3 sites is necessary for the robust control of ZDHHC6 abundance upon changes in ZDHHC16 activity.\n\n## Results\n\n### Palmitoylation of the ZDHHC6 SH3_2 domain\n\nZDHHC6 KO cells were generated using the CRISPR-cas9 system in the near haploid cell line HAP1. Using the Acyl-RAC method to isolate palmitoylated proteins (Werno and Chamberlain, 2015), we verified that the ER chaperone calnexin (Lakkaraju et al., 2012), the E3 ligase gp78 (Fairbank et al., 2012), the IP3 receptor (Fredericks et al., 2014) and the transferrin receptor (Trf-R) (Senyilmaz et al., 2015) are indeed ZDHHC6 targets (Figure 1B). Interestingly calnexin and Trf-R were no longer captured by Acyl-RAC in the HAP1 ZDHHC6 KO cells, confirming that they are exclusively modified by ZDHHC6, while capture of the IP3 receptor and gp78 was reduced but not abolished indicating that they can also be modified by other palmitoyltransferases (Figure 1B) consistent with previous findings (Fairbank et al., 2012; Fredericks et al., 2014). As negative controls, we tested flotillin1, a known target of ZDHHC5 (Li et al., 2012) and the anthrax toxin receptor one modified by a yet to be determined DHHC enzymes (Abrami et al., 2006).\n\nWhen probing samples for ZDHHC6, we found that the palmitoyltransferase itself was captured by Acyl-RAC in HAP1 cells (Figure 1B) and also in different mouse tissues (shown for mouse lung tissue in Figure 1C). Palmitoylation of ZDHHC6 was reported in two large-scale proteomics analysis to occur on Cys-328, Cys-329 and Cys-343 in the SH3 domain (Collins et al., 2017; Yang et al., 2010). These cysteines are conserved in vertebrates (Figure 1\u2014figure supplement 1). We generated single (ACC, CAC, CCA), double (AAC, CAA, ACA) and triple (AAA) cysteine-to-alanine mutants and monitored 3H-palmitate incorporation during 2 hr. Palmitoylation of ZDHHC6 WT, but not the AAA mutant, was readily detected (Figure 1DE). All single cysteine mutants, especially C328A, and all double mutants showed a decrease in the 3H-palmitate signal (Figure 1DE). Thus ZDHHC6 can indeed undergo palmitoylation, and importantly it has no palmitoylation sites other than the three in the SH3 domain.\n\n### The ZDHHC16-ZDHHC6 palmitoylation cascade\n\nWe next investigated whether ZDHHC6 was palmitoylating itself, in cis or trans. We generated an inactive DHHC deletion mutant (\u2206DHHC) as well as a cell line stably expressing an shRNA against the ZDHHC6 3\u2019UTR (Figure 2\u2014figure supplement 1A). WT and (\u2206DHHC) ZDHHC6 both underwent palmitoylation when transiently expressed in control or shRNA ZDHHC6 cells (Figure 2\u2014figure supplement 1A), indicating that ZDHHC6 must be modified by another enzyme. We next performed 3H-palmitate labelling experiments upon siRNA silencing of each of the 23 DHHC enzymes. While a significant but mild drop was observed for several DHHC enzymes, only silencing of ZDHHC16 led to a major, 60%, drop in signal intensity (Figure 2A). 3H-palmitate incorporation was also reduced for the AAC and CCA mutants (Figure 2\u2014figure supplement 1B), showing that all three sites are modified by the same enzyme.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig2-v2.jpg)\n\n**Figure 2.:** (A) Identification of the ZDHHC6 palmitoyltransferase by siRNA screening of DHHC enzymes. HeLa cells were transfected with siRNAs against the indicated ZDHHC enzyme for 72 hr and with the myc-tagged WT ZDHHC6 expressing construct for the last 24 hr. Cells were then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analysed by autoradiography, quantified using the Typhoon Imager or by immunoblotting with myc antibodies. 3H-palmitic acid incorporation into ZDHHC6 was quantified and normalized to protein expression levels. The calculated value of 3H-palmitic acid incorporation into ZDHHC6 was set to 100% for an irrelevant siRNA (Ctrl) and all siRNA were expressed relative to this (n\u00a0=\u00a06, error bars represent standard deviation). (B) Identification of the ZDHHC6 palmitoyltransferase by DHHC over-expression. HeLa cells were transfected with indicated the ZDHHC constructs and with myc-tagged WT ZDHHC6 construct for 24 hr. Cells were then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analysed by autoradiography (3H-palm) or by immunoblotting with myc antibodies. (C) Analysis of ZDHHC6 acylation in control HAP cells (Ctrl) versus HAP cells KO for DHHC 1, 7, 9, 12, 16, 18 (KO-X). Cells were transfected with the myc-tagged WT ZDHHC6 construct for 24 hr, then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analysed by autoradiography (3H-palm) or by immunoblotting with myc antibodies. (D) Palmitoylation decay of WT or mutant ZDHHC6. HeLa cells were transfected with plasmids encoding WT or the indicated mutant Myc-tagged ZDHHC6 constructs for 24 hr. Cells were then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid, washed and incubated with complete medium for different hours. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analysed by autoradiography, quantified using the Typhoon Imager or by immunoblotting with anti-myc antibodies. 3H-palmitic acid incorporation was quantified for each time point, normalized to protein expression level. 3H-palmitic acid incorporation was set to 100% at t\u00a0=\u00a00 after the 2 hr pulse and all different times of chase were expressed relative to this (n\u00a0=\u00a03, error bars represent standard deviation). (E) ZDHHC6 palmitoylation upon APT overexpression. HeLa cells were transfected with plasmids encoding myc-tagged WT ZDHHC6 and the indicated mutant citrine-tagged APT1 or APT2 constructs for 24 hr. APT2 was always expressed at a higher level that APT1. Cells were then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analysed by autoradiography (3H-palm), quantified using the Typhoon Imager or by immunoblotting with anti-myc antibodies. (F) Quantification of 3H-palmitic acid incorporation into ZDHHC6. Quantified values were normalized to protein expression level. 3H-palmitic acid incorporation was set to 100% for control cells (Ctrl) and values obtained for APT overexpressing cells were expressed relative to this (n\u00a0=\u00a06, error bars represent standard deviation).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0DHHC6 is not autopalmitoylated. Hela cells silenced with control lentiviruses or with shDHHC6 lentiviruses were transfected with plasmids encoding WT myc-DHHC6 or mutant myc-DHHC6. Cells were then metabolically labeled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted and immunoprecipitated with anti-myc antibodies, subjected to SDS-PAGE and analyzed by autoradiography (3H-palm), quantified using the Typhoon Imager or by immunoblotting with anti-myc antibodies. 3H-palmitic acid incorporation into DHHC6 values were calculated and were set to 100% for WT DHHC6 constructs and all DHHC6 mutants were expressed relative to this. N\u00a0=\u00a04. (B) All DHHC6 cysteine are palmitoylated by DHHC16. Hela cells were transfected with siRNA silencing indicated DHHC for 72 hr and with WT and cysteine mutants myc-tagged DHHC6 construct for the last 24 hr. Cells were then metabolically labeled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analyzed by autoradiography, quantified using the Typhoon Imager or by immunoblotting with myc antibodies. 3H-palmitic acid incorporation into WT and mutants DHHC6 constructs were quantified and normalized to protein expression level. The calculated value of 3H-palmitic acid incorporation into WT or mutants DHHC6 was set to 100% for a non relevant siRNA (Ctrl) and all siRNA were expressed relative to this. N\u00a0=\u00a03. (C) Palmitoylation of WT DHHC6 after human DHHC overexpression. Hela cells were transfected with indicated DHHC constructs for 24 hr with WT myc-tagged DHHC6 construct. Cells were then metabolically labeled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analyzed by autoradiography, quantified using the Typhoon Imager or by immunoblotting with myc antibodies. 3H-palmitic acid incorporation into WT DHHC6 constructs were quantified and normalized to protein expression level. The calculated value of 3H-palmitic acid incorporation into WT DHHC6 was set to 100% for a non relevant plasmid (Ctrl) and all DHHC were expressed relative to this. N\u00a0=\u00a05. (D) Co-immunoprecipitation of DHHC6 with DHHC16. Hela cells were transfected with plasmids encoding WT myc-DHHC6 and flag-tagged DHHC16 constructs for 24 hr. Proteins were extracted, a total cell extract was analyzed (TCE) and proteins were immunoprecipitated with myc or flag antibodies and subjected to SDS-PAGE, then analyzed by immunoblotting with anti-myc or anti-flag antibodies.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Immunofluorescence staining of HeLa cells transfected with WT myc-DHHC16 and imaged at high (top lane) or lower expression levels (bottom lane) (bar\u00a0=\u00a010 \u00b5m). (B)\u00a0DHHC6 is palmitoylated but not DHHC16. Hela cells were transfected with WT myc-tagged DHHC6 or myc-tagged DHHC16 construct for 24 hr. Cells were then metabolically labeled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, immunoprecipitated with myc antibodies and subjected to SDS-PAGE and analyzed by autoradiography, quantified using the Typhoon Imager or by immunoblotting with myc or flag antibodies.\u00a0(C) Analysis of protein acylation in Hela cells (Ctrl). Hela were transfected 24 hr with WT myc-DHHC6 or WT flag-DHHC16 constructs. Cell membranes were recovered by centrifugation and incubated with MMTS and then with hydroxylamine (+HA) or with TRIS (-HA) together with free thiol group binding beads. Eluted fractions were analyzed by immunoblotting with the indicated antibodies. The input fraction (PNS) was loaded as 1/10 this amount.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A)\u00a0Silencing of DHHC6 and DHHC16 is efficient. HeLa cells were transfected for 72 hr with either two control siRNA or different DHHC siRNA. DHHC6, DHHC16, Calnexin RNA levels were analyzed by quantitative RT-PCR. The histogram shows that silencing was efficient for all DHHC enzymes (errors bars show standard deviations, n\u00a0=\u00a04).\u00a0(B) DHHC16 RNA is increased in DHHC6 KO cells. Annotated RNA levels were analyzed by quantitative RT-PCR in HAP1 cells control or KO for DHHC6. Climp represents CLimp63/CKAP4.\n\nWe also performed a screen by over-expression of DHHC enzymes, which also pointed to ZDHHC16 as the responsible enzyme (Figure 2B, Figure 2\u2014figure supplement 1C). The final confirmation was obtained using HAP1 cells in which specific DHHC enzymes were knocked out using the CRISPR-cas9 technology (Figure 2C). We focused on ZDHHCs 1, 7, 9, 12, 16 and 18, which led to some decrease in the siRNA screen (Figure 2A). ZDHHC6 palmitoylation was lost exclusively in ZDHHC16 KO cells (Figure 2C). Consistent with these findings, co-immunoprecipitation experiments following transient over-expression of myc-tagged ZDHHC6 and FLAG-tagged ZDHHC16 showed that the two enzymes can interact (Figure 2\u2014figure supplement 1D). Interestingly, ZDHHC6 silencing in HeLa cells or ZDHHC6 knock out in HAP1 cells both led to an increase in the ZDHHC16 mRNA (Figure 2\u2014figure supplement 2AB), indicating that these two proteins interact physically and genetically.\n\nAltogether these experiments show that ZDHHC6 can be palmitoylated on all three of its SH3_2 cysteine residues by ZDHHC16, revealing for the first time that palmitoylation can occur in a cascade, as occurs for phosphorylation for example in the MAK kinase pathway. ZDHHC16, which localizes under over-expression conditions to the ER and the Golgi (Figure 2\u2014figure supplement 2A), is not palmitoylated itself in HeLa cells, as shown both by 3H-palmitate incorporation and Acyl-RAC (Figure 2\u2014figure supplement 2BC).\n\n### Rapid APT2-mediated ZDHHC6 depalmitoylation\n\nPalmitoylation is a reversible modification and thus has the potential to be dynamic. To analyse palmitate turnover on ZDHHC6, we performed 3H-palmitate pulse-chase experiments. Following a 2 hr pulse, 50% of the 3H-palmitate was lost from ZDHHC6 in \u22481 hr, indicating rapid turnover of the acyl chains (Figure 2D). We performed similar experiments on the various single and double cysteine mutants and found that rapid turnover required the presence of Cys-328. In its absence, the apparent palmitate release rates were considerably slower, reaching more than 4 hr (Figure 2D).\n\nDepalmitoylation is an enzymatic reaction that is mediated by poorly characterized Acyl Protein Thioesterases (APT). We tested the involvement of APT1 and APT2 (Blaskovic et al., 2014), which are themselves palmitoylated on Cys-2 (Kong et al., 2013). We generated palmitoylation deficient variants of APT1 and 2 as well as catalytically inactive versions (APT1 S119A and APT2 S121A). Overexpression of WT or mutant APT1 had no detectable effect on ZDHHC6 palmitoylation (Figure 2E,F). In contrast, overexpression of WT, but not palmitoylation deficient, APT2 led to a significant decrease in ZDHHC6 palmitoylation. APT2S121A had an intermediate effect, possibly due to the formation of heterodimers between mutant and endogenous APT2 (Kong et al., 2013; Vujic et al., 2016). These observations show that ZDHHC6 palmitoylation is dynamic, in particular on Cys-328, and that depalmitoylation is mediated by APT2.\n\n### Palmitoylation of Cys-328 accelerates turnover of ZDHHC6\n\nWe next analysed the effect of palmitoylation on ZDHHC6 turnover. Palmitoylation has been reported to affect protein stability, increasing the half-life of proteins such as calnexin (Dallavilla et al., 2016) and the death receptor Fas (Rossin et al., 2015) but decreasing that of others such as gp78 (Fairbank et al., 2012). Protein turnover was monitored using 35S-Cys/Met metabolic pulse-chase. HeLa cells, transiently expressing myc-ZDHHC6, were submitted to a 20 min metabolic pulse followed by different times of chase before lysis and anti-myc immunoprecipitation, SDS-PAGE and auto-radiography. Decay of newly synthesized ZDHHC6 was biphasic, with 40% undergoing gradual degradation during the first 5 hr, and the remaining 60% undergoing degradation at a greatly reduced rate (Figure 3A). The overall apparent half-life was\u00a0$t_{1/2}^{app}$ \u224816 hr. To enhance ZDHHC6 palmitoylation, we overexpressed ZDHHC16 or silenced LYPLA2 (gene encoding APT2) expression. Both these genetic manipulations led to a dramatic acceleration of ZDHHC6 decay, with\u00a0$t_{1/2}^{app}$ \u2248 2 hr and 3 hr upon ZDHHC16 over expression and Lypla2 silencing, respectively (Figure 3A). Silencing of LYPLA1 (APT1) in contrast had no effect (Figure 3\u2014figure supplement 1A). Remarkably, mutation of Cys-328, but not of Cys-329 or Cys-343, abolished the sensitivity to ZDHHC16 overexpression or LYPLA2 silencing (Figure 3BC, Figure 1\u2014figure supplement 1BC). LYPLA2 silencing led to ubiquitination of ZDHHC6 (Figure 3D) and ZDHHC6 degradation could be rescued by the proteasome inhibitor MG132 (Figure 3E). Thus altogether these observations indicate that palmitoylation of Cys-328 renders ZDHHC6 susceptible to degradation by the ERAD pathway.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Degradation kinetics of ZDHHC6. HeLa cells were transfected with plasmids encoding myc-tagged WT ZDHHC6 or cysteine mutants with or without FLAG-tagged WT ZDHHC16 for 24 hr after 48 hr transfection with siRNA LYPLA2 (gene encoding APT2) or with control siRNA. HeLa cells were incubated for 20 min with 35S-Met/Cys at 37\u00b0C, washed and further incubated for different times at 37\u00b0C in complete medium. ZDHHC6 was immunoprecipitated and subjected to SDS-PAGE and analysed by autoradiography, quantified using the Typhoon Imager, and western blotting with anti-myc antibodies. 35S-Met/Cys incorporation was quantified for each time point, normalized to protein expression levels. 35S-Met/Cys incorporation was set to 100% for t\u00a0=\u00a00 after the 20 min pulse and all different times of chase were expressed relative to this (n\u00a0=\u00a03, error bars represent standard deviation). (D,E) ZDHHC6 ubiquitination and proteasomal degradation. HeLa cells were transfected with plasmids encoding myc-tagged WT ZDHHC6 constructs for 24 hr after 48 hr transfection with control (Ctrl) or LYPLA2 (gene encoding APT2) siRNA. Proteins were extracted; ZDHHC6 was immunoprecipitated, subjected to SDS-PAGE and then analysed by immunoblotting with anti-ubiquitin or anti-myc antibodies (D). (E) Cells were treated 4 hr with 10 \u00b5M MG132 or with 100 nM Bafilomycin A before proteins were extracted; 40 \u00b5g of total extract were subjected to SDS-PAGE and then analysed by immunoblotting against actin, used as equal loading control, or myc.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Degradation kinetics of DHHC6. HeLa cells were transfected with plasmids encoding myc-tagged WT DHHC6 for 24 hr after 48 hr transfection with siRNA APT1 or with control siRNA. HeLa cells were incubated for 20 min with 35S-Met/Cys at 37\u00b0C, washed and further incubated for different times at 37\u00b0C in complete medium. DHHC6 was immunoprecipitated and subjected to SDS-PAGE and analysed by autoradiography. 35S-Met/Cys incorporation was quantified for each time point, normalized to protein expression levels. 35S-Met/Cys incorporation was set to 100% for t\u00a0=\u00a00 after the 20 min pulse and all different times of chase were expressed relative to this (n\u00a0=\u00a01).\u00a0(B,C) Degradation kinetics of DHHC6. Hela cells were transfected with plasmids encoding cysteine mutants myc-DHHC6 constructs with or without WT flag-DHHC16 for 24 hr after 48 hr transfection with siRNA APT2 or with control siRNA. Hela cells were incubated 20 min pulse with 35S-methionin/cysteine at 37\u00b0C, washed and further incubated for different times at 37\u00b0C in complete medium. DHHC6 were immunoprecipitated and subjected to SDS-PAGE and analyzed by autoradiography, quantified using the Typhoon Imager, and western blotting with anti-myc antibodies. 35S-methionin/cysteine incorporation into different DHHC6 constructs were quantified for each times, normalized to protein expression level. The calculated value of 35S-methionin/cysteine incorporation into DHHC6 was set to 100% for t\u00a0=\u00a00 after the 20 min pulse and all different times of chase with complete medium were expressed relative to this. N\u00a0=\u00a03.\n\n### Palmitoylation-dependent ZDHHC6 localization\n\nWe next investigated whether palmitoylation affects ZDHHC6 localization. Ectopically expressed WT myc-ZDHHC6 shows a typical ER staining, co-localizing with Bip, a lumenal ER chaperone, and BAP31, a transmembrane ER protein (Figure 4AB), as did all the cysteine mutants (Figure 4\u2014figure supplement 1). Ectopically expressed WT ZDHHC6 sometimes also localized to a dot (Figure 4AB). The ZDHHC6 AAA mutant was also clearly present in the reticular ER, but it tended to accumulate more frequently in dot-like ER structures, which stained positive for BAP31 but not Bip (Figure 4AB). Thus the inability of ZDHHC6 AAA to undergo palmitoylation influences its localization within the two dimensional space of the ER membrane.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig4-v2.jpg)\n\n**Figure 4.:** (A,B)\u00a0Immunofluorescence staining of HeLa cells transfected with myc-ZDHHC6 WT or AAA (bar\u00a0=\u00a010 \u00b5m). The presence of dots (small or big) was reported for each cell and quantified (data from three independent experiments, dots in 30 cells per condition, per experiment were counted, errors represent standard deviations). (C) Co-immunoprecipitation of ZDHHC6 variants. HeLa cells were transfected with plasmids encoding WT myc-ZDHHC6 and the indicated GFP-tagged mutant for 24 hr. Proteins were extracted, a total cell extract was analysed (TCE) and proteins were immunoprecipitated with myc antibodies and subjected to SDS-PAGE, then analysed by immunoblotting with anti-myc or anti-GFP antibodies. Quantification was performed by densitometry. The calculated value of co-immunoprecipitation with WT ZDHHC6 was set to 100%, all ZDHHC6 mutants were expressed relative to this (n\u00a0=\u00a04, errors represent standard deviations). (D) ZDHHC6 complexes. HeLa cells were transfected with plasmids encoding myc-ZDHHC6 WT or mutant, or myc-tagged DHHC7 or DHHC20 for 24 hr. Proteins were extracted, 40 \u00b5g of a TCE was analysed by SDS-PAGE or on blue native gels then analysed by immunoblotting with anti-myc antibodies. (E) Analysis of endogenous calnexin acylation in control HAP cells (Ctrl) versus HAP cells KO for ZDHHC6 (KO-6) or for ZDHHC16 (KO-16). HAP cell membranes were recovered by centrifugation and incubated with MMTS and then with hydroxylamine (+HA) or with Tris (\u2212HA) together with free thiol group binding beads. Eluted fractions were analysed by immunoblotting with anti-calnexin antibodies. PNS represents 1/10 of the input fraction. (F) Analysis of endogenous calnexin palmitoylation in HeLa cells overexpressing ZDHHC6 or ZDHHC16. HeLa cells were transfected with plasmids encoding WT myc-ZDHHC6 or WT myc-ZDHHC16 constructs for 24 hr. Cells were then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted and immunoprecipitated with anti-calnexin antibodies, subjected to SDS-PAGE and analysed by autoradiography (3H-palm) or by immunoblotting with anti-calnexin antibodies. (G,H) Analysis of endogenous calnexin and Transferin receptor (Trf-R) palmitoylation in HeLa cells overexpressing ZDHHC6 mutants. HeLa cells were transfected with control plasmid (Ctrl) or plasmids encoding WT or mutants myc-ZDHHC6 for 24 hr. Cells were then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted and immunoprecipitated with anti-calnexin or anti-Trf-R antibodies, subjected to SDS-PAGE and analysed by autoradiography (3H-palm), quantified using the Typhoon Imager. A representative experiment is shown for the Trf-R (G). 3H-palmitic acid incorporation into calnexin or Trf-R was set to 100% for the control plasmid and all ZDHHC6 mutants were expressed relative to this (n\u00a0=\u00a04, errors represent standard deviations).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig4-figsupp1-v2.jpg)\n\nCertain DHHC enzymes were reported to dimerize (Lai and Linder, 2013). We therefore tested whether ZDHHC6 also forms higher order structures, and if so whether assembly is influenced by palmitoylation. Immunoprecipitation experiments using ZDHHC6 constructs with two different tags showed that WT ZDHHC6 can associate with itself as well as with the \u2206DHHC variant but not with the AAA mutant (Figure 4C). Blue native gel analysis confirmed that ZDHHC6 can associate into higher order structures, which could be dimers and above, or associate with detergent resistant membrane domains (Figure 4D). In contrast DHHC 7 and 20 appeared largely monomeric under the same solubilization conditions (Figure 4D). The AAA mutant also migrated as higher order complexes but these were clearly different from those formed by the WT protein (Figure 4D). Thus palmitoylation affects localization of ZDHHC6 in the ER as well as its assembly into complexes or association with membrane domains.\n\n### Palmitoylation controls ZDHHC6 activity\n\nFinally we tested whether palmitoylation of ZDHHC6 affects its ability to modify reported substrates in a cellular context. Calnexin palmitoylation was significantly reduced in ZDHHC16 KO cells, as monitored by Acyl-RAC (Figure 4E) and enhanced upon ZDHHC16 over-expression (Figure 4F) indicating that palmitoylation indeed modulates ZDHHC6 activity. We next monitored 3H-palmitate incorporation into endogenous transferrin receptor and calnexin upon overexpression of WT and ZDHHC6 mutants in HeLa cells. Over-expression of WT ZDHHC6 led to 2.6 to 3-fold increase in calnexin and transferrin receptor palmitoylation, respectively (Figure 4GH). The background level of palmitoylation is due to the presence of endogenous ZDHHC6 (Figure 4GH). Overexpression of ZDHHC6 AAA had no effect on either target, confirming the importance of palmitoylation for ZDHHC6 activity. Overexpression ACC, AAC and ACA ZDHHC6 mutants barely affected Trf-R and calnexin palmitoylation, as opposed to the CAA, CCA and CAC mutants (Figure 4GH). The fact that palmitoylation of both ZDHHC6 targets is similarly affected by cysteine mutations rules out the possibility that differentially palmitoylated ZDHHC6 molecules could have different target specificities. Together these experiments indicate that palmitoylation of Cys-328 confers the highest activity to ZDHHC6.\n\n### Model of the ZDHHC6 palmitoylation system\n\nThe results presented in the previous paragraphs show that ZDHHC6 can be palmitoylated on three sites, that the protein undergoes cycles of palmitoylation-depalmitoylation and that palmitoylation strongly influences assembly, localization, stability and function of the enzyme. The presence of 3 palmitoylation sites leads to the potential existence of 8 species: from fully unoccupied Cys-sites, noted C000, to full occupancy, noted C111, in the order of Cys-328, Cys-329 and Cys-343 in the exponent (Figure 5A). To understand the dynamics of the inter-conversion between the eight species, as well as derive hypothesis about the role of the three sites, we developed a mathematical model (Supplementary file 1A). Modelling was performed as an open system, including protein synthesis, and degradation of all species (Figure 5A and Supplementary file 1B). Synthesis of ZDHHC6 first leads to an unfolded species (U). Folded ZDHHC6 protein is initially in the C000 form, which can undergo palmitoylation on any of the three sites leading to C100, C010, C001. These single palmitoylated species can undergo a second and a third palmitoylation event first leading to C110, C101, C011 and finally to C111. Each palmitoylation reaction is mediated by ZDHHC16 and each depalmitoylation catalysed by APT2. A competition term between the sites was implemented in the enzymatic kinetics, as previously for the modelling of palmitoylation of the ER chaperone calnexin (Dallavilla et al., 2016). The model includes first-order degradation rates for each species, with different rate constants. The rate expressions, the parameters and the assumptions used in the development of the model are described in detail in the Materials and methods and the Supplementary Information (Supplementary file 1A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Network topology of the ZDHHC6 palmitoylation model. First we have a phase of synthesis of the unfolded peptide (U). The protein goes through a process of folding and membrane embedding, ending in the fully folded form (C000). The three sites can then be palmitoylated by ZDHHC16, the first palmitoylation can occur on each site, C100 C010 and C001 denote palmitoylation on the first, second or third site respectively. ZDHHC6 can then undergo another palmitoylation step acquiring two palmitates; C110, C101 and C011 denote the double palmitoylated enzyme. From each of the three double palmitoylated states, ZDHHC6 can be modified one last time becoming fully palmitoylated (C111). We consider that ZDHHC6 degradation can happen in any state. Highlighted in red are the most abundant species in steady state. (B) Part of the calibration and validation sets used for parameter estimation. In the top graphs we show three curves that were used during parameter estimation with genetic algorithm to evaluate the goodness of fit of the parameters generated. Other curves used for the validation are shown in Figure 5\u2014figure supplement 1. The four curves in the bottom graphs are part of the data that were used for validating the predictions on experiments that were not used for parameter calibration. Circles represent experimental data while the solid lines are the output of the model after optimization. Since we have 152 different sets of optimal parameters, the shadows behind the lines represent the first and third quartile of the 152 model outputs. All other curves used for parameter estimation can be found in Figure 5\u2014figure supplement 2. (C) Half-life of the different ZDHHC6 palmitoylation states estimated from the decay rate constants of the model after optimization. The half-life was calculated as: ln(2)/kdi. Where kdi is the decay rate constant of the i-th palmitoylation state. These are not experimentally determined apparent turn over rates. (D) Palmitoylation and depalmitoylation fluxes for the six steps of single palmitoylation/depalmitoylation in steady state, which represent the fluxes of palmitate incorporation and loss on the first, second and third site during the first palmitoylation event. Fluxes in steady state for all reactions are shown in Figure 5\u2014figure supplement 3. (E) Single molecule tracking with stochastic simulations. The table shows the average number of passage per molecule for each state of the model, along with the median and the cumulative median of the time spent in each state. These data were obtained from the analysis of 10\u2019000 stochastic simulations. (F) Prediction of the steady state distribution of ZDHHC6 WT palmitoylation species. (G) Stoichiometry of ZDHHC6 palmitoylation in HeLa cells. HeLa cells were transfected with plasmids encoding WT myc-ZDHHC6 constructs for 24 hr. Protein lysates were processed for the APEGS assay. PEG-5k was used to label transfected myc-ZDHHC6 and endogenous protein (PEG+), PEG- lanes indicate the negative controls. The samples were analysed by western blotting with anti-myc, anti-calnexin, anti-TRAP alpha antibodies.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Calibration data Results of the GA optimization are plotted on top of the experimental data used as objectives.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Results of the GA optimization are plotted on top of the experimental data used as validation.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The histogram shows the fluxes of the DHHC6 model in steady state under control condition. Lower Panel: Time required by DHHC6 to get palmitoylated for the first time after synthesis in control condition and DHHC6 Overexpression or APT2 silencing conditions. Histograms where obtained by single molecule tracking during stochastic simulations, measuring the time required to get palmitoylated on one of the three available sites.\n\nWith the aim of first calibrating and subsequently validating the model, we generated the following kinetic datasets. We performed: (1) metabolic 35SCys/Met pulse-chase experiments, with pulses of either 20 min or 2 hr, to monitor the turnover of newly synthesized proteins, for WT and the different single, double and triple cysteine mutants; (2) 3H palmitate incorporation into WT and cysteine mutants; (3) palmitate loss, monitored by 3H palmitate pulse-chase experiments, for WT and mutants. Some of these experiments were in addition performed upon over expression of ZDHHC16 or siRNA of LYPLA2.\n\nWe used the 35S-decay data for WT, ACC, CAA and AAA, the WT 3H-palmitate incorporation data and the 3H-palmitate release data for WT, ACC and CAA, to calibrate the model. The pulse labelling times were included in the model. During parameter estimation, these calibration datasets were fitted simultaneously, as multi-objective optimization problem with as many fitness functions as experiments. As often for optimization problems, the output of the algorithm is a local Pareto set of solutions. These are equally optimal with respect to the fitness functions in the sense that for each set of parameters, none of the objective functions can be improved in value without deteriorating the quality of the fitness for some of the other objective values. We therefore employed a stochastic optimization method to generate a population of models consistent with the calibration experiments. From a population of 10\u2019000 models, we selected 152 based on the scores of the objective functions that fitted the experimental data most accurately (Figure 5\u2014figure supplement 1). The pool of selected models was subsequently used for the simulations and analyses. Importantly, all predictions were obtained by simulating each model independently. Outputs of all models were averaged and standard deviations with respect to the mean were calculated (Figure 5B).\n\nThe remaining experiments, not used to calibrate the model, were used to validate it. Importantly, as can be seem in Figure 5B and Figure 5\u2014figure supplement 2, the model reliably predicted the results of these experiments, indicating that it accurately captures the ZDHHC6 palmitoylation system.\n\n### Dynamics and consequences of site-specific ZDHHC6 palmitoylation\n\nThe model was first used to estimate the half-lives of the different species. C000 is predicted to have a half-life of approx. 40 hr (Figure 5C and Supplementary file 2A), consistent with the decay measured experimentally for the AAA triple mutant (Figure 5\u2014figure supplement 2). The presence of palmitate on Cys-328 is predicted to strongly accelerate protein turnover, irrespective of the occupancy of the other sites, with $t_{1/2}$=5 hr for C100\u00a0and $t_{1/2}$=0.3 h C111 (Figure 5C and Supplementary file 2A). In contrast, palmitate on Cys-329 is predicted to have a stabilizing effect with $t_{1/2}$>100 hr for C010. Finally, palmitate on Cys-343 would have a moderately destabilizing effect with $t_{1/2}$=18 hr for C001 (Figure 5C). Thus, the model indicates that palmitoylation strongly affects ZDHHC6 turnover in a site dependent manner. It is interesting to note that during the course of this study during which we performed iterative cycles of experiments and modelling, which led to the current model, the mathematical approach provided the initial hint that palmitoylation of Cys-328 had a stabilizing effect. This was not visible from our initial 20 min metabolic pulse experiments of WT and cysteine mutants. The model predicted that increasing the pulse labelling time to 2 hr should make the difference between WT ZDHHC6 and mutants turnover apparent, which turned out to be correct. We subsequently tested the effect of ZDHHC16 overexpression and LYPLA2 silencing, providing further confirmation. Thus the evolving model led to experiments that were key for proper parameter estimation and for deeper understanding of the system.\n\nWe next analysed the dynamics of the system. We first determined the palmitoylation and depalmitoylation fluxes. The major fluxes through the system are from C000 to C100, backwards, corresponding to palmitoylation and depalmitoylation of Cys-328 (Figure 5D). Depalmitoylation of Cys-329 is also predicted as quite prominent (Figure 5D).\n\nIn order to quantify how much time each protein molecule spends in the different states and the transition dynamics between the different states, we derived a stochastic formulation of the model, as we have previously done for calnexin palmitoylation (Dallavilla et al., 2016) (Suppl. Information, Supplementary file 3). While the deterministic simulation could provide an estimate of these properties, the stochastic simulations in addition provides a quantification of the distribution of the times of interest and allow asking questions about \u2018individual\u2019 molecules. We performed 10\u2019000 simulations to track single proteins in the system. ZDHHC6 molecules were predicted to spend most of their time, by far, in the C000 state (Figure 5E). Consistent with the flux analysis, each ZDHHC6 molecule was on average 2.7 times in the C100 state (Figure 5E), and remained in that state for about 0.7 hr (median value). Seven out of 10 molecules also explored the C010 state for almost 2 hr and more briefly the C011 state.\n\nEstimation of the steady state distribution of species indicated that in experimental setting \u2013HeLa cells in culture\u2013 the ZDHHC6 cellular population is about 70% non-palmitoylated and 20% palmitoylated, the most abundant species being C010 and C011 (Figure 5F). We tested this prediction experimentally by performing a PEGylation assay. This is a mass-tag labelling method that consists in replacing the palmitate moiety with PEG following disruption of the thioester bond with hydroxylamine, resulting in a mass change detectable by electrophoresis and Western blotting (Howie et al., 2014; Percher et al., 2016; Yokoi et al., 2016). As a control we analysed calnexin, which has two palmitoylation sites and migrated as expected as three bands, corresponding to the non-, single and dual palmitoylated forms (Figure 5G). For ZDHHC6, only the non-palmitoylated form was detected, consistent with the prediction (Figure 5FG). Indeed given the dynamic range and sensitivity of Western blots, a band with a \u22487-fold lower intensity than the C000 ZDHHC6 band would not be detectable.\n\nThe model altogether predicts that in tissue culture HeLa cells, each ZDHHC6 molecule undergoes multiple rounds of palmitoylation-depalmitoylation during its life cycle mostly on Cys-328. Only a subset of molecules acquires palmitate on the two other sites. At any given time, approximately 60% of the molecules are not acylated.\n\n### Multi-site palmitoylation protects ZDHHC6 from degradation\n\nAnalysis of the activity of the ZDHHC6 mutants (Figure 4H) showed that the most active variants are those with a cysteine at position 328, suggesting that palmitoylation at this position influences palmitoyltransferase activity. However palmitoylation at this site also targets ZDHHC6 to ERAD (Figure 3D). These effects raise the question of how cells can increase cellular ZDHHC6 activity.\n\nWe first predicted the consequences of ZDHHC6 hyperpalmitoylation. Calculations were performed under conditions of ZDHHC16 overexpression and of Lypla2 silencing, simulated by an absence of APT2. ZDHHC16 overexpression led to a major shift in species distribution, C011 then representing 60% of the population (Figure 6A). Interestingly, the overall ZDHHC6 content dropped by only 15% (Supplementary file 2B). Lypla2 silencing in contrast led to a 72% drop in ZDHHC6 content (Supplementary file 2B). Since removing all depalmitoylating activity is likely to freeze the system (Supplementary file 4), we also tested a decrease of APT2% to 10% of normal levels. The ZDHHC6 content rose by 20% and, as upon ZDHHC16 overexpression, C011 became the most abundant form (Figure 6A). We made similar calculations for the CAA mutant. Under control conditions, the total CAA content is predicted to be 84% of WT, and mostly in the non-palmitoylated state (Figure 6B). The CAA cellular content is however predicted to drop to 32% of WT control levels upon ZDHHC16 overexpression (Figure 6B). All together, these predictions suggest that the presence of 3 palmitoylation sites, as opposed to just Cys-328, renders the ZDHHC6 protein content robust to changes in ZDHHC16 activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/27826/elife-27826-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Single molecule tracking with stochastic simulations upon ZDHHC16 overexpression. The table shows the average number of passage per molecule in each state of the model, along with the median and the cumulative median of the time spent in each state. As for control experiments this numbers were obtained by averaging the results of 10\u2019000 independent stochastic simulations. (B) Steady state ZDHHC6 WT species distribution under different conditions (control, ZDHHC16 Overexpression, LYPLA2 (gene encoding APT2) silencing and APT2 at 10% level of expression with respect to WT condition). All the data are scaled with respect to the total abundance of ZDHHC6 WT under control condition. (C) Steady state distribution of the ZDHHC6 CAA mutant under control condition or ZDHHC16 overexpression. All the data are scaled with respect to the total abundance of ZDHHC6 WT in normal condition. (D) Calnexin palmitoylation upon ZDHHC6 and ZDHHC16 overexpressed. HeLa cells were transfected with control plasmid (Ctrl) or plasmids encoding WT or mutants myc-ZDHHC6 in the presence or not of FLAG-ZDHHC16 for 24 hr. Cells were then metabolically labelled 2 hr at 37\u00b0C with 3H-palmitic acid. Proteins were extracted, TCE isolated, and immunoprecipitated with anti-calnexin antibodies, subjected to SDS-PAGE and analysed by autoradiography (3H-palm), quantified using the Typhoon Imager or by immunoblotting with anti-calnexin, anti-myc or anti-flag antibodies. (E) Quantification of ZDHHC6 levels in total cell extracts with or without ZDHHC16 overexpression. The calculated value for WT ZDHHC6 under control condition was set to 100%. All ZDHHC6 mutants with or without ZDHHC16 were expressed relative to this (n\u00a0=\u00a03, errors represent standard deviations). (F) Quantification of 3H-palmitic acid incorporation into endogenous calnexin with ZDHHC6 in the absence or presence of ZDHHC16. The calculated value of 3H-palmitic acid incorporation into calnexin was set to 100% for control plasmid (Ctrl) and all ZDHHC6 mutants were expressed relative to this, n\u00a0=\u00a03. (G) Stoichiometry of ZDHHC6 palmitoylation in HeLa cells with ZDHHC16 overexpressed. HeLa cells were transfected with plasmids encoding WT myc-ZDHHC6 with Flag-ZDHHC16 constructs for 24 hr. Protein lysates were processed for the APEGS assay. PEG-5k were used for labelling of transfected myc-ZDHHC6 (PEG+), PEG- lanes indicate the negative controls. The samples were analysed by western blotting with anti-myc. (H) Adult mouse tissues were processed for the APEGS assay. PEG-5k were used for labelling of endogenous ZDHHC6 (PEG+), PEG- lanes indicate the negative controls. The samples were analysed by western blotting with rabbit anti-ZDHHC6.\n\nStochastic simulations predicted that overexpression of ZDHHC16 would drastically increase the dynamics of the network (Figure 6C vs. Figure 5E). Indeed, all ZDHHC6 molecules explored all the palmitoylation states, with extremely short residence times in each (Figure 6C). Interestingly, flux analysis indicated that the abundance of C011 was primarily due to two 4-step paths: both started with C000 to C100, followed by palmitoylation on either of the two remaining sites, subsequent depalmitoylation of Cys-328, and finally palmitoylation of the remaining site (Figure 5\u2014figure supplement 3). When analysing 10\u2019000 simulations, 22\u2019000 events of palmitoylation-depalmitoylation emanated from C011 whereas only 4\u2019000 events occurred between C000 and C100. Thus when activity of ZDHHC16 is high, C011 appears to be the hub of the system. C011 has the slowest turover rate of all ZDHHC6 species, explaining why the protein levels are stable.\n\nWe next sought to validate these predictions experimentally. Western blot analysis of protein abundance showed that WT ZDHHC6 protein levels drastically dropped upon siRNA of Lypla2 (Figure 4B), but not upon ZDHHC16 overexpression (Figure 6DE). ZDHHC16 overexpression however led to a 60% drop in CAA expression (Figure 6DE). As expected, expression of AAA was not affected (Figure 6DE).\n\n### Multi-site palmitoylation regulates ZDHHC6 activity\n\nWe next analysed the importance of multiple palmitoylation sites on the ability of ZDHHC6 to modify it substrates. WT or CAA ZDHHC6 were ectopically expressed, or not, in HeLa cells, which also express endogenous ZDHHC6. In addition, ZDHHC16 was ectopically or not, on top of the endogenous ZDHHC16. Under control ZDHHC16 levels, both ectopic expression of WT and CAA ZDHHC6 led to an increase in calnexin palmitoylation (Figure 6D\u2013F as already shown in Figure 4H. The ability of WT ZDHHC6 to modify calnexin was enhanced by ZDHHC16 overexpression (Figure 6D\u2013F). In contrast, ZDHHC16 overexpression reduced calnexin palmitoylation to background levels in CAA ZDHHC6 expressing cells (Figure 6D\u2013F). Note that the \u2018background\u2019 calnexin palmitoylation level in the right panel of Figure 6F was increased compared to the left panel due to the activation of endogenous ZDHHC6 by ZDHHC16 over expression. Using PEGylation, we confirmed that ZDHHC16 overexpression leads to an increase of the palmitoylated ZDHHC6 species (Figure 6H).\n\nThe above experimental analyses show that in HeLa cells under control tissue culture conditions, ZDHHC6 is mainly in the non-palmitoylated form. When ZDHHC6 PEGylation experiments were performed on different mouse tissues, we however found that ZDHHC6 is far more palmitoylated, suggesting that palmitoylation-mediated ZDHHC6 activity is higher in vivo, a situation that we could mimic in cells by ZDHHC16 overexpression.\n\n## Discussion\n\nS-Palmitoylation is a reversible lipid modification that can control protein function in time and in space. The enzymes involved must therefore also be regulated. The DHHC family of palmitoyltransferases was identified almost 15 years ago, yet little is known about the mechanisms that control their activity. DHHC9 was found to require a co-factor, GCP16, for activity (Swarthout et al., 2005), as also found in yeast (Lobo et al., 2002). Similarly, ZDHHC6 was proposed to require Selenoprotein K to function (Fredericks and Hoffmann, 2015). Here we show that ZDHHC6 activity is controlled by palmitoylation in its C-terminal SH3_2-domain. In the non-palmitoylated form, ZDHHC6 has no detectable activity. Only upon modification by an upstream palmitoyltransferase, which we identified as ZDHHC16, does it acquire significant transferase activity. ZDHHC16, also known as Ablphilin 2 (Aph2), is, as ZDHHC6, expressed in many human tissues in particular in the heart, pancreas, liver, skeletal muscle (Zhang et al., 2006). Its name Ablphilin stems from its ability to interact with the non-receptor tyrosine kinase c-Abl at the ER surface (Li et al., 2002). ZDHHC16/Aph2 is essential for embryonic and postnatal survival, eye and heart development in mice (Zhou et al., 2015), for the proliferation of neural stem cells, where it is involved in the activation of the FGF/erk pathways (Shi et al., 2016) and was reported to play a role in DNA damage response (Cao et al., 2016). Our findings raise the possibility that some of these effects may involve ZDHHC6.\n\nWe found that ZDHHC6 palmitoylation is highly dynamic, involving Acyl Protein Thioesterase 2. APT2, which was recently found to be involved in cell polarity-mediated tumor suppression (Hernandez et al., 2017) but is otherwise poorly characterized, also undergoes palmitoylation by a yet to be determined palmitoyltransferase (Kong et al., 2013; Vartak et al., 2014).\n\nZDHHC6 palmitoylation can occur on three sites in its SH3_2 domain. We combined mathematical modelling, with mutagenesis of palmitoylation sites, expression levels of the involved enzymes (ZDHHC16 and APT2) and experimental determination of palmitoylation, depalmitoylation, metabolic pulse-chase experiments and activity determination, to understand the importance of the different ZDHHC6 palmitoylation species and the dynamics of their interconversion. In addition to the predictive power of mathematical modelling of biological systems, this study provides single molecule understanding, as opposed to population analysis.\n\nWe found that in tissue culture cells, under standard conditions, ZDHHC6 molecules spend more than 70% of their lifetime in the non-palmitoylated inactive C000 state (Figure 5E). Each ZDHHC6 molecule does however undergo several rounds of palmitoylation-depalmitoylation on Cys-328 (Figure 5E), leading to C100, the most active state of the enzyme. According to large-scale quantitative proteomics analyses, DHHC enzymes are typically present in less than 1000 copies per cell (Beck et al., 2011; Foster et al., 2003; Nagaraj et al., 2011). Together this information indicates that, at any given time, tissue culture cells contain a very low number of active ZDHHC6 enzymes. In these cells, target proteins do however undergo palmitoylation, and some of these targets are highly abundant proteins such as calnexin (half a million to a million copies per cell [Beck et al., 2011; Foster et al., 2003; Nagaraj et al., 2011]). Thus when active, ZDHHC6 appears be a very potent enzyme and our observations indicate that cells tend to avoid having too much of it. Indeed the C100 species of ZDHHC6 is either rapidly depalmitoylated or targeted to degradation via the ERAD pathway.\n\nPEGylation analysis of mouse tissues indicate that in vivo ZDHHC6 palmitoylation is far more pronounced than in tissue cultured cells (Figure 6H). This situation was mimicked experimentally by overexpression of ZDHHC16 and revealed the importance of having 3 palmitoylation sites, rather than just Cys-328. We indeed found that in the presence of 3 sites, the cellular ZDHHC6 activity could be enhanced by ZDHHC16 overexpression. Increase ZDHHC16 activity led to a shift of species distribution: C011, the most stable form, became the most abundant species. Altogether this study indicates that ZDHHC6 can adopt in 3 types of states: 1) stable and inactive (C000); 2) highly active, short-lived and rapidly turned over (C100); 3) moderately active, long-lived and very slowly turned over (C010 and C011). Such a regulatory system allows the cell to tightly control the activity of ZDHHC6. Why excessive ZDHHC6 activity is detrimental to a cell or an organism will require further studies.\n\nBy combining experimentation and the predictive power of data-driven mathematical modelling, we were able to obtain unprecedented insight into the dynamics of palmitoylation and the role and properties of single acylated species. We found that depending on the site of modification both the activity and turnover of ZDHHC6 were strongly affected, indicating that palmitoylation has a more subtle and precise effect than merely increasing hydrophobicity, consistent with recent findings on single acylated species of Ras (Pedro et al., 2017). We moreover revealed that palmitoylation can occur in cascades, ZDHHC16 controlling the activity of ZDHHC6, which itself tunes the activity of key proteins of the ER and other proteins of the endomembrane system. Finally, this study highlights the importance of acyl protein thioesterases in regulating the interconversion between palmitoylated species.\n\n## Materials and methods\n\n### Cell lines\n\nHeLa cells (ATCC) were grown in complete modified Eagle\u2019s medium (MEM, Sigma) at 37\u00b0C supplemented with 10% foetal bovine serum (FBS), 2 mM L-Glutamine, penicillin and streptomycin. HeLa cells are not on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee. Our cells were authenticated by Microsynth (Switzerland), which revealed 100% DNA identity with ATCCCCL-2. They were mycoplasma negative as tested on a trimestral basis using the MycoProbe Mycoplasma Detection Kit CUL001B. For the ZDHHC6 knockdown cell lines, HeLa cells were transfected with shRNA against ZDHHC6 gene (target sequence in 3\u2019UTR: 5\u2019-CCTAGTGCCATGATTTAAA-3\u2019) or with shRNA control against firefly luciferase gene (target sequence: 5\u2019-CGTACGCGGAATACTTCGA-3\u2019). The transfected cells were selected by treatment with 3 \u00b5g/ml puromycin. HAP1 Wild type WT and knockout cell lines were purchased from Horizon Genomics (Vienna, Austria). The ZDHHC6 clone (13474\u201301) contains a 5 bp deletion in exon 2 (NM_022494) and the ZDHHC16 clone (36523\u201306) contains a 2 bp insertion in exon 2 (NM_198043). HAP1 cells were grown in complete Dulbeccos MEM (DMEM, Sigma) at 37\u00b0C supplemented with 10% foetal bovine serum (FBS), 2 mM L-Glutamine, penicillin and streptomycin.\n\n### Antibodies and reagents\n\nThe following primary antibodies are used: Mouse anti-Actin (Millipore, MAB 1510), Mouse anti-Myc 9E10 (Covance, MMs-150R), Mouse anti-Ubiquitin (Santa Cruz, sc-8017), Mouse anti-GFP (Roche, 11814460001), Rabbit anti-ZDHHC6 (Sigma, SAB1304457), Mouse anti-Transferrin Receptor (Thermo Scientific, 136800), Mouse anti-Flag M2 (Sigma, F3165), Rabbit anti-ANTXR1 (Sigma, SAB2501028), Rabbit anti-TRAP\u03b1 (Abcam, ab133238), Rabbit anti-Flotillin1 were produced in our laboratory, Mouse anti-CLIMP63 (Enzo, ALX-804\u2013604), Mouse anti-Calnexin (MAB3126), Rabbit anti-GP78 AMFR (Abnova, PAB1684), Rabbit anti-IP3R (Cell signaling, 85685). The following beads were used for immunoprecipitation: Protein G Sepharose 4 Fast flow (GE Healthcare, 17-0618-01), anti-Myc affinity gel (Thermo Scientific, 20169), anti-Flag affinity gel EZview M2 (Sigma, F2426). Drugs were used as follows: Bafilomycin A1 at 100 nM (Sigma, B1793), MG132 at 10 \u00b5M (Sigma, C2211), Hydroxylamine at 0.5 M (Sigma, 55459), mPEG-5k at 20 mM (Sigma, 63187), N-ethylmaleimide NEM at 20 mM (Thermo Scientific, 23030), Tris-2- carboxyethyl-phosphine hydrochloride TCEP at 10 mM (Thermo Scientific, 23225), Methyl methanethiosulfonate MMTS at 1.5% (Sigma, 208795), Puromycin at 3 \u00b5g/ml (Sigma, P9620).\n\n### Transfection and siRNA experiments\n\nHuman Myc-ZDHHC6, Myc-ZDHHC6- C328A (ACC), Myc-ZDHHC6-C329A (CAC), Myc-ZDHHC6-C343A (CCA), Myc-ZDHHC6-C328A-C329A (AAC), Myc-ZDHHC6-C326A-C343A (ACA), Myc-ZDHHC6-C329A-C343A (CAA), Myc-ZDHHC6-C328A-C329A-C343A, Myc-ZDHHC6-R361Q, Myc-ZDHHC6-R361A, Myc-ZDHHC6-Del-K410-K411-N412-R413, Myc-ZDHHC6-Del-D126-H127-H128-C129 were cloned in pcDNA3. Human GFP-ZDHHC6 and all cysteine mutants mentioned above were also cloned in peGFP. Human FLAG-ZDHHC16 was cloned in pCE-puro-3xFLAG, human Myc-ZDHHC16 was cloned in pCE puro-his-myc. All other human Myc-DHHCs were cloned in pcDNA3.1 (provided by the Fukata lab). mCitrine fusions of APTs were inserted into pcDNA3.1-N1 (provided by Bastiaens lab, [Vartak et al., 2014]). mCitrine APT1-S119A, mCitrine APT2-S121A, mCitrine-APT1-C2S, mCitrine-APT2-C2S were cloned in pcDNA3.1-N1. For control transfection, we used an empty pcDNA3 plasmid. Plasmids were transfected into HeLa cells for 24 hr (2 \u00b5g cDNA/9.6 cm2) plate using Fugene (Promega).\n\nFor gene silencing, HeLa cells were transfected for 72 hr with 100 pmol/9.2cm2 dish of siRNA using interferin (Polyplus) transfection reagent. As control siRNA we used the following target sequence of the viral glycoprotein VSV-G: ATTGAACAAACGAAACAAGGA. siRNA against human genes were purchased from Siegen (ZDHHC6 target sequences: 1-GAGGTTTACGATACTGGTTAT, 2-TAGAAGGTGTTTCAAGAATAA, ZDHHC16 target sequences: 1-CTCGGGTGCTCTTACCTTCTA, 2-TAGCATCGAAAGGCACATCAA; APT1 target sequence: AACAAACTTATGGGTAATAAA; LYPLA2 target sequence: AAGCTGCTGCCTCCTGTCTAA, all other DHHC target sequences were previously tested [Lakkaraju et al., 2012]).\n\n### Real-time PCR\n\nFor HeLa cells, RNA was extracted from a six\u2010well dish using the RNeasy kit (Qiagen,\u00a0Hilden,\u00a0Germany). 1 mg of the total RNA extracted was used for the reverse transcription using random hexamers and superscript II (Thermo Scientific). A 1:40 dilution of the cDNA was used to perform the real\u2010time PCR using SyBr green reagent (Roche). mRNA levels were normalized using three housekeeping genes: TATA\u2010binding protein, \u03b2\u2010microglobulin and \u03b2\u2010glucoronidase. Total RNA of different mouse tissues were extracted using the RNeasy kit (Qiagen) after solubilization with TissueLyser II (Qiagen).\n\n### Radiolabelling experiments\n\nFor the 35S-metabolic labelling, the cells were starved in DMEM HG devoid of Cys/Met for 30 min at 37\u00b0C, pulsed with the same medium supplemented with 140 \u03bcCi of 35S Cys/Met (American Radiolabeled Chemicals, Inc.) for the indicated time, washed and incubated in DMEM complete medium for the indicated time of chase (Abrami et al., 2008) before immunoprecipitation. To detect palmitoylation, HeLa cells were transfected or not with different constructs, incubated for 2 hr in IM (Glasgow minimal essential medium buffered with 10 mM Hepes, pH 7.4) with 200 \u00b5Ci/ml 3H palmitic acid (9,10-3H(N)) (American Radiolabeled Chemicals, Inc.). The cells were washed, incubated in DMEM complete medium for the indicated time of chase, or directly lysed for immunoprecipitation with the indicated antibodies.\n\nFor all radiolabelling experiments, after immunoprecipitation, washes beads were incubated for 5 min at 90\u00b0C in reducing sample buffer prior to 4\u201312% gradient SDS-PAGE. After SDS-PAGE, the gel are incubated in a fixative solution (25% isopropanol, 65% H2O, 10% acetic acid), followed by a 30 min incubation with signal enhancer Amplify NAMP100 (GE Healthcare). The radiolabeled products were revealed using Typhoon phosphoimager and quantified using the Typhoon Imager (ImageQuanTool, GE Healthcare). Quantification of radioactive experiments was quantified using specific screens by autoradiography, both for 35S and 3H. The images shown for 3H-palmitate labeling were however obtained using fluorography (indirect detection of radioactive emission by stimulated light emission from a fluorophore (Amplify) on film).\n\n### Immunoprecipitation\n\nFor immunoprecipitation, cells were washed three times PBS, lysed 30 min at 4\u00b0C in the following Buffer (0.5% Nonidet P-40, 500 mM Tris pH 7.4, 20 mM EDTA, 10 mM NaF, 2 mM benzamidin and protease inhibitor cocktail (Roche)), and centrifuged 3 min at 5000 rpm. Supernatants were subjected to preclearing with G sepharose beads prior immunoprecipitation reaction. Supernatants were incubated overnight with the appropriate antibodies and G Sepharose beads.\n\n### Post-nuclear supernatants and ACYL-RAC\n\nHeLa cells were harvested, washed with PBS, and homogenized by passage through a 22G injection needle in HB (HB: 2.9 mM imidazole and 250 mM sucrose, pH 7.4) containing a mini tablet protease inhibitor mixture (Roche). After centrifugation, the supernatant was collected as PNS (Post Nuclear Supernatant).\n\nProtein S-palmitoylation was assessed by the Acyl-RAC assay as described (Werno and Chamberlain, 2015), with some modifications. A fraction of the PNS was saved as the input. HeLa PNS were lysed in buffer (0.5% Triton-X100, 25 mM HEPES, 25 mM NaCl, 1 mM EDTA, pH 7.4 and protease inhibitor cocktail). In order to block free SH groups with S-methyl methanethiosulfonate (MMTS), 200 \u03bcl of blocking buffer (100 mM HEPES, 1 mM EDTA, 87.5 mM SDS and 1.5% (v/v) MMTS) was added to cell lysate and incubated for 4 h at 40 \u00b0C. Subsequently, 3 volumes of ice-cold 100% acetone was added to the blocking protein mixture and incubated for 20 minutes at \u221220 \u00b0C and then centrifuged at 5,000 \u00d7\u00a0g for 10 minutes at 4 \u00b0C to pellet precipitated proteins. The pellet was washed five times in 1 ml of 70% (v/v) acetone and resuspended in buffer (100 mM HEPES, 1 mM EDTA, 35 mM SDS). For treatment with hydroxylamine (HA) and capture by Thiopropyl Sepharose beads, 2\u2009M hydroxylamine was added together with the beads (previously activated for 15 min with water) to a final concentration of 0.5\u2009M hydroxylamine and 10% (w/v) beads. As a negative control, 2\u2009M Tris was used instead of hydroxylamine. These samples were then incubated overnight at room temperature on a rotate wheel. The beads were washed, the proteins were eluted from the beads by incubations in 40 \u03bcl SDS sample buffer with beta-mercapto-ethanol for 5 minutes at 95\u2009\u00b0C. Finally, samples were submitted to SDS-PAGE and analysed by immunoblotting.\n\n### APEGS assay\n\nThe level of protein S-palmitoylation was assessed as described (Yokoi et al., 2016), with minor modifications. HeLa cells were lysed with the following buffer (4% SDS, 5 mM EDTA, in PBS with complete inhibitor (Roche)). After centrifugation at 100,000\u00a0\u00d7\u00a0g for 15 min, supernatant proteins were reduced with 25 mM TCEP for 1 hr at 55\u00b0C or at room temperature (RT), and free cysteine residues were alkylated with 20 mM NEM for 3 hr at RT to be blocked. After chloroform/methanol precipitation, resuspended proteins in PBS with 4% SDS and 5 mM EDTA were incubated in buffer (1% SDS, 5 mM EDTA, 1 M NH2OH, pH 7.0) for 1 hr at 37\u00b0C to cleave palmitoylation thioester bonds. As a negative control, 1 M Tris-HCl, pH7.0, was used. After precipitation, resuspended proteins in PBS with 4% SDS were PEGylated with 20 mM mPEGs for 1 hr at RT to label newly exposed cysteinyl thiols. As a negative control, 20 mM NEM was used instead of mPEG (-PEG). After precipitation, proteins were resuspended with SDS-sample buffer and boiled at 95\u00b0C for 5 min. Protein concentration was measured by BCA protein assay.\n\n### BLUE native PAGE\n\nThe PNS of HeLa cells were extracted. The proteins were lysed in 1% Digitonin and passed through a 26 g needle, incubated on ice 30 min, spin 16 000 g for 30 min and run following the manufacturer instructions on the Novex Native PAGE Bis-tris gel system (ThermoFisher).\n\n### Immunofluorescence staining and fluorescence microscope\n\nHeLa cells were seeded on 12 mm glass coverslips (Marienfeld GmbH, Germany) 24 hr prior to transfection. PAT6-myc plasmids were transfected using Fugene (Promega, USA) for 48 hr. Cells were then fixed using 3% paraformaldehyde for 20 min at 37\u00b0C, quenched 10 min with 50 mM NH4Cl at RT and permeabilized with 0.1% TX100 for 5 min at RT and finally blocked overnight with 0.5% BSA in PBS. Cells were washed 3x with PBS in between all the steps. Cells were then stained with anti-myc and anti-BiP antibodies for 30 min at RT, washed and incubated again 30 min with their corresponding fluorescent secondary antibodies. Finally cells were mounted on glass slide using mowiol. Imaging was performed using a confocal microscope (LSM710, Zeiss, Germany) with a 63x oil immersion objective (NA 1.4).\n\n### Core model of ZDHHC6 palmitoylation\n\nThe ZDHHC6 palmitoylation model (Figure 5A) was designed following the approach elaborated previously for calnexin (Dallavilla et al., 2016). The core model is based a previously described protein phosphorylation model used in (Goldbeter and Koshland, 1981). The set of reaction described by Goldbeter was used to model a single palmitoylation event. Multiple palmitoylation events were modelled replicating this subunit for each reaction.\n\nIn the Goldbeter study, the model was mathematically described using mass action terms. Here, due to the presence of multiple modification events, which require the definition of a consistent number of parameters, we described model reactions using so-called \u2018total quasi-steady state approximation\u2019 (tQSSA) (Pedersen et al., 2008). With respect to the standard quasi-steady state approximation (QSSA), tQSSA is valid also when the enzyme-substrate concentrations are comparable (Borghans et al., 1996). ZDHHC6 is palmitoylated by ZDHHC16. Due to this fact, the use of tQSSA is justified since different proteome studies suggest that DHHC enzymes have similar concentrations (Beck et al., 2011; Merrick et al., 2011; Nagaraj et al., 2011; Yang et al., 2010; Yount et al., 2010). The step-by-step application of the tQSSA approximation to a palmitoylation model is described in (Dallavilla et al., 2016).\n\nThe model can be divided in two parts; we first have a phase of synthesis of ZDHHC6, which initially is unfolded (U in Figure 5A) and subsequently reaches the folded initially non-palmitoylated (C000) form. Each site can subsequently be palmitoylated leading to C100 C010 and C001. These species can then undergo a second palmitoylation step leading to C110, C101 and C011, and a third leading to C111. Since palmitoylation is reversible, palmitate can be removed from each of the sites, from all of the species.\n\nZDHHC6 model is based on the following assumption:\n\nA detailed account of all reactions and differential equations in the model is given in Supplementary file 1A-C.\n\n### Parameterization of the model\n\nSince no kinetic data on ZDHHC6 palmitoylation is available, all the parameters of the model were estimated using a genetic algorithm. For the parameter optimization, multiple datasets coming from experimental results were considered. Time course labelling experiments were performed in order to characterize the dynamics of ZDHHC6 synthesis/degradation and incorporation/loss of palmitate.\n\nThe types of data used, the description of the Genetic Algorithm (GA) and the step-by-step application of the optimization algorithm used to find values for the parameters are described in detail in (Dallavilla et al., 2016). In this paper we use the exact same procedure.\n\nFor the parameter estimation we used a calibration set that correspond to the data visible in (Figure 5B and Figure 5\u2014figure supplement 1). The remaining part of the data (Figure 5B and Figure 5\u2014figure supplement 2) was used to validate the output of the model and to verify the accuracy of its prediction capabilities.\n\nBecause of the presence of multiple objectives there does not exist a single solution that simultaneously optimizes each objective, so the algorithm provides as output a local Pareto set of solutions, which are equally optimal with respect to the fitness function we defined. From the Pareto set provided by the GA and in order to be more accurate and to reduce the variability in the output of the model, we selected the set of parameters that best fitted the calibration data. The procedure for the selection of the subset is described in (Dallavilla et al., 2016). In total, 152 different sets of parameter were selected at the end of the optimization.\n\nThe results of the optimization can be found in Supplementary file 1C.\n\n### Simulating the labelling experiments\n\nSince the accuracy of each parameter set is evaluated by computing the distance between the output of the model and different experiments of the calibration dataset, we made use of a previously a established method to reproduce the different type of experiment in-silico (Dallavilla et al., 2016).\n\n### Stochastic simulations\n\nIn order to measure the average palmitoylation time of ZDHHC6, we made use of a previously established method to perform in-silico single molecule tracking (Dallavilla et al., 2016).\n\n### Conversion of deterministic parameters to stochastic\n\nParameter conversion from deterministic to stochastic model is needed to perform stochastic simulations (Dallavilla et al., 2016). This transformation involves a change of units, from concentration to number of molecules. A single assumption was added to those previously defined (Dallavilla et al., 2016), namely that the number of ZDHHC6 molecules per HeLa cell is in the order of 1600 molecules (Beck et al., 2011; Merrick et al., 2011; Nagaraj et al., 2011; Yang et al., 2010; Yount et al., 2010). Supplementary file 3A shows the parameters obtained through the conversion. The model design is shown through the stoichiometry matrix and the propensity function in tables in Supplementary file 1.\n",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "53582abe-d81b-4461-84ed-e1d576576aeb",
+      "submission_id": "685324d2-ff63-46f1-a276-b394702acf3c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philippe IH Bastiaens, Max Planck Institute of Molecular Physiology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27826.023](https://doi.org/10.7554/eLife.27826.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Identification and dynamics of the DHHC16-DHHC6 palmitoylation cascade\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Philippe IH Bastiaens (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Ivan Dikic as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Anthony Magee (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis very interesting multidisciplinary study deals with a palmitoylation/depalmitopyaltion reaction network around the palmitoyl transferase DHHC6 that controls its DHHC16 induced PAT activity. The work presents a very thorough study that led to the identification of the first palmitoylation cascade. This is a very exciting discovery, which poses many interesting questions at multiple levels, from basic biochemistry and cell biology, to the systems level properties of palmitoylation cascades.\n\nEssential revisions:\n\n1) Are the different palmitoylated species of DHHC6 differentially localized and thereby palmitoylate different substrates? The authors should analyse the localisation of the different palmitoylation deficient mutants of DHHC6 and possibly investigate their activity on one of the other substrates of DHHC6 to clarify that the system is not a substrate selection network.\n\n2) It is unclear why the authors had to use stochastic simulation for part of their analyses given the copy numbers of the analyzed molecules. Can the authors use their model to propose experiments that would make the model parameters more identifiable?\n\n3) The authors do not measure enzyme activity directly; rather it is assessed indirectly by in vivo labelling of substrates. This should be discussed and addressed. Ideally an in vitro direct assay of DHHC6 activity should be used.\n\n4) The methodology leave open the possibility that these proteins do not genuinely interact physically but could simply be associated with the same detergent-insoluble structures. More stringent solubilisation methods (e.g. stronger detergents or the extraction of cholesterol with methyl-\u03b2-cyclodextrin) should be used to confirm the result.\n\n5) The pulse is relatively long as compared to the chase in some pulse-chase experiments (such as Figure 2D a 2h pulse is used). This can incorrectly estimate the rate of turnover. This point should be addressed and discussed.\n",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0eede80f-586e-42bb-9c16-aac7a884334c",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C1",
+      "claim": "Human ZDHHC6 is controlled by an upstream palmitoyltransferase, ZDHHC16.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that human ZDHHC6, which modifies key proteins of the endoplasmic reticulum, is controlled by an upstream palmitoyltransferase, ZDHHC16, revealing the first palmitoylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by siRNA screening, overexpression experiments, and knockout cell line analysis showing ZDHHC16 is responsible for ZDHHC6 palmitoylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "fa902b6e-09dc-4ebb-b731-88da9ec831aa",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C2",
+      "claim": "The ZDHHC16-ZDHHC6 system represents the first palmitoylation cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that human ZDHHC6, which modifies key proteins of the endoplasmic reticulum, is controlled by an upstream palmitoyltransferase, ZDHHC16, revealing the first palmitoylation cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding in the abstract and introduction, representing the first documented case of one palmitoyltransferase modifying another.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "a498b0c9-429d-45be-aa9e-e95ab2010c8b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C3",
+      "claim": "ZDHHC6 has three palmitoylation sites in its SH3_2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Palmitoylation of ZDHHC6 was reported in two large-scale proteomics analysis to occur on Cys-328, Cys-329 and Cys-343 in the SH3 domain (Collins et al., 2017; Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to proteomics studies and confirmed by mutagenesis experiments showing all three sites can be palmitoylated.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "d331e375-b326-435a-a4dc-0f359ecdd668",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C4",
+      "claim": "ZDHHC6 can exist in eight differentially palmitoylated species based on occupancy of three palmitoylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of 3 palmitoylation sites leads to the potential existence of 8 species: from fully unoccupied Cys-sites, noted C000, to full occupancy, noted C111, in the order of Cys-328, Cys-329 and Cys-343 in the exponent (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical modeling and experimental data support the existence of these eight species with different properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "42ce190e-69d8-47a4-b037-d6a2e370d385",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C5",
+      "claim": "Each ZDHHC6 palmitoylation species varies in terms of turnover rate and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that species rapidly interconvert through the action of ZDHHC16 and the Acyl Protein Thioesterase APT2, that each species varies in terms of turnover rate and activity, altogether allowing the cell to robustly tune its ZDHHC6 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through pulse-chase experiments, activity assays with different mutants, and mathematical modeling predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "d4c7bc77-ce47-4010-b165-5572a53f9d66",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C6",
+      "claim": "APT2 mediates depalmitoylation of ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of WT, but not palmitoylation deficient, APT2 led to a significant decrease in ZDHHC6 palmitoylation. APT2S121A had an intermediate effect, possibly due to the formation of heterodimers between mutant and endogenous APT2 (Kong et al., 2013; Vujic et al., 2016). These observations show that ZDHHC6 palmitoylation is dynamic, in particular on Cys-328, and that depalmitoylation is mediated by APT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by overexpression experiments showing APT2, but not APT1, affects ZDHHC6 palmitoylation levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "6c285c52-5095-41c7-b763-1fdd3d652db6",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C7",
+      "claim": "Palmitoylation of Cys-328 accelerates ZDHHC6 turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, mutation of Cys-328, but not of Cys-329 or Cys-343, abolished the sensitivity to ZDHHC16 overexpression or LYPLA2 silencing (Figure 3BC, Figure 1\u2014figure supplement 1BC). LYPLA2 silencing led to ubiquitination of ZDHHC6 (Figure 3D) and ZDHHC6 degradation could be rescued by the proteasome inhibitor MG132 (Figure 3E). Thus altogether these observations indicate that palmitoylation of Cys-328 renders ZDHHC6 susceptible to degradation by the ERAD pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by metabolic pulse-chase experiments showing accelerated degradation upon ZDHHC16 overexpression or APT2 silencing, which is abolished in C328A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "60f420ff-01b3-4105-969a-58721c72eb3b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C8",
+      "claim": "Palmitoylation of Cys-328 renders ZDHHC6 susceptible to degradation by the ERAD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "LYPLA2 silencing led to ubiquitination of ZDHHC6 (Figure 3D) and ZDHHC6 degradation could be rescued by the proteasome inhibitor MG132 (Figure 3E). Thus altogether these observations indicate that palmitoylation of Cys-328 renders ZDHHC6 susceptible to degradation by the ERAD pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ubiquitination assays and proteasome inhibitor rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "876292b0-107a-48e5-9af5-c70ec2539e71",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C9",
+      "claim": "ZDHHC6 modifies calnexin, gp78, IP3 receptor, and transferrin receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we focused on one of the 23 human palmitoyltransferase, ZDHHC6, which localizes to the endoplasmic reticulum (ER) and controls a panel of key ER substrates such as the ER chaperone calnexin (Lakkaraju et al., 2012), the ER E3 ligase gp78 (Fairbank et al., 2012), the IP3 receptor (Fredericks et al., 2014) as well as cell surface proteins such as the transferrin receptor (Senyilmaz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies and confirmed by Acyl-RAC experiments in ZDHHC6 KO cells.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "a7d1be4b-0bb4-4b7d-8c67-b4a3a44c2e71",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C10",
+      "claim": "Calnexin and transferrin receptor are exclusively modified by ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly calnexin and Trf-R were no longer captured by Acyl-RAC in the HAP1 ZDHHC6 KO cells, confirming that they are exclusively modified by ZDHHC6, while capture of the IP3 receptor and gp78 was reduced but not abolished indicating that they can also be modified by other palmitoyltransferases (Figure 1B) consistent with previous findings (Fairbank et al., 2012; Fredericks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by complete loss of palmitoylation signal in ZDHHC6 KO cells for these substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "1cf88dcf-758c-4b28-8aa3-8bcb55d08726",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C11",
+      "claim": "IP3 receptor and gp78 can be modified by palmitoyltransferases other than ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly calnexin and Trf-R were no longer captured by Acyl-RAC in the HAP1 ZDHHC6 KO cells, confirming that they are exclusively modified by ZDHHC6, while capture of the IP3 receptor and gp78 was reduced but not abolished indicating that they can also be modified by other palmitoyltransferases (Figure 1B) consistent with previous findings (Fairbank et al., 2012; Fredericks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by partial retention of palmitoylation signal in ZDHHC6 KO cells and supported by previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "8c94853b-14ec-44cc-a138-3ab945cb585b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C12",
+      "claim": "ZDHHC6 itself undergoes palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "When probing samples for ZDHHC6, we found that the palmitoyltransferase itself was captured by Acyl-RAC in HAP1 cells (Figure 1B) and also in different mouse tissues (shown for mouse lung tissue in Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Acyl-RAC capture and 3H-palmitate incorporation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "5a4ca61b-e597-4f4a-afea-000981308bf6",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C13",
+      "claim": "ZDHHC6 does not autopalmitoylate itself.",
+      "claim_type": "EXPLICIT",
+      "source": "WT and (\u2206DHHC) ZDHHC6 both underwent palmitoylation when transiently expressed in control or shRNA ZDHHC6 cells (Figure 2\u2014figure supplement 1A), indicating that ZDHHC6 must be modified by another enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by palmitoylation of catalytically inactive ZDHHC6 mutant and palmitoylation in ZDHHC6 knockdown cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "f220f149-3bb7-4936-85fa-53352353036c",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C14",
+      "claim": "ZDHHC16 silencing leads to a 60% drop in ZDHHC6 palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We next performed 3H-palmitate labelling experiments upon siRNA silencing of each of the 23 DHHC enzymes. While a significant but mild drop was observed for several DHHC enzymes, only silencing of ZDHHC16 led to a major, 60%, drop in signal intensity (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from siRNA screening experiments with 3H-palmitate labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "b83f20ff-a376-4451-a7c5-2fc7f704194f",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C15",
+      "claim": "All three ZDHHC6 palmitoylation sites are modified by ZDHHC16.",
+      "claim_type": "EXPLICIT",
+      "source": "3H-palmitate incorporation was also reduced for the AAC and CCA mutants (Figure 2\u2014figure supplement 1B), showing that all three sites are modified by the same enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by reduced palmitoylation of all single and double cysteine mutants upon ZDHHC16 silencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "f8b4038c-bb1d-4974-8939-96b98dbe1334",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C16",
+      "claim": "ZDHHC6 and ZDHHC16 can physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, co-immunoprecipitation experiments following transient over-expression of myc-tagged ZDHHC6 and FLAG-tagged ZDHHC16 showed that the two enzymes can interact (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by co-immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "6b6be7b6-1ce5-4250-8d12-6c2386e046e7",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C17",
+      "claim": "ZDHHC6 silencing or knockout leads to an increase in ZDHHC16 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ZDHHC6 silencing in HeLa cells or ZDHHC6 knock out in HAP1 cells both led to an increase in the ZDHHC16 mRNA (Figure 2\u2014figure supplement 2AB), indicating that these two proteins interact physically and genetically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by quantitative RT-PCR analysis in ZDHHC6 knockdown and knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "6e33e670-7e53-4888-8620-f6526ec53150",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C18",
+      "claim": "ZDHHC16 is not palmitoylated in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16, which localizes under over-expression conditions to the ER and the Golgi (Figure 2\u2014figure supplement 2A), is not palmitoylated itself in HeLa cells, as shown both by 3H-palmitate incorporation and Acyl-RAC (Figure 2\u2014figure supplement 2BC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by lack of 3H-palmitate incorporation and Acyl-RAC capture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "4a483456-6873-4858-acf6-392cecf21b64",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C19",
+      "claim": "50% of palmitate is lost from ZDHHC6 in approximately 1 hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 2 hr pulse, 50% of the 3H-palmitate was lost from ZDHHC6 in \u22481 hr, indicating rapid turnover of the acyl chains (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by 3H-palmitate pulse-chase experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "c6a52ac3-dc5c-49e0-92db-678b374ade2e",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C20",
+      "claim": "Rapid palmitate turnover on ZDHHC6 requires the presence of Cys-328.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed similar experiments on the various single and double cysteine mutants and found that rapid turnover required the presence of Cys-328. In its absence, the apparent palmitate release rates were considerably slower, reaching more than 4 hr (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by pulse-chase experiments on cysteine mutants showing slower depalmitoylation when Cys-328 is mutated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "e06b2430-ba42-4f72-a7aa-23ffaa55d72a",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C21",
+      "claim": "Overexpression of wild-type APT2 leads to a significant decrease in ZDHHC6 palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, overexpression of WT, but not palmitoylation deficient, APT2 led to a significant decrease in ZDHHC6 palmitoylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by 3H-palmitate incorporation experiments with APT2 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "1d6722ae-ac99-4395-9716-b2aaf826446e",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C22",
+      "claim": "APT1 overexpression has no detectable effect on ZDHHC6 palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of WT or mutant APT1 had no detectable effect on ZDHHC6 palmitoylation (Figure 2E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 3H-palmitate incorporation experiments showing no change with APT1 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "30668270-19d2-45ad-8d45-bfe73ea71908",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C26",
+      "claim": "Mutation of Cys-328 abolishes ZDHHC6 sensitivity to ZDHHC16 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, mutation of Cys-328, but not of Cys-329 or Cys-343, abolished the sensitivity to ZDHHC16 overexpression or LYPLA2 silencing (Figure 3BC, Figure 1\u2014figure supplement 1BC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by pulse-chase experiments showing C328A mutant is not affected by ZDHHC16 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "2ac229ad-5bb8-43e1-9610-b617e6d02357",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C27",
+      "claim": "LYPLA2 silencing leads to ubiquitination of ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "LYPLA2 silencing led to ubiquitination of ZDHHC6 (Figure 3D) and ZDHHC6 degradation could be rescued by the proteasome inhibitor MG132 (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by immunoprecipitation and Western blotting with anti-ubiquitin antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "716dade1-ffe9-4ff9-926b-18e3505c5226",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C28",
+      "claim": "ZDHHC6 degradation can be rescued by the proteasome inhibitor MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "LYPLA2 silencing led to ubiquitination of ZDHHC6 (Figure 3D) and ZDHHC6 degradation could be rescued by the proteasome inhibitor MG132 (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Western blot analysis showing increased ZDHHC6 levels upon MG132 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "bcf95bc1-1f16-4467-b27e-741aa69689c6",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C29",
+      "claim": "Wild-type ZDHHC6 localizes to the endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopically expressed WT myc-ZDHHC6 shows a typical ER staining, co-localizing with Bip, a lumenal ER chaperone, and BAP31, a transmembrane ER protein (Figure 4AB), as did all the cysteine mutants (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by immunofluorescence colocalization with ER markers Bip and BAP31.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "c7730845-3e37-498d-9627-67d27f816a50",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C30",
+      "claim": "The ZDHHC6 AAA mutant accumulates more frequently in dot-like ER structures compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZDHHC6 AAA mutant was also clearly present in the reticular ER, but it tended to accumulate more frequently in dot-like ER structures, which stained positive for BAP31 but not Bip (Figure 4AB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by immunofluorescence microscopy and quantification of cells with dots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "445d67db-a9fc-4f90-9679-063aaa596d7a",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C31",
+      "claim": "Palmitoylation affects ZDHHC6 localization within the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the inability of ZDHHC6 AAA to undergo palmitoylation influences its localization within the two dimensional space of the ER membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential localization patterns of wild-type versus AAA mutant ZDHHC6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "f5a2dd0a-e704-411d-9c09-92cf85f37ac7",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C32",
+      "claim": "Wild-type ZDHHC6 can associate with itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation experiments using ZDHHC6 constructs with two different tags showed that WT ZDHHC6 can associate with itself as well as with the \u2206DHHC variant but not with the AAA mutant (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by co-immunoprecipitation experiments with differentially tagged ZDHHC6 constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "5507539d-f2be-4244-b3af-6fa76e7659cb",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C33",
+      "claim": "ZDHHC6 AAA mutant does not associate with wild-type ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation experiments using ZDHHC6 constructs with two different tags showed that WT ZDHHC6 can associate with itself as well as with the \u2206DHHC variant but not with the AAA mutant (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by lack of co-immunoprecipitation between wild-type and AAA mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "31484e20-9d86-4ae9-9f61-5afac5dc195e",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C34",
+      "claim": "ZDHHC6 can associate into higher order structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue native gel analysis confirmed that ZDHHC6 can associate into higher order structures, which could be dimers and above, or associate with detergent resistant membrane domains (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by blue native PAGE showing ZDHHC6 migrating at higher molecular weights.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "b451700a-570a-4ffc-b339-8395bac154e9",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C35",
+      "claim": "The AAA mutant forms higher order complexes that are different from those formed by wild-type ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "The AAA mutant also migrated as higher order complexes but these were clearly different from those formed by the WT protein (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by different migration patterns on blue native gels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "d7b3ffd7-5bfc-4949-95cf-b10336d94482",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C36",
+      "claim": "Palmitoylation affects ZDHHC6 assembly into complexes or association with membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus palmitoylation affects localization of ZDHHC6 in the ER as well as its assembly into complexes or association with membrane domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the different complex formation patterns of wild-type versus AAA mutant on blue native gels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "7f8e0f84-d55b-41fb-80ce-7f6be98eed9f",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C37",
+      "claim": "Calnexin palmitoylation is significantly reduced in ZDHHC16 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Calnexin palmitoylation was significantly reduced in ZDHHC16 KO cells, as monitored by Acyl-RAC (Figure 4E) and enhanced upon ZDHHC16 over-expression (Figure 4F) indicating that palmitoylation indeed modulates ZDHHC6 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Acyl-RAC assay in ZDHHC16 knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "e8832a43-f04e-48ec-8824-2d30a286f661",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C38",
+      "claim": "ZDHHC16 overexpression enhances calnexin palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Calnexin palmitoylation was significantly reduced in ZDHHC16 KO cells, as monitored by Acyl-RAC (Figure 4E) and enhanced upon ZDHHC16 over-expression (Figure 4F) indicating that palmitoylation indeed modulates ZDHHC6 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by 3H-palmitate incorporation into calnexin upon ZDHHC16 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "4ffcb15e-afbc-41f0-88d6-129a502920bf",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C39",
+      "claim": "Overexpression of wild-type ZDHHC6 leads to 2.6 to 3-fold increase in calnexin and transferrin receptor palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of WT ZDHHC6 led to 2.6 to 3-fold increase in calnexin and transferrin receptor palmitoylation, respectively (Figure 4GH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from 3H-palmitate incorporation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "8933464b-03f0-44bc-8ed4-5fcf9aec8311",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C40",
+      "claim": "Overexpression of ZDHHC6 AAA has no effect on calnexin or transferrin receptor palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of ZDHHC6 AAA had no effect on either target, confirming the importance of palmitoylation for ZDHHC6 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by 3H-palmitate incorporation experiments showing no increase in substrate palmitoylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "8195df5a-9b30-4ada-bd69-00b35c65116d",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C41",
+      "claim": "Palmitoylation of Cys-328 confers the highest activity to ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that palmitoylation of both ZDHHC6 targets is similarly affected by cysteine mutations rules out the possibility that differentially palmitoylated ZDHHC6 molecules could have different target specificities. Together these experiments indicate that palmitoylation of Cys-328 confers the highest activity to ZDHHC6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by activity assays showing mutants lacking Cys-328 have reduced ability to palmitoylate substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "91731db5-d80e-4174-a7bb-3df3cb9f3022",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C42",
+      "claim": "The C000 species of ZDHHC6 is predicted to have a half-life of approximately 40 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "C000 is predicted to have a half-life of approx. 40 hr (Figure 5C and Supplementary file 2A), consistent with the decay measured experimentally for the AAA triple mutant (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling and validated by experimental measurements of AAA mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "25c4f141-d620-4c58-8876-d548d66b548b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C47",
+      "claim": "The major palmitoylation and depalmitoylation fluxes occur between C000 and C100.",
+      "claim_type": "EXPLICIT",
+      "source": "The major fluxes through the system are from C000 to C100, backwards, corresponding to palmitoylation and depalmitoylation of Cys-328 (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by flux analysis from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "f0855f53-c2b0-4be8-89ba-23080b82bf4b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C48",
+      "claim": "In tissue culture cells, approximately 70% of ZDHHC6 is non-palmitoylated at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimation of the steady state distribution of species indicated that in experimental setting \u2013HeLa cells in culture\u2013 the ZDHHC6 cellular population is about 70% non-palmitoylated and 20% palmitoylated, the most abundant species being C010 and C011 (Figure 5F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling and confirmed by PEGylation assay showing only non-palmitoylated form is detectable.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "2e12c597-c30e-4747-90ad-4dfb7d9e2cda",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C49",
+      "claim": "Each ZDHHC6 molecule undergoes multiple rounds of palmitoylation-depalmitoylation during its life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The model altogether predicts that in tissue culture HeLa cells, each ZDHHC6 molecule undergoes multiple rounds of palmitoylation-depalmitoylation during its life cycle mostly on Cys-328.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by stochastic simulations showing average of 2.7 passages through C100 state per molecule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "23505e31-6537-4796-a51b-12f5b0685957",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C50",
+      "claim": "ZDHHC6 molecules spend most of their time in the C000 state.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC6 molecules were predicted to spend most of their time, by far, in the C000 state (Figure 5E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by stochastic single molecule tracking simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "49e69edd-de22-4d8a-aef7-ad09adb73588",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C51",
+      "claim": "At any given time, approximately 60% of ZDHHC6 molecules are not acylated in tissue culture cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At any given time, approximately 60% of the molecules are not acylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling of steady state distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "4178ce78-4781-4535-8659-0f4179321604",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C52",
+      "claim": "ZDHHC16 overexpression leads to C011 becoming the most abundant ZDHHC6 species.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16 overexpression led to a major shift in species distribution, C011 then representing 60% of the population (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling under ZDHHC16 overexpression conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "9f197fec-4277-42fe-b4ad-17eebefed789",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C53",
+      "claim": "ZDHHC16 overexpression leads to only a 15% drop in overall ZDHHC6 content.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the overall ZDHHC6 content dropped by only 15% (Supplementary file 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling and confirmed experimentally by Western blot.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "9b79e7b6-ccd7-457d-bbc2-02f4f413fbd2",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C54",
+      "claim": "LYPLA2 silencing leads to a 72% drop in ZDHHC6 content.",
+      "claim_type": "EXPLICIT",
+      "source": "Lypla2 silencing in contrast led to a 72% drop in ZDHHC6 content (Supplementary file 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling and confirmed experimentally.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "9dae0d1b-0742-4002-8465-fa260f35a254",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C55",
+      "claim": "The CAA mutant cellular content is predicted to be 84% of wild-type under control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under control conditions, the total CAA content is predicted to be 84% of WT, and mostly in the non-palmitoylated state (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "9e0932a0-89d2-4f90-a173-0504775ae0ee",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C56",
+      "claim": "The CAA mutant cellular content drops to 32% of wild-type upon ZDHHC16 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAA cellular content is however predicted to drop to 32% of WT control levels upon ZDHHC16 overexpression (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling and confirmed experimentally by Western blot showing 60% drop.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "a512efdf-570d-4ec7-bde5-368658fe3acc",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C57",
+      "claim": "The presence of 3 palmitoylation sites renders ZDHHC6 protein content robust to changes in ZDHHC16 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, these predictions suggest that the presence of 3 palmitoylation sites, as opposed to just Cys-328, renders the ZDHHC6 protein content robust to changes in ZDHHC16 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from modeling predictions showing wild-type is more stable than CAA mutant upon ZDHHC16 overexpression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "5d5b8d20-97e9-4493-a772-d9b2119e46f7",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C58",
+      "claim": "Upon ZDHHC16 overexpression, all ZDHHC6 molecules explore all palmitoylation states.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic simulations predicted that overexpression of ZDHHC16 would drastically increase the dynamics of the network (Figure 6C vs. Figure 5E). Indeed, all ZDHHC6 molecules explored all the palmitoylation states, with extremely short residence times in each (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by stochastic simulations under ZDHHC16 overexpression conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "75b70270-c7d3-4e4b-8e14-c2bed5a6fde5",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C59",
+      "claim": "C011 is the hub of the ZDHHC6 palmitoylation system when ZDHHC16 activity is high.",
+      "claim_type": "EXPLICIT",
+      "source": "When analysing 10'000 simulations, 22'000 events of palmitoylation-depalmitoylation emanated from C011 whereas only 4'000 events occurred between C000 and C100. Thus when activity of ZDHHC16 is high, C011 appears to be the hub of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by analysis of stochastic simulations counting transition events.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "4695a114-03a5-4e3b-a3ac-e4acda8f6c03",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C60",
+      "claim": "C011 has the slowest turnover rate of all ZDHHC6 species.",
+      "claim_type": "EXPLICIT",
+      "source": "C011 has the slowest turover rate of all ZDHHC6 species, explaining why the protein levels are stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mathematical modeling showing long half-life for C011.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "82d18035-9d84-4e1a-9b94-ad12ef287f23",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C61",
+      "claim": "Wild-type ZDHHC6 protein levels do not drastically drop upon ZDHHC16 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis of protein abundance showed that WT ZDHHC6 protein levels drastically dropped upon siRNA of Lypla2 (Figure 4B), but not upon ZDHHC16 overexpression (Figure 6DE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Western blot quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "6d2eb0eb-2e4c-4ad5-a111-6b858dc45197",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C62",
+      "claim": "ZDHHC16 overexpression leads to a 60% drop in CAA mutant expression.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16 overexpression however led to a 60% drop in CAA expression (Figure 6DE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Western blot quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "6ebe6175-c246-49b0-b326-7f67eddd1633",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C63",
+      "claim": "AAA mutant expression is not affected by ZDHHC16 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, expression of AAA was not affected (Figure 6DE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "57a0f760-46aa-42c4-ba98-3b83a10b4af6",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C64",
+      "claim": "ZDHHC16 overexpression enhances the ability of wild-type ZDHHC6 to modify calnexin.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of WT ZDHHC6 to modify calnexin was enhanced by ZDHHC16 overexpression (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 3H-palmitate incorporation into calnexin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "03057360-d50e-4e9e-81f5-fddda2d43727",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C65",
+      "claim": "ZDHHC16 overexpression reduces calnexin palmitoylation to background levels in CAA ZDHHC6 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ZDHHC16 overexpression reduced calnexin palmitoylation to background levels in CAA ZDHHC6 expressing cells (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 3H-palmitate incorporation into calnexin showing loss of activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "ee10d1f0-442c-46c7-bcc8-0f68b50382d9",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C66",
+      "claim": "ZDHHC6 is more palmitoylated in mouse tissues than in tissue culture cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When ZDHHC6 PEGylation experiments were performed on different mouse tissues, we however found that ZDHHC6 is far more palmitoylated, suggesting that palmitoylation-mediated ZDHHC6 activity is higher in vivo, a situation that we could mimic in cells by ZDHHC16 overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by PEGylation assays showing multiple palmitoylated species in mouse tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "e8b61ae3-7768-40fa-a668-cbaca9913279",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C67",
+      "claim": "ZDHHC6 is mainly in the non-palmitoylated form in HeLa cells under control tissue culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The above experimental analyses show that in HeLa cells under control tissue culture conditions, ZDHHC6 is mainly in the non-palmitoylated form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by PEGylation assay showing only non-palmitoylated band detectable.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "1948416d-bfa9-428e-a253-56b631f11dde",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C68",
+      "claim": "ZDHHC9 requires a co-factor, GCP16, for activity.",
+      "claim_type": "EXPLICIT",
+      "source": "DHHC9 was found to require a co-factor, GCP16, for activity (Swarthout et al., 2005), as also found in yeast (Lobo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "d274e6a7-0cce-4580-8005-be93ab9aa57d",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C69",
+      "claim": "ZDHHC6 was proposed to require Selenoprotein K to function.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ZDHHC6 was proposed to require Selenoprotein K to function (Fredericks and Hoffmann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "021137fc-77f4-4a99-ab28-549ac1b7a08e",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C70",
+      "claim": "In the non-palmitoylated form, ZDHHC6 has no detectable activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that ZDHHC6 activity is controlled by palmitoylation in its C-terminal SH3_2-domain. In the non-palmitoylated form, ZDHHC6 has no detectable activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by activity assays showing AAA mutant has no effect on substrate palmitoylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "88475276-68a2-4e58-bac3-50eb07cc9b1b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C71",
+      "claim": "ZDHHC16 is essential for embryonic and postnatal survival in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16/Aph2 is essential for embryonic and postnatal survival, eye and heart development in mice (Zhou et al., 2015), for the proliferation of neural stem cells, where it is involved in the activation of the FGF/erk pathways (Shi et al., 2016) and was reported to play a role in DNA damage response (Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "95953c95-fb2c-4088-9559-dc3160f2e34a",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C72",
+      "claim": "ZDHHC16 is involved in eye and heart development in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16/Aph2 is essential for embryonic and postnatal survival, eye and heart development in mice (Zhou et al., 2015), for the proliferation of neural stem cells, where it is involved in the activation of the FGF/erk pathways (Shi et al., 2016) and was reported to play a role in DNA damage response (Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "1ceecd7c-db29-4755-8ef4-f2719c1af328",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C73",
+      "claim": "ZDHHC16 is involved in the proliferation of neural stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16/Aph2 is essential for embryonic and postnatal survival, eye and heart development in mice (Zhou et al., 2015), for the proliferation of neural stem cells, where it is involved in the activation of the FGF/erk pathways (Shi et al., 2016) and was reported to play a role in DNA damage response (Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "a1c523fa-aa13-4bf5-930c-8189138a94d0",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C74",
+      "claim": "ZDHHC16 is involved in the activation of the FGF/erk pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16/Aph2 is essential for embryonic and postnatal survival, eye and heart development in mice (Zhou et al., 2015), for the proliferation of neural stem cells, where it is involved in the activation of the FGF/erk pathways (Shi et al., 2016) and was reported to play a role in DNA damage response (Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "32d2e7e6-83b2-4b59-8806-b0ebb9a27fcd",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C75",
+      "claim": "ZDHHC16 plays a role in DNA damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16/Aph2 is essential for embryonic and postnatal survival, eye and heart development in mice (Zhou et al., 2015), for the proliferation of neural stem cells, where it is involved in the activation of the FGF/erk pathways (Shi et al., 2016) and was reported to play a role in DNA damage response (Cao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "e2af339c-8bb1-4ca4-837a-990cd886a397",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C76",
+      "claim": "APT2 is involved in cell polarity-mediated tumor suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "APT2, which was recently found to be involved in cell polarity-mediated tumor suppression (Hernandez et al., 2017) but is otherwise poorly characterized, also undergoes palmitoylation by a yet to be determined palmitoyltransferase (Kong et al., 2013; Vartak et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "fefb492f-51aa-4720-b489-182a7ccab20b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C77",
+      "claim": "APT2 undergoes palmitoylation by a yet to be determined palmitoyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "APT2, which was recently found to be involved in cell polarity-mediated tumor suppression (Hernandez et al., 2017) but is otherwise poorly characterized, also undergoes palmitoylation by a yet to be determined palmitoyltransferase (Kong et al., 2013; Vartak et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "dcbefffc-db5a-43dd-b2e2-37e5f14b6ce8",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C78",
+      "claim": "DHHC enzymes are typically present in less than 1000 copies per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "According to large-scale quantitative proteomics analyses, DHHC enzymes are typically present in less than 1000 copies per cell (Beck et al., 2011; Foster et al., 2003; Nagaraj et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to proteomics studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "1a63cbf2-68ba-47eb-b441-1e5ff1c0d9d3",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C79",
+      "claim": "Calnexin is present in half a million to a million copies per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this information indicates that, at any given time, tissue culture cells contain a very low number of active ZDHHC6 enzymes. In these cells, target proteins do however undergo palmitoylation, and some of these targets are highly abundant proteins such as calnexin (half a million to a million copies per cell [Beck et al., 2011; Foster et al., 2003; Nagaraj et al., 2011]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to proteomics studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "200da49b-fc7f-40f7-8354-c5270bb15160",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C80",
+      "claim": "When active, ZDHHC6 is a very potent enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus when active, ZDHHC6 appears be a very potent enzyme and our observations indicate that cells tend to avoid having too much of it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the low abundance of active ZDHHC6 yet efficient palmitoylation of abundant substrates like calnexin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "40c5722a-0e89-45b8-8099-41e36ed67cdf",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C81",
+      "claim": "Cells tend to avoid having too much active ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus when active, ZDHHC6 appears be a very potent enzyme and our observations indicate that cells tend to avoid having too much of it. Indeed the C100 species of ZDHHC6 is either rapidly depalmitoylated or targeted to degradation via the ERAD pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the rapid turnover and degradation of the most active C100 species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "76de03e2-20fa-4333-b272-57c5cb2be033",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C82",
+      "claim": "ZDHHC6 can adopt three types of states: stable and inactive (C000), highly active and short-lived (C100), and moderately active and long-lived (C010 and C011).",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether this study indicates that ZDHHC6 can adopt in 3 types of states: 1) stable and inactive (C000); 2) highly active, short-lived and rapidly turned over (C100); 3) moderately active, long-lived and very slowly turned over (C010 and C011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined analysis of activity assays, degradation kinetics, and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "5284bac7-cf66-4f8c-8ba2-f7f6afbe2d0f",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C83",
+      "claim": "The regulatory system allows the cell to tightly control the activity of ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a regulatory system allows the cell to tightly control the activity of ZDHHC6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the complex interplay between palmitoylation, depalmitoylation, activity, and degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "559653eb-9ea8-4963-9eb1-d5dbb4f7a75e",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C84",
+      "claim": "Palmitoylation has a more subtle and precise effect than merely increasing hydrophobicity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that depending on the site of modification both the activity and turnover of ZDHHC6 were strongly affected, indicating that palmitoylation has a more subtle and precise effect than merely increasing hydrophobicity, consistent with recent findings on single acylated species of Ras (Pedro et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from site-specific effects on activity and stability, supported by citation to similar findings in Ras.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "510d1083-7cfe-4d25-9d05-c3e49835a678",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C85",
+      "claim": "S-Palmitoylation is the only reversible post-translational lipid modification.",
+      "claim_type": "EXPLICIT",
+      "source": "S-Palmitoylation is the only reversible post-translational lipid modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "94e506e3-9010-422b-9d05-9fa3e6dbf704",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C86",
+      "claim": "Palmitoylation may control the interaction of a protein with membranes or specific membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, palmitoylation may control the interaction of a protein with membranes or specific membrane domains, affect its conformation, trafficking, stability and/or activity (Blaskovic et al., 2014; Chamberlain et al., 2013; Conibear and Davis, 2010; Fukata et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "02686cef-07ca-414f-b695-21e3b8a7a287",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C87",
+      "claim": "Palmitoylation may affect protein conformation, trafficking, stability and/or activity.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, palmitoylation may control the interaction of a protein with membranes or specific membrane domains, affect its conformation, trafficking, stability and/or activity (Blaskovic et al., 2014; Chamberlain et al., 2013; Conibear and Davis, 2010; Fukata et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "b27b6489-b3ac-46fc-abde-6205c6738607",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C88",
+      "claim": "In the cytosol, the acyl chain is attached to the protein via a thioester bond through the action of DHHC palmitoyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cytosol, the acyl chain is attached to the protein via a thioester bond through the action of DHHC palmitoyltransferases, a family of multispanning transmembrane proteins (Blaskovic et al., 2014; Chamberlain et al., 2013; Conibear and Davis, 2010; Fukata et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "43497262-ca8f-4cfd-88aa-3ae870ef2d84",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C89",
+      "claim": "There are 23 human palmitoyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we focused on one of the 23 human palmitoyltransferase, ZDHHC6, which localizes to the endoplasmic reticulum (ER) and controls a panel of key ER substrates such as the ER chaperone calnexin (Lakkaraju et al., 2012), the ER E3 ligase gp78 (Fairbank et al., 2012), the IP3 receptor (Fredericks et al., 2014) as well as cell surface proteins such as the transferrin receptor (Senyilmaz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "f299a960-48f0-4641-bc9a-b5602d611c0f",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C90",
+      "claim": "ZDHHC6 is a tetra-spanning membrane protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As most DHHC enzymes, ZDHHC6 is a tetra-spanning membrane protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about DHHC enzyme structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "3b0954e9-be0b-4b22-a2bb-05b034fb296b",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C91",
+      "claim": "ZDHHC6 has a short N-terminal extension and a long C-terminal tail.",
+      "claim_type": "EXPLICIT",
+      "source": "It has a short N-terminal extension and a long C-terminal tail composed of an approximately 100-residue domain of unknown structure followed by a variant SH3_2 domain (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described based on sequence analysis and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "f9a1c7c2-7ece-423c-a247-1384249a662c",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C92",
+      "claim": "The KKNR motif contributes to the ER localization of ZDHHC6.",
+      "claim_type": "EXPLICIT",
+      "source": "At the C-terminus, it contains a KKNR motif which when transferred to the ZDHHC3 enzyme leads to its relocalization from the Golgi to the ER (Gorleku et al., 2011), suggesting that it contributes to the ER localization of ZDHHC6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from previous study showing this motif can relocalize ZDHHC3 to ER.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "cbc6016c-01ea-48c6-bf8f-cf6a76047030",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C93",
+      "claim": "The palmitoylated cysteines in ZDHHC6 are conserved in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "These cysteines are conserved in vertebrates (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by sequence alignment in figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "c56e3e49-4b3d-4be2-a9a6-7bb0d5d2ddc8",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C94",
+      "claim": "ZDHHC16 localizes to the ER and the Golgi under overexpression conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16, which localizes under over-expression conditions to the ER and the Golgi (Figure 2\u2014figure supplement 2A), is not palmitoylated itself in HeLa cells, as shown both by 3H-palmitate incorporation and Acyl-RAC (Figure 2\u2014figure supplement 2BC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by immunofluorescence microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "08be0e9d-cac0-484d-a6f2-e9da831c0189",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C95",
+      "claim": "ZDHHC16 is also known as Ablphilin 2 (Aph2).",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16, also known as Ablphilin 2 (Aph2), is, as ZDHHC6, expressed in many human tissues in particular in the heart, pancreas, liver, skeletal muscle (Zhang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established nomenclature with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "4d74714c-847d-445d-bf7d-67ab86f75dbf",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C96",
+      "claim": "ZDHHC16 is expressed in many human tissues, particularly in the heart, pancreas, liver, and skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "ZDHHC16, also known as Ablphilin 2 (Aph2), is, as ZDHHC6, expressed in many human tissues in particular in the heart, pancreas, liver, skeletal muscle (Zhang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "582dd3e5-ca5f-4c5b-82da-07491f09f57f",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C97",
+      "claim": "ZDHHC16 can interact with the non-receptor tyrosine kinase c-Abl at the ER surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Its name Ablphilin stems from its ability to interact with the non-receptor tyrosine kinase c-Abl at the ER surface (Li et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "de6978d6-601b-4f39-b3eb-d5988766deda",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C98",
+      "claim": "HAP1 ZDHHC6 KO clone contains a 5 bp deletion in exon 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZDHHC6 clone (13474\u201301) contains a 5 bp deletion in exon 2 (NM_022494) and the ZDHHC16 clone (36523\u201306) contains a 2 bp insertion in exon 2 (NM_198043).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section as characterization of the knockout cell line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "4fb5cf40-c089-41e3-8c46-e06b9599567e",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C99",
+      "claim": "HAP1 ZDHHC16 KO clone contains a 2 bp insertion in exon 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZDHHC6 clone (13474\u201301) contains a 5 bp deletion in exon 2 (NM_022494) and the ZDHHC16 clone (36523\u201306) contains a 2 bp insertion in exon 2 (NM_198043).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section as characterization of the knockout cell line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "128acc69-725a-4d3c-b189-b1a75c03fb4a",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C101",
+      "claim": "The model was calibrated using 152 parameter sets selected from genetic algorithm optimization.",
+      "claim_type": "EXPLICIT",
+      "source": "From the Pareto set provided by the GA and in order to be more accurate and to reduce the variability in the output of the model, we selected the set of parameters that best fitted the calibration data. The procedure for the selection of the subset is described in (Dallavilla et al., 2016). In total, 152 different sets of parameter were selected at the end of the optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods section for model parameterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "ef806c17-86fc-4dde-b256-62f794158bdf",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "claim_id": "C102",
+      "claim": "The number of ZDHHC6 molecules per HeLa cell is in the order of 1600 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "A single assumption was added to those previously defined (Dallavilla et al., 2016), namely that the number of ZDHHC6 molecules per HeLa cell is in the order of 1600 molecules (Beck et al., 2011; Merrick et al., 2011; Nagaraj et al., 2011; Yang et al., 2010; Yount et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on citations to proteomics studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0858ce2f-ba3b-4c9e-a521-d974ead8aaec",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ZDHHC16 is the palmitoyltransferase responsible for palmitoylating ZDHHC6, establishing the first documented palmitoylation cascade. This was demonstrated through siRNA screening showing 60% reduction in ZDHHC6 palmitoylation upon ZDHHC16 silencing, overexpression experiments, knockout cell line validation, and physical interaction between the two enzymes. ZDHHC6 does not autopalmitoylate, as shown by palmitoylation of catalytically inactive mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C13-C16 provide converging experimental evidence from multiple orthogonal approaches (siRNA, overexpression, KO cells, co-IP) that ZDHHC16 palmitoylates ZDHHC6. The claim of being the 'first palmitoylation cascade' (C2) is a priority claim that depends on literature knowledge but is supported by the experimental demonstration of one DHHC enzyme modifying another.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "c588093d-9415-4e70-bae6-7c5c58183deb",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ZDHHC6 undergoes palmitoylation on three cysteine residues (Cys-328, Cys-329, Cys-343) in its SH3_2 domain. These sites were identified in prior proteomics studies and confirmed experimentally by Acyl-RAC capture and 3H-palmitate incorporation. The cysteines are conserved in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C12, C93 are well-supported by both cited proteomics data and the authors' own experimental validation using Acyl-RAC and metabolic labeling. The mutagenesis experiments (Figure 1D-E) confirm all three sites can be palmitoylated. Conservation analysis adds evolutionary support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "4f33d4ff-d6c1-4090-9bb2-cb63408f7747",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "APT2, but not APT1, mediates depalmitoylation of ZDHHC6. Palmitate turnover on ZDHHC6 is rapid (t1/2 ~1 hour) and requires Cys-328, as mutants lacking this residue show much slower depalmitoylation (>4 hours). APT2 overexpression significantly decreases ZDHHC6 palmitoylation while APT1 overexpression has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C19-C22 are supported by pulse-chase experiments and overexpression studies showing specific effects of APT2 but not APT1. The site-specific requirement for Cys-328 in rapid turnover is demonstrated by mutagenesis. The experiments are internally consistent and use appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "eec17fbf-254c-4f76-acc3-785379123985",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Palmitoylation of Cys-328 accelerates ZDHHC6 turnover and renders it susceptible to ERAD-mediated degradation. ZDHHC16 overexpression or APT2 silencing accelerates degradation (t1/2 ~2-3 hours vs ~16 hours for control), but this effect is abolished in C328A mutants. LYPLA2 silencing leads to ZDHHC6 ubiquitination, and degradation can be rescued by proteasome inhibitor MG132.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C26-C28 are well-supported by metabolic pulse-chase experiments, ubiquitination assays, and proteasome inhibitor rescue experiments. The site-specific requirement for Cys-328 is clearly demonstrated. The ERAD pathway involvement is supported by ubiquitination and MG132 rescue data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Palmitoylation affects ZDHHC6 localization, self-association, and higher-order complex formation. Wild-type ZDHHC6 localizes to the ER and can self-associate, while the non-palmitoylatable AAA mutant accumulates more frequently in dot-like ER structures, does not associate with wild-type ZDHHC6, and forms different higher-order complexes as shown by blue native PAGE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 are supported by immunofluorescence colocalization, quantification of cellular localization patterns, co-immunoprecipitation experiments, and blue native gel analysis. The differential behavior of wild-type versus AAA mutant is consistently demonstrated across multiple assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "9a6c633c-f1e0-4354-a438-cec8c371c412",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ZDHHC6 palmitoylates calnexin, gp78, IP3 receptor, and transferrin receptor, with calnexin and transferrin receptor being exclusively modified by ZDHHC6. Palmitoylation of Cys-328 confers the highest activity to ZDHHC6. ZDHHC16 modulates ZDHHC6 activity, as shown by reduced calnexin palmitoylation in ZDHHC16 KO cells and enhanced palmitoylation upon ZDHHC16 overexpression. The non-palmitoylatable AAA mutant has no detectable activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11, C37-C41 are supported by Acyl-RAC assays in KO cells, 3H-palmitate incorporation experiments, and systematic mutagenesis showing site-specific effects on activity. The exclusive dependence of calnexin and transferrin receptor on ZDHHC6 is demonstrated by complete loss of palmitoylation in KO cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "a15e53f8-0721-4c37-996d-8b827b94e7f4",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mathematical modeling combined with experimental data reveals that ZDHHC6 can exist in eight differentially palmitoylated species (C000 to C111) that vary in turnover rate and activity. The model, calibrated using 152 parameter sets from genetic algorithm optimization, predicts that in HeLa cells ~70% of ZDHHC6 is non-palmitoylated at steady state, molecules spend most time in the C000 state, and undergo multiple rounds of palmitoylation-depalmitoylation primarily on Cys-328 (C000\u2194C100 flux).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C42, C47-C51, C101-C102 are supported by integration of mathematical modeling with extensive experimental validation. The model successfully predicts experimental outcomes not used in calibration (validation set). The PEGylation assay (C48, Figure 5G) confirms the prediction that most ZDHHC6 is non-palmitoylated in HeLa cells. The modeling approach is rigorous with appropriate parameter estimation and validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "0392f232-2682-4831-b1ab-d421f7a9fb6c",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The presence of three palmitoylation sites renders ZDHHC6 protein levels robust to changes in ZDHHC16 activity. Upon ZDHHC16 overexpression, wild-type ZDHHC6 shifts to predominantly C011 species (60% of population) with only 15% drop in total protein, while the CAA mutant (lacking two sites) drops to 32% of control levels (60% reduction experimentally confirmed). C011 becomes the system hub with the slowest turnover rate, explaining protein stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C63 are supported by both modeling predictions and experimental validation. The differential stability of wild-type versus CAA mutant upon ZDHHC16 overexpression is confirmed by Western blot (C61-C62). The model predictions about species distribution and dynamics are internally consistent and explain the experimental observations. This demonstrates the functional importance of having multiple palmitoylation sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "9f2213a0-cd2e-49dd-a8be-1c5a8b9c7964",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ZDHHC16 overexpression enhances wild-type ZDHHC6 activity toward calnexin but reduces CAA mutant activity to background levels. ZDHHC6 is mainly non-palmitoylated in HeLa cells under standard culture conditions but is more extensively palmitoylated in mouse tissues, suggesting higher physiological activity in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 are supported by 3H-palmitate incorporation assays and PEGylation experiments. The differential response of wild-type versus CAA mutant to ZDHHC16 overexpression demonstrates the importance of multiple sites for activity regulation. The tissue data (C66) provides physiological context, though it is descriptive rather than mechanistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "d8935e12-24c0-47b5-ac80-7d1ab0dc7471",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ZDHHC6 and ZDHHC16 interact genetically and physically. ZDHHC6 silencing or knockout leads to increased ZDHHC16 mRNA levels. ZDHHC16 itself is not palmitoylated in HeLa cells and localizes to ER and Golgi under overexpression conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C94 are supported by RT-PCR data showing compensatory upregulation and by negative results from 3H-palmitate incorporation and Acyl-RAC assays. The localization data is descriptive. These findings support the regulatory relationship between the two enzymes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has shown that some DHHC enzymes require cofactors (ZDHHC9/GCP16, ZDHHC6/Selenoprotein K), that ZDHHC16 has important developmental and cellular functions, and that APT2 undergoes palmitoylation and is involved in tumor suppression. The current study shows ZDHHC6 requires palmitoylation for activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C77 are primarily literature citations (C68-C69, C71-C77) that provide context. C70 is supported by the authors' data showing AAA mutant has no activity. These claims appropriately frame the current work within existing knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ZDHHC6 is a potent enzyme that cells tightly regulate. DHHC enzymes are present at <1000 copies/cell while substrates like calnexin are at 500,000-1,000,000 copies/cell. ZDHHC6 can adopt three functional states: stable/inactive (C000), highly active/short-lived (C100), and moderately active/long-lived (C010/C011). Palmitoylation has site-specific effects beyond simply increasing hydrophobicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 integrate proteomics data from literature (C78-C79) with the authors' findings to draw mechanistic conclusions. The three-state model (C82) is well-supported by the combined experimental and modeling data. The inference about tight regulation (C80-C81, C83) is reasonable given the low enzyme abundance yet efficient substrate modification. The conclusion about site-specific effects (C84) is supported by differential effects of mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "50ce157a-47fc-4eb8-a040-d49f5cfab416",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on palmitoylation and ZDHHC6 structure: S-palmitoylation is the only reversible post-translational lipid modification, catalyzed by 23 human DHHC palmitoyltransferases. ZDHHC6 is a tetra-spanning membrane protein with a short N-terminal extension and long C-terminal tail containing an SH3_2 domain and KKNR motif that likely contributes to ER localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C92 represent established knowledge (C85-C90) supported by citations and structural characterization (C91-C92) based on sequence analysis. The inference about the KKNR motif (C92) is reasonable based on cited work showing this motif can relocalize ZDHHC3 to the ER.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    },
+    {
+      "id": "cf534b52-1adc-43c2-a1e1-8d6ab19b69a5",
+      "content_id": "76fb117a-61bf-4a37-9f32-9456cac1ec38",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The HAP1 ZDHHC6 KO clone contains a 5 bp deletion in exon 2 and the ZDHHC16 KO clone contains a 2 bp insertion in exon 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 are methodological details describing the genetic modifications in the knockout cell lines used. These are straightforward characterizations of the experimental tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:30:35.777847Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0eede80f-586e-42bb-9c16-aac7a884334c",
+      "result_id": "0858ce2f-ba3b-4c9e-a521-d974ead8aaec"
+    },
+    {
+      "claim_id": "fa902b6e-09dc-4ebb-b731-88da9ec831aa",
+      "result_id": "0858ce2f-ba3b-4c9e-a521-d974ead8aaec"
+    },
+    {
+      "claim_id": "5a4ca61b-e597-4f4a-afea-000981308bf6",
+      "result_id": "0858ce2f-ba3b-4c9e-a521-d974ead8aaec"
+    },
+    {
+      "claim_id": "f220f149-3bb7-4936-85fa-53352353036c",
+      "result_id": "0858ce2f-ba3b-4c9e-a521-d974ead8aaec"
+    },
+    {
+      "claim_id": "b83f20ff-a376-4451-a7c5-2fc7f704194f",
+      "result_id": "0858ce2f-ba3b-4c9e-a521-d974ead8aaec"
+    },
+    {
+      "claim_id": "f8b4038c-bb1d-4974-8939-96b98dbe1334",
+      "result_id": "0858ce2f-ba3b-4c9e-a521-d974ead8aaec"
+    },
+    {
+      "claim_id": "a498b0c9-429d-45be-aa9e-e95ab2010c8b",
+      "result_id": "c588093d-9415-4e70-bae6-7c5c58183deb"
+    },
+    {
+      "claim_id": "8c94853b-14ec-44cc-a138-3ab945cb585b",
+      "result_id": "c588093d-9415-4e70-bae6-7c5c58183deb"
+    },
+    {
+      "claim_id": "cbc6016c-01ea-48c6-bf8f-cf6a76047030",
+      "result_id": "c588093d-9415-4e70-bae6-7c5c58183deb"
+    },
+    {
+      "claim_id": "d4c7bc77-ce47-4010-b165-5572a53f9d66",
+      "result_id": "4f33d4ff-d6c1-4090-9bb2-cb63408f7747"
+    },
+    {
+      "claim_id": "4a483456-6873-4858-acf6-392cecf21b64",
+      "result_id": "4f33d4ff-d6c1-4090-9bb2-cb63408f7747"
+    },
+    {
+      "claim_id": "c6a52ac3-dc5c-49e0-92db-678b374ade2e",
+      "result_id": "4f33d4ff-d6c1-4090-9bb2-cb63408f7747"
+    },
+    {
+      "claim_id": "e06b2430-ba42-4f72-a7aa-23ffaa55d72a",
+      "result_id": "4f33d4ff-d6c1-4090-9bb2-cb63408f7747"
+    },
+    {
+      "claim_id": "1d6722ae-ac99-4395-9716-b2aaf826446e",
+      "result_id": "4f33d4ff-d6c1-4090-9bb2-cb63408f7747"
+    },
+    {
+      "claim_id": "6c285c52-5095-41c7-b763-1fdd3d652db6",
+      "result_id": "eec17fbf-254c-4f76-acc3-785379123985"
+    },
+    {
+      "claim_id": "60f420ff-01b3-4105-969a-58721c72eb3b",
+      "result_id": "eec17fbf-254c-4f76-acc3-785379123985"
+    },
+    {
+      "claim_id": "30668270-19d2-45ad-8d45-bfe73ea71908",
+      "result_id": "eec17fbf-254c-4f76-acc3-785379123985"
+    },
+    {
+      "claim_id": "2ac229ad-5bb8-43e1-9610-b617e6d02357",
+      "result_id": "eec17fbf-254c-4f76-acc3-785379123985"
+    },
+    {
+      "claim_id": "716dade1-ffe9-4ff9-926b-18e3505c5226",
+      "result_id": "eec17fbf-254c-4f76-acc3-785379123985"
+    },
+    {
+      "claim_id": "bcf95bc1-1f16-4467-b27e-741aa69689c6",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "c7730845-3e37-498d-9627-67d27f816a50",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "445d67db-a9fc-4f90-9679-063aaa596d7a",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "f5a2dd0a-e704-411d-9c09-92cf85f37ac7",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "5507539d-f2be-4244-b3af-6fa76e7659cb",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "31484e20-9d86-4ae9-9f61-5afac5dc195e",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "b451700a-570a-4ffc-b339-8395bac154e9",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "d7b3ffd7-5bfc-4949-95cf-b10336d94482",
+      "result_id": "39ad43cd-3393-463e-8308-4fcdb9da5ec6"
+    },
+    {
+      "claim_id": "876292b0-107a-48e5-9af5-c70ec2539e71",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "a7d1be4b-0bb4-4b7d-8c67-b4a3a44c2e71",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "1cf88dcf-758c-4b28-8aa3-8bcb55d08726",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "7f8e0f84-d55b-41fb-80ce-7f6be98eed9f",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "e8832a43-f04e-48ec-8824-2d30a286f661",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "4ffcb15e-afbc-41f0-88d6-129a502920bf",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "8933464b-03f0-44bc-8ed4-5fcf9aec8311",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "8195df5a-9b30-4ada-bd69-00b35c65116d",
+      "result_id": "9a6c633c-f1e0-4354-a438-cec8c371c412"
+    },
+    {
+      "claim_id": "d331e375-b326-435a-a4dc-0f359ecdd668",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "42ce190e-69d8-47a4-b037-d6a2e370d385",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "91731db5-d80e-4174-a7bb-3df3cb9f3022",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "25c4f141-d620-4c58-8876-d548d66b548b",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "f0855f53-c2b0-4be8-89ba-23080b82bf4b",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "2e12c597-c30e-4747-90ad-4dfb7d9e2cda",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "23505e31-6537-4796-a51b-12f5b0685957",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "49e69edd-de22-4d8a-aef7-ad09adb73588",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "128acc69-725a-4d3c-b189-b1a75c03fb4a",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "ef806c17-86fc-4dde-b256-62f794158bdf",
+      "result_id": "a15e53f8-0721-4c37-996d-8b827b94e7f4"
+    },
+    {
+      "claim_id": "4178ce78-4781-4535-8659-0f4179321604",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "9f197fec-4277-42fe-b4ad-17eebefed789",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "9b79e7b6-ccd7-457d-bbc2-02f4f413fbd2",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "9dae0d1b-0742-4002-8465-fa260f35a254",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "9e0932a0-89d2-4f90-a173-0504775ae0ee",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "a512efdf-570d-4ec7-bde5-368658fe3acc",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "5d5b8d20-97e9-4493-a772-d9b2119e46f7",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "75b70270-c7d3-4e4b-8e14-c2bed5a6fde5",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "4695a114-03a5-4e3b-a3ac-e4acda8f6c03",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "82d18035-9d84-4e1a-9b94-ad12ef287f23",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "6d2eb0eb-2e4c-4ad5-a111-6b858dc45197",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "6ebe6175-c246-49b0-b326-7f67eddd1633",
+      "result_id": "0392f232-2682-4831-b1ab-d421f7a9fb6c"
+    },
+    {
+      "claim_id": "57a0f760-46aa-42c4-ba98-3b83a10b4af6",
+      "result_id": "9f2213a0-cd2e-49dd-a8be-1c5a8b9c7964"
+    },
+    {
+      "claim_id": "03057360-d50e-4e9e-81f5-fddda2d43727",
+      "result_id": "9f2213a0-cd2e-49dd-a8be-1c5a8b9c7964"
+    },
+    {
+      "claim_id": "ee10d1f0-442c-46c7-bcc8-0f68b50382d9",
+      "result_id": "9f2213a0-cd2e-49dd-a8be-1c5a8b9c7964"
+    },
+    {
+      "claim_id": "e8b61ae3-7768-40fa-a668-cbaca9913279",
+      "result_id": "9f2213a0-cd2e-49dd-a8be-1c5a8b9c7964"
+    },
+    {
+      "claim_id": "6b6be7b6-1ce5-4250-8d12-6c2386e046e7",
+      "result_id": "d8935e12-24c0-47b5-ac80-7d1ab0dc7471"
+    },
+    {
+      "claim_id": "6e33e670-7e53-4888-8620-f6526ec53150",
+      "result_id": "d8935e12-24c0-47b5-ac80-7d1ab0dc7471"
+    },
+    {
+      "claim_id": "c56e3e49-4b3d-4be2-a9a6-7bb0d5d2ddc8",
+      "result_id": "d8935e12-24c0-47b5-ac80-7d1ab0dc7471"
+    },
+    {
+      "claim_id": "1948416d-bfa9-428e-a253-56b631f11dde",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "d274e6a7-0cce-4580-8005-be93ab9aa57d",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "021137fc-77f4-4a99-ab28-549ac1b7a08e",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "88475276-68a2-4e58-bac3-50eb07cc9b1b",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "95953c95-fb2c-4088-9559-dc3160f2e34a",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "1ceecd7c-db29-4755-8ef4-f2719c1af328",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "a1c523fa-aa13-4bf5-930c-8189138a94d0",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "32d2e7e6-83b2-4b59-8806-b0ebb9a27fcd",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "e2af339c-8bb1-4ca4-837a-990cd886a397",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "fefb492f-51aa-4720-b489-182a7ccab20b",
+      "result_id": "24364ae8-e7df-4869-a6f6-a514b8e5a8f2"
+    },
+    {
+      "claim_id": "dcbefffc-db5a-43dd-b2e2-37e5f14b6ce8",
+      "result_id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7"
+    },
+    {
+      "claim_id": "1a63cbf2-68ba-47eb-b441-1e5ff1c0d9d3",
+      "result_id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7"
+    },
+    {
+      "claim_id": "200da49b-fc7f-40f7-8354-c5270bb15160",
+      "result_id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7"
+    },
+    {
+      "claim_id": "40c5722a-0e89-45b8-8099-41e36ed67cdf",
+      "result_id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7"
+    },
+    {
+      "claim_id": "76de03e2-20fa-4333-b272-57c5cb2be033",
+      "result_id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7"
+    },
+    {
+      "claim_id": "5284bac7-cf66-4f8c-8ba2-f7f6afbe2d0f",
+      "result_id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7"
+    },
+    {
+      "claim_id": "559653eb-9ea8-4963-9eb1-d5dbb4f7a75e",
+      "result_id": "ee4e7693-b8e0-48eb-b7f6-a6da80ef52f7"
+    },
+    {
+      "claim_id": "510d1083-7cfe-4d25-9d05-c3e49835a678",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "94e506e3-9010-422b-9d05-9fa3e6dbf704",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "02686cef-07ca-414f-b695-21e3b8a7a287",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "b27b6489-b3ac-46fc-abde-6205c6738607",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "43497262-ca8f-4cfd-88aa-3ae870ef2d84",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "f299a960-48f0-4641-bc9a-b5602d611c0f",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "3b0954e9-be0b-4b22-a2bb-05b034fb296b",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "f9a1c7c2-7ece-423c-a247-1384249a662c",
+      "result_id": "50ce157a-47fc-4eb8-a040-d49f5cfab416"
+    },
+    {
+      "claim_id": "de6978d6-601b-4f39-b3eb-d5988766deda",
+      "result_id": "cf534b52-1adc-43c2-a1e1-8d6ab19b69a5"
+    },
+    {
+      "claim_id": "4fb5cf40-c089-41e3-8c46-e06b9599567e",
+      "result_id": "cf534b52-1adc-43c2-a1e1-8d6ab19b69a5"
+    }
+  ],
+  "comparisons": []
+}

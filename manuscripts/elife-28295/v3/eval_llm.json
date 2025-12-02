@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C53",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "The FOLLOW learning scheme is a supervised, local, and online learning rule for feedforward and recurrent connections in spiking neural networks. The rule uses error feedback through fixed random connections with negative gain, where weight changes depend on presynaptic activity and error signals projected onto postsynaptic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C19-C21, C53, C81-C82, C84-C86, and C89 collectively describe the FOLLOW learning scheme's architecture and properties. The mathematical derivation in the Methods section, the stability proof using Lyapunov analysis (C6, C42), and successful simulation results across multiple dynamical systems (C5, C54, C66, C69) provide strong converging evidence for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C42"
+    ],
+    "result": "Under reasonable approximations, FOLLOW learning is uniformly stable with error converging to zero asymptotically, as proven using the Lyapunov method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C42 are supported by a detailed mathematical proof in the Methods section using Lyapunov stability analysis. The proof establishes uniform global stability under six stated assumptions and demonstrates that the error tends to zero asymptotically. However, the proof relies on idealized assumptions (particularly realizability, assumption 2) that may not hold perfectly in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The FOLLOW scheme successfully learned the non-linear van der Pol oscillator dynamics in a network of 3000 spiking neurons, with error dropping rapidly after feedback was enabled and continuing to decrease during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 describe the van der Pol oscillator learning experiment shown in Figure 2. The simulation results demonstrate successful learning with error reduction (C57-C58), open-loop tracking (C60-C61), and biologically plausible firing rate distributions (C63). The comparison with higher firing rates (C64) provides additional validation. All claims are directly supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C68"
+    ],
+    "result": "The FOLLOW scheme learned the 3-dimensional chaotic Lorenz system in a network of 5000 neurons, with the network exhibiting qualitatively the same strange attractor dynamics as the reference system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C68 are supported by simulation results in Figure 3. The network successfully reproduced the butterfly-shaped attractor and tent map characteristic of the Lorenz system. However, the tent map shows some quantitative differences from the reference (lower values for larger maxima), which the authors attribute to filtering. This represents successful qualitative but not perfect quantitative reproduction of chaotic dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The FOLLOW scheme learned the dynamics of a two-link arm model under gravity, reproducing arm dynamics without error feedback for several seconds and performing reaching and acrobot-like tasks in open-loop conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by simulation results in Figure 4 and Videos 1-2. The network with 5000 neurons per layer successfully learned the complex, non-linear arm dynamics including gravitational and inertial effects. The open-loop performance on reaching and swinging tasks demonstrates generalization beyond the training data. The time horizon of a few seconds is appropriate for short movement planning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Low-dimensional error feedback was able to entrain network spike times to reference spike times when using a realizable spiking network as the reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by simulation results in Figure 5C showing tight alignment of spike times between the learning network and the reference network after training. This demonstrates that low-dimensional feedback can constrain high-dimensional spike train dynamics. However, this entrainment only occurred with feedback on; without feedback, spike trains diverged even though low-dimensional output remained close.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C109"
+    ],
+    "result": "The FOLLOW learning scheme works with sparse connectivity, with networks at 25% connectivity reaching similar performance to fully connected networks when given twice the learning time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C109 are supported by simulation results in Figure 6A showing that learning is slower but still successful with sparse connectivity. The result demonstrates biological plausibility since cortical networks are sparsely connected. However, the requirement for doubled learning time at 25% connectivity suggests a trade-off between sparsity and learning efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C110"
+    ],
+    "result": "The FOLLOW learning scheme is robust to multiplicative noise on the decoding weights, tolerating noise up to \u03c7\u22485 with \u03be=0 or \u03c7=2 with variable \u03be.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C110 are supported by simulation results in Figure 6C-D. The robustness to decoder noise is analogous to recent results on approximate error backpropagation (Lillicrap et al., 2016). This relaxes the requirement for a perfect auto-encoder, making the scheme more biologically plausible. The asymmetry with respect to \u03be is explained by the need to maintain sufficient effective gain k(1+\u03be).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The decoding weights forming the auto-encoder can potentially be pre-learned by biologically plausible learning schemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 is speculative, supported only by citations to prior work (D'Souza et al., 2010; Urbanczik and Senn, 2014; Burbank, 2015) rather than by demonstration in this manuscript. While the authors used an algorithmic approach to set decoding weights, they did not actually implement or test biologically plausible pre-learning methods. This remains a hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The combination of auto-encoder and error feedback causes the output to stay close to the reference during learning, making error currents available locally and driving spike trains to target values, thereby bypassing the credit assignment problem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C46-C48 describe the mechanism by which FOLLOW addresses the credit assignment problem. These claims are supported by the mathematical derivation in Equations (8-10) and (29-35) showing how error feedback constrains network activity. The mechanism is analogous to perceptron learning (C48) and is validated by successful learning across multiple dynamical systems. The explanation is internally consistent with the stability proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Readout weights could only be learned for networks with learned recurrent weights, not for networks with shuffled weights, indicating the network does not behave like a reservoir.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by simulation results in Figure 2\u2014figure supplement 3. This control experiment demonstrates that the specific learned weight structure is necessary for function, distinguishing FOLLOW from reservoir computing where random recurrent weights suffice. However, only one shuffling test is shown; additional controls (e.g., shuffling only feedforward or only recurrent weights) would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The FOLLOW scheme makes testable predictions about biological implementation, including spatial or chemical separation of error currents, availability of error signals throughout postsynaptic neurons, modulation of basal dendrite plasticity by apical currents, and existence of a pre-learned auto-encoder in a high-gain feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93 present speculative biological implementations and testable predictions. While these are logically derived from the model's requirements, they remain untested hypotheses. The spatial implementation suggested in Figure 7A is plausible but not demonstrated experimentally. These predictions are valuable for future experimental work but do not constitute evidence for the model's biological validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The network dynamics evolved on time scales of hundreds of milliseconds to seconds despite neuronal and synaptic time constants of 20 ms, matching the time scales of typical reaching movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by simulation results in Figures 2 and 4 showing slow dynamics emerging from fast neuronal components. This addresses a key biological plausibility concern about time scale separation (assumption 4 in the stability proof). The slow dynamics arise from spatial averaging over many neurons and recurrent network structure, not from slow individual neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "FOLLOW learning enables a recurrent network to mimic a dynamical system over a broad range of time-dependent inputs with diverse output trajectories, unlike typical reservoir computing applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by demonstrations across multiple dynamical systems (van der Pol, Lorenz, arm dynamics) with varied inputs during both learning and testing phases. The network generalizes to inputs not seen during training (e.g., reaching and acrobot tasks for the arm model). This distinguishes FOLLOW from reservoir computing which typically handles limited trajectory sets. However, the limits of generalization are not systematically explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C102",
+      "C103"
+    ],
+    "result": "FOLLOW differs from FORCE learning by achieving clamping through negative error feedback rather than fast weight changes, allowing biologically plausible slow synaptic changes and making error currents available locally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C102-C103 compare FOLLOW with FORCE learning, supported by citations to prior work. The key distinction\u2014slow weight changes enabled by error feedback clamping\u2014is validated by successful learning with biologically plausible time scales. However, direct quantitative comparisons of learning speed or performance between FOLLOW and FORCE are not provided. The criticism of FORCE's biological implausibility (C102) is reasonable but somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The current FOLLOW implementation violates Dale's law and does not maintain excitatory-inhibitory balance, though extensions addressing these issues have been suggested in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 acknowledge important biological limitations of the current implementation. C114 is supported by the model architecture allowing both positive and negative weights from the same neuron. C115 cites prior work on E-I balance. These are honest assessments of limitations with references to potential solutions (Parisien et al., 2008; Den\u00e8ve and Machens, 2016), though the authors did not implement these extensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C30",
+      "C33"
+    ],
+    "result": "The network architecture consists of a command representation layer and recurrent network of 3000-5000 deterministic leaky integrate-and-fire neurons with heterogeneous parameters, connected by plastic feedforward and recurrent connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C30, C33 describe the basic network architecture, fully specified in the Methods section with equations and parameters in Table 1. The heterogeneity (C33) is illustrated in Figure 1\u2014figure supplement 1. All architectural details are clearly documented and used consistently across simulations. This is a straightforward methodological description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The brain must learn forward models of body dynamics from sensory feedback during development and adulthood, but learning non-linear dynamics in spiking networks with local, online rules is difficult, and existing methods like LSTM have limited biological plausibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 establish the research motivation and context, supported by extensive citations to prior work in motor control, development, and machine learning. These are well-established facts in the field. The assessment of LSTM's biological implausibility (C12) is a reasonable interpretation though somewhat subjective. These claims provide appropriate background but are not novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "FOLLOW is positioned at the intersection of reservoir computing, FORCE learning, function approximation, and adaptive control theory, differing from prior work by learning recurrent weights in a local manner with slow synaptic changes, and extending beyond linear systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 position FOLLOW relative to prior work, supported by extensive citations. The comparisons are accurate based on the cited literature. The distinctions claimed (local learning, slow changes, non-linear systems) are validated by the presented results. However, some comparisons are somewhat superficial\u2014deeper quantitative comparisons would strengthen these claims.",
+    "result_type": "MINOR"
+  }
+]

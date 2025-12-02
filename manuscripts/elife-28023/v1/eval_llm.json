@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "S. aureus differentiates into two distinct cell types: BRcells that express biofilm-related genes (ica, spa) and DRcells that express dispersion/virulence genes (psm\u03b1/\u03b2). This bimodal expression pattern was observed across multiple S. aureus isolates and differs from unimodal expression of housekeeping genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide direct experimental evidence from fluorescence microscopy showing bimodal expression of agr-related reporters in multiple S. aureus strains. The temporal dynamics (C32-C33) and dual-labeling experiments (C34) demonstrate clear differentiation into two specialized cell types. Controls with housekeeping genes (C29) validate the specificity of the bimodal pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The agr bimodal switch operates through differential AgrA~P affinity for P2 and P3 promoters, with P2 activating a positive feedback loop at lower AgrA~P concentrations. An orthogonal system in B. subtilis demonstrated that the agr positive feedback loop is sufficient to generate bimodality independent of other regulatory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The orthogonal system experiments (C38-C43) provide strong evidence that the agr positive feedback loop alone is sufficient for bimodality. Sequential activation experiments (C50-C52) and mathematical modeling (C48-C49) support the differential promoter affinity mechanism. However, some claims (C35, C46) are explicitly stated as hypotheses, indicating mechanistic details require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Extracellular Mg2+ modulates the agr bimodal switch by binding to teichoic acids, increasing cell wall rigidity, and activating \u03c3B, which downregulates agr and increases BRcell subpopulation size. Strains with altered teichoic acid levels show corresponding changes in Mg2+ sensitivity and biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this mechanism: AFM measurements of cell wall rigidity (C62-C63), biofilm formation assays (C56-C57, C66-C67), \u03c3B activation measurements (C55, C68-C69), and genetic manipulation of teichoic acid biosynthesis (C66-C67). The tunicamycin experiments (C65) provide additional validation that teichoic acids are required for the Mg2+ response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The agr positive feedback loop is essential for cell differentiation, while extracellular signals (Mg2+, AIP) modulate the ratio of BRcells to DRcells without abolishing bimodality. Disruption of the agr feedback loop eliminates cell differentiation entirely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 demonstrate that \u0394agr strains show no cell differentiation, establishing the necessity of the agr system. Claims C71-C76 show that various genetic backgrounds and growth conditions alter the BRcell:DRcell ratio while maintaining bimodality, supporting the modulation model. The constitutive agr promoter experiment (C78) provides additional evidence that the feedback loop itself is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "BRcells and DRcells show spatial organization within biofilm aggregates, with BRcells enriched at the periphery (high nutrients) and DRcells enriched in the center (low nutrients, high AIP). Mathematical modeling predicted this spatial distribution based on nutrient gradients and AIP accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical model predictions (C80) are validated by experimental observations from flow cytometry of dissected aggregate regions (C81-C82) and confocal microscopy of cryosections (C83-C84). The correlation between model predictions and experimental data supports the proposed mechanism of spatial organization driven by local signal concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "BRcells and DRcells have distinct transcriptional profiles: BRcells show upregulation of biofilm-related genes, cell division genes, and tRNAs indicating high metabolic activity, while DRcells show upregulation of toxin secretion, immune evasion, and antimicrobial resistance genes. Cell differentiation is not due to genetic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (C86-C92) demonstrate clear transcriptional differences between sorted BRcell and DRcell populations. Genome-wide analysis (C86) rules out genetic mutations as the cause. The housekeeping gene control (C93) shows specificity of the response to Mg2+. However, the inference about antimicrobial resistance predisposition (C94) is based on gene expression patterns rather than direct resistance measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In a murine infection model, BRcells predominate in Mg2+-rich kidneys (showing biofilm-like aggregates with immune infiltrates), while DRcells predominate in Mg2+-poor hearts (showing dispersed cells without immune infiltrates). Bacterial loads and histological patterns differ between organs consistent with the distinct cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary measurements support this result: bacterial load quantification (C96, C99), histological analysis (C97, C101), and confocal microscopy quantification of cell types (C98, C102). The correlation between tissue Mg2+ levels and cell type distribution is consistent with in vitro findings. However, the study does not directly measure Mg2+ levels in infected tissues, relying on literature citations (C59, C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Engineered strains with altered Mg2+ sensitivity (low-tagB, high-tagB, \u0394sigB high-tagB) show predictable changes in organ colonization patterns: Mg2+-hyposensitive strains colonize hearts more efficiently, while Mg2+-hypersensitive strains colonize kidneys more efficiently. Gene expression patterns in infected organs correlate with the expected cell type distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bacterial load data (C103-C104, C106, C108-C109, C111) and qRT-PCR analysis (C105, C107, C110) from multiple genetic backgrounds provide strong evidence that Mg2+ sensitivity determines organ tropism. The \u0394sigB high-tagB strain (C108-C110) serves as an important control showing that \u03c3B is required for the Mg2+ response. The consistency across multiple strains and organs strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on S. aureus pathogenesis and the agr quorum sensing system: S. aureus causes diverse infections, the agr system antagonistically regulates planktonic and biofilm lifestyles, and \u03c3B inhibits agr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C27) provide established background knowledge supported by appropriate citations to prior literature. They set the context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Clinical context: Biofilm-associated S. aureus infections occur in Mg2+-enriched tissues (bone, kidney), while Mg2+-depleted tissues are prone to acute infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to prior clinical and epidemiological literature (C59: G\u00fcnther 2011, Jahnen-Dechent 2012, Elin 2010; C60: Parsonnet 1996, Schlievert 1985). They provide clinical context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Summary claims from abstract: Extracellular signals (particularly Mg2+) affect agr bimodal switch behavior, modifying subpopulation sizes in specific niches, leading to distinct infection outcomes in vitro and in vivo. Cell differentiation generates physiological heterogeneity that determines infection types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract-level summary claims (C5-C10) are supported by the detailed experimental results described in other claim groups. They represent high-level conclusions that integrate multiple lines of evidence from the study.",
+    "result_type": "MAJOR"
+  }
+]

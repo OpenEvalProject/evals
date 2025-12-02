@@ -1,0 +1,2296 @@
+{
+  "submission": {
+    "id": "62633040-712a-4dce-9296-32723edca221",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:29:17.548928Z",
+    "updated_at": "2025-12-01T22:29:17.548928Z"
+  },
+  "content": [
+    {
+      "id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "submission_id": "62633040-712a-4dce-9296-32723edca221",
+      "content_type": "manuscript",
+      "content_text": "# Genome-wide mapping of sister chromatid exchange events in single yeast cells using Strand-seq\n\n## Authors\n\n- Cl\u00e9mence Claussin<sup>1</sup> ([ORCID: 0000-0002-0994-3596](https://orcid.org/0000-0002-0994-3596))\n- David Porubsk\u00fd<sup>1</sup>\n- Diana CJ Spierings<sup>1</sup>\n- Nancy Halsema<sup>1</sup>\n- Stefan Rentas<sup>2</sup>\n- Victor Guryev<sup>1</sup>\n- Peter M Lansdorp<sup>1</sup> ([ORCID: 0000-0001-7435-1071](https://orcid.org/0000-0001-7435-1071)) \u2020\n- Michael Chang<sup>1</sup> ([ORCID: 0000-0002-1706-3337](https://orcid.org/0000-0002-1706-3337)) \u2020\n\n### Affiliations\n\n1. European Research Institute for the Biology of Ageing, University Medical Center Groningen University of Groningen Groningen Netherlands\n2. Terry Fox Laboratory BC Cancer Agency Vancouver Canada\n3. Department of Medical Genetics University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nHomologous recombination involving sister chromatids is the most accurate, and thus most frequently used, form of recombination-mediated DNA repair. Despite its importance, sister chromatid recombination is not easily studied because it does not result in a change in DNA sequence, making recombination between sister chromatids difficult to detect. We have previously developed a novel DNA template strand sequencing technique, called Strand-seq, that can be used to map sister chromatid exchange (SCE) events genome-wide in single cells. An increase in the rate of SCE is an indicator of elevated recombination activity and of genome instability, which is a hallmark of cancer. In this study, we have adapted Strand-seq to detect SCE in the yeast Saccharomyces cerevisiae. We provide the first quantifiable evidence that most spontaneous SCE events in wild-type cells are not due to the repair of DNA double-strand breaks.\n\n## Introduction\n\nHomologous recombination (HR) is indispensable for the maintenance of genome integrity, and mutations in many HR genes are linked to a number of human diseases, especially various types of cancer (Prakash et al., 2015). HR is characterized as a major pathway to repair DNA double-strand breaks (DSBs), and can occur between any two homologous sequences, such as sister chromatids, homologous chromosomes, or homologous sequences located at different genomic loci (Jasin and Rothstein, 2013). HR results in a unidirectional transfer of genetic information from one DNA molecule to another (i.e. gene conversion) and/or a reciprocal exchange of genetic information between the two DNA molecules (i.e. a crossover). A crossover involving two homologous chromosomes can cause loss of heterozygosity, which is a common occurrence in cancer, while a crossover involving homologous sequences located at different genomic loci will result in chromosomal rearrangements, such as deletions, inversions, and translocations, which have been linked to a variety of human diseases (Kong et al., 2011). Thus, in mitotic cells, HR is biased towards noncrossovers, and HR involving identical sister chromatids, referred to as sister chromatid recombination (SCR), is preferred (Kadyk and Hartwell, 1992; Nassif et al., 1994; Johnson and Jasin, 2000; Virgin et al., 2001; Stark and Jasin, 2003), in part because a crossover during SCR should not lead to a change in DNA sequence.\n\nHowever, studying SCR has been difficult, precisely because it does not normally result in a change in DNA sequence. Nevertheless, an SCR event that leads to a crossover, referred to as a sister chromatid exchange (SCE), can be detected. The mechanistic details of SCE and HR have been best studied using genetic assays in the budding yeast Saccharomyces cerevisiae (Symington et al., 2014), though these assays are limited in several ways. First, perfect, or \u2018equal\u2019, chromosomal SCE events cannot be detected genetically, so most SCE assays measure \u2018unequal\u2019 SCE events, requiring recombination between misaligned sister chromatids. However, using a plasmid-based assay that creates a DSB on one of the two sister plasmids after DNA replication, equal SCE was found to occur much more frequently than unequal SCE (Gonz\u00e1lez-Barrera et al., 2003). Second, an often-used approach for detecting unequal SCE involves using two overlapping segments of a reporter gene in a tail-to-head configuration (Fasullo and Davis, 1987). The generation of a full-length reporter gene can result from an unequal SCE event, but it can also result from a long-tract gene conversion event, which does not involve a crossover. These two outcomes can be distinguished by analysis of sectored colonies (Kadyk and Hartwell, 1992), but this additional analysis is often not performed. Third, these assays measure recombination at a single genetic locus by introducing genetic markers at the locus. Introduction of such \u2018reporter cassettes\u2019 may disrupt the native chromatin environment, which could affect HR at the locus. Assaying recombination only at a single locus also ignores the rest of the genome. Some proteins important for HR may only affect specific regions of the genome, so these assays would not be useful to elucidate their functions. Lastly, most genetic assays rely on the outgrowth of a recombined cell. Thus, recombination events that lead to a reduction in cell proliferation capacity will be underrepresented, or left uncharacterized.\n\nTo alleviate these limitations, we previously developed a DNA template strand sequencing technique, called Strand-seq, which is capable of detecting SCE events genome-wide in single cells (Falconer et al., 2012). In Strand-seq, cells are allowed to divide once in the presence of bromodeoxyuridine (BrdU), a synthetic analogue of thymidine. BrdU gets incorporated into the newly synthesized DNA strands. Single daughter cells are isolated and the nascent DNA strands are selectively degraded to isolate parental template strands for the construction of directional sequencing libraries. Multiple single-cell libraries containing unique index sequences are pooled and sequenced on an Illumina platform. Aligned reads are binned into non-overlapping segments and plotted as coloured horizontal lines along an ideogram of each chromosome. An SCE is revealed by a switch in reads mapping to the Watson strand to reads mapping to the Crick strand, or vice versa (Figure 1A). Strand-seq was originally developed for use with mammalian cells. However, since most mammalian cells are diploid, it is not easy to differentiate between an SCE from an interhomolog recombination event. Yeast, on the other hand, can be studied in both haploid and diploid states, and the molecular details of HR are best known from studies in yeast. Thus, we have adapted the Strand-seq approach to work with yeast cells. We observe that 23% of wild-type cells have at least one SCE\u2014the first time spontaneous SCEs have been measured and mapped genome-wide in yeast. Interestingly, our findings suggest that most spontaneous SCE events are not due to the repair of DSBs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig1-v2.jpg)\n\n**Figure 1.:** (A) An SCE can occur as a result of DSB repair. Two sister chromatids, one of which has a DSB, are shown. The parental template DNA strands are depicted with solid lines, while the newly synthesized strands containing BrdU are depicted with dashed lines. The Watson and Crick strands are shown in orange and blue, respectively. DSB repair by SCR can lead to the formation of a double Holliday junction (dHJ). Resolution of the dHJ by structure-specific endonucleases will result in either a noncrossover (not shown) or a crossover. The resulting sister chromatids are then segregated to two different daughter cells. In the current Strand-seq protocol, only one daughter cell is isolated and analyzed. The BrdU-containing strands are nicked during library preparation, resulting in the sequencing of only parental strands. Sequence reads are mapped to either side of a chromosome ideogram. An SCE results in a switch from Watson to Crick reads along the chromosome. Note: the small gap between the parental strands in daughter cell #1 and the small overlap of the parental strands in daughter cell #2 are too small to be detected with Strand-seq. (B) An example of a wild-type Strand-seq library. Ideograms of the 16 yeast chromosomes are shown. Orange and blue lines correspond to reads aligning to the Watson and Crick strands, respectively. This cell inherited either the parental Watson strand or the parental Crick strand for each chromosome, except chromosome XII. A switch from Watson to Crick reads can be seen for chromosome XII (black arrowhead), indicating that an SCE event has occurred. (C) A second example of a wild-type Strand-seq library. An SCE event was detected on chromosome XV. (D) An example of an sgs1\u2206 Strand-seq library. Three SCE events were detected in this library: two on chromosome X and one on chromosome XV.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The percentages of G1, S, and G2/M cells with at least one Rad52-GFP focus are shown for CCY232 (isogenic to the E17 wild-type Strand-seq strain, except with RAD52-GFP) grown in the presence of thymidine or BrdU for 90 min (thymidine: G1\u00a0=\u00a018/1058, S\u00a0=\u00a032/404.5, G2/M\u00a0=\u00a025.5/240.5; BrdU: G1\u00a0=\u00a010.5/1009, S\u00a0=\u00a037.5/415, G2/M\u00a0=\u00a035/275). Numbers are averages of cells counted by two people independently. (B) As an additional control, the percentages of G1, S, and G2/M cells with at least one Rad52-GFP focus were determined for CCY234 (a wild-type \u2018non-Strand-seq\u2019 strain that expresses Rad52-GFP; G1\u00a0=\u00a09.5/823, S\u00a0=\u00a031/240, G2/M\u00a0=\u00a013.5/318.5), and are similar to previously published data (Lisby et al., 2001). Error bars show 95% confidence intervals. P-values were calculated using Fisher\u2019s exact test.\n\n## Results\n\n### Analyzing sister chromatid exchange in single yeast cells using Strand-seq\n\nS. cerevisiae cells are unable to \u2018salvage\u2019 nucleosides from the environment, so to perform Strand-seq with yeast cells, we use yeast strains that express both Drosophila melanogaster deoxyribonucleoside kinase (dNK) and the human equilibrative nucleoside transporter (hENT1), allowing cells to take up and incorporate exogenous thymidine and BrdU into their DNA (Vernis, 2003). CDC21, which encodes thymidylate kinase, is also deleted in these strains, forcing them to be entirely dependent upon exogenous thymidine for viability. When grown in the presence of BrdU, these strains do not show any cell cycle delay or DNA damage checkpoint activation during the first cell cycle (Vernis, 2003). In addition, we see no significant difference in Rad52 focus formation, a sensitive indicator of recombination activity (Lisby et al., 2001), after 90 min of growth in BrdU-containing medium, suggesting that BrdU does not stimulate SCE (Figure 1\u2014figure supplement 1). Although we cannot exclude the possibility that BrdU incorporation causes DNA damage that induces SCE in a manner that does not elicit a DNA damage checkpoint response or Rad52 focus formation, these findings are in line with our recently reported observation that BrdU incorporation also does not induce SCE in human cells, at least during the first two cell divisions, as varying the concentration of BrdU in the culture medium does not affect the frequency of SCE (van Wietmarschen and Lansdorp, 2016). We release dNK- and hENT1-expressing cdc21\u2206 yeast cells synchronously from a G1 arrest into medium supplemented with BrdU and monitor cell cycle progression by flow cytometry. Cells that undergo precisely one cell division are isolated by cell sorting, followed by single cell Strand-seq library preparation (Sanders et al., 2017). Two examples of wild-type Strand-seq libraries, each containing one SCE, are shown in Figure 1B and C. We sequenced Strand-seq libraries derived from 218 wild-type cells and observed a total of 57 SCE events, which equates to 0.26 SCE events per cell (Figure 2A, Table 1). 23% of wild-type cells have at least one SCE (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig2-v2.jpg)\n\n**Figure 2.:** (A) Number of SCE events per cell for the indicated genotypes. (B) Percentage of cells with the indicated number of SCE events for each genotype. (C) Number of SCE events per cell for wild-type yeast, human fibroblasts, human lymphoblasts, and mouse ES cells. (D) SCE events per gigabase of DNA for wild-type yeast, human fibroblasts, human lymphoblasts, and mouse ES cells.\n\n**Table 1.**\n Comparison of SCE by genotype.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>No. of cells analyzed</th>\n      <th>No. of SCEs (SCEs/cell)</th>\n      <th>No. of SCEs at rDNA</th>\n      <th>SCEs/Gb (outside rDNA)</th>\n      <th>SCEs/Gb (within rDNA)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wild type</td>\n      <td>218</td>\n      <td>57 (0.26)</td>\n      <td>14</td>\n      <td>16.3</td>\n      <td>47.0</td>\n    </tr>\n    <tr>\n      <td>sgs1\u2206</td>\n      <td>103</td>\n      <td>110 (1.07)</td>\n      <td>25</td>\n      <td>68.2</td>\n      <td>177.8</td>\n    </tr>\n    <tr>\n      <td>rad52\u2206</td>\n      <td>27</td>\n      <td>0 (0)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>rad51\u2206</td>\n      <td>65</td>\n      <td>10 (0.15)</td>\n      <td>6</td>\n      <td>5.1</td>\n      <td>67.6</td>\n    </tr>\n    <tr>\n      <td>rad52-Y66A</td>\n      <td>76</td>\n      <td>5 (0.07)</td>\n      <td>4</td>\n      <td>1.1</td>\n      <td>38.6</td>\n    </tr>\n  </tbody>\n</table>\n\nTo validate our approach, we analyzed SCE in a hyperrecombinogenic strain (sgs1\u2206), and in a strain lacking Rad52 (a key HR protein important for all HR-mediated activities). Mutation of BLM, the human homolog of SGS1, increases SCE (German et al., 1965; Chaganti et al., 1974; van Wietmarschen and Lansdorp, 2016), and deletion of SGS1 has been reported to increase unequal SCE using two different genetic assays (Onoda et al., 2000; Fasullo and Sun, 2017). The evolutionarily conserved Sgs1-Top3-Rmi1 complex is thought to suppress SCE by dissolving a recombination intermediate known as the double Holliday junction (dHJ; see Figure 1A) in a manner that would result in a non-crossover (Ira et al., 2003; Wu and Hickson, 2003). Consistent with these findings, we observe an increase in SCE in sgs1\u2206 cells (p<10\u22129) using Strand-seq (Figure 1D; Figure 2A and B; Table 1). In addition, we did not detect any SCE events in rad52\u2206 cells, as expected (Figure 2A and B; Table 1).\n\nThe Strand-seq approach allows us to directly and quantitatively compare recombination activity in cells from yeast and mammals. Using previously reported Strand-seq data from mouse embryonic stem cells (Falconer et al., 2012) and human fibroblasts and lymphoblasts (van Wietmarschen and Lansdorp, 2016), we find that spontaneous SCE events per cell is about an order of magnitude greater in human and mouse cells than in wild-type yeast cells (Figure 2C). However, the human and mouse genomes are much larger than the yeast genome. By plotting the number of SCE events per gigabase of DNA, it is apparent that SCE activity is about 20-fold higher in yeast (Figure 2D). It is generally thought that yeast is more recombinogenic than mammals, but a direct and quantitative comparison has not been available until now.\n\n### Sister chromatid exchange at the ribosomal DNA locus\n\nCurrently, we are only able to map SCE events to a resolution of approximately 30 kb (Figure 3A), which, combined with the modest number of SCE events we have detected so far (57 total from 218 wild-type Strand-seq libraries; Table 1), prevents us from mapping SCE events to specific genomic loci or features. However, multiple SCE events were seen at the ribosomal DNA (rDNA) locus, which is located on chromosome XII and consists of approximately 150 rDNA repeats, each of which is 9.1 kb in size (the SCE event in the Strand-seq library shown in Figure 1B maps to the rDNA locus). Since the repeats are identical in sequence, we cannot determine where within the\u00a0~1.4 Mb rDNA locus an SCE event occurs. Therefore, we only report whether or not an SCE has occurred somewhere within the rDNA locus. Of the 57 spontaneous SCE events we observed in our wild-type Strand-seq libraries, 14 were found at the rDNA locus (Table 1). We find that the rate of spontaneous SCE per gigabase of DNA in the rDNA locus is about threefold higher compared to the rest of the genome. This result was observed both in the presence and absence of Sgs1 (Figure 3B), and is likely due to the presence of the replication fork barrier within each rDNA repeat (Labib and Hodgson, 2007).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig3-v2.jpg)\n\n**Figure 3.:** (A) Mapping resolution of SCE events in all yeast Strand-seq libraries and by genotype. The red line shows the median mapping resolution for all libraries. SCE events within the rDNA locus are excluded from this analysis because it is not possible to determine where within the rDNA an SCE event has occurred. (B) SCE events per gigabase of DNA, for either the entire genome excluding the rDNA locus or only considering the rDNA locus, were plotted for the indicated genotypes.\n\n### The strand annealing activity of Rad52 is important for sister chromatid exchange\n\nRad52 has two main biochemical functions. First, Rad52 mediates the exchange of replication protein A (RPA) for Rad51 on single-stranded DNA (ssDNA) to promote Rad51-catalyzed strand invasion (Sung, 1997; New et al., 1998). Second, Rad52 facilitates the annealing of complementary RPA-coated ssDNA, a function that is independent of Rad51 (Mortensen et al., 1996; Shinohara et al., 1998; Sugiyama et al., 1998) and augmented by Rad59 (Petukhova et al., 1999; Davis and Symington, 2001; Wu et al., 2006). To determine which function of Rad52 is important for SCE, we performed Strand-seq on rad51\u2206 and rad52-Y66A mutant cells. rad52-Y66A belongs to a class of rad52 mutants, class C mutants, that are mutated in the evolutionarily conserved N-terminal domain and share a similar phenotype of being proficient for mitotic recombination, but defective in the repair of DSBs (Mortensen et al., 2002). An in vitro study of one of the class C mutant proteins, rad52-R70A, indicated that these mutants are defective in strand annealing activity (Shi et al., 2009). We find that SCE is reduced 1.7-fold in rad51\u2206 cells and 4.5-fold in rad52-Y66A cells (p=0.058 and p<10\u22124 for rad51\u2206 and rad52-Y66A, respectively; Figure 2A and B; Table 1), indicating that both functions of Rad52 are important for spontaneous SCE, with the strand annealing function being more so. This observation is in agreement with previous work indicating that the strand annealing activity of Rad52 is important for DSB-induced SCR (Mu\u00f1oz-Galv\u00e1n et al., 2013). Using a genetic assay that detects unequal SCE, it was previously reported that Rad51 is not required for spontaneous SCE (Fasullo et al., 2001). However, this study did not assess the contribution of long-tract gene conversion in their assay, which may have obscured an actual decrease in unequal SCE in the rad51\u2206 mutant.\n\nInterestingly, the effect of rad51\u2206 and rad52-Y66A on SCE is restricted to outside of the rDNA locus (3.2-fold [p=0.002] and 15-fold [p<10\u22126] reduction, respectively, compared to wild type; Figure 3B). Within the rDNA locus, SCE in rad51\u2206 and rad52-Y66A is not significantly altered (p=0.48 and p=0.71, respectively). This observation is consistent with a previous study showing that spontaneous Holliday junction formation within the rDNA locus is dependent on Rad52, but not Rad51 (Zou and Rothstein, 1997). Taken together, the evidence suggests that Rad52 may have a function independent of Rad51 and strand annealing at the rDNA locus.\n\n### Double-strand breaks are not the main cause of spontaneous sister chromatid exchange\n\nIt is often thought that SCE events are the result of the repair of DSBs (as depicted in Figure 1A). To investigate the role of DSBs in the generation of spontaneous SCE events in yeast, we compared the rate of spontaneous SCE in wild-type cells to the rate of DSB formation. Spontaneous DSB rate can be estimated by the rate of cell death in a rad52\u2206 mutant, which cannot repair DSBs (Co\u00efc et al., 2008; Mehta and Haber, 2014). A single unrepaired DSB is sufficient to kill a rad52 mutant cell (Weiffenbach and Haber, 1981). Thus, we used the mortality rate of our rad52\u2206 strain to estimate the rate of spontaneous DSB formation, which we found to be 12% per cell division (see Materials and methods). Using direct-repeat recombination assays to detect unequal SCR events, one quarter of spontaneous (two of eight recombinants) and one third of X-ray-induced (four of 12 recombinants) SCR events were found to be accompanied by a crossover (Jackson and Fink, 1981; Kadyk and Hartwell, 1992). Therefore, if all spontaneous SCE events are the result of DSB repair, the rate of spontaneous SCE should be 3\u20134%. This rate represents an upper limit, because if Rad52 repairs other types of DNA damage that could lead to cell death if unrepaired, we would have overestimated the rate of spontaneous DSB formation. In contrast to this 3\u20134% upper limit, we find that 20% (43 out of 218, 95% CI [15%, 26%]) of wild-type Strand-seq libraries have at least one SCE not at the rDNA locus. We exclude SCE events that map to the rDNA locus because a DSB in the rDNA locus can be repaired by single-strand annealing in the absence of Rad52 due to the highly repetitive nature of the locus (Ozenberger and Roeder, 1991). Therefore, our results suggest that the majority of spontaneous SCE events are not the result of DSB repair.\n\nSpontaneous HR initiated by non-DSB damage has been reported before, so we investigated whether the same lesion could be responsible for spontaneous SCE. For example, cells lacking both Sgs1 and the structure-specific endonuclease Mus81 are inviable, but this lethality can be suppressed by mutations in the RAD52 epistasis group (i.e. RAD51, RAD52, RAD54, RAD55, and RAD57), indicating that mus81\u2206 sgs1\u2206 synthetic lethality is due to a toxic recombination intermediate (Fabre et al., 2002). Since Rad52 is required for the repair of DSBs, Fabre and colleagues argued that the toxic recombination intermediate cannot be initiated by a DSB. Similarly, cells lacking Top3 or Rmi1 grow very poorly, but this slow growth can be suppressed by mutations in SGS1 or the members of the RAD52 epistasis group, supporting a model where Rad52 and Sgs1 function in a pathway to repair a spontaneous non-DSB lesion, in the process creating a toxic recombination intermediate requiring Top3 and Rmi1 to resolve (Gangloff et al., 1994; Shor et al., 2002; Chang et al., 2005; Mullen et al., 2005). Unlike rad51\u2206 and rad52\u2206, which can suppress the synthetic lethality of mus81\u2206 sgs1\u2206 and the slow growth of rmi1\u2206 (Fabre et al., 2002; Chang et al., 2005), we find that rad52 class C mutants, which are defective in Rad52-mediated strand annealing (Shi et al., 2009) and spontaneous SCE (Figure 2A and B), cannot suppress either phenotype (Figure 4). These findings indicate that the DNA lesion(s) that cause mus81\u2206 sgs1\u2206 synthetic lethality and rmi1\u2206 slow growth are different than the DNA lesion(s) that cause spontaneous SCE in wild-type cells, and that HR is important to repair multiple types of endogenous DNA damage.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative tetrads derived from the sporulation of MCY736, MCY737, and MCY773 are shown. (B) Representative tetrads derived from the sporulation of CCY198 are shown. Colony sizes for the indicated genotypes were measured and normalized to wild type. Mean\u00a0\u00b1SEM is shown. Lack of suppression of mus81\u2206 sgs1\u2206 synthetic lethality and rmi1\u2206 slow growth was also observed using another rad52 class C mutant: rad52-R70A (data not shown).\n\n## Discussion\n\nIn this study, we have used Strand-seq to measure SCE genome-wide in individual yeast cells. We provide evidence that the majority of spontaneous SCE events in wild-type cells are not the result of DSB repair. Non-DSB lesions have also been invoked to explain the synthetic lethality of mus81\u2206 sgs1\u2206 and sgs1\u2206 srs2\u2206 mutants (Fabre et al., 2002) and the proficiency of rad52 class C mutants for spontaneous inter- and intrachromosomal heteroallelic HR (Lettier et al., 2006). While the strand annealing activity of Rad52 is important for spontaneous SCE, it is not in the other noted instances of spontaneous HR, indicating that there must be at least two types of endogenous non-DSB lesions processed by HR. These lesions could be single-stranded nicks or gaps, as proposed in many of the original models for HR (Holliday, 1964; Meselson and Radding, 1975; Radding, 1982), or other type of structures interfering with strand-specific replication (Figure 5A and B). Indeed, it is well known that single-stranded gaps can initiate recombination in Escherichia coli (Persky and Lovett, 2008) and that fork collapse at the polar replication fork barrier RTS1 in Schizosaccharomyces pombe induces HR-dependent replication restart from a single-stranded gap (Lambert et al., 2010).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig5-v2.jpg)\n\n**Figure 5.:** As in Figure 1A, the parental template DNA strands are depicted with solid lines, while the newly synthesized strands are depicted with dashed lines. The Watson and Crick strands are shown in orange and blue, respectively. (A) An SCE could be generated from the repair of an ssDNA gap. This could proceed via inverse strand exchange, where Rad52 forms a complex with dsDNA and promotes strand exchange with a homologous ssDNA sequence independently of Rad51 (Mazina et al., 2017). (B) A DNA lesion on one of the parental template strands can cause template switching, where nascent DNA is used as a template for DNA replication, and could result in SCE. (C) As in B), but the \u2018DNA lesion\u2019 is an inverted DNA repeat forming a hairpin loop.\n\nThe importance of strand annealing for spontaneous SCE is reminiscent of recombination involving inverted repeats, which requires Rad52 but is only modestly reduced by deletion of RAD51 (Rattray and Symington, 1994). Rad59, which augments the strand annealing function of Rad52 (Petukhova et al., 1999; Davis and Symington, 2001; Wu et al., 2006), is required for spontaneous recombination of inverted repeats in the absence of Rad51 (Bai and Symington, 1996). It has been proposed that these events occur by template switching during DNA replication in a manner involving strand annealing (Mott and Symington, 2011). Poly-ubiquitylation of PCNA by the Mms2-Ubc13-Rad5 ubiquitin conjugating enzyme complex promotes repair through the error-free post-replication repair pathway, which is thought to involve template switching (Xu et al., 2015). Rad5 and Rad18 were found to have only a minor role in inverted-repeat recombination (Mott and Symington, 2011), and the rates of spontaneous SCE in mms2\u2206, ubc13\u2206, and rad5\u2206 mutants are similar to wild type, as measured by an unequal SCE assay (Fasullo and Sun, 2017). However, template switching has been proposed to occur differently depending on whether the DNA lesion is on the leading strand template or the lagging strand template, with lesion bypass on the leading strand utilizing Rad5 while lesion bypass on the lagging strand mediated by Rad52 (Gangavarapu et al., 2007). Aside from the rDNA locus, we have so far been unable to map spontaneous SCE events to specific genomic features so further work will be needed to determine whether inverted repeats replicated by the lagging strand machinery are a source of spontaneous SCE (Figure 5C).\n\nWe were able to map multiple spontaneous SCE events to the rDNA locus because of its large size (approximately 10% of the genome). Due to its repetitive nature, the rDNA locus has been an excellent substrate for studying HR. Recombination within the locus is important to maintain repeat homogeneity and copy number homeostasis (Kobayashi, 2011). Consistent with the importance of HR at the rDNA locus, we observe that SCE is threefold higher at the rDNA locus compared to the rest of the genome (Figure 3B). Nevertheless, an SCE event occurs at the rDNA locus in only 6.4% (14 out of 218) of wild-type cells (Table 1). Considering that it has been estimated that a single cell has on average 3.6 Holliday junctions and one DSB within the rDNA array per cell cycle (Zou and Rothstein, 1997; Sasaki and Kobayashi, 2017), our data indicate that the vast majority of HR events at the rDNA locus do not result in crossovers, in agreement with previous work showing that HR at the rDNA locus is largely rearrangement-free (Zou and Rothstein, 1997).\n\nIn addition to SCE, Strand-seq could in theory be used to detect break-induced replication (BIR) events involving sister chromatids. BIR occurs when one end of a DSB invades an intact homologous DNA sequence to generate a replication fork that can potentially proceed to the end of the chromosome. Unlike canonical DNA replication, which is semi-conservative, BIR occurs by conservative DNA synthesis (Donnianni and Symington, 2013; Saini et al., 2013). With Strand-seq, a chromosomal region synthesized by BIR could either have no Watson or Crick reads (i.e. both Watson and Crick strands are newly synthesized) or both Watson and Crick reads (i.e. both Watson and Crick strands consist of the original parental template strands). Application of Strand-seq in yeast will be particularly advantageous to address questions about various types of DNA lesions and replication stress-inducing barriers at specific locations in the genome. These and other potential applications of Strand-seq offer intriguing new possibilities to study HR, complimenting more traditional assays to yield a better picture of HR activity genome-wide at the level of single cells.\n\n## Materials\u00a0and\u00a0methods\n\n### Yeast strains and growth conditions\n\nStrains used in this study are listed in Table 2 and are all RAD5 derivatives of W303 (Thomas and Rothstein, 1989; Zhao et al., 1998). The E17 strain was derived from YLV11 (Vernis, 2003). Unless noted otherwise, standard culturing conditions and genetic techniques were used to manipulate yeast strains (Sherman, 2002).\n\n**Table 2.**\n Yeast strains used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain name</th>\n      <th>Relevant genotype</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E17</td>\n      <td>MATa ADE2 cdc21::kanMX leu2::LEU2-GAL-hENT1 LYS2 RAD5 trp1::TRP1-GAL-dNK ura3-1</td>\n      <td>Peter Thorpe</td>\n    </tr>\n    <tr>\n      <td>CCY232</td>\n      <td>MATa ADE2 cdc21::kanMX leu2::LEU2-GAL-hENT1 LYS2 RAD5 trp1::TRP1-GAL-dNK ura3-1 RAD52-GFP::HIS3M \u00d7 6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCY234</td>\n      <td>MATa ADE2 can1-100 his3-11,15 leu2-3,112 trp1-1 ura3-1 RAD5 RAD52-GFP::HIS3M \u00d7 6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCY118</td>\n      <td>MATa ADE2 cdc21::natMX leu2::LEU2-GAL-hENT1 LYS2 RAD5 trp1::TRP1-GAL-dNK ura3-1 sgs1\u2206kanMX</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCY193</td>\n      <td>MATa ADE2 cdc21::natMX leu2::LEU2-GAL-hENT1 LYS2 RAD5 trp1::TRP1-GAL-dNK ura3-1 rad52\u2206kanMX</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCY150</td>\n      <td>MATa ADE2 cdc21::kanMX leu2::LEU2-GAL-hENT1 LYS2 RAD5 trp1::TRP1-GAL-dNK ura3-1 rad51\u2206natMX</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCY182</td>\n      <td>MATa ADE2 cdc21::kanMX leu2::LEU2-GAL-hENT1 LYS2 RAD5 trp1::TRP1-GAL-dNK ura3-1 rad52-Y66A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MCY736</td>\n      <td>MATa/MAT\u03b1 ade2-1/ade2-1 can1-100/can1-100 his3-11,15/his3-11,15 leu2-3,112/leu2-3,112 trp1-1/trp1-1 ura3-1/ura3-1 RAD5/RAD5 mus81\u0394kanMX/MUS81 rad52\u2206/RAD52 sgs1\u0394HIS3/SGS1</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MCY737</td>\n      <td>MATa/MAT\u03b1 ade2-1/ade2-1 can1-100/can1-100 his3-11,15/his3-11,15 leu2-3,112/leu2-3,112 trp1-1/trp1-1 ura3-1/ura3-1 RAD5/RAD5 mus81\u0394kanMX/MUS81 rad51\u2206natMX/RAD51 sgs1\u0394HIS3/SGS1</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MCY773</td>\n      <td>MATa/MAT\u03b1 ade2-1/ade2-1 can1-100/can1-100 his3-11,15/his3-11,15 leu2-3,112/leu2-3,112 trp1-1/trp1-1 ura3-1/ura3-1 RAD5/RAD5 rad52-Y66A::hphMX/RAD52 sgs1\u0394HIS3/SGS1</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCY198</td>\n      <td>MATa/MAT\u03b1 ade2-1/ade2-1 can1-100/can1-100 his3-11,15/his3-11,15 leu2-3,112/leu2-3,112 trp1-1/trp1-1 ura3-1/ura3-1 RAD5/RAD5 rad52-Y66A/RAD52 rmi1\u0394kanMX/RMI1</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MCY735</td>\n      <td>MATa/MAT\u03b1 ade2-1/ade2-1 can1-100/can1-100 his3-11,15/his3-11,15 leu2-3,112/leu2-3,112 trp1-1/trp1-1 ura3-1/ura3-1 RAD5/RAD5 mus81\u0394kanMX/MUS81 rad52-R70A/RAD52 sgs1\u0394HIS3/SGS1</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCY196</td>\n      <td>MATa/MAT\u03b1 ade2-1/ade2-1 can1-100/can1-100 his3-11,15/his3-11,15 leu2-3,112/leu2-3,112 trp1-1/trp1-1 ura3-1/ura3-1 RAD5/RAD5 rad52-R70A/RAD52 rmi1\u0394kanMX/RMI1</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Isolation of single cells for Strand-seq\n\nStrand-seq compatible strains (cdc21::kanMX leu2::LEU2-GAL-hENT1 trp1::TRP1-GAL-dNK) were grown in 25 ml of YP medium (1% yeast extract, 2% peptone) supplemented with 2% galactose (YPGal) and 100 \u00b5M thymidine to an OD600 of 0.2\u20130.4. Cells were arrested in G1 phase by the addition of alpha mating factor (Sigma) for 2 hr. At this point, two different protocols were used: the first involved sorting single cells, while the second involved sorting individual spheroplasts. Both protocols yielded high quality Strand-seq libraries, with no change in the number of SCE events observed per cell (Figure 6A), nor in SCE mapping resolution (Figure 6B), but the spheroplast approach proved to be more reliable with less background sequencing reads. The Strand-seq library shown in Figure 1B was derived from the cell sorting approach, while the Strand-seq libraries shown in Figure 1C and D were derived from the spheroplast sorting approach.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig6-v2.jpg)\n\nFor the cell sorting approach, G1-arrested cells were washed with water and resuspended in 100 \u00b5l of PBS solution. 150 \u00b5l of 200 \u00b5g/ml of Concanavalin A (ConA), conjugated to either Cy5 or Alexa Fluor 633, was then added, followed by a 10 min incubation at room temperature in the dark. ConA binds to the yeast cell wall (Tkacz et al., 1971). Unbound ConA was removed by washing three times with PBS. Cells were then synchronously released from G1 arrest into fresh YPGal supplemented with 0.6 mg/ml of BrdU. Samples were taken before G1 arrest, after G1 arrest, after ConA-labeling, and every 30 min after release from G1 arrest. The samples were fixed with 70% ethanol and stored for at least one night at \u221220\u00b0C. Cells were pelleted, resuspended in 0.5 ml of 50 mM Tris-Cl pH 8.0 plus 10 \u00b5l of 10 mg/ml RNase A, and incubated for 2\u20134 hr at 37\u00b0C. The cells were then washed once with 50 mM Tris-Cl pH 7.5, resuspended in 300 \u00b5l of 50 mM Tris-Cl pH 7.5, 1.5 \u00b5M SYTOX Green, and incubated overnight at 4\u00b0C. Cell suspensions were briefly sonicated and analyzed by flow cytometry. Newly divided daughter cells can be identified by having 1C DNA content and without ConA labeling, since yeast daughter cells bud off from the original mother cells, synthesizing a new cell wall that is not stained with ConA (Chung et al., 1965; Figure 7). The single daughter cells were then sorted with a MoFlo Astrios cell sorter (Beckman Coulter) into separate wells of a 96-well plate for Strand-seq library preparation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30560/elife-30560-fig7-v2.jpg)\n\n**Figure 7.:** (A) Scheme of the \u2018single cell sorting\u2019 approach for yeast Strand-seq.\u00a0(B) Representative flow cytometry scatter plots corresponding to the scheme depicted in (A). Cells appearing in the lower left quadrant in the 90 min post-release sample are newly divided daughter cells to be sorted. A typical window for sorting is shown by the red oval.\n\nFor the spheroplast sorting approach, G1 arrest and release into BrdU-containing media was performed as in the cell sorting protocol, with the omission of ConA-labeling. Cell cycle progression was monitored by flow cytometry. Cells that had progressed through one cell cycle were incubated 0.17 mg/ml zymolyase for 1 hr at 37\u00b0C. The resulting spheroplasts were washed in PBS and those with 1C DNA content were sorted with a FACSJazz cell sorter (BD Biosciences) into separate wells of a 96-well plate for Strand-seq library preparation. Without the ConA-labeling, we cannot distinguish newly divided cells from cells that remain arrested in G1 without having progressed through the cell cycle. However, the arrested cells will not have incorporated BrdU, resulting in Strand-seq libraries that will have both Watson and Crick reads for every chromosome. These libraries can be easily identified and discarded. Moreover, we find that the occurrence of such libraries is very rare.\n\n### Strand-seq library preparation and sequencing\n\nStrand-seq libraries were prepared as previously described (Sanders et al., 2017), with a few modifications. Sorted single yeast cells were first treated with zymolyase, followed by incubation with MNase to fragment the DNA. Several zymolyase reaction conditions were used in an attempt to optimize the procedure. In the end, we found that 0.175 mg/ml zymolyase for 30 min at 30\u00b0C worked best. Sorted single spheroplasts were directly subjected to MNase treatment. Adapter ligation was performed in the presence of PEG 6000, using the Quick Ligation Reaction Buffer (New England Biolabs) and 10 nM adapters to promote efficient ligation of adapters to DNA templates and reduce adapter dimer formation. After ligation and PCR, DNA clean-up with magnetic AMPure XP beads (Agencourt AMPure, Beckman Coulter) was performed twice using a 1.2 vol of beads. Single-end 50 bp sequencing reads from the Strand-seq libraries were generated using the HiSeq 2500 or the NextSeq 500 sequencing platform (Illumina,\u00a0San Diego, CA). Reads were aligned to the S. cerevisiae EF4 reference genome using Bowtie2 (version 2.0.0-beta7; Langmead and Salzberg, 2012) and analyzed using the BAIT software package (Hills et al., 2013) for data selection and visualization purposes. Only libraries with an average read count greater than 20 per megabase of DNA were included in the analyses. SCE events were detected using an R-based package called HapSCElocatoR (publicly available through GitHub: https://github.com/daewoooo/HapSCElocatoR; Porubsk\u00fd and Sanders, 2017\u00a0; copy archived at https://github.com/elifesciences-publications/HapSCElocatoR). HapSCElocatoR uses circular binary segmentation (implemented in the R package fastseg; Klambauer et al., 2012) to localize SCE events in haploid Strand-seq libraries as a change in read directionality from Watson (negative strand) to Crick (positive strand) or vice versa. Only non-duplicate reads with a mapping quality greater than or equal to 10 were analyzed. We considered only strand state changes with at least three directional reads on both sides of the putative SCE site as an SCE event. Single directional reads embedded within an extended region with the opposite directionality were considered as errors and their directionality was flipped. Computationally localized SCE events were further manually verified by visual inspection of chromosome ideograms (obtained from BAIT; see Figure 1B). Comparisons of SCE rate between different genotypes were assessed for statistical significance using a t-test.\n\n### Live cell imaging of cells expressing Rad52-GFP\n\nStrains CCY232 and CCY234 were inoculated in the morning in 2 mL of synthetic medium supplemented with 100 \u00b5M thymidine and grown at 25\u00b0C. In the evening, the cultures were diluted into 50 mL of synthetic medium supplemented with thymidine to reach an OD600 of 0.2\u20130.4 in the following morning. Cells were then washed twice with synthetic medium and placed either into 25 mL of synthetic medium supplemented with 100 \u00b5M thymidine (for CCY232 and CCY234) or 25 mL of synthetic medium supplemented with 200 \u00b5M BrdU (for CCY232) and grown for 90 min at 25\u00b0C\u2014instead of 30\u00b0C, to allow the GFP chromophore to fold more efficiently (Lim et al., 1995). Cells were then mounted onto agar pads for imaging, which was performed using a Zeiss LSM 800 or a DeltaVision Image Restoration Microscope. Images were scores for cells with or without foci by two people independently.\n\n### Estimation of spontaneous DSB rate\n\nFreshly grown E17 (wild type) or CCY193 (rad52\u2206) were spread onto one side of a YPGal\u00a0+100 \u00b5M thymidine plate. Cells were micromanipulated to designated locations on the plate and allowed to divide once. If a cell failed to divide at this stage, it was discarded from further analysis. This step ensured that we would look at healthy and newly divided cells. From the cells that do divide, each daughter cell was then micromanipulated away from its mother cell to a new location on the same plate, which was then incubated for 2\u20133 days at 30\u00b0C to allow the isolated mother and daughter cells to form colonies. The number of mother or daughter cells that were unable to form a colony was recorded. Incidences where both the mother and the daughter did not form a colony were excluded from the analysis because these mother-daughter pairs may have resulted from the division of an arrested cell with unrepaired DNA damage as a result of DNA damage checkpoint adaptation (Cl\u00e9menson and Marsolier-Kergoat, 2009). In total, 408 E17 and 338 CCY193 cells were examined (i.e. 204 E17 and 169 CCY193 mother-daughter pairs). 13.3% (95% CI [9.9%, 17.4%]) of CCY193 cells and 1.7% (95% CI [0.7%, 3.5%]) of E17 cells failed to form a colony. E17 mortality is unlikely due to unrepaired DSBs, and possibly due to death caused by the micromanipulation process, so subtracting this 1.7% \u2018background\u2019 mortality rate from the 13.3% mortality rate of CCY193 cells yields an estimated spontaneous DSB rate of 11.6%. This mortality rate is similar to the 8.3% previously reported for rad52\u2206 of a different strain background (Ozenberger and Roeder, 1991).\n",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "d6beef47-e1dc-44b8-a8d7-3c3de891d74a",
+      "submission_id": "62633040-712a-4dce-9296-32723edca221",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lorraine Symington, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30560.014](https://doi.org/10.7554/eLife.30560.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your article entitled \"Double-strand breaks are not the main cause of spontaneous sister chromatid exchange in wild-type yeast cells\" for peer review at eLife. Your article has been favorably evaluated by Jessica Tyler (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers recognize the importance of sister chromatid exchange and the potential of Strand-seq to measure the number and distribution of these events genome wide. The two main concerns identified by the reviewers are: (1) could the high frequency of SCEs result from the method used to detect them; and (2) validity of the argument regarding the source of the initiating lesion of SCEs.\n\nEssentially, the concern is that the conditions used to incorporate BrdU into the genome are non-physiological and could result in DNA damage that then leads to sister chromatid exchange. Reviewer 2 suggests specific experiments that could be used to address this concern. In particular, determining viability of rad52 cells under the same conditions used for Strand-seq. Activation of the DNA damage and/or replication checkpoint could also be assessed under these conditions.\n\nReviewer #1:\n\nIn this study, the authors apply a method called Strand-seq to determine the number and distribution of spontaneous sister chromatid exchanges (SCE) in the yeast, Saccharomyces cerevisiae. The advantage of this method over previously described assays in yeast, is that it measures events genome wide in a single generation, and reports on equal sister chromatid recombination in contrast to genetic assays that are usually designed to detect unequal recombination between repeated gene segments at a single locus. Yeast is an ideal system for Strand-seq because of the stable haploid state, which avoids complications due to inter-homolog recombination, and plethora of mutants available to investigate the role of genes in known DNA repair pathways in regulating sister chromatid recombination.\n\nThe authors found that 23% of wild type daughter cells analyzed had at least one SCE and these events were dependent on RAD52, and only partially dependent on RAD51. Interestingly, the rad52-Y66A allele, anticipated to be defective in the strand annealing function of Rad52, exhibited a greater decrease in SCEs outside of the rDNA than the rad51 mutant. As expected, the number of spontaneous SCEs was significantly increased in the sgs1/blm mutant. The authors then speculate on the initiating lesion for SCEs and from indirect assays infer that most of the events must initiate from a lesion other than a double-strand break (DSB). While I agree with the view that most SCEs probably arise from a single-stranded gap formed during replication, I don't think this is such an unusual standpoint. Most of the E. coli recombination community is well aware of the importance of recombination initiated at gaps, and fission yeast labs studying recombination at stalled replication forks have long argued that the events studied do not go through a DSB intermediate. Furthermore, the 2002 study by Fabre and colleagues (cited here) made a strong case that most spontaneous recombination must initiate from ssDNA gaps. I suggest the authors tone done the section stating it is generally assumed recombination initiates from DSBs.\n\nSubsection \u201cThe strand annealing activity of Rad52 is important for sister chromatid exchange\u201d, last paragraph: I found the section on Rad52 requirement for SCE in the rDNA confusing. If Rad52 is required for Holliday junction formation in the rDNA, but not Rad51, it would suggest the Rad52 strand annealing activity is important. Yet rad52-Y66A, which is supposedly defective for the strand annealing function is proficient for rDNA recombination.\n\nFigure 4B: The rad52 null should also be shown.\n\nReviewer #2:\n\nClaussin et al. apply a novel and fairly sensitive assay for crossing-over between sister chromatids (a.k.a. SCE) to the scoring of inter-sister crossovers in single budding yeast cells. They provide evidence that these crossovers occur in about 1 in 4 cell cycles, and that most occur within the ribosomal DNA. They also show that these intersister crossovers require Rad52, with a partition between rDNA and single copy sequences in terms of the dependence on Rad51 and on the annealing activity of Rad52. They also claim to show, based on death rates in rad52\u0394 cells, and on the failure of rad52 class C mutants (which lack annealing activity) to suppress the synthetic lethality of mus81 sgs1 double mutants and the slow growth of rmi1 mutants. This paper is interesting because it provides the first detection of intersister exchange in \"normal\" genomes, and provides evidence in further support of a partition between the rDNA repeats and the rest of the genome, in terms of recombination biochemistry. However, there is some question as to whether the frequencies of intersister crossovers reflect what happens in normal cells, and the argument regarding the relationship between double strand breaks and intersister crossovers is invalid.\n\n1) Assay conditions might impact the frequency of recombinogenic lesions. In the strand-seq assay, cells are shifted from thymidine-containing medium into medium where BrdU is the only source of \"T\". Under these conditions, there are many non-physiological sources for induced damage. These include inefficient uptake or inefficient phosphorylation leading to decreased dNTP pools and subsequent fork stalling, recognition of incorporated BrU as a damaged base, removal by BER and subsequent post-replicative repair by recombination, or photolytic damage followed by repair by recombination. These are, of course, quite difficult to control for, and all might increase the observed frequency of intersister crossing-over beyond what occurs in the absence of BrdU. The only remedy that I can think of would be to incorporate one of the previously published assays for unequal sister chromatid exchange into the strains used, and compare rates of exchange genetically in cells grown in thymidine, cells subjected to BrdU as for the strand-seq protocol, and in otherwise isogenic CDC21 (i.e. wild-type) cells whose growth is independent of exogenous thymidine.\n\n2) Cell inviability assays compare rates of death in cells grown in thymidine with rates of SCE in cells grown in BrdU. Because of uncertainty regarding whether or not BrdU induces additional SCE in yeast (see point above), the argument comparing SCE rates with death rates is currently invalid.\n\n3) While a single DSB is sufficient to kill a rad52 mutant cells, this mostly occurs by irreversible DNA damage checkpoint arrest. It is not known whether or not a DSB in one of two sister chromatids is also sufficient to cause irreversible arrest. If it is, then these cells would not divide, and thus would be excluded from the spontaneous DSB rate assay, because they would not have divided. This would lead to an underestimate of lethality, and thus the frequency of unrepaired lethal lesions.\n\nIn sum, a better assay for cell viability would take the same population used for strand-seq, and to plate cells after S is completed, but before the first mitotic division, on YPD + thymidine, and then scoring for both cells that fail to divide, and for cells where either mother or daughter are unable to form colonies.\n\n4) Failure of rad52\u0394 or rad52-Y66A to suppress the lethality of a mus81 sgs1 double mutant, or the slow growth of an rmi1 mutant does not mean that the lesions responsible for the synthetic lethal or slow growth phenotypes are not double-strand breaks, just that Rad52 is not required for these lesions to form intermediates that require Mus81 or Sgs1-Top3-Rmi1 activity for resolution.\n\nThe comments above should not be taken as suggesting that only double-strand breaks induce mitotic recombination, just that the evidence the authors have put forward is insufficient to prove their argument.\n\nReviewer #3:\n\nSister-chromatid exchange (SCE) is one of the major sources of genome rearrangement. However, SCE without rearrangement (equal SCE), that is thought to occur most frequently, has not been analyzed because of the identical sequence after recombination. To reveal the mechanism of SCE and the resulting genome instability, it is important to know the nature of equal SCE, too.\n\nThe authors applied the Strand-seq method to yeast and mapped 57 SCE sites in analyzed 218 cells. 14 out of 57 SCEs occurred in the rDNA that is known as a hot spot of rearrangement (copy number variation). Interestingly, the authors speculated that most of the SCEs are not the results of DSB repair because frequency of the repair is estimated much less than that of SCE from the information of previous reports. The authors are presenting three models that make SCE possible without DSB repair.\n\nThe conclusion is interesting and valuable to understand the actual mechanism of SCE. However, I think some descriptions in the paper are inappropriate. The authors should revise the following points before publication.\n\n1) Subsection \u201cSister chromatid exchange at the ribosomal DNA locus\u201d: HOT1 is thought to be an element that works outside of the rDNA by the function of pol I transcription (Huang and Keil, 1995: Ward et al., 2000; Serizawa et al., 2004, etc.). The recombination in the rDNA mainly depends on the replication fork barrier (RFB) activity by Fob1. The author should rewrite the sentence.\n\n2) The authors discuss only about equal SCE. I wonder if they didn't find any rearrangement that really increases genome instability. They should add the information if they have.\n\n3) What causes the SCE? Replication fork inhibition is thought to be the main trigger. I think it may be worth doing to test the effect of a replication inhibitor to the rate of SCE. This experiment may support the model but not essential for the conclusion of this paper.\n\n4) Is there any hotspot of SCE? The authors should discuss about the sequences or regions in which SCE is induced.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Double-strand breaks are not the main cause of spontaneous sister chromatid exchange in wild-type yeast cells\" for further consideration at eLife. Your revised article has been favorably evaluated by Jessica Tyler (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nReviewers 1 and 3 are satisfied with the revision, but reviewer 2 is unconvinced that BrdU is not causing some damage that fails to elicit a checkpoint response or Rad52 foci. We don't really know what a Rad52 focus denotes, other than it is some kind of DNA damage. Rothstein's group has claimed, in fact, that multiple lesions are incorporated into a single Rad52 focus. Clearly cells with SCEs exceed cells with Rad52 foci by at least a factor of 2, and given observations that non-crossovers are formed in excess over crossovers in mitotic cells, it seems clear that most of the recombinogenic lesions formed are not detected as Rad52 foci. None of the assays the current manuscript contains directly address the question of whether or not spontaneous DSBs or SCEs occur at the same frequencies when cells are grown in thymidine versus BrdU. Ideally, one would want to measure spontaneous USCE using a genetic assay under the same conditions used here, one cycle of growth with BrdU. However, as noted in the authors rebuttal, there are technical issues with doing that type of analysis. All reviewers agree that there are a number of interesting findings presented, but given the concern over whether BrdU could cause damage and induce SCEs we suggest that you modify the title, something along the lines of \"Direct measurement of sister chromatid exchange in single cells\", and tone done the suggestion that DSBs are not the cause of spontaneous SCEs.\n",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cd21c5c3-999a-4426-8886-9485c445b680",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C1",
+      "claim": "Homologous recombination involving sister chromatids is the most accurate, and thus most frequently used, form of recombination-mediated DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous recombination involving sister chromatids is the most accurate, and thus most frequently used, form of recombination-mediated DNA repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus about homologous recombination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "e3676265-c01d-4046-a47c-3f3eb38fbf9c",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C2",
+      "claim": "Sister chromatid recombination does not result in a change in DNA sequence, making recombination between sister chromatids difficult to detect.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its importance, sister chromatid recombination is not easily studied because it does not result in a change in DNA sequence, making recombination between sister chromatids difficult to detect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a known technical challenge in studying sister chromatid recombination based on the nature of the process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "abd1aec3-67e1-4e26-9c9c-1958b71fbdd6",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C3",
+      "claim": "Strand-seq is a novel DNA template strand sequencing technique that can be used to map sister chromatid exchange (SCE) events genome-wide in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously developed a novel DNA template strand sequencing technique, called Strand-seq, that can be used to map sister chromatid exchange (SCE) events genome-wide in single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors reference their previous development of the Strand-seq technique.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "3aeb5f17-f2d0-4af0-b6e9-13171598e622",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C4",
+      "claim": "An increase in the rate of SCE is an indicator of elevated recombination activity and of genome instability, which is a hallmark of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in the rate of SCE is an indicator of elevated recombination activity and of genome instability, which is a hallmark of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws on established knowledge about the relationship between SCE, genome instability, and cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "05ea2d73-bd38-41a5-9f87-dec243f9046d",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C5",
+      "claim": "This study adapted Strand-seq to detect SCE in the yeast Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have adapted Strand-seq to detect SCE in the yeast Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe their methodological adaptation as a primary contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "26be3d6b-f746-431b-87d6-2d22cfe4901f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C6",
+      "claim": "Most spontaneous SCE events in wild-type cells are not due to the repair of DNA double-strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide the first quantifiable evidence that most spontaneous SCE events in wild-type cells are not due to the repair of DNA double-strand breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on their experimental data and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "a9a05fe2-ec03-4d99-9ce3-cfcb460e63b8",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C7",
+      "claim": "Mutations in many HR genes are linked to a number of human diseases, especially various types of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous recombination (HR) is indispensable for the maintenance of genome integrity, and mutations in many HR genes are linked to a number of human diseases, especially various types of cancer (Prakash et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Prakash et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "331fa6f7-9a99-451e-8438-b990b553707e",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C8",
+      "claim": "HR is characterized as a major pathway to repair DNA double-strand breaks (DSBs).",
+      "claim_type": "EXPLICIT",
+      "source": "HR is characterized as a major pathway to repair DNA double-strand breaks (DSBs), and can occur between any two homologous sequences, such as sister chromatids, homologous chromosomes, or homologous sequences located at different genomic loci (Jasin and Rothstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jasin and Rothstein, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9af1d378-7560-4842-aa4c-ea01ff17101f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C9",
+      "claim": "HR can occur between any two homologous sequences, such as sister chromatids, homologous chromosomes, or homologous sequences located at different genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "HR is characterized as a major pathway to repair DNA double-strand breaks (DSBs), and can occur between any two homologous sequences, such as sister chromatids, homologous chromosomes, or homologous sequences located at different genomic loci (Jasin and Rothstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jasin and Rothstein, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "2d1f36f0-2287-4df5-9113-4eb2b3d77731",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C10",
+      "claim": "HR results in a unidirectional transfer of genetic information from one DNA molecule to another (i.e. gene conversion) and/or a reciprocal exchange of genetic information between the two DNA molecules (i.e. a crossover).",
+      "claim_type": "EXPLICIT",
+      "source": "HR results in a unidirectional transfer of genetic information from one DNA molecule to another (i.e. gene conversion) and/or a reciprocal exchange of genetic information between the two DNA molecules (i.e. a crossover).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known outcomes of homologous recombination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "317237f1-d23f-4875-9317-d70d2b671d27",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C11",
+      "claim": "A crossover involving two homologous chromosomes can cause loss of heterozygosity, which is a common occurrence in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "A crossover involving two homologous chromosomes can cause loss of heterozygosity, which is a common occurrence in cancer, while a crossover involving homologous sequences located at different genomic loci will result in chromosomal rearrangements, such as deletions, inversions, and translocations, which have been linked to a variety of human diseases (Kong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kong et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "e38fa803-6b17-4054-a031-18a03ee5e38a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C12",
+      "claim": "A crossover involving homologous sequences located at different genomic loci will result in chromosomal rearrangements, such as deletions, inversions, and translocations, which have been linked to a variety of human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "A crossover involving two homologous chromosomes can cause loss of heterozygosity, which is a common occurrence in cancer, while a crossover involving homologous sequences located at different genomic loci will result in chromosomal rearrangements, such as deletions, inversions, and translocations, which have been linked to a variety of human diseases (Kong et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kong et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "67a48639-9ce4-4edc-8048-26f7ecec4a4e",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C13",
+      "claim": "In mitotic cells, HR is biased towards noncrossovers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in mitotic cells, HR is biased towards noncrossovers, and HR involving identical sister chromatids, referred to as sister chromatid recombination (SCR), is preferred (Kadyk and Hartwell, 1992; Nassif et al., 1994; Johnson and Jasin, 2000; Virgin et al., 2001; Stark and Jasin, 2003), in part because a crossover during SCR should not lead to a change in DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "6c0ccb3e-5e33-4eb0-accc-b86ebeeaf199",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C14",
+      "claim": "HR involving identical sister chromatids, referred to as sister chromatid recombination (SCR), is preferred in mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in mitotic cells, HR is biased towards noncrossovers, and HR involving identical sister chromatids, referred to as sister chromatid recombination (SCR), is preferred (Kadyk and Hartwell, 1992; Nassif et al., 1994; Johnson and Jasin, 2000; Virgin et al., 2001; Stark and Jasin, 2003), in part because a crossover during SCR should not lead to a change in DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "86805726-9181-4c89-a106-409f3a284907",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C15",
+      "claim": "A crossover during SCR should not lead to a change in DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in mitotic cells, HR is biased towards noncrossovers, and HR involving identical sister chromatids, referred to as sister chromatid recombination (SCR), is preferred (Kadyk and Hartwell, 1992; Nassif et al., 1994; Johnson and Jasin, 2000; Virgin et al., 2001; Stark and Jasin, 2003), in part because a crossover during SCR should not lead to a change in DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the nature of identical sister chromatids.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "c066666a-ce27-40cc-a21f-bbb36d4388cc",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C17",
+      "claim": "The mechanistic details of SCE and HR have been best studied using genetic assays in the budding yeast Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanistic details of SCE and HR have been best studied using genetic assays in the budding yeast Saccharomyces cerevisiae (Symington et al., 2014), though these assays are limited in several ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Symington et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "a8f26684-9f9c-4ca8-ac06-1abf2e8cd1ab",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C18",
+      "claim": "Perfect, or 'equal', chromosomal SCE events cannot be detected genetically.",
+      "claim_type": "EXPLICIT",
+      "source": "First, perfect, or 'equal', chromosomal SCE events cannot be detected genetically, so most SCE assays measure 'unequal' SCE events, requiring recombination between misaligned sister chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of genetic assays based on the nature of equal SCE events.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "27f46116-3a45-4ab8-bdfb-eab10a7fa5ff",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C19",
+      "claim": "Using a plasmid-based assay that creates a DSB on one of the two sister plasmids after DNA replication, equal SCE was found to occur much more frequently than unequal SCE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using a plasmid-based assay that creates a DSB on one of the two sister plasmids after DNA replication, equal SCE was found to occur much more frequently than unequal SCE (Gonz\u00e1lez-Barrera et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gonz\u00e1lez-Barrera et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "d3a6bf8a-dbb0-4eee-94f5-877e8abde72d",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C20",
+      "claim": "An often-used approach for detecting unequal SCE involves using two overlapping segments of a reporter gene in a tail-to-head configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, an often-used approach for detecting unequal SCE involves using two overlapping segments of a reporter gene in a tail-to-head configuration (Fasullo and Davis, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fasullo and Davis, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "5933d02c-b8c9-410f-8ea4-af174c12ff8c",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C21",
+      "claim": "The generation of a full-length reporter gene can result from an unequal SCE event, but it can also result from a long-tract gene conversion event, which does not involve a crossover.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of a full-length reporter gene can result from an unequal SCE event, but it can also result from a long-tract gene conversion event, which does not involve a crossover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of reporter gene assays based on the ambiguity of outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "fccd5bfb-d59d-491e-9177-56ce6b0e8f14",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C22",
+      "claim": "These two outcomes can be distinguished by analysis of sectored colonies, but this additional analysis is often not performed.",
+      "claim_type": "EXPLICIT",
+      "source": "These two outcomes can be distinguished by analysis of sectored colonies (Kadyk and Hartwell, 1992), but this additional analysis is often not performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kadyk and Hartwell, 1992, and describes a methodological limitation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "aad82615-271d-41b7-9db7-23a32ecc04a7",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C23",
+      "claim": "Introduction of reporter cassettes may disrupt the native chromatin environment, which could affect HR at the locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of such 'reporter cassettes' may disrupt the native chromatin environment, which could affect HR at the locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential artifacts of reporter cassette insertion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "d3c95f16-9713-4e96-8234-f5605dfa0a8b",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C24",
+      "claim": "Most genetic assays rely on the outgrowth of a recombined cell, thus recombination events that lead to a reduction in cell proliferation capacity will be underrepresented, or left uncharacterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, most genetic assays rely on the outgrowth of a recombined cell. Thus, recombination events that lead to a reduction in cell proliferation capacity will be underrepresented, or left uncharacterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a selection bias inherent in genetic assays.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "c5c4f151-3def-46e0-8954-ac85b5c02853",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C25",
+      "claim": "Strand-seq is capable of detecting SCE events genome-wide in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To alleviate these limitations, we previously developed a DNA template strand sequencing technique, called Strand-seq, which is capable of detecting SCE events genome-wide in single cells (Falconer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Falconer et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "7de324ee-8565-4361-98c3-aedc7478a260",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C26",
+      "claim": "In Strand-seq, cells are allowed to divide once in the presence of bromodeoxyuridine (BrdU), a synthetic analogue of thymidine.",
+      "claim_type": "EXPLICIT",
+      "source": "In Strand-seq, cells are allowed to divide once in the presence of bromodeoxyuridine (BrdU), a synthetic analogue of thymidine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Strand-seq methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "6133b8cd-7017-41bb-be40-48b03edfbba7",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C27",
+      "claim": "BrdU gets incorporated into the newly synthesized DNA strands.",
+      "claim_type": "EXPLICIT",
+      "source": "BrdU gets incorporated into the newly synthesized DNA strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of BrdU incorporation in Strand-seq.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9bc35943-b13e-46c1-9231-62c738259bdb",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C28",
+      "claim": "Single daughter cells are isolated and the nascent DNA strands are selectively degraded to isolate parental template strands for the construction of directional sequencing libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Single daughter cells are isolated and the nascent DNA strands are selectively degraded to isolate parental template strands for the construction of directional sequencing libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Strand-seq methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "6753609d-9f9d-4d6d-b0a4-615c221ceef2",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C29",
+      "claim": "An SCE is revealed by a switch in reads mapping to the Watson strand to reads mapping to the Crick strand, or vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "An SCE is revealed by a switch in reads mapping to the Watson strand to reads mapping to the Crick strand, or vice versa (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how SCE is detected in Strand-seq data, with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "5dcc955e-5210-4504-aa17-5797bbef9d18",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C30",
+      "claim": "Strand-seq was originally developed for use with mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strand-seq was originally developed for use with mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the development of Strand-seq.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "843ccf47-7555-479e-a348-3c0d9590b3e3",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C31",
+      "claim": "Since most mammalian cells are diploid, it is not easy to differentiate between an SCE from an interhomolog recombination event.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since most mammalian cells are diploid, it is not easy to differentiate between an SCE from an interhomolog recombination event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the diploid nature of mammalian cells.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "1469edcf-4e53-4464-a02f-1a1e2886b41e",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C32",
+      "claim": "Yeast can be studied in both haploid and diploid states.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast, on the other hand, can be studied in both haploid and diploid states, and the molecular details of HR are best known from studies in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "3bbe02b1-9e2a-41d9-85f8-abcc6702773f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C33",
+      "claim": "The molecular details of HR are best known from studies in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast, on the other hand, can be studied in both haploid and diploid states, and the molecular details of HR are best known from studies in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast as a model organism for HR studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9b6b241b-9a66-46bb-9e19-58f155c650a7",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C34",
+      "claim": "23% of wild-type cells have at least one SCE.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that 23% of wild-type cells have at least one SCE\u2014the first time spontaneous SCEs have been measured and mapped genome-wide in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "a5081b4c-00af-49a2-95d3-ad10b62c19b1",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C35",
+      "claim": "This is the first time spontaneous SCEs have been measured and mapped genome-wide in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that 23% of wild-type cells have at least one SCE\u2014the first time spontaneous SCEs have been measured and mapped genome-wide in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "35906fc4-1816-4ed9-b0ff-997abfd4ad2c",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C36",
+      "claim": "S. cerevisiae cells are unable to 'salvage' nucleosides from the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae cells are unable to 'salvage' nucleosides from the environment, so to perform Strand-seq with yeast cells, we use yeast strains that express both Drosophila melanogaster deoxyribonucleoside kinase (dNK) and the human equilibrative nucleoside transporter (hENT1), allowing cells to take up and incorporate exogenous thymidine and BrdU into their DNA (Vernis, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast biology, supported by a citation to Vernis, 2003.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "14178fc5-c8dd-4722-9992-a2ae9b849773",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C37",
+      "claim": "Yeast strains expressing both Drosophila melanogaster deoxyribonucleoside kinase (dNK) and the human equilibrative nucleoside transporter (hENT1) can take up and incorporate exogenous thymidine and BrdU into their DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae cells are unable to 'salvage' nucleosides from the environment, so to perform Strand-seq with yeast cells, we use yeast strains that express both Drosophila melanogaster deoxyribonucleoside kinase (dNK) and the human equilibrative nucleoside transporter (hENT1), allowing cells to take up and incorporate exogenous thymidine and BrdU into their DNA (Vernis, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Vernis, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "98fc28e0-01cc-4c2a-aaf5-b6734d5d204f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C38",
+      "claim": "CDC21, which encodes thymidylate kinase, is deleted in these strains, forcing them to be entirely dependent upon exogenous thymidine for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "CDC21, which encodes thymidylate kinase, is also deleted in these strains, forcing them to be entirely dependent upon exogenous thymidine for viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genetic modification of the strains used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "56f2855a-a056-48aa-9b18-87b05961f839",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C39",
+      "claim": "When grown in the presence of BrdU, these strains do not show any cell cycle delay or DNA damage checkpoint activation during the first cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "When grown in the presence of BrdU, these strains do not show any cell cycle delay or DNA damage checkpoint activation during the first cell cycle (Vernis, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Vernis, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9cb3be67-91a6-4743-85f0-569e41c8ea24",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C40",
+      "claim": "There is no significant difference in Rad52 focus formation after 90 min of growth in BrdU-containing medium, suggesting that BrdU does not stimulate SCE.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we see no significant difference in Rad52 focus formation, a sensitive indicator of recombination activity (Lisby et al., 2001), after 90 min of growth in BrdU-containing medium, suggesting that BrdU does not stimulate SCE (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 1\u2014figure supplement 1, with citation to Lisby et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "0c024c04-99f7-4144-a108-7c17ef487cae",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C41",
+      "claim": "Rad52 focus formation is a sensitive indicator of recombination activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we see no significant difference in Rad52 focus formation, a sensitive indicator of recombination activity (Lisby et al., 2001), after 90 min of growth in BrdU-containing medium, suggesting that BrdU does not stimulate SCE (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lisby et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "fb38f08d-5fca-46b5-8cf4-f5e0b4f1b08b",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C42",
+      "claim": "BrdU incorporation does not induce SCE in human cells, at least during the first two cell divisions, as varying the concentration of BrdU in the culture medium does not affect the frequency of SCE.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot exclude the possibility that BrdU incorporation causes DNA damage that induces SCE in a manner that does not elicit a DNA damage checkpoint response or Rad52 focus formation, these findings are in line with our recently reported observation that BrdU incorporation also does not induce SCE in human cells, at least during the first two cell divisions, as varying the concentration of BrdU in the culture medium does not affect the frequency of SCE (van Wietmarschen and Lansdorp, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to van Wietmarschen and Lansdorp, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "5d642d66-244d-4ece-aeb6-53dd7c0d8596",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C43",
+      "claim": "218 wild-type Strand-seq libraries were sequenced and a total of 57 SCE events were observed, which equates to 0.26 SCE events per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced Strand-seq libraries derived from 218 wild-type cells and observed a total of 57 SCE events, which equates to 0.26 SCE events per cell (Figure 2A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Figure 2A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "d71369e4-05a3-4f84-af3d-ec99fbc0a544",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C44",
+      "claim": "Mutation of BLM, the human homolog of SGS1, increases SCE.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of BLM, the human homolog of SGS1, increases SCE (German et al., 1965; Chaganti et al., 1974; van Wietmarschen and Lansdorp, 2016), and deletion of SGS1 has been reported to increase unequal SCE using two different genetic assays (Onoda et al., 2000; Fasullo and Sun, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "4d230c2b-aa41-432e-82e0-cf5ea6ec65a4",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C45",
+      "claim": "Deletion of SGS1 has been reported to increase unequal SCE using two different genetic assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of BLM, the human homolog of SGS1, increases SCE (German et al., 1965; Chaganti et al., 1974; van Wietmarschen and Lansdorp, 2016), and deletion of SGS1 has been reported to increase unequal SCE using two different genetic assays (Onoda et al., 2000; Fasullo and Sun, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Onoda et al., 2000 and Fasullo and Sun, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "21acecae-f520-4081-a359-1ca2aedb52cb",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C46",
+      "claim": "The evolutionarily conserved Sgs1-Top3-Rmi1 complex is thought to suppress SCE by dissolving a recombination intermediate known as the double Holliday junction (dHJ) in a manner that would result in a non-crossover.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionarily conserved Sgs1-Top3-Rmi1 complex is thought to suppress SCE by dissolving a recombination intermediate known as the double Holliday junction (dHJ; see Figure 1A) in a manner that would result in a non-crossover (Ira et al., 2003; Wu and Hickson, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Ira et al., 2003 and Wu and Hickson, 2003, with reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "75aa8172-ff9a-4296-bed9-c7f7834a683c",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C47",
+      "claim": "An increase in SCE is observed in sgs1\u2206 cells (p<10\u22129) using Strand-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, we observe an increase in SCE in sgs1\u2206 cells (p<10\u22129) using Strand-seq (Figure 1D; Figure 2A and B; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Figure 1D, Figure 2A and B, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "ca704959-2fe6-4199-b178-11d683897c3f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C48",
+      "claim": "No SCE events were detected in rad52\u2206 cells, as expected.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we did not detect any SCE events in rad52\u2206 cells, as expected (Figure 2A and B; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Figure 2A and B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9906269b-49d4-4726-b005-996e10df02b2",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C49",
+      "claim": "Spontaneous SCE events per cell is about an order of magnitude greater in human and mouse cells than in wild-type yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using previously reported Strand-seq data from mouse embryonic stem cells (Falconer et al., 2012) and human fibroblasts and lymphoblasts (van Wietmarschen and Lansdorp, 2016), we find that spontaneous SCE events per cell is about an order of magnitude greater in human and mouse cells than in wild-type yeast cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of data from this study with previously published data, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9ea861ff-e135-48ee-8719-351c9dcc49d9",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C50",
+      "claim": "By plotting the number of SCE events per gigabase of DNA, it is apparent that SCE activity is about 20-fold higher in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the human and mouse genomes are much larger than the yeast genome. By plotting the number of SCE events per gigabase of DNA, it is apparent that SCE activity is about 20-fold higher in yeast (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "2815bbe3-8026-456c-9770-80884190ea46",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C51",
+      "claim": "It is generally thought that yeast is more recombinogenic than mammals, but a direct and quantitative comparison has not been available until now.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally thought that yeast is more recombinogenic than mammals, but a direct and quantitative comparison has not been available until now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study's comparative analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "e5bdb561-6010-4401-bf6b-23b9f87a069c",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C52",
+      "claim": "Currently, we are only able to map SCE events to a resolution of approximately 30 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, we are only able to map SCE events to a resolution of approximately 30 kb (Figure 3A), which, combined with the modest number of SCE events we have detected so far (57 total from 218 wild-type Strand-seq libraries; Table 1), prevents us from mapping SCE events to specific genomic loci or features.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a limitation of the current methodology, with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "79514afb-d868-4fbd-8bae-83903a624cce",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C53",
+      "claim": "Multiple SCE events were seen at the ribosomal DNA (rDNA) locus, which is located on chromosome XII and consists of approximately 150 rDNA repeats, each of which is 9.1 kb in size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, multiple SCE events were seen at the ribosomal DNA (rDNA) locus, which is located on chromosome XII and consists of approximately 150 rDNA repeats, each of which is 9.1 kb in size (the SCE event in the Strand-seq library shown in Figure 1B maps to the rDNA locus).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data, with reference to Figure 1B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "61b6b497-b012-4b6c-b537-cd5e0c73673c",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C54",
+      "claim": "Of the 57 spontaneous SCE events observed in wild-type Strand-seq libraries, 14 were found at the rDNA locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 57 spontaneous SCE events we observed in our wild-type Strand-seq libraries, 14 were found at the rDNA locus (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "2d926839-ce7e-4fac-a3e5-9805ac31ed49",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C55",
+      "claim": "The rate of spontaneous SCE per gigabase of DNA in the rDNA locus is about threefold higher compared to the rest of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the rate of spontaneous SCE per gigabase of DNA in the rDNA locus is about threefold higher compared to the rest of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "962a9eba-a703-4981-9b9f-79e3928c37e4",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C56",
+      "claim": "This result was observed both in the presence and absence of Sgs1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was observed both in the presence and absence of Sgs1 (Figure 3B), and is likely due to the presence of the replication fork barrier within each rDNA repeat (Labib and Hodgson, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "ee673b60-3bc4-4732-9495-f66199f0e203",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C57",
+      "claim": "The elevated SCE rate at the rDNA locus is likely due to the presence of the replication fork barrier within each rDNA repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was observed both in the presence and absence of Sgs1 (Figure 3B), and is likely due to the presence of the replication fork barrier within each rDNA repeat (Labib and Hodgson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by a citation to Labib and Hodgson, 2007.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "3a432280-7f85-4ac2-962f-5f1db95cca23",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C58",
+      "claim": "Rad52 has two main biochemical functions: mediating the exchange of replication protein A (RPA) for Rad51 on single-stranded DNA (ssDNA) to promote Rad51-catalyzed strand invasion, and facilitating the annealing of complementary RPA-coated ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad52 has two main biochemical functions. First, Rad52 mediates the exchange of replication protein A (RPA) for Rad51 on single-stranded DNA (ssDNA) to promote Rad51-catalyzed strand invasion (Sung, 1997; New et al., 1998). Second, Rad52 facilitates the annealing of complementary RPA-coated ssDNA, a function that is independent of Rad51 (Mortensen et al., 1996; Shinohara et al., 1998; Sugiyama et al., 1998) and augmented by Rad59 (Petukhova et al., 1999; Davis and Symington, 2001; Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing the biochemical functions of Rad52.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "7e49a7bc-509b-47bf-8286-0222a62b9f72",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C59",
+      "claim": "The strand annealing function of Rad52 is independent of Rad51.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Rad52 facilitates the annealing of complementary RPA-coated ssDNA, a function that is independent of Rad51 (Mortensen et al., 1996; Shinohara et al., 1998; Sugiyama et al., 1998) and augmented by Rad59 (Petukhova et al., 1999; Davis and Symington, 2001; Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "edfe9da8-c260-401a-b98c-39172d34a4af",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C60",
+      "claim": "The strand annealing function of Rad52 is augmented by Rad59.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Rad52 facilitates the annealing of complementary RPA-coated ssDNA, a function that is independent of Rad51 (Mortensen et al., 1996; Shinohara et al., 1998; Sugiyama et al., 1998) and augmented by Rad59 (Petukhova et al., 1999; Davis and Symington, 2001; Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "0fbb736a-6600-4d3e-b9fa-12538d5ae15f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C61",
+      "claim": "rad52-Y66A belongs to a class of rad52 mutants, class C mutants, that are mutated in the evolutionarily conserved N-terminal domain and share a similar phenotype of being proficient for mitotic recombination, but defective in the repair of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "rad52-Y66A belongs to a class of rad52 mutants, class C mutants, that are mutated in the evolutionarily conserved N-terminal domain and share a similar phenotype of being proficient for mitotic recombination, but defective in the repair of DSBs (Mortensen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mortensen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "8a66afff-0237-4133-93a1-8323ffa6d1fe",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C62",
+      "claim": "An in vitro study of one of the class C mutant proteins, rad52-R70A, indicated that these mutants are defective in strand annealing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "An in vitro study of one of the class C mutant proteins, rad52-R70A, indicated that these mutants are defective in strand annealing activity (Shi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Shi et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9cac8334-c0fa-4916-b8b3-51fdef025175",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C63",
+      "claim": "SCE is reduced 1.7-fold in rad51\u2206 cells and 4.5-fold in rad52-Y66A cells (p=0.058 and p<10\u22124 for rad51\u2206 and rad52-Y66A, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that SCE is reduced 1.7-fold in rad51\u2206 cells and 4.5-fold in rad52-Y66A cells (p=0.058 and p<10\u22124 for rad51\u2206 and rad52-Y66A, respectively; Figure 2A and B; Table 1), indicating that both functions of Rad52 are important for spontaneous SCE, with the strand annealing function being more so.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Figure 2A and B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "36fd32b9-8a5c-43d2-a293-4ed01a909717",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C64",
+      "claim": "Both functions of Rad52 are important for spontaneous SCE, with the strand annealing function being more so.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that SCE is reduced 1.7-fold in rad51\u2206 cells and 4.5-fold in rad52-Y66A cells (p=0.058 and p<10\u22124 for rad51\u2206 and rad52-Y66A, respectively; Figure 2A and B; Table 1), indicating that both functions of Rad52 are important for spontaneous SCE, with the strand annealing function being more so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "56311f58-9c78-4d66-9cf2-c71bd195e22d",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C65",
+      "claim": "The strand annealing activity of Rad52 is important for DSB-induced SCR.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is in agreement with previous work indicating that the strand annealing activity of Rad52 is important for DSB-induced SCR (Mu\u00f1oz-Galv\u00e1n et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mu\u00f1oz-Galv\u00e1n et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "78bcaf37-2043-4887-9278-11ae018822e6",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C66",
+      "claim": "Using a genetic assay that detects unequal SCE, it was previously reported that Rad51 is not required for spontaneous SCE.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a genetic assay that detects unequal SCE, it was previously reported that Rad51 is not required for spontaneous SCE (Fasullo et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fasullo et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "f136599d-a5b6-4d95-8d49-610815fa286c",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C67",
+      "claim": "The effect of rad51\u2206 and rad52-Y66A on SCE is restricted to outside of the rDNA locus (3.2-fold [p=0.002] and 15-fold [p<10\u22126] reduction, respectively, compared to wild type).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the effect of rad51\u2206 and rad52-Y66A on SCE is restricted to outside of the rDNA locus (3.2-fold [p=0.002] and 15-fold [p<10\u22126] reduction, respectively, compared to wild type; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "3536ef0f-e091-4cd5-a374-cc57d1d0a5a9",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C68",
+      "claim": "Within the rDNA locus, SCE in rad51\u2206 and rad52-Y66A is not significantly altered (p=0.48 and p=0.71, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the rDNA locus, SCE in rad51\u2206 and rad52-Y66A is not significantly altered (p=0.48 and p=0.71, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "229cba24-e57b-4bcd-b420-9e9c9024af49",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C69",
+      "claim": "Spontaneous Holliday junction formation within the rDNA locus is dependent on Rad52, but not Rad51.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with a previous study showing that spontaneous Holliday junction formation within the rDNA locus is dependent on Rad52, but not Rad51 (Zou and Rothstein, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zou and Rothstein, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "cf999df4-8511-4b4a-9315-2280f9034a7e",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C70",
+      "claim": "Rad52 may have a function independent of Rad51 and strand annealing at the rDNA locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the evidence suggests that Rad52 may have a function independent of Rad51 and strand annealing at the rDNA locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the experimental data and previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "d1498149-df34-489c-8834-5fd3714692aa",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C71",
+      "claim": "Spontaneous DSB rate can be estimated by the rate of cell death in a rad52\u2206 mutant, which cannot repair DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous DSB rate can be estimated by the rate of cell death in a rad52\u2206 mutant, which cannot repair DSBs (Co\u00efc et al., 2008; Mehta and Haber, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Co\u00efc et al., 2008 and Mehta and Haber, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "9069b149-bc57-40f5-afdc-bd7a8f361619",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C72",
+      "claim": "A single unrepaired DSB is sufficient to kill a rad52 mutant cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A single unrepaired DSB is sufficient to kill a rad52 mutant cell (Weiffenbach and Haber, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Weiffenbach and Haber, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "5ed0a636-d54d-44a3-9461-db1c63841602",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C73",
+      "claim": "The mortality rate of the rad52\u2206 strain was found to be 12% per cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we used the mortality rate of our rad52\u2206 strain to estimate the rate of spontaneous DSB formation, which we found to be 12% per cell division (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "adc3cc1f-15f6-44d2-ba5a-ed9aaab16271",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C74",
+      "claim": "Using direct-repeat recombination assays to detect unequal SCR events, one quarter of spontaneous (two of eight recombinants) and one third of X-ray-induced (four of 12 recombinants) SCR events were found to be accompanied by a crossover.",
+      "claim_type": "EXPLICIT",
+      "source": "Using direct-repeat recombination assays to detect unequal SCR events, one quarter of spontaneous (two of eight recombinants) and one third of X-ray-induced (four of 12 recombinants) SCR events were found to be accompanied by a crossover (Jackson and Fink, 1981; Kadyk and Hartwell, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jackson and Fink, 1981 and Kadyk and Hartwell, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "7072f960-9198-49b0-a317-af1abc737f91",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C75",
+      "claim": "If all spontaneous SCE events are the result of DSB repair, the rate of spontaneous SCE should be 3\u20134%.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if all spontaneous SCE events are the result of DSB repair, the rate of spontaneous SCE should be 3\u20134%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the DSB rate and the proportion of SCR events that result in crossovers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "1294ecd4-95d8-4fd0-bc91-81781375d29a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C76",
+      "claim": "20% (43 out of 218, 95% CI [15%, 26%]) of wild-type Strand-seq libraries have at least one SCE not at the rDNA locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this 3\u20134% upper limit, we find that 20% (43 out of 218, 95% CI [15%, 26%]) of wild-type Strand-seq libraries have at least one SCE not at the rDNA locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "85a27d4b-edf7-4c55-b6b1-090cc664e584",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C77",
+      "claim": "A DSB in the rDNA locus can be repaired by single-strand annealing in the absence of Rad52 due to the highly repetitive nature of the locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We exclude SCE events that map to the rDNA locus because a DSB in the rDNA locus can be repaired by single-strand annealing in the absence of Rad52 due to the highly repetitive nature of the locus (Ozenberger and Roeder, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ozenberger and Roeder, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "5675d901-ce36-48fc-89c0-1ec25acc95c4",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C78",
+      "claim": "Cells lacking both Sgs1 and the structure-specific endonuclease Mus81 are inviable, but this lethality can be suppressed by mutations in the RAD52 epistasis group.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cells lacking both Sgs1 and the structure-specific endonuclease Mus81 are inviable, but this lethality can be suppressed by mutations in the RAD52 epistasis group (i.e. RAD51, RAD52, RAD54, RAD55, and RAD57), indicating that mus81\u2206 sgs1\u2206 synthetic lethality is due to a toxic recombination intermediate (Fabre et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fabre et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "a7920239-65a8-4039-8208-d9264e823b03",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C79",
+      "claim": "mus81\u2206 sgs1\u2206 synthetic lethality is due to a toxic recombination intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cells lacking both Sgs1 and the structure-specific endonuclease Mus81 are inviable, but this lethality can be suppressed by mutations in the RAD52 epistasis group (i.e. RAD51, RAD52, RAD54, RAD55, and RAD57), indicating that mus81\u2206 sgs1\u2206 synthetic lethality is due to a toxic recombination intermediate (Fabre et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation to Fabre et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "e3fad6f6-e0a2-4cb6-8686-c705871c95a1",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C80",
+      "claim": "The toxic recombination intermediate in mus81\u2206 sgs1\u2206 cells cannot be initiated by a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Rad52 is required for the repair of DSBs, Fabre and colleagues argued that the toxic recombination intermediate cannot be initiated by a DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the role of Rad52 in DSB repair.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "4c872d77-9418-4033-92c1-8a06254d05e8",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C81",
+      "claim": "Cells lacking Top3 or Rmi1 grow very poorly, but this slow growth can be suppressed by mutations in SGS1 or the members of the RAD52 epistasis group.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cells lacking Top3 or Rmi1 grow very poorly, but this slow growth can be suppressed by mutations in SGS1 or the members of the RAD52 epistasis group, supporting a model where Rad52 and Sgs1 function in a pathway to repair a spontaneous non-DSB lesion, in the process creating a toxic recombination intermediate requiring Top3 and Rmi1 to resolve (Gangloff et al., 1994; Shor et al., 2002; Chang et al., 2005; Mullen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "baf78e5b-c762-49fa-9181-19a867493e9b",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C82",
+      "claim": "Rad52 and Sgs1 function in a pathway to repair a spontaneous non-DSB lesion, in the process creating a toxic recombination intermediate requiring Top3 and Rmi1 to resolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cells lacking Top3 or Rmi1 grow very poorly, but this slow growth can be suppressed by mutations in SGS1 or the members of the RAD52 epistasis group, supporting a model where Rad52 and Sgs1 function in a pathway to repair a spontaneous non-DSB lesion, in the process creating a toxic recombination intermediate requiring Top3 and Rmi1 to resolve (Gangloff et al., 1994; Shor et al., 2002; Chang et al., 2005; Mullen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "72ea47ae-53ac-428e-a595-e963304478f1",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C83",
+      "claim": "rad52 class C mutants, which are defective in Rad52-mediated strand annealing and spontaneous SCE, cannot suppress mus81\u2206 sgs1\u2206 synthetic lethality or rmi1\u2206 slow growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike rad51\u2206 and rad52\u2206, which can suppress the synthetic lethality of mus81\u2206 sgs1\u2206 and the slow growth of rmi1\u2206 (Fabre et al., 2002; Chang et al., 2005), we find that rad52 class C mutants, which are defective in Rad52-mediated strand annealing (Shi et al., 2009) and spontaneous SCE (Figure 2A and B), cannot suppress either phenotype (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "43e90cfc-6dbb-4606-8880-4d59d63a0804",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C84",
+      "claim": "The DNA lesion(s) that cause mus81\u2206 sgs1\u2206 synthetic lethality and rmi1\u2206 slow growth are different than the DNA lesion(s) that cause spontaneous SCE in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the DNA lesion(s) that cause mus81\u2206 sgs1\u2206 synthetic lethality and rmi1\u2206 slow growth are different than the DNA lesion(s) that cause spontaneous SCE in wild-type cells, and that HR is important to repair multiple types of endogenous DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "280ca874-5426-4702-83fd-1b09db60701b",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C85",
+      "claim": "HR is important to repair multiple types of endogenous DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the DNA lesion(s) that cause mus81\u2206 sgs1\u2206 synthetic lethality and rmi1\u2206 slow growth are different than the DNA lesion(s) that cause spontaneous SCE in wild-type cells, and that HR is important to repair multiple types of endogenous DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "367e88e9-3739-433e-981d-9292cb075d95",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C86",
+      "claim": "The majority of spontaneous SCE events in wild-type cells are not the result of DSB repair.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have used Strand-seq to measure SCE genome-wide in individual yeast cells. We provide evidence that the majority of spontaneous SCE events in wild-type cells are not the result of DSB repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "fbd8e8ae-9c5c-468b-a1f0-ec991fd87feb",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C87",
+      "claim": "Non-DSB lesions have been invoked to explain the synthetic lethality of mus81\u2206 sgs1\u2206 and sgs1\u2206 srs2\u2206 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-DSB lesions have also been invoked to explain the synthetic lethality of mus81\u2206 sgs1\u2206 and sgs1\u2206 srs2\u2206 mutants (Fabre et al., 2002) and the proficiency of rad52 class C mutants for spontaneous inter- and intrachromosomal heteroallelic HR (Lettier et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fabre et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "1e559248-bdb0-410a-8f2d-e7c52a24013a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C88",
+      "claim": "rad52 class C mutants are proficient for spontaneous inter- and intrachromosomal heteroallelic HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-DSB lesions have also been invoked to explain the synthetic lethality of mus81\u2206 sgs1\u2206 and sgs1\u2206 srs2\u2206 mutants (Fabre et al., 2002) and the proficiency of rad52 class C mutants for spontaneous inter- and intrachromosomal heteroallelic HR (Lettier et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lettier et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "de83fe86-a283-4608-8aff-961eec14bc73",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C89",
+      "claim": "While the strand annealing activity of Rad52 is important for spontaneous SCE, it is not in other noted instances of spontaneous HR, indicating that there must be at least two types of endogenous non-DSB lesions processed by HR.",
+      "claim_type": "EXPLICIT",
+      "source": "While the strand annealing activity of Rad52 is important for spontaneous SCE, it is not in the other noted instances of spontaneous HR, indicating that there must be at least two types of endogenous non-DSB lesions processed by HR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "623fafd9-87f2-4d25-bce0-e9779a0347ed",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C90",
+      "claim": "These lesions could be single-stranded nicks or gaps, as proposed in many of the original models for HR.",
+      "claim_type": "EXPLICIT",
+      "source": "These lesions could be single-stranded nicks or gaps, as proposed in many of the original models for HR (Holliday, 1964; Meselson and Radding, 1975; Radding, 1982), or other type of structures interfering with strand-specific replication (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative statement supported by citations to classic HR models.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "67ef6766-917a-4e06-8126-48abc99d87f0",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C91",
+      "claim": "It is well known that single-stranded gaps can initiate recombination in Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is well known that single-stranded gaps can initiate recombination in Escherichia coli (Persky and Lovett, 2008) and that fork collapse at the polar replication fork barrier RTS1 in Schizosaccharomyces pombe induces HR-dependent replication restart from a single-stranded gap (Lambert et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Persky and Lovett, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "fe312478-2b82-45f4-949d-3641da333345",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C92",
+      "claim": "Fork collapse at the polar replication fork barrier RTS1 in Schizosaccharomyces pombe induces HR-dependent replication restart from a single-stranded gap.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is well known that single-stranded gaps can initiate recombination in Escherichia coli (Persky and Lovett, 2008) and that fork collapse at the polar replication fork barrier RTS1 in Schizosaccharomyces pombe induces HR-dependent replication restart from a single-stranded gap (Lambert et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lambert et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "39d5e4a6-e49d-46fc-b806-20a2382c2a8d",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C93",
+      "claim": "The importance of strand annealing for spontaneous SCE is reminiscent of recombination involving inverted repeats, which requires Rad52 but is only modestly reduced by deletion of RAD51.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of strand annealing for spontaneous SCE is reminiscent of recombination involving inverted repeats, which requires Rad52 but is only modestly reduced by deletion of RAD51 (Rattray and Symington, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rattray and Symington, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "f9d63688-dbcc-4c73-a46a-b94cd4147d1e",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C94",
+      "claim": "Rad59, which augments the strand annealing function of Rad52, is required for spontaneous recombination of inverted repeats in the absence of Rad51.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad59, which augments the strand annealing function of Rad52 (Petukhova et al., 1999; Davis and Symington, 2001; Wu et al., 2006), is required for spontaneous recombination of inverted repeats in the absence of Rad51 (Bai and Symington, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bai and Symington, 1996 and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "e85853a2-bafc-47f2-80be-e608f20e6e14",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C95",
+      "claim": "It has been proposed that recombination involving inverted repeats occurs by template switching during DNA replication in a manner involving strand annealing.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that these events occur by template switching during DNA replication in a manner involving strand annealing (Mott and Symington, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mott and Symington, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "48573f13-7b82-4fea-8184-ca8778ed42f9",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C96",
+      "claim": "Poly-ubiquitylation of PCNA by the Mms2-Ubc13-Rad5 ubiquitin conjugating enzyme complex promotes repair through the error-free post-replication repair pathway, which is thought to involve template switching.",
+      "claim_type": "EXPLICIT",
+      "source": "Poly-ubiquitylation of PCNA by the Mms2-Ubc13-Rad5 ubiquitin conjugating enzyme complex promotes repair through the error-free post-replication repair pathway, which is thought to involve template switching (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "075c3e52-2a74-4273-9ad9-9d5b948b17df",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C97",
+      "claim": "Rad5 and Rad18 were found to have only a minor role in inverted-repeat recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad5 and Rad18 were found to have only a minor role in inverted-repeat recombination (Mott and Symington, 2011), and the rates of spontaneous SCE in mms2\u2206, ubc13\u2206, and rad5\u2206 mutants are similar to wild type, as measured by an unequal SCE assay (Fasullo and Sun, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mott and Symington, 2011 and Fasullo and Sun, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "2b0f05cc-453e-4141-bb39-343e0ae78844",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C98",
+      "claim": "The rates of spontaneous SCE in mms2\u2206, ubc13\u2206, and rad5\u2206 mutants are similar to wild type, as measured by an unequal SCE assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad5 and Rad18 were found to have only a minor role in inverted-repeat recombination (Mott and Symington, 2011), and the rates of spontaneous SCE in mms2\u2206, ubc13\u2206, and rad5\u2206 mutants are similar to wild type, as measured by an unequal SCE assay (Fasullo and Sun, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fasullo and Sun, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "e299d445-55bb-4b8c-a5c6-1298e416ca1a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C99",
+      "claim": "Template switching has been proposed to occur differently depending on whether the DNA lesion is on the leading strand template or the lagging strand template, with lesion bypass on the leading strand utilizing Rad5 while lesion bypass on the lagging strand mediated by Rad52.",
+      "claim_type": "EXPLICIT",
+      "source": "However, template switching has been proposed to occur differently depending on whether the DNA lesion is on the leading strand template or the lagging strand template, with lesion bypass on the leading strand utilizing Rad5 while lesion bypass on the lagging strand mediated by Rad52 (Gangavarapu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gangavarapu et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "03d823ed-e778-4b7b-b3d0-8d0453070860",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C100",
+      "claim": "Multiple spontaneous SCE events were mapped to the rDNA locus because of its large size (approximately 10% of the genome).",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to map multiple spontaneous SCE events to the rDNA locus because of its large size (approximately 10% of the genome).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why the rDNA locus was amenable to mapping SCE events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "a4863479-0010-4218-b0dd-f7330c0eb491",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C101",
+      "claim": "Recombination within the rDNA locus is important to maintain repeat homogeneity and copy number homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its repetitive nature, the rDNA locus has been an excellent substrate for studying HR. Recombination within the locus is important to maintain repeat homogeneity and copy number homeostasis (Kobayashi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kobayashi, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "49495213-6e9e-4984-a1ce-254375e07f69",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C102",
+      "claim": "An SCE event occurs at the rDNA locus in only 6.4% (14 out of 218) of wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, an SCE event occurs at the rDNA locus in only 6.4% (14 out of 218) of wild-type cells (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "26e72bc0-fc2c-4181-9c67-3722ad4eae9a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C103",
+      "claim": "It has been estimated that a single cell has on average 3.6 Holliday junctions and one DSB within the rDNA array per cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that it has been estimated that a single cell has on average 3.6 Holliday junctions and one DSB within the rDNA array per cell cycle (Zou and Rothstein, 1997; Sasaki and Kobayashi, 2017), our data indicate that the vast majority of HR events at the rDNA locus do not result in crossovers, in agreement with previous work showing that HR at the rDNA locus is largely rearrangement-free (Zou and Rothstein, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zou and Rothstein, 1997 and Sasaki and Kobayashi, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "91325ff0-780f-4c9e-b093-f09c9824b6b4",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C104",
+      "claim": "The vast majority of HR events at the rDNA locus do not result in crossovers.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that it has been estimated that a single cell has on average 3.6 Holliday junctions and one DSB within the rDNA array per cell cycle (Zou and Rothstein, 1997; Sasaki and Kobayashi, 2017), our data indicate that the vast majority of HR events at the rDNA locus do not result in crossovers, in agreement with previous work showing that HR at the rDNA locus is largely rearrangement-free (Zou and Rothstein, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's data and previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "1c52cc2a-fd66-4aab-8f6d-1ae5f49f3028",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C105",
+      "claim": "HR at the rDNA locus is largely rearrangement-free.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that it has been estimated that a single cell has on average 3.6 Holliday junctions and one DSB within the rDNA array per cell cycle (Zou and Rothstein, 1997; Sasaki and Kobayashi, 2017), our data indicate that the vast majority of HR events at the rDNA locus do not result in crossovers, in agreement with previous work showing that HR at the rDNA locus is largely rearrangement-free (Zou and Rothstein, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zou and Rothstein, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "98791294-7c77-4805-bdb2-02622afe9e4a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C106",
+      "claim": "Strand-seq could in theory be used to detect break-induced replication (BIR) events involving sister chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to SCE, Strand-seq could in theory be used to detect break-induced replication (BIR) events involving sister chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of Strand-seq.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "f2706f69-2811-46c9-b852-89e6ab77e69a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C107",
+      "claim": "BIR occurs when one end of a DSB invades an intact homologous DNA sequence to generate a replication fork that can potentially proceed to the end of the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "BIR occurs when one end of a DSB invades an intact homologous DNA sequence to generate a replication fork that can potentially proceed to the end of the chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BIR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "f229b69e-0d0c-46ec-967d-a0caeba02cd0",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C108",
+      "claim": "Unlike canonical DNA replication, which is semi-conservative, BIR occurs by conservative DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike canonical DNA replication, which is semi-conservative, BIR occurs by conservative DNA synthesis (Donnianni and Symington, 2013; Saini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Donnianni and Symington, 2013 and Saini et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "59dd5a74-53d0-4f0e-b0d4-433082555e90",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C109",
+      "claim": "With Strand-seq, a chromosomal region synthesized by BIR could either have no Watson or Crick reads (i.e. both Watson and Crick strands are newly synthesized) or both Watson and Crick reads (i.e. both Watson and Crick strands consist of the original parental template strands).",
+      "claim_type": "EXPLICIT",
+      "source": "With Strand-seq, a chromosomal region synthesized by BIR could either have no Watson or Crick reads (i.e. both Watson and Crick strands are newly synthesized) or both Watson and Crick reads (i.e. both Watson and Crick strands consist of the original parental template strands).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how BIR would appear in Strand-seq data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "5755637f-e148-4b42-9724-1cb59f7923cf",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C110",
+      "claim": "Application of Strand-seq in yeast will be particularly advantageous to address questions about various types of DNA lesions and replication stress-inducing barriers at specific locations in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of Strand-seq in yeast will be particularly advantageous to address questions about various types of DNA lesions and replication stress-inducing barriers at specific locations in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications of Strand-seq.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "ea947397-89db-4eb9-b666-845fd97f9c1f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C111",
+      "claim": "Strains used in this study are all RAD5 derivatives of W303.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains used in this study are listed in Table 2 and are all RAD5 derivatives of W303 (Thomas and Rothstein, 1989; Zhao et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genetic background of the strains used, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "8b6fa1b2-638a-44c8-898e-8f0cf6afc14f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C112",
+      "claim": "The E17 strain was derived from YLV11.",
+      "claim_type": "EXPLICIT",
+      "source": "The E17 strain was derived from YLV11 (Vernis, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the origin of the E17 strain, supported by a citation to Vernis, 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "faaeda62-7546-4aca-adf5-e4e663eaed96",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C113",
+      "claim": "Two different protocols were used for isolating cells for Strand-seq: one involving sorting single cells, and another involving sorting individual spheroplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point, two different protocols were used: the first involved sorting single cells, while the second involved sorting individual spheroplasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approaches used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "95509caf-069d-4bda-bc05-95a71ddbe8de",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C114",
+      "claim": "Both protocols yielded high quality Strand-seq libraries, with no change in the number of SCE events observed per cell, nor in SCE mapping resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Both protocols yielded high quality Strand-seq libraries, with no change in the number of SCE events observed per cell (Figure 6A), nor in SCE mapping resolution (Figure 6B), but the spheroplast approach proved to be more reliable with less background sequencing reads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of data from the two protocols, shown in Figure 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "0721d61c-b19c-452a-9517-1d8fb3cbad84",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C115",
+      "claim": "The spheroplast approach proved to be more reliable with less background sequencing reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Both protocols yielded high quality Strand-seq libraries, with no change in the number of SCE events observed per cell (Figure 6A), nor in SCE mapping resolution (Figure 6B), but the spheroplast approach proved to be more reliable with less background sequencing reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the two protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "4fa1d1bc-4ab6-4e81-8d4e-f5d0adf049e8",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C116",
+      "claim": "ConA binds to the yeast cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "ConA binds to the yeast cell wall (Tkacz et al., 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tkacz et al., 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "efcc2fdb-f103-45d5-ada4-3a6f18bfe8d4",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C117",
+      "claim": "Newly divided daughter cells can be identified by having 1C DNA content and without ConA labeling, since yeast daughter cells bud off from the original mother cells, synthesizing a new cell wall that is not stained with ConA.",
+      "claim_type": "EXPLICIT",
+      "source": "Newly divided daughter cells can be identified by having 1C DNA content and without ConA labeling, since yeast daughter cells bud off from the original mother cells, synthesizing a new cell wall that is not stained with ConA (Chung et al., 1965; Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Chung et al., 1965 and shown in Figure 7.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "c96f9ca1-ee2f-4684-b345-05f7ca37364a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C118",
+      "claim": "Only libraries with an average read count greater than 20 per megabase of DNA were included in the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Only libraries with an average read count greater than 20 per megabase of DNA were included in the analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a quality control criterion for the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "aad73764-24de-40bc-966c-9d2441a6b2db",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C119",
+      "claim": "SCE events were detected using an R-based package called HapSCElocatoR.",
+      "claim_type": "EXPLICIT",
+      "source": "SCE events were detected using an R-based package called HapSCElocatoR (publicly available through GitHub: https://github.com/daewoooo/HapSCElocatoR; Porubsk\u00fd and Sanders, 2017 ; copy archived at https://github.com/elifesciences-publications/HapSCElocatoR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational tool used for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "f162b616-6fc2-4803-838b-7c1d90dce048",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C120",
+      "claim": "HapSCElocatoR uses circular binary segmentation to localize SCE events in haploid Strand-seq libraries as a change in read directionality from Watson to Crick or vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "HapSCElocatoR uses circular binary segmentation (implemented in the R package fastseg; Klambauer et al., 2012) to localize SCE events in haploid Strand-seq libraries as a change in read directionality from Watson (negative strand) to Crick (positive strand) or vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for SCE detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "87e4c048-4b5b-4b73-a91a-8c042f6bd82a",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C121",
+      "claim": "The mortality rate of CCY193 (rad52\u2206) cells is 13.3% (95% CI [9.9%, 17.4%]).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 408 E17 and 338 CCY193 cells were examined (i.e. 204 E17 and 169 CCY193 mother-daughter pairs). 13.3% (95% CI [9.9%, 17.4%]) of CCY193 cells and 1.7% (95% CI [0.7%, 3.5%]) of E17 cells failed to form a colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the mortality assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "baff0359-5bf2-4f7a-a713-5af899bf38dc",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C122",
+      "claim": "The mortality rate of E17 (wild type) cells is 1.7% (95% CI [0.7%, 3.5%]).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 408 E17 and 338 CCY193 cells were examined (i.e. 204 E17 and 169 CCY193 mother-daughter pairs). 13.3% (95% CI [9.9%, 17.4%]) of CCY193 cells and 1.7% (95% CI [0.7%, 3.5%]) of E17 cells failed to form a colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the mortality assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "db5dd02e-ec13-4145-952e-2a30b867aff3",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C123",
+      "claim": "E17 mortality is unlikely due to unrepaired DSBs, and possibly due to death caused by the micromanipulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "E17 mortality is unlikely due to unrepaired DSBs, and possibly due to death caused by the micromanipulation process, so subtracting this 1.7% 'background' mortality rate from the 13.3% mortality rate of CCY193 cells yields an estimated spontaneous DSB rate of 11.6%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of E17 mortality.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "761f75a3-902b-4695-8a82-5dfe686f12f1",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C124",
+      "claim": "Subtracting the 1.7% 'background' mortality rate from the 13.3% mortality rate of CCY193 cells yields an estimated spontaneous DSB rate of 11.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "E17 mortality is unlikely due to unrepaired DSBs, and possibly due to death caused by the micromanipulation process, so subtracting this 1.7% 'background' mortality rate from the 13.3% mortality rate of CCY193 cells yields an estimated spontaneous DSB rate of 11.6%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the mortality data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "5b3a10a2-8f36-4b4e-b604-00c2c0b42dad",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "claim_id": "C125",
+      "claim": "This mortality rate is similar to the 8.3% previously reported for rad52\u2206 of a different strain background.",
+      "claim_type": "EXPLICIT",
+      "source": "This mortality rate is similar to the 8.3% previously reported for rad52\u2206 of a different strain background (Ozenberger and Roeder, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previously published data, supported by a citation to Ozenberger and Roeder, 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully adapted Strand-seq, a DNA template strand sequencing technique, to detect sister chromatid exchange (SCE) events genome-wide in single yeast cells. The method involves BrdU incorporation during DNA replication, selective degradation of nascent strands, and directional sequencing to detect strand switches indicative of SCE. The adaptation required engineering yeast strains to express dNK and hENT1 for nucleoside uptake, and the authors validated that BrdU incorporation does not artificially induce SCE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C25-C29, C36-C42, and C111-C120 collectively describe the methodological adaptation and validation of Strand-seq for yeast. The experimental controls (C39, C40, C42) demonstrate BrdU does not induce artifacts, and the technical details (C113-C120) show rigorous method development. The validation with hyperrecombinogenic (sgs1\u0394) and recombination-deficient (rad52\u0394) strains (C47, C48) provides strong support for the method's accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "4c471ff0-019c-46c7-9361-762144103780",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using Strand-seq, the authors quantified spontaneous SCE rates in wild-type yeast for the first time genome-wide, finding that 23% of wild-type cells have at least one SCE (0.26 SCE events per cell). They validated the approach by showing increased SCE in sgs1\u0394 cells (p<10\u207b\u2079) and no SCE in rad52\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, C43, C47, and C48 present the core quantitative findings with appropriate statistical support. The validation using known hyperrecombinogenic (sgs1\u0394) and recombination-null (rad52\u0394) mutants provides strong internal controls. The novelty claim (C35) is supported by the genome-wide, single-cell resolution that previous genetic assays could not achieve.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "6c199fdb-ab73-4ec5-bb66-c30fa12185d4",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cross-species comparison reveals that while human and mouse cells have ~10-fold more SCE events per cell than yeast, when normalized to genome size, yeast exhibits ~20-fold higher SCE activity per gigabase of DNA, providing the first direct quantitative comparison of recombination activity across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 present a novel comparative analysis using previously published Strand-seq data from mammalian cells. The normalization by genome size (C50) is methodologically sound and reveals a biologically meaningful difference. The claim of novelty (C51) is justified as this represents the first direct, quantitative cross-species comparison using a uniform methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors provide evidence that most spontaneous SCE events in wild-type cells are not due to DSB repair. They estimated spontaneous DSB rate at ~12% per cell division using rad52\u0394 mortality, and calculated that if all SCE resulted from DSB repair, only 3-4% of cells should have SCE. However, they observed 20% of cells with at least one SCE outside the rDNA locus, suggesting non-DSB lesions initiate most spontaneous SCE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C71-C77, C86, and C121-C125 present a logical argument supported by experimental data. The mortality assay (C121-C125) provides an independent estimate of DSB frequency. The calculation (C75) appropriately uses published crossover frequencies (C74) to derive the expected SCE rate if DSBs were the sole source. The observed rate (C76) significantly exceeds this prediction, supporting the conclusion. However, the calculation assumes all DSBs are repaired by SCR with the same crossover frequency, which may be an oversimplification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "7b1c6b85-9860-459d-8166-34c8d5f4f784",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The strand annealing function of Rad52 is more important than its Rad51-loading function for spontaneous SCE. SCE is reduced 1.7-fold in rad51\u0394 cells (p=0.058) and 4.5-fold in rad52-Y66A cells (p<10\u207b\u2074), with effects restricted to regions outside the rDNA locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 present experimental data with appropriate statistical analysis. The differential effects of rad51\u0394 and rad52-Y66A mutations (C63, C64) support the conclusion about Rad52 function. The spatial restriction to non-rDNA regions (C67, C68) adds biological insight. However, the p-value for rad51\u0394 (p=0.058) is marginally non-significant, which weakens but does not invalidate the conclusion given the magnitude of effect and consistency with rad52-Y66A data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "f7bedc91-454f-481a-be2a-b510e3f30416",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SCE events at the ribosomal DNA (rDNA) locus occur at a ~3-fold higher rate per gigabase than the rest of the genome, likely due to replication fork barriers. Despite high recombination activity (estimated 3.6 Holliday junctions and 1 DSB per cell cycle), only 6.4% of cells show SCE at the rDNA, indicating most HR events do not result in crossovers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 and C100-C105 present consistent findings about rDNA recombination. The elevated SCE rate (C55) is well-supported by data (C54) and the mechanistic explanation (C57) is appropriately cited. The inference that most HR events are non-crossovers (C104) is logically derived from comparing observed SCE frequency (C102) with estimated recombination intermediates (C103). The mapping resolution limitation (C52) is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "a8f51d72-68a8-4242-b92e-96c14052149d",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The DNA lesions causing spontaneous SCE in wild-type cells are distinct from those causing mus81\u0394 sgs1\u0394 synthetic lethality and rmi1\u0394 slow growth. While rad51\u0394 and rad52\u0394 suppress these phenotypes, rad52 class C mutants (defective in strand annealing and spontaneous SCE) cannot, indicating HR repairs multiple types of endogenous non-DSB lesions through different mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C85 and C87-C89 present a genetic epistasis analysis that logically distinguishes different types of DNA lesions. The key observation (C83) that rad52 class C mutants cannot suppress mus81\u0394 sgs1\u0394 lethality or rmi1\u0394 slow growth, despite being defective in spontaneous SCE, provides strong evidence for distinct lesion types. The inference (C84, C85, C89) is well-supported by the genetic data and appropriately cautious in proposing at least two types of non-DSB lesions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "36280008-f1b2-4263-b76d-0b71c6887879",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that spontaneous SCE may result from single-stranded gaps or nicks, similar to recombination involving inverted repeats. The importance of Rad52 strand annealing for spontaneous SCE resembles inverted repeat recombination, which requires Rad52 but is only modestly reduced by rad51\u0394. Template switching during replication, potentially mediated by Rad52 on the lagging strand, is proposed as a mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C99 present speculative mechanistic models supported by analogies to other systems (E. coli, S. pombe, inverted repeat recombination). While the parallels are interesting and appropriately cited (C91-C99), the direct evidence linking these mechanisms to the observed spontaneous SCE in yeast is limited. The proposal is reasonable but requires additional experimental validation. The negative results with Rad5 pathway mutants (C97, C98) provide some constraints but do not definitively establish the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "f756cc42-e960-46ba-9996-0ecc5f30a68f",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that Strand-seq could theoretically detect break-induced replication (BIR) events involving sister chromatids, which would appear as regions with either no reads or both Watson and Crick reads due to conservative DNA synthesis. They suggest Strand-seq in yeast will be advantageous for studying DNA lesions and replication stress at specific genomic locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106-C110 are entirely speculative about future applications. While the theoretical reasoning about BIR detection (C109) is sound based on the conservative nature of BIR synthesis (C108), no experimental evidence is presented. These are reasonable proposals for future work but do not constitute supported results from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide background on homologous recombination, sister chromatid exchange, and limitations of existing genetic assays. They establish that sister chromatid recombination is the preferred form of HR in mitotic cells, that SCE is difficult to detect due to lack of sequence changes, and that yeast is an advantageous model system for studying HR mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C7-C15, C17-C24, and C30-C33 present well-established background knowledge appropriately supported by citations. These claims provide necessary context for the study but do not represent novel findings. The limitations of genetic assays (C18-C24) are accurately described and justify the need for the Strand-seq approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    },
+    {
+      "id": "4f7846c8-0739-4271-882a-9e9d7d260785",
+      "content_id": "4f7fd92f-c21a-4795-9214-057dc7ed6592",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Rad52 has two main biochemical functions: mediating RPA-to-Rad51 exchange for strand invasion and facilitating strand annealing independent of Rad51. The rad52-Y66A class C mutant is defective in strand annealing. At the rDNA locus, Rad52 may have a function independent of both Rad51 and strand annealing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 and C69 present well-established knowledge about Rad52 function supported by appropriate citations. The speculation about Rad52 function at the rDNA locus (C70) is appropriately cautious and based on the observation that SCE at rDNA is unaffected by rad51\u0394 or rad52-Y66A (C68), combined with prior work (C69). This is a reasonable inference but requires further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:29:17.548928Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05ea2d73-bd38-41a5-9f87-dec243f9046d",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "c5c4f151-3def-46e0-8954-ac85b5c02853",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "7de324ee-8565-4361-98c3-aedc7478a260",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "6133b8cd-7017-41bb-be40-48b03edfbba7",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "9bc35943-b13e-46c1-9231-62c738259bdb",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "6753609d-9f9d-4d6d-b0a4-615c221ceef2",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "35906fc4-1816-4ed9-b0ff-997abfd4ad2c",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "14178fc5-c8dd-4722-9992-a2ae9b849773",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "98fc28e0-01cc-4c2a-aaf5-b6734d5d204f",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "56f2855a-a056-48aa-9b18-87b05961f839",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "9cb3be67-91a6-4743-85f0-569e41c8ea24",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "fb38f08d-5fca-46b5-8cf4-f5e0b4f1b08b",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "ea947397-89db-4eb9-b666-845fd97f9c1f",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "8b6fa1b2-638a-44c8-898e-8f0cf6afc14f",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "faaeda62-7546-4aca-adf5-e4e663eaed96",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "95509caf-069d-4bda-bc05-95a71ddbe8de",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "0721d61c-b19c-452a-9517-1d8fb3cbad84",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "4fa1d1bc-4ab6-4e81-8d4e-f5d0adf049e8",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "efcc2fdb-f103-45d5-ada4-3a6f18bfe8d4",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "c96f9ca1-ee2f-4684-b345-05f7ca37364a",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "aad73764-24de-40bc-966c-9d2441a6b2db",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "f162b616-6fc2-4803-838b-7c1d90dce048",
+      "result_id": "4afea9bf-1d14-4c52-a1b0-7fc21d827b54"
+    },
+    {
+      "claim_id": "9b6b241b-9a66-46bb-9e19-58f155c650a7",
+      "result_id": "4c471ff0-019c-46c7-9361-762144103780"
+    },
+    {
+      "claim_id": "a5081b4c-00af-49a2-95d3-ad10b62c19b1",
+      "result_id": "4c471ff0-019c-46c7-9361-762144103780"
+    },
+    {
+      "claim_id": "5d642d66-244d-4ece-aeb6-53dd7c0d8596",
+      "result_id": "4c471ff0-019c-46c7-9361-762144103780"
+    },
+    {
+      "claim_id": "75aa8172-ff9a-4296-bed9-c7f7834a683c",
+      "result_id": "4c471ff0-019c-46c7-9361-762144103780"
+    },
+    {
+      "claim_id": "ca704959-2fe6-4199-b178-11d683897c3f",
+      "result_id": "4c471ff0-019c-46c7-9361-762144103780"
+    },
+    {
+      "claim_id": "9906269b-49d4-4726-b005-996e10df02b2",
+      "result_id": "6c199fdb-ab73-4ec5-bb66-c30fa12185d4"
+    },
+    {
+      "claim_id": "9ea861ff-e135-48ee-8719-351c9dcc49d9",
+      "result_id": "6c199fdb-ab73-4ec5-bb66-c30fa12185d4"
+    },
+    {
+      "claim_id": "2815bbe3-8026-456c-9770-80884190ea46",
+      "result_id": "6c199fdb-ab73-4ec5-bb66-c30fa12185d4"
+    },
+    {
+      "claim_id": "26be3d6b-f746-431b-87d6-2d22cfe4901f",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "d1498149-df34-489c-8834-5fd3714692aa",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "9069b149-bc57-40f5-afdc-bd7a8f361619",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "5ed0a636-d54d-44a3-9461-db1c63841602",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "adc3cc1f-15f6-44d2-ba5a-ed9aaab16271",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "7072f960-9198-49b0-a317-af1abc737f91",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "1294ecd4-95d8-4fd0-bc91-81781375d29a",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "85a27d4b-edf7-4c55-b6b1-090cc664e584",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "367e88e9-3739-433e-981d-9292cb075d95",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "87e4c048-4b5b-4b73-a91a-8c042f6bd82a",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "baff0359-5bf2-4f7a-a713-5af899bf38dc",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "db5dd02e-ec13-4145-952e-2a30b867aff3",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "761f75a3-902b-4695-8a82-5dfe686f12f1",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "5b3a10a2-8f36-4b4e-b604-00c2c0b42dad",
+      "result_id": "c41ecac8-b773-4666-9e7f-b4f46c6164bc"
+    },
+    {
+      "claim_id": "9cac8334-c0fa-4916-b8b3-51fdef025175",
+      "result_id": "7b1c6b85-9860-459d-8166-34c8d5f4f784"
+    },
+    {
+      "claim_id": "36fd32b9-8a5c-43d2-a293-4ed01a909717",
+      "result_id": "7b1c6b85-9860-459d-8166-34c8d5f4f784"
+    },
+    {
+      "claim_id": "56311f58-9c78-4d66-9cf2-c71bd195e22d",
+      "result_id": "7b1c6b85-9860-459d-8166-34c8d5f4f784"
+    },
+    {
+      "claim_id": "78bcaf37-2043-4887-9278-11ae018822e6",
+      "result_id": "7b1c6b85-9860-459d-8166-34c8d5f4f784"
+    },
+    {
+      "claim_id": "f136599d-a5b6-4d95-8d49-610815fa286c",
+      "result_id": "7b1c6b85-9860-459d-8166-34c8d5f4f784"
+    },
+    {
+      "claim_id": "3536ef0f-e091-4cd5-a374-cc57d1d0a5a9",
+      "result_id": "7b1c6b85-9860-459d-8166-34c8d5f4f784"
+    },
+    {
+      "claim_id": "e5bdb561-6010-4401-bf6b-23b9f87a069c",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "79514afb-d868-4fbd-8bae-83903a624cce",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "61b6b497-b012-4b6c-b537-cd5e0c73673c",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "2d926839-ce7e-4fac-a3e5-9805ac31ed49",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "962a9eba-a703-4981-9b9f-79e3928c37e4",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "ee673b60-3bc4-4732-9495-f66199f0e203",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "03d823ed-e778-4b7b-b3d0-8d0453070860",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "a4863479-0010-4218-b0dd-f7330c0eb491",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "49495213-6e9e-4984-a1ce-254375e07f69",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "26e72bc0-fc2c-4181-9c67-3722ad4eae9a",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "91325ff0-780f-4c9e-b093-f09c9824b6b4",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "1c52cc2a-fd66-4aab-8f6d-1ae5f49f3028",
+      "result_id": "f7bedc91-454f-481a-be2a-b510e3f30416"
+    },
+    {
+      "claim_id": "5675d901-ce36-48fc-89c0-1ec25acc95c4",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "a7920239-65a8-4039-8208-d9264e823b03",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "e3fad6f6-e0a2-4cb6-8686-c705871c95a1",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "4c872d77-9418-4033-92c1-8a06254d05e8",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "baf78e5b-c762-49fa-9181-19a867493e9b",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "72ea47ae-53ac-428e-a595-e963304478f1",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "43e90cfc-6dbb-4606-8880-4d59d63a0804",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "280ca874-5426-4702-83fd-1b09db60701b",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "fbd8e8ae-9c5c-468b-a1f0-ec991fd87feb",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "1e559248-bdb0-410a-8f2d-e7c52a24013a",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "de83fe86-a283-4608-8aff-961eec14bc73",
+      "result_id": "a8f51d72-68a8-4242-b92e-96c14052149d"
+    },
+    {
+      "claim_id": "623fafd9-87f2-4d25-bce0-e9779a0347ed",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "67ef6766-917a-4e06-8126-48abc99d87f0",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "fe312478-2b82-45f4-949d-3641da333345",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "39d5e4a6-e49d-46fc-b806-20a2382c2a8d",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "f9d63688-dbcc-4c73-a46a-b94cd4147d1e",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "e85853a2-bafc-47f2-80be-e608f20e6e14",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "48573f13-7b82-4fea-8184-ca8778ed42f9",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "075c3e52-2a74-4273-9ad9-9d5b948b17df",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "2b0f05cc-453e-4141-bb39-343e0ae78844",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "e299d445-55bb-4b8c-a5c6-1298e416ca1a",
+      "result_id": "36280008-f1b2-4263-b76d-0b71c6887879"
+    },
+    {
+      "claim_id": "98791294-7c77-4805-bdb2-02622afe9e4a",
+      "result_id": "f756cc42-e960-46ba-9996-0ecc5f30a68f"
+    },
+    {
+      "claim_id": "f2706f69-2811-46c9-b852-89e6ab77e69a",
+      "result_id": "f756cc42-e960-46ba-9996-0ecc5f30a68f"
+    },
+    {
+      "claim_id": "f229b69e-0d0c-46ec-967d-a0caeba02cd0",
+      "result_id": "f756cc42-e960-46ba-9996-0ecc5f30a68f"
+    },
+    {
+      "claim_id": "59dd5a74-53d0-4f0e-b0d4-433082555e90",
+      "result_id": "f756cc42-e960-46ba-9996-0ecc5f30a68f"
+    },
+    {
+      "claim_id": "5755637f-e148-4b42-9724-1cb59f7923cf",
+      "result_id": "f756cc42-e960-46ba-9996-0ecc5f30a68f"
+    },
+    {
+      "claim_id": "cd21c5c3-999a-4426-8886-9485c445b680",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "e3676265-c01d-4046-a47c-3f3eb38fbf9c",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "abd1aec3-67e1-4e26-9c9c-1958b71fbdd6",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "3aeb5f17-f2d0-4af0-b6e9-13171598e622",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "a9a05fe2-ec03-4d99-9ce3-cfcb460e63b8",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "331fa6f7-9a99-451e-8438-b990b553707e",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "9af1d378-7560-4842-aa4c-ea01ff17101f",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "2d1f36f0-2287-4df5-9113-4eb2b3d77731",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "317237f1-d23f-4875-9317-d70d2b671d27",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "e38fa803-6b17-4054-a031-18a03ee5e38a",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "67a48639-9ce4-4edc-8048-26f7ecec4a4e",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "6c0ccb3e-5e33-4eb0-accc-b86ebeeaf199",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "86805726-9181-4c89-a106-409f3a284907",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "c066666a-ce27-40cc-a21f-bbb36d4388cc",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "a8f26684-9f9c-4ca8-ac06-1abf2e8cd1ab",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "27f46116-3a45-4ab8-bdfb-eab10a7fa5ff",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "d3a6bf8a-dbb0-4eee-94f5-877e8abde72d",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "5933d02c-b8c9-410f-8ea4-af174c12ff8c",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "fccd5bfb-d59d-491e-9177-56ce6b0e8f14",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "aad82615-271d-41b7-9db7-23a32ecc04a7",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "d3c95f16-9713-4e96-8234-f5605dfa0a8b",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "5dcc955e-5210-4504-aa17-5797bbef9d18",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "843ccf47-7555-479e-a348-3c0d9590b3e3",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "1469edcf-4e53-4464-a02f-1a1e2886b41e",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "3bbe02b1-9e2a-41d9-85f8-abcc6702773f",
+      "result_id": "01fd722b-85a0-421d-88aa-7a5c224ec5c7"
+    },
+    {
+      "claim_id": "3a432280-7f85-4ac2-962f-5f1db95cca23",
+      "result_id": "4f7846c8-0739-4271-882a-9e9d7d260785"
+    },
+    {
+      "claim_id": "7e49a7bc-509b-47bf-8286-0222a62b9f72",
+      "result_id": "4f7846c8-0739-4271-882a-9e9d7d260785"
+    },
+    {
+      "claim_id": "edfe9da8-c260-401a-b98c-39172d34a4af",
+      "result_id": "4f7846c8-0739-4271-882a-9e9d7d260785"
+    },
+    {
+      "claim_id": "0fbb736a-6600-4d3e-b9fa-12538d5ae15f",
+      "result_id": "4f7846c8-0739-4271-882a-9e9d7d260785"
+    },
+    {
+      "claim_id": "8a66afff-0237-4133-93a1-8323ffa6d1fe",
+      "result_id": "4f7846c8-0739-4271-882a-9e9d7d260785"
+    },
+    {
+      "claim_id": "229cba24-e57b-4bcd-b420-9e9c9024af49",
+      "result_id": "4f7846c8-0739-4271-882a-9e9d7d260785"
+    },
+    {
+      "claim_id": "cf999df4-8511-4b4a-9315-2280f9034a7e",
+      "result_id": "4f7846c8-0739-4271-882a-9e9d7d260785"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1838 @@
+{
+  "submission": {
+    "id": "103de08c-b542-4ecc-9911-a14c0278ff45",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:35:40.904847Z",
+    "updated_at": "2025-12-01T23:35:40.904847Z"
+  },
+  "content": [
+    {
+      "id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "submission_id": "103de08c-b542-4ecc-9911-a14c0278ff45",
+      "content_type": "manuscript",
+      "content_text": "# Efficient termination of nuclear lncRNA transcription promotes mitochondrial genome maintenance\n\n## Authors\n\n- Dorine Jeanne Mari\u00ebtte du Mee<sup>1</sup> ([ORCID: 0000-0002-0037-7882](https://orcid.org/0000-0002-0037-7882))\n- Maxim Ivanov<sup>1</sup> ([ORCID: 0000-0001-7548-3316](https://orcid.org/0000-0001-7548-3316))\n- Joseph Paul Parker<sup>1</sup>\n- Stephen Buratowski<sup>2</sup> ([ORCID: 0000-0003-0440-3926](https://orcid.org/0000-0003-0440-3926))\n- Sebastian Marquardt<sup>1</sup> ([ORCID: 0000-0003-1709-2717](https://orcid.org/0000-0003-1709-2717)) \u2020\n\n### Affiliations\n\n1. Department of Plant and Environmental Sciences, Copenhagen Plant Science Centre University of Copenhagen Frederiksberg Denmark\n2. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost DNA in the genomes of higher organisms does not code for proteins. RNA Polymerase II (Pol II) transcribes non-coding DNA into long non-coding RNAs (lncRNAs), but biological roles of lncRNA are unclear. We find that mutations in the yeast lncRNA CUT60 result in poor growth. Defective termination of CUT60 transcription causes read-through transcription across the ATP16 gene promoter. Read-through transcription localizes chromatin signatures associated with Pol II elongation to the ATP16 promoter. The act of Pol II elongation across this promoter represses functional ATP16 expression by a Transcriptional Interference (TI) mechanism. Atp16p function in the mitochondrial ATP-synthase complex promotes mitochondrial DNA stability. ATP16 repression by TI through inefficient termination of CUT60 therefore triggers mitochondrial genome loss. Our results expand the functional and mechanistic implications of non-coding DNA in eukaryotes by highlighting termination of nuclear lncRNA transcription as mechanism to stabilize an organellar genome.\n\n## Introduction\n\nRNA Polymerase II (Pol II) transcribes protein-coding DNA sequences into mRNA. Pol II also transcribes many non-coding DNA (ncDNA) sequences into long non-coding RNA (lncRNA) molecules (Ponting et al., 2009). ncDNA sequences vastly outnumber protein coding DNA sequences in most eukaryotic genomes. Genome-wide Pol II activity at ncDNA is referred to as \u2018pervasive transcription\u2019 of eukaryotic genomes (Jensen et al., 2013). The purpose of pervasive transcription is currently unclear. The \u2018transcriptional noise\u2019 hypothesis postulates that widespread Pol II transcription of ncDNA is a by-product of promiscuous Pol II activity and may often not be functionally relevant (Struhl, 2007). Indeed, the expression levels of lncRNA are generally lower than those of genes (Schlackow et al., 2017). Reasons for low expression levels of lncRNA include a combination of tissue-specific expression and targeted lncRNA degradation (Deveson et al., 2017; Jensen et al., 2013).\n\nMeasurements of nascent Pol II transcription reveal that lncRNA transcription can be strong, for example divergent lncRNA transcription from gene promoters (Churchman and Weissman, 2011). The strength of divergent lncRNA transcription is actively regulated at the level of initiation through chromatin-based mechanisms (Marquardt et al., 2014). Profiling RNA expression in RNA decay pathway mutants supports the view that nascent lncRNA transcription is often stronger than expected based on steady-state RNA measurements in wild type (Jensen et al., 2013). The regulation of lncRNA levels through targeted RNA decay and at the level of initiation argue that lncRNA levels in cells are carefully balanced. However, some intensely characterized human lncRNA such as H19, Xist, NORAD and Malat1 represent relatively stable lncRNA molecules (Schlackow et al., 2017). As a class, lncRNA molecules are poorly conserved on sequence level, which challenges the idea of an evolutionarily conserved function of lncRNA (Graur et al., 2015). However, additional considerations such as secondary RNA structure, splicing or genomic location may be important factors when considering lncRNA conservation (Seemann et al., 2017; Ulitsky, 2016). As some lncRNA molecules can serve biological roles, the distinction between functional lncRNA transcription and transcriptional noise requires experimental testing. Progress on this question is aided by a community consensus on the experiments needed to assign functions to ncDNA (Bassett et al., 2014; Goff and Rinn, 2015).\n\nIn budding yeast, profiling transcripts in RNA decay pathway mutants reveals many classes of \u2018cryptic\u2019 lncRNA molecules that accumulate specifically in these mutants. Cryptic Unstable Transcripts (CUTs) accumulate in mutants of the nuclear exosome 3\u2019-to-5\u2019 RNA decay pathway (Davis and Ares, 2006; Wyers et al., 2005; Xu et al., 2009). Mutations in the 5\u2019-to-3\u2019 cytoplasmic decapping-based RNA degradation pathway define Xrn1-sensitive Unstable Transcripts (XUTs) (van Dijk et al., 2011). Stable Uncharacterized Transcripts (SUTs) were initially defined based on their environment-specific expression pattern (Xu et al., 2009). SUTs are targeted for degradation by both the nuclear exosome and the cytoplasmic Xrn1 pathway (Marquardt et al., 2011). Even though lncRNAs classified into the same subgroup based on RNA decay pathway sensitivity reveal some common characteristics, it is currently unclear to what extent this classification indicates similar functions.\n\nProcesses linked to the act of Pol II transcription play an important role in targeting RNA decay pathways. Different stages in the \u2018transcription cycle\u2019 model of Pol II transcription are defined by the localization of molecular hallmarks that instruct stage-specific Pol II activities (Buratowski, 2009). The essential budding yeast Nrd1-Nab3-Sen1 (NNS) pathway mediates termination of Pol II transcription of short non-coding transcripts including CUTs and SUTs (Porrua and Libri, 2015; Schulz et al., 2013). A combination of three molecular hallmarks associated with early stages of Pol II transcription recruit NNS to nascent lncRNA transcripts: Histone 3 lysine 4 trimethylation (H3K4me3), RNA consensus motifs in nascent lncRNA, and phosphorylation of the serine five residue in the Pol II largest subunit C-terminal repeat domain (Pol II CTD) (Carroll et al., 2007; Terzi et al., 2011; Vasiljeva et al., 2008). Interestingly, phosphorylation of the Pol II CTD at tyrosine 1 has the opposite effect and decreases NNS recruitment (Yurko et al., 2017). NNS-mediated transcriptional termination of CUTs is directly linked to the recruitment of the nuclear exosome RNA degradation machinery (Vasiljeva and Buratowski, 2006). While NNS components are specific to budding yeast, equivalent pathways ensure that early transcription termination of lncRNA is linked to co-transcriptional degradation by the nuclear exosome in mammals (Ntini et al., 2013; Ogami et al., 2017; Preker et al., 2008). lncRNA abundance in cells is therefore determined by molecular checkpoints operating co-transcriptionally that are tightly linked to the termination of Pol II transcription.\n\nThe termination of Pol II transcription for polyadenylated RNAs is currently best described by the \u2018Torpedo Model\u2019 (Kim et al., 2004; Richard and Manley, 2009; West et al., 2004). This mechanism relies on the cleavage of the nascent transcript. The continuing polymerase, which is transcribing beyond the mature transcript end site, is chased by 5\u2019-to-3\u2019 exonucleases that dislodge Pol II from the DNA template. The system relies on the identification of termination specifying RNA sequences by polyadenylation/termination factors, transcription stage specification, and reducing the velocity of the polymerase after transcript cleavage. Therefore, gene expression relies on efficient termination of Pol II transcription, for example through tight linkage of termination and mRNA polyadenylation (Proudfoot, 2016).\n\nFailures in the Pol II termination process can impact on\u00a0genomic stability (Aguilera and Garc\u00eda-Muse, 2012). Inefficient termination can blur the boundaries of neighboring transcription units with negative effects on gene expression (Ard et al., 2017). Examples of this phenomenon have been initially described through studies of two \u03b1-globin gene copies oriented in tandem and termed \u2018Transcriptional Interference\u2019 (TI) (Proudfoot, 1986). TI of gene promoters by read-through transcription of upstream protein coding genes has since been detected in additional organisms (Greger et al., 2000; Hedtke and Grimm, 2009). TI repression of gene promoters can also be triggered by overlapping lncRNA transcription (Ard et al., 2014; Kim et al., 2016; Mellor et al., 2016; Touat-Todeschini et al., 2017), or by termination failures of transcripts embedded within lncRNA such as pri-miRNA (Dhir et al., 2015). Overall, these studies support an important role of Pol II termination to maintain genomic integrity and gene expression.\n\nUpstream lncRNA transcription across the downstream gene promoter represents a mechanism to adjust gene expression to the environmental conditions in budding yeast (Martens et al., 2004). Even though Pol II is actively transcribing across the promoter of the downstream SER3 gene required for serine biosynthesis, no initiation from the SER3 promoter occurs through co-transcriptional changes in the chromatin structure associated with Pol II elongation (Hainer et al., 2011; Martens et al., 2004). Similarly, gene expression can be attenuated by depositing methylation marks over promoters by cryptic transcription (Kim et al., 2012; Pinskaya et al., 2009). Regulation of gene expression by TI is intriguing, because regulation by it could reconcile equivalent functions of lncRNA that are expressed at low levels and are poorly conserved at sequence level.\n\nHere, we find that transcriptional termination of the lncRNA CUT60 in budding yeast insulates the downstream gene from interfering transcription resulting from promoter bi-directionality. Efficient termination of CUT60 promotes expression of the downstream ATP16 by preventing TI. Reduced ATP16 expression causes poor growth and triggers the loss of mitochondrial DNA (mtDNA). Our findings highlight the efficiency of nuclear lncRNA termination as a mechanism to promote functional gene expression and mtDNA stability.\n\n## Results\n\n### CUT60 is required for mitochondrial DNA maintenance\n\nThe lncRNA CUT60 is divergently transcribed from the promoter of the mediator complex subunit MED2 (Poss et al., 2013). In addition, CUT60 is located upstream in tandem of the ATP16 gene encoding the \u03b4-subunit of the mitochondrial ATP-synthase that couples proton translocation to ATP synthesis (Duvezin-Caubet et al., 2003; Giraud and Velours, 1994) (Figure 1A). Native Elongating Transcript sequencing (NET-seq) data (Marquardt et al., 2014) indicates higher nascent Pol II transcription of the two flanking genes than of CUT60 (Figure 1\u2014figure supplement 1A). To test if this low level of CUT60 transcription may be functionally significant, we replaced CUT60 with the URA3 coding sequence (cut60\u0394::URA3) (Figure 1\u2014figure supplement 1B\u2013C). We detect growth on selective media arguing for functional transcription (Figure 1\u2014figure supplement 1D). We note that multiple independently generated isolates of cut60\u0394::URA3 mutants had a strongly reduced growth rate compared to wild type (Figure 1B, Figure 1\u2014figure supplement 1E). Common growth defects in multiple isolates argue against a second-site mutation. Reduced growth may be attributed to reduced mitochondria function. To test mitochondria function, we assayed yeast growth on non-fermentable carbon sources such as ethanol and glycerol. Strikingly, cut60\u0394::URA3 fails to grow on non-fermentable carbon sources, indicating mitochondrial defects (Figure 1C, Figure 1\u2014figure supplement 1F). To test lesions in the mitochondrial genome, we performed test crosses using cut60\u0394::URA3 to wild type and the mip1\u0394 mutant that has lost the mitochondrial genome (i.e. genotype \u03c10) through DNA replication defects (Foury, 1989). As mitochondria are inherited through the cytoplasm, the resulting diploids can grow on non-fermentable carbon sources if one of the parents contains functional mitochondria (Merz and Westermann, 2009). We find that diploids resulting from crosses of cut60\u0394::URA3 with mip1\u0394 fail to grow on non-fermentable carbon sources, while they show growth on the fermentable carbon source glucose (Figure 1D). These data strongly support that cut60\u0394::URA3 mutants have mitochondrial defects. To test if the cut60\u0394::URA3 mutation may result in a reduction (\u03c1-) or loss (\u03c10) of mitochondrial DNA, we measured mitochondrial DNA using quantitative PCR with probes specific to the mitochondrial genome (Figure 1\u2014figure supplement 1G). We find that the mitochondrial DNA level in cut60\u0394::URA3 and mip\u03941 controls are reduced compared to wild type yeast. We detect no qPCR signal corresponding to mtDNA, suggesting a \u03c10 phenotype in cut60\u0394::URA3. If cut60\u0394::URA3 mutants were p0, we would expect that expression of transcripts encoded on the mitochondrial genome cannot be detected. To test this hypothesis, we assayed expression of the highly abundant COX3 transcript\u00a0encoded\u00a0by the mitochondrial genome (Figure 1E). While we can detect strong COX3 expression in wild type, we fail to detect any COX3 expression in the p0 control mutant mip1\u0394 and cut60\u0394::URA3. Remarkably, our collective results suggest the loss of mtDNA when the CUT60 lncRNA sequence of the nuclear genome is disrupted.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of the bidirectional promoter of MED2. CUT60 is a divergent lncRNA transcript originating from the MED2 promoter, and it is located upstream in tandem of ATP16. (B) Serial dilution growth assay of wild type and cut60\u0394::URA3 strains on SC-Glucose medium (n\u00a0=\u00a03). (C) Serial dilution growth assay of wild type and cut60\u0394::URA3 strains on SC-Glycerol medium (n\u00a0=\u00a03). (D) Growth of wild type, cut60\u0394::URA3 and mip1\u0394 on SC-Glucose and SC-Glycerol after mating with cut60\u0394::URA3 strain (n\u00a0=\u00a03). (E) Northern blot analysis of COX3 and SCR1 (as loading control) transcripts in mip1\u0394, wild type and cut60\u0394::URA3 (n\u00a0=\u00a03).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Reads in rpkm shown for a 2.5 kb window of chromosome IV. Schematic representation of MED2, CUT60 and ATP16 transcripts is shown (top). NET-seq reads for the\u00a0+strand containing CUT60 and ATP16 indicated in red, reads from the \u2013 strand containing MED2 indicated in yellow (n\u00a0=\u00a01). The data were described in (Marquardt et al., 2014). (B) Schematic representation of the locus between MED2 and ATP16. DNA sequence of the individual parts of this locus is shown in the lower panel. ((C)) Schematic representation of the locus between MED2 and ATP16 when the coding sequence of URA3 (green) replaces CUT60 (cut60\u0394::URA3). DNA sequence of the individual parts is shown in the lower panel. (D) Left panel shows lack of wild type cell growth, right panel shows growth of cut60\u0394::URA3 cells on SC-Glucose media lacking uracil (n\u00a0=\u00a03). (E) Serial dilution growth assay on SC-Glucose media of wild type, cut60\u0394::URA3#1, cut60\u0394::URA3#2 and cut60\u0394::URA3#3 strains (n\u00a0=\u00a03). These strains represent independently generated isolates of the cut60\u0394::URA3 mutation. (F) Growth of wild type, cut60\u0394::URA3, mip1\u0394 strains on plates with the non-fermentable carbon source ethanol (n\u00a0=\u00a03). (G) Mitochondrial DNA content in wild type, mip1\u0394, cut60\u0394::URA3 strains assayed by qPCR. qPCR analysis of three genes encoded by mitochondrial genome COX2 (white), COX3 (grey), ATP8 (black) and nuclear encoded household gene ACT1 (dark grey) in wild type, mip1\u0394, cut60\u0394::URA3 strains. Gene expression normalized to expression of the nuclear ACT1 transcript. Background level transcript-abundance is indicated by \u2018n.d.\u2019 (not detectable). Error bars are s.e.m. of three biological repeats.\n\n### CUT60 functions in cis to maintain functional ATP16 expression\n\nTo understand how CUT60 stabilizes the mitochondrial genome, we hypothesized that CUT60 may affect the expression of genes involved in mtDNA maintenance. Mitochondrial genome loss can be triggered in cells lacking Atp16p (Duvezin-Caubet et al., 2006). ATP-synthase proton channel formation requires multiple genes located on the mitochondrial genome; therefore the loss of mtDNA represents a strategy to prevent uncoupled proton translocation from ATP synthesis. We hypothesized that the observed mitochondrial genome loss could be triggered if mutating CUT60 affected expression of neighboring ATP16 (Duvezin-Caubet et al., 2006). To test cis-acting functions of CUT60 we analyzed expression of the flanking genes. Expression of the downstream ATP16 is strongly reduced in cut60\u0394::URA3 mutants, while we detect no expression changes of the MED2 gene (Figure 2A, Figure 2\u2014figure supplement 1A). To enhance detection of low-level or unstable transcripts, we included the 5\u2019-to-3\u2019 RNA decay pathway mutant xrn1\u0394, and the 3\u2019-to-5\u2019 nuclear exosome RNA decay pathway mutant rrp6\u0394 in our analysis (Houseley and Tollervey, 2009). We noticed a different size profile of ATP16 RNA in cut60\u0394::URA3 mutant strains with RNA degradation defects through rrp6\u0394 or xrn1\u0394 (Figure 2A). While we detect no ATP16 mRNA expression of the expected size in the mutants, we observe an extended ATP16 transcript in rrp6\u0394, and at higher levels in xrn1\u0394. The size of the extended ATP16 transcript is approximately (1.9 kb), which would be in agreement with a hypothesized URA3-ATP16 fusion transcript. To test if the extended ATP16 transcript represents a 5\u2019-extension, we used northern blotting probes against URA3 and the ATP16 promoter region downstream of the annotated CUT60 3\u2019-end (Figure 2\u2014figure supplement 1B). Both probes detect a transcript coinciding in size with the extended ATP16 transcript. This data suggest that the extended ATP16 transcript detected in the cut60\u0394::URA3 mutant represents 5\u2019-extension that originates from the CUT60 promoter and fails to efficiently terminate, resulting in read-through transcription into ATP16. A similar repression of ATP16 is observed in mutants replacing CUT60 with SUT129 (cut60\u0394::SUT129), indicating that this effect is not dependent on the URA3 sequence (Figure 2A). CUT60 can be expressed from the SUT129 regulatory region (sut129\u0394::CUT60) with CUT-specific expression characteristics (Marquardt et al., 2014). However, expressing CUT60 in trans from the SUT129 regulatory regions (sut129\u0394::CUT60) does not restore ATP16 expression (Figure 2A). These data indicate a cis-acting function of the CUT60 locus to promote ATP16 expression, either as DNA element or non-coding transcript.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig2-v1.jpg)\n\n**Figure 2.:** (A) Northern blot analysis of ATP16 and SCR1 (as loading control) transcripts in cut60\u0394::URA3, sut129\u0394::CUT60 + cut60\u0394::URA3, wild type, sut129\u0394::URA3 and cut60\u0394::SUT129 + sut129\u0394::URA3 strains. For all strains the transcripts were analyzed in three different backgrounds: Wild type or respective decay pathway mutant background indicated above blot (n = 1). (B) Schematic representation of the five different fragments used for complementation in Figure 2C. V0 is the empty vector control, V1 contains the ATP16 promoter sequence excluding CUT60, V2 expands V1 with CUT60, V3 expands V2 with the MED2 promoter, V4 expands V3 with the sequence of MED2. (C) Northern blot analysis of ATP16 and SCR1 (as loading control) transcript in wild type +empty vector (V0, as shown in Figure 2B), cut60\u0394::URA3 with complementation vectors (V0-4) (n = 3). * indicates extended transcript in cut60\u0394::URA3 + V1 strain. (D) Quantification of ATP16 expression of Figure 2C. Error bars are s.e.m. of three biological replicates. Statistical significance assessed by t-test, wild type compared to cut60\u0394::URA3 is significant (p<0.02). All complementation vectors show no statistical significant increase of ATP16 expression compared to wild type ATP16 expression.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) cut60\u0394::URA3 mutants show no detectable effect on MED2 expression. Northern blot analysis of MED2 and SCR1 (as loading control) transcripts in wild type and cut60\u0394::URA3 strains. Genetic backgrounds indicated on top (n\u00a0=\u00a01). (B) Northern blot analysis of URA3 and transcripts derived from expression of the ATP16 promoter region in wild type and cut60\u0394::URA3 strains. Genetic backgrounds indicated on top (n\u00a0=\u00a01). Samples are run on same gel, but the gel was spliced to show the indicated genotypes. (C) Serial dilution growth assay of wild type\u00a0+V0 and cut60\u0394::URA3 with V0-4 on SC-Glucose\u2013Leucine media (constructs shown in Figure 2B) (n\u00a0=\u00a03).\n\nATP16 expression could rely on DNA sequence elements located in CUT60 (\u2018DNA element model\u2019), or from CUT60 lncRNA function by a cis-acting mechanism (\u2018cis-acting lncRNA model\u2019). To distinguish these two models, we cloned four versions of ATP16 expression constructs with variable 5\u2019 extensions in yeast expression plasmids and transformed them into cut60\u0394::URA3 (Figure 2B). We measured ATP16 expression derived from plasmids by northern blotting and compared expression to wild type containing the empty vector control (Figure 2C). We quantified ATP16 expression relative to the SCR1 loading control to test if the constructs restore ATP16 expression to wild-type level (Figure 2D). Our results indicate that all constructs restore ATP16 expression to the level detected in wild type. A comparison of ATP16 expression between construct V1 (lacking CUT60) and construct V2 (including CUT60) most directly tests the effect of potential DNA cis-elements located within the CUT60 sequence. Our statistical tests show no significantly different ATP16 expression between these constructs. These data strongly argue against DNA sequence elements providing promoter function located in CUT60 as explanation for reduced ATP16 expression and growth in cells lacking CUT60 sequences. We note that in the only construct lacking CUT60 sequences a second, longer transcript accumulates (see discussion). Even though ATP16 expression can be restored using constructs V1-4, a growth defect compared to wild type remains. Interestingly, growth in strains carrying the constructs is slightly improved compared to cut60\u0394::URA3 mutants (Figure 2\u2014figure supplement 1C). The growth defects are consistent with mitochondrial genome loss: once mtDNA is lost, reconstitution of ATP16 expression is insufficient to restore wild type growth. In conclusion, our findings suggest a cis-acting function for the CUT60 lncRNA to promote functional ATP16 expression, which is necessary to maintain the mitochondrial genome.\n\n### ATP16 expression requires efficient upstream transcriptional termination\n\nlncRNA species are commonly defined based on expression profiling in characteristic mutant backgrounds, but it remains unclear if these lncRNA definitions carry functional implications. The cis-acting function of CUT60, in combination with strengths of our experimental system, allows us to address this question. To test if the function of CUT60 can be replaced by other lncRNA in the same genomic location as CUT60 we generated replacement mutants by site-specific homologous recombination and assayed ATP16 expression. To test if a lncRNA of the SUT class can restore ATP16 expression, we replaced CUT60 with SUT129 (cut60\u0394::SUT129) (Xu et al., 2009). We removed endogenous SUT129 (sut129\u0394::URA3) to avoid potentially confounding effects in the same background (Figure 3A). In cut60\u0394::SUT129, an extended ATP16 transcript with reduced expression is detected (Figure 3A). We conclude that SUT129 cannot substitute CUT60 function.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig3-v1.jpg)\n\n**Figure 3.:** (A) Northern blot analysis of ATP16 and SCR1 (as loading control) transcripts in wild type, cut60\u0394::URA3, cut60\u0394::SUT129\u00a0+\u00a0sut129\u0394::URA3, cut60\u0394::5\u2019C-3\u2019S\u00a0+\u00a0sut129\u0394::URA3, cut60\u0394::5\u2019S-3\u2019C\u00a0+\u00a0sut129\u0394::URA3 strains (n\u00a0=\u00a04). (B) Serial dilution growth of W303 (wild type for nrd1-1), nrd1-1, nrd1\u0394151\u2013214 and BY4741 (wild type for nrd1\u0394151\u2013214) strains on SC-Glucose and SC-Glycerol plates (n\u00a0=\u00a02). (C) Northern blot analysis of ATP16 and SCR1 (as loading control) transcripts in W303 (wild type for nrd1-1), nrd1-1, nrd1\u0394151\u2013214 and BY4741 (wild type for nrd1\u0394151\u2013214) (n\u00a0=\u00a03). (D) Northern blot analysis of ATP16 and SCR1 (as loading control) transcripts in wild type, cut60\u0394::URA3, cut60\u0394::CUT48, cut60\u0394::CUT217, cut60\u0394::CUT95, cut60\u0394::CUT277, cut60\u0394::CUT170 and cut60\u0394::#78 strains (n\u00a0=\u00a03). (E) Northern blot analysis of ATP16 and SCR1 (as loading control) transcripts in wild type, cut60\u0394::URA3 and cut60\u0394::CUT60 strains (n\u00a0=\u00a03). (F) Northern blot analysis of ATP16 and SCR1 (as loading control) transcripts in wild type, cut60\u0394::URA3+, cut60\u0394::URA3++ and cut60\u0394::URA3+trp1 terminator strains (n\u00a0=\u00a03).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic representation of the locus between MED2 and ATP16 when the 5\u2019 sequence of SUT129 is fused to the 3\u2019 sequence of CUT60, and this fusion sequence is inserted into the location of CUT60. The DNA sequences of the individual parts are shown in the lower panel. (B) Schematic representation of the locus between MED2 and ATP16 when the 5\u2019 sequence of CUT60 is fused to the 3\u2019 sequence of SUT129, and this fusion sequence is inserted into the location of CUT60. The DNA sequences of the individual parts of this locus are shown in the lower panel. (C) Quantification of ATP16 expression in northern blot shown in Figure 3A normalized to wild type. Data of expression in wild type, cut60\u0394::URA3, cut60\u0394::SUT129 + sut129\u0394::URA3, cut60\u0394::5\u2019C-3\u2019S + sut129\u0394::URA3 and cut60\u0394::5\u2019S-3\u2019C + sut129\u0394::URA3 strains. Error bars are s.e.m. of 4 biological replicates (D) Northern blot analysis with a probe against the 5\u2019-region of SUT129 transcripts in wild type, cut60\u0394::URA3, cut60\u0394::SUT129 + sut129\u0394::URA3, cut60\u0394::5\u2019C-3\u2019S + sut129\u0394::URA3 and cut60\u0394::5\u2019S-3\u2019C + sut129\u0394::URA3 strains. For all strains the transcripts were analyzed in three different backgrounds: wild type, rrp6\u0394 and xrn1\u0394 indicated on top (n = 1). (E) Serial dilution growth of W303 (wild type for nrd1-1), nrd1-1, nrd1\u0394151\u2013214 and BY4741 (wild type for nrd1\u0394151\u2013214) strains on SC-Ethanol plates (n = 2). (F) Quantification of ATP16 expression in northern blot shown in Figure 3C. ATP16 expression in W303 (wild type for nrd1-1) and nrd1-1 are normalized to W303. ATP16 expression in BY4741 and nrd1\u0394151\u2013214 are normalized to BY4741 (wild type for nrd1\u0394151\u2013214). Error bars are s.e.m. of 3 biological replicates. (G) Schematic representation of the three steps needed to generate precise site-specific genomic replacements of CUT60. In step1 wild type yeast needs to be transformed with a PCR product containing the coding sequence of URA3 with overhangs homologous to the sequences upstream and downstream of CUT60. These transformants need to be selected on plates lacking uracil (SC-URA). In step two these transformants need to be transformed with a PCR product containing the sequence of the non-coding sequence for desired CUT60 replacements (CUT95 is shown as example) with overhangs homologous to the sequences upstream and downstream of CUT60. In Step 3, transformants are selected on plates containing 5-FOA and additional uracil (SC + URA + 5 FOA) and confirmed by genotyping.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013F) Visualization of three features of CUT60 and CUTs selected for genomic replacement of CUT60. From left to right the name of the CUT, a plot showing the directionality of the promoter of the downstream protein coding gene, a genome browser snapshot of the rrp6\u0394, SDC and YPD track described in (Xu et al., 2009) and a genome browser snapshot visualizing differential Pol II PAR-CLIP signal after Nrd1 Anchor-away. The directionality of the downstream protein coding gene is calculated using NET-seq data from (Marquardt et al., 2014) and shown for the coding and the divergent direction of the promoter. Screenshots of the browser described in (Xu et al., 2009) show the level of transcription intensity across the CUTs and the respective downstream sequence by tiling array analysis. The transcription intensity is shown for three replicates in rrp6\u0394 background, for wild type yeasts grown in SDC medium and wild type yeast grown in YPD medium. Dark blue lines indicate high transcription, white lines indicated low transcription. The schematic underneath the three tracks indicate the starts of the CUTs (black box), the start and end of the downstream promoter (black line) and the start of the downstream gene (white box). The last screenshots visualizing the change of Pol II PAR-CLIP signal upon Nrd1 depletion consist of two tracks: (i) Upper: the difference track where the Pol II PAR-CLIP signal in the negative control (baseline) sample was subtracted from the Nrd1-anchor away (AA) sample. Genomic regions covered by the positive (black) difference values are interpreted as intervals where the transcription read-through is suppressed by Nrd1-dependent termination in the wild type, but becomes visible in Nrd1-AA samples; (ii) Lower: the original baseline (negative control) track to show the overall magnitude of nascent transcription at given region.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Schematic representation of all CUTs inserted at the CUT60 locus, their length and their Nrd1p/Nab3p binding sites. Binding sites from (Jamonnak et al., 2011; Carroll et al., 2004; Wlotzka et al., 2011; van Nues et al., 2017; Delan-Forino et al., 2017; Schulz et al., 2013) are shown and indicated as white boxes. (B) Number of consensus Nrd1 and Nab3 binding sites normalized to the length of the individual CUTs are shown for CUT60, CUT95, CUT277, CUT48, CUT217, CUT170 and CUT#78. (C) Nrd1 PAR-CLIP signal (Schulz et al., 2013) normalized to length of the CUTs is shown for CUT60, CUT95, CUT277, CUT48, CUT217 and CUT170 (n\u00a0=\u00a02). (D) Nab3 PAR-CLIP signal (Schulz et al., 2013) normalized to length of the CUTs is shown for CUT60, CUT95, CUT277, CUT48, CUT217 and CUT170 (n\u00a0=\u00a02). (E) Schematic representation of the locus between MED2 and ATP16 when the URA3 including an 80 bp endogenous URA3 terminator as present in pRS316 (indicated in yellow) is inserted into the location of CUT60. The DNA sequences of the individual parts of this locus are shown in the lower panel. (F) Schematic representation of the locus between MED2 and ATP16 when the URA3 including an 80 bp terminator derived from the TRP1 locus (indicated in red) is inserted into the location of CUT60. The terminator in this sequence is homologous to the TRP1 terminator found in pRS314. The DNA sequences of the individual parts of this locus are shown in the lower panel. (G) Schematic representation of the locus between MED2 and ATP16 when the URA3 including a 300 bp (indicated in yellow) terminator as present in pRS316 is inserted into the location of CUT60. The DNA sequences of the individual parts of this locus are shown in the lower panel.\n\nTranscriptional termination of SUTs is often inefficient, resulting in 3\u2019-extended SUTs (eSUTs) (Marquardt et al., 2011). This suggests that a SUT lncRNA might promote ATP16 expression if it was terminated like a CUT. To test this hypothesis, we generated CUT60-SUT129 hybrids by fusing these sequences in the transcript middles (Figure 3\u2014figure supplement 1A\u2013B). Expressing the 5\u2019-CUT60-3\u2019-SUT129 hybrid instead of CUT60 (cut60\u0394::5\u2019C-3\u2019S) resulted in low ATP16 expression as part of an extended transcript as in the cut60\u0394::URA3 mutant (Figure 3A). We note the size of ATP16-containing fusion transcript in cut60\u0394::5\u2019C-3\u2019S is slightly reduced compared with cut60\u0394::SUT129, consistent with read-through transcription of SUT129 3\u2019-end into ATP16. Strikingly, ATP16 expression is restored when the 5\u2019-SUT129-3\u2019-CUT60 hybrid replaces CUT60 (Figure 3A, Figure 3\u2014figure supplement 1C). Moreover, a short transcript with SUT-specific accumulation profile in RNA decay mutants can be detected with a probe against the SUT129 5\u2019-region (Figure 3\u2014figure supplement 1D). The detection of a SUT-like transcript resulting from the 5\u2019-SUT129-3\u2019-CUT60 hybrid maps efficient transcriptional termination to the 3\u2019-half of CUT60. These data suggest that efficient transcriptional termination of CUT60 promotes ATP16 expression.\n\nThe essential Nrd1-Nab3-Sen1 (NNS) Pol II transcription termination pathway terminates CUT transcription (Mischo and Proudfoot, 2013). A role for NNS-mediated transcriptional termination of CUT60 is supported by hypomorphic nrd1 mutations that reveal 3\u2019-extended CUT60 RNA species (Marquardt et al., 2011). Nascent transcription data (Pol II PAR-CLIP) following conditional Nrd1 depletion support a direct role of Nrd1 in CUT60 termination as depletion results in more Pol II-associated RNA downstream of CUT60 (Schaughency et al., 2014) (Figure 3\u2014figure supplement 2A). To test if transcription termination defects in CUT60 resulting from mutations in trans-acting factors share phenotypes observed in cut60\u0394 mutations, we assayed growth of two hypomorphic nrd1 mutant alleles in different genetic backgrounds, nrd1-1 and nrd1\u0394151\u2013214 (Steinmetz and Brow, 1998; Vasiljeva et al., 2008) (Figure 3B, Figure 3\u2014figure supplement 1E). Strikingly, nrd1-1, nrd1\u0394151\u2013214 and the mip1\u0394 \u03c10 control fail to grow on non-fermentable carbon sources, while we can recapitulate the reduced growth phenotype of both mutant alleles on fermentable carbon sources. These data show that nrd1-1 and nrd1\u0394151\u2013214 mimic growth defects of cut60 mutations. The shared growth defects suggest that ATP16 expression may be reduced when Nrd1 function and thus NNS termination is impaired. We assayed ATP16 expression by northern blotting to test the effects of nrd1-1 and nrd1\u0394151\u2013214 (Figure 3C). Both nrd1 mutant alleles reduce ATP16 expression by about 40% compared to their respective isogenic controls (Figure 3\u2014figure supplement 1F). While this expression is higher compared to cut60\u0394 mutations (Figure 2), we note that the hypomorphic nrd1 mutant alleles provide residual Nrd1 termination function. Moreover, it has been estimated that reducing ATP16 by around 50% is sufficient to trigger mtDNA loss (Duvezin-Caubet et al., 2003). In conclusion, these data suggest that CUT60 termination by the NNS pathway promotes ATP16 expression and mtDNA maintenance.\n\nNNS-mediated termination is tightly connected to the classification of budding yeast CUTs as NNS-termination is linked to the characteristic RNA degradation through the nuclear exosome pathway (Arigo et al., 2006; Fox and Mosley, 2016; Porrua and Libri, 2015; Vasiljeva and Buratowski, 2006). To test if other CUTs can functionally substitute for CUT60, we screened CUTs based on their genomic location, and selected CUTs located upstream in tandem of a protein coding gene along with distance filtering (>0.1 kb;<1.5 kb) (Xu et al., 2009). Furthermore, we excluded CUTs with transcripts annotated on either strand between the CUT and the downstream gene, resulting in a list of 68 CUTs (Figure 3\u2014source data 1). A combination of increased Pol II PAR-CLIP signal downstream of the CUTs following Nrd1 depletion (Schaughency et al., 2014) and low divergent non-coding transcription of the downstream gene in NET-seq data (Marquardt et al., 2014) identified CUT95, CUT277, CUT48 and CUT217 that shared many characteristics with CUT60 (Figure 3\u2014figure supplement 2). The genomic CUT60 sequences were seamlessly replaced with the selected CUTs (Figure 3\u2014figure supplement 1G). In addition, we replaced CUT60 with CUT#78 resulting from synthetic selection for strong NNS termination (Porrua et al., 2012) and CUT170 that lacks a downstream gene within our limits (Figure 3\u2014figure supplement 2). ATP16 expression increased compared to cut60\u0394::URA3 controls in the cut60\u0394::CUT217, cut60\u0394::CUT170 and cut60\u0394::#78 even though not fully to wild type level (Figure 3D). Our selection for similarity to CUT60 identified CUT217 that results in relatively high ATP16 expression in cut60\u0394::CUT217. However, the cut60\u0394::CUT95, cut60\u0394::CUT277 and cut60\u0394::CUT48 replacements result in no detectable ATP16 expression increase (Figure 3D). To test if these results could be explained by differences in termination efficiency between the inserted CUTs, we quantified known binding sites for the Nab3 and Nrd1 RNA binding protein components of NNS (Carroll et al., 2004; Jamonnak et al., 2011; Porrua et al., 2012; van Nues et al., 2017; Wlotzka et al., 2011) (Figure 3\u2014figure supplement 3A\u2013B). The results suggest that CUTs increasing ATP16 expression are enriched for NNS-targeting sites, even though the high number of sites for CUT277 illustrates that this analysis is not fully predictive. We analyzed Nrd1 and Nab3 PAR-CLIP data to examine NNS-targeting to the tested CUTs in vivo (Figure 3\u2014figure supplement 3C\u2013D) (Schulz et al., 2013). We find high Nrd1 and Nab3 PAR-CLIP signal at CUT60 consistent with efficient NNS termination and sensitivity to reduced NNS function. Interestingly, CUT277 shows relatively high NNS occupancy by PAR-CLIP yet does not terminate efficiently enough to promote ATP16 expression in the cut60\u0394::CUT277 replacement. To rule out epigenetic effects resulting from homologous recombination we reintroduced CUT60 following cut60\u0394::URA3 replacement, essentially recreating a wild type yeast strain that has undergone the procedure of site-specific recombination (cut60\u0394::CUT60) (Figure 3\u2014figure supplement 1G). Reintroducing CUT60 restores ATP16 expression, arguing against epigenetic effects preventing ATP16 expression in CUT replacement strains (Figure 3E). CUT60 function can be partially provided by other lncRNA defined as CUTs, however ATP16 expression is highest when CUT60 sequences trigger termination. We consider a combination of strong CUT60 termination efficiency and locus-specific effects relaying upstream termination to the activation of ATP16 expression as the most parsimonious explanation for these results. All in all, our site-specific CUT replacement data support that NNS termination upstream of ATP16 promotes functional ATP16 expression.\n\nTo directly test if transcription termination upstream of ATP16 is required for functional ATP16 expression, we replaced CUT60 with URA3 including three sequences mediating efficient termination of Pol II transcription downstream of protein coding genesFigure 3\u2014figure supplement 1E; Figure 3\u2014figure supplement 1F; Figure 3\u2014figure supplement 1G. We compared ATP16 expression in wild type, cut60\u0394::URA3, cut60\u0394::URA3+, cut60\u0394::URA3++ and cut60\u0394::URA3-trp1-terminator (Figure 3F). Strikingly, ATP16 expression increases with all three strategies to enhance termination of URA3 transcription. These results strongly argue for a model in which the process of transcriptional termination promotes ATP16 expression.\n\n### CUT60 promotes ATP16 expression by preventing Transcriptional Interference\n\nOur data are consistent with a cis-acting model for CUT60 function that emphasizes the role of efficient transcriptional termination. To understand how CUT60 promotes ATP16 expression, we tested if chromatin signatures at the ATP16 promoter are affected by read-through transcription. We performed Chromatin Immuno Precipitation (ChIP) coupled to quantitative PCR (qPCR) using indicated primer pairs and strains (Figure 4A). Read-through transcription can repress downstream gene expression by Transcriptional Interference (TI) (Proudfoot, 1986). If ATP16 was repressed by TI, we expect chromatin signatures associated with Pol II elongation at the ATP16 promoter in cut60\u0394::URA3 mutants compared to cut60\u0394::URA3++ mutants that terminate transcription or wild type controls. Promoter regions are characterized by a nucleosome depleted region (NDR) where nucleosome occupancy can be elevated by TI (Hainer et al., 2011). To test if the ATP16 promoter NDR is affected by upstream termination, we performed ChIP experiments with an antibody against histone 3 (H3) and a tri-methylated version of H3 lysine 36 (H3K36me3) (Figure 4\u2014figure supplement 1A\u2013C). H3K36me3 marks Pol II elongation zones in gene bodies and performs an important function to repress cryptic initiation from within transcription units (Carrozza et al., 2005; Keogh et al., 2005; Venkatesh et al., 2012). The levels of H3K36me3/H3 are unchanged between wild type, cut60\u0394::URA3++ and cut60\u0394::URA3 in the gene-body region. However, H3K36me3/H3 levels are significantly increased in cut60\u0394::URA3 compared to controls in the ATP16 promoter region (Figure 4A). Our ChIP analyses indicate that ATP16 repression is associated with elevated chromatin signatures of Pol II elongation at the ATP16 promoter. These data are consistent with regulation by TI if termination of upstream transcription is inefficient.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig4-v1.jpg)\n\n**Figure 4.:** (A) ChIP-qPCR experiments for histone H3K36 trimethylation (H3K36me3) relative to the histone H3 levels at the promoter and gene body of ATP16 in wild type (black), cut60\u0394::URA3 (white) and cut60\u0394::URA3++ (grey) strains. Error bars are s.e.m. of three biological replicates. * indicates p values of p<0.05 comparing %IP of H3K36/H3 in cut60\u0394::URA3 to the %IP of H3K36me3/H3 in wild type. Position of ChIP-qPCR probes indicated in top panel. (B) Schematic representation of synthetic circuits. mCherry replaces MED2, YFP replaces ATP16. Circuit I represents wild type circuit containing CUT60, circuit II represents the cut60\u0394::SUT129 mutant circuit. (C) Relative fluorescence of mCherry and YFP in circuit I (white) and circuit II (black). Error bars are s.e.m. of nine biological replicates, the mean was derived from multiple thousand individual measurements. *** indicates p values of p<0.0001. (D) Relative YFP fluorescence of circuit I in wild type (white) and set2\u0394 (light grey) background, and of circuit II in wild type (black) and set2\u0394 (light grey) background. YFP fluorescence levels are normalized to the corresponding wild-type values. Error bars are s.e.m. of six biological replicates. ** indicates p values p\u00a0<\u00a00.01 comparing YFP fluorescence in set2\u0394 to the respective wild type. (E) Relative YFP fluorescence in circuit I in wild type (white), spt6-1004 (dark grey) and spt16-197 (light grey) background, and in circuit II in wild type (black), spt6-1004 (dark grey) and spt16-197 (light grey) background. YFP fluorescence is normalized to the corresponding wild-type values. Error bars are s.e.m. of six biological replicates. * and ** indicate p values of p<0.05 and p<0.01 respectively comparing YFP fluorescence in spt6-1004 and spt16-194 to the respective wild type.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Enrichment of DNA corresponding to the Actin control gene for H3 (white) and H3K36me3 (grey) antibodies relative to no antibody control (black, values indicated) in wild type, cut60\u0394::URA3 and cut60\u0394::URA3\u00a0++ strains. Error bars are s.e.m. of 3 biological replicates. *and *** indicate p values of p<0.05 and p<0.001 comparing H3K36me3 to no antibody control. (B) ChIP-qPCR experiments for histone H3 at the promoter and gene body of ATP16 in wild type (black), cut60\u0394::URA3 (white), cut60\u0394::URA3++ (grey) strains. Enrichment is normalized to ACT1. Error bars are s.e.m. of three biological replicates. (C) ChIP-qPCR for H3K36me3 levels at the promoter and gene body of ATP16 in wild type (black), cut60\u0394::URA3 (white), cut60\u0394::URA3++ (grey) strains. Enrichment is normalized to ACT1 locus. Error bars are s.e.m. of three biological replicates. * indicates p values of p<0.05 comparing H3K36me3 at the promoter of ATP16 in cut60\u0394::URA3 to wild type. (D) Histograms showing the frequency of YFP fluorescence values of individual cells of cell populations containing circuit I (top panel, n\u00a0=\u00a013.000 cells) or circuit II (bottom panel, n\u00a0=\u00a012.000 cells). The distributions suggest variation around one distinct fluorescence state rather than a bi-modal distribution. (E) Relative mCherry fluorescence of circuit I in wild type (white) and set2\u0394 (light grey) background, and of circuit II in wild type (black) and set2\u0394 (light grey) background. mCherry fluorescence levels are normalized to the circuit I or circuit II wild type data. Error bars are s.e.m. of six biological replicates. (F) Relative mCherry fluorescence of circuit I in wild type (white), spt6-1004 (dark grey) and spt16-197 (light grey), and of circuit II in wild type (black), spt6-1004 (dark grey) and spt16-197 (light grey). mCherry fluorescence levels are normalized to the circuit I or circuit II wild type data. Error bars are s.e.m. of six biological replicates. ** and *** indicate p values of p<0.01 and respectively p<0.001 comparing mCherry fluorescence in spt6-1004 and spt16-194 to the respective wild types.\n\nPrevious characterizations of TI suggest that this mechanism relies on efficient Pol II elongation and associated chromatin signatures at promoter regions (Ard and Allshire, 2016; Hainer et al., 2011). If ATP16 was indeed sensitive to repression by TI, we would expect increased expression from the ATP16 promoter when the efficiency of Pol II elongation is reduced. As the loss of mtDNA precludes growth assays to monitor functional ATP16 expression we designed synthetic circuits to quantitatively assay expression from the ATP16 promoter using fluorescent proteins (Figure 4B). We replaced the MED2 coding sequence with mCherry and the ATP16 coding sequence with YFP by cloning. We used the wild type DNA region containing CUT60 (circuit I) where we expect efficient transcriptional termination upstream of the ATP16 promoter. Consistently, we detected high levels of mCherry as well as YFP fluorescence (Figure 4C). We generated a second circuit based on cut60\u0394::SUT129 (circuit II) where we expect low termination efficiency upstream of the ATP16 promoter (Figure 3A). YFP expression from the ATP16 promoter in circuit II is significantly reduced compared to circuit I, while mCherry expression appears largely unaffected (Figure 4C). RNA expression analysis in cut60\u0394::SUT129 represents a population average measurement. The reduced ATP16 expression could be explained by a gradual reduction in a homogenous population, or a higher proportion of cells lacking ATP16 expression in a heterogeneous population. YFP fluorescence is normally distributed across thousands of individual cells, supporting the hypothesis that ATP16 expression is gradually reduced in a homogenous population (Figure 4\u2014figure supplement 1D). All in all, the repression of the ATP16 promoter by read-through transcription is supported by reduced YFP fluorescence in circuit II.\n\nTo test the role of candidate factors facilitating Pol II elongation in TI-repression of the ATP16 promoter we combined elongation factor mutants with our synthetic circuits. We expect mutations in elongation factors required for TI to elevate YFP expression in circuit II. Since we observed elevated H3K36me3/H3 levels at the ATP16 promoter, we tested the involvement of Set2p mediating H3K36me3 in budding yeast (Carrozza et al., 2005; Keogh et al., 2005). While mCherry expression is unchanged in set2\u0394 mutants, YFP expression increases (Figure 4D). This effect of set2\u0394 is not observed in circuit I (Figure 4\u2014figure supplement 1E). Gene repression by TI relies on the activity of chromatin remodeling by the Spt6p and Spt16p histone chaperones (Hainer et al., 2011; Kaplan et al., 2003). Hence, we assayed fluorescence resulting from the synthetic circuits in spt16-197 and spt6-1004 mutants (Kaplan et al., 2003; Prelich and Winston, 1993). Both mutants increase YFP expression specifically in circuit II, consistent with TI suppression (Figure 4E). While the changes in fluorescence in set2\u0394 are specific to YFP fluorescence, spt6-1004 and spt16-197 reduce mCherry fluorescence in circuit I and circuit II (Figure 4\u2014figure supplement 1F). These data show that Pol II elongation factors previously associated with gene repression by TI are required for full repression of the ATP16 promoter region when the termination of upstream lncRNA transcription is inefficient. These results support the notion that efficient CUT60 termination prevents ATP16 repression by a TI mechanism.\n\nIn conclusion, our data suggest that efficient termination of upstream lncRNA transcription ensures ATP16 promoter activity. CUT60 termination promotes functional ATP16 expression, the maintenance of mitochondrial DNA and yeast growth. All in all, the dependence of mitochondrial DNA stability on CUT60 termination provides a compelling example for the biological significance of pervasive non-coding transcription in genomes.\n\n## Discussion\n\n### CUT60 termination promotes mitochondrial genome maintenance\n\nWhile pervasive transcription of Pol II in eukaryotic genomes results in the production of many lncRNA, their functional significance often remains elusive. Our analysis of the lncRNA CUT60 reveals how efficient transcriptional termination fulfills an important biological role. Inefficient transcriptional termination of CUT60 causes read-through transcription across the promoter of the downstream ATP16 gene, which represses ATP16 transcription (Figure 5). CUT60 read-through transcription represses functional ATP16 expression by a Transcriptional Interference mechanism. ATP16 repression results in a striking biological defect: mitochondrial genome loss (\u03c10). The function of Atp16p as \u03b4-subunit of the mitochondrial ATP-synthase can reconcile the strong phenotypic response resulting from inefficient CUT60 termination. Interestingly, in atp16 mutant backgrounds the loss of the mitochondrial genome represents a survival strategy (Duvezin-Caubet et al., 2006). At first glance the positive selection for the loss of the mitochondrial genome in atp16 mutants seems counter-intuitive. However, acquiring \u03c10 efficiently blocks proton leakage, as the two subunits encoding the core of the ATP-synthase proton channel (ATP6 and ATP9) are located on the mitochondrial genome. Hence, loss of the mitochondrial genome disrupts proton channel formation to prevent uncoupling of the ATP synthase in the absence of a functional \u03b4-subunit (Duvezin-Caubet et al., 2006). Future research will be required to identify if modulating CUT60 termination efficiency is used as mechanism for regulated mtDNA loss. Mutant mtDNA can out-compete wild type mtDNA copies through increased replication efficiency (Contamine and Picard, 2000). It is tempting to speculate that the loss of mtDNA triggered by transiently reduced CUT60 termination efficiency could be a temporary state to detoxify cells from deleterious mtDNA. Healthy mtDNA variants could be subsequently acquired through mating and would be maintained as long as CUT60 transcription is terminated efficiently. In human, mutant mtDNA has emerged as common cause for metabolic disease and mechanisms to acquire healthy mtDNA would offer a promising avenue for biotechnology (DiMauro et al., 2013). All in all, our findings provide a compelling example for a biologically significant lncRNA transcription termination event. Promoting the stability of organellar DNA adds a new function to the growing list of \u2018junk DNA\u2019-derived lncRNA with functional roles in cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31989/elife-31989-fig5-v1.jpg)\n\n**Figure 5.:** (A) In the presence of CUT60 transcription initiating from the bidirectional MED2 promoter terminates efficiently with the help of Nrd1p to prevent Transcriptional Interference of ATP16. Atp16p promotes the maintenance of mitochondrial DNA. (B) ATP16 is repressed by Transcriptional Interference if CUT60 is replaced with sequences terminating inefficiently. Interfering transcripts initiate from the bidirectional MED2 promoter. The interference mechanism is enforced by Set2p, Spt6p and Spt16p. This leads to the loss of mitochondrial DNA triggered by the lack of Atp16p.\n\n### Gene regulation by divergent lncRNA transcription\n\nDivergent transcription of lncRNA from eukaryotic gene promoters represents an important source of lncRNA (Sigova et al., 2013). Divergent lncRNA transcription is repressed by lncRNA degradation (Almada et al., 2013; Ntini et al., 2013; Xu et al., 2009), and by a repressive chromatin architecture (Jin et al., 2017; Marquardt et al., 2014; Rege et al., 2015; Tan-Wong et al., 2012). Transient inhibition of these pathways and a reduction of termination efficiency could amplify read-through transcription of divergent lncRNA (Mellor et al., 2016). Inefficient transcriptional termination and environmentally regulated expression define the species of budding yeast SUTs (Marquardt et al., 2011; Xu et al., 2009). These characteristics poise SUTs for gene regulation by read-through transcription, for example at IME1 and GAL80 (van Werven et al., 2012; Xu et al., 2011). The TI mechanism described in our study is reminiscent of the regulation of FLO11 expression and yeast flocculation by a divergently transcribed SUT lncRNA (Bumgarner et al., 2009). While regulation of FLO11 expression is regulated at the level of individual cells resulting in heterogeneous expression states (Bumgarner et al., 2012), our analysis of circuit II suggests that ATP16 expression is reduced in a homogenous population. Replacement of the efficiently terminated CUT60 with inefficiently terminated SUT129 supports a role for SUTs as source for read-through regulation. The 5\u2019-SUT129-3\u2019CUT60 hybrid experiments in particular suggest that the underlying molecular cause may be differences in termination efficiencies of CUTs and SUTs (Figure 3). While the SUT nomenclature is specific to budding yeast, it should be noted that many human lncRNA share characteristic cell-type-specific and environmentally regulated expression (Deveson et al., 2017) and cis-acting functions are increasingly appreciated (Engreitz et al., 2016). Divergent lncRNA transcription of human promoter upstream transcripts (PROMPTs) may overlap with downstream genes reminiscent of the MED2-CUT60-ATP16 circuitry (Chen et al., 2016). Efficient transcriptional termination of a divergent lncRNA has therefore functional implications beyond the specific example described here.\n\n### Functional diversification within lncRNA subsets\n\nThe sensitivity to RNA degradation pathways has been used as a defining criterion to distinguish lncRNA species in budding yeast (van Dijk et al., 2011; Xu et al., 2009). It remains unclear how frequently lncRNA classification based on RNA decay pathways is indicative of equivalent lncRNA function. Our study addresses this question by testing experimentally which lncRNAs of the CUT species can functionally substitute for CUT60 (Figure 3). To enable these experiments we systematically identified CUTs with similar genomic location to examine if they can replace CUT60 function (Figure 3\u2014figure supplement 2). Indeed, ATP16 expression increases in a subset of CUTs, but none of the CUTs we tested fully restores ATP16 expression. Our results argue that there is some yet limited functional overlap between lncRNA classified as members of the same species. Importantly, our analysis of complementation plasmids shows that sequences downstream of CUT60 are sufficient to fully restore ATP16 expression (Figure 2). DNA sequence elements in CUT60 that could hypothetically provide promoter function can therefore not explain reduced ATP16 expression in the replacement mutants. We detect strong binding of Nrd1 and Nab3 to CUT60 by PAR-CLIP, suggesting CUT60 represents a strong transcriptional terminator for the NNS pathway (Figure 3\u2014figure supplement 3). Consistently, we find that hypomorphic mutations in Nrd1 result in reduced ATP16 expression, CUT60 read-through transcription and common growth phenotypes with CUT60 termination defective strains (Figures 1\u20133). While CUT60 scores highly in accessible metrics to predict NNS termination these differences cannot fully account for the termination efficiency and resulting ATP16 expression, particularly in comparison to CUT277 (Figure 3\u2014figure supplements 2,3). We map sequences mediating strong termination of Pol II transcription to the 3\u2019-half of CUT60 where a cluster of NNS-targeting cis-elements is located (Figure 3\u2014figure supplement 3). Moreover, we can partially restore ATP16 expression by the inclusion of three sequences to trigger transcriptional termination by NNS-independent pathways (Figure 3F). The most parsimonious interpretation of our experimental results is that an architecture linking efficient transcriptional termination of CUT60 with the initiation of ATP16 expression is under strong locus-specific selection, presumably to maintain the mitochondrial genome.\n\n### Insulating the ATP16 promoter from interfering upstream transcription\n\nEven though most promoters in eukaryotic genomes initiate transcription bi-directionally (Preker et al., 2008; Seila et al., 2008), the ATP16 promoter shows little evidence of divergent lncRNA transcription (Figure 1\u2014figure supplement 1A, Figure 3\u2014figure supplement 2A). Low levels of divergent lncRNA transcription may offer a partial explanation for the need of CUT60 as strong \u2018insulator\u2019 for the ATP16 promoter. Divergent lncRNA transcription could conceivably provide an opposing wave of Pol II transcription that may trigger termination of incoming read-through transcripts by polymerase collisions, as proposed for the yeast BAT2 promoter (Hobson et al., 2012; Mellor et al., 2016; Nguyen et al., 2014). The extended ATP16 transcript we detect in the background of construct V1 lacking CUT60 may be a manifestation of this phenomenon (Figure 1D). The extended transcript likely results from upstream transcription initiation in the plasmid, as it is not observed in constructs containing CUT60 sequences that would lead to termination. However, our site-specific swaps of CUTs do not support that lncRNAs upstream of unidirectional gene promoters are generally characterized by particular efficient NNS termination (Figure 3). The ATP16 promoter lacks binding sites for the Reb1p and Rap1p transcription factors that prevent read-through transcription by a road-blocking mechanism, which may also contribute to the sensitivity for read-through repression (Candelli et al., 2018). It has previously been established that promoter repression by TI can be partially overcome by increasing the levels of promoter-specific transcription factors to trigger transcriptional initiation (Greger et al., 2000). A locus-specific balance of transcriptional read-through across promoters and their strength to mediate transcriptional initiation likely determines the susceptibility of promoters for repression by TI.\n\n### Gene regulation through the act of read-through transcription\n\nLow primary sequence conservation combined with low steady-state abundance of lncRNA challenges functions of pervasive transcription through the resulting lncRNA molecules. Our experimental characterizations of CUT60 reveal a cis-acting lncRNA function through the mechanism of NNS-termination to promote ATP16 expression. We propose that ATP16 promoter function is inhibited through a TI mechanism by upstream transcription extending across this region when CUT60 termination is inefficient (Figure 5). A TI mechanism is consistent with an increase in the Pol II elongation-specific H3K36me3 mark at the ATP16 promoter region that is usually detected in the middle of transcription units. In addition, the Set2p histone-methyl transferase mediating H3K36me3 is genetically required for efficient repression of the ATP16 promoter (Figure 4). Set2p is required for TI by sufficiently long upstream interfering transcripts (Kim et al., 2016). The histone chaperones Spt6p and Spt16p are required for TI without an apparent size limit of the interfering transcript (Ard and Allshire, 2016; Hainer et al., 2011; Winston et al., 1984). We find that both histone chaperones are also required to enforce TI repression of the ATP16 promoter. While gene regulation by TI may be most intuitive in dense genomes, this mechanism has been first described for two tandem copies of the human \u03b1-globin genes (Proudfoot, 1986). Human lncRNA sequences are rich in cis-elements triggering polyadenylation and could help to protect from TI akin to CUT60 (Almada et al., 2013; Ntini et al., 2013). Read-through transcription in human is associated with cellular responses to viral infection (Rutkowski et al., 2015) and osmotic stress (Vilborg et al., 2015). Future research elucidating the molecular mechanism of gene repression through the act of transcription will be required to detect and predict where this powerful mechanism operates in genomes. While previous studies largely focused on lncRNA transcription as a cause for TI (Ard et al., 2017), our results suggest that lncRNA transcription may also offer protection. In summary, our findings expand the functional and mechanistic implications of \u2018junk DNA\u2019 transcription in eukaryotes.\n\n## Materials\u00a0and\u00a0methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>strain, strain background (S. cerevisiae)</td>\n      <td>Yeast Strains</td>\n      <td>in this study</td>\n      <td></td>\n      <td>See Supplementary file 1 Yeast strains</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (E.coli)</td>\n      <td>E. coli</td>\n      <td>Thermo Fisher</td>\n      <td>Cat#18265017</td>\n      <td>E. coli DH5\u03b1 Competent Cells</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>H3</td>\n      <td>Abcam</td>\n      <td>Ab1791; RRID: AB_302613</td>\n      <td>Anti-Histone H3</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>H3K36me3</td>\n      <td>Abcam</td>\n      <td>Ab9050; RRID: AB_306966</td>\n      <td>Anti-Histone H3 tri methyl K36</td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>QIAprep Spin Miniprep Kit</td>\n      <td>QIAGEN</td>\n      <td>Cat#27106</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>Wizard SV Gel and PCR Clean-Up System</td>\n      <td>Promega</td>\n      <td>Cat#A9182</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>MasterPure Yeast RNA Purification Kit</td>\n      <td>Lucigen</td>\n      <td>MPY03100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Protein A magnetic beads</td>\n      <td>GenScript</td>\n      <td>Cat. No. L00273</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Phusion high-fidelity PCR master mix</td>\n      <td>NEB</td>\n      <td>cat. no. M0531S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>GoTaq qPCR Master Mix</td>\n      <td>Promega</td>\n      <td>Cat#A6002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>NAT</td>\n      <td>Jena Bioscience</td>\n      <td>AB-102L</td>\n      <td>Nourseothricin dihydrogen, cloNAT</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>G418</td>\n      <td>Duchefa-biochemie</td>\n      <td>G0175</td>\n      <td>G-418 disulphate</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>5FOA</td>\n      <td>Thermo Fisher</td>\n      <td>R0811</td>\n      <td>5-Fluoroorotic Acid</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>ImageQuant</td>\n      <td>GE Healthcare</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Software for flow cytometry and bioinformatic analysis: see Materials\u00a0and\u00a0methods</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Oligonucleotides</td>\n      <td>in this study</td>\n      <td>NA</td>\n      <td>See Supplementary file 2 Oligonucleotides</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Equipment: BD Fortessa</td>\n      <td>BD biosciences</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Plasmids</td>\n      <td>in this study</td>\n      <td>NA</td>\n      <td>See Supplementary file 3 Plasmids</td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains\n\nYeast strains used in this study are listed in Supplementary file 1. Strains were constructed using standard procedure.\n\nTo introduce cut60\u2206::URA3 mutation primers SB2803 and SB2804 were used with SMC88 as template DNA. Primers SB2803 and SB2804 amplify URA3 coding region and contain overhangs that are homologous to the region upstream and downstream of the annotated CUT60 sequence (Xu et al., 2009). These homologous overhangs integrate PCR fragments into the desired locus as described in Figure 3\u2014figure supplement 1G. Transformants were selected using SC-URA plates. To generate cut60\u2206::URA3#1, cut60\u2206::URA3#2 and cut60\u2206::URA3#3 primers MLO515 and MLO516 were used on genomic DNA using SMY81 as template. The PCR fragments containing the cut60\u2206::URA3 replacement and homologous overhangs to the region upstream and downstream of CUT60 were transformed into SMY2132 and selected for growth on SC-URA plates. To generate cut60\u2206::CUT60#1 and cut60\u2206::CUT60#1 primers MLO488 and MLO489 were used SMY2132 genomic DNA template. The generated PCR fragments containing the endogenous CUT60 sequence and homologous overhangs to the region upstream and downstream of CUT60 and were transformed into SMY81 and selected using 5-FOA plates. cut60\u2206::SUT129 mutants were generated starting from cut60\u2206::URA3 mutant strains. URA3 was replaced with a PCR fragment from genomic DNA using primers SB2875 and SB2876. These primers contain homologous overhangs to the region upstream and downstream of CUT60. Transformants were selected using 5-FOA plates. To generate cut60\u2206::5\u2019C-3\u2019S mutants, we generated PCR fragments using primers SB2823 and SB2899 on genomic CUT60 DNA as template DNA, and primers SB2898 and SB2876 on genomic SUT129 on genomic DNA as template. These fragments were fused by PCR using primers SB2823 and SB2876, and these fusion fragments were then transformed into cut60\u2206::URA3 strains. Transformants were selected using 5-FOA plates. To generate cut60\u2206::5\u2019S-3\u2019C mutants, we generated PCR fragments using primers SB2900 and SB2902 on genomic CUT60 template DNA and primers SB2875 and SB2901 on genomic SUT129 template DNA. These fragments were fused by PCR using primers SB2875 and SB2902, and the resulting fusion fragment was transformed into cut60\u2206::URA3 strains. Transformants were selected using 5-FOA plates. To introduce rrp6\u0394::KanMX mutations, we generated PCR fragments for transformation using primers SB1055 and SB1056 on rrp6\u0394::KanMX template DNA. Transformants were selected on G418 plates. To introduce xrn1\u0394::KanMX mutations, we generated PCR fragments for transformation using primers SB2877 and SB2878 on xrn1\u0394::KanMX template DNA. Transformants were selected on G418 plates. To generate strains where CUT60 was replaced with different lncRNA sequences, we transformed cut60\u2206::URA3 strains with PCR fragments that contains the lncRNA sequence of interest and homologous overhangs to the region upstream and downstream of CUT60 as in Figure 3\u2014figure supplement 1G. Primers MLO1319 and MLO1320 were used for cut60\u0394::CUT170, primers MLO496 and MLO497 were used for cut60\u0394::CUT95, primers MLO498 and MLO499 were used for cut60\u0394::CUT277, MLO1376 and MLO1377 were used for cut60\u0394::CUT48, MLO1370 and MLO1371 were used for cut60\u0394::CUT217, MLO1328 and MLO1329 were used for cut60\u0394::CUT#78. Transformants were selected using 5-FOA plates. cut60\u0394::URA3\u00a0++ contains the coding sequence of URA3 and the 300 bp downstream of the URA3 coding sequence on pRS316 as terminator. Primers MLO933 and MLO935 are used on pRS316 template DNA to generate a PCR fragment containing the URA3 coding sequence including terminator and homologous overhangs to the sequence upstream and downstream of CUT60. Transformants were selected using SC-URA plates. cut60\u0394::URA3+ contains the coding sequence of URA3 and the 80 bp downstream of the endogenous coding sequence as terminator. Primers MLO933 and MLO934 are used on pRS316 template DNA to generate a PCR fragment containing the URA3 coding sequence including the 80 bp terminator with homologous overhangs sequences upstream and downstream of CUT60. Transformants were selected using SC-URA plates.\n\nut60\u0394::URA3\u00a0+trp1 terminator contain the coding sequence of URA3 and the 80 bp downstream of the coding sequence of the endogenous TRP1 gene as terminator. Primers MLO933 and MLO1368 are used on pRS316 template DNA to generate a PCR fragment containing the URA3 coding sequence with homologous overhangs to the sequence upstream of CUT60 and the TRP1 terminator 5\u2019 end. MLO1335 and MLO1334 are used on SMC147 template to generate a PCR fragment containing the 80 bp TRP1 terminator that has homologous overhangs to the 3\u2019 sequence of URA3 and the sequence downstream of CUT60. Transformants were selected using SC-URA plates.\n\n### Growth media\n\nStandard yeast media were used, 100 \u00b5g/ml ampicillin was added to liquid media to avoid bacterial contaminations. YPD liquid media and plates containing 300 \u03bcg/ml G418 Sulfate (Geniticin, American Bioanalytical) were used to select for KanMX or/and 100 \u03bcg/ml ClonNat (Jena Bioscience, Jena, Germay) to select for NatMX. SC media lacking leucine was used for growth of yeasts containing the complementation plasmids (V0-V4). SC media containing uracil was used for selection for growth in presence of 1 mg/ml 5-Fluoro Orotic Acid (5-FOA), to select against cells with functional URA3. SC-Glycerol and SC-Ethanol\u00a0plates are used to test for mitochondrial function.\n\n### Transformations\n\nSingle colonies of yeast strains were incubated in 5 ml of liquid medium (YPD or SC-Leu medium) overnight in a shaker at 150 RPM at 30\u00b0C. The titer was determined, using spectrophotometer. Cultures were diluted and harvested at a titer of 2 \u00d7 107 cells/ml. Per transformation reaction, 1/10 of the harvested pellet was used. Transformation mix (240 \u00b5l PEG (50% w/v), 36 \u00b5l 1M LiAc, 10 \u00b5l single stranded salmon sperm carrier DNA (10 mg/ml), 74 \u00b5l PCR product or 5\u201310 \u00b5l of plasmid, 34 \u00b5l H2O minus the volume of PCR product or plasmid was added to the cell pellets and mixed by pipetting. Cells were then heat shocked at 42\u00b0C for 30 min. For selection using URA3 or LEU markers cells were plated on SC-URA or SC-LEU plates directly. Selection for G418, NAT or 5-FOA resistance was performed following growth on YPD plates for 1 day and then replica-plated to an appropriate selection plate. Transformants were mostly visible after 3 days.\n\n### Plasmid construction\n\nSMC340, SMC342, SMC361 and SMC362 were constructed using one step isothermal assembly of four overlapping dsDNA fragments as described (Gibson, 2011). Fragments that were inserted into HindIII digested SMC339 backbones, were generated by PCR reaction using primers MLO431, MLO433, MLO486, MLO487 as forward primers and MLO434 as reverse primer. Vectors were sequenced with primers MLO434, MLO486, MLO487, MLO489 and MLO467.\n\nSMC425 and SMC426 were constructed using one step isothermal assembly. The fragments that were inserted into AscI digested SMC50 backbones were generated by PCR reactions. The mCherry-NatMX fragment was made using primers MLO517 and MLO777; YFP fragment was made using primers MLO517 and MLO778 both with SMC50 as template. The central fragment containing the bidirectional promoter of MED2 and either the CUT60 sequence (for circuit I) or the SUT129 sequence (for circuit II) and were amplified using primers MLO776 and MLO779, using BY4741 as template for the CUT60 version and SMY131 (cut60\u0394::SUT129) as template for the SUT129 version. The three fragments were fused using PCR with splicing overlapping ends, using each other and more of the flanking primer MLO517 to make one continuous fragment, which was identified on an agarose gel. Plasmids were genotyped by PCR and sequenced.\n\n### Serial dilution growth assay\n\nOvernight cultures were grown at 30\u00b0C in media. The yeast pellets were washed with water, and diluted to OD600\u00a0=\u00a00.1. An equal starting amount of cells were spotted in three-fold serial dilutions and growth assayed at 30\u00b0C for 2\u20133 days.\n\n### RNA isolation\n\nSingle colonies of yeast strains were incubated in 5 ml of liquid medium overnight in a shaker at 150 RPM at 30\u00b0C. Subsequently 25 ml of liquid medium were inoculated to an OD600\u00a0=\u00a00.1 and grown at 30\u00b0C to OD600\u00a0=\u00a00.4\u20130.8. RNA was isolated using the MasterPureTM Yeast RNA Purification Kit (Epicentre, Wisconsin, USA). Final RNA concentration was determined using a Nanodrop spectrophotometer.\n\n### Northern blots\n\nTen micrograms of total RNA was separated by electrophoresis on 1.5% agarose-formaldehyde-MOPS gels. The RNA was transferred to a nylon transfer membrane via capillary blotting in 10 X SSC buffer for 16 hr. RNA was cross-linked to the nylon membrane by UV irradiation. The membrane was incubated in a rotating oven at 65\u00b0C in 15 ml hybridization buffer (0.5 g BSA, 15 ml phosphate buffer, 35 ml 10% SDS, 100 \u00b5l 0.5 M EDTA pH 8.0; 100 ml phosphate buffer consisting of 68.4 ml 1M Na2HPO468.4 ml and 31.6 ml 1 M Na2H2PO4*H2O) 60 min prior to addition of radioactive probe. Single-stranded probes were generated by incorporation of radioactive dTTP into DNA using a unidirectional thermocycling reaction. Twenty microliters of reaction mix were assembled containing five units Taq DNA polymerase, 200 \u03bcM each of dCTP, dGTP and dATP, 5 ng of DNA template consisting of a 100\u2013300 bp long PCR product of the probed region, 0.4 \u03bcM primer oligonucleotide (antisense to the RNA to be detected) and 4 \u03bcl of \u03b1\u221232P-dTTP added. The tube was placed into a PCR machine and subjected to 35 cycles of the following series: denaturation at 94\u00b0C for 30 s, annealing at an experimentally determined temperature for 20 s, and extension for 45 s at 72\u00b0C. Upon completion, 20 \u03bcl of water was added to the reaction and unincorporated nucleotides were removed using a Spin-50 gel-filtration column (BiomaxInc., Planegg, Germany) according to manufacturers\u2019 instructions. The purified probe was denatured by incubation at 95\u00b0C for 5 min and chilled on ice. The probe was added to the membrane in 15 ml hybridization solution and incubated overnight at 65\u00b0C in a rotating oven. The membranes were washed with low stringency wash buffer (0.1 x SSC, 0.1% SDS) and when necessary to reduce background, high stringency wash buffer (2 x SSC, 0.1% SDS) at 65\u00b0C. A Typhoon scanner and ImageQuant software (GE Healthcare Chicago, Illinois) was used for analysis and quantification. ATP16 probe template was amplified using primers MLO466 and MLO467. COX3 probe template was amplified using primers MLO843 and MLO844. URA3 probe template was amplified using primers SB1777 and SB1778. MED2 probe template was amplified using primers SB3080 and SB3081. ATP16-promoter probe template was amplified using primers SB2451 and SB2452. SUT129 probe template was amplified using primers SB2453 and SB2454. The blots were stripped using 0.1% SDS and re-probed with SCR1 loading controls. SCR1 probes generated using MLO689 and MLO690.\n\n### Chromatin immunoprecipitation (ChIP)\n\nSingle colonies of yeast strains were incubated in 25 ml of YPD overnight in a shaker at 150 RPM at 30\u00b0C. 250 ml YDP cultures were inoculated with overnight culture to OD600\u00a0=\u00a00.1 and grown until OD600\u00a0=\u00a00.6. Cells were fixed with 1% Formaldehyde for 15 min at room temperature. 37.5 ml of 3M Glycine was added and incubated for 5 min. Fixed cells were centrifuged at 3.500 RPM for 2 min, washed twice with ice-cold PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, pH 7.4). Cell pellets were flash frozen in liquid nitrogen and stored at \u221280\u00b0C. The pellet was resuspended in 1 ml ice cold FA lysis buffer\u00a0+Proteinase inhibitor (Roche, Basel, Switzerland)/0.5% SDS (2X FA buffer: 100 mM Hepes-KOH pH7.5, 300 mM NaCl, 2% Triton-X-100, 0.2% Na-Deoxycholate, 2 mM EDTA) and lysed by bead beating. Crude whole cell extract was collected by puncturing small holes in the tube using flame-headed needle and centrifugation into a new microfuge tube at 1.000 RPM for 1 min. Crude whole cell extract was briefly vortexed and then sonicated at 5\u00b0C using Q700 sonicator (Qsonica, Connecticut) on Amplitude 100 for a total of 20 min (30 s ON/OFF cycles). Insoluble material was removed by centrifugation at 13.500 RPM 2 \u00d7 10 min. 25 \u00b5L samples of whole cell extracts were collected as total input controls (\u2018Input\u2019) and frozen at \u221220\u00b0C. 250 \u00b5L of soluble lysates were pre-cleared with Protein A beads (Gen Script, New Jersey) for 1 hr at 4\u00b0C and then incubated with appropriate antibody and beads overnight at 4\u00b0C. 2 \u03bcL of H3 antibody (ab1791; Abcam, Cambridge, UK), and 2 \u03bcL of H3K36me3 antibody (ab9050; Abcam) were used for IPs. IPs were washed in four steps, each wash step was performed for 4 min at 4\u00b0C. First wash step was done in 1x FA buffer/0.1% SDS\u00a0+275 mM NaCl, 2nd wash step was done in 1x FA buffer/0.1% SDS\u00a0+500 mM NaCl, 3rd wash step was done in 10 mM TRIS-HCL (pH8)\u00a0+0.25 M LiCl, 1 mM EDTA, 0,5% Na-Deoxycholate and 4th wash was done in TE buffer. Beads following IP and 25 \u03bcL of Input samples were incubated with 100 \u03bcL of 1% Chelex100 Resin (Bio-Rad) in dH2O, boiled to remove DNA-protein crosslinks for 15 min, and then treated with proteinase K (10 mg/mL) for 30 min at 55\u00b0C. Samples were boiled for an additional 10 min to denature proteinase K. Samples were centrifuged at 10.000 RPM for 1 min. 60 \u03bcL of supernatant was carefully pipetted into new microfuge tubes. Quantitative analysis was performed by qPCR on diluted samples: Input DNA samples were diluted 1/100 in dH2O while IP DNA samples were diluted 1/50.\n\nChIP enrichments per antibody was calculated using the following formula: 2^((CT Value of input)-(CT Value of IP))*(Dilution factor input/Dilution factor IP). This gives the %IP per antibody, these values were normalized to the %IP calculated for the household gene (ACT1), to give the %IP relative to actin. Triplicate biological samples were each analysed using three technical repeats. For normalization to the ACT1 household gene using the primers MLO1247 and MLO1250 were used.\n\n### qPCR\n\nqPCR was performed using 5 \u00b5l of GoTaq qPCR Master Mix (Promega, Wisconsin), 1 \u00b5l primers (20 \u00b5M), 3 \u00b5l H2O and 1 \u00b5l of DNA in C1000 Touch Thermal Cycler (BioRad, California). For each sample, at least three biological repeats and three technical replicates were used. The amplification efficiency of each amplicon used was determined, and only amplicons with efficiencies between 97\u00a0and\u00a0110% were retained.\n\n### Flow cytometry\n\nA BD Fortessa (BD biosciences, New Jersey) flow cytometer with a high-throughput resolution sampler was used to quantitate YFP and mCherry fluorescence. YFP was excited at 450 nm and fluorescence collected through a 535/45 band pass and 525 LP emission filter. mCherry was excited at 600 nm and assayed with a 632/22 band pass filter. Between 30000 and 50000 events were sampled for each well. Flow cytometry data were exported from the acquisition program (FACSDiva, Beckton Dickinson, San Jose, CA, USA) in the FCS3.0 format. R studio was used to process the data, importing using a custom modified version of \u2018flowCore\u2019 package from Bioconductor.org. To compare cells with the same average sizes and filter out cellular debris and aggregates, the median side scatter (SSC) was used. Data within\u00a0\u00b125% of the median SSC value were used for all the comparisons. The first third of events and the last ninth of data in time were removed to minimize errors due to unstable sample flow through the flow cytometer. Any well that had fewer than 500 counted cells was excluded from the analysis. BY4741 without a fluorescent reporter (FPR) served as background control for experiments in Figure 4D and E. SMY921 without FPR served as background control for experiments in Figure 4F. After background subtraction, the data were represented normalized to co-assayed isogenic wild-type FPR control strains. Values for circuit I were normalized to wild type FPR control strains containing circuit I, values for circuit II were normalized to wild type FPR control strains containing circuit II.\n\n### Statistical analysis\n\nStatistical tests were performed on means generated from at least three biological replicates. Repeats per individual experiment shown in legend (n\u00a0=\u00a0number of biological replicates). Results are expressed as the mean\u00a0\u00b1standard error of the mean (s.e.m.) between experimental groups. Significance is assessed using a two-tailed unpaired Student\u2019s t-tests. The *p<0.05, **p<0.01, and ***p<0.001 levels were considered significant.\n\n### Computational analysis\n\nGenomic coordinates of CUTs (n\u00a0=\u00a0925) and SUTs (n\u00a0=\u00a0847) were obtained from (Xu et al., 2009). The coordinates were converted from SacCer2 to SacCer3 using kentUtils liftOver tool and the chain file sacCer2ToSacCer3.over.chain.gz. Coordinates of SGD genes in SacCer3 (n\u00a0=\u00a06692) were downloaded from the UCSC Table Browser. To obtain CUTs for Figure 3\u2014source data 1, CUTs overlapping other transcription units are removed. For the remaining CUTs (n\u00a0=\u00a0238), the nearest downstream gene on the same strand was found, and the distance to this gene was calculated. The final 68 CUT-gene pairs were selected based on the following criteria: (i) the distance between the 3\u2019 end of the CUT and the TSS of the downstream gene (gap interval) is between 100 bp and 1500 bp; (ii) there are no transcription units overlapping with the gap interval on either strand. This pipeline was implemented in the 01-Candidate_CUTs.R script. The directionality of the downstream genes was obtained using yeast NET-Seq data from (Marquardt et al., 2014) (accession GSE55982). The raw reads were extracted from SRA archives using SRA Toolkit v2.6.3, quality and adapter trimming was performed using Trim Galore v0.4.3 and alignment to the yeast genome was done using Bowtie2 (--very-sensitive-local mode). The SAM files were filtered from unmapped reads and reads with low mapping quality (MAPQ\u00a0<=\u00a010) and then converted to sorted BAM files using Samtools v1.3.1. BAM files were filtered from reads aligning to unwanted sequences such as rRNA, tRNA, snRNA and snoRNA genes and then converted into stranded Bedgraph files using Bedtools v2.25.0. Only 5' positions of reads were used to calculate the coverage. Bedgraph files were then normalized to 1 million tags. For more details, see the 02-Reanalysis_of_NET-Seq_raw_data.sh script. At the next step, these Bedgraph files were used to compute the NET-Seq coverage around TSS of genes found downstream of our candidate CUTs (n\u00a0=\u00a068).The signal at the first 100 bp of downstream gene on the coding strand gave transcription intensity into the coding direction and the signal at the last 100 bp of the gap interval on the opposite strand gave transcription intensity into the divergent direction. To avoid possible division by zero, a pseudocount of 0.25 was added to the latter values. This pipeline is detailed in the 03-Directionality_of_downstream_genes.R script.\n\nPol II PAR-CLIP data from Schaughency et al., 2014 were used to assess Nrd1-dependent transcription termination of each CUT. The level of nascent transcription over the CUTs and their gap intervals were assessed using the original Wig files provided by authors (accession GSE56435). The read-through index is defined as the ratio of Pol II PAR-CLIP signal at the gap interval divided by Pol II PAR-CLIP signal at their CUT in the Nrd1-AA sample compared the control sample. The Rbp2 strain treated with rapamycin was used as the control. For details see the 04-Nrd1-dependent_termination_of_CUTs.R pipeline. The Pol II PAR-CLIP data were also used to visualize the genome-wide changes in the nascent transcription profile which occur due to the depletion of Nrd1 in Figure 3\u2014figure supplement 2. We subtracted the rapamycin-treated negative control track from the Nrd1-AA track at all genomic positions. This was done by the 07-Subtract_PolII_PAR-CLIP_tracks.R script. The resultant Bedgraph files contain both positive (black) and negative (gray) values.\n\nNrd1 PAR-CLIP data from (Schulz et al., 2013) were used to assess the Nrd1 and Nab3 occupancy at each CUT. This study provides both Nrd1 PAR-CLIP and 4tU-Seq data for the same samples (accession E-MTAB-1766). The raw NGS reads were aligned to the yeast genome using STAR v2.5.2 in the local mode. The Nrd1 PAR-CLIP BAM files were converted to the mpileup format using samtools. The cross-linking positions (defined as T-to-C and A-to-G conversion sites on the forward and reverse strands, respectively) were detected with single nucleotide resolution using VarScan v.2.4.3. The resultant VCF files were converted to Bedgraph files and normalized to 1 million tags. This pipeline is described in the 05-Reanalysis_of_4sU-Seq_and_Nrd1_PAR-CLIP_raw_data.sh. The PAR-CLIP signal was also normalized by the transcription level of the underlying locus. To this end, the 4sU-Seq coverage representing nascent transcription was smoothed using the sliding window approach. A pseudocount of 0.1 was added to genomic positions with zero 4sU-Seq coverage, then mean values were taken over 51 bp windows centered around each genomic position. The Nrd1 PAR-CLIP signal was divided by the smoothed 4tU-Seq signal, giving the normalized Nrd1 occupancy track. The 4sU-normalized Nrd1 PAR-CLIP Bedgraph files were used to quantify Nrd1 occupancy over each CUT. These calculations were implemented in the 06-Quantification_of_Nrd1_occupancy_in_CUTs.R script.\n\nAll custom scripts and pipelines for data processing were deposited at (Ivanov, 2018).\u00a0A copy is archived at https://github.com/Maxim-Ivanov/du_Mee_et_al_2018_eLife.\n",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "c5d553af-9e3f-4217-8583-d74e8572f3ea",
+      "submission_id": "103de08c-b542-4ecc-9911-a14c0278ff45",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nick J Proudfoot, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31989.019](https://doi.org/10.7554/eLife.31989.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Efficient Termination of Nuclear lncRNA Transcription Promotes Mitochondrial Genome Maintenance\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Nick J Proudfoot (Reviewer #1), is a member of our Board of Reviewing Editors and the evaluation has been overseen by James Manley as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis paper describes, in S. cerevisiae, the case of a lncRNA (CUT60) that is positioned in tandem with an essential downstream mitochondrial protein coding gene ATP16. Remarkably, CUT60 must be efficiently terminated to prevent transcriptional interference (TI) of ATP16 with resultant loss of mitochondrial function. While TI is a well-established phenomenon for both yeast and mammalian genes, this study provides a dramatic example of this and extends mechanistic knowledge of the TI molecular mechanism. Furthermore it shows TI can also occur between a CUT type lncRNA and protein coding gene in yeast. Notably this has already been shown for SER3 in yeast as cited (Martens et al., 2004) and also in some mammalian lncRNA where pre-miRNA lncRNA fail to terminate without Drosha cleavage leading to down regulation of downstream protein coding genes by TI (Dhir et al., 2015). This later paper should also be cited.\n\nOverall the data presented is thorough and convincing as far as it goes. Essentially the results show that insertion of URA3 into the CUT60 locus disrupts termination. This causes read-through transcription into ATP16 which blocks its expression and consequently causes a dramatic reduction in cell growth due to loss of mitochondrial function. Various further insertions of other CUTs as well as sequence dissection of the CUT60 locus show that efficient termination is required to prevent ATP16 downregulation by TI.\n\nTwo expert reviewers and the Reviewing Editor have considered your paper in detail. We feel that with further data to generalise the observed role of CUT60 in protecting the tandem downstream protein coding gene ATP16 from TI together with some tighter mechanistic analysis, then your paper will contain sufficient novel data to warrant eLife publication. Also the manuscript requires a substantial rewrite to make the data more accessible to non-specialists.\n\nSpecific points.\n\n1) The ability of CUT60 to terminate transcription reading into the unidirectional ATP16 gene needs generalising. Other candidate examples of CUTs that act to block TI of downstream protein coding genes should be investigated genome wide. Presumably this class of CUT will have strong NNS termination signals. Analysis of existing NET-seq datasets could be used to identify these CUTs. Once these CUTs are identified one or more of them might be a good replacement candidate for CUT60.\n\nIndeed it is unclear whether CUT60 does not contain sequence that may be important for the ATP60 promoter since the actual replacements strategies failed to suppress totally the CUT60 deletion.\n\n2) The CUT60 termination process/signals need fuller investigation. Does the lack of TI correlate with stronger termination signals? Nascent transcription analysis showing that TI caused by loss of CUT60 termination is associated with read-through transcription into the ATP16 promoter is required. E.g.by thioU-seq or NET-seq.\n\n3) Trans mutants should be employed to decisively conclude that this is transcriptional interference. For instance nrd1 viable or attenuated mutants could be tested to establish whether they mimic the mitochondrial defects observed in CUT60 mutant? Alternatively overexpression of NNS factors could enhance suppression (also by other cut sequences) to achieve similar levels of insulation? Similarly does the tethering the CrisprCas9dead on a cut60 deletion mutant help to suppress TI?\n\n4) What is the nature or the URA3++ insert with enhanced termination? Why is its terminator now much stronger? Is this due to insertion of multiple NNS sites? Details of the exact nature of this terminator sequence is required. Also with the URA3 insertion into CUT60, the exact joins made in this homologous recombinant should be provided to understand why it is no longer efficiently terminating.\n\n5) The manuscript needs to be rewritten to make it more accessible to a general reader. Maybe start by showing the mitochondrial defect when CUT60 termination is compromised. The overly yeast specific genetic nomenclature should be simplified.\n",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8063a530-c93e-4d0e-a294-9a3763357dc0",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C1",
+      "claim": "RNA Polymerase II (Pol II) transcribes non-coding DNA into long non-coding RNAs (lncRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "RNA Polymerase II (Pol II) transcribes non-coding DNA into long non-coding RNAs (lncRNAs), but biological roles of lncRNA are unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about RNA Polymerase II function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "577543bb-f919-42a3-b8b3-5a7607d44126",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C2",
+      "claim": "Mutations in the yeast lncRNA CUT60 result in poor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that mutations in the yeast lncRNA CUT60 result in poor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "3785bc1d-4a0e-4d84-ab13-65f37e358d1d",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C3",
+      "claim": "Defective termination of CUT60 transcription causes read-through transcription across the ATP16 gene promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Defective termination of CUT60 transcription causes read-through transcription across the ATP16 gene promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by northern blot data showing extended ATP16 transcripts in cut60\u0394::URA3 mutants (Figure 2A, Figure 2\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "25b3e7c2-6f45-44e1-8845-5504ceaaa58e",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C4",
+      "claim": "Read-through transcription localizes chromatin signatures associated with Pol II elongation to the ATP16 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Read-through transcription localizes chromatin signatures associated with Pol II elongation to the ATP16 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-qPCR data showing elevated H3K36me3/H3 levels at the ATP16 promoter in cut60\u0394::URA3 mutants (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "66bc69d5-bff8-4834-b5f4-a6613b93e497",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C5",
+      "claim": "The act of Pol II elongation across the ATP16 promoter represses functional ATP16 expression by a Transcriptional Interference (TI) mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The act of Pol II elongation across this promoter represses functional ATP16 expression by a Transcriptional Interference (TI) mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP data, synthetic circuit experiments, and genetic analysis with elongation factor mutants (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "fe83de02-debc-4203-a791-4b4d3f32af79",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C6",
+      "claim": "Atp16p function in the mitochondrial ATP-synthase complex promotes mitochondrial DNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Atp16p function in the mitochondrial ATP-synthase complex promotes mitochondrial DNA stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Duvezin-Caubet et al., 2006) and experimental data showing mtDNA loss in cut60\u0394::URA3 mutants.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "7d7cee2d-dfa7-4017-b457-d425885e6f42",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C7",
+      "claim": "ATP16 repression by TI through inefficient termination of CUT60 triggers mitochondrial genome loss.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP16 repression by TI through inefficient termination of CUT60 therefore triggers mitochondrial genome loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data showing mtDNA loss (Figure 1\u2014figure supplement 1G), COX3 expression analysis (Figure 1E), and growth assays on non-fermentable carbon sources (Figure 1C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "5c7444ac-f94a-4200-a08c-582b6d664aac",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C8",
+      "claim": "The lncRNA CUT60 is divergently transcribed from the promoter of the mediator complex subunit MED2.",
+      "claim_type": "EXPLICIT",
+      "source": "The lncRNA CUT60 is divergently transcribed from the promoter of the mediator complex subunit MED2 (Poss et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Poss et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "47490e11-dbd2-4695-a066-8e753d05572c",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C9",
+      "claim": "CUT60 is located upstream in tandem of the ATP16 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CUT60 is located upstream in tandem of the ATP16 gene encoding the \u03b4-subunit of the mitochondrial ATP-synthase that couples proton translocation to ATP synthesis (Duvezin-Caubet et al., 2003; Giraud and Velours, 1994) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by schematic representation in Figure 1A and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "321913b1-ebf3-49e2-9c2e-b5cd0881ce96",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C10",
+      "claim": "ATP16 encodes the \u03b4-subunit of the mitochondrial ATP-synthase that couples proton translocation to ATP synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CUT60 is located upstream in tandem of the ATP16 gene encoding the \u03b4-subunit of the mitochondrial ATP-synthase that couples proton translocation to ATP synthesis (Duvezin-Caubet et al., 2003; Giraud and Velours, 1994) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Duvezin-Caubet et al., 2003 and Giraud and Velours, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "655396af-87e1-4cae-b90a-212382b152a1",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C11",
+      "claim": "Native Elongating Transcript sequencing (NET-seq) data indicates higher nascent Pol II transcription of MED2 and ATP16 than of CUT60.",
+      "claim_type": "EXPLICIT",
+      "source": "Native Elongating Transcript sequencing (NET-seq) data (Marquardt et al., 2014) indicates higher nascent Pol II transcription of the two flanking genes than of CUT60 (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NET-seq data visualization in Figure 1\u2014figure supplement 1A and citation to Marquardt et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "4b175c14-f64b-407d-9501-930f16f72427",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C12",
+      "claim": "Multiple independently generated isolates of cut60\u0394::URA3 mutants had a strongly reduced growth rate compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that multiple independently generated isolates of cut60\u0394::URA3 mutants had a strongly reduced growth rate compared to wild type (Figure 1B, Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by serial dilution growth assays shown in Figure 1B and Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "8519bee6-6ea9-4e54-923d-55744988ba71",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C13",
+      "claim": "cut60\u0394::URA3 fails to grow on non-fermentable carbon sources, indicating mitochondrial defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, cut60\u0394::URA3 fails to grow on non-fermentable carbon sources, indicating mitochondrial defects (Figure 1C, Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth assays on glycerol and ethanol shown in Figure 1C and Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "9ed57f20-1325-43bb-b24a-2af0ce3ef6c4",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C14",
+      "claim": "Diploids resulting from crosses of cut60\u0394::URA3 with mip1\u0394 fail to grow on non-fermentable carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that diploids resulting from crosses of cut60\u0394::URA3 with mip1\u0394 fail to grow on non-fermentable carbon sources, while they show growth on the fermentable carbon source glucose (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by test cross data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "faec1588-3868-425b-9b0c-3762a89e50ea",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C15",
+      "claim": "The mitochondrial DNA level in cut60\u0394::URA3 is reduced compared to wild type yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the mitochondrial DNA level in cut60\u0394::URA3 and mip\u03941 controls are reduced compared to wild type yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "db1f23c3-2890-4416-8e7e-fbf1abb4dd20",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C16",
+      "claim": "No qPCR signal corresponding to mtDNA is detected in cut60\u0394::URA3, suggesting a \u03c10 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We detect no qPCR signal corresponding to mtDNA, suggesting a \u03c10 phenotype in cut60\u0394::URA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "37b57a0d-2c67-4dfe-b7e9-edadd7043085",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C17",
+      "claim": "COX3 expression cannot be detected in cut60\u0394::URA3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "While we can detect strong COX3 expression in wild type, we fail to detect any COX3 expression in the p0 control mutant mip1\u0394 and cut60\u0394::URA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by northern blot data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "f3274b05-c219-451c-982e-77298c065e00",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C18",
+      "claim": "Expression of the downstream ATP16 is strongly reduced in cut60\u0394::URA3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the downstream ATP16 is strongly reduced in cut60\u0394::URA3 mutants, while we detect no expression changes of the MED2 gene (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "141e6d32-e162-4960-9737-6708555cb8f2",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C19",
+      "claim": "No expression changes of the MED2 gene are detected in cut60\u0394::URA3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the downstream ATP16 is strongly reduced in cut60\u0394::URA3 mutants, while we detect no expression changes of the MED2 gene (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "5b5b29f8-1cc5-47c2-b379-44b9ee6e341a",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C20",
+      "claim": "An extended ATP16 transcript is observed in rrp6\u0394 and at higher levels in xrn1\u0394 backgrounds in cut60\u0394::URA3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed a different size profile of ATP16 RNA in cut60\u0394::URA3 mutant strains with RNA degradation defects through rrp6\u0394 or xrn1\u0394 (Figure 2A). While we detect no ATP16 mRNA expression of the expected size in the mutants, we observe an extended ATP16 transcript in rrp6\u0394, and at higher levels in xrn1\u0394.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6c742638-9edc-4e3f-a500-9f40b2292a3b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C21",
+      "claim": "The extended ATP16 transcript detected in the cut60\u0394::URA3 mutant represents 5'-extension that originates from the CUT60 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Both probes detect a transcript coinciding in size with the extended ATP16 transcript. This data suggest that the extended ATP16 transcript detected in the cut60\u0394::URA3 mutant represents 5'-extension that originates from the CUT60 promoter and fails to efficiently terminate, resulting in read-through transcription into ATP16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by northern blot data using URA3 and ATP16 promoter probes shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "dc426016-e7af-452f-baa3-0e210be39186",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C22",
+      "claim": "A similar repression of ATP16 is observed in mutants replacing CUT60 with SUT129.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar repression of ATP16 is observed in mutants replacing CUT60 with SUT129 (cut60\u0394::SUT129), indicating that this effect is not dependent on the URA3 sequence (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "ab8d2338-ef69-402d-a6a9-dfbe95224673",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C23",
+      "claim": "Expressing CUT60 in trans from the SUT129 regulatory regions does not restore ATP16 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expressing CUT60 in trans from the SUT129 regulatory regions (sut129\u0394::CUT60) does not restore ATP16 expression (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "17c0093a-2f10-4eeb-a486-8245503022b5",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C24",
+      "claim": "CUT60 has a cis-acting function to promote ATP16 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate a cis-acting function of the CUT60 locus to promote ATP16 expression, either as DNA element or non-coding transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that trans expression does not restore ATP16 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "a2dc8536-1090-4c08-bfdf-eca455315e07",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C25",
+      "claim": "All complementation constructs (V1-V4) restore ATP16 expression to wild-type level.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that all constructs restore ATP16 expression to the level detected in wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by northern blot data and quantification shown in Figure 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "d97602c3-bc02-48c8-8590-297bb6943a73",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C26",
+      "claim": "There is no significantly different ATP16 expression between construct V1 (lacking CUT60) and construct V2 (including CUT60).",
+      "claim_type": "EXPLICIT",
+      "source": "Our statistical tests show no significantly different ATP16 expression between these constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantification shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6980a96b-abb1-49f1-af82-f93fe181b1e8",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C27",
+      "claim": "DNA sequence elements located within the CUT60 sequence do not provide promoter function to explain reduced ATP16 expression in cells lacking CUT60 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly argue against DNA sequence elements providing promoter function located in CUT60 as explanation for reduced ATP16 expression and growth in cells lacking CUT60 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the complementation data showing V1 (lacking CUT60) restores ATP16 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "32a1b0fc-ee98-4cdc-8261-259cecfddb11",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C28",
+      "claim": "SUT129 cannot substitute CUT60 function.",
+      "claim_type": "EXPLICIT",
+      "source": "In cut60\u0394::SUT129, an extended ATP16 transcript with reduced expression is detected (Figure 3A). We conclude that SUT129 cannot substitute CUT60 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "e582b353-860e-49e6-905f-ed7ed5ff9c8b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C29",
+      "claim": "ATP16 expression is restored when the 5'-SUT129-3'-CUT60 hybrid replaces CUT60.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, ATP16 expression is restored when the 5'-SUT129-3'-CUT60 hybrid replaces CUT60 (Figure 3A, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 3A and quantification in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "3c6fe2d3-b904-40d9-b062-a947f949b76c",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C30",
+      "claim": "Efficient transcriptional termination is mapped to the 3'-half of CUT60.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of a SUT-like transcript resulting from the 5'-SUT129-3'-CUT60 hybrid maps efficient transcriptional termination to the 3'-half of CUT60.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that the 5'-SUT129-3'-CUT60 hybrid restores ATP16 expression while 5'-CUT60-3'-SUT129 does not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "e9b1e47a-6c29-4f2a-834d-94d295e2339f",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C31",
+      "claim": "Efficient transcriptional termination of CUT60 promotes ATP16 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that efficient transcriptional termination of CUT60 promotes ATP16 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the hybrid construct experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "d31a6f56-6bfb-49bc-9d1b-d7cb5283bbfe",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C32",
+      "claim": "The essential Nrd1-Nab3-Sen1 (NNS) pathway mediates termination of Pol II transcription of short non-coding transcripts including CUTs and SUTs.",
+      "claim_type": "EXPLICIT",
+      "source": "The essential budding yeast Nrd1-Nab3-Sen1 (NNS) pathway mediates termination of Pol II transcription of short non-coding transcripts including CUTs and SUTs (Porrua and Libri, 2015; Schulz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Porrua and Libri, 2015 and Schulz et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "d37f3f16-3d79-4033-8ebc-e2d9fd6d17bd",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C33",
+      "claim": "Hypomorphic nrd1 mutations reveal 3'-extended CUT60 RNA species.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for NNS-mediated transcriptional termination of CUT60 is supported by hypomorphic nrd1 mutations that reveal 3'-extended CUT60 RNA species (Marquardt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marquardt et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "8dac6fb4-b828-4e15-a961-2842820d2212",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C34",
+      "claim": "Conditional Nrd1 depletion results in more Pol II-associated RNA downstream of CUT60.",
+      "claim_type": "EXPLICIT",
+      "source": "Nascent transcription data (Pol II PAR-CLIP) following conditional Nrd1 depletion support a direct role of Nrd1 in CUT60 termination as depletion results in more Pol II-associated RNA downstream of CUT60 (Schaughency et al., 2014) (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Schaughency et al., 2014 and visualization in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "e06aa97e-fd99-4150-a5e5-c2f8b0b43ee2",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C35",
+      "claim": "nrd1-1 and nrd1\u0394151-214 mutants fail to grow on non-fermentable carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, nrd1-1, nrd1\u0394151\u2013214 and the mip1\u0394 \u03c10 control fail to grow on non-fermentable carbon sources, while we can recapitulate the reduced growth phenotype of both mutant alleles on fermentable carbon sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by growth assay data shown in Figure 3B and Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "a017299c-e832-4e24-aa42-769c0b1ea07b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C36",
+      "claim": "Both nrd1 mutant alleles reduce ATP16 expression by about 40% compared to their respective isogenic controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Both nrd1 mutant alleles reduce ATP16 expression by about 40% compared to their respective isogenic controls (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot quantification shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "5325100a-f152-4925-9fe5-890eacfe81c6",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C37",
+      "claim": "CUT60 termination by the NNS pathway promotes ATP16 expression and mtDNA maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these data suggest that CUT60 termination by the NNS pathway promotes ATP16 expression and mtDNA maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the nrd1 mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "dbec4e7d-5e4c-40a7-994e-00f56b13ee02",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C38",
+      "claim": "ATP16 expression increased compared to cut60\u0394::URA3 controls in the cut60\u0394::CUT217, cut60\u0394::CUT170 and cut60\u0394::#78 replacements.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP16 expression increased compared to cut60\u0394::URA3 controls in the cut60\u0394::CUT217, cut60\u0394::CUT170 and cut60\u0394::#78 even though not fully to wild type level (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6065ac14-435e-474e-93e7-a129ab6647e1",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C39",
+      "claim": "The cut60\u0394::CUT95, cut60\u0394::CUT277 and cut60\u0394::CUT48 replacements result in no detectable ATP16 expression increase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cut60\u0394::CUT95, cut60\u0394::CUT277 and cut60\u0394::CUT48 replacements result in no detectable ATP16 expression increase (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "ca3879ba-6275-43a8-8137-2d99df86dd89",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C40",
+      "claim": "Reintroducing CUT60 restores ATP16 expression, arguing against epigenetic effects preventing ATP16 expression in CUT replacement strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Reintroducing CUT60 restores ATP16 expression, arguing against epigenetic effects preventing ATP16 expression in CUT replacement strains (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by northern blot data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "3962d814-be06-4ce2-ade7-b36f950c78b0",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C41",
+      "claim": "ATP16 expression increases with all three strategies to enhance termination of URA3 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, ATP16 expression increases with all three strategies to enhance termination of URA3 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by northern blot data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "43537e01-8f76-4c79-89f9-d77d94ae942a",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C42",
+      "claim": "The process of transcriptional termination promotes ATP16 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly argue for a model in which the process of transcriptional termination promotes ATP16 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the terminator addition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6c13d019-f6cf-4e1d-a73e-2a9a09518d6b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C43",
+      "claim": "H3K36me3/H3 levels are significantly increased in cut60\u0394::URA3 compared to controls in the ATP16 promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, H3K36me3/H3 levels are significantly increased in cut60\u0394::URA3 compared to controls in the ATP16 promoter region (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "c3c0b37e-49d7-4186-8d39-023504bff883",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C44",
+      "claim": "ATP16 repression is associated with elevated chromatin signatures of Pol II elongation at the ATP16 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ChIP analyses indicate that ATP16 repression is associated with elevated chromatin signatures of Pol II elongation at the ATP16 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ChIP data showing elevated H3K36me3 at the ATP16 promoter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "34db06a1-4a80-4f1c-a414-5fc845076135",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C45",
+      "claim": "YFP expression from the ATP16 promoter in circuit II is significantly reduced compared to circuit I.",
+      "claim_type": "EXPLICIT",
+      "source": "YFP expression from the ATP16 promoter in circuit II is significantly reduced compared to circuit I, while mCherry expression appears largely unaffected (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "b555e2f3-921f-46cc-9578-9dbe2a96fc36",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C46",
+      "claim": "YFP fluorescence is normally distributed across thousands of individual cells, supporting the hypothesis that ATP16 expression is gradually reduced in a homogenous population.",
+      "claim_type": "EXPLICIT",
+      "source": "YFP fluorescence is normally distributed across thousands of individual cells, supporting the hypothesis that ATP16 expression is gradually reduced in a homogenous population (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histogram data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "b854ec1a-68e4-4066-8d7f-674140cc01c3",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C47",
+      "claim": "set2\u0394 mutation increases YFP expression in circuit II but not in circuit I.",
+      "claim_type": "EXPLICIT",
+      "source": "While mCherry expression is unchanged in set2\u0394 mutants, YFP expression increases (Figure 4D). This effect of set2\u0394 is not observed in circuit I (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4D and Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "4e3e318e-7cd0-4787-97c3-c60f80478301",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C48",
+      "claim": "spt16-197 and spt6-1004 mutants increase YFP expression specifically in circuit II.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants increase YFP expression specifically in circuit II, consistent with TI suppression (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "392bdb4f-df87-49e4-ac79-990bd65b0033",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C49",
+      "claim": "Pol II elongation factors previously associated with gene repression by TI are required for full repression of the ATP16 promoter region when the termination of upstream lncRNA transcription is inefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Pol II elongation factors previously associated with gene repression by TI are required for full repression of the ATP16 promoter region when the termination of upstream lncRNA transcription is inefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the genetic analysis with Set2, Spt6, and Spt16 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "c50cbde3-20b8-42a4-b6d2-e4d1389424e4",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C50",
+      "claim": "Efficient termination of upstream lncRNA transcription ensures ATP16 promoter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our data suggest that efficient termination of upstream lncRNA transcription ensures ATP16 promoter activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the collective experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "75fd90ec-0aec-41dc-8b89-1eae960486d6",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C51",
+      "claim": "CUT60 termination promotes functional ATP16 expression, the maintenance of mitochondrial DNA and yeast growth.",
+      "claim_type": "EXPLICIT",
+      "source": "CUT60 termination promotes functional ATP16 expression, the maintenance of mitochondrial DNA and yeast growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the collective experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "889cb181-779b-4aef-9397-4b579087a45f",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C52",
+      "claim": "The dependence of mitochondrial DNA stability on CUT60 termination provides a compelling example for the biological significance of pervasive non-coding transcription in genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "All in all, the dependence of mitochondrial DNA stability on CUT60 termination provides a compelling example for the biological significance of pervasive non-coding transcription in genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the overall findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "25873e18-0375-4e2a-87c9-9a642ace3252",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C53",
+      "claim": "ncDNA sequences vastly outnumber protein coding DNA sequences in most eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ncDNA sequences vastly outnumber protein coding DNA sequences in most eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "cba0bb27-d321-41c7-8505-0628902a602d",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C54",
+      "claim": "Genome-wide Pol II activity at ncDNA is referred to as 'pervasive transcription' of eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide Pol II activity at ncDNA is referred to as 'pervasive transcription' of eukaryotic genomes (Jensen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jensen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "f960cc53-55fe-4462-8c16-4d06fda24974",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C55",
+      "claim": "The expression levels of lncRNA are generally lower than those of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the expression levels of lncRNA are generally lower than those of genes (Schlackow et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schlackow et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "89e18e29-db63-48a8-a660-6003614745aa",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C56",
+      "claim": "Reasons for low expression levels of lncRNA include a combination of tissue-specific expression and targeted lncRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reasons for low expression levels of lncRNA include a combination of tissue-specific expression and targeted lncRNA degradation (Deveson et al., 2017; Jensen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deveson et al., 2017 and Jensen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "a72aeb37-0cb1-4258-9ce7-af26fefde62d",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C57",
+      "claim": "lncRNA transcription can be strong, for example divergent lncRNA transcription from gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of nascent Pol II transcription reveal that lncRNA transcription can be strong, for example divergent lncRNA transcription from gene promoters (Churchman and Weissman, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Churchman and Weissman, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "4194558e-7d98-47f3-a510-cfd9ea205505",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C58",
+      "claim": "The strength of divergent lncRNA transcription is actively regulated at the level of initiation through chromatin-based mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of divergent lncRNA transcription is actively regulated at the level of initiation through chromatin-based mechanisms (Marquardt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marquardt et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "3a7879c5-19c7-408c-968f-da41cb0ea323",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C59",
+      "claim": "As a class, lncRNA molecules are poorly conserved on sequence level.",
+      "claim_type": "EXPLICIT",
+      "source": "As a class, lncRNA molecules are poorly conserved on sequence level, which challenges the idea of an evolutionarily conserved function of lncRNA (Graur et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Graur et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "58f10dc5-2706-4c33-9084-488f2dd2d942",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C60",
+      "claim": "Cryptic Unstable Transcripts (CUTs) accumulate in mutants of the nuclear exosome 3'-to-5' RNA decay pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryptic Unstable Transcripts (CUTs) accumulate in mutants of the nuclear exosome 3'-to-5' RNA decay pathway (Davis and Ares, 2006; Wyers et al., 2005; Xu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Davis and Ares, 2006; Wyers et al., 2005; Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "dcd05f1b-8005-4dda-a65e-d095eb11d4fe",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C61",
+      "claim": "Mutations in the 5'-to-3' cytoplasmic decapping-based RNA degradation pathway define Xrn1-sensitive Unstable Transcripts (XUTs).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the 5'-to-3' cytoplasmic decapping-based RNA degradation pathway define Xrn1-sensitive Unstable Transcripts (XUTs) (van Dijk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van Dijk et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "7d66bb7a-e57b-4eaa-ad92-98db9cf0591d",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C62",
+      "claim": "SUTs are targeted for degradation by both the nuclear exosome and the cytoplasmic Xrn1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "SUTs are targeted for degradation by both the nuclear exosome and the cytoplasmic Xrn1 pathway (Marquardt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marquardt et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "4490378d-3bac-4896-a02e-6968763cb88b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C63",
+      "claim": "A combination of three molecular hallmarks associated with early stages of Pol II transcription recruit NNS to nascent lncRNA transcripts: Histone 3 lysine 4 trimethylation (H3K4me3), RNA consensus motifs in nascent lncRNA, and phosphorylation of the serine five residue in the Pol II largest subunit C-terminal repeat domain (Pol II CTD).",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of three molecular hallmarks associated with early stages of Pol II transcription recruit NNS to nascent lncRNA transcripts: Histone 3 lysine 4 trimethylation (H3K4me3), RNA consensus motifs in nascent lncRNA, and phosphorylation of the serine five residue in the Pol II largest subunit C-terminal repeat domain (Pol II CTD) (Carroll et al., 2007; Terzi et al., 2011; Vasiljeva et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carroll et al., 2007; Terzi et al., 2011; Vasiljeva et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "560de827-3a9a-4fa7-aff9-92ca219d9893",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C64",
+      "claim": "Phosphorylation of the Pol II CTD at tyrosine 1 decreases NNS recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, phosphorylation of the Pol II CTD at tyrosine 1 has the opposite effect and decreases NNS recruitment (Yurko et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yurko et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "afa7e0e6-be02-4fb3-bd9e-f50905258ad9",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C65",
+      "claim": "NNS-mediated transcriptional termination of CUTs is directly linked to the recruitment of the nuclear exosome RNA degradation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "NNS-mediated transcriptional termination of CUTs is directly linked to the recruitment of the nuclear exosome RNA degradation machinery (Vasiljeva and Buratowski, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vasiljeva and Buratowski, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "b6157902-5269-4404-9c57-8cff1e6cefdc",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C66",
+      "claim": "Equivalent pathways ensure that early transcription termination of lncRNA is linked to co-transcriptional degradation by the nuclear exosome in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "While NNS components are specific to budding yeast, equivalent pathways ensure that early transcription termination of lncRNA is linked to co-transcriptional degradation by the nuclear exosome in mammals (Ntini et al., 2013; Ogami et al., 2017; Preker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ntini et al., 2013; Ogami et al., 2017; Preker et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "33630e05-9ab1-4a62-bf17-fa35f3ed0092",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C67",
+      "claim": "The termination of Pol II transcription for polyadenylated RNAs is currently best described by the 'Torpedo Model'.",
+      "claim_type": "EXPLICIT",
+      "source": "The termination of Pol II transcription for polyadenylated RNAs is currently best described by the 'Torpedo Model' (Kim et al., 2004; Richard and Manley, 2009; West et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2004; Richard and Manley, 2009; West et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "507e741b-f13b-43f1-a6b9-2beaafbb9932",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C68",
+      "claim": "Failures in the Pol II termination process can impact on genomic stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Failures in the Pol II termination process can impact on genomic stability (Aguilera and Garc\u00eda-Muse, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aguilera and Garc\u00eda-Muse, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "325cf7f1-93ac-45b9-b911-24709e2b079d",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C69",
+      "claim": "Inefficient termination can blur the boundaries of neighboring transcription units with negative effects on gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Inefficient termination can blur the boundaries of neighboring transcription units with negative effects on gene expression (Ard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ard et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "f5c16162-336d-4250-9b75-d2c2235a2d6a",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C70",
+      "claim": "TI of gene promoters by read-through transcription of upstream protein coding genes has been detected in additional organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "TI of gene promoters by read-through transcription of upstream protein coding genes has since been detected in additional organisms (Greger et al., 2000; Hedtke and Grimm, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Greger et al., 2000; Hedtke and Grimm, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "ad87df63-b8f7-46fa-9dce-ed3843c003f8",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C71",
+      "claim": "TI repression of gene promoters can be triggered by overlapping lncRNA transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "TI repression of gene promoters can also be triggered by overlapping lncRNA transcription (Ard et al., 2014; Kim et al., 2016; Mellor et al., 2016; Touat-Todeschini et al., 2017), or by termination failures of transcripts embedded within lncRNA such as pri-miRNA (Dhir et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ard et al., 2014; Kim et al., 2016; Mellor et al., 2016; Touat-Todeschini et al., 2017; Dhir et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6f379164-d5f7-4105-a766-d693dceb9fac",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C72",
+      "claim": "Upstream lncRNA transcription across the downstream gene promoter represents a mechanism to adjust gene expression to the environmental conditions in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Upstream lncRNA transcription across the downstream gene promoter represents a mechanism to adjust gene expression to the environmental conditions in budding yeast (Martens et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Martens et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "e417c0c0-4b37-4f37-bf54-ae2672fcee10",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C73",
+      "claim": "No initiation from the SER3 promoter occurs through co-transcriptional changes in the chromatin structure associated with Pol II elongation when Pol II is actively transcribing across the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though Pol II is actively transcribing across the promoter of the downstream SER3 gene required for serine biosynthesis, no initiation from the SER3 promoter occurs through co-transcriptional changes in the chromatin structure associated with Pol II elongation (Hainer et al., 2011; Martens et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hainer et al., 2011; Martens et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "4e6c9287-a834-4456-9aed-f39bb150ef83",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C74",
+      "claim": "Gene expression can be attenuated by depositing methylation marks over promoters by cryptic transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, gene expression can be attenuated by depositing methylation marks over promoters by cryptic transcription (Kim et al., 2012; Pinskaya et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2012; Pinskaya et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "19d36abc-eff8-4228-9a0d-025155b0eddd",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C75",
+      "claim": "In atp16 mutant backgrounds the loss of the mitochondrial genome represents a survival strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in atp16 mutant backgrounds the loss of the mitochondrial genome represents a survival strategy (Duvezin-Caubet et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duvezin-Caubet et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6f237638-7a36-4509-9d43-5693b8af348d",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C76",
+      "claim": "Loss of the mitochondrial genome efficiently blocks proton leakage, as the two subunits encoding the core of the ATP-synthase proton channel (ATP6 and ATP9) are located on the mitochondrial genome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, acquiring \u03c10 efficiently blocks proton leakage, as the two subunits encoding the core of the ATP-synthase proton channel (ATP6 and ATP9) are located on the mitochondrial genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the location of ATP6 and ATP9 genes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "375a640c-c89f-470e-862f-e32b32a163c6",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C77",
+      "claim": "Loss of mtDNA disrupts proton channel formation to prevent uncoupling of the ATP synthase in the absence of a functional \u03b4-subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, loss of the mitochondrial genome disrupts proton channel formation to prevent uncoupling of the ATP synthase in the absence of a functional \u03b4-subunit (Duvezin-Caubet et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duvezin-Caubet et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "15a89d4f-2b5b-41bf-b821-0b1877d2e219",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C78",
+      "claim": "Divergent transcription of lncRNA from eukaryotic gene promoters represents an important source of lncRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Divergent transcription of lncRNA from eukaryotic gene promoters represents an important source of lncRNA (Sigova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sigova et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "e46428c0-9c77-4850-8d36-f1aadd2dacc8",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C79",
+      "claim": "Divergent lncRNA transcription is repressed by lncRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Divergent lncRNA transcription is repressed by lncRNA degradation (Almada et al., 2013; Ntini et al., 2013; Xu et al., 2009), and by a repressive chromatin architecture (Jin et al., 2017; Marquardt et al., 2014; Rege et al., 2015; Tan-Wong et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Almada et al., 2013; Ntini et al., 2013; Xu et al., 2009; Jin et al., 2017; Marquardt et al., 2014; Rege et al., 2015; Tan-Wong et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "f6584a55-3bb9-4767-8b9d-5cacf8680bbf",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C80",
+      "claim": "Inefficient transcriptional termination and environmentally regulated expression define the species of budding yeast SUTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Inefficient transcriptional termination and environmentally regulated expression define the species of budding yeast SUTs (Marquardt et al., 2011; Xu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Marquardt et al., 2011; Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "5a5d203f-82d9-44c9-a9df-f9465e011786",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C81",
+      "claim": "Regulation of FLO11 expression is regulated at the level of individual cells resulting in heterogeneous expression states.",
+      "claim_type": "EXPLICIT",
+      "source": "While regulation of FLO11 expression is regulated at the level of individual cells resulting in heterogeneous expression states (Bumgarner et al., 2012), our analysis of circuit II suggests that ATP16 expression is reduced in a homogenous population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bumgarner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "317f7f26-3e2f-4aa9-a703-2d698c3427dd",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C82",
+      "claim": "Many human lncRNA share characteristic cell-type-specific and environmentally regulated expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While the SUT nomenclature is specific to budding yeast, it should be noted that many human lncRNA share characteristic cell-type-specific and environmentally regulated expression (Deveson et al., 2017) and cis-acting functions are increasingly appreciated (Engreitz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deveson et al., 2017 and Engreitz et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "a82fa08f-056a-4188-8957-b22e02d1dc9b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C83",
+      "claim": "Divergent lncRNA transcription of human promoter upstream transcripts (PROMPTs) may overlap with downstream genes reminiscent of the MED2-CUT60-ATP16 circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Divergent lncRNA transcription of human promoter upstream transcripts (PROMPTs) may overlap with downstream genes reminiscent of the MED2-CUT60-ATP16 circuitry (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "25b208fb-aa4a-4bb8-b430-7dff40e328af",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C84",
+      "claim": "Strong binding of Nrd1 and Nab3 to CUT60 is detected by PAR-CLIP, suggesting CUT60 represents a strong transcriptional terminator for the NNS pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We detect strong binding of Nrd1 and Nab3 to CUT60 by PAR-CLIP, suggesting CUT60 represents a strong transcriptional terminator for the NNS pathway (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PAR-CLIP data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "b93d1f04-6f79-4621-b39b-f149b7ccce0b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C85",
+      "claim": "The ATP16 promoter shows little evidence of divergent lncRNA transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though most promoters in eukaryotic genomes initiate transcription bi-directionally (Preker et al., 2008; Seila et al., 2008), the ATP16 promoter shows little evidence of divergent lncRNA transcription (Figure 1\u2014figure supplement 1A, Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NET-seq data shown in Figure 1\u2014figure supplement 1A and Figure 3\u2014figure supplement 2A, and citations to Preker et al., 2008; Seila et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "a15e7764-c1d4-4bfa-965c-fd09837f5354",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C86",
+      "claim": "Divergent lncRNA transcription could provide an opposing wave of Pol II transcription that may trigger termination of incoming read-through transcripts by polymerase collisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Divergent lncRNA transcription could conceivably provide an opposing wave of Pol II transcription that may trigger termination of incoming read-through transcripts by polymerase collisions, as proposed for the yeast BAT2 promoter (Hobson et al., 2012; Mellor et al., 2016; Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hobson et al., 2012; Mellor et al., 2016; Nguyen et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "865c34f6-ee8e-49b6-8d5c-0e3891dd5201",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C87",
+      "claim": "The ATP16 promoter lacks binding sites for the Reb1p and Rap1p transcription factors that prevent read-through transcription by a road-blocking mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATP16 promoter lacks binding sites for the Reb1p and Rap1p transcription factors that prevent read-through transcription by a road-blocking mechanism, which may also contribute to the sensitivity for read-through repression (Candelli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Candelli et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "c4e4bf17-41fb-4b72-875e-0582fe80f798",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C88",
+      "claim": "Promoter repression by TI can be partially overcome by increasing the levels of promoter-specific transcription factors to trigger transcriptional initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been established that promoter repression by TI can be partially overcome by increasing the levels of promoter-specific transcription factors to trigger transcriptional initiation (Greger et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Greger et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "e465c24d-5f13-4245-9834-ea4441459664",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C89",
+      "claim": "Set2p is required for TI by sufficiently long upstream interfering transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Set2p is required for TI by sufficiently long upstream interfering transcripts (Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "1bfe82c5-e10c-4cb2-8e0a-60a0ac30089f",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C90",
+      "claim": "The histone chaperones Spt6p and Spt16p are required for TI without an apparent size limit of the interfering transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone chaperones Spt6p and Spt16p are required for TI without an apparent size limit of the interfering transcript (Ard and Allshire, 2016; Hainer et al., 2011; Winston et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ard and Allshire, 2016; Hainer et al., 2011; Winston et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "92113568-347c-4c09-b410-ecefc456907e",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C91",
+      "claim": "Human lncRNA sequences are rich in cis-elements triggering polyadenylation and could help to protect from TI akin to CUT60.",
+      "claim_type": "EXPLICIT",
+      "source": "Human lncRNA sequences are rich in cis-elements triggering polyadenylation and could help to protect from TI akin to CUT60 (Almada et al., 2013; Ntini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Almada et al., 2013; Ntini et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6086e6cc-3c92-4b40-bffb-ccd8f0a1bf03",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "claim_id": "C92",
+      "claim": "Read-through transcription in human is associated with cellular responses to viral infection and osmotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Read-through transcription in human is associated with cellular responses to viral infection (Rutkowski et al., 2015) and osmotic stress (Vilborg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rutkowski et al., 2015 and Vilborg et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deletion of CUT60 (cut60\u0394::URA3) causes poor growth, failure to grow on non-fermentable carbon sources, and loss of mitochondrial DNA (\u03c10 phenotype). Multiple independent isolates show consistent phenotypes, and test crosses with mip1\u0394 confirm mitochondrial defects. qPCR and northern blot analyses demonstrate complete loss of mtDNA and absence of mitochondrially-encoded COX3 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12\u2013C17 provide converging experimental evidence from growth assays (Figures 1B, 1C, 1D), qPCR (Figure 1\u2014figure supplement 1G), and northern blots (Figure 1E) demonstrating that CUT60 deletion leads to mitochondrial genome loss. Multiple independent isolates and appropriate controls (mip1\u0394) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "01adb70f-e4e5-4ce6-a69e-1dd651d81ee2",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Defective termination of CUT60 transcription causes read-through transcription into ATP16, resulting in strongly reduced ATP16 expression. Extended ATP16 transcripts originating from the CUT60 promoter are detected in RNA decay mutants (rrp6\u0394, xrn1\u0394), and probing experiments confirm 5'-extension from the CUT60 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18, C20\u2013C21 are supported by northern blot data (Figure 2A, Figure 2\u2014figure supplement 1B) showing extended ATP16 transcripts in cut60\u0394::URA3 mutants and RNA decay pathway mutants. The use of multiple probes (URA3, ATP16 promoter) provides strong evidence for read-through transcription.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "6ec36ffb-0d2e-490f-a730-71e81e2efe26",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CUT60 functions in cis to promote ATP16 expression. Replacing CUT60 with SUT129 causes similar ATP16 repression, while expressing CUT60 in trans does not restore ATP16 expression. Complementation experiments show that constructs lacking CUT60 sequences (V1) restore ATP16 expression to wild-type levels, arguing against DNA sequence elements within CUT60 providing promoter function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22\u2013C27 are supported by northern blot data (Figure 2A, 2C, 2D) and statistical analysis showing no significant difference between V1 (lacking CUT60) and V2 (including CUT60). The trans expression experiment and complementation data collectively support a cis-acting function independent of CUT60 DNA sequence elements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "0adef7ff-14a6-4028-8929-c590e305f885",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Efficient transcriptional termination of CUT60 promotes ATP16 expression. SUT129 cannot substitute CUT60 function, but a 5'-SUT129-3'-CUT60 hybrid restores ATP16 expression, mapping efficient termination to the 3'-half of CUT60. The 5'-CUT60-3'-SUT129 hybrid fails to restore ATP16 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28\u2013C31 are supported by northern blot data (Figure 3A, Figure 3\u2014figure supplement 1C) showing differential ATP16 expression in hybrid constructs. The mapping of termination function to the 3'-half of CUT60 is logically inferred from the complementary behavior of the two hybrid constructs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "be723654-f405-4680-b4f7-77c0cd1a813f",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The NNS (Nrd1-Nab3-Sen1) pathway mediates CUT60 termination and promotes ATP16 expression. Hypomorphic nrd1 mutations (nrd1-1, nrd1\u0394151-214) cause failure to grow on non-fermentable carbon sources and reduce ATP16 expression by ~40%. Nrd1 depletion increases Pol II-associated RNA downstream of CUT60.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32\u2013C37 are supported by growth assays (Figure 3B), northern blots (Figure 3C, Figure 3\u2014figure supplement 1F), and Pol II PAR-CLIP data (Figure 3\u2014figure supplement 2A). The convergence of genetic, expression, and nascent transcription data strongly supports NNS-mediated termination of CUT60.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "70392178-1392-4c48-9d93-bc99fe942a9b",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Replacement of CUT60 with different CUTs shows variable ability to restore ATP16 expression. CUT217, CUT170, and #78 partially restore ATP16 expression, while CUT95, CUT277, and CUT48 do not. Reintroducing CUT60 after deletion restores ATP16 expression, ruling out epigenetic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38\u2013C40 are supported by northern blot data (Figure 3D, 3E) showing differential ATP16 expression across CUT replacements. The reintroduction experiment (C40) provides important control evidence against epigenetic mechanisms. However, none of the tested CUTs fully restore wild-type ATP16 levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "a70ff02c-6e56-4196-8241-be47bbaf447c",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adding termination sequences (URA3 terminator variants, TRP1 terminator) downstream of URA3 in cut60\u0394::URA3 mutants increases ATP16 expression with all three strategies tested, supporting a model where transcriptional termination promotes ATP16 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41\u2013C42 are supported by northern blot data (Figure 3F) showing increased ATP16 expression with three different terminator additions. This provides strong functional evidence that the process of termination, rather than specific CUT60 sequences, is critical for ATP16 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "aa66c2d5-27b1-405f-90a7-607900d4a3ef",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Read-through transcription localizes chromatin signatures of Pol II elongation (H3K36me3) to the ATP16 promoter. H3K36me3/H3 levels are significantly elevated at the ATP16 promoter in cut60\u0394::URA3 compared to controls, consistent with transcriptional interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C43\u2013C44 are supported by ChIP-qPCR data (Figure 4A) showing statistically significant increases in H3K36me3/H3 at the ATP16 promoter in cut60\u0394::URA3 mutants. The specificity to the promoter region (not gene body) supports the transcriptional interference model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pol II elongation across the ATP16 promoter represses ATP16 expression by transcriptional interference (TI). Synthetic circuits show reduced YFP expression from the ATP16 promoter when upstream termination is inefficient (circuit II vs. circuit I). Mutations in elongation factors (set2\u0394, spt6-1004, spt16-197) increase YFP expression specifically in circuit II, demonstrating their requirement for TI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C45\u2013C50 are supported by flow cytometry data (Figure 4C, 4D, 4E) showing differential YFP expression in synthetic circuits and genetic suppression by elongation factor mutants. The normal distribution of YFP fluorescence (C46) and specificity of genetic effects to circuit II provide strong evidence for TI mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "88f82f66-cb27-463b-9646-34a872955ce8",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Atp16p function in the mitochondrial ATP-synthase promotes mtDNA stability, and ATP16 repression by transcriptional interference through inefficient CUT60 termination triggers mitochondrial genome loss. CUT60 termination thus promotes functional ATP16 expression, mtDNA maintenance, and yeast growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6\u2013C7, C51 integrate prior knowledge (C6, citing Duvezin-Caubet et al., 2006) with experimental data showing mtDNA loss (C15\u2013C17), ATP16 repression (C18), and growth defects (C2, C12\u2013C13) in cut60\u0394 mutants. The mechanistic link through TI (C5, C49) provides a coherent explanation connecting nuclear lncRNA termination to organellar genome stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "695cd54b-f70e-4cb0-8e40-92a1a2d58998",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CUT60 is a divergently transcribed lncRNA from the MED2 promoter, located upstream in tandem of ATP16. NET-seq data shows higher nascent transcription of MED2 and ATP16 compared to CUT60. ATP16 encodes the \u03b4-subunit of mitochondrial ATP-synthase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8\u2013C11 establish the genomic context and are supported by citations (C8, C10), schematic representation (C9, Figure 1A), and NET-seq data (C11, Figure 1\u2014figure supplement 1A). These provide essential background for interpreting the functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "c9770518-87b2-4fe6-a726-68aea1a6cb58",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MED2 expression is unaffected in cut60\u0394::URA3 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by northern blot data (Figure 2\u2014figure supplement 1A) showing no change in MED2 expression. This control demonstrates specificity of the effect to the downstream ATP16 gene.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "84401bee-ed1f-4cf9-ba9a-6a6f8d3a9129",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Strong binding of Nrd1 and Nab3 to CUT60 is detected by PAR-CLIP, suggesting CUT60 is a strong NNS terminator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is supported by PAR-CLIP data (Figure 3\u2014figure supplement 3). This provides molecular evidence for NNS recruitment to CUT60, consistent with the functional termination data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "68feb2e1-3a01-4fbf-8cb0-f9d11b1d559a",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The ATP16 promoter shows little evidence of divergent lncRNA transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by NET-seq data (Figure 1\u2014figure supplement 1A, Figure 3\u2014figure supplement 2A) and citations. This observation is relevant for understanding why ATP16 may be particularly sensitive to read-through transcription.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "ccb03f1a-4303-4e2e-8247-a5b8293104e7",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The dependence of mitochondrial DNA stability on CUT60 termination provides a compelling example for the biological significance of pervasive non-coding transcription in genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is an interpretive conclusion supported by the collective experimental findings (C2\u2013C51). The connection between nuclear lncRNA termination and organellar genome stability represents a novel biological insight, though the broader generalizability requires future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    },
+    {
+      "id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31",
+      "content_id": "a053ba98-63a9-4858-9edc-22fe2c761e54",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context for lncRNA biology, transcriptional termination, transcriptional interference, and related mechanisms. These claims establish the scientific framework and cite relevant prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C53\u2013C92 represent established knowledge and prior work supported by appropriate citations. These provide essential context but do not constitute new findings from this study. The citations appear appropriate and accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:35:40.904847Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "577543bb-f919-42a3-b8b3-5a7607d44126",
+      "result_id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8"
+    },
+    {
+      "claim_id": "4b175c14-f64b-407d-9501-930f16f72427",
+      "result_id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8"
+    },
+    {
+      "claim_id": "8519bee6-6ea9-4e54-923d-55744988ba71",
+      "result_id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8"
+    },
+    {
+      "claim_id": "9ed57f20-1325-43bb-b24a-2af0ce3ef6c4",
+      "result_id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8"
+    },
+    {
+      "claim_id": "faec1588-3868-425b-9b0c-3762a89e50ea",
+      "result_id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8"
+    },
+    {
+      "claim_id": "db1f23c3-2890-4416-8e7e-fbf1abb4dd20",
+      "result_id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8"
+    },
+    {
+      "claim_id": "37b57a0d-2c67-4dfe-b7e9-edadd7043085",
+      "result_id": "0063e60c-1fc6-4b14-947b-f5ff24d908e8"
+    },
+    {
+      "claim_id": "3785bc1d-4a0e-4d84-ab13-65f37e358d1d",
+      "result_id": "01adb70f-e4e5-4ce6-a69e-1dd651d81ee2"
+    },
+    {
+      "claim_id": "f3274b05-c219-451c-982e-77298c065e00",
+      "result_id": "01adb70f-e4e5-4ce6-a69e-1dd651d81ee2"
+    },
+    {
+      "claim_id": "5b5b29f8-1cc5-47c2-b379-44b9ee6e341a",
+      "result_id": "01adb70f-e4e5-4ce6-a69e-1dd651d81ee2"
+    },
+    {
+      "claim_id": "6c742638-9edc-4e3f-a500-9f40b2292a3b",
+      "result_id": "01adb70f-e4e5-4ce6-a69e-1dd651d81ee2"
+    },
+    {
+      "claim_id": "dc426016-e7af-452f-baa3-0e210be39186",
+      "result_id": "6ec36ffb-0d2e-490f-a730-71e81e2efe26"
+    },
+    {
+      "claim_id": "ab8d2338-ef69-402d-a6a9-dfbe95224673",
+      "result_id": "6ec36ffb-0d2e-490f-a730-71e81e2efe26"
+    },
+    {
+      "claim_id": "17c0093a-2f10-4eeb-a486-8245503022b5",
+      "result_id": "6ec36ffb-0d2e-490f-a730-71e81e2efe26"
+    },
+    {
+      "claim_id": "a2dc8536-1090-4c08-bfdf-eca455315e07",
+      "result_id": "6ec36ffb-0d2e-490f-a730-71e81e2efe26"
+    },
+    {
+      "claim_id": "d97602c3-bc02-48c8-8590-297bb6943a73",
+      "result_id": "6ec36ffb-0d2e-490f-a730-71e81e2efe26"
+    },
+    {
+      "claim_id": "6980a96b-abb1-49f1-af82-f93fe181b1e8",
+      "result_id": "6ec36ffb-0d2e-490f-a730-71e81e2efe26"
+    },
+    {
+      "claim_id": "32a1b0fc-ee98-4cdc-8261-259cecfddb11",
+      "result_id": "0adef7ff-14a6-4028-8929-c590e305f885"
+    },
+    {
+      "claim_id": "e582b353-860e-49e6-905f-ed7ed5ff9c8b",
+      "result_id": "0adef7ff-14a6-4028-8929-c590e305f885"
+    },
+    {
+      "claim_id": "3c6fe2d3-b904-40d9-b062-a947f949b76c",
+      "result_id": "0adef7ff-14a6-4028-8929-c590e305f885"
+    },
+    {
+      "claim_id": "e9b1e47a-6c29-4f2a-834d-94d295e2339f",
+      "result_id": "0adef7ff-14a6-4028-8929-c590e305f885"
+    },
+    {
+      "claim_id": "d31a6f56-6bfb-49bc-9d1b-d7cb5283bbfe",
+      "result_id": "be723654-f405-4680-b4f7-77c0cd1a813f"
+    },
+    {
+      "claim_id": "d37f3f16-3d79-4033-8ebc-e2d9fd6d17bd",
+      "result_id": "be723654-f405-4680-b4f7-77c0cd1a813f"
+    },
+    {
+      "claim_id": "8dac6fb4-b828-4e15-a961-2842820d2212",
+      "result_id": "be723654-f405-4680-b4f7-77c0cd1a813f"
+    },
+    {
+      "claim_id": "e06aa97e-fd99-4150-a5e5-c2f8b0b43ee2",
+      "result_id": "be723654-f405-4680-b4f7-77c0cd1a813f"
+    },
+    {
+      "claim_id": "a017299c-e832-4e24-aa42-769c0b1ea07b",
+      "result_id": "be723654-f405-4680-b4f7-77c0cd1a813f"
+    },
+    {
+      "claim_id": "5325100a-f152-4925-9fe5-890eacfe81c6",
+      "result_id": "be723654-f405-4680-b4f7-77c0cd1a813f"
+    },
+    {
+      "claim_id": "dbec4e7d-5e4c-40a7-994e-00f56b13ee02",
+      "result_id": "70392178-1392-4c48-9d93-bc99fe942a9b"
+    },
+    {
+      "claim_id": "6065ac14-435e-474e-93e7-a129ab6647e1",
+      "result_id": "70392178-1392-4c48-9d93-bc99fe942a9b"
+    },
+    {
+      "claim_id": "ca3879ba-6275-43a8-8137-2d99df86dd89",
+      "result_id": "70392178-1392-4c48-9d93-bc99fe942a9b"
+    },
+    {
+      "claim_id": "3962d814-be06-4ce2-ade7-b36f950c78b0",
+      "result_id": "a70ff02c-6e56-4196-8241-be47bbaf447c"
+    },
+    {
+      "claim_id": "43537e01-8f76-4c79-89f9-d77d94ae942a",
+      "result_id": "a70ff02c-6e56-4196-8241-be47bbaf447c"
+    },
+    {
+      "claim_id": "25b3e7c2-6f45-44e1-8845-5504ceaaa58e",
+      "result_id": "aa66c2d5-27b1-405f-90a7-607900d4a3ef"
+    },
+    {
+      "claim_id": "6c13d019-f6cf-4e1d-a73e-2a9a09518d6b",
+      "result_id": "aa66c2d5-27b1-405f-90a7-607900d4a3ef"
+    },
+    {
+      "claim_id": "c3c0b37e-49d7-4186-8d39-023504bff883",
+      "result_id": "aa66c2d5-27b1-405f-90a7-607900d4a3ef"
+    },
+    {
+      "claim_id": "66bc69d5-bff8-4834-b5f4-a6613b93e497",
+      "result_id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a"
+    },
+    {
+      "claim_id": "34db06a1-4a80-4f1c-a414-5fc845076135",
+      "result_id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a"
+    },
+    {
+      "claim_id": "b555e2f3-921f-46cc-9578-9dbe2a96fc36",
+      "result_id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a"
+    },
+    {
+      "claim_id": "b854ec1a-68e4-4066-8d7f-674140cc01c3",
+      "result_id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a"
+    },
+    {
+      "claim_id": "4e3e318e-7cd0-4787-97c3-c60f80478301",
+      "result_id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a"
+    },
+    {
+      "claim_id": "392bdb4f-df87-49e4-ac79-990bd65b0033",
+      "result_id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a"
+    },
+    {
+      "claim_id": "c50cbde3-20b8-42a4-b6d2-e4d1389424e4",
+      "result_id": "67bfad36-ccb9-46d5-b20f-01cce2f95d2a"
+    },
+    {
+      "claim_id": "fe83de02-debc-4203-a791-4b4d3f32af79",
+      "result_id": "88f82f66-cb27-463b-9646-34a872955ce8"
+    },
+    {
+      "claim_id": "7d7cee2d-dfa7-4017-b457-d425885e6f42",
+      "result_id": "88f82f66-cb27-463b-9646-34a872955ce8"
+    },
+    {
+      "claim_id": "75fd90ec-0aec-41dc-8b89-1eae960486d6",
+      "result_id": "88f82f66-cb27-463b-9646-34a872955ce8"
+    },
+    {
+      "claim_id": "5c7444ac-f94a-4200-a08c-582b6d664aac",
+      "result_id": "695cd54b-f70e-4cb0-8e40-92a1a2d58998"
+    },
+    {
+      "claim_id": "47490e11-dbd2-4695-a066-8e753d05572c",
+      "result_id": "695cd54b-f70e-4cb0-8e40-92a1a2d58998"
+    },
+    {
+      "claim_id": "321913b1-ebf3-49e2-9c2e-b5cd0881ce96",
+      "result_id": "695cd54b-f70e-4cb0-8e40-92a1a2d58998"
+    },
+    {
+      "claim_id": "655396af-87e1-4cae-b90a-212382b152a1",
+      "result_id": "695cd54b-f70e-4cb0-8e40-92a1a2d58998"
+    },
+    {
+      "claim_id": "141e6d32-e162-4960-9737-6708555cb8f2",
+      "result_id": "c9770518-87b2-4fe6-a726-68aea1a6cb58"
+    },
+    {
+      "claim_id": "25b208fb-aa4a-4bb8-b430-7dff40e328af",
+      "result_id": "84401bee-ed1f-4cf9-ba9a-6a6f8d3a9129"
+    },
+    {
+      "claim_id": "b93d1f04-6f79-4621-b39b-f149b7ccce0b",
+      "result_id": "68feb2e1-3a01-4fbf-8cb0-f9d11b1d559a"
+    },
+    {
+      "claim_id": "889cb181-779b-4aef-9397-4b579087a45f",
+      "result_id": "ccb03f1a-4303-4e2e-8247-a5b8293104e7"
+    },
+    {
+      "claim_id": "8063a530-c93e-4d0e-a294-9a3763357dc0",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "25873e18-0375-4e2a-87c9-9a642ace3252",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "cba0bb27-d321-41c7-8505-0628902a602d",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "f960cc53-55fe-4462-8c16-4d06fda24974",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "89e18e29-db63-48a8-a660-6003614745aa",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "a72aeb37-0cb1-4258-9ce7-af26fefde62d",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "4194558e-7d98-47f3-a510-cfd9ea205505",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "3a7879c5-19c7-408c-968f-da41cb0ea323",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "58f10dc5-2706-4c33-9084-488f2dd2d942",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "dcd05f1b-8005-4dda-a65e-d095eb11d4fe",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "7d66bb7a-e57b-4eaa-ad92-98db9cf0591d",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "4490378d-3bac-4896-a02e-6968763cb88b",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "560de827-3a9a-4fa7-aff9-92ca219d9893",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "afa7e0e6-be02-4fb3-bd9e-f50905258ad9",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "b6157902-5269-4404-9c57-8cff1e6cefdc",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "33630e05-9ab1-4a62-bf17-fa35f3ed0092",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "507e741b-f13b-43f1-a6b9-2beaafbb9932",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "325cf7f1-93ac-45b9-b911-24709e2b079d",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "f5c16162-336d-4250-9b75-d2c2235a2d6a",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "ad87df63-b8f7-46fa-9dce-ed3843c003f8",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "6f379164-d5f7-4105-a766-d693dceb9fac",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "e417c0c0-4b37-4f37-bf54-ae2672fcee10",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "4e6c9287-a834-4456-9aed-f39bb150ef83",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "19d36abc-eff8-4228-9a0d-025155b0eddd",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "6f237638-7a36-4509-9d43-5693b8af348d",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "375a640c-c89f-470e-862f-e32b32a163c6",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "15a89d4f-2b5b-41bf-b821-0b1877d2e219",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "e46428c0-9c77-4850-8d36-f1aadd2dacc8",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "f6584a55-3bb9-4767-8b9d-5cacf8680bbf",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "5a5d203f-82d9-44c9-a9df-f9465e011786",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "317f7f26-3e2f-4aa9-a703-2d698c3427dd",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "a82fa08f-056a-4188-8957-b22e02d1dc9b",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "a15e7764-c1d4-4bfa-965c-fd09837f5354",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "865c34f6-ee8e-49b6-8d5c-0e3891dd5201",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "c4e4bf17-41fb-4b72-875e-0582fe80f798",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "e465c24d-5f13-4245-9834-ea4441459664",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "1bfe82c5-e10c-4cb2-8e0a-60a0ac30089f",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "92113568-347c-4c09-b410-ecefc456907e",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    },
+    {
+      "claim_id": "6086e6cc-3c92-4b40-bffb-ccd8f0a1bf03",
+      "result_id": "de154dc7-ad7d-46eb-aa64-a4d3c57dbd31"
+    }
+  ],
+  "comparisons": []
+}

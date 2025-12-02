@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors determined a 7 \u00c5 resolution cryo-EM structure of the 13-fold symmetric PilQ complex using a novel image processing tool (REP) combined with residual signal subtraction. The recentering procedure improved rotational alignment accuracy from ~12\u00b0 to 2\u00b0, doubling the resolution from ~20 \u00c5 to ~7 \u00c5 for individual modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C39, C92-C93 collectively demonstrate the cryo-EM structure determination workflow with appropriate methodological detail. The resolution improvement is quantified (C38, C39), the novel REP tool is described (C36, C37), and data collection statistics are provided (C92, C93). The multivariate statistical analysis unambiguously established 13-fold symmetry (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The REP recentering procedure improves resolution of flexible particles by reducing alignment errors when particles are moved from the edge to the center of the box, improving resolution from ~20 \u00c5 to ~7 \u00c5 for the PilQ complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 provide logical reasoning for why recentering improves alignment (C70), demonstrate the quantitative improvement (C72), and suggest broader applicability (C71). The explanation is mechanistically sound and supported by the data showing resolution improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The PilQ complex is 350 \u00c5 long and 125 \u00c5 wide, consisting of 13 protomers with a C-terminal secretin domain in the outer membrane and six N-terminal rings (N0-N5) extending into the periplasm. The structure contains two gates: Gate 1 (~30 \u00c5 aperture) in the secretin domain and Gate 2 (~30 \u00c5 aperture) in the N1 ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C56 describe the overall architecture with specific dimensional measurements, domain organization, and structural features. The modeling approach using remote homology detection (C40) and flexible fitting (C41) is appropriate. Cross-correlation analysis (C45) validates the model-map correspondence. The structural claims are internally consistent and well-supported by the cryo-EM data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C57",
+      "C82",
+      "C83"
+    ],
+    "result": "The PilQ complex has an additional crown-like density outside the outer membrane consisting of 13 distinct spikes (~40 \u00c5 high) that cannot be accounted for by the PilQ sequence and must represent another protein component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C57, C82-C83 identify a novel structural feature not predicted from sequence analysis. The inference that the crown is a separate protein component (C83) is well-supported by sequence alignment showing absence of the cap/lip domain (C82) and the presence of unaccounted density in the cryo-EM map (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Residues K728 and R730, located near the transmembrane region, are necessary for crown assembly or folding but not essential for PilQ oligomerization or thermostability. The K728A/R730A mutant forms PilQ complexes with disordered crown density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe a structure-guided mutagenesis experiment with clear results. The Western blot (C60) demonstrates oligomerization is maintained, while EM analysis (C59, C62) shows the crown is disrupted. The inference about crown assembly/folding (C64) is reasonable given the fuzzy density observed (C62, C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The pilQ-KR mutant showed reduced twitching motility (64% of wild-type) and adherence (49% of wild-type), suggesting the crown plays a role in type IV pilus-mediated adhesion and twitching motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 present quantitative functional assay data showing partial defects in pilus-related functions. The data support a role for the crown in these processes (C67), though the inference is appropriately cautious given the partial rather than complete loss of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C21",
+      "C22",
+      "C87",
+      "C88"
+    ],
+    "result": "The pilQ-KR mutant showed severely reduced natural transformation (6% of wild-type), and combined with previous findings that PilQ is essential for DNA binding, this indicates the crown structure is directly or indirectly implicated in DNA binding and uptake, playing a central role in natural transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C21-C22, C87-C88 demonstrate a dramatic functional defect in transformation with the crown-disrupting mutation. The transformation frequency data (C68) shows near-complete loss of function. The connection to DNA binding (C87) from prior work strengthens the conclusion about the crown's role (C88, C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The T. thermophilus PilQ structure differs from other secretion systems by having six N-terminal ring domains (making it one of the largest characterized), an additional Gate 2 on the periplasmic side, and a well-resolved N0 ring. It shares evolutionary relationship with T2SS including a conserved barrel-within-barrel secretin domain structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 provide comparative structural analysis supported by visual comparisons (Figure 4) and evolutionary reasoning. The unique features (six rings, Gate 2) are clearly documented, and the comparison with other systems is appropriate. The claim about being one of the largest systems (C78) is supported by the structural comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The crown module is visible in sub-tomogram averages in situ, resists denaturation with SDS at high temperature, and appears difficult to separate from the PilQ secretin domain, indicating a very tight interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C84-C86 provide multiple lines of evidence for the crown's stability and tight association with PilQ. The in situ observation (C84) confirms the crown is not an artifact of purification, and the biochemical stability (C85) supports the inference of tight interaction (C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The crown may be the extracellular switch that converts the pilus extrusion machinery into a DNA uptake system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is explicitly speculative and not directly tested. While the functional data showing the crown's importance for transformation provides circumstantial support, the specific mechanism of switching between pilus extrusion and DNA uptake is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Natural transformation is a major mode of horizontal gene transfer mediated by conserved competence protein machineries. Secretins are key components that form homo-oligomeric complexes with variable N-terminal domains, and structural information on these domains is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide appropriate background context supported by multiple citations to established literature. These claims accurately represent the current state of knowledge about natural transformation and secretin structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Previous studies established that T. thermophilus PilQ is essential for natural transformation and type IV pilus extrusion, contains six stacked N-terminal rings (N0-N5), and undergoes conformational changes in piliated versus unpiliated states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately cite prior work from the same research group, providing appropriate context for the current structural study. These are well-established findings from previous publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The overall PilQ complex is flexible, with the cap module showing a distinct rocking movement around a hinge at the N4-N5 interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by 2D class averages (Figure 1) showing variable distances and orientations. This flexibility observation motivated the modular reconstruction approach and is consistent with the improved resolution achieved by separate refinement of modules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Sequence alignment indicated that PilQ lacks the lip domain that forms a cap on the extracellular side of the outer membrane in some species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by sequence alignment data (Figure 4D) and comparison with other secretins. This negative result is important for interpreting the crown structure as a separate component.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "PilQ forms the core of the bifunctional T4PS/DNA uptake system and interacts with multiple proteins. The structure provides a foundation for mechanistic investigations of natural transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 appropriately summarize the significance of the work. C90 is supported by multiple citations to prior work, and C91 is a reasonable assessment of the structure's value for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The EM maps have been deposited in the EMDB with appropriate accession codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 documents proper data deposition, which is essential for reproducibility and follows community standards. The accession codes are provided for verification.",
+    "result_type": "MINOR"
+  }
+]

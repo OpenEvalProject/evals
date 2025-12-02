@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors establish a temporal timeline of BMP and progenitor marker expression during chicken spinal cord development. BMP4 and BMP7 are the only BMPs expressed in the dorsal spinal cord before dorsal neurogenesis begins (prior to HH stage 14-17), with BMP7 expressed more broadly and BMP4 restricted to the roof plate. Dorsal interneuron differentiation follows 12-24 hours after initial Pax3 expression, with dI1s born at HH stage 18 and dI3s at HH stage 21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide comprehensive temporal expression data from in situ hybridization and immunohistochemistry experiments (Figures 1A-BB) showing when specific BMPs and progenitor markers appear during chicken development. The timeline is internally consistent and supported by multiple markers across developmental stages. The conclusion that BMP4 and BMP7 are the relevant BMPs for dorsal IN specification (C15) logically follows from the expression data, though this is an inference rather than direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "BMP4 and BMP7 have distinct, signal-specific effects on dorsal interneuron specification in chicken embryos. BMP4 more effectively activates pSmad1/5/8 (~65% vs ~30% for BMP7) and preferentially increases dI1s, dI2s, and dI3s, while BMP7 more effectively increases roof plate cells. Only BMP4 is sufficient to increase dI2 numbers. BMP5 and GDF7 also show signal-specific effects, supporting a model where each BMP directs a unique range of dorsal fates rather than acting as a concentration-dependent morphogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 are well-supported by in vivo electroporation experiments with quantitative analysis (Figure 2). Multiple independent experiments with appropriate sample sizes (n=3-5 embryos, >20 sections per condition) and statistical testing (p-values reported) demonstrate differential effects of BMP4 vs BMP7 on specific cell populations. The signal-specific model is supported by the observation that different BMPs produce distinct cellular outcomes despite both activating the BMP pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In vitro differentiation of mouse embryonic stem cells reveals species-specific BMP activities. Mouse BMP6 and GDF7 increase roof plate marker Msx1, BMP4 most effectively directs Lhx2 (dI1) expression, and all BMPs tested elevate Isl1 (dI3) expression. No BMP tested increases Foxd3 (dI2) expression. BMP7 has only modest effects in mouse, suggesting mouse BMP6 is the functional analog of chicken BMP7. These findings demonstrate that while the range of cellular activities is conserved, the specific BMP directing each activity is not evolutionarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 are supported by qRT-PCR data from multiple independent experiments (n=2-5) with samples run in triplicate and appropriate statistical testing (Figure 3G). The differentiation protocol successfully generates caudal spinal identity (C29, Figures 3B-F). The conclusion about species-specific BMP activities (C34, C39) is a reasonable inference from comparing mouse and chicken data, though direct functional equivalence testing would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "BMPs do not function as spatial or temporal morphogens in directing dorsal spinal identity. In chicken embryos, varying BMP4 concentration (5-500 ng/\u03bcl) produces a linear increase in pSmad1/5/8 activation but directs the same range of cell fates (dI1s, dI2s, dI3s) at all concentrations tested, with concentration only affecting efficiency. Similarly, in mouse ESCs, varying BMP concentration (0.15-20 ng/ml) or duration of exposure does not change the identity of cells produced, only the efficiency. These results contradict both spatial and temporal morphogen models and support a signal-specific model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C53 are well-supported by systematic concentration-response experiments in vivo (Figure 4A-J) and in vitro (Figure 4K, Figure 4\u2014figure supplement 1). The in vivo experiments use appropriate controls and multiple concentrations with quantification. The temporal experiments (C52, Figure 4\u2014figure supplement 1) test the temporal morphogen model directly. The conclusion that BMPs act in a signal-specific rather than morphogen manner (C53) is strongly supported by the data showing that concentration affects magnitude but not cell type identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "BMP4 and BMP7 differentially affect dorsal progenitor domain identity in chicken embryos. Both BMPs increase the Pax3+ dorsal progenitor domain by ~60%, but have distinct effects on specific progenitor populations: BMP7 dramatically increases the Atoh1+ dP1 domain with modest effects on Ascl1+ dP3-5 and no effect on Ngn1+ dP2, while BMP4 increases both Atoh1+ dP1 and Ascl1+ dP3-5 domains but markedly decreases the Ngn1+ dP2 domain. BMP4 also significantly reduces Sox2 intensity in dorsal progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 are supported by in situ hybridization and immunohistochemistry data at HH stage 20 (Figure 5). Multiple progenitor markers are examined with appropriate sample sizes (n=3-8 embryos, >25 sections per condition) and statistical testing. The differential effects on progenitor domains provide a mechanistic explanation for the distinct effects on differentiated cell types. However, C57 is speculative about Sox2 reduction indicating preparation for differentiation, though this is clearly labeled as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "BMPs have distinct effects on cell cycle progression that may mediate their differential activities on patterning versus differentiation. In chicken, BMP7 decreases BrdU+ cells in S-phase in dP1/dP2 domains while both BMP4 and BMP7 increase pHistoneH3+ M-phase cells, consistent with BMP7 shortening cell cycle duration. In mouse ESCs, BMP4 increases both S-phase (~2-fold) and M-phase cells, while BMP6 modestly increases only S-phase cells. BMP4 directly promotes dI1 differentiation within 24 hours, while BMP7 increases dI1s secondarily through increased dP1 patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C81 are supported by BrdU incorporation and pHistoneH3 staining experiments in vivo (Figure 6) and in vitro (Figure 7) with appropriate sample sizes and statistical testing. The timing experiments (C77, Figure 5L,T) provide evidence for direct versus indirect effects. However, the mechanistic link between cell cycle effects and patterning/differentiation outcomes (C75, C80) is correlative rather than causal\u2014the authors appropriately use cautious language ('possibly', 'may be mediated'). The model is plausible but would require additional experiments to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Different BMPs signal through distinct type I BMP receptors to mediate their specific activities. BmprIa is expressed in progenitors while BmprIb appears later in both progenitors and neurons. Dominant negative BmprIb blocks dI1s, dI2s, and dI3s (BMP4-specified populations), while dnBmprIa blocks dI1s and dI3s but not dI2s (BMP7-specified populations). BMP4 can rescue dnBmprIa but not dnBmprIb effects. In mouse ESCs, low concentrations of receptor inhibitors (dorsomorphin, LDN-193189) block BMP6 activity, while 5-10 fold higher concentrations are needed to block BMP4, consistent with BMP6 signaling through BmprIa and BMP4 through BmprIb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C100 are supported by in situ hybridization showing receptor expression patterns (Figure 8A-F), dominant negative receptor experiments with quantification (Figure 8G-M), rescue experiments (Figure 8N), and pharmacological inhibitor studies (Figure 8O-P). The experiments use appropriate sample sizes (n=3-6 embryos, >30 sections) and statistical testing. The receptor-specificity model is supported by converging evidence from multiple experimental approaches. However, the rescue experiments (C92-C95) show some complexity that is acknowledged, and the pharmacological data relies on published inhibitor specificities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose an integrated model where BMP6/BMP7 direct roof plate identity through BmprIa, both BMP4 and BMP7 promote dP1 patterning through either receptor, but only BMP4 directs dI1 differentiation through BmprIb. BMP4 specifically directs dI2 differentiation in chicken, and all BMPs can promote dI3 fate through either receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 represent an integrative model synthesizing results from multiple experimental approaches (in vivo chicken, in vitro mouse, receptor manipulations). The model is well-supported by the collective data presented in the manuscript, though it represents an inference integrating multiple lines of evidence rather than direct demonstration of each proposed interaction. The model is clearly presented as a synthesis (Figure 8Q-T) and is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "BMPs do not direct the more ventral dorsal interneuron fates (dI4-dI6). BMP7 does not direct the dI5 fate as previously suggested, and BMP signaling must be suppressed for ventral-dorsal fates to be realized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by the data in Figure 2V showing no significant effects on dI4-dI6 populations. C107 contradicts a prior publication (Le Dr\u00e9au et al., 2012) but is supported by the current data. C108 references prior work (Hazen et al., 2011) and is consistent with the current findings. These are important negative results that help define the boundaries of BMP activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The range of cellular activities specified by BMPs is evolutionarily conserved, but the specific BMP directing each activity is species-specific. For example, BMP7 and BMP6 have similar activities promoting roof plate formation in chicken and mouse respectively, while BMP4 directs dI2 fate in chicken but not mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 represent a synthesis of the comparative data between chicken and mouse systems. The conclusion is well-supported by the differential activities observed in the two species (Figures 2-3). This is an important evolutionary insight, though it is based on comparing two species and would be strengthened by examining additional vertebrate species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Misexpression of BMPs tends to reduce expression of endogenous BMPs, suggesting the ectopic BMP may overwhelm endogenous signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 are based on in situ hybridization data (Figure 2\u2014figure supplement 2C) showing reduced endogenous BMP expression after ectopic BMP expression. However, C115 is speculative about the mechanism. This is acknowledged as a caveat for interpreting the in vivo experiments, as the effects observed may represent additive or competitive interactions with endogenous BMPs rather than purely ectopic effects. The authors appropriately note this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors reconcile their findings with prior work showing both BMP4 and BMP7 are required for dI1 specification. They propose that both BMPs can induce dP1 progenitors, but only BMP4 directly promotes early dI1 differentiation. The larger dI1 increase after BMP4 electroporation stems from its dual ability to promote both dP1 patterning and dI1 differentiation, while BMP7-induced dP1s may require endogenous BMP4 for differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 reconcile the current findings with prior loss-of-function studies (Le Dr\u00e9au et al., 2012). The model is supported by the timing data (C77, Figure 5L,T) showing only BMP4 increases dI1s within 24 hours. However, C121 is speculative about BMP7-induced dP1s requiring endogenous BMP4, though this is clearly labeled as speculation and is a reasonable interpretation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "BMP7 uniquely drives roof plate formation, while BMP4 uniquely drives direct differentiation of dP2 progenitors to dI2s in chicken, leading to dP2 depletion and formation of a large mass of dI2-like cells that relocate ventrally. This spatial reorganization occurs between 25-50 ng/\u03bcl BMP4 concentrations and suggests that progenitor position along the dorsal-ventral axis determines BMP4 response, with dorsal-most progenitors receiving both patterning and differentiation cues while Ngn1+ progenitors only receiving differentiation cues to dI2 fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C132 describe unique BMP activities and spatial effects. C122-C127 are well-supported by the data (Figures 2, 5, Figure 2\u2014figure supplement 4). The spatial reorganization of dI2s is a striking observation. However, C128 and C132 are speculative about mechanisms (co-option of ventral Ngn1+ domain, prior patterning by Shh/retinoids), though these are clearly labeled as speculation and represent reasonable hypotheses for future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors propose that BMPs mediate signal-specific activities by activating distinct type I receptors to permit differential cell cycle progression. Prior biochemical studies show BMPs bind type I receptors with different affinities. BmprIa can promote proliferation while BmprIb drives differentiation in early embryos, and both direct cell fate specification in spinal cord. The current study shows BmprIa translates patterning activities of BMP5/6/7 while BmprIb promotes differentiation after BMP4 activation. However, the role of Smad signaling remains unclear\u2014while each BMP activates Smad1/5/8 to different levels, specific pSmad5 levels do not encode specific cell fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C144 integrate current findings with prior literature to propose a mechanistic model. The receptor-specificity findings (C138-C139) are well-supported by the current data. The Smad analysis (C142-C144) appropriately identifies a gap in understanding\u2014while BMPs differentially activate Smads, this doesn't explain cell fate specificity. C133 is presented as a model/hypothesis rather than proven mechanism, which is appropriate given the correlative nature of the cell cycle data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Cell cycle regulation is proposed as an output of differential BMP signaling. Prior studies show GDF11 inhibits proliferation in olfactory epithelium and promotes cell cycle exit in spinal cord, consistent with promoting differentiation, while BMP4 but not BMP7 promotes neurogenesis in olfactory epithelium. The current data show BMP5/7/GDF7 have shared cell cycle effects in chicken distinct from BMP4, while BMP4 and BMP6 have distinct effects in mouse ESCs. The authors propose BMP4 acts as a differentiation factor prolonging cell cycle, distinct from patterning BMPs BMP7 and BMP6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C152 synthesize current findings with prior literature to propose cell cycle regulation as a mechanism. The current data on differential cell cycle effects are well-supported (Figures 6-7). However, the mechanistic model (C152) is based on correlative data and the authors appropriately note the experiments are 'complicated to interpret.' The model is plausible and consistent with prior literature, but causality is not established. This represents a reasonable hypothesis for future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153"
+    ],
+    "result": "A combination of all BMPs (BMP4, BMP5, BMP6, BMP7, GDF7) is most efficient at directing mouse ESCs toward roof plate and dI3 fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C153 is supported by qRT-PCR data from 2 independent experiments (Figure 3\u2014figure supplement 2). However, the limited number of replicates (n=2) is a weakness. This finding suggests potential synergistic or additive effects of multiple BMPs, which could be relevant for optimizing differentiation protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The authors identify BMP protocols for directing mouse ESCs toward specific dorsal spinal fates: BMP6 most effectively directs roof plate, BMP4 directs dI1 fate, and a mixture of BMPs directs dI3 fate. These protocols have potential for restoring proprioception and pre-motor control after spinal cord injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C160 discuss translational applications. C154-C156 provide context from established knowledge and prior literature. C157-C159 are well-supported by the qRT-PCR data (Figure 3). C160 represents a reasonable inference about potential applications based on the known functions of dI1s and dI3s (citing Lai et al., 2016), though actual therapeutic efficacy would require extensive additional validation including functional characterization of the derived cells and in vivo transplantation studies.",
+    "result_type": "MINOR"
+  }
+]

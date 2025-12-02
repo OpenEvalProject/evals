@@ -1,0 +1,1416 @@
+{
+  "submission": {
+    "id": "4c2a1bee-610a-4382-9405-6c28f77ac632",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:35:47.485447Z",
+    "updated_at": "2025-12-01T20:35:47.485447Z"
+  },
+  "content": [
+    {
+      "id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "submission_id": "4c2a1bee-610a-4382-9405-6c28f77ac632",
+      "content_type": "manuscript",
+      "content_text": "# Temporal network analysis identifies early physiological and transcriptomic indicators of mild drought in Brassica rapa\n\n## Authors\n\n- Kathleen Greenham<sup>1</sup> ([ORCID: 0000-0001-7681-5263](https://orcid.org/0000-0001-7681-5263))\n- Carmela Rosaria Guadagno<sup>2</sup> ([ORCID: 0000-0003-1940-0250](https://orcid.org/0000-0003-1940-0250))\n- Malia A Gehan<sup>3</sup> ([ORCID: 0000-0002-3238-2627](https://orcid.org/0000-0002-3238-2627))\n- Todd C Mockler<sup>3</sup> ([ORCID: 0000-0002-0462-5775](https://orcid.org/0000-0002-0462-5775))\n- Cynthia Weinig<sup>2</sup> ([ORCID: 0000-0003-2833-9316](https://orcid.org/0000-0003-2833-9316))\n- Brent E Ewers<sup>2</sup> ([ORCID: 0000-0001-6647-7475](https://orcid.org/0000-0001-6647-7475))\n- C Robertson McClung<sup>1</sup> ([ORCID: 0000-0002-7875-3614](https://orcid.org/0000-0002-7875-3614)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences Dartmouth College Hanover United States\n2. Department of Botany University of Wyoming Laramie United States\n3. Donald Danforth Plant Science Center St. Louis United States\n4. Department of Molecular Biology University of Wyoming Laramie United States\n5. Program in Ecology University of Wyoming Laramie United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dynamics of local climates make development of agricultural strategies challenging. Yield improvement has progressed slowly, especially in drought-prone regions where annual crop production suffers from episodic aridity. Underlying drought responses are circadian and diel control of gene expression that regulate daily variations in metabolic and physiological pathways. To identify transcriptomic changes that occur in the crop Brassica rapa during initial perception of drought, we applied a co-expression network approach to associate rhythmic gene expression changes with physiological responses. Coupled analysis of transcriptome and physiological parameters over a two-day time course in control and drought-stressed plants provided temporal resolution necessary for correlation of network modules with dynamic changes in stomatal conductance, photosynthetic rate, and photosystem II efficiency. This approach enabled the identification of drought-responsive genes based on their differential rhythmic expression profiles in well-watered versus droughted networks and provided new insights into the dynamic physiological changes that occur during drought.\n\n## Introduction\n\nProjected impacts of climate change on crop yields vary widely depending on crop type and location; however, rising temperatures, with attendant increases in drought as well as insect and disease outbreaks, are predicted to result in net losses in yield of North American crops by the end of the 21st century (Settele et al., 2014). Water stress accounts for the largest proportion of crop loss in the U.S., and an estimated 45% of U.S. land surface suffers from low water availability (DeLucia et al., 2014). To mitigate the predicted increase in water stress on plants (Blum, 2005; Jones and Corlett, 1992; Anderegg et al., 2012) and achieve maximal crop yield potential, locally adapted stress tolerance traits are needed.\n\nIn response to soil water deficit, plants can exhibit either drought escape or drought resistance mechanisms (Levitt, 1980; Harb et al., 2010). Under drought escape, plants complete their life cycle before the onset of stress. Drought resistance can occur through dehydration avoidance or through tolerance (Levitt, 1980). With dehydration avoidance, plants maintain high cellular water potential by lowering stomatal conductance and/or reducing water loss through changes in leaf area or orientation and by increasing resource allocation to roots. Drought tolerant plants conserve cell turgor through osmotic adjustments to survive the drought stress (Levitt, 1980) and may also tolerate lower cell water potentials through anisohydric water potential regulation (Franks et al., 2007) while maintaining cellular metabolism (Sade et al., 2012). Depending on the plant species and genotype, a combination of avoidance and tolerance traits may be utilized (Chaves and Oliveira, 2004). The potential allocation changes in drought-stressed plants also depend on selection by herbivores and the true cost of defensive molecules as leaf carbon fixation is reduced by drought (Z\u00fcst and Agrawal, 2017; Hamilton et al., 2001). Achieving maximum yield while breeding for drought stress responses will likely rely on a balance between avoidance and tolerance strategies (Tuberosa, 2012).\n\nA commonly used measure for assessing drought resistance is the intrinsic water use efficiency (WUE), which is defined as the ratio between stomatal conductance (gs) and CO2 assimilation (A) (Condon et al., 2002). WUE is often used as a proxy for drought resistance, but it is not always an accurate predictor of yield capacity under drought (Medrano et al., 2012) especially when biomass allocation to roots increases in response to drought (Edwards et al., 2016) or when yield is tightly correlated with water use (Blum, 2009). Smaller plants that limit water use and have moderate growth or short growing seasons often have higher WUE but low yield potential (Blum, 2005). This argues for using the individual gs and A measures to separately assess the impact of CO2 supply and demand effects on yield.\n\nStudies in numerous plant species have explored transcript level changes following various degrees of drought stress (Zhang et al., 2012; Yamaguchi-Shinozaki and Shinozaki, 2006; Smita et al., 2013; Seki et al., 2002; Shinozaki and Yamaguchi-Shinozaki, 2007; Degenkolbe et al., 2009) and the plant responses to drought at physiological and molecular levels (Sakuma et al., 2006; Yu et al., 2008; Ning et al., 2010). Few studies have evaluated physiological and molecular responses in plants experiencing mild drought (Watkinson et al., 2003; V\u00e1squez-Robinet et al., 2010), although mild drought is more relevant to intensive agricultural settings than severe drought. Many drought-responsive genes are under circadian regulation (Covington et al., 2008) resulting in specific time-of-day responses to drought (Wilkins et al., 2010; Dubois et al., 2017). To associate the relevant transcriptomic changes with physiology, these time-of-day effects must be considered. Temporal changes complicate the assessment of differential gene expression in response to an abiotic stress due to the differences in the phasing of maximal and minimal expression levels for transcripts under circadian or diel control (Greenham and McClung, 2015). Because time-of-day changes in transcript phasing are dominant relative to the responses to drought status, comparisons of gene expression levels at any single time point will chiefly capture time-of-day expression differences rather than drought responses.\n\nNetwork analysis is a powerful way to extract meaningful differences across treatments, development, or time by providing pathway structure (Priest et al., 2014; Gehan et al., 2015; Righetti et al., 2015). In addition, a network approach facilitates the integration of multiple datasets that can provide support to the network structure and can be used to generate predictive regulatory networks (Langfelder et al., 2011; Krouk et al., 2013). Here, we applied a co-expression network approach to analyze both transcriptome and physiological parameters over a two-day time course in drought-stressed and control plants, providing temporal resolution necessary for correlation of network modules with dynamic changes in drought response.\n\nWe performed these studies in the crop species Brassica rapa. The genus Brassica includes the closest crop relatives of Arabidopsis and therefore is an excellent crop model for comparative studies, including analyses of adaptive drought responses. There is tremendous morphological diversity within Brassica species with important vegetable, oilseed, and forage crops that have acquired a range of stress response traits (Ashraf and Mehmood, 1990). Rapeseed (B. napus), an allopolyploid derived via hybridization between B. rapa and B. oleracea, is the second largest oil crop after soybean with an annual global production of 70 million tons (http://faostat.fao.org, 2014). The majority of Brassica crops are grown in arid and semi-arid regions making drought stress a major determinant of yield. B. rapa shows a wide spectrum of drought responses (Yarkhunova et al., 2016; Edwards et al., 2012), suggesting that there is extensive genetic variation to explore. Further, quantitative genetic analyses of B. rapa under well-watered and drought conditions found opposite correlations between WUE and shoot biomass: plants with low WUE had higher biomass under well-watered conditions, whereas those with high WUE were larger under drought conditions (Edwards et al., 2012; El-Soda et al., 2014). Subsequent studies revealed quantitative trait locus (QTL) allele contributions to the association between gs and total biomass (Edwards et al., 2016).\n\nHere, our objective was to associate the earliest transcriptomic responses to a water deficit with the dynamic changes in physiology throughout the day. To clarify the gene reprogramming under mild drought we focused our attention on the early response to drought stress. We measured several physiological traits and transcript abundances in B. rapa over 48 hr of controlled mild drought. To identify important regulatory pathways contributing to drought responses we applied a circadian guided co-expression network approach to correlate changes in temporally regulated transcripts with photosynthetic rate (A), stomatal conductance (gs; a measure of CO2 supply), and maximum efficiency of photosystem\u00a0II\u00a0(PSII) in light conditions (Fv\u2019/Fm\u2019; a measure of available energy for CO2 demand). Gene reprogramming was altered over the time course of drought treatment, and significant changes in temporal dynamics of gs and Fv\u2019/Fm\u2019 reveal them to be reliable indicators of early drought perception.\n\n## Results and discussion\n\n### Establishing the mild drought treatment\n\nWe assessed the early stages of mild drought, completely withholding water for the droughted cohort of B. rapa (Yellow Sarson) R500 beginning at 16 days after sowing (DAS). Tissue sampling and physiological measurements were conducted on Day 3 and 4 of drought, 18 and 19 DAS, respectively (Figure 1A, Figure 1\u2014source data 1). The experiment was performed twice under similar temperature, photoperiod, and soil moisture conditions (Figure 1A, Figure 1\u2014source data 1). In order to assess the reproducibility of our conditions, Fv\u2019/Fm\u2019 and above-ground biomass were monitored in both experiments, and there were no significant differences between the temporal replicates. After four days of drought, soil water potential (\u03a8s) had declined progressively to \u22121.5 MPa, whereas \u03a8s was relatively constant between 0 and \u22120.5 MPa for the well-watered soil (Figure 1B, Figure 1\u2014source data 1). The droughted plants showed a significant decrease in dry above-ground biomass by the end of Day 4 (Figure 2A); however, there was no wilting during the experiment (Figure 2B). In a previous experiment, prolonged progressive drought resulted in \u03a8s equal to approximately \u22125 MPa, yet some R500 plants were able to recover upon re-watering and maintained their gas exchange (Guadagno et al., 2017). Therefore, the drought conditions applied in this study capture the early perception of drought stress (Harb et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic illustration of the experimental design with days of the experiment and collection/measurement times. Top: The time of the experiment in days after sowing (DAS) is plotted with the orange shade representing the days of mild drought treatment starting at the end of 15 DAS. Center:\u00a0Purple shade (between 18 and 20 DAS) indicates the 2 days of continuous collection/measurements. The x-axis represents the 48 hr of the experiment in Zeitgeber Time (ZT0\u00a0=\u00a0lights on in the growth chambers). The dotted yellow lines represent the ZT times for collection and measurements of both well-watered and droughted plants. Bottom: White and black bars represent the photoperiod in the growth chambers (14 hr/10 hr; Day/Night) for Days 3 and 4. (B) Soil water potential (\u03a8s) progression for well-watered (solid symbols) and mild droughted (open symbols) B. rapa R500 plants (n\u00a0=\u00a0at least 6) after the start of the drought treatment during the physiology (triangles) and RNA-seq (circles) time-course experiments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig2-v2.jpg)\n\n**Figure 2.:** (A) Grams of dry above-ground biomass in well-watered (dark gray) and mild droughted (light gray) B. rapa R500 plants (n\u00a0=\u00a012) collected on Day 3 and Day 4. On both days, above-ground biomass was collected at ZT9. (B) Top and lateral view of well-watered and droughted B. rapa R500 plants on Day 3 and Day 4 of the experiment.\n\n### Gas-exchange and chlorophyll a fluorescence changes in response to drought\n\nWe observed diurnal changes in gas exchange in the well-watered plants, expressed as WUE and as its components A (Figure 3A, Figure 3\u2014figure supplement 1) and gs (Figure 3B, Figure 3\u2014source data 1). As expected based on a previous analysis (Medrano et al., 2012), WUE did not provide an accurate measure of the plant response to drought stress due to limited drought severity and duration (Figure 3A, Figure 3\u2014figure supplement 1). On both Day 3 and Day 4 of drought, A peaked at Zeitgeber Time (ZT) five where ZT0 corresponded to lights on (Figure 1A). At this time point, we recorded a net CO2 uptake of 12\u00a0\u00b1\u00a02 \u03bcmol m\u22122s\u22121 (Figure 3A). Droughted plants had photosynthetic capacity similar to well-watered plants for the duration of the experiment (Figure 3A), in agreement with previous studies of anisohydric plants where overall photosynthetic capacity was not disturbed by mild drought stress (Chaves et al., 2009; Cornic and Massacci, 1996; Flexas and Medrano, 2002). In contrast, there were significant differences in gs between droughted versus well-watered plants with a reduction of 50% late in the day (ZT13) and 30% at night (between ZT17 and ZT21) on both Day 3 and Day 4 (Figure 3B). Thus, in late afternoon and at night gs responds to small changes in soil water potential and seems to play an important role in the early response to drought. Our results show that B. rapa, like many crops, can reduce CO2 supply before A is impacted (Edwards et al., 2016).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig3-v2.jpg)\n\n**Figure 3.:** (A) Photosynthetic rate, A (\u03bcmol CO2 m\u22122s\u22121) of well-watered controls (green) and mild droughted (orange) plants. (B) Stomatal conductance, gs (mmol H2O m\u22122s\u22121) of well-watered controls (green) and mild droughted (orange) plants. (C) Maximum efficiency of PSII in light adapted conditions, Fv\u2019/Fm\u2019 of well-watered controls (green) and mild droughted (orange) plants. (D) NSC accumulation in well-watered (green) and mild droughted (orange) plants. NSC content is expressed as dry weight and refers to the sum of leaves and cotyledon biomass. Tissue collection was carried out every 4 hr during the 2 day time course except for ZT9 when no sugar extraction was performed. White and black bars and gray shading represent the dark period in the growth chambers (14 hr/10 hr; Day/Night). All represented values are averages of at least eight replicates\u00a0\u00b1\u00a0SE, asterisks represent a significant difference (p<0.01) between treatments. See Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Variation of intrinsic WUE (as A/gs) for well-watered controls (green) and mildly droughted (orange) plants. Gray shading indicates dark period.\n\nOur findings are consistent with studies showing that plants can lose as much as 30% of the daily water budget overnight (Dawson et al., 2007; Caird et al., 2007). Night transpiration is hypothesized to occur to enhance nutrient uptake (Matimati et al., 2014) and responds quickly to atmospheric and soil drought (Neumann et al., 2014; Schoppach et al., 2014) as shown here. It is likely that the low nighttime gs observed in R500 plants (Figure 3B) contributed to the maintenance of turgor throughout the four days of drought (Figure 2B). Plants were still far from the wilting point (between \u22121.7 and \u22122 MPa) for R500 (Guadagno et al., 2017).\n\nAlthough signaling mechanisms are not fully understood, diurnal patterns of gs are sensitive to rapid changes in leaf water potential, causing both gs and leaf hydraulic function to decline under stress (Brodribb and Cochard, 2009; Domec et al., 2009) with ABA synthesis as a major control over anisohydric responses (Brodribb and McAdam, 2013). Although an understanding of the relationships between the circadian clock, night transpiration, and nutrient uptake would dramatically improve predictive understanding of drought, information is scarce on how anisohydric plants behave at night in drought conditions (Rogiers et al., 2009; Klein, 2014; Mart\u00ednez-Vilalta et al., 2014; Attia et al., 2015).\n\nThe maintenance of photosynthetic capacity in droughted plants despite the significant decrease in gs may be partly explained by Fv\u2019/Fm\u2019, which was significantly greater for droughted than well-watered plants on both Days 3 and 4 of drought during the middle of the light period (Figure 3C). Fv\u2019/Fm\u2019 presented a diurnal pattern with the highest values early in the day (ZT1 and ZT5) in both droughted and well-watered plants. Elevated Fv\u2019/Fm\u2019 fully compensated for reduced gas exchange under mild drought conditions. Our results are consistent with recent work showing that the circadian clock optimizes photosynthetic capacity by modulating temporal dynamics of Fv\u2019/Fm\u2019 (Garc\u00eda-Plazaola et al., 2017).\n\n### Dynamics\u00a0of\u00a0non-structural carbohydrates under drought\n\nAs expected, non-structural carbohydrates (NSC) accumulated during the day and decreased during the night in well-watered conditions (Figure 3D). In droughted plants, NSC levels were elevated throughout the night compared to well-watered controls. The presence of above-ground NSC accumulation suggested that the reduction in biomass observed (Figure 2A) was not due to a reduction in carbon availability but rather to the decreased nighttime conductance that preserves leaf turgor and high water potential (Chaves, 1991) at the cost of sugar translocation to growing tissues (Sevanto, 2014). That NSC levels were elevated at night in droughted plants highlights the close association between water use and carbon dynamics. Specifically, early perception of drought will influence carbon allocation by lowering gas exchange and respiration rate as we observe (Figure 3A). As previously reported, the lower level of respiration led to a decrease in biomass accumulation, and carbon remains in the chloroplasts because of slower transport of sugars out of the leaves (McDowell, 2011). Our results are supported by previous studies under fluctuating environmental conditions in which sugars such as glucose, fructose, and sucrose play a crucial role in maintaining cell turgor and vascular integrity in more extreme drought conditions than those studied here (Volaire, 1995; Sala et al., 2012).\n\nOur time course analysis revealed physiological drought responses between ZT13 and ZT21 of each day, with higher magnitude on Day 4 than on Day 3. Early in drought, plants had lower gs and higher levels of NSC in the above-ground tissues with respect to well-watered plants (Figure 3B,D). We found gs to be the best physiological indicator of the early perception of drought stress in the plant, consistent with the view that A and gs are regulated separately (Dodd et al., 2004; von Caemmerer et al., 2004) and that small decreases in gs do not lead directly to reductions in A under mild drought.\n\n### Co-expression network analysis reveals extensive temporal regulation of transcript level differences in well-watered and droughted plants\n\nIn parallel with the leaf physiological measurements, transcriptomic analysis (RNA-seq) was performed on leaf tissue to capture the temporal changes in transcript levels during the initial stages of drought. The breadth of circadian and diel regulation of gene expression results in time-of-day-dependent changes in the transcriptome (Harmer et al., 2000; Covington et al., 2008; Michael et al., 2008). Consequently, the response to abiotic stress, and in particular drought, has been shown to be dependent on the time of day in Arabidopsis and poplar, with the maximal transcriptome response occurring late in the day (Dubois et al., 2017; Wilkins et al., 2009; Wilkins et al., 2010) as was found in the physiological traits (Figure 3). To capture the diel transcriptome changes in the early stages of drought we applied a weighted gene co-expression network analysis (WGCNA, Langfelder and Horvath, 2008, Langfelder and Horvath, 2012Langfelder and Horvath, 2012) approach to classify genes based on their expression patterns throughout the day.\n\nWe first generated well-watered and droughted networks and examined the module eigengenes, or principal components, of the gene profiles for each module in the two networks. Not surprisingly, the top eight modules, containing 80\u201385% of the genes in the network analysis (see Materials\u00a0and\u00a0methods, Supplementary file 1), showed strong temporal expression patterns across the two-day time course (Figure 4). Previous studies have shown that time-of-day effects on the transcriptome are often greater than the effect of stress treatment (Wilkins et al., 2010). We performed hierarchical clustering of Day 4 samples from droughted and well-watered plants. In agreement with time-course transcriptome studies in Arabidopsis, poplar, and soybean (Wilkins et al., 2009; Wilkins et al., 2010; Rodrigues et al., 2015; Dubois et al., 2017) samples clustered based on time of day, rather than treatment, revealing that the transcriptome varied more with time of day than due to drought (Figure 5A). To examine the conservation in network topology between the droughted and well-watered transcriptomes, a consensus network to identify modules shared between the two networks was generated as previously described (Langfelder and Horvath, 2008). The consensus network contained significant overlaps in module classifications between the droughted and well-watered networks, consistent with the strong diurnal effects on the transcriptome (Figure 5B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig4-v2.jpg)\n\n**Figure 4.:** (A and B) The well-watered (A) and droughted (B) networks are shown with gene nodes colored by module membership. Network visualization was done in Cytoscape using a ForceDirected layout with an edge threshold cutoff of 0.1. Modules with significant overlap of gene membership between the well-watered and drought networks are similarly colored. (C and D) The module eigengene (ME) plots for the well-watered (C) and droughted (D) modules reveal temporal regulation of the top eight modules in each network containing\u00a0~80\u201385% of expressed genes. The ME plots are colored based on the modules in the network visualizations. White and black bars along the x-axis represent the day and night time points respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig5-v2.jpg)\n\n**Figure 5.:** (A) Hierarchical clustering was performed on the log2 FPKM values for the Day 4 time points for well-watered and droughted plants. (B) Consensus network matrix for the well-watered (top) and droughted (bottom) networks. Consensus modules are listed along the bottom of both matrices with the well-watered and droughted modules along the side. Numbers beside the module number are the total gene counts for that module. Numbers inside the matrix are the number of genes in common between the two modules. Red numbers have significant overlap in gene count based on Fisher\u2019s exact test with the \u2013log(p) of the p-value encoding the coloring (0 = -log(1) and 50 = -log(1E-50)).\n\nThe well-watered and droughted networks contained 17 and 20 modules, respectively, suggesting that there are additional expression patterns in the droughted network due to rearrangement of the transcriptome in response to the drought treatment. For example, module 5 from the well-watered network (wM5) contained genes with expression patterns that produce a peak in transcript levels at ZT5 (Figure 6A). Roughly 95% of the genes in the wM5 module resolved into three distinct droughted modules, highlighted by the different color nodes in the network view (Figure 6B). The mean expression of the genes in the droughted modules revealed a change in expression pattern upon drought treatment (Figure 6B). The droughted module 5 (dM5) appeared to be most similar to the wM5 profile, whereas dM1 showed a shift in the phase of the time of lowest transcript level and dM10 shows a bi-phasic expression peak in both days (Figure 6B). Extensive rearrangement of the transcriptomic network, shown graphically in Figure 4, occurred as expected for anisohydric plants adjusting to a mild drought (Dal Santo et al., 2016). Similarly colored modules between the well-watered and droughted networks contained a significant overlap of genes with a common consensus network module (Figure 5B), consistent with their similar eigengene profiles (Figure 4C,D). As demonstrated by the network views (Figure 4A,B), there was visible rearrangement of the genes within the overlapping modules (wM2-4 compared to dM2-5). The co-expression network approach successfully incorporated time-of-day information to group genes based on their diurnal patterns of expression providing a more integrated view of the well-watered and drought transcriptomes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig6-v2.jpg)\n\n**Figure 6.:** (A) The wM5 module from the well-watered network is shown with the mean log2 FPKM expression profiles for the genes in the wM5 network that overlap with dM1, dM5, and dM10 modules. (B) The nodes in the wM5 module are highlighted based on their membership in the dM1, dM5, and dM10 modules from the droughted network. The mean log2 FPKM expression values for the genes in common between the wM5 module and each droughted module is shown. Grey shading in the expression profile plots represents the standard error of the mean log2 FPKM expression levels. White and black bars along the x-axis represent the day and night time points, respectively.\n\n### Correlating network modules with phenotypic traits\n\nTo relate the gene expression modules to the physiology time-course data, we used WGCNA to correlate the module eigengenes with the mean values of each individual physiology measurement (A, gs, NSC, and Fv\u2019/Fm\u2019) at each time point. Gene significance measures were calculated as the absolute value of the correlation with the physiological data (Supplementary file 1, Horvath et al., 2006; Fuller et al., 2007). Several modules in both networks were positively or negatively correlated with various physiological measurements (Figure 7A,B). Modules in both networks with similar phasing had similar trait correlations. For example, the wM5 and dM5 modules with peak expression between ZT1-5 were positively correlated with the A, gs, and Fv\u2019/Fm\u2019, which had similarly phased peaks (Figure 7A,B). Conversely, wM7 and dM8, which peak around ZT17, were negatively correlated with A, gs, and Fv\u2019/Fm\u2019. Both sets of modules had a significant overlap of genes with consensus module 21 (Figure 5B). wM11, wM16, and dM10 were positively correlated with and wM7, wM10, wM12, dM6, and dM8 were negatively correlated with A, gs, NSC, and Fv\u2019/Fm\u2019 (Figure 7A,B). Within the modules there were genes that had high gene significance measures with the physiology and high module membership with the module eigengenes (Figure 7C). The similar correlations observed for both well-watered and droughted networks are to be expected with a treatment that causes mild changes to physiology; however, we did observe significant differences in Fv\u2019/Fm\u2019, gs, and NSC measurements in response to drought, suggesting that these traits are valid predictors of the early perception of drought stress in the plant when sampled throughout the day. We focused on these traits and selected the modules in the droughted network that were significantly correlated with these measures.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig7-v2.jpg)\n\n**Figure 7.:** (A and B) Correlations between module eigengenes and physiology measurements for well-watered (A) and droughted (B) plants. The numbers within the heat map represent correlations and P values (in parentheses; red, positively correlated, blue, negatively correlated) for the module \u2013 trait associations. (C) Scatterplots of gene significance versus module membership for the photosynthetic rate with dM1 (red), PSII efficiency with dM6 (blue), and stomatal conductance with dM13 (black). Significant correlations imply that hub genes within the module are also highly correlated with the physiology measure.\n\n### Applying a circadian-guided approach to identify drought responsive genes\n\nMany of the genes within the modules in the droughted network that were significantly correlated with the physiology data were also correlated in the well-watered network making it difficult to identify drought-specific changes. The rhythmic patterns of gene expression and physiology inherent in the data make it amenable to circadian data analyses. In order to identify genes that are differentially expressed in response to drought we applied a circadian transcript analysis program, JTK-CYCLE, to compare the rhythmic profiles of the genes within the modules of interest between the two networks. JTK-CYCLE is a non-parametric statistical algorithm designed to identify circadian regulated transcripts and estimates period, phase, and amplitude (Hughes et al., 2010). The genes within the droughted network modules that were positively (dM1, dM5, dM10, dM16, and dM19) or negatively (dM2, dM6, dM7, dM8, dM11, dM14, dM17, and dM20) correlated with gs and Fv\u2019/Fm\u2019 (Figure 7B) with p<0.01 (Supplementary file 1) were selected for analysis. The expression levels from both the well-watered and droughted datasets were used for JTK-CYCLE with period parameters set at 24 hr since our data was collected under 24 hr light/dark cycles. Genes were classified as rhythmic using a cut-off q-value\u00a0<0.01 (Supplementary file 2).\n\nDrought-responsive candidate genes were identified based on two criteria. First, we selected transcripts that were not rhythmic in the well-watered dataset but which became rhythmic upon the imposition of drought. Second, among the transcripts that were rhythmic under both conditions, we were interested in transcripts that changed (either increased or decreased) in amplitude of expression upon the imposition of drought. To identify these transcripts we calculated the difference in amplitude for each transcript between the droughted and well-watered datasets and chose transcripts with an amplitude difference greater than 10 for further analysis (Supplementary file 2). To examine the expression change for the selected genes we re-grouped them based on their modules in the droughted network and plotted the mean expression profiles of these genes for each module. We first examined the positively correlated modules (Figure 8A). The log2 mean expression profiles of dM1 and dM5 genes exhibit peak expression levels at ZT5 as do the gs data, consistent with the positive correlation of these modules with gs. In both modules, genes appeared to be down regulated at the end of the light period and into the night for dM1 and down regulated early in the night for dM5. The dM10 module, which was correlated with Fv\u2019/Fm\u2019, showed an elevated level of expression on Day 4 relative to Day 3, consistent with the elevated Fv\u2019/Fm\u2019 in droughted plants on Day 4 (Figure 3C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig8-v2.jpg)\n\n**Figure 8.:** (A) Mean log2 FPKM expression profiles of genes in the dM1, dM5, dM10,\u00a0and dM19 modules that are positively correlated with stomatal conductance and identified by JTK-CYCLE as having an amplitude change between well-watered and droughted samples. Grey lines are always well-watered. White and black bars along the x-axis represent the day and night time points, respectively. (B) Top 10 associated GO terms for dM1 (top), dM5 (middle), and dM10 (bottom). (C) Genes identified in the dM1, dM5, dM10, and dM19 modules with known Arabidopsis orthologs are shown in the network view. Nodes are colored based on module and size based on module membership. The larger nodes are highly connected within a module and have greater \u2018hubness\u2019. The nodes circled in purple were validated by Nanostring.\n\nTo validate the biological relevance of the selected genes from these modules, we analyzed the top 10 enriched GO categories for the positively and negatively correlated module lists containing at least five genes with Arabidopsis syntenic orthologs. The dM1 module was enriched for primary metabolism and response to abiotic stimulus (Figure 8B,C). dM5 was enriched for photosynthesis, response to light, and abiotic stress stimulus (Figure 8B,C). Abiotic stress response is expected under mild drought in anisohydric plants because the mesophyll cells are exposed to lower water potentials earlier in the drought than in isohydric plants (Dal Santo et al., 2016). Interestingly, the dM10 module with the bi-phasic peaks contained genes involved in glucosinolate biosynthesis and metabolism (Figure 8B,C). Previous work has shown that abiotic stress leads to an increase in secondary metabolism that is likely the result of carbon reallocation (Del Carmen Mart\u00ednez-Ballesta et al., 2013). At Day 4, the stage in the mild drought treatment at which Fv\u2019/Fm\u2019 was beginning to decrease, the transcript data suggested that the plant is altering glucosinolate production. Although the exact purpose of this response is unclear (Del Carmen Mart\u00ednez-Ballesta et al., 2013), growth-defense tradeoffs are expected when stress reduces growth (Z\u00fcst and Agrawal, 2017) and secondary metabolism alterations can change circadian clock outputs (Kerwin et al., 2011) that potentially include drought responses.\n\nWe next examined the modules that were negatively correlated with gs and Fv\u2019/Fm\u2019. Consistent with the significant decrease in gs on Day 4 in droughted plants compared to well-watered plants, the genes in these modules showed a decrease in expression on Day 4 and in the case of dM6 an increase in expression on Day 3 as well (Figure 9A). Interestingly, dM6 and dM8 displayed slight phase shifts in expression pattern with an earlier peak in expression on Day 3 compared to Day 4 suggesting that these genes contribute to the initial stages of the drought response. The genes in these modules are related to photosystem efficiency and light response pathways (Figure 9B,C), consistent with the decrease in Fv\u2019/Fm\u2019 observed on Day 4. dM7, dM11, and dM17 show dramatic decreases in expression on Day 4 relative to well-watered plants and contain genes involved in nitrogen metabolism, amino acid biosynthesis, and phosphatase activity (Figure 9B,C).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig9-v2.jpg)\n\n**Figure 9.:** (A) Mean log2 FPKM expression profiles and of genes in the dM2, dM6, dM7, dM8, dM11, and dM20 modules that are negatively correlated with stomatal conductance and identified by JTK-CYCLE as having an amplitude change between well-watered and droughted samples. Grey lines are always well-watered. White and black bars along the x-axis represent the day and night time points, respectively. (B) Top 10 associated GO terms for dM2 (top), dM6 (middle), and dM11 (bottom). (C) Genes identified in the dM2, dM6, dM7, dM8, dM11, and dM20 modules with known Arabidopsis orthologs are shown in the network view. Nodes are colored based on module and size based on module membership. The larger nodes are highly connected within a module and have greater \u2018hubness\u2019. The nodes circled in magenta were validated by Nanostring.\n\nComparing circadian features proved to be an effective way of identifying genes with altered patterns in the droughted relative to the well-watered network as seen by the significant GO enrichment of the selected genes (Figures 8 and 9) that not only validates the biological relevance of the module structure but also the potential importance of the selected genes within these pathways. For this analysis, we chose an amplitude change of 10 as a cutoff based on an initial screen of rhythmic gene expression profiles but there are likely to be genes outside of this cutoff that exhibit a biologically meaningful change and genes within the list that do not. To validate some of the identified genes, we compared the expression levels in five biological replicate plants for each treatment, harvested during the drought experiment, without pooling of tissue from multiple plants as was done with the RNA-seq experiment. One of the limitations of time-course experiments is the cost associated with sequencing each time point at high replication. Using the JTK-CYCLE filtered gene list, we ranked the genes based on their module membership and selected the top three genes from the modules correlated with the physiology data (Figures 8 and 9). In addition, we selected genes from the list with GO ontologies associated with abiotic stress response and light harvesting processes. We identified a list of 36 genes for validation using the NanoString PlexSet technology.\n\nThe NanoString data supported the trends observed in the RNA-seq dataset. The diel expression patterns seen in the well-watered and droughted plants and specific time-of-day responses to drought were recapitulated for the genes evaluated (Figure 10, Figure 10\u2014figure supplements 1 and 2, Figure 10\u2014source data 1). The expression of two members of the C-repeat-binding factor (CBF) regulon COR15B and COR47 (dM1, Figure 8C) showed increased and shifted peak expression on Day 4 of droughted plants relative to well-watered plants (Figure 10) consistent with their known roles in abiotic stress response (Novillo et al., 2007). Consistent with the increase in Fv\u2019/Fm\u2019, several genes related to light harvesting and photosystem regulation showed elevated expression levels during the day in droughted plants. The EARLY LIGHT-INDUCIBLE PROTEIN 1 and 2 (ELIP1/2) genes (Figure 8C), members of chlorophyll a/b \u2013 binding (CAB) protein superfamily and postulated to be photoprotectants for PSII under various stress conditions (Hayami et al., 2015) were both elevated in expression level and showed phase-delayed expression profiles (Figure 10). Components of PSII, LIGHT-HARVESTING CHLOROPHYLL B-BINDING 2 (LHCB2.2) and PHOTOSYSTEM II BY (PSBY), also exhibited elevated expression during the day (Figure 8C, Figure 10). As with all studies that use a correlation in time to study gene expression to trait relationships, we could not address gene expression to trait relationships that take longer than 4 hr, our sampling frequency. Similarly, we note that changes in transcript abundance do not inevitably result in changes in protein abundance or activity and will not identify meaningful changes resulting from post-translational regulation (Graf et al., 2017).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig10-v2.jpg)\n\n**Figure 10.:** Gene expression for a set of drought-responsive genes identified from the JTK-CYCLE filter. NanoString was performed on RNA isolated from leaf tissue harvested during the RNA-seq time\u00a0course experiment. Each data point represents the mean of 5 individual plants. Gene counts were normalized to Bra021441, Bra014841, and Bra020305. Error bars represent SE. Grey shading indicates the dark period. Asterisks indicate significant difference (p<0.05). See Figure 10\u2014figure supplement 1.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** Gene expression for a set of drought-responsive genes identified from the JTK-CYCLE filter. NanoString was performed on RNA isolated from leaf tissue harvested during the RNA-seq time course experiment. Each data point represents the mean of 5 individual plants. Gene counts were normalized to Bra021441, Bra014841, and Bra020305. Error bars represent SE. Black bars and grey shading indicates the dark period. Asterisks indicate significant difference (p<0.05).\n\n![Figure 10\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29655/elife-29655-fig10-figsupp2-v2.jpg)\n\n**Figure 10\u2014figure supplement 2.:** FPKM expression values for the drought responsive genes analyzed by Nanostring and shown in Figure 10. Each data point represents the mean of two biological replicates. Black bars and grey shading indicates the dark period.\n\nIn addition to changes associated with light responses, altered expression for genes involved in nitrogen metabolism was confirmed. The GLUTAMINE SYNTHETASE 2 (GS2) gene, encoding the light- and CO2-induced chloroplastic glutamine synthetase GS2 that assimilates ammonium produced during photorespiration and nitrite reduction (Taira et al., 2004) was elevated late in the day in droughted plants (Figure 10, Figure 10\u2014figure supplement 2). An overall reduction in expression of the mRNA encoding an integral membrane HPP family protein predicted to transport nitrite into plastids (Maeda et al., 2014) was observed in droughted plants (Figure 10\u2014figure supplement 1). The decrease in nitrate transport is consistent with a decrease in nutrient uptake, and the increase in GS2 levels may be a response to ammonium produced from an increase in photorespiration. The drop in gs during the night and the accumulation of NSC in droughted plants on Day 4 of the treatment coincided with decreased expression of the gene encoding CYP79F2, which metabolizes long-chain aliphatic glucosinolates (Figure 8C, Figure 10). The nitrogen metabolism changes are consistent with the role of night transpiration in nitrogen uptake (Matimati et al., 2014) and the constitutive nature of nitrogen uptake and assimilation compared to other nutrients (Hole et al., 1990) and suggest a fruitful line of research on interactions among drought, nitrogen uptake and assimilation, and the circadian clock. Knockdown of CYP79F2 using RNAi in Arabidopsis led to a drop in aliphatic glucosinolates and an increase in indole glucosinolates as well as storage carbohydrates such as fructose and galactose in addition to changes in several hormone levels (Chen et al., 2012). The significant drops that we observed in CYP79F2 expression occurred at the ZT9 and ZT13 time points on Day 4 of the treatment when sugar accumulation was observed (Figures 3D and 10). These temporal changes in gene expression are examples of the rearrangements seen in the drought network and offer new insights into the dynamic transcriptome level changes occurring following early drought perception in B. rapa.\n\nIn this study we characterized the onset of drought response by using temporal changes in physiology to support the biological significance of transcriptome changes. This approach validated the need for time-of-day resolution to observe the dynamic changes in physiology and to filter out the diel changes that cause transcript abundance variations independent of treatment. Integrating these dynamic changes in physiology with the transcriptome data using a circadian-guided network approach uncovered changes in expression of several photosynthetic and metabolic genes, suggesting an early sensing of the drought treatment at the molecular level. Future work is needed to compare the time-of-day dependent drought response of these genes in genetically and phenotypically diverse plants in order to associate the unique transcript dynamics with specific physiological responses to drought.\n\n## Materials and methods\n\n### Plant material and growth conditions\n\nSeeds of Brassica rapa subsp. trilocularis (Yellow Sarson) R500 were planted in pots (156 cm3) filled with a soil mix (Miracle-Gro Moisture control Potting Mix (20% v/v), Marysville, OH, and Profile Porous Ceramic (PPC) Greens Grade (80% v/v), Buffalo Grove, IL) amended with 2 ml of Osmocote 18-6-12 fertilizer (Scotts, Marysville, OH) per pot. Plants were randomized per treatment into four growth chamber compartments (PGC-9/2 Percival Scientific, Perry, IA). Chambers were set to a 14 hr/10 hr (day/night) photoperiod with a photosynthetic photon flux density (PPFD) at the plant height of\u00a0~130 \u03bcmol photons m\u22122 s\u22121. Temperature was set to 21\u00b0C (\u00b12)/18\u00b0C (day/night) cycle with relative humidity maintained between 28\u201333%.\n\n### Experimental design\n\nPlants were watered daily to maintain moist soil conditions until 16 days after sowing (DAS) when water was withheld from half the plants (Droughted; Figure 1A). Sampling began two days after drought onset (18 DAS), with samples collected every 4 hr over 48 hr beginning 1 hr after lights on (ZT1) on the third day of drought (Figure 1A). The well-watered soils maintained soil water potential (\u03a8s) between 0 and \u22120.5 MPa throughout the experiment (Figure 1B). \u03a8s declined progressively to \u22121.5 MPa over the 48 hr for the droughted plants (Figure 1B). Physiological data and leaf tissue for RNA-seq were collected in separate experiments performed under identical conditions (Figure 1B) in order to minimize duration of sampling and to avoid potential alterations of gene expression in response to perturbations associated with the physiological measurements. To assess whether the two experiments elicited similar physiological responses to drought, Fv\u2019/Fm\u2019 was measured at 4 hr intervals during the day and above-ground biomass was determined at ZT17 on Day 3 and Day 4 for each experiment; neither showed any significant difference between the two experiments (Supplementary file 1). Accordingly, for these two traits, we pooled data from the replicate experiments (Figure 3\u2014source data 1).\n\n### Gas exchange\n\nPhotosynthetic rate (A) and stomatal conductance (gs) were measured on the youngest fully expanded leaves according to the protocol described by Long and Bernacchi (Long and Bernacchi, 2003) using three portable gas exchange systems provided with a 2 cm2 leaf chamber fluorimeter (LI-COR-6400XT; LI- COR Biosciences Inc., Lincoln, NE, USA). All spot measurements were taken in the same growth chamber compartment where plants were growing, and environmental conditions in the cuvette matched those in the growth chamber. The following conditions were set for the LiCOR measurements: flow rate, 300 \u03bcmol s\u22121; CO2 concentration, 400 \u03bcmol mol\u22121; VPD, 1.3\u20131.9 kPa; PPFD, 150 \u03bcmol photons m\u22122 s\u22121; leaf temperature, 22\u00b0C; and the cuvette fan was set to fast. Measurements in the dark (ZT14 through ZT24 on Day 3 and Day 4) were taken with the same cuvette settings except that a dim green light (~1 \u03bcmol photons m\u22122 s\u22121) was used. For each replicate, gas exchange values were recorded after stabilization of the readings (max 4 min). The intrinsic WUE was calculated as A/gs according to Seibt et al. (Seibt et al., 2008).\n\n### Chlorophyll a fluorescence\n\nChlorophyll a fluorescence (Humpl\u00edk et al., 2015) was measured using a hand-held fluorimeter (Fluopen FP100, PSI, Brno, Czech Republic) as Fv\u2019/Fm\u2019, maximum efficiency of PSII in light conditions. The actinic light source of the FluorPen was maintained at\u00a0~200 \u03bcmol photons m\u22122 s\u22121. Fv\u2019/Fm\u2019 was measured using a saturation pulse (0.800 s;~2200 photons \u03bcmol m\u22122 s\u22121). Calculations of Fo' used the following equation from Oxborough and Baker (Oxborough and Baker, 1997) where Fo\u2019=Fo/(FvFm\u00a0+Fo/Fm'). For the nighttime samples (ZT14 through ZT24 on Day 3 and Day 4), Fv/Fm, maximum efficiency of PSII in dark-adapted conditions, was measured as described previously (Murchie and Lawson, 2013); the measuring light of the FluorPen was set at\u00a0~1,500 \u03bcmol photons m\u22122 s\u22121 with a saturation pulse at\u00a0~2200 photons \u03bcmol m\u22122 s\u22121. All dark measurements were taken using a dim green light (~1 \u03bcmol photons m\u22122 s\u22121).\n\n### Above-ground biomass\n\nAt ZT17 on Day 3 and Day 4, six replicate plants from each treatment were harvested for fresh and dry biomass measures. Above-ground tissue was cut at the soil level with a razor blade, weighed, oven-dried for 10 days at 65\u00b0C and weighed again for dry biomass.\n\n### Non-structural carbohydrates\n\nNSC were measured using the anthrone method (Seifter et al., 1950). Above-ground plant tissue (leaves and cotyledons) was collected, flash-frozen, and ground. The powder (~0.1 g), after air-drying, was extracted in 10 ml of 80% ethanol, incubated at 80\u00b0C for 30 min, and centrifuged for 5 min. The pellets were extracted two more times with 80% ethanol. An aliquot of the extract was hydrolyzed in 5 ml anthrone solution (4 g anthrone in 1000 ml 95% H2SO4; Sciencelab.com, Houston, TX) in a boiling water bath for 15 min. After cooling, the sugar concentration was determined spectrophotometrically at 620 nm using glucose as a standard.\n\n### Statistical analysis for physiology data\n\nWe averaged all replicate samples for each physiological trait and calculated standard errors for each time point. The two treatments were compared at every time point using a one-tailed unpaired Student\u2019s t-test.\n\n### Collection of leaf tissue for RNA-sequencing\n\nFor RNA-seq,\u00a0~1 cm2 sections were cut from the youngest fully developed leaf and immediately flash frozen in liquid nitrogen. Preserved tissue was placed in long-term storage at \u221280\u00b0C until RNA extraction. At each time point, tissue from 10 plants in the same treatment was collected and five plants were pooled for each biological replicate, resulting in two biological replicates per treatment at each time point.\n\n### RNA-sequencing library preparation and processing\n\nWe used a modified mRNA isolation protocol (Supplementary file 3) to isolate mRNA directly from B. rapa R500 leaf tissue. The mRNA was used to make strand specific libraries according to the low-cost library protocol from Wang et al. (Wang et al., 2011a). Library quality and size were verified using a 2100-bioanalyzer (Agilent Technologies, Santa Clara, CA). Libraries were pooled into 12 sample sets and sequenced across 4 lanes (12 time points/time course\u00a0+2 replicates of each treatment\u00a0=\u00a048 libraries) as 101 bp paired-end reads using Illumina HiSeq2500 (Illumina, San Diego, CA). Raw data has been submitted to GEO (http://www.ncbi.nlm.nih.gov/geo) under accession number GSE90841. The raw fasta reads were filtered using trimmomatic (RRID:SCR_011848; http://www.usadellab.org/cms/index.php?page=trimmomatic) with mostly default settings (ILLUMINACLIP:./TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:25 HEADCROP:14 MINLEN:50). Prior to aligning to the Chiifu reference genome (Wang et al., 2011b), existing R500 DNA-seq data (https://www.ncbi.nlm.nih.gov/sra; SRR065676) were used to call SNPs in the Chiifu genome using GATK (RRID:SCR_001876; https://www.broadinstitute.org/gatk/) with default settings. The vcf file generated by GATK was filtered to remove any SNPs with a quality score below 30, coverage below 10 and all heterozygous SNPs. The remaining SNPs were used to replace the Chiifu reference genome using the vcf-consensus tool in the VCFtools package (RRID:SCR_001235; http://vcftools.sourceforge.net/perl_module.html). Tophat2 (RRID:SCR_013035) was used to align the RNA-seq reads to the modified Chiifu genome file using default settings and first-strand library type. Transcripts were assembled using cufflinks with the Chiifu reference Brassica_rapa.IVFCAASv1.19.gtf annotation file. FPKM values were generated using cuffdiff (RRID:SCR_001647) with \u2013-no-diff \u2013-no-js-tests options (Trapnell et al., 2010; 2012).\n\n### WGCNA network analysis\n\nThe well-watered and drought time course datasets were filtered to remove any genes that did not reach an FPKM value of 10 in at least one time point in order to remove non-varying or low-abundance genes that introduce noise into the network analysis. Log2 normalized FPKM values were used to generate the co-expression networks using the WGCNA (RRID:SCR_003302) package in R (Team RC, 2016; Langfelder and Horvath, 2008; Langfelder and Horvath, 2012). Independent signed networks were constructed from the well-watered and drought time-course samples. An adjacency matrix was constructed using a soft threshold power of 16. Network interconnectedness was measured by calculating the topological overlap using the TOMdist function with a signed TOMType. Average hierarchical clustering using the hclust function was performed to group the genes based on the topological overlap dissimilarity measure (1-TOM) of their connection strengths. Network modules were identified using a dynamic tree cut algorithm with minimum cluster size of 30 and merging threshold function at 0.25. To visualize the expression profiles of the modules, the eigengene (first principal component) for each module was plotted using ggplot2 in R. To identify hub genes within the modules, the module membership (MM) for each gene was calculated based on the Pearson correlation between the expression level and the module eigengene. Genes within the module with the highest MM are highly connected within that module. To relate the physiology measurements with the network, the module eigengenes were correlated with the physiology data. Correlations were performed for each physiology trait separately using the mean values at each time point to associate the diel patterns between the physiology and eigengenes. To associate individual genes with the physiology we calculated Gene Significance (GS) as described in the WGCNA package as the absolute value of the correlation between gene expression and physiology across the time series.\n\n### NanoString sample preparation and analysis\n\nTo validate a subset of genes identified in the WGCNA and JTK-CYCLE analysis, five individual plants from the well-watered and drought conditions were collected during the time course experiment alongside the plants harvested for RNA-seq. Leaf tissue was ground in Lysis Binding Buffer (LBB) as described in the mRNA extraction protocol (Supplementary file 3). Following the centrifugation in LBB, 400 \u03bcl of lysate was used for RNA extraction using the Zymo Research Plant RNA MiniPrep kit (Zymo, Irvine, CA). RNA purity was assessed with a NanoDrop spectrophotometer (Thermo Fisher Scientific, Waltham MA), and concentration was determined using the Qubit broad range RNA assay kit according to the manufacturer\u2019s instructions (Thermo Fisher Scientific, Waltham MA). An initial RNA titration test was performed for each probeset with 50 ng, 100 ng, 150 ng and 200 ng probe to optimize the concentration. We chose 150 ng for the full time course assay. All five replicate samples for each time point and treatment were randomly arranged across 96-well plates with a random set of technical replicates. The NanoString PlexSet assay was performed according to the manufacturer\u2019s instructions (NanoString Technologies, Seattle, WA) at the Molecular Biology Core Facility at Dartmouth College. Normalization was performed using the NanoString nSolver Analysis Software 3.0 with default settings. The housekeeping genes selected for Content Normalization were Bra021411, Bra014841, and Bra020305. These genes were selected based on criteria including absence from the rhythmic modules and JTK-CYCLE list of cycling genes and low level of overall change in FPKM across the 2 day time course in both the well-watered and droughted samples. These genes also represent low, medium, and high expression levels. For the CodeSet normalization, a row of the plate containing technical replicates of two pooled RNA samples (droughted samples Day 3 ZT5 and Day4 ZT39) were used. Normalized data were exported and further analyzed in R. Based on the technical replicate comparisons it was evident that there are occasional spurious probe counts for a single gene within a sample that were not reproduced in the technical replicate indicating a technical problem rather than biological. To remove these probe counts we calculated the modified Z-score for each probe across all samples and removed probes above 3. For all samples with technical replicates we selected the sample with the lowest maximum modified Z-score. The five biological replicate samples were averaged, and standard errors calculated for each time point and a one-tailed unpaired Student\u2019s t-test was performed to compared data from the well-watered and droughted samples at every time point.\n",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "1510873a-2691-41fb-bce0-f7e8d54771a2",
+      "submission_id": "4c2a1bee-610a-4382-9405-6c28f77ac632",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joerg Bohlmann, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29655.025](https://doi.org/10.7554/eLife.29655.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Temporal network analysis identifies early physiological and transcriptomic indicators of mild drought in Brassica rapa\" for consideration by eLife.\n\nYour article has been reviewed by two peer reviewers, and the evaluation has been overseen by Joerg Bohlmann as the Reviewing Editor and Christian Hardtke as the Senior Editor. The two external reviewers, whose comments are following below, were very positive. The Reviewing Editor agrees with this positive assessment, and he is recommending your paper to be accepted for publication in eLife pending revisions to address the reviewers' comments.\n\nReviewer #1:\n\nIn this manuscript, the authors investigate the early drought response of B. rapa. They identify \"mild drought\" conditions where B. rapa plants begin to react to drought without overt symptoms. Under mild drought and well-watered conditions, the authors measure diel patterns of gene expression and assess temporal changes in physiological readouts known to be influenced by water deficit and/or part of drought responses. The authors identify co-expression modules with WGCNA network analysis. They then correlate these modules with observed physiological changes occurring under drought conditions. With a unique circadian-guided filter approach, the authors identify regulatory modules associated with time of day aspects of drought responses. This approach identified several modules where gene expression of module members is highly correlated with at least one of the phenotypic traits. While these correlations do not provide specific regulatory connections within drought response networks, the study identifies several modules wherein genes are related by function and these functions are plausible contributors to drought responses.\n\nThere are no substantive concerns with this manuscript. The data are solid, with the caveat that the network analysis is outside my expertise. The text is well written and logically organized. This is an important paper because it shows the significance of temporal dynamics in drought response and, more generally, that consideration of time of day is critical when investigating plant stress responses. It also lays out relationships between genes that together are highly likely to shape the drought response of B. rapa.\n\nReviewer #2:\n\nThe study by Greenham and colleagues aims to develop an integrated view of mild drought stress response in plants. Using a single genotype of Brassica rapa as their model, the authors performed a soil dry down experiment and measured ecophysiological parameters and transcript abundance (RNASeq) in a two-day diel framework. They perform quite a few analyses on these data, both separately and together, and identify some very interesting patterns in the data.\n\nOn the whole, this is a truly exceptional experiment and will be among the very best studies of response to soil drying in plants. The experiment itself and sampling represents a tremendous amount of work, and was executed at the very highest standards of stress implementation, experimental control, and empirical measurements. It is rare to see (relevant) high-quality ecophysiological measurements and RNASeq measurements in a single experiment, and the field needs many more studies of this type. I anticipate that other researchers may utilize this dataset and yield address additional, interesting, insights beyond those explored here.\n\nI have several suggestions for improving the manuscript, which I enumerate below.\n\n1) A major advancement of this study is the ability to integrate ecophysiology parameters with transcript information, using temporal variation to assess formal correlations. It is unclear how these correlations were made. In subsection \u201cCorrelating network modules with phenotypic traits\u201d: what physiology values were used for these correlations? As written, it sounds as if the correlation matrix is just all of the modules against means of all of the ecophys parameters(?). And then visual inspection was made to assess the extent to which the diurnal patterns match between the two types of data? This non-quantitative analysis continues in the following section, where e.g. subsection \u201cApplying a circadian-guided approach to identify drought responsive genes\u201d states that two dry modules \"match the pattern observed in the gs data.\" At the very least, please explain in more detail how these analyses were performed. But I also wonder if a more formal analysis of the diurnal patterns might be fruitful, incorporating the full\u2013time series for each type of data?\n\n2) More formal language describing variance, correlation, and statistical significance should be used. \"Varying degrees of significance\" subsection \u201cCorrelating network modules with phenotypic traits\u201d, and \"high significance measures\" imply that a statistical test with a p-value of 0.001 is somehow MORE significant than a test with a p-value of 0.01; this is not the case. Both tests are significant provided that they fall below some a priori value of \u03b1. Please remove these statements and just state that the tests are significant. In subsection \u201cApplying a circadian-guided approach to identify drought responsive genes\u201d, a claim is made about one correlation being higher than another. Contrasting the strength of two correlations requires a formal test but, frankly, doing such tests is unnecessary for this study's aims and conclusions; I suggest simply removing these qualitative statements about differing strengths of correlation.\n\n3) Subsection \u201cApplying a circadian-guided approach to identify drought responsive genes\u201d, as presented in Figure 8B, top panel, does not support the statement that the dM1 module is enriched for \"macromolecule metabolic processes\"\n\n4) Figure 9 is confusing. First, the color key is included in panel C, but (I think) is also valid for panel B. Second, there is no description of panel C in the figure legend.\n\n5) The inclusion of the NanoString analysis to support conclusions from the RNASeq data is great. I'm not sure how the types of data actually support each other, however. For example, subsection \u201cApplying a circadian-guided approach to identify drought responsive genes\u201d states \"the diel expression patterns seen.\u2026 were recapitulated for the genes evaluated (Figure 10).\" What are readers meant to assess in Figure 10? That the genes are cycling? Given that we have not seen the circadian patterns of these specific genes in the RNASeq data, how are we to determine whether there is concordance between the data sets? As written, this whole section supports the concordance between these NanoString-measured genes and PAST research, but there is no real validation offered between the NanoString and RNASeq datasets. Perhaps a few sentences could be changed so that the point of this paragraph is to validate the RNA samples themselves in light of past work, rather than formally validate the RNASeq results.\n",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9a74a855-5f93-4fcd-95be-90c62f80d285",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C1",
+      "claim": "Rising temperatures, with attendant increases in drought as well as insect and disease outbreaks, are predicted to result in net losses in yield of North American crops by the end of the 21st century.",
+      "claim_type": "EXPLICIT",
+      "source": "Projected impacts of climate change on crop yields vary widely depending on crop type and location; however, rising temperatures, with attendant increases in drought as well as insect and disease outbreaks, are predicted to result in net losses in yield of North American crops by the end of the 21st century (Settele et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Settele et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "d0bd35f8-8e35-467a-acf3-20f26f9ce896",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C2",
+      "claim": "Water stress accounts for the largest proportion of crop loss in the U.S.",
+      "claim_type": "EXPLICIT",
+      "source": "Water stress accounts for the largest proportion of crop loss in the U.S., and an estimated 45% of U.S. land surface suffers from low water availability (DeLucia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DeLucia et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "7414406d-e508-45c2-9741-f428ce1a23c9",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C3",
+      "claim": "An estimated 45% of U.S. land surface suffers from low water availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Water stress accounts for the largest proportion of crop loss in the U.S., and an estimated 45% of U.S. land surface suffers from low water availability (DeLucia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DeLucia et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "27580edb-43ce-4081-afa0-f1bd5a7c37b1",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C4",
+      "claim": "Plants can exhibit either drought escape or drought resistance mechanisms in response to soil water deficit.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to soil water deficit, plants can exhibit either drought escape or drought resistance mechanisms (Levitt, 1980; Harb et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Levitt, 1980 and Harb et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "a36862a7-6bc8-446a-8e18-59a9829c2a82",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C5",
+      "claim": "Under drought escape, plants complete their life cycle before the onset of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Under drought escape, plants complete their life cycle before the onset of stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific understanding of drought escape mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "8491e26f-78ca-4f4a-b476-090e721fdeff",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C6",
+      "claim": "Drought resistance can occur through dehydration avoidance or through tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Drought resistance can occur through dehydration avoidance or through tolerance (Levitt, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Levitt, 1980",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "04f56174-16ff-48da-820e-e018fa5595e7",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C7",
+      "claim": "With dehydration avoidance, plants maintain high cellular water potential by lowering stomatal conductance and/or reducing water loss through changes in leaf area or orientation and by increasing resource allocation to roots.",
+      "claim_type": "EXPLICIT",
+      "source": "With dehydration avoidance, plants maintain high cellular water potential by lowering stomatal conductance and/or reducing water loss through changes in leaf area or orientation and by increasing resource allocation to roots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge of dehydration avoidance mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "1850f6cc-5031-4618-9cc6-8259e40d0f4f",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C8",
+      "claim": "Drought tolerant plants conserve cell turgor through osmotic adjustments to survive the drought stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Drought tolerant plants conserve cell turgor through osmotic adjustments to survive the drought stress (Levitt, 1980) and may also tolerate lower cell water potentials through anisohydric water potential regulation (Franks et al., 2007) while maintaining cellular metabolism (Sade et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Levitt, 1980; Franks et al., 2007; and Sade et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "076a15d4-3788-4d94-aeb3-9bb71a064cb8",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C9",
+      "claim": "Intrinsic water use efficiency (WUE) is defined as the ratio between stomatal conductance (gs) and CO2 assimilation (A).",
+      "claim_type": "EXPLICIT",
+      "source": "A commonly used measure for assessing drought resistance is the intrinsic water use efficiency (WUE), which is defined as the ratio between stomatal conductance (gs) and CO2 assimilation (A) (Condon et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Condon et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "a29f3d9a-d48a-46b8-9b23-ca3968dcc1a4",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C10",
+      "claim": "WUE is not always an accurate predictor of yield capacity under drought.",
+      "claim_type": "EXPLICIT",
+      "source": "WUE is often used as a proxy for drought resistance, but it is not always an accurate predictor of yield capacity under drought (Medrano et al., 2012) especially when biomass allocation to roots increases in response to drought (Edwards et al., 2016) or when yield is tightly correlated with water use (Blum, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Medrano et al., 2012; Edwards et al., 2016; and Blum, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "164dca5a-42ab-4c5b-8521-1741fbfdd604",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C11",
+      "claim": "Many drought-responsive genes are under circadian regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many drought-responsive genes are under circadian regulation (Covington et al., 2008) resulting in specific time-of-day responses to drought (Wilkins et al., 2010; Dubois et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Covington et al., 2008; Wilkins et al., 2010; and Dubois et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "a5c735b9-fa69-4a1e-9b4b-a574a34ed305",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C12",
+      "claim": "The genus Brassica includes the closest crop relatives of Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "The genus Brassica includes the closest crop relatives of Arabidopsis and therefore is an excellent crop model for comparative studies, including analyses of adaptive drought responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge of plant phylogeny",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "a80ecfa5-3133-4de1-9c58-7c3c2ffdc5c6",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C13",
+      "claim": "Rapeseed (B. napus) is an allopolyploid derived via hybridization between B. rapa and B. oleracea.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapeseed (B. napus), an allopolyploid derived via hybridization between B. rapa and B. oleracea, is the second largest oil crop after soybean with an annual global production of 70 million tons (http://faostat.fao.org, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge of Brassica genetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "f82dddb4-90de-4072-ac0a-3d058dbf5018",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C14",
+      "claim": "Rapeseed is the second largest oil crop after soybean with an annual global production of 70 million tons.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapeseed (B. napus), an allopolyploid derived via hybridization between B. rapa and B. oleracea, is the second largest oil crop after soybean with an annual global production of 70 million tons (http://faostat.fao.org, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to faostat.fao.org, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "4d1d1d15-ba2d-4606-a7b4-7762c337aee0",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C15",
+      "claim": "Water was completely withheld from the droughted cohort of B. rapa (Yellow Sarson) R500 beginning at 16 days after sowing (DAS).",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the early stages of mild drought, completely withholding water for the droughted cohort of B. rapa (Yellow Sarson) R500 beginning at 16 days after sowing (DAS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental procedure performed by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "0a380bc7-1510-44c8-8a95-46377d13ed1e",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C16",
+      "claim": "Tissue sampling and physiological measurements were conducted on Day 3 and 4 of drought, 18 and 19 DAS, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue sampling and physiological measurements were conducted on Day 3 and 4 of drought, 18 and 19 DAS, respectively (Figure 1A, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes the experimental procedure and references Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "2e1c2062-34fa-4b55-b205-3450917732c3",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C17",
+      "claim": "After four days of drought, soil water potential (\u03a8s) had declined progressively to \u22121.5 MPa.",
+      "claim_type": "EXPLICIT",
+      "source": "After four days of drought, soil water potential (\u03a8s) had declined progressively to \u22121.5 MPa, whereas \u03a8s was relatively constant between 0 and \u22120.5 MPa for the well-watered soil (Figure 1B, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "8a6039c4-a72b-4e01-8e74-a30c6d91286f",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C18",
+      "claim": "Soil water potential was relatively constant between 0 and \u22120.5 MPa for the well-watered soil.",
+      "claim_type": "EXPLICIT",
+      "source": "After four days of drought, soil water potential (\u03a8s) had declined progressively to \u22121.5 MPa, whereas \u03a8s was relatively constant between 0 and \u22120.5 MPa for the well-watered soil (Figure 1B, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "5015ac2e-5a45-4434-9606-7969cfd34dc7",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C19",
+      "claim": "The droughted plants showed a significant decrease in dry above-ground biomass by the end of Day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The droughted plants showed a significant decrease in dry above-ground biomass by the end of Day 4 (Figure 2A); however, there was no wilting during the experiment (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "40f66a6c-4539-4d30-aaa6-4a1e0a853f2d",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C20",
+      "claim": "There was no wilting during the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The droughted plants showed a significant decrease in dry above-ground biomass by the end of Day 4 (Figure 2A); however, there was no wilting during the experiment (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by visual observations shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "842972cd-7f80-4a4a-a895-1b01c90ff902",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C21",
+      "claim": "The drought conditions applied in this study capture the early perception of drought stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the drought conditions applied in this study capture the early perception of drought stress (Harb et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental conditions and supported by citation to Harb et al., 2010",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "45bc8205-9e8c-480e-91a2-807494777290",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C22",
+      "claim": "On both Day 3 and Day 4 of drought, photosynthetic rate (A) peaked at Zeitgeber Time (ZT) five.",
+      "claim_type": "EXPLICIT",
+      "source": "On both Day 3 and Day 4 of drought, A peaked at Zeitgeber Time (ZT) five where ZT0 corresponded to lights on (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "ec8958b4-e2b0-4b25-938d-1a9a1b6c7fe5",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C23",
+      "claim": "At ZT5, a net CO2 uptake of 12 \u00b1 2 \u03bcmol m\u22122s\u22121 was recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, we recorded a net CO2 uptake of 12 \u00b1 2 \u03bcmol m\u22122s\u22121 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "68febf49-d2b0-4dc9-b8c4-d980196d0b92",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C24",
+      "claim": "Droughted plants had photosynthetic capacity similar to well-watered plants for the duration of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Droughted plants had photosynthetic capacity similar to well-watered plants for the duration of the experiment (Figure 3A), in agreement with previous studies of anisohydric plants where overall photosynthetic capacity was not disturbed by mild drought stress (Chaves et al., 2009; Cornic and Massacci, 1996; Flexas and Medrano, 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3A and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "9661510b-1e49-40c2-93e1-ea48b62fc4ed",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C25",
+      "claim": "There were significant differences in gs between droughted versus well-watered plants with a reduction of 50% late in the day (ZT13) and 30% at night (between ZT17 and ZT21) on both Day 3 and Day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there were significant differences in gs between droughted versus well-watered plants with a reduction of 50% late in the day (ZT13) and 30% at night (between ZT17 and ZT21) on both Day 3 and Day 4 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "3436c305-1370-4590-84db-7f7f4bfc4562",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C26",
+      "claim": "In late afternoon and at night gs responds to small changes in soil water potential and seems to play an important role in the early response to drought.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in late afternoon and at night gs responds to small changes in soil water potential and seems to play an important role in the early response to drought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data showing gs changes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "f8a139c5-34b6-469b-85fd-fa1fda253a15",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C27",
+      "claim": "B. rapa can reduce CO2 supply before A is impacted.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that B. rapa, like many crops, can reduce CO2 supply before A is impacted (Edwards et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data and supported by citation to Edwards et al., 2016",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "b8d7fa0e-7677-4632-9bd8-05ee7fa2ad7a",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C28",
+      "claim": "Fv'/Fm' was significantly greater for droughted than well-watered plants on both Days 3 and 4 of drought during the middle of the light period.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance of photosynthetic capacity in droughted plants despite the significant decrease in gs may be partly explained by Fv'/Fm', which was significantly greater for droughted than well-watered plants on both Days 3 and 4 of drought during the middle of the light period (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "7d8f0d17-7103-490b-aa69-4da75fa5dbed",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C29",
+      "claim": "Fv'/Fm' presented a diurnal pattern with the highest values early in the day (ZT1 and ZT5) in both droughted and well-watered plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Fv'/Fm' presented a diurnal pattern with the highest values early in the day (ZT1 and ZT5) in both droughted and well-watered plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "af16d597-dc03-4d58-86c4-e4c397d5f086",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C30",
+      "claim": "Elevated Fv'/Fm' fully compensated for reduced gas exchange under mild drought conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated Fv'/Fm' fully compensated for reduced gas exchange under mild drought conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data showing maintained photosynthetic capacity despite reduced gs",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "b1712f0b-51ea-4f09-b5f0-85cdf138b4de",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C31",
+      "claim": "Non-structural carbohydrates (NSC) accumulated during the day and decreased during the night in well-watered conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, non-structural carbohydrates (NSC) accumulated during the day and decreased during the night in well-watered conditions (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "1d953cff-4707-4d81-b43f-83140825d73e",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C32",
+      "claim": "In droughted plants, NSC levels were elevated throughout the night compared to well-watered controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In droughted plants, NSC levels were elevated throughout the night compared to well-watered controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "f25e418c-2f82-4ff8-8fbf-c7245a01f48b",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C33",
+      "claim": "The reduction in biomass observed was not due to a reduction in carbon availability but rather to the decreased nighttime conductance that preserves leaf turgor and high water potential at the cost of sugar translocation to growing tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of above-ground NSC accumulation suggested that the reduction in biomass observed (Figure 2A) was not due to a reduction in carbon availability but rather to the decreased nighttime conductance that preserves leaf turgor and high water potential (Chaves, 1991) at the cost of sugar translocation to growing tissues (Sevanto, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data and supported by citations to Chaves, 1991 and Sevanto, 2014",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "d17118ef-cf68-4d1b-ae2e-6da45bb7267b",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C34",
+      "claim": "Plants can lose as much as 30% of the daily water budget overnight.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with studies showing that plants can lose as much as 30% of the daily water budget overnight (Dawson et al., 2007; Caird et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dawson et al., 2007 and Caird et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "eaad18e4-bdc0-43f0-a0b1-ac270a31d7d8",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C35",
+      "claim": "gs is the best physiological indicator of the early perception of drought stress in the plant.",
+      "claim_type": "EXPLICIT",
+      "source": "We found gs to be the best physiological indicator of the early perception of drought stress in the plant, consistent with the view that A and gs are regulated separately (Dodd et al., 2004; von Caemmerer et al., 2004) and that small decreases in gs do not lead directly to reductions in A under mild drought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data and supported by citations to Dodd et al., 2004 and von Caemmerer et al., 2004",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "8efa7d6d-408d-49f5-a908-e849daf2de0d",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C36",
+      "claim": "The top eight modules in the network analysis contained 80\u201385% of the genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, the top eight modules, containing 80\u201385% of the genes in the network analysis (see Materials and methods, Supplementary file 1), showed strong temporal expression patterns across the two-day time course (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the network analysis results shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "a795f3af-f7a0-42e1-aad8-dfbd1934810c",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C37",
+      "claim": "The top eight modules showed strong temporal expression patterns across the two-day time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, the top eight modules, containing 80\u201385% of the genes in the network analysis (see Materials and methods, Supplementary file 1), showed strong temporal expression patterns across the two-day time course (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the network analysis results shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "afe04fd9-076d-4ba9-960b-9e5c0efa30fc",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C38",
+      "claim": "Samples clustered based on time of day, rather than treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with time-course transcriptome studies in Arabidopsis, poplar, and soybean (Wilkins et al., 2009; Wilkins et al., 2010; Rodrigues et al., 2015; Dubois et al., 2017) samples clustered based on time of day, rather than treatment, revealing that the transcriptome varied more with time of day than due to drought (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by hierarchical clustering analysis shown in Figure 5A and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "23f01edb-d34d-4fb2-b4f4-fe2bcaba167b",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C39",
+      "claim": "The transcriptome varied more with time of day than due to drought.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with time-course transcriptome studies in Arabidopsis, poplar, and soybean (Wilkins et al., 2009; Wilkins et al., 2010; Rodrigues et al., 2015; Dubois et al., 2017) samples clustered based on time of day, rather than treatment, revealing that the transcriptome varied more with time of day than due to drought (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by hierarchical clustering analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "37f0e4f6-6a39-41ab-8861-356b4c97eae7",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C40",
+      "claim": "The consensus network contained significant overlaps in module classifications between the droughted and well-watered networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus network contained significant overlaps in module classifications between the droughted and well-watered networks, consistent with the strong diurnal effects on the transcriptome (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by consensus network analysis shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "a3db0cd2-cb15-45bd-86ae-15bc36f4eecd",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C41",
+      "claim": "The well-watered and droughted networks contained 17 and 20 modules, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-watered and droughted networks contained 17 and 20 modules, respectively, suggesting that there are additional expression patterns in the droughted network due to rearrangement of the transcriptome in response to the drought treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the network analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "85c0e248-b501-4410-9dc8-6def51c510d3",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C42",
+      "claim": "There are additional expression patterns in the droughted network due to rearrangement of the transcriptome in response to the drought treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-watered and droughted networks contained 17 and 20 modules, respectively, suggesting that there are additional expression patterns in the droughted network due to rearrangement of the transcriptome in response to the drought treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the difference in module numbers between networks",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "2c46fc81-5c9d-4019-a4b8-cb672868cee8",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C43",
+      "claim": "Roughly 95% of the genes in the wM5 module resolved into three distinct droughted modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Roughly 95% of the genes in the wM5 module resolved into three distinct droughted modules, highlighted by the different color nodes in the network view (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by network analysis shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "3cc3fc2d-9bc7-4d58-b597-35a87d2d1b92",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C44",
+      "claim": "Several modules in both networks were positively or negatively correlated with various physiological measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Several modules in both networks were positively or negatively correlated with various physiological measurements (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 7A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "74942b00-4f2b-4fc1-8b1a-b60c78fb9482",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C45",
+      "claim": "The wM5 and dM5 modules with peak expression between ZT1-5 were positively correlated with the A, gs, and Fv'/Fm'.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the wM5 and dM5 modules with peak expression between ZT1-5 were positively correlated with the A, gs, and Fv'/Fm', which had similarly phased peaks (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 7A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "51113f8c-7466-4c84-8287-9e21f4700148",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C46",
+      "claim": "wM7 and dM8, which peak around ZT17, were negatively correlated with A, gs, and Fv'/Fm'.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, wM7 and dM8, which peak around ZT17, were negatively correlated with A, gs, and Fv'/Fm'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 7A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "451d7703-4ce4-45fa-82e3-c7d228d782ec",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C47",
+      "claim": "The dM1 module was enriched for primary metabolism and response to abiotic stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The dM1 module was enriched for primary metabolism and response to abiotic stimulus (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO enrichment analysis shown in Figure 8B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "36f0358d-3bb9-4c4e-9e43-102318347238",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C48",
+      "claim": "dM5 was enriched for photosynthesis, response to light, and abiotic stress stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "dM5 was enriched for photosynthesis, response to light, and abiotic stress stimulus (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO enrichment analysis shown in Figure 8B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "91702db0-f35b-4f3d-9761-229b64c0dcc7",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C49",
+      "claim": "The dM10 module with the bi-phasic peaks contained genes involved in glucosinolate biosynthesis and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the dM10 module with the bi-phasic peaks contained genes involved in glucosinolate biosynthesis and metabolism (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO enrichment analysis shown in Figure 8B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "174dc742-d46f-40d1-a4a4-57917d153c09",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C50",
+      "claim": "Abiotic stress leads to an increase in secondary metabolism that is likely the result of carbon reallocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that abiotic stress leads to an increase in secondary metabolism that is likely the result of carbon reallocation (Del Carmen Mart\u00ednez-Ballesta et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Del Carmen Mart\u00ednez-Ballesta et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "6ea211b2-8b96-4be1-89b0-21276e6f7936",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C51",
+      "claim": "The genes in negatively correlated modules are related to photosystem efficiency and light response pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes in these modules are related to photosystem efficiency and light response pathways (Figure 9B,C), consistent with the decrease in Fv'/Fm' observed on Day 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO enrichment analysis shown in Figure 9B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "ba112fbe-afcb-4507-b20c-5af75f36d9bf",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C52",
+      "claim": "dM7, dM11, and dM17 contain genes involved in nitrogen metabolism, amino acid biosynthesis, and phosphatase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "dM7, dM11, and dM17 show dramatic decreases in expression on Day 4 relative to well-watered plants and contain genes involved in nitrogen metabolism, amino acid biosynthesis, and phosphatase activity (Figure 9B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO enrichment analysis shown in Figure 9B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "d8be8ab7-daf5-4494-b919-bb470270b4c4",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C53",
+      "claim": "The NanoString data supported the trends observed in the RNA-seq dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The NanoString data supported the trends observed in the RNA-seq dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by validation experiments using NanoString technology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "7ba634b2-9597-43bf-ae4f-13b931577add",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C54",
+      "claim": "The diel expression patterns seen in the well-watered and droughted plants and specific time-of-day responses to drought were recapitulated for the genes evaluated.",
+      "claim_type": "EXPLICIT",
+      "source": "The diel expression patterns seen in the well-watered and droughted plants and specific time-of-day responses to drought were recapitulated for the genes evaluated (Figure 10, Figure 10\u2014figure supplements 1 and 2, Figure 10\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoString validation data shown in Figure 10 and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "77b7a076-0acf-44c0-bd03-9c1c16046789",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C55",
+      "claim": "COR15B and COR47 showed increased and shifted peak expression on Day 4 of droughted plants relative to well-watered plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of two members of the C-repeat-binding factor (CBF) regulon COR15B and COR47 (dM1, Figure 8C) showed increased and shifted peak expression on Day 4 of droughted plants relative to well-watered plants (Figure 10) consistent with their known roles in abiotic stress response (Novillo et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoString validation data shown in Figure 10 and citation to Novillo et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "57b4687f-74b4-4003-ac28-802735f69650",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C56",
+      "claim": "ELIP1/2 genes are members of chlorophyll a/b \u2013 binding (CAB) protein superfamily and postulated to be photoprotectants for PSII under various stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The EARLY LIGHT-INDUCIBLE PROTEIN 1 and 2 (ELIP1/2) genes (Figure 8C), members of chlorophyll a/b \u2013 binding (CAB) protein superfamily and postulated to be photoprotectants for PSII under various stress conditions (Hayami et al., 2015) were both elevated in expression level and showed phase-delayed expression profiles (Figure 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hayami et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "c20ae657-1f8c-4cdc-a83d-8e7bff1d0540",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C57",
+      "claim": "ELIP1/2 were both elevated in expression level and showed phase-delayed expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The EARLY LIGHT-INDUCIBLE PROTEIN 1 and 2 (ELIP1/2) genes (Figure 8C), members of chlorophyll a/b \u2013 binding (CAB) protein superfamily and postulated to be photoprotectants for PSII under various stress conditions (Hayami et al., 2015) were both elevated in expression level and showed phase-delayed expression profiles (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoString validation data shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "dcce0786-8d6e-4e8a-9303-e8068e049cb5",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C58",
+      "claim": "Components of PSII, LHCB2.2 and PSBY, exhibited elevated expression during the day.",
+      "claim_type": "EXPLICIT",
+      "source": "Components of PSII, LIGHT-HARVESTING CHLOROPHYLL B-BINDING 2 (LHCB2.2) and PHOTOSYSTEM II BY (PSBY), also exhibited elevated expression during the day (Figure 8C, Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoString validation data shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "8f27ceb5-ec70-45df-ac8f-0846e468e1fc",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C59",
+      "claim": "The GLUTAMINE SYNTHETASE 2 (GS2) gene encodes the light- and CO2-induced chloroplastic glutamine synthetase GS2 that assimilates ammonium produced during photorespiration and nitrite reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLUTAMINE SYNTHETASE 2 (GS2) gene, encoding the light- and CO2-induced chloroplastic glutamine synthetase GS2 that assimilates ammonium produced during photorespiration and nitrite reduction (Taira et al., 2004) was elevated late in the day in droughted plants (Figure 10, Figure 10\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Taira et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "a88274eb-1f26-4225-8782-c8006008c655",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C60",
+      "claim": "GS2 was elevated late in the day in droughted plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLUTAMINE SYNTHETASE 2 (GS2) gene, encoding the light- and CO2-induced chloroplastic glutamine synthetase GS2 that assimilates ammonium produced during photorespiration and nitrite reduction (Taira et al., 2004) was elevated late in the day in droughted plants (Figure 10, Figure 10\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoString validation data shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "8e6df54f-8c6d-45a1-b7fd-b6a5ebdb4fb8",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C61",
+      "claim": "An overall reduction in expression of the mRNA encoding an integral membrane HPP family protein predicted to transport nitrite into plastids was observed in droughted plants.",
+      "claim_type": "EXPLICIT",
+      "source": "An overall reduction in expression of the mRNA encoding an integral membrane HPP family protein predicted to transport nitrite into plastids (Maeda et al., 2014) was observed in droughted plants (Figure 10\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoString validation data shown in Figure 10\u2014figure supplement 1 and citation to Maeda et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "593a2823-de49-4dc1-8833-36e0e9ff8c87",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C62",
+      "claim": "The drop in gs during the night and the accumulation of NSC in droughted plants on Day 4 of the treatment coincided with decreased expression of the gene encoding CYP79F2.",
+      "claim_type": "EXPLICIT",
+      "source": "The drop in gs during the night and the accumulation of NSC in droughted plants on Day 4 of the treatment coincided with decreased expression of the gene encoding CYP79F2, which metabolizes long-chain aliphatic glucosinolates (Figure 8C, Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation of physiological and gene expression data shown in Figures 3, 8C, and 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "8e9ab365-58ce-42fb-92a6-17c480001bc5",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C63",
+      "claim": "CYP79F2 metabolizes long-chain aliphatic glucosinolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The drop in gs during the night and the accumulation of NSC in droughted plants on Day 4 of the treatment coincided with decreased expression of the gene encoding CYP79F2, which metabolizes long-chain aliphatic glucosinolates (Figure 8C, Figure 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge of CYP79F2 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "0326cb9a-2834-4fbe-853e-1c716cf4a169",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C64",
+      "claim": "Knockdown of CYP79F2 using RNAi in Arabidopsis led to a drop in aliphatic glucosinolates and an increase in indole glucosinolates as well as storage carbohydrates such as fructose and galactose in addition to changes in several hormone levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of CYP79F2 using RNAi in Arabidopsis led to a drop in aliphatic glucosinolates and an increase in indole glucosinolates as well as storage carbohydrates such as fructose and galactose in addition to changes in several hormone levels (Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "bf483c4f-a050-46c3-b190-c853c71f95b5",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C65",
+      "claim": "The significant drops in CYP79F2 expression occurred at the ZT9 and ZT13 time points on Day 4 of the treatment when sugar accumulation was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant drops that we observed in CYP79F2 expression occurred at the ZT9 and ZT13 time points on Day 4 of the treatment when sugar accumulation was observed (Figures 3D and 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation of gene expression and physiological data shown in Figures 3D and 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "11ae1164-b5ac-479a-acf7-560270a92e0b",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C66",
+      "claim": "This approach validated the need for time-of-day resolution to observe the dynamic changes in physiology and to filter out the diel changes that cause transcript abundance variations independent of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach validated the need for time-of-day resolution to observe the dynamic changes in physiology and to filter out the diel changes that cause transcript abundance variations independent of treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overall experimental results and analysis approach",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "5268ed28-ecf8-419f-98d2-f5705fd9ad6a",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C67",
+      "claim": "Integrating dynamic changes in physiology with the transcriptome data using a circadian-guided network approach uncovered changes in expression of several photosynthetic and metabolic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating these dynamic changes in physiology with the transcriptome data using a circadian-guided network approach uncovered changes in expression of several photosynthetic and metabolic genes, suggesting an early sensing of the drought treatment at the molecular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the network analysis and gene expression validation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "3c8f423a-0dd9-4d2b-ad95-55a4dcb6f5a5",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "claim_id": "C68",
+      "claim": "The changes in gene expression suggest an early sensing of the drought treatment at the molecular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating these dynamic changes in physiology with the transcriptome data using a circadian-guided network approach uncovered changes in expression of several photosynthetic and metabolic genes, suggesting an early sensing of the drought treatment at the molecular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the gene expression changes observed in response to mild drought",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established a mild drought treatment in B. rapa R500 by withholding water starting at 16 DAS, with measurements on Days 3 and 4 of drought. Soil water potential declined to -1.5 MPa in droughted plants while remaining between 0 and -0.5 MPa in well-watered controls. Droughted plants showed decreased biomass but no wilting, capturing early drought perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C21 provide converging experimental evidence for successful establishment of mild drought conditions. The soil water potential measurements (C17, C18), biomass reduction (C19), absence of wilting (C20), and comparison to previous work (C21) collectively demonstrate that the experimental design achieved the intended mild drought stress appropriate for studying early drought responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "65b2f44a-060c-4e82-a92f-17d888248228",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Under mild drought, B. rapa maintained photosynthetic capacity (A) similar to well-watered plants, with A peaking at ZT5 at 12\u00b12 \u03bcmol m\u207b\u00b2s\u207b\u00b9. However, stomatal conductance (gs) showed significant reductions of 50% late in the day (ZT13) and 30% at night (ZT17-ZT21), indicating that gs responds to small changes in soil water potential and plays an important role in early drought response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are well-supported by the physiological measurements shown in Figure 3A-B. The maintained photosynthetic capacity despite reduced gs (C24, C25) is consistent with anisohydric plant behavior and supported by citations to previous studies. The conclusion that gs is an early indicator of drought stress (C26, C27) is a reasonable inference from the data showing differential responses between A and gs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "7ccd8c6f-dc1e-427e-b40f-dfe9727b09e2",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Maximum PSII efficiency (Fv'/Fm') was significantly greater in droughted than well-watered plants during the middle of the light period on Days 3 and 4, showing a diurnal pattern with highest values early in the day (ZT1 and ZT5). Elevated Fv'/Fm' fully compensated for reduced gas exchange under mild drought conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by the experimental measurements in Figure 3C. The observation that elevated Fv'/Fm' compensates for reduced gs (C30) provides a mechanistic explanation for maintained photosynthetic capacity (C24) and is consistent with the data showing increased photosystem efficiency in droughted plants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "f2fd5a75-366c-4905-aa9b-581be56a9755",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Non-structural carbohydrates (NSC) accumulated during the day and decreased at night in well-watered conditions, but NSC levels were elevated throughout the night in droughted plants. The reduction in biomass was attributed to decreased nighttime conductance that preserves leaf turgor at the cost of sugar translocation to growing tissues, rather than reduced carbon availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by the NSC measurements in Figure 3D. The mechanistic interpretation (C33) that reduced biomass results from impaired sugar translocation rather than carbon limitation is a reasonable inference supported by the NSC accumulation data and citations to previous work (Chaves, 1991; Sevanto, 2014), though direct measurement of sugar translocation rates would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "97003237-aade-44f3-af29-6e44d4bd25e9",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stomatal conductance (gs) is the best physiological indicator of early drought stress perception in B. rapa, consistent with separate regulation of A and gs and the observation that small decreases in gs do not directly reduce A under mild drought.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by the integrated physiological data showing that gs responded to drought before A was affected (C22-C27). The conclusion is strengthened by citations to previous work (Dodd et al., 2004; von Caemmerer et al., 2004) supporting separate regulation of A and gs. This represents a key finding for identifying early drought responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "9787f941-bc02-42d9-becd-4790c868be04",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Co-expression network analysis revealed that the top eight modules contained 80-85% of genes and showed strong temporal expression patterns. Samples clustered by time of day rather than treatment, indicating that the transcriptome varied more with time of day than due to drought. The consensus network showed significant overlaps between droughted and well-watered networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by the network analysis results shown in Figures 4 and 5. The finding that time-of-day effects dominate over drought effects (C38, C39) is consistent with previous studies in other species and validates the need for the temporal sampling approach. The network analysis methodology appears sound and appropriate for the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "35cb4606-7ee8-4475-862a-a7a57bbb4835",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The droughted network contained 20 modules compared to 17 in the well-watered network, suggesting additional expression patterns due to transcriptome rearrangement in response to drought. Approximately 95% of genes in the well-watered wM5 module resolved into three distinct droughted modules (dM1, dM5, dM10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by the network analysis results shown in Figures 5B and 6. The module rearrangement (C43) provides evidence for drought-specific transcriptional reprogramming despite the dominant time-of-day effects. The quantitative analysis of module overlap is clearly presented and supports the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "34a701f8-9781-46d5-8f41-d247081cde4b",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Several modules in both networks were correlated with physiological measurements. Modules wM5 and dM5 with peak expression at ZT1-5 were positively correlated with A, gs, and Fv'/Fm', while modules wM7 and dM8 peaking around ZT17 were negatively correlated with these traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by the correlation analysis shown in Figure 7A-B. The correlations between module eigengenes and physiological traits provide a data-driven approach to identify functionally relevant gene modules. The positive and negative correlations align with the temporal patterns of the physiological measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "1eb9fc97-77fb-48ed-bc5d-f9c39577dc06",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "GO enrichment analysis revealed that dM1 was enriched for primary metabolism and abiotic stress response, dM5 for photosynthesis and light response, and dM10 for glucosinolate biosynthesis and metabolism. The dM10 module showed bi-phasic expression peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by the GO enrichment analysis shown in Figure 8B-C. The functional enrichments are biologically coherent and consistent with expected drought responses. The identification of glucosinolate metabolism genes in dM10 (C49) is particularly interesting given the correlation with Fv'/Fm' and suggests secondary metabolism changes during drought.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "978ff89c-cd3f-4675-97f2-fb474e257e46",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Negatively correlated modules (dM6, dM8) contained genes related to photosystem efficiency and light response pathways, consistent with decreased Fv'/Fm' on Day 4. Modules dM7, dM11, and dM17 showed dramatic expression decreases on Day 4 and contained genes involved in nitrogen metabolism, amino acid biosynthesis, and phosphatase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by the GO enrichment analysis shown in Figure 9B-C. The functional enrichments align with the physiological observations and provide mechanistic insights into drought responses. The connection between decreased expression of nitrogen metabolism genes and drought stress is biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "afdc2af6-e3c1-436f-83e7-42b8a07b52b2",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NanoString validation confirmed RNA-seq trends, recapitulating diel expression patterns and time-of-day drought responses. Stress-responsive genes COR15B and COR47 showed increased and phase-shifted expression on Day 4 in droughted plants. Photoprotective genes ELIP1/2 and PSII components LHCB2.2 and PSBY showed elevated expression during the day. GS2 was elevated late in the day in droughted plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 are supported by the NanoString validation data shown in Figure 10. The validation of RNA-seq results using an independent method with biological replicates strengthens confidence in the transcriptome findings. The specific gene expression changes are consistent with known functions of these genes in stress response and photosynthesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "083dd6b6-868a-401c-92f3-0a10eeccebc9",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Expression of an HPP family nitrite transporter decreased in droughted plants. CYP79F2 expression decreased at ZT9 and ZT13 on Day 4, coinciding with reduced nighttime gs and NSC accumulation. CYP79F2 metabolizes long-chain aliphatic glucosinolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by the NanoString data (Figure 10) and correlation with physiological measurements (Figure 3). The temporal correlation between CYP79F2 expression changes and NSC accumulation (C62, C65) suggests a link between glucosinolate metabolism and carbon allocation during drought, though the mechanistic connection requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "232730ea-b689-4493-b2b6-ab0c2551ae79",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The temporal network approach validated the need for time-of-day resolution to observe dynamic physiological changes and filter out diel transcript variations. Integrating physiology with transcriptome data using a circadian-guided network approach uncovered changes in photosynthetic and metabolic genes, suggesting early molecular sensing of drought.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 represent the overarching conclusions of the study. They are well-supported by the integrated analysis of physiological and transcriptomic data across the time course. The circadian-guided network approach successfully identified drought-responsive genes that would have been missed by single time-point comparisons, validating the experimental design and analytical strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "847e9154-4792-42c1-931f-f23881005958",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish the agricultural importance of drought stress, plant drought response mechanisms, limitations of WUE as a predictor, circadian regulation of drought responses, and the suitability of Brassica rapa as a crop model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 provide background context supported by appropriate citations to prior work. These claims establish the rationale for the study but do not represent novel findings from the current work. The background information appears accurate and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    },
+    {
+      "id": "278fe9a5-346a-4952-a6dd-c5d736e0cb84",
+      "content_id": "b6cc3056-44eb-4399-bf0f-55e4b4316b01",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Supporting claims from prior literature regarding nighttime water loss, abiotic stress effects on secondary metabolism, ELIP function, GS2 function, CYP79F2 function, and effects of CYP79F2 knockdown in Arabidopsis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C50, C56, C59, C63, and C64 cite prior literature to support interpretations of the current results. These citations appear appropriate and accurate based on the referenced sources. They provide important context for interpreting the experimental findings but do not represent novel results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:35:47.485447Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4d1d1d15-ba2d-4606-a7b4-7762c337aee0",
+      "result_id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac"
+    },
+    {
+      "claim_id": "0a380bc7-1510-44c8-8a95-46377d13ed1e",
+      "result_id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac"
+    },
+    {
+      "claim_id": "2e1c2062-34fa-4b55-b205-3450917732c3",
+      "result_id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac"
+    },
+    {
+      "claim_id": "8a6039c4-a72b-4e01-8e74-a30c6d91286f",
+      "result_id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac"
+    },
+    {
+      "claim_id": "5015ac2e-5a45-4434-9606-7969cfd34dc7",
+      "result_id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac"
+    },
+    {
+      "claim_id": "40f66a6c-4539-4d30-aaa6-4a1e0a853f2d",
+      "result_id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac"
+    },
+    {
+      "claim_id": "842972cd-7f80-4a4a-a895-1b01c90ff902",
+      "result_id": "ea52bc98-f6bf-40cf-9ce7-99e373283aac"
+    },
+    {
+      "claim_id": "45bc8205-9e8c-480e-91a2-807494777290",
+      "result_id": "65b2f44a-060c-4e82-a92f-17d888248228"
+    },
+    {
+      "claim_id": "ec8958b4-e2b0-4b25-938d-1a9a1b6c7fe5",
+      "result_id": "65b2f44a-060c-4e82-a92f-17d888248228"
+    },
+    {
+      "claim_id": "68febf49-d2b0-4dc9-b8c4-d980196d0b92",
+      "result_id": "65b2f44a-060c-4e82-a92f-17d888248228"
+    },
+    {
+      "claim_id": "9661510b-1e49-40c2-93e1-ea48b62fc4ed",
+      "result_id": "65b2f44a-060c-4e82-a92f-17d888248228"
+    },
+    {
+      "claim_id": "3436c305-1370-4590-84db-7f7f4bfc4562",
+      "result_id": "65b2f44a-060c-4e82-a92f-17d888248228"
+    },
+    {
+      "claim_id": "f8a139c5-34b6-469b-85fd-fa1fda253a15",
+      "result_id": "65b2f44a-060c-4e82-a92f-17d888248228"
+    },
+    {
+      "claim_id": "b8d7fa0e-7677-4632-9bd8-05ee7fa2ad7a",
+      "result_id": "7ccd8c6f-dc1e-427e-b40f-dfe9727b09e2"
+    },
+    {
+      "claim_id": "7d8f0d17-7103-490b-aa69-4da75fa5dbed",
+      "result_id": "7ccd8c6f-dc1e-427e-b40f-dfe9727b09e2"
+    },
+    {
+      "claim_id": "af16d597-dc03-4d58-86c4-e4c397d5f086",
+      "result_id": "7ccd8c6f-dc1e-427e-b40f-dfe9727b09e2"
+    },
+    {
+      "claim_id": "b1712f0b-51ea-4f09-b5f0-85cdf138b4de",
+      "result_id": "f2fd5a75-366c-4905-aa9b-581be56a9755"
+    },
+    {
+      "claim_id": "1d953cff-4707-4d81-b43f-83140825d73e",
+      "result_id": "f2fd5a75-366c-4905-aa9b-581be56a9755"
+    },
+    {
+      "claim_id": "f25e418c-2f82-4ff8-8fbf-c7245a01f48b",
+      "result_id": "f2fd5a75-366c-4905-aa9b-581be56a9755"
+    },
+    {
+      "claim_id": "eaad18e4-bdc0-43f0-a0b1-ac270a31d7d8",
+      "result_id": "97003237-aade-44f3-af29-6e44d4bd25e9"
+    },
+    {
+      "claim_id": "8efa7d6d-408d-49f5-a908-e849daf2de0d",
+      "result_id": "9787f941-bc02-42d9-becd-4790c868be04"
+    },
+    {
+      "claim_id": "a795f3af-f7a0-42e1-aad8-dfbd1934810c",
+      "result_id": "9787f941-bc02-42d9-becd-4790c868be04"
+    },
+    {
+      "claim_id": "afe04fd9-076d-4ba9-960b-9e5c0efa30fc",
+      "result_id": "9787f941-bc02-42d9-becd-4790c868be04"
+    },
+    {
+      "claim_id": "23f01edb-d34d-4fb2-b4f4-fe2bcaba167b",
+      "result_id": "9787f941-bc02-42d9-becd-4790c868be04"
+    },
+    {
+      "claim_id": "37f0e4f6-6a39-41ab-8861-356b4c97eae7",
+      "result_id": "9787f941-bc02-42d9-becd-4790c868be04"
+    },
+    {
+      "claim_id": "a3db0cd2-cb15-45bd-86ae-15bc36f4eecd",
+      "result_id": "35cb4606-7ee8-4475-862a-a7a57bbb4835"
+    },
+    {
+      "claim_id": "85c0e248-b501-4410-9dc8-6def51c510d3",
+      "result_id": "35cb4606-7ee8-4475-862a-a7a57bbb4835"
+    },
+    {
+      "claim_id": "2c46fc81-5c9d-4019-a4b8-cb672868cee8",
+      "result_id": "35cb4606-7ee8-4475-862a-a7a57bbb4835"
+    },
+    {
+      "claim_id": "3cc3fc2d-9bc7-4d58-b597-35a87d2d1b92",
+      "result_id": "34a701f8-9781-46d5-8f41-d247081cde4b"
+    },
+    {
+      "claim_id": "74942b00-4f2b-4fc1-8b1a-b60c78fb9482",
+      "result_id": "34a701f8-9781-46d5-8f41-d247081cde4b"
+    },
+    {
+      "claim_id": "51113f8c-7466-4c84-8287-9e21f4700148",
+      "result_id": "34a701f8-9781-46d5-8f41-d247081cde4b"
+    },
+    {
+      "claim_id": "451d7703-4ce4-45fa-82e3-c7d228d782ec",
+      "result_id": "1eb9fc97-77fb-48ed-bc5d-f9c39577dc06"
+    },
+    {
+      "claim_id": "36f0358d-3bb9-4c4e-9e43-102318347238",
+      "result_id": "1eb9fc97-77fb-48ed-bc5d-f9c39577dc06"
+    },
+    {
+      "claim_id": "91702db0-f35b-4f3d-9761-229b64c0dcc7",
+      "result_id": "1eb9fc97-77fb-48ed-bc5d-f9c39577dc06"
+    },
+    {
+      "claim_id": "6ea211b2-8b96-4be1-89b0-21276e6f7936",
+      "result_id": "978ff89c-cd3f-4675-97f2-fb474e257e46"
+    },
+    {
+      "claim_id": "ba112fbe-afcb-4507-b20c-5af75f36d9bf",
+      "result_id": "978ff89c-cd3f-4675-97f2-fb474e257e46"
+    },
+    {
+      "claim_id": "d8be8ab7-daf5-4494-b919-bb470270b4c4",
+      "result_id": "afdc2af6-e3c1-436f-83e7-42b8a07b52b2"
+    },
+    {
+      "claim_id": "7ba634b2-9597-43bf-ae4f-13b931577add",
+      "result_id": "afdc2af6-e3c1-436f-83e7-42b8a07b52b2"
+    },
+    {
+      "claim_id": "77b7a076-0acf-44c0-bd03-9c1c16046789",
+      "result_id": "afdc2af6-e3c1-436f-83e7-42b8a07b52b2"
+    },
+    {
+      "claim_id": "c20ae657-1f8c-4cdc-a83d-8e7bff1d0540",
+      "result_id": "afdc2af6-e3c1-436f-83e7-42b8a07b52b2"
+    },
+    {
+      "claim_id": "dcce0786-8d6e-4e8a-9303-e8068e049cb5",
+      "result_id": "afdc2af6-e3c1-436f-83e7-42b8a07b52b2"
+    },
+    {
+      "claim_id": "a88274eb-1f26-4225-8782-c8006008c655",
+      "result_id": "afdc2af6-e3c1-436f-83e7-42b8a07b52b2"
+    },
+    {
+      "claim_id": "8e6df54f-8c6d-45a1-b7fd-b6a5ebdb4fb8",
+      "result_id": "083dd6b6-868a-401c-92f3-0a10eeccebc9"
+    },
+    {
+      "claim_id": "593a2823-de49-4dc1-8833-36e0e9ff8c87",
+      "result_id": "083dd6b6-868a-401c-92f3-0a10eeccebc9"
+    },
+    {
+      "claim_id": "bf483c4f-a050-46c3-b190-c853c71f95b5",
+      "result_id": "083dd6b6-868a-401c-92f3-0a10eeccebc9"
+    },
+    {
+      "claim_id": "11ae1164-b5ac-479a-acf7-560270a92e0b",
+      "result_id": "232730ea-b689-4493-b2b6-ab0c2551ae79"
+    },
+    {
+      "claim_id": "5268ed28-ecf8-419f-98d2-f5705fd9ad6a",
+      "result_id": "232730ea-b689-4493-b2b6-ab0c2551ae79"
+    },
+    {
+      "claim_id": "3c8f423a-0dd9-4d2b-ad95-55a4dcb6f5a5",
+      "result_id": "232730ea-b689-4493-b2b6-ab0c2551ae79"
+    },
+    {
+      "claim_id": "9a74a855-5f93-4fcd-95be-90c62f80d285",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "d0bd35f8-8e35-467a-acf3-20f26f9ce896",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "7414406d-e508-45c2-9741-f428ce1a23c9",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "27580edb-43ce-4081-afa0-f1bd5a7c37b1",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "a36862a7-6bc8-446a-8e18-59a9829c2a82",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "8491e26f-78ca-4f4a-b476-090e721fdeff",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "04f56174-16ff-48da-820e-e018fa5595e7",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "1850f6cc-5031-4618-9cc6-8259e40d0f4f",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "076a15d4-3788-4d94-aeb3-9bb71a064cb8",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "a29f3d9a-d48a-46b8-9b23-ca3968dcc1a4",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "164dca5a-42ab-4c5b-8521-1741fbfdd604",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "a5c735b9-fa69-4a1e-9b4b-a574a34ed305",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "a80ecfa5-3133-4de1-9c58-7c3c2ffdc5c6",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "f82dddb4-90de-4072-ac0a-3d058dbf5018",
+      "result_id": "847e9154-4792-42c1-931f-f23881005958"
+    },
+    {
+      "claim_id": "d17118ef-cf68-4d1b-ae2e-6da45bb7267b",
+      "result_id": "278fe9a5-346a-4952-a6dd-c5d736e0cb84"
+    },
+    {
+      "claim_id": "174dc742-d46f-40d1-a4a4-57917d153c09",
+      "result_id": "278fe9a5-346a-4952-a6dd-c5d736e0cb84"
+    },
+    {
+      "claim_id": "57b4687f-74b4-4003-ac28-802735f69650",
+      "result_id": "278fe9a5-346a-4952-a6dd-c5d736e0cb84"
+    },
+    {
+      "claim_id": "8f27ceb5-ec70-45df-ac8f-0846e468e1fc",
+      "result_id": "278fe9a5-346a-4952-a6dd-c5d736e0cb84"
+    },
+    {
+      "claim_id": "8e9ab365-58ce-42fb-92a6-17c480001bc5",
+      "result_id": "278fe9a5-346a-4952-a6dd-c5d736e0cb84"
+    },
+    {
+      "claim_id": "0326cb9a-2834-4fbe-853e-1c716cf4a169",
+      "result_id": "278fe9a5-346a-4952-a6dd-c5d736e0cb84"
+    }
+  ],
+  "comparisons": []
+}

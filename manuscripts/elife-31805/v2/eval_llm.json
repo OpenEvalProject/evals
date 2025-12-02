@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript establishes the background context for HIV-1 Env tier classification, noting that viruses are grouped into tiers by neutralization sensitivity, tier 1 responses are readily elicited but non-protective, tier 2 viruses represent most circulating strains, and the current categorical tier system has limitations including wide variation within categories and inability to compare serum potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C14-C22 collectively establish well-documented background knowledge about HIV-1 Env tier classification, supported by multiple citations to prior work. The limitations of the current categorical system (C20-C22) provide clear motivation for the proposed continuous metric. All claims are consistent with established literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C27",
+      "C115",
+      "C116",
+      "C118",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors develop a Neutralization Potency (NP) metric using logistic regression to quantify serum neutralization on a continuous, tier-like scale. The NP is defined as the neutralization index (NI) value where viruses have equal probability of being neutralized or not, computed as -b0/b1 from logistic regression parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C23-C24, C27, and C115-C125 describe the core methodological innovation. The mathematical definition is clearly stated (C125), the transformation is explicitly defined (C115), and the approach is logically sound. The method appropriately uses logistic regression to model binary neutralization outcomes as a function of virus tier-scaled sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The NP metric produces values ranging from approximately 1 to 4 that correspond to the established tier classification scheme, where NP values of 1.8-2.8 are 'tier 2-like', values above 2.8 are 'tier 3-like', and values below 1 cannot neutralize tier 1A Envs. NP values are correlated with geometric mean ID50s and depend on the ID50 cutoff used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C84-C87 demonstrate that the NP metric produces interpretable values consistent with established tier classifications. The correlation with geometric mean ID50 (C29) and the range of values (C30) are shown in Figure 2. The interpretation guidelines (C84-C86) follow logically from the method design, though the caveat about cutoff dependence (C87) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C101",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The slope parameter from logistic regression indicates the degree of scatter in neutralization outcomes, with steep slopes indicating sharp boundaries between neutralized and non-neutralized viruses. A slope of zero (undefined NP) occurs when neutralization probability is independent of virus tier, most commonly at the low end of the neutralization continuum. Statistical significance of the slope is assessed using likelihood-ratio \u03c7\u00b2 tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C101, C128-C133 describe the interpretation and limitations of the slope parameter. The mathematical reasoning is sound (C128-C129), the statistical testing approach is appropriate (C131-C132), and the biological interpretation is logical. The identification of cases where NP is undefined (C35-C36) demonstrates appropriate recognition of method limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C142"
+    ],
+    "result": "Bootstrap resampling analysis demonstrates that NP values are robust to sampling variation, except for sera with zero slope, though variation may increase slightly at the extremes of the neutralization scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C142 describe validation through bootstrap resampling. The approach is methodologically sound and the results shown in Figure 2\u2014figure supplement 1 support the robustness claims. The caveat about increased variation at extremes (C38) demonstrates appropriate nuance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Serum SA.C37, which has median potency among the 205 sera studied, has a neutralization potency of 2.5 computed from the 225 Env panel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 present a specific example case. The data are shown in Figure 3 and the NP value is clearly stated. This serves as an illustrative example of the method's application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors identify and compare three smaller Env panels (11-Env global panel, 10-Env lasso-selected, and 20-Env lasso-selected) that can estimate NP values more efficiently than the full 225-Env panel. The lasso-selected panels explain 47.2% (10 Envs) and 80.8% (20 Envs) of deviance. Five Envs are shared across all three panels, and selected Envs favor more sensitive viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 and C134-C141 describe the panel selection process and results. The lasso selection methodology is appropriate and well-cited (C139). The overlap analysis (C41-C43) is shown in Figure 4\u2014figure supplement 1. The deviance explained values (C140-C141) provide quantitative support for panel performance. The observation about favoring sensitive viruses (C44) is data-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "For serum SA.C37, the 20-Env panel better resolves neutralization outcomes (p=0.000162) than smaller panels (p=0.00298 for global, p=0.00151 for 10-Env). Across all 205 sera, the 20-Env panel gives p>0.05 in about half as many cases as smaller panels due to greater statistical power. NP can be computed using any reasonable choice of Envs representing a range of sensitivities, with more Envs providing better statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C52-C56 compare panel performance with specific statistical results. The p-values are explicitly stated and shown in Figure 4. The explanation for better performance (C54) is statistically sound. The general conclusion (C55-C56) appropriately balances flexibility with the recommendation for larger panels. Figure 4\u2014figure supplement 3 supports the power analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Analysis of 103 donor sera (25 LTNP, 78 progressors) using 10 Envs shows that NP values are highly correlated with geometric mean ID50s (Kendall's \u03c4, p<2.2\u00d710\u207b\u00b9\u2076) and significantly differ between progressors and non-progressors (Wilcoxon p=4.3\u00d710\u207b\u2079), agreeing with established findings but using half as many Envs and potentially one-tenth the number of neutralization reactions if single-dilution assays were used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68 present a validation analysis comparing NP to established metrics in a well-characterized cohort. The statistical tests are appropriate and highly significant (C62-C65). The agreement with prior work (C63, C66) validates the method. The efficiency claims (C66-C67) are logical inferences from the method design. The sample exclusion analysis (C60-C61) shows no bias. Figure 5 supports the correlation claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Analysis of 50 vaccinated rabbits from SOSIP trimer studies shows that NP analysis can resolve apparent ties between animals with similar breadth and potency but different neutralization patterns. The ZM197M SOSIP.v5.2 immunogen induced tier 2 responses (NP >2.0) in 4 of 5 rabbits, yielding the most promising outcome among refined SOSIP immunogens studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 apply the NP method to vaccine immunogenicity data. The background on SOSIP trimers (C69-C72) is well-cited. The analysis of 50 rabbits (C73-C75) with 15 overlapping Envs (C74) is clearly described. The specific comparisons (C76-C77) demonstrate the method's ability to distinguish sera with similar traditional metrics. The conclusion about ZM197M (C79) is supported by the data in Table 2, though the caveat about clade representation (C80) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C99",
+      "C100",
+      "C105"
+    ],
+    "result": "Analysis of broadly neutralizing antibody (bnAb) combinations shows that NP and slope generally increase as bnAbs with distinct specificities are combined, suggesting that sera with higher numbers of antibody specificities could have higher NP and slope values. Single monoclonal bnAbs had lower slopes than mixtures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C99-C100, and C105 present analysis of antibody combinations. The data are shown in Figure 6 and the trend is clear, though the caveat 'in most cases, but not all' (C82) is appropriate. The inference about polyclonal sera (C83, C100) is reasonable but speculative. The observation about monoclonal vs. mixture slopes (C105) supports the hypothesis about epitope diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "The authors hypothesize that the slope parameter may indicate diversity of epitopes targeted by serum, with low slopes expected for sera with limited epitope breadth. In the extreme case of monoclonal responses, neutralization outcomes should be scattered independent of virus tier, resulting in near-zero slope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 and C106 present a hypothesis about slope interpretation. While the reasoning is logical and the observation about monoclonal bnAbs (C105) provides some support, this remains speculative (C102, C104). The proposed application to epitope mapping (C106) is interesting but requires validation through direct epitope characterization studies not presented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The method can standardize results from different virus panels and could enable high-throughput assays using single serum dilutions rather than dilution series, providing more cost-effective screening for large-scale vaccination studies. Sera scoring well could be prioritized for more thorough analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8 and C88-C90, C107-C111 describe potential applications and advantages. While the logical basis is sound (C108-C109) and the efficiency gains are plausible, these are largely prospective claims (note 'could' in C7, C8, C110, C111). The ability to standardize across panels (C7, C94-C96) is stated but not extensively demonstrated ('not shown' in C94). These represent promising future directions rather than fully validated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The NP method provides more context for interpreting neutralization results by considering not only breadth but which Envs should most likely be neutralized, helping to distinguish sera that neutralize the same number of Envs with different sensitivities and to compare sera with many outcomes below detection limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe interpretive advantages of the method. These are logical consequences of the method design and are demonstrated in the vaccine sera analysis (C93, Table 2). The ability to resolve ties (C92) is shown in the LTNP and vaccine examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Results from experiments using different Env panels can be compared on the same neutralization scale if some Envs have available tiered neutralization scores. A web-based utility at the Los Alamos HIV database computes NPs for sera tested against M group and clade C Envs, and for antibody IC50s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 describe cross-panel comparison capability and computational resources. The requirement for overlapping scored Envs (C95) is logical. The web utility (C97-C98) provides practical implementation. However, the cross-panel comparison is stated as explored but 'not shown' (C94), limiting full evaluation of this capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Standard definitions and limitations of current neutralization metrics are established: ID50 values are inhibitory dilutions at 50% neutralization, breadth is the proportion of viruses neutralized above threshold, potency is geometric mean ID50, and these metrics depend strongly on the Env panels used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 provide standard definitions and context from the literature, all supported by appropriate citations. These establish the baseline against which the new method is compared.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C120",
+      "C121"
+    ],
+    "result": "The NI transformation uses boundary values of 26.7 (tier 2/3 boundary) and 117.6 (tier 1/2 boundary) from prior work to rescale virus geometric mean ID50s. A cutoff of 1:50 is used for natural infection sera, though 1:20 might be more appropriate for vaccine settings. The M group data have median ID50 of 28 with 37% above the 1:50 cutoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 and C120-C121 describe the transformation parameters and cutoff choices. The boundary values are appropriately cited (C112-C113). The cutoff discussion (C120) acknowledges context-dependence. The data characteristics (C121) provide transparency about the dataset used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C126",
+      "C127",
+      "C143"
+    ],
+    "result": "Any linear transformation of log-transformed geometric mean ID50s would yield identical results on a modified scale. Two hypothetical viruses with extreme phenotypes (always sensitive with NI=0, always resistant with NI=5) were included to help define NP and ensure regression calculations perform as expected. Panel robustness was evaluated by comparing NP values from panel and held-out Envs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C126-C127, and C143 describe methodological details and validation approaches. The invariance to linear transformation (C117) is mathematically correct. The use of hypothetical extreme viruses (C126-C127) is a reasonable computational strategy. The validation approach (C143) is appropriate and results are shown in Figure 4\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "When standard logistic regression (glm) did not converge, the glm2 function with more iterations was used to ensure convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 describes a computational detail with appropriate citation. This is a reasonable approach to handle convergence issues in logistic regression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The neutralization index could alternatively be defined using area-under-curve (AUC) values from dilution series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 acknowledges an alternative approach with citation. This demonstrates awareness of methodological choices, though the alternative is not explored in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The expectation for a typical serum is that it can more potently neutralize lower tier viruses than higher tier viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 states a logical expectation that follows from the definition of virus tiers. This is a reasonable assumption underlying the method.",
+    "result_type": "MINOR"
+  }
+]

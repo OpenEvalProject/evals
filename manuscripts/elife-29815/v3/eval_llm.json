@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C139",
+      "C151"
+    ],
+    "result": "The authors developed a novel method called cCLAP (chemical Cross-Linking coupled to Affinity Purification) to identify mRNAs associated with P-bodies. This method uses formaldehyde crosslinking, affinity purification via tagged P-body components (Dcp2p or Scd6p), and RNA-Seq to globally isolate P-body-associated transcripts regardless of poly(A) tail length or degradation state. The method showed high reproducibility with biological replicates clustering by stress condition in PCA and correlation analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, C49-C54, and C56 collectively establish the cCLAP method and validate its reproducibility. The PCA and correlation analyses (C52-C53, Figure 1\u2014figure supplement 1B-C) demonstrate that replicates cluster by condition, not by technical variables, supporting the method's validity. The approach addresses the limitation of oligo(dT) purification (C33-C34) by capturing partially degraded transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C36"
+    ],
+    "result": "Using cCLAP, the authors identified 1544 mRNAs significantly associated with P-bodies across three stress conditions (glucose depletion, Na+, Ca2+). Approximately 65% of detected mRNAs were common between stresses while 35% were stress-specific. GO enrichment analysis revealed both shared and stress-specific biological processes, demonstrating that P-body mRNA content is context-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 and C65-C67 are supported by RNA-Seq data (Figure 1B-E) showing distinct and overlapping mRNA populations across stress conditions. The statistical analysis (p<0.05, edgeR) and GO enrichment provide robust evidence. The finding that upregulated mRNAs show <15% overlap with P-body-associated mRNAs (C61) strengthens the specificity of the enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "FISH-IF validation using multiple short probes (50-100 nt) confirmed stress-specific localization of mRNAs to P-bodies. Seven glucose-specific mRNAs (BSC1, TPI1, RLM1, ATP11, ILM1, MRPL38, AIM2) showed significant co-localization with P-bodies under glucose starvation but not under osmotic stress, and vice versa for osmotic stress-specific mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C78-C81 are supported by FISH-IF data (Figure 2B-E) showing stress-specific localization patterns. The use of multiple short probes addresses the methodological challenge of P-body density (C71-C72). The threshold of \u22651.5-fold enrichment (C77) is justified given the technical limitations acknowledged (C74-C76). The stress-specificity is convincingly demonstrated by testing the same mRNAs under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C96",
+      "C97"
+    ],
+    "result": "P-body-localized mRNAs exhibit divergent fates: Group II mitochondria-related mRNAs (ATP11, ILM1, MRPL38, AIM2) were stabilized in P-bodies for up to 60 minutes of glucose starvation, while Group I mRNAs (BSC1, TPI1, RLM1) underwent Xrn1p-dependent decay with variable kinetics. This demonstrates that P-bodies serve dual functions in both mRNA storage and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 and C92-C93 are supported by 4TU pulse-chase experiments (Figure 3B) showing differential stability of the two mRNA groups. The Xrn1p-dependence of Group I decay is demonstrated by comparison with \u0394xrn1 strains. The variable decay kinetics within Group I (C88) are clearly shown in the time-course data. The transcription shut-off experiments (C91) validate the pulse-chase results, though ILM1 is an exception.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Protein levels of Group I and Group II mRNAs correlate with their mRNA stability: Group I protein levels (Tpi1p, Rlm1p) decreased during glucose starvation while Group II protein levels (Atp11p, Mrpl38p) remained stable or increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by Western blot data (Figure 3C) showing protein level changes consistent with mRNA stability patterns. This provides functional validation that the differential mRNA fates in P-bodies have downstream consequences on protein expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C109",
+      "C114",
+      "C154",
+      "C157",
+      "C158"
+    ],
+    "result": "Puf5p is required for ATP11 mRNA localization to P-bodies and its stabilization. In \u0394puf5 cells, ATP11 fails to localize to P-bodies and undergoes decay, while BSC1 localization is unaffected. Puf5p appears to function in targeting ATP11 to P-bodies rather than protecting it locally within P-bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by FISH-IF (Figure 4A-B) and pulse-chase data (Figure 4D) in \u0394puf5 strains. The specificity is demonstrated by screening multiple deletion strains (C103). The \u0394puf5\u0394dcp1 double mutant experiments (C110-C111) and Puf5p tethering experiments (C112) support the targeting rather than protection model (C114), though the tethering experiment has caveats about efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Both Puf3p and Puf5p bind the ATP11 3'UTR in vitro, though Puf5p binds with much weaker affinity than Puf3p. ATP11 and other Group II mRNAs lack recognizable Puf5-binding sequences, suggesting non-canonical binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by EMSA data (Figure 4D) showing concentration-dependent binding of both proteins to ATP11 3'UTR. The weaker Puf5p affinity is evident from the higher concentrations required. The absence of canonical Puf5 binding motifs (C108) is stated but sequence analysis details are not provided, making this inference reasonable but not fully validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41",
+      "C160",
+      "C182"
+    ],
+    "result": "Puf5p exhibits dual, mRNA-specific regulatory functions: it promotes decay of BSC1 mRNA while being required for both localization and stabilization of ATP11 mRNA in P-bodies. This identifies Puf5p as a key decision-making factor determining mRNA fate under glucose starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C40-C41, and C160 are supported by the combined data showing Puf5p's differential effects on BSC1 (decay promotion) versus ATP11 (localization and stabilization). The BSC1 decay promotion is consistent with Puf5p's known role in recruiting the Ccr4/Not deadenylation complex (C155-C156). The dual function is striking and well-documented across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C127",
+      "C128"
+    ],
+    "result": "The 3'UTR is necessary but not sufficient for P-body localization. Replacing the endogenous 3'UTRs of BSC1 and ATP11 with K. lactis TRP1 3'UTR abolished P-body recruitment and reversed their fates (BSC1 stabilized, ATP11 degraded). However, transplanting BSC1 or ATP11 3'UTRs to non-P-body mRNAs failed to confer P-body localization, indicating that additional elements in the coding sequence or 5'UTR are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by FISH-IF (Figure 5B-C) and pulse-chase data (Figure 5D) showing loss of P-body localization and fate reversal with 3'UTR replacement. Claims C126-C128 are supported by the 3'UTR transplantation experiments (Figure 5\u2014figure supplement 1C-D) showing that 3'UTRs alone are insufficient. The logic is sound: necessity is proven by loss-of-function, insufficiency by gain-of-function failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C125"
+    ],
+    "result": "Secondary structure analysis of 3'UTRs revealed that stress-specific P-body mRNAs contain 10-20 clusters of transcripts enriched in certain structure motifs, with similarities to miRNA motifs (Z-score >3). These mRNAs show decreased distance between stem loops compared to non-candidate mRNAs, suggesting clustering of stem-loop structures may contribute to P-body targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C123 and C125 describe computational analyses of 3'UTR structure. While the enrichment of stem-loop clusters and miRNA-like motifs is reported (C122-C123), the functional significance is unclear. The decreased stem-loop distance (C125, Figure 5\u2014figure supplement 1A) is statistically significant but modest. Critically, the 3'UTR transplantation experiments (C126) failed to confer P-body localization, suggesting these structural features alone are not sufficient. The biological relevance of the miRNA motif similarity in yeast (which lacks canonical miRNA machinery) is questionable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C9",
+      "C42",
+      "C183"
+    ],
+    "result": "Puf5p-dependent stabilization of ATP11 mRNA contributes to chronological lifespan through glycogen accumulation. Both \u0394atp11 and \u0394puf5 strains fail to accumulate glycogen efficiently, but overexpression of ATP11 in \u0394puf5 cells rescues glycogen accumulation, linking Puf5p's mRNA stabilization function to cellular fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 are supported by iodine staining assays (Figure 5F) showing glycogen accumulation defects in deletion strains and rescue by ATP11 overexpression. This provides functional validation that Puf5p's role in ATP11 stabilization has physiological consequences. The connection to chronological lifespan (C9, C42, C183) is supported by prior literature (C129-C131) showing Puf5p promotes lifespan and glycogen is important for lifespan, though direct lifespan measurements are not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Gene length correlates with P-body association in a stress-dependent manner: P-body-associated mRNAs are shorter than generally upregulated mRNAs under glucose starvation but longer under osmotic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by length comparison analysis (Figure 1\u2014figure supplement 1G) showing statistically significant differences. However, the biological significance and mechanism underlying this length bias are not explored. This is a descriptive observation that may reflect underlying selection mechanisms but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "Mitochondria-related mRNAs (oxidative phosphorylation genes) are enriched in P-bodies specifically under glucose starvation and are transcriptionally upregulated under the same condition, representing a paradox where upregulated transcripts are sequestered in P-bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 and C82 are supported by GO enrichment analysis (Figure 1E) and total RNA-Seq data (Figure 3\u2014figure supplement 1B). The observation that these mRNAs are both upregulated and P-body-localized is intriguing and well-documented. The subsequent demonstration that they are stabilized rather than degraded (C85-C86) resolves the apparent paradox.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "MS2 and U1A stem-loop tagging systems are unsuitable for studying P-body mRNA localization because they artificially induce P-body formation under non-stress conditions and cause near-complete (100%) co-localization with P-bodies, likely due to non-degradable 3' fragments from repetitive stem-loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by live-cell imaging data (Figure 4\u2014figure supplement 1) and citation to Garcia and Parker 2015 explaining the artifact. This is an important methodological finding that justifies the authors' choice to use FISH-IF instead of live-cell MS2 imaging, despite the latter being more commonly used. The discrepancy between MS2 (100% co-localization) and FISH-IF results validates this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C175"
+    ],
+    "result": "Tethering Puf3p to P-bodies via U1A-GFP fusion causes ATP11 mRNA decay, while tethering Puf5p does not affect ATP11 stability. This suggests that Puf3p can trigger decay when localized to P-bodies, and argues against dynamic cycling being required for stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C175 are supported by transcription shut-off experiments (Figure 4H) with tethered proteins. The Puf3p result is consistent with its known role in promoting decay (citations provided). However, the interpretation regarding dynamic cycling (C175) is speculative. The Puf5p tethering efficiency was lower (50-60% co-localization, Figure 4\u2014figure supplement 2D), which could explain the lack of effect rather than proving the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C143",
+      "C147",
+      "C149",
+      "C170"
+    ],
+    "result": "The authors propose a model where P-bodies serve as context-dependent regulators containing three classes of mRNAs: (1) stress-independent mRNAs generally deposited in P-bodies, (2) stress-specific mRNAs targeted for decay with variable kinetics, and (3) stress-specific mRNAs that are stabilized. The localization and fate depend on RNA-binding proteins like Puf5p and 3'UTR sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 and C141-C143, C147, C149, C170 represent the authors' integrative model synthesizing their findings. This model is well-supported by the collective data: stress-specific mRNA content (C57-C59), differential fates (C85-C87), Puf5p's dual role (C8, C40-C41), and 3'UTR requirements (C115-C120). The three-class categorization provides a useful framework, though the boundaries between classes may not be absolute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The data support mRNA degradation occurring within P-bodies under stress conditions, addressing recent challenges to this model. Evidence includes in vivo localization of mRNAs confirmed by FISH-IF, variable decay kinetics of P-body-localized mRNAs, and Puf5p-dependent fate changes without altered P-body localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166 address the controversy about whether decay occurs in P-bodies (C161-C162). The authors provide multiple lines of evidence: FISH-IF confirmation of biochemically enriched mRNAs (C163), decay kinetics of localized mRNAs (C164), and BSC1 fate changes without localization changes (C165). However, the authors acknowledge that co-translational decay may still occur for some mRNAs (C167-C168), and they cannot definitively exclude that some decay happens outside P-bodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "ACT1 was validated as an appropriate reference gene for qRT-PCR normalization under glucose starvation, showing high stability and no significant association with P-body components or enrichment in total RNA samples under any stress condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by data in Figure 3\u2014figure supplement 1A and supplementary files. This is an important methodological control ensuring that the normalization for decay measurements is appropriate. The validation of reference gene stability is essential for interpreting the pulse-chase results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Total mRNA levels of Group I transcripts correlate with 4TU-labeled mRNA decay kinetics, suggesting coordination between P-body-specific decay and transcription. This correlation was validated by transcription shut-off experiments, though ILM1 was an exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by comparison of 4TU pulse-chase (Figure 3B) and total RNA levels (Figure 3\u2014figure supplement 1B), and transcription shut-off data (Figure 3\u2014figure supplement 1D). The correlation suggests transcriptional compensation or coordinated regulation, though the mechanism is not explored. The ILM1 exception (C91) indicates this coordination is not universal.",
+    "result_type": "MINOR"
+  }
+]

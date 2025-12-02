@@ -1,0 +1,1527 @@
+{
+  "submission": {
+    "id": "3c9061c3-265c-40d4-8ed7-b0e22e4a268a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:21:10.495611Z",
+    "updated_at": "2025-12-02T01:21:10.495611Z"
+  },
+  "content": [
+    {
+      "id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "submission_id": "3c9061c3-265c-40d4-8ed7-b0e22e4a268a",
+      "content_type": "manuscript",
+      "content_text": "# Multiple inputs ensure yeast cell size homeostasis during cell cycle progression\n\n## Authors\n\n- Cecilia Garmendia-Torres<sup>1</sup>\n- Olivier Tassy<sup>1</sup>\n- Audrey Matifas<sup>1</sup>\n- Nacho Molina<sup>1</sup>\n- Gilles Charvin<sup>1</sup> ([ORCID: 0000-0002-6852-6952](https://orcid.org/0000-0002-6852-6952)) \u2020\n\n### Affiliations\n\n1. Institut de G\u00e9n\u00e9tique et de Biologie Mol\u00e9culaire et Cellulaire Illkirch France\n2. Centre National de la Recherche Scientifique, UMR7104 Illkirch France\n3. Institut National de la Sant\u00e9 et de la Recherche M\u00e9dicale, U1258 Illkirch France\n4. Universit\u00e9 de Strasbourg Illkirch France\n\n\u2020 Corresponding author\n\n## Abstract\n\nCoordination of cell growth with division is essential for proper cell function. In budding yeast, although some molecular mechanisms responsible for cell size control during G1 have been elucidated, the mechanism by which cell size homeostasis is established remains to be discovered. Here, we developed a new technique based on quantification of histone levels to monitor cell cycle progression in individual cells with unprecedented accuracy. Our analysis establishes the existence of a mechanism controlling bud size in G2/M that prevents premature onset of anaphase, and controls the overall size variability. While most G1 mutants do not display impaired size homeostasis, mutants in which cyclin B-Cdk regulation is altered display large size variability. Our study thus demonstrates that size homeostasis is not controlled by a G1-specific mechanism alone but is likely to be an emergent property resulting from the integration of several mechanisms that coordinate cell and bud growth with division.\n\n## Introduction\n\nTo ensure cell size homeostasis, cells must coordinate growth and division during the mitotic cycle. During the 1970s, genetic studies aimed at deciphering the biochemical architecture of the cell cycle emerged concomitantly with efforts to characterize cell size control in fission (Fantes, 1977; Fantes and Nurse, 1977) and budding yeast (Hartwell and Unger, 1977; Johnston et al., 1977). In a free-running cell cycle oscillator model (i.e. in the absence of any coupling to control signals, such as cell size), the cell division time is set by the sum of fixed intervals associated with successive cell cycle events (referred to as \u2018Timer\u2019). In this case, the absence of coordination between the cell cycle engine and cell growth may induce deleterious fluctuations in cell size. In contrast, a \u2018Sizer\u2019 mechanism has been shown to operate in yeast: the transition to a given cell cycle phase (resp. mitotic entry in fission yeast and DNA replication in budding yeast) occurs when cells have attained a critical size during the preceding phase (resp. G2 phase in fission yeast and G1 in budding yeast) (Fantes, 1977; Fantes and Nurse, 1977). In this case, small cells experience a size-dependent cell cycle delay and therefore a compensatory mass addition works as a counteracting force to restore size equilibrium.\n\nIn the last 10 years, several important advances have been made in unraveling the molecular mechanism(s) responsible for this \u2018size checkpoint,\u2019 which transmits cell size information to the cell cycle control machinery. In fission yeast, it was proposed that the polarity protein kinase Pom1 localizes to the cell tips and indirectly inhibits the cyclin-dependent kinase Cdk1, allowing the cell to sense its elongation and therefore control mitotic entry (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009). Later studies disproved this model, by showing in particular that Pom1 deletion does not alter size homeostasis, as would be expected following disruption of a core player in the size signaling pathway (Bhatia et al., 2014; Wood and Nurse, 2013). Further work proposed that Cdr2, a target of Pom1, is responsible for the coupling between cell geometry and cell cycle progression (Pan et al., 2014). However, this hypothesis has not yet been validated by measuring the size-compensation mechanism in the corresponding mutant background (i.e., cdr2\u0394), and alternative models coupling cell size to mitosis have been proposed since(Keifenheim et al., 2017).\n\nEarly models of cell size regulation in G1 in budding yeast proposed that the commitment (called \u2018Start\u2019) to an irreversible round of division in response to cell growth is controlled by the cyclin Cln3, which is a key regulator of G1 progression and the function of which might be coupled to cell size in various ways (Aldea et al., 2007; Wang et al., 2009). Alternatively, recent work showed that the concentration of Whi5, a major inhibitor of G1/S cyclin expression, is gradually diluted during G1 but is synthesized in a cell size-independent manner during S/G2/M phases; thus, the nuclear concentration of Whi5 is larger in small daughter cells compared with the large mother cells at birth (Schmoller et al., 2015). According to this model, coupling between cell growth and cell cycle progression in G1 originates from cell size-dependent dilution of this G1/S inhibitor. Nevertheless, although the WHI5 mutant displays a small cell size phenotype (Jorgensen et al., 2002), the G1 size-compensation effect is reduced but not abolished (Soifer et al., 2016; Turner et al., 2012), and the overall width of the cell size distribution of Whi5 mutants and wild-type (WT) yeast are similar (Jorgensen et al., 2002). Therefore, the contribution of Whi5 to the overall size homeostasis in budding yeast therefore remains a matter of debate.\n\nwhi5\u0394\u00a0mutants and cells carrying other genetic perturbations that induce a premature G1/S transition also display compensatory growth in S/G2/M (Charvin et al., 2009; Harvey and Kellogg, 2003; Soifer and Barkai, 2014), which is analogous to the \u2018cryptic\u2019 G1/S size control observed long ago in wee1\u0394 fission yeast (Fantes, 1981). These observations suggest that, unlike other cell cycle checkpoints (e.g., spindle assembly checkpoint) in which a single sense-and-signal machinery controls cell cycle progression, cell size homeostasis may be maintained by multiple mechanisms that cooperate to coordinate cell growth and division throughout the entire cell cycle. Adding further complexity, previous work has shown that the magnitude of the size-compensation effects during G1 is greatly affected by mutation of several genes with no direct link to G1/S signalling (Soifer and Barkai, 2014). This indicates that size control may result from a complex interplay between the regulatory mechanisms involved in cell cycle progression.\n\nRecent observations in bacteria proposed that a size-compensation mechanism may not even be necessary to ensure cell homeostasis. In contrast to a Sizer mechanism, in which cell size variation during the cell cycle is negatively correlated with the initial cell size, bacteria passively reach size homeostasis through an \u2018Adder\u2019 mechanism, whereby a constant amount of cellular material is added at every cell cycle (Campos et al., 2014; Jun and Taheri-Araghi, 2015; Taheri-Araghi et al., 2015). However, as recently analyzed in budding yeast, despite the existence of a clear \u2018Sizer\u2019 in G1, the effective size control mechanism during the whole cell cycle may be perceived as an \u2018Adder\u2019(Jun and Taheri-Araghi, 2015; Soifer et al., 2016), further raising the question of the integration of multiple size regulation steps during cell cycle progression (Chandler-Brown et al., 2017).\n\nBy restricting the focus to the G1 size control mechanism, most previous studies overlooked the existence of other size control mechanisms at other cell cycle stages, and, a fortiori, how they are integrated to ensure the overall size homeostasis throughout the cell cycle. This is in part because, unlike G1 and mitosis, others phases of the cell cycle could not be accurately resolved in single cell measurements. Therefore, a global quantitative analysis of size compensation effects during the entire cell cycle is required to determine how each phase contributes to cell size control, and how this is perturbed in mutants of cell cycle regulation. Furthermore, the strength of size control was usually assessed by simply measuring the magnitude of size compensation effects, but ignoring how the actual cell size variability \u2013 which is the key marker of size homeostasis - evolves during the cell cycle. Last, mutants in which the overall size homeostasis \u2013 and not only G1 compensatory growth - is truly impaired remain to be identified, which is decisive to improve our understanding of the genetic determinism of size control.\n\nTo address these deficits, we have developed a new microscopy technique based on real-time measurements of histone levels to monitor the successive phases of the cell cycle in individual cells in an automated manner. This methodology allowed us to measure a large number of cell cycle phase- and cell size-associated variables in 22 mutants, totaling up to 15,000 cell cycles per genotype. Using this dataset, we quantitatively established the existence of a compensatory growth mechanism operating on the bud size during G2 in WT cells, thus confirming the existence of multiple size-dependent inputs in size control (Harvey and Kellogg, 2003; McMillan et al., 1998), in agreement with theoretical predictions (Spiesser et al., 2015), and clearly ruling out the \u2018cryptic\u2019 nature of size control in G2. Unexpectedly, among the cell cycle genes tested that affect size compensation in either G1 or G2, we found that genes related to the regulation of cyclin B-Cdk activity had the strongest impact on size homeostasis. This finding contrasted with mutants of G1 regulators, which displayed only modest effects on size control. Quantification of cell size variability during the cell cycle showed that phase-specific compensatory growth directly controls the noise strength in cell size distribution, as demonstrated using a linear map model that accommodates experimental data presented in this study. Therefore, unlike the prevailing model of a dominant G1-specific size control checkpoint, our analysis reveals that cell size homeostasis results from the integration of at least two interdependent elements acting at different stages of the cell cycle on different cellular compartments.\n\n## Results\n\n### A new technique to monitor cell cycle progression in live yeast cells\n\nTo obtain a precise assessment of cell size control during cell cycle progression, we sought a quantitative marker of the successive cell cycle phases in individual growing cells. Studies to date have relied on monitoring of bud emergence or of a fluorescent budneck marker, neither of which can distinguish between S, G2, and M phases. We reasoned that the burst of histone synthesis could serve as an accurate marker of S phase, thanks to the tight reciprocal coupling of DNA replication and histone synthesis, which has been characterized in detail (Baumbach et al., 1987; Heintz et al., 1983; Nelson et al., 2002; Sittman et al., 1983). Therefore, determining the onset and the end of the burst of histone expression would allow us to extract the duration of S-phase, but also deduce the duration of phases that precede (G1) and succeed DNA synthesis until anaphase onset. In budding yeast, metaphase is known to directly follow the end of replication, with no evidence of gap phase in between. However, we referred to this post-DNA synthesis interval as G2/M in the following for sake of simplicity and coherence with other organisms.\n\nTo this end, we took a strain carrying a fluorescent protein cassette fused to one of the histone 2B loci (HTB2, Figure 1A), which has been extensively used as a nuclear marker. We used a superfolder GFP (sfGFP) protein to ensure a fast maturation of the fluorophore, in order to prevent artifacts in measurements of histone dynamics, as described below. We monitored yeast cell growth in a microfluidic device which allowed us to track the successive divisions of individual cells forming bi-dimensional microcolonies (See Materials and methods and Figure 1 and Figure 1\u2014figure supplement 1), as previously described (Goulev et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-v3.jpg)\n\n**Figure 1.:** (A) Principle of the H2B-GFP fluorescence marker used track cell cycle progression (B) Sequence of phase contrast (upper) and fluorescence (lower) images of a sample wild-type daughter cell carrying a histone marker (HTB2-sfGFP), displayed with a 6 min interval. Segmented cell and nuclear contours are indicated in white and yellow, respectively. The upper and bottom panels show the quantification of cell (and bud) volume and total fluorescence signal (green curve) over time, respectively. The dashed line shows the best fit of a piecewise linear model to the fluorescence signal, which is used to segment the cell cycle into distinct phases (see text for details), as indicated using a specific color code. Vertical dashed lines highlight cell cycle phase boundaries. (C) Sample dynamics of 15 individual daughter cells during one cell cycle. The green signal represents nuclear fluorescence of the HTB2-sfGFP marker. White and yellow lines indicate cellular and nuclear contours, respectively. Colored segments (G1, red; S, green; G2/M, yellow; anaphase/cytokinesis, blue) indicate cell cycle intervals, as determined using the procedure described in (B); (D) Histogram of durations of cell cycle intervals and overall cell cycle for WT daughter (D; N\u00a0=\u00a06079) and mother (M; N\u00a0=\u00a010775) cells. The legend indicates the mean\u00a0\u00b1standard error on mean.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Photograph and schematics of the microfluidic device used in this study, showing the dimensions of the cavities designed to trap cell microcolonies. (B)\u00a0Sequence of phase contrast and fluorescence image showing the growth of isolated microcolonies within the microfluidic device. White and yellow contour represent the cellular and nuclear contours, respectively. Cell and nuclear segmentation are described in detail in the supplements.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Typical fluorescence image of a microcolony of cells expressing HTB2-sfGFP. Nuclear contours were generated using a custom segmentation procedure. Scale bar, 5 \u03bcm. (B) Higher magnification of the nucleus highlighted in red in (A). Contours of increasing size are used to determine the total HTB2-sfGFP fluorescence and to discard the background signal. (C) Procedure used to remove fluorescence background. Total fluorescence as a function of the nuclear contour size (in pixels). The dashed line is a linear fit to the last six points, which represents an asymptotic limit corresponding to background pixels. (D) Total HTB2-specific fluorescence signal obtained after background subtraction. (E) Typical evolution of HTB2-sfGFP fluorescence signal (green line) during a complete cell division cycle. The black dashed line represents a piecewise linear fit to the experimental data. The gray shaded areas represent the interval of G1, G2/M, and subsequent G1 (G1\u2032) phases of the cycle, as defined by the plateaus obtained during the fitting procedure. (F) Distribution of the fluorescence level ratio during G2/M and G1 or G1\u2032. The median ratio is 2.25\u00a0\u00b1\u00a00.01. (G) Distribution of the fluorescence level ratio between mother and daughter cell upon nuclear division. The median ratio is 0.94\u00a0\u00b1\u00a00.01 (see Materials and methods and Supplemental Information for further details).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Top: sequence of phase contrast and fluorescence of cells carrying an NLS-GFP marker at indicated time points. White and yellow line indicate cellular and nuclear contours, respectively. White segment indicates bud/mother parentage. Bottom: quantification of normalized total nuclear NLS-GFP fluorescence during one cell cycle. The dashed lines correspond to automatic detection of anaphase events measured as a sudden drop in total nuclear signal in the mother cell nuclei. Tdiv is the cell cycle duration, as measured from anaphase to anaphase. (B) Same as (A), but with a HTB2-GFP strain. (C) Violin plots showing the distribution of cell cycle duration for mother (red) and daughter (blue) cells with an NLS-GFP or HTB2-GFP marker. Green crosses indicate the distribution median. Star symbols indicate results of a Kolmogorov\u2013Smirnov test: *p<0.05, **p<0.01, ***p<0.001, using the HTB2-GFP strain as a reference. Right: Means of the distributions shown on the left. Error bars display standard error on mean.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Typical sequence of phase and fluorescence images of a strain carrying a HTB2-mCherry marker. The time stamps are relative to the beginning of the assay. (B) Quantification of the HTB2-mCherry fluorescence signal measured in (A) over multiple cell cycles. The dashed lines correspond to automatic detection of anaphase events measured as a sudden drop in total nuclear signal in the mother cell nuclei. (C and D) Same as in (A and B), but with a strain expressing HTB2-sfGFP. (E\u2013H) Numerical simulation recapitulating the effect of the time delay induced by fluorophore maturation on the measured fluorescence signal following pulsatile synthesis of histones. (E) Schematic of the reaction scheme used to model the expression of a histone\u2013fluorescent protein fusion protein (Htb2-FP, immature; Htb2-FP*, mature). The maturation half-time varies from 5 min for sfGFP to 45 min for mCherry. (F) Pulsatile synthesis rate used to mimic histone synthesis during the cell cycle. (G) Simulation of immature (black line) and mature (red) fluorescent fusion protein according to the model described in (E) following pulses of protein expression as in (F) and assuming periodic cell division events (indicated by dashed lines). In this case, kmaturation\u00a0=\u00a0ln(2)/45 min\u22121 (corresponding to the mCherry maturation rate). (H) Same as (G), but with kmaturation\u00a0=\u00a0ln(2)/5 min\u22121 (corresponding to the sfGFP maturation rate).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Phase contrast and fluorescence images of cells expressing both HTB2-sfGFP and Cdc10-mCherry markers. The white and yellow lines represent the cellular and nuclear contours, respectively. The blue line indicates the contour of the budneck. (B and C) Quantification of total nuclear fluorescence (B) and mean budneck fluorescence (C) as a function of time over multiple cell cycles. The dashed lines indicate the end of anaphase (B) or the end of cytokinesis (C), which are computationally detected as a sudden drop in the fluorescence signal. (D) Histogram of the distribution of the duration between the end of anaphase and the end of cytokinesis, based on automated detection of a sudden drop in the signal (see (C)). (E) Scatter plot showing the time from the end of anaphase to the end of the next cytokinesis as a function of the time from the end of anaphase to the end of the next anaphase (black points). The black dashed line represents the diagonal. The red line is a fit to a line of slope 1, which represents the systematic delay between anaphase and cytokinesis. (F\u2013J) Same analysis as in (A\u2013E), but using Whi5-mCherry as a complementary marker. In this case, both the end of anaphase and entry into S phase are detected (G), as well as the Whi5 nuclear exit (H). In (I), the histogram displays the distribution of time between Whi5 nuclear exit and the onset of histone synthesis. In (J), the time from the end of anaphase to the next phase of histone synthesis is plotted against the time from the end of anaphase to the next Whi5 exit (see Materials and methods and Supplemental Information for further details).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Procedure for extraction of the duration of cell cycle phases in individual cells. See Supplemental Information for details.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp7-v3.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (A) Histogram showing the fraction of rejected cell cycle for each variable/parameter used to filter the dataset (see supplemental information). The sum of all bars is larger than one, since a given cell cycle may be rejected due to a failure to fulfill one or more selection criteria. (B) Examples of histone level curves (green line) and their fit to the cell cycle model (dashed black line). The value of \u03c72 is indicated on each plot, and a vertical dashed line indicates the cell cycle selection threshold used (\u03c72=0.01) for this parameter throughout the manuscript. (C) Left: Violin plots of the distribution of duration of G1, S, and G2/M phases and total division time (Tdiv) for mother (red) and daughter (blue) cell cycles that passed the quality control criteria (\u2018selected cell cycles\u2019) versus all cell cycles. Green crosses indicate the distribution median. Star symbols indicate results of a Kolmogorov\u2013Smirnov test: *p<0.05, **p<0.01, ***p<0.001 vs. the selected cell cycle. Right: Means of the distributions shown on the left. Error bars display standard error on mean. (D) Scatter plots showing variations in mother/bud volumes at the indicated cell cycle stages for selected (left panels) versus all cells (right panels). Color indicates point density. Red line shows binning of the scatter plot along the x-axis. Dashed black line is a robust linear regression through the cloud of points, and the indicated slope (s) represents the strength of the size-compensation mechanism. Error bars represent the 95% confidence interval.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp8-v3.jpg)\n\n**Figure 1\u2014figure supplement 8.:** (C) Violin plots showing the distribution of duration of the indicated cell cycle phase as a function of the replicative age of the cells (Age\u00a0=\u00a00 and Age\u00a0>\u00a00 correspond to daughter and mother cells, respectively). *p<0.05, **p<0.01, ***p<0.001 vs. replicative age of 1 using a Kolmogorov\u2013Smirnov test. The green cross indicates the median of the distributions. Right: Mean of the distributions represented on the left. Error bars indicate standard error on mean.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig1-figsupp9-v3.jpg)\n\n**Figure 1\u2014figure supplement 9.:** (A) Sequence of phase contrast and fluorescence images of cells carrying an HTB2-sfGFP marker, based on a 6-image z-stack acquisition (spacing 300 \u03bcm). The sequence in the middle and bottom represent the max projection and the image in the middle of the stack, respectively. (B) Quantification of total HTB2-sfGFP fluorescence obtained using max projection (red line) or the image in the middle of the stack (blue line). The dashed line indicates the end of anaphase, detected computationally. (C) Fourier spectrum of the datasets displayed in (B), averaged over more than 400 cell cycles. (D) Left: Violin plots showing the distribution of duration of the indicated cell cycle phase or the entire cell cycle (Tdiv) in a wild-type strain expressing HTB2-sfGFP, acquired using a single plane or a 6-image z-stack. The red and blue plots correspond to mother and daughter cells, respectively. *p<0.05, **p<0.01, ***p<0.001 vs. control (single plane) using a Kolmogorov\u2013Smirnov test. The green cross indicates the median of the distribution. Right: Mean of the distributions represented on the left.\n\nPlotting total nuclear HTB2-sfGFP fluorescence as a function of time over one cell cycle (Figure 1B, see Figure 1\u2014figure supplement 2A\u2013D and Supporting Information for details of all quantifications), revealed a fluorescence plateau during the unbudded period of the cell cycle, followed by a linear ramp starting shortly before budding, and a plateau during the budded period of the cell cycle. This pattern was terminated by a sudden drop in fluorescence, corresponding to the onset of anaphase and nuclear division.\n\nQuantification of fluorescence levels gave a consistent\u00a0~2-fold enrichment in histones before compared with after the histone synthesis phase (Figure 1\u2014figure supplement 2E and F), as expected by the doubling of DNA content. Similarly, we verified that HTB2-sfGFP fluorescence was evenly partitioned between mother and daughter cells upon nuclear division (Daughter/Mother [D/M] asymmetry = 0.94 \u00b1 0.01 Figure 1\u2014figure supplement 2).\n\nTo further check that the measurement of total histone content over time is a reliable and physiological way to score cell cycle progression in individual cells, we performed a series of control experiments. First, we compared the division time (by measuring the anaphase to anaphase interval) of a strain carrying a constitutive NLS-GFP marker with a HTB2-GFP strain. We observed that the GFP-tag at the HTB2 locus only modestly affected cell division (Figure 1\u2014figure supplement 3A\u2013C). Of note, unlike the piecewise expression pattern observed with the HTB2-GFP strain (Figure 1\u2014figure supplement 2A), the NLS-GFP strain yielded a continuous increase in total fluorescence throughout the cell cycle, as expected with a constitutive marker.\n\nNext, we investigated how the maturation time of the fluorescent reporter affects the ability to accurately monitor the burst in histone level during S-phase. For this, we followed the expression of a second histone H2B marker, HTB2-mCherry, over time. Importantly, only a linear ramp followed by the anaphase drop could be discerned, in striking difference with the pattern observed with sfGFP (compare Figure 1\u2014figure supplement 4A and B with Figure 1\u2014figure supplement 4C and D). A numerical model confirmed that this effect could be quantitatively explained by the much longer maturation time of mCherry (~45 min [Charvin et al., 2008]) compared with sfGFP (~5 min [P\u00e9delacq et al., 2006]), which blurs the apparent dynamics of histone synthesis (Figure 1\u2014figure supplement 4E\u2013H).\n\nAlthough histone levels monitoring provides the timings of S phase and nuclear division, cytokinesis cannot be timed and, therefore, the duration of G1 cannot be deduced. To circumvent this problem, we used the septin subunit Cdc10-mCherry fusion as an additional cytokinesis marker (Figure 1\u2014figure supplement 5A\u2013C). We measured that cytokinesis (the sudden drop in Cdc10-mCherry fluorescence) and nuclear division were tightly correlated (Pearson coefficient 0.94), with a median offset of 5.6\u00a0\u00b1\u00a00.4 min between both events (Figure 1\u2014figure supplement 5D and Figure 1\u2014figure supplement 5E). Therefore, for the sake of simplicity, we chose to ignore cell-to-cell variability in this part of the cycle and, in the rest of the paper, we arbitrarily defined cell cytokinesis as an event occurring 5.6 min after the end of anaphase. We could not exclude the possibility that this procedure would introduce artefacts regarding measurements of G1 duration in mutants with cytokinesis defects. Yet, none of the reported mutants reported below, with the exception cdh1(Tully et al., 2009), have been described to affect cell cytokinesis.\n\nSimilarly, we used the Whi5-mCherry fusion protein to assess the coordination between cell cycle Start (as defined by nuclear exit of the transcriptional repressor Whi5) and the onset of histone synthesis (Fig. Figure 1\u2014figure supplement 5F\u2013H). Start consistently occurred before the onset of histone synthesis (Fig. Figure 1\u2014figure supplement 5I\u2013J), which was expected because HTB2 expression is controlled by the G1/S-specific transcription factors SBF/MBF. Taken together, these results confirmed the tight coordination between cell cycle progression and our measurements of the dynamics of histone expression.\n\nTo extend this preliminary analysis, we developed custom MATLAB software Autotrack to automate the processes of cell and nucleus contour segmentation, cell tracking, histone content measurement, and mother/daughter parentage determination (Figure 1\u2014figure supplement 6 and Supporting Information). We then used a piecewise linear model to identify the histone synthesis plateaus and ramp in the raw data, which allowed us to extract four intervals per cell cycle (Figure 1B\u2013C and Figure 1\u2014video 1): G1 (plateau), S (linear ramp), G2/M (plateau preceding anaphase), and the interval between anaphase onset and cytokinesis (referred to as \u2018Ana\u2019), taking into account our hypothesis that the period between the end of anaphase and cytokinesis was constant, as mentioned above.\n\nUsing this method, we extracted the duration of cell cycle phases for up to\u00a0~500 cells in each of the eight cavities in each independent chamber. By pooling 17 replicate experiments, we collected\u00a0~26,900 cell cycles for WT cells (Figure 1C) of which 63% passed our quality control procedure aimed at discarding cells with segmentation/tracking or data fitting issues (see Supporting Information and Figure 1\u2014figure supplement 7). To decrease the rate of cell rejection due to noise in histone level signals, we tested multi-z-stack acquisition for HTB2-sfGFP fluorescence. However, this only marginally improved the signal to noise ratio (Figure 1\u2014figure supplement 8A\u2013C) while greatly affecting the cell cycle duration likely due to photo-damage (p<0.001, Figure 1\u2014figure supplement 8D). Therefore, we retained the single plane acquisition method.\n\nUsing this analysis, we found that the cell cycle durations for WT cells were in good agreement with data obtained using other markers or methodologies. Thus, the durations for mothers and daughters, respectively, were: G1 (19.0\u00a0\u00b1\u00a00.1 and 45.5\u00a0\u00b1\u00a00.3 min) (Di Talia et al., 2007), S (29.5\u00a0\u00b1\u00a00.1 and 36.7\u00a0\u00b1\u00a00.2 min) (Magiera et al., 2014), G2/M (15.7\u00a0\u00b1\u00a00.1 and 14.7\u00a0\u00b1\u00a00.1 min), and Ana (11.4\u00a0\u00b1\u00a00.1 and 12.2\u00a0\u00b1\u00a00.1 min), Figure 1D and supplementary file 2. Importantly, the large sample size allowed us to identify statistically significant differences in these intervals. For instance, the S phase was 7.2 min longer in daughters compared with young mother cells (p<0.001; Figure 1D). In addition, this interval converged toward an asymptotic value over several divisions following cell birth (Figure 1\u2014figure supplement 9). This contrasts with G1 duration, which decreased abruptly when daughters (replicative age 0, Figure 1\u2014figure supplement 9) became mother cells (replicative age\u00a0>0, Figure 1\u2014figure supplement 9) in their subsequent division, and G2/M, the duration of which is quite independent of the replicative age of the cells. This phenomenon explains the previously reported (Cookson et al., 2005) progressive shortening of the cell cycle duration with the replicative age of the cell (see also Figure 1\u2014figure supplement 9). Also, our result recapitulate the systematic shorter S/G2/M interval in mother cells compared to daughters that was recently measured(Mayhew et al., 2017). Over, these findings illustrate the power of our technique to quantitatively measure the temporal distribution of cell cycle intervals.\n\n### Effects of environmental and genetic perturbation on the distribution of cell cycle phase durations\n\nBecause our methodology allowed us to detect even minor differences in cell cycle duration, we sought to validate its robustness by measuring the timing of cell cycle phases following perturbation by diverse environmental and genetic perturbations approaches that have been extensively studied using other techniques.\n\nFirst, we asked whether our methodology could capture the lengthening of the S phase induced by hydroxyurea (HU), which inhibits DNA replication. As expected, we observed a progressive HU concentration-dependent increase in S phase duration in both mother and daughter cells, from an average of 27.1\u00a0\u00b1\u00a00.4 min and 35.1\u00a0\u00b1\u00a00.8 min at 0 mM to 48.0\u00a0\u00b1\u00a01.4 and 43.9\u00a0\u00b1\u00a01.4 min at 50 mM HU, respectively (p<0.001, Figure 2A). This prolongation of S phase was accompanied by a parallel doubling in G2/M duration (from\u00a0~15 min to\u00a0~30 min in both mothers and daughters, p<0.001, Figure 2A), which is likely due to the activation of the checkpoint that follows DNA damage(Weinert et al., 1994). Interestingly, mothers, but not daughters, exposed to HU experienced a dose-dependent slowing of the entire cell cycle, due to an apparent compensatory decline in G1 duration in the daughters (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig2-v3.jpg)\n\n**Figure 2.:** (A) Left: Violin plots of the distribution of duration of G1, S, and G2/M phases and total division time (Tdiv) for mother (red) and daughter (blue) wild-type (WT) cells at the indicated hydroxyurea concentration. Green crosses indicate the distribution median. Star symbols indicate results of a Kolmogorov\u2013Smirnov test: *p<0.05, **p<0.01, ***p<0.001 vs. 0 mM control. Right: Means of the distributions shown on the left. Error bars display standard error on mean (B\u2013D) Same representation as in (A) analyzing various cell cycle mutants (untreated), using the WT strain as a reference for statistical tests.\n\nWe next measured the duration of cell cycle phases in cells carrying mutations in important regulators of G1, S, or G2/M phases (Figure 2B\u2013D and supplementary file 2). First, we confirmed that sic1 and whi5 (G1/S transition repressors) daughter cells underwent premature entry into S phase (i.e., shorter G1 duration) compared with WT cells\u00a0(Soifer and Barkai, 2014), which was accompanied by a compensatory increase in G2/M duration (Figure 2B)\u00a0(Soifer and Barkai, 2014). Conversely, mutation of G1/S transition activator BCK2\u00a0(Soifer and Barkai, 2014), but not CLN3, caused a small delay in G1 of daughter cells. A slight decrease in G2/M duration was also observed in both BCK2 and CLN3 mutants compared with WT cells (Figure 2B and and supplementary file 2).\n\nNext, we monitored the effect of mutations in genes involved in several biochemical pathways related to S-phase (Mrc1, Clb5, Dpb3, Rad27, Dia2). These mutations had previously been shown to induce an abnormally long S-phase interval using a cytometry assay (Koren et al., 2010). Our results confirmed this observation in all mutants, and, with the exception of dia2, the ordering of mutants according to S-phase duration was similar to Koren et al. (Figure 2C)(Koren et al., 2010). In addition, most of these mutants also displayed a longer G2/M phase, similar to the effect of HU treatment, with the exception of dpb3 cells (Figure 2A and C). This result suggests that the increased G2/M duration observed following HU treatment and in most S phase mutants is likely to be biological in origin rather than an artefact of our methodology. In this regard, a similar delay in G2/M progression was previously reported in dia2, mrc1, and rad27 mutants, but not in dpb3 mutants (Koren et al., 2010).\n\nLastly, we measured the cell cycle duration in mutants of G2/M progression. We found that deletion of SWE1, a kinase that inhibits Cyclin B/Cdk activity and therefore prevents a premature onset of anaphase, did barely affect G2/M duration, yet induced a slight increase in G1 duration of daughter cells, as previously observed (Harvey and Kellogg, 2003). However, mutants defective in Hcm1, a forkhead transcription factor that regulates late S phase genes, or Clb2, one of the main mitotic cyclins, both displayed longer G2/M phases (Figure 2D), in agreement with previous measurements (Pramila et al., 2006; Surana et al., 1991).\n\nCollectively, these results obtained in various mutant backgrounds further establish proof-of-principle for our methodology, in which a single fluorescent marker enables simultaneous measurements of key events associated with cell cycle progression. In total, we monitored the dynamics of cell cycle progression of 22 mutants. The raw cell cycle data are available on a dedicated server (Tassy and Charvin, 2018) that allows detailed data exploration and on-the-fly statistical analyses (see Appendix 1).\n\n### Control of the metaphase to anaphase transition via a Bud-specific size compensatory mechanism\n\nOur ability to measure the duration of specific cell cycle phases provides a unique opportunity to investigate in detail the coordination of growth and division during each phase of the cell cycle. We extracted 15 variables (e.g., phase durations, bud/cell volumes and growth rates during unbudded and budded period; see Supporting Information) describing cell cycle progression in both mother and daughter cells. Cell volumes were computed from segmented cell contours assuming an ellipsoid model.\n\nUsing this dataset, we sought to identify novel compensatory effects reflecting the existence of size control mechanisms. For this, we systematically measured the Pearson correlation coefficient for all measured distributions of variables in mothers and daughters (Figure 3A and B). This analysis successfully confirmed classical results, such as the negative correlation between size at birth (Vbirth) and the duration of G1 (TG1) in daughter cells (yellow star in Figure 3B) (Di Talia et al., 2007), which is indicative of a G1 compensatory mechanism in small daughter cells, as well as the positive correlation between the growth rate in unbudded cells (\u03bcunb.) and the cell volume the end of G1 (VG1) in daughters cells (green star in Figure 3B)(Ferrezuelo et al., 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig3-v3.jpg)\n\n**Figure 3.:** (A) Top: Schematic of cell cycle phases and definitions of variables used in the correlogram in panel (B). (B) Correlogram that represents Pearson\u2019s correlation coefficient obtained from the scatter plot associated with the two variables. As indicated on the color scale, blue indicates a negative correlation and therefore highlights the presence of a potential compensatory mechanism, whereas red indicates a positive correlation. T indicates the duration (min) of each cell cycle phase; V and Vb indicate the mother and bud volumes at each cell cycle phase, respectively. \u03bcunb and \u03bcbud are the linear growth rate during the unbudded and budded period of the cell cycle, respectively. Ana indicates anaphase to cytokinesis interval. M (top left triangle) and D (bottom right triangle) represent the analyses performed in mother and daughter cells, respectively. Colored asterisks indicate squares of specific interest (see Main text). (C) Schematic of cell cycle phases and definitions of variables used in the scatter plots below. (D) Scatter plots showing variations in mother/bud volumes at the indicated cell cycle stages. Color indicates point density, according to the indicated color code. Red line shows binning of the scatter plot along the x-axis. Dashed black line is a robust linear regression through the cloud of points, and the indicated slope (s) represents the strength of the size-compensation mechanism. Error bars represent a 95% confidence interval.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Left: schematic showing the definition of variables used to assess the magnitude of size compensation effects during the cell cycle. Right: scatter plots showing variations in cell/bud volumes during G2/M, as a function of bud volume by the end of S phase. Color indicates point density. Red line shows binning of the scatter plot along the x-axis. Dashed black line is a robust linear regression through the cloud of points, and the indicated slope (s) represents the strength of the size-compensation mechanism. Error bars (SE) were obtained by bootstrap analysis. Right: same as the scatter plot in the middle, but with G2/M duration. (B) Same as (A), but plotting total variations in cell/bud volumes during G2/M as a function of total cell volume (i.e. cell and bud) at the end of S phase. (C) Same as (A), but plotting total variations in cell/bud volumes during S/G2/M/Anaphase as a function of total cell volume (i.e. cell and bud) at the end of S phase.\n\nHowever, this analysis also revealed that the duration of G2/M (TG2/M) varies inversely with the volume of the bud at the end of S phase (VbS) in both mother and daughter cells, see magenta stars in Figure 3B. This suggest that, after reaching the end of S phase, cells experience a bud size\u2013dependent delay before entering anaphase. However, G2/M and S phase durations also appear negatively correlated, therefore, an alternative explanation would be that a longer S-phase provides more time for the cells to accumulate B-type cyclin, thus leading to a quicker anaphase onset and a reduction of the measured G2/M interval. In this case, the negative correlation between TG2/M and VbS may result from the longer S phase that leads to a larger bud size by the end of S phase, as indeed observed (see the positive correlation between VbS and TS on Figure 3A). To discriminate between the direct versus indirect link between these two variables, we first checked that the Pearson correlation coefficient \u03c1 was more pronounced for TG2/M and VbS than for TG2/M and TS (\u03c1\u00a0=\u00a0\u22120.43 and \u03c1\u00a0=\u00a0\u22120.29, respectively), thus arguing in favor of a direct size-dependent modulation of G2/M duration. Second, we used a Bayesian statistics approach to determine which model (direct versus indirect link) fits better the data (Meil\u0103 and Jaakkola, 2006). This analysis confirmed the causative link between VbS and TG2/M (see supplemental information for details).\n\nInterestingly, this phenomenon is in agreement with the bud morphogenesis checkpoint model, which proposed that bud growth perturbations lead to a cell cycle arrest that prevents a potentially deleterious premature onset of anaphase (Harvey and Kellogg, 2003). It also matches the conclusions of a recent theoretical model of cell cycle control, in which bud size control appears to play an important role for the overall cell size homeostasis\u00a0(Spiesser et al., 2015), as well as a recent statistical analysis of the duration of the budded period versus cell size\u00a0(Mayhew et al., 2017).\n\nHowever, another study provided evidence that this control mechanism does not operate as a bud size controller during an unperturbed cell cycle (McNulty and Lew, 2005). Therefore, to characterize this potential G2 bud size control further, we sought to determine the magnitude of compensatory growth effects during this phase of the cell cycle, and to compare it to the one of other phases. To this end, we monitored variation in cell volume \u0394V during G1, G2/M, and the complete cell cycle as a function of initial cell volume (Figure 3C and D), according to a methodology widely used in previous studies (Jun and Taheri-Araghi, 2015): for an ideal Sizer, the variation in cell volume is such that the final volume Vf is constant, independently of the initial one Vi. In this case, since \u0394V\u00a0=\u00a0Vf Vi, plotting \u0394V versus Vi yields a linear relationship with a slope \u22121. For an ideal Timer (in which the duration of the phase is constant), the slope becomes\u00a0+1, assuming an exponential growth model, and a doubling of cell size during the considered interval(Jun and Taheri-Araghi, 2015). Last, an Adder is such that the amount of added volume is independent of the initial volume; in this case, the slope is 0. Therefore, measuring the slopes s of \u0394V vs. Vi plots provide a quantitative assessment of the magnitude of size compensation effects, as well as their deviation from theoretically ideal behaviors (i.e. Sizer, Adder and Timer).\n\nThe analysis captured the well-characterized daughter-specific Sizer in G1 (Figure 3D: slope sG1 is negative in daughters, \u22120.30\u00a0\u00b1\u00a00.01, but approaches zero in mothers, \u22120.02\u00a0\u00b1\u00a00.01) (Di Talia et al., 2007). It also confirmed that the daughter and the mother cells behave as a weak Sizer and Adder, respectively, over the entire cell cycle (stot = \u22120.22\u00a0\u00b1\u00a00.02 for daughters and 0.09\u00a0\u00b1\u00a00.01 for mothers) \u2013 in previous studies, the low absolute values of stot showed that the budding yeast cell cycle behaves as an Adder, as observed in other unicellular organisms (Jun and Taheri-Araghi, 2015; Soifer et al., 2016).\n\nIn addition, the data clearly indicated the existence of a bud-specific size-compensatory growth in G2/M in both daughter and mother cells (sG2/M = \u22120.39\u00a0\u00b1\u00a00.01 and \u22120.49\u00a0\u00b1\u00a00.01 in daughters and mothers, respectively, Figure 3D). Importantly, we found that the magnitude of the Sizer was strongly reduced when considering the total cell volume (rather than only the bud, see Figure 3\u2014figure supplement 1B), or when measuring the magnitude of size compensation during the whole budded period of the cell cycle (Figure 3\u2014figure supplement 1C). This very likely explains why G2/M size control has been largely ignored in budding yeast and has been considered as \u2018cryptic\u2019. Instead, our measurements revealed that the G2/M bud size control is of comparable magnitude to the long-known size control in G1. Therefore, these results suggest that at least two mechanisms may act coordinately to ensure size homeostasis throughout the cell cycle (Soifer and Barkai, 2014).\n\n### Impaired size control in mutants of cyclin B regulation and function\n\nTo better characterize the molecular basis of size compensation effects throughout the cell cycle, we measured the magnitude of compensatory growth for daughter cells (using \u0394V vs. V plots, as in Figure 3C) in a subgroup of the cell cycle progression mutants examined earlier (Figure 2). We found that deletion of the repressor of G1/S cyclin Whi5 decreased the magnitude of G1 control (sG1 = \u22120.17\u00a0\u00b1\u00a00.02) but compensated with a slight increase in G2/M control (sG2/M = \u22120.46\u00a0\u00b1\u00a00.02, Figure 4). However, these changes were relatively modest, and the overall size-compensation slope was similar in whi5 and in WT cells (stot\u00a0=\u00a0\u22120.26\u00a0\u00b1\u00a00.03 and stot\u00a0=\u00a0\u22120.22\u00a0\u00b1\u00a00.02, respectively; Figure 4). Deletion of other G1/S regulators (cln1, cln2, cln3, swi4) lead to similar conclusions. However, G1 size compensation was slightly improved by deletion of the activator of G1/S transition BCK2 (sG1 = \u22120.34\u00a0\u00b1\u00a00.04), and the overall compensatory growth was stronger than in WT cells (stot\u00a0=\u00a0\u22120.46\u00a0\u00b1\u00a00.06).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig4-v3.jpg)\n\n**Figure 4.:** Strength of size compensation during G1, G2/M, and the entire cell cycle in the indicated mutant backgrounds, calculated as described in Figure 3D. The cross color indicates the overall compensation size during the entire cell cycle, as indicated by the color scale. Values of \u22121 and\u00a0+1 correspond to an ideal Sizer and Timer, respectively. Error bars represent a 95% confidence interval obtained from robust linear regression.\n\nIn striking contrast to these G1/S regulators, deletion of other cell cycle control genes related to the control of B-type cyclin function, such as sic1, swe1, clb5, and clb2, induced a much larger decrease in size compensation in both G1 and (with the exception of clb2) G2/M phases, as well as the overall compensatory growth (Figure 4). For instance, loss of Swe1, which inhibits Cyclin B-Cdk activity and regulates the onset of anaphase, leads to a slightly Timer-like behavior (stot\u00a0=\u00a00.15\u00a0\u00b1\u00a00.05), in which both G1 (sG1\u00a0=\u00a0\u22120.12\u00a0\u00b1\u00a00.03) (Soifer and Barkai, 2014) and G2/M (sG2/M = \u22120.15\u00a0\u00b1\u00a00.04) size compensation were largely abolished. Taken together, these data indicate that the compensatory mechanisms ensuring the control of cell size were strongly affected in mutants linked to the regulation cyclin B-Cdk activity but, unexpectedly, only marginally impaired in mutants of the G1/S control network.\n\n### Effective cell size homeostasis during cell cycle progression\n\nTo determine how size G1 and G2/M compensation effects actually impact size homeostasis, we quantified cell size variability during cell cycle progression. We measured the coefficient of variation (CV) of the distributions of cell/bud volumes at various points in the cell cycle from bud emergence to the next division of the resulting daughter cell (Figure 5A). We found that the CV gradually decreased as a function of cell cycle progression and cell size, roughly following a square-root dependency: CV = F1/2 / <V>1/2, where F is a constant and <V > is the mean cell/and or bud volume at a given point in the cell cycle. This scaling relationship between CV and cell size is to be expected, according to the Central Limit Theorem, assuming that cell growth is the sum of elementary stochastic processes: growth fluctuations tend to average out in larger cell compartments compared to smaller ones. Therefore, to characterize the intrinsic variability in cell size during cell cycle progression and to facilitate comparison among mutants of diverse sizes, we evaluated F (known as the Fano factor [Fano, 1947]), rather than the CV, because F provides a size-independent measurement of noise in cell size during the cell cycle (F is sometimes referred to as noise strength [Raser and O'Shea, 2004]).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig5-v3.jpg)\n\n**Figure 5.:** (A) Measurements of cell and/or bud size variability as a function of the mean cell and/or bud volume (in logarithmic scale) during cell cycle progression. Each data point (red symbols) corresponds to a measurement at specific cell cycle phases, as indicated in the bottom schematic. Top panel represents the coefficient of variation (CV, red symbols) in logarithmic scale. Error bars represent the statistical error, which was estimated by bootstrap analysis. The red dashed line shows the best fit to a power law CV=F1/2/V1/2, where F is the Fano factor (see main text). The grey symbols represent an estimate of experimental error on cell volume measurement, as a function of cell size (see Materials and methods for detail). Error bars represent the standard error on mean measurement error (grey symbol, see Material and methods). Bottom panel shows the Fano factor (in logarithmic scale), as defined above (red symbols, see main text for detail). Error bars represent the statistical error, which was estimated by bootstrap analysis. The red horizontal dashed line represents the mean Fano factor during cell cycle progression. The grey symbols represent an estimate of noise associated with cell volume measurement, as a function of cell size (see Materials and methods for detail). Error bars represent the standard error on noise measurement (grey symbol). (B) Ratio of the Fano factors at the end and the beginning of the G1 phase for the indicated mutants as a function of the magnitude (slope) of the size-compensation mechanism, as defined in (B). Error on the mean Fano was calculated using a bootstrap test, whereas the error on slope was calculated using a robust linear regression procedure (95% confidence interval). The dashed line has a slope one and coincides with the point (0;1). (C) Same as in (B), except applied to bud growth during the G2/M phase.\n\nAs expected, the Fano factor was much more stable than the CV during cell cycle progression of WT cells (Figure 5A). Still, it displayed some notable variations around the mean at different points in the cell cycle: specifically, F decreased during G2/M and G1 phases, but increased during the rest of the cell cycle, especially during S phase (Figure 5A). The Fano factor associated with cell size was much higher than the noise due to segmentation errors (see Material and methods for detail), thus ruling out the possibility that measurements of cell size variability might be dominated by experimental noise. Instead, our results support the hypothesis that cell size noise is clearly modulated during cell cycle progression. To check this further, we asked whether the magnitude of the decrease in Fano factor at specific cell cycle phases was consistent with that of the compensatory growth. For this, we plotted the fold-change in Fano during G1 (Figure 5B) and G2/M (Figure 5C) for each of the cell cycle mutants. Importantly, we observed that mutants with strong size compensation effects (i.e. with a negative slope) displayed larger reductions in Fano factor in both G1 and G2/M phases. Of interest, the reduction in Fano factor was larger in G2/M (fold-change\u00a0~0.65) than in G1 (~0.9) in WT cells (Figure 5B and C), confirming the importance of cell size control during G2/M. Also, this analysis clearly demonstrated that the magnitude of size compensation mechanisms directly influences size homeostasis in a cell cycle phase-specific manner.\n\n### A linear map model linking size control efficiency to size homeostasis\n\nFollowing the analysis of compensatory growth during G1 and G2/M, we wondered how the overall (i.e., during a full cell cycle) daughter cell size homeostasis was dependent on the overall size control (stot) in the cell cycle mutants. To explain the quantitative relationship between the magnitude of size control due to compensatory growth and actual variability in cell size, we turned to a noisy linear map of the cell cycle, which provides a simple model to couple phenomenological parameters that describe cell growth and division (Tanouchi et al., 2015). Under this assumption, the evolution of daughter cell volume Vn at the beginning of the cell cycle n can be given by (see Supporting Information for detail):\n\n$$\nV_{n+1}=pV_{n}+1-pV_{eq}+\u03b7\n$$\n\nwith p =$ra$, where a characterizes the efficiency of size control (which is directly related to the magnitude of size compensation, represented by the slope stot measured in Figure 3B: a = stot +1, see Supporting Information), r is the fraction of volume going to the daughter cell at division (asymmetry factor, 0 < r < 1/2), Veq is the volume of a daughter cell at equilibrium (Fig. 6A), and \u03b7 represents a Langevin noise, such that <\u03b7> = 0 and <\u03b72> = constant. Under these assumptions, we demonstrated that the Fano factor is given by (see Supporting Information for detail):\n\n$$\nFano=\u00a0\\frac{<\u03b7^{2}>}{V_{eq}}\u00a0\\frac{1}{(1\u2212p)(1+p)}\n$$\n\nThis equation indicates that the variability in cell size depends on a, size-independent, intrinsic noise constant $\\frac{<\u03b7^{2}>}{V_{eq}}$, which reflects the stochasticity of the growth process, and an effective size control parameter p (with 0 < p < 1). Notably, this model predicts a non-linearity in size variability as a function of size control parameters, and has two interesting limit cases: for a perfect Sizer (stot = \u22121), p equals 0, therefore the Fano factor equals the intrinsic noise associated with the growth process, given by <\u03b72>/Veq,. In contrast, for a perfect Timer (stot = 1), and assuming symmetrical division of mother and daughters (r= \u00bd), p equals 1 and thus there is a divergence in Fano factor, leading to a complete loss of size homeostasis. In the case of budding yeast, which divides asymmetrically (r< \u00bd), such extreme case is impossible. In other words, even with a perfect Timer, asymmetrical division is sufficient to limit cell size variability.\n\nTo check the validity of this description, we computed the average Fano factor during the cell cycle and calculated p by robust linear regression of single-cell data in WT and mutants (Figure 6A). We observed large variations in Fano factor among the mutants, which appeared to be correlated with the size control parameter p (Pearson correlation coefficient\u00a0=\u00a00.60, Figure 6B): overall, Sizers (i.e. with low values of p) tend to have less cell size noise than Timers (i.e. high values of p). Interestingly, mutants related to the G1/S network (bck2, swi4, whi5, cln1, with the exception of cln2 and cln3) generally displayed a noise level comparable to WT and lower than did the mutants associated with the regulation of B-type cyclin function (clb5, swe1, clb2, cdh1; Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34025/elife-34025-fig6-v3.jpg)\n\n**Figure 6.:** (A) Top left: Illustration of the return map model, showing the successive iterations of daughter cell size at birth Vn. The size-compensation mechanism can be described by three parameters: steady-state volume Veq, size-compensation strength p, and noise \u03b7. The three return maps of experimental data were obtained with wild-type (WT), swe1, and bck2 daughter cells. Color indicates point density. Red line shows binning of the scatter plot along the x-axis. Dashed black line is a linear regression through the cloud of points. The gray dashed line is the diagonal. (B) Average Fano factor during the entire cell cycle as a function of the experimentally measured size-compensation strength p. The black points and bars are the mean \u00b1 SEM of the WT cells and indicated mutants. The blue line shows the single parameter fit to the model (see text), yielding the intrinsic noise of the growth process $\\frac{<\u03b7^{2}>}{V_{eq}}=3.5\\pm$ 0.5, with 99% confidence intervals indicated by the dashed blue lines. (C) Rate of convergence to an equilibrium size for each strain listed in order, based on Equation 3 in the main text. Mean \u00b1 SEM. (D) Normalized size of successive daughter cells for WT cells and swe1 and bck2 mutants, starting from cells that deviate by more than 50% or less than 30% of the equilibrium cell size (indicated by the black dashed line).\n\nFitting the model prediction to the experimental data (using a single parameter fit <\u03b72>/Veq) yielded reasonable agreement, despite a large spread in the experimental data and the existence of an outlier, the dia2 mutant, which failed to fit the model (Figure 6B). Therefore, this analysis revealed that the degree of size variability observed in this cohort of cell cycle mutants, associated with diverse roles in cell cycle progression, can be reasonably accounted for by a simple model in which there is a universal noise parameter that characterizes the stochasticity of the growth process, as well as a mutant-specific parameter associated with size control. The deviation of experimental data from the predictions of the model are likely to originate, in part, from the simplistic assumption that size control is a homogenous process throughout the cell cycle, thus ignoring the contributions of size compensation mechanisms in specific phases. In addition, whereas the hypothesis of a linear map was correct for some strains (e.g. WT in Figure 6A), some deviations were observed in others (i.e. multiple slopes may be needed to describe the behavior of bck2 in Figure 6A).\n\nInterestingly, the parameter p is related to the rate \u03bb of convergence of the linear map, which sets the time it takes for a chain of daughter cells to return to equilibrium following a fluctuation in cell size:\n\n$$\np=exp(\u2212\u00a0\\lambda<T_{div}>)\n$$\n\nwhere\u00a0<\u00a0Tdiv\u00a0>\u00a0is the average generation time of a specific mutant. By computing \u03bb from p and\u00a0<Tdiv\u00a0>\u00a0, we identified a large spread in convergence rates, ranging from 1.9\u00a0\u00d7\u00a010\u22123 min\u22121 to 5.7\u00a0\u00d7\u00a010\u22123 min\u22121 (Figure 6C). By selecting the fraction of daughter cells that deviated significantly (larger or smaller) from the equilibrium size at birth and tracking the average size of consecutive daughters, we confirmed that convergence to equilibrium was impaired in the swe1 mutant but slightly improved in the bck2 mutant (yet only for large cells, presumably because the slope p seems different for small versus large bck2 cells on Figure 6A, see above) compared with WT cells (Figure 6D). Therefore, this analysis revealed that mutations of cell cycle regulators not only modify the average duration of specific phases but also control the timescale of size fluctuations and hence the robustness of the cell cycle orbit.\n\n## Discussion\n\nIn this paper, we have described a new technique to monitor the duration of successive phases of the cell cycle based on quantification of histone level dynamics in individual growing yeast cells. Most previous single cell analyses tracked cell cycle progression through budding events, ignoring the details of S/G2/M phase events. Our methodology overcomes this limitation and offers new perspectives on the quantification of temporally controlled events in individual cells, such as the coordination between DNA replication and mitosis. Notably, unlike other markers of cell cycle progression (Sakaue-Sawano et al., 2008), our technique is based on a single fluorescent marker, thereby enabling correlative measurements to be made using additional spectrally independent markers.\n\nThe large throughput of the image acquisition/processing pipeline developed in our study provides the opportunity to detect mild yet meaningful phase duration phenotypes that were not detected in previous analyses. The discovery that cells replicate their DNA more rapidly with increasing replicative age is a good example of this ability to resolve small differences in cell cycle timing, although this observation needs to be confirmed using complimentary techniques. Since we could not exhaustively analyze the large datasets generated in this study within the scope of this article, we have created a dedicated server to allow further statistical analyses of cell cycle variables in individual cells.\n\nThe main interest of our methodology was to enable the identification of size compensation effects throughout the cell cycle in an unbiased approach, and the possibility to assess their role in the establishment of size homeostasis in a quantitative manner. Building on previous studies (Harvey and Kellogg, 2003), our work now clearly establishes the link between bud growth and cell cycle progression through G2, and reveals that the magnitude of size compensation is comparable to the well-known G1 size control. Although budding and DNA replication are triggered concomitantly by the activation of the G1/S regulon, the noise in bud size that is observed at the end of S phase suggests that these two processes appear to be largely uncoordinated. Therefore, the function of bud size control during G2/M may be to prevent the potentially deleterious onset of anaphase in small-budded cells following DNA replication. Importantly, this finding challenges the idea of a \u2018cryptic\u2019-type G2 size control in budding yeast, which would only be observed upon appropriate environmental or genetic perturbations. Instead, it supports the hypothesis of universal size control mechanisms across eukaryotes, like fission yeast, in which a G2 size control has long been established (Fantes, 1977).\n\nBeyond previous work focusing on the identification of G1-specific size compensation regulators (Soifer and Barkai, 2014), our analysis in mutants broadens our understanding of how the emergence of size homeostasis is connected to the cell cycle control network. Unexpectedly, we found that mutations in activators or repressors of G1 progression had only marginal effects on the overall noise in cell size. In particular, while mutating Whi5 slightly decreased G1 compensatory growth and reinforced G2/M size control, the overall size homeostasis was quite preserved in this mutant. Interestingly, we observed a slight but significant increase in G1 size compensation effects in the bck2 mutant compared with WT cells, indicating that this phenotype is genetically tunable in both directions.\n\nIn contrast, we found that mutations of regulators of cyclin B-Cdk activity had a more pronounced effect on cell size homeostasis: G2/M size compensation was largely abolished in the swe1 mutant (Harvey and Kellogg, 2003), as well as in sic1 and cdh1 mutants. Strikingly, all of these mutations also reduced the magnitude of the G1 size control. With a few notable exceptions (hcm1 or clb2), the fact that the magnitude of G1 and G2/M size compensations are somewhat coupled across these mutant strains suggests that enforcing a clear switch in B-type cyclin-Cdk activity between the low (S/G2/early M) and high (late M/G1) APC activity regimes is critical for cell size homeostasis. Further modeling of cell cycle dynamics using a detailed molecular description will be important to clarify this point (Tyson and Novak, 2011).\n\nA novel feature of our linear map model is the proposed general formula linking the efficiency of cell size control to the noise in cell size, which is reasonably well supported by the experimental data obtained in various mutant backgrounds (Figure 6B). This model predicts a divergence in Fano factor when the behavior of the cell approaches that of an a ideal Timer (Taheri-Araghi et al., 2015). We speculate that the deletion of some cell cycle genes may render cells inviable, not to loss of an essential biochemical function, but rather to complete loss of size homeostasis, thus impairing the robustness of the cell cycle oscillation. Conversely, even a cell cycle mutant in which stot =\u00a0+1 (i.e., a perfect Timer according to the previous definition [Jun and Taheri-Araghi, 2015; Tanouchi et al., 2015]), should be able to control its size if dividing asymmetrically (since p=r (stot\u00a0+1)<1 when r < \u00bd). Therefore, asymmetric division can be regarded as an additional stabilizer of cell cycle that limits cell size variability.\n\nIn conclusion, our study, in which cell cycle progression was monitored with unprecedented accuracy in yeast, demonstrates that size homeostasis does not originate from a G1-specific mechanism, but is likely to be an emergent property resulting from the integration of at least two mechanisms that coordinate cell growth with division. Our analysis specifically highlights the role of bud size control in limiting cell-to-cell variability, which is presumably connected to the role played by B-type cyclins in size homeostasis, as identified here. Additional studies linking further experimental datasets to computational analyses (Tyson and Nov\u00e1k, 2015) will be instrumental in deciphering how individual components are integrated to ensure size homeostasis throughout the cell cycle.\n\n## Materials and methods\n\n### Strain construction\n\nAll strains were congenic to S288C unless specified otherwise and were constructed following standard genetic techniques. A detailed list of strains is provided as a supplementary file 1. HTB2-sfGFP fusion protein was generated by classical PCR-mediated genome editing. Mutant strains were obtained from the deletion collection of non-essential genes. In the list of constructed strains, we noticed that the cdh1\u0394 HTB2-sfGFP strains were quite unstable and yielded a large fraction of dead cells as well as large multinucleated cells that retained a fast division time and eventually outgrew the rest of the population. Indeed, the cdh1\u0394 mutation has previously been described to induce genomic instabilities (e.g. chromosome loss, etc..)(Ross and Cohen-Fix, 2003). We hypothesize that introducing the histone marker in this background exacerbates this phenotype. To circumvent this issue, we used freshly thawed cells from frozen stock.\n\n### Microfabrication and microfluidics setup\n\nMicrofluidic chips were designed and made using standard techniques as previously described (Goulev et al., 2017). The microfluidic devices, which feature eight independent channels, each consisting of 8 chambers, allow parallel monitoring of 8 genetic backgrounds in the same time-lapse assay. The microfluidic master was made using a standard SU-8 lithography process at the ST-NANO facility of the IPCMS (Strasbourg, France). CAD files and detailed dimensions of the chip are available on the metafluidics open repository: https://metafluidics.org/devices/yeast-high-throughput-culture-device-with-8-independent-flow-chambers/. The micro-channels were cast by curing PDMS (Sylgard 184, 10:1 mixing ratio) and then covalently bound to a 24\u00a0\u00d7\u00a050 mm coverslip using plasma surface activation (Diener, Germany). Chips were then baked for 1 hr at 70\u00b0C to improve the sealing between PDMS and glass. Microfluidic chips were connected using Tygon tubing and media flows were driven by a peristaltic pump (Ismatec, Switzerland) with a 30 \u03bcL/min flow rate.\n\n### Live imaging of yeast\n\nStrains were cultured overnight in synthetic complete medium with glucose and all amino acids. The next morning, the cultures were diluted and allowed to grow until optical density at 660 nm reached 0.2\u20130.5. Each strain was then loaded into independent chambers chosen at random to avoid potential systematic bias in measurements. For each strain, at least two fields of view were recorded during the time-lapse acquisition interval. Each assay included a WT strain as a control. Mutants were analyzed in at least three independent assays. In total, we collected at least 2000 cell cycles per mutant\u00a0~25,000 cell cycles for the WT strain.\n\nCells were imaged every 3 min using an automated inverted microscope (Nikon TI, Nikon, Japan) with a 60\u00a0\u00d7\u00a0phase contrast objective and a sCMOS camera (Hamamatsu Orca Flash 4.0, Japan) driven by Nikon Software (NIS). Constant focus was maintained using a Perfect Focus system. Fluorophore excitation was performed using LED light (Lumencor X1) and appropriate filter sets. The cells were allowed to grow for up to 10 hr in the device, yielding about 500 cells per field of view by the end of the assay.\n\n### Image processing\n\nRaw proprietary Nikon files (.nd2 format) were converted using Bio-format and bftools packages into MATLAB-compatible lossless jpeg files. We developed custom software (Autotrack; see Fig. Figure 1\u2014figure supplement 2 and Supplemental Information for details) to: (1) segment and track individual cells in yeast microcolonies, (2) quantify HTB2-sfGFP (or mCherry) levels in individual cells and extract individual cell cycles, (3) determine the duration of individual cell cycle phases, and (4) discard outliers based on specific criteria (detailed in Supplemental Information). Cell volumes were calculated from segmented cell contours assuming an ellipsoid model.\n\n### Data processing\n\nLinear regression was performed with a robust regression procedure (robustfit) function in Matlab) using a weighting function to limit the impact of potential outliers (Error estimates correspond to a 95% confidence interval). Volume measurement errors reported in Figure 5A were estimated by comparing the volume obtained from automated cell segmentation to a manual ground truth segmentation performed over more than 500 cells of various sizes.\n\n### Dataset management and online data publishing\n\nAll variables extracted during image processing were stored in a mutant-specific database designed to allow straightforward analysis using custom MATLAB software, as described in the Supporting Information. We developed a web application, Yeast Cycle Dynamics, that allows custom statistical analysis of extracted cell cycle data for all mutants in this study. In addition, raw data showing histone levels and cell size as a function of time for all cells can be monitored (Tassy and Charvin, 2018). See Supplemental Information for details.\n",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "084d884d-8aeb-4803-969e-ed5ccb8eb210",
+      "submission_id": "3c9061c3-265c-40d4-8ed7-b0e22e4a268a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea Musacchio, Max Planck Institute of Molecular Physiology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34025.024](https://doi.org/10.7554/eLife.34025.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Multiple inputs ensure yeast cell size homeostasis during cell cycle progression\" for consideration by eLife. Your article has been reviewed by Andrea Musacchio as the Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nGarmendia-Torres et al., describe an elegant new approach to visualizing cell-cycle progression in budding yeast. Their work describes a brute-force experimental approach that allows for a thorough quantification of different cell cycle stages with respect to timing and cell volume. Using this method the authors investigated the effects of activators and repressors of cell cycle progression. The work provides strong indication that in yeast cell size homeostasis does not originate solely from a G1-specific mechanism, also from cell size regulation in later phases of the cell cycle, i.e. G2/M, and that it is likely to result from the integration of several mechanisms that coordinate cell growth with division, as well as asymmetric division. Specifically, the work highlights the role of bud size control in limiting cell-to-cell variability. The experimental method itself was thoroughly validated, providing high quality data for the subsequent analysis and the finding of a size control step in G2/M is highly interesting. Overall the manuscript is clearly written and the large single-cell dataset in particular, which is made available to the wider community via a dedicated web server, is a very valuable contribution. The work will be of great interest to a wide audience working in cell cycle, cell biology and related fields. Nonetheless, attention to the following issues would improve the manuscript.\n\nEssential revisions:\n\n1) The authors use a constant value derived from the septin-mCherry experiment to delineate anaphase from cytokinesis (and with this the begin of G1). To what extent this may affect the exploration of G1 phase related measurements is not clear, especially considering that some of the mutants tested may also affect cytokinesis. Some more comments here might be helpful.\n\n2) The authors used a previously employed methodology where the change of one parameter is investigated as a function of another parameter, which, in the particular case, sensitizes the analysis towards particular behaviours, here the Timer, Sizer and Adder type of growth size control. This analysis discovered rather unexpectedly a relatively large size-compensation mechanism operating in G2/M, which is of comparable magnitude to the known Sizer during G1. I think this is an important point of the paper, which is relatively easy to miss, as it is convoluted with a lot of additional observations. The authors could consider to introduce more subheadings and to split Figure 3 to account for this.\n\n3) Size compensation and subsequently noise measurements were conducted to investigate a series of mutants that all are linked somehow to cell cycle and cell size control. While this analysis seems to be rigorous, it is hard to comprehend if someone is not an absolute specialist in cell cycle regulation. Here, the paper could probably profit from a reduction of data \u2013 instead of all mutants only few and selected mutants with a more detailed discussion of the molecular mechanisms behind could help to guide the reader through the rather complex statistical analyses.\n\n4) The authors employ a Htb2-fluorescent protein fusion as THE central tool of the entire work. GFP fused to other Histone variants have in the past also been used to discriminate cell cycle stages, e.g. Hhf2 in Newman et al., 2006. Histones, however, are essential proteins involved in chromatin functions. Most of them are expressed from redundant gene pairs, which makes it possible that the influence of the tag on the individual proteins is more severe than is expected from the slight growth delay observed. This could impact e.g. global gene regulation and, with this, cause pleiotropic phenotypes that could also manifest in problems associated with cell cycle, size and shape control. For example, on an empirical note (based on the reviewer's own experience), the Hhf2-GFP cells used in Newman et al., look quite 'abnormal'. Maybe the authors have tried out different histone variants? It would be nice if they could comment on this. Did the authors compare cell shape and size distributions etc. of their tagged variant with the wild type?\n\n5) Some of the phrasings in the paper is convoluted and makes it quite difficult to rationalize. As an example, the sentence: \u201cTo determine how size G1 and G2/M compensation effects actually impact size homeostasis, we sought to directly assess the evolution of the variability in cell size during cell cycle progression.\" could be rephrased to: \u201cTo determine how size compensation effects in G1 and G2/M actually impact size homeostasis, we quantified cell size variability during cell cycle progression.\"\n\n6) Figure 3D: Point one and also two (small buds) could be convoluted with a large measurement error. I am a bit concerned that the analysis here is convoluted by the precision by which the individual cell cycle stages for the measurements can be determined, and because with number the measured area becomes bigger and the relative size increase is small, which makes the measurements intrinsically more accurate. Some thoughts on this would be useful. Also, the color code used in this figure and incomplete axis labeling, along with rather cryptic description in the text make this figure a true challenge.\n\n7) The fact that the authors filter out a third of their cells needs to be addressed (in the Supplemental Information) with some explanation of why they are confident that this loss of data does not bias their results.\n\n8) In Figure 3C, it is unclear how stot can be independent of sG1 and sG2/M. In particular, how can sG1 and sG2 for swe1 cell both be about 0, but stot be 0.4?\n\n9) The model suggests that swe1 whi5 double mutant cells might be dead, since they should be defective in size compensation at both G1/S and M/A. Testing this suggestion is not an essential result for publication, but, if the phenotype of swe1 whi5 cells has already been published, it should be mentioned. If not, it would be easy to determine and would add significantly to the paper.\n\n10) The authors' conclusions that there is more than one point of size control in budding yeast is convincing, but they overstate their case by claiming that size control is \"likely to be an emergent property resulting from the integration of several mechanisms\". This claim strongly suggests that there are more than just the two size control targets (Start and mitosis) that they identify. As they point out, two redundant points of size control are well established in fission yeast. They need to explicitly state that such a situation would efficiently account for their data before speculating on more complicated possibilities.\n\n11) The application of metazoan cell-cycle phase names (G1, S, G2, M) to budding yeast has confused the field for decades. In particular, the fact that budding yeast assemble a mitotic spindle (diagnostic of mitosis in other organisms) before they complete replication mean that S phase and M phase overlap, making G2 (the time between the end of S and the beginning of M in other organisms) mean something different in budding yeast. The authors are not going to fix this problem, but it would be a great help to their readers if they mitigated it in the following two instances.\n\na) First, they should point out that G2/M is equivalent to metaphase (the period after spindle formation and before anaphase) in other organisms.\n\nb) Second, they should be careful with the term \"Mitotic Entry\". They use it to refer to the G2/M transition in fission yeast, which is appropriate, but, in the section header\u201cControl of Mitotic Entry via a Bud-Specific Size Compensatory Mechanism\u201d, they appear to use it to refer to the M/A transition in budding yeast, which is problematic because this transition is widely (if confusingly) referred to a mitotic exit in the budding yeast literature. Elsewhere, they describe Swe1 as an inhibitor of mitotic entry, but it inhibits CDK activation which regulates the G2/M transition in other organisms (and presumably spindle formation in budding yeast, although this regulation has not been well characterized) not the M/A transition. I think the authors would be best served not using the term mitotic entry to refer to budding yeast, but rather explicitly refer to the particular transitions, i.e. M/A.\n\n12) Insights about this mechanism are somewhat buried under the statistical analysis in the last part of the paper, while the biochemical mechanism that establishes G2/M size control is only superficially addressed. In particular, while the mutant strains point to a role of Cyclin B-Cdk activation in G2/M size control, how exactly this control is implemented and which of the various molecules that influence Cyclin B-Cdk activation are involved remains elusive. The authors could have utilised their method to study the mechanistic basis of G2/M size control in more detail. Specifically, an important concern is related to the conclusion that cell size also affects G2/M progression, with G2/M control not being cryptic, i.e., it is observed in wild-type cells under normal growth condition, and its strength being equal if not stronger than G1 control. In Figure 1D, the authors present the duration of various cell cycle phases and their distribution. These data clearly show a difference between large, mother cells (red) and small, daughter cells (blue) for G1 as well as S-phase, albeit with a lower magnitude. No substantial difference was observed for the duration of G2/M. Similarly, the variation (indicated by the standard error on mean; note the wrong legend for the leftmost plot of Figure 1D) is highest for G1 phase in daughter cells followed by the daughters' S phase, with G2/M phase showing a low variability. Together these data clearly point towards G1 (and not G2/M) size control. In addition, G2/M phase is much shorter than G1 phase, which makes up more than half of the total cell cycle time, potentially allowing for a much larger adjustment to size differences. It is unclear how these observations fit to the main conclusion of an important G2/M control step, but the suspicion is that it might be cryptic in this case. Perhaps the author could provide some discussion on this and a figure similar to 1D for mutants in which G1 and G2/M size control are particularly strong or weak.\n",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcf9839f-868a-43ea-a1e4-bb763de9d981",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C1",
+      "claim": "Coordination of cell growth with division is essential for proper cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordination of cell growth with division is essential for proper cell function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cell biology that represents established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "ba15c08d-7e01-44c4-87bf-6f0765745882",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C2",
+      "claim": "A mechanism controlling bud size in G2/M prevents premature onset of anaphase and controls the overall size variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis establishes the existence of a mechanism controlling bud size in G2/M that prevents premature onset of anaphase, and controls the overall size variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, particularly in Figure 3 and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "5b7467bd-cf33-4fd9-a633-433e3e5c5dbe",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C3",
+      "claim": "Most G1 mutants do not display impaired size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "While most G1 mutants do not display impaired size homeostasis, mutants in which cyclin B-Cdk regulation is altered display large size variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant analysis shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "9b57cd26-e018-4a5e-8964-8952989019bd",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C4",
+      "claim": "Mutants in which cyclin B-Cdk regulation is altered display large size variability.",
+      "claim_type": "EXPLICIT",
+      "source": "While most G1 mutants do not display impaired size homeostasis, mutants in which cyclin B-Cdk regulation is altered display large size variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant analysis shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "e6eaea47-800d-4f25-85b5-c3be21146bac",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C5",
+      "claim": "Size homeostasis is not controlled by a G1-specific mechanism alone but is likely to be an emergent property resulting from the integration of several mechanisms that coordinate cell and bud growth with division.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study thus demonstrates that size homeostasis is not controlled by a G1-specific mechanism alone but is likely to be an emergent property resulting from the integration of several mechanisms that coordinate cell and bud growth with division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the integration of multiple experimental observations throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "daba4f4a-4afc-47e5-b5c3-7642708a7358",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C6",
+      "claim": "A 'Sizer' mechanism operates in yeast where the transition to a given cell cycle phase occurs when cells have attained a critical size during the preceding phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a 'Sizer' mechanism has been shown to operate in yeast: the transition to a given cell cycle phase (resp. mitotic entry in fission yeast and DNA replication in budding yeast) occurs when cells have attained a critical size during the preceding phase (resp. G2 phase in fission yeast and G1 in budding yeast) (Fantes, 1977; Fantes and Nurse, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work by Fantes and colleagues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "3946f59d-7e82-49b7-bc29-0a0136458983",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C7",
+      "claim": "Pom1 deletion does not alter size homeostasis in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Later studies disproved this model, by showing in particular that Pom1 deletion does not alter size homeostasis, as would be expected following disruption of a core player in the size signaling pathway (Bhatia et al., 2014; Wood and Nurse, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies by Bhatia et al. and Wood and Nurse.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "e00238c4-b7a9-4ceb-9893-6d2886ae4af8",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C8",
+      "claim": "The nuclear concentration of Whi5 is larger in small daughter cells compared with large mother cells at birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, recent work showed that the concentration of Whi5, a major inhibitor of G1/S cyclin expression, is gradually diluted during G1 but is synthesized in a cell size-independent manner during S/G2/M phases; thus, the nuclear concentration of Whi5 is larger in small daughter cells compared with the large mother cells at birth (Schmoller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Schmoller et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "b268df6f-5419-4f7a-8e61-7b864c1d93cd",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C9",
+      "claim": "The WHI5 mutant displays a small cell size phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, although the WHI5 mutant displays a small cell size phenotype (Jorgensen et al., 2002), the G1 size-compensation effect is reduced but not abolished (Soifer et al., 2016; Turner et al., 2012), and the overall width of the cell size distribution of Whi5 mutants and wild-type (WT) yeast are similar (Jorgensen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jorgensen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "f31ef9b1-9d59-453c-8bc4-6f53ff9eef3d",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C10",
+      "claim": "The G1 size-compensation effect is reduced but not abolished in WHI5 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, although the WHI5 mutant displays a small cell size phenotype (Jorgensen et al., 2002), the G1 size-compensation effect is reduced but not abolished (Soifer et al., 2016; Turner et al., 2012), and the overall width of the cell size distribution of Whi5 mutants and wild-type (WT) yeast are similar (Jorgensen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Soifer et al., 2016 and Turner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "c821edb3-2e4b-4d34-accf-5221e28803f4",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C11",
+      "claim": "whi5\u0394 mutants display compensatory growth in S/G2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "whi5\u0394 mutants and cells carrying other genetic perturbations that induce a premature G1/S transition also display compensatory growth in S/G2/M (Charvin et al., 2009; Harvey and Kellogg, 2003; Soifer and Barkai, 2014), which is analogous to the 'cryptic' G1/S size control observed long ago in wee1\u0394 fission yeast (Fantes, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Charvin et al., 2009, Harvey and Kellogg, 2003, and Soifer and Barkai, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "5e2d397e-3bfe-47cc-8559-d2276513acd4",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C12",
+      "claim": "Bacteria reach size homeostasis through an 'Adder' mechanism, whereby a constant amount of cellular material is added at every cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent observations in bacteria proposed that a size-compensation mechanism may not even be necessary to ensure cell homeostasis. In contrast to a Sizer mechanism, in which cell size variation during the cell cycle is negatively correlated with the initial cell size, bacteria passively reach size homeostasis through an 'Adder' mechanism, whereby a constant amount of cellular material is added at every cell cycle (Campos et al., 2014; Jun and Taheri-Araghi, 2015; Taheri-Araghi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Campos et al., 2014, Jun and Taheri-Araghi, 2015, and Taheri-Araghi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "79cd1950-80a9-4df2-b49d-baad6b2c80cc",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C13",
+      "claim": "The burst of histone synthesis is tightly coupled to DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the burst of histone synthesis could serve as an accurate marker of S phase, thanks to the tight reciprocal coupling of DNA replication and histone synthesis, which has been characterized in detail (Baumbach et al., 1987; Heintz et al., 1983; Nelson et al., 2002; Sittman et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on histone synthesis and DNA replication coupling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "fa4e6cf0-b813-4bd6-8bff-0cbdd2403ecf",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C14",
+      "claim": "HTB2-sfGFP fluorescence shows a ~2-fold enrichment in histones before compared with after the histone synthesis phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of fluorescence levels gave a consistent ~2-fold enrichment in histones before compared with after the histone synthesis phase (Figure 1\u2014figure supplement 2E and F), as expected by the doubling of DNA content.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "97d60dc9-0476-4330-b63a-c929f4171090",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C15",
+      "claim": "HTB2-sfGFP fluorescence is evenly partitioned between mother and daughter cells upon nuclear division with a D/M asymmetry of 0.94 \u00b1 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we verified that HTB2-sfGFP fluorescence was evenly partitioned between mother and daughter cells upon nuclear division (Daughter/Mother [D/M] asymmetry = 0.94 \u00b1 0.01 Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "968180bc-daf5-4227-acf3-bbe1449d03b4",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C16",
+      "claim": "The GFP-tag at the HTB2 locus only modestly affects cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the GFP-tag at the HTB2 locus only modestly affected cell division (Figure 1\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "37279778-9727-42cc-a09e-ae09238c89ba",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C17",
+      "claim": "The maturation time of mCherry is ~45 min.",
+      "claim_type": "EXPLICIT",
+      "source": "A numerical model confirmed that this effect could be quantitatively explained by the much longer maturation time of mCherry (~45 min [Charvin et al., 2008]) compared with sfGFP (~5 min [P\u00e9delacq et al., 2006]), which blurs the apparent dynamics of histone synthesis (Figure 1\u2014figure supplement 4E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Charvin et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "fc3b621a-78cc-4ab2-ad32-de3f8c4217d5",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C18",
+      "claim": "The maturation time of sfGFP is ~5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "A numerical model confirmed that this effect could be quantitatively explained by the much longer maturation time of mCherry (~45 min [Charvin et al., 2008]) compared with sfGFP (~5 min [P\u00e9delacq et al., 2006]), which blurs the apparent dynamics of histone synthesis (Figure 1\u2014figure supplement 4E\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to P\u00e9delacq et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "d91e445e-1ca8-4b76-9167-42de2b7a077d",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C19",
+      "claim": "Cytokinesis and nuclear division are tightly correlated with a Pearson coefficient of 0.94.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured that cytokinesis (the sudden drop in Cdc10-mCherry fluorescence) and nuclear division were tightly correlated (Pearson coefficient 0.94), with a median offset of 5.6 \u00b1 0.4 min between both events (Figure 1\u2014figure supplement 5D and Figure 1\u2014figure supplement 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "41232ace-9720-41fb-bb43-79a36152a0cb",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C20",
+      "claim": "There is a median offset of 5.6 \u00b1 0.4 min between nuclear division and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured that cytokinesis (the sudden drop in Cdc10-mCherry fluorescence) and nuclear division were tightly correlated (Pearson coefficient 0.94), with a median offset of 5.6 \u00b1 0.4 min between both events (Figure 1\u2014figure supplement 5D and Figure 1\u2014figure supplement 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "150b58cd-d32e-40e6-a27a-ccdbefe3c665",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C21",
+      "claim": "Start consistently occurs before the onset of histone synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Start consistently occurred before the onset of histone synthesis (Fig. Figure 1\u2014figure supplement 5I\u2013J), which was expected because HTB2 expression is controlled by the G1/S-specific transcription factors SBF/MBF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 5I\u2013J and knowledge about HTB2 regulation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "8e9eb32c-4afa-4e18-b23d-9c8d4ffde437",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C22",
+      "claim": "63% of collected wild-type cell cycles passed the quality control procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "By pooling 17 replicate experiments, we collected ~26,900 cell cycles for WT cells (Figure 1C) of which 63% passed our quality control procedure aimed at discarding cells with segmentation/tracking or data fitting issues (see Supporting Information and Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data processing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "5940c2f7-ad60-427b-828f-0db0338b4189",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C23",
+      "claim": "For wild-type mother cells, G1 duration is 19.0 \u00b1 0.1 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the durations for mothers and daughters, respectively, were: G1 (19.0 \u00b1 0.1 and 45.5 \u00b1 0.3 min) (Di Talia et al., 2007), S (29.5 \u00b1 0.1 and 36.7 \u00b1 0.2 min) (Magiera et al., 2014), G2/M (15.7 \u00b1 0.1 and 14.7 \u00b1 0.1 min), and Ana (11.4 \u00b1 0.1 and 12.2 \u00b1 0.1 min), Figure 1D and supplementary file 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "1185429b-b7ca-4cba-a75f-f01f2fa7b864",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C24",
+      "claim": "For wild-type daughter cells, G1 duration is 45.5 \u00b1 0.3 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the durations for mothers and daughters, respectively, were: G1 (19.0 \u00b1 0.1 and 45.5 \u00b1 0.3 min) (Di Talia et al., 2007), S (29.5 \u00b1 0.1 and 36.7 \u00b1 0.2 min) (Magiera et al., 2014), G2/M (15.7 \u00b1 0.1 and 14.7 \u00b1 0.1 min), and Ana (11.4 \u00b1 0.1 and 12.2 \u00b1 0.1 min), Figure 1D and supplementary file 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "17a6141c-d509-45f2-b348-fd37fe9b9886",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C25",
+      "claim": "For wild-type mother cells, S phase duration is 29.5 \u00b1 0.1 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the durations for mothers and daughters, respectively, were: G1 (19.0 \u00b1 0.1 and 45.5 \u00b1 0.3 min) (Di Talia et al., 2007), S (29.5 \u00b1 0.1 and 36.7 \u00b1 0.2 min) (Magiera et al., 2014), G2/M (15.7 \u00b1 0.1 and 14.7 \u00b1 0.1 min), and Ana (11.4 \u00b1 0.1 and 12.2 \u00b1 0.1 min), Figure 1D and supplementary file 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "69368411-38f5-47e6-adf2-3e0e320edbdf",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C26",
+      "claim": "For wild-type daughter cells, S phase duration is 36.7 \u00b1 0.2 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the durations for mothers and daughters, respectively, were: G1 (19.0 \u00b1 0.1 and 45.5 \u00b1 0.3 min) (Di Talia et al., 2007), S (29.5 \u00b1 0.1 and 36.7 \u00b1 0.2 min) (Magiera et al., 2014), G2/M (15.7 \u00b1 0.1 and 14.7 \u00b1 0.1 min), and Ana (11.4 \u00b1 0.1 and 12.2 \u00b1 0.1 min), Figure 1D and supplementary file 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "2d00a36b-75e5-4c7c-a5f1-3f899f407d88",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C27",
+      "claim": "The S phase is 7.2 min longer in daughters compared with young mother cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the S phase was 7.2 min longer in daughters compared with young mother cells (p<0.001; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "9448883d-096a-4a94-8b14-6e050990bc76",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C28",
+      "claim": "S phase duration converges toward an asymptotic value over several divisions following cell birth.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this interval converged toward an asymptotic value over several divisions following cell birth (Figure 1\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "329b5e5d-d991-4d33-89f2-3a50bd45e524",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C29",
+      "claim": "G1 duration decreases abruptly when daughters become mother cells in their subsequent division.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with G1 duration, which decreased abruptly when daughters (replicative age 0, Figure 1\u2014figure supplement 9) became mother cells (replicative age >0, Figure 1\u2014figure supplement 9) in their subsequent division, and G2/M, the duration of which is quite independent of the replicative age of the cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "e5fa99f1-1b23-42f0-82d8-0dacfa0b37a7",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C30",
+      "claim": "G2/M duration is quite independent of the replicative age of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with G1 duration, which decreased abruptly when daughters (replicative age 0, Figure 1\u2014figure supplement 9) became mother cells (replicative age >0, Figure 1\u2014figure supplement 9) in their subsequent division, and G2/M, the duration of which is quite independent of the replicative age of the cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "3609e7d3-632f-44b6-8d2d-f541b91f63ed",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C31",
+      "claim": "Hydroxyurea induces a progressive concentration-dependent increase in S phase duration in both mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a progressive HU concentration-dependent increase in S phase duration in both mother and daughter cells, from an average of 27.1 \u00b1 0.4 min and 35.1 \u00b1 0.8 min at 0 mM to 48.0 \u00b1 1.4 and 43.9 \u00b1 1.4 min at 50 mM HU, respectively (p<0.001, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "1583ab48-8328-4804-9e88-3bf19e5758c3",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C32",
+      "claim": "Hydroxyurea treatment causes a doubling in G2/M duration from ~15 min to ~30 min in both mothers and daughters.",
+      "claim_type": "EXPLICIT",
+      "source": "This prolongation of S phase was accompanied by a parallel doubling in G2/M duration (from ~15 min to ~30 min in both mothers and daughters, p<0.001, Figure 2A), which is likely due to the activation of the checkpoint that follows DNA damage(Weinert et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and citation to Weinert et al., 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "d4360538-87ef-42c8-8810-c1860ed087f7",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C33",
+      "claim": "sic1 and whi5 daughter cells undergo premature entry into S phase compared with WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we confirmed that sic1 and whi5 (G1/S transition repressors) daughter cells underwent premature entry into S phase (i.e., shorter G1 duration) compared with WT cells (Soifer and Barkai, 2014), which was accompanied by a compensatory increase in G2/M duration (Figure 2B) (Soifer and Barkai, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and citation to Soifer and Barkai, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "1ab7bd2f-a991-4d4d-be68-163724098b18",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C34",
+      "claim": "Premature entry into S phase in sic1 and whi5 mutants is accompanied by a compensatory increase in G2/M duration.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we confirmed that sic1 and whi5 (G1/S transition repressors) daughter cells underwent premature entry into S phase (i.e., shorter G1 duration) compared with WT cells (Soifer and Barkai, 2014), which was accompanied by a compensatory increase in G2/M duration (Figure 2B) (Soifer and Barkai, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and citation to Soifer and Barkai, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "25f8df3a-ac14-4fff-a2c4-43347ad805f2",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C35",
+      "claim": "Mutation of BCK2 causes a small delay in G1 of daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutation of G1/S transition activator BCK2 (Soifer and Barkai, 2014), but not CLN3, caused a small delay in G1 of daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to Soifer and Barkai, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "4e3dc8fd-7ee3-436a-9206-cf5ad96d06db",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C36",
+      "claim": "Deletion of SWE1 induces a slight increase in G1 duration of daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deletion of SWE1, a kinase that inhibits Cyclin B/Cdk activity and therefore prevents a premature onset of anaphase, did barely affect G2/M duration, yet induced a slight increase in G1 duration of daughter cells, as previously observed (Harvey and Kellogg, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to Harvey and Kellogg, 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "286035a5-f6f2-4e38-9923-d64f7f6d4892",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C37",
+      "claim": "Mutants defective in Hcm1 display longer G2/M phases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutants defective in Hcm1, a forkhead transcription factor that regulates late S phase genes, or Clb2, one of the main mitotic cyclins, both displayed longer G2/M phases (Figure 2D), in agreement with previous measurements (Pramila et al., 2006; Surana et al., 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and citations to Pramila et al., 2006 and Surana et al., 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "69908bcb-f127-4e78-b1d2-ce3b726c91cd",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C38",
+      "claim": "Mutants defective in Clb2 display longer G2/M phases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutants defective in Hcm1, a forkhead transcription factor that regulates late S phase genes, or Clb2, one of the main mitotic cyclins, both displayed longer G2/M phases (Figure 2D), in agreement with previous measurements (Pramila et al., 2006; Surana et al., 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and citations to Pramila et al., 2006 and Surana et al., 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "cc05ddf9-60f5-462e-ae84-0b867d48153a",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C39",
+      "claim": "There is a negative correlation between size at birth and the duration of G1 in daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis successfully confirmed classical results, such as the negative correlation between size at birth (Vbirth) and the duration of G1 (TG1) in daughter cells (yellow star in Figure 3B) (Di Talia et al., 2007), which is indicative of a G1 compensatory mechanism in small daughter cells, as well as the positive correlation between the growth rate in unbudded cells (\u03bcunb.) and the cell volume the end of G1 (VG1) in daughters cells (green star in Figure 3B)(Ferrezuelo et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and citation to Di Talia et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "0d038b56-8834-487a-8ada-515d5b30e688",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C40",
+      "claim": "There is a positive correlation between the growth rate in unbudded cells and the cell volume at the end of G1 in daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis successfully confirmed classical results, such as the negative correlation between size at birth (Vbirth) and the duration of G1 (TG1) in daughter cells (yellow star in Figure 3B) (Di Talia et al., 2007), which is indicative of a G1 compensatory mechanism in small daughter cells, as well as the positive correlation between the growth rate in unbudded cells (\u03bcunb.) and the cell volume the end of G1 (VG1) in daughters cells (green star in Figure 3B)(Ferrezuelo et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and citation to Ferrezuelo et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "97c13275-2d6e-454b-a98d-092efd4c98a0",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C41",
+      "claim": "The duration of G2/M varies inversely with the volume of the bud at the end of S phase in both mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this analysis also revealed that the duration of G2/M (TG2/M) varies inversely with the volume of the bud at the end of S phase (VbS) in both mother and daughter cells, see magenta stars in Figure 3B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "b3689c22-ccaa-42f7-97f0-3073236a3a08",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C42",
+      "claim": "After reaching the end of S phase, cells experience a bud size\u2013dependent delay before entering anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggest that, after reaching the end of S phase, cells experience a bud size\u2013dependent delay before entering anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed negative correlation between G2/M duration and bud size at the end of S phase.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "39b5e07d-11ec-4c5b-bda9-eb7652a33c35",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C43",
+      "claim": "Wild-type daughter cells display a G1 size compensation slope of sG1 = -0.30 \u00b1 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis captured the well-characterized daughter-specific Sizer in G1 (Figure 3D: slope sG1 is negative in daughters, \u22120.30 \u00b1 0.01, but approaches zero in mothers, \u22120.02 \u00b1 0.01) (Di Talia et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "fad3fa82-5092-4af1-8ae1-2484cba8c7b3",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C44",
+      "claim": "Wild-type mother cells display a G1 size compensation slope of sG1 = -0.02 \u00b1 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis captured the well-characterized daughter-specific Sizer in G1 (Figure 3D: slope sG1 is negative in daughters, \u22120.30 \u00b1 0.01, but approaches zero in mothers, \u22120.02 \u00b1 0.01) (Di Talia et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "404589c5-f996-4ad1-8fe8-b248a1beaf56",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C45",
+      "claim": "Daughter cells behave as a weak Sizer over the entire cell cycle with stot = -0.22 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "It also confirmed that the daughter and the mother cells behave as a weak Sizer and Adder, respectively, over the entire cell cycle (stot = \u22120.22 \u00b1 0.02 for daughters and 0.09 \u00b1 0.01 for mothers) \u2013 in previous studies, the low absolute values of stot showed that the budding yeast cell cycle behaves as an Adder, as observed in other unicellular organisms (Jun and Taheri-Araghi, 2015; Soifer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to Jun and Taheri-Araghi, 2015 and Soifer et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "5c8b2abe-2d67-4345-a996-92283e7acf6d",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C46",
+      "claim": "Mother cells behave as an Adder over the entire cell cycle with stot = 0.09 \u00b1 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "It also confirmed that the daughter and the mother cells behave as a weak Sizer and Adder, respectively, over the entire cell cycle (stot = \u22120.22 \u00b1 0.02 for daughters and 0.09 \u00b1 0.01 for mothers) \u2013 in previous studies, the low absolute values of stot showed that the budding yeast cell cycle behaves as an Adder, as observed in other unicellular organisms (Jun and Taheri-Araghi, 2015; Soifer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to Jun and Taheri-Araghi, 2015 and Soifer et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "360e2f82-08ad-4240-9022-738ecb53b95d",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C47",
+      "claim": "There is a bud-specific size-compensatory growth in G2/M with sG2/M = -0.39 \u00b1 0.01 in daughters and -0.49 \u00b1 0.01 in mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the data clearly indicated the existence of a bud-specific size-compensatory growth in G2/M in both daughter and mother cells (sG2/M = \u22120.39 \u00b1 0.01 and \u22120.49 \u00b1 0.01 in daughters and mothers, respectively, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "023059ea-039d-4170-a8d4-1104220a9e67",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C48",
+      "claim": "The magnitude of the G2/M bud size control is comparable to the G1 size control.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results suggest that at least two mechanisms may act coordinately to ensure size homeostasis throughout the cell cycle (Soifer and Barkai, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of size compensation slopes in G1 and G2/M phases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "bd792e02-11b4-453e-9c54-71c252c85bcb",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C49",
+      "claim": "Deletion of Whi5 decreases the magnitude of G1 control to sG1 = -0.17 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deletion of the repressor of G1/S cyclin Whi5 decreased the magnitude of G1 control (sG1 = \u22120.17 \u00b1 0.02) but compensated with a slight increase in G2/M control (sG2/M = \u22120.46 \u00b1 0.02, Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "44b92b9c-edf2-4bc3-9d10-671881a7f755",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C50",
+      "claim": "Deletion of Whi5 causes a slight increase in G2/M control to sG2/M = -0.46 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deletion of the repressor of G1/S cyclin Whi5 decreased the magnitude of G1 control (sG1 = \u22120.17 \u00b1 0.02) but compensated with a slight increase in G2/M control (sG2/M = \u22120.46 \u00b1 0.02, Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "da3988dc-88a9-4c10-b060-6a0af69b4fec",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C51",
+      "claim": "The overall size-compensation slope is similar in whi5 and WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these changes were relatively modest, and the overall size-compensation slope was similar in whi5 and in WT cells (stot = \u22120.26 \u00b1 0.03 and stot = \u22120.22 \u00b1 0.02, respectively; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "2c5d3d09-a0e8-4433-b4d2-81ce31bc86fe",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C52",
+      "claim": "G1 size compensation is slightly improved by deletion of BCK2 with sG1 = -0.34 \u00b1 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "However, G1 size compensation was slightly improved by deletion of the activator of G1/S transition BCK2 (sG1 = \u22120.34 \u00b1 0.04), and the overall compensatory growth was stronger than in WT cells (stot = \u22120.46 \u00b1 0.06).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "f6c233c5-c68f-4985-974a-a6a2b3524a8f",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C53",
+      "claim": "Deletion of sic1, swe1, clb5, and clb2 induces a much larger decrease in size compensation in both G1 and G2/M phases compared to G1/S regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast to these G1/S regulators, deletion of other cell cycle control genes related to the control of B-type cyclin function, such as sic1, swe1, clb5, and clb2, induced a much larger decrease in size compensation in both G1 and (with the exception of clb2) G2/M phases, as well as the overall compensatory growth (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "2fd42b8f-b4cf-4c03-abd0-60a596c86837",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C54",
+      "claim": "Loss of Swe1 leads to a slightly Timer-like behavior with stot = 0.15 \u00b1 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, loss of Swe1, which inhibits Cyclin B-Cdk activity and regulates the onset of anaphase, leads to a slightly Timer-like behavior (stot = 0.15 \u00b1 0.05), in which both G1 (sG1 = \u22120.12 \u00b1 0.03) (Soifer and Barkai, 2014) and G2/M (sG2/M = \u22120.15 \u00b1 0.04) size compensation were largely abolished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to Soifer and Barkai, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "6532822d-7cd1-442d-bb1f-813b25069e07",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C56",
+      "claim": "The Fano factor decreases during G2/M and G1 phases but increases during the rest of the cell cycle, especially during S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, it displayed some notable variations around the mean at different points in the cell cycle: specifically, F decreased during G2/M and G1 phases, but increased during the rest of the cell cycle, especially during S phase (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "bd459f94-c0fa-49d4-8093-228d8989cbb4",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C57",
+      "claim": "Mutants with strong size compensation effects display larger reductions in Fano factor in both G1 and G2/M phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that mutants with strong size compensation effects (i.e. with a negative slope) displayed larger reductions in Fano factor in both G1 and G2/M phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "cadbf81f-1850-4444-ae3f-d715b41324d3",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C58",
+      "claim": "The reduction in Fano factor is larger in G2/M (fold-change ~0.65) than in G1 (~0.9) in WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest, the reduction in Fano factor was larger in G2/M (fold-change ~0.65) than in G1 (~0.9) in WT cells (Figure 5B and C), confirming the importance of cell size control during G2/M.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "63302663-5a0d-4eda-9065-d528a2eaa1ca",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C59",
+      "claim": "The magnitude of size compensation mechanisms directly influences size homeostasis in a cell cycle phase-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, this analysis clearly demonstrated that the magnitude of size compensation mechanisms directly influences size homeostasis in a cell cycle phase-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on Fano factor changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "159e3c73-cf02-47bf-a36e-80717ba12c36",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C61",
+      "claim": "Mutants related to the G1/S network generally display a noise level comparable to WT and lower than mutants associated with the regulation of B-type cyclin function.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mutants related to the G1/S network (bck2, swi4, whi5, cln1, with the exception of cln2 and cln3) generally displayed a noise level comparable to WT and lower than did the mutants associated with the regulation of B-type cyclin function (clb5, swe1, clb2, cdh1; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "24e47f09-34f3-4345-84c6-8fb311875105",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C62",
+      "claim": "Fitting the linear map model to experimental data yields an intrinsic noise parameter <\u03b7\u00b2>/Veq = 3.5 \u00b1 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the model prediction to the experimental data (using a single parameter fit <\u03b72>/Veq) yielded reasonable agreement, despite a large spread in the experimental data and the existence of an outlier, the dia2 mutant, which failed to fit the model (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "87a3d332-ae4e-45ac-991c-944a142d5fce",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C63",
+      "claim": "Convergence rates range from 1.9 \u00d7 10^-3 min^-1 to 5.7 \u00d7 10^-3 min^-1 across different mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "By computing \u03bb from p and <Tdiv > , we identified a large spread in convergence rates, ranging from 1.9 \u00d7 10\u22123 min\u22121 to 5.7 \u00d7 10\u22123 min\u22121 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "dc51ff17-b319-49b7-a062-c78313432192",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C64",
+      "claim": "Convergence to equilibrium is impaired in the swe1 mutant compared with WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By selecting the fraction of daughter cells that deviated significantly (larger or smaller) from the equilibrium size at birth and tracking the average size of consecutive daughters, we confirmed that convergence to equilibrium was impaired in the swe1 mutant but slightly improved in the bck2 mutant (yet only for large cells, presumably because the slope p seems different for small versus large bck2 cells on Figure 6A, see above) compared with WT cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "7a6c11bf-40dd-4a20-84dd-d1ea26bc41a7",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C65",
+      "claim": "Convergence to equilibrium is slightly improved in the bck2 mutant for large cells compared with WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By selecting the fraction of daughter cells that deviated significantly (larger or smaller) from the equilibrium size at birth and tracking the average size of consecutive daughters, we confirmed that convergence to equilibrium was impaired in the swe1 mutant but slightly improved in the bck2 mutant (yet only for large cells, presumably because the slope p seems different for small versus large bck2 cells on Figure 6A, see above) compared with WT cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "c921e268-baac-4225-b697-2fdfa5ac5a78",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C66",
+      "claim": "The magnitude of bud size compensation during G2/M is comparable to the well-known G1 size control.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on previous studies (Harvey and Kellogg, 2003), our work now clearly establishes the link between bud growth and cell cycle progression through G2, and reveals that the magnitude of size compensation is comparable to the well-known G1 size control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing G1 and G2/M size compensation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "8cd1480c-9fa6-4e07-a931-8c81d762bd0b",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C67",
+      "claim": "Budding and DNA replication are triggered concomitantly by the activation of the G1/S regulon.",
+      "claim_type": "EXPLICIT",
+      "source": "Although budding and DNA replication are triggered concomitantly by the activation of the G1/S regulon, the noise in bud size that is observed at the end of S phase suggests that these two processes appear to be largely uncoordinated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about cell cycle regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "7aeec9d3-aa07-4fc4-aafc-95dc52c47e45",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C68",
+      "claim": "The function of bud size control during G2/M may be to prevent the potentially deleterious onset of anaphase in small-budded cells following DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the function of bud size control during G2/M may be to prevent the potentially deleterious onset of anaphase in small-budded cells following DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed G2/M size control mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "1e867106-7ed7-458c-9824-ac59ee47e238",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C69",
+      "claim": "Mutations of regulators of cyclin B-Cdk activity have a more pronounced effect on cell size homeostasis than mutations of G1 regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that mutations of regulators of cyclin B-Cdk activity had a more pronounced effect on cell size homeostasis: G2/M size compensation was largely abolished in the swe1 mutant (Harvey and Kellogg, 2003), as well as in sic1 and cdh1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to Harvey and Kellogg, 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "5be4ac76-f5bb-46db-aa8c-b0fb39ce3512",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C70",
+      "claim": "G2/M size compensation is largely abolished in the swe1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that mutations of regulators of cyclin B-Cdk activity had a more pronounced effect on cell size homeostasis: G2/M size compensation was largely abolished in the swe1 mutant (Harvey and Kellogg, 2003), as well as in sic1 and cdh1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to Harvey and Kellogg, 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "0a2c843b-f735-447f-8fe0-0cc26a01a6f7",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C71",
+      "claim": "G2/M size compensation is largely abolished in sic1 and cdh1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that mutations of regulators of cyclin B-Cdk activity had a more pronounced effect on cell size homeostasis: G2/M size compensation was largely abolished in the swe1 mutant (Harvey and Kellogg, 2003), as well as in sic1 and cdh1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "cccdea87-c9d3-443e-8899-bd2611a10a53",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C72",
+      "claim": "The magnitude of G1 and G2/M size compensations are somewhat coupled across mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, all of these mutations also reduced the magnitude of the G1 size control. With a few notable exceptions (hcm1 or clb2), the fact that the magnitude of G1 and G2/M size compensations are somewhat coupled across these mutant strains suggests that enforcing a clear switch in B-type cyclin-Cdk activity between the low (S/G2/early M) and high (late M/G1) APC activity regimes is critical for cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on multiple mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "e54f9e2a-9f33-4faa-8cca-29d2f74408b0",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C73",
+      "claim": "Enforcing a clear switch in B-type cyclin-Cdk activity between the low and high APC activity regimes is critical for cell size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "With a few notable exceptions (hcm1 or clb2), the fact that the magnitude of G1 and G2/M size compensations are somewhat coupled across these mutant strains suggests that enforcing a clear switch in B-type cyclin-Cdk activity between the low (S/G2/early M) and high (late M/G1) APC activity regimes is critical for cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the observed coupling of G1 and G2/M size compensations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "a462a274-4a9d-484b-937c-4cc4d28769b8",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C74",
+      "claim": "Asymmetric division can be regarded as an additional stabilizer of cell cycle that limits cell size variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, asymmetric division can be regarded as an additional stabilizer of cell cycle that limits cell size variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mathematical model showing that p=r(stot+1)<1 when r<\u00bd.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "df480366-3848-4d5c-a59e-a7b8acb0ff50",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C75",
+      "claim": "All strains used in the study were congenic to S288C unless specified otherwise.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains were congenic to S288C unless specified otherwise and were constructed following standard genetic techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the materials used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "c9e57dde-a886-4b34-ac48-37b55940bfb6",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C76",
+      "claim": "The cdh1\u0394 HTB2-sfGFP strains were quite unstable and yielded a large fraction of dead cells as well as large multinucleated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the list of constructed strains, we noticed that the cdh1\u0394 HTB2-sfGFP strains were quite unstable and yielded a large fraction of dead cells as well as large multinucleated cells that retained a fast division time and eventually outgrew the rest of the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation made during the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "3a5fb26a-e22d-455c-9953-d52ece65a6c5",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C77",
+      "claim": "The cdh1\u0394 mutation has previously been described to induce genomic instabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the cdh1\u0394 mutation has previously been described to induce genomic instabilities (e.g. chromosome loss, etc..)(Ross and Cohen-Fix, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ross and Cohen-Fix, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "7a3d826c-85aa-43e3-8dd2-cdded3878fc3",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C78",
+      "claim": "Cells were imaged every 3 min using an automated inverted microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were imaged every 3 min using an automated inverted microscope (Nikon TI, Nikon, Japan) with a 60 \u00d7 phase contrast objective and a sCMOS camera (Hamamatsu Orca Flash 4.0, Japan) driven by Nikon Software (NIS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "de2195e4-42d5-48eb-aba5-8c06a8814702",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "claim_id": "C79",
+      "claim": "Cells were allowed to grow for up to 10 hr in the device, yielding about 500 cells per field of view by the end of the assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells were allowed to grow for up to 10 hr in the device, yielding about 500 cells per field of view by the end of the assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "35ca2688-855d-45df-a515-cf55bd4febe9",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a novel technique using HTB2-sfGFP fluorescence to monitor cell cycle progression in budding yeast. The technique shows ~2-fold enrichment in histones during S phase, even partitioning between mother and daughter cells (D/M = 0.94 \u00b1 0.01), and tight correlation between cytokinesis and nuclear division (Pearson coefficient 0.94, median offset 5.6 \u00b1 0.4 min). The sfGFP tag has fast maturation (~5 min) compared to mCherry (~45 min), which is critical for accurate temporal resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C21 collectively establish the validity of the HTB2-sfGFP marker system through multiple validation experiments. The 2-fold enrichment (C14), even partitioning (C15), tight correlation with cytokinesis (C19-C20), and comparison of fluorophore maturation times (C17-C18) provide converging evidence. The modest effect of the GFP tag on cell division (C16) confirms the technique is minimally perturbative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using the HTB2-sfGFP system, the authors measured cell cycle phase durations in wild-type cells with high precision. For mothers and daughters respectively: G1 (19.0 \u00b1 0.1 and 45.5 \u00b1 0.3 min), S (29.5 \u00b1 0.1 and 36.7 \u00b1 0.2 min), G2/M (15.7 \u00b1 0.1 and 14.7 \u00b1 0.1 min). S phase is 7.2 min longer in daughters (p<0.001) and converges to an asymptotic value over several divisions. G1 duration decreases abruptly when daughters become mothers, while G2/M duration is independent of replicative age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C30 present comprehensive quantitative measurements of cell cycle timing from ~17,000 wild-type cell cycles (63% passing quality control). The measurements are internally consistent, show appropriate statistical significance (p<0.001), and agree with prior literature. The large sample size enables detection of subtle differences like the 7.2 min S phase difference between mothers and daughters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "38cc6ea4-f049-493c-9fab-ab5153cf3471",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The HTB2-sfGFP technique successfully detected expected cell cycle perturbations in response to hydroxyurea treatment and genetic mutations. Hydroxyurea caused concentration-dependent S phase lengthening and G2/M doubling. Genetic perturbations showed expected phenotypes: sic1\u0394 and whi5\u0394 caused premature S phase entry with compensatory G2/M increase; bck2\u0394 delayed G1; swe1\u0394 slightly increased G1; hcm1\u0394 and clb2\u0394 lengthened G2/M.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 validate the technique by recapitulating known phenotypes from prior studies. The hydroxyurea dose-response (C31-C32) and mutant phenotypes (C33-C38) match literature expectations and include appropriate citations. This demonstrates the technique can detect both pharmacological and genetic perturbations with high sensitivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "bce356c5-5055-4605-9541-9e1782a3027e",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Systematic correlation analysis revealed a novel G2/M bud size control mechanism. G2/M duration varies inversely with bud volume at the end of S phase in both mothers and daughters. The magnitude of G2/M bud size compensation (sG2/M = -0.39 \u00b1 0.01 in daughters, -0.49 \u00b1 0.01 in mothers) is comparable to the well-characterized G1 size control (sG1 = -0.30 \u00b1 0.01 in daughters). Daughters behave as weak Sizers (stot = -0.22 \u00b1 0.02) while mothers behave as Adders (stot = 0.09 \u00b1 0.01) over the entire cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C48 establish a major finding through quantitative analysis of correlations and size compensation slopes. The negative correlation between G2/M duration and bud size at end of S phase (C41) is supported by both Pearson correlation and Bayesian model comparison (mentioned in text). The comparable magnitudes of G1 and G2/M size control (C43-C47) challenge the prevailing G1-centric view of size homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "a0384367-d613-4360-a0a1-97adcce20248",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutant analysis revealed that regulators of cyclin B-Cdk activity have stronger effects on size homeostasis than G1/S regulators. Deletion of whi5 modestly decreased G1 control (sG1 = -0.17 \u00b1 0.02) with slight G2/M compensation, maintaining overall homeostasis (stot = -0.26 \u00b1 0.03 vs -0.22 \u00b1 0.02 in WT). In contrast, sic1\u0394, swe1\u0394, clb5\u0394, and clb2\u0394 showed much larger decreases in size compensation in both G1 and G2/M phases. The swe1\u0394 mutant exhibited Timer-like behavior (stot = 0.15 \u00b1 0.05) with abolished size compensation in both phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 and C69-C73 present a key finding that cyclin B-Cdk regulators are more critical for size homeostasis than G1/S regulators. The quantitative measurements of size compensation slopes across 22 mutants provide strong evidence. The coupling of G1 and G2/M size compensations across mutants (C72) suggests an integrated control mechanism, though the mechanistic interpretation (C73) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "0391f246-d16c-49e5-a68f-75fb39ba8030",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell size variability (measured by Fano factor) decreases during G2/M and G1 phases but increases during S phase. Mutants with strong size compensation effects display larger reductions in Fano factor in both G1 and G2/M phases. The reduction in Fano factor is larger in G2/M (fold-change ~0.65) than in G1 (~0.9) in wild-type cells, demonstrating that the magnitude of size compensation mechanisms directly influences size homeostasis in a cell cycle phase-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 link size compensation mechanisms to actual size variability through Fano factor analysis. The phase-specific changes in Fano factor (C56) and correlation with compensation strength (C57) provide direct evidence that size control mechanisms reduce noise. The larger reduction in G2/M (C58) reinforces the importance of G2/M size control discovered in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "65eccf10-7a1b-4c8a-a744-5be9495b582d",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A linear map model successfully relates size control efficiency to size homeostasis across mutants. G1/S network mutants (bck2, swi4, whi5, cln1) display noise levels comparable to WT and lower than cyclin B-Cdk regulators (clb5, swe1, clb2, cdh1). Model fitting yields an intrinsic noise parameter <\u03b7\u00b2>/Veq = 3.5 \u00b1 0.5. Convergence rates range from 1.9 \u00d7 10\u207b\u00b3 to 5.7 \u00d7 10\u207b\u00b3 min\u207b\u00b9 across mutants, with impaired convergence in swe1\u0394 and improved convergence in bck2\u0394 (for large cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 demonstrate that a simple linear map model can account for size variability across diverse mutants using a single intrinsic noise parameter. The reasonable fit despite data spread (C62) and validation through tracking convergence dynamics (C64-C65) support the model. However, the authors acknowledge deviations (dia2 outlier, non-linear behavior in some mutants), indicating the model is a useful approximation rather than a complete description.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "13ff0b25-35ca-404e-b133-6bcba1de0e5d",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study establishes that size homeostasis in budding yeast is not controlled by a G1-specific mechanism alone but is an emergent property resulting from integration of multiple mechanisms. A bud size control mechanism in G2/M prevents premature anaphase onset and controls overall size variability. Most G1 mutants do not display impaired size homeostasis, while cyclin B-Cdk regulation mutants display large size variability. The proposed function of G2/M bud size control is to prevent deleterious anaphase onset in small-budded cells following DNA replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5, C66, and C68 represent the main conclusions of the study. These are well-supported by the extensive experimental data on size compensation slopes, Fano factor analysis, and mutant phenotypes. The conclusion that size homeostasis is an emergent property (C5) is justified by the demonstration of comparable G1 and G2/M size control mechanisms and their differential sensitivity to genetic perturbations. The proposed function (C68) is speculative but reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "565375bc-a76c-40d5-bcd5-b025718b6ad6",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Asymmetric division can be regarded as an additional stabilizer of the cell cycle that limits cell size variability, as the linear map model predicts p = r(stot + 1) < 1 when r < \u00bd.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 presents a theoretical insight from the linear map model showing that asymmetric division (r < \u00bd) provides inherent stability even with Timer-like behavior (stot = 1). This is a valid mathematical consequence of the model and provides an interesting perspective on the role of asymmetric division in budding yeast.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "9257617b-b4cf-4393-aa56-0d2bae340156",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used strains congenic to S288C, imaged cells every 3 min for up to 10 hr yielding ~500 cells per field of view. The cdh1\u0394 HTB2-sfGFP strain was unstable with dead cells and multinucleated cells, consistent with known genomic instabilities induced by cdh1\u0394 mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 describe methodological details and an experimental observation about strain stability. These are straightforward factual statements about materials and methods. The cdh1\u0394 instability (C76-C77) is appropriately noted and explained by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction reviews prior work on size control mechanisms in yeast and bacteria, including the Sizer mechanism in yeast, the role (and subsequent disproof) of Pom1 in fission yeast, the Whi5 dilution model in budding yeast, compensatory growth in S/G2/M phases, and the Adder mechanism in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 accurately summarize prior literature with appropriate citations. These provide essential context for the current study. The claims about prior work appear to be correctly attributed based on the citations provided (Fantes 1977, Bhatia et al. 2014, Schmoller et al. 2015, etc.).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    },
+    {
+      "id": "810610d1-9128-4841-a161-ef34cfc873a8",
+      "content_id": "3d351bc0-b75e-4713-b9a2-91ad142d176b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Coordination of cell growth with division is essential for proper cell function. Budding and DNA replication are triggered concomitantly by activation of the G1/S regulon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C67 represent general biological knowledge that provides context for the study. These are well-established facts in cell biology and are appropriately used to frame the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:10.495611Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "79cd1950-80a9-4df2-b49d-baad6b2c80cc",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "fa4e6cf0-b813-4bd6-8bff-0cbdd2403ecf",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "97d60dc9-0476-4330-b63a-c929f4171090",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "968180bc-daf5-4227-acf3-bbe1449d03b4",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "37279778-9727-42cc-a09e-ae09238c89ba",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "fc3b621a-78cc-4ab2-ad32-de3f8c4217d5",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "d91e445e-1ca8-4b76-9167-42de2b7a077d",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "41232ace-9720-41fb-bb43-79a36152a0cb",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "150b58cd-d32e-40e6-a27a-ccdbefe3c665",
+      "result_id": "35ca2688-855d-45df-a515-cf55bd4febe9"
+    },
+    {
+      "claim_id": "8e9eb32c-4afa-4e18-b23d-9c8d4ffde437",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "5940c2f7-ad60-427b-828f-0db0338b4189",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "1185429b-b7ca-4cba-a75f-f01f2fa7b864",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "17a6141c-d509-45f2-b348-fd37fe9b9886",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "69368411-38f5-47e6-adf2-3e0e320edbdf",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "2d00a36b-75e5-4c7c-a5f1-3f899f407d88",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "9448883d-096a-4a94-8b14-6e050990bc76",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "329b5e5d-d991-4d33-89f2-3a50bd45e524",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "e5fa99f1-1b23-42f0-82d8-0dacfa0b37a7",
+      "result_id": "bcccc5fd-71f9-47b9-96d9-feee575c79c7"
+    },
+    {
+      "claim_id": "3609e7d3-632f-44b6-8d2d-f541b91f63ed",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "1583ab48-8328-4804-9e88-3bf19e5758c3",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "d4360538-87ef-42c8-8810-c1860ed087f7",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "1ab7bd2f-a991-4d4d-be68-163724098b18",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "25f8df3a-ac14-4fff-a2c4-43347ad805f2",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "4e3dc8fd-7ee3-436a-9206-cf5ad96d06db",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "286035a5-f6f2-4e38-9923-d64f7f6d4892",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "69908bcb-f127-4e78-b1d2-ce3b726c91cd",
+      "result_id": "38cc6ea4-f049-493c-9fab-ab5153cf3471"
+    },
+    {
+      "claim_id": "cc05ddf9-60f5-462e-ae84-0b867d48153a",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "0d038b56-8834-487a-8ada-515d5b30e688",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "97c13275-2d6e-454b-a98d-092efd4c98a0",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "b3689c22-ccaa-42f7-97f0-3073236a3a08",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "39b5e07d-11ec-4c5b-bda9-eb7652a33c35",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "fad3fa82-5092-4af1-8ae1-2484cba8c7b3",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "404589c5-f996-4ad1-8fe8-b248a1beaf56",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "5c8b2abe-2d67-4345-a996-92283e7acf6d",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "360e2f82-08ad-4240-9022-738ecb53b95d",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "023059ea-039d-4170-a8d4-1104220a9e67",
+      "result_id": "bce356c5-5055-4605-9541-9e1782a3027e"
+    },
+    {
+      "claim_id": "bd792e02-11b4-453e-9c54-71c252c85bcb",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "44b92b9c-edf2-4bc3-9d10-671881a7f755",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "da3988dc-88a9-4c10-b060-6a0af69b4fec",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "2c5d3d09-a0e8-4433-b4d2-81ce31bc86fe",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "f6c233c5-c68f-4985-974a-a6a2b3524a8f",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "2fd42b8f-b4cf-4c03-abd0-60a596c86837",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "1e867106-7ed7-458c-9824-ac59ee47e238",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "5be4ac76-f5bb-46db-aa8c-b0fb39ce3512",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "0a2c843b-f735-447f-8fe0-0cc26a01a6f7",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "cccdea87-c9d3-443e-8899-bd2611a10a53",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "e54f9e2a-9f33-4faa-8cca-29d2f74408b0",
+      "result_id": "a0384367-d613-4360-a0a1-97adcce20248"
+    },
+    {
+      "claim_id": "6532822d-7cd1-442d-bb1f-813b25069e07",
+      "result_id": "0391f246-d16c-49e5-a68f-75fb39ba8030"
+    },
+    {
+      "claim_id": "bd459f94-c0fa-49d4-8093-228d8989cbb4",
+      "result_id": "0391f246-d16c-49e5-a68f-75fb39ba8030"
+    },
+    {
+      "claim_id": "cadbf81f-1850-4444-ae3f-d715b41324d3",
+      "result_id": "0391f246-d16c-49e5-a68f-75fb39ba8030"
+    },
+    {
+      "claim_id": "63302663-5a0d-4eda-9065-d528a2eaa1ca",
+      "result_id": "0391f246-d16c-49e5-a68f-75fb39ba8030"
+    },
+    {
+      "claim_id": "159e3c73-cf02-47bf-a36e-80717ba12c36",
+      "result_id": "65eccf10-7a1b-4c8a-a744-5be9495b582d"
+    },
+    {
+      "claim_id": "24e47f09-34f3-4345-84c6-8fb311875105",
+      "result_id": "65eccf10-7a1b-4c8a-a744-5be9495b582d"
+    },
+    {
+      "claim_id": "87a3d332-ae4e-45ac-991c-944a142d5fce",
+      "result_id": "65eccf10-7a1b-4c8a-a744-5be9495b582d"
+    },
+    {
+      "claim_id": "dc51ff17-b319-49b7-a062-c78313432192",
+      "result_id": "65eccf10-7a1b-4c8a-a744-5be9495b582d"
+    },
+    {
+      "claim_id": "7a6c11bf-40dd-4a20-84dd-d1ea26bc41a7",
+      "result_id": "65eccf10-7a1b-4c8a-a744-5be9495b582d"
+    },
+    {
+      "claim_id": "ba15c08d-7e01-44c4-87bf-6f0765745882",
+      "result_id": "13ff0b25-35ca-404e-b133-6bcba1de0e5d"
+    },
+    {
+      "claim_id": "5b7467bd-cf33-4fd9-a633-433e3e5c5dbe",
+      "result_id": "13ff0b25-35ca-404e-b133-6bcba1de0e5d"
+    },
+    {
+      "claim_id": "9b57cd26-e018-4a5e-8964-8952989019bd",
+      "result_id": "13ff0b25-35ca-404e-b133-6bcba1de0e5d"
+    },
+    {
+      "claim_id": "e6eaea47-800d-4f25-85b5-c3be21146bac",
+      "result_id": "13ff0b25-35ca-404e-b133-6bcba1de0e5d"
+    },
+    {
+      "claim_id": "c921e268-baac-4225-b697-2fdfa5ac5a78",
+      "result_id": "13ff0b25-35ca-404e-b133-6bcba1de0e5d"
+    },
+    {
+      "claim_id": "7aeec9d3-aa07-4fc4-aafc-95dc52c47e45",
+      "result_id": "13ff0b25-35ca-404e-b133-6bcba1de0e5d"
+    },
+    {
+      "claim_id": "a462a274-4a9d-484b-937c-4cc4d28769b8",
+      "result_id": "565375bc-a76c-40d5-bcd5-b025718b6ad6"
+    },
+    {
+      "claim_id": "df480366-3848-4d5c-a59e-a7b8acb0ff50",
+      "result_id": "9257617b-b4cf-4393-aa56-0d2bae340156"
+    },
+    {
+      "claim_id": "c9e57dde-a886-4b34-ac48-37b55940bfb6",
+      "result_id": "9257617b-b4cf-4393-aa56-0d2bae340156"
+    },
+    {
+      "claim_id": "3a5fb26a-e22d-455c-9953-d52ece65a6c5",
+      "result_id": "9257617b-b4cf-4393-aa56-0d2bae340156"
+    },
+    {
+      "claim_id": "7a3d826c-85aa-43e3-8dd2-cdded3878fc3",
+      "result_id": "9257617b-b4cf-4393-aa56-0d2bae340156"
+    },
+    {
+      "claim_id": "de2195e4-42d5-48eb-aba5-8c06a8814702",
+      "result_id": "9257617b-b4cf-4393-aa56-0d2bae340156"
+    },
+    {
+      "claim_id": "daba4f4a-4afc-47e5-b5c3-7642708a7358",
+      "result_id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f"
+    },
+    {
+      "claim_id": "3946f59d-7e82-49b7-bc29-0a0136458983",
+      "result_id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f"
+    },
+    {
+      "claim_id": "e00238c4-b7a9-4ceb-9893-6d2886ae4af8",
+      "result_id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f"
+    },
+    {
+      "claim_id": "b268df6f-5419-4f7a-8e61-7b864c1d93cd",
+      "result_id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f"
+    },
+    {
+      "claim_id": "f31ef9b1-9d59-453c-8bc4-6f53ff9eef3d",
+      "result_id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f"
+    },
+    {
+      "claim_id": "c821edb3-2e4b-4d34-accf-5221e28803f4",
+      "result_id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f"
+    },
+    {
+      "claim_id": "5e2d397e-3bfe-47cc-8559-d2276513acd4",
+      "result_id": "7e4b8517-6bd1-4b1a-9f60-f0e98fe64b3f"
+    },
+    {
+      "claim_id": "bcf9839f-868a-43ea-a1e4-bb763de9d981",
+      "result_id": "810610d1-9128-4841-a161-ef34cfc873a8"
+    },
+    {
+      "claim_id": "8cd1480c-9fa6-4e07-a931-8c81d762bd0b",
+      "result_id": "810610d1-9128-4841-a161-ef34cfc873a8"
+    }
+  ],
+  "comparisons": []
+}

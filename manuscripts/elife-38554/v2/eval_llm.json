@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35"
+    ],
+    "result": "A bilateral pair of brain descending neurons (MDNs) is sufficient and necessary to induce backward locomotion in Drosophila larvae. Optogenetic activation of MDNs immediately switches locomotion from forward to backward without changing wave frequency, while silencing MDNs reduces backward locomotion induced by noxious stimuli. Stochastic labeling experiments demonstrate that activation of as few as two MDNs (one or both in a brain lobe) is sufficient to induce the behavioral switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 and C35 provide converging evidence from intersectional genetics (C27), optogenetic activation (C28-C30), optogenetic silencing (C31), and stochastic labeling (C32-C33, C35) that collectively demonstrate MDNs are both sufficient and necessary for backward locomotion. The experimental approaches are complementary and the controls (ATR-, no Gal4) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C38"
+    ],
+    "result": "MDNs are cholinergic excitatory neurons that are specifically active during backward but not forward locomotion. CaMPARI photoconversion experiments in intact larvae show significant activity-induced fluorescence during backward locomotion but minimal fluorescence during forward locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C38 are supported by ChAT:GFP expression data (C34) and CaMPARI activity monitoring (C38). The CaMPARI experiment includes appropriate controls (forward vs backward locomotion) and demonstrates specificity of MDN activity. The cholinergic identity is consistent with an excitatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MDNs were identified in a serial section TEM reconstruction of the larval CNS based on morphological matching with light microscopy. TEM analysis reveals that MDN presynapses are restricted to descending processes while postsynapses are in brain arbors and descending processes. The major postsynaptic partners are Pair1, ThDN, A18b, and the MDNs themselves, with all four MDNs showing similar connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe the connectomic analysis of MDNs. The morphological matching between light and TEM (C39) is well-documented in Figure 3. The synaptic distribution (C40-C42) and connectivity analysis (C43-C44) are supported by TEM data. However, the claim that MDNs are 'indistinguishable' may be overstated given that two subtypes (MDNa and MDNb) are distinguished by ipsilateral arbor morphology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "MDNs activate the backward-active premotor neuron A18b, which is cholinergic and directly connected to motor neurons. A18b is specifically active during backward but not forward locomotion in both fictive preparations and intact larvae. MDN activation triggers a backward wave of A18b activity from A2 to A6, and A18b stimulation increases motor neuron activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 establish the MDN\u2192A18b\u2192motor neuron pathway. The evidence includes connectomics (C47, C49), neurotransmitter identity (C48), activity monitoring in multiple preparations (C50-C52), and functional connectivity assays (C53-C56). The claim that MDN only contacts A18b in A1 (C47) is important but raises questions about how a backward wave is generated (addressed in C54). The lack of A18b-Gal4 expression in A1 (mentioned in text) prevents direct functional testing of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "MDNs activate Pair1 descending neurons, which are active during backward but not forward locomotion. Pair1 activity precedes motor neuron activity and shows obligate co-activation with MDNs, though Pair1 can also be active independently of MDNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C57-C62 establish MDN activation of Pair1 and characterize Pair1 activity patterns. The functional connectivity (C57) is demonstrated with appropriate controls. The co-activity data (C58-C59) reveals both MDN-dependent and MDN-independent Pair1 activation, which is important for understanding circuit function. Activity monitoring in multiple preparations (C60-C62) consistently shows Pair1 is backward-active.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Pair1 inhibits the forward-active premotor neuron A27h. Pair1 neurons are GABAergic, and their activation causes a significant decrease in A27h activity and immediately blocks forward locomotion. Pair1 and A27h activity is anti-correlated during locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 establish the Pair1\u2192A27h inhibitory pathway. The evidence includes confirmation of prior work (C63), functional connectivity assays showing inhibition (C64), GABAergic identity consistent with inhibition (C65), behavioral effects of Pair1 activation (C66), and anti-correlated activity patterns (C67). The experiments include appropriate controls (ATR-) and the convergent evidence strongly supports the inhibitory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Pair1 activity is necessary for efficient MDN-induced backward locomotion. Silencing Pair1 alone has no effect on forward locomotion, but silencing Pair1 prior to MDN activation significantly reduces the effectiveness of MDN-induced backward locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 demonstrate that Pair1 function is required for robust MDN-mediated backward locomotion. The experiment uses temperature-sensitive Shibire to silence Pair1 while activating MDNs with Chrimson at different intensities. The result that Pair1 silencing alone doesn't affect forward locomotion (C68) but reduces MDN-induced backward locomotion (C69) supports the model that MDN coordinates both backward activation and forward inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Direct monosynaptic reciprocal inhibition between forward and backward circuits was not observed in the connectomic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is explicitly stated and supported by connectomic data shown in Figure 7\u2014figure supplement 1D. This is an important negative result that distinguishes the Drosophila circuit architecture from alternative models based on reciprocal inhibition. The absence of direct reciprocal inhibition supports the model that behavioral switching is controlled by top-down command neurons rather than mutual inhibition between antagonistic circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Larval MDNs persist through metamorphosis and become adult moonwalker neurons that can trigger backward walking. MDNs were observed at early and mid-pupal stages where they prune their dendritic arbors. Two independent immortalization experiments demonstrate that larval MDNs survive to adulthood, match adult moonwalker morphology, and can induce backward walking when optogenetically activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C70-C78 establish MDN persistence from larva to adult. The evidence includes morphological similarity (C70), developmental tracking (C71-C72), and two independent immortalization approaches (C73-C76). The correlation between backward walking behavior and moonwalker neuron expression in both experiments (C73-C76) provides strong support. The claim that MDNs induce backward locomotion in both limbless larvae and limbed adults (C78) is a remarkable finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "MDNs are command-like brain descending interneurons that coordinately activate backward locomotion and block forward locomotion through two parallel pathways: direct activation of backward-active premotor neurons and disynaptic inhibition of forward-active premotor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C79 summarize the main findings. These claims are well-supported by the collective evidence from optogenetics, connectomics, and functional imaging described in the other claim groups. The dual pathway model (activation of A18b for backward locomotion and inhibition of A27h via Pair1 for forward suppression) is supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "A brief 300 ms pulse of MDN activation is sufficient to induce a full multi-second backward wave, suggesting that MDN activity triggers but does not persist throughout the backward wave. This is consistent with MDN-A18b synapses being detected only in segment A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by optogenetic experiments in both intact larvae and fictive CNS preparations (Figure 2F). The brief activation paradigm demonstrates that sustained MDN activity is not required for a complete backward wave. This inference is consistent with the connectomic finding that MDN only contacts A18b in A1 (C47), though the mechanism for wave propagation remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "MDNs are necessary for normal backward locomotion in response to mild noxious head touch, but no monosynaptic sensory inputs to MDNs were detected in the TEM connectome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by optogenetic silencing experiments (Figure 1G,H). Claim C88 is a negative result from connectomic analysis. Together these claims establish that MDNs are required for sensory-evoked backward locomotion but receive polysynaptic rather than direct sensory input. The absence of monosynaptic sensory input is clearly stated but leaves open questions about the sensory-to-MDN pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The model proposes that activation of A18b in segment A1 induces backward locomotion, based on four observations: A18b is only active during backward locomotion, MDN forms excitatory synapses on A18b in A1 but not more posterior segments, MDN stimulation produces an A18b backward activity wave, and the A18b backward wave is concurrent with motor neuron backward waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 presents a model based on multiple observations. While the supporting evidence (A18b backward-specific activity, MDN-A18b connectivity in A1, MDN-induced A18b waves, A18b-motor neuron co-activity) is well-documented, the authors acknowledge they cannot directly test this model because the A18b-Gal4 line lacks expression in A1 and has off-target expression. The model is plausible and consistent with available data, but direct functional evidence (e.g., A18b activation in A1 inducing backward waves) is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C96"
+    ],
+    "result": "ThDN has extensive synaptic connectivity with A27l/A27k premotor neurons, representing a third MDN output pathway, but functional analysis is precluded by lack of genetic tools for ThDN and A27k, and off-target expression in the A27l line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C96 describe the MDN-ThDN-A27l/k pathway identified by connectomics but acknowledge the inability to functionally test it. The connectomic data (C45) is clear, and the technical limitation (C96) is honestly reported. This represents an incomplete but accurately described result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Pair1 can be activated independently of MDNs, indicating additional mechanisms for Pair1 activation exist, though these MDN-independent inputs remain unidentified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by calcium imaging data (Figure 6\u2014figure supplement 1) showing Pair1 activity without concurrent MDN activity. This is an important observation for understanding circuit function, as it suggests Pair1 may participate in behaviors beyond MDN-induced backward locomotion. The honest acknowledgment that these inputs are unknown (C95) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The MDN circuit architecture is similar to C. elegans, where the ASH sensory neuron activates the backward command neuron AVA and indirectly inhibits the forward command neuron AVB, though AVB inhibition may also involve reciprocal inhibition between AVA and AVB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 compare the Drosophila MDN circuit to C. elegans circuits based on cited literature. The comparison is appropriate and helps contextualize the findings. Claim C82 acknowledges uncertainty about the mechanism of AVB inhibition in C. elegans, which is appropriate given it's based on prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that animals execute mutually exclusive behaviors, command-like neurons can induce specific behaviors across species, but the mechanisms for suppressing antagonistic behaviors during command neuron activation are poorly understood, particularly outside of C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C9-C16 provide background context supported by extensive citations to prior work. These claims accurately represent the state of the field and establish the motivation for the study. The claims are appropriately supported by citations rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims about Drosophila larval locomotion establish that forward locomotion is the default behavior consisting of posterior-to-anterior muscle/motor neuron waves, backward locomotion consists of anterior-to-posterior waves triggered by noxious stimuli, and while a segmental VNC neuron triggering backward locomotion has been identified, high-order command neurons and circuits coordinating forward/backward switching were unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 provide specific background on Drosophila larval locomotion, all supported by appropriate citations to prior work. These claims accurately represent the state of knowledge and establish the specific gap addressed by this study (C25-C26).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Discussion claims address open questions including: MDNs can induce backward locomotion in intact larvae or isolated CNS; noxious stimuli producing multiple backward waves likely continuously activate MDNs; whether MDNs respond to other sensory modalities is unknown; and a forward-inducing command neuron would likely project to posterior abdominal segments where forward waves initiate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C86 are supported by experimental data, while C89-C91 acknowledge limitations and make reasonable predictions. Claim C86 is speculative but clearly presented as such. Claim C91 is a logical inference based on known sites of forward wave initiation. These discussion points appropriately distinguish between demonstrated findings and speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion claims note that backward waves initiate from the thorax, most mechanosensory neurons and motor neurons differ between larva and adult (though some gustatory/stomatogastric sensory neurons persist), highlighting the remarkable nature of MDN persistence across metamorphosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C97-C99 are supported by citations to prior work and provide important context for interpreting the MDN persistence result. The comparison between sensory/motor neuron replacement and MDN persistence emphasizes the significance of the finding.",
+    "result_type": "MINOR"
+  }
+]

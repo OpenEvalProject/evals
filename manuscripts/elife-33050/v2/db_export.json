@@ -1,0 +1,1199 @@
+{
+  "submission": {
+    "id": "b1834a83-0097-4025-859f-e2ce12e82a79",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:44:07.873590Z",
+    "updated_at": "2025-12-01T23:44:07.873590Z"
+  },
+  "content": [
+    {
+      "id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "submission_id": "b1834a83-0097-4025-859f-e2ce12e82a79",
+      "content_type": "manuscript",
+      "content_text": "# Method for identification of condition-associated public antigen receptor sequences\n\n## Authors\n\n- Mikhail V Pogorelyy<sup>1</sup> ([ORCID: 0000-0003-0773-1204](https://orcid.org/0000-0003-0773-1204))\n- Anastasia A Minervina<sup>1</sup>\n- Dmitriy M Chudakov<sup>1</sup> ([ORCID: 0000-0003-0430-790X](https://orcid.org/0000-0003-0430-790X))\n- Ilgar Z Mamedov<sup>1</sup>\n- Yuri B Lebedev<sup>1</sup> \u2020\n- Thierry Mora<sup>5</sup> ([ORCID: 0000-0002-5456-9361](https://orcid.org/0000-0002-5456-9361)) \u2020\n- Aleksandra M Walczak<sup>6</sup> ([ORCID: 0000-0002-2686-5702](https://orcid.org/0000-0002-2686-5702)) \u2020\n\n### Affiliations\n\n1. Department of Genomics of Adaptive Immunity Shemyakin-Ovchinnikov Institute of Bioorganic Chemistry of the Russian Academy of Sciences Moscow Russia\n2. Center for Data-Intensive Biomedicine and Biotechnology Skolkovo Institute of Science and Technology Moscow Russia\n3. Central European Institute of Technology Brno Czech republic\n4. Biological Faculty Moscow State University Moscow Russia\n5. Laboratoire de Physique Statistique CNRS, Sorbonne University, Paris-Diderot University, \u00c9cole Normale Sup\u00e9rieure Paris France\n6. Laboratoire de Physique Theorique CNRS, Sorbonne University, \u00c9cole Normale Sup\u00e9rieure Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nDiverse repertoires of hypervariable immunoglobulin receptors (TCR and BCR) recognize antigens in the adaptive immune system. The development of immunoglobulin receptor repertoire sequencing methods makes it possible to perform repertoire-wide disease association studies of antigen receptor sequences. We developed a statistical framework for associating receptors to disease from only a small cohort of patients, with no need for a control cohort. Our method successfully identifies previously validated Cytomegalovirus and type one diabetes responsive TCR\u03b2 sequences .\n\n## Introduction\n\nT-cell receptors (TCR) and B-cell receptors (BCR) are hypervariable immunoglobulins that play a key role in recognizing antigens in the vertebrate immune system. TCR and BCR are formed in the stochastic process of V(D)J recombination, creating a diverse sequence repertoire. These receptors consist of two hypervariable chains, the $\\alpha$ and $\\beta$ chains in the case of TCR. Progress in high throughput sequencing now allows for deep profiling of TCR$\\alpha$ and TCR$\\beta$ chain repertoires, by establishing a near-complete list of unique receptor chain sequences, or \u2018clonotypes\u2019, present in a sample. Most sequencing data available correspond to TCR$\\beta$ only, but the same principles discussed below apply to TCR$\\alpha$ repertoires, or to paired $\\alpha\u2062\\beta$ repertoires.\n\nComparison of sequenced repertoires has revealed that in any pair of individuals, large numbers of TCR$\\beta$ sequences have the same amino acid sequence (Venturi et al., 2011). Several mechanisms leading to the repertoire overlap have been identified so far. The first mechanism is convergent recombination. Due to biases in V(D)J recombination process, the probability of generation of some TCR$\\beta$ sequences is very high, making them appear in almost every individual multiple times and repeatedly sampled in repertoire profiling experiments (Britanova et al., 2014). This sharing does not result from a common specificity or function of T-cells corresponding to the shared TCR$\\beta$ clonotypes, and may in fact correspond to cells from the naive compartment in both donors (Quigley et al., 2010), or from functionally distinct subsets such as CD4 and CD8 T-cells. The second possible reason for TCR sequence sharing is specific to identical twins, who may share T cell clones as a consequence of cord blood exchange in utero via a shared placenta (Pogorelyy et al., 2017). Note that in that scenario both the $\\beta$ and $\\alpha$ chains are shared together. The third and most interesting mechanism for sharing the sequence of either the $\\beta$ or $\\alpha$ or both chains is convergent selection in response to a common antigen. From functional studies, such as sequencing of MHC-multimer specific T-cells, it is known that the antigen-specific repertoire is often biased, and the same antigen-specific TCR $\\beta$ or $\\alpha$ chain sequences can be found in different individuals (Miles et al., 2011; Dash et al., 2017; Glanville et al., 2017).\n\nReproducibility of a portion of the antigen-specific T-cell repertoire in different patients creates an opportunity for disease association studies using TCR$\\beta$ repertoire datasets (Faham et al., 2017; Emerson et al., 2017). These studies analyse the TCR$\\beta$ sequence overlap in large cohorts of healthy controls and patients to identify shared sequences overrepresented in the patient cohort. Here we propose a novel computational method to identify clonotypes which are likely to be shared because of selection for their response to a common antigen, instead of convergent recombination. Our approach is based on a mechanistic model of TCR recombination and is applicable to small cohorts of patients, without the need for a healthy control cohort.\n\n## Results\n\nAs a proof of concept, we applied our method to two large publicly available TCR$\\beta$ datasets from Cytomegalovirus (CMV)-positive (Emerson et al., 2017) and type one diabetes (T1D) (Seay et al., 2016) patients. In both studies the authors found shared public TCR$\\beta$ clonotypes that are specific to CMV-peptides or self-peptides, respectively. Specificity of these clonotypes was defined using MHC-multimers. We show that TCR$\\beta$ chain sequences functionally associated with CMV and T1D in these studies are identified as outliers by our method.\n\nThe main ingredient of our approach is to estimate the probability of generation of shared clonotypes, and to use this probability to determine the source of sharing (see Figure 1). Due to the limited sampling depth of any TCR sequencing experiment, chances to sample the same TCR$\\beta$ clonotype twice are low, unless this clonotype is easy to generate convergently, with many independent generation events with the same TCR$\\beta$ amino acid sequence in each individual (convergent recombination), or if corresponding T-cell clone underwent clonal expansion, making its concentration in blood high (convergent selection). Thus, we reasoned that convergently selected clonotypes should have a lower generative probability than typical convergently recombined clonotypes. To test this, we estimated the generative probability of the TCR$\\beta$\u2019s Complementarity Determining Region 3 (CDR3) amino-acid sequences that were shared between several patients. Since no algorithm exists that can compute this generative probability directly, our method relies on the random generation and translation of massive numbers of TCR nucleotide sequences using a mechanistic statistical model of V(D)J recombination (Murugan et al., 2012), as can be easily performed for\u00a0example using the IGoR software (Marcou et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33050/elife-33050-fig1-v2.jpg)\n\n**Figure 1.:** (Top left) Sequence overlap between two TCR or BCR repertoires. (Bottom left) There are two major mechanisms for sequence sharing between two repertoires: convergent recombination and convergent selection. Because convergent recombination favors sequences with high generation probabilities, these two classes of sequences have different distributions of the generative probability, $P_{gen}\u2062(\\sigma)$. (Right) We estimate the theoretical $P_{gen}\u2062(\\sigma)$ for each sequence $\\sigma$ and compare it to $P_{data}\u2062(\\sigma)$, which is empirically derived from the sharing pattern of that sequence in the cohort. Comparison of these two values allows us to calculate the analog of a p-value, namely the posterior probability that the sharing pattern is explained by the convergent recombination alone, with no selection for a common antigen.\n\nIn Figure 2A we plot for each clonotype the number of donors sharing that clonotype against its generation probability. Disease-specific TCR$\\beta$ variants validated by functional tests in source studies are circled in red. Note that validated disease-specific TCR$\\beta$ sequences have a much lower generation probability than the typical sequences shared by the same number of donors. We developed a method of axis transformation (see Materials\u00a0and\u00a0methods) to compare the model prediction with data values on the same scale (Figure 2B), so that outliers can be easily identified by their distance to identity line. Our method can be used to narrow down the potential candidates for further experimental validation of responsive receptors. Additional information, like the expansion of the identified TCR$\\beta$ clonotype in the inflammation site, the presence of the same clonotype in the repertoire of activated or memory T-cells, or absence in a cohort of healthy controls, could provide additional evidence for functional association of identified candidates with a given condition.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33050/elife-33050-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0CDR3aa of antigen specific clonotypes (red circles) have less generative probability than other clonotypes shared among the same number of donors. The number of in silico rearrangements obtained for each TCR$\\beta$ sequence in our simulation (which is proportional to generation probability for each clonotype in a given VJ combination $P_{post}\u2062(\\sigma)$), plotted against the number of patients with that TCR$\\beta$ clonotype. (B) Model prediction of generative probabilities agrees well with data. To directly compare $P_{post}\u2062(\\sigma)$ to data, we estimate the empirical probability of occurrence of sequences, $P_{data}\u2062(\\sigma)$, from its sharing pattern across donors (see Materials\u00a0and\u00a0methods). In A. and B. red dots indicate significant results (adjusted $P<0.01$, Holm\u2019s multiple testing correction), while red circles point to the responsive clonotypes identified in the source studies.\n\nOur method also identifies other significant outliers than reported in the source studies (shown in red, and obtained after multiple-test correction \u2013 see Materials and methods), which may have three possible origins. First, they may be associated with the condition, but were missed by the source studies. Second, they may be due to other factors shared by the patients, such as features involved in thymic or peripheral selection, or reactivity to other common conditions than CMV (e.g. influenza infection). Third, they can be the result of intersample contamination. Our approach is able to diagnose the last explanation by estimating the likelihood of sharing at the level of nucleotide sequences (i.e. synonymously), as detailed in the Materials and methods section.\n\n## Discussion\n\nAntigen receptor sequencing currently has little clinical applications. One of the most important ones is diagnostics and tracking of malignant T-cell and B-cell clones in lymphomas, where it allows for directly measuring the abundances of certain clones at different timepoints. Our method allows for a sequence-based theoretical prediction of T-cell abundances at the population level, and for the identification of T-cell clones associated with infectious and autoimmune conditions. Extensive databases of condition-associated clones can provide a means of disease diagnostics and extend the clinical utility of antigen receptor repertoire sequencing technologies.\n\nThis method may also be useful in the analysis of known antigen-specific TCR clonotypes. The typical source of such TCR sequences are MHC-multimer positive cells isolated from one or a few donors (Shugay et al., 2018; Tickotsky et al., 2017). Some of these antigen-specific clonotypes are private, and are hard to find in other patients, providing limited diagnostic value. Our method is able to distinguish these clones from publicly responding clonotypes that are likely to be shared by many patients using only their CDR3 amino acid sequences.\n\nThe cohort size necessary for the identification of antigen-specific clonotypes with our method varies (see \u2018Designing the experiment\u2019 subsection in Materials and methods). It depends on the strength and diversity of the response to the given antigen. CMV and other Herpesviridae (EBV, HSV), are able to cause a persistent infection, and a large fraction of the TCR repertoire of CMV-positive donors are believed to be specific to them\u2014on average, up to 10% of CD8\u00a0+cells are specific to a single CMV epitope in elderly individuals (Khan et al., 2004). However, it was shown that in a human acute infection model of yellow fever vaccination, virus-specific T-cell clones are one of the most abundant in the TCR repertoire and occupy up to 12% of the CD8\u00a0+T cell repertoire. This response is short-lived and contracts significantly a month after immunization (Miller et al., 2008). So the peak of an immune response is the best timepoint to search for antigen-specific TCRs in acute infections using this method. T-cell response to herpesviruses is also not unique in terms of public clonotype involvement\u2014in ankylosing spondylitis (Faham et al., 2017), 30\u201340% of patients share a certain TCR$\\beta$ aminoacid sequence, which is more than the fraction of patients sharing CMV-specific clonotypes that we analysed in this study.\n\nOur approach can be used on other hypervariable receptor chains (TCR$\\alpha$, BCR heavy and light chains), as well as other species (mice, fish, etc.). Both $\\alpha$ and $\\beta$ chains contribute to T-cell receptor specificity. Single-cell or paired sequencing technologies (Zemmour et al., 2018) could identify partner receptor chains for condition-associated TCR $\\alpha$ or $\\beta$ chain sequences identified with our approach. Antigenic peptides recognized by complete T-cell receptors could then be recovered in vitro using yeast-display libraries of peptide-MHC (Gee et al., 2018). As paired sequencing becomes more widespread, our method can be extended to the analysis of full paired TCR by applying the exact same analysis using the joint recombination probability of $\\alpha\u2062\\beta$ clonotypes.\n\nRecent advances in computational methods allow us to extract TCR repertoires from existing RNA-Seq data (Bolotin et al., 2017; Brown et al., 2015). Huge numbers of available RNA-Seq datasets from patients with various conditions can be used for analysis and identification of novel virus, cancer, and self reactive TCR variants using our method. The more immunoglobulin receptors with known specificity are found using this type of association mapping, the more clinically relevant information can be extracted from immunoglobulin repertoire data.\n\n## Materials and methods\n\n### Statistical analysis\n\n#### Problem formulation\n\nOur framework is applicable to analyze the outcome of a next generation sequencing experiment probing the immune receptor repertoires of $n$ individuals with a given condition, for example CMV or Type one diabetes. We denote by $M_{i}$ the number of unique amino acid TCR sequences in patient $i$, $i=1,\u2026,N$. For a given TCR amino acid sequence $\\sigma$, we set $x_{i}=1$ to indicate that $\\sigma$ is present in patient $i$\u2019s repertoire, and $x_{i}=0$ otherwise. For a given shared sequence $\\sigma$, we want to know how likely its sharing pattern is under the null hypothesis of convergent recombination, correcting for the donors\u2019 different sampling depths. In other words, is $\\sigma$ overrepresented in the population of interest? If $\\sigma$ is significantly overrepresented, we also want to quantify the size of this effect.\n\n#### Overview\n\nUnder the null hypothesis, the presence of $\\sigma$ in a certain number of donors is explained by independent convergent V(D)J recombination events in each donor. Given the total number of recombination events that led to the sequenced sample of donor $i$, $N_{i}$, the presence of given amino acid sequence $\\sigma$ in donor is Bernoulli distributed with probability\n\n$$\np_{i}=\u27e8x_{i}\u27e9=(1\u2212P_{post}(\\sigma))^{N_{i}},\n$$\n\n\n\n$$\nP_{post}(\\sigma)=P_{gen}(\\sigma)\\timesQ,\n$$\n\nwhere $P_{post}\u2062(\\sigma)$ is the model probability that a recombined product found in a blood sample has sequence $\\sigma$ under the null hypothesis. It is formed by the product of $P_{gen}\u2062(\\sigma)$, the probability to generate the sequence $\\sigma$, estimated using a V(D)J recombination model (see the following subsection), and $Q$, a constant correction factor accounting for thymic selection (see Estimation of the correction factor $Q$ subsection). The number of independent recombination events $N_{i}$ leading to the observed unique sequences in a sample $i$ is unknown, because of convergent recombination events within the sample, but it can be estimated from the number of unique sequences $M_{i}$, using the model distribution $P_{post}$ (see Estimation of $N_{i}$ subsection).\n\nWe also calculate the posterior distribution of $P_{data}\u2062(\\sigma)$, corresponding to the empirical counterpart of $P_{post}\u2062(\\sigma)$ in the cohort, inferred from the sharing pattern of $\\sigma$ across donors. We use information about the presence of $\\sigma$ in our donors, $x_{1},\u2026,x_{n}$ and the sequencing depth for each donor, $N_{1},\u2026,N_{n}$ (see Estimation of $P_{data}\u2062(\\sigma)$ subsubsection), yielding the posterior density: $\u03c1(P_{data}|x_{1},\u2026,x_{N})$.\n\nFinally, we estimate the probability, given the observations, that the true value of $P_{data}$ is smaller than the theoretical value $P_{post}$ predicted using V(D)J recombination model, analogous to a p-value and used to identify significant effects:\n\n$$\nP(P_{post}>P_{data})=\\int_{0}^{P_{post}}\u03c1(P_{data}|x_{1},\u2026,x_{n})dP_{data}.\n$$\n\nTo estimate the effect size $q\u2062(\\sigma)$ we compare $P_{data}$ to $P_{post}$,\n\n$$\nq\u2062(\\sigma)=\\frac{P_{data}\u2062(\\sigma)}{P_{post}\u2062(\\sigma)}.\n$$\n\n#### Estimation of Pgen, the probability of generation of a TCR CDR3 amino acid sequence\n\nTo procedure outlined above requires to calculate $P_{gen}\u2062(\\sigma)$, the probability to generate a given CDR3 amino acid sequence. Methods exist to calculate the probability of TCR and BCR nucleotide sequences from a given recombination model (Murugan et al., 2012; Marcou et al., 2017), but are impractical to calculate the probability of amino acid sequences, because of the large number of codon combinations that can lead to the same amino acid sequence, $\\prod_{a=1}^{L}n_{codons}\u2062(\\sigma\u2062(a))$, where $L$ is the sequence length, and $n_{codons}\u2062(\\tau)$ the number of codons coding for amino acid $\\tau$. The number is about $1.4\\times10^{7}$ for a typical CDR3 length of 15 amino acid.\n\nInstead, we estimated $P_{gen}\u2062(\\sigma)$ using a simple Monte-Carlo approach. We randomly generated a massive number ($N_{sim}=2\\times10^{9}$) of recombination scenarios according to the validated recombination model (Murugan et al., 2012):\n\n$$\nP_{rearr}^{\\beta}=P(V)P(D,J)P(delV|V)P(insVD)\\timesP(delDl,delDr|D)P(insDJ)P(delJ|J).\n$$\n\nThe resulting sequences were translated, truncated to only keep the CDR3, and counted. $P_{gen}\u2062(\\sigma)$ was approximated by the fraction of events thus generated that led to sequence $\\sigma$. This approximation becomes more accurate as $N_{sim}$ increases, with an error on $P_{gen}\u2062(\\sigma)$ scaling as $(P_{gen}\u2062(\\sigma)/N_{sim})^{1/2}$.\n\n#### Estimation of the correction factor Q\n\nNot all generated sequences pass selection in the thymus. $P_{gen}$ systematically underestimates the frequency of recombination event that eventually make it into the observed repertoire. To correct for this effect, we estimate a correction factor $Q$, as was suggested in (Elhanati et al., 2014):\n\n$$\nP_{post}\u2062(\\sigma)=P_{gen}\u2062(\\sigma)\\timesQ.\n$$\n\nContrary to (Elhanati et al., 2014), which learned a sequence-specific factor for each individual, here we assume that all observed sequences passed thymic selection. $Q$ is a normalization factor accounting for the fact that just a fraction $Q^{-1}$ of sequences pass thymic selection. This factor is determined for each VJ-combination as an offset when plotting $log\u2061P_{gen}$ against $log\u2061P_{data}^{*}$ (see the following subsection for definition of $P_{data}^{*}$), using least squares fitting.\n\n#### Estimation of Pdata\u2062(\u03c3), the probability of sequence occurrence in data\n\nThe variable $x_{i}$ indicates the presence or absence of a given TCR amino acid sequence $\\sigma$ in the $i$th dataset with $N_{i}$ recombination events per donor. We want to estimate $P_{data}\u2062(\\sigma)$, which is a fraction of recombination events leading to $\\sigma$ in the population of interest. According to Bayes\u2019 theorem, for a given $\\sigma$, the probability density function of $P_{data}$ reads:\n\n$$\n\u03c1(P_{data}|x_{1},\u2026,x_{n})=\\frac{P(x_{1},\u2026,x_{n}|P_{data})\u03c1_{prior}(P_{data})}{\\int_{0}^{1}P(x_{1},\u2026,x_{n}|P_{data})\u03c1_{prior}(P_{data})dP_{data}}.\n$$\n\nThe likelihood is given by a product of Bernouilli probabilities:\n\n$$\nP(x_{1},\u2026,x_{n}|P_{data})=\\prodi=1N[1-(1-P_{data})^{N_{i}}]^{x_{i}}[(1-P_{data})^{N_{i}}]^{1-x_{i}},\n$$\n\nand a flat prior $\u03c1_{prior}\u2062(P_{data})=const$ is used.\n\nWe estimate $P_{data}^{*}$ (shown in Figure 2B) as the maximum of the posterior distribution:\n\n$$\nP_{data}^{\u2217}=arg\u2061maxP_{data}\u00a0\u03c1(P_{data}|x_{1},\u2026,x_{n}).\n$$\n\n#### Estimation of Ni, the number of recombination events\n\nThe total number $N_{i}$ of recombination events in $i$th dataset is unknown, but we can count the number of unique CD3 acid sequences $M_{i}$ observed in the sequencing experiment. For a typical TRB experiment, convergent recombination is relatively rare and one could use $N_{i}\u2248M_{i}$ as an approximation. However, for less diverse loci (e.g TRA), or for much higher sequencing depths, one should correct for convergent recombination, as the the observed number of unique aminoacid sequences could be much lower than the actual number of corresponding recombination events.\n\nThe average number of unique sequences resulting from $N_{i}$ recombination events is, in theory:\n\n$$\n\u27e8M_{i}\u27e9=\\sum\\sigma\\inT(1-P_{post}\u2062(\\sigma))^{N_{i}}.\n$$\n\nwhere $T$ is the set of sequences that can pass thymic selection. To estimate that number, we generate a very large number $N_{sim}$ of recombinations, leading to $N_{uni}$ unique CDR3 amino acid sequences for which $P_{gen}$ is estimated as explained above. We take $T$ to be a random subset of unique sequences, $T\u2282{\\sigma_{1},\u2026,\\sigma_{N_{uni}}}$, of size $|T|=N_{uni}/Q$, and we apply Equation 8.\n\nUsing this equation we plot the calibration curve for the TRBV5-1 TRBJ2-6 VJ datasets in Figure 3. For comparison the case of no thymic selection ($Q=1$) is shown in red. The inversion of this curve yields $N_{i}$ as a function of $M_{i}$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33050/elife-33050-fig3-v2.jpg)\n\n**Figure 3.:** Here we plot the fraction of unique amino acid sequences to recombination events against the logarithm of the number of recombination events. The blue line corresponds to the theoretical solution with selection, the red line corresponds to the theoretical solution without selection.\n\n### Pipeline description\n\nIn this section we describe how to apply our algorithm to real data. All the code and data necessary to reproduce our analysis is available online on github (https://github.com/pogorely/vdjRec/; copy archived at https://github.com/elifesciences-publications/vdjRec/).\n\nWe start with annotated TCR datasets (CDR3 amino acid sequence, V-segment, J-segment), one per donor. Such datasets are produced by MiXCR (Bolotin et al., 2015), immunoseq (http://www.adaptivebiotech.com/immunoseq) and most other software for NGS repertoire data preprocessing. Data we used was in immunoseq format, publicly available from https://clients.adaptivebiotech.com/immuneaccess database.\n\nWe proceed as follows:\n\n### Usage example\n\n#### Data sources\n\nData from (Emerson et al., 2017) and (Seay et al., 2016) is publicly available from the immuneaccess database: https://clients.adaptivebiotech.com/immuneaccess. For our analysis, we only considered VJ combinations for which the authors identified condition-associated clonotypes with MHC-multimer proved specificity. CDR3 aminoacid sequences and V and J segment of these TCR clonotypes are given in Table 1.\n\n**Table 1.**\n Published antigen-specific clonotypes used to test the algorithm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>CDR3aa</th>\n      <th>V-segment</th>\n      <th>J-segment</th>\n      <th>Antigen source</th>\n      <th>Ref.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CASSLAPGATNEKLFF</td>\n      <td>TRBV07-06</td>\n      <td>TRBJ1-4</td>\n      <td>CMV</td>\n      <td>(Emerson et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>CASSPGQEAGANVLTF</td>\n      <td>TRBV05-01</td>\n      <td>TRBJ2-6</td>\n      <td>CMV</td>\n      <td>(Emerson et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>CASASANYGYTF</td>\n      <td>TRBV12-3,\u22124</td>\n      <td>TRBJ1-2</td>\n      <td>CMV</td>\n      <td>(Emerson et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>CASSLVGGPSSEAFF</td>\n      <td>TRBV05-01</td>\n      <td>TRBJ1-1</td>\n      <td>self</td>\n      <td>(Seay et al., 2016; Gebe et al., 2009)</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Analysis results\n\nWe applied our pipeline to identify CMV-specific and self-specific TCR sequences listed in Table 1. For our analysis we used only case cohorts, without controls. For each dataset we followed our pipeline described in Pipeline\u00a0description\u00a0subsection. We found that sequences reported in the source studies as being both significantly enriched in the patient cohort, and antigen-specific according to MHC-multimers, were the most significant in 3 out of 4 datasets\u00a0(See\u00a0Table 2). In the remaining TRBV12 dataset, the sequence of interest was the top $40$ most significant out of $27,699$ sequences present in at least two CMV-positive donors.\n\n**Table 2.**\n Output of the algorithm for sequences from Table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>CDR3aa</th>\n      <th>V</th>\n      <th>J</th>\n      <th>Ag.source .</th>\n      <th>p-value rank</th>\n      <th>p-value</th>\n      <th>Effect size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CASSLAPGATNEKLFF</td>\n      <td>07\u201306</td>\n      <td>1\u20134</td>\n      <td>CMV</td>\n      <td>1/1637</td>\n      <td>1.2\u00d710-17</td>\n      <td>8.8</td>\n    </tr>\n    <tr>\n      <td>CASSPGQEAGANVLTF</td>\n      <td>5\u201301</td>\n      <td>2\u20136</td>\n      <td>CMV</td>\n      <td>1/5549</td>\n      <td>1.8\u00d710-17</td>\n      <td>42.3</td>\n    </tr>\n    <tr>\n      <td>CASASANYGYTF</td>\n      <td>12\u20133,\u22124</td>\n      <td>1\u20132</td>\n      <td>CMV</td>\n      <td>40/27669</td>\n      <td>2.5\u00d710-14</td>\n      <td>28.8</td>\n    </tr>\n    <tr>\n      <td>CASSLVGGPSSEAFF</td>\n      <td>5\u201301</td>\n      <td>1\u20131</td>\n      <td>self</td>\n      <td>1/2646</td>\n      <td>9.5\u00d710-19</td>\n      <td>524</td>\n    </tr>\n  </tbody>\n</table>\n\n### Identifying contaminations\n\nIntersample contamination may complicate high-throughput sequencing data analysis in many ways. It could occur both during library preparation or the sequencing process itself (Sinha et al., 2017). Contaminations have the same nucleotide and amino acid sequence in all datasets, and so our method identifies them as outliers, because their sharing cannot be explained by a high recombination probability.\n\nOur method provides a tool to diagnose contamination. Given an amino-acid sequence present in many donors, we measure its theoretical nucleotide diversity using the same simulation approach we used to calculate the generative probability $P_{gen}$ of the amino acid sequence (see Estimation of $P_{gen}$ subsection). If the diversity of the simulated nucleotide sequences is much larger than observed in the data, it is a sign of contamination.\n\nWe applied this approach to the CDR3 sequence CASSLVGGPSSEAFF associated to Type one diabetes, and found 19 recombination events consistent with that amino acid sequence out of our simulated dataset. We found 18 different nucleotide variants out of the 19 total possible. In contrast, in the data this clononotype had the same nucleotide variant in all of the eight donors in which it was present. That variant was absent from the simulated set. A one-sided Fisher exact test gives a $p<10^{-6}$ probability of this happening by chance, indicating contamination as a likely source of sharing.\n\n### Designing the experiment\n\nOur approach also allows us to obtain important estimates for experiment design. A number of variables affect detection of an antigen-specific clone using our approach: the abundance of the clone in the general population (represented by $P_{data}$ in our approach), the cohort size, the sequencing depth $N_{i}$ in each donor in the cohort, and also the effect size. Fixing any two of these variables results in a constraint between the other two and the affects the probability to detect an antigen-specific clonotype, which translates into the statistical power of the method. As an example of such an analysis, we fix the cohort size at 10, 30 or 100 donors (see Figure 4A\u2013C respectively) and the sequencing depth at $N_{i}=1000$ unique clones sequenced per repertoire for a given VJ-combination in each donor in the cohort. We ask how frequently a disease specific clone with $P~_{data}$ abundance in the population and effect size $q=P~_{data}/P_{post}$ is detected with our method. To address this question for each value $P~_{data}$ we perform a simulation: we simulate $x_{1},x_{2},\u2026,x_{n}$ Bernoulli variables, each with a $p_{i}=1-e^{-N_{i}\u2062P~_{data}}$ success probability. For a given value of $P~_{data}$ and $q$ there is a single value of $P_{post}=P~_{data}/q$. Then we calculate\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33050/elife-33050-fig4-v2.jpg)\n\n**Figure 4.:** In panels (A. B. C) we plot the number of simulations (out of 100) where a clone with a given effect size $q$ (line color, see legend) and $P~_{data}$ (x-axis) is found to be significant using our approach, for cohort sizes of 10, 30 and 100 donors respectively. Larger cohort sizes and effect sizes make it possible to resolve clonotypes with lower abundance in the population. In panel (D) we show the effect of sequencing depth for fixed $q=10$: larger numbers of clonotypes sequenced per donor allow us to resolve less frequent clones, since a clone of a given $P~_{data}$ is detected in a larger fraction of donors (panel E).\n\n$$\nP(P_{post}>P_{data})=\\int_{0}^{P_{post}}\u03c1(P_{data}|x_{1},\u2026,x_{n})dP_{data},\n$$\n\nwhere $\u03c1(P_{data}|x_{1},\u2026,x_{n})$ is the posterior density, and check if $P(P_{post}>P_{data})$ is below a significance threshold of 0.0001. Such a low significant threshold in this example is chosen to take into account the multiple testing correction: we assume that about 1000 shared clones would be tested in a such analysis and p\u00a10.01 after multiple testing is chosen as the significance threshold in this study, which gives p\u00a10.0001 before the Bonferroni multiple testing correction. Then we plot the number of simulations in which a significant result was obtained for given effect size $q$ and $P~_{data}$ for the clone of interest and the fraction of donors with this sequence in the simulated cohort (see Figure 4E, blue curve). Unsurprisingly, the effect size plays a role in the probability to detect an antigen specific clone, and the detection is not possible at all if the clone is not shared between several donors in the cohort (in our example this happens for $P~_{data}<10^{-5}$) irrespective to the effect size. Larger cohort sizes can help to resolve clones with lower abundances, but sequencing depth also has a strong effect on the power of the approach. In Figure 4D and E we show simulation results for a fixed $q=10$ and different sequencing depths $N_{i}$ of 100, 1000 or 10000 clones per donor in a given VJ combination. Interestingly, a large sequencing depth (black curve) can lead to a situation when an abundant and frequently generated clone will not be detected by the algorithm, because it will be found in all donors in the cohort. An additional test that checks the predictions by lowering the sequencing depth in silico by downsampling can solve this problem.\n\nAnother complicated question is how $P_{data}$ is related to the number of clones and the fraction of the repertoire involved in the response to the infection in a given donor. If the same antigen-specific clone is present in every donor, $P_{data}$ is close to the average abundance of this clone in the repertoire. However one can imagine an opposite situation where the response is so diverse and private that different clones respond to a given antigen in each donor. It was previously shown that the diversity and publicness of responding T-cell clonotypes varies a lot across antigens (Dash et al., 2017). Our approach is restricted to the identification of public antigen-specific clonotypes, which may not exist for all antigens.\n",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "2f1993a0-3ed0-4012-9ef6-0e989b9436ac",
+      "submission_id": "b1834a83-0097-4025-859f-e2ce12e82a79",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arup K Chakraborty, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33050.014](https://doi.org/10.7554/eLife.33050.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Method for identification of condition-associated public antigen receptor sequences\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor/Senior Editor has drafted this decision to help you prepare a revised submission.\n\nYour manuscript describes a computational pipeline that identifies particular TCR sequences that are over represented in groups of individuals. In effect, it identifies the outlier TCR sequences populations from a computationally determined normal distribution. You go on to show that, based on TCR deep sequencing datasets, this method can retrospectively identify TCR\u03b2 chains that are over represented following CMV infections, and TCR\u03b2 sequences that have reactivity to defined autoantigens in type 1 diabetes. The manuscript is theoretically interesting, useful, timely, and clearly written. However, we have some significant concerns about the general applicability of this tool and its value for prospective, rather than retrospective, studies. These concerns are listed below and need to be addressed in a revision.\n\n1) Methods to identify outlier populations are understood and statistical approaches to achieve this goal are available. Indeed, a related approach to this question is the basis for lymphoid tumor diagnostic methodologies being pursued by several companies. In what ways is your tool different/better compared to the available methods?\n\n2) Your work is based on small cohorts of patients. HCMV can be responsible for a disproportionate number of TCR clonotypes and can have a stable profile over many years, even by the standards of other chronic infections. So, we wonder whether an attractive feature of this tool, which is its ability to glean information from data on small cohorts will carry over beyond the HCMV setting. Would one need a larger cohort for most disease applications? Is there a theoretical way to estimate what part of the repertoire (in terms of unique clones and their frequencies) has to be devoted to an infectious disease in order for it to be resolved in a given cohort size (maybe a scaling rule)?\n\n3) A general concern is whether this tool will have broad impact. You used TCR sequence data sets of HLA-matched patients, which had already been shown to have T cell expansion to a defined peptide/HLA combination. The approach works if one has HLA-matched subjects, because one would assume in general that different HLA alleles will present a different spectrum of peptides, and that TCR Vgene \u2013 HLA interactions impact ligand specificity. Further, a significant element to the approach only works retrospectively; without prior knowledge of the TCR specificity one does not know whether the identified outlier populations are disease-relevant. For example, in Figure 2, there are many outlier sequences (red), which may be noise, may be disease relevant or may be consequences of HLA-biased selection that was not accounted for by the authors computationally-defined normal TCRb distribution. Can the method be useful for prospective studies, or learn new biology in retrospective studies? Perhaps one way to address this question is the following:\n\nIs there any other viral infection for which comparable data is available? For instance, it would be nice if data on viruses like HSV or EBV were available along with data related to acute infection or vaccination (where a method such as this, if applicable, would be incredibly valuable).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Method for identification of condition-associated public antigen receptor sequences\" for further consideration at eLife. Your revised article has been favorably evaluated by Arup Chakraborty (Senior editor), a Reviewing editor, and 1 reviewer.\n\nYou present an important statistical tool for analyzing TCR sequence diversity. We will soon get to a point where entire human TCR repertoires will be sequenced and then the question is how do we understand this data to assess immune health \u2013 your method is an advance that allows us to take steps toward this goal, and is therefore a valuable resource/tool. However, you often confuse TCR with clonotype in the writing of your paper. A TCR \u03b2 chain sequence is not a TCR clonotype. Throughout the manuscript, you describe what you are analyzing as TCR clonotypes when you are actually referring to independent TCR \u03b2 sequences. An independent TCR \u03b1 chain or a TCR \u03b2 chain sequence is NOT a receptor. Once this point is consistently clarified in the manuscript, your paper will be accepted.\n\nReviewer #1:\n\nRe-review:\n\nThe major concern I have with the method, writing and the inability of this platform to provide a framework for prospective studies is the author's miss-statements (I assume they know better) that a TCR \u03b2 chain sequence is not a TCR clonotype. Throughout the manuscript, they authors describe what they are analyzing as TCR clonotypes when they are actually referring to independent TCR \u03b2 sequences. An independent TCRa chain or a TCRb chain sequence is NOT a receptor. The CDR3beta sequence does not equal or even mark a particular T cell clone.\n\nProblem statement that this creates:\n\nExample in the Introduction: the authors argue that there are \"Several mechanisms leading to the repertoire overlap. The first mechanism is convergent recombination[\u2026]\" This first statement or option is a product of sequencing just the TCRb chain, i.e., there are common rearrangements that occur do to V-J or V-D-J rearrangements that have no or few N-region additions. The second and third \"options\" are indeed TCRa + TCRb clonotypes, comparing the first possibility to 2 and 3 is comparing apples to oranges.\n\nDue to biases in V(D)J recombination process, the probability of generation of some receptors is very high, making them appear in almost every individual multiple times and repeatedly sampled in repertoire profiling experiments Britanova et al., (2014). This sharing does not result from a common specificity or function of the shared clonotypes and may in fact correspond to cells from the naive compartment in both donors Quigley et al., (2010), or from functionally distinct subsets such as CD4 and CD8 T-cells.\n\nThe second possible reason for TCR sequence sharing is specific to identical twins, who may share T cell clones as a consequence of cord blood exchange in utero via a shared placenta Pogorelyy et al., (2017). The third and most interesting mechanism for sharing receptor sequences is convergent selection, in response to a common antigen.\n\n- The terminology makes these types of statements nonsensical. Identical TCR clonotypes will absolutely have the identical antigen-specificity.\n\nIssues that miss-representing TCRb sequences for TCR clonotypes in the general approach being promoted:\n\nThe incorrect use of TCR clonotype leads to some particularly difficult to imagine scenarios. For examples, in the reviewer response and within the manuscript, \"our method can be used to narrow down the potential candidates for further experimental validation of responsive receptors.\" (i.e., identify the antigen being recognized). Their idea regarding this approach is to use: \"Functional tests (like cultivation with peptides, or cytokine secretion assays) are the ultimate way to confirm specificity of these predicted clonotypes.\"\n\nWithin the cover letter: \"We also are careful to note that this method should be used to identify antigen-specific candidates that need to be further verified by other methods. Nevertheless, we believe that identifying candidates for these experiments is extremely useful.\"\n\n- However, the sequencing and analyses method of the manuscript does not identify the V \u03b1 chain, with only half of the receptor there is nothing to study further. Thus, there is no method provided that one could identify interesting receptors for prospective studies.\n\nIn summary, this is a method to identify outlier populations, for which retrospective data can be superimposed to create a snapshot of an immune response that has already been described using for example pMHC tetramers or other methods.\n",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "866469f9-64fe-454e-9d3a-d30b901dfb49",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C1",
+      "claim": "TCR and BCR are hypervariable immunoglobulins that play a key role in recognizing antigens in the vertebrate immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "T-cell receptors (TCR) and B-cell receptors (BCR) are hypervariable immunoglobulins that play a key role in recognizing antigens in the vertebrate immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the function of TCR and BCR in the immune system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "56cb6615-5d57-4172-9c71-737aac337e57",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C2",
+      "claim": "TCR and BCR are formed in the stochastic process of V(D)J recombination, creating a diverse sequence repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR and BCR are formed in the stochastic process of V(D)J recombination, creating a diverse sequence repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about how TCR and BCR diversity is generated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "a274243b-22cb-461a-8e2f-0b05a1755c75",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C11",
+      "claim": "Identical twins may share T cell clones as a consequence of cord blood exchange in utero via a shared placenta.",
+      "claim_type": "EXPLICIT",
+      "source": "The second possible reason for TCR sequence sharing is specific to identical twins, who may share T cell clones as a consequence of cord blood exchange in utero via a shared placenta (Pogorelyy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pogorelyy et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "9d60fb8a-3cf2-466a-ba71-744d6aa6ec21",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C17",
+      "claim": "The authors propose a novel computational method to identify clonotypes which are likely to be shared because of selection for their response to a common antigen, instead of convergent recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we propose a novel computational method to identify clonotypes which are likely to be shared because of selection for their response to a common antigen, instead of convergent recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the authors' contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "cd0122f6-ef40-40a3-af49-ee90be204243",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C18",
+      "claim": "The authors' approach is based on a mechanistic model of TCR recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is based on a mechanistic model of TCR recombination and is applicable to small cohorts of patients, without the need for a healthy control cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological basis of the authors' approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "320b7b2b-ef7c-4781-91cf-39caa5df35a2",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C19",
+      "claim": "The authors' approach is applicable to small cohorts of patients, without the need for a healthy control cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is based on a mechanistic model of TCR recombination and is applicable to small cohorts of patients, without the need for a healthy control cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the authors' method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "4bfa6f60-c30e-4931-baaf-2afacc41213c",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C22",
+      "claim": "Specificity of CMV and T1D associated clonotypes was defined using MHC-multimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Specificity of these clonotypes was defined using MHC-multimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental validation method used in the source studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "f7d5d6a8-e4db-409a-9f86-070f855e7231",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C24",
+      "claim": "The main ingredient of the authors' approach is to estimate the probability of generation of shared clonotypes, and to use this probability to determine the source of sharing.",
+      "claim_type": "EXPLICIT",
+      "source": "The main ingredient of our approach is to estimate the probability of generation of shared clonotypes, and to use this probability to determine the source of sharing (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the core principle of the method, with reference to Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "7840224a-8736-4a1b-b2e4-3588a4138c21",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C26",
+      "claim": "Convergently selected clonotypes should have a lower generative probability than typical convergently recombined clonotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we reasoned that convergently selected clonotypes should have a lower generative probability than typical convergently recombined clonotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the principle that convergent recombination favors high-probability sequences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "d2674886-0892-4714-bcf6-5e1fc87408de",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C28",
+      "claim": "No algorithm exists that can compute the generative probability of TCR CDR3 amino acid sequences directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Since no algorithm exists that can compute this generative probability directly, our method relies on the random generation and translation of massive numbers of TCR nucleotide sequences using a mechanistic statistical model of V(D)J recombination (Murugan et al., 2012), as can be easily performed for example using the IGoR software (Marcou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of existing computational methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "69bf1c55-f60a-4491-bccc-ebb38d8d6112",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C29",
+      "claim": "The authors' method relies on the random generation and translation of massive numbers of TCR nucleotide sequences using a mechanistic statistical model of V(D)J recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Since no algorithm exists that can compute this generative probability directly, our method relies on the random generation and translation of massive numbers of TCR nucleotide sequences using a mechanistic statistical model of V(D)J recombination (Murugan et al., 2012), as can be easily performed for example using the IGoR software (Marcou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used, with citations to the recombination model and software.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "5ab0900d-edf3-42d7-8ff3-b3f9c7bac6e8",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C31",
+      "claim": "The authors developed a method of axis transformation to compare the model prediction with data values on the same scale.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a method of axis transformation (see Materials and methods) to compare the model prediction with data values on the same scale (Figure 2B), so that outliers can be easily identified by their distance to identity line.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological development, with reference to Figure 2B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "dc25f986-ed32-49a0-9d27-6f6522958fef",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C32",
+      "claim": "The authors' method can be used to narrow down the potential candidates for further experimental validation of responsive receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method can be used to narrow down the potential candidates for further experimental validation of responsive receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "f25d86db-1517-476a-acbb-43f51ee574d6",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C34",
+      "claim": "The authors' method identifies other significant outliers than reported in the source studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method also identifies other significant outliers than reported in the source studies (shown in red, and obtained after multiple-test correction \u2013 see Materials and methods), which may have three possible origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "54e592e5-edac-442c-b166-e4d04092cc5a",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C35",
+      "claim": "Significant outliers identified by the method may be associated with the condition, but were missed by the source studies.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they may be associated with the condition, but were missed by the source studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the origin of additional outliers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "1161b48a-984f-4e7d-a6f8-9cb9df716dec",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C36",
+      "claim": "Significant outliers identified by the method may be due to other factors shared by the patients, such as features involved in thymic or peripheral selection, or reactivity to other common conditions than CMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, they may be due to other factors shared by the patients, such as features involved in thymic or peripheral selection, or reactivity to other common conditions than CMV (e.g. influenza infection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative explanations for additional outliers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "d6018d1d-034d-4ec8-819d-66571b624ec5",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C37",
+      "claim": "Significant outliers identified by the method can be the result of intersample contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, they can be the result of intersample contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about another possible explanation for outliers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "3c59b807-ebe0-4e5b-9565-eb9c96fe8b86",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C38",
+      "claim": "The authors' approach is able to diagnose intersample contamination by estimating the likelihood of sharing at the level of nucleotide sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is able to diagnose the last explanation by estimating the likelihood of sharing at the level of nucleotide sequences (i.e. synonymously), as detailed in the Materials and methods section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the method for detecting contamination.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "bedea829-9b70-4499-8b9e-10e3ae9651a2",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C39",
+      "claim": "One of the most important clinical applications of antigen receptor sequencing is diagnostics and tracking of malignant T-cell and B-cell clones in lymphomas.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most important ones is diagnostics and tracking of malignant T-cell and B-cell clones in lymphomas, where it allows for directly measuring the abundances of certain clones at different timepoints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about clinical applications of receptor sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "61ca11ca-4f8a-44da-9163-0a2dc436e413",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C40",
+      "claim": "The authors' method allows for a sequence-based theoretical prediction of T-cell abundances at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method allows for a sequence-based theoretical prediction of T-cell abundances at the population level, and for the identification of T-cell clones associated with infectious and autoimmune conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "cf7184ab-7c5b-43e4-a341-82c82f7c88dd",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C41",
+      "claim": "The authors' method allows for the identification of T-cell clones associated with infectious and autoimmune conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method allows for a sequence-based theoretical prediction of T-cell abundances at the population level, and for the identification of T-cell clones associated with infectious and autoimmune conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of the method, demonstrated by the CMV and T1D analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "b212c4c6-cd72-4716-93de-686a3cf683de",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C42",
+      "claim": "Extensive databases of condition-associated clones can provide a means of disease diagnostics and extend the clinical utility of antigen receptor repertoire sequencing technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive databases of condition-associated clones can provide a means of disease diagnostics and extend the clinical utility of antigen receptor repertoire sequencing technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "114d7aa5-815a-476e-a83f-68cf7be98dfb",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C43",
+      "claim": "The typical source of antigen-specific TCR sequences are MHC-multimer positive cells isolated from one or a few donors.",
+      "claim_type": "EXPLICIT",
+      "source": "The typical source of such TCR sequences are MHC-multimer positive cells isolated from one or a few donors (Shugay et al., 2018; Tickotsky et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about how antigen-specific TCRs are identified, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "a244d518-849e-41b2-a37b-1e4f96735d92",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C44",
+      "claim": "Some antigen-specific clonotypes are private, and are hard to find in other patients, providing limited diagnostic value.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these antigen-specific clonotypes are private, and are hard to find in other patients, providing limited diagnostic value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the variability of antigen-specific responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "931a7120-73d1-48c1-b260-a410eafd74e0",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C45",
+      "claim": "The authors' method is able to distinguish private clones from publicly responding clonotypes that are likely to be shared by many patients using only their CDR3 amino acid sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method is able to distinguish these clones from publicly responding clonotypes that are likely to be shared by many patients using only their CDR3 amino acid sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "f118174b-f408-4494-ae0d-9bc1464eef65",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C46",
+      "claim": "The cohort size necessary for the identification of antigen-specific clonotypes with the authors' method varies.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohort size necessary for the identification of antigen-specific clonotypes with our method varies (see 'Designing the experiment' subsection in Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the method's requirements, with reference to further analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "a692abb0-b323-443e-a808-9ff70bb3c967",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C47",
+      "claim": "The cohort size necessary for identification of antigen-specific clonotypes depends on the strength and diversity of the response to the given antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "It depends on the strength and diversity of the response to the given antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about factors affecting the method's requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "0b344057-443d-4c26-bd2c-069d6d276c11",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C48",
+      "claim": "CMV and other Herpesviridae (EBV, HSV) are able to cause a persistent infection.",
+      "claim_type": "EXPLICIT",
+      "source": "CMV and other Herpesviridae (EBV, HSV), are able to cause a persistent infection, and a large fraction of the TCR repertoire of CMV-positive donors are believed to be specific to them\u2014on average, up to 10% of CD8 +cells are specific to a single CMV epitope in elderly individuals (Khan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Herpesviridae infections.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "f9bd7260-8ab1-44ee-bc2d-40ff59aa5c49",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C49",
+      "claim": "A large fraction of the TCR repertoire of CMV-positive donors are believed to be specific to Herpesviridae\u2014on average, up to 10% of CD8+ cells are specific to a single CMV epitope in elderly individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "CMV and other Herpesviridae (EBV, HSV), are able to cause a persistent infection, and a large fraction of the TCR repertoire of CMV-positive donors are believed to be specific to them\u2014on average, up to 10% of CD8 +cells are specific to a single CMV epitope in elderly individuals (Khan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Khan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "cfa059d0-d685-4d9e-8538-309c26df8e99",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C50",
+      "claim": "In a human acute infection model of yellow fever vaccination, virus-specific T-cell clones are one of the most abundant in the TCR repertoire and occupy up to 12% of the CD8+ T cell repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was shown that in a human acute infection model of yellow fever vaccination, virus-specific T-cell clones are one of the most abundant in the TCR repertoire and occupy up to 12% of the CD8 +T cell repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Miller et al., 2008 (referenced in the next sentence).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "81c53c01-a3af-4183-8fd8-5ba774093bd6",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C51",
+      "claim": "The yellow fever vaccine response is short-lived and contracts significantly a month after immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "This response is short-lived and contracts significantly a month after immunization (Miller et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Miller et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "d4c5e978-1ba6-4517-ae70-122116bf91b9",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C52",
+      "claim": "The peak of an immune response is the best timepoint to search for antigen-specific TCRs in acute infections using the authors' method.",
+      "claim_type": "EXPLICIT",
+      "source": "So the peak of an immune response is the best timepoint to search for antigen-specific TCRs in acute infections using this method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that responses contract after the peak.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "451bcb6f-0fe0-4b05-b1a0-8929e129edaf",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C58",
+      "claim": "Antigenic peptides recognized by complete T-cell receptors could be recovered in vitro using yeast-display libraries of peptide-MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigenic peptides recognized by complete T-cell receptors could then be recovered in vitro using yeast-display libraries of peptide-MHC (Gee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about downstream applications, with citation to the yeast-display method.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "76dc375d-b48c-4fb7-a178-a7fea56976f6",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C60",
+      "claim": "Recent advances in computational methods allow extraction of TCR repertoires from existing RNA-Seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in computational methods allow us to extract TCR repertoires from existing RNA-Seq data (Bolotin et al., 2017; Brown et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about computational methods, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "3465cf0a-3114-4c14-ae64-7c465efbe9d3",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C61",
+      "claim": "Huge numbers of available RNA-Seq datasets from patients with various conditions can be used for analysis and identification of novel virus, cancer, and self reactive TCR variants using the authors' method.",
+      "claim_type": "EXPLICIT",
+      "source": "Huge numbers of available RNA-Seq datasets from patients with various conditions can be used for analysis and identification of novel virus, cancer, and self reactive TCR variants using our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the method to existing data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "85a336cf-67ee-477f-ac8b-7a1c27f37ba5",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C62",
+      "claim": "The more immunoglobulin receptors with known specificity are found using association mapping, the more clinically relevant information can be extracted from immunoglobulin repertoire data.",
+      "claim_type": "EXPLICIT",
+      "source": "The more immunoglobulin receptors with known specificity are found using this type of association mapping, the more clinically relevant information can be extracted from immunoglobulin repertoire data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the value of building databases of known receptors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "53f8b556-3968-4a9a-9141-78b453b2b9fe",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C70",
+      "claim": "Not all generated sequences pass selection in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all generated sequences pass selection in the thymus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about thymic selection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "612c2966-5560-469a-8568-6076b19b0ac9",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C72",
+      "claim": "The authors assume that all observed sequences passed thymic selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to (Elhanati et al., 2014), which learned a sequence-specific factor for each individual, here we assume that all observed sequences passed thymic selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption made in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "9e83cd33-c087-4e70-8acc-570f3bc8309e",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C75",
+      "claim": "Data from Emerson et al., 2017 and Seay et al., 2016 is publicly available from the immuneaccess database.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from (Emerson et al., 2017) and (Seay et al., 2016) is publicly available from the immuneaccess database: https://clients.adaptivebiotech.com/immuneaccess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "bd470f84-efc2-4157-b8be-57d3149d714a",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C76",
+      "claim": "For the analysis, the authors only considered VJ combinations for which the source studies identified condition-associated clonotypes with MHC-multimer proved specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "For our analysis, we only considered VJ combinations for which the authors identified condition-associated clonotypes with MHC-multimer proved specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "6d81d765-e0db-421f-8171-bc716e05b3a8",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C77",
+      "claim": "The authors found that sequences reported in the source studies as being both significantly enriched in the patient cohort and antigen-specific according to MHC-multimers were the most significant in 3 out of 4 datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that sequences reported in the source studies as being both significantly enriched in the patient cohort, and antigen-specific according to MHC-multimers, were the most significant in 3 out of 4 datasets (See Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding of the validation analysis, shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "4b615ebc-4802-4615-b934-537192ebd8ad",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C79",
+      "claim": "Intersample contamination may complicate high-throughput sequencing data analysis in many ways.",
+      "claim_type": "EXPLICIT",
+      "source": "Intersample contamination may complicate high-throughput sequencing data analysis in many ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sequencing challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "356bef6b-65f8-452a-ad47-f7d01968c559",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C80",
+      "claim": "Contamination could occur both during library preparation or the sequencing process itself.",
+      "claim_type": "EXPLICIT",
+      "source": "It could occur both during library preparation or the sequencing process itself (Sinha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation to Sinha et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "7dfe3cf4-0060-4560-86b6-b44ecd71312c",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C81",
+      "claim": "Contaminations have the same nucleotide and amino acid sequence in all datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Contaminations have the same nucleotide and amino acid sequence in all datasets, and so our method identifies them as outliers, because their sharing cannot be explained by a high recombination probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the characteristics of contamination.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "e2186861-a556-4d07-8b78-1872d1156c87",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C82",
+      "claim": "The authors' method identifies contaminations as outliers, because their sharing cannot be explained by a high recombination probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Contaminations have the same nucleotide and amino acid sequence in all datasets, and so our method identifies them as outliers, because their sharing cannot be explained by a high recombination probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how the method detects contamination.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "dde60738-24ca-4050-bfdf-25826695bc1a",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C84",
+      "claim": "For the CDR3 sequence CASSLVGGPSSEAFF associated to Type one diabetes, the authors found 19 recombination events consistent with that amino acid sequence out of their simulated dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this approach to the CDR3 sequence CASSLVGGPSSEAFF associated to Type one diabetes, and found 19 recombination events consistent with that amino acid sequence out of our simulated dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the contamination analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "f2cfae53-29b7-4a1c-8e9c-9afbbf675ed4",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C85",
+      "claim": "For the CDR3 sequence CASSLVGGPSSEAFF, the authors found 18 different nucleotide variants out of the 19 total possible in simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 18 different nucleotide variants out of the 19 total possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the contamination analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "5fef299d-7cdd-4bba-9472-60261fc780e0",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C86",
+      "claim": "In the data, the clonotype CASSLVGGPSSEAFF had the same nucleotide variant in all of the eight donors in which it was present.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the data this clononotype had the same nucleotide variant in all of the eight donors in which it was present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "489e4b0b-3298-4e34-b55c-bf8f188863b5",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C87",
+      "claim": "The nucleotide variant of CASSLVGGPSSEAFF found in all eight donors was absent from the simulated set.",
+      "claim_type": "EXPLICIT",
+      "source": "That variant was absent from the simulated set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the contamination analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "4a6b8f6f-72e8-4df2-ab7f-a7265186b3ec",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C90",
+      "claim": "Larger cohort sizes and effect sizes make it possible to resolve clonotypes with lower abundance in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger cohort sizes and effect sizes make it possible to resolve clonotypes with lower abundance in the population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation analysis shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "ff244018-1896-4fa9-8e53-473a05010f23",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C92",
+      "claim": "A large sequencing depth can lead to a situation when an abundant and frequently generated clone will not be detected by the algorithm, because it will be found in all donors in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a large sequencing depth (black curve) can lead to a situation when an abundant and frequently generated clone will not be detected by the algorithm, because it will be found in all donors in the cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "e52d43c9-f8eb-4398-8980-a8c644c88e52",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C93",
+      "claim": "An additional test that checks the predictions by lowering the sequencing depth in silico by downsampling can solve the problem of missing abundant clones found in all donors.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional test that checks the predictions by lowering the sequencing depth in silico by downsampling can solve this problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed solution to a limitation of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "d9ce3d58-f934-4976-8111-a1c66f5213e4",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C95",
+      "claim": "The diversity and publicness of responding T-cell clonotypes varies a lot across antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the diversity and publicness of responding T-cell clonotypes varies a lot across antigens (Dash et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dash et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "f1493ef7-b4e1-4ea2-a2cb-b8a89183cb28",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C96",
+      "claim": "The authors' approach is restricted to the identification of public antigen-specific clonotypes, which may not exist for all antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is restricted to the identification of public antigen-specific clonotypes, which may not exist for all antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "e7a5d0e7-8be0-4bfd-a625-ad8f7359901a",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C97",
+      "claim": "The authors developed a statistical framework for associating receptors to disease from only a small cohort of patients, with no need for a control cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a statistical framework for associating receptors to disease from only a small cohort of patients, with no need for a control cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the main contribution in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "0eab7770-759f-4426-81b1-0190d261d2e6",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C98",
+      "claim": "The authors' method successfully identifies previously validated Cytomegalovirus and type one diabetes responsive TCR\u03b2 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method successfully identifies previously validated Cytomegalovirus and type one diabetes responsive TCR\u03b2 sequences .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract and demonstrated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "21b0bc80-845b-46d2-bd86-66368119f3b1",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C99",
+      "claim": "Convergent recombination and convergent selection are two major mechanisms for sequence sharing between two repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "(Bottom left) There are two major mechanisms for sequence sharing between two repertoires: convergent recombination and convergent selection.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in Figure 1 caption and illustrated in the figure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "6cb6892d-9a74-4177-b54f-24d2ad5aaf4f",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C102",
+      "claim": "CDR3aa of antigen specific clonotypes have less generative probability than other clonotypes shared among the same number of donors.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) CDR3aa of antigen specific clonotypes (red circles) have less generative probability than other clonotypes shared among the same number of donors.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in Figure 2 caption and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "75b19bc3-5a87-445d-855e-a72597cbb795",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "claim_id": "C103",
+      "claim": "Model prediction of generative probabilities agrees well with data.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Model prediction of generative probabilities agrees well with data.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in Figure 2 caption and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel computational method to identify antigen-specific TCR clonotypes shared due to convergent selection rather than convergent recombination. The method is based on a mechanistic model of V(D)J recombination, estimates generation probabilities using Monte Carlo simulation of 2\u00d710^9 recombination events, and can be applied to small patient cohorts without requiring healthy controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C29 and C97 collectively describe the methodological framework. The approach is logically sound: convergently selected clonotypes should have lower generation probabilities than convergently recombined ones (C26), and the Monte Carlo estimation method (C29) addresses the computational intractability of direct calculation (C28). The method's basis in established V(D)J recombination models (Murugan et al., 2012; Marcou et al., 2017) provides theoretical grounding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "14356ab6-1cf4-4427-9ac9-3269f40e451f",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The method successfully validated previously identified CMV and T1D-associated TCR sequences. In 3 out of 4 datasets, MHC-multimer-validated antigen-specific sequences were ranked as most significant by the algorithm. Antigen-specific clonotypes showed lower generation probabilities than other clonotypes shared among the same number of donors, and model predictions agreed well with empirical data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C98 report the key validation result with specific quantitative outcomes (3/4 datasets, Table 2). Claims C102-C103 and Figure 2 demonstrate that the method's predictions align with biological expectations and empirical observations. The use of independently validated sequences (C22) from public databases (C75) provides appropriate ground truth for validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "b73bacc7-229c-4a50-b6a2-d853cbd3f68e",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed an axis transformation method to compare model predictions (P_post) with empirical data (P_data) on the same scale, enabling visual identification of outliers by their distance from the identity line.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 describes the methodological development, and C103 confirms that the transformed visualization shows good agreement between model and data (Figure 2B). This is a straightforward technical contribution that facilitates interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "e995655e-d5a8-4436-9bc4-0a949db5e201",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The method identifies additional significant outliers beyond those reported in source studies and can diagnose intersample contamination by analyzing nucleotide-level sharing patterns. For the T1D-associated sequence CASSLVGGPSSEAFF, all 8 donors shared the identical nucleotide variant, which was absent from 19 simulated variants (18 unique), indicating contamination (p<10^-6 by Fisher's exact test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 describe the discovery of additional outliers with three possible explanations. Claims C79-C87 provide a concrete contamination detection example with statistical support. The nucleotide diversity analysis is logically sound: true convergent recombination should produce diverse nucleotide sequences encoding the same amino acid, while contamination produces identical sequences. The Fisher's exact test provides appropriate statistical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "b1524e63-5f2f-434d-92c8-cb8aa910ec28",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model assumes all observed sequences passed thymic selection and uses a correction factor Q to account for the fraction of generated sequences that pass selection, differing from prior work (Elhanati et al., 2014) that learned sequence-specific selection factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70 and C72 clearly state the modeling assumption. While this is a simplification compared to sequence-specific selection models, it is explicitly acknowledged and represents a reasonable trade-off for the method's intended application to small cohorts without controls. The correction factor Q is estimated empirically from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "3d47e0b4-19fa-457a-bf75-0d69f5d19611",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simulation analyses show that larger cohort sizes and effect sizes enable detection of lower-abundance clonotypes. However, very high sequencing depth can cause abundant, frequently-generated clones to be missed when found in all donors; this can be addressed by in silico downsampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90 and C92 report findings from simulation studies (Figure 4), and C93 proposes a solution. The identification of this limitation is valuable, though the proposed downsampling solution (C93) is speculative and not empirically validated in the manuscript. The simulation framework appears sound for exploring parameter space.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "c2614bc8-899b-4041-8143-0294c5348839",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The required cohort size for identifying antigen-specific clonotypes depends on response strength and diversity. CMV and Herpesviridae can elicit responses comprising up to 10% of CD8+ cells in elderly individuals, while acute yellow fever vaccination responses reach 12% but contract rapidly. The peak immune response is the optimal timepoint for detecting antigen-specific TCRs in acute infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 discuss factors affecting method applicability, supported by citations to Khan et al., 2004 and Miller et al., 2008. The inference about optimal timing (C52) follows logically from the observation that acute responses contract post-peak (C51). These claims appropriately contextualize the method's requirements and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "4bdc3cb1-db5a-4642-84bc-8ab6336aff4a",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The method enables sequence-based prediction of T-cell abundances at the population level, identification of disease-associated clones, and distinction between private and public antigen-specific clonotypes. Extensive databases of condition-associated clones could provide disease diagnostics and extend clinical utility of repertoire sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C42 and C32, C45 describe potential applications and capabilities. While the method demonstrates proof-of-concept for identifying known CMV/T1D sequences, the broader claims about population-level abundance prediction (C40) and distinguishing private from public clonotypes (C45) lack direct empirical validation in the manuscript. The diagnostic database concept (C42) is speculative about future applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "d2139b2b-44f0-48dc-9fde-314eda590f01",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The method is restricted to identifying public antigen-specific clonotypes, which may not exist for all antigens, as the diversity and publicness of T-cell responses varies substantially across antigens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95 (supported by Dash et al., 2017) and C96 clearly acknowledge a fundamental limitation of the approach. This is an important and honest assessment of the method's scope, appropriately grounded in prior literature about antigen response variability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "09862555-dbea-42f6-a782-52292d1023f4",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The method could be extended to identify antigenic peptides via yeast-display libraries, applied to RNA-Seq datasets to discover novel antigen-specific TCRs, and contribute to building databases that increase clinical value of repertoire data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58, C60-C62 describe potential future applications. While C60 correctly notes that TCR extraction from RNA-Seq is possible (Bolotin et al., 2017; Brown et al., 2015), the other claims are speculative. No empirical validation of these extensions is provided, and practical challenges (e.g., RNA-Seq depth limitations, paired chain requirements) are not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    },
+    {
+      "id": "1d5fb85a-8447-4633-9d91-bee714b1ce5b",
+      "content_id": "277fb85c-8de7-479a-bf54-ff677d58f168",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TCR and BCR are hypervariable immunoglobulins formed by V(D)J recombination that recognize antigens. Sequence sharing between repertoires occurs through convergent recombination (favoring high-probability sequences) or convergent selection (antigen-driven). Identical twins may also share clones via cord blood exchange in utero.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C11, and C99 present established background knowledge about adaptive immunity and TCR sharing mechanisms. These are well-supported by the scientific literature and provide necessary context for the study. C11 is appropriately cited to Pogorelyy et al., 2017.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:44:07.873590Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d60fb8a-3cf2-466a-ba71-744d6aa6ec21",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "cd0122f6-ef40-40a3-af49-ee90be204243",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "320b7b2b-ef7c-4781-91cf-39caa5df35a2",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "f7d5d6a8-e4db-409a-9f86-070f855e7231",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "7840224a-8736-4a1b-b2e4-3588a4138c21",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "d2674886-0892-4714-bcf6-5e1fc87408de",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "69bf1c55-f60a-4491-bccc-ebb38d8d6112",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "e7a5d0e7-8be0-4bfd-a625-ad8f7359901a",
+      "result_id": "b6d34ae3-dbd2-4660-afc6-d088daeac62a"
+    },
+    {
+      "claim_id": "4bfa6f60-c30e-4931-baaf-2afacc41213c",
+      "result_id": "14356ab6-1cf4-4427-9ac9-3269f40e451f"
+    },
+    {
+      "claim_id": "9e83cd33-c087-4e70-8acc-570f3bc8309e",
+      "result_id": "14356ab6-1cf4-4427-9ac9-3269f40e451f"
+    },
+    {
+      "claim_id": "bd470f84-efc2-4157-b8be-57d3149d714a",
+      "result_id": "14356ab6-1cf4-4427-9ac9-3269f40e451f"
+    },
+    {
+      "claim_id": "6d81d765-e0db-421f-8171-bc716e05b3a8",
+      "result_id": "14356ab6-1cf4-4427-9ac9-3269f40e451f"
+    },
+    {
+      "claim_id": "0eab7770-759f-4426-81b1-0190d261d2e6",
+      "result_id": "14356ab6-1cf4-4427-9ac9-3269f40e451f"
+    },
+    {
+      "claim_id": "6cb6892d-9a74-4177-b54f-24d2ad5aaf4f",
+      "result_id": "14356ab6-1cf4-4427-9ac9-3269f40e451f"
+    },
+    {
+      "claim_id": "75b19bc3-5a87-445d-855e-a72597cbb795",
+      "result_id": "14356ab6-1cf4-4427-9ac9-3269f40e451f"
+    },
+    {
+      "claim_id": "5ab0900d-edf3-42d7-8ff3-b3f9c7bac6e8",
+      "result_id": "b73bacc7-229c-4a50-b6a2-d853cbd3f68e"
+    },
+    {
+      "claim_id": "75b19bc3-5a87-445d-855e-a72597cbb795",
+      "result_id": "b73bacc7-229c-4a50-b6a2-d853cbd3f68e"
+    },
+    {
+      "claim_id": "f25d86db-1517-476a-acbb-43f51ee574d6",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "54e592e5-edac-442c-b166-e4d04092cc5a",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "1161b48a-984f-4e7d-a6f8-9cb9df716dec",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "d6018d1d-034d-4ec8-819d-66571b624ec5",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "3c59b807-ebe0-4e5b-9565-eb9c96fe8b86",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "4b615ebc-4802-4615-b934-537192ebd8ad",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "356bef6b-65f8-452a-ad47-f7d01968c559",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "7dfe3cf4-0060-4560-86b6-b44ecd71312c",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "e2186861-a556-4d07-8b78-1872d1156c87",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "dde60738-24ca-4050-bfdf-25826695bc1a",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "f2cfae53-29b7-4a1c-8e9c-9afbbf675ed4",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "5fef299d-7cdd-4bba-9472-60261fc780e0",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "489e4b0b-3298-4e34-b55c-bf8f188863b5",
+      "result_id": "e995655e-d5a8-4436-9bc4-0a949db5e201"
+    },
+    {
+      "claim_id": "53f8b556-3968-4a9a-9141-78b453b2b9fe",
+      "result_id": "b1524e63-5f2f-434d-92c8-cb8aa910ec28"
+    },
+    {
+      "claim_id": "612c2966-5560-469a-8568-6076b19b0ac9",
+      "result_id": "b1524e63-5f2f-434d-92c8-cb8aa910ec28"
+    },
+    {
+      "claim_id": "4a6b8f6f-72e8-4df2-ab7f-a7265186b3ec",
+      "result_id": "3d47e0b4-19fa-457a-bf75-0d69f5d19611"
+    },
+    {
+      "claim_id": "ff244018-1896-4fa9-8e53-473a05010f23",
+      "result_id": "3d47e0b4-19fa-457a-bf75-0d69f5d19611"
+    },
+    {
+      "claim_id": "e52d43c9-f8eb-4398-8980-a8c644c88e52",
+      "result_id": "3d47e0b4-19fa-457a-bf75-0d69f5d19611"
+    },
+    {
+      "claim_id": "f118174b-f408-4494-ae0d-9bc1464eef65",
+      "result_id": "c2614bc8-899b-4041-8143-0294c5348839"
+    },
+    {
+      "claim_id": "a692abb0-b323-443e-a808-9ff70bb3c967",
+      "result_id": "c2614bc8-899b-4041-8143-0294c5348839"
+    },
+    {
+      "claim_id": "0b344057-443d-4c26-bd2c-069d6d276c11",
+      "result_id": "c2614bc8-899b-4041-8143-0294c5348839"
+    },
+    {
+      "claim_id": "f9bd7260-8ab1-44ee-bc2d-40ff59aa5c49",
+      "result_id": "c2614bc8-899b-4041-8143-0294c5348839"
+    },
+    {
+      "claim_id": "cfa059d0-d685-4d9e-8538-309c26df8e99",
+      "result_id": "c2614bc8-899b-4041-8143-0294c5348839"
+    },
+    {
+      "claim_id": "81c53c01-a3af-4183-8fd8-5ba774093bd6",
+      "result_id": "c2614bc8-899b-4041-8143-0294c5348839"
+    },
+    {
+      "claim_id": "d4c5e978-1ba6-4517-ae70-122116bf91b9",
+      "result_id": "c2614bc8-899b-4041-8143-0294c5348839"
+    },
+    {
+      "claim_id": "61ca11ca-4f8a-44da-9163-0a2dc436e413",
+      "result_id": "4bdc3cb1-db5a-4642-84bc-8ab6336aff4a"
+    },
+    {
+      "claim_id": "cf7184ab-7c5b-43e4-a341-82c82f7c88dd",
+      "result_id": "4bdc3cb1-db5a-4642-84bc-8ab6336aff4a"
+    },
+    {
+      "claim_id": "b212c4c6-cd72-4716-93de-686a3cf683de",
+      "result_id": "4bdc3cb1-db5a-4642-84bc-8ab6336aff4a"
+    },
+    {
+      "claim_id": "dc25f986-ed32-49a0-9d27-6f6522958fef",
+      "result_id": "4bdc3cb1-db5a-4642-84bc-8ab6336aff4a"
+    },
+    {
+      "claim_id": "931a7120-73d1-48c1-b260-a410eafd74e0",
+      "result_id": "4bdc3cb1-db5a-4642-84bc-8ab6336aff4a"
+    },
+    {
+      "claim_id": "d9ce3d58-f934-4976-8111-a1c66f5213e4",
+      "result_id": "d2139b2b-44f0-48dc-9fde-314eda590f01"
+    },
+    {
+      "claim_id": "f1493ef7-b4e1-4ea2-a2cb-b8a89183cb28",
+      "result_id": "d2139b2b-44f0-48dc-9fde-314eda590f01"
+    },
+    {
+      "claim_id": "451bcb6f-0fe0-4b05-b1a0-8929e129edaf",
+      "result_id": "09862555-dbea-42f6-a782-52292d1023f4"
+    },
+    {
+      "claim_id": "76dc375d-b48c-4fb7-a178-a7fea56976f6",
+      "result_id": "09862555-dbea-42f6-a782-52292d1023f4"
+    },
+    {
+      "claim_id": "3465cf0a-3114-4c14-ae64-7c465efbe9d3",
+      "result_id": "09862555-dbea-42f6-a782-52292d1023f4"
+    },
+    {
+      "claim_id": "85a336cf-67ee-477f-ac8b-7a1c27f37ba5",
+      "result_id": "09862555-dbea-42f6-a782-52292d1023f4"
+    },
+    {
+      "claim_id": "866469f9-64fe-454e-9d3a-d30b901dfb49",
+      "result_id": "1d5fb85a-8447-4633-9d91-bee714b1ce5b"
+    },
+    {
+      "claim_id": "56cb6615-5d57-4172-9c71-737aac337e57",
+      "result_id": "1d5fb85a-8447-4633-9d91-bee714b1ce5b"
+    },
+    {
+      "claim_id": "a274243b-22cb-461a-8e2f-0b05a1755c75",
+      "result_id": "1d5fb85a-8447-4633-9d91-bee714b1ce5b"
+    },
+    {
+      "claim_id": "21b0bc80-845b-46d2-bd86-66368119f3b1",
+      "result_id": "1d5fb85a-8447-4633-9d91-bee714b1ce5b"
+    }
+  ],
+  "comparisons": []
+}

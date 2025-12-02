@@ -1,0 +1,466 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "LPS treatment of primary mouse BMDM for 1 hr induces 597 genes >1.5 fold at FDR < 0.1, of which 201 genes are repressed >1.3 fold by Dex co-treatment. These Dex-repressed genes are predominantly involved in cytokine signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by RNA-seq data with appropriate statistical thresholds (FDR < 0.1) and fold-change cutoffs. The GO analysis provides functional validation of the gene set. The experimental design with vehicle, LPS, and LPS+Dex conditions at 1 hr is appropriate for acute transcriptional responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "GR and p65 ChIP-seq under LPS+Dex conditions reveals 9987 GR peaks and 7052 p65 peaks, with 4589 peaks (46% of GR, 65% of p65) overlapping. GR-unique peaks show enrichment for NR3C, ETS, and AP1 motifs, while p65-unique peaks show NF-kB/Rela, ETS, and AP1 motifs. Overlapping peaks show enrichment for all four motif families (NR3C, ETS, NF-kB, AP1) near peak summits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 are supported by ChIP-seq data from two biological replicates with appropriate quality metrics (Figure 1\u2014figure supplements 1-2). Motif analysis using MEME-ChIP with reported E-values provides statistical support for motif enrichment. The extensive overlap between GR and p65 cistromes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Comparison of GR binding in Dex-only versus LPS+Dex conditions shows that 3377 GR peaks form in Dex-treated BMDM, with 3165 (94%) also present in LPS+Dex conditions and 6817 peaks gained uniquely in LPS+Dex. Dex-unique and shared peaks show ETS and NR3C motif enrichment, while LPS+Dex-unique peaks show NF-kB and AP1 motif enrichment without NR3C enrichment, indicating that inflammatory signaling drives GR recruitment to these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 are supported by comparative ChIP-seq analysis with clear motif enrichment patterns. The inference in C18 is reasonable given the motif data, though it remains correlative. The dramatic shift in motif composition between conditions (NR3C-enriched vs NF-kB-enriched) provides strong evidence for signal-dependent GR recruitment mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "GR and p65 binding sites are predominantly located in distal intergenic (~39-47%) and intronic (~40%) regions genome-wide, similar to previous reports. Among the 201 Dex-repressed genes, GR peaks show enrichment in distal intergenic regions (~52%) and depletion in introns (24% vs 40% genome-wide), which is not due to shorter gene or intron lengths in this subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by genomic location analysis using ChIPpeakAnno and comparison to published cistromes. The control analysis in C23 (Figure 1\u2014figure supplement 1C) appropriately addresses potential confounding by gene/intron length. The shift in genomic distribution at Dex-repressed genes suggests functional significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Among the 201 Dex-repressed genes, 81% of GR binding sites are unique to LPS+Dex conditions (vs 68% genome-wide). At these genes, GR binding co-localizes with p65 only under LPS+Dex conditions, not LPS or Dex alone. LPS-dependent p65 binding persists in the presence of Dex, with comparable total p65 peak numbers between LPS and LPS+Dex conditions (~2/3 overlap), and 80% of p65 LPS+Dex peaks near Dex-repressed genes overlap LPS-induced peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by ChIP-seq overlap analysis and read density profiles (Figure 1E-F, Figure 1\u2014figure supplement 2). The persistence of p65 binding in the presence of Dex is important for ruling out simple displacement mechanisms. The enrichment of LPS+Dex-unique GR sites at repressed genes (81% vs 68%) is statistically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Of the 201 genes repressed by Dex in LPS-activated macrophages, only 56 are repressed \u22651.3 fold by Dex alone, indicating that NF-kB activation is required for GR recruitment to most Dex-sensitive genes. These results support a tethering model where p65 is a central component of GR repression complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by RNA-seq comparison between Dex effects in LPS-activated vs unstimulated conditions. The inference in C31-C32 is reasonable given the extensive co-localization data and the requirement for LPS for most gene repression. However, the tethering model remains correlative without direct protein-protein interaction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Pol 2 ChIP-seq reveals two classes of LPS-induced Dex-repressed genes: paused genes (Tnf, Hilpda, Btg2) show Pol 2 accumulation at TSS in untreated cells, redistribution into gene bodies upon LPS treatment, and retention near TSS under LPS+Dex conditions; non-paused genes (Il1a, Il1b, Cd83) show no Pol 2 in untreated cells, dramatic uniform increase throughout genes with LPS, and near-complete abrogation by Dex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by Pol 2 ChIP-seq data (Figure 2A) showing distinct patterns for paused vs non-paused genes. C33 appropriately cites prior work. The visual patterns in read density profiles clearly support the described dynamics. This establishes two mechanistically distinct gene classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Genome-wide pausing index (PI) analysis of LPS-induced Dex-repressed genes identifies 61 paused transcripts (PI >1) and 82 non-paused transcripts (PI <0.8). Paused genes show Pol 2 promoter peaks in untreated cells, additional loading and gene body entry with LPS, and Dex-induced retention near TSS. Non-paused genes show little basal Pol 2, dramatic LPS-induced loading throughout genes, and Dex-mediated abrogation of this loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by systematic PI calculation and Pol 2 ChIP-seq heat maps/read density plots (Figure 2B-D). The PI calculation method is appropriately cited (Nechaev et al., 2010) and thresholds (PI >1 for paused, <0.8 for non-paused) are reasonable. The genome-wide analysis extends the individual gene observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "NELF-E ChIP-seq shows that NELF-E occupancy closely matches Pol 2 distribution in untreated BMDM, with striking accumulation downstream of TSS in paused genes and little to no NELF-E in non-paused genes. NELF-E shows highly gene class-specific occupancy at paused (PI >1) promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by NELF-E ChIP-seq data (Figure 2C-D). C47 appropriately cites established knowledge about NELF function. The correlation between NELF-E occupancy and Pol 2 pausing provides mechanistic insight. The gene class-specificity is clearly demonstrated in heat maps and read density plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Following LPS stimulation, NELF-E is broadly evicted from promoters of LPS-induced genes with little occupancy at 1 hr, but this dismissal is transient as NELF reloads onto promoters reaching widespread occupancy by 3 hr despite continued LPS exposure. This dynamic is observed at specific paused genes (Tnf, Hilpda, Btg2) showing NELF-E at TSS in resting cells, dissociation at 1 hr LPS, and re-establishment by 3 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by NELF-E ChIP-seq time course data (Figure 3A). C51 appropriately cites prior work. The transient NELF dismissal and reloading is a novel genome-wide observation with important implications for inflammatory gene regulation. The time course with continued LPS exposure is well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Among LPS-induced Dex-sensitive genes, 86.3% of paused genes (PI >1) display promoter-associated NELF-E peaks vs 31.7% of non-paused genes (PI <0.8). Similar distributions are found among Dex-insensitive genes (81.1% paused, 44.2% non-paused), indicating that GR does not preferentially repress one gene class over the other, and high TSS-associated NELF is a common feature of paused genes irrespective of GC sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by NELF-E ChIP-seq peak analysis (Figure 3B, Figure 3\u2014figure supplement 1B). The comparison between Dex-sensitive and Dex-insensitive genes is important for establishing that NELF occupancy is a general feature of paused genes rather than specific to GC-repressed genes. The inferences in C60-C61 are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Under LPS+Dex conditions, the distribution of NELF-E peaks among paused (83.6%) and non-paused (33.2%) repressed genes is indistinguishable from resting BMDM (86.3% and 31.7%). Striking promoter-proximal NELF peaks are detected in paused genes (Tnf, Myc, Errfi1, Ccl2) but not non-paused genes (Il1b, Lif) under LPS+Dex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by NELF-E ChIP-seq analysis comparing untreated and LPS+Dex conditions (Figure 3B). The persistence of NELF at paused genes under repressing conditions is key evidence for NELF involvement in GR-mediated repression. The gene-specific examples provide clear visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NELF-B conditional knockout mice (LysM-Cre:Nelfb fl/fl) show dramatic reduction in NELF-B mRNA and protein in BMDM, and near-complete loss of NELF-E protein due to complex instability. RNA-seq shows no significant differences in baseline expression of LPS-induced Dex-repressed genes, and LPS induces similar levels of candidate genes (Tnf, Myc, Errfi1, Ccl2, Il1b, Lif) in WT and NELF-B KO BMDM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by RT-qPCR, western blot, and RNA-seq data (Figure 3C, Figure 3\u2014figure supplement 1C). C66 appropriately cites established knowledge about NELF complex stability. The genetic model is well-validated, and the lack of baseline differences is important for interpreting repression phenotypes. Sample sizes (n=5 for C65, n=3 for RNA-seq) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In NELF-B KO BMDM, Dex-mediated repression is significantly attenuated for all paused genes tested (Tnf, Myc, Errfi1, Ccl2) but not for non-paused genes (Il1b, Lif), strongly suggesting that NELF-mediated block in productive elongation is an integral part of GR-mediated repression of paused genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by RT-qPCR data comparing Dex repression in WT vs NELF-B KO BMDM (Figure 3C). The gene class-specific requirement for NELF is compelling evidence for distinct repression mechanisms. Statistical significance is indicated. The inference in C72 is well-supported by the genetic loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Genome-wide RNA-seq analysis shows that of 201 Dex-repressed genes in WT BMDM, 23 are upregulated in LPS+Dex-treated NELF-B KO BMDM, with 21 having PI >0.8. In contrast, only 9 of 396 Dex-insensitive genes are upregulated in NELF-B KO (7 with PI >0.8), indicating that NELF ablation disproportionally affects paused LPS-induced Dex-repressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by RNA-seq analysis comparing WT and NELF-B KO BMDM (Figure 3D, Figure 3\u2014figure supplement 1D). The enrichment of paused genes (21/23 = 91%) among derepressed genes vs the overall distribution provides strong statistical support. The comparison to Dex-insensitive genes is an important control. The inference in C77 is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "GR inhibits LPS-induced CDK9 recruitment irrespective of gene class (both paused and non-paused), suggesting that NELF retention rather than CDK9 occupancy serves as the defining class-specific feature of glucocorticoid repression of paused genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by CDK9 ChIP-qPCR data (Figure 3E) and appropriately cite prior work (Luecke and Yamamoto, 2005). The lack of gene class-specificity for CDK9 loss contrasts with the class-specific NELF retention, supporting the inference in C79. However, the mechanism linking GR to NELF retention remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Paused genes (Tnf, Ccl2) contain high basal levels of H4PanAc and H4K5Ac at TSS and kB-binding sites that are unaffected by LPS or LPS+Dex treatment. In contrast, non-paused genes (Il1b, Il1a) show significant LPS-induced increases in H4Ac levels that are fully attenuated by Dex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by histone acetylation ChIP-qPCR data (Figure 4A) with appropriate statistical testing (n\u22653, p-values indicated). The differential histone acetylation dynamics between gene classes provide mechanistic insight into distinct activation and repression mechanisms. The constitutive acetylation at paused genes is consistent with their open chromatin state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "BRD4 inhibitor I-BET attenuates LPS-mediated induction of non-paused genes (Il1b, Il1a) in a dose-dependent manner while paused genes (Tnf, Ccl2) are unaffected. BRD4 ChIP shows LPS-dependent recruitment to non-paused gene promoters that is attenuated by Dex, while paused genes show constitutive BRD4 at TSS that is unchanged by LPS or Dex. BRD4 occupancy patterns resemble H4Ac profiles, suggesting that BRD4 loss may underlie GR repression of non-paused genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by I-BET inhibitor experiments and BRD4 ChIP-qPCR data (Figure 4B-C) with appropriate sample sizes and statistics. The gene class-specific BRD4 dependency is compelling. C90 is a reasonable inference from the correlation between BRD4 and H4Ac patterns. C91 is appropriately tentative ('may underlie') given the correlative nature of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "BRD4 ChIP-seq shows ~3700 peaks genome-wide in untreated BMDM, with a 1.8-fold increase (4345 new peaks) in response to LPS. BRD4 loading density at Dex-sensitive genes increases dramatically with LPS and is nearly abrogated by Dex, particularly at promoters and BRD4:p65 shared binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by BRD4 ChIP-seq data (Figure 4\u2014figure supplement 1A-B) with appropriate quality metrics. The genome-wide analysis extends the candidate gene observations. The coordinated loss of BRD4 at Dex-sensitive genes under repressing conditions is consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "At non-paused genes Il1b and Il1a, specific enhancers and TSS acquire strong LPS-induced BRD4 binding that is significantly attenuated by Dex concomitantly with GR loading. Paused genes Ccl2 and Tnf exhibit modest basal BRD4 occupancy that is potentiated by LPS but only minimally affected by Dex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by BRD4 ChIP-seq read density profiles (Figure 4D) showing gene-specific patterns. The spatial correspondence between GR binding and BRD4 loss at specific enhancers provides strong evidence for direct antagonism. The differential Dex effects between gene classes are clearly visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In paused Dex-sensitive genes, 45% of BRD4 sites in LPS-treated cells are pre-bound in untreated cells and 55% are LPS-induced. In non-paused genes, only 38% are pre-occupied while 62% are LPS-dependent. This suggests that non-paused gene activation is more dependent on BRD4 recruitment, and therefore BRD4 dismissal may have greater impact on this gene class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by BRD4 ChIP-seq peak overlap analysis (Figure 4E). The differential dependence on LPS-induced BRD4 recruitment between gene classes is consistent with the functional data. C101 is a reasonable inference from the combined functional and occupancy data. C102 is appropriately speculative ('may have').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "BRD4 interacts with Mediator complex subunits MED1 and MED12, which are recruited to TSS and p65 enhancers during LPS-induced activation of pro-inflammatory genes. BRD4 and MED1 occupy similar genomic sites and stabilize each other's occupancy at enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 appropriately cite established knowledge from the literature (Jang et al., 2005; Lov\u00e9n et al., 2013; Hargreaves et al., 2009; Brown et al., 2014). These claims provide necessary background for interpreting the authors' Mediator data. The citations are appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MED1 and MED12 ChIP-qPCR shows recruitment to TSS and p65 sites in response to LPS treatment, and this recruitment is attenuated by Dex. By inhibiting BRD4 binding at non-paused genes, GR destabilizes MED1 and MED12 occupancy, ultimately affecting Pol 2 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by MED1 and MED12 ChIP-qPCR data (Figure 4F) with appropriate sample sizes and statistics. The inference in C108 is reasonable given the coordinated loss of BRD4, Mediator, and Pol2 at non-paused genes, though the causal chain remains correlative. The mechanism is consistent with known BRD4-Mediator interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "MED1 and MED12 loss in response to Dex occurs at paused genes as well as non-paused genes, suggesting that GR may antagonize Mediator complex binding irrespective of its effects on BRD4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by MED1 and MED12 ChIP-qPCR data (Figure 4F). The observation that Mediator loss occurs at both gene classes while BRD4 loss is class-specific suggests multiple mechanisms. C110 is appropriately speculative ('may antagonize') given the correlative nature of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "p300 interacts with and acetylates p65, contributing to activation of NF-kB-dependent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 appropriately cites established knowledge from the literature (Huang et al., 2009; Nagarajan et al., 2014; Roe et al., 2015). This provides necessary background for interpreting the authors' p300 data. The citations are appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "p300 ChIP-qPCR shows LPS-dependent recruitment to TSS and p65-binding sites of non-paused genes (Il1a, Il1b) that is blocked by Dex. At paused genes, p300 occupancy varies (LPS-potentiated but Dex-insensitive at Tnf, constitutive at Ccl2). Loss of p300 from GC-sensitive genes does not reflect simple GR-mediated titration, as p300 occupancy at Dex-insensitive genes (Cxcl10, Cd40, Tnfsf9, Trim13) is fully resistant to Dex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by p300 ChIP-qPCR data (Figure 5A-B) with appropriate sample sizes and statistics. The gene class-specific p300 recruitment and Dex sensitivity parallels the H4Ac and BRD4 patterns. The control analysis in C114-C115 is important for ruling out non-specific sequestration mechanisms. The inference in C114 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "p300 inhibitor C646 attenuates LPS-mediated induction of non-paused genes (Il1b, Il1a) in a dose-dependent manner, while paused genes (Tnf, Ccl2) are unaffected, consistent with a selective requirement for p300 at non-paused genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by RT-qPCR data from C646 inhibitor experiments (Figure 5C) with appropriate sample sizes and statistics. The gene class-specific p300 dependency mirrors the BRD4 dependency, supporting a coordinated mechanism. The inference in C118 is well-justified by the differential inhibitor effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Overexpression of wild-type p300, but not its catalytically inactive \u0394HAT mutant, dramatically and specifically reverses GR-mediated repression of non-paused genes in RAW264.7 cells. This suggests that GR represses non-paused genes by precluding p300 recruitment, H3/H4 acetylation, and BRD4-Mediator complex assembly, ultimately blocking Pol 2 loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by gene expression data from p300 overexpression experiments (Figure 5D) with appropriate sample sizes. The requirement for catalytic activity (WT rescues, \u0394HAT does not) is strong evidence for p300 HAT function. The inference in C121 is well-supported by the rescue experiments combined with the coordinated loss of p300, acetylation, BRD4, Mediator, and Pol2 observed in earlier experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Tethering to p65 is a prevalent mechanism of repression among p65/GR co-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by the extensive co-localization of GR and p65 at NF-kB sites under repressing conditions (Claims C4-C32), the enrichment of NF-kB motifs in LPS+Dex-unique GR peaks, and the requirement for LPS for most gene repression. However, the tethering model remains correlative without direct protein-protein interaction data in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "NELF plays a widespread yet gene class-specific role in glucocorticoid-mediated repression of early elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by NELF ChIP-seq showing class-specific occupancy (Claims C47-C64) and genetic deletion experiments showing NELF requirement specifically at paused genes (Claims C65-C77). The genome-wide analysis demonstrates that this is a widespread mechanism affecting multiple genes, not just a few examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "At non-paused genes, GR precludes the ordered assembly of HATs, BRD4, and Mediator complex, ultimately blocking Pol 2 recruitment and transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by ChIP data showing coordinated loss of p300, H4Ac, BRD4, Mediator, and Pol2 at non-paused genes (Claims C80-C121), and rescue experiments showing that p300 overexpression reverses repression. The 'ordered assembly' is inferred from the known functional relationships between these factors, though the temporal sequence is not directly demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

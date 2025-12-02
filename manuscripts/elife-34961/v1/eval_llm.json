@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C152"
+    ],
+    "result": "The manuscript provides extensive background on MHC class I biology, including structure, assembly, peptide loading, quality control mechanisms, and disease associations. These claims establish the scientific context for the study, describing the peptide loading complex (PLC), TAP transporter specificity, tapasin function, and the known polymorphism and disease associations of HLA alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established knowledge in the field, supported by appropriate citations to prior literature (C2, C4, C5, C6, C8, C9, C14, C15, C16, C17, C24, C25, C26, C28, C30, C31, C46). The background information is accurate and provides necessary context for understanding the experimental work. Claims about MHC structure, assembly pathways, and quality control are foundational immunology concepts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The anti-Bw6 antibody used in the study is specific for HLA-B alleles with the Bw6 epitope, shows no binding to HLA-A or HLA-Bw4 allotypes, but recognizes some HLA-C alleles that have a sequence motif similar to the Bw6 motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are directly supported by Luminex bead binding data shown in Figure 1\u2014figure supplement 2 (C32, C33) and sequence analysis in Figure 1\u2014figure supplement 3 (C34). The antibody specificity characterization is critical for interpreting the expression measurements and the data clearly demonstrate the binding patterns described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Among HLA-Bw6 allotypes in lymphocytes, HLA-B*08:01 shows the highest cell surface expression while HLA-B*07:02 and HLA-B*35:01 show the lowest expression. These differences are statistically significant in CD4+ and CD8+ T cells and NK cells when measured with anti-Bw6 antibody, but no significant differences are observed with the pan-HLA class I antibody W6/32.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are well-supported by quantitative flow cytometry data presented in Figure 1, with appropriate statistical analysis (one-way ANOVA). The use of ABC (antibody binding capacity) values normalized to calibration beads provides quantitative measurements. The finding that W6/32 shows no allele-dependent differences (C41) while anti-Bw6 does is important for interpretation, though it raises questions about whether total HLA class I expression differs or whether this reflects antibody binding differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Both HLA-B*07:02 and HLA-B*35:01, the lowest expressing allotypes, prefer peptides with proline at position 2 (P2P), which are disfavored for TAP transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the peptide binding motifs shown in Figure 1\u2014figure supplement 1 and is consistent with established knowledge about TAP transport specificity (C22, C23). This observation is central to the manuscript's hypothesis linking peptide supply limitations to expression differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C114"
+    ],
+    "result": "HLA-B alleles do not show significant differences in mRNA expression levels across different allotypes in lymphocyte subsets, as measured by RT-PCR and RNA-Seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by RT-PCR data (Figure 1\u2014figure supplement 4, C47), RNA-Seq data from African and Thai cohorts (Figure 1\u2014figure supplement 5, C48), and citation to prior work (Ramsuran et al., 2017, C46, C31). The consistency across multiple methods and cohorts strengthens this conclusion. This is a critical control showing that expression differences are not due to transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The lower surface expression of HLA-B*35:01 is unlikely to be explained by increased ER retention, as this allotype exits the ER rapidly and intracellular HLA-Bw6 protein levels are not higher in B*08:01 donors compared to B*35:01 or B*07:02 donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C49 is supported by citation to prior work (Thammavongsa et al., 2009) showing rapid ER exit for B*35:01. C50 is a logical inference from C49. C51 is supported by unpublished flow cytometry data measuring intracellular vs. surface staining ratios. Together these claims rule out ER retention as an explanation for low surface expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "HLA-B*08:01 displays significantly higher cell surface stability (longer half-life) compared to other HLA-Bw6 allotypes in lymphocytes, with the most significant differences observed between B*08:01 and B*35:01, particularly in CD8+ T cells. This higher stability explains the higher steady-state surface expression of B*08:01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by half-life measurements using brefeldin A treatment shown in Figure 2. Statistical analysis by one-way ANOVA and Welch's t-test demonstrates significant differences (C53, C54, C55). The correlation between half-life and expression levels (C56) is a reasonable inference, though causality is not definitively proven. The methodology is appropriate for measuring surface stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Expression and stability patterns observed in lymphocytes are reversed in monocytes: B*08:01 shows lower expression than B*35:01 and B*07:02 in monocytes, with significant induction of B*35:01 and B*07:02 in monocytes relative to lymphocytes. B*08:01 half-life is significantly reduced in monocytes compared to lymphocytes, while no significant half-life differences exist between allotypes in monocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by data in Figure 3, showing cell-type-specific expression patterns (C57, C58, C59) and half-life measurements (C60, C61). The reversal of expression hierarchy between cell types is a striking and novel finding. Statistical significance is demonstrated by one-way ANOVA. This represents a major discovery about cell-type-dependent HLA-B expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Monocytes have more intracellular HLA class I and more absolute tapasin than lymphocytes, but lower tapasin/W6/32 ratios, suggesting that tapasin is more limiting in monocytes relative to the amount of HLA class I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C63 is supported by flow cytometry data in Figure 4A. C64 is supported by citation (Fischbach et al., 2015). C65 is supported by data in Figure 4\u2014figure supplement 1. C66 is supported by data in Figure 4B. C67 is a reasonable inference from C66. The measurements are appropriate and the conclusion about relative tapasin limitation is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The lower tapasin/W6/32 ratios in monocytes could at least in part explain the reduced half-life of HLA-B*08:01 in monocytes compared to lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculation (C68) linking the tapasin limitation observation to the B*08:01 stability phenotype. While the logic is reasonable given that B*08:01 is tapasin-dependent (Rizvi et al., 2014), this is a proposed mechanism without direct experimental validation. Additional experiments would be needed to test this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Intracellular HLA-Bw6 shows significantly greater co-localization with AP-1 than with calreticulin or LAMP-1 in both monocytes and lymphocytes, with no strong differences in Bw6/AP-1 co-localization between B*08:01 and B*07:02 donors. Both allotypes exit the ER as evidenced by low Bw6/calreticulin co-localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by imaging cytometry data in Figure 4C-F and supplementary figures. The quantification of co-localization using Bright Detail Similarity is appropriate. The finding of preferential AP-1 co-localization is novel and suggests a specific intracellular trafficking compartment. The lack of allotype-specific differences in AP-1 co-localization (C70, C71) is also informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The AP-1+ compartment in monocytes could provide an alternative peptide source for B7 supertype members, while the smaller intracellular HLA class I pool in lymphocytes may render them more reliant on TAP-dependent ER peptides, making TAP/HLA mismatches more problematic in lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims (C73, C75, C76) proposing mechanisms to explain the cell-type-specific expression patterns. While the logic is reasonable and consistent with the data, these are hypotheses rather than demonstrated facts. C74 is better supported as an inference from Figure 4A data. Direct evidence for peptide sources in the AP-1+ compartment is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "HLA-B*35:01 and HLA-B*07:02 show greater receptivity to exogenous peptides than HLA-B*08:01 in lymphocytes (particularly B cells and CD4+ T cells), with peptide loading occurring at the cell surface without requiring internalization. This high peptide receptivity and low surface expression are consistent with limiting intracellular peptide pools and escape from PLC quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C77 is supported by HC10 staining data in Figure 5 showing increased binding after peptide incubation. C78 is supported by unpublished temperature-dependence data. C79 and C81 are inferences connecting the peptide receptivity to the proposed model of suboptimal assembly. The HC10 assay is an established method for detecting peptide-deficient MHC. The interpretation is reasonable though C81 remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Monocyte HLA-B are not receptive to exogenous peptides for any of the tested allotypes (B*08:01, B*35:01, B*07:02), indicating that lymphocytes and monocytes maintain cell surface HLA-B via different mechanisms that differently influence peptide receptivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C82 and C83 are supported by HC10 staining data in Figure 5 showing no increase in HC10 binding after peptide incubation in monocytes. C84 and C85 are reasonable summary inferences. The contrast between lymphocyte and monocyte peptide receptivity is striking and supports the model of different assembly mechanisms in different cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The anti-Bw4 antibody is specific for HLA-B alleles within the Bw4 group and does not bind HLA-Bw6 or HLA-C alleles, but recognizes five HLA-A alleles (A*23:01, A*24:02, A*24:03, A*25:01, A*32:01) that have a sequence motif similar to Bw4. The antibody shows considerable binding variability among Bw4 alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by Luminex bead binding data in Figure 6\u2014figure supplement 1 (C86, C87, C89) and sequence analysis in Figure 6\u2014figure supplement 2 (C88). The characterization of antibody specificity and binding variability is important for interpreting the Bw4 expression measurements and is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Significant differences in HLA-Bw4 ABC values are measured among allotypes in all lymphocyte types, with B*57:01 and B*27:05 showing higher values than other allotypes. Cell-derived Bw4 ABC values correlate positively with Luminex bead Bw4/W6/32 ratios in all lymphocytes, indicating that antibody binding preferences contribute to observed differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C90 and C91 are supported by data in Figure 6\u2014figure supplement 4. C92 is supported by Luminex data in Figure 6\u2014figure supplement 1. C93 shows significant positive correlations in Figure 6, column 1. C94 is a reasonable inference from the correlation analysis. The approach of correlating bead binding with cell-derived values is appropriate for accounting for antibody binding differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "HLA-B*51:01 shows lower cell surface expression than expected based on anti-Bw4 binding preferences, with ABC values falling below the regression line in correlation plots. No significant half-life differences are measured for B*51:01 compared to other Bw4 alleles. As a B7 supertype member with P2P preference and high tapasin-dependence, B*51:01 may face an intracellular assembly bottleneck due to limiting peptide supply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C95 and C96 are supported by comparison of data in Figure 6\u2014figure supplement 1 and Figure 6\u2014figure supplement 4, and correlation plots in Figure 6, column 1. C97 is supported by half-life data in Figure 6, column 3. C98 is speculation but reasonable given the known properties of B*51:01. C99 is a summary of the Bw4 findings. The observation that B*51:01 expression is lower than predicted by antibody binding is important and suggests a true expression difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In monocytes, B*51:01 becomes strongly induced compared to lymphocytes while B*44:02 is reduced, with W6/32 expression patterns mirroring anti-Bw4 patterns. Correlation between Luminex binding and cell-derived values is significant in monocytes but not lymphocytes for B*51:01, indicating that the cellular assembly landscape of monocytes favors B*51:01 expression while lymphocytes disfavor it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by data in Figure 7. C100 and C101 are supported by ABC measurements in Figure 7A. C102 and C103 are supported by comparison of anti-Bw4 and W6/32 patterns in Figure 7B. C104 is supported by normalized data in Figure 7C. C105 is supported by correlation analysis in Figure 7D and E. C106 is a reasonable summary inference. This extends the cell-type-specific expression findings to additional allotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "HLA-B*08:01 has unique peptide-binding characteristics including a P5 anchor, restrictive P3 and Pc-1 residues, altered peptide-binding groove geometry with F36 substituting for E45, and ionic interactions between D9 and peptide P5. These features result in fully extended and deeply buried peptides compared to other HLA-B allotypes, likely underlying the high cell surface stability of B*08:01 in lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C107 and C108 are supported by Shannon entropy plots in Figure 8 and peptide motifs in Figure 1\u2014figure supplement 1. C109, C110, and C111 are supported by crystal structure analysis in Figure 8\u2014figure supplement 1. C112 is supported by citation to Maenaka et al., 2000. C113 is a reasonable inference connecting structural features to stability. The structural analysis provides a molecular explanation for the functional observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C132"
+    ],
+    "result": "Both allele-intrinsic and cell-intrinsic factors influence HLA-B cell surface expression, with no global high or low expressing allotype\u2014rather, variations are cell-specific. There are allele and cell-type-dependent thresholds for passing ER quality control. Mismatch with TAP specificity and tapasin-independent assembly are potential determinants of low expression in lymphocytes, highlighting the cellular assembly landscape as a key determinant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are summary claims synthesizing the major findings of the study. C115, C116, C117, and C132 are well-supported by the collective data showing cell-type-specific expression patterns (Figures 1-7, 9). C118 and C119 are reasonable inferences from the data, though they remain somewhat speculative mechanistic proposals. The overall conclusions are justified by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C130",
+      "C131"
+    ],
+    "result": "The manuscript proposes mechanistic models for the observed expression differences: tapasin-dependent allotypes like B*08:01 require high-affinity peptides to exit the ER, while tapasin-independent allotypes like B*35:01 and B*07:02 can escape with lower-affinity peptides, leading to enhanced peptide receptivity. In monocytes, the AP-1+ compartment may provide alternative peptide sources, while reduced tapasin/HLA ratios create competition that affects tapasin-dependent allotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are largely speculative mechanistic proposals (C121, C122, C123, C124, C128, C131) based on the experimental observations and known properties of the allotypes. C120 is supported by citations. C125 and C126 are reasonable inferences from the data. While the proposed mechanisms are logical and consistent with the data, they lack direct experimental validation and represent hypotheses for future testing rather than demonstrated facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The manuscript discusses prior studies reporting expression differences among HLA-B allotypes and peptidome diversity. Shannon entropy analysis of mass spectrometry-derived peptides suggests higher P2 diversity for B*57:01 compared to B*35:01, but similar length preferences. The findings suggest no simple relationship between expression levels and peptidome diversity, with intracellular assembly variations potentially inducing different peptidome diversities for the same allotype in different cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C133, C135, C136, and C137 are supported by citations to prior work (Boudreau et al., 2016; Chappell et al., 2015). C134 is a reasonable inference based on the antibody binding data. C138 is supported by Shannon entropy plots in Figure 8 and Figure 8\u2014figure supplement 2. C139 is supported by unpublished data. C140 and C141 are reasonable inferences, though they remain somewhat speculative. The discussion appropriately contextualizes the findings within prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The manuscript discusses disease implications, noting that HLA-B*08:01 is associated with autoimmune diseases including polymyositis, potentially related to its high expression and stability in lymphocytes. For HIV, HLA-B alleles influence disease outcomes, with high expression in both APC and CD4+ T cells potentially favoring effective immune responses. The B*57:01 advantage and B*35:01 disadvantage in HIV may relate in part to their expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C142, C143, C145, C146, and C147 are supported by citations to prior work establishing disease associations. C144, C148, C149, C150, and C151 are speculative proposals connecting the expression findings to disease outcomes. While these are reasonable hypotheses, they lack direct experimental validation in the context of disease. These represent interesting implications for future investigation rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The abstract summarizes the main findings: HLA-B*08:01 has high expression and half-life in lymphocytes, while three B7 supertype allotypes with P2P preferences show low expression in lymphocytes. These lymphocyte-specific patterns are reversed or altered in monocytes, which have larger intracellular HLA class I pools. Allele and cell-dependent variations in antigen acquisition pathways influence HLA-B surface expression, half-lives, and receptivity to exogenous antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims accurately summarize the major findings of the study. C153 is supported by Figures 1 and 2. C154 is supported by Figure 1. C155 and C156 are supported by Figures 3 and 4. C157 is a reasonable summary of the overall conclusions. The abstract appropriately represents the key findings without overstating the conclusions.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58",
+      "C73",
+      "C74",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Elastin-like peptides undergo liquid-liquid phase separation upon self-assembly, forming a disordered aggregate stabilized by the hydrophobic effect. The aggregate lacks a water-excluding hydrophobic core, maintains significant backbone hydration, and contains transient \u03b2-turns. Individual chains approach a maximally-disordered, melt-like state consistent with the Flory theorem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C81 collectively demonstrate the structural basis of elastin self-assembly through extensive MD simulations (>200 \u00b5s). The data show tripling of non-polar contacts (C6, C73), preservation of local \u03b2-turn structure (C33-C35), maintained backbone hydration (C43-C47), and chain dimensions approaching ideal random coil behavior (C51-C53, C55, C74). Multiple independent lines of computational evidence converge on a consistent structural model validated against experimental data (C44-C45, C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C61"
+    ],
+    "result": "The simulation results are consistent with multiple independent experimental observations on elastin, including optical isotropy, low backbone carbonyl order parameter, random coil chemical shifts, high chain mobility, and NMR data on phase-separated elastin-like peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 cite established experimental findings that corroborate the high conformational disorder observed in simulations. C61 provides detailed quantitative comparison with recent NMR data showing agreement on disorder, \u03b2-turn populations (16-20% vs 20-40%), and hydration. The convergence of simulation and experimental evidence strengthens the structural model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C74"
+    ],
+    "result": "The aggregated elastin-like peptide chains approach the ideal \u03b8-solvent state predicted by the Flory theorem, with scaling exponent \u03b1=0.46 compared to \u03b1=0.54 for the ideal random coil model and \u03b1=0.28 for the collapsed single chain in poor solvent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 demonstrate rigorous application of polymer theory to analyze chain dimensions. The scaling analysis (C51-C53) shows aggregated chains approach maximal disorder (\u03b1=0.46 vs ideal 0.54), while single chains in water behave as polymers in poor solvent (\u03b1=0.28 vs theoretical 0.33). C56 provides important caveat that polypeptides cannot form true solvent-excluding melts due to hydrogen bonding requirements. The analysis is mathematically sound and properly contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Chain dynamics differ dramatically between solution and aggregate states, with the lifetime of the open state increasing >50-fold upon aggregation (21\u00b11 ns vs 1140\u00b130 ns) and the central residue exhibiting anomalous diffusion with exponent \u03b1=0.58.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are directly supported by kinetic analysis (Figure 6) and mean-square displacement calculations (Figure 6\u2014figure supplement 1). The anomalous diffusion exponent (0.58) is consistent with polymer melt behavior and similar to values reported for polyethylene melts. The dramatic slowing of chain dynamics upon aggregation is well-documented and explains the long equilibration times required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C77"
+    ],
+    "result": "Both the hydrophobic effect and conformational entropy contribute to elastic recoil of elastin, reconciling the random coil and liquid drop models of elasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C77 represent important mechanistic inferences, but the simulations do not directly measure elastic recoil or the thermodynamic contributions to elasticity. While the data show increased hydrophobic burial (C6, C40) and approach to maximal disorder (C74), the relative contributions of these effects to elastic recoil would require additional simulations of stretched states or free energy calculations. The conclusion is plausible but not definitively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Despite 80 years of study, the molecular basis of elastin self-assembly and structure remain controversial, with proposed models ranging from highly-ordered \u03b2-spirals to maximally-disordered random networks, and questions about the validity of thermoelasticity measurements in alcohol solvents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 accurately summarize the historical context and controversies in the field, supported by appropriate citations. The description of competing models (C16-C17, C20-C21) and methodological concerns (C18-C19) establishes the motivation for the current study. The statement that the \u03b2-spiral model is unstable (C21) while \u03b2-turns are observed spectroscopically (C22) sets up the reconciliation achieved in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The simulations used the CHARMM 22* force field with charmm-modified TIP3P water, previously validated for intrinsically disordered proteins, with >200 \u00b5s accumulated simulation time and 50% (2.5 \u00b5s) equilibration period for the multi-chain system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 describe the computational methodology. C85 cites validation work showing the force field produces ensembles consistent with SAXS and NMR. C86-C89 document the extensive sampling required, with equilibration analysis shown in Figure 1\u2014figure supplement 1. The long equilibration time (C88) is explained by slow chain expansion (C89). Additional validation with TIP4P-D water model (Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 4) strengthens confidence in results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Elastin's high proline and glycine content enables it to maintain disorder and hydration upon aggregation while avoiding both the self-aggregation typical of most IDPs and the amyloid formation typical of misfolded proteins, a property shared with other elastomeric proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 place elastin in the broader context of protein disorder and aggregation. The distinction from typical IDPs (C62) and amyloid-forming proteins (C64, C66) is well-supported by citations. The mechanistic role of proline and glycine (C67-C68) is based on established amino acid properties and previous work (C69). The generalization to other elastomeric proteins (C69, C82) is supported by sequence comparisons and cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "This study provides the first atomistic description of a melt-like, disordered protein state and the first detailed model of a protein coacervate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 assert the novelty of the work. These claims are supported by the unprecedented scale of the simulations (>200 \u00b5s, 27-chain aggregate) and the lack of prior atomistic simulations of elastin-like peptide aggregates of this size. The characterization as a 'liquid state' is justified by the scaling analysis (C51-C53) and density profiles (C48-C49) showing bulk-like properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The mechanism of self-assembly\u2014replacement of intramolecular interactions by intermolecular ones\u2014is likely relevant to other elastomeric proteins and disordered proteins undergoing single-component phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 extrapolate the findings to other systems. While C82 is supported by sequence similarities (high proline/glycine content) cited in the text, C84 explicitly acknowledges this is speculation. The generalization is plausible given the fundamental nature of the mechanism (C83), but would require additional simulations or experiments on other systems to confirm. The authors appropriately qualify this as 'likely to apply' rather than definitively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Elastin is a structural protein that imparts elasticity to tissues through its hydrophobic domains, which undergo temperature-dependent coacervation and are responsible for self-assembly and elastic recoil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C14 provide established background on elastin biology and function, supported by appropriate citations. These claims accurately describe elastin's tissue distribution (C1), durability (C8-C9), domain structure (C10-C11), and coacervation behavior (C12-C13). The information is well-established in the field and properly contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Microsecond-timescale simulations are necessary for converged sampling of disordered elastin-like peptides, and peptides based on hydrophobic domains can coacervate without cross-linking domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 justify the computational approach and model system. C24 cites previous work by the authors establishing the need for microsecond sampling. C25-C26 cite experimental work showing that hydrophobic domains alone are sufficient for coacervation, validating the choice to omit cross-linking domains for computational tractability. This is appropriate simplification for studying the phase separation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The biological function of elastin is incompatible with a unique, ordered structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is a key inference supported by the simulation data showing high disorder (C27-C28, C79) and the known requirement for reversible extension and recoil. The claim is consistent with experimental evidence (C29-C32) and the fundamental requirement for conformational entropy in elastic recoil. However, this is an inference about function based on structure rather than direct measurement of mechanical properties.",
+    "result_type": "MAJOR"
+  }
+]

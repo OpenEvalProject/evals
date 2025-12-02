@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Single and multiple CTA codons reduce YFP expression during leucine starvation by 3-6 fold without causing significant mRNA decay or unambiguous polysome shifts. Truncated YFP fragments consistent with abortive termination were detected, but mRNA levels remained largely stable (<2 fold decrease despite ~6 fold protein decrease).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 provide converging experimental evidence from fluorescence measurements (C19-C21), polysome profiling (C22-C23), Western blotting (C24), and qRT-PCR (C26-C28). The data consistently show protein reduction without proportional mRNA decay, supporting abortive termination without extensive mRNA cleavage. Multiple independent methods strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational modeling predicts distinct behaviors for three kinetic models (TJ, SAT, CSAT) when varying initiation rate, number of stall sites, and distance between stall sites. The CSAT model shows intermediate behavior between TJ and SAT models, with collision-dependent effects on protein synthesis rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe simulation predictions from well-defined computational models (Figure 2). The predictions are internally consistent and follow logically from the model assumptions. However, the validity of these predictions depends on the appropriateness of the model assumptions and parameter choices, which are tested experimentally in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Experimental measurements show that the effect of a single CTA codon on YFP synthesis decreases with lower initiation rates. Both TJ and CSAT models predict this trend, while the SAT model predicts initiation-rate independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by experimental data in Figure 4 showing clear trends with initiation rate variation. The comparison between experimental data and model predictions is quantitative (RMS error reported). This result discriminates between SAT and the other two models, though it cannot distinguish TJ from CSAT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "When testing multiple CTA variants, the TJ model systematically overestimates YFP synthesis rate (12 of 13 variants), the SAT model systematically underestimates (all 13 variants), while the CSAT model provides the best fit with approximately half the average error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by comprehensive experimental data from 13 multiple-CTA variants (Figure 5). The systematic biases in TJ and SAT models are clear, and the CSAT model's superior performance is quantified by RMS error. This is a key discriminating result among the three models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Two CTA codons separated by less than a ribosome footprint (d < 10 codons) result in lower protein synthesis than codons separated by several footprints (d > 50 codons). The CSAT model provides a better overall fit than TJ or SAT models for this distance-dependent effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by experimental data in Figure 6 showing distance-dependent effects. The CSAT model's better fit is consistent with its collision-based mechanism. However, the number of data points is limited compared to other experiments, and the differences between models are less pronounced than in the multiple-stall-site experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Statistical analysis of all 94 yfp mutants shows that the TJ model systematically overestimates (p<10\u207b\u00b9\u2075), SAT systematically underestimates (p<10\u207b\u2078), while CSAT shows no systematic bias (p>0.05). Akaike Information Criterion analysis strongly favors CSAT (weight >0.999).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide rigorous statistical support for the CSAT model using appropriate tests (Student's t-test, AIC). The large sample size (N=94) and highly significant p-values strengthen the conclusions. However, the analysis assumes independent and normally distributed residual errors, which may not be fully justified given potential correlations between variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C63"
+    ],
+    "result": "The CSAT model predicts that protein synthesis from mRNAs without stall sites remains stable when abortive termination rate increases, while non-selective SAT models predict decreased synthesis. The CSAT model also shows robustness to varying abortive termination rates at single stall sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 and C63 are supported by simulation results in Figure 7A. These predictions demonstrate important properties of the CSAT model (selectivity and robustness) that distinguish it from SAT models. However, these are computational predictions that are not directly validated experimentally in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C55",
+      "C58",
+      "C59"
+    ],
+    "result": "The CSAT model predicts ribosome queues of only a few ribosomes at stall sites ~200 codons from the start codon, consistent with previous ribosome profiling measurements. The TJ model predicts much longer queues (~20 ribosomes) inconsistent with in vivo observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by simulation results (Figure 7B) and citations to previous ribosome profiling studies. The CSAT model's consistency with observed short queues is an important validation. However, the cited ribosome profiling data (C55, C58) are from previous studies, not new experimental validation in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C48"
+    ],
+    "result": "The measurements are quantitatively inconsistent with both the traffic jam model and simple abortive termination model, but support a collision-stimulated abortive termination (CSAT) model where trailing ribosome collisions cause abortive termination of stalled ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 represent the main conclusions of the paper, supported by the comprehensive experimental and modeling analysis (C48 and all previous results). The conclusion is well-supported by systematic testing of three models against 94 variants with strong statistical evidence. However, the conclusion is limited to the specific context of amino acid starvation in E. coli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "In the CSAT model, ribosome collisions selectively stimulate abortive termination without fine-tuning of kinetic parameters. The selectivity arises naturally from the collision requirement, and robustness arises because collision frequency limits the actual abortive termination rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76-C77 describe emergent properties of the CSAT model supported by the computational analysis. These properties arise from the model structure and are demonstrated by simulations (Figure 7). The claims are logical inferences from the model behavior, though they represent interpretations rather than direct experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C67",
+      "C68"
+    ],
+    "result": "Ribosome collisions serve as a robust timer for translational quality control pathways to recognize stalled ribosomes. The collision frequency provides selectivity toward stalled ribosomes and buffers against cell-to-cell variation in quality control factor concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C67-C68 represent mechanistic proposals based on the CSAT model's properties. These are well-reasoned inferences from the modeling results (particularly Figure 7A) and provide a conceptual framework for understanding quality control. However, these are interpretive claims not directly tested by experiments in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70"
+    ],
+    "result": "Ribosome collisions could stimulate abortive termination through multiple mechanisms, including spontaneous drop-off or activation of quality control pathways (tmRNA, ArfA). This mechanism might extend to eukaryotic quality control pathways and could have evolved to minimize ribosome idling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66, C69-C70 are explicitly speculative (using 'could' and 'might') about molecular mechanisms and evolutionary implications. While these speculations are reasonable given the results, they are not tested in this study. The claims appropriately cite relevant literature but represent hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Previous studies suggested the traffic jam model underlies decreased protein expression when stall sites are >100 codons from the start codon, but collision-stimulated abortive termination is a plausible alternative mechanism that better explains the observed short ribosome queues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 appropriately cite previous work and propose CSAT as an alternative explanation. The proposal is supported by this study's findings that both TJ and CSAT predict initiation rate dependence, but only CSAT predicts short queues consistent with observations. This represents a reinterpretation of prior results in light of new evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C52",
+      "C62"
+    ],
+    "result": "Only a small fraction of ribosomes prematurely terminate from mRNAs without stall sites, and abortive termination frequency is robust to overexpression of rescue factors. Simple kinetic partitioning has been proposed as a mechanism for ribosome rescue factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C52, C62 cite previous studies to establish context for the modeling work. These are background claims supported by appropriate citations. They provide the empirical constraints that motivated the CSAT model's design (selectivity and robustness properties).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C25",
+      "C28"
+    ],
+    "result": "Background context on ribosome elongation rates, stalling mechanisms, and existing models (traffic jam and abortive termination) from prior literature. Previous work by the authors showed that certain codons decrease protein expression during amino acid starvation through both traffic jams and abortive termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C18, C23, C25, C28 establish the scientific context through citations to prior literature, including the authors' previous work. These claims are appropriately supported by citations and provide the foundation for the current study. They represent established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

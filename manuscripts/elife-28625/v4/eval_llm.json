@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Neural cells were successfully isolated from C. elegans L1 larvae using chemomechanical disruption followed by FACS. The FACS profile showed 22% GFP-positive cells, consistent with the expected proportion of neural cells (222/558 in L1 worms). The isolated neural cells were enriched for the neural marker unc-64 and depleted for the muscle marker myo-3, confirming successful neural cell isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide converging evidence for successful neural cell isolation. The FACS data (C28), consistency with expected neural cell proportions (C29), and qRT-PCR validation showing enrichment of neural markers and depletion of non-neural markers (C30-C31) collectively support the methodology. The approach is cited from prior work (C27), adding credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The SAILOR software identified 7361 A-to-I editing sites in the wild-type neural transcriptome, mapping to 549 genes including 104 novel targets. SAILOR demonstrated <1% false discovery rate based on 86/86 sites confirmed by Sanger sequencing, representing a significant improvement over the previous algorithm (6% FDR). The software is publicly available, requires minimal input files, and is packaged for ease of use across multiple platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32-C40 provide strong computational and validation evidence for the neural editome. The high validation rate (86/86 sites, C37) supports the claimed <1% FDR (C38). Claims C108-C113 describe the software implementation. However, the validation was limited to 7 genes with >10% editing, which may not represent the full dataset. The 87 additional sites detected by Sanger but missed by SAILOR (C40, C110) suggest some false negatives, though this is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The vast majority (92.4%) of the 7361 neural editing sites occur in non-coding regions (introns and UTRs), with only 83 sites (~1%) in coding regions. This distribution is consistent with previous whole-worm studies. The authors conclude that re-coding editing events are not enriched in the C. elegans nervous system and that the role of ADARs is to fine-tune gene expression rather than generate proteomic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 present clear data on editing site distribution. The conclusion (C45-C46) that C. elegans ADARs do not primarily generate proteomic diversity is well-supported by the low percentage of coding region editing and consistency with prior whole-worm studies. This contrasts with mammalian systems where recoding is more prevalent, making this a significant finding for understanding species-specific ADAR functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Differential expression analysis identified 169 genes misregulated in adr-2(-) neural cells (76 upregulated, 93 downregulated). Only 4 of these 169 genes were also identified as editing targets, suggesting ADR-2 regulates most genes through editing-independent mechanisms. Gene expression changes were tissue-specific and not observed in whole L1 worm analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 present clear RNA-seq differential expression results. The inference that ADR-2 regulates genes independently of editing (C50) is reasonable given only 4/169 differentially expressed genes are edited. Claims C51-C52 about tissue-specificity are supported by qRT-PCR comparisons between neural cells and whole worms. The statistical analysis (DESeq) is appropriate for RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Through systematic filtering of edited genes by GO terms (locomotion/chemotaxis), ADR-1 binding, and differential expression, the authors identified clec-41 as a candidate target. clec-41 showed >20-fold enrichment in ADR-1 immunoprecipitations and was the only gene among 28 ADR-1-bound, locomotion/chemotaxis-related edited genes that was also differentially expressed in adr-2(-) neural cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe a logical filtering strategy to identify candidate genes. The ADR-1 RNA-IP data (C59-C60) provides experimental validation. The convergence of multiple criteria (editing, ADR-1 binding, differential expression, relevant GO terms) strengthens the identification of clec-41. However, the reliance on unpublished ADR-1 RIP-Seq data (C57) is a limitation for independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "clec-41 exhibits extensive A-to-I editing in its 3' UTR (40 sites) in wild-type neural cells, which is absent in adr-2(-) cells. ADR-1 regulates editing at 12 of these sites in a neural-specific manner. Both adr-1 and adr-2 loss result in three-fold reduction of clec-41 expression in neural cells, but not in whole L1 worms, indicating both ADARs are required for proper neural-specific clec-41 expression and editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 provide comprehensive Sanger sequencing and qRT-PCR data demonstrating clec-41 editing and expression regulation. The neural-specificity is well-documented by comparing neural cells to whole worms (C64, C69). The requirement for both ADR-1 and ADR-2 (C70) is supported by parallel phenotypes. The data are internally consistent and validated across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Transgenic expression of clec-41 in neural cells of adr-2(-) worms significantly rescued chemotaxis defects to benzaldehyde and trimethylthiazole, restoring chemotaxis indices to wild-type levels. Expression of only the clec-41 3' UTR or expression in non-neural tissue did not rescue the phenotype, demonstrating that neural-specific CLEC-41 protein expression is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 present a well-controlled rescue experiment. The specificity controls (3' UTR only, non-neural expression) strengthen the conclusion that neural CLEC-41 protein is required. Statistical significance is reported (C77) and the rescue does not exceed wild-type levels (C78), suggesting physiological restoration rather than overexpression artifact. This is the key functional validation linking clec-41 to the chemotaxis phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A deaminase-deficient ADR-2 mutant (G184R) that binds clec-41 normally but cannot edit RNA shows absent editing at all 40 clec-41 sites, three-fold reduced clec-41 expression in neural cells, and impaired chemotaxis similar to adr-2(-) worms. This demonstrates that deamination activity is required for proper clec-41 expression and chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 provide strong genetic evidence that editing activity, not just RNA binding, is required. The G184R mutant is well-characterized (conserved residue near catalytic domain, C82), shows loss of editing (C83) while maintaining RNA binding (C84-C87) and normal adr-2 expression (C88). The parallel phenotypes in expression (C89) and chemotaxis (C91) strongly support the requirement for deamination (C90). This is a critical experiment distinguishing editing-dependent from editing-independent functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C72",
+      "C92",
+      "C93",
+      "C114"
+    ],
+    "result": "This study provides the first evidence that neuronal phenotypes of ADAR mutants can be caused by altered gene expression rather than recoding events. It is the first to identify an editing target (clec-41) whose expression is regulated by both C. elegans ADARs and to link a specific ADAR phenotype to editing-dependent regulation of a specific gene. The study spans from novel tissue-specific methodology to organismal behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C72, C92-C93, C114 make novelty claims that are well-supported by the comprehensive data. The rescue experiment (C8) directly demonstrates causality. The distinction from recoding mechanisms (C93) is supported by the predominance of non-coding editing. The claims of being 'first' are reasonable given the comprehensive approach and prior literature gaps noted throughout. However, these are interpretive claims about significance rather than direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study demonstrates the necessity of tissue-specific analysis in C. elegans, as alterations in clec-41 editing and expression were only observed in neural cells and not in whole worm extracts. The identification of clec-41 as a critical regulator would not have been possible without neural-specific analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C115-C117 present a methodological conclusion supported by the repeated observation that neural-specific changes (editing patterns, gene expression) were not detected in whole worm samples. This is demonstrated for clec-41 specifically (C117) and validates the tissue-specific approach. The conclusion is well-supported by the data comparing neural cells to whole worms throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes background knowledge about ADAR proteins, their functions (A-to-I editing and RNA binding), their importance in neuronal function across species, and the knowledge gap regarding targets responsible for chemotaxis defects in C. elegans. Previous studies were limited to whole-worm analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 present established knowledge and prior work, all supported by appropriate citations. These claims provide context and justify the study's approach. The knowledge gap (C25) and limitation of prior studies (C26) are accurately stated and motivate the tissue-specific approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Previous studies showed that loss of RNAi pathway components can restore chemotaxis to adr mutant worms, and that clec-41 is elevated in RNAi mutants. However, prior attempts to identify genes antagonistically regulated by RNAi and ADARs could not pinpoint transcripts underlying chemotactic behavior. Unpublished data from the authors' lab shows increased clec-41 in rde-4(-) neural cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 cite prior published work appropriately. Claim C97 presents unpublished data, which is a limitation for independent verification but is consistent with published findings (C96). These claims provide additional context linking ADARs, RNAi, and clec-41, though the mechanistic connection remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study reveals that 169 genes are misregulated in adr-2(-) neural cells, but only 4 show editing, indicating that studies of ADAR function should examine both editing targets and differentially expressed genes. The mechanism by which ADR-2 regulates non-edited genes remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 present clear data and a reasonable conclusion about the need to study both edited and non-edited differentially expressed genes. Claim C101 acknowledges a knowledge gap, which is appropriate. The recommendation (C98) is well-supported by the finding that most differentially expressed genes are not edited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The discussion notes that mammalian ADARs can regulate gene expression through editing-independent mechanisms involving other RBPs. The mechanism by which CLEC-41 regulates chemotaxis is unclear, but clec-41 is regulated by Protein Kinase D, which is expressed in AWA and AWC chemosensory neurons responsible for the chemotaxis defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 cite prior work on mammalian systems appropriately. Claims C104-C107 acknowledge knowledge gaps while providing relevant context from prior studies. These claims appropriately frame future directions and connect the findings to known pathways, though mechanistic details remain to be determined.",
+    "result_type": "MINOR"
+  }
+]

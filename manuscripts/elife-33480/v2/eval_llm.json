@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors generated iPSC-derived cardiomyocytes from 45 Hutterite individuals with quality control confirming pluripotency and cardiomyocyte identity at 72\u00b112% purity by FACS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe comprehensive quality control including qPCR, PluriTest, embryoid body assays, and FACS quantification. The 72\u00b112% purity is quantified with appropriate methodology, though the relatively high variance suggests some heterogeneity that the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C45",
+      "C46",
+      "C57"
+    ],
+    "result": "A panel of 45 iPSC-derived cardiomyocytes was exposed to five doxorubicin concentrations (0, 0.625, 1.25, 2.5, 5 \u03bcM) for 24 hours followed by RNA-sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C45, C46, and C57 consistently describe the experimental design. The methodology is clearly stated with specific concentrations and timepoints. Sample size of 45 individuals provides reasonable power for QTL mapping in a related population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Doxorubicin exposure induces a substantial transcriptomic response with 98% (12,038/12,317) of genes differentially expressed at 5% FDR, with concentration being the dominant source of variation and showing nonlinear effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60-C63 present consistent quantitative findings supported by PCA (Figure 1b) and concordance with prior work (C61). The 98% differential expression rate is extraordinarily high but is supported by the data and appropriate FDR control. The nonlinearity is evident in the PCA visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C73",
+      "C74"
+    ],
+    "result": "Gene expression responses cluster into six distinct patterns, with the largest representing down-regulation across concentrations. Promoter analysis revealed enriched transcription factor binding motifs for clusters 1-3 but not 4-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C73-C74 describe mixture model clustering with biological interpretation. The finding of enriched TF motifs only in larger clusters (1-3) is consistent with statistical power limitations for smaller clusters. The clustering approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C167"
+    ],
+    "result": "Over 6,000 genes (10,430 ASCs corresponding to 6,398 genes) show differential splicing in response to doxorubicin at 5% FDR, driven by reduced splicing fidelity as evidenced by increased entropy and cryptic splice site usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C101-C103, and C167 present convergent evidence for widespread splicing disruption. The entropy analysis and cryptic splice site enrichment (Figure 3b) provide mechanistic support for the 'reduced fidelity' interpretation. The scale (59% of testable ASCs) is remarkable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "A novel linear mixed model method called 'suez' was developed extending PANAMA to account for relatedness, repeat measurements, multiple conditions, and latent confounding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe a clear methodological contribution. The method appropriately addresses key confounders in the experimental design (related individuals, repeated measures). The mathematical framework is detailed in the Methods section with proper model specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "518 genes have marginal eQTLs at 5% FDR, which show stronger overlap with GTEx heart tissues than other tissues using a mutual information approach that controls for differential power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 present eQTL mapping results with appropriate replication analysis. The mutual information approach (Figure 2a, 2\u2014supplement 2) properly addresses the confounding of differential power across tissues, which is a strength over naive \u03c0\u2081 statistics (Figure 2\u2014supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C47",
+      "C87",
+      "C88"
+    ],
+    "result": "447 response-eQTLs were detected at 5% FDR using combined total and allele-specific expression, representing a 19% increase over total expression alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C47, C87 report consistent reQTL numbers. The parametric bootstrap validation (Figure 2b) showing ~8.5% true FDR is appropriate. The modest 19% gain from ASE (C88) is reasonably attributed to already good power and low sequencing depth, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C157",
+      "C158"
+    ],
+    "result": "46% (172/447) of reQTLs result in qualitatively distinct response patterns between alleles, with the most common transition (33 reQTLs) being from simple down-regulation to biphasic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 and C157-C158 characterize reQTL effects using cluster assignments. The quantitative breakdown (46% qualitatively distinct vs. 54% quantitative modulation) is clearly presented. The biological interpretation is supported by the clustering analysis (Figure 2c-d).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C48",
+      "C108",
+      "C109"
+    ],
+    "result": "42 response-splicing QTLs and 467 marginal splicing QTLs were detected at 5% FDR, demonstrating genetic regulation of alternative splicing responses to doxorubicin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C48, C108-C109 consistently report sQTL and rsQTL numbers. The analysis uses LeafCutter for splicing quantification with appropriate statistical testing. Examples like APIP exon skipping (Figure 3c) provide biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The ACT-associated RARG variant rs2229774 shows trans-eQTL effects on five genes (NMRK1, VMA21, PAQR3, SGIP1, LRRC2) at 5% FDR despite only two heterozygous carriers, including PAQR3 (antioxidant regulator) and LRRC2 (linked to heart failure).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96 describe trans-eQTL mapping for a known ACT variant. However, with only 2 heterozygous individuals (C93), statistical power is severely limited. While suez detects effects at 5% FDR (C94), this could represent false positives given the extreme sample size limitation. The biological plausibility (C95-C96) is interesting but doesn't validate the statistical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Cardiac troponin levels in culture media were used to measure doxorubicin-induced damage, with 13 of 45 cell lines showing significant dose-response correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 describe a functional readout of cellular damage. The troponin assay is an established biomarker (C50). The finding that only 13/45 lines show significant dose-response (C113) indicates substantial inter-individual variation, which is the key biological question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C49",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Gene expression response predicts troponin levels with 89-96% variance explained, and a TWAS analysis using 3,840 genes with genetic components explains 89% of troponin variance through 102 genes, suggesting a causal pathway from genotype through expression to cellular damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C49, C116-C119 present convergent evidence linking expression to troponin. The GREML (96.1%) and LOOCV lasso (91.5%) analyses give consistent results. The TWAS approach (C117-C119) is analogous to Mendelian randomization, though the causal interpretation requires additional assumptions that aren't fully validated. The high variance explained suggests strong predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C51",
+      "C120"
+    ],
+    "result": "Troponin levels are associated with predicted in vivo ACT risk, with differential expression analysis identifying 0, 7, 78, 2,984, and 2,863 genes at the five concentrations respectively (5% FDR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C51, C120 link in vitro troponin to in vivo ACT risk using a predictive model from Burridge et al. The correlation (Spearman \u03c1=0.38, p=0.01, Figure 4f) is statistically significant but modest. The concentration-dependent increase in DE genes (C120) shows appropriate dynamic range at higher concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Response-eQTLs show significant enrichment in ACT GWAS variants (p=2\u00d710\u207b\u00b3\u2077, OR=1.95 for reQTLs; p=6\u00d710\u207b\u2076\u2070, OR=2.22 including ASE), with response-sQTLs also enriched (p=2\u00d710\u207b\u2075, OR=1.57), supporting in vivo disease relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C142-C146 demonstrate GWAS enrichment with highly significant p-values. The progressive enrichment from marginal eQTLs (no enrichment) to combined (p=5\u00d710\u207b\u00b9\u00b2) to response-only (p=2\u00d710\u207b\u00b3\u2077) to response+ASE (p=6\u00d710\u207b\u2076\u2070) shows a clear hierarchy supporting the relevance of response QTLs. The enrichment analysis is methodologically sound using hypergeometric tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Colocalization analysis identified one gene (NOL10) with maximum posterior probability for colocalization (0.54), though the data appears underpowered with 40/43 genes showing higher H4 than H3 posterior probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C149 acknowledge limited power for colocalization (C148). With only one gene reaching maximum H4 probability at 0.54 (C147), the evidence for specific colocalization is weak. The observation that 40/43 genes favor H4 over H3 (C149) is suggestive but not definitive. The authors appropriately characterize this as underpowered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C30",
+      "C31",
+      "C95",
+      "C96"
+    ],
+    "result": "Several genes with known or proposed roles in ACT mechanisms show genetic associations, including ALPK2 (DNA repair/apoptosis), RARG (Top2b suppression), PAQR3 (antioxidant response), and LRRC2 (heart failure).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31, C95-C96, and C135 cite literature connecting detected variants to ACT-relevant biology. However, these represent post-hoc biological interpretation of statistical associations. While the connections are plausible, they don't constitute independent validation. The RARG findings (C30-C31) are from prior work, not this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C154",
+      "C155"
+    ],
+    "result": "Multiple lines of evidence support that the iPSC-derived cardiomyocyte system recapitulates in vivo biology, including GTEx heart eQTL replication, troponin-ACT associations, and GWAS enrichment, though cardiomyocytes are the dominant (72\u00b112%) but not exclusive cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150, C154-C155 provide a balanced assessment of the model system. The convergent evidence (GTEx replication, troponin correlation, GWAS enrichment) supports biological relevance. The acknowledgment of cellular heterogeneity (C154-C155) is appropriate and honest about limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "ACT is a dose-dependent, clinically significant complication of anthracycline chemotherapy, with CHF rates of 5-48% depending on cumulative dose and the potential for delayed onset years after treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C22 establish clinical context through cited literature. The dose-response data from two studies (Von Hoff 1979, Swain 2003) show consistent patterns despite different absolute rates. The long-term mortality data (C21-C22) from Vejpongsa 2014 is appropriately cited. This provides solid motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C32",
+      "C33"
+    ],
+    "result": "The genetic basis of ACT remains unclear, with prior candidate gene studies limited by small samples and two published GWAS finding no genome-wide significant associations in discovery cohorts, though each replicated one variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C26, C32-C33 accurately summarize the state of ACT genetics. The critical assessment of candidate gene studies (C23) is fair. The GWAS summary (C24-C26, C32-C33) correctly notes the lack of genome-wide significant discoveries while acknowledging replicated variants, establishing the knowledge gap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "iPSC-derived cardiomyocytes have been established as models for genetic regulation of transcription, and prior work by Burridge et al. showed ICs recapitulate doxorubicin sensitivity differences, though with insufficient sample size (n=3 per group) for genetic mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 appropriately cite prior work establishing iPSCs as model systems (C38) while noting limitations for gene-environment interactions (C39). The Burridge et al. study (C40-C44) provides proof-of-concept but the critical assessment of sample size limitations (C44) correctly motivates the current larger study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C156",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "For diseases involving environmental perturbation like ACT, response-eQTLs may be more relevant than steady-state eQTLs, though marginal eQTLs could still be important if expression-risk relationships are nonlinear. Fine-mapping remains challenging without genome-wide significant GWAS hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156, C159-C161 provide thoughtful discussion of QTL interpretation. The reasoning about response vs. marginal eQTLs (C156, C159) is logical and appropriately nuanced. The acknowledgment of fine-mapping limitations (C160) and future utility (C161) is realistic given current GWAS power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The study used healthy Hutterite individuals, which offers advantages for genetic mapping (uniform environment, reduced genetic background) while representing European diversity, though some ACT-relevant variation may not be well-represented and true ACT status is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 provide balanced discussion of population choice. The advantages of the Hutterite population (C164-C165) are real and well-cited. The limitations regarding unknown ACT status (C162), potential for missing variation (C166), and need for patient-derived studies (C163) are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C168",
+      "C169"
+    ],
+    "result": "The finding of reduced splicing fidelity across the transcriptome is consistent with prior observations that oxidative stress (a key doxorubicin effect) disrupts splicing of specific genes, raising questions about the role of splicing changes in doxorubicin effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98, C168-C169 contextualize the splicing findings with prior literature. The connection to oxidative stress (C97-C98) is well-established. The observation that this is genome-wide rather than gene-specific (C168-C169) is novel and appropriately presented as raising new questions rather than answering them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Excessive fibrosis may contribute to ACT, though the magnitude of this contribution and whether fibroblasts respond directly to doxorubicin or indirectly to cardiomyocyte damage remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 cite literature on fibrosis in ACT while appropriately noting substantial uncertainty about mechanisms and contribution. This acknowledges a limitation of the cardiomyocyte-focused model without overstating what is known from the literature.",
+    "result_type": "MINOR"
+  }
+]

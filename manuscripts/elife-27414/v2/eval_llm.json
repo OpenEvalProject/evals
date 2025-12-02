@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C26"
+    ],
+    "result": "The authors determined the structure of the Saccharomyces cerevisiae Pol I-Core Factor-DNA complex using single-particle cryo-EM. The overall reconstruction achieved 3.8 \u00c5 resolution, with focused refinements improving resolution to 3.7 \u00c5 for Pol I and 4.2 \u00c5 for Core Factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21, and C26 provide consistent resolution values and describe the cryo-EM methodology. The reported resolutions are supported by FSC curves (Figure 1\u2014figure supplement 2D) and local resolution maps. The focused refinement strategy is well-documented and appropriate for handling conformational heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Core Factor recognizes the rDNA promoter from positions \u221227 to \u221216. Rrn7 interacts with DNA from \u221227 to \u221220 using its N-terminal cyclin fold domain, while Rrn11 contacts DNA from \u221224 to \u221216. These interfaces are consistent with previous biochemical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42, C43, and C44 describe Core Factor-DNA interactions supported by cryo-EM density (Figure 3B,C) and validated by agreement with prior photo-crosslinking and footprinting experiments (C44). The use of a truncated scaffold (C40) to assign DNA register strengthens confidence in the sequence assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors determined the molecular architecture of Core Factor, revealing a bipartite 'hand-like' structure. Rrn6 serves as a scaffold spanning the palm and knuckles, Rrn11 forms the thumb with its TPR domain, and Rrn7's cyclin fold domains form the fingers. The Core Factor-Pol I interface is mediated primarily by the Rrn11 TPR domain and the Pol I protrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 describe the Core Factor architecture with supporting structural data (Figure 2). The domain assignments are consistent with prior predictions (C33 cites Knutson et al., 2014) and are validated by the cryo-EM density. The small Core Factor-Pol I interface (C38) is consistent with observed flexibility (C24, C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Three distinct functional states of the Pol I Initial Transcribing Complex were resolved at 4.2 \u00c5, 4.3 \u00c5, and 3.9 \u00c5 resolution. Core Factor exhibits rotational movement up to 10\u00b0 across states, correlating with stabilization of the Rrn7 zinc ribbon/linker in State 2, the A49 tandem winged helix domain in State 3, and progressive clamp closing (up to 4 \u00c5) from State 1 to State 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 describe three conformational states with supporting structural data (Figure 4). The correlations between Core Factor position, domain stabilization, and clamp movement are directly observed in the reconstructions. The gradual stabilization of non-template DNA (C58) provides additional validation of the proposed progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The Rrn7 zinc ribbon domain is functionally important for open complex formation. Deletion of this domain (\u0394ZR) abolishes open complex formation in yeast extracts, and recombinant \u0394ZR Core Factor fails to rescue this defect, while wild-type Core Factor does.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 present functional validation experiments (Figure 4\u2014figure supplement 3) demonstrating the requirement for the Rrn7 zinc ribbon in promoter opening. The complementation experiment provides strong evidence that the zinc ribbon domain is necessary for this function, supporting the structural observations in State 2 (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The three functional states represent ordered temporal steps during transcription initiation: State 1 corresponds to promoter DNA loading, State 2 represents bubble opening, and State 3 reflects the initial transcribing state prior to promoter escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62 propose a temporal ordering of the three states based on structural features and comparison to prior work. While the reasoning is logical (progressive clamp closing, domain stabilization patterns), the evidence is inferential rather than direct. The states were captured simultaneously in a single sample, and no kinetic or time-resolved data confirm the proposed sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose a ratchet mechanism for ATP-independent promoter melting in which Core Factor's intrinsic mobility drives DNA insertion toward the active site. When Core Factor reaches a critical position, the Rrn7 zinc ribbon/linker stabilizes on Pol I, facilitating spontaneous DNA melting. The A49 tandem winged helix domain subsequently displaces the Rrn7 zinc ribbon to clear the RNA exit channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C64, C65, and C67 propose a mechanistic model based on structural observations, but the mechanism is speculative (evidence_type: SPECULATION for C64, C65, C67). While the model is consistent with the absence of ATP hydrolysis activity (C75) and supported by citation to A. castellanii data (C66), direct experimental validation of the proposed ratchet motion and force generation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25"
+    ],
+    "result": "Core Factor exhibits intrinsic mobility that correlates with different conformational states of the Pol I cleft. Local resolution analysis shows Core Factor is more flexible (4.5-5.5 \u00c5) compared to the rigid Pol I core (3.5 \u00c5), and 3D classification reveals Core Factor adopts different orientations relative to Pol I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, and C25 describe Core Factor flexibility supported by local resolution maps (Figure 1\u2014figure supplement 2C) and 3D classification results. The correlation between Core Factor mobility and Pol I cleft states is demonstrated by the three resolved conformational states (C49-C58). The small Core Factor-Pol I interface (C38) provides a structural basis for this flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C39",
+      "C45",
+      "C71"
+    ],
+    "result": "The Pol I Initial Transcribing Complex is pre-conditioned in an elongation-competent state. Pol I resembles the Elongation Complex more than the apo structure, with a contracted cleft. The upstream DNA occupies a similar position in both ITC and EC, sandwiched between the wall and protrusion near position \u221210.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C39, C45, and C71 describe the elongation-competent conformation supported by structural comparisons (Figure 1\u2014figure supplement 3, Figure 5A). The positioning of upstream DNA is validated by comparison to Pol I EC structures (C48 cites Tafur et al., 2016). The downstream DNA interactions (C39) are consistent with other RNA polymerase systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C72",
+      "C46",
+      "C47",
+      "C70"
+    ],
+    "result": "The positioning and bending of upstream promoter DNA in the Pol I Initial Transcribing Complex differs fundamentally from the Pol II Pre-Initiation Complex. Pol I generates two consecutive kinks (~35\u00b0 and ~45\u00b0) near position \u221216, while Pol II positions upstream DNA above the cleft with a 90\u00b0 bend induced by TBP and TFIIB-BRE interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C72, C46, C47, and C70 describe distinct DNA paths between Pol I and Pol II systems, supported by structural comparisons (Figure 5B,C, Figure 5\u2014figure supplement 1B). The DNA bending in Pol I is directly observed in the cryo-EM density (Figure 3A). The comparison to Pol II structures is appropriately cited (C46, C47, C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C36"
+    ],
+    "result": "Despite sequence homology with TFIIB, Rrn7 exhibits distinct structural features and functional roles. The cyclin fold domains of Rrn7 are positioned more distally from Pol I compared to TFIIB, primarily engage in DNA interaction rather than polymerase binding, and adopt a more compact relative orientation than their TFIIB counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, and C36 describe structural and functional differences between Rrn7 and TFIIB, supported by structural alignments (Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 1A) and DNA interaction data (Figure 3B). The compact organization of Rrn7 cyclin folds is attributed to intimate interactions with Rrn6 (Figure 2E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The Rrn7 linker region and A49 tandem winged helix domain occupy mutually exclusive positions, with clear steric clashes observed when comparing State 2 and State 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 describes structural incompatibility between Rrn7 linker and A49 tWH domain, directly observed in the reconstructions (Figure 4\u2014figure supplement 1D). This observation supports the proposed mechanism for RNA exit channel clearance (C67) and the temporal ordering of states (C59-C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Rrn3 and TBP were not observed in the cryo-EM reconstructions. Gel electrophoresis analysis confirmed that Rrn3 was present only in unbound and wash fractions, not in the eluted complex used for EM analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 report the absence of Rrn3 and TBP in the structures, supported by both the lack of corresponding density in reconstructions and biochemical validation by gel electrophoresis (Figure 1\u2014figure supplement 4). The authors appropriately discuss potential explanations and functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C40"
+    ],
+    "result": "The authors used two nucleic acid scaffolds: a full scaffold with a 17-nt mismatched bubble and 6-nt RNA to stabilize the Initial Transcribing Complex, and a truncated scaffold to assign the DNA register in the upstream region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C40 describe the experimental design for complex assembly and DNA register assignment. The scaffold designs are clearly presented (Figure 1A, Figure 3\u2014figure supplement 2A), and the truncated scaffold approach (C40) provides validation for sequence assignment by demonstrating shortened DNA density (Figure 3\u2014figure supplement 2C,D).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors provide background on Pol I transcription, including its contribution to cellular RNA synthesis, disease implications, regulation by transcription factors (Rrn3, Core Factor, TBP, UAF), structural features of Rrn3 and Core Factor subunits, and conformational changes in Pol I across different functional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C19 summarize prior work with appropriate citations. These claims establish the scientific context for the study and are supported by the cited literature. The claims are primarily background information rather than novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Pol II requires ATP-dependent TFIIH translocase activity for the transition from initiation to elongation, whereas TFIIH is not required for Pol I transcription initiation and no ATP hydrolysis activity has been associated with Pol I general transcription complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, and C75 describe mechanistic differences between Pol I and Pol II systems, supported by appropriate citations (Assfalg et al., 2012; Lofquist et al., 1993). These claims provide important context for the proposed ATP-independent mechanism in Pol I (C4, C64-C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C28"
+    ],
+    "result": "The cryo-EM reconstruction shows a bipartite configuration with Pol I as the large module and Core Factor as the small lobe. DNA density is observed both inside and upstream of the Pol I cleft, with Core Factor engaging Pol I near the protrusion domain and interacting with upstream promoter DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, and C28 describe the overall architecture of the complex, directly supported by the cryo-EM reconstruction (Figure 1B). These observations are fundamental to all subsequent structural analyses and interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Cryo-EM density maps and model coordinates have been deposited in public databases (EMDB and PDB) with specified accession numbers for the full complex and three functional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 report data deposition, which is verifiable and represents good scientific practice. The provision of accession numbers enables independent validation and reuse of the structural data.",
+    "result_type": "MINOR"
+  }
+]

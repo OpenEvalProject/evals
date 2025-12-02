@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The experimental setup involved two big brown bats flying in a controlled room with obstacles, where object positions and release points were varied to prevent spatial memory use. Flight trajectory analysis confirmed bats relied on active sensing rather than spatial memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C71-C77 collectively describe a well-controlled experimental design. The low correlation in flight trajectories (C4) provides quantitative evidence supporting the claim that bats used active sensing rather than memory. The experimental controls (varied object positions C3, infrared lighting C74) are appropriate and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C10",
+      "C11",
+      "C79",
+      "C80"
+    ],
+    "result": "Neural recordings were obtained using a 16-channel silicon probe implanted in the bat superior colliculus, with wireless transmission via radio telemetry. Spike sorting quality metrics confirmed reliable single-unit isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C10-C11, C79-C80 describe the neural recording methodology with appropriate technical details. The spike sorting quality metrics (Lratio < 0.05, isolation distance > 15 in C80) meet established standards for single-unit recordings, providing confidence in data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Bats displayed natural echolocation behaviors during flight, including increased pulse rate and decreased pulse duration when approaching objects, and production of sonar sound groups (SSGs) to inspect objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 describe well-documented bat echolocation behaviors with appropriate citations to prior work. These observations confirm that bats exhibited natural behaviors during the experimental task, which is essential for interpreting the neural data in an ethological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C78"
+    ],
+    "result": "An echo model was developed to compute the bat's instantaneous 3D stimulus space by incorporating sonar beam width, flight trajectory, head direction, and sound physics. Error analysis showed maximum head-aim error of 5.5 degrees and echo arrival time error of 0.35-0.65 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C78 describe a novel computational approach with thorough error analysis. The reported errors are reasonable given the technical constraints. The validation using both playback experiments and microphone array recordings (mentioned in methods) strengthens confidence in the model accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Of 182 recorded neurons, 67 were classified as sensory, with 46 showing 3D spatial selectivity. Over 90% of sensory neurons responded only to the first echo, with mean response latencies of 5.9 \u00b1 3.4 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C81-C84 provide clear quantitative characterization of the neural population. The classification criteria and response properties are well-defined. The response latencies are consistent with prior work cited in C85-C86, lending credibility to the recordings being from SC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C87",
+      "C88"
+    ],
+    "result": "Spatial tuning profiles of neurons were stable within recording sessions, with only 4 of 37 neurons showing significant changes across session halves. Distance selectivity did not vary with dorsal-ventral location in SC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C87-C88 demonstrate appropriate controls for neural stability. The quantitative analysis showing 33/37 neurons with stable tuning provides strong evidence that the observed spatial selectivity represents genuine receptive field properties rather than recording artifacts or drift.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C68"
+    ],
+    "result": "Single neurons in the SC responded selectively to object locations spanning echo delays of 4-12 ms, corresponding to distances of approximately 70-200 cm encountered in the flight room.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C68 report distance tuning ranges that match the experimental environment dimensions. This correspondence between neural tuning and behaviorally relevant distances supports the ecological validity of the findings and suggests neurons encode distances relevant for navigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C27",
+      "C63",
+      "C64",
+      "C69"
+    ],
+    "result": "Neural distance tuning sharpened and shifted to closer distances when bats produced sonar sound groups (SSGs) compared to single calls, indicating dynamic remapping of spatial receptive fields with active inspection behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C27, C63-C64, and C69 describe a key finding with appropriate statistical support (referenced in supplementary tables). The sharpening and shifting effects are demonstrated across the population and represent a novel discovery linking behavior to neural tuning dynamics. However, the manuscript would benefit from more explicit statistical reporting in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C48",
+      "C90"
+    ],
+    "result": "Gamma band power (50-140 Hz) increased significantly during SSG production compared to non-SSG vocalizations (p<0.005), with peak gamma power occurring within 10 ms of echo-evoked spike times, supporting the hypothesis that SSGs indicate spatial attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C48, and C90 report LFP findings with appropriate statistical testing and controls for movement artifacts. The temporal precision of gamma modulation relative to spike times strengthens the interpretation. The sample size (26 neurons from 21 channels) is adequate given the stringent noise criteria applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C29",
+      "C33",
+      "C35",
+      "C45",
+      "C55",
+      "C67"
+    ],
+    "result": "This study provides the first characterization of 3D sensory responses and dynamic spatial tuning in the SC of a freely moving animal, and the first demonstration of delay-tuned responses to echoes from physical objects in free-flying bats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C29, C33, C35, C45, C55, and C67 assert multiple novelty claims that are well-supported by the literature review provided in claims C30-C34, C40, C43, C51, C54. The combination of free flight, 3D tracking, wireless neural recording, and physical echo sources represents a genuine technical and conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C39",
+      "C59"
+    ],
+    "result": "The manuscript presents hypotheses from prior work that SSGs enhance spatial resolution analogously to foveal fixation, that delay-tuned neurons encode target distance, and that global cortical inhibition may represent the closest object.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C39, and C59 appropriately cite prior hypotheses from the literature. These are clearly presented as existing ideas rather than new claims, providing appropriate context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C85",
+      "C86"
+    ],
+    "result": "The manuscript provides extensive literature review establishing the role of SC in spatial orienting, attention, and sensorimotor integration across species, as well as prior work on bat echolocation, delay-tuned neurons, and attention-related neural modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C34, C36-C38, C40-C44, C46-C47, C49-C50, C52-C54, C85-C86 provide comprehensive literature context with appropriate citations. This establishes the knowledge gaps addressed by the current study and situates the findings within the broader neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C66"
+    ],
+    "result": "The findings fill a gap in understanding neural representation of target distance in actively echolocating bats, showing sharper delay tuning than in passively listening bats, with preferential responses to first echoes and increased responses to last echoes of SSGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C56-C58, C60-C62, C65-C66 appropriately contextualize the findings relative to prior work in anesthetized/restrained bats. The comparison to prior studies strengthens the interpretation that active behavior enhances neural tuning. The discussion of mechanisms (global inhibition C61) is appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The discovery of dynamic 3D sensory representations in freely behaving animals calls for comparative studies in other species to advance understanding of nervous system function in natural behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 appropriately discusses broader implications and future directions. This represents reasonable scientific speculation about the generalizability and importance of the findings rather than an unsupported claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The bat's wingbeat frequency (~12 Hz) is well separated from the analyzed gamma band (50-140 Hz), reducing concerns about movement artifact contamination of LFP signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 provides important control information demonstrating that wingbeat harmonics would not substantially contaminate the gamma band analysis. Combined with the channel selection criteria in C90, this addresses a key potential confound in the LFP analysis.",
+    "result_type": "MINOR"
+  }
+]

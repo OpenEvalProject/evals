@@ -1,0 +1,710 @@
+{
+  "submission": {
+    "id": "fcec6ca4-5e5b-49e7-9260-dafd2b9b9c8b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:34:57.624240Z",
+    "updated_at": "2025-12-02T01:34:57.624240Z"
+  },
+  "content": [
+    {
+      "id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "submission_id": "fcec6ca4-5e5b-49e7-9260-dafd2b9b9c8b",
+      "content_type": "manuscript",
+      "content_text": "# Are theoretical results \u2018Results\u2019?\n\n## Authors\n\n- Raymond E Goldstein<sup>1</sup> ([ORCID: 0000-0003-2645-0598](https://orcid.org/0000-0003-2645-0598)) \u2020\n\n### Affiliations\n\n1. Department of Applied Mathematics and Theoretical Physics, Centre for Mathematical Sciences University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nYes.\n\n## Introduction\n\nThe decision letter from the journal was very supportive \u2013 it was clear our paper (Kirkegaard et al., 2016) would be published \u2013 but one of the referees definitely did not like the way we had combined experimental biology and physical calculations in our paper: \u201cThe data should be described and the inferences drawn, and the modelling relegated to its proper place as quantitative verification of the inferences that can be made directly from the data.\u201d\n\nAnd this was not an isolated case; a referee of another paper had said: \u201cInstead, the authors should let the data speak for itself, and postpone heavier theoretical analysis for later, perhaps in the Discussion.\u201d Many of my colleagues have experienced the same reaction to papers mixing theory and experiment. What were we doing wrong? Why was it not OK, according to these referees, to present the observations and the theory in a back-and-forth dialogue within the \u2018Results\u2019 section?\n\nWhile I was bemused by these statements (relegated!), they resonated with my long experience with some in the biology community, namely that they see the significance of theory very differently from the way physicists understand it. For many biologists, theoretical results are simply not \u2018Results\u2019. Indeed, I suspect to many they are seen as a matter of opinion, without any intrinsic significance. In essence, they don\u2019t add anything new. Hence the belief in the canonical Results/Discussion dichotomy in which theory (or \u2018modelling\u2019, as it is often called) plays second fiddle, or third.\n\nIn contrast, physicists are brought up to think by means of mathematical models: harmonic oscillators, random walks, idealized electrical circuits and so on are among the tools in our toolbox, whether we do experiment or theory. We use them as solvable examples in which a well-defined set of assumptions leads to precise outcomes, and where the dependence of the outcomes on the various\u00a0parameters in the model can be interpreted. This approach allows us to estimate what is important and what is not in any setting. Models also help us to think about problems: \u201cIf this is the underlying physics, then A should vary with B quadratically\u2026\u201d, or \u201cunder these assumptions, the data should collapse like this\u2026\u201d or, when we spot something is not quite right, \u201chere I argue that these claims are in conflict with basic laws of physics\u201d (Meister, 2016).\n\nThe role of theory is also intimately connected with predictions. While I know biologists who would say \u201cwho cares about a prediction in the absence of experiment?\u201d, physicists are brought up to celebrate them \u2013 they are the stuff of legend, from Dirac\u2019s prediction of antiparticles and Einstein\u2019s prediction of the bending of starlight, to the work by many that predicted the Higgs particle. We view predictions as motivations for experiment and as a means to move the discipline forward. Of course, sometimes they turn out to be wrong, but that is often how science works. Even if theoretical work does not take the form of a prediction, per se, it may still be very useful to design experiments with theory in mind, as emphasized by Bialek (2018), who has described many historical examples of the role theory has played in biology, from Rayleigh\u2019s work on hearing to Watson and Crick.\n\nMy purpose here is to push back against the view that theory is not a \u2018Result\u2019. I argue for the unabashed inclusion of mathematical formulations and pedagogy within the body of papers published in eLife and other primarily biological journals. By interleaving the experimental and theoretical results it is possible to tell a story, and I firmly believe this makes for much more interesting and readable papers. It is also faithful to the scientific method, in which one goes back and forth with experiment and hypothesis.\n\nReaders may be interested to learn that biological information, background and results are now routinely included in papers published in physics journals, although this has not always been the case: I vividly recall a situation several decades ago when a colleague, a high-energy physicist, saw a preprint about pattern formation in the slime mold Dictyostelium discoideum on my desk and asked: \u201cWhy would any physicist study something as ridiculous as that?\u201d But by now many physicists do exactly that, and many physics journals are full of discussions of cAMP signaling, spiral waves, and chemotaxis (Goldstein, 1996; Rappel et al., 1999; Gholami et al., 2015). If we really take interdisciplinary research seriously then I assert there has to be a prominent place for theory within biology papers, both as Results in papers that combine experiment and theory, and as Results in theory papers.\n\nThis is nothing new. If you have not already done so, I highly recommend reading the celebrated paper by Hodgkin and Huxley (1952) to see experiments and theory interleaved. Theory is not relegated to the discussion, or worse, to supplementary material, but instead is incorporated into the body of the paper as if it is the most natural thing to do. And this was in the Journal of Physiology. The same structure is found in the Michaelis-Menten paper, which was published (in German) in a biochemistry journal (Michaelis and Menten, 1913; Michaelis et al., 2011). If this was appropriate a century ago, why must details of mathematical models now be relegated to the back of papers (see, for example, Paulick et al. (2017), Ferreira et al. (2017), and Streichan et al. (2018))?\n\nMany readers will appreciate that the issue I am raising about quantitative descriptions of living systems is closely associated with the tension that exists between the stereotypes of the biologist, who wants to incorporate all the complexity of a particular system, and the physicist who seeks generality and minimalism. As has been emphasized in other recent opinion pieces (Shou et al., 2015; Riveline and Kruse, 2017), the role of theory in biology has been growing and this development requires new ways of training scientists on both sides of the physics/biology divide. Less attention has been paid to providing concrete examples for the biology community of how physicists think about understanding data, and this essay\u2019s goal, in part, is to address this lacuna.\n\nWell aware of the risks of trying to speak for an entire community, below I take the reader through an example of how (at least some) physicists might go about describing a well-known phenomenon that shows up everywhere in biology \u2013 from the functioning of cellular receptors to bacterial chemotaxis, the propagation of action potentials, and fluorescence recovery after photobleaching (FRAP) experiments \u2013 namely, diffusion. Employing poetic license, I imagine that we are at a point in time when the diffusion equation itself was not known, nor was Fick\u2019s Law, so both the experimental observations and theoretical analysis presented below are new and worthy of being described as Results.\n\nI compose two versions of a Results section to indicate various ways of presenting the data and theory interleaved in a compact presentation that (I hope) is widely understandable by the community. The first version involves a \u2018microscopic\u2019 model that is a caricature of the biological system, but contains the essential ingredients to display the behavior observed on the large scale. The way in which microscopic parameters enter into the macroscopic answer turns out to be general (or, as physicists say, \u2018universal\u2019), a key take-home lesson. The second version \u2013 which is probably more challenging \u2013 involves the use of \u2018dimensional analysis\u2019, one of the most powerful methods of analyzing natural phenomena. Here, relationships between various quantities are deduced by examining the units in which they are measured (mass, length, time, charge, etc.). Introduced long ago, particularly in the work of Clerk-Maxwell, 1869, this technique can often lead to exact answers to problems, up to the proverbial \u2018factors of two\u2019.\n\n## A discovery\n\nAllow me to introduce our fictitious Professor Lamarr, who has been investigating how the single-cell green alga Chlamydomonas moves in response to light. She has discovered that if a narrow sheet of light is directed into an algal suspension in a petri dish (Figure 1a), the algae swim into the beam and form a concentrated line of cells. When the light is turned off and there is no more phototactic cue, the cells resume a random swimming motion described previously (Polin et al., 2009), in which every 10 seconds or so their roughly linear motion is interrupted by a turn: the angle of this turn falls within a distribution that has a mean of\u00a0~90 degrees. These random turns lead the population to spread out over time (Figure 1b). See 'Methods' for experimental details.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig1-v1.jpg)\n\n**Figure 1.:** (a) A light sheet is used to gather the algae, which are swimming in a petri dish, into a narrow strip of cells along the $y$-axis. (b) After the light is turned off, the cells swim randomly and spread out. The concentration profile, $C\u2062(x,t)$, is then measured along a thin strip parallel to the $x$-axis; $t$ is time.\n\nLamarr measures the normalized concentration profiles, $C\u2062(x,t)$, in a thin strip that is perpendicular to the initial line of cells, obtaining the data shown in Figure 2a. The sharply-peaked profile at early times gradually spreads out until the Petri dish is uniformly filled with cells. She measured the variance $\u27e8x^{2}\u27e9$ of the concentration profile, and found the linear relation $\u27e8x^{2}\u27e9=\ud835\udc9ft$, with $\ud835\udc9f=0.2$ mm2/s (Figure 2b). Finally, the peak height $C\u2062(0,t)$ decays smoothly with time (Figure 2c). By systematic experimentation, she found that the basic results were insensitive to the precise size of the initial gathering, and that various swimming mutants of Chlamydomonas displayed the same behavior, albeit with different values of $\ud835\udc9f$.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig2-v1.jpg)\n\n**Figure 2.:** (a) Concentration profiles, $C\u2062(x,t)$, normalized to unity, at the following times: 1 second (red), 3 seconds (green), 7 seconds (blue) and 30 seconds (black). (b) The variance, $\u27e8x^{2}\u27e9$, of the data shown in (a) as a function of time; the dashed magenta line is a linear fit to the data. (c) The peak height, $C\u2062(0,t)$, of the data shown in (a) as a function of time.\n\n### Results v1: Experimental observations explained by a microscopic model\n\nIn this version of Results, we begin with a theoretical model of the random motions of individual cells and deduce from it a population-level description with which to analyze the data. In the simplest picture, we assume that cells move only to the left and right along the $x$-axis, and the cells are constrained to sit on a discrete set of points, at positions $x_{m}=m\u2062\u0394$, where $m=1,2,3,\u2026$ (Figure 3a). Likewise, we assume time is discrete, so at each time $t_{n}=n\u2062\\tau$, $n=1,2,3,\u2026$, a cell moves with probability $1/2$ to the left or right, as indicated by the arrows in Figure 3a.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig3-v1.jpg)\n\n**Figure 3.:** (a) A cell at site $m$ moves with probability $1/2$ to the left or right. (b) Diagram illustrating the counting that underlies the evolution\u00a0equation\u00a0(Equation 1).\n\nIn order to find an evolution equation for the probability $C_{n}\u2062(m)$ of finding a cell at position $m\u2062\u0394\u2062x$ at time $n\u2062\u0394\u2062t$ we observe (Figure 3b) that cells that appear at point $m$ at time $n+1$ arrived there by moving to the right from point $m-1$ or by moving to the left from point $m+1$ at the previous time step (each with probability $1/2$). Thus we can deduce that\n\n$$\nC_{n+1}\u2062(m)=\\frac{1}{2}\u2062C_{n}\u2062(m+1)+\\frac{1}{2}\u2062C_{n}\u2062(m-1).\n$$\n\nWe now imagine that these probabilities are varying sufficiently slowly in space and time that we can use the following Taylor expansions: $C_{n+1}(m)\u2243C_{n}(m)+\\tau(\u2202C_{n}(m)/\u2202t)+\u22ef$;\u00a0and\u00a0$C_{n}(m\\pm1)\u2243$ $C_{n}(m)\\pm\u0394(\u2202C_{n}(m)/\u2202x)+(\u0394^{2}/2)(\u2202^{2}C_{n}(m)/\u2202x^{2})+\u22ef$. Collecting terms, we deduce that the \u2018continuum limit\u2019 for this one-dimensional random walk is\n\n$$\n\\frac{\u2202C}{\u2202t}=D\\frac{\u2202^{2}C}{\u2202x^{2}},\u00a0with\u00a0D=\\frac{\u0394^{2}}{2\\tau}.\n$$\n\nWe term this the \u2018diffusion equation\u2019, where the diffusion constant $D$ has units of length$^{2}$/time. Although the above was derived in the context of a model with discrete space and time coordinates, the crucial point is that we can more generally interpret $\u0394$ as the typical distance a cell travels between sharp turns, and $\\tau$ as the time between such turns. If $U$ is the swimming speed between turns, then $\u0394\u223cU\u2062\\tau$, so we can write $D=U^{2}\u2062\\tau/2$. From tracking studies of Chlamydomonas, we know that $U\u223c0.1$ mm/s, and $\\tau\u223c10$ s, and therefore $\u0394\u223c1$ mm and $D\u223c0.1$ mm$^{2}$/s.\n\nIf we rewrite the diffusion equation (2) as $\\partial\u2061C/\\partial\u2061t=-(\\partial/\\partial\u2061x)\u2062(-D\u2062\\partial\u2061C/\\partial\u2061x)$ then it can be written as\n\n$$\n\\frac{\\partial\u2061C}{\\partial\u2061t}=-\\frac{\\partial\u2061J}{\\partial\u2061x},where J=-D\u2062\\frac{\\partial\u2061C}{\\partial\u2061x},\n$$\n\nwhere we identify the flux $J$ as the number of cells passing through a given point $x$ per unit time. This relationship implies that cells pass from regions of high concentration to regions\u00a0of\u00a0low concentration\u00a0at a rate proportional the gradient of concentration. This \u2018flux form\u2019 of the diffusion equation guarantees that the total number of cells, $N=\\int_{-\u221e}^{\u221e}\ud835\udc51x\u2062C\u2062(x,t)$, remains constant over time, since\n\n$$\n\\frac{dN}{dt}=\\int_{\u2212\u221e}^{\u221e}dx\\frac{\u2202C(x,t)}{\u2202t}=\u2212\\int_{\u2212\u221e}^{\u221e}dx\\frac{\u2202J}{\u2202x}=J(\u2212\u221e)\u2212J(+\u221e).\n$$\n\nThus, provided the flux $J$ goes to zero far away from our point of observation, $N$ is constant.\n\nThe relationship (Fick\u2019s Law) $J=-D\u2062\\partial\u2061C/\\partial\u2061x$ can be tested experimentally. Lamarr recorded the distributions of cells at the times indicated in Figure 2 and then again 0.2 s later. As shown in Figure 4a for one pair, such measurements yield the flux, $J$, and concentration gradient, $\\partial\u2061C/\\partial\u2061x$ each as functions of $x$ (Figure 4b), and we see that, apart from the overall scale, they are oppositely signed, as predicted by (3). But we can now go one step further and plot $J$ at each point $x$ and time $t$ versus $\\partial\u2061C/\\partial\u2061x$ at those same $x$ and $t$ values. If the theory is correct, then every data set should collapse on to a single straight line, and indeed this is the case (Figure 4c). According to the theory above, the slope of the line in Figure 4c is the diffusion constant $D$; we obtain $D=0.1$ mm2/s, which is consistent with the microscopic interpretation in terms of motility.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig4-v1.jpg)\n\n**Figure 4.:** (a) Concentration profiles, $C\u2062(x,t)$, at times $t=3$\u00a0s and $t=3.2$ s . (b) The flux of cells past a given point, $J$ (black; left axis), and the concentration gradient, $\\partial\u2061C/\\partial\u2061x$ (yellow; right axis), versus position, $x$. (c) Flux, $J$, versus concentration gradient, $\\partial\u2061C/\\partial\u2061x$, for all the values of $x$ and $t$ shown in Figure 2a. The dashed magenta line has a slope $D=0.1$ mm2/s.\n\n### Results v2: Dimensional analysis leads to the diffusion equation\n\nIn this version of the Results section our goal is to infer directly from the data a differential equation for the time evolution of the algal concentration $C\u2062(x,t)$, which is measured in organisms per mm, hence units of 1/length. The variance $\u27e8x^{2}\u27e9$ has, of course, units of length squared, so we can define a characteristic, time-dependent length $\u2113\u2062(t)=\\sqrt{\u27e8x^{2}\u27e9}$. From the fit to the data in Figure 2b we infer that the width of $C\u2062(x,t)$ grows as\n\n$$\n\u2113\u2062(t)\u223c\\sqrt{\ud835\udc9f\u2062t}.\n$$\n\nA very natural question is whether $\u2113\u2062(t)$ is the only intrinsic length scale that can be extracted from the data. As $C\u2062(x,t)$ has units of number/length we can, without loss of generality, write $C\u2062(x,t)=\u2113\u2062(t)^{-1}\u2062F\u2062(x,t)$ for some unknown function $F$ that is itself dimensionless. And since $F$ is dimensionless, it must be a function of a variable that is also dimensionless (similar to the way that $sin\u2061(\\theta)$ is a function of $\\theta$). Let us call this dimensionless variable $\u03be$. With $x$ and $\u2113\u2062(t)$ to work with, only the ratio is dimensionless, so we deduce that $\u03be=x/\u2113\u2062(t)$. Thus, we expect\n\n$$\nC\u2062(x,t)=\\frac{1}{\u2113\u2062(t)}\u2062F\u2062(\\frac{x}{\u2113\u2062(t)}).\n$$\n\nLet us now see if this form is consistent with the data. First, we note that it guarantees that the total number of cells, $N=\\int_{-\u221e}^{\u221e}\ud835\udc51x\u2062C\u2062(x,t)$, does not change with time because\n\n$$\nN=\\int_{\u2212\u221e}^{\u221e}dx\u00a0C(x,t)=\\int_{\u221e}^{\u221e}dx\\frac{1}{\u2113(t)}F(\\frac{x}{\u2113(t)})=\\int_{\u2212\u221e}^{\u221e}d\u03beF(\u03be),\n$$\n\nand $\\int_{-\u221e}^{\u221e}\ud835\udc51\u03be\u2062F\u2062(\u03be)$ is a number that does not depend on time (just like $\\int_{0}^{\\pi}\ud835\udc51\\theta\u2062sin\u2061(\\theta)$ is a number). Given (Equation 6), the peak concentration $C\u2062(0,t)$ is just $F\u2062(0)/\u2113\u2062(t)$, where $F\u2062(0)$ is again just a number. With the scaling in (Equation 5)\u00a0we deduce that $C\u2062(0,t)\u223c1/\\sqrt{t}$. A replotting of the data in Figure 2c on a log-log scale shows that this is true (Figure 5a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig5-v1.jpg)\n\n**Figure 5.:** (a) The peak amplitude,\u00a0$C\u2062(0,t)$, from Figure 2c plotted as a function time, $t$, on a log-log scale; the dashed magenta line has a slope of $-1/2$, which shows that $C\u2062(0,t)\u223ct^{-1/2}$. (b) When the data in Figure 2a are rescaled (see main text) and replotted, they collapse to a universal curve; the dashed magenta curve is the function $exp\u2061(-\u03be^{2}/2)$.\n\nA significant prediction of the analysis leading to (6) is that the data at different times should collapse when plotted as $C\u2062(x,t)/C\u2062(0,t)$ versus $x/\u2113\u2062(t)$, for this ratio is just $F\u2062(\u03be)/F\u2062(0)$. (Dividing $C\u2062(x,t)$ by $C\u2062(0,t)$ means that we rescale the heights of the various curves; and dividing $x$ by $\u2113\u2062(t)$ means that we allow for expansion of the initial concentration of cells). If this holds, then it implies that $\u2113\u2062(t)$ is the only characteristic length in the system. A test of this is shown in Figure 5b, where we see a good collapse of the data to a universal curve.\n\nIt is natural to seek a differential equation that is consistent with the scaling $x^{2}\u223ct$ and would provide a quantitative prediction of the function $F$. First we consider if inertia is relevant in this system. We know from fluid dynamics that inertia is irrelevant when the Reynolds number $R\u2062e=U\u2062L/\u03bd$ is much less than unity: $U$ is the typical speed of a particle, $L$ is the typical length of a particle, and $\u03bd$ is the kinematic viscosity (which is defined as $\u03bd=\u03b7/\u03c1$, where $\u03b7$ is the fluid viscosity and $\u03c1$ is the fluid density). For Chlamydomonas swimming in water ($U\u223c10^{-2}$ cm/s, $L\u223c10^{-3}$ cm, and $\u03bd=10^{-2}$ cm2/s), we have $R\u2062e\u223c10^{-3}$ and inertia is indeed negligible.\n\nThe differential equation we seek will have derivatives both in time and in space. In the absence of inertia, we expect that the equation for $C\u2062(x,t)$ should only involve first-order derivatives in time (as second derivatives would imply inertia and accelerations). With the scaling $x^{2}\u223ct$ we expect two space derivatives for one time derivative, so a consistent equation would be\n\n$$\n\\frac{\\partial\u2061C}{\\partial\u2061t}=D\u2062\\frac{\\partial^{2}\u2061C}{\\partial^{2}\u2061x},\n$$\n\nwhere the parameter $D$ should be proportional to the empirical $\ud835\udc9f$ obtained from Figure 2b.\n\nTo find a solution of (Equation 8) in the form of (Equation 6), we use $D$ to construct a length $l=\\sqrt{D\u2062t}$ and find (see Mathematical Details) the normalized distribution\n\n$$\nC\u2062(x,t)=\\frac{1}{\\sqrt{4\u2062\\pi\u2062D\u2062t}}\u2062exp\u2061(-\\frac{x^{2}}{4\u2062D\u2062t}).\n$$\n\nGiven this distribution, we compute the variance as\n\n$$\n\u27e8x^{2}\u27e9=\\int_{-\u221e}^{\u221e}x^{2}\u2062C\u2062(x,t)=2\u2062D\u2062t.\n$$\n\nComparing with our empirical observation (Equation 5), we deduce $\ud835\udc9f=2D$ (the promised factor of two!) and therefore that the dimensionless function is $F\u2062(\u03be)=(2\u2062\\pi)^{-1/2}\u2062exp\u2061(-\u03be^{2}/2)$. The ratio $F\u2062(\u03be)/F\u2062(0)=exp\u2061(-\u03be^{2}/2)$ is shown as the dashed line in Figure 5b, in good agreement with the data.\n\nTaken together, the experimental observations in Figure 2 and the phenomenological analysis above, confirmed in Figure 5, suggest that the diffusion equation in (Equation 8) provides a sound description of the spreading of cells that execute random motions. It indicates that different organisms, with different diffusion constants, obey the same fundamental scaling laws, insensitive to the details of the underlying random motions. Note that at this level of analysis we do not have a microscopic interpretation of the diffusion constant in terms of the fluid viscosity and aspects of cell motility; it is simply a phenomenological parameter that can be used to characterize a given microorganism. On the other hand, if we knew from microscopical observations that an organism\u2019s motion consists of straight segments interrupted by random reorientations, as in the case of Chlamydomonas and indeed E. coli (Berg, 1993), then by dimensional analysis (again) we could deduce $D\u223c\u0394^{2}/\\tau\u223cU^{2}\u2062\\tau$ in terms of the run length $\u0394$, speed $U$, and time between turns $\\tau$.\n\n## Discussion\n\nI have presented two ways of interleaving data and theory in a Results section as a way of indicating how quantitative principles can be used to derive new insight into phenomena. In one, a microscopic model led directly to the diffusion equation, whose structure led to the \u2018rediscovery\u2019 of Fick\u2019s law, which was confirmed from the data. In the second, the principles of dimensional analysis and some phenomenological reasoning led us to postulate a \u2018new\u2019 diffusion equation as a concise encoding of the experimental observations. Each of these approaches used nothing more than basic algebraic manipulations and elementary differential equations.\n\nReturning to the referees who spoke of inferences drawn directly from the data, I would ask: \u201cWhat language does the data speak?\u201d The answer would appear to depend on one\u2019s background. The inferences I drew from Lamarr\u2019s data were based on experience with understanding continuum and nonequilibrium phenomena, subjects which are less common in the undergraduate physics curriculum than one would hope, and very seldomly found in biology curricula. So, I would indeed advocate a more holistic education for both biologists and physicists (Goldstein et al., 2005).\n\nIt might be argued that the particular example I presented here is unusual, but in fact these very same considerations (dimensional analysis, scaling collapse of data, etc.) are to be found in many other places in biophysics. Excellent examples are work on metabolic scaling laws (West et al., 1997) and on stem cell replacement dynamics (Lopez-Garcia et al., 2010).\n\nMore importantly, I am not trying to emphasize any particular method in the physicist\u2019s toolbox, but rather a mindset that is about model-building and testing as part of the results presented to the reader. This mindset is particularly relevant when the theory is formulated first and the experiment is undertaken to test it. But even when the experiment comes first there may be a need to use theory as a sanity check on one\u2019s observations (Meister, 2016). This also brings us to the delicate issue of the extent to which research should actually be \u2018hypothesis driven\u2019, as discussed provocatively by Milner, 2018: I will leave that Pandora\u2019s box closed for the moment.\n\nFinally, one could argue that the diffusion equation is \u2018just a model\u2019 or \u2018just a theory\u2019 and should, therefore, not be considered as a Result because, unlike the data, it could be shown to be incorrect. With my experimentalist hat on, I find that argument weak: almost every experiment has potentially confounding aspects, and despite our best efforts to control them, these effects can produce spurious results. After all, how many hundreds or thousands of papers must have been written about stomach ulcers before Marshall and Warren, 1984 discovered that H. pylori was so often the culprit? So, while it is certainly the case that many of the models discussed in biology papers do not have the status of fundamental laws, I think that it is contrary to the scientific method to view the fact that they may be superseded as a weakness. If theories are crafted the right way they have utility even if proven wrong, sometimes especially if proven wrong!\n\nThis essay has touched on two tensions \u2013 between theory and experiment, and between the cultures of physics and biology. The differences between the cultures have implications not only for how data is interpreted, but also for what qualifies as \u201cinteresting\u201d and who gets to frame the questions: an enlightening debate on this issue was aired more than 20 years ago by Adrian Parsegian and Robert Austin (Parsegian, 1997; Huebner et al., 1997). For example, it might be argued that biologists may not really be interested in the fact that a new equation has been derived that provides an approximate description of a given system, and this could be a reason not to publish a theoretical work in a biology journal. The example I provide here shows how this need not be an empty exercise, but can lead to testable, mechanistic predictions such as the relationship between flux and concentration gradient (Fick\u2019s Law, rediscovered). One need only consult the seminal work of Turing (1952) on biological pattern formation or of Hodgkin and Huxley (1952) on action potentials to see the importance of having a mathematical encoding of diffusion to study its mechanistic implications. Likewise, a physics-oriented experimental paper, even one that deals with living organisms, may also not be seen as interesting to biologists because the questions appear unfamiliar. For truly interdisciplinary journals, easing this tension is perhaps the greatest challenge.\n\n## Methods\n\n### Generating the data\n\nFull disclosure \u2013 rather than do the experiments, I numerically solved the Langevin equation $d\u2062x/d\u2062t=\u03b7\u2062(t)$ for the time evolution of the position $x\u2062(t)$ for a single alga undergoing random motion, where $\u03b7\u2062(t)$ is a random variable with zero mean and temporal correlation function $\u27e8\u03b7\u2062(t)\u2062\u03b7\u2062(t^{\u2032})\u27e9=2\u2062D\u2062\\delta\u2062(t-t^{\u2032})$. In the results described here, I set $D=0.1$ mm2/s, approximately that of Chlamydomonas (Polin et al., 2009). The equation was integrated forward a time increment $\\delta\u2062t$ from time index $i$ to $i+1$ using the discrete representation $x_{i+1}=x_{i}+\\sqrt{2\u2062D\u2062\\delta\u2062t}\u2062\u03b7_{i}$, where $\u03b7_{i}$ is a normally distributed random variable. The data represent averages over 30,000\u00a0realizations.\n\n### Mathematical details\n\nTo obtain the normalized concentration profile (Equation 9) we simply substitute the latter into the diffusion (Equation 8), with $\u03c7=x/\\sqrt{D\u2062t}$. We obtain\n\n$$\n\\frac{d^{2}\u2062F}{d\u2062\u03c7^{2}}+\\frac{1}{2}\u2062(F+\u03c7\u2062\\frac{d\u2062F}{d\u2062\u03c7})=0.\n$$\n\nIntegrating (Equation 11) once and imposing the boundary condition that $F\u21920$ as $\u03c7\u2192\u221e$ we obtain $d\u2062F/d\u2062\u03c7+(1/2)\u2062\u03c7\u2062F=0$, which integrates to\n\n$$\nF(\u03be)=Aexp\u2061(\u2212\u03c7^{2}/4).\n$$\n\nNormalizing the associated concentration profile and re-expressing the result in terms of the original variables yields the result (Equation 9).\n",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e027919c-3327-4fe8-b15a-d08ce06e992c",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C1",
+      "claim": "A referee stated that modeling should be relegated to its proper place as quantitative verification of inferences that can be made directly from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "The data should be described and the inferences drawn, and the modelling relegated to its proper place as quantitative verification of the inferences that can be made directly from the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quote from a referee's comment on a manuscript",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "103bc2dd-79c1-4a6b-bb92-646d44dc875c",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C2",
+      "claim": "A referee suggested that authors should let the data speak for itself and postpone heavier theoretical analysis for the Discussion section.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the authors should let the data speak for itself, and postpone heavier theoretical analysis for later, perhaps in the Discussion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct quote from a referee's comment",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "7a318cfc-1369-44d6-977e-609d16a0c3af",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C3",
+      "claim": "Many biologists see the significance of theory very differently from the way physicists understand it.",
+      "claim_type": "EXPLICIT",
+      "source": "they resonated with my long experience with some in the biology community, namely that they see the significance of theory very differently from the way physicists understand it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Author's personal experience and observation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "b3e37519-e4da-4e00-b286-0a1fa6122885",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C4",
+      "claim": "For many biologists, theoretical results are not considered 'Results'.",
+      "claim_type": "EXPLICIT",
+      "source": "For many biologists, theoretical results are simply not 'Results'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Author's observation of attitudes in the biology community",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "8055f925-c2b5-410f-b5a5-9f02d3beb7ca",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C5",
+      "claim": "Physicists use mathematical models such as harmonic oscillators, random walks, and idealized electrical circuits as tools in their toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "physicists are brought up to think by means of mathematical models: harmonic oscillators, random walks, idealized electrical circuits and so on are among the tools in our toolbox, whether we do experiment or theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of standard physics education and practice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "32e273f9-2293-476f-ba98-010173d44aae",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C6",
+      "claim": "Dirac predicted antiparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "from Dirac's prediction of antiparticles and Einstein's prediction of the bending of starlight, to the work by many that predicted the Higgs particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical scientific fact",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "7197101b-a792-42e0-a59b-0f5133fbfd0c",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C7",
+      "claim": "Einstein predicted the bending of starlight.",
+      "claim_type": "EXPLICIT",
+      "source": "from Dirac's prediction of antiparticles and Einstein's prediction of the bending of starlight, to the work by many that predicted the Higgs particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical scientific fact",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "568bc554-5e71-4738-81c3-939db32bd179",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C8",
+      "claim": "The Higgs particle was predicted by theoretical work.",
+      "claim_type": "EXPLICIT",
+      "source": "from Dirac's prediction of antiparticles and Einstein's prediction of the bending of starlight, to the work by many that predicted the Higgs particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical scientific fact",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "f577c834-3673-4628-9f00-412b7d475c65",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C9",
+      "claim": "Bialek (2018) described many historical examples of the role theory has played in biology, from Rayleigh's work on hearing to Watson and Crick.",
+      "claim_type": "EXPLICIT",
+      "source": "as emphasized by Bialek (2018), who has described many historical examples of the role theory has played in biology, from Rayleigh's work on hearing to Watson and Crick.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published work by Bialek",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "bd3019b7-2e8a-441b-8a48-272ad96d6075",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C10",
+      "claim": "Biological information, background and results are now routinely included in papers published in physics journals.",
+      "claim_type": "EXPLICIT",
+      "source": "Readers may be interested to learn that biological information, background and results are now routinely included in papers published in physics journals, although this has not always been the case",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Author's observation of current publishing practices",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "1958a269-6bb6-4671-9417-5388fb48a56c",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C11",
+      "claim": "Many physics journals contain discussions of cAMP signaling, spiral waves, and chemotaxis related to Dictyostelium discoideum.",
+      "claim_type": "EXPLICIT",
+      "source": "But by now many physicists do exactly that, and many physics journals are full of discussions of cAMP signaling, spiral waves, and chemotaxis (Goldstein, 1996; Rappel et al., 1999; Gholami et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "9f32835c-18a9-44db-9d27-ec9a976f874b",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C12",
+      "claim": "Hodgkin and Huxley (1952) interleaved experiments and theory in their paper published in the Journal of Physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "I highly recommend reading the celebrated paper by Hodgkin and Huxley (1952) to see experiments and theory interleaved. Theory is not relegated to the discussion, or worse, to supplementary material, but instead is incorporated into the body of the paper as if it is the most natural thing to do. And this was in the Journal of Physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to a specific published paper",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "80c58e26-0441-42b7-a205-99c96f45481b",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C13",
+      "claim": "The Michaelis-Menten paper was published in German in a biochemistry journal.",
+      "claim_type": "EXPLICIT",
+      "source": "The same structure is found in the Michaelis-Menten paper, which was published (in German) in a biochemistry journal (Michaelis and Menten, 1913; Michaelis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to a specific published paper",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "9b9e5e72-e121-456e-90f6-3cd7c8d2b5d7",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C14",
+      "claim": "Mathematical models are now often relegated to the back of papers.",
+      "claim_type": "EXPLICIT",
+      "source": "If this was appropriate a century ago, why must details of mathematical models now be relegated to the back of papers (see, for example, Paulick et al. (2017), Ferreira et al. (2017), and Streichan et al. (2018))?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent papers",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "0a883296-c3b9-42fa-b4f4-73fcf87358db",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C15",
+      "claim": "There is tension between biologists who want to incorporate all the complexity of a particular system and physicists who seek generality and minimalism.",
+      "claim_type": "EXPLICIT",
+      "source": "Many readers will appreciate that the issue I am raising about quantitative descriptions of living systems is closely associated with the tension that exists between the stereotypes of the biologist, who wants to incorporate all the complexity of a particular system, and the physicist who seeks generality and minimalism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Author's characterization of disciplinary differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "d2a57dd8-4360-4fe9-87b4-1722eab5df8a",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C16",
+      "claim": "The role of theory in biology has been growing.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been emphasized in other recent opinion pieces (Shou et al., 2015; Riveline and Kruse, 2017), the role of theory in biology has been growing and this development requires new ways of training scientists on both sides of the physics/biology divide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to opinion pieces",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "65ae0583-9a22-4924-a7fb-ac8ec866ec6b",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C17",
+      "claim": "Diffusion appears in the functioning of cellular receptors, bacterial chemotaxis, the propagation of action potentials, and fluorescence recovery after photobleaching (FRAP) experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "a well-known phenomenon that shows up everywhere in biology \u2013 from the functioning of cellular receptors to bacterial chemotaxis, the propagation of action potentials, and fluorescence recovery after photobleaching (FRAP) experiments \u2013 namely, diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about biological phenomena",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "b24ed4e2-17b9-4296-96da-6b0030c4cfca",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C18",
+      "claim": "Dimensional analysis was introduced long ago, particularly in the work of Clerk-Maxwell, 1869.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduced long ago, particularly in the work of Clerk-Maxwell, 1869, this technique can often lead to exact answers to problems, up to the proverbial 'factors of two'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical reference to Clerk-Maxwell's work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "4b4d886e-9d6d-4eff-8877-5080e94e0991",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C19",
+      "claim": "Chlamydomonas is a single-cell green alga.",
+      "claim_type": "EXPLICIT",
+      "source": "Allow me to introduce our fictitious Professor Lamarr, who has been investigating how the single-cell green alga Chlamydomonas moves in response to light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Basic biological classification",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "de17617e-222f-45dc-8212-1bc66f8dc663",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C20",
+      "claim": "When a narrow sheet of light is directed into an algal suspension in a petri dish, the algae swim into the beam and form a concentrated line of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "She has discovered that if a narrow sheet of light is directed into an algal suspension in a petri dish (Figure 1a), the algae swim into the beam and form a concentrated line of cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental observation with reference to Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "03383032-088d-46a4-b248-60baba68daa4",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C21",
+      "claim": "Chlamydomonas exhibits random swimming motion where every 10 seconds or so their roughly linear motion is interrupted by a turn.",
+      "claim_type": "EXPLICIT",
+      "source": "When the light is turned off and there is no more phototactic cue, the cells resume a random swimming motion described previously (Polin et al., 2009), in which every 10 seconds or so their roughly linear motion is interrupted by a turn",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Polin et al., 2009",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "0eacedcc-6889-42b5-b6ed-4c7f17e8194e",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C22",
+      "claim": "The mean angle of turns in Chlamydomonas random swimming is approximately 90 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "the angle of this turn falls within a distribution that has a mean of ~90 degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative observation from the fictitious experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "76f5698b-1adb-497d-9a19-e8ccd6adb986",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C23",
+      "claim": "Random turns lead the Chlamydomonas population to spread out over time.",
+      "claim_type": "EXPLICIT",
+      "source": "These random turns lead the population to spread out over time (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation with reference to Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "c06a289d-f6df-42bc-b99c-233e5c8baeda",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C26",
+      "claim": "The basic results were insensitive to the precise size of the initial gathering of algae.",
+      "claim_type": "EXPLICIT",
+      "source": "By systematic experimentation, she found that the basic results were insensitive to the precise size of the initial gathering",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from systematic experimentation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "13939f28-c0b2-404b-b337-38e96124b12f",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C35",
+      "claim": "Cells pass from regions of high concentration to regions of low concentration at a rate proportional to the gradient of concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship implies that cells pass from regions of high concentration to regions of low concentration at a rate proportional the gradient of concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of Fick's Law",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "c6ba8996-bf88-429b-b46d-09ef775fa285",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C53",
+      "claim": "Different organisms with different diffusion constants obey the same fundamental scaling laws, insensitive to the details of the underlying random motions.",
+      "claim_type": "EXPLICIT",
+      "source": "It indicates that different organisms, with different diffusion constants, obey the same fundamental scaling laws, insensitive to the details of the underlying random motions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the theoretical analysis and data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "16d05c7a-7f5c-4b29-9448-f2287b3a4ee1",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C54",
+      "claim": "E. coli motion consists of straight segments interrupted by random reorientations.",
+      "claim_type": "EXPLICIT",
+      "source": "if we knew from microscopical observations that an organism's motion consists of straight segments interrupted by random reorientations, as in the case of Chlamydomonas and indeed E. coli (Berg, 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Berg, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "9ee92cac-b775-40a7-ab60-756c80e0ac71",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C56",
+      "claim": "Dimensional analysis and scaling collapse of data are found in many other places in biophysics, including work on metabolic scaling laws and stem cell replacement dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It might be argued that the particular example I presented here is unusual, but in fact these very same considerations (dimensional analysis, scaling collapse of data, etc.) are to be found in many other places in biophysics. Excellent examples are work on metabolic scaling laws (West et al., 1997) and on stem cell replacement dynamics (Lopez-Garcia et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to West et al., 1997 and Lopez-Garcia et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "d9d81a95-1026-422f-96ae-1df8e2a43597",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C57",
+      "claim": "Marshall and Warren, 1984 discovered that H. pylori was often the culprit in stomach ulcers.",
+      "claim_type": "EXPLICIT",
+      "source": "After all, how many hundreds or thousands of papers must have been written about stomach ulcers before Marshall and Warren, 1984 discovered that H. pylori was so often the culprit?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical scientific discovery",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "e5d3ffa8-466e-401b-a496-4349c2ab275e",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C58",
+      "claim": "Turing (1952) published seminal work on biological pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "One need only consult the seminal work of Turing (1952) on biological pattern formation or of Hodgkin and Huxley (1952) on action potentials to see the importance of having a mathematical encoding of diffusion to study its mechanistic implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to Turing's published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "b7dfeaca-9ea5-4663-8c8e-efaef7f3cdc6",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "claim_id": "C61",
+      "claim": "The data represent averages over 30,000 realizations.",
+      "claim_type": "EXPLICIT",
+      "source": "The data represent averages over 30,000 realizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of numerical simulation method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9fe9b7c4-1e0f-4696-9cd3-3547657e64a7",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript documents a cultural divide between biology and physics regarding the status of theoretical results. Referee comments and author observations suggest that many biologists do not consider theoretical results as 'Results' and prefer theory to be relegated to Discussion sections, whereas physicists view theory as integral to scientific findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide converging evidence from referee quotes (C1, C2) and author observations (C3, C4) documenting this disciplinary difference. While based on anecdotal evidence rather than systematic study, the claims are internally consistent and represent the author's documented experience.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "ec6177e7-1a97-45af-9504-5fdcb2f4cca6",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Physicists routinely use mathematical models as conceptual tools and have a history of successful theoretical predictions, while theory has also played important historical roles in biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 cite well-established historical facts (Dirac's antiparticles, Einstein's light bending, Higgs prediction) and reference published work (Bialek 2018) documenting theory's role in both physics and biology. These are accurate representations of scientific history.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "6aa42b1d-0397-48b0-ac79-18edad4f2e40",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Interdisciplinary publishing practices have evolved, with physics journals now including biological content, while historical biology papers (Hodgkin-Huxley, Michaelis-Menten) interleaved theory and experiment, contrasting with modern practices that often relegate models to supplementary material.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 are supported by specific citations to published papers and journals. The historical examples (C12, C13) are verifiable, and the observation about modern practices (C14) is documented with specific citations. The author's observation about physics journals (C10, C11) is supported by cited examples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "4423ca54-f718-4bea-b5f3-0cb45ec1cbd4",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "There exists tension between biological and physical approaches to complexity, but the role of theory in biology is growing and requires new interdisciplinary training approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 characterize disciplinary differences and cite opinion pieces (Shou et al., 2015; Riveline and Kruse, 2017) supporting the growth of theory in biology. While C15 involves stereotyping, it is presented as such and C16 is supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "97d0605f-312f-44e4-b845-af07e005b7af",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the fictitious experimental scenario, Chlamydomonas cells accumulate in a light sheet, then disperse through random swimming with ~90-degree turns every ~10 seconds when light is removed, with results insensitive to initial gathering size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23, C26 describe a pedagogical example using simulated data (as disclosed in Methods, C61). The swimming behavior (C21) is supported by citation to Polin et al., 2009. While fictitious, the scenario is internally consistent and appropriately disclosed as illustrative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "2a678067-3e5b-4b6b-9ca7-c5eb2ce5a3f8",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The diffusion model demonstrates that cells move from high to low concentration proportional to concentration gradients (Fick's Law), and that different organisms with different diffusion constants obey universal scaling laws independent of microscopic details.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C53, C54 present theoretical interpretations and generalizations from the pedagogical example. C35 correctly interprets Fick's Law, C53 articulates the universality principle demonstrated in the analysis, and C54 extends to E. coli with appropriate citation (Berg, 1993). The mathematical derivations support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "0299b623-0597-4a87-a746-4c40b67a9f07",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Diffusion is ubiquitous in biology, dimensional analysis is a powerful historical technique, and similar analytical approaches (dimensional analysis, scaling collapse) appear throughout biophysics in diverse contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C56, C58 cite established knowledge and published work. C17 correctly identifies diffusion's ubiquity, C18 accurately attributes dimensional analysis to Clerk-Maxwell, C56 provides specific examples with citations (West et al., 1997; Lopez-Garcia et al., 2010), and C58 correctly references Turing's work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "72ee803f-e7d5-4ad6-b723-a31a31a01de6",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The discovery that H. pylori causes stomach ulcers illustrates how experimental results can be superseded by new findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 accurately cites the Marshall and Warren (1984) discovery, which is a well-documented historical fact that revolutionized understanding of stomach ulcers. This serves as an appropriate example of how scientific understanding evolves.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "6ddc83fd-9fa6-4eb8-bacb-366beff0692b",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The pedagogical data presented were generated through numerical simulation averaging 30,000 realizations of a Langevin equation rather than actual experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 explicitly discloses the computational methodology in the Methods section. This transparency about using simulated data for pedagogical purposes is appropriate and clearly stated, with sufficient detail about the numerical approach (30,000 realizations, D=0.1 mm\u00b2/s).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    },
+    {
+      "id": "edfd3adb-9e68-45b4-82cf-b2438f4a4258",
+      "content_id": "48afd98f-3381-4710-8df3-f1716f6cb23f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chlamydomonas is classified as a single-cell green alga.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 provides accurate basic biological classification of Chlamydomonas, which is well-established taxonomic knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:34:57.624240Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e027919c-3327-4fe8-b15a-d08ce06e992c",
+      "result_id": "9fe9b7c4-1e0f-4696-9cd3-3547657e64a7"
+    },
+    {
+      "claim_id": "103bc2dd-79c1-4a6b-bb92-646d44dc875c",
+      "result_id": "9fe9b7c4-1e0f-4696-9cd3-3547657e64a7"
+    },
+    {
+      "claim_id": "7a318cfc-1369-44d6-977e-609d16a0c3af",
+      "result_id": "9fe9b7c4-1e0f-4696-9cd3-3547657e64a7"
+    },
+    {
+      "claim_id": "b3e37519-e4da-4e00-b286-0a1fa6122885",
+      "result_id": "9fe9b7c4-1e0f-4696-9cd3-3547657e64a7"
+    },
+    {
+      "claim_id": "8055f925-c2b5-410f-b5a5-9f02d3beb7ca",
+      "result_id": "ec6177e7-1a97-45af-9504-5fdcb2f4cca6"
+    },
+    {
+      "claim_id": "32e273f9-2293-476f-ba98-010173d44aae",
+      "result_id": "ec6177e7-1a97-45af-9504-5fdcb2f4cca6"
+    },
+    {
+      "claim_id": "7197101b-a792-42e0-a59b-0f5133fbfd0c",
+      "result_id": "ec6177e7-1a97-45af-9504-5fdcb2f4cca6"
+    },
+    {
+      "claim_id": "568bc554-5e71-4738-81c3-939db32bd179",
+      "result_id": "ec6177e7-1a97-45af-9504-5fdcb2f4cca6"
+    },
+    {
+      "claim_id": "f577c834-3673-4628-9f00-412b7d475c65",
+      "result_id": "ec6177e7-1a97-45af-9504-5fdcb2f4cca6"
+    },
+    {
+      "claim_id": "bd3019b7-2e8a-441b-8a48-272ad96d6075",
+      "result_id": "6aa42b1d-0397-48b0-ac79-18edad4f2e40"
+    },
+    {
+      "claim_id": "1958a269-6bb6-4671-9417-5388fb48a56c",
+      "result_id": "6aa42b1d-0397-48b0-ac79-18edad4f2e40"
+    },
+    {
+      "claim_id": "9f32835c-18a9-44db-9d27-ec9a976f874b",
+      "result_id": "6aa42b1d-0397-48b0-ac79-18edad4f2e40"
+    },
+    {
+      "claim_id": "80c58e26-0441-42b7-a205-99c96f45481b",
+      "result_id": "6aa42b1d-0397-48b0-ac79-18edad4f2e40"
+    },
+    {
+      "claim_id": "9b9e5e72-e121-456e-90f6-3cd7c8d2b5d7",
+      "result_id": "6aa42b1d-0397-48b0-ac79-18edad4f2e40"
+    },
+    {
+      "claim_id": "0a883296-c3b9-42fa-b4f4-73fcf87358db",
+      "result_id": "4423ca54-f718-4bea-b5f3-0cb45ec1cbd4"
+    },
+    {
+      "claim_id": "d2a57dd8-4360-4fe9-87b4-1722eab5df8a",
+      "result_id": "4423ca54-f718-4bea-b5f3-0cb45ec1cbd4"
+    },
+    {
+      "claim_id": "de17617e-222f-45dc-8212-1bc66f8dc663",
+      "result_id": "97d0605f-312f-44e4-b845-af07e005b7af"
+    },
+    {
+      "claim_id": "03383032-088d-46a4-b248-60baba68daa4",
+      "result_id": "97d0605f-312f-44e4-b845-af07e005b7af"
+    },
+    {
+      "claim_id": "0eacedcc-6889-42b5-b6ed-4c7f17e8194e",
+      "result_id": "97d0605f-312f-44e4-b845-af07e005b7af"
+    },
+    {
+      "claim_id": "76f5698b-1adb-497d-9a19-e8ccd6adb986",
+      "result_id": "97d0605f-312f-44e4-b845-af07e005b7af"
+    },
+    {
+      "claim_id": "c06a289d-f6df-42bc-b99c-233e5c8baeda",
+      "result_id": "97d0605f-312f-44e4-b845-af07e005b7af"
+    },
+    {
+      "claim_id": "13939f28-c0b2-404b-b337-38e96124b12f",
+      "result_id": "2a678067-3e5b-4b6b-9ca7-c5eb2ce5a3f8"
+    },
+    {
+      "claim_id": "c6ba8996-bf88-429b-b46d-09ef775fa285",
+      "result_id": "2a678067-3e5b-4b6b-9ca7-c5eb2ce5a3f8"
+    },
+    {
+      "claim_id": "16d05c7a-7f5c-4b29-9448-f2287b3a4ee1",
+      "result_id": "2a678067-3e5b-4b6b-9ca7-c5eb2ce5a3f8"
+    },
+    {
+      "claim_id": "65ae0583-9a22-4924-a7fb-ac8ec866ec6b",
+      "result_id": "0299b623-0597-4a87-a746-4c40b67a9f07"
+    },
+    {
+      "claim_id": "b24ed4e2-17b9-4296-96da-6b0030c4cfca",
+      "result_id": "0299b623-0597-4a87-a746-4c40b67a9f07"
+    },
+    {
+      "claim_id": "9ee92cac-b775-40a7-ab60-756c80e0ac71",
+      "result_id": "0299b623-0597-4a87-a746-4c40b67a9f07"
+    },
+    {
+      "claim_id": "e5d3ffa8-466e-401b-a496-4349c2ab275e",
+      "result_id": "0299b623-0597-4a87-a746-4c40b67a9f07"
+    },
+    {
+      "claim_id": "d9d81a95-1026-422f-96ae-1df8e2a43597",
+      "result_id": "72ee803f-e7d5-4ad6-b723-a31a31a01de6"
+    },
+    {
+      "claim_id": "b7dfeaca-9ea5-4663-8c8e-efaef7f3cdc6",
+      "result_id": "6ddc83fd-9fa6-4eb8-bacb-366beff0692b"
+    },
+    {
+      "claim_id": "4b4d886e-9d6d-4eff-8877-5080e94e0991",
+      "result_id": "edfd3adb-9e68-45b4-82cf-b2438f4a4258"
+    }
+  ],
+  "comparisons": []
+}

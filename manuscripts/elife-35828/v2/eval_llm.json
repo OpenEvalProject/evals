@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C47",
+      "C51",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C143"
+    ],
+    "result": "ECF-CbrT from Lactobacillus delbrueckii is a functional cobalamin transporter that mediates ATP-dependent uptake of cobalamin. Expression of ECF-CbrT complements an E. coli strain lacking its endogenous vitamin B12 transporter (E. coli \u0394FEC), restoring growth in the presence of cobalamin with a lag time of 470 min, similar to the positive control BtuCDF (380 min lag time). The full ECF-CbrT complex is required for function, as expression of CbrT alone without the ECF module does not support growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C47, C51, C61-C65, and C143 are strongly supported by complementation assays (Figure 2) and in vitro transport assays (Figure 3a). The growth data show clear functional complementation with appropriate positive (BtuCDF) and negative (empty vector, CbrT alone) controls. The requirement for the full complex is demonstrated by the lack of growth when only CbrT is expressed (C64). The ATP-dependence is confirmed by proteoliposome assays showing transport only with ATP and not ADP (C70, C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C84",
+      "C136"
+    ],
+    "result": "ECF-CbrT transports cobinamide (Cbi), the precursor of cobalamin. ECF-CbrT supported growth of E. coli \u0394FEC in the presence of Cbi with a longer lag time (730 min) compared to cobalamin (470 min). Direct transport assays confirmed that Cbi is transported into proteoliposomes in an ATP-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67, C69, C84, and C136 are well-supported by both growth complementation data (Figure 2c) and direct transport assays (Figure 3a). The synthesis of radiolabeled Cbi from cobalamin was confirmed by mass spectrometry (C83), and transport required ATP (C84). The longer lag time with Cbi is consistent with the need to express enzymes for Cbl synthesis from Cbi (C68), though this remains a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C76",
+      "C77"
+    ],
+    "result": "Transport by ECF-CbrT is strictly ATP-dependent with a KM of 2.1 \u00b1 0.4 nM and Vmax of 0.06 \u00b1 0.01 nmol \u00d7 mg\u207b\u00b9 \u00d7 s\u207b\u00b9 for cobalamin uptake. Uptake was observed only when proteoliposomes were loaded with Mg-ATP and not with Mg-ADP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C76, and C77 are supported by transport assay data (Figure 3a and Figure 3\u2014figure supplement 1). The ATP-dependence is clearly demonstrated, and kinetic parameters are reported with error estimates from triplicate measurements. The KM value indicates high-affinity binding consistent with the ITC measurements on CbrT alone (C94, C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C99",
+      "C144",
+      "C146",
+      "C147",
+      "C149"
+    ],
+    "result": "ECF-CbrT exhibits substrate promiscuity toward different cobalamin variants (CN-Cbl, Met-Cbl, OH-Cbl) and cobinamide, but is specific for vitamin B12-related compounds. Competition assays showed that CN-Cbl, Met-Cbl, and OH-Cbl inhibited uptake of radiolabeled Cbl almost completely at 250-fold excess, while Ado-Cbl and Cbi inhibited to ~25%. Hemin, a structurally related compound, did not compete, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81, C85, C86, C99, C144, C146, C147, and C149 are supported by competition assay data (Figure 3b). The experiments were performed in triplicate with appropriate controls. The lack of hemin competition (C85) is particularly important for demonstrating specificity. The reduced inhibition by Ado-Cbl is attributed to steric hindrance from its bulkier \u03b2-ligand (C148), which is reasonable speculation but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C154"
+    ],
+    "result": "The S-component CbrT binds cobalamin and cobinamide with high affinity. ITC measurements revealed dissociation constants of 9.2 \u00b1 4.5 nM for CN-Cbl, 9.6 \u00b1 6.9 nM for OH-Cbl, 4.5 \u00b1 0.3 nM for Met-Cbl, and 36 \u00b1 15 nM for Cbi. CbrT is promiscuous toward the \u03b2-axial ligand of cobalamin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C95, C97, C98, C99, and C154 are supported by ITC data (Figure 4b, c, e, and Figure 4\u2014figure supplement 1). The measurements were performed in triplicate or duplicate with appropriate negative controls (C96). The use of crude membrane vesicles is acknowledged as a limitation (C100), but the thermodynamic values are valid. The similar affinities for different Cbl variants support the conclusion of promiscuity toward the \u03b2-axial ligand.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The crystal structure of ECF-CbrT was solved to 3.4 \u00c5 resolution in an apo conformation using molecular replacement with ECF-FolT2 as a search model. The asymmetric unit contains two copies of the complex, each comprising CbrT, EcfT, EcfA, and EcfA'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C49, C103, C104, C105, and C106 are supported by crystallographic data with statistics provided in Supplementary file 1. The structure was deposited in the PDB (6FNP). The resolution of 3.4 \u00c5 is modest but adequate for the structural analysis presented. The use of molecular replacement with a closely related structure (ECF-FolT2) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C118"
+    ],
+    "result": "Structural comparison of ECF-CbrT and ECF-FolT2 reveals how the identical ECF module adjusts to interact with different S-components. The ECF modules have very similar overall structures (NBDs rmsd 1.8 \u00c5, coupling helices rmsd 1.5 \u00c5), but the transmembrane helices of EcfT adopt different conformations (rmsd 4.4 \u00c5), hinging around Pro71. This structural flexibility is necessary to accommodate different S-components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C107, C108, C109, C111, C112, C113, and C118 are supported by structural comparison data (Figure 5b). The rmsd values are provided and the structural differences are clearly illustrated. The interpretation that flexibility is necessary to accommodate different S-components is reasonable and supported by citations to similar observations in other ECF transporters (C113). The inference that conformational adaptations are required for tight association (C118) is well-supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The S-components CbrT and FolT2 show pronounced structural differences (rmsd 3.1 \u00c5) despite having the same overall fold, with only 16% sequence identity. Differences in loop 3 and loop 5 cause alterations in the protein surfaces that interact with EcfT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C116, and C117 are supported by sequence comparison and structural analysis (Figure 5c, d). The low sequence identity and structural differences are clearly documented. The identification of specific loops (3 and 5) as causing surface alterations is supported by the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C126",
+      "C127"
+    ],
+    "result": "The ECF-CbrT structure represents an apo, inward-facing state after substrate release. CbrT is in a 'toppled' orientation with transmembrane helices 1-4 oriented almost parallel to the membrane plane. Although OH-Cbl was added to the crystallization condition, no substrate was bound. The binding cavity is largely occluded by loop 3, in contrast to other ECF transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C120, C121, C122, C126, and C127 are supported by structural analysis (Figure 5e, f). The absence of substrate despite its addition is consistent with the proposed transport model where the inward-facing state has low affinity (C122). The occlusion of the binding cavity is a novel observation compared to other ECF transporters and is well-documented in the structure. The interpretation that this represents a post-release state is supported by citations to similar observations (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C156",
+      "C157"
+    ],
+    "result": "ECF-CbrT and BtuCDF show functional convergence despite being structurally and mechanistically unrelated. The affinity binding constants for CN-Cbl and Cbi by CbrT (9.2 nM and 36 nM) are in the same range as those for BtuF (9.1 nM and 40 nM), suggesting that Cbl-transporters evolved to acquire substrates with similar efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C156, and C157 are supported by comparison of kinetic and binding data with published values for BtuCDF/BtuF. The similar affinities despite different structural mechanisms provide strong evidence for functional convergence. However, the evolutionary interpretation (C157) is speculative, though reasonable. The comparison is strengthened by the similar promiscuity observed for both transporters (C145).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "CbrT could only be purified in the substrate-bound state, as the protein without substrate was unstable in detergent solution. Substrate binding has a stabilizing effect on CbrT. Spectral analysis indicates CbrT binds Cbl in a ~1:1 ratio in detergent solution, consistent with the common stoichiometry for S-components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C90, C91, C92, and C93 are supported by purification data (Figure 4a) and spectral analysis. The observation that substrate binding stabilizes membrane proteins is well-documented in the literature (C91). The 1:1 stoichiometry is inferred from spectral properties and is consistent with other S-components, as supported by citations (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "Kinetic analysis indicates that the rate-limiting step for ECF-CbrT is substrate translocation. The observed high affinities are optimized for efficient substrate scavenging, followed by a slow translocation step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158 and C159 are supported by the combination of high-affinity binding (KM = 2.1 nM) and low Vmax (0.06 nmol \u00d7 mg\u207b\u00b9 \u00d7 s\u207b\u00b9) from kinetic data (Figure 3\u2014figure supplement 1). The interpretation that translocation is rate-limiting is a reasonable inference from these data, though direct measurement of individual steps would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "E. coli \u0394FEC is a knock-out strain with three genomic deletions (\u0394btuF, \u0394metE, \u0394btuC::KmR) that abolishes endogenous Cbl uptake and makes the strain dependent on Cbl for methionine synthesis. This strain requires heterologous expression of an active Cbl transporter to synthesize methionine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 are supported by the strain construction methods and the known functions of the deleted genes. The deletions were verified by colony PCR. The rationale for the strain design is sound: deletion of metE makes E. coli dependent on the Cbl-dependent MetH for methionine synthesis (C55, C56, C57), while deletion of btuF and btuC abolishes Cbl uptake (C58). This is a well-designed genetic system similar to that used by Cadieux et al. (C53).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C128"
+    ],
+    "result": "The binding site for Cbl is hypothesized to be located in a large cavity observed in the CbrT structure. The location matches the position of substrate-binding sites in other S-components. Occlusion of the empty binding site after substrate release may be required for subsequent reorientation of the S-component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124, C125, and C128 are speculative (C124, C128 are explicitly labeled as hypotheses). While the location of the cavity is consistent with other S-components (C125, supported by citations), the structure is in the apo state without substrate, so the actual binding site cannot be definitively identified. The hypothesis about occlusion being required for reorientation (C128) is reasonable but untested. A substrate-bound structure would be needed to confirm these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "It is speculated that transport of Cbl is coupled to the hydrolysis of two ATP molecules, based on the presence of functional ATPase motifs in both EcfA and EcfA' subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is explicitly speculative. While the presence of ATPase motifs in both subunits is structural evidence, the actual coupling ratio cannot be determined from the ATP-dependence experiment (C72). Simultaneous measurement of ATP hydrolysis and transport rates would be needed (C73), which is technically difficult and complicated by futile ATP hydrolysis observed in related transporters (C74). This remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "L. delbrueckii is expected to have the genetic repertoire to synthesize Cbl from Cbi, though homologs of the known E. coli enzymes (CobS, CobU, CobT) could not be found. Other proteins might functionally compensate, or CbrT might bind Cbi in a futile manner. CbrT homologs in Lactobacillales (25-60% sequence identity) are hypothesized to share the same function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C140 and C142 involve speculation about L. delbrueckii metabolism. The expectation that L. delbrueckii can synthesize Cbl from Cbi (C137) is inferred from the growth data, but the absence of known enzyme homologs (C138) creates uncertainty. The alternative explanations (functional compensation C139, or futile binding C140) are both plausible but untested. The hypothesis about CbrT homologs (C142) is based on sequence similarity but lacks functional validation. Additional experiments would be needed to resolve these questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C152"
+    ],
+    "result": "The reduced inhibition by Ado-Cbl (only 25% vs. near-complete inhibition by other Cbl variants) might be due to its bulkier \u03b2-ligand causing steric hindrance. The broader substrate specificity of CbrT might be related to flexibility of loops 1 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148 and C152 are speculative explanations for observed data. While the speculation about Ado-Cbl is reasonable given its larger \u03b2-ligand, no direct structural or mutagenesis data support this interpretation. Similarly, the hypothesis about loop flexibility (C152) is plausible but not directly tested. The structure is in the apo state, so substrate-induced conformational changes cannot be observed. These remain reasonable but unvalidated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C87",
+      "C88"
+    ],
+    "result": "Background information on vitamin B12 (cobalamin) structure, biosynthesis, function, and the previously characterized BtuCDF transporter system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C4, C12-C39, C87-C88) represent established knowledge about vitamin B12 and the BtuCDF system, supported by appropriate citations to prior literature. They provide necessary context for the study but are not novel findings. The information is accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Background information on ECF transporters and the prior prediction that CbrT might be a vitamin B12-specific S-component based on comparative genomics and genetic organization in L. delbrueckii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C40-C46, C129-C135) represent established knowledge about ECF transporters and prior predictions about CbrT, supported by appropriate citations (primarily Rodionov et al., 2009). The genetic organization of the nrdJ\u2013cbrS\u2013cbrT\u2013pduO gene cluster in L. delbrueckii provides strong circumstantial evidence for CbrT's involvement in Cbl uptake (C133). This provides important context and rationale for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Motivation for the study: knowledge about prokaryotic cobalamin uptake is scarce, and Cbl-specific prokaryotic transporters are potential drug targets for vitamin B12 auxotrophic pathogens given the increase in antibiotic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C162-C167 provide the rationale and broader significance of the work. The assessment that knowledge about prokaryotic Cbl uptake is scarce (C5, C162) is supported by the literature. The identification of pathogenic bacteria (S. pyogenes, C. tetani) that carry cbrT and lack BtuCDF (C165) is based on genomic information. The argument that these transporters are potential drug targets (C167) is logical given that humans use a different uptake mechanism (endocytosis), though this remains a prospective application rather than demonstrated utility.",
+    "result_type": "MINOR"
+  }
+]

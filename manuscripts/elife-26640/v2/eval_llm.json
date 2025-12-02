@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The crystal structure of SHIP2 Ptase-C2 (residues 420-878) reveals an extensive interface (940 \u00c5\u00b2) between the phosphatase and C2 domains, with the C2 domain binding opposite to the active site. The interface comprises hydrophobic interactions and a key polar contact via R649, resulting in stabilization of the Ptase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide converging crystallographic evidence at 1.96 \u00c5 resolution with clear electron density. The interface area is quantified, specific residues are identified, and structural stabilization is demonstrated by thermal melting data (Supplementary file 1). Multiple crystal forms confirm the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Loop L4 (residues 674-684) adopts novel 'L4-out' conformations in Ptase-C2 structures, where R682 interacts with D613/D615, representing a ~20 \u00c5 displacement from the 'L4-in' conformation observed in previous Ptase-only structures. The L4-out conformation appears favored by C2 domain presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are supported by direct crystallographic observations in 6 of 8 monomers showing L4-out conformations with clear electron density for stabilizing interactions. The comparison to previous structures (Mills et al., 2012; Tr\u00e9saugues et al., 2014) is appropriate, and the displacement measurement is quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The SHIP2 C2 domain (residues 746-874) adopts a type II \u03b2-sheet sandwich topology with closest structural homology to dysferlin and itchy E3 ubiquitin ligase C2 domains, both belonging to the PKC type C2 subfamily, though sequence identity is low (16%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by crystallographic data and systematic structural comparison using DaliLite and HH-pred. The topology assignment is based on structural alignment with known C2 domains. Low sequence identity despite structural similarity is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Both Ptase and Ptase-C2 bind phosphatidylserine (PS), with the C2 domain enhancing binding. PS binding shows weak Ca\u00b2\u207a dependence (~10% increase), suggesting the interaction is dominated by direct PS binding to basic residues rather than Ca\u00b2\u207a-mediated binding typical of PKC-type C2 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by SPR and PLO experiments showing PS binding. The sequence analysis (C24) explains the weak Ca\u00b2\u207a dependence observed experimentally (C26). However, the PLO assay did not detect the Ca\u00b2\u207a effect seen in SPR, suggesting the effect is subtle and method-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The C2 domain increases catalytic turnover (kcat) ~10-fold for PI(3,4,5)P3-diC8 and ~1.5-fold for IP4, switching substrate preference from IP4 to PI(3,4,5)P3. This differential effect suggests allosteric communication between the domain interface and active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by systematic enzyme kinetics with both substrates (Figure 3A-B, Table 2). The measurements follow Michaelis-Menten kinetics with appropriate controls and replicates. The differential effects on the two substrates strongly support allosteric regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Interface mutations (FLDD and R649A) differentially affect substrate specificity: FLDD mutations eliminate C2 effects on both substrates, while R649A specifically eliminates C2 effects on IP4 but retains effects on PI(3,4,5)P3, suggesting distinct allosteric pathways for headgroup versus lipid chain recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by enzyme kinetics with mutants (Figure 3C-F, Table 2) and crystal structures of FLDD mutant confirming disrupted interface. The differential effects of R649A provide strong evidence for separate communication pathways. CD spectra confirm mutants are properly folded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Soluble PS-diC8 modestly increases activity (~40% for PI(3,4,5)P3-diC8), while PS-diC16 in vesicles increases activity ~2-3-fold for both Ptase and Ptase-C2. This PS effect is independent and additive to C2-mediated allosteric enhancement, suggesting PS acts primarily through membrane localization/positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by enzyme kinetics with soluble lipids and vesicles (Figure 4). The observation that FLDD mutant retains PS effects but loses C2 allosteric effects (C40) demonstrates independence of the two mechanisms. The interpretation of localization effects is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "MD simulations reveal that the C2 domain modulates Ptase dynamics, particularly increasing L4 fluctuations when unbound while stabilizing the \u03b15-\u03b16 region and D613/D615 docking site. The C2 domain facilitates sustained L4 release (~1 \u03bcs) and promotes transitions between L4-in and L4-out conformations, suggesting communication via R649 connecting helices \u03b15-7 to the C2 domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C56 are supported by extensive MD simulations (>4 \u03bcs) with systematic RMSF, RMSD, PCA, and cluster analyses. The computational observations are validated by crystallographic evidence showing different \u03b15 positions (C49-C50). However, the simulations start from L4-out conformation and may not fully sample L4-in to L4-out transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A substrate binding model based on INPP5B homology positions N684 as a key 4-phosphate interacting residue and R682 (in L4-in conformation) interacting with the 3-phosphate of PI(3,4,5)P3. MD simulations show the C2 domain restricts substrate headgroup displacement from the Michaelis-Menten complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60 rely on a homology model since co-crystallization with substrate failed (C61). While the model is based on reasonable structural homology to INPP5B, it remains unvalidated by direct structural evidence. The MD simulations (C60) support the model but cannot confirm it without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Co-crystallization of catalytically inactive D607A mutant with substrate failed to reveal substrate density but showed Mg\u00b2\u207a and phosphate displaced by 1.3 \u00c5 and 1.7 \u00c5 respectively from model positions, potentially representing post-catalysis positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 accurately report the crystallographic observations. The interpretation as post-catalysis positions (C64) is speculative but reasonable given the lack of space for attacking water. This negative result is important for understanding the limitations of the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Systematic mutagenesis identifies a polar allosteric pathway (R649-D613/D615-R682-L4) specifically affecting IP4 kinetics, with R682 and N684 critical for substrate binding via 3-P and 4-P respectively. R665 stabilizes Mg\u00b2\u207a coordination in Ptase alone but becomes dispensable with C2 domain present, supporting C2-mediated active site stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 are supported by comprehensive mutagenesis with enzyme kinetics (Figure 7, Table 3) and CD spectroscopy confirming proper folding. The similar behavior of D613A/D615A and R649A mutants (C65-C66) provides strong evidence for the proposed pathway. However, some mutants (R691A, N684A) show CD changes complicating interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In HEK293 cells, wild-type SHIP2 reduces Akt phosphorylation, while C2 deletion abolishes activity and FLDD mutations partially reduce activity, confirming that C2 domain interactions observed in crystal structures are important for cellular function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by cell-based assays with appropriate controls (Figure 8). The experiments use transient overexpression which may not fully reflect endogenous regulation, but the results are consistent with in vitro findings. Statistical analysis with n=24 provides adequate power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Despite lacking sequence homology, PTEN and SHIP2 share a common architectural feature of rigid linkage to C2 domains using similar interaction surfaces, suggesting C2 domains provide an ideal scaffold for orienting lipid-modifying enzymes on membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by structural comparisons with appropriate citations. The observation that PTEN, SHIP2, and PLC\u03b41 use similar C2 interaction surfaces despite low sequence identity (4% between PTEN and SHIP2) suggests convergent evolution of this regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The C2 domain is essential for SHIP2 cellular function, and the extensive rigid interface (940 \u00c5\u00b2) suggests the Ptase-C2 region represents the minimal fully active catalytic unit capable of engaging membrane-embedded substrate without extensive lipid extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are directly supported by cell assays (Figure 8). Claims C86-C87 are reasonable inferences from the extensive interface and structural modeling, though the possibility of conformational changes upon membrane binding cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PS binding occurs through both Ptase and C2 domains, with enhanced effects on vesicles versus soluble PS suggesting membrane localization contributes to activity. Ptase binding appears sufficient for this effect, similar to mechanisms observed in PTEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by PS binding experiments (Figures 2, 4) and appropriate comparison to PTEN literature. The interpretation that Ptase binding is sufficient (C92) is supported by the observation that FLDD mutant retains PS effects, though this doesn't exclude additional C2 contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The C2 domain provides allosteric effects independent of membrane binding through changes in protein dynamics rather than large conformational changes. Hydrophobic and polar interface regions differentially affect PI(3,4,5)P3 lipid chains versus headgroup, with a specific polar pathway (C2-R649-\u03b15-7-D613/D615-R682-L4) linking to the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 synthesize multiple lines of evidence from kinetics, mutagenesis, and MD simulations. The differential effects of R649A (affecting only IP4) versus FLDD (affecting both substrates) strongly support distinct pathways. The proposed communication to L2 for lipid chains (C97) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The polar allosteric pathway is disrupted by R691A (causing inactivation likely through structural destabilization) or by R649A/D613A-D615A mutations (specifically removing C2 effects on IP4). This pathway may be relevant for cellular IP4 activity and for PI(3,4,5)P3 with buried lipid chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by mutagenesis data. The connection to disease mutations (C100) is appropriately cited. Claims C102-C103 are speculative interpretations about cellular relevance but are reasonable given the data. The structural destabilization of R691A is confirmed by CD spectroscopy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A catalytic cycle is proposed where efficient L4 opening and closing is important for turnover: L4 opens for substrate entry, substrate binding disrupts the doubly-bound L4-out hydrogen network facilitating closure to L4-in for catalysis, then L4 reopens with reestablishment of the hydrogen network aiding product release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C112 propose a detailed mechanistic model based on structural observations and MD simulations. While the model is consistent with available data, it remains largely speculative as the MD simulations did not directly observe complete L4-in to L4-out transitions, and substrate-bound structures are modeled rather than experimentally determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "R682 is positioned to interact with the 3-phosphate of PI(3,4,5)P3 in the L4-in conformation, conferring 3-P specificity. Mutation of R682 severely reduces activity. R682 might also contribute to 4-P interactions explaining observed PI(4,5)P2 activity, though SHIP2 clearly prefers PI(3,4,5)P3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by the substrate binding model and mutagenesis showing R682A loses most activity. Claims C115-C117 appropriately cite literature on substrate specificity. The speculation about PI(4,5)P2 activity (C116) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "SHIP2 has weaker Mg\u00b2\u207a coordination than other 5-Ptases due to G434 replacing an asparagine (N275 in INPP5B), with coordination likely provided by a water molecule stabilized by R665. This stabilization is important only in absence of C2-mediated active site stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by structural comparison and mutagenesis showing R665A mainly affects Ptase but not Ptase-C2 (Figure 7D-E). The interpretation is consistent with the substrate binding model and MD simulations showing C2-mediated substrate stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The 5-P attack mechanism is conserved among 5-Ptases and AP endonucleases, though the exact catalytic mechanism (one versus two metal ions) remains debated. SHIP2 and INPP5B show Mg\u00b2\u207a displaced toward the B-site post-cleavage, opposite to the proposed B-to-A movement during catalysis in AP nucleases, with subtle differences among 5-Ptases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C129 appropriately review literature on catalytic mechanisms with proper citations. The comparison of SHIP2 D607A structure to INPP5B and OCRL (C126-C128) is supported by crystallographic data. The observation of opposite Mg\u00b2\u207a movement (C129) is interesting but interpretation is limited by lack of substrate-bound structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "SHIP1 shares 45% overall sequence identity with SHIP2 (65% in 5-Ptase, 43% in C2), with conserved interface residues and L2, suggesting many mechanisms are conserved. The polar pathway is partially conserved with similar residues, and K665 in SHIP1 likely provides 3-P specificity analogous to R682 in SHIP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 are supported by sequence analysis. The inferences about conserved mechanisms (C131, C133, C136-C137) are reasonable given the high sequence identity in key regions, though experimental validation in SHIP1 would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study provides insights into how the C2 domain assists SHIP2 catalysis through membrane positioning, active site stabilization, and allosteric signaling, which together are crucial for cellular function. This understanding may aid design of strategies to target SHIP enzymes with high specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 appropriately summarize the major findings which are well-supported by the data. Claim C140 about therapeutic applications is speculative but reasonable given SHIP enzymes' roles in disease. This represents a fair assessment of the work's significance and potential impact.",
+    "result_type": "MINOR"
+  }
+]

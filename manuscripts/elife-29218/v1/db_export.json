@@ -1,0 +1,2085 @@
+{
+  "submission": {
+    "id": "9786d5b6-fbaa-4253-aa2b-698840203efb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:53:08.399818Z",
+    "updated_at": "2025-12-01T20:53:08.399818Z"
+  },
+  "content": [
+    {
+      "id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "submission_id": "9786d5b6-fbaa-4253-aa2b-698840203efb",
+      "content_type": "manuscript",
+      "content_text": "# Post-translational thioamidation of methyl-coenzyme M reductase, a key enzyme in methanogenic and methanotrophic Archaea\n\n## Authors\n\n- Dipti D Nayak<sup>1</sup> ([ORCID: 0000-0002-8390-7251](https://orcid.org/0000-0002-8390-7251))\n- Nilkamal Mahanta<sup>2</sup> ([ORCID: 0000-0001-8901-2531](https://orcid.org/0000-0001-8901-2531))\n- Douglas A Mitchell<sup>1</sup> ([ORCID: 0000-0002-9564-0953](https://orcid.org/0000-0002-9564-0953)) \u2020\n- William W Metcalf<sup>1</sup> ([ORCID: 0000-0002-0182-0671](https://orcid.org/0000-0002-0182-0671)) \u2020\n\n### Affiliations\n\n1. Carl R. Woese Institute for Genomic Biology University of Illinois Urbana United States\n2. Department of Chemistry University of Illinois Urbana United States\n3. Department of Microbiology University of Illinois Urbana United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMethyl-coenzyme M reductase (MCR), found in strictly anaerobic methanogenic and methanotrophic archaea, catalyzes the reversible production and consumption of the potent greenhouse gas methane. The \u03b1 subunit of MCR (McrA) contains several unusual post-translational modifications, including a rare thioamidation of glycine. Based on the presumed function of homologous genes involved in the biosynthesis of thioviridamide, a thioamide-containing natural product, we hypothesized that the archaeal tfuA and ycaO genes would be responsible for post-translational installation of thioglycine into McrA. Mass spectrometric characterization of McrA from the methanogenic archaeon Methanosarcina acetivorans lacking tfuA and/or ycaO revealed the presence of glycine, rather than thioglycine, supporting this hypothesis. Phenotypic characterization of the \u2206ycaO-tfuA mutant revealed a severe growth rate defect on substrates with low free energy yields and at elevated temperatures (39\u00b0C - 45\u00b0C). Our analyses support a role for thioglycine in stabilizing the protein secondary structure near the active site.\n\n## Introduction\n\nMethyl-coenzyme M reductase (MCR) is a unique enzyme found exclusively in anaerobic archaea, where it catalyzes the reversible conversion of methyl-coenzyme M (CoM, 2-methylmercaptoethanesulfonate) and coenzyme B (CoB, 7-thioheptanoylthreoninephosphate) to methane and a CoB-CoM heterodisulfide (Ermler et al., 1997; Scheller et al., 2010):\n\n$$\nCH_{3}\u2212S\u2212CoM\u00a0+\u00a0HS\u2212CoB\u00a0\u21c4CH_{4}\u00a0+\u00a0CoM\u2212S\u2212S\u2212CoB\n$$\n\nThis reaction, which has been proposed to proceed via an unprecedented methyl radical intermediate (Wongnate et al., 2016), plays a critical role in the global carbon cycle (Thauer et al., 2008). In the forward direction, MCR catalyzes the formation of methane in methane-producing archaea (methanogens). In the reverse direction, MCR catalyzes the consumption of methane in methanotrophic archaea (known as ANMEs, for anaerobic oxidation of methane). Together, these processes produce and consume gigatons of methane each year, helping to establish the steady-state atmospheric levels of an important greenhouse gas. MCR displays an \u03b12\u03b22\u03b32 protein domain architecture and contains two molecules of F430, a nickel porphinoid cofactor (Ermler et al., 1997; Zheng et al., 2016; Moore et al., 2017). The reduced Ni(I) form of F430 is essential for catalysis (Goubeaud et al., 1997), but is highly sensitive to oxidative inactivation, a feature that renders biochemical characterization of MCR especially challenging. As a result, many attributes of this important enzyme remain uncharacterized.\n\nAn unusual feature of MCR is the presence of several modified amino acids within the active site of the \u03b1-subunit. Among these are a group of methylated amino acids, including 3-methylhistidine (or N1-methylhistidine), S-methylcysteine, 5(S)-methylarginine, and 2(S)-methylglutamine, which are presumed to be installed post-translationally by S-adenosylmethionine-dependent methyltransferases (Selmer et al., 2000; Kahnt et al., 2007). 3-methylhistidine is found in all MCRs examined to date, whereas the presence of the other methylated amino acids is variable among methane-metabolizing archaea (Kahnt et al., 2007). A didehydroaspartate modification is also observed in some, but not all, methanogens (Wagner et al., 2016). Lastly, a highly unusual thioglycine modification, in which the peptide amide bond is converted to a thioamide, is present in all methanogens that have been analyzed to date (Figure 1\u2014figure supplement 1) (Ermler et al., 1997; Kahnt et al., 2007).\n\nThe function(s) of the modified amino acids in MCR has/have not yet been experimentally addressed; however, several theories have been postulated. The 3-methylhistidine may serve to position the imidazole ring that coordinates CoB. This methylation also alters the pKa of histidine in a manner that would promote tighter CoB-binding (Grabarse et al., 2000). The variable occurrence of the other methylated amino acids suggests that they are unlikely to be directly involved in catalysis. Rather, it has been hypothesized that they tune enzyme activity by altering the hydrophobicity and flexibility of the active site pocket (Kahnt et al., 2007; Grabarse et al., 2000). A similar argument has been made for the didehydroaspartate residue (Wagner et al., 2016). In contrast, three distinct mechanistic hypotheses have implicated the thioglycine residue in catalysis. One proposal is that the thioglycine facilitates deprotonation of CoB by reducing the pKa of the sulfhydryl group (Grabarse et al., 2001). A second proposal suggests that thioglycine could serve as an intermediate electron carrier for oxidation of a proposed heterodisulfide anion radical intermediate (Horng et al., 2001). Lastly, cis-trans isomerization of the thioamide during catalysis could potentially play an important role in coupling the two active sites via a previously proposed two-stroke mechanism for the enzyme (Goenrich et al., 2005).\n\nThioamides are rare in biology. While cycasthioamide is plant-derived (Pan et al., 1997), most other naturally occurring thioamides are of bacterial origin. Among these are the ribosomally synthesized and post-translationally modified (RiPP) peptide natural products thioviridamide (Hayakawa et al., 2006) and methanobactin (Kim et al., 2004; Kenney and Rosenzweig, 2012; Kenney and Rosenzweig, 2013), as well\u00a0as\u00a0closthioamide, which appears to be an unusual non-ribosomal peptide (Lincke et al., 2010; Chiriac et al., 2015). The nucleotide derivatives thiouridine and thioguanine (Coyne et al., 2014), and two additional natural product antibiotics, thiopeptin and Sch 18640 (Puar et al., 1981; Hensens and Albers-Sch\u00f6nberg, 1983), also contain thioamide moieties. Although the mechanism of thioamide installation in peptides has yet to be established, the identification of the thioviridamide biosynthetic gene cluster provides clues to their origin (Izawa et al., 2013). Two of the proteins encoded by this gene cluster have plausible roles in thioamide synthesis. The first, TvaH, is a member of the YcaO superfamily, while the second, TvaI, is annotated as a \u2018TfuA-like\u2019 protein (Izawa et al., 2013). Biochemical analyses of YcaO-family proteins indicate that they catalyze the ATP-dependent cyclodehydration of Cys, Ser, and Thr residues to the corresponding thiazoline, oxazoline, and methyloxazoline (Figure 1). Many \u2018azoline\u2019 heterocycles undergo dehydrogenation to the corresponding azole, which are prominent moieties in various RiPP natural products classes, such as linear azol(in)e-containing peptides, thiopeptides, and cyanobactins (Dunbar et al., 2012; Dunbar et al., 2014; Arnison et al., 2013; Burkhart et al., 2017). The YcaO-dependent synthesis of peptidic azol(in)e heterocycles often requires a partner protein, which typically is the neighboring gene in the biosynthetic gene cluster (Burkhart et al., 2015; Dunbar et al., 2015; Wright et al., 2006). Based on enzymatic similarity, the TfuA protein encoded adjacent to the YcaO in the thioviridamide pathway may also enhance the thioamidation reaction, perhaps by recruiting a sulfurtransferase protein. Although not RiPPs, thiouridine and thioguanine biosynthesis requires the use of sulfurtransferases (Coyne et al., 2013; Palenchar et al., 2000).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig1-v1.jpg)\n\n**Figure 1.:** Top, Biochemically characterized YcaO proteins involved in the synthesis of azol(in)e-containing ribosomal natural products catalyze the ATP-dependent cyclodehydration of cysteine, serine, and threonine residues. Shown is the conversion of peptidic cysteine to thiazoline. This reaction proceeds via an O-phosphorylated hemiorthoamide intermediate. Bottom, An analogous reaction is believed to occur in the biosynthesis of the thioamide bond in thioviridamide. Rather than an adjacent cysteine acting as the nucleophile, an exogenous source of sulfide (S2-) is required for this reaction.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The peptide backbone of McrA in the vicinity of the thioglycine (Gly462-Leu468) is shown in gray sticks with the thioamide sulfur of Gly465 shown as a yellow sphere. Coenzymes B, M, and F430 are shown with several interatomic distances to McrA-Asn501.\n\nThe biosynthesis of the thioglycine in MCR was proposed to occur by a mechanism similar to that used to produce thioamide-containing natural products (Kahnt et al., 2007), a prediction made six years prior to the discovery of the thioviridamide biosynthetic gene cluster (Izawa et al., 2013). Given their putative role in thioamidation reactions, it is notable that YcaO homologs were found to be universally present in an early analysis of methanogen genomes, resulting in their designation as \u2018methanogenesis marker protein 1\u2019 (Basu et al., 2011). Genes encoding TfuA homologs are also ubiquitous in methanogens, usually encoded in the same locus as ycaO, similar to their arrangement in the thioviridamide biosynthetic gene cluster. Therefore, both biochemical and bioinformatic evidence are consistent with these genes being involved in thioglycine formation. In this report, we use the genetically tractable methanogen Methanosarcina acetivorans to show that installation of the thioamide bond at Gly465 in the \u03b1-subunit of MCR requires the ycaO-tfuA locus (Figure 1\u2014figure supplement 1). As MCR is essential for growth and survival (Rother et al., 2005), the viability of ycaO-tfuA mutants precludes the hypothesis that the thioamide residue is essential for MCR activity. Instead, our phenotypic analyses support a role for thioglycine in maintaining a proper structural conformation of residues near the active site, such that absence of this modification in MCR might be particularly detrimental on growth substrates that have low free energy yields as well as under additionally destabilizing conditions such as elevated temperatures.\n\n## Results\n\n### Phylogenetic analyses of TfuA and YcaO in methanogenic and methanotrophic archaea\n\nTo examine the possibility that YcaO and TfuA are involved in McrA thioamidation, we reassessed the distribution, diversity, and phylogeny of genes encoding these proteins in sequenced microbial genomes, which today comprise a much larger dataset than when \u2018methanogenesis marker protein 1\u2019 was first proposed (Basu et al., 2011). Significantly, all complete methanogen and ANME genome sequences encode a YcaO homolog, with a few strains encoding two copies (Figure 2). The YcaO sequences form a distinct, well-supported clade that also includes homologs from ammonia-oxidizing archaea (Figure 2\u2014figure supplement 1). Excluding the second YcaO in strains that encode two copies, the YcaO tree is congruent with the phylogeny of methanogens reconstructed using housekeeping or mcr genes (Figure 2). Thus, it is likely that YcaO was acquired early in the evolution of methanogens and maintained largely through vertical inheritance, as expected for a trait that coevolved with MCR (Borrel et al., 2013; Vanwonterghem et al., 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig2-v1.jpg)\n\n**Figure 2.:** Taxa in green, blue, and orange depict methanogens and anaerobic methane-oxidizing archaea (ANMEs) with sequenced genomes. Taxa shown in green contain a single copy of ycaO and tfuA, those in blue contain two copies of ycaO and one copy of tfuA, while those in orange contain one copy of ycaO, but do not encode tfuA. Taxa shown in pink are other archaea that also encode ycaO and tfuA homologs. The gene neighborhoods of selected taxa are also depicted, showing the common co-localization with genes annotated as having a role in sulfur metabolism or methanogenesis. The node labels indicate support values calculated using the Shiomdaira-Hasegawa test using 1000 resamples. Support values less than 0.5 have not been shown. The outgroup displayed derives from a variety of bacterial YcaO proteins.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (Panel B) Unrooted maximum-likelihood phylogeny of 1,000 TfuA sequences retrieved from the NCBI non-redundant protein sequence database using the corresponding sequence from M. acetivorans as a search query. Divergent archaea-derived sequences in the TfuA tree are denoted with an *.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** For taxa where tfuA and ycaO are not adjacently encoded genes a gene architecture diagram is shown. The node labels indicate support values calculated using the Shiomdaira-Hasegawa test using 1000 resamples. Support values less than 0.5 have not been shown. The outgroup is comprised of various bacterial TfuA protein sequences.\n\nTfuA homologs are encoded in the overwhelming majority of MCR-encoding taxa, although a few species lack this gene. The latter include Methanopyrus kandleri and Methanocaldococcus janaschii, two species previously shown to contain the thioglycine modification (Kahnt et al., 2007) (Figure 2). Thus, TfuA cannot be obligatorily required for thioglycine installation. The archaeal TfuA proteins also fall within a single clade that is largely congruent with the evolutionary history of archaea (Figure 2\u2014figure supplements 1\u20132); however, unlike YcaO, the methanogen-containing clade includes numerous bacterial homologs (Figure 2\u2014figure supplement 2).\n\nThe genomic context of tfuA and ycaO in methanogens supports a shared or related function, perhaps involving sulfur incorporation and/or methanogenesis (Figure 2). When both are present, the two genes comprise a single locus in which the stop codon of the upstream ycaO gene overlaps with the start codon of the downstream tfuA gene, suggesting that they are co-transcribed. In several instances, additional genes involved in sulfur metabolism such as thiF, sufS, as well as moaD, moaE and moeB (involved in molybdopterin biosynthesis) (Zhang et al., 2010; Park et al., 2003), are found in the genomic vicinity. Occasionally, genes encoding enzymes involved in methanogenesis, including the Methanomassiliicoccus MCR operon, are locally encoded (Figure 2).\n\n### TfuA and YcaO are not essential in Methanosarcina acetivorans\n\nTo test their role in thioglycine installation, we generated a mutant lacking the ycaO-tfuA locus in the genetically tractable methanogen Methanosarcina acetivorans. Based on the hypothesis that thioglycine may be imperative for MCR activity, and the knowledge that the MCR-encoding operon (mcrBCDAG) is essential (Guss et al., 2008), we first examined the viability of \u0394ycaO-tfuA mutants using a recently developed Cas9-based assay for gene essentiality (Nayak and Metcalf, 2017). This assay compares the number of transformants obtained using a Cas9 gene-editing plasmid with and without a repair template that creates a gene deletion. Essential genes give similar, low numbers of transformants with or without the repair template; whereas non-essential genes give ca. 103-fold higher numbers with the repair template. Our data demonstrate that deletion of the ycaO-tfuA locus has no impact on viability (Figure 3). Several independent mutants were clonally purified and verified by PCR prior to phenotypic characterization (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig3-v1.jpg)\n\n**Figure 3.:** Co-expression of the Cas9 protein along with a single guide RNA (sgRNA) with a 20 bp target sequence flanked by a 3\u2019 NGG protospacer adjacent motif on the chromosome (PAM; in red) generates double-stranded breaks at the ycaO-tfuA locus. Repair of this break via homologous recombination with an appropriate repair template (HR Template) generates an in-frame deletion on the host chromosome. Panel B, A Cas9-based assay for gene essentiality. Mean transformation efficiencies of plasmids with (dark gray) or without (light gray) an appropriate repair template are shown. The known essential gene mcrA is included as a positive control. The error bars represent one standard deviation of three independent transformations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The PCR amplicon from three independently derived mutants containing an unmarked in-frame deletion of ycaO-tfuA (Lanes 2\u20134) is 2980 bp whereas the corresponding amplicon from a strain containing the wild-type locus is 4742 bp (Lane 5). Lanes 1 and 6 contain a 1 kb DNA ladder.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Co-expression the Cas9 protein along with single guide RNAs (sgRNAs) containing a 20 bp target sequence flanked by a 3\u2019 NGG protospacer adjacent motif on the chromosome (PAM; in red) generates double-stranded breaks. Repair of this break via homologous recombination with an appropriate repair template (HR Template) generates an in-frame deletion on the host chromosome.\n\n### The \u2206ycaO-tfuA mutant lacks the McrA Gly465 thioamide\n\nTo test whether YcaO and TfuA are involved in the post-translational modification of Gly465 in McrA, we isolated the McrA protein from cell extracts of the isogenic parent (hereafter referred to as wild-type or WT), the \u2206ycaO-tfuA mutant, as well as from \u2206tfuA and \u2206ycaO individual mutants (Figure 3\u2014figure supplement 2). After performing SDS-PAGE, the appropriate Coomassie-stained bands were excised and then subjected to in-gel trypsin digestion. The resulting peptides were then analyzed by matrix-assisted laser desorption-ionization time-of-flight mass spectrometry (MALDI-TOF-MS). The mass spectrum from the WT strain showed a peak at m/z 3432 Da (Figure 4) corresponding to the peptide (461LGFFGFDLQDQCGATNVLSYQGDEGLPDELR491) with Gly465 being thioamidated (Kahnt et al., 2007; Grabarse et al., 2000). The identity of this peptide was confirmed by high-resolution electrospray ionization tandem MS analysis (HR-ESI-MS/MS, [M\u00a0+\u00a03H]3+ expt. m/z 1144.8608 Da; calc. m/z 1144.8546 Da; 5.4 ppm error; Figure 4\u2014figure supplement 1A). This peptide also contains the recently reported didehydroaspartate modification at Asp470 (Wagner et al., 2016) and S-methylation at Cys472 (Selmer et al., 2000). Consistent with the involvement of TfuA-associated YcaO proteins in thioamide formation, we noted the absence of the m/z 3432 Da species in the mass spectrum of similarly treated \u2206ycaO-tfuA, \u2206tfuA, and \u2206ycaO samples. Instead, a predominant m/z 3416 Da species appeared, which was 16 Da lighter, consistent with replacement of sulfur by oxygen (Figure 4). HR-ESI-MS/MS analysis of the corresponding peptide from the \u2206ycaO-tfuA mutant confirmed the identity of this peptide as being McrA Leu461-Arg491 ([M\u00a0+\u00a03H]3+ expt. m/z 1139.5316 Da; calc. m/z 1139.5290 Da; 2.3 ppm error; Figure 4\u2014figure supplement 1B). During HR-ESI-MS/MS analysis of the WT, thioamide-containing peptide, we did not observe fragmentation between Gly465 and Phe466. In contrast, fragmentation was seen at this location in the \u2206ycaO-tfuA strain (b5 ion, Figure 4\u2014figure supplement 1B). The lack of fragmentation in the WT peptide was anticipated based on the greater double bond character of C-N bonds in thioamides (Wiberg and Rablen, 1995).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig4-v1.jpg)\n\n**Figure 4.:** Panel A, Spectrum obtained from trypsinolysis of WT MCR, which contains the thioglycine-modified L461-R491 peptide (m/z 3432 Da). A small amount of the unmodified L461-R491 peptide (m/z 3416 Da) is also observed, which probably arises via non-enzymatic hydrolysis of the thioamide bond as previously reported (Kahnt et al., 2007). Panels B, C, D, Spectrum obtained from trypsinolysis of McrA from the \u2206ycaO-tfuA, \u2206tfuA, \u2206ycaO strains, respectively, containing only the unmodified L461-R491 peptide (m/z 3416 Da). Panels E, F, G. Spectrum obtained from trypsinolysis of MCR from the \u2206ycaO-tfuA mutant complemented with PmcrB(tetO4)-ycaO-tfuA, \u2206tfuA mutant complemented with PmcrB(tetO4)-tfuA, \u2206ycaO mutant complemented with PmcrB(tetO4)-ycaO, respectively. Tetracycline was added to a final concentration of 100 \u00b5g/mL to the growth medium to induce expression from the PmcrB(tetO4) promoter. All three spectra contain the thioglycine-modified Leu461-Arg491 peptide (m/z 3432 Da). The m/z 3375 Da species present in all samples corresponds to McrA residues D392-R421.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The b6 ion localizes the thioamide modification to Gly465. No b5 ion was detected suggesting negligible fragmentation at the thioamide bond. Predicted masses and associated errors are shown. (Panel B) HR-ESI-MS/MS analysis of the corresponding McrA tryptic peptide from the \u2206ycaO-tfuA deletion strain of M. acetivorans (m/z 3416 Da). The b5 and b6 ion localizes the amide functionality at Gly465. Predicted masses and associated errors are shown.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Predicted masses and associated errors are shown.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** This suggests that the thioglycine formation is not a prerequisite for this methylation event. (Panel B) MALDI-TOF MS analysis of the WT (top) and \u2206ycaO-tfuA deletion strain (bottom) spectra identify the McrA tryptic peptide, Phe408-Arg421, (m/z 1561 Da). This peptide has been reported to contain a \u03b2-methylation at Gln420 in other methanogens (Kahnt et al., 2007), however, it remains unmodified in M. acetivorans.\n\nTo confirm that mutations in ycaO and/or tfuA were responsible for loss of the thioglycine modification, we transformed the \u2206ycaO-tfuA mutant with a self-replicating plasmid containing the ycaO-tfuA locus fused to the tetracycline-inducible promoter PmcrB(tetO4) (Guss et al., 2008). Upon tryptic digestion of MCR from cultures supplemented with tetracycline, a peak at m/z 3432 Da reappeared (Figure 4). Similar results were obtained when complementation experiments were performed with the ycaO or tfuA genes in the corresponding single mutants (Figure 4).\n\nThe m/z 3375 Da species present in all samples corresponds to an unrelated tryptic peptide, McrA Asp392-Arg421 (Figure 4\u2014figure supplement 2). We also observed a peak at m/z 1496 in the WT and mutant samples corresponding to a N-methylhistidine-containing tryptic peptide (His271-Arg284, Figure 4\u2014figure supplement 3A). Thus, thioglycine formation is not a prerequisite for this modification. Additionally, a peak at m/z 1561 was observed, corresponding to McrA Phe408-Arg421, shows that Gln420 remains unmodified in M. acetivorans, as previously been observed for Methanosarcina barkeri (Figure 4\u2014figure supplement 3B) (Kahnt et al., 2007).\n\n### Growth defects associated with loss of the McrA thioglycine modification\n\nTo understand potential phenotypic consequences of losing the thioglycine modification, we quantified the doubling time and growth yield by monitoring changes in optical density during growth of M. acetivorans on a variety of substrates (Table 1). While no significant differences were observed during growth on methanol or trimethylamine (TMA) at 36\u00b0C, the \u2206ycaO-tfuA mutant had substantially longer generation times and lower cell yields on both dimethylsulfide (DMS) and acetate (Table 1). Interestingly, the growth phenotype on methanol medium was strongly temperature-dependent, with no observed differences at 29\u00b0C and 36\u00b0C, but severe defects observed for the \u2206ycaO-tfuA mutant at 39\u00b0C and 42\u00b0C. Furthermore, unlike WT, the mutant was incapable of growth at 45\u00b0C (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig5-v1.jpg)\n\n**Figure 5.:** A statistically significant difference (p<0.01) using a two-tailed unpaired t-test is indicated with an *. NG indicates that no growth was detected after one month of incubation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (Panel B), Affinity purified TAP-tagged MCR from WT and the \u2206ycaO-tfuA mutant. A fourth band, identified by as a hypothetical protein encoded by MA3997, co-purified along with the three MCR subunits in each case.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The peaks at 280 nm and 430 nm respectively correspond to absorbances from the protein (Trp/Tyr) and F430. To facilitate comparison, each spectrum was normalized by setting the absorbance at 660 nm to 0.\n\n**Table 1.**\n Growth phenotypes of M. acetivorans WT and the \u2206ycaO-tfuA mutant on different substrates at 36\u00b0C.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Substrate*</th>\n      <th>Strain</th>\n      <th>Doubling time (h)\u2020</th>\n      <th>p-value</th>\n      <th>Maximum OD600\u2020</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Methanol</td>\n      <td>WT</td>\n      <td>6.94\u00a0\u00b1\u00a00.41</td>\n      <td rowspan=\"2\">0.87</td>\n      <td>5.35\u00a0\u00b1\u00a00.31</td>\n      <td rowspan=\"2\">0.26</td>\n    </tr>\n    <tr>\n      <td>\u2206ycaO-tfuA</td>\n      <td>6.89\u00a0\u00b1\u00a00.15</td>\n      <td>5.06\u00a0\u00b1\u00a00.39</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">TMA</td>\n      <td>WT</td>\n      <td>10.92\u00a0\u00b1\u00a00.54</td>\n      <td rowspan=\"2\">0.84</td>\n      <td>9.57\u00a0\u00b1\u00a00.67</td>\n      <td rowspan=\"2\">0.31</td>\n    </tr>\n    <tr>\n      <td>\u2206ycaO-tfuA</td>\n      <td>10.98\u00a0\u00b1\u00a00.43</td>\n      <td>8.91\u00a0\u00b1\u00a00.73</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Acetate</td>\n      <td>WT</td>\n      <td>54.23\u00a0\u00b1\u00a04.03</td>\n      <td rowspan=\"2\">0.0002</td>\n      <td>0.44\u00a0\u00b1\u00a00.01</td>\n      <td rowspan=\"2\">0.0005</td>\n    </tr>\n    <tr>\n      <td>\u2206ycaO-tfuA</td>\n      <td>124.33\u00a0\u00b1\u00a012.52</td>\n      <td>0.35\u00a0\u00b1\u00a00.02</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">DMS</td>\n      <td>WT</td>\n      <td>31.27\u00a0\u00b1\u00a01.28</td>\n      <td rowspan=\"2\">&lt;0.0001</td>\n      <td>0.60\u00a0\u00b1\u00a00.01</td>\n      <td rowspan=\"2\">&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>\u2206ycaO-tfuA</td>\n      <td>58.28\u00a0\u00b1\u00a01.45</td>\n      <td>0.44\u00a0\u00b1\u00a00.01</td>\n    </tr>\n  </tbody>\n</table>\n\n_*TMA, trimethylamine; DMS, dimethylsulfide.\u2020The error represents the 95% confidence interval of the mean for three biological replicates and the p-values were calculated using two-tailed unpaired t-tests._\n\n### Thioglycine does not influence the global stability of MCR\n\nGiven that the C-N bond rotation barrier is higher for thioamides relative to amide (Wiberg and Rablen, 1995), we tested if the presence of thioglycine promotes the thermal stability of MCR. We evaluated thermal stability by assaying the melting temperature of MCR purified from WT and the \u2206ycaO-tfuA mutant. A tandem affinity purification (TAP) tag consisting of a 3\u00a0\u00d7\u00a0FLAG tag and a Twin-Strep tag was introduced immediately upstream of the start codon of mcrG (Figure 5\u2014figure supplement 1A). The proteins were affinity-purified using a Strep-tactin resin under aerobic conditions (Figure 5\u2014figure supplement 1B). Using the SYPRO Orange-based Thermofluor assay (Huynh and Partch, 2015), the melting temperature of WT MCR was 67.3 \u00b1 0.3\u00b0C (mean\u00a0\u00b1\u00a095% confidence interval of three technical replicates) whereas the melting temperature for the MCR variant lacking thioglycine was 69.1 \u00b1 0.2\u00b0C. Additionally, quantification of the protein and F430 concentrations by Bradford assay and absorption at 280/430 nm demonstrated that the F430 content was not significantly affected by the presence of thioglycine (Figure 5\u2014figure supplement 2).\n\n## Discussion\n\nThe loss of the thioglycine modification in the \u2206ycaO, \u2206tfuA, and \u0394ycaO-tfuA mutants shows that both of these genes are required for the thioamidation of McrA. Although this could be an indirect requirement, we believe it is more likely that the YcaO/TfuA proteins directly catalyze modification of McrA. This conclusion is mechanistically compatible with biochemical analyses of YcaO homologs. YcaO enzymes that carry out the ATP-dependent cyclodehydration of beta-nucleophile-containing amino acids have been extensively investigated (Burkhart et al., 2017). Such cyclodehydratases coordinate the nucleophilic attack of the Cys, Ser, and Thr side chain on the preceding amide carbonyl carbon in a fashion reminiscent of intein splicing (Perler et al., 1997) (Figure 1). The enzyme then O-phosphorylates the resulting oxyanion and subsequently N-deprotonates the hemiorthoamide, yielding an azoline heterocycle. An analogous reaction can be drawn for the YcaO-dependent formation of peptidic thioamides. The only difference is that an exogenous equivalent of sulfide is required for the thioamidation reaction, rather than an adjacent beta-nucleophile-containing amino acid for azoline formation (Figure 1).\n\nMost YcaO cyclodehydratases require a partner protein for catalytic activity. The earliest investigated YcaO partner proteins are homologs of the ThiF/MoeB family, which are related to E1 ubiquitin-activating enzymes (Dunbar et al., 2014; Schulman et al., 2009). These YcaO partner proteins, as well as the more recently characterized \u2018ocin-ThiF\u2019 variety (Dunbar et al., 2015), contain a\u00a0~\u00a090 residue domain referred to as the RiPP precursor peptide Recognition Element (RRE), which facilitates substrate recognition by interacting with the leader peptide. Considering these traits of azoline-forming YcaOs, it is possible that thioamide-forming YcaOs require the TfuA partner to facilitate binding to the peptidic substrate. Alternatively, TfuA may recruit and deliver sulfide equivalents by a direct or indirect mechanism. In this regard, it is noteworthy that the ycaO-tfuA locus can be found adjacent to genes involved in sulfur and molybdoterin metabolism (Figure 2). Many of these genes encode proteins with rhodanese-like homology domains, which are well-established sulfurtransferases. These enzymes typically carry sulfur in the form of a cysteine persulfide, a non-toxic but reactive equivalent of H2S (Palenchar et al., 2000; Matthies et al., 2005). Akin to rare cases of azoline-forming, partner-independent YcaOs, certain methanogens lack a bioinformatically identifiable TfuA (e.g. Methanopyrus kandleri and Methanocaldococcus sp., Figure 2). Whether these YcaOs act independently or use an as yet-unidentified partner protein remains to be seen. Clearly, further in vitro experimentation will be required to delineate the precise role of TfuA in the thioamidation reaction.\n\nThe viability of the \u0394ycaO-tfuA mutant raises significant questions as to the role of thioglycine in the native MCR enzyme, especially considering its universal presence in all MCRs examined to date. We considered three hypotheses to explain this result. First, we examined the possibility that thioglycine modification is involved in enhancing the reaction rate (Kahnt et al., 2007; Horng et al., 2001). Although it has not been explicitly determined, MCR is thought to catalyze the rate-limiting step of methanogenesis (Scheller et al., 2010; Wongnate et al., 2016). Therefore, the absence of thioglycine might lead to a corresponding decrease in the growth rate, with more pronounced defects on substrates that lead to the fastest growth. However, we observed the opposite: the most pronounced defects were observed with growth substrates that support the slowest WT growth rates (Table 1). Next, we considered the possibility that the thioglycine influences substrate affinity. C1 units enter methanogenesis at the level of N5-methyl-tetrahydrosarcinapterin (CH3-H4SPt) during growth on acetate (Galagan et al., 2002; Deppenmeier et al., 1999), but at the level of methyl-CoM during growth on DMS, methanol, and TMA (Figure 6) (Bose et al., 2008; Fu and Metcalf, 2015). Significantly, these entry points are separated by an energy-dependent step that is coupled to production or consumption of the trans-membrane Na+ gradient. As a result, intracellular levels of methyl-CoM, CoM, and CoB could possibly be significantly different depending on the entry point into the methanogenic pathway. Because we observed growth defects on substrates that enter at both points (i.e. DMS and acetate), we suspect that the growth deficiency phenotype is unlikely to be related to changes in substrate affinity. A third explanation we considered was that thioglycine increases the stability of MCR. In this model, unstable MCR protein would need to be replaced more often, creating a significant metabolic burden for the mutant. Consistent with our results, this additional burden would be exacerbated on lower energy substrates like DMS and acetate, especially given that MCR comprises\u00a0~10% of the total protein (Rospert et al., 1990). Further, one would expect that a protein stability phenotype would be exaggerated at higher temperatures, which we observed during growth on methanol (Figure 5). Thus, multiple lines of evidence support the idea that the growth-associated phenotypes stemming from the deletion of TfuA and YcaO are caused by decreased MCR stability. However, the melting temperature of MCR from the \u2206ycao-tfuA mutant was modestly higher than that purified from the WT. As the thioglycine is buried deep within the active site of MCR (Ermler et al., 1997), these data are consistent with the notion that thioamidation does not affect the global stability of the protein. Instead, it suggests that the thioglycine modification impacts the local stability in the vicinity of the buried active site of MCR (Figure 1\u2014figure supplement 1), which in turn might have a detrimental effect under catalytic turnover conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29218/elife-29218-fig6-v1.jpg)\n\n**Figure 6.:** Methylotrophic substrates such as methanol (CH3OH) or dimethylsulfide (DMS, CH3-S-CH3) enter the methanogenic pathway via S-methylation of coenzyme M (CoM) and subsequently disproportionate to methane (CH4) and carbon dioxide (CO2; metabolic flux is shown as blue arrows). Notably, the first step in oxidation of CH3-CoM to CO2 is the energy-requiring transfer of the methyl moiety to generate methyl-tetrahydrosarcinapterin (CH3-H4SPt). In contrast, acetic acid (CH3COOH) enters the pathway at the CH3-H4SPt level, followed by reduction to CH4 (green arrows). Thus, the second step of the pathway is exergonic.\n\nThe chemical properties of amides relative to thioamides are consistent with our hypothesis. Although amides tend to be planar, their rotational barriers are lower than for the corresponding thioamide and thus they are more conformationally flexible. This is especially true for glycine. Considering the negligible electronegativity difference between sulfur and carbon, the thioamide carbonyl is not polarized like an amide carbonyl (Wiberg and Rablen, 1995). Further, sulfur has a larger van der Waals radius than oxygen resulting in a thioamide bond length that is\u00a0~40% longer than the amide bond (1.71 \u00c5 versus 1.23 \u00c5) (Petersson et al., 2014), which presents additional steric hindrances to backbone flexibility. Finally, the pKa of thioamides is lower than amides, making thioglycine a stronger hydrogen bond donor than glycine (Lee et al., 2002), which again could reduce conformational flexibility. Taken together, it is chemically reasonable to state that the increased flexibility of the unmodified glycine in the \u0394ycaO-tfuA mutant would render the contorted conformation of the peptide backbone in the Gly462-Leu469 region of McrA considerably less stable (Figure 1\u2014figure supplement 1). Indeed, this region adopts a rather strange configuration, with the side chain of Phe463 bending back towards the thioamide of Gly465. The molecular alignment and distance (3.5 \u00c5) suggests a potential \u03c0-cation interaction between these residues(Figure 1\u2014figure supplement 1) The thioamide sulfur is also optimally distanced (3.6 \u00c5) and geometrically positioned to form an H-bond with the side chain of Asn501 and the backbone N-H of Leu469. There also appears to be a hydrophobic interaction between the thioamide and the beta carbon of Leu469, which would be energetically unfavorable with a more polarized amide. These observations suggest that the local stability in the vicinity of the active site imparted by the thioamide is required for protein stability and increased half-life of the MCR protein. A conclusive test of this hypothesis will require comprehensive structural and biochemical characterization of the active MCR variant lacking the thioglycine modification, which is beyond the scope of this work.\n\nFinally, the temperature-sensitive phenotype of the \u0394ycaO-tfuA mutant has potential implications regarding the evolution and ecology of methanogenic archaea. Based on this result, it seems reasonable to speculate that the thioglycine modification would be indispensable for thermophilic methanogens. It is often posited that the ancestor of modern methanogens was a thermophilic organism (Gribaldo and Brochier-Armanet, 2006; Forterre, 2015; Weiss et al., 2016; L\u00f3pez-Garc\u00eda et al., 2015). If so, one would expect the thioglycine modification to be present in most methanogenic lineages, being stochastically lost due to genetic drift only in lineages that grow at low temperatures where the modification is not required. In contrast, if methanogenesis evolved in a cooler environment, one might expect the distribution of the modification to be restricted to thermophilic lineages. Thus, the universal presence of the thioglycine modification supports the thermophilic ancestry of methanogenesis. Indeed, the ycaO-tfuA locus is conserved even in Methanococcoides burtonii, a psychrophilic methanogen isolated from Ace Lake in Antarctica, where the ambient temperature is always below 2\u00b0C (Franzmann et al., 1992). It will be interesting to see whether this modification is maintained by other methanogenic and methanotrophic archaea growing in low temperature environments.\n\n## Materials and methods\n\n### Bioinformatics analyses\n\nThe 1000 closest homologs were extracted from the NCBI non-redundant protein database using the YcaO amino acid sequence (MA0165) or the TfuA amino acid sequence (MA0164) as queries in BLAST-P searches. The amino acid sequences of these proteins were aligned using the MUSCLE plug-in (Edgar, 2004) with default parameters in Geneious version R9 (Kearse et al., 2012). Approximate maximum-likelihood trees were generated using FastTree version 2.1.3 SSE3 using the Jones-Taylor-Thornton (JTT) model\u00a0+CAT approximation with 20 rate categories. Branch support was calculated using the Shimodaira-Hasegawa (SH) test with 1000 resamples. Trees were displayed using Fig Tree v1.4.3 (http://tree.bio.ed.ac.uk/software/figtree/).\n\n### Strains, media, and growth conditions\n\nAll M. acetivorans strains were grown in single-cell morphology (Sowers et al., 1993) in bicarbonate-buffered high salt (HS) liquid medium containing 125 mM methanol, 50 mM trimethylamine hydrochloride (TMA), 40 mM sodium acetate, or 20 mM dimethylsulfide (DMS). Cultures were grown in sealed tubes with N2/CO2 (80/20) at 8\u201310 psi in the headspace. Most substrates were added to the medium prior to autoclaving. DMS was added from an anaerobic stock solution maintained at 4\u00b0C immediately prior to inoculation. Growth rate measurements were conducted with three independent biological replicate cultures acclimated to the energy substrate or temperature as indicated. A 1:10 dilution of a late-exponential phase culture was used as the inoculum for growth rate measurement. Plating on HS medium containing 50 mM TMA solidified with 1.7% agar was conducted in an anaerobic glove chamber (Coy Laboratory Products, Grass Lake, MI) as described previously (Metcalf et al., 1996). Solid media plates were incubated in an intra-chamber anaerobic incubator maintained at 37\u00b0C with N2/CO2/H2S (79.9/20/0.1) in the headspace as described previously (Metcalf et al., 1998). Puromycin (CalBiochem, San Diego, CA) was added to a final concentration of 2 \u03bcg/mL from a sterile, anaerobic stock solution to select for transformants containing the pac (puromycin transacetylase) cassette. The purine analog 8-aza-2,6-diaminopurine (8ADP) (R. I. Chemicals, San\u00a0Diego, CA) was added to a final concentration of 20 \u00b5g/mL from a sterile, anaerobic stock solution to select against the hpt (phosphoribosyltransferase) cassette encoded on pC2A-based plasmids. Anaerobic, sterile stocks of tetracycline hydrochloride in deionized water were prepared fresh shortly before use and added to a final concentration of 100 \u00b5g/mL to the growth medium of strains containing ycaO and/or tfuA fused to PmcrB(tetO4). E. coli strains were grown in LB broth at 37\u00b0C with standard antibiotic concentrations. WM4489, a DH10B derivative engineered to control copy-number of oriV-based plasmids (Kim et al., 2012), was used as the host strain for all plasmids generated in this study (Supplementary file 1). Plasmid copy number was increased dramatically by supplementing the growth medium with sterile rhamnose to a final concentration of 10 mM.\n\n### Plasmids\n\nAll plasmids used in this study are listed in Supplementary file 1. Plasmids for Cas9-mediated genome editing were designed as described previously (Nayak and Metcalf, 2017). For designing the complementation plasmids, the ycaO and/or tfuA coding sequence(s) were amplified and fused to the PmcrB(tetO4) promoter in pJK029A (Guss et al., 2008) linearized with NdeI and HindIII by the Gibson assembly method as described previously in Nayak and Metcalf, 2017. Standard techniques were used for the isolation and manipulation of plasmid DNA. WM4489 was transformed by electroporation at 1.8 kV using an E. coli Gene Pulser (Bio-Rad, Hercules, CA). All pDN201-derived plasmids were verified by Sanger sequencing at the Roy J. Carver Biotechnology Center, University of Illinois at Urbana-Champaign and all pAMG40 cointegrates were verified by restriction endonuclease analysis.\n\n### In silico design of sgRNAs for gene-editing\n\nAll target sequences used for Cas9-mediated genome editing in this study are listed in Supplementary file 2. Target sequences were chosen using the CRISPR site finder tool in Geneious version R9 (61). The M. acetivorans chromosome and the plasmid pC2A were used to score off-target binding sites.\n\n### Transformation of M. acetivorans\n\nAll M. acetivorans strains used in this study are listed in Supplementary file 3. Liposome-mediated transformation was used for M. acetivorans as described previously (Metcalf et al., 1997) using 10 mL of late-exponential phase culture of M. acetivorans and 2 \u00b5g of plasmid DNA for each transformation.\n\n### In-gel tryptic digest of McrA\n\nMid-exponential phase cultures of M. acetivorans grown in 10 mL HS medium containing 50 mM TMA were harvested by centrifugation (3000\u00a0\u00d7\u00a0g) for 15 min at 4\u00b0C (DuPont, Wilmington, DE). The cell pellet was resuspended in 1 mL lysis buffer (50 mM NH4HCO3, pH\u00a0=\u00a08.0) and harvested by centrifugation (17,500\u00a0\u00d7\u00a0g) for 30 min at 4\u00b0C (DuPont, Wilmington, DE). An equal volume of the supernatant was mixed with 2\u00a0\u00d7\u00a0Laemmli sample buffer (Bio-Rad, Hercules, CA) containing 5% \u03b2-mercaptoethanol, incubated in boiling water for 10 min, loaded on a 4\u201320% gradient Mini-Protean TGX denaturing SDS-PAGE gel (Bio-Rad, Hercules, CA) and run at 70 V until the dye-front reached the bottom of the gel. The gel was stained using the Gel Code Blue stain reagent (Thermo Fisher Scientific, Waltham, MA) as per the manufacturer\u2019s instructions. Bands corresponding to McrA (ca. 60 kDa) were excised and cut into ca. 1\u00a0\u00d7\u00a01 mm cubes. The gel slices from a single lane were destained with 50% acetonitrile, the corresponding protein was reduced with 10 mM dithiothreitol (DTT), and digested with 1.5 \u00b5g sequencing-grade trypsin (Promega, Madison, WI) at 37\u00b0C for 16\u201320 hr in the presence of 5% (v/v) n-propanol. The digested peptides were extracted and dried as described previously (Shevchenko et al., 2006).\n\n### MS analysis of tryptic peptides\n\nMALDI-TOF-MS analysis was performed using a Bruker UltrafleXtreme MALDI TOF-TOF mass spectrometer (Bruker Daltonics, Billerica, MA) in reflector positive mode at the University of Illinois School of Chemical Sciences Mass Spectrometry Laboratory. The samples were desalted using C-18 zip-tips using aqueous acetonitrile and sinapic acid in 70% acetonitrile as the matrix. Data analysis was carried out using the Bruker FlexAnalysis software. For HR-ESI MS/MS, samples were dissolved in 35% aq. acetonitrile and 0.1% formic acid. Samples were directly infused using an Advion TriVersa Nanomate 100 into a ThermoFisher Scientific Orbitrap Fusion ESI-MS. The instrument was calibrated weekly, following the manufacturer\u2019s instructions, and tuned daily with Pierce LTQ Velos ESI Positive Ion Calibration Solution (Thermo Fisher Scientific, Waltham, MA). The MS was operated using the following parameters: resolution, 100,000; isolation width (MS/MS), 1 m/z; normalized collision energy (MS/MS), 35; activation q value (MS/MS), 0.4; activation time (MS/MS), 30 ms. Data analysis was conducted using the Qualbrowser application of Xcalibur software (Thermo Fisher Scientific, Waltham, MA). HPLC-grade reagents were used to prepare samples for mass spectrometric analyses.\n\n### MCR purification\n\nMCR was purified from 250 mL of mid-exponential phase culture grown in HS\u00a0+50 mM TMA at 36\u00b0C. Protein purification was performed under aerobic conditions and cells were harvested by centrifugation (3000\u00a0\u00d7\u00a0g) for 15 min at 4\u00b0C. The cell pellet was lysed in 5 mL of Wash buffer (50 mM NaH2PO4, 300 mM NaCl, pH\u00a0=\u00a08.0) and the cell lysate was clarified by centrifugation (17,500\u00a0\u00d7\u00a0g) for 30 min at 4\u00b0C. The supernatant fraction was loaded on a column containing 2 mL Strep-tactin XT Superflow resin (50% suspension; IBA Lifesciences, Goettingen, Germany) equilibrated with 4 mL of the Wash buffer. The column was washed twice with 4 mL of Wash buffer and the purified protein was eluted in four fractions with 0.5 mL Elution buffer (50 mM NaH2PO4, 300 mM NaCl, 50 mM biotin, pH\u00a0=\u00a08.0) per fraction. The protein concentration in each fraction was estimated using the Coomassie Plus (Bradford) assay kit (Pierce Biotechnology, Thermo-Scientific, Rockford, IL, USA) with BSA (bovine serum albumin) as the standard per the manufacturer\u2019s instructions. The highest protein concentration (ca. 600 \u03bcg/mL) was obtained in fraction 3 therefore this fraction was used to conduct the Thermofluor assay. To visualize the purified protein, 10 \u00b5L of the crude cell extract as well as fraction 3 were mixed with an equal volume of 2\u00a0\u00d7\u00a0Laemmli sample buffer (Bio-Rad, Hercules, CA) containing 5% \u03b2-mercaptoethanol, incubated in boiling water for 10 min, loaded on a 4\u201320% gradient Mini-Protean TGX denaturing SDS-PAGE gel (Bio-Rad, Hercules, CA) and run at 70 V until the dye-front reached the bottom of the gel. The gel was stained using the Gel Code Blue stain reagent (Thermo Fisher Scientific, Waltham, MA) as per the manufacturer\u2019s instructions. All three bands corresponding to the MCR subunits were observed and verified by LC-MS analyses of the tryptic peptides from fraction 3 of the purified protein sample at the Protein Sciences facility at the Roy J. Carver Biotechnology Center at the University of Illinois, Urbana-Champaign, USA. A fourth band, identified as a hypothetical protein encoded by MA3997, was also detected in each sample (Figure 5\u2014figure supplement 1).\n\n### Thermofluor assay\n\nA 5000\u00a0\u00d7\u00a0concentrate of SYPRO Orange protein gel stain in DMSO (Thermo-Fisher Scientific, Waltham, MA, USA) was diluted with the Elution buffer to generate a 200\u00a0\u00d7\u00a0stock solution. 5 \u00b5L of the 200\u00a0\u00d7\u00a0stock solution of SYPRO Orange protein gel stain was added to 45 \u00b5L of purified protein with a concentration of ca. 600 \u00b5g/mL in 96-well optically clear PCR plates. A melt curve was performed on a Mastercycler ep realplex machine (Eppendorf, Hamburg, Germany) using the following protocol: 25\u00b0C for 30 s, ramp to 99\u00b0C over 30 min, return to 25\u00b0C for 30 s. SYPRO Orange fluorescence was detected using the VIC emission channel and the temperature corresponding to the inflection point of the first derivative (dI/dT) was determined to be the melting temperature (Tm). Appropriate no-dye controls and no-protein controls were examined and each sample was run in triplicate. The Thermofluor assay was conducted within 12 hr of protein purification.\n\n### UV-Vis spectrum of MCR\n\nThe spectrum was obtained on a Cary 4000 UV-Vis spectrophotometer (Varian, Palo Alto, CA, USA) using 200 \u00b5L of protein sample (1.5 \u00b5M each) in a quartz supracil cuvette (Hellma Analytics, Mullheim, Germany). The scanning range was 200\u2013800 nm and the Elution buffer was used as a blank.\n",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "e5a6bac2-0694-4894-804a-72742b88e7e0",
+      "submission_id": "9786d5b6-fbaa-4253-aa2b-698840203efb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dianne K Newman, Howard Hughes Medical Institute, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29218.023](https://doi.org/10.7554/eLife.29218.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Post-translational thioamidation of methyl-coenzyme M reductase, a key enzyme in methanogenic and methanotrophic Archaea\" for consideration by eLife. Your article has been reviewed by four peer reviewers and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dianne K Newman (Reviewer #1) and Rudolph Thauer (Reviewer #4).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife at this time.\n\nWhile there is sincere enthusiasm for your work, and a desire to see it ultimately published in eLife, the consensus opinion is that, as the manuscript currently stands, the key finding - genetic demonstration that a thioglycine in MCR is installed by YcaO/TfuA and is not essential for catalytic activity - is not a sufficient advance to appeal to the broad eLife audience. Though we appreciate that comparing the catalytic activity of WT and mutant MCR is well beyond the scope of the manuscript, some other biochemical follow-up would significantly strengthen other claims of the manuscript (e.g. thermostability, mechanism of YcaO/TfuA, role of TfuA, etc). The evolutionary implications are intriguing, but not yet convincing. For example, why would MCR from Methanopyrus kandleri growing above 100\u00b0C and psychrophilic methanogens and methanotrophs both have the thioglycine in the active site of MCR conserved? And why would the thioglycine only show up in MCR? If you are able and willing to perform some additional experiments to bolster the claims in the manuscript, we would be happy to reconsider it for eLife.\n\nReviewer #1:\n\nThis manuscript presents strong evidence that 2 genes (tfuA and ycaO) are required for installation of a thioglycine into McrA, a critical enzyme in methanogenesis and in organisms that oxidize methane anaerobically. These processes are globally significant and challenging to study, so work that improves our understanding of how they function is attractive for publication in eLife.\n\nPositives of the paper include clear writing and well-done genetic and MS experiments. The application of biochemical understanding from the natural product field to identify putitive genes catalyzing installation of a thioglycine in a methanogen is elegant and chemically satisfying. However, while the authors provide physiological data and reasonable logic arguing that the thioglycine confers greater stability to MCR, the evidence supporting this claim is indirect. One concern is that there is some other target of the modification other than McrA that is responsible for the observed phenotype. Perhaps this can be excluded as a possibility, but if so, the authors need to explain why that is. To a na\u00efve reader, this seems like an important missing piece. One option would be to perform a limited set of biochemical experiments to look at McrA stability with and without the thioglycine residue. The authors argue this is beyond the scope of the paper, but is it really? Could this be done by looking for different sized bands of McrA on a western blot (might one predict differential stability would show up in different patterns on a protein gel)? How difficult is it to purify McrA and test for temperature stability for the WT and mutant versions? Alternatively, could a different mutation be introduced that would be predicted to render the McrA protein less thermostable, and could the phenotype be recapitulated? In the absence of biochemical data, that might strengthen the argument. How can the authors be confident that other proteins produced under the experimental conditions are not modified by TfuA/YcaO and responsible for the phenotypes? At a minimum, the authors need to directly address this concern in their discussion.\n\nThe Abstract and Discussion end with speculation about the implications of this work for an evolutionary hot start for methanogenesis. This is a bold claim, and the phylogenetic evidence is intriguing, but for this claim to be convincing, it is important to have solid evidence that the thioglycine in McrA is what causes the lack of thermostability. I would like to see this manuscript published in eLife, but encourage the authors to perform another experiment to strengthen this critical point.\n\nReviewer #2:\n\nThis paper addresses the biosynthesis and functional significance of a post-translational modification found in methyl-coenzyme M reductase, an enzyme that produces methane in anaerobic archaea and may also be involved in methane oxidation by methanotrophic archaea. Several post-translationally modified residues are present in or near the MCR active site in the McrA subunit, including a thioglycine. Candidate proteins for producing this thioamide include a YcaO homolog paired with a TfuA homolog. YcaOs catalyze formation of thiazolines from cysteines, and TfuA-like proteins are hypothesized to play a role in sulfur delivery and/or substrate recognition. Bioinformatic analysis presented here supports a role for these proteins in McrA thioamidation, and genetic disruption of both genes in Methanosarcina acetivorans coupled with mass spectrometric analysis indicates that the thioglycine is not formed in their absence. While the cells are still viable, some differences in growth are observed between the wildtype and \u0394ycaO-tfuA strains. In particular, the knockout strain grows more slowly on DMS and acetate, and more slowly on methanol if the temperature is raised. From these growth data, the authors suggest that the thioglycine modification does not affect MCR catalysis or substrate affinity, but instead increases its thermal stability. Although this model is consistent with the results, biochemical characterization of the MCR is essential to addressing this hypothesis. In addition, forming a thioamide seems like a metabolically expensive way to increase thermostability as many other proteins are thermostable without such post-translational modifications. The authors note that biochemical work is beyond the scope of this study, but I am not sure that the knockout alone merits publication in eLife; it seems more suited to a specialized journal.\n\nIn terms of thinking about the modification and its potential role in thermal stability or other aspects of function, it would be helpful to have a picture of the MCR active site showing where the glycine residue is located and what interactions it has with other residues.\n\nReviewer #3:\n\nMetcalf et al. address interesting questions regarding post-translational modifications of the last enzyme of the methanogenic pathway in archaea. It has been known for almost two decades that some residues in the active site of the methyl-coenzyme M reductase (Mcr) are modified. Of particular interest is the thioamidation of glycine. The goal was to identify genes encoding enzymes responsible for this modification. The authors build a case for the analysis of two genes (ycaO, tfuA) that tracked in some cases immediately upstream to the Mcr operon. The authors use Methanosarcina acetivorans to perform phenotypic analyses of strains with deletions of the genes of interest. The observed growth phenotypes are explained on the basis of the entry point of different substrates into the methanogenic pathway. The results are consistent with the explanations provided. However, the authors do not validate the presumed biochemical activities of YcaO or TfuA, hence leading to much speculation. The effects reported here could be indirectly leading to the absence of thioamidated glycine. The authors start the Discussion section by stating '[\u2026] these genes (ycaO, tfuA) are directly involved in the post-translational modification of McrA'; I disagree. To support such a statement the authors must show that YcaO/TfuA can modify McrA in vitro.\n\nReviewer #4:\n\nThe manuscript by Metcalf et al. for eLife describes the important finding that the post-translational installation of thioglycine in methyl-coenzyme M reductase in the methanogenic archaeon Methanosarcina acetivorans is mediated by the tfuA-ycaO locus. This experimental procedure showing this is perfect and the results obtained convincing. The excellent manuscript should be published after considering the following minor points:\n\nDiscussion paragraph three and following: Yes, MCR is generally thought to be the rate limiting enzyme in methanogenesis, however, the only step in methanogenesis that is physiologically irreversible, is the heterodisulfide reductase reaction rather than the MCR reaction. Thus MCR is most probably not rate limiting. This should be considered or at least discussed.\n\nOf the many glycins in McrA only one is converted to a thioglycin and this glycine is buried deep within the McrABC complex. The post-translational modification must therefore occur as long as the protein is not yet folded. Generally enzymes mediating post-translational modifications specifically recognize the sequence upstream and downstream of the amino acid to be modified. Could the authors comment on this in the manuscript with a few sentences?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Post-translational thioamidation of methyl-coenzyme M reductase, a key enzyme in methanogenic and methanotrophic Archaea\" for further consideration at eLife. Your revised article has been favorably evaluated by Gisela Storz (Senior editor) and four reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nWe appreciate your efforts to respond to our feedback by performing new experiments and revising the text accordingly. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe consensus is that in the absence of supporting biochemical data, the manuscript still pushes a mechanistic message too strongly. Please moderate the discussion. Your results have shown that the thioglycine within the active site is not essential for full activity, not that it lacks a direct catalytic role. In addition, the paragraph on the discussion of growth phenotypes is convoluted and overly speculative. It would be better to tighten and moderate this paragraph, in the absence of supporting data. Growth phenotypes should also be mentioned in the Abstract, so it is clear that the phenotype of the double mutant extends beyond the lack of a PTM. While we agree that additional biochemical experiments are outside the scope of this work, for this manuscript to be published in eLife as a genetics/physiology paper, these aspects need to be airtight. Towards that end, please include complementation experiments for the mutants.\n\nWith these modifications, we anticipate your second revision would be publishable in eLife.\n\nReviewer #1:\n\nThe new experiments and revisions to the text have alleviated my previous concerns and the manuscript is much improved.\n\nWhile there are many questions remaining that need to be addressed at the biochemical level, this study has made an important new contribution and is done rigorously.\n\nReviewer #2:\n\nThis is a revised version in which the authors have addresses most of the questions and suggestions made by the reviewers. The interpretations remain speculative but the experimental results are too important not to be published.\n\nReviewer #3:\n\nIn the revised version of this manuscript, Metcalf et al. show that strains carrying null alleles of tfuA or ycaO do not modify the glycine of interest. In addition, results from new experiments show that thioglycine is not needed to stabilize MCR. The new hypothesis is now that the stabilizing effect occurs at the level of the active site; that idea was not tested. In the absence of experimental data, the authors softened the wording regarding the direct involvement of TfuA and YcaO.\n\nWithout a question, this is a very interesting problem, but I am not convinced that the revised paper has reached the level of an eLife publication.\n\nReviewer #4:\n\nIn this revised manuscript, the authors have added two experiments. First, they have constructed separate knockouts of ycaO and tfuA as well as the double knockout, and demonstrate by mass spectrometric analysis that both are necessary for thioglycine formation. This is not surprising. Second, they have isolated the MCR produced by the double knockout strain and show that its melting temperature is unchanged, disproving their previous hypothesis regarding thermal stability. They have revised the hypothesis to invoke localized stability at the active site; the overall argument regarding the properties of amides versus thioamides is the same. A stability experiment is one of the approaches the editor suggested as biochemical follow up so in that sense, the authors have done what was requested.\n",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f784d3e-6338-45cc-a77d-eef212e33deb",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C1",
+      "claim": "Methyl-coenzyme M reductase (MCR) is found in strictly anaerobic methanogenic and methanotrophic archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "Methyl-coenzyme M reductase (MCR), found in strictly anaerobic methanogenic and methanotrophic archaea, catalyzes the reversible production and consumption of the potent greenhouse gas methane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "bb6d91e9-6ef7-4891-b191-d176868e81de",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C2",
+      "claim": "MCR catalyzes the reversible production and consumption of methane.",
+      "claim_type": "EXPLICIT",
+      "source": "Methyl-coenzyme M reductase (MCR), found in strictly anaerobic methanogenic and methanotrophic archaea, catalyzes the reversible production and consumption of the potent greenhouse gas methane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the chemical equation and citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "3cd4e401-aea6-42e8-8665-f0564ba8deeb",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C3",
+      "claim": "The \u03b1 subunit of MCR (McrA) contains several unusual post-translational modifications, including a rare thioamidation of glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1 subunit of MCR (McrA) contains several unusual post-translational modifications, including a rare thioamidation of glycine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations to previous structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "0769e4a7-4f05-49c0-88f4-88f20a31029b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C4",
+      "claim": "The archaeal tfuA and ycaO genes are responsible for post-translational installation of thioglycine into McrA.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the presumed function of homologous genes involved in the biosynthesis of thioviridamide, a thioamide-containing natural product, we hypothesized that the archaeal tfuA and ycaO genes would be responsible for post-translational installation of thioglycine into McrA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is tested and confirmed by mass spectrometry data showing loss of thioglycine in deletion mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "b4fd0d9e-4f83-4894-8e37-2e7d24188e56",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C5",
+      "claim": "McrA from Methanosarcina acetivorans lacking tfuA and/or ycaO contains glycine rather than thioglycine at position 465.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometric characterization of McrA from the methanogenic archaeon Methanosarcina acetivorans lacking tfuA and/or ycaO revealed the presence of glycine, rather than thioglycine, supporting this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by MALDI-TOF-MS and HR-ESI-MS/MS data showing a 16 Da mass difference consistent with oxygen replacing sulfur.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "c677faa6-845d-4424-b05d-7c2b6e690bac",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C6",
+      "claim": "The \u2206ycaO-tfuA mutant has a severe growth rate defect on substrates with low free energy yields.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic characterization of the \u2206ycaO-tfuA mutant revealed a severe growth rate defect on substrates with low free energy yields and at elevated temperatures (39\u00b0C - 45\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by growth rate measurements on different substrates shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "dee6d43b-ff85-4670-abc8-341c5b2f38b5",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C7",
+      "claim": "The \u2206ycaO-tfuA mutant has a severe growth rate defect at elevated temperatures (39\u00b0C - 45\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic characterization of the \u2206ycaO-tfuA mutant revealed a severe growth rate defect on substrates with low free energy yields and at elevated temperatures (39\u00b0C - 45\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by growth rate data at different temperatures shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "27f5a4df-e1ee-46cc-87c4-70dcb02d15c1",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C8",
+      "claim": "Thioglycine plays a role in stabilizing the protein secondary structure near the active site of MCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses support a role for thioglycine in stabilizing the protein secondary structure near the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis, growth phenotypes, and melting temperature data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "9dc0798c-4dad-4c59-b304-187bfaae4394",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C9",
+      "claim": "MCR catalyzes the conversion of methyl-coenzyme M (CoM) and coenzyme B (CoB) to methane and a CoB-CoM heterodisulfide.",
+      "claim_type": "EXPLICIT",
+      "source": "Methyl-coenzyme M reductase (MCR) is a unique enzyme found exclusively in anaerobic archaea, where it catalyzes the reversible conversion of methyl-coenzyme M (CoM, 2-methylmercaptoethanesulfonate) and coenzyme B (CoB, 7-thioheptanoylthreoninephosphate) to methane and a CoB-CoM heterodisulfide (Ermler et al., 1997; Scheller et al., 2010):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations and a chemical equation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "cb6bc85e-ea12-449a-8e3c-3327b32ae23b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C10",
+      "claim": "The MCR reaction has been proposed to proceed via a methyl radical intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "This reaction, which has been proposed to proceed via an unprecedented methyl radical intermediate (Wongnate et al., 2016), plays a critical role in the global carbon cycle (Thauer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wongnate et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "0412d009-0dfd-44a4-930a-9c63da840a14",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C11",
+      "claim": "MCR plays a critical role in the global carbon cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This reaction, which has been proposed to proceed via an unprecedented methyl radical intermediate (Wongnate et al., 2016), plays a critical role in the global carbon cycle (Thauer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Thauer et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "a3f0d34a-417e-4d05-9c2c-90a8e6856a75",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C12",
+      "claim": "MCR displays an \u03b12\u03b22\u03b32 protein domain architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "MCR displays an \u03b12\u03b22\u03b32 protein domain architecture and contains two molecules of F430, a nickel porphinoid cofactor (Ermler et al., 1997; Zheng et al., 2016; Moore et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "8f49d591-3620-42e1-9b27-38f627d3849a",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C13",
+      "claim": "MCR contains two molecules of F430, a nickel porphinoid cofactor.",
+      "claim_type": "EXPLICIT",
+      "source": "MCR displays an \u03b12\u03b22\u03b32 protein domain architecture and contains two molecules of F430, a nickel porphinoid cofactor (Ermler et al., 1997; Zheng et al., 2016; Moore et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "ce9303f8-7c61-4842-98df-d0a3ff5f1657",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C14",
+      "claim": "The reduced Ni(I) form of F430 is essential for MCR catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced Ni(I) form of F430 is essential for catalysis (Goubeaud et al., 1997), but is highly sensitive to oxidative inactivation, a feature that renders biochemical characterization of MCR especially challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Goubeaud et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1c9b2490-194a-47b9-87ec-33eeb16ce188",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C15",
+      "claim": "The reduced Ni(I) form of F430 is highly sensitive to oxidative inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced Ni(I) form of F430 is essential for catalysis (Goubeaud et al., 1997), but is highly sensitive to oxidative inactivation, a feature that renders biochemical characterization of MCR especially challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "6bfeb267-eef0-4440-aa9b-0d29e72d20c2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C16",
+      "claim": "McrA contains methylated amino acids including 3-methylhistidine, S-methylcysteine, 5(S)-methylarginine, and 2(S)-methylglutamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these are a group of methylated amino acids, including 3-methylhistidine (or N1-methylhistidine), S-methylcysteine, 5(S)-methylarginine, and 2(S)-methylglutamine, which are presumed to be installed post-translationally by S-adenosylmethionine-dependent methyltransferases (Selmer et al., 2000; Kahnt et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "ccc2d84b-685f-4ee4-850a-11e3d94740c5",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C17",
+      "claim": "The methylated amino acids in McrA are presumed to be installed post-translationally by S-adenosylmethionine-dependent methyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these are a group of methylated amino acids, including 3-methylhistidine (or N1-methylhistidine), S-methylcysteine, 5(S)-methylarginine, and 2(S)-methylglutamine, which are presumed to be installed post-translationally by S-adenosylmethionine-dependent methyltransferases (Selmer et al., 2000; Kahnt et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "94b7c4c0-9e61-40fe-8f19-6bd52f2b0ef4",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C18",
+      "claim": "3-methylhistidine is found in all MCRs examined to date.",
+      "claim_type": "EXPLICIT",
+      "source": "3-methylhistidine is found in all MCRs examined to date, whereas the presence of the other methylated amino acids is variable among methane-metabolizing archaea (Kahnt et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kahnt et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "7e0148aa-b486-4555-8c97-5435e7bdb1bf",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C19",
+      "claim": "The presence of methylated amino acids other than 3-methylhistidine is variable among methane-metabolizing archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "3-methylhistidine is found in all MCRs examined to date, whereas the presence of the other methylated amino acids is variable among methane-metabolizing archaea (Kahnt et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kahnt et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "4ff083a3-8b83-464c-8d9d-66d2b4815048",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C20",
+      "claim": "A didehydroaspartate modification is observed in some, but not all, methanogens.",
+      "claim_type": "EXPLICIT",
+      "source": "A didehydroaspartate modification is also observed in some, but not all, methanogens (Wagner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wagner et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "bd70b771-0cf9-4b53-aca2-cadb721fe516",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C21",
+      "claim": "A thioglycine modification is present in all methanogens that have been analyzed to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, a highly unusual thioglycine modification, in which the peptide amide bond is converted to a thioamide, is present in all methanogens that have been analyzed to date (Figure 1\u2014figure supplement 1) (Ermler et al., 1997; Kahnt et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "c69c6a06-04ec-4c63-bd1b-66ab3da49212",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C22",
+      "claim": "The 3-methylhistidine in McrA may serve to position the imidazole ring that coordinates CoB.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3-methylhistidine may serve to position the imidazole ring that coordinates CoB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "9c17a9b2-4339-46b8-8c86-254740090595",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C23",
+      "claim": "Methylation of histidine alters the pKa in a manner that would promote tighter CoB-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This methylation also alters the pKa of histidine in a manner that would promote tighter CoB-binding (Grabarse et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Grabarse et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "8bfda608-fbb3-47b5-8b93-cf8247a16afd",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C24",
+      "claim": "The variable occurrence of methylated amino acids other than 3-methylhistidine suggests they are unlikely to be directly involved in catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The variable occurrence of the other methylated amino acids suggests that they are unlikely to be directly involved in catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the variable presence of these modifications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "011831c6-0d20-4d68-9cfb-aef708dd2271",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C25",
+      "claim": "Variable methylated amino acids may tune enzyme activity by altering the hydrophobicity and flexibility of the active site pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, it has been hypothesized that they tune enzyme activity by altering the hydrophobicity and flexibility of the active site pocket (Kahnt et al., 2007; Grabarse et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "f5b74bcd-0658-4f1a-825b-f8e3cd73d09c",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C26",
+      "claim": "Thioglycine may facilitate deprotonation of CoB by reducing the pKa of the sulfhydryl group.",
+      "claim_type": "EXPLICIT",
+      "source": "One proposal is that the thioglycine facilitates deprotonation of CoB by reducing the pKa of the sulfhydryl group (Grabarse et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "eaa4d671-379f-431f-9d2c-bab5c7014145",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C27",
+      "claim": "Thioglycine could serve as an intermediate electron carrier for oxidation of a proposed heterodisulfide anion radical intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "A second proposal suggests that thioglycine could serve as an intermediate electron carrier for oxidation of a proposed heterodisulfide anion radical intermediate (Horng et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "c7ea28e1-15ed-4ec6-bef0-829320c89577",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C28",
+      "claim": "Cis-trans isomerization of the thioamide during catalysis could play a role in coupling the two active sites via a two-stroke mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, cis-trans isomerization of the thioamide during catalysis could potentially play an important role in coupling the two active sites via a previously proposed two-stroke mechanism for the enzyme (Goenrich et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "63879c29-f9f6-4319-9483-75796f5765a2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C29",
+      "claim": "Thioamides are rare in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Thioamides are rare in biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge and supported by the limited examples provided.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "2f261982-be24-445e-ba40-fbd270e2e0ff",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C30",
+      "claim": "Cycasthioamide is plant-derived.",
+      "claim_type": "EXPLICIT",
+      "source": "While cycasthioamide is plant-derived (Pan et al., 1997), most other naturally occurring thioamides are of bacterial origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pan et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "fcde511f-a653-4946-8dce-b9cfd2a42c8e",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C31",
+      "claim": "Most naturally occurring thioamides are of bacterial origin.",
+      "claim_type": "EXPLICIT",
+      "source": "While cycasthioamide is plant-derived (Pan et al., 1997), most other naturally occurring thioamides are of bacterial origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge with examples provided.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "49134cb6-fea8-4a80-a02f-141a1ce9c365",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C32",
+      "claim": "Thioviridamide is a ribosomally synthesized and post-translationally modified (RiPP) peptide natural product.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these are the ribosomally synthesized and post-translationally modified (RiPP) peptide natural products thioviridamide (Hayakawa et al., 2006) and methanobactin (Kim et al., 2004; Kenney and Rosenzweig, 2012; Kenney and Rosenzweig, 2013), as well as closthioamide, which appears to be an unusual non-ribosomal peptide (Lincke et al., 2010; Chiriac et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "66a8ae35-6540-4c5a-b274-68f9634b8dc4",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C33",
+      "claim": "The thioviridamide biosynthetic gene cluster encodes TvaH, a member of the YcaO superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the proteins encoded by this gene cluster have plausible roles in thioamide synthesis. The first, TvaH, is a member of the YcaO superfamily, while the second, TvaI, is annotated as a 'TfuA-like' protein (Izawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Izawa et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "e1a82ed4-14e3-4ace-8843-0391a3cf2c28",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C34",
+      "claim": "The thioviridamide biosynthetic gene cluster encodes TvaI, annotated as a 'TfuA-like' protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the proteins encoded by this gene cluster have plausible roles in thioamide synthesis. The first, TvaH, is a member of the YcaO superfamily, while the second, TvaI, is annotated as a 'TfuA-like' protein (Izawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Izawa et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "de90b218-01a7-4375-a587-c75454a78223",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C35",
+      "claim": "YcaO-family proteins catalyze the ATP-dependent cyclodehydration of Cys, Ser, and Thr residues to the corresponding thiazoline, oxazoline, and methyloxazoline.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analyses of YcaO-family proteins indicate that they catalyze the ATP-dependent cyclodehydration of Cys, Ser, and Thr residues to the corresponding thiazoline, oxazoline, and methyloxazoline (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by biochemical studies and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "68f1b82d-7ce9-4a30-b3fc-cef0bc83db08",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C36",
+      "claim": "YcaO homologs are universally present in methanogen genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their putative role in thioamidation reactions, it is notable that YcaO homologs were found to be universally present in an early analysis of methanogen genomes, resulting in their designation as 'methanogenesis marker protein 1' (Basu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Basu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "ab7a726c-adb3-4303-9c74-ca864879c8b4",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C37",
+      "claim": "Genes encoding TfuA homologs are ubiquitous in methanogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes encoding TfuA homologs are also ubiquitous in methanogens, usually encoded in the same locus as ycaO, similar to their arrangement in the thioviridamide biosynthetic gene cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "d991771b-ac3a-44f6-a82e-1291f97d07ae",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C38",
+      "claim": "All complete methanogen and ANME genome sequences encode a YcaO homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, all complete methanogen and ANME genome sequences encode a YcaO homolog, with a few strains encoding two copies (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "91c21811-374a-46ef-bd81-cef4dbb1030b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C39",
+      "claim": "The YcaO sequences form a distinct, well-supported clade that includes homologs from ammonia-oxidizing archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "The YcaO sequences form a distinct, well-supported clade that also includes homologs from ammonia-oxidizing archaea (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "800713bb-089f-4216-a646-274381088a81",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C40",
+      "claim": "The YcaO tree is congruent with the phylogeny of methanogens reconstructed using housekeeping or mcr genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding the second YcaO in strains that encode two copies, the YcaO tree is congruent with the phylogeny of methanogens reconstructed using housekeeping or mcr genes (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1f74245e-ebbc-4357-9af1-fe4760f41e84",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C41",
+      "claim": "YcaO was likely acquired early in the evolution of methanogens and maintained largely through vertical inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that YcaO was acquired early in the evolution of methanogens and maintained largely through vertical inheritance, as expected for a trait that coevolved with MCR (Borrel et al., 2013; Vanwonterghem et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic congruence and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "6b217730-7fb4-42f4-9327-a37d39fa4411",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C42",
+      "claim": "TfuA homologs are encoded in the overwhelming majority of MCR-encoding taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "TfuA homologs are encoded in the overwhelming majority of MCR-encoding taxa, although a few species lack this gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "2ce6ace4-327a-48a4-8365-973509e92944",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C43",
+      "claim": "Methanopyrus kandleri and Methanocaldococcus janaschii lack the tfuA gene but contain the thioglycine modification.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter include Methanopyrus kandleri and Methanocaldococcus janaschii, two species previously shown to contain the thioglycine modification (Kahnt et al., 2007) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Kahnt et al., 2007 and shown in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "d5ece309-64d2-48e0-9fb8-914bd4433162",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C44",
+      "claim": "TfuA cannot be obligatorily required for thioglycine installation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TfuA cannot be obligatorily required for thioglycine installation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that some species lack tfuA but have thioglycine.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "0859c0ae-d5db-463c-8937-550ace6f0cc2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C45",
+      "claim": "The genomic context of tfuA and ycaO in methanogens supports a shared or related function involving sulfur incorporation and/or methanogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic context of tfuA and ycaO in methanogens supports a shared or related function, perhaps involving sulfur incorporation and/or methanogenesis (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the gene neighborhood analysis shown in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "786bf88a-ecf5-4c2f-9195-76f339aaa4c3",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C46",
+      "claim": "When both tfuA and ycaO are present, they comprise a single locus where the stop codon of ycaO overlaps with the start codon of tfuA.",
+      "claim_type": "EXPLICIT",
+      "source": "When both are present, the two genes comprise a single locus in which the stop codon of the upstream ycaO gene overlaps with the start codon of the downstream tfuA gene, suggesting that they are co-transcribed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from genomic analysis and suggests co-transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "5daa16e1-7a96-42f1-9669-d48c85c16413",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C47",
+      "claim": "Deletion of the ycaO-tfuA locus has no impact on viability of Methanosarcina acetivorans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that deletion of the ycaO-tfuA locus has no impact on viability (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Cas9-based essentiality assay shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "5f236b64-199b-4b8c-9cd1-f89a2f00792b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C48",
+      "claim": "The mass spectrum from wild-type M. acetivorans showed a peak at m/z 3432 Da corresponding to the thioglycine-containing peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass spectrum from the WT strain showed a peak at m/z 3432 Da (Figure 4) corresponding to the peptide (461LGFFGFDLQDQCGATNVLSYQGDEGLPDELR491) with Gly465 being thioamidated (Kahnt et al., 2007; Grabarse et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by MALDI-TOF-MS data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "c2195f03-d258-46fc-9b29-1743de72d686",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C49",
+      "claim": "The m/z 3432 Da species is absent in the \u2206ycaO-tfuA, \u2206tfuA, and \u2206ycaO samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the involvement of TfuA-associated YcaO proteins in thioamide formation, we noted the absence of the m/z 3432 Da species in the mass spectrum of similarly treated \u2206ycaO-tfuA, \u2206tfuA, and \u2206ycaO samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly shown by MALDI-TOF-MS data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "b6a5e249-f9a9-4e31-8771-4fe20c346fa0",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C50",
+      "claim": "A predominant m/z 3416 Da species appeared in the mutant samples, which is 16 Da lighter than the wild-type peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a predominant m/z 3416 Da species appeared, which was 16 Da lighter, consistent with replacement of sulfur by oxygen (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by MALDI-TOF-MS data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1bc6556f-3cd1-4359-a01d-f0bddef8cd18",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C51",
+      "claim": "The 16 Da mass difference is consistent with replacement of sulfur by oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a predominant m/z 3416 Da species appeared, which was 16 Da lighter, consistent with replacement of sulfur by oxygen (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mass difference and confirmed by HR-ESI-MS/MS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "9de6c436-29ee-4577-976c-58d9e5b5cc71",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C52",
+      "claim": "Fragmentation between Gly465 and Phe466 was not observed in the wild-type thioamide-containing peptide during HR-ESI-MS/MS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "During HR-ESI-MS/MS analysis of the WT, thioamide-containing peptide, we did not observe fragmentation between Gly465 and Phe466.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the MS/MS data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "9a88dfff-bd42-449e-b9ae-892ea676ae06",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C53",
+      "claim": "Fragmentation between Gly465 and Phe466 was observed in the \u2206ycaO-tfuA strain peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, fragmentation was seen at this location in the \u2206ycaO-tfuA strain (b5 ion, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the MS/MS data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "5ab73bbc-7124-40dd-84a0-67d3e05f8cd4",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C54",
+      "claim": "The lack of fragmentation in the wild-type peptide is due to the greater double bond character of C-N bonds in thioamides.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of fragmentation in the WT peptide was anticipated based on the greater double bond character of C-N bonds in thioamides (Wiberg and Rablen, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from chemical properties of thioamides and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1642516b-ff2d-4ec9-b5dc-b3d76e6cf268",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C55",
+      "claim": "Complementation of the \u2206ycaO-tfuA mutant with ycaO-tfuA restores the thioglycine modification.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that mutations in ycaO and/or tfuA were responsible for loss of the thioglycine modification, we transformed the \u2206ycaO-tfuA mutant with a self-replicating plasmid containing the ycaO-tfuA locus fused to the tetracycline-inducible promoter PmcrB(tetO4) (Guss et al., 2008). Upon tryptic digestion of MCR from cultures supplemented with tetracycline, a peak at m/z 3432 Da reappeared (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by MALDI-TOF-MS data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "2ff95480-988f-42a1-be6f-aebeaa9fbf65",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C56",
+      "claim": "Complementation of the \u2206ycaO or \u2206tfuA single mutants with the respective genes restores the thioglycine modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained when complementation experiments were performed with the ycaO or tfuA genes in the corresponding single mutants (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by MALDI-TOF-MS data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "55e943e4-7e02-4c87-907e-a4aa75b404da",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C57",
+      "claim": "Thioglycine formation is not a prerequisite for N-methylhistidine modification.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a peak at m/z 1496 in the WT and mutant samples corresponding to a N-methylhistidine-containing tryptic peptide (His271-Arg284, Figure 4\u2014figure supplement 3A). Thus, thioglycine formation is not a prerequisite for this modification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the MS data shown in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "ccd7f27d-8bc2-4241-9a1f-7049ccb3cda6",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C58",
+      "claim": "Gln420 remains unmodified in M. acetivorans.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a peak at m/z 1561 was observed, corresponding to McrA Phe408-Arg421, shows that Gln420 remains unmodified in M. acetivorans, as previously been observed for Methanosarcina barkeri (Figure 4\u2014figure supplement 3B) (Kahnt et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the MS data shown in Figure 4\u2014figure supplement 3B and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "9e02cf55-61f9-4f49-9ee2-460ebf2278ea",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C59",
+      "claim": "No significant differences in growth were observed between wild-type and \u2206ycaO-tfuA mutant on methanol or trimethylamine at 36\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "While no significant differences were observed during growth on methanol or trimethylamine (TMA) at 36\u00b0C, the \u2206ycaO-tfuA mutant had substantially longer generation times and lower cell yields on both dimethylsulfide (DMS) and acetate (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by growth rate measurements in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "d488dcca-6a8c-4c3f-9569-1207c94b16be",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C60",
+      "claim": "The \u2206ycaO-tfuA mutant had substantially longer generation times and lower cell yields on dimethylsulfide and acetate.",
+      "claim_type": "EXPLICIT",
+      "source": "While no significant differences were observed during growth on methanol or trimethylamine (TMA) at 36\u00b0C, the \u2206ycaO-tfuA mutant had substantially longer generation times and lower cell yields on both dimethylsulfide (DMS) and acetate (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by growth rate measurements in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "533bc2aa-c3df-460c-9ddd-de3fca88a40d",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C61",
+      "claim": "The growth phenotype on methanol medium is strongly temperature-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the growth phenotype on methanol medium was strongly temperature-dependent, with no observed differences at 29\u00b0C and 36\u00b0C, but severe defects observed for the \u2206ycaO-tfuA mutant at 39\u00b0C and 42\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly shown by growth rate measurements at different temperatures in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "a691524c-7b2a-48da-b46d-0c4f2102d30a",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C62",
+      "claim": "The \u2206ycaO-tfuA mutant is incapable of growth at 45\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, unlike WT, the mutant was incapable of growth at 45\u00b0C (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by growth rate measurements in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "a32a1687-371e-4325-bfe4-1ff3b074558b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C63",
+      "claim": "The melting temperature of wild-type MCR is 67.3 \u00b1 0.3\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the SYPRO Orange-based Thermofluor assay (Huynh and Partch, 2015), the melting temperature of WT MCR was 67.3 \u00b1 0.3\u00b0C (mean \u00b1 95% confidence interval of three technical replicates) whereas the melting temperature for the MCR variant lacking thioglycine was 69.1 \u00b1 0.2\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured using the Thermofluor assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "662e4548-1fdb-4cbe-bf88-68d745aece76",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C64",
+      "claim": "The melting temperature of MCR from the \u2206ycaO-tfuA mutant is 69.1 \u00b1 0.2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the SYPRO Orange-based Thermofluor assay (Huynh and Partch, 2015), the melting temperature of WT MCR was 67.3 \u00b1 0.3\u00b0C (mean \u00b1 95% confidence interval of three technical replicates) whereas the melting temperature for the MCR variant lacking thioglycine was 69.1 \u00b1 0.2\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured using the Thermofluor assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "cdbc9203-b5e3-4b1f-bcc6-8ecec717a928",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C65",
+      "claim": "The F430 content is not significantly affected by the presence of thioglycine.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, quantification of the protein and F430 concentrations by Bradford assay and absorption at 280/430 nm demonstrated that the F430 content was not significantly affected by the presence of thioglycine (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by UV-Vis spectroscopy shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "0df8d2e1-ab68-40a4-b6bb-7bc6d7cf18c8",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C66",
+      "claim": "Both ycaO and tfuA genes are required for the thioamidation of McrA.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of the thioglycine modification in the \u2206ycaO, \u2206tfuA, and \u0394ycaO-tfuA mutants shows that both of these genes are required for the thioamidation of McrA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly demonstrated by mass spectrometry data from the mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "830a38ec-2535-497a-a2f1-fa1e1262cc90",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C67",
+      "claim": "The YcaO/TfuA proteins likely directly catalyze modification of McrA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this could be an indirect requirement, we believe it is more likely that the YcaO/TfuA proteins directly catalyze modification of McrA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic and biochemical data, though not definitively proven.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "10173ee0-b3cc-474e-b2c7-e7ce763f8e79",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C68",
+      "claim": "YcaO enzymes coordinate the nucleophilic attack of the Cys, Ser, and Thr side chain on the preceding amide carbonyl carbon.",
+      "claim_type": "EXPLICIT",
+      "source": "Such cyclodehydratases coordinate the nucleophilic attack of the Cys, Ser, and Thr side chain on the preceding amide carbonyl carbon in a fashion reminiscent of intein splicing (Perler et al., 1997) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by biochemical studies and a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "2c88a5cc-289e-4bab-8234-5979f7a27dc6",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C69",
+      "claim": "An exogenous equivalent of sulfide is required for the thioamidation reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The only difference is that an exogenous equivalent of sulfide is required for the thioamidation reaction, rather than an adjacent beta-nucleophile-containing amino acid for azoline formation (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mechanism shown in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "7b30b7c9-d311-4119-852c-c88ed965530f",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C70",
+      "claim": "Most YcaO cyclodehydratases require a partner protein for catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most YcaO cyclodehydratases require a partner protein for catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "a30d170e-7835-442a-bbec-19ccb3ca0255",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C71",
+      "claim": "TfuA may facilitate binding to the peptidic substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering these traits of azoline-forming YcaOs, it is possible that thioamide-forming YcaOs require the TfuA partner to facilitate binding to the peptidic substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the known function of YcaO partner proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "c9419b90-c6df-4b51-8bd4-4aef47901d32",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C72",
+      "claim": "TfuA may recruit and deliver sulfide equivalents by a direct or indirect mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, TfuA may recruit and deliver sulfide equivalents by a direct or indirect mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the genomic context and known sulfur metabolism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "3e190fac-1ce6-4265-bdf1-2eaa3573da33",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C73",
+      "claim": "The ycaO-tfuA locus can be found adjacent to genes involved in sulfur and molybdoterin metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it is noteworthy that the ycaO-tfuA locus can be found adjacent to genes involved in sulfur and molybdoterin metabolism (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown by genomic context analysis in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "24430099-c394-41ce-9038-ecdbfc9d098f",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C74",
+      "claim": "The viability of the \u0394ycaO-tfuA mutant precludes the hypothesis that the thioamide residue is essential for MCR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As MCR is essential for growth and survival (Rother et al., 2005), the viability of ycaO-tfuA mutants precludes the hypothesis that the thioamide residue is essential for MCR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the viability of the mutant and the essentiality of MCR.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1b757f97-a523-44a7-842a-b00490859b9a",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C75",
+      "claim": "The most pronounced growth defects were observed with growth substrates that support the slowest wild-type growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has not been explicitly determined, MCR is thought to catalyze the rate-limiting step of methanogenesis (Scheller et al., 2010; Wongnate et al., 2016). Therefore, the absence of thioglycine might lead to a corresponding decrease in the growth rate, with more pronounced defects on substrates that lead to the fastest growth. However, we observed the opposite: the most pronounced defects were observed with growth substrates that support the slowest WT growth rates (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from the growth rate data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "83842f9c-2b27-4eff-8394-c4adce4dedd2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C76",
+      "claim": "Intracellular levels of methyl-CoM, CoM, and CoB could be significantly different depending on the entry point into the methanogenic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, these entry points are separated by an energy-dependent step that is coupled to production or consumption of the trans-membrane Na+ gradient. As a result, intracellular levels of methyl-CoM, CoM, and CoB could possibly be significantly different depending on the entry point into the methanogenic pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the metabolic pathway shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "cbde0d2d-0832-483d-a0b7-e6a77ff8d1af",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C77",
+      "claim": "The growth deficiency phenotype is unlikely to be related to changes in substrate affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we observed growth defects on substrates that enter at both points (i.e. DMS and acetate), we suspect that the growth deficiency phenotype is unlikely to be related to changes in substrate affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of defects on multiple substrates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "2b578f89-f77c-44a5-bd87-2b659a7c6a16",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C78",
+      "claim": "Unstable MCR protein would need to be replaced more often, creating a significant metabolic burden for the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "A third explanation we considered was that thioglycine increases the stability of MCR. In this model, unstable MCR protein would need to be replaced more often, creating a significant metabolic burden for the mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the growth phenotypes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "34fc7832-1fc8-4bd5-8fb9-a94a5528c202",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C79",
+      "claim": "MCR comprises approximately 10% of the total protein in methanogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our results, this additional burden would be exacerbated on lower energy substrates like DMS and acetate, especially given that MCR comprises ~10% of the total protein (Rospert et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rospert et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "49868241-2f2e-4edb-9caa-bd6859a3d38b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C80",
+      "claim": "The melting temperature of MCR from the \u2206ycaO-tfuA mutant is modestly higher than that purified from the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the melting temperature of MCR from the \u2206ycao-tfuA mutant was modestly higher than that purified from the WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured using the Thermofluor assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "32380eff-1f4a-4029-8b94-004c6e8685e2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C81",
+      "claim": "Thioamidation does not affect the global stability of MCR.",
+      "claim_type": "EXPLICIT",
+      "source": "As the thioglycine is buried deep within the active site of MCR (Ermler et al., 1997), these data are consistent with the notion that thioamidation does not affect the global stability of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the melting temperature data and structural information.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "7ec95e90-10e1-4de3-961a-2333cc08c3d5",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C82",
+      "claim": "The thioglycine modification impacts the local stability in the vicinity of the buried active site of MCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, it suggests that the thioglycine modification impacts the local stability in the vicinity of the buried active site of MCR (Figure 1\u2014figure supplement 1), which in turn might have a detrimental effect under catalytic turnover conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the melting temperature data, growth phenotypes, and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "2e93813b-fe73-4dc7-8dc1-42315d03d63d",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C83",
+      "claim": "Amides have lower rotational barriers than thioamides.",
+      "claim_type": "EXPLICIT",
+      "source": "Although amides tend to be planar, their rotational barriers are lower than for the corresponding thioamide and thus they are more conformationally flexible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as chemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "779237f5-a4fb-458c-94ab-7546806f030a",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C84",
+      "claim": "The thioamide carbonyl is not polarized like an amide carbonyl.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the negligible electronegativity difference between sulfur and carbon, the thioamide carbonyl is not polarized like an amide carbonyl (Wiberg and Rablen, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as chemical knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "b11fdb3b-be83-488e-8be2-f776fdda1af0",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C85",
+      "claim": "The thioamide bond length is approximately 40% longer than the amide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, sulfur has a larger van der Waals radius than oxygen resulting in a thioamide bond length that is ~40% longer than the amide bond (1.71 \u00c5 versus 1.23 \u00c5) (Petersson et al., 2014), which presents additional steric hindrances to backbone flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as chemical knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "3de27394-7181-439e-980a-68010195a91f",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C86",
+      "claim": "The pKa of thioamides is lower than amides, making thioglycine a stronger hydrogen bond donor than glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the pKa of thioamides is lower than amides, making thioglycine a stronger hydrogen bond donor than glycine (Lee et al., 2002), which again could reduce conformational flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as chemical knowledge with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1e2b1059-b37d-4eb3-aa5f-c056efe76e72",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C87",
+      "claim": "The increased flexibility of unmodified glycine in the \u0394ycaO-tfuA mutant would render the contorted conformation of the peptide backbone in the Gly462-Leu469 region less stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, it is chemically reasonable to state that the increased flexibility of the unmodified glycine in the \u0394ycaO-tfuA mutant would render the contorted conformation of the peptide backbone in the Gly462-Leu469 region of McrA considerably less stable (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from chemical properties and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "f65e95c9-0979-4152-8bf2-94a16be2c8f1",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C88",
+      "claim": "The thioamide sulfur is optimally distanced (3.6 \u00c5) and geometrically positioned to form an H-bond with the side chain of Asn501 and the backbone N-H of Leu469.",
+      "claim_type": "EXPLICIT",
+      "source": "The thioamide sulfur is also optimally distanced (3.6 \u00c5) and geometrically positioned to form an H-bond with the side chain of Asn501 and the backbone N-H of Leu469.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from structural analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "5ef51582-6531-4679-991b-fc9d83149d4e",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C89",
+      "claim": "There appears to be a hydrophobic interaction between the thioamide and the beta carbon of Leu469.",
+      "claim_type": "EXPLICIT",
+      "source": "There also appears to be a hydrophobic interaction between the thioamide and the beta carbon of Leu469, which would be energetically unfavorable with a more polarized amide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1337e321-deaa-49ae-8bd9-22317d64fe52",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C90",
+      "claim": "The thioglycine modification would be indispensable for thermophilic methanogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this result, it seems reasonable to speculate that the thioglycine modification would be indispensable for thermophilic methanogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the temperature-sensitive phenotype of the mutant.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "225827ee-be7a-40f0-8127-d0472f65043c",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C91",
+      "claim": "The ancestor of modern methanogens was likely a thermophilic organism.",
+      "claim_type": "EXPLICIT",
+      "source": "It is often posited that the ancestor of modern methanogens was a thermophilic organism (Gribaldo and Brochier-Armanet, 2006; Forterre, 2015; Weiss et al., 2016; L\u00f3pez-Garc\u00eda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis from the literature with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "53fea2da-1114-4a32-afa2-d0611cc6e8d1",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C92",
+      "claim": "The universal presence of the thioglycine modification supports the thermophilic ancestry of methanogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the universal presence of the thioglycine modification supports the thermophilic ancestry of methanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distribution of the modification and evolutionary considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "b34593bb-3f94-4f9a-95b8-6bbebb805bca",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C93",
+      "claim": "The ycaO-tfuA locus is conserved in Methanococcoides burtonii, a psychrophilic methanogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the ycaO-tfuA locus is conserved even in Methanococcoides burtonii, a psychrophilic methanogen isolated from Ace Lake in Antarctica, where the ambient temperature is always below 2\u00b0C (Franzmann et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "d2213afb-f6b2-46aa-8ac2-a135cda1ae7c",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C94",
+      "claim": "MCR is essential for growth and survival of M. acetivorans.",
+      "claim_type": "EXPLICIT",
+      "source": "As MCR is essential for growth and survival (Rother et al., 2005), the viability of ycaO-tfuA mutants precludes the hypothesis that the thioamide residue is essential for MCR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rother et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "8653ebb2-c3ea-4083-b44e-e4bb48aec0fd",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C95",
+      "claim": "The tryptic peptide at m/z 3432 Da contains a didehydroaspartate modification at Asp470.",
+      "claim_type": "EXPLICIT",
+      "source": "This peptide also contains the recently reported didehydroaspartate modification at Asp470 (Wagner et al., 2016) and S-methylation at Cys472 (Selmer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "c5e7c5af-c50b-4433-9f23-fa74ee19d573",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C96",
+      "claim": "The tryptic peptide at m/z 3432 Da contains S-methylation at Cys472.",
+      "claim_type": "EXPLICIT",
+      "source": "This peptide also contains the recently reported didehydroaspartate modification at Asp470 (Wagner et al., 2016) and S-methylation at Cys472 (Selmer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "688f5be4-cc38-48d0-8e81-c87720e4877f",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C97",
+      "claim": "The archaeal TfuA proteins fall within a single clade that is largely congruent with the evolutionary history of archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "The archaeal TfuA proteins also fall within a single clade that is largely congruent with the evolutionary history of archaea (Figure 2\u2014figure supplements 1\u20132); however, unlike YcaO, the methanogen-containing clade includes numerous bacterial homologs (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 2\u2014figure supplements 1\u20132.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "4af216dd-73e5-4f02-9d08-c4a12e9380e2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C98",
+      "claim": "The methanogen-containing TfuA clade includes numerous bacterial homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "The archaeal TfuA proteins also fall within a single clade that is largely congruent with the evolutionary history of archaea (Figure 2\u2014figure supplements 1\u20132); however, unlike YcaO, the methanogen-containing clade includes numerous bacterial homologs (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "d18749e1-7019-4e07-be2e-52242c49ada5",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C99",
+      "claim": "The doubling time of wild-type M. acetivorans on methanol at 36\u00b0C is 6.94 \u00b1 0.41 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Substrate* Strain Doubling time (h)\u2020 p-value Maximum OD600\u2020 p-value Methanol WT 6.94 \u00b1 0.41 0.87 5.35 \u00b1 0.31 0.26",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "f0c7fc7f-26ce-496b-8d42-3c599c9abd90",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C100",
+      "claim": "The doubling time of the \u2206ycaO-tfuA mutant on methanol at 36\u00b0C is 6.89 \u00b1 0.15 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2206ycaO-tfuA 6.89 \u00b1 0.15 5.06 \u00b1 0.39",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "1df47e49-599d-43c1-a0e1-bc648b36b218",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C101",
+      "claim": "The doubling time of wild-type M. acetivorans on acetate at 36\u00b0C is 54.23 \u00b1 4.03 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetate WT 54.23 \u00b1 4.03 0.0002 0.44 \u00b1 0.01 0.0005",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "3700184c-9ba6-4eb4-812f-98366d3a796a",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C102",
+      "claim": "The doubling time of the \u2206ycaO-tfuA mutant on acetate at 36\u00b0C is 124.33 \u00b1 12.52 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2206ycaO-tfuA 124.33 \u00b1 12.52 0.35 \u00b1 0.02",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "6da4da43-2c8e-4e70-a251-25f9e88385b0",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C103",
+      "claim": "The doubling time of wild-type M. acetivorans on DMS at 36\u00b0C is 31.27 \u00b1 1.28 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "DMS WT 31.27 \u00b1 1.28 <0.0001 0.60 \u00b1 0.01 <0.0001",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "800fe3a5-c789-4841-8e94-439b3b134979",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C104",
+      "claim": "The doubling time of the \u2206ycaO-tfuA mutant on DMS at 36\u00b0C is 58.28 \u00b1 1.45 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2206ycaO-tfuA 58.28 \u00b1 1.45 0.44 \u00b1 0.01",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "fa898e36-f8a3-41d5-88ea-e7aebabb8026",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C105",
+      "claim": "Methanogenic and methanotrophic archaea produce and consume gigatons of methane each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these processes produce and consume gigatons of methane each year, helping to establish the steady-state atmospheric levels of an important greenhouse gas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about the global carbon cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "9e03bc7c-7e65-47f9-bf28-fede081fc619",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C106",
+      "claim": "YcaO enzymes O-phosphorylate the oxyanion intermediate and subsequently N-deprotonate the hemiorthoamide, yielding an azoline heterocycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The enzyme then O-phosphorylates the resulting oxyanion and subsequently N-deprotonates the hemiorthoamide, yielding an azoline heterocycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about YcaO mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "bf5fd2b7-e62f-4947-9b9f-08ff0b3ecc29",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "claim_id": "C107",
+      "claim": "The molecular alignment and distance (3.5 \u00c5) between Phe463 and the thioamide of Gly465 suggests a potential \u03c0-cation interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this region adopts a rather strange configuration, with the side chain of Phe463 bending back towards the thioamide of Gly465. The molecular alignment and distance (3.5 \u00c5) suggests a potential \u03c0-cation interaction between these residues(Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "YcaO and TfuA homologs are universally or nearly universally present in methanogen genomes, with YcaO forming a distinct clade congruent with methanogen phylogeny, suggesting early acquisition and vertical inheritance. TfuA is present in most but not all methanogens, and some species lacking tfuA still contain thioglycine, indicating TfuA is not obligatorily required for thioglycine installation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C46, C97-C98 are supported by comprehensive phylogenetic analyses shown in Figure 2 and supplementary figures. The bioinformatic data demonstrate universal or near-universal presence of YcaO, phylogenetic congruence with methanogen evolution, and the presence of thioglycine in some tfuA-lacking species (C43), which is directly supported by citation to Kahnt et al., 2007.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "18996aaf-ee2d-471b-9588-f7d34a7484f6",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The archaeal tfuA and ycaO genes are required for post-translational installation of thioglycine into McrA at position 465. Deletion of either or both genes results in replacement of thioglycine with glycine, as demonstrated by a 16 Da mass difference and differential fragmentation patterns in MS/MS analysis. Complementation restores the thioglycine modification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C48-C56, C66 are strongly supported by MALDI-TOF-MS and HR-ESI-MS/MS data (Figure 4 and supplements). The 16 Da mass shift (C50-C51), absence of fragmentation at the thioamide bond in WT (C52), presence of fragmentation in mutants (C53), and restoration upon complementation (C55-C56) provide converging evidence. The chemical interpretation (C54) is appropriately supported by citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "ecff691f-da4b-40cd-bd7a-b248387c0cde",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Deletion of the ycaO-tfuA locus has no impact on viability of Methanosarcina acetivorans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is directly supported by the Cas9-based essentiality assay shown in Figure 3, which demonstrates similar transformation efficiencies with and without repair template for ycaO-tfuA deletion, contrasting with the essential mcrA gene control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "e4ee4f31-7a24-466c-9c11-c1c15691b653",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The \u0394ycaO-tfuA mutant shows substrate-dependent growth defects at 36\u00b0C. No significant differences were observed on methanol or trimethylamine, but the mutant exhibited substantially longer doubling times and lower cell yields on dimethylsulfide (DMS) and acetate compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C99-C104 are directly supported by growth rate measurements in Table 1. The data show statistically significant differences (p<0.001) for DMS and acetate but not for methanol or TMA at 36\u00b0C. The specific doubling times and p-values are clearly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "ee627cc5-2917-4e79-bd2e-49fd0432d61b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The \u0394ycaO-tfuA mutant exhibits temperature-dependent growth defects on methanol, with severe defects at 39\u00b0C and 42\u00b0C and complete inability to grow at 45\u00b0C, while wild-type grows at all tested temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C61-C62 are directly supported by growth rate measurements at different temperatures shown in Figure 5. The data demonstrate no defects at 29\u00b0C and 36\u00b0C but significant defects at higher temperatures, with complete growth failure at 45\u00b0C for the mutant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "43dc5057-eb89-4169-82ac-8f7464b8ba3a",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The melting temperature of MCR from the \u0394ycaO-tfuA mutant (69.1 \u00b1 0.2\u00b0C) is modestly higher than wild-type MCR (67.3 \u00b1 0.3\u00b0C), suggesting that thioglycine does not affect global protein stability but may impact local stability near the active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C80-C82 are supported by Thermofluor assay data. The counterintuitive finding that the mutant MCR has higher melting temperature (C80) is appropriately interpreted as indicating that thioglycine affects local rather than global stability (C81-C82), consistent with the buried location of the modification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "15849618-b025-4b76-b73d-e2884ff297b6",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Thioglycine plays a role in stabilizing the local protein structure near the active site of MCR. The viability of the mutant precludes essentiality for catalysis, and the pattern of growth defects (worse on low-energy substrates) suggests a role in maintaining proper structural conformation rather than affecting catalytic rate or substrate affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C74-C75, C77-C78, C87-C89, C107 represent an integrated interpretation supported by multiple lines of evidence: viability of mutants (C47), substrate-dependent growth defects (C60), temperature sensitivity (C61-C62), melting temperature data (C63-C64), and structural analysis (C87-C89, C107). The inference that thioglycine stabilizes local structure is well-supported, though the precise mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "dda52ff2-41d8-4d37-9bb1-67dbadf30280",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The F430 cofactor content is not significantly affected by the presence or absence of thioglycine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is directly supported by UV-Vis spectroscopy data shown in Figure 5\u2014figure supplement 2, which demonstrates similar F430 content in wild-type and mutant MCR based on absorption at 280/430 nm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "5aceb73f-7716-42da-9733-85a9dcf1b942",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Thioglycine formation is not a prerequisite for other post-translational modifications in McrA, including N-methylhistidine at His271-Arg284 and the unmodified state of Gln420 in M. acetivorans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are directly supported by MALDI-TOF-MS data (Figure 4\u2014figure supplement 3) showing that the N-methylhistidine-containing peptide is present in both wild-type and mutant samples, and that Gln420 remains unmodified in both.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "95a22580-9c2f-4f04-ba11-77072b42844d",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "YcaO/TfuA proteins likely directly catalyze thioamidation of McrA through a mechanism analogous to azoline formation, requiring an exogenous sulfide source. TfuA may facilitate substrate binding or sulfide delivery, potentially involving adjacent sulfur metabolism genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C73 represent mechanistic hypotheses that are plausible based on analogy to characterized YcaO enzymes (C68, C70) and genomic context (C73), but lack direct biochemical demonstration. The requirement for both genes (C66) supports a functional partnership, but the specific roles of YcaO and TfuA in thioamidation have not been experimentally validated through in vitro reconstitution or detailed mechanistic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "dadfebfd-5e3b-4395-b255-b0a4539fdb04",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Thioamides have distinct chemical properties compared to amides: lower rotational barriers, non-polarized carbonyl, longer bond length (~40%), and lower pKa making them stronger hydrogen bond donors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 represent established chemical knowledge supported by appropriate citations (Wiberg and Rablen, 1995; Petersson et al., 2014; Lee et al., 2002). These properties are correctly stated and relevant to understanding the structural role of thioglycine.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "b5db51e4-51ae-4ce5-a001-bf43e738ac8b",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The thioglycine modification would be indispensable for thermophilic methanogens, and its universal presence supports the hypothesis of thermophilic ancestry of methanogenesis. The modification is conserved even in psychrophilic methanogens like Methanococcoides burtonii.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C93 represent evolutionary speculation based on the temperature-sensitive phenotype (C61-C62) and universal distribution of the modification. While the temperature sensitivity supports the hypothesis for thermophiles (C90), the presence in psychrophiles (C93) complicates the interpretation. The evolutionary inference (C92) is plausible but not definitively proven, as alternative explanations (e.g., other selective pressures) have not been ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "0cd1a7e6-f188-46e1-815b-b0d532b58add",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MCR is found in methanogenic and methanotrophic archaea, catalyzes reversible methane production/consumption, contains unusual post-translational modifications including thioglycine, and plays a critical role in the global carbon cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C21, C94-C96, C105 represent established background knowledge about MCR, supported by appropriate citations to prior literature. These claims provide context for the current work and are well-documented in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "05654b82-6d6d-497e-8d38-ce1a9284399d",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Various hypotheses exist for the functions of post-translational modifications in MCR, including roles in substrate binding, active site tuning, and catalytic mechanism, but these remain speculative and untested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 accurately represent prior hypotheses from the literature, appropriately cited and clearly identified as speculation. These provide important context for understanding why the current study was undertaken.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "a1193891-ac5e-4b10-a594-d9209fb410d2",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Thioamides are rare in biology, mostly of bacterial origin, and include RiPP natural products like thioviridamide. The thioviridamide biosynthetic gene cluster encodes YcaO and TfuA homologs, and YcaO proteins catalyze ATP-dependent cyclodehydration reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35, C106 represent established knowledge about thioamide-containing natural products and YcaO enzyme function, supported by appropriate citations. This background provides the rationale for the hypothesis tested in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    },
+    {
+      "id": "d6916da2-36ec-40b6-9872-7c102b6c0ce3",
+      "content_id": "74197045-5c9c-41ba-ab68-6b3f1bc3b194",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Intracellular levels of methyl-CoM, CoM, and CoB could be significantly different depending on the entry point into the methanogenic pathway due to energy-dependent steps coupled to the Na+ gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is a reasonable inference based on the metabolic pathway (Figure 6), but lacks direct experimental measurement of intracellular metabolite levels. The authors appropriately use cautious language ('could possibly be'), but this remains speculative without supporting data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:53:08.399818Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68f1b82d-7ce9-4a30-b3fc-cef0bc83db08",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "ab7a726c-adb3-4303-9c74-ca864879c8b4",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "d991771b-ac3a-44f6-a82e-1291f97d07ae",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "91c21811-374a-46ef-bd81-cef4dbb1030b",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "800713bb-089f-4216-a646-274381088a81",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "1f74245e-ebbc-4357-9af1-fe4760f41e84",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "6b217730-7fb4-42f4-9327-a37d39fa4411",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "2ce6ace4-327a-48a4-8365-973509e92944",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "d5ece309-64d2-48e0-9fb8-914bd4433162",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "0859c0ae-d5db-463c-8937-550ace6f0cc2",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "786bf88a-ecf5-4c2f-9195-76f339aaa4c3",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "688f5be4-cc38-48d0-8e81-c87720e4877f",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "4af216dd-73e5-4f02-9d08-c4a12e9380e2",
+      "result_id": "15507c79-591d-4305-ae3c-4ef4d5b0fac2"
+    },
+    {
+      "claim_id": "0769e4a7-4f05-49c0-88f4-88f20a31029b",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "b4fd0d9e-4f83-4894-8e37-2e7d24188e56",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "5f236b64-199b-4b8c-9cd1-f89a2f00792b",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "c2195f03-d258-46fc-9b29-1743de72d686",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "b6a5e249-f9a9-4e31-8771-4fe20c346fa0",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "1bc6556f-3cd1-4359-a01d-f0bddef8cd18",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "9de6c436-29ee-4577-976c-58d9e5b5cc71",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "9a88dfff-bd42-449e-b9ae-892ea676ae06",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "5ab73bbc-7124-40dd-84a0-67d3e05f8cd4",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "1642516b-ff2d-4ec9-b5dc-b3d76e6cf268",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "2ff95480-988f-42a1-be6f-aebeaa9fbf65",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "0df8d2e1-ab68-40a4-b6bb-7bc6d7cf18c8",
+      "result_id": "18996aaf-ee2d-471b-9588-f7d34a7484f6"
+    },
+    {
+      "claim_id": "5daa16e1-7a96-42f1-9669-d48c85c16413",
+      "result_id": "ecff691f-da4b-40cd-bd7a-b248387c0cde"
+    },
+    {
+      "claim_id": "9e02cf55-61f9-4f49-9ee2-460ebf2278ea",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "d488dcca-6a8c-4c3f-9569-1207c94b16be",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "d18749e1-7019-4e07-be2e-52242c49ada5",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "f0c7fc7f-26ce-496b-8d42-3c599c9abd90",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "1df47e49-599d-43c1-a0e1-bc648b36b218",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "3700184c-9ba6-4eb4-812f-98366d3a796a",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "6da4da43-2c8e-4e70-a251-25f9e88385b0",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "800fe3a5-c789-4841-8e94-439b3b134979",
+      "result_id": "e4ee4f31-7a24-466c-9c11-c1c15691b653"
+    },
+    {
+      "claim_id": "dee6d43b-ff85-4670-abc8-341c5b2f38b5",
+      "result_id": "ee627cc5-2917-4e79-bd2e-49fd0432d61b"
+    },
+    {
+      "claim_id": "533bc2aa-c3df-460c-9ddd-de3fca88a40d",
+      "result_id": "ee627cc5-2917-4e79-bd2e-49fd0432d61b"
+    },
+    {
+      "claim_id": "a691524c-7b2a-48da-b46d-0c4f2102d30a",
+      "result_id": "ee627cc5-2917-4e79-bd2e-49fd0432d61b"
+    },
+    {
+      "claim_id": "a32a1687-371e-4325-bfe4-1ff3b074558b",
+      "result_id": "43dc5057-eb89-4169-82ac-8f7464b8ba3a"
+    },
+    {
+      "claim_id": "662e4548-1fdb-4cbe-bf88-68d745aece76",
+      "result_id": "43dc5057-eb89-4169-82ac-8f7464b8ba3a"
+    },
+    {
+      "claim_id": "49868241-2f2e-4edb-9caa-bd6859a3d38b",
+      "result_id": "43dc5057-eb89-4169-82ac-8f7464b8ba3a"
+    },
+    {
+      "claim_id": "32380eff-1f4a-4029-8b94-004c6e8685e2",
+      "result_id": "43dc5057-eb89-4169-82ac-8f7464b8ba3a"
+    },
+    {
+      "claim_id": "7ec95e90-10e1-4de3-961a-2333cc08c3d5",
+      "result_id": "43dc5057-eb89-4169-82ac-8f7464b8ba3a"
+    },
+    {
+      "claim_id": "27f5a4df-e1ee-46cc-87c4-70dcb02d15c1",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "24430099-c394-41ce-9038-ecdbfc9d098f",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "1b757f97-a523-44a7-842a-b00490859b9a",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "cbde0d2d-0832-483d-a0b7-e6a77ff8d1af",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "2b578f89-f77c-44a5-bd87-2b659a7c6a16",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "1e2b1059-b37d-4eb3-aa5f-c056efe76e72",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "f65e95c9-0979-4152-8bf2-94a16be2c8f1",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "5ef51582-6531-4679-991b-fc9d83149d4e",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "bf5fd2b7-e62f-4947-9b9f-08ff0b3ecc29",
+      "result_id": "15849618-b025-4b76-b73d-e2884ff297b6"
+    },
+    {
+      "claim_id": "cdbc9203-b5e3-4b1f-bcc6-8ecec717a928",
+      "result_id": "dda52ff2-41d8-4d37-9bb1-67dbadf30280"
+    },
+    {
+      "claim_id": "55e943e4-7e02-4c87-907e-a4aa75b404da",
+      "result_id": "5aceb73f-7716-42da-9733-85a9dcf1b942"
+    },
+    {
+      "claim_id": "ccd7f27d-8bc2-4241-9a1f-7049ccb3cda6",
+      "result_id": "5aceb73f-7716-42da-9733-85a9dcf1b942"
+    },
+    {
+      "claim_id": "830a38ec-2535-497a-a2f1-fa1e1262cc90",
+      "result_id": "95a22580-9c2f-4f04-ba11-77072b42844d"
+    },
+    {
+      "claim_id": "10173ee0-b3cc-474e-b2c7-e7ce763f8e79",
+      "result_id": "95a22580-9c2f-4f04-ba11-77072b42844d"
+    },
+    {
+      "claim_id": "2c88a5cc-289e-4bab-8234-5979f7a27dc6",
+      "result_id": "95a22580-9c2f-4f04-ba11-77072b42844d"
+    },
+    {
+      "claim_id": "7b30b7c9-d311-4119-852c-c88ed965530f",
+      "result_id": "95a22580-9c2f-4f04-ba11-77072b42844d"
+    },
+    {
+      "claim_id": "a30d170e-7835-442a-bbec-19ccb3ca0255",
+      "result_id": "95a22580-9c2f-4f04-ba11-77072b42844d"
+    },
+    {
+      "claim_id": "c9419b90-c6df-4b51-8bd4-4aef47901d32",
+      "result_id": "95a22580-9c2f-4f04-ba11-77072b42844d"
+    },
+    {
+      "claim_id": "3e190fac-1ce6-4265-bdf1-2eaa3573da33",
+      "result_id": "95a22580-9c2f-4f04-ba11-77072b42844d"
+    },
+    {
+      "claim_id": "2e93813b-fe73-4dc7-8dc1-42315d03d63d",
+      "result_id": "dadfebfd-5e3b-4395-b255-b0a4539fdb04"
+    },
+    {
+      "claim_id": "779237f5-a4fb-458c-94ab-7546806f030a",
+      "result_id": "dadfebfd-5e3b-4395-b255-b0a4539fdb04"
+    },
+    {
+      "claim_id": "b11fdb3b-be83-488e-8be2-f776fdda1af0",
+      "result_id": "dadfebfd-5e3b-4395-b255-b0a4539fdb04"
+    },
+    {
+      "claim_id": "3de27394-7181-439e-980a-68010195a91f",
+      "result_id": "dadfebfd-5e3b-4395-b255-b0a4539fdb04"
+    },
+    {
+      "claim_id": "1337e321-deaa-49ae-8bd9-22317d64fe52",
+      "result_id": "b5db51e4-51ae-4ce5-a001-bf43e738ac8b"
+    },
+    {
+      "claim_id": "225827ee-be7a-40f0-8127-d0472f65043c",
+      "result_id": "b5db51e4-51ae-4ce5-a001-bf43e738ac8b"
+    },
+    {
+      "claim_id": "53fea2da-1114-4a32-afa2-d0611cc6e8d1",
+      "result_id": "b5db51e4-51ae-4ce5-a001-bf43e738ac8b"
+    },
+    {
+      "claim_id": "b34593bb-3f94-4f9a-95b8-6bbebb805bca",
+      "result_id": "b5db51e4-51ae-4ce5-a001-bf43e738ac8b"
+    },
+    {
+      "claim_id": "0f784d3e-6338-45cc-a77d-eef212e33deb",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "bb6d91e9-6ef7-4891-b191-d176868e81de",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "3cd4e401-aea6-42e8-8665-f0564ba8deeb",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "9dc0798c-4dad-4c59-b304-187bfaae4394",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "cb6bc85e-ea12-449a-8e3c-3327b32ae23b",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "0412d009-0dfd-44a4-930a-9c63da840a14",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "a3f0d34a-417e-4d05-9c2c-90a8e6856a75",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "8f49d591-3620-42e1-9b27-38f627d3849a",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "ce9303f8-7c61-4842-98df-d0a3ff5f1657",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "1c9b2490-194a-47b9-87ec-33eeb16ce188",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "6bfeb267-eef0-4440-aa9b-0d29e72d20c2",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "ccc2d84b-685f-4ee4-850a-11e3d94740c5",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "94b7c4c0-9e61-40fe-8f19-6bd52f2b0ef4",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "7e0148aa-b486-4555-8c97-5435e7bdb1bf",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "4ff083a3-8b83-464c-8d9d-66d2b4815048",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "bd70b771-0cf9-4b53-aca2-cadb721fe516",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "d2213afb-f6b2-46aa-8ac2-a135cda1ae7c",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "8653ebb2-c3ea-4083-b44e-e4bb48aec0fd",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "c5e7c5af-c50b-4433-9f23-fa74ee19d573",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "fa898e36-f8a3-41d5-88ea-e7aebabb8026",
+      "result_id": "0cd1a7e6-f188-46e1-815b-b0d532b58add"
+    },
+    {
+      "claim_id": "c69c6a06-04ec-4c63-bd1b-66ab3da49212",
+      "result_id": "05654b82-6d6d-497e-8d38-ce1a9284399d"
+    },
+    {
+      "claim_id": "9c17a9b2-4339-46b8-8c86-254740090595",
+      "result_id": "05654b82-6d6d-497e-8d38-ce1a9284399d"
+    },
+    {
+      "claim_id": "8bfda608-fbb3-47b5-8b93-cf8247a16afd",
+      "result_id": "05654b82-6d6d-497e-8d38-ce1a9284399d"
+    },
+    {
+      "claim_id": "011831c6-0d20-4d68-9cfb-aef708dd2271",
+      "result_id": "05654b82-6d6d-497e-8d38-ce1a9284399d"
+    },
+    {
+      "claim_id": "f5b74bcd-0658-4f1a-825b-f8e3cd73d09c",
+      "result_id": "05654b82-6d6d-497e-8d38-ce1a9284399d"
+    },
+    {
+      "claim_id": "eaa4d671-379f-431f-9d2c-bab5c7014145",
+      "result_id": "05654b82-6d6d-497e-8d38-ce1a9284399d"
+    },
+    {
+      "claim_id": "c7ea28e1-15ed-4ec6-bef0-829320c89577",
+      "result_id": "05654b82-6d6d-497e-8d38-ce1a9284399d"
+    },
+    {
+      "claim_id": "63879c29-f9f6-4319-9483-75796f5765a2",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "2f261982-be24-445e-ba40-fbd270e2e0ff",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "fcde511f-a653-4946-8dce-b9cfd2a42c8e",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "49134cb6-fea8-4a80-a02f-141a1ce9c365",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "66a8ae35-6540-4c5a-b274-68f9634b8dc4",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "e1a82ed4-14e3-4ace-8843-0391a3cf2c28",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "de90b218-01a7-4375-a587-c75454a78223",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "9e03bc7c-7e65-47f9-bf28-fede081fc619",
+      "result_id": "a1193891-ac5e-4b10-a594-d9209fb410d2"
+    },
+    {
+      "claim_id": "83842f9c-2b27-4eff-8394-c4adce4dedd2",
+      "result_id": "d6916da2-36ec-40b6-9872-7c102b6c0ce3"
+    }
+  ],
+  "comparisons": []
+}

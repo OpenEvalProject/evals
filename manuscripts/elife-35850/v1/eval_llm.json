@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Natural chemokines and chimeric variants exhibit diverse and ligand-specific signaling profiles at US28, demonstrating biased agonism. CX3CL1 and vMIP-II bind competitively, while CCL3 and CCL5 are self-competitive. vMIP-II acts as a neutral antagonist, CCL3 as a G-protein-biased agonist, and CX3CL1/CCL5 potentiate both calcium and migration responses. Chimeric chemokines (NVF, N5F) show intermediate signaling, indicating the N-terminus plays an instructive but not solely determinative role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C35 are well-supported by radioligand competition binding data (Figure 1a), calcium flux assays (Figures 1c, 1b), and migration assays (Figure 1e). The data demonstrate distinct binding modes and signaling profiles for different chemokines, with appropriate controls and statistical analysis. The chimeric chemokine experiments provide mechanistic insight into the role of the N-terminus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Nanobody7 and nanobody11, raised against the US28/CX3CL1 complex, stabilize distinct conformational subsets of US28 without inducing conformational changes. US28Nb7 permits binding of all tested chemokines, while US28Nb11 shows impaired binding of CCL5 and CCL3, suggesting the nanobodies select pre-existing active-like conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by structural comparison data (C37), yeast display binding experiments (Figure 2b), and radioligand competition data. The differential binding pharmacologies of the two nanobodies provide strong evidence for conformational selection rather than induced fit. The structural validation that Nb7 does not alter receptor conformation is critical for interpreting subsequent library selection experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "In the presence of nanobody7, CX3CL1 and CCL5 maintain high affinity for US28 even when the receptor N-terminus (Site 1) is deleted, suggesting nanobody7 selectively potentiates Site 2 affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by binding data comparing full-length US28Nb7 to \u0394N US28Nb7 (Figure 2\u2014figure supplement 2). The maintained affinity in the absence of Site 1 contrasts with prior work without nanobody, providing evidence for nanobody-mediated potentiation of Site 2 binding. However, the mechanism of this potentiation is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Deep sequencing of CX3CL1 N-terminal libraries selected on US28Nb7 and US28Nb11 reveals that tens of thousands of unique chemokine N-termini can bind US28 with high affinity. The selected sequences show broad amino acid diversity at each position, with wild-type residues rarely being the most abundant. Polyglycine N-termini show minimal binding, confirming the necessity of certain contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44-C50 are well-supported by deep sequencing data (Figure 2d-e, Figure 2\u2014figure supplement 3). The library contained 2.0\u00d710^8 transformants (C98), and quantitative analysis identified 794 unique US28Nb7-selected sequences and 11,415 US28Nb11-selected sequences meeting stringent criteria. The polyglycine control (C47, Figure 2\u2014figure supplement 4) validates that sequence diversity is not unlimited. The enrichment patterns are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Selected chemokine variants from the library exhibit diverse signaling outcomes at US28. Nearly all variants induce some cell migration but none surpass wild-type CX3CL1. CX3CL1.35 (LLPHANY) elicits stronger G protein activation than wild-type CX3CL1. Selected variants show high affinity on yeast but weak competition with wild-type CX3CL1 in radioligand assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C54 are supported by calcium flux data (Figure 3a), migration assays (Figure 3b), yeast binding data, and radioligand competition experiments (Figure 3\u2014figure supplement 3). The data demonstrate functional diversity among selected variants. The discrepancy between yeast binding and radioligand competition (C51-C52) is interesting but not fully explained, suggesting different binding modes or conformational states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Signaling by CX3CL1.35 and its homologous sequences is remarkably robust to individual sequence substitutions. Despite substantial sequence differences, most CX3CL1.35 family members induce qualitatively similar G protein signaling and maintain cell migration responses, demonstrating that signaling effects are relatively insensitive to individual amino acid changes within a sequence motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55-C57 are supported by calcium flux (Figure 3c) and migration data (Figure 3d) for CX3CL1.35 family members with diverse sequences. The data show consistent signaling profiles despite sequence variation, supporting the conclusion of robustness. This is a key finding that challenges conventional understanding of ligand-receptor specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C74",
+      "C75"
+    ],
+    "result": "The crystal structure of CX3CL1.35 in complex with US28Nb7-NbB1 (3.5 \u00c5 resolution) reveals an entirely unique N-terminal peptide conformation and remodeled receptor-ligand interactions compared to wild-type CX3CL1. The chemokine globular body is rotated 16.8\u00b0, the N-termini trace markedly different paths in the binding pocket, and CX3CL1.35 projects into the major pocket toward TM5/TM6 while losing extensive TM2/ECL2 contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C58-C67, C71, C74-C75 are supported by crystallographic data (Figure 4, Figure 5\u2014source data 1) at 3.5 \u00c5 resolution. The structure shows clear differences in N-terminal conformation (Figure 4b), contact patterns (Figure 4c-g), and chemokine orientation (16.8\u00b0 rotation vs. 3\u00b0 in wild-type). The concern about crystal contacts (C59) is addressed by the failure to crystallize other variants under the same conditions (C60), supporting that the conformation is native. The structural data quality appears adequate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "CX3CL1.35 contacts conserved residues Glu277^7.39, Trp89^2.60, and Phe111^3.32 in the minor pocket, which are commonly contacted by chemokine ligands and implicated in ligand affinity and receptor signaling initiation. CX3CL1.35 also contacts residues surrounding the Trp241^6.48 rotamer switch implicated in GPCR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C72-C73 are supported by structural data (Figures 4d, 4f) and appropriately cited literature (L\u00fcckmann et al., 2017; Rosenkilde and Schwartz, 2006; Arimont et al., 2017; Wescott et al., 2016; Latorraca et al., 2017). The structural contacts are clearly shown, and the functional importance of these residues is established in prior work. This provides mechanistic context for the observed binding and signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C8",
+      "C9",
+      "C91"
+    ],
+    "result": "US28 accommodates highly degenerate chemokine sequences by sensing steric bulk rather than requiring sequence-specific bonding chemistries. Calcium signaling and migration are robust to disruption of specific receptor contacts, suggesting that steric bulk distorting the binding pocket walls is the principal determinant of signaling output, which could allow an almost unlimited number of sequences to elicit similar signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C8-C9, C91 represent the central mechanistic conclusion of the paper. This is supported by: (1) thousands of diverse sequences binding US28 (C3, C44), (2) robustness of signaling to sequence changes (C7, C55-C57, Figures 3c-d), (3) structural data showing different pocket distortions (Figure 5b), and (4) lack of conserved sequence patterns in selected variants (Figure 2e). The steric bulk hypothesis is a logical inference that unifies the observations, though direct experimental validation of the mechanism is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The crystal structure of apo-US28Nb7 (3.5 \u00c5 resolution) shows that ECL1 and ECL2 collapse inward, constricting access to the binding cavity. CX3CL1 binding displaces ECLs outward with minimal overall distortion, while CX3CL1.35 binding distorts TM1, TM6, and TM7 outward, expanding the binding pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by crystallographic data (Figure 5, Figure 5\u2014figure supplement 1, Figure 5\u2014source data 1). The structural comparisons clearly show distinct conformational changes induced by different ligands. This provides direct evidence for ligand-specific receptor conformational changes that could underlie biased signaling. The 3.5 \u00c5 resolution is adequate for these conclusions about overall conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Chemokines may function as bitopic ligands via Site 1.5 (ECL contacts) and Site 2 (N-terminal peptide in TM pocket) interactions, with both sites working in concert to determine signaling profiles. This is supported by the unique signaling profiles of chimeric chemokines NVF and N5F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 propose a bitopic ligand mechanism based on pronounced differences in ECL conformation/contacts between CX3CL1 and CX3CL1.35 (structural data) and the intermediate signaling of chimeric chemokines (Figures 1c, 1e). While the structural differences are clear and the chimeric data are suggestive, the bitopic mechanism is largely inferred. Direct experimental validation (e.g., mutagenesis of ECL residues, systematic testing of Site 1.5 vs. Site 2 contributions) is not provided. The hypothesis is plausible but requires additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The sequence-insensitive recognition mechanism is enabled by the N-terminal chemokine sequence binding within a capsule-shaped US28 pocket, which affords numerous opportunities for adventitious bonding interactions between the pocket walls and alternative N-terminal peptide conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are inferred from the structural features of the US28 binding pocket and the observed sequence promiscuity. The capsule-shaped pocket is evident in the structures (Figures 4, 5), and the ability to accommodate diverse sequences with different conformations (Figure 4b) supports this explanation. This is a reasonable structural interpretation that explains the functional data, though it remains somewhat speculative without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The properties of US28 explain how CMV evolved a human GPCR to be highly promiscuous for viral survival, and suggest the broader possibility that GPCR signaling can be activated by surrogate agonists unrelated to natural ligands that activate new signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a reasonable conclusion supported by the combined findings of extreme ligand promiscuity, steric bulk-based recognition, and biased signaling. Claim C95 is a broader speculation about GPCR biology that extends beyond the data. While the US28 findings are provocative, generalizing to other GPCRs requires caution. The evolutionary explanation for US28 (C94) is well-supported, but the broader implications (C95) are speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims about chemokine biology, US28 origin and function, and the two-site binding mechanism are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C20, C23-C26 are appropriately cited from established literature and provide necessary background context. These are not novel findings of this study but are accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "CX3CL1-induced IP3 turnover is US28 and cell type specific, with inverse agonism observed only in COS-7 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by IP3 assay data (Figure 1b) showing differential responses in different cell types. The observation of inverse agonism only in COS-7 cells contrasts with some prior reports, highlighting cell type-specific effects. This is a minor but important observation for understanding US28 signaling context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Comparison with other GPCRs shows that small molecule agonists induce subtle pocket contraction, peptide agonists like endothelin induce large inward TM translations, and ECL stabilization is a common allosteric modulation mechanism. Toggling between ECL2 and TM5 interactions has been proposed as a general bias mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C87-C89 are appropriately cited from literature (Rasmussen et al., 2011; Ring et al., 2013; Kruse et al., 2013; Huang et al., 2015; Shihoya et al., 2016; Christopoulos, 2014; Ziarek et al., 2017; McCorvy et al., 2018) and provide important comparative context for interpreting the US28 structural changes. These are not novel findings but are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Natural chemokine sequences represent a subset of local minima in a broad signaling fitness landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a conceptual conclusion inferred from the finding that engineered sequences can elicit the full spectrum of signaling bias (C4, Figures 3a-b). This is a reasonable interpretation of the data showing that non-natural sequences can match or exceed wild-type signaling, suggesting natural sequences are not uniquely optimized but represent one solution among many.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Methodological details: US28 was truncated for the US28Nb7 construct, a CX3CL1 N-terminal library with 2.0\u00d710^8 transformants was constructed with randomized positions 1-7, and crystallization of CX3CL1.35 complex required an additional nanobody (NbB1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are methodological details clearly described in the Materials and Methods section. These are factual statements about the experimental design and are well-documented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study identified 227 PRDM9 orthologs across vertebrates, including jawless fish, cartilaginous fish, bony fish, coelacanths, turtles, snakes, lizards, and mammals. The study confirmed the absence of PRDM9 in birds, crocodiles, canids, and amphibians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are well-supported by the systematic bioinformatic search of RefSeq databases, whole genome assemblies, and transcriptome data. The absence of PRDM9 in specific taxa was confirmed through multiple approaches including genome searches and RNA-seq analysis with appropriate positive controls (C33-C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "An ancient duplication of PRDM9 occurred in the common ancestor of teleost fish, coincident with whole genome duplication, resulting in PRDM9\u03b1 and PRDM9\u03b2 paralogs. PRDM9\u03b2 was found in all teleost species examined, while PRDM9\u03b1 was lost at least three times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by phylogenetic analysis (Figures 1-2) and structural analysis of zinc finger arrays. The inference of ancient duplication is consistent with known whole genome duplication in teleosts, and the distribution of paralogs across species supports the loss events, though bootstrap support for some nodes is modest (54-75%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "PRDM9 orthologs with complete domain structure (KRAB, SSXRD, SET, and ZF) were identified in multiple vertebrate lineages, suggesting this architecture was present in the common ancestor of vertebrates. Multiple independent losses of N-terminal domains (KRAB and/or SSXRD) were confirmed in at least six taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are well-supported by domain architecture analysis confirmed through both genome searches and transcriptome data. The study used stringent criteria including reciprocal BLAST and transcriptome validation where possible. The inference of ancestral state (C41) is reasonable given the phylogenetic distribution, though it relies on parsimony assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Partial PRDM9 orthologs lacking N-terminal domains show evidence of functional constraint (dN/dS < 1), including in teleost fish where they have been evolving under constraint for hundreds of millions of years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by codeml analysis showing dN/dS significantly less than 1 for all examined partial orthologs (Supplementary file 3A). The statistical approach is appropriate, though the interpretation that constraint indicates functional importance (rather than recent pseudogenization) requires the assumption that sufficient time has passed for relaxation of constraint to be detectable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PRDM9 orthologs with complete domain structure show exceptionally rapid evolution of the zinc finger array compared to other C2H2 ZF genes, ranking in the top 5% genome-wide. This rapid evolution is absent from partial PRDM9 orthologs lacking KRAB/SSXRD domains. The concordance between complete domain structure and rapid ZF evolution is highly significant (p<10\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are well-supported by genome-wide comparative analysis (Table 1) using an appropriate statistic (proportion of amino acid diversity at DNA-binding sites). The phylogenetically-corrected statistical test (C55) properly accounts for non-independence of species. The one exception noted (Myotis lucifugus, C54) is appropriately acknowledged as uncertain due to inability to confirm domain loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The correlation between complete domain structure and rapid ZF evolution suggests that KRAB and SSXRD domains are required for PRDM9's role in directing recombination, and that non-mammalian species such as turtles and snakes also use PRDM9 to direct recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 represent reasonable inferences from the strong correlation between complete domain structure and rapid ZF evolution (C55). However, the inference relies on the assumption that rapid ZF evolution is indicative of PRDM9-directed recombination, which is plausible but not directly demonstrated for non-mammalian species. The conclusion is appropriately presented as conditional ('assuming that rapid evolution...is indicative').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "Three catalytic tyrosine residues (Y276, Y341, Y357) important for human PRDM9 methyltransferase activity are broadly conserved across vertebrates (57 of 227 orthologs have substitutions). Strikingly, no substitutions occur in complete PRDM9 orthologs with all four domains, and no substitutions occur in any PRDM9\u03b1 ortholog regardless of domain architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, and C62 are supported by systematic analysis of SET domain alignments across all 227 orthologs. The pattern is striking and statistically unlikely by chance. However, the functional interpretation requires the assumption that these residues have conserved catalytic roles across vertebrates, which is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Swordtail fish have a partial PRDM9\u03b2 ortholog lacking KRAB/SSXRD domains with a slowly evolving ZF array and substitutions at catalytic residues. Recombination patterns in swordtail hybrids show elevation near TSSs, CGIs, and H3K4me3 peaks, but not near predicted PRDM9 binding sites, resembling species that lack PRDM9 entirely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 are well-supported by multiple lines of evidence: molecular characterization of PRDM9\u03b2 (C63-C65), recombination mapping from 268 hybrid individuals (C66-C67), ChIP-seq analysis (C69-C70), and motif analysis (C71-C72). The integration of these approaches provides strong evidence that swordtail PRDM9 does not direct recombination despite being expressed and conserved. Statistical support is provided for key associations (e.g., rho=-0.072, p=2.3e-69 for H3K4me3 peaks).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Comparative analysis of recombination landscapes shows that species with complete PRDM9 have flat or reduced recombination rates near TSSs and CGIs, while species lacking PRDM9 (and swordtail fish with partial PRDM9) show elevated recombination at these features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by systematic re-analysis of published genetic maps from seven species (Figure 5). The qualitative pattern is clear and consistent. However, quantitative comparisons are limited by differences in map resolution, and LD-based maps may be affected by linked selection near genes. The authors appropriately acknowledge these caveats and show that qualitative patterns hold with pedigree-based maps where available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Based on phylogenetic reconstruction of 227 PRDM9 orthologs, the ancestral domain architecture consisted of KRAB, SSXRD, SET, and ZF domains, likely present in the common ancestor of vertebrates. Evolutionary patterns suggest all four domains are important for PRDM9 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are reasonable inferences from the phylogenetic distribution of complete PRDM9 across distantly related vertebrate lineages. Claim C80 is supported by the correlation between complete domain structure and rapid ZF evolution, plus the swordtail fish functional data. The inference relies on parsimony and assumes the observed evolutionary patterns reflect functional constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Swordtail fish with truncated PRDM9 lacking KRAB/SSXRD domains behave like PRDM9 knockouts in recombination patterns. Substitutions at catalytic residues are only seen in PRDM9 genes lacking KRAB/SSXRD domains or the ZF entirely, suggesting loss of these domains may signify loss of recombination function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is well-supported by the swordtail fish data (C63-C73). Claim C82 is supported by the systematic analysis of catalytic residues. Claim C83 is presented as speculation and represents a reasonable hypothesis, though the authors acknowledge uncertainty about whether domain loss or catalytic substitutions are the primary cause of functional loss in swordtails.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The conservation of partial PRDM9 orthologs despite apparent loss of recombination function suggests another role for the gene, possibly as a transcription factor like other PRDM family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 represent reasonable speculation based on the observation of purifying selection on partial orthologs (C46-C47) combined with evidence they don't direct recombination. The comparison to other PRDM family members is appropriate and supported by citations. However, this remains a hypothesis requiring direct functional testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "If complete domain structure and rapid ZF evolution indicate PRDM9-directed recombination, then this role originated before vertebrate diversification. Supporting evidence includes high allelic diversity in python ZF arrays reminiscent of apes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is a logical inference from the presence of complete, rapidly-evolving PRDM9 in diverse vertebrate lineages, though it's appropriately presented as conditional. Claim C88 provides suggestive supporting evidence from within-species diversity in pythons (Figure 1\u2014figure supplement 5), though this is based on only two individuals and requires more extensive sampling for confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PRDM9 has been frequently duplicated (55 independent cases) and lost (at least 6 partial losses, 3 complete losses) across vertebrate evolution, indicating it is not essential for meiotic recombination in the way SPO11 is.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by phylogenetic analysis. The count of duplication events (C90) is based on the RAxML tree. The pattern of frequent gains and losses suggests PRDM9 is dispensable, though the comparison to SPO11 (C93) is somewhat informal. The conclusion is reasonable but would benefit from more systematic analysis of essentiality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims about meiotic recombination mechanisms, PRDM9 function in mammals, hotspot evolution, and differences between PRDM9-directed and promoter-directed recombination systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 represent established knowledge from prior work, appropriately cited throughout. These provide essential context for interpreting the study's findings but are not novel results of this work. All claims are supported by appropriate citations to primary literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C84",
+      "C94",
+      "C95"
+    ],
+    "result": "Additional supporting claims about PRDM9 catalytic residues, KRAB domain function, and recombination patterns in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C84, C94, and C95 represent prior knowledge appropriately cited to support the study's interpretations. These are not novel findings but provide important context for understanding the significance of the results.",
+    "result_type": "MINOR"
+  }
+]

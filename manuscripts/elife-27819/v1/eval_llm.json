@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study employed intracranial EEG recordings from 12 neurosurgical patients viewing face and non-face stimuli with synchronized eye tracking. External displacements (1.3\u00b0 or 3.7\u00b0) were introduced during fixation blocks, and naturally occurring saccades of similar magnitude were identified offline for comparison. High-frequency broadband (HFB) activity was analyzed using a Finite Impulse Response GLM to deconvolve overlapping responses, with 115 visually responsive electrodes identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design and methodology are clearly described with appropriate technical specifications (C1-C10, C66-C76, C82-C84). The use of FIR-GLM to handle overlapping responses is appropriate for this type of data, and the inclusion/exclusion criteria for electrodes and subjects are explicitly stated. The matching of saccade and displacement magnitudes by post-hoc selection is acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Early visual areas (V1-V3) showed similar HFB activity increases following both external displacements and saccades, while higher-order visual areas (V4, VO, face-selective, and non-face-selective high-level regions) showed HFB increases only to external displacements but not to saccades. Statistical testing revealed 36/115 electrodes with significantly greater responses to displacements versus saccades (pFDR < 0.05), with this effect increasing along the visual hierarchy (\u03c7\u00b2(6)=12.64, p=0.004), and no electrodes showing the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main finding is well-supported by multiple converging lines of evidence including grand averages (C11-C12), within-electrode permutation testing with FDR correction (C13-C15), and control analyses using different saccade timing windows and displacement magnitudes (C89-C91). The statistical approach using permutation testing with cluster-based analysis is appropriate, and the hierarchical gradient is demonstrated both qualitatively and quantitatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Peak response latencies for external displacements and saccades were significantly correlated across electrodes (r=0.66, n=34, p=0.00002), with no significant difference in average latencies between conditions (173.3\u00b151.0 ms for displacements vs. 164.8\u00b153.2 ms for saccades, t(33)=1.15, p=0.26). These results are interpreted as consistent with a retinal origin of HFB increases following both events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The latency analysis is appropriately conducted and statistically sound (C16-C17). However, the interpretation (C18) is somewhat limited as the authors acknowledge that latency measurements were mainly possible in early visual sites where saccade responses were not suppressed, limiting the generalizability of this conclusion to higher-level areas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Single-subject examples demonstrate simultaneous recordings from early and high-level visual sites showing the differential response pattern. In subject P57, V1 showed similar responses to both conditions (with a preceding activity decrease for saccades that did not reach significance at the group level), while MST showed suppression of saccade responses. In subject P39, recordings suggest a possible hierarchical gradient within face-selective sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-subject examples (C85-C87) provide important within-subject validation of the group-level findings, addressing potential concerns about between-subject variability. The observation in P39 (C87) is appropriately presented as speculative given the limited sample. These examples strengthen the main conclusions by demonstrating the effect can be observed within individual subjects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C58",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C88"
+    ],
+    "result": "Comparison with prior blink suppression data revealed significant overlap between electrodes showing suppression for saccades versus displacements and those showing suppression for blinks versus gaps (S\u00f8rensen-Dice coefficient=0.5763, p=0.000018). Across ROIs, blink and saccade suppression indices were highly correlated (r=0.95, n=6, excluding V4), with V4 showing unexpectedly strong saccade suppression relative to blink suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overlap analysis is well-executed with appropriate statistical testing (C19, C78-C79). The correlation analysis appropriately acknowledges the outlier removal and uses bias-corrected permutation testing (C80-C81). The authors appropriately note the small V4 sample size (6 electrodes) limits definitive conclusions about this region (C88). The finding suggests shared mechanisms but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors argue against a purely retinal explanation for the differential responses in higher-level cortex, noting that the observed pattern (similar responses in V1, increasing differences at higher levels) is opposite to what would be expected if low-level retinal differences were driving the effect. They acknowledge that external displacements did not simulate saccade-induced blur, which could contribute to early visual cortex responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reasoning is logically sound (C39-C41): if retinal differences were the primary driver, effects should be strongest in early visual cortex, but the opposite pattern is observed. The authors appropriately acknowledge the limitation regarding motion blur (C43-C44) and its potential contribution to early visual responses. This interpretation is consistent with the data pattern but does not definitively rule out all retinal contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The findings extend prior work by demonstrating concurrent recordings across the visual hierarchy reveal a striking contrast between early and higher-level regions in representing self-generated versus external displacements. The similar responses in early visual cortex to both conditions indicate V1 is strongly perturbed by small saccades, which the authors interpret as evidence that V1 activity is incompatible with subjective perceptual awareness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation appropriately contextualizes the findings relative to prior work (C45-C46) and draws reasonable conclusions about the hierarchical nature of visual stability (C47). The connection to perceptual awareness (C48) is appropriately framed as consistent with prior hypotheses (Crick and Koch, 1995) rather than definitive proof. The concurrent recording approach addresses a key limitation of prior single-area studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study extends saccadic suppression effects to ventral high-level visual cortex, including face-selective sites, demonstrating these regions show sensitivity to small external displacements but suppressed responses to saccades. This indicates extra-retinal saccade information affects both dorsal and ventral visual streams, supporting an active extra-retinal stabilization mechanism rather than passive stabilization through large receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension to ventral stream is a novel contribution (C49) supported by the data. The interpretation regarding position sensitivity (C50) and extra-retinal modulation (C51) is well-supported. The methodological advantage of directly comparing saccades and displacements (C53) effectively addresses the alternative explanation of passive stabilization through large receptive fields. The connection to prior hypotheses (C52) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors acknowledge several limitations: the study focused on saccades smaller than the displayed objects; the displacement versus saccade contrast cannot assess regions insensitive to both (possibly in anterior ventral cortex); and results are limited to HFB activity, with possible different patterns in single-unit activity or slower frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations are appropriately acknowledged and clearly stated (C54-C57). The restriction to small saccades is a reasonable design choice given the focus on within-object displacements. The acknowledgment that some regions may be insensitive to both conditions (C55-C56) is important for interpretation. The limitation to HFB (C57) is appropriately noted with citation supporting its use as a proxy for spiking activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors propose that motor-visual pathways for blinks and saccades considerably overlap, possibly utilizing a single shared descending pathway. This hypothesis is supported by systematic eye movements during blinks and evolutionary considerations that saccade suppression mechanisms predated the evolution of eyelids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the correlation between blink and saccade suppression (from Result 5) provides suggestive evidence for overlapping pathways (C59), the specific hypothesis of a single shared pathway (C60) is highly speculative. The supporting evidence from eye movements during blinks (C61) and evolutionary arguments (C62-C63) are interesting but indirect. This remains a plausible hypothesis requiring further experimental validation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The study leaves open the question of the precise mechanism underlying saccade-related suppression in ventral stream, which could be either a general gating mechanism suppressing all motion-related transients or a more specific offsetting by oculomotor motion vectors similar to that in monkey MT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge what their study does not resolve (C64) and present alternative mechanistic hypotheses (C65) that would require future experiments to distinguish. This is an honest assessment of the study's scope and appropriately identifies important follow-up questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "A control analysis using saccade onsets instead of offsets produced very similar results to the main analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control analysis (C77) demonstrates the robustness of the findings to the choice of saccade timing reference point, strengthening confidence in the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C42"
+    ],
+    "result": "The introduction contextualizes the study within prior literature on visual stability, saccadic suppression, and the neural basis of distinguishing self-generated from external motion. It identifies gaps in knowledge regarding hierarchical processing across visual cortex and the role of ventral stream in visual stability, motivating the current study's approach using intracranial recordings with broad anatomical coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review appropriately summarizes prior work on MT/MST (C24-C25), conflicting findings in V1 (C26-C29), ventral stream processing (C30-C32), and identifies key gaps in knowledge (C33-C35). The rationale for using intracranial recordings (C36) and connection to prior work by the same group (C22, C37-C38) appropriately motivates the current study. The citations appear appropriate and the knowledge claims are reasonable.",
+    "result_type": "MINOR"
+  }
+]

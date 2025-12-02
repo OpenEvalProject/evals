@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ChAR-seq is a new proximity ligation method that maps genome-wide RNA-to-DNA contacts in Drosophila cells. The method uses a specially designed biotinylated oligonucleotide bridge with a 5'-adenylated end for specific RNA ligation and DpnII site for DNA ligation, generating 22.2 million high-confidence contacts for ~16,800 RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C20-C28 collectively describe the method development with clear technical details. The bridge design (C23-C26) is well-justified with appropriate enzymatic properties (C24). The data output (C28) provides concrete metrics. The experimental system choice (C20-C21) is appropriate with proper characterization cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ChAR-seq demonstrates high specificity and reproducibility. RNase treatment reduced bridge molecules 6-fold, spike-in controls showed <0.5% false positives even at 10% spike-in levels, and technical replicates showed high concordance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNase control (C29) directly validates RNA-dependence. The spike-in experiment (C31) provides quantitative false positive rates with concentration-dependent controls. Reproducibility (C30) is demonstrated across replicates. These are appropriate validation experiments with clear quantitative outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "ChAR-seq captures diverse RNA classes with 85% sense-stranded RNAs, including 32% mRNA (nascent transcripts), 18% snoRNA, and 19% snRNA. Most antisense mRNAs (96%) were intronic, with 64% from a single gene (CG42339), suggesting unannotated ncRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 provide comprehensive RNA composition data with specific percentages. The inference about unannotated ncRNAs (C37) is reasonable given the concentration of antisense reads. However, this inference would benefit from additional validation experiments to confirm the presence of novel ncRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ChAR-seq identifies three classes of RNA-chromatin associations: Class I RNAs localized to their transcription sites (nascent transcripts), Class II RNAs distributed genome-wide in trans, and Class III chromosome-specific RNAs (roX1/roX2). Nascent RNA patterns show qualitative agreement with PRO-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification (C40-C43) is clearly defined with examples. Comparison to PRO-seq (C44) provides orthogonal validation for Class I RNAs. The observation of trans contacts (C45) is documented. However, 'qualitative agreement' is vague and would benefit from quantitative correlation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ChAR-seq preserves three-dimensional genome organization, as demonstrated by TAD preservation and high correlation with published Hi-C data in mock-treated samples. RNA-to-DNA contact profiles are distinctly different from DNA-to-DNA contacts, confirming ChAR-seq signal is not a byproduct of DNA-DNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide validation against established Hi-C data with appropriate controls. The distinction between RNA-DNA and DNA-DNA contacts (C49-C50) is critical for method validation. However, the manuscript should provide quantitative correlation values rather than just stating 'high correlation' and 'distinctly different.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Among 16,812 RNAs detected, 1,952 RNAs (12%) with >10 CPKM account for 83% of contacts. While RNA expression correlates with chromatin contacts, 138 RNAs show >100 CPKM and >10-fold enrichment over expression levels, with many enriched by 2-5 orders of magnitude, indicating specific chromatin association beyond nascent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 provide clear quantitative thresholds and enrichment metrics. The comparison to RNA-seq (C53-C54) appropriately controls for expression level. The enrichment criteria (C55-C56) are reasonable, though somewhat arbitrary. Reproducibility between replicates (C57) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ChAR-seq correctly identifies roX1 and roX2 as X-chromosome enriched in male cells (7.6-fold and 8.1-fold, p<10^-10) but not in female cells, validating the method's ability to detect known chromosome-specific ncRNA localization patterns that depend on MSL2 complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 provide strong positive and negative controls. The male cell enrichment (C59-C60) has highly significant p-values. The female cell experiment (C64) provides appropriate negative control based on known biology (C61-C63). Agreement for other RNAs across cell lines (C65) demonstrates specificity of the sex-dependent effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ChAR-seq shows surprisingly good agreement with ChIRP-seq for roX1/roX2 localization despite 2 orders of magnitude fewer reads (roX1/roX2 represent only 0.1%/0.36% of ChAR-seq data). ChAR-seq achieves superior signal-to-noise ratios (roX1: 49.8 vs 3.9; roX2: 45.2 vs 22.0) compared to ChIRP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 provide direct method comparison with quantitative metrics. The SNR analysis (C69-C70) is well-defined and shows clear superiority. However, the SNR calculation method should be scrutinized - the definition of 'signal' (top 300 bins on chrX) and 'noise' (random autosomal bins) may favor ChAR-seq if ChIRP-seq has more background. The comparison would be stronger with additional metrics like peak overlap or correlation coefficients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ChAR-seq resolution analysis shows bi-phasic correlation with ChIRP-seq: a minor plateau at ~200 bp (likely due to DpnII distribution) and a major plateau at ~25 kbp, indicating the effective resolution is comparable to other proximity-ligation methods like Hi-C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 provide resolution estimation through comparison with ChIRP-seq. The bi-phasic pattern interpretation (C74-C75) is reasonable, attributing the 200 bp plateau to restriction enzyme bias and 25 kbp to true resolution. However, this is relatively low resolution compared to some genomic methods, which limits the ability to identify precise binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "snRNAs comprise 23% of ChAR-seq contacts. Major spliceosome components (U1, U2, U4, U5, U6) cluster together with snRNA:7SK, which is part of the p-TEFb transcription elongation complex. Minor spliceosome components did not cluster together, likely due to low abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 describe snRNA composition and clustering patterns. The clustering of major spliceosome components (C79) with 7SK (C80) is biologically meaningful given their co-transcriptional roles. The explanation for minor spliceosome (C82) is reasonable but speculative. The analysis appropriately uses known biology (C77-C78, C80-C81) to interpret findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Spliceosomal RNAs (7SK, U2, U6) are enriched over gene bodies with peaks at transcription start sites, consistent with co-transcriptional processing. These RNAs show modest but significant enrichment at TAD boundaries (~1.4-fold for 7SK/U2, ~2.2-fold for roX2 on X chromosome), where open chromatin and active transcription are also enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 connect RNA localization to genome organization. The gene body enrichment (C84) is validated by comparison to mouse 7SK ChIRP data (C85). TAD boundary enrichment (C87-C89) is statistically significant (Wilcoxon test) though modest. The connection to open chromatin (C91) and transcription (C92) is supported by ATAC-seq. However, the causal relationship between RNA localization and TAD boundaries remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Over 200 snoRNAs are highly represented in ChAR-seq data. Correlation clustering with modENCODE data reveals that chromatin-associated RNAs segregate into two anti-correlated categories: those associated with active chromatin/transcription (e.g., U2, 7SK) or heterochromatin (many snoRNAs and minor spliceosome snRNAs). snRNA:U5 variants show differential clustering with euchromatin vs heterochromatin, potentially reflecting isoform-specific spliceosome functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C103 describe snoRNA abundance and functional clustering. The validation with known dosage compensation factors (C96-C97) supports the clustering approach. The segregation into euchromatin/heterochromatin categories (C98-C100) is clear. The U5 variant observation (C101-C103) is interesting but highly speculative - the connection to isoform-specific function (C103) requires experimental validation beyond correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "ChAR-seq is a massively parallelized method that maps all chromatin-associated RNAs (nascent transcripts and RNPs), preserves 3D genome structure, complements Hi-C data, and serves as a de novo discovery tool as demonstrated by validation with roX1/roX2 and comparison to ChIRP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 summarize the method's capabilities and advantages. These are well-supported by the preceding experimental results. The characterization as 'massively parallelized' (C105) is accurate given simultaneous profiling of thousands of RNAs. The validation strategy (C109) and comparison to ChIRP-seq (C110) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "ChAR-seq differs from similar methods by performing proximity ligations in situ (reducing nonspecific interactions) and using long single-end reads across the bridge junction. Comparison to GRID-seq shows similar ability to detect roX2 binding, though the methods differ in read length (ChAR-seq: 20-100 bp fragments vs GRID-seq: 19-23 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 provide method comparisons. The distinctions from other methods (C113-C114) are clearly stated. The GRID-seq comparison (C115-C119) acknowledges a concurrent publication and provides fair assessment. However, the advantage/disadvantage discussion of read length (C118) is somewhat speculative without direct false mapping rate comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ChAR-seq discovered several dozen pervasively genome-bound ncRNAs, with >50% being snoRNAs (most correlating with heterochromatin). These snoRNAs are known chromatin components in flies and mice, but their chromatin association functions remain poorly understood. ChAR-seq can classify RNAs by chromatin state association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 describe biological discoveries. The snoRNA abundance (C122-C123) is clearly documented. The heterochromatin correlation (C123) is supported by clustering analysis. The acknowledgment of unknown function (C126) is appropriate scientific caution. The claim about classification capability (C127) is demonstrated by the modENCODE correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Transcription-associated RNAs are enriched at TAD boundaries, consistent with previous observations that active transcription is a stronger predictor of TAD partitioning in flies than CTCF/cohesin (the prototypical TAD boundary markers in mammals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 connect findings to genome organization principles. The observation (C128) is supported by the TAD boundary analysis. The consistency with prior work (C129-C130) appropriately contextualizes the findings. However, this remains correlative evidence - the 'potential role' language (C128) appropriately indicates the speculative nature of causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "ChAR-seq is anticipated to be useful for comparing epigenomic changes during cellular differentiation or tumorigenesis by simultaneously identifying chromatin-associated RNAs and mapping their binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C132 are speculative statements about future applications. While the method's capabilities support these potential uses, no data is presented for differentiation or tumorigenesis contexts. These are reasonable projections but remain untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context: ncRNAs form ribonucleoprotein complexes that regulate chromatin (including roX1/roX2, Xist, HOTAIR, HOTTIP, enhancer RNAs, TERRA, alpha-satellites). Existing methods (ChIRP, CHART, RAP) target single RNAs, while de novo discovery remains limited. Nuclear fractionation lacks genomic resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C19 provide literature context with appropriate citations. These establish the scientific rationale for developing ChAR-seq. The characterization of existing methods' limitations (C18-C19) justifies the need for a new approach. All claims are properly attributed to prior work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1614 @@
+{
+  "submission": {
+    "id": "e28ffad1-e0e4-496b-85d8-76d2a75d55e9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:06:55.106102Z",
+    "updated_at": "2025-12-01T19:06:55.106102Z"
+  },
+  "content": [
+    {
+      "id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "submission_id": "e28ffad1-e0e4-496b-85d8-76d2a75d55e9",
+      "content_type": "manuscript",
+      "content_text": "# Catecholaminergic challenge uncovers distinct Pavlovian and instrumental mechanisms of motivated (in)action\n\n## Authors\n\n- Jennifer C Swart<sup>1</sup> ([ORCID: 0000-0003-0989-332X](https://orcid.org/0000-0003-0989-332X)) \u2020\n- Monja I Frob\u00f6se<sup>1</sup>\n- Jennifer L Cook<sup>1</sup>\n- Dirk EM Geurts<sup>1</sup> ([ORCID: 0000-0002-2505-1301](https://orcid.org/0000-0002-2505-1301))\n- Michael J Frank<sup>4</sup> ([ORCID: 0000-0001-8451-0523](https://orcid.org/0000-0001-8451-0523))\n- Roshan Cools<sup>1</sup>\n- Hanneke EM den Ouden<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Donders Institute for Brain, Cognition and Behaviour Radboud University Nijmegen The Netherlands\n2. School of Psychology University of Birmingham Birmingham United Kingdom\n3. Department of Psychiatry Radboud University Medical Center Nijmegen The Netherlands\n4. Department of Cognitive Linguistic and Psychological Sciences, Brown University Providence United States\n5. Brown Institute for Brain Sciences Brown University Providence United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCatecholamines modulate the impact of motivational cues on action. Such motivational biases have been proposed to reflect cue-based, \u2018Pavlovian\u2019 effects. Here, we assess whether motivational biases may also arise from asymmetrical instrumental learning of active and passive responses following reward and punishment outcomes. We present a novel paradigm, allowing us to disentangle the impact of reward and punishment on instrumental learning from Pavlovian response biasing. Computational analyses showed that motivational biases reflect both Pavlovian and instrumental effects: reward and punishment cues promoted generalized (in)action in a Pavlovian manner, whereas outcomes enhanced instrumental (un)learning of chosen actions. These cue- and outcome-based biases were altered independently by the catecholamine enhancer melthylphenidate. Methylphenidate\u2019s effect varied across individuals with a putative proxy of baseline dopamine synthesis capacity, working memory span. Our study uncovers two distinct mechanisms by which motivation impacts behaviour, and helps refine current models of catecholaminergic modulation of motivated action.\n\n## Introduction\n\nCatecholamine (i.e. dopamine and noradrenaline) transmission has long been implicated in key aspects of adaptive behaviour, including learning, action, and motivation. Deficits in these aspects of adaptive behaviour are observed in a wide range of neuropsychiatric disorders, such as attention deficit hyperactivity disorder, Parkinson\u2019s disease, and addiction (Dagher and Robbins, 2009; Prince, 2008; Skolnick, 2005), and many of those deficits can be treated with catecholaminergic drugs (Faraone and Buitelaar, 2010; Wigal et al., 2011). While overwhelming evidence implicates catecholamines in both motivated activation and motivated learning of behaviour (Bromberg-Martin et al., 2010; Robbins and Everitt, 1996; Wise, 2004), their respective contributions are still highly debated. In this study, we dissect the contribution of catecholamines to motivational biases in behavioural activation and learning.\n\nThe neuromodulator dopamine has been linked particularly strongly to behavioural activation in the context of reward (Taylor and Robbins, 1986; 1984), putatively by amplifying the perceived benefits of action over their costs (Collins and Frank, 2014; Niv et al., 2007). This behavioural activation to reward-predicting cues is likely to be, at least partly, Pavlovian in nature, with the conditioned cues eliciting innately specified responses (Figure 1A). The Pavlovian nature of these motivational biases has been demonstrated using Pavlovian-instrumental transfer (PIT) paradigms (Estes and Skinner, 1941; Estes, 1943). In PIT, conditioned cues elicit innately specified responses that may potentiate (or interfere with) instrumental responding, e.g. appetitive cues promote active responding (appetitive PIT), whereas aversive cues increase behavioural inhibition (aversive PIT; Davis and Wright, 1979; Huys et al., 2011). Enhanced dopamine increases appetitive PIT (Wyvell and Berridge, 2000), while appetitive PIT is lowered when striatal dopamine is reduced (Dickinson et al., 2000; Hebart and Gl\u00e4scher, 2015; Lex and Hauber, 2008). Striatal dopamine has also been linked to controlling aversively motivated behaviour (Faure et al., 2008; Lloyd and Dayan, 2016). Together, these results show that appetitive cues promote activation and aversive cues promote inhibition in a Pavlovian manner, mediated by the dopamine system.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig1-v1.jpg)\n\n**Figure 1.:** (A) Pavlovian response bias: appetitive cues (green edge) elicit generalized behavioural activation (\u2018Go\u2019), whereas aversive cues (red edge) elicit behavioural inhibition (\u2018NoGo\u2019). This Pavlovian response bias is introduced in model M3a as the parameter \u03c0 (c.f. Figure 3). (B) Instrumental learning bias: rewarding outcomes (upper panel) facilitate learning of action (\u2018Go\u2019, thick arrow) relative to inaction (\u2018NoGo\u2019, thin arrow). Thus, learning effects at the individual trials t will result in a cumulative selective increase of the rewarded action on later trials tn. Punishment outcomes (lower panel) hamper the unlearning of inaction (\u2018NoGo\u2019, dashed arrow) relative to action (\u2018Go\u2019, solid arrow), resulting in sustained inaction. Neutral outcomes are equally well associated with actions and inactions, and are not illustrated here. The instrumental learning bias is introduced as the parameter \u03ba in model M3b (c.f. Figure 3). We assess whether these two mechanisms (i) act in parallel, and (ii) are modulated by the catecholamine system. To test the latter, we administered methylphenidate (MPH), which prolongs the effects of catecholamine release via blockade of the catecholamine receptors. We first assess whether MPH affects the strength of the Pavlovian response bias, introduced as the parameter \u03c0MPH in model M5a, and instrumental learning bias, implemented as the parameter \u03baMPH-selective in model M5b (c.f. Figure 5). (C) We hypothesise that prolonged effects of dopamine release following reward outcomes will reduce (temporal) specificity, leading to spread of credit: Credit is assigned to other recent actions (thin arrow), in addition to the performed (and rewarded) Go response (thick arrow), resulting in additional learning of the alternative (not-performed) Go response. This MPH-induced diffuse learning bias is implemented by the parameter \u03baMPH-diffuse in model M5c (c.f. Figure 5).\n\nWhile Pavlovian response biases can be helpful in reducing computational load by shaping our actions in a hardwired manner, they are inherently limited because of their general nature (Dayan et al., 2006). In order to select the best action in a specific environment, instrumental systems allow organisms to adaptively learn action-outcome contingencies, by assigning value to actions that in the past have led to good outcomes, while reducing value of actions that led to negative outcomes (Dickinson and Balleine, 1994; Rescorla and Wagner, 1972; Robbins and Everitt, 2007). Pavlovian and instrumental learning are often presented as a dichotomy, whereby cue-based, Pavlovian effects are solely responsible for motivational biases, while adaptive \u2018rational\u2019 choice results from instrumental learning. For example, multiple recent studies showing that reward or punishment cues bias action, eliciting appetitive activation and/or aversive inhibition, have been interpreted specifically in terms of a Pavlovian response bias (for a review see Guitart-Masip et al., 2014a).\n\nWe hypothesised that these motivational biases of behavioural activation may also arise from asymmetrical, or biased, instrumental learning (Figure 1B), in addition to Pavlovian response biases. Such biases in learning, like response biases, may reflect predominant statistics of the environment. For example, we might be quicker to believe that an action led to a reward, because actions often cause rewards. However, we may not attribute a punishment to having held back, because holding back usually helps avoid a punishment. Such an instrumental learning bias may arise from a circuitry where reinforcers are more potent at driving learning following active \u2018Go\u2019 than inactive \u2018NoGo\u2019 actions. This means that Go responses (relative to NoGo responses) are easier to learn and unlearn following reward and punishment respectively. This instrumental learning bias would predict that Go responses that elicited a reward are more likely to be repeated (i.e. better learned) than NoGo responses that elicited a reward. Similarly, Go responses that elicited a punishment are relatively less likely to be repeated (i.e. better unlearned) than NoGo responses that elicited a punishment. These instrumental learning and Pavlovian response biasing accounts of motivated (in)action could not be dissociated in earlier studies (Cavanagh et al., 2013; Guitart-Masip et al., 2014b; 2012), because they allowed for only a single Go response: With only one response option, general activation of action cannot be disentangled from facilitated learning of a specific response. In our proposed framework, motivational biases in behavioural (in)activation are likely the result of a combination of Pavlovian response biasing plus an asymmetry in instrumental learning of Go and NoGo responses (Figure 1).\n\nAt the neurobiological level, this hypothesis arises from current theorizing about the mechanism of action of reinforcement-related changes in dopamine. Specifically, a potential substrate for this proposed learning asymmetry could be provided by the striatal dopamine system, which is notably involved in instrumental learning via modulation of synaptic plasticity (Collins and Frank, 2014 for review and models). In this framework, dopamine bursts elicited by better than expected outcomes reinforce the actions that led to these outcomes (Montague et al., 2004; Schultz et al., 1998; Schultz et al., 1997) via long-term potentiation (LTP) in the striatal direct \u2018Go\u2019 pathway (Frank et al., 2004). The temporal specificity of the phasic dopamine bursts allows for assigning credit to the most recent action, by potentiating the recently active striatal neurons. Due to the LTP in the \u2018Go\u2019 pathway, rewards may be more effective in reinforcing neurons coding for active Go responses than NoGo responses. Conversely, dopamine dips elicited by worse-than-expected outcomes (Matsumoto and Hikosaka, 2009; Tobler et al., 2005) lead to long-term depression (LTD) of the \u2018Go\u2019 pathway and LTP in the \u2018NoGo\u2019 pathway, making it less likely that the same cue would elicit an active than inactive response next time. In short, the striatal system is biased to attribute rewards and punishments to active Go responses, which ecologically may be more commonly the cause of observed outcomes. The implication of this is that is easier to learn to take action based on reward, but easier to withhold making an action based on punishment.\n\nA key additional prediction of this model is that prolonging the presence of dopamine, e.g. by blocking dopamine reuptake with methylphenidate, would lead to a spread of credit assignment (Figure 1C). Here, credit is assigned to striatal neurons that were recently active, due to recent actions that did not actually lead to the current reward and phasic dopamine burst (\u2018spread of effect\u2019; Thorndike, 1933). In this framework, the dopamine system can produce biased motivated behaviour due to (i) direct Pavlovian biases (e.g. predicted rewards potentiate the Go pathway during action selection), and (ii) disproportionate potentiation of instrumental learning of Go actions that (recently) led to reward. Put more simply, (i) dopamine bursts prompted by reward-predicting cues can potentiate activation of the Go pathway, giving rise to the cue-based, Pavlovian activation, and (ii) dopamine bursts prompted by reward outcomes can potentiate plasticity within the Go pathway, making rewards more effective in reinforcing Go responses than NoGo responses.\n\nIn this study, we aimed to assess whether biases in instrumental learning contribute to the pharmaco-computational mechanisms subserving well-established reward/punishment biases of motivated (in)action. To dissociate biased instrumental learning from Pavlovian response biases, we developed a novel experimental paradigm including multiple active response options (Figure 2), and combined this task with a catecholamine challenge (catecholamine reuptake blocker methylphenidate - MPH). We tested the following hypotheses: (i) cue-valence (appetitive vs. aversive cues) biases action in a Pavlovian manner, whereas outcome-valence (reward vs. punishment) biases instrumental learning of Go vs. NoGo actions; (ii) blocking the catecholamine reuptake with MPH enhances the strength of the Pavlovian response bias as a result of prolonged dopamine release to reward cues; (iii) MPH reduces the specificity of credit assignment to specific actions that elicited rewards, as the prolonged DA release to reward outcomes would spread credit to non-chosen active actions (Figure 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig2-v1.jpg)\n\n**Figure 2.:** (A) On each trial, a Win or Avoid cue appears on screen. Subjects can respond during cue presentation. Response-dependent feedback follows. (B) In total eight cues are presented for which the correct response needs to be learned. (C) Each cue has only one correct response (Go-left, Go-right, or NoGo), which subjects can learn from the feedback. (D) Feedback is probabilistic. Correct responses are followed by reward (Win cues) or a neutral outcome (Avoid cues) in 80% of the time and by a neutral outcome (Win cues) or punishment (Avoid cues) otherwise. For incorrect responses, these probabilities are reversed. (E) Trial-by-trial proportion of Go responses (\u00b1SEM) for Go cues (solid lines) and NoGo cues (dashed lines), collapsed over Placebo and MPH. Left: All cue types. From the first trial onwards, subjects made more Go responses to Win vs. Avoid cues (i.e. green lines are above red lines), reflecting the motivational bias. Additionally, subjects clearly learn whether to make a Go response or not (proportion of Go responses increases for Go cues and decreases for NoGo cues). Right: Go cues only. For the Go cues, a Go response could be either correct or incorrect. The motivational bias is present in both correct and incorrect Go responses, but incorrect Go responses are unlearnt. Note that the total p(Go) in this plot sums up to the solid lines in the left plot. (F) Mean (\u00b1SED) proportion Go responses. Proportion Go responses is higher for Go vs. NoGo cues, indicative of task learning. Additionally, subjects made more correct and incorrect Go responses to Win vs. Avoid cues. Source data of task performance are available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Traces are averaged within cue types and over sessions. Individual traces are semi-transparant, so that darker areas reflect more overlaying subjects. Across trials, subjects increased correct Go responses (top) and decreased incorrect Go responses (bottom). Subjects performed at ceiling level more rapidly for the Go-to-Win cues (top-left) than Go-to-Avoid cues (top-right).\n\nFinally, MPH prolongs the effects of catecholamine release by blocking the reuptake of catecholamines, without stimulating release or acting as a receptor (ant)agonist (e.g. Volkow et al., 2002). Accordingly, it is likely that the effect of MPH on catecholamine-dependent function is a function of dopamine synthesis capacity and release. Simply put, if there is no release, there is no reuptake to block. To assess these potential sources of individual variability in MPH effects, we took into account two measures that have been demonstrated with PET to relate to dopamine baseline function: working memory span for its relation to striatal dopamine synthesis capacity (Cools et al., 2008; Landau et al., 2009) and trait impulsivity for its relation to dopamine (auto)receptor availability (Buckholtz et al., 2010; Kim et al., 2014; Lee et al., 2009; Reeves et al., 2012), and collected a large sample (N\u00a0=\u00a0106) to expose individual differences.\n\n## Results\n\nHealthy participants performed a motivational Go/NoGo learning task, in which cue valence (Win vs. Avoid cue) is orthogonalized to the instrumental response (Go vs. NoGo). During this task, subjects need to learn for each of 8 cues to make a Go or NoGo response, and by making the correct response subjects are rewarded for Win cues (green edge) and avoid punishment for the Avoid cues (red edge) in 80% of the time. Crucially, in contrast to task designs in previous studies (Guitart-Masip et al., 2014a), in this novel paradigm subjects could make either of two Go responses (press left vs. right) or withhold responding (NoGo; Figure 2A\u2013D). Including two Go response options enabled us to tease apart general activation/inhibition related to the Pavlovian response bias and specific action learning related to the instrumental learning bias using computational models and behavioural analyses.\n\n### Motivational Valence affects (in)correct action\n\nSubjects successfully learned this difficult task, in which they needed to identify the correct response out of 3 options (Go-left/Go-right/NoGo) for eight different cues, as evidenced by increased Go responding to cues indicating the need to Go vs. NoGo (Required Action: X2(1)=624.3; p<0.001; Figure 2E,F). In other words, subjects were able to adjust Go responding to the required action. As expected, cue valence also influenced Go responding (Valence: X2(1)=40.0; p<0.001), reflecting a motivational bias in responding. Overall subjects made more Go responses for Win than Avoid cues. The effect of cue valence was highly significant for both Go and NoGo cues (Go cues: X2(1)=37.5, p<0.001; NoGo cues: X2(1)=13.3, p<0.001), though marginally stronger for the Go cues (Required Action x Valence: X2(1)=3.1; p=0.076). Because each Go cue was associated with only one correct Go response, we confirmed that this motivational bias was present for both correct and incorrect Go responses. Subjects made more Go responses to Win than avoid cues for both correct (Valence: X2(1)=26.1, p<0.001) and incorrect (Valence: X2(1)=25.6, p<0.001) Go responses. Next, we tested the hypothesis that this motivational bias arose from a combination of a Pavlovian response bias and biased instrumental learning (Figure 1A\u2013B).\n\n### Computational modelling: disentangling Pavlovian response bias and instrumental learning bias\n\nWe used a computational modelling approach to quantify latent processes that we hypothesised to underlie the behavioural performance. Specifically, our first aim was to disentangle the contribution of Pavlovian response biases and instrumental learning biases to the observed valence effect in behaviour. To this end we extended a simple reinforcement learning model using hierarchical Bayesian parameter estimation. We developed five nested base models (M1, M2, M3a, M3b, M4) with increasing complexity to assess whether additional parameters explained the observed data better, while penalizing for increasing complexity.\n\nIn all models, the probability of each response is estimated based on computed action weights. In the simplest model (M1) the action weights are fully determined by the learned action values (Q-values). Action values are updated with the prediction error, i.e. the deviation of the observed outcome from the expected outcome (standard \u2018delta-rule\u2019 learning; Rescorla and Wagner, 1972). M1 contains two free parameters: a learning rate (\u03b5) scaling impact of the prediction-error, and feedback sensitivity (\u03c1) scaling the outcome value. Next, to allow for a non-selective bias in Go responses unrelated to valence, a go bias parameter (b) is added to the action weights of Go responses in M2. This parameter simply captures how likely people are to make a \u2018Go\u2019 response overall.\n\nIn this task, we explicitly instructed the cue valence, by colouring the edge of each cue, where green signalled that subjects could win a reward, while red signalled they had to avoid a punishment (Figure 2A). As a consequence, we observed an effect of the instructed cue valence on Go responses already from the first trial onwards (Figure 2E), implying a motivational bias before learning could occur, which is therefore likely Pavlovian in nature. To assess this Pavlovian response bias, cue values are added to the action weights in M3a. In this model positive (negative) Pavlovian values increase (decrease) the action weight of Go responses, where \u03c0 scales the weight of the Pavlovian values (Cavanagh et al., 2013; Guitart-Masip et al., 2014b; 2012). Thus, the Pavlovian bias parameter increases the probability of all Go responses for Win cues and decreases the probability of all Go responses for Avoid cues.\n\nIn M3b we assessed whether a motivational learning bias affects behaviour. Specifically, we included an instrumental learning bias parameter (\u03ba), to assess whether reward is more effective in reinforcing Go responses than NoGo responses, whereas punishment is less effective in unlearning NoGo responses than Go responses. This biased learning parameter indexes the degree to which the specific Go response that elicited a reward would be relatively more likely to be repeated in subsequent trials, resulting in increased instrumental learning of Go responses for reward. Note that earlier studies used only a single Go response and could thus not dissociate this specific learning vs. Pavlovian bias account. In addition to this effect on learning from rewards, \u03ba indexes the degree to which punishment is biased to potentiate activity in the NoGo versus Go pathway, thus biasing unlearning to be more effective after Go responses than after NoGo responses, (i.e., making punishment-based avoidance learning of NoGo responses more difficult than punishment-based avoidance learning of Go responses; Figure 1B). Because the Pavlovian and instrumental learning bias might explain similar variance in the data, we tested model M4, where we included both \u03c0 and \u03ba to test whether there was evidence for the independent presence of both the instrumental learning bias and the Pavlovian response bias.\n\nStepwise addition of the go bias (Appendix 5), Pavlovian response bias and instrumental learning bias parameter improved model fit, as quantified by Watanabe-Akaike Information Criteria (WAIC; Figure 3; Table 1). The Pavlovian bias parameter estimates (\u03c0) of the winning model M4 were positive across the group (96.4% of posterior distribution\u00a0>0). The Pavlovian bias estimates were modest across the group (Figure 3; Table 1), and showed strong individual variability (Figure 3\u2014figure supplement 2; Figure 3\u2014figure supplement 3). This strong inter-individual variability is consistent with previous reports, e.g. Cavanagh et al. (2013), who show that differences in the strength of the Pavlovian bias is inversely predicted by EEG mid-frontal theta activity during incongruent relative to congruent cues, putatively reflecting the ability to suppress this bias on incongruent trials. The further improvement of model fit due to the instrumental learning bias parameter (M3a vs. M4) provides clear evidence for the contribution of biased action learning on top of the Pavlovian response bias described in previous studies. The biased instrumental learning parameter estimates were also positive across the group (100% of posterior distribution\u00a0>0). In other words, in the winning model, the motivational bias, as reflected by an increase in Go responses to Win relative to Avoid cues, is explained by the presence of both a Pavlovian response bias and biased instrumental learning. Figure 3 and accompanying Figure supplements illustrate the model predictions and parameter estimates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig3-v1.jpg)\n\n**Figure 3.:** (A) Model evidence, relative to simplest model M1, clearly favours M4. The simplest model M1 contains a feedback sensitivity (\u03c1) and learning rate (\u03b5) parameter. Stepwise addition of the go bias (b), Pavlovian bias (\u03c0; Figure 1A), and instrumental learning bias (\u03ba; Figure 1B) parameter improves model fit, quantified by WAIC (estimated log model evidence). Lower (i.e. more negative) WAIC indicates better model fit. (B) Temporal dynamics of the correlation between the motivational bias parameters (M4) and the predicted motivational bias, i.e. probability to make a Go response to Win relative to Avoid cues. The impact of the Pavlovian bias (\u03c0) on choice decreases over time (although, importantly, the parameter itself remains constant). This is because the instrumental values of the actions are learnt and thus will increasingly diverge. As a result, \u03c0 is less and less 'able' to tip the balance in favour of the responses in direction of the motivational bias (i.e. it can no longer overcome the difference in instrumental action values). In contrast, the impact of \u03ba on choice increases over time, reflecting the cumulative impact of biased learning (also Figure 3\u2014figure supplement 2). (C) Posterior densities of the winning base model M4. Appendix 5 shows posterior densities for all models. (D) One-step-ahead predictions and posterior predictive model simulations of winning base model M4 (coloured lines), to assess whether the winning model captures the behavioural data (grey lines). Both absolute model fit methods use the fitted parameters to compute the choice probabilities according to the model. The one-step-ahead predictions compute probabilities based on the history of each subject's actual choices and outcomes, whereas the simulation method generates new choices and outcomes based on the response probabilities (see Materials and methods for details). Both methods capture the key features of the data, i.e. responses are learnt (more 'Go' responding for 'Go' cues relative to 'NoGo' cues) and a motivational bias (more Go responding for Win relative to Avoid cues). We note that the model somewhat underestimates the initial Pavlovian bias (i.e. difference in Go responding between Win and Avoid trials is, particularly trial 1\u20132), while it overestimates the Pavlovian bias on later trials. This is likely the result from the fact that while the modelled Pavlovian bias parameter (\u03c0) is constant over time, the impact of the Pavlovian stimulus values weakens over time, as the subjects\u2019 confidence in the instrumental action values increases. Interestingly, notwithstanding the constancy of the Pavlovian bias parameter, we do capture some of these dynamics as Figure 3B shows that the impact of the Pavlovian bias on choice decreases over time. Source data of M4 simulated task performance are available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** M4 one-step-ahead predictions capture the individual variability in task performance.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Model M4 one-step-ahead predictions (coloured) overlaid on real data (grey) for the subjects with the upper versus lower tertile of parameter estimates. (A) Effects of Pavlovian bias (\u03c0). A strong Pavlovian bias (top 33% of \u03c0 estimates) predicts higher Go responding for the Win than Avoid cues from the first trial onward, vice versa for a weak Pavlovian bias (33% lowest \u03c0 estimates). (B) Effects of instrumental learning bias (\u03ba). A strong instrumental learning bias (33% highest \u03ba estimates) predicts steeper Go-to-Win learning and shallower Go-to-Avoid learning, vice versa for a weak instrumental learning bias (33% lowest \u03ba estimates). See also Figure 3B for the temporal dynamics of the parameter-behaviour correlations.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The diagonal panels contain the posterior densities for the subject-level parameter means. The off-diagonal panels show the correlation over subjects in mean parameter estimates. Importantly, the two key parameters, Pavlovian bias (\u03c0) and instrumental learning bias (\u03ba) are not correlated to any of the other parameters. We do note that the feedback sensitivity parameter (\u03c1) is anti-correlated with the learning rate (\u03b5), such that the impact of high feedback sensitivity estimates is restricted by low learning rates. This correlation is not problematic, because independent estimation of learning rate and feedback sensitivity is no direct interest to the questions we ask.\n\n**Table 1.**\n Base models. Median [25\u201375 percentile] of subject-level parameter estimates in model space. See Appendix 5 for subject-level / top-level parameters in sampling space (i.e. untransformed). Absolute WAIC is reported at the top as the estimate of model evidence, where a smaller WAIC indicates higher evidence.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"5\">Base models</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>M1</th>\n      <th>M2</th>\n      <th>M3a</th>\n      <th>M3b</th>\n      <th>M4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WAIC</td>\n      <td>71014</td>\n      <td>69038</td>\n      <td>67678</td>\n      <td>67602</td>\n      <td>66987</td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>42.7 [19.3 79.8]</td>\n      <td>41.6 [18.7 72.4]</td>\n      <td>35.2 [15.8 66.4]</td>\n      <td>33.4 [13.9 59.8]</td>\n      <td>32.5 [14.9 56.4]</td>\n    </tr>\n    <tr>\n      <td>\u03b50</td>\n      <td>0.013 [0.008 0.059]</td>\n      <td>0.015 [0.008 0.054]</td>\n      <td>0.017 [0.009 0.064]</td>\n      <td>0.022 [0.010 0.070]</td>\n      <td>0.021 [0.010 0.063]</td>\n    </tr>\n    <tr>\n      <td>b</td>\n      <td></td>\n      <td>\u22120.25 [\u22120.45 0.04]</td>\n      <td>\u22120.25 [\u22120.46 0.04]</td>\n      <td>.01 [\u22120.33 0.27]</td>\n      <td>\u22120.03 [\u22120.29 0.19]</td>\n    </tr>\n    <tr>\n      <td>\u03c0</td>\n      <td></td>\n      <td></td>\n      <td>0.47 [0.02 1.00]</td>\n      <td></td>\n      <td>0.12 [\u22120.29 0.70]</td>\n    </tr>\n    <tr>\n      <td>\u03b5 rewarded Go(\u03b50+\u03ba)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.037 [0.016 0.122]</td>\n      <td>0.034 [0.016 0.109]</td>\n    </tr>\n    <tr>\n      <td>\u03b5 punished NoGo(\u03b50-\u03ba)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.006 [0.002 0.014]</td>\n      <td>0.008 [0.003 0.022]</td>\n    </tr>\n  </tbody>\n</table>\n\n### MPH enhances effect of cue valence proportional to working memory span\n\nNext, we asked whether acute administration of MPH altered the motivational bias. As noted above, the effects of dopaminergic drugs often depend on baseline dopamine function. We therefore used two neuropsychological measures that have been shown to predict baseline dopamine function using PET: working memory span, predictive of baseline dopamine synthesis capacity (Cools et al., 2008; Landau et al., 2009), and trait impulsivity, predictive of D2 autoreceptor availability (Buckholtz et al., 2010; Kim et al., 2014; Lee et al., 2009; Reeves et al., 2012). Importantly, both working memory span and trait impulsivity predict dopaminergic drugs effects on various cognitive functions (Clatworthy et al., 2009; Cools et al., 2009; 2007; Frank and O'Reilly, 2006; Gibbs and D'Esposito, 2005; Kimberg et al., 1997; Zimet et al., 1988).\n\nMPH enhanced the effect of cue valence on Go responding proportional to working memory span (Valence x Drug x Listening Span: X2(1)=5.9; p=0.016; Figure 4B), in the absence of a Valence x Drug effect across the group (Valence x Drug: X2(1)=1.5; p=0.221; Figure 4A). While high-span subjects showed a drug-induced increase in motivational bias (MPH versus placebo increased Go responding to Win vs. Avoid cues), low-span subjects showed a drug-induced decrease in motivational bias. This span-dependent bias emerged under MPH (X2(1)=4.6, p=0.032), and was not significant under placebo (X2(1)=0.9, p=0.335; Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mean (\u00b1SED) proportion Go responses under MPH relative to Placebo. MPH did not significantly alter the motivational bias across the group (p=0.22; ns indicates p>0.05). (B) MPH increased the motivational bias in high span subjects, yet decreased it in low span subjects (R\u00a0=\u00a00.21; p=0.016). (C) MPH altered the motivational bias particularly for incorrect Go proportional to working memory span (incorrect Go: p<0.001; correct Go: p=0.152).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The span-dependent motivational bias emerged under MPH (right; p=0.032), and was not significant under placebo (left; p=0.34). (B) MPH did not significantly alter the motivational bias proportional to working memory span for correct Go responses (correct Go: p=0.15).\n\nA break-down of this effect into correct and incorrect responses revealed that it was driven by incorrect Go responses (Valence x Drug x Listening Span: X2(1)=11.9, p<0.001; Figure 4C). MPH did not significantly affect the correct Go responses (Valence x Drug x Listening Span: X2(1)=2.0, p=0.152). In other words, higher span subjects were more likely to make Go responses to Win cues under MPH, but this Go response was more likely to be incorrect. We reasoned that an enhanced learning bias would manifest primarily in increased correct Go responses to Win cues (i.e. the correct responses are better learned), while an enhanced Pavlovian bias or diffusion of credit assignment would manifest in increased correct and incorrect Go responses to Win cues (due to overall action invigoration and potentiation respectively). Thus, we expected that the altered valence effect on incorrect Go responses under MPH can best be attributed to MPH alteration of Pavlovian response bias or diffusion of credit assignment, which we formally test using computational modelling (see below).\n\nIn contrast to listening span, trait impulsivity did not significantly predict the effect of MPH on the motivational bias (all p>0.05; see Appendix 3 for an overview of the mixed model effects). We confirmed that the MPH effects were not explained by session effects, i.e. whether MPH was received on the first or second testing day (X2(2)=2.1, p=0.349), nor did the factor Testing day improve model fit (X2(1)=2.0, p=0.162). Finally, we confirmed that including nuisance variables Gender and NLV scores (measuring verbal intelligence), did not improve model fit either (X2(2)=0.4, p=0.815).\n\n### Computational modelling: dissociable effects of MPH on pavlovian response bias and biased instrumental learning\n\nContinuing our modelling approach, we next assessed whether the MPH-induced motivational bias could be attributed to an altered Pavlovian response bias and/or instrumental learning bias. To this end we extended the winning base model M4 into competing models. In M5a we included an MPH-induced Pavlovian bias parameter (\u03c0MPH), to assess whether MPH altered the Pavlovian response bias. Here \u03c0MPH alters the individual\u2019s Pavlovian bias parameter under MPH. In M5b we included an MPH-induced instrumental learning bias (\u03baMPH-selective). Thus, M5b tests whether MPH affects the strength of the instrumental learning bias in individuals. We further tested whether MPH might make the learning bias more diffuse, because of its mechanisms of action. Because MPH blocks reuptake, it prolongs dopamine release, such that reinforcement and synaptic potentiation might not be attributed only to the temporally coincident neurons that code for the recently selected action, but could be spread to other actions (diffuse learning). To test this hypothesis, M5c contains a MPH-induced diffuse learning bias (\u03baMPH-diffuse), where \u03baMPH-diffuse is a learning rate that alters the value of all Go responses following a reward, under MPH (Figure 1C) by scaling the prediction error following all rewarded Go responses.\n\nModel fit improved markedly when extending the winning base model M4 with the MPH-induced Pavlovian bias parameter \u03c0MPH (M5a; Figure 5; Table 2). Extending M4 with the MPH-induced selective learning bias parameter \u03baMPH-selective (M5b) only slightly increased model fit. Conversely, the MPH-induced diffuse learning bias parameter \u03baMPH-diffuse (M5c) also strongly improved model fit relative to base model M4. This observation is in line with our earlier prediction that the MPH effects are predominantly driven by changes in the proportion of incorrect Go responses. Confirming the model comparison results, the MPH modulation of Pavlovian bias and diffuse learning parameters both covaried with Listening Span (\u03c0MPH: R\u00a0=\u00a00.25, p=0.013; \u03baMPH-diffuse: R\u00a0=\u00a00.28, p=0.006), while the MPH selective learning bias did not (\u03baMPH-selective: R\u00a0=\u00a0\u22120.01, p=0.9). In other words, \u03baMPH-selective did not explain our effect of interest and improved model fit relatively weakly.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig5-v1.jpg)\n\n**Figure 5.:** (A) Model evidence (WAIC) relative to winning base model M4. We tested whether MPH alters the strength of the Pavlovian response bias (\u03c0MPH; M5a), the instrumental learning bias (\u03baMPH-selective; M5b), or has a diffuse effect on the learning bias (\u03baMPH-diffuse; M5c; Figure 1C). Model selection favoured the composite model M6, including the \u03c0MPH and \u03baMPH-diffuse parameters. (B) Posterior densities of the top-level parameters of M6. (C) Subject-level estimates of MPH-induced Pavlovian bias parameter (upper) and the MPH-induced diffuse learning bias parameter (lower; logistic scale) correlated significantly with Listening Span. (D) One-step-ahead model predictions and posterior predictive model simulations of M6 using subject-level parameter estimates. The model predictions and simulations echo the observed data, i.e. that the motivational bias correlates positively with working memory span (Figure 4B), confirming the winning model M6 captures the MPH-induced increase in Go responses to Win vs. Avoid cues.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Model M6 one-step-ahead predictions (coloured) overlaid on real data (grey) for the subjects with the 33% strongest vs. weakest parameter estimates. The coloured bars at the bottom indicate the trial-by-trial correlation across all subjects, of the parameter estimate with the effect of MPH on Go responding per cue. The R value indicates the average correlation. (A) The effect of MPH on Pavlovian bias (\u03c0MPH). Strong \u03c0MPH estimates predict that MPH increases the motivational bias (increased Go to Win cues and decreased Go to Avoid cues), and vice versa for weak \u03c0MPH estimates. The influence of \u03c0MPH is present from the first trial onward and decreases over time as indicated by the correlation coefficients. (B) Effect of MPH on diffuse learning bias (\u03baMPH-diffuse). Strong \u03baMPH-diffuse estimates predict that MPH increases the motivational bias for Win cues specifically, whereas this effect is diminished for subjects with relatively weak \u03baMPH-diffuse estimates. The effect of \u03baMPH-diffuse is experience-dependent and evolves over time. These one-step-ahead predictions illustrate how each parameter results in an increased motivational bias under MPH, but with unique temporal dynamics, even though the parameter themselves are constant.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22169/elife-22169-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The diagonal panels contain the posterior densities for the subject-level parameter means. The off-diagonal panels contain the parameter correlations over subjects. Importantly, the parameters estimating the effects of MPH on Pavlovian bias (\u03c0MPH) and diffuse learning bias (\u03baMPH-diffuse) are not correlated any of the other parameters.\n\n**Table 2.**\n MPH models. Median [25\u201375 percentile] of subject-level parameter estimates in model space. Absolute WAIC is reported as the estimate of model evidence, where a smaller WAIC indicates higher evidence. Biased instrumental learning rate for rewarded Go and punished NoGo responses as computed by \u03b50\u00b1\u03ba under placebo and by \u03b50\u00b1(\u03ba+\u03baMPH) under MPH. (MPH) indicates the value of that parameter under MPH.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"4\">Extended MPH models</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>M5a</th>\n      <th>M5b</th>\n      <th>M5c</th>\n      <th>M6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WAIC</td>\n      <td>66383</td>\n      <td>66883</td>\n      <td>66595</td>\n      <td>66069</td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>31.2 [14.7 53.6]</td>\n      <td>31.6 [15.6 57.0]</td>\n      <td>55.8 [19.6 104.8]</td>\n      <td>51.9 [20.6 98.7]</td>\n    </tr>\n    <tr>\n      <td>\u03b50</td>\n      <td>0.022 [0.010 0.067]</td>\n      <td>0.021 [0.011 0.061]</td>\n      <td>0.011 [0.006 0.051]</td>\n      <td>0.012 [0.006 0.055]</td>\n    </tr>\n    <tr>\n      <td>b</td>\n      <td>\u22120.04 [\u22120.33 0.18]</td>\n      <td>\u22120.05 [\u22120.34]</td>\n      <td>\u22120.10 [\u22120.37 0.13]</td>\n      <td>\u22120.14 [\u22120.42 0.10]</td>\n    </tr>\n    <tr>\n      <td>\u03c0 \u03c0 (MPH)</td>\n      <td>0.27 [\u22120.50. 71] 0.20 [\u22120.38. 71]</td>\n      <td>0.15 [\u22120.28. 70]</td>\n      <td>0.05 [\u22120.46. 61]</td>\n      <td>0.27 [\u22120.47. 74] \u22120.05 [\u22120.70. 50]</td>\n    </tr>\n    <tr>\n      <td>\u03b5 rewarded Go \u03b5 rewarded Go (MPH)</td>\n      <td>0.037 [.017. 116]</td>\n      <td>0.030 [.018. 103] 0.031 [.016. 104]</td>\n      <td>0.018 [.009. 082]</td>\n      <td>0.019 [.009. 085]</td>\n    </tr>\n    <tr>\n      <td>\u03b5 punished NoGo \u03b5 punished NoGo (MPH)</td>\n      <td>0.009 [.004. 030]</td>\n      <td>0.009 [.003. 021] 0.008 [.002. 021]</td>\n      <td>0.004 [.002. 013]</td>\n      <td>0.005 [.002. 017]</td>\n    </tr>\n    <tr>\n      <td>\u03b5 diffuse (MPH)</td>\n      <td></td>\n      <td></td>\n      <td>0.002 [.002. 004]</td>\n      <td>0.003 [.002. 004]</td>\n    </tr>\n  </tbody>\n</table>\n\nTo assess whether \u03c0MPH and \u03baMPH-diffuse explained unique Listening Span-dependent effects of MPH (i.e. whether there was evidence for both of these effects), we constructed a composite model (M6) containing both effects. Model comparison showed that indeed this composite model explained the data best (Figure 5). In this model, both parameters again significantly varied proportional to Listening Span (\u03c0MPH: R\u00a0=\u00a00.24, p=0.020; \u03baMPH-diffuse: R\u00a0=\u00a00.22, p=0.032; Figure 5).\n\nTaken together, these modelling results attribute the MPH-induced motivational bias partly to an altered Pavlovian response bias (\u03c0MPH), and partly to a reward-driven diffusion of credit during instrumental learning (\u03baMPH-diffuse). In other words, MPH (i) alters the impact of cue valence on action, which is present and persists from the first trial onward, and (ii) alters the impact of rewarding outcomes on the learning of actions, which fully depends on and evolves with experience. Following a reward, the effect of \u03baMPH-diffuse is to increase the value of incorrect Go responses in addition to the correct Go response.\n\nFinally, we tested whether our best fitting model was sufficient to reproduce the key features of the data. This is important because model selection only provides relative, but not absolute evidence for the winning model (e.g., Nassar and Frank, 2016). We used two approaches to compute the post hoc absolute model fit, namely data simulation and \u2018one-step-ahead\u2019 model predictions. In the simulation method, the first choice is simulated based on the initial values; the corresponding outcome used for learning; the next choice is simulated based on the updated, learned values; and so on. Thus, this simulation method ignores any subject-specific sequential/history effects to determine the current choice probability. Therefore, this can result in choice/outcome sequences that diverge completely from the subjects\u2019 actual experiences. Violating the subject-specific choice and outcome history will change the learning effects, making this method less robust in generating the exact learning effects compared to experience-independent effects. We therefore included a second absolute model fit method that does take into account the subjects\u2019 choice and outcome histories: the post-hoc absolute fit method (also known as \u2018one-step-ahead prediction\u2019; Pedersen et al., 2016; Steingroever and Wagenmakers, 2014). Here, the initial choice probabilities are determined based on the initial values. For each subsequent trial, the choice probabilities are determined based on the learned values using the actual (subject\u2019s) choices and outcomes on all preceding trials. We used both methods as the strongest test providing converging evidence that the models could capture the observed results.\n\nUsing both absolute model fit methods, we simulated choices for each individual, using model M6 with each individual\u2019s parameter estimates. Both methods confirmed that M6 can capture the observed effects, replicating the Listening Span dependent effect of MPH on choice, where MPH increased Go responses to Win vs. Avoid cues more in higher span subjects (simulations: R\u00a0=\u00a00.27, p=0.008; one-step-ahead: R\u00a0=\u00a00.20, p=0.050; Figure 5). These simulations echo the results reported above, demonstrating the MPH-induced Pavlovian bias parameter \u03c0MPH and diffuse learning bias \u03baMPH-diffuse are sufficient to both explain and predict the span-dependent MPH-induced increase in Go responses to Win vs. Avoid cues. Figure 5 and accompanying Figure supplements illustrate the model predictions and parameter estimates.\n\n## Discussion\n\nMotivational biases of behaviour are well established: Reward biases towards action, punishment towards inaction. In this study, we had two goals. First, we aimed to assess whether these motivational biases arise from biases in instrumental learning in addition to Pavlovian response biases. Second, given the strong link between catecholamine transmission and motivated action, we aimed to assess effect of catecholaminergic manipulation on these biases. To this end, a large sample of participants (N\u00a0=\u00a0106) performed a novel motivational Go/NoGo learning task twice, once under a catecholamine challenge (methylphenidate - MPH) and once on placebo. Based on previous literature of dopaminergic drug effects (Cools and D'Esposito, 2011; Frank and Fossella, 2011 for reviews), we hypothesized that MPH effects on motivated action would covary with measures scaling with baseline dopamine function, namely working memory span (Cools et al., 2008) and trait impulsivity (Buckholtz et al., 2010). Our findings are threefold: First, cue valence elicits behavioural activation in a Pavlovian manner, whereas outcome valence biases the learning of action vs. inhibition (Figure 1A,B). Second, MPH modulates Pavlovian biasing, while also altering the reward-driven diffusion of credit assignment during instrumental learning. Third, the direction of the effect of MPH covaries with individual differences in working memory span, but not trait impulsivity.\n\n### Dissociable effects of cue and outcome valence on behavioural activation and instrumental learning\n\nCue valence affected activation versus inhibition of behaviour, consistent with previous reports (Geurts et al., 2013; Guitart-Masip et al., 2012). Even though cue valence was orthogonal to what subjects should be doing, subjects made more Go responses when pursuing reward, and fewer Go responses when trying to avoid punishment. We and others have previously suggested that this motivational asymmetry in behavioural activation entails Pavlovian control over instrumental behaviour (Cavanagh et al., 2013; Geurts et al., 2013; Huys et al., 2011). Here we challenge this initial idea, and argue that motivational valence may also bias instrumental learning. To disentangle the hypothesised contribution of a Pavlovian response bias from biased instrumental learning, we extended existing paradigms by incorporating multiple Go response options. For the cues requiring active responses, only one response option was considered correct, enabling us to disentangle general activation from specific action learning. For cues where subjects had to activate responding (\u2018Go\u2019 cues), they increased both correct and incorrect Go responses when pursuing reward compared with when avoiding punishment. Thus, the increased activation towards reward was in part beneficial, and in part detrimental.\n\nWe used computational models to formalise our hypothesis regarding a dissociable contribution of Pavlovian activation and biased instrumental learning. We then fitted competing models to the subjects' choices, and compared the performance of all models. We demonstrate that cue valence shapes behavioural activation/inhibition in a Pavlovian manner, and additionally that outcome valence biases instrumental learning of activation/inhibition: reward enhances the learning of specific active actions, and punishment suppresses the unlearning of inactions. In short, we are quicker to believe that an action led to a reward, but reluctant to attribute a punishment to having held back.\n\nCurrent views of striatal dopamine function (Collins and Frank, 2015; 2014; Frank, 2006; Frank, 2005; Lloyd and Dayan, 2016) suggest that the striatal architecture is well suited to implement the Pavlovian asymmetry in behavioural activation. Appetitive (aversive) conditioned cues elicit peaks (dips) in mesolimbic dopamine release in the striatum (Cohen et al., 2012; Day et al., 2007; Matsumoto and Hikosaka, 2009; Tobler et al., 2005). Increased striatal dopamine levels activate the direct D1 (\u2018Go\u2019) pathway (Hern\u00e1ndez-L\u00f3pez et al., 1997), which promotes behavioural activation (DeLong and Wichmann, 2007; Mink and Thach, 1991), whereas decreased striatal dopamine levels activate the indirect D2 (\u2018NoGo\u2019) pathway (Hernandez-Lopez et al., 2000), promoting behavioural inhibition. In striatal dopamine models, increased dopamine biases action selection to be driven more by the potential rewards of alternative actions encoded in D1 neurons and less by the costs encoded in D2 neurons (Collins and Frank, 2014; see also recent optogenetic experiment supporting this notion; Zalocusky et al., 2016), but this can also be manifest in terms of Pavlovian biases. Taken together, the striatal (in)direct pathways provide a neural mechanism for implementing Pavlovian activation to appetitive vs. aversive cues.\n\nIn parallel with our behavioural findings, the same striatal pathways may also generate the asymmetry in action learning. Here, dopamine bursts elicited by reward prediction errors (Montague et al., 2004; Schultz et al., 1998; Schultz et al., 1997) during the outcome, enhance long-term potentiation (LTP) of the corticostriatal synapses associated with the just-performed response (Frank et al., 2004). Importantly, enhancing LTP in the \u2018Go\u2019 pathway should promote learning of active responses, relative to learning the inhibition of actions. Recent experiments show temporally and spatially selective enhancement of corticostriatal spines given glutamatergic input (putatively representing the selected action) and followed closely in time by dopaminergic bursts (Yagishita et al., 2014). Thus, prolonged release of DA (e.g. after DAT blockade) might reduce this selectivity, and diffuse the specificity of credit assignment. Conversely, striatal dopamine dips following negative prediction errors can drive avoidance by promoting long-term depression (LTD) in the \u2018Go\u2019 pathway and LTP in the \u2018NoGo\u2019 pathway (Beeler et al., 2012; Frank, 2005; Shen et al., 2008). Indeed, transient optogenetic inhibition of DA induces behavioural avoidance of recently selected actions (Danjo et al., 2014; Hamid et al., 2016), an effect that depends on D2 receptors (Danjo et al., 2014). D2 neurons are excited in response to losses (Zalocusky et al., 2016); their activation during losses induces subsequent avoidance learning (Kravitz et al., 2012; Zalocusky et al., 2016), and their disruption prevents avoidance learning (Hikida et al., 2010). While LTP in the NoGo pathway would be beneficial for unlearning to perform actions, LTP in the NoGo pathway would be detrimental in case of unlearning to make NoGo responses (i.e. attributing a punishment to a NoGo response). To summarize, the dopamine peaks following positive reinforcement can enhance learning of actions by enhancing LTP in the striatal \u2018Go\u2019 pathway. Conversely, the dopamine dips following negative outcomes can disrupt learning to initiate responses by increasing LTD in the \u2018Go\u2019 pathway and LTP in the NoGo pathway.\n\n### Methylphenidate modulates Pavlovian activation and spreads credit assignment of rewarded actions\n\nBlocking the reuptake of catecholamines with MPH altered the extent to which subjects were influenced by the cue and outcome valence. This effect of MPH was highly variable between individuals, and depended on working memory span. In high relative to low span subjects, MPH enhanced the influence of valence, such that subjects made even more active responses when pursuing reward and displayed more inhibition when avoiding punishment. This effect was driven particularly by changes in the proportion of incorrect Go responses that subjects made. Formal modelling showed that this effect was due to MPH affecting both generalized Pavlovian activation and a diffusion of credit assignment. Specifically, MPH induced a spread of credit assignment following rewarded active responses, rather than magnifying the selective instrumental learning bias.\n\nWe argue that both of these effects can be understood as reflecting prolonged catecholamine presence in the synaptic cleft with MPH. Blocking catecholamine reuptake with MPH extends the duration of dopamine presence in the synaptic cleft (Dreyer and Hounsgaard, 2013). This prolonged dopamine presence (i.e. reduced temporal specificity) would be less selective in potentiating the actions that were selected immediately prior to rewards (e.g. Yagishita et al., 2014). This would reduce credit assignment of specific active actions, but still bias reinforcement of actions more generally (e.g. Collins and Frank, 2015; Syed et al., 2016). This account explains why MPH modulates the strength of the Pavlovian activation (which is inherently global) but not of the specific instrumental learning bias (which is inherently selective). Our results indeed provided evidence for this diffusing effect of MPH on the instrumental learning bias, such that reward potentiates actions globally. The data were best explained by a combination of this diffuse instrumental learning and Pavlovian response bias modulation. Thus, on the one hand MPH modulated the impact of the cue valence on behavioural activation, which surfaces already before any learning has taken place. On the other hand, MPH spread credit assignment following rewarded responses to all Go responses, which is an experience-dependent effect.\n\nOur results are highly consistent with those predicted from current models of dopamine in the basal ganglia, suggesting that the effects of MPH are due to modulation of striatal dopamine. Of course, the present study does not allow us to exclude the possibility that (part of) the effects were mediated by extra-striatal, e.g. prefrontal regions (Spencer et al., 2015), or by the noradrenaline system (Arnsten and Dudley, 2005). Future studies are needed to investigate directly the site of the presently observed effects of MPH, e.g. with fMRI, and dopamine dependence and selectivity, e.g. with selective dopamine antagonists.\n\n### MPH effects predicted by individual differences in working memory span\n\nIndividuals vary strongly in the extent to which MPH increases extracellular dopamine (Volkow et al., 2002). We therefore anticipated that the effect of MPH would covary with measures relating to baseline dopamine function. We assessed whether MPH effects were predicted by (i) working memory span, given its known relation to dopamine synthesis capacity (Cools et al., 2008; Landau et al., 2009), and (ii) trait impulsivity, for its known relation to D2 (auto)receptor availability (Buckholtz et al., 2010; Kim et al., 2014; Lee et al., 2009; Reeves et al., 2012). MPH affected choice behaviour proportional to working memory span, but not trait impulsivity. Subjects with higher working memory span, linked to higher striatal synthesis capacity, showed a relative increase in both Pavlovian response bias and spread of credit assignment under MPH. This finding that transporter blockade has stronger effects in those individuals with putatively higher baseline dopamine is in line with the observation that MPH increases dopamine levels more in individuals with higher dopamine cell activity (van der Schaaf et al., 2013; Volkow et al., 2002). Indeed, baseline dopamine cell activity is a better predictor of effects of MPH than either D2 auto-receptor availability or DAT occupancy under MPH (Volkow et al., 2002). Together this may explain why the observed MPH effects covary with working memory span but not trait impulsivity.\n\nThe finding that drug effects depend on working memory is highly consistent with the hypothesis that they reflect modulation of striatal dopamine (c.f. Frank and Fossella, 2011). However, we need to be cautious in our interpretation. First, both striatal and prefrontal dopamine are known to contribute to working memory performance (updating and maintenance respectively; e.g. Cools and D'Esposito, 2011). The Listening Span task does not dissociate between working memory updating and maintenance, and thus a contribution of modulation of prefrontal dopamine cannot be excluded. Another possibility raised by the finding that drug effects depend on span, is that they reflect modulation of working memory itself, rather than reflecting dependence on baseline dopamine synthesis capacity. However, we argue that this is unlikely, because there was no significant effect of baseline working memory on motivational bias under placebo conditions. Rather, this relationship was induced by MPH. For future studies, it would be of interest to also include other measures related to baseline dopamine levels, such as eyeblink rates. More broadly, further research is required to identify the optimal combination of the various proxy measures of individual variability in the dopamine system in order to account for the large inter-individual variability in dopaminergic drug response. This is one of the major aims of our ongoing work.\n\nAcross subjects, MPH increased subjective experiences of positive affect and alertness, and decreased calmness (Appendix 2). In contrast to the MPH-induced Pavlovian response bias and diffuse learning bias, these non-specific mood changes did not covary with working memory span. In other words, the MPH-induced mood changes are orthogonal to our effect of interest. Therefore, the MPH effect on Pavlovian activation and biased instrumental learning cannot be attributed to MPH-induced changes in mood.\n\n### Conclusion\n\nThis study elucidates two distinct mechanisms by which motivational valence can bias behaviour. Cue valence promotes activation/inhibition in a Pavlovian manner, whereas outcome valence affects action/inhibition learning. Blocking the reuptake of catecholamines with methylphenidate altered the Pavlovian response bias, and had a diffuse, rather than selective, effect on biased learning. The effect of methylphenidate on the Pavlovian bias and biased learning was predicted by working memory span, such that methylphenidate enhanced Pavlovian activation and biased learning proportional to working memory span. These results help bridge the study of motivational biasing of action and instrumental learning, and help refine current models of catecholamines in motivated action.\n\nThe present observations suggest that we need to add a new dimension to the suggested dichotomy of the role of dopamine in learning versus performance. Our study brings together two literatures that emphasise the role of (midbrain) dopamine in reward (prediction-error) based learning on the one hand (Collins and Frank, 2014; Frank et al., 2004; Schultz et al., 1997), and motivation-driven performance and behavioural activation on the other (Beierholm et al., 2013; Berridge, 2007; Robbins and Everitt, 2007; Shiner et al., 2012; Smittenaar et al., 2012). Our results suggest that these two interact, resulting in biased learning of action-reward and inaction-punishment links, putatively via the same striatal mechanism that drive motivational Pavlovian response biases. Like motivational response tendencies, such biased learning would allow us to optimally profit from stable environmental statistics, as this instrumental learning bias supports rapid learning of likely action-outcome associations (e.g. that an action caused a reward), while avoiding learning unlikely, spurious, associations (e.g. that inhibition caused a punishment).\n\n## Materials and methods\n\n### General procedure and pharmacological manipulation\n\nThe study consisted of two test sessions with an interval of one week to two months. The first test day started with informed consent, followed by a medical screening. Participation was discontinued if subjects met any of the exclusion criteria (Appendix 1). On both test days, subjects first completed baseline measures. Next subjects received a capsule containing either 20 mg MPH (Ritalin, Novartis) or placebo, in a double-blind, placebo-controlled, cross-over design. MPH blocks the dopamine and noradrenaline transporters, thereby diminishing the reuptake of catecholamines. When administered orally, MPH has a maximal plasma concentration after 2 hr and a plasma half-life of 2\u20133 hr (Kimko et al., 1999). After an interval of 50 min, subjects started with the task battery containing the motivational Go/NoGo learning task. See Appendix 2 for an overview of the task battery. On average the motivational Go/NoGo learning task was performed 2 hr after capsule intake, well within the peak of plasma concentration. Both test days lasted approximately 4.5 hr, which subjects started at the same time (maximum difference of 45 min). Blood pressure, mood and potential medical symptoms were monitored three times each day: before capsule intake, upon start of the task battery and after finishing the task battery. Subjects were told to abstain from alcohol and recreational drugs 24 hr prior to testing and from smoking and drinking coffee on the days of testing. Subjects completed self-report questionnaires at home between (but not on) test days. Upon completion of the study, subjects received a monetary reimbursement or study credits for participation. The study was in line with the local ethical guidelines approved by the local ethics committee (CMO / METC Arnhem Nijmegen: protocol NL47166.091.13), pre-registered (trial register NTR4653, http://www.trialregister.nl/trialreg/admin/rctview.asp?TC=4653), and in accordance with the Helsinki Declaration of 1975. Baseline measures, self-report questionnaires, mood- and medical symptom-ratings are reported in Appendix 2.\n\n### Subjects\n\nAs individual differences were a main focus of the study, we collected a large sample of 106 native Dutch volunteers (aged 18\u201328 years, mean (SD)\u00a0=\u00a021.5 (2.3); 53 women; 84 right-handed; sample size calculation reported in CMO protocol NL47166.091.13). Four subjects dropped out after the first test day (due to too much delay between test days, loss of motivation, nausea, and mild arrhythmia). Two subjects dissolved the capsules before swallowing and are discarded because of uncertainty in the pharmacodynamics. One subject did not sufficiently engage in the task (only 13/2% Go responses on day 1/2) and was discarded as well. We repeated the analyses with these subjects included to confirm that this did not alter the conclusions (Appendix 3). Of the resulting 99 subjects, 48 subjects received MPH on the first day. Exclusion criteria comprised a history of psychiatric, neurological or endocrine disorders. Appendix 1 presents a complete overview of the exclusion criteria.\n\n### Motivational Go/NoGo learning task\n\nEach trial started with the on-screen presentation of a cue (Figure 2A). During cue presentation subjects could decide to press a button (Go response) or not (NoGo response). Subjects could either press the left (Go-left) or right (Go-right) button on a button box. Subjects received feedback based on their response.\n\nEach cue had a red or green edge. Cues with a red edge (Avoid cues) were followed by neutral feedback or punishment. Cues with a green edge (Win cues) were followed by reward or neutral feedback. Subjects were informed about these contingencies. Note that the explicit cue valence is in contrast to previous studies where subjects needed to learn the cue valence during the task (e.g. Cavanagh et al., 2013; Guitart-Masip et al., 2012). The rationale of explicit cue valence was to directly observe effects of cue valence on choice and minimize individual differences in learning the cue valence. Punishment consisted of the display of the red text \u2018\u2212100\u2019, accompanied by a low buzz, reward of the green text \u2018+100\u2019 together with a flourish sound, and the neutral feedback of the grey text \u2018000\u2019 together with a short beep. All cues had unique shapes and colours well distinguishable from the red and green edge. Cue colour and shape were randomized over cue types. Two separate stimulus sets were used for the two test days to prevent transfer effects, and set order was counterbalanced across subjects.\n\nFor each cue, there was one correct response (Go-left, Go-right or NoGo; Figure 2C), which subjects had to learn by trial and error. Feedback validity was 80%, that\u00a0is, correct (incorrect) responses were followed by the desirable outcome 80% (20%) of the time (Figure 2D). There were eight cues in total (Figure 2B). The number of Go and NoGo cues was kept equal to prevent reinforcing an overall Go bias.\n\nThe order of cue presentation was pseudorandom, as cues could be repeated once at most. Each cue was presented 40 times. The task lasted approximately 30 min, including instructions and a self-paced break halfway. The instructions were presented on screen. Subjects were informed about the probabilistic nature of the feedback and that each cue had one optimal response. At the end of the task the total number of points won or lost was displayed on screen and subjects were informed beforehand that these points would be converted to a monetary bonus at the end of the study (mean = EUR2.90, SD\u00a0=\u00a01.49).\n\n### Listening span test\n\nWorking memory span was assessed with the Listening Span Test (Daneman and Carpenter, 1980; Salthouse and Babcock, 1991), which was also used in two FMT PET studies showing positive correlations with striatal dopamine synthesis capacity (Cools et al., 2008; Landau et al., 2009). Subjects completed the Listening Span Test on day two prior to capsule intake. The Listening Span Test consists of sets of pre-recorded sentences, increasing from 2 to 7 sentences. Subjects are presented with the sentences, and required to simultaneously answer written verification questions regarding the content of each sentence. At the end of each set, subjects recalled the final word of each sentence in the order of presentation. The Listening Span reflects the set size of which the subject correctly recalled the final words on at least two out of three trials. Listening span increased with half a point, when only one trial of the next level was correct.\n\n### Barratt impulsiveness scale\n\nTrait impulsivity was assessed with the Barratt Impulsiveness Scale (BIS-11) (Patton et al., 1995). The BIS-11 is a self-report questionnaire, consisting of 30 questions tapping in common (non)impulsive behaviours and preferences. The BIS-11 total impulsivity scores reflect the tendency towards impulsivity. Subjects completed the questionnaire at home between test days.\n\n### Statistical analyses\n\nTo assess the influence of motivational valence on behavioural activation, we first analysed Go vs. NoGo responses (irrespective of Go-left vs. Go-right). Second we tested whether effects on Go responses were explained by correct or incorrect Go responses. We were specifically interested how MPH altered Go/NoGo responding to Win vs. Avoid cues as a function of Listening Span and Impulsivity.\n\nTo account for both between and within subject variability, choice data were analysed with logistic mixed-level models using the lme4 package in R (Bates et al., 2014; R Developement Core Team, 2015). Reflecting our objectives, the mixed models included the within subject factors Drug (MPH vs. placebo), Valence (Win vs. Avoid cue), and Required Action (Go vs. NoGo), and the between subject factors Listening Span and Impulsivity. The analysis of correct and incorrect Go responses included only the Go cues; hence this analysis did not include the factor Required Action. Models included all main effects and interactions, except for the interactions between Listening Span and Impulsivity. All models contained a full random effects structure (Barr, 2013; Barr et al., 2013). We performed control analyses using a model comparison approach, where we tested whether the following factors improved model fit: Drug Order, Testing Day, Gender, and NLV (a measure for verbal intelligence). For completeness, we analysed reaction times (RTs) as a measure of behavioural vigour (Appendix 4).\n\n### Computational modelling \u2013 Pavlovian response bias and instrumental learning bias\n\nIn all models, action weights (w) are estimated for each response option (a) for all trials (t) per cue (s). Based on these action weights choice probabilities are computed using a softmax function, as follows:\n\n$$\np(a_{t}|s_{t})=\u00a0[\\frac{exp(w(a_{t},s_{t}))}{\\sum_{a'}exp(w(a',s_{t}))}]\n$$\n\nIn the simplest model (M1) the action weights are fully determined by the learned action values (Q-values). To compute the action values, we used standard delta-rule learning with two free parameters; a learning rate (\u03b5) scaling the update term, and feedback sensitivity (\u03c1) scaling the outcome value (comparable to the softmax temperature).\n\n$$\nQ_{t}(a_{t},s_{t})=\u00a0Q_{t\u22121}(a_{t},s_{t})+\u00a0\\epsilon(\u03c1r_{t}\u2212\u00a0Q_{t\u22121}(a_{t},s_{t}))\n$$\n\nHere outcomes are reflected by r, where r\u2208{\u22121,0,1}. In the current paradigm cue valence is instructed, by means of the green and red cue edges. Therefore, the initial expected outcome is 0.5 for Win cues and \u22120.5 for Avoid cues. Initial Q-values (Q0) are set accordingly to \u03c1*0.5 for Win cues and \u03c1*\u22120.5 for Avoid cues.\n\nIn M2 a go bias parameter (b) is added to the action weights of Go responses. We then explored the influence of Pavlovian biases that modulate Go responding according to predicted reward value. Pavlovian values (V) contribute to the action weights in M3a, increasing (decreasing) the weight of Go responses for positive (negative) Pavlovian values respectively.\n\n$$\nw(a_{t},s_{t})=\u00a0{Q(a_{t},s_{t})+\u00a0\\piV(s)+\u00a0bif\u00a0a=GoQ(a_{t},s_{t})else\n$$\n\nHere the weight of the Pavlovian values is determined by the parameter \u03c0. Pavlovian values are fixed at 0.5 for Win cues and at \u22120.5 for Avoid cues, again because cue valence is instructed.\n\nIn M3b we included the instrumental learning bias parameter (\u03ba) instead of the Pavlovian bias, to assess whether the motivational bias can be explained in terms of enhanced learning of Go following a reward, and disrupted learning from punishment following NoGo.\n\n$$\n\u03f5={\u03f5_{0}+\u03baif\u00a0r_{t}=1\u00a0&\u00a0a=go\u03f5_{0}\u2212\u03baif\u00a0r_{t}=\u22121\u00a0&\u00a0a=nogo\u03f5_{0}else\n$$\n\nIn model M4, we included both the Pavlovian bias parameter and the instrumental learning bias parameter.\n\nWe used a sampling method for hierarchical Bayesian estimation of group-level and subject-level parameters. The group-level parameters (X) serve as priors for the individual-level parameters (x), such that x ~ $\ud835\udca9$(X,\u03c3). The hyperpriors for \u03c3 are specified by a half-Cauchy (Gelman, 2006) with a scale of 2. The hyperpriors for X are centered around 0 (with the exception of X\u03c1) and weakly informative: X\u03c1 ~ $\ud835\udca9$(2,3), X\u03b5,\u03ba ~ $\ud835\udca9$(0,2), Xb,\u03c0 ~ $\ud835\udca9$(0,3). All parameters are unconstrained, with the exception of \u03c1 (positivity constraint; exponential transform) and \u03b5 ([0 1] constraint; inverse logit transform). To ensure that the effect of \u03ba on \u03b5 (Equation 4) was symmetrical in model space (i.e. after sigmoid transformation to ensure [0 1] constraint), \u03b5 was computed as:\n\n$$\n\\epsilon=\u00a0{\\epsilon_{0}=inv.logit(\\epsilon)\\epsilon_{punished\u00a0NoGo}=inv.logit(\\epsilon\u2212\u03ba)\\epsilon_{rewarded\u00a0Go}=\\epsilon_{0}+(\\epsilon_{0}\u2212\\epsilon_{punished\u00a0NoGo})\n$$\n\nModel estimations were performed using Stan software in R (RStan) (Stan Development Team, 2016). Stan provides full Bayesian inference with Markov chain Monte Carlo (MCMC) sampling methods (Metropolis et al., 1953). The number of Markov chains was set at 4, with 200 burn-in iterations and 1000 post burn-in iterations per chains (4000 total). Model convergence was considered when the potential scale reduction factor\u00a0$R^$\u00a0< 1.1 for all parameters (Gelman and Rubin, 1992). In case model convergence was not reached, both (post) burn-in samples were increased to 1500. Not all models reached convergence at this point. Therefore, we repeated model estimation while excluding the subjects (N\u00a0=\u00a05) for whom initially\u00a0$R^$\u00a0> 1.1 in any one of the models, resulting in model convergence for all models. We report model evidence including all subjects in Appendix 5, showing that model selection and parameter inference remains the same when excluding these subjects. Model comparison was evaluated using the Watanabe-Akaike Information Criteria (WAIC) (Watanabe, 2010). WAIC is an estimate of the likelihood of the data given the model parameters, penalized for the effective number of parameters to adjust for overfitting. Lower (i.e. more negative) WAIC values indicate better model fit. As WAIC is reported on the deviance scale (Gelman et al., 2014), a difference in WAIC value of 2\u20136 is considered positive evidence, 6\u201310 strong evidence, and\u00a0>10 very strong evidence (Kass and Raftery, 1995).\n\n### Computational modelling \u2013 Effects of methylphenidate\n\nHaving established the mechanisms by which motivational valence may affect instrumental learning and activation, we extended the winning model to test which of these mechanisms are affected by MPH, putatively driven by a prolonged striatal presence of catecholamines (dopamine) following reward, due to reuptake inhibition by MPH.\n\nIn M5 we tested whether MPH altered the Pavlovian response bias. This model includes a parameter allowing for an MPH-induced change in the Pavlovian weight (\u03c0MPH):\n\n$$\n\\pi=\u00a0{\\pi_{0}if\u00a0placebo\\pi_{0}+\\pi_{MPH}if\u00a0MPH\n$$\n\nNext, we tested two mechanisms by which MPH might alter the bias in instrumental learning (\u03ba). In M5b we tested whether MPH simply enhanced or reduced the learning bias parameter, estimating an additive effect of \u03baMPH-selective:\n\n$$\n\u03ba=\u00a0{\u03ba_{0}if\u00a0placebo\u03ba_{0}+\u03ba_{MPH\u2212selective}if\u00a0MPH\n$$\n\nAlternatively, the prolonged presence of catecholamines following reward under MPH could induce a more diffuse credit assignment, rather than a selective learning bias effect. To test this hypothesis, in M5c we included a MPH-induced learning bias parameter (\u03baMPH-diffuse), which was used to update both Go responses, on all trials where any active Go response was followed by reward, in addition to the regular learning update for the chosen Go response:\n\n$$\nif\u00a0MPH,r_{t}=1,&\u00a0a_{chosen}=Go:Q_{t}(a_{chosenGo,t},s_{t})=Q_{t\u22121}(a_{chosenGo,t},s_{t})+(\\epsilon+\u03ba_{0}+\u03ba_{MPH\u2212diffuse})\u22c5PEQ_{t}(a_{unchosenGo,t},s_{t})=Q_{t\u22121}(a_{unchosenGo,t},s_{t})+\u03ba_{MPH\u2212diffuse}\u22c5PE\n$$\n\nWhere $PE$ is the prediction error following the rewarded Go response: $PE=\u03c1r_{t}\u2212\u00a0Q_{t\u22121}(a_{t},s_{t})$. Thus where \u03baMPH-selective enhances the learning of the selected Go response after reward, \u03baMPH-diffuse induces learning of all Go responses when a Go response elicited reward.\n\nTo test whether MPH affected both the Pavlovian response bias and instrumental learning bias, M6 include \u03c0MPH parameter as well as the winning model of the two learning bias mechanisms (M5c - \u03baMPH-diffuse). For completeness, we report the composite model including the parameters \u03c0MPH and \u03baMPH-selective in Appendix 5. The hyperpriors are again centered around 0 and weakly informative: X\u03bamph ~ $\ud835\udca9$(0,2) and X\u03c0mph ~ $\ud835\udca9$(0,3), where only X\u03bamph-diffuse is constrained ([0 1] constraint; inverse logit transform).\n\nHaving established the winning model, we used two absolute model fit approaches to confirm that the winning model captures the effects of interest; the post-hoc absolute-fit approach (also called one-step-ahead prediction) and posterior predictive model simulation approach (Steingroever and Wagenmakers, 2014). The posterior predictive model simulations simply 'play' the task, using the estimated parameters. This approach, however, ignores sequential/history effects of actually observed choices and outcomes. The 'one-step-ahead' prediction fits parameters to trials t1 - tn-1, and then predicts the choice on trial tn. Taking these sequential effects into account is particularly important to assess effects of the parameters that estimate the effect of previous choice/outcome combinations, i.e. the learning rate parameters, relative to the constant parameters like the Pavlovian and go biases. For both the one-step-ahead predictions and model simulations, we computed action probabilities for all subjects on all trials using the sampled combinations of all individual-level parameter estimates. For the one-step-ahead predictions the observed choices and outcomes were used to update the action probabilities. For the model simulations choices were simulated depending on the computed action probabilities, and outcomes were determined according to the ground-truth outcome probabilities (i.e. a correct response would lead to the desired outcome 80% of the time). Subsequently, outcomes corresponding to the simulated choices were used to update the action probabilities. The one-step-ahead prediction and simulations were repeated for all sampled parameter combinations (4000 times), and action probabilities were averaged over repetitions. Averaging over repetitions also minimizes effects of randomness due to the stochastic nature of the choice simulation.\n",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "c3c97b07-fc91-430a-92ef-4f4d96144438",
+      "submission_id": "e28ffad1-e0e4-496b-85d8-76d2a75d55e9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22169.033](https://doi.org/10.7554/eLife.22169.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Catecholaminergic challenge uncovers distinct Pavlovian and instrumental mechanisms of motivated (in)action\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Naoshige Uchida (Reviewer #3), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Sabine Kastner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Sam Gershman (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper, the authors tested human subjects in a novel motivational Go/NoGo task (an extension of Guitart-Masip et al., 2012 task) in order to disentangle the impact of reward and punishment on instrumental learning from Pavlovian bias. Although the previous study had only one type of go response, the present study included two types of go responses (left versus right buttons), in order to test how reward and punishment affected specific instrumental behaviors. The authors tested a large number of subjects (N>100) in this task and also examined the effect of catecholamine uptake inhibitor (methylphenidate) on behavior.\n\nAll the reviewers found this study interesting and important. The multiple Go options and the pharmacological manipulation (MPH) are indeed potentially very powerful to further disentangle the Pavlovian system from the instrumental learning system. This is important because the previous study (Guitart-Masip et al., 2014) did not explicitly distinguish Pavlovian versus instrumental effects because the observed effect could be explained by reinforcement of a specific action (instrumental effect).\n\nHowever, the reviewers pointed out various concerns that may affect the interpretation of the results. We would like to see your response to the following points:\n\nMajor points:\n\n1) There appears to be a discrepancy between the best fitted model's simulation results (Figure 3D) and the behavioral data (Figure 2D). It is not clear whether the model's key predictions are supported by the data (although the authors performed extensive model comparisons).\n\n1A) The key prediction of the biased instrumental learning model (the best fitted model; M4 with \u03ba) is \"faster learning for Go-to-Win\" and \"slower learning for Go-to-Avoid\", as the former is driven by Go-Reward and the latter is driven by No-Go-Punishment. Is this right? This can be seen in the model simulation results (Figure 3D), but not clear in the data (Figure 2D). In fact, the overall difference in data (Figure 2F) appears to be largely due to the initial difference (t=0, Figure 2D), rather than the difference in learning rates. The learning for Go-to-Avoid looks a little faster than for Go-to-Win. Why?\n\n1B) Shouldn't the initial difference between Win and Avoid in data (Difference between Green and Red at t=0 in Figure 2D) be captured by the Pavlovian bias term (\u03c0) in the model? However, the initial difference in the simulation seems to be significantly smaller (Figure 3D). In fact, the impact of the Pavlovian bias (\u03c0V(s) =0.2*0.5=0.1 --- Equation 3) seems to be much smaller than the impact of rewards due to the large reward sensitivity.\n\n2) One very strange thing about the best fitted parameters (Figure 3B, Figure 5B) is the very large sensitivity (\u03c1=40 or more), in contrast to what previous similar studies suggest (e.g. Huys et al., 2011, where they reported sensitivity = 3). This could suggest that the behavior is in fact extremely deterministic (one reward can swing the decision probability from 0 to 1). If this is the case, the stochastic feature of the model results (Figure 2D) is not driven by the usual sense of learning but the stochasticity of the reward contingency (80% vs 20%), or even possibly by the sum of step functions (Gallistel et al., 2004). This very large sensitivity makes the model results very hard to interpret. It would be nice if the individual simulation traces are shown, in addition to the mean, so that we can see how the model actually behaves.\n\n3) The authors perform their model selection by comparing different models that gradually incorporate additional parameters but they do so in one particular order. To establish the main conclusion, it is important to demonstrate the existence of both Pavlovian and instrumental effects. To do this, the authors should demonstrate the following. First, the authors should show that the model that includes all the parameters (model 4) is significantly better than the model that lacks only the Pavlovian or instrumental bias parameter (i.e. the model that lacks either b or \u03ba). The current analysis only addresses this for \u03ba. In other words, the authors should show that the model that does not include the b parameter performs worse than the full model (model 4) in order to prove the significance of b (Pavlovian effect).\n\n4) There is a potential confound, due to a previously reported asymmetry between the reward and the punishment sensitivities (e.g. Huys et al., 2011). Since that the learning rate and the sensitivity are closely related with each other, and that the authors did not explore the asymmetric sensitivity, the assumed learning asymmetry (Equation.4) could be better altered by the previously reported asymmetric sensitivity that is independent of actions.\n\n5) Reverse inference from working memory capacity and trait impulsivity to dopamine seems problematic, since these individual differences are presumably multi-factorial. One reviewer was surprised that the authors did not use something that is potentially less ambiguously related to baseline dopamine levels, such as spontaneous eyeblink rates. Relatedly, one of the authors (Frank) has suggested that working memory may instantiate a separate learning mechanism linked to prefrontal dopamine levels (Collins & Frank, 2012; Collins et al., 2014). This appears to complicate the interpretation of working memory capacity in this task, and at least requires some comment. We could also see the value of doing more modeling in this vein, using the models developed by Anne Collins, but since the modeling in this paper is quite extensive, we would be happy with leaving this as a task for future work.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Catecholaminergic challenge uncovers distinct Pavlovian and instrumental mechanisms of motivated (in)action\" for further consideration at eLife. Your revised article has been favorably evaluated by Sabine Kastner (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAll the reviewers thought that the authors have done a great job addressing the previous concerns and the manuscript is greatly improved. However, Reviewer #1 found that some clarifications are necessary. We therefore would like to see your response before proceeding for publication. Please respond to the two remaining points raised by Reviewer #1, as appended below:\n\nReviewer #1:\n\nI appreciate the authors' effort to address our concerns. I think the paper became more informative and accessible. I am just a bit confused with a couple of points. It would be nice if the authors could clarify them in the final version.\n\nI detail my confusions and then I write a suggestion.\n\n1) In new Figure 3, the authors show that \"The impact of the Pavlovian bias (\u03c0) on choice decreases over time.\" And then \"We note that the initial difference in Go responding between Win and Avoid trials is somewhat underestimated (trial 1-2). This is likely the result from the decreasing impact of the Pavlovian bias over time (B).\". This logic confuses me. If the impact of the Pavlovian bias is the largest in the first few trials, how should we expect the underestimation in those trials? I understand the argument of the likelihood reflecting the fitting performance of all trials; but it is not clear to me how the decreasing impact justifies the initial underestimation. Also it is not clear to me how Author response image 4 supports that \" This discrepancy (p(Go)Win-Avoid) is largely constrained to the first two trials and is absent in later trials.\" For example, p(Go)Win and p(Go)Avoid seem to become smaller over trials in the data, but in the model it doesn't seem to be. (I think the discrepancy on each trial is easy to quantify if authors wish to)\n\n2) In response to our point 2, the authors claim that \"the effective updating of the Q-value is the same order of magnitude as the Pavlovian influence on the action weights\" However, I am not sure about this, because \"The effective updating of the Q-value would be +.34 and +.55 for a rewarded NoGo and a rewarded Go response respectively\" and the Pavlovian bias is 0.06 (-0.06) for Win (Avoid) trials (Equation 3). I don't think the relative effect is relevant here, because only one of them appears on each trial. Then I think it would be fair to say at least that the update +0.55 is an order of magnitude larger than the Pavlovian bias -0.06. (For the other point of the large sensitivity, I understand the authors response. The learning rate now became much smaller than the original version thanks to the median.)\n\nFor both points 1 and 2 above, I think what has been confusing me is that we don't see strong effects of the Pavlovian bias in the mean traces (or comparing the mean estimates). But what it really matters is the wide distribution of the Pavlovian bias (Figure 3\u2014figure supplement 2). In fact, Figure 3\u2014figure supplement 2A seems to clarify my confusions 1 and 2. So if the authors agree with my interpretation, I would suggest to stress in the paper that 1) the Pavlovian bias doesn't appear to be strong in the mean estimates (mean traces), but 2) the bias is so strong for a significant number of subjects (Figure 3\u2014figure supplement 2) that it improved the overall fitting. It'd be nice if the authors could clarify the wide distribution of Pavlovian bias is consistent with previous studies.\n\nReviewer #2:\n\nI think the authors have done a very thorough job addressing the issues raised in the reviews.\n",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "12a52c82-60fa-4a54-9250-00f640dba369",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C1",
+      "claim": "Catecholamines modulate the impact of motivational cues on action.",
+      "claim_type": "EXPLICIT",
+      "source": "Catecholamines modulate the impact of motivational cues on action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract introducing the research topic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "3bb9becd-c780-4ba8-866a-692474580e11",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C2",
+      "claim": "Motivational biases have been proposed to reflect cue-based, 'Pavlovian' effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Such motivational biases have been proposed to reflect cue-based, 'Pavlovian' effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references existing theoretical proposals in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "fefa47b9-4f5a-4d74-8b94-68d5946e1ed5",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C3",
+      "claim": "Motivational biases reflect both Pavlovian and instrumental effects: reward and punishment cues promoted generalized (in)action in a Pavlovian manner, whereas outcomes enhanced instrumental (un)learning of chosen actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational analyses showed that motivational biases reflect both Pavlovian and instrumental effects: reward and punishment cues promoted generalized (in)action in a Pavlovian manner, whereas outcomes enhanced instrumental (un)learning of chosen actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from computational analyses presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "df542134-b6d7-4ebb-8239-65c1c45dfd99",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C4",
+      "claim": "Cue- and outcome-based biases were altered independently by the catecholamine enhancer methylphenidate.",
+      "claim_type": "EXPLICIT",
+      "source": "These cue- and outcome-based biases were altered independently by the catecholamine enhancer melthylphenidate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the pharmacological manipulation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "c711485d-ae61-438f-9ca4-fa12d12a719e",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C5",
+      "claim": "Methylphenidate's effect varied across individuals with a putative proxy of baseline dopamine synthesis capacity, working memory span.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylphenidate's effect varied across individuals with a putative proxy of baseline dopamine synthesis capacity, working memory span.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding showing individual differences in drug effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "eaade559-def0-4ee2-94e8-ba842731e79a",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C6",
+      "claim": "Deficits in learning, action, and motivation are observed in attention deficit hyperactivity disorder, Parkinson's disease, and addiction.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficits in these aspects of adaptive behaviour are observed in a wide range of neuropsychiatric disorders, such as attention deficit hyperactivity disorder, Parkinson's disease, and addiction (Dagher and Robbins, 2009; Prince, 2008; Skolnick, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "94c8ab14-3103-4aea-acbd-73fcc6c521df",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C7",
+      "claim": "Many deficits in neuropsychiatric disorders can be treated with catecholaminergic drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "and many of those deficits can be treated with catecholaminergic drugs (Faraone and Buitelaar, 2010; Wigal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "0521bf07-c33b-471a-9fc5-14b79213ba50",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C8",
+      "claim": "Dopamine has been linked to behavioural activation in the context of reward.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuromodulator dopamine has been linked particularly strongly to behavioural activation in the context of reward (Taylor and Robbins, 1986; 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "ba9d50ee-f254-4509-94fb-2be5cc21c7d6",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C9",
+      "claim": "Dopamine amplifies the perceived benefits of action over their costs.",
+      "claim_type": "EXPLICIT",
+      "source": "putatively by amplifying the perceived benefits of action over their costs (Collins and Frank, 2014; Niv et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "1a372024-99c8-4d54-b197-a253eae8504d",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C10",
+      "claim": "Appetitive cues elicit innately specified responses that may potentiate instrumental responding.",
+      "claim_type": "EXPLICIT",
+      "source": "In PIT, conditioned cues elicit innately specified responses that may potentiate (or interfere with) instrumental responding, e.g. appetitive cues promote active responding (appetitive PIT), whereas aversive cues increase behavioural inhibition (aversive PIT; Davis and Wright, 1979; Huys et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Pavlovian-instrumental transfer phenomenon with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "d61adeb8-ca64-432c-a6dd-881d21318249",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C11",
+      "claim": "Enhanced dopamine increases appetitive PIT.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced dopamine increases appetitive PIT (Wyvell and Berridge, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "5a7fb507-72c2-4f3c-a751-a78e8e0849d4",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C12",
+      "claim": "Appetitive PIT is lowered when striatal dopamine is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "while appetitive PIT is lowered when striatal dopamine is reduced (Dickinson et al., 2000; Hebart and Gl\u00e4scher, 2015; Lex and Hauber, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "49b6303b-47bc-4664-b467-d41642671777",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C13",
+      "claim": "Striatal dopamine has been linked to controlling aversively motivated behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Striatal dopamine has also been linked to controlling aversively motivated behaviour (Faure et al., 2008; Lloyd and Dayan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "0b5051cd-727f-49b9-88f1-6ee92f02ea11",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C14",
+      "claim": "Subjects successfully learned the task, as evidenced by increased Go responding to cues indicating the need to Go vs. NoGo.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects successfully learned this difficult task, in which they needed to identify the correct response out of 3 options (Go-left/Go-right/NoGo) for eight different cues, as evidenced by increased Go responding to cues indicating the need to Go vs. NoGo (Required Action: X2(1)=624.3; p<0.001; Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral result supported by statistical analysis and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "1bfaefaf-e927-4ffc-9cb1-5ace67801766",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C15",
+      "claim": "Cue valence influenced Go responding, reflecting a motivational bias in responding.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cue valence also influenced Go responding (Valence: X2(1)=40.0; p<0.001), reflecting a motivational bias in responding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral result supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "22ab3aa8-6679-44f7-b944-1b2e6b453f13",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C16",
+      "claim": "Subjects made more Go responses for Win than Avoid cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall subjects made more Go responses for Win than Avoid cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "18685ae3-5a76-4d27-aaa1-0300b450a2e4",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C17",
+      "claim": "The effect of cue valence was highly significant for both Go and NoGo cues.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of cue valence was highly significant for both Go and NoGo cues (Go cues: X2(1)=37.5, p<0.001; NoGo cues: X2(1)=13.3, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "dc535dcc-cb01-46c5-ad79-05ea068021e0",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C18",
+      "claim": "The motivational bias was present for both correct and incorrect Go responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects made more Go responses to Win than avoid cues for both correct (Valence: X2(1)=26.1, p<0.001) and incorrect (Valence: X2(1)=25.6, p<0.001) Go responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "37e37308-e36a-4435-853e-f5a9cc85c120",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C19",
+      "claim": "Stepwise addition of the go bias, Pavlovian response bias and instrumental learning bias parameter improved model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Stepwise addition of the go bias (Appendix 5), Pavlovian response bias and instrumental learning bias parameter improved model fit, as quantified by Watanabe-Akaike Information Criteria (WAIC; Figure 3; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a computational modeling result supported by model comparison metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "93877e72-d182-4cd5-b441-c7555a6338ee",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C20",
+      "claim": "The Pavlovian bias parameter estimates (\u03c0) of the winning model M4 were positive across the group (96.4% of posterior distribution >0).",
+      "claim_type": "EXPLICIT",
+      "source": "The Pavlovian bias parameter estimates (\u03c0) of the winning model M4 were positive across the group (96.4% of posterior distribution >0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a computational modeling result from Bayesian parameter estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "926e8bd8-7fe8-49e2-abe7-829ceb44688c",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C21",
+      "claim": "The biased instrumental learning parameter estimates were positive across the group (100% of posterior distribution >0).",
+      "claim_type": "EXPLICIT",
+      "source": "The biased instrumental learning parameter estimates were also positive across the group (100% of posterior distribution >0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a computational modeling result from Bayesian parameter estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "59dbddfc-4f7e-42e3-b6ed-82a66b3dfd78",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C22",
+      "claim": "MPH enhanced the effect of cue valence on Go responding proportional to working memory span.",
+      "claim_type": "EXPLICIT",
+      "source": "MPH enhanced the effect of cue valence on Go responding proportional to working memory span (Valence x Drug x Listening Span: X2(1)=5.9; p=0.016; Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the pharmacological manipulation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "eac14024-4df0-4b47-b571-af547d66fd82",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C23",
+      "claim": "There was no Valence x Drug effect across the group.",
+      "claim_type": "EXPLICIT",
+      "source": "in the absence of a Valence x Drug effect across the group (Valence x Drug: X2(1)=1.5; p=0.221; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result showing no main effect of drug.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "19cba472-9391-4257-8c4a-6cf89e349b60",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C24",
+      "claim": "High-span subjects showed a drug-induced increase in motivational bias, while low-span subjects showed a drug-induced decrease in motivational bias.",
+      "claim_type": "EXPLICIT",
+      "source": "While high-span subjects showed a drug-induced increase in motivational bias (MPH versus placebo increased Go responding to Win vs. Avoid cues), low-span subjects showed a drug-induced decrease in motivational bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pattern of individual differences in drug effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "8ff3faac-5c56-426d-a49d-acdee17012d7",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C25",
+      "claim": "The span-dependent bias emerged under MPH and was not significant under placebo.",
+      "claim_type": "EXPLICIT",
+      "source": "This span-dependent bias emerged under MPH (X2(1)=4.6, p=0.032), and was not significant under placebo (X2(1)=0.9, p=0.335; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result showing drug-specific effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "29a24b87-7cab-499a-b58a-d2ca9729dc06",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C26",
+      "claim": "The MPH effect was driven by incorrect Go responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A break-down of this effect into correct and incorrect responses revealed that it was driven by incorrect Go responses (Valence x Drug x Listening Span: X2(1)=11.9, p<0.001; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from behavioral analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "874b4297-6acd-466f-8ecb-4b471eba5c2a",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C27",
+      "claim": "MPH did not significantly affect the correct Go responses.",
+      "claim_type": "EXPLICIT",
+      "source": "MPH did not significantly affect the correct Go responses (Valence x Drug x Listening Span: X2(1)=2.0, p=0.152).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result showing no effect on correct responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "e631d7bf-4c77-4743-85a3-d75bd51baa9d",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C28",
+      "claim": "Trait impulsivity did not significantly predict the effect of MPH on the motivational bias.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to listening span, trait impulsivity did not significantly predict the effect of MPH on the motivational bias (all p>0.05; see Appendix 3 for an overview of the mixed model effects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result showing no relationship with impulsivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "6d14eb99-9543-44a2-838b-eee32fac86ba",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C29",
+      "claim": "Model fit improved markedly when extending the winning base model M4 with the MPH-induced Pavlovian bias parameter \u03c0MPH (M5a).",
+      "claim_type": "EXPLICIT",
+      "source": "Model fit improved markedly when extending the winning base model M4 with the MPH-induced Pavlovian bias parameter \u03c0MPH (M5a; Figure 5; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a computational modeling result from model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "3291ff02-8f32-40dd-8d2f-4472db820332",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C30",
+      "claim": "The MPH-induced diffuse learning bias parameter \u03baMPH-diffuse (M5c) strongly improved model fit relative to base model M4.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the MPH-induced diffuse learning bias parameter \u03baMPH-diffuse (M5c) also strongly improved model fit relative to base model M4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a computational modeling result from model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "b5f1a508-3561-4e4b-80df-54494d274ab7",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C31",
+      "claim": "The MPH modulation of Pavlovian bias and diffuse learning parameters both covaried with Listening Span.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming the model comparison results, the MPH modulation of Pavlovian bias and diffuse learning parameters both covaried with Listening Span (\u03c0MPH: R = 0.25, p=0.013; \u03baMPH-diffuse: R = 0.28, p=0.006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result showing correlation with working memory span.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "76f78ad3-6d91-46ba-9d17-872a0d63a3b5",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C32",
+      "claim": "The MPH selective learning bias did not covary with Listening Span.",
+      "claim_type": "EXPLICIT",
+      "source": "while the MPH selective learning bias did not (\u03baMPH-selective: R = \u22120.01, p=0.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result showing no correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "c270f3f8-d97c-4238-9a7e-bd0113ba6971",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C33",
+      "claim": "Model comparison showed that the composite model M6 containing both \u03c0MPH and \u03baMPH-diffuse explained the data best.",
+      "claim_type": "EXPLICIT",
+      "source": "Model comparison showed that indeed this composite model explained the data best (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a computational modeling result from model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "c4da015c-341b-4530-a043-845c87074540",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C34",
+      "claim": "In model M6, both \u03c0MPH and \u03baMPH-diffuse parameters significantly varied proportional to Listening Span.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, both parameters again significantly varied proportional to Listening Span (\u03c0MPH: R = 0.24, p=0.020; \u03baMPH-diffuse: R = 0.22, p=0.032; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the winning computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "eda9acab-cdda-40c3-a774-8306bf8e57b3",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C35",
+      "claim": "MPH alters the impact of cue valence on action, which is present and persists from the first trial onward.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, MPH (i) alters the impact of cue valence on action, which is present and persists from the first trial onward",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "e3baee0d-34ae-414c-b695-c2cdde174bdf",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C36",
+      "claim": "MPH alters the impact of rewarding outcomes on the learning of actions, which fully depends on and evolves with experience.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) alters the impact of rewarding outcomes on the learning of actions, which fully depends on and evolves with experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "3c2587fe-c32e-4e6b-9769-c66265834b1f",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C37",
+      "claim": "Following a reward, the effect of \u03baMPH-diffuse is to increase the value of incorrect Go responses in addition to the correct Go response.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a reward, the effect of \u03baMPH-diffuse is to increase the value of incorrect Go responses in addition to the correct Go response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational mechanism of the diffuse learning parameter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "e969bfb5-56b2-44ce-8509-1c2ad2569835",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C38",
+      "claim": "Model M6 can capture the observed effects, replicating the Listening Span dependent effect of MPH on choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Both methods confirmed that M6 can capture the observed effects, replicating the Listening Span dependent effect of MPH on choice, where MPH increased Go responses to Win vs. Avoid cues more in higher span subjects (simulations: R = 0.27, p=0.008; one-step-ahead: R = 0.20, p=0.050; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model validation result using simulation and prediction methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "9694995c-0c8d-43df-b962-60539b9a5b03",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C39",
+      "claim": "Cue valence elicits behavioural activation in a Pavlovian manner, whereas outcome valence biases the learning of action vs. inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "First, cue valence elicits behavioural activation in a Pavlovian manner, whereas outcome valence biases the learning of action vs. inhibition (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the primary findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "d5c9273a-9b69-4f11-8d71-18a65012f0fb",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C40",
+      "claim": "MPH modulates Pavlovian biasing, while also altering the reward-driven diffusion of credit assignment during instrumental learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, MPH modulates Pavlovian biasing, while also altering the reward-driven diffusion of credit assignment during instrumental learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "a9aa054a-9033-4f95-b260-179933346cc2",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C41",
+      "claim": "The direction of the effect of MPH covaries with individual differences in working memory span, but not trait impulsivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the direction of the effect of MPH covaries with individual differences in working memory span, but not trait impulsivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "e10e1c2c-32cf-4b7a-95a2-8a4fb24c741e",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C42",
+      "claim": "Dopamine bursts elicited by reward prediction errors enhance long-term potentiation of the corticostriatal synapses associated with the just-performed response.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, dopamine bursts elicited by reward prediction errors (Montague et al., 2004; Schultz et al., 1998; Schultz et al., 1997) during the outcome, enhance long-term potentiation (LTP) of the corticostriatal synapses associated with the just-performed response (Frank et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "168a7970-2017-4d11-b3ac-f181b1d0ad2d",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C43",
+      "claim": "Prolonged release of dopamine after DAT blockade might reduce selectivity and diffuse the specificity of credit assignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, prolonged release of DA (e.g. after DAT blockade) might reduce this selectivity, and diffuse the specificity of credit assignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on known mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "b7789931-2389-4429-9f4c-72b6e7e5fa2d",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C44",
+      "claim": "Striatal dopamine dips following negative prediction errors can drive avoidance by promoting long-term depression in the 'Go' pathway and LTP in the 'NoGo' pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, striatal dopamine dips following negative prediction errors can drive avoidance by promoting long-term depression (LTD) in the 'Go' pathway and LTP in the 'NoGo' pathway (Beeler et al., 2012; Frank, 2005; Shen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "667443d2-d71e-4036-874b-6427aecc8b25",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C45",
+      "claim": "Transient optogenetic inhibition of dopamine induces behavioural avoidance of recently selected actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, transient optogenetic inhibition of DA induces behavioural avoidance of recently selected actions (Danjo et al., 2014; Hamid et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "881692a4-663d-464d-a9b0-17ac87c984af",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C46",
+      "claim": "The avoidance effect of dopamine inhibition depends on D2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "an effect that depends on D2 receptors (Danjo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "129a74df-3e8c-4d79-8d86-f8dee6cf7906",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C47",
+      "claim": "D2 neurons are excited in response to losses.",
+      "claim_type": "EXPLICIT",
+      "source": "D2 neurons are excited in response to losses (Zalocusky et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "58c9017d-2f8e-4b38-bedf-00ca6fd5eee4",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C48",
+      "claim": "Activation of D2 neurons during losses induces subsequent avoidance learning.",
+      "claim_type": "EXPLICIT",
+      "source": "their activation during losses induces subsequent avoidance learning (Kravitz et al., 2012; Zalocusky et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "66101a0b-8d97-40ee-890e-94a65d453859",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C49",
+      "claim": "Disruption of D2 neurons prevents avoidance learning.",
+      "claim_type": "EXPLICIT",
+      "source": "and their disruption prevents avoidance learning (Hikida et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "ba4f09e3-1762-4e95-870b-af6efcc7d271",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C50",
+      "claim": "Blocking catecholamine reuptake with MPH altered the extent to which subjects were influenced by the cue and outcome valence.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the reuptake of catecholamines with MPH altered the extent to which subjects were influenced by the cue and outcome valence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the pharmacological manipulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "0ed0e09d-4a34-446c-9ac4-c57c8f66f236",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C51",
+      "claim": "Blocking catecholamine reuptake with MPH extends the duration of dopamine presence in the synaptic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking catecholamine reuptake with MPH extends the duration of dopamine presence in the synaptic cleft (Dreyer and Hounsgaard, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known pharmacological mechanism supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "31f10e2c-7337-4ea7-8205-4789568a67ce",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C52",
+      "claim": "Prolonged dopamine presence would be less selective in potentiating the actions that were selected immediately prior to rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "This prolonged dopamine presence (i.e. reduced temporal specificity) would be less selective in potentiating the actions that were selected immediately prior to rewards (e.g. Yagishita et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on known mechanisms and cited work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "d75e3b74-db6a-47e8-a008-d4d4302229c1",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C53",
+      "claim": "Individuals vary strongly in the extent to which MPH increases extracellular dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals vary strongly in the extent to which MPH increases extracellular dopamine (Volkow et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "afae89e6-c1c4-46ef-bc9e-7503d2878718",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C54",
+      "claim": "Working memory span is related to dopamine synthesis capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "working memory span, given its known relation to dopamine synthesis capacity (Cools et al., 2008; Landau et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to PET studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "704809c7-546c-4dc3-9fab-8f8059394917",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C55",
+      "claim": "Trait impulsivity is related to D2 (auto)receptor availability.",
+      "claim_type": "EXPLICIT",
+      "source": "trait impulsivity, for its known relation to D2 (auto)receptor availability (Buckholtz et al., 2010; Kim et al., 2014; Lee et al., 2009; Reeves et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "65d9d62b-34a5-4cca-bb44-397adf450dc1",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C56",
+      "claim": "Baseline dopamine cell activity is a better predictor of effects of MPH than either D2 auto-receptor availability or DAT occupancy under MPH.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, baseline dopamine cell activity is a better predictor of effects of MPH than either D2 auto-receptor availability or DAT occupancy under MPH (Volkow et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "d813d516-9feb-4fba-8e24-721a877be89c",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C57",
+      "claim": "MPH increased subjective experiences of positive affect and alertness, and decreased calmness.",
+      "claim_type": "EXPLICIT",
+      "source": "Across subjects, MPH increased subjective experiences of positive affect and alertness, and decreased calmness (Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral result from mood assessments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "b6bb2f03-66cc-4bba-8d07-98474aee27e0",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C58",
+      "claim": "MPH-induced mood changes did not covary with working memory span.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the MPH-induced Pavlovian response bias and diffuse learning bias, these non-specific mood changes did not covary with working memory span.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result showing no correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "3f3fbb53-156e-4849-bbba-025af8b66a9f",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C59",
+      "claim": "The MPH effect on Pavlovian activation and biased instrumental learning cannot be attributed to MPH-induced changes in mood.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the MPH effect on Pavlovian activation and biased instrumental learning cannot be attributed to MPH-induced changes in mood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of correlation between mood and the effects of interest.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "da192275-e189-4ce5-b0e6-fdc3d15f2146",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C60",
+      "claim": "MPH blocks the dopamine and noradrenaline transporters, thereby diminishing the reuptake of catecholamines.",
+      "claim_type": "EXPLICIT",
+      "source": "MPH blocks the dopamine and noradrenaline transporters, thereby diminishing the reuptake of catecholamines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known pharmacological mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "45e483a4-852a-49ac-a106-bfce59c06ac9",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C61",
+      "claim": "When administered orally, MPH has a maximal plasma concentration after 2 hr and a plasma half-life of 2\u20133 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "When administered orally, MPH has a maximal plasma concentration after 2 hr and a plasma half-life of 2\u20133 hr (Kimko et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a pharmacokinetic property supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "3a3f4abd-e2d5-40e0-a2ad-dc78c8751c1d",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C62",
+      "claim": "The motivational Go/NoGo learning task was performed on average 2 hr after capsule intake, well within the peak of plasma concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "On average the motivational Go/NoGo learning task was performed 2 hr after capsule intake, well within the peak of plasma concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the timing of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "0f564153-b564-4b3f-83c0-a9338df80b07",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C63",
+      "claim": "The study collected a large sample of 106 native Dutch volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "we collected a large sample of 106 native Dutch volunteers (aged 18\u201328 years, mean (SD) = 21.5 (2.3); 53 women; 84 right-handed; sample size calculation reported in CMO protocol NL47166.091.13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "df27dc70-8aac-47cb-be45-a6cd5cccfd1a",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C64",
+      "claim": "Four subjects dropped out after the first test day.",
+      "claim_type": "EXPLICIT",
+      "source": "Four subjects dropped out after the first test day (due to too much delay between test days, loss of motivation, nausea, and mild arrhythmia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes attrition in the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "ea8f04c9-78e6-4272-85f9-3f35da3706d0",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C65",
+      "claim": "Two subjects dissolved the capsules before swallowing and were discarded because of uncertainty in the pharmacodynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Two subjects dissolved the capsules before swallowing and are discarded because of uncertainty in the pharmacodynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes exclusion criteria applied during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "edf22506-f1b3-4d37-92f8-44276d194672",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C66",
+      "claim": "One subject did not sufficiently engage in the task and was discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "One subject did not sufficiently engage in the task (only 13/2% Go responses on day 1/2) and was discarded as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes exclusion criteria applied during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "79781b34-2237-4220-b577-1b99ab43e483",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C67",
+      "claim": "Of the resulting 99 subjects, 48 subjects received MPH on the first day.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the resulting 99 subjects, 48 subjects received MPH on the first day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample and counterbalancing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "44097c6b-08d4-4619-8936-f3c78f93ebd9",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C68",
+      "claim": "Feedback validity was 80%, that is, correct (incorrect) responses were followed by the desirable outcome 80% (20%) of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback validity was 80%, that is, correct (incorrect) responses were followed by the desirable outcome 80% (20%) of the time (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "9663a58e-fdc6-4fe9-8b5d-9b2b1ab3b6be",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C69",
+      "claim": "Each cue was presented 40 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cue was presented 40 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "111017f6-a1cf-462e-b47d-31a9dd5b91d1",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C70",
+      "claim": "The task lasted approximately 30 min, including instructions and a self-paced break halfway.",
+      "claim_type": "EXPLICIT",
+      "source": "The task lasted approximately 30 min, including instructions and a self-paced break halfway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "82c410b5-d6d2-4f65-a5a4-ea4a910185bb",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C71",
+      "claim": "Working memory span was assessed with the Listening Span Test.",
+      "claim_type": "EXPLICIT",
+      "source": "Working memory span was assessed with the Listening Span Test (Daneman and Carpenter, 1980; Salthouse and Babcock, 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assessment method with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "07bc22fc-c572-4f1d-bec0-954062d32d4f",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C72",
+      "claim": "The Listening Span Test was used in two FMT PET studies showing positive correlations with striatal dopamine synthesis capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "which was also used in two FMT PET studies showing positive correlations with striatal dopamine synthesis capacity (Cools et al., 2008; Landau et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to PET studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "525be3de-0b32-47df-80df-47d5c357a801",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C73",
+      "claim": "Trait impulsivity was assessed with the Barratt Impulsiveness Scale (BIS-11).",
+      "claim_type": "EXPLICIT",
+      "source": "Trait impulsivity was assessed with the Barratt Impulsiveness Scale (BIS-11) (Patton et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assessment method with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "2b3dbab1-f84b-4093-b952-935bb88864d4",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C74",
+      "claim": "The BIS-11 total impulsivity scores reflect the tendency towards impulsivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The BIS-11 total impulsivity scores reflect the tendency towards impulsivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes what the measure assesses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "814e8eea-41e1-49da-a199-3b952b2db1d2",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C75",
+      "claim": "In all models, action weights are estimated for each response option for all trials per cue.",
+      "claim_type": "EXPLICIT",
+      "source": "In all models, action weights (w) are estimated for each response option (a) for all trials (t) per cue (s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational modeling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "f3f1675a-525c-4254-8035-6081a80eb294",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C77",
+      "claim": "WAIC is an estimate of the likelihood of the data given the model parameters, penalized for the effective number of parameters to adjust for overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "WAIC is an estimate of the likelihood of the data given the model parameters, penalized for the effective number of parameters to adjust for overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model comparison metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "5ef458a4-e2b7-4913-833d-0db9b0653341",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C78",
+      "claim": "Lower (i.e. more negative) WAIC values indicate better model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower (i.e. more negative) WAIC values indicate better model fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how to interpret the model comparison metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "8c204471-741a-4487-b142-0c16de9169fe",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "claim_id": "C79",
+      "claim": "A difference in WAIC value of 2\u20136 is considered positive evidence, 6\u201310 strong evidence, and >10 very strong evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "As WAIC is reported on the deviance scale (Gelman et al., 2014), a difference in WAIC value of 2\u20136 is considered positive evidence, 6\u201310 strong evidence, and >10 very strong evidence (Kass and Raftery, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation guidelines with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fdd44c99-e44d-4183-848f-63594087fe8a",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Participants successfully learned the motivational Go/NoGo task and exhibited a motivational bias where cue valence influenced Go responding. Subjects made more Go responses to Win cues than Avoid cues, and this effect was significant for both Go and NoGo cues, as well as for both correct and incorrect Go responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 provide converging behavioral evidence with appropriate statistical tests (all p<0.001) demonstrating both task learning and motivational bias. The effects are shown across multiple response types (correct/incorrect, Go/NoGo cues) with consistent patterns, supported by figures showing trial-by-trial learning curves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "00e47d09-9119-4c33-8712-511b4a55f0b2",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational modeling revealed that motivational biases reflect both Pavlovian and instrumental mechanisms. Model M4, which included both a Pavlovian response bias parameter (\u03c0) and an instrumental learning bias parameter (\u03ba), provided the best fit to the data. Both parameters showed positive estimates across the group (\u03c0: 96.4% posterior >0; \u03ba: 100% posterior >0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 demonstrate rigorous model comparison using WAIC with clear evidence favoring the composite model M4. The Bayesian parameter estimation provides strong quantitative support (>95% posterior probability) for both mechanisms. Model validation through one-step-ahead predictions and simulations (C38) confirms the model captures key behavioral features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "f371b37b-5c10-465a-84f1-abc7cb753cb8",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Methylphenidate (MPH) enhanced the effect of cue valence on Go responding proportionally to working memory span, with high-span subjects showing increased motivational bias under MPH and low-span subjects showing decreased bias. This effect was driven by incorrect Go responses rather than correct responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 provide consistent statistical evidence for the span-dependent drug effect (Valence\u00d7Drug\u00d7Listening Span: p=0.016), with appropriate breakdown analyses showing the effect is specific to incorrect Go responses (p<0.001) but not correct responses (p=0.152). The drug-specific nature is confirmed by showing the span-dependent bias emerged under MPH (p=0.032) but not placebo (p=0.335).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "57056907-77ea-4f6a-8bda-d23ef25f89f4",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Computational modeling of MPH effects revealed that the drug independently modulated both Pavlovian response bias (\u03c0MPH) and induced a diffuse learning bias (\u03baMPH-diffuse), but not selective learning bias. The composite model M6 containing both parameters best explained the data, with both parameters covarying significantly with working memory span.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C38 provide comprehensive computational evidence through hierarchical model comparison (WAIC), parameter estimation showing significant correlations with listening span (\u03c0MPH: R=0.24, p=0.020; \u03baMPH-diffuse: R=0.22, p=0.032), and model validation through both simulation and one-step-ahead prediction methods that successfully replicate the span-dependent MPH effect. The dissociation between diffuse and selective learning mechanisms is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "f367719e-48d1-4799-b5e4-55f62e71ed31",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Trait impulsivity did not significantly predict the effect of MPH on motivational bias, whereas working memory span did. The direction of MPH effects covaried with working memory span but not trait impulsivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C41 provide clear negative results for impulsivity (all p>0.05) contrasted with positive results for working memory span. This dissociation is important for understanding individual differences in drug response and is appropriately reported with statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "6124f378-1f0d-42b2-b6da-764e04c2ed6e",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MPH increased subjective positive affect and alertness while decreasing calmness across subjects, but these mood changes did not covary with working memory span and therefore cannot explain the MPH effects on Pavlovian activation and biased instrumental learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 appropriately address a potential confound by showing that while MPH had general mood effects, these were orthogonal to the effects of interest (no covariation with working memory span). This strengthens the interpretation that the computational effects are not simply due to mood changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "a242b5b1-12dd-4c12-9f4b-54a4a784a540",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study collected 106 participants, with 7 excluded due to dropout, protocol violations, or insufficient task engagement, resulting in a final sample of 99 subjects (48 receiving MPH first).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 provide transparent reporting of sample size, attrition, and exclusions with clear justifications. The final sample size of 99 is appropriate for detecting individual differences in drug effects, and exclusion criteria are reasonable and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "903b3a0f-6b14-47d6-aad9-dd3ffb6a0502",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The motivational Go/NoGo task used probabilistic feedback (80% validity), with each of 8 cues presented 40 times over approximately 30 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe basic task parameters that are clearly specified and appropriate for the experimental design. The 80% feedback validity allows for learning while maintaining uncertainty, and 40 trials per cue provides sufficient data for computational modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "b3d959f8-57d8-4b4b-9671-4c571b7236c3",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Working memory span was assessed using the Listening Span Test, which has been validated in PET studies showing positive correlations with striatal dopamine synthesis capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 and C54 provide appropriate justification for using working memory span as a proxy for dopamine synthesis capacity, citing relevant PET validation studies (Cools et al., 2008; Landau et al., 2009). This strengthens the interpretation of individual differences in drug response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "e6ad47a9-1748-4014-a52c-44af9f4f641b",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Trait impulsivity was assessed using the Barratt Impulsiveness Scale (BIS-11), which has been related to D2 autoreceptor availability in prior research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 and C55 appropriately describe the impulsivity measure and its theoretical relationship to dopamine function, supported by relevant citations. While this measure did not predict drug effects in the current study, its inclusion was theoretically motivated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "113dc747-5fd6-4ade-ac4e-0f042d091869",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MPH blocks dopamine and noradrenaline transporters, has maximal plasma concentration at 2 hours with a half-life of 2-3 hours, and the task was performed on average 2 hours after capsule intake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 provide appropriate pharmacological background and demonstrate that task timing was optimized for peak drug effects. The pharmacokinetic information is supported by citation (Kimko et al., 1999) and the timing is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "addd615b-5ce2-4be9-b679-2d35d84c877c",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The computational modeling approach estimated action weights for each response option using hierarchical Bayesian methods, with model comparison performed using WAIC (Watanabe-Akaike Information Criteria).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 describe standard and appropriate computational methods. WAIC is a well-established model comparison metric, and the interpretation guidelines (differences of 2-6, 6-10, >10 for positive, strong, very strong evidence) are properly cited (Kass and Raftery, 1995).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The theoretical framework proposes that dopamine bursts following reward prediction errors enhance LTP in corticostriatal synapses associated with performed responses, while dopamine dips following negative prediction errors promote LTD in the Go pathway and LTP in the NoGo pathway. Prolonged dopamine release after DAT blockade might reduce selectivity and diffuse credit assignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 present a well-supported theoretical framework based on extensive prior literature (multiple citations to optogenetic, electrophysiological, and behavioral studies). The mechanistic predictions are logical extensions of established dopamine function in striatal learning, though the specific predictions about MPH effects (C43) remain theoretical until tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "abaf76ac-81af-4f87-bd86-05fab31c314d",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MPH altered the extent to which subjects were influenced by cue and outcome valence by extending dopamine presence in the synaptic cleft, which would be less selective in potentiating actions selected immediately prior to rewards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 integrate the empirical findings with mechanistic interpretation. C50 is directly supported by the data, C51 is supported by citation (Dreyer and Hounsgaard, 2013), and C52 is a reasonable theoretical prediction based on known mechanisms and cited work (Yagishita et al., 2014), though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "576f2b06-609e-44b9-99cc-2d515ce876b8",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Individuals vary strongly in the extent to which MPH increases extracellular dopamine, and baseline dopamine cell activity is a better predictor of MPH effects than D2 autoreceptor availability or DAT occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C56 are supported by appropriate citations to prior PET studies (Volkow et al., 2002). This provides important context for why working memory span (related to synthesis capacity) but not impulsivity (related to D2 receptors) predicted drug effects in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction establishes that catecholamines modulate motivated action, with prior work proposing Pavlovian mechanisms. Dopamine has been linked to behavioral activation in reward contexts, with enhanced dopamine increasing appetitive PIT and reduced striatal dopamine decreasing it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide appropriate background from prior literature, all supported by relevant citations. These claims establish the theoretical foundation and prior empirical work that motivates the current study's hypotheses about dissociating Pavlovian and instrumental mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    },
+    {
+      "id": "9024bd85-8817-44a1-92ec-22ac96e572a2",
+      "content_id": "4c0b757f-5fb3-47a4-b112-63380824ff7c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Cue- and outcome-based biases were altered independently by methylphenidate, with effects varying across individuals based on working memory span as a proxy for baseline dopamine synthesis capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 accurately summarize the main findings from the abstract. These are high-level summary claims that are supported by the detailed results presented in claims C22-C41. The independent alteration of cue- and outcome-based biases is demonstrated through the computational modeling showing distinct parameters for Pavlovian and learning biases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:06:55.106102Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b5051cd-727f-49b9-88f1-6ee92f02ea11",
+      "result_id": "fdd44c99-e44d-4183-848f-63594087fe8a"
+    },
+    {
+      "claim_id": "1bfaefaf-e927-4ffc-9cb1-5ace67801766",
+      "result_id": "fdd44c99-e44d-4183-848f-63594087fe8a"
+    },
+    {
+      "claim_id": "22ab3aa8-6679-44f7-b944-1b2e6b453f13",
+      "result_id": "fdd44c99-e44d-4183-848f-63594087fe8a"
+    },
+    {
+      "claim_id": "18685ae3-5a76-4d27-aaa1-0300b450a2e4",
+      "result_id": "fdd44c99-e44d-4183-848f-63594087fe8a"
+    },
+    {
+      "claim_id": "dc535dcc-cb01-46c5-ad79-05ea068021e0",
+      "result_id": "fdd44c99-e44d-4183-848f-63594087fe8a"
+    },
+    {
+      "claim_id": "37e37308-e36a-4435-853e-f5a9cc85c120",
+      "result_id": "00e47d09-9119-4c33-8712-511b4a55f0b2"
+    },
+    {
+      "claim_id": "93877e72-d182-4cd5-b441-c7555a6338ee",
+      "result_id": "00e47d09-9119-4c33-8712-511b4a55f0b2"
+    },
+    {
+      "claim_id": "926e8bd8-7fe8-49e2-abe7-829ceb44688c",
+      "result_id": "00e47d09-9119-4c33-8712-511b4a55f0b2"
+    },
+    {
+      "claim_id": "fefa47b9-4f5a-4d74-8b94-68d5946e1ed5",
+      "result_id": "00e47d09-9119-4c33-8712-511b4a55f0b2"
+    },
+    {
+      "claim_id": "9694995c-0c8d-43df-b962-60539b9a5b03",
+      "result_id": "00e47d09-9119-4c33-8712-511b4a55f0b2"
+    },
+    {
+      "claim_id": "59dbddfc-4f7e-42e3-b6ed-82a66b3dfd78",
+      "result_id": "f371b37b-5c10-465a-84f1-abc7cb753cb8"
+    },
+    {
+      "claim_id": "eac14024-4df0-4b47-b571-af547d66fd82",
+      "result_id": "f371b37b-5c10-465a-84f1-abc7cb753cb8"
+    },
+    {
+      "claim_id": "19cba472-9391-4257-8c4a-6cf89e349b60",
+      "result_id": "f371b37b-5c10-465a-84f1-abc7cb753cb8"
+    },
+    {
+      "claim_id": "8ff3faac-5c56-426d-a49d-acdee17012d7",
+      "result_id": "f371b37b-5c10-465a-84f1-abc7cb753cb8"
+    },
+    {
+      "claim_id": "29a24b87-7cab-499a-b58a-d2ca9729dc06",
+      "result_id": "f371b37b-5c10-465a-84f1-abc7cb753cb8"
+    },
+    {
+      "claim_id": "874b4297-6acd-466f-8ecb-4b471eba5c2a",
+      "result_id": "f371b37b-5c10-465a-84f1-abc7cb753cb8"
+    },
+    {
+      "claim_id": "6d14eb99-9543-44a2-838b-eee32fac86ba",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "3291ff02-8f32-40dd-8d2f-4472db820332",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "b5f1a508-3561-4e4b-80df-54494d274ab7",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "76f78ad3-6d91-46ba-9d17-872a0d63a3b5",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "c270f3f8-d97c-4238-9a7e-bd0113ba6971",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "c4da015c-341b-4530-a043-845c87074540",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "eda9acab-cdda-40c3-a774-8306bf8e57b3",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "e3baee0d-34ae-414c-b695-c2cdde174bdf",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "3c2587fe-c32e-4e6b-9769-c66265834b1f",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "e969bfb5-56b2-44ce-8509-1c2ad2569835",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "d5c9273a-9b69-4f11-8d71-18a65012f0fb",
+      "result_id": "57056907-77ea-4f6a-8bda-d23ef25f89f4"
+    },
+    {
+      "claim_id": "e631d7bf-4c77-4743-85a3-d75bd51baa9d",
+      "result_id": "f367719e-48d1-4799-b5e4-55f62e71ed31"
+    },
+    {
+      "claim_id": "a9aa054a-9033-4f95-b260-179933346cc2",
+      "result_id": "f367719e-48d1-4799-b5e4-55f62e71ed31"
+    },
+    {
+      "claim_id": "d813d516-9feb-4fba-8e24-721a877be89c",
+      "result_id": "6124f378-1f0d-42b2-b6da-764e04c2ed6e"
+    },
+    {
+      "claim_id": "b6bb2f03-66cc-4bba-8d07-98474aee27e0",
+      "result_id": "6124f378-1f0d-42b2-b6da-764e04c2ed6e"
+    },
+    {
+      "claim_id": "3f3fbb53-156e-4849-bbba-025af8b66a9f",
+      "result_id": "6124f378-1f0d-42b2-b6da-764e04c2ed6e"
+    },
+    {
+      "claim_id": "0f564153-b564-4b3f-83c0-a9338df80b07",
+      "result_id": "a242b5b1-12dd-4c12-9f4b-54a4a784a540"
+    },
+    {
+      "claim_id": "df27dc70-8aac-47cb-be45-a6cd5cccfd1a",
+      "result_id": "a242b5b1-12dd-4c12-9f4b-54a4a784a540"
+    },
+    {
+      "claim_id": "ea8f04c9-78e6-4272-85f9-3f35da3706d0",
+      "result_id": "a242b5b1-12dd-4c12-9f4b-54a4a784a540"
+    },
+    {
+      "claim_id": "edf22506-f1b3-4d37-92f8-44276d194672",
+      "result_id": "a242b5b1-12dd-4c12-9f4b-54a4a784a540"
+    },
+    {
+      "claim_id": "79781b34-2237-4220-b577-1b99ab43e483",
+      "result_id": "a242b5b1-12dd-4c12-9f4b-54a4a784a540"
+    },
+    {
+      "claim_id": "44097c6b-08d4-4619-8936-f3c78f93ebd9",
+      "result_id": "903b3a0f-6b14-47d6-aad9-dd3ffb6a0502"
+    },
+    {
+      "claim_id": "9663a58e-fdc6-4fe9-8b5d-9b2b1ab3b6be",
+      "result_id": "903b3a0f-6b14-47d6-aad9-dd3ffb6a0502"
+    },
+    {
+      "claim_id": "111017f6-a1cf-462e-b47d-31a9dd5b91d1",
+      "result_id": "903b3a0f-6b14-47d6-aad9-dd3ffb6a0502"
+    },
+    {
+      "claim_id": "82c410b5-d6d2-4f65-a5a4-ea4a910185bb",
+      "result_id": "b3d959f8-57d8-4b4b-9671-4c571b7236c3"
+    },
+    {
+      "claim_id": "07bc22fc-c572-4f1d-bec0-954062d32d4f",
+      "result_id": "b3d959f8-57d8-4b4b-9671-4c571b7236c3"
+    },
+    {
+      "claim_id": "afae89e6-c1c4-46ef-bc9e-7503d2878718",
+      "result_id": "b3d959f8-57d8-4b4b-9671-4c571b7236c3"
+    },
+    {
+      "claim_id": "525be3de-0b32-47df-80df-47d5c357a801",
+      "result_id": "e6ad47a9-1748-4014-a52c-44af9f4f641b"
+    },
+    {
+      "claim_id": "2b3dbab1-f84b-4093-b952-935bb88864d4",
+      "result_id": "e6ad47a9-1748-4014-a52c-44af9f4f641b"
+    },
+    {
+      "claim_id": "704809c7-546c-4dc3-9fab-8f8059394917",
+      "result_id": "e6ad47a9-1748-4014-a52c-44af9f4f641b"
+    },
+    {
+      "claim_id": "da192275-e189-4ce5-b0e6-fdc3d15f2146",
+      "result_id": "113dc747-5fd6-4ade-ac4e-0f042d091869"
+    },
+    {
+      "claim_id": "45e483a4-852a-49ac-a106-bfce59c06ac9",
+      "result_id": "113dc747-5fd6-4ade-ac4e-0f042d091869"
+    },
+    {
+      "claim_id": "3a3f4abd-e2d5-40e0-a2ad-dc78c8751c1d",
+      "result_id": "113dc747-5fd6-4ade-ac4e-0f042d091869"
+    },
+    {
+      "claim_id": "814e8eea-41e1-49da-a199-3b952b2db1d2",
+      "result_id": "addd615b-5ce2-4be9-b679-2d35d84c877c"
+    },
+    {
+      "claim_id": "f3f1675a-525c-4254-8035-6081a80eb294",
+      "result_id": "addd615b-5ce2-4be9-b679-2d35d84c877c"
+    },
+    {
+      "claim_id": "5ef458a4-e2b7-4913-833d-0db9b0653341",
+      "result_id": "addd615b-5ce2-4be9-b679-2d35d84c877c"
+    },
+    {
+      "claim_id": "8c204471-741a-4487-b142-0c16de9169fe",
+      "result_id": "addd615b-5ce2-4be9-b679-2d35d84c877c"
+    },
+    {
+      "claim_id": "e10e1c2c-32cf-4b7a-95a2-8a4fb24c741e",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "168a7970-2017-4d11-b3ac-f181b1d0ad2d",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "b7789931-2389-4429-9f4c-72b6e7e5fa2d",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "667443d2-d71e-4036-874b-6427aecc8b25",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "881692a4-663d-464d-a9b0-17ac87c984af",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "129a74df-3e8c-4d79-8d86-f8dee6cf7906",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "58c9017d-2f8e-4b38-bedf-00ca6fd5eee4",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "66101a0b-8d97-40ee-890e-94a65d453859",
+      "result_id": "c3ccf360-bc59-48fc-bfb4-dbc1ff76925b"
+    },
+    {
+      "claim_id": "ba4f09e3-1762-4e95-870b-af6efcc7d271",
+      "result_id": "abaf76ac-81af-4f87-bd86-05fab31c314d"
+    },
+    {
+      "claim_id": "0ed0e09d-4a34-446c-9ac4-c57c8f66f236",
+      "result_id": "abaf76ac-81af-4f87-bd86-05fab31c314d"
+    },
+    {
+      "claim_id": "31f10e2c-7337-4ea7-8205-4789568a67ce",
+      "result_id": "abaf76ac-81af-4f87-bd86-05fab31c314d"
+    },
+    {
+      "claim_id": "d75e3b74-db6a-47e8-a008-d4d4302229c1",
+      "result_id": "576f2b06-609e-44b9-99cc-2d515ce876b8"
+    },
+    {
+      "claim_id": "65d9d62b-34a5-4cca-bb44-397adf450dc1",
+      "result_id": "576f2b06-609e-44b9-99cc-2d515ce876b8"
+    },
+    {
+      "claim_id": "12a52c82-60fa-4a54-9250-00f640dba369",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "3bb9becd-c780-4ba8-866a-692474580e11",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "eaade559-def0-4ee2-94e8-ba842731e79a",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "94c8ab14-3103-4aea-acbd-73fcc6c521df",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "0521bf07-c33b-471a-9fc5-14b79213ba50",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "ba9d50ee-f254-4509-94fb-2be5cc21c7d6",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "1a372024-99c8-4d54-b197-a253eae8504d",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "d61adeb8-ca64-432c-a6dd-881d21318249",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "5a7fb507-72c2-4f3c-a751-a78e8e0849d4",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "49b6303b-47bc-4664-b467-d41642671777",
+      "result_id": "18c6599d-6bfb-4c96-b2fc-7036b7ede3bf"
+    },
+    {
+      "claim_id": "df542134-b6d7-4ebb-8239-65c1c45dfd99",
+      "result_id": "9024bd85-8817-44a1-92ec-22ac96e572a2"
+    },
+    {
+      "claim_id": "c711485d-ae61-438f-9ca4-fa12d12a719e",
+      "result_id": "9024bd85-8817-44a1-92ec-22ac96e572a2"
+    }
+  ],
+  "comparisons": []
+}

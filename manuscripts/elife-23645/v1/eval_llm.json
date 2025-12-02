@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The C. elegans dosage compensation complex (DCC) consists of a modified condensin complex (condensin DC) that shares four of five subunits with condensin I but is distinguished by the SMC-4 variant DPY-27, along with non-condensin subunits SDC-2, SDC-3, and DPY-30 required for X chromosome recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe the established composition of the DCC based on prior literature (C2) and are illustrated in Figure 1A. These are well-established facts about the DCC structure supported by multiple citations and consistent with the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "ChIP-seq analysis reveals that DCC subunits show X chromosome enrichment, with 51% of SDC-2, 54% of SDC-3, and 29% of DPY-30 binding sites on the X, while condensin DC (DPY-27) binding is highly X-specific at over 99%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 present ChIP-seq data from this study showing differential X chromosome enrichment among DCC subunits. The data are internally consistent and supported by Figure 1B. The high X-specificity of DPY-27 versus recruiter proteins is a key observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "64 DCC recruitment sites were identified on the X chromosome using systematic ChIP-seq criteria, capturing 68% of previously identified rex-sites, and these sites were categorized into 17 strong, 16 intermediate, and 31 weak recruitment sites based on ChIP enrichment, with strong sites spaced approximately 1 Mb apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 describe the systematic identification and classification of recruitment sites using clearly defined ChIP-seq criteria. The hierarchical categorization is supported by k-means clustering (C10) and validated by overlap with prior array-based studies (C9). Figure 2A-B provides visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "In sdc-3 null mutants, SDC-2 preferentially binds to strong recruitment sites (16/17) compared to intermediate (11/16) and weak sites (2/31), demonstrating hierarchical recruitment where SDC-2 is required to maintain open chromatin at strong sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 present ChIP-seq data from sdc-3 null mutants showing differential SDC-2 binding by site strength (Figure 2C). C15 is supported by H3 ChIP-seq comparing wild-type and sdc-2 null (Figure 3A). Together these demonstrate recruitment hierarchy and SDC-2's role in chromatin accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "A 12 bp DNA sequence motif with GCGCAGGG core is enriched at recruitment sites but shows only ~3-fold X chromosome enrichment genome-wide; strong motifs (score \u22657) show greater X enrichment with 91% of perfect matches on X, yet only 52% of strong X-linked motifs are DCC-bound, and bound motifs have higher predicted nucleosome occupancy than unbound motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe motif analysis with clear methodology (TRAP scoring) and present data showing the motif is necessary but insufficient for DCC binding. The nucleosome occupancy predictions (C21, Figure 4E) and binding statistics (C20) are well-supported. This addresses a key specificity question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "17 homotypic motif clusters on the X chromosome are all DCC-bound and contained within recruitment sites, while 5 autosomal motif clusters fail to recruit DCC; strong recruitment sites show significant overlap with HOT sites (16/17), and 11/12 X-linked motif clusters both overlap HOT sites and are strong recruitment sites, fully distinguishing X from autosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate that motif clustering combined with HOT site overlap distinguishes X from autosomes. The data are clearly presented in Figures 5A-B with statistical validation. This is a critical finding explaining X-specificity beyond motif sequence alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Ectopic insertion experiments show that rex-1 in single copy on chromosome II recruits DCC at only 12-26% of endogenous levels, while rex-8 recruits at 22-47%; however, rex-1 on the X chromosome recruits robustly (exceeding endogenous levels), and increasing rex-1 copy number on autosomes to 3 or 8 copies increases recruitment to 61% and 100% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 present ChIP-qPCR data from multiple ectopic insertion strains (Figure 6A). The experiments are well-controlled with biological replicates and appropriate normalization. The copy-number dependence demonstrates cooperativity, though positional effects cannot be fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C71"
+    ],
+    "result": "Recruitment sites are separated by a median distance of ~90 kb (range 1.5 kb to 1.2 Mb), and long-range cooperativity is demonstrated by sequential insertion of rex-8 sites at 30 kb and 50 kb from ectopic rex-1, which progressively increased DCC recruitment to the weak rex-1 site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C71 demonstrate long-range cooperativity through CRISPR-mediated sequential insertions (Figure 6C). The experimental design directly tests cooperativity over distances relevant to endogenous site spacing. The progressive increase in recruitment with additional sites is compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C52",
+      "C53"
+    ],
+    "result": "An autosomal motif cluster inserted into the X chromosome failed to strongly recruit DCC; recruitment sites without motifs have significantly higher DNA-encoded nucleosome occupancy than sites with motifs, and X-linked motif clusters have higher nucleosome occupancy than autosomal clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C52-C53 show that motif clustering alone is insufficient (Figure 6E-F) and that DNA-encoded nucleosome occupancy distinguishes functional sites. The nucleosome occupancy predictions are based on an established model (Ercan et al., 2011) and show statistically significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C72"
+    ],
+    "result": "Deletion of individual recruitment sites (rex-40, rex-1, rex-41) results in 10-20% reduction in DCC binding across 1-2 Mb regions flanked by TAD boundaries, with corresponding increases in local gene expression; the alignment of DCC-depleted region edges with TAD boundaries is statistically significant (p<0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C72 present ChIP-seq and RNA-seq data from three deletion strains analyzed with sliding windows (Figure 7A-C). The TAD boundary alignment is supported by permutation testing. The modest effect size (10-20%) is consistent with redundancy among recruitment sites. Control experiments with set-4 mutant validate the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Analysis of published HiC data shows that 62/64 recruitment sites interact with at least one other recruitment site in wild-type, reduced to 35/64 in sdc-2 mutant, indicating DCC-dependent long-range interactions between recruitment sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 analyze published HiC data (Crane et al., 2015) to show recruitment site interactions. The analysis is appropriate and the reduction in interactions in sdc-2 mutant supports DCC-dependent 3D organization. However, this is secondary analysis of published data rather than new experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Of 638 C. elegans tRNA genes, 286 (44.8%) are on the X chromosome, with 178 (62.2%) overlapping condensin DC binding sites; 16/64 recruitment sites overlap tRNA genes, predominantly at weak sites, suggesting canonical condensin recruitment mechanisms reinforce DCC binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present overlap analysis between tRNA genes and DCC binding/recruitment sites. The enrichment at weak sites (C57) is an interesting observation supported by the data, though the mechanistic interpretation is speculative. The connection to canonical condensin recruitment is reasonable given prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C70"
+    ],
+    "result": "The authors propose a model where initial DCC recruitment involves SDC-2 recognition of nucleosome-occupied motif clusters within HOT contexts at strong X-specific sites, which initiates an environment for recruitment at weaker sites, followed by spreading across TAD-bounded domains, resulting in chromosome-wide DCC binding through hierarchy and long-distance cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C73-C76 synthesize the experimental findings into a comprehensive model. While these are interpretive claims, they are well-supported by the collective evidence from ChIP-seq, ectopic insertions, deletions, and chromatin analysis. The model integrates multiple lines of evidence coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background information on DCC composition, dependencies, spreading, developmental timing, SUMOylation, 3D organization, and comparison to dosage compensation in other organisms is provided based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C69 (excluding those already grouped) represent background knowledge from cited literature. These establish context for the current work and are appropriately attributed to prior studies. They are not new findings but necessary background.",
+    "result_type": "MINOR"
+  }
+]

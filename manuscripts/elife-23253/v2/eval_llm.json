@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors demonstrate that bRG and BG share striking molecular similarity. Through transcriptomic analysis, they show that 51.5% of bRG-signature gene orthologs are expressed in mouse cerebellar BG, significantly higher than random gene sets (2.2-4.5%). They identify 117 putative BG-specific genes using RNA-seq from wild-type, Ptpn11-cKO, and rescued cerebella, with 35.5% validated in BG. WGCNA identifies a BG-module enriched for these genes, with eigengene values increasing from E12.5 to E14.5 in wild-type, decreased in Ptpn11-cKO, and rescued in Ptpn11-cKO;Map2k1 cerebella. Both bRG and BG-specific gene sets identify the same population of human cortical progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular similarity between bRG and BG is well-supported by multiple complementary approaches: unbiased analysis of Allen Brain Atlas data (C41-C42), immunofluorescence validation (C43-C44), RNA-seq differential expression analysis (C45-C46), WGCNA coexpression analysis (C47-C51), statistical overlap testing (C52-C53), and single-cell RNA-seq validation (C54). The convergence of these independent methods provides strong evidence for the molecular similarity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors demonstrate stronger FGF-ERK signaling activity in human compared to mouse cortical aRG. Seven of 15 human aRG-specific markers (EGR1, FOS, ANXA1, CLU, CRYAB, CYR61, FBXO32) are ERK early-response genes, with orthologs transcriptionally silent in mouse VZ at E14.5 (except Cyr61 and Clu). RNA-seq analysis shows significantly higher expression of FGF-readout genes (SPRY1, SPRY2, SPRY4, ETV5) and all seven ERK early-response genes in human versus mouse aRG. GSEA reveals ERK early-response genes and BG-module genes are among the most enriched in human aRG. Module preservation analysis shows weak preservation of aRG, ERK-early-response, and FGF/BMP signaling gene sets between human and mouse coexpression networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential ERK signaling activity between human and mouse aRG is supported by multiple lines of evidence: identification of ERK-responsive genes among human aRG markers (C56), in situ hybridization showing species-specific expression patterns (C57), RNA-seq differential expression analysis with appropriate statistical testing (C58), GSEA enrichment analysis (C60-C61), and network preservation analysis (C62). The integration of published datasets from multiple independent studies strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors show that bRG formation correlates temporally with intensified ERK signaling in both human and mouse cortex. In human fetal brain (GW19), robust pERK immunoreactivity is detected in Pax6+ radial glia in VZ and outer SVZ, with abundant pERK/HOPX double-labeled cells in outer SVZ. In mouse, weak pERK signals are detected in dorsal telencephalon between E13.5-E16.5, but strong pERK appears in aRG and basally located cells by E17.5. Few Hopx+ cells are found in mouse SVZ until E17.5, when scattered Hopx+/Fabp7+/Sox2+ cells (presumptive bRG) appear. About 50% of pERK+/Hopx+ basally located cells display unipolar processes extending to the pial surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal correlation between ERK signaling and bRG formation is well-documented through immunohistochemistry in both human (C63-C64) and mouse (C65-C69) tissue. The quantification of cell morphology (C69) and co-localization of multiple markers (C68) provides strong evidence. However, correlation does not establish causation\u2014the functional experiments with Mek1DD (addressed in other results) are needed to demonstrate that ERK signaling drives bRG formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors demonstrate that Mek1DD expression specifically induces bRG in mouse neocortex. In utero electroporation of Mek1DD at E14.5 robustly induces bRG markers (Hopx, Fabp7, Tnc, Slc1a3, Ptprz1) 48 hours later, with 31.8\u00b14.7% of Mek1DD-expressing cells co-expressing Hopx and Sox2 (versus 3.3\u00b11.5% for GFP control). Induced cells display characteristic bRG morphology with long basal processes reaching the pial surface (78.2\u00b13.1%) and occasionally apical processes (21.8\u00b13.1%). 57.4\u00b13.8% of Mek1DD-expressing cells are Pax6+, while only 5.24\u00b11.75% are Eomes+ (IPC marker), demonstrating specific induction of bRG but not IPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specific induction of bRG by Mek1DD is well-supported by multiple marker analyses (C70), quantification of marker co-expression (C71), morphological characterization (C73), and differential expression of bRG versus IPC markers (C74-C75). The cell-autonomous nature is demonstrated by the electroporation approach (C72). The specificity for bRG over IPC (C76) is a key finding that distinguishes this result from prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors show that Mek1DD-induced bRG undergo extensive self-renewing proliferation. At 48 hours post-electroporation, most Mek1DD-induced Hopx+ cells are Ki67+ and some are pVim+ (M-phase marker). BrdU/EdU/Ki67 triple labeling shows most Mek1DD-expressing cells at E18.5 are positive for at least two labels, indicating multiple rounds of division. Clustering of Mek1DD-expressing Hopx+/BrdU+/EdU+ cells suggests clonal expansion. Cell-pair assays show symmetric division generating two Fabp7+ daughters at 48 hours, and all three division types (bRG-bRG, bRG-neuron, neuron-neuron) at 72 hours, with most doublets (70-80%) undergoing proliferative division versus predominantly neurogenic division (64.5%) in GFP controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extensive proliferative capacity of induced bRG is demonstrated through multiple complementary approaches: proliferation markers (C77-C78), pulse-chase labeling (C79-C80), and cell-pair assays (C81-C83). The quantification of division modes (C83) provides strong evidence for self-renewal capacity. However, the interpretation of clustering as clonal expansion (C80) is somewhat indirect\u2014lineage tracing would provide more definitive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors demonstrate that Mek1DD-induced bRG are multipotent and give rise to neurons and astrocytes, but do not induce cortical folding. At P3, many Mek1DD-transfected cells express Satb2 (upper-layer neurons) and are arranged in clusters. GFP-labeled cells at P3 are mostly devoid of Gfap and oligoglial markers (Olig2, Sox10), but at P7 some Mek1DD-expressing cells with low GFP are Gfap+. Despite ectopic bRG induction, in utero electroporation of Mek1DD does not cause cortical folding (n=10). The authors conclude that bRG expansion alone is insufficient for cortical folding without parallel IPC expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multipotency of induced bRG is demonstrated by fate-mapping showing both neuronal (C85) and astrocytic (C87) progeny, though the astrocyte data is limited to cells with low GFP expression at P7 (C87). The lack of cortical folding (C89) is an important negative result that is clearly stated with sample size. The conclusion about IPC requirement (C91) is a reasonable inference but somewhat speculative\u2014it would be strengthened by experiments combining bRG and IPC expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors demonstrate that Etv4 and Etv5 are essential for BG formation downstream of ERK signaling. ETV5 and Etv4 are increased in human versus mouse cortical aRG. Etv4 and Etv5 are well-known FGF-Ras-ERK effectors, and ETV5 is specifically expressed in human bRG. Etv4 and Etv5 transcripts are absent in Ptpn11-cKO cerebella but restored in Ptpn11-cKO;Map2k1 cerebella at E14.5. Expression of dominant-negative Etv4 (Etv4DN) in Gbx2creER/+;R26Etv4DN/+ embryos significantly reduces BG formation compared to RFP controls. pERK immunoreactivity is detected in Etv4DN-expressing cells, indicating ERK acts upstream of Etv4/Etv5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The essential role of Etv4/Etv5 in BG formation is supported by multiple lines of evidence: differential expression analysis (C92), prior knowledge of pathway relationships (C93-C94), in situ hybridization in genetic models (C95), dominant-negative experiments with quantification (C96), and epistasis analysis (C97-C98). The dominant-negative approach provides strong functional evidence, though complete knockout would be more definitive. The conclusion (C99) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors demonstrate that the FGF-ERK-ETV cascade controls BG formation. Ex vivo electroporation of Mek1DD robustly rescues BG in Ptpn11-cKO cerebella, while Etv4 or Etv5 electroporation also rescues BG but to a lesser extent. The BG marker Fabp7 is selectively expressed in rescued BG, suggesting cell-autonomous action. Inactivation of Fgf9 or three FGFR genes (Fgfr1, 2, 3) depletes BG similar to Ptpn11-cKO mutants, demonstrating the essential role of FGF signaling. Together, these results show that Ptpn11 regulates the FGF-ERK-ETV cascade to control the aRG-to-BG transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FGF-ERK-ETV pathway in BG formation is well-supported by rescue experiments (C100-C101), cell-autonomous demonstration (C102), and genetic loss-of-function analysis (C103-C104). The ex vivo electroporation system provides a clean test of cell-autonomous function. The integration of multiple genetic models (Ptpn11-cKO, FGFR mutants) strengthens the pathway model (C105). The partial rescue by Etv4/Etv5 compared to Mek1DD (C101) suggests additional ERK targets may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors demonstrate that the FGF-ERK-ETV axis induces bRG in mouse neocortex. In utero electroporation of FGFR1K656E or Etv4 induces cells expressing bRG markers (Hopx, Sox2, Tnc, Slc1a3, Ptprz1) 48 hours post-electroporation, similar to Mek1DD. Similar percentages of Hopx/Sox2 double-labeling are found among FGFR1K656E-, Mek1DD-, and Etv4-expressing cells, all significantly higher than GFP controls. These findings suggest FGFR, Map2k1, and Etv4 act in the same pathway to induce bRG. The authors conclude that activation of the FGF-ERK-ETV axis induces the transition of aRG to BG in cerebellum and to bRG in neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FGF-ERK-ETV pathway in bRG induction is supported by parallel experiments with multiple pathway components (C106-C107). The similar quantitative effects (C107) support the linear pathway model (C108). However, the conclusion that these components act in the \"same pathway\" (C108) is somewhat inferential\u2014epistasis experiments (e.g., testing whether Etv4 can rescue in the absence of ERK signaling) would provide stronger evidence. The overall conclusion (C109) integrating bRG and BG findings is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors conclude that BG and bRG share similar molecular features and related molecular mechanisms in their generation. Intensification of ERK signaling controls the timely transition of aRG to BG in cerebellum and to bRG in neocortex. A higher level of FGF-ERK-ETV activity in aRG contributes to the greater abundance of bRG in humans than in mice. Gene regulation changes specific to the human lineage modify corticogenesis by enhancing FGF-ERK signaling activity in aRG, leading to bRG expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conclusions (C110-C113) are well-supported by the collective evidence from the study: molecular similarity (Result 1), differential ERK activity (Result 2), temporal correlation (Result 3), functional induction experiments (Results 4-6), and pathway analysis (Results 7-9). The inference about human evolution (C113) is reasonable given the comparative transcriptomic data and cited epigenetic studies, though it remains somewhat speculative without direct experimental manipulation of human tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors provide extensive background on bRG and BG as basal progenitors derived from aRG that lose their apical processes. They review prior work showing bRG are abundant in gyrencephalic cortex but rare in mouse, have been implicated in cortical expansion and folding, and that the direct link to gyrification remains unclear. They describe BG as derived from cerebellar aRG between E13.5-E17.5, continuing to proliferate until P7, expressing neural stem cell markers, and being associated with cerebellar foliation. Several bRG-signature genes are noted as well-known BG markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C4, C9-C31, C36-C39) represent well-established background knowledge from the field, appropriately cited to prior literature. They provide essential context for the study but are not novel findings. The claims accurately represent the state of knowledge and identify the key gap (C25) that motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors cite their prior work showing that Ptpn11 deletion blocks BG formation and cerebellar foliation while EGL proliferation remains normal, and that constitutively active Mek1DD rescues both BG generation and cerebellar foliation, demonstrating the critical role of ERK signaling in BG induction and the essential role of BG in cerebellar foliation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C32-C35) accurately represent prior published work from the authors' laboratory, appropriately cited. They establish the foundation for the current study's investigation of ERK signaling in bRG formation. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors discuss that gain-of-function mutations in FGFR2/FGFR3 cause Apert syndrome and thanatophoric dysplasia with cortical malformations, and ERK signaling cascade mutations are implicated in neuro-cardio-facial-cutaneous syndromes with abnormal brain size and gyrification. They suggest that abnormal bRG development may contribute to these pathologies caused by aberrant FGF-ERK function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical associations (C114-C115) are appropriately cited to prior literature. The speculation about bRG involvement (C116) is reasonable given the study's findings linking FGF-ERK signaling to bRG formation, though it remains a hypothesis requiring future testing. This represents appropriate discussion of clinical implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors discuss that BG do not produce neurons during normal development (unlike bRG), suggesting additional factors may be required for the neurogenic potential and localization of human bRG. They note that bRG abundance is necessary but insufficient for gyrencephaly, and suggest that increased neuronal output through expansion of other basal progenitors together with bRG may be necessary for cortical folding. They speculate that hedgehog and FGF-ERK signaling pathways may act in concert to promote neuronal output and expand bRG/BG populations in the evolution of convoluted cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points (C117-C121) appropriately acknowledge limitations and propose future directions. The claim about BG not producing neurons (C117) is cited to prior work. The conclusions about gyrencephaly requirements (C119-C120) are reasonable given the negative result with Mek1DD alone (C89). The speculation about hedgehog signaling (C121) is appropriately framed as a hypothesis based on cited prior work, though it requires future testing.",
+    "result_type": "MINOR"
+  }
+]

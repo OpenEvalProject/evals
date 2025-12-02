@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes a staging system correlating Hamburger-Hamilton (HH) stages with embryonic days in chick development: HH19 = day 3, HH24 = day 4, HH27 = day 5, HH29 = day 6, and HH30 = day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5) are explicitly stated in the Materials and methods section and represent standard developmental staging conventions for chick embryos. The staging system is well-established in the field and provides essential context for interpreting all experimental timepoints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C24",
+      "C25",
+      "C26",
+      "C104",
+      "C105"
+    ],
+    "result": "Distal mesenchyme cells from late-stage (HH27) chick wing buds complete their proliferation program intrinsically when grafted to younger (HH20) wing buds, maintaining a cell cycle profile similar to HH29 rather than the host HH24 stage, demonstrating that epithelial-mesenchyme signaling is not required for termination of proliferative outgrowth but acts permissively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C24-C26, C104-C105 collectively establish the central finding through grafting experiments and cell cycle analysis (Figure 1a). The data show HH24g grafts maintain their intrinsic proliferation program despite being in a younger signaling environment. This is supported by flow cytometry data showing cell cycle profiles and previous work (C24, C26). The distinction between permissive and instructive signaling is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "RNA-seq analysis of distal mesenchyme from HH24, HH24g, HH27, and HH29 wing buds identified 154 differentially expressed genes (55 between HH24g-HH24, 99 between HH24g-HH29), with overall gene expression in HH24g cells being closer to HH24 than HH29, suggesting partial resetting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe the RNA-seq experimental design and primary results. The methodology is clearly described with appropriate replication (three replicates, one HH24 sample excluded for quality control). The differential expression analysis uses reasonable thresholds (>2-fold, p<0.0005). Pearson correlation analysis (C33, Figure 1d) supports the interpretation of partial resetting. The data quality and analysis appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C42"
+    ],
+    "result": "KEGG pathway analysis revealed five down-regulated pathways in HH24g vs HH29 (focal adhesion, ECM, gap junction, MAPK, actin cytoskeleton) and four up-regulated pathways in HH24g vs HH24 (ECM, focal adhesion, adrenergic signaling, TGF\u03b2), with no cluster of genes showing maintained downregulation over time in HH24g.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C36, C42 describe KEGG pathway enrichment results. However, the manuscript notes that only ~20% of chicken genes belong to verified KEGG pathways, which significantly limits the comprehensiveness and reliability of this analysis. The absence of a cluster showing maintained downregulation (C42) is interesting but may reflect the limited pathway coverage rather than a biological phenomenon. The pathway analysis provides suggestive but not definitive insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "Hierarchical clustering of 154 differentially expressed genes identified three clusters: Cluster 1 (54 genes) showing maintained late expression in HH24g, Cluster 2 (44 genes) showing reset late expression, and Cluster 3 (53 genes) showing reset early expression, indicating that early-expressed genes can be reset while late-expressed genes show differential resetting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 describe the clustering analysis and interpretation. The methodology is described in Materials and methods with appropriate validation metrics (Silhouette measure, BHI). The three-cluster solution appears well-justified. The biological interpretation (C41, C43-C44) follows logically from the clustering patterns shown in Figures 1f-h. Three genes were excluded for falling into multiple clusters, which is appropriate. The clustering provides meaningful biological insights into gene expression dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Bmp2 and Bmp7 are in Cluster 1, showing maintained late expression in HH24g mesenchyme: Bmp2 increases 5.3-fold between HH24-HH29 and shows 6.2-fold higher expression in HH24g vs HH24; Bmp7 increases 1.5-fold between HH24-HH29 and shows 2.5-fold higher expression in HH24g vs HH24.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 present specific RNA-seq quantification for Bmp2 and Bmp7, supported by both read-count data (Figure 2a, c) and in situ hybridization validation (Figure 2b, d). The fold-change values are clearly stated and the interpretation that late expression is maintained (C49) follows logically. BMP signaling's known role in terminating outgrowth (C46) provides important biological context. The data are internally consistent and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Bmp4 expression decreases 2-fold between HH24-HH29 and is approximately equivalent between HH24 and HH24g tissue by RNA-seq, though slightly enhanced expression in HH24g grafts was detected by in situ hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe Bmp4 expression patterns. The RNA-seq data (C53-C54, Figure 2e) show decreased expression over time and equivalence between HH24 and HH24g. The slight enhancement detected by in situ (C55, Figure 2f) represents a minor discrepancy that could reflect spatial heterogeneity not captured in the RNA-seq sampling or differences in sensitivity between methods. The overall pattern is clear and the authors appropriately note the in situ observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Gremlin1 (Grem1), a BMP antagonist in Cluster 3, shows 17.2-fold reduction between HH24-HH29 but maintains similar expression levels in HH24 and HH24g mesenchyme, suggesting it could antagonize BMP2/4/7 signaling in HH24g.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 describe Grem1 expression and its potential functional significance. The RNA-seq data (C57-C58, Figure 2g-h) clearly show dramatic downregulation over time but maintenance in grafts. The speculation that Grem1 could antagonize BMP signaling in HH24g (C59) is reasonable given its known function and expression pattern, though this remains to be functionally tested. The data support the expression claims; the functional interpretation is appropriately presented as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "BMP signaling is maintained in HH24g mesenchyme as evidenced by maintained expression of the BMP target Msx2 (2.8-fold increase HH24-HH29, 2-fold higher in HH24g vs HH24) and elevated phosphorylated SMAD1/5/9 levels in HH24g grafts and overlying apical ectodermal ridge compared to stage-matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 provide multiple lines of evidence for maintained BMP signaling: RNA-seq of Msx2 (C61-C62, Figure 3a-b), immunofluorescence of pSMAD1/5/9 (C64-C68, Figure 3c-h), and appropriate controls (C67). The use of pSMAD1/5/9 as a direct readout of BMP signaling (C63) is well-established. The data consistently show elevated BMP signaling in grafts. The interpretation that signaling is maintained in grafts and enhanced in the overlying ridge (C69-C70) is well-supported by the immunofluorescence data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Lysotracker staining revealed no appreciable difference in apoptotic cells between HH24 control and HH24g mesenchyme, ruling out apoptosis as a mechanism for reduced proliferation in grafts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 address whether apoptosis contributes to reduced proliferation. The lysotracker staining (Figure 3i-j) shows no difference between control and graft tissue. While BMP signaling is associated with apoptosis in some limb regions (C71), the data clearly show this is not occurring in the HH24g grafts. This is an important control that strengthens the conclusion that BMP affects proliferation directly rather than through cell death.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Noggin-soaked beads (BMP antagonist) implanted in HH24g grafts significantly reduced the proportion of cells in G1-phase from 69% to 62.4% (closer to the 60.8% control value), demonstrating that inhibition of BMP signaling can enhance proliferation in grafted mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe a functional test of BMP's role using Noggin beads. The flow cytometry data (Figure 3k) show appropriate controls (C73) and a statistically significant effect of Noggin treatment (C75). The interpretation that BMP inhibition enhances proliferation (C76) is well-supported. This is a key experiment demonstrating causality rather than just correlation between BMP signaling and reduced proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "BMP2-soaked beads implanted in HH20 wing buds dose-dependently increased the proportion of cells in G1-phase (57.8% control to 60.5% BMP2low and 66.2% BMP2high) without causing apoptosis, demonstrating that BMP signaling instructively inhibits proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide the complementary gain-of-function experiment. The flow cytometry data (C77, Figure 3k) show a clear dose-dependent effect of BMP2 on cell cycle. The lysotracker controls (C79, Figure 3l-m) confirm this is not due to apoptosis. The interpretation that BMP instructively inhibits proliferation (C78, C80) is strongly supported by the dose-response relationship. Together with the Noggin experiments, this establishes BMP as a direct regulator of proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "BMP signaling in HH24g mesenchyme maintains an intrinsic cell cycle program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 synthesizes the BMP signaling results (C60-C80) into a coherent conclusion. The evidence from maintained BMP expression/signaling, Noggin rescue experiments, and BMP2 gain-of-function collectively support this interpretation. This represents the mechanistic explanation for the intrinsic timer observed in the grafting experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "FGF signaling is maintained in HH24g mesenchyme as evidenced by equivalent expression of the FGF target Dusp6 in HH24g and control HH24 tissue (both higher than HH29), indicating grafted cells respond to apical ectodermal ridge signals despite maintained Fgf8 expression in the ridge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 address whether grafted cells respond to FGF signaling from the apical ectodermal ridge. The RNA-seq data for Dusp6 (C85-C86, Figure 4a-b) show equivalent expression in HH24g and HH24, both higher than HH29. The interpretation that FGF signaling levels are similar in grafts and host tissue (C87) is reasonable. The citation to previous work showing maintained Fgf8 in the ridge (C82) provides important context. This demonstrates that the epithelial-mesenchyme signaling loop remains functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Sprouty2 (Spry2), another FGF target, shows similar expression patterns to Dusp6: 1.7-fold decrease between HH24-HH29, with equivalent expression in HH24g and HH24 mesenchyme, further confirming that grafted cells respond to FGF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 provide independent validation of FGF responsiveness using a second target gene. The Spry2 data (C89-C90, Figure 4c-d) parallel the Dusp6 results, strengthening the conclusion. The interpretation that both genes decrease over time consistent with ridge maturation and that grafted cells respond to FGF (C91-C93) is well-supported by having two independent readouts showing the same pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Cluster 3 contains FGF family members Fgf13 and Fgf18 that are expressed early and can be reset in HH24g; Fgf18 decreases 90-fold between HH24-HH29 (undetectable by in situ at HH29) but is only 3.4-fold higher in HH24 vs HH24g, confirming HH24g mesenchyme is responsive to FGF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 extend the FGF signaling analysis to mesenchyme-derived FGFs. The clustering data (C94, C96) and RNA-seq quantification (C97-C99, Figure 4e-f) are clearly presented. The dramatic 90-fold decrease in Fgf18 (C97) contrasts with the modest difference between HH24 and HH24g (C99), suggesting partial resetting. The overall conclusion about FGF responsiveness (C100) is well-supported by the combined Dusp6, Spry2, and Fgf18 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "FGF-soaked beads implanted in HH27 wing buds increased Dusp6 expression and significantly increased the proportion of cells in G1-phase (70.8% vs 67.8% control), suggesting FGF has a slight inhibitory rather than positive instructive effect on proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 test whether FGF has an instructive role in proliferation. The in situ data (C101, Figure 4g-j) confirm FGF beads activate signaling. The flow cytometry (C102, Figure 4k) shows a statistically significant but modest increase in G1-phase cells. The interpretation that FGF has a slight inhibitory effect (C103) is supported by the data, though the effect size is small (3% difference). This argues against FGF being the primary instructive signal for proliferation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A temporal switch from BMP antagonism (via Grem1) to BMP signaling controls the intrinsic cell cycle timer: at HH20, Grem1 inhibits BMP to permit rapid proliferation and maintain the apical ectodermal ridge; between HH24-HH29, increasing autocrine BMP signaling overcomes Grem1 antagonism to decelerate proliferation; at HH29, high BMP causes ridge regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C108-C112 synthesize the major findings into a mechanistic model (illustrated in Figure 5). The model integrates: (1) Grem1 expression patterns (C56-C58), (2) BMP2/7 expression increases (C47-C51), (3) maintained BMP signaling in grafts (C60-C70), (4) functional effects of BMP on proliferation (C73-C80), and (5) maintained FGF responsiveness (C84-C93). The model is well-supported by the experimental data and provides a coherent explanation for how intrinsic timing and permissive signaling are integrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Previous studies showed that surgical removal of the apical ectodermal ridge before HH24 causes apoptosis but later decreases proliferation, and genetic approaches compromising ridge signaling cause defective outgrowth, but these approaches masked the intrinsic control of proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 cite previous work to contextualize the current findings. The citations appear appropriate and the interpretation that previous approaches masked intrinsic control is reasonable given the new grafting data. This helps explain why the intrinsic timer mechanism was not previously recognized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "All early-expressed genes identified by RNA-seq (Cluster 3) could be reset to some degree, consistent with early proximo-distal patterning being controlled by extrinsic signals; notably, Cluster 3 contains stem-cell-associated genes (Plzf, Sall4, Gbx2, Lin28b), suggesting a gene regulatory network may maintain mesenchyme multipotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C117 interpret the Cluster 3 genes. The observation that all early genes can be reset (C114) is interesting and consistent with extrinsic control of early patterning (C115). However, the identification of stem-cell-associated genes (C116) and speculation about a multipotency network (C117) is intriguing but preliminary. The authors appropriately present this as a possibility warranting further investigation. More functional validation would be needed to support the multipotency hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C118",
+      "C119"
+    ],
+    "result": "The intrinsic switch from BMP antagonism to BMP signaling provides a mechanism for autocrine BMP instruction without spatial gradients, similar to recent findings that BMP signaling terminates body axis extension in mouse, and extends the known role of BMP gradients in specifying positional identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C118-C119 place the findings in broader developmental context. The citation to mouse body axis work (C113) provides a relevant parallel. The discussion of BMP gradients in other contexts (C118) and the novelty of temporal rather than spatial BMP control (C119) appropriately frames the significance. The interpretation is well-supported and highlights the conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides extensive background on limb development, including how extrinsic signals and intrinsic timers operate in various patterning systems, the role of proximal signals in specifying the humerus, the switch to intrinsic timing for distal elements, the Grem1-FGF feedback loop maintaining the apical ectodermal ridge, and the classical view that breakdown of epithelial-mesenchyme signaling terminates outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23 establish the background and context for the study. These are well-supported by appropriate citations to previous work and represent accurate summaries of established knowledge in the field. This background is essential for understanding the significance of the current findings that challenge the classical model (C21).",
+    "result_type": "MINOR"
+  }
+]

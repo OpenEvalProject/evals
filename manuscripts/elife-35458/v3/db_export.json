@@ -1,0 +1,1820 @@
+{
+  "submission": {
+    "id": "dd96e4c5-133e-477b-9c8d-0f91add2b603",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:20:25.949622Z",
+    "updated_at": "2025-12-02T01:20:25.949622Z"
+  },
+  "content": [
+    {
+      "id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "submission_id": "dd96e4c5-133e-477b-9c8d-0f91add2b603",
+      "content_type": "manuscript",
+      "content_text": "# Single-color, ratiometric biosensors for detecting signaling activities in live cells\n\n## Authors\n\n- Brian L Ross<sup>1</sup> ([ORCID: 0000-0001-9020-627X](https://orcid.org/0000-0001-9020-627X))\n- Brian Tenner<sup>1</sup>\n- Michele L Markwardt<sup>4</sup>\n- Adam Zviman<sup>4</sup>\n- Guoli Shi<sup>5</sup>\n- Jaclyn P Kerr<sup>5</sup>\n- Nicole E Snell<sup>4</sup>\n- Jennifer J McFarland<sup>4</sup>\n- Joseph R Mauban<sup>4</sup>\n- Christopher W Ward<sup>5</sup>\n- Megan A Rizzo<sup>4</sup> ([ORCID: 0000-0001-6528-7768](https://orcid.org/0000-0001-6528-7768)) \u2020\n- Jin Zhang<sup>1</sup> ([ORCID: 0000-0001-7145-7823](https://orcid.org/0000-0001-7145-7823)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology University of California, San Diego San Diego United States\n2. Department of Biomedical Engineering Johns Hopkins University Baltimore United States\n3. Program in Molecular Biophysics Johns Hopkins University School of Medicine Baltimore United States\n4. Department of Physiology University of Maryland Baltimore Baltimore United States\n5. Department of Orthopaedics University of Maryland Baltimore Baltimore United States\n6. Department of Pharmacology and Molecular Sciences Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetically encoded fluorescent biosensors have revolutionized the study of signal transduction by enabling the real-time tracking of signaling activities in live cells. Investigating the interaction between signaling networks has become increasingly important to understanding complex cellular phenomena, necessitating an update of the biosensor toolkit to allow monitoring and perturbing multiple activities simultaneously in the same cell. We therefore developed a new class of fluorescent biosensors based on homo-FRET, deemed FLuorescence Anisotropy REporters (FLAREs), which combine the multiplexing ability of single-color sensors with a quantitative, ratiometric readout. Using an array of color variants, we were able to demonstrate multiplexed imaging of three activity reporters simultaneously in the same cell. We further demonstrate the compatibility of FLAREs for use with optogenetic tools as well as intravital two-photon imaging.\n\n## Introduction\n\nGenetically encoded biosensors have revolutionized the study of cell signaling by allowing the real-time monitoring of signaling activities, such as enzymatic activity or the release of second messengers, in live cells. They are therefore critical tools for uncovering the precise spatial and temporal regulation of signal transduction cascades. These biosensors can be divided into two broad classes: single-color and ratiometric. Single-color sensors, with an intensiometric activity readout, only occupy a single-color channel, allowing for more flexibility in multiplexed imaging experiments. However, they are sensitive to variations in probe concentration caused by changing expression levels or cell shape, as well as differences in imaging conditions, such as illumination intensity and focus. On the other hand, sensors with a ratiometric readout, such as those based on F\u00f6rster Resonance Energy Transfer (FRET), cancel out many of these variations, enabling quantitative measurements of second messenger concentrations and better comparisons between experiments. However, the requirement for two distinct color channels limits their application in multiplexed imaging.\n\nWe therefore aimed to develop sensors that only occupy a single channel while still cancelling out the effects of varying imaging conditions and probe concentrations. Hence, rather than using the emission ratio between the FRET and donor channels, we instead used the loss of polarization of emitted light as a readout for FRET between two fluorescent proteins (FPs). Because this approach does not require the donor and acceptor to have distinct emission wavelengths, it can be used for either hetero-FRET (e.g. between different chromophores) or homo-FRET (e.g. between identical chromophores). Homo-FRET measurements have been useful for detecting protein clustering and protein oligomerization in live cells (Bader et al., 2011, Bader et al., 2009; Gautier et al., 2001), but only recently has the possibility of using homo-FRET in biosensor designs been explored (Warren et al., 2015; Cameron et al., 2016). Here, we describe the development of a panel of single-color, genetically encodable biosensors based on homo-FRET for detecting kinase activity and second messenger dynamics. We call these sensors FLuorescence Anisotropy REporters, or FLAREs.\n\n## Results and discussion\n\nTo create our FLARE probes, we adapted existing FRET-based biosensors for homo-FRET measurements by replacing the traditional FRET pair with two FPs of the same color. The resulting biosensors include a molecular switch, which changes conformation in the presence of a particular biochemical activity, flanked by two spectrally similar FPs at the N- and C-termini. Changes in the conformation of the molecular switch, and thus the biochemical activities under study, are then monitored by observing the fluorescence anisotropy of the sensor using fluorescence polarization microscopy, with increased anisotropy corresponding to a lower-FRET state of the sensor, similar to the effect of increasing the intramolecular distance between the FRET pair (Figure 1\u2014figure supplement 1).\n\nTo develop a Protein Kinase A (PKA) activity FLARE, the molecular switch from A Kinase Activity Reporter 4 (AKAR4) (Zhang et al., 2001; Depry et al., 2011), composed of an FHA1 domain and PKA substrate (Figure 1a), was flanked between two FPs of the same color. The FHA1 domain binds to the PKA substrate when the latter is phosphorylated, altering the conformation of the molecular switch and leading to a change in FRET between the flanking homo-FRET pair. To test the effect of FP circular permutation on these biosensors, we developed two FLARE-AKAR variants based on the yellow FP mVenus: one in which the C-terminal FP was circularly permuted at position 172 (cp172Venus), consistent with the hetero-FRET AKAR4 sensor, and one without circular permutation. We expressed mVenus-cp172Venus FLARE-AKAR in HEK293T cells and captured a time-course using fluorescence polarization microscopy. Following PKA activation using a cocktail of 50 \u03bcM forskolin (Fsk), an adenylyl cyclase activator, and 100 \u03bcM 3-isobutyl-1-methylxanthine (IBMX), a general phosphodiesterase inhibitor, the anisotropy decreased from 0.29\u00a0\u00b1\u00a00.003 to 0.26\u00a0\u00b1\u00a00.003, a decrease of 0.028\u00a0\u00b1\u00a00.001 (N\u00a0=\u00a044, biological replicates, unpaired, two-tailed t-test, p<0.0001), with the kinetics of the decrease matching those observed with AKAR4 (Figure 1b, Figure 1\u2014figure supplement 2a). The yellow variant without the circular-permutation in the C-terminal FP showed slightly reduced changes in anisotropy upon stimulation with Fsk/IBMX (Figure 1c, Figure 1\u2014figure supplement 2c), consistent with previous\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-v3.jpg)\n\n**Figure 1.:** (a)\u00a0Schematic of a kinase activity FLARE (b) Diagram illustrating domain structure of FLARE-AKAR (top). Time-course of mean fluorescence anisotropy of Venus-cp172Venus FLARE-AKAR wild type (blue, N\u00a0=\u00a044) and kinase insensitive T-to-A mutant (red, N\u00a0=\u00a038) expressed in HEK293T cell, stimulated with 50 \u03bcM forskolin and 100 \u03bcM IBMX at t\u00a0=\u00a00 min, and 20 \u03bcM H-89 at t\u00a0=\u00a024 min (left). Dashed lines above and below represent standard error of the mean. Changes in anisotropy upon Fsk/IBMX stimulation for both FLARE-AKAR WT and T-to-A mutant (upper right, two-tailed t-test, p<0.0001), calculated as the difference between the mean anisotropy from t\u00a0=\u00a05 min to t\u00a0=\u00a07.5 min and the mean anisotropy of the baseline before drug addition. The mean for each is shown, with the error reflecting the standard error of the mean. Representative anisotropy pseudocolor image before Fsk/IBMX stimulation (t\u00a0=\u00a00 min), after Fsk/IBMX stimulation (t\u00a0=\u00a07.5 min), and after inhibition of PKA with H-89 (t\u00a0=\u00a024 min) (lower right) (c) Comparison of the magnitude of the anisotropy change for different color variants of FLARE-AKAR upon stimulation with Fsk/IBMX including Venus-cp172Venus AKAR (N\u00a0=\u00a044), Venus-Venus FLARE AKAR (N\u00a0=\u00a032), EGFP-EGFP FLARE AKAR (N\u00a0=\u00a013), mCh-mCh FLARE AKAR (N\u00a0=\u00a022), mCerulean3 FLARE-AKAR (N\u00a0=\u00a010), and mCerulean3-cp173Cerulean FLARE-AKAR (N\u00a0=\u00a026). The mean for each is shown, with the error reflecting the standard error of the mean.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Anisotropy measurements of monomer, as well as tandem dimers separated by either a long (44 amino acid) or a short (10 amino acid) linker, of (a) mCerulean3, (b) mVenus, and (c) mCherry. The mean for each is shown, with the error reflecting the standard error of the mean.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Individual and average traces for FLARE-AKAR variants, including\u00a0(a)\u00a0Venus-cp172Venus AKAR (N\u00a0=\u00a044), (b) Venus-cp172Venus FLARE-AKAR T/A mutant (N\u00a0=\u00a038), (c) Venus-Venus FLARE AKAR (N\u00a0=\u00a032), (d) EGFP-EGFP FLARE AKAR (N\u00a0=\u00a013), (e) mCh-mCh FLARE AKAR (N\u00a0=\u00a022), (f)\u00a0mCerulean3-mCerulean3 FLARE-AKAR (N\u00a0=\u00a010), and (g) mCerulean3-cp173Cerulean FLARE-AKAR (N\u00a0=\u00a026). Gray lines are individual cell traces, while the red solid line is the average curve. Red dotted lines represent the average curve plus or minus the standard error of the mean.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Scatter plots showing the relationship between the magnitude of the anisotropy change after treatment with 50 \u03bcM forskolin and 100 \u03bcM IBMX and the initial intensity for (a)\u00a0Venus-cp172Venus FLARE AKAR and (b) mCherry-mCherry FLARE AKAR, in HEK293T cells. The magnitude of the signal was calculated by taking the mean anisotropy from t\u00a0=\u00a05 min to t\u00a0=\u00a07.5 min and subtracting the mean anisotropy of the baseline before drug addition.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** HEK293T cells were transiently transfected with Venus-cp172Venus FLARE-AKAR, and stimulated with varying doses of isoproterenol, followed by maximal stimulation with 50 \u03bcM forskolin and 100 \u03bcM IBMX. The ratio of the anisotropy decrease following isoproterenol dose to that after Forskolin and IBMX stimulation vs. the isoproterenol dose is plotted.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a)\u00a0Comparison of Venus-cp172Venus FLARE AKAR responses of the wild type sensor and a mutant sensor in which the chromophore of the C-terminal cp172Venus was mutated from GYG to GGG (N\u00a0=\u00a053), expressed in HEK293T cells and treated with 50 \u03bcM forskolin and 100 \u03bcM IBMX. (b) Individual cell traces for Venus-cp172Venus FLARE AKAR (GGG mutant). The red curve represents the mean for all the cell traces, with the dotted lines above and below reflecting the standard error of the mean.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** mCherry-mCherry FLARE-AKAR and AKAR4 were co-expressed in HEK293T cells, which were stimulated with 50 \u03bcM forskolin and 100 \u03bcM IBMX at t\u00a0=\u00a00 min (N\u00a0=\u00a074). (a) Average anisotropy traces for mCherry-mCherry FLARE AKAR and average normalized emission ratio traces are shown for AKAR4. The dashed lines above and below the curve represent the standard error of the mean. (b) Nine representative cell traces showing both mCherry-mCherry FLARE AKAR and AKAR4 traces for the above experiment.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp7-v3.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Average anisotropy traces of Venus-cp172Venus FLARE AKAR subcellularly targeted to (a) the plasma membrane with the Lyn-kinase targeting motif (N\u00a0=\u00a077) (b) the mitochondrial membrane with the targeting sequence from DAKAP (N\u00a0=\u00a032), expressed in HEK293T cells stimulated with 50 \u03bcM forskolin and 100 \u03bcM IBMX at t\u00a0=\u00a00 min, and 20 \u03bcM H89 at t\u00a0=\u00a07.5 min. Scale bars are 10 \u03bcm. Dashed lines above and below the curves reflect the standard error of the mean.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig1-figsupp8-v3.jpg)\n\n**Figure 1\u2014figure supplement 8.:** (a)\u00a0Comparison of Venus-cp172Venus FLARE AKAR anisotropy changes in the cytosol and the nucleus in HeLa cells treated with 50 \u03bcM forskolin and 100 \u03bcM IBMX (N\u00a0=\u00a019). Dashed lines above and below the curves reflect the standard error of the mean. (b) Comparison of the time for the anisotropy change to peak or plateau in the cytosol and the nucleus (two-tailed paired T-test, p=0.0295). (c) Comparison of the time for the anisotropy change to reach half of the peak (t1/2) in the cytosol and the nucleus (two-tailed paired T-test, p=0.0065). (d) Comparison of the magnitude of the anisotropy change in the cytosol and the nucleus (two-tailed, paired T-test, p<0.0001). (e) Eight representative anisotropy time traces for individual cells, comparing the cytosolic and nuclear anisotropies.\n\nobservations in hetero-FRET-based biosensors (Nagai et al., 2004; DiPilato and Zhang, 2009; Allen and Zhang, 2006). We observed a slight positive correlation between intensity and anisotropy change for Venus-cp172Venus FLARE AKAR; however, the expression level does not significantly impact the reporting ability of these sensors in general (Figure 1\u2014figure supplement 3a). The signal-to-noise ratio (SNR) of Venus-cp172Venus FLARE-AKAR was calculated to be 32 by dividing the magnitude of the anisotropy change upon maximal PKA stimulation by the standard deviation of the baseline before stimulation.\n\nSubsequent control experiments confirmed that this change in anisotropy is caused by a change in the FRET state due to the conformational change of the sensor upon stimulation of PKA activity. PKA inhibition using 20 \u03bcM H-89 led to an immediate slope change and increase in anisotropy (Figure 1b). On the other hand, a mutant version of the biosensor with a threonine-to-alanine (T-to-A) mutation at the phosphorylation site showed no change in anisotropy upon PKA stimulation with Fsk/IBMX or inhibition with H-89 (Figure 1b, Figure 1\u2014figure supplement 2b), suggesting that the observed changes in anisotropy were due to phosphorylation of the PKA substrate. Furthermore, isoproterenol, a \u03b2-adrenergic agonist, induced FLARE-AKAR responses in a dose-dependent manner (Figure 1\u2014figure supplement 4). To further demonstrate that the change in anisotropy upon PKA stimulation was due to a change in FRET, we mutated the chromophore of the C-terminal cp172Venus in Venus-cp172Venus FLARE AKAR from GYG to GGG. We observed that the magnitude of the response to Fsk/IBMX decreased to approximately one-third of that of the wild-type sensor (Figure 1\u2014figure supplement 5). The remaining response was likely due to intermolecular FRET that occurs when the FHA1 domain of one molecule binds to the phosphorylated PKA substrate in an adjacent molecule.\n\nIn addition to the yellow sensors, we developed a panel of color variants of FLARE-AKAR, including EGFP-EGFP, mCherry-mCherry, mCerulean3-mCerulean3 (Markwardt et al., 2011), and mCerulean3-cp173Cerulean3 versions. All these variants exhibited a decrease in anisotropy in cells treated with Fsk/IBMX; however, the magnitude of the anisotropy decrease depended on the choice of FP, with the mVenus-cp172Venus variant having the largest response (Figure 1c, Figure 1\u2014figure supplement 2). As with the Venus variants, the Cerulean3-based FLARE-AKAR showed an increased dynamic range with a circularly\u00a0permutated fluorescent protein at the C-terminal position. mCherry-mCherry FLARE-AKAR, being spectrally shifted from the AKAR4 heteroFRET sensor allowed for direct comparison of FLARE and heteroFRET sensors within the same cell. As shown in Figure 1\u2014figure supplement 6, changes in anisotropy in mCherry-mCherry FLARE-AKAR corresponded with the changes in normalized emission ratio in AKAR4, with similar kinetics.\n\nWe furthermore demonstrated the ability of FLARE-AKAR sensors to monitor kinase activity at particular subcellular compartments. By fusing Venus-cp172Venus FLARE-AKAR to targeting motifs from Lyn kinase and DAKAP1, we were able to detect PKA activity at the plasma membrane and outer mitochondrial membrane, respectively (Figure 1\u2014figure supplement 7). Moreover, we used untargeted FLARE sensors to detect differential PKA activity dynamics in different compartments; diffusable Venus-cp172Venus FLARE AKAR in HeLa showed that PKA activity has slower kinetics and a lower magnitude in the nucleus than the cytosol (Figure 1\u2014figure supplement 8).\n\nTo demonstrate the generalizability of FLAREs, we developed a family of single-color kinase activity or activation reporters in various colors (Figure 2). To construct a single-color Erk activity biosensor, we replaced the PKA sensor domain from Venus-cp172Venus FLARE-AKAR with the sensor domain from EKAR-EV, composed of a WW domain (PAABD), a flexible EV linker, and an Erk substrate peptide (Figure 2a) (Harvey et al., 2008; Vandame et al., 2014). When expressed in HEK293T cells, Venus-cp172Venus FLARE-EKAR-EV exhibited a decrease in anisotropy of 0.02\u00a0\u00b1\u00a00.001 (N\u00a0=\u00a013) after treatment with 100 ng/mL epidermal growth factor (EGF) to activate the MAPK pathway (Figure 2a, Figure 2\u2014figure supplement 1). This response was reversed upon MEK inhibition using 20 \u03bcM U0126, and no change in anisotropy was observed with a T-to-A mutant sensor. Likewise, we developed a panel of PKC activity reporters, called FLARE-CKARs, by flanking a PKC sensor domain composed of an FHA1 domain and a PKC substrate (Herbst et al., 2011) from a CKAR2 construct (Figure 2\u2014figure supplement 2) with mVenus-cp172Venus. We observed an anisotropy decrease of 0.02\u00a0\u00b1\u00a00.001 (N\u00a0=\u00a026) upon activation of PKC with 100 ng/mL phorbol 12-myristate 13-acetate (PMA) (Figure 2b, Figure 2\u2014figure supplement 3). For both FLARE-EKAR (Figure 2\u2014figure supplement 1) and FLARE CKAR (Figure 2\u2014figure supplement 3), we likewise repeated this process for various color variants, and like the FLARE-AKARs, the sensors based on mVenus exhibited the largest responses. Furthermore, a myosin light chain kinase (MLCK) sensor was converted to a FLARE by exchanging the cyan FP for mVenus (Isotani et al., 2004). Calmodulin (CaM) association with the MLCK-CaM binding domain in between the FPs decreases FRET, leading to an increase in fluorescence anisotropy upon forced calcium (Ca2+) entry with 30 mM KCl (N\u00a0=\u00a013) (Figure 2c, Figure 2\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig2-v3.jpg)\n\n**Figure 2.:** (a)\u00a0Domain structure of FLARE-EKAR-EV (above). Time-course of mean fluorescence anisotropy of Venus-cp172Venus FLARE-EKAR-EV WT (blue, N\u00a0=\u00a013) and kinase-insensitive mutant (red, N\u00a0=\u00a016) expressed in HEK293T cell, with addition of 100 ng/mL EGF at t\u00a0=\u00a00 min and 20 \u03bcM U0126 at t\u00a0=\u00a025 min (left). Summary of anisotropy changes (upper right, two-tailed t-test, p<0.0001), calculated as the difference between the mean anisotropy from t\u00a0=\u00a010 min to t\u00a0=\u00a015 min and the mean anisotropy of the baseline before drug addition. The mean is shown, with the error reflecting the standard error of the mean. Representative anisotropy pseudocolor image before EGF stimulation (t\u00a0=\u00a00 min), after EGF stimulation (t\u00a0=\u00a025 min), and after inhibition of MEK with U0126 (t\u00a0=\u00a047.5 min) (lower right). (b) Domain structure of FLARE-CKAR (above). Time-course of fluorescence anisotropy of Venus-cp172Venus FLARE-CKAR WT (blue, N\u00a0=\u00a026) and kinase-insensitive mutant (red, N\u00a0=\u00a0119) with addition of 100 ng/mL phorbol 12-myristate 13-acetate (PMA) at t\u00a0=\u00a00 min. Summary of response magnitudes (upper right, two-tailed t-test, p<0.0001), calculated as the difference between the mean anisotropy from t\u00a0=\u00a010 to t\u00a0=\u00a011.33 min and the mean anisotropy of the baseline before drug addition. The mean is shown, with the error reflecting the standard error of the mean. Representative anisotropy pseudocolor image before PMA addition (t\u00a0=\u00a00 min) and after PMA addition (t\u00a0=\u00a015 min). (c) Domain structure of FLARE-MLCK (top). Anisotropy time course of a representative REF52 cell expressing YFP-Venus FLARE-MLCK treated with 30 mM KCl at t\u00a0=\u00a00 (N\u00a0=\u00a013, blue), or vehicle control (N\u00a0=\u00a010). Summary of anisotropy changes, calculated as the mean difference between the anisotropy at t\u00a0=\u00a00.333 min and the anisotropy of the baseline, before KCl addition (upper right, two-tailed t-test, p<0.0001). Representative pseudocolor anisotropy images before and after KCl treatment (lower right). Dashed lines above and below time course traces reflect the standard error of the mean. FP, fluorescent protein; CaM BD, MLCK calmodulin-binding domain.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Individual (gray) and average (red) cell traces for Venus-cp172Venus FLARE EKAR (N\u00a0=\u00a013), expressed in HEK293T cells and treated with 100 ng/mL epidermal growth factor (EGF) at t\u00a0=\u00a00 min and the MEK inhibitor U0126 at t\u00a0=\u00a025 min. (b) Individual (gray) and average (red) cell traces for Venus-cp172Venus FLARE EKAR with a threonine-to-alanine (T\u2013to\u2013A) at the phosphorylation site (N\u00a0=\u00a016), expressed in HEK293T cells and treated with 100 ng/mL epidermal growth factor (EGF) at t\u00a0=\u00a00 min and the MEK inhibitor U0126 at t\u00a0=\u00a025 min. (c) A summary of anisotropy changes for various color-variants of FLARE-EKAR, upon stimulation with 100 ng/mL EGF. The magnitude of the signal was calculated by taking the mean anisotropy from t\u00a0=\u00a010 min to t\u00a0=\u00a015 min and subtracting the mean anisotropy of the baseline before drug addition.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Comparison of CKAR1 and CKAR2 domain structures. (b)\u00a0Comparison of FRET responses of CKAR1 and CKAR2 expressed in HeLa cells to Protein Kinase C (PKC) stimulation with 50 ng/mL phorbol 12-myristate 13-acetate (PMA) as well as PKC inhibition with 1 \u03bcM G\u00f66983. Curves here represent mean curves from one representative experiment with biological replicates N\u00a0=\u00a07 for CKAR1 and N\u00a0=\u00a04 for CKAR2; the experiment was repeated three times.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Individual (gray) and average (red) cell traces for Venus-cp172Venus FLARE CKAR (N\u00a0=\u00a026), expressed in HEK293T cells treated with 50 ng/mL PMA at t\u00a0=\u00a00 min. Dotted lines above and below the curves reflect the standard error of the mean. (b) Individual (gray) and average (red) cell traces for the kinase-inactive mutant of Venus-cp172Venus FLARE CKAR (TA mutant) (N\u00a0=\u00a0119), expressed in HEK293T cells treated with 50 ng/mL PMA at t\u00a0=\u00a00 min. (c) A summary of anisotropy changes for various color-variants of FLARE-ICUE in HEK293T cells upon stimulation with 50 ng/mL PMA. The magnitude of the signal was calculated by taking the mean anisotropy from t\u00a0=\u00a010 min to t\u00a0=\u00a011.33 min and subtracting the mean anisotropy of the baseline before drug addition.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Individual (gray) and average (red) cell traces for FLARE\u00a0MLCK (N\u00a0=\u00a013) with KCl added at t\u00a0=\u00a00 min (N\u00a0=\u00a013). (b) Individual (gray) and average (red) cell traces for FLARE-MLCK with vehicle only added at t\u00a0=\u00a00 min (N\u00a0=\u00a010). The dashed lines above and below the red curve reflect the standard error of the mean. The magnitude of the signal was calculated by taking the \u0394anisotropy at t\u00a0=\u00a00.33 min and subtracting the mean \u0394anisotropy of the baseline before drug addition.\n\nIn addition to biosensors for monitoring enzymes, we also developed FLAREs for monitoring second messenger dynamics (Figure 3a). We developed a Ca2+ FLARE by utilizing the sensor domain from the Cameleon family of biosensors, composed of CaM and the Ca2+/CaM-binding peptide M13 (Nagai et al., 2004;\u00a0Miyawaki et al., 1999). When expressed in HEK293T cells, Venus-cp172Venus FLARE-Cameleon exhibited a decrease in anisotropy of 0.03\u00a0\u00b1\u00a00.002 (N\u00a0=\u00a010) upon addition of 1 \u03bcM ionomycin and 5 mM CaCl2, with the Venus-Venus, mCerulean3-mCerulean3, and mCherry-mCherry versions also showing detectable responses (Figure 3b, Figure 3\u2014figure supplement 1a,b). The mVenus-based FLARE sensors tend to show larger dynamic ranges for a variety of\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig3-v3.jpg)\n\n**Figure 3.:** (a)\u00a0Schematic of FLARE ICUE cAMP biosensor. (b) Domain structure of FLARE-Cameleon (top). Time-course of mean fluorescence anisotropy of Venus-cp172Venus FLARE-Cameleon (N\u00a0=\u00a010) with addition of 1 \u03bcM ionomycin and 5 mM CaCl2. Summary of anisotropy changes after 1 \u03bcM ionomycin and 5 mM CaCl2 (upper right) calculated as the difference between the mean anisotropy from t\u00a0=\u00a05 min to t\u00a0=\u00a07.5 min and the anisotropy of the baseline before drug addition Representative anisotropy pseudocolor image before and after 1 \u03bcM ionomycin and 5 mM CaCl2 addition. (c) Domain structure of the cAMP biosensor FLARE-ICUE (top). Time-course of mean fluorescence anisotropy of Venus-cp172Venus FLARE-ICUE (N\u00a0=\u00a040) with addition of 50 \u03bcM forskolin and 100 \u03bcM IBMX at t\u00a0=\u00a00 (left). Summary of anisotropy changes after 50 \u03bcM forskolin and 100 \u03bcM IBMX with respect to baseline (upper right), calculated as the difference between the mean anisotropy from t\u00a0=\u00a05 min to t\u00a0=\u00a07.5 min and the anisotropy of the baseline before drug addition. Representative anisotropy pseudocolor image before (t\u00a0=\u00a00 min) and after (t\u00a0=\u00a07.5) stimulation with Fsk/IBMX (lower right). Dashed lines above and below time course reflect standard error of the mean.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Individual (gray) and average (red) cell traces for Venus-cp172 FLARE Cameleon (N\u00a0=\u00a010). (b) A summary of anisotropy changes for various color-variants of FLARE-Cameleon in HEK293T cells upon stimulation with 1 \u03bcM ionomycin and 5 mM calcium chloride. The mean for each is shown, with the error reflecting the standard error of the mean. The magnitude of the signal was calculated by taking the mean anisotropy from t\u00a0=\u00a05 min and t\u00a0=\u00a07.5 min and subtracting the mean anisotropy of the baseline before drug addition. (c) Average anisotropy trace for Venus-cp172Venus FLARE-Cameleon expressed in HeLa cells upon stimulation with histamine (100 \u03bcM). Dotted lines above and below the curves reflect the standard error of the mean.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Anisotropy vs. calcium concentration calibration curves of purified Venus-cp172Venus Cameleon for (a) 25\u00b0C (b) 32\u00b0C, and (c) 37\u00b0C.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Schematic of the ER calcium sensor. (b) REF52 cells expressing CFP FLARE D1ER were permeabilized using 5 \u03bcM ionomycin and equilibrated with 3 mM EGTA to remove Ca2+ or the indicated Ca2+ concentration. Fluorescence anisotropy values were normalized to the Ca2+-free condition. Statistical significance was assessed using an ANOVA and Tukey Multiple comparison test (***p<0.001, ****p\u22640.0001). (c) REF52 cells expressing CFP FLARE D1ER were treated with thapsigargin (1 uM, 5 min), to reduce ER Ca2+ levels (N\u00a0=\u00a08, **p<0.01 by t-test). The mean for each of the above is shown, with the error reflecting the standard error of the mean.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (a) Individual (gray) and average (red) cell traces for Venus-cp172Venus FLARE-ICUE (N\u00a0=\u00a040). Dashed lines above and below the average curve reflect the standard error of the mean.\n\nFLARE sensors than mCerulean3 or mCherry variants, likely due to the superior extinction coefficient and quantum yield of mVenus, which make it a good FRET donor and acceptor. We further demonstrated the ability of Venus-cp172Venus FLARE Cameleon to detect submaximal responses by monitoring calcium transients in histamine-stimulated HeLa cells (Figure 3\u2014figure supplement 1c). In order to determine the dissociation constant and Hill coefficients, we purified Venus-cp172Venus Cameleon and measured the fluorescence anisotropy in solutions of known free Ca2+ concentration at different temperatures (Figure 3\u2014figure supplement 2). The resulting parameters are in good agreement with other Cameleon sensors (Nagai et al., 2004). Furthermore, we developed another calcium FLARE sensor, based on D1-ER (Palmer et al., 2004), with a sensitivity appropriate for calcium monitoring in the ER. The anisotropy decreases upon increasing calcium concentration and increases when calcium is depleted from the ER upon treatment with thapsigargin (Figure 3\u2014figure supplement 3). In addition to Ca2+, we developed a FLARE to detect intracellular cAMP based on the ICUE family of sensors, in which a conformational change in a truncated form of\u00a0the cAMP effector Epac leads to a decrease in FRET efficiency in the presence of cAMP (DiPilato and Zhang, 2009) (Figure 3a). When expressed in HEK293T cells, the fluorescence anisotropy of Venus-cp172Venus FLARE-ICUE increased by 0.02\u00a0\u00b1\u00a00.001 (N\u00a0=\u00a040) upon stimulation with Fsk/IBMX (Figure 3c, Figure 3\u2014figure supplement 4).\n\nThe fact that FLAREs only occupy a single-color channel and are highly generalizable for different biosensors, as well as color variants, highlights their utility for multiplexed imaging applications. While multiplexing of hetero-FRET sensors is generally limited to two probes (Depry et al., 2013; Shcherbakova et al., 2012), we demonstrate that FLAREs can facilitate co-imaging of three biosensors simultaneously. We co-expressed mCherry-mCherry FLARE-AKAR, Venus-cpVenus FLARE-EKAR-EV, and mCerulean3-mCerulean3 FLARE-Cameleon in HEK293T cells and acquired a time-course with sequential treatment using Fsk/IBMX, EGF, and thapsigargin. Clear and distinct decreases in\u00a0anisotropy were observed in the red channel after Fsk/IBMX treatment, in the yellow channel after EGF stimulation, and in the cyan channel after thapsigargin treatment, corresponding to an increase in PKA activity, Erk activity, and intracellular Ca2+, respectively (N\u00a0=\u00a017) (Figure 4a, Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig4-v3.jpg)\n\n**Figure 4.:** (a)\u00a0Time-course of a representative HEK293T cell co-expressing mCherry-mCherry FLARE-AKAR, mVenus-cp172Venus FLARE-EKAR-EV, and mCerulean3-mCerulean3 FLARE-Cameleon, with 50 \u03bcM forskolin\u00a0and\u00a0100 \u03bcM IBMX added at t\u00a0=\u00a00 min, 100 ng/mL EGF at t\u00a0=\u00a07.5 min, and 1 \u03bcM thapsigargin added at t\u00a0=\u00a032.5 min (N\u00a0=\u00a017). (b) Anisotropy response of a representative MIN6 cell co-expressing Cerulean3-Cerulean3 FLARE-Cameleon and Venus-cp172Venus FLARE-ICUE, showing robust oscillations after stimulation with TEA at t\u00a0=\u00a00 min (N\u00a0=\u00a019). (c) Venus-cp172Venus FLARE-Cameleon anisotropy time-course in REF52 cells co-expressing the sensor and either mCherry-tagged humanized channel rhodopsin2 (blue-curve) or mCherry alone (red-curve), with periodic illumination with 455 nm light (indicated by cyan shading). (d) Purified mVenus and mCherry proteins were placed in separate capillary tubes and imaged with 855 nm and 1200 nm two-photon excitation. Plasmids encoding Venus-cp172Venus FLARE-Cameleon and mCherry-mCherry FLARE-AKAR were electroporated into the skeletal muscle of the foot of a live mouse for in vivo imaging. Below are Z-stack projections of skeletal muscle co-expressing these two sensors, excited with 855 nm (left) and 1200 nm (right) light. (e) Electrical stimulation decreased fluorescence anisotropy in the 855 nm channel, consistent with increased cytoplasmic Ca2+ (left) (two-tailed T-test, p=0.0037). Intraperitoneal injection of isoproterenol activates mCherry-mCherry FLARE AKAR (two-tailed T-test, p=0.0239), as indicated by decreased anisotropy in the 1200 nm channel (right). The mean for each is shown, with the error reflecting the standard error of the mean.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a)\u00a0Average cell traces for mCherry-mCherry FLARE-AKAR, Venus-cp172Venus FLARE-EKAR, and mCer3-mCer3 FLARE Cameleon, expressed in HEK293T cells, and stimulated with 50 \u03bcM forskolin and 100 \u03bcM IBMX at t\u00a0=\u00a00 min, 100 ng/mL EGF at t\u00a0=\u00a07.5 min, and 1 \u03bcM thapsigargin at t\u00a0=\u00a032.5 min. (Dashed lines reflect the standard error of the mean). (b) Single-cell anisotropy traces for above experiment.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a)\u00a0Average cell traces for mCherry-mCherry FLARE-AKAR, Venus-cp172Venus FLARE-EKAR, and mCer3-mCer3 FLARE Cameleon, expressed in HeLa cells, and stimulated with 50 \u03bcM forskolin and 100 \u03bcM IBMX at t\u00a0=\u00a00 min, 100 ng/mL EGF at t\u00a0=\u00a07.5 min, and 100 \u03bcM histamine at t\u00a0=\u00a032.5 min (N\u00a0=\u00a011). (Dashed lines reflect the standard error of the mean). In the cyan channel, transient decreases in anisotropy can be observed both after both EGF and histamine stimulation. (b) Representative cell anisotropy traces for above experiment.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a)\u00a0Average cell traces for mCerulean3-mCerulean3 FLARE-AKAR, and mVenus-cp172Venus FLARE Cameleon, expressed in HEK293T cells, and stimulated with 100 nM isoproterenol at t\u00a0=\u00a00 min and 1 \u03bcM thapsigargin at t\u00a0=\u00a040 min (N\u00a0=\u00a028).\u00a0Dashed lines reflect the standard error of the mean. (b). Representative cell anisotropy traces for above experiment.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Additional cell traces for mCer3-mCer3 FLARE-Cameleon and Venus-cp172Venus ICUE, coexpressed in MIN6 cells, showing out of phase oscillations upon stimulation with TEA (N\u00a0=\u00a019).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35458/elife-35458-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Dashed lines reflect the standard error of the mean.\n\nWe further aimed to show that FLARE sensors can be used to monitor multiple signaling activities simultaneously in different cellular contexts. For example, mCer3-mCer3 FLARE Cameleon, co-imaged with other FLARE sensors in HeLa cells, can detect calcium responses to physiologically relevant stimulation conditions, such as histamine (Figure 4\u2014figure supplement 2). Additionally, when mCer3-mCer3 FLARE AKAR was co-imaged with Venus-cp172Venus cameleon in HEK293T cells, activation of the \u03b2-adrenergic with isoproterenol led to a transient decrease in anisotropy in the cyan-channel (Figure 4\u2014figure supplement 3). Furthermore, we used FLAREs to study the cAMP-Ca2+ oscillatory circuit in pancreatic \u03b2-cells. MIN6 \u03b2-cells were transiently transfected with Venus-cp172Venus FLARE-ICUE and mCerulean3-mCerulean3 FLARE-Cameleon to simultaneously monitor cAMP and Ca2+ \ufeffdynamics, respectively (N\u00a0=\u00a019). We observed clear fluorescence anisotropy oscillations in both channels following stimulation with 20 mM tetraethylammonium chloride (TEA) (Figure 4b, Figure 4\u2014figure supplement 4). Ca2+ and cAMP exhibit synchronized oscillations, with Ca2+ increases corresponding to cAMP decreases, consistent with previous findings (Landa et al., 2005; Ni et al., 2011). These data demonstrate that even the lower\u00a0signal mCerulean3-based FLARE sensors can be used under sub-maximal and physiologically relevant stimulation conditions in multiplexed imaging experiments.\n\nIn addition to multiplexed biosensor imaging, the fact that FLARE sensors occupy only a single color channel also permits simultaneously perturbing and monitoring biochemical activities using optogenetics and FLAREs, respectively. We coexpressed an mCherry-tagged,\n\nER-targeted channelrhodopsin2 (hChR2) (Nagel et al., 2003; Lin et al., 2009; Markwardt et al., 2016), a light-gated calcium ion channel, with Venus-cp172 FLARE-Cameleon in REF52 cells, a rat embryonic fibroblast cell line. Illumination with blue light produced an immediate decrease in anisotropy, corresponding to an increase in intracellular Ca2+ (Figure 4c, Figure 4\u2014figure supplement 5). Control cells lacking hChR2 expression showed no change in anisotropy in the yellow channel.\n\nIn vivo, two-photon imaging of FLAREs was tested using a skeletal muscle preparation (Figure 4d,e). Exclusive excitation of mVenus (855 nm) or mCherry (1200 nm) was verified by imaging capillary tubes filled with recombinant proteins (Figure 4d). Plasmids encoding Venus-cp172Venus FLARE-Cameleon and mCherry FLARE-AKAR sensors were electroporated into the flexor digitorum brevis muscle of a live mouse (DiFranco et al., 2009; Kerr et al., 2015). Administration of an electrical current stimulated a rise in intracellular Ca2+ concentration, as indicated by a decrease in FLARE-Cameleon anisotropy, independent of changes in FLARE-AKAR anisotropy (Figure 4e). Activation of AKAR was then induced by intraperitoneal injection of isoproterenol (0.5 mg/kg). Thus, FLAREs enable in vivo multiparametric biosensor measurements.\n\nWe have demonstrated that FLAREs are a highly generalizable, accessible platform for creating single-color sensors to detect biochemical activities in individual cells in real time. Their ratiometric readout allows for fluctuations in light intensity and probe concentration to be cancelled out, permitting quantitative measurements of intracellular concentrations. We showed that these sensors have an SNR of 3\u201332 (Table 1) and a dynamic range comparable with first-generation FRET sensors (Newman and Zhang, 2008; Zhou et al., 2015). Future development and optimization should further enhance their performance. We demonstrated that current FLAREs are already useful for multiplexed imaging applications. They can also be used in conjunction with optogenetic tools to enable all-optical interrogation of cellular regulation, and for intravital two-photon imaging to facilitate studies in tissues and living animals. FLAREs, by allowing researchers to monitor multiple activities within the same cell, as well as to both monitor and optogenetically perturb activities in the same cell, could be used to study the how the spatiotemporal regulation of biochemical activities in highly integrated pathways allows a small number of signals to produce diverse cellular behaviors.\n\n**Table 1.**\n Signal to noise ratios for FLARE biosensors.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sensor</th>\n      <th>Signal to noise ratio (\u00b1\u00a0SEM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Venus-cp172Venus FLARE AKAR</td>\n      <td>32\u00a0\u00b1\u00a02.0 (N\u00a0=\u00a032)</td>\n    </tr>\n    <tr>\n      <td>mVenus-mVenus FLARE AKAR</td>\n      <td>10\u00a0\u00b1\u00a01.6 (N\u00a0=\u00a032)</td>\n    </tr>\n    <tr>\n      <td>EGFP-EGFP FLARE AKAR</td>\n      <td>6\u00a0\u00b1\u00a00.6 (N\u00a0=\u00a032)</td>\n    </tr>\n    <tr>\n      <td>mCherry-mCherry FLARE AKAR</td>\n      <td>14\u00a0\u00b1\u00a01.5 (N\u00a0=\u00a022)</td>\n    </tr>\n    <tr>\n      <td>mCerulean3-mCerulean3\u00a0FLARE AKAR</td>\n      <td>3\u00a0\u00b1\u00a00.5 (N\u00a0=\u00a010)</td>\n    </tr>\n    <tr>\n      <td>mCerulean3-cp173 Cerulean3 FLARE AKAR</td>\n      <td>5\u00a0\u00b1\u00a00.3 (N\u00a0=\u00a026)</td>\n    </tr>\n    <tr>\n      <td>Venus-cp172Venus FLARE EKAR</td>\n      <td>17\u00a0\u00b1\u00a03.1 (N\u00a0=\u00a08)</td>\n    </tr>\n    <tr>\n      <td>mCherry-mCherry FLARE EKAR</td>\n      <td>4\u00a0\u00b1\u00a00.8 (N\u00a0=\u00a010)</td>\n    </tr>\n    <tr>\n      <td>mCerulean3-mCerulean3 FLARE EKAR</td>\n      <td>9\u00a0\u00b1\u00a02.3 (N\u00a0=\u00a09)</td>\n    </tr>\n    <tr>\n      <td>Venus-cp172Venus FLARE CKAR</td>\n      <td>27\u00a0\u00b1\u00a03.3 (N\u00a0=\u00a026)</td>\n    </tr>\n    <tr>\n      <td>mCherry-mCherry FLARE CKAR</td>\n      <td>14\u00a0\u00b1\u00a03.0 (N\u00a0=\u00a08)</td>\n    </tr>\n    <tr>\n      <td>mCerulean3-mCerulean3 FLARE CKAR</td>\n      <td>9\u00a0\u00b1\u00a01.7 (N\u00a0=\u00a06)</td>\n    </tr>\n    <tr>\n      <td>FLARE-MLCK</td>\n      <td>8\u00a0\u00b1\u00a00.8 (N\u00a0=\u00a013)</td>\n    </tr>\n    <tr>\n      <td>Venus-cp172Venus FLARE Cameleon</td>\n      <td>19\u00a0\u00b1\u00a04.8 (N\u00a0=\u00a010)</td>\n    </tr>\n    <tr>\n      <td>mCherry-mCherry FLARE Cameleon</td>\n      <td>5\u00a0\u00b1\u00a00.8 (N\u00a0=\u00a023)</td>\n    </tr>\n    <tr>\n      <td>mCerulean3-mCerulean3 FLARE Cameleon</td>\n      <td>9\u00a0\u00b1\u00a01.5 (N\u00a0=\u00a011)</td>\n    </tr>\n    <tr>\n      <td>Venus-cp172 Venus FLARE ICUE</td>\n      <td>19\u00a0\u00b1\u00a01.2 (N\u00a0=\u00a040)</td>\n    </tr>\n  </tbody>\n</table>\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell Line (Homo sapiens)</td>\n      <td>HEK293-T</td>\n      <td></td>\n      <td>RRID:CVCL_0063</td>\n    </tr>\n    <tr>\n      <td>Cell Line (Homo sapiens)</td>\n      <td>HeLa</td>\n      <td></td>\n      <td>RRID:CVCL_0030</td>\n    </tr>\n    <tr>\n      <td>Cell Line (Mus musculus)</td>\n      <td>Min6</td>\n      <td></td>\n      <td>RRID:CVCL_0431</td>\n    </tr>\n    <tr>\n      <td>Cell Line (Rattus norvegicus)</td>\n      <td>REF-52</td>\n      <td></td>\n      <td>RRID:CVCL_6848</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Forskolin</td>\n      <td>LC Laboratories</td>\n      <td>F9929</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>3-Isobutyl-1-methylxanthine (IBMX)</td>\n      <td>Sigma</td>\n      <td>I5879</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>H-89</td>\n      <td>LC Laboratories</td>\n      <td>H5239</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Epidermal Growth Factor (EGF)</td>\n      <td>Sigma</td>\n      <td>E9644</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>U0126</td>\n      <td>Sigma</td>\n      <td>U120</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Phorbol 12-Myristate 13-Acetate (PMA)</td>\n      <td>LC Laboratories</td>\n      <td>P-1680</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>Tetraethylammonium chloride (TEA)</td>\n      <td>Sigma</td>\n      <td>T2265</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>ionomycin</td>\n      <td>EMD Millipore</td>\n      <td>407951</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>thapsigargin</td>\n      <td>Cayman Chemical</td>\n      <td>10522</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, Drug</td>\n      <td>histamine</td>\n      <td>Sigma</td>\n      <td>H7250</td>\n    </tr>\n    <tr>\n      <td>Commerical Kit</td>\n      <td>Lipofectamine-2000</td>\n      <td>Invitrogen</td>\n      <td>11668019</td>\n    </tr>\n    <tr>\n      <td>Commerical Kit</td>\n      <td>Polyjet</td>\n      <td>SignaGen</td>\n      <td>SL100688</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pCDNA3 AKAR4</td>\n      <td>PMID: 20838685</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pCDNA3 EKAR-EV</td>\n      <td>PMID: 21976697</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pCDNA3 CKAR1</td>\n      <td>PMID: 12782683</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>FRET MLCK sensor</td>\n      <td>PMID: 15071183</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pCDNA3 YC3.6 Cameleon</td>\n      <td>PMID: 10051607</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA Reagent</td>\n      <td>pCDNA3 ICUE3</td>\n      <td>PMID: 19603118</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Escherichia coli)</td>\n      <td>BL-21 Codon Optimized Plus</td>\n      <td>New England Biolabs</td>\n      <td>C2527</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>FIJI</td>\n      <td></td>\n      <td>RRID:SCR_014294</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>MetaFluor</td>\n      <td></td>\n      <td>RRID:SCR_002285</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Micromanager</td>\n      <td></td>\n      <td>RRID:SCR_000415</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Zeiss Actiovision</td>\n      <td></td>\n      <td>RRID:SCR_002677</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>MATLAB</td>\n      <td></td>\n      <td>RRID:SCR_001622</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>GraphPad Prism</td>\n      <td></td>\n      <td>RRID:SCR_002798</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid and construct construction\n\nCloning was performed using the pRSET-B vector using typical molecular cloning methods using polymerase chain reaction (PCR) with Phusion polymerase (New England Biolabs), restriction enzyme digestion, and ligation with T4 DNA ligase. To clone Venus-cp172Venus FLARE, AKAR4 was sub-cloned from a modified pCDNA3 to pRSET-B between the BamHI and EcoRI restriction enzyme sites. mVenus was then PCR amplified with primers encoding a BamHI site at the 5\u2019 end and an SphI site at the 3\u2019 end, and the resulting PCR product was digested with BamHI and SphI and ligated to pRSET-B AKAR4 digested with BamHI and SphI, with the mCerulean gene removed. Venus-cp172Venus FLARE AKAR was then sub-cloned back into a modified pCDNA3 vector using the BamHI and EcoRI sites. Other color variants were created by replacing the genes for the fluorescent proteins in other FLARE AKAR variants in pRSET-B, either between the BamHI and SphI sites for the N-terminal fluorescent protein, or SacI and EcoRI for C-terminal fluorescent proteins. Finalized constructs intended for mammalian expression were then sub-cloned into a modified pcDNA3 expression vector between the BamHI and EcoRI sites. FLARE variants of other sensors were created by amplifying the molecular switch from EKAR-EV, CKAR2, Cameleon and ICUE3 with primers encoding the SphI and SacI sites, digesting the PCR product with SphI and SacI enzymes, and ligating them to the relevant pRSET-B FLARE AKAR plasmid digested with SphI and SacI to remove the domains involved in the molecular switch for FLARE AKAR. The final constructs were then subcloned into a modified pCDNA3 expression vector between the BamHI and EcoRI sites. Targeted versions of the sensors were created either by PCR amplifying the sensor with primers containing the targeting sequence and ligating it to the pCDNA3 expression vector between BamHI and EcoRI, or by subcloning the construct into a plasmid already containing the targeting sequence. N-terminal targeting sequences were placed between HindIII and EcoRI, and C-terminal targeting sequences between EcoRI and XbaI. All cloning steps were performed using DH5\u03b1 strain of E. coli.\n\nThe threonine to alanine mutants for Venus-cp172Venus FLARE AKAR and FLARE EKAR were created by performing site-directed mutagenesis using a standard single-primer PCR-based protocol. The threonine to alanine mutant for Venus-cp172Venus FLARE CKAR, as well as the chromophore-dead variant of Venus-cp172Venus FLARE AKAR, was created using Gibson assembly, amplifying the appropriate fragment with a primer containing the desired mutation.\n\nThe YFP MLCK FLARE sensor was created by replacing the CFP portion of an existing two color sensor (Isotani et al., 2004; Geguchadze et al., 2004) with a PCR amplified mVenus fragment flanked by XhoI and AgeI restriction sites. Moreover, the coding sequence for the CFP D1 ER sequence was manufactured by Genewiz. The sensor consists of two oxmCer3 proteins (https://www.ncbi.nlm.nih.gov/pubmed/26158227) flanking the D1 ER calcium sensing domains (Palmer et al., 2004) and a C-terminal KDEL ER retention sequence.\n\n### Cell culture and transfection\n\nHEK293T and HeLa cells cells were maintained using Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 1% penicillin/streptomycin. Cells were seeded onto a 35-mm glass-bottom imaging dish and incubated at 37\u00b0C with 5% ambient carbon dioxide. HEK293T, HeLa, MIN6, and REF-52 cell lines were maintained separately from other cells and were screened regularly to confirm the absence of mycoplasma contamination using Hoechst staining. As the origin of the cells was not central to the nature of these experiments, we did not further validate the identity of the cell lines. Cells were transfected using Lipofectamine 2000 (Invitrogen), Polyjet (SignaGen), or calcium phosphate and incubated for 12\u201348 hr before imaging. The growth media was removed immediately before imaging, and the cells were washed two or more times with Hanks Balanced Salt Solution (HBSS) buffer with glucose at room temperature. The cells were imaged in HBSS buffer with glucose at either room temperature or 37\u00b0C.\n\n### Fluorescence polarization microscopy\n\nFluorescence anisotropy reporter co-imaging is described in more detail in Bio-protocol (Ross et al., 2019).\u00a0Widefield images were collected using an Zeiss AxioObserver equipped for fluorescence polarization microscopy, using one of two setups. In the first setup, a wire grid polarizer (Meadowlark Optics) was placed in the excitation pathway between the LED illuminators and reflector turret containing filter cubes specific for CFP (Zeiss), YFP (Zeiss), and mCherry (Semrock). Images were generally collected using a 20\u00a0\u00d7\u00a00.75 NA objective lens. Polarizations parallel and perpendicular to the excitation polarizations were separated using Optical Insights Dual-View using their polarization splitting module. Both images were simultaneously collected in a single image collected by a water-cooled Orca-R2 (Hamamatsu). In the second setup, a polarizer (Chroma) was placed in the excitation pathway between the xenon arclamp and the excitation filters. Images were collected using a 20\u00a0\u00d7\u00a00.45 NA objective lens. Polarizations were separated using an Opto-Split II LS image splitter, with two wire grid polarizers (Meadowlark) oriented parallel and perpendicular to the excitation polarizer. Images of both polarizations were collected using a Hamamatsu Flash 4.0 sCMOS camera. Two-photon imaging was performed using a Zeiss 7 MP with GaAsP non-descanned detectors housed at the University of Maryland School of Medicine confocal facility. Coherent Chameleon and OPO lasers were used for excitation. Fluorescence was filtered using an ET680 short pass filter for two-photon microscopy (Chroma) prior to separating polarizations with a one inch broadband polarizing beamsplitter cube (Thorlabs) mounted using a custom 3D printed cube. Images were collected using a 10\u00d7, 0.3 NA Plan-apochromat objective lens. In vivo imaging was performed on C57Bl/6 mice under isoflurane anesthesia.\n\n### Image analysis\n\nImage analysis was performed using Fiji (ImageJ) open-source image processing software. Polarization images were cropped and aligned using either the Zeiss Axiovision software or Fiji\u2019s built-in StackReg registration plugin. In Fiji, regions of interest (ROIs) were drawn around each cell, as well as one in the background. ROI intensities were background subtracted in each channel to estimate fluorescence emission intensity, and anisotropy was calculated as described by Lakowicz (2010). Anisotropies were calculated using the conventional equation (Geguchadze et al., 2004):\n\n$$\nr=\\frac{P-gS}{P+2gS}\n$$\n\nwhere g is the correction factor that accounts for differences in polarization transmission efficiencies within the instrument. The g-factor was calculated using an isotropic fluorescein solution as described by Piston and Rizzo (2008). Anisotropy was calculated by subtracting the anisotropy at each time point by the anisotropy at the time point right before drug addition. The magnitude of the anisotropy changes were calculated by taking the difference between the average anisotropy when the signal peaked or plateaued and the average anisotropy of the baseline time points before drug was added.\n\n### Protein purification\n\nPurification of the FLARE-Cameleon sensors was done using the BL21-RIL Codon Plus strain of E. coli, which were transformed with the construct cloned in the pRSET-B vector, with a Poly-His tag in the header sequence to allow for metal ion binding. The cells were grown to an OD of 0.2, when expression was induced with IPTG and allowed to grow overnight. The cells were then pelleted, frozen, resuspended, and lysed by sonication. Protein purification was performed using column chromatography with Ni-NTA resin. Fractions were collected and analyzed using SDS-PAGE; fractions showing sufficiently pure protein product were pooled.\n\n### In vitro calcium calibration\n\nIn vitro calibration of the FLARE-Cameleon sensor was performed using fluorescence anisotropy spectroscopy in solutions with varying concentrations of free calcium in a temperature-controlled environment. These solutions were made by titrating known concentrations of free EGTA and calcium-saturated EGTA at pH 7.1 (Calcium Concentration Kit #1--Thermo Scientific). The fluorescence anisotropy was measured using a Photon Technology International QuantaMaster spectrofluorometer equipped with a Xenon flash lamp, fluorescence polarizers, and a Peltier cuvette holder for temperature control. Anisotropies were calculated using integrated intensities of S- and P-polarized emission spectra. The correction factor G was measured by measuring the P- and S-polarized emission spectra of fluorescein, which is assumed to be isotropic, and taking the ratio of their measured integrated fluorescence intensities. To determine the dissociation constant (Kd) and Hill coefficient (n), the anisotropy vs. calcium concentration data were fit to the following equation:\n\n$$\nr=r_{min}+(r_{max}\u2212r_{min})\u2217(\\frac{[Ca^{2+}]}{K_{d}+[Ca^{2+}]})^{n}\n$$\n",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "19e5e1bd-7424-4777-aed0-273fc4fce729",
+      "submission_id": "dd96e4c5-133e-477b-9c8d-0f91add2b603",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35458.sa1](https://doi.org/10.7554/eLife.35458.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"FLAREs: Single-color, ratiometric biosensors for detecting signaling activities\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\n- The concept is novel and the work is potentially a strong candidate for eLife. Observation of three different signaling events in parallel is important. However, a reviewer mentioned during the post-review discussion that three reporters in parallel is not by itself new.\n\n- Testing was only done under signal optimal conditions. Example seems cherrypicked.\n\n- Unclear how \"usable\" the technology will be. A more thorough characterization and comparison to current technology is needed.\n\n- The MAPK sensor clearly should behave differently. The other sensors are also not well characterized.\n\n- Cell population behaviors can be shown (e.g. multiple cell trajectories, average, stdev,.\u2026). This would allow to get from anecdotal results to a real understanding of the robustness of the cell responses and biosensors.\n\nThe reviewers were generally positive about the approach but suggest a number of new experiments to validate the method and demonstrate the usability, and to characterize the reporters in more depth. Although I suspect not all the experiments are necessary to address their comments adequately.eLife. If a new manuscript is submitted that addresses the point in the future, we will be happy to consult the same reviewers.\n\nReviewer #1:\n\nThe authors re-engineer a number of classic FRET-based biosensors (PKA, ERK, PKC, MLCK, calcium, cAMP) biosensors using single color FPs that perform homo FRET, and that can be measured using fluorescence anisotropy measurements. Since each biosensor is based on only one color, this allows for multiplexed biosensor measurements in single living cells. It also allows to perform biosensor measurements in response to optogenetic activation. Finally, the authors perform some in vivo fluorescence anisotropy measurements using 2-photon microscopy.\n\nThe data somehow implies that a combination of mVenus and a cp mutant of Venus cp172-mVenus is the best pair for performing such anisoptropy measurements. It looks like that other pairs involving other color FPs perform much poorly. The authors propose that this can be a generalizable method to perform multiplexed imaging of multiple signaling activities in single living cells. While I like the concept, I think that the method might not be so easy to implement than as proposed. Multiplexed imaging has been performed using experiments that induce very robust signaling states. The poorest performing FP combination has been grafted on a calcium sensor that is known to be one of the most robust signaling modules available. The question is therefore if the approach has the full potential that the authors propose. This detracts my enthusiasm for the manuscript, and I do not think it is publishable in the present form.\n\nAdditional comments:\n\n1) Throughout the paper, the authors analyse multiple cells for each respective experiment. Could the authors please show a representation of all of these curves with median, stdev, and accompanying statistics. That would really help the reader to get a sense of the robustness of the biosensor responses.\n\n2) It would be helpful if the authors would calculate the SNR for all the biosensors, as they have performed for their AKAR-FLARE sensor. With 1. This would again give an idea about the robustness of the sensor.\n\n3) The FLARE-EKAR EV sensor in Figure 2A displays sustained ERK activity in response to EGF stimulation, and is then switched off using a MEK inhibitor. This is contrary to another EKAR variant, EKAR2G, that displays a very transient ERK activity in the same HEK293T cells (PMID:23882122). Importantly, this is backed up with a phosphoERK western blot in this paper. What happens with this FLARE EKAR-EV version. Do the new FPs somehow influence the biosensor response, or is this due to the specific HEK293T cells/ experimental conditions used by the authors?\n\n4) Figure 4A: from 9 cells, the authors imply that there are two dynamic signaling states in that experiment. I think that if they want to make a statement about something like this, they need to acquire much more cells, and avoid showing anecdotal data.\n\n5) I think that one of the weaknesses of the paper is that they remain elusive about the microscopy setup, and the image analysis of the datasets. Obviously, all this information is published elsewhere. But this being a technology resource paper, I think that it would really make sense to discuss this in detail both of these aspects to make the reader more familiar with this imaging technology.\n\nReviewer #2:\n\nThe study of molecular dynamics in single cells has revealed unexpected complexity, only tractable by multiplexing molecular biosensors. Ross, et al. explore the use of fluorescence anisotropy to measure conformational changes in genetically encoded biosensors using a single color per sensor. The authors successfully use ratiometric measurements of polarized fluorescence to enable quantification of previously described FRET reporters. This is a very exciting idea as it could substantially increase multiplexing capabilities in single cells. The authors validate the use of FLAREs in a variety of individual sensors, multiplexed with optogenetic tools and in vivo. Although I find the concept and validation of great interest, the characterization of intramolecular fluorescence anisotropy and comparison to current methods is limited.\n\n1) The authors should explore the use of fluorescence anisotropy to measure subcellular changes in activity. One of the advantages of FRET sensors is the ability to measure spatially restricted changes in protein activity (within cell compartments), however, the paper does not address whether local activities can be monitored also by fluorescence anisotropy. In fact, given the single color nature of FLAREs, single cell comparisons of FRET vs FLARE should be possible and helpful to define how these technologies compare quantitatively.\n\n2) The novelty of this study relies on the use of intramolecular fluorescence anisotropy to measure conformational changes. However, the relationship between intramolecular distance (or orientation) and anisotropy is not explored. These experiments could be done by using linkers of different lengths or known proteins with different structures. In my opinion, a more thorough characterization of the parameters that affect intramolecular anisotropy is needed to understand the full spectrum of limitations and possibilities of this method.\n\n3) The authors find that a circularly permutated Venus together with wt Venus is better at changing anisotropy, but then, the comparison to other FPs is done without any circular permutation. It is not clear, from the manuscript, what are the reasons for such comparison. If circular permutation affects anisotropy, other FPs should also be permuted.\n\n4) Most experiments to test the reporting abilities of the sensor are done under chemical perturbation with chemicals that create non physiological states (i.e. Fsk, Ionomycin, PMA). To determine whether the reporting range of the sensor is appropriate for \"real\" conditions, a dose-response under physiological stimulation compared to other sensors should be done.\n\n5) The choice of fluorescent proteins in the dual sensor experiment provided in Figure 4B is unfortunate. Venus and Cerulean3 are a FRET pair. This could be confusing the interpretation of the results. Using the Cherry version in one of the two sensors would be a more appropriate choice.\n\nOverall, this study offers a novel strategy to enhance multiplexing capabilities when measuring single cell dynamics. Although the authors show multiple proof-of-principle experiments, the quantitative description of the parameters that affect intramolecular anisotropy and how it compares to FRET is poorly explored. Thus, I would encourage resubmission when these issues are addressed.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"FLAREs: Single-color, ratiometric biosensors for detecting signaling activities\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors re-engineered a number of classic FRET-based biosensors (PKA,ERK, PKC, MLCK, calcium, cAMP) using single color FP pairs that can perform homo FRET, which can be measured using fluorescence anisotropy measurements. Since each biosensor is based on only one color, this allows for multiplexed biosensor measurements in single living cells. It also allows them to perform biosensor measurements in combination with optogenetic activation systems. Finally, the authors perform some duo-color in vivo fluorescence anisotropy measurements using 2-photon microscopy. The data convincingly shows that (cp)mVenus and mCherry anistropy sensors can be multiplexed in complex cell types and in vivo measurements. The data also shows that the (cp) mCer-sensors performs a lot worse in comparison. Overall, the concept and experimental validation reported here are of great interest for the research community and the revision improved the quality of the work significantly. However, there are still significant concerns some of which may require some additional experiments to address.\n\nEssential revisions:\n\n1) The authors stress that their method provides a generalizable method for (triple) multiplex imaging, and state that \"The fact that FLAREs only occupy a single color channel and are highly generalizable for different biosensors, as well as color variants, highlights their utility for multiplexed imaging applications\".\n\nWith such a strong statement:\n\nThe authors should really show that the mCer3 based anisotropy measurements are usable in multiplex experiments beyond highly sensitive calcium sensor modules and / or under physiological conditions (e.g. histamine-induced response on FLARE-mCer3 probe).\n\n2) The authors added (Figure 1\u2014figure supplement 1) a convincing comparison of different linkers in mVenus-mVenus anisotropy measurements. Is this a general principle that can be applied to optimize anisotropy based biosensors? E.g. is this similar for mCherry/mCerulean based anisotropy sensors? This should at least be discussed (or better shown) to provide the readers with a basis to start utilising this technique. Similarly, it would greatly help the reader audience if the authors can discuss/speculate on the reason for different performance of the mVenus-pair over the other fluorescent protein pairs in anisotropy measurements.\n\n3) One of the advantages of FRET sensors is the ability to measure spatially restricted changes in protein activity (within cell compartments), however, the paper does not address whether local activities can be resolved also by fluorescence anisotropy. In Figure 1\u2014figure supplement 5 authors target the reporters to subcellular compartments and show changes in anisotropy, however, I think the authors should determine whether a local activity can be resolved using a non localized sensor. For instance Matsuda et al. (PMCID: PMC3226481) show that PKC in response to TPA is activated at the membrane edge. The authors should test the spatial resolution power of anisotropic probes using their FLARE CKAR.\n\n4) All the experiments shown in this study have been done using transfection or electroporation which results in major overexpression of the biosensor. The authors should determine whether expression level determines the reporting ability of these sensors.\n\n5) Although it may seem obvious I think the authors should determine whether the anisotropy change depends on the fluorescent proteins being in close proximity or just the conformational change itself. Mutating one chromophore could easily address this question.\n\n6) Statistical methods and data reporting:\n\n- Generally: Why are the average curves (including the variance measurements) in the supplemental figures? It would be much more informative and convincing for readers to show these in the main figures instead of the current \"representative example curves\".\n\n- Unclear from which timepoints (or pooled timepoints?) the data in the boxplots in Figure 1B, C, 2A, B, C is calculated/compared.\n\n- Unclear whether mean or median is represented in the boxplots in:\n\nFigure 1B, C\n\nFigure 2A, B, C\n\nFigure 1\u2014figure supplement 3 (also which variance measurement is used here?)\n\nFigure 3\u2014figure supplement 1B\n\nFigure 3\u2014figure supplement 3\n\nFigure 4E (which variance measurement is used here, how is statistical significance calculated? -> descriptions missing in legend/main text).\n\n- No (vehicle) controls in Figure 2B, C e.g. MLCK sensors can be activated by mechanical stress on cells from adding the experimental agents (it is also unclear from the \"Materials and methods\" section in what chamber cells were imaged, and how agents were added to the cells during experiments).\n",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c0712087-900a-4b11-b8bf-e17fe52baf65",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C1",
+      "claim": "Genetically encoded fluorescent biosensors have revolutionized the study of signal transduction by enabling the real-time tracking of signaling activities in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically encoded fluorescent biosensors have revolutionized the study of signal transduction by enabling the real-time tracking of signaling activities in live cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of biosensors on the field, drawing from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "d1932dd3-2ac3-4580-a8af-d4f599774a41",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C2",
+      "claim": "Investigating the interaction between signaling networks has become increasingly important to understanding complex cellular phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigating the interaction between signaling networks has become increasingly important to understanding complex cellular phenomena, necessitating an update of the biosensor toolkit to allow monitoring and perturbing multiple activities simultaneously in the same cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects current trends and needs in the field of cell signaling research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "03cc07e9-15e3-4e83-ba24-c54b2fcd8da4",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C3",
+      "claim": "A new class of fluorescent biosensors based on homo-FRET, called FLAREs (FLuorescence Anisotropy REporters), was developed.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore developed a new class of fluorescent biosensors based on homo-FRET, deemed FLuorescence Anisotropy REporters (FLAREs), which combine the multiplexing ability of single-color sensors with a quantitative, ratiometric readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the manuscript, describing the development of a new biosensor platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "5e1913fa-1a28-4526-b224-b7bd84f2eb84",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C4",
+      "claim": "FLAREs combine the multiplexing ability of single-color sensors with a quantitative, ratiometric readout.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore developed a new class of fluorescent biosensors based on homo-FRET, deemed FLuorescence Anisotropy REporters (FLAREs), which combine the multiplexing ability of single-color sensors with a quantitative, ratiometric readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the key features of the FLARE biosensors as demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "26f75395-4a6c-41d0-bb34-d0d72f2f8c36",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C5",
+      "claim": "Using an array of color variants, multiplexed imaging of three activity reporters simultaneously in the same cell was demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an array of color variants, we were able to demonstrate multiplexed imaging of three activity reporters simultaneously in the same cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing co-expression and imaging of multiple FLARE sensors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "f05519c8-3027-4448-811a-fab64f0a9302",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C6",
+      "claim": "FLAREs are compatible for use with optogenetic tools.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate the compatibility of FLAREs for use with optogenetic tools as well as intravital two-photon imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments combining FLAREs with channelrhodopsin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "708b8cd2-0676-41e7-825c-d3f0979fe8e8",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C7",
+      "claim": "FLAREs are compatible for intravital two-photon imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate the compatibility of FLAREs for use with optogenetic tools as well as intravital two-photon imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vivo imaging experiments in mouse skeletal muscle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "0f970e10-3781-4712-a5b9-1c7cbbc37c98",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C8",
+      "claim": "Single-color sensors with an intensiometric activity readout only occupy a single-color channel, allowing for more flexibility in multiplexed imaging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-color sensors, with an intensiometric activity readout, only occupy a single-color channel, allowing for more flexibility in multiplexed imaging experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known characteristic of single-color biosensors in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "62d5de07-787f-4733-8be3-10f6c8506e71",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C9",
+      "claim": "Single-color sensors are sensitive to variations in probe concentration caused by changing expression levels or cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they are sensitive to variations in probe concentration caused by changing expression levels or cell shape, as well as differences in imaging conditions, such as illumination intensity and focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of intensiometric sensors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "bd0dab13-0b64-4dd0-866c-c6ce2688e952",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C10",
+      "claim": "Single-color sensors are sensitive to differences in imaging conditions, such as illumination intensity and focus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they are sensitive to variations in probe concentration caused by changing expression levels or cell shape, as well as differences in imaging conditions, such as illumination intensity and focus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of intensiometric sensors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "f121ca1e-a127-4963-a46b-d8b2ce73426b",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C11",
+      "claim": "Sensors with a ratiometric readout, such as those based on FRET, cancel out many variations in light intensity and probe concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, sensors with a ratiometric readout, such as those based on F\u00f6rster Resonance Energy Transfer (FRET), cancel out many of these variations, enabling quantitative measurements of second messenger concentrations and better comparisons between experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known advantage of ratiometric FRET sensors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "e59098af-a749-4f08-aa8e-031bcd33cc0f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C12",
+      "claim": "Ratiometric sensors enable quantitative measurements of second messenger concentrations and better comparisons between experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, sensors with a ratiometric readout, such as those based on F\u00f6rster Resonance Energy Transfer (FRET), cancel out many of these variations, enabling quantitative measurements of second messenger concentrations and better comparisons between experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known advantage of ratiometric FRET sensors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "87b5650d-e5a1-4c42-b958-b1096a2096d8",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C13",
+      "claim": "The requirement for two distinct color channels in FRET sensors limits their application in multiplexed imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the requirement for two distinct color channels limits their application in multiplexed imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of traditional FRET sensors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "1dc2c338-dcd1-4e00-87f2-62933c9978e4",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C14",
+      "claim": "The loss of polarization of emitted light can be used as a readout for FRET between two fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, rather than using the emission ratio between the FRET and donor channels, we instead used the loss of polarization of emitted light as a readout for FRET between two fluorescent proteins (FPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fundamental principle underlying FLARE sensors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "c833785d-e586-488d-98b5-3c498fa92de9",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C15",
+      "claim": "The polarization-based FRET approach does not require the donor and acceptor to have distinct emission wavelengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this approach does not require the donor and acceptor to have distinct emission wavelengths, it can be used for either hetero-FRET (e.g. between different chromophores) or homo-FRET (e.g. between identical chromophores).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of using polarization rather than spectral separation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "cbf9a394-d74a-4233-b645-b46a39b483f8",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C16",
+      "claim": "Homo-FRET measurements have been useful for detecting protein clustering and protein oligomerization in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Homo-FRET measurements have been useful for detecting protein clustering and protein oligomerization in live cells (Bader et al., 2011, Bader et al., 2009; Gautier et al., 2001), but only recently has the possibility of using homo-FRET in biosensor designs been explored (Warren et al., 2015; Cameron et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "c96e88ab-f4b3-4ec2-b026-2f3564f2ae3d",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C17",
+      "claim": "The possibility of using homo-FRET in biosensor designs has only recently been explored.",
+      "claim_type": "EXPLICIT",
+      "source": "Homo-FRET measurements have been useful for detecting protein clustering and protein oligomerization in live cells (Bader et al., 2011, Bader et al., 2009; Gautier et al., 2001), but only recently has the possibility of using homo-FRET in biosensor designs been explored (Warren et al., 2015; Cameron et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "1032f4b1-f18a-4d6f-8513-bf9bb3ba7d3f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C18",
+      "claim": "FLARE probes were created by adapting existing FRET-based biosensors for homo-FRET measurements by replacing the traditional FRET pair with two FPs of the same color.",
+      "claim_type": "EXPLICIT",
+      "source": "To create our FLARE probes, we adapted existing FRET-based biosensors for homo-FRET measurements by replacing the traditional FRET pair with two FPs of the same color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design strategy for creating FLARE sensors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "3a26e4a2-425a-420c-9d6f-c5022b282457",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C19",
+      "claim": "FLARE biosensors include a molecular switch flanked by two spectrally similar FPs at the N- and C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting biosensors include a molecular switch, which changes conformation in the presence of a particular biochemical activity, flanked by two spectrally similar FPs at the N- and C-termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural design of FLARE sensors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "670d872e-2095-4754-afe8-4a49d5ad341f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C20",
+      "claim": "Changes in the conformation of the molecular switch are monitored by observing the fluorescence anisotropy of the sensor using fluorescence polarization microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the conformation of the molecular switch, and thus the biochemical activities under study, are then monitored by observing the fluorescence anisotropy of the sensor using fluorescence polarization microscopy, with increased anisotropy corresponding to a lower-FRET state of the sensor, similar to the effect of increasing the intramolecular distance between the FRET pair (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the measurement method and is supported by figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "53608ff8-e27d-4112-b0f9-38300c5d8584",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C21",
+      "claim": "Increased anisotropy corresponds to a lower-FRET state of the sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the conformation of the molecular switch, and thus the biochemical activities under study, are then monitored by observing the fluorescence anisotropy of the sensor using fluorescence polarization microscopy, with increased anisotropy corresponding to a lower-FRET state of the sensor, similar to the effect of increasing the intramolecular distance between the FRET pair (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the relationship between anisotropy and FRET state.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "a1f8acb1-6551-4cac-a36f-b42fb92d6c9b",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C22",
+      "claim": "The molecular switch from AKAR4 is composed of an FHA1 domain and PKA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "To develop a Protein Kinase A (PKA) activity FLARE, the molecular switch from A Kinase Activity Reporter 4 (AKAR4) (Zhang et al., 2001; Depry et al., 2011), composed of an FHA1 domain and PKA substrate (Figure 1a), was flanked between two FPs of the same color.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the composition of the AKAR4 molecular switch, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "2d09e557-1f0f-4c46-ab44-c255b28e47ca",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C23",
+      "claim": "The FHA1 domain binds to the PKA substrate when the latter is phosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "The FHA1 domain binds to the PKA substrate when the latter is phosphorylated, altering the conformation of the molecular switch and leading to a change in FRET between the flanking homo-FRET pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the AKAR sensor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "2cf580c8-f750-4623-b19d-26c01446aa9f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C24",
+      "claim": "Phosphorylation of the PKA substrate alters the conformation of the molecular switch and leads to a change in FRET between the flanking homo-FRET pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The FHA1 domain binds to the PKA substrate when the latter is phosphorylated, altering the conformation of the molecular switch and leading to a change in FRET between the flanking homo-FRET pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the AKAR sensor.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "eae45176-0594-4a6b-b9a8-d1a4b5011561",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C25",
+      "claim": "Two FLARE-AKAR variants based on mVenus were developed: one with a circularly permuted C-terminal FP (cp172Venus) and one without circular permutation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the effect of FP circular permutation on these biosensors, we developed two FLARE-AKAR variants based on the yellow FP mVenus: one in which the C-terminal FP was circularly permuted at position 172 (cp172Venus), consistent with the hetero-FRET AKAR4 sensor, and one without circular permutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of two sensor variants to test the effect of circular permutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "5f5d2f50-9b07-4a3e-8bad-2a4c345bf809",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C26",
+      "claim": "Following PKA activation with forskolin and IBMX, the anisotropy of mVenus-cp172Venus FLARE-AKAR decreased from 0.29 \u00b1 0.003 to 0.26 \u00b1 0.003, a decrease of 0.028 \u00b1 0.001 (N = 44, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Following PKA activation using a cocktail of 50 \u03bcM forskolin (Fsk), an adenylyl cyclase activator, and 100 \u03bcM 3-isobutyl-1-methylxanthine (IBMX), a general phosphodiesterase inhibitor, the anisotropy decreased from 0.29 \u00b1 0.003 to 0.26 \u00b1 0.003, a decrease of 0.028 \u00b1 0.001 (N = 44, biological replicates, unpaired, two-tailed t-test, p<0.0001), with the kinetics of the decrease matching those observed with AKAR4 (Figure 1b, Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental result supported by data in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "4dd29e20-8780-4bd3-808b-4f3fb3fef6d2",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C27",
+      "claim": "The kinetics of the anisotropy decrease in mVenus-cp172Venus FLARE-AKAR match those observed with AKAR4.",
+      "claim_type": "EXPLICIT",
+      "source": "Following PKA activation using a cocktail of 50 \u03bcM forskolin (Fsk), an adenylyl cyclase activator, and 100 \u03bcM 3-isobutyl-1-methylxanthine (IBMX), a general phosphodiesterase inhibitor, the anisotropy decreased from 0.29 \u00b1 0.003 to 0.26 \u00b1 0.003, a decrease of 0.028 \u00b1 0.001 (N = 44, biological replicates, unpaired, two-tailed t-test, p<0.0001), with the kinetics of the decrease matching those observed with AKAR4 (Figure 1b, Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with the established AKAR4 sensor, supported by figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "0a907d90-35c2-4a68-9ed3-86f86634777a",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C28",
+      "claim": "The yellow FLARE-AKAR variant without circular permutation showed slightly reduced changes in anisotropy upon stimulation with Fsk/IBMX.",
+      "claim_type": "EXPLICIT",
+      "source": "The yellow variant without the circular-permutation in the C-terminal FP showed slightly reduced changes in anisotropy upon stimulation with Fsk/IBMX (Figure 1c, Figure 1\u2014figure supplement 2c), consistent with previous",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "e99ccfcf-b093-477d-a1ed-d30db64c6e21",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C30",
+      "claim": "A slight positive correlation between intensity and anisotropy change was observed for Venus-cp172Venus FLARE AKAR.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a slight positive correlation between intensity and anisotropy change for Venus-cp172Venus FLARE AKAR; however, the expression level does not significantly impact the reporting ability of these sensors in general (Figure 1\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "6268e4be-b14f-4dd1-96de-2743aac7a0ee",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C31",
+      "claim": "Expression level does not significantly impact the reporting ability of FLARE sensors in general.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a slight positive correlation between intensity and anisotropy change for Venus-cp172Venus FLARE AKAR; however, the expression level does not significantly impact the reporting ability of these sensors in general (Figure 1\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data showing minimal correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "5d09ff5e-38a3-47da-9364-60536ffed0a7",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C32",
+      "claim": "The signal-to-noise ratio (SNR) of Venus-cp172Venus FLARE-AKAR was calculated to be 32.",
+      "claim_type": "EXPLICIT",
+      "source": "The signal-to-noise ratio (SNR) of Venus-cp172Venus FLARE-AKAR was calculated to be 32 by dividing the magnitude of the anisotropy change upon maximal PKA stimulation by the standard deviation of the baseline before stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of sensor performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "bf5c3fb6-e7ce-4889-9345-23614fee5f78",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C33",
+      "claim": "PKA inhibition using H-89 led to an immediate slope change and increase in anisotropy in Venus-cp172Venus FLARE-AKAR.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA inhibition using 20 \u03bcM H-89 led to an immediate slope change and increase in anisotropy (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation demonstrating reversibility of the sensor response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "607abd63-357b-46be-8b84-3680507acddf",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C34",
+      "claim": "A threonine-to-alanine (T-to-A) mutant version of FLARE-AKAR showed no change in anisotropy upon PKA stimulation with Fsk/IBMX or inhibition with H-89.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a mutant version of the biosensor with a threonine-to-alanine (T-to-A) mutation at the phosphorylation site showed no change in anisotropy upon PKA stimulation with Fsk/IBMX or inhibition with H-89 (Figure 1b, Figure 1\u2014figure supplement 2b), suggesting that the observed changes in anisotropy were due to phosphorylation of the PKA substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment demonstrating specificity of the sensor response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "6cd96da0-095e-4444-a57b-c49cd4280e8d",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C35",
+      "claim": "The observed changes in anisotropy in FLARE-AKAR were due to phosphorylation of the PKA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a mutant version of the biosensor with a threonine-to-alanine (T-to-A) mutation at the phosphorylation site showed no change in anisotropy upon PKA stimulation with Fsk/IBMX or inhibition with H-89 (Figure 1b, Figure 1\u2014figure supplement 2b), suggesting that the observed changes in anisotropy were due to phosphorylation of the PKA substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of response in the T-to-A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "69cc2e66-7e47-47fd-8988-1d7ef218d0bf",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C36",
+      "claim": "Isoproterenol induced FLARE-AKAR responses in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, isoproterenol, a \u03b2-adrenergic agonist, induced FLARE-AKAR responses in a dose-dependent manner (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation demonstrating dose-response behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "89f4a23a-c5cb-44c7-9408-e5fee5848479",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C37",
+      "claim": "Mutation of the chromophore of the C-terminal cp172Venus in Venus-cp172Venus FLARE AKAR from GYG to GGG decreased the magnitude of the response to Fsk/IBMX to approximately one-third of that of the wild-type sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "To further demonstrate that the change in anisotropy upon PKA stimulation was due to a change in FRET, we mutated the chromophore of the C-terminal cp172Venus in Venus-cp172Venus FLARE AKAR from GYG to GGG. We observed that the magnitude of the response to Fsk/IBMX decreased to approximately one-third of that of the wild-type sensor (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result demonstrating the role of FRET in the sensor response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "5cb71e5e-054f-4019-ae27-60f9a83b13ba",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C38",
+      "claim": "The remaining response in the chromophore-dead mutant was likely due to intermolecular FRET that occurs when the FHA1 domain of one molecule binds to the phosphorylated PKA substrate in an adjacent molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining response was likely due to intermolecular FRET that occurs when the FHA1 domain of one molecule binds to the phosphorylated PKA substrate in an adjacent molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the residual response in the mutant.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "58afc339-1e94-4a87-93c3-21dbba5f503d",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C39",
+      "claim": "A panel of color variants of FLARE-AKAR was developed, including EGFP-EGFP, mCherry-mCherry, mCerulean3-mCerulean3, and mCerulean3-cp173Cerulean3 versions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the yellow sensors, we developed a panel of color variants of FLARE-AKAR, including EGFP-EGFP, mCherry-mCherry, mCerulean3-mCerulean3 (Markwardt et al., 2011), and mCerulean3-cp173Cerulean3 versions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development of multiple sensor variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "9b74ed05-b0e6-419f-81e5-5e0313b96b5f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C40",
+      "claim": "All color variants of FLARE-AKAR exhibited a decrease in anisotropy in cells treated with Fsk/IBMX.",
+      "claim_type": "EXPLICIT",
+      "source": "All these variants exhibited a decrease in anisotropy in cells treated with Fsk/IBMX; however, the magnitude of the anisotropy decrease depended on the choice of FP, with the mVenus-cp172Venus variant having the largest response (Figure 1c, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation across multiple sensor variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "e3efdd72-c7f4-4c39-8bbe-0342b481a7b6",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C41",
+      "claim": "The magnitude of the anisotropy decrease in FLARE-AKAR depended on the choice of fluorescent protein, with the mVenus-cp172Venus variant having the largest response.",
+      "claim_type": "EXPLICIT",
+      "source": "All these variants exhibited a decrease in anisotropy in cells treated with Fsk/IBMX; however, the magnitude of the anisotropy decrease depended on the choice of FP, with the mVenus-cp172Venus variant having the largest response (Figure 1c, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative analysis of different sensor variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "ba404f31-926d-4af7-961d-976d3a4ffc2d",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C42",
+      "claim": "The Cerulean3-based FLARE-AKAR showed an increased dynamic range with a circularly permutated fluorescent protein at the C-terminal position.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the Venus variants, the Cerulean3-based FLARE-AKAR showed an increased dynamic range with a circularly permutated fluorescent protein at the C-terminal position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation comparing variants with and without circular permutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "1231dd25-2be4-4eaa-8e94-ddca7f5335a8",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C43",
+      "claim": "Changes in anisotropy in mCherry-mCherry FLARE-AKAR corresponded with the changes in normalized emission ratio in AKAR4, with similar kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "mCherry-mCherry FLARE-AKAR, being spectrally shifted from the AKAR4 heteroFRET sensor allowed for direct comparison of FLARE and heteroFRET sensors within the same cell. As shown in Figure 1\u2014figure supplement 6, changes in anisotropy in mCherry-mCherry FLARE-AKAR corresponded with the changes in normalized emission ratio in AKAR4, with similar kinetics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison between FLARE and traditional FRET sensors in the same cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "ad76aa90-2d4f-4367-bf26-10b5f0bf0a99",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C44",
+      "claim": "FLARE-AKAR sensors can monitor kinase activity at particular subcellular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore demonstrated the ability of FLARE-AKAR sensors to monitor kinase activity at particular subcellular compartments. By fusing Venus-cp172Venus FLARE-AKAR to targeting motifs from Lyn kinase and DAKAP1, we were able to detect PKA activity at the plasma membrane and outer mitochondrial membrane, respectively (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments with subcellularly targeted sensors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "92edf8cf-1e75-4c91-9650-65a470301a32",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C45",
+      "claim": "Venus-cp172Venus FLARE-AKAR fused to Lyn kinase targeting motif can detect PKA activity at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "By fusing Venus-cp172Venus FLARE-AKAR to targeting motifs from Lyn kinase and DAKAP1, we were able to detect PKA activity at the plasma membrane and outer mitochondrial membrane, respectively (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental demonstration of subcellular targeting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "1b09f7c2-dbee-43c0-af9d-e803ec677626",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C46",
+      "claim": "Venus-cp172Venus FLARE-AKAR fused to DAKAP1 targeting motif can detect PKA activity at the outer mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "By fusing Venus-cp172Venus FLARE-AKAR to targeting motifs from Lyn kinase and DAKAP1, we were able to detect PKA activity at the plasma membrane and outer mitochondrial membrane, respectively (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental demonstration of subcellular targeting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "ad74754a-bd7c-42fb-b529-84767c4eafcf",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C47",
+      "claim": "PKA activity has slower kinetics and a lower magnitude in the nucleus than the cytosol in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we used untargeted FLARE sensors to detect differential PKA activity dynamics in different compartments; diffusable Venus-cp172Venus FLARE AKAR in HeLa showed that PKA activity has slower kinetics and a lower magnitude in the nucleus than the cytosol (Figure 1\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation of compartment-specific PKA dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "f3b6d9b0-af6a-4cf0-a44e-d6c2ee6a9375",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C48",
+      "claim": "A family of single-color kinase activity or activation reporters in various colors was developed.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate the generalizability of FLAREs, we developed a family of single-color kinase activity or activation reporters in various colors (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the expansion of the FLARE platform to multiple kinases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "16610c29-6de4-455e-aab3-696615b8633e",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C49",
+      "claim": "Venus-cp172Venus FLARE-EKAR-EV exhibited a decrease in anisotropy of 0.02 \u00b1 0.001 (N = 13) after treatment with 100 ng/mL EGF.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in HEK293T cells, Venus-cp172Venus FLARE-EKAR-EV exhibited a decrease in anisotropy of 0.02 \u00b1 0.001 (N = 13) after treatment with 100 ng/mL epidermal growth factor (EGF) to activate the MAPK pathway (Figure 2a, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental result for the EKAR sensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "45f1b1bc-434a-4170-b1be-df6cbad9876b",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C50",
+      "claim": "The FLARE-EKAR-EV response was reversed upon MEK inhibition using U0126.",
+      "claim_type": "EXPLICIT",
+      "source": "This response was reversed upon MEK inhibition using 20 \u03bcM U0126, and no change in anisotropy was observed with a T-to-A mutant sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates reversibility and specificity of the EKAR sensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "888624fe-d484-4afb-b941-349da2b659bf",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C51",
+      "claim": "No change in anisotropy was observed in the T-to-A mutant of FLARE-EKAR-EV upon EGF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This response was reversed upon MEK inhibition using 20 \u03bcM U0126, and no change in anisotropy was observed with a T-to-A mutant sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control experiment demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "50c176b8-701f-4b83-a352-00d2149447b3",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C52",
+      "claim": "Venus-cp172Venus FLARE-CKAR exhibited an anisotropy decrease of 0.02 \u00b1 0.001 (N = 26) upon activation of PKC with 100 ng/mL PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we developed a panel of PKC activity reporters, called FLARE-CKARs, by flanking a PKC sensor domain composed of an FHA1 domain and a PKC substrate (Herbst et al., 2011) from a CKAR2 construct (Figure 2\u2014figure supplement 2) with mVenus-cp172Venus. We observed an anisotropy decrease of 0.02 \u00b1 0.001 (N = 26) upon activation of PKC with 100 ng/mL phorbol 12-myristate 13-acetate (PMA) (Figure 2b, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental result for the CKAR sensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "877f30a8-0533-44e3-babf-840aace5d70d",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C53",
+      "claim": "For FLARE-EKAR and FLARE-CKAR, sensors based on mVenus exhibited the largest responses.",
+      "claim_type": "EXPLICIT",
+      "source": "For both FLARE-EKAR (Figure 2\u2014figure supplement 1) and FLARE CKAR (Figure 2\u2014figure supplement 3), we likewise repeated this process for various color variants, and like the FLARE-AKARs, the sensors based on mVenus exhibited the largest responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative analysis across color variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "4abd6067-4e47-4182-bb8c-5ec2ff8e9333",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C54",
+      "claim": "A myosin light chain kinase (MLCK) sensor was converted to a FLARE by exchanging the cyan FP for mVenus.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a myosin light chain kinase (MLCK) sensor was converted to a FLARE by exchanging the cyan FP for mVenus (Isotani et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the adaptation of an existing sensor to the FLARE format.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "eeb548bc-e214-433a-a3a3-94fd43ef9400",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C55",
+      "claim": "Calmodulin association with the MLCK-CaM binding domain decreases FRET, leading to an increase in fluorescence anisotropy upon forced calcium entry with 30 mM KCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Calmodulin (CaM) association with the MLCK-CaM binding domain in between the FPs decreases FRET, leading to an increase in fluorescence anisotropy upon forced calcium (Ca2+) entry with 30 mM KCl (N = 13) (Figure 2c, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism and experimental result for the MLCK sensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "8258fc24-bd87-40b1-9cc8-973ef50a6f25",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C56",
+      "claim": "FLAREs for monitoring second messenger dynamics were developed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to biosensors for monitoring enzymes, we also developed FLAREs for monitoring second messenger dynamics (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the expansion of FLAREs to second messenger detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "94956e8f-77a8-4f85-b145-13af5bbb6803",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C57",
+      "claim": "Venus-cp172Venus FLARE-Cameleon exhibited a decrease in anisotropy of 0.03 \u00b1 0.002 (N = 10) upon addition of 1 \u03bcM ionomycin and 5 mM CaCl2.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in HEK293T cells, Venus-cp172Venus FLARE-Cameleon exhibited a decrease in anisotropy of 0.03 \u00b1 0.002 (N = 10) upon addition of 1 \u03bcM ionomycin and 5 mM CaCl2, with the Venus-Venus, mCerulean3-mCerulean3, and mCherry-mCherry versions also showing detectable responses (Figure 3b, Figure 3\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental result for the calcium sensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "b9e384cf-6228-4972-9a33-9e64d27d43de",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C58",
+      "claim": "Venus-Venus, mCerulean3-mCerulean3, and mCherry-mCherry versions of FLARE-Cameleon showed detectable responses to calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in HEK293T cells, Venus-cp172Venus FLARE-Cameleon exhibited a decrease in anisotropy of 0.03 \u00b1 0.002 (N = 10) upon addition of 1 \u03bcM ionomycin and 5 mM CaCl2, with the Venus-Venus, mCerulean3-mCerulean3, and mCherry-mCherry versions also showing detectable responses (Figure 3b, Figure 3\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation across color variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "1a2d2d42-49e6-436e-9a53-6996fe7da4a8",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C59",
+      "claim": "mVenus-based FLARE sensors tend to show larger dynamic ranges for a variety of FLARE sensors than mCerulean3 or mCherry variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The mVenus-based FLARE sensors tend to show larger dynamic ranges for a variety of",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation across multiple sensor types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "23b1c8db-0dd2-4bea-9def-27ee556b1d0f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C60",
+      "claim": "The superior performance of mVenus-based FLAREs is likely due to the superior extinction coefficient and quantum yield of mVenus, which make it a good FRET donor and acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "FLARE sensors than mCerulean3 or mCherry variants, likely due to the superior extinction coefficient and quantum yield of mVenus, which make it a good FRET donor and acceptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of mVenus.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "5e179c00-62b2-418a-bd89-4a5e0a9b6f88",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C61",
+      "claim": "Venus-cp172Venus FLARE Cameleon can detect submaximal calcium responses in histamine-stimulated HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated the ability of Venus-cp172Venus FLARE Cameleon to detect submaximal responses by monitoring calcium transients in histamine-stimulated HeLa cells (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the sensitivity of the sensor to physiological stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "fc309fb6-c90d-4730-affc-40e3ec7e374b",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C62",
+      "claim": "The dissociation constant and Hill coefficients of purified Venus-cp172Venus Cameleon are in good agreement with other Cameleon sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to determine the dissociation constant and Hill coefficients, we purified Venus-cp172Venus Cameleon and measured the fluorescence anisotropy in solutions of known free Ca2+ concentration at different temperatures (Figure 3\u2014figure supplement 2). The resulting parameters are in good agreement with other Cameleon sensors (Nagai et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with established sensors, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "3ef05a6e-4cba-4db8-83cb-0e6fa2715619",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C63",
+      "claim": "A calcium FLARE sensor based on D1-ER was developed with a sensitivity appropriate for calcium monitoring in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we developed another calcium FLARE sensor, based on D1-ER (Palmer et al., 2004), with a sensitivity appropriate for calcium monitoring in the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development of an ER-targeted calcium sensor.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "13cc1334-0362-4148-8adc-09e1d1376d10",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C64",
+      "claim": "The D1-ER FLARE sensor anisotropy decreases upon increasing calcium concentration and increases when calcium is depleted from the ER upon treatment with thapsigargin.",
+      "claim_type": "EXPLICIT",
+      "source": "The anisotropy decreases upon increasing calcium concentration and increases when calcium is depleted from the ER upon treatment with thapsigargin (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the response characteristics of the ER calcium sensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "9e8c59b9-1cf4-4d0d-9b32-8259c59241dd",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C65",
+      "claim": "The fluorescence anisotropy of Venus-cp172Venus FLARE-ICUE increased by 0.02 \u00b1 0.001 (N = 40) upon stimulation with Fsk/IBMX.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in HEK293T cells, the fluorescence anisotropy of Venus-cp172Venus FLARE-ICUE increased by 0.02 \u00b1 0.001 (N = 40) upon stimulation with Fsk/IBMX (Figure 3c, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental result for the cAMP sensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "ff4aa239-7370-4b94-bd2d-f6c80b4b9525",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C66",
+      "claim": "FLAREs only occupy a single-color channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that FLAREs only occupy a single-color channel and are highly generalizable for different biosensors, as well as color variants, highlights their utility for multiplexed imaging applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of FLARE sensors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "014c01b3-99f4-442b-89fe-b43c7fb2516f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C67",
+      "claim": "FLAREs are highly generalizable for different biosensors and color variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that FLAREs only occupy a single-color channel and are highly generalizable for different biosensors, as well as color variants, highlights their utility for multiplexed imaging applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the development of multiple sensor types and color variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "f85f80ce-481d-4537-8342-19b4a664816c",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C68",
+      "claim": "Multiplexing of hetero-FRET sensors is generally limited to two probes.",
+      "claim_type": "EXPLICIT",
+      "source": "While multiplexing of hetero-FRET sensors is generally limited to two probes (Depry et al., 2013; Shcherbakova et al., 2012), we demonstrate that FLAREs can facilitate co-imaging of three biosensors simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of traditional FRET sensors, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "e2e86bd8-b902-4998-84fe-f11e1544b7ab",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C69",
+      "claim": "FLAREs can facilitate co-imaging of three biosensors simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "While multiplexing of hetero-FRET sensors is generally limited to two probes (Depry et al., 2013; Shcherbakova et al., 2012), we demonstrate that FLAREs can facilitate co-imaging of three biosensors simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the triple-sensor imaging experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "62c02002-7013-4f52-b659-8517d942915e",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C70",
+      "claim": "Clear and distinct decreases in anisotropy were observed in the red channel after Fsk/IBMX treatment, in the yellow channel after EGF stimulation, and in the cyan channel after thapsigargin treatment in cells co-expressing three FLARE sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "We co-expressed mCherry-mCherry FLARE-AKAR, Venus-cpVenus FLARE-EKAR-EV, and mCerulean3-mCerulean3 FLARE-Cameleon in HEK293T cells and acquired a time-course with sequential treatment using Fsk/IBMX, EGF, and thapsigargin. Clear and distinct decreases in anisotropy were observed in the red channel after Fsk/IBMX treatment, in the yellow channel after EGF stimulation, and in the cyan channel after thapsigargin treatment, corresponding to an increase in PKA activity, Erk activity, and intracellular Ca2+, respectively (N = 17) (Figure 4a, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the key experimental result demonstrating three-color multiplexing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "0aa4be44-30f7-4212-b6b8-58c8dd1e5fb9",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C71",
+      "claim": "The anisotropy changes in the triple-sensor experiment corresponded to an increase in PKA activity, Erk activity, and intracellular Ca2+, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Clear and distinct decreases in anisotropy were observed in the red channel after Fsk/IBMX treatment, in the yellow channel after EGF stimulation, and in the cyan channel after thapsigargin treatment, corresponding to an increase in PKA activity, Erk activity, and intracellular Ca2+, respectively (N = 17) (Figure 4a, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interprets the anisotropy changes in terms of the biological activities being measured.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "433e9ce4-03e1-4750-ab89-76e03678182e",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C72",
+      "claim": "MIN6 \u03b2-cells transfected with Venus-cp172Venus FLARE-ICUE and mCerulean3-mCerulean3 FLARE-Cameleon showed clear fluorescence anisotropy oscillations in both channels following stimulation with TEA.",
+      "claim_type": "EXPLICIT",
+      "source": "MIN6 \u03b2-cells were transiently transfected with Venus-cp172Venus FLARE-ICUE and mCerulean3-mCerulean3 FLARE-Cameleon to simultaneously monitor cAMP and Ca2+ \ufeffdynamics, respectively (N = 19). We observed clear fluorescence anisotropy oscillations in both channels following stimulation with 20 mM tetraethylammonium chloride (TEA) (Figure 4b, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the ability to monitor oscillatory dynamics with FLAREs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "4c18b99f-5f3f-4947-87af-d8d64c0ca3cd",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C73",
+      "claim": "Ca2+ and cAMP exhibit synchronized oscillations in MIN6 cells, with Ca2+ increases corresponding to cAMP decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ and cAMP exhibit synchronized oscillations, with Ca2+ increases corresponding to cAMP decreases, consistent with previous findings (Landa et al., 2005; Ni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation consistent with previous work, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "37bb4580-3537-427b-891d-fc52a52b76ba",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C74",
+      "claim": "Even the lower signal mCerulean3-based FLARE sensors can be used under sub-maximal and physiologically relevant stimulation conditions in multiplexed imaging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that even the lower signal mCerulean3-based FLARE sensors can be used under sub-maximal and physiologically relevant stimulation conditions in multiplexed imaging experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the MIN6 cell experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "07c14872-f655-43ac-ae31-75cdce1527b8",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C75",
+      "claim": "FLARE sensors can be used simultaneously with optogenetic tools to perturb and monitor biochemical activities.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to multiplexed biosensor imaging, the fact that FLARE sensors occupy only a single color channel also permits simultaneously perturbing and monitoring biochemical activities using optogenetics and FLAREs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the channelrhodopsin experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "c74afca5-15ea-4174-9000-4fed48e62d1a",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C76",
+      "claim": "Illumination with blue light of REF52 cells co-expressing mCherry-tagged hChR2 and Venus-cp172 FLARE-Cameleon produced an immediate decrease in anisotropy, corresponding to an increase in intracellular Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "We coexpressed an mCherry-tagged, ER-targeted channelrhodopsin2 (hChR2) (Nagel et al., 2003; Lin et al., 2009; Markwardt et al., 2016), a light-gated calcium ion channel, with Venus-cp172 FLARE-Cameleon in REF52 cells, a rat embryonic fibroblast cell line. Illumination with blue light produced an immediate decrease in anisotropy, corresponding to an increase in intracellular Ca2+ (Figure 4c, Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates optogenetic control combined with FLARE imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "876cf6df-8cd2-4898-855c-14c0fd42d6a5",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C77",
+      "claim": "Control cells lacking hChR2 expression showed no change in anisotropy in the yellow channel upon blue light illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Control cells lacking hChR2 expression showed no change in anisotropy in the yellow channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control experiment demonstrating specificity of the optogenetic response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "153c655d-c442-418d-beed-1d7d34a9bd5e",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C78",
+      "claim": "Exclusive excitation of mVenus (855 nm) or mCherry (1200 nm) was verified by imaging capillary tubes filled with recombinant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, two-photon imaging of FLAREs was tested using a skeletal muscle preparation (Figure 4d,e). Exclusive excitation of mVenus (855 nm) or mCherry (1200 nm) was verified by imaging capillary tubes filled with recombinant proteins (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment for two-photon imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "d273f66e-79cf-487b-ae1e-c65b5b0dce30",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C79",
+      "claim": "Plasmids encoding Venus-cp172Venus FLARE-Cameleon and mCherry FLARE-AKAR sensors were electroporated into the flexor digitorum brevis muscle of a live mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmids encoding Venus-cp172Venus FLARE-Cameleon and mCherry FLARE-AKAR sensors were electroporated into the flexor digitorum brevis muscle of a live mouse (DiFranco et al., 2009; Kerr et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for in vivo sensor delivery.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "37ac12ac-37b8-4592-a72c-5f0eb453def3",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C80",
+      "claim": "Administration of an electrical current stimulated a rise in intracellular Ca2+ concentration in mouse skeletal muscle, as indicated by a decrease in FLARE-Cameleon anisotropy, independent of changes in FLARE-AKAR anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of an electrical current stimulated a rise in intracellular Ca2+ concentration, as indicated by a decrease in FLARE-Cameleon anisotropy, independent of changes in FLARE-AKAR anisotropy (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an in vivo experimental result demonstrating selective activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "b644d00e-a89c-462b-82d1-824009422f2f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C81",
+      "claim": "Intraperitoneal injection of isoproterenol activated FLARE-AKAR in mouse skeletal muscle, as indicated by decreased anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of AKAR was then induced by intraperitoneal injection of isoproterenol (0.5 mg/kg). Thus, FLAREs enable in vivo multiparametric biosensor measurements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an in vivo experimental result demonstrating PKA activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "9dce6c57-4164-4418-b4ee-9110d6462e61",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C82",
+      "claim": "FLAREs enable in vivo multiparametric biosensor measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, FLAREs enable in vivo multiparametric biosensor measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vivo imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "0376b2e8-4a52-4c87-98b4-456abbd5d621",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C83",
+      "claim": "FLAREs are a highly generalizable, accessible platform for creating single-color sensors to detect biochemical activities in individual cells in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that FLAREs are a highly generalizable, accessible platform for creating single-color sensors to detect biochemical activities in individual cells in real time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "028980ed-1684-4d74-b79e-2577f854903d",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C84",
+      "claim": "The ratiometric readout of FLAREs allows for fluctuations in light intensity and probe concentration to be cancelled out, permitting quantitative measurements of intracellular concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Their ratiometric readout allows for fluctuations in light intensity and probe concentration to be cancelled out, permitting quantitative measurements of intracellular concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of ratiometric measurements.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "d58e5f28-014a-49ac-88d7-ee51cde32d11",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C85",
+      "claim": "FLARE sensors have a signal-to-noise ratio of 3\u201332.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that these sensors have an SNR of 3\u201332 (Table 1) and a dynamic range comparable with first-generation FRET sensors (Newman and Zhang, 2008; Zhou et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative characterization of sensor performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "7f49e50e-f04c-47d5-9beb-be34f93a0d74",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C86",
+      "claim": "FLARE sensors have a dynamic range comparable with first-generation FRET sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that these sensors have an SNR of 3\u201332 (Table 1) and a dynamic range comparable with first-generation FRET sensors (Newman and Zhang, 2008; Zhou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with established sensors, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "55122698-2479-46c4-bf87-2de8eafd52e5",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C87",
+      "claim": "Future development and optimization should further enhance the performance of FLARE sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Future development and optimization should further enhance their performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "5a051263-3a04-42b4-bcce-1047ca0b72a9",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C88",
+      "claim": "Current FLAREs are useful for multiplexed imaging applications.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that current FLAREs are already useful for multiplexed imaging applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the three-color imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "2bfb2db2-d959-4f11-87ac-f11d6ab0e199",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C89",
+      "claim": "FLAREs can be used in conjunction with optogenetic tools to enable all-optical interrogation of cellular regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "They can also be used in conjunction with optogenetic tools to enable all-optical interrogation of cellular regulation, and for intravital two-photon imaging to facilitate studies in tissues and living animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the channelrhodopsin experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "d0067a57-52f0-4c4c-bfab-c14ceccc6976",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C90",
+      "claim": "FLAREs can be used for intravital two-photon imaging to facilitate studies in tissues and living animals.",
+      "claim_type": "EXPLICIT",
+      "source": "They can also be used in conjunction with optogenetic tools to enable all-optical interrogation of cellular regulation, and for intravital two-photon imaging to facilitate studies in tissues and living animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the in vivo imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "a0d62b0a-15f5-44d5-97c6-ec9c8fc5a7d1",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "claim_id": "C91",
+      "claim": "FLAREs could be used to study how the spatiotemporal regulation of biochemical activities in highly integrated pathways allows a small number of signals to produce diverse cellular behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAREs, by allowing researchers to monitor multiple activities within the same cell, as well as to both monitor and optogenetically perturb activities in the same cell, could be used to study the how the spatiotemporal regulation of biochemical activities in highly integrated pathways allows a small number of signals to produce diverse cellular behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of FLAREs.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8fe691bf-0da6-4bea-b0d7-7f6144d9c1da",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed FLAREs, a new class of fluorescent biosensors based on homo-FRET that use fluorescence anisotropy as a readout. FLAREs combine single-color channel occupancy with a ratiometric readout by monitoring conformational changes in a molecular switch flanked by two spectrally similar fluorescent proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C18-C21 collectively describe the fundamental design and principle of FLARE sensors. The design strategy (replacing traditional FRET pairs with same-color FPs), structural composition (molecular switch flanked by two FPs), and measurement principle (anisotropy readout corresponding to FRET state) are all supported by experimental data and figures throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Venus-cp172Venus FLARE-AKAR detects PKA activity with a significant anisotropy decrease of 0.028 \u00b1 0.001 (N=44, p<0.0001) upon Fsk/IBMX stimulation, with kinetics matching AKAR4. The response is reversible with H-89 and specific to phosphorylation as demonstrated by the non-responsive T-to-A mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C35 provide comprehensive validation of the PKA sensor including quantitative measurements (C26), comparison to established sensors (C27), control experiments with inhibitors (C33), and specificity controls with phosphorylation-dead mutants (C34-C35). The statistical significance (p<0.0001) and adequate sample size (N=44) support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "867c2ab7-1f06-40f5-9215-275f54c08b29",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FLARE-AKAR responds to isoproterenol in a dose-dependent manner, and chromophore mutation experiments demonstrate that the anisotropy change is primarily due to intramolecular FRET, with residual response potentially from intermolecular FRET.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 demonstrates physiological relevance through dose-response. Claims C37-C38 provide mechanistic validation showing ~2/3 reduction in response with chromophore-dead mutant, supporting FRET-based mechanism. However, C38's explanation of residual response as intermolecular FRET is speculative and lacks direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "4a8754c9-ffa4-4c76-b104-50f521d142c7",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple color variants of FLARE-AKAR were developed (EGFP, mCherry, mCerulean3, with and without circular permutation), all showing anisotropy decreases upon PKA activation, with mVenus-cp172Venus exhibiting the largest response and circular permutation generally improving dynamic range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 describe the development and comparative characterization of color variants. The data in Figure 1c and supplementary figures show responses across all variants with quantitative comparisons. The observation that circular permutation improves performance is consistent across Venus and Cerulean3 variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "4c56f26b-da0d-4681-9fe5-0e14f5abcc6c",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mCherry-mCherry FLARE-AKAR responses correspond with AKAR4 hetero-FRET sensor responses with similar kinetics when co-expressed in the same cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 provides direct validation by comparing FLARE and traditional FRET sensors in the same cells. Figure 1\u2014figure supplement 6 shows temporal correspondence between the two sensor types, validating that FLAREs report the same biological activity as established sensors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "483ce461-f7b9-49f1-9fab-21dc071662aa",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FLARE-AKAR sensors can monitor PKA activity at specific subcellular compartments (plasma membrane, mitochondrial membrane) and reveal differential PKA dynamics between cytosol and nucleus in HeLa cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 demonstrate subcellular targeting capability and compartment-specific measurements. The data show successful targeting to plasma membrane (Lyn) and mitochondria (DAKAP1), and quantitative differences in PKA dynamics between cytosol and nucleus with statistical support (Figure 1\u2014figure supplement 8).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "219b85ad-964d-49c2-9729-811b110bdc75",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The FLARE platform is generalizable to multiple kinases including ERK (FLARE-EKAR-EV with 0.02 \u00b1 0.001 anisotropy change, N=13), PKC (FLARE-CKAR with 0.02 \u00b1 0.001 change, N=26), and MLCK, all showing reversible and specific responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 demonstrate generalizability across different kinase sensors. Each sensor shows appropriate responses to specific stimuli (EGF for ERK, PMA for PKC, KCl for MLCK), reversibility with inhibitors, and specificity with mutant controls. Quantitative data with adequate sample sizes support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "faa11549-7249-4e0a-b840-6b318e576e8b",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FLAREs were successfully developed for second messengers including calcium (FLARE-Cameleon with 0.03 \u00b1 0.002 anisotropy change, N=10) and cAMP (FLARE-ICUE with 0.02 \u00b1 0.001 change, N=40), with calcium sensors showing appropriate sensitivity and dissociation constants comparable to established Cameleon sensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 demonstrate extension to second messenger detection. The calcium sensor shows responses to both maximal (ionomycin/CaCl2) and submaximal (histamine) stimuli. In vitro calibration (C62) provides quantitative validation with Kd and Hill coefficients matching literature values. The ER-targeted calcium sensor (C63-C64) shows appropriate directional responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "cd022fc2-3533-451b-af7e-d638fbd92389",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "mVenus-based FLARE sensors generally show larger dynamic ranges than mCerulean3 or mCherry variants, likely due to superior extinction coefficient and quantum yield of mVenus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 summarize a consistent pattern across multiple sensor types shown in Figures 1-3. While C60's mechanistic explanation is reasonable based on known fluorophore properties, it remains an inference rather than directly tested. The observation itself (C59) is well-supported by comparative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "626cab5e-c0f8-4b59-8ce8-08a5928d9359",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FLAREs enable simultaneous three-color multiplexed imaging of PKA, ERK, and calcium activities in the same cell, overcoming the two-probe limitation of traditional hetero-FRET sensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 demonstrate the key multiplexing capability. Figure 4a shows clear, distinct anisotropy changes in three separate color channels (red, yellow, cyan) responding to specific stimuli (Fsk/IBMX, EGF, thapsigargin) with N=17 cells. This represents a significant advance over traditional FRET sensors cited as being limited to two probes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "244adfe2-559b-4dc6-9109-d9c46004d493",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FLAREs can monitor oscillatory dynamics of cAMP and calcium in MIN6 \u03b2-cells, revealing synchronized out-of-phase oscillations consistent with previous findings, demonstrating utility under physiologically relevant conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 show FLAREs can capture dynamic oscillatory behavior. The observation of anti-phase Ca2+/cAMP oscillations is consistent with cited literature (Landa et al., 2005; Ni et al., 2011), providing validation. This demonstrates that even lower-performing mCerulean3 sensors work under physiological conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "96222fdc-d761-4bb5-b75b-8ccf11d5fe52",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "FLARE sensors are compatible with optogenetic tools, as demonstrated by Venus-cp172Venus FLARE-Cameleon detecting calcium increases upon blue light activation of mCherry-tagged channelrhodopsin2, with appropriate controls showing no response without ChR2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 demonstrate optogenetic compatibility. The experiment shows immediate anisotropy decrease upon blue light illumination in ChR2-expressing cells (C76) with proper negative controls lacking ChR2 (C77). This validates the ability to combine optical perturbation with FLARE-based monitoring.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "77f3da85-2d0e-4d01-8e85-2e6141f94cb6",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FLAREs are compatible with intravital two-photon imaging in mouse skeletal muscle, enabling in vivo multiparametric measurements of calcium and PKA activity with selective wavelength excitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 demonstrate in vivo applicability. Exclusive excitation at different wavelengths was verified (C78), sensors were successfully delivered via electroporation (C79), and selective activation of calcium (electrical stimulation) and PKA (isoproterenol injection) was demonstrated with statistical significance (p=0.0037 and p=0.0239 respectively).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "11d6c435-bded-44bc-8177-908aca0b0d2a",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Expression level does not significantly impact FLARE sensor reporting ability, despite a slight positive correlation between intensity and anisotropy change for Venus-cp172Venus FLARE-AKAR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C31 present somewhat contradictory information. C30 reports a correlation exists, while C31 concludes expression level doesn't significantly impact performance. The data in Figure 1\u2014figure supplement 3a shows scatter but the statistical analysis and significance of the correlation are not provided. More rigorous analysis would be needed to definitively support C31.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "ec20f3d5-7863-4b29-aa4a-64e0b31ba09b",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FLAREs represent a generalizable platform for single-color, ratiometric biosensors with SNR of 3-32 and dynamic range comparable to first-generation FRET sensors, enabling quantitative measurements by canceling out variations in light intensity and probe concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 provide overall characterization. SNR values (C85) are quantified in Table 1 across all sensor variants. Comparison to first-generation FRET sensors (C86) is supported by citations. The ratiometric property (C84) is inherent to the anisotropy measurement principle. These claims synthesize the demonstrated capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "e98463ec-895e-4456-a98f-6e3ba46b41eb",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes FLAREs within the existing biosensor landscape, noting that single-color sensors offer multiplexing flexibility but suffer from concentration/imaging artifacts, while ratiometric FRET sensors provide quantitative measurements but are limited to two colors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C13 provide background context about existing biosensor technologies. These are well-established facts in the field supported by general knowledge and the cited literature. They appropriately motivate the development of FLAREs as addressing limitations of both single-color and traditional FRET approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "0d4a3214-75b4-43fa-a77c-49e9604aa34e",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The polarization-based FRET approach underlying FLAREs does not require distinct emission wavelengths and can utilize homo-FRET, building on recent exploration of homo-FRET for biosensor applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 describe the conceptual foundation of FLAREs. The principle that polarization-based detection doesn't require spectral separation (C14-C15) is physically sound. Prior use of homo-FRET for protein clustering (C16) and recent biosensor applications (C17) are supported by appropriate citations (Bader et al., Warren et al., Cameron et al.).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    },
+    {
+      "id": "51a4f499-6fc7-40ee-a226-0b7aec1ce372",
+      "content_id": "c31ca402-6891-499d-b359-81ded133fd76",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors conclude that FLAREs are useful for current multiplexed imaging, optogenetic, and in vivo applications, with potential for future optimization and application to studying spatiotemporal regulation in integrated signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 represent concluding statements. C88-C90 are supported by the experimental demonstrations in the manuscript. C87 and C91 are forward-looking statements about future work and potential applications, which are reasonable based on the demonstrated capabilities but represent speculation rather than tested results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:20:25.949622Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03cc07e9-15e3-4e83-ba24-c54b2fcd8da4",
+      "result_id": "8fe691bf-0da6-4bea-b0d7-7f6144d9c1da"
+    },
+    {
+      "claim_id": "5e1913fa-1a28-4526-b224-b7bd84f2eb84",
+      "result_id": "8fe691bf-0da6-4bea-b0d7-7f6144d9c1da"
+    },
+    {
+      "claim_id": "1032f4b1-f18a-4d6f-8513-bf9bb3ba7d3f",
+      "result_id": "8fe691bf-0da6-4bea-b0d7-7f6144d9c1da"
+    },
+    {
+      "claim_id": "3a26e4a2-425a-420c-9d6f-c5022b282457",
+      "result_id": "8fe691bf-0da6-4bea-b0d7-7f6144d9c1da"
+    },
+    {
+      "claim_id": "670d872e-2095-4754-afe8-4a49d5ad341f",
+      "result_id": "8fe691bf-0da6-4bea-b0d7-7f6144d9c1da"
+    },
+    {
+      "claim_id": "53608ff8-e27d-4112-b0f9-38300c5d8584",
+      "result_id": "8fe691bf-0da6-4bea-b0d7-7f6144d9c1da"
+    },
+    {
+      "claim_id": "a1f8acb1-6551-4cac-a36f-b42fb92d6c9b",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "2d09e557-1f0f-4c46-ab44-c255b28e47ca",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "2cf580c8-f750-4623-b19d-26c01446aa9f",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "eae45176-0594-4a6b-b9a8-d1a4b5011561",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "5f5d2f50-9b07-4a3e-8bad-2a4c345bf809",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "4dd29e20-8780-4bd3-808b-4f3fb3fef6d2",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "0a907d90-35c2-4a68-9ed3-86f86634777a",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "5d09ff5e-38a3-47da-9364-60536ffed0a7",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "bf5c3fb6-e7ce-4889-9345-23614fee5f78",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "607abd63-357b-46be-8b84-3680507acddf",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "6cd96da0-095e-4444-a57b-c49cd4280e8d",
+      "result_id": "01b0e1b0-7ae1-4fb2-a241-2e2006b1cd8f"
+    },
+    {
+      "claim_id": "69cc2e66-7e47-47fd-8988-1d7ef218d0bf",
+      "result_id": "867c2ab7-1f06-40f5-9215-275f54c08b29"
+    },
+    {
+      "claim_id": "89f4a23a-c5cb-44c7-9408-e5fee5848479",
+      "result_id": "867c2ab7-1f06-40f5-9215-275f54c08b29"
+    },
+    {
+      "claim_id": "5cb71e5e-054f-4019-ae27-60f9a83b13ba",
+      "result_id": "867c2ab7-1f06-40f5-9215-275f54c08b29"
+    },
+    {
+      "claim_id": "58afc339-1e94-4a87-93c3-21dbba5f503d",
+      "result_id": "4a8754c9-ffa4-4c76-b104-50f521d142c7"
+    },
+    {
+      "claim_id": "9b74ed05-b0e6-419f-81e5-5e0313b96b5f",
+      "result_id": "4a8754c9-ffa4-4c76-b104-50f521d142c7"
+    },
+    {
+      "claim_id": "e3efdd72-c7f4-4c39-8bbe-0342b481a7b6",
+      "result_id": "4a8754c9-ffa4-4c76-b104-50f521d142c7"
+    },
+    {
+      "claim_id": "ba404f31-926d-4af7-961d-976d3a4ffc2d",
+      "result_id": "4a8754c9-ffa4-4c76-b104-50f521d142c7"
+    },
+    {
+      "claim_id": "1231dd25-2be4-4eaa-8e94-ddca7f5335a8",
+      "result_id": "4c56f26b-da0d-4681-9fe5-0e14f5abcc6c"
+    },
+    {
+      "claim_id": "ad76aa90-2d4f-4367-bf26-10b5f0bf0a99",
+      "result_id": "483ce461-f7b9-49f1-9fab-21dc071662aa"
+    },
+    {
+      "claim_id": "92edf8cf-1e75-4c91-9650-65a470301a32",
+      "result_id": "483ce461-f7b9-49f1-9fab-21dc071662aa"
+    },
+    {
+      "claim_id": "1b09f7c2-dbee-43c0-af9d-e803ec677626",
+      "result_id": "483ce461-f7b9-49f1-9fab-21dc071662aa"
+    },
+    {
+      "claim_id": "ad74754a-bd7c-42fb-b529-84767c4eafcf",
+      "result_id": "483ce461-f7b9-49f1-9fab-21dc071662aa"
+    },
+    {
+      "claim_id": "f3b6d9b0-af6a-4cf0-a44e-d6c2ee6a9375",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "16610c29-6de4-455e-aab3-696615b8633e",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "45f1b1bc-434a-4170-b1be-df6cbad9876b",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "888624fe-d484-4afb-b941-349da2b659bf",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "50c176b8-701f-4b83-a352-00d2149447b3",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "877f30a8-0533-44e3-babf-840aace5d70d",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "4abd6067-4e47-4182-bb8c-5ec2ff8e9333",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "eeb548bc-e214-433a-a3a3-94fd43ef9400",
+      "result_id": "219b85ad-964d-49c2-9729-811b110bdc75"
+    },
+    {
+      "claim_id": "8258fc24-bd87-40b1-9cc8-973ef50a6f25",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "94956e8f-77a8-4f85-b145-13af5bbb6803",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "b9e384cf-6228-4972-9a33-9e64d27d43de",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "5e179c00-62b2-418a-bd89-4a5e0a9b6f88",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "fc309fb6-c90d-4730-affc-40e3ec7e374b",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "3ef05a6e-4cba-4db8-83cb-0e6fa2715619",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "13cc1334-0362-4148-8adc-09e1d1376d10",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "9e8c59b9-1cf4-4d0d-9b32-8259c59241dd",
+      "result_id": "faa11549-7249-4e0a-b840-6b318e576e8b"
+    },
+    {
+      "claim_id": "1a2d2d42-49e6-436e-9a53-6996fe7da4a8",
+      "result_id": "cd022fc2-3533-451b-af7e-d638fbd92389"
+    },
+    {
+      "claim_id": "23b1c8db-0dd2-4bea-9def-27ee556b1d0f",
+      "result_id": "cd022fc2-3533-451b-af7e-d638fbd92389"
+    },
+    {
+      "claim_id": "ff4aa239-7370-4b94-bd2d-f6c80b4b9525",
+      "result_id": "626cab5e-c0f8-4b59-8ce8-08a5928d9359"
+    },
+    {
+      "claim_id": "014c01b3-99f4-442b-89fe-b43c7fb2516f",
+      "result_id": "626cab5e-c0f8-4b59-8ce8-08a5928d9359"
+    },
+    {
+      "claim_id": "f85f80ce-481d-4537-8342-19b4a664816c",
+      "result_id": "626cab5e-c0f8-4b59-8ce8-08a5928d9359"
+    },
+    {
+      "claim_id": "e2e86bd8-b902-4998-84fe-f11e1544b7ab",
+      "result_id": "626cab5e-c0f8-4b59-8ce8-08a5928d9359"
+    },
+    {
+      "claim_id": "62c02002-7013-4f52-b659-8517d942915e",
+      "result_id": "626cab5e-c0f8-4b59-8ce8-08a5928d9359"
+    },
+    {
+      "claim_id": "0aa4be44-30f7-4212-b6b8-58c8dd1e5fb9",
+      "result_id": "626cab5e-c0f8-4b59-8ce8-08a5928d9359"
+    },
+    {
+      "claim_id": "433e9ce4-03e1-4750-ab89-76e03678182e",
+      "result_id": "244adfe2-559b-4dc6-9109-d9c46004d493"
+    },
+    {
+      "claim_id": "4c18b99f-5f3f-4947-87af-d8d64c0ca3cd",
+      "result_id": "244adfe2-559b-4dc6-9109-d9c46004d493"
+    },
+    {
+      "claim_id": "37bb4580-3537-427b-891d-fc52a52b76ba",
+      "result_id": "244adfe2-559b-4dc6-9109-d9c46004d493"
+    },
+    {
+      "claim_id": "07c14872-f655-43ac-ae31-75cdce1527b8",
+      "result_id": "96222fdc-d761-4bb5-b75b-8ccf11d5fe52"
+    },
+    {
+      "claim_id": "c74afca5-15ea-4174-9000-4fed48e62d1a",
+      "result_id": "96222fdc-d761-4bb5-b75b-8ccf11d5fe52"
+    },
+    {
+      "claim_id": "876cf6df-8cd2-4898-855c-14c0fd42d6a5",
+      "result_id": "96222fdc-d761-4bb5-b75b-8ccf11d5fe52"
+    },
+    {
+      "claim_id": "153c655d-c442-418d-beed-1d7d34a9bd5e",
+      "result_id": "77f3da85-2d0e-4d01-8e85-2e6141f94cb6"
+    },
+    {
+      "claim_id": "d273f66e-79cf-487b-ae1e-c65b5b0dce30",
+      "result_id": "77f3da85-2d0e-4d01-8e85-2e6141f94cb6"
+    },
+    {
+      "claim_id": "37ac12ac-37b8-4592-a72c-5f0eb453def3",
+      "result_id": "77f3da85-2d0e-4d01-8e85-2e6141f94cb6"
+    },
+    {
+      "claim_id": "b644d00e-a89c-462b-82d1-824009422f2f",
+      "result_id": "77f3da85-2d0e-4d01-8e85-2e6141f94cb6"
+    },
+    {
+      "claim_id": "9dce6c57-4164-4418-b4ee-9110d6462e61",
+      "result_id": "77f3da85-2d0e-4d01-8e85-2e6141f94cb6"
+    },
+    {
+      "claim_id": "e99ccfcf-b093-477d-a1ed-d30db64c6e21",
+      "result_id": "11d6c435-bded-44bc-8177-908aca0b0d2a"
+    },
+    {
+      "claim_id": "6268e4be-b14f-4dd1-96de-2743aac7a0ee",
+      "result_id": "11d6c435-bded-44bc-8177-908aca0b0d2a"
+    },
+    {
+      "claim_id": "0376b2e8-4a52-4c87-98b4-456abbd5d621",
+      "result_id": "ec20f3d5-7863-4b29-aa4a-64e0b31ba09b"
+    },
+    {
+      "claim_id": "028980ed-1684-4d74-b79e-2577f854903d",
+      "result_id": "ec20f3d5-7863-4b29-aa4a-64e0b31ba09b"
+    },
+    {
+      "claim_id": "d58e5f28-014a-49ac-88d7-ee51cde32d11",
+      "result_id": "ec20f3d5-7863-4b29-aa4a-64e0b31ba09b"
+    },
+    {
+      "claim_id": "7f49e50e-f04c-47d5-9beb-be34f93a0d74",
+      "result_id": "ec20f3d5-7863-4b29-aa4a-64e0b31ba09b"
+    },
+    {
+      "claim_id": "c0712087-900a-4b11-b8bf-e17fe52baf65",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "d1932dd3-2ac3-4580-a8af-d4f599774a41",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "0f970e10-3781-4712-a5b9-1c7cbbc37c98",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "62d5de07-787f-4733-8be3-10f6c8506e71",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "bd0dab13-0b64-4dd0-866c-c6ce2688e952",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "f121ca1e-a127-4963-a46b-d8b2ce73426b",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "e59098af-a749-4f08-aa8e-031bcd33cc0f",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "87b5650d-e5a1-4c42-b958-b1096a2096d8",
+      "result_id": "e98463ec-895e-4456-a98f-6e3ba46b41eb"
+    },
+    {
+      "claim_id": "1dc2c338-dcd1-4e00-87f2-62933c9978e4",
+      "result_id": "0d4a3214-75b4-43fa-a77c-49e9604aa34e"
+    },
+    {
+      "claim_id": "c833785d-e586-488d-98b5-3c498fa92de9",
+      "result_id": "0d4a3214-75b4-43fa-a77c-49e9604aa34e"
+    },
+    {
+      "claim_id": "cbf9a394-d74a-4233-b645-b46a39b483f8",
+      "result_id": "0d4a3214-75b4-43fa-a77c-49e9604aa34e"
+    },
+    {
+      "claim_id": "c96e88ab-f4b3-4ec2-b026-2f3564f2ae3d",
+      "result_id": "0d4a3214-75b4-43fa-a77c-49e9604aa34e"
+    },
+    {
+      "claim_id": "55122698-2479-46c4-bf87-2de8eafd52e5",
+      "result_id": "51a4f499-6fc7-40ee-a226-0b7aec1ce372"
+    },
+    {
+      "claim_id": "5a051263-3a04-42b4-bcce-1047ca0b72a9",
+      "result_id": "51a4f499-6fc7-40ee-a226-0b7aec1ce372"
+    },
+    {
+      "claim_id": "2bfb2db2-d959-4f11-87ac-f11d6ab0e199",
+      "result_id": "51a4f499-6fc7-40ee-a226-0b7aec1ce372"
+    },
+    {
+      "claim_id": "d0067a57-52f0-4c4c-bfab-c14ceccc6976",
+      "result_id": "51a4f499-6fc7-40ee-a226-0b7aec1ce372"
+    },
+    {
+      "claim_id": "a0d62b0a-15f5-44d5-97c6-ec9c8fc5a7d1",
+      "result_id": "51a4f499-6fc7-40ee-a226-0b7aec1ce372"
+    }
+  ],
+  "comparisons": []
+}

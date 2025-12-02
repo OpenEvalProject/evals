@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C57",
+      "C66"
+    ],
+    "result": "Background selection (BGS) and GC-biased gene conversion (gBGC) together affect more than 95% of polymorphic sites in the human genome. BGS affects 80-85% of the genome, while gBGC affects ~16% of polymorphic positions (regions with recombination rate >1.5 cM/Mb). The magnitude and relative importance of these forces are determined by variation in recombination rate and base composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C57, and C66 are well-supported by the data presented in Figures 1-4. The log-linear relationship between DAFi and recombination rate (Figure 1), the differential effects on WS, SW, and WW+SS sites (Figure 1C), and the simulation results (Figure 4) provide converging evidence. The quantitative estimates are derived from data analysis and are consistent across multiple datasets (1000G and SGDP).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23"
+    ],
+    "result": "BGS affects both synonymous sites and non-transcribed regions, including regions more than 50 kb away from transcribed regions. This effect could be due to functional elements in non-coding regions (non-coding RNAs, histone marks, enhancers, insulators) or remote effects of exonic deleterious mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C22, and C23 are supported by Figure 1B showing DAFi increases with recombination rate even in NTR-50kb regions, and Figure 2 showing SFS distortions in non-transcribed regions. The mechanistic explanation in C23 is appropriately presented as speculative with supporting citations to functional genomics studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C67"
+    ],
+    "result": "SNPs with recombination rates above 1.5 cM/Mb and mutation types WW+SS (C\u2194G, A\u2194T) are mostly unaffected by BGS or gBGC and represent approximately 3% of all genomic SNPs. These sites should be optimal for demographic inference as they appear to evolve mainly neutrally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37, C38, C39, and C67 are well-supported by Figure 1C showing DAFi reaches a plateau above 1.5 cM/Mb for WW+SS sites, and Figure 2C showing similar SFS for TR and NTR regions in this neutral set. The quantitative estimates (2.88-2.94% for the filtered set, ~3% for all neutral SNPs) are derived from data analysis reported in Supplementary file 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C74",
+      "C75"
+    ],
+    "result": "The use of synonymous sites and non-transcribed regions for demographic inference leads to strong biases. The SFS at synonymous sites differs markedly from neutral sites due to gBGC, and very different demographies can be inferred from neutral versus non-neutral SFS. BGS and gBGC have different impacts on inferred demography across populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49, C50, C51, C74, and C75 are strongly supported by Figure 3 showing markedly different demographic parameters inferred from synonymous, NTR-50kb, and neutral SFS. Figure 3A demonstrates the SFS differences, Figure 3B shows the demographic inference biases, and Figure 3\u2014figure supplement 1B confirms gBGC's role in the excess of high-frequency variants at synonymous sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C41"
+    ],
+    "result": "BGS affects the site frequency spectrum (SFS) in complex ways. The SFS computed across ten 1000G populations for different recombination classes shows qualitatively similar distortions in all populations, with low-recombination regions showing excess singletons and deficit of intermediate and high-frequency variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, and C41 are supported by Figure 2A and Figure 2\u2014figure supplement 1 showing consistent SFS patterns across populations. The observation that distortions are qualitatively similar across populations with different demographic histories strengthens the interpretation that BGS, rather than population-specific demography, is the primary driver.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C14"
+    ],
+    "result": "gBGC affects the SFS such that WS mutations show a deficit of low-frequency variants and an excess of intermediate- and high-frequency variants in regions of high recombination. The excess of high-frequency variants at WS sites is not compensated by a corresponding deficit at SW sites, suggesting gBGC could contribute to the increase of nearly fixed derived alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C47, C48, and C14 are well-supported by Figure 2B showing the differential effects of gBGC on WS, SW, and WW+SS mutations across recombination classes. The observation is consistent with previous work (Lachance and Tishkoff, 2014; Katzman et al., 2011) and provides a mechanistic explanation for patterns previously attributed to other causes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C99"
+    ],
+    "result": "Simulated BGS patterns qualitatively match observations very well. Simulations show that BGS can reproduce both the observed correlation between DAFi and recombination rate and the observed distortions of the SFS in low-recombination regions, with only an increase of low-frequency variants (not high-frequency variants) as expected for BGS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C99 are supported by Figure 4 and supplementary figures showing good qualitative agreement between simulated and observed patterns. The simulations use demographic parameters inferred from neutral sites and implement BGS with SLiM v2.3. The match between simulated and observed patterns provides strong validation of the BGS interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Under neutrality, the expected number of derived mutations (DAFi) should be the same for any individual in the sample across its whole genome, irrespective of the particular demography of its population. Differences in the number of derived alleles among individuals and genomic regions should therefore only reflect differences in selection, mutation rate, and/or generation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 are supported by theoretical derivations presented in the Materials and methods section and illustrated in Figure 1\u2014figure supplement 1. The mathematical reasoning is sound and follows from coalescent theory. The empirical observation that DAFi is broadly similar across geographic regions (Figure 1\u2014figure supplement 2) supports the theoretical prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Southern and Eastern Asians show a slight yet significant deficit in the number of derived alleles compared to the three other groups (~50,000 out of 17 million, Tukey test, p<0.01), suggesting either more efficient selection, a lower mutation rate, or a longer generation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by statistical testing (Tukey test, p<0.01) and shown in Figure 1\u2014figure supplement 2. The observation is statistically significant and the proposed explanations are reasonable, though the claim appropriately acknowledges that the specific mechanism cannot be determined from this data alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The B-statistics inferred by McVicker et al. are significantly better fitted assuming a log-log linear relationship between recombination and deleterious mutation rate than assuming constant mutation rate. Under this model, both observed and predicted B-statistics reach a plateau of ~0.9 above 1.5 cM/Mb, suggesting that in addition to BGS and gBGC, some correlation between mutation and recombination rate is required to best explain observed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C96, and C97 are supported by Figure 1\u2014figure supplement 8 showing the fit of different models to B-statistics. The improved fit with the mutation-recombination correlation model is demonstrated, and the plateau at 1.5 cM/Mb is consistent with the threshold used to define neutral sites. The inference is appropriately cautious about the need for mutation-recombination correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The relationship between DAFi and recombination rate is robust to the choice of recombination map. The same log-linear relationship is observed using alternative recombination maps (CEU, JPT, deCode) and in the independent SGDP dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 are supported by Figure 1\u2014figure supplement 3 showing similar patterns with different recombination maps, and Figure 1\u2014figure supplement 4A showing the relationship in SGDP data. This robustness check strengthens confidence that the observed patterns are not artifacts of a particular recombination map.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Filtering by GERP score may not be sufficient to completely remove the effect of BGS, as even sites with neutral GERP scores (\u22122 \u2264 GERP RS < 2) show a positive relationship with recombination rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by Figure 1\u2014figure supplement 5C showing that even sites considered neutral by GERP scores still show a relationship with recombination rate. This is an important methodological finding suggesting that conservation scores alone are insufficient to identify truly neutral sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Neutral SNPs (WW+SS sites with RR \u22651.5 cM/Mb) are found in both transcribed and non-transcribed regions and are enriched close to telomeric regions where BGS is predicted to be weaker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 are supported by Figure 2C showing similar SFS for TR and NTR regions in the neutral set, and Figure 1\u2014figure supplement 10 showing enrichment near telomeres. The telomeric enrichment is consistent with theoretical predictions (Charlesworth, 2012) that BGS should be weaker in these regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Within the neutral set of SNPs, recombination hotspots still play a role in decoupling selected from neutral sites, and sites furthest away from hotspots might still be slightly sensitive to BGS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by Figure 1\u2014figure supplement 9B showing a negative relationship between DAFi and distance to hotspots within the neutral set. This suggests that even the carefully filtered neutral set may contain some residual BGS effects, though the magnitude appears small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The removal of exonic SNPs and those located close (\u22640.0003 cM) to phastCons elements from the neutral set would have no major effect on the shape of the SFS, since they represent only a small fraction (2.2% and 16.9% respectively) of the SNPs in the neutral set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the analysis presented in Figure 2\u2014figure supplement 4 showing that while these sites have different SFS shapes, their small proportion in the neutral set means their removal would not substantially alter the overall SFS. This is an important validation of the robustness of the neutral set definition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The very similar behavior of DAFi among individuals and populations is not in line with differential positive selection in different continents. If adaptive events were involved, they should have occurred before the human lineage split. Since most variation in exonic regions emerged in the last 10,000 years, a pure adaptive explanation seems unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, C90, and C91 are supported by the observation of similar patterns across populations (Figure 1A) and the citation to Fu et al., 2013 regarding the timing of variation emergence. The reasoning is sound: if positive selection were driving the patterns, we would expect population-specific differences, which are not observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "BGS and gBGC affect the SFS of populations with distinct histories in a qualitatively similar way, but they have different consequences on reconstructed demography. It appears difficult to predict how demographic parameters will be biased when using non-neutral SFS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 are supported by the observation that different populations show similar SFS distortions (Figure 2) but different demographic inference biases (Figure 3B). The difficulty in predicting biases is demonstrated by the different effects observed in Yoruba versus Japanese populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The estimate that 80-85% of the human genome is influenced by BGS matches relatively well with the ENCODE consortium's estimate of biochemically functional regions, but this does not imply that 80-85% of the genome is functional. Rather, functional sites under direct purifying selection (potentially 8-15% of the genome) have an important but indirect influence on most of the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, C60, and C61 provide an important clarification about the interpretation of the BGS results. The distinction between direct functional constraint and indirect effects through linkage is well-articulated and supported by citations to Rands et al., 2014 and Graur, 2017. This addresses a potential misinterpretation of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The effect of BGS extends well beyond coding regions in humans and is not restricted to species with a large effective population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 are supported by Figure 1 showing BGS effects in non-coding regions and by the observation that humans, despite having a relatively small effective population size, show clear BGS signatures. This is consistent with previous work by Hernandez et al., 2011 and extends findings from Corbett-Detig et al., 2015.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The influence of gBGC is not restricted to recombination hotspots but has a strong footprint in regions with recombination rate larger than 1.5 cM/Mb. These regions represent about 15.9% and 16.2% of polymorphic positions for 1000G and SGDP datasets, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C65 are supported by Figure 1C showing gBGC effects in regions with recombination rate above 1.5 cM/Mb, extending beyond the 1-2% of the genome near hotspots previously reported. The quantitative estimates are derived from data analysis and are consistent across datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C81"
+    ],
+    "result": "Future studies of demographic history should be based on a set of markers that is minimally influenced by non-neutral forces. The history of human populations might be more readily inferred from methods that can analyze restricted sets of neutrally evolving sites interspersed across the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C81 are reasonable recommendations based on the findings of the study. The demonstration that BGS and gBGC cause biases in demographic inference (Figure 3) provides strong justification for these recommendations. However, these are forward-looking suggestions rather than tested results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Filtering out SW and WS SNPs from regions with B > 0.9 may result in a good alternative data set for demographic inferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is presented as a speculation based on the analysis of different neutral sets (Figure 3\u2014figure supplement 3). While the reasoning is plausible, this alternative approach has not been fully validated in the manuscript. The claim is appropriately cautious ('may result'), but additional testing would be needed to confirm this recommendation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C82"
+    ],
+    "result": "Methods of demographic inference based on whole genomes should be sensitive to BGS and gBGC. Other types of inference using a biased neutral SFS as a reference could also be affected, such as inferences of the distributions of fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80 and C82 are logical inferences from the study's findings, but they have not been directly tested in this manuscript. The reasoning is sound\u2014if BGS and gBGC affect the SFS, they should affect methods that assume neutrality\u2014but the magnitude of effects on whole-genome methods and DFE inference remains to be investigated, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C30",
+      "C31",
+      "C90",
+      "C92",
+      "C94",
+      "C98"
+    ],
+    "result": "Background claims about prior work on diversity-recombination correlations, BGS, gBGC, and positive selection in humans and other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C7-C17, C30-C31, C90, C92, C94, C98) represent background knowledge from the literature and are appropriately cited. They provide context for the current study and are generally well-established findings in population genetics. The citations appear appropriate and the characterizations of prior work are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Due to its simplicity, the approach can be readily applied to any species for which a recombination map is available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is a reasonable statement about the generalizability of the approach. The method relies primarily on recombination maps and allele frequency data, which are increasingly available for many species. However, the specific threshold of 1.5 cM/Mb may need to be adjusted for species with different recombination rates or effective population sizes.",
+    "result_type": "MINOR"
+  }
+]

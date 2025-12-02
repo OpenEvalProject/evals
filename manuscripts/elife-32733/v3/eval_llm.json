@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C101",
+      "C107",
+      "C111",
+      "C112"
+    ],
+    "result": "VWMD mutations (\u03b1V183F, \u03b4R483W, \u03b5R113H, \u03b5R195H) destabilize the eIF2B decamer and impair GEF activity in reconstituted systems. Four of five tested mutations showed 28-61% of wild-type activity, with decamer:tetramer ratios reduced proportionally. The authors propose destabilization of the decameric holoenzyme as a common mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurements (GEF assays, SEC analysis, activity correlations) consistently demonstrate that VWMD mutations reduce both decamer stability and enzymatic activity. The correlation between R10/4 ratios and GEF activity (C111) provides mechanistic insight. Statistical significance is reported (p<0.001) with appropriate replication (N=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C102",
+      "C109",
+      "C110",
+      "C114",
+      "C176",
+      "C177"
+    ],
+    "result": "ISRIB rescues GEF activity of VWMD mutant eIF2B complexes in vitro by stabilizing the decameric form. ISRIB treatment increased R10/4 ratios (e.g., 8.2-fold for \u03b1V183F) and restored activity to or above wild-type levels for most mutants, with similar EC50 values (~0.9 nM) across constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue is demonstrated through multiple complementary assays (GEF kinetics, SEC, dose-response curves) with consistent results. The similar EC50 values (C90) support the interpretation that mutations don't affect ISRIB binding. The 8.2-fold stabilization of \u03b1V183F (C110) is particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The \u03b1V183F mutation uniquely affects the \u03b12 homodimer, requiring 40-fold higher concentration to achieve wild-type activity (Km = 246 nM vs 6 nM). ISRIB improves but cannot fully normalize \u03b1V183F activity due to loss of avidity from abolished dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The titration experiments (C96, C97) clearly demonstrate the concentration-dependent rescue and quantify the avidity effect. The mechanistic interpretation (C98) is well-supported by the data showing ISRIB shifts Km but cannot overcome the fundamental loss of dimerization. This explains why \u03b1V183F behaves differently from other mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C178"
+    ],
+    "result": "Engineered ISRIB-resistant mutations (\u03b4L179F, \u03b4L487W) validate the mechanism. \u03b4L487W shows VWMD-like phenotype (25% activity, reduced R10/4) unresponsive to ISRIB, while \u03b4L179F maintains wild-type activity but is ISRIB-insensitive. Combining \u03b4L179F with \u03b1V183F prevents ISRIB rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ISRIB-resistant mutants provide critical negative controls demonstrating specificity. The differential behavior of \u03b4L179F (wild-type activity, ISRIB-resistant) vs \u03b4L487W (impaired activity, ISRIB-resistant) elegantly separates ISRIB binding from complex stability. The double mutant experiment (C120, C178) confirms the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "VWMD mutations reduce protein levels of affected subunits (20-90% reduction) in HEK293T cells, with some mutations also destabilizing associated subunits. Effects cannot be explained solely by gene dosage since homozygous mutants show similar reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot quantification (Figure 4A) with statistical analysis (N=2, significance testing) demonstrates subunit destabilization. The observation that homozygous mutants show reduced protein levels (C126) rules out simple haploinsufficiency. However, clone-to-clone variability (e.g., \u03b3I346T: 20% vs 90% reduction) suggests additional factors may be involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C142",
+      "C143"
+    ],
+    "result": "VWMD mutant HEK293T cells show no basal ISR activation under unstressed conditions, likely due to high eIF2B expression in transformed cells. HEK293T cells express the highest levels of all eIF2B subunits compared to other cell types tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of basal ATF4 expression (C127) and normal protein synthesis rates (C128) are clearly demonstrated. The comparative analysis across five cell lines (C142, Figure 4\u2014supplement 4) provides strong evidence for the interpretation that high eIF2B levels mask mutant effects. This is an important caveat for the cell model but is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C138",
+      "C141"
+    ],
+    "result": "ISRIB fully suppresses stress-induced ISR activation in VWMD mutant cells. Co-treatment with 500 nM ISRIB blocked ATF4 upregulation following tunicamycin or thapsigargin treatment in all five mutant cell lines tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blots (Figure 4C) and luciferase reporter assays (Figure 4D) consistently demonstrate complete suppression of ATF4 induction by ISRIB across all mutants. The use of two different ER stressors (Tm and Tg) and two readouts (endogenous ATF4 and reporter) strengthens the conclusion. Replication across multiple clones adds robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "ISRIB restores protein synthesis in stressed VWMD mutant cells. After DTT treatment causing ~75% reduction in 35S-methionine incorporation, ISRIB co-treatment significantly restored synthesis to similar extents in wild-type and mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 35S-methionine incorporation assay (Figure 4E) provides direct measurement of translation rates. The similar response across wild-type and mutants supports the conclusion that ISRIB engages mutant eIF2B effectively. However, the extent of rescue is not quantified precisely, and only N=2 replicates are shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C156",
+      "C157"
+    ],
+    "result": "Diluted lysates from VWMD mutant HEK293T cells reveal impaired GEF activity (28-55% of wild-type) that is rescued by ISRIB. This represents the first isogenic comparison of VWMD mutations in mammalian cells, with results consistent with the reconstituted system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lysate dilution approach cleverly reveals defects masked by high eIF2B expression. The consistency between lysate and reconstituted system results (C148) validates both approaches. The claim of being first in isogenic background (C149) appears accurate based on cited literature. Statistical analysis with N=3 and appropriate controls supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "ISRIB enhances lysate GEF activity with EC50 = 0.38 nM for wild-type, with similar values for most mutants. ISRIB restored all VWMD lysates to t1/2 < 9 mins, representing up to 14-fold improvement for \u03b4R483W. The \u03b4R483W mutant showed lower EC50 (0.05-0.21 nM) than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Dose-response curves (Figure 4G) with appropriate replication (N=3) support the EC50 determinations. The dramatic rescue of \u03b4R483W (14-fold, C152) is notable. The lower EC50 for \u03b4R483W (C155) is interesting and discussed as potentially reflecting synergistic effects on tetramer stability, though this remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "VWMD mutant cells showed no increased sensitivity to ER stress compared to wild-type, with similar thapsigargin EC50 values for ATF4-luciferase induction across all cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response curves (Figure 4\u2014supplement 3) clearly show similar responses across genotypes. This negative result is important for understanding the cellular phenotype and is appropriately interpreted as reflecting the high eIF2B levels in HEK293T cells (C137). The statistical analysis (N=3) supports the conclusion of no significant differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The \u03b41 and \u03b42 isoforms of eIF2B show no functional differences in basal GEF activity, ISRIB response (EC50 = 0.8 vs 1.2 nM), or sensitivity to phospho-eIF2 inhibition under the experimental conditions tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple assays (basal activity, ISRIB dose-response, phospho-eIF2 titration) consistently show no differences between isoforms. This contradicts prior reports (C59, C63) but is well-documented with appropriate replication (N=3). The caveat about experimental conditions (C66) is appropriate, as differences might emerge under other conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The reconstituted GEF assay successfully recapitulates eIF2B function. Recombinant eIF2 shows slow intrinsic GDP exchange (t1/2 > 70 min), which is accelerated by eIF2B (t1/2 = 20 min) and further enhanced by ISRIB in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence-based assay is well-validated with appropriate controls and consistent with prior work (C55, C57 cite previous studies). The dose-dependent ISRIB response provides confidence in assay sensitivity. This establishes the foundation for all subsequent biochemical experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "GEF activity impairment in vitro does not correlate with disease severity. The \u03b5R113H (classical presentation) and \u03b5R195H (severe early-onset) mutations showed similar lysate GEF activity, suggesting the reconstituted system doesn't capture cellular complexity relevant to disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of correlation (C162, C163) is clearly demonstrated by the data. The interpretation that the system doesn't capture cellular complexity (C164) is reasonable and appropriately cautious. This is an important limitation acknowledged by the authors and suggests additional disease mechanisms beyond simple GEF activity reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The \u03b5R136H mutant shows wild-type GEF activity and decamer stability in the reconstituted system, despite causing classical VWMD. Mouse studies show 23% activity reduction without subunit destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The wild-type activity in vitro (C83) is clearly demonstrated, but this conflicts with the disease-causing nature of the mutation and mouse data (C85, C86). The speculation about cellular destabilization (C84) is reasonable but untested. This represents a significant gap\u2014the mutation clearly causes disease but the mechanism is not revealed by the assays used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "eIF2B possesses non-GEF activities (GDI displacement, ternary complex regulation) that would not be detected in the standard GDP release assay, potentially explaining why some mutations cause disease without obvious GEF defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is appropriately cited to prior work (C165, C166) and the logical inference (C167) is sound. This provides a plausible explanation for mutations like \u03b5R136H that show wild-type GEF activity but cause disease. However, these alternative functions are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C181",
+      "C180"
+    ],
+    "result": "ISRIB reduces eIF2B sensitivity to phospho-eIF2 inhibition, suggesting a possible allosteric stimulatory effect beyond simple decamer stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data in Figure 1G clearly show that ISRIB allows eIF2B to remain active even at 2:1 phospho-eIF2:eIF2 ratios (C181). The interpretation of possible allosteric effects (C180) is appropriately presented as speculation. This is an interesting mechanistic observation that warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Prior literature shows conflicting results on whether eIF2B GEF activity correlates with VWMD severity. Some studies found correlation with age of onset while others found no association with disease severity, and some mutations reportedly don't affect enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize contradictory findings in the literature (C39, C40, C159, C161) with appropriate citations. This provides important context for the current study and highlights the need for systematic investigation in controlled systems. The authors appropriately acknowledge these discrepancies.",
+    "result_type": "MINOR"
+  }
+]

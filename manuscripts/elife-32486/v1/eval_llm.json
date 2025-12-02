@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Many biomedical studies fail to recognize data dependencies from multilevel designs, leading to invalid statistical inferences. This unit of analysis (UoA) problem is a major concern in bioscience and medicine and contributes to reproducibility issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C15 establish the prevalence and consequences of UoA issues through multiple citations and the manuscript's own demonstrations. The examples and simulation study (C17, C18, C32) provide empirical support for the claim that ignoring dependencies leads to invalid inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C32",
+      "C66",
+      "C67"
+    ],
+    "result": "Ignoring data dependencies in multilevel designs leads to inflated false positive rates and incorrect estimates of statistical power, as demonstrated by simulation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, and C32 are explicitly supported by simulation studies in Appendix 1, with C66 and C67 confirming that false positive rates can be extremely high and efficiency very low. The simulation provides quantitative evidence for these statistical consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Example 1 demonstrates a colorectal cancer study where naive t-test analysis found significant differences in lymph node size between radiotherapy groups (p=0.015), but visual inspection reveals strong clustering of measurements within subjects and samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 describe the experimental design and naive analysis results with specific statistical values. Claims C39-C42 are supported by Figure 1, which visually demonstrates the clustering structure that violates independence assumptions. The data structure is clearly documented in Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Proper analysis of Example 1 using subject-based or mixed-effects models shows no significant difference between groups (p=0.322), with variance decomposition revealing that between-subject variability is 3.5 times greater than between-sample variability and 13 times greater than within-sample variability (ICC=0.733).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide consistent statistical results from appropriate analyses. Claims C47-C48 present variance component estimates with specific ratios. C50-C51 demonstrate model validation through ICC and likelihood ratio tests. C52 confirms model assumptions through residual diagnostics (Figure 2). All claims are mutually consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Mixed-effects analysis remains robust in unbalanced designs (after removing 50% of data), producing similar estimates to complete data analysis, while subject-based analysis becomes invalid in unbalanced settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 provides specific statistical results from unbalanced data analysis. C55 notes the surprising similarity to complete data results despite using half the data. C56 correctly identifies the limitation of subject-based analysis in unbalanced designs due to ignoring variation in sample sizes. The comparison is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Example 2 with binary lymph node count data shows that naive logistic regression overstates significance (p<0.001) compared to GLME analysis (p=0.016), with standard error underestimated by more than half (0.264 vs 0.564), due to failing to account for within-subject correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C62 provide specific statistical results from naive and proper analyses. C61 documents the data structure from Table 3. C64 quantifies the difference in standard errors with specific values. C65 provides the mechanistic explanation. The comparison clearly demonstrates the consequences of ignoring hierarchical structure in binary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The experimental unit is defined as the smallest independently randomizable object, and in biomedical laboratory research, multiple observations per unit are common, creating data dependencies that violate the independence assumptions of standard statistical methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 present well-established statistical principles supported by citations (C4 cites Mead et al., 2012; C11 describes standard methods). The logical progression from definition (C4-C5) through common practice (C6-C8) to consequences (C9-C11) is coherent and represents accepted statistical knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "UoA errors have been recognized as problematic in clinical medicine for over 20 years, leading to guidelines like ARRIVE that require reporting of experimental units, and recent symposia continue to highlight poor experimental design and analysis as key problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are all supported by specific citations: Altman and Bland 1997 (C19), Kilkenny et al. 2009 and 2010 (C21-C22), and Academy of Medical Sciences 2017 (C23). These represent documented historical developments in the field and established reporting guidelines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "In clustered designs, the intraclass correlation coefficient (ICC) affects required sample size through a variance inflation factor (VIF = 1 + (m-1)\u00d7ICC), where m is cluster size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by citation to Hemming et al., 2011 and represents established sample size methodology for clustered designs. Table 1 provides specific VIF values for various combinations of cluster size and ICC, demonstrating the practical implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C68",
+      "C69"
+    ],
+    "result": "The RIPOSTE framework was established to improve laboratory study design and analysis, and recommends prospective registration and publication of study protocols to address UoA issues through increased scrutiny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C16 and C68 are supported by citations (Masca et al., 2015; Altman, 2014). However, C69 is explicitly speculative ('we believe if implemented would go a long way'), making a prediction about future benefits without empirical evidence. The recommendation is reasonable but the claimed effectiveness is undemonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C75"
+    ],
+    "result": "The lack of appreciation of UoA issues in laboratory science may be due to misconceptions about subjective versus objective measures, and the lack of widespread use of mixed-effects models is likely due to lack of knowledge and convention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C75 are explicitly speculative explanations ('may be due to', 'most likely simply a matter of') without empirical evidence. While these are plausible hypotheses for why UoA issues persist, they represent the authors' opinions rather than demonstrated facts. No data or citations support these specific causal explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mixed-effects models originated from R.A. Fisher's work and are routinely used in medical and social sciences and agricultural field experimentation, but have not spread as widely to biomedical laboratory studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by specific citations (Fisher 1919, Mead et al. 2012, Brown and Prescott 2015, Snijders and Bosker 2012). C74 represents an observational claim about differential adoption across disciplines that is consistent with the manuscript's premise and the authors' expertise in the field.",
+    "result_type": "MINOR"
+  }
+]

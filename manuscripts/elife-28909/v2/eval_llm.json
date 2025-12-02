@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A computational design workflow was developed for generating fentanyl-binding proteins. The workflow involved generating 11 fentanyl conformers plus a hydrated model, using PatchDock for shape-complementary docking into protein scaffolds, selecting the top 20 docks per scaffold, and optimizing amino acids within 8 \u00c5 of fentanyl using RosettaDesign. Two design strategies were pursued: introducing specific side chain interactions with the tertiary amine and using hydrated fentanyl for bridging indirect interactions. After filtering based on shape complementarity, interface energy, and SASA, 62 designs were selected for experimental characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C32 describe a coherent computational design methodology with specific parameters (11 conformers, hydrated model with defined geometries, PatchDock docking, top 20 selections, 8 \u00c5 optimization radius, two design strategies, filtering criteria, and 62 final designs). The workflow is internally consistent and the parameters are clearly specified, making it reproducible. The approach is well-documented in the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Experimental screening of 62 computationally designed proteins using yeast surface display identified three fentanyl binders with low micromolar to high nanomolar affinities. Fen49 showed the strongest binding (500 nM for Fen-BSA) and Fen21 showed 10 \u03bcM affinity. These two designs from different scaffold classes were selected for further characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 report the initial experimental validation showing that 61/62 designs expressed well and 3/62 bound fentanyl, with specific affinity values for Fen49 and Fen21 supported by Figure 2a. The success rate (3/62 = ~5%) is reasonable for de novo protein design. The selection of two designs from different scaffold classes for further study is a sound experimental strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Fen49 was designed by introducing 9 mutations to a glycoside hydrolase scaffold (PDB 2QZ3) to optimize protein-ligand interactions. Point mutagenesis experiments confirmed that most computationally substituted positions are crucial for fentanyl recognition, and the unmodified scaffold does not bind fentanyl. Purified Fen49 displayed 6.9 \u03bcM affinity for fentanyl-Alexa-488 conjugate by fluorescence polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 demonstrate that the computational design successfully created a fentanyl binder from a non-binding scaffold through 9 targeted mutations. The point mutagenesis validation (C41, Figure 2b) and negative control with unmodified scaffold (C42) provide strong evidence that the designed mutations are necessary for binding. The affinity measurement (C44, Figure 2c) quantifies binding strength with an orthogonal method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The parent scaffold 2QZ3 was originally a sugar-binding protein cocrystallized with xylotetraose, a highly polar molecule compared to fentanyl. The dramatic repurposing from sugar-binding to fentanyl-binding was possible because the initial docking step focuses on shape complementarity and is agnostic to the polar character of the binding cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 explain the conceptual basis for repurposing a polar sugar-binding protein to bind a hydrophobic ligand. The comparison between xylotetraose and fentanyl polarity (C50, Figure 1b) is well-supported. The inference about shape complementarity enabling repurposing (C51-C52) is consistent with the design methodology and represents a key insight of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "An atomic resolution (1.00 \u00c5) X-ray crystal structure of Fen49 apo was solved, representing one of the first structurally characterized original computational designs. The structure reveals a highly preorganized binding cavity with 28 of 30 non-alanine/non-glycine side chains within ~8\u00c5 of fentanyl adopting the designed rotamer. The overall structure shows very close agreement with the design model (0.26 \u00c5 RMSD over 184/185 residues, TM_align score 0.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 report exceptional structural validation of the computational design. The 1.00 \u00c5 resolution is outstanding, and the metrics (28/30 correct rotamers, 0.26 \u00c5 RMSD, 0.99 TM_align score) demonstrate remarkable accuracy of the design. This represents strong experimental validation that the designed structure matches the computational model with high fidelity. Figure 3a supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Fen49 apo crystals contained PEG in the binding cavity from the crystallization condition. Soaking experiments with fentanyl cracked the crystals and destroyed diffraction, likely due to PEG displacement, preventing structure determination of the parent Fen49-fentanyl complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe a technical limitation in obtaining the Fen49-fentanyl complex structure. The observation of PEG in the binding cavity (C60, Figure 3\u2014figure supplement 1) and crystal cracking upon fentanyl soaking (C61) are clearly reported experimental outcomes. The inference about PEG displacement (C62) is reasonable given the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Site-saturation mutagenesis (SSM) of 184 Fen49 residues followed by 4 rounds of affinity enrichment and next-gen sequencing revealed that the majority of binding site residues were preserved during selection, suggesting a near-optimal binding cavity. Exceptions included three alanines (A67, A78, A172) that enriched for larger hydrophobic residues providing additional packing, and positions above the cavity that enriched for reduced steric hindrance or hydrophobic lid function. Charged amino acids were generally disfavored, though modest E37 enrichment in round 2 suggested possible alternative fentanyl poses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 describe a comprehensive deep mutational scanning experiment that validates the computational design. The SSM library design (3680 variants) and selection strategy are sound. The results showing preservation of most binding site residues (C67-C68, Figure 2b) support design quality, while identification of improvable positions (C69-C71) provides mechanistic insights. The observation about charged residues (C72) and transient E37 enrichment (C73-C75) adds nuance to understanding binding determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A Fen49 variant with two substitutions (A78V and A172I) showed ~100-fold affinity improvement to 64 nM. These substitutions increase packing in the binding site and likely require modest positional adjustment of fentanyl to avoid steric clash with I172.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 report a significant affinity improvement (6.9 \u03bcM to 64 nM) through rational substitutions identified from SSM. The 100-fold improvement is substantial and well-documented (Figure 2c). The structural interpretation about increased packing and potential fentanyl repositioning (C77-C78, Figure 2\u2014figure supplement 2) is reasonable based on the mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A Fen49 Y88A mutant (Fen49*) was identified that proved more suitable for complex structure determination. The 1.79 \u00c5 Fen49*-apo structure revealed a highly preorganized binding site in close agreement with the design (0.72 \u00c5 RMSD, TM_align 0.98), with 25/30 binding site residues adopting design conformations. The main deviation was in the Thr87-Thr93 loop containing Y88A, which disrupted a 3-residue polar network and caused Trp63 and Trp90 to adopt non-designed rotamers, replacing the designed Trp90-fentanyl stacking with a Trp63-fentanyl dipole-quadrupole interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 describe structural characterization of a variant that enabled complex structure determination. The structural metrics (0.72 \u00c5 RMSD, 0.98 TM_align, 25/30 correct rotamers) show good agreement with design despite the Y88A mutation. The detailed description of loop rearrangement and altered Trp interactions (C85-C88, Figures 3 and supplements) is well-supported by crystallographic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Fen49*-apo produced crystals with an empty binding cavity suitable for soaking. A 1.67 \u00c5 Fen49*-fentanyl complex structure was solved showing high similarity to both the design model (0.64 \u00c5 RMSD, TM_align 0.99) and Fen49*-apo (0.42 \u00c5 RMSD, TM_align 0.99). The Thr87-Thr93 loop adopts the same structure in apo and complex, and fentanyl induces minimal active site changes except for Trp63 flipping ~180\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 report successful structure determination of the protein-ligand complex. The structural metrics demonstrate excellent agreement with both the design model and apo structure. The observation of minimal conformational changes upon binding (C94, Figure 3\u2014figure supplement 5) except for Trp63 is consistent with a preorganized binding site and well-supported by the crystallographic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Fentanyl appears to stabilize the binding site, as Fen49*-apo Trp63 and the Thr87-Thr93 loop exhibit higher B-factors compared to the complex. Despite the divergent loop, Fen49 and Fen49* have virtually identical affinities, suggesting the differential Trp63-90 interaction does not substantially affect binding energy. Preorganization of inner binding cavity residues appears to be the main determinant for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 draw mechanistic conclusions from B-factor analysis and affinity measurements. The B-factor observation (C95-C96, Figure 3\u2014figure supplement 6) supports ligand-induced stabilization. The inference that similar affinities despite different Trp interactions (C97-C98) indicates these interactions are not major binding determinants is logical. The conclusion about preorganization (C99) is well-supported by the structural and mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Fen49 was designed to bind solvated fentanyl with a water molecule bridging the tertiary amine to Tyr80. However, crystallographic refinement revealed strong electron density at the designed water position that corresponded to a chloride ion instead. The chloride is coordinated by the protonated tertiary amine, Tyr80, and a nearby water in a trigonal planar arrangement typical for chloride in the PDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 describe an interesting discrepancy between design and experimental structure. The design strategy using a water molecule (C100-C101) is clearly stated. The crystallographic identification of chloride instead of water (C102-C103, Figure 3) is well-documented through electron density analysis. The coordination geometry (C104-C105, Figure 3\u2014figure supplement 7) is validated by comparison to PDB structures (Carugo, 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Binding experiments in chloride-free buffer showed nearly identical affinities for Fen49.1 but a modest 3-fold reduction for Fen49*, suggesting chloride is preferred but not required for binding. In the absence of chloride, a water molecule likely takes its place as in the design model. A second water molecule is observed at the designed position on the fentanyl carbonyl oxygen. The Tyr80-chloride interaction in Fen49* is mimicked by a Tyr80-PEG hydrogen bond in the Fen49 parent structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 address the functional role of the chloride ion through buffer exchange experiments. The modest effect on affinity (C106-C107) supports the inference that chloride is preferred but not essential (C108). The speculation about water replacement (C109) is reasonable given the design. The observations about the carbonyl water (C111) and PEG mimicking chloride (C110, Figure 3\u2014figure supplement 1) provide additional structural context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Fentanyl binders were incorporated into a transcription factor-based biosensor system coupling ligand binding to transcription activation. In Arabidopsis protoplasts, both Fen21 and Fen49 TFs activated luciferase expression in the presence of fentanyl. The Fen21-based sensor produced an 8-fold increase over background with 250 \u03bcM fentanyl, while Fen49 showed modest background signal suggesting it is too stable in apo form to function effectively as a sensor without additional engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 demonstrate proof-of-concept for biosensor application. The experimental design using a degron-based TF system (C112, citations provided) is established. The protoplast results (C114-C118, Figure 4a) show both designs function as sensors with Fen21 performing better. The interpretation that Fen49's stability limits sensor function (C119-C120) is a reasonable inference from the background signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Stably transformed Arabidopsis plants expressing the Fen21 TF showed fentanyl-dependent luciferase induction. Plants incubated with 100 \u03bcM fentanyl showed ~5-fold increase in luciferase activity at 24 hr, increasing to 10-fold at 72 hr. Higher fentanyl concentrations (250 \u03bcM) were toxic to plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 demonstrate the biosensor functions in intact plants, not just isolated cells. The time-course data (C124-C125, Figure 4b) shows dose-dependent and time-dependent response. The observation of toxicity at 250 \u03bcM (C123) is an important practical consideration. This represents successful translation from protoplasts to whole organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Fen49 does not possess conserved MOR sequence elements required for agonist/antagonist binding. While fentanyl likely makes a direct salt bridge with MOR via its tertiary amine and a conserved aspartate, an entirely orthogonal soluble protein was designed that exploits indirect protein-ligand interactions and shape complementarity as primary binding drivers. This expands the repertoire of computationally designable small molecules to include predominantly hydrophobic, flexible ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 contextualize the achievement by contrasting the designed protein with the natural receptor. The statements about MOR binding (C126-C127, citations provided) establish the different binding mode. The claim about expanding design capabilities (C129) is justified given the successful design of a binder for a flexible, hydrophobic ligand, which was stated as challenging (C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The computational approach lays the foundation for engineering plant-based sensors that could theoretically detect any small molecule. Unlike previous methods, the approach that generated Fen49 required no manual intervention and could be rapidly applied to many ligands. Binders for toxic small molecules like fentanyl should find applications as environmental sensors and antidotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C133 make forward-looking statements about potential applications and generalizability. While the automated nature of the method (C132-C133) is supported and represents an advance over prior work (Tinberg et al., 2013), the claims about detecting 'any small molecule' (C131) and applications as sensors/antidotes (C130) are speculative. The sensor application is demonstrated, but antidote function is not tested. These are reasonable future directions but not yet validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "A second fentanyl molecule was observed on the periphery of the binding cavity. The phenylethyl moiety points toward solvent and could not be modeled in 2 of 3 asymmetric unit copies due to disorder. This second fentanyl makes a hydrogen bond to the backbone amide of Thr91 via its carbonyl oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 report an additional structural observation of a second, peripheral fentanyl binding site. The observation is supported by Figure 3\u2014figure supplement 9. The partial disorder (C135) and hydrogen bonding interaction (C136) are clearly described. This represents a minor but interesting structural detail that does not affect the main conclusions.",
+    "result_type": "MINOR"
+  }
+]

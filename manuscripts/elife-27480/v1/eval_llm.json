@@ -1,0 +1,494 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ASP3 is a post-Golgi resident aspartyl protease that localizes to the endosomal-like compartment (ELC) and beyond. Western blot analysis revealed two major forms (~70 kDa full-length and 50 kDa processed), and immunofluorescence analysis showed ASP3 localizes in the vicinity of the ELC without perfect colocalization with any single marker, suggesting presence in multiple subcompartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C44-C47 are well-supported by western blot data (Figure 1A) showing two forms of ASP3 and IFA data (Figure 1B-C) demonstrating localization near ELC markers (GRASP, DrpB, proM2AP). The inference that ASP3 is present in multiple subcompartments is reasonable given the partial colocalization patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ASP3 is essential for parasite viability and requires catalytic activity. Gene excision was unsuccessful, necessitating conditional knockdown. Plaque assays showed no plaque formation upon ASP3 depletion, which was rescued by wild-type ASP3 but not by a catalytically dead mutant (asp3ty-D299A). The processing defect of the dead mutant suggests autocatalytic maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by plaque assay data (Figure 1D) and western blot analysis (Figure 1\u2014figure supplement 6A-B). The complementation experiments with wild-type and catalytically dead mutants provide strong evidence for the essential nature of ASP3 and its catalytic activity. The autocatalytic maturation inference is reasonable based on the processing patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ASP3 depletion specifically impairs invasion and egress without affecting intracellular growth, attachment, gliding motility, or organellar morphology. Invasion and induced egress assays showed severe defects, while other lytic cycle steps remained normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are well-supported by multiple functional assays (Figure 1E-I and Figure 1\u2014figure supplement 6C). The data clearly demonstrate selective defects in invasion and egress while other parasite functions remain intact, providing strong evidence for ASP3's specific role in these processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ASP3-depleted parasites show delayed egress with parasites trapped in spherical detached host cells, eventually rupturing the host plasma membrane. This phenotype is reminiscent of parasites lacking the microneme perforin PLP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by live microscopy data (Videos 1-3, Figure 1\u2014figure supplement 6D). The comparison to PLP1-deficient parasites (C61) is appropriate given the similar phenotypes and is supported by citation to Kafsack et al., 2009.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ASP3 is necessary for rhoptry content discharge and host plasma membrane lysis. ASP3 depletion did not affect microneme secretion but completely abolished evacuole formation and RON4 localization at the moving junction (>90% of parasites), explaining the severe blocks in invasion and egress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are strongly supported by ESA western blot data (Figure 1J), evacuole formation assays (Figure 1K), and moving junction formation assays (Figure 1L, Figure 1\u2014figure supplement 6E). The conclusion that ASP3 is necessary for rhoptry discharge and host PM lysis is well-justified by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "TAILS analysis identified ASP3 substrates by comparing N-terminomes of wild-type and ASP3-depleted parasites. The analysis yielded 32,594 PSMs representing 1,529 proteins, with 1,487 N-terminal peptides identified. Among 872 TMT-labeled peptide groups, 65 showed significant +ATc/-ATc ratios representing 41 unique proteins, predominantly MICs, RONs, and ROPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by the TAILS data presented in Figure 2 and Table 1. The methodology is appropriate for identifying protease substrates, and the enrichment of secretory organelle proteins (MICs, RONs, ROPs) is consistent with ASP3's localization and phenotypic effects. The statistical thresholds used (ratios <0.22 or >2) are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ASP3 is required for processing of specific microneme proteins (M2AP, MIC3, MIC6) but not others (MIC2, MIC4, CPL, MIC8). Unprocessed MICs still traffic correctly to micronemes, as demonstrated by IFA with pro-domain antibodies. The processing defect is rescued by wild-type ASP3 but not by the catalytically dead mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are well-supported by western blot data (Figure 3A-C) and IFA data (Figure 3G, Figure 3\u2014figure supplement 1B). The selective processing defects and normal trafficking of unprocessed proteins provide important mechanistic insights. The complementation experiments confirm ASP3's catalytic role in processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "MIC5 is processed normally in ASP3-depleted parasites, suggesting an alternate protease acts as maturase for a subset of MICs. TLN4 showed altered processing upon ASP3 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by western blot data (Figure 3D-E). The normal processing of MIC5 in ASP3-depleted parasites provides evidence for substrate specificity and the existence of other maturases. The inference about an alternate protease is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PLP1 was identified in TAILS analysis and shows slight alteration in processing pattern upon ASP3 depletion, though not severely compromised. The authors cannot exclude that the egress defect is caused by partially impaired PLP1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 are partially supported by TAILS data and western blot (Figure 3F), but the processing defect is described as difficult to assess and not severe. The speculation about PLP1's role in the egress phenotype (C83) is appropriately cautious but lacks definitive evidence. Additional experiments would be needed to confirm PLP1's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "ASP3 indirectly affects post-exocytosis processing of MICs through SUB1. While microneme secretion is normal, post-exocytosis processing of MIC2, M2AP, and MIC4 is altered. SUB1 was enriched in TAILS analysis, shows altered processing in ESA fractions, but normal trafficking and secretion. ASP3 plays a direct or indirect role in SUB1 maturation and activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 are supported by ESA western blot data (Figure 1J, Figure 3H-K) and IFA data (Figure 3J). The TAILS data (Table 1) supports SUB1 as an ASP3 substrate. The conclusion that ASP3 affects SUB1 maturation, thereby indirectly affecting post-exocytosis MIC processing, is well-reasoned and supported by the data showing altered SUB1 processing patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ASP3 is necessary for processing of ROPs and RONs. Unprocessed forms accumulate upon ASP3 depletion (24-48h ATc treatment), but trafficking to rhoptries is unaffected. RON2-RON4 complex formation is maintained despite lack of processing. The processing phenotype is complemented by wild-type ASP3 but not the catalytically dead mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are well-supported by western blot data (Figure 4A-E) and IFA data (Figure 4F, Figure 4\u2014figure supplement 1A-B). The co-immunoprecipitation data (Figure 4G) demonstrates that complex formation is independent of processing. The complementation experiments confirm ASP3's catalytic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "ASP3 depletion abolishes pro-domain processing of TLN1 while C-terminal cleavage remains unaffected, indicating multiple proteases are involved in TLN1 maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by western blot data (Figure 4I). The differential effect on N-terminal versus C-terminal processing provides evidence for multiple proteases acting on TLN1, with ASP3 specifically responsible for pro-domain removal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SUB2 does not act as a maturase for ROPs and RONs. Endogenous tagging of SUB2 in ASP3-iKD background showed no processing defect, and CRISPR/Cas9-mediated SUB2 knockout parasites showed normal ROP and RON processing. This excludes SUB2's presumed role and suggests ASP3 is directly responsible for ROP/RON processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are strongly supported by western blot data from both SUB2 tagging experiments (Figure 4\u2014figure supplement 4A) and SUB2 knockout experiments (Figure 4\u2014figure supplement 4B-E). The knockout data definitively excludes SUB2 as the ROP/RON maturase, making ASP3 the most likely candidate. This is a critical negative result that clarifies the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Five novel rhoptry proteins (TAILS3, 5, 6, 7, 8) were identified and validated from TAILS candidates. All five localized to rhoptries and showed processing defects upon ASP3 depletion. TAILS3 corresponds to RON11. TAILS3 and TAILS8 showed altered distribution within rhoptries when unprocessed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 are well-supported by IFA data (Figure 5B,D,F,H,J,L,M) and western blot data (Figure 5C,E,G,I,K). The identification and validation of novel rhoptry proteins demonstrates the power of the TAILS approach. The altered localization of unprocessed TAILS3 and TAILS8 suggests processing may affect intra-organellar distribution for some proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Compound 49c, a hydroxyethylamine scaffold-based antimalarial, interferes with T. gondii lytic cycle with IC50 ~676 nM. It blocks invasion, egress, and rhoptry discharge without affecting gliding motility, intracellular growth, or microneme secretion. 49c recapitulates ASP3 depletion phenotypes by inhibiting pre- and post-exocytosis processing of MICs, ROPs, and RONs. The related compound 49b shows poor activity (IC50 >10 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are strongly supported by IC50 data (Figure 6B), functional assays (Figure 6C-G, Figure 6\u2014figure supplement 1A-B), and western blot data (Figure 6E,F,H, Figure 6\u2014figure supplement 1C-D). The phenotypic similarity to ASP3 depletion and the specificity demonstrated by 49b's lack of activity provide compelling evidence that 49c targets ASP3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The time frame of parasite sensitivity to 49c reflects the time necessary for MIC/RON/ROP maturation and trafficking. Minimal impact was observed with <3h treatment or extracellular treatment, while maximal defects occurred with 42-48h pre-treatment. Washing compound 3-6h before egress failed to rescue the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by time-course experiments (Figure 6I-K). The temporal requirements for 49c activity align well with the known timing of secretory organelle biogenesis (2-3h period). The inability to rescue by washing demonstrates that the compound's effects are on protein maturation rather than acute inhibition of secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "49c does not affect ASP5 function. ASP3-depleted and 49c-treated parasites show normal MNN formation, and 49c has no impact on ASP5 maturation or processing/export of GRA16 (an ASP5 substrate), indicating 49c does not inhibit ASP5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 are supported by IFA data (Figure 6\u2014figure supplement 2A) and western blot data (Figure 6\u2014figure supplement 2B-D). These control experiments are important for demonstrating the specificity of 49c for ASP3 versus other aspartyl proteases in the parasite.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "In vitro cleavage assays confirm ASP3 acts as a maturase for MICs and ROPs. Immunoprecipitated ASP3ty cleaved GST-MIC6 and fluorogenic peptides (MIC6, ROP1, ROP13, SUB1, MIC3), while asp3ty-D299A showed no activity. 49c blocked cleavage at 100 nM (peptides) or 1 \u03bcM (GST-MIC6), while pepstatin A had no effect at 10 \u03bcM. Data on RONs remain inconclusive due to uncertainty about cleavage sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130 are strongly supported by in vitro cleavage assay data (Figure 7A-F, Figure 7\u2014figure supplement 1). The combination of recombinant protein and fluorogenic peptide assays provides robust evidence for direct ASP3 activity on MIC and ROP substrates. The inhibition by 49c and lack of inhibition by pepstatin A support the specificity of both ASP3 activity and 49c inhibition. The caveat about RONs (C128) is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "TAILS analysis confirmed previously reported cleavage sites for MIC6 (VQLS|ETPA), ROP1 (SFVE|APVR), and ROP13 (SFTE|GTNE), but did not reveal an obvious consensus sequence motif for ASP3-specific cleavage sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 are supported by the TAILS data. The confirmation of known cleavage sites validates the TAILS methodology. The lack of an obvious consensus sequence (C134) is a reasonable conclusion from the data and suggests substrate recognition involves structural features beyond primary sequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The combination of in vivo and in vitro data demonstrates ASP3's role in pre-exocytosis processing of MICs and ROPs. While no direct evidence was obtained for RON processing, it is likely ASP3 processes RONs based on TAILS data and phenotypic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 represent reasonable summary conclusions. The role in MIC and ROP processing is well-demonstrated by multiple lines of evidence. The inference about RON processing (C139) is appropriately cautious given the lack of direct in vitro evidence, but is supported by TAILS data, accumulation of unprocessed RONs in vivo, and the invasion phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "ASP3 depletion alters SUB1 processing pattern, hampering its activation and explaining the indirect impact on post-exocytosis processing of MIC2, M2AP, and MIC4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 is supported by data shown in Figure 3G-J demonstrating altered SUB1 processing in ESA fractions from ASP3-depleted parasites. This provides a mechanistic explanation for the indirect effects on post-exocytosis MIC processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "ASP3 depletion causes severe blocks in invasion and egress attributable to defects in rhoptry discharge and host plasma membrane lysis. While cleavage is not essential for organellar trafficking, the phenotypic links between lack of proteolytic processing and observed phenotypes are not obvious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 represent appropriate summary statements and acknowledgment of complexity. The phenotypic effects are well-documented, and the statement about non-obvious mechanistic links (C143) appropriately reflects the complexity of connecting processing defects to functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Rhoptries are apically positioned and MIC8 is not affected by ASP3 depletion, leaving open the identification of the ASP3 substrate implicated in rhoptry discharge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 are supported by the data showing normal rhoptry positioning and MIC8 processing (Figure 3\u2014figure supplement 1). The acknowledgment that the critical substrate for rhoptry discharge remains unidentified (C148) is appropriate given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "PLP1 is a candidate to explain the egress defect in ASP3-depleted parasites. Western blot indicates slight alteration of PLP1 processing that might result in partial dysfunction of perforin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C150 represent reasonable hypotheses based on PLP1's known role in egress and its identification in TAILS analysis. However, the western blot data (Figure 3F) shows only slight alterations that are difficult to assess definitively. Additional functional studies of PLP1 in ASP3-depleted parasites would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "The peptidomimetic inhibitor 49c validates the druggability of ASP3 to interfere with invasion and egress, two key steps in the apicomplexan lytic cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 is a reasonable conclusion supported by the combined data showing 49c's activity against T. gondii (IC50 ~676 nM), its phenotypic similarity to ASP3 depletion, and its direct inhibition of ASP3 activity in vitro. This demonstrates proof-of-concept for targeting ASP3 therapeutically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims about T. gondii and P. falciparum pathogenesis and the lack of effective vaccines or eradicating treatments for Apicomplexa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 represent well-established facts about apicomplexan parasites and are appropriately cited or represent general knowledge in the field. These provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background claims about microneme and rhoptry protein function, trafficking, processing, and the roles of various proteases and protein complexes in invasion and egress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C42 represent established knowledge from the literature, appropriately cited throughout. These provide essential background for understanding the significance of ASP3's role in secretory protein maturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "ASP3 groups phylogenetically with Plasmepsin IX and X (PMIX and PMX) in malaria parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by the phylogenetic tree shown in Figure 1\u2014figure supplement 1. This phylogenetic relationship is important for understanding the potential of 49c to target both T. gondii ASP3 and Plasmodium plasmepsins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Compound 49c exhibits subnanomolar IC50 against P. falciparum, acts on late erythrocytic stages by blocking egress and invasion, and potentially targets PMIX and PMX that cluster phylogenetically with ASP3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by citations to Boss et al., 2003 and Ciana et al., 2013, and by the phylogenetic analysis (Figure 1\u2014figure supplement 1). The hypothesis that 49c targets PMIX/PMX (C111) is reasonable given the phylogenetic relationship and the compound's activity profile.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Speculation about ASP3 substrate recognition mechanisms and caveats about TAILS data interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 represent appropriate speculation and caveats. C135 is a reasonable hypothesis about substrate recognition given the lack of consensus sequence. C136 appropriately acknowledges potential secondary effects in the TAILS data. These represent thoughtful discussion points rather than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Discussion of future research directions, drug target potential, and context about other antimalarial targets and T. gondii aspartyl proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C157 represent appropriate discussion points about the significance of the findings and context within the field. C157 is supported by citations to Hammoudi et al., 2015 and Coffey et al., 2015. These claims provide important perspective on the work's implications.",
+    "result_type": "MINOR"
+  }
+]

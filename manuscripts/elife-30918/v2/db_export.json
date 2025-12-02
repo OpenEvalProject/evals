@@ -1,0 +1,1648 @@
+{
+  "submission": {
+    "id": "d0d33f98-2882-4d61-bc63-751972bab491",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:07:38.734236Z",
+    "updated_at": "2025-12-01T22:07:38.734236Z"
+  },
+  "content": [
+    {
+      "id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "submission_id": "d0d33f98-2882-4d61-bc63-751972bab491",
+      "content_type": "manuscript",
+      "content_text": "# The somatically generated portion of T cell receptor CDR3\u03b1 contributes to the MHC allele specificity of the T cell receptor\n\n## Authors\n\n- Philippa Marrack<sup>1</sup> ([ORCID: 0000-0003-1883-3687](https://orcid.org/0000-0003-1883-3687)) \u2020\n- Sai Harsha Krovi<sup>3</sup>\n- Daniel Silberman<sup>2</sup>\n- Janice White<sup>2</sup>\n- Eleanor Kushnir<sup>2</sup>\n- Maki Nakayama<sup>3</sup>\n- James Crooks<sup>5</sup>\n- Thomas Danhorn<sup>5</sup> ([ORCID: 0000-0002-3861-8602](https://orcid.org/0000-0002-3861-8602))\n- Sonia Leach<sup>2</sup>\n- Randy Anselment<sup>5</sup>\n- James Scott-Browne<sup>6</sup>\n- Laurent Gapin<sup>3</sup>\n- John Kappler<sup>1</sup>\n\n### Affiliations\n\n1. Howard Hughes Medical Institute Denver United States\n2. Department of Biomedical Research National Jewish Health Denver United States\n3. Department of Immunology and Microbiology University of Colorado School of Medicine Aurora United States\n4. Barbara Davis Center for Childhood Diabetes University of Colorado School of Medicine Aurora United States\n5. Division of Biostatistics and Bioinformatics National Jewish Health Denver United States\n6. La Jolla Institute for Allergy and Immunology La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMature T cells bearing \u03b1\u03b2 T cell receptors react with foreign antigens bound to alleles of major histocompatibility complex proteins (MHC) that they were exposed to during their development in the thymus, a phenomenon known as positive selection. The structural basis for positive selection has long been debated. Here, using mice expressing one of two different T cell receptor \u03b2 chains and various MHC alleles, we show that positive selection-induced MHC bias of T cell receptors is affected both by the germline encoded elements of the T cell receptor \u03b1 and \u03b2 chain and, surprisingly, dramatically affected by the non germ line encoded portions of CDR3 of the T cell receptor \u03b1 chain. Thus, in addition to determining specificity for antigen, the non germline encoded elements of T cell receptors may help the proteins cope with the extremely polymorphic nature of major histocompatibility complex products within the species.\n\n## Introduction\n\nMany T lymphocytes in the body express clonally distributed T cell antigen receptors composed of alpha and beta chains (TCRs) that react with peptides derived from pathogens and other foreign materials bound in a groove on the surface of host major histocompatibility proteins (MHCs) (Allison et al., 1982; Babbitt et al., 1985; Haskins et al., 1983; Meuer et al., 1983; Shimonkevitz et al., 1983). The genes encoding these MHC proteins are the most polymorphic genes in a given species. Most of the polymorphisms tend to be concentrated within the residues that line the peptide-binding groove of the molecules (Bjorkman et al., 1987). Hence, in general, different MHC alleles within a species preferentially bind, and present to TCRs, different peptides from any given invading organism. Thus the pathogen is unlikely to mutate such that none of its peptides bind to any of the MHC proteins expressed within the target species and the immune responses of at least some individuals within the infected species will be able to deal with the invading pathogen.\n\nMany years ago another consequence of MHC polymorphisms was recognized. The allelic variants of MHC expressed in one individual are very frequently recognized by 1% or more of the T cells of other individuals expressing different MHC alleles, a phenomenon called \u2018alloreactivity\u2019. While differences in bound peptides play an important role in alloreactivity (Hunt et al., 1990; Crumpacker et al., 1992), structural studies show that some of the allelic variations in MHC proteins themselves interact with the TCRs of alloreactive T cells (Grandea and Bevan, 1993; Archbold et al., 2008; Colf et al., 2007).\n\nExperiments have shown that T cells in one individual are more likely to react with foreign peptides bound to the grooves of self MHC than to foreign peptides bound to foreign MHC (Fink and Bevan, 1978; Zinkernagel et al., 1978; Kappler and Marrack, 1978; Sprent, 1978). This phenomenon, known to be the consequence of thymic positive selection, is caused by the fact that thymocytes are allowed to develop into mature T cells only if the TCR they bear reacts with low affinity/avidity with MHC proteins bound to self peptides in the thymus (Sprent et al., 1988; Ashton-Rickardt et al., 1994; Sebzda et al., 1994; Hogquist et al., 1994). Paradoxically, in an apoptotic process termed \u2018negative selection\u2019, the thymus generally weeds out T cell progenitors that react with too high affinity/avidity with self MHC plus self peptide, thus preventing the maturation of many potentially self reactive T cells (Kappler et al., 1987; von Boehmer et al., 1989). Thus the collection of TCRs on mature T cells in any individual bears the footprint of positive selection, reacting almost undetectably with self MHC bound to self peptide and being more likely to react with foreign peptides bound to alleles of MHC to which they were exposed in the thymus than to peptides bound to unfamiliar MHC (Fink and Bevan, 1978; Zinkernagel et al., 1978; Kappler and Marrack, 1978; Sprent, 1978; H\u00fcnig and Bevan, 1981).\n\nThe simplest explanation for the effects of positive selection on the reactivity of mature T cells is that the phenomenon involves interactions between TCRs and allele-specific amino acids of MHC in the thymus. However, since different MHC alleles will bind different self peptides, positive selection may instead or, in addition, depend on interactions between TCRs and the MHC-bound self peptides. These ideas make different predictions about the portions of TCRs contributing to positive selection.\n\nMutational and structural studies have shown that the alpha and beta chains that comprise TCRs each usually engage MHC\u00a0+\u00a0peptide via three complementary determining loops (CDRs 1,2 and 3) (Garcia et al., 1996; Reinherz et al., 1999; Dai et al., 2008). For both the TCR alpha and beta chains, two of these loops, CDR1 and CDR2, are encoded by the germ line Trav (for the TCR\u03b1 chain) and Trbv (for the TCR\u03b2 chain) genes. The third, CDR3, loop for each chain, on the other hand, is produced during TCR gene rearrangement as the cells develop in the thymus (Davis, 1985). Thus, the sequence coding for CDR3\u03b1, for example, is created when one of many Trav gene segments rearranges to fuse with one of the many Traj gene segments with the total number of possible CDR3\u03b1 sequences increased by removal and/or addition of bases at the joining points of Trav and Traj (Gellert, 2002; Cabaniols et al., 2001; Moshous et al., 2001; Lu et al., 2008). This process creates the DNA coding for the entire V\u03b1 domain. The stretch of DNA coding for CDR3\u03b2 is constructed along the same lines, by joining of one of a number of Trbv, Trbd and Trbj gene segments, again with bases removed or introduced at the joining points to form the CDR3 loop of the complete V\u03b2 domain.\n\nThe fact that the TCR CDR1 and CDR2 loops are germline encoded and therefore relatively fixed, whereas the TCR CDR3 loops are at least partially somatically generated and therefore very variable led investigators to suggest that the CDR1 and CDR2 loops would contact germline encoded MHC whereas the CDR3 loops would contact the extremely variable and unpredictable foreign peptide. Indeed evidence that the CDR3 loops contact peptide rapidly appeared (Danska et al., 1990; Kelly et al., 1993; Wither et al., 1991). Other studies investigated the orientation of the TCR on MHC and suggested that the TCR might always lie approximately perpendicularly on MHC (Jorgensen et al., 1992) and that TCR/MHC interactions would always have the same orientation (Sant'Angelo et al., 1996). However, when crystallographically solved structures of TCRs on MHC became available it was soon apparent that TCRs are usually oriented diagonally on the MHC, but the angle of their interaction varies quite considerably from one structure to another. Moreover, the solved structures also showed that the predictions about contact points between CDR loops and MHC and peptide are by no means absolute. Although the TCR CDR3 regions are often focused on the peptide, amino acids in these regions sometimes also contact MHC and, vice versa, CDR1 and CDR2 amino acids sometimes contact peptide in addition to their predicted interactions with MHC(Garboczi et al., 1996; Garcia et al., 1996; Hennecke and Wiley, 2001; Meuer et al., 1983; Rudolph et al., 2006).\n\nThese results bear on our understanding of positive selection in the thymus. Were positive selection to depend only on TCR/MHC interactions, and CDR1 and CDR2 to react only with MHC amino acids, one might predict that positive selection selects TCRs that react well with peptides bound to self rather than foreign MHC by picking out TCRs bearing TRAVs and TRBVs that react favorably with self MHC. Indeed there is evidence that this is the case (Pircher et al., 1992; Merkenschlager et al., 1994; Sim et al., 1996). Conversely, if positive selection were to depend only on TCR/self peptide interactions, as suggested by some studies (Ignatowicz et al., 1996; Tourne et al., 1997; Nikoli\u0107-Zugi\u0107 and Bevan, 1990; Hogquist et al., 1994; Ashton-Rickardt et al., 1994; Wong and Rudensky, 1996; Barton et al., 2002), and CDR3 loops to react only with the MHC-bound peptide, then CDR3 regions might be the determining factor. However, as discussed above, amino acids in CDR1s and CDR2s sometimes react with the presented peptide and CDR3 amino acids can interact with MHC. Understanding of this issue is complicated by the cooperative nature of TCR interactions with its ligands, by which an interaction at one site on the TCR/MHC/peptide surface adjusts interactions elsewhere (Mazza et al., 2007; Baker et al., 2012; Adams et al., 2016) and a study that indicated that the entire sequence of the TCR\u03b1 chain, including the TRAV, TRAJ and CDR3\u03b1, is involved in positive selection (Merkenschlager et al., 1994).\n\nWe set out to resolve these issues. We analyzed the TCR\u03b1 repertoires of na\u00efve CD4 T cells in mice that each expressed one of two TCR\u03b2 chains, DO\u03b2WT or DO\u03b248A (Scott-Browne et al., 2009), and a single MHCII protein, IA, of alleles b, f or s (for simplicity and ease of reading we will use IA to describe what are often termed I-A proteins, and we will not use superscripts to denote MHC and IA alleles). As predicted by previous studies (Pircher et al., 1992; Merkenschlager et al., 1994; Sim et al., 1996), the frequency with which mature T cells used different TRAVs was indeed affected to some extent by the MHCII allele on which they were positively selected and by the coexpressed TCR\u03b2. Likewise the TRAJs used were affected by the selecting MHCII allele and coexpressed TCR\u03b2, but demonstrated unexpected biases towards use of the TRAJs that were furthest from the TRAV locus.\n\nMost surprisingly, however, the CDR3\u03b1 sequences differed markedly depending on the MHCII allele and partner TCR\u03b2 in the mouse. This was true even if we compared, between MHC alleles, the TCR\u03b1 sequences constructed from rearrangements involving the same TRAVs and TRAJs, indicating that the non germ line encoded portions of CDR3\u03b1are involved in MHCII allele specific selection.\n\n## Results\n\n### The generation and properties of mice expressing a single TCR beta chain\n\nThe impact of positive selection on the TCR repertoire of mature T cells cannot be understood by sequencing only the expressed Tcra or Tcrb chain genes. This is because others and we have found a fairly high percentage of individual TCR\u03b1 or TCR\u03b2 sequences are expressed in animals regardless of their MHC haplotype (Robins et al., 2010; Warren et al., 2011; Liu et al., 2014) (Supplementary file 1). Presumably this is at least in part possible because each individual chain is paired with a different partner(s) in animals with different MHC alleles. Therefore, the pairs of TCR chains expressed in individual T cells must be known in order to understand the impact of thymus selection on the TCR repertoire of mature T cells.\n\nThe T cells in any given mouse or human have been reported to bear, collectively, more than 105 different TCR\u03b1and about the same number of different TCR\u03b2 chain sequences (Venturi et al., 2011; Li et al., 2016). Thus the T cells might bear up to 1010 different combinations of these chains. Although methods for sequencing and accurately pairing the TCR\u03b1 and TCR\u03b2 (or immunoglobulin heavy and light chain) RNAs from many individual T (or B) cells have been described (Tan et al., 2014; DeKosky et al., 2013), in our experience (Munson et al., 2016) these are still not able to cope with the large numbers of individual chains and combinations we expect in normal animals. Therefore we decided to limit our analyses to the T cells in animals that expressed a single TCR\u03b2 and any possible TCR\u03b1. This choice has two advantages. It allowed accurate knowledge of the TCR\u03b2 on the T cells and, because it was expected that only a limited number of TCR\u03b1 chains can be positively selected with a single TCR\u03b2, it limited the numbers of different TCR\u03b1sequences we expected to find in the mice (Merkenschlager et al., 1994; Fukui et al., 1998; Hsieh et al., 2006).\n\nWe chose two TCR\u03b2 chains for these experiments. These were the TCR\u03b2 originally isolated from a T cell hybridoma constructed from BALB/c T cells specific for IAd or IAb bound to a peptide from chicken ovalbumin, the DO\u03b2WT TCR\u03b2 (White et al., 1983) and the same TCR\u03b2 with a mutation in its TRBV region such that the tyrosine at position 48 was changed to an alanine, DO\u03b248A (Scott-Browne et al., 2009). This mutation reduces the ability of the TCR\u03b2 chain to react with the alpha chain alpha helix of MHCII and with the alpha1 alpha helix of MHCI. The chain was chosen for our analyses because we thought that the TCR\u03b1 sequences that could successfully overcome the deficits in MHC recognition by the TCR\u03b2 chain might more clearly illustrate the properties of the TCR\u03b1 needed for successful positive selection.\n\nThe goal of these studies was to find out how the allele of MHC involved in thymic selection affects the sequences of the TCRs on the selected T cells. To achieve this we studied TCRs on na\u00efve CD4 T cells that had been selected in some of the readily available mice that expressed a single MHCII protein, IAb, IAf and IAs (Mathis et al., 1983). Transgenic mice that expressed either DO\u03b2WT or DO\u03b248A and no other TCR\u03b2 were crossed such that they each expressed one of these MHCII alleles. The numbers of mature CD4 and CD8 T cells in the thymuses of the H2 b, f or s strains of mice were measured. As predicted by our previous data using retrogenic mice (Scott-Browne et al., 2009), the numbers of mature CD4 or CD8 thymocytes in mice expressing DO\u03b248A were much lower than those in mice expressing DO\u03b2WT (Figure 1A, Figure 1\u2014source data 1). This was true regardless of the MHC allele on which the cells were selected. Thus the TCR\u03b2 48A for 48Y substitution affects MHC interactions regardless of the MHC class or allele, as we have previously predicted (Scott-Browne et al., 2009). The difference in numbers of mature T cells between mice expressing DO\u03b2WT and DO\u03b248A was less marked in peripheral lymph nodes than in the thymus (Figure 1B), probably because of increased homeostatic expansion, as exemplified by the increased percentages of CD44hi T cells amongst those few that could mature in DO\u03b248A mice (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig1-v2.jpg)\n\n**Figure 1.:** Cells were isolated from the thymuses and lymph nodes of mice expressing a singl;e TCR\u03b2, DO\u03b2WT or DO\u03b248A, and different MHC haplotypes and stained for expression of CD4 and CD8 and CD44. Results are the means and standard errors of the mean (SEMs) of three independently analyzed mice expressing the indicated TCR\u03b2s and MHC II alleles. Student t analyses were used to compare results between the DO\u03b2WT and DO\u03b248A paired samples. *p<0.05., **p<0.01, ***p<0.001.\n\nThere were more mature CD4 than CD8 T cells in the lymph nodes of mice expressing DO\u03b2WT and H2b (Figure 1D). The effect was much less marked in mice expressing H2f or H2s. The phenomenon may be due to the fact that DO\u03b2WT was found in a TCR that reacts with IAd or IAb plus a foreign peptide (OVA 327\u2013339) and not from an MHCI-reactive TCR (White et al., 1983). The bias towards CD4 versus CD8 T cells in H2b animals was not manifest in lymph node cells bearing DO\u03b248A and was, indeed, reversed in animals expressing that TCR\u03b2 and H2f or H2s.\n\n### The TCR\u03b1 confers a bias towards reactivity with the selecting MHC allele\n\nMature T cells do not usually react detectably with self MHC alleles plus self peptides, the reactivity that presumably allowed their positive selection in the thymus. However, the potential inadequacies of DO\u03b248A allowed us to test whether or not the TCR\u03b1s that, on mature T cells, paired with it did indeed react preferentially with the MHCII allele on which they were positively selected. We guessed that introduction of the more prominently MHC-reactive DO\u03b2WT chain into DO\u03b248A T cells might reveal the underlying reactivity of the TCR\u03b1 sequences in these T cells for various MHC alleles. Thus we isolated CD4 T cells from mice expressing the DO\u03b248A transgene, stimulated them with anti-TCR, transduced them with a GFP+\u00a0retrovirus expressing the DO\u03b2WT chain, and tested the ability of the transductants to react with cells expressing different alleles of MHC. CD69 expression was used as a marker of activation. Non transduced (GFP-) cells in the same cultures were used as controls. In no case did the nontransduced cells show a significant response. However, some of the DO\u03b2WT transduced cells responded. Notably, the percentage of the transduced cells that responded to challenge was always greatest if the antigen presenting cells expressed the MHC allele on which the T cells were positively selected Figure 2,\u00a0(Figure 2\u2014source data 1). For example, T cells from a DO\u03b248A H2b mouse, after transduction to express DO\u03b2WT, were most likely to react with H2b presenting cells and DO\u03b2WT transduced cells from DO\u03b248A H2s mice reacted only with challenge cells expressing H2s. These experiments show that the TCR\u03b1 chain that pairs with the transgenic DO\u03b248A does indeed contribute to the preference of CD4 T cells to react with peptides bound to the MHCII allele involved in positive selection.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig2-v2.jpg)\n\n**Figure 2.:** Na\u00efve CD4 T cells were isolated from the lymph nodes of DO\u03b248A H2b, f or s mice and incubated for 2 days in wells coated with anti-TCR\u03b2 and anti-CD28. Thus activated, the cells were spinfected with GFP-expressing retroviruses expressing also DO\u03b2WT or DO\u03b248A. The cells were cultured for a further 2 days and then challenged with spleen cells from mice expressing the indicated MHC alleles, or in the absence of added spleen cells. One day later the cells were stained for expression of CD69. Results were calculated as the (% of GFP+\u00a0T cells transduced with DO\u03b2WT-expressing retroviruses that were CD69+) \u2013 (the % of GFP+\u00a0T cells transfected with DO\u03b248A-expressing retroviruses that were CD69+) in wells containing the same challenge spleen cells. Shown are the average results\u00a0\u00b1\u00a0standard error of the mean (SEM) from three independent experiments. *p<0.05, **p<0.01 by one way ANOVA followed by Neuman Keuls analyses.\n\n### Expression of only one TCR\u03b2 chain limits the numbers of TCR\u03b1 sequences that can participate in positive selection\n\nBecause allelic exclusion of the TCR\u03b1 locus is not perfect (Malissen et al., 1992), mature T cells may express two functional TCR\u03b1 proteins. To be sure that the TCR\u03b1 chains analyzed in our experimental mice were actually those involved in positive selection of the cells bearing them, we crossed the DO\u03b2WT or DO\u03b248A transgenic, TCR\u03b2-/- mice with TCR\u03b1-/- TCR\u03b2-/- animals of each MHC haplotype to generate animals that were DO\u03b2WT or DO\u03b248A transgenic, TCR\u03b2-/-, TCR\u03b1+/-. Na\u00efve CD4 T cells were isolated from the lymph nodes of these animals and cDNA coding for their TCR\u03b1s were sequenced as previously described (Silberman et al., 2016). PCR and sequencing errors in the germ line encoded portions of these sequences were corrected as described in the Materials and methods section. To deal with possible sequencing errors in the non germ line encoded portions of CDR3\u03b1, sequences that occurred only once in any given sequencing run were eliminated from further analysis. In fact this decision affected the conclusions of all the experiments show below only slightly. Conclusions from analyses that included all sequences, or that eliminated sequences that occurred with the lowest 5% frequency in each sample were similar (data not shown).\n\nOthers have previously reported that the T cells in mice expressing a single TCR\u03b2 chain have a limited repertoire of TCR\u03b1 chains by comparison with WT animals (Fukui et al., 1998). To find out whether this applied to CD4 T cells expressing the DO\u03b2WT or DO\u03b248A TCR\u03b2 we constructed species accumulation curves for TCR\u03b1 sequences in B6 and the TCR\u03b2 transgenic animals. These were performed by combining the TCR\u03b1 sequences from all mice of the same genotype or by plotting the TCR\u03b1 sequences for individual mice of each genotype (Figure 3\u2014figure supplement 1, the source data for these and all subsequent figures are at GEO accession GSE105129). Species accumulation curves show that the total number of TCR\u03b1 sequences we could detect on na\u00efve CD4 T cells in the TCR\u03b2 transgenic animals ranged from less than 5000 to a maximum of about 30,000. These numbers are less than those found in CD4 na\u00efve T cells from B6 mice, which we found to be similar in number to those found on mouse CD8 T cells (Genolet et al., 2012), >than 105 in number (Figure 3). The numbers of TCR\u03b1 sequences that could partner with DO\u03b2WT in selection of CD4 T cells varied considerably with the selecting MHCII allele. More than four times more TCR\u03b1 sequences were apparent in mice expressing IAb versus IAs (Figure 3B\u2013D), perhaps because the TCR from which DO\u03b2WT is derived can be selected by IAb (Liu et al., 1996). This effect of MHC allele on the numbers of selected TCR\u03b1 chains was not evident in animals expressing DO\u03b248A. Notably, the numbers of different TCR\u03b1 chains associated with DO\u03b248A was lower than those associated with DO\u03b2WT regardless of the MHCII allele involved, possibly because of the extra demands imposed on TCR\u03b1 chains by the inadequate TCR\u03b2 chain lacking an important MHC contact residue, Y48 (Scott-Browne et al., 2009).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig3-v2.jpg)\n\n**Figure 3.:** Na\u00efve CD4 T cells were isolated from the spleens (B6) or lymph nodes of mice expressing MHC b, f or s, single TCR\u03b2 chains and heterozygous for expression of functional TCR\u03b1 chains. Their expressed TCR\u03b1 chains were sequenced and analyzed with species accumulation curves. Results were combined from three independently sequenced data sets from mice of each genotype except for those for H2s DO\u03b2WT animals, which were combined from only two independently sequenced animals. Data are shown together with an estimate (bracketed) of the total numbers of different TCR\u03b1 protein sequences present in the na\u00efve CD4 T cells of each type of mouse.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Results were calculated as described in Figure 3. Data shown are for individual mice.\n\nPerhaps the real surprise in these results is how many TCR\u03b1 sequences can partner with a single TCR\u03b2 and participate successfully in positive selection since work in humans and mice suggest that, on peripheral T cells, each TCR\u03b2 partners with only about 5\u201325 different TCR\u03b1s (Arstila et al., 1999; Casrouge et al., 2000; Venturi et al., 2011; Li et al., 2016).\n\n### Expressed TCR\u03b1 sequences are strongly influenced by the selecting MHC allele and partner TCR\u03b2\n\nWe compared the frequency with which particular TRAV/TRAJ/CDR3\u03b1 amino acid sequences, that\u00a0is, the entire TCR\u03b1 sequences, occurred in the various strains of mice. Data of this type can be compared in several ways. The data can be analyzed to find out whether a particular TRAV/TRAJ/CDR3 sequence occurs in each sample, regardless of how often it appears in the set (comparison of unique sequence use). In this case, Jaccard similarity coefficients can be used to measure the similarity between samples. On the other hand, use of particular TRAV/TRAJ/CDR3 sequences can be compared taking into account the number of times a particular combination occurs. In this case Anne Chao Jaccard abundance based indices (Chao et al., 2012) are an appropriate statistical tool. Both methods were used in the comparisons shown in Figure 4. Jaccard analyses showed that the same combination of TRAV/TRAJ/CDR3 sequences were likely to appear in samples from mice of the same TCR\u03b2 and MHC genotype but were very unlikely to be shared with the T cells from mice expressing a different MHC allele (Figure 4A). This was just as apparent when the abundance with which the sequences were expressed was taken into account (Figure 4B). Thus these data show that, given a single TCR\u03b2, the TCR\u03b1 sequences that can participate in positive selection are dramatically affected by the selecting MHCII allele. Moreover, the fact that the values of the Anne Chao Jaccard analyses for mice of the same MHCII allele are much larger than those of the Jaccard analyses shows that sequences that appear frequently in one mouse of a given genotype are more likely to be found in other mice of the same type. Such a result is a manifestation of the fact that some sequences were repeated many times in all mice of a given MHCII type, whereas other sequences were rare. This uneven and certainly non-Poissonian distribution of TCR sequences has been observed before (Correia-Neves et al., 2001; Fazilleau et al., 2005; Freeman et al., 2009). The phenomenon was not necessarily caused by expansion of single clones of T cells since, even in sets in which the CDR3\u03b1 amino acid sequences were identical, the DNA sequences were not necessarily all the same (data not shown).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig4-v2.jpg)\n\n**Figure 4.:** TCR\u03b1s on na\u00efve CD4 T cells from the lymph nodes of TCR\u03b1+/- mice expressing a single TCR\u03b1 and various MHC alleles were sequenced and analyzed as described in Figure 3. Results are the means and SEMs of three independently sequenced animals of each genotype except for H2s DO\u03b2WT animals, of which only two mice were analyzed. ***p<0.001 by one way ANOVA with Newman-Keuls post analysis.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** TCR\u03b1 sequences were obtained and analyzed as described in Figure 4. Data shown are combined as indicated between all the mice illustrated in Figure 4. Results are the means and SEMs of the data. ***p<0.001 by one way ANOVA with Newman Keuls post analysis.\n\nSimilar analyses were applied to samples from mice in which the selecting MHCII allele was identical, but the partner TCR\u03b2 differed. The data show that the selected TCR\u03b1 chains depended on the partner TCR\u03b2, even when the selecting MHC allele was identical. Close inspection revealed, however, that there was slightly more overlap if the co-selected TCR\u03b2s were different but the selecting MHCII alleles were identical than if the reverse were true, that is the co-selected TCR\u03b2s were the same but the selecting MHCII alleles were different (Figure 4C,D, Figure 4\u2014figure supplement 1) (Fink and Bevan, 1978).\n\nA few sequences appear in at least one mouse of each haplotype. For example, 16 sequences appear in DO\u03b2WT mice expressing MHCII b, f or s (but not in any DO\u03b248A animals) (data not shown). Such sequences might belong to yet undiscovered types of T cells that express an invariant TCR\u03b1, like iNKT cells or MAIT cells (Chandra and Kronenberg, 2015; Gapin, 2009). We think this is unlikely to be true because, in the complete na\u00efve CD4 T cell sequences, we did not consistently find the sequences of the iNKT cell or MAIT cell TCR\u03b1s. Probably this was because the cells bearing the iNKT cell or MAIT cell invariant TCR\u03b1s were in the activated/memory T cell populations, which were not examined in our experiments. Were there to be an undiscovered T cell subset bearing another invariant TCR\u03b1 it would presumably also be in the activated/memory T cell population and therefore not included in our assays.\n\nThese data show that positive selection acts on CD4 T cell precursors, via the action of the expressed MHCII allele on particular TCR\u03b1/TCR\u03b2 pairs.\n\n### TRAV usage depends on the selecting MHCII haplotype and the partner TCR\u03b2 chain\n\nIn order to find out which element(s) of TCR\u03b1 determine MHC allele specificity we analyzed each element separately using data from the experiments described above. Others have previously reported that certain TRAVs are used more frequently by CD4 versus CD8 T cells or in mice expressing particular alleles of MHC (Jameson et al., 1990; Pircher et al., 1992; Sim et al., 1996; Simone et al., 1997; Merkenschlager et al., 1994). Trav rearrangements occur in thymocytes after the cells have rearranged their TCR\u03b2 genes (Lindsten et al., 1987). Thus, the frequency with which TRAVs appear on mature na\u00efve CD4 T cells is predicted to depend on a number of issues, the ease with which the TRAV gene can rearrange (Chen et al., 2015), its ability to pair with the preexisting TCR\u03b2 expressed in the cell (Vacchio et al., 1993) and the ability of the TCR\u03b1/TCR\u03b2 pair to participate in positive, but not negative, selection on the MHCII protein expressed in the thymus.\n\nWe first tested whether the expressed MHC haplotype might unexpectedly affect the nature of TRAVs expressed on preselection thymocytes. As shown in Figure 5A, Figure 5\u2014figure supplements 1\u20132, TRAV usage on preselection thymocytes was similar, regardless of the MHC allele in the donor animal or the coexpressed TCR\u03b2(s). There were, however, some interesting aspects of TRAV use on preselection thymocytes. . TRAVs whose genes are most proximal to the TRAJ locus (TRAVs 17\u201321) were frequently rearranged, as predicted by previous studies (Villey et al., 1996; Shih et al., 2011; Genolet et al., 2012) (note that the TRAVs are arranged by family and not by position in the TRAV locus). However, in preselection thymocytes we also observed frequent rearrangements involving TRAV 1 and members of the TRAV 3, 6, 7, 10, 11 and 14 families. In the cases of the TRAV families the frequently rearranged TRAVs were not always those which are most proximal to the TRAJ locus. For example, amongst the TRAV7 family, the most frequently rearranged member was TRAV7-2D, one of the family members that is furthest from the TRAJ locus, whereas the close relative of TRAV7-2D, TRAV7-2A, was not frequently rearranged. This suggests that chromatin structure, promoter accessibility and use by rearranging processes also play a role in TRAV rearrangements (Chen et al., 2015).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-v2.jpg)\n\n**Figure 5.:** TCR\u03b1s on preselection thymocytes or na\u00efve T cells from the lymph nodes of TCR\u03b1+/- mice expressing a single TCR\u03b2 and various MHC alleles were sequenced and analyzed as described in Figure 3. (A) Shown are the Euclidean distances for TRAV use between the data for individual mice. Samples are hierachically ordered. Individual mice of the same genotype are numbered m1-3. (B) The average % use of each TRAV in mice expressing the indicated MHCII allele and TCR\u03b2. Results are the means\u00a0\u00b1\u00a0SEMs of 3 identical mice, except for H2s DO\u03b2WT animals, for which results are the averages of 2 mice. TRAVs are ordered by family, not by position on the chromosome.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Preselection DP thymocytes were obtained from individual mice expressing the indicated MHCII alleles and TCR\u03b2s. Shown are the %s with which individual TRAVs were detected. Subfamily members of each family are color coded as shown. Note, the TRAVs are ordered by family and not by their position in the TCR\u03b1 locus.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Pairwise scatter plots of individual TRAV frequencies between all replicates of mature na\u00efve CD4 T cells from mice expressing different MHCII alleles and different TCR\u03b2 chains. Data are plotted as log2 transformed TRAV counts per 1 \u00d7 10^4 total TCR\u03b1 sequences in each mouse noted on the x axis versus each mouse noted on the y axis. Values distributed along the diagonal are equivalent between the two mice compared in the plot. Individual mice of each genotype were numbered m1-m3, numbers for each mouse are used consistently throughout.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Data were obtained and analyzed as described in Figures 3 and 5. DESeq2 was used to compare the frequencies with which different TRAVs were used by na\u00efve CD4 T cells in mice expressing different MHCII alleles and/or different TCR\u03b2s. Differential expression analyses were performed using the DESeq2 package (v1.8.1) in the R language (v3.2.2). DESeq2 fit negative binomial regression models to each feature to compare between groups. Corrections for size factors for each sample (animal) to account for differences in repertoire size were applied. The negative binomial dispersion parameter for each feature was then calculated, sharing information across features with similar expression levels to moderate extreme empirical dispersion estimates. Wald tests were applied to each feature to test for differential expression between groups. Features were considered differentially expressed if they had a Benjamini-Hochberg adjusted p-value (i.e., false discovery rate)<0.05.\n\nTRAV use by T cells from mice of the same genotype was very similar (Figure 5B\u2013G, Figure 5\u2014figure supplements 2\u20133). However, the selecting MHC allele affected the frequency with which different TRAVs were expressed on mature na\u00efve CD4 T cells (Figure 5\u2014figure supplements 2\u20133). For example members of the TRAV5 family were used to some extent by CD4 T cells selected on IAb, but not by cells selected on IAf or IAs (compare Figure 5B,C with Figure 5D\u2013G). On the other hand, CD4 T cells in DO\u03b2WT H2s mice were alone in their use of TRAV17 (Figure 5B,D and F). Differential use of TRAVs was much more marked in DO\u03b248A mice and illustrated the TRAV preferences of mice selected on different MHCII alleles more strikingly. For example, DO\u03b2WT cells selected on IAs used most members of the TRAV6 family whereas DO\u03b248A expressing cells selected on the same MHC allele used, of the TRAV 6 family, almost entirely TRAV6-5D and TRAV6-7DN and also used more frequently than T cells selected on other MHCII alleles, members of the TRAV16 family. Perhaps this reflects a greater need for basic amino acids in TRAV CDR1 and CDR2 for selection of H2s with DO\u03b248A as a partner, since, of the TRAV6 family, TRAVs6-5D and TRAV6-7DN (and TRAV6-5A and TRAV6-7DN) have a total of two basic amino acids in these elements whereas other members of the family have none. Likewise all expressed members of the TRAV16 family contain 2 or 3 basic amino acids in their CDR1 and CDR2 segments. This narrowing in TRAV choice by DO\u03b248A cells may reflect the increasing demands for selection imposed by the absence of the tyrosine at position 48 of the TCR\u03b2 chain.\n\nOur analyses are based on a method in which cDNAs from individual mouse T cells are amplified simultaneously with a reverse TRAC oligo and oligos built to match each TRAV family (see Materials and methods Section). Therefore the differences in TRAV discovery could be due to more efficient PCR amplification of some TRAV genes than others. However, since the efficiencies of detection will be similar between members of the same family, it is legitimate to compare the frequency of rearrangement between different members of the same family, or the frequency of use of the same TRAV in mature T cells selected on different MHCs or with different TCR\u03b2 partners (see below).\n\n### TRAJ usage depends on the selecting MHCII haplotype and the partner TCR\u03b2 chain\n\nTRAJ use by preselection thymocytes was similar regardless of the selecting MHC haplotype or co-expressed TCR\u03b2 (Figure 6A, Figure 6\u2014figure supplements 1\u20132). TRAJ use by na\u00efve CD4 T cells from B6 mice was fairly uniform across the locus (Figure 6B). Unexpectedly, however, and in contrast to preselection thymocytes and na\u00efve CD4 T cells from B6 mice, TRAJ use by T cells from mice expressing a single TCR\u03b2 was much more uneven and tended towards TRAJs whose genes were distal to the TRAV locus (Figure 6B\u2013L). Regardless of MHC allele, CD4 T cells in DO\u03b2WT animals used TRAJ21 most frequently (Figure 6D\u2013F). The reasons for this bias are unknown. TRAJ21 contains a tyrosine at or near the contact point with MHC but other TRAJs have a tyrosine similarly situated and they are not overexpressed. Moreover TRAJ21 is not overexpressed in T cells expressing DO\u03b248A, T cells that might be expected to be even more readily selected with an added tyrosine (Scott-Browne et al., 2009). The bias towards use of distal TRAJ genes was even more marked in animals expressing DO\u03b248A. In these mice TRAJ 9, TRAJ 12 and TRAJs 9,15 and 31 dominated in H2b, H2f and H2s mice respectively (Figure 6G\u2013I). Pairwise comparisons between different mice are shown in Figure 6\u2014figure supplement 1 and DESeq 2 analyses are in Figure 6\u2014figure supplement 2.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig6-v2.jpg)\n\n**Figure 6.:** TCR\u03b1s on preselection thymocytes or na\u00efve CD4 T cells from the lymph nodes of TCR\u03b1\u00b1mice expressing a single TCR\u03b2 and various MHC alleles were sequenced and analyzed as described in Figure 3. (A) Shown are the Euclidean distances for TRAJ use between the data for individual mice. Samples are hierachically ordered. Individual mice of the same genotype are numbered m1-3. (B-L) The % use of each TRAJ in mice expressing the indicated MHCII allele and TCR\u03b2. Results are the means and SEMs of 3 identical mice, except for H2s DO\u03b2WT animals, for which results are the averages of 2 identical mice. TRAJs are ordered by position on the chromosome. Also shown are the means and SEMs of TRAJ use by five independently sequenced preselection thymocytes and three independently sequenced na\u00efve CD4 T spleen T cells from B6 mice.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Pairwise scatter plots of individual TRAJ frequencies between all replicates of mature na\u00efve CD4 T cells from mice expressing different MHCII alleles. Each point is a TRAJ. Data are plotted as log2 transformed TRAV counts per 1 \u00d7 10^4 total TCR\u03b1sequences in each mouse noted on the x axis versus each mouse noted on the y axis. Values distributed along the diagonal are equivalent between the two mice compared in the plot. Individual mice of each genotype were numbered m1-m3, numbers for each mouse are used consistently throughout.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Data were obtained and analyzed as described in Figures 3 and 5. DESeq 2 was used as described in Figure 5\u2014figure supplement 3 to compare the frequencies with which different TRAJs were used by na\u00efve CD4 T cells in mice expressing different MHCII alleles and/or different TCRbs.\n\nWe do not know why the distal TRAJ genes were preferred in mice in which the TCR\u03b1 repertoire was limited by the presence of a single TCR\u03b2. In another study with a fixed TCR\u03b2 chain, a bias towards proximal TRAJs was noted with TRAV17, a TRAV that is close to the TRAJ locus (Casanova et al., 1991). The same publication described biases, depending on MHC allele towards use of Type 1 (G rich) or type 2 TRAJs. These explanations don\u2019t apply here, since in the experiments presented here TRAV expression was not particularly biased towards the distal TRAVs and the used TRAJs don\u2019t fall particularly into Types 1 or 2. It is possible that the choice is related to the DO\u03b2 chain itself. Alternatively it maybe that, because it is difficult for thymocytes expressing a single TCR\u03b2 to find a TCR\u03b1\u00a0that can pair with the TCR\u03b2 and contribute to positive selection, multiple TCR\u03b1 rearrangements have to occur in each thymocyte before a suitable TCR\u03b1 partner is found. This will inevitably drive expressed TCR\u03b1s towards use of the distal TRAJs, although why these should satisfy the demands of positive selection more frequently than the proximal TRAJs do, is not obvious, at least from their amino acid sequences. It has recently been reported that prolonged expression of RAG protects cells, to some extent, from death (Karo et al., 2014). If the thymocytes in TCR\u03b2 transgenic mice have to express RAG for a longer time to find a suitable TCR\u03b1 partner, then the prolonged expression of RAG needed for the multiple rearrangements required to access the TRAC proximal TRAJs might preferentially allow survival of the thymocytes in which this prolonged expression has occurred. Preliminary analyses of the na\u00efve CD4 T cells in the various mice did not, however, suggest that the T cells in the TCR\u03b2 transgenic mice were more resistant to death than the equivalent cells in B6 animals. Finally, it is possible that, during the multiple rearrangements that may occur as TRAJ use moves to those at the distal portion of the TRAJ locus, in thymocytes the strength of signal received from the TCR/MHC/peptide interaction needed to drive positive selection might be reduced. Thus selection may occur more easily for thymocytes using distal rather than proximal TRAJs\u00a0(Moran et al., 2011;\u00a0Seiler et al., 2012). Future experiments will test this idea.\n\nOverall, like the use of TRAVs, use of TRAJs depended on both the MHC haplotype and TCR\u03b2 present in the animals.\n\n### Expressed CDR3\u03b1 sequences are strongly influenced by the selecting MHC allele and partner TCR\u03b2\n\nBecause of the removal or introduction of bases when TRAVs rearrange to TRAJs, CDR3\u03b1 protein sequences can vary in the number of amino acids they encode between the conserved C terminal cysteine of the TRAV and the conserved phenyl alanine/leucine/tryptophan glycine pair in the TRAJ region. We compared the average lengths of CDR3\u03b1s and the predicted number of N region bases between mice expressing the same TCR\u03b2 and different MHCII alleles. CD4 T cells selected on IAb had significantly shorter CDR3\u03b1 lengths and fewer N region bases than their counterparts selected on IAf or IAs (Figure 7\u2014figure supplement 1).\n\nThe analyses shown in Figure 4 compared the frequencies with which entire TCR\u03b1 sequences appeared under different selecting circumstances. We also analyzed how often particular CDR3\u03b1 sequences are found in mice that differed in the selecting MHC allele or in the co-expressed TCR\u03b2, using, again, Jaccard or Anne Chao Jaccard analyses to compare particular sequences without or with taking into account the abundance with which they occurred. Data comparing the occurrence of CDR3\u03b1 protein sequences between mice that expressed the same or different MHCII alleles are shown in Figure 7A\u2013B, and data comparing the occurrence of CDR3\u03b1 protein sequences between mice expressing the same MHCII but different partner TCR\u03b2s are shown in Figure 7C\u2013D. The results were similar to those obtained when comparing the entire TCR\u03b1 sequences. The expressed CDR3\u03b1 sequences in mice with a particular MHCII allele were very unlikely to be found in CD4 T cells of mice expressing a different MHCII allele, even if the co-selected TCR\u03b2 were the same in the mice (Figure 7A\u2013B). Likewise, CDR3\u03b1 sequences co-selected with a particular TCR\u03b2 were unlikely to be shared with those co-selected with a different TCR\u03b2, even if the selecting MHCII allele were the same.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig7-v2.jpg)\n\n**Figure 7.:** TCR\u03b1s on na\u00efve T cells from mice expressing a single TCR\u03b2 and various MHCII alleles were sequenced and analyzed for their CDR3\u03b1 sequences as described in Figures 3 and 4. CDR3\u03b1 sequences were defined as the amino acids between and including the conserved cysteine at the C terminal end of the TRAV and the conserved phenyl alanine, tryptophan or leucine in the TRAJ region. Shown are the means and SEMs of 3 independently sequenced identical mice except for H2s DO\u03b2WT mice, in which case only two mice were analyzed. ***p<0.001, **p<0.01 by one way ANOVA with Newman-Keuls post analysis.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Data were obtained as described in Figures 3 and 4. Shown are the average lengths of CDR3\u03b1 and N region bases on na\u00efve CD4 T cells coexpressed with the indicated TCR\u03b2. Results are the means and SEMs of 3 mice of the same haplotype except for s DO\u03b2WT mice, in which case the results from two mice were averaged. Errors are calculated with one way ANOVA with the Bonferroni post test comparing all pairs. *p<0.05, **p<0.01, ***p<0.001. Statistical results are omitted for pairs which were not significantly different from each other.\n\nThe first few amino acids of CDR3\u03b1 (defined as the stretch between the last C of the TRAVs and the conserved F/W/L G sequence of the TRAJs) are encoded by the TRAVs themselves. Likewise, the last few amino acids of CDR3\u03b1 are encoded by the TRAJs. Therefore the fact that the CDR3\u03b1 sequences are controlled by the MHCII allele on which they were selected might have been, to some extent, dictated not by the non germline encoded amino acids in CDR3\u03b1 but rather by the TRAV encoded amino acids downstream of the cysteine at the C terminal end of the TRAVs or by the TRAJ encoded amino acids upstream of their conserved TRAJ F/W/L. This problem applies particularly to the use of TRAVs since TRAV CDR1 and CDR2 amino acids may contact MHCII and thereby contribute to thymic selection whilst also dictating the first few amino acids of the accompanying CDR3 region.\n\nWe therefore checked whether CDR3\u03b1 sequences associated with particular TRAV/TRAJ pairs differed between T cells selected on different MHCII alleles or associated with different TCR\u03b2s. Only a few of the possible TRAV/TRAJ pairs were present in sufficient numbers in all of the mice to be compared, so only a few such comparisons could be made. Examples of such comparisons are shown in Figure 8. Summaries combining all allowable results (in which all the TRAV.TRAJ combinations to be compared included least five different CDR3 sequences/mouse) are shown in Figure 8\u2014figure supplements 1\u20132. T cells expressing DO\u03b2WT and the same TRAV and TRAJ combinations, but selected on different MHCII alleles or with different TCR\u03b2s clearly had CDR3\u03b1 sequences that were almost completely unique to the selecting MHCII alleles.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig8-v2.jpg)\n\n**Figure 8.:** TCR\u03b1s on na\u00efve CD4 T cells of mice expressing a single TCR\u03b2 and various MHCII alleles were sequenced as described in Figures 3 and 4. Mice were as listed in those Figures. Comparisons were made of N regions derived from the same TRAV TRAJ pair providing that all mice in the comparisons expressed at least five different sequences involving the chosen TRAV TRAJ pair. Results shown are the means\u00a0\u00b1\u00a0SEMs of the data from identical mice. Statistical analyses involved one way ANOVA tests with Newman-Keuls post test analyses (A, B) or Student t tests (C\u2013F). *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** TCR\u03b1s on na\u00efve CD4 T cells of mice expressing a single TCR\u03b2 and various MHCII alleles were sequenced as described in Figures 3 and 4. Mice were as listed in those Figures. The results of samples expressing the same TRAV TRAJ pairs for all comparisons in which each mouse expressed at least five different sequences involving the chosen TRAV/TRAJ pair were averaged. Results shown are the means\u00a0\u00b1\u00a0SEMs of the data from mice of identical genotypes. Statistical analyses for comparisons involving three different types of mice used one way ANOVA tests with Newman-Keuls post test analyses. Student t tests were used to analyze statistically the differences between pairs of mice. **p<0.01, ***p<0.001.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30918/elife-30918-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Data from TCR\u03b1 sequences obtained as in Figure 4 were used to analyze the frequency with which different amino acids were used at different positions.\n\nA recent study has reported that thymocytes with aromatic/hydrophobic amino acids at the tips of their CDR3\u03b2 segments are biased towards MHC reactivity, regardless of the selecting MHCII allele (Stadinski et al., 2016). The observations in the paper applied to CD4+\u00a0CD8+ (double positive thymocytes) that had been positively, but not negatively, selected, identified by their expression of CD69, and to regulatory T cells compared to preselection thymocytes. Such cells have not been examined in the experiments described here, so we cannot tell directly whether a similar observation applies to TCR\u03b1 sequences. On the whole the evidence is that cells with aromatic amino acids at positions 6 and 7 on CDR3\u03b1 are not particularly eliminated by clonal deletion in the thymus (data not shown). Nevertheless, we evaluated individual amino acids that would probably be at the tips of CDR3\u03b1s in CDR3\u03b1 of different lengths. The results show MHCII allele and TCR\u03b2 specific selection for particular amino acids and also changes in amino acid preference at CDR3\u03b1 positions depending on the length of the CDR3 (Figure 8\u2014figure supplement 2). For example, arginine was very frequently used at position 4 in 12 amino acid long CDR3\u03b1s selected by IAs with DO\u03b248A, and similarly over selected at position 5 in 14 amino acid long CDR3\u03b1s selected on IAf with DO\u03b2WT, but much less frequently used by other MHC selection, TCR\u03b2, CDR3\u03b1 length combinations. Phenyl alanine was only used with evident frequency at position 5 in 14 amino acid-long CDR3\u03b1s selected on IAb with DO\u03b2WT. Apart from the phenyl alanine result there was no particular enrichment for aromatic amino acids at these tips.\n\n## Discussion\n\nIt has long been known that T cells bearing \u03b1\u03b2TCRs are biased towards recognition of antigenic peptides bound to the allele of MHC to which the T cells were exposed in the thymus(Fink and Bevan, 1978; Zinkernagel et al., 1978; Kappler and Marrack, 1978; Sprent, 1978). This phenomenon, known as positive selection, has been ascribed to a requirement for a low affinity/avidity reaction between the developing thymocyte and MHC proteins to which the cell is exposed in the thymus cortex (Sprent et al., 1988). However, the peptides presented to immature T cells in the thymus are also controlled by the allele of MHC involved. Thus, the MHC allele specificity of positive selection might be dictated by TCR contact with the MHC-engaged peptides rather than the MHC protein itself. If this were the case, positive selection might be dominated by the portion of TCRs that most consistently engages the peptides bound to MHC, CDR3 sequences of TCRs, rather than the germ line encoded TRAVs and TRBVs. This idea is supported by the fact that, in some cases, peptides related to the activating antigen can stimulate positive selection of thymocytes bearing particular TCRs (Ashton-Rickardt et al., 1994; Sebzda et al., 1994; Hogquist et al., 1994; Kraj et al., 2001; Smyth et al., 1998). Moreover MHC proteins that were supposed to differ only in amino acids that bind peptide and that don\u2019t contact TCRs nevertheless were found to differ in their ability to select thymocytes bearing certain TCRs (Nikoli\u0107-Zugi\u0107 and Bevan, 1990).\n\nDuring positive selection could TCRs detect allelic differences between MHCs directly? Although that MHC amino acids that contact TCRs are quite well conserved (Bjorkman et al., 1987) they do vary somewhat between alleles (Reche and Reinherz, 2003). For the MHCII alleles studied here, the amino acids pointing towards the TCR are, at most positions, uniform, but IAb differs from IAf and IAs with a two amino acid insertion on the surface of its beta chain alpha helix, an insertion that causes an allele specific bulge in this helix. IAs also differs from the other MHCII alleles we studied with alpha chain H68Y and beta chain R70Q changes and position 72 of the MHCII\u03b1 alpha helix is a V in IAb, an I in IAf and IAs. Therefore the solvent exposed residues on the alpha helices of the MHCII proteins themselves could contribute to allele specific positive selection. These amino acids are contact points, not only for the CDR1 and CDR2 loops of TCRs, but also, sometimes for the TCR CDR3 regions. For example, in the structure on a TCR bound to the complex of IAu bound to a myelin basic protein, CDR3\u03b1 engages polymorphic amino acids at positions 55 and 81 of the IAu alpha chain and CDR3\u03b2 engages polymorphic amino acids at positions 65 of the IAu alpha chain and positions 67 and 70 of the IAu beta chain (Maynard et al., 2005).\n\nThe findings presented previously (Merkenschlager et al., 1994) and here, demonstrate that the allele of MHCII involved in positive selection affects the frequencies with which TRAV and TRAJ elements are selected and, most dramatically, the CDR3\u03b1 sequences that appear on mature T cells, as previously indicated for CD8 T cells (Ferreira et al., 2006). The N terminal portion of CDR3\u03b1 is provided by the TRAV, so the effects of MHCII on TRAV choice by a particular TCR\u03b1 could actually be due to demands placed on the CDR3\u03b1 rather than on the TRAV itself. On the other hand, since the CDR3\u03b1 sequence is affected in part by its co-expressed TRAV, the demands of positive selection could be entirely on the TRAV, not the CDR3\u03b1. We think it likely that all three of the TCR\u03b1 CDRs can play a role in positive selection. However, clearly CDR3\u03b1 is involved since the sequences in the center of this element vary depend on the selecting MHCII allele, even if the accompanying TRAV and TRAJ are the same (Figure 8).\n\nOverall, the results strongly suggest that positive selection allele specificity involves recognition of both MHC and peptide (reviewed in (Klein et al., 2014; Vrisekoop et al., 2014). In fact, given the geometry with which TCRs engage their MHC/peptide ligands, it is difficult to imagine that this would not be the case.\n\nThe data here also show that the sequence of the TCR\u03b2 chain affects the TCR\u03b1 and CDR3\u03b1 that can participate in positive selection almost as much as the selecting MHC allele does. Not only does the TCR\u03b2 affect which TCR\u03b1s and which CDR3\u03b1s will be successful, it also determines how many different TCR\u03b1s can do the job since, regardless of the MHCII allele involved, fewer TCR\u03b1s can be selected with DO\u03b248A than with DO\u03b2WT. These results are similar to those observed earlier that showed that fewer CD4 T cells are selected in DO\u03b248A-expressing versus DO\u03b2WT-expressing mice. Together these suggest that DO\u03b2 lacking an important MHC contact amino acid, the \u2018Y\u2019 at position 48, places more stringent requirements on TCR\u03b1 for successful thymus selection (Scott-Browne et al., 2009).\n\nOverall, the results show that the entire TCR sequence plays a role in positive selection. How can this be, given that selection is thought to occur during low affinity reactions? Naively one might have predicted that relatively few TCR-to-MHC/peptide interactions would be needed to reach the needed energy of interaction and these could be provided by just a portion of the TCR, not the entire molecule as suggested here. Some TCR configurations may interfere with contact with MHC/peptide or prevent the proper engagement of CD4 or CD8. Other TCR configurations may react too strongly with their ligand, leading to negative selection. This idea may apply to up to 70% of all TCRs (Ignatowicz et al., 1996; Stritesky et al., 2013). Competition for selecting ligands may also play a role. Also to be bourne in mind is the fact that here we are observing the consequences of many TCR selection events, some TCRs may be selected based on their TRAVs, others via their TCR\u03b2s, with the observed results showing biases by both of these. Nevertheless the detrimental effects of an inappropriate CDR3\u03b1 cannot be overcome by other elements of TCR\u03b1.\n\nThere are problems with the notion that the bound peptide is a determinant of MHC allele specific positive selection. Most notably, the fact that mature T cells, after selection on a single MHCII allele bound to a single peptide can respond to peptides that are unrelated in sequence to the selecting peptide (Pawlowski et al., 1996; Ignatowicz et al., 1997; Nakano et al., 1997; Ebert et al., 2009; Lo et al., 2009). Moreover, teleologically, the idea that the selecting peptides in the thymus are the only feature that governs T cell specificity doesn\u2019t seem evolutionarily favorable. Such might limit the ability of T cells to respond to foreign peptides that are unrelated to those in the thymus. Nevertheless, self peptides might provide an advantage anyway, by supporting the survival of mature T cells and also, perhaps, T cell responses to unrelated peptides when the self and foreign peptides are presented on the same cells (Kirberg et al., 1997; W\u00fclfing et al., 2002). However, MHC-bound peptides on thymus cortical epithelial cells are not necessarily the same as those on peripheral cells (Honey et al., 2002; Murata et al., 2007) so this advantage may not be available for all T cells. It has also been suggested that positive selection on self peptides, by selecting for TCRs that react with peptides that are similar to self, might protect hosts from infection by organisms that have mutated such that their proteins resemble self. If negative selection were the only criterion for thymocyte maturation, invading organisms might be able to avoid recognition by T cells. Positive selection on self prevents such evasion (Forsdyke, 2015; Vrisekoop et al., 2014)\n\nIn the studies presented here, the total number of TCR\u03b1s that can be selected with a single TCR\u03b2 ranges between about 4600 and 30,000, depending on the selecting MHCII allele and partner TCR\u03b2 . Are these numbers surprisingly low or high? Based on the estimated numbers of TCR\u03b2s and TCR\u03b1s that appear in the periphery of an individual, it has previously been estimated that each TCR\u03b2 chain can be successfully selected with up to 25 different TCR\u03b1s (Arstila et al., 1999; Casrouge et al., 2000). Yet here, and in previous studies, it appears that, for a single TCR\u03b2, the number of possible TCR\u03b1 partners is at least 3 orders of magnitude larger. How to account for this large disparity? Probably it is caused by competition for selection in the thymus, a phenomenon that has been previously demonstrated (Martins et al., 2014; Visan et al., 2006). In a wild type thymus, each of the immature thymocytes is competing with a huge number of others bearing disparate TCR\u03b2 and TCR\u03b1 sequences. In the thymus of a mouse expressing a single TCR\u03b2, the immature thymocytes bear the same large number of TCR\u03b1s, and now all those expressing an even approximately suitable TCR\u03b1 have the opportunity to be positively selected. This idea may be related to the profound bias towards distal TRAJs reported here, and therefore a predicted increased time available for rearrangements for the thymocytes in single TCR\u03b2 transgenic animals.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>T cell receptor beta chain from the DO11.10 hybridoma (mus musculus musculus)</td>\n      <td>DObWT</td>\n      <td>Haskins, K., Kubo, R., White, J., Pigeon, M., Kappler, J. and Marrack, P. The major histocompatibility complex-restricted antigen receptor on T cells. I. Isolation with a monoclonal antibody. J. Exp. Med. 157:1149, 1983.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>T cell receptor beta chain from the DO11.10 hybridoma (mus musculus musculus) with the amino acid at position 48 of the chain mutated from a tyrosine to an alanine</td>\n      <td>DOb48A</td>\n      <td>375. Scott-Browne, J.P., White, J., Kappler, J.W., Gapin, L. and Marrack, P. Germline- encoded amino acids in the abT cell receptor control thymic selection. Nature 458:1043\u20131046, 2009. PMC2679808</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C57BL/6J (mouse)</td>\n      <td>B6</td>\n      <td>The Jackson Laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mice congenic with B6 but expressing H2f</td>\n      <td></td>\n      <td>This publication</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mice congenic with B6 but expressing H2s</td>\n      <td></td>\n      <td>This publication</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mice with one TCRa gene inactivated</td>\n      <td>a+/-</td>\n      <td>The Jackson Laboratory; Mombaerts et al. Nature 360:225\u2013231,1992</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>B6 mice with the TCRb genes inactivated</td>\n      <td>b-/-</td>\n      <td>The Jackson Laboratory; Creation of a large genomic deletion at the T-cell antigen receptor beta-subunit locus in mouse embryonic stem cells by gene targeting. Mombaerts et al. PNAS 88 3084\u20137, 1991</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software for analysis and correction of TCRalpha sequences</td>\n      <td></td>\n      <td>https://www.nationaljewish.org/research-science/programs-depts/biomedical-research/labs/kappler-marrack-research-lab/protocols</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>B6 TRAV and TRAJ sequences</td>\n      <td>MOVA-B6.VDB MOJA.JDB</td>\n      <td>https://www.nationaljewish.org/research-science/programs-depts/biomedical-research/labs/kappler-marrack-research-lab/protocols</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TCRa sequences used in analyses</td>\n      <td></td>\n      <td></td>\n      <td>GEO accession GSE105129</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nMice were purchased from the Jackson Laboratory, Bar Harbor ME and subsequently interbred in the Biological Research Center at National Jewish. Plasmids coding for the DO11.10 TCR\u03b2 chain (DO\u03b2WT) or its mutant, in which the tyrosine at position 48 was replaced by an alanine (DO\u03b248A) were created, with the human CD2 promoter to drive expression of the genes (White et al., 1983; Greaves et al., 1989). DNAs coding for the promoters and genes were injected into fertilized C57BL/6J (B6) eggs at the Mouse Genetic Core Facility at National Jewish Health. Mice produced from these eggs were crossed with animals lacking functional TCR\u03b2 genes (Mombaerts et al., 1991) and with B10.M (H2f) or B10.S (H2s) animals to create animals expressing the transgenic TCR\u03b2 genes, no other TCR\u03b2genes and H2b, f or s. By similar intercrosses animals were produced that expressed no functional TCR\u03b1 or TCR\u03b2 genes and H2b, f or s. These animals were intercrossed to give rise to animals expressing either DO\u03b2WT or DO\u03b248A, no other TCR\u03b2 genes, TCR\u03b1+/- and H2 b, f or s. Animals were subsequently used for analysis if they expressed the TCR\u03b1 locus derived from B6 rather than B10 animals.\n\nAnimals were handled in strict accordance with good animal practice as defined by the relevant national and/or local animal welfare bodies, and all animal work was approved by the National Jewish Health Animal Care and Use Committee (IACUC). The protocol was approved by National Jewish IACUC (protocol number AS2517).\n\n### T cell isolation\n\nCells were isolated from the thymuses, spleens (B6 analyses) or peripheral lymph nodes (DO\u03b2WT or DO\u03b248A analyses) of 6\u201314 week old mice. CD4 T cells were isolated by negative selection on MACS columns (Milltenyi Biotech). The cells were stained with antibodies conjugated to a fluorochrome and specific for: Pacific Blue-CD4 (RM4-5, BioLegend, 100531), Alexa488-TCR\u03b2(Ham-597, made in house), PE-B220 (RA3-6B2, BD Pharmingen, 553090), PE-TCR\u03b4(GL3, BD Pharmingen 553178), PE-CD8\u03b1 (53\u20136.7, BD Pharmingen, 553033), PE-Cy5-CD25 (PC61.5, eBioscience, 15-n251-82), Alexa647-CD44 (made in house), PE-Cy7-CD62L (MEL-14, eBioScience, 25-0621-82). The cells were sorted based on their expression of CD4, TCR\u03b2, low levels of CD44 and high levels of CD62L and absence of staining with PE and PE-Cy5. Cells were sorted into staining buffer (BSS, 2% fetal bovine serum, plus sodium azide) by a MoFloXDP (Beckman Coulter Life Sciences or Synergy SY3200 (iCyt) instruments at the National Jewish Health Flow Cytometry Core Facility.\n\n### Retroviral infection of T cells\n\nRetroviruses expressing DO\u03b2WT or DO\u03b248A and green fluorescent protein were produced as described in Scott-Browne et al. (2009). CD4 T cells were purified, by negative selection on Automax columns, from the spleens and lymph nodes of DO\u03b248A transgenic, TCR\u03b2-/- mice expressing various MHC alleles. The cells were activated by 24 hr culture on plates pre-coated with anti-TCR\u03b2 (Ham597) and anti-CD28 (37.51) The supernatants were then removed from the plates and replaced with supernatants containing the DO\u03b2WT or DO\u03b248A retroviruses and 8 ug/ml polybrene in culture medium. The cells were spun at 2000G in bags containing 10%CO2/90%air at 37.C for 2 hr. At this point the medium was replaced with complete culture medium containing 10% fetal bovine serum and cultured for 1d followed by addition of IL-2. Three days later the cells were harvested and challenged as described below.\n\n### Assessment of MHC reactivity of transduced T cells\n\nRed blood cell depleted spleen cells from mice expressing various MHC alleles were cultured overnight with IL-4 plus GM-CSF. The cells were then thoroughly washed and used, at a dose of 106 cells/well, to stimulate 106/well TCR\u03b2 transduced CD4+\u00a0T cells, prepared as described above. These wells were cultured for 51/2 hr in a final total volume/well of 200 ul of CTM. The cells were then fixed (Permafix), stained and analyzed for expression of CD4 (PerCP anti-CD4), GFP and CD69 (PE anti-CD69).\n\n### TCR\u03b1 sequencing and analysis\n\nRNA was isolated from purified na\u00efve CD4 T cells, PCR\u2019d to expand Tcra sequences and sequenced as described in Silberman et al. (2016). Post-sequencing analysis was performed to identify the Trav and Traj genes for each sequence along with its corresponding CDR3. Trav family and subfamily members were assigned based on the IMGT designations with modifications based on our own analysis of expressed TRAV sequences in B6 mice. IMGT has identified two gene duplication events in the B6 Trav locus, the \u2018original\u2019 genes, most of which are closest to the TRAJ locus are designated by their family number and a number indicating their subfamily membership. Here, for ease of analysis, we have added the letter \u2018A\u2019 to their designation, eg TRAV01-1A. TRAV subfamily members in the IMGT designated duplicated \u2018D\u2019 and new \u2018N\u2019 genes we add the letters \u2018D\u2019 or \u2018N\u2019, eg TRAV07-6D or TRAV07-6N. In some cases the entire nucleotide sequences of subfamily members are identical and, therefore, indistinguishable by our analyses. In these cases the subfamily members are designated to include all possible source genes, eg TRAV06-3ADN or TRAV06-6AD.\n\nErrors occur during sequencing reactions and accumulate as the numbers of sequences acquired increase (Bolotin et al., 2012; Liu et al., 2014). The sequences were all corrected for errors in the Trav and Traj elements, which do not somatically mutate. However, because the amino acids in and flanking the non germ line encoded portions of CDR3 regions could not be corrected, sequences with errors in these elements are bound to appear at some low frequency and cause a gradual rise in the species accumulation curves. To eliminate these misreads we decided to include in our analyses only those TCR\u03b1sequences that occurred more than once in each sample. To correct for sequencing errors within the CDR3, the sequences were modified by replacing erroneous nucleotides with the appropriate germline-encoded nucleotides whenever a discrepancy was observed. Such correction was possible only when a nucleotide difference could be resolved by aligning to the germline Trav and/or Traj genes. To avoid making inappropriate changes to the potentially non germline encoded portions of CDR3\u03b1, such corrections were applied only if the change from the germline sequence occurred more than three nucleotides before the predicted end of the Trav genes or more than three nucleotides after the predicted end of the Traj gene. Finally, the amino acid usage within the CDR3\u03b1 was determined for each sequence to identify any patterns in the CDR3 regions in sequences belonging to T cells from one MHC haplotype versus another. All of the analysis was performed using in-house programs developed in Python 2.7. Software and sequences used to analyze and correct TCR alpha sequences are at the lab webpage https://www.nationaljewish.org/research-science/programs-depts/biomedical-research/labs/kappler-marrack-research-lab/protocols or available on request to PM, SHK or JWK. The raw and analyzed sequences used in this paper are at GEO accession GSE105129.\n\nIn order to represent the differential Trav and Traj gene usage in TCRs sequenced from different mouse samples, we used edgeR from the R/Bioconductor package. A threshold of p<0.05 was used to identify genes that were most significantly differentially expressed between samples.\n\nEuclidean distances for TRAVs and TRAJs were calculated as log2 transformed counts per 104 sequences.\n",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "a489263b-4516-4726-9660-4834ca78273c",
+      "submission_id": "d0d33f98-2882-4d61-bc63-751972bab491",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pamela J Bjorkman, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30918.027](https://doi.org/10.7554/eLife.30918.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The somatically generated T cell receptor CDR3a contributes to the MHC allele specificity of the T cell receptor\" for consideration by eLife. Your article has been favorably evaluated by Arup Chakraborty (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.. The following individual involved in review of your submission has agreed to reveal their identity: Nilabh Shastri (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nYou reveal new insights into the mechanisms regulating positive selection of T-cell receptors (TCRs) by MHC class II molecules. You show that the bias in the specificity of TCRs for self-MHC expressed in the thymus results not only from germ-line encoded elements of the TCR \u03b1 chain, but also from its somatically generated CDR3 region. The findings help explain the structural basis for positive selection of T cell receptors in the thymus that is known to be skewed by thousands of polymorphic MHC alleles.\n\nA clever approach is used to analyze the structural features of the TCR compatible with positive selection, transgenic mice that express the \u03b2 chain (DO\u03b2WT) of the TCR isolated from a T cell hybridoma specific for either the Ad or Ab MHC class II molecules presenting the same OVA-derived peptide. In these mice, due to allelic exclusion, all T cells express the same \u03b2 TCR transgene, but the T cells are free to pair with any \u03b1 TCR chain. They compare TCRs selected in these transgenic mice with another transgenic mouse produced using the same \u03b2 TCR (DO\u03b248A) with a mutation (Y48A) known to reduce its ability to interact with MHC II molecules and thus serve as a control for MHC specific factors. These two transgenes were then bred onto mice expressing either Ab, Af or As MHC class II molecules. As expected, the TCRs of CD4 T cells selected by each of these MHC II alleles were distinct in their bias for the self-MHC molecule.\n\nLarge-scale careful and statistically-sound analysis of the TCR \u03b1 chains was then carried out among the CD4 T cells in the various mice. To ensure that only a single \u03b1 chain was expressed by the T cells mice were bred onto the TCR \u03b2-/- homozygous and TCR \u03b1 +/- heterozygous backgrounds. Extensive analysis of TCRs expressed by pre-selected versus na\u00efve CD4 T cells showed that the selection of TCR \u03b1 chains was clearly dependent upon the MHC II allele expressed in the thymus. Furthermore, the selected \u03b1 chains showed clear impact of both the germline (CDR1 and CDR2) as well as somatically generated CDR3 containing the V-J junctions.\n\nThis is a nicely written paper. You are commended for presenting a thoughtful commentary of your well-controlled and carefully executed experiments and an excellent discussion of relevant issues of the role of MHC versus peptide residues in the positive selection interactions with features of the TCR. Although this study, like others, cannot distinguish whether the observed changes are caused by unique features of the MHC or the peptide, it advances the field by providing a new perspective. The study's novelty and importance lie in the characterization of the impact of MHC alleles on thymic selection of PAIRS of TCR\u03b1\u03b2 chains, not just TCR\u03b1 or TCR\u03b2-so they are really characterizing the impact of MHC alleles on the antigen-binding TCR repertoire. The results are clearly presented (which is truly challenging for this dataset) and persuasively discussed. Overall, the results strongly support the notion that the presented self peptides govern the allele bias of positive selection.\n\nOne could ask what would be observed in F1 mice, but this is likely beyond what is feasible within the scope of this study. The manuscript as is presents an appropriate amount of work, and is very definitive. Appropriate quantitative tools are employed to characterize the repertoire. Controls are employed at multiple steps that ensure the quality of the sequencing data. Overall, we found very little lacking in this report and have only minor suggestions to improve the manuscript.\n\nPlease follow the following recommendations for revision:\n\n1) Paragraph 1 should include citations to relevant literature.\n\n2) Relevant to point 1 above, it would be informative to include a discussion of models for TCR recognition of MHC-peptide complexes. For example, when the first crystal structures of TCR-pMHC complexes were solved (note that Garboczi et al., 1996 should be cited along with Garcia et al., 1996), they revealed TCRs that were aligned diagonally across the pMHC such that the prevailing model at the time (CDRs 1 and 2 recognize the MHC helices and the more diverse CDR3s would recognize the bound peptide) had to be rethought. Subsequent structures showed variability in TCR orientation on MHC/peptide complexes, ranging from close to the perpendicular orientation predicted by the above-described model (predicting that CDR3alpha would interact only with the bound peptide) to the diagonal orientations in which CDR3alpha could interact with the MHC helices as well as the bound peptide (nicely reviewed in Hennecke and Wiley, 2001, Cell 104:1-4). Thus for a TCR that orients diagonally across a pMHC, it would not be surprising that changes in CDR3alpha could affect positive selection of TCRs.\n\n3) Figure 5\u2014figure supplement 2 is difficult to understand. Perhaps the legend could explain more fully what exactly is plotted, and what results are meaningful (when points are skewed off the line).\n\n4) We agree with the authors in their final point of the Discussion \u2013 that the strong bias for distal Js and the large number of paired V's does seem to suggest that the TCR\u03b2 is \"desperate\" in TCR\u03b2 transgenic mice. But distal Js are not any more likely to generate selectable CDR3s than proximal, I would imagine. So I wonder if the overall threshold of selection ends up being changed in TCR\u03b2 transgenic mice. Have the authors examined the level of Nur77GFP in CD4 T cells in mice on a non-Tg versus TCR\u03b2 transgenic background?\n\n5) The TCR sequences should be deposited in appropriate databases.\n\n6) Nomenclature: is it misleading to refer to the CDR3 loops as \"somatically generated\" given that at least some of the residues are germline encoded within the J (for V\u03b1) and D plus J (for V\u03b2) gene segments?\n\n7) The rigor and extent of statistical information is appropriate, although it could be argued that the data are better visualized using error bars that indicate standard deviation, rather than standard error of the mean. P values are derived with appropriate statistical tools.\n",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e889652a-d10f-4411-aef2-0777a282dfa7",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C1",
+      "claim": "Mature T cells bearing \u03b1\u03b2 T cell receptors react with foreign antigens bound to alleles of major histocompatibility complex proteins (MHC) that they were exposed to during their development in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature T cells bearing \u03b1\u03b2 T cell receptors react with foreign antigens bound to alleles of major histocompatibility complex proteins (MHC) that they were exposed to during their development in the thymus, a phenomenon known as positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established phenomenon in immunology supported by extensive prior research and is stated as background knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "799d2c1c-4a8d-4814-8d96-4141af59d80c",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C2",
+      "claim": "Positive selection-induced MHC bias of T cell receptors is affected by the germline encoded elements of the T cell receptor \u03b1 and \u03b2 chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using mice expressing one of two different T cell receptor \u03b2 chains and various MHC alleles, we show that positive selection-induced MHC bias of T cell receptors is affected both by the germline encoded elements of the T cell receptor \u03b1 and \u03b2 chain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mice expressing different TCR \u03b2 chains and MHC alleles, as described throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "05398015-d2d5-49eb-8832-70ebdc03a206",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C3",
+      "claim": "Positive selection-induced MHC bias of T cell receptors is dramatically affected by the non germ line encoded portions of CDR3 of the T cell receptor \u03b1 chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using mice expressing one of two different T cell receptor \u03b2 chains and various MHC alleles, we show that positive selection-induced MHC bias of T cell receptors is affected both by the germline encoded elements of the T cell receptor \u03b1 and \u03b2 chain and, surprisingly, dramatically affected by the non germ line encoded portions of CDR3 of the T cell receptor \u03b1 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by sequencing data and statistical analyses comparing CDR3\u03b1 sequences across different MHC alleles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "925a4380-55ae-49b3-a834-ef8b71213e4e",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C4",
+      "claim": "The non germline encoded elements of T cell receptors may help the proteins cope with the extremely polymorphic nature of major histocompatibility complex products within the species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to determining specificity for antigen, the non germline encoded elements of T cell receptors may help the proteins cope with the extremely polymorphic nature of major histocompatibility complex products within the species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings regarding the role of non-germline encoded TCR elements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "f2991f76-9f73-4fcb-a62e-eb9ed5edbc00",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C5",
+      "claim": "T cell antigen receptors are composed of alpha and beta chains (TCRs) that react with peptides derived from pathogens bound in a groove on the surface of host major histocompatibility proteins (MHCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Many T lymphocytes in the body express clonally distributed T cell antigen receptors composed of alpha and beta chains (TCRs) that react with peptides derived from pathogens and other foreign materials bound in a groove on the surface of host major histocompatibility proteins (MHCs) (Allison et al., 1982; Babbitt et al., 1985; Haskins et al., 1983; Meuer et al., 1983; Shimonkevitz et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in immunology supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "086c4ba0-13b3-4808-b1b4-7c4adc5e9efb",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C6",
+      "claim": "The genes encoding MHC proteins are the most polymorphic genes in a given species.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes encoding these MHC proteins are the most polymorphic genes in a given species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in immunology and genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "2ac8bb44-e8c0-475e-ac44-42fb36f9c61e",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C7",
+      "claim": "Most of the polymorphisms in MHC proteins tend to be concentrated within the residues that line the peptide-binding groove of the molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the polymorphisms tend to be concentrated within the residues that line the peptide-binding groove of the molecules (Bjorkman et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "2ab26120-036e-476c-9df0-214b25083c12",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C8",
+      "claim": "Different MHC alleles within a species preferentially bind and present different peptides from any given invading organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, in general, different MHC alleles within a species preferentially bind, and present to TCRs, different peptides from any given invading organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the polymorphic nature of MHC molecules and established immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "f422ee47-2589-46d3-864f-32f86d260556",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C9",
+      "claim": "The allelic variants of MHC expressed in one individual are very frequently recognized by 1% or more of the T cells of other individuals expressing different MHC alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The allelic variants of MHC expressed in one individual are very frequently recognized by 1% or more of the T cells of other individuals expressing different MHC alleles, a phenomenon called 'alloreactivity'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about alloreactivity in immunology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "d348480a-b6cd-4b5e-b465-b1c18ada6cda",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C10",
+      "claim": "Differences in bound peptides play an important role in alloreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "While differences in bound peptides play an important role in alloreactivity (Hunt et al., 1990; Crumpacker et al., 1992), structural studies show that some of the allelic variations in MHC proteins themselves interact with the TCRs of alloreactive T cells (Grandea and Bevan, 1993; Archbold et al., 2008; Colf et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "ca9c32b1-626b-4e8c-b761-b5079df09940",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C11",
+      "claim": "Some of the allelic variations in MHC proteins themselves interact with the TCRs of alloreactive T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While differences in bound peptides play an important role in alloreactivity (Hunt et al., 1990; Crumpacker et al., 1992), structural studies show that some of the allelic variations in MHC proteins themselves interact with the TCRs of alloreactive T cells (Grandea and Bevan, 1993; Archbold et al., 2008; Colf et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "e8b24d1a-df36-4c14-882e-ac77918ceb56",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C12",
+      "claim": "T cells in one individual are more likely to react with foreign peptides bound to the grooves of self MHC than to foreign peptides bound to foreign MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments have shown that T cells in one individual are more likely to react with foreign peptides bound to the grooves of self MHC than to foreign peptides bound to foreign MHC (Fink and Bevan, 1978; Zinkernagel et al., 1978; Kappler and Marrack, 1978; Sprent, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to classic experiments demonstrating MHC restriction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "d5daf8c1-a3ef-4d2a-bb00-39085b2ef3b7",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C13",
+      "claim": "Thymocytes are allowed to develop into mature T cells only if the TCR they bear reacts with low affinity/avidity with MHC proteins bound to self peptides in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, known to be the consequence of thymic positive selection, is caused by the fact that thymocytes are allowed to develop into mature T cells only if the TCR they bear reacts with low affinity/avidity with MHC proteins bound to self peptides in the thymus (Sprent et al., 1988; Ashton-Rickardt et al., 1994; Sebzda et al., 1994; Hogquist et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about positive selection supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "8e3d5879-d0ec-42f7-88ee-54211c413ed0",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C14",
+      "claim": "The thymus generally weeds out T cell progenitors that react with too high affinity/avidity with self MHC plus self peptide through negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, in an apoptotic process termed 'negative selection', the thymus generally weeds out T cell progenitors that react with too high affinity/avidity with self MHC plus self peptide, thus preventing the maturation of many potentially self reactive T cells (Kappler et al., 1987; von Boehmer et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about negative selection supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "c6f759ef-d099-4f09-9a5f-bd0da38b7a19",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C15",
+      "claim": "The alpha and beta chains that comprise TCRs each usually engage MHC + peptide via three complementary determining loops (CDRs 1,2 and 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutational and structural studies have shown that the alpha and beta chains that comprise TCRs each usually engage MHC + peptide via three complementary determining loops (CDRs 1,2 and 3) (Garcia et al., 1996; Reinherz et al., 1999; Dai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutational and structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "176bbab3-0720-4850-a030-c4538737bd3b",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C16",
+      "claim": "For both the TCR alpha and beta chains, CDR1 and CDR2 loops are encoded by the germ line Trav and Trbv genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For both the TCR alpha and beta chains, two of these loops, CDR1 and CDR2, are encoded by the germ line Trav (for the TCR\u03b1 chain) and Trbv (for the TCR\u03b2 chain) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TCR gene structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "e2d97c3c-4c8d-4c2b-88a2-cc799446b8b8",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C17",
+      "claim": "The CDR3 loop for each TCR chain is produced during TCR gene rearrangement as the cells develop in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "The third, CDR3, loop for each chain, on the other hand, is produced during TCR gene rearrangement as the cells develop in the thymus (Davis, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TCR gene rearrangement supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "adeed263-ceea-446f-a63e-8bffd48f95d4",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C18",
+      "claim": "The sequence coding for CDR3\u03b1 is created when one of many Trav gene segments rearranges to fuse with one of the many Traj gene segments with the total number of possible CDR3\u03b1 sequences increased by removal and/or addition of bases at the joining points.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the sequence coding for CDR3\u03b1, for example, is created when one of many Trav gene segments rearranges to fuse with one of the many Traj gene segments with the total number of possible CDR3\u03b1 sequences increased by removal and/or addition of bases at the joining points of Trav and Traj (Gellert, 2002; Cabaniols et al., 2001; Moshous et al., 2001; Lu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about V(D)J recombination supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "3f66c4a4-db93-4850-b72a-4aaeffe981b2",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C19",
+      "claim": "TCR CDR3 loops contact peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed evidence that the CDR3 loops contact peptide rapidly appeared (Danska et al., 1990; Kelly et al., 1993; Wither et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "7978da90-d0f3-4413-bba2-65f7a978b8fc",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C20",
+      "claim": "TCRs are usually oriented diagonally on the MHC, but the angle of their interaction varies quite considerably from one structure to another.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when crystallographically solved structures of TCRs on MHC became available it was soon apparent that TCRs are usually oriented diagonally on the MHC, but the angle of their interaction varies quite considerably from one structure to another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural studies of TCR-MHC complexes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "1ca1933b-a74f-4fe4-abc9-1258a09f1b60",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C21",
+      "claim": "The TCR CDR3 regions are often focused on the peptide, but amino acids in these regions sometimes also contact MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the TCR CDR3 regions are often focused on the peptide, amino acids in these regions sometimes also contact MHC and, vice versa, CDR1 and CDR2 amino acids sometimes contact peptide in addition to their predicted interactions with MHC(Garboczi et al., 1996; Garcia et al., 1996; Hennecke and Wiley, 2001; Meuer et al., 1983; Rudolph et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "b737e1ff-b513-4c62-9bb7-a2bd17d35af0",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C22",
+      "claim": "CDR1 and CDR2 amino acids sometimes contact peptide in addition to their predicted interactions with MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the TCR CDR3 regions are often focused on the peptide, amino acids in these regions sometimes also contact MHC and, vice versa, CDR1 and CDR2 amino acids sometimes contact peptide in addition to their predicted interactions with MHC(Garboczi et al., 1996; Garcia et al., 1996; Hennecke and Wiley, 2001; Meuer et al., 1983; Rudolph et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "3adbf311-65a8-412e-988c-bdbd257cea28",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C23",
+      "claim": "The entire sequence of the TCR\u03b1 chain, including the TRAV, TRAJ and CDR3\u03b1, is involved in positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding of this issue is complicated by the cooperative nature of TCR interactions with its ligands, by which an interaction at one site on the TCR/MHC/peptide surface adjusts interactions elsewhere (Mazza et al., 2007; Baker et al., 2012; Adams et al., 2016) and a study that indicated that the entire sequence of the TCR\u03b1 chain, including the TRAV, TRAJ and CDR3\u03b1, is involved in positive selection (Merkenschlager et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "3a66f66e-e838-4558-b4a7-ec9cfb634012",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C24",
+      "claim": "A fairly high percentage of individual TCR\u03b1 or TCR\u03b2 sequences are expressed in animals regardless of their MHC haplotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because others and we have found a fairly high percentage of individual TCR\u03b1 or TCR\u03b2 sequences are expressed in animals regardless of their MHC haplotype (Robins et al., 2010; Warren et al., 2011; Liu et al., 2014) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and data in the supplementary file.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "3ddec7a0-229b-4fb6-853f-50f8c22e6138",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C25",
+      "claim": "Each individual TCR chain is paired with a different partner(s) in animals with different MHC alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably this is at least in part possible because each individual chain is paired with a different partner(s) in animals with different MHC alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that individual chains appear across different MHC haplotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "7555092a-d860-41f9-932d-f1aec17ac0c1",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C26",
+      "claim": "The T cells in any given mouse or human have been reported to bear, collectively, more than 10^5 different TCR\u03b1 and about the same number of different TCR\u03b2 chain sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The T cells in any given mouse or human have been reported to bear, collectively, more than 105 different TCR\u03b1and about the same number of different TCR\u03b2 chain sequences (Venturi et al., 2011; Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "cc80240f-c12b-4e16-af52-04bb746a7936",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C27",
+      "claim": "The T cells might bear up to 10^10 different combinations of TCR alpha and beta chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the T cells might bear up to 1010 different combinations of these chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the number of different alpha and beta chains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "d772fa6e-6b00-4672-8671-c3f1aa5637f9",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C28",
+      "claim": "Only a limited number of TCR\u03b1 chains can be positively selected with a single TCR\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "This choice has two advantages. It allowed accurate knowledge of the TCR\u03b2 on the T cells and, because it was expected that only a limited number of TCR\u03b1 chains can be positively selected with a single TCR\u03b2, it limited the numbers of different TCR\u03b1sequences we expected to find in the mice (Merkenschlager et al., 1994; Fukui et al., 1998; Hsieh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "8d75b211-04cb-4786-8354-d4ca1b57dfa4",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C29",
+      "claim": "The DO\u03b248A mutation reduces the ability of the TCR\u03b2 chain to react with the alpha chain alpha helix of MHCII and with the alpha1 alpha helix of MHCI.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation reduces the ability of the TCR\u03b2 chain to react with the alpha chain alpha helix of MHCII and with the alpha1 alpha helix of MHCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous characterization of the DO\u03b248A mutation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "e95a311b-3d70-4956-938d-2376b4a563c1",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C30",
+      "claim": "The numbers of mature CD4 or CD8 thymocytes in mice expressing DO\u03b248A were much lower than those in mice expressing DO\u03b2WT.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by our previous data using retrogenic mice (Scott-Browne et al., 2009), the numbers of mature CD4 or CD8 thymocytes in mice expressing DO\u03b248A were much lower than those in mice expressing DO\u03b2WT (Figure 1A, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "d4d50eec-82a6-44f7-a3df-c94d2f76afd7",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C31",
+      "claim": "The TCR\u03b2 48A for 48Y substitution affects MHC interactions regardless of the MHC class or allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the TCR\u03b2 48A for 48Y substitution affects MHC interactions regardless of the MHC class or allele, as we have previously predicted (Scott-Browne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data showing reduced thymocyte numbers across different MHC alleles, supported by previous predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "06d22ab0-3d17-45ed-8db9-64eeb4afba3c",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C32",
+      "claim": "The difference in numbers of mature T cells between mice expressing DO\u03b2WT and DO\u03b248A was less marked in peripheral lymph nodes than in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in numbers of mature T cells between mice expressing DO\u03b2WT and DO\u03b248A was less marked in peripheral lymph nodes than in the thymus (Figure 1B), probably because of increased homeostatic expansion, as exemplified by the increased percentages of CD44hi T cells amongst those few that could mature in DO\u03b248A mice (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "6583e282-9a77-4d0e-be7b-4671c1009eb7",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C33",
+      "claim": "There were more mature CD4 than CD8 T cells in the lymph nodes of mice expressing DO\u03b2WT and H2b.",
+      "claim_type": "EXPLICIT",
+      "source": "There were more mature CD4 than CD8 T cells in the lymph nodes of mice expressing DO\u03b2WT and H2b (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "d17d9cb7-9b0d-4724-bfe3-015b08640f90",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C34",
+      "claim": "The bias towards CD4 versus CD8 T cells in H2b animals may be due to the fact that DO\u03b2WT was found in a TCR that reacts with IAd or IAb plus a foreign peptide and not from an MHCI-reactive TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenon may be due to the fact that DO\u03b2WT was found in a TCR that reacts with IAd or IAb plus a foreign peptide (OVA 327\u2013339) and not from an MHCI-reactive TCR (White et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed CD4/CD8 bias, supported by citation to the origin of DO\u03b2WT.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "5cfe66c9-640d-458d-a095-82dc00d3567c",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C35",
+      "claim": "DO\u03b2WT transduced cells from a DO\u03b248A H2b mouse were most likely to react with H2b presenting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, T cells from a DO\u03b248A H2b mouse, after transduction to express DO\u03b2WT, were most likely to react with H2b presenting cells and DO\u03b2WT transduced cells from DO\u03b248A H2s mice reacted only with challenge cells expressing H2s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the retroviral transduction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "2de36fa5-1ee8-4aae-ba28-02b36b865a78",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C36",
+      "claim": "DO\u03b2WT transduced cells from DO\u03b248A H2s mice reacted only with challenge cells expressing H2s.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, T cells from a DO\u03b248A H2b mouse, after transduction to express DO\u03b2WT, were most likely to react with H2b presenting cells and DO\u03b2WT transduced cells from DO\u03b248A H2s mice reacted only with challenge cells expressing H2s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the retroviral transduction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "4c8fd82e-b2bc-4474-8f6d-0a14a6959399",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C37",
+      "claim": "The TCR\u03b1 chain that pairs with the transgenic DO\u03b248A contributes to the preference of CD4 T cells to react with peptides bound to the MHCII allele involved in positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments show that the TCR\u03b1 chain that pairs with the transgenic DO\u03b248A does indeed contribute to the preference of CD4 T cells to react with peptides bound to the MHCII allele involved in positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the retroviral transduction experiments showing MHC-specific reactivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "62d997ad-38cf-4708-a209-a1e1334036e6",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C38",
+      "claim": "The T cells in mice expressing a single TCR\u03b2 chain have a limited repertoire of TCR\u03b1 chains by comparison with WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have previously reported that the T cells in mice expressing a single TCR\u03b2 chain have a limited repertoire of TCR\u03b1 chains by comparison with WT animals (Fukui et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "405eb0c7-1c3a-44c1-87b1-88b29a29a191",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C39",
+      "claim": "The total number of TCR\u03b1 sequences detected on na\u00efve CD4 T cells in the TCR\u03b2 transgenic animals ranged from less than 5000 to a maximum of about 30,000.",
+      "claim_type": "EXPLICIT",
+      "source": "Species accumulation curves show that the total number of TCR\u03b1 sequences we could detect on na\u00efve CD4 T cells in the TCR\u03b2 transgenic animals ranged from less than 5000 to a maximum of about 30,000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species accumulation curve analysis of sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "dc502266-a35b-4c6d-b239-7c9ede0717ea",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C40",
+      "claim": "The numbers of TCR\u03b1 sequences found in CD4 na\u00efve T cells from B6 mice are greater than 10^5 in number.",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers are less than those found in CD4 na\u00efve T cells from B6 mice, which we found to be similar in number to those found on mouse CD8 T cells (Genolet et al., 2012), >than 105 in number (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on species accumulation curve analysis and comparison with published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "daea3262-a0da-4552-b6d7-ecdccb643aa6",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C41",
+      "claim": "More than four times more TCR\u03b1 sequences were apparent in mice expressing IAb versus IAs when paired with DO\u03b2WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers of TCR\u03b1 sequences that could partner with DO\u03b2WT in selection of CD4 T cells varied considerably with the selecting MHCII allele. More than four times more TCR\u03b1 sequences were apparent in mice expressing IAb versus IAs (Figure 3B\u2013D), perhaps because the TCR from which DO\u03b2WT is derived can be selected by IAb (Liu et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on species accumulation curve data shown in Figure 3, with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "348a37d7-b2c3-44c6-ab41-a95985832702",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C42",
+      "claim": "The effect of MHC allele on the numbers of selected TCR\u03b1 chains was not evident in animals expressing DO\u03b248A.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of MHC allele on the numbers of selected TCR\u03b1 chains was not evident in animals expressing DO\u03b248A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of species accumulation curves for DO\u03b248A mice with different MHC alleles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "5a6f74aa-9786-4dc7-859d-e4ff81a5e4f4",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C43",
+      "claim": "The numbers of different TCR\u03b1 chains associated with DO\u03b248A was lower than those associated with DO\u03b2WT regardless of the MHCII allele involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the numbers of different TCR\u03b1 chains associated with DO\u03b248A was lower than those associated with DO\u03b2WT regardless of the MHCII allele involved, possibly because of the extra demands imposed on TCR\u03b1 chains by the inadequate TCR\u03b2 chain lacking an important MHC contact residue, Y48 (Scott-Browne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species accumulation curve data with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "ea905333-1454-4d5e-a4d8-637bbb7ed8e2",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C44",
+      "claim": "The same combination of TRAV/TRAJ/CDR3 sequences were likely to appear in samples from mice of the same TCR\u03b2 and MHC genotype but were very unlikely to be shared with the T cells from mice expressing a different MHC allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Jaccard analyses showed that the same combination of TRAV/TRAJ/CDR3 sequences were likely to appear in samples from mice of the same TCR\u03b2 and MHC genotype but were very unlikely to be shared with the T cells from mice expressing a different MHC allele (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Jaccard similarity analysis of TCR\u03b1 sequences shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "9dd9c288-e08d-4340-8fc4-d86b0545017f",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C45",
+      "claim": "Sequences that appear frequently in one mouse of a given genotype are more likely to be found in other mice of the same type.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that the values of the Anne Chao Jaccard analyses for mice of the same MHCII allele are much larger than those of the Jaccard analyses shows that sequences that appear frequently in one mouse of a given genotype are more likely to be found in other mice of the same type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing Jaccard and Anne Chao Jaccard indices.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "0a14619b-1d6a-46d7-a816-ef063eb1e28e",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C46",
+      "claim": "Some sequences were repeated many times in all mice of a given MHCII type, whereas other sequences were rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a result is a manifestation of the fact that some sequences were repeated many times in all mice of a given MHCII type, whereas other sequences were rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the Anne Chao Jaccard analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "738f6cf6-064a-4673-90a0-8405b1ec69f5",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C47",
+      "claim": "The uneven distribution of TCR sequences was not necessarily caused by expansion of single clones of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenon was not necessarily caused by expansion of single clones of T cells since, even in sets in which the CDR3\u03b1 amino acid sequences were identical, the DNA sequences were not necessarily all the same (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of DNA sequences underlying identical CDR3\u03b1 amino acid sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "43a359e9-aacc-491b-85a5-b3ddd21550a1",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C48",
+      "claim": "The selected TCR\u03b1 chains depended on the partner TCR\u03b2, even when the selecting MHC allele was identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar analyses were applied to samples from mice in which the selecting MHCII allele was identical, but the partner TCR\u03b2 differed. The data show that the selected TCR\u03b1 chains depended on the partner TCR\u03b2, even when the selecting MHC allele was identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Jaccard similarity analyses comparing mice with the same MHC but different TCR\u03b2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "dc73766c-a432-4763-bb0c-24bff9544c1d",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C49",
+      "claim": "There was slightly more overlap if the co-selected TCR\u03b2s were different but the selecting MHCII alleles were identical than if the reverse were true.",
+      "claim_type": "EXPLICIT",
+      "source": "Close inspection revealed, however, that there was slightly more overlap if the co-selected TCR\u03b2s were different but the selecting MHCII alleles were identical than if the reverse were true, that is the co-selected TCR\u03b2s were the same but the selecting MHCII alleles were different (Figure 4C,D, Figure 4\u2014figure supplement 1) (Fink and Bevan, 1978).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of Jaccard indices shown in Figure 4C, D and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "793ee002-54bd-4e0d-98d4-27ca0b3375f1",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C50",
+      "claim": "TRAV usage on preselection thymocytes was similar, regardless of the MHC allele in the donor animal or the coexpressed TCR\u03b2(s).",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested whether the expressed MHC haplotype might unexpectedly affect the nature of TRAVs expressed on preselection thymocytes. As shown in Figure 5A, Figure 5\u2014figure supplements 1\u20132, TRAV usage on preselection thymocytes was similar, regardless of the MHC allele in the donor animal or the coexpressed TCR\u03b2(s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TRAV usage in preselection thymocytes shown in Figure 5A and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "2aa0752e-827b-4d93-afb9-356146a4716f",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C51",
+      "claim": "TRAVs whose genes are most proximal to the TRAJ locus (TRAVs 17\u201321) were frequently rearranged in preselection thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAVs whose genes are most proximal to the TRAJ locus (TRAVs 17\u201321) were frequently rearranged, as predicted by previous studies (Villey et al., 1996; Shih et al., 2011; Genolet et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TRAV usage in preselection thymocytes, consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "3d274ea0-9638-4cab-8212-24defc257348",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C52",
+      "claim": "In preselection thymocytes, frequent rearrangements involving TRAV 1 and members of the TRAV 3, 6, 7, 10, 11 and 14 families were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in preselection thymocytes we also observed frequent rearrangements involving TRAV 1 and members of the TRAV 3, 6, 7, 10, 11 and 14 families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TRAV usage in preselection thymocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "88b9c552-a269-4218-a680-2eb93ed28532",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C53",
+      "claim": "The selecting MHC allele affected the frequency with which different TRAVs were expressed on mature na\u00efve CD4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the selecting MHC allele affected the frequency with which different TRAVs were expressed on mature na\u00efve CD4 T cells (Figure 5\u2014figure supplements 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TRAV usage in mature CD4 T cells shown in Figure 5 supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "f79ada4d-be60-4741-8daf-2242cb3a184a",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C54",
+      "claim": "Members of the TRAV5 family were used to some extent by CD4 T cells selected on IAb, but not by cells selected on IAf or IAs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example members of the TRAV5 family were used to some extent by CD4 T cells selected on IAb, but not by cells selected on IAf or IAs (compare Figure 5B,C with Figure 5D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of TRAV usage data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "ce55e7cf-e304-4369-814d-7813cc9b6878",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C55",
+      "claim": "CD4 T cells in DO\u03b2WT H2s mice were alone in their use of TRAV17.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, CD4 T cells in DO\u03b2WT H2s mice were alone in their use of TRAV17 (Figure 5B,D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on TRAV usage data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "71e6a71e-850e-4d7d-8ae4-6f5a62f1ea27",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C56",
+      "claim": "TRAJ use by preselection thymocytes was similar regardless of the selecting MHC haplotype or co-expressed TCR\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAJ use by preselection thymocytes was similar regardless of the selecting MHC haplotype or co-expressed TCR\u03b2 (Figure 6A, Figure 6\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TRAJ usage in preselection thymocytes shown in Figure 6A and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "0eb6a144-0ab3-4c47-bdaf-3fff5a22e84f",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C57",
+      "claim": "TRAJ use by na\u00efve CD4 T cells from B6 mice was fairly uniform across the locus.",
+      "claim_type": "EXPLICIT",
+      "source": "TRAJ use by na\u00efve CD4 T cells from B6 mice was fairly uniform across the locus (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TRAJ usage shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "d2575f33-b90c-44c1-a357-63502a2ab311",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C58",
+      "claim": "TRAJ use by T cells from mice expressing a single TCR\u03b2 was much more uneven and tended towards TRAJs whose genes were distal to the TRAV locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, however, and in contrast to preselection thymocytes and na\u00efve CD4 T cells from B6 mice, TRAJ use by T cells from mice expressing a single TCR\u03b2 was much more uneven and tended towards TRAJs whose genes were distal to the TRAV locus (Figure 6B\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TRAJ usage shown in Figure 6B-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "816f2821-c120-41d6-a1ad-3d46dff19b4e",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C59",
+      "claim": "CD4 T cells in DO\u03b2WT animals used TRAJ21 most frequently regardless of MHC allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of MHC allele, CD4 T cells in DO\u03b2WT animals used TRAJ21 most frequently (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TRAJ usage shown in Figure 6D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "d909a9ee-93c3-4be1-8ad3-0fa3d9140825",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C60",
+      "claim": "In DO\u03b248A mice, TRAJ 9, TRAJ 12 and TRAJs 9,15 and 31 dominated in H2b, H2f and H2s mice respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias towards use of distal TRAJ genes was even more marked in animals expressing DO\u03b248A. In these mice TRAJ 9, TRAJ 12 and TRAJs 9,15 and 31 dominated in H2b, H2f and H2s mice respectively (Figure 6G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of TRAJ usage shown in Figure 6G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "31b19b82-987a-44c5-8e25-55f0950ec5cd",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C61",
+      "claim": "CD4 T cells selected on IAb had significantly shorter CDR3\u03b1 lengths and fewer N region bases than their counterparts selected on IAf or IAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the average lengths of CDR3\u03b1s and the predicted number of N region bases between mice expressing the same TCR\u03b2 and different MHCII alleles. CD4 T cells selected on IAb had significantly shorter CDR3\u03b1 lengths and fewer N region bases than their counterparts selected on IAf or IAs (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of CDR3\u03b1 lengths shown in Figure 7 supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "0582aa37-b39c-420a-9f0b-c6b37732c6d9",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C62",
+      "claim": "The expressed CDR3\u03b1 sequences in mice with a particular MHCII allele were very unlikely to be found in CD4 T cells of mice expressing a different MHCII allele, even if the co-selected TCR\u03b2 were the same.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were similar to those obtained when comparing the entire TCR\u03b1 sequences. The expressed CDR3\u03b1 sequences in mice with a particular MHCII allele were very unlikely to be found in CD4 T cells of mice expressing a different MHCII allele, even if the co-selected TCR\u03b2 were the same in the mice (Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Jaccard analysis of CDR3\u03b1 sequences shown in Figure 7A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "44680825-b840-43e3-8f73-2141755382ee",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C63",
+      "claim": "CDR3\u03b1 sequences co-selected with a particular TCR\u03b2 were unlikely to be shared with those co-selected with a different TCR\u03b2, even if the selecting MHCII allele were the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, CDR3\u03b1 sequences co-selected with a particular TCR\u03b2 were unlikely to be shared with those co-selected with a different TCR\u03b2, even if the selecting MHCII allele were the same.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Jaccard analysis of CDR3\u03b1 sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "f42fe100-9e4f-40ca-88f5-0a39e7762f32",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C64",
+      "claim": "T cells expressing DO\u03b2WT and the same TRAV and TRAJ combinations, but selected on different MHCII alleles or with different TCR\u03b2s clearly had CDR3\u03b1 sequences that were almost completely unique to the selecting MHCII alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells expressing DO\u03b2WT and the same TRAV and TRAJ combinations, but selected on different MHCII alleles or with different TCR\u03b2s clearly had CDR3\u03b1 sequences that were almost completely unique to the selecting MHCII alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of CDR3\u03b1 sequences from the same TRAV/TRAJ pairs shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "0c83b466-42b7-4a3f-9b35-c585cfcc031e",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C65",
+      "claim": "Thymocytes with aromatic/hydrophobic amino acids at the tips of their CDR3\u03b2 segments are biased towards MHC reactivity, regardless of the selecting MHCII allele.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has reported that thymocytes with aromatic/hydrophobic amino acids at the tips of their CDR3\u03b2 segments are biased towards MHC reactivity, regardless of the selecting MHCII allele (Stadinski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "ccb369a0-1366-4d2d-8e19-64cc7e3fa66f",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C66",
+      "claim": "The results show MHCII allele and TCR\u03b2 specific selection for particular amino acids at CDR3\u03b1 positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show MHCII allele and TCR\u03b2 specific selection for particular amino acids and also changes in amino acid preference at CDR3\u03b1 positions depending on the length of the CDR3 (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of amino acid usage at CDR3\u03b1 positions shown in Figure 8 supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "15ddadd3-70c8-4b24-8af3-b946c1a7c7a4",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C67",
+      "claim": "Positive selection involves interactions between TCRs and allele-specific amino acids of MHC in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest explanation for the effects of positive selection on the reactivity of mature T cells is that the phenomenon involves interactions between TCRs and allele-specific amino acids of MHC in the thymus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis discussed in the manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "725509ef-7482-43dd-ab5d-f3b1c097f7ce",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C68",
+      "claim": "Positive selection may depend on interactions between TCRs and the MHC-bound self peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since different MHC alleles will bind different self peptides, positive selection may instead or, in addition, depend on interactions between TCRs and the MHC-bound self peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative hypothesis discussed in the manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "e4193406-9a10-4ad6-a436-013f3c78e7ad",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C69",
+      "claim": "The allele of MHCII involved in positive selection affects the frequencies with which TRAV and TRAJ elements are selected.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings presented previously (Merkenschlager et al., 1994) and here, demonstrate that the allele of MHCII involved in positive selection affects the frequencies with which TRAV and TRAJ elements are selected and, most dramatically, the CDR3\u03b1 sequences that appear on mature T cells, as previously indicated for CD8 T cells (Ferreira et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental data presented in the manuscript, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "111af49e-20f7-439c-b7b9-0a39172677e9",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C70",
+      "claim": "The allele of MHCII involved in positive selection most dramatically affects the CDR3\u03b1 sequences that appear on mature T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings presented previously (Merkenschlager et al., 1994) and here, demonstrate that the allele of MHCII involved in positive selection affects the frequencies with which TRAV and TRAJ elements are selected and, most dramatically, the CDR3\u03b1 sequences that appear on mature T cells, as previously indicated for CD8 T cells (Ferreira et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "75eaff47-8445-4402-b123-0763ef934673",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C71",
+      "claim": "All three of the TCR\u03b1 CDRs can play a role in positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We think it likely that all three of the TCR\u03b1 CDRs can play a role in positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "efd9eee4-d0eb-44a1-8847-0c0210f0ffd1",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C72",
+      "claim": "CDR3\u03b1 is involved in positive selection since the sequences in the center of this element vary depending on the selecting MHCII allele, even if the accompanying TRAV and TRAJ are the same.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clearly CDR3\u03b1 is involved since the sequences in the center of this element vary depend on the selecting MHCII allele, even if the accompanying TRAV and TRAJ are the same (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "c6bb4e51-6caa-4414-9d9a-b914bd37de34",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C73",
+      "claim": "Positive selection allele specificity involves recognition of both MHC and peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results strongly suggest that positive selection allele specificity involves recognition of both MHC and peptide (reviewed in (Klein et al., 2014; Vrisekoop et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental results, supported by citations to reviews.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "66b1b227-7362-4427-8d68-99e931c1af8a",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C74",
+      "claim": "The sequence of the TCR\u03b2 chain affects the TCR\u03b1 and CDR3\u03b1 that can participate in positive selection almost as much as the selecting MHC allele does.",
+      "claim_type": "EXPLICIT",
+      "source": "The data here also show that the sequence of the TCR\u03b2 chain affects the TCR\u03b1 and CDR3\u03b1 that can participate in positive selection almost as much as the selecting MHC allele does.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental data comparing different TCR\u03b2 chains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "5c0a13b9-6ef0-4805-b3b3-c7920b0ed950",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C75",
+      "claim": "The TCR\u03b2 affects which TCR\u03b1s and which CDR3\u03b1s will be successful in positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does the TCR\u03b2 affect which TCR\u03b1s and which CDR3\u03b1s will be successful, it also determines how many different TCR\u03b1s can do the job since, regardless of the MHCII allele involved, fewer TCR\u03b1s can be selected with DO\u03b248A than with DO\u03b2WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "64e890c1-117d-412d-b18c-9f05fa07db27",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C76",
+      "claim": "Fewer TCR\u03b1s can be selected with DO\u03b248A than with DO\u03b2WT regardless of the MHCII allele involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does the TCR\u03b2 affect which TCR\u03b1s and which CDR3\u03b1s will be successful, it also determines how many different TCR\u03b1s can do the job since, regardless of the MHCII allele involved, fewer TCR\u03b1s can be selected with DO\u03b248A than with DO\u03b2WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species accumulation curve data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "a787d4fb-6b1e-4f38-819a-32cd6b407397",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C77",
+      "claim": "DO\u03b2 lacking an important MHC contact amino acid, the 'Y' at position 48, places more stringent requirements on TCR\u03b1 for successful thymus selection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are similar to those observed earlier that showed that fewer CD4 T cells are selected in DO\u03b248A-expressing versus DO\u03b2WT-expressing mice. Together these suggest that DO\u03b2 lacking an important MHC contact amino acid, the 'Y' at position 48, places more stringent requirements on TCR\u03b1 for successful thymus selection (Scott-Browne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "4833db54-cc4e-4ff6-8403-ec6d7e338f5f",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C78",
+      "claim": "The entire TCR sequence plays a role in positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results show that the entire TCR sequence plays a role in positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental data showing effects of TRAV, TRAJ, CDR3\u03b1, and TCR\u03b2 on selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "5ecd7efa-161c-4d1d-85b5-539815ac81e6",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C79",
+      "claim": "Competition for selection in the thymus has been previously demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Probably it is caused by competition for selection in the thymus, a phenomenon that has been previously demonstrated (Martins et al., 2014; Visan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "1009ae46-4ffa-4924-a98e-c9681b20cd7b",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C80",
+      "claim": "In the thymus of a mouse expressing a single TCR\u03b2, all thymocytes expressing an even approximately suitable TCR\u03b1 have the opportunity to be positively selected.",
+      "claim_type": "EXPLICIT",
+      "source": "In the thymus of a mouse expressing a single TCR\u03b2, the immature thymocytes bear the same large number of TCR\u03b1s, and now all those expressing an even approximately suitable TCR\u03b1 have the opportunity to be positively selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the larger number of TCR\u03b1 sequences found in single TCR\u03b2 mice compared to predictions from wild-type mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "b4a992a3-087b-48b5-8363-d595d0f3bddf",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C81",
+      "claim": "Each TCR\u03b2 chain can be successfully selected with up to 25 different TCR\u03b1s in humans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the estimated numbers of TCR\u03b2s and TCR\u03b1s that appear in the periphery of an individual, it has previously been estimated that each TCR\u03b2 chain can be successfully selected with up to 25 different TCR\u03b1s (Arstila et al., 1999; Casrouge et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "7ab15aa2-9fb9-492b-b9c9-17b632d1dcd9",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "claim_id": "C82",
+      "claim": "For a single TCR\u03b2, the number of possible TCR\u03b1 partners is at least 3 orders of magnitude larger than previously estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet here, and in previous studies, it appears that, for a single TCR\u03b2, the number of possible TCR\u03b1 partners is at least 3 orders of magnitude larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the species accumulation curve data showing thousands of TCR\u03b1 sequences per single TCR\u03b2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "87509587-93ef-4374-8395-ae8e4a0f04f0",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The DO\u03b248A mutation (Y48A substitution) reduces mature T cell numbers in the thymus across all MHC alleles tested (H2b, H2f, H2s), with less pronounced differences in peripheral lymph nodes, likely due to homeostatic expansion. The mutation affects MHC interactions regardless of MHC class or allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are well-supported by flow cytometry data shown in Figure 1A-D. The reduced thymocyte numbers in DO\u03b248A mice across different MHC alleles (C30, C31) and the differential effects in thymus vs. lymph nodes (C32) are clearly demonstrated with statistical significance. The CD4/CD8 bias observation (C33) is also data-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "03c6fd41-2726-43db-8a24-91bae8ab5069",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Retroviral transduction experiments demonstrate that TCR\u03b1 chains paired with DO\u03b248A contribute to MHC allele-specific reactivity. T cells transduced with DO\u03b2WT preferentially react with the MHC allele on which they were originally selected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by the retroviral transduction experiments shown in Figure 2. The data demonstrate MHC-specific reactivity patterns after DO\u03b2WT transduction, with appropriate controls (non-transduced GFP- cells). This provides functional evidence for TCR\u03b1 contribution to MHC restriction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Species accumulation curve analysis reveals that single TCR\u03b2 transgenic mice have 5,000-30,000 different TCR\u03b1 sequences on na\u00efve CD4 T cells, substantially fewer than wild-type B6 mice (>100,000). The number varies with MHC allele for DO\u03b2WT but not DO\u03b248A, and DO\u03b248A consistently selects fewer TCR\u03b1 partners than DO\u03b2WT. This represents 3 orders of magnitude more TCR\u03b1 partners per TCR\u03b2 than previously estimated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43, C76, and C82 are well-supported by species accumulation curve data in Figure 3. The quantitative estimates are based on appropriate statistical modeling. The comparison between DO\u03b2WT and DO\u03b248A across MHC alleles is consistent and statistically significant. The discrepancy with prior estimates (C82) is acknowledged and discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "9149dd88-79d4-43b8-a532-5af674855939",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Jaccard and Anne Chao Jaccard similarity analyses demonstrate that complete TCR\u03b1 sequences (TRAV/TRAJ/CDR3) are highly specific to both the selecting MHC allele and the partner TCR\u03b2. Sequences appearing in mice of the same genotype show limited overlap with mice of different MHC alleles or different TCR\u03b2 partners, with slightly more overlap when MHC is identical than when TCR\u03b2 is identical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 are supported by comprehensive Jaccard analyses shown in Figure 4. The statistical approach is appropriate for comparing repertoire overlap. The finding that frequently appearing sequences are more likely to be shared (C45-C46) is properly inferred from comparing Jaccard vs. Anne Chao Jaccard indices. The DNA sequence analysis (C47) provides evidence against clonal expansion as the sole explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "16bbe659-ed3e-478e-996a-6f9b60038c6a",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TRAV usage in preselection thymocytes is similar across MHC alleles and TCR\u03b2 genotypes, with expected proximal TRAV bias. However, mature na\u00efve CD4 T cells show MHC allele-specific TRAV usage patterns, with specific examples including TRAV5 family usage in IAb but not IAf/IAs selection, and TRAV17 usage unique to DO\u03b2WT H2s mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by TRAV usage data in Figure 5 and supplements. The preselection data (C50-C52) establish baseline expectations, while the mature T cell data (C53-C55) demonstrate selection effects. The statistical analyses (DESeq2, Figure 5 supplement 3) appropriately identify differential usage. Specific examples are clearly shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "b19126d3-2f35-45f0-9814-b51841432c1c",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TRAJ usage in preselection thymocytes and B6 na\u00efve CD4 T cells is relatively uniform, but single TCR\u03b2 transgenic mice show dramatic bias toward distal TRAJs. DO\u03b2WT mice preferentially use TRAJ21 regardless of MHC, while DO\u03b248A mice show even stronger distal bias with MHC-specific patterns (TRAJ9 in H2b, TRAJ12 in H2f, TRAJs 9/15/31 in H2s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 are well-supported by TRAJ usage data in Figure 6 and supplements. The unexpected distal TRAJ bias is clearly demonstrated and quantified. The MHC-specific patterns in DO\u03b248A mice are particularly striking. However, the mechanistic explanation for distal bias remains speculative (discussed but not experimentally tested).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "eef37f22-49ae-4617-ad78-e84c2e3bd29e",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CDR3\u03b1 sequences show dramatic MHC allele and TCR\u03b2 specificity. IAb-selected cells have shorter CDR3\u03b1 and fewer N-region bases than IAf/IAs-selected cells. CDR3\u03b1 sequences from mice with different MHC alleles or different TCR\u03b2 partners show minimal overlap, even when the same TRAV/TRAJ pairs are used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are strongly supported by data in Figures 7-8. The CDR3\u03b1 length analysis (C61, Figure 7 supplement 1) is statistically significant. The Jaccard analyses (C62-C63, Figure 7A-D) demonstrate minimal overlap across conditions. Critically, C64 is supported by Figure 8 showing that even with identical TRAV/TRAJ pairs, the CDR3\u03b1 sequences differ by MHC allele, directly demonstrating non-germline encoded contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study demonstrates that positive selection-induced MHC bias involves the entire TCR sequence: germline-encoded TRAV and TRBV elements, TRAJ elements, and most dramatically, the non-germline encoded portions of CDR3\u03b1. Both the selecting MHC allele and the partner TCR\u03b2 affect which TCR\u03b1 chains and CDR3\u03b1 sequences can participate in selection, suggesting that positive selection involves recognition of both MHC and peptide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C69-C75, C78 represent the major conclusions of the study and are well-supported by the comprehensive experimental data. The effects on TRAV (Figure 5), TRAJ (Figure 6), and CDR3\u03b1 (Figures 7-8) are all demonstrated. The critical finding that CDR3\u03b1 varies even with identical TRAV/TRAJ (C72, Figure 8) directly supports the role of non-germline encoded elements. The conclusion about MHC and peptide recognition (C73) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "5a4c7f68-cc4b-4e87-8741-4c00e95414d0",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Amino acid usage at specific CDR3\u03b1 positions shows MHC allele and TCR\u03b2-specific selection patterns that vary with CDR3 length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by data in Figure 8 supplement 2. The analysis shows position-specific and context-dependent amino acid preferences. However, the analysis is descriptive and the functional significance of specific amino acid preferences is not experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "c3dc8bf0-f44a-4898-825c-c78174565818",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The absence of tyrosine at position 48 in DO\u03b248A places more stringent requirements on TCR\u03b1 for successful thymic selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is supported by the combined observations of reduced thymocyte numbers (C30, Figure 1), fewer TCR\u03b1 sequences selected (C43, C76, Figure 3), and altered TRAV/TRAJ usage patterns in DO\u03b248A mice. This interpretation is consistent with the known role of Y48 in MHC contact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "a3624f9a-24ce-45c0-b05c-8dd0e3244e92",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that non-germline encoded TCR elements help cope with MHC polymorphism, and that positive selection may involve interactions with both MHC allele-specific amino acids and MHC-bound self peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C67-C68 are speculative interpretations (explicitly marked as speculation/hypothesis in evidence_type). While the experimental data demonstrate MHC allele-specific effects on CDR3\u03b1 selection, the data do not definitively distinguish between direct TCR-MHC contacts versus TCR-peptide contacts, nor do they establish the evolutionary advantage proposed in C4. These remain plausible hypotheses requiring additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "e0b56b96-4e8e-4371-bf6d-3e648c66a5b8",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The CD4/CD8 bias in H2b DO\u03b2WT mice may be due to the origin of DO\u03b2WT from an IAb-reactive TCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C34 is speculative (marked as speculation in evidence_type). While the CD4/CD8 bias is observed (C33, Figure 1D), the proposed explanation based on the origin of DO\u03b2WT is not experimentally tested. Alternative explanations are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "829d1921-022f-4572-98ff-793ba38fdcee",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that reduced competition in single TCR\u03b2 mice allows more TCR\u03b1 sequences to be positively selected, explaining why 5,000-30,000 TCR\u03b1 partners are observed versus the previously estimated 25 partners per TCR\u03b2 in wild-type mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 present a reasonable explanation for the discrepancy between observed and previously estimated TCR\u03b1 diversity. The competition hypothesis (C80) is supported by citations (C79) and is consistent with the data. However, the mechanism is not directly tested. The quantitative discrepancy (C82) is clearly demonstrated by the species accumulation curves (Figure 3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    },
+    {
+      "id": "565f9c48-36a8-404d-b39a-7a41bff2b88f",
+      "content_id": "fb3d8f5f-ce5b-40f1-b974-f400dba30a82",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on T cell receptor structure, MHC restriction, positive and negative selection, TCR gene rearrangement, and prior findings on TCR repertoire diversity and selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C29, C38, C65, C79, C81 represent established knowledge and prior work, appropriately cited throughout. These provide necessary context for the current study. The citations appear accurate and relevant based on the content described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:07:38.734236Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e95a311b-3d70-4956-938d-2376b4a563c1",
+      "result_id": "87509587-93ef-4374-8395-ae8e4a0f04f0"
+    },
+    {
+      "claim_id": "d4d50eec-82a6-44f7-a3df-c94d2f76afd7",
+      "result_id": "87509587-93ef-4374-8395-ae8e4a0f04f0"
+    },
+    {
+      "claim_id": "06d22ab0-3d17-45ed-8db9-64eeb4afba3c",
+      "result_id": "87509587-93ef-4374-8395-ae8e4a0f04f0"
+    },
+    {
+      "claim_id": "6583e282-9a77-4d0e-be7b-4671c1009eb7",
+      "result_id": "87509587-93ef-4374-8395-ae8e4a0f04f0"
+    },
+    {
+      "claim_id": "5cfe66c9-640d-458d-a095-82dc00d3567c",
+      "result_id": "03c6fd41-2726-43db-8a24-91bae8ab5069"
+    },
+    {
+      "claim_id": "2de36fa5-1ee8-4aae-ba28-02b36b865a78",
+      "result_id": "03c6fd41-2726-43db-8a24-91bae8ab5069"
+    },
+    {
+      "claim_id": "4c8fd82e-b2bc-4474-8f6d-0a14a6959399",
+      "result_id": "03c6fd41-2726-43db-8a24-91bae8ab5069"
+    },
+    {
+      "claim_id": "405eb0c7-1c3a-44c1-87b1-88b29a29a191",
+      "result_id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688"
+    },
+    {
+      "claim_id": "dc502266-a35b-4c6d-b239-7c9ede0717ea",
+      "result_id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688"
+    },
+    {
+      "claim_id": "daea3262-a0da-4552-b6d7-ecdccb643aa6",
+      "result_id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688"
+    },
+    {
+      "claim_id": "348a37d7-b2c3-44c6-ab41-a95985832702",
+      "result_id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688"
+    },
+    {
+      "claim_id": "5a6f74aa-9786-4dc7-859d-e4ff81a5e4f4",
+      "result_id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688"
+    },
+    {
+      "claim_id": "64e890c1-117d-412d-b18c-9f05fa07db27",
+      "result_id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688"
+    },
+    {
+      "claim_id": "7ab15aa2-9fb9-492b-b9c9-17b632d1dcd9",
+      "result_id": "e8bfb6cb-7d97-4f98-b44a-b04da4ab4688"
+    },
+    {
+      "claim_id": "ea905333-1454-4d5e-a4d8-637bbb7ed8e2",
+      "result_id": "9149dd88-79d4-43b8-a532-5af674855939"
+    },
+    {
+      "claim_id": "9dd9c288-e08d-4340-8fc4-d86b0545017f",
+      "result_id": "9149dd88-79d4-43b8-a532-5af674855939"
+    },
+    {
+      "claim_id": "0a14619b-1d6a-46d7-a816-ef063eb1e28e",
+      "result_id": "9149dd88-79d4-43b8-a532-5af674855939"
+    },
+    {
+      "claim_id": "738f6cf6-064a-4673-90a0-8405b1ec69f5",
+      "result_id": "9149dd88-79d4-43b8-a532-5af674855939"
+    },
+    {
+      "claim_id": "43a359e9-aacc-491b-85a5-b3ddd21550a1",
+      "result_id": "9149dd88-79d4-43b8-a532-5af674855939"
+    },
+    {
+      "claim_id": "dc73766c-a432-4763-bb0c-24bff9544c1d",
+      "result_id": "9149dd88-79d4-43b8-a532-5af674855939"
+    },
+    {
+      "claim_id": "793ee002-54bd-4e0d-98d4-27ca0b3375f1",
+      "result_id": "16bbe659-ed3e-478e-996a-6f9b60038c6a"
+    },
+    {
+      "claim_id": "2aa0752e-827b-4d93-afb9-356146a4716f",
+      "result_id": "16bbe659-ed3e-478e-996a-6f9b60038c6a"
+    },
+    {
+      "claim_id": "3d274ea0-9638-4cab-8212-24defc257348",
+      "result_id": "16bbe659-ed3e-478e-996a-6f9b60038c6a"
+    },
+    {
+      "claim_id": "88b9c552-a269-4218-a680-2eb93ed28532",
+      "result_id": "16bbe659-ed3e-478e-996a-6f9b60038c6a"
+    },
+    {
+      "claim_id": "f79ada4d-be60-4741-8daf-2242cb3a184a",
+      "result_id": "16bbe659-ed3e-478e-996a-6f9b60038c6a"
+    },
+    {
+      "claim_id": "ce55e7cf-e304-4369-814d-7813cc9b6878",
+      "result_id": "16bbe659-ed3e-478e-996a-6f9b60038c6a"
+    },
+    {
+      "claim_id": "71e6a71e-850e-4d7d-8ae4-6f5a62f1ea27",
+      "result_id": "b19126d3-2f35-45f0-9814-b51841432c1c"
+    },
+    {
+      "claim_id": "0eb6a144-0ab3-4c47-bdaf-3fff5a22e84f",
+      "result_id": "b19126d3-2f35-45f0-9814-b51841432c1c"
+    },
+    {
+      "claim_id": "d2575f33-b90c-44c1-a357-63502a2ab311",
+      "result_id": "b19126d3-2f35-45f0-9814-b51841432c1c"
+    },
+    {
+      "claim_id": "816f2821-c120-41d6-a1ad-3d46dff19b4e",
+      "result_id": "b19126d3-2f35-45f0-9814-b51841432c1c"
+    },
+    {
+      "claim_id": "d909a9ee-93c3-4be1-8ad3-0fa3d9140825",
+      "result_id": "b19126d3-2f35-45f0-9814-b51841432c1c"
+    },
+    {
+      "claim_id": "31b19b82-987a-44c5-8e25-55f0950ec5cd",
+      "result_id": "eef37f22-49ae-4617-ad78-e84c2e3bd29e"
+    },
+    {
+      "claim_id": "0582aa37-b39c-420a-9f0b-c6b37732c6d9",
+      "result_id": "eef37f22-49ae-4617-ad78-e84c2e3bd29e"
+    },
+    {
+      "claim_id": "44680825-b840-43e3-8f73-2141755382ee",
+      "result_id": "eef37f22-49ae-4617-ad78-e84c2e3bd29e"
+    },
+    {
+      "claim_id": "f42fe100-9e4f-40ca-88f5-0a39e7762f32",
+      "result_id": "eef37f22-49ae-4617-ad78-e84c2e3bd29e"
+    },
+    {
+      "claim_id": "799d2c1c-4a8d-4814-8d96-4141af59d80c",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "05398015-d2d5-49eb-8832-70ebdc03a206",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "e4193406-9a10-4ad6-a436-013f3c78e7ad",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "111af49e-20f7-439c-b7b9-0a39172677e9",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "75eaff47-8445-4402-b123-0763ef934673",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "efd9eee4-d0eb-44a1-8847-0c0210f0ffd1",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "c6bb4e51-6caa-4414-9d9a-b914bd37de34",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "66b1b227-7362-4427-8d68-99e931c1af8a",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "5c0a13b9-6ef0-4805-b3b3-c7920b0ed950",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "4833db54-cc4e-4ff6-8403-ec6d7e338f5f",
+      "result_id": "31ff41c2-bcb4-4367-8a0e-5f4c073fd60c"
+    },
+    {
+      "claim_id": "ccb369a0-1366-4d2d-8e19-64cc7e3fa66f",
+      "result_id": "5a4c7f68-cc4b-4e87-8741-4c00e95414d0"
+    },
+    {
+      "claim_id": "a787d4fb-6b1e-4f38-819a-32cd6b407397",
+      "result_id": "c3dc8bf0-f44a-4898-825c-c78174565818"
+    },
+    {
+      "claim_id": "925a4380-55ae-49b3-a834-ef8b71213e4e",
+      "result_id": "a3624f9a-24ce-45c0-b05c-8dd0e3244e92"
+    },
+    {
+      "claim_id": "15ddadd3-70c8-4b24-8af3-b946c1a7c7a4",
+      "result_id": "a3624f9a-24ce-45c0-b05c-8dd0e3244e92"
+    },
+    {
+      "claim_id": "725509ef-7482-43dd-ab5d-f3b1c097f7ce",
+      "result_id": "a3624f9a-24ce-45c0-b05c-8dd0e3244e92"
+    },
+    {
+      "claim_id": "d17d9cb7-9b0d-4724-bfe3-015b08640f90",
+      "result_id": "e0b56b96-4e8e-4371-bf6d-3e648c66a5b8"
+    },
+    {
+      "claim_id": "1009ae46-4ffa-4924-a98e-c9681b20cd7b",
+      "result_id": "829d1921-022f-4572-98ff-793ba38fdcee"
+    },
+    {
+      "claim_id": "b4a992a3-087b-48b5-8363-d595d0f3bddf",
+      "result_id": "829d1921-022f-4572-98ff-793ba38fdcee"
+    },
+    {
+      "claim_id": "7ab15aa2-9fb9-492b-b9c9-17b632d1dcd9",
+      "result_id": "829d1921-022f-4572-98ff-793ba38fdcee"
+    },
+    {
+      "claim_id": "e889652a-d10f-4411-aef2-0777a282dfa7",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "f2991f76-9f73-4fcb-a62e-eb9ed5edbc00",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "086c4ba0-13b3-4808-b1b4-7c4adc5e9efb",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "2ac8bb44-e8c0-475e-ac44-42fb36f9c61e",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "2ab26120-036e-476c-9df0-214b25083c12",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "f422ee47-2589-46d3-864f-32f86d260556",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "d348480a-b6cd-4b5e-b465-b1c18ada6cda",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "ca9c32b1-626b-4e8c-b761-b5079df09940",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "e8b24d1a-df36-4c14-882e-ac77918ceb56",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "d5daf8c1-a3ef-4d2a-bb00-39085b2ef3b7",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "8e3d5879-d0ec-42f7-88ee-54211c413ed0",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "c6f759ef-d099-4f09-9a5f-bd0da38b7a19",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "176bbab3-0720-4850-a030-c4538737bd3b",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "e2d97c3c-4c8d-4c2b-88a2-cc799446b8b8",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "adeed263-ceea-446f-a63e-8bffd48f95d4",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "3f66c4a4-db93-4850-b72a-4aaeffe981b2",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "7978da90-d0f3-4413-bba2-65f7a978b8fc",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "1ca1933b-a74f-4fe4-abc9-1258a09f1b60",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "b737e1ff-b513-4c62-9bb7-a2bd17d35af0",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "3adbf311-65a8-412e-988c-bdbd257cea28",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "3a66f66e-e838-4558-b4a7-ec9cfb634012",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "3ddec7a0-229b-4fb6-853f-50f8c22e6138",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "7555092a-d860-41f9-932d-f1aec17ac0c1",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "cc80240f-c12b-4e16-af52-04bb746a7936",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "d772fa6e-6b00-4672-8671-c3f1aa5637f9",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "8d75b211-04cb-4786-8354-d4ca1b57dfa4",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "62d997ad-38cf-4708-a209-a1e1334036e6",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "0c83b466-42b7-4a3f-9b35-c585cfcc031e",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "5ecd7efa-161c-4d1d-85b5-539815ac81e6",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    },
+    {
+      "claim_id": "b4a992a3-087b-48b5-8363-d595d0f3bddf",
+      "result_id": "565f9c48-36a8-404d-b39a-7a41bff2b88f"
+    }
+  ],
+  "comparisons": []
+}

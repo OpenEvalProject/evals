@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C95",
+      "C96"
+    ],
+    "result": "More than half (54.2%) of euchromatic TEs in D. melanogaster are associated with spreading of repressive epigenetic marks (H3K9me2, H3K9me3, HP1a) to flanking sequences, extending an average of 4.5 kb and up to 20 kb. This spreading is caused by TE insertions rather than pre-existing epigenetic states, as demonstrated by comparing homologous sequences with and without TEs in two D. melanogaster strains (RAL315 and RAL360).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C39-C48, C95-C96 are strongly supported by ChIP-seq data from multiple strains and developmental stages (Figures 1-2). The comparison of homologous alleles with and without TEs (C44-C45) provides compelling evidence for causality. Quantitative measurements (C46-C48) are based on rigorous statistical analysis with appropriate controls and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The epigenetic effects of TEs are not restricted to specific genomic contexts. TEs with H3K9me2 spreading are not concentrated near pericentromeric or subtelomeric heterochromatin, and local repeat density does not correlate with the presence or magnitude of epigenetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by genomic distribution analysis (Figure 2\u2014figure supplement 2) and statistical tests showing no correlation with repeat density (p=0.55, 0.81, 0.65). The analysis appropriately controls for proximity to heterochromatin by using conservative boundaries (0.5 Mb distal).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The epigenetic effects of TEs vary substantially among TE families. LTR-type TEs show significantly larger increases in H3K9me2 enrichment compared to other TE types (median 0.547 vs 0.352, p=0.00047). TE families targeted by more piRNAs exhibit more extensive H3K9me2 spreading, while no significant association was found with endo-siRNA targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by comprehensive analysis across TE families (Figures 3-4, Table 1). Statistical tests are appropriate (Mann-Whitney U test, Spearman rank correlation). The lack of difference in piRNA amounts between LTR and non-LTR TEs (C56) strengthens the conclusion that piRNA correlation is not solely driven by TE type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "TE families with higher copy numbers have larger proportions of insertions with epigenetic effects, supporting the prediction that epigenetic effects depend on TE abundance through piRNA-mediated mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by correlation analysis (Table 1, p=0.0036) using population data from Kofler et al. 2015. The correlation remains significant after removing outlier families (Figure 4\u2014figure supplement 1), demonstrating robustness. This result is consistent with the piRNA generation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TEs with stronger epigenetic effects have lower population frequencies in the Zambian D. melanogaster population. Low-frequency TEs are more likely to exhibit H3K9me2 spreading (p=0.039, OR=1.58), show more extensive spreading (p=0.011), and result in larger increases in H3K9me2 enrichment (p=0.014). Significant negative correlations exist between TE population frequency and both extent (\u03c1=-0.15) and magnitude (\u03c1=-0.14) of epigenetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by population genomic analysis of 197 Zambian genomes (Figure 5). Statistical tests are appropriate and significant. The use of the Zambian population is well-justified as the ancestral population with limited admixture. Multiple regression analyses (Table 2) controlling for TE family identity confirm the associations, addressing potential confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Recombination rate does not explain the observed associations between TE epigenetic effects and population frequencies. Neither the presence of H3K9me2 spreading nor its extent/magnitude correlates with local recombination rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by statistical analyses showing no significant associations (p=0.83, 0.62, 0.55). This effectively rules out an alternative explanation for the population frequency patterns and strengthens the conclusion that selection against epigenetic effects drives the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TEs cause differential epigenetic states at homologous genic alleles. Genes with adjacent TEs have significantly higher H3K9me2 enrichment than homologous alleles without TEs, with the effect being stronger for genes near TEs with epigenetic effects. Genes near low-frequency TEs show significantly higher z-scores than those near high-frequency TEs (p=0.0019), and gene z-scores negatively correlate with TE population frequency (\u03c1=-0.18, p<10\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C67-C74 are supported by z-score analysis comparing homologous alleles (Figure 6). The use of z-scores appropriately normalizes for between-strain differences. The correlation between gene epigenetic state and TE population frequency (C73-C74) provides strong evidence linking epigenetic effects to selection. Statistical tests are appropriate and significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Within strains, H3K9me2 enrichment negatively correlates with transcript levels for genes within 10 kb of TEs (\u03c1=-0.35 and -0.33, p<10\u207b\u00b9\u2076). There is an excess of genes showing the expected pattern (higher H3K9me2 and lower expression in TE-adjacent alleles), particularly for TEs with epigenetic effects. However, this pattern is mainly observed in RAL360, and no correlation exists between H3K9me2 z-scores and expression fold changes for genes with nearby TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C80 present mixed evidence. While within-strain correlations (C75) are strong and significant, the between-strain analysis (C76-C80) shows strain-specific effects and lack of correlation for TE-adjacent genes. The authors acknowledge complexity, noting exceptions where TE-adjacent alleles have both higher H3K9me2 and higher expression. Additional experiments are needed to clarify the functional consequences of TE-induced epigenetic changes on gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "D. simulans exhibits stronger epigenetic effects of TEs compared to D. melanogaster. While the extent of H3K9me2 spread does not differ significantly between species (p=0.67), D. simulans shows a larger proportion of TEs with epigenetic effects (p=0.013) and larger increases in relative H3K9me2 enrichment (p=0.035). This correlates with lower TE content in D. simulans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C82-C90 are supported by comparative ChIP-seq analysis between species (Figure 8). Statistical tests are appropriate (paired Mann-Whitney U tests). The analysis is conservative, including only TE families with \u22652 insertions in both species. The correlation with lower TE content (C6, C82) is well-established in the literature and consistent with the observed stronger epigenetic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "D. simulans has lower amounts of H3K9me2-enriched simple repeats (ANOVA p=0.00013) and higher expression of Su(var) genes as a group (p<10\u207b\u2076) compared to D. melanogaster. Specifically, Su(var)3-9 shows significantly higher expression in D. simulans. These differences in PEV modifiers could account for the stronger epigenetic effects of TEs in D. simulans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C91-C94 are supported by K-mer analysis (Figure 9A) and RNA-seq data (Figure 9B-C). The K-mer approach is validated by consistency with previous studies using orthogonal methods. The Kolmogorov-Smirnov test for Su(var) expression is appropriate. The mechanistic link to PEV is well-established in the literature, making the inference (C94) reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C8",
+      "C9",
+      "C112",
+      "C115",
+      "C119"
+    ],
+    "result": "The epigenetic effects of TEs and host genetic factors modulating these effects play a critical role in TE evolution within and between species. Selection against TEs with stronger epigenetic effects contributes to TE population dynamics, and the association between TE abundance and epigenetic effects supports synergistic epistasis. Variation in host genetic environment (Su(var) expression, heterochromatic DNA content) influences TE evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C8-C9, C112, C115, C119 represent the main conclusions synthesized from multiple lines of evidence: population frequency analysis (C5), between-species comparisons (C115), and host genetic variation (C119). These conclusions are well-supported by the data presented, though they represent inferences from correlative evidence rather than direct experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "There is a deficiency of genes that both have adjacent TEs and are expressed in 4-8 hr embryos (p=0.00017, OR=0.73), which is stronger when considering only TEs with epigenetic effects (p<10\u207b\u2075, OR=0.58). This is consistent with selection preferentially removing TEs that spread repressive marks to genes expressed in embryonic stages, when epigenetic marks have long-lasting effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by statistical analysis using modEncode expression data. Fisher's Exact Tests are appropriate and highly significant. The inference (C109) is reasonable given that epigenetic marks established in embryos influence both somatic and germline cells (C108, supported by citation). This provides indirect evidence for selection against TEs with functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The stronger epigenetic effects in D. simulans should lead to stronger selection removing TE insertions. If TE proliferation rates are similar between species, this could account for the lower genomic TE content in D. simulans compared to D. melanogaster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C114 are logical inferences from the observed stronger epigenetic effects in D. simulans, but they are speculative (C114 explicitly conditional on similar proliferation rates). The manuscript does not provide data on transposition rates in the two species. Additional experiments measuring TE proliferation rates and selection coefficients would be needed to fully support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Su(var)3-9 is a dosage-dependent PEV modifier (haploid suppressor, triploid enhancer), suggesting that changes in its transcript levels would result in quantitative differences in TE epigenetic effects. Variation in heterochromatic DNA amount and Su(var) expression provides a viable explanation for differences in TE epigenetic effects between D. melanogaster and D. simulans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by citation to previous work (C116) and the observed expression differences (C93). The inference (C117-C118) is reasonable given the known dosage-dependent effects and the observed correlations. However, this remains correlative evidence; experimental manipulation of Su(var) expression would provide stronger support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background and context claims establishing the nature of TEs, their deleterious effects, regulation by small RNAs, low population frequencies, and previous evidence for epigenetic effects in various organisms including Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C38 are background claims supported by extensive citations to established literature. These provide appropriate context for the study. The citations appear accurate and relevant based on the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Discussion claims comparing results to other organisms and providing context for interpretation. In A. thaliana, DNA methylation spreads only a few hundred base pairs from TEs, contrasting with the more extensive spreading in Drosophila. Approximately 20% of D. melanogaster genes are within 5 kb of a TE, suggesting extensive epigenetic influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 are discussion points supported by appropriate citations. The comparison to A. thaliana (C97) highlights the biological significance of the findings. The inference about extensive epigenetic influence (C99) is reasonable given the proportion of genes near TEs (C98) and the observed spreading distances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Theoretical work predicts that stable TE equilibrium requires synergistic epistasis of deleterious effects. However, synergistic epistasis has only been empirically supported for ectopic recombination-mediated effects, not for other proposed deleterious mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by citations to theoretical (Charlesworth and Charlesworth, 1983) and empirical work (Langley et al., 1988; Petrov et al., 2003, 2011). These claims provide important context for the significance of finding evidence for synergistic epistasis through epigenetic effects (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "PEV is temperature sensitive and influenced by abiotic factors. Different environmental conditions in diverse habitats could contribute to variation in TE epigenetic effects and divergent TE profiles within and between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121 are supported by citations. However, C122 is speculative, extending the findings to environmental variation without direct evidence. While the inference is reasonable given the environmental sensitivity of heterochromatin function, experimental data on environmental effects on TE epigenetics would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Discussion of evolutionary mechanisms underlying between-species differences in PEV modifiers. The deleterious epigenetic effects of TEs are side effects of host silencing, making direct selection for stronger effects unlikely. Alternative explanations include selection on pleiotropic Su(var) functions or changes in heterochromatic DNA from other processes. TE evolution may be more tightly associated with other cellular/chromosomal processes than previously appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are discussion points appropriately supported by citations (C123, C125) and logical reasoning. The authors appropriately acknowledge alternative explanations (C126) and avoid overinterpreting their correlative data. The broad conclusion (C127) is a reasonable inference from the observed connections between TE evolution and host genetic factors.",
+    "result_type": "MINOR"
+  }
+]

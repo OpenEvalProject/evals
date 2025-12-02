@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C40"
+    ],
+    "result": "The Junction Usage Model (JUM) is a computational tool that identifies, quantitates, and categorizes tissue-specific alternative splicing patterns from RNA-seq data without requiring prior genome or transcriptome annotations. JUM exclusively uses RNA-seq reads mapping to splice junctions and defines AS junctions as those with alternative 5' or 3' splice sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, and C40 describe the JUM method's capabilities and approach, supported by citations to the method's publication (Wang and Rio, 2017a) and illustrated in Figure 1A. The method is appropriately described as a tool used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C128",
+      "C129"
+    ],
+    "result": "Using JUM, the study identified hundreds of previously unannotated pre-mRNA isoforms in isolated circadian neurons. Approximately 6,000 AS junctions were found in each neuronal subtype (in ~2,000 genes) and ~14,000 in heads (in ~3,000 genes). About 2,300 AS junctions (in 839 genes) were found exclusively in neuronal subpopulations compared to heads, with ~95% being novel (unannotated). These novel isoforms are cell-type specific and were missed in head RNA-seq data analyzed in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C41-C46, C48, C128, and C129 present quantitative findings from the AS junction analysis shown in Figure 1B-D. The data are clearly presented with specific numbers and percentages, and the comparison between neuron-specific and head samples provides strong evidence for cell-type specificity of the identified isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C130"
+    ],
+    "result": "Gene ontology analysis revealed that novel AS junctions impact crucial neuron-specific functions including neurotransmitter secretion in LNvs, acetylcholine-activated channel activity and synaptic target recognition in LNds, potassium ion transporters and locomotor rhythms in DN1s, and chemical synaptic transmission in TH neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C130 describe findings from gene ontology analysis shown in Figure 1\u2014figure supplement 2 and Supplementary file 2. The GO analysis appropriately identifies functional categories enriched in genes with novel AS junctions, providing biological context for the identified isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The circadian photoreceptor cryptochrome (cry) has a novel splice junction in DN1 and LNd neurons that is absent in LNv, TH, and head samples. This junction creates a truncated transcript lacking cry's functional domains, representing ~20% of DN1 and ~28% of LNd cry transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe a specific novel AS event in cry shown in Figure 2A. The sashimi plot provides clear visual evidence of the junction usage, and quantitative percentages are provided. The structural consequence (truncated protein lacking functional domains) is a reasonable inference from the junction location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The putative GPCR CG10483 undergoes a novel exon skipping event only in LNds and DN1 neurons, removing ~65 amino acids from the receptor transmembrane regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 describe another specific novel AS event shown in Figure 2B. The sashimi plot clearly shows the exon skipping pattern, and the structural consequence is appropriately inferred from the exon location within the transmembrane regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "Differential AS analysis identified 249, 194, and 70 AS events significantly differentially spliced in DN1, LNv, and LNd neurons compared to TH neurons, respectively. The majority of these events are unique to each circadian neuronal subtype, with only 1.6-6.6% overlapping between two subtypes and 1.8% shared among all three, suggesting each circadian neuronal subgroup possesses a unique pattern of AS isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C65 present quantitative findings from differential AS analysis shown in Figure 3A-B. The statistical analysis (hypergeometric test with significant p-values) appropriately supports the conclusion that overlap is lower than expected. The interpretation that unique AS patterns contribute to neuronal identity (C65) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Each circadian neuron subpopulation expresses a unique set of differentially expressed RNA-binding proteins (RBPs) compared to TH neurons. Analysis of CLIP/RIP-seq data suggests these RBPs could account for many neuron-specific AS events, with Syb and mub targeting ~36% of LNv-specific differentially spliced AS events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C67 present data on differential RBP expression and their potential targets. However, C68 is explicitly labeled as speculative by the authors. While the correlation between RBP expression and AS patterns is suggestive, causality is not established, and the analysis relies on publicly available CLIP/RIP-seq data that may not be from the same cell types or conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The neuronal synaptobrevin (N-syb) transcript shows much higher inclusion (85%) of an alternative exon in LNv cells compared to other neurons (25-36%), predicted to produce a unique 206 amino acid protein with an alternative C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 describe a specific differential AS event shown in Figure 4A. The sashimi plot clearly shows the differential exon inclusion, with quantitative percentages provided. The predicted protein consequence is a reasonable inference from the exon structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The potassium channel Shab undergoes differential alternative splicing, with TH and LNd neurons preferentially using an alternative terminal exon (61-74% of transcripts) that encodes a dominant-negative protein lacking the sixth transmembrane region, while this ratio decreases to 10-40% in LNvs and DN1s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe differential AS in Shab shown in Figure 4B. The sashimi plot provides clear evidence of differential splice site usage with quantitative percentages. The functional consequence (dominant-negative protein) is stated but not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C34",
+      "C114"
+    ],
+    "result": "Gene ontology analysis revealed that potassium ion transport is the top enriched term for differentially spliced genes in DN1 and LNv neurons, with nine different transcripts involved in potassium transport (six potassium channels and two sodium-potassium-exchanging ATPases) undergoing differential AS in circadian neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, C34, and C114 describe findings from gene ontology analysis shown in Figures 5A-C. The GO analysis appropriately identifies functional enrichment, and the specific genes are listed. The enrichment of potassium channel AS is a robust finding supported by multiple independent genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Alternatively spliced cassette exons show somewhat higher conservation than non-alternatively spliced exons (though not statistically significant, p=0.17) and are more prone to preserve reading frame upon inclusion/exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 describe conservation and reading frame analysis shown in Figure 3\u2014figure supplement 3. The statistical test (Mann-Whitney U) is appropriate, and the authors correctly note the lack of statistical significance for conservation. The reading frame preservation analysis provides additional support for functional importance of the AS events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C120"
+    ],
+    "result": "Cycling AS analysis identified 173, 92, and 48 AS structures in DN1, LNv, and LNd neurons respectively (representing ~5% of all AS structures), affecting 147, 81, and 43 genes. Importantly, 85% of transcripts with cycling AS do not show cycling at the total mRNA level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 and C120 present quantitative findings from cycling AS analysis shown in Figure 6A. The methods describe appropriate statistical approaches (F24 and JTK-cycle) with specified cutoffs. The finding that most cycling AS occurs without mRNA cycling is particularly notable and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Most cycling AS structures are neuron-specific, with only two transcripts (still life and pKa-R1) showing cycling AS in all three circadian neuron groups. This specificity suggests time-of-day changes in AS act as an additional level of circadian regulation in Drosophila clock neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 describe the specificity of cycling AS shown in Figure 6B. The data clearly show limited overlap between neuron types. The interpretation that this represents an additional level of circadian regulation is reasonable and supported by citation to similar findings in mammals (McGlincy et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C113"
+    ],
+    "result": "The circadian kinase Shaggy (sgg) undergoes alternative splicing using two different 3' splice sites, generating isoforms differing by 63 amino acids at the C-terminus. In LNd neurons, the longer isoform predominates in the morning but by late night there is equal usage of both isoforms, while LNv and DN1 neurons almost exclusively use the longer isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 and C113 describe cycling AS in sgg shown in Figures 6C-D. The sashimi plots clearly show the alternative splice sites and their time-dependent usage in LNd neurons, with quantification provided. The neuron-specific patterns are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The potassium channel SLOWPOKE (Slo) undergoes neuron-specific cycling AS in DN1 neurons, with mutually exclusive exons 2a and 2b that alter the cytosolic face of the channel. Exon 2b is preferentially included in the morning, shifting to exon 2a in late night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe cycling AS in Slo shown in Figure 6\u2014figure supplement 2. The sashimi plots clearly show the mutually exclusive exon usage and its time-dependent pattern specifically in DN1 neurons. The structural consequence is appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The phases of cycling AS structures show neuron-group specific distributions. In DN1 neurons, cycling AS peaks in late night, almost anti-phase to mRNA cycling. In LNv neurons, AS and mRNA cycling show similar phases. In LNd neurons, cycling mRNAs peak in early evening while cycling AS has a random distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 describe phase analysis shown in Figure 7A and Figure 7\u2014figure supplement 1. The phase distributions are clearly visualized, and the distinct patterns in different neuron types are well-documented. The anti-phase relationship in DN1 neurons is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Each circadian neuron expresses a unique set of cycling RBPs. In LNd neurons, the cycling splicing factor Qkr54B (which targets Sgg transcripts) peaks 3-4 hours before the time-dependent inclusion of the alternative Sgg exon, suggesting cycling RBP expression might contribute to cycling AS patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 present data on cycling RBPs shown in Figure 7B and the temporal relationship with Sgg AS in Figure 6D. However, C108 is explicitly speculative. While the temporal correlation is suggestive, causality is not established, and the authors note there is no clear global correlation between RBP phases and cycling AS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "All experiments were conducted under 12-hour light/dark conditions, making it impossible to distinguish between light and clock control. Nonetheless, the data indicate that splicing adds a dramatic layer of gene regulation to diurnal changes in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 appropriately acknowledges a limitation of the experimental design. Claim C122 is a reasonable interpretation given the extensive cycling AS data, though the caveat about light vs. clock control should be considered when interpreting the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Gene ontology analysis of cycling AS transcripts revealed enrichment for locomotor behavior modulation in all three circadian neuron groups (with distinct transcripts in each), male courtship behavior in LNvs, olfactory learning in LNds, and mRNA binding proteins in DN1s (8 of 12 genes encode splicing regulators, which could facilitate downstream time-dependent splicing changes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe GO analysis findings shown in Figure 6\u2014figure supplement 3. The GO analysis is appropriately conducted and identifies functionally relevant categories. Claim C99 is an interpretation of the potential regulatory role of cycling splicing regulators, which is reasonable but not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C133"
+    ],
+    "result": "The work indicates that alternative splicing events in neuronal tissues are grossly underestimated, even by deep sequencing projects like modENCODE. The authors suggest these events need comprehensive evaluation by deeper sequencing and AS analysis software like JUM that is not constrained by prior annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C133 present interpretations and recommendations based on the study's findings. The discovery of thousands of novel AS junctions missed in head samples supports the conclusion that AS is underestimated. The recommendation for annotation-free methods is reasonable given the study's results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C37"
+    ],
+    "result": "The study demonstrates that many diverse and novel pre-mRNA isoforms are preferentially expressed in specific clock neuron classes and absent from head preparations. These AS events are enriched in potassium channels important for neuronal firing, and there are cycling isoforms without detectable transcriptional oscillations, suggesting massive AS regulation in the brain that is important for circadian regulation and impacts cell type specification, diversity, and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C37 summarize the major findings of the study. These conclusions are well-supported by the extensive data on novel AS junctions (Figures 1-2), differential AS in potassium channels (Figures 4-5), and cycling AS independent of mRNA cycling (Figure 6). The interpretations about functional importance are reasonable given the data, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  }
+]

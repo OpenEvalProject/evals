@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The mt-Keima reporter is a mitochondrially-targeted fluorescent protein that exhibits pH-dependent excitation spectrum shifts, allowing ratiometric quantification of mitophagy. The probe was validated in Drosophila muscle cells, showing proper mitochondrial targeting without altering mitochondrial morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 establish the mt-Keima probe's properties and validation. The TEM data (C41, Figure 1B) confirms no morphological changes, immunofluorescence colocalization with ATP synthase \u03b2 (C42, Figure 1C) validates mitochondrial targeting, and the pH-dependent spectral shift (C40) is well-established and illustrated in Figure 1A. These converging lines of evidence strongly support the probe's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "High 543/458 ratio mt-Keima puncta represent mitochondria delivered to lysosomes and are rare in young (1-week-old) flies but increase approximately tenfold by 4 weeks of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 demonstrate basal mitophagy in vivo. The high ratio puncta colocalize with LysoTracker (C44, Figure 1E), indicating lysosomal delivery. Quantitative data in Figure 1F,G show the age-dependent increase is statistically significant and reproducible across multiple flies (n=4-6). The inference that these puncta represent mitophagy (C45) is well-supported by the colocalization and pH data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Overexpression of kinase-dead Atg1 (Atg1K38A) suppresses age-dependent mitophagy in muscle cells, confirming the autophagy-dependent nature of the observed mitochondrial clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 establish that the observed mitophagy is autophagy-dependent. The dominant-negative Atg1K38A construct (C50, cited from Scott et al., 2007) significantly reduces high ratio puncta in aged flies (C51, Figure 1F,G). This genetic manipulation provides strong functional evidence that the mt-Keima signal reflects bona fide autophagy-mediated mitochondrial clearance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CLEM analysis reveals that 'neutral pH' mt-Keima structures correspond to normal mitochondria while 'acidic' mt-Keima puncta colocalize with electron-dense lysosomes containing multilamellar bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide ultrastructural validation of mitophagy. The CLEM data in Figure 2E-N directly demonstrate that acidic mt-Keima puncta overlay with lysosomes at the EM level, while neutral pH structures match normal mitochondria. The identification of multilamellar bodies (C55, Figure 2N) provides additional morphological evidence of lysosomal degradation. This is the gold standard for confirming mitophagy in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C7",
+      "C8"
+    ],
+    "result": "PINK1 and parkin deficiency does not affect basal mitophagy in young (1-week-old) flies but completely abolishes the age-dependent increase in mitophagy observed in 3- and 4-week-old control flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C7-C8 demonstrate age-specific PINK1/parkin dependence. Figure 3A,B shows no difference at 1 week but complete loss of age-dependent increase in PINK1B9 and parkin RNAi flies at 3-4 weeks. Statistical significance is reported (p=0.02), sample sizes are adequate (n=3-6), and the effect is consistent across two different genetic manipulations (PINK1 mutation and parkin RNAi), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C9",
+      "C10"
+    ],
+    "result": "Knockdown of dUSP15 rescues the mitophagy defect in parkin-deficient flies, while dUSP30 knockdown provides partial rescue. RNAi efficiency was confirmed by RT-PCR showing 42% reduction for dUSP15 and 84% reduction for dUSP30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C9-C10 demonstrate genetic rescue of parkin deficiency. RT-PCR data (C68-C69) confirm knockdown efficiency. Figure 3C,D shows dUSP15 RNAi significantly rescues mitophagy in two independent parkin RNAi lines, while dUSP30 has lesser effect. The differential rescue pattern is consistent with prior work on these deubiquitinases and provides functional validation of the PINK1/parkin pathway in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The mitophagy defect in PINK1B9 flies is partially rescued by dUSP15 knockdown but unaffected by dUSP30 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 show differential rescue effects in PINK1 mutants. Figure 3C,D demonstrates that dUSP15 knockdown partially restores mitophagy in PINK1B9 flies while dUSP30 knockdown has no effect. This differential pattern suggests distinct roles for these deubiquitinases and is consistent with the pathway architecture where USP15 may act more broadly than USP30.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C4",
+      "C5"
+    ],
+    "result": "Mitophagy occurs in dopaminergic neurons in vivo, increases with aging, and is suppressed by parkin deficiency. The mitophagy deficit in parkin-deficient dopaminergic neurons is rescued by dUSP15 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77, C4-C5 extend findings to disease-relevant neurons. Figure 4A-D shows age-dependent mitophagy in dopaminergic neurons (n=4 flies, 10 neurons each), loss in parkin RNAi flies, and rescue by dUSP15 knockdown. Statistical significance is reported (p<0.05). This demonstrates the PINK1/parkin pathway operates in the neuronal cell type most relevant to Parkinson's disease pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "PINK1 and parkin are particularly important for mitophagy during aging, which may explain why their loss causes age-dependent neurodegeneration rather than developmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 propose a mechanistic explanation for disease phenotype. While C78 is reasonably inferred from the age-dependent data, C79 is speculative. The manuscript shows correlation between age-dependent mitophagy and PINK1/parkin function, but does not directly test whether impaired mitophagy causes neurodegeneration. Alternative explanations (e.g., other PINK1/parkin functions) are not excluded. This remains a plausible hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The mito-QC probe may be less sensitive for detecting PINK1/parkin-mediated mitophagy than mt-Keima because mito-QC is targeted to the outer mitochondrial membrane and contains FIS1, a parkin substrate that may be extracted before lysosomal delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C88 propose a methodological explanation for discrepant findings with McWilliams et al. 2018. While the biochemical reasoning is sound (C84-C87 are well-cited), the hypothesis that mito-QC extraction reduces sensitivity (C88) is speculative and not directly tested. The authors acknowledge this is speculation ('may', 'would'). Direct comparison experiments would be needed to validate this explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mice may require a 'second hit' beyond aging to activate PINK1/parkin-mediated mitophagy, potentially explaining why PINK1/parkin deficiency alone does not cause neurodegeneration in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 propose an explanation for species differences. The pS65-Ub data from Pickrell et al. 2015 (C90-C91) supports low basal PINK1 activity in mice, but the 'second hit' hypothesis (C92) is speculative. The claim about lack of degenerative phenotype in mice (C93) is stated as established knowledge but not directly cited. This remains an interesting hypothesis but lacks direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Discrepancies with Lee et al. 2018 may result from their use of mito-QC probe and restriction of flight muscle analysis to very young (\u22642-day-old) flies, potentially missing age-dependent mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 address conflicting literature. While C94, C95, and C97 accurately cite Lee et al. 2018, the explanations (C96, C98) are speculative. The mito-QC sensitivity argument is reasonable but untested, and while Lee et al. did study young flies, the authors don't provide direct evidence that extending the age range would have changed their conclusions. These remain plausible but unproven explanations for discrepant results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Early mitochondrial abnormalities in PINK1/parkin-deficient flies may result from loss of mitophagy-independent functions, such as parkin's role in ER-mitochondria Ca2+ transfer or PINK1's roles in complex I activity and crista remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide alternative explanations for early phenotypes. The inference (C99) is logical given that mitophagy is not reduced at 1 week despite mitochondrial defects. The cited alternative functions (C100-C102) are well-supported by literature (Gautier et al. 2016, Morais et al. 2014, Tsai et al. 2018). This demonstrates appropriate consideration of alternative mechanisms and limitations of the mitophagy-centric model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The mt-Keima fly model is a convenient tool for determining the impact of individual genes on PINK1/parkin-mediated mitophagy in vivo and will facilitate identification of therapeutic targets for neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is well-supported by the successful application demonstrated with dUSP15/dUSP30 experiments. The model enabled genetic screening in vivo, which is a significant technical advance. However, C105 is somewhat speculative regarding future utility. The evaluation is SUPPORTED because C104 is clearly demonstrated, though C105 represents a reasonable but unproven prediction about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C103"
+    ],
+    "result": "Residual mt-Keima signal after Atg1K38A overexpression may result from Atg1-independent autophagy mechanisms, and early mitochondrial abnormalities in mutants may reflect subtle mitophagy reductions below detection threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52 and C103 are both speculative explanations for observations. C52 cites Braden and Neufeld 2016 for Atg1-independent autophagy, which is reasonable, but doesn't test this directly. C103 acknowledges potential sensitivity limitations of mt-Keima but provides no data to support this. These are plausible alternative explanations but remain unvalidated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C74",
+      "C80",
+      "C81",
+      "C107",
+      "C108"
+    ],
+    "result": "Background claims establish that PINK1/parkin mutations cause Parkinson's disease, these proteins mediate mitophagy in cultured cells, and their deficiency causes mitochondrial defects in Drosophila, though in vivo mitophagy evidence has been limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C37, C62-C67, C74, C80-C81, C107-C108) represent established knowledge and prior work, supported by appropriate citations. They provide necessary context for the current study. The citations appear accurate and the characterization of the field's state (limited in vivo evidence, C3, C25) is reasonable. These background claims are well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C106"
+    ],
+    "result": "Mitophagy increases with aging in Drosophila, as measured by mt-Keima. Parkin mRNA levels in parkin1 RNAi flies were reduced to approximately 50% of control levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is strongly supported by quantitative data in Figures 1F,G and 4A,B showing significant age-dependent increases in multiple tissues. Claim C106 provides important validation of the RNAi knockdown efficiency through RT-PCR (n=5), confirming partial but substantial reduction in parkin expression. Both claims are well-supported by appropriate experimental data.",
+    "result_type": "MAJOR"
+  }
+]

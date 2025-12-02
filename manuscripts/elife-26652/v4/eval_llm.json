@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36"
+    ],
+    "result": "The WorMotel is a microfabricated PDMS device capable of longitudinally tracking behavior of up to 240 individually housed C. elegans for over 60 days, featuring rounded concave wells, copper sulfate moats, and conforming to ANSI microplate standards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C32 and C36 collectively describe the WorMotel design, fabrication, and capabilities. The device specifications are well-documented with technical details (well volume, materials, dimensions) and supported by figures showing the device structure and function. The design features address specific limitations of conventional microplates (C23-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Conventional 96-well or 384-well microplates have three major limitations for C. elegans imaging: vertical walls obstruct imaging near edges, worms crawl between agar and walls, and worms can escape under humid conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 identify specific problems with conventional microplates that motivated the WorMotel design. C23 is supported by Figure 1\u2014figure supplement 1 showing poor imaging quality. These limitations are stated as observations and design motivations rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Lifespan measurements on the WorMotel are equivalent to standard manual methods, with no significant differences in survival curves between WorMotel and standard plates for N2, daf-16, and daf-2 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 provide validation data comparing WorMotel to standard methods. Sample sizes are adequate (n=46-123 for WorMotel, n=52-117 for manual), error estimates are provided, and statistical comparison (C43) shows no significant difference. This validates the device for lifespan studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The copper sulfate moat solution does not affect worm development or lifespan compared to NGMB control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 address a potential confound of the copper sulfate moat. Both developmental rate (L4 duration) and lifespan show no significant differences between copper sulfate and NGMB moats, with p-values and sample sizes reported. This control experiment validates the moat design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Automated lifespan scoring is accurate within 0.66 \u00b1 0.6 days of manual scoring, never incorrectly scores dead animals as alive, and shows no correlation between measurement error and lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 validate the automated lifespan detection algorithm. The average error is small relative to typical lifespans (12-33 days), the systematic bias is conservative (C47), and error independence from lifespan (C48, p=0.18) indicates consistent performance. Sample size (n=79) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Short-lived and long-lived strains exhibit patterns of behavioral decline that resemble the shortest and longest-lived individuals in wild-type populations rather than temporally scaled versions of wild-type decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C66-C70, C103-C105 present the major finding that behavioral decline does not temporally scale. The data show daf-16 mutants resemble short-lived N2 individuals (C70, Figure 5g) and long-lived strains show 'decline and plateau' like long-lived N2 (C67, C74). Figure 6e shows a continuum across strains. This contradicts simple temporal scaling models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Change in decline rate negatively correlates with lifespan across all strains tested, follows a continuum across strains and individuals, and shows decreased variability in longer-lived strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 quantify the relationship between decline shape and lifespan. C75 reports significant negative correlations for all 8 strains with p-values ranging from 0.0054 to 8.0\u00d710\u207b\u00b9\u00b2. C77 shows decreased variability with lifespan (R=-0.70, p=0.055, marginally significant). Figure 6 supports these quantitative relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C114",
+      "C115"
+    ],
+    "result": "Behavioral decline during acute oxidative stress (40 mM paraquat) resembles decline during normal aging but occurs ~20 times faster, with similar shapes and individual variability patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C80-C86, C114-C115 demonstrate temporal scaling between aging and oxidative stress. C81 quantifies similarity (4.1-13.2% difference between conditions). C82 shows that adding paraquat at day 9 truncates early decline as predicted. C84 shows the same negative correlation between decline rate change and survival. Figure 7 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "ODR-10 reduces sensory responsiveness but not spontaneous locomotion in daf-2 mutants and is not required for daf-2 lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98, C100-C102 characterize ODR-10's role in daf-2 phenotypes. C93 shows no effect on spontaneous activity, while C95-C97 show effects on stimulated activity. C100-C101 demonstrate ODR-10 doesn't affect lifespan. Figure 8 provides supporting data with appropriate statistical comparisons. This clarifies prior literature (C90-C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Mean lifespans of mutant strains relative to wild type agreed with previous studies, but behavioral decline curves varied dramatically between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 validate the WorMotel against literature and establish behavioral diversity. C59 is supported by Table 1 comparing to prior studies. C60 describes qualitative differences in Figure 3 behavior curves. These establish the system's validity and the phenomenon to be investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "lite-1 mutants showed little difference in blue light response compared to N2, possibly due to higher irradiance or more sensitive activity measurement than previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 reports an unexpected finding contradicting prior literature (Edwards et al., 2008). While the observation is stated, the explanation is speculative. The authors don't provide quantitative comparison of light intensity or direct validation of the proposed explanations. This finding requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The shape of decline is determined by an individual's lifespan relative to a population standard under given environmental conditions, and cannot be explained by a single variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 present interpretive conclusions from the paraquat experiments. C116 is supported by the observation that neutral decline occurs at different absolute lifespans under different conditions (12 days aging vs 12 hours stress). C117 follows from the non-scaling behavior and variability patterns. These are logical inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "C. elegans is a valuable aging model, but current manual methods are labor-intensive, low-throughput, and limited to population-level lifespan without individual behavioral trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C11 establish the motivation for the study. These are well-established facts about C. elegans as a model organism and limitations of standard methods. They provide context but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous automated methods (flatbed scanner and hydrogel device) have limitations including inability to track individuals longitudinally, poor scalability, complex analysis requirements, and experimental constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 review prior automated methods and their limitations. These are supported by citations (Stroustrup et al., 2013; Zhang et al., 2016) and represent fair characterizations of published methods. They establish the need for the WorMotel but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Multiple conserved pathways and genes influence C. elegans aging, and locomotor activity serves as a health measure, with blue light evoking escape responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C33-C35, C49-C58 provide background knowledge from prior literature. All are supported by appropriate citations. These establish the biological context and rationale for the experimental approach but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C79"
+    ],
+    "result": "Prior studies showed that long-lived individuals exhibit extended twilight periods and that survival curves scale temporally across genetic and environmental perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C79 summarize findings from Zhang et al. (2016) and Stroustrup et al. (2016) that motivated the current study's hypotheses. These are accurately cited prior results that frame the research questions but are not findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Long-lived wild-type worms may be physiologically and transcriptionally similar to insulin signaling pathway mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is explicitly speculative ('may be') and suggests future experiments. While it's a reasonable hypothesis based on the behavioral continuum observed, no transcriptional or physiological data are provided to support this claim. It represents an interesting direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Bacterial colonization is a risk factor for C. elegans death, with daf-2 mutants showing greater resistance and killed bacteria extending the period of infirmity in N2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 summarize findings from Podshivalova et al. (2017) that provide context for interpreting the extended twilight phenotype. These are accurately cited results from prior work that inform the discussion but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Muscle integrity may degrade faster than other tissues with age, feeding and locomotion are linked, and aging may constitute low-level stress causing damage accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113 present speculative explanations for observed phenomena. C111 and C112 are supported by citations but presented as possibilities ('might be'). C113 is stated as a hypothesis. These represent reasonable interpretations but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The WorMotel has been successfully used in prior studies of lethargus, stress-induced quiescence, and adult behavior states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 cite previous applications of the WorMotel system (Nelson et al., 2013, 2014; Iannacone et al., 2017; McCloskey et al., 2017). These demonstrate the system's versatility and prior validation but are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C87"
+    ],
+    "result": "Long-lived daf-2 mutants exhibit behavioral quiescence with reduced locomotion and elevated response latency, with spontaneous activity declining to near zero by day 10 while maintaining some stimulated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74, C87 characterize daf-2 behavioral phenotypes. C71 is supported by prior citations and current data (Figure 3h). C72-C73 provide quantitative observations from Figure 3. C74 extends the finding to other long-lived strains. These are well-supported descriptive findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C99"
+    ],
+    "result": "Prior studies established that daf-2 mutants have greater fat stores, exhibit hibernation-like phenotypes, and that ODR-10 and other sensory genes affect locomotion and longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92, C99 provide background from prior literature (Ogg et al., 1997; Carey et al., 2003; Gaglia and Kenyon, 2009; Hahm et al., 2015; Apfeld and Kenyon, 1999). These establish context for the ODR-10 experiments but are not findings of this study.",
+    "result_type": "MINOR"
+  }
+]

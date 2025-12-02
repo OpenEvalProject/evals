@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "High-density electrophysiological recordings were performed in ketamine-anesthetized rats across AI cortical columns using broadband dynamic stimuli (DMR and RN) to characterize neuronal receptive fields (STRFs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C76-C84 collectively describe the experimental methodology including animal preparation, recording equipment, stimuli, and STRF estimation. These methodological details are well-documented with appropriate citations and provide a solid foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "A PCA/ICA-based dimensionality reduction algorithm was applied to identify coordinated neuronal ensembles (cNEs) from synchronous spiking activity at 10-ms temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C20, and C85-C89 describe the analytical pipeline for cNE detection. The method is well-established (Lopes-dos-Santos et al., 2013) and the implementation details are clearly specified, including binning, z-scoring, PCA significance testing via Mar\u010denko-Pastur distribution, and ICA decomposition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "cNEs are stable and reliable constructs throughout recordings, with 96% of independent components matching between interleaved halves and 83% of training cNE activity predicting test cNE activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 demonstrate temporal stability of cNEs through split-half validation analyses. The high matching percentages (96% and 83%) with appropriate statistical thresholds provide strong evidence for reliability. The methods are clearly described in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The 10-ms temporal bin size for cNE detection was validated as optimal based on columnar propagation time (~10 ms), maximal receptive field information (10-15 ms), and consistency with dendritic integration and spike-timing dependent plasticity windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C66-C68 provide multiple converging lines of evidence for the 10-ms bin size choice. The justification includes biophysical constraints (propagation speed), information-theoretic analysis (Figure 5A), and consistency with established neurophysiological timescales from cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Neurons within AI columns show heterogeneous pairwise correlations (PWCs) despite similar STRFs, with PWC sharpness and delay covarying with correlation coefficients (R\u00b2~0.5) but only weakly related to inter-neuronal distance (R\u00b2~0.1-0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 characterize pairwise correlations with quantitative measures and statistical relationships shown in Figures 1-2. The weak distance dependence (10-30% variance explained) is important for establishing that cNEs reflect more than simple spatial proximity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Spike train PWCs between cNE member neurons are significantly sharper (median ~2 ms) than STRF PWCs and significantly sharper than PWCs between non-cNE pairs (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate that cNE synchrony exceeds what would be expected from receptive field overlap alone. The statistical comparison (Mann-Whitney U test, p<0.001) across all penetrations (Figure 6J and supplement) provides strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Across 16 penetrations, 104 cNEs were identified, averaging 6.5\u00b12.0 cNEs per penetration (~15% of neurons) with mean size 7.4\u00b12.5 neurons (~17% of recorded neurons). Most neurons (68%) belonged to a single cNE, 23% to multiple cNEs, and 9% to none.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 provide comprehensive descriptive statistics of cNE properties with clear quantitative measures. The data are presented in Figures 4 and 7 with appropriate sample sizes (n=16 penetrations, 655 neurons, 104 cNEs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "cNEs are spatially localized, with 82% of neuron pairs within cNEs separated by <200 \u03bcm and 70% of cNEs spanning \u2264200 \u03bcm depth, though some span multiple cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C60-C62 characterize the spatial organization of cNEs with clear quantitative metrics shown in Figure 7D-F. The finding that most cNEs are locally confined (~200 \u03bcm, approximately one cortical layer) while some span multiple layers is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C65"
+    ],
+    "result": "Approximately 72% of cNEs identified during spontaneous activity had significant matches to cNEs from evoked activity, indicating that cNEs represent stable functional networks independent of stimulus presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C65 demonstrate stimulus-independence of cNEs through comparison of spontaneous and evoked epochs (Figure 8). The 72% matching rate with appropriate statistical thresholds (p=0.01) across 8 recordings provides strong evidence for intrinsic network organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C63"
+    ],
+    "result": "cNE events convey ~10% more mutual information than individual member neurons (MI ratio 1.11\u00b10.13, p<0.001) and significantly more than random groups of neurons (p<0.001), demonstrating enhanced information encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C63 demonstrate enhanced information processing by cNEs using repeated stimulus presentations and mutual information analysis (Figure 9). Statistical tests (Wilcoxon signed-rank) with appropriate controls (random groups matched for size) support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Pairs of neurons within the same cNE have significantly higher noise correlations than non-cNE pairs across all 16 recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by data in Figure 9\u2014figure supplement 2 showing consistent differences across all recordings. This finding is consistent with common synaptic input as a potential mechanism for cNE formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "cNE STRFs have stronger excitatory/inhibitory subfields with higher peak-trough differences (PTD) and mutual information than individual neuronal STRFs or random groups (p<0.001 for all comparisons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 demonstrate that cNEs have enhanced receptive field properties compared to individual neurons and random groups (Figure 10 and supplement). The consistent statistical significance across multiple metrics (PTD, MI) with appropriate controls strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C64"
+    ],
+    "result": "Surrogate spike train matrices constructed from non-simultaneous responses to repeated stimuli had fewer and smaller cNEs than real simultaneous recordings, indicating that stimulus-driven synchronization alone cannot account for observed cNE properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C64 use a clever control comparing simultaneous vs. non-simultaneous responses to the same stimulus (Figure 11A-B, supplement 1). The reduced cNE number and size in surrogate data demonstrate that cNEs reflect more than coincidental stimulus-driven activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Three computational models (shuffled, preserved receptive field 'PR', and dichotomized Gaussian 'DG') all produced smaller cNEs than real data, and coincidence ratios for all models were significantly less than real data, indicating that second-order correlations and receptive field overlap cannot fully explain cNE synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 present comprehensive modeling controls (Figure 11C-F). The 'PR' model preserves receptive fields, the 'DG' model preserves pairwise correlations, yet both fail to reproduce real cNE properties. This provides strong evidence for higher-order correlations. The methods are well-described in Materials and Methods and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "cNEs can be accurately detected, have higher coincident firing than expected from receptive field similarity or pairwise correlations, are similar across spontaneous and evoked activity, and encode information more reliably than single neurons or random groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 summarize the main findings of the study. These summary claims are supported by the detailed results in claims C21-C59, which provide the experimental evidence through multiple complementary analyses including stability tests, information theory, and computational modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "cNEs may convey specific environmental information, are tightly locked to stimulus features, integrate complementary spiking information to enhance encoding, and may serve as functional units for maintaining encoding fidelity, though they are likely part of larger multi-columnar networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C75 present interpretations and speculations about cNE function. While these interpretations are reasonable given the data, they extend beyond what is directly demonstrated. The claims appropriately use cautious language ('may', 'likely') but represent hypotheses requiring further testing rather than established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Single-unit activity is often insufficient to explain behavior, technological advances enable population recordings, and coordinated neuronal activities are postulated to be elementary units of information processing associated with improved behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 establish the background and motivation for the study through citations to prior literature. These claims accurately represent the current state of the field and provide appropriate context for investigating cNEs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C15"
+    ],
+    "result": "The cortical column is a fundamental organizing substrate in auditory cortex relating neurons with similar preferred frequencies, and synchrony between neuron pairs weakens with increasing distance within columns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C15 describe established properties of auditory cortical organization supported by multiple citations. These provide important context for why columnar recordings were performed and what baseline expectations exist for spatial organization of activity.",
+    "result_type": "MINOR"
+  }
+]

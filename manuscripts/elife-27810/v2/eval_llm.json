@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C70",
+      "C71",
+      "C101"
+    ],
+    "result": "Regulated Ras (with GAP and GEF) exhibits global sensitivity to mutation, with most mutations causing mild loss of function. Sensitive sites cluster in the hydrophobic core, nucleotide binding site, and regions interacting with Raf-RBD, GAP, and GEF. This global constraint imposed by regulators may explain the high sequence conservation of Ras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C42, C47, and C70 are directly supported by experimental data from the regulated-Ras deep mutational scanning experiment (Figure 2). The distribution of fitness effects (C42, C43) shows a mode centered at negative values, qualitatively different from other proteins studied. Structural mapping (C47, C48) confirms clustering of sensitive sites. The conclusion that regulation constrains Ras globally (C44, C46, C101) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C102"
+    ],
+    "result": "Removing regulators (unregulated Ras) shifts the distribution of mutational effects to be largely neutral, revealing hotspots of activating mutations distributed throughout the structure where almost any substitution increases activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30, C31, C91, and C93 are directly supported by experimental data from the unregulated-Ras experiment (Figure 4). The distribution shows a primary mode centered around zero (C91), and many mutations result in increased fitness (C93, C94). The characterization that Ras behaves like other proteins in deep mutational scanning studies without regulation (C92) is supported by comparison to cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C97",
+      "C98",
+      "C99",
+      "C110",
+      "C111",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Hotspots of activating mutations form a spatially contiguous network and correspond to residues that restrain Ras dynamics and promote the inactive state through allosteric coupling to the GTP binding site. Molecular dynamics simulations show that mutations at these hotspot residues increase conformational fluctuations in Switch II and disrupt stable sidechain contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, and C97 are supported by the unregulated-Ras experimental data and structural analysis. Biochemical assays (C98, C99) confirm that hotspot mutations affect GTP hydrolysis and nucleotide release rates. Molecular dynamics simulations (C110-C128) provide mechanistic support showing increased dynamics in Switch II and loss of stable contacts in mutants. The integration of experimental and computational data strongly supports the allosteric mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "In the presence of GAP without GEF (attenuated Ras), mutations show greater sensitivity across the structure, and oncogenic mutations at Gly 12, Gly 13, and Gln 61 become strongly activating. Additional hotspot sites (Tyr 64, Lys 117, Leu 120, Ser 145, Lys 147) also show strong activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75, C76, and C83 are directly supported by experimental data from the attenuated-Ras experiment (Figure 3). The comparison between regulated and attenuated conditions (C81, C82, C83) shows that oncogenic mutations are much more strongly activating in the attenuated context. The identification of additional hotspot sites (C86) is supported by the mutational data. The mechanistic interpretation (C73, C74, C77) is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C182"
+    ],
+    "result": "The oncogenic G12V mutation reduces the activating effects of hotspot mutations seen in wild-type unregulated Ras, indicating epistatic interactions between G12V and broadly distributed hotspot residues. This attenuation is seen for both nucleotide exchange and hydrolysis-affecting mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C103, and C104 are directly supported by experimental data from the Ras-G12V saturation mutagenesis experiment (Figure 5). The comparison between unregulated-Ras and Ras-G12V experiments clearly shows reduced effects of hotspot mutations in the G12V background. The mechanistic interpretation (C108, C109) is reasonable given the known biochemical effects of G12V (C107, cited from previous work). The conclusion about epistatic interactions (C35, C182) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C168",
+      "C169"
+    ],
+    "result": "Evolutionary analysis shows that Ras has co-evolved with its regulators in the vertebrate lineage. The ancestral Ras sequence contains residues that would activate human H-Ras in the absence of regulators but are detrimental in the presence of GAP and GEF, suggesting modification of allosteric control during vertebrate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 are supported by ancestral sequence reconstruction and comparison with mutational data (Figure 8). The finding that 30 of 48 differences between ancestral and human Ras would be activating in unregulated conditions (C131) but mostly detrimental in regulated conditions (C134) provides strong evidence for co-evolution (C5, C136). The evolutionary analysis methods appear sound, and the integration with mutational data is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C170"
+    ],
+    "result": "Variable regions in Ras that diverged during vertebrate evolution correspond to elements involved in SOS allosteric activation. S. rosetta Ras is deficient in allosterically stimulating human SOS, suggesting that the ability of Ras to allosterically activate SOS may have emerged in higher vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 about SOS structure and function are well-established (supported by citations). The correlation between variable regions and SOS binding sites (C143, C144) is supported by structural analysis (Figure 9). The experimental demonstration that S. rosetta Ras is deficient in allosteric SOS activation (C146-C148, Figure 9\u2014figure supplement 1) provides strong support for the evolutionary interpretation (C170). However, C170 is somewhat speculative ('may have emerged').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The L120A mutation triggers a transition between R and T conformational states of Ras\u2022GTP. Wild-type Ras\u2022GTP adopts the R state at room temperature, while L120A adopts the T state. S. rosetta Ras\u2022GTP adopts a conformation close to the T state, suggesting altered R/T balance in invertebrate Ras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 about R and T states are based on established literature (citations to Mattos and colleagues). The crystal structure determination of wild-type and L120A Ras at room temperature (C155-C157) provides direct experimental evidence for the R to T transition (Figure 10B). The S. rosetta Ras structure (C158) supports the evolutionary interpretation (C159), though C159 is somewhat speculative ('may be altered').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C100",
+      "C161",
+      "C162",
+      "C166",
+      "C167"
+    ],
+    "result": "Sequence conservation in Ras depends strongly on the biochemical network in which it operates. The local regulatory network places stringent constraints on Ras sequence and creates conditions for susceptibility to activating mutations. This provides a framework for understanding global selection pressures on proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37, C100, and C161 represent the main conclusions of the study, integrating results from all experimental conditions. The profound context dependence of mutational effects (C100) is clearly demonstrated by comparing regulated, attenuated, and unregulated conditions. The conclusion that mutational sensitivity depends on selective conditions (C162) is supported by the data and extends previous observations (citation to Stiffler et al.). The broader framework (C166, C167) is a reasonable generalization from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The bacterial two-hybrid system is validated by showing that enrichment of Ras variants is approximately proportional to changes in Ras\u2022GTP:Raf-RBD binding free energy measured by ITC. Wild-type Ras binds Raf-RBD with KD ~170 nM, and Switch I mutations increase KD by >100-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe validation of the bacterial two-hybrid system. ITC measurements (C39, C40) provide quantitative binding data, and the correlation with enrichment values (C38, C41, Figure 1D) demonstrates that the two-hybrid system reports on binding affinity. This validation is important for interpreting the mutational scanning results. The data quality appears good with error bars reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mutations in Switch I impair Raf-RBD and GAP binding, while mutations in Switch II and adjacent regions impair GEF binding. These effects are confirmed by in vitro biochemical assays showing reduced GAP-catalyzed GTP hydrolysis and GEF-stimulated GDP exchange rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C64 describe mutational effects on regulator binding, supported by the regulated-Ras experimental data and structural knowledge. The in vitro validation (C65, C66, Figure 2\u2014figure supplement 2) confirms that mutations affecting fitness in the two-hybrid system also affect biochemical activities. This provides important mechanistic validation of the screening results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A yeast heat shock assay validates that mutations reducing fitness in the bacterial two-hybrid system compromise Ras function. Mutations in nucleotide binding regions that decrease fitness lead to increased yeast growth after heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 describe an orthogonal validation assay using yeast. The yeast assay (Figure 2\u2014figure supplement 2C) confirms that loss-of-function mutations identified in the bacterial system also compromise Ras function in a different cellular context. This cross-validation strengthens confidence in the bacterial two-hybrid results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C88",
+      "C89"
+    ],
+    "result": "Some nucleotide-coordinating residues (Lys 117, Lys 147) are not very sensitive to mutation and many mutations at these sites lead to gain of function, possibly because Ras affinity for GTP is much higher than required to saturate the active site, or because mutations create fast-cycling variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by mutational data from the regulated-Ras experiment. The mechanistic interpretation (C56-C58) is reasonable, with C56 supported by citation to previous work and C57 by citation and inference from cellular GTP concentrations. However, C58 is somewhat speculative. Claims C88-C89 provide additional support from biochemical assays. The overall interpretation is plausible but contains speculative elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The bacterial two-hybrid system couples Ras\u2022GTP:Raf-RBD binding to antibiotic resistance, enabling fitness evaluation of Ras mutants. Co-expression of GAP and GEF enables evaluation of regulator effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe the experimental design of the bacterial two-hybrid system. The system is well-described in the methods and validated by growth curves (Figure 1\u2014figure supplement 2) and correlation with ITC data (Figure 1D). This is a methodological result that enables the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C84",
+      "C85",
+      "C90"
+    ],
+    "result": "In human cancers, 98% of Ras mutations occur at Gly 12, Gly 13, and Gln 61. These residues are in the P-loop and catalytic site. Mutations at these sites affect GAP efficiency and GTP hydrolysis/GDP exchange rates. Other sites (Lys 117, Leu 120) are rarely mutated in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, C80, and C90 are supported by citations to cancer genomics studies (Prior et al., Hobbs et al., COSMIC database). Claims C84-C85 are supported by citation to previous biochemical work (Mazhab-Jafari et al.). This provides important context for interpreting the mutational scanning results in relation to cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on Ras proteins and protein mutational tolerance. Ras proteins are highly conserved signaling molecules that cycle between active GTP-bound and inactive GDP-bound states. Protein structures are generally robust to sequence changes, but many metazoan signaling proteins like Ras are extraordinarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C25 provide background information supported by established knowledge and citations to previous work. These claims set up the scientific question addressed by the study: why is Ras so highly conserved despite general protein tolerance to mutation? The phylogenetic analysis (C16-C18, Figure 1\u2014figure supplement 1) supports the high conservation of Ras in vertebrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Specific examples of hotspot residues: Tyr 157 (in helix \u03b15, ~20 \u00c5 from active site) shows increased function for 17 of 19 substitutions; Gln 99 (in helix \u03b13, opposite side from Tyr 157) shows increased fitness for all substitutions except glycine and proline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 provide specific examples of hotspot residues from the unregulated-Ras experiment (Figure 4A). These examples illustrate the widespread distribution of activating mutations and the promiscuity of substitutions at hotspot sites. The data directly support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C117",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Molecular dynamics simulations show that the overall structure of Ras is stable in all simulations, with small r.m.s. fluctuations (<1 \u00c5) excluding switch regions. Switch II shows increased mobility in mutant simulations. The Y157A mutant shows different behavior than other mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe the stability of Ras structure in MD simulations, supported by analysis shown in Figures 6 and 6\u2014figure supplement 2. Claims C117, C122-C125 describe specific features of the simulations. The simulation methods are described in detail, and the analysis appears sound. The simulations provide mechanistic insight into how hotspot mutations affect Ras dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C160",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "In the absence of regulators, Ras shows mutational tolerance similar to other proteins studied by deep mutational scanning. The Ras fold is intrinsically capable of accommodating sequence changes. Paralogous Ras superfamily members show structural conservation despite sequence divergence, while orthologous Ras proteins show high sequence conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is supported by experimental data and comparison to cited literature. Claims C163-C165 provide evolutionary context, with C164 supported by citation and C165 by the evolutionary analysis in the manuscript. These claims help interpret the main findings in a broader evolutionary framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C183"
+    ],
+    "result": "Discussion of implications for cancer biology and drug resistance. Oncogenic mutations like G12V are conditionally neutral in the presence of regulators, which may allow them to appear in populations and manifest gain of function upon loss of regulation. This has implications for understanding tumor evolution and drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C172-C173 are well-established (supported by citations). Claim C174 is supported by experimental data (Figure 2). However, claims C175-C178 are speculative interpretations about evolutionary paths and tumor evolution. Claims C179-C181 about drug resistance are based on analogy to kinase inhibitors (citations provided) but are speculative regarding Ras inhibitors. Claim C183 is a proposal for future research. These claims represent interesting speculation but go beyond what the data directly support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C45",
+      "C53",
+      "C73",
+      "C74",
+      "C97",
+      "C108",
+      "C109",
+      "C126",
+      "C127"
+    ],
+    "result": "Various mechanistic interpretations and inferences about how mutations affect Ras function, including effects on purifying selection, protein stability, Ras\u2022GTP concentration, GTP hydrolysis, and GDP release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent mechanistic interpretations of the experimental data. Most are reasonable inferences based on biochemical principles and structural knowledge. For example, C126-C127 about effects on GTP hydrolysis and GDP release are supported by the MD simulations and biochemical assays. C73-C74 about effects of GAP without GEF are reasonable inferences from the experimental design. C45 about purifying selection is based on evolutionary principles. These interpretations are generally well-supported but involve some inference beyond direct observation.",
+    "result_type": "MINOR"
+  }
+]

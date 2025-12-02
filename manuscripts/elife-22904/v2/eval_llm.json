@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C16",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "MCTP was identified in a forward genetic screen for PHP mutations. Three independent mctp mutant alleles (mctp1, mctp2, and mctpOG9) completely block PHP, as demonstrated by the failure to increase quantal content following PhTx application, while mEPSP amplitudes remain decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C16, C92-C95 collectively establish that mctp is essential for PHP through convergent genetic evidence from multiple independent alleles (transposon insertions and CRISPR-generated mutation). The electrophysiological data in Figure 1 demonstrates complete block of PHP across all alleles with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "MCTP functions presynaptically to enable PHP. Neuron-specific expression of UAS-mctp fully rescues PHP in mctp1 mutants, while muscle-specific expression does not rescue PHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 demonstrate tissue-specific rescue with appropriate controls. The neuronal rescue fully restores PHP (quantal content increase and EPSP restoration), while muscle expression fails to rescue, establishing presynaptic requirement with statistical validation (p>0.5 for neuronal rescue vs wild type).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "MCTP is required for long-term maintenance of PHP. In mctp1,GluRIIA double mutants, PHP is completely blocked despite decreased mEPSP amplitudes identical to GluRIIA single mutants. Presynaptic expression of UAS-mctp fully restores PHP in the double mutant background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 establish MCTP's role in chronic PHP using the GluRIIA genetic model. The double mutant analysis with rescue experiments provides strong evidence, though the authors note additional effects beyond simple PHP blockade that warrant future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MCTP localizes to ER membranes throughout neurons, including soma, dendrites, axon, and presynaptic terminals. The transmembrane domains are necessary and sufficient for ER localization, and MCTP does not localize to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C33 demonstrate ER localization through multiple approaches: co-localization with ER markers (KDEL-RFP, HDEL-GFP, ER-tracker), structure-function analysis of transmembrane domains in S2 cells, and absence from plasma membrane. The convergent evidence from neurons and heterologous cells supports the conclusion despite reliance on overexpressed tagged protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "MCTP comes into close proximity to active zones marked by Brp but does not co-localize with them. MCTP is absent from synaptic vesicle clusters identified by Syt1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by super-resolution imaging (Figure 3C) and confocal microscopy (Figure 4B). The spatial relationship to active zones and exclusion from vesicle clusters is clearly demonstrated, consistent with ER localization distinct from release machinery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Loss of MCTP causes minimal changes to NMJ morphology. There is a small increase in bouton number but no change in active zone number, density, or microtubule cytoskeleton. The NMJ appears morphologically normal without degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C96-C98 demonstrate that mctp mutants lack the dramatic morphological defects seen in other ER-related mutations. Quantitative analysis (Figure 4\u2014figure supplement 1) and qualitative assessment support normal NMJ structure, establishing that PHP defects are not secondary to developmental or degenerative changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "MCTP is required for normal baseline neurotransmitter release. Loss of MCTP causes decreased EPSP/EPSC amplitudes and quantal content across a range of extracellular calcium concentrations (0.3-1.5 mM), with impaired calcium sensitivity but unchanged calcium cooperativity. Short-term release dynamics are altered, with facilitation replacing depression at physiological calcium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C40-C43 demonstrate baseline transmission defects through extensive electrophysiological characterization across calcium concentrations (Figures 1, 5). The parallel shift in calcium sensitivity and altered short-term plasticity are well-documented with appropriate statistical analysis, establishing separable effects on baseline release and PHP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The readily releasable pool (RRP) size is unchanged in mctp mutants, but there is a 21% decrease in initial release probability (Ptrain). EPSC rise time and cumulative EPSC are also unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 use established methods to estimate RRP and release probability. The quantitative analysis (Figure 5C-F) with specific values and statistics demonstrates that decreased release is not due to RRP changes but rather altered release probability, supporting a post-calcium influx mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MCTP functions downstream of presynaptic calcium influx. Action potential-evoked calcium signals are unchanged in mctp mutants for both single and repetitive stimulation, and calcium buffering is unaffected. Therefore, MCTP must act downstream of calcium entry to influence vesicle release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C50 provide critical mechanistic insight through calcium imaging (Figure 6). The absence of changes in spatially-averaged calcium signals or decay kinetics, despite clear release defects, strongly supports a post-calcium influx mechanism. This is a key finding that constrains mechanistic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "MCTP promotes release of an EGTA-sensitive vesicle pool. Wild-type synapses show decreased EPSC amplitude with EGTA-AM, but mctp mutants are completely insensitive to EGTA-AM. EGTA-AM reduces wild-type release to mctp mutant levels and converts facilitation to depression in mctp mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 use EGTA-AM to probe calcium-vesicle coupling (Figure 7A-B). The differential sensitivity between wild-type and mutant, and the conversion of facilitation to depression, provide strong evidence that MCTP facilitates release of weakly calcium-coupled vesicles. The logic and experimental design are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PHP does not require the MCTP-dependent, EGTA-sensitive vesicle pool. PHP occurs normally at 25 \u00b5M EGTA-AM and remains statistically significant (though suppressed) at 125 \u00b5M EGTA-AM. This suggests MCTP has an additional activity necessary for PHP beyond promoting EGTA-sensitive vesicle release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 demonstrate separable MCTP functions through EGTA-AM experiments (Figure 7C-D). The persistence of PHP under conditions that eliminate the EGTA-sensitive pool is well-documented, supporting the conclusion of multiple MCTP activities. However, the mechanistic basis for the additional PHP-specific function remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MCTP ensures robust PHP expression across variable calcium concentrations. Wild-type PHP is expressed at all tested calcium concentrations (0.3-1.5 mM), but mctp mutants show calcium-dependent PHP expression, with complete blockade at low calcium (0.3-1.0 mM) and partial rescue only at high calcium (1.5 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 reveal a critical MCTP function in stabilizing PHP across calcium concentrations (Figure 8). The systematic analysis across physiological and sub-physiological calcium ranges demonstrates that MCTP confers robustness to PHP, though the molecular mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Active zone ultrastructure is normal in mctp mutants. Electron microscopy reveals no changes in vesicle distribution, vesicle diameter, vesicle number per active zone, vesicle distance from T-bar, or active zone length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 use electron microscopy (Figure 9) to demonstrate normal ultrastructure. The quantitative analysis of multiple parameters establishes that release defects are not due to structural changes at active zones, consistent with a regulatory rather than structural role for MCTP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "PHP requires calcium-coordinating residues in all three C2 domains of MCTP. Mutations in individual C2 domains (C2A*, C2B*, C2C*) all fail to rescue PHP despite proper expression and trafficking to presynaptic terminals. This establishes MCTP as an ER-resident calcium sensor necessary for PHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C71-C76 provide strong evidence for calcium-sensing function through structure-function analysis (Figure 10). The requirement for all three C2 domains, combined with prior biochemical evidence of calcium binding, supports the calcium sensor model. The imaging confirms proper localization of mutant proteins, ruling out trafficking defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C99",
+      "C104"
+    ],
+    "result": "MCTP is proposed as a novel ER-localized calcium sensor that provides calcium-dependent feedback for homeostatic stabilization of neurotransmission. MCTP regulates baseline release, short-term plasticity, and PHP under physiological conditions, with C2 domain mutations blocking PHP while maintaining ER integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C99, C104 represent the central conclusion integrating ER localization, calcium-binding requirements, and functional roles. The proposal is well-supported by convergent evidence, though the specific molecular mechanisms of calcium sensing and downstream signaling remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background on PHP and MCTP: PHP is conserved from Drosophila to human, can be rapidly induced and stably maintained, and MCTPs are evolutionarily conserved proteins with unusual calcium-binding C2 domains. MCTP mutations are linked to embryonic lethality in C. elegans and bipolar disorder in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 provide literature context supported by appropriate citations. These establish the biological significance of PHP and prior knowledge about MCTP family proteins, though they represent background rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Discussion of ER biology and related proteins: The ER extends throughout neurons, physiological calcium ranges are defined, and related ER-plasma membrane tethering proteins (eSyts, Tricalbins, STIM1) are discussed as potential mechanistic parallels for MCTP function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 provide relevant context from the literature with appropriate citations. These comparisons help frame MCTP function within known ER biology, though they are speculative regarding MCTP's specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C100"
+    ],
+    "result": "Disease relevance: Mutations in ER-resident proteins cause spastic paraplegias and synaptic defects in Drosophila. Human MCTP mutations are associated with bipolar disorder, which could relate to MCTP's role in homeostatic stabilization. MCTP may prevent synaptic failure under hypocalcemia and homeostatic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C91, C100 discuss disease connections, but these are largely speculative (C91, C100 explicitly marked as speculation). While the association between human MCTP mutations and bipolar disorder is cited, the mechanistic connection to the Drosophila findings remains hypothetical and requires future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Comparison to other synaptic regulators: MCTP lacks an SMP domain but could function in protein complexes. Unlike STIM1 (which affects release only under ER calcium depletion), MCTP regulates baseline transmission under physiological conditions. The magnitude of baseline defects is similar to RIM mutations, and PHP can be induced without action potential-evoked calcium influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 provide useful comparisons to related proteins and mechanisms, supported by citations. These help position MCTP's function relative to known regulators, though some aspects (like potential protein complex formation) remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "S2 cells used in experiments are mycoplasma negative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 documents quality control for cell culture experiments. This is a minor methodological detail but important for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

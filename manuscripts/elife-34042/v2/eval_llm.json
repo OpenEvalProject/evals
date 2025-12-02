@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "cTag-PAPERCLIP is a method that enables purification and sequencing of 3'UTR ends of polyadenylated transcripts via PABPC1, which binds with high specificity to mRNA poly(A) tails. The method exhibits less internal priming to A-rich regions compared to oligo-dT-based techniques and captures direct RNA-protein interactions in situ through UV crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the technical basis of cTag-PAPERCLIP, supported by citations to prior work (PAPERCLIP, CLIP) and established knowledge about PABPC1 function. The technical advantages are documented in cited literature (Hwang et al., 2016), providing a solid foundation for the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "cTag-PAPERCLIP successfully identified 10,830 clusters (8,575 genes) in Purkinje cells and 12,099 clusters (9,411 genes) in granule cells, with approximately 27% and 26% of genes showing multiple PABPC1 binding sites, respectively. The method demonstrated high quantitative reproducibility across biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are supported by experimental data showing cell-type-specific expression (Figure 1B), sequencing results with defined cluster numbers, and high correlation across replicates (Figure 1D). The inference that multiple binding sites suggest multiple polyadenylation sites (C19) is reasonable given the method's design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "cTag-PAPERCLIP shows high correlation with TRAP-Seq for measuring mRNA abundance (R=0.68 for Purkinje cells, R=0.7 for granule cells), with known cell-type markers highly expressed in respective datasets. The method demonstrates higher selectivity than TRAP-Seq, with non-target cell markers ranked significantly lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are well-supported by comparative data (Figures 1E, 1\u2014figure supplement 1-2). The high correlations with TRAP-Seq validate the method's ability to measure mRNA abundance, while the marker gene analysis and ranking comparisons demonstrate superior cell-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Two-thirds of cTag-PAPERCLIP clusters mapped to exact ends of Ensembl-annotated 3'UTRs, while 30-31% mapped within annotated 3'UTRs but not to exact ends, revealing thousands of novel 3'UTR ends. The majority (87%) of clusters contained canonical poly(A) signal sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by systematic analysis of cluster overlap with Ensembl annotations (Figure 1F) and sequence analysis for poly(A) signals. The high percentage of canonical signals validates that the identified clusters represent genuine polyadenylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "629 genes showed differential 3'UTR isoform expression between Purkinje and granule cells (FDR<0.05), with 81% (319/394) differing only in 3'UTR length. Examples include Vezt (shorter in Purkinje cells) and Zfp609 (long isoform in Purkinje, both short and long in granule cells), with novel short isoforms containing canonical poly(A) signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C35, C37-C38 are supported by statistical analysis (FDR<0.05) and specific examples with cTag-PAPERCLIP data (Figure 2A-B). The identification of novel isoforms with canonical poly(A) signals strengthens the validity of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C45"
+    ],
+    "result": "19% (76/394) of differentially polyadenylated transcripts with two poly(A) sites showed CDS-APA between Purkinje and granule cells, with 7 instances altering phosphorylation sites and 29 altering protein domains. Examples include Ncam1 (full-length in granule, truncated in Purkinje) and Copg1 (truncated isoform in granule, full-length only in Purkinje).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C43, C45 are supported by systematic analysis of CDS-APA (Figure 2C-D) and domain/modification analysis. The specific examples with cTag-PAPERCLIP data provide concrete evidence for functional consequences of CDS-APA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TRAP-Seq data from Purkinje and granule cells was consistent with cTag-PAPERCLIP for Vezt, Zfp609, Ncam1, and Copg1, but TRAP-Seq could not pinpoint 3'UTR ends accurately. RT-qPCR validation was consistent with cTag-PAPERCLIP, though the latter showed more pronounced differences, presumably due to more selective RNA purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by comparative data (Figure 2\u2014figure supplements 1-2). The consistency across methods validates the findings, while the superior resolution of cTag-PAPERCLIP is demonstrated. The speculation about selective purification (C49) is reasonable but remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C54"
+    ],
+    "result": "Genes with differential APA between Purkinje and granule cells are enriched for functions in cell morphology and ion transport regulation, suggesting that morphological and physiological differences between these cell types may be mediated in part by APA-based fine-tuning of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is supported by gene ontology analysis (Figure 2E), but C54's causal inference is speculative. While the enrichment is statistically significant, the claim that APA 'mediates' cell-type differences requires functional validation beyond correlation. The enrichment suggests but does not prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "737 genes significantly changed in APA (FDR<0.05) during granule cell development from P0 to P21, with 3'UTRs tending to lengthen (288/354 transcripts with two poly(A) sites got longer). Examples include Kpnb1 and Cdk7, both shifting to predominantly long 3'UTR isoforms in differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C64 are supported by statistical analysis and specific examples with cTag-PAPERCLIP data (Figure 3B-C). The trend toward lengthening is consistent with prior work (Ji et al., 2009), and the examples are well-documented with visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "98 transcripts (22%) with two poly(A) sites showed CDS-APA during granule cell development, with CDS lengthening in the majority (69/98). These changes altered 10 posttranslational modification sites and 42 protein domains. Sin3b exemplifies this, with differentiated cells expressing the long isoform while precursors express both long and short isoforms lacking the HDAC-interaction domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C71 are supported by systematic analysis (Figure 3D-E) and domain/modification analysis. The Sin3b example with cTag-PAPERCLIP data provides concrete evidence for functional consequences of developmental CDS-APA changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Rbmx shows developmental APA changes, with both short and long isoforms expressed in precursors but only the long isoform in differentiated granule cells. The long isoform is predicted to undergo nonsense-mediated decay, which may contribute to decreased Rbmx abundance in differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is supported by cTag-PAPERCLIP data (Figure 3E), but C75-C76 involve speculation about nonsense-mediated decay based on Ensembl predictions. While the prediction is reasonable, the causal link to decreased abundance is not experimentally validated and remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "cTag-PAPERCLIP data from developing granule cells correlates well with RNA-seq (R=0.56), with 73% of genes showing consistent directional changes. RNA-seq and RT-qPCR data for Kpnb1, Cdk7, Sin3b, and Rbmx were consistent with cTag-PAPERCLIP, though RNA-seq cannot pinpoint exact 3'UTR ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C81 are supported by comparative analyses (Figure 3\u2014figure supplements 1-3). The moderate correlation with RNA-seq is reasonable given methodological differences, and the consistency across multiple validation approaches strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C86"
+    ],
+    "result": "Genes with differential APA during granule cell development are enriched for functions in neuritogenesis and dendritic branching, suggesting that APA plays a role in defining morphological changes between precursor and differentiated granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is supported by gene ontology analysis (Figure 3F), but C86's causal inference is speculative. While the functional enrichment is statistically significant, the claim that APA 'plays a role' in morphological changes requires functional validation beyond correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Changes in 3'UTR length during granule cell development were not globally correlated with changes in ribosome-associated mRNA abundance, suggesting that if APA affects mRNA abundance, it does so in a gene-specific manner. Transcripts with extended 3'UTRs containing Argonaute-bound miRNA sites were not significantly downregulated as a group, indicating multiple mechanisms affect mRNA abundance beyond miRNA targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by analysis of TRAP data (Figure 3\u2014figure supplement 4) and are consistent with prior work (Gruber et al., 2014; Gupta et al., 2014). The inferences about gene-specific effects and multiple regulatory mechanisms are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Approximately 15% of transcripts that increased distal poly(A) site usage during granule cell development were significantly shorter in Purkinje cells (p=6.85\u00d710\u207b\u2078), suggesting that developmental increases in distal poly(A) site usage contribute to neuron-type-specific 3'UTR regulation in mature cerebellar granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by overlap analysis with strong statistical significance (Figure 4A). The inference in C93 about developmental contribution to cell-type specificity is reasonable given the significant overlap, though the causal mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Memo1 expresses only a short 3'UTR isoform in granule cell precursors but both short and long (14 kb downstream) isoforms in differentiated cells. Both poly(A) signals are conserved across placental mammals, both isoforms are detectable in human brain, and the pattern is consistent across cTag-PAPERCLIP, RNA-seq, and TRAP-Seq data. Overall Memo1 expression significantly decreases during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are well-supported by cTag-PAPERCLIP data (Figure 5A-B), conservation analysis, human brain data (Jaffe et al., 2015), and consistency across multiple methods (Figure 5\u2014figure supplement 1A). The decrease in expression is statistically significant (p<0.031).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C122"
+    ],
+    "result": "Memo1 knockout mice at E18.5 showed defective cerebellar foliation (1 fissure vs. 5 in controls) and significantly fewer mitotic cells in the external granule layer, demonstrating that Memo1 is required for granule cell proliferation and cerebellar foliation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C108-C109, C122 are supported by quantitative analysis of Memo1 knockout mice (Figure 5C, Figure 5\u2014figure supplement 1B) with appropriate statistical testing (two-way ANOVA, p<0.0001). The inference about Memo1's requirement is well-supported by the phenotypic data and is consistent with its role in cancer cell proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The long Memo1 3'UTR harbors a highly conserved miR-124 target site absent in the short 3'UTR. This site is bound by Argonaute in mouse cortex, suggesting it is functional in the mouse brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by sequence analysis using RegRNA software and Argonaute CLIP data from Moore et al., 2015 (Figure 5A). The conservation and Argonaute binding provide strong evidence for functionality, though direct functional validation in granule cells would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C117",
+      "C118"
+    ],
+    "result": "miR-124 expression increased during granule cell differentiation in vitro (2 weeks), while Memo1 expression decreased, suggesting a potential role for miR-124 in downregulating Memo1 during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115 and C117 are supported by qPCR data (Figure 5D) showing inverse expression patterns. However, C118's causal inference is speculative without direct functional validation. The correlation is consistent with the hypothesis but does not prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Blocking miR-124 with an antisense oligonucleotide or blocking the miR-124 target site on Memo1 both resulted in upregulation of the Memo1 long isoform in cultured granule cells, demonstrating that miR-124 downregulates the Memo1 long isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by qPCR data from antagomir and target blocker experiments (Figure 5E-F) with appropriate statistical significance (p<0.003 and p<0.006). The convergent evidence from two independent approaches strongly supports the conclusion that miR-124 directly regulates Memo1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "During granule cell development, Memo1 acquires a 3'UTR extension harboring a miR-124 target site, providing a mechanism for Memo1 downregulation during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 integrate multiple supported findings: the developmental appearance of the long isoform (C99), the presence of a functional miR-124 site (C110-C112), increased miR-124 during development (C115), and direct regulation by miR-124 (C119-C121). The mechanistic model is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "cTag-PAPERCLIP enables 3'UTR profiling in intact tissue, avoiding gene expression changes during cell purification. Expression of stress markers was significantly lower in cTag-PAPERCLIP compared to FACS-sorted cells, potentially due to variables introduced by purification that CLIP avoids through in vivo crosslinking. Unlike TRAP-seq, cTag-PAPERCLIP is not restricted to ribosome-bound transcripts and shows higher cell-type selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by prior work (Hwang et al., 2017) and comparative data (Figure 1). The advantages over other methods are well-documented, though the speculation about mechanisms (C127) remains unproven. The technical comparisons are valid and important for method evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Post-transcriptional RNA regulation through APA may contribute to distinct morphological and physiological properties of cerebellar cell types and developmental stages. The authors hypothesize that transcript lengthening during brain development occurs in different transcripts across cell types to enable cell-type-specific post-transcriptional regulation contributing to functional neuronal diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C135 are speculative inferences based on observed APA differences and functional enrichments. While the correlations are well-documented, the causal claims require functional validation. The hypothesis is reasonable and testable but remains unproven by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Memo1 undergoes cell-type-specific APA: Purkinje cells predominantly express the short 3'UTR isoform while granule neurons express more of the miR-124-sensitive long isoform. Since miR-124 is expressed in both cell types, selective use of the distal poly(A) signal allows Memo1 mRNA to be specifically downregulated in granule cells (~3-fold lower than Purkinje cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by cTag-PAPERCLIP data comparing cell types and citations documenting miR-124 expression in both cell types (He et al., 2012; Pena et al., 2009). The inference about cell-type-specific downregulation is well-supported by the combination of differential APA and ubiquitous miR-124 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Among genes expressing longer 3'UTR isoforms in granule cells compared to Purkinje cells, 63 genes harbored Argonaute binding sites in extended 3'UTRs and were expressed at lower levels in granule cells, suggesting potentially more genes exhibit APA-dependent miRNA-mediated downregulation in specific cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C142 is supported by systematic analysis of genes with differential APA and Argonaute binding. However, C143's inference about 'potentially more genes' is speculative. While the pattern is suggestive, correlation between Argonaute binding and lower expression does not prove miRNA-mediated regulation without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "Polyadenylation factors as a group were slightly but not significantly downregulated (17% median decrease) between granule cell precursors and differentiated cells, suggesting that an overall decrease in core polyadenylation machinery may contribute to 3'UTR lengthening during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C145 is supported by data analysis, but the lack of statistical significance weakens the conclusion. Claim C146's causal inference is speculative given the non-significant change. While the trend is consistent with prior work (Elkon et al., 2012; Ji and Tian, 2009), the data do not strongly support this mechanism in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C147",
+      "C149"
+    ],
+    "result": "Transcripts with CDS-APA tend to be longer in differentiated granule cells compared to precursors, consistent with data from MCF10A cells where proliferating cells express shorter CDS isoforms. This suggests common regulatory mechanisms affect both 3'UTR and CDS length during neuronal differentiation, fine-tuning both quantity and quality of cell-specific transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 is supported by data and consistency with prior work (Elkon et al., 2012). However, C149's inference about 'common regulatory mechanisms' is speculative. While the parallel trends in 3'UTR and CDS lengthening are suggestive, the data do not identify specific mechanisms or prove they are shared.",
+    "result_type": "MINOR"
+  }
+]

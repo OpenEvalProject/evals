@@ -1,0 +1,2595 @@
+{
+  "submission": {
+    "id": "8e5a22b5-6f4a-4998-a07d-9123b1c3aeef",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:47:45.633611Z",
+    "updated_at": "2025-12-02T00:47:45.633611Z"
+  },
+  "content": [
+    {
+      "id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "submission_id": "8e5a22b5-6f4a-4998-a07d-9123b1c3aeef",
+      "content_type": "manuscript",
+      "content_text": "# Differential temporal dynamics during visual imagery and perception\n\n## Authors\n\n- Nadine Dijkstra<sup>1</sup> ([ORCID: 0000-0003-1423-9277](https://orcid.org/0000-0003-1423-9277)) \u2020\n- Pim Mostert<sup>1</sup>\n- Floris P de Lange<sup>1</sup>\n- Sander Bosch<sup>1</sup>\n- Marcel AJ van Gerven<sup>1</sup>\n\n### Affiliations\n\n1. Donders Institute for Brain, Cognition and Behaviour Radboud University Nijmegen Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nVisual perception and imagery rely on similar representations in the visual cortex. During perception, visual activity is characterized by distinct processing stages, but the temporal dynamics underlying imagery remain unclear. Here, we investigated the dynamics of visual imagery in human participants using magnetoencephalography. Firstly, we show that, compared to perception, imagery decoding becomes significant later and representations at the start of imagery already overlap with later time points. This suggests that during imagery, the entire visual representation is activated at once or that there are large differences in the timing of imagery between trials. Secondly, we found consistent overlap between imagery and perceptual processing around 160 ms and from 300 ms after stimulus onset. This indicates that the N170 gets reactivated during imagery and that imagery does not rely on early perceptual representations. Together, these results provide important insights for our understanding of the neural mechanisms of visual imagery.\n\n## Results\n\n### Behavioral results\n\nTwenty-five participants executed a retro-cue task in which they perceived and imagined faces and houses and rated their experienced imagery vividness on each trial using a sliding bar (see Figure 1). Prior to scanning, participants filled in the Vividness of Visual Imagery Questionnaire, which is a measure of people\u2019s imagery ability (Marks, 1973). There was a significant correlation between VVIQ and averaged vividness ratings (r\u00a0=\u00a0\u22120.45, p=0.02), which indicates that people with a higher imagery vividness as measured by the VVIQ also rated their imagery as more vivid on average during the experiment. Participants reported relatively high vividness on average (49.6\u00a0\u00b1\u00a026.6 on a scale between \u2212150 and\u00a0+150, where 0 is the starting point of the slider and positive numbers indicate high vividness and negative numbers indicate low vividness). There was no significant difference in vividness ratings between faces (54.0\u00a0\u00b1\u00a029.7) and houses (48.7\u00a0\u00b1\u00a026.7; t(24) = 1.46, p=0.16). To ensure that participants were imagining the correct images, on 7% of the trials participants had to indicate which of four exemplars they imagined. The imagined exemplar was correctly identified in 89.8% (\u00b15.4%) of the catch trials, indicating that participants performed the task correctly. There was also no significant difference between the two stimulus categories in the percentage of correct catch trials (faces: 90.9\u00a0\u00b1\u00a06.6, houses: 88.8\u00a0\u00b1\u00a07.1; t(24) = \u22121.25, p=0.22). Furthermore, correctly identified catch trials were experienced as more vivid (52.06\u00a0\u00b1\u00a033.1) than incorrectly identified catch trials (24.31\u00a0\u00b1\u00a033.84; t(23) = 3.11, p=0.0049), giving support to the criterion validity of the identification task. We had to drop one subject for this comparison because this person did not have any incorrect trials.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33904/elife-33904-fig1-v1.jpg)\n\n**Figure 1.:** Two images were presented for 0.8 seconds each, with a random inter-stimulus interval (ISI) between 400 and 600 ms. After the second image, a mask with random noise was on screen for 500 ms. The retro-cue indicating which of the two images the participants had to imagine was shown for 500 ms. Subsequently, a frame was presented for 3.5 s within which the participants imagined the cued stimulus. After this, they rated their experienced vividness on a continuous scale. On a random subset (7%) of trials, the participants indicated which of four exemplars they imagined that trial. The face stimuli were adapted from the multiracial face database (courtesy of Michael J Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University (http://www.tarrlab.org) and available at http://wiki.cnbc.cmu.edu/Face_Place under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License (https://creativecommons.org/licenses/by-nc-sa/3.0/)).\n\n### Representational dynamics during perception and imagery\n\nTo uncover the temporal dynamics of category representations during perception and imagery, we decoded the category from the MEG signal over time. The results are shown in Figure 2. Testing and training on the same time points revealed that during perception, significantly different patterns of activity for faces and houses were present from 73 ms after stimulus onset with the peak accuracy at 153 ms (Figure 2A, left). During imagery, category information could be decoded significantly from 540 ms after retro-cue onset, with the peak at 1073 ms (Figure 2A, right, Figure 2\u2014figure supplement 1B). The generation of a visual representation from a cue thus seems to take longer than the activation via bottom-up sensory input. Furthermore, imagery decoding resulted in a much lower accuracy than perception decoding (peak perception is at\u00a0~90%, peak imagery at\u00a0~60%). This is also observed in fMRI decoding studies (Reddy et al., 2010; Lee et al., 2012) and is probably due to the fact that imagery is a less automatic process than perception, which leads to higher between trial variation in neural activations. Note that, to allow better comparison between perception and imagery, we only showed the first 1000 ms after cue onset during imagery (see Figure 2\u2014figure supplement 1 for the results throughout the entire imagery period).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33904/elife-33904-fig2-v1.jpg)\n\n**Figure 2.:** (A) Decoding accuracy from a classifier that was trained and tested on the same time points. Filled areas and thick lines indicate significant above chance decoding (cluster corrected, p<0.05). The shaded area represents the standard error of the mean. The dotted line indicates chance level. For perception, zero signifies the onset of the stimulus, for imagery, zero signifies the onset of the retro-cue. (B) Temporal generalization matrix with discretized accuracy. Training time is shown on the vertical axis and testing time on the horizontal axis. Significant clusters are indicated by black contours. Numbers indicate time points of interest that are discussed in the text. (C) Proportion of time points of the significant time window that had significantly lower accuracy than the diagonal, that\u00a0is specificity of the neural representation at each time point during above chance diagonal decoding (D) Source level contribution to the classifiers at selected training times. Source data for the analyses reported here are available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33904/elife-33904-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Temporal generalization matrix. Training time is shown on the vertical axis and testing time on the horizontal axis. (B) Decoding accuracy from a classifier that was trained and tested on the same time points during imagery. (C) For each testing point, the proportion of time points that resulted in significantly lower accuracy than the diagonal decoding at that time point, that\u00a0is the temporal specificity of the representations over time. Source data for the analyses reported here are available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33904/elife-33904-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Decoding accuracy over time on eye tracker data during perception. Filled areas and thick lines indicate significant above chance decoding (cluster corrected, p<0.05). The shaded area represents the standard error of the mean. The dotted line indicates chance level. (B) Decoding accuracy over time on eye tracker data during imagery. (C) Correlation over participants between eye tracker decoding accuracy and brain decoding accuracy, averaged over the period during which eye tracker decoding was significant. Source data for the analyses reported here are available in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33904/elife-33904-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** None of the differences were significant after correction for multiple comparisons. (A) Decoding accuracy from a classifier that was trained and tested on the same time points during perception and (C) during imagery. The red line denotes the accuracy for the high vividness group, the blue line the accuracy for the low vividness group. (B) Difference between participants with high and low vividness on temporal generalization accuracy during perception (B), and (D) imagery. Reddish colors indicate higher accuracy for the high vividness group and blueish colors indicate higher accuracy for the low vividness group. Source data for the analyses reported here are available in Figure 2\u2014source data 3.\n\nTo reveal the generalization of representations over time, classifiers were trained on one time point and tested on all other time points (King and Dehaene, 2014) (Figure 2B). Furthermore, to investigate the temporal specificity of the representations at each time point, we calculated the proportion of off-diagonal classifiers that had a significantly lower accuracy than the diagonal classifier of that time point (Astrand et al., 2015) (Figure 2C; see Materials and methods).\n\nDuring perception, distinct processing stages can be distinguished (Figure 2B\u2013C, left). During the first stage, between 70 and 120 ms, diagonal decoding was significant and there was very high temporal specificity. This indicates sequential processing with rapidly changing representations (King and Dehaene, 2014). During this time period, the classifier mostly relied on activity in posterior visual areas (Figure 2D, left). Therefore, these results are consistent with initial feedforward stimulus processing. In the second stage, around 160 ms, the classifier generalized to neighboring points as well as testing points after 250 ms. The associated sources are spread out over the ventral visual stream (Figure 2D, left), indicating that high-level representations are activated at this time. In the third stage, around 210 ms, we again observed high temporal specificity (Figure 2C, left) and a gap in generalization to 160 ms (Figure 2B, left). This pattern could reflect feedback to low-level visual areas. Finally, from 300 ms onwards there is a broad off-diagonal generalization pattern that also generalizes to time points around 160 ms and an associated drop in temporal specificity (Figure 2B\u2013C, left). This broad off-diagonal pattern likely reflects stabilization of the visual representation.\n\nIn contrast, during imagery, we did not observe any clear distinct processing stages. Instead, there was a broad off-diagonal generalization throughout the entire imagery period (Figure 2B, right; Figure 2\u2014figure supplement 1A). Already at the onset of imagery decoding, there was high generalization and low specificity (Figure 2B\u2013C, right). This indicates that the neural representation during imagery remains highly stable (King and Dehaene, 2014). The only change seems to be in decoding strength, which first increases and then decreases over time (Fig. S1B), indicating that either representations at those times are weaker or that they are more variable over trials. The sources that contributed to classification were mostly located in the ventral visual stream and there was also some evidence for frontal and parietal contributions (Figure 2D, right).\n\nEven though we attempted to remove eye movements from our data as well as possible (see Materials and methods), it is theoretically possible that eye movements which systematically differed between the conditions caused part of the neural signal that was picked up by the decoding analyses (Mostert et al., 2017). In order to investigate this possibility, we tried to decode the stimulus category from the X and Y position of the eyes as measured with an eye tracker. The results for this analysis are shown in Figure 2\u2014figure supplement 2. During imagery, eye tracker decoding was at chance level for all time points, indicating that there were no condition-specific eye movements during imagery (Figure 2\u2014figure supplement 2B). However, during perception, eye tracker decoding was significant from 316 ms onwards (Figure 2\u2014figure supplement 2A), indicating that differences in eye movements between the conditions may have driven (part of) the brain decoding. If this were the case, there would be a high, positive correlation between eye tracker decoding and brain decoding. Figure 2\u2014figure supplement 2C however shows that there was no such correlation, suggesting that our perception decoding results for that time window were not driven by eye movements.\n\n### Temporal overlap between perception and imagery\n\nTo investigate when perceptual processing generalizes to imagery, we trained a classifier on one data segment and tested it on the other segment. We first trained a classifier during perception and then used this classifier to decode the neural signal during imagery (Figure 3A\u2013B). Already around 350 ms after imagery cue onset, classifiers trained on perception data from 160, 700 and 960 ms after stimulus onset could significantly decode the imagined stimulus category (Figure 3A). This is earlier than classification within imagery, which started at 540 ms after cue onset (Figure 2A, right). Considering the increased decoding accuracy during perception compared to imagery (Figure 2A, left versus right), this difference might reflect an increase in signal-to-noise ratio (SNR) by training on perception compared to imagery.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33904/elife-33904-fig3-v1.jpg)\n\n**Figure 3.:** (A) Decoding accuracy from classifiers trained on perception and tested during imagery. The training time during perception is shown on the vertical axis and the testing time during imagery is shown on the horizontal axis. (B) Decoding accuracies for classifiers trained on the four stages during perception. (C) Decoding accuracy from classifiers trained on imagery and tested during perception. The training time during imagery is shown on the vertical axis and the testing time during perception is shown on the horizontal axis. (D) Decoding accuracies for different training times during imagery. Source data for the analyses reported here are available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33904/elife-33904-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** None of the differences were significant after correction for multiple comparisons. The difference between the two vividness groups on cross-decoding accuracy for (A) a classifier trained during perception and tested during imagery and (B) a classifier trained during imagery and tested during perception. Source data for the analyses reported here can be available in Figure 3\u2014source data 2.\n\nFurthermore, the distinct processing stages found during perception (Figure 2B, left) were also reflected in the generalization to imagery (Figure 3A\u2013B). Perceptual processes around 160 ms and after 300 ms significantly overlapped with imagery (Figure 3B, right plots). In contrast, processing at 90 ms did not generalize to any time point during imagery (Figure 3B, top left). Perceptual processing at 210 ms showed intermittent generalization to imagery, with generalization at some time points and no generalization at other times (Figure 3B, bottom left). Significant generalization at this time could also reflect the effects of smoothing over neighboring time points which are significant (see Materials and methods). This would mean that there is no real overlap at 210 ms but that this overlap is caused by overlap from earlier or later time points.\n\nTo further pinpoint when perception started to overlap with imagery, we performed an additional analysis in which we reversed the generalization: we trained classifiers on different time points during imagery and used these to classify perception data. This analysis revealed a similar pattern of high overlap with perception around 160 and after 300 ms and low overlap before 100 ms and around 210 ms (Figure 3C\u2013D). Note that this profile is stable throughout imagery and is already present at the start of imagery, albeit with lower accuracies (Figure 3-D, bottom panel). Furthermore, the onset of perceptual overlap is highly consistent over the course of imagery: overlap starts around 130 ms, with the first peak at approximately 160 ms (Figure 3C). In general, cross-classification accuracy was higher when training on imagery than when training on perception (Figure 3C vs. Figure 3A). This is surprising, because training on high SNR data (in our case, perception) is reported to lead to higher classification accuracy than training on low SNR data (King and Dehaene, 2014) (imagery). This difference may reflect the fact that the perceptual representation contained more unique features than the imagery representation, leading to a lower generalization performance when training on perception.\n\nWe also investigated whether the temporal dynamics were influenced by imagery vividness by investigating whether the results of previous analyses were different for participants with high or low vividness (see Figure 2\u2014figure supplement 3 for within perception and imagery decoding and Figure 3\u2014figure supplement 1 for cross-decoding). Decoding accuracy seemed to be higher in the high vividness group, however, none of the differences were significant after correction for multiple comparisons.\n\n## Discussion\n\nWe investigated the temporal dynamics of category representations during perception and imagery, as well as the overlap between the two. We first showed that, compared to perception, imagery decoding became significant later, indicating that it takes longer to generate a visual representation based on purely top-down processes. Furthermore, whereas perception was characterized by high temporal specificity and distinct processing stages, imagery showed wide generalization and low temporal specificity from the onset. Finally, cross-decoding between perception and imagery revealed a very clear temporal overlap profile which was consistent throughout the imagery period. We observed overlap between imagery and perceptual processing starting around 130 ms, decreasing around 210 ms and increasing again from 300 ms after stimulus onset. This pattern was already present at the onset of imagery.\n\nThese findings cannot be explained by a clear cascading of activity up or down the visual hierarchy during imagery. If there was a clear order in activation of different areas, we would not have observed such wide temporal generalization at the start of imagery but instead a more diagonal pattern, as during the start of perception (King and Dehaene, 2014). Furthermore, we found that the complete overlap with perception was already present at the onset of imagery.\n\nOne interpretation of our results is that during imagery the complete stimulus representation, including different levels of the hierarchy, is activated simultaneously. However, there was no overlap between imagery and perceptual processing until 130 ms after stimulus onset, when the feedforward sweep is presumably completed and high-level categorical information is activated for the first time (Isik et al., 2014; Carlson et al., 2011; Thorpe et al., 1996). Overlap between perception and imagery in low-level visual cortex depends on the imagery task and experienced vividness (Lee et al., 2012; Albers et al., 2013; Kosslyn and Thompson, 2003). However, we did not observe a relationship between overlap at this time point and imagery vividness (Figure 3\u2014figure supplement 1). This absence of early overlap seems to imply that, even though early visual cortex has been implicated in visual imagery, there is no consistent overlap between imagery and early perceptual processing. One explanation for this discrepancy is that representations in low-level visual areas first have to be sharpened by feedback connections (Kok et al., 2012) before they have a format that is accessible by top-down imagery. Alternatively, early perceptual activity during imagery may be more brief and variable over time than high-level activation, leading to a cancelling out when averaging over trials.\n\nThe large temporal generalization at the onset of imagery might have been partly due to the nature of the task we used. Here, the start of imagery was based on the association between the cue and the items held in working memory, which could have led to an instantaneous initiation of the visual representation after the cue. It could be the case that visual representations are activated differently if imagery is operationalized as a more constructive process. A previous study has already showed that cueing imagery from long-term memory leads to less neural overlap with perception compared to cueing imagery from working memory (Ishai et al., 2002). Perhaps the temporal dynamics of imagery from long-term memory are also different. It could be that if perceptual details have to be filled in from long-term memory, low-level areas are activated later, resulting in a more diagonal generalization pattern. Future studies comparing temporal generalization during imagery from short- and long-term memory are necessary to investigate this further.\n\nAn alternative explanation for the broad temporal generalization during imagery is that, compared to perception, imagery is less time-locked. If the process during imagery is shifted in time between trials, averaging over trials per time point would obscure the underlying temporal dynamics. This temporal uncertainty will have a different effect on different underlying processes. For example, if the underlying process would be entirely sequential, meaning that independent representations are activated after each other (like at the start of perception), temporal shifting between trials would smear out this sequence over time. This would result in a broader diagonal pattern, where the width of the diagonal is proportional to the temporal shift between trials. This means that the broad temporal generalization that we observed during imagery could represent a sequential process if there were temporal shifts of more than a second on average between trials. Alternatively, the underlying process could be only sequential in the onset, such that different areas become active after each other, but remain active throughout time (or get reactivated later in time). In this case, temporal shifts between trials that are proportional to the difference in onset between the two processes would entirely obscure this dynamic. Note that this would mean that the start of significant imagery classification did not reflect the actual imagery onset, but the first point in time that the representations were consistent enough over trials to lead to above chance classification. Stimulus representations could actually be initiated before 350 ms after cue onset, but we would be unable to classify them at these early time points due to jitter in the onset. We cannot confidently rule out temporal uncertainty as an explanation for the broad temporal generalization at the onset of imagery. To fully resolve this issue, future research should systematically explore the effect of temporal uncertainty on different underlying processes and analysis tools need to be developed that can account for variation in temporal dynamics between trials.\n\nWe observed clear overlap between imagery and perceptual processing around 160 ms after stimulus onset. The perceptual representation at this time likely reflects the face-specific N170. This component has been shown to be involved in face processing and appears between 130 to 170 ms after stimulus onset (Bentin et al., 1996; Halgren et al., 2000), which corresponds well with the timing of overlap with imagery reported here. The sources of the N170 are thought to be face selective areas in the ventral stream (Deffke et al., 2007; Henson et al., 2009), which also corresponds to the location of our source reconstruction at this time point. A previous study showed an increase of the N170 after imagery of a face, indicating that imagery activates similar representations as the N170 (Ganis and Schendan, 2008). Here we confirm that idea and show that N170 representations are active during imagery throughout time. Furthermore, this time also showed long temporal generalization within perception, indicating that the N170 representations also remain active over time during perception.\n\nThe lack of generalization between imagery and perceptual processing around 210 ms after stimulus onset was unexpected. This time window also showed an increase in temporal specificity during perception, indicating rapidly changing representations. One possible interpretation is that around this time feedback from higher areas arrives in low-level visual cortex (Koivisto et al., 2011; Roelfsema et al., 1998). If low-level representations are indeed more transient, this would explain the decrease in consistent generalization. Another possibility is that processing at this time reflects an unstable combination of feedback and feedforward processes, which is resolved around 300 ms when representations become more generalized and again start to generalize to imagery. In line with this idea, processing from 300 ms after stimulus onset has been associated with percept stabilization (Bachmann, 2006; Carlson et al., 2013; Kaiser et al., 2016). Future studies looking at changes in effective connectivity over time are needed to dissociate these interpretations.\n\nSurprisingly, we did not observe any influences of experienced imagery vividness on the overlap between perception and imagery over time (Fig. S2). One explanation for this is that we used whole-brain signals for decoding whereas the relationship between overlap and vividness has only been found for a specific set of brain regions (Lee et al., 2012; Dijkstra et al., 2017a). Furthermore, if there is indeed strong temporal variability during imagery this would make it difficult to find any effect of vividness on specific time points. More studies on imagery vividness using MEG are necessary to explore this matter further.\n\nIn conclusion, our findings suggest that, in contrast to perception, at the onset of imagery the entire visual representation is activated at once. This might partly be caused by the nature of our task, since visual representations were already present in working memory at the onset of imagery. However, more research is needed to fully explore the contribution of temporal uncertainty between trials to this broad temporal generalization. Furthermore, imagery consistently overlapped with perceptual processing around 160 ms and from 300 ms onwards. This reveals the temporal counterpart of the neural overlap between imagery and perception. The overlap around 160 ms points towards a re-activation of the N170 during imagery, whereas the lack of overlap with perceptual processes before 130 ms indicates that either imagery does not rely on early perceptual representations, or that these representations are more transient and variable over time. Together, these findings reveal important new insights into the neural mechanisms of visual imagery and its relation to perception.\n\n## Materials and methods\n\n### Participants\n\nWe assumed a medium effect size (d\u00a0=\u00a00.6) which, to reach a power of 0.8, required twenty four participants. To take into account drop-out, thirty human volunteers with normal or corrected-to-normal vision gave written informed consent and participated in the study. Five participants were excluded: two because of movement in the scanner (movement exceeded 15 mm), two due to incorrect execution of the task (less than 50% correct on the catch trials, as described below) and one due to technical problems. 25 participants (mean age 28.6, SD\u00a0=\u00a07.62) remained for the final analysis. The study was approved by the local ethics committee and conducted according to the corresponding ethical guidelines (CMO Arnhem-Nijmegen).\n\n### Procedure and experimental design\n\nPrior to scanning, participants were asked to fill in the Vividness of Visual Imagery Questionnaire (VVIQ): a 16-item questionnaire in which participants indicate their imagery vividness for a number of scenarios on a 5-point scale (Marks, 1973). The VVIQ has been used in many imagery studies and is a well-validated measure of general imagery ability (Lee et al., 2012; Albers et al., 2013; Dijkstra et al., 2017a; Cui et al., 2007). The score was summarized in a total between 16 and 80 (low score indicates high vividness). Subsequently, the participants practiced the experimental task for ten trials outside the scanner, after which they were given the opportunity to ask clarification questions about the task paradigm. If they had difficulty with the task, they could practice a second time with ten different trials.\n\nThe experimental task is depicted in Figure 1. We adapted a retro-cue paradigm in which the cue was orthogonalized with respect to the stimulus identity (Harrison and Tong, 2009). Participants were shown two images after each other, a face and a house, or a house and a face, followed by a retro-cue indicating which of the images had to be imagined. After the cue, a frame was shown in which the participants had to imagine the cued stimulus as vividly as possible. After this, they had to indicate their experienced imagery vividness by moving a bar on a continuous scale. The size of the scale together with the screen resolution led to discretized vividness values between \u2212150 and\u00a0+150. To prevent preparation of a motor response during imagery, which side (left or right) indicated high vividness, was pseudo-randomized over trials.\n\nThe face stimuli were adapted from the multiracial face database (courtesy of Michael J Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University\u00a0(Pittsburgh,\u00a0Pennsylvania), http://www.tarrlab.org. Funding provided by NSF award 0339122). The house stimuli were adapted from the Pasedena houses database collected by Helle and Perona (California Institute of Technology,\u00a0Pasadena,\u00a0California). We chose faces and houses because these two categories elicit very different neural responses throughout the visual hierarchy, during both perception and imagery (Ishai et al., 2000; Epstein et al., 2003; Kanwisher et al., 1997), and are therefore expected to allow for high-fidelity tracking of their corresponding neural representations.\n\nTo ensure that participants were imagining the stimuli with great visual detail, both categories contained eight exemplars, and on 7% of the trials the participants had to indicate which of four exemplars they imagined (Figure 1, Catch trial). The exemplars were chosen to be highly similar in terms of low-level features to minimize within-class variability and increase between-class classification performance. We instructed participants to focus on vividness and not on correctness of the stimulus, to motivate them to generate a mental image including all visual features of the stimulus. The stimuli encompassed 2.7 \u00d7 2.7 visual degrees. A fixation bull\u2019s-eye with a diameter of 0.1 visual degree was on screen throughout the trial, except during the vividness rating. In total, there were 240 trials, 120 per category, divided in ten blocks of 24 trials, lasting about 5 min each. After every block, the participant had the possibility to take a break.\n\n### MEG recording and preprocessing\n\nData were recorded at 1200 Hz using a 275-channel MEG system with axial gradiometers (VSM/CTF Systems, Coquitlam, BC, Canada). For technical reasons, data from five sensors (MRF66, MLC11, MLC32, MLF62, MLO33) were not recorded. Subjects were seated upright in a magnetically shielded room. Head position was measured using three coils: one in each ear and one on the nasion. Throughout the experiment head motion was monitored using a real-time head localizer (Stolk et al., 2013). If necessary, the experimenter instructed the participant back to the initial head position during the breaks. This way, head movement was kept below 8 mm in most participants. Furthermore, both horizontal and vertical electro-oculograms (EOGs), as well as an electrocardiogram (ECG) were recorded for subsequent offline removal of eye- and heart-related artifacts. Eye position and pupil size were also measured for control analyses using an Eye Link 1000 Eye tracker (SR Research).\n\nData were analyzed with MATLAB version R2017a and FieldTrip (Oostenveld et al., 2011) (RRID: SCR_004849). Per trial, three events were defined. The first event was defined as 200 ms prior to onset of the first image until 200 ms after the offset of the first image. The second event was defined similarly for the second image. Further analyses focused only on the first event, because the neural response to the second image is contaminated by the neural response to the first image. Finally, the third event was defined as 200 ms prior to the onset of the retro-cue until 500 ms after the offset of the imagery frame. As a baseline correction, for each event, the activity during 300 ms from the onset of the initial fixation of that trial was averaged per channel and subtracted from the corresponding signals.\n\nThe data were down-sampled to 300 Hz to reduce memory and CPU load. Line noise at 50 Hz was removed from the data using a DFT notch filter. To identify artifacts, the variance of each trial was calculated. Trials with high variance were visually inspected and removed if they contained excessive artifacts. After artifact rejection, on average 108 perception face trials (\u00b111), 107 perception house trials (\u00b112) and 105 imagery face trials (\u00b116) and 106 imagery house trials (\u00b113) remained for analysis. To remove eye movement and heart rate artifacts, independent components of the MEG data were calculated and correlated with the EOG and ECG signals. Components with high correlations were manually inspected before removal. The eye tracker data was cleaned separately by inspecting trials with high variance and removing them if they contained blinks or other excessive artifacts.\n\n### Decoding analyses\n\nTo track the neural representations within perception and imagery, we decoded the stimulus category from the preprocessed MEG signals during the first stimulus and after the retro-cue for every time point. To improve the signal-to-noise ratio, prior to classification, the data were averaged over a window of 30 ms centered on the time point of interest. We used a linear discriminant analysis (LDA) classifier with the activity from the 270 MEG sensors as features (see Mostert et al., 2015 for more details). A 5-fold cross-validation procedure was implemented where for each fold the classifier was trained on 80% of the trials and tested on the other 20%. To prevent a potential bias in the classifier, the number of trials per class was balanced per fold by randomly removing trials from the class with the most trials until the trial numbers were equal between the classes.\n\n### Generalization across time and conditions\n\nBy training a classifier on one time point and then testing it on other time points, we were able to investigate the stability of neural representations over time. The resulting temporal generalization pattern gives information about the underlying processing dynamics. For instance, a mostly diagonal pattern reflects sequential processing of specific representations, whereas generalization from one time point towards another reflects recurrent or sustained activity of a particular process (King and Dehaene, 2014). Here, we performed temporal generalization analyses during perception and during imagery to investigate the dynamics of the neural representations. Furthermore, to quantify the extent to which the representation at a given time point t was specific to that time point, we tested whether a classifier trained at time t and tested at time t (i.e. diagonal decoding) had a higher accuracy than a classifier trained at time t\u2019 and tested at time t (i.e. generalization). This shows whether there is more information at time t than can be extracted by the decoder t\u2019 (Astrand et al., 2015; King et al., 2014). We subsequently calculated, for each training time point, the proportion of testing time points that were significantly lower than the diagonal decoding, giving a measure of specificity for each time point. To avoid overestimating the specificity, we only considered the time window during which the diagonal classifiers were significantly above chance.\n\nTo investigate the overlap in neural representations between perception and imagery, a similar approach can be used. Here, we trained a classifier on different time points during perception and tested it on different time points during imagery and vice versa. This analysis shows when neural activity during perception contains information that can be used to dissociate mental representations during imagery and vice versa - that\u00a0is which time points show representational overlap. For both the temporal generalization as well as the across condition generalization analysis, we also applied cross-validation to avoid overestimating generalization due to autocorrelation in the signals.\n\nIt has been shown that representational overlap between imagery and perception, as measured by fMRI, is related to experienced imagery vividness (Lee et al., 2012; Albers et al., 2013; Dijkstra et al., 2017a). To investigate this in the current study, we performed a median split on the averaged vividness across trials on the group level, which yielded a high vividness (N\u00a0=\u00a012, vividness: 71.64\u00a0\u00b1\u00a012.44) and a low vividness (N\u00a0=\u00a012, vividness: 27.25\u00a0\u00b1\u00a017.69) group. We produced the accuracy maps for all previous analyses separately for the two groups and compared the decoding accuracies of the two groups using cluster based permutation testing (see Statistical testing).\n\n### Statistical testing\n\nDecoding accuracy was tested against chance using two-tailed cluster-based permutation testing with 1000 permutations (Maris and Oostenveld, 2007). In the first step of each permutation, clusters were defined by adjacent points that crossed a threshold of p<0.05. The t-values were summed within each cluster, but separately for positive and negative clusters, and the largest of these were included in the permutation distributions. A cluster in the true data was considered significant if its p-value was less than 0.05 based on the permutations. Correlations with vividness were tested against zero on the group level using the same procedure.\n\n### Source localization\n\nIn order to identify the brain areas that were involved in making the dissociation between faces and houses during perception and imagery, we performed source reconstruction. In the case of LDA classifiers, the spatial pattern that underlies the classification reduces to the difference in magnetic fields between the two conditions (see Haufe et al., 2014). Therefore, to infer the contributing brain areas, we performed source analysis on the difference ERF between the two conditions.\n\nFor this purpose, T1-weighted structural MRI images were acquired using a Siemens 3T whole body scanner. Vitamin E markers in both ears indicated the locations of the head coils during the MEG measurements. The location of the fiducial at the nasion was estimated based on the anatomy of the ridge of the nose. The volume conduction model was created based on a single shell model of the inner surface of the skull. The source model was based on a reconstruction of the cortical surface created for each participant using FreeSurfer\u2019s anatomical volumetric processing pipeline (RRID: SCR_001847). MNE-suite (Version 2.7.0; RRID: SCR_005972) was subsequently used to infer the subject-specific source locations from the surface reconstruction. The resulting head model and source locations were co-registered to the MEG sensors.\n\nThe lead fields were rank reduced for each grid point by removing the sensitivity to the direction perpendicular to the surface of the volume conduction model. Source activity was obtained by estimating linearly constrained minimum variance (LCMV) spatial filters (Van Veen et al., 1997). The data covariance was calculated over the interval of 50 ms to 1 s after stimulus onset for perception and over the entire segment for imagery. The data covariance was subsequently regularized using shrinkage with a regularization parameter of 0.01 (as described in Manahova et al., 2017). These filters were then applied to the axial gradiometer data, resulting in an estimated two-dimensional dipole moment for each grid point over time. For imagery, the data were low-pass filtered at 30 Hz prior to source analysis to increase signal to noise ratio.\n\nTo facilitate interpretation and visualization, we reduced the two-dimensional dipole moments to a scalar value by taking the norm of the vector. This value reflects the degree to which a given source location contributes to activity measured at the sensor level. However, the norm is always a positive value and will therefore, due to noise, suffer from a positivity bias. To counter this bias, we employed a permutation procedure in order to estimate this bias. Specifically, in each permutation, the sign of half of the trials were flipped before averaging and projecting to source space. This way, we cancelled out the systematic stimulus-related part of the signal, leaving only the noise. Reducing this value by taking the norm thus provides an estimate of the positivity bias. This procedure was repeated 1000 times, resulting in a distribution of the noise. We took the mean of this distribution as providing the most likely estimate of the noise and subtracted this from the true, squared source signal. Furthermore, this estimate provides a direct estimate of the artificial amplification factor due to the depth bias. Hence, we also divided the data by the noise estimate to obtain a quantity that allowed visualization across cortical topography. For full details, see Manahova et al. (2017).\n\nFor each subject, the surface-based source points were divided into 74 atlas regions as extracted by FreeSurfer on the basis of the subject-specific anatomy (Destrieux et al., 2010). To enable group-level estimates, the activation per atlas region was averaged over grid points for each participant. Group-level activations were then calculated by averaging the activity over participants per atlas region (van de Nieuwenhuijzen et al., 2016).\n",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "74f89965-b79c-4e0e-b759-62ddc46c815c",
+      "submission_id": "8e5a22b5-6f4a-4998-a07d-9123b1c3aeef",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sabine Kastner, Princeton University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33904.020](https://doi.org/10.7554/eLife.33904.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Differential temporal dynamics during visual imagery and perception\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Sabine Kastner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Nicholas Edward Myers (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper by Dijkstra et al., entitled \"Differential temporal dynamics during visual imagery and perception\", the authors use machine learning methods (decoding) to compare the temporal dynamics of whole brain MEG signals during the perception of faces vs. houses on the one hand and the visual imagery of these same visual categories (faces vs. houses). Previous studies have described how much of the visual perception network is also recruited during visual imagery and how this recruitment depends on the specifics of the task design. The major novelty of this study is to address the temporal aspect of information flow in the relevant cortical networks. The methods are state of the art methods and the reported observations are straightforward.\n\nThe reviewers and editors thought that greater attempts need to be made to make a point with respect to our understanding of imagery. At the moment, this paper is methodologically sound, carefully done, and well written. However, we think it has a very descriptive character, presenting a result that is not entirely surprising (imagery decoding is later, weaker, and more all over the place) and offering two different interpretations. That's a bit unsatisfying. To also make a stronger theoretical contribution, we think the authors should make a greater effort to disentangle these hypotheses (and in addition, a third interpretation that came up during the review process).\n\nEssential revisions:\n\n1) How does the cross-temporal decoding of faces vs. houses compare to the cross-temporal decoding of faces (resp. houses) in each task. In other words, for each task, how does the cross-category signal variability compare to the within category signal variability in each condition. The reviewers and editors acknowledge that the authors go through a random permutation procedure to identify data-based chance level. Our question pertains to a better understanding of the neural bases of imagery: could it be that overall lower accuracies during imagery is due to a higher variability in within category information? This is a way to address whether the decay in decoding accuracy during imagery is due to weaker representations or increased representational variability.\n\n2) When presenting the temporal overlap between perception and imagery analysis, and Figure 3, the authors mention that the reported results describing that a classifier trained on perception can extract information from imagery data much earlier than a classifier trained on imagery data, might be due to the fact that more trials are available to the trained. This is a crucial point. We strongly recommend that the authors down sample their perception data to make this analysis (both that of Figure 3A and 3C) more comparable to the data presented in Figure 2. In this absence of this control, it is difficult to interpret the presented result.\n\n3) An important additional analysis that needs to be added is the analysis presented in Figure 2C on the high vividness and low vividness trials separately (on matched samples sizes). One expects there to have an overall lower decoding accuracy on low vividness trials. This analysis we expected to directly relate imagery decoding accuracy with the subjective report of imagery vividness. This would a be prior analysis to the one presented in Figure S2, addressing whether more overlap of imagery representation with perceptual representations correlated with higher vividness in imagery subjective experience (further discussed in the next point).\n\n4) The analysis presented in Figure S2, correlating perception/imagery representational overlap with imagery vividness is a crucial analysis to strengthen the scope of the present paper. It is based onto a LDA, thus assuming a linear relationship between imagery vividness and similarity between perceptual and imagery representations. One can expect other possible relationships between the two: e.g. a one or nothing mapping or a sigmoid type of mapping. We recommend to the authors to explore this differently. One way of doing it would be to perform to separate analysis as in figure 3 for high vividness imagery trials and low vividness imagery trials. One expects a difference to support the subject experience of imagery, though this difference might be localized to some cortical sources (here, the authors will have to make sure to use the same number of trials from training and testing and for the high and low vividness comparison).\n\n5) The conclusion states that the 'findings show that imagery is characterized by a different temporal profile than perception.' This conclusion doesn't sound entirely surprising, and makes us think that the authors may be selling themselves short. We think it would be important to highlight what the results actually say about the neural basis of imagery.\n\n6) Furthermore, it might help the Discussion if the authors speculated how specific their results are to the task they chose, rather than imagery per se. In their task, imagery is always preceded by presentation of the exact stimulus to be imagined (along with a not-to-be imagined control stimulus), which means that participants will still have a lot of information about the imagined stimulus in visual working memory. This would not be the case if, for example, participants were suddenly prompted to imagine a novel object. Could this partially account for the good cross-generalization between perception and imagery? What if there had been a control condition requiring memory but no imagery? Without such a control, how much of their findings may be attributed to visual working memory, rather than imagery?\n\n7) The clear decoding peak around 160 ms seems like it could be related to the N170 or M170 component. Since this component is so well-studied in terms of its role in face processing and its cortical sources in the ventral stream, it seems warranted to discuss this a bit more. Does the fact that the 160 ms peak cross-generalizes well across time and from perception to imagery indicate that face- or house-selective areas in the ventral stream are active at this time and then maintain activation later on, especially during imagery?\n\n8) The authors raise two different explanations for their results, e.g., in the Abstract: \"These results indicate that during imagery either the complete representation is activated at once and does not include low-level visual areas, or the order in which visual features are activated is less fixed and more flexible than during perception.\" However, it is possible that there is a probably less exciting, yet more parsimonious explanation for the pattern of results.\n\nPerception and imagery could just evoke the same processing cascade (which the authors just dismiss us \"unlikely\"; main text, third paragraph), with two restrictions: (a) Imagery might not \"start\" as early as perception, thus not involving the earliest stages of perceptual processing. Thus, the onset of imagery decoding is expected to be later than the onset of perception decoding. (b) Visual imagery is initiated in a top-down way; in contrast to the clear onset of a perceptual event, this initiation of imagery may vary substantially between trials (e.g., by an accumulation of temporal noise). Thus, the onset of imagery decoding is expected to have a smoother rise (obscuring the initial dynamics of the signal), and \"temporal generalization\" would increase a lot (as the evoked responses for single trials are relatively shifted across time).\n\nImportantly, this explanation would neither suggest that in imagery complete representations are activated at once, nor that the order of processing steps is somehow altered as compared to perception. Note how also the \"dip\" in cross decoding at 210 ms is explained by this account, without evoking a more complicated explanation: If the neural representation at 210 ms after onset of the event is just very distinct (for whatever reason), the same signal scattered in time from trial to trial would impair cross-decoding specifically for this very time point (where temporal uncertainty hurts a lot). Do the authors think that their data are consistent with this alternative explanation, or are their data points that refute this account?\n\n9) To dissociate the temporal uncertainty explanation and the explanations given by the authors, I would strongly suggest additional analyses that try to estimate \u2013 and potentially correct for \u2013 the temporal uncertainty in imagery-related activation. One such analysis could try to align the imagery trials based on the within-imagery decoding. For example, the authors could perform a leave-one-trial-out analysis where they train a classifier on all trials, and test the classifier on the remaining trial, while shifting the left-out trial in time until the maximum decoding accuracy can be reached (this analysis should probably be done by randomly subsampling a smaller amount of trials as the testing set to reach more reliable estimates). Then for each trial's imagery period, this optimal temporal shift can be used to re-epoch the signal. If the processing sequence is similar and just suffers from temporal scattering, this procedure should significantly improve the cross-decoding accuracy while decreasing temporal generalization.\n",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "09c972ec-b3ae-4c9e-9c1c-2d8cef1966f0",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C1",
+      "claim": "Visual perception and imagery rely on similar representations in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual perception and imagery rely on similar representations in the visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that draws from established scientific consensus about perception and imagery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "90cc003d-cc71-4fe8-8a39-f1e63ce49fc7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C2",
+      "claim": "During perception, visual activity is characterized by distinct processing stages.",
+      "claim_type": "EXPLICIT",
+      "source": "During perception, visual activity is characterized by distinct processing stages, but the temporal dynamics underlying imagery remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the temporal generalization analysis showing distinct stages during perception (Figure 2B-C, left).",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "a3645556-1160-42f1-831c-2970a98a02d2",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C3",
+      "claim": "The temporal dynamics underlying imagery remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "During perception, visual activity is characterized by distinct processing stages, but the temporal dynamics underlying imagery remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "df664eb2-0ece-47db-bcad-9dd838cb04ff",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C4",
+      "claim": "Compared to perception, imagery decoding becomes significant later.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we show that, compared to perception, imagery decoding becomes significant later and representations at the start of imagery already overlap with later time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the decoding analysis showing perception decoding significant from 73 ms and imagery from 540 ms (Figure 2A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "1c85cac0-13c6-43f4-9309-e5242c5db560",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C5",
+      "claim": "Representations at the start of imagery already overlap with later time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we show that, compared to perception, imagery decoding becomes significant later and representations at the start of imagery already overlap with later time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the broad temporal generalization pattern observed during imagery (Figure 2B, right).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b2b6e06f-dad4-4a37-8b01-4e75203a28f9",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C6",
+      "claim": "During imagery, the entire visual representation is activated at once or there are large differences in the timing of imagery between trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that during imagery, the entire visual representation is activated at once or that there are large differences in the timing of imagery between trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the broad temporal generalization pattern observed during imagery.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "5c5d598b-6619-4cd5-bab1-24d12f610623",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C7",
+      "claim": "There is consistent overlap between imagery and perceptual processing around 160 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we found consistent overlap between imagery and perceptual processing around 160 ms and from 300 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cross-decoding analyses showing overlap at these time points (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7089068a-89eb-440a-a5b0-352ecc4740b9",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C8",
+      "claim": "There is consistent overlap between imagery and perceptual processing from 300 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we found consistent overlap between imagery and perceptual processing around 160 ms and from 300 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cross-decoding analyses showing overlap at these time points (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "2eee2d29-ecf2-4de2-95f3-6eb3ff5aa0bd",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C9",
+      "claim": "The N170 gets reactivated during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the N170 gets reactivated during imagery and that imagery does not rely on early perceptual representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the overlap between imagery and perceptual processing around 160 ms, which corresponds to the N170 component.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7aecc9c0-ba27-4356-a003-3be955bdd753",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C10",
+      "claim": "Imagery does not rely on early perceptual representations.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the N170 gets reactivated during imagery and that imagery does not rely on early perceptual representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of overlap between imagery and early perceptual processing (before 130 ms).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "67e08010-a566-41bb-8881-fa28c618c6c6",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C11",
+      "claim": "Twenty-five participants executed a retro-cue task in which they perceived and imagined faces and houses.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-five participants executed a retro-cue task in which they perceived and imagined faces and houses and rated their experienced imagery vividness on each trial using a sliding bar (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "925554e7-ed90-4186-a5a5-a529ac8f00dc",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C12",
+      "claim": "Participants rated their experienced imagery vividness on each trial using a sliding bar.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-five participants executed a retro-cue task in which they perceived and imagined faces and houses and rated their experienced imagery vividness on each trial using a sliding bar (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7c2fabde-931e-4d47-b4d0-9d048d0d483d",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C13",
+      "claim": "Prior to scanning, participants filled in the Vividness of Visual Imagery Questionnaire.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to scanning, participants filled in the Vividness of Visual Imagery Questionnaire, which is a measure of people's imagery ability (Marks, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure and cites the source of the questionnaire.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7c34f126-3181-40d9-8792-8d0d2cae66e5",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C14",
+      "claim": "The Vividness of Visual Imagery Questionnaire is a measure of people's imagery ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to scanning, participants filled in the Vividness of Visual Imagery Questionnaire, which is a measure of people's imagery ability (Marks, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Marks, 1973.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "67c0a8c3-91a0-41d3-aa8a-05890097dae4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C15",
+      "claim": "There was a significant correlation between VVIQ and averaged vividness ratings (r = \u22120.45, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant correlation between VVIQ and averaged vividness ratings (r = \u22120.45, p=0.02), which indicates that people with a higher imagery vividness as measured by the VVIQ also rated their imagery as more vivid on average during the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "a44986b6-3676-433f-ad7b-eb11167b3936",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C16",
+      "claim": "People with a higher imagery vividness as measured by the VVIQ also rated their imagery as more vivid on average during the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant correlation between VVIQ and averaged vividness ratings (r = \u22120.45, p=0.02), which indicates that people with a higher imagery vividness as measured by the VVIQ also rated their imagery as more vivid on average during the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation result.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "5f79cc90-4270-46a8-9714-61773bdf9d41",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C17",
+      "claim": "Participants reported relatively high vividness on average (49.6 \u00b1 26.6 on a scale between \u2212150 and +150).",
+      "claim_type": "EXPLICIT",
+      "source": "Participants reported relatively high vividness on average (49.6 \u00b1 26.6 on a scale between \u2212150 and +150, where 0 is the starting point of the slider and positive numbers indicate high vividness and negative numbers indicate low vividness).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "e6d15264-6eb8-4ee1-a2b9-dd44a2e81f87",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C18",
+      "claim": "There was no significant difference in vividness ratings between faces (54.0 \u00b1 29.7) and houses (48.7 \u00b1 26.7; t(24) = 1.46, p=0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in vividness ratings between faces (54.0 \u00b1 29.7) and houses (48.7 \u00b1 26.7; t(24) = 1.46, p=0.16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "6d697011-c4c4-4b3b-a047-a6fc6d31557a",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C19",
+      "claim": "The imagined exemplar was correctly identified in 89.8% (\u00b15.4%) of the catch trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The imagined exemplar was correctly identified in 89.8% (\u00b15.4%) of the catch trials, indicating that participants performed the task correctly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b9fe2d37-0b1e-4edc-be76-4fb7914d6f4b",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C20",
+      "claim": "Participants performed the task correctly.",
+      "claim_type": "EXPLICIT",
+      "source": "The imagined exemplar was correctly identified in 89.8% (\u00b15.4%) of the catch trials, indicating that participants performed the task correctly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high accuracy on catch trials.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "f6d1c79f-c54b-4f38-8ee3-eb1029a10d21",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C21",
+      "claim": "There was no significant difference between the two stimulus categories in the percentage of correct catch trials (faces: 90.9 \u00b1 6.6, houses: 88.8 \u00b1 7.1; t(24) = \u22121.25, p=0.22).",
+      "claim_type": "EXPLICIT",
+      "source": "There was also no significant difference between the two stimulus categories in the percentage of correct catch trials (faces: 90.9 \u00b1 6.6, houses: 88.8 \u00b1 7.1; t(24) = \u22121.25, p=0.22).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "28f310c7-9564-4482-9338-cabc933431ca",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C22",
+      "claim": "Correctly identified catch trials were experienced as more vivid (52.06 \u00b1 33.1) than incorrectly identified catch trials (24.31 \u00b1 33.84; t(23) = 3.11, p=0.0049).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, correctly identified catch trials were experienced as more vivid (52.06 \u00b1 33.1) than incorrectly identified catch trials (24.31 \u00b1 33.84; t(23) = 3.11, p=0.0049), giving support to the criterion validity of the identification task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "4b3b9020-819b-4359-9a97-52c23f239f5f",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C23",
+      "claim": "The difference in vividness between correctly and incorrectly identified catch trials gives support to the criterion validity of the identification task.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, correctly identified catch trials were experienced as more vivid (52.06 \u00b1 33.1) than incorrectly identified catch trials (24.31 \u00b1 33.84; t(23) = 3.11, p=0.0049), giving support to the criterion validity of the identification task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical result.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "9d1ad7b6-c862-420e-a738-7cd67e0d15ac",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C24",
+      "claim": "During perception, significantly different patterns of activity for faces and houses were present from 73 ms after stimulus onset with the peak accuracy at 153 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing and training on the same time points revealed that during perception, significantly different patterns of activity for faces and houses were present from 73 ms after stimulus onset with the peak accuracy at 153 ms (Figure 2A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the decoding analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "278590f8-86a4-4af6-9049-ef01ddafaac3",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C25",
+      "claim": "During imagery, category information could be decoded significantly from 540 ms after retro-cue onset, with the peak at 1073 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "During imagery, category information could be decoded significantly from 540 ms after retro-cue onset, with the peak at 1073 ms (Figure 2A, right, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the decoding analysis shown in Figure 2A and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "76f9f5fb-5958-49a7-a2e2-817cdc460c4b",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C26",
+      "claim": "The generation of a visual representation from a cue takes longer than the activation via bottom-up sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of a visual representation from a cue thus seems to take longer than the activation via bottom-up sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the later onset of significant decoding during imagery compared to perception.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "59bdb99c-95c5-4d6b-8680-4dad3413c88f",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C27",
+      "claim": "Imagery decoding resulted in a much lower accuracy than perception decoding (peak perception is at ~90%, peak imagery at ~60%).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, imagery decoding resulted in a much lower accuracy than perception decoding (peak perception is at ~90%, peak imagery at ~60%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the decoding results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "63c6e050-299d-43cc-80c9-94c5aee08dc9",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C28",
+      "claim": "Lower imagery decoding accuracy is also observed in fMRI decoding studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also observed in fMRI decoding studies (Reddy et al., 2010; Lee et al., 2012) and is probably due to the fact that imagery is a less automatic process than perception, which leads to higher between trial variation in neural activations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous fMRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b1fc8217-7a73-441c-a49c-d2e36ef92b67",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C29",
+      "claim": "Lower imagery decoding accuracy is probably due to the fact that imagery is a less automatic process than perception, which leads to higher between trial variation in neural activations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also observed in fMRI decoding studies (Reddy et al., 2010; Lee et al., 2012) and is probably due to the fact that imagery is a less automatic process than perception, which leads to higher between trial variation in neural activations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference in decoding accuracy.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b6fa2647-df6c-455e-87be-b82609314cf7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C30",
+      "claim": "During the first stage of perception (between 70 and 120 ms), diagonal decoding was significant and there was very high temporal specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first stage, between 70 and 120 ms, diagonal decoding was significant and there was very high temporal specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the temporal generalization analysis shown in Figure 2B-C, left.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "271129e7-3af5-4c58-bd42-427c2ee2a1e3",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C31",
+      "claim": "High temporal specificity during the first stage of perception indicates sequential processing with rapidly changing representations.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates sequential processing with rapidly changing representations (King and Dehaene, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citation to King and Dehaene, 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "32dfc38f-9f13-4af3-a752-6829c5277d92",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C32",
+      "claim": "During the first stage of perception, the classifier mostly relied on activity in posterior visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "During this time period, the classifier mostly relied on activity in posterior visual areas (Figure 2D, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the source localization analysis in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "38673a28-b960-42d8-9e4a-9ca69721da81",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C33",
+      "claim": "The results from the first stage of perception are consistent with initial feedforward stimulus processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results are consistent with initial feedforward stimulus processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal specificity and source localization results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "609a5d3b-d2ff-4cbc-95b9-d52ec327ac1a",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C34",
+      "claim": "In the second stage of perception (around 160 ms), the classifier generalized to neighboring points as well as testing points after 250 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second stage, around 160 ms, the classifier generalized to neighboring points as well as testing points after 250 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the temporal generalization analysis shown in Figure 2B, left.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "032beb65-f8ff-4753-8920-7f0472691526",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C35",
+      "claim": "The sources associated with the second stage of perception are spread out over the ventral visual stream.",
+      "claim_type": "EXPLICIT",
+      "source": "The associated sources are spread out over the ventral visual stream (Figure 2D, left), indicating that high-level representations are activated at this time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the source localization analysis in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "51b6cc5e-739f-4bb7-ad7f-51b3ac7c3f1a",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C36",
+      "claim": "High-level representations are activated around 160 ms during perception.",
+      "claim_type": "EXPLICIT",
+      "source": "The associated sources are spread out over the ventral visual stream (Figure 2D, left), indicating that high-level representations are activated at this time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the source localization results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "47e19a1c-7dd6-422d-95f0-7be5195191ce",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C37",
+      "claim": "In the third stage of perception (around 210 ms), there was high temporal specificity and a gap in generalization to 160 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the third stage, around 210 ms, we again observed high temporal specificity (Figure 2C, left) and a gap in generalization to 160 ms (Figure 2B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the temporal generalization analysis shown in Figure 2B-C, left.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "760c74aa-9d7a-4b08-91bb-13d93d7b5acf",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C38",
+      "claim": "The pattern around 210 ms during perception could reflect feedback to low-level visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern could reflect feedback to low-level visual areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed pattern.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "99d289a0-d95e-4e9e-88a3-f6cef268d4d3",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C39",
+      "claim": "From 300 ms onwards during perception there is a broad off-diagonal generalization pattern that also generalizes to time points around 160 ms and an associated drop in temporal specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, from 300 ms onwards there is a broad off-diagonal generalization pattern that also generalizes to time points around 160 ms and an associated drop in temporal specificity (Figure 2B\u2013C, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the temporal generalization analysis shown in Figure 2B-C, left.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "2b6e6be6-0cd3-41f8-bd3b-10ba7b6655b5",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C40",
+      "claim": "The broad off-diagonal pattern from 300 ms onwards during perception likely reflects stabilization of the visual representation.",
+      "claim_type": "EXPLICIT",
+      "source": "This broad off-diagonal pattern likely reflects stabilization of the visual representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed generalization pattern.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "dbb838d8-5665-4b8a-8e19-c6d5d1b24997",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C41",
+      "claim": "During imagery, there were no clear distinct processing stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during imagery, we did not observe any clear distinct processing stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the temporal generalization analysis shown in Figure 2B, right.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "177a56ea-14e5-4bc5-9204-0e1f2d7348d1",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C42",
+      "claim": "During imagery, there was a broad off-diagonal generalization throughout the entire imagery period.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, there was a broad off-diagonal generalization throughout the entire imagery period (Figure 2B, right; Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the temporal generalization analysis shown in Figure 2B, right and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "2cf08886-aea3-44b9-a99c-a3ad33c74939",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C43",
+      "claim": "Already at the onset of imagery decoding, there was high generalization and low specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Already at the onset of imagery decoding, there was high generalization and low specificity (Figure 2B\u2013C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the temporal generalization analysis shown in Figure 2B-C, right.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "3cf5261d-b3a8-4486-894c-6da976dc5904",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C44",
+      "claim": "High generalization and low specificity at the onset of imagery indicates that the neural representation during imagery remains highly stable.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the neural representation during imagery remains highly stable (King and Dehaene, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citation to King and Dehaene, 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d0ae43a8-aec4-46b4-9e7d-ba253bc2bdba",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C45",
+      "claim": "The only change during imagery seems to be in decoding strength, which first increases and then decreases over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The only change seems to be in decoding strength, which first increases and then decreases over time (Fig. S1B), indicating that either representations at those times are weaker or that they are more variable over trials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "8d9d4df7-3ef8-40d8-8f3e-54f65565da0a",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C46",
+      "claim": "Changes in decoding strength during imagery indicate that either representations at those times are weaker or that they are more variable over trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The only change seems to be in decoding strength, which first increases and then decreases over time (Fig. S1B), indicating that either representations at those times are weaker or that they are more variable over trials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the observed changes in decoding strength.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "47742b5c-9c13-4aab-a3ca-036937687ac4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C47",
+      "claim": "The sources that contributed to classification during imagery were mostly located in the ventral visual stream.",
+      "claim_type": "EXPLICIT",
+      "source": "The sources that contributed to classification were mostly located in the ventral visual stream and there was also some evidence for frontal and parietal contributions (Figure 2D, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the source localization analysis in Figure 2D, right.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b3537e5e-236d-4fdb-8ca2-73df976011e2",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C48",
+      "claim": "There was some evidence for frontal and parietal contributions to classification during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "The sources that contributed to classification were mostly located in the ventral visual stream and there was also some evidence for frontal and parietal contributions (Figure 2D, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the source localization analysis in Figure 2D, right.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7089d1f9-815f-42f2-b698-544de62dbdbb",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C49",
+      "claim": "During imagery, eye tracker decoding was at chance level for all time points.",
+      "claim_type": "EXPLICIT",
+      "source": "During imagery, eye tracker decoding was at chance level for all time points, indicating that there were no condition-specific eye movements during imagery (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the eye tracker decoding analysis in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "f3c114fd-fdac-4f18-b44e-636459db5a0a",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C50",
+      "claim": "There were no condition-specific eye movements during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "During imagery, eye tracker decoding was at chance level for all time points, indicating that there were no condition-specific eye movements during imagery (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the chance-level eye tracker decoding during imagery.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "448c85d2-c1e6-4ef0-a3d5-5c3ee963c8d4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C51",
+      "claim": "During perception, eye tracker decoding was significant from 316 ms onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during perception, eye tracker decoding was significant from 316 ms onwards (Figure 2\u2014figure supplement 2A), indicating that differences in eye movements between the conditions may have driven (part of) the brain decoding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the eye tracker decoding analysis in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "e1ea7370-0636-4a97-974d-ed80259504d1",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C52",
+      "claim": "Differences in eye movements between the conditions may have driven (part of) the brain decoding during perception from 316 ms onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during perception, eye tracker decoding was significant from 316 ms onwards (Figure 2\u2014figure supplement 2A), indicating that differences in eye movements between the conditions may have driven (part of) the brain decoding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the significant eye tracker decoding.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "e2c78b66-eb6a-489d-a0b4-4d2d76d63d7e",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C53",
+      "claim": "There was no positive correlation between eye tracker decoding and brain decoding during perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2\u2014figure supplement 2C however shows that there was no such correlation, suggesting that our perception decoding results for that time window were not driven by eye movements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "c8dbcb20-c9c5-4f66-bb89-465d186546bb",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C54",
+      "claim": "Perception decoding results from 316 ms onwards were not driven by eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2\u2014figure supplement 2C however shows that there was no such correlation, suggesting that our perception decoding results for that time window were not driven by eye movements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of correlation between eye tracker and brain decoding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b71a69e6-ee1d-4ed8-ba33-c76c1a2fe5b7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C55",
+      "claim": "Around 350 ms after imagery cue onset, classifiers trained on perception data from 160, 700 and 960 ms after stimulus onset could significantly decode the imagined stimulus category.",
+      "claim_type": "EXPLICIT",
+      "source": "Already around 350 ms after imagery cue onset, classifiers trained on perception data from 160, 700 and 960 ms after stimulus onset could significantly decode the imagined stimulus category (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-decoding analysis in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d2af90d1-a159-466f-bc75-b63e9e140c96",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C56",
+      "claim": "Cross-classification from perception to imagery starts earlier (350 ms) than classification within imagery (540 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "This is earlier than classification within imagery, which started at 540 ms after cue onset (Figure 2A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the cross-decoding results with the within-imagery decoding results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d982e08b-eff3-4ace-a507-25e442893f32",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C57",
+      "claim": "The earlier onset of cross-classification might reflect an increase in signal-to-noise ratio (SNR) by training on perception compared to imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the increased decoding accuracy during perception compared to imagery (Figure 2A, left versus right), this difference might reflect an increase in signal-to-noise ratio (SNR) by training on perception compared to imagery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation for the observed difference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "dc59478f-4648-44d8-a4a4-696396b665d8",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C58",
+      "claim": "The distinct processing stages found during perception were also reflected in the generalization to imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the distinct processing stages found during perception (Figure 2B, left) were also reflected in the generalization to imagery (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cross-decoding analysis shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "cc965b48-1f11-4460-a277-8107188ef8f0",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C59",
+      "claim": "Perceptual processes around 160 ms significantly overlapped with imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual processes around 160 ms and after 300 ms significantly overlapped with imagery (Figure 3B, right plots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-decoding analysis in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "0eb48e81-8a18-4373-b1c1-12e12d8f0fea",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C60",
+      "claim": "Perceptual processes after 300 ms significantly overlapped with imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual processes around 160 ms and after 300 ms significantly overlapped with imagery (Figure 3B, right plots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-decoding analysis in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "2d021395-00b6-4f94-8c4f-1ff51c357b95",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C61",
+      "claim": "Processing at 90 ms during perception did not generalize to any time point during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, processing at 90 ms did not generalize to any time point during imagery (Figure 3B, top left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-decoding analysis in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b5ce08a8-f223-417c-ac2d-b53f88d9e2b7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C62",
+      "claim": "Perceptual processing at 210 ms showed intermittent generalization to imagery, with generalization at some time points and no generalization at other times.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual processing at 210 ms showed intermittent generalization to imagery, with generalization at some time points and no generalization at other times (Figure 3B, bottom left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-decoding analysis in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "246f8178-370a-4e4f-9c13-f408967c6c8f",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C63",
+      "claim": "Significant generalization at 210 ms could reflect the effects of smoothing over neighboring time points which are significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant generalization at this time could also reflect the effects of smoothing over neighboring time points which are significant (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed intermittent generalization.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "1c7183af-0cf2-4bf7-97b7-76ba1843a39e",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C64",
+      "claim": "Training classifiers on imagery and testing on perception revealed a similar pattern of high overlap with perception around 160 and after 300 ms and low overlap before 100 ms and around 210 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a similar pattern of high overlap with perception around 160 and after 300 ms and low overlap before 100 ms and around 210 ms (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-decoding analysis in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "53fe0c8c-d61c-4371-9cae-c5f5c2669ed7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C65",
+      "claim": "The overlap profile between perception and imagery is stable throughout imagery and is already present at the start of imagery, albeit with lower accuracies.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this profile is stable throughout imagery and is already present at the start of imagery, albeit with lower accuracies (Figure 3-D, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D, bottom panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b6f25576-dd46-466a-a94d-9af5aacaca2c",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C66",
+      "claim": "The onset of perceptual overlap is highly consistent over the course of imagery: overlap starts around 130 ms, with the first peak at approximately 160 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the onset of perceptual overlap is highly consistent over the course of imagery: overlap starts around 130 ms, with the first peak at approximately 160 ms (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cross-decoding analysis in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "38804eac-191d-4f0d-93cf-ff8d76894ea6",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C67",
+      "claim": "Cross-classification accuracy was higher when training on imagery than when training on perception.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, cross-classification accuracy was higher when training on imagery than when training on perception (Figure 3C vs. Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing Figure 3C and Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7dc29449-708d-4cbb-8cf1-efd21ce0dbff",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C68",
+      "claim": "Training on high SNR data (perception) is reported to lead to higher classification accuracy than training on low SNR data (imagery).",
+      "claim_type": "EXPLICIT",
+      "source": "This is surprising, because training on high SNR data (in our case, perception) is reported to lead to higher classification accuracy than training on low SNR data (King and Dehaene, 2014) (imagery).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to King and Dehaene, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "f3eb6d9b-f431-4dfc-bdec-d2b0538a8f18",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C69",
+      "claim": "The higher cross-classification accuracy when training on imagery may reflect the fact that the perceptual representation contained more unique features than the imagery representation, leading to a lower generalization performance when training on perception.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference may reflect the fact that the perceptual representation contained more unique features than the imagery representation, leading to a lower generalization performance when training on perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "a188cbf5-96b7-433a-adb3-20627d64948d",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C70",
+      "claim": "None of the differences in decoding accuracy between high and low vividness groups were significant after correction for multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding accuracy seemed to be higher in the high vividness group, however, none of the differences were significant after correction for multiple comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the vividness analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d2d595c9-bc67-413c-84d5-be878ffbe48f",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C71",
+      "claim": "The findings cannot be explained by a clear cascading of activity up or down the visual hierarchy during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings cannot be explained by a clear cascading of activity up or down the visual hierarchy during imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the broad temporal generalization observed during imagery.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "a17e9cc1-d5ce-4279-866a-cf4f4778bd4b",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C72",
+      "claim": "If there was a clear order in activation of different areas during imagery, we would not have observed such wide temporal generalization at the start of imagery but instead a more diagonal pattern, as during the start of perception.",
+      "claim_type": "EXPLICIT",
+      "source": "If there was a clear order in activation of different areas, we would not have observed such wide temporal generalization at the start of imagery but instead a more diagonal pattern, as during the start of perception (King and Dehaene, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference supported by citation to King and Dehaene, 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "df80c6a0-d886-44d3-be97-50d7c10309f7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C73",
+      "claim": "The complete overlap with perception was already present at the onset of imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the complete overlap with perception was already present at the onset of imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cross-decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "92578f81-75f8-4a1d-a724-0e686e39dcab",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C74",
+      "claim": "One interpretation of the results is that during imagery the complete stimulus representation, including different levels of the hierarchy, is activated simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "One interpretation of our results is that during imagery the complete stimulus representation, including different levels of the hierarchy, is activated simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the broad temporal generalization during imagery.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "ccc63a62-01fa-482c-a51f-e3e219ae2eed",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C75",
+      "claim": "There was no overlap between imagery and perceptual processing until 130 ms after stimulus onset, when the feedforward sweep is presumably completed and high-level categorical information is activated for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no overlap between imagery and perceptual processing until 130 ms after stimulus onset, when the feedforward sweep is presumably completed and high-level categorical information is activated for the first time (Isik et al., 2014; Carlson et al., 2011; Thorpe et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cross-decoding results and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "357f9c6a-7b43-4c85-a920-b5ee238fc165",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C76",
+      "claim": "Overlap between perception and imagery in low-level visual cortex depends on the imagery task and experienced vividness.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap between perception and imagery in low-level visual cortex depends on the imagery task and experienced vividness (Lee et al., 2012; Albers et al., 2013; Kosslyn and Thompson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "bc686368-c36f-484b-aaaa-f351d4a8304b",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C77",
+      "claim": "There was no relationship between overlap at early time points and imagery vividness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe a relationship between overlap at this time point and imagery vividness (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "02634261-866b-4a78-8d8c-cb7d81cfb9d7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C78",
+      "claim": "The absence of early overlap seems to imply that, even though early visual cortex has been implicated in visual imagery, there is no consistent overlap between imagery and early perceptual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This absence of early overlap seems to imply that, even though early visual cortex has been implicated in visual imagery, there is no consistent overlap between imagery and early perceptual processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the lack of early overlap in the cross-decoding results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "1e08f9ff-43e7-46ef-8991-ed7c5a4379b1",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C79",
+      "claim": "One explanation for the discrepancy is that representations in low-level visual areas first have to be sharpened by feedback connections before they have a format that is accessible by top-down imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation for this discrepancy is that representations in low-level visual areas first have to be sharpened by feedback connections (Kok et al., 2012) before they have a format that is accessible by top-down imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation to Kok et al., 2012.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "21bfce04-3389-4f8b-ae54-565b2b273fcc",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C80",
+      "claim": "Alternatively, early perceptual activity during imagery may be more brief and variable over time than high-level activation, leading to a cancelling out when averaging over trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, early perceptual activity during imagery may be more brief and variable over time than high-level activation, leading to a cancelling out when averaging over trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation for the lack of early overlap.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d79039c2-1c8f-434f-97d1-6005afb6c586",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C81",
+      "claim": "The large temporal generalization at the onset of imagery might have been partly due to the nature of the task used.",
+      "claim_type": "EXPLICIT",
+      "source": "The large temporal generalization at the onset of imagery might have been partly due to the nature of the task we used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "6b1f577c-f088-4d08-9e1b-98ffb4b0b40d",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C82",
+      "claim": "The start of imagery was based on the association between the cue and the items held in working memory, which could have led to an instantaneous initiation of the visual representation after the cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the start of imagery was based on the association between the cue and the items held in working memory, which could have led to an instantaneous initiation of the visual representation after the cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the broad temporal generalization.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "00303fd3-e2bd-439e-908d-a0599eef11ae",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C83",
+      "claim": "Visual representations are activated differently if imagery is operationalized as a more constructive process.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be the case that visual representations are activated differently if imagery is operationalized as a more constructive process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about alternative experimental designs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "269eedb6-3abc-4d5c-b901-a7d6d5358110",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C84",
+      "claim": "Cueing imagery from long-term memory leads to less neural overlap with perception compared to cueing imagery from working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has already showed that cueing imagery from long-term memory leads to less neural overlap with perception compared to cueing imagery from working memory (Ishai et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ishai et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "dd695454-0236-4fca-96e5-067c4fc53f8f",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C85",
+      "claim": "The temporal dynamics of imagery from long-term memory may be different from imagery from working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the temporal dynamics of imagery from long-term memory are also different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "3cb5ade4-7cf1-43ec-a218-bde34a732eea",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C86",
+      "claim": "If perceptual details have to be filled in from long-term memory, low-level areas might be activated later, resulting in a more diagonal generalization pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be that if perceptual details have to be filled in from long-term memory, low-level areas are activated later, resulting in a more diagonal generalization pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about imagery from long-term memory.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "546f78f0-a48a-4b99-8277-cf70409b7c9b",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C87",
+      "claim": "An alternative explanation for the broad temporal generalization during imagery is that, compared to perception, imagery is less time-locked.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative explanation for the broad temporal generalization during imagery is that, compared to perception, imagery is less time-locked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation for the observed results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "0cca9cb7-4555-4295-ae3b-1794961269cf",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C88",
+      "claim": "If the process during imagery is shifted in time between trials, averaging over trials per time point would obscure the underlying temporal dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "If the process during imagery is shifted in time between trials, averaging over trials per time point would obscure the underlying temporal dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the effect of temporal jitter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "611d21fb-0538-40f6-977f-6c3bd29dd390",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C89",
+      "claim": "Temporal uncertainty cannot be confidently ruled out as an explanation for the broad temporal generalization at the onset of imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot confidently rule out temporal uncertainty as an explanation for the broad temporal generalization at the onset of imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the current analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d283f580-3dbe-414f-b9b7-cdf14cdadeba",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C90",
+      "claim": "Clear overlap was observed between imagery and perceptual processing around 160 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clear overlap between imagery and perceptual processing around 160 ms after stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cross-decoding results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "6b828815-e677-4ef8-ba81-4426713b194b",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C91",
+      "claim": "The perceptual representation at 160 ms likely reflects the face-specific N170.",
+      "claim_type": "EXPLICIT",
+      "source": "The perceptual representation at this time likely reflects the face-specific N170.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the timing and known properties of the N170.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "6f3b4266-bd8d-4290-9f2d-79090abf0e46",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C92",
+      "claim": "The N170 component has been shown to be involved in face processing and appears between 130 to 170 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This component has been shown to be involved in face processing and appears between 130 to 170 ms after stimulus onset (Bentin et al., 1996; Halgren et al., 2000), which corresponds well with the timing of overlap with imagery reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "83ea67d3-44ae-4c6b-bc3f-471d42764ff4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C93",
+      "claim": "The sources of the N170 are thought to be face selective areas in the ventral stream.",
+      "claim_type": "EXPLICIT",
+      "source": "The sources of the N170 are thought to be face selective areas in the ventral stream (Deffke et al., 2007; Henson et al., 2009), which also corresponds to the location of our source reconstruction at this time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "41c21a1d-8907-42c9-9dcc-afd5d4ee5863",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C94",
+      "claim": "The location of the N170 sources corresponds to the location of the source reconstruction at 160 ms in the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "The sources of the N170 are thought to be face selective areas in the ventral stream (Deffke et al., 2007; Henson et al., 2009), which also corresponds to the location of our source reconstruction at this time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "25482c31-1e34-426d-bb31-1e9afd9eaec3",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C95",
+      "claim": "A previous study showed an increase of the N170 after imagery of a face, indicating that imagery activates similar representations as the N170.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study showed an increase of the N170 after imagery of a face, indicating that imagery activates similar representations as the N170 (Ganis and Schendan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ganis and Schendan, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "1a123556-d14d-4947-a17b-c6ec51cd9212",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C96",
+      "claim": "The current study confirms that N170 representations are active during imagery throughout time.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we confirm that idea and show that N170 representations are active during imagery throughout time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the cross-decoding results showing overlap at 160 ms.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "704acc1b-fe76-4823-8692-4f385ca554c1",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C97",
+      "claim": "The time around 160 ms showed long temporal generalization within perception, indicating that the N170 representations also remain active over time during perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this time also showed long temporal generalization within perception, indicating that the N170 representations also remain active over time during perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal generalization pattern observed during perception.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "c47b53a4-cede-4882-af2d-a9e243b96822",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C98",
+      "claim": "The lack of generalization between imagery and perceptual processing around 210 ms after stimulus onset was unexpected.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of generalization between imagery and perceptual processing around 210 ms after stimulus onset was unexpected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the authors' expectations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "deaa49c0-7d81-4fb7-833b-e18be2188a1a",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C99",
+      "claim": "The time window around 210 ms also showed an increase in temporal specificity during perception, indicating rapidly changing representations.",
+      "claim_type": "EXPLICIT",
+      "source": "This time window also showed an increase in temporal specificity during perception, indicating rapidly changing representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the temporal specificity analysis shown in Figure 2C, left.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "05ba813f-5286-40a3-b263-c9ac57022837",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C100",
+      "claim": "One possible interpretation is that around 210 ms feedback from higher areas arrives in low-level visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible interpretation is that around this time feedback from higher areas arrives in low-level visual cortex (Koivisto et al., 2011; Roelfsema et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations to previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "745bd51e-d9b0-4f01-b41c-35c01a7294b9",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C101",
+      "claim": "If low-level representations are more transient, this would explain the decrease in consistent generalization around 210 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "If low-level representations are indeed more transient, this would explain the decrease in consistent generalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the hypothesis about feedback to low-level areas.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "c3e3971e-d34b-439e-b2dd-de1b04a6ee06",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C102",
+      "claim": "Another possibility is that processing around 210 ms reflects an unstable combination of feedback and feedforward processes, which is resolved around 300 ms when representations become more generalized and again start to generalize to imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that processing at this time reflects an unstable combination of feedback and feedforward processes, which is resolved around 300 ms when representations become more generalized and again start to generalize to imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "65d307ec-accd-49bb-bc6d-39d5455a8751",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C103",
+      "claim": "Processing from 300 ms after stimulus onset has been associated with percept stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this idea, processing from 300 ms after stimulus onset has been associated with percept stabilization (Bachmann, 2006; Carlson et al., 2013; Kaiser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "17875707-8084-4883-b33b-83a12c8ac6f9",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C104",
+      "claim": "No influences of experienced imagery vividness on the overlap between perception and imagery over time were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we did not observe any influences of experienced imagery vividness on the overlap between perception and imagery over time (Fig. S2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7aa33165-58e6-48c7-b03e-e761d8b332b2",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C105",
+      "claim": "One explanation for the lack of vividness effects is that whole-brain signals were used for decoding whereas the relationship between overlap and vividness has only been found for a specific set of brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation for this is that we used whole-brain signals for decoding whereas the relationship between overlap and vividness has only been found for a specific set of brain regions (Lee et al., 2012; Dijkstra et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations to previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "f339c74f-4186-4822-b427-f52f654c6c64",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C106",
+      "claim": "If there is strong temporal variability during imagery this would make it difficult to find any effect of vividness on specific time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if there is indeed strong temporal variability during imagery this would make it difficult to find any effect of vividness on specific time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the effect of temporal variability.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "4c0fec98-0a5f-4757-9e8b-7365eafa6485",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C107",
+      "claim": "At the onset of imagery the entire visual representation is activated at once.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our findings suggest that, in contrast to perception, at the onset of imagery the entire visual representation is activated at once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the broad temporal generalization observed during imagery.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "211b478a-1c57-40cf-bef8-a2972129660f",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C108",
+      "claim": "The simultaneous activation during imagery might partly be caused by the nature of the task, since visual representations were already present in working memory at the onset of imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "This might partly be caused by the nature of our task, since visual representations were already present in working memory at the onset of imagery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "f4b0a172-2487-40ba-ad73-6203e6b3d76a",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C109",
+      "claim": "More research is needed to fully explore the contribution of temporal uncertainty between trials to the broad temporal generalization during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more research is needed to fully explore the contribution of temporal uncertainty between trials to this broad temporal generalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations and need for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "84b71df3-4b55-4131-a418-da66d5e69f80",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C110",
+      "claim": "Imagery consistently overlapped with perceptual processing around 160 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, imagery consistently overlapped with perceptual processing around 160 ms and from 300 ms onwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cross-decoding results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "1389e8a2-72c2-4a84-81dd-6889ebc0327b",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C111",
+      "claim": "Imagery consistently overlapped with perceptual processing from 300 ms onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, imagery consistently overlapped with perceptual processing around 160 ms and from 300 ms onwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cross-decoding results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d568250b-a5b7-4fe5-9642-2741cae42fad",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C112",
+      "claim": "The overlap around 160 ms points towards a re-activation of the N170 during imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap around 160 ms points towards a re-activation of the N170 during imagery, whereas the lack of overlap with perceptual processes before 130 ms indicates that either imagery does not rely on early perceptual representations, or that these representations are more transient and variable over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the cross-decoding results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "ecf73e44-f6f4-4bbf-9cad-c5e8e0b861c2",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C113",
+      "claim": "The lack of overlap with perceptual processes before 130 ms indicates that either imagery does not rely on early perceptual representations, or that these representations are more transient and variable over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap around 160 ms points towards a re-activation of the N170 during imagery, whereas the lack of overlap with perceptual processes before 130 ms indicates that either imagery does not rely on early perceptual representations, or that these representations are more transient and variable over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the lack of early overlap in the cross-decoding results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "172859dd-06af-4c00-a039-5a4431c740ef",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C114",
+      "claim": "Thirty human volunteers with normal or corrected-to-normal vision gave written informed consent and participated in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed a medium effect size (d = 0.6) which, to reach a power of 0.8, required twenty four participants. To take into account drop-out, thirty human volunteers with normal or corrected-to-normal vision gave written informed consent and participated in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant recruitment for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "93581cdd-ef22-4fc6-9b3a-9df475373808",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C115",
+      "claim": "Five participants were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Five participants were excluded: two because of movement in the scanner (movement exceeded 15 mm), two due to incorrect execution of the task (less than 50% correct on the catch trials, as described below) and one due to technical problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria applied in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "0a641101-34a2-41f3-b43f-be80a4189bb9",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C116",
+      "claim": "25 participants (mean age 28.6, SD = 7.62) remained for the final analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "25 participants (mean age 28.6, SD = 7.62) remained for the final analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final sample size and demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "38caa7bb-7ff8-43be-9dcd-57564af1dda4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C117",
+      "claim": "The study was approved by the local ethics committee and conducted according to the corresponding ethical guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the local ethics committee and conducted according to the corresponding ethical guidelines (CMO Arnhem-Nijmegen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "5fa7d452-5bda-4b58-875b-68ade38cac8e",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C118",
+      "claim": "The VVIQ is a 16-item questionnaire in which participants indicate their imagery vividness for a number of scenarios on a 5-point scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to scanning, participants were asked to fill in the Vividness of Visual Imagery Questionnaire (VVIQ): a 16-item questionnaire in which participants indicate their imagery vividness for a number of scenarios on a 5-point scale (Marks, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the VVIQ questionnaire and cites its source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b73f054e-101c-4b0b-a6bd-4b6e7ae6ccd1",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C119",
+      "claim": "The VVIQ has been used in many imagery studies and is a well-validated measure of general imagery ability.",
+      "claim_type": "EXPLICIT",
+      "source": "The VVIQ has been used in many imagery studies and is a well-validated measure of general imagery ability (Lee et al., 2012; Albers et al., 2013; Dijkstra et al., 2017a; Cui et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies using the VVIQ.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "4a62cac2-9938-45d8-9078-96829ce77e72",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C120",
+      "claim": "A retro-cue paradigm was adapted in which the cue was orthogonalized with respect to the stimulus identity.",
+      "claim_type": "EXPLICIT",
+      "source": "We adapted a retro-cue paradigm in which the cue was orthogonalized with respect to the stimulus identity (Harrison and Tong, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental paradigm and cites its source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "16c356d3-bdaa-4b71-a1a6-2aa88ca14707",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C121",
+      "claim": "Faces and houses were chosen because these two categories elicit very different neural responses throughout the visual hierarchy, during both perception and imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose faces and houses because these two categories elicit very different neural responses throughout the visual hierarchy, during both perception and imagery (Ishai et al., 2000; Epstein et al., 2003; Kanwisher et al., 1997), and are therefore expected to allow for high-fidelity tracking of their corresponding neural representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "4f9ae947-4de5-4623-b930-12131530ddcb",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C122",
+      "claim": "Faces and houses are expected to allow for high-fidelity tracking of their corresponding neural representations.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose faces and houses because these two categories elicit very different neural responses throughout the visual hierarchy, during both perception and imagery (Ishai et al., 2000; Epstein et al., 2003; Kanwisher et al., 1997), and are therefore expected to allow for high-fidelity tracking of their corresponding neural representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known properties of face and house stimuli.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "d2664269-3a49-41ee-9e94-99f118476c85",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C123",
+      "claim": "Data were recorded at 1200 Hz using a 275-channel MEG system with axial gradiometers.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were recorded at 1200 Hz using a 275-channel MEG system with axial gradiometers (VSM/CTF Systems, Coquitlam, BC, Canada).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MEG recording parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "46681ad4-a85d-4562-b682-4bd62d811b61",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C124",
+      "claim": "Data from five sensors were not recorded for technical reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "For technical reasons, data from five sensors (MRF66, MLC11, MLC32, MLF62, MLO33) were not recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical limitation of the data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "9c9efea6-5405-4ad3-9de9-aa8ec3c95e71",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C125",
+      "claim": "Head movement was kept below 8 mm in most participants.",
+      "claim_type": "EXPLICIT",
+      "source": "This way, head movement was kept below 8 mm in most participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control for head movement during MEG recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "5db9c0f2-ac87-42e1-8fb3-aeecf29930f1",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C126",
+      "claim": "Data were analyzed with MATLAB version R2017a and FieldTrip.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were analyzed with MATLAB version R2017a and FieldTrip (Oostenveld et al., 2011) (RRID: SCR_004849).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "0f748954-5ab4-4dff-9cb0-0feba1d2ad2c",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C127",
+      "claim": "The data were down-sampled to 300 Hz to reduce memory and CPU load.",
+      "claim_type": "EXPLICIT",
+      "source": "The data were down-sampled to 300 Hz to reduce memory and CPU load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a preprocessing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "a072402d-c83c-4527-b19d-21ad58323634",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C128",
+      "claim": "Line noise at 50 Hz was removed from the data using a DFT notch filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Line noise at 50 Hz was removed from the data using a DFT notch filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a preprocessing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "e419d9ed-c5c5-46bf-835d-243f40d21852",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C129",
+      "claim": "After artifact rejection, on average 108 perception face trials (\u00b111), 107 perception house trials (\u00b112) and 105 imagery face trials (\u00b116) and 106 imagery house trials (\u00b113) remained for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "After artifact rejection, on average 108 perception face trials (\u00b111), 107 perception house trials (\u00b112) and 105 imagery face trials (\u00b116) and 106 imagery house trials (\u00b113) remained for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of trials remaining after preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b8475406-a64a-41ba-bec1-c0ca2a75b0b5",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C130",
+      "claim": "Prior to classification, the data were averaged over a window of 30 ms centered on the time point of interest to improve the signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the signal-to-noise ratio, prior to classification, the data were averaged over a window of 30 ms centered on the time point of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a preprocessing step for the decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "8fae2cd9-8c41-4712-92cc-323cf8931420",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C131",
+      "claim": "A linear discriminant analysis (LDA) classifier was used with the activity from the 270 MEG sensors as features.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a linear discriminant analysis (LDA) classifier with the activity from the 270 MEG sensors as features (see Mostert et al., 2015 for more details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classification method and cites a reference for more details.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "2ecdffe8-5cd1-4834-8e12-7d36af349b3e",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C132",
+      "claim": "A 5-fold cross-validation procedure was implemented.",
+      "claim_type": "EXPLICIT",
+      "source": "A 5-fold cross-validation procedure was implemented where for each fold the classifier was trained on 80% of the trials and tested on the other 20%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cross-validation procedure used in the decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "20d61321-2c40-4a99-96f5-bb1e3ae6fa19",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C133",
+      "claim": "The number of trials per class was balanced per fold by randomly removing trials from the class with the most trials until the trial numbers were equal between the classes.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent a potential bias in the classifier, the number of trials per class was balanced per fold by randomly removing trials from the class with the most trials until the trial numbers were equal between the classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a procedure to prevent bias in the classifier.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "9c8efe79-ecb8-4f29-b623-161c29d6cd16",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C134",
+      "claim": "A mostly diagonal pattern in temporal generalization reflects sequential processing of specific representations.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a mostly diagonal pattern reflects sequential processing of specific representations, whereas generalization from one time point towards another reflects recurrent or sustained activity of a particular process (King and Dehaene, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to King and Dehaene, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b00844b1-67ad-482c-800f-cca2596619e7",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C135",
+      "claim": "Generalization from one time point towards another in temporal generalization reflects recurrent or sustained activity of a particular process.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a mostly diagonal pattern reflects sequential processing of specific representations, whereas generalization from one time point towards another reflects recurrent or sustained activity of a particular process (King and Dehaene, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to King and Dehaene, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b4dd9496-4195-4f23-9d46-33ccf3aac422",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C136",
+      "claim": "Decoding accuracy was tested against chance using two-tailed cluster-based permutation testing with 1000 permutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding accuracy was tested against chance using two-tailed cluster-based permutation testing with 1000 permutations (Maris and Oostenveld, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical testing procedure and cites its source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "1d995fbf-871b-4183-8313-f35d0bcf1e03",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C137",
+      "claim": "In the case of LDA classifiers, the spatial pattern that underlies the classification reduces to the difference in magnetic fields between the two conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of LDA classifiers, the spatial pattern that underlies the classification reduces to the difference in magnetic fields between the two conditions (see Haufe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haufe et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "ee31a434-446a-4b66-a92e-e8c6788220ee",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C138",
+      "claim": "Source analysis was performed on the difference ERF between the two conditions to infer the contributing brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, to infer the contributing brain areas, we performed source analysis on the difference ERF between the two conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source localization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "8373ab3b-7a4b-48fc-9692-431f86b5e1d6",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "claim_id": "C139",
+      "claim": "T1-weighted structural MRI images were acquired using a Siemens 3T whole body scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose, T1-weighted structural MRI images were acquired using a Siemens 3T whole body scanner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the MRI acquisition for source localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed a retro-cue task with 25 participants who perceived and imagined faces and houses while undergoing MEG recording. Participants rated imagery vividness on each trial, and behavioral validation included catch trials and the VVIQ questionnaire. MEG data were preprocessed and analyzed using LDA classifiers with 5-fold cross-validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims are well-documented with appropriate sample size justification (C114), clear exclusion criteria (C115), validated measures (C13-C14, C118-C119), and standard MEG preprocessing and analysis procedures (C123-C133, C136). The experimental design is adequately described with proper controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral validation showed that participants performed the task correctly with high accuracy (89.8%) on catch trials, reported relatively high imagery vividness (mean 49.6\u00b126.6), and showed a significant correlation between VVIQ scores and trial-by-trial vividness ratings (r=-0.45, p=0.02). Correctly identified catch trials were rated as more vivid than incorrect trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The behavioral results provide strong convergent evidence for task validity (C19-C23). The correlation between VVIQ and vividness ratings (C15-C16) and the relationship between catch trial accuracy and vividness (C22-C23) support the criterion validity of the imagery task. Statistical tests are appropriately reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "32ec972d-7a40-4335-9781-e1f71ce1fea4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Imagery decoding became significant later (540 ms) than perception decoding (73 ms), with lower peak accuracy for imagery (~60%) compared to perception (~90%). This suggests that generating visual representations from cues takes longer than bottom-up sensory activation, with higher trial-to-trial variability during imagery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The temporal delay and accuracy differences between perception and imagery are clearly demonstrated in the data (C24-C27, Figure 2A). The interpretation about generation time (C26) follows logically from the timing differences. The explanation about trial variability (C29) is speculative but supported by prior fMRI literature (C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Perception showed four distinct processing stages: (1) 70-120 ms with high temporal specificity and posterior sources indicating feedforward processing; (2) ~160 ms with generalization across time and ventral stream sources indicating high-level representations; (3) ~210 ms with high specificity possibly reflecting feedback; (4) from 300 ms with broad generalization indicating representation stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The distinct processing stages during perception are well-supported by temporal generalization analyses (C30, C34, C37, C39, Figure 2B-C) and source localization (C32, C35, Figure 2D). The interpretations about feedforward processing (C33), high-level representations (C36), and stabilization (C40) are reasonable inferences from the data, though feedback interpretation (C38) is more speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "7f57c369-7853-45d1-a919-2ca66251be00",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Imagery showed no distinct processing stages but instead broad temporal generalization throughout the imagery period with high generalization and low specificity from onset. Sources were primarily in the ventral visual stream with some frontal and parietal contributions. Decoding strength varied over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The broad temporal generalization during imagery is clearly demonstrated (C41-C43, Figure 2B right). The interpretation of stable representations (C44) is supported by citation to established frameworks. Source localization results (C47-C48) are shown in Figure 2D. The speculation about representation strength vs. variability (C46) is appropriately qualified as uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "a294228d-03f0-48db-ba65-6fe990194d00",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Eye tracker analysis showed no condition-specific eye movements during imagery (chance-level decoding). During perception, eye movements could be decoded from 316 ms onwards, but there was no correlation between eye tracker and brain decoding, suggesting brain decoding was not driven by eye movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The eye tracking control analysis is well-executed (C49, C51, Figure 2\u2014figure supplement 2A-B). The lack of correlation between eye tracker and brain decoding (C53) provides strong evidence that perception results were not confounded by eye movements (C54), addressing a potential alternative explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cross-decoding from perception to imagery showed significant decoding from 350 ms (earlier than within-imagery decoding at 540 ms). Perceptual processing at 160 ms and after 300 ms significantly overlapped with imagery, while processing at 90 ms showed no overlap. Processing at 210 ms showed intermittent generalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cross-decoding results are clearly demonstrated (C55-C62, Figure 3A-B). The earlier onset of cross-decoding (C56) is well-documented. The SNR explanation (C57) is speculative but reasonable. The pattern of overlap at specific time points (C59-C62) is supported by the data, though the smoothing explanation for 210 ms (C63) acknowledges methodological uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "eb9328c1-34f5-4000-b8e5-53fbb653d9f4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Training on imagery and testing on perception revealed similar overlap patterns (high around 160 ms and after 300 ms, low before 100 ms and around 210 ms). This profile was stable throughout imagery and present from imagery onset. Surprisingly, cross-classification accuracy was higher when training on imagery than perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reversed cross-decoding analysis (C64-C66, Figure 3C-D) provides strong convergent evidence for the temporal overlap profile. The unexpected finding of higher accuracy when training on imagery (C67) is clearly documented and appropriately noted as surprising given prior literature (C68). The explanation about unique features (C69) is speculative but plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "141df612-a74b-4b50-b4c6-8f4857c41dc0",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "No significant differences in decoding accuracy or cross-decoding were found between high and low vividness groups after correction for multiple comparisons. This lack of vividness effects may be due to using whole-brain signals or temporal variability during imagery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The null result for vividness effects is clearly reported with appropriate statistical correction (C70, C104). The authors appropriately offer speculative explanations for the null finding (C105-C106) while acknowledging this as a limitation. The result is well-documented in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b500d25f-7908-4774-8014-51797a530e4e",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The broad temporal generalization during imagery suggests either simultaneous activation of the entire visual representation or large trial-to-trial timing differences. The findings cannot be explained by sequential cascading of activity. This pattern may be influenced by the retro-cue task design where representations were already in working memory, and temporal uncertainty between trials cannot be ruled out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The interpretation of simultaneous activation (C6, C74, C107) is one plausible explanation for the broad generalization, but the authors appropriately acknowledge that temporal jitter between trials (C87-C89) is an equally viable alternative that cannot be ruled out. The task-specific explanation (C81-C82, C108) is speculative. This represents a major interpretive limitation that requires future work to resolve (C109).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "b4abeece-cacc-4734-b33a-b463404d9e05",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Imagery consistently overlapped with perceptual processing around 160 ms (corresponding to the N170 component) and from 300 ms onwards, but not before 130 ms. This indicates N170 reactivation during imagery and suggests imagery does not rely on early perceptual representations or these are more variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The overlap at 160 ms is well-documented (C7, C90, C110, Figure 3) and the N170 interpretation is well-supported by timing, sources, and prior literature (C91-C97). The lack of early overlap (C75) is clearly shown. However, the interpretation that imagery doesn't rely on early representations (C10, C112) is somewhat uncertain as the alternative explanation of transient/variable early representations (C113) is equally plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "1b919c29-e819-4cee-8bde-a39685efae65",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The absence of overlap between imagery and early perceptual processing (before 130 ms) was not related to imagery vividness. This suggests no consistent overlap with early perceptual representations, possibly because low-level representations need feedback sharpening before being accessible to imagery, or because early imagery activity is brief and variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The lack of early overlap is clearly demonstrated (C78), and the absence of a vividness relationship is documented (C77). However, the mechanistic explanations (C79-C80) are entirely speculative with no direct evidence. The claim relies heavily on prior literature (C76) but the current data cannot distinguish between the proposed mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "0a8f1eb7-b55d-4eb4-9275-0c5e90f63b47",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The lack of generalization around 210 ms was unexpected given the high temporal specificity at this time during perception. This may reflect feedback to low-level visual areas with transient representations, or an unstable combination of feedback and feedforward processes that resolves around 300 ms during percept stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The gap in generalization at 210 ms is documented (C98, C62) and the high temporal specificity is shown (C99). However, both proposed explanations (C100-C102) are entirely speculative. The citation to percept stabilization literature (C103) provides context but doesn't directly support either mechanism. This finding requires additional investigation to determine the underlying cause.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "2a62c15e-d071-41a3-b328-2f6ab9a5d2e5",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The temporal dynamics of imagery may differ when imagery is cued from long-term memory versus working memory. Prior work shows less neural overlap with perception for long-term memory imagery, and this might involve later activation of low-level areas with more diagonal generalization patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are entirely speculative about future experiments (C83, C85-C86). While the citation to prior work (C84) is accurate, the predictions about temporal dynamics are hypothetical. This represents a discussion of potential future work rather than a result from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    },
+    {
+      "id": "82186281-0969-4072-8e81-67deb08f6cf4",
+      "content_id": "e4c282b9-01c7-4d3e-9142-c26ecb7694a9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Temporal generalization patterns can be interpreted using established frameworks: diagonal patterns reflect sequential processing while off-diagonal generalization reflects recurrent or sustained activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a well-established interpretive framework properly cited to King and Dehaene (2014). The authors appropriately apply this framework to interpret their results throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:47:45.633611Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "67e08010-a566-41bb-8881-fa28c618c6c6",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "925554e7-ed90-4186-a5a5-a529ac8f00dc",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "7c2fabde-931e-4d47-b4d0-9d048d0d483d",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "7c34f126-3181-40d9-8792-8d0d2cae66e5",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "172859dd-06af-4c00-a039-5a4431c740ef",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "93581cdd-ef22-4fc6-9b3a-9df475373808",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "0a641101-34a2-41f3-b43f-be80a4189bb9",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "38caa7bb-7ff8-43be-9dcd-57564af1dda4",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "5fa7d452-5bda-4b58-875b-68ade38cac8e",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "b73f054e-101c-4b0b-a6bd-4b6e7ae6ccd1",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "4a62cac2-9938-45d8-9078-96829ce77e72",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "16c356d3-bdaa-4b71-a1a6-2aa88ca14707",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "4f9ae947-4de5-4623-b930-12131530ddcb",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "d2664269-3a49-41ee-9e94-99f118476c85",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "46681ad4-a85d-4562-b682-4bd62d811b61",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "9c9efea6-5405-4ad3-9de9-aa8ec3c95e71",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "5db9c0f2-ac87-42e1-8fb3-aeecf29930f1",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "0f748954-5ab4-4dff-9cb0-0feba1d2ad2c",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "a072402d-c83c-4527-b19d-21ad58323634",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "e419d9ed-c5c5-46bf-835d-243f40d21852",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "b8475406-a64a-41ba-bec1-c0ca2a75b0b5",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "8fae2cd9-8c41-4712-92cc-323cf8931420",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "2ecdffe8-5cd1-4834-8e12-7d36af349b3e",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "20d61321-2c40-4a99-96f5-bb1e3ae6fa19",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "b4dd9496-4195-4f23-9d46-33ccf3aac422",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "1d995fbf-871b-4183-8313-f35d0bcf1e03",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "ee31a434-446a-4b66-a92e-e8c6788220ee",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "8373ab3b-7a4b-48fc-9692-431f86b5e1d6",
+      "result_id": "47f5c5ce-6db6-4b14-8f61-deb028a4376f"
+    },
+    {
+      "claim_id": "67c0a8c3-91a0-41d3-aa8a-05890097dae4",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "a44986b6-3676-433f-ad7b-eb11167b3936",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "5f79cc90-4270-46a8-9714-61773bdf9d41",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "e6d15264-6eb8-4ee1-a2b9-dd44a2e81f87",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "6d697011-c4c4-4b3b-a047-a6fc6d31557a",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "b9fe2d37-0b1e-4edc-be76-4fb7914d6f4b",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "f6d1c79f-c54b-4f38-8ee3-eb1029a10d21",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "28f310c7-9564-4482-9338-cabc933431ca",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "4b3b9020-819b-4359-9a97-52c23f239f5f",
+      "result_id": "6eaa78b3-d1a9-4615-add1-ddd071c11eb9"
+    },
+    {
+      "claim_id": "9d1ad7b6-c862-420e-a738-7cd67e0d15ac",
+      "result_id": "32ec972d-7a40-4335-9781-e1f71ce1fea4"
+    },
+    {
+      "claim_id": "278590f8-86a4-4af6-9049-ef01ddafaac3",
+      "result_id": "32ec972d-7a40-4335-9781-e1f71ce1fea4"
+    },
+    {
+      "claim_id": "76f9f5fb-5958-49a7-a2e2-817cdc460c4b",
+      "result_id": "32ec972d-7a40-4335-9781-e1f71ce1fea4"
+    },
+    {
+      "claim_id": "59bdb99c-95c5-4d6b-8680-4dad3413c88f",
+      "result_id": "32ec972d-7a40-4335-9781-e1f71ce1fea4"
+    },
+    {
+      "claim_id": "63c6e050-299d-43cc-80c9-94c5aee08dc9",
+      "result_id": "32ec972d-7a40-4335-9781-e1f71ce1fea4"
+    },
+    {
+      "claim_id": "b1fc8217-7a73-441c-a49c-d2e36ef92b67",
+      "result_id": "32ec972d-7a40-4335-9781-e1f71ce1fea4"
+    },
+    {
+      "claim_id": "b6fa2647-df6c-455e-87be-b82609314cf7",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "271129e7-3af5-4c58-bd42-427c2ee2a1e3",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "32dfc38f-9f13-4af3-a752-6829c5277d92",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "38673a28-b960-42d8-9e4a-9ca69721da81",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "609a5d3b-d2ff-4cbc-95b9-d52ec327ac1a",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "032beb65-f8ff-4753-8920-7f0472691526",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "51b6cc5e-739f-4bb7-ad7f-51b3ac7c3f1a",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "47e19a1c-7dd6-422d-95f0-7be5195191ce",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "760c74aa-9d7a-4b08-91bb-13d93d7b5acf",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "99d289a0-d95e-4e9e-88a3-f6cef268d4d3",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "2b6e6be6-0cd3-41f8-bd3b-10ba7b6655b5",
+      "result_id": "e0d89137-eaef-4a06-b75f-fdbac73e0a3e"
+    },
+    {
+      "claim_id": "dbb838d8-5665-4b8a-8e19-c6d5d1b24997",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "177a56ea-14e5-4bc5-9204-0e1f2d7348d1",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "2cf08886-aea3-44b9-a99c-a3ad33c74939",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "3cf5261d-b3a8-4486-894c-6da976dc5904",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "d0ae43a8-aec4-46b4-9e7d-ba253bc2bdba",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "8d9d4df7-3ef8-40d8-8f3e-54f65565da0a",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "47742b5c-9c13-4aab-a3ca-036937687ac4",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "b3537e5e-236d-4fdb-8ca2-73df976011e2",
+      "result_id": "7f57c369-7853-45d1-a919-2ca66251be00"
+    },
+    {
+      "claim_id": "7089d1f9-815f-42f2-b698-544de62dbdbb",
+      "result_id": "a294228d-03f0-48db-ba65-6fe990194d00"
+    },
+    {
+      "claim_id": "f3c114fd-fdac-4f18-b44e-636459db5a0a",
+      "result_id": "a294228d-03f0-48db-ba65-6fe990194d00"
+    },
+    {
+      "claim_id": "448c85d2-c1e6-4ef0-a3d5-5c3ee963c8d4",
+      "result_id": "a294228d-03f0-48db-ba65-6fe990194d00"
+    },
+    {
+      "claim_id": "e1ea7370-0636-4a97-974d-ed80259504d1",
+      "result_id": "a294228d-03f0-48db-ba65-6fe990194d00"
+    },
+    {
+      "claim_id": "e2c78b66-eb6a-489d-a0b4-4d2d76d63d7e",
+      "result_id": "a294228d-03f0-48db-ba65-6fe990194d00"
+    },
+    {
+      "claim_id": "c8dbcb20-c9c5-4f66-bb89-465d186546bb",
+      "result_id": "a294228d-03f0-48db-ba65-6fe990194d00"
+    },
+    {
+      "claim_id": "b71a69e6-ee1d-4ed8-ba33-c76c1a2fe5b7",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "d2af90d1-a159-466f-bc75-b63e9e140c96",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "d982e08b-eff3-4ace-a507-25e442893f32",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "dc59478f-4648-44d8-a4a4-696396b665d8",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "cc965b48-1f11-4460-a277-8107188ef8f0",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "0eb48e81-8a18-4373-b1c1-12e12d8f0fea",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "2d021395-00b6-4f94-8c4f-1ff51c357b95",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "b5ce08a8-f223-417c-ac2d-b53f88d9e2b7",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "246f8178-370a-4e4f-9c13-f408967c6c8f",
+      "result_id": "363f3a9c-6a0f-4f7b-b138-524a2c3d7d39"
+    },
+    {
+      "claim_id": "1c7183af-0cf2-4bf7-97b7-76ba1843a39e",
+      "result_id": "eb9328c1-34f5-4000-b8e5-53fbb653d9f4"
+    },
+    {
+      "claim_id": "53fe0c8c-d61c-4371-9cae-c5f5c2669ed7",
+      "result_id": "eb9328c1-34f5-4000-b8e5-53fbb653d9f4"
+    },
+    {
+      "claim_id": "b6f25576-dd46-466a-a94d-9af5aacaca2c",
+      "result_id": "eb9328c1-34f5-4000-b8e5-53fbb653d9f4"
+    },
+    {
+      "claim_id": "38804eac-191d-4f0d-93cf-ff8d76894ea6",
+      "result_id": "eb9328c1-34f5-4000-b8e5-53fbb653d9f4"
+    },
+    {
+      "claim_id": "7dc29449-708d-4cbb-8cf1-efd21ce0dbff",
+      "result_id": "eb9328c1-34f5-4000-b8e5-53fbb653d9f4"
+    },
+    {
+      "claim_id": "f3eb6d9b-f431-4dfc-bdec-d2b0538a8f18",
+      "result_id": "eb9328c1-34f5-4000-b8e5-53fbb653d9f4"
+    },
+    {
+      "claim_id": "a188cbf5-96b7-433a-adb3-20627d64948d",
+      "result_id": "141df612-a74b-4b50-b4c6-8f4857c41dc0"
+    },
+    {
+      "claim_id": "17875707-8084-4883-b33b-83a12c8ac6f9",
+      "result_id": "141df612-a74b-4b50-b4c6-8f4857c41dc0"
+    },
+    {
+      "claim_id": "7aa33165-58e6-48c7-b03e-e761d8b332b2",
+      "result_id": "141df612-a74b-4b50-b4c6-8f4857c41dc0"
+    },
+    {
+      "claim_id": "f339c74f-4186-4822-b427-f52f654c6c64",
+      "result_id": "141df612-a74b-4b50-b4c6-8f4857c41dc0"
+    },
+    {
+      "claim_id": "b2b6e06f-dad4-4a37-8b01-4e75203a28f9",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "d2d595c9-bc67-413c-84d5-be878ffbe48f",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "a17e9cc1-d5ce-4279-866a-cf4f4778bd4b",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "df80c6a0-d886-44d3-be97-50d7c10309f7",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "92578f81-75f8-4a1d-a724-0e686e39dcab",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "d79039c2-1c8f-434f-97d1-6005afb6c586",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "6b1f577c-f088-4d08-9e1b-98ffb4b0b40d",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "546f78f0-a48a-4b99-8277-cf70409b7c9b",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "0cca9cb7-4555-4295-ae3b-1794961269cf",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "611d21fb-0538-40f6-977f-6c3bd29dd390",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "4c0fec98-0a5f-4757-9e8b-7365eafa6485",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "211b478a-1c57-40cf-bef8-a2972129660f",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "f4b0a172-2487-40ba-ad73-6203e6b3d76a",
+      "result_id": "b500d25f-7908-4774-8014-51797a530e4e"
+    },
+    {
+      "claim_id": "5c5d598b-6619-4cd5-bab1-24d12f610623",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "7089068a-89eb-440a-a5b0-352ecc4740b9",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "2eee2d29-ecf2-4de2-95f3-6eb3ff5aa0bd",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "7aecc9c0-ba27-4356-a003-3be955bdd753",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "ccc63a62-01fa-482c-a51f-e3e219ae2eed",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "d283f580-3dbe-414f-b9b7-cdf14cdadeba",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "6b828815-e677-4ef8-ba81-4426713b194b",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "6f3b4266-bd8d-4290-9f2d-79090abf0e46",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "83ea67d3-44ae-4c6b-bc3f-471d42764ff4",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "41c21a1d-8907-42c9-9dcc-afd5d4ee5863",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "25482c31-1e34-426d-bb31-1e9afd9eaec3",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "1a123556-d14d-4947-a17b-c6ec51cd9212",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "704acc1b-fe76-4823-8692-4f385ca554c1",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "84b71df3-4b55-4131-a418-da66d5e69f80",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "d568250b-a5b7-4fe5-9642-2741cae42fad",
+      "result_id": "b4abeece-cacc-4734-b33a-b463404d9e05"
+    },
+    {
+      "claim_id": "357f9c6a-7b43-4c85-a920-b5ee238fc165",
+      "result_id": "1b919c29-e819-4cee-8bde-a39685efae65"
+    },
+    {
+      "claim_id": "bc686368-c36f-484b-aaaa-f351d4a8304b",
+      "result_id": "1b919c29-e819-4cee-8bde-a39685efae65"
+    },
+    {
+      "claim_id": "02634261-866b-4a78-8d8c-cb7d81cfb9d7",
+      "result_id": "1b919c29-e819-4cee-8bde-a39685efae65"
+    },
+    {
+      "claim_id": "1e08f9ff-43e7-46ef-8991-ed7c5a4379b1",
+      "result_id": "1b919c29-e819-4cee-8bde-a39685efae65"
+    },
+    {
+      "claim_id": "21bfce04-3389-4f8b-ae54-565b2b273fcc",
+      "result_id": "1b919c29-e819-4cee-8bde-a39685efae65"
+    },
+    {
+      "claim_id": "c47b53a4-cede-4882-af2d-a9e243b96822",
+      "result_id": "0a8f1eb7-b55d-4eb4-9275-0c5e90f63b47"
+    },
+    {
+      "claim_id": "deaa49c0-7d81-4fb7-833b-e18be2188a1a",
+      "result_id": "0a8f1eb7-b55d-4eb4-9275-0c5e90f63b47"
+    },
+    {
+      "claim_id": "05ba813f-5286-40a3-b263-c9ac57022837",
+      "result_id": "0a8f1eb7-b55d-4eb4-9275-0c5e90f63b47"
+    },
+    {
+      "claim_id": "745bd51e-d9b0-4f01-b41c-35c01a7294b9",
+      "result_id": "0a8f1eb7-b55d-4eb4-9275-0c5e90f63b47"
+    },
+    {
+      "claim_id": "c3e3971e-d34b-439e-b2dd-de1b04a6ee06",
+      "result_id": "0a8f1eb7-b55d-4eb4-9275-0c5e90f63b47"
+    },
+    {
+      "claim_id": "65d307ec-accd-49bb-bc6d-39d5455a8751",
+      "result_id": "0a8f1eb7-b55d-4eb4-9275-0c5e90f63b47"
+    },
+    {
+      "claim_id": "00303fd3-e2bd-439e-908d-a0599eef11ae",
+      "result_id": "2a62c15e-d071-41a3-b328-2f6ab9a5d2e5"
+    },
+    {
+      "claim_id": "269eedb6-3abc-4d5c-b901-a7d6d5358110",
+      "result_id": "2a62c15e-d071-41a3-b328-2f6ab9a5d2e5"
+    },
+    {
+      "claim_id": "dd695454-0236-4fca-96e5-067c4fc53f8f",
+      "result_id": "2a62c15e-d071-41a3-b328-2f6ab9a5d2e5"
+    },
+    {
+      "claim_id": "3cb5ade4-7cf1-43ec-a218-bde34a732eea",
+      "result_id": "2a62c15e-d071-41a3-b328-2f6ab9a5d2e5"
+    },
+    {
+      "claim_id": "9c8efe79-ecb8-4f29-b623-161c29d6cd16",
+      "result_id": "82186281-0969-4072-8e81-67deb08f6cf4"
+    },
+    {
+      "claim_id": "b00844b1-67ad-482c-800f-cca2596619e7",
+      "result_id": "82186281-0969-4072-8e81-67deb08f6cf4"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study recruited 30 participants (mean age 30.52 years, 76% female) from the local community, with sample size determined by power analysis based on prior work. Participants with psychotropic medication use or neurological disorders were excluded, and the study received ethical approval with informed consent obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C89-C93 provide comprehensive demographic and methodological details about participant recruitment, sample characteristics, exclusion criteria, and ethical procedures. The sample size justification (C90) is appropriately based on prior work, and standard ethical procedures were followed (C92-C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The information bias learning task was adapted from prior work and consisted of three blocks of 80 trials each, where participants chose between two shapes associated with independent win and loss outcomes. Volatility of outcomes was manipulated across blocks, with the first block serving as acclimatization. Learning rates were estimated using a Rescorla-Wagner model with separate parameters for wins and losses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 describe the task design, structure, and modeling approach in detail. The task is appropriately adapted from validated prior work (C94, C101), includes proper counterbalancing (C99), and uses established computational modeling methods (C101-C102). The exclusion of the first block from some analyses (C104-C105) is justified as an acclimatization period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Model comparison using BIC scores demonstrated that the behavioral model with separate learning rates and inverse temperatures for wins and losses (Model 1) provided the best fit to participant choice data compared to alternative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by Figure 5, which shows BIC scores across five alternative models. The use of BIC for model comparison is appropriate as it penalizes model complexity, and the result validates the choice of the primary model used in the main analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Pupilometry data underwent standard preprocessing including blink removal, linear interpolation of missing data, low-pass filtering, and z-transformation. Trials with >50% interpolated data were excluded (mean 7%), one participant was excluded due to excessive data loss, and the first 10 trials of each block were excluded due to initial pupil adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 describe standard and appropriate pupilometry preprocessing procedures that are well-established in the field and supported by citations to prior work (C109, C111). The exclusion criteria are reasonable and the amount of excluded data is acceptable (7% of trials on average).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Participants' learning rates for positive and negative outcomes independently reflected the information content (volatility) of those outcomes. Learning rates were significantly higher for both win and loss outcomes when they were volatile versus stable, and the learning rate for each outcome type was higher when that specific outcome was more volatile than the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 report the primary behavioral finding with strong statistical support (significant interaction F(1,28)=27.97, p<0.001, and multiple significant post-hoc comparisons). The results demonstrate independent tracking of win and loss volatility, supporting the conclusion in C31-C32 that participants maintain separate estimates of information content for positive and negative outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The volatility manipulation did not affect the inverse temperature parameter of the learning model, indicating that the manipulation specifically altered learning rate rather than choice stochasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by statistical analysis (F(1,28)=0.01, p=0.92) and Figure 2b. This null result is important as it demonstrates specificity of the volatility manipulation to learning rate, ruling out general effects on decision-making processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Pupil dilation in response to outcome receipt showed a significant interaction between block volatility and outcome valence (F(1,27)=6.16, p=0.02). The effect was significant for loss outcomes (F(1,27)=10.46, p=0.003) but not win outcomes (F(1,27)=0.38, p=0.54), with pupils dilating more when outcomes were volatile. Losses generally produced greater pupil dilation than wins (F(1,27)=16.7, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 report pupilometry findings with appropriate statistical support. The significant interaction (C35) and the asymmetry between loss and win outcomes (C38-C40) are well-documented. However, the lack of effect for wins (C39) somewhat limits the generalizability of the pupillary volatility signal, though this is acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The change in pupil response to loss outcomes between blocks was significantly correlated with the change in loss learning rate (r(28)=0.5, p=0.009), but no such correlation was found for win outcomes (r(28)=-0.08, p=0.7). This correlation was significantly stronger for losses than wins (Fisher z=2.27, p=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate a brain-behavior relationship specifically for loss outcomes, supported by appropriate statistical tests including correlation analysis and Fisher r-to-z transformation. The selective correlation for losses is consistent with the pupilometry findings (C38-C40) and provides convergent evidence linking norepinephrine activity to learning rate adjustments for negative outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "An additional experiment manipulating expected uncertainty while holding volatility constant found no effect on learning rate, suggesting the main findings were driven by volatility (unexpected uncertainty) rather than expected uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 describe a control experiment (Figure 2\u2014figure supplement 2) that addresses a potential confound in the main task design. The null result for expected uncertainty strengthens the interpretation that volatility specifically drives the learning rate effects, though the experiment is described briefly and would benefit from more detailed reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Trait anxiety (STAI) scores negatively correlated with the change in learning rate to losses (r=-0.36, p=0.048), with higher anxiety associated with less adjustment of learning rate. This replicates a finding from Browning et al., 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 report an exploratory correlation between anxiety symptoms and learning rate adjustment for losses, supported by statistical analysis and consistent with prior work. However, this is a secondary finding with a modest effect size and should be interpreted cautiously given the multiple comparisons conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Symptoms of anxiety and depression negatively correlated with differential pupil response to losses (all r<-0.43, all p<0.02), such that higher symptom scores were associated with less difference in pupil dilation between loss informative and non-informative blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 report correlations between clinical symptoms and pupil responses, consistent with prior work (Browning et al., 2015). However, these are exploratory analyses in a non-clinical sample with relatively low symptom levels (mean QIDS=5.03), limiting the strength of conclusions about clinical relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C86",
+      "C87"
+    ],
+    "result": "The study demonstrates that humans maintain independent estimates of the information content of positive and negative outcomes, adjusting learning rates selectively based on outcome volatility. This behavior requires parallel representation of estimated volatility for distinct outcomes and produces valence-dependent affective biases. The findings provide proof-of-principle that these estimates can be manipulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C45-C46, C50-C51, and C86-C87 represent the core conclusions of the study. These are well-supported by the behavioral data (C26-C32) showing independent learning rate adjustments for wins and losses, and the pupilometry data (C35-C44) linking these adjustments to norepinephrine activity. The conclusion that this demonstrates independent estimates of information content (C7, C51, C86) is a reasonable inference from the data, though alternative explanations are not fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C53",
+      "C56",
+      "C59"
+    ],
+    "result": "Central norepinephrine activity, estimated via pupilometry, was associated with adapting learning rates, though this was only convincingly demonstrated for loss outcomes. The pupillary volatility signal was outcome-specific and of the form required for accurate task performance. The norepinephrine system appears to respond to volatility of positive outcomes, but less strongly than for negative outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C53, C56, and C59 summarize the pupilometry findings and their interpretation. The association between pupil dilation and learning rate adjustment is supported for losses (C42) but not wins (C43), which is acknowledged as a limitation. The interpretation that the signal is task-appropriate (C56) is reasonable but somewhat speculative. The asymmetry between losses and wins (C59) is an inference from current and prior data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C69",
+      "C76"
+    ],
+    "result": "Independent estimates of information content may bias processing of affective events and represent a mechanism by which affective biases develop. Novel interventions targeting estimated information content may alter negative affective biases and reduce symptoms of depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C47, C69, and C76 are speculative extensions of the findings to clinical applications. While the logic is sound and the findings are suggestive, the study does not directly test whether manipulating information content estimates affects affective biases more broadly or has clinical benefits. The ongoing clinical trial (C77) will address this, but current evidence is insufficient to support these claims beyond speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C64",
+      "C88"
+    ],
+    "result": "Normalizing affective biases using computationally inspired interventions may represent a novel approach to treatment development. Computational techniques in cognitive neuroscience can identify potential novel treatment targets and spur development of new treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C64, and C88 propose broad implications for treatment development. While the computational approach is innovative and the findings are promising, these claims are highly speculative. The study demonstrates that learning rates can be manipulated experimentally but does not show that such manipulations have therapeutic effects or generalize beyond the specific task context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes that affective bias is commonly observed but its origins are unknown. Prior work shows that learning is influenced by information content and volatility, with norepinephrine activity playing a key role. However, no previous study has demonstrated separate estimates of information content for positive and negative events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C20 provide background and rationale for the study, supported by appropriate citations to prior work. The identification of the research gap (C19-C20) is accurate and well-justified. These claims establish the context and motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C52",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The discussion contextualizes findings relative to prior work, noting that previous studies used single outcome types and found general volatility signals, whereas the current task required outcome-specific signals. The pupillary asymmetry between losses and wins may relate to loss aversion, and the norepinephrine system shows flexibility in representing volatility depending on task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C52, C54-C55, C57-C58, and C60-C63 provide interpretation of the findings in relation to prior literature. The comparisons to previous work are accurate and the interpretations are reasonable, though some (particularly C57, C62-C63) are speculative. The discussion appropriately acknowledges differences from prior studies and proposes plausible explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Pupil size is influenced by norepinephrine and other neurotransmitters. Prior work has predicted a key role for norepinephrine in volatility responses, and one study reported effects of atomoxetine on learning in volatile environments. However, no previous work has examined pharmacological effects on learning to positive versus negative outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 accurately summarize prior literature on the neural basis of pupil responses and volatility learning, supported by appropriate citations. The identification of the gap regarding pharmacological studies of valence-specific learning (C68) is accurate and suggests a direction for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "Patients with depression show negative biases across multiple domains (memory, attention, learning), which are believed to be causally related to symptoms. Interventions targeting these biases can reduce symptoms, and such biases are seen across wide contexts in emotional disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 and C78 accurately summarize prior literature on negative biases in depression and their clinical relevance, supported by appropriate citations. These claims establish the clinical motivation for the research and are well-supported by existing evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "A clinical trial (NCT02913898) is underway to assess the efficacy of an intervention using the volatility manipulation in a clinical population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a factual statement about an ongoing study with a specific trial identifier. This represents appropriate follow-up work to test the clinical applications suggested by the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The discussion acknowledges limitations regarding generalizability, noting that single-block exposure is unlikely to produce broad changes in information content estimates, and that information content depends on multiple factors beyond volatility including expected uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 appropriately acknowledge limitations of the current study and complexity of information content. The recognition that the task manipulates both volatility and expected uncertainty (C83) is important, though the control experiment (C84-C85) addresses this concern.",
+    "result_type": "MINOR"
+  }
+]

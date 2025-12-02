@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C21",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors identified and characterized a rodent-specific lncRNA named Ephemeron (Eprn, previously linc1281) that is dynamically expressed during ESC transition from na\u00efve pluripotency. Eprn shows strong induction within 12 hours of 2i/LIF withdrawal, followed by subsequent decrease, with expression highly specific to ESCs and early mouse embryo (peaking at E4.5). The lncRNA is suppressed by GSK3 inhibition and exhibits transient cytoplasmic-to-nuclear relocalization during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C49 collectively provide strong evidence for Eprn identification and characterization through multiple orthogonal approaches including RT-qPCR (C30-C31), Northern blotting (C33), RNA-FISH (C34-C35), developmental expression profiling (C40-C42), and tissue distribution analysis (C43). The dynamic expression pattern, subcellular localization changes, and regulation by GSK3 inhibition are well-documented with appropriate controls and multiple technical replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C63",
+      "C64"
+    ],
+    "result": "Loss of Eprn delays exit from na\u00efve pluripotency in ESCs. Eprn KO cells show delayed downregulation of Rex1-GFP reporter at 24 hr (from 2i) and 40 hr (from PD/LIF) compared to wild-type, though GFP is fully extinguished by 72 hr. Both knockout and siRNA knockdown cells produce substantially more undifferentiated colonies in clonogenic assays. Rescue experiments restoring Eprn expression reverse these phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55, C63-C64 demonstrate a consistent transient delay phenotype using multiple approaches: genetic knockout (C51-C52), siRNA knockdown (C53), and functional colony formation assays (C54). The rescue experiment (C63-C64) provides critical genetic complementation evidence. The transient nature of the phenotype (C52) is important and well-documented, showing ESC identity eventually collapses even without Eprn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Eprn KO cells exhibit reduced Lin28a expression (2-fold reduction) and elevated Nanog expression during ESC transition. RNA-sequencing identified Lin28a as the most differentially expressed gene between wild-type and Eprn KO cells. The reduction in Lin28a is constant throughout a 24 hr PD/LIF withdrawal time course, while Nanog transcript and protein levels remain elevated at later time points (16-24 hr). Expression of peri-implantation markers Dnmt3a, Dnmt3b, and Oct6 is also reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by RNA-sequencing data from three independent KO lines and three wild-type subclones (C56), with validation by RT-qPCR time courses (C59-C60) and immunostaining (C60). The statistical analysis appears appropriate with adjusted p-values reported. The molecular phenotype is consistent with the functional delay in exit from na\u00efve pluripotency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Genetic epistasis experiments demonstrate that Eprn acts via modulation of Nanog expression. Nanog knockdown in Eprn KO cells partially restores normal Rex1-GFP downregulation and reduces colony formation to wild-type levels. Knockdown of other na\u00efve factors (Esrrb, Tfcp2l1, Klf2) shows attenuated effects in Eprn KO cells, but simultaneous depletion with Nanog abolishes the Eprn KO phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 present a coherent genetic interaction network supported by systematic siRNA knockdown experiments with appropriate controls. The epistasis analysis (C73) is particularly strong, showing that dual knockdowns can rescue the Eprn KO phenotype. The differential effects of various transcription factor knockdowns (C71-C72) provide specificity to the Nanog connection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Lin28a is genetically downstream of Eprn and facilitates exit from na\u00efve pluripotency by accelerating Nanog downregulation. Lin28a overexpression restores normal transition kinetics in Eprn KO cells but has no effect in wild-type cells. Conversely, Lin28a knockdown phenocopies Eprn loss, and this effect is abolished by concomitant Nanog knockdown. Single-cell immunostaining shows Eprn KO cultures have more cells with high Nanog and low Lin28a at 24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 establish a clear genetic pathway through gain-of-function (C76), loss-of-function (C77), and epistasis experiments (C78). The single-cell protein quantification (C80) provides important validation at the protein level. The correlation analysis from embryo data (C81-C82) supports the in vitro findings, though this is correlative rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ChIRP experiments show no evidence that Eprn functions through chromatin association. While Eprn RNA was successfully enriched by ChIRP, no chromatin enrichment was detected at Lin28a or Nanog promoters, and no significant genome-wide enrichment was observed in wild-type versus Eprn KO cells. Analysis of published Nanog ChIP-seq data shows no Nanog binding at the Lin28a locus, and Lin28a is not upregulated upon Nanog knockdown, suggesting Nanog does not directly regulate Lin28a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 present negative results that are important for understanding Eprn mechanism. The ChIRP experiments (C84-C86) include appropriate controls (Eprn KO cells, 7SK negative control). The analysis of published ChIP-seq data (C89) and functional validation (C90) provide orthogonal evidence against direct transcriptional regulation. These negative results are well-controlled and help constrain mechanistic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Lin28a regulates let-7 miRNA expression during ESC transition. Expression of let-7a, let-7d, let-7e, let-7g, and let-7i decreases 24 hr after 2i/LIF withdrawal, coincident with Lin28a increase, while let-7c is unaffected (consistent with its lack of Lin28a recognition motif). Forced expression of let-7g delays Rex1-GFP downregulation and increases colony formation capacity, phenocopying Eprn or Lin28a loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 connect Lin28a to let-7 miRNAs through expression profiling (C93-C94) and functional validation (C98-C99). The let-7c exception (C94-C96) provides important specificity and is supported by published structural data. The gain-of-function experiments with let-7g mimics (C98-C99) demonstrate functional relevance of the Lin28a-let-7 axis in ESC transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Dnmt3a and Dnmt3b are direct targets of let-7g. Bioinformatic analysis predicted multiple let-7g target sites in Dnmt3a 3'UTR and one site in Dnmt3b 3'UTR. Luciferase reporter assays show let-7g reduces expression by >60% when co-transfected with constructs containing Dnmt3a or Dnmt3b 3'UTRs. Mutant reporters with let-7 seed recognition sites mutated escape repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 establish Dnmt3a/3b as let-7g targets through computational prediction (C101-C102) and experimental validation using luciferase assays (C103). The mutagenesis experiments (C105) provide critical specificity controls demonstrating seed sequence-dependent repression. The >60% repression is substantial and biologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Dnmt3a and Dnmt3b mediate de novo methylation at the Nanog proximal promoter during ESC transition. Bisulfite sequencing shows marked reduction of CpG methylation in the -1kb to -761bp region (region 1) at 40 hr post PD/LIF withdrawal upon Dnmt3a/3b knockdown: control cells show 40% methylation, Dnmt3b knockdown shows 18%, and Dnmt3a or Dnmt3a/3b double knockdown shows ~8%. Eprn KO cells also exhibit reduced Nanog promoter methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 demonstrate site-specific DNA methylation changes using bisulfite sequencing, a gold-standard method. The dose-dependent effects of single versus double knockdowns (C110-C112) support overlapping roles of Dnmt3a and Dnmt3b (C113). The consistency between Eprn KO and Dnmt3a/3b knockdown (C114) supports the proposed pathway. Multiple CpG sites were analyzed providing robust quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Loss of Dnmt3a and Dnmt3b delays na\u00efve state exit but is not essential for ESC transition. Dnmt3a/3b single and double KO cells show delayed Rex1-GFP downregulation and increased colony formation at 40 hr post PD/LIF withdrawal. This is associated with transient perdurance of Nanog expression, with Dnmt3a/3b mutants maintaining Nanog at PD/LIF levels at 8 hr while wild-type cells downregulate by 50%. However, the delay does not endure and ESC identity eventually collapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 use CRISPR/Cas9-generated knockouts to demonstrate functional roles of Dnmt3a/3b. The transient nature of the phenotype (C117, C125) is important and well-documented, distinguishing facilitation from requirement. The single and double KO comparisons (C115-C116) provide genetic evidence for overlapping functions. The secondary effects on other na\u00efve factors (C121) are appropriately interpreted as indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors propose an integrated pathway where Eprn lies upstream of Lin28a/let-7 and Dnmt3a/3b, ultimately contributing to timely Nanog downregulation. Eprn depletion reduces Lin28a expression (mechanism unclear), leading to stabilized let-7 miRNA expression, which targets Dnmt3a/3b, reducing Nanog promoter methylation and correlating with perduring Nanog expression. This lncRNA/miRNA/DNA methylation module provides an additional regulatory layer for ESC transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 synthesize the experimental findings into a coherent model supported by the genetic epistasis experiments, expression analyses, and functional assays presented throughout. The pathway is well-supported by the data, though the mechanism linking Eprn to Lin28a remains unclear (C129). The model appropriately acknowledges this gap while presenting the downstream connections that are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Eprn KO ESCs retain capacity for lineage differentiation. Both wild-type and Eprn KO ESCs can be differentiated into EpiSCs with typical morphology and gene expression. Eprn KO ESCs also successfully undergo neuronal, mesendoderm, and definitive endoderm differentiation, with only a slight delay observed for mesendoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 demonstrate that the delayed exit from na\u00efve pluripotency does not impair subsequent differentiation capacity. Multiple differentiation protocols were tested (EpiSC, neuronal, mesendoderm, definitive endoderm) with appropriate lineage markers analyzed. This is important for understanding the biological significance of the Eprn phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Eprn is dispensable for mouse development. Mendelian ratios (5:18:7, WT:Het:Hom) were observed from heterozygous intercrosses, indicating homozygous Eprn mutants are viable and fertile. The authors interpret ESCs as a sensitized platform for identifying components whose functions may be compensated during in vivo development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 present important in vivo validation showing Eprn is not essential for development despite clear in vitro phenotypes. The Mendelian ratio (C138) provides clear evidence of viability. The interpretation (C142) is reasonable and supported by citations to similar examples (C141). This highlights the difference between facilitating and being essential for a process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Eprn promotes ESC transition and is suppressed by GSK3 inhibition. ESCs cultured without GSK3 inhibition (PD/LIF or LIF/serum) express Eprn and higher Lin28a levels. Loss of Eprn in PD/LIF results in elevated Nanog and delayed transition kinetics despite the dominant self-renewal environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 integrate the regulation and function of Eprn in different culture conditions. The data support that Eprn is suppressed in ground state (2i) but expressed in PD/LIF conditions where it contributes to transition dynamics. The phenotype in PD/LIF (C137) demonstrates functional relevance even in self-renewal conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Eprn exemplifies species-specific lncRNA evolution and function. The majority of lncRNAs are not phylogenetically conserved and may acquire species-specific functions. Eprn is rodent-specific and comprised of 76.4% transposable elements (vs. 41.4% genome average and 33% for lincRNAs). Conserved sequences between mouse and rat Eprn include ERVK LTR and SINE B2 elements preserved for >30 million years. The authors speculate this may relate to rapid rodent embryonic progression requiring acute na\u00efve pluripotency extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C154 present evolutionary context and speculation about Eprn's species-specific role. The sequence analysis and TE composition data (C150-C154) are well-supported. However, the connection to rapid rodent development (C145) is speculative and not directly tested. The evolutionary interpretation is reasonable but remains a hypothesis requiring further comparative studies across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors discuss Lin28a's differential expression pattern and potential role in human iPSC generation. Lin28a is a known human reprogramming factor but is expressed at lower levels in ground state mouse ESCs and pre-implantation epiblast than in post-implantation epiblast and EpiSCs. The authors suggest Lin28a may promote acquisition of primed pluripotency during human iPSC generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C158 present discussion points connecting the findings to human biology. The expression pattern data (C156) is supported by citations. However, the speculation about human iPSC generation (C158) is not tested experimentally and remains hypothetical. This represents reasonable extrapolation but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors discuss Lin28a-let-7 feedback regulation and additional Lin28a functions. Lin28a is itself a let-7 target, forming reciprocal negative feedback loops that can act as a bimodal switch. Previous work showed Lin28a loss reduced ESC heterogeneity in serum/LIF, attributed to let-7g. However, Lin28a can also regulate many RNAs independently of let-7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 appropriately contextualize the findings within established Lin28a biology. These are well-supported by citations to published literature (C159, C161, C163). The discussion acknowledges both let-7-dependent and let-7-independent functions, providing appropriate nuance to the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The authors discuss the role of de novo DNA methylation in ESC transition and development. Dnmt3a/3b have been previously proposed as let-7g targets. Loss of Dnmt3a/3b delays na\u00efve state exit, and the post-implantation epiblast rapidly acquires global DNA methylation dependent on Dnmt3a/3b. However, the Dnmt3a/3b KO phenotype is transient and ESC identity still collapses, indicating DNA methylation facilitates but is not mandatory for exit from na\u00efve pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C169 integrate the current findings with published literature on DNA methylation in development. The distinction between facilitation and requirement (C169) is important and well-supported by the transient phenotype data (C168). This appropriately contextualizes the functional significance of the Dnmt3a/3b findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The authors discuss species differences in na\u00efve pluripotency regulation. Human na\u00efve pluripotency shares features with mouse but shows reduced impact of GSK3 inhibition, partly explained by lack of ESRRB expression in human cells. The authors speculate that absence of Eprn may be an additional factor reducing GSK3 inhibition requirement in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C173 present comparative discussion of mouse and human pluripotency. The species differences in GSK3 inhibition and ESRRB expression (C171-C172) are supported by citations. However, the speculation about Eprn's absence contributing to human differences (C173) is not tested and remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The authors conclude they have mapped a genetic interaction module of lncRNA, proteins, and miRNAs integrated into ESC transition machinery. They propose Eprn's fine-tuning effect could be representative of lncRNA actions in network regulation and illustrative of potential contributions to species diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C176 present the overall conclusions and broader implications. The genetic interaction module (C174) is well-supported by the experimental data. The speculation about representativeness for lncRNA function and species diversification (C175-C176) is reasonable extrapolation from the findings, appropriately presented as potential implications rather than established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors provide extensive background on ESC biology, lncRNAs, and the experimental system. This includes established knowledge about ESCs as in vitro counterparts of pre-implantation epiblast, ground state pluripotency in 2i/LIF, transcription factor networks, lncRNA properties and functions, and the ESC-EpiSC developmental relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11, C23-C29, C106-C108 present background information supported by appropriate citations to published literature. These establish the scientific context for the study and are well-documented in the field. The bioinformatic approach using ESC and EpiSC signatures (C24-C29) provides validation of the screening strategy.",
+    "result_type": "MINOR"
+  }
+]

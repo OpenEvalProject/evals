@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C137",
+      "C138",
+      "C139",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C194",
+      "C195"
+    ],
+    "result": "The multidomain prognostic model combining resting-state fMRI and clinical features achieved approximately 88% accuracy in predicting consciousness recovery across three datasets from two medical centers. The model showed R\u00b2=0.65 (p=0.001) in the training dataset with optimism-corrected R\u00b2=0.28, and maintained performance in external validation with R\u00b2=0.35 (p=0.005) for Beijing HDxt and 88% accuracy for both testing datasets. The model demonstrated good sensitivity (83-100%) and specificity (83-92%) across both subacute and chronic patient populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C137-C152, C194-C195 provide comprehensive evidence for model performance including training accuracy (92%, R\u00b2=0.65), internal validation (optimism-corrected R\u00b2=0.28, OOB accuracy 89%), and external validation (88% accuracy in both testing datasets). Statistical significance is demonstrated with permutation tests (p<0.001), and performance metrics are consistent across different patient subgroups and time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C208",
+      "C209",
+      "C210",
+      "C215",
+      "C221"
+    ],
+    "result": "Feature selection identified five imaging features and four clinical features as key predictors. The functional connectivity between aMPFC (default mode network) and DMPFC (executive control network) had the maximum sMC F-value and a negative weight in the model. Among clinical features, age had the largest sMC F-value, and overall imaging features showed greater sMC F-values than clinical features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C135, C208-C210, C215, C221 describe the feature selection results and predictor importance analysis using sMC F-values. The identification of specific brain regions (aMPFC, PCC, DMPFC) and functional connectivities is supported by Figure 3 and Figure 4, with statistical evidence from the sMC analysis showing the relative importance of predictors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Correlation-based feature selection identified multiple imaging features significantly correlated with CRS-R scores at T1. Brain area connection features from the default mode network (aMPFC, PCC, right lateral parietal cortex) and executive control network (DMPFC, left lateral superior parietal cortex) showed significant correlations, as did numerous functional connectivity features distributed within and between brain networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 describe the initial feature selection results with specific brain regions identified. These findings are supported by the correlation analysis in the training dataset and are consistent with the subsequent CARS-PLSR feature selection (C128-C130), providing converging evidence for the importance of these brain regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C192",
+      "C230"
+    ],
+    "result": "The combination model significantly outperformed single-domain models in both testing datasets. In Beijing HDxt, the combination model achieved 88% accuracy versus 80% (imaging alone) and 68% (clinical alone). In Guangzhou HDxt, the combination model achieved 88% accuracy versus 79% (imaging alone) and 83% (clinical alone). Statistical comparisons using repeated measures ANOVA (p<0.001) and effect-size analysis confirmed significant differences between model types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C178, C192, C230 provide comprehensive evidence comparing single-domain and combination models with detailed performance metrics, statistical tests (repeated measures ANOVA, paired t-tests), and effect sizes. The consistent superiority of the combination model across both testing datasets with different characteristics supports the conclusion that multidomain assessment improves prediction accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C202",
+      "C203"
+    ],
+    "result": "The model successfully predicted outcomes for VS/UWS patients, correctly identifying 7 out of 8 VS/UWS patients who recovered consciousness in the Beijing HDxt dataset (90% accuracy, sensitivity 87.5%, specificity 91.7%). The model also correctly predicted 9 out of 10 patients with \u22653 months duration of DOC who subsequently recovered consciousness, including three patients with \u22656 months duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155, C202-C203 provide specific evidence for model performance in challenging patient subgroups (VS/UWS and prolonged DOC). The high accuracy in these subgroups is particularly important given the clinical difficulty of prognostication in these populations, though the small sample sizes (8 and 10 patients respectively) limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "The proposed PLSR-based method outperformed linear SVM in the training dataset (89% vs 83% accuracy using OOB estimation) and in the Beijing HDxt testing dataset (88% vs 76% accuracy), while achieving similar performance in the Guangzhou HDxt testing dataset (88% for both methods).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C186 provide direct performance comparisons between the proposed method and linear SVM across all three datasets. The proposed method shows consistent or superior performance, particularly in the training and Beijing HDxt datasets, supporting the conclusion of better prediction accuracy and generalizability, though the advantage is modest in one testing dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "The model validates prior findings about the importance of the default mode network (aMPFC and PCC) in DOC prognosis and identifies the anti-correlation between the default mode network and executive control network as the most crucial imaging feature. The model demonstrates good interpretability by confirming previous studies while providing quantitative assessment of predictor importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C223 connect the current findings to established literature about brain networks in DOC, supported by multiple citations (Vanhaudenhuyse et al. 2010, Silva et al. 2015, Fox et al. 2005, Buckner et al. 2008, Di Perri et al. 2016). The model's identification of the aMPFC-DMPFC connectivity as having maximum sMC F-value (C215, C221) provides quantitative support for the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C179"
+    ],
+    "result": "The two testing datasets showed substantial heterogeneity in patient populations. The Beijing HDxt and Guangzhou HDxt datasets differed in etiology distribution (trauma/stroke/anoxia: 12/6/7 vs 8/0/16) and recovery rates (12/25 vs 6/24 patients recovered consciousness). The authors speculate this heterogeneity may reflect differences in medical center characteristics and roles in local healthcare systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C224-C228 describe observed differences between testing datasets with specific numerical data from Table 1. The heterogeneity is well-documented, though the explanation for these differences (C227-C228) is speculative. This heterogeneity is important context for interpreting the model's performance across different populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236"
+    ],
+    "result": "The study has limitations including a relatively low number of patients who recovered consciousness (31/112), variable positive predictive values between testing datasets (91% vs 67%), and three false positive predictions in the Guangzhou HDxt dataset. The authors acknowledge that additional factors (medical complications, nutrition) affect outcomes and recommend larger cohorts and integration of more information for future validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C231-C236 transparently describe study limitations with specific data. The low recovery rate (C231), PPV differences (C233), and false positives (C234) are acknowledged with appropriate recommendations for future work (C232, C236). This honest assessment of limitations is important for contextualizing the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study enrolled 160 DOC patients initially, with 112 patients included in final analysis after exclusions. The Beijing 750 training dataset included 46 VS/UWS and 17 MCS patients plus 30 healthy controls. The Beijing HDxt testing dataset included 20 VS/UWS and 5 MCS patients plus 10 healthy controls. The Guangzhou HDxt testing dataset included 16 VS/UWS and 8 MCS patients. Exclusions included 11 patients (brain lesions/artifacts), 9 deaths, 16 lost to follow-up, and 12 with incomplete outcome data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 provide detailed dataset composition with specific patient numbers. The attrition is substantial (48/160 = 30% excluded) which could introduce selection bias, though reasons for exclusion are documented. The unequal distribution of VS/UWS vs MCS patients across datasets and the relatively small testing dataset sizes are important considerations for generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "fMRI preprocessing included standard steps (slice timing correction, realignment, spatial smoothing with 6mm FWHM Gaussian kernel, linear regression for motion/signal/trend removal) plus motion censoring (FD>1.5mm) and band-pass filtering (0.01-0.08 Hz). Patients with <50 remaining volumes after motion censoring were excluded. Acquisition parameters varied slightly across datasets but used similar protocols (TR/TE=2000/30ms, 4mm slice thickness, 210-240 volumes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C86 describe detailed preprocessing procedures that are standard for resting-state fMRI analysis. The motion censoring approach (FD>1.5mm threshold, C83) is appropriate for DOC patients who cannot control head motion (C82). However, the exclusion criterion of <50 volumes (C85) is relatively lenient and could allow inclusion of data with substantial motion, potentially affecting connectivity estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study defined 22 regions of interest (ROIs) to probe six brain networks (default mode, executive control, salience, sensorimotor, auditory, and visual) that show system-level damage and significant correlations with behavioral assessments in DOC patients. ROI definitions were based on previous brain functional studies. This yielded 231 functional connectivity features and 22 brain area connection features per participant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe the ROI selection and feature extraction approach, supported by citations to Demertzi et al. 2014, 2015 and other studies (C89). The choice of six networks is well-justified by prior literature (C87), though the specific 22 ROIs are not detailed in the main text. The feature calculation (231 pairwise connectivities + 22 template-matching features) is mathematically correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The prognostic model used partial least squares regression (PLSR) with three latent variables (determined by cross-validation) to predict CRS-R scores at T1 from imaging features and clinical characteristics (etiology coded as two dummy variables, age, duration). Predictors were centered and normalized. Model evaluation used R\u00b2 and Bland-Altman plots for regression, and ROC analysis to determine optimal cut-off (13.9) for classification into consciousness recovery (GOS\u22653) vs non-recovery (GOS\u22642).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C109 describe the modeling approach with appropriate statistical methods. PLSR is suitable for handling multicollinearity (C100), and the use of cross-validation to select latent variables (C104) is appropriate. The evaluation metrics (R\u00b2, Bland-Altman, ROC) are standard and appropriate. However, the choice of 3 latent variables seems low given 9 predictors, which may limit model complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Internal validation used bootstrap sampling (1000 iterations) to estimate optimism, yielding an optimism-corrected R\u00b2=0.28 compared to apparent R\u00b2=0.65. Out-of-bag (OOB) estimation provided classification accuracy of 89% in the training dataset (sensitivity 69%, specificity 94%, PPV 100%, NPV 87%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C118 describe appropriate internal validation methods. However, the large difference between apparent R\u00b2=0.65 and optimism-corrected R\u00b2=0.28 (C139) suggests substantial overfitting in the training dataset. The OOB accuracy (89%, C146) is more optimistic than the optimism-corrected R\u00b2 would suggest, raising questions about consistency between validation approaches. The external validation results (88% accuracy) are closer to OOB than to what optimism-corrected R\u00b2 would predict.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C156",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "The model demonstrated robustness by showing that healthy subjects and consciousness recovery patients had significantly higher predicted imaging subscores than non-recovery patients (p<0.05). The high sensitivity (83-100%) across testing datasets resulted in low false-negative rates, successfully identifying 16 of 18 patients who recovered consciousness. The high specificity (83-92%) reduced false positives in predicting low-potential patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156, C196-C200 provide evidence for model robustness and clinical utility. The validation on healthy subjects (C156) is a useful sanity check. The emphasis on sensitivity and specificity with clinical interpretation (avoiding false negatives to not miss recoverable patients, C197) is appropriate. However, the overall numbers are small (16/18 correct predictions, C198), limiting confidence in these estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C237",
+      "C238"
+    ],
+    "result": "The authors acknowledge that signal-to-noise ratio of resting-state fMRI can influence functional connectivity analysis and recommend that calibrations will be necessary when applying the model across different sites, including standardizing MRI acquisition protocols and patient management strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C237-C238 appropriately acknowledge technical limitations and provide reasonable recommendations for future application. The recognition that scanner differences and acquisition protocols affect fMRI data is well-established, and the recommendation for standardization is appropriate. However, the current study used three different acquisition protocols (C73-C75) without explicit calibration, which may have affected results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C187",
+      "C222",
+      "C223",
+      "C242"
+    ],
+    "result": "The authors claim this is the first multidomain prognostic model combining resting-state fMRI and clinical characteristics for chronic DOC, and conclude the model is accurate, robust, and interpretable. They suggest it could offer objective prognosis to optimize patient management and deepen understanding of brain function during unconsciousness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C187, C222-C223, C242 make strong claims about novelty and utility. While the combination of resting-state fMRI with clinical features in a prognostic model may be novel (C4), the claim of being \"first\" is difficult to verify without comprehensive literature review. The characterization as \"accurate, robust, and interpretable\" (C187) is partially supported by the results but overstates the evidence given the substantial optimism in internal validation (R\u00b2 dropped from 0.65 to 0.28), modest external validation performance, and small sample sizes. The potential clinical impact (C242) is speculative.",
+    "result_type": "MAJOR"
+  }
+]

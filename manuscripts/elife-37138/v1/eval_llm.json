@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "BtuG homologs are nearly universally present in Bacteroides B12 transport loci and are exclusive to the Bacteroidetes phylum. B. thetaiotaomicron encodes three B12 transport loci, each containing a btuG homolog adjacent to btuB. Genomic analysis identified 112 BtuG homologs in 313 human gut bacterial strains, with 106 encoded in 106 of 109 btuB-containing operons, and no homologs detected outside Bacteroidetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 are well-supported by comparative genomics analysis shown in Figure 1A and described in the text. The BlastP searches, sequence alignments, and operon analysis provide strong evidence for the widespread distribution and phylogenetic restriction of BtuG homologs. The crystal structure (PDB 3DSM) confirms the \u03b2-propeller fold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C3",
+      "C17",
+      "C20"
+    ],
+    "result": "BtuG2 is essential for efficient B12 transport in B. thetaiotaomicron. The \u0394btuG2 strain shows a ~4 hr longer lag phase in 37 nM B12 medium and no growth in 0.37 nM B12 medium over 72 hours, while parent and complemented strains grow indistinguishably. This demonstrates that BtuG2 plays a critical role in B12 transport, unlike the non-functional BtuE in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C3, C17, and C20 are strongly supported by growth curve data in Figure 1C. The complementation experiment provides critical validation that the phenotype is specifically due to btuG2 deletion. The comparison to E. coli btuE (C16, C17) is appropriately cited and establishes novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "BtuG2 contributes significantly to intracellular B12 accumulation. Using B12 riboswitches as biosensors, the parent strain shows ~70-fold repression of riboswitch-dependent gene expression in 37 nM B12 compared to 0.37 nM and 0 nM B12, while the \u0394btuG2 strain fails to repress riboswitch-regulated gene expression at any B12 concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by qRT-PCR data in Figure 1D. The use of B12 riboswitches as biosensors is well-established (C33, cited to Fowler et al., 2010). The dramatic difference between parent and \u0394btuG2 strains provides strong evidence that BtuG2 is required for B12 accumulation inside cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C20"
+    ],
+    "result": "BtuG2 is critical for B. thetaiotaomicron fitness in the mammalian gut. In gnotobiotic mice, both \u0394btuG2 and \u0394btuB2 strains were outcompeted by the parent strain, with mutant abundance dropping until undetectable by day 24. The absence of BtuG2 has a similarly deleterious impact on in vivo fitness as the absence of the outer membrane transporter BtuB2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C20 are supported by gnotobiotic mouse experiments shown in Figures 1E-F and Figure 1\u2014figure supplement 1. The competitive fitness defect is dramatic and reproducible across multiple mice (n=4-5 per group). The comparison between \u0394btuG2 and \u0394btuB2 phenotypes is particularly striking and establishes the physiological importance of BtuG2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C18"
+    ],
+    "result": "BtuG homologs are predicted to be surface-exposed lipoproteins based on conserved sequence features. Nearly all BtuG homologs have a conserved cysteine residue (Cys-32 in BtuG2) within their first ~18-40 amino acids, preceded by a conserved lipobox-like sequence (VFGS in BtuG2) and followed by a conserved lipoprotein export signal (LES; MKWD in BtuG2) exclusive to Bacteroidetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C18 are supported by sequence alignment analysis shown in Figure 2A and sequence logo analysis of 114 BtuG homologs. The identification of lipobox, cysteine, and LES sequences is based on established sequence motifs (cited to Inouye et al., 1983; von Heijne, 1989; Lauber et al., 2016). The prediction is logical and well-founded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C18"
+    ],
+    "result": "BtuG2 localizes to the cell surface. Proteinase K progressively degrades BtuG2 at increasing concentrations while the periplasmic control protein SusA is protected. BtuG2 associates most strongly with the membrane fraction and is also found in the supernatant fraction, consistent with localization to the interface of the outer membrane and extracellular milieu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 and C18 are supported by protease sensitivity assays (Figure 2B) and cell fractionation experiments (Figure 2C). The differential sensitivity to proteinase K compared to the periplasmic control SusA provides strong evidence for surface exposure. The fractionation data showing membrane and supernatant localization is consistent with a surface-exposed lipoprotein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The N-terminal residues of BtuG2 are critical for protein stability and can be functionally replaced with corresponding sequences from the surface-exposed lipoprotein SusD. Deletion of the signal sequence, mutation of Cys-32 to alanine, or mutation of LES residues (Lys-34, Trp-35, Asp-36) to alanine all result in loss of BtuG2 detection despite normal transcription. However, replacing the signal sequence or signal sequence+LES with corresponding SusD sequences restores both protein production and B12-dependent growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by Western blot, qRT-PCR, and growth curve data in Figure 2\u2014figure supplement 1A-D. The mutagenesis experiments demonstrate the importance of N-terminal sequences, while the complementation with SusD sequences provides strong evidence for functional equivalence of surface-localization signals. The controls showing normal transcription are important for ruling out transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C19"
+    ],
+    "result": "BtuG2 associates with the B12 transport machinery protein BtuB2. Deletion of btuB2 changes BtuG2 localization from predominantly membrane-associated to predominantly supernatant. Tandem affinity purification of BtuB2-associated proteins readily pulls down BtuG2, while TAP of an untagged strain or a strain with TAP epitopes on the unrelated transporter SusC fails to pull down BtuG2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 and C19 are supported by fractionation data (Figure 2C) and co-immunoprecipitation experiments (Figure 2D). The change in BtuG2 localization upon btuB2 deletion suggests a physical interaction. The TAP-tag experiments with appropriate negative controls (untagged strain and SusC-tagged strain) provide strong evidence for specific interaction between BtuG2 and BtuB2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C21"
+    ],
+    "result": "BtuG2 directly binds cyanocobalamin in vitro. SEC-MALS analysis shows nearly identical traces at 280 nm (protein absorbance) and 362 nm (B12 absorbance) corresponding to the BtuG2 elution volume, indicating direct binding. BtuG homologs from B. vulgatus, B. uniformis, and B. coprophilus also bind cyanocobalamin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C21 are supported by SEC-MALS data in Figure 3A and Figure 3\u2014figure supplement 1. The overlapping absorbance traces at 280 nm and 362 nm provide strong evidence for direct binding. The demonstration that other BtuG homologs also bind B12 suggests this is a conserved function. The physical properties of cyanocobalamin and aromatic amino acids (C60, C61) are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C4",
+      "C21"
+    ],
+    "result": "BtuG2 binds cyanocobalamin and dicyanocobinamide with femtomolar affinity. SPR measurements show KD = 1.87 \u00b1 0.76 \u00d7 10^-13 M for cyanocobalamin and KD = 1.93 \u00b1 0.63 \u00d7 10^-13 M for dicyanocobinamide, both at 1:1 stoichiometry. The kon rates (~10^9 M^-1s^-1) are consistent with diffusion-limited binding, and the koff rates (~10^-4 s^-1) correspond to an average association time of over 1 hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70, C4, and C21 are supported by SPR data in Figure 3B. The femtomolar affinity is exceptionally high and well-characterized. The kinetic parameters are internally consistent (KD = koff/kon). The comparison to diffusion-limited enzymes (C69, cited to Corzo, 2006) is appropriate. The calculation of association time from koff is correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C136",
+      "C137"
+    ],
+    "result": "BtuG2 exhibits contrasting electrostatic charge distributions on opposing faces. The crystal structure reveals a predominantly positive electrostatic potential on the face displaying the C-terminal 6x-His tag and a predominantly negative potential on the opposing face. This property is not intrinsic to seven-bladed \u03b2-propeller proteins. Given that the cobalt ion of corrinoids carries a positive charge, surface electrostatic charges could orient corrinoids by drawing them into the negative face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74, C136-C137 are supported by electrostatic surface analysis shown in Figure 3\u2014figure supplement 2A-B. The comparison to other \u03b2-propeller proteins (EUBREC_1955 and MSMAS_RS11935) demonstrates that the dipolar electrostatic field is not a general feature of this fold. The positive charge of the cobalt ion (C73, cited to Obeid et al., 2015) is well-established. The inference about ligand orientation (C74) is logical but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "BtuG2 can function extracellularly in trans to promote cyanocobalamin-dependent growth. \u0394btuG2 recipient cells grow robustly when provided with BtuG2-containing culture supernatant incubated with cyanocobalamin, but fail to grow when provided \u0394btuG2 supernatant with B12, BtuG2 supernatant without B12, or when recipient cells lack corrinoid transport machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by trans-complementation experiments shown in Figure 4A. The experimental design with appropriate negative controls (no BtuG2, no B12, no transport machinery) is rigorous. The ability of extracellular BtuG2 to rescue growth demonstrates that it can function in trans, though this appears to be a minor aspect of its function (see C82-C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "BtuG2-6xHis purified from E. coli failed to restore cyanocobalamin-dependent growth to a \u0394btuG2 mutant, suggesting that lipidation or some other Bacteroides-specific feature may be important for protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 are stated as observations but the data are not shown ('data not shown'). While the inference about lipidation is reasonable given the sequence features and localization data, the lack of presented data makes this result uncertain. This is an important control that should have been shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "BtuG2 primarily functions in cis rather than as a public good. BtuG2-producing parent cells fail to rescue the cyanocobalamin-dependent growth defect of a \u0394btuG2 strain when co-cultured, consistent with its localization as a membrane-bound lipoprotein and the competitive defect in the mouse gut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by co-culture competition experiments in Figure 4B. The failure of cross-feeding in co-culture contrasts with the trans-complementation result (C75-C79) and suggests that BtuG2 primarily functions in cis. This is consistent with its membrane localization (Figure 2C) and the competitive fitness defect in mice (Figures 1E-F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Humans absorb cobalamin from their diet with the help of two carrier proteins: haptocorrin (secreted from salivary glands, binds B12 in the stomach) and intrinsic factor (released from parietal cells, binds cobalamin in the duodenum after haptocorrin degradation, carries B12 through the intestinal tract to the distal ileum for uptake). As IF traverses the small intestine, it encounters increasing microbial densities (from ~10^3 to ~10^8 cells/g).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are well-established knowledge about human B12 absorption, appropriately cited to Nielsen et al., 2012 and Scheithauer et al., 2016. This background information provides important context for understanding the potential impact of BtuG2 on host B12 absorption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C22"
+    ],
+    "result": "B. thetaiotaomicron can acquire cyanocobalamin from intrinsic factor in a BtuG2-dependent manner. The parent strain grows readily when provided IF-cyanocobalamin complexes, while IF alone or the wash filtrate does not support growth. Recipient cells lacking btuG2 do not grow when provided IF-cyanocobalamin, indicating that BtuG2 is required for acquiring B12 from IF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 and C22 are supported by growth experiments shown in Figure 5A. The experimental design with appropriate controls (IF alone, wash filtrate, \u0394btuG2 strain) is rigorous. The inability of the parent strain to grow on the wash filtrate (C94-C95) demonstrates that B12 does not spontaneously dissociate from IF during the washing steps, strengthening the conclusion that BtuG2 actively removes B12 from IF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C5"
+    ],
+    "result": "BtuG2 can directly acquire cobalamin from IF-cobalamin complexes. SEC-MALS analysis shows that addition of BtuG2 to IF-cobalamin shifts the majority of 362 nm absorbance (B12) from the IF elution volume to the BtuG2 elution volume, indicating direct transfer of B12 from IF to BtuG2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 and C5 are supported by SEC-MALS data in Figure 5B. The shift in B12 absorbance from the IF peak to the BtuG2 peak provides strong evidence for direct transfer. This is a key mechanistic finding that demonstrates BtuG2 can remove B12 from IF, not just bind free B12.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "BtuG2 in culture supernatants can facilitate bacterial acquisition of cobalamin from IF-cobalamin complexes. \u0394btuG2 recipient cells grow readily when provided \u0394btuB2 culture supernatants (containing BtuG2) supplemented with IF-cobalamin, but not when provided \u0394btuG2 supernatants with IF-B12, \u0394btuB2 supernatants with IF alone, or \u0394btuB2 supernatants with IF-B12 wash filtrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by growth experiments in Figure 5C. This experiment combines the trans-complementation approach (Figure 4A) with IF-B12 complexes (Figure 5A) to demonstrate that extracellular BtuG2 can facilitate acquisition of B12 from IF. The multiple negative controls strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C128",
+      "C129"
+    ],
+    "result": "BtuG2 and intrinsic factor achieve strong B12 binding affinity through different kinetics. Reported KD values for IF-cobalamin span 10^-9 to 10^-15 M, with the most extreme showing kon ~7 \u00d7 10^7 M^-1s^-1 and koff ~4 \u00d7 10^-7 s^-1. BtuG2's kon (~10^9 M^-1s^-1) is orders of magnitude greater than IF's, suggesting superior ability to bind free cobalamin. However, IF's koff is orders of magnitude lower than BtuG2's, corresponding to association times of ~700 hr for IF-cobalamin versus ~1 hr for BtuG2-cobalamin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124, C128-C129 are supported by comparison of kinetic parameters from Figure 3B (BtuG2) and cited literature (IF; Fedosov et al., 2005; Brada et al., 2001; Fedosov et al., 2006). The calculations of association times from koff rates are correct. The interpretation that BtuG2 has superior kon but IF has superior koff is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The different environments and functions of IF and BtuG2 may explain their different binding kinetics. IF first encounters free cobalamin in the duodenum with few microbes (~10^3/g) and must maintain B12 binding while traversing several meters of intestine, favoring low koff. BtuG2 faces high microbial densities (>10^11/g) in the large intestine and acts in cis to capture corrinoids for delivery to BtuB on the same cell, potentially favoring high kon for competitive advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127, C130-C132 present a logical interpretation of the kinetic differences based on the different physiological contexts of IF and BtuG2. The microbial densities are appropriately cited (Scheithauer et al., 2016; Whitman et al., 1998). The functional differences (IF must transport B12 over long distances; BtuG2 acts locally in cis) are supported by the data. However, the evolutionary interpretation (C127, C132) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C138",
+      "C139"
+    ],
+    "result": "The mechanism of B12 transfer from IF to BtuG2 is unclear but may involve electrostatic effects. Diffusion-limited enzymes like acetylcholinesterase can use surface electrostatic charges to enhance protein-ligand contact. BtuG2's uncommon dipolar electrostatic charge distribution could orient free corrinoids or potentially alter IF-cobalamin stability without direct protein-protein interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C135, C138-C139 are speculative about the mechanism of B12 transfer. While the electrostatic properties of BtuG2 are well-characterized (Figure 3\u2014figure supplement 2) and the analogy to acetylcholinesterase is appropriate (cited to Tan et al., 1993; Ripoll et al., 1993), there is no direct experimental evidence for how B12 is transferred from IF to BtuG2. The authors acknowledge this uncertainty (C133).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "While early studies suggested the microbiota contributes vitamins to the host, it is unlikely that the microbiota makes a significant contribution to host B12 supply. B12 constitutes less than 2% of fecal corrinoid pools in humans, and gut microbes efficiently convert dietary B12 into alternate corrinoids that cannot be used by humans. BtuG could pose a direct obstacle to host B12 absorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by appropriate citations (Barnes, 1967; Allen and Stabler, 2008). The inference that BtuG could interfere with host B12 absorption (C108) is logical given the demonstrated ability to remove B12 from IF, though the clinical significance is uncertain (see C120-C121).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Evolutionary pressures in the high-density gut environment may have driven selection for increased corrinoid binding affinity in BtuG. Many Bacteroidetes encode incomplete B12 biosynthesis pathways. E. coli (lacking BtuG) grows readily on 0.4 nM B12, while B. thetaiotaomicron requires BtuG under these conditions. The ability of BtuG to acquire B12 from IF may have emerged as a byproduct of inter-microbial competition, though BtuG has evolved femtomolar affinity while maintaining the capacity to release B12 for transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 present an evolutionary interpretation of the findings. The comparison to E. coli (C111-C112) is supported by citation (Di Girolamo et al., 1971) and Figure 1C. The observation about incomplete B12 biosynthesis pathways in Bacteroidetes (C110) is stated as knowledge. The evolutionary interpretation (C109, C113) is speculative but logical. The observation that BtuG maintains capacity to release B12 (C114) is inferred from the functional data showing it participates in B12 transport.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "BtuG may be responsible for Bacteroides' ability to interfere with host cobalamin absorption in patients with small intestinal bacterial overgrowth. Early studies showed Bacteroides were particularly adept at removing cobalamin from IF in vitro, and some patients' B12 deficiency was corrected by antibiotics targeting Bacteroides. BtuG is universally present among Bacteroides and could be one extracellular factor responsible. While BtuG-mediated vitamin piracy may be well tolerated by healthy hosts, conditions of bacterial overgrowth or diminished IF production could alter this effect, and even minor B12 deficiencies could have health consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C118-C121 connect the findings to clinical observations. The historical studies are appropriately cited (Giannella et al., 1971, 1972; Schj\u00f8nsby et al., 1973, 1977). The inference that BtuG could be responsible (C118) is logical given the demonstrated ability to remove B12 from IF. The genomic analysis showing BtuG is universally present in Bacteroides (C119) is supported by the data (C23-C29). The speculation about clinical implications (C120-C121) is appropriately cautious and cites relevant literature (McCaddon, 2013; Moore et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C1",
+      "C6"
+    ],
+    "result": "Surface-exposed nutrient binding proteins may determine Bacteroides' ability to capture both carbon and critical vitamins. Bacteroides encode dozens of Sus-like systems (outer membrane \u03b2-barrel protein + surface-exposed lipoprotein + other components) that digest and import polysaccharides. The findings suggest Bacteroides use surface-exposed lipoproteins not only for capturing polysaccharides but also to acquire key vitamins in the gut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142, C1, and C6 place the findings in the broader context of Bacteroides nutrient acquisition strategies. The Sus-like systems are well-characterized (cited to Koropatkin et al., 2012; Glenwright et al., 2017). The parallel between polysaccharide acquisition (Sus systems) and vitamin acquisition (BtuG system) is logical and supported by the structural and functional similarities (both involve surface-exposed lipoproteins working with outer membrane transporters).",
+    "result_type": "MAJOR"
+  }
+]

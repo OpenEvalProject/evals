@@ -1,0 +1,2013 @@
+{
+  "submission": {
+    "id": "ac04b2d7-8e0c-4f22-80cc-5b4dba389289",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:08:52.934710Z",
+    "updated_at": "2025-12-02T00:08:52.934710Z"
+  },
+  "content": [
+    {
+      "id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "submission_id": "ac04b2d7-8e0c-4f22-80cc-5b4dba389289",
+      "content_type": "manuscript",
+      "content_text": "# An incoherent feedforward loop facilitates adaptive tuning of gene expression\n\n## Authors\n\n- Jungeui Hong<sup>1</sup>\n- Nathan Brandt<sup>1</sup>\n- Farah Abdul-Rahman<sup>1</sup>\n- Ally Yang<sup>3</sup>\n- Tim Hughes<sup>3</sup>\n- David Gresham<sup>1</sup> ([ORCID: 0000-0002-4028-0364](https://orcid.org/0000-0002-4028-0364)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Center for Genomics and Systems Biology New York University New York United States\n2. Memorial Sloan Kettering Cancer Center New York United States\n3. Banting and Best Department of Medical Research, Donnelly Centre University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe studied adaptive evolution of gene expression using long-term experimental evolution of Saccharomyces cerevisiae in ammonium-limited chemostats. We found repeated selection for non-synonymous variation in the DNA binding domain of the transcriptional activator, GAT1, which functions with the repressor, DAL80 in an incoherent type-1 feedforward loop (I1-FFL) to control expression of the high affinity ammonium transporter gene, MEP2. Missense mutations in the DNA binding domain of GAT1 reduce its binding to the GATAA consensus sequence. However, we show experimentally, and using mathematical modeling, that decreases in GAT1 binding result in increased expression of MEP2 as a consequence of properties of I1-FFLs. Our results show that I1-FFLs, one of the most commonly occurring network motifs in transcriptional networks, can facilitate adaptive tuning of gene expression through modulation of transcription factor binding affinities. Our findings highlight the importance of gene regulatory architectures in the evolution of gene expression.\n\n## Introduction\n\nGene expression evolution is a pervasive source of phenotypic diversity between and within species (Jacob and Monod, 1961; Jacob, 1977; Nocedal and Johnson, 2015). Genetic variation causing evolutionary changes in gene expression impacts either the regulatory elements of a gene (cis-regulatory) or the factors that control its expression (trans-regulatory). The relative importance of these two classes of variation across evolutionary timescales is the source of long-standing debate (Wittkopp et al., 2004; Hoekstra and Coyne, 2007; Stern and Orgogozo, 2008; Soskine and Tawfik, 2010). A variety of approaches have been developed for identifying the genetic basis of intraspecific gene expression variation (Brem et al., 2002; Yvert et al., 2003) and defining the landscape of mutational changes that affect gene expression (Metzger et al., 2016). Comparative genomics using extant organisms is typically used for inferring the evolutionary processes and outcomes that underlie the evolution of gene expression (Wittkopp, 2010). However, these approaches face the challenge of distinguishing neutral from adaptive variation and cannot provide insights into the dynamics of gene expression evolution in evolving populations.\n\nThe regulation of gene expression typically comprises multiple regulatory factors with both activating and repressive functions that coordinately control the dynamics and output of gene transcription. Regulatory networks controlling gene expression are composed of network motifs, recurrently occurring patterns of interaction between regulatory factors (Alon, 2007). Studies of global regulatory networks in Escherichia coli (Shen-Orr et al., 2002) and Saccharomyces cerevisiae (Lee et al., 2002) identified three component feed-forward loops (FFL) as one of the most commonly occurring network motifs. A FFL comprises a transcription factor that regulates a second transcription factor. Both transcription factors bind the regulatory region of a third target gene and jointly control its expression. As transcription factors can be either activators or repressors, there are eight possible configurations of three component FFLs (Mangan and Alon, 2003). Of these variants, incoherent type-1 feed-forward loops (I1-FFL) are one of the most common, occurring hundreds of times in bacteria and yeast gene regulatory networks (Lee et al., 2002; Mangan and Alon, 2003; Milo et al., 2002). These network motifs are termed \u2018incoherent\u2019 as the upstream regulator directly activates the target gene and indirectly represses it by activating a repressor of the target gene. I1-FFL function to speed the response time of gene expression (Mangan and Alon, 2003) and for particular parameter values, detect relative changes in input signals rather than absolute levels of inputs (Goentoro et al., 2009). 1I-FFLs are found throughout gene regulatory networks in multiple organisms. Although the dynamic properties and behavior of the I1-FFL have been extensively studied, the significance of this network in evolution is not well understood. In particular, how I1-FFLs constrain or facilitate evolutionary pathways remains unknown.\n\nLong-term experimental evolution (LTEE) provides a means of studying evolutionary dynamics, processes and outcomes. Performing replicated LTEE in controlled conditions and assessing the fitness and phenotypes of evolved lineages and populations enables tests of the role of gene expression evolution in response to selection and the extent to which selection results in recurrent outcomes. LTEE in microorganisms provides evidence for the role of adaptive changes in gene expression in response to selection as parallel changes in gene expression have been observed in replicated populations of both E. coli (Cooper et al., 2003) and S. cerevisiae (Ferea et al., 1999; Gresham et al., 2008). However, proving that changes in gene expression are adaptive and identifying the underlying molecular bases of gene expression changes acquired during experimental evolution remains challenging.\n\nQuantitative DNA sequencing enables the comprehensive identification of genomic variants, their frequencies and dynamics during adaptive evolution (Gresham et al., 2008; Kao and Sherlock, 2008; Wenger et al., 2011; Hong and Gresham, 2014). In LTEE performed in conditions of constant nutrient-limitation using chemostats, increased expression of nutrient transporter genes is a primary mode of adaptive evolution (Gresham and Hong, 2015). Copy number variants (CNVs), comprising gene amplifications that result in increased expression of transporter genes (Gresham et al., 2008; Hong and Gresham, 2014), are a recurrent class of adaptive alleles in chemostat LTEE. However, adaptive mutations in trans factors, such as transcription factors (TFs) are also frequently identified in LTEEs (Kao and Sherlock, 2008; Hong and Gresham, 2014). These variant alleles are primarily missense, frame-shift or nonsense mutations that are likely to confer strong effects on gene expression in evolved lineages (Wray, 2007; Carroll, 2008). However, how protein coding changes in transcriptional regulators identified during LTEE alter gene expression and how these changes in expression confer increased fitness remains unknown.\n\nThe regulation of nitrogen utilization in budding yeast represents one of the best understood gene regulatory networks in any system. Control of nitrogen catabolite repression (NCR) transcription is achieved by four transcription factors, that bind to the same GATAA consensus sequence (Cooper, 2002; Magasanik and Kaiser, 2002; Hofman-Bang, 1999). Two factors \u2013 GLN3 and GAT1 \u2013 have activating activity and two factors \u2013 DAL80 and GZF3 \u2013 have repressive activity. GLN3 is constitutively expressed and regulated post-translationally by TORC1-dependent phosphorylation that prevents its entry into the nucleus. In conditions in which TORC1 activity is low, dephosphorylation of GLN3 enables it to enter the nucleus where it activates expression of GAT1, DAL80 and GZF3 (Figure 1\u2014figure supplement 1). The promoters of GAT1, DAL80 and GZF3 contain GATAA binding sites and thus they coordinately regulate expression of their targets and themselves. The NCR regulatory components comprise four interconnected I1-FFLs comprising either of the activators, GLN3 and GAT1, and either of the repressors DAL80 or GZF3, that function to regulate the expression dynamics and output of\u00a0~41 target genes (Godard et al., 2007) that encode products required for assimilating diverse nitrogen sources. NCR is an ideal system for studying the evolution of gene expression owing to the well-characterized properties of its four regulators and the small number of well-defined direct targets.\n\nHere, we used LTEE in ammonium-limited chemostats to investigate the functional basis of adaptive increases in gene expression. Leveraging our understanding of selection in chemostats primarily operating on nutrient transport (Gresham and Hong, 2015) and the detailed understanding of nitrogen-regulated gene expression in yeast (Cooper, 2002; Magasanik and Kaiser, 2002) we studied how adaptive variation in the trans regulatory factor, GAT1, mediates its effects on fitness by altering gene expression. We find that the beneficial effects of recurrently selected missense mutations in GAT1 are a result of its effect on increasing expression of the high affinity ammonium transporter gene, MEP2. Surprisingly, we find that these effects are the result of decreased affinity for the GAT1 consensus binding site that differentially impact binding at the promoters of the repressor DAL80 and their common transcriptional target, MEP2. Using functional assays and mathematical modeling we find that adaptive evolution acts to increase the transcriptional output from the I1-FFL comprising GAT1, DAL80 and MEP2 by decreasing transcription factor affinities. Thus, in addition to their important dynamic behavior, I1-FFL possess properties that may be exploited by evolution to tune their output thereby increasing organismal fitness.\n\n## Results\n\n### De novo missense mutations in GAT1 are positively selected in ammonium-limited chemostats\n\nPreviously, we identified repeated selection of independent missense mutations in the\u00a0DNA binding domain\u00a0of GAT1\u00a0within a single LTEE population maintained in ammonium-limited chemostats (Hong and Gresham, 2014). In this study, we aimed to determine whether adaptive mutations in GAT1 result in alteration of its regulatory activities and, if so, how these changes impact fitness. First, we tested the repeatability of adaptive GAT1 mutations in initially clonal populations maintained in ammonium-limited environments by performing LTEE in triplicate using asexually reproducing populations in ammonium-limited chemostats (Figure 1a). We found that evolution is highly parallel both at the phenotypic and genotypic levels over 250 generations. We observed significant increases in population level fitness with an overall deceleration in the rate of fitness improvement with time as seen in previous LTEEs (Barrick et al., 2009) (Figure 1b). Using whole genome, whole population sequencing of evolving populations, we identified recurrent selection for missense mutations in the DNA binding domain of GAT1 during the early stages of adaptive evolution in each population. Consistent with positive selection for increased ammonium transport capacity in this environment, we also identified CNVs that include MEP2, which encodes a high-affinity ammonium transporter, at high frequencies following 250 generations of selection (Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig1-v3.jpg)\n\n**Figure 1.:** (a) LTEE design. Three chemostat vessels w ere founded with a clonal ancestral population and maintained under constant dilution with defined media containing 0.4\u00a0mM (NH 4) 2 SO 4 , (0.8mM nitrogen). Chemostats were maintained in continuous mode for 250 generations (~ 3 months) and samples obtained every 10-20 generations for archiving. (b) Dynamics of population fitness. The rate of fitness improvement decelerates over time for three independently replicated LTEE (R1, R2 and R3). Error bar are 95% CI of linear regression analysis of competition assays, which comprised six time points each. (c) Allele dynamics in parallel LTEE. Whole population while genome sequencing was performed on samples from the three LTEEs at 50, 100 and 250 generations to identify high frequency mutations (> ~10%) using an Illumina HiSeq2500 in 2\u00a0x\u00a050\u00a0bp paired end mode with an average read depth of ~50X. The frequency of the MEP2 amplification was defined as the proportion of clones bearing more than 2 copies of MEP2 among 96 randomly selected clones. GAT1 (red lines) variants are a primary target in the earliest generations of selection but, in some LTEE, are ultimately replaced by other alleles including CNVs that encompass MEP2 (blue lines) and mutations in genes that control cell cycle and growth. x- and y-axes represent time in generation and AF (allele frequency) in %, respectively. (d) Dynamics of minor frequency mutations. 12 genes that have previously been identified as adaptive targets of selection in different nitrogen-limited environments (see method) were subjected to targeted deep sequencing. Multiple missense mutations in GAT1 are present simultaneously in each population and compete with each other during the earliest generations. Discrepancies in the estimated AFs of the same mutations identified in Figure 1c are likely due to noise in the sequencing assay. x- and y-axes represent time in generation and AF (allele frequency) in %, respectively (e) Mutational landscape of adaptive GAT1 mutations. All mutations in GAT1 with population AF greater than 1% are shown. The DNA binding domain of GAT1 is a mutational hotspot in all ammonium-limited LTEE. Multiple missense (protein coding alteration) mutations were observed but no nonsense or frame-shift mutations were detected. (f), The DNA binding domain of GAT1 is under purifying selection in the wild. dN and dS values (see method for their definition) for GAT1 at each amino acid position were calculated using SNAP v2.1.1 (http://www.hiv.lanl.gov/content/sequence/SNAP/SNAP.html) Korber, 2000 using sequences from 42 different wild yeast strains. Unlike LTEE in ammonium-limited chemostats, the GAT1 DNA binding domain is under purifying selection implying that non-synonymous mutations are likely to be detrimental in dynamic environments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The NCR regulon is controlled by four GATA-binding transcription factors: two activators (GLN3 and GAT1) and two repressors (DAL80 and GZF3). Under nitrogen rich conditions, GLN3, and any GAT1, are phosphorylated and retained in the cytoplasm in a TORC1-dependent manner. In nitrogen-poor conditions, GLN3 and GAT1 are dephosphorylated allowing them to enter the nucleus and activate NCR sensitive genes. The activator, GAT1, and repressors, DAL80 and GZF3 contain GATAA consensus sequences in their promoters and therefore are subject to NCR regulation resulting in both positive and negative regulatory loops. The activator GLN3 is constitutively expressed and acts to initiate NCR expression subject to post-translational regulation.\n\nRecently, lineage tracking during LTEE in large populations has shown that many independently derived beneficial alleles are present at low frequencies and unlikely to be detected using whole genome, whole population sequencing (Levy et al., 2015). Therefore, we investigated whether additional low frequency mutations of GAT1 were present in evolving populations using targeted deep sequencing (Figure 1d and Supplementary file 1A; see Materials\u00a0and\u00a0methods). Each of the evolving populations contained multiple different GAT1 mutations at frequencies of 10\u22122-10\u22123. These GAT1 alleles reach their highest frequencies during the early stages of adaptive evolution before lineages containing MEP2 CNVs ultimately rise to high frequency in each population. Importantly, all identified GAT1 mutations are missense mutations in its DNA binding domain (Figure 1e), which we find is under strong purifying selection in natural environments (Figure 1f).\n\n### GAT1 mutations increase fitness in ammonium-limited chemostats in a MEP2 dependent manner\n\nTo study the functional basis of adaptive GAT1 mutations, we isolated clones with three individual alleles from distinct evolved lineages \u2013 gat1-1 (W321L), gat1-2 (C331Y), and gat1-3 (R345G) \u2013 (Figure 2a) using backcrossing and allele specific PCR genotyping (Hong and Gresham, 2014). Using competition assays (see Materials\u00a0and\u00a0methods), we determined the fitness of the evolved lineages that contain GAT1 mutations plus an additional 3\u20134 variants in other genes acquired during LTEE. These variants include two MEP2 alleles that we previously identified as reversions of a lab acquired mutation in the transmembrane domain of MEP2 (Hong and Gresham, 2014). We also quantified the fitness of the GAT1 mutations alone, in different nitrogen-limiting conditions \u2013 ammonium, glutamine, proline and urea \u2013 using chemostats and rich media (YPD) batch condition. All strains containing GAT1 missense mutations are significantly increased in fitness in ammonium-limited chemostats, but exhibit decreased fitness in all other nitrogen-limited conditions consistent with antagonistic pleiotropy (Figure 2b). By contrast, a GAT1 knock out (KO) strain exhibits a fitness defect in both ammonium and proline limited chemostats. GAT1 mutations are nearly neutral in YPD batch media conditions in which GAT1, and the entire NCR regulon, is transcriptionally repressed. Collectively, these results suggest that missense mutations in the DNA binding domain of GAT1 acquired during LTEE alter its function rather than rendering it non-functional.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig2-v3.jpg)\n\n**Figure 2.:** (a) 3D structure model of GAT1 DNA binding domain. The 3D structure is based on available GATA factor DNA binding domain structures in the modbase database (https://modbase.compbio.ucsf.edu/). Adaptive amino acid changes selected for the subsequent analyses lie within, or in close proximity, to the DNA binding domain of GAT1. (b) Fitness effects of GAT1 mutations. GAT1 variants are beneficial in ammonium-limited chemostats and confer increased fitness in the lineages in which they occur. GAT1 variants confer a fitness cost in non-ammonium limited environments consistent with antagonistic pleiotropy. Error bars represent 95% CI of linear regression analysis of competitive fitness assays. \u2018*\u2019 denotes the absence of a 95% CI estimate due to a small number of time points sampled in the fitness assay (<5). (YPD: YPD batch culture, AS: Ammonium sulfate-limited chemostat, Gln: Glutamine-limited chemostat, Pro: Proline-limited chemostat, Urea: Urea-limited chemostat; all nitrogen-limited media were normalized to 0.8mM nitrogen).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Fitness effect of MEP2 KO in the background of the ancestral strain (FY4), gat1-1 and gat1-3 in ammonium-limited chemostats. All conditions and methods are identical to those used in Figure 2b. Deletion of MEP2 ORF and its promoter sequences is highly deleterious in ammonium-limited chemostats regardless of the genotype of GAT1. (b) Effect of MEP2 gene copy number on fitness and expression under ammonium limitation. Three clones were identified that contain increased MEP2 gene copy number from the last time point of each LTEE. DNA copy number and mRNA expression of MEP2 was quantified by qPCR assays targeting both MEP2 and ACT1 genes in evolved lineages, gat1-1 mutant strain and the ancestral strain (FY4).\n\nIncreased gene expression of nutrient transporters through gene amplification is a prevalent means of increasing fitness in nutrient-limited chemostats (Hong and Gresham, 2014). We asked whether the effects of beneficial GAT1 mutations are mediated by their impact on MEP2 regulation and therefore represent an alternate class of adaptive mutations with the same functional effect of increased transporter expression. To test the importance of MEP2 for the increased fitness associated with GAT1 variants we deleted either the ORF or the promoter region (1 kb upstream of the ORF) of MEP2 in the background of the gat1-1 and gat1-3 alleles and tested their fitness in ammonium-limited chemostats. All strains had severely reduced fitness (Figure 2\u2014figure supplement 1a) consistent with the beneficial effect of GAT1 variants being dependent, at least in part, on MEP2 expression. We also isolated evolved lineages with increased copy numbers of MEP2 from each of the three LTEEs and quantified MEP2 copy number, expression level and relative fitness in ammonium-limited conditions (Figure 2\u2014figure supplement 1b). Increased copy number of MEP2 correlates with increased mRNA expression and results in fitness increases (s\u00a0>\u00a01.3) greater than that conferred by GAT1 variants (Figure 2b). The detection of lineages with increased fitness and increased expression of MEP2 resulting from CNVs is consistent with fitness increases in GAT1 variant lineages being attributable to their effect on MEP2 expression.\n\n### GAT1 variants result in increased expression of MEP2 but decreased expression of DAL80\n\nWe investigated the effect of adaptive missense mutations in GAT1 on gene expression. We performed RNA-seq using three strains that contain one of each of the three adaptive GAT1 mutations alone cultured in ammonium-limited chemostats. We compared expression profiles of GAT1 adaptive mutations with those in the corresponding evolved lineages from which the mutations were isolated (Hong and Gresham, 2014). We found significant divergence of NCR gene expression in all tested strains (Figure 3a and Supplementary file 1B). GAT1 mutations result in increased expression of genes encoding ammonium transporters (MEP1, MEP2, and MEP3) as well as transporters that import other nitrogen sources such as urea, allantoin and GABA. The evolved lineages, which contain GAT1 mutations as well as additional mutations, show more \u2018fine-tuned\u2019 gene expression in which only ammonium permease-encoding genes are increased in expression while other NCR targets, which are likely to be irrelevant when ammonium is the only nitrogen source, are repressed. By\u00a0contrast, GAT1 mutations result in a strong reduction in DAL80 expression. The expression of GLN3 and GZF3 is unchanged in the presence of GAT1 variants (Supplementary file 1B) suggesting that the altered expression of MEP2 and DAL80 is attributable to changes in GAT1 binding affinity.\u00a0Interestingly, GAT1 variants also result in increased expression of GAT1 itself.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig3-v3.jpg)\n\n**Figure 3.:** (a) Gene expression profile of NCR genes in different GAT1 variant lineages.\u00a0\u2018Blue\u2019 gene names indicate permease-encoding genes for different nitrogen sources. Clustered gene expression values relative to the ancestral strain (log2 transformed fold change compared to the ancestor without statistical filtering) are shown for 41 experimentally confirmed NCR target genes. Expression data for the final evolved population and two lineages containing multiple mutations in addition to GAT1 variants from our previous report (Hong and Gresham, 2014) are also presented for reference. (b) Transcriptional reporter assay for MEP2 and DAL80. We quantified GFP expression from the MEP2 and DAL80 promoters in the ancestral and GAT1 variant backgrounds in different nitrogen-limited conditions. In nitrogen-limited chemostats containing different individual sources of nitrogen (ammonium, glutamine, proline and urea), all mutant strains (gat1-1, gat1-2 and gat1-3) show the same gene expression pattern for DAL80 (decreased\u00a0expression) and MEP2 (increased\u00a0expression) compared to the ancestral genotype. A GAT1 KO mutant results in decreased expression of both DAL80 and MEP2. (c) GFP reporter assay for MEP2 and DAL80 promoters in heterozygous diploids. The gat1-1/GAT1 genotype results in expression of DAL80 or MEP2 comparable to the ancestral strain. The distribution and median expression (dashed line) for each genotype is shown.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Construction of transcriptional reporters for GAP1, MEP2, GZF3 and DAL80 promoters. The promoters of five different NCR target genes were amplified via PCR to include partial overlap with GFP sequence (green) and the HO locus (purple). In addition, the corresponding terminator sequence for each NCR target gene was amplified creating overlaps with GFP sequence (green) or an artificial anchor sequence (dark blue). The GFP gene was also amplified so that it contained partial overlaps with the two amplicons containing the promoter and terminator sequences for each gene. The three amplicons were fused using fusion PCR, which included extended primers containing sequence complementary to the 5\u2019 UTR of HO (light blue) and an artificial linker sequence (yellow). The KanMX cassette (dark green) was also amplified from a plasmid such that its left arm was complementary to the artificial linker sequence (yellow) and its right arm was complementary to 3\u2019 UTR of the HO locus (blue). The two full length constructs were co-transformed into the relevant genotype and integration at the HO locus confirmed by selection for G418 resistance and PCR. GFP expression was measured in a flow cytometer to quantify transcriptional activity from each reporter. (b) Validation of GFP reporter constructs. We performed RNAseq analysis of three GFP constructs (GAP1pr::GFP, MEP2pr::GFP and DAL80pr::GFP). Based on FPKM values, mRNA expression of the endogenous gene and GFP mRNA expressed from the same promoter are highly correlated (R\u00a0=\u00a00.67). (A single outlier due to low read coverage was excluded when quantifying the strength of the relationship). (c) the GFP reporter assay is consistent with expression quantified using RNAseq in an ammonium-limited environment. Median GFP intensity measured by flow cytometry for each GAT1 allele was divided by the same value for WT, and log2 transformed. Relative gene expression levels estimated by RNAseq and the GFP reporter assay are highly comparable (r\u00a0=\u00a00.9275) justifying the use of GFP protein expression levels measured by flow cytometry as a proxy for native mRNA expression level of the four target genes. The fold change compared to WT is log2 transformed.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** GLN3 is an a transcriptional activator of NCR genes. A GLN3 KO in the background of either the gat1-1 or gat1-3 alleles shows no expression from the MEP2 and DAL80 promoters.\n\nTo further quantify changes in transcriptional activity attributable to GAT1 variants, we fused the promoter sequences of four targets of GAT1 (GAP1, MEP2, GZF3 and DAL80) to the coding sequence of GFP in the backgrounds of the ancestral (WT), KO (gat1\u03940), and the three GAT1 variants (gat1-1, gat1-2 and gat1-3) (Figure 3\u2014figure supplement 1a). GFP expression levels measured using this assay were highly comparable to RNA-seq data (Figure 3\u2014figure supplement 1b) and therefore a good proxy of transcriptional activation of each promoter in the background of the different GAT1 variants (Figure 3\u2014figure supplement 1c).\n\nWe found significant differences in transcriptional activities between GAT1 variants at MEP2 and DAL80 promoters in nitrogen-limited (both ammonium and proline) conditions (Figure 3b and Supplementary file 1C). All adaptive GAT1 mutations result in strongly reduced DAL80 expression and increased MEP2 expression compared to the wild type, while a GAT1 KO strain showed slightly reduced DAL80 expression and decreased MEP2 expression. This result is consistent with our RNA-seq analysis and provides additional evidence that the beneficial missense mutations in the DNA binding domain of GAT1 do not render it non-functional. We also tested whether these mutations are dominant or recessive using diploid strains heterozygous for adaptive GAT1 mutations (e.g. gat1-1/GAT1) (Figure 3c). DAL80 and MEP2 promoter activities in these heterozygotes were identical to the haploid ancestral strain (FY4) containing a wildtype GAT1 allele indicating that the missense mutations of GAT1 are recessive and therefore unlikely to have gain-of-function or dominant negative effects. The maintenance, but reduced, expression of DAL80 and MEP2 in the GAT1 KO background (Figure 3b) is due to the activity of GLN3 as a gat1 gln3 double KO results in no expression from the DAL80 and MEP2 promoters (Figure 3\u2014figure supplement 2). GLN3 is required for expression of MEP2 in the presence of GAT1 variants (Figure 3\u2014figure supplement 2), likely due to its role in activating the entire NCR regulon, but in these strains the expression of GLN3 is not increased and therefore does not contribute to the increased steady-state expression of MEP2.\n\n### GAT1 mutations decrease affinity for its consensus binding site in both MEP2 and DAL80 promoters\n\nTo test whether adaptive GAT1 mutations have acquired new binding specificities we used protein binding microarrays (PBMs) to assay the DNA binding domains of adaptive GAT1 alleles (gat1-1 and gat1-3) as well as the ancestral GAT1 allele. Whereas the ancestral GAT1 DNA binding domain shows clear evidence of specificity for the GATAA consensus sequence, adaptive GAT1 alleles failed to show evidence for any significant binding specificity using PBMs (Supplementary file 2A) indicating that their functional and fitness effects are not exerted by the acquisition of new DNA binding specificities.\n\nWe quantified alterations in the affinity of the adaptive GAT1 alleles for their target DNA sequences using electrophoretic mobility shift assays (EMSAs) (Figure 4a, Supplementary file 2B and S6). We studied the binding of adaptive GAT1 TF to the promoter sequences of MEP2 and DAL80, which showed discrepant effects on gene expression in the presence of adaptive GAT1 alleles: increased expression in the case of MEP2 and decreased expression in the case of DAL80 (Figure 3a and Figure 3b). MEP2 contains two distinct GATAA sequence motifs in its promoter region whereas DAL80 possesses only one. Adaptive GAT1 variants showed significantly decreased binding affinity to all target motifs (Figure 4b). Binding kinetics calculated based on a two parameter Michaelis-Menten model (Stormo and Zhao, 2010) show that adaptive GAT1 mutations have a more detrimental effect on binding to the DAL80 promoter GATAA site compared with the two MEP2 promoter binding sites likely reflecting differences in motif strength (Figure 4c and Supplementary file 1D). This suggests that the adaptive GAT1 alleles encode functional TFs that maintain sequence specificity for GATAA binding sites, but exhibit a quantitative decrease in affinity for their target sites compared to the ancestral allele. Whereas reduced affinity of GAT1 variants for the comparatively weak promoter of DAL80 results in its reduced expression, expression from the comparatively strong MEP2 promoter is increased in the presence of GAT1 variants despite a reduction in affinity for GATAA sites in the MEP2 promoter. Consistent with a differential effect of reduced GAT1 binding affinity on different promoters, we identified a significant positive correlation between gene expression levels of NCR genes and the estimated affinity of each promoter for GAT1 (Figure 4d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig4-v3.jpg)\n\n**Figure 4.:** (a) Design of protein-DNA binding assays.\u00a0We purified a 151-amino acid long protein fragments of GAT1 containing the DNA binding domain (DBD) (positions 310\u2013349) for the ancestral GAT1 and two adaptive mutations \u2013 gat1-1 (W321L) and gat1-3 (R345G). DNA sequences containing the consensus sequence in MEP2 and DAL80 promoters were determined from the MotifDb collection in Bioconductor. MEP2 motif 1 contains three copies of GATAA, MEP2 motif 2 contains two copies of GATAA and DAL80 motif 1 contains one copy of GATAA. (b) Electrophoretic mobility shift assay (EMSA) analysis of GAT1 variants. Increasing quantities of the GAT1 DBD protein fragment from 0 to 20 \u03bcg were added to 32P-labeled dsDNA. Arrows and stars indicate protein-bound DNA and unbound DNA respectively. Negative motif sequences\u00a0(neg) were prepared by randomizing bases only at their GATAA binding motif sequences (see Supplementary file 2B). (c) Proportion of bound DNA for different amounts of protein. The two GAT1 variants showed significantly decreased binding affinity to all three GATAA motifs. Dotted lines are fits to a two-parameter Michaelis-Menten model. Only ancestral GAT1 and gat1-3 (R345G) showed significant estimates of two parameters (Frmax and Kx) (p-value<0.02). Insignificant estimates for gat1-1 (W321L) may be due to the small number of data points (Supplementary file 2C). (d) Correlation between GAT1 promoter affinity and expression changes for NCR target genes. The promoter affinity for GAT1 (Lee and Bussemaker, 2010) is positively correlated (Spearman correlation\u00a0=\u00a00.31; p-value=0.02) with the alteration in expression of NCR targets in strains containing adaptive GAT1 mutations (log2 transformed fold change of gene expression of NCR genes in GAT1 variant strains compared to the ancestor strain). (e) Model for altered output from the NCR regulatory network by adaptive GAT1 mutations. GAT1 mutations reduce affinity for the promoter of MEP2, but have an even greater reduction in affinity for the promoter of the repressor, DAL80. (f) Mathematical modeling of GAT1 affinity for MEP2 and DAL80 promoters on steady-state MEP2 expression. The steady state expression level of MEP2 depends on both the absolute activation of the MEP2 promoter (indicated with increasing levels of blue) and DAL80 promoter and the ratio of their levels of activation (x-axis). MEP2 expression relative to an ancestral state (green point) is increased by adaptive GAT1 variants that result in a quantitative decrease in direct activation of MEP2 and a proportionally greater decrease in direct activation of DAL80 (parameter space resulting in increased MEP2 expression outlined by red triangle). As shown in the inset, an ancestral state in which MEP2 promoter activation (red) is greater than DAL80 promoter activation (pink) can evolve to a state in which both promoters are decreased in activation, but the decrease is more pronounced at the DAL80 promoter.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** We\u00a0studied the effect of increased GAT1 expression across the same parameter space investigated in\u00a0Figure 4f. (a) We find that when GAT1 expression is increased by a factor of two, the effect of differential activation of MEP2 and DAL80 promoters on MEP2 expression is qualitatively identical and (b) for each parameter combination, expression of MEP2 is increased twofold. MEP2 expression levels are relative to values reported in\u00a0Figure\u00a04f .\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32323/elife-32323-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Representative SDS-PAGE gel showing purified products used for EMSA experiments. Purified DNA binding domains for GAT1-wt (DGP269), gat1-1 (DGP270), and gat1-3 (DGP271) do not run as a single band, but are characterized by a reproducible fragmentation pattern when run on an SDS-PAGE gel. The DNA binding domain for another GATA-factor, GLN3, was cloned and purified as a positive control. Cell lysate and bovine serum albumin (BSA) were run as controls.\n\nInterestingly, GAT1-1 (W321L) shows a much stronger reduction in DNA binding affinity compared to GAT1-3 (R345G) for both tested promoter sequences (Figure 4b and c). Two pieces of evidence suggest this difference may have important functional effects. First, we find that the residue (R345) altered in the GAT1-3 allele is the most frequently mutated site in multiple LTEEs whereas only a single variant was identified at the site mutated in the GAT1-1 allele (W321) (Figure 1e). Second, the GAT1-3 variant results in higher relative fitness compared to the GAT1-1 variant (Figure 2b). These observations suggest that intermediate reductions in GAT1 binding affinity may be more beneficial than strongly reduced binding. Consistent with this claim, complete loss of GAT1 results in decreased MEP2 expression (Figure 3b) and is deleterious (Figure 2b).\n\n### Decreased TF affinities can result in increased expression from an I1-FFL\n\nUsing functional assays, we found that the impact of GAT1 variants on promoter binding affinities differs between the DAL80 and MEP2 promoters. As DAL80 is a negative regulator of MEP2, a quantitative decrease in DAL80 expression is expected to result in increased expression from the MEP2 promoter. However, GAT1 variants also reduce affinity for the MEP2 promoter sequence potentially decreasing its direct activation. Thus, while the overall topology of the GAT1-DAL80-MEP2 I1-FFL is maintained in evolved lineages, the increase in MEP2 expression, and likely other targets with strong promoters (including GAT1 itself), must be mediated by maintenance of direct binding at the MEP2 promoter and an indirect effect through reduced activation of the repressor, DAL80 (Figure 4e). Using a mathematical model of I1-FFLs we confirmed that a net increase in MEP2 expression results when decreased activation at the DAL80 promoter is the only functional effect of GAT1 variation (Figure 4f). However, using this model we also find that a GAT1 variant that results in a decrease in direct activation of the MEP2 promoter will result in increased expression of MEP2 when activation of the DAL80 promoter is also decreased. Increased\u00a0MEP2 expression, despite decreased activation of the MEP2 promoter, is enhanced by a greater relative decrease in DAL80 activation. Thus, our model of a I1-FFL is consistent with the finding that decreased binding affinity of GAT1, leading to decreased activation of both the DAL80 and MEP2 promoters (Figure 4b and Figure 4c) can simultaneously result in decreased expression of the repressor, DAL80 and increased expression of the target\u00a0gene, MEP2 (Figure 3a and Figure 3b). Using RNA-seq, we also find that the expression of GAT1 is increased as a result of GAT1 variants (Figure 3a). As GAT1 activates its own expression and is also repressed by DAL80, increased expression of GAT1 is likely due to the same phenomenon that results in increased MEP2 expression. The increase in GAT1 expression likely also contributes to increased MEP2 expression, as modeling an increase in GAT1 expression results in increased MEP2 expression (Figure 4\u2014figure supplement 1).\n\n## Discussion\n\nHere, we describe the evolution of a gene regulatory network in real time and dissection of the functional basis of adaptive changes in transcription factor binding affinity. We find that missense mutations in GAT1 are under strong positive selection in populations evolving in a constant ammonium-limited environment. The functional effects of adaptive GAT1 mutations are the result of increasing the output from an I1-FFL, one of the most frequently occurring network motifs in transcriptional networks, by reducing the binding affinity of the activator, GAT1. The functional effect of adaptive GAT1 variation is mediated by increased expression of a\u00a0high affinity ammonium transporter that results\u00a0in increased fitness in the ammonium-limited environment.\n\n### Increased sequencing resolution identifies multiple adaptive alleles in evolving populations\n\nTo date, genetic diversity and the dynamics of evolving lineages during LTEE has been largely explored using whole population whole genome sequencing (Hong and Gresham, 2014; Lang et al., 2013; Kvitek et al., 2013). However, the development of high-resolution lineage tracking using random molecular barcodes revealed that a multitude of lineages with increased fitness compete during the early stages of adaptive evolution, but are subsequently outcompeted by a small number of lineages carrying high-fitness mutations that occur early in the populations\u2019 histories (Levy et al., 2015). Consistent with this observation, we find that targeted deep sequencing of evolving populations identified many GAT1 mutations in evolving populations that are under positive selection, but never increase to population frequencies greater than 1%. These beneficial mutations are not detected by population-level sequencing. Thus, defining the complete spectrum of adaptive mutations in evolving populations requires methods for detecting low frequency mutations that are beneficial but do not persist in the population. This is currently most feasible using the approach we adapted in this study: LTEE in defined environments and ultra-deep sequencing of loci that are known, or suspected, to harbor adaptive variation.\n\n### Transcription factor binding affinities and promoter strength determine the output of network motifs\n\nThe transcriptional output from a promoter is a function of the strength of the promoter, which depends on the identity and number of cis regulatory elements, and the affinity of a transcription factor for those elements. Promoters are bound by both activating and repressing transcription factors and the relative activities of these trans factors coordinately controls the amount of expression from a given promoter. Here, we have shown that decreasing the binding affinity of GAT1 for its target sequence increases expression output from the MEP2 promoter as well as other GAT1 targets with strong promoters. We attribute the increase in MEP2 expression to decreased affinity of GAT1 for its consensus sequence, which reduces transcriptional output from the DAL80 promoter, a comparatively weak promoter. A reduction in the effective concentration of the repressor results in increased transcriptional output from the MEP2 promoter. Surprisingly, we also observe reduced affinity of GAT1 variants for the MEP2 promoter, which one would expect might reduce its transcriptional output. However, as illustrated by our model (Figure 4f), a proportionally greater decrease in DAL80 expression can outweigh the effect of reduced activation of the MEP2 promoter. GAT1 is auto-regulatory and we observe that GAT1 variants also result in increased GAT1 expression, which further increases expression output from the MEP2 promoter (Figure 4\u2014figure supplement 2). Thus, quantitatively different effects of transcription factor variants on promoters of differing strengths, in the context of gene regulatory architectures, can lead to counterintuitive impacts on gene expression.\n\n### The long-term fate of GAT1 mutations in evolving populations\n\nIn our repeated LTEE we detected multiple GAT1 mutations during the first\u00a0~100 generations of selection in ammonium limitation. The preponderance of these mutations within and between populations suggests that remodeling the GAT1-DAL80-MEP2 I1-FFL is a frequently occurring repeatable mode of adaptive evolution during the earliest stages of adaptive evolution in ammonium-limited environments. However, adaptive GAT1 alleles likely do not represent a fitness optimum in the ammonium-limited environment as, in contrast to our previous study (Hong and Gresham, 2014), we found that ultimately these alleles were outcompeted by lineages containing MEP2 amplifications. MEP2 amplifications have the same functional effect as adaptive GAT1 mutations: they increase expression of MEP2 enabling improved ammonium transport capabilities. However, the increased expression of other high affinity transporters in GAT1 lineages that are unable to transport ammonium may confer a fitness cost that is not associated with MEP2 amplification alleles. It should be noted that our method for detecting MEP2 amplifications has limited detection power until CNVs rise to high frequencies in the population. Thus, it is likely that MEP2 amplification alleles co-exist with adaptive GAT1 mutations during the early phases of evolution but are undetectable using our sampling and assay scheme.\n\nOur results provide insight into NCR regulation and suggest additional levels of regulatory complexity. First, it is notable that we do not detect DAL80 loss of function alleles in our LTEE. Given the current model of NCR regulation, loss of the repressor DAL80 would be expected to result in increased expression of MEP2 and other NCR regulated genes resulting in increased fitness. Similarly, we do not see selection for variation in the other NCR repressor, GZF3. Finally, GLN3, the upstream activator of NCR genes, which is itself not a target of NCR regulation does not appear to harbor any adaptive variation. Combining LTEE with targeted studies of functional and fitness effects of regulatory components of NCR may provide further insights into how these four GATA factors coordinately regulate the NCR regulon.\n\n### Parallels with oncogenic transcription factors mutations in human tumors\n\nExperimental evolution in eukaryotic microbes has many parallels with the molecular processes, and evolutionary dynamics, underlying tumorigenesis. The evolutionary hotspot in the DNA binding domain of GAT1 identified in this study is reminiscent of hotspots in transcriptional regulators important in tumorigenesis including recurrent missense mutations in the DNA binding domain of TP53, a driver in the majority of human cancers (Freed-Pastor and Prives, 2012), and CTCF, a poly-zinc finger transcription factor regulating oncogenes and tumor suppressor genes (Ong and Corces, 2014). As with adaptive evolution, missense mutations in the DNA binding domain of these transcription factors result in altered binding affinities at the promoters of target genes resulting in aberrant transcriptional activation in various cancers (Park et al., 1994; Inga et al., 2001; Filippova et al., 2002). Understanding the gene regulatory architecture of transcription factors that play important roles in human cancers will undoubtedly contribute to understanding the functional effect of oncogenic variation.\n\n### Conclusion\n\nThe study of evolutionary processes using LTEE enables testing the dynamics, outcome and functional basis of adaptive evolution. Selection in chemostats provides the benefit of defined selective conditions and testable hypotheses regarding the functional basis of increased fitness (Gresham and Hong, 2015; Gresham and Dunham, 2014). Our study highlights the importance of network motifs and incorporation of biophysical parameters in gene regulatory models in order to predict their functional output in the context of evolution. As I1-FFL are one of the most frequent motifs in transcriptional networks they may serve a general evolutionary role as facilitators of transcriptional tuning through modulation of transcriptional factor binding affinities. Further work is required to determine whether the properties of I1-FFL afford this motif unique evolutionary potential.\n\n## Materials and methods\n\n### Strains and media\n\nThe ancestral strain used for all LTEE is a prototrophic haploid derivative (FY4; MATa) of the S288c reference strain. To isolate individual GAT1 mutations, we crossed each evolved lineage to an isogenic haploid strain of the opposite mating type (FY5; MAT\u03b1) and, following sporulation, recovered meiotic products bearing different combinations of derived adaptive alleles. To genotype individual segregants, we used allele-specific PCR for which two allele specific forward primers and one common reverse primer were prepared. We also knocked out the entire GAT1 locus by replacing it with nourseothricin resistance (NatR) marker using a standard high efficiency transformation protocol. We engineered GFP fused promoter constructs for four GAT1 targets (GAP1, MEP2, DAL80 and GZF3) and integrated them at the HO locus using homology based transformation (Figure 3\u2014figure supplement 1). For each construct, we fused GFP with 1 kb of sequence 5\u2019 and 1 kb of sequence 3\u2019 of the open reading frame (ORF) for each target gene, which encompasses regulatory elements including promoter and UTRs. We attempted to construct a GFP-based transcriptional reporter using the GAT1 promoter but found that including as much as 2 kb of sequence 5\u2019 to the GAT1 ORF failed to activate GFP expression in either ancestral or adaptive GAT1 backgrounds (data not shown). We also knocked out the MEP2 ORF and 1 kb of sequence upstream of the MEP2 ORF in the background of the ancestral strain as well as two strains bearing single GAT1 missense mutations (gat1-1 and gat1-3) using the same transformation protocol. We constructed diploid strains that are heterozygous at the GAT1 locus by mating the GFP reporter constructs in the ancestral background and three GAT1 mutant backgrounds to an isogenic strain of the opposite mating type (FY5). All constructed strains were verified using Sanger sequencing. All medium conditions and recipes were identical with those used in our previous study (Hong and Gresham, 2014): all nitrogen-limited media contained 0.8 mM of nitrogen regardless of the molecular form.\n\n### LTEEs\n\nAll conditions for replaying LTEEs in chemostats were identical to those described in our previous study (Hong and Gresham, 2014). The dilution rate (0.12 hr\u22121) of the chemostat was checked every one or two days over the 250 generation (~3 months) duration of the LTEEs, and intermediate samples of each population were archived every 20 generations. We confirmed that the steady-state cell density of\u00a0~3\u00a0\u00d7\u00a0107 cells/mL was consistently maintained in the 200 mL cultures over the entire LTEE.\n\n### Whole genome, whole population sequencing\n\nWe performed whole genome sequencing of entire populations at 50, 100 and 250 generations for all LTEE cultures. Sequencing library preparation was performed using the Illumina TruSeq library preparation protocol as previously described (Hong and Gresham, 2014). We used 2 \u00d7 50 bp paired end mode on a HiSeq 2500 and all fastq files were processed using bwa (Li and Durbin, 2009), samtools (Li et al., 2009), and SNVer (Wei et al., 2011) to generate a list of mutations with significant allele frequencies in each population. The average sequence read coverage was around 50x, resulting in a detection limit for SNPs around 10% (i.e. we required that each variant was present in at least five reads). We identified CNVs by normalizing read depth at each nucleotide position to the median read depth of the entire genome by processing BAM files using samtools and R. We identified CNVs that include MEP2 in all three populations at 250 generations using read depth analysis. At each time point during the LTEE, we estimated the allele frequency of CNVs in the population by randomly selecting 96 clones and conducting qPCR to measure the copy number of MEP2 for all clones. We found that most clones possess one or two copies of MEP2 but some possesses up to eight or nine copies (data not shown). All clones containing two of more copies of MEP2 were aggregated within each population for allele frequency estimates of CNVs.\n\n### Targeted amplicon sequencing\n\nWe performed targeted deep sequencing for 12 loci: GAT1, MEP2, LST4, VAC14, RIM15, YBR271W, RPL26B, YKL050C, WHI5, DAL81, TPK3 and YKL162C. These loci are either genes that (1) contain high frequency SNPs identified in population sequencing or (2) have\u00a0been repeatedly identified as containing acquired variants in prior LTEEs in nutrient-limited chemostats. For each locus, we amplified the entire coding sequence plus 1 kb upstream and downstream of the ORF using PCR. We then randomly fragmented PCR products using sonication to a size of\u00a0~250 bp and prepared DNA sequencing libraries using the identical protocol used for population sequencing. Amplicon libraries were sequenced using an Illumina MiSeq in a 2 \u00d7 250 bp mode such that the two paired reads overlapped and each insert was sequenced twice. Only overlapping regions were used for allele frequency estimation and thereby we were able to dramatically reduce the false positive SNP call rate. For SNP frequency estimation, the average read coverage from amplicon sequencing was\u00a0~50,000. Using SNVer, we determined minor allele frequency mutations for all variants present at a frequency of\u00a0\u22651%.\n\n### dN/dS test\n\nWe obtained 42 different GAT1 sequences from multiple yeast isolates that were reported in a previous study (Liti et al., 2009). These include 32 natural isolates collected from multiple geographical locations including Europe, Africa, America, Asia and Oceania, and 10 domesticated isolates from sake or wine fermentations. dN and dS represent the proportion of observed nonsynonymous substitutions among all potential nonsynonymous substitutions and the proportion of observed synonymous substitutions among all potential synonymous substitutions, respectively. Actual values for each amino acid position were calculated from SNAP v2.1.1 (http://www.hiv.lanl.gov/content/sequence/SNAP/ SNAP.html)(Korber, 2000).\n\n### 3D structural analysis of the GAT1 DNA binding domain\n\nThe ModBase model of yeast GAT1 (UniProt P43574) from an NMR structure (PDB 4GAT) complexed with Zn and DNA, with a nearly identical fold to a high-resolution crystal structure (PDB 2VUS), is the best model available. The 3D image was visualized by Polyview-3D (http://polyview.cchmc.org/polyview3d.html).\n\n### Competitive fitness assays\n\nCompetition assays were performed as in (Hong and Gresham, 2014). We used a mCitrine-labeled ancestral (FY4) strain (DGY500, see Supplementary file 1E) for all competition assays. For population-level fitness assay, we established cultures containing the ancestral mCitirine-labeled strain (DGY500) alongside chemostats vessels in which LTEE were performed and let them reach the steady state conditions at the same dilution rate. We then mixed a sample from the LTEE with the fluorescence labeled ancestor strain in ratio of 1:9. To determine population fitness, each competing culture was sampled at multiple (5 -10) time points over a total period of less than 20 generations. At least 10,000 cells were assayed using an Accuri flow cytometer to determine the relative abundance of each genotype, and relative fitness determined using linear regression of the natural logarithm of the ratio of the two genotypes against the number of elapsed generations. We tested the fitness of three evolved mutants, three segregants from backcrossing experiments that contained only GAT1 mutations and one engineered GAT1 KO strain in four different nitrogen-limited chemostat conditions \u2013 using either ammonium, glutamine, proline or urea \u2013 and in YPD rich medium using batch culturing and serial dilution. We also performed fitness assays for MEP2 ORF and promoter deletion strains in the ancestral background, and in the presence of gat1-1 and gat1-3 alleles, and three evolved lineages harboring additional MEP2 gene copy selected from the finally evolved populations, using the same procedures in ammonium-limited chemostats. For the competition assay in YPD rich condition, we sampled twice per day and back-diluted the culture (1/200) into a fresh medium every night for 3 or 4 days. All subsequent analysis steps for clonal fitness determination were the same as population fitness assays.\n\n### RNA-seq\n\nWe performed RNA-seq analysis in strains containing one of four different GAT1 alleles (ancestral gat1, gat1-1, gat1-2, gat1-3) and one of three strains different GFP-based transcriptional reporter for either the GAP1, MEP2 or DAL80 promoter (Supplementary file 1E). Each set of experiments using strains that contained the same GAT1 allele, but different transcriptional reporters was treated as biological triplicates as these strains are identical except for the transcriptional reporter. In total, we cultured 12 different chemostat vessels (3 GFP reporters x 4 different GAT1 alleles) and harvested a sample of 10 mL from each culture at steady state using vacuum filtration and snap freezing in liquid nitrogen with subsequent storage at \u221280\u00b0C until further processing. RNA extractions were performed using an acid phenol-chloroform method. For mRNA enrichment, we used poly-A selection and the final yield of selected RNA molecules was around 10\u201350 ng in total. For cDNA synthesis, we used Superscript III kit (Invitrogen) and dNTPs mixtures for the first strand synthesis and E. coli DNA ligase and polymerase I (Invitrogen) for second strand synthesis with a mixture of dATP, dCTP, dGTP and dUTP. Then, we performed end-repair, A-tailing and adapter ligation based on the standard Illumina TruSeq library preparation protocol. All reaction cleanups between each step were performed using AMPure XP beads (Beckman Coulter, Inc). For directional sequencing of first strand cDNA only, we treated with UNG (Thermo) and amplified the ligated molecules using Phusion high fidelity DNA polymerase (NEB) using 12 or 15 of PCR cycles. Adapter dimers were removed by conducting two rounds of size selection using AMPure XP beads. We confirmed the expected size distribution of ligated molecules using a BioAnalyzer and then quantified library concentrations using qPCR and KAPA Library Quantification kits (KAPA Biosystems). All RNA-seq was performed using an Illumina HiSeq 2500 in a 2 \u00d7 50 bp paired end rapid-run mode. We used Tophat (Trapnell et al., 2009) to align sequencing reads to the Saccharomyces cerevisiae S288C reference genome, obtained from SGD on Feb 03, 2011. From the resulting RNA-seq count data, we used edgeR (Robinson et al., 2010) to determine significant differential expression (DE) for all genes compared to the ancestral strain grown in the same conditions (see the final log2 transformed fold change values in Supplementary file 1B). The pearson correlation between promoter affinity for GAT1 and gene expression fold change was calculated for NCR genes only and a p-value was determined using permutation testing by randomly selecting 10,000 gene sets of the same size from all\u00a0~6000 yeast genes.\n\n### GFP reporter assays\n\nAll reporter strains were grown in the same chemostat conditions at a dilution rate of 0.12 h\u22121. Samples were taken at steady state, sonicated, resuspended in PBS buffer, and analyzed using an Accuri flow cytometer. In addition, we tested GFP expression in minimal media batch cultures containing either ammonium, glutamine, or proline as well as YPD batch culture. All GFP intensity values were normalized by forward scatter (FSC-A) and log10 transformed.\n\n### Protein binding microarrays\n\nPBM methods were identical to those described in (Lam et al., 2011; Weirauch et al., 2013). The DNA binding domains of GAT1 (WT) and two mutants (gat1-1 and gat1-3) flanked by 50 amino acids on each side (see protein sequences in Supplementary file 2B) were subcloned into a GST-tag conjugated vector pTH6838 (Supplementary file 1F). Each plasmid was analyzed in duplicate on two different arrays (HK and ME) with differing probe sequences. We used 150 ng of plasmid DNA in a 15 \u03bcl in vitro transcription/translation reaction using a PURExpress In Vitro Protein Synthesis Kit (New England BioLabs) supplemented with RNase inhibitor and 50 \u03bcM zinc acetate. Calculation of 8-mer Z- and E-scores was performed as previously described (Berger et al., 2006). Microarray data were processed by removing spots flagged as \u2018bad\u2019 or \u2018suspect\u2019, and employing spatial de-trending (using a 7 \u00d7 7 window centered on each spot) as in (Weirauch et al., 2013). Experiments were deemed successful if at least one 8-mer had an E-score\u00a0>0.45 on both arrays, the complementary arrays produced highly correlated E- and Z-scores, and the complementary arrays yielded similar PWMs based on the PWM_align algorithm, which aligns the top ten 8-mers (based on E-scores), and tallies the frequency at each position to generate a PWM (Weirauch et al., 2013).\n\n### Electrophoretic mobility shift assays (EMSA)\n\nWe cloned the DNA binding domains of GAT1 (WT) and two mutants (gat1-1 and gat1-3) flanked by 50 amino acids on each side (see protein sequences in Supplementary file 2B) into a plasmid backbone (pGEX 4 T-2; see Supplementary file 1F) containing a GST-tag, and introduced them into competent E. coli strains. GST-tagged proteins (~43 kDa) were induced and purified using glutathione. Purified products were analyzed using SDS-PAGE and Coomassie blue staining (Figure 4\u2014figure supplement 1). EMSAs were performed by incubating increasing amounts of purified protein (0, 1, 5, 10, 15, and 20 \u03bcg) with a constant amount of a radiolabeled dsDNA corresponding to the GATAA motif present in the MEP2 and DAL80 promoters (see oligonucleotide sequences in Supplementary file 2C). Following electrophoresis, the gel was exposed to a phosphoimager screen for 30 min and scanned using a Typhoon. The intensity of the bands was acquired using ImageJ and the fraction of the intensity of the bound oligo over the total intensity of all bands was calculated. These data were fit to a two parameter ($Fr_{max}$ and $K_{x}$) Michaelis-Menten model using the drm (Dose-Response Model) function from the drc (Dose-Response Curve) package in R as followings (see Supplementary file 1D):\n\n$$\nFr=Fr_{max}\\times\\frac{x}{x+K_{x}}\n$$\n\nwhere $Fr$ = fraction of bound DNA over the total DNA,\n\n$x$=input protein dose (\u03bcg),\n\n$Fr_{max}$=upper limit of $Fr$,\n\n$K_{x}$= $\\frac{Fr_{max}}{2}$, the protein quantity at which binding is half-maximal (\u03bcg)\n\n### Mathematical modeling\n\nWe modeled the behavior of the incoherent feedforward loop comprising GAT1, DAL80 and MEP2 to study the effect on steady-state expression of MEP2. We modeled expression using the coupled ordinary different equations:\n\ndGAT1/dt\u00a0=\u00a00\n\ndDAL80/dt\u00a0=\u00a0A\u00b7X\u00b7GAT1 \u2013 c\u00b7DAL80\n\ndMEP2/dt\u00a0=\u00a0A\u00b7GAT1 \u2013 R\u00b7DAL80 \u2013 c\u00b7MEP2\n\nwhere\n\nA\u00a0=\u00a0strength of promoter activation\u00a0by\u00a0GAT1\n\nR\u00a0=\u00a0strength of MEP2 promoter repression\u00a0by\u00a0DAL80\n\nX\u00a0=\u00a0ratio of MEP2 and DAL80 promoter activation\u00a0by\u00a0GAT1\n\nc\u00a0=\u00a0degradation rate constant\n\nWe solved the system of equations numerically\u00a0to determine the steady-state levels using the deSolve() package in R (Soetaert et al., 2010). We systematically varied the values of A and X to determine the effect of these parameters on the steady-state expression of MEP2. We set the parameter values of R\u00a0=\u00a02 and c\u00a0=\u00a01 and solved the system of equations using initial values of GAT1\u00a0=\u00a01, DAL80\u00a0=\u00a00, MEP2\u00a0=\u00a00. Variation in the parameter values of R and c alters the specific steady-state values, but the overall trend is robust to variation in these parameters.\n\n### Sequence data\n\nAll raw fastq files are available from the NCBI Sequence Read Archive with accession number SRP101365 for whole genome population sequencing of replayed LTEE cultures, SRP101367 for targeted deep sequencing of the same LTEE populations and SRP101370 for RNA-seq data.\n",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a10999e0-b021-4231-add2-a1df4279f3e3",
+      "submission_id": "ac04b2d7-8e0c-4f22-80cc-5b4dba389289",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32323.016](https://doi.org/10.7554/eLife.32323.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An incoherent feedforward loop facilitates adaptive tuning of gene expression\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Naama Barkai as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal his identity: Kevin J Verstrepen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors evolve yeast in nitrogen-limited conditions. They find that cells increase expression of MEP2, the ammonium permease either by increasing the gene copy number (reported before) or through mutations in the MEP2 transcription factor GAT1. Surprisingly, these mutations reduce the binding of Gat1 to the MEP2 promoter, but still increase the expression of MEP2 by decreasing the expression of its repressor DAL80. This is indeed an interesting and surprising discovery that shows how the connectivity of molecular circuits could impact on their ability to evolve.\n\nEssential revisions:\n\n1) Report expression and fitness for all lineages, as suggested by reviewer #3.\n\n2) Change the model to include auto-regulation of GAT1, as requested below.\n\n3) Discuss the ability to distinguish the contribution of DAL80 vs. GAT1 to the increased MEP2 expression.\n\n4) Discuss the generality of the results.\n\nReviewer #1:\n\nGresham and colleagues examine the molecular basis of adaptive evolution in an experimental evolution setting. They evolve asexual yeast strains in nitrogen-limited conditions and use whole-genome population sequencing to identify the molecular changes associated with fitness gains. The major target of selection in this context is the expression level of MEP2, coding for an ammonium permease. One of the most advantageous changes at this locus is increase in copy number, which was dissected in previous papers. Other changes that occur are non-synonymous changes in GAT1, a transcription factor positively regulating MEP2. Surprisingly, through functional analyses, the authors show that these amino acid changes reduce the binding of Gat1 to the MEP2 promoter. The decreased binging affinity would contribute to increase the expression of MEP2 by decreasing the expression of DAL80, a repressor of MEP2.\n\nThis paper appears to be an important contribution because the evolution of gene expression is generally reduced to a very low level of complexity (including in my own work) by characterizing changes as being in cis or trans and as positive or negative. However, transcriptional networks are very complex and network motifs can produce expression levels and patterns that are not necessarily changing in a simple way, at least not in a way that would be expected based for instance on simple changes in TF affinities. The findings presented here are a good example of this and also illustrate the need to consider molecular changes in the context of molecular networks in order to be able to map fitness changes to phenotypes and genotypes. The experiments are well done, the paper is well written and clearly of interest to a large community.\n\nMy major comments would be regarding the interpretation of the data:\n\n- It would be useful to eliminate effects that could come from outside the GAT1-DAL80-MEP2 motif and that could explain why MEP2 expression goes up when Gat1 affinity decreases. The gene expression data produced could be used for this purpose, for instance by showing that other potential MEP2 regulators are not affected in the Gat1 mutant backgrounds.\n\n- Third paragraph of Discussion. It would be useful to have a stronger conclusion as to how the increased expression of MEP2 is achieved. The dynamic model constructed maybe useful in terms of supporting one mechanism or the other, for instance self-regulation of Gat1 versus weaker effect of GAT1 mutations on DAL80 than on MEP2.\n\nReviewer #2:\n\nIn this paper Hong and colleagues attempt to understand the functional significance of specific adaptive mutations that evolve in yeast under N2 limited chemostat growth. They find that a large number of early adaptive mutations \u2013 although not clear what proportion \u2013 are missense mutations in one particular TF (GAT1) that acts on multiple genes but in particular is a positive regulator of the N2 transporter. These mutations eventually get outcompeted by the expansion of the transporter itself (MEP2) but the early adaptation is (apparently) dominated by the GAT1 missense mutations.\n\nLong story short their argument is that most of the GAT1 are loss (reduction) of function in terms of the binding affinity to the GAT1 binding site but because the downstream targets are regulated through an incoherent FF loop this reduction of binding leads to an increase in expression of MEP2 because the GAT1 mutations decrease the expression of the repressor of MEP2, the TF called DAL80.\n\nI was very much prepared to like the paper but was left underwhelmed. The evidence that their model is correct in broad strokes is quite convincing. But they do not seem to be able to link the TF binding to fitness despite having a large number of mutants and do not in any way describe the difference between the two GAT1 mutants they study in great detail. One leads to a much stronger reduction of binding \u2013 what does that imply for function?\n\nI am also unclear about the overall message. What do they mean by claiming that the incoherent FFL enhances the ability of yeast to adapt? Is it that in this context loss of function mutants in terms of binding that are more common can generate a gain of function phenotype in terms of expression of the key gene? Is this particular to this structure? What about the other properties of this structure \u2013 like the ability to generate a pulse of expression? I was left without a clear sense of how generalizable the findings are and what they mean broadly. Without this sense of general importance it is hard for me to see why this paper out to be published in eLife rather than in a more particular molecular biology journal.\n\nReviewer #3:\n\nThis study shows that evolution in ammonium-limited chemostats repeatedly selects for modulation of the DNA binding affinity of GAT1, one of the transcription factors controlling nitrogen catabolite repression. Due to it being a part of an incoherent type-1 feedforward loop, this alteration in binding affinity results in an increased expression of MEP2, a high-affinity ammonium transporter. This increase ultimately results in an improved fitness in ammonium-limited conditions. As such, network motifs like feedforward loops might facilitate adaptive tuning of gene expression.\n\nThis is an elegant study highlighting the importance of network motifs, such as feedforward loops, a nuance often overlooked up until now in the interpretation of experimental evolution data. One of the major strengths of this study is the reproducibility of the experimental evolution, exemplifying that this mechanism of adaptive gene expression tuning might be more general than previously thought. Granted the authors take some of the below-mentioned comments and concerns into account, this study will certainly improve our understanding of the dynamics of evolution.\n\n\u2022 Something that is not really explored in this study, is the influence of GAT1 mutations on its own expression. The data suggest that its expression is also increased (even more than MEP2). This fact is never mentioned in the interpretation of the data, but it might be very important. It is also not included in the mathematical model, which seems a bit simple. As previously said, the expression of GAT1 also depends on the level of GAT1 itself and even on the expression of DAL80. On the other hand, DAL80 supposedly also influences its own expression, and this is also not included in the model. These are very important parts of the feedforward loop, so in my opinion a better model could be made, more resembling the real structure of a feedforward loop. These facts should also be incorporated in the interpretations and discussions.\n\n\u2022 The authors suggest several times that the mutation of the DNA-binding domain of GAT1 is a quick way to increase the expression of MEP2 during evolution, before the expression can be increased even more by duplicating MEP2. However, MEP2 expression is never measured in lineages with MEP2 CNVs. As such, the proposed progression of MEP2 expression during evolution is never really shown. As this is one of the main underlying assumptions (increased MEP2 expression equals increased fitness, and CNV has the highest expression), this is a crucial experiment to do. Measure expression and fitness for all lineages, including those with CNVs. Then, correlate this expression with fitness.\n",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "898ec60e-cd18-45e6-adfe-ff7886c232d0",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C1",
+      "claim": "Long-term experimental evolution of Saccharomyces cerevisiae in ammonium-limited chemostats results in repeated selection for non-synonymous variation in the DNA binding domain of GAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied adaptive evolution of gene expression using long-term experimental evolution of Saccharomyces cerevisiae in ammonium-limited chemostats. We found repeated selection for non-synonymous variation in the DNA binding domain of the transcriptional activator, GAT1, which functions with the repressor, DAL80 in an incoherent type-1 feedforward loop (I1-FFL) to control expression of the high affinity ammonium transporter gene, MEP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from long-term experimental evolution experiments and whole genome sequencing showing recurrent GAT1 mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "1227d2f2-f1c1-42ff-916d-a27f6f209d4f",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C2",
+      "claim": "GAT1 functions with the repressor DAL80 in an incoherent type-1 feedforward loop (I1-FFL) to control expression of MEP2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found repeated selection for non-synonymous variation in the DNA binding domain of the transcriptional activator, GAT1, which functions with the repressor, DAL80 in an incoherent type-1 feedforward loop (I1-FFL) to control expression of the high affinity ammonium transporter gene, MEP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of the NCR regulatory network architecture and is supported by the experimental data in the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "acbe5a85-8778-4df1-9399-77d9ba800a22",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C3",
+      "claim": "Missense mutations in the DNA binding domain of GAT1 reduce its binding to the GATAA consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Missense mutations in the DNA binding domain of GAT1 reduce its binding to the GATAA consensus sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from electrophoretic mobility shift assays (EMSAs) showing reduced binding affinity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "7ba87c19-09e9-4df7-b393-6e0fd3ef04a0",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C4",
+      "claim": "Decreases in GAT1 binding result in increased expression of MEP2 as a consequence of properties of I1-FFLs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we show experimentally, and using mathematical modeling, that decreases in GAT1 binding result in increased expression of MEP2 as a consequence of properties of I1-FFLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from GFP reporter assays and RNA-seq, as well as mathematical modeling of the I1-FFL.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "70348dca-552d-49d0-b3ee-86eb9f5e9617",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C5",
+      "claim": "I1-FFLs can facilitate adaptive tuning of gene expression through modulation of transcription factor binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that I1-FFLs, one of the most commonly occurring network motifs in transcriptional networks, can facilitate adaptive tuning of gene expression through modulation of transcription factor binding affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing adaptive GAT1 mutations and their effects on gene expression, combined with inference about the general properties of I1-FFLs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "38f44085-22fe-4ba1-abec-75ba0a146211",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C6",
+      "claim": "Gene regulatory architectures are important in the evolution of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings highlight the importance of gene regulatory architectures in the evolution of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental findings showing how the I1-FFL architecture enables adaptive evolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "208ef432-0212-4450-9aac-3d4a33931b9c",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C7",
+      "claim": "Gene expression evolution is a pervasive source of phenotypic diversity between and within species.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression evolution is a pervasive source of phenotypic diversity between and within species (Jacob and Monod, 1961; Jacob, 1977; Nocedal and Johnson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "447e7b55-4654-4f73-8a98-0b7e44a33e45",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C8",
+      "claim": "Incoherent type-1 feed-forward loops (I1-FFL) are one of the most common network motifs, occurring hundreds of times in bacteria and yeast gene regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these variants, incoherent type-1 feed-forward loops (I1-FFL) are one of the most common, occurring hundreds of times in bacteria and yeast gene regulatory networks (Lee et al., 2002; Mangan and Alon, 2003; Milo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies that characterized network motifs in gene regulatory networks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "1d85578a-e7e0-45f8-b89f-8b7f9242b6bf",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C9",
+      "claim": "I1-FFLs function to speed the response time of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "I1-FFL function to speed the response time of gene expression (Mangan and Alon, 2003) and for particular parameter values, detect relative changes in input signals rather than absolute levels of inputs (Goentoro et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies on I1-FFL dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "cf4144b4-fe96-4a59-af05-3fcc22390a37",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C10",
+      "claim": "For particular parameter values, I1-FFLs detect relative changes in input signals rather than absolute levels of inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "I1-FFL function to speed the response time of gene expression (Mangan and Alon, 2003) and for particular parameter values, detect relative changes in input signals rather than absolute levels of inputs (Goentoro et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research on I1-FFL behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "643bb5e9-70ad-4cf9-a228-c994394a9e17",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C11",
+      "claim": "Parallel changes in gene expression have been observed in replicated populations of both E. coli and S. cerevisiae during long-term experimental evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "LTEE in microorganisms provides evidence for the role of adaptive changes in gene expression in response to selection as parallel changes in gene expression have been observed in replicated populations of both E. coli (Cooper et al., 2003) and S. cerevisiae (Ferea et al., 1999; Gresham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior LTEE studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "06682d91-703f-408c-a021-40e2e30d1096",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C12",
+      "claim": "Copy number variants (CNVs) comprising gene amplifications that result in increased expression of transporter genes are a recurrent class of adaptive alleles in chemostat LTEE.",
+      "claim_type": "EXPLICIT",
+      "source": "Copy number variants (CNVs), comprising gene amplifications that result in increased expression of transporter genes (Gresham et al., 2008; Hong and Gresham, 2014), are a recurrent class of adaptive alleles in chemostat LTEE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies and is consistent with the data presented in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "32c99fcd-f4f8-403a-a6e6-1ad9109222d6",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C13",
+      "claim": "The regulation of nitrogen utilization in budding yeast is controlled by four transcription factors that bind to the same GATAA consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Control of nitrogen catabolite repression (NCR) transcription is achieved by four transcription factors, that bind to the same GATAA consensus sequence (Cooper, 2002; Magasanik and Kaiser, 2002; Hofman-Bang, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on NCR regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "3a3a2f4f-b413-4011-a8aa-12e2c9aecd86",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C14",
+      "claim": "GLN3 and GAT1 have activating activity in NCR regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two factors \u2013 GLN3 and GAT1 \u2013 have activating activity and two factors \u2013 DAL80 and GZF3 \u2013 have repressive activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of NCR regulation cited in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "4343dcbe-62e8-4e6c-852e-92c90b883bd3",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C15",
+      "claim": "DAL80 and GZF3 have repressive activity in NCR regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two factors \u2013 GLN3 and GAT1 \u2013 have activating activity and two factors \u2013 DAL80 and GZF3 \u2013 have repressive activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of NCR regulation cited in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "e7d0d3d1-d203-48bb-85d2-01be466083f5",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C16",
+      "claim": "GLN3 is constitutively expressed and regulated post-translationally by TORC1-dependent phosphorylation that prevents its entry into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "GLN3 is constitutively expressed and regulated post-translationally by TORC1-dependent phosphorylation that prevents its entry into the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of NCR regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "3a277ff8-1d06-4b1b-b26f-e55ed48bfdd7",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C17",
+      "claim": "In conditions in which TORC1 activity is low, dephosphorylation of GLN3 enables it to enter the nucleus where it activates expression of GAT1, DAL80 and GZF3.",
+      "claim_type": "EXPLICIT",
+      "source": "In conditions in which TORC1 activity is low, dephosphorylation of GLN3 enables it to enter the nucleus where it activates expression of GAT1, DAL80 and GZF3 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established knowledge of NCR regulation and is illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "42378474-0841-4d51-b881-3fe0e7263ec3",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C18",
+      "claim": "The NCR regulatory components comprise four interconnected I1-FFLs that function to regulate the expression dynamics and output of ~41 target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCR regulatory components comprise four interconnected I1-FFLs comprising either of the activators, GLN3 and GAT1, and either of the repressors DAL80 or GZF3, that function to regulate the expression dynamics and output of ~41 target genes (Godard et al., 2007) that encode products required for assimilating diverse nitrogen sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research on NCR regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "e3c05f27-d51f-4b4c-8047-134c11490391",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C19",
+      "claim": "Evolution is highly parallel both at the phenotypic and genotypic levels over 250 generations in ammonium-limited chemostats.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that evolution is highly parallel both at the phenotypic and genotypic levels over 250 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from replicated LTEE experiments showing similar fitness trajectories and recurrent mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "7acd280d-c044-43b0-9c83-7ad4c0476c54",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C20",
+      "claim": "Significant increases in population level fitness were observed with an overall deceleration in the rate of fitness improvement with time.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant increases in population level fitness with an overall deceleration in the rate of fitness improvement with time as seen in previous LTEEs (Barrick et al., 2009) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from competitive fitness assays shown in Figure 1b and is consistent with prior LTEE studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "ab517783-3fc0-4d1c-8544-c30153eb6018",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C21",
+      "claim": "Recurrent selection for missense mutations in the DNA binding domain of GAT1 occurs during the early stages of adaptive evolution in each population.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole genome, whole population sequencing of evolving populations, we identified recurrent selection for missense mutations in the DNA binding domain of GAT1 during the early stages of adaptive evolution in each population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole genome sequencing data from the LTEE populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "d649e9b8-2a17-4f15-9396-a071a2e75e5b",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C22",
+      "claim": "CNVs that include MEP2 are identified at high frequencies following 250 generations of selection in ammonium-limited chemostats.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with positive selection for increased ammonium transport capacity in this environment, we also identified CNVs that include MEP2, which encodes a high-affinity ammonium transporter, at high frequencies following 250 generations of selection (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data and qPCR analysis shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "3236136b-a366-4e54-993f-8b54200eb82e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C23",
+      "claim": "Each of the evolving populations contained multiple different GAT1 mutations at frequencies of 10\u22122-10\u22123.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the evolving populations contained multiple different GAT1 mutations at frequencies of 10\u22122-10\u22123.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by targeted deep sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "f00fdf3e-263e-42d9-9c15-ec1391de90bf",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C24",
+      "claim": "GAT1 alleles reach their highest frequencies during the early stages of adaptive evolution before lineages containing MEP2 CNVs ultimately rise to high frequency in each population.",
+      "claim_type": "EXPLICIT",
+      "source": "These GAT1 alleles reach their highest frequencies during the early stages of adaptive evolution before lineages containing MEP2 CNVs ultimately rise to high frequency in each population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequencing data tracking allele frequencies over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "80846b1a-acdb-466a-8779-7b9bcaa9e14e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C25",
+      "claim": "All identified GAT1 mutations are missense mutations in its DNA binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all identified GAT1 mutations are missense mutations in its DNA binding domain (Figure 1e), which we find is under strong purifying selection in natural environments (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "633283d3-cbdd-4483-8c5b-15d0b91ac6e8",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C26",
+      "claim": "The DNA binding domain of GAT1 is under strong purifying selection in natural environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all identified GAT1 mutations are missense mutations in its DNA binding domain (Figure 1e), which we find is under strong purifying selection in natural environments (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dN/dS analysis of GAT1 sequences from wild yeast strains shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a5df7214-020f-49e3-8974-6e4f5d3001b9",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C27",
+      "claim": "All strains containing GAT1 missense mutations are significantly increased in fitness in ammonium-limited chemostats.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains containing GAT1 missense mutations are significantly increased in fitness in ammonium-limited chemostats, but exhibit decreased fitness in all other nitrogen-limited conditions consistent with antagonistic pleiotropy (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competitive fitness assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "7dd99e07-db1f-4cf5-9eaf-86423be12406",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C28",
+      "claim": "GAT1 missense mutations exhibit decreased fitness in all other nitrogen-limited conditions (glutamine, proline, urea) consistent with antagonistic pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains containing GAT1 missense mutations are significantly increased in fitness in ammonium-limited chemostats, but exhibit decreased fitness in all other nitrogen-limited conditions consistent with antagonistic pleiotropy (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competitive fitness assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "ea5eb68f-e8b9-4d29-8287-7da2d4b550f1",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C29",
+      "claim": "A GAT1 knock out (KO) strain exhibits a fitness defect in both ammonium and proline limited chemostats.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, a GAT1 knock out (KO) strain exhibits a fitness defect in both ammonium and proline limited chemostats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by competitive fitness assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "fcbb6634-de91-42d9-975d-a652d11cc98b",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C30",
+      "claim": "GAT1 mutations are nearly neutral in YPD batch media conditions in which GAT1 and the entire NCR regulon is transcriptionally repressed.",
+      "claim_type": "EXPLICIT",
+      "source": "GAT1 mutations are nearly neutral in YPD batch media conditions in which GAT1, and the entire NCR regulon, is transcriptionally repressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by competitive fitness assay data and is consistent with knowledge of NCR regulation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "af313c7d-072d-49ce-b172-882609126ff0",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C31",
+      "claim": "Missense mutations in the DNA binding domain of GAT1 acquired during LTEE alter its function rather than rendering it non-functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that missense mutations in the DNA binding domain of GAT1 acquired during LTEE alter its function rather than rendering it non-functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the fitness data showing that GAT1 mutations have different effects than GAT1 knockout.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "cb6e86a5-d224-4a23-9137-3dbc00e90417",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C32",
+      "claim": "Deletion of MEP2 ORF and its promoter sequences is highly deleterious in ammonium-limited chemostats regardless of the genotype of GAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains had severely reduced fitness (Figure 2\u2014figure supplement 1a) consistent with the beneficial effect of GAT1 variants being dependent, at least in part, on MEP2 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competitive fitness assay data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "c91b7c5e-5a24-47ea-84e0-f43c43a61e6e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C33",
+      "claim": "The beneficial effect of GAT1 variants is dependent, at least in part, on MEP2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains had severely reduced fitness (Figure 2\u2014figure supplement 1a) consistent with the beneficial effect of GAT1 variants being dependent, at least in part, on MEP2 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the fitness data of MEP2 deletion strains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "63e9a60d-eaaa-4e5a-b4d8-c8ac605660f1",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C34",
+      "claim": "Increased copy number of MEP2 correlates with increased mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased copy number of MEP2 correlates with increased mRNA expression and results in fitness increases (s > 1.3) greater than that conferred by GAT1 variants (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "895a8d44-e2f1-4304-9c85-022311768b02",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C35",
+      "claim": "Increased copy number of MEP2 results in fitness increases (s > 1.3) greater than that conferred by GAT1 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased copy number of MEP2 correlates with increased mRNA expression and results in fitness increases (s > 1.3) greater than that conferred by GAT1 variants (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competitive fitness assay data comparing MEP2 CNV strains to GAT1 variant strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "11e3c55a-fc00-4792-a8c2-51737ea29a8e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C36",
+      "claim": "GAT1 mutations result in increased expression of genes encoding ammonium transporters (MEP1, MEP2, and MEP3).",
+      "claim_type": "EXPLICIT",
+      "source": "GAT1 mutations result in increased expression of genes encoding ammonium transporters (MEP1, MEP2, and MEP3) as well as transporters that import other nitrogen sources such as urea, allantoin and GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "6ad94f2a-09f5-4579-a227-ea30f9c5dbf4",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C37",
+      "claim": "GAT1 mutations result in increased expression of transporters that import other nitrogen sources such as urea, allantoin and GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "GAT1 mutations result in increased expression of genes encoding ammonium transporters (MEP1, MEP2, and MEP3) as well as transporters that import other nitrogen sources such as urea, allantoin and GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "f28eded7-e0c6-4872-84b6-2df2a9627c83",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C38",
+      "claim": "GAT1 mutations result in a strong reduction in DAL80 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, GAT1 mutations result in a strong reduction in DAL80 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "15da09c9-af58-48b8-b2fe-1b530dfd0204",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C39",
+      "claim": "The expression of GLN3 and GZF3 is unchanged in the presence of GAT1 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of GLN3 and GZF3 is unchanged in the presence of GAT1 variants (Supplementary file 1B) suggesting that the altered expression of MEP2 and DAL80 is attributable to changes in GAT1 binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "2f1a2b06-ce88-427f-b7ec-916e34224322",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C40",
+      "claim": "The altered expression of MEP2 and DAL80 in GAT1 variant strains is attributable to changes in GAT1 binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of GLN3 and GZF3 is unchanged in the presence of GAT1 variants (Supplementary file 1B) suggesting that the altered expression of MEP2 and DAL80 is attributable to changes in GAT1 binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the RNA-seq data showing unchanged GLN3 and GZF3 expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "f2a8fd05-28d0-400f-ae7c-d5f535fa9992",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C41",
+      "claim": "GAT1 variants result in increased expression of GAT1 itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GAT1 variants also result in increased expression of GAT1 itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "2885b42c-c812-469a-b171-17975cdf6728",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C42",
+      "claim": "All adaptive GAT1 mutations result in strongly reduced DAL80 expression and increased MEP2 expression compared to the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "All adaptive GAT1 mutations result in strongly reduced DAL80 expression and increased MEP2 expression compared to the wild type, while a GAT1 KO strain showed slightly reduced DAL80 expression and decreased MEP2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GFP reporter assay data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "218deb27-39a9-4860-b05d-91e4222e6d61",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C43",
+      "claim": "A GAT1 KO strain showed slightly reduced DAL80 expression and decreased MEP2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "All adaptive GAT1 mutations result in strongly reduced DAL80 expression and increased MEP2 expression compared to the wild type, while a GAT1 KO strain showed slightly reduced DAL80 expression and decreased MEP2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GFP reporter assay data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "67d88c04-9c9a-417c-b240-cb2e69ccaf0f",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C44",
+      "claim": "DAL80 and MEP2 promoter activities in heterozygous diploids (gat1-1/GAT1) were identical to the haploid ancestral strain containing a wildtype GAT1 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "DAL80 and MEP2 promoter activities in these heterozygotes were identical to the haploid ancestral strain (FY4) containing a wildtype GAT1 allele indicating that the missense mutations of GAT1 are recessive and therefore unlikely to have gain-of-function or dominant negative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GFP reporter assay data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "e9298a19-7cc0-4814-952a-ebc946cf96ce",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C45",
+      "claim": "The missense mutations of GAT1 are recessive and therefore unlikely to have gain-of-function or dominant negative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "DAL80 and MEP2 promoter activities in these heterozygotes were identical to the haploid ancestral strain (FY4) containing a wildtype GAT1 allele indicating that the missense mutations of GAT1 are recessive and therefore unlikely to have gain-of-function or dominant negative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the GFP reporter assay data in heterozygous diploids.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "bf322fa0-0416-4f6e-a613-cc1a6f47cfb9",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C46",
+      "claim": "The maintenance, but reduced, expression of DAL80 and MEP2 in the GAT1 KO background is due to the activity of GLN3.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance, but reduced, expression of DAL80 and MEP2 in the GAT1 KO background (Figure 3b) is due to the activity of GLN3 as a gat1 gln3 double KO results in no expression from the DAL80 and MEP2 promoters (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GFP reporter assay data in double knockout strains shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "e40c1f70-763c-4756-b970-693e609bf9bd",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C47",
+      "claim": "GLN3 is required for expression of MEP2 in the presence of GAT1 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "GLN3 is required for expression of MEP2 in the presence of GAT1 variants (Figure 3\u2014figure supplement 2), likely due to its role in activating the entire NCR regulon, but in these strains the expression of GLN3 is not increased and therefore does not contribute to the increased steady-state expression of MEP2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GFP reporter assay data in gat1 gln3 double knockout strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "8c4d2121-ee65-4e75-a8df-152f6fa0eaf3",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C48",
+      "claim": "The expression of GLN3 is not increased in GAT1 variant strains and therefore does not contribute to the increased steady-state expression of MEP2.",
+      "claim_type": "EXPLICIT",
+      "source": "GLN3 is required for expression of MEP2 in the presence of GAT1 variants (Figure 3\u2014figure supplement 2), likely due to its role in activating the entire NCR regulon, but in these strains the expression of GLN3 is not increased and therefore does not contribute to the increased steady-state expression of MEP2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from RNA-seq data showing unchanged GLN3 expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "db36c0e1-e35a-4e64-861d-5ee59ecc4ef6",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C49",
+      "claim": "Adaptive GAT1 alleles failed to show evidence for any significant binding specificity using protein binding microarrays (PBMs).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the ancestral GAT1 DNA binding domain shows clear evidence of specificity for the GATAA consensus sequence, adaptive GAT1 alleles failed to show evidence for any significant binding specificity using PBMs (Supplementary file 2A) indicating that their functional and fitness effects are not exerted by the acquisition of new DNA binding specificities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by protein binding microarray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "33a5dd86-19fe-43bc-ae49-7913478aaf4c",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C50",
+      "claim": "The functional and fitness effects of adaptive GAT1 alleles are not exerted by the acquisition of new DNA binding specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the ancestral GAT1 DNA binding domain shows clear evidence of specificity for the GATAA consensus sequence, adaptive GAT1 alleles failed to show evidence for any significant binding specificity using PBMs (Supplementary file 2A) indicating that their functional and fitness effects are not exerted by the acquisition of new DNA binding specificities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the PBM data showing loss of binding specificity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "3152d0de-6cff-4948-b91c-abed9f5e4789",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C51",
+      "claim": "Adaptive GAT1 variants showed significantly decreased binding affinity to all target motifs in MEP2 and DAL80 promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive GAT1 variants showed significantly decreased binding affinity to all target motifs (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EMSA data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a15ab9fb-6479-46bc-9681-718824386772",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C52",
+      "claim": "Adaptive GAT1 mutations have a more detrimental effect on binding to the DAL80 promoter GATAA site compared with the two MEP2 promoter binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding kinetics calculated based on a two parameter Michaelis-Menten model (Stormo and Zhao, 2010) show that adaptive GAT1 mutations have a more detrimental effect on binding to the DAL80 promoter GATAA site compared with the two MEP2 promoter binding sites likely reflecting differences in motif strength (Figure 4c and Supplementary file 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of EMSA data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "f06d9f12-b0ed-478d-a628-8409b628504c",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C53",
+      "claim": "The differential effect of GAT1 variants on DAL80 and MEP2 promoters likely reflects differences in motif strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding kinetics calculated based on a two parameter Michaelis-Menten model (Stormo and Zhao, 2010) show that adaptive GAT1 mutations have a more detrimental effect on binding to the DAL80 promoter GATAA site compared with the two MEP2 promoter binding sites likely reflecting differences in motif strength (Figure 4c and Supplementary file 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the EMSA data and knowledge of promoter motif strength.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "c3fe4713-4605-4030-8c63-a53e737dddc8",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C54",
+      "claim": "The adaptive GAT1 alleles encode functional TFs that maintain sequence specificity for GATAA binding sites, but exhibit a quantitative decrease in affinity for their target sites compared to the ancestral allele.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the adaptive GAT1 alleles encode functional TFs that maintain sequence specificity for GATAA binding sites, but exhibit a quantitative decrease in affinity for their target sites compared to the ancestral allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the EMSA and PBM data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "ed70a6f1-1b1a-43cb-9993-cde7eae3d47d",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C55",
+      "claim": "There is a significant positive correlation between gene expression levels of NCR genes and the estimated affinity of each promoter for GAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a differential effect of reduced GAT1 binding affinity on different promoters, we identified a significant positive correlation between gene expression levels of NCR genes and the estimated affinity of each promoter for GAT1 (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of RNA-seq data and promoter affinity scores shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "136502e9-e472-4e94-b967-bb1362f1121a",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C56",
+      "claim": "A net increase in MEP2 expression results when decreased activation at the DAL80 promoter is the only functional effect of GAT1 variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a mathematical model of I1-FFLs we confirmed that a net increase in MEP2 expression results when decreased activation at the DAL80 promoter is the only functional effect of GAT1 variation (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mathematical modeling results shown in Figure 4f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "b679d1b1-6853-402d-bd50-4ca9278ad0fb",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C57",
+      "claim": "A GAT1 variant that results in a decrease in direct activation of the MEP2 promoter will result in increased expression of MEP2 when activation of the DAL80 promoter is also decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using this model we also find that a GAT1 variant that results in a decrease in direct activation of the MEP2 promoter will result in increased expression of MEP2 when activation of the DAL80 promoter is also decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "cbcc0bee-cec5-4eb8-a84f-291823bcc107",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C58",
+      "claim": "Increased MEP2 expression, despite decreased activation of the MEP2 promoter, is enhanced by a greater relative decrease in DAL80 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased MEP2 expression, despite decreased activation of the MEP2 promoter, is enhanced by a greater relative decrease in DAL80 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "84f0baa0-75f9-4c11-b942-bca3b4b9607d",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C59",
+      "claim": "Decreased binding affinity of GAT1, leading to decreased activation of both the DAL80 and MEP2 promoters, can simultaneously result in decreased expression of the repressor DAL80 and increased expression of the target gene MEP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model of a I1-FFL is consistent with the finding that decreased binding affinity of GAT1, leading to decreased activation of both the DAL80 and MEP2 promoters (Figure 4b and Figure 4c) can simultaneously result in decreased expression of the repressor, DAL80 and increased expression of the target gene, MEP2 (Figure 3a and Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration of experimental data (EMSA, RNA-seq, GFP reporter assays) and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a542cb1f-3d84-4604-8bb7-1b40ff4f50ea",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C60",
+      "claim": "Increased expression of GAT1 in GAT1 variant strains is likely due to the same phenomenon that results in increased MEP2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As GAT1 activates its own expression and is also repressed by DAL80, increased expression of GAT1 is likely due to the same phenomenon that results in increased MEP2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the RNA-seq data and knowledge of GAT1 auto-regulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "fce6fd03-c6ba-49c7-a1ed-a9c5140ca906",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C61",
+      "claim": "The increase in GAT1 expression likely also contributes to increased MEP2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in GAT1 expression likely also contributes to increased MEP2 expression, as modeling an increase in GAT1 expression results in increased MEP2 expression (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference supported by mathematical modeling shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "b01315ac-a8d1-4eee-9bc0-f222674f503a",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C62",
+      "claim": "Missense mutations in GAT1 are under strong positive selection in populations evolving in a constant ammonium-limited environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that missense mutations in GAT1 are under strong positive selection in populations evolving in a constant ammonium-limited environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequencing data showing recurrent GAT1 mutations and their dynamics in evolving populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "39fd3f2f-2a8e-42dd-a415-132f44c048f2",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C63",
+      "claim": "The functional effects of adaptive GAT1 mutations are the result of increasing the output from an I1-FFL by reducing the binding affinity of the activator, GAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional effects of adaptive GAT1 mutations are the result of increasing the output from an I1-FFL, one of the most frequently occurring network motifs in transcriptional networks, by reducing the binding affinity of the activator, GAT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by integration of experimental data (EMSA, RNA-seq, GFP reporter assays) and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "bb27e83e-2256-4d45-b715-ae784fe46206",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C64",
+      "claim": "The functional effect of adaptive GAT1 variation is mediated by increased expression of a high affinity ammonium transporter that results in increased fitness in the ammonium-limited environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional effect of adaptive GAT1 variation is mediated by increased expression of a high affinity ammonium transporter that results in increased fitness in the ammonium-limited environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by integration of gene expression data, fitness assays, and MEP2 deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "2834f70f-1d06-41c8-84ff-00077d8d0959",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C65",
+      "claim": "Targeted deep sequencing of evolving populations identified many GAT1 mutations that are under positive selection but never increase to population frequencies greater than 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, we find that targeted deep sequencing of evolving populations identified many GAT1 mutations in evolving populations that are under positive selection, but never increase to population frequencies greater than 1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by targeted deep sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "c996376c-0d77-4ada-9415-5a96add9e18e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C66",
+      "claim": "Beneficial mutations that do not persist in the population are not detected by population-level sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "These beneficial mutations are not detected by population-level sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from comparing whole genome sequencing and targeted deep sequencing results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "6761038c-ef2c-440b-9096-3360b247d185",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C67",
+      "claim": "Decreasing the binding affinity of GAT1 for its target sequence increases expression output from the MEP2 promoter as well as other GAT1 targets with strong promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that decreasing the binding affinity of GAT1 for its target sequence increases expression output from the MEP2 promoter as well as other GAT1 targets with strong promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq and GFP reporter assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "9012f46d-be57-45e3-b1d3-205a6746ab3b",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C68",
+      "claim": "The increase in MEP2 expression is attributed to decreased affinity of GAT1 for its consensus sequence, which reduces transcriptional output from the DAL80 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute the increase in MEP2 expression to decreased affinity of GAT1 for its consensus sequence, which reduces transcriptional output from the DAL80 promoter, a comparatively weak promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from EMSA data and gene expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "d6282428-fcce-4098-8b31-31711e224b4e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C69",
+      "claim": "A reduction in the effective concentration of the repressor DAL80 results in increased transcriptional output from the MEP2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in the effective concentration of the repressor results in increased transcriptional output from the MEP2 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the I1-FFL architecture and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "2e852935-3f6b-4c88-9474-971bdf9fd6f5",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C70",
+      "claim": "A proportionally greater decrease in DAL80 expression can outweigh the effect of reduced activation of the MEP2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as illustrated by our model (Figure 4f), a proportionally greater decrease in DAL80 expression can outweigh the effect of reduced activation of the MEP2 promoter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mathematical modeling shown in Figure 4f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "d804c800-806b-4b70-bec8-1a2f251f3235",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C71",
+      "claim": "GAT1 is auto-regulatory.",
+      "claim_type": "EXPLICIT",
+      "source": "GAT1 is auto-regulatory and we observe that GAT1 variants also result in increased GAT1 expression, which further increases expression output from the MEP2 promoter (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established knowledge of GAT1 regulation and is supported by RNA-seq data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "cf5b2e00-4479-4305-b3f3-56c68dfc3806",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C72",
+      "claim": "Increased GAT1 expression in GAT1 variant strains further increases expression output from the MEP2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "GAT1 is auto-regulatory and we observe that GAT1 variants also result in increased GAT1 expression, which further increases expression output from the MEP2 promoter (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from RNA-seq data and mathematical modeling shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "e3ae02e2-8cea-49d1-a504-5a5ab0dce97c",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C73",
+      "claim": "Remodeling the GAT1-DAL80-MEP2 I1-FFL is a frequently occurring repeatable mode of adaptive evolution during the earliest stages of adaptive evolution in ammonium-limited environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The preponderance of these mutations within and between populations suggests that remodeling the GAT1-DAL80-MEP2 I1-FFL is a frequently occurring repeatable mode of adaptive evolution during the earliest stages of adaptive evolution in ammonium-limited environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the sequencing data showing recurrent GAT1 mutations across replicate populations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "09750fa9-7956-4415-a37e-d10bc4563cd3",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C74",
+      "claim": "Adaptive GAT1 alleles likely do not represent a fitness optimum in the ammonium-limited environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, adaptive GAT1 alleles likely do not represent a fitness optimum in the ammonium-limited environment as, in contrast to our previous study (Hong and Gresham, 2014), we found that ultimately these alleles were outcompeted by lineages containing MEP2 amplifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the allele frequency dynamics showing GAT1 mutations being replaced by MEP2 CNVs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "d0586be9-b16b-4a46-883b-f6c0523fce49",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C75",
+      "claim": "MEP2 amplifications have the same functional effect as adaptive GAT1 mutations: they increase expression of MEP2 enabling improved ammonium transport capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "MEP2 amplifications have the same functional effect as adaptive GAT1 mutations: they increase expression of MEP2 enabling improved ammonium transport capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the gene expression and fitness data for both types of mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a97f8d05-b41e-4b21-999c-694ba4f46956",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C76",
+      "claim": "The increased expression of other high affinity transporters in GAT1 lineages that are unable to transport ammonium may confer a fitness cost that is not associated with MEP2 amplification alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased expression of other high affinity transporters in GAT1 lineages that are unable to transport ammonium may confer a fitness cost that is not associated with MEP2 amplification alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from the RNA-seq data showing broad upregulation of NCR genes in GAT1 variant strains.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "43e26161-68f3-4f6b-b14a-23df88d961d3",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C77",
+      "claim": "The evolutionary hotspot in the DNA binding domain of GAT1 is reminiscent of hotspots in transcriptional regulators important in tumorigenesis including recurrent missense mutations in the DNA binding domain of TP53 and CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary hotspot in the DNA binding domain of GAT1 identified in this study is reminiscent of hotspots in transcriptional regulators important in tumorigenesis including recurrent missense mutations in the DNA binding domain of TP53, a driver in the majority of human cancers (Freed-Pastor and Prives, 2012), and CTCF, a poly-zinc finger transcription factor regulating oncogenes and tumor suppressor genes (Ong and Corces, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws an analogy to cancer biology based on citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "5c7c88a1-51c9-4182-8235-6e9401a14edb",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C78",
+      "claim": "Missense mutations in the DNA binding domain of TP53 and CTCF result in altered binding affinities at the promoters of target genes resulting in aberrant transcriptional activation in various cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "As with adaptive evolution, missense mutations in the DNA binding domain of these transcription factors result in altered binding affinities at the promoters of target genes resulting in aberrant transcriptional activation in various cancers (Park et al., 1994; Inga et al., 2001; Filippova et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior cancer biology literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "35fcc630-49bd-4387-8f24-8c99eb417e93",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C79",
+      "claim": "I1-FFLs may serve a general evolutionary role as facilitators of transcriptional tuning through modulation of transcriptional factor binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "As I1-FFL are one of the most frequent motifs in transcriptional networks they may serve a general evolutionary role as facilitators of transcriptional tuning through modulation of transcriptional factor binding affinities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from the experimental findings and knowledge of I1-FFL prevalence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "d2a0ac81-a44b-4fba-8075-ef9b143a7ffa",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C80",
+      "claim": "The ancestral strain used for all LTEE is a prototrophic haploid derivative (FY4; MATa) of the S288c reference strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestral strain used for all LTEE is a prototrophic haploid derivative (FY4; MATa) of the S288c reference strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "f9d5d6f8-bed5-4deb-aec1-6a63190a8d76",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C81",
+      "claim": "Three chemostat vessels were founded with a clonal ancestral population and maintained under constant dilution with defined media containing 0.4 mM (NH4)2SO4 (0.8mM nitrogen).",
+      "claim_type": "EXPLICIT",
+      "source": "Three chemostat vessels w ere founded with a clonal ancestral population and maintained under constant dilution with defined media containing 0.4 mM (NH 4) 2 SO 4 , (0.8mM nitrogen).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement describing the experimental design shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "b97b3956-1fa4-4eff-9722-669f6f801f5e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C82",
+      "claim": "Chemostats were maintained in continuous mode for 250 generations (~3 months).",
+      "claim_type": "EXPLICIT",
+      "source": "Chemostats were maintained in continuous mode for 250 generations (~ 3 months) and samples obtained every 10-20 generations for archiving.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement describing the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "3a0a6824-925c-4bd8-a760-7e4fca8170be",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C83",
+      "claim": "The rate of fitness improvement decelerates over time for three independently replicated LTEE.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of fitness improvement decelerates over time for three independently replicated LTEE (R1, R2 and R3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fitness assay data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "e8ca047d-e7b2-423b-b279-b279c5b35ccb",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C84",
+      "claim": "GAT1 variants are a primary target in the earliest generations of selection but, in some LTEE, are ultimately replaced by other alleles including CNVs that encompass MEP2.",
+      "claim_type": "EXPLICIT",
+      "source": "GAT1 (red lines) variants are a primary target in the earliest generations of selection but, in some LTEE, are ultimately replaced by other alleles including CNVs that encompass MEP2 (blue lines) and mutations in genes that control cell cycle and growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data tracking allele frequencies shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "7106bc8b-631b-49f8-a7b6-5a41ae704018",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C85",
+      "claim": "Multiple missense mutations in GAT1 are present simultaneously in each population and compete with each other during the earliest generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple missense mutations in GAT1 are present simultaneously in each population and compete with each other during the earliest generations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by targeted deep sequencing data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "d1bb5656-97e2-4052-9c88-1c657ee9e374",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C86",
+      "claim": "The DNA binding domain of GAT1 is a mutational hotspot in all ammonium-limited LTEE.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA binding domain of GAT1 is a mutational hotspot in all ammonium-limited LTEE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data showing the distribution of mutations shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "bad819e0-2c88-448e-a9e5-a904ec695621",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C87",
+      "claim": "Multiple missense (protein coding alteration) mutations were observed in GAT1 but no nonsense or frame-shift mutations were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple missense (protein coding alteration) mutations were observed but no nonsense or frame-shift mutations were detected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "18682993-ee3a-45a9-a1d6-d93a8032cc33",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C88",
+      "claim": "Unlike LTEE in ammonium-limited chemostats, the GAT1 DNA binding domain is under purifying selection in wild yeast strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike LTEE in ammonium-limited chemostats, the GAT1 DNA binding domain is under purifying selection implying that non-synonymous mutations are likely to be detrimental in dynamic environments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dN/dS analysis shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "6267b14b-3a3f-4b96-9491-dc742e0e3cc7",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C89",
+      "claim": "Non-synonymous mutations in the GAT1 DNA binding domain are likely to be detrimental in dynamic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike LTEE in ammonium-limited chemostats, the GAT1 DNA binding domain is under purifying selection implying that non-synonymous mutations are likely to be detrimental in dynamic environments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the dN/dS analysis showing purifying selection in natural populations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "edc1982d-393f-4a1a-8268-2a876f39d1bd",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C90",
+      "claim": "Under nitrogen rich conditions, GLN3 and any GAT1 are phosphorylated and retained in the cytoplasm in a TORC1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Under nitrogen rich conditions, GLN3, and any GAT1, are phosphorylated and retained in the cytoplasm in a TORC1-dependent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established knowledge of NCR regulation illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "5c476af9-1a86-4195-8cae-74b2a2387a06",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C91",
+      "claim": "In nitrogen-poor conditions, GLN3 and GAT1 are dephosphorylated allowing them to enter the nucleus and activate NCR sensitive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In nitrogen-poor conditions, GLN3 and GAT1 are dephosphorylated allowing them to enter the nucleus and activate NCR sensitive genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established knowledge of NCR regulation illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "fcb5c0e4-43df-4972-adb9-91dbfa74c56e",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C92",
+      "claim": "The activator GLN3 is constitutively expressed and acts to initiate NCR expression subject to post-translational regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The activator GLN3 is constitutively expressed and acts to initiate NCR expression subject to post-translational regulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established knowledge of NCR regulation illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "2b9227ce-e796-42b8-8c2d-dd03188d250f",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C93",
+      "claim": "GFP expression levels measured using the reporter assay were highly comparable to RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP expression levels measured using this assay were highly comparable to RNA-seq data (Figure 3\u2014figure supplement 1b) and therefore a good proxy of transcriptional activation of each promoter in the background of the different GAT1 variants (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 3\u2014figure supplement 1b and 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a03059aa-ea4f-4690-9068-f6061869d0e6",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C94",
+      "claim": "MEP2 contains two distinct GATAA sequence motifs in its promoter region whereas DAL80 possesses only one.",
+      "claim_type": "EXPLICIT",
+      "source": "MEP2 contains two distinct GATAA sequence motifs in its promoter region whereas DAL80 possesses only one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on sequence analysis of the promoter regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a7881429-37fd-4611-b892-461535546387",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C95",
+      "claim": "GAT1-1 (W321L) shows a much stronger reduction in DNA binding affinity compared to GAT1-3 (R345G) for both tested promoter sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GAT1-1 (W321L) shows a much stronger reduction in DNA binding affinity compared to GAT1-3 (R345G) for both tested promoter sequences (Figure 4b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EMSA data shown in Figure 4b and 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "44509524-df64-4d55-9b8e-03184cd65782",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C96",
+      "claim": "The residue (R345) altered in the GAT1-3 allele is the most frequently mutated site in multiple LTEEs whereas only a single variant was identified at the site mutated in the GAT1-1 allele (W321).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we find that the residue (R345) altered in the GAT1-3 allele is the most frequently mutated site in multiple LTEEs whereas only a single variant was identified at the site mutated in the GAT1-1 allele (W321) (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequencing data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "c15ef650-ebc9-4a6e-8807-93c706129a62",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C97",
+      "claim": "The GAT1-3 variant results in higher relative fitness compared to the GAT1-1 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the GAT1-3 variant results in higher relative fitness compared to the GAT1-1 variant (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competitive fitness assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "ab3d10f3-dc13-4375-9e3c-f9bda4f75a92",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C98",
+      "claim": "Intermediate reductions in GAT1 binding affinity may be more beneficial than strongly reduced binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that intermediate reductions in GAT1 binding affinity may be more beneficial than strongly reduced binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the fitness and binding affinity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "7ba6013c-e089-4623-869d-edf7f26d284b",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "claim_id": "C99",
+      "claim": "Complete loss of GAT1 results in decreased MEP2 expression and is deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this claim, complete loss of GAT1 results in decreased MEP2 expression (Figure 3b) and is deleterious (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GFP reporter assay data and fitness assay data shown in Figures 3b and 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Long-term experimental evolution in ammonium-limited chemostats results in parallel evolution at both phenotypic and genotypic levels, with recurrent selection for missense mutations in the DNA binding domain of GAT1 during early stages of adaptation. These GAT1 mutations are eventually outcompeted by MEP2 copy number variants in some populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19-C25, C62, and C81-C87 collectively provide strong experimental evidence from replicated LTEE experiments, whole genome sequencing, and targeted deep sequencing showing recurrent GAT1 mutations across three independent populations. The fitness trajectories (C20, C83) and allele frequency dynamics (C84) are well-documented with appropriate controls and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "25c8c78c-3c56-4ece-b4e3-f7a6f8459b0a",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The DNA binding domain of GAT1 is under strong purifying selection in natural yeast populations, suggesting that the missense mutations selected in laboratory evolution would be detrimental in dynamic natural environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C88, and C89 are supported by dN/dS analysis of GAT1 sequences from 42 wild yeast strains shown in Figure 1f. The analysis appropriately uses established methods for detecting selection and provides a clear contrast between laboratory and natural selection pressures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "a4be47f9-36b4-48ad-a32c-323f589df084",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GAT1 missense mutations increase fitness specifically in ammonium-limited conditions but decrease fitness in other nitrogen-limited conditions, demonstrating antagonistic pleiotropy. These mutations alter GAT1 function rather than eliminating it, as evidenced by distinct phenotypes compared to GAT1 knockout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by comprehensive competitive fitness assays across multiple nitrogen sources and conditions (Figure 2b). The comparison between missense mutations and knockout strains provides strong evidence that mutations alter rather than eliminate function. The experimental design includes appropriate controls and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "c22fd9f3-05a0-4eb7-b450-f72d35122948",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The beneficial effects of GAT1 mutations are dependent on MEP2 expression, and MEP2 copy number variants confer greater fitness benefits than GAT1 mutations alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by MEP2 deletion experiments (Figure 2\u2014figure supplement 1a) and qPCR/fitness measurements of MEP2 CNV strains (Figure 2\u2014figure supplement 1b). The deletion experiments provide direct evidence for MEP2 dependence, though the inference in C33 could be strengthened with additional mechanistic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "eff855e4-c6a2-4f72-b459-706229575b40",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GAT1 mutations result in increased expression of MEP2 and other nitrogen transporter genes, but strongly decreased expression of the repressor DAL80. Expression of GLN3 and GZF3 remains unchanged, suggesting effects are mediated through altered GAT1 binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43 are supported by RNA-seq data (Figure 3a, Supplementary file 1B) and GFP reporter assays (Figure 3b). The experimental design includes appropriate biological replicates and controls. The inference in C40 is reasonable given the unchanged expression of other regulators, though alternative explanations are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "b684b4ab-ee9f-415e-98f3-344fa83c640d",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GAT1 missense mutations are recessive, as heterozygous diploids show wild-type expression patterns for DAL80 and MEP2 promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C45 are supported by GFP reporter assays in heterozygous diploids (Figure 3c). The experimental design appropriately tests dominance relationships, and the inference that mutations are unlikely to have gain-of-function or dominant negative effects is well-supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "8f1a7d7b-60a0-4a43-b2dd-34d00155687f",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GLN3 is required for MEP2 expression in both wild-type and GAT1 variant backgrounds, but increased GLN3 expression does not contribute to elevated MEP2 levels in GAT1 variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by GFP reporter assays in double knockout strains (Figure 3\u2014figure supplement 2) and RNA-seq data showing unchanged GLN3 expression. The experiments appropriately use genetic knockouts to test the role of GLN3, providing clear evidence for its requirement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "8dc759b0-00d5-4299-a723-ff08e5369eca",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Adaptive GAT1 alleles lose detectable DNA binding specificity in protein binding microarrays, indicating their functional effects are not due to acquisition of new binding specificities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C50 are supported by protein binding microarray data (Supplementary file 2A). The PBM experiments were performed in duplicate on different arrays with appropriate controls. The inference that effects are not due to new specificities is well-supported, though the loss of detectable binding raises questions about the mechanism that are addressed by subsequent EMSA experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "613a66a3-1262-4c36-bc98-7629b5843d13",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Adaptive GAT1 mutations decrease binding affinity to GATAA consensus sequences in both MEP2 and DAL80 promoters, with a more pronounced effect on the weaker DAL80 promoter. The mutations maintain sequence specificity but reduce quantitative binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C51-C54 are supported by EMSA data (Figure 4b, 4c) with quantitative analysis using Michaelis-Menten modeling. The experiments include appropriate negative controls and multiple protein concentrations. The differential effects on promoters of different strengths are well-documented, though statistical significance of differences could be more explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "32ba044e-8426-49a9-805e-ea741d28636c",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gene expression changes in NCR genes correlate positively with predicted GAT1 promoter affinity, consistent with differential effects of reduced GAT1 binding on promoters of varying strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by correlation analysis of RNA-seq data and promoter affinity scores (Figure 4d). The analysis uses appropriate statistical methods (Spearman correlation with permutation testing, p=0.02), though the correlation is moderate (r=0.31) and the sample size is limited to NCR genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "f8183777-e477-409c-bb2e-152e53e2236b",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mathematical modeling demonstrates that decreased GAT1 binding affinity can increase MEP2 expression through the I1-FFL architecture when the reduction in DAL80 activation is proportionally greater than the reduction in MEP2 activation. This counterintuitive result is consistent with experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C56-C59, C63, C67-C70 are supported by mathematical modeling (Figure 4f) that is consistent with experimental data from EMSA, RNA-seq, and GFP reporter assays. The model appropriately captures the I1-FFL architecture and explores parameter space systematically. The integration of modeling with experimental data provides strong support for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "30c5c282-4c7e-4650-981a-2ad299cbf918",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GAT1 is auto-regulatory, and increased GAT1 expression in variant strains likely results from the same I1-FFL mechanism affecting MEP2, further contributing to increased MEP2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C71-C72 are supported by RNA-seq data showing increased GAT1 expression (C41) and mathematical modeling (Figure 4\u2014figure supplement 1). The inference is reasonable given the known auto-regulatory architecture and is supported by modeling, though direct experimental validation of the contribution to MEP2 expression could strengthen the claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "ac9767a5-fcf3-419d-882f-e23a3efcaad1",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Intermediate reductions in GAT1 binding affinity (as in GAT1-3) are more beneficial than strong reductions (as in GAT1-1), with GAT1-3 showing higher fitness and greater frequency in evolved populations. Complete loss of GAT1 is deleterious.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C99 are supported by EMSA data (Figure 4b, 4c), sequencing data showing mutation frequencies (Figure 1e), and fitness assays (Figure 2b, Figure 3b). The data consistently show that GAT1-3 (R345G) has intermediate binding reduction and higher fitness than GAT1-1 (W321L), supporting the inference about optimal binding affinity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "9ee7148f-cf13-4ca5-8556-a151b7d55544",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Targeted deep sequencing reveals many low-frequency beneficial GAT1 mutations (1-10%) that are under positive selection but are not detected by standard population-level sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C66 are supported by targeted deep sequencing data (Figure 1d, Supplementary file 1A) with ~50,000x coverage. The comparison between whole genome sequencing and targeted sequencing clearly demonstrates the detection limit issue. This is an important methodological finding about the resolution needed to detect competing beneficial mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "c4a21b46-fcbc-4c8b-830d-cee1bb38ef41",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Remodeling of the GAT1-DAL80-MEP2 I1-FFL through GAT1 mutations is a repeatable early adaptation, but these mutations do not represent the fitness optimum and are eventually outcompeted by MEP2 amplifications, possibly due to fitness costs from broad upregulation of unnecessary transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C75 are well-supported by sequencing and fitness data showing GAT1 mutations in early evolution and their replacement by MEP2 CNVs. However, C76 is speculative about the mechanism of replacement. The claim that broad transporter upregulation confers fitness costs lacks direct experimental support and represents a hypothesis rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "3cf4f18a-fadb-4bf3-8a0e-14ac37fe40e1",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "I1-FFLs can facilitate adaptive tuning of gene expression through modulation of transcription factor binding affinities, highlighting the importance of gene regulatory architectures in evolution. This may represent a general evolutionary role for I1-FFLs given their prevalence in transcriptional networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C5, C6, C64, and C79 represent the main conclusions of the study. C2, C5, C6, and C64 are well-supported by the comprehensive experimental and modeling data. C79 is more speculative about generalization to other I1-FFLs, but is a reasonable inference given the prevalence of this motif and the demonstrated mechanism. The broader claim requires validation in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "22a30745-a6ff-4983-8db8-69e6095e091a",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "GFP reporter assays provide accurate measurements of promoter activity that correlate well with RNA-seq data. MEP2 and DAL80 promoters contain different numbers of GATAA motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93 and C94 are supported by validation experiments (Figure 3\u2014figure supplement 1b, 1c) showing high correlation (R=0.67) between GFP and RNA-seq measurements, and by sequence analysis of promoter regions. These are important methodological validations that support the use of GFP reporters throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "814c68e1-c3b4-4956-8852-cb11b4cacafb",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The evolutionary hotspot in GAT1's DNA binding domain is analogous to hotspots in cancer-associated transcription factors TP53 and CTCF, where missense mutations alter binding affinities and cause aberrant transcriptional activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C78 draw parallels to cancer biology based on citations to prior literature. While the analogy is interesting and appropriately cited, this represents a discussion point rather than a primary result of the study. The comparison is reasonable but does not constitute new experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "ef58d6da-422b-494b-adb8-ef07df78ec35",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background information on gene expression evolution, I1-FFL network motifs, LTEE approaches, and NCR regulation in yeast, establishing the context and prior knowledge for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C18 and C90-C92 represent established knowledge from prior literature, appropriately cited throughout. These claims provide essential background but are not novel results of this study. The citations appear accurate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    },
+    {
+      "id": "6fd8ab68-82fc-4a1d-832f-81999520ba2c",
+      "content_id": "79e47593-df28-400c-86c4-289c4b866f47",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The ancestral strain used for LTEE experiments is FY4, a prototrophic haploid derivative of the S288c reference strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is a straightforward methodological statement that is well-documented. This is standard reporting of experimental materials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:52.934710Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "898ec60e-cd18-45e6-adfe-ff7886c232d0",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "e3c05f27-d51f-4b4c-8047-134c11490391",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "7acd280d-c044-43b0-9c83-7ad4c0476c54",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "ab517783-3fc0-4d1c-8544-c30153eb6018",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "d649e9b8-2a17-4f15-9396-a071a2e75e5b",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "3236136b-a366-4e54-993f-8b54200eb82e",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "f00fdf3e-263e-42d9-9c15-ec1391de90bf",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "80846b1a-acdb-466a-8779-7b9bcaa9e14e",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "b01315ac-a8d1-4eee-9bc0-f222674f503a",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "f9d5d6f8-bed5-4deb-aec1-6a63190a8d76",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "b97b3956-1fa4-4eff-9722-669f6f801f5e",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "3a0a6824-925c-4bd8-a760-7e4fca8170be",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "e8ca047d-e7b2-423b-b279-b279c5b35ccb",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "7106bc8b-631b-49f8-a7b6-5a41ae704018",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "d1bb5656-97e2-4052-9c88-1c657ee9e374",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "bad819e0-2c88-448e-a9e5-a904ec695621",
+      "result_id": "cea3fa0b-3b3b-4b8d-8de2-f1138e0d35fa"
+    },
+    {
+      "claim_id": "633283d3-cbdd-4483-8c5b-15d0b91ac6e8",
+      "result_id": "25c8c78c-3c56-4ece-b4e3-f7a6f8459b0a"
+    },
+    {
+      "claim_id": "18682993-ee3a-45a9-a1d6-d93a8032cc33",
+      "result_id": "25c8c78c-3c56-4ece-b4e3-f7a6f8459b0a"
+    },
+    {
+      "claim_id": "6267b14b-3a3f-4b96-9491-dc742e0e3cc7",
+      "result_id": "25c8c78c-3c56-4ece-b4e3-f7a6f8459b0a"
+    },
+    {
+      "claim_id": "a5df7214-020f-49e3-8974-6e4f5d3001b9",
+      "result_id": "a4be47f9-36b4-48ad-a32c-323f589df084"
+    },
+    {
+      "claim_id": "7dd99e07-db1f-4cf5-9eaf-86423be12406",
+      "result_id": "a4be47f9-36b4-48ad-a32c-323f589df084"
+    },
+    {
+      "claim_id": "ea5eb68f-e8b9-4d29-8287-7da2d4b550f1",
+      "result_id": "a4be47f9-36b4-48ad-a32c-323f589df084"
+    },
+    {
+      "claim_id": "fcbb6634-de91-42d9-975d-a652d11cc98b",
+      "result_id": "a4be47f9-36b4-48ad-a32c-323f589df084"
+    },
+    {
+      "claim_id": "af313c7d-072d-49ce-b172-882609126ff0",
+      "result_id": "a4be47f9-36b4-48ad-a32c-323f589df084"
+    },
+    {
+      "claim_id": "cb6e86a5-d224-4a23-9137-3dbc00e90417",
+      "result_id": "c22fd9f3-05a0-4eb7-b450-f72d35122948"
+    },
+    {
+      "claim_id": "c91b7c5e-5a24-47ea-84e0-f43c43a61e6e",
+      "result_id": "c22fd9f3-05a0-4eb7-b450-f72d35122948"
+    },
+    {
+      "claim_id": "63e9a60d-eaaa-4e5a-b4d8-c8ac605660f1",
+      "result_id": "c22fd9f3-05a0-4eb7-b450-f72d35122948"
+    },
+    {
+      "claim_id": "895a8d44-e2f1-4304-9c85-022311768b02",
+      "result_id": "c22fd9f3-05a0-4eb7-b450-f72d35122948"
+    },
+    {
+      "claim_id": "11e3c55a-fc00-4792-a8c2-51737ea29a8e",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "6ad94f2a-09f5-4579-a227-ea30f9c5dbf4",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "f28eded7-e0c6-4872-84b6-2df2a9627c83",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "15da09c9-af58-48b8-b2fe-1b530dfd0204",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "2f1a2b06-ce88-427f-b7ec-916e34224322",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "f2a8fd05-28d0-400f-ae7c-d5f535fa9992",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "2885b42c-c812-469a-b171-17975cdf6728",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "218deb27-39a9-4860-b05d-91e4222e6d61",
+      "result_id": "eff855e4-c6a2-4f72-b459-706229575b40"
+    },
+    {
+      "claim_id": "67d88c04-9c9a-417c-b240-cb2e69ccaf0f",
+      "result_id": "b684b4ab-ee9f-415e-98f3-344fa83c640d"
+    },
+    {
+      "claim_id": "e9298a19-7cc0-4814-952a-ebc946cf96ce",
+      "result_id": "b684b4ab-ee9f-415e-98f3-344fa83c640d"
+    },
+    {
+      "claim_id": "bf322fa0-0416-4f6e-a613-cc1a6f47cfb9",
+      "result_id": "8f1a7d7b-60a0-4a43-b2dd-34d00155687f"
+    },
+    {
+      "claim_id": "e40c1f70-763c-4756-b970-693e609bf9bd",
+      "result_id": "8f1a7d7b-60a0-4a43-b2dd-34d00155687f"
+    },
+    {
+      "claim_id": "8c4d2121-ee65-4e75-a8df-152f6fa0eaf3",
+      "result_id": "8f1a7d7b-60a0-4a43-b2dd-34d00155687f"
+    },
+    {
+      "claim_id": "db36c0e1-e35a-4e64-861d-5ee59ecc4ef6",
+      "result_id": "8dc759b0-00d5-4299-a723-ff08e5369eca"
+    },
+    {
+      "claim_id": "33a5dd86-19fe-43bc-ae49-7913478aaf4c",
+      "result_id": "8dc759b0-00d5-4299-a723-ff08e5369eca"
+    },
+    {
+      "claim_id": "acbe5a85-8778-4df1-9399-77d9ba800a22",
+      "result_id": "613a66a3-1262-4c36-bc98-7629b5843d13"
+    },
+    {
+      "claim_id": "3152d0de-6cff-4948-b91c-abed9f5e4789",
+      "result_id": "613a66a3-1262-4c36-bc98-7629b5843d13"
+    },
+    {
+      "claim_id": "a15ab9fb-6479-46bc-9681-718824386772",
+      "result_id": "613a66a3-1262-4c36-bc98-7629b5843d13"
+    },
+    {
+      "claim_id": "f06d9f12-b0ed-478d-a628-8409b628504c",
+      "result_id": "613a66a3-1262-4c36-bc98-7629b5843d13"
+    },
+    {
+      "claim_id": "c3fe4713-4605-4030-8c63-a53e737dddc8",
+      "result_id": "613a66a3-1262-4c36-bc98-7629b5843d13"
+    },
+    {
+      "claim_id": "ed70a6f1-1b1a-43cb-9993-cde7eae3d47d",
+      "result_id": "32ba044e-8426-49a9-805e-ea741d28636c"
+    },
+    {
+      "claim_id": "7ba87c19-09e9-4df7-b393-6e0fd3ef04a0",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "136502e9-e472-4e94-b967-bb1362f1121a",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "b679d1b1-6853-402d-bd50-4ca9278ad0fb",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "cbcc0bee-cec5-4eb8-a84f-291823bcc107",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "84f0baa0-75f9-4c11-b942-bca3b4b9607d",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "39fd3f2f-2a8e-42dd-a415-132f44c048f2",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "6761038c-ef2c-440b-9096-3360b247d185",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "9012f46d-be57-45e3-b1d3-205a6746ab3b",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "d6282428-fcce-4098-8b31-31711e224b4e",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "2e852935-3f6b-4c88-9474-971bdf9fd6f5",
+      "result_id": "f8183777-e477-409c-bb2e-152e53e2236b"
+    },
+    {
+      "claim_id": "a542cb1f-3d84-4604-8bb7-1b40ff4f50ea",
+      "result_id": "30c5c282-4c7e-4650-981a-2ad299cbf918"
+    },
+    {
+      "claim_id": "fce6fd03-c6ba-49c7-a1ed-a9c5140ca906",
+      "result_id": "30c5c282-4c7e-4650-981a-2ad299cbf918"
+    },
+    {
+      "claim_id": "d804c800-806b-4b70-bec8-1a2f251f3235",
+      "result_id": "30c5c282-4c7e-4650-981a-2ad299cbf918"
+    },
+    {
+      "claim_id": "cf5b2e00-4479-4305-b3f3-56c68dfc3806",
+      "result_id": "30c5c282-4c7e-4650-981a-2ad299cbf918"
+    },
+    {
+      "claim_id": "a7881429-37fd-4611-b892-461535546387",
+      "result_id": "ac9767a5-fcf3-419d-882f-e23a3efcaad1"
+    },
+    {
+      "claim_id": "44509524-df64-4d55-9b8e-03184cd65782",
+      "result_id": "ac9767a5-fcf3-419d-882f-e23a3efcaad1"
+    },
+    {
+      "claim_id": "c15ef650-ebc9-4a6e-8807-93c706129a62",
+      "result_id": "ac9767a5-fcf3-419d-882f-e23a3efcaad1"
+    },
+    {
+      "claim_id": "ab3d10f3-dc13-4375-9e3c-f9bda4f75a92",
+      "result_id": "ac9767a5-fcf3-419d-882f-e23a3efcaad1"
+    },
+    {
+      "claim_id": "7ba6013c-e089-4623-869d-edf7f26d284b",
+      "result_id": "ac9767a5-fcf3-419d-882f-e23a3efcaad1"
+    },
+    {
+      "claim_id": "2834f70f-1d06-41c8-84ff-00077d8d0959",
+      "result_id": "9ee7148f-cf13-4ca5-8556-a151b7d55544"
+    },
+    {
+      "claim_id": "c996376c-0d77-4ada-9415-5a96add9e18e",
+      "result_id": "9ee7148f-cf13-4ca5-8556-a151b7d55544"
+    },
+    {
+      "claim_id": "e3ae02e2-8cea-49d1-a504-5a5ab0dce97c",
+      "result_id": "c4a21b46-fcbc-4c8b-830d-cee1bb38ef41"
+    },
+    {
+      "claim_id": "09750fa9-7956-4415-a37e-d10bc4563cd3",
+      "result_id": "c4a21b46-fcbc-4c8b-830d-cee1bb38ef41"
+    },
+    {
+      "claim_id": "d0586be9-b16b-4a46-883b-f6c0523fce49",
+      "result_id": "c4a21b46-fcbc-4c8b-830d-cee1bb38ef41"
+    },
+    {
+      "claim_id": "a97f8d05-b41e-4b21-999c-694ba4f46956",
+      "result_id": "c4a21b46-fcbc-4c8b-830d-cee1bb38ef41"
+    },
+    {
+      "claim_id": "1227d2f2-f1c1-42ff-916d-a27f6f209d4f",
+      "result_id": "3cf4f18a-fadb-4bf3-8a0e-14ac37fe40e1"
+    },
+    {
+      "claim_id": "70348dca-552d-49d0-b3ee-86eb9f5e9617",
+      "result_id": "3cf4f18a-fadb-4bf3-8a0e-14ac37fe40e1"
+    },
+    {
+      "claim_id": "38f44085-22fe-4ba1-abec-75ba0a146211",
+      "result_id": "3cf4f18a-fadb-4bf3-8a0e-14ac37fe40e1"
+    },
+    {
+      "claim_id": "bb27e83e-2256-4d45-b715-ae784fe46206",
+      "result_id": "3cf4f18a-fadb-4bf3-8a0e-14ac37fe40e1"
+    },
+    {
+      "claim_id": "35fcc630-49bd-4387-8f24-8c99eb417e93",
+      "result_id": "3cf4f18a-fadb-4bf3-8a0e-14ac37fe40e1"
+    },
+    {
+      "claim_id": "2b9227ce-e796-42b8-8c2d-dd03188d250f",
+      "result_id": "22a30745-a6ff-4983-8db8-69e6095e091a"
+    },
+    {
+      "claim_id": "a03059aa-ea4f-4690-9068-f6061869d0e6",
+      "result_id": "22a30745-a6ff-4983-8db8-69e6095e091a"
+    },
+    {
+      "claim_id": "43e26161-68f3-4f6b-b14a-23df88d961d3",
+      "result_id": "814c68e1-c3b4-4956-8852-cb11b4cacafb"
+    },
+    {
+      "claim_id": "5c7c88a1-51c9-4182-8235-6e9401a14edb",
+      "result_id": "814c68e1-c3b4-4956-8852-cb11b4cacafb"
+    },
+    {
+      "claim_id": "208ef432-0212-4450-9aac-3d4a33931b9c",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "447e7b55-4654-4f73-8a98-0b7e44a33e45",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "1d85578a-e7e0-45f8-b89f-8b7f9242b6bf",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "cf4144b4-fe96-4a59-af05-3fcc22390a37",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "643bb5e9-70ad-4cf9-a228-c994394a9e17",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "06682d91-703f-408c-a021-40e2e30d1096",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "32c99fcd-f4f8-403a-a6e6-1ad9109222d6",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "3a3a2f4f-b413-4011-a8aa-12e2c9aecd86",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "4343dcbe-62e8-4e6c-852e-92c90b883bd3",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "e7d0d3d1-d203-48bb-85d2-01be466083f5",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "3a277ff8-1d06-4b1b-b26f-e55ed48bfdd7",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "42378474-0841-4d51-b881-3fe0e7263ec3",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "edc1982d-393f-4a1a-8268-2a876f39d1bd",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "5c476af9-1a86-4195-8cae-74b2a2387a06",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "fcb5c0e4-43df-4972-adb9-91dbfa74c56e",
+      "result_id": "ef58d6da-422b-494b-adb8-ef07df78ec35"
+    },
+    {
+      "claim_id": "d2a0ac81-a44b-4fba-8075-ef9b143a7ffa",
+      "result_id": "6fd8ab68-82fc-4a1d-832f-81999520ba2c"
+    }
+  ],
+  "comparisons": []
+}

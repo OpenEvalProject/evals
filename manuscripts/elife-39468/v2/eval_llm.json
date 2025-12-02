@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C25",
+      "C28"
+    ],
+    "result": "5' modification with Biotin or SpC3 prevents multimerization of injected dsDNA donors in vivo, while Amino-dT modification does not. Southern blot analysis of DIG-labeled donors injected into medaka embryos showed that unmodified and Amino-dT modified donors formed multimers within 2 hours post-injection, whereas Biotin and SpC3 modifications prevented multimerization for up to 6 hours. The 5' modifications did not enhance DNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are directly supported by Southern blot data in Figure 1B showing clear differences in multimerization patterns between modified and unmodified donors. The ladder pattern for unmodified/Amino-dT donors versus single bands for Biotin/SpC3 donors provides strong visual evidence. The time-course analysis (2, 4, 6 hours) and signal intensity comparisons adequately support the stability claim (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Modified dsDNA donors enable efficient GFP expression at target loci with differential effects on embryo survival. All four tested loci (rx2, rx1, actb, dnmt1) showed GFP expression in expected domains with Biotin, Amino-dT, and SpC3 modifications. Biotin and SpC3 modifications did not significantly affect survival compared to unmodified controls, but Amino-dT modification caused high embryonic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by GFP expression data (Figure 2A) and survival data (Supplementary file 1, Figure 2\u2014figure supplement 1). The observation of locus-specific GFP expression across all four genes with multiple modification types is well-documented. The differential toxicity of Amino-dT is clearly demonstrated, though the mechanism is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "5' modified dsDNA donors dramatically increase HDR efficiency compared to unmodified donors, with Biotin modification showing the highest efficiency. Unmodified donors showed very low HDR rates with predominant amplification of wild-type alleles. In contrast, 5' Biotin modified donors achieved 60% HDR rate in GFP-positive rx2 embryos (9.5% of total injected), 35% in actb embryos (16.3% of total), and 100% in dnmt1 embryos. Biotin modification outperformed SpC3 across all loci tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38, C40 are well-supported by PCR genotyping data (Figure 2B, Figure 2\u2014figure supplements 2-3) and sequencing confirmation. The quantitative data showing specific percentages of HDR events are calculated from experimental observations. The comparison between modification types is directly shown in Figure 2\u2014figure supplement 2. However, the sample sizes for some loci are relatively small (e.g., 10 embryos for rx2), which could affect precision of the reported percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C73"
+    ],
+    "result": "Essential genes provide positive selection for precise HDR integration. For dnmt1, full gene functionality is required for development and survival, resulting in 100% HDR rate among GFP-expressing embryos. This demonstrates that essential loci can achieve even higher HDR rates than non-essential genes through functional selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C73 are supported by the observation that all GFP-positive dnmt1 embryos showed perfect integration (C38). The inference that this is due to selection for functional alleles is logical and consistent with the essential nature of dnmt1. However, this remains somewhat inferential as direct functional assays were not performed to confirm that imperfect integrations are lethal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "SpC3 5' modified donors show elevated levels of multimer and NHEJ integration events compared to Biotin modification. While SpC3 modification still produces high percentages of HDR events, PCR genotyping revealed additional bands indicative of higher-order multimers and NHEJ events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by PCR genotyping data in Figure 2\u2014figure supplement 2 showing additional bands in SpC3 samples. This is consistent with the Southern blot data (Figure 1B) showing that SpC3 is less effective than Biotin at preventing multimerization. The interpretation of additional bands as multimers/NHEJ events is reasonable based on their size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "RNP-based delivery (Cas9 protein + sgRNA) was less efficient than mRNA-based delivery (Cas9 mRNA + sgRNA) for gene targeting in the authors' hands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 lacks supporting data in the manuscript. No figures, quantitative comparisons, or experimental details are provided to substantiate this claim. The statement 'in our hands' suggests this is based on unpublished observations, making it impossible to evaluate the rigor of the comparison or whether appropriate controls were used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Precise HDR integrations are successfully transmitted through the germline to subsequent generations. For gfp-rx2, 9% of founder fish transmitted the precise modification (4/7 GFP-transmitting founders); for gfp-rx1, 3.9% transmitted (2/7 founders); for dnmt1, the high F0 HDR rate was fully maintained in germline transmission due to functional selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by genotyping and sequencing data from F1 and F2 generations (Figure 3, Figure 2\u2014figure supplement 3, Figure 3\u2014figure supplement 1). The germline transmission data are clearly documented with specific numbers of founder fish and transmission rates. The maintenance of high HDR rates for dnmt1 is consistent with the selection hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Precise integration of the gfp donor cassette into the actb locus causes late embryonic lethality, preventing establishment of stable transgenic lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by the observation that despite successful F0 integration (16.3% of injected embryos), no stable lines could be established. The late embryonic lethality is stated as an observation made during the study. While the mechanism is not explored, the inability to establish lines despite successful F0 integration provides strong evidence for lethality of the modification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C62"
+    ],
+    "result": "HDR events occur predominantly between the 4-cell and 32-cell stages based on germline transmission rates. For gfp-rx2, transmission rates of 0.8-12.9% indicate HDR earliest at the 4-cell stage; for gfp-rx1, rates of 23.9% and 5.8% suggest HDR at 2-8 cell stages. The mosaicism patterns indicate HDR occurs after the two-cell stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C62 are supported by germline transmission data and represent reasonable inferences about the timing of HDR events based on Mendelian genetics. The calculation assumes single HDR events per blastomere, which is stated. However, this analysis does not account for potential multiple independent events or cell death, which could affect the interpretation. The conclusions are consistent with the data but involve assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Southern blot and transcript analysis confirm precise single-copy integration in stable transgenic lines. F2 gfp-rx2 and gfp-rx1 embryos showed single bands in Southern blots with multiple restriction enzyme combinations, indicating single-copy integration. RT-PCR analysis of F3 gfp-rx2 homozygous embryos revealed exclusively a single fusion transcript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are strongly supported by Southern blot data (Figure 3B, Figure 3\u2014figure supplement 1) and RT-PCR data (Figure 3C). The use of multiple restriction enzyme combinations that cut at different positions provides robust evidence for single-copy integration. The transcript analysis confirms functional expression of the fusion gene. This represents gold-standard validation of the integration events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GFP expression is an excellent predictor of precise HDR integration in the injected generation, enabling efficient screening. The approach facilitates highly efficient detection of HDR events even in non-essential genes, with HDR rates up to 60% in GFP-positive embryos for rx2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by the correlation between GFP expression and confirmed HDR events shown throughout the genotyping data. For rx2, 60% (6/10) of GFP-positive embryos showed precise integration; for actb, 35% (7/20). This represents a substantial improvement over unmodified donors where GFP expression poorly predicted HDR. The predictive value is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Approximately 400 bp homology flanks in both 5' and 3' directions are sufficient for efficient HDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by the successful HDR observed across all four loci using homology flanks of 402-508 bp (as detailed in the donor designs). The consistent success across multiple genes with similar flank lengths provides evidence for sufficiency. However, no systematic comparison of different flank lengths was performed, so this represents an empirical observation rather than an optimized parameter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Universal modified primers enable flexible application without compromising HDR efficiency. The use of modified universal primers for two donor template vectors allowed flexible application across multiple loci. Primer-introduced non-homology regions at the periphery of donors did not negatively impact HDR efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by the successful application of the same primer pairs across four different loci with consistently high HDR rates. The presence of vector backbone sequences (non-homologous regions) did not prevent efficient HDR, as demonstrated by the high success rates. This practical observation is valuable for method implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C55",
+      "C77"
+    ],
+    "result": "5' modification of long dsDNA donors with Biotin strongly enhances HDR and favors single-copy integration by preventing multimerization. The modification shields donors from multimerization and NHEJ-mediated integration, promoting precise HDR without interfering with cellular DNA repair machinery. This simple PCR-based approach prevents multimerization and promotes precise insertion/replacement of DNA elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C22-C23, C55, C77 represent the central conclusions of the study and are well-supported by converging evidence: Southern blots showing prevention of multimerization (Figure 1B), PCR genotyping showing increased HDR rates (Figure 2B and supplements), sequencing confirmation of precise integration (Figure 2\u2014figure supplement 3), and Southern blot validation of single-copy integration in stable lines (Figure 3B). The mechanism (preventing multimerization) is directly demonstrated, and the outcome (enhanced HDR) is quantified across multiple loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The quality of modified primers, specifically the fraction actually labeled with biotin, is essential for efficient recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is stated as important but no data are provided to demonstrate the impact of primer quality on HDR efficiency. No comparison of different primer batches or labeling efficiencies is shown. This appears to be a practical recommendation based on experience rather than a systematically tested variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Integration of 5' modified PCR fragments larger than 2 kb is feasible, with successful integration of cassettes up to 8.6 kb demonstrated using in vivo linearization of donor plasmids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is stated but not demonstrated in the manuscript (largest shown is ~2.5 kb for rx1). Claim C58 references unpublished data ('data not shown') and cites a different method (in vivo linearization) rather than the PCR-based approach being presented. Without the supporting data, these claims cannot be properly evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The quality of end-protected PCR products likely decreases with increasing length due to UV-nicking during extraction and purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is speculative ('likely to drop') and not supported by experimental data. No systematic analysis of product quality versus length is provided. This represents a reasonable hypothesis based on known DNA handling issues, but remains untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "PCR cycles for detecting HDR integration must not exceed 30 cycles to avoid in vitro fusion-PCR artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by the authors' own observations and a citation to Won and Dawid, 2017. The manuscript consistently uses \u226430 cycles for genotyping PCR. This is an important methodological consideration for accurate detection of HDR events, as excessive cycles could generate false-positive fusion products in vitro.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Medaka has extended cell cycle timing compared to zebrafish, particularly in the G2 phase, which may contribute to HDR efficiency. The first cell cycle in medaka (65 min) is 44% longer than zebrafish (45 min), with subsequent cycles also extended (40 min vs 15 min). Species-specific differences in cell cycle regulation and zygotic transcription onset may affect HDR timing and efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63-C69 are supported by citations to published literature on cell cycle timing in medaka and zebrafish. The calculations of cell cycle extensions are correct based on the cited values. However, the connection between extended G2 phase and improved HDR efficiency is speculative and not directly tested. The discussion provides context for why medaka may be particularly suitable for this approach, but causality is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The presented approach facilitates functional studies in basic research and therapeutic interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is speculative regarding future applications. While the method clearly works in medaka for basic research applications (demonstrated throughout), no therapeutic applications are shown or tested. The potential for therapeutic use is reasonable given the improved precision, but this remains to be demonstrated in relevant systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background context on CRISPR/Cas9 genome editing, DNA repair mechanisms, and previous approaches to enhance HDR. CRISPR/Cas9 efficiently induces mutations via NHEJ, but precise HDR is required for genome editing. Previous approaches to enhance HDR included pharmacological inhibition of NHEJ, fusion of Rad52 to Cas9, and cell cycle-restricted Cas9 activity, but these did not address donor multimerization issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 represent established knowledge and cited prior work that provides context for the current study. These are appropriately supported by citations to relevant literature (Cong et al., Jinek et al., Mali et al., Hustedt and Durocher, Maruyama et al., Wang et al., Gutschner et al., Winkler et al., Auer et al.). The characterization of the problem (multimerization, low HDR rates) and previous solutions is accurate based on the cited literature.",
+    "result_type": "MINOR"
+  }
+]

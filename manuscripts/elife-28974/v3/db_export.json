@@ -1,0 +1,1902 @@
+{
+  "submission": {
+    "id": "f3c05b3d-c0dd-4598-8f93-f419e66e14ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:06:12.534849Z",
+    "updated_at": "2025-12-01T21:06:12.534849Z"
+  },
+  "content": [
+    {
+      "id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "submission_id": "f3c05b3d-c0dd-4598-8f93-f419e66e14ca",
+      "content_type": "manuscript",
+      "content_text": "# Direct modulation of aberrant brain network connectivity through real-time NeuroFeedback\n\n## Authors\n\n- Michal Ramot<sup>1</sup> ([ORCID: 0000-0001-9716-6469](https://orcid.org/0000-0001-9716-6469)) \u2020\n- Sara Kimmich<sup>1</sup>\n- Javier Gonzalez-Castillo<sup>1</sup>\n- Vinai Roopchansingh<sup>2</sup>\n- Haroon Popal<sup>1</sup>\n- Emily White<sup>1</sup>\n- Stephen J Gotts<sup>1</sup>\n- Alex Martin<sup>1</sup>\n\n### Affiliations\n\n1. Laboratory of Brain and Cognition National Institute of Mental Health, National Institutes of Health Bethesda United States\n2. Functional MRI Facility National Institute of Mental Health, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe existence of abnormal connectivity patterns between resting state networks in neuropsychiatric disorders, including Autism Spectrum Disorder (ASD), has been well established. Traditional treatment methods in ASD are limited, and do not address the aberrant network structure. Using real-time fMRI neurofeedback, we directly trained three brain nodes in participants with ASD, in which the aberrant connectivity has been shown to correlate with symptom severity. Desired network connectivity patterns were reinforced in real-time, without participants\u2019 awareness of the training taking place. This training regimen produced large, significant long-term changes in correlations at the network level, and whole brain analysis revealed that the greatest changes were focused on the areas being trained. These changes were not found in the control group. Moreover, changes in ASD resting state connectivity following the training were correlated to changes in behavior, suggesting that neurofeedback can be used to directly alter complex, clinically relevant network connectivity patterns.\n\n## Introduction\n\nAutism Spectrum Disorder (ASD) refers to a group of neurobiological disorders, which affect a growing proportion of the population. Patients with ASD suffer from a range of social and communication impairments, along with other characteristic behaviours and deficits. Behavioural treatment options are limited in their efficacy, and often do not generalize well beyond the specific training paradigm (Otero et al., 2015; Williams White et al., 2007). Numerous studies have documented widespread patterns of aberrant brain functional connectivity in patients with ASD, involving many cortical regions including frontal, parietal, and temporal lobes (M\u00fcller et al., 2011; Picci et al., 2016; Di Martino et al., 2014). Specifically, these studies show that multiple cortical areas are significantly under-connected in patients with ASD compared to typically developing (TD) control subjects, although over-connectivity has also been reported (Hahamy et al., 2015; Belmonte et al., 2004). At the individual level, the degree of diminished connectivity as well as measures of cortical thickness were found to be correlated with symptom severity (Gotts et al., 2012; Wallace et al., 2012; Di Martino et al., 2009b; Assaf et al., 2010) and this measure of connectivity was even predictive of future progression of autistic symptoms (Plitt et al., 2015). Together, these findings suggest a causal link between connectivity and behavior, such that changing the connectivity might lead to a change in behavior. Traditional, explicit training paradigms, activate these aberrant networks (Kana et al., 2009; Di Martino et al., 2009a), thus potentially reinforcing the sub-optimal connectivity. An implicit training paradigm, which allows the direct reinforcement of the desired networks, bypassing the atypical activation induced by explicit tasks, might be a better candidate for potential intervention in ASD.\n\nReal-time fMRI neurofeedback (rt-fMRI-nf) is an emerging technique with great potential for clinical applications (Stoeckel et al., 2014; Sulzer et al., 2013; Weiskopf, 2012; Birbaumer et al., 2013). With this technique, network states can be monitored in real-time, and desired states can be reinforced through positive feedback. Covert neurofeedback is a variant of neurofeedback, in which participants are given no strategy with which to control the feedback, and might not even be cognizant that the feedback is related to brain activity. This tool is therefore extremely flexible, as it does not require the formulation of a specific strategy and is not limited by what we know about the networks or the ways in which they are typically activated. Instead, desired states are reinforced when they occur spontaneously, allowing for implicit training of networks, such as those found to be under-connected in ASD. We designed a covert neurofeedback experiment, to test whether it would be possible to change connectivity between these aberrantly connected network nodes, through direct reinforcement of spontaneously occurring network states. This decision is motivated by recent work showing that positive and negative reinforcement of brain activity patterns are sufficient for promoting small but widespread changes in network connectivity, even without any learning intention on the part of participants (Ramot et al., 2016).\n\nFurther evidence that covert neurofeedback can change networks, and that these changes can have behavioral effects, comes from other recent work. A number of studies have been successful at training complex patterns of activity within a given network using multi-voxel pattern analysis (MVPA) techniques (deBettencourt et al., 2015; Amano et al., 2016; Shibata et al., 2011), with feedback related changes corresponding to robust behavioural changes after only a few sessions, and significant change being detectable after as little as one training session. Feedback induced behavioural changes have been shown to range from very local and low level, such as changes in perception of line orientation after V1 training (Shibata et al., 2011), or inducing color association in V1 in a somewhat less local paradigm (Amano et al., 2016), to changes in high level functions such as attention (deBettencourt et al., 2015), and fear perception (Koizumi et al., 2016). Such changes can even be bi-directional, both behaviourally and at the network level (Cortese et al., 2017). This previous work sets up covert neurofeedback as a good candidate for a potential intervention in ASD, though whether specific, long-ranging connectivity changes can be induced through neurofeedback, which regions/networks are amenable to such reinforcement, how such training will affect wider brain networks, and how long these changes last, are all still open questions. In this study, we lay out a proof of principle of the plausibility of such training, showing robust, long-lasting feedback induced changes in these aberrant networks, coupled with preliminary results as to the behavioural correlates of these changes. 17 ASD participants and 10 control participants were scanned over multiple sessions (123 sessions in total). These results reflect not only on the potential uses of such training in ASD, but also in other disorders with underlying aberrant connectivity at their core.\n\n## Results\n\n### Selection of training targets\n\nWe used previously collected resting state data on large groups of ASD and TD participants (N\u00a0=\u00a056 ASD, 62 TD) to identify two target brain regions that showed large under-connectivity in ASD compared with TD individuals, while also being physically distant from each other, and belonging to separate networks (Figure 1): target1 in superior temporal sulcus (STS) and target2 in somatosensory cortex, both of which have been consistently implicated in social processing (Allison et al., 2000; Frith and Frith, 2010; Adolphs, 2009; Damasio et al., 2000), and have previously been found to be under-connected and atypically activated in ASD (Chen et al., 2015; Gotts et al., 2012; M\u00fcller et al., 2001; Tuttle et al., 2016; Khan et al., 2015; Khan et al., 2013). This dataset is an expansion of previously reported data (Gotts et al., 2012), which found very similar aberrant connectivity patterns, matching results from other studies using large datasets (Cheng et al., 2015). As in the previously published subset of the dataset, we found that under-connectivity between these two networks (STS and somatosensory) in ASD was significant in both this large dataset (p<4.3\u00d710\u22125) and in the 17 participants recruited for the neurofeedback study (p=0.002), as well as significantly correlated to social symptom severity, as measured by the Social Responsiveness Scale (SRS) (r\u00a0=\u00a0\u22120.35 p<0.009 without regressors, r\u00a0=\u00a0\u22120.31, p<0.026, using age and motion as regressors, r values represent Pearson\u2019s correlation, p-values determined by permutation tests). The SRS is a parent filled questionnaire, which is designed to be a continuous, cardinal measure of social symptom severity in ASD, and has been shown to correlate with functional brain connectivity measures in multiple studies (Anderson et al., 2011; Di Martino et al., 2009b). This result indicates that connectivity between these two networks is clinically relevant, i.e. the lower the connectivity, the more severe the social symptoms (higher score on the SRS). The first goal of the training was therefore to increase the connectivity between target1 in STS, and target2 in somatosensory cortex.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig1-v3.jpg)\n\n**Figure 1.:** (A) Group differences between TD (N\u00a0=\u00a062) and ASD participants (N\u00a0=\u00a056), matched for motion, age and IQ. Difference maps calculated on the average correlation of each voxel with all other grey matter voxels in the brain. Target1 was chosen as the region with the greatest between-group difference, and Target2 was chosen as the region in which the difference in connectivity to Target1 was greatest between groups, while also being in a physically distant, distinct network based on (Gotts et al., 2012). (B) Pairwise correlations for the dataset shown in (A), between the two targets (top left), target1 and control (top right), target2 and control (bottom left), and the composite difference measure, based on the difference in correlations between the two targets and the target-control pairs (see Materials\u00a0and\u00a0methods). Difference between the ASD and TD groups is significant for target1-target2 correlations (p=4.3\u00d710\u22125), and the composite difference measure (p=0.001). (C) Same as (B), but for the current cohort of participants who took part in the neurofeedback study. Correlations are averaged across the first two rest scans of the first day, before training. Between group difference is significant for target1-target2 correlations (p=0.002), target1-control correlations (p=0.04), and the composite difference measure (p<1\u00d710\u22124). Blue bars represent the subject mean, cyan error bars mark\u00a0\u00b1\u00a0SEM. Red dots represent each individual subject.\n\nIn order to ascertain that we would only be reinforcing connectivity between our two targets, rather than global changes that cause an overall increase in correlations across the entire brain in an undifferentiated manner, we selected a third control region (in the inferior parietal lobule or IPL, part of the default mode network), which was chosen for being uncorrelated to the two target regions in our dataset of TD participants during resting state. IPL was significantly over-correlated to STS target1 in the ASD cohort participating in this study (Figure 1C). This combination of under-connectivity between STS and somatosensory with over-connectivity to the default mode network, is in line with recent evidence of reduced within-network cohesion coupled with reduced between-network differentiation (Hahamy et al., 2015; Keown et al., 2016). The goal of the neurofeedback training was therefore to induce greater differentiation between these three regions of interest (ROIs) in participants with ASD, so as to bring connectivity levels between those three networks closer to those of TD individuals. This meant increasing connectivity between the two target regions, while simultaneously decoupling the two target-control pairs. To this end, we came up with the composite difference measure, combining the target-target and target-control correlations (see Materials and methods). This measure was also significantly different between the ASD group and the TD group in both the previous large dataset (p=0.001), and in our cohort (p<1\u00d710\u22124), Figure 1B\u2013C). All p values were calculated through permutation tests, maintaining the original number of participants for each group.\n\n### Training paradigm\n\nFor the initial part of the study, 17 patients with ASD participated in four training sessions, over the course of 8 days (two sessions of two consecutive days each, a week apart). Each session consisted of two rest scans, followed by four neurofeedback training scans, and finally two more rest scans (Each scan was 9 min in duration. See Figure 2). During the neurofeedback scans, participants started with a blank screen, and were instructed to attempt to reveal the picture hidden underneath (see Figure 2\u2014figure supplement 1 for an example). This was described to them as a puzzle task. No further instructions were given. Parents filled out behavioral questionnaires before training began, and two weeks after the last training session. An additional follow up study was then carried out, in which 15 of the 17 original participants returned for a final, slightly shorter training session. The interval between the original training and the follow up varied greatly between subjects, and ranged from 5 to 56 weeks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-v3.jpg)\n\n**Figure 2.:** (A) Timeline. (B) Location of ROIs, and network being trained. (C) Feedback session. Data was collected and analyzed in real-time, and a decision whether to present feedback (reveal a square of the picture\u00a0+positive sound) was made based on the change in signal from one time (t-1) to the next (t) in the three ROIs. Feedback was given if the direction of change in the two targets was the same, and opposite from the direction of change in the control ROI. See.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Participants were asked to attempt to reveal the picture, and feedback was presented in the form of a picture square becoming visible, coupled with a positive tone. There were 25 squares per \u2018puzzle\u2019, and a new puzzle began as soon as the previous one had been completed, until the end of the scan when the current and high score for that day were presented.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Overall composite difference correlation measure for each scan, plotted against the number of feedback responses when the same data is run through the real-time algorithm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The diagram shows the direction of training in the TD control group. As with the ASD group, participants were rewarded for the \u2018correct\u2019 network configuration by revelation of a piece of the puzzle, coupled with a short upbeat auditory sound. The three network nodes also remained the same, the only difference was in their designation as \u2018targets\u2019 or \u2018control\u2019. While the STS node remained a target, the somatosensory node became the control, and the IPL was the second target. Participants were therefore trained to increase connectivity between STS and IPL, while reducing their connectivity with the somatosensory node.\n\nOne of the barriers to carrying out connectivity-based rt-fMRI-nf has been the slow timescale of fMRI recordings, making online calculations of correlations very limited. We therefore developed a method that can approximate the correlations using only two time points: every two seconds, for each TR (time to repetition), the signals from the three ROIs were analyzed in real-time (see Materials and methods), and the trend in the signal compared to the previous TR was noted for each of the three ROIs (increase/decrease). Positive feedback, in the form of revealing a part of the picture accompanied by an upbeat sound, was given whenever the network was deemed to have reached its desired state. As our goal was to increase correlation between the two target regions, and decrease correlations between the target and the control regions, feedback (i.e. revealing a part of the picture) was given whenever the signal trend in the two target ROIs was the same, and opposite from the trend in the control ROI (Figure 2, Materials and methods). This \u2018two-point\u2019 method was validated as being a good proxy for correlation analysis by comparing the results from this to standard Pearson\u2019s correlation offline (r\u00a0=\u00a00.61, p<1\u00d710\u22124 permutation test, Figure 2\u2014figure supplement 2). We carried out simulations using more time points (2\u20136 TRs) to evaluate if longer time scales would lead to connectivity estimates for neurofeedback that better resemble actual correlations computed offline. We did not find any significant increase in the correlation of these extended measures to the whole series Pearson\u2019s correlations, which were our \u2018gold standard\u2019. We therefore chose to provide feedback on just two time points, to minimize the timescale of the feedback.\n\nAt the end of each neurofeedback scan, participants were presented with their score, i.e. how many picture squares they had managed to reveal. They were then given a chance to attempt to beat their score on the next run, to win an additional bonus on top of the normal study compensation. The pictures were chosen to be neutral, depicting mostly scenes devoid of people and text, or abstract art/objects. Random pictures were chosen for each run, from a large set of such pictures. Participants completed 2\u20133 puzzles per scan on average, and there was no significant change in number of puzzles completed between day1 and day4.\n\nParticipants were blind to the purpose of the study, as well as to the mechanism of the neurofeedback, and even to the fact that it was neurofeedback. This was ascertained by exit questionnaires at the end of the last day of scanning, in which participants were interviewed regarding their thoughts on the study, their motivation, and their strategies during the training (see Table 1 for responses). Responses as to the perceived nature of the \u2018puzzle task\u2019 varied widely, as did reported strategies, but none held any resemblance to the neurofeedback algorithm. Strategies mostly revolved around different ways of looking at the picture, as it was being revealed. Despite not knowing what they were supposed to do, most participants were highly motivated to solve the puzzles, with only 3 of the 11 participants for which responses are available reporting a motivation score of less than 5 (on a scale of 1\u201310, see Table 1).\n\n**Table 1.**\n Exit questionnaires\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>1. what did you think the study was about?</th>\n      <th>2. what were you doing during the scans? (Ask about each day if applicable)</th>\n      <th>3. how hard were you trying to solve the puzzles, on a scale of 1\u201310, for each day?</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>Really don\u2019t know. Figure out how long it takes my brain to figure out where all the pieces go.</td>\n      <td>Laying back, relaxing, thinking about random things. Same all days.</td>\n      <td>5, 5, 5, 5</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>MRIs, puzzle study</td>\n      <td>Day1: just think, Day 2: just think, Day 3: stay awake, Day4: stay awake</td>\n      <td>9, 9, 9, 9</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Pictures and the emotional responses they elicit. Definitely tied to emotions. Thought he had to be less excited for pieces to come up</td>\n      <td>Thinking about memories, things to pass the time</td>\n      <td>10, 10, 9, 8</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Measuring the thought processes of where certain processes take place in the game. Stress test</td>\n      <td>Day1: eye movement, control heart rate, close eyes; Day2: nothing, relaxed; day3: relax, day4: nothing</td>\n      <td>5, 1, 1, 2</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>About focus</td>\n      <td>Trying to focus on certain areas of the screen</td>\n      <td>5, 8, 10, 2</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>What exactly is autism and how the brain is related to it? The puzzles can show how fast different people's brains work.</td>\n      <td>Nothing different really. Today was thinking about an English assignment. Was really just looking at them, wanted to see the picture. Didn't think \u2018oh I have to do this now\u2019. Wasn\u2019t trying hard to solve at all. Either it comes or it doesn\u2019t. You can't really rush your brain</td>\n      <td>1, 1, 1, 1</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>I don\u2019t know</td>\n      <td>Breathing in patterns, blinking, gave up</td>\n      <td>7, 4, 5, 10</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>About first level visual processing?</td>\n      <td>Most math, computation</td>\n      <td>5, 2, 2, 2</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>Multitasking, and being able to keep still and look in the same place for a consistent period.</td>\n      <td>Tried different ways to solve more pieces. Today, for example, tried to keep still and look at a similar spot consistently. Yesterday, tried multitasking, breathing and blinking on different rhythmic scales (helped the most). Last week, kept looking around in various directions, mostly at squares that werent filled in yet.</td>\n      <td>6, 6, 7, 8</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>How humans see stuff and how the brain reacts. Ie sight</td>\n      <td>Staring at whatever space he could to put the puzzle together</td>\n      <td>Same each day</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>Don\u2019t know, detecting how hard my brain works on puzzles</td>\n      <td>Trial and error, look at different parts of screen, try different techniques</td>\n      <td>9, 7, 9, 8</td>\n    </tr>\n  </tbody>\n</table>\n\n### Control group\n\nAn additional control group of 10 TD participants completed the same initial 4 day training regimen, following the same protocol as the above. This group received feedback on the same three nodes, but in a different network configuration: target1 in the STS remained the same, but somatosensory target2 and the IPL control region switched roles, so that feedback was given whenever STS (target1) and IPL (now target2) were co-modulated, and were opposite to somatosensory cortex (now control), see Figure 2\u2014figure supplement 3. This provided feedback orthogonal to that given to the ASD group. Another key difference is that this feedback was antithetical to the normal connectivity patterns found in the typically developing brain, as STS and somatosensory are well correlated in the typically developing brain, whereas the IPL region used in this study was explicitly chosen to be as uncorrelated as possible with STS in TDs during rest (Figure 1B\u2013C). This control therefore served a dual purpose: in terms of the network that the ASD participants were being trained on, which rewarded increased connectivity between STS and somatosensory and decoupling of these from IPL, this was random feedback. That is to say, the feedback given to the TD participants was uncorrelated with the feedback they would have received had they been trained on the same network configuration as the ASD participants. This served as a control for any changes in connectivity in that direction being driven by something other than the feedback. At the same time, this control also examined whether it is possible to modulate any network, regardless of the native connectivity.\n\n### Learning\n\nTo assess whether any learning took place over the course of these initial four training days, we examined the correlations between the two target regions (which had been trained to increase connectivity), the two target-control pairs (which were trained to decrease connectivity), as well as the composite difference measure. Figure 3 shows the results of this analysis for the ASD group. As can be seen, over the course of the four training days, correlations between the two target regions steadily increased (with a significant difference between most days, p=4\u00d710\u22124 between day1 and day4, mean change in correlation\u00a0=\u00a00.11, Figure 3A), while correlations between target1 and control decreased (significant difference between day1 and all other days, p=8\u00d710\u22124 between day1 and day4 mean change\u00a0=\u00a0\u22120.13, Figure 3B). Though there is an overall decrease between target2 and control, this does not reach significance and the mean change is small (Figure 3C). This is in line with the lack of differentiation between the ASD group and the TD group in target2-control correlations (Figure 1C), suggesting neurotypical network connectivity is more resilient to change. Figure 3D shows the overall composite difference measure, taking into account all three correlation pairs, where there is a strong and consistent increase between day1 and day4 (p<2\u00d710\u22124, mean change\u00a0=\u00a00.19). 15 of the 17 participants showed a positive change in this measure (14/17 had a positive change in target1-target2 correlations, as well as a negative change in target1-control correlations). The TD control group on the other hand, showed no significant changes between days in any of the three pairwise combinations, or in the composite difference measure. Only 4/10 participants in this group showed a change in the trained direction in the composite measure, within the range of chance, and the magnitude of change was minimal relative to the change seen in the ASD participants. Figure 4A shows these data for all the individual ASD participants, while Figure 4B shows the individual TD participants. The full results for all individual participants, for all days, are displayed in Figure 4\u2014figure supplement 1. To further ensure that the null result in the TD group was truly different from the significant result in the ASD group, and not simply due to lower statistical power because of the smaller sample size, we re-calculated the change in correlations for each of the possible subsets of 10 participants from our ASD group, and found that the significant difference between day1 and day4 was maintained for all subsets in the target-target correlations (range of mean change 0.03\u20130.17, p-value range 0.046 to 1 \u00d7 10\u22124), for 83% of possible subsets in the target1-control correlations range of mean change \u22120.02 to \u22120.19, 0.22\u00a0< p < ,1 \u00d7 10\u22124 and for all possible subsets in the composite correlation difference measure (range of mean change 0.1\u20130.23, p<0.007 for all subsets). To test for interaction between the TD and ASD groups, we carried out a two sample t-test (without assuming equal variance to control for different sample size) between the change in composite correlations in the ASD group vs. the change in composite correlations in the TD group. A significant difference (p=9.2\u00d710\u22124) was found between the learning seen in the TD and ASD groups in this analysis. This significant difference between the groups was maintained even when we chose the ASD subset of 10 participants with the smallest change (p=0.013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig3-v3.jpg)\n\n**Figure 3.:** (A) Correlations between the two target regions per day, averaged across all four neurofeedback scans per day. Blue bars represent the subject mean, cyan error bars mark\u00a0\u00b1\u00a0SEM. Red dots represent each individual subject. The difference in correlations between day1 and days 3 and 4 and the follow up is significant (p=0.05, p=4\u00d710\u22124, p=0.05 respectively), as is the difference between day2 and day4 (p=0.016). (B) Correlations between Target1 and Control. There is a significant change between day1 and all other days (p=0.005, p=5\u00d710\u22124, p=8\u00d710\u22124 for days 2, 3 and 4, p=0.015 for the follow up). (C) Correlations between Target2 and Control. (D) Composite difference measure, showing the difference between target-target and target-control correlation pairs (see Materials and methods). Day1 correlations are significantly different from all other days (p=0.003, p=0.01, and p=2\u00d710\u22124, p=0.007 respectively), and day2 is significant different from day4 (p=0.0017). In all panels N\u00a0=\u00a017 for days 1\u20134, N\u00a0=\u00a015 for the follow up. All p-values for differences between days were determined by permutation tests.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Change in the composite difference measure averaged across the two neurofeedback runs during the follow up experiment and the same measure on day1 of the training, vs. time from the original experiment to the follow up, in weeks. No significant correlation was found between the two (r\u00a0=\u00a0\u22120.12) suggesting that our neurofeedback procedure induced a stable change that did not dissipate over time. N\u00a0=\u00a015, the number of participants who returned for the follow up scan.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** As the follow up experiment had only two neurofeedback runs as opposed to the four neurofeedback runs in the original experiment (all 9 min), and only 15/17 participants, we repeated the same analysis shown in Figure 3 using just the first two neurofeedback runs for the original 4 days, and the 15 participants that were included in the follow up. This did not impact the results, and significant changes between days stayed the same as before.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig4-v3.jpg)\n\n**Figure 4.:** (A) Difference in the composite difference correlation from day1 to day4, for each of the 17 individual ASD participants averaged across all four neurofeedback scans per day, presented chronologically in order of scanning. (B) Same analysis for each of the 10 TD participants, presented chronologically. Note that the composite difference measure is comprised of target-target correlations minus the target-control pairs, and that the definition of targets and control differed between the two groups.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Full correlation data for all four days for each individual participant. Top half shows ASD data, bottom half TD control group data. Blue bars denote day1, cyan day2, yellow day3 and red day4. Note that 15/17 ASD participants show an increase in the composite difference score from day1 to day4, 14/17 show an increase in Target1, Target2 correlations, and 14/17 show a decrease in the correlation between Target1 and Control. In contrasts, 5/10 TDs show an increase in Target1, Target2 correlations, 4/10 show a decrease in correlations between Target1 and Control, and 5/10 show a decrease in correlations between Target2 and Control, exactly at chance level.\n\nWe next set out to test how long this learning would be maintained. To address this question, we called back the participants for a follow up study, in which they returned for another, shorter round of training. To get a good indication of the persistence of the training effect, participants were called back in a staggered manner, from as little as 5 weeks and up to 56 weeks from their original training. Our results indicate that the learning was mostly, though not fully, preserved, even after such an extended time period (Figure 3A\u2013D, follow up). In fact, although there was variation between subjects in the degree of retention, there was no correlation between the time that had elapsed and the rate of retention (see Figure 3\u2014figure supplement 1). Since there were only two feedback runs in this follow up scan, we also compared them to just the first two feedback runs for the first four days, in order to account for any differences arising from the different number of runs. The results using just the first two runs for the first four days were not in any way different from the results using the full data (see Figure 3\u2014figure supplement 2).\n\n### Whole brain analysis\n\nSo far we had only considered what happens in the regions that were trained. In order to get a more comprehensive picture of the effects of the training on the brain, we conducted a whole brain analysis, which looked for changes during the training period (i.e. from day1 to day4). We calculated three maps, one for target1, one for target2, and one for the control region, with each map showing the change from day1 to day4 in the correlation of each voxel in the brain to the corresponding region. We then carried out a t-test across all participants for each of these three analyses, and the resulting maps for the ASD group are displayed in Figure 5. The changes were exactly as predicted by the training: the strongest positive change in correlation to target1 over the training period was in the somatosensory cortex (with a peak at target2), and the strongest negative change was in the control region. Changes to correlations with target2 were seen in the STS with a peak in target1, and negative\u00a0changes in correlation to control were seen in bilateral STS (Figure 5A). Since we were training a network of three nodes, rather than a simple connection between two regions, we next calculated the composite change: for each voxel, the change between day1 and day4 in its correlation to target1 minus its correlation to control (Figure 5B), and the same change in its correlation to target2 minus control (Figure 5C). This analysis yielded similar but far stronger results. The maps of the composite correlations were corrected at a very conservative cluster threshold determined by random permutation testing, in accordance with recent statistical recommendations for analyses utilizing cluster size (Eklund et al., 2016) (see Materials and methods). These results support a causative role for the feedback itself, as the specific relationship that was trained between the two targets and the control came up in completely independent, whole-brain analysis. That is, using target1 relative to the control seed, the largest change in the whole brain was found in target2, even though that region was not pre-selected and the analyses did not constrain this to happen, and vice-versa using target2 and control. Note that we do not expect to find changes between day1 and day4 in either target1 or control in the target1-control map, as these regions did not change in relation to themselves. Rather, this analysis highlights all the other areas, outside of those two regions, which changed their correlation over the course of training in relation to target1 (increasing) and to control (decreasing), finding the peak of this change in target2. The same is true for the target2-control map, which shows an even greater effect focused on target1, consistent with the ROI analysis results showing a greater decoupling of target1 from control than target2 from control. Note that Figure 5 shows results only for the ASD group, as no significant peaks were identified in any of the target or control regions for the TD control group, and no voxels survived the cluster correction threshold.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig5-v3.jpg)\n\n**Figure 5.:** (A) Top left: change in correlations to target1, between day1 and day4, t-test across participants. High values represent voxels that showed a consistent change between day1 and day4, such that on day4 they were more correlated to target1 than they were on day1. Note the positive peak in target2, and the negative peak in the control region. Top right: change in correlations to target2, between day1 and day4, t-test across participants. Note the positive peak in target1. Bottom: change in correlations to the control region, between day1 and day4, t-test across participants. Note the negative peak in target1 and bilateral STS. (B) Change in differential correlation to the target1 and control ROIs, between day1 and day4, t-test across participants. High values represent voxels that showed a consistent change between day1 and day4, such that on day4 they were more correlated to target1 and less correlated to control than they were on day1. Inset shows the same analysis at a higher threshold. (C) Same as (B), for target2 and control. Note that for both maps, the other target, which was not included in the analysis, emerges as the area of greatest change across training days. Maps corrected through permutation tests (see Materials and methods).\n\n### Transfer to resting state following training\n\nThe training-related changes we have demonstrated to this point were during the neurofeedback scans themselves. To be of any potential clinical value, these changes must also generalize beyond the training sessions, to the resting state scans, which reflect the baseline connectivity of the brain when not engaged in a specific task. In order to obtain as accurate an estimate of baseline as possible and to avoid any contamination by the task, only the two rest scans prior to the neurofeedback were used for this analysis. Changes were overall smaller than those seen during the training, but significant changes were found between day1 and day4 (target1-target2 correlations mean change\u00a0=\u00a00.07, p<0.038, composite correlations measure mean change\u00a0=\u00a00.1, p<2\u00d710\u22124), and between day1 and the follow up (target1-target2 mean change\u00a0=\u00a00.09, p<0.011, composite correlations measure mean change\u00a0=\u00a00.11, p<2\u00d710\u22124). Change in rest was significantly correlated to change during the neurofeedback scans (r\u00a0=\u00a00.42, p<0.04, permutation test). Moreover, 14/15 participants who came in for the follow up showed an increase in the composite correlation measure (Figure 6A). To assess whether the changes seen in the follow up could simply be a function of the elapsed time, we examined data from all participants in the previous study (used to define the training regions) which had at least two resting state scans from two different time points, and evaluated the change in connectivity seen between the sessions. 19 participants had two such data points, and the average time between the sessions was 13.2 months. The change however was not significant for any of the pairwise correlations, or the composite correlation measure (Figure 6A). We next looked at the composite measure for the 10 participants from our study who had also participated in the previous resting state experiment (and in the follow up), and compared change from the previous experiment to the first rest sessions on day1, before any training, and in this subset also the change from day1 of the training to day4 and to the follow up (Figure 6B). While there was no significant change from the previous experiment to day1 (mean time interval\u00a0=\u00a038.3 months, mean change\u00a0=\u00a0\u22120.04), there was significant change to day4 (mean change\u00a0=\u00a00.1, p<0.019) and to the follow up (mean change\u00a0=\u00a00.11, p<0.003). Taken together, these analyses provide strong evidence that the changes we observed were not a function of elapsed time but rather occurred as a direct result of our neurofeedback regime.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig6-v3.jpg)\n\n**Figure 6.:** (A) Left panel shows the changes in resting state composite difference correlations for the 19 participants for which two previous data points were available from a previous study, prior to neurofeedback (average time between sessions 13.2 months). The right panel shows the change in resting state composite difference correlations from the very first pre-training rest sessions on the first day of neurofeedback, to the rest sessions collected in the follow up session (also before the neurofeedback training sessions that day), for the 15 participants who took part in the follow up session. Average time between sessions for this group was 6.2 months. (B) Changes in resting state composite difference correlations for the 10 participants who had data from both the previous study, and the follow up session. Change between neurofeedback day1 and neurofeedback day4 as well as neurofeedback follow up, are significant (p=0.019, p=0.003 respectively). All correlations are taken from the resting state scans at the beginning of the relevant session. NF\u00a0=\u00a0neurofeedback.\n\n### Behavioral relevance\n\nFinally, we asked whether the changes we see as a result of the training are in any way correlated to behavior. To this end, we looked at changes in behavior as measured by the behavioral questionnaires filled out by the parents prior to training, and two weeks after the end of the initial training set. These behavioral results included two statistical outliers who were removed from the analysis (definition of outliers was based on change scores greater than 3 standard deviation from that seen in an independent data set, see Materials and methods). We compared the change in these behavioral questionnaires to the change in correlations between the final resting state scans on the last day (following neurofeedback), and the resting state scans on the first day. There were two measures of behavior: the first, the Social Responsiveness Scale (SRS), has previously been found to correlate with functional connectivity in this network (see section on target selection), and therefore the change in this rating was expected to correlate with the change in the network. The second, the Behavior Rating Inventory of Executive Function (BRIEF), measures executive function rather than social abilities, and though patients with ASD show deficits on this measure (Baron et al., 2000), it is expected to reflect prefrontal functioning, and we expected that changes on this measure would not correlate to changes in the social network being trained (Anderson et al., 2002; Anderson et al., 2005; Mahone et al., 2009). Indeed, although there was no significant change in the mean SRS score across participants, with the mean score actually slightly (though not significnatly) increasing instead of decreasing as predicted (mean SRS before training = 69.8, mean SRS after training = 71.6, p=0.11), there was a significant correlation between changes in the resting state network and the change in SRS (pre training minus post training, so that a positive change corresponds to a reduction in symptoms, r = 0.56, p=0.016, Figure 7). There was no significant correlation between the baseline SRS score and the change in SRS seen during training (r = 0.14, p=0.29), or the baseline rest and the change in rest (r = \u22120.22, p=0.2). The partial correlation between change in rest vs. change in SRS, after controlling for baseline SRS and baseline rest, was higher (r = 0.62 p=0.014).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig7-v3.jpg)\n\n**Figure 7.:** Correlation between the change in the behavioral measure (SRS) score before and after training, and the change in resting state connectivity from the post-training rest scans on day4 to the rest scans on day1 (day4 correlations minus day1 correlations, positive change corresponds to higher correlations on day4). Behavioral change on the y-axis calculated as pre-training overall SRS t-score minus post-training SRS t-score. Positive behavioral change corresponds to a reduction in SRS score after training. Statistical outliers marked in red. (A) Behavioral change vs. change in Target1-Target2 correlations. (B) Behavior vs. Target1-Control. (C) Behavior vs. Target2-Control. (D) Behavior vs. composite difference corr. R values represent Pearson\u2019s correlation. Regression lines and R values do not include the outliers. Correlations between Target1-Target2 and Target1-Control changes and behavior are in the expected direction but are not significant (p=0.07, p=0.08). Behavior vs. composite difference change is significant (p=0.016).\n\nNo such correlation was found with the BRIEF (change in SRS vs. change in resting state correlations: r\u00a0=\u00a00.56, p=0.016; change in BRIEF vs. change in resting state correlations: r\u00a0=\u00a00.09, p=0.39). We further tested for the correlation between the change in SRS vs. change in the resting state correlations, after partialing out the contribution of the BRIEF. After removing the variance explained by the BRIEF, the correlation between the rest and SRS was even higher (r\u00a0=\u00a00.6, p=0.02), indicating that change in resting state correlations was captured by the change in SRS scores, but not the BRIEF. Note that the SRS was chosen as our behavioral measure because it has consistently been shown to correlate with aberrations in network structure in ASD (Gotts et al., 2012; Wallace et al., 2012; Di Martino et al., 2009b; Anderson et al., 2011). Nevertheless, it was not designed to be used with such a short test-retest interval (3 weeks), and has only been validated for intervals of 6 months or more (Hus et al., 2013; Constantino et al., 2003; B\u00f6lte et al., 2008). We can therefore make no claims regarding the absolute values of the change in scores.\n\nIn the interest of completeness, we also ran the analysis with the outliers (marked in red in Figure 7). Without removing outliers, the correlation with SRS fell below significance, though the trend was still in the same direction (r\u00a0=\u00a00.26, r\u00a0=\u00a00.31 after controlling for baseline SRS and baseline rest, p=0.09). A possible confound in using test-retest reliability on other data to calculate outliers (as was done here) is that our neurofeedback data could include large, training induced changes, which would not be present in other datasets, skewing the variance. Note however that the two outliers reported here had a large negative behavioral change, which is not the predicted direction of change due to neurofeedback based training. This is more likely due to the short assessment interval used here (two weeks), which would give a lot of weight to negative incidents which occurred during this time. For instance, one of the participants whose data was determined to be an outlier, had moved to a new house during this time period.\n\n## Discussion\n\nThe study of rt-fMRI covert neurofeedback \u2013 feedback given on pre-specified brain activity, but without providing participants with further information regarding the nature of the task or an explicit strategy through which to control the feedback \u2013 is still in its infancy (for a review see [Sitaram et al., 2017]). These results not only help solidify the existing evidence that reward-mediated learning through covert neurofeedback is possible (Shibata et al., 2011; Ramot et al., 2016; Amano et al., 2016), but also expand our knowledge in important ways. In this study, we have demonstrated that covert neurofeedback can be used to modulate correlations between distinct, physically distant networks (Figure 3), in the great majority of participants (15 of17, Figure 4, Figure 4\u2014figure supplement 1). We have further shown that this modulation is possible even in cases of aberrant network structure, in clinical populations, and is sustainable for extended periods of time (some of our follow up sessions were a year after the original training, and we saw no evidence for an effect of time as a modulator of retention, Figure 3\u2014figure supplement 1). This kind of connectivity-based neurofeedback has previously been carried out in only a handful of studies (Scharnowski et al., 2014; Megumi et al., 2015; Koush et al., 2017), though the network approach to neurofeedback is gaining traction and shows not only good preliminary findings but also has a sound theoretical basis (Bassett and Khambhati, 2017).\n\nIt could be argued that the changes in functional connectivity that we found were not a result of the feedback, but rather of the multiple fMRI visits, or were somehow precipitated by the nature of the puzzle task. Though imperfect because of the different population, the control using the TD group, which received feedback largely orthogonal to the network trained in the ASD group, provided further evidence for the necessity of the feedback itself in inducing these changes. The TD group, which went through the exact same protocol as the ASD group but received feedback on a different network, did not demonstrate the changes in connectivity seen in the ASD group (Figure 4, Figure 4\u2014figure supplement 1). Moreover, the extraordinary specificity of the changes revealed by the whole brain analysis (Figure 5), peaking exactly at the small ROIs that were chosen for the training, would also seem to preclude an alternative explanation. The further significance of the whole-brain analysis is that this learning is spatially specific even when training disparate networks, meaning that it is possible to target specific regions of the brain. However, it is important to note in this regard that though the peaks were centered on the regions we were training, the changes spread to entire networks, as would be expected from the architecture of the brain, which is composed of large-scale networks of multiple brain regions, making it difficult to induce changes to just one region in isolation.\n\nIn a larger context, the failure to induce change in the direction of training in the control subjects, suggests that while it is possible to train networks that are fundamentally connected, it is much more difficult to train networks that are uncorrelated or weakly correlated in the typically developing brain. This conclusion is also bolstered by the failure of the training to induce change in the ASD group between target2 and control, regions which did not differ in their connectivity from that of the TDs. It is also possible that some networks may be more difficult to train than others, as has previously been suggested (Harmelech et al., 2015). Future studies will be needed to better understand the basic constraints in modifying these relationships.\n\nThe prohibitive cost of rt-fMRI, or fMRI scans in general, limits the number of training sessions in these paradigms. Moreover, the under-connectivity between the target regions chosen here explains only some of the behavioral deficits, and is clearly not the sole underlying cause of autism. This study was therefore designed as a proof of principle that aberrant connectivity can be addressed through neurofeedback, rather than as a clinical intervention, and whatever behavioral effects we found were expected to be modest. Once such a causal relationship is established, future potential clinical applications might pursue more cost effective options, such as identifying EEG signatures that correspond to activity from these areas, as several groups have already begun to develop (Zotev et al., 2014; Meir-Hasson et al., 2014).\n\nFrom a clinical perspective, the most important result in this study is the successful transfer of the change in correlations to the resting state. By itself, change during training does not guarantee generalization of the learning, or in this case of the change in the network structure. Though the change in the baseline resting state (before neurofeedback training each day) was somewhat more modest than the change seen during training, it was reliable and consistent, and could not be explained simply by the passage of time (Figure 6). Note that the correlation seen with behavior (Figure 7) is with the change from rest on day1, to the resting state data collected immediately after the last training session on day4. This resting state change was overall smaller than the change seen with the pre-training baseline rest on day4 shown in Figure 6, but the day4 pre-training baseline did not show a correlation with behavior. The behavioral results, though they did not show an overall mean change, are preliminary in their scope and limited by the timescale on which they were measured, demonstrate that change in behaviorally relevant networks correlates with change in behavior, which is a crucial and entirely non-trivial point in terms of the potential clinical applications of neurofeedback. The lack of overall mean change together with the correlation with connectivity changes makes it unlikely that this result is driven by a placebo effect, and on debriefing after all data were collected, it was clear that the patients and their families did not conceive of this as an intervention, and had no expectation of behavioral change following the study. This finding also adds to the debate regarding the nature of the functional and structural hypoconnectivity found in ASD, whether it plays a causative role in ASD or is simply a downstream effect (Vasa et al., 2016). A change in behavior following a change in connectivity suggests the former, bolstering the mechanistic approach to functional connectivity in ASD. However, it should be noted that underconnectivity is not the full story in ASD, and there is growing evidence for hyper cortico-thalamic connectivity, alongside the cortico-cortico hypoconnectivity (Picci et al., 2016). It should also be noted that the under-connectivity seen in cortico-cortico correlations in ASD is dampened connectivity (closer to 0), and not anti-connectivity (negative correlation). The nature of the feedback given here is that positive correlations between the two targets are rewarded, thus boosting connectivity that already exists at baseline (as baseline connectivity is positive, just small). Future studies will have to replicate and expand on the behavioral findings, but this method of testing behavioral changes following connectivity changes could be a promising tool for assessing different models of autism as well as other neuropsychiatric disorders.\n\nThe targets used in this paradigm were derived from a group analysis, and were not individually localized. As the variance within groups suggests, this is likely not the optimal method for ROI selection, especially if the focus is on behavioral change. These results are therefore probably an under estimation of what this tool can do, with individually tailored ROIs. It is not clear what the best method for individual ROI selection would be, or which localizer would best identify target regions, but it is another direction that should be pursued in future studies.\n\nSince the lack of an explicit strategy allows covert neurofeedback to be used to directly target all manner of abstract, behaviorally relevant networks, potential applications could be far ranging, encompassing many clinical disorders with underlying aberrant connectivity at their core. Moreover, this is a promising technique to be used in more basic science questions, as a tool to investigate questions of causality.\n\n## Materials\u00a0and\u00a0methods\n\n### Participants\n\n19 Males aged 15\u201325 (mean age\u00a0=\u00a020.93) who met the DSM-IV criteria for autistic disorder, an autism cut-off score for social symptoms on the Autism Diagnostic Review (ADR) and/or an ASD cutoff score from social\u00a0+communication symptoms on the Autism Diagnostic Observation Schedule (ADOS), all administered by a trained, research-reliable clinician, were recruited for this experiment. Additionaly, 11 age matched typically developing males were recruited for the control group. All participants had normal to corrected to normal vision. IQ scores were obtained for all participants, and all full-scale IQ scores were\u00a0\u226585 as measured by the Wechsler Abbreviated Scale of Intelligence, the Wechsler Adult Intelligence Scale-III, or the Wechsler Intelligence Scale for Children-IV. Participant groups did not differ in terms of full-scale IQ.\n\none ASD participant was removed due to discomfort in scanner on day1, and another ASD participant was removed on day two due to anxiety. 1 TD participant was removed after day1 for excessive motion. 17 ASD and 10 TD participants completed all four days of neurofeedback training. 15 ASD participants returned for the follow up experiment. The experiment was approved by the NIMH Institutional Review Board (protocol 10_M-0027). Written informed consent was obtained from all participants.\n\n### Definition of ROIs\n\nThree Regions of Interest (ROIs) were selected for training: two targets and one control. The targets were chosen according to previous research as those with a large degree of reduced connectivity in Autism Spectrum Disorder compared with typically developing (TD) controls, based on between group analysis as explained in (Gotts et al., 2012). For this analysis, we used an expansion of the dataset published in (Gotts et al., 2012), N\u00a0=\u00a056 ASD, 62 TD. Of the 56 ASDs in this dataset, 11 participated in the neurofeedback study. Additional constraints placed on the choice of ROIs was for them to be physically distant from each other, and in different networks (see (Gotts et al., 2012) for details). All ROIs were defined as spheres of 4 mm radius surrounding the focal points: Target1 - left Superior Temporal Sulcus (Talairach coordinates: \u221249,\u201329, 0), Target2 - left somatosensory cortex (Talairach coordinates: \u221254, 14, 39), and Control - right Inferior Parietal Lobe (chosen to be as uncorrelated with these two targets as possible in the TD dataset, Talairach coordinates: 49,\u201350, 42). Figure 1 shows the between group difference in the correlations between the ROIs.\n\n### Imaging data collection and MRI parameters\n\nAll scans were collected at the Functional Magnetic Resonance Imaging Core Facility on an 8 channel coil GE 3T (GE Signa HDxT 3.0T) magnet and receive-only head coil, with online slice time correction and motion correction. The scans included a 5 min structural scan (MPRAGE) for anatomical co-registration, which had the following parameters: TE\u00a0=\u00a02.7, Flip Angle\u00a0=\u00a012, Bandwidth\u00a0=\u00a0244.141, FOV\u00a0=\u00a030 (256 \u00d7 256), Slice Thickness\u00a0=\u00a01.2, axial slices. EPI was conducted with the following parameters: TR\u00a0=\u00a02 s, Voxel size 3.2*3.2*3.2, Flip Angle: 60, TE\u00a0=\u00a030 ms, Matrix\u00a0=\u00a072\u00d772, Total TRs\u00a0=\u00a0270, Slices: 37. All scans used an accelerated acquisition (GE's ASSET) with a factor of 2 in order to prevent gradient overheating.\n\n### Neurofeedback experiment\n\nThe initial neurofeedback experiment consisted of 4 training sessions over 8 days. There were 2 consecutive training days, a 6 day delay, then a final set of 2 consecutive training days. Each training day had 2 initial rest scans, 4 neurofeedback sessions, and 2 final rest scans. All scans were 9 min long. Participants were instructed to maintain an eyes-open rest and look at the blank screen. Neuropsychological tests were administered at two timepoints: on the first training day before scanning, and two weeks following the last training day.\n\n### Follow-Up experiment\n\nFollow up scans were conducted 5\u201356 weeks after the final training day and consisted of a single, abbreviated neurofeedback session with two rest scans followed by two neurofeedback sessions.\n\n### Online real-time data collection\n\nRegions of Interest (ROIs) were defined in Talairach space as described above. The standard Talairach brain was then co-registered to the structural scan collected that day, which was in turn co-registered to a short (10 TRs) functional echo-planar imaging scan (setup EPI) collected for that purpose each day before the first resting state session, to bring the ROIs into the native space during neurofeedback processing. All coregistration was carried out with the AFNI (Analysis of Functional Neuro-Images) software package (Cox, 1996).\n\n### Real-time fMRI algorithm\n\nDuring online processing of the data, 3D motion correction and slice time correction were carried out on all functional images. BOLD signal was extracted from each voxel in the ROIs and the mean signal was calculated for each ROI.\n\nFeedback decisions were determined by a difference measure, taking into account both the changes in the trend between the two target ROIs and the control ROI. This difference measure was calculated for each TR and for each of the three ROIs. Our rt-fMRI algorithm calculated the difference between the mean signal in the current TR minus the signal in the preceding TR, giving the signal trend in each ROI (increasing or decreasing). If the trend in the two targets was the same, and opposite from the trend in the control ROI, then feedback was given, meaning both conditions had to be fulfilled for feedback to be given:\n\n$$\n\\frac{ms(Target1(TR=t))\u2212ms(Target1(TR=t\u22121))}{ms(Target2(TR=t))\u2212ms(Target2(TR=t\u22121))}>0&\\frac{ms(Target1(TR=t))\u2212ms(Target1(TR=t\u22121))}{ms(Control(TR=t))\u2212ms(Control(TR=t\u22121))}<0\n$$\n\n(ms\u00a0=\u00a0mean signal)\n\n### Neurofeedback procedure\n\nEach training session had four neurofeedback training scans. The scans started out with a uniformly grey screen. Participants were told that there is a picture hidden underneath, and were instructed to try to unveil the image during what was described as the puzzle task. Importantly, no further cognitive strategies or suggestions were given to the participant for the duration of the experiment. Participants were not informed that their performance on the puzzle task was determined by brain activation.\n\n### Neurofeedback stimuli\n\nParticipants received two forms of positive reinforcement whenever the real-time algorithm determined that the network requirements had been met: a \u2018puzzle piece\u2019, i.e. a square of the hidden picture, would become visible on the screen with a concomitant sound of positive valence. This feedback was chosen to maximize engagement with the paradigm during the scan by providing a complex and interesting visual stimulus in a game-like setting, and the auditory stimulus was paired to ensure that participants would be aware of positive feedback independent of their visual attendance.\n\n### Visual stimuli\n\nDuring rest scans participants were shown a uniformly grey screen.\n\nDuring Neurofeedback training participants would begin with a uniformly grey screen. Then the image would become visible in small rectangular blocks, described to the participants as \u2018puzzle pieces.\u2019 There were 25 \u2018puzzle pieces\u2019 per board, which would be displayed piece by piece until a whole image was unveiled. After a full board was completed, the screen would become blank and a new image would begin to appear. The images were randomly selected from a set of 100 non-social images devoid of people or text, like a landscape or an abstract painting.\n\nAt the end of each 9 min training round, participants viewed a scoreboard which told them how many individual pieces they had unveiled that round, as well as the top score that they had received that day. Participants were financially incentivized to beat their best score for that day. fMRI offline data preprocessing:\n\nPost-hoc signal preprocessing was conducted in AFNI. The first four EPI volumes from each run were removed to ensure remaining volumes were at magnetization steady state, and remaining large transients were removed through a squashing function (AFNI's 3dDespike). Volumes were slice-time corrected and motion parameters were estimated with rigid body transformations. Volumes were coregistered to the anatomical scan. Volumes were smoothed with 6 mm blurring and normalized by the mean signal intensity of each voxel. The AFNI ANATICOR procedure was then applied to remove nuisance physiological and nonphysiological artifacts from the data (Jo et al., 2010). The anatomical scan was segmented into tissue compartments with Freesurfer (Fischl et al., 2002), Ventricle and white-matter masks were created and applied to the volume-registered EPI. Prior to smoothing, these masks gave pure nuisance times series for the ventricles and local estimates of the BOLD signal in white matter, averaged within a 15 mm radius. The measured respiration and heart rate signals were used to create Retroicor (Glover et al., 2000) and respiration volume per time (RVT) regressors (Birn et al., 2008). All nuisance time series in every run (average ventricle time series, average local white matter time series, 6 parameter estimates for head motion, and thirteen RVT and Retroicor regressors) were detrended with fourth-order polynomials before least-squares model fit to each voxel time series. No other filtering of the data was done. All participant data was aligned by affine registration to AFNI\u2019s TT-N27 template in standardized Talairach and Tournoux (Talairach and Tournoux, 1988) space.\n\n### Neuropsychological tests\n\nBaseline neuropsychological tests were conducted before the initial training session, and post-experiment surveys were collected two weeks after the final neurofeedback session. Parents filled out the Social Behavior Scale (SRS) to identify common social behaviors in autism, as well as the Behavioral Rating Inventory of Executive Function (BRIEF). The \u2018informant\u2019 report (filled in by a parent) was used as it has been shown to be more accurate (McMahon and Solomon, 2015). An independent dataset of ASD subjects who did not participate in this experiment but had SRS test-retest data was used to determine change reliability. Data points that were beyond three standard deviations from the mean as determined by this analysis were excluded\u00a0as\u00a0outliers.\n\n### Cognitive strategy questionnaire\n\nWe developed a cognitive strategy questionnaire that was completed by 11 of the 17 participants. Following their final scan session on day4 of the training, each of these participants was asked what they thought the experiment was about. Participants were then asked what they were doing during the scans, and if they used a particular cognitive strategy.\n\nFinally, participants were asked to rate on a scale of 1\u201310 how hard they had been trying to solve the puzzles each day, how satisfied they felt when a new puzzle piece came up, and if there were differences between days. The first six participants did not complete this questionnaire, but were interviewed after the final scan and reported no knowledge of the objective of the task, and similar cognitive strategies to those later reported in the questionnaire. See Table 1 for the data from these questionnaires.\n\n### Data analysis\n\nAll data were analyzed with in-house software written in Matlab, as well as the AFNI software package. Data on the cortical surface were visualized with SUMA (SUrface MApping) (Saad et al., 2004). The composite difference measure was computed by subtracting the average correlation of the two target/control pairs, from the target/target correlation:\n\n$$\ncorrTarget1,Target2-\\frac{1}{2}(corrTarget1,Control+corrTarget2,Control)\n$$\n\nAll p-values for the changes in correlation between days were computed through permutation tests, randomly permuting the days for 5000 iterations.\n\n### Whole-brain analysis\n\nFor each participant, for each neurofeedback scan on day1 and day4, we first transformed the correlation values with Fisher\u2019s z-transform to improve normality, then calculated a difference measure per voxel: corr(voxel time series, avg. Target1 time series) - corr(voxel time series, avg. Control time series). The resulting maps held information regarding each voxel\u2019s differential correlation to the Target1 vs. Control ROIs. We then averaged the maps for each participant across all four neurofeedback scans for each of the two days, and subtracted the average day1 map from the average day4 map. Each voxel in the resulting map now signified the change in correlation from day1 to day4, in the differential correlation to the Target1 ROI vs. the Control ROI, where a positive value means that this voxel was differentially more correlated to Target1 than to Control on day4 compared with day1. Normality of these data were ascertained using Lilliefor\u2019s goodness of fit test. We then carried out a t-test across the 17 participants, to identify voxels with a consistent change across subjects. Maps were corrected using a permutation test to determine significant cluster size, with day1 and day4 randomly permuted for each participant across 5000 permutations (as suggested by [Eklund et al., 2016]). These permutations were carried out at p-value thresholds of 0.05, 0.01, 0.005, 0.001 and 0.0005, and a mask was created of voxels that survived any of these corrections. The mask was then applied to the map shown in Figure 5A, which was set at a p-value threshold of 0.05.\n\nThe same procedure was carried out for the Target2 minus Control differential correlation, and the resulting map is shown in Figure 5B.\n\n### Data availability\n\nData is available via the XNAT platform https://central.xnat.org/app/template/Index.vm (dataset title 'Direct modulation of aberrant brain network connectivity through real-time neurofeedback' with ID number ASD_NF). As some of the participants in the experiment signed an older version of the consent form, which does not explicitly allow for data sharing, we are currently working on re-consenting all the participants with a new version. Hence for now, users will need to request access through the system. This can be done by creating a XNAT user account and pressing the request access link.\n",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "e2bd0576-1aa4-4fb9-83af-a159efefcca7",
+      "submission_id": "f3c05b3d-c0dd-4598-8f93-f419e66e14ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicholas Turk-Browne, Princeton University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28974.020](https://doi.org/10.7554/eLife.28974.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Direct Modulation Of Aberrant Brain Network Connectivity Through Real-Time NeuroFeedback\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Nick Turk-Browne as the Reviewing Editor and coordinated by Rich Ivry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have seen and discussed all of the reviews, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper reports a real-time fMRI study seeking to alter functional connectivity in ASD. This includes both up-regulating an edge between two target ROIs that is deficient in ASD and down-regulating their respective edges to a control region, to show that the effects are not global. Moreover, the effects of neurofeedback are compared to a typically developing control group. The key findings are that: (1) connectivity between the target ROIs increases across training sessions, connectivity between the first target and the control region decreases, and a composite score tracking all edges also increases; (2) these effects carry over to resting state outside of the context of training; (3) no effects are observed in the control group; and (4) the changes in connectivity correlate with an ASD scale tracking symptoms.\n\nEverybody is in agreement that this is an innovative and ambitious study, with very promising results and significant implications. We all also realize that the complexity of this work means that there are some potential holes that would need to be patched in future work (e.g., mismatched sample sizes, different training regimens across groups, other possible controls, etc.). That said, we are eager to move forward with this manuscript should you be able to address the reviewers' key comments below.\n\nEssential revisions:\n\n1) The manuscript text and figure legends do not adequately report all statistical tests, even in cases where comparisons are described as \"significant\" (e.g., Figure 1). The results of all tests should be reported fully, including comparisons of each group to zero and comparisons between groups.\n\n2) Relatedly, there are many instances where the groups are compared explicitly or implicitly. Any such comparisons need to be supported by interactions/tests between groups. Given the different sample sizes, the authors may need to adopt the subsampling technique used elsewhere (or other non-parametric method).\n\n3) Figure 7 needs to include x and y values. The authors state that the absolute value of the behavioral change is not meaningful, but then it is unclear why they excluded outliers and why they report correlations of those values (resting state connectivity should be in a standard unit anyway). Regardless of issues with interpretability (which can be noted in the legend), the reviewers felt strongly that plotting these values was a basic matter of convention related to providing a scale and baseline (e.g., 0).\n\n4) The correlation between SRS and target ROI connectivity at pre-training is potentially problematic, as these behavioral and connectivity scores provide the baseline for the difference metrics used to assess the relationship of brain-behavior changes (Figure 7). How does baseline behavior/connectivity contribute to this change relationship? What if you partial out or control for the baseline?\n\n5) The SRS could be biased by demand characteristics on the part of the parents. How can the authors rule out the possibility of contamination from, for instance, the parents' expectations of positive behavioral change due to neurofeedback training? This limitation should be acknowledged and more details should be reported on the mean SRS before and after training, and the reliability of the difference.\n\n6) The exclusion of outliers in the SRS change score based on test-retest reliability is problematic. A large change could reflect neurofeedback-based learning that did not (and could not) contribute to basic test-retest reliability in other data. The relationships should be reported with and without the outliers, with a more circumspect discussion about the justification for the exclusions.\n",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3b4d3307-4f06-44bf-852f-0bb660f06aad",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C1",
+      "claim": "Abnormal connectivity patterns exist between resting state networks in neuropsychiatric disorders, including Autism Spectrum Disorder (ASD).",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of abnormal connectivity patterns between resting state networks in neuropsychiatric disorders, including Autism Spectrum Disorder (ASD), has been well established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract, drawing on existing scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "751a2fca-bf5f-4bc0-a436-a7f9e857bd11",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C2",
+      "claim": "Traditional treatment methods in ASD are limited and do not address aberrant network structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional treatment methods in ASD are limited, and do not address the aberrant network structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the abstract, drawing on established understanding of ASD treatments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "290613c2-fd19-4e6b-b304-10f1c93d9e03",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C3",
+      "claim": "Real-time fMRI neurofeedback training produced large, significant long-term changes in correlations at the network level in participants with ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "This training regimen produced large, significant long-term changes in correlations at the network level, and whole brain analysis revealed that the greatest changes were focused on the areas being trained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including Figure 3 showing changes across training days.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "92767688-3479-4a82-ad9d-2c0a6ee81e00",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C4",
+      "claim": "The greatest changes in connectivity were focused on the areas being trained.",
+      "claim_type": "EXPLICIT",
+      "source": "This training regimen produced large, significant long-term changes in correlations at the network level, and whole brain analysis revealed that the greatest changes were focused on the areas being trained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by whole brain analysis data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1c146d72-4af0-4caa-9f5b-4f9aba67e084",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C5",
+      "claim": "Changes in connectivity were not found in the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes were not found in the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data comparing ASD and TD groups shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f781c48e-ee67-46f4-9ff5-243ef41d6603",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C6",
+      "claim": "Changes in ASD resting state connectivity following training were correlated to changes in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, changes in ASD resting state connectivity following the training were correlated to changes in behavior, suggesting that neurofeedback can be used to directly alter complex, clinically relevant network connectivity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis between connectivity changes and SRS scores shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "c586fb82-ce5c-4ea1-a8d0-800920f6fafb",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C7",
+      "claim": "Behavioral treatment options for ASD are limited in their efficacy and often do not generalize well beyond the specific training paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioural treatment options are limited in their efficacy, and often do not generalize well beyond the specific training paradigm (Otero et al., 2015; Williams White et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f80e52fd-4c93-40cc-a0d1-6e1f0c6b94c4",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C8",
+      "claim": "Numerous studies have documented widespread patterns of aberrant brain functional connectivity in patients with ASD, involving many cortical regions including frontal, parietal, and temporal lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have documented widespread patterns of aberrant brain functional connectivity in patients with ASD, involving many cortical regions including frontal, parietal, and temporal lobes (M\u00fcller et al., 2011; Picci et al., 2016; Di Martino et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "92dea5a8-60ea-47f8-99cd-50e9c48de216",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C9",
+      "claim": "Multiple cortical areas are significantly under-connected in patients with ASD compared to typically developing control subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, these studies show that multiple cortical areas are significantly under-connected in patients with ASD compared to typically developing (TD) control subjects, although over-connectivity has also been reported (Hahamy et al., 2015; Belmonte et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1dd6a51b-260a-4701-85e7-53cf2b436073",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C10",
+      "claim": "The degree of diminished connectivity in ASD was found to be correlated with symptom severity.",
+      "claim_type": "EXPLICIT",
+      "source": "At the individual level, the degree of diminished connectivity as well as measures of cortical thickness were found to be correlated with symptom severity (Gotts et al., 2012; Wallace et al., 2012; Di Martino et al., 2009b; Assaf et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "0396fc0f-6aa9-4ed0-81ac-e662154b69a2",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C11",
+      "claim": "Connectivity measures were predictive of future progression of autistic symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "and this measure of connectivity was even predictive of future progression of autistic symptoms (Plitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "6ee51870-c5ac-475e-98ee-8707a14f598a",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C12",
+      "claim": "There is a causal link between connectivity and behavior in ASD, such that changing the connectivity might lead to a change in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest a causal link between connectivity and behavior, such that changing the connectivity might lead to a change in behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited literature and the study's rationale.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "afd7d219-ffcc-4751-ba8b-a39a387355d8",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C13",
+      "claim": "Traditional, explicit training paradigms activate aberrant networks in ASD, potentially reinforcing sub-optimal connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional, explicit training paradigms, activate these aberrant networks (Kana et al., 2009; Di Martino et al., 2009a), thus potentially reinforcing the sub-optimal connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim combines cited evidence with inference about the potential negative effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "9aa8b234-c6d1-40bf-b881-f4f726057416",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C14",
+      "claim": "Real-time fMRI neurofeedback is an emerging technique with great potential for clinical applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time fMRI neurofeedback (rt-fMRI-nf) is an emerging technique with great potential for clinical applications (Stoeckel et al., 2014; Sulzer et al., 2013; Weiskopf, 2012; Birbaumer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "50720b00-d29e-4e90-b6c1-563669acadd6",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C15",
+      "claim": "Covert neurofeedback is a variant of neurofeedback in which participants are given no strategy to control the feedback and might not be cognizant that the feedback is related to brain activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Covert neurofeedback is a variant of neurofeedback, in which participants are given no strategy with which to control the feedback, and might not even be cognizant that the feedback is related to brain activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "be37b53c-7534-42d7-8d8d-5f4111a31741",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C16",
+      "claim": "Positive and negative reinforcement of brain activity patterns are sufficient for promoting small but widespread changes in network connectivity, even without any learning intention on the part of participants.",
+      "claim_type": "EXPLICIT",
+      "source": "This decision is motivated by recent work showing that positive and negative reinforcement of brain activity patterns are sufficient for promoting small but widespread changes in network connectivity, even without any learning intention on the part of participants (Ramot et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b6b4b727-aac5-40ed-81de-315f6e09cd2f",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C17",
+      "claim": "Multi-voxel pattern analysis (MVPA) techniques have been successful at training complex patterns of activity within a given network.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have been successful at training complex patterns of activity within a given network using multi-voxel pattern analysis (MVPA) techniques (deBettencourt et al., 2015; Amano et al., 2016; Shibata et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b8162e41-67ea-4328-af6d-b641f91d55a7",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C18",
+      "claim": "Feedback-related changes correspond to robust behavioral changes after only a few sessions, with significant change being detectable after as little as one training session.",
+      "claim_type": "EXPLICIT",
+      "source": "with feedback related changes corresponding to robust behavioural changes after only a few sessions, and significant change being detectable after as little as one training session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the cited MVPA neurofeedback studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "e32e7ed2-9356-43be-a690-087ef6fde912",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C19",
+      "claim": "Feedback-induced behavioral changes range from very local and low level (such as changes in perception of line orientation after V1 training) to changes in high level functions such as attention and fear perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback induced behavioural changes have been shown to range from very local and low level, such as changes in perception of line orientation after V1 training (Shibata et al., 2011), or inducing color association in V1 in a somewhat less local paradigm (Amano et al., 2016), to changes in high level functions such as attention (deBettencourt et al., 2015), and fear perception (Koizumi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "efbf6ce9-01b8-4291-be7d-ffdc3ca5e2f2",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C20",
+      "claim": "Neurofeedback-induced changes can be bi-directional, both behaviorally and at the network level.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes can even be bi-directional, both behaviourally and at the network level (Cortese et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "9266f122-cfe2-49ed-8b0d-3c72aa5e12cb",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C21",
+      "claim": "17 ASD participants and 10 control participants were scanned over multiple sessions (123 sessions in total).",
+      "claim_type": "EXPLICIT",
+      "source": "17 ASD participants and 10 control participants were scanned over multiple sessions (123 sessions in total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study design and participant numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "2a1d28e5-4916-486e-8b37-73f14c9509fb",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C22",
+      "claim": "Target1 in superior temporal sulcus (STS) and target2 in somatosensory cortex showed large under-connectivity in ASD compared with TD individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We used previously collected resting state data on large groups of ASD and TD participants (N = 56 ASD, 62 TD) to identify two target brain regions that showed large under-connectivity in ASD compared with TD individuals, while also being physically distant from each other, and belonging to separate networks (Figure 1): target1 in superior temporal sulcus (STS) and target2 in somatosensory cortex",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of previously collected data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "e94a4003-95e0-4ec8-b936-e28f7b618228",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C23",
+      "claim": "STS and somatosensory cortex have been consistently implicated in social processing.",
+      "claim_type": "EXPLICIT",
+      "source": "both of which have been consistently implicated in social processing (Allison et al., 2000; Frith and Frith, 2010; Adolphs, 2009; Damasio et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "7db3a4f8-1279-4258-a2b0-a600e12923a3",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C24",
+      "claim": "STS and somatosensory cortex have previously been found to be under-connected and atypically activated in ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "and have previously been found to be under-connected and atypically activated in ASD (Chen et al., 2015; Gotts et al., 2012; M\u00fcller et al., 2001; Tuttle et al., 2016; Khan et al., 2015; Khan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "83ca5d18-3982-4eca-bc20-9dd072dc2170",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C25",
+      "claim": "Under-connectivity between STS and somatosensory networks in ASD was significant in both the large dataset (p<4.3\u00d710\u22125) and in the 17 participants recruited for the neurofeedback study (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "As in the previously published subset of the dataset, we found that under-connectivity between these two networks (STS and somatosensory) in ASD was significant in both this large dataset (p<4.3\u00d710\u22125) and in the 17 participants recruited for the neurofeedback study (p=0.002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "d5b49cd6-e093-4dbe-a545-8143f6213f45",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C26",
+      "claim": "Under-connectivity between STS and somatosensory networks was significantly correlated to social symptom severity as measured by the Social Responsiveness Scale (SRS).",
+      "claim_type": "EXPLICIT",
+      "source": "as well as significantly correlated to social symptom severity, as measured by the Social Responsiveness Scale (SRS) (r = \u22120.35 p<0.009 without regressors, r = \u22120.31, p<0.026, using age and motion as regressors, r values represent Pearson's correlation, p-values determined by permutation tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of connectivity and behavioral measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "084e0791-8580-449e-b126-00eda305d2e3",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C27",
+      "claim": "The SRS is a parent-filled questionnaire designed to be a continuous, cardinal measure of social symptom severity in ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRS is a parent filled questionnaire, which is designed to be a continuous, cardinal measure of social symptom severity in ASD, and has been shown to correlate with functional brain connectivity measures in multiple studies (Anderson et al., 2011; Di Martino et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SRS measure supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "55119f28-d02b-448e-af61-adf7636c20bd",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C28",
+      "claim": "The lower the connectivity between STS and somatosensory networks, the more severe the social symptoms (higher score on the SRS).",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that connectivity between these two networks is clinically relevant, i.e. the lower the connectivity, the more severe the social symptoms (higher score on the SRS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "133b1359-9cce-4918-bdf5-b036799eb429",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C30",
+      "claim": "IPL was significantly over-correlated to STS target1 in the ASD cohort participating in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "IPL was significantly over-correlated to STS target1 in the ASD cohort participating in this study (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "e1bf1872-5ae3-467d-a548-d8cf167b43c5",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C31",
+      "claim": "The combination of under-connectivity between STS and somatosensory with over-connectivity to the default mode network is in line with recent evidence of reduced within-network cohesion coupled with reduced between-network differentiation in ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "This combination of under-connectivity between STS and somatosensory with over-connectivity to the default mode network, is in line with recent evidence of reduced within-network cohesion coupled with reduced between-network differentiation (Hahamy et al., 2015; Keown et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the study findings to previous research through citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "2644fdaf-4df6-4810-895b-bf29f6345e6a",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C32",
+      "claim": "The composite difference measure was significantly different between the ASD group and the TD group in both the previous large dataset (p=0.001) and in the current cohort (p<1\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "This measure was also significantly different between the ASD group and the TD group in both the previous large dataset (p=0.001), and in our cohort (p<1\u00d710\u22124), Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f48da8e1-f9cb-4fef-a6c8-6d58916240cc",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C33",
+      "claim": "17 patients with ASD participated in four training sessions over the course of 8 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For the initial part of the study, 17 patients with ASD participated in four training sessions, over the course of 8 days (two sessions of two consecutive days each, a week apart).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and participant numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "dfded7b8-8a95-4ac3-a22d-e92a1d575e00",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C34",
+      "claim": "Each training session consisted of two rest scans, followed by four neurofeedback training scans, and finally two more rest scans.",
+      "claim_type": "EXPLICIT",
+      "source": "Each session consisted of two rest scans, followed by four neurofeedback training scans, and finally two more rest scans (Each scan was 9 min in duration. See Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental protocol shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1b70780c-50c1-47bd-89ed-d5fef2411819",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C35",
+      "claim": "15 of the 17 original participants returned for a follow-up study.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional follow up study was then carried out, in which 15 of the 17 original participants returned for a final, slightly shorter training session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the follow-up study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f06ce26a-5ef5-4f1d-bf9c-d281e8a6fde0",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C36",
+      "claim": "The interval between the original training and the follow-up varied greatly between subjects, ranging from 5 to 56 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The interval between the original training and the follow up varied greatly between subjects, and ranged from 5 to 56 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal design of the follow-up study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f81b5589-2adc-4aa3-b109-61e71b8d5f2e",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C37",
+      "claim": "The 'two-point' method was validated as being a good proxy for correlation analysis by comparing results to standard Pearson's correlation offline (r = 0.61, p<1\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "This 'two-point' method was validated as being a good proxy for correlation analysis by comparing the results from this to standard Pearson's correlation offline (r = 0.61, p<1\u00d710\u22124 permutation test, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by validation analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "fdcdf350-52f2-4ddb-9b90-4ab6c1a524c3",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C38",
+      "claim": "Participants were blind to the purpose of the study, the mechanism of the neurofeedback, and even to the fact that it was neurofeedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were blind to the purpose of the study, as well as to the mechanism of the neurofeedback, and even to the fact that it was neurofeedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the blinding procedure, confirmed by exit questionnaires in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "c57ea10c-b08b-4ed4-8139-fc02b6f04951",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C39",
+      "claim": "None of the participants' reported strategies held any resemblance to the neurofeedback algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses as to the perceived nature of the 'puzzle task' varied widely, as did reported strategies, but none held any resemblance to the neurofeedback algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of exit questionnaire responses shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "0d3adc81-b545-4a5f-8313-74887979a939",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C40",
+      "claim": "Most participants were highly motivated to solve the puzzles, with only 3 of 11 participants reporting a motivation score of less than 5 on a scale of 1-10.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite not knowing what they were supposed to do, most participants were highly motivated to solve the puzzles, with only 3 of the 11 participants for which responses are available reporting a motivation score of less than 5 (on a scale of 1\u201310, see Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of exit questionnaire responses shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "e9c31cf9-ea0d-468c-9078-140a2a491907",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C41",
+      "claim": "An additional control group of 10 TD participants completed the same initial 4 day training regimen following the same protocol as the ASD group.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional control group of 10 TD participants completed the same initial 4 day training regimen, following the same protocol as the above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control group design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "2aa1c17e-60b5-4ac5-b247-8fe45f36d7c2",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C42",
+      "claim": "The TD control group received feedback on the same three nodes but in a different network configuration, with target1 in STS remaining the same but somatosensory target2 and IPL control region switching roles.",
+      "claim_type": "EXPLICIT",
+      "source": "This group received feedback on the same three nodes, but in a different network configuration: target1 in the STS remained the same, but somatosensory target2 and the IPL control region switched roles, so that feedback was given whenever STS (target1) and IPL (now target2) were co-modulated, and were opposite to somatosensory cortex (now control), see Figure 2\u2014figure supplement 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control group protocol shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "48f48ec0-cf9c-427a-8a39-53540bcb6fc8",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C43",
+      "claim": "The feedback given to the TD control group was antithetical to the normal connectivity patterns found in the typically developing brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Another key difference is that this feedback was antithetical to the normal connectivity patterns found in the typically developing brain, as STS and somatosensory are well correlated in the typically developing brain, whereas the IPL region used in this study was explicitly chosen to be as uncorrelated as possible with STS in TDs during rest (Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the connectivity patterns shown in Figure 1 and the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1d2e5c3d-6b9c-4c7a-9300-66fafd23550f",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C44",
+      "claim": "Over the course of the four training days, correlations between the two target regions steadily increased in the ASD group, with a significant difference between day1 and day4 (p=4\u00d710\u22124, mean change in correlation = 0.11).",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, over the course of the four training days, correlations between the two target regions steadily increased (with a significant difference between most days, p=4\u00d710\u22124 between day1 and day4, mean change in correlation = 0.11, Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "870c13c5-d0b9-4e7f-b1ca-64d480edbe78",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C45",
+      "claim": "Correlations between target1 and control decreased in the ASD group, with a significant difference between day1 and day4 (p=8\u00d710\u22124, mean change = \u22120.13).",
+      "claim_type": "EXPLICIT",
+      "source": "while correlations between target1 and control decreased (significant difference between day1 and all other days, p=8\u00d710\u22124 between day1 and day4 mean change = \u22120.13, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "ae0214f4-83fa-4188-b046-28c4f30012e6",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C46",
+      "claim": "There was a strong and consistent increase in the composite difference measure between day1 and day4 in the ASD group (p<2\u00d710\u22124, mean change = 0.19).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3D shows the overall composite difference measure, taking into account all three correlation pairs, where there is a strong and consistent increase between day1 and day4 (p<2\u00d710\u22124, mean change = 0.19).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "0cc9d72a-432d-4b6d-b7f4-4810879bb337",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C47",
+      "claim": "15 of the 17 ASD participants showed a positive change in the composite difference measure from day1 to day4.",
+      "claim_type": "EXPLICIT",
+      "source": "15 of the 17 participants showed a positive change in this measure (14/17 had a positive change in target1-target2 correlations, as well as a negative change in target1-control correlations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on individual participant data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "401fd3cc-969d-4925-8238-e871e60ad955",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C48",
+      "claim": "The TD control group showed no significant changes between days in any of the three pairwise combinations or in the composite difference measure.",
+      "claim_type": "EXPLICIT",
+      "source": "The TD control group on the other hand, showed no significant changes between days in any of the three pairwise combinations, or in the composite difference measure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the TD control group data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b79559c5-d625-47e5-be9f-076dda24e5c0",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C49",
+      "claim": "Only 4/10 participants in the TD control group showed a change in the trained direction in the composite measure, within the range of chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 4/10 participants in this group showed a change in the trained direction in the composite measure, within the range of chance, and the magnitude of change was minimal relative to the change seen in the ASD participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of individual TD participant data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1a4358eb-0bf4-40b3-b346-17e217063b37",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C50",
+      "claim": "A significant difference (p=9.2\u00d710\u22124) was found between the learning seen in the TD and ASD groups in a two-sample t-test comparing the change in composite correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant difference (p=9.2\u00d710\u22124) was found between the learning seen in the TD and ASD groups in this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical comparison between the two groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "0382710f-749b-4e5c-8339-4fc8342ea474",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C51",
+      "claim": "The learning in the ASD group was mostly, though not fully, preserved even after an extended time period of 5-56 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the learning was mostly, though not fully, preserved, even after such an extended time period (Figure 3A\u2013D, follow up).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by follow-up data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "39c8dc42-2ff1-4be1-88f1-dd61fa1570d6",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C52",
+      "claim": "There was no correlation between the time that had elapsed and the rate of retention of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, although there was variation between subjects in the degree of retention, there was no correlation between the time that had elapsed and the rate of retention (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "7548b0c4-2c33-402e-947d-5637723a6120",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C53",
+      "claim": "The strongest positive change in correlation to target1 over the training period was in the somatosensory cortex (with a peak at target2), and the strongest negative change was in the control region.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes were exactly as predicted by the training: the strongest positive change in correlation to target1 over the training period was in the somatosensory cortex (with a peak at target2), and the strongest negative change was in the control region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole brain analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "a1d36e49-8d8b-43d9-a284-e18a4dc8fb52",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C54",
+      "claim": "Changes to correlations with target2 were seen in the STS with a peak in target1, and negative changes in correlation to control were seen in bilateral STS.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes to correlations with target2 were seen in the STS with a peak in target1, and negative changes in correlation to control were seen in bilateral STS (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole brain analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "bba9ea84-30af-4bea-a1d7-8919a85c7cca",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C55",
+      "claim": "Using target1 relative to the control seed, the largest change in the whole brain was found in target2, even though that region was not pre-selected.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a causative role for the feedback itself, as the specific relationship that was trained between the two targets and the control came up in completely independent, whole-brain analysis. That is, using target1 relative to the control seed, the largest change in the whole brain was found in target2, even though that region was not pre-selected and the analyses did not constrain this to happen, and vice-versa using target2 and control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole brain analysis shown in Figure 5 and supports a causal interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "a936d5f3-98b5-4a71-a133-5f3fe9924442",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C56",
+      "claim": "No significant peaks were identified in any of the target or control regions for the TD control group in the whole brain analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Figure 5 shows results only for the ASD group, as no significant peaks were identified in any of the target or control regions for the TD control group, and no voxels survived the cluster correction threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the null result for the TD control group in whole brain analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "123c82d9-7cab-4881-a7e4-5c4bacb4c7ee",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C57",
+      "claim": "The peaks of connectivity changes were centered on the regions being trained, but the changes spread to entire networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note in this regard that though the peaks were centered on the regions we were training, the changes spread to entire networks, as would be expected from the architecture of the brain, which is composed of large-scale networks of multiple brain regions, making it difficult to induce changes to just one region in isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the whole brain analysis results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "805a8b99-72ca-4bd4-b39f-145bfb3a3ae6",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C58",
+      "claim": "It is possible to train networks that are fundamentally connected, but it is much more difficult to train networks that are uncorrelated or weakly correlated in the typically developing brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In a larger context, the failure to induce change in the direction of training in the control subjects, suggests that while it is possible to train networks that are fundamentally connected, it is much more difficult to train networks that are uncorrelated or weakly correlated in the typically developing brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the differential results between ASD and TD groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "45a34b2e-5fae-4daa-83fb-068dde84dfe2",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C59",
+      "claim": "Some networks may be more difficult to train than others.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that some networks may be more difficult to train than others, as has previously been suggested (Harmelech et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "a3fcc16d-b6cd-4752-942e-4c1229845e41",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C61",
+      "claim": "Significant changes in resting state connectivity were found between day1 and the follow-up (target1-target2 mean change = 0.09, p<0.011; composite correlations measure mean change = 0.11, p<2\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "and between day1 and the follow up (target1-target2 mean change = 0.09, p<0.011, composite correlations measure mean change = 0.11, p<2\u00d710\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by follow-up resting state analysis data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "6d9a998f-261d-46af-a4d1-e30fac952918",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C62",
+      "claim": "Change in resting state connectivity was significantly correlated to change during the neurofeedback scans (r = 0.42, p<0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Change in rest was significantly correlated to change during the neurofeedback scans (r = 0.42, p<0.04, permutation test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis between rest and training data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "547faf64-39ce-453d-8a73-9da15d50bd77",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C63",
+      "claim": "14/15 participants who came in for the follow-up showed an increase in the composite correlation measure.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 14/15 participants who came in for the follow up showed an increase in the composite correlation measure (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by individual participant data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "d3b4b05e-35d8-4c44-be1a-b57bbbf263df",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C64",
+      "claim": "There was no significant change in connectivity for any of the pairwise correlations or the composite correlation measure in 19 ASD participants who had two resting state scans from different time points (average time between sessions 13.2 months) from a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "19 participants had two such data points, and the average time between the sessions was 13.2 months. The change however was not significant for any of the pairwise correlations, or the composite correlation measure (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This control analysis shown in Figure 6A demonstrates that time alone does not produce connectivity changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "57449b70-93c9-41c3-8e3e-533fc7d7783c",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C65",
+      "claim": "There was no significant change in connectivity from the previous experiment to day1 before training (mean time interval = 38.3 months, mean change = \u22120.04) in 10 participants who had data from both studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was no significant change from the previous experiment to day1 (mean time interval = 38.3 months, mean change = \u22120.04)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "5bd4ab2f-03e8-4c54-adb7-4cb33de6506b",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C66",
+      "claim": "There was significant change in connectivity from the previous experiment to day4 (mean change = 0.1, p<0.019) and to the follow-up (mean change = 0.11, p<0.003) in 10 participants who had data from both studies.",
+      "claim_type": "EXPLICIT",
+      "source": "there was significant change to day4 (mean change = 0.1, p<0.019) and to the follow up (mean change = 0.11, p<0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "bf082dee-1dfd-488b-a7ba-41a6332243f0",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C67",
+      "claim": "The changes observed were not a function of elapsed time but rather occurred as a direct result of the neurofeedback regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these analyses provide strong evidence that the changes we observed were not a function of elapsed time but rather occurred as a direct result of our neurofeedback regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of neurofeedback and non-neurofeedback time intervals shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f50b3847-eb16-4d76-b0c0-7842184557ff",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C68",
+      "claim": "There was no significant change in the mean SRS score across participants, with the mean score actually slightly (though not significantly) increasing instead of decreasing as predicted.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although there was no significant change in the mean SRS score across participants, with the mean score actually slightly (though not significnatly) increasing instead of decreasing as predicted (mean SRS before training = 69.8, mean SRS after training = 71.6, p=0.11)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavioral results for the SRS measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "8d143563-e5c1-4171-8206-81d72d574d3e",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C69",
+      "claim": "There was a significant correlation between changes in the resting state network and the change in SRS (r = 0.56, p=0.016).",
+      "claim_type": "EXPLICIT",
+      "source": "there was a significant correlation between changes in the resting state network and the change in SRS (pre training minus post training, so that a positive change corresponds to a reduction in symptoms, r = 0.56, p=0.016, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "a8c9c20c-5f87-4aac-bddd-d641f4fe6ba7",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C70",
+      "claim": "The partial correlation between change in rest vs. change in SRS, after controlling for baseline SRS and baseline rest, was higher (r = 0.62 p=0.014).",
+      "claim_type": "EXPLICIT",
+      "source": "The partial correlation between change in rest vs. change in SRS, after controlling for baseline SRS and baseline rest, was higher (r = 0.62 p=0.014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by partial correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "962acda2-f371-46fa-93e4-78720de0fdca",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C71",
+      "claim": "No correlation was found between change in BRIEF and change in resting state correlations (r = 0.09, p=0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "No such correlation was found with the BRIEF (change in SRS vs. change in resting state correlations: r = 0.56, p=0.016; change in BRIEF vs. change in resting state correlations: r = 0.09, p=0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates specificity of the behavioral correlation to the SRS measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "61d5da38-fb64-4760-bb68-bbfbaa9f7886",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C72",
+      "claim": "After removing the variance explained by the BRIEF, the correlation between rest and SRS was even higher (r = 0.6, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested for the correlation between the change in SRS vs. change in the resting state correlations, after partialing out the contribution of the BRIEF. After removing the variance explained by the BRIEF, the correlation between the rest and SRS was even higher (r = 0.6, p=0.02)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by partial correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "a46a91d1-8ab5-4e4e-a5c9-ad949084952e",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C73",
+      "claim": "Change in resting state correlations was captured by the change in SRS scores, but not the BRIEF.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that change in resting state correlations was captured by the change in SRS scores, but not the BRIEF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the partial correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "842eca46-d257-46a7-b950-a056d989c0a0",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C74",
+      "claim": "The SRS has consistently been shown to correlate with aberrations in network structure in ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the SRS was chosen as our behavioral measure because it has consistently been shown to correlate with aberrations in network structure in ASD (Gotts et al., 2012; Wallace et al., 2012; Di Martino et al., 2009b; Anderson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "064a7e3e-c0e2-4cfd-ac29-f9f683ad07bb",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C75",
+      "claim": "The SRS was not designed to be used with such a short test-retest interval (3 weeks) and has only been validated for intervals of 6 months or more.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it was not designed to be used with such a short test-retest interval (3 weeks), and has only been validated for intervals of 6 months or more (Hus et al., 2013; Constantino et al., 2003; B\u00f6lte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "264ea97e-702d-4dcc-8007-ccd717f5169b",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C76",
+      "claim": "Covert neurofeedback can be used to modulate correlations between distinct, physically distant networks in the great majority of participants (15 of 17).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have demonstrated that covert neurofeedback can be used to modulate correlations between distinct, physically distant networks (Figure 3), in the great majority of participants (15 of17, Figure 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim supported by the data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "6e5fc7a8-79f5-4d56-93be-f89672d08f38",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C77",
+      "claim": "This modulation is possible even in cases of aberrant network structure, in clinical populations, and is sustainable for extended periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "We have further shown that this modulation is possible even in cases of aberrant network structure, in clinical populations, and is sustainable for extended periods of time (some of our follow up sessions were a year after the original training, and we saw no evidence for an effect of time as a modulator of retention, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim supported by the follow-up data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "8cbf697b-e73f-4db5-8427-ab54a50416e9",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C78",
+      "claim": "Connectivity-based neurofeedback has previously been carried out in only a handful of studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This kind of connectivity-based neurofeedback has previously been carried out in only a handful of studies (Scharnowski et al., 2014; Megumi et al., 2015; Koush et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "ba403d3d-3f60-4ffa-a63f-5a5beef6b30a",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C79",
+      "claim": "The network approach to neurofeedback is gaining traction and shows good preliminary findings with a sound theoretical basis.",
+      "claim_type": "EXPLICIT",
+      "source": "though the network approach to neurofeedback is gaining traction and shows not only good preliminary findings but also has a sound theoretical basis (Bassett and Khambhati, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b1f9b89d-2897-4dc3-a1df-dd7392842ee5",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C80",
+      "claim": "The extraordinary specificity of the changes revealed by the whole brain analysis, peaking exactly at the small ROIs chosen for training, precludes an alternative explanation to the feedback being the cause.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the extraordinary specificity of the changes revealed by the whole brain analysis (Figure 5), peaking exactly at the small ROIs that were chosen for the training, would also seem to preclude an alternative explanation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the whole brain analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "d55c5dd9-2a5c-4a02-93c8-4db98e707439",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C81",
+      "claim": "The learning is spatially specific even when training disparate networks, meaning it is possible to target specific regions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The further significance of the whole-brain analysis is that this learning is spatially specific even when training disparate networks, meaning that it is possible to target specific regions of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the whole brain analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "9fcbddc5-ad3a-459f-80ff-2295740ef9d6",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C82",
+      "claim": "The failure to induce change in the direction of training in the control subjects suggests that while it is possible to train networks that are fundamentally connected, it is much more difficult to train networks that are uncorrelated or weakly correlated in the typically developing brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In a larger context, the failure to induce change in the direction of training in the control subjects, suggests that while it is possible to train networks that are fundamentally connected, it is much more difficult to train networks that are uncorrelated or weakly correlated in the typically developing brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the differential results between ASD and TD groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "69cc1ef2-889d-49fc-8112-229f9bacf78c",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C83",
+      "claim": "The under-connectivity between the target regions chosen explains only some of the behavioral deficits and is clearly not the sole underlying cause of autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the under-connectivity between the target regions chosen here explains only some of the behavioral deficits, and is clearly not the sole underlying cause of autism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the approach based on knowledge of ASD.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "39ee266b-bb3f-48fd-b2f0-41ac3b0eb6de",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C84",
+      "claim": "The study was designed as a proof of principle that aberrant connectivity can be addressed through neurofeedback, rather than as a clinical intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was therefore designed as a proof of principle that aberrant connectivity can be addressed through neurofeedback, rather than as a clinical intervention, and whatever behavioral effects we found were expected to be modest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and goals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "cd6426fa-9d27-4464-b744-324da68a37af",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C85",
+      "claim": "The lack of overall mean behavioral change together with the correlation with connectivity changes makes it unlikely that the behavioral result is driven by a placebo effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of overall mean change together with the correlation with connectivity changes makes it unlikely that this result is driven by a placebo effect, and on debriefing after all data were collected, it was clear that the patients and their families did not conceive of this as an intervention, and had no expectation of behavioral change following the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pattern of behavioral results and debriefing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "2770b681-ec1f-4af8-a4ce-f06a494d8c04",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C86",
+      "claim": "A change in behavior following a change in connectivity suggests that functional and structural hypoconnectivity plays a causative role in ASD rather than being simply a downstream effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding also adds to the debate regarding the nature of the functional and structural hypoconnectivity found in ASD, whether it plays a causative role in ASD or is simply a downstream effect (Vasa et al., 2016). A change in behavior following a change in connectivity suggests the former, bolstering the mechanistic approach to functional connectivity in ASD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation between connectivity and behavioral changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "44a3c346-4a1b-410e-b1c4-d48506754772",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C87",
+      "claim": "There is growing evidence for hyper cortico-thalamic connectivity alongside cortico-cortico hypoconnectivity in ASD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that underconnectivity is not the full story in ASD, and there is growing evidence for hyper cortico-thalamic connectivity, alongside the cortico-cortico hypoconnectivity (Picci et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "6dda710d-3048-45dd-acbf-13408dd68fc9",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C88",
+      "claim": "The under-connectivity seen in cortico-cortico correlations in ASD is dampened connectivity (closer to 0), and not anti-connectivity (negative correlation).",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that the under-connectivity seen in cortico-cortico correlations in ASD is dampened connectivity (closer to 0), and not anti-connectivity (negative correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about the nature of the connectivity patterns observed.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b3c45d21-0a30-4fca-a3d9-7bd0c3a186b3",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C89",
+      "claim": "The nature of the feedback given is that positive correlations between the two targets are rewarded, thus boosting connectivity that already exists at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of the feedback given here is that positive correlations between the two targets are rewarded, thus boosting connectivity that already exists at baseline (as baseline connectivity is positive, just small).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the neurofeedback training.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f6b896e5-6cbc-408b-a113-5e3b5fe42833",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C90",
+      "claim": "The targets used in this paradigm were derived from a group analysis and were not individually localized.",
+      "claim_type": "EXPLICIT",
+      "source": "The targets used in this paradigm were derived from a group analysis, and were not individually localized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f3eb4e75-636d-4fce-98a7-d9b3fa3a2030",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C91",
+      "claim": "The results are probably an underestimation of what this tool can do, with individually tailored ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are therefore probably an under estimation of what this tool can do, with individually tailored ROIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential improvements to the method.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "c4750584-f722-41a9-8586-4d92b8776bc8",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C92",
+      "claim": "Potential applications of covert neurofeedback could be far ranging, encompassing many clinical disorders with underlying aberrant connectivity at their core.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the lack of an explicit strategy allows covert neurofeedback to be used to directly target all manner of abstract, behaviorally relevant networks, potential applications could be far ranging, encompassing many clinical disorders with underlying aberrant connectivity at their core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications based on the study results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "06c130cc-0127-40c2-9153-5164f77622a0",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C93",
+      "claim": "Covert neurofeedback is a promising technique to be used in basic science questions as a tool to investigate questions of causality.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this is a promising technique to be used in more basic science questions, as a tool to investigate questions of causality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications based on the study results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "f0e79ab7-fe55-44e6-a15b-e09a8406cd7a",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C94",
+      "claim": "19 males aged 15-25 (mean age = 20.93) who met the DSM-IV criteria for autistic disorder were recruited for this experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "19 Males aged 15\u201325 (mean age = 20.93) who met the DSM-IV criteria for autistic disorder, an autism cut-off score for social symptoms on the Autism Diagnostic Review (ADR) and/or an ASD cutoff score from social +communication symptoms on the Autism Diagnostic Observation Schedule (ADOS), all administered by a trained, research-reliable clinician, were recruited for this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant recruitment criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1e26e55f-3da6-4a6b-8140-28790ee61d10",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C95",
+      "claim": "All participants had full-scale IQ scores \u226585 as measured by standardized intelligence tests.",
+      "claim_type": "EXPLICIT",
+      "source": "IQ scores were obtained for all participants, and all full-scale IQ scores were \u226585 as measured by the Wechsler Abbreviated Scale of Intelligence, the Wechsler Adult Intelligence Scale-III, or the Wechsler Intelligence Scale for Children-IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "2b4ae67e-6315-43ab-b7d6-0c32fc04ede7",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C96",
+      "claim": "Participant groups did not differ in terms of full-scale IQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Participant groups did not differ in terms of full-scale IQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the matching of groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "eda49919-0a30-480b-bde6-46166ee2bbb4",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C97",
+      "claim": "One ASD participant was removed due to discomfort in scanner on day1, and another ASD participant was removed on day two due to anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "one ASD participant was removed due to discomfort in scanner on day1, and another ASD participant was removed on day two due to anxiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes participant exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "866389d4-c1df-4261-8bb9-367e4107f245",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "claim_id": "C98",
+      "claim": "1 TD participant was removed after day1 for excessive motion.",
+      "claim_type": "EXPLICIT",
+      "source": "1 TD participant was removed after day1 for excessive motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes participant exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4aa17eb0-f3ac-478b-9248-19bd5280c363",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two brain regions (STS and somatosensory cortex) were identified that showed significant under-connectivity in ASD compared to TD individuals, and this under-connectivity correlated with social symptom severity as measured by the SRS. A third control region (IPL) showed over-connectivity to STS in ASD, consistent with reduced network differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C32 collectively establish the target selection rationale using a large independent dataset (N=56 ASD, 62 TD) with replication in the study cohort (N=17 ASD). The statistical evidence is strong (p<4.3\u00d710\u207b\u2075 in large dataset, p=0.002 in study cohort), and the correlation with SRS scores (r=-0.35, p<0.009) provides clinical relevance. The composite difference measure showing significant group differences (p<1\u00d710\u207b\u2074) further supports the target selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study employed a covert neurofeedback paradigm with 17 ASD participants over 4 training days, with 15 returning for follow-up (5-56 weeks later). A TD control group (N=10) received feedback on a different network configuration. Participants were successfully blinded to the neurofeedback mechanism, and the two-point correlation method was validated (r=0.61, p<1\u00d710\u207b\u2074).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C43 and C94-C98 describe the experimental design, which is well-documented with appropriate controls. The blinding was verified through exit questionnaires (C38-C40), and the real-time algorithm was validated against offline Pearson correlation (C37). The control group design (C41-C43) provides an important comparison, though the different network configuration makes interpretation complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "626b4768-8ed8-454b-8d2f-7dc1ab4c2a8f",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neurofeedback training produced significant increases in connectivity between the two target regions (mean change=0.11, p=4\u00d710\u207b\u2074) and decreases in target1-control connectivity (mean change=-0.13, p=8\u00d710\u207b\u2074) in the ASD group. The composite difference measure showed strong consistent increases (mean change=0.19, p<2\u00d710\u207b\u2074), with 15 of 17 participants showing positive changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44-C47 demonstrate robust training effects with strong statistical evidence and high effect consistency across participants. The use of permutation tests for p-values is appropriate. However, the lack of change in target2-control correlations (mentioned but not reaching significance) suggests differential trainability of network connections, which somewhat limits the interpretation of complete network reconfiguration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "691b33a2-ae83-4f09-b919-03dcd45eb9a5",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The TD control group showed no significant changes in any connectivity measures, with only 4/10 participants showing changes in the trained direction (at chance level). The difference between ASD and TD groups was statistically significant (p=9.2\u00d710\u207b\u2074).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C48-C50 provide important negative control results. The statistical comparison between groups is appropriate, and the authors conducted additional analyses with matched sample sizes to address power concerns. However, the control group received feedback on a different (and potentially untrainable) network configuration, which complicates interpretation of whether the null result reflects the impossibility of training uncorrelated networks in TD individuals or simply inadequate feedback.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "50364e96-7398-4918-a140-e9441364d87a",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Training-induced connectivity changes were largely preserved at follow-up (5-56 weeks post-training), with no correlation between elapsed time and retention rate, suggesting stable long-term changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C77 demonstrate persistence of training effects with 15/17 participants returning for follow-up. The lack of correlation between time elapsed and retention (Figure 3\u2014figure supplement 1) supports stability. However, the wide variability in follow-up intervals (5-56 weeks) and the fact that changes were 'mostly, though not fully, preserved' indicates some decay, which is not fully quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b59539a4-be30-4501-b855-14dd793b3aa3",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Whole-brain analysis revealed that connectivity changes were spatially specific, with peaks centered on the trained regions but spreading to entire networks. The largest changes in correlation to target1 were found in target2 (and vice versa), even though this was not constrained by the analysis. No significant changes were found in the TD control group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C53-C57, C80-C81 provide strong evidence for spatial specificity using independent whole-brain analysis. The fact that target2 emerged as the peak change when seeding from target1 (without pre-selection) supports causality (C55, C80). The use of permutation-based cluster correction following recent recommendations (Eklund et al., 2016) is appropriate. The spread to entire networks (C57) is expected given brain architecture but somewhat limits claims of precise targeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Training-induced connectivity changes transferred to resting state, with significant changes from day1 to day4 (composite measure: mean change=0.1, p<2\u00d710\u207b\u2074) and to follow-up (mean change=0.11, p<2\u00d710\u207b\u2074). Control analyses showed no significant changes over comparable time periods without neurofeedback, demonstrating that changes were due to training rather than time elapsed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 provide crucial evidence for generalization beyond training context. The control analyses using participants with multiple resting state scans from previous studies (C64-C66) effectively rule out time-related changes. The correlation between training and rest changes (r=0.42, p<0.04, C62) supports transfer. However, the resting state changes were smaller than training changes, and only pre-training rest scans were used for baseline, which may not fully capture within-session dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "9238443f-6ab8-4a54-b0c3-4888b86daabd",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Changes in resting state connectivity correlated significantly with changes in SRS scores (r=0.56, p=0.016), with stronger partial correlations after controlling for baseline (r=0.62, p=0.014). No correlation was found with BRIEF scores, demonstrating specificity. However, there was no significant mean change in SRS scores across participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C73 show a significant correlation between connectivity and behavioral changes, which is scientifically important. However, several factors create uncertainty: (1) the SRS was used outside its validated test-retest interval (3 weeks vs. 6+ months, C75), (2) two statistical outliers were removed, (3) mean SRS scores slightly increased rather than decreased (C68), and (4) the correlation became non-significant when outliers were included. The lack of mean behavioral change combined with individual correlations suggests heterogeneous responses but raises questions about clinical significance and measurement reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "1a9d903b-8a3c-4ef3-8e6d-1e386375eb9c",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The failure to induce changes in the TD control group suggests that while fundamentally connected networks can be trained, it is more difficult to train networks that are uncorrelated or weakly correlated in the typically developing brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58 and C82 draw an important inference from the differential results between groups. However, this interpretation is confounded by the fact that the TD group was trained on a network configuration that was 'antithetical to normal connectivity patterns' (C43), making it unclear whether the null result reflects fundamental constraints on network trainability or simply that the specific network chosen for TD training was inappropriate. The lack of change in target2-control correlations in the ASD group (which also didn't differ from TD) provides some support, but additional experiments would be needed to definitively establish this principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "5c071cfc-0c11-4a92-8f25-533268aee020",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Covert neurofeedback successfully modulated correlations between distinct, physically distant networks in the majority of ASD participants (15 of 17), demonstrating the feasibility of this approach for connectivity-based training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C78-C79 summarize the main proof-of-principle finding. The success rate (15/17 participants) is high, and the approach is novel in the context of connectivity-based neurofeedback (C78). The results are consistent with the theoretical basis cited (C79). This represents a clear demonstration of feasibility, though questions remain about optimal implementation and generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "2d646bdd-7dd9-4c68-8cc8-c0a9314324dc",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study was designed as proof-of-principle rather than clinical intervention. The correlation between connectivity and behavioral changes suggests that hypoconnectivity plays a causative role in ASD rather than being merely a downstream effect, though the under-connectivity between the chosen targets explains only some behavioral deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 appropriately contextualize the study's scope and implications. The proof-of-principle framing (C84) is reasonable given the modest behavioral effects. The inference about causality (C86) is supported by the correlation data but remains tentative given the limitations in behavioral measurement. The acknowledgment that the targeted connectivity explains only part of ASD symptoms (C83) is scientifically appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b1e8d4c9-70ff-4611-b62c-e61ffdacb59d",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The targets were derived from group analysis rather than individually localized, suggesting that results may underestimate the potential of individually tailored ROIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 identify an important limitation and suggest future improvements. The use of group-derived ROIs is clearly stated (C90), and the speculation about underestimation (C91) is reasonable given individual variability visible in the data. This represents appropriate acknowledgment of methodological limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that abnormal connectivity patterns exist in ASD, correlate with symptom severity, and may play a causal role in the disorder. Traditional treatments are limited and may reinforce aberrant networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide appropriate background context supported by citations to previous research. These are well-established findings in the field that motivate the current study. The inference about causality (C12) and potential negative effects of traditional training (C13) are appropriately framed as suggestions rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Real-time fMRI neurofeedback, particularly covert neurofeedback, has shown promise in previous studies for inducing network changes and behavioral effects through reinforcement learning without explicit strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 provide appropriate background on neurofeedback techniques, supported by citations to previous research. These establish the rationale for using covert neurofeedback in the current study. The claims accurately represent the state of the field based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "b7a0d277-49cd-4adf-8e58-734855294679",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The under-connectivity in ASD represents dampened (not anti-) connectivity, and the neurofeedback approach boosts existing positive correlations. However, under-connectivity is not the complete picture, with evidence for hyper cortico-thalamic connectivity alongside cortico-cortical hypoconnectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 provide important clarifications about the nature of connectivity changes being trained. The distinction between dampened and anti-connectivity (C88) is important for understanding the mechanism. The acknowledgment of complexity in ASD connectivity patterns (C87) is appropriate and supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    },
+    {
+      "id": "15f3998a-d7e6-4f91-947c-310744fe171c",
+      "content_id": "e240e42c-1163-4c7b-aece-2a2bd8677029",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Some networks may be more difficult to train than others, and potential applications of covert neurofeedback could extend to many clinical disorders and basic science questions about causality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C92-C93 represent appropriate speculation about future directions based on the current findings. These are clearly framed as possibilities rather than established facts, and are reasonable extrapolations from the results. The speculation is appropriately cautious and acknowledges uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:06:12.534849Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2a1d28e5-4916-486e-8b37-73f14c9509fb",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "e94a4003-95e0-4ec8-b936-e28f7b618228",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "7db3a4f8-1279-4258-a2b0-a600e12923a3",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "83ca5d18-3982-4eca-bc20-9dd072dc2170",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "d5b49cd6-e093-4dbe-a545-8143f6213f45",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "084e0791-8580-449e-b126-00eda305d2e3",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "55119f28-d02b-448e-af61-adf7636c20bd",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "133b1359-9cce-4918-bdf5-b036799eb429",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "e1bf1872-5ae3-467d-a548-d8cf167b43c5",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "2644fdaf-4df6-4810-895b-bf29f6345e6a",
+      "result_id": "4aa17eb0-f3ac-478b-9248-19bd5280c363"
+    },
+    {
+      "claim_id": "f48da8e1-f9cb-4fef-a6c8-6d58916240cc",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "dfded7b8-8a95-4ac3-a22d-e92a1d575e00",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "1b70780c-50c1-47bd-89ed-d5fef2411819",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "f06ce26a-5ef5-4f1d-bf9c-d281e8a6fde0",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "f81b5589-2adc-4aa3-b109-61e71b8d5f2e",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "fdcdf350-52f2-4ddb-9b90-4ab6c1a524c3",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "c57ea10c-b08b-4ed4-8139-fc02b6f04951",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "0d3adc81-b545-4a5f-8313-74887979a939",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "e9c31cf9-ea0d-468c-9078-140a2a491907",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "2aa1c17e-60b5-4ac5-b247-8fe45f36d7c2",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "48f48ec0-cf9c-427a-8a39-53540bcb6fc8",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "f0e79ab7-fe55-44e6-a15b-e09a8406cd7a",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "1e26e55f-3da6-4a6b-8140-28790ee61d10",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "2b4ae67e-6315-43ab-b7d6-0c32fc04ede7",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "eda49919-0a30-480b-bde6-46166ee2bbb4",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "866389d4-c1df-4261-8bb9-367e4107f245",
+      "result_id": "1d8af0ee-a151-4b92-9c44-3de5deb6c918"
+    },
+    {
+      "claim_id": "290613c2-fd19-4e6b-b304-10f1c93d9e03",
+      "result_id": "626b4768-8ed8-454b-8d2f-7dc1ab4c2a8f"
+    },
+    {
+      "claim_id": "1d2e5c3d-6b9c-4c7a-9300-66fafd23550f",
+      "result_id": "626b4768-8ed8-454b-8d2f-7dc1ab4c2a8f"
+    },
+    {
+      "claim_id": "870c13c5-d0b9-4e7f-b1ca-64d480edbe78",
+      "result_id": "626b4768-8ed8-454b-8d2f-7dc1ab4c2a8f"
+    },
+    {
+      "claim_id": "ae0214f4-83fa-4188-b046-28c4f30012e6",
+      "result_id": "626b4768-8ed8-454b-8d2f-7dc1ab4c2a8f"
+    },
+    {
+      "claim_id": "0cc9d72a-432d-4b6d-b7f4-4810879bb337",
+      "result_id": "626b4768-8ed8-454b-8d2f-7dc1ab4c2a8f"
+    },
+    {
+      "claim_id": "1c146d72-4af0-4caa-9f5b-4f9aba67e084",
+      "result_id": "691b33a2-ae83-4f09-b919-03dcd45eb9a5"
+    },
+    {
+      "claim_id": "401fd3cc-969d-4925-8238-e871e60ad955",
+      "result_id": "691b33a2-ae83-4f09-b919-03dcd45eb9a5"
+    },
+    {
+      "claim_id": "b79559c5-d625-47e5-be9f-076dda24e5c0",
+      "result_id": "691b33a2-ae83-4f09-b919-03dcd45eb9a5"
+    },
+    {
+      "claim_id": "1a4358eb-0bf4-40b3-b346-17e217063b37",
+      "result_id": "691b33a2-ae83-4f09-b919-03dcd45eb9a5"
+    },
+    {
+      "claim_id": "0382710f-749b-4e5c-8339-4fc8342ea474",
+      "result_id": "50364e96-7398-4918-a140-e9441364d87a"
+    },
+    {
+      "claim_id": "39c8dc42-2ff1-4be1-88f1-dd61fa1570d6",
+      "result_id": "50364e96-7398-4918-a140-e9441364d87a"
+    },
+    {
+      "claim_id": "6e5fc7a8-79f5-4d56-93be-f89672d08f38",
+      "result_id": "50364e96-7398-4918-a140-e9441364d87a"
+    },
+    {
+      "claim_id": "92767688-3479-4a82-ad9d-2c0a6ee81e00",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "7548b0c4-2c33-402e-947d-5637723a6120",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "a1d36e49-8d8b-43d9-a284-e18a4dc8fb52",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "bba9ea84-30af-4bea-a1d7-8919a85c7cca",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "a936d5f3-98b5-4a71-a133-5f3fe9924442",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "123c82d9-7cab-4881-a7e4-5c4bacb4c7ee",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "b1f9b89d-2897-4dc3-a1df-dd7392842ee5",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "d55c5dd9-2a5c-4a02-93c8-4db98e707439",
+      "result_id": "b59539a4-be30-4501-b855-14dd793b3aa3"
+    },
+    {
+      "claim_id": "a3fcc16d-b6cd-4752-942e-4c1229845e41",
+      "result_id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6"
+    },
+    {
+      "claim_id": "6d9a998f-261d-46af-a4d1-e30fac952918",
+      "result_id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6"
+    },
+    {
+      "claim_id": "547faf64-39ce-453d-8a73-9da15d50bd77",
+      "result_id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6"
+    },
+    {
+      "claim_id": "d3b4b05e-35d8-4c44-be1a-b57bbbf263df",
+      "result_id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6"
+    },
+    {
+      "claim_id": "57449b70-93c9-41c3-8e3e-533fc7d7783c",
+      "result_id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6"
+    },
+    {
+      "claim_id": "5bd4ab2f-03e8-4c54-adb7-4cb33de6506b",
+      "result_id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6"
+    },
+    {
+      "claim_id": "bf082dee-1dfd-488b-a7ba-41a6332243f0",
+      "result_id": "c81a9fa3-7a73-41a1-ac58-9e7b053280a6"
+    },
+    {
+      "claim_id": "f781c48e-ee67-46f4-9ff5-243ef41d6603",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "f50b3847-eb16-4d76-b0c0-7842184557ff",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "8d143563-e5c1-4171-8206-81d72d574d3e",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "a8c9c20c-5f87-4aac-bddd-d641f4fe6ba7",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "962acda2-f371-46fa-93e4-78720de0fdca",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "61d5da38-fb64-4760-bb68-bbfbaa9f7886",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "a46a91d1-8ab5-4e4e-a5c9-ad949084952e",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "842eca46-d257-46a7-b950-a056d989c0a0",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "064a7e3e-c0e2-4cfd-ac29-f9f683ad07bb",
+      "result_id": "9238443f-6ab8-4a54-b0c3-4888b86daabd"
+    },
+    {
+      "claim_id": "805a8b99-72ca-4bd4-b39f-145bfb3a3ae6",
+      "result_id": "1a9d903b-8a3c-4ef3-8e6d-1e386375eb9c"
+    },
+    {
+      "claim_id": "9fcbddc5-ad3a-459f-80ff-2295740ef9d6",
+      "result_id": "1a9d903b-8a3c-4ef3-8e6d-1e386375eb9c"
+    },
+    {
+      "claim_id": "264ea97e-702d-4dcc-8007-ccd717f5169b",
+      "result_id": "5c071cfc-0c11-4a92-8f25-533268aee020"
+    },
+    {
+      "claim_id": "8cbf697b-e73f-4db5-8427-ab54a50416e9",
+      "result_id": "5c071cfc-0c11-4a92-8f25-533268aee020"
+    },
+    {
+      "claim_id": "ba403d3d-3f60-4ffa-a63f-5a5beef6b30a",
+      "result_id": "5c071cfc-0c11-4a92-8f25-533268aee020"
+    },
+    {
+      "claim_id": "69cc1ef2-889d-49fc-8112-229f9bacf78c",
+      "result_id": "2d646bdd-7dd9-4c68-8cc8-c0a9314324dc"
+    },
+    {
+      "claim_id": "39ee266b-bb3f-48fd-b2f0-41ac3b0eb6de",
+      "result_id": "2d646bdd-7dd9-4c68-8cc8-c0a9314324dc"
+    },
+    {
+      "claim_id": "cd6426fa-9d27-4464-b744-324da68a37af",
+      "result_id": "2d646bdd-7dd9-4c68-8cc8-c0a9314324dc"
+    },
+    {
+      "claim_id": "2770b681-ec1f-4af8-a4ce-f06a494d8c04",
+      "result_id": "2d646bdd-7dd9-4c68-8cc8-c0a9314324dc"
+    },
+    {
+      "claim_id": "f6b896e5-6cbc-408b-a113-5e3b5fe42833",
+      "result_id": "b1e8d4c9-70ff-4611-b62c-e61ffdacb59d"
+    },
+    {
+      "claim_id": "f3eb4e75-636d-4fce-98a7-d9b3fa3a2030",
+      "result_id": "b1e8d4c9-70ff-4611-b62c-e61ffdacb59d"
+    },
+    {
+      "claim_id": "3b4d3307-4f06-44bf-852f-0bb660f06aad",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "751a2fca-bf5f-4bc0-a436-a7f9e857bd11",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "c586fb82-ce5c-4ea1-a8d0-800920f6fafb",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "f80e52fd-4c93-40cc-a0d1-6e1f0c6b94c4",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "92dea5a8-60ea-47f8-99cd-50e9c48de216",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "1dd6a51b-260a-4701-85e7-53cf2b436073",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "0396fc0f-6aa9-4ed0-81ac-e662154b69a2",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "6ee51870-c5ac-475e-98ee-8707a14f598a",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "afd7d219-ffcc-4751-ba8b-a39a387355d8",
+      "result_id": "5efd17f9-6a03-4eb3-a7ed-a3a7cc3a1575"
+    },
+    {
+      "claim_id": "9aa8b234-c6d1-40bf-b881-f4f726057416",
+      "result_id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913"
+    },
+    {
+      "claim_id": "50720b00-d29e-4e90-b6c1-563669acadd6",
+      "result_id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913"
+    },
+    {
+      "claim_id": "be37b53c-7534-42d7-8d8d-5f4111a31741",
+      "result_id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913"
+    },
+    {
+      "claim_id": "b6b4b727-aac5-40ed-81de-315f6e09cd2f",
+      "result_id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913"
+    },
+    {
+      "claim_id": "b8162e41-67ea-4328-af6d-b641f91d55a7",
+      "result_id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913"
+    },
+    {
+      "claim_id": "e32e7ed2-9356-43be-a690-087ef6fde912",
+      "result_id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913"
+    },
+    {
+      "claim_id": "efbf6ce9-01b8-4291-be7d-ffdc3ca5e2f2",
+      "result_id": "e672f7ee-c2a7-4c4a-b0e4-0fbbb999c913"
+    },
+    {
+      "claim_id": "44a3c346-4a1b-410e-b1c4-d48506754772",
+      "result_id": "b7a0d277-49cd-4adf-8e58-734855294679"
+    },
+    {
+      "claim_id": "6dda710d-3048-45dd-acbf-13408dd68fc9",
+      "result_id": "b7a0d277-49cd-4adf-8e58-734855294679"
+    },
+    {
+      "claim_id": "b3c45d21-0a30-4fca-a3d9-7bd0c3a186b3",
+      "result_id": "b7a0d277-49cd-4adf-8e58-734855294679"
+    },
+    {
+      "claim_id": "45a34b2e-5fae-4daa-83fb-068dde84dfe2",
+      "result_id": "15f3998a-d7e6-4f91-947c-310744fe171c"
+    },
+    {
+      "claim_id": "c4750584-f722-41a9-8586-4d92b8776bc8",
+      "result_id": "15f3998a-d7e6-4f91-947c-310744fe171c"
+    },
+    {
+      "claim_id": "06c130cc-0127-40c2-9153-5164f77622a0",
+      "result_id": "15f3998a-d7e6-4f91-947c-310744fe171c"
+    }
+  ],
+  "comparisons": []
+}

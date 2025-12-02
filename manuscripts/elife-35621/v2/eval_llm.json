@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "ATAC-seq analysis reveals that TSS accessibility is maintained during mitosis and is largely independent of TBP. Short reads (<100 bp) indicative of TF binding sites remain enriched at active gene TSSs in mitosis (C2), while nucleosome accessibility flanking the TSS increases during mitosis (C3). TBP degradation has minimal effect on TSS accessibility in both asynchronous and mitotic cells (C34), suggesting chromatin architecture at promoters is governed by cis-elements rather than TBP binding (C35, C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C34-C39 collectively demonstrate through ATAC-seq data that TSS accessibility persists during mitosis and is maintained even after TBP degradation. The data from multiple figures (1A, 1B, 4D, 4E) consistently show minimal changes in chromatin accessibility patterns, supporting the conclusion that DNA sequence and chromatin-modifying factors, rather than TBP, primarily determine promoter architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Endogenous TBP, but not overexpressed TBP, is resistant to formaldehyde fixation-induced exclusion from mitotic chromosomes. Live-cell imaging shows both endogenous knock-in and overexpressed Halo-TBP enrich on mitotic chromosomes (C6, C7), but fixation selectively evicts overexpressed TBP while endogenous TBP remains (C8), suggesting overexpression does not fully recapitulate endogenous TBP regulation (C9) and that endogenous TBP has a distinct interaction modality with mitotic chromosomes (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 are well-supported by live-cell imaging and fixation experiments shown in Figure 1D-F. The differential behavior between endogenous and overexpressed TBP upon fixation provides strong evidence for distinct binding properties and validates the use of endogenous tagging approaches. The citation to Li et al., 2015 regarding TBP regulation adds additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Single-particle tracking reveals TBP binding dynamics differ between interphase and mitosis. A 3-state kinetic model (fast, slow, bound) better fits the data than a 2-state model (C12), showing 27.1% of TBP molecules are bound in interphase versus 13.3% in mitosis (C13, C14). This decrease may reflect the minimum TBP needed to bookmark active genes during mitosis (C15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by spaSPT data and kinetic modeling shown in Figure 2A-C and supplementary figures. The 3-state model provides better fits than the 2-state model (Figure 2\u2014figure supplement 2), and the extracted bound fractions are quantitatively reported with appropriate statistical analysis. C15 is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TBP exhibits unusually stable binding to chromatin with residence times of ~88 s in interphase and ~118 s in mitosis, significantly longer than typical transcription factors. The residence time distributions are similar between interphase and mitosis (C19), contrasting with Sox2 whose residence time decreases by half during mitosis (C20), suggesting TBP binding to mitotic chromosomes may be independent of transcriptional activity (C21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are well-supported by SPT data with long exposure times (Figure 2D-E) and comparisons to published literature on other TFs. The residence times are quantitatively measured and compared to multiple other factors (Sox2, p53, GR) with appropriate citations. The comparison to Sox2's mitotic behavior provides strong evidence for TBP's unique properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "FRAP analysis confirms spaSPT findings showing decreased bound fraction but similar residence times between interphase and mitosis. When normalized for bleach depth, recovery curves for interphase and mitotic cells are superimposable (C22, C23), consistent with similar residence times despite different bound fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by FRAP data in Figure 2F-G. The normalization approach is appropriate and the superimposable recovery curves provide orthogonal validation of the SPT residence time measurements, strengthening the overall conclusion about TBP binding dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "ChIP-seq analysis reveals TBP binding is globally maintained at active promoters during mitosis. Only 374 of 60,591 peaks show differential enrichment between asynchronous and mitotic samples (C25), with similar TSS enrichment levels (C28). Differentially bound genes are enriched for cell cycle functions (C29), suggesting observed differences reflect cyclical gene expression rather than mitosis-specific TBP redistribution (C30), supporting a global bookmarking function (C31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are well-supported by comprehensive ChIP-seq analysis with multiple replicates (Figure 3 and supplements). The differential peak analysis using DiffBind is appropriate, and the small number of differentially enriched peaks (374/60,591) strongly supports global maintenance. GO term analysis provides mechanistic insight into the few differences observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The auxin-inducible degron system achieves near-complete TBP depletion. Within 6 hours of IAA treatment, only ~3% of mAID-TBP remains detectable by Western blot (C32) and immunofluorescence (C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by Western blot (Figure 4B) and immunofluorescence (Figure 4C) data showing effective protein degradation. The quantification of ~3% remaining protein provides confidence in the depletion efficiency for subsequent functional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Endogenous Halo-Pol II knock-in is functional and properly localized. The tagged Pol II localizes to the nucleus (C40) and binds to regions where endogenous Pol II binds as confirmed by ChIP-qPCR (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by imaging (Figure 4G) and ChIP-qPCR data (Figure 4\u2014figure supplement 3). The validation experiments demonstrate the tagged protein behaves like endogenous Pol II, which is critical for interpreting subsequent functional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "TBP recruits Pol II to chromatin during interphase. SpaSPT analysis shows 29.3% of Pol II molecules are bound in interphase (C42), with HaloTag alone showing 8.5% non-specific binding (C43). TBP degradation reduces bound Pol II to 21.9% (C46), and combining TBP degradation with transcription inhibitors shows no additive effect (C47), indicating TBP-recruited Pol II is transcriptionally engaged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are well-supported by spaSPT data in Figure 5A with appropriate controls. The HaloTag-only control establishes baseline non-specific binding, and the drug treatment experiments (Flavopiridol, Triptolide) provide mechanistic insight. The lack of additive effects with combined treatments supports the interpretation that TBP recruits transcriptionally active Pol II.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "TBP recruits a small population of active Pol II to mitotic chromosomes. Bound Pol II decreases to 15.4% in mitosis (C48), and drug treatments reduce this further to ~11-12% (C49, C50), suggesting active Pol II during mitosis (C51). TBP degradation reduces bound Pol II to 11.8% (C52), indicating TBP recruits a small but significant Pol II subpopulation to mitotic chromosomes (C53, C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by spaSPT data in Figure 5B with multiple experimental conditions. The drug sensitivity experiments provide evidence for active Pol II in mitosis, and TBP degradation experiments establish TBP's role in recruitment. The statistical analysis with standard deviations and multiple replicates strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Pol II residence times dramatically decrease during mitosis, reflecting reduced transcriptional elongation. The apparent half-life is 26.7 s in interphase (C55), decreasing to 3.5 s in mitosis (C57), suggesting active elongation is dramatically reduced during mitosis (C58). TBP degradation modestly reduces interphase half-life to 21.0 s (C56) and mitotic half-life to 2.3 s (C59), consistent with TBP's role in recruiting transiently-binding Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by SPT data with long exposure times (Figure 5C). The order-of-magnitude decrease in apparent half-life during mitosis is striking and well-documented. The modest effects of TBP degradation are appropriately interpreted in the context of TBP's role in transient promoter association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "FRAP analysis confirms SPT findings on Pol II dynamics and TBP's role. T90% recovery is 179 s in interphase versus 3 s in mitosis (C60, C61). TBP degradation reduces interphase T90% to 150 s (C62) but has minimal effect in mitosis (C63), confirming TBP affects transient promoter association in interphase and directs Pol II binding to mitotic chromosomes (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by FRAP data in Figure 5D-E that provides orthogonal validation of SPT measurements. The consistency between FRAP and SPT results strengthens confidence in the conclusions about Pol II dynamics and TBP's differential roles in interphase versus mitosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Time-course spaSPT imaging reveals TBP is required for re-establishing transcription after mitosis. Bound Pol II remains constant in interphase cells over time (C65) but steadily increases in mitotic cells (C66). TBP depletion during mitosis prevents this increase (C67), demonstrating TBP is required for re-establishing the transcription program following mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by time-course spaSPT data in Figure 6A-B. The experimental design of tracking the same cells over time is rigorous, and the flat trajectory of bound Pol II in TBP-depleted mitotic cells provides strong evidence for TBP's functional role in transcriptional reactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Nascent RNA-seq reveals TBP promotes efficient transcriptional reactivation following mitosis. RNA levels drop to noise in mitosis and remain low at 30 min but recover by 60 min post-release (C68, C69). High intronic reads confirm nascent RNA enrichment (C70), and transcription occurs in asynchronous cells despite TBP depletion (C71, C72). However, TBP degradation causes marked global decrease in transcription reactivation at M60 (C73, C74), indicating TBP has a specific role in post-mitotic transcriptional reactivation (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 are well-supported by chr-RNA-seq data in Figure 6C-F with appropriate replicates and controls. The high intronic read proportion validates nascent RNA enrichment, and the global decrease in reactivation after TBP depletion is clearly demonstrated. The observation of transcription without TBP in asynchronous cells is appropriately contextualized with prior literature (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "K-means clustering analysis reveals TBP preferentially affects reactivation of highly expressed genes involved in core cellular functions. Untreated M60/M samples show massive transcription increase (C77), while TBP-degraded samples show delayed reactivation (C78). Cluster 1 (5504 genes) shows earliest/fastest reactivation (C81) and is most affected by TBP depletion (C82). These genes are enriched for RNA metabolism, cell cycle, and transcription factor activity (C83) and are highly expressed in asynchronous cells (C84, C85), representing the global transcription program. This supports TBP's role in promoting efficient reactivation of the global transcription program (C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C89 are supported by comprehensive chr-RNA-seq analysis with k-means clustering (Figure 7 and supplements). The clustering approach is unbiased, GO term analysis provides biological context, and the differential effects on gene clusters are clearly demonstrated. The conclusion that TBP promotes efficient reactivation of the global transcription program is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C113"
+    ],
+    "result": "TBP acts as a stable mitotic bookmarker that promotes transcriptional fidelity through cell division. TBP remains globally bound to active promoters during mitosis (C90) with stable binding (residence time of minutes) (C91), promotes Pol II association with mitotic chromosomes (C92), and facilitates transcriptional reactivation following mitosis (C93). These results suggest the core transcriptional machinery promotes efficient global transcription maintenance (C94), with TBP acting as a stable bookmarker promoting transcriptional fidelity from mother to daughter cells (C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 and C113 represent the main conclusions of the manuscript, synthesizing results from ChIP-seq, SPT, spaSPT, and chr-RNA-seq experiments. Each component claim is supported by multiple lines of evidence presented throughout the paper, and the overall model is well-justified by the comprehensive experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "ATAC-seq reads under 100 bp indicate potential transcription factor binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is supported by citation to Buenrostro et al., 2013, which established this interpretation of ATAC-seq data. This is an accepted methodological principle in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The global decrease in transcription during mitosis may result in decreased occupancy/residence time of trans-acting factors at the TSS, causing apparent increased nucleosome accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 is explicitly speculative and offers a potential mechanistic explanation for the observed increase in nucleosome accessibility during mitosis. While plausible, this hypothesis is not directly tested in the manuscript and remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "The decrease in TBP bound fraction during mitosis may reflect the minimum amount needed to bookmark active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C15 is speculative interpretation of the observed decrease in bound fraction from 27.1% to 13.3%. While consistent with the bookmarking hypothesis, the manuscript does not provide direct evidence that this represents a 'minimum amount' needed for bookmarking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background and context claims about mitosis, transcription, and prior TBP studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C108 provide background context from the introduction, citing established knowledge and prior studies. These are appropriately cited and represent accurate summaries of the field's understanding and prior work on TBP and mitotic bookmarking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Summary claims from the introduction describing the study's main findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are introductory statements that accurately preview the manuscript's findings, which are subsequently supported by the experimental data presented in the results sections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Discussion claims about TBP function, alternative mechanisms, and context from other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C125 from the discussion section provide mechanistic context and cite relevant literature. C116 and C121 are explicitly speculative but are appropriately presented as potential mechanisms. The citations to prior work (Martianov et al., Zhang et al., etc.) are appropriate and accurate.",
+    "result_type": "MINOR"
+  }
+]

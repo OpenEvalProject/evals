@@ -1,0 +1,1923 @@
+{
+  "submission": {
+    "id": "71705c44-ad1a-4175-98aa-cbae2f03e765",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:44:53.942406Z",
+    "updated_at": "2025-12-02T01:44:53.942406Z"
+  },
+  "content": [
+    {
+      "id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "submission_id": "71705c44-ad1a-4175-98aa-cbae2f03e765",
+      "content_type": "manuscript",
+      "content_text": "# Pooled genome-wide CRISPR screening for basal and context-specific fitness gene essentiality in Drosophila cells\n\n## Authors\n\n- Raghuvir Viswanatha<sup>1</sup> ([ORCID: 0000-0002-9457-6953](https://orcid.org/0000-0002-9457-6953)) \u2020\n- Zhongchi Li<sup>1</sup>\n- Yanhui Hu<sup>1</sup>\n- Norbert Perrimon<sup>1</sup> ([ORCID: 0000-0001-7542-472X](https://orcid.org/0000-0001-7542-472X)) \u2020\n\n### Affiliations\n\n1. Department of Genetics Harvard Medical School Boston United States\n2. School of Pharmaceutical Sciences Tsinghua University Beijing China\n3. Howard Hughes Medical Institute Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenome-wide screens in Drosophila cells have offered numerous insights into gene function, yet a major limitation has been the inability to stably deliver large multiplexed DNA libraries to cultured cells allowing barcoded pooled screens. Here, we developed a site-specific integration strategy for library delivery and performed a genome-wide CRISPR knockout screen in Drosophila S2R+ cells. Under basal growth conditions, 1235 genes were essential for cell fitness at a false-discovery rate of 5%, representing the highest-resolution fitness gene set yet assembled for Drosophila, including 407 genes which likely duplicated along the vertebrate lineage and whose orthologs were underrepresented in human CRISPR screens. We additionally performed context-specific fitness screens for resistance to or synergy with trametinib, a Ras/ERK/ETS inhibitor, or rapamycin, an mTOR inhibitor, and identified key regulators of each pathway. The results present a novel, scalable, and versatile platform for functional genomic screens in invertebrate cells.\n\n## Introduction\n\nSystematic perturbation of gene function in eukaryotic cells using arrayed (well-by-well) reagents is a powerful technique that has been used to successfully assay many fundamental biological questions such as proliferation, protein secretion, morphology, organelle maintenance, viral entry, synthetic lethality, and other topics (Mohr et al., 2014). An alternative approach, widely used in mammalian cells, is pooled screening that uses limited titers of integrating lentiviral vectors carrying a perturbative DNA sequence such that each cell receives one integrating virus. In pooled screens, the perturbing DNA reagent serves as the tag in subsequent sequencing (Berns et al., 2004; Moffat et al., 2006; Brummelkamp and Bernards, 2003). A key benefit of this approach is that pool size can be extremely large, allowing high reagent multiplicity and thus increased screen quality. The pooled approach in mammalian cells has been used extensively to perform RNAi and more recently single guide RNA (sgRNA) screens using CRISPR/Cas9 (Shalem et al., 2014; Wang et al., 2015; Hart et al., 2015).\n\nGenetic loss-of-function arrayed RNAi screens in Drosophila cell lines have provided insight into genes regulating various biological processes (Boutros et al., 2004; Bj\u00f6rklund et al., 2006; Kiger et al., 2003; D'Ambrosio and Vale, 2010; Bard et al., 2006; Guo et al., 2008; Hao et al., 2008; Housden et al., 2015). However, this approach has drawbacks that limit resolution, including off-target effects and incomplete loss-of-function due to RNAi, and the high cost of reagent multiplicity and replication due to the arrayed format. Pooled CRISPR may address the major drawbacks: CRISPR generates complete loss-of-function alleles and causes fewer off-target effects on average (Morgens et al., 2016; Evers et al., 2016), and the pooled format allows greater multiplicity and replication for unit cost. Approximately half of the genes in Drosophila, arguably the best characterized multicellular genetic model system, lack functional characterization (Ewen-Campen et al., 2017), so the need to develop orthogonal screening approaches is clear.\n\nBy comparing the abundance of guides present in actively growing populations of cells at different time points during growth, CRISPR screens provide a relative measurement of cell doubling, but because the cause of proliferation reduction is unclear from the screen alone, the screens are said to identify genes necessary for optimal fitness rather than essential genes (Hart et al., 2015). Essential genes, those absolutely required for cell doubling, are, by definition, a subset of fitness genes.\n\nHere, we introduce a new method to deliver pooled DNA libraries stably into cell lines. We use this technology to conduct a genome-wide CRISPR screen for optimal fitness in Drosophila cells and identify 1235 genes essential for fitness, 303 of which are uncharacterized in Drosophila. Moreover, we show that the system can be used in combination with drug perturbation to identify genes that when knocked out buffer cells against the drug or act synergistically with it. The method should be amenable to adapting any pooled DNA library screening approach to Drosophila or other invertebrate cell lines, such as shRNA knockdown (Berns et al., 2004) or CRISPR activation/inhibition.\n\n## Results\n\n### Development of a pooled library delivery method for Drosophila cell-lines\n\nPooled mammalian cell-line screens use lentiviral vectors to deliver highly complex libraries of DNA reagents. However, the use of lentiviral vectors in insect cells is extremely inefficient (unpublished observations) possibly due to toxicity (Qin et al., 2010). An important advantage of library delivery using lentiviral transduction is that each sequence integrates into a transcriptionally active site in the host chromosome where it is expressed and remains in the genome as a detectable barcode such that enrichment or depletion of each sequence can be monitored by massively parallel (next-generation) sequencing. As an alternative strategy, we assessed the efficiency of phiC31 site-specific recombination mediated by plasmid transfection. Methods for recombination in cell lines were recently developed (Manivannan and Simcox, 2016; Neum\u00fcller et al., 2012; Cherbas et al., 2015), but the quantitative efficiency of integration has not been reported. Efficiency is critical for pooled screening applications as it must reach a threshold above which generating and maintaining\u00a0>1000X representation of a library of tens of thousands of elements becomes technically and cost-feasible (Kampmann et al., 2014). We note that a previous study attempted to use pooled transient transfection for barcoded delivery of a DNA library in Drosophila cells but failed to identify any essential genes using the system, most likely due to the lack of a mechanism for retention of the DNA reagents in the cells through extended passaging (Bassett et al., 2015).\n\nTo test phiC31 integration efficiency in Drosophila cells, a Drosophila S2R\u00a0+\u00a0cell line derivative, PT5, harboring a mobilized MiMIC transposon containing attP sites flanking mCherry (Neum\u00fcller et al., 2012) was transfected with a plasmid containing attB flanking a GFP-2A-Puro(res) cassette, which we termed \u2018pLib6.4\u2019, along with a phiC31 helper plasmid (Figure 1A). The population was then passaged for two months to dilute unintegrated DNA. Importantly, no selection reagent was added during these passages in order to monitor the efficiency of integration rather than the added efficiencies of integration and selection. Integration efficiency, inferred through flow cytometry (Figure 1B), suggested that phiC31-mediated cassette exchange occurred in\u00a0~20% of the cells (even without accounting for incomplete transfection), 123-fold more than the background illegitimate recombination rate observed without phiC31 (Figure 1B). Interestingly, pLib6.4, which contains separated attB sites flanking the DNA sequence to be integrated, allowed\u00a0~40 fold greater integration efficiency than traditional Drosophila attB40 vectors such as pCa4B (Markstein et al., 2008), in which the attB sites are adjacent and require integration of the entire plasmid (data not shown). Growth in puromycin enriched for integrants (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig1-v1.jpg)\n\n**Figure 1.:** (A) phiC31 attP-attB recombination strategy. S2R+/PT5 cells containing attP sites (gold) flanking mCherry were recombined with attB donor (pLib6.4) containing attB sites (yellow) flanking U6 promoter for sgRNA expression and GFP-2A-Puro expression cassette. (B) Recombination efficiency measured by flow-cytometry. Transfected cells were and grown with or without puromycin as indicated and passaged for 60 days. Graphs reflect total percentage of stable integrants (GFP+/total). N\u00a0=\u00a03. (C) Cells stably or transiently transfected to express Cas9 or control vector were each additionally transfected with an sgRNA targeting the Dredd allele followed by editing efficiency assay (T7E1) at the Dredd locus. (D) Scheme for pooled screens containing a library of integrating sgRNA expression vectors. (E) Dropout of essential-gene targeted sgRNAs from a minipool of 31 sgRNAs. Two replicates of PT5 or PT5/Cas9 cells transfected with sgRNAs targeting Rho1 (red) or Diap1 (blue) and additional sgRNAs targeting eight genes predicted to have non-essential functions (grey) were passaged with puromycin for 60 days and sgRNA abundance was measured using next-generation sequencing. Graph shows log2(fold-change) of each sgRNA in cells expressing Cas9 divided by sgRNAs in cells not expressing Cas9. (E) Optimizing passage time for dropout measurements. sgRNA abundance was detected from cells transfected as in (D) but analyzed initially, after 30 days, or after 45 days, and log2 fold-changes were compared to those at 60 days. (G) Left: Schematic of experiment to test effect of inducible versus constitutive Cas9 activity. Right: Dropout efficiencies from pooled screens using inducible versus constitutive Cas9 and a mixture of sgRNAs targeting either essential genes or those predicted to be non-essential. Vertical axis reflects log2(fold-change) for each sgRNA. Shown are means of two independent replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Control S2R+/PT5 cells or cells stably transfected with metallothioein-promoter-driven Cas9 (MT-Cas9) were additionally transiently transfected with Dredd-targeted sgRNA followed by editing efficiency assay (T7E1) at the Dredd locus after 4 days.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Cells stably expressing intein-Cas9_S219-3XFLAG (Davis et al., 2015) treated with indicated concentration of 4-HT with or without CuSO4 as indicated were subjected to anti-Flag Western blot. 4-hydroxytamoxifen (4-HT) treatment increases proportion of cleavage product 2 (red), which represents nuclease-active Cas9 (Davis et al., 2015). 10 \u00b5M 4-HT\u00a0+\u00a0100 \u00b5M CuSO4 was chosen as a double-induction (D.I.) condition to optimize inducibility of Cas9. (B) PT5/intein-Cas9_S219-3XFLAG cells, transfected with Dredd sgRNA-expression vector, were subjected to D.I. or no treatment (N.T.). Quantified T7E1 assay is shown. (C) Cells as indicated were transfected with an sgRNA encoded in pLib6.4 (expressing Actin5C promoter driven GFP) targeting Rho1 (5\u2019-CAGCAAAGATCAGTTCCCCG-3\u2019) and cells were fixed and stained with phalloidin (red) and DAPI (blue) to reveal F-actin and nuclear DNA and representative images are shown.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Restriction map of sgRNA library vector pLib6.4. Annealed oligos are ligated into BbsI/BpiI site as indicated. (B) Two-step PCR scheme and amplicon barcoding. Amplicons are amplified from separate experimental cell pools by PCR with 6 bp in-line barcoded primers. A second round of amplification adds Illumina-sequencing compatible P5 and P7 sites. Finally, the amplicons are sgRNA-concentration normalized, mixed, and subjected to next-generation sequencing.\n\nWe next adapted the platform to CRISPR-Cas9 knockout screening. First, we generated PT5 S2R\u00a0+\u00a0cells stably expressing metallothionein-driven SpCas9 (\u2018PT5/Cas9\u2019). In combination with an sgRNA targeting the nonessential gene Dredd, PT5/Cas9 cells without induction were capable of editing nearly 50% of Dredd alleles, which was higher than that achieved by repeated rounds of transient transfection with a SpCas9 expression plasmid (Figure 1C) and not improved by copper induction (Figure 1\u2014figure supplement 1). In a pilot test of a pooled screening system, we transfected cells with a pool of sgRNAs in pLib6.4 and monitored sgRNA abundance following passaging, reasoning that sgRNAs targeting genes required for optimal fitness would be lost while genes whose presence or absence has no effect on cell growth would be retained (Figure 1D). After 60 days (roughly 60 cell doublings), the pools were significantly depleted of some sgRNAs targeting the essential genes Rho1 and Diap1 relative to those targeting genes predicted to have non-essential functions (Figure 1E). Monitoring Rho1 or Diap1-targeted sgRNAs in the screen pools 30, 45, or 60 days post-transfection showed that 45 days of passaging is optimal (Figure 1F). A principle concern of transfection-mediated pooled screening is the potential for low signal-to-noise due to multiple sgRNA delivery to the same cell shortly after transfection, but the subsequent loss of all but one sgRNA at the end of the assay. To determine whether the signal-to-noise ratio could be improved by reducing transfection multiplicity, we developed in parallel an inducible Cas9 expression system in S2R+/PT5 cells using intein-Cas9 (Davis et al., 2015) coupled with inducible expression in order to withhold Cas9 activity until sgRNAs have integrated (Figure 1G, Figure 1\u2014figure supplement 2). Surprisingly, a comparison of dropout efficiencies between the inducible and constitutive Cas9 platforms showed more selective reduction of Rho1 or Diap1 sgRNAs with constitutive rather than inducible Cas9, most likely due to the lower overall editing efficiency from intein-Cas9 as previously reported (Liu et al., 2016) (Figure 1G, Figure 1\u2014figure supplement 2B,C). From these results, we conclude that the use of phiC31 integration into the PT5/Cas9 cells is suitable for scalable perturbation screening using a pooled sgRNA library in Drosophila cells.\n\n### Genome-wide CRISPR screening in Drosophila cells and screen metrics\n\nTo construct a genome-wide sgRNA knockout library for Drosophila, we pre-computed sgRNAs for the first half of the coding region of all genes (Ren et al., 2013), applied efficiency and frame-shift filters previously shown to correlate with reagent success (Housden et al., 2015; Bae et al., 2014), and ranked the remaining designs based on the uniqueness of the seed region sequence (12 bp downstream of the PAM) and the number of potential off-target sites. The top ranked 6\u20138 sgRNAs per gene (85,558 in total) were chosen and synthesized together on a microarray chip with non-targeting and intergenic negative controls, harvested by PCR, and cloned into pLib6.4 using published methods (Gilbert et al., 2014). We used a barcode strategy to separate the full library into three focused library pools so that we could perform focused or genome-wide screens. Each focused subset of the library targets a unique set of experimental genes as well as a common set of controls (Figure 2A; Supplementary file 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig2-v1.jpg)\n\n**Figure 2.:** (A) CRISPR library is maintained in three distinct sublibrary groups as indicated, containing common controls. (B) sgRNA-level analysis of common controls in each group verify similar growth rates during each sublibrary screen. log2(fold-changes) of all sgRNAs representing two common controls, Rho1 (grey) and intergenic (pink). The average and standard deviation of log2(fold-changes) are shown for all individual sequences corresponding to Rho1-targeting positive controls or intergenic negative control sequences. (C) Gene-level analysis of sequential replicate screens. Log2(fold-changes) for all sgRNAs (85,558 in total) were first determined and then aggregated into a single Z-score using the maximum likelihood estimate (MLE) computational approach for each of 13,928 Drosophila genes in two independent, sequential replicates and plotted. (D) Z-score was calculated from average of replicate Log2(fold-changes), (Supplementary file 1) and these were plotted against RNAseq expression value (log(RPKM\u00a0+\u00a00.010)) (MODEncode). (E) Rank-wise false-discovery rate (FDR) of pooled CRISPR compared with arrayed RNAi (Boutros et al., 2004), original data or following re-analysis (see Materials and methods). Cumulative distribution of false-discovery error at indicated gene rank divided by the total possible false-discovery error, where \u2018error\u2019 is defined as a phenotypic assertion for any gene with RPKM\u00a0<1. (A) True-positive rate (TPR) for major eukaryotic essential genes shows broader distribution of functional classes revealing fitness essentiality from CRISPR than RNAi screens. Receiver operating characteristic (ROC) curves displaying rate of discovery of components of selected essential eukaryotic complex (Kanehisa et al., 2017) as a function of FDR. Curves compare CRISPR knockout screen (this study) with reanalyzed genome-wide RNAi (Boutros et al., 2004). (G) True-positive rate (TPR) of Drosophila CRISPR screen is in a similar range to TPRs from human CRISPR screens using libraries of similar size. Comparison of true positive rate between human cell-line screens (infected with GeCKO v2) and Drosophila CRISPR screening using high-confidence RNAi hits as true positives (Lenoir et al., 2018; Sanjana et al., 2014; Boutros et al., 2004). (H) Position matrix for optimal sgRNA design based on CRISPR screen. For the top 500 genes, which were hits with\u00a0<2% FDR in the CRISPR screen, hypergeometric probability of an A, C, G, or T nucleobase was calculated from strongly depleted (\u2018good\u2019, LOG(p-value), above 0 on the y-axis) sgRNA designs versus unchanging (\u2018bad\u2019, negative LOG(p-value), below 0 on the y-axis) sgRNA designs.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) RNAi exhibits a stronger dependence on mRNA level than CRISPR. A rank-based binning function was applied to CRISPR or RNAi data, where every 100 genes was binned, and each biwize average Z-score plotted against each binwise RNAseq expression value (LOG10(RPKM\u00a0+\u00a00.010)). Error bars reflect standard deviation. (B) Effect of copy number amplification (CNA) on gene-level Z score assignment in CRISPR or RNAi screens. CNA data for S2R+\u00a0cells (Lee et al., 2014) was used to create bins according to copy number for each gene, and then log2(odds ratio) was determined for each bin. Notice that bins containing very high CNA (green) represent only\u00a0~3% of the genome, and genes in this bin were also hits in the RNAi screen, suggesting that CRISPR screening does not lead to spurious calls for genes with high CNA, but, rather, that genes with high CNA are enriched for fitness essentiality.\n\nTo identify fitness genes under basal growth conditions, we transfected cells with pLib6.4 containing the library of sgRNAs along with phiC31 helper plasmid and passaged the cells every 5 days for 45 days. We transfected\u00a0~1500 cells per sgRNA and carried\u00a0>1500 cells per sgRNA per passage to maintain the diversity of the original library. Each experimental library was in-line barcoded using specific primers and sequenced together using next-generation sequencing (Figure 1\u2014figure supplement 3). To determine reagent correlation, the three separated sgRNA pools were each transfected and cells passaged independently and common controls were compared (Figure 2A; Supplementary file 1). Comparing sgRNAs prior to transfection versus 45 days after transfection yielded high reagent correlations between the same sgRNAs as demonstrated for Rho1 or intergenic guides, for which different sequences produced a highly reproducible range of varied dropout efficiencies (Figure 2B; Supplementary file 1).\n\nWe used MAGeCK (Li et al., 2014) maximum likelihood estimation (MLE) to compute fitness Z-scores for each gene from the log2 fold-changes of individual sgRNAs, which yielded good gene-level correlation between sequential biological replicates (Figure 2C; Pearson\u2019s r\u00a0=\u00a00.65). Because all true fitness genes must be expressed as mRNA, fitness scores were compared with gene expression from S2R+\u00a0cells (Celniker et al., 2009) as an orthogonal validation of the CRISPR results (Figure 2D). Fitness genes were highly enriched for genes with any expression level of RPKM\u00a0>\u00a01 (Figure 2D). By ranking genes by fitness score, we calculated a rank-wise false-discovery rate (FDR, defined as cumulative distribution of false-positive/[true positive\u00a0+\u00a0false positive]) and set a cutoff at 5%, identifying 1235 fitness genes (Figure 2E).\n\nThe current state-of-the-art for Drosophila cell-based screens is arrayed RNAi (Mohr et al., 2014). We re-analyzed a genome-wide RNAi viability screen in S2R+\u00a0cells (Boutros et al., 2004) and removed double-stranded RNA designs with predicted off-targets, which significantly lowered the FDR of the RNAi screen (see Materials and methods). Nevertheless, compared with pooled CRISPR screen results, the re-analyzed RNAi-based fitness gene set still had a far higher FDR, allowing the discovery of only 145 fitness genes at an FDR of 5% or incurring 44% FDR with a fitness gene set of 1235 genes (Figure 2E). Among genes with an RPKM\u00a0>\u00a01, RNAi was more likely to identify highly expressed genes, whereas this bias was less prominent in the CRISPR screen (Figure 2\u2014figure supplement 1). We used receiver-operating characteristic (ROC) curves to determine screen sensitivity for conserved, large macromolecular complexes. Whereas CRISPR and RNAi were both able to detect cytoplasmic ribosomal or proteasomal genes, CRISPR was better able than RNAi to identify significant fractions of the mitochondrial ribosome, aminoacyl-tRNA ligases, RNA polymerase II, basal transcription factors, RNA exosome, or the replication fork at low FDR (Figure 2F). As a control, neither method detected peroxisome genes, consistent with the observation that cell lines lacking peroxisomes grow normally (Goldfischer et al., 1973) (data not shown) (Figure 2F). Interestingly, a human CRISPR-RNAi screen comparison also found a similar inability of RNAi to detect genes of the mitochondrial ribosome whereas it exceeded CRISPR sensitivity in detecting genes of the cytoplasmic ribosome, possibly due to differences in mRNA stability (Hart et al., 2015).\n\nA technical comparison of CRISPR screens in humans and fly cells indicated that the method performs similarly in both systems. First, the fly screen had similar sensitivity (true-positive rate at 5% FDR) to genome-wide screens in human cell-lines performed with similar reagent number (GeCKO v2 screens) when compared against top RNAi hits (Sanjana et al., 2014) (Figure 2G). By comparing sgRNAs that dropped out versus those that failed to dropout for known essential genes, we were able to compute a probability-based position matrix for optimal sgRNA design in Drosophila (Figure 2H). The position matrix shows complementary nucleotide biases at 15/21 positions and is broadly consistent with human CRISPR screens (Doench et al., 2016). Specifically, out of the first position of the PAM sequence and the 8 bp seed region before the PAM sequence, 5 of 9 positions are fully consistent while 2 of 9 position are partially consistent with the Doench score (Doench et al., 2016) (Figure 2H). The analyses support an underlying mechanistic unity of targeting by Cas9 and NHEJ repair between human and fly cells.\n\nCopy number has been shown to correlate with the CRISPR viability score in some mammalian CRISPR screens, presumably due to induction of greater DNA damage foci for copy-number-amplified (CNA) loci, creating spurious fitness calls (Meyers et al., 2017). By contrast, we find that CRISPR in Drosophila shows no detectable bias towards CNA genes for 97% of the genome (Figure 2\u2014figure supplement 1B). Interestingly, genes with extreme CNA of 8 or more copies (3% of genes) exhibited a bias of\u00a0~1.8 fold in the CRISPR screen, but the magnitude of this bias was similar to that seen in an RNAi screen for the same genes (Figure 2\u2014figure supplement 1B), suggesting that CNA genes in Drosophila cells are enriched for fitness essentiality. Finally, copy-number correction had no detectable effect on FDR, true-positive rate, or enrichment of major macromolecular complexes (not shown). The analysis shows that Drosophila CRISPR screens do not have detectable copy-number bias.\n\n### Analysis of Drosophila cell fitness genes\n\nWe next analyzed fitness genes in Drosophila S2R+\u00a0cells. We first performed gene ontology enrichment on CRISPR screen hits at 5% FDR. The gene set is enriched for essential processes such as translation, transcription, splicing, etc. and depletion for processes such as chitin metabolism that are necessary in whole flies but not cells (Figure 3A). Next, we compared CRISPR hits to fly genes with lethal alleles annotated in FlyBase after removing genes for which no allele has yet been constructed. At 5% FDR,~17% of cell-essential genes overlapped with whole-fly essential genes (Figure 3B). This overlap is in a similar range as knockout mouse viability compared with mouse cell-line fitness essentiality (where the overlap is\u00a0~27%) (Bartha et al., 2018), and may represent different genetic requirements of whole animals versus cell lines or of germline versus somatic cells (Garcia-Bellido and Robbins, 1983).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig3-v1.jpg)\n\n**Figure 3.:** (A) Top enriched gene ontology (GO) terms for screen hits at 5% FDR compared with top enriched GO terms for non-hits. (B) Overlap between cell-line CRISPR hits at 5% FDR and all \u2018lethal\u2019 Flybase entries after subtracting entries with no allele information. (C) Overlap between Drosophila CRISPR hits at 5% FDR and orthologs in yeast (S. cerevisiae) or human cell-lines. (D) Gene ontology terms enriched in human CRISPR fitness screens (Hart et al., 2015) compared with fly CRISPR fitness screens. Selective listing of co-enriched terms, a co-depleted term, and outliers. (E) Schematic for \u2018fly-to-human paralog\u2019 assignment and testing using high-resolution human CRISPR screen data (Hart et al., 2015). For each fly gene with a unique human ortholog, no selection was performed. For fly genes with multiple human orthologs, the most essential human ortholog was chosen. Genes were included in the analysis only if expressed in the human cell-line. Ortholog assignment used DIOPT \u2018high\u2019 and \u2018moderate\u2019 confidence mapping calls (Hu et al., 2011). (F) Effect of fly-to-human paralogs on hit-calling in human CRISPR screens. Cumulative average of gene fitness essentiality (negative Bayes Factor) for high-resolution human cell-line CRISPR screen (Lenoir et al., 2018; Hart et al., 2015) examining indicated genesets: those with paralogs are dashed; orthologs of fly fitness genes are brown; orthologs of non-hits are blue. (G) Schematic for \u2018fly-to-human paralog\u2019 assignment and testing using cancer Dependency Map data (Tsherniak et al., 2017). A CERES score of\u00a0<0.8 was used for fitness calls. (H) Effect of fly-to-human paralogs on number of cell-lines requiring a particular gene for fitness.\n\nA high-resolution fitness map in fly cells now allows us to compare fitness genes among species. The fly fitness gene set partially but significantly overlaps with characterized fitness gene sets from yeast and human cells (Figure 3C). Moreover, an unbiased comparison of gene ontology terms between fly and human fitness genes displays a high degree of correlation (Figure 3D; Pearson\u2019s r = 0.56). Despite significant overlap between fly and human cell-line fitness genes and conservation of gene ontology terms enriched in both screens, many fly fitness genes map to human genes that were not identified in human CRISPR screens. We hypothesized that fly CRISPR screens identify essential genes in Drosophila cells but not in human cells due to paralog redundancy. To test this hypothesis, we inferred putative paralog relationships for moderately or highly conserved orthologs using the DRSC Integrative Ortholog Prediction Tool (DIOPT) (Hu et al., 2011) and retrieved fitness scores for the corresponding human gene using genome-wide human cell-line CRISPR data (Hart et al., 2015; Lenoir et al., 2018) (Figure 3E). Further, to account for the possibility that paralogs may not be expressed, we only analyzed genes that were expressed as mRNA in the human cell-line (Lenoir et al., 2018) (Figure 2E). Using this framework, 35% of conserved human genes contain a fly-to-human paralog, and 407 fly fitness genes (at 5% FDR) are the orthologs of human genes containing at least one paralog. In the human cell-line CRISPR screen, we noted a significant bias against detecting genes that are conserved in flies and have a paralog in the human genome, and this bias was dramatically elevated for the human orthologs of fly fitness genes (Figure 3F). Furthermore, this paralog effect extended to a larger dataset generated by the cancer Dependency Map project, in which CRISPR screens were conducted in 436 human cell-lines. By defining a fitness gene as any gene with a CERES score less than 0.8, we sorted human orthologs of fly fitness by the number of cell-lines out of 436 in which they displayed a fitness defect and according to their paralog relationship between flies and humans (Figure 3G). The result again showed a bias against detecting genes with fly-to-human paralogs in the panel of CRISPR screens (Figure 3H). Thus, we propose that functional redundancy among closely related genes buffers each of them and makes them invisible in viability screens, and that Drosophila cells may be more appropriate for screening genes that expanded during the vertebrate lineage.\n\nAlthough the Drosophila fitness genes we identified are enriched for characterized phenotypes and publication count relative to all genes (data not shown), phenotypes have yet to be described for 303 of them. Among these 303 genes, 251 have human orthologs (Supplementary file 2). Thus, further studies of these conserved genes are likely to provide new insights into conserved, cell essential processes not yet studied in flies. Also of interest are fly-specific fitness genes, as they present a paradox and may reveal novel species-specific biology or overlooked structural/functional analogs without sequence orthology and may have potential as targets for new insecticides. At 5% FDR, we obtained 62 fitness genes with no sequence similarity outside of flies using DIOPT, and phenotype information exists regarding 25 of these (Supplementary file 2). In confirmation of our methods, these included known cell-essential divergent genes such as ver and HipHop, which encode components of the telomerin complex, the putative functional analog of mammalian telomerase (Raffa et al., 2011; 2010), and Kmn1, Kmn2 and Spc105R, whose gene products may be structural anologs of Ndc80, and Mis12 complex components that interact with centromeric DNA, a proposed driver of speciation (Schittenhelm et al., 2007; 2009; Henikoff et al., 2001), as well as several chromatin-interacting proteins (Supplementary file 2). Characterization of the remaining conserved and non-conserved genes is likely to bring new insights into essential gene functions.\n\n### Use of Drosophila CRISPR screens to uncover gene-drug interactions in the context of major signaling pathway suppression\n\nWe next asked whether our CRISPR screening platform could be used to identify genes acting in signaling pathways that regulate cell growth and proliferation (Friedman and Perrimon, 2007). To do this, we performed positive selection screens in the presence of trametinib (tra), an inhibitor of the Ras/ERK/ETS pathway, or rapamycin (RAP), an inhibitor of the PI3K/mTor pathway, with the aim of uncovering known and novel compensatory mechanisms or synergizing loss-of-function mutations. Both pro-survival pathways have been extensively mapped through loss-of-function studies in fly tissues and cell-lines (Friedman and Perrimon, 2007) (Figure 4A). For these experiments, we first transfected cells with Group 1 and Group 2 sublibraries targeting a total of 3974 genes (Figure 2A). The gene set interrogated comprises kinases, phosphatases, the fly ortholog of FDA-approved drugs (Housden et al., 2017), and fly-to-human paralogs (Figure 2A). The cell pools were passaged for 15 days to allow sgRNA integration, subjected to passaging for an additional 30 in sub-lethal doses of tra or RAP, and then re-sequenced (Figure 2B). The effect of each drug was carefully monitored by periodically counting cells during the screen to confirm the effect on cell doubling rate (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36333/elife-36333-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of selected components of the Ras/ERK/ETS and PI3K/mTor pathways and of inhibition by trametinib (\u2018tra\u2019) or rapamycin (\u2018RAP\u2019). (B) Experimental schematic: pathway-specific perturbations to identify context-specific gene essentiality using Drosophila CRISPR screens. Dropout screens conducted with no additional treatment (N.T.) serves as a control. (C) Estimates of doubling per day obtained during periodic counting of cell pools to verify that tra and RAP partially inhibit cell growth. Each observation and mean doubling time plotted. (D) Plot of log2(initial distribution) versus log2(fold-change) for indicated sgRNAs in each screen. Pathway-specific resistance for sgRNAs targeting aop, a known suppressor of the Ras/ERK/ETS pathway in Drosophila (Lai and Rubin, 1992) or FK506-bp2, the putative cellular co-factor for rapamycin (Thomson and Johnson, 2010). (E) Computed maximum likelihood estimate (MLE) Z score based on sgRNA fold-change data comparing drug treatment condition with no treatment control. sgRNA fold-changes are mean of two independent replicates. Expected intra-pathway negative or positive regulators are noted (see Supplementary file 3 for complete hit list and raw data). GO terms for synergistic interactions are listed along with hypergeometric p-values for term assignment (PatherDB). (F) Physical protein-protein interaction (PPI) networks enriched using differential CRISPR screens in tra or RAP. PPI network prediction and reported p-values use COMPLEAT, and requires complexes to have\u00a0>6 members per complex (Vinayagam et al., 2013).\n\nWe observed highly context-specific modes of resistance to each drug. As an illustration, sgRNAs against aop, a transcriptional repressor of the Ras/ERK/ETS pathway (Lai and Rubin, 1992), or the putative intracellular co-factor for rapamycin, FK506-bp2 (Thomson and Johnson, 2010), conferred resistance specifically in the context of tra or RAP, respectively (Figure 4D). We focused on other such genes for which multiple sgRNAs provide a survival benefit or synergistic lethality in the context of drug treatment using maximum likelihood estimate (Li et al., 2014) (MLE) (Figure 4E; Supplementary file 3). Additional established context-specific pathway negative regulators emerged: PTP-ER, which inactivates Erk (rl) (Karim and Rubin, 1999) and Pi3K21B and Pten, which antagonize the activity of Pi3K92E (Weinkove et al., 1999; Huang et al., 1999; Goberdhan et al., 1999).\n\nThe analysis also identified several pathway positive regulators as synthetic lethal (Figure 4E, and mapped into pathway diagram, Figure 4A), cross-pathway synergy, and several novel candidate pathway regulators (Supplementary file 3). Gene ontology showed similar but non-overlapping categories were detected as synergistically fitness-compromising with each drug (Figure 4E). Moreover, by using differential CRISPR score to map physical protein-protein interaction (PPI) networks, both distinct and overlapping PPI relationships emerged (Figure 4F). For instance, a network involved in photoreceptor cell differentiation scored most strongly as synergistically lethal with tra, possibly because photoreceptor differentiation has been a workhorse phenotype for the characterization of mutants in the Ras/ERK/ETS pathway (Nagaraj and Banerjee, 2004). Similarly, the top scoring PPI network for RAP-synergy was one involved in the positive regulation of cell-size, a key morphological consequence of upgregulating the PI3K/mTOR pathway (Fingar and Blenis, 2004). Interestingly, similar PPI networks involved in mitosis was identified in both screens (Figure 4F). Taken together, these results demonstrate that CRISPR screening in Drosophila cells can reveal context-specific compensatory mechanisms or synergy relevant to major signaling pathways.\n\n## Discussion\n\nCRISPR screening technologies have illuminated the functions of uncharacterized genes and provided a straightforward, cost-effective pipeline to evaluate gene function in different contexts (Doench, 2018). However, the benefits of this approach have been inaccessible for Drosophila and other insects because the delivery of highly multiplexed DNA libraries has thus far required lentiviral transduction, a process that fails to produce transformed cells (unpublished). Here, we show that multiplexed DNA delivery by transfection followed by site-specific recombination is an effective alternative strategy. We use this technique to deliver a genome-wide library of sgRNA expression cassettes and perform CRISPR knockout fitness screens in Drosophila S2R+\u00a0cells, identifying 1235 fitness genes at 5% FDR. Of note, our CRISPR screens were conducted after approximately 45 doublings (basal essentiality) or 30 doublings (context-specific screens), while most mammalian screens have been conducted with fewer than 30 doublings. This could possibly due to efficiency differences of the CRISPR systems encoded in the two systems or because of the high ploidy of S2R+\u00a0cells. Since our timing optimization data used only two sgRNAs (Figure 1F), we do not know how the set of fitness genes would change in screens conducted with fewer doublings. A practical use for viability screens is examining context-specific growth requirements. The Drosophila CRIPSR knockout system identified mutants conferring drug resistance or synergy, and should thus be suitable for many future context-specific fitness experiments examining gene-drug/nutrient or gene-gene interactions.\n\nThe introduction of systematic knockdown and knockout approaches have greatly reduced false-positive assertions in human cell-line loss-of-function studies, but equally important is knowing what genes are missed by these approaches and providing alternative screening strategies that can target them. Of critical importance are paralogous genes with redundant functions, i.e., the presence of one paralog buffers against the loss of another (Ewen-Campen et al., 2017). Although relevant to human disease (Dickerson and Robertson, 2012), these genes are \u2018invisible\u2019 in singe-gene screens and dramatically reduce search space in gene-by-gene screens (Ewen-Campen et al., 2017). When we compared human and fly CRISPR screens, human CRISPR screens were less able to detect the fly orthologs of fitness essential genes when those genes had paralogs relative to the fly genome. This supports the use of parallel Drosophila and human screens as one approach to offset genetic redundancy.\n\nIn addition to CRISPR knockout, the strategy we report can be used with numerous other high-throughput screening modalities which were previously not possible in Drosophila, including CRISPR activation, CRIPSR inhibition, CRISPR base-editing, shRNA knockdown, cDNA overexpression, perturb-SEQ, and combinatorial approaches for multigene suppression/activation (Doench, 2018; Najm et al., 2018; Shen et al., 2017). Finally, the methods and constructs we employ are likely to be directly transferable to the large number of existing cultured cell-lines derived from other insects such as mosquitos, where they could be used to characterize viral propagation mechanisms in the vectors of human pathogens such as Dengue or Zika.\n\n## Materials and methods\n\n### Vectors and cell lines\n\npBS130, phiC31 integrase under control of the HSP70 promoter, was obtained from Addgene. Transient Cas9 expression used pl018 (Housden et al., 2015) containing Drosophila-optimized Cas9 under the strong Actin promoter. Cas9 from pl018 followed by the BGH terminator from pcDNA3.1 (Invitrogen) were cloned into the SpeI/NotI site of pMK33 (Koelle et al., 1991) to generate pMK33/Cas9. Human codon-optimized intein-Cas9_S219-3XFLAG (Davis et al., 2015), a kind gift of D. Lui, was amplified by PCR and cloned into pMK33 to generate pMK33/intein-Cas9_S219-3XFLAG. pLib6.4 was generated by using standard cloning methods as follows. First, the Drosophila U6:2 and Act5C promoter cassette from pl018 (Housden et al., 2015) was amplified by PCR using primers containing the 5\u2019 attB40 site and inserted into pUC19 using Gibson assembly. Next, GFP-T2A-Puro from pAc-STABLE2 (Gonz\u00e1lez et al., 2011) was amplified with primers containing the 3\u2019 attB40 and introduced by ligation into an engineered site in the resulting vector and verified by Sanger sequencing. For minipool experiments in Figure 1, sgRNAs were cloned individually using standard methods into the BpiI/BbsI site of pLib6.4 and verified by Sanger sequencing and then mixed. Sequencing reactions were carried out with an ABI3730xl DNA analyzer at the DNA Resource Core of Dana-Farber/Harvard Cancer Center (funded in part by NCI Cancer Center support grant 2P30CA006516-48). S2R+\u00a0derivative PT5 (NPT005) was obtained from the Drosophila RNAi Screening Center (Neum\u00fcller et al., 2012) and grown in Schneider\u2019s medium (Thermo Fisher Scientific) containing 10% heat-inactivated FBS. PT5 cells were transfected with pMK33/Cas9 or pMK33/intein-Cas9_S219-3XFLAG and selected over a period of two months in 200 ng/uL Hygromycin B (Calbiochem). The resulting PT5/Cas9 cells were maintained in Hygromycin until CRISPR library transfection.\u00a0pMK33/Cas9 (accession # EvNO00483429), pMK33/intein-Cas9_S219-3XFLAG (accession # EvNO00483430), and pLib6.4 (accession # EvNO00483431) are available through DF/HCC DNA Resource Core (https://plasmid.med.harvard.edu/).\n\n### Library design and construction\n\nIn order to allow focused sublibrary screening as in Figure 3, sgRNA library was encoded in three separable sublibraries with common controls (Suppl. Figure 2A). For gene-targeted sgRNAs, Group 1 targets kinases and phosphatases as assigned using GLAD (Hu et al., 2015) and FDA-approved drug-targets (Housden et al., 2017). Group 2 targets fly-to-human paralogs, identified by using \u2018moderate\u2019 or \u2018high\u2019 orthology assignment according to DIOPT (Hu et al., 2011), not already present in Group 1. Group 3 targets all other remaining genes. Library synthesis was performed by CustomArray using published methods (Gilbert et al., 2014; Shalem et al., 2014). Briefly, CRISPR sgRNAs were encoded within a 110-nt single-stranded DNA oligo containing unique library-specific barcode sequences and flanked by BpiI/BbsI sites. 15-cycles of PCR using Phusion Polymerase (New England Biolabs) were used to amplify each sub-library, and then BpiI (Fermentas) was added to the amplicons. A non-denaturing 20% TBE gel (Thermo) was used to purify the resulting 23-mer fragment and eluted overnight using the crush-soak method. The concentration of ligatable fragments in each preparation was empirically optimized by test ligations in pLib6.4. Optimized concentrations were used in ligations with BpiI-digested pLib6.4 and then electroporated into Ecloni 10GF\u2019 electrocompetent cells (Lucigen) at a yield of 20\u201350 times diversity for each library, generating dense colonies on\u00a0~60,150 mm LB-carbenicillin plates, which were grown for 18 hr at 37\u00b0C and harvested by scraping into LB medium followed by mixing suspended colonies by extensive vortexing. Glycerol was added to 50% and the libraries were flash frozen in 1 mL aliquots. Each sublibrary was prepared by pooled minipreps and eluted in buffer EB (Qiagen).\u00a0Libraries are available at DRSC/TRiP Functional Genomics Resources (https://fgr.hms.harvard.edu/crispr-cell-screening-reagents).\n\n### Transfection, pool maintenance, and drug addition\n\npBS130 and pLib6.4 containing CRISPR sublibraries were mixed and co-transfected 1:1 into PT5/Cas9 cells using Effectene with the manufacturer\u2019s recommended protocol (Qiagen). For each transfection, cells were first grown until just confluent on T75 flasks for 2\u20133 days. Doubling was monitored at this passage and determined to be approximately 1/day. Then cells were removed by forceful tapping and replated at 3 \u00d7 106 per well into 6-well dishes. The number of dishes required reflected the library size and accounted for incomplete transfection efficiency to give at least 1500 cells/sgRNA (for reference, a full-genome screen required all wells of eight 6-well dishes). t\u00a0=\u00a00 used plasmid readcount values. Transfection efficiency and integration efficiency were monitored periodically after transfection for the first twelve days using flow cytometry (BD LSRII). Flow cytometry was performed at the Harvard Medical School Department of Immunology Flow Core. Each 1.5 wells of cells was transferred to one 10 cm dish and passaged in the presence of 5 ug/mL puromycin and cells were allowed to become confluent over 4\u20136 days. Next, the pool was contracted by two-fold, and 2 \u00d7 107 cells from each of two plates was combined into a single 10 cm dish. 2 \u00d7 107 cells were passaged every 5 days until downstream processing at the indicated time. These steps during early phases of selection ensured no loss of diversity due to variable transfection efficiency. To determine partially inhibitory dose of trametinib (Selleck) or rapamycin (Tocris), the effect of varying doses of each drug was first measured in a 4 day treatment to PT5/Cas9 cells by Cell Titer Glo assay (Promega), using manufacturer\u2019s recommended protocol (not shown). From this data, 50 nM trametinib or 2 nM rapamycin was chosen as partially perturbative concentrations for focused library screens (Figure 3). To verify that drug treatment decreased doubling rate during the screen, cell counts were performed periodically using a hemocytometer (Figure 3B).\n\n### Library sequencing and CRISPR screen data analysis\n\nGenomic DNA was prepared using the Zymo miniprep kit. Assuming DNA content in S2R\u00a0+\u00a0cells was 4N, each cell contains\u00a0~0.6 pg of DNA. To maintain diversity, all PCRs were conducted from\u00a0~5,000 cells per sgRNA per condition. Library amplification was performed using a two-step procedure (illustrated in Figure 1\u2014figure supplement 3). First, in-line barcoded inside primers (PCR1F x PCR1R) were used to amplify the library in 23 cycles such that the resulting amplicon had the following sequence: 1/2Read1-(N)nANNEALINGSEQUENCE-sgRNA-tracrRNA. Primer sequences conformed to: 5\u2019- CTTTCCCTACACGACGCTCTTCCGATCT(N)n (B)6 gttttcctcaatacttcGTTCg-3\u2019 (where N\u00a0=\u00a0any nucleotide; n\u00a0=\u00a0variable number between 1\u20139; and B\u00a0=\u00a0barcode nucleotide) and 5\u2019-TTTGTGTTTTTAGAATATAGAATTGCATGCTGggtacctc-3\u2019. Next, common outside primers were used to amplify these amplicons with an additional 11 cycles such that the resulting amplicons had the following sequence: P5-Read1-(N)n-ANNEALINGSEQUENCE-sgRNA-tracrRNA-P7. All sequences are provided in Supplementary file 1. Following second amplification, amplicons were gel purified and concentration was determined using Qubit dsDNA HS Assay Kit (Thermo). Amplicons were pooled according to concentration of sgRNAs per unit volume. Pooled barcoded amplicons were subjected to sequencing using the NextSeq500 1 \u00d7 75 SE platform (Illumina). Sequencing was performed at the CCIB DNA Core Facility at Massachusetts General Hospital (Cambridge, MA) or the Harvard Medical School Biopolymers Facility (Boston, MA). De-multiplexing of the library was performed using TagDust (Lassmann et al., 2009) and all downstream analysis was performed within MAGeCK (Li et al., 2014) with the following experiment-specific changes: 1) Readcount files were stripped of sgRNAs below the 10th percentile lowest initial readcounts for each sublibrary before processing in MAGeCK MLE; 2) we performed 1000 iterations for all Z-score assignments. For drug selection experiments, several context-nonspecific sgRNAs providing survival benefit to cells under normal growth conditions were removed due to wide variation of these sgRNAs upon selection.\n\n### Bioinformatics analysis\n\nFor ROC curves, major eukaryotic essential complex components for Drosophila were from KEGG (http://www.genome.jp/). For gene ontology enrichment analysis, annotation file for Drosophila genes was retrieved from NCBI (ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2go.gz). Hypergeometric analysis was done to calculate the enrichment P value using in-house program written in JAVA.\n\nOrtholog assignment as well as fly-to-human protein similarity score were obtained using DIOPT v 6.0.2 using \u2018moderate\u2019 or \u2018high\u2019 confidence calls (Hu et al., 2011). RNAseq analysis in this paper used the webtools DGET (http://www.flyrnai.org/tools/dget/web) or CellExpress (http://www.flyrnai.org/cellexpress), which used RNAseq expression data from modENCODE (Celniker et al., 2009). For re-analysis of genome-wide arrayed RNAi viability experiment, we re-examined all dsRNA amplicon targets reported in the earlier screen (Boutros et al., 2004) using FlyBase v 6. All amplicons with greater than one unique target were discarded (removing 7818 dsRNAs and retaining 13,488). Z-score was then re-calculated using the original methods (Boutros et al., 2004). Gene ontology analysis in Figures 3D and 4E was performed using PantherDB (Mi et al., 2013). In Figure 3D, terms were restricted to those with greater than or equal to 50 members. Complex enrichment analysis in Figure 4F used COMPLEAT (Vinayagam et al., 2013). In Figure 4F,\u00a0Z-scores in Supplementary file 3 were multiplied by \u22121 and top three non-redundant complexes from COMPLEAT with a minimum number of 6 members are reported.\n\n### Data\u00a0availability\n\nReadcount files for CRISPR analysis compatible with MAGeCK are provided as Supplementary file 4\u201315 and Supplementary file 3. pMK33/Cas9, pMK33/intein-Cas9_S219-3XFLAG, and pLib6.4. are available through Harvard PlasmID Database (http://plasmid.med.harvard.edu). The three CRISPR sublibraries used in this study are available through DRSC/TRiP Functional Genomics Resources (https://fgr.hms.harvard.edu/).\n",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c4c207cd-5900-4f80-b343-cb417da1d908",
+      "submission_id": "71705c44-ad1a-4175-98aa-cbae2f03e765",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Boutros, German Cancer Research Center (DKFZ) and Heidelberg University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36333.035](https://doi.org/10.7554/eLife.36333.035)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Pooled genome-wide CRISPR screening for basal and context-specific fitness gene essentiality in Drosophila cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Roderick Beijersbergen (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll three reviewers are in support of publication and the majority comments are minor that could be addressed by rewriting and modifications of the figures. In general, a more extensive discussion on the comparison of Drosophila and human CRISPR screening results could be helpful for a broader audience. One of the reviewers requests a clarification of the system itself and data shown in Figure 1B/C that should be addressed by additional comments, analysis or experiments.\n\n\u2013 The comparison with human essential genes is interesting but could be explained and illustrated in more detail. In general, the manuscript would gain from a longer discussion on the definition of \"essentiality\" or \"fitness\" in the context of their experimental system to illustrate differences in experimental systems (both yeast/human/Drosophila as well as RNAi-screening and CRISPR screening). For example, published screens in human cells span a max. incubation time of 30 doublings, whereas the data discussed in this manuscript refers to 45 to 60 cell doublings and more genes are likely to be found to have growth defects within a longer experimental time-frame. The presentation of the differences between human and Drosophila cell essentials could also be extended.\n\n\u2013 Avoid using the term \"de-enrichment\" both in text and figures, depletion is an accepted term for loss of abundance in a pooled population. I think the terms \u201clow-redundancy animal cells\" (Abstract) and \"lower complexity Drosophila cells\" (\u201cAnalysis of Drosophila cell fitness genes\u201d) should be rephrased.\n\n\u2013 In the Results second paragraph \"was transfected along with a plasmid containing\" 'along' should be deleted (The phrasing was confusing.)\n\n\u2013 In Figure 1B it seems that a large fraction of the cells becomes both mCherry and GFP positive in the presence of the donor and integrase. Would one not expect to lose mCherry expression upon integration of the gRNA cassette containing GFP? This seems a minor fraction of the GFP positive population. I am also not convinced that during the transient transfection of the pLib6.4 donor plasmid and before the integration, no gene editing occurs. The T7E1 assay (Figure 1C) is known for lack of sensitivity and therefore it would be worthwhile to address this in a different way e.g. by gRNA mixing experiments followed by targeted sequencing in a heterogenous population. The targeted sequencing should also be applied on different time-points to get a better insight in the dynamics, which seems rather slow. This could also provide a more satisfying explanation for the observed difference between stable and transient expression of CAS9.\n\n\u2013 In Figure 1C the annotation of the FACS plots is missing.\n\n\u2013 Figure 1C \u2013 'stable' versus 'transient' should be better explained in the figure legend.\n\n\u2013 Figure 2C should indicate correlation of the replicates (e.g. Pearson correlation coefficient of gene-level fold-changes).\n\n\u2013 A statistical quantification on the connection between expression and essentiality scoring would be helpful (Figure 2D).\n\n\u2013 Legend to Figure 2D: \"Z-scores for computed replicate averages\" should be explained better.\n\n\u2013 Sequence preference motifs of Cas9/sgRNA complex are strongly driven by the binding energy between sgRNA and Cas9 and that the improved scaffold introduced by Qi et al., 2013 removes that bias in most cases (Figure 2H).\n\n\u2013 Figure 3C \u2013 if the green set are the fly essential genes, then the red set should read \"yeast essentials\" (top) or \"human essentials\" (bottom), and not \"fly-to-yeast essentials\" (which presumably is the yellow overlap?)\n\n\u2013 Figure 3C shows the overlap between Dmel, human and Drosophila essential genes. The figure legend is very sparse which data sets are being used for comparison (only Hart 2015 or others?). It would also be helpful for the reader to more extensively highlight differences found between species (e.g. which complexes were found / not found). The question is also whether the comparison will change when more essential genes (e.g. from the DepMap project) are being included.\n\n\u2013 Figure 4C/E: presentation of context-dependent essential genes could be extended, e.g. by gene enrichment analysis. It should also be explained in the text in more detail how the 3974 genes were chosen.\n\n\u2013 Figure labels are often very small and difficult to read.\n\n- The Materials and methods should contain more details regarding library design and construction so that others in the community will be able to implement the screening setup.\n\n\u2013 The authors write, \"CRISPR sgRNAs were encoded within a 110-nt single stranded DNA oligo containing unique library-specific barcode sequences and flanked by BpiI/BbsI sites.\" The common sequence of the oligos (5' and 3' to the sgRNA) should be given, including the barcode sequences.\n\n\u2013 The sequences of the oligos used for amplifying the sub-libraries should be given.\n\n\u2013 Sequencing results of libraries should be made publicly available to allow re-analysis.\n\nReviewer #1:\n\nThe manuscript by Viswanatha et al. describes a CRISPR screening platform in S2R+ Drosophila cells based on site specific integration mediated by phiC31. This platform allows for a pooled screening approach with NGS as a read-out, well established in mammalian cells. They have performed a genome-wide lethality screen in S2R+ cells and identify 1235 essential genes. They find depletion of sgRNAs targeting genes in crucial cellular processes analogous to mammalian cell viability CRISPR screen results. Interestingly, but not unexpected, genes with paralogs in human cells are more prevalent in the S2R+ screens than in human cell screens. Finally, the authors provide a proof-of-principle screen for modulators of pathway inhibition in Drosophila cells using a MAPK pathway inhibitor Trametinib (MEK) and a PI3K/mTOR pathway inhibitor Rapamycin, identifying several components of the respective pathways.\n\nThe establishment of the technology and proof-of-principle examples are well presented and show that large-scale CRISPR screens can be performed in Drosophila cells. The identification of lethal genes is relatively easy compared to drug response modifiers, but the examples shown here also illustrate the ability to do so in the S2R+ cells with different treatments. The platform described in this manuscript seems suitable for several types of large scale screens previously performed in mammalian cells and represents a valuable contribution to the scientific community.\n\nI do have some points that need clarification before publication of this work. In Figure 1B it seems that a large fraction of the cells becomes both mCherry and GFP positive in the presence of the donor and integrase. Would one not expect to lose mCherry expression upon integration of the gRNA cassette containing GFP? This seems a minor fraction of the GFP positive population.\n\nI am also not convinced that during the transient transfection of the pLib6.4 donor plasmid and before the integration, no gene editing occurs. The T7E1 assay (Figure 1C) is known for lack of sensitivity and therefore it would be worthwhile to address this in a different way e.g. by gRNA mixing experiments followed by targeted sequencing in a heterogenous population. The targeted sequencing should also be applied on different time-points to get a better insight in the dynamics, which seems rather slow. This could also provide a more satisfying explanation for the observed difference between stable and transient expression of CAS9.\n\nThe authors claim that Drosophila cells \"do not have detectable copy-number bias\" but do not provide an explanation. It could be that the genome editing is inefficient and not resulting in multiple double strand breaks, preventing a lethal DNA damage mediated cellular response. It would be informative to show the increased numbers of DNA damage foci in cells expressing gRNAs targeting copy-number-amplified loci and study the response to double strand breaks in SR2+ cells.\n\nReviewer #2:\n\nIn the submitted manuscript, Viswanatha and colleagues established the methodology and for the first time performed pooled CRISPR-knock out screens in a Drosophila cell line. So far, pooled CRISPR-Cas9 in insect cells was not possible because of lack of a suitable methodology for efficient integration of sgRNA plasmids. To circumvent the inefficiency of lentiviral delivery to Drosophila cells, the authors established a site-specific library integration strategy and first confirmed its suitability using a limited number of target sgRNAs. They then designed and performed a genome-wide CRISPR knock-out screen in S2R+ cells and identified approx. 1200 essential genes at a 5% FDR. The benchmarked this data set against previous RNAi screens and CRISPR screens in human cells. An important finding is that they could identify a significant number of genes (approx. 400) that are possibly not lethal in human cells because of gene duplication. They further demonstrate that this screening platform is suitable for chemical-genetic screens and show data on MEK and mTOR inhibitor screens using a sub library of 3974 genes.\n\nOverall, this is a well executed and written study. It is the first time that a pooled screening approach has been (successfully) used in insect cells, opening new avenues for genetic screening. The site-specific integration strategy is elegant and circumvents problems with viral or other types of delivery \u2013 this is also an important methodological advance that will open new experimental avenues to perform other types of over expression and silencing studies in a pooled format in Drosophila cells. The part on the comparison with human essential genes is interesting but could be explained and illustrated in more detail. In general, the manuscript would gain from a longer discussion on the definition of \"essentiality\" or \"fitness\" in the context of their experimental system to illustrate differences in experimental systems (both yeast/human/Drosophila as well as RNAi-screening and CRISPR screening). For example, published screens in human cells span a max. incubation time of 30 doublings, whereas the data discussed in this manuscript refers to 45 to 60 cell doublings and more genes are likely to be found to have growth defects within a longer experimental time-frame. The presentation of the differences between human and Drosophila cell essentials could also be extended.\n\nReviewer #3:\n\nViswanatha et al. describe a method for performing pooled genome-wide CRISPR screens in Drosophils S2R+ cells. Using this, they identify 1235 genes as influencing cell fitness in S2R+ cells.\n\nOverall, the data are of good quality. No groundbreaking new biological insights have come out of this manuscript \u2013 it is mainly a methods paper, but the method will surely be useful to the community.\n\nI have only a few minor comments.\n\n1. The Materials and methods should contain more details regarding library design and construction so that others in the community will be able to implement the screening setup.\n\n- the authors write \"CRISPR sgRNAs were encoded within a 110-nt single stranded DNA oligo containing unique library-specific barcode sequences and flanked by BpiI/BbsI sites.\" The common sequence of the oligos (5' and 3' to the sgRNA) should be given, including the barcode sequences.\n\n- the sequences of the oligos used for amplifying the sub-libraries should be given\n\n2. In the Results second paragraph \"was transfected along with a plasmid containing\": 'along' should be deleted (The phrasing was confusing.)\n\n3. Figure 1C - 'stable' versus 'transient' should be better explained in the figure legend.\n\n4. Legend to Figure 2D: \"Z-scores for computed replicate averages\" should be explained better\n\n5. Figure 3C - if the green set are the fly essential genes, then the red set should read \"yeast essentials\" (top) or \"human essentials\" (bottom), and not \"fly-to-yeast essentials\" (which presumably is the yellow overlap?)\n",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0d9418e7-2754-4103-be15-a3b717617533",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C1",
+      "claim": "phiC31 site-specific recombination mediated by plasmid transfection achieved ~20% integration efficiency in Drosophila S2R+ PT5 cells without selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration efficiency, inferred through flow cytometry (Figure 1B), suggested that phiC31-mediated cassette exchange occurred in ~20% of the cells (even without accounting for incomplete transfection), 123-fold more than the background illegitimate recombination rate observed without phiC31 (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by flow cytometry measurements shown in Figure 1B, which quantified GFP-positive cells after phiC31-mediated recombination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "e7665be4-2bc7-44c7-81ee-d53b5e282d4b",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C2",
+      "claim": "phiC31-mediated integration efficiency was 123-fold higher than background illegitimate recombination rate without phiC31.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration efficiency, inferred through flow cytometry (Figure 1B), suggested that phiC31-mediated cassette exchange occurred in ~20% of the cells (even without accounting for incomplete transfection), 123-fold more than the background illegitimate recombination rate observed without phiC31 (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative flow cytometry data showing integration with and without phiC31 helper plasmid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4feea01d-8ba9-485b-974b-2c6c0c9169c4",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C3",
+      "claim": "pLib6.4 with separated attB sites allowed ~40 fold greater integration efficiency than traditional Drosophila attB40 vectors with adjacent attB sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, pLib6.4, which contains separated attB sites flanking the DNA sequence to be integrated, allowed ~40 fold greater integration efficiency than traditional Drosophila attB40 vectors such as pCa4B (Markstein et al., 2008), in which the attB sites are adjacent and require integration of the entire plasmid (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison data between pLib6.4 and pCa4B vectors, though the data is not shown in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "75de279e-2d5a-4ac9-9190-c89c88fe405d",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C4",
+      "claim": "PT5/Cas9 cells without induction were capable of editing nearly 50% of Dredd alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with an sgRNA targeting the nonessential gene Dredd, PT5/Cas9 cells without induction were capable of editing nearly 50% of Dredd alleles, which was higher than that achieved by repeated rounds of transient transfection with a SpCas9 expression plasmid (Figure 1C) and not improved by copper induction (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by T7E1 editing efficiency assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4cd64f10-8093-40be-b4f0-bbb89e5f9e21",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C5",
+      "claim": "Constitutive Cas9 showed more selective reduction of Rho1 or Diap1 sgRNAs than inducible Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a comparison of dropout efficiencies between the inducible and constitutive Cas9 platforms showed more selective reduction of Rho1 or Diap1 sgRNAs with constitutive rather than inducible Cas9, most likely due to the lower overall editing efficiency from intein-Cas9 as previously reported (Liu et al., 2016) (Figure 1G, Figure 1\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative dropout efficiency data shown in Figure 1G and supplementary figures, with citation to previous work on intein-Cas9 efficiency.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "46f67fe4-71ff-4dac-9b00-dbd1ee9ba39a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C6",
+      "claim": "45 days of passaging is optimal for monitoring sgRNA dropout in pooled screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring Rho1 or Diap1-targeted sgRNAs in the screen pools 30, 45, or 60 days post-transfection showed that 45 days of passaging is optimal (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-course data comparing sgRNA dropout at different time points shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "6e9e40a9-df9e-40da-9788-cdd83d9f5ef3",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C7",
+      "claim": "The genome-wide sgRNA library contains 85,558 sgRNAs targeting 13,928 Drosophila genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The top ranked 6\u20138 sgRNAs per gene (85,558 in total) were chosen and synthesized together on a microarray chip with non-targeting and intergenic negative controls, harvested by PCR, and cloned into pLib6.4 using published methods (Gilbert et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the text describing library construction, with citation to the cloning method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "1b6d240d-693c-4806-a9f1-8e003d81fbf8",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C8",
+      "claim": "1235 genes were essential for cell fitness at a false-discovery rate of 5% in Drosophila S2R+ cells under basal growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal growth conditions, 1235 genes were essential for cell fitness at a false-discovery rate of 5%, representing the highest-resolution fitness gene set yet assembled for Drosophila, including 407 genes which likely duplicated along the vertebrate lineage and whose orthologs were underrepresented in human CRISPR screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genome-wide CRISPR screen data analyzed using MAGeCK and FDR calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "e80975d0-ebb5-4303-bef2-d09a1c286b24",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C9",
+      "claim": "The 1235 fitness genes represent the highest-resolution fitness gene set yet assembled for Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal growth conditions, 1235 genes were essential for cell fitness at a false-discovery rate of 5%, representing the highest-resolution fitness gene set yet assembled for Drosophila, including 407 genes which likely duplicated along the vertebrate lineage and whose orthologs were underrepresented in human CRISPR screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is asserted based on comparison with previous Drosophila screens, particularly RNAi screens.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "97a5854c-765c-4a1c-bf9b-ec219fb69b94",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C10",
+      "claim": "407 fitness genes likely duplicated along the vertebrate lineage and their orthologs were underrepresented in human CRISPR screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal growth conditions, 1235 genes were essential for cell fitness at a false-discovery rate of 5%, representing the highest-resolution fitness gene set yet assembled for Drosophila, including 407 genes which likely duplicated along the vertebrate lineage and whose orthologs were underrepresented in human CRISPR screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative analysis between Drosophila and human CRISPR screens using ortholog mapping.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "6c2ec40f-622b-45ec-8bbc-1b12484fb7a3",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C11",
+      "claim": "Sequential biological replicates of the genome-wide screen showed good gene-level correlation with Pearson's r = 0.65.",
+      "claim_type": "EXPLICIT",
+      "source": "We used MAGeCK (Li et al., 2014) maximum likelihood estimation (MLE) to compute fitness Z-scores for each gene from the log2 fold-changes of individual sgRNAs, which yielded good gene-level correlation between sequential biological replicates (Figure 2C; Pearson's r = 0.65).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 2C using MAGeCK MLE analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "66a72d4d-5c17-4f90-926a-cb92d45db38c",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C12",
+      "claim": "Fitness genes were highly enriched for genes with any expression level of RPKM > 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Because all true fitness genes must be expressed as mRNA, fitness scores were compared with gene expression from S2R+ cells (Celniker et al., 2009) as an orthogonal validation of the CRISPR results (Figure 2D). Fitness genes were highly enriched for genes with any expression level of RPKM > 1 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of CRISPR fitness scores with RNAseq expression data from modENCODE.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "840788e2-140e-4b51-9809-b3dc97caba53",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C13",
+      "claim": "Re-analyzed RNAi-based fitness gene set had a far higher FDR compared with pooled CRISPR screen results, allowing the discovery of only 145 fitness genes at an FDR of 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "We re-analyzed a genome-wide RNAi viability screen in S2R+ cells (Boutros et al., 2004) and removed double-stranded RNA designs with predicted off-targets, which significantly lowered the FDR of the RNAi screen (see Materials and methods). Nevertheless, compared with pooled CRISPR screen results, the re-analyzed RNAi-based fitness gene set still had a far higher FDR, allowing the discovery of only 145 fitness genes at an FDR of 5% or incurring 44% FDR with a fitness gene set of 1235 genes (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by re-analysis of published RNAi data and comparison with CRISPR results shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "ac924441-06b8-4f6c-bb18-221ff9c25d00",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C14",
+      "claim": "CRISPR was better able than RNAi to identify significant fractions of the mitochondrial ribosome, aminoacyl-tRNA ligases, RNA polymerase II, basal transcription factors, RNA exosome, or the replication fork at low FDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas CRISPR and RNAi were both able to detect cytoplasmic ribosomal or proteasomal genes, CRISPR was better able than RNAi to identify significant fractions of the mitochondrial ribosome, aminoacyl-tRNA ligases, RNA polymerase II, basal transcription factors, RNA exosome, or the replication fork at low FDR (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ROC curve analysis comparing CRISPR and RNAi detection of conserved macromolecular complexes shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b6ddeff4-bb2a-4340-83ab-3c6ce202c040",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C15",
+      "claim": "Neither CRISPR nor RNAi detected peroxisome genes, consistent with the observation that cell lines lacking peroxisomes grow normally.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, neither method detected peroxisome genes, consistent with the observation that cell lines lacking peroxisomes grow normally (Goldfischer et al., 1973) (data not shown) (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by negative results in both CRISPR and RNAi screens, with citation to previous work on peroxisome-deficient cell lines.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "982158b7-3b28-4c4e-abef-5f4eada427d4",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C16",
+      "claim": "The fly CRISPR screen had similar sensitivity to genome-wide screens in human cell-lines performed with similar reagent number (GeCKO v2 screens) when compared against top RNAi hits.",
+      "claim_type": "EXPLICIT",
+      "source": "A technical comparison of CRISPR screens in humans and fly cells indicated that the method performs similarly in both systems. First, the fly screen had similar sensitivity (true-positive rate at 5% FDR) to genome-wide screens in human cell-lines performed with similar reagent number (GeCKO v2 screens) when compared against top RNAi hits (Sanjana et al., 2014) (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative analysis of true-positive rates between fly and human CRISPR screens shown in Figure 2G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "1c21b2dc-ad4f-44e0-ac59-e9adac124df1",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C17",
+      "claim": "The position matrix for optimal sgRNA design in Drosophila shows complementary nucleotide biases at 15/21 positions and is broadly consistent with human CRISPR screens.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing sgRNAs that dropped out versus those that failed to dropout for known essential genes, we were able to compute a probability-based position matrix for optimal sgRNA design in Drosophila (Figure 2H). The position matrix shows complementary nucleotide biases at 15/21 positions and is broadly consistent with human CRISPR screens (Doench et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by position matrix analysis shown in Figure 2H and comparison with published human sgRNA design rules.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "f23c74ba-7a1d-4359-a5e5-0137babf4504",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C18",
+      "claim": "Out of the first position of the PAM sequence and the 8 bp seed region before the PAM sequence, 5 of 9 positions are fully consistent while 2 of 9 position are partially consistent with the Doench score.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, out of the first position of the PAM sequence and the 8 bp seed region before the PAM sequence, 5 of 9 positions are fully consistent while 2 of 9 position are partially consistent with the Doench score (Doench et al., 2016) (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by detailed comparison of the Drosophila position matrix with the Doench score shown in Figure 2H.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "a5c00abd-03de-4e41-9556-fbd95b33354e",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C19",
+      "claim": "CRISPR in Drosophila shows no detectable bias towards CNA genes for 97% of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Copy number has been shown to correlate with the CRISPR viability score in some mammalian CRISPR screens, presumably due to induction of greater DNA damage foci for copy-number-amplified (CNA) loci, creating spurious fitness calls (Meyers et al., 2017). By contrast, we find that CRISPR in Drosophila shows no detectable bias towards CNA genes for 97% of the genome (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of copy number effects shown in Figure 2\u2014figure supplement 1B, with citation to mammalian CRISPR screen studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "db0086c8-3237-49c9-8e64-b6bdc65f2e67",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C20",
+      "claim": "Genes with extreme CNA of 8 or more copies (3% of genes) exhibited a bias of ~1.8 fold in the CRISPR screen, but the magnitude of this bias was similar to that seen in an RNAi screen for the same genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes with extreme CNA of 8 or more copies (3% of genes) exhibited a bias of ~1.8 fold in the CRISPR screen, but the magnitude of this bias was similar to that seen in an RNAi screen for the same genes (Figure 2\u2014figure supplement 1B), suggesting that CNA genes in Drosophila cells are enriched for fitness essentiality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative analysis of CNA effects in CRISPR and RNAi screens shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b256b7c6-3961-487d-89b9-1d376326346c",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C21",
+      "claim": "Copy-number correction had no detectable effect on FDR, true-positive rate, or enrichment of major macromolecular complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, copy-number correction had no detectable effect on FDR, true-positive rate, or enrichment of major macromolecular complexes (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated based on analysis that was performed but not shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4b96ba7b-2bfd-4ed4-8245-4fbc03a0e148",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C22",
+      "claim": "At 5% FDR, ~17% of cell-essential genes overlapped with whole-fly essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we compared CRISPR hits to fly genes with lethal alleles annotated in FlyBase after removing genes for which no allele has yet been constructed. At 5% FDR,~17% of cell-essential genes overlapped with whole-fly essential genes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of CRISPR hits with FlyBase lethal allele annotations shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c185d95a-f080-4967-907b-02898ff5a1cc",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C23",
+      "claim": "The overlap between cell-essential and whole-fly essential genes is in a similar range as knockout mouse viability compared with mouse cell-line fitness essentiality (where the overlap is ~27%).",
+      "claim_type": "EXPLICIT",
+      "source": "This overlap is in a similar range as knockout mouse viability compared with mouse cell-line fitness essentiality (where the overlap is ~27%) (Bartha et al., 2018), and may represent different genetic requirements of whole animals versus cell lines or of germline versus somatic cells (Garcia-Bellido and Robbins, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to mouse studies and inference about biological differences between organisms and cell lines.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "ed7c6145-d236-4226-8b4a-51568f2e0000",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C24",
+      "claim": "The fly fitness gene set partially but significantly overlaps with characterized fitness gene sets from yeast and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fly fitness gene set partially but significantly overlaps with characterized fitness gene sets from yeast and human cells (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Venn diagram analysis shown in Figure 3C comparing fitness genes across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "a7127608-c0fb-4660-9ba0-9fcb86d8cae1",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C25",
+      "claim": "An unbiased comparison of gene ontology terms between fly and human fitness genes displays a high degree of correlation (Pearson's r = 0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, an unbiased comparison of gene ontology terms between fly and human fitness genes displays a high degree of correlation (Figure 3D; Pearson's r = 0.56).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology enrichment analysis comparing fly and human fitness genes shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c65922c7-dfd1-4569-8eb5-cdb955438933",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C26",
+      "claim": "35% of conserved human genes contain a fly-to-human paralog.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this framework, 35% of conserved human genes contain a fly-to-human paralog, and 407 fly fitness genes (at 5% FDR) are the orthologs of human genes containing at least one paralog.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ortholog analysis using DIOPT to identify paralog relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "0cfc3f61-5b83-4d7c-8415-5e592a7edf0a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C27",
+      "claim": "407 fly fitness genes (at 5% FDR) are the orthologs of human genes containing at least one paralog.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this framework, 35% of conserved human genes contain a fly-to-human paralog, and 407 fly fitness genes (at 5% FDR) are the orthologs of human genes containing at least one paralog.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ortholog and paralog analysis using DIOPT and comparison with human CRISPR screens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "7ea0fffe-beb8-4972-be2a-02981fde30c3",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C28",
+      "claim": "There is a significant bias against detecting genes that are conserved in flies and have a paralog in the human genome in human cell-line CRISPR screens.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human cell-line CRISPR screen, we noted a significant bias against detecting genes that are conserved in flies and have a paralog in the human genome, and this bias was dramatically elevated for the human orthologs of fly fitness genes (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of human CRISPR screen data showing reduced detection of genes with fly-to-human paralogs, shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "21da1fbf-269b-4c75-afc0-832d8fe8c6ee",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C29",
+      "claim": "The paralog effect extended to a larger dataset generated by the cancer Dependency Map project, in which CRISPR screens were conducted in 436 human cell-lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this paralog effect extended to a larger dataset generated by the cancer Dependency Map project, in which CRISPR screens were conducted in 436 human cell-lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of DepMap data across 436 human cell lines showing similar paralog effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "f1387db6-701f-40f5-b74c-ae8fcbef3a79",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C30",
+      "claim": "Phenotypes have yet to be described for 303 of the 1235 fitness genes identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Drosophila fitness genes we identified are enriched for characterized phenotypes and publication count relative to all genes (data not shown), phenotypes have yet to be described for 303 of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with existing phenotype annotations in databases.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "2cce559b-e0c8-41d6-a772-b7a4a15ecaf9",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C31",
+      "claim": "Among the 303 uncharacterized fitness genes, 251 have human orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these 303 genes, 251 have human orthologs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ortholog mapping analysis provided in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "ffff0ebd-4f9e-4dd9-b778-e0deb255ee7f",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C32",
+      "claim": "At 5% FDR, 62 fitness genes have no sequence similarity outside of flies using DIOPT.",
+      "claim_type": "EXPLICIT",
+      "source": "At 5% FDR, we obtained 62 fitness genes with no sequence similarity outside of flies using DIOPT, and phenotype information exists regarding 25 of these (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ortholog analysis using DIOPT showing fly-specific genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "d01e5755-96cb-462e-9590-648209f403ad",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C33",
+      "claim": "Fly-specific fitness genes include known cell-essential divergent genes such as ver and HipHop, which encode components of the telomerin complex, the putative functional analog of mammalian telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "In confirmation of our methods, these included known cell-essential divergent genes such as ver and HipHop, which encode components of the telomerin complex, the putative functional analog of mammalian telomerase (Raffa et al., 2011; 2010), and Kmn1, Kmn2 and Spc105R, whose gene products may be structural anologs of Ndc80, and Mis12 complex components that interact with centromeric DNA, a proposed driver of speciation (Schittenhelm et al., 2007; 2009; Henikoff et al., 2001), as well as several chromatin-interacting proteins (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by identification of these genes in the screen and citation to previous characterization studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "f799352c-9b80-48f4-936f-26682d9ee502",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C34",
+      "claim": "Fly-specific fitness genes include Kmn1, Kmn2 and Spc105R, whose gene products may be structural analogs of Ndc80, and Mis12 complex components that interact with centromeric DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In confirmation of our methods, these included known cell-essential divergent genes such as ver and HipHop, which encode components of the telomerin complex, the putative functional analog of mammalian telomerase (Raffa et al., 2011; 2010), and Kmn1, Kmn2 and Spc105R, whose gene products may be structural anologs of Ndc80, and Mis12 complex components that interact with centromeric DNA, a proposed driver of speciation (Schittenhelm et al., 2007; 2009; Henikoff et al., 2001), as well as several chromatin-interacting proteins (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by identification of these genes in the screen and citation to previous characterization studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "6d958316-809f-4ebe-a23c-91cbc7a12721",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C35",
+      "claim": "sgRNAs against aop conferred resistance specifically in the context of trametinib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed highly context-specific modes of resistance to each drug. As an illustration, sgRNAs against aop, a transcriptional repressor of the Ras/ERK/ETS pathway (Lai and Rubin, 1992), or the putative intracellular co-factor for rapamycin, FK506-bp2 (Thomson and Johnson, 2010), conferred resistance specifically in the context of tra or RAP, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by context-specific dropout data shown in Figure 4D and citation to previous work on aop function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4c4a0d34-e1f5-4e29-8ec3-586ecdc9ab9e",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C36",
+      "claim": "sgRNAs against FK506-bp2 conferred resistance specifically in the context of rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed highly context-specific modes of resistance to each drug. As an illustration, sgRNAs against aop, a transcriptional repressor of the Ras/ERK/ETS pathway (Lai and Rubin, 1992), or the putative intracellular co-factor for rapamycin, FK506-bp2 (Thomson and Johnson, 2010), conferred resistance specifically in the context of tra or RAP, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by context-specific dropout data shown in Figure 4D and citation to previous work on FK506-bp2 function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "af389fdc-1e3b-486b-941f-6278f56df4ea",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C37",
+      "claim": "Additional established context-specific pathway negative regulators emerged including PTP-ER, which inactivates Erk (rl).",
+      "claim_type": "EXPLICIT",
+      "source": "Additional established context-specific pathway negative regulators emerged: PTP-ER, which inactivates Erk (rl) (Karim and Rubin, 1999) and Pi3K21B and Pten, which antagonize the activity of Pi3K92E (Weinkove et al., 1999; Huang et al., 1999; Goberdhan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by identification of PTP-ER in the drug screens and citation to previous functional characterization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "788705b2-77a7-4cbb-8ad0-48050c4df17f",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C38",
+      "claim": "Additional established context-specific pathway negative regulators emerged including Pi3K21B and Pten, which antagonize the activity of Pi3K92E.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional established context-specific pathway negative regulators emerged: PTP-ER, which inactivates Erk (rl) (Karim and Rubin, 1999) and Pi3K21B and Pten, which antagonize the activity of Pi3K92E (Weinkove et al., 1999; Huang et al., 1999; Goberdhan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by identification of Pi3K21B and Pten in the drug screens and citation to previous functional characterization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "9ce4817f-ebef-4a92-9566-1b0f05436fd5",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C39",
+      "claim": "A network involved in photoreceptor cell differentiation scored most strongly as synergistically lethal with trametinib.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a network involved in photoreceptor cell differentiation scored most strongly as synergistically lethal with tra, possibly because photoreceptor differentiation has been a workhorse phenotype for the characterization of mutants in the Ras/ERK/ETS pathway (Nagaraj and Banerjee, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PPI network analysis of trametinib synergy data and citation to previous work on photoreceptor differentiation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "97b39574-56bc-4032-999b-858f5290b3da",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C40",
+      "claim": "The top scoring PPI network for rapamycin-synergy was one involved in the positive regulation of cell-size.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the top scoring PPI network for RAP-synergy was one involved in the positive regulation of cell-size, a key morphological consequence of upgregulating the PI3K/mTOR pathway (Fingar and Blenis, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PPI network analysis of rapamycin synergy data and citation to previous work on PI3K/mTOR pathway effects.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "153f86aa-9b76-4b5f-aeab-96e824e7feb9",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C41",
+      "claim": "Similar PPI networks involved in mitosis were identified in both trametinib and rapamycin screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, similar PPI networks involved in mitosis was identified in both screens (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PPI network analysis shown in Figure 4F comparing both drug screens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4035fc1b-2448-47c4-8e6e-c70ffc115d8d",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C42",
+      "claim": "The use of lentiviral vectors in insect cells is extremely inefficient possibly due to toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of lentiviral vectors in insect cells is extremely inefficient (unpublished observations) possibly due to toxicity (Qin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on unpublished observations and citation to previous work on lentiviral toxicity in insect cells.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "ecb790ba-2321-472f-af46-595635ccd590",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C43",
+      "claim": "A previous study attempted to use pooled transient transfection for barcoded delivery of a DNA library in Drosophila cells but failed to identify any essential genes using the system.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that a previous study attempted to use pooled transient transfection for barcoded delivery of a DNA library in Drosophila cells but failed to identify any essential genes using the system, most likely due to the lack of a mechanism for retention of the DNA reagents in the cells through extended passaging (Bassett et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to the previous study and inference about the reason for failure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "7b549dcf-2003-45cd-9dd4-16a1eb943d6a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C44",
+      "claim": "Approximately half of the genes in Drosophila lack functional characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half of the genes in Drosophila, arguably the best characterized multicellular genetic model system, lack functional characterization (Ewen-Campen et al., 2017), so the need to develop orthogonal screening approaches is clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study on Drosophila gene characterization status.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b0970392-8733-49d6-9c25-1930eb74684a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C45",
+      "claim": "CRISPR generates complete loss-of-function alleles and causes fewer off-target effects on average compared to RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR generates complete loss-of-function alleles and causes fewer off-target effects on average (Morgens et al., 2016; Evers et al., 2016), and the pooled format allows greater multiplicity and replication for unit cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous comparative studies of CRISPR and RNAi.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "f51a0243-b39d-457a-ae9f-69cf70c7a5c5",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C46",
+      "claim": "The pooled format allows greater multiplicity and replication for unit cost compared to arrayed formats.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR generates complete loss-of-function alleles and causes fewer off-target effects on average (Morgens et al., 2016; Evers et al., 2016), and the pooled format allows greater multiplicity and replication for unit cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about the advantages of pooled versus arrayed screening formats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "3e500656-f7e5-4378-9302-8ee53419fb82",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C47",
+      "claim": "Essential genes are, by definition, a subset of fitness genes.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the abundance of guides present in actively growing populations of cells at different time points during growth, CRISPR screens provide a relative measurement of cell doubling, but because the cause of proliferation reduction is unclear from the screen alone, the screens are said to identify genes necessary for optimal fitness rather than essential genes (Hart et al., 2015). Essential genes, those absolutely required for cell doubling, are, by definition, a subset of fitness genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a definitional statement supported by citation to previous work on fitness gene terminology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "0dc58a4f-7166-40ca-b8c5-97835298423c",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C48",
+      "claim": "RNAi was more likely to identify highly expressed genes, whereas this bias was less prominent in the CRISPR screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Among genes with an RPKM > 1, RNAi was more likely to identify highly expressed genes, whereas this bias was less prominent in the CRISPR screen (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative analysis of expression level effects shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "1886202a-b9e0-4a6c-a4df-b8fef4f8873a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C49",
+      "claim": "A human CRISPR-RNAi screen comparison found a similar inability of RNAi to detect genes of the mitochondrial ribosome whereas it exceeded CRISPR sensitivity in detecting genes of the cytoplasmic ribosome, possibly due to differences in mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a human CRISPR-RNAi screen comparison also found a similar inability of RNAi to detect genes of the mitochondrial ribosome whereas it exceeded CRISPR sensitivity in detecting genes of the cytoplasmic ribosome, possibly due to differences in mRNA stability (Hart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a human screen comparison study and speculation about the mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "70e9a42a-0e8d-42f9-878c-98601c4a3f2c",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C50",
+      "claim": "The position matrix shows complementary nucleotide biases and is broadly consistent with human CRISPR screens, supporting an underlying mechanistic unity of targeting by Cas9 and NHEJ repair between human and fly cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The position matrix shows complementary nucleotide biases at 15/21 positions and is broadly consistent with human CRISPR screens (Doench et al., 2016). Specifically, out of the first position of the PAM sequence and the 8 bp seed region before the PAM sequence, 5 of 9 positions are fully consistent while 2 of 9 position are partially consistent with the Doench score (Doench et al., 2016) (Figure 2H). The analyses support an underlying mechanistic unity of targeting by Cas9 and NHEJ repair between human and fly cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the similarity of position matrices between fly and human CRISPR screens.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "69770e2f-f285-415d-8f3f-3afc98579ba4",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C51",
+      "claim": "CNA genes in Drosophila cells are enriched for fitness essentiality.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes with extreme CNA of 8 or more copies (3% of genes) exhibited a bias of ~1.8 fold in the CRISPR screen, but the magnitude of this bias was similar to that seen in an RNAi screen for the same genes (Figure 2\u2014figure supplement 1B), suggesting that CNA genes in Drosophila cells are enriched for fitness essentiality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that both CRISPR and RNAi show similar biases for high CNA genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "0c2c807e-12e0-4f14-9b81-ed9ffcfd4499",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C52",
+      "claim": "Drosophila CRISPR screens do not have detectable copy-number bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis shows that Drosophila CRISPR screens do not have detectable copy-number bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the CNA analysis showing no bias for 97% of the genome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "66e71fbc-483f-4686-94d5-35db2d0cbf09",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C53",
+      "claim": "The fitness gene set is enriched for essential processes such as translation, transcription, splicing, etc.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed gene ontology enrichment on CRISPR screen hits at 5% FDR. The gene set is enriched for essential processes such as translation, transcription, splicing, etc. and depletion for processes such as chitin metabolism that are necessary in whole flies but not cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology enrichment analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "db87b913-48d8-44d3-a451-c12e34d4f5db",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C54",
+      "claim": "The fitness gene set is depleted for processes such as chitin metabolism that are necessary in whole flies but not cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed gene ontology enrichment on CRISPR screen hits at 5% FDR. The gene set is enriched for essential processes such as translation, transcription, splicing, etc. and depletion for processes such as chitin metabolism that are necessary in whole flies but not cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology enrichment analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "f7c0221c-bd72-45d9-b69c-f57efe7811aa",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C55",
+      "claim": "The overlap between cell-essential and whole-fly essential genes may represent different genetic requirements of whole animals versus cell lines or of germline versus somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This overlap is in a similar range as knockout mouse viability compared with mouse cell-line fitness essentiality (where the overlap is ~27%) (Bartha et al., 2018), and may represent different genetic requirements of whole animals versus cell lines or of germline versus somatic cells (Garcia-Bellido and Robbins, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative inference about the biological meaning of the partial overlap, with citations to supporting literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c53ba9e7-8cd3-4139-9c82-f53176aff6a5",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C56",
+      "claim": "Functional redundancy among closely related genes buffers each of them and makes them invisible in viability screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that functional redundancy among closely related genes buffers each of them and makes them invisible in viability screens, and that Drosophila cells may be more appropriate for screening genes that expanded during the vertebrate lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed explanation for the paralog effect observed in human CRISPR screens.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "275cb1a6-b75f-47b2-896f-ed80be665293",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C57",
+      "claim": "Drosophila cells may be more appropriate for screening genes that expanded during the vertebrate lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that functional redundancy among closely related genes buffers each of them and makes them invisible in viability screens, and that Drosophila cells may be more appropriate for screening genes that expanded during the vertebrate lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed application based on the paralog analysis showing better detection of such genes in fly screens.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "f36cac3f-b2db-485f-a8f5-11d47945c819",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C58",
+      "claim": "Further studies of the 251 conserved uncharacterized fitness genes are likely to provide new insights into conserved, cell essential processes not yet studied in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, further studies of these conserved genes are likely to provide new insights into conserved, cell essential processes not yet studied in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about the potential value of studying these genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "2e49e191-0751-4625-9838-07b2eb52c953",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C59",
+      "claim": "Fly-specific fitness genes present a paradox and may reveal novel species-specific biology or overlooked structural/functional analogs without sequence orthology and may have potential as targets for new insecticides.",
+      "claim_type": "EXPLICIT",
+      "source": "Also of interest are fly-specific fitness genes, as they present a paradox and may reveal novel species-specific biology or overlooked structural/functional analogs without sequence orthology and may have potential as targets for new insecticides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about the potential biological significance and applications of fly-specific fitness genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "2db2e067-d964-4f8e-8854-7e2dc814a8ce",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C60",
+      "claim": "Characterization of the remaining conserved and non-conserved genes is likely to bring new insights into essential gene functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of the remaining conserved and non-conserved genes is likely to bring new insights into essential gene functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about the potential value of future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "73f7280c-5d30-4305-9ad9-cefdb6a8c71f",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C61",
+      "claim": "CRISPR screening in Drosophila cells can reveal context-specific compensatory mechanisms or synergy relevant to major signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results demonstrate that CRISPR screening in Drosophila cells can reveal context-specific compensatory mechanisms or synergy relevant to major signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion based on the drug screening results showing pathway-specific genetic interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "6bb1bc08-f579-4dde-aef1-2df08398f816",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C62",
+      "claim": "The methods and constructs employed are likely to be directly transferable to the large number of existing cultured cell-lines derived from other insects such as mosquitos.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the methods and constructs we employ are likely to be directly transferable to the large number of existing cultured cell-lines derived from other insects such as mosquitos, where they could be used to characterize viral propagation mechanisms in the vectors of human pathogens such as Dengue or Zika.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about the potential transferability and applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "6fdb785e-42db-4a2b-8f63-95d972651e2c",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C63",
+      "claim": "The system should be amenable to adapting any pooled DNA library screening approach to Drosophila or other invertebrate cell lines, such as shRNA knockdown or CRISPR activation/inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The method should be amenable to adapting any pooled DNA library screening approach to Drosophila or other invertebrate cell lines, such as shRNA knockdown (Berns et al., 2004) or CRISPR activation/inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about the potential applications of the phiC31 integration method, with citation to shRNA knockdown.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "d85cc770-ca61-4654-b583-483fd422794e",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C64",
+      "claim": "The pooled approach in mammalian cells has been used extensively to perform RNAi and more recently single guide RNA (sgRNA) screens using CRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled approach in mammalian cells has been used extensively to perform RNAi and more recently single guide RNA (sgRNA) screens using CRISPR/Cas9 (Shalem et al., 2014; Wang et al., 2015; Hart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous mammalian pooled screening studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "3e87337e-09c9-47ee-8d3a-b9e3e6bbe1e4",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C65",
+      "claim": "Genetic loss-of-function arrayed RNAi screens in Drosophila cell lines have provided insight into genes regulating various biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic loss-of-function arrayed RNAi screens in Drosophila cell lines have provided insight into genes regulating various biological processes (Boutros et al., 2004; Bj\u00f6rklund et al., 2006; Kiger et al., 2003; D'Ambrosio and Vale, 2010; Bard et al., 2006; Guo et al., 2008; Hao et al., 2008; Housden et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous Drosophila RNAi screening studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c9a612ff-d43f-4b80-a6b6-008f2fafc79e",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C66",
+      "claim": "Arrayed RNAi screening has drawbacks that limit resolution, including off-target effects and incomplete loss-of-function due to RNAi, and the high cost of reagent multiplicity and replication due to the arrayed format.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach has drawbacks that limit resolution, including off-target effects and incomplete loss-of-function due to RNAi, and the high cost of reagent multiplicity and replication due to the arrayed format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about the limitations of RNAi and arrayed screening formats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "077bd786-9a44-4d56-bdfa-e8b94b905175",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C67",
+      "claim": "Pooled CRISPR may address the major drawbacks of arrayed RNAi: CRISPR generates complete loss-of-function alleles and causes fewer off-target effects on average, and the pooled format allows greater multiplicity and replication for unit cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled CRISPR may address the major drawbacks: CRISPR generates complete loss-of-function alleles and causes fewer off-target effects on average (Morgens et al., 2016; Evers et al., 2016), and the pooled format allows greater multiplicity and replication for unit cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous comparative studies and general knowledge about pooled screening advantages.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c4654836-928b-451a-a6ab-74d230c9ee01",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C68",
+      "claim": "CRISPR screens provide a relative measurement of cell doubling by comparing the abundance of guides present in actively growing populations of cells at different time points during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the abundance of guides present in actively growing populations of cells at different time points during growth, CRISPR screens provide a relative measurement of cell doubling, but because the cause of proliferation reduction is unclear from the screen alone, the screens are said to identify genes necessary for optimal fitness rather than essential genes (Hart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about how CRISPR screens work, with citation to previous work on fitness gene terminology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "9cd28e2d-9d01-4e46-b502-00ab9bc0f7e5",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C69",
+      "claim": "CRISPR screens identify genes necessary for optimal fitness rather than essential genes because the cause of proliferation reduction is unclear from the screen alone.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the abundance of guides present in actively growing populations of cells at different time points during growth, CRISPR screens provide a relative measurement of cell doubling, but because the cause of proliferation reduction is unclear from the screen alone, the screens are said to identify genes necessary for optimal fitness rather than essential genes (Hart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to previous work defining fitness genes versus essential genes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b025d99f-ad70-409c-8777-4d862e4951dd",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C70",
+      "claim": "Both Ras/ERK/ETS and PI3K/mTor pathways are pro-survival pathways that have been extensively mapped through loss-of-function studies in fly tissues and cell-lines.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we performed positive selection screens in the presence of trametinib (tra), an inhibitor of the Ras/ERK/ETS pathway, or rapamycin (RAP), an inhibitor of the PI3K/mTor pathway, with the aim of uncovering known and novel compensatory mechanisms or synergizing loss-of-function mutations. Both pro-survival pathways have been extensively mapped through loss-of-function studies in fly tissues and cell-lines (Friedman and Perrimon, 2007) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to previous work on these pathways in Drosophila.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "0e17a3cf-e8f4-4023-8593-8d62bd917452",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C71",
+      "claim": "Trametinib is an inhibitor of the Ras/ERK/ETS pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we performed positive selection screens in the presence of trametinib (tra), an inhibitor of the Ras/ERK/ETS pathway, or rapamycin (RAP), an inhibitor of the PI3K/mTor pathway, with the aim of uncovering known and novel compensatory mechanisms or synergizing loss-of-function mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about trametinib's mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b1183607-3af9-4044-b0a1-9aca01cef3b2",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C72",
+      "claim": "Rapamycin is an inhibitor of the PI3K/mTor pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we performed positive selection screens in the presence of trametinib (tra), an inhibitor of the Ras/ERK/ETS pathway, or rapamycin (RAP), an inhibitor of the PI3K/mTor pathway, with the aim of uncovering known and novel compensatory mechanisms or synergizing loss-of-function mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about rapamycin's mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "26004645-265b-4b90-a125-d3121be8fa3b",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C73",
+      "claim": "aop is a transcriptional repressor of the Ras/ERK/ETS pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "As an illustration, sgRNAs against aop, a transcriptional repressor of the Ras/ERK/ETS pathway (Lai and Rubin, 1992), or the putative intracellular co-factor for rapamycin, FK506-bp2 (Thomson and Johnson, 2010), conferred resistance specifically in the context of tra or RAP, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work characterizing aop function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b6311cec-6d83-4110-989b-8a7ca59dd716",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C74",
+      "claim": "FK506-bp2 is the putative intracellular co-factor for rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "As an illustration, sgRNAs against aop, a transcriptional repressor of the Ras/ERK/ETS pathway (Lai and Rubin, 1992), or the putative intracellular co-factor for rapamycin, FK506-bp2 (Thomson and Johnson, 2010), conferred resistance specifically in the context of tra or RAP, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on FK506-bp2 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4de0a1d5-1af2-466b-855c-3c286b25409a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C75",
+      "claim": "PTP-ER inactivates Erk (rl).",
+      "claim_type": "EXPLICIT",
+      "source": "Additional established context-specific pathway negative regulators emerged: PTP-ER, which inactivates Erk (rl) (Karim and Rubin, 1999) and Pi3K21B and Pten, which antagonize the activity of Pi3K92E (Weinkove et al., 1999; Huang et al., 1999; Goberdhan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on PTP-ER function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "acdf01e5-5154-4860-9d8f-365740129c67",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C76",
+      "claim": "Pi3K21B and Pten antagonize the activity of Pi3K92E.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional established context-specific pathway negative regulators emerged: PTP-ER, which inactivates Erk (rl) (Karim and Rubin, 1999) and Pi3K21B and Pten, which antagonize the activity of Pi3K92E (Weinkove et al., 1999; Huang et al., 1999; Goberdhan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work on Pi3K21B and Pten function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "3bbe140c-2776-4c9c-bdb1-9a73870d82de",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C77",
+      "claim": "Photoreceptor differentiation has been a workhorse phenotype for the characterization of mutants in the Ras/ERK/ETS pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a network involved in photoreceptor cell differentiation scored most strongly as synergistically lethal with tra, possibly because photoreceptor differentiation has been a workhorse phenotype for the characterization of mutants in the Ras/ERK/ETS pathway (Nagaraj and Banerjee, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on photoreceptor differentiation and the Ras/ERK/ETS pathway.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "cecb042a-7958-4284-9244-c59033edd48b",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C78",
+      "claim": "Positive regulation of cell-size is a key morphological consequence of upregulating the PI3K/mTOR pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the top scoring PPI network for RAP-synergy was one involved in the positive regulation of cell-size, a key morphological consequence of upgregulating the PI3K/mTOR pathway (Fingar and Blenis, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on PI3K/mTOR pathway effects on cell size.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "d088edcb-75ce-4383-a38f-bd8e403ba5d3",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C79",
+      "claim": "Cell lines lacking peroxisomes grow normally.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, neither method detected peroxisome genes, consistent with the observation that cell lines lacking peroxisomes grow normally (Goldfischer et al., 1973) (data not shown) (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on peroxisome-deficient cell lines.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "da8dfc07-bdbd-4358-a616-70c762e1c073",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C80",
+      "claim": "CRISPR screening technologies have illuminated the functions of uncharacterized genes and provided a straightforward, cost-effective pipeline to evaluate gene function in different contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR screening technologies have illuminated the functions of uncharacterized genes and provided a straightforward, cost-effective pipeline to evaluate gene function in different contexts (Doench, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review on CRISPR screening technologies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c20005dd-7529-4895-9989-25722da01586",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C81",
+      "claim": "The benefits of CRISPR screening have been inaccessible for Drosophila and other insects because the delivery of highly multiplexed DNA libraries has thus far required lentiviral transduction, a process that fails to produce transformed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the benefits of this approach have been inaccessible for Drosophila and other insects because the delivery of highly multiplexed DNA libraries has thus far required lentiviral transduction, a process that fails to produce transformed cells (unpublished).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on unpublished observations about lentiviral transduction failure in insect cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "c120bd48-f7c1-4378-9b2d-655182c98580",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C82",
+      "claim": "Multiplexed DNA delivery by transfection followed by site-specific recombination is an effective alternative strategy to lentiviral transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that multiplexed DNA delivery by transfection followed by site-specific recombination is an effective alternative strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main methodological contribution demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "d712c668-cab8-4f80-af0c-df931578cfe7",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C83",
+      "claim": "Most mammalian screens have been conducted with fewer than 30 doublings.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, our CRISPR screens were conducted after approximately 45 doublings (basal essentiality) or 30 doublings (context-specific screens), while most mammalian screens have been conducted with fewer than 30 doublings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about mammalian CRISPR screening protocols.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "71439217-e304-409b-9235-f23f431c46c5",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C84",
+      "claim": "The longer doubling time required for Drosophila screens could possibly be due to efficiency differences of the CRISPR systems encoded in the two systems or because of the high ploidy of S2R+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This could possibly due to efficiency differences of the CRISPR systems encoded in the two systems or because of the high ploidy of S2R+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential causes for the longer screening time in Drosophila.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "34399d4d-2897-4ed3-bad3-83da08fda801",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C85",
+      "claim": "The introduction of systematic knockdown and knockout approaches have greatly reduced false-positive assertions in human cell-line loss-of-function studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of systematic knockdown and knockout approaches have greatly reduced false-positive assertions in human cell-line loss-of-function studies, but equally important is knowing what genes are missed by these approaches and providing alternative screening strategies that can target them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about the impact of systematic screening approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "43088d0f-6815-4fa7-aa01-53b8110299c0",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C86",
+      "claim": "Paralogous genes with redundant functions are 'invisible' in single-gene screens and dramatically reduce search space in gene-by-gene screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Of critical importance are paralogous genes with redundant functions, i.e., the presence of one paralog buffers against the loss of another (Ewen-Campen et al., 2017). Although relevant to human disease (Dickerson and Robertson, 2012), these genes are 'invisible' in singe-gene screens and dramatically reduce search space in gene-by-gene screens (Ewen-Campen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work on genetic redundancy and its effects on screening.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "d3659a70-c08a-46af-9059-03cc732f6c1a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C87",
+      "claim": "Paralogous genes with redundant functions are relevant to human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Of critical importance are paralogous genes with redundant functions, i.e., the presence of one paralog buffers against the loss of another (Ewen-Campen et al., 2017). Although relevant to human disease (Dickerson and Robertson, 2012), these genes are 'invisible' in singe-gene screens and dramatically reduce search space in gene-by-gene screens (Ewen-Campen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on paralogs and human disease.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "844c86a1-a796-44c6-a465-d9edbb375799",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C88",
+      "claim": "Human CRISPR screens were less able to detect the fly orthologs of fitness essential genes when those genes had paralogs relative to the fly genome.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared human and fly CRISPR screens, human CRISPR screens were less able to detect the fly orthologs of fitness essential genes when those genes had paralogs relative to the fly genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative analysis of human and fly CRISPR screens with respect to paralog effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b81fc344-9420-4c82-9df7-05a1f43bf6f3",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C89",
+      "claim": "Parallel Drosophila and human screens is one approach to offset genetic redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the use of parallel Drosophila and human screens as one approach to offset genetic redundancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed strategy based on the paralog analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4782e62c-c312-4c0f-8822-d1e5aecc0f6c",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C90",
+      "claim": "The strategy reported can be used with numerous other high-throughput screening modalities including CRISPR activation, CRISPR inhibition, CRISPR base-editing, shRNA knockdown, cDNA overexpression, perturb-SEQ, and combinatorial approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to CRISPR knockout, the strategy we report can be used with numerous other high-throughput screening modalities which were previously not possible in Drosophila, including CRISPR activation, CRIPSR inhibition, CRISPR base-editing, shRNA knockdown, cDNA overexpression, perturb-SEQ, and combinatorial approaches for multigene suppression/activation (Doench, 2018; Najm et al., 2018; Shen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications, with citations to various screening modalities.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "4c067a3f-347b-4187-82ae-bf54bc590140",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "claim_id": "C91",
+      "claim": "The methods could be used to characterize viral propagation mechanisms in mosquito vectors of human pathogens such as Dengue or Zika.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the methods and constructs we employ are likely to be directly transferable to the large number of existing cultured cell-lines derived from other insects such as mosquitos, where they could be used to characterize viral propagation mechanisms in the vectors of human pathogens such as Dengue or Zika.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential applications in mosquito cell lines.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b194e6cb-201d-41ff-a5a8-1649337c8cd5",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "phiC31 site-specific recombination mediated by plasmid transfection achieved ~20% integration efficiency in Drosophila S2R+ PT5 cells without selection, which was 123-fold higher than background illegitimate recombination. The pLib6.4 vector with separated attB sites showed ~40-fold greater integration efficiency than traditional adjacent attB40 vectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are supported by flow cytometry data (Figure 1B) showing quantitative integration efficiency measurements. The 123-fold improvement over background (C2) and comparison with traditional vectors (C3) provide converging evidence for the effectiveness of the phiC31 integration approach, though C3 notes data not shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "8ba719b7-4ec8-4c37-a047-3f7ee015394f",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PT5/Cas9 cells with constitutive Cas9 expression achieved nearly 50% editing efficiency of Dredd alleles without induction, showed more selective sgRNA dropout than inducible Cas9 systems, and optimal dropout monitoring occurred at 45 days of passaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 are supported by T7E1 editing assays (Figure 1C), comparative dropout efficiency data (Figure 1G), and time-course optimization (Figure 1F). The data demonstrate that constitutive Cas9 outperforms both transient transfection and inducible systems for pooled screening applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "2e38f932-d43b-4b66-8b66-cf6ceb00252f",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A genome-wide sgRNA library containing 85,558 sgRNAs targeting 13,928 Drosophila genes identified 1235 fitness genes at 5% FDR under basal growth conditions, representing the highest-resolution fitness gene set yet assembled for Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 are supported by library construction details and MAGeCK analysis with FDR calculations. The assertion of 'highest-resolution' (C9) is supported by comparison with previous RNAi screens showing superior performance. However, the claim relies on inference from comparative data rather than explicit benchmarking against all prior Drosophila screens.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "6363efb0-1861-40a1-820a-1e7ef4368287",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "407 fly fitness genes are orthologs of human genes containing paralogs that were underrepresented in human CRISPR screens. Analysis showed significant bias against detecting genes with fly-to-human paralogs in human cell-line CRISPR screens, an effect that extended to 436 cell lines in the cancer Dependency Map project.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C26-C29 are supported by ortholog analysis using DIOPT and comparative analysis of human CRISPR screen data (Figure 3F). The paralog effect is demonstrated across multiple datasets including single cell lines and DepMap. The analysis provides strong evidence for functional redundancy masking fitness genes in human screens.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "dfb3f6ab-c598-4c78-8b03-e571678b1cf8",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sequential biological replicates of the genome-wide screen showed good gene-level correlation (Pearson's r = 0.65), and fitness genes were highly enriched for genes with expression level RPKM > 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 are supported by correlation analysis (Figure 2C) and comparison with RNAseq data from modENCODE (Figure 2D). The correlation coefficient of 0.65 is described as 'good' but represents moderate correlation. The enrichment for expressed genes (C12) provides orthogonal validation of screen quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b1cd348d-b039-4b4a-a321-2868f876c78f",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Re-analyzed RNAi screens had far higher FDR than CRISPR screens, identifying only 145 fitness genes at 5% FDR. CRISPR was better able than RNAi to identify components of mitochondrial ribosome, aminoacyl-tRNA ligases, RNA polymerase II, basal transcription factors, RNA exosome, and replication fork at low FDR. RNAi showed bias toward highly expressed genes that was less prominent in CRISPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C48 are supported by re-analysis of published RNAi data (Boutros et al., 2004) and ROC curve analysis (Figure 2F). The comparative analysis demonstrates superior performance of CRISPR for detecting specific macromolecular complexes and reduced expression-level bias. The re-analysis methodology is described but some details of off-target filtering are not fully specified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "d85acbbd-31f6-4b10-96f4-c6b767dda96e",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Neither CRISPR nor RNAi detected peroxisome genes, consistent with the observation that cell lines lacking peroxisomes grow normally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C79 are supported by negative results in both screening methods and citation to previous work (Goldfischer et al., 1973) on peroxisome-deficient cell lines. This serves as an appropriate negative control demonstrating that both methods correctly fail to identify genes for non-essential organelles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "acc2fc09-07d4-4c61-a7f9-8e390b1dc032",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The fly CRISPR screen had similar sensitivity to human GeCKO v2 screens when compared against RNAi hits. The position matrix for optimal sgRNA design in Drosophila shows complementary nucleotide biases at 15/21 positions, with 5 of 9 seed region positions fully consistent and 2 of 9 partially consistent with the Doench score, supporting mechanistic unity of Cas9 targeting between human and fly cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18, C50 are supported by comparative true-positive rate analysis (Figure 2G) and position matrix analysis (Figure 2H). The similarity to human screens in both sensitivity and sgRNA design rules provides strong evidence for technical comparability. However, the inference of 'mechanistic unity' (C50) extends beyond what the data directly demonstrate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "cf1c3a2c-7b5e-4e35-930f-b8b03a71b8cd",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRISPR in Drosophila shows no detectable bias towards copy-number-amplified (CNA) genes for 97% of the genome. Genes with extreme CNA (8+ copies, 3% of genes) exhibited ~1.8-fold bias similar to RNAi screens, suggesting CNA genes in Drosophila are enriched for fitness essentiality. Copy-number correction had no detectable effect on FDR, true-positive rate, or complex enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21, C51-C52 are supported by CNA analysis (Figure 2\u2014figure supplement 1B) comparing CRISPR and RNAi. The finding that both methods show similar bias for high-CNA genes supports the interpretation that this reflects biological enrichment rather than technical artifact. However, C21 states analysis was performed but 'not shown,' limiting independent verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "67b1c58f-0aef-4c17-b791-cde2f0e64a48",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "At 5% FDR, ~17% of cell-essential genes overlapped with whole-fly essential genes, similar to the ~27% overlap between knockout mouse viability and mouse cell-line fitness essentiality. This may represent different genetic requirements of whole animals versus cell lines or germline versus somatic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23, C55 are supported by comparison with FlyBase annotations (Figure 3B) and citation to mouse studies (Bartha et al., 2018). The partial overlap is well-documented, though the interpretation (C55) is speculative. The comparison to mouse data provides appropriate context for the observed overlap rate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "8a4704d6-bdd8-4874-b202-ed2d84b5e5ea",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The fly fitness gene set partially but significantly overlaps with fitness gene sets from yeast and human cells, and gene ontology terms between fly and human fitness genes show high correlation (Pearson's r = 0.56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by Venn diagram analysis (Figure 3C) and gene ontology enrichment comparison (Figure 3D). The correlation coefficient of 0.56 indicates moderate correlation. The partial overlap across species is expected given evolutionary divergence and demonstrates conservation of core fitness processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "a2b80421-4fdb-49f3-839c-7b4b8318e12a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "303 of the 1235 fitness genes lack phenotype descriptions, including 251 with human orthologs and 62 fly-specific genes. Fly-specific fitness genes include known cell-essential divergent genes such as ver, HipHop (telomerin complex components), and Kmn1, Kmn2, Spc105R (centromeric DNA-interacting proteins).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by comparison with phenotype databases and ortholog analysis using DIOPT. The identification of known divergent essential genes (C33-C34) validates the screen's ability to detect fly-specific fitness genes. The characterization status is based on existing annotations, though 'uncharacterized' may be subjective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "19076272-6b67-454b-89fa-0a4846325971",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Context-specific drug resistance screens identified pathway-specific genetic interactions: sgRNAs against aop conferred resistance to trametinib, sgRNAs against FK506-bp2 conferred resistance to rapamycin, and established negative regulators PTP-ER (Erk pathway), Pi3K21B and Pten (PI3K pathway) emerged as context-specific resistance genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by context-specific dropout data (Figure 4D) and citations to previous functional characterization. The identification of known pathway regulators validates the screening approach. The data demonstrate clear pathway specificity, though the number of replicates and statistical testing details are not fully specified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "0b84b13e-7af8-4cee-b682-d37143b9344a",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PPI network analysis identified pathway-specific synergistic interactions: photoreceptor cell differentiation network with trametinib, positive regulation of cell-size network with rapamycin, and mitosis networks in both screens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by PPI network analysis (Figure 4F) using COMPLEAT and citations to previous work on pathway phenotypes. The identification of biologically relevant networks provides functional context for the genetic interactions. However, the interpretation relies on inference about why certain networks emerge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "a640ce0b-e541-4607-9548-167577e7643e",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The fitness gene set is enriched for essential processes such as translation, transcription, and splicing, and depleted for processes such as chitin metabolism that are necessary in whole flies but not cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by gene ontology enrichment analysis (Figure 3A). The enrichment for core cellular processes and depletion for organism-specific processes is expected and validates the biological relevance of the fitness gene set. The analysis appropriately distinguishes cell-autonomous from organism-level requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "3ecfa2ea-6e84-49ab-ba0b-c5c88797e0c1",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Functional redundancy among closely related genes buffers each of them and makes them invisible in viability screens. Human CRISPR screens were less able to detect fly orthologs of fitness genes when those genes had paralogs. This supports using parallel Drosophila and human screens to offset genetic redundancy, as Drosophila cells may be more appropriate for screening genes that expanded during vertebrate lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C88-C89 are supported by comparative analysis of paralog effects in human and fly screens. The proposed explanation (C56) and application (C57, C89) are logical inferences from the data but represent interpretations rather than direct observations. The strategy is reasonable but requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "31220d96-d21c-4161-9e05-ec07e7b32cff",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CRISPR screening in Drosophila cells can reveal context-specific compensatory mechanisms or synergy relevant to major signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is a summary conclusion supported by the drug screening results (C35-C41) showing pathway-specific genetic interactions. The demonstration of context-specific resistance and synergy validates the approach for studying signaling pathway genetics. This represents a key application of the screening platform.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "a3cbf2f6-ce3f-4d81-80e2-a70dc87f2750",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Multiplexed DNA delivery by transfection followed by site-specific recombination is an effective alternative strategy to lentiviral transduction for pooled screening in Drosophila cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is the central methodological conclusion supported by the entire study, including integration efficiency data (C1-C3), successful genome-wide screening (C7-C9), and context-specific applications (C35-C41). The method successfully overcomes the limitation of lentiviral transduction failure in insect cells and enables pooled CRISPR screening.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "d95b1048-b5e4-459c-bf05-826ac99a144f",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The use of lentiviral vectors in insect cells is extremely inefficient, possibly due to toxicity, and this has made CRISPR screening inaccessible for Drosophila because delivery of multiplexed DNA libraries has required lentiviral transduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42 and C81 are based on unpublished observations and citation to previous work (Qin et al., 2010) on lentiviral toxicity. While the failure of lentiviral transduction in insect cells is stated as fact, the supporting evidence is not presented in the manuscript. The claim about toxicity (C42) is explicitly speculative ('possibly due to').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "578fdd3e-d6f7-466c-81e2-36d0f3879f77",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "A previous study attempted pooled transient transfection for barcoded DNA library delivery in Drosophila cells but failed to identify essential genes, most likely due to lack of DNA reagent retention through extended passaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by citation to Bassett et al., 2015, though the interpretation of failure mechanism is inference. This provides important context for why the phiC31 integration approach represents an advance over previous attempts at pooled screening in Drosophila.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "b8540043-ab3c-4d78-b486-6d20761ec082",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study proposes multiple future applications and speculates on the potential value of studying uncharacterized fitness genes, fly-specific genes, transferability to other insect cell lines, and adaptation to other screening modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C60, C62-C63, C90-C91 are explicitly speculative statements about potential future work and applications. While these are reasonable proposals based on the demonstrated technology, they represent hypotheses rather than results. These claims cannot be evaluated as supported or unsupported as they are forward-looking statements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "1b91e30d-a36f-4a87-9d49-312eae58132c",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The manuscript includes numerous background claims about prior work, general knowledge, and established facts regarding CRISPR screening, RNAi limitations, Drosophila genetics, signaling pathways, and screening methodology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C64-C87 are background knowledge claims supported by appropriate citations to previous literature. These establish context for the study but do not represent novel findings. The citations appear appropriate and the general knowledge claims are consistent with the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    },
+    {
+      "id": "223de9e3-57d2-4cd4-a66d-fd05e0c686c4",
+      "content_id": "4b014815-82e2-4ced-8092-d1baec2c0309",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The manuscript includes speculative mechanistic explanations for observed phenomena, including mRNA stability differences between cytoplasmic and mitochondrial ribosomes in RNAi screens, and potential reasons for longer doubling times in Drosophila screens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49 and C84 are explicitly speculative ('possibly due to') mechanistic explanations. C49 cites a human study (Hart et al., 2015) showing similar patterns but the mechanism remains speculative. C84 proposes potential explanations for observed differences but without supporting data. These represent reasonable hypotheses but are not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:53.942406Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0d9418e7-2754-4103-be15-a3b717617533",
+      "result_id": "b194e6cb-201d-41ff-a5a8-1649337c8cd5"
+    },
+    {
+      "claim_id": "e7665be4-2bc7-44c7-81ee-d53b5e282d4b",
+      "result_id": "b194e6cb-201d-41ff-a5a8-1649337c8cd5"
+    },
+    {
+      "claim_id": "4feea01d-8ba9-485b-974b-2c6c0c9169c4",
+      "result_id": "b194e6cb-201d-41ff-a5a8-1649337c8cd5"
+    },
+    {
+      "claim_id": "75de279e-2d5a-4ac9-9190-c89c88fe405d",
+      "result_id": "8ba719b7-4ec8-4c37-a047-3f7ee015394f"
+    },
+    {
+      "claim_id": "4cd64f10-8093-40be-b4f0-bbb89e5f9e21",
+      "result_id": "8ba719b7-4ec8-4c37-a047-3f7ee015394f"
+    },
+    {
+      "claim_id": "46f67fe4-71ff-4dac-9b00-dbd1ee9ba39a",
+      "result_id": "8ba719b7-4ec8-4c37-a047-3f7ee015394f"
+    },
+    {
+      "claim_id": "6e9e40a9-df9e-40da-9788-cdd83d9f5ef3",
+      "result_id": "2e38f932-d43b-4b66-8b66-cf6ceb00252f"
+    },
+    {
+      "claim_id": "1b6d240d-693c-4806-a9f1-8e003d81fbf8",
+      "result_id": "2e38f932-d43b-4b66-8b66-cf6ceb00252f"
+    },
+    {
+      "claim_id": "e80975d0-ebb5-4303-bef2-d09a1c286b24",
+      "result_id": "2e38f932-d43b-4b66-8b66-cf6ceb00252f"
+    },
+    {
+      "claim_id": "97a5854c-765c-4a1c-bf9b-ec219fb69b94",
+      "result_id": "6363efb0-1861-40a1-820a-1e7ef4368287"
+    },
+    {
+      "claim_id": "c65922c7-dfd1-4569-8eb5-cdb955438933",
+      "result_id": "6363efb0-1861-40a1-820a-1e7ef4368287"
+    },
+    {
+      "claim_id": "0cfc3f61-5b83-4d7c-8415-5e592a7edf0a",
+      "result_id": "6363efb0-1861-40a1-820a-1e7ef4368287"
+    },
+    {
+      "claim_id": "7ea0fffe-beb8-4972-be2a-02981fde30c3",
+      "result_id": "6363efb0-1861-40a1-820a-1e7ef4368287"
+    },
+    {
+      "claim_id": "21da1fbf-269b-4c75-afc0-832d8fe8c6ee",
+      "result_id": "6363efb0-1861-40a1-820a-1e7ef4368287"
+    },
+    {
+      "claim_id": "6c2ec40f-622b-45ec-8bbc-1b12484fb7a3",
+      "result_id": "dfb3f6ab-c598-4c78-8b03-e571678b1cf8"
+    },
+    {
+      "claim_id": "66a72d4d-5c17-4f90-926a-cb92d45db38c",
+      "result_id": "dfb3f6ab-c598-4c78-8b03-e571678b1cf8"
+    },
+    {
+      "claim_id": "840788e2-140e-4b51-9809-b3dc97caba53",
+      "result_id": "b1cd348d-b039-4b4a-a321-2868f876c78f"
+    },
+    {
+      "claim_id": "ac924441-06b8-4f6c-bb18-221ff9c25d00",
+      "result_id": "b1cd348d-b039-4b4a-a321-2868f876c78f"
+    },
+    {
+      "claim_id": "0dc58a4f-7166-40ca-b8c5-97835298423c",
+      "result_id": "b1cd348d-b039-4b4a-a321-2868f876c78f"
+    },
+    {
+      "claim_id": "b6ddeff4-bb2a-4340-83ab-3c6ce202c040",
+      "result_id": "d85acbbd-31f6-4b10-96f4-c6b767dda96e"
+    },
+    {
+      "claim_id": "d088edcb-75ce-4383-a38f-bd8e403ba5d3",
+      "result_id": "d85acbbd-31f6-4b10-96f4-c6b767dda96e"
+    },
+    {
+      "claim_id": "982158b7-3b28-4c4e-abef-5f4eada427d4",
+      "result_id": "acc2fc09-07d4-4c61-a7f9-8e390b1dc032"
+    },
+    {
+      "claim_id": "1c21b2dc-ad4f-44e0-ac59-e9adac124df1",
+      "result_id": "acc2fc09-07d4-4c61-a7f9-8e390b1dc032"
+    },
+    {
+      "claim_id": "f23c74ba-7a1d-4359-a5e5-0137babf4504",
+      "result_id": "acc2fc09-07d4-4c61-a7f9-8e390b1dc032"
+    },
+    {
+      "claim_id": "70e9a42a-0e8d-42f9-878c-98601c4a3f2c",
+      "result_id": "acc2fc09-07d4-4c61-a7f9-8e390b1dc032"
+    },
+    {
+      "claim_id": "a5c00abd-03de-4e41-9556-fbd95b33354e",
+      "result_id": "cf1c3a2c-7b5e-4e35-930f-b8b03a71b8cd"
+    },
+    {
+      "claim_id": "db0086c8-3237-49c9-8e64-b6bdc65f2e67",
+      "result_id": "cf1c3a2c-7b5e-4e35-930f-b8b03a71b8cd"
+    },
+    {
+      "claim_id": "b256b7c6-3961-487d-89b9-1d376326346c",
+      "result_id": "cf1c3a2c-7b5e-4e35-930f-b8b03a71b8cd"
+    },
+    {
+      "claim_id": "69770e2f-f285-415d-8f3f-3afc98579ba4",
+      "result_id": "cf1c3a2c-7b5e-4e35-930f-b8b03a71b8cd"
+    },
+    {
+      "claim_id": "0c2c807e-12e0-4f14-9b81-ed9ffcfd4499",
+      "result_id": "cf1c3a2c-7b5e-4e35-930f-b8b03a71b8cd"
+    },
+    {
+      "claim_id": "4b96ba7b-2bfd-4ed4-8245-4fbc03a0e148",
+      "result_id": "67b1c58f-0aef-4c17-b791-cde2f0e64a48"
+    },
+    {
+      "claim_id": "c185d95a-f080-4967-907b-02898ff5a1cc",
+      "result_id": "67b1c58f-0aef-4c17-b791-cde2f0e64a48"
+    },
+    {
+      "claim_id": "f7c0221c-bd72-45d9-b69c-f57efe7811aa",
+      "result_id": "67b1c58f-0aef-4c17-b791-cde2f0e64a48"
+    },
+    {
+      "claim_id": "ed7c6145-d236-4226-8b4a-51568f2e0000",
+      "result_id": "8a4704d6-bdd8-4874-b202-ed2d84b5e5ea"
+    },
+    {
+      "claim_id": "a7127608-c0fb-4660-9ba0-9fcb86d8cae1",
+      "result_id": "8a4704d6-bdd8-4874-b202-ed2d84b5e5ea"
+    },
+    {
+      "claim_id": "f1387db6-701f-40f5-b74c-ae8fcbef3a79",
+      "result_id": "a2b80421-4fdb-49f3-839c-7b4b8318e12a"
+    },
+    {
+      "claim_id": "2cce559b-e0c8-41d6-a772-b7a4a15ecaf9",
+      "result_id": "a2b80421-4fdb-49f3-839c-7b4b8318e12a"
+    },
+    {
+      "claim_id": "ffff0ebd-4f9e-4dd9-b778-e0deb255ee7f",
+      "result_id": "a2b80421-4fdb-49f3-839c-7b4b8318e12a"
+    },
+    {
+      "claim_id": "d01e5755-96cb-462e-9590-648209f403ad",
+      "result_id": "a2b80421-4fdb-49f3-839c-7b4b8318e12a"
+    },
+    {
+      "claim_id": "f799352c-9b80-48f4-936f-26682d9ee502",
+      "result_id": "a2b80421-4fdb-49f3-839c-7b4b8318e12a"
+    },
+    {
+      "claim_id": "6d958316-809f-4ebe-a23c-91cbc7a12721",
+      "result_id": "19076272-6b67-454b-89fa-0a4846325971"
+    },
+    {
+      "claim_id": "4c4a0d34-e1f5-4e29-8ec3-586ecdc9ab9e",
+      "result_id": "19076272-6b67-454b-89fa-0a4846325971"
+    },
+    {
+      "claim_id": "af389fdc-1e3b-486b-941f-6278f56df4ea",
+      "result_id": "19076272-6b67-454b-89fa-0a4846325971"
+    },
+    {
+      "claim_id": "788705b2-77a7-4cbb-8ad0-48050c4df17f",
+      "result_id": "19076272-6b67-454b-89fa-0a4846325971"
+    },
+    {
+      "claim_id": "9ce4817f-ebef-4a92-9566-1b0f05436fd5",
+      "result_id": "0b84b13e-7af8-4cee-b682-d37143b9344a"
+    },
+    {
+      "claim_id": "97b39574-56bc-4032-999b-858f5290b3da",
+      "result_id": "0b84b13e-7af8-4cee-b682-d37143b9344a"
+    },
+    {
+      "claim_id": "153f86aa-9b76-4b5f-aeab-96e824e7feb9",
+      "result_id": "0b84b13e-7af8-4cee-b682-d37143b9344a"
+    },
+    {
+      "claim_id": "66e71fbc-483f-4686-94d5-35db2d0cbf09",
+      "result_id": "a640ce0b-e541-4607-9548-167577e7643e"
+    },
+    {
+      "claim_id": "db87b913-48d8-44d3-a451-c12e34d4f5db",
+      "result_id": "a640ce0b-e541-4607-9548-167577e7643e"
+    },
+    {
+      "claim_id": "c53ba9e7-8cd3-4139-9c82-f53176aff6a5",
+      "result_id": "3ecfa2ea-6e84-49ab-ba0b-c5c88797e0c1"
+    },
+    {
+      "claim_id": "275cb1a6-b75f-47b2-896f-ed80be665293",
+      "result_id": "3ecfa2ea-6e84-49ab-ba0b-c5c88797e0c1"
+    },
+    {
+      "claim_id": "844c86a1-a796-44c6-a465-d9edbb375799",
+      "result_id": "3ecfa2ea-6e84-49ab-ba0b-c5c88797e0c1"
+    },
+    {
+      "claim_id": "b81fc344-9420-4c82-9df7-05a1f43bf6f3",
+      "result_id": "3ecfa2ea-6e84-49ab-ba0b-c5c88797e0c1"
+    },
+    {
+      "claim_id": "73f7280c-5d30-4305-9ad9-cefdb6a8c71f",
+      "result_id": "31220d96-d21c-4161-9e05-ec07e7b32cff"
+    },
+    {
+      "claim_id": "c120bd48-f7c1-4378-9b2d-655182c98580",
+      "result_id": "a3cbf2f6-ce3f-4d81-80e2-a70dc87f2750"
+    },
+    {
+      "claim_id": "4035fc1b-2448-47c4-8e6e-c70ffc115d8d",
+      "result_id": "d95b1048-b5e4-459c-bf05-826ac99a144f"
+    },
+    {
+      "claim_id": "c20005dd-7529-4895-9989-25722da01586",
+      "result_id": "d95b1048-b5e4-459c-bf05-826ac99a144f"
+    },
+    {
+      "claim_id": "ecb790ba-2321-472f-af46-595635ccd590",
+      "result_id": "578fdd3e-d6f7-466c-81e2-36d0f3879f77"
+    },
+    {
+      "claim_id": "f36cac3f-b2db-485f-a8f5-11d47945c819",
+      "result_id": "b8540043-ab3c-4d78-b486-6d20761ec082"
+    },
+    {
+      "claim_id": "2e49e191-0751-4625-9838-07b2eb52c953",
+      "result_id": "b8540043-ab3c-4d78-b486-6d20761ec082"
+    },
+    {
+      "claim_id": "2db2e067-d964-4f8e-8854-7e2dc814a8ce",
+      "result_id": "b8540043-ab3c-4d78-b486-6d20761ec082"
+    },
+    {
+      "claim_id": "6bb1bc08-f579-4dde-aef1-2df08398f816",
+      "result_id": "b8540043-ab3c-4d78-b486-6d20761ec082"
+    },
+    {
+      "claim_id": "6fdb785e-42db-4a2b-8f63-95d972651e2c",
+      "result_id": "b8540043-ab3c-4d78-b486-6d20761ec082"
+    },
+    {
+      "claim_id": "4782e62c-c312-4c0f-8822-d1e5aecc0f6c",
+      "result_id": "b8540043-ab3c-4d78-b486-6d20761ec082"
+    },
+    {
+      "claim_id": "4c067a3f-347b-4187-82ae-bf54bc590140",
+      "result_id": "b8540043-ab3c-4d78-b486-6d20761ec082"
+    },
+    {
+      "claim_id": "7b549dcf-2003-45cd-9dd4-16a1eb943d6a",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "b0970392-8733-49d6-9c25-1930eb74684a",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "f51a0243-b39d-457a-ae9f-69cf70c7a5c5",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "3e500656-f7e5-4378-9302-8ee53419fb82",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "d85cc770-ca61-4654-b583-483fd422794e",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "3e87337e-09c9-47ee-8d3a-b9e3e6bbe1e4",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "c9a612ff-d43f-4b80-a6b6-008f2fafc79e",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "077bd786-9a44-4d56-bdfa-e8b94b905175",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "c4654836-928b-451a-a6ab-74d230c9ee01",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "9cd28e2d-9d01-4e46-b502-00ab9bc0f7e5",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "b025d99f-ad70-409c-8777-4d862e4951dd",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "0e17a3cf-e8f4-4023-8593-8d62bd917452",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "b1183607-3af9-4044-b0a1-9aca01cef3b2",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "26004645-265b-4b90-a125-d3121be8fa3b",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "b6311cec-6d83-4110-989b-8a7ca59dd716",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "4de0a1d5-1af2-466b-855c-3c286b25409a",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "acdf01e5-5154-4860-9d8f-365740129c67",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "3bbe140c-2776-4c9c-bdb1-9a73870d82de",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "cecb042a-7958-4284-9244-c59033edd48b",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "d088edcb-75ce-4383-a38f-bd8e403ba5d3",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "da8dfc07-bdbd-4358-a616-70c762e1c073",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "d712c668-cab8-4f80-af0c-df931578cfe7",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "34399d4d-2897-4ed3-bad3-83da08fda801",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "43088d0f-6815-4fa7-aa01-53b8110299c0",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "d3659a70-c08a-46af-9059-03cc732f6c1a",
+      "result_id": "1b91e30d-a36f-4a87-9d49-312eae58132c"
+    },
+    {
+      "claim_id": "1886202a-b9e0-4a6c-a4df-b8fef4f8873a",
+      "result_id": "223de9e3-57d2-4cd4-a66d-fd05e0c686c4"
+    },
+    {
+      "claim_id": "71439217-e304-409b-9235-f23f431c46c5",
+      "result_id": "223de9e3-57d2-4cd4-a66d-fd05e0c686c4"
+    }
+  ],
+  "comparisons": []
+}

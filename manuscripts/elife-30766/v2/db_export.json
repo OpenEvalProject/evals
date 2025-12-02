@@ -1,0 +1,2485 @@
+{
+  "submission": {
+    "id": "967dd122-6eb0-4192-8545-69c393a16b64",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:51:54.476250Z",
+    "updated_at": "2025-12-01T21:51:54.476250Z"
+  },
+  "content": [
+    {
+      "id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "submission_id": "967dd122-6eb0-4192-8545-69c393a16b64",
+      "content_type": "manuscript",
+      "content_text": "# Dnmt3a is an epigenetic mediator of adipose insulin resistance\n\n## Authors\n\n- Dongjoo You<sup>1</sup>\n- Emma Nilsson<sup>2</sup>\n- Danielle E Tenen<sup>3</sup>\n- Anna Lyubetskaya<sup>4</sup>\n- James C Lo<sup>5</sup>\n- Rencong Jiang<sup>1</sup>\n- Jasmine Deng<sup>1</sup>\n- Brian A Dawes<sup>3</sup>\n- Allan Vaag<sup>6</sup>\n- Charlotte Ling<sup>2</sup>\n- Evan D Rosen<sup>3</sup> \u2020\n- Sona Kang<sup>1</sup> ([ORCID: 0000-0002-9831-677X](https://orcid.org/0000-0002-9831-677X)) \u2020\n\n### Affiliations\n\n1. Nutritional Sciences and Toxicology Department University of California, Berkeley Berkeley United States\n2. Epigenetics and Diabetes Unit, Department of Clinical Sciences Lund University Diabetes Centre, Scania University Hospital Malm\u00f6 Sweden\n3. Division of Endocrinology, Diabetes and Metabolism Beth Israel Deaconess Medical Center Boston United States\n4. Broad Institute of Harvard and MIT Cambridge United States\n5. Weill Cornell Medical College New York United States\n6. Diabetes and Metabolism, Department of Endocrinology Rigshospitalet, University of Copenhagen Copenhagen Denmark\n7. Early Clinical Development AstraZeneca, Innovative Medicines G\u00f6teborg Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nInsulin resistance results from an intricate interaction between genetic make-up and environment, and thus may be orchestrated by epigenetic mechanisms like DNA methylation. Here, we demonstrate that DNA methyltransferase 3a (Dnmt3a) is both necessary and sufficient to mediate insulin resistance in cultured mouse and human adipocytes. Furthermore, adipose-specific Dnmt3a knock-out mice are protected from diet-induced insulin resistance and glucose intolerance without accompanying changes in adiposity. Unbiased gene profiling studies revealed Fgf21 as a key negatively regulated Dnmt3a target gene in adipocytes with concordant changes in DNA methylation at the Fgf21 promoter region. Consistent with this, Fgf21 can rescue Dnmt3a-mediated insulin resistance, and DNA methylation at the FGF21 locus was elevated in human subjects with diabetes and correlated negatively with expression of FGF21 in human adipose tissue. Taken together, our data demonstrate that adipose Dnmt3a is a novel epigenetic mediator of insulin resistance in vitro and in vivo.\n\n## Introduction\n\nInsulin resistance (IR) is generally defined as a reduced ability of insulin to provoke metabolic responses, such as glucose uptake. Several mechanistic drivers of IR have been proposed, including defects in the insulin signal transduction pathway, dysfunctional mitochondrial respiration, and ER stress (Boucher et al., 2014; Gregor and Hotamisligil, 2011; Houstis et al., 2006; Ozcan et al., 2004; Samuel and Shulman, 2012). The data supporting the involvement of these non-mutually exclusive pathways are convincing, but additional mechanisms are also likely to participate in the development of IR. Nuclear pathways in particular (i.e. transcriptional and epigenomic mechanisms) are likely to play an important role, given that IR often develops over a time course that is inconsistent with rapid signal transduction events (Kang et al., 2015; Tan et al., 2015). Furthermore, there is a large body of data from humans and rodents indicating that the propensity for IR can be passed transgenerationally; such \u2018fetal programming\u2019 studies strongly imply an epigenetic basis for IR (Carone et al., 2010; Heijmans et al., 2008; Li et al., 2010; Tobi et al., 2014). Finally, thiazolidinedione drugs, which activate the transcription factor PPAR\u03b3, provide one of the only pharmacological therapies for IR (Soccio et al., 2014; Step et al., 2014; Sugii et al., 2009). Taken together, these data strongly suggest that epigenomic and transcriptional mechanisms must be in play in the etiopathogenesis of IR (Kang et al., 2016).\n\nDNA methylation is a reversible epigenetic mark involving the covalent transfer of a methyl group to the C-5 position of a cytosine residue, usually in the context of a CpG doublet, by DNA methyltransferases (Dnmts) (Robertson, 2005). Long thought to be a static epigenetic mark, emerging evidence suggests that methylated DNA undergoes dynamic and reversible remodeling in somatic cells during developmental, physiological, and pathogenic pathophysiological processes (Barres et al., 2013; 2009; Benner et al., 2015; Kirchner et al., 2016; Multhaup et al., 2015; Siersb\u00e6k et al., 2017). As an example, a bout of intense exercise can induce DNA hypomethylation at the PPARGC1a locus in human skeletal muscle within hours, followed by increased gene expression; these effects were reversed after resting (Barr\u00e8s et al., 2012). Mounting evidence points to a role for DNA methylation in the pathogenesis of metabolic disorders. For example, the obesity-prone agouti mouse has reduced DNA methylation at the regulatory region for the Agouti gene, leading to enhanced expression and subsequent inhibition of the satiety-inducing MC4 receptor (Xie et al., 2013). Multiple studies have shown that changes in DNA methylation at key metabolic genes, such as Cox7a1 (R\u00f6nn et al., 2008), IGF-2 (Heijmans et al., 2008), and Pomc (Ehrlich et al., 2010), associate with various metabolic insults including aging, obesity, anorexia, and prenatal exposure to famine. Moreover, recent genome-wide profiling studies have identified distinct global DNA methylation patterns that associate with obesity and diabetes in humans (Dayeh et al., 2014; Feinberg et al., 2010; Kirchner et al., 2016; Multhaup et al., 2015; Nilsson et al., 2015; Volkmar et al., 2012; Volkov et al., 2017). Altered DNA methylation is linked to the transgenerational passage of metabolic disorders (Ng et al., 2010; Wei et al., 2014). Despite numerous studies showing a link between DNA methylation and metabolic dysregulation, the cause-and-effect relationship between the two remains largely unknown.\n\nIn mammals, five Dnmt family members have been identified: Dnmt1, Dnmt2 (also known as Trdmt1), Dnmt3a, Dnmt3b and Dnmt3l, yet only three (Dnmt1, 3a, and 3b) possess DNA methyltransferase activity (Robertson, 2005). Dnmt1 (the maintenance DNA methyltransferase) has a preference to methylate hemimethylated DNA whereas Dnmt3a and 3b prefer unmethylated DNA as substrate, and thus act as de novo DNA methyltransferases (Robertson, 2005). Dnmt3l is homologous to the other Dnmt3s but lacks catalytic activity (Robertson, 2005) and Dnmt2 has sequence homology to all Dnmts but methylates cytoplasmic tRNA, and not DNA (Robertson, 2005). Administration of a small molecule Dnmt inhibitor has been shown to improve insulin sensitivity in the setting of obesity, in part by demethylating the Adipoq promoter, and a role for Dnmt1 in this process was suggested by genetic knockdown studies in cultured adipocytes (Kim et al., 2015).\n\nHere, we identify Dnmt3a as a key epigenetic determinant of obesity-associated IR in adipose tissue. Dnmt3a plays a causal role in the development of cell autonomous IR in mouse and human adipocytes in a manner that is dependent on its catalytic activity. Consistent with results from adipocytes in vitro, we find that adipose-specific Dnmt3a deficiency in vivo confers protection from diet-induced IR and glucose tolerance without accompanying changes in body weight or adiposity. In addition, unbiased gene expression profiling suggests that Dnmt3a acts as primarily as a gene repressor, and reveals a set of adipocyte-specific target genes, including Fgf21. Further, we demonstrate that Dnmt3a mediates IR, at least in part, by methylating specific cis-regulatory elements in the Fgf21 gene and thus suppressing its expression. We also provide evidence that similar mechanisms might be at play in human adipose tissue. These studies identify Dnmt3a as a novel epigenetic mediator of IR in adipocytes.\n\n## Results\n\n### Adipose expression of Dnmts inversely correlates with insulin sensitivity\n\nTo identify a potential role for Dnmts in the pathogenesis of insulin resistance, we compared their expression levels in insulin-sensitive metabolic tissues (i.e. liver, muscle, and adipose depots) in various metabolic settings. In a diet-induced obesity (DIO) mouse model, Dnmt1 and Dnmt3a mRNA expression was elevated in adipose tissue, especially in epididymal and mesenteric WAT (Figure 1A, Figure 1\u2014figure supplement 1A). Dnmt3a expression was significantly induced by HFD in skeletal muscle, but to a lesser degree than in adipose tissue. No effect of HFD was observed in liver (Figure 1\u2014figure supplement 1B\u2013C). In genetically obese ob/ob mice, mRNA expression of all three functional Dnmts was elevated in adipose tissue (Figure 1B). Importantly, expression of these genes was significantly reduced after treatment with the insulin sensitizer rosiglitazone (Rosi) (Figure 1B). Increased adipose expression of Dnmt3a was confirmed by immunoblotting in DIO mice (Figure 1C,D). Relative expression of Dnmt3a was higher in eWAT compared to skeletal muscle and liver compared in normal chow-fed mice (Figure 1\u2014figure supplement 1D\u2013E). Dnmt2 and Dnmt3l mRNA displayed minimal expression in adipose tissue (not shown). Together, this led us to hypothesize that Dnmts may have a direct functional role in the pathogenesis of adipose IR.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig1-v2.jpg)\n\n**Figure 1.:** (A) Dnmt mRNA expression in adipose from chow- and high fat-fed (HFD) C57Bl/6 mice (A); n\u00a0=\u00a06 mice, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.) and (B) in adipose tissue from ob/+and ob/ob mice in the presence and absence of \u200brosiglitazone treatment (right; n\u00a0=\u00a07 for ob/+, n\u00a0=\u00a08 for ob/+plus Rosi, n\u00a0=\u00a07 for ob/ob with and without Rosi, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (C) Western blot showing Dnmt3a protein levels in adipose tissue from chow vs. HFD mice. (D) Quantification of western blot in (C).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Dnmt mRNA expression in inguinal WAT (iWAT, n\u00a0=\u00a06), BAT (n\u00a0=\u00a06), and mesenteric WAT (mesWAT, n\u00a0=\u00a05) from chow- and high fat-fed C57Bl/6 mice (p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (B, C) Dnmt mRNA expression in liver and skeletal muscle from chow- and high fat-fed C57Bl/6 mice (liver: n\u00a0=\u00a06, 5, skeletal muscle: n\u00a0=\u00a06, six mice, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (D) Dnmt3a protein expression in eWAT, liver, and skeletal muscle in chow-fed C57Bl/6 mice (E) Quantification of western blot in D (n\u00a0=\u00a03, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.) (F) Dnmt3a protein expression of various adipose depots in chow-fed C57Bl/6 mice. (G) Quantification of western blot in (F) (n\u00a0=\u00a03, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n### Knock-down of Dnmt3a confers protection from drug-mediated IR\n\nGiven the inverse correlation of adipose Dnmt expression with insulin sensitivity, we sought to test the cell autonomous role of Dnmts in the development of IR. To that end, individual Dnmts were knocked-down in mature 3T3-L1 adipocytes using two distinct short hairpin RNAs (shRNAs) (Figure 2\u2014figure supplement 1A\u2013F). To promote IR, cells were treated with dexamethasone (Dex) and TNF-\u03b1 (TNF) (Houstis et al., 2006; Kang et al., 2015) for an additional four days. Knock-down of individual Dnmts did not have a major impact on the basal level of insulin sensitivity when assessed by insulin-stimulated glucose uptake (Figure 2\u2014figure supplement 2A\u2013E). However, knock-down of Dnmt3a, but not Dnmt1 or Dnmt3b, protected adipocytes from Dex- and TNF-mediated IR as assessed by insulin-stimulated glucose uptake and signal transduction (Figure 2A,B, Figure 2\u2014figure supplement 2A\u2013E). Given the elevated expression of adipose Dnmts in obesity, we were prompted to test whether overexpression of Dnmts per se is sufficient to drive IR in adipocytes. Individual Dnmts were expressed in mature 3T3-L1 adipocytes by lentiviral delivery. Interestingly, overexpression of Dnmt3a and 3b, but not Dnmt1, potently inhibited insulin-stimulated glucose uptake (Figure 2C). Additionally, we tested whether the causal role of Dnmt3a in the development of insulin resistance is conserved in human adipocytes. Overexpression of Dnmt3a powerfully inhibited insulin-stimulated glucose uptake in in vitro differentiated adipocytes from human adipose derived stem cells (Figure 2D). Together, our gain- and loss-of-function studies in vitro show that Dnmt3a is both necessary and sufficient to mediate IR in adipocytes in a cell autonomous manner.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig2-v2.jpg)\n\n**Figure 2.:** (A) Two independent hairpins against \u200bDnmt3a (versus scrambled control shRNA; shScr) were delivered to mature 3T3-L1 adipocytes (Day 8) via lentiviral transduction. Cells were then treated with \u200bDex and \u200bTNF for 4 days and assessed for insulin-stimulated \u200bglucose uptake (3H-2-DG assay, n\u00a0=\u00a06, p<0.05). Shown is the % of insulin-stimulated glucose uptake rescued by Dnmt3a knockdown (n\u00a0=\u00a06, p<0.05). (B) Cells in (A) with #2 shDnmt3a hairpin and control cells were withdrawn from serum for 6 hr, stimulated with 20 nM insulin for 5 min and subjected to immunoblotting with antibodies against total and phospho-AKT and \u2013IRS-1 with and without insulin. (C) Basal and insulin-stimulated glucose uptake in mature 3T3-L1 and (D) in in vitro-differentiated primary human adipocytes transduced with lentivirus expressing Dnmts or the empty plasmid vector, pCDH (n\u00a0=\u00a06, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-C) Two independent hairpins against \u200bDnmt1, 3a, and 3b (versus scrambled shRNA; shScr) were delivered to mature 3T3-L1 adipocytes (Day 8) via lentiviral transduction. Shown is mRNA (n\u00a0=\u00a03, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (D\u2013F) The Flag-tagged version of expression vectors for Dnmt1, 3a, and 3b were co-transfected with hairpins against them in 293 T cells. After 2 days of transfection, Flag western was performed.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013E) Two independent hairpins against \u200bDnmt1, Dnmt3a, and Dnmt3b (versus scrambled shRNA; shScr) were delivered to mature 3T3-L1 adipocytes (Day 8) via lentiviral transduction, and cells were then treated with \u200bDex and \u200bTNF for 4 days and assessed for insulin-stimulated \u200bglucose uptake (3H-2-DG assay, n\u00a0=\u00a06, p<0.05). Basal and insulin-stimulated glucose uptake shown in (A, C and E). (B and D) show the % of insulin-stimulated glucose uptake rescued by Dnmt1, 3a, and 3b knockdown (n\u00a0=\u00a06, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n### DNA methyltransferase activity is critical for Dnmt3a to mediate IR\n\nStudies have shown that Dnmt3a can act as a gene repressor using both catalytic-dependent and independent mechanisms (Bachman et al., 2001; Fuks et al., 2001). Thus, we sought to determine whether DNA methyltransferase activity is required to mediate IR. We initially pursued a pharmacological approach, using two synthetic Dnmt inhibitors, 5-azacytidine (5-Aza) (Stresemann and Lyko, 2008), a nucleoside analogue serving as a pseudo-substrate for Dnmts, and RG-108 (Brueckner et al., 2005), a non-nucleoside-based drug. Remarkably, both Dnmt inhibitors blocked Dex- and TNF-mediated IR (Figure 3A,B, Figure 3\u2014figure supplement 1A,B). In addition to these synthetic inhibitors, the naturally occurring Dnmt inhibitors (Rajavelu et al., 2011) epigallocatechin gallate (ECCG) and theaflavin-3,3\u2032-digallate (TF-3) also showed insulin-sensitizing activity in the setting of Dex- and TNF-mediated IR (Figure 3\u2014figure supplement 1C\u2013F). These data suggest that DNA methyltransferase activity is necessary for Dnmt3 to cause IR. To further probe this hypothesis, we overexpressed a catalytically inactive allele of Dnmt3a (C706S) (Hsieh, 1999). Unlike the wild-type allele, Dnmt3a C706S was unable to suppress insulin-stimulated glucose uptake (Figure 3C). Together, the pharmacological and genetic evidence indicates that DNA methyltransferase activity is essential for Dnmt3a to mediate IR.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig3-v2.jpg)\n\n**Figure 3.:** Insulin-stimulated glucose uptake assay was conducted using 3T3-L1 adipocytes treated with Dnmt inhibitors (A, 5-Aza; B, RG-108) and Dex or TNF for 4 days. Shown is the % of insulin-stimulated glucose uptake rescued by Dnmt inhibitors (n\u00a0=\u00a06, p<0.05). (C) Basal and insulin-stimulated glucose uptake in mature 3T3-L1 adipocytes transduced with wild-type Dnmt3a vs. a catalytically inactive allele (C706S) (n\u00a0=\u00a06, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013F). Insulin-stimulated glucose uptake assay was conducted on 3T3-L1 adipocytes co-treated with Dex or TNF and the Dnmt inhibitors (A) RG-108, (B) 5-Azacytidine (5-Aza), (C, D) theaflavin-3,3\u2019-digallate (TF3), and (E, F) epigallocatechin gallate (ECCG) for 4 days. Basal and insulin-stimulated glucose uptake shown in (A, B, D, and F). (C and E) show the % of insulin-stimulated glucose uptake rescued by Dnmt inhibitors (n\u00a0=\u00a06, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n### Adipose-specific Dnmt3a deficiency confers protection from diet-induced insulin resistance and glucose intolerance\n\nWe next sought to determine whether loss of Dnmt3a in adipocytes could confer protection from diet-induced adipose tissue and systemic IR in vivo. To address this, we generated adipose-specific Dnmt3a knock-out mice (Dnmt3aAdiKO) by crossing Dnmt3a floxed mice (Dnmt3af/f) (Nguyen et al., 2007) to adiponectin-Cre mice (Eguchi et al., 2011) (Figure 4\u2014figure supplement 1A,B). On chow diet, male WT and Dnmt3aAdiKO animals did not show any obvious change in their body weight, insulin sensitivity, glucose tolerance, or insulin levels (Figure 4\u2014figure supplement 2A\u2013D). On HFD (45% fat), Dnmt3aAdiKO mice still showed no significant differences in body weight or composition relative to littermate controls (Figure 4A,B). Moreover, the effect of long-term fasting (16 hr) on body weight or body composition did not differ between genotypes (Figure 4C), suggesting that gross energy homeostasis is not altered in the knock-out animals. Despite no obvious change in energy balance, high fat fed male Dnmt3aAdiKO mice exhibited improved glucose tolerance (Figure 4D,E) and insulin sensitivity (Figure 4F,G) with reduced serum insulin in the fed state (Figure 4H). Consistent with their metabolic improvement, male Dnmt3aAdiKO mice display increased insulin signal transduction in adipose tissue, as demonstrated by increased insulin-stimulated phosphorylation of IRS and AKT (Figure 4I,J). Similarly, female Dnmt3aAdiKO mice display improved insulin sensitivity and glucose tolerance on HFD without a change in body weight (Figure 4\u2014figure supplement 3A\u2013C). We next assessed whether insulin sensitization could be due to either enhanced browning or reduced inflammation of WAT. With regard to the former, we found no consistent change in the expression of major thermogenic genes such as Ucp1 and Ppargc1a in either iWAT and BAT (Figure 4\u2014figure supplement 4A,B). Additionally, gene expression analysis showed a nonsignificant trend toward reduced expression of proinflammatory genes such as Tnfa and Ccl2 (which encodes MCP-1) in the eWAT of Dnmt3aAdiKO mice (Figure 4\u2014figure supplement 5A). We also saw no obvious change in the density of crown-like structures between WT and KO tissues (Figure 4\u2014figure supplement 5B). Together, these results demonstrate that adipose-specific deletion of Dnmt3a confers protection from diet-induced IR in a manner that is independent of adiposity, inflammation, or browning of white adipose tissue.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-v2.jpg)\n\n**Figure 4.:** (A) Body weight of Dnmt3aAdiKO and control mice on HFD (n\u00a0=\u00a07, 9, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (B) Body composition after 10 weeks of HFD (n\u00a0=\u00a07, 9). (C) Effect of long-term fasting (16 hr) on body weight or body composition by EchoMRI. Shown is % loss after fasting (n\u00a0=\u00a014, 14, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (D) Glucose tolerance test after 9 weeks on HFD (n\u00a0=\u00a07, 9, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (E) The area under curve (AUC) in (D). (F) Insulin tolerance test after 11 weeks on HFD (n\u00a0=\u00a07, 9, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (G) AUC in (F). (H) Fed and fasted insulin levels measured by ELISA (n\u00a0=\u00a07, 9 p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.) (I) Immunoblot of total and phospho-AKT and IRS-1 in eWAT after IP insulin. (J) Quantification of western blot in (I).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Adipose tissue deletion of Dnmt3a was confirmed in 8 wk-old Dnmt3aAdiKO (KO) mice by qPCR (n\u00a0=\u00a03, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.) (A) and western blot (B).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Body weight of Dnmt3aAdiKO mice on chow. Glucose (B) and insulin tolerance test (C) on 11 and 12 wk old KO and WT mice on chow. (D) Insulin levels of fed and fasted chow-fed KO and WT mice as measured by ELISA. (n\u00a0=\u00a08, 8, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Body weight was measured at 8-wk-old mice\u00a0prior to HFD regimen and at 22-wk-old mice on HFD. Glucose (B) and insulin tolerance test (C) on 19 and 20 wk old KO and WT mice on HFD. (n\u00a0=\u00a06, 6, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** The expression of major thermogenic genes was measured by qPCR in iWAT (A) and BAT (B) from WT and KO mice on HFD (iWAT: n\u00a0=\u00a06,6; BAT n\u00a0=\u00a05,5 Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** The expression of major proinflammatory genes was measured by qPCR in iWAT (A) and BAT (B) from WT and KO mice on HFD (iWAT: n\u00a0=\u00a06, 6; BAT n\u00a0=\u00a05,5 Student\u2019s t-test, mean\u00a0\u00b1s.e.m.). (C) Representative microscopic image of adipose depots from WT and KO mice on HFD after staining with hematoxylin and eosin (H&E).\n\n### Unbiased gene profiling studies reveal that Fgf21 is a key metabolic target gene of Dnmt3a in adipocytes\n\nDnmt3a affects developmental processes by regulating non-overlapping sets of cell type-specific target genes (Challen et al., 2011; Nguyen et al., 2007; Nishikawa et al., 2015). To gain mechanistic insight into Dnmt3a-mediated IR at the molecular level, we performed RNA-seq in 3T3-L1 adipocytes, in both gain- and loss-of-function contexts. We have successfully used this approach to enhance our ability to identify bona fide targets (Kang et al., 2012). We found that 97 genes were repressed after shRNA-mediated Dnmt3a knock-down, while only eight genes were up-regulated in the presence of excess Dnmt3a; the single gene showing concordant regulation was Dnmt3a itself (Figure 5A). Conversely, 290 genes were induced by Dnmt3a knock-down, and 36 genes showed diminished expression after Dnmt3a overexpression; seven genes were concordantly regulated by both manipulations (Figure 5B and C and Supplementary file 1). These data are consistent with the expectation that Dnmt3a works primarily as a repressor of gene expression. Among the concordantly-regulated negative target genes of Dnmt3a, we were immediately struck by the presence of Fgf21. FGF21 is known to facilitate glucose uptake in adipocytes (Ge et al., 2011; Lee et al., 2014; Minard et al., 2016), and is a positive target gene of PPAR\u03b3 (Muise et al., 2008). Furthermore, mice lacking FGF21 do not support Rosi-mediated insulin sensitization in vivo (Dutchak et al., 2012). We confirmed by Q-PCR that Fgf21 expression is indeed reduced in cultured adipocytes overexpressing Dnmt3a, is increased in cells expressing shDnmt3a, and most importantly, is up-regulated in the adipose tissue of Dnmt3aAdiKO mice (Figure 5D). Unlike adipose tissue levels, serum levels of Fgf21 were reduced in HFD-fed Dnmt3aAdiKO mice compared to controls (Figure 5\u2014figure supplement 5\u2013). To determine whether restoration of FGF21 levels could ameliorate Dnmt3a-mediated IR, we treated 3T3-L1 adipocytes that overexpress Dnmt3a with recombinant FGF21, which restored insulin sensitivity in a dose-dependent manner (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig5-v2.jpg)\n\n**Figure 5.:** Venn diagram showing the number of positive (A) and negative (B) Dnmt3a target genes through comparative analysis of RNA-seq profiles from Dnmt3a knockdown and overexpressing adipocytes. (C) Heat map showing differentially regulated genes by Dnmt3a overexpression and knock-down. Group 1: Genes that are down-regulated by Dnmt3a overexpression; Group 2: Genes that are down-regulated by Dnmt3a overexpression and up-regulated by Dnmt3a knock-down; Group 3: Genes that are up-regulated by Dnmt3a knock-down. (D) Fgf21 mRNA expression in Dnmt3a overexpressor (left) and knock-down (middle) L1 adipocytes and in fractionated adipocytes (right) from Dnmt3aAdiKO and Dnmt3af/f mice on HFD (n\u00a0=\u00a05). (E) Mature 3T3-L1 adipocytes expressing GFP or Dnmt3a treated with indicated amount of recombinant Fgf21 for 48 hr (or vehicle), and tested for insulin sensitivity by 3H-2-DG assay. Shown is basal and insulin-stimulated glucose uptake. (n\u00a0=\u00a06 mice, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Serum Fgf21 levels measured by ELISA in WT and KO mice on 12-wk-old chow (n\u00a0=\u00a06) or after 14 weeks of HFD (n\u00a0=\u00a07, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n### Dnmt3a-mediated changes in Fgf21 gene expression involve changes in DNA methylation\n\nIn general, the level of DNA methylation at gene promoters is inversely correlated with mRNA expression (Jones, 2012). Given the functional significance of FGF21 in Dnmt3a-mediated IR, we further examined whether Dnmt3a directly alters methylation of the 5 kb upstream promoter regions of the Fgf21 gene (Figure 6A). Using methylated DNA precipitation PCR (MeDIP-qPCR), we detected genomic DNA hypermethylation at Fgf21 promoter regions in Dnmt3a overexpressor 3T3-L1 cells compared to controls (Figure 6B). Conversely, DNA hypomethylation of these same regions was seen in Dnmt3a knock-down cells (Figure 6B). In addition to the in vitro models, we conducted MeDIP-qPCR analysis using genomic DNA from fractionated adipocytes of Dnmt3aAdiKO and control animals, finding reduced DNA methylation at the Fgf21 promoter in KO cells (Figure 6C). Consistent with DNA methylation pattern at the Fgf21 promoter region, co-transfection of Dnmt3a potently inhibited promoter activity of Fgf21 (Figure 6D). Together, these data suggest that Dnmt3a-mediated suppression of Fgf21 involves changes in DNA methylation profile at key promoter regions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic showing the tested regions for MeDIP-qPCR at the Fgf21 locus. Target regions were chosen using MethFinder (http://www.urogene.org/methprimer) on regions proximal (5 kb) and distal (50 kb) to the Fgf21 transcription start site. (B) MeDIP-qPCR was performed using genomic DNA extracted from 3T3-L1 adipocytes transduced with GFP vs. Dnmt3a or shScr vs. shDnmt3a. Shown is relative fold enrichment of 5mC of Dnmt3a overexpressor and KD cells over control cells. (C) MeDIP-qPCR was performed using genomic DNA from Dnmt3a KO and Flox mice on HFD. Shown is relative fold enrichment of 5mC of KO over WT samples. (D) Fgf21-promoter reporter (1497/+5) assay performed by co-transfection of the indicated amounts of Dnmt3a expression vector. (n\u00a0=\u00a03 mice, p<0.05, Student\u2019s t-test, mean\u00a0\u00b1s.e.m.).\n\n### DNA methylation of FGF21 is increased in human adipose tissue of subjects with type 2 diabetes\n\nTo translate some of our findings to humans, we investigated DNA methylation and gene expression of FGF21 in human adipose tissue collected from diabetic vs. non-diabetic human subjects. In line with our mouse data, we found hypermethylation of four CpG sites annotated to FGF21 in adipose tissue of subjects with type 2 diabetes compared with non-diabetic controls (Figure 7A and Supplementary file 2). Further, we found a negative correlation between DNA methylation and mRNA expression of FGF21 in human adipose tissue (Figure 7B\u2013E). Together, these data support a role for increased DNA methylation of FGF21 in the regulation of adipose FGF21 expression in association with metabolic disease.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30766/elife-30766-fig7-v2.jpg)\n\n**Figure 7.:** (A) Four CpG sites annotated to FGF21 with significant difference in adipose tissue DNA methylation between subjects with type 2 diabetes and controls. (p<0.01, paired Wilcoxon statistics, mean\u00a0\u00b1s.d.). (B\u2013D) Correlations between DNA methylation and mRNA expression for CpG sites significantly associated with T2D in human adipose tissue. (r\u00a0=\u00a0Pearson correlation coefficient.).\n\n## Discussion\n\nWhile genetics plays an important role in obesity and T2D, genetic differences cannot fully explain many features of these conditions, such as discordance in monozygotic twins, and the close relationship with lifestyle factors (McCarthy, 2010; Morris et al., 2012; Voight et al., 2010; Zeggini et al., 2008). Of note, the vast majority of GWAS-proven allelic variants associated with T2D correspond much better to altered insulin secretion and islet function rather than to IR per se (Voight et al., 2010). Hence, forms of non-genetic variation, such as epigenetic alterations, must also be considered. This notion has been borne out by a recent epigenome-wide association study (EWAS) linking alterations in DNA methylation to whole-body insulin sensitivity (Zhao et al., 2012). Importantly, even genetic variants may cause disease in a DNA methylation-dependent manner, as has recently been shown for T2D and obesity (Dayeh et al., 2013; Elliott et al., 2017; Nilsson et al., 2014; Olsson et al., 2014; Volkov et al., 2016). We have also shown that adipose tissue from patients with T2D exhibit numerous methylation and expression differences relative to unrelated healthy controls, with many of the same changes also seen in twin pairs discordant for T2D (Nilsson et al., 2014). In this study, we identified increased expression of an enzymatic effector of DNA methylation, Dnmt3a, as a key epigenetic driver of IR in vitro and in vivo.\n\nDNA methylation, like other forms of epigenomic modification, has been an attractive therapeutic target because of their plasticity and because they offer an opportunity to reprogram cells into a more healthy state. For example, administration of pan-inhibitors of histone deacetylase exerts beneficial metabolic effects in both mice and humans, such as increased energy expenditure, insulin sensitivity and secretion (Christensen et al., 2011; Daneshpajooh et al., 2017; Sharma and Taliyan, 2016; Ye, 2013). DNA methyltransferase inhibitors have also been shown to have an insulin-sensitizing effect in vivo and in vitro (Kim et al., 2015). In line with pharmacological studies, mutant mouse models carrying loss-of function histone modifiers (e.g. Mll2, Ehmt1, Jmhd2a Lsd1) were shown to have profound impact on whole body metabolism (Lee et al., 2006; Ohno et al., 2013; Sambeat et al., 2016; Tateishi et al., 2009; Zeng et al., 2016). It should be noted that metabolic consequences in mouse models carrying mutations of histone modifiers appear to be mainly attributable to changes in body weight. Unlike these examples, adipose-specific Dnmt3a KO mice are relatively unique in that they display improved insulin sensitivity without a change in adiposity or body weight. Similarly, the effect on insulin action is not dependent on increased beige or brown adipocytes, or on reducing intra-adipose inflammation.\n\nOur in vitro study indicates that overexpression of Dnmt3a is sufficient to induce cell autonomous IR, however, it does not seem to be the case in vivo. Kamei et al showed that transgenic expression of Dnmt3a per se was not sufficient to render whole body IR and glucose intolerance (Kamei et al., 2010) on chow, HFD, or high methyl diet with chow diet. Authors observed only a mild increase in the gene expression of proinflammatory cytokines (i.e. Mcp1 and Tnfa) when animals were put on HFD. It should be noted that the major caveat of this study is the use of aP2 promoter to drive the transgene expression (Jeffery et al., 2014; Kang et al., 2014; Lee et al., 2013); Potentially, non-adipose expression and earlier expression during development might have a compounding factor in this study. Despite these notions, it will be highly interesting to address how the combination of high methyl donor diet and HFD would affect the metabolic profile of these transgenic animals compared to controls.\n\nOur unbiased gene expression profiling studies led us to identify Fgf21 as a key target gene in adipocytes, and the data from diabetic humans suggests that this could be a conserved mechanism of IR in both mice and humans. Fgf21 is better known as a hepatokine, and the liver is the main source of circulating Fgf21 (Markan et al., 2014) Adipose Fgf21 probably does not circulate, but rather acts in an autocrine/paracrine manner (Dutchak et al., 2012; Markan et al., 2014). In fact, levels of Fgf21 in serum were moderately reduced in Dnmt3a KO animals compared to controls, in contrast to significantly elevated adipose tissue levels. Studies have shown a positive correlation between insulin and circulating Fgf21 levels (Chavez et al., 2009; Chen et al., 2008; Zhang et al., 2008), suggesting that insulin may be a key determinant of Fgf21 in serum. Thus, it is possible that the reduced insulin levels in Dnmt3a KO mice on HFD may have led to reduction of Fgf21 production in liver. This notion is in line with the finding that Fgf21 serum levels are often elevated in obesity-associated IR (Fisher and Maratos-Flier, 2016; Morrice et al., 2017), possibly reflecting resistance to Fgf21 (Fisher et al., 2010).\n\nWe propose that the local activity of Fgf21 within the fat pad is important for the improved insulin sensitivity in the knock-out mice, although formal proof of this idea would require generating adipose tissue-specific Dnmt3a and Fgf21 double knockout mice. In line with this view, there are previous studies indicating that adipose Fgf21 is insulin-sensitizing. For example, three independent studies demonstrated that mutant mice devoid of Fgf21 signaling in adipose tissue secondary to ablation of FGFR1 or bKlotho, were refractory to the insulin-sensitizing effect of Fgf21 administration (Adams et al., 2013; BonDurant et al., 2017; Ding et al., 2012). Some of these studies (Adams et al., 2013; Ding et al., 2012) suggested that adiponectin is an essential mediator of Fgf21 metabolic action; the other study (BonDurant et al., 2017) suggested that adiponectin is dispensable. In our studies, albeit it did not reach statistical significance, there was a trend toward increased mRNA expression of Adipoq in both L1 and primary Dnmt3a KO adipocytes (not shown).\n\nControl of Fgf21 expression appears to be highly tissue-specific. For example, PPAR\u03b3\u00a0is an important driver of Fgf21 in adipose tissue, while PPAR\u03b1 serves that role in liver (Dutchak et al., 2012). Other studies have also demonstrated that Fgf21 is positively regulated by PPAR\u03b3\u00a0in fat (Muise et al., 2008; Wang et al., 2008). In addition to focused studies on Fgf21 promoter regions, global DNA methylation profiling will be necessary to identify differentially methylated regions in the setting of Dnmt3a gain- and loss-of function.\n\nA recent study demonstrated that Dnmt1 may contribute to obesity-associated inflammation and insulin resistance by promoting hypermethylation at the Adipoq locus (Kim et al., 2015). Concordant with this study, we also see elevated Dnmt1 levels in the adipose tissue of obese animals. However, knockdown of Dnmt1 did not rescue insulin sensitivity in the setting of Dex or TNF, and overexpression of Dnmt1 did not reduce insulin-stimulated glucose uptake in cultured adipocytes. Based on those criteria, we chose to focus on Dnmt3a, and showed that adipose-specific deletion of this gene promoted insulin sensitivity even in weight-matched obese animals. Of note, we did not identify Adipoq as a regulated target after either deletion or overexpression of Dnmt3a.\n\nDespite some effort, we have not yet identified the mechanism by which Dnmt3a expression is increased in obesity. We found that Dnmt3a is not induced by lipids (e.g. palmitate), pro-inflammatory signals (e.g. IL-6, LPS), high doses of insulin, or high glucose in cultured adipocytes (not shown). In our study, in vivo administration of thiazolidinediones normalized the expression of Dnmt3a in ob/ob mice but not in lean control animals. The mechanism by which PPAR\u03b3 represses gene expression is not entirely clear. Trans-repression through binding of inflammatory transcription factors like NF-\u03baB and AP-1 has been proposed as a general mechanism for this type of effect (Glass and Saijo, 2010) although we note that there are PPAR\u03b3 binding sites near the Dnmt3a TSS (not shown). It is thus unclear if direct or indirect (i.e. trans-repression) mechanisms account for the actions of rosiglitazone on Dnmt3a expression in obesity.\n\nIn summary, we have identified a novel role for Dnmt3a as an epigenetic mediator of adipose IR in vitro and in vivo. Future studies will be required to fully elucidate the full range of its target genomic regions and metabolic effects.\n\n## Materials and methods\n\n### Cell culture\n\n3T3-L1 preadipocytes were obtained from ATCC and maintained and differentiated as described (Kang et al., 2012). These cells were authenticated by the ability to differentiate and confirmed to be mycoplasma negative. To generate lentivirus particles, lentiviral constructs were co-transfected with pM2DG- and psPAX-expressing plasmids into 293T cells. After 48 hr, virus-containing supernatant was collected, filtered through 0.45 \u03bcm filters, and added to mature 3T3-L1 adipocytes for 24 hr along with 8 \u03bcg/ml Polybrene. Transduction efficiency was determined by comparison with cells transduced in parallel with a GFP-expressing lentivirus. For the ex vivo system, subcutaneous adipose tissue from wild-type C57Bl/6 mice was fractionated with digestion buffer (10 mg/ml collagenase D, 2.4 units of dispase II, 10 mM \u200bCaCl2 in PBS). Cells from the stromal-vascular fraction (SVF) were plated in culture and differentiated as described previously (Qureshi et al., 2014). \u200bTo differentiate hASCs, Rosi (5 \u00b5M) was added in addition to IBMX (0.5 mM), insulin (5 \u00b5g/ml), and dexamethasone (1 \u00b5M), from day 0\u20132.\n\n### 3H-2-DG assay\n\nMature 3T3-L1 adipocytes were incubated in serum-free DMEM for 4\u20136 hr. Cells were then washed three times with KRH buffer (12 mM HEPES, pH 7.4, 121 mM NaCl, 5 mM KCl, 0.33 mM CaCl2, and 1.2 mM MgSO4) and incubated for 20 min in KRH buffer in the absence or presence of 50 nM insulin. Cells were treated with 2-deoxy-d-[2,6-3H]-glucose (0.33 \u03bcCi/ml) for another 10 min. Glucose uptake was stopped quickly by three rapid washes with KRH buffer containing 200 mM glucose and 10 \u03bcM cytochalasin B on ice. Cells were solubilized in 0.1% SDS for 30 min, and radioactivity was measured by liquid scintillation counting.\n\n### Reagents\n\n2-Deoxy-d-[2,6-3H]-glucose was purchased from PerkinElmer NEN radiochemicals. Insulin, dexamethasone, isobutylmethylxanthine (IBMX), cytochalasin B, glucose, 2-deoxyglucose, 5-Aza, ECCG, and TF-3 were purchased from Sigma-Aldrich. Recombinant TNF-\u03b1 and Fgf21 were purchased from Millipore. RG-108 was purchased from Stemgent.\n\n### Antibodies\n\nAntibodies were purchased from Cell Signaling (Dnmt3a, 3598S; Akt, 9272; pAkt [S473], 3787; IRS-1, 2382), and from Thermo Fisher (\u03b2-actin, MA5-14739, pIRS1[pY612], 44\u2013816G).\n\n### Animals\n\nFor \u200brosiglitazone studies, female mice ob/ob and ob/+were treated starting at 8 weeks of age with \u200brosiglitazone by gavage (10 mg/kg body weight) in 0.5% carboxymethylcellulose versus 0.5% carboxymethylcellulose vehicle control daily for 6 weeks. For chow and high-fat feeding studies, male C57Bl/6J mice were put on diet beginning at 8 weeks of age and continued for three months (n\u00a0=\u00a08 per dietary condition). Samples were collected from the perigonadal fat pad.\n\nFor histology, adipose tissues were fixed with neutral-buffered formalin and embedded in paraffin and sections were stained with H&E.\n\nFor in vivo insulin signaling assay, after overnight fast, insulin (10 U/kg, 5 min) or saline IP were given to WT and KO mice on HFD. After 10 min various tissues were harvested and stored at \u201380\u00b0C until use. Tissue samples were homogenized in cell signaling lysis buffer containing protease inhibitors (Roche) and phosphatase inhibitors (Sigma-Aldrich) and subjected to western blotting. All animal work was approved by the BIDMC IACUC and/or the UC Berkeley ACUC.\n\n### RNA extraction and quantitative PCR\n\nTotal RNA was extracted from cells or tissues using TRIzol reagent according to the manufacturer\u2019s instructions. cDNA was reverse-transcribed from 1 \u03bcg of RNA using the RETROscript first strand synthesis kit (Ambion). Quantitative PCR (qPCR) was performed with SYBR Green qPCR Master Mix (Applied Biosystems) using a 7900HT Fast Real-Time PCR System (Applied Biosystems) and CFX96 Touch (Bio Rad). Primer sequences are listed in Supplementary file 3. The relative amount of mRNA normalized to \u200bcyclophilin B was calculated using the delta\u2013delta method (Livak and Schmittgen, 2001).\n\n### Plasmids\n\nHairpins against Dnmt1, Dnmt3a, and Dnmt3b were purchased from Sigma. Lentiviral overexpression vectors for Dnmt1, 3a, and 3b were subcloned into pCDH using various multicloning sites (XbaI/NotI for \u200bDnmt1, EcoRI/NotI for Dnmt1, Dnmt3a, Dnmt3a-CM) and NotI sites and hairpins targeting \u200bDnmts were subcloned at AgeI/EcoRI or purchased from Open Biosystems. Hairpin sequences are shown in Supplementary file 3. Fgf21-luc (1497/+5) was generously provided by Dr. Steven Kliewer (UT Southwestern).\n\n### MeDIP-qPCR\n\nGenomic DNA was sheared by sonication to an average of 200\u2013800 bp size. Two microgram of denatured DNA was incubated with 2 \u03bcg of anti-5-methylcytidine antibody (Epigentek) in IP buffer (10 mM Na-Phosphate pH 7.0, 0.14 M NaCl, 0.05% Triton X-100) for 2 hr at 4\u00b0C. Antibody-bound DNA was collected with 20 \u03bcl of Dynabeads anti-mouse IgG (Invitrogen Dynal, Oslo, Norway) for 1 hr at 4\u00b0C on a rotating wheel and successively washed five times with washing buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8.1, 150 mM NaCl), and twice with TE (10 mM Tris\u00b7Cl, 1 mM EDTA pH 8.0). DNA was recovered in digestion buffer 125 \u03bcl buffer (50 mM Tris pH 8.0, 10 mM EDTA, 0.5% SDS, 35 \u03bcg proteinase K) and incubated for 3 hr at 65\u00b0C. Recovered DNA was used for qPCR analysis. Primers for MeDIP-qPCR studies are listed in Supplementary file 3. All data are normalized to input.\n\n### RNA-seq studies\n\nmRNA was purified from 100 ng of total RNA using the Ribo-Zero Magnetic Gold Kit (catalog MRZG126, Illumina). Libraries were prepared using the TruSeq RNA Library Preparation Kit v2 (catalog RS-122\u20132001, Illumina) according to the manufacturer\u2019s protocol starting with the EPF step. Sequencing was performed on the Illumina HiSeq2500. RNA-Seq data are aligned using TopHat2 (Kim et al., 2013). Reads are assigned to transcripts using featureCounts and an mm9 genome modified to minimize overlapping transcripts (Liao et al., 2014). Differential expression analysis of the data is performed using EdgeR (Robinson et al., 2010).\n\n### DNA methylation and mRNA expression in human adipose tissue\n\nDNA methylation was analyzed in adipose tissue from 28 subjects with type 2 diabetes and 28 controls as well as in adipose tissue of 14 monozygotic twin pairs (n\u00a0=\u00a028) using Infinium HumanMethylation450 BeadChips (Illumina) according to our previous study where we also present the characteristics of these subjects (Nilsson et al., 2014). Their characteristics are presented in Supplementary file 4. mRNA was analyzed in adipose tissue from the 12 monozygotic twin pairs (n\u00a0=\u00a024) using GeneChip Human Gene 1.0 ST arrays (Affymetrix, Santa Clara, CA) according to the manufacturer\u2019s recommendations. In the present study, we studied mRNA expression and DNA methylation of CpG sites annotated to FGF21. DNA and RNA were extracted from human adipose tissue as presented (Nilsson et al., 2014).\n",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "182e11c6-8dd1-432e-b319-458b291b61f4",
+      "submission_id": "967dd122-6eb0-4192-8545-69c393a16b64",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Clifford J Rosen, Maine Medical Center Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30766.041](https://doi.org/10.7554/eLife.30766.041)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dnmt3a is an epigenetic mediator of adipose insulin resistance\" for consideration by eLife. Your article has been favorably evaluated by Mark McCarthy (Senior Editor) and three reviewers, one of whom, Clifford J Rosen (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Rob Koza (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Overall there is significant enthusiasm for this manuscript, if the suggestions noted below by the reviewing editor are considered within the context of the other comments and the time frame for resubmission.\n\nEssential revisions:\n\nThere were a couple of points that need to be addressed in the response and incorporated within the manuscript. These include three major comments:\n\n1) A clearer rationale for studying epididymal fat as the major tissue source for the studies and elaboration about the possible beiging that could occur in the conditional deletion as a mechanism for the enhanced insulin sensitivity.\n\n2) More elaboration about the regulation of the enzyme itself and the impact of activated PPARG on expression of Dnmt3.\n\n3) Considerations for more in vivo proof that FGF-21 is the target repressor of Dnmt3.\n\nReviewer #1:\n\nRosen and colleagues in this paper found enhanced expression of DNA methyltransferases (Dnmts) in insulin resistance. Pharmacological and genetic inhibition studies demonstrated that Dnmt3a was both necessary and sufficient to mediate insulin resistance in cultured mouse and human adipocytes. In addition, adipose-specific Dnmt3a knock-out mice were protected from diet-induced insulin resistance and glucose intolerance without accompanying changes in adiposity. Gene expression profiling studies revealed Fgf21 as a key negatively regulated Dnmt3a target gene in adipocytes with concordant changes in DNA methylation at the Fgf21 promoter region. Fgf21 rescued Dnmt3a-mediated insulin resistance in vitro, and DNA methylation at the FGF21 locus was elevated in human subjects with diabetes and correlated negatively with expression of FGF21 in human adipose tissue. Thus they concluded that adipose Dnmt3a is a novel epigenetic mediator of insulin resistance in vitro and in vivo.\n\nThis manuscript breaks new ground in describing an epigenetic mechanism for insulin resistance that is mediated through adipose specific FGF-21. The experiments are straightforward, the results consistent and the discussion is not over-reaching. The in vivo data are strong, and the in vitro rescue and silencing studies stand up to closer scrutiny. The human studies provide a translational perspective although somewhat limited by the confounders in T2d. The dose dependent suppression of Fgf21 luc with Dnmt3a in figure 6D is particularly striking. Thus overall there are considerable strengths that are both basic and translational. The concerns are relatively limited and are noted below:\n\n1) Rosiglitazone suppressed Dnmt3a \u2013 have the authors looked at whether activated PPARG directly mediates the suppression of Dnmt3a expression, or is it one of the many downstream targets of PPARG? This is particularly relevant since the enzyme's regulation is not defined, although it increases with a HFD, albeit without a known mechanism.\n\n2) Can the authors discuss the discrepancy in vivo between circulating FGF-21 (likely hepatic- low) and adipose FGF-21 levels (high) in the Dnmt3a KO mice?\n\n3) The authors mention that Fgf21 null mice do not support Rosi-mediated insulin sensitivity \u2013 does crossing the Fgf21-/- with the Dnmt3 adipose specific KO restore insulin resistance in those mice fed a HFD? This certainly would provide further in vivo proof of concept that FGF-21 is the target repressor of Dnmt3a.\n\n4) The human studies are interesting but somewhat limited by the small number of subjects and the relatively weak, albeit significant negative regressions between methylation at the Fgf21 locus and mRNA expression at CpG sites. Of concern is the lack of a description of the diabetic subjects and their controls. For example, were the T2D patients treated with oral agents and/or insulin and did concurrent treatment affect methylation expression status?\n\n5) One of the novel aspects of these studies is the similar weight gain and fat mass change in the Drnmt3a adipose specific KO, compared to the control. Thus insulin sensitivity is maintained even in the face of greater adiposity, a key finding that needs more emphasis in the Results and Discussion.\n\n6) The authors fail to cite the paper by Kamei et al. in Obesity 2010, which demonstrated that an aP2 transgenic Dnmt3 mouse (PMID: 19680236) exhibit similar weight gain to wt mice; but importantly those mice have increased expression of Tnfa and MCP-1 in fat from their adipose depots. Similarly in that paper Dnmt3 expression was higher in WT mice fed a HFD. There should be a citation and also discussion about that paper (limitations based on the aP2 promoter, etc.).\n\nReviewer #2:\n\nThe manuscript entitled: 'Dnmt3a is an epigenetic mediator of adipose insulin resistance' submitted presents substantial and compelling evidence that adipose tissue Dnmt3a plays a regulatory role in insulin resistance. The PIs present a clear and logical progression of studies with knockdown and transgenic overexpression of Dnmt3a in cultured adipocytes; and, adipose tissue specific inactivation of Dnmt3a in mice. In addition, RNA-seq analyses of 3T3-L1 adipocytes with shRNA knockdown or transgenic overexpression of Dnmt3a identified Fgf21 as a Dnmt3a target gene. Analyses of the Fgf21 promoter using MeDIP-qPCR confirmed DNMT3A-mediated methylation as a mechanism for Fgf21 repression. Overall, these studies are comprehensive and very well presented; and, begin to elucidate epigenetic mechanisms that can modulate adipose tissue 'health' with respect to insulin resistance and glucose uptake.\n\n1) What is the rationale for using the epididymal adipose tissue depot to measure HFD-mediated induction of Dnmt3a? Are there differences in HFD regulation of Dnmt3a between visceral and subcutaneous adipose tissue? Fgf21?\n\n2) Although not as dramatic as in adipose tissue, there is a relatively robust and significant increase of Dnmt3a in skeletal muscle in mice fed a HFD (Figure 1\u2014figure supplement 1). What is the relative expression of skeletal muscle Dnmt3a with respect to adipose tissue and liver? What are the potential implications for HFD-mediated up-regulation of skeletal muscle Dnmt3a with respect to Fgf21 expression?\n\nReviewer #3:\n\nThe manuscript \"Dnmt3a is an epigenetic mediator of adipose insulin resistance\" by You et al. presents new data linking the DNA methyltransferase Dnmt3a to insulin resistance in adipocytes. The authors start by demonstrating increased expression of Dnmt3a in models of insulin resistance. They then do pharmacologic and genetic studies in vitro to support a role for Dnmt3a in adipocyte insulin sensitivity. They then go on to generate an adipocyte-specific Dnmt3a knockout mouse and show that it is protected from diet-induced insulin resistance. Finally, they perform mechanistic studies showing that Fgf21 is negatively regulated by Dnmt3a. This is a well-written paper, with novel data, and well-designed experiments. As such, this would be of broad interest to the readership of this journal.\n\nIf the authors are able to address the point below, the manuscript would be further strengthened:\n\n1) In their studies here, the authors only look at Dnmt3a in gonadal white fat (eWAT). Since Dnmt3a is apparently broadly expressed, it would be interesting to know whether it is also increased in subcutaneous/beige fat and in brown fat in models of insulin resistance. Moreover, it would be relevant to know whether beige/brown fat are altered in the adipocyte-specific Dnmt3a knockout model. If for example, the mutant mouse has activated brown or beige fat, this could be an explanation for the improved glucose and insulin tolerance.\n",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8be1fb0f-5486-4af2-a56a-10aa874c7fb9",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C1",
+      "claim": "Dnmt1 and Dnmt3a mRNA expression was elevated in adipose tissue, especially in epididymal and mesenteric WAT in diet-induced obesity (DIO) mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "In a diet-induced obesity (DIO) mouse model, Dnmt1 and Dnmt3a mRNA expression was elevated in adipose tissue, especially in epididymal and mesenteric WAT (Figure 1A, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 1A, which present mRNA expression measurements in adipose tissue from chow- and high fat-fed mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "96854f1e-a12c-437a-8869-49509161da88",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C2",
+      "claim": "Dnmt3a expression was significantly induced by HFD in skeletal muscle, but to a lesser degree than in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt3a expression was significantly induced by HFD in skeletal muscle, but to a lesser degree than in adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a direct observation from the experimental data comparing tissue responses to HFD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "3a6bf488-101d-419e-b6f8-ce8678d392bf",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C3",
+      "claim": "No effect of HFD was observed on Dnmt expression in liver.",
+      "claim_type": "EXPLICIT",
+      "source": "No effect of HFD was observed in liver (Figure 1\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1B\u2013C showing liver Dnmt expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "8400da24-c2ce-4d9a-bbb1-134a8e86cb24",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C4",
+      "claim": "In genetically obese ob/ob mice, mRNA expression of all three functional Dnmts was elevated in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In genetically obese ob/ob mice, mRNA expression of all three functional Dnmts was elevated in adipose tissue (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B measuring Dnmt mRNA expression in ob/ob mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "40aae4bf-807f-455c-8691-5ff09b3b4b67",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C5",
+      "claim": "Expression of Dnmts was significantly reduced after treatment with the insulin sensitizer rosiglitazone in ob/ob mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of these genes was significantly reduced after treatment with the insulin sensitizer rosiglitazone (Rosi) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B comparing Dnmt expression with and without rosiglitazone treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "880430d3-17c0-4a9d-8079-ab32c69f8fe2",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C6",
+      "claim": "Increased adipose expression of Dnmt3a was confirmed by immunoblotting in DIO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased adipose expression of Dnmt3a was confirmed by immunoblotting in DIO mice (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 1C and quantification in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "07c1229f-270c-42e7-b2a9-d32fff8f1cf3",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C7",
+      "claim": "Relative expression of Dnmt3a was higher in eWAT compared to skeletal muscle and liver in normal chow-fed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative expression of Dnmt3a was higher in eWAT compared to skeletal muscle and liver compared in normal chow-fed mice (Figure 1\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1D\u2013E comparing Dnmt3a expression across tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "2103e7e7-8c12-470e-9284-4240d89ebc6e",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C8",
+      "claim": "Dnmt2 and Dnmt3l mRNA displayed minimal expression in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt2 and Dnmt3l mRNA displayed minimal expression in adipose tissue (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this as an observation from their experiments, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "fc4811c8-a28d-42e3-8503-b6f071cc22e4",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C9",
+      "claim": "Knock-down of individual Dnmts did not have a major impact on the basal level of insulin sensitivity when assessed by insulin-stimulated glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-down of individual Dnmts did not have a major impact on the basal level of insulin sensitivity when assessed by insulin-stimulated glucose uptake (Figure 2\u2014figure supplement 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data shown in Figure 2\u2014figure supplement 2A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "54b242fd-d520-453b-90ee-b8e64a79760b",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C10",
+      "claim": "Knock-down of Dnmt3a, but not Dnmt1 or Dnmt3b, protected adipocytes from Dex- and TNF-mediated IR as assessed by insulin-stimulated glucose uptake and signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knock-down of Dnmt3a, but not Dnmt1 or Dnmt3b, protected adipocytes from Dex- and TNF-mediated IR as assessed by insulin-stimulated glucose uptake and signal transduction (Figure 2A,B, Figure 2\u2014figure supplement 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data and Western blot data shown in Figure 2A,B and Figure 2\u2014figure supplement 2A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f41e2bd7-4295-4f92-8a61-bd65276b5326",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C11",
+      "claim": "Overexpression of Dnmt3a and 3b, but not Dnmt1, potently inhibited insulin-stimulated glucose uptake in mature 3T3-L1 adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overexpression of Dnmt3a and 3b, but not Dnmt1, potently inhibited insulin-stimulated glucose uptake (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "08f4caa8-5a0f-45a8-9eaa-c58d3ac146ef",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C12",
+      "claim": "Overexpression of Dnmt3a powerfully inhibited insulin-stimulated glucose uptake in in vitro differentiated adipocytes from human adipose derived stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we tested whether the causal role of Dnmt3a in the development of insulin resistance is conserved in human adipocytes. Overexpression of Dnmt3a powerfully inhibited insulin-stimulated glucose uptake in in vitro differentiated adipocytes from human adipose derived stem cells (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data in human adipocytes shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "cdee6571-13a7-4baa-93ed-377fdf8e7b6d",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C13",
+      "claim": "Dnmt3a is both necessary and sufficient to mediate IR in adipocytes in a cell autonomous manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our gain- and loss-of-function studies in vitro show that Dnmt3a is both necessary and sufficient to mediate IR in adipocytes in a cell autonomous manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the gain- and loss-of-function experimental data presented in the preceding paragraphs and figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "63dab623-8ce6-4983-a12b-acad48802dd3",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C14",
+      "claim": "Both 5-azacytidine and RG-108 Dnmt inhibitors blocked Dex- and TNF-mediated IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, both Dnmt inhibitors blocked Dex- and TNF-mediated IR (Figure 3A,B, Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data shown in Figure 3A,B and Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "efa418cf-25af-4afd-881d-a7714a53b511",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C15",
+      "claim": "The naturally occurring Dnmt inhibitors epigallocatechin gallate (ECCG) and theaflavin-3,3\u2032-digallate (TF-3) showed insulin-sensitizing activity in the setting of Dex- and TNF-mediated IR.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these synthetic inhibitors, the naturally occurring Dnmt inhibitors (Rajavelu et al., 2011) epigallocatechin gallate (ECCG) and theaflavin-3,3\u2032-digallate (TF-3) also showed insulin-sensitizing activity in the setting of Dex- and TNF-mediated IR (Figure 3\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data shown in Figure 3\u2014figure supplement 1C\u2013F and cites prior work on these compounds as Dnmt inhibitors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "bd397b39-6a98-47f5-acc8-006dffc770e5",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C16",
+      "claim": "Unlike the wild-type allele, Dnmt3a C706S was unable to suppress insulin-stimulated glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "To further probe this hypothesis, we overexpressed a catalytically inactive allele of Dnmt3a (C706S) (Hsieh, 1999). Unlike the wild-type allele, Dnmt3a C706S was unable to suppress insulin-stimulated glucose uptake (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data shown in Figure 3C comparing wild-type and catalytically inactive Dnmt3a, and cites prior work characterizing the C706S mutation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "c8f223c9-b471-47e1-825c-bfb09ba893f6",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C17",
+      "claim": "DNA methyltransferase activity is essential for Dnmt3a to mediate IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the pharmacological and genetic evidence indicates that DNA methyltransferase activity is essential for Dnmt3a to mediate IR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the pharmacological inhibitor experiments and the catalytically inactive mutant experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4bc0ea7e-f947-4184-a13f-9fb18642885d",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C18",
+      "claim": "On chow diet, male WT and Dnmt3aAdiKO animals did not show any obvious change in their body weight, insulin sensitivity, glucose tolerance, or insulin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "On chow diet, male WT and Dnmt3aAdiKO animals did not show any obvious change in their body weight, insulin sensitivity, glucose tolerance, or insulin levels (Figure 4\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4\u2014figure supplement 2A\u2013D measuring these metabolic parameters in chow-fed mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "d70f209a-54fe-4669-a638-8ca4fedb8429",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C19",
+      "claim": "On HFD (45% fat), Dnmt3aAdiKO mice showed no significant differences in body weight or composition relative to littermate controls.",
+      "claim_type": "EXPLICIT",
+      "source": "On HFD (45% fat), Dnmt3aAdiKO mice still showed no significant differences in body weight or composition relative to littermate controls (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by body weight and body composition data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "219ce4c7-1eea-43a3-a267-6564a39a09ac",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C20",
+      "claim": "The effect of long-term fasting (16 hr) on body weight or body composition did not differ between genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the effect of long-term fasting (16 hr) on body weight or body composition did not differ between genotypes (Figure 4C), suggesting that gross energy homeostasis is not altered in the knock-out animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fasting data shown in Figure 4C and includes an inference about energy homeostasis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "544eeaef-3c7c-437b-8d64-0b256bc59b09",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C21",
+      "claim": "High fat fed male Dnmt3aAdiKO mice exhibited improved glucose tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite no obvious change in energy balance, high fat fed male Dnmt3aAdiKO mice exhibited improved glucose tolerance (Figure 4D,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose tolerance test data shown in Figure 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "869bcb99-099e-4fe6-b14e-1c199de25ba1",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C22",
+      "claim": "High fat fed male Dnmt3aAdiKO mice exhibited improved insulin sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "high fat fed male Dnmt3aAdiKO mice exhibited improved glucose tolerance (Figure 4D,E) and insulin sensitivity (Figure 4F,G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by insulin tolerance test data shown in Figure 4F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "469b60c8-77bc-40f5-a8a2-59a7ba409232",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C23",
+      "claim": "High fat fed male Dnmt3aAdiKO mice had reduced serum insulin in the fed state.",
+      "claim_type": "EXPLICIT",
+      "source": "high fat fed male Dnmt3aAdiKO mice exhibited improved glucose tolerance (Figure 4D,E) and insulin sensitivity (Figure 4F,G) with reduced serum insulin in the fed state (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by serum insulin measurements shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "fab8d7df-0425-4f2b-ae2a-3be44c07e1d4",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C24",
+      "claim": "Male Dnmt3aAdiKO mice display increased insulin signal transduction in adipose tissue, as demonstrated by increased insulin-stimulated phosphorylation of IRS and AKT.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their metabolic improvement, male Dnmt3aAdiKO mice display increased insulin signal transduction in adipose tissue, as demonstrated by increased insulin-stimulated phosphorylation of IRS and AKT (Figure 4I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 4I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "2fcba010-aca3-446d-88bd-bb2a5b0d97a4",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C25",
+      "claim": "Female Dnmt3aAdiKO mice display improved insulin sensitivity and glucose tolerance on HFD without a change in body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, female Dnmt3aAdiKO mice display improved insulin sensitivity and glucose tolerance on HFD without a change in body weight (Figure 4\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4\u2014figure supplement 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "17aa49f8-943b-433e-a823-8e94fb5a3f91",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C26",
+      "claim": "No consistent change in the expression of major thermogenic genes such as Ucp1 and Ppargc1a was found in either iWAT and BAT of Dnmt3aAdiKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to the former, we found no consistent change in the expression of major thermogenic genes such as Ucp1 and Ppargc1a in either iWAT and BAT (Figure 4\u2014figure supplement 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 4\u2014figure supplement 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "9f7d9bcd-2e6e-47ff-b8b1-5475a8f63c1b",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C27",
+      "claim": "Gene expression analysis showed a nonsignificant trend toward reduced expression of proinflammatory genes such as Tnfa and Ccl2 in the eWAT of Dnmt3aAdiKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, gene expression analysis showed a nonsignificant trend toward reduced expression of proinflammatory genes such as Tnfa and Ccl2 (which encodes MCP-1) in the eWAT of Dnmt3aAdiKO mice (Figure 4\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 4\u2014figure supplement 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "36c8df29-0c31-4fc4-91a5-52f7d5bed2e4",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C28",
+      "claim": "No obvious change in the density of crown-like structures was observed between WT and KO tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We also saw no obvious change in the density of crown-like structures between WT and KO tissues (Figure 4\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological data shown in Figure 4\u2014figure supplement 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "79c15619-762b-4ec2-9716-03f95c9c7406",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C29",
+      "claim": "Adipose-specific deletion of Dnmt3a confers protection from diet-induced IR in a manner that is independent of adiposity, inflammation, or browning of white adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that adipose-specific deletion of Dnmt3a confers protection from diet-induced IR in a manner that is independent of adiposity, inflammation, or browning of white adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the multiple lines of experimental data showing improved insulin sensitivity without changes in body weight, inflammation markers, or thermogenic gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "62f90447-6df2-4a62-b2ec-263777331146",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C30",
+      "claim": "97 genes were repressed after shRNA-mediated Dnmt3a knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 97 genes were repressed after shRNA-mediated Dnmt3a knock-down, while only eight genes were up-regulated in the presence of excess Dnmt3a; the single gene showing concordant regulation was Dnmt3a itself (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "e589d42f-203a-46d0-9e4d-68a8ff73935d",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C31",
+      "claim": "Only eight genes were up-regulated in the presence of excess Dnmt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 97 genes were repressed after shRNA-mediated Dnmt3a knock-down, while only eight genes were up-regulated in the presence of excess Dnmt3a; the single gene showing concordant regulation was Dnmt3a itself (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "c6de1238-c515-4ad7-bcf9-aae57566e21c",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C32",
+      "claim": "The single gene showing concordant regulation in both Dnmt3a knockdown and overexpression was Dnmt3a itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 97 genes were repressed after shRNA-mediated Dnmt3a knock-down, while only eight genes were up-regulated in the presence of excess Dnmt3a; the single gene showing concordant regulation was Dnmt3a itself (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "9e9c08b6-c3e6-4c85-9d03-5596b32673c9",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C33",
+      "claim": "290 genes were induced by Dnmt3a knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 290 genes were induced by Dnmt3a knock-down, and 36 genes showed diminished expression after Dnmt3a overexpression; seven genes were concordantly regulated by both manipulations (Figure 5B and C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "670d4d2a-f581-4083-b822-213a07f6511a",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C34",
+      "claim": "36 genes showed diminished expression after Dnmt3a overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 290 genes were induced by Dnmt3a knock-down, and 36 genes showed diminished expression after Dnmt3a overexpression; seven genes were concordantly regulated by both manipulations (Figure 5B and C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "d239ae1b-5729-4007-95ce-a443d4ce7c04",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C35",
+      "claim": "Seven genes were concordantly regulated by both Dnmt3a knockdown and overexpression as negative targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 290 genes were induced by Dnmt3a knock-down, and 36 genes showed diminished expression after Dnmt3a overexpression; seven genes were concordantly regulated by both manipulations (Figure 5B and C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "d4d8096f-a5fd-4e86-bbf3-da8cee1ea5de",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C36",
+      "claim": "Dnmt3a works primarily as a repressor of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the expectation that Dnmt3a works primarily as a repressor of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the RNA-seq data showing more genes induced by knockdown than repressed by overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "df6467dd-7e87-44b1-a045-aabecbad05dc",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C37",
+      "claim": "Fgf21 is a negative target gene of Dnmt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the concordantly-regulated negative target genes of Dnmt3a, we were immediately struck by the presence of Fgf21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the RNA-seq analysis identifying Fgf21 among the concordantly regulated genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "c70068d4-c7b2-4ba7-af33-d3721fcda2b5",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C38",
+      "claim": "FGF21 is known to facilitate glucose uptake in adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21 is known to facilitate glucose uptake in adipocytes (Ge et al., 2011; Lee et al., 2014; Minard et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites three prior studies demonstrating FGF21's role in glucose uptake.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "b28e367c-9010-4538-bc89-658c7111c352",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C39",
+      "claim": "FGF21 is a positive target gene of PPAR\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21 is known to facilitate glucose uptake in adipocytes (Ge et al., 2011; Lee et al., 2014; Minard et al., 2016), and is a positive target gene of PPAR\u03b3 (Muise et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study showing PPAR\u03b3 regulation of FGF21.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "e2818b26-7e2c-4de8-a9c9-0eac5e3b1fe1",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C40",
+      "claim": "Mice lacking FGF21 do not support Rosi-mediated insulin sensitization in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mice lacking FGF21 do not support Rosi-mediated insulin sensitization in vivo (Dutchak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study demonstrating the requirement of FGF21 for rosiglitazone's insulin-sensitizing effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "93f32522-d237-4661-b07d-557d93d3f2c0",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C41",
+      "claim": "Fgf21 expression is reduced in cultured adipocytes overexpressing Dnmt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by Q-PCR that Fgf21 expression is indeed reduced in cultured adipocytes overexpressing Dnmt3a, is increased in cells expressing shDnmt3a, and most importantly, is up-regulated in the adipose tissue of Dnmt3aAdiKO mice (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "96f9bfac-cc56-4178-9953-7732ec01028a",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C42",
+      "claim": "Fgf21 expression is increased in cells expressing shDnmt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by Q-PCR that Fgf21 expression is indeed reduced in cultured adipocytes overexpressing Dnmt3a, is increased in cells expressing shDnmt3a, and most importantly, is up-regulated in the adipose tissue of Dnmt3aAdiKO mice (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "affb5dba-341b-4459-abda-4b850cac59da",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C43",
+      "claim": "Fgf21 expression is up-regulated in the adipose tissue of Dnmt3aAdiKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by Q-PCR that Fgf21 expression is indeed reduced in cultured adipocytes overexpressing Dnmt3a, is increased in cells expressing shDnmt3a, and most importantly, is up-regulated in the adipose tissue of Dnmt3aAdiKO mice (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "2b750f75-7adb-4472-8654-4f7f378975b5",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C44",
+      "claim": "Serum levels of Fgf21 were reduced in HFD-fed Dnmt3aAdiKO mice compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike adipose tissue levels, serum levels of Fgf21 were reduced in HFD-fed Dnmt3aAdiKO mice compared to controls (Figure 5\u2014figure supplement 5\u2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ELISA measurements shown in Figure 5\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "a89dde3e-88f4-476d-8774-dbf3b3d8b09c",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C45",
+      "claim": "Recombinant FGF21 restored insulin sensitivity in 3T3-L1 adipocytes that overexpress Dnmt3a in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether restoration of FGF21 levels could ameliorate Dnmt3a-mediated IR, we treated 3T3-L1 adipocytes that overexpress Dnmt3a with recombinant FGF21, which restored insulin sensitivity in a dose-dependent manner (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by glucose uptake assay data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "d802b68f-885e-4d37-9d01-0905a4b368d0",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C46",
+      "claim": "The level of DNA methylation at gene promoters is inversely correlated with mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the level of DNA methylation at gene promoters is inversely correlated with mRNA expression (Jones, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior review establishing the general relationship between DNA methylation and gene expression.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "0648b2d8-e7db-4f29-9942-966760617e10",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C47",
+      "claim": "Genomic DNA hypermethylation at Fgf21 promoter regions was detected in Dnmt3a overexpressor 3T3-L1 cells compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Using methylated DNA precipitation PCR (MeDIP-qPCR), we detected genomic DNA hypermethylation at Fgf21 promoter regions in Dnmt3a overexpressor 3T3-L1 cells compared to controls (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by MeDIP-qPCR data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "52915f27-5f2c-44fe-aced-be3c3020e423",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C48",
+      "claim": "DNA hypomethylation of Fgf21 promoter regions was seen in Dnmt3a knock-down cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, DNA hypomethylation of these same regions was seen in Dnmt3a knock-down cells (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by MeDIP-qPCR data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "526b6374-c2c3-4d08-b3e5-b51074207b4e",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C49",
+      "claim": "Reduced DNA methylation at the Fgf21 promoter was found in fractionated adipocytes of Dnmt3aAdiKO animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the in vitro models, we conducted MeDIP-qPCR analysis using genomic DNA from fractionated adipocytes of Dnmt3aAdiKO and control animals, finding reduced DNA methylation at the Fgf21 promoter in KO cells (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by MeDIP-qPCR data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "dacce1e8-5c41-4e2f-863a-763f8fc8cea0",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C50",
+      "claim": "Co-transfection of Dnmt3a potently inhibited promoter activity of Fgf21.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with DNA methylation pattern at the Fgf21 promoter region, co-transfection of Dnmt3a potently inhibited promoter activity of Fgf21 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by luciferase reporter assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "0be4e938-173b-4f81-8ccf-3e24f15a6336",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C51",
+      "claim": "Dnmt3a-mediated suppression of Fgf21 involves changes in DNA methylation profile at key promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that Dnmt3a-mediated suppression of Fgf21 involves changes in DNA methylation profile at key promoter regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the MeDIP-qPCR and reporter assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "8b4dffce-5d02-4d8c-a8a8-f4923e9daf87",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C52",
+      "claim": "Hypermethylation of four CpG sites annotated to FGF21 was found in adipose tissue of subjects with type 2 diabetes compared with non-diabetic controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our mouse data, we found hypermethylation of four CpG sites annotated to FGF21 in adipose tissue of subjects with type 2 diabetes compared with non-diabetic controls (Figure 7A and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DNA methylation data from human adipose tissue shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "92d07e24-a0b1-4840-a068-f96481ac11eb",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C53",
+      "claim": "A negative correlation was found between DNA methylation and mRNA expression of FGF21 in human adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found a negative correlation between DNA methylation and mRNA expression of FGF21 in human adipose tissue (Figure 7B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 7B\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f2a82cf5-b84d-4597-a1a6-0700d7da7d99",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C54",
+      "claim": "Increased DNA methylation of FGF21 plays a role in the regulation of adipose FGF21 expression in association with metabolic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support a role for increased DNA methylation of FGF21 in the regulation of adipose FGF21 expression in association with metabolic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the human adipose tissue DNA methylation and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "21cd827b-2c24-499a-ad9b-ce66740fd9d1",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C55",
+      "claim": "Genetic differences cannot fully explain many features of obesity and T2D, such as discordance in monozygotic twins, and the close relationship with lifestyle factors.",
+      "claim_type": "EXPLICIT",
+      "source": "While genetics plays an important role in obesity and T2D, genetic differences cannot fully explain many features of these conditions, such as discordance in monozygotic twins, and the close relationship with lifestyle factors (McCarthy, 2010; Morris et al., 2012; Voight et al., 2010; Zeggini et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites four prior studies discussing the limitations of genetic explanations for obesity and T2D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f6808198-996a-4a5f-b53a-6620a37bcea7",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C56",
+      "claim": "The vast majority of GWAS-proven allelic variants associated with T2D correspond much better to altered insulin secretion and islet function rather than to IR per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the vast majority of GWAS-proven allelic variants associated with T2D correspond much better to altered insulin secretion and islet function rather than to IR per se (Voight et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior GWAS study characterizing T2D-associated genetic variants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4717deb1-43ac-4379-8078-987d425657fe",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C57",
+      "claim": "A recent epigenome-wide association study (EWAS) linked alterations in DNA methylation to whole-body insulin sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion has been borne out by a recent epigenome-wide association study (EWAS) linking alterations in DNA methylation to whole-body insulin sensitivity (Zhao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior EWAS study linking DNA methylation to insulin sensitivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "2209e578-d07e-4db5-9e1d-05fa8d8c3d38",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C58",
+      "claim": "Genetic variants may cause disease in a DNA methylation-dependent manner, as has recently been shown for T2D and obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, even genetic variants may cause disease in a DNA methylation-dependent manner, as has recently been shown for T2D and obesity (Dayeh et al., 2013; Elliott et al., 2017; Nilsson et al., 2014; Olsson et al., 2014; Volkov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites five prior studies demonstrating DNA methylation-dependent effects of genetic variants in metabolic disease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "0ff451fd-7664-4d2b-8c9b-dd42560c35c1",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C59",
+      "claim": "Adipose tissue from patients with T2D exhibit numerous methylation and expression differences relative to unrelated healthy controls, with many of the same changes also seen in twin pairs discordant for T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also shown that adipose tissue from patients with T2D exhibit numerous methylation and expression differences relative to unrelated healthy controls, with many of the same changes also seen in twin pairs discordant for T2D (Nilsson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study by the authors showing DNA methylation differences in T2D adipose tissue.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "cb8c7bb1-fe88-46f0-9c56-8677998072f6",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C60",
+      "claim": "Administration of pan-inhibitors of histone deacetylase exerts beneficial metabolic effects in both mice and humans, such as increased energy expenditure, insulin sensitivity and secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, administration of pan-inhibitors of histone deacetylase exerts beneficial metabolic effects in both mice and humans, such as increased energy expenditure, insulin sensitivity and secretion (Christensen et al., 2011; Daneshpajooh et al., 2017; Sharma and Taliyan, 2016; Ye, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites four prior studies demonstrating metabolic effects of HDAC inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4fd12fd9-4ed1-43b9-a584-2442db3e8eb4",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C61",
+      "claim": "DNA methyltransferase inhibitors have been shown to have an insulin-sensitizing effect in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methyltransferase inhibitors have also been shown to have an insulin-sensitizing effect in vivo and in vitro (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study demonstrating insulin-sensitizing effects of DNMT inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "bc484583-3b16-4d41-84c6-69b5f425bf62",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C62",
+      "claim": "Mutant mouse models carrying loss-of function histone modifiers (e.g. Mll2, Ehmt1, Jmhd2a Lsd1) were shown to have profound impact on whole body metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with pharmacological studies, mutant mouse models carrying loss-of function histone modifiers (e.g. Mll2, Ehmt1, Jmhd2a Lsd1) were shown to have profound impact on whole body metabolism (Lee et al., 2006; Ohno et al., 2013; Sambeat et al., 2016; Tateishi et al., 2009; Zeng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites five prior studies demonstrating metabolic effects of histone modifier mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "9590f3d8-2132-4aee-8ba3-dc977b681665",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C63",
+      "claim": "Metabolic consequences in mouse models carrying mutations of histone modifiers appear to be mainly attributable to changes in body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that metabolic consequences in mouse models carrying mutations of histone modifiers appear to be mainly attributable to changes in body weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies on histone modifier mutant mice.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f4aa40d8-0a0b-4034-a65f-0b07199c9d94",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C64",
+      "claim": "Adipose-specific Dnmt3a KO mice are relatively unique in that they display improved insulin sensitivity without a change in adiposity or body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike these examples, adipose-specific Dnmt3a KO mice are relatively unique in that they display improved insulin sensitivity without a change in adiposity or body weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement comparing the current findings to prior studies, drawing on the experimental data presented earlier.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "1e0be61d-3c20-4c23-8585-8f1573468985",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C65",
+      "claim": "The effect of adipose-specific Dnmt3a deletion on insulin action is not dependent on increased beige or brown adipocytes, or on reducing intra-adipose inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the effect on insulin action is not dependent on increased beige or brown adipocytes, or on reducing intra-adipose inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data showing no changes in thermogenic genes or inflammation markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "69f5e721-2740-49b3-a4e6-95288aad8f85",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C66",
+      "claim": "Overexpression of Dnmt3a is sufficient to induce cell autonomous IR in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro study indicates that overexpression of Dnmt3a is sufficient to induce cell autonomous IR, however, it does not seem to be the case in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the in vitro findings from earlier in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "433f9cc1-21b0-4207-a8af-e712addaba4e",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C67",
+      "claim": "Transgenic expression of Dnmt3a per se was not sufficient to render whole body IR and glucose intolerance on chow, HFD, or high methyl diet with chow diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Kamei et al showed that transgenic expression of Dnmt3a per se was not sufficient to render whole body IR and glucose intolerance (Kamei et al., 2010) on chow, HFD, or high methyl diet with chow diet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study by Kamei et al. on Dnmt3a transgenic mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "c653074e-d3ad-450a-b277-54afc1a3c974",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C68",
+      "claim": "Kamei et al. observed only a mild increase in the gene expression of proinflammatory cytokines (i.e. Mcp1 and Tnfa) when animals were put on HFD.",
+      "claim_type": "EXPLICIT",
+      "source": "Authors observed only a mild increase in the gene expression of proinflammatory cytokines (i.e. Mcp1 and Tnfa) when animals were put on HFD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes findings from the Kamei et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "957f2f85-2597-4885-854e-550cda2d43f8",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C69",
+      "claim": "The major caveat of the Kamei et al. study is the use of aP2 promoter to drive the transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the major caveat of this study is the use of aP2 promoter to drive the transgene expression (Jeffery et al., 2014; Kang et al., 2014; Lee et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites three prior studies discussing issues with the aP2 promoter.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "812194dd-a22b-48a2-93c9-79d2f378edeb",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C70",
+      "claim": "Fgf21 is better known as a hepatokine, and the liver is the main source of circulating Fgf21.",
+      "claim_type": "EXPLICIT",
+      "source": "Fgf21 is better known as a hepatokine, and the liver is the main source of circulating Fgf21 (Markan et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study characterizing Fgf21 as a hepatokine.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "51e93e76-b90c-493d-b597-c94f8c56799a",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C71",
+      "claim": "Adipose Fgf21 probably does not circulate, but rather acts in an autocrine/paracrine manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Adipose Fgf21 probably does not circulate, but rather acts in an autocrine/paracrine manner (Dutchak et al., 2012; Markan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites two prior studies suggesting autocrine/paracrine action of adipose Fgf21.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "b650278a-b181-4139-bfab-63834e5c442e",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C72",
+      "claim": "Studies have shown a positive correlation between insulin and circulating Fgf21 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown a positive correlation between insulin and circulating Fgf21 levels (Chavez et al., 2009; Chen et al., 2008; Zhang et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites three prior studies showing correlation between insulin and Fgf21.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "6dbaecea-92c1-4cdd-8ebb-7a42129df50c",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C73",
+      "claim": "Insulin may be a key determinant of Fgf21 in serum.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown a positive correlation between insulin and circulating Fgf21 levels (Chavez et al., 2009; Chen et al., 2008; Zhang et al., 2008), suggesting that insulin may be a key determinant of Fgf21 in serum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies showing correlation between insulin and Fgf21.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "759b0266-9c89-42ca-bf31-856f66a577aa",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C74",
+      "claim": "The reduced insulin levels in Dnmt3a KO mice on HFD may have led to reduction of Fgf21 production in liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that the reduced insulin levels in Dnmt3a KO mice on HFD may have led to reduction of Fgf21 production in liver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed reduced insulin and serum Fgf21 levels in the KO mice.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "cc33a232-8a1b-4400-8eea-098e63553051",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C75",
+      "claim": "Fgf21 serum levels are often elevated in obesity-associated IR, possibly reflecting resistance to Fgf21.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion is in line with the finding that Fgf21 serum levels are often elevated in obesity-associated IR (Fisher and Maratos-Flier, 2016; Morrice et al., 2017), possibly reflecting resistance to Fgf21 (Fisher et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites three prior studies on Fgf21 levels in obesity and potential Fgf21 resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "5dfb7a4d-4958-4349-a8d3-48dc4d4b4170",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C76",
+      "claim": "The local activity of Fgf21 within the fat pad is important for the improved insulin sensitivity in the knock-out mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the local activity of Fgf21 within the fat pad is important for the improved insulin sensitivity in the knock-out mice, although formal proof of this idea would require generating adipose tissue-specific Dnmt3a and Fgf21 double knockout mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed hypothesis based on the experimental findings, with acknowledgment that formal proof requires additional experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "74c37049-3351-4a82-a762-ce37cda3f51b",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C77",
+      "claim": "Three independent studies demonstrated that mutant mice devoid of Fgf21 signaling in adipose tissue secondary to ablation of FGFR1 or bKlotho, were refractory to the insulin-sensitizing effect of Fgf21 administration.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, three independent studies demonstrated that mutant mice devoid of Fgf21 signaling in adipose tissue secondary to ablation of FGFR1 or bKlotho, were refractory to the insulin-sensitizing effect of Fgf21 administration (Adams et al., 2013; BonDurant et al., 2017; Ding et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites three prior studies demonstrating the requirement of adipose Fgf21 signaling for insulin sensitization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "aeebeb6f-3ca2-4fbd-b369-f1fa1be6aad8",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C78",
+      "claim": "Some studies suggested that adiponectin is an essential mediator of Fgf21 metabolic action.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these studies (Adams et al., 2013; Ding et al., 2012) suggested that adiponectin is an essential mediator of Fgf21 metabolic action",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites two prior studies suggesting adiponectin mediates Fgf21 action.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "3653a29e-9f05-41b9-8027-18916758e53c",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C79",
+      "claim": "One study suggested that adiponectin is dispensable for Fgf21 metabolic action.",
+      "claim_type": "EXPLICIT",
+      "source": "the other study (BonDurant et al., 2017) suggested that adiponectin is dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study suggesting adiponectin is not required for Fgf21 action.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "79d4d1c4-5232-445f-bfb8-2e2a3abc114d",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C80",
+      "claim": "There was a trend toward increased mRNA expression of Adipoq in both L1 and primary Dnmt3a KO adipocytes, albeit it did not reach statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "In our studies, albeit it did not reach statistical significance, there was a trend toward increased mRNA expression of Adipoq in both L1 and primary Dnmt3a KO adipocytes (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' experiments, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "e006530f-e1e6-4542-b082-09dec2927151",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C81",
+      "claim": "Control of Fgf21 expression appears to be highly tissue-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Control of Fgf21 expression appears to be highly tissue-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement introducing the tissue-specific regulation of Fgf21.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4d3f075f-fd1b-4031-85d0-4ec9d887152f",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C82",
+      "claim": "PPAR\u03b3 is an important driver of Fgf21 in adipose tissue, while PPAR\u03b1 serves that role in liver.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PPAR\u03b3 is an important driver of Fgf21 in adipose tissue, while PPAR\u03b1 serves that role in liver (Dutchak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study characterizing tissue-specific regulation of Fgf21.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "51a19ec1-979d-4845-b4c7-161b3d2daeae",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C83",
+      "claim": "Other studies have demonstrated that Fgf21 is positively regulated by PPAR\u03b3 in fat.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have also demonstrated that Fgf21 is positively regulated by PPAR\u03b3 in fat (Muise et al., 2008; Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites two prior studies showing PPAR\u03b3 regulation of Fgf21 in adipose tissue.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "119ea947-62db-43fa-86ad-58d437a46fb7",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C84",
+      "claim": "Global DNA methylation profiling will be necessary to identify differentially methylated regions in the setting of Dnmt3a gain- and loss-of function.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to focused studies on Fgf21 promoter regions, global DNA methylation profiling will be necessary to identify differentially methylated regions in the setting of Dnmt3a gain- and loss-of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions needed to fully characterize Dnmt3a's effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "a46d8c36-4093-4637-b32e-9246571396fe",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C85",
+      "claim": "A recent study demonstrated that Dnmt1 may contribute to obesity-associated inflammation and insulin resistance by promoting hypermethylation at the Adipoq locus.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that Dnmt1 may contribute to obesity-associated inflammation and insulin resistance by promoting hypermethylation at the Adipoq locus (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study on Dnmt1's role in insulin resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "47bb5725-bfbf-459a-b555-5327565c6738",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C86",
+      "claim": "Elevated Dnmt1 levels were observed in the adipose tissue of obese animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordant with this study, we also see elevated Dnmt1 levels in the adipose tissue of obese animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' experiments shown earlier in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "3eb34e4f-555a-4728-a8fa-5ecdb16ee5b6",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C87",
+      "claim": "Knockdown of Dnmt1 did not rescue insulin sensitivity in the setting of Dex or TNF.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knockdown of Dnmt1 did not rescue insulin sensitivity in the setting of Dex or TNF, and overexpression of Dnmt1 did not reduce insulin-stimulated glucose uptake in cultured adipocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' experiments shown earlier in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "68b55cef-7f9a-47d5-9601-580f2c277d93",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C88",
+      "claim": "Overexpression of Dnmt1 did not reduce insulin-stimulated glucose uptake in cultured adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knockdown of Dnmt1 did not rescue insulin sensitivity in the setting of Dex or TNF, and overexpression of Dnmt1 did not reduce insulin-stimulated glucose uptake in cultured adipocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' experiments shown earlier in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "7e913720-e472-4c35-925b-687425541e01",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C89",
+      "claim": "Adipose-specific deletion of Dnmt3a promoted insulin sensitivity even in weight-matched obese animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on those criteria, we chose to focus on Dnmt3a, and showed that adipose-specific deletion of this gene promoted insulin sensitivity even in weight-matched obese animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the in vivo findings from earlier in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "ad24e88b-bda5-4e6c-a914-f7e371c931a9",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C90",
+      "claim": "Adipoq was not identified as a regulated target after either deletion or overexpression of Dnmt3a.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we did not identify Adipoq as a regulated target after either deletion or overexpression of Dnmt3a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f7520fcb-c062-4502-b894-32eec20f5ea3",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C91",
+      "claim": "Dnmt3a is not induced by lipids (e.g. palmitate), pro-inflammatory signals (e.g. IL-6, LPS), high doses of insulin, or high glucose in cultured adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite some effort, we have not yet identified the mechanism by which Dnmt3a expression is increased in obesity. We found that Dnmt3a is not induced by lipids (e.g. palmitate), pro-inflammatory signals (e.g. IL-6, LPS), high doses of insulin, or high glucose in cultured adipocytes (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' experiments, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "6d49da9e-bec9-4b4a-80b5-e0d777549311",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C92",
+      "claim": "In vivo administration of thiazolidinediones normalized the expression of Dnmt3a in ob/ob mice but not in lean control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, in vivo administration of thiazolidinediones normalized the expression of Dnmt3a in ob/ob mice but not in lean control animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' experiments shown earlier in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "e80d68de-392c-43d9-8dcd-d5a33357bf6a",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C93",
+      "claim": "The mechanism by which PPAR\u03b3 represses gene expression is not entirely clear.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which PPAR\u03b3 represses gene expression is not entirely clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "9de5068b-bc63-464b-ab80-af7b5779da42",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C94",
+      "claim": "Trans-repression through binding of inflammatory transcription factors like NF-\u03baB and AP-1 has been proposed as a general mechanism for PPAR\u03b3-mediated gene repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Trans-repression through binding of inflammatory transcription factors like NF-\u03baB and AP-1 has been proposed as a general mechanism for this type of effect (Glass and Saijo, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study proposing a mechanism for PPAR\u03b3-mediated repression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "2475612e-7dbc-41f9-8da1-eee49029a6d6",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C95",
+      "claim": "There are PPAR\u03b3 binding sites near the Dnmt3a TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "although we note that there are PPAR\u03b3 binding sites near the Dnmt3a TSS (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' analysis, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "53b4ad5b-76db-4787-bd25-9331ebd93d37",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C96",
+      "claim": "It is unclear if direct or indirect (i.e. trans-repression) mechanisms account for the actions of rosiglitazone on Dnmt3a expression in obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus unclear if direct or indirect (i.e. trans-repression) mechanisms account for the actions of rosiglitazone on Dnmt3a expression in obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement acknowledging uncertainty about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "53e084a2-de57-4f67-9ad8-cfb83d414aa9",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C97",
+      "claim": "Dnmt3a is a novel epigenetic mediator of adipose IR in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have identified a novel role for Dnmt3a as an epigenetic mediator of adipose IR in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion summarizing all the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "13c22716-cbce-415f-b5de-c9184db3b5e4",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C98",
+      "claim": "Future studies will be required to fully elucidate the full range of Dnmt3a's target genomic regions and metabolic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Future studies will be required to fully elucidate the full range of its target genomic regions and metabolic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4d1318b2-6bdf-43bf-a191-7b89691dfec7",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C99",
+      "claim": "Insulin resistance is generally defined as a reduced ability of insulin to provoke metabolic responses, such as glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Insulin resistance (IR) is generally defined as a reduced ability of insulin to provoke metabolic responses, such as glucose uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "fb02b01e-4919-4111-a286-a0577de2286a",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C100",
+      "claim": "Several mechanistic drivers of IR have been proposed, including defects in the insulin signal transduction pathway, dysfunctional mitochondrial respiration, and ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Several mechanistic drivers of IR have been proposed, including defects in the insulin signal transduction pathway, dysfunctional mitochondrial respiration, and ER stress (Boucher et al., 2014; Gregor and Hotamisligil, 2011; Houstis et al., 2006; Ozcan et al., 2004; Samuel and Shulman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites five prior studies proposing various mechanisms of insulin resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "85341afc-8b33-44fa-b718-e05082ed7771",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C101",
+      "claim": "Nuclear pathways (i.e. transcriptional and epigenomic mechanisms) are likely to play an important role in IR development, given that IR often develops over a time course that is inconsistent with rapid signal transduction events.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear pathways in particular (i.e. transcriptional and epigenomic mechanisms) are likely to play an important role, given that IR often develops over a time course that is inconsistent with rapid signal transduction events (Kang et al., 2015; Tan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites two prior studies and makes an inference about the role of nuclear pathways based on the time course of IR development.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "9dd432c8-47e7-4396-bf7e-5f67fbb3629e",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C102",
+      "claim": "There is a large body of data from humans and rodents indicating that the propensity for IR can be passed transgenerationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is a large body of data from humans and rodents indicating that the propensity for IR can be passed transgenerationally; such 'fetal programming' studies strongly imply an epigenetic basis for IR (Carone et al., 2010; Heijmans et al., 2008; Li et al., 2010; Tobi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites four prior studies on transgenerational transmission of IR propensity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "a6cc1e37-2c64-4cab-96b6-1f1a39a463aa",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C103",
+      "claim": "Fetal programming studies strongly imply an epigenetic basis for IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is a large body of data from humans and rodents indicating that the propensity for IR can be passed transgenerationally; such 'fetal programming' studies strongly imply an epigenetic basis for IR (Carone et al., 2010; Heijmans et al., 2008; Li et al., 2010; Tobi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited fetal programming studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "98b4de47-fd33-48e8-a868-5519a12e5115",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C104",
+      "claim": "Thiazolidinedione drugs, which activate the transcription factor PPAR\u03b3, provide one of the only pharmacological therapies for IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, thiazolidinedione drugs, which activate the transcription factor PPAR\u03b3, provide one of the only pharmacological therapies for IR (Soccio et al., 2014; Step et al., 2014; Sugii et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites three prior studies on thiazolidinediones as IR therapy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "c95eff21-af37-4c6a-a6a3-e530f9d724dc",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C105",
+      "claim": "Epigenomic and transcriptional mechanisms must be in play in the etiopathogenesis of IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data strongly suggest that epigenomic and transcriptional mechanisms must be in play in the etiopathogenesis of IR (Kang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the various lines of evidence presented and cites a prior review.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "c550fe9f-f668-47f3-918e-02f71df8a085",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C106",
+      "claim": "DNA methylation is a reversible epigenetic mark involving the covalent transfer of a methyl group to the C-5 position of a cytosine residue, usually in the context of a CpG doublet, by DNA methyltransferases (Dnmts).",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation is a reversible epigenetic mark involving the covalent transfer of a methyl group to the C-5 position of a cytosine residue, usually in the context of a CpG doublet, by DNA methyltransferases (Dnmts) (Robertson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition from the field, citing a prior review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "60cf367c-08ab-4175-9863-098c5a2d5a9b",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C107",
+      "claim": "Emerging evidence suggests that methylated DNA undergoes dynamic and reversible remodeling in somatic cells during developmental, physiological, and pathogenic pathophysiological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Long thought to be a static epigenetic mark, emerging evidence suggests that methylated DNA undergoes dynamic and reversible remodeling in somatic cells during developmental, physiological, and pathogenic pathophysiological processes (Barres et al., 2013; 2009; Benner et al., 2015; Kirchner et al., 2016; Multhaup et al., 2015; Siersb\u00e6k et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites six prior studies demonstrating dynamic DNA methylation changes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f588b491-e4f0-4420-8a89-aeded1910bc0",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C108",
+      "claim": "A bout of intense exercise can induce DNA hypomethylation at the PPARGC1a locus in human skeletal muscle within hours, followed by increased gene expression; these effects were reversed after resting.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, a bout of intense exercise can induce DNA hypomethylation at the PPARGC1a locus in human skeletal muscle within hours, followed by increased gene expression; these effects were reversed after resting (Barr\u00e8s et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study demonstrating rapid, reversible DNA methylation changes with exercise.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "3f913a24-7e03-4965-8a2d-989b1c6c47da",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C109",
+      "claim": "The obesity-prone agouti mouse has reduced DNA methylation at the regulatory region for the Agouti gene, leading to enhanced expression and subsequent inhibition of the satiety-inducing MC4 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the obesity-prone agouti mouse has reduced DNA methylation at the regulatory region for the Agouti gene, leading to enhanced expression and subsequent inhibition of the satiety-inducing MC4 receptor (Xie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study on DNA methylation in the agouti mouse model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "13f0e502-c86d-4049-a1e1-3c2571431f83",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C110",
+      "claim": "Multiple studies have shown that changes in DNA methylation at key metabolic genes, such as Cox7a1, IGF-2, and Pomc, associate with various metabolic insults including aging, obesity, anorexia, and prenatal exposure to famine.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies have shown that changes in DNA methylation at key metabolic genes, such as Cox7a1 (R\u00f6nn et al., 2008), IGF-2 (Heijmans et al., 2008), and Pomc (Ehrlich et al., 2010), associate with various metabolic insults including aging, obesity, anorexia, and prenatal exposure to famine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites three prior studies linking DNA methylation changes to metabolic conditions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "1cc11478-ad40-483d-a6b7-d73e6acf3104",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C111",
+      "claim": "Recent genome-wide profiling studies have identified distinct global DNA methylation patterns that associate with obesity and diabetes in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent genome-wide profiling studies have identified distinct global DNA methylation patterns that associate with obesity and diabetes in humans (Dayeh et al., 2014; Feinberg et al., 2010; Kirchner et al., 2016; Multhaup et al., 2015; Nilsson et al., 2015; Volkmar et al., 2012; Volkov et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites seven prior genome-wide studies linking DNA methylation to metabolic disease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "065496da-8a92-4783-895e-a427db668d4c",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C112",
+      "claim": "Altered DNA methylation is linked to the transgenerational passage of metabolic disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Altered DNA methylation is linked to the transgenerational passage of metabolic disorders (Ng et al., 2010; Wei et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites two prior studies linking DNA methylation to transgenerational metabolic effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "ce109a31-8a9e-4242-83d1-808ad08f7e22",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C113",
+      "claim": "The cause-and-effect relationship between DNA methylation and metabolic dysregulation remains largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite numerous studies showing a link between DNA methylation and metabolic dysregulation, the cause-and-effect relationship between the two remains largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "c8c4ab55-8f7c-464c-b6f1-788e4f52fe33",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C114",
+      "claim": "In mammals, five Dnmt family members have been identified: Dnmt1, Dnmt2 (also known as Trdmt1), Dnmt3a, Dnmt3b and Dnmt3l.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, five Dnmt family members have been identified: Dnmt1, Dnmt2 (also known as Trdmt1), Dnmt3a, Dnmt3b and Dnmt3l, yet only three (Dnmt1, 3a, and 3b) possess DNA methyltransferase activity (Robertson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the field, citing a prior review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "b9d6392d-0d1e-4425-a783-a0f3d6af4812",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C115",
+      "claim": "Only three Dnmts (Dnmt1, 3a, and 3b) possess DNA methyltransferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, five Dnmt family members have been identified: Dnmt1, Dnmt2 (also known as Trdmt1), Dnmt3a, Dnmt3b and Dnmt3l, yet only three (Dnmt1, 3a, and 3b) possess DNA methyltransferase activity (Robertson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the field, citing a prior review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "9eacbe1c-93ae-4aa3-aeea-15ed076c418b",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C116",
+      "claim": "Dnmt1 (the maintenance DNA methyltransferase) has a preference to methylate hemimethylated DNA whereas Dnmt3a and 3b prefer unmethylated DNA as substrate, and thus act as de novo DNA methyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt1 (the maintenance DNA methyltransferase) has a preference to methylate hemimethylated DNA whereas Dnmt3a and 3b prefer unmethylated DNA as substrate, and thus act as de novo DNA methyltransferases (Robertson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the field, citing a prior review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "54636c37-d3b0-42b6-99f2-111923a0b49c",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C117",
+      "claim": "Dnmt3l is homologous to the other Dnmt3s but lacks catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt3l is homologous to the other Dnmt3s but lacks catalytic activity (Robertson, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the field, citing a prior review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "799966d7-7649-4ac9-b1fc-d8a07f821343",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C118",
+      "claim": "Dnmt2 has sequence homology to all Dnmts but methylates cytoplasmic tRNA, and not DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt2 has sequence homology to all Dnmts but methylates cytoplasmic tRNA, and not DNA (Robertson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the field, citing a prior review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "3d209d81-c3d1-4c38-8fc7-21bb3e00f193",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C119",
+      "claim": "Administration of a small molecule Dnmt inhibitor has been shown to improve insulin sensitivity in the setting of obesity, in part by demethylating the Adipoq promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of a small molecule Dnmt inhibitor has been shown to improve insulin sensitivity in the setting of obesity, in part by demethylating the Adipoq promoter, and a role for Dnmt1 in this process was suggested by genetic knockdown studies in cultured adipocytes (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study demonstrating insulin-sensitizing effects of Dnmt inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "49305e80-7140-41b1-8294-84563f9420f8",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C120",
+      "claim": "A role for Dnmt1 in obesity-associated insulin resistance was suggested by genetic knockdown studies in cultured adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of a small molecule Dnmt inhibitor has been shown to improve insulin sensitivity in the setting of obesity, in part by demethylating the Adipoq promoter, and a role for Dnmt1 in this process was suggested by genetic knockdown studies in cultured adipocytes (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites a prior study suggesting Dnmt1's role based on knockdown experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "ae6a892a-454c-4f8d-99f6-c2f2d2e795d9",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C121",
+      "claim": "Dnmt3a plays a causal role in the development of cell autonomous IR in mouse and human adipocytes in a manner that is dependent on its catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnmt3a plays a causal role in the development of cell autonomous IR in mouse and human adipocytes in a manner that is dependent on its catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the in vitro experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4a27321a-684b-48ce-aebb-28389537f53b",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C122",
+      "claim": "Unbiased gene expression profiling suggests that Dnmt3a acts primarily as a gene repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, unbiased gene expression profiling suggests that Dnmt3a acts as primarily as a gene repressor, and reveals a set of adipocyte-specific target genes, including Fgf21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the RNA-seq analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "8af83ee2-de41-48e7-b866-0b1ffefee666",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C123",
+      "claim": "Dnmt3a mediates IR, at least in part, by methylating specific cis-regulatory elements in the Fgf21 gene and thus suppressing its expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we demonstrate that Dnmt3a mediates IR, at least in part, by methylating specific cis-regulatory elements in the Fgf21 gene and thus suppressing its expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the MeDIP-qPCR and functional rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "7b172e76-b99a-48fe-b85b-3025ab102b5e",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C124",
+      "claim": "DNA methylation at the FGF21 locus was elevated in human subjects with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Fgf21 can rescue Dnmt3a-mediated insulin resistance, and DNA methylation at the FGF21 locus was elevated in human subjects with diabetes and correlated negatively with expression of FGF21 in human adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the human adipose tissue DNA methylation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f791aaeb-2ce3-4864-a6c1-9ae8dc53fe6f",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C125",
+      "claim": "DNA methylation at the FGF21 locus correlated negatively with expression of FGF21 in human adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Fgf21 can rescue Dnmt3a-mediated insulin resistance, and DNA methylation at the FGF21 locus was elevated in human subjects with diabetes and correlated negatively with expression of FGF21 in human adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the correlation analysis in human adipose tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "f2bcba20-061c-48c0-ad52-aa55505b0d86",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C126",
+      "claim": "Fgf21 can rescue Dnmt3a-mediated insulin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Fgf21 can rescue Dnmt3a-mediated insulin resistance, and DNA methylation at the FGF21 locus was elevated in human subjects with diabetes and correlated negatively with expression of FGF21 in human adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the recombinant FGF21 rescue experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "0d5ba472-474b-48eb-908f-3045928afafd",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "claim_id": "C127",
+      "claim": "Adipose Dnmt3a is a novel epigenetic mediator of insulin resistance in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data demonstrate that adipose Dnmt3a is a novel epigenetic mediator of insulin resistance in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the abstract, summarizing all findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5da35793-0d50-43a7-af1d-fbe3beacb34f",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Dnmt expression, particularly Dnmt1 and Dnmt3a, is elevated in adipose tissue in obesity models (DIO and ob/ob mice) and reduced by insulin sensitizer treatment. Dnmt3a shows higher expression in adipose tissue compared to liver and skeletal muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide consistent evidence from multiple obesity models (DIO, ob/ob) showing elevated Dnmt expression in adipose tissue, with both mRNA (C1, C4) and protein (C6) validation. The rosiglitazone treatment effect (C5) and tissue-specific expression patterns (C2, C3, C7) strengthen the correlation between Dnmt expression and insulin sensitivity. Data are shown in referenced figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "de17361b-75a5-417c-b5fb-9f1b4ff634e5",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dnmt3a knockdown, but not Dnmt1 or Dnmt3b knockdown, protects adipocytes from dexamethasone- and TNF-induced insulin resistance in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 demonstrate specificity of Dnmt3a in mediating insulin resistance through loss-of-function experiments with appropriate controls (C9). The protection from drug-induced IR is shown by both glucose uptake and signaling data (C10). Claims C87-C88 provide negative controls showing Dnmt1 does not have the same effect, strengthening the specificity of the Dnmt3a finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "7a7179d7-1c0f-4885-9fa7-d51f2b1f393a",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Overexpression of Dnmt3a is sufficient to induce insulin resistance in both mouse 3T3-L1 adipocytes and human adipocytes in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 provide gain-of-function evidence in both mouse and human cells, demonstrating conservation of the mechanism. The specificity is shown by Dnmt3a and 3b effects versus Dnmt1 (C11). Claims C13, C66, and C121 are summary statements appropriately supported by the experimental data showing both necessity (knockdown) and sufficiency (overexpression).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "7f19bba7-93d2-407a-baec-75c1dc334046",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DNA methyltransferase catalytic activity is essential for Dnmt3a-mediated insulin resistance, as demonstrated by both pharmacological inhibitors and a catalytically inactive Dnmt3a mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 show that multiple Dnmt inhibitors (synthetic and natural) block insulin resistance. Claim C16 provides genetic evidence using a catalytically inactive mutant (C706S) that fails to induce IR. Claim C17 appropriately synthesizes these complementary pharmacological and genetic approaches. The convergence of multiple independent methods strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Adipose-specific deletion of Dnmt3a protects mice from diet-induced insulin resistance and glucose intolerance without affecting body weight, adiposity, inflammation, or thermogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 provide comprehensive in vivo characterization showing improved glucose tolerance (C21), insulin sensitivity (C22), reduced insulin levels (C23), and enhanced insulin signaling (C24) in both male and female mice (C25), while body weight and composition remain unchanged (C18-C20). Claims C26-C28 rule out alternative mechanisms (browning, inflammation). The mechanistic independence from body weight changes (C29, C64, C65) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA-seq analysis reveals that Dnmt3a functions primarily as a transcriptional repressor, with 290 genes induced by knockdown and only 36 genes repressed by overexpression, including 7 concordantly regulated negative target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 present quantitative RNA-seq data showing asymmetric gene regulation patterns consistent with repressor function. The concordant regulation analysis (C32, C35) strengthens identification of direct targets. Claims C36 and C122 appropriately interpret the data pattern. The approach of combining gain- and loss-of-function is methodologically sound for target identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "b634e24b-5611-4d14-9f2f-b0910552a195",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fgf21 is identified as a negative target gene of Dnmt3a, with expression inversely correlated with Dnmt3a levels in cultured adipocytes and in vivo in Dnmt3aAdiKO mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 identifies Fgf21 from RNA-seq as a concordantly regulated target. Claims C38-C40 establish biological relevance through prior literature. Claims C41-C43 validate the regulation by qPCR in multiple experimental contexts (overexpression, knockdown, knockout mice). The consistency across models and the known role of FGF21 in glucose uptake provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4ad90481-4be6-4fc1-bdfe-b6d58910ebfa",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Recombinant FGF21 treatment rescues insulin sensitivity in adipocytes overexpressing Dnmt3a in a dose-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C126 demonstrate functional rescue with dose-response data shown in Figure 5E. This is a critical experiment establishing that FGF21 suppression is functionally important for Dnmt3a-mediated insulin resistance. The dose-dependent response strengthens the causal relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "ff460905-740b-4535-bf3e-fa9dbca70dcb",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Serum Fgf21 levels are paradoxically reduced in Dnmt3aAdiKO mice despite increased adipose tissue expression, potentially due to reduced insulin levels affecting hepatic Fgf21 production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 presents an unexpected finding that serum Fgf21 is reduced despite increased adipose expression. Claims C70-C75 provide context from prior literature about tissue-specific Fgf21 regulation and the insulin-Fgf21 relationship. However, claims C74 and C76 are speculative (acknowledged by authors with 'possible' and 'propose'). The discrepancy between tissue and serum levels requires additional experiments (double knockout) for definitive resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "ed5790c3-f56c-407c-a88f-bea7ec7e6e63",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dnmt3a directly regulates Fgf21 expression through DNA methylation changes at the Fgf21 promoter, with hypermethylation in Dnmt3a overexpressing cells and hypomethylation in knockdown/knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 establishes the general principle. Claims C47-C49 provide MeDIP-qPCR evidence in multiple experimental contexts (overexpression, knockdown, knockout) showing concordant changes in DNA methylation. Claim C50 adds functional validation with reporter assays. The convergence of methylation data with expression changes (C51) supports a direct regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "cf292c42-3720-4ac2-8ff4-14dae427f04b",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In human adipose tissue, FGF21 shows increased DNA methylation in type 2 diabetes subjects compared to controls, with negative correlation between methylation and expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 present human data showing hypermethylation at four CpG sites in diabetic subjects and negative correlation with expression (Figure 7). Claims C54, C124, and C125 appropriately interpret these findings. The human data provide translational relevance, though the correlative nature limits causal inference. The consistency with mouse findings strengthens the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "7a442521-28bc-4fc1-9971-c625ded857b6",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The improved insulin sensitivity in Dnmt3aAdiKO mice is independent of changes in thermogenic gene expression or adipose tissue inflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 provide negative data ruling out alternative mechanisms (browning and inflammation). The lack of changes in Ucp1, Ppargc1a (C26), inflammatory markers (C27), and crown-like structures (C28) is important for establishing mechanism specificity. Claim C65 appropriately summarizes these findings. However, the trend toward reduced inflammation (C27, 'nonsignificant') suggests this could be explored further.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "a3ca38a1-07ea-427b-95c6-092c106cd7c3",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The role of adiponectin in Dnmt3a-mediated effects remains unclear, with conflicting prior literature and only a nonsignificant trend toward increased Adipoq expression in knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C80 reports a nonsignificant trend (data not shown). Claims C77-C79 cite conflicting prior literature on adiponectin's role in FGF21 action. Claim C90 notes Adipoq was not identified as a Dnmt3a target in RNA-seq. The lack of statistical significance, absence of shown data, and conflicting literature make this result uncertain and requiring additional investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "8cc8d9a4-6681-42b6-8ca1-f41a207403bb",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The mechanism by which obesity increases Dnmt3a expression remains unclear, though rosiglitazone treatment normalizes Dnmt3a expression in obese mice, potentially through PPAR\u03b3-mediated repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C91 reports negative findings for multiple tested stimuli (data not shown). Claim C92 shows rosiglitazone effect. Claims C93-C96 discuss potential mechanisms but acknowledge uncertainty. The lack of mechanistic clarity and reliance on speculation (C96) means this remains an open question requiring future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "967e05f9-98f0-456e-afb8-4ee6b108e488",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work by Kamei et al. using aP2-driven Dnmt3a transgenic mice did not show whole body insulin resistance, potentially due to technical limitations of the aP2 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 accurately cite and critique prior work. The caveat about aP2 promoter (C69) is well-supported by the cited references. This contextualizes the current findings and explains apparent discrepancies with prior literature. The discussion is fair and appropriately critical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "0f3f1483-43f6-4288-ad9b-254d2a331618",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Future studies including global DNA methylation profiling will be necessary to fully characterize Dnmt3a's target genomic regions and metabolic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C98 appropriately identify limitations and future directions. The focused analysis on Fgf21 promoter is valuable but incomplete without genome-wide methylation data. This is a reasonable acknowledgment of study limitations and future work needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4a83f38c-fdbe-4d8f-8923-c8c693940f38",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Despite elevated Dnmt1 expression in obese adipose tissue, Dnmt1 manipulation does not affect insulin sensitivity in cultured adipocytes, and Adipoq is not a Dnmt3a target in this system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 cite prior work and confirm elevated Dnmt1 in obesity. Claims C87-C88 provide negative functional data for Dnmt1. Claim C90 clarifies that Adipoq (implicated in prior Dnmt1 studies) is not regulated by Dnmt3a here. This appropriately distinguishes the current findings from prior work and establishes specificity for Dnmt3a.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "4319ae1c-4afc-4794-8ad7-814d9b317a63",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Fgf21 expression is regulated in a tissue-specific manner, with PPAR\u03b3 driving expression in adipose tissue and PPAR\u03b1 in liver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 cite established literature on tissue-specific Fgf21 regulation. This provides important context for interpreting the adipose-specific effects of Dnmt3a deletion and the differential regulation of tissue versus serum Fgf21 levels. The citations are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "5cac87cd-19e3-41ed-a6ec-20213305d680",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The introduction establishes the rationale for studying epigenetic mechanisms in insulin resistance, reviewing evidence for DNA methylation in metabolic disease and the properties of DNA methyltransferases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C120 provide comprehensive background from prior literature establishing: (1) limitations of genetic explanations for T2D (C55-C56), (2) evidence for epigenetic mechanisms in IR (C57-C59, C102-C103, C107-C112), (3) properties of DNMTs (C106, C114-C118), and (4) prior therapeutic studies (C60-C62, C119-C120). The citations are appropriate and establish clear rationale for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    },
+    {
+      "id": "608482f9-e52d-4d4e-8035-0e08eb892412",
+      "content_id": "0dd0b912-d6cb-45ed-b749-730a56310e0f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The overall conclusion that Dnmt3a is a novel epigenetic mediator of adipose insulin resistance in vitro and in vivo is supported by the collective evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97 and C127 are summary conclusions appropriately supported by the multiple lines of evidence presented: expression correlations, loss- and gain-of-function studies in vitro and in vivo, mechanistic studies identifying Fgf21 as a target, and human translational data. The conclusion is well-justified by the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:54.476250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8be1fb0f-5486-4af2-a56a-10aa874c7fb9",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "96854f1e-a12c-437a-8869-49509161da88",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "3a6bf488-101d-419e-b6f8-ce8678d392bf",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "8400da24-c2ce-4d9a-bbb1-134a8e86cb24",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "40aae4bf-807f-455c-8691-5ff09b3b4b67",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "880430d3-17c0-4a9d-8079-ab32c69f8fe2",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "07c1229f-270c-42e7-b2a9-d32fff8f1cf3",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "2103e7e7-8c12-470e-9284-4240d89ebc6e",
+      "result_id": "5da35793-0d50-43a7-af1d-fbe3beacb34f"
+    },
+    {
+      "claim_id": "fc4811c8-a28d-42e3-8503-b6f071cc22e4",
+      "result_id": "de17361b-75a5-417c-b5fb-9f1b4ff634e5"
+    },
+    {
+      "claim_id": "54b242fd-d520-453b-90ee-b8e64a79760b",
+      "result_id": "de17361b-75a5-417c-b5fb-9f1b4ff634e5"
+    },
+    {
+      "claim_id": "3eb34e4f-555a-4728-a8fa-5ecdb16ee5b6",
+      "result_id": "de17361b-75a5-417c-b5fb-9f1b4ff634e5"
+    },
+    {
+      "claim_id": "68b55cef-7f9a-47d5-9601-580f2c277d93",
+      "result_id": "de17361b-75a5-417c-b5fb-9f1b4ff634e5"
+    },
+    {
+      "claim_id": "f41e2bd7-4295-4f92-8a61-bd65276b5326",
+      "result_id": "7a7179d7-1c0f-4885-9fa7-d51f2b1f393a"
+    },
+    {
+      "claim_id": "08f4caa8-5a0f-45a8-9eaa-c58d3ac146ef",
+      "result_id": "7a7179d7-1c0f-4885-9fa7-d51f2b1f393a"
+    },
+    {
+      "claim_id": "cdee6571-13a7-4baa-93ed-377fdf8e7b6d",
+      "result_id": "7a7179d7-1c0f-4885-9fa7-d51f2b1f393a"
+    },
+    {
+      "claim_id": "69f5e721-2740-49b3-a4e6-95288aad8f85",
+      "result_id": "7a7179d7-1c0f-4885-9fa7-d51f2b1f393a"
+    },
+    {
+      "claim_id": "ae6a892a-454c-4f8d-99f6-c2f2d2e795d9",
+      "result_id": "7a7179d7-1c0f-4885-9fa7-d51f2b1f393a"
+    },
+    {
+      "claim_id": "63dab623-8ce6-4983-a12b-acad48802dd3",
+      "result_id": "7f19bba7-93d2-407a-baec-75c1dc334046"
+    },
+    {
+      "claim_id": "efa418cf-25af-4afd-881d-a7714a53b511",
+      "result_id": "7f19bba7-93d2-407a-baec-75c1dc334046"
+    },
+    {
+      "claim_id": "bd397b39-6a98-47f5-acc8-006dffc770e5",
+      "result_id": "7f19bba7-93d2-407a-baec-75c1dc334046"
+    },
+    {
+      "claim_id": "c8f223c9-b471-47e1-825c-bfb09ba893f6",
+      "result_id": "7f19bba7-93d2-407a-baec-75c1dc334046"
+    },
+    {
+      "claim_id": "4bc0ea7e-f947-4184-a13f-9fb18642885d",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "d70f209a-54fe-4669-a638-8ca4fedb8429",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "219ce4c7-1eea-43a3-a267-6564a39a09ac",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "544eeaef-3c7c-437b-8d64-0b256bc59b09",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "869bcb99-099e-4fe6-b14e-1c199de25ba1",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "469b60c8-77bc-40f5-a8a2-59a7ba409232",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "fab8d7df-0425-4f2b-ae2a-3be44c07e1d4",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "2fcba010-aca3-446d-88bd-bb2a5b0d97a4",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "79c15619-762b-4ec2-9716-03f95c9c7406",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "f4aa40d8-0a0b-4034-a65f-0b07199c9d94",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "1e0be61d-3c20-4c23-8585-8f1573468985",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "7e913720-e472-4c35-925b-687425541e01",
+      "result_id": "88ab1d72-e5e7-4ba8-bc82-1e19ed0f495d"
+    },
+    {
+      "claim_id": "62f90447-6df2-4a62-b2ec-263777331146",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "e589d42f-203a-46d0-9e4d-68a8ff73935d",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "c6de1238-c515-4ad7-bcf9-aae57566e21c",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "9e9c08b6-c3e6-4c85-9d03-5596b32673c9",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "670d4d2a-f581-4083-b822-213a07f6511a",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "d239ae1b-5729-4007-95ce-a443d4ce7c04",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "d4d8096f-a5fd-4e86-bbf3-da8cee1ea5de",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "4a27321a-684b-48ce-aebb-28389537f53b",
+      "result_id": "3d5bb22e-d2ac-45b2-8de6-54659c1dd16f"
+    },
+    {
+      "claim_id": "df6467dd-7e87-44b1-a045-aabecbad05dc",
+      "result_id": "b634e24b-5611-4d14-9f2f-b0910552a195"
+    },
+    {
+      "claim_id": "c70068d4-c7b2-4ba7-af33-d3721fcda2b5",
+      "result_id": "b634e24b-5611-4d14-9f2f-b0910552a195"
+    },
+    {
+      "claim_id": "b28e367c-9010-4538-bc89-658c7111c352",
+      "result_id": "b634e24b-5611-4d14-9f2f-b0910552a195"
+    },
+    {
+      "claim_id": "e2818b26-7e2c-4de8-a9c9-0eac5e3b1fe1",
+      "result_id": "b634e24b-5611-4d14-9f2f-b0910552a195"
+    },
+    {
+      "claim_id": "93f32522-d237-4661-b07d-557d93d3f2c0",
+      "result_id": "b634e24b-5611-4d14-9f2f-b0910552a195"
+    },
+    {
+      "claim_id": "96f9bfac-cc56-4178-9953-7732ec01028a",
+      "result_id": "b634e24b-5611-4d14-9f2f-b0910552a195"
+    },
+    {
+      "claim_id": "affb5dba-341b-4459-abda-4b850cac59da",
+      "result_id": "b634e24b-5611-4d14-9f2f-b0910552a195"
+    },
+    {
+      "claim_id": "a89dde3e-88f4-476d-8774-dbf3b3d8b09c",
+      "result_id": "4ad90481-4be6-4fc1-bdfe-b6d58910ebfa"
+    },
+    {
+      "claim_id": "f2bcba20-061c-48c0-ad52-aa55505b0d86",
+      "result_id": "4ad90481-4be6-4fc1-bdfe-b6d58910ebfa"
+    },
+    {
+      "claim_id": "2b750f75-7adb-4472-8654-4f7f378975b5",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "812194dd-a22b-48a2-93c9-79d2f378edeb",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "51e93e76-b90c-493d-b597-c94f8c56799a",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "b650278a-b181-4139-bfab-63834e5c442e",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "6dbaecea-92c1-4cdd-8ebb-7a42129df50c",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "759b0266-9c89-42ca-bf31-856f66a577aa",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "cc33a232-8a1b-4400-8eea-098e63553051",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "5dfb7a4d-4958-4349-a8d3-48dc4d4b4170",
+      "result_id": "ff460905-740b-4535-bf3e-fa9dbca70dcb"
+    },
+    {
+      "claim_id": "d802b68f-885e-4d37-9d01-0905a4b368d0",
+      "result_id": "ed5790c3-f56c-407c-a88f-bea7ec7e6e63"
+    },
+    {
+      "claim_id": "0648b2d8-e7db-4f29-9942-966760617e10",
+      "result_id": "ed5790c3-f56c-407c-a88f-bea7ec7e6e63"
+    },
+    {
+      "claim_id": "52915f27-5f2c-44fe-aced-be3c3020e423",
+      "result_id": "ed5790c3-f56c-407c-a88f-bea7ec7e6e63"
+    },
+    {
+      "claim_id": "526b6374-c2c3-4d08-b3e5-b51074207b4e",
+      "result_id": "ed5790c3-f56c-407c-a88f-bea7ec7e6e63"
+    },
+    {
+      "claim_id": "dacce1e8-5c41-4e2f-863a-763f8fc8cea0",
+      "result_id": "ed5790c3-f56c-407c-a88f-bea7ec7e6e63"
+    },
+    {
+      "claim_id": "0be4e938-173b-4f81-8ccf-3e24f15a6336",
+      "result_id": "ed5790c3-f56c-407c-a88f-bea7ec7e6e63"
+    },
+    {
+      "claim_id": "8b4dffce-5d02-4d8c-a8a8-f4923e9daf87",
+      "result_id": "cf292c42-3720-4ac2-8ff4-14dae427f04b"
+    },
+    {
+      "claim_id": "92d07e24-a0b1-4840-a068-f96481ac11eb",
+      "result_id": "cf292c42-3720-4ac2-8ff4-14dae427f04b"
+    },
+    {
+      "claim_id": "f2a82cf5-b84d-4597-a1a6-0700d7da7d99",
+      "result_id": "cf292c42-3720-4ac2-8ff4-14dae427f04b"
+    },
+    {
+      "claim_id": "7b172e76-b99a-48fe-b85b-3025ab102b5e",
+      "result_id": "cf292c42-3720-4ac2-8ff4-14dae427f04b"
+    },
+    {
+      "claim_id": "f791aaeb-2ce3-4864-a6c1-9ae8dc53fe6f",
+      "result_id": "cf292c42-3720-4ac2-8ff4-14dae427f04b"
+    },
+    {
+      "claim_id": "17aa49f8-943b-433e-a823-8e94fb5a3f91",
+      "result_id": "7a442521-28bc-4fc1-9971-c625ded857b6"
+    },
+    {
+      "claim_id": "9f7d9bcd-2e6e-47ff-b8b1-5475a8f63c1b",
+      "result_id": "7a442521-28bc-4fc1-9971-c625ded857b6"
+    },
+    {
+      "claim_id": "36c8df29-0c31-4fc4-91a5-52f7d5bed2e4",
+      "result_id": "7a442521-28bc-4fc1-9971-c625ded857b6"
+    },
+    {
+      "claim_id": "1e0be61d-3c20-4c23-8585-8f1573468985",
+      "result_id": "7a442521-28bc-4fc1-9971-c625ded857b6"
+    },
+    {
+      "claim_id": "79d4d1c4-5232-445f-bfb8-2e2a3abc114d",
+      "result_id": "a3ca38a1-07ea-427b-95c6-092c106cd7c3"
+    },
+    {
+      "claim_id": "74c37049-3351-4a82-a762-ce37cda3f51b",
+      "result_id": "a3ca38a1-07ea-427b-95c6-092c106cd7c3"
+    },
+    {
+      "claim_id": "aeebeb6f-3ca2-4fbd-b369-f1fa1be6aad8",
+      "result_id": "a3ca38a1-07ea-427b-95c6-092c106cd7c3"
+    },
+    {
+      "claim_id": "3653a29e-9f05-41b9-8027-18916758e53c",
+      "result_id": "a3ca38a1-07ea-427b-95c6-092c106cd7c3"
+    },
+    {
+      "claim_id": "ad24e88b-bda5-4e6c-a914-f7e371c931a9",
+      "result_id": "a3ca38a1-07ea-427b-95c6-092c106cd7c3"
+    },
+    {
+      "claim_id": "f7520fcb-c062-4502-b894-32eec20f5ea3",
+      "result_id": "8cc8d9a4-6681-42b6-8ca1-f41a207403bb"
+    },
+    {
+      "claim_id": "6d49da9e-bec9-4b4a-80b5-e0d777549311",
+      "result_id": "8cc8d9a4-6681-42b6-8ca1-f41a207403bb"
+    },
+    {
+      "claim_id": "e80d68de-392c-43d9-8dcd-d5a33357bf6a",
+      "result_id": "8cc8d9a4-6681-42b6-8ca1-f41a207403bb"
+    },
+    {
+      "claim_id": "9de5068b-bc63-464b-ab80-af7b5779da42",
+      "result_id": "8cc8d9a4-6681-42b6-8ca1-f41a207403bb"
+    },
+    {
+      "claim_id": "2475612e-7dbc-41f9-8da1-eee49029a6d6",
+      "result_id": "8cc8d9a4-6681-42b6-8ca1-f41a207403bb"
+    },
+    {
+      "claim_id": "53b4ad5b-76db-4787-bd25-9331ebd93d37",
+      "result_id": "8cc8d9a4-6681-42b6-8ca1-f41a207403bb"
+    },
+    {
+      "claim_id": "433f9cc1-21b0-4207-a8af-e712addaba4e",
+      "result_id": "967e05f9-98f0-456e-afb8-4ee6b108e488"
+    },
+    {
+      "claim_id": "c653074e-d3ad-450a-b277-54afc1a3c974",
+      "result_id": "967e05f9-98f0-456e-afb8-4ee6b108e488"
+    },
+    {
+      "claim_id": "957f2f85-2597-4885-854e-550cda2d43f8",
+      "result_id": "967e05f9-98f0-456e-afb8-4ee6b108e488"
+    },
+    {
+      "claim_id": "119ea947-62db-43fa-86ad-58d437a46fb7",
+      "result_id": "0f3f1483-43f6-4288-ad9b-254d2a331618"
+    },
+    {
+      "claim_id": "13c22716-cbce-415f-b5de-c9184db3b5e4",
+      "result_id": "0f3f1483-43f6-4288-ad9b-254d2a331618"
+    },
+    {
+      "claim_id": "a46d8c36-4093-4637-b32e-9246571396fe",
+      "result_id": "4a83f38c-fdbe-4d8f-8923-c8c693940f38"
+    },
+    {
+      "claim_id": "47bb5725-bfbf-459a-b555-5327565c6738",
+      "result_id": "4a83f38c-fdbe-4d8f-8923-c8c693940f38"
+    },
+    {
+      "claim_id": "3eb34e4f-555a-4728-a8fa-5ecdb16ee5b6",
+      "result_id": "4a83f38c-fdbe-4d8f-8923-c8c693940f38"
+    },
+    {
+      "claim_id": "68b55cef-7f9a-47d5-9601-580f2c277d93",
+      "result_id": "4a83f38c-fdbe-4d8f-8923-c8c693940f38"
+    },
+    {
+      "claim_id": "ad24e88b-bda5-4e6c-a914-f7e371c931a9",
+      "result_id": "4a83f38c-fdbe-4d8f-8923-c8c693940f38"
+    },
+    {
+      "claim_id": "e006530f-e1e6-4542-b082-09dec2927151",
+      "result_id": "4319ae1c-4afc-4794-8ad7-814d9b317a63"
+    },
+    {
+      "claim_id": "4d3f075f-fd1b-4031-85d0-4ec9d887152f",
+      "result_id": "4319ae1c-4afc-4794-8ad7-814d9b317a63"
+    },
+    {
+      "claim_id": "51a19ec1-979d-4845-b4c7-161b3d2daeae",
+      "result_id": "4319ae1c-4afc-4794-8ad7-814d9b317a63"
+    },
+    {
+      "claim_id": "21cd827b-2c24-499a-ad9b-ce66740fd9d1",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "f6808198-996a-4a5f-b53a-6620a37bcea7",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "4717deb1-43ac-4379-8078-987d425657fe",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "2209e578-d07e-4db5-9e1d-05fa8d8c3d38",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "0ff451fd-7664-4d2b-8c9b-dd42560c35c1",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "4d1318b2-6bdf-43bf-a191-7b89691dfec7",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "fb02b01e-4919-4111-a286-a0577de2286a",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "85341afc-8b33-44fa-b718-e05082ed7771",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "9dd432c8-47e7-4396-bf7e-5f67fbb3629e",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "a6cc1e37-2c64-4cab-96b6-1f1a39a463aa",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "98b4de47-fd33-48e8-a868-5519a12e5115",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "c95eff21-af37-4c6a-a6a3-e530f9d724dc",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "c550fe9f-f668-47f3-918e-02f71df8a085",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "60cf367c-08ab-4175-9863-098c5a2d5a9b",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "f588b491-e4f0-4420-8a89-aeded1910bc0",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "3f913a24-7e03-4965-8a2d-989b1c6c47da",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "13f0e502-c86d-4049-a1e1-3c2571431f83",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "1cc11478-ad40-483d-a6b7-d73e6acf3104",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "065496da-8a92-4783-895e-a427db668d4c",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "ce109a31-8a9e-4242-83d1-808ad08f7e22",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "c8c4ab55-8f7c-464c-b6f1-788e4f52fe33",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "b9d6392d-0d1e-4425-a783-a0f3d6af4812",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "9eacbe1c-93ae-4aa3-aeea-15ed076c418b",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "54636c37-d3b0-42b6-99f2-111923a0b49c",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "799966d7-7649-4ac9-b1fc-d8a07f821343",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "3d209d81-c3d1-4c38-8fc7-21bb3e00f193",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "49305e80-7140-41b1-8294-84563f9420f8",
+      "result_id": "5cac87cd-19e3-41ed-a6ec-20213305d680"
+    },
+    {
+      "claim_id": "53e084a2-de57-4f67-9ad8-cfb83d414aa9",
+      "result_id": "608482f9-e52d-4d4e-8035-0e08eb892412"
+    },
+    {
+      "claim_id": "0d5ba472-474b-48eb-908f-3045928afafd",
+      "result_id": "608482f9-e52d-4d4e-8035-0e08eb892412"
+    }
+  ],
+  "comparisons": []
+}

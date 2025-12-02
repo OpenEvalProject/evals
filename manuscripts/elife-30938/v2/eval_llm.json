@@ -1,0 +1,486 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Long-term antigenic exposure induces widespread down-regulation of metabolic enzymes in chronic T cells, particularly affecting glycolysis, pentose phosphate pathway, citric acid cycle, and fatty acid oxidation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C54-C66 are supported by comprehensive proteomic analysis (Table 1) showing statistically significant down-regulation of multiple metabolic enzymes across key pathways. The data includes fold changes and p-values for each enzyme, providing quantitative evidence for the general metabolic deficit (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Chronic T cells exhibit severely impaired metabolic capacity characterized by low basal glycolytic flux, limited respiratory capacity, reduced mitochondrial mass, and decreased ATP synthesis compared to effector T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C67-C74 are well-supported by direct metabolic measurements using Seahorse technology (Figure 3A-C). ECAR and OCR data quantitatively demonstrate the metabolic deficits, with appropriate comparisons to naive and effector T cells as controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PD-1 blockade increases IFN\u03b3 production in chronic T cells by raising the TCR activation threshold, as demonstrated by antibody-mediated blockade experiments and peptide titration assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C38, and C43-C47 are supported by multiple complementary experiments (Figures 1C, 2B-D) showing increased IFN\u03b3 production after PD-1/PD-L1 blockade and decreased peptide requirements for activation. The conclusion about TCR threshold modulation (C47) is a reasonable inference from the peptide titration data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "PD-1 blockade fails to restore glycolytic metabolism in chronic T cells, as evidenced by persistently low ECAR in both Pdcd1+/+ and Pdcd1-/- chronic T cells, despite increased IFN\u03b3 production in Pdcd1-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C119-C124 are supported by metabolic measurements in PD-1-deficient T cells (Figures 5B-D). The data show that genetic absence of PD-1 increases basal OCR but not ECAR, and lactate production remains absent, demonstrating that the glycolytic defect is independent of PD-1 signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Chronic T cells produce IFN\u03b3 without engaging glycolysis, as demonstrated by absence of lactate production and glucose consumption despite cytokine secretion, and minimal sensitivity to glycolysis inhibition by 2-DG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 and C88-C90 are well-supported by multiple complementary measurements (Figures 3D-G, 4A). The data show no lactate production or glucose consumption in activated chronic T cells, reduced GLUT1 expression and 2-NBDG uptake, and weak inhibition by 2-DG, collectively demonstrating glycolysis-independent IFN\u03b3 production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Chronic T cells rely on oxidative phosphorylation (OXPHOS) to support IFN\u03b3 synthesis, as demonstrated by equal sensitivity to oligomycin inhibition in both effector and chronic T cells, and complete abolition of IFN\u03b3 production by oligomycin in galactose medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C99-C102 are supported by oligomycin inhibition experiments (Figures 4A-B). The galactose medium experiment is particularly strong evidence, as it forces cells to rely exclusively on OXPHOS, and oligomycin completely blocks IFN\u03b3 production under these conditions in both cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Chronic T cells depend on fatty acid oxidation (FAO) for IFN\u03b3 production, as shown by Etomoxir inhibition, high FATP4 expression, and enhanced fatty acid uptake capacity compared to effector T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C106-C113 are supported by multiple lines of evidence including Etomoxir inhibition (Figure 4A), FATP4 expression (Figure 4D), and Bodipy uptake assays (Figure 4E). However, the lower CPT1A expression in chronic cells (C112) appears contradictory and suggests FAO may be limited by mitochondrial import capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Inhibition of FAO by Etomoxir increases glucose uptake in chronic T cells but does not restore IFN\u03b3 production or lactate production, demonstrating that cytokine synthesis is independent of glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by experiments showing increased glucose consumption after Etomoxir treatment without restoration of IFN\u03b3 production or lactate production (Figure 4F). This provides strong evidence that the glycolytic defect is not simply due to metabolic competition from FAO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "PD-1 controls mitochondrial ROS production in chronic T cells, as demonstrated by significantly higher ROS levels and mitochondrial depolarization in Pdcd1-/- compared to Pdcd1+/+ chronic T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C134-C138 are supported by MitoSOX and MitoTracker measurements (Figures 6A-B) showing quantitative differences in ROS production between genotypes. The correlation with mitochondrial depolarization (C137) strengthens the conclusion that PD-1 regulates mitochondrial function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C144"
+    ],
+    "result": "PD-1 deficiency reduces viability of chronic T cells through increased ROS production, as shown by decreased survival in Pdcd1-/- T cells, partial rescue by NAC treatment, and reduced T cell numbers at later time points after transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C11, and C139-C142, C144 are supported by viability assays (Figure 6C-D) and NAC rescue experiments. The data show reduced viability in Pdcd1-/- cells and partial rescue by antioxidant treatment, establishing a causal link between ROS and cell death. The in vivo data (C144) provides physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "PD-1 maintains functional fitness of chronic T cells by limiting ROS production, as demonstrated by NAC-mediated improvement in IFN\u03b3 production, with greater effects in Pdcd1+/+ than Pdcd1-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C145-C149 are supported by NAC rescue experiments (Figures 7A-B) showing increased frequency and amount of IFN\u03b3-producing cells. The differential response between genotypes (C148) strengthens the conclusion that PD-1's protective role operates through ROS limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "PD-1 fulfills dual functions in chronic T cells depending on duration of antigen exposure: early inhibition of glycolysis to control function, and late limitation of oxidative metabolism to prevent ROS-mediated damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C177-C181 represent an integrative conclusion supported by time-course data comparing day 7 and day 21 T cells. The model is consistent with the metabolic and ROS data, though the mechanistic transition between early and late functions could benefit from additional temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C182",
+      "C183"
+    ],
+    "result": "ROS impairs IFN\u03b3 production in chronic T cells through accelerated mRNA decay rather than translational inhibition, as evidenced by higher IFN\u03b3 mRNA levels but faster decay in Pdcd1-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 and C182-C183 are supported by qPCR and mRNA decay experiments (Figures 7D-E). The finding that Pdcd1-/- cells have more IFN\u03b3 mRNA but less protein is paradoxical and well-explained by the accelerated decay data. However, the mechanism linking ROS to RNA oxidation and decay is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "mTORC1 signaling functions equally in Pdcd1+/+ and Pdcd1-/- chronic T cells, as shown by similar phosphorylation of 4EBP1 and S6 after stimulation and equivalent sensitivity to mTOR inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 are supported by Western blot analysis (Figure 7C) showing comparable mTORC1 activity between genotypes. This rules out mTOR inhibition as the mechanism by which ROS limits IFN\u03b3 production, strengthening the RNA decay hypothesis. However, the higher basal phosphorylation in Pdcd1-/- cells (C150) requires explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Chronic T cells become progressively dysfunctional over time, with day 7 cells retaining glycolytic capacity and 2-DG sensitivity while day 21 cells lose both, accompanied by increased expression of inhibitory receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by time-course experiments (Figures 3G-I) showing metabolic and phenotypic progression. The data demonstrate that metabolic dysfunction develops gradually and correlates with exhaustion markers, though the mechanistic drivers of this progression are not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Both Pdcd1+/+ and Pdcd1-/- chronic T cells depend equally on FAO for IFN\u03b3 production, but differ in CPT1A expression, suggesting that mitochondrial fatty acid import may be a limiting factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 are supported by inhibitor studies and gene expression analysis (Figures 5E-G). The equal sensitivity to Etomoxir and oligomycin demonstrates PD-1-independent reliance on FAO. However, the speculation about fatty acid import as a limiting factor (C131) requires direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Chronic T cells rely less on glutaminolysis than effector T cells for IFN\u03b3 production, as demonstrated by reduced sensitivity to DON inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by DON inhibition experiments (Figure 4A) showing differential sensitivity between cell types. However, the study does not investigate why chronic cells are less dependent on glutamine or what alternative nitrogen sources they might use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "When OXPHOS is inhibited by oligomycin, effector T cells compensate by engaging glycolysis while chronic T cells cannot, as shown by lactate production and glucose consumption only in effector cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by metabolic measurements in the presence of oligomycin (Figure 4C). This demonstrates the fundamental metabolic inflexibility of chronic T cells and their inability to switch between metabolic pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Alloreactive T cells in SCID recipients maintain stable absolute numbers from day 6-21 post-transfer, express activation markers and PD-1, produce IFN\u03b3 that is enhanced by PD-1 blockade, but show time-dependent changes in glycolytic sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 are supported by flow cytometry, ELISA, and 2-DG inhibition data (Figure 1). These establish the basic characteristics of the chronic T cell model and demonstrate that metabolic requirements change over time despite stable cell numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "PD-1 controls chronic T cell activity in vivo, as demonstrated by increased organ infiltration after anti-PD-L1 treatment, which results from enhanced recruitment rather than proliferation since chronic T cells cannot proliferate in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C48-C51 are supported by in vivo antibody treatment (Figure 2E) and in vitro proliferation assays (Figure 2F). The inference about recruitment vs. proliferation (C51) is logical but could be strengthened by direct in vivo proliferation measurements (e.g., BrdU incorporation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "In purified T cell cultures, PD-L1/CD80 interactions do not regulate chronic T cell activity, as anti-PD-L1 antibodies do not enhance IFN\u03b3 production in the absence of APCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by experiments with purified T cells (Figures 2G-H). This control experiment clarifies that the effects observed with whole spleen cells are due to PD-1/PD-L1 rather than PD-L1/CD80 interactions, though CD80 expression on the T cells themselves is not directly assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Naive and effector T cells show canonical metabolic responses to activation, with effector cells producing both IL-2 and IFN\u03b3 accompanied by increased glycolysis evidenced by lactate production and glucose consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by cytokine and metabolic measurements (Figure 3D). These serve as important positive controls demonstrating that the assays can detect normal metabolic responses, making the chronic T cell defects more striking by comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C162"
+    ],
+    "result": "Genetic absence of PD-1 prevents functional regulation and promotes IFN\u03b3 secretion in chronic T cells, but does not restore proliferation, indicating a deeper state of dysfunction than in viral exhaustion models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C162 are supported by IFN\u03b3 production data in Pdcd1-/- cells (Figure 5A) and prior proliferation data (Figure 2F). The comparison to viral models provides important context, though direct side-by-side comparisons would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Chronic antigen stimulation reduces expression of antioxidant proteins including peroxiredoxins, thioredoxin, and PARK7, potentially rendering chronic T cells more sensitive to oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are supported by proteomic data (Table 1) showing significant down-regulation of multiple antioxidant proteins. However, the functional consequence (increased sensitivity to oxidative stress, C133) is inferred rather than directly tested through oxidative stress challenge experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims establishing prior knowledge about T cell metabolism, PD-1 function, and SCID/GVHD context from published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C31 are literature-based background claims supported by appropriate citations. These establish the scientific context for the study and are generally accurate representations of prior work, though they should be verified against the original sources for complete accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Discussion claims comparing current findings to prior work on T cell exhaustion, anergy, and tumor immunity, proposing that chronic antigen exposure without inflammation creates a distinct metabolic program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C176 are interpretive discussion points comparing the current findings to various published models. While the comparisons are reasonable and well-cited, many represent speculative interpretations (C159, C164, C171) that would require additional experiments to definitively establish. The mechanistic proposals about CD28 signaling (C172) and PGC-1\u03b1/PPAR\u03b3 (C173-C176) are plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Concluding claims proposing that duration of antigen exposure determines metabolic programming, that late-stage dysfunction becomes irreversible, and discussing therapeutic implications for chronic immune diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C184-C187 represent high-level conclusions and therapeutic speculations. While C184-C185 are reasonable syntheses of the data, the therapeutic implications (C186-C187) are speculative and would require clinical validation. The claim about irreversibility (C185) is supported by the PD-1 blockade data but could benefit from additional mechanistic investigation.",
+    "result_type": "MINOR"
+  }
+]

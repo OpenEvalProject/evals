@@ -1,0 +1,2040 @@
+{
+  "submission": {
+    "id": "05acf422-48ab-4db5-b017-8a063b7c1fc6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:38:56.674795Z",
+    "updated_at": "2025-12-01T19:38:56.674795Z"
+  },
+  "content": [
+    {
+      "id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "submission_id": "05acf422-48ab-4db5-b017-8a063b7c1fc6",
+      "content_type": "manuscript",
+      "content_text": "# Post-meiotic DNA double-strand breaks occur in Tetrahymena, and require Topoisomerase II and Spo11\n\n## Authors\n\n- Takahiko Akematsu<sup>1</sup> ([ORCID: 0000-0001-9396-0243](https://orcid.org/0000-0001-9396-0243)) \u2020\n- Yasuhiro Fukuda<sup>2</sup>\n- Jyoti Garg<sup>5</sup>\n- Jeffrey S Fillingham<sup>6</sup>\n- Ronald E Pearlman<sup>5</sup>\n- Josef Loidl<sup>1</sup>\n\n### Affiliations\n\n1. Department of Chromosome Biology University of Vienna Vienna Austria\n2. Department of Biodiversity Science Tohoku University Oosaki Japan\n3. Division of Biological Resource Science Tohoku University Oosaki Japan\n4. Graduate School of Agricultural Science Tohoku University Oosaki Japan\n5. Department of Biology York University Toronto Canada\n6. Department of Chemistry and Biology Ryerson University Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nBased on observations of markers for DNA lesions, such as phosphorylated histone H2AX (\u03b3H2AX) and open DNA ends, it has been suggested that post-meiotic DNA double-strand breaks (PM-DSBs) enable chromatin remodeling during animal spermiogenesis. However, the existence of PM-DSBs is unconfirmed, and the mechanism responsible for their formation is unclear. Here, we report the first direct observation of programmed PM-DSBs via the electrophoretic separation of DSB-generated DNA fragments in the ciliate Tetrahymena thermophila. These PM-DSBs are accompanied by switching from a heterochromatic to euchromatic chromatin structure in the haploid pronucleus. Both a topoisomerase II paralog with exclusive pronuclear expression and Spo11 are prerequisites for PM-DSB induction. Reduced PM-DSB induction blocks euchromatin formation, characterized by histone H3K56 acetylation, leading to a failure in gametic nuclei production. We propose that PM-DSBs are responsible for histone replacement during the reprogramming of generative to undifferentiated progeny nuclei.\n\n## Introduction\n\nDNA double-strand breaks (DSBs) represent one of the greatest threats to genome integrity. Nevertheless, deliberate DSB induction is necessary for reshuffling genes or DNA sequences. The most common example in eukaryotes is the induction of meiotic DSBs (Keeney et al., 1997), and others include the somatic recombination of immunoglobulin genes (Stavnezer et al., 2008), mating-type switching in yeast (Haber, 2012), and inducing antigenic variation in Trypanosoma (McCulloch et al., 2015). Post-meiotic DSBs (PM-DSBs) are a novel type of programmed DSBs that are claimed to occur during spermiogenesis in animals, including humans (Marcon and Boissonneault, 2004) and Drosophila (Rathke et al., 2007). Markers of DNA lesions such as phosphorylated histone H2AX (\u03b3H2AX) foci and terminal deoxynucleotidyl transferase dUTP nick end-labeling (TUNEL)-positive signals are found in the nuclei of elongating spermatids (Marcon and Boissonneault, 2004; Meyer-Ficca et al., 2005; Leduc et al., 2008). Moreover, both poly ADP-ribose (PAR) formation, a known DNA damage response (Meyer-Ficca et al., 2005) and DNA polymerase activity, characteristic of DNA repair synthesis, have been detected in these cells (Leduc et al., 2008). PM-DSBs have been implicated in eliminating free DNA supercoils formed during canonical histone withdrawal to ensure protamine deposition onto untangled DNA (Marcon and Boissonneault, 2004; Laberge and Boissonneault, 2005; Rathke et al., 2014). However, the nature of these lesions (whether DSBs or single-strand nicks) and the mechanism by which they are formed have not been fully elucidated.\n\nAs the TUNEL signal is greatly diminished in rabbit spermatids in the presence of the type II topoisomerase (Top2) inhibitor, etoposide (Laberge and Boissonneault, 2005), which forms a ternary complex with DNA and Top2 (Pommier et al., 2010), the catalytic activities of Top2-related proteins have been considered responsible for inducing post-meiotic DNA lesions. Vertebrates encode two closely related TOP2 genes termed \u03b1 and \u03b2, which are differentially regulated during cell growth and cannot substitute for each other (Roca, 2009). Top2\u03b1 is only expressed in proliferating cells, where it is involved in mitosis-related events such as DNA replication, chromosome condensation and decondensation, and sister chromatid segregation (Woessner et al., 1991; Grue et al., 1998). In contrast, Top2\u03b2 is mainly expressed in terminally differentiated cells and is therefore thought to have a non-mitotic function (Austin and Marsh, 1998; Linka et al., 2007). In cultured human cells, Ju et al. (2006) uncovered a role for Top2\u03b2 in catalyzing site-specific DSB formation within some gene promoters, leading to local changes in chromatin architecture and transcriptional activation. In mouse spermiogenesis, Leduc et al. (2008) demonstrated that Top2\u03b2 was exclusively expressed in elongating spermatids, where it colocalized with \u03b3H2AX foci. Moreover, these authors showed that tyrosyl-DNA phosphodiesterase 1 (Tdp1), known to dissociate the covalent bonds between Top2 and DNA (Nitiss et al., 2006; Murai et al., 2012), was expressed in the same cells. These findings strongly suggest that Top2\u03b2 produces transient DSBs in haploid chromosomes to support chromatin remodeling.\n\nIn addition to Top2\u03b2, Spo11, the predominant meiotic DSB inducer (Keeney, 2008), has recently been implicated in PM-DSB formation. Gouraud et al. (2013) reported that the elongating spermatids of mice express much higher levels of SPO11 transcripts compared with TOP2\u03b2 transcripts. Since Spo11 has a similar structure to prokaryotic Top2 (also called Top6) and produces DSBs in the same manner as Top2 by forming phosphotyrosine linkages to 5\u2032 strand termini on both sides of a DSB (Neale et al., 2005), Spo11 may also be involved in inducing PM-DSBs.\n\nUsing the unicellular ciliated protist Tetrahymena thermophila (hereafter referred to as Tetrahymena) as a model biological system, we demonstrate that PM-DSBs are formed in non-metazoan organisms and report the first compelling genetic evidence for the mechanism of PM-DSB induction. The availability of gene manipulation methods (Chalker, 2012), sequenced genomes (Eisen et al., 2006; Hamilton et al., 2016), and gene expression data (Miao et al., 2009) make Tetrahymena an ideal model for studying fundamental cellular and molecular processes. A remarkable and virtually unique feature of ciliates (including Tetrahymena) is that they stably maintain spatially and functionally differentiated germline and somatic nuclear genomes within a single cytoplasm (Orias et al., 2011). The transcriptionally inert diploid germline genome, housed within the micronucleus (MIC), stores the genetic information for sexual progeny, while the polyploid somatic genome, housed within the macronucleus (MAC), is involved in active transcription. Both types of nuclei derive from a single zygotic nucleus during sexual reproduction. The MAC anlagen then undergo large-scale genome rearrangement and amplification processes that remove the internal eliminated sequences, representing about 40% of the genome (Mochizuki, 2010, 2012; Noto et al., 2015). The MAC genotype governs the phenotypes of both the MAC and MIC (Orias et al., 2011). Owing to its nuclear dualism, Tetrahymena is an ideal tool to address questions about genes that have important post-meiotic functions but are not manipulable in other model systems because they are essential for germline cell homeostasis.\n\nIn this study, we investigate the functions of Tetrahymena TOP2\u03b2 and SPO11 orthologs in haploid MICs (pronuclei) after completing meiosis and show their involvement in PM-DSB formation. We also provide evidence that DNA repair is concomitant with the incorporation of newly synthesized histone H3 into pronuclei. Our data suggest that Tetrahymena undergoes a spermiogenesis-like post-meiotic stage, in which Top2-related proteins induce transient DSBs followed by a dynamic change in the chromatin structure of gametic nuclei prior to fertilization.\n\n## Results\n\n### Novel \u03b3H2AX localization in pronuclei\n\nFigure 1 illustrates the process of Tetrahymena cell mating (known as conjugation; described in Cole and Sugai, 2012). Mating is initiated by the interaction of cells of different mating types, followed by meiotic prophase in both mating partners, during which MICs stretch out to form bivalent chromosomes without synaptonemal complex formation (Loidl et al., 2012). Finally, two consecutive meiotic divisions (anaphase I and II) take place to form four identical haploid pronuclei: one of these (the selected pronucleus) undergoes an additional mitosis event (gametogenic mitosis) to produce gametic nuclei, whereas the other three (unselected) pronuclei eventually undergo autophagic degradation (Liu and Yao, 2012). After they are reciprocally exchanged between mating partners, each gametic nucleus forms a zygotic nucleus by karyogamy, corresponding to fertilization in metazoa. Soon thereafter, the zygotic nucleus undergoes two consecutive mitotic divisions (post-zygotic mitoses) to produce four identical anlagen. Two of these are distributed to the anterior region of the cytoplasm, whereby they differentiate into the progeny MACs; the remaining two posterior anlagen become progeny MICs. Once the progeny MACs begin to develop, the parental MAC (pMAC) becomes transcriptionally inactive and is selectively eliminated from the cytoplasm via autophagy (Akematsu et al., 2010, Akematsu et al., 2012, 2014). Mating is terminated once the progeny MACs develop. One of the progeny MICs is resorbed, while the remaining MIC undergoes replication prior to the first cell division. The progeny MACs are then distributed to the daughter cells. Finally, four progeny cells are produced from a mating cell pair (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig1-v2.jpg)\n\n**Figure 1.:** When starved cells of different mating types are mixed, they start mating and meiosis, and produce sexual progeny. MAC-macronucleus; MIC-micronucleus; $-progeny macronuclear anlagen; *-progeny MICs; pMAC-degrading parental macronucleus. Time (h) after mixing of cells is indicated.\n\nWe discovered H2AX phosphorylation in post-meiotic pronuclei by \u03b3H2AX immunostaining (Figure 2A). The post-meiotic stage is distinct from the other two meiotic stages in which \u03b3H2AX foci are known to be formed, namely (1) during DSB formation in the elongating meiotic prophase MIC (Mochizuki et al., 2008; Papazyan et al., 2014) and (2) during DNA elimination in the developing MAC anlagen (Figure 2A) (Song et al., 2007). Western blotting of mating cell proteins from different time points showed a consistent result: a single band of about 15 kDa (the size of H2AX) that transiently appeared at 2 hr (meiotic prophase), 6 hr (post-meiotic stage), and 8 hr (MAC development stage) after induction of meiosis (Figure 2B). Moreover, a parentally expressed H2AX (encoded by TTHERM_00790790)-GFP fusion protein localized to the MIC at meiotic prophase and to post-meiotic pronuclei (Figure 2\u2014figure supplement 1), confirming that pronuclear \u03b3H2AX immunostaining was not due to disappearance of H2AX.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig2-v2.jpg)\n\n**Figure 2.:** (A) \u03b3H2AX foci appear at three distinct time points\u2014in elongating micronuclei at meiotic prophase\u2014in pronuclei at the post-meiotic stage; and in the developing anlagen\u2014but do not appear in parental MACs throughout mating. Cartoons illustrate the corresponding stages from Figure 1. Scale bar denotes 10 \u03bcm. MAC-macronucleus; MIC-micronucleus; #-differentiating zygotic nuclei; $-progeny macronuclear anlagen; *-progeny micronuclei; pMAC-degrading parental macronuclei. (B) Western blot analysis of \u03b3H2AX from different time points during mating. \u03b2-actin was the loading control. See also Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Wild-type strain (left) and the tagged strain (right) were mated. Approximately 1 kb of the ORFs (5\u2032) and downstream UTRs (3\u2032) of the H2AX (TTHERM_00790790) genomic loci were amplified from SB210 genomic DNA using PrimeSTAR Max DNA Polymerase (Takara) and the following primers: H2AX 5\u2032 forward \u2013 AGTCGAGCTCTGAAGGTGATTCGTCATTGATTG, reverse \u2013 AGTCGGATTCAAGGTCTTGAGAAGCTTGACCTC; H2AX 3\u2032 forward \u2013 AGTCCTCGAGTATAATGTGGCAAGTCTAAGTCTG, reverse \u2013 AGTCGGTACCACCTATGTAGCAACGAGTCATTTAT. The 5\u2032 ORF sequence does not contain a stop codon. Amplified PCR products were purified and integrated into the backbone vector pEGFP-NEO4 as described in Materials and methods. The resulting vector (pH2AX-EGFP-NEO4) was linearized with SacI plus KpnI before biolistic transformation into Tetrahymena. Indirect immunofluorescence to visualize the tagged protein was carried out as described in Materials and methods. Scale bar denotes 10 \u03bcm. MAC-macronucleus; MIC-micronucleus.\n\nIn one of the four pronuclei, \u03b3H2AX fluorescence disappeared after about 30 min (Figure 3A/a/A\u2032); only this nucleus underwent gametogenic mitosis (Figure 3B/b/B\u2032). In contrast, the \u03b3H2AX signal persisted in the unselected pronuclei, which relocated to the posterior region of the cell were degraded (Figure 3C/c/C\u2032). Since H2AX dephosphorylation is an established marker of repaired DNA (Chowdhury et al., 2005; Keogh et al., 2006), the post-meiotic stage might involve DNA damage formation in all pronuclei, followed by DNA repair only in the selected pronucleus. Indeed, DNA repair markers such as DNA-dependent protein kinase catalytic subunit (DNA-PKcs, a factor involved in DNA repair by non-homologous end joining [NHEJ]) and Rad51 (a protein involved in recombinational repair) are expressed in the selected pronucleus (Figure 3\u2014figure supplements 1 and 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig3-v2.jpg)\n\n**Figure 3.:** (A/a/A\u2032) \u03b3H2AX is formed in all four pronuclei after completion of meiosis. (B/b/B\u2032) A pronucleus (red arrowheads) becomes immunonegative for \u03b3H2AX. (C/c/C\u2032) Soon thereafter, the pronucleus without \u03b3H2AX (red arrowheads) is selected to undergo gametogenic mitosis. (D/d/D\u2032) The unselected pronuclei, in which \u03b3H2AX (\u2020) persists, are degraded at the posterior region of the cytoplasm and eventually disappear by the karyogamy stage. #-zygotic nuclei. Scale bar denotes 10 \u03bcm. See also Figure 3\u2014figure supplements 1 and 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Construct for the ectopic expression of GFP-tagged DNA-PKcs (TTHERM_00203010). GFP under the cadmium-inducible MTT1 promoter was introduced into DNA-PKcs in the MAC. Approximately 1 kb of the DNA-PKcs 5\u2032 UTR and ORF were amplified from SB210 genomic DNA using PrimeSTAR Max DNA Polymerase (TaKaRa) and the following primers: DNA-PKcs 5\u2032 forward \u2013 AGTCGAGCTCACTTTAGCATTGGCTAATGCATG, reverse \u2013 AGTCGTCGACTTTTTAACGAATTCAAAAAAATAATAATAAGC; and DNA-PKcs 3\u2032 forward \u2013 AGTCGGATCCATGTTAGAGCATTTACTTGAAAGCGC, reverse \u2013 AGTCGGTACCTGAGAATAAGCTGTCAACAC. Amplified forward and reverse target fragments were cloned into the SacI\u2013SalI and BamHI\u2013KpnI sites, respectively, of the backbone plasmid pBNMB1-EGFP (a gift from Dr Kazufumi Mochizuki, CNRS Institute of Human Genetics, Montpellier, France). The resulting vector (pEGFP-DNA-PKcs-NEO5) was linearized with SacI plus KpnI before biolistic transformation into Tetrahymena. (B) Localization of GFP-DNA-PKcs at the post-meiotic stage. Wild-type cells (left) were mated with tagged cells (right). Prior to pronuclear selection, DNA-PKcs localizes only to the MAC. Upon pronuclear selection, it appears in the selected pronucleus (red arrowhead). Scale bar denotes 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Mating wild-type cells at the post-meiotic stage were fixed and membrane-permeabilized as described previously (Howard-Till et al., 2011). Cells were incubated for overnight at 4\u00b0C with primary antibody that recognizes the Tetrahymena Rad51 (1:100; mouse monoclonal, Clone 51RAD01, NeoMarkers, Fremont, CA) (Howard-Till et al., 2011). After washing with PBS, cells were incubated with FITC-labeled goat anti-mouse (1:500; Merck Millipore) secondary antibody for 1 hr at room temperature in the dark. After washing with PBS, cells were stained with 1 \u03bcg/\u03bcl DAPI and observed under fluorescence microscopy. Rad51 is not expressed in any type of nuclei directly after anaphase II, and appears only in the selected pronucleus (red arrowheads) once pronuclear selection takes place. Scale bar denotes 10 \u03bcm.\n\n### Top2 and its relation to post-meiotic \u03b3H2AX formation\n\nCiliates including Tetrahymena encode multiple TOP2 genes (Figure 4A). We found that Tetrahymena has two closely related Top2 isoforms (encoded by TTHERM_00456750 and TTHERM_00825440; Figure 4A), both of which contain domains characteristic of mammalian Top2\u03b1 and \u03b2: an ATPase domain, a Toprim (topoisomerase\u2013primase) domain, and an N-terminal Top2 A subunit domain (Figure 4B). However, both lack the DTHCT domain found in the C-termini of DNA gyrase B, topoisomerase IV (Top4), and H+-ATPase proteins (Figure 4B) (Staub et al., 2004). C-terminal GFP tagging of these Tetrahymena Top2 isoforms revealed distinct nuclear localization patterns: TTHERM_00456750p was expressed exclusively in the MAC and TTHERM_00825440p in MIC and MIC-derived pronuclei (Figure 4C). Hence, it is reasonable to assume that TTHERM_00825440p is the sole Tetrahymena functional homolog of mammalian Top2\u03b2 to be exclusively expressed in spermatids (Leduc et al., 2008). Furthermore, the common ancestor of ciliates might have acquired multiple TOP2 genes to manage its nuclear dualism. Hereafter, we will refer to TTHERM_00825440p as Top2G (Germline Top2) and TTHERM_00456750p as Top2S (Somatic Top2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig4-v2.jpg)\n\n**Figure 4.:** (A) Phylogenetic tree of Top2 homologs. The tree was reconstructed with the maximum likelihood method (see Materials and methods). Accession numbers indicate protein sequences obtained from GenBank. Branch width represents the bootstrap value. Scale bar denotes 0.2 expected amino acid substitutions per site. (B) Comparison of conserved domains between mouse and Tetrahymena Top2 homologs. (C) Subcellular localization of C-terminally GFP-tagged Tetrahymena Top2 paralogs. Based on their localization, TTHERM_00456750p and TTHERM_00825440p were designated Top2S (Top2 in the somatic nucleus) and Top2G (Top2 in germline nucleus), respectively. In mating pairs, Top2G-GFP expressed in one of the mating partners (right) migrates to the pronucleus of the untagged cell (left), causing a weak signal. MAC-macronucleus, MIC-micronucleus. Scale bars denote 10 \u03bcm.\n\nTo investigate the post-meiotic function of Top2G, we made RNA interference (RNAi) strains to knock down gene expression (Figure 5A). Western blotting showed that Top2G-GFP, which was most abundant at post-meiosis (i.e. 4 hr and later after meiosis induction), was completely depleted by RNAi expression (TOP2gi; Figure 5B), demonstrating that TOP2 knockdown was effective. Acetic orcein staining of chromosomes showed that Top2G depletion did not affect meiosis: four normal pronuclei were generated, as in the wild-type cross (Figure 5C). However, gametogenic mitosis failed in the TOP2gi cross: all pronuclei migrated to the posterior region of the cytoplasm, similar to unselected pronuclei in the wild-type (Figure 5C). These pronuclei had vanished by 10 hr, probably via autophagy (Figure 5C) (Liu and Yao, 2012), rendering about 70\u201380% of the TOP2gi crosses amicronucleate (Figure 5D and Figure 5\u2014source data 1). Mating was eventually aborted in amicronucleate cells, without the formation of progeny nuclei (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic representation of the pTOP2Gi-NEO5 knockdown vector used for Top2G RNAi. Hairpin RNA was produced under the control of the cadmium-inducible MTT1 promoter. This construct was integrated into the \u03b2-tubulin (BTU1) genomic locus by homologous recombination. (B) Western blotting of TOP2G-GFP in the wild-type and TOP2gi crosses to assess RNAi efficiency. \u03b2-actin was the loading control. (C) Acetic orcein staining of the wild-type (top) and TOP2gi (bottom) crosses. Gametogenic mitosis (black arrowheads) took place in the wild-type crosses but was not observed in the TOP2gi crosses. Wild-type crosses underwent progeny nuclear development by 10 hr, whereas TOP2gi crosses became amicronucleate and did not produce progeny nuclei. MAC-macronucleus; MIC-micronucleus; \u2020-unselected pronuclei; #-differentiating zygotic nuclei; $-progeny macronuclear anlagen; *-progeny micronuclei; pMAC-degrading parental macronuclei. Time (h) after mixing starved cells of different mating types is indicated. (D) Percentage of wild-type and TOP2gi cells with progeny nuclei and amicronucleate cells at 10 hr. Columns and error bars represent the means and standard deviations (p<0.01 as calculated by Tukey HSD test) of four measurements. See also Figure 5\u2013sourse data 1 for wild-type and TOP2gi crosses data. (E) Post-meiotic \u03b3H2AX formation is inhibited in TOP2gi crosses (compare with wild-type crosses in Figure 1A). Unselected pronuclei (\u2020) assemble in the posterior region of the cytoplasm and are degraded. Scale bar denotes 10 \u03bcm. (F) Percentage of wild-type and TOP2gi post-meiotic cells with \u03b3H2AX formation in the pronuclei. Columns and error bars represent means and standard deviations (p<0.01, as calculated by Tukey\u2019s HSD test) of four measurements. See also Figure 5\u2013sourse data 2 for wild-type and TOP2gi crosses data.\n\nTo see whether Top2G depletion affects \u03b3H2AX formation in the pronuclei, \u03b3H2AX was immunostained in the TOP2gi cross. Similar to the effect of Top2\u03b2 chemical inhibition on animal spermiogenesis (Laberge and Boissonneault, 2005), loss of Top2G activity in Tetrahymena suppressed H2AX phosphorylation in the pronuclei (Figure 5E,F and Figure 5\u2014source data 2). However, \u03b3H2AX formation at meiotic prophase was not affected (Figure 5E). This result suggests that Top2G may be required to form post-meiotic DNA lesions but not meiotic DSBs.\n\n### Possible involvement of Spo11 in post-meiosis\n\nSpo11 induces practically all meiotic DSBs needed for bivalent formation and genetic exchange by homologous recombination (Keeney, 2008). Gouraud et al. (2013) suggested that Spo11 has an additional function as a PM-DSB inducer based on microarray data (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE2736) showing that SPO11 transcription remains high in elongating spermatids in mice. Similarly, RT-PCR showed that SPO11 is transcribed from meiotic prophase (~3 hr) until the post-meiotic stage (6 hr) in Tetrahymena (Figure 6C), suggesting that Spo11 functions in post-meiotic processes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig6-v2.jpg)\n\n**Figure 6.:** (A) Acetic orcein staining of wild-type (top), \u0394SPO11 (middle), and SPO11i (bottom) crosses. Although \u0394SPO11 crosses display the same post-meiotic phenotype as TOP2gi crosses (cells become amicronucleate and do not undergo gametogenesis; see Figure 4C), some SPO11i crosses behave in the same way as wild-type crosses by producing normal progeny nuclei via gametogenic mitosis (black arrowheads). MAC-macronucleus; MIC-micronucleus; \u2020-unselected pronuclei; #-zygotic nuclei being differentiated; $-progeny macronuclear anlagen; *-progeny MICs; pMACs-degrading parental macronuclei. (B) Percentage of cells with progeny nuclei and amicronucleate cells at 10 hr. Columns and error bars represent means and standard deviations (p<0.01 as calculated by Tukey\u2019s HSD test) of four measurements. See also Figure 6\u2013sourse data 1 for data on wild-type, \u0394SPO11, and SPO11i crosses. (C) RT-PCR quantitation of SPO11 transcription in wild-type, \u0394SPO11, and SPO11i crosses. HSP70 was the loading control. Time (h) after mixing cells is indicated. (D) Western blotting of C-terminally FZZ-tagged Spo11 in wild-type and SPO11i crosses shows the impact of RNAi on SPO11-FZZ expression during the pre-zygotic period of mating. \u03b2-actin was the loading control. Time (h) after mixing cells is indicated. (E) SPO11 is involved in both meiotic and post-meiotic \u03b3H2AX formation. Although \u03b3H2AX foci are not seen at the meiotic or post-meiotic stages in \u0394SPO11 crosses, post-meiotic \u03b3H2AX is formed normally in a subset of SPO11i crosses in which Spo11 is expressed at the post-meiotic stage (see Figure 5D). Red arrowheads indicate the selected pronuclei in gametogenic mitosis from which \u03b3H2AX has been lost. Scale bar denotes 10 \u03bcm. (F) Percentage of post-meiotic cells with \u03b3H2AX in the pronuclei. Columns and error bars represent means and standard deviations (p<0.01 as calculated by Tukey\u2019s HSD test) of four measurements. See also Figure 6\u2014source data 2 for data on wild-type, \u0394SPO11, and SPO11i crosses.\n\nThe meiotic role of Tetrahymena Spo11 in DSB formation and nuclear elongation was elucidated using somatic knockout (\u0394SPO11) and knockdown (SPO11i) lines (Mochizuki et al., 2008; Loidl and Mochizuki, 2009; Howard-Till et al., 2013). Here, the post-meiotic phenotypes of these mutants were assessed by acetic orcein staining. Both mutants displayed indistinguishable phenotypes at meiotic prophase: neither DSBs nor \u03b3H2AX were formed in the meiotic MIC and nuclear elongation did not take place. Nevertheless, meiotic anaphases I and II were not affected, and four pronuclei were formed as in the wild-type crosses (Figure 6A). However, similar to the TOP2gi crosses (Figure 5C), the \u0394SPO11 mutant did not undergo gametogenic mitosis, and only amicronucleate single cells were present by 10 hr after meiosis induction (Figure 6A,B and Figure 6\u2014source data 1). These results suggest a role for Spo11 not only in meiotic prophase but also at the post-meiotic stage. Interestingly, the post-meiotic defect was less severe in SPO11i crosses: progeny nuclei developed following gametogenic mitosis in 40\u201370% of these cells (Figure 6A,B and Figure 6\u2014source data 1). Attenuation of the mutant phenotype suggests that SPO11 expression recovers from RNAi-mediated knockdown after meiotic prophase. To measure Spo11 protein expression, we created C-terminally FZZ-tagged (Lee and Collins, 2007) Spo11-expressing strains. By Western blotting, Spo11-FZZ expression was first seen in wild-type crosses at meiotic prophase (2 hr), reached a maximum during anaphase I to II (~3\u20134 hr), and remained at that level until post-meiosis (6 hr; Figure 6D). In the presence of SPO11 RNAi, Spo11-FZZ was not expressed during meiotic prophase (~2\u20133 hr) but was expressed at later stages (~4\u20136 hr), including the post-meiotic stage (Figure 6D). This result indicates that the RNAi interferes with SPO11 expression at meiotic prophase, but its effect is gradually lost at later stages.\n\n\u03b3H2AX immunostaining was performed to determine whether SPO11 expression at the post-meiotic stage correlates with pronuclear H2AX phosphorylation. As demonstrated previously (Mochizuki et al., 2008; Loidl and Mochizuki, 2009; Howard-Till et al., 2013), neither the \u0394SPO11 nor SPO11i crosses expressed \u03b3H2AX in the meiotic MIC (Figure 6E). Moreover, none of the \u0394SPO11 crosses and only 40\u201370% of the SPO11i crosses showed \u03b3H2AX immunostaining in the pronuclei (Figure 6E,F and Figure 6\u2014source data 2). These results suggest that Spo11 plays an additional role in inducing DNA lesions at the post-meiotic stage, together with Top2G (Figure 5).\n\n### Direct evidence for post-meiotic DSB\n\nSince \u03b3H2AX formation is an indirect marker of DSBs, we carried out pulsed-field gel electrophoresis (PFGE) to detect chromosome fragmentation, which is diagnostic of DSBs (Lukaszewicz et al., 2013). DNA was electrophoresed for 72 hr to separate fragment sizes of 0.01\u20135.7 Mb. Intact MIC chromosomes (n\u00a0=\u00a05,~25.0\u201335.0 Mb) (Hamilton et al., 2016) do not enter the gel under these conditions, and gel staining showed only the MAC minichromosomes (Figure 7A). The smallest band represents ribosomal DNA (rDNA; Figure 7A, red arrow) of size\u00a0~0.02 Mb (L\u00f8vlie et al., 1988), which was used as the loading control.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig7-v2.jpg)\n\n**Figure 7.:** (A) Example of a pulsed-field gel with stained DNA. The red triangle indicates rDNA, the loading control. (B) Southern blotting using the Tlr element as a germline-specific probe. Smear signals represent DSB-generated chromosome fragments in the meiotic MIC (blue squares) and pronuclei (red and green squares), whereas intact micronuclear chromosomes (25.0\u201335.0 Mb) did not enter the gel. Time (h) after mixing cells is indicated.\n\nTo distinguish MIC chromosome fragments from the MAC minichromosomes, MIC DNA was detected by Southern blotting with a 32P-labeled Tlr sequence, which is specific to the MIC genome (Wuitschick et al., 2002). On Southern blots of mating cells, four different DNA patterns could be distinguished (Figure 7B). For control cells at t\u00a0=\u00a00 hr, no DNA complementary to the Tlr probe entered the gel, indicating the presence of intact MIC chromosomes. Mating cells at t\u00a0=\u00a02\u20134 hr displayed a prominent smear between 2.2 and 4.6 Mb (Figure 7B, blue box). This signal represents meiotic DSBs induced by Spo11, because it was absent in both the \u0394SPO11 and SPO11i crosses but present in TOP2gi crosses (Figure 7B). At the post-meiotic stage (t\u00a0=\u00a06\u20137 hr), a smear of shorter DNA fragments appeared in all cell lines (Figure 7B, green box). This DNA signal probably originates from the autophagic degradation of unselected pronuclei (Liu and Yao, 2012). In addition, a class of somewhat larger fragments was present at t\u00a0=\u00a06\u20137 hr in the wild-type and SPO11i crosses, but absent in the TOP2gi and \u0394SPO11 crosses (Figure 7B, red box). The absence of this subset of DNA fragments corresponds with the absence of pronuclear \u03b3H2AX formation in the TOP2gi and \u0394SPO11 crosses (Figures 5E and 6E). Hence, these fragments are probably created by PM-DSBs.\n\nSince autophagy of unselected pronuclei overlaps temporally with post-meiotic transformation of the selected pronucleus, it is still possible that the DNA smear seen at t\u00a0=\u00a06\u20137 in the wild-type and SPO11i crosses results entirely from DNA degradation in unselected pronuclei. To eliminate background autophagic DNA fragments, we created somatic knockout strains for the autophagy-related 8 isoform 2 gene (ATG8-2), which encodes a central component of the Tetrahymena autophagosome (Figure 8A; Liu and Yao, 2012), using the co-Deletion technique (described in Hayashi and Mochizuki, 2015). Diagnostic PCR for the \u0394ATG8-2 strains of different mating types showed that ATG8-2 genomic loci were completely deleted (Figure 8B). The \u0394ATG8-2 crosses underwent mating, including normal meiosis and \u03b3H2AX formation in the pronuclei (Figure 8C), but were defective in eliminating unselected pronuclei; therefore, post-meiotic cells contained extra nuclei (Figure 8D). PFGE detection of DNA fragments revealed normal meiotic DSBs plus a prominent post-meiotic (6\u20137 hr) DSB signal, which is unlikely to result from autophagy (Figure 8E). Next, we tested TOP2gi::\u0394ATG8-2, \u0394SPO11::\u0394ATG8-2, and SPO11i::\u0394ATG8-2 double mutants in the same assay. In the TOP2gi::\u0394ATG8-2 mutant, meiotic DSB-dependent fragmentation was normal but post-meiotic fragmentation was virtually absent. In the \u0394SPO11::\u0394ATG8-2 mutant, meiotic DSB-dependent fragmentation was absent and post-meiotic fragmentation was strongly reduced. Finally, in the SPO11i::\u0394ATG8-2 mutant, the meiotic signal was absent and the post-meiotic signal was partly retained (Figure 8E). The post-meiotic signal in this mutant was completely absent in a triple mutant (TOP2gi::SPO11i::\u0394ATG8-2; Figure 8E). These results show that programmed PM-DSBs are present in Tetrahymena, suggesting that PM-DSB formation requires both Top2g and Spo11.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematic representation of ATG8-2 knockout strains by co-Deletion (as described in Hayashi and Mochizuki, 2015), confirmed by diagnostic PCR. The PCR primer set is indicated by arrows. (B) Only fragments from the deleted ATG8-2 genomic locus were amplified in \u0394ATG8-2 strains of two different mating types, while only fragments from the intact ATG8-2 genomic locus were amplified from the wild-type strain. (C) Post-meiotic \u03b3H2AX formation was not affected in the \u0394ATG8-2 crosses: gametogenic mitosis (red arrowheads) took place as in wild-type crosses (see Figure 2C/c/C\u2032). Scale bar denotes 10 \u03bcm. (D) Acetic orcein staining of the \u0394ATG8-2 crosses shows that unselected pronuclei (\u2020) are retained beyond gametogenic mitosis (black arrowheads) owing to attenuated autophagy. #-differentiating zygotic nuclei; $-progeny macronuclear anlagen; *-progeny MICs; pMACs-degrading parental macronuclei. (E) Southern hybridization of \u0394ATG8-2, TOP2gi::\u0394ATG8-2, \u0394SPO11::\u0394ATG8-2, SPO11i::\u0394ATG8-2, and TOP2gi::SPO11i::\u0394ATG8-2 strains. The SPO11i::\u0394ATG8-2 strain (in which both meiotic and autophagic DSBs are eliminated) retains only the signal resulting from PM-DSBs. rDNA was the loading control. Time (h) after mixing cells is indicated. \u00a7 indicates a SPO11i::\u0394ATG8-2 7 hr sample as the as the positive control for the \u0394ATG8-2::TOP2gi::SPO11i blot. See also Figure 8\u2014figure supplement 1.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** To visualize DNA synthesis immediately following meiotic anaphase II, mating cells at 5.5 hr after mixing were exposed to 20 \u03bcM EdU (Invitrogen, Carlsbad, CA) for 30 min, washed with 10 mM Tris (pH 7.4) to remove excess EdU, air dried on poly-l-lysine-coated glass slides, and soaked in 70% ethanol containing 15 mM glycine for 30 min at \u221220\u00b0C. After washing with PBS, slides were soaked in PBS containing 0.05% Tween-100 for 30 min at room temperature, washed again with PBS, and incubated with Click-iT reaction cocktail (Invitrogen) for 1 hr at 30\u00b0C in the dark. After a final washing step with PBS, cells were stained with DAPI and observed under fluorescence microcopy. Cells not exposed to EdU were negative controls. Scale bar denotes 10 \u03bcm.\n\n### The selected pronucleus undergoes chromatin remodeling\n\nDNA repair factors DNA-PKcs and Rad51 were expressed (Figure 3\u2014figure supplements 1 and 2), and \u03b3H2AX immunoreactivity was lost in the selected pronucleus prior to gametogenic mitosis (Figure 3C,D), suggesting that DNA repair had been accomplished. However, since \u03b3H2AX dephosphorylation is only an indirect mark of repair (Chowdhury et al., 2005; Keogh et al., 2006), we looked for additional evidence that repair occurs in the selected pronucleus. Canonical histones around DNA lesions are often removed by chromatin remodelers to allow access by the repair machinery (Altaf et al., 2007; Osley et al., 2007). Newly synthesized histone H3 acetylated at lysine 56 (H3K56ac) is then deposited onto the repaired DNA (Chen et al., 2008; Shi and Oberdoerffer, 2012). Therefore, H3K56ac immunostaining was performed in mating wild-type cells to confirm that this process occurs in Tetrahymena. Consistent with their euchromatic state, wild-type MACs were positive for H3K56ac staining (Figure 9A). In contrast, owing to their heterochromatic state, MICs did not undergo acetylation in either vegetative or meiotic cells (Figure 9A) (Garg et al., 2013). However, we found that the selected pronucleus became H3K56 acetylated as it started to undergo gametogenic mitosis, while the three unselected pronuclei did not become acetylated and were degraded (Figure 9A). Double immunostaining for H3K56ac and \u03b3H2AX confirmed that acetylation and dephosphorylation occurred in the same pronucleus (Figure 9B), indicating that the selected pronucleus specifically undergoes DNA repair and histone H3 transfer. In the \u0394ATG8-2 crosses, H3K56 acetylation and H2AX dephosphorylation occurred in the selected pronucleus just as in the wild type (Figure 9C). The remaining unselected pronuclei also showed a decline in \u03b3H2AX staining after post-meiotic mitosis; however, neither H3K56 acetylation nor gametogenic mitosis occurred in these nuclei (Figure 9C). These results indicate that DNA repair and histone H3 modification are not merely the consequence of a nucleus escaping autophagy.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig9-v2.jpg)\n\n**Figure 9.:** (A) H3K56ac in the pre-zygotic period in the wild-type. The MAC was always H3K56ac positive, while the MIC only became H3K56ac positive as the pronucleus underwent gametogenic mitosis (yellow arrowheads). MAC-macronucleus; MIC-micronucleus, \u2020-unselected pronuclei. (B) H3K56ac formation and H2AX dephosphorylation are coincident at the post-meiotic stage. The selected pronuclei undergoing gametogenic mitosis (yellow arrowheads) are H3K56ac-positive but \u03b3H2AX-negative. (C) H3K56 acetylation does not occur in persisting unselected nuclei in the \u0394ATG8-2 mutant, whereas \u03b3H2AX is reduced in some of the persistent unselected pronuclei (yellow \u2020) in the post-zygotic period. In the selected pronucleus, H3K56ac formation and H2AX dephosphorylation are normal (yellow arrowheads). White \u2020-unselected pronuclei with persistent \u03b3H2AX; #-differentiating zygotic nuclei. Scale bars denote 10 \u03bcm. See also Figure 9\u2014figure supplement 1.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Double immunostaining of \u03b3H2AX with H3K18ac (A) and H3K27ac (B). Cells were fixed and membrane-permeabilized as described in Materials and methods. Cells were spread onto slides coated with poly-l-lysine and air dried. After rehydration in PBS, cells were incubated with primary antibody for 2 hr at room temperature: anti-\u03b3H2AX antibody (1:500; mouse monoclonal; BioLegend), anti-H3K18ac (1:2000; rabbit polyclonal; Active Motif), or anti-H3K27ac (1:2000; rabbit polyclonal; Active Motif). After washing with PBS, cells were incubated with FITC-labeled goat anti-mouse (1:500) or Rhodamine-labeled goat anti-rabbit (1:2000; Merck Millipore) secondary antibody for 1 hr at room temperature in the dark. After washing with PBS, cells were stained with 1 \u03bcg/\u03bcl DAPI and observed under fluorescence microcopy. Yellow arrowheads indicate the selected pronuclei undergoing gametogenic mitosis. Scale bars denote 10 \u03bcm.\n\nH3K56 acetylation upon DNA repair is catalyzed by the histone acetyltransferase Rtt109 (Chen et al., 2008), and the histone chaperone anti-silencing factor 1 (Asf1) is essential for Rtt109 stimulation and H3K56ac assembly at repaired DNA lesions (Recht et al., 2006; Tsubota et al., 2007; Berndsen et al., 2008; Shi and Oberdoerffer, 2012). Tetrahymena Asf1 is expressed in both the MAC and MIC during vegetative growth (Garg et al., 2013). We used a GFP-tagged Asf1-expressing strain to investigate changes in protein localization during mating. Asf1 was retained in the elongating MIC at meiotic prophase but lost during anaphase I and II (Figure 10A). After completion of meiosis, Asf1 reappeared only in the pronucleus selected to undergo gametogenic mitosis (Figure 10A). Double immunostaining demonstrated Asf1-GFP and H3K56ac colocalization in the selected pronucleus (Figure 10B), strongly suggesting that histone chaperone-mediated nucleosome assembly precedes gametogenic mitosis. Importantly, H3K56 acetylation potentially mediated by Asf1 was only induced in the selected pronucleus in response to PM-DSBs, as neither Asf1-GFP nor H3K56ac was observed when PM-DSBs were suppressed by TOP2g RNAi or SPO11 deletion (Figure 10B,C and Figure 10\u2014source data 1).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig10-v2.jpg)\n\n**Figure 10.:** (A) Subcellular localization of C-terminally GFP-tagged Asf1 in the pre-zygotic mating stage in wild-type cells. Asf1 disappears from the MIC after meiotic prophase and reappears in the selected pronuclei undergoing gametogenic mitosis (yellow arrowheads). MAC-macronucleus; MIC-micronucleus; \u2020-unselected pronuclei. (B) Asf1 and H3K56ac co-expression in the selected pronuclei is PM-DSB dependent. In wild-type crosses (top), selected pronuclei undergoing gametogenic mitosis (yellow arrowheads) are positive for both ASF1-GFP and H3K56ac. In contrast, both signals are absent in the TOP2gi (middle) and \u0394SPO11 crosses (bottom), which do not form PM-DSBs (see Figure 6B and Figure 7E). Scale bars denote 10 \u03bcm. (C) Percentage of post-meiotic cells with H3K56ac and Asf1-GFP in the selected pronucleus. Columns and error bars represent the means and standard deviations (p<0.01 as calculated by Tukey\u2019s HSD test) of four measurements. See also Figure 10\u2014source data 1 for wild-type, TOP2gi, and \u0394SPO11 crosses.\n\n## Discussion\n\n### PM-DSBs are deliberately induced\n\nDSBs caused by external and internal agents are dangerous lesions, so it is important to understand why they should be deliberately induced. In fact, self-inflicted DSBs are essential for a wide range of processes, such as TOP2-dependent DNA disentangling (Champoux, 2001), V(D)J recombination (Stavnezer et al., 2008), chromatin diminution (Wang and Davis, 2014), Saccharomyces cerevisiae mating-type switching (Haber, 2012), antigenic variation in Trypanosoma (McCulloch et al., 2015), and, most prominently, meiosis (Keeney et al., 1997). They may also be essential for chromatin remodeling.\n\nIn metazoans, the products of male meiosis undergo chromatin remodeling so that genetic material can be densely packed into small sperm (Miller et al., 2010; Rathke et al., 2014). Accordingly, it has been claimed that PM-DSBs are neccessary to support chromatin remodeling during spermiogenesis (Marcon and Boissonneault, 2004; Leduc et al., 2008; Rathke et al., 2014). After fertilization, male chromatin unpacking and epigenetic reprogramming (McLay and Clarke, 2003; Seisenberger et al., 2013) are also accompanied by DNA repair (Schuermann et al., 2016). Little is known, however, about post-meiotic chromatin changes in other contexts. Here, we show that PM-DSBs are induced in the pronuclei of Tetrahymena and that the Top2-related proteins, Top2G and Spo11, are essential for inducing these DSBs. Our data suggest that PM-DSBs play an indispensable role in producing gametic nuclei by converting their chromatin from a heterochromatic to a euchromatic state.\n\nTop2\u03b2, which is exclusively expressed in elongating spermatids, is a candidate for inducing transient DNA lesions during animal spermiogenesis (Leduc et al., 2008). In the green algae Chara vulgaris, the topoisomerase inhibitor etoposide interferes with post-meiotic \u03b3H2AX formation and spermatogenesis (Agnieszka and Wojtczak, 2014). This observation was interpreted as demonstrating a need for transient Top2-induced DSBs to exchange nucleoproteins. By depleting Top2G (the Tetrahymena ortholog of mammalian Top2\u03b2) by RNAi (Figure 4A,B), we provide the first direct evidence that PM-DSB formation is Top2 dependent (Figure 8E). Moreover, we demonstrate that Spo11 is expressed after meiosis (Figure 6C,D) and is required for inducing PM-DSBs (Figure 8E).\n\nIn principle, either Top2g or Spo11 should be able to induce DSBs; it is therefore surprising that both proteins are required for PM-DSB formation. It is unclear whether these two proteins cooperate within a complex and which of them is directly involved in DNA cleavage. In reciprocal co-immunoprecipitation experiments with Spo11-FZZ as the bait and Top2g-GFP as the prey (and vice versa), we could not confirm that these two proteins interact.\n\n### Possible PM-DSB repair mechanisms\n\nAs spermatids are haploid G1 cells, in which recombinational repair is impossible, NHEJ was considered the only possible repair pathway for putative mouse PM-DSBs (Leduc et al., 2008). The discovery of Ku70 and Mre11, both core NHEJ factors (Chiruvella et al., 2013), in the extracts of mouse and grasshopper spermatids (Goedecke et al., 1999; Hamer et al., 2003; Cabrero et al., 2007) supports this hypothesis. Since NHEJ is inherently error prone, PM-DSBs are considered substrates for male-driven de novo mutations (Gr\u00e9goire et al., 2013).\n\nIn contrast to other organisms, Tetrahymena pronuclei are in the G2 phase of the cell cycle (Cole and Sugai, 2012). 5-Ethynyl-2\u2032-deoxyuridine (EdU) incorporation indicated that DNA synthesis is not impeded in either the TOP2gi or \u0394SPO11 crosses (Figure 8\u2014figure supplement 1), strongly suggesting that PM-DSBs are formed after DNA synthesis. Therefore, it is possible that Tetrahymena repairs PM-DSBs by recombinational repair using the sister chromatid as the template. Indeed, we found the recombination protein Rad51 in the selected pronucleus (Figure 3\u2014figure supplement 2). However, its function in PM-DSB repair is difficult to confirm experimentally because its depletion arrests meiotic prophase (Howard-Till et al., 2011). On the other hand, we also found DNA-PKcs in the selected pronucleus (Figure 3\u2014figure supplement 1), suggesting that NHEJ may also be involved in the repair of Tetrahymena PM-DSBs. Based on these data, it is unclear whether Tetrahymena PM-DSBs are repaired by NHEJ, sister-dependent recombinational repair, or both of these pathways.\n\n### Post-meiotic DSBs trigger chromatin remodeling\n\nIn Tetrahymena, Asf1 appears in the selected pronucleus in a DSB-dependent manner (Figure 10B). This conserved histone H3 chaperone is involved in histone H3 K56 acetylation and H3K56ac transfer onto nascent DNA, which leads to euchromatin formation (Chen et al., 2008). In humans, disassembly of histone H3 during DNA repair is a local event, and NHEJ and recombinational repair remove histones within regions of about 0.75 kb and 7 kb from the break sites, respectively (Goldstein et al., 2013; Li and Tyler, 2016). PFGE showed that in Tetrahymena the size of PM-DSB-dependent DNA fragments ranges from\u00a0~1.0 to 4.6 Mb (Figure 8E). If we assume an average fragment size of 2.2 Mb, we estimate that\u00a0~140 DSBs are distributed across the two 157 Mb genomes of haploid pronuclei in G2. If the influence of PM-DSB on chromatin remodeling is has a similar range in Tetrahymena as in humans, then histone H3 should be removed from only \u223c1 Mb of the entire genome. However, it is possible that PM-DSBs trigger global euchromatin formation via as yet unidentified chromatin remodelers. Alternatively, local histone replacement may be sufficient to proceed to gametogenic mitosis.\n\nGarg et al. (2013) found that Tetrahymena Asf1 interacts with an importin \u03b2 isoform and another protein similar to human nuclear autoantigenic sperm protein (NASP), both of which are involved in histone transport pathways (J\u00e4kel et al., 1999; M\u00fchlh\u00e4usser et al., 2001; Bowman et al., 2016). Garg et al. (2013) identified another Asf1-interacting partner protein containing a BRCA1 C-terminal (BRCT) domain, which is found predominantly in proteins involved in cell cycle checkpoint functions that respond to DNA damage (Bork et al., 1997; Yu and Chen, 2004). Our experiments showed that the selected pronucleus also undergoes acetylation at sites other than at H3K56; for example, H3K18ac and H3K27ac (Figure 9\u2014figure supplement 1) are strongly enriched in euchromatin (Wang et al., 2008; Tie et al., 2009). Further, a protein containing a high mobility group (HMG) box domain, which decreases the compactness of the chromatin fiber (Agresti and Bianchi, 2003; Catez et al., 2004), is abundantly expressed in the selected pronucleus (Xu et al., 2013). Together, these findings suggest that repair of programmed PM-DSBs in the haploid germline allows changes in the epigenetic landscape required to produce mature gametes (Figure 11).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/26176/elife-26176-fig11-v2.jpg)\n\n**Figure 11.:** After completion of meiosis, PM-DSBs induced in pronuclei haploid chromosomes by Top2G and Spo11 trigger H2AX phosphorylation. H2AX dephosphorylation, probably indicating DNA repair, takes place together with the Asf1 localization and H3K56ac formation in the pronucleus that is selected for gametogenic mitosis via an unknown mechanism. In the selected pronucleus, the chromatin structure changes from heterochromatic to euchromatic prior to gametogenic mitosis. The unselected pronuclei (\u2020) retaining \u03b3H2AX are eventually eliminated via autophagy.\n\nIn mammalian post-meiotic development, the male genome undergoes several waves of epigenetic modification. The first is chromatin remodeling, which facilitates sperm packaging by substituting the histone-based nucleosome structure with a protamine-based structure (Rathke et al., 2014). This process is believed to be DSB dependent (Marcon and Boissonneault, 2004; Rathke et al., 2007, 2014). The second is histone replacement of protamines upon fertilization (Rousseaux et al., 2008). The third is erasure of parental epigenome marks in the zygote. During this process, methylated cytosines are replaced by unmodified cytosines via base excision repair (BER) (Wu and Zhang, 2014). Interestingly, when BER is compromised, \u03b3H2AX foci are formed, suggesting that DSBs are induced, which are repaired after G1 (Wossidlo et al., 2010; Ladst\u00e4tter and Tachibana-Konwalski, 2016). Thus, while mammals require karyogamy to induce the epigenetic modifications necessary for embryonic developmental programming (Zhou and Dean, 2015), Tetrahymena gametic nuclei can differentiate into MACs and MICs without karyogamy (Fukuda et al., 2015). Therefore, chromatin remodeling in Tetrahymena pronuclei might resemble zygote reprogramming rather than mammalian male pronuclear chromatin remodeling, in that the differentiated germline pronucleus is re-set to a dedifferentiated progenitor of new somatic and germline nuclei. Since dedifferentiated human cells such as cancer and embryonic stem cells display more H3K56ac compared with differentiated somatic cells (Das et al., 2009), it is possible that enhanced histone acetylation in Tetrahymena similarly promotes nuclear dedifferentiation via a similar mechanism.\n\n## Materials and methods\n\n### Culture methods and the induction of cell mating (conjugation)\n\nWild-type Tetrahymena strains CU428.2 (mating type VII, RRID:TSC_SD00178), B2086 (mating type II, RRID:TSC_SD01627), and SB210 (mating type VI, RRID:TSC_SD00703) were obtained from the Tetrahymena Stock Center, Cornell University (https://tetrahymena.vet.cornell.edu/). \u0394SPO11 (Mochizuki et al., 2008), SPO11i (Howard-Till et al., 2013), and Asf1-GFP (Garg et al., 2013) strains were constructed previously. Cells were grown at 30\u00b0C in SPP medium containing 1% proteose peptone (Becton Dickinson, Sparks, MD, USA), 0.1% yeast extract (Becton Dickinson), 0.2% glucose (Sigma-Aldrich, St. Louis, MO), and 0.003% EDTA-Fe (Sigma-Aldrich). To make them competent for mating, cells at mid-log phase (approximately 106/ml) were washed with 10 mM Tris-HCl (pH 7.4), resuspended in 10 mM Tris-HCl (pH 7.4), and starved at 30\u00b0C for\u00a0~18 hr to starve. To induce mating, equal numbers of cells of two different mating types were mixed together and incubated at 30\u00b0C.\n\n### Indirect immunofluorescence\n\nCells were fixed with 0.34% Schaudinn\u2019s fixative (2:1 ration of saturated HgCl2 [Sigma-Aldrich]: ethanol) and membrane-permeabilized with cold methanol on ice for 10 min. Cells were then spread onto slides coated with poly-l-lysine (Sigma-Aldrich) and air dried. After rehydration in PBS (4.3 mM Na2HPO4, 1.47 mM KH2PO4, 137 mM NaCl, 2.7 mM KCl, pH 7.4), cells were incubated for 2 hr at room temperature with primary antibody: anti-\u03b3H2AX (1:500; BioLegend, San Diego, CA, RRID:AB_315794), anti-GFP (1:500; mouse monoclonal; Sigma-Aldrich, RRID:AB_390913), or anti-H3K56 (1:500; rabbit polyclonal; Active Motif, Carlsbad, CA, RRID:AB_2661786) antibody. After washing with PBS, cells were incubated with FITC-labeled goat anti-mouse (1:500; Merck Millipore, Temecula, CA, RRID:AB_92634) or Rhodamine-labeled goat anti-rabbit (1:2000; Merck Millipore, RRID:AB_90296) secondary antibody for 1 hr at room temperature in the dark. After washing with PBS, cells were stained with 1 \u03bcg/\u03bcl 4\u2032,6-diamidino-2-phenylindole (DAPI; Sigma-Aldrich) and observed under fluorescence microscopy.\n\n### Western blotting\n\nCells were fixed with 10% (w/v) trichloroacetic acid (TCA; Sigma-Aldrich) to prevent proteolysis and incubated on ice for 30 min. After removal of TCA by centrifugation at 9000 g for 1 min, cell pellets were lysed in PAGE sample buffer (2% SDS ([Sigma-Aldrich], 2.5% 2-mercaptoethanol [Sigma-Aldrich], 10% glycerol [Sigma-Aldrich], and 50 mM Tris-HCl, pH 6.8) and boiled at 98\u00b0C for 2 min; 10 \u03bcg total protein was loaded into each lane of a 12% polyacrylamide-SDS gel, separated by SDS-PAGE, and transferred onto polyvinylidene fluoride membrane (Merck Millipore). Membranes were washed in blocking buffer (5% dry skimmed milk powder [Sigma-Aldrich] in PBS) and incubated overnight at 4\u00b0C with anti-\u03b3H2AX (1:1000), anti-FLAG antibody (1:5000; Sigma-Aldrich, RRID:AB_259529), or anti-\u03b2-actin antibody (1:1000; GenScript, Piscataway, NJ, RRID:AB_914102). After washing in PBS-T (0.05% Tween 20 [Sigma-Aldrich] in PBS), membranes were incubated in PBS-T containing horseradish peroxidase-conjugated goat anti-mouse IgG antibody (1:5000; Thermo Fisher Scientific, Waltham, MA, RRID:AB_228307) for 1 hr at room temperature. Membranes were washed with PBS-T and developed using Clarity Western ECL (Bio-Rad, Hercules, CA).\n\n### Acetic orcein staining\n\nCell suspension (30 \u03bcl) was pipetted onto a glass slide and air dried. The glass slide was then fixed in 3:1 methanol: acetic acid for 5 min, incubated in 5 N HCl for 5 min to degrade RNA, and then rinsed in distilled water for 10 s. Acetic orcein solution (5% orcein powder [Sigma-Aldrich] dissolved in 4.5:5.5 acetic acid: distilled water) was applied to the sample and stained nuclei were observed under light microscopy.\n\n### Phylogenetic analysis\n\nTetrahymena orthologs of mouse Top2\u03b1 and Top2\u03b2 proteins were identified by their gene descriptions in the Tetrahymena genome database (http://www.ciliate.org). Orthologous protein sequences in other organisms were obtained from GenBank or dedicated databases for each species by performing BLASTp searches against mouse Top2\u03b1 and Top2\u03b2. Complete amino acid sequences were used for multiple alignments with Clustal Omega (ver. 1.1.0) (Sievers et al., 2011). All gap regions appearing after alignment were eliminated from the sequences, and a phylogenetic tree was constructed for the resulting 996 amino acids Treefinder (Jobb et al., 2004) equipped with Aminosan software (Tanabe, 2011), which provided LG+I+G+F as the best evolutionary model for this data set. The phylogenetic tree was finally constructed using the maximum likelihood method in RAxML (Ver. 7.3.0) (Stamatakis, 2006). Confidence in the phylogeny was estimated using the bootstrap method in 100 replications.\n\n### Construction of C-terminal epitope-tagged vectors\n\nApproximately 1 kb of the ORFs (5\u2032) and downstream UTRs (3\u2032) of the TOP2s, TOP2g, and SPO11 genomic loci were amplified from SB210 genomic DNA using PrimeSTAR Max DNA Polymerase (Takara, Kusatsu, Japan) and the following primers: TOP2s 5\u2032 forward \u2013 AGTCGAGCTCACGCTAAGGAGCAGACCTCG, reverse \u2013 AGTCGGATCCGAAATAGCATTCATCCGATGATTC; TOP2s 3\u2032 forward \u2013 AGTCCTCGAGCATGCATTCATTCAATCAATCAATC, reverse \u2013 AGTCGGTACCGGTCTTGGCAATTAACTCTCTCAC; TOP2g 5\u2032 forward \u2013 AGTCGAGCTCCAGGTAAAGGGTTTACATAGAATG, reverse \u2013 AGTCGGATCCATCATCCTCATCCTCATCAAATAA; TOP2g 3\u2032 forward \u2013 AGTCCTCGAGACAGTGATGTCAGAATGTTAAATC, reverse \u2013 AGTCGGTACCCTTAAAGGCAGAAAATTAAGAGGT; SPO11 5\u2032 forward \u2013 AGTCGAGCTCGATTACTGGGAAAGGGTA, reverse \u2013 AGTCGGATCCTAAATATTTGTTTGATTAGATTTTA; and SPO11 3\u2032 forward \u2013 AGTCCTCGAGTAATTTCTTATTTTTCTTTTTTGCT, reverse \u2013 AGTCGGTACCAATTTCTTCCATACAAAAAGCATCA). The 5\u2032 ORF sequences do not contain a stop codon. Amplified PCR products were purified with a PCR Clean-up kit (Promega, Madison, WI), then 5\u2032 sequences were digested with SacI plus BamHI (New England BioLabs, Ipswich, MA) and 3\u2032 sequences with XhoI plus KpnI (New England BioLabs). These fragments were sequentially integrated into the backbone vector pEGFP-NEO4 or pFZZ-NEO4 (Kataoka et al., 2010) using T4 DNA ligase (New England BioLabs). The resulting vectors (pTOP2S-EGFP-NEO4, pTOP2G-EGFP-NEO4, and pSPO11-FZZ-NEO4) were linearized with SacI plus KpnI before biolistic transformation into Tetrahymena (Cassidy-Hanley et al., 1997).\n\n### TOP2g RNAi vector construction and gene knockdown\n\nThe backbone plasmid pBNMB1-EGFP (a gift from Dr Kazufumi Mochizuki, Institute of Human Genetics, Montpellier, France) contains the MTT1 cadmium-inducible promoter, a NEO5 drug-resistant marker, and the 5\u2032 and 3\u2032 portions of the BTU1 genomic locus for homologous recombination. Target sequences used in hairpin constructs (approximately 700 b of the TOP2g ORF) were amplified from SB210 genomic DNA with PrimeSTAR Max DNA Polymerase (TaKaRa) using the following primers: TOP2gi 5\u2032 forward \u2013 AGTCGTTTAAACCAGGTAAAGGGTTTACATAGAATGG, reverse \u2013 AGTCCCCGGGATTGCTCTTAGAAGGCATCATAACA; and TOP2gi 3\u2032 forward \u2013 AGTCCTCGAGATTGCTCTTAGAAGGCATCATAACA, reverse \u2013 AGTCGGGCCCCAGGTAAAGGGTTTACATAGAATGG. Amplified forward and reverse target fragments were cloned into the PmeI-XmaI and XhoI-ApaI sites, respectively, of the pREC8hpCYH vector (a gift from Dr Rachel Howard-Till, University of Vienna, Austria) (Howard-Till et al., 2013) to create the hairpin cassette. The GFP cassette of the pBNMB1-EGFP plasmid was removed and replaced with the hairpin cassette digested with PmeI plus ApaI (New England BioLabs). The resulting vector (pTOP2Gi-NEO5) was linearized with SacI-KpnI before biolistic transformation into Tetrahymena. RNAi was induced in cells carrying the hairpin construct by adding 0.075 \u00b5g/ml CdCl2 (Sigma-Aldrich) to promote dsRNA expression from the MTT1 promoter.\n\n### ATG8-2 gene disruption\n\nApproximately 0.6 kb of the ATG8-2 ORF was amplified from SB210 genomic DNA using PrimeSTAR Max DNA Polymerase (TaKaRa) and the following primers: ATG8-2 coDel forward \u2013 CTTTATTGTTATCATCTTATGACCGCGGACGCTCAAAATTATAAACCCTTC, reverse \u2013 CTCATCAAGTTGTAATGCTAAAATGCGCAAACACTACTGCATTTTCGCTAA. The amplified fragment was integrated into the backbone vector pMcoDel (Hayashi and Mochizuki, 2015) using Gibson Assembly Master Mix (New England BioLabs). The resulting vector (pMcoDel-ATG8-2) was used for biolistic transformation without linearization. Deletion of the target locus from the MAC was confirmed using a diagnostic primer set: Check ATG8-2 forward \u2013 GAATAGAAAGTGCATCTCCTGATC, reverse \u2013 CTGGCAAACAAGAAGCACATTG.\n\n### Replacement of paromomycin resistance markers with a puromycin resistant marker\n\nTo transfect the SPO11 disruption (p\u0394SPO11-NEO4; Mochizuki et al., 2008), pTOP2Gi-NEO5, and C-terminally GFP-tagged Asf1 expression (pASF1-GFP-NEO2; Garg et al., 2013) vectors into paromomycin-resistant mutant strains, we replaced the NEO-based drug resistance markers in the vectors with a puromycin resistance marker (PAC; Iwamoto et al., 2014). NEO cassettes were removed from the vectors by digesting with SalI plus XmaI (New England BioLabs). The pBP2MB1-linker (a gift from Dr. Kensuke Kataoka, National Institute for Basic Biology, Japan) carries PAC under the control of the MTT2 copper-inducible promoter (Boldrin et al., 2008) between SalI and XmaI sites. The MTT2-PAC cassette was excised from the vector and integrated into backbone vectors using T4 DNA ligase (New England BioLabs). The resulting vectors (p\u0394SPO11-PAC, pTOP2Gi-PAC, and pASF1-GFP-PAC) were linearized with SacI plus KpnI before biolistic transformation into Tetrahymena.\n\n### RT-PCR analysis\n\nTotal RNA was extracted from approximately 1\u00a0\u00d7\u00a0106 cells using RNAiso Blood (TaKaRa) and 0.5 \u03bcg was reverse transcribed using ProtoScript II Reverse Transcriptase (New England BioLabs). An SPO11-specific amplicon of\u00a0~700 bp was produced using the following primers: RT-SPO11 forward \u2013 TGTTTAAATATTATTGCTTCAGC, reverse \u2013 ATAAACTCAGCATTTTCAATCC. The loading control was an HSP70-specific PCR product of\u00a0~500 bp, produced using the following primers: RT-HSP70 forward \u2013 ATCTCTTGGGTAAGTTCAACC, reverse \u2013 TTGAAGACTTCTTCCAAAG.\n\n### Pulsed-field gel electrophoresis\n\nDNA plugs were made from 107 cells (~10 ml cultured cells). A centrifuged cell pellet (100 \u03bcl) was resuspended in 250 \u00b5l 1% Low-Melt Agarose (Bio-Rad) at 42\u00b0C, and 80 \u03bcl was quickly loaded into each plug mold (Bio-Rad) on ice. After the agarose had solidified, plugs were transferred to a tube containing 400 \u00b5l LET buffer (0.5 M Na2EDTA, 10 mM Tris-HCl, pH7.4) and kept on ice until samples had been collected for all time points. NDC solution (400 \u00b5l; LET buffer with 2% N-lauroylsarcosine [Sigma-Aldrich] containing 4 mg/ml proteinase K [Panreac AppliChem, Darmstadt, Germany]) was then added and the tubes were incubated overnight at 50\u00b0C. Plugs were then washed three times for 30 min with 1 M Tris-HCl (pH7.4) followed by three times for 30 min with TE buffer (1 mM Na2EDTA, 10 mM Tris-HCl, pH7.4). PFGE was performed using a contour-clamped homogeneous electric field apparatus (CHEF-DR III System, Bio-Rad). Samples were separated at 2 V, 14\u00b0C in 0.85% Certified Megabase agarose (Bio-Rad) with 1\u00d7 TAE buffer (40 mM Tris, 40 mM acetic acid, 1 mM EDTA) for 74 hr: at a 96\u00b0 angle for 24 hr with 1200 s pulses, a 100\u00b0 angle for 24 hr with 1500 s pulses, and a 106\u00b0 angle for 24 hr with 1800 s pulses. The CHEF DNA size markers (Schizosaccharomyces pombe and S. cerevisiae chromosomes, Bio-Rad) and Quick-Load 1 Kb Extend DNA Ladder (New England BioLabs) were used to size the DNA fragments. The gel was stained for 30 min in 10,000-fold diluted GelRed Nucleic Acid Gel Stain (Biotium, Fremont, CA) in distilled water and destained for 30 min in distilled water.\n\n### Southern blotting and hybridization\n\nDNA was transferred from pulsed-field gels onto Hybond N+ membrane (GE Healthcare, Little Chalfont, UK) with 20\u00d7 SSPE (3M NaCl, 20 mM EDTA, 154.8 mM Na2HPO4, 45.2 mM H6NaO6P, pH 7.4). The pMBR2 vector (NCBI: AF451863) carrying an 8.5 Kb fragment of the conserved internal region of Tlr elements (Wuitschick et al., 2002) was a gift from Dr Kathleen Karrer (Marquette University, USA). The Tlr sequence was excised from the vector with BamHI plus PstI (New England BioLabs) digestion, gel isolated, radioactively labeled by random priming using 32P-dATP (Hartmann Analytic, Braunschweig, Germany), and hybridized to germline DNA on the membrane. The signal was detected using Imaging Screen K (Bio-Rad) and scanned with a Typhoon 9200 image analyzer (GE Healthcare).\n",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "1ef78737-963e-4610-8717-f58f138efb01",
+      "submission_id": "05acf422-48ab-4db5-b017-8a063b7c1fc6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kathleen Collins, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26176.026](https://doi.org/10.7554/eLife.26176.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Topoisomerase II and Spo11 induce post-meiotic DNA double-strand breaks in Tetrahymena thermophila haploid pronuclei\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Reviewing Editor Kathleen Collins and Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Kazufumi Mochizuki (Reviewer #1); Elcin Unal (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Akematsu et al. provide compelling evidence that post-meiotic DNA double-strand breaks (DSBs) occur in Tetrahymena. They further demonstrate that the formation of the post-meiotic DSBs requires a germline-specific topoisomerase 2 (Top2G) as well as a meiotic endonuclease Spo11 and that the repair of these breaks facilitates chromatin remodeling and functional gamete formation. These are important observations because 1) post-meiotic DSB are suggested to occur in other eukaryotes including mammals and 2) no previous studies demonstrated the function of post-meiotic DSBs. A limited amount of additional work would improve the manuscript to be suitable for publication.\n\nEssential revisions:\n\n1) The imaging data can greatly benefit from quantitative analysis. It's unclear what percentage of the post-meiotic pronuclei display signs of DSBs and how this changes in spo11 and top2G mutants. Similar analysis for Asf1-GFP and H3K56Ac will be helpful.\n\n2) The mechanism of post-meiotic DSB repair is unknown, but correlates with H3K56ac. If possible, it would be informative to check markers specific for HR and/or NHEJ-directed repair such as Rad51, Ku, Mre11. This analysis will at least indicate whether these pathways are on during the time of post-meiotic DSB induction/repair.\n\n3) The authors suggest that Top2G might be the B subunit for Spo11 in forming post-meiotic DSBs. I think it will be helpful if they determine whether Spo11 and Top2G interact with one another in a stage specific manner (i.e. in post-meiotic cells but not during meiotic prophase). Since they generated epitope-tagged alleles for both of these genes and since there is good time resolution between the occurrence of meiotic and post-meiotic breaks, a co-immunoprecipitation experiment in two different stages can be performed to address this question. Otherwise the speculation that Top2g could be an as-yet-undiscovered B-subunit for Spo11 seems ungrounded: Spo11 is a member of the TopVI family (heterotetramers) whereas one would assume Top2g (like other eukaryotic TOP2) is, a homodimer; it seems very hard to imagine that Tetrahymena Spo11 functions biochemically as a heterodimer with Top2g.\n\n4) Have the authors checked whether the decline in \u03b3H2AX and the accompanying increase in H3K56ac occur in the unselected pronuclei in \u2206ATG8 mutants? This could help distinguish whether there is a specific signal that directs DSB repair and chromatin remodeling to the selected pronuclei or whether the lack of nuclear elimination per se is sufficient for DSB repair to occur in the unselected pronuclei.\n\nFigure 1A/B \u2013 it would help to emphasize that the \u03b3H2Ax staining is specific to the pronuclei, and not observed in the MAC.\n\nObservations of H2AX-GFP shown in Figure 2C says nothing about the specificity of the anti-gH2AX antibody. If I am wrong, the authors need to add some more explanation for why they think this experiment demonstrates the specificity. Otherwise, the authors may simply remove the figure.\n\n5) Is it technically feasible to deplete Spo11 and/or Top2 activity only in the post-meiotic stage? This would directly test the requirement of Spo11/Top2 in PM-DSB formation independently of any role they may have in meiotic DSB formation (that indirectly influences PM-DSB formation).\n\n6) It is stated that the spo11i strain has a defect in \u03b3H2Ax staining in the pronuclei (40-70%). However, the signal on the Southern in Figure 7 that is ascribed to PM-DSBs is actually greater in the spo11i mutant than the WT control. This doesn't seem to be consistent with the author's statements/hypotheses that such PM-DSBs are Spo11-dependent. Are they able to explain/clarify? The same concerns are present for Fig8E right-hand panel, which appears to show robust \"PM-DSB\" signal in the spo11i strain (equivalent to WT) \u2013 even though one assumes this DSB signal is arising from only a subpopulation of cells.\n\nIs the PM-DSB signal observed in the Spo11i experiments dependent on Top2g? (i.e. is it possible to do a double mutant/knockdown at the same time?)\n\n7) The model shown in Figure 11 gives me the impression that the deposition of H3 occurs only at close proximity to DSB sites, which the authors estimated to occur at only ~140 sites per 2xhaploid micronuclei genome. If this is true, it is rather very local remodeling event and it is difficult to imagine how DSBs promote gametogenesis, which probably requires more global chromatin remodeling. Because, in Figure 9, it seems H3K56ac are distributed homogeneously in the micronucleus, I believe it is more reasonable to consider that although the number of DSBs is limited, they induce global chromatin remodeling (may be irrespective of distances from DSBs). The authors may consider this point and tune their discussions.\n",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cb5a8f42-b0e4-47fc-b98d-b967aee2decc",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C1",
+      "claim": "Post-meiotic DNA double-strand breaks (PM-DSBs) have been suggested to enable chromatin remodeling during animal spermiogenesis based on observations of markers for DNA lesions such as phosphorylated histone H2AX (\u03b3H2AX) and open DNA ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on observations of markers for DNA lesions, such as phosphorylated histone H2AX (\u03b3H2AX) and open DNA ends, it has been suggested that post-meiotic DNA double-strand breaks (PM-DSBs) enable chromatin remodeling during animal spermiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "bb9b457e-8e9e-45b1-89ec-d31208de413e",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C2",
+      "claim": "The existence of PM-DSBs is unconfirmed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the existence of PM-DSBs is unconfirmed, and the mechanism responsible for their formation is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "036b21e4-9859-42be-ab37-a15d3a193184",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C3",
+      "claim": "The mechanism responsible for PM-DSB formation is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the existence of PM-DSBs is unconfirmed, and the mechanism responsible for their formation is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "6e799b57-79bd-443d-9374-d5be4ac6bdad",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C4",
+      "claim": "This study reports the first direct observation of programmed PM-DSBs via the electrophoretic separation of DSB-generated DNA fragments in Tetrahymena thermophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the first direct observation of programmed PM-DSBs via the electrophoretic separation of DSB-generated DNA fragments in the ciliate Tetrahymena thermophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in the manuscript, specifically the pulsed-field gel electrophoresis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "05935465-72a5-415f-ac8c-2cd1e1f0d6b9",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C5",
+      "claim": "PM-DSBs in Tetrahymena are accompanied by switching from a heterochromatic to euchromatic chromatin structure in the haploid pronucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "These PM-DSBs are accompanied by switching from a heterochromatic to euchromatic chromatin structure in the haploid pronucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing H3K56 acetylation and chromatin changes in the selected pronucleus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "598c1f5e-9f8b-4d7f-9152-f4d0fb7935a3",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C6",
+      "claim": "A topoisomerase II paralog with exclusive pronuclear expression is a prerequisite for PM-DSB induction in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "Both a topoisomerase II paralog with exclusive pronuclear expression and Spo11 are prerequisites for PM-DSB induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that Top2G knockdown prevents PM-DSB formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "17cbd55d-faa8-4e0c-8303-9038372c6e7c",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C7",
+      "claim": "Spo11 is a prerequisite for PM-DSB induction in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "Both a topoisomerase II paralog with exclusive pronuclear expression and Spo11 are prerequisites for PM-DSB induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that SPO11 deletion prevents PM-DSB formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "0e3a5fd5-e1fe-480d-82ba-3e7aed71c230",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C8",
+      "claim": "Reduced PM-DSB induction blocks euchromatin formation, characterized by histone H3K56 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced PM-DSB induction blocks euchromatin formation, characterized by histone H3K56 acetylation, leading to a failure in gametic nuclei production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that TOP2gi and \u0394SPO11 mutants lack H3K56ac in pronuclei.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a0360c0a-4b59-4d1e-b6c1-728b516d3163",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C9",
+      "claim": "Reduced PM-DSB induction leads to a failure in gametic nuclei production.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced PM-DSB induction blocks euchromatin formation, characterized by histone H3K56 acetylation, leading to a failure in gametic nuclei production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that TOP2gi and \u0394SPO11 mutants fail to undergo gametogenic mitosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "fcf51431-de02-4016-b9cf-b7369da7d3e9",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C10",
+      "claim": "PM-DSBs are responsible for histone replacement during the reprogramming of generative to undifferentiated progeny nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that PM-DSBs are responsible for histone replacement during the reprogramming of generative to undifferentiated progeny nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "67537cd5-03a9-48f8-9f22-b83b79044a1d",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C11",
+      "claim": "Meiotic DSBs are induced by Spo11 in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common example in eukaryotes is the induction of meiotic DSBs (Keeney et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "0e88901c-09ea-40ab-866c-f9a0c46d65e5",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C12",
+      "claim": "Markers of DNA lesions such as \u03b3H2AX foci and TUNEL-positive signals are found in the nuclei of elongating spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Markers of DNA lesions such as phosphorylated histone H2AX (\u03b3H2AX) foci and terminal deoxynucleotidyl transferase dUTP nick end-labeling (TUNEL)-positive signals are found in the nuclei of elongating spermatids (Marcon and Boissonneault, 2004; Meyer-Ficca et al., 2005; Leduc et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "6fea1f63-9db2-4f9f-9c1e-6a79ef45ca49",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C13",
+      "claim": "Poly ADP-ribose (PAR) formation has been detected in elongating spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both poly ADP-ribose (PAR) formation, a known DNA damage response (Meyer-Ficca et al., 2005) and DNA polymerase activity, characteristic of DNA repair synthesis, have been detected in these cells (Leduc et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "6d22a48d-4d69-42f7-b84d-f7b60a74357b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C14",
+      "claim": "DNA polymerase activity has been detected in elongating spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both poly ADP-ribose (PAR) formation, a known DNA damage response (Meyer-Ficca et al., 2005) and DNA polymerase activity, characteristic of DNA repair synthesis, have been detected in these cells (Leduc et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "5fbef8b3-42b8-483a-a5ca-7a8f17ca177e",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C15",
+      "claim": "PM-DSBs have been implicated in eliminating free DNA supercoils formed during canonical histone withdrawal to ensure protamine deposition onto untangled DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "PM-DSBs have been implicated in eliminating free DNA supercoils formed during canonical histone withdrawal to ensure protamine deposition onto untangled DNA (Marcon and Boissonneault, 2004; Laberge and Boissonneault, 2005; Rathke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "018f1575-edff-40b5-acf1-6a3d1937e2f2",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C16",
+      "claim": "The TUNEL signal is greatly diminished in rabbit spermatids in the presence of the type II topoisomerase (Top2) inhibitor, etoposide.",
+      "claim_type": "EXPLICIT",
+      "source": "As the TUNEL signal is greatly diminished in rabbit spermatids in the presence of the type II topoisomerase (Top2) inhibitor, etoposide (Laberge and Boissonneault, 2005), which forms a ternary complex with DNA and Top2 (Pommier et al., 2010), the catalytic activities of Top2-related proteins have been considered responsible for inducing post-meiotic DNA lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "5ec7af2e-cfae-46dd-844a-3da671700457",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C17",
+      "claim": "Etoposide forms a ternary complex with DNA and Top2.",
+      "claim_type": "EXPLICIT",
+      "source": "As the TUNEL signal is greatly diminished in rabbit spermatids in the presence of the type II topoisomerase (Top2) inhibitor, etoposide (Laberge and Boissonneault, 2005), which forms a ternary complex with DNA and Top2 (Pommier et al., 2010), the catalytic activities of Top2-related proteins have been considered responsible for inducing post-meiotic DNA lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "28dcd5a7-e076-475d-bd15-00936e5c1e4b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C18",
+      "claim": "Vertebrates encode two closely related TOP2 genes termed \u03b1 and \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrates encode two closely related TOP2 genes termed \u03b1 and \u03b2, which are differentially regulated during cell growth and cannot substitute for each other (Roca, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "b657552c-4353-4fbb-810f-21e299e84834",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C19",
+      "claim": "Top2\u03b1 and Top2\u03b2 are differentially regulated during cell growth and cannot substitute for each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertebrates encode two closely related TOP2 genes termed \u03b1 and \u03b2, which are differentially regulated during cell growth and cannot substitute for each other (Roca, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "150375ea-1986-4ea9-8161-ab1a06153d90",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C20",
+      "claim": "Top2\u03b1 is only expressed in proliferating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Top2\u03b1 is only expressed in proliferating cells, where it is involved in mitosis-related events such as DNA replication, chromosome condensation and decondensation, and sister chromatid segregation (Woessner et al., 1991; Grue et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "46ee4441-7ec7-410c-b65a-dbdadf64303d",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C21",
+      "claim": "Top2\u03b1 is involved in mitosis-related events such as DNA replication, chromosome condensation and decondensation, and sister chromatid segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Top2\u03b1 is only expressed in proliferating cells, where it is involved in mitosis-related events such as DNA replication, chromosome condensation and decondensation, and sister chromatid segregation (Woessner et al., 1991; Grue et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "45d88024-ace2-4651-8e43-a84e5635a7de",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C22",
+      "claim": "Top2\u03b2 is mainly expressed in terminally differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Top2\u03b2 is mainly expressed in terminally differentiated cells and is therefore thought to have a non-mitotic function (Austin and Marsh, 1998; Linka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "42c15c83-b931-4db4-996f-e520b228d0ea",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C23",
+      "claim": "Top2\u03b2 is thought to have a non-mitotic function.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Top2\u03b2 is mainly expressed in terminally differentiated cells and is therefore thought to have a non-mitotic function (Austin and Marsh, 1998; Linka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and inference from expression patterns.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "3747aee2-e379-4890-911d-6c96cfa030a6",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C24",
+      "claim": "Top2\u03b2 catalyzes site-specific DSB formation within some gene promoters in cultured human cells, leading to local changes in chromatin architecture and transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured human cells, Ju et al. (2006) uncovered a role for Top2\u03b2 in catalyzing site-specific DSB formation within some gene promoters, leading to local changes in chromatin architecture and transcriptional activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "ebd0d80b-66af-4594-83d9-43df0ae470de",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C25",
+      "claim": "Top2\u03b2 is exclusively expressed in elongating spermatids in mouse spermiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse spermiogenesis, Leduc et al. (2008) demonstrated that Top2\u03b2 was exclusively expressed in elongating spermatids, where it colocalized with \u03b3H2AX foci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "d178ac50-8f44-41f0-b91e-abfc480f33f8",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C26",
+      "claim": "Top2\u03b2 colocalizes with \u03b3H2AX foci in elongating spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse spermiogenesis, Leduc et al. (2008) demonstrated that Top2\u03b2 was exclusively expressed in elongating spermatids, where it colocalized with \u03b3H2AX foci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "33e07138-b676-4240-8712-67283d7aa4ad",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C27",
+      "claim": "Tyrosyl-DNA phosphodiesterase 1 (Tdp1) is expressed in elongating spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these authors showed that tyrosyl-DNA phosphodiesterase 1 (Tdp1), known to dissociate the covalent bonds between Top2 and DNA (Nitiss et al., 2006; Murai et al., 2012), was expressed in the same cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "4bbf6b83-1c5b-4a0a-a896-7de9e122774c",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C28",
+      "claim": "Tdp1 dissociates the covalent bonds between Top2 and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these authors showed that tyrosyl-DNA phosphodiesterase 1 (Tdp1), known to dissociate the covalent bonds between Top2 and DNA (Nitiss et al., 2006; Murai et al., 2012), was expressed in the same cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "564156fb-e0b3-4a7c-89e3-fa6e04357039",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C29",
+      "claim": "Elongating spermatids of mice express much higher levels of SPO11 transcripts compared with TOP2\u03b2 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Gouraud et al. (2013) reported that the elongating spermatids of mice express much higher levels of SPO11 transcripts compared with TOP2\u03b2 transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "78a23be0-8f1f-48b3-ba75-c5edc8a9eff6",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C30",
+      "claim": "Spo11 has a similar structure to prokaryotic Top2 (also called Top6).",
+      "claim_type": "EXPLICIT",
+      "source": "Since Spo11 has a similar structure to prokaryotic Top2 (also called Top6) and produces DSBs in the same manner as Top2 by forming phosphotyrosine linkages to 5\u2032 strand termini on both sides of a DSB (Neale et al., 2005), Spo11 may also be involved in inducing PM-DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "f4a1cd08-41f8-4297-9f53-9d7813f17160",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C31",
+      "claim": "Spo11 produces DSBs in the same manner as Top2 by forming phosphotyrosine linkages to 5\u2032 strand termini on both sides of a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Spo11 has a similar structure to prokaryotic Top2 (also called Top6) and produces DSBs in the same manner as Top2 by forming phosphotyrosine linkages to 5\u2032 strand termini on both sides of a DSB (Neale et al., 2005), Spo11 may also be involved in inducing PM-DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "d02ffcb4-eace-4c60-a246-24476984240a",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C32",
+      "claim": "Ciliates including Tetrahymena stably maintain spatially and functionally differentiated germline and somatic nuclear genomes within a single cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "A remarkable and virtually unique feature of ciliates (including Tetrahymena) is that they stably maintain spatially and functionally differentiated germline and somatic nuclear genomes within a single cytoplasm (Orias et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established knowledge about ciliate biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "48276008-2f50-4ee0-9c50-05d371116847",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C33",
+      "claim": "The transcriptionally inert diploid germline genome in Tetrahymena is housed within the micronucleus (MIC).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptionally inert diploid germline genome, housed within the micronucleus (MIC), stores the genetic information for sexual progeny, while the polyploid somatic genome, housed within the macronucleus (MAC), is involved in active transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established knowledge about Tetrahymena biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "ff8082b7-d2e1-4cf3-be4c-9e65787b49dc",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C34",
+      "claim": "The polyploid somatic genome in Tetrahymena is housed within the macronucleus (MAC) and is involved in active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptionally inert diploid germline genome, housed within the micronucleus (MIC), stores the genetic information for sexual progeny, while the polyploid somatic genome, housed within the macronucleus (MAC), is involved in active transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established knowledge about Tetrahymena biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "3c0a7ba8-c96a-440a-a3c4-33b130e69022",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C35",
+      "claim": "Both types of nuclei in Tetrahymena derive from a single zygotic nucleus during sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Both types of nuclei derive from a single zygotic nucleus during sexual reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about Tetrahymena biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "7325501f-0334-4f4b-892b-2c34c63c9d8c",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C36",
+      "claim": "The MAC anlagen undergo large-scale genome rearrangement and amplification processes that remove the internal eliminated sequences, representing about 40% of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The MAC anlagen then undergo large-scale genome rearrangement and amplification processes that remove the internal eliminated sequences, representing about 40% of the genome (Mochizuki, 2010, 2012; Noto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "99420400-cc22-497c-a806-6521cd230a91",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C37",
+      "claim": "\u03b3H2AX foci are formed in post-meiotic pronuclei in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered H2AX phosphorylation in post-meiotic pronuclei by \u03b3H2AX immunostaining (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "dfb27be6-245a-4bfe-ab6c-fbb3c8e96886",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C38",
+      "claim": "\u03b3H2AX foci are formed during DSB formation in the elongating meiotic prophase MIC in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-meiotic stage is distinct from the other two meiotic stages in which \u03b3H2AX foci are known to be formed, namely (1) during DSB formation in the elongating meiotic prophase MIC (Mochizuki et al., 2008; Papazyan et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "e83d9dbb-e4ff-44b4-b7b5-43b0b4591732",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C39",
+      "claim": "\u03b3H2AX foci are formed during DNA elimination in the developing MAC anlagen in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-meiotic stage is distinct from the other two meiotic stages in which \u03b3H2AX foci are known to be formed, namely (1) during DSB formation in the elongating meiotic prophase MIC (Mochizuki et al., 2008; Papazyan et al., 2014) and (2) during DNA elimination in the developing MAC anlagen (Figure 2A) (Song et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior literature and data shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "c0b8054d-5271-4af3-962d-57461b879624",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C40",
+      "claim": "Western blotting of mating cell proteins showed a single band of about 15 kDa (the size of H2AX) that transiently appeared at 2 hr (meiotic prophase), 6 hr (post-meiotic stage), and 8 hr (MAC development stage) after induction of meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting of mating cell proteins from different time points showed a consistent result: a single band of about 15 kDa (the size of H2AX) that transiently appeared at 2 hr (meiotic prophase), 6 hr (post-meiotic stage), and 8 hr (MAC development stage) after induction of meiosis (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "3cb584aa-659a-4d0b-8625-6567c4776027",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C41",
+      "claim": "A parentally expressed H2AX-GFP fusion protein localized to the MIC at meiotic prophase and to post-meiotic pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a parentally expressed H2AX (encoded by TTHERM_00790790)-GFP fusion protein localized to the MIC at meiotic prophase and to post-meiotic pronuclei (Figure 2\u2014figure supplement 1), confirming that pronuclear \u03b3H2AX immunostaining was not due to disappearance of H2AX.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "9e956d23-5750-43b5-9247-cfb99c5fbd23",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C42",
+      "claim": "In one of the four pronuclei, \u03b3H2AX fluorescence disappeared after about 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of the four pronuclei, \u03b3H2AX fluorescence disappeared after about 30 min (Figure 3A/a/A\u2032); only this nucleus underwent gametogenic mitosis (Figure 3B/b/B\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-course fluorescence microscopy data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "c678d7a4-2b79-45f8-83aa-a7b41ad800c1",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C43",
+      "claim": "Only the pronucleus in which \u03b3H2AX fluorescence disappeared underwent gametogenic mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of the four pronuclei, \u03b3H2AX fluorescence disappeared after about 30 min (Figure 3A/a/A\u2032); only this nucleus underwent gametogenic mitosis (Figure 3B/b/B\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "eda41b9a-5546-4185-b4c2-5bc8f5b03d1b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C44",
+      "claim": "The \u03b3H2AX signal persisted in the unselected pronuclei, which relocated to the posterior region of the cell and were degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the \u03b3H2AX signal persisted in the unselected pronuclei, which relocated to the posterior region of the cell were degraded (Figure 3C/c/C\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "44a1c1cc-4e5a-484f-9f3f-06ac70f105b9",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C45",
+      "claim": "H2AX dephosphorylation is an established marker of repaired DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Since H2AX dephosphorylation is an established marker of repaired DNA (Chowdhury et al., 2005; Keogh et al., 2006), the post-meiotic stage might involve DNA damage formation in all pronuclei, followed by DNA repair only in the selected pronucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "db8c733b-cf2c-4fbe-86f8-e0a7e958eaa3",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C46",
+      "claim": "DNA-PKcs is expressed in the selected pronucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DNA repair markers such as DNA-dependent protein kinase catalytic subunit (DNA-PKcs, a factor involved in DNA repair by non-homologous end joining [NHEJ]) and Rad51 (a protein involved in recombinational repair) are expressed in the selected pronucleus (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "f6adcca8-d034-41aa-9b85-cb20f4960311",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C47",
+      "claim": "Rad51 is expressed in the selected pronucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DNA repair markers such as DNA-dependent protein kinase catalytic subunit (DNA-PKcs, a factor involved in DNA repair by non-homologous end joining [NHEJ]) and Rad51 (a protein involved in recombinational repair) are expressed in the selected pronucleus (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "0b25a011-1ee2-4bc7-b29c-fcc912ba94ad",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C48",
+      "claim": "Tetrahymena has two closely related Top2 isoforms encoded by TTHERM_00456750 and TTHERM_00825440.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Tetrahymena has two closely related Top2 isoforms (encoded by TTHERM_00456750 and TTHERM_00825440; Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "8faf90ca-45bf-4311-a45d-2c85ae8f3a59",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C49",
+      "claim": "Both Tetrahymena Top2 isoforms contain domains characteristic of mammalian Top2\u03b1 and \u03b2: an ATPase domain, a Toprim domain, and an N-terminal Top2 A subunit domain.",
+      "claim_type": "EXPLICIT",
+      "source": "both of which contain domains characteristic of mammalian Top2\u03b1 and \u03b2: an ATPase domain, a Toprim (topoisomerase\u2013primase) domain, and an N-terminal Top2 A subunit domain (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by domain analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "f92593a8-93e9-4c86-908a-aa9ada2e848d",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C50",
+      "claim": "Both Tetrahymena Top2 isoforms lack the DTHCT domain found in the C-termini of DNA gyrase B, topoisomerase IV (Top4), and H+-ATPase proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both lack the DTHCT domain found in the C-termini of DNA gyrase B, topoisomerase IV (Top4), and H+-ATPase proteins (Figure 4B) (Staub et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by domain analysis shown in Figure 4B and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "0234bef0-876d-4dc7-b713-16a211d53cfc",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C51",
+      "claim": "TTHERM_00456750p (Top2S) is expressed exclusively in the MAC.",
+      "claim_type": "EXPLICIT",
+      "source": "C-terminal GFP tagging of these Tetrahymena Top2 isoforms revealed distinct nuclear localization patterns: TTHERM_00456750p was expressed exclusively in the MAC and TTHERM_00825440p in MIC and MIC-derived pronuclei (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "690a9646-1fb0-49df-bc6a-160174f500e8",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C52",
+      "claim": "TTHERM_00825440p (Top2G) is expressed in MIC and MIC-derived pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "C-terminal GFP tagging of these Tetrahymena Top2 isoforms revealed distinct nuclear localization patterns: TTHERM_00456750p was expressed exclusively in the MAC and TTHERM_00825440p in MIC and MIC-derived pronuclei (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "ec375750-e53a-4a7e-9d38-97edecba28ea",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C53",
+      "claim": "Top2G-GFP was most abundant at post-meiosis (i.e. 4 hr and later after meiosis induction).",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting showed that Top2G-GFP, which was most abundant at post-meiosis (i.e. 4 hr and later after meiosis induction), was completely depleted by RNAi expression (TOP2gi; Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "16b2e2c4-5da2-4dab-9f46-f8198c1dfdda",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C54",
+      "claim": "Top2G-GFP was completely depleted by RNAi expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting showed that Top2G-GFP, which was most abundant at post-meiosis (i.e. 4 hr and later after meiosis induction), was completely depleted by RNAi expression (TOP2gi; Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "7d2275bd-92e3-4649-bbff-81aebc0c52eb",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C55",
+      "claim": "Top2G depletion did not affect meiosis: four normal pronuclei were generated, as in the wild-type cross.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetic orcein staining of chromosomes showed that Top2G depletion did not affect meiosis: four normal pronuclei were generated, as in the wild-type cross (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by acetic orcein staining data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "17cf25c2-5eec-488f-815d-bc15cb497c06",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C56",
+      "claim": "Gametogenic mitosis failed in the TOP2gi cross: all pronuclei migrated to the posterior region of the cytoplasm, similar to unselected pronuclei in the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, gametogenic mitosis failed in the TOP2gi cross: all pronuclei migrated to the posterior region of the cytoplasm, similar to unselected pronuclei in the wild-type (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by acetic orcein staining data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "7936fb59-d2fe-4573-b707-9032fa7382d1",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C57",
+      "claim": "About 70\u201380% of the TOP2gi crosses became amicronucleate.",
+      "claim_type": "EXPLICIT",
+      "source": "These pronuclei had vanished by 10 hr, probably via autophagy (Figure 5C) (Liu and Yao, 2012), rendering about 70\u201380% of the TOP2gi crosses amicronucleate (Figure 5D and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "6fdbc292-4536-496e-94b6-cb682458fbec",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C58",
+      "claim": "Loss of Top2G activity in Tetrahymena suppressed H2AX phosphorylation in the pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the effect of Top2\u03b2 chemical inhibition on animal spermiogenesis (Laberge and Boissonneault, 2005), loss of Top2G activity in Tetrahymena suppressed H2AX phosphorylation in the pronuclei (Figure 5E,F and Figure 5\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "e808b88d-c703-4f8d-a32e-0b04fd3d9724",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C59",
+      "claim": "\u03b3H2AX formation at meiotic prophase was not affected by Top2G depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, \u03b3H2AX formation at meiotic prophase was not affected (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "001bd84c-85bd-499e-bcb3-7a21482e44a2",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C60",
+      "claim": "SPO11 is transcribed from meiotic prophase (~3 hr) until the post-meiotic stage (6 hr) in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RT-PCR showed that SPO11 is transcribed from meiotic prophase (~3 hr) until the post-meiotic stage (6 hr) in Tetrahymena (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-PCR data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a33c3da4-96ae-4d67-92c3-780328746e5c",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C61",
+      "claim": "\u0394SPO11 crosses display the same post-meiotic phenotype as TOP2gi crosses (cells become amicronucleate and do not undergo gametogenesis).",
+      "claim_type": "EXPLICIT",
+      "source": "Although \u0394SPO11 crosses display the same post-meiotic phenotype as TOP2gi crosses (cells become amicronucleate and do not undergo gametogenesis; see Figure 4C), some SPO11i crosses behave in the same way as wild-type crosses by producing normal progeny nuclei via gametogenic mitosis (black arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by acetic orcein staining data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "db5b45e9-3f91-4430-ad47-f79adbd51c3f",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C62",
+      "claim": "Some SPO11i crosses behave in the same way as wild-type crosses by producing normal progeny nuclei via gametogenic mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although \u0394SPO11 crosses display the same post-meiotic phenotype as TOP2gi crosses (cells become amicronucleate and do not undergo gametogenesis; see Figure 4C), some SPO11i crosses behave in the same way as wild-type crosses by producing normal progeny nuclei via gametogenic mitosis (black arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by acetic orcein staining data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "384c3658-818f-4561-96db-0b763719b274",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C63",
+      "claim": "Progeny nuclei developed following gametogenic mitosis in 40\u201370% of SPO11i crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the post-meiotic defect was less severe in SPO11i crosses: progeny nuclei developed following gametogenic mitosis in 40\u201370% of these cells (Figure 6A,B and Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "b391b9e2-dfd2-49a8-a2bf-3a2aafcbbee7",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C64",
+      "claim": "In the presence of SPO11 RNAi, Spo11-FZZ was not expressed during meiotic prophase (~2\u20133 hr) but was expressed at later stages (~4\u20136 hr), including the post-meiotic stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of SPO11 RNAi, Spo11-FZZ was not expressed during meiotic prophase (~2\u20133 hr) but was expressed at later stages (~4\u20136 hr), including the post-meiotic stage (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "e7d2fefe-138d-4af5-802e-6faa936d5b74",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C65",
+      "claim": "Neither the \u0394SPO11 nor SPO11i crosses expressed \u03b3H2AX in the meiotic MIC.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated previously (Mochizuki et al., 2008; Loidl and Mochizuki, 2009; Howard-Till et al., 2013), neither the \u0394SPO11 nor SPO11i crosses expressed \u03b3H2AX in the meiotic MIC (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 6E and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "e1cd921f-001f-4601-8d4c-a9154247f055",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C66",
+      "claim": "None of the \u0394SPO11 crosses showed \u03b3H2AX immunostaining in the pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, none of the \u0394SPO11 crosses and only 40\u201370% of the SPO11i crosses showed \u03b3H2AX immunostaining in the pronuclei (Figure 6E,F and Figure 6\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "cb02f472-fc8f-4be0-bf97-faa04abab530",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C67",
+      "claim": "Only 40\u201370% of the SPO11i crosses showed \u03b3H2AX immunostaining in the pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, none of the \u0394SPO11 crosses and only 40\u201370% of the SPO11i crosses showed \u03b3H2AX immunostaining in the pronuclei (Figure 6E,F and Figure 6\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "fb9e051b-12a5-4dc4-91cb-4312fe611a6f",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C68",
+      "claim": "Intact MIC chromosomes (n = 5,~25.0\u201335.0 Mb) do not enter the gel under the PFGE conditions used.",
+      "claim_type": "EXPLICIT",
+      "source": "Intact MIC chromosomes (n = 5,~25.0\u201335.0 Mb) (Hamilton et al., 2016) do not enter the gel under these conditions, and gel staining showed only the MAC minichromosomes (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PFGE data shown in Figure 7A and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "1cdf5e93-779d-4544-9700-a1d21173a77a",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C69",
+      "claim": "Mating cells at t = 2\u20134 hr displayed a prominent smear between 2.2 and 4.6 Mb on Southern blots.",
+      "claim_type": "EXPLICIT",
+      "source": "Mating cells at t = 2\u20134 hr displayed a prominent smear between 2.2 and 4.6 Mb (Figure 7B, blue box).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "0fd569d7-e0be-4ec1-9730-efb871abb979",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C70",
+      "claim": "The DNA smear signal at t = 2\u20134 hr represents meiotic DSBs induced by Spo11, because it was absent in both the \u0394SPO11 and SPO11i crosses but present in TOP2gi crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal represents meiotic DSBs induced by Spo11, because it was absent in both the \u0394SPO11 and SPO11i crosses but present in TOP2gi crosses (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 7B comparing different mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "ea1868e4-101a-417d-ad5d-5c9aba0d561a",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C71",
+      "claim": "At the post-meiotic stage (t = 6\u20137 hr), a smear of shorter DNA fragments appeared in all cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "At the post-meiotic stage (t = 6\u20137 hr), a smear of shorter DNA fragments appeared in all cell lines (Figure 7B, green box).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "8d857fdf-e1b1-4ff5-a3be-fb5f0e31b4b0",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C72",
+      "claim": "The smear of shorter DNA fragments at t = 6\u20137 hr probably originates from the autophagic degradation of unselected pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "This DNA signal probably originates from the autophagic degradation of unselected pronuclei (Liu and Yao, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data and citation to prior literature on autophagy.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "1086c3a1-27f7-4b77-869d-100f08b12ddc",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C73",
+      "claim": "A class of somewhat larger fragments was present at t = 6\u20137 hr in the wild-type and SPO11i crosses, but absent in the TOP2gi and \u0394SPO11 crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a class of somewhat larger fragments was present at t = 6\u20137 hr in the wild-type and SPO11i crosses, but absent in the TOP2gi and \u0394SPO11 crosses (Figure 7B, red box).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "6fd8fe25-b354-4ec8-88eb-5cce4846c3f5",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C74",
+      "claim": "The absence of the subset of DNA fragments at t = 6\u20137 hr corresponds with the absence of pronuclear \u03b3H2AX formation in the TOP2gi and \u0394SPO11 crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of this subset of DNA fragments corresponds with the absence of pronuclear \u03b3H2AX formation in the TOP2gi and \u0394SPO11 crosses (Figures 5E and 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation between Southern blot data (Figure 7B) and immunostaining data (Figures 5E and 6E).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a1ecc38d-8739-457e-9f17-c1554619cbe8",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C75",
+      "claim": "The DNA fragments seen at t = 6\u20137 in the wild-type and SPO11i crosses are probably created by PM-DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, these fragments are probably created by PM-DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between DNA fragments and \u03b3H2AX formation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "34c2025e-5643-43f3-8805-f14052321fc5",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C76",
+      "claim": "\u0394ATG8-2 crosses underwent mating, including normal meiosis and \u03b3H2AX formation in the pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394ATG8-2 crosses underwent mating, including normal meiosis and \u03b3H2AX formation in the pronuclei (Figure 8C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "6462d262-d2ae-44e9-9542-d6421ef3808b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C77",
+      "claim": "\u0394ATG8-2 crosses were defective in eliminating unselected pronuclei; therefore, post-meiotic cells contained extra nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "but were defective in eliminating unselected pronuclei; therefore, post-meiotic cells contained extra nuclei (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by acetic orcein staining data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "4cc7db9a-5146-4871-9e20-30c188ba53ab",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C78",
+      "claim": "PFGE detection of DNA fragments in \u0394ATG8-2 crosses revealed normal meiotic DSBs plus a prominent post-meiotic (6\u20137 hr) DSB signal, which is unlikely to result from autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "PFGE detection of DNA fragments revealed normal meiotic DSBs plus a prominent post-meiotic (6\u20137 hr) DSB signal, which is unlikely to result from autophagy (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "73b59111-28a3-4c8a-bca4-3b94953ea1f3",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C79",
+      "claim": "In the TOP2gi::\u0394ATG8-2 mutant, meiotic DSB-dependent fragmentation was normal but post-meiotic fragmentation was virtually absent.",
+      "claim_type": "EXPLICIT",
+      "source": "In the TOP2gi::\u0394ATG8-2 mutant, meiotic DSB-dependent fragmentation was normal but post-meiotic fragmentation was virtually absent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "2497a42f-3c11-4613-88ba-4790a082384a",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C80",
+      "claim": "In the \u0394SPO11::\u0394ATG8-2 mutant, meiotic DSB-dependent fragmentation was absent and post-meiotic fragmentation was strongly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In the \u0394SPO11::\u0394ATG8-2 mutant, meiotic DSB-dependent fragmentation was absent and post-meiotic fragmentation was strongly reduced.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a71a1f58-ebad-46f8-85ca-9d0d6d3ec75f",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C81",
+      "claim": "In the SPO11i::\u0394ATG8-2 mutant, the meiotic signal was absent and the post-meiotic signal was partly retained.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in the SPO11i::\u0394ATG8-2 mutant, the meiotic signal was absent and the post-meiotic signal was partly retained (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "15979593-803d-4135-944f-a6cb64e71880",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C82",
+      "claim": "The post-meiotic signal in the SPO11i::\u0394ATG8-2 mutant was completely absent in a triple mutant (TOP2gi::SPO11i::\u0394ATG8-2).",
+      "claim_type": "EXPLICIT",
+      "source": "The post-meiotic signal in this mutant was completely absent in a triple mutant (TOP2gi::SPO11i::\u0394ATG8-2; Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Southern blot data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "87dcb2b0-02f7-4f56-b0a0-d31209869ce7",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C83",
+      "claim": "Programmed PM-DSBs are present in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that programmed PM-DSBs are present in Tetrahymena, suggesting that PM-DSB formation requires both Top2g and Spo11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the PFGE data showing DSB-dependent DNA fragmentation at the post-meiotic stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "71cfee80-268b-49e5-b240-9b9db500c9ca",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C84",
+      "claim": "PM-DSB formation requires both Top2G and Spo11.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that programmed PM-DSBs are present in Tetrahymena, suggesting that PM-DSB formation requires both Top2g and Spo11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the observation that both TOP2gi and \u0394SPO11 mutants lack post-meiotic DNA fragmentation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "77223589-9dbb-426c-87ab-2aba41fc241c",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C85",
+      "claim": "The selected pronucleus became H3K56 acetylated as it started to undergo gametogenic mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the selected pronucleus became H3K56 acetylated as it started to undergo gametogenic mitosis, while the three unselected pronuclei did not become acetylated and were degraded (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "26e930f0-cb6f-486b-af5d-8aa1c5639130",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C86",
+      "claim": "The three unselected pronuclei did not become H3K56 acetylated and were degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the selected pronucleus became H3K56 acetylated as it started to undergo gametogenic mitosis, while the three unselected pronuclei did not become acetylated and were degraded (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "f2d23dc5-2b35-4ae9-af04-901ba59198be",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C87",
+      "claim": "H3K56 acetylation and H2AX dephosphorylation occurred in the same pronucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Double immunostaining for H3K56ac and \u03b3H2AX confirmed that acetylation and dephosphorylation occurred in the same pronucleus (Figure 9B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by double immunostaining data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "8fb7d271-0da2-46be-98bc-5e4d59974c4e",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C88",
+      "claim": "In the \u0394ATG8-2 crosses, H3K56 acetylation and H2AX dephosphorylation occurred in the selected pronucleus just as in the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "In the \u0394ATG8-2 crosses, H3K56 acetylation and H2AX dephosphorylation occurred in the selected pronucleus just as in the wild type (Figure 9C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 9C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "3ecafad3-0834-4762-b8ac-4675b89db42f",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C89",
+      "claim": "The remaining unselected pronuclei in \u0394ATG8-2 crosses showed a decline in \u03b3H2AX staining after post-meiotic mitosis; however, neither H3K56 acetylation nor gametogenic mitosis occurred in these nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining unselected pronuclei also showed a decline in \u03b3H2AX staining after post-meiotic mitosis; however, neither H3K56 acetylation nor gametogenic mitosis occurred in these nuclei (Figure 9C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 9C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "e3501d53-e69c-460d-9cee-d76d10d2d8ef",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C90",
+      "claim": "DNA repair and histone H3 modification are not merely the consequence of a nucleus escaping autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that DNA repair and histone H3 modification are not merely the consequence of a nucleus escaping autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that unselected pronuclei in \u0394ATG8-2 mutants do not undergo H3K56 acetylation despite escaping autophagy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "ed1563f9-8586-4372-b9c6-c25c142566a6",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C91",
+      "claim": "Asf1 was retained in the elongating MIC at meiotic prophase but lost during anaphase I and II.",
+      "claim_type": "EXPLICIT",
+      "source": "Asf1 was retained in the elongating MIC at meiotic prophase but lost during anaphase I and II (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "30e03946-ab30-41b0-9f71-c0e7bcdf3cf1",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C92",
+      "claim": "After completion of meiosis, Asf1 reappeared only in the pronucleus selected to undergo gametogenic mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "After completion of meiosis, Asf1 reappeared only in the pronucleus selected to undergo gametogenic mitosis (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "77ea7e45-b839-4c5e-bf4f-9e8c66ec7f6e",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C93",
+      "claim": "Asf1-GFP and H3K56ac colocalized in the selected pronucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Double immunostaining demonstrated Asf1-GFP and H3K56ac colocalization in the selected pronucleus (Figure 10B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by double immunostaining data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "eede1004-8f93-49c2-bfe8-04dbad0b8ba1",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C94",
+      "claim": "H3K56 acetylation potentially mediated by Asf1 was only induced in the selected pronucleus in response to PM-DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, H3K56 acetylation potentially mediated by Asf1 was only induced in the selected pronucleus in response to PM-DSBs, as neither Asf1-GFP nor H3K56ac was observed when PM-DSBs were suppressed by TOP2g RNAi or SPO11 deletion (Figure 10B,C and Figure 10\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 10B,C comparing wild-type and mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a2c71073-6ac7-4444-a954-ef47e8552f84",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C95",
+      "claim": "Neither Asf1-GFP nor H3K56ac was observed when PM-DSBs were suppressed by TOP2G RNAi or SPO11 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, H3K56 acetylation potentially mediated by Asf1 was only induced in the selected pronucleus in response to PM-DSBs, as neither Asf1-GFP nor H3K56ac was observed when PM-DSBs were suppressed by TOP2g RNAi or SPO11 deletion (Figure 10B,C and Figure 10\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 10B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "122ca95d-e1ff-4707-b1ff-c7e50bf4d737",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C96",
+      "claim": "PM-DSBs are deliberately induced in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the unicellular ciliated protist Tetrahymena thermophila (hereafter referred to as Tetrahymena) as a model biological system, we demonstrate that PM-DSBs are formed in non-metazoan organisms and report the first compelling genetic evidence for the mechanism of PM-DSB induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing programmed DSB formation at the post-meiotic stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "392d720b-c88b-4d82-80db-b8e42d3ed07b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C97",
+      "claim": "This study reports the first compelling genetic evidence for the mechanism of PM-DSB induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the unicellular ciliated protist Tetrahymena thermophila (hereafter referred to as Tetrahymena) as a model biological system, we demonstrate that PM-DSBs are formed in non-metazoan organisms and report the first compelling genetic evidence for the mechanism of PM-DSB induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the genetic experiments showing that Top2G and Spo11 are required for PM-DSB formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "225790da-4cbd-4221-8421-13a23d76a2cc",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C98",
+      "claim": "PM-DSBs play an indispensable role in producing gametic nuclei by converting their chromatin from a heterochromatic to a euchromatic state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that PM-DSBs play an indispensable role in producing gametic nuclei by converting their chromatin from a heterochromatic to a euchromatic state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that PM-DSB mutants fail to undergo chromatin remodeling and gametogenic mitosis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "450a0f84-8021-4d6d-97c8-a865cce95212",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C99",
+      "claim": "Tetrahymena pronuclei are in the G2 phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other organisms, Tetrahymena pronuclei are in the G2 phase of the cell cycle (Cole and Sugai, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "8b24144d-af50-4fa6-878a-cd91bc6a3dbb",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C100",
+      "claim": "EdU incorporation indicated that DNA synthesis is not impeded in either the TOP2gi or \u0394SPO11 crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "5-Ethynyl-2\u2032-deoxyuridine (EdU) incorporation indicated that DNA synthesis is not impeded in either the TOP2gi or \u0394SPO11 crosses (Figure 8\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EdU incorporation data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "82b898a8-c52d-4c62-a991-ad3797635870",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C101",
+      "claim": "PM-DSBs are formed after DNA synthesis in Tetrahymena.",
+      "claim_type": "EXPLICIT",
+      "source": "5-Ethynyl-2\u2032-deoxyuridine (EdU) incorporation indicated that DNA synthesis is not impeded in either the TOP2gi or \u0394SPO11 crosses (Figure 8\u2014figure supplement 1), strongly suggesting that PM-DSBs are formed after DNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the EdU incorporation data and the observation that PM-DSB mutants complete DNA synthesis normally.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "2bdaafd1-cfa4-4367-8018-dad1df978269",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C102",
+      "claim": "If the average fragment size is 2.2 Mb, approximately 140 DSBs are distributed across the two 157 Mb genomes of haploid pronuclei in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "If we assume an average fragment size of 2.2 Mb, we estimate that ~140 DSBs are distributed across the two 157 Mb genomes of haploid pronuclei in G2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the observed fragment sizes from PFGE data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "f0bab8ba-1db5-4fb7-9d1f-8bf7e8841256",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C103",
+      "claim": "Tetrahymena Asf1 interacts with an importin \u03b2 isoform and another protein similar to human nuclear autoantigenic sperm protein (NASP).",
+      "claim_type": "EXPLICIT",
+      "source": "Garg et al. (2013) found that Tetrahymena Asf1 interacts with an importin \u03b2 isoform and another protein similar to human nuclear autoantigenic sperm protein (NASP), both of which are involved in histone transport pathways (J\u00e4kel et al., 1999; M\u00fchlh\u00e4usser et al., 2001; Bowman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "8059ce11-6487-4028-b9a9-4aeab492649f",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C104",
+      "claim": "Tetrahymena Asf1 interacts with a protein containing a BRCA1 C-terminal (BRCT) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Garg et al. (2013) identified another Asf1-interacting partner protein containing a BRCA1 C-terminal (BRCT) domain, which is found predominantly in proteins involved in cell cycle checkpoint functions that respond to DNA damage (Bork et al., 1997; Yu and Chen, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a63083d5-9747-4307-b6dd-ba540671bf4b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C105",
+      "claim": "The selected pronucleus undergoes acetylation at sites other than at H3K56; for example, H3K18ac and H3K27ac.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments showed that the selected pronucleus also undergoes acetylation at sites other than at H3K56; for example, H3K18ac and H3K27ac (Figure 9\u2014figure supplement 1) are strongly enriched in euchromatin (Wang et al., 2008; Tie et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "3e453066-eed3-48b5-b28f-ef1ce40e5d2d",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C106",
+      "claim": "H3K18ac and H3K27ac are strongly enriched in euchromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments showed that the selected pronucleus also undergoes acetylation at sites other than at H3K56; for example, H3K18ac and H3K27ac (Figure 9\u2014figure supplement 1) are strongly enriched in euchromatin (Wang et al., 2008; Tie et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "9e58058c-e2dc-44ba-ae47-bc30a3ac5bcb",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C107",
+      "claim": "A protein containing a high mobility group (HMG) box domain is abundantly expressed in the selected pronucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a protein containing a high mobility group (HMG) box domain, which decreases the compactness of the chromatin fiber (Agresti and Bianchi, 2003; Catez et al., 2004), is abundantly expressed in the selected pronucleus (Xu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "d7ebd485-2e4d-4b90-8849-baa92c57daf9",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C108",
+      "claim": "HMG box domain proteins decrease the compactness of the chromatin fiber.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a protein containing a high mobility group (HMG) box domain, which decreases the compactness of the chromatin fiber (Agresti and Bianchi, 2003; Catez et al., 2004), is abundantly expressed in the selected pronucleus (Xu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a03b47b9-5f50-4c58-8b27-5ecacb1a0726",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C109",
+      "claim": "Repair of programmed PM-DSBs in the haploid germline allows changes in the epigenetic landscape required to produce mature gametes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that repair of programmed PM-DSBs in the haploid germline allows changes in the epigenetic landscape required to produce mature gametes (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental findings and is illustrated in Figure 11.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "04c23c3a-af9c-4df0-888f-42234c428cb3",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C110",
+      "claim": "Mammals require karyogamy to induce the epigenetic modifications necessary for embryonic developmental programming.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while mammals require karyogamy to induce the epigenetic modifications necessary for embryonic developmental programming (Zhou and Dean, 2015), Tetrahymena gametic nuclei can differentiate into MACs and MICs without karyogamy (Fukuda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "7483ebb6-f411-41e4-bd6b-d0b8c0f5dc58",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C111",
+      "claim": "Tetrahymena gametic nuclei can differentiate into MACs and MICs without karyogamy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while mammals require karyogamy to induce the epigenetic modifications necessary for embryonic developmental programming (Zhou and Dean, 2015), Tetrahymena gametic nuclei can differentiate into MACs and MICs without karyogamy (Fukuda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "84804f1c-6000-47e3-9886-dbba9cc2c661",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C112",
+      "claim": "Chromatin remodeling in Tetrahymena pronuclei might resemble zygote reprogramming rather than mammalian male pronuclear chromatin remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, chromatin remodeling in Tetrahymena pronuclei might resemble zygote reprogramming rather than mammalian male pronuclear chromatin remodeling, in that the differentiated germline pronucleus is re-set to a dedifferentiated progenitor of new somatic and germline nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the comparison between Tetrahymena and mammalian systems.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "2ad60750-1787-4bbc-b23a-28557a08697f",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C113",
+      "claim": "Dedifferentiated human cells such as cancer and embryonic stem cells display more H3K56ac compared with differentiated somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since dedifferentiated human cells such as cancer and embryonic stem cells display more H3K56ac compared with differentiated somatic cells (Das et al., 2009), it is possible that enhanced histone acetylation in Tetrahymena similarly promotes nuclear dedifferentiation via a similar mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a779beaf-2ccc-4b54-a8d2-49df45c6ed75",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "claim_id": "C114",
+      "claim": "Enhanced histone acetylation in Tetrahymena may promote nuclear dedifferentiation via a similar mechanism to that in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since dedifferentiated human cells such as cancer and embryonic stem cells display more H3K56ac compared with differentiated somatic cells (Das et al., 2009), it is possible that enhanced histone acetylation in Tetrahymena similarly promotes nuclear dedifferentiation via a similar mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on comparison with human cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6932c9da-e6bb-4bef-beb6-057615559e23",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "\u03b3H2AX foci are formed in post-meiotic pronuclei in Tetrahymena, appearing transiently at 6 hr after meiosis induction. In one of the four pronuclei (the selected pronucleus), \u03b3H2AX fluorescence disappears after about 30 min, and only this nucleus undergoes gametogenic mitosis, while the \u03b3H2AX signal persists in the three unselected pronuclei that are subsequently degraded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 are supported by multiple lines of evidence including immunostaining (Figure 2A), Western blotting (Figure 2B), and time-course fluorescence microscopy (Figure 3). The data consistently show \u03b3H2AX formation in post-meiotic pronuclei and its selective disappearance in the pronucleus that undergoes gametogenic mitosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "f05b5e7b-ef7d-4fc2-a97e-00e03ab7b7f6",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DNA repair markers DNA-PKcs and Rad51 are expressed in the selected pronucleus during the post-meiotic stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 are supported by fluorescence microscopy data shown in Figure 3\u2014figure supplements 1 and 2, demonstrating localization of these DNA repair factors to the selected pronucleus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "7f44b18a-88ea-4dde-9186-ca7a07e4a1d6",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tetrahymena has two closely related Top2 isoforms (Top2S and Top2G) that contain characteristic topoisomerase domains but lack the DTHCT domain. Top2S is expressed exclusively in the MAC, while Top2G is expressed in MIC and MIC-derived pronuclei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by phylogenetic analysis (Figure 4A), domain analysis (Figure 4B), and fluorescence microscopy of GFP-tagged proteins (Figure 4C). The distinct localization patterns provide strong evidence for functional specialization of these paralogs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Top2G depletion by RNAi does not affect meiosis but prevents gametogenic mitosis, leading to amicronucleate cells in 70-80% of crosses. Loss of Top2G activity suppresses H2AX phosphorylation in pronuclei but does not affect \u03b3H2AX formation at meiotic prophase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 are supported by Western blotting (Figure 5B), acetic orcein staining (Figure 5C), quantitative analysis (Figure 5D), and immunostaining (Figure 5E,F). The data consistently demonstrate that Top2G is required for post-meiotic processes but not for meiosis itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "9290d160-66be-404b-9086-707b6686f6ef",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SPO11 is transcribed from meiotic prophase until the post-meiotic stage in Tetrahymena. \u0394SPO11 crosses fail to undergo gametogenic mitosis and become amicronucleate, while SPO11i crosses show a less severe phenotype with 40-70% producing progeny nuclei. Neither \u0394SPO11 nor SPO11i crosses express \u03b3H2AX in the meiotic MIC, and only 40-70% of SPO11i crosses show \u03b3H2AX in pronuclei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 are supported by RT-PCR (Figure 6C), Western blotting (Figure 6D), acetic orcein staining (Figure 6A), quantitative analysis (Figure 6B), and immunostaining (Figure 6E,F). The partial rescue in SPO11i crosses is explained by recovery of Spo11 expression after meiotic prophase, providing strong evidence for a post-meiotic role of Spo11.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PFGE analysis reveals distinct DNA fragmentation patterns during mating: a smear at 2.2-4.6 Mb at t=2-4 hr representing meiotic DSBs (absent in \u0394SPO11 and SPO11i), and at t=6-7 hr, a class of larger fragments present in wild-type and SPO11i but absent in TOP2gi and \u0394SPO11 crosses, corresponding to PM-DSBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C75 are supported by PFGE and Southern blotting data (Figure 7). The correlation between DNA fragmentation patterns and genetic backgrounds provides direct evidence for PM-DSBs. However, the interpretation is complicated by overlapping autophagic degradation signals, which is addressed in subsequent experiments with \u0394ATG8-2 mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "\u0394ATG8-2 mutants that are defective in autophagy show normal meiotic DSBs plus a prominent post-meiotic DSB signal. In double and triple mutants combining \u0394ATG8-2 with TOP2gi, \u0394SPO11, or SPO11i, post-meiotic fragmentation is eliminated or reduced, demonstrating that programmed PM-DSBs are present in Tetrahymena and require both Top2G and Spo11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C84 are supported by comprehensive PFGE analysis of multiple mutant combinations (Figure 8). The use of \u0394ATG8-2 to eliminate autophagic background is a critical control that strengthens the conclusion that PM-DSBs are programmed and require both Top2G and Spo11. This represents the first direct evidence for PM-DSBs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "709ae862-3550-499f-bb0a-dac4b36f2bb1",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The selected pronucleus becomes H3K56 acetylated as it undergoes gametogenic mitosis, while unselected pronuclei do not. H3K56 acetylation and H2AX dephosphorylation occur in the same pronucleus. In \u0394ATG8-2 mutants, unselected pronuclei that escape autophagy do not undergo H3K56 acetylation, indicating that DNA repair and histone modification are not merely consequences of escaping autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C90 are supported by immunostaining data (Figures 9A-C). The \u0394ATG8-2 experiment (C88-C90) is particularly important as it demonstrates that chromatin remodeling is an active process in the selected pronucleus rather than a passive consequence of avoiding degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "2a16a1ad-3032-4f0c-8ce4-e63a2a53fde3",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Asf1 is retained in the elongating MIC at meiotic prophase but lost during anaphase, then reappears only in the selected pronucleus. Asf1-GFP and H3K56ac colocalize in the selected pronucleus, and H3K56 acetylation mediated by Asf1 is only induced in response to PM-DSBs, as neither Asf1-GFP nor H3K56ac is observed when PM-DSBs are suppressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C95 are supported by fluorescence microscopy (Figure 10A), double immunostaining (Figure 10B), and quantitative analysis (Figure 10C). The dependence of Asf1 localization and H3K56ac on PM-DSB formation provides strong evidence linking DSB repair to chromatin remodeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "e32f0056-e1c5-4f0f-bdc7-5e2641100095",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "EdU incorporation indicates that DNA synthesis is not impeded in TOP2gi or \u0394SPO11 crosses, strongly suggesting that PM-DSBs are formed after DNA synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 are supported by EdU incorporation data (Figure 8\u2014figure supplement 1). This timing is important for understanding the mechanism and distinguishes Tetrahymena PM-DSBs from meiotic DSBs that occur before DNA replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "bd5d06b3-33ea-4488-8f42-f8f65230186a",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Based on an average fragment size of 2.2 Mb, approximately 140 DSBs are estimated to be distributed across the two 157 Mb genomes of haploid pronuclei in G2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C102 is a calculation based on PFGE data, but the assumption of an average fragment size of 2.2 Mb is not well justified. The PFGE data show a range of fragment sizes (1.0-4.6 Mb), and the distribution may not be uniform. This estimate should be considered approximate and requires additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "22204a52-4523-464e-bc18-b2f46f5fe66b",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The selected pronucleus undergoes acetylation at sites other than H3K56, including H3K18ac and H3K27ac.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 is supported by immunostaining data shown in Figure 9\u2014figure supplement 1, demonstrating that chromatin remodeling involves multiple histone modifications beyond H3K56ac.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "1fecab4e-ab24-4296-9a2c-ffbd396522ab",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study reports the first direct observation of programmed PM-DSBs via electrophoretic separation of DSB-generated DNA fragments and provides the first compelling genetic evidence for the mechanism of PM-DSB induction in Tetrahymena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C96, and C97 are supported by the comprehensive PFGE analysis combined with genetic manipulations. The use of \u0394ATG8-2 mutants to eliminate autophagic background and the systematic analysis of TOP2gi, \u0394SPO11, and SPO11i mutants provide the first direct evidence for programmed PM-DSBs and their mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a79caa01-c84c-4ccb-842b-0bd6f1d27a74",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PM-DSBs are accompanied by switching from heterochromatic to euchromatic chromatin structure in the haploid pronucleus. Reduced PM-DSB induction blocks euchromatin formation (characterized by H3K56 acetylation) and leads to failure in gametic nuclei production. PM-DSBs play an indispensable role in producing gametic nuclei by converting chromatin from heterochromatic to euchromatic state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C8, C9, and C98 are supported by the correlation between PM-DSB formation, H3K56 acetylation, and successful gametogenic mitosis. The TOP2gi and \u0394SPO11 mutants that lack PM-DSBs also lack H3K56ac and fail to produce gametic nuclei, providing strong evidence for the functional importance of PM-DSBs in chromatin remodeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "a30532c0-f58e-4859-8806-e8ea268ec675",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PM-DSBs are responsible for histone replacement during the reprogramming of generative to undifferentiated progeny nuclei, and repair of programmed PM-DSBs in the haploid germline allows changes in the epigenetic landscape required to produce mature gametes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10 and C109 are proposed models based on the experimental findings but lack direct evidence for histone replacement. While the data show H3K56ac deposition and chromatin remodeling, direct demonstration of histone replacement would require additional experiments such as histone turnover assays or chromatin immunoprecipitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    },
+    {
+      "id": "68082b26-83df-4a6b-9ace-bf0ae7524131",
+      "content_id": "b1eeb78b-e428-4475-a591-c69067c14979",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Chromatin remodeling in Tetrahymena pronuclei might resemble zygote reprogramming rather than mammalian male pronuclear chromatin remodeling, and enhanced histone acetylation may promote nuclear dedifferentiation via a similar mechanism to that in human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C112 and C114 are speculative comparisons to mammalian systems. While the analogy is interesting and potentially valuable for understanding the broader significance of the findings, it lacks direct experimental support and should be considered a hypothesis for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:38:56.674795Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "99420400-cc22-497c-a806-6521cd230a91",
+      "result_id": "6932c9da-e6bb-4bef-beb6-057615559e23"
+    },
+    {
+      "claim_id": "c0b8054d-5271-4af3-962d-57461b879624",
+      "result_id": "6932c9da-e6bb-4bef-beb6-057615559e23"
+    },
+    {
+      "claim_id": "3cb584aa-659a-4d0b-8625-6567c4776027",
+      "result_id": "6932c9da-e6bb-4bef-beb6-057615559e23"
+    },
+    {
+      "claim_id": "9e956d23-5750-43b5-9247-cfb99c5fbd23",
+      "result_id": "6932c9da-e6bb-4bef-beb6-057615559e23"
+    },
+    {
+      "claim_id": "c678d7a4-2b79-45f8-83aa-a7b41ad800c1",
+      "result_id": "6932c9da-e6bb-4bef-beb6-057615559e23"
+    },
+    {
+      "claim_id": "eda41b9a-5546-4185-b4c2-5bc8f5b03d1b",
+      "result_id": "6932c9da-e6bb-4bef-beb6-057615559e23"
+    },
+    {
+      "claim_id": "db8c733b-cf2c-4fbe-86f8-e0a7e958eaa3",
+      "result_id": "f05b5e7b-ef7d-4fc2-a97e-00e03ab7b7f6"
+    },
+    {
+      "claim_id": "f6adcca8-d034-41aa-9b85-cb20f4960311",
+      "result_id": "f05b5e7b-ef7d-4fc2-a97e-00e03ab7b7f6"
+    },
+    {
+      "claim_id": "0b25a011-1ee2-4bc7-b29c-fcc912ba94ad",
+      "result_id": "7f44b18a-88ea-4dde-9186-ca7a07e4a1d6"
+    },
+    {
+      "claim_id": "8faf90ca-45bf-4311-a45d-2c85ae8f3a59",
+      "result_id": "7f44b18a-88ea-4dde-9186-ca7a07e4a1d6"
+    },
+    {
+      "claim_id": "f92593a8-93e9-4c86-908a-aa9ada2e848d",
+      "result_id": "7f44b18a-88ea-4dde-9186-ca7a07e4a1d6"
+    },
+    {
+      "claim_id": "0234bef0-876d-4dc7-b713-16a211d53cfc",
+      "result_id": "7f44b18a-88ea-4dde-9186-ca7a07e4a1d6"
+    },
+    {
+      "claim_id": "690a9646-1fb0-49df-bc6a-160174f500e8",
+      "result_id": "7f44b18a-88ea-4dde-9186-ca7a07e4a1d6"
+    },
+    {
+      "claim_id": "ec375750-e53a-4a7e-9d38-97edecba28ea",
+      "result_id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580"
+    },
+    {
+      "claim_id": "16b2e2c4-5da2-4dab-9f46-f8198c1dfdda",
+      "result_id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580"
+    },
+    {
+      "claim_id": "7d2275bd-92e3-4649-bbff-81aebc0c52eb",
+      "result_id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580"
+    },
+    {
+      "claim_id": "17cf25c2-5eec-488f-815d-bc15cb497c06",
+      "result_id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580"
+    },
+    {
+      "claim_id": "7936fb59-d2fe-4573-b707-9032fa7382d1",
+      "result_id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580"
+    },
+    {
+      "claim_id": "6fdbc292-4536-496e-94b6-cb682458fbec",
+      "result_id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580"
+    },
+    {
+      "claim_id": "e808b88d-c703-4f8d-a32e-0b04fd3d9724",
+      "result_id": "57c42a1b-9efa-4f2e-aa40-9cdb29ae8580"
+    },
+    {
+      "claim_id": "001bd84c-85bd-499e-bcb3-7a21482e44a2",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "a33c3da4-96ae-4d67-92c3-780328746e5c",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "db5b45e9-3f91-4430-ad47-f79adbd51c3f",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "384c3658-818f-4561-96db-0b763719b274",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "b391b9e2-dfd2-49a8-a2bf-3a2aafcbbee7",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "e7d2fefe-138d-4af5-802e-6faa936d5b74",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "e1cd921f-001f-4601-8d4c-a9154247f055",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "cb02f472-fc8f-4be0-bf97-faa04abab530",
+      "result_id": "9290d160-66be-404b-9086-707b6686f6ef"
+    },
+    {
+      "claim_id": "fb9e051b-12a5-4dc4-91cb-4312fe611a6f",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "1cdf5e93-779d-4544-9700-a1d21173a77a",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "0fd569d7-e0be-4ec1-9730-efb871abb979",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "ea1868e4-101a-417d-ad5d-5c9aba0d561a",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "8d857fdf-e1b1-4ff5-a3be-fb5f0e31b4b0",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "1086c3a1-27f7-4b77-869d-100f08b12ddc",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "6fd8fe25-b354-4ec8-88eb-5cce4846c3f5",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "a1ecc38d-8739-457e-9f17-c1554619cbe8",
+      "result_id": "7ab85ffb-48c2-46cf-801b-4050ab613e5b"
+    },
+    {
+      "claim_id": "34c2025e-5643-43f3-8805-f14052321fc5",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "6462d262-d2ae-44e9-9542-d6421ef3808b",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "4cc7db9a-5146-4871-9e20-30c188ba53ab",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "73b59111-28a3-4c8a-bca4-3b94953ea1f3",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "2497a42f-3c11-4613-88ba-4790a082384a",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "a71a1f58-ebad-46f8-85ca-9d0d6d3ec75f",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "15979593-803d-4135-944f-a6cb64e71880",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "87dcb2b0-02f7-4f56-b0a0-d31209869ce7",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "71cfee80-268b-49e5-b240-9b9db500c9ca",
+      "result_id": "a36ff3f7-ddb2-4930-b612-eb57bb9f046b"
+    },
+    {
+      "claim_id": "77223589-9dbb-426c-87ab-2aba41fc241c",
+      "result_id": "709ae862-3550-499f-bb0a-dac4b36f2bb1"
+    },
+    {
+      "claim_id": "26e930f0-cb6f-486b-af5d-8aa1c5639130",
+      "result_id": "709ae862-3550-499f-bb0a-dac4b36f2bb1"
+    },
+    {
+      "claim_id": "f2d23dc5-2b35-4ae9-af04-901ba59198be",
+      "result_id": "709ae862-3550-499f-bb0a-dac4b36f2bb1"
+    },
+    {
+      "claim_id": "8fb7d271-0da2-46be-98bc-5e4d59974c4e",
+      "result_id": "709ae862-3550-499f-bb0a-dac4b36f2bb1"
+    },
+    {
+      "claim_id": "3ecafad3-0834-4762-b8ac-4675b89db42f",
+      "result_id": "709ae862-3550-499f-bb0a-dac4b36f2bb1"
+    },
+    {
+      "claim_id": "e3501d53-e69c-460d-9cee-d76d10d2d8ef",
+      "result_id": "709ae862-3550-499f-bb0a-dac4b36f2bb1"
+    },
+    {
+      "claim_id": "ed1563f9-8586-4372-b9c6-c25c142566a6",
+      "result_id": "2a16a1ad-3032-4f0c-8ce4-e63a2a53fde3"
+    },
+    {
+      "claim_id": "30e03946-ab30-41b0-9f71-c0e7bcdf3cf1",
+      "result_id": "2a16a1ad-3032-4f0c-8ce4-e63a2a53fde3"
+    },
+    {
+      "claim_id": "77ea7e45-b839-4c5e-bf4f-9e8c66ec7f6e",
+      "result_id": "2a16a1ad-3032-4f0c-8ce4-e63a2a53fde3"
+    },
+    {
+      "claim_id": "eede1004-8f93-49c2-bfe8-04dbad0b8ba1",
+      "result_id": "2a16a1ad-3032-4f0c-8ce4-e63a2a53fde3"
+    },
+    {
+      "claim_id": "a2c71073-6ac7-4444-a954-ef47e8552f84",
+      "result_id": "2a16a1ad-3032-4f0c-8ce4-e63a2a53fde3"
+    },
+    {
+      "claim_id": "8b24144d-af50-4fa6-878a-cd91bc6a3dbb",
+      "result_id": "e32f0056-e1c5-4f0f-bdc7-5e2641100095"
+    },
+    {
+      "claim_id": "82b898a8-c52d-4c62-a991-ad3797635870",
+      "result_id": "e32f0056-e1c5-4f0f-bdc7-5e2641100095"
+    },
+    {
+      "claim_id": "2bdaafd1-cfa4-4367-8018-dad1df978269",
+      "result_id": "bd5d06b3-33ea-4488-8f42-f8f65230186a"
+    },
+    {
+      "claim_id": "a63083d5-9747-4307-b6dd-ba540671bf4b",
+      "result_id": "22204a52-4523-464e-bc18-b2f46f5fe66b"
+    },
+    {
+      "claim_id": "6e799b57-79bd-443d-9374-d5be4ac6bdad",
+      "result_id": "1fecab4e-ab24-4296-9a2c-ffbd396522ab"
+    },
+    {
+      "claim_id": "122ca95d-e1ff-4707-b1ff-c7e50bf4d737",
+      "result_id": "1fecab4e-ab24-4296-9a2c-ffbd396522ab"
+    },
+    {
+      "claim_id": "392d720b-c88b-4d82-80db-b8e42d3ed07b",
+      "result_id": "1fecab4e-ab24-4296-9a2c-ffbd396522ab"
+    },
+    {
+      "claim_id": "05935465-72a5-415f-ac8c-2cd1e1f0d6b9",
+      "result_id": "a79caa01-c84c-4ccb-842b-0bd6f1d27a74"
+    },
+    {
+      "claim_id": "0e3a5fd5-e1fe-480d-82ba-3e7aed71c230",
+      "result_id": "a79caa01-c84c-4ccb-842b-0bd6f1d27a74"
+    },
+    {
+      "claim_id": "a0360c0a-4b59-4d1e-b6c1-728b516d3163",
+      "result_id": "a79caa01-c84c-4ccb-842b-0bd6f1d27a74"
+    },
+    {
+      "claim_id": "225790da-4cbd-4221-8421-13a23d76a2cc",
+      "result_id": "a79caa01-c84c-4ccb-842b-0bd6f1d27a74"
+    },
+    {
+      "claim_id": "fcf51431-de02-4016-b9cf-b7369da7d3e9",
+      "result_id": "a30532c0-f58e-4859-8806-e8ea268ec675"
+    },
+    {
+      "claim_id": "a03b47b9-5f50-4c58-8b27-5ecacb1a0726",
+      "result_id": "a30532c0-f58e-4859-8806-e8ea268ec675"
+    },
+    {
+      "claim_id": "84804f1c-6000-47e3-9886-dbba9cc2c661",
+      "result_id": "68082b26-83df-4a6b-9ace-bf0ae7524131"
+    },
+    {
+      "claim_id": "a779beaf-2ccc-4b54-a8d2-49df45c6ed75",
+      "result_id": "68082b26-83df-4a6b-9ace-bf0ae7524131"
+    }
+  ],
+  "comparisons": []
+}

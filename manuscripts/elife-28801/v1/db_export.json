@@ -1,0 +1,1322 @@
+{
+  "submission": {
+    "id": "c867546f-7131-4cc6-b469-64ec50fff18a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:47:40.894542Z",
+    "updated_at": "2025-12-01T21:47:40.894542Z"
+  },
+  "content": [
+    {
+      "id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "submission_id": "c867546f-7131-4cc6-b469-64ec50fff18a",
+      "content_type": "manuscript",
+      "content_text": "# Towards PubMed 2.0\n\n## Authors\n\n- Nicolas Fiorini<sup>1</sup> ([ORCID: 0000-0002-9260-1326](https://orcid.org/0000-0002-9260-1326)) \u2020\n- David J Lipman<sup>2</sup>\n- Zhiyong Lu<sup>3</sup> ([ORCID: 0000-0001-9998-916X](https://orcid.org/0000-0001-9998-916X)) \u2020\n\n### Affiliations\n\n1. National Center for Biotechnology Information, US National Library of Medicine National Institutes of Health Bethesda United States\n2. National Center for Biotechnology Information, US National Library of Medicine National Institutes of Health Bethesda United States\n3. National Center for Biotechnology Information, US National Library of Medicine National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nStaff from the National Center for Biotechnology Information in the US describe recent improvements to the PubMed search engine and outline plans for the future, including a new experimental site called PubMed Labs.\n\n## Introduction\n\nPubMed is a search engine for the biomedical literature that provides access to MEDLINE, a database that contains bibliographic information on more than 27 million articles from more than 7,000 journals, including full text for some 4 million of these articles (Sayers et al., 2011). On an average working day approximately 2.5 million users from around the world access PubMed to perform about 3 million searches and 9 million page views. Here, as PubMed celebrates its 20th anniversary, and as the biomedical literature continues to grow, we discuss how PubMed is changing to meet the needs and expectations of its users, and to take advantage of advances in web and information technologies.\n\nGiven a query, PubMed (http://www.ncbi.nlm.nih.gov/pubmed) returns the most recent articles first by default. While this reverse chronological sort helps users to find the latest articles on a particular topic or by a specific author, most PubMed users are accustomed to search engines that sort results by relevance. Indeed, over 80% of PubMed users only browse and click results on the first page, which is very similar to the behavior of most web users (Islamaj Dogan et al., 2009), even though more useful (and sometimes still recent) papers may be returned on the second page and beyond. Moreover, the need for relevance search becomes more critical in light of the growing use of small-screen devices \u2013 today over 20% of total PubMed usage happens on mobile platforms \u2013 where users tend to browse results even less.\n\nTo accommodate changing user needs, a number of new features have been added to PubMed in recent years, such as faceted search, query auto-suggest (Lu et al., 2009a) and author name disambiguation (Liu et al., 2014). In this article we describe how we intend to improve PubMed further (in terms of the search quality and also the user interface), and we present our path towards a next-generation system (PubMed 2.0), including a new experimental\u00a0site called PubMed Labs.\n\n## New relevance search algorithm\n\nA new relevance algorithm was recently developed and deployed as one of the sort options in PubMed. It aims to provide the most relevant results and the best quality information within a fraction of a second, in response to a variety of different user information needs. This algorithm is based on a machine learning method called 'learning-to-rank' (Burges et al., 2011; Liu, 2009; Figure 1). The initial input to the learning-to-rank algorithm is the list of results returned by a classic term frequency algorithm (which ranks search results based on the relative frequency with which terms from the search query appear in the title and/or abstract of a record; Lu et al., 2009b; Robertson et al., 1996). We chose learning-to-rank because, in addition to its proven performance, it is capable of integrating a wide variety of different signals from the text record (including term frequencies) in order to return improved ranking results.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28801/elife-28801-fig1-v1.jpg)\n\n**Figure 1.:** (Left) System overview for the Best Match sort option in PubMed. (Right) Users are encouraged to try the Best Match sort option when PubMed detects a query for which the Best Match sort option could yield better results.\n\nIn our ranking model, we combine over 150 distinct signals to find the best results: many of these signals are computed from the number of matches between the search terms and the PubMed record, while others are either specific to a record (for example, publication type, publication date and number of abstract views within the last year) or a search (for example, the length of the query). The new ranking model was trained and tested on benchmarking data obtained from aggregated search logs.\n\nThe new ranking algorithm has been available since April 2017 to those who select the 'Best Match' sort option in PubMed, and users who select this option are 17.4% more likely to click on a link than those who select the default date-order algorithm. This figure is derived by comparing the fraction of queries with at least one article click on the first results page for the new algorithm with the same fraction for the default algorithm.\n\n## PubMed labs and its new interface\n\nIn parallel with these developments we are launching a new experimental site called PubMed Labs (http://www.ncbi.nlm.nih.gov/labs/pubmed) that will allow us to continue our efforts to improve search quality while also working to improve PubMed's user interface: in particular, the interface for PubMed Labs (Figure 2) has been designed to provide an optimized user experience on small-screen devices (such as mobiles and tablets). We are taking a 'minimum viable product' approach in building PubMed Labs by launching it with a small number of core features and making iterative improvements and enhancements based on public testing and feedback. For example, PubMed Labs includes only a small subset of PubMed facets (selected on the basis of past usage in PubMed); decisions about the final set of facets will be based on user input and real-world usage. Other new features that we plan to introduce and analyze on PubMed Labs range from simple font color variations to complex algorithmic adjustments. Based on quantitative analysis of usage patterns, as well as direct user input and feedback, we will iteratively improve and enhance the minimum viable product.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28801/elife-28801-fig2-v1.jpg)\n\n**Figure 2.:** The PubMed Labs interface on a small-screen device (left) and a desktop device (right). The default sort option in PubMed Labs is the Best Match sort option, but it is also possible to sort by date order. Each search result in PubMed Labs has search terms highlighted in the title and/or newly generated snippets, which are automatically extracted from the sentence(s) in the abstract with matching search terms. Other differences in the new interface are also highlighted.\n\n## Outlook\n\nAs in the past, R&D will be key to the success of PubMed 2.0. However, while there has been extensive research into general web searches (e.g. Serdyukov et al., 2013), there has been less published research on usage patterns for online biomedical information resources. However, we do know that there are important differences between the two (Islamaj Dogan et al., 2009; Wilbur et al., 2006; Herskovic et al., 2007; Hersh and Voorhees, 2009). For example, PubMed users are more persistent than general web users when searching. Moreover, author names appear in over 35% of user queries in PubMed, and these names are often ambiguous because different authors share the same name and a given author can publish under multiple names (N\u00e9v\u00e9ol et al., 2011; Islamaj Dogan et al., 2009). This problem is made worse because authors in PubMed are traditionally represented by just their last name and first initial (e.g. Lu Z). To deal with this challenge we recently developed an automated method for author name disambiguation based on machine learning (Liu et al., 2014) and are also planning to make greater use of other related resources such as ORCIDs, regardless whether a publication has an explicit ORCID associated with it or not (most PubMed articles do not).\n\nThe rapid growth of PubMed Central (https://www.ncbi.nlm.nih.gov/pmc/) \u2013 which stores the full text of articles and is growing by more than 1000 articles per day \u2013 also presents opportunities for improving PubMed. In addition to making more content available to users, the availability of the full text (including the text in figures and tables) could lead to improved search if we can develop automated methods for coping with the increased complexity associated with full texts (Cohen et al., 2010). We are also studying the feasibility of using deep-learning technology (Mohan et al., 2017; Severyn and Moschitti, 2015; Mikolov et al., 2013) in large-scale text mining applications.\n\nLooking into the future, we also envision PubMed serving as the central entry point for access to a range of different NCBI literature resources. To this end, we have created a new data structure, known internally as PubOne, to merge documents of different genres (such as PubMed abstracts, full texts from PubMed Central, book chapters and so on) into a single record in order to enable all-in-one access to the biomedical literature. And as we move forward from the minimum viable product, we will continue to assess and incorporate existing features such as MyNCBI into our new system. We also plan to explore if PubMed could use the outputs of various initiatives in open data and alternative metrics to improve search.\n\nThe development of PubMed has benefitted greatly from open-source platforms and technologies (such as the learning-to-rank method we used for relevance search) and from user feedback. In return for the former we would like to make our tools and techniques available to the entire scientific community via source code or web APIs. With regards to user feedback, we encourage our users and the biomedical research community to continue to use PubMed, to experiment with PubMed Labs, and to help us jointly create PubMed 2.0.\n",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ff39e0e5-abb8-456e-9356-27ebb1017f61",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C1",
+      "claim": "PubMed is a search engine for the biomedical literature that provides access to MEDLINE, a database that contains bibliographic information on more than 27 million articles from more than 7,000 journals.",
+      "claim_type": "EXPLICIT",
+      "source": "PubMed is a search engine for the biomedical literature that provides access to MEDLINE, a database that contains bibliographic information on more than 27 million articles from more than 7,000 journals, including full text for some 4 million of these articles (Sayers et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sayers et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "42073df2-f2ec-4ec3-8d4a-c98610a7f828",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C2",
+      "claim": "MEDLINE includes full text for some 4 million articles.",
+      "claim_type": "EXPLICIT",
+      "source": "PubMed is a search engine for the biomedical literature that provides access to MEDLINE, a database that contains bibliographic information on more than 27 million articles from more than 7,000 journals, including full text for some 4 million of these articles (Sayers et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sayers et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "cf3692af-495b-421e-aeef-80b419d096c0",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C3",
+      "claim": "On an average working day approximately 2.5 million users from around the world access PubMed.",
+      "claim_type": "EXPLICIT",
+      "source": "On an average working day approximately 2.5 million users from around the world access PubMed to perform about 3 million searches and 9 million page views.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a factual statistic about PubMed usage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "bc9512b6-3651-45a4-a654-779bc3af326d",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C4",
+      "claim": "PubMed users perform about 3 million searches on an average working day.",
+      "claim_type": "EXPLICIT",
+      "source": "On an average working day approximately 2.5 million users from around the world access PubMed to perform about 3 million searches and 9 million page views.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a factual statistic about PubMed usage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "7a37cae4-234e-46c9-84e1-30c7b6829bda",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C5",
+      "claim": "PubMed generates about 9 million page views on an average working day.",
+      "claim_type": "EXPLICIT",
+      "source": "On an average working day approximately 2.5 million users from around the world access PubMed to perform about 3 million searches and 9 million page views.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a factual statistic about PubMed usage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "17b31675-d0d4-45e2-bace-125a81822ad0",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C6",
+      "claim": "PubMed returns the most recent articles first by default when given a query.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a query, PubMed (http://www.ncbi.nlm.nih.gov/pubmed) returns the most recent articles first by default.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about PubMed's default behavior",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "fc9989c7-9d54-4166-b25e-978eeb2b6d9e",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C7",
+      "claim": "Reverse chronological sort helps users to find the latest articles on a particular topic or by a specific author.",
+      "claim_type": "EXPLICIT",
+      "source": "While this reverse chronological sort helps users to find the latest articles on a particular topic or by a specific author, most PubMed users are accustomed to search engines that sort results by relevance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a benefit of the reverse chronological sort",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "e03b6911-c1bc-4134-9c39-dfe3a2dedaac",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C8",
+      "claim": "Over 80% of PubMed users only browse and click results on the first page.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, over 80% of PubMed users only browse and click results on the first page, which is very similar to the behavior of most web users (Islamaj Dogan et al., 2009), even though more useful (and sometimes still recent) papers may be returned on the second page and beyond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Islamaj Dogan et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "e4bb89f2-407e-4f2a-a8d5-08f021629652",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C9",
+      "claim": "The behavior of PubMed users browsing only the first page is very similar to the behavior of most web users.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, over 80% of PubMed users only browse and click results on the first page, which is very similar to the behavior of most web users (Islamaj Dogan et al., 2009), even though more useful (and sometimes still recent) papers may be returned on the second page and beyond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Islamaj Dogan et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "546bc347-ab65-4d8c-8887-dc7f215d1373",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C10",
+      "claim": "Over 20% of total PubMed usage happens on mobile platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the need for relevance search becomes more critical in light of the growing use of small-screen devices \u2013 today over 20% of total PubMed usage happens on mobile platforms \u2013 where users tend to browse results even less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a current usage statistic",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "1e57e6d1-2e01-4bdc-bced-346849ca1427",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C11",
+      "claim": "Users on mobile platforms tend to browse results even less than desktop users.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the need for relevance search becomes more critical in light of the growing use of small-screen devices \u2013 today over 20% of total PubMed usage happens on mobile platforms \u2013 where users tend to browse results even less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation about mobile user behavior",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "872666d3-9542-4643-824f-b4684cf9b5ce",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C12",
+      "claim": "Faceted search has been added to PubMed in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate changing user needs, a number of new features have been added to PubMed in recent years, such as faceted search, query auto-suggest (Lu et al., 2009a) and author name disambiguation (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Listed as one of the new features added to PubMed",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "ebf9e77e-2c5d-49b2-9b67-3d437af8f26a",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C13",
+      "claim": "Query auto-suggest has been added to PubMed in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate changing user needs, a number of new features have been added to PubMed in recent years, such as faceted search, query auto-suggest (Lu et al., 2009a) and author name disambiguation (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lu et al., 2009a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "9406cfb4-b7df-4b6e-ac5f-cfed2041a08a",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C14",
+      "claim": "Author name disambiguation has been added to PubMed in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate changing user needs, a number of new features have been added to PubMed in recent years, such as faceted search, query auto-suggest (Lu et al., 2009a) and author name disambiguation (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "91baebe5-b6a0-4f6b-9085-66c570a8576e",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C15",
+      "claim": "A new relevance algorithm was recently developed and deployed as one of the sort options in PubMed.",
+      "claim_type": "EXPLICIT",
+      "source": "A new relevance algorithm was recently developed and deployed as one of the sort options in PubMed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the development and deployment of the algorithm",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "7516feb3-cfe1-47a6-a8d8-c541b84683f3",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C16",
+      "claim": "The new relevance algorithm aims to provide the most relevant results and the best quality information within a fraction of a second.",
+      "claim_type": "EXPLICIT",
+      "source": "It aims to provide the most relevant results and the best quality information within a fraction of a second, in response to a variety of different user information needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the goal of the algorithm",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "2ef4aa57-0ca1-448d-a8ef-4e696337f94b",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C17",
+      "claim": "The new relevance algorithm is based on a machine learning method called 'learning-to-rank'.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm is based on a machine learning method called 'learning-to-rank' (Burges et al., 2011; Liu, 2009; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Burges et al., 2011 and Liu, 2009, and illustrated in Figure 1",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "c3fac6ea-3430-4d6b-8af1-d489bb7e65aa",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C18",
+      "claim": "The initial input to the learning-to-rank algorithm is the list of results returned by a classic term frequency algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial input to the learning-to-rank algorithm is the list of results returned by a classic term frequency algorithm (which ranks search results based on the relative frequency with which terms from the search query appear in the title and/or abstract of a record; Lu et al., 2009b; Robertson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the algorithm's input, supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "8334e065-44b7-4392-a19f-8af8af87ecf3",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C19",
+      "claim": "The classic term frequency algorithm ranks search results based on the relative frequency with which terms from the search query appear in the title and/or abstract of a record.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial input to the learning-to-rank algorithm is the list of results returned by a classic term frequency algorithm (which ranks search results based on the relative frequency with which terms from the search query appear in the title and/or abstract of a record; Lu et al., 2009b; Robertson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lu et al., 2009b and Robertson et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "22cc84e9-3ce8-4204-9d99-e416277d47da",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C20",
+      "claim": "Learning-to-rank was chosen because it is capable of integrating a wide variety of different signals from the text record in order to return improved ranking results.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose learning-to-rank because, in addition to its proven performance, it is capable of integrating a wide variety of different signals from the text record (including term frequencies) in order to return improved ranking results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the rationale for choosing learning-to-rank",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "494bc801-07e0-4522-ae22-7cf5791ecf43",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C21",
+      "claim": "Learning-to-rank has proven performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose learning-to-rank because, in addition to its proven performance, it is capable of integrating a wide variety of different signals from the text record (including term frequencies) in order to return improved ranking results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a characteristic of learning-to-rank",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "ec283570-6267-4797-99ea-fbac83b150dd",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C22",
+      "claim": "The ranking model combines over 150 distinct signals to find the best results.",
+      "claim_type": "EXPLICIT",
+      "source": "In our ranking model, we combine over 150 distinct signals to find the best results: many of these signals are computed from the number of matches between the search terms and the PubMed record, while others are either specific to a record (for example, publication type, publication date and number of abstract views within the last year) or a search (for example, the length of the query).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of signals used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "5339fa37-644f-4883-baa1-b99551380d79",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C23",
+      "claim": "Many of the signals in the ranking model are computed from the number of matches between the search terms and the PubMed record.",
+      "claim_type": "EXPLICIT",
+      "source": "In our ranking model, we combine over 150 distinct signals to find the best results: many of these signals are computed from the number of matches between the search terms and the PubMed record, while others are either specific to a record (for example, publication type, publication date and number of abstract views within the last year) or a search (for example, the length of the query).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the types of signals used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "84157f3e-93b5-4e36-8729-0b7cbc700fa5",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C24",
+      "claim": "Some signals in the ranking model are specific to a record, such as publication type, publication date and number of abstract views within the last year.",
+      "claim_type": "EXPLICIT",
+      "source": "In our ranking model, we combine over 150 distinct signals to find the best results: many of these signals are computed from the number of matches between the search terms and the PubMed record, while others are either specific to a record (for example, publication type, publication date and number of abstract views within the last year) or a search (for example, the length of the query).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Examples provided of record-specific signals",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "efa4c944-82e2-4598-a5ff-45c5342cb68c",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C25",
+      "claim": "Some signals in the ranking model are specific to a search, such as the length of the query.",
+      "claim_type": "EXPLICIT",
+      "source": "In our ranking model, we combine over 150 distinct signals to find the best results: many of these signals are computed from the number of matches between the search terms and the PubMed record, while others are either specific to a record (for example, publication type, publication date and number of abstract views within the last year) or a search (for example, the length of the query).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Example provided of search-specific signal",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "f80836bd-1ae0-49b5-a024-e47f7effe202",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C26",
+      "claim": "The new ranking model was trained and tested on benchmarking data obtained from aggregated search logs.",
+      "claim_type": "EXPLICIT",
+      "source": "The new ranking model was trained and tested on benchmarking data obtained from aggregated search logs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the training and testing methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "069ae653-0ffa-4721-bf34-081ba19e842c",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C27",
+      "claim": "The new ranking algorithm has been available since April 2017 to those who select the 'Best Match' sort option in PubMed.",
+      "claim_type": "EXPLICIT",
+      "source": "The new ranking algorithm has been available since April 2017 to those who select the 'Best Match' sort option in PubMed, and users who select this option are 17.4% more likely to click on a link than those who select the default date-order algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the availability date",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "23ee9838-80a7-4964-aa5c-12913aa2a5ca",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C28",
+      "claim": "Users who select the 'Best Match' sort option are 17.4% more likely to click on a link than those who select the default date-order algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The new ranking algorithm has been available since April 2017 to those who select the 'Best Match' sort option in PubMed, and users who select this option are 17.4% more likely to click on a link than those who select the default date-order algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a measured outcome comparing the two algorithms",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "bf2c3fce-b69f-4f1e-90e9-799b48fc96cb",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C29",
+      "claim": "The 17.4% increase in click likelihood is derived by comparing the fraction of queries with at least one article click on the first results page for the new algorithm with the same fraction for the default algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "This figure is derived by comparing the fraction of queries with at least one article click on the first results page for the new algorithm with the same fraction for the default algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of how the 17.4% figure was calculated",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "c0c794a2-a5d9-40ad-b234-b7d43adf88a0",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C30",
+      "claim": "A new experimental site called PubMed Labs has been launched.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with these developments we are launching a new experimental site called PubMed Labs (http://www.ncbi.nlm.nih.gov/labs/pubmed) that will allow us to continue our efforts to improve search quality while also working to improve PubMed's user interface: in particular, the interface for PubMed Labs (Figure 2) has been designed to provide an optimized user experience on small-screen devices (such as mobiles and tablets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the launch of PubMed Labs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "3baa93fb-5f36-43cf-b2de-bba26a693530",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C31",
+      "claim": "The interface for PubMed Labs has been designed to provide an optimized user experience on small-screen devices such as mobiles and tablets.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with these developments we are launching a new experimental site called PubMed Labs (http://www.ncbi.nlm.nih.gov/labs/pubmed) that will allow us to continue our efforts to improve search quality while also working to improve PubMed's user interface: in particular, the interface for PubMed Labs (Figure 2) has been designed to provide an optimized user experience on small-screen devices (such as mobiles and tablets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about the design goal, illustrated in Figure 2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "e1e0779a-6191-4db7-b585-7e247b2db25b",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C32",
+      "claim": "A 'minimum viable product' approach is being taken in building PubMed Labs by launching it with a small number of core features and making iterative improvements based on public testing and feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "We are taking a 'minimum viable product' approach in building PubMed Labs by launching it with a small number of core features and making iterative improvements and enhancements based on public testing and feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the development approach",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "4f833a04-d523-416c-b162-1293d03b6298",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C33",
+      "claim": "PubMed Labs includes only a small subset of PubMed facets selected on the basis of past usage in PubMed.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PubMed Labs includes only a small subset of PubMed facets (selected on the basis of past usage in PubMed); decisions about the final set of facets will be based on user input and real-world usage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the facets included in PubMed Labs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "72c76630-5d39-4a9f-840f-fa0266a677c2",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C34",
+      "claim": "Decisions about the final set of facets in PubMed Labs will be based on user input and real-world usage.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PubMed Labs includes only a small subset of PubMed facets (selected on the basis of past usage in PubMed); decisions about the final set of facets will be based on user input and real-world usage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the plan for determining the final facet set",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "2e4f18ad-8861-4aaf-ae1c-f9307bfa6c1c",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C35",
+      "claim": "New features planned for PubMed Labs range from simple font color variations to complex algorithmic adjustments.",
+      "claim_type": "EXPLICIT",
+      "source": "Other new features that we plan to introduce and analyze on PubMed Labs range from simple font color variations to complex algorithmic adjustments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about planned features",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "3880c171-8b8e-4050-b4e1-11cdbb967a54",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C36",
+      "claim": "PubMed Labs will be iteratively improved based on quantitative analysis of usage patterns, as well as direct user input and feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on quantitative analysis of usage patterns, as well as direct user input and feedback, we will iteratively improve and enhance the minimum viable product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the plan for improving PubMed Labs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "1d575d75-4ab7-4c34-a5ff-43dd1e8201c2",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C37",
+      "claim": "There has been extensive research into general web searches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while there has been extensive research into general web searches (e.g. Serdyukov et al., 2013), there has been less published research on usage patterns for online biomedical information resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Serdyukov et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "c73d9b65-fa85-4303-a816-e4e17a66d16d",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C38",
+      "claim": "There has been less published research on usage patterns for online biomedical information resources compared to general web searches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while there has been extensive research into general web searches (e.g. Serdyukov et al., 2013), there has been less published research on usage patterns for online biomedical information resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between research areas",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "b6154c56-d504-4ca5-864c-73b499f9d524",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C39",
+      "claim": "There are important differences between general web searches and biomedical information searches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do know that there are important differences between the two (Islamaj Dogan et al., 2009; Wilbur et al., 2006; Herskovic et al., 2007; Hersh and Voorhees, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "afe7ac42-655e-4b8c-a31b-495bf5dca373",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C40",
+      "claim": "PubMed users are more persistent than general web users when searching.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PubMed users are more persistent than general web users when searching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an example of differences between PubMed and general web users",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "748becdf-d6dc-45ef-b9db-7407a09a22c9",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C41",
+      "claim": "Author names appear in over 35% of user queries in PubMed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, author names appear in over 35% of user queries in PubMed, and these names are often ambiguous because different authors share the same name and a given author can publish under multiple names (N\u00e9v\u00e9ol et al., 2011; Islamaj Dogan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a usage statistic",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "7836f4e6-ae8a-46a5-ac8c-a247be0a6320",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C42",
+      "claim": "Author names in PubMed queries are often ambiguous because different authors share the same name and a given author can publish under multiple names.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, author names appear in over 35% of user queries in PubMed, and these names are often ambiguous because different authors share the same name and a given author can publish under multiple names (N\u00e9v\u00e9ol et al., 2011; Islamaj Dogan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to N\u00e9v\u00e9ol et al., 2011 and Islamaj Dogan et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "c49c44df-50a6-4912-9f26-66e7601950f7",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C43",
+      "claim": "Authors in PubMed are traditionally represented by just their last name and first initial.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is made worse because authors in PubMed are traditionally represented by just their last name and first initial (e.g. Lu Z).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about how authors are represented in PubMed",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "1c221033-fb74-4fac-b772-960872aac1ca",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C44",
+      "claim": "An automated method for author name disambiguation based on machine learning was recently developed.",
+      "claim_type": "EXPLICIT",
+      "source": "To deal with this challenge we recently developed an automated method for author name disambiguation based on machine learning (Liu et al., 2014) and are also planning to make greater use of other related resources such as ORCIDs, regardless whether a publication has an explicit ORCID associated with it or not (most PubMed articles do not).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "77cdb389-90b5-4ade-802c-b31f1cebb88c",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C45",
+      "claim": "Most PubMed articles do not have an explicit ORCID associated with them.",
+      "claim_type": "EXPLICIT",
+      "source": "To deal with this challenge we recently developed an automated method for author name disambiguation based on machine learning (Liu et al., 2014) and are also planning to make greater use of other related resources such as ORCIDs, regardless whether a publication has an explicit ORCID associated with it or not (most PubMed articles do not).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about ORCID coverage in PubMed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "d25ba3f9-84e8-4c3b-8b73-5f82943bf556",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C46",
+      "claim": "PubMed Central is growing by more than 1000 articles per day.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid growth of PubMed Central (https://www.ncbi.nlm.nih.gov/pmc/) \u2013 which stores the full text of articles and is growing by more than 1000 articles per day \u2013 also presents opportunities for improving PubMed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a growth statistic for PubMed Central",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "eba6efc3-9208-4cc1-bcd2-90aeb222fe00",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C47",
+      "claim": "PubMed Central stores the full text of articles.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid growth of PubMed Central (https://www.ncbi.nlm.nih.gov/pmc/) \u2013 which stores the full text of articles and is growing by more than 1000 articles per day \u2013 also presents opportunities for improving PubMed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about what PubMed Central stores",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "48199996-3232-4c89-9090-9aa25925260e",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C48",
+      "claim": "The availability of full text including text in figures and tables could lead to improved search if automated methods for coping with the increased complexity associated with full texts can be developed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to making more content available to users, the availability of the full text (including the text in figures and tables) could lead to improved search if we can develop automated methods for coping with the increased complexity associated with full texts (Cohen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen et al., 2010",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "898a62b1-adc3-40a6-86cb-89cf2ecfb928",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C49",
+      "claim": "The feasibility of using deep-learning technology in large-scale text mining applications is being studied.",
+      "claim_type": "EXPLICIT",
+      "source": "We are also studying the feasibility of using deep-learning technology (Mohan et al., 2017; Severyn and Moschitti, 2015; Mikolov et al., 2013) in large-scale text mining applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mohan et al., 2017; Severyn and Moschitti, 2015; Mikolov et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "d8ed2ea6-1e6c-4b2d-a83d-6e35bf5d315b",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C50",
+      "claim": "PubMed is envisioned to serve as the central entry point for access to a range of different NCBI literature resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking into the future, we also envision PubMed serving as the central entry point for access to a range of different NCBI literature resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a future vision",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "6cb95e37-045b-4009-9471-f58ef54232a1",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C51",
+      "claim": "A new data structure known internally as PubOne has been created to merge documents of different genres into a single record.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have created a new data structure, known internally as PubOne, to merge documents of different genres (such as PubMed abstracts, full texts from PubMed Central, book chapters and so on) into a single record in order to enable all-in-one access to the biomedical literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the creation of PubOne",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "3908a048-87f2-4099-ba4a-7ed386ac95eb",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C52",
+      "claim": "PubOne merges documents such as PubMed abstracts, full texts from PubMed Central, and book chapters into a single record.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have created a new data structure, known internally as PubOne, to merge documents of different genres (such as PubMed abstracts, full texts from PubMed Central, book chapters and so on) into a single record in order to enable all-in-one access to the biomedical literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Examples provided of document types merged by PubOne",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "2dcf8457-93e1-471e-b09b-88c13b90b926",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C53",
+      "claim": "PubOne aims to enable all-in-one access to the biomedical literature.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have created a new data structure, known internally as PubOne, to merge documents of different genres (such as PubMed abstracts, full texts from PubMed Central, book chapters and so on) into a single record in order to enable all-in-one access to the biomedical literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the purpose of PubOne",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "e685ca60-19bd-4e39-aaf9-9f331316f9d4",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C54",
+      "claim": "Existing features such as MyNCBI will be assessed and incorporated into the new system as it moves forward from the minimum viable product.",
+      "claim_type": "EXPLICIT",
+      "source": "And as we move forward from the minimum viable product, we will continue to assess and incorporate existing features such as MyNCBI into our new system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a plan for future development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "64539a4d-5962-4776-af96-157e6634eb12",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C55",
+      "claim": "There are plans to explore if PubMed could use the outputs of various initiatives in open data and alternative metrics to improve search.",
+      "claim_type": "EXPLICIT",
+      "source": "We also plan to explore if PubMed could use the outputs of various initiatives in open data and alternative metrics to improve search.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a future plan",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "72ab3257-a079-40c3-ab60-01ebc9326a2c",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C56",
+      "claim": "The development of PubMed has benefitted greatly from open-source platforms and technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of PubMed has benefitted greatly from open-source platforms and technologies (such as the learning-to-rank method we used for relevance search) and from user feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about benefits to PubMed development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "c495cdc8-45be-4e7c-909a-12b0acfed208",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C57",
+      "claim": "The development of PubMed has benefitted greatly from user feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of PubMed has benefitted greatly from open-source platforms and technologies (such as the learning-to-rank method we used for relevance search) and from user feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about benefits to PubMed development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "14adb4a8-43fa-41e7-a4e4-f0064020cca1",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C58",
+      "claim": "The learning-to-rank method used for relevance search is an example of an open-source technology that benefitted PubMed development.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of PubMed has benefitted greatly from open-source platforms and technologies (such as the learning-to-rank method we used for relevance search) and from user feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Provided as an example of open-source technology used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "91042109-037b-460f-a6a7-ee699c90cd53",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C59",
+      "claim": "There are plans to make PubMed tools and techniques available to the entire scientific community via source code or web APIs.",
+      "claim_type": "EXPLICIT",
+      "source": "In return for the former we would like to make our tools and techniques available to the entire scientific community via source code or web APIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a future plan",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "0a270a56-9010-4421-a675-1193fb01c5dc",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C60",
+      "claim": "The default sort option in PubMed Labs is the Best Match sort option.",
+      "claim_type": "EXPLICIT",
+      "source": "The default sort option in PubMed Labs is the Best Match sort option, but it is also possible to sort by date order.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about the default sort option, shown in Figure 2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "8a145f6b-73fa-4d22-b50a-613d661f508f",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C61",
+      "claim": "It is possible to sort by date order in PubMed Labs.",
+      "claim_type": "EXPLICIT",
+      "source": "The default sort option in PubMed Labs is the Best Match sort option, but it is also possible to sort by date order.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about sorting options, shown in Figure 2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "07692b96-0a30-417c-8d7a-237b7be433bc",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C62",
+      "claim": "Each search result in PubMed Labs has search terms highlighted in the title and/or newly generated snippets.",
+      "claim_type": "EXPLICIT",
+      "source": "Each search result in PubMed Labs has search terms highlighted in the title and/or newly generated snippets, which are automatically extracted from the sentence(s) in the abstract with matching search terms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about search result display, illustrated in Figure 2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "01d58d04-041a-438e-8a7a-ed0f6d980175",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C63",
+      "claim": "Snippets in PubMed Labs are automatically extracted from the sentence(s) in the abstract with matching search terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Each search result in PubMed Labs has search terms highlighted in the title and/or newly generated snippets, which are automatically extracted from the sentence(s) in the abstract with matching search terms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about how snippets are generated, illustrated in Figure 2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "c293b389-f7c2-4ee9-9287-eeaf96854607",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C64",
+      "claim": "The learning-to-rank algorithm uses anonymous PubMed search logs as training data.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1 shows 'Anonymous PubMed search logs' as input to 'Training data' which feeds into the 'Learning-to-rank algorithm'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "3164458d-68b2-4a1e-bfc2-e51be9b418b0",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C65",
+      "claim": "The learning-to-rank algorithm produces a Best Match ranking model.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1 shows the learning-to-rank algorithm outputting to 'Best Match ranking model'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "f4fae067-c2b6-4bcb-a1db-c84842184e72",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C66",
+      "claim": "The index returns the top 500 articles by relative term frequency.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1 shows 'Top 500 returned articles by relative term frequency' as output from the Index",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "0ab56a83-b847-48de-961f-a01ef2c84011",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "claim_id": "C67",
+      "claim": "PubMed detects queries for which the Best Match sort option could yield better results and encourages users to try it.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Figure 1 shows a notification box stating 'Best matches for otitis media treatment' with a button to 'Switch to our new best match sort order'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A new relevance search algorithm for PubMed was developed using learning-to-rank methodology, combining over 150 distinct signals including term frequency matches, record-specific features (publication type, date, abstract views), and search-specific features (query length). The algorithm was trained on benchmarking data from aggregated search logs and uses the top 500 articles from a classic term frequency algorithm as initial input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C26 and C64-C66 provide consistent technical details about the algorithm architecture, training methodology, and feature engineering. The use of learning-to-rank is well-established in information retrieval (C17, C21), and the description of 150+ signals with specific examples (C22-C25) demonstrates methodological rigor. The training approach using search logs (C26, C64) is appropriate for this application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "55c0c316-b0c8-45bc-a7ff-987ccb5b7e2c",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Best Match algorithm was deployed in April 2017 and shows a 17.4% improvement in user engagement, measured as the increased likelihood of users clicking on at least one article on the first results page compared to the default date-order algorithm. PubMed also detects queries where Best Match could yield better results and encourages users to try it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C28 reports a specific 17.4% improvement with a clear definition of the metric (C29), critical details are missing: no confidence intervals, sample sizes, statistical significance tests, or time period for data collection are provided. The metric (fraction of queries with at least one click) is reasonable but limited\u2014it doesn't assess whether users found the *most* relevant articles or required fewer clicks. The claim would be strengthened by reporting multiple metrics (e.g., mean reciprocal rank, normalized discounted cumulative gain) and statistical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "13024791-2272-4a61-b86b-1c2b0507d2c6",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PubMed Labs was launched as an experimental platform using a minimum viable product approach, featuring a mobile-optimized interface with Best Match as the default sort option, highlighted search terms in titles and auto-generated snippets from abstracts, and a reduced set of facets selected based on prior usage patterns. The platform will be iteratively improved based on user feedback and usage analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 and C60-C63 consistently describe the launch, design philosophy, and key features of PubMed Labs. The minimum viable product approach (C32) is a recognized development methodology. Specific features like snippet generation (C62-C63), mobile optimization (C31), and the iterative improvement plan (C36) are clearly stated. However, this is primarily a descriptive result about system deployment rather than an evaluation of effectiveness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PubMed provides access to MEDLINE's 27+ million articles from 7,000+ journals (including 4 million full texts), serves 2.5 million daily users performing 3 million searches and 9 million page views. Over 80% of users browse only the first page of results (similar to general web users), and over 20% of usage occurs on mobile platforms where users browse even less.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide consistent usage statistics with appropriate citations (C1, C2, C8, C9). The behavioral observation about first-page browsing (C8) is supported by citation to Islamaj Dogan et al., 2009, and the comparison to general web behavior (C9) is reasonable. The mobile usage statistic (C10) and inference about reduced browsing on mobile (C11) are plausible given the timeframe (2017) and general trends in mobile usage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "e0a0758f-c870-4f15-89c5-29dd8029d67c",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Author names appear in over 35% of PubMed queries and are often ambiguous due to name sharing and variation, compounded by PubMed's traditional representation using only last name and first initial. An automated machine learning-based disambiguation method was developed to address this challenge, though most PubMed articles lack explicit ORCID associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 identify a legitimate problem in biomedical search with appropriate citations (C42, C44). The 35% statistic (C41) quantifies the problem's scope, and the description of ambiguity sources (C42-C43) is accurate. The development of a disambiguation method (C44) is supported by citation to Liu et al., 2014. However, no performance metrics for the disambiguation system are provided in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "68032094-882b-4943-8351-ed21180b7645",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Recent features added to PubMed include faceted search, query auto-suggest, and author name disambiguation to accommodate changing user needs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 list implemented features with appropriate citations for query auto-suggest (C13, Lu et al., 2009a) and author name disambiguation (C14, Liu et al., 2014). These are factual statements about system enhancements that provide context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "f2f5abac-8b64-4fb2-aa75-36dd110643bb",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Research on biomedical information search patterns is less extensive than general web search research, though important differences exist between the two domains. PubMed users demonstrate greater persistence in searching compared to general web users.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 establish the research context with appropriate citations. The comparison between research areas (C37-C38) is supported by Serdyukov et al., 2013, and the identification of differences (C39) cites multiple studies. The specific example of user persistence (C40) illustrates these differences, though no quantitative data is provided in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "34520660-82db-48a7-8f09-4ae2a41202af",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PubMed Central is growing by over 1,000 articles daily, and the availability of full text (including figures and tables) could enable improved search if automated methods can handle the increased complexity. The feasibility of using deep-learning technology for large-scale text mining is being studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C47 provide factual information about PubMed Central's growth and content. However, C48 is explicitly conditional ('could lead to improved search if we can develop...') and C49 describes ongoing feasibility studies without results. These represent opportunities and research directions rather than completed findings. The potential benefits are speculative pending successful method development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "8b7af06e-5772-4dbf-a705-7520ea6b7b45",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Future plans for PubMed include serving as a central entry point for NCBI literature resources through a new PubOne data structure that merges different document types (abstracts, full texts, book chapters) into single records, incorporating existing features like MyNCBI, and exploring the use of open data and alternative metrics to improve search.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 clearly describe future plans and vision. While C51-C53 indicate that PubOne has been created, the other claims (C50, C54, C55) are explicitly framed as future work ('envision,' 'will continue,' 'plan to explore'). These are well-articulated development goals rather than completed results, appropriately presented as forward-looking statements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    },
+    {
+      "id": "5734ff69-b38e-4c0a-8c8c-a08b25731157",
+      "content_id": "e427e39b-fc3a-43ee-82de-c9b4fd1e0ac2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PubMed development has benefited from open-source technologies (including the learning-to-rank method) and user feedback, and there are plans to reciprocate by making PubMed tools and techniques available to the scientific community via source code or web APIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 acknowledge the role of open-source resources and user feedback in PubMed's development, with learning-to-rank provided as a specific example (C58). Claim C59 states an intention to share tools with the community. These are straightforward statements about development philosophy and future plans that are consistent with open science principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:47:40.894542Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "91baebe5-b6a0-4f6b-9085-66c570a8576e",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "7516feb3-cfe1-47a6-a8d8-c541b84683f3",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "2ef4aa57-0ca1-448d-a8ef-4e696337f94b",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "c3fac6ea-3430-4d6b-8af1-d489bb7e65aa",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "8334e065-44b7-4392-a19f-8af8af87ecf3",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "22cc84e9-3ce8-4204-9d99-e416277d47da",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "494bc801-07e0-4522-ae22-7cf5791ecf43",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "ec283570-6267-4797-99ea-fbac83b150dd",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "5339fa37-644f-4883-baa1-b99551380d79",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "84157f3e-93b5-4e36-8729-0b7cbc700fa5",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "efa4c944-82e2-4598-a5ff-45c5342cb68c",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "f80836bd-1ae0-49b5-a024-e47f7effe202",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "c293b389-f7c2-4ee9-9287-eeaf96854607",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "3164458d-68b2-4a1e-bfc2-e51be9b418b0",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "f4fae067-c2b6-4bcb-a1db-c84842184e72",
+      "result_id": "911bcdf7-23c1-4ca8-8710-b74d23b55f46"
+    },
+    {
+      "claim_id": "069ae653-0ffa-4721-bf34-081ba19e842c",
+      "result_id": "55c0c316-b0c8-45bc-a7ff-987ccb5b7e2c"
+    },
+    {
+      "claim_id": "23ee9838-80a7-4964-aa5c-12913aa2a5ca",
+      "result_id": "55c0c316-b0c8-45bc-a7ff-987ccb5b7e2c"
+    },
+    {
+      "claim_id": "bf2c3fce-b69f-4f1e-90e9-799b48fc96cb",
+      "result_id": "55c0c316-b0c8-45bc-a7ff-987ccb5b7e2c"
+    },
+    {
+      "claim_id": "0ab56a83-b847-48de-961f-a01ef2c84011",
+      "result_id": "55c0c316-b0c8-45bc-a7ff-987ccb5b7e2c"
+    },
+    {
+      "claim_id": "c0c794a2-a5d9-40ad-b234-b7d43adf88a0",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "3baa93fb-5f36-43cf-b2de-bba26a693530",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "e1e0779a-6191-4db7-b585-7e247b2db25b",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "4f833a04-d523-416c-b162-1293d03b6298",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "72c76630-5d39-4a9f-840f-fa0266a677c2",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "2e4f18ad-8861-4aaf-ae1c-f9307bfa6c1c",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "3880c171-8b8e-4050-b4e1-11cdbb967a54",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "0a270a56-9010-4421-a675-1193fb01c5dc",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "8a145f6b-73fa-4d22-b50a-613d661f508f",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "07692b96-0a30-417c-8d7a-237b7be433bc",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "01d58d04-041a-438e-8a7a-ed0f6d980175",
+      "result_id": "13024791-2272-4a61-b86b-1c2b0507d2c6"
+    },
+    {
+      "claim_id": "ff39e0e5-abb8-456e-9356-27ebb1017f61",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "42073df2-f2ec-4ec3-8d4a-c98610a7f828",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "cf3692af-495b-421e-aeef-80b419d096c0",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "bc9512b6-3651-45a4-a654-779bc3af326d",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "7a37cae4-234e-46c9-84e1-30c7b6829bda",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "17b31675-d0d4-45e2-bace-125a81822ad0",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "fc9989c7-9d54-4166-b25e-978eeb2b6d9e",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "e03b6911-c1bc-4134-9c39-dfe3a2dedaac",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "e4bb89f2-407e-4f2a-a8d5-08f021629652",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "546bc347-ab65-4d8c-8887-dc7f215d1373",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "1e57e6d1-2e01-4bdc-bced-346849ca1427",
+      "result_id": "6d4783f0-bb19-4349-9f2e-1413567ff3fb"
+    },
+    {
+      "claim_id": "748becdf-d6dc-45ef-b9db-7407a09a22c9",
+      "result_id": "e0a0758f-c870-4f15-89c5-29dd8029d67c"
+    },
+    {
+      "claim_id": "7836f4e6-ae8a-46a5-ac8c-a247be0a6320",
+      "result_id": "e0a0758f-c870-4f15-89c5-29dd8029d67c"
+    },
+    {
+      "claim_id": "c49c44df-50a6-4912-9f26-66e7601950f7",
+      "result_id": "e0a0758f-c870-4f15-89c5-29dd8029d67c"
+    },
+    {
+      "claim_id": "1c221033-fb74-4fac-b772-960872aac1ca",
+      "result_id": "e0a0758f-c870-4f15-89c5-29dd8029d67c"
+    },
+    {
+      "claim_id": "77cdb389-90b5-4ade-802c-b31f1cebb88c",
+      "result_id": "e0a0758f-c870-4f15-89c5-29dd8029d67c"
+    },
+    {
+      "claim_id": "872666d3-9542-4643-824f-b4684cf9b5ce",
+      "result_id": "68032094-882b-4943-8351-ed21180b7645"
+    },
+    {
+      "claim_id": "ebf9e77e-2c5d-49b2-9b67-3d437af8f26a",
+      "result_id": "68032094-882b-4943-8351-ed21180b7645"
+    },
+    {
+      "claim_id": "9406cfb4-b7df-4b6e-ac5f-cfed2041a08a",
+      "result_id": "68032094-882b-4943-8351-ed21180b7645"
+    },
+    {
+      "claim_id": "1d575d75-4ab7-4c34-a5ff-43dd1e8201c2",
+      "result_id": "f2f5abac-8b64-4fb2-aa75-36dd110643bb"
+    },
+    {
+      "claim_id": "c73d9b65-fa85-4303-a816-e4e17a66d16d",
+      "result_id": "f2f5abac-8b64-4fb2-aa75-36dd110643bb"
+    },
+    {
+      "claim_id": "b6154c56-d504-4ca5-864c-73b499f9d524",
+      "result_id": "f2f5abac-8b64-4fb2-aa75-36dd110643bb"
+    },
+    {
+      "claim_id": "afe7ac42-655e-4b8c-a31b-495bf5dca373",
+      "result_id": "f2f5abac-8b64-4fb2-aa75-36dd110643bb"
+    },
+    {
+      "claim_id": "d25ba3f9-84e8-4c3b-8b73-5f82943bf556",
+      "result_id": "34520660-82db-48a7-8f09-4ae2a41202af"
+    },
+    {
+      "claim_id": "eba6efc3-9208-4cc1-bcd2-90aeb222fe00",
+      "result_id": "34520660-82db-48a7-8f09-4ae2a41202af"
+    },
+    {
+      "claim_id": "48199996-3232-4c89-9090-9aa25925260e",
+      "result_id": "34520660-82db-48a7-8f09-4ae2a41202af"
+    },
+    {
+      "claim_id": "898a62b1-adc3-40a6-86cb-89cf2ecfb928",
+      "result_id": "34520660-82db-48a7-8f09-4ae2a41202af"
+    },
+    {
+      "claim_id": "d8ed2ea6-1e6c-4b2d-a83d-6e35bf5d315b",
+      "result_id": "8b7af06e-5772-4dbf-a705-7520ea6b7b45"
+    },
+    {
+      "claim_id": "6cb95e37-045b-4009-9471-f58ef54232a1",
+      "result_id": "8b7af06e-5772-4dbf-a705-7520ea6b7b45"
+    },
+    {
+      "claim_id": "3908a048-87f2-4099-ba4a-7ed386ac95eb",
+      "result_id": "8b7af06e-5772-4dbf-a705-7520ea6b7b45"
+    },
+    {
+      "claim_id": "2dcf8457-93e1-471e-b09b-88c13b90b926",
+      "result_id": "8b7af06e-5772-4dbf-a705-7520ea6b7b45"
+    },
+    {
+      "claim_id": "e685ca60-19bd-4e39-aaf9-9f331316f9d4",
+      "result_id": "8b7af06e-5772-4dbf-a705-7520ea6b7b45"
+    },
+    {
+      "claim_id": "64539a4d-5962-4776-af96-157e6634eb12",
+      "result_id": "8b7af06e-5772-4dbf-a705-7520ea6b7b45"
+    },
+    {
+      "claim_id": "72ab3257-a079-40c3-ab60-01ebc9326a2c",
+      "result_id": "5734ff69-b38e-4c0a-8c8c-a08b25731157"
+    },
+    {
+      "claim_id": "c495cdc8-45be-4e7c-909a-12b0acfed208",
+      "result_id": "5734ff69-b38e-4c0a-8c8c-a08b25731157"
+    },
+    {
+      "claim_id": "14adb4a8-43fa-41e7-a4e4-f0064020cca1",
+      "result_id": "5734ff69-b38e-4c0a-8c8c-a08b25731157"
+    },
+    {
+      "claim_id": "91042109-037b-460f-a6a7-ee699c90cd53",
+      "result_id": "5734ff69-b38e-4c0a-8c8c-a08b25731157"
+    }
+  ],
+  "comparisons": []
+}

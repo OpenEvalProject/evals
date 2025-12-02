@@ -1,0 +1,172 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C31",
+      "C32"
+    ],
+    "result": "Temporal correlations in neuronal firing rates lead to erroneous identification of action-value neurons. The authors demonstrate through simulations and reanalysis of experimental data (motor cortex, auditory cortex, and basal ganglia) that neurons with temporally correlated activity unrelated to action-values are misclassified as action-value neurons at rates (23-43%) comparable to those reported in the striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C16 provide converging evidence from multiple datasets showing that temporal correlations produce false positives at rates matching published striatal findings. The statistical foundation (C31-C32) is well-established. The simulations with random-walk neurons and reanalysis of unrelated recordings provide strong support for this confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Policy neurons (representing choice probability) are erroneously classified as action-value neurons. Using a direct-policy REINFORCE learning model that does not compute action-values, the authors show that 38% of policy neurons are misclassified as action-value neurons, and this misclassification persists (36%) even when choice is included as a regressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 demonstrate through simulation that policy representation can be confused with action-value representation. The use of a learning model that explicitly does not compute action-values (C20-C22) provides strong evidence. The persistence of misclassification when using standard controls (C25) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A permutation test solution reduces false positives from temporal correlations. The permutation analysis correctly identifies 29% of true action-value neurons while reducing false positives to chance levels (~10%) for random-walk neurons. When applied to basal ganglia data from Ito and Doya (2009), only 3.6% of neurons are classified as action-value neurons, compared to 32% using standard analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 show that the permutation test addresses the temporal correlations confound. The method successfully distinguishes true action-value neurons from random-walk neurons (C17-C18), and the dramatic reduction in classified neurons in real data (C19) suggests previous findings may have been false positives. However, the method has reduced sensitivity (29% vs 42% detection rate).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A trial-design experiment with regression on sum and difference of reward probabilities addresses both confounds. This approach correctly identifies 32% of action-value neurons while reducing false positives to near-chance levels (0.2% for random-walk neurons, 5% for policy neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 demonstrate that the proposed solution addresses both temporal correlations (C26-C27) and policy confounds (C28-C30). The trial-design with randomized reward probabilities eliminates temporal structure in predictors, and regression on orthogonal variables (sum and difference) distinguishes action-value from policy representation. The low false positive rates support the method's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C40",
+      "C5"
+    ],
+    "result": "All previous studies claiming action-value representation in the striatum are subject to at least one of the two confounds. The authors conclude that the prevailing belief that striatal neurons encode action-values must await new experiments and analyses that address these confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C40 represent the main conclusion based on systematic literature review (C41-C42) and comprehensive reanalysis. The authors demonstrate that all 22 identified papers are susceptible to temporal correlations confound, policy confound, or both. This is a strong claim supported by the extensive analyses presented, though it relies on the validity of the confounds demonstrated in other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Standard regression analysis on simulated Q-learning action-value neurons identifies 42% as action-value neurons, with only 2% showing significant correlation with both action-values. This establishes baseline performance of standard methods on ground-truth data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 describe validation simulations showing that standard methods can detect true action-value neurons. The Q-learning model successfully learns (C7), and the detection rates (C8-C9) establish expected performance. This provides necessary context for evaluating false positive rates in subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C1",
+      "C36"
+    ],
+    "result": "The prevailing belief in the field is that striatal neurons represent action-values during economic decisions, with 10-40% of striatal neurons reported to represent action-values. The striatum is well-documented to be involved in operant learning and decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, and C36 establish the scientific context and motivation for the study. These are well-supported by the literature review (C41-C42) and extensive citations. This contextualizes why identifying confounds in action-value detection is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C35"
+    ],
+    "result": "Standard statistical analyses assume trial independence, but striatal neurons show temporal correlations. The significance threshold (t=2) used in standard analyses assumes trials are independent, and previous studies have reported that dorsal-striatal neurons' firing rates change slowly over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C35 establish the statistical foundation for the temporal correlations confound. C12 states the assumption underlying standard tests, and C35 provides empirical evidence that this assumption is violated in striatal recordings. These claims are well-supported by citations and statistical theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C38",
+      "C39"
+    ],
+    "result": "Action-value representation has been reported outside the striatum, some studies suggest striatal activity is more consistent with direct-policy learning, and one study found that dorsal striatum lesions do not impair action-value learning. These findings suggest alternative interpretations of striatal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C38-C39 summarize literature that either extends action-value findings beyond striatum or challenges the action-value hypothesis. These are straightforward literature summaries supported by citations. They provide context for why the field should be open to alternative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "A systematic literature search identified 22 papers that directly related neural activity in the striatum to action-values. The search used keywords 'action-value' and 'striatum' across three databases, returning 43, 21, and 980 results respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe the methodology and results of the literature search. The search strategy is clearly described and the numbers are specific. This provides the foundation for the comprehensive evaluation of previous studies (C37).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Methodological details for simulations and experimental datasets. Spike counts were drawn from Poisson distributions, various exclusion criteria were applied, and specific datasets from motor cortex, auditory cortex, and basal ganglia were used with detailed specifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C56 provide methodological details necessary for reproducibility. These are straightforward descriptions of simulation parameters, data sources, and analysis procedures. The specificity and clarity support reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "P. aeruginosa specifically represses Arabidopsis seed germination through a diffusible germination repressive activity (GRA). Unlike other Pseudomonas species tested (P. fluorescens, P. putida, P. syringae) and E. coli, P. aeruginosa strains PAO1 and PA14 strongly inhibit germination in a distance-dependent manner that requires germination medium for diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 provide direct experimental evidence from Figure 1 showing species-specific germination repression, distance-dependent effects, and requirement for germination medium. The conclusion (C10) that P. aeruginosa releases a diffusible GRA is a reasonable inference from these observations. Multiple replicates and appropriate controls strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The GRA released by P. aeruginosa represses germination through DELLA-dependent accumulation of the ABA signaling repressor ABI5. Mutant seeds lacking DELLA factors or deficient in ABA synthesis/signaling show higher germination percentages when exposed to P. aeruginosa, and WT seeds maintain persistent RGL2 and ABI5 accumulation while \u0394della seeds do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide strong genetic evidence from Figures 2A-D using multiple mutant lines with appropriate controls. The protein gel blot analyses show persistent accumulation of RGL2 and ABI5 in WT but not \u0394della seeds. Statistical analysis with multiple replicates supports the conclusions. The inference in C17 is well-supported by the data and consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The GRA elicits DELLA-dependent germination arrest in a GA-independent manner. Exogenous GA does not rescue germination in seeds exposed to P. aeruginosa extracts despite promoting germination in PAC-treated seeds. RNAseq analysis reveals that P. aeruginosa extracts induce expression changes in 87 DELLA-dependent genes, with 24 genes showing GA-independent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide clear experimental evidence from Figure 3A-B showing differential GA responsiveness. The RNAseq data (C25-C30) with appropriate biological replicates and statistical thresholds (FDR < 0.05, 2-fold change) support the transcriptional analysis. The conclusion (C31) of GA-independent DELLA-dependent responses is well-supported, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "GRA release by P. aeruginosa depends on quorum sensing activity, particularly the IQS system controlled by the ambABCDE operon. Mutants lacking ambE or lasI/rhlI show markedly lower GRA, while AMBox overexpression strains show higher GRA. P. aeruginosa is the only Pseudomonas species tested with the IQS QS system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide experimental evidence from Figure 4A-B and supplements using multiple mutant strains. The genetic approach is sound with appropriate controls. Claim C36 is supported by both experimental data (Figure 1A) and citations. The inference (C35) about IQS dependence is well-supported by the mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C53"
+    ],
+    "result": "L-2-amino-4-methoxy-trans-3-butenoic acid (AMB) is identified as the main GRA released by P. aeruginosa. Metabolomic analysis identified AMB as the top discriminant feature, biochemical fractionation isolated AMB-containing fractions with GRA activity, and synthetic AMB recapitulates germination repression in a DELLA- and ABA-dependent manner. However, synthetic AMB requires higher concentrations than natural AMB in extracts to achieve equivalent GRA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe complementary metabolomic (UHPLC-HRMS\u00b2) and biochemical approaches with NMR confirmation. Claims C40-C45 provide dose-response data and reconstitution experiments. The discrepancy noted in C42-C43 (50 \u03bcM synthetic vs 16 \u03bcM natural AMB) is acknowledged and addressed through supplementation experiments (C44-C45). Claim C46 appropriately notes that other compounds may enhance AMB activity. The conclusion (C53) is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AMB induces persistent accumulation of RGL2 and ABI5 proteins in WT seeds but not in \u0394della mutant seeds, similar to effects observed with P. aeruginosa or PAO1 extracts. RGL2 levels persist in AMB-treated seeds even in the presence of GA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by protein gel blot analyses in Figure 5A-B with appropriate time courses and controls. The comparison in C52 is a reasonable inference based on similar protein accumulation patterns across different treatments. Multiple time points strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AMB enhances DELLA activity to promote ABA signaling without affecting GA-dependent DELLA degradation. AMB-treated seeds show increased expression of ABA-responsive genes (ABI5, EM1, NCED6) in a DELLA-dependent manner, but AMB can still mildly stimulate these genes in \u0394della seeds, suggesting a residual DELLA-independent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 provide protein gel blot evidence (Figure 6A-D) showing that AMB does not increase DELLA protein levels like PAC and that GA induces DELLA degradation in AMB-treated seeds. Claims C57-C59 provide RT-qPCR data showing DELLA-dependent gene expression changes. The inference in C60 is well-supported. Claims C61-C62 appropriately note residual DELLA-independent effects, though this is a minor component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "AMB-dependent germination arrest protects seeds from developmental damage. Seeds that germinate in the presence of P. aeruginosa or AMB develop severe defects, while germination-arrested seeds can recover and produce normal plants when transferred to bacteria-free medium. WT seeds show higher survival rates than \u0394della seeds after P. aeruginosa exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide phenotypic evidence from Figure 7A showing developmental defects in germinated seedlings. Claims C67-C70 demonstrate recovery of arrested seeds with normal seed yield (Figure 7B-D). The experimental design with transfer experiments is appropriate. Statistical analysis supports the survival differences. The inference (C71) about protective function is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "AMB does not block germination by inhibiting ethylene synthesis. AVG (an ACC synthase inhibitor) does not inhibit Arabidopsis germination at concentrations up to 200 \u03bcM, heptuple acs mutant seeds germinate normally, and silver nitrate treatment does not inhibit germination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 provide experimental evidence from Figure 7\u2014figure supplement 4 using chemical inhibitors and genetic mutants. The logic is sound: if AMB worked through ethylene inhibition, then other ethylene synthesis inhibitors or mutants should phenocopy AMB effects, which they do not. Multiple independent approaches strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "AMB does not block germination by inhibiting auxin synthesis or signaling. tir1 mutants germinate normally and respond similarly to WT seeds when exposed to AMB-containing extracts. Yucasin treatment does not prevent germination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 provide experimental evidence from Figure 7\u2014figure supplement 5 using genetic mutants and chemical inhibitors. Claim C97 shows that auxin signaling is not required for AMB responses. The reasoning in C93 about auxin's role in germination is supported by citations. Multiple approaches support the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "AMB does not prevent germination by limiting methionine synthesis. While PAG (a methionine synthesis inhibitor) blocks germination and this is rescued by exogenous methionine, exogenous methionine does not rescue germination of PAO1-treated seeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 provide experimental evidence from Figure 7\u2014figure supplement 6 with appropriate positive controls (PAG + methionine rescue). The logic is clear: if AMB worked by inhibiting methionine synthesis, methionine supplementation should rescue germination, which it does not. The conclusion (C103) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Transcriptome analysis identifies 24 genes with DELLA-dependent, GA-independent expression changes in response to P. aeruginosa extracts, with karrikin signaling genes overrepresented. This suggests AMB may repress germination by repressing karrikin signaling through DELLAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 are supported by RNAseq data (Figure 3D, Supplementary file 2) with appropriate statistical analysis. Claim C109 notes overrepresentation of karrikin signaling genes, and C112 provides specific examples. However, claim C113 is speculative and not directly tested. No functional validation of the karrikin signaling hypothesis is provided. This remains a suggestive correlation requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The ambABCDE operon is necessary for both AMB production and IQS quorum sensing activity in P. aeruginosa. AMB is abolished in \u0394lasI\u0394rhlI mutants, and the amb operon is strongly downregulated in these mutants. The ambABCDE operon is intimately linked to QS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by citations to prior work establishing the genetic relationships. Claim C125 provides new metabolomic data (Figure 4\u2014figure supplement 5A) showing AMB absence in \u0394lasI\u0394rhlI mutants. Claim C126 cites prior work on gene expression. The conclusion (C128) is well-supported by both prior literature and new data, though the exact mechanism linking ambABCDE to IQS synthesis remains unclear (C119).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Different oxyvinylglycines have distinct effects on seed germination. While AVG inhibits Poa annua germination, it does not inhibit Arabidopsis germination at concentrations up to 200 \u03bcM. AMB-containing PAO1 extracts inhibit germination of multiple brassicaceae species, while AVG does not. Arrested brassicaceae seeds can recover when transferred to normal medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C79-C80 provide experimental data from Figure 7\u2014figure supplement 1 comparing effects of different oxyvinylglycines on brassicaceae seeds. Claim C84 shows recovery of arrested Capsella seeds (Figure 7\u2014figure supplement 3E-F). The conclusion (C81-C82) that oxyvinylglycines have distinct effects is well-supported. Multiple species tested strengthen the generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "The ambABCDE operon is present in numerous P. aeruginosa strains beyond PAO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is supported by genomic sequence analysis shown in Figure 4\u2014figure supplement 11, which displays the operon structure in 15 different P. aeruginosa strains. This bioinformatic analysis is straightforward and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The AMB-dependent germination arrest may serve as an adaptive protective response against biotic threats. Despite Arabidopsis producing high seed numbers with limited dispersal, elaborate germination control mechanisms have evolved. Laboratory experiments demonstrate that germination arrest protects seeds from AMB toxicity, which could indicate adaptation to counteract damage from biotic compounds or reveal the presence of pathogens like P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C135 establish context about Arabidopsis ecology and germination control based on general knowledge and citations. Claim C136 is supported by experimental data (Figure 7). However, claims C137-C139 are speculative about evolutionary significance. While the protective function is demonstrated in vitro, whether this represents an evolved adaptation to P. aeruginosa in natural settings is not tested. The ecological relevance remains uncertain without field studies or fitness measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The ecological significance of AMB-dependent germination arrest is uncertain. While GRA is observed after culturing P. aeruginosa to high densities that trigger QS, whether such densities occur naturally in the rhizosphere is unclear. Alternative mechanisms like diffusion sensing could allow bacteria to produce autoinducers at lower densities under conditions limiting diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C144 cite conflicting reports about P. aeruginosa occurrence in soils. Claim C145 is speculative about conditions favoring high bacterial densities. Claims C146-C151 discuss alternative interpretations of quorum sensing (diffusion sensing) based on citations. These are thoughtful considerations but remain speculative. No direct evidence is provided about P. aeruginosa densities or AMB concentrations in natural rhizosphere settings. Field studies would be needed to assess ecological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C56",
+      "C75",
+      "C104",
+      "C105"
+    ],
+    "result": "AMB interferes with an unknown GA-independent mechanism that promotes DELLA-dependent germination arrest. AMB does not interfere with GA synthesis or GA-dependent DELLA degradation, but rather regulates seed gene expression in both DELLA-dependent and GA-independent manners. The molecular mechanism remains to be understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C56 are supported by experimental evidence showing that exogenous GA does not rescue germination and that GA induces DELLA degradation in AMB-treated seeds. Claim C75 appropriately summarizes the mechanistic conclusions. Claims C104-C105 acknowledge that the mechanism remains unknown and whether AMB directly interacts with DELLAs is unclear. This is an honest assessment of the limitations of the current work.",
+    "result_type": "MAJOR"
+  }
+]

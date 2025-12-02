@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "The AFV1 viral membrane is approximately 20-25 \u00c5 thick, which is roughly half the thickness of typical archaeal tetraether monolayer membranes (~40 \u00c5) and other cellular membranes (40-60 \u00c5). Despite this reduced thickness, the membrane accounts for approximately 40% of the total virion mass based on cryo-EM density integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C31-C34, and C36 are well-supported by direct cryo-EM measurements and density integration calculations. The membrane thickness measurements are consistent across multiple analytical approaches (helical averaging and cylindrical averaging), and the mass estimate from density integration provides independent validation. The comparison to literature values for other membrane types is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The AFV1 membrane lipids adopt a U-shaped 'horseshoe' conformation, with the best-fit arrangement featuring 40% of lipids with headgroups facing inward and 60% facing outward. Molecular dynamics simulations demonstrate that only horseshoe-rich envelopes with mixed lipid orientations stably maintain the curvature and thickness observed in cryo-EM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C77-C80 are supported by convergent evidence from cryo-EM density profiles and extensive molecular dynamics simulations. The simulations systematically tested multiple lipid arrangements and only the horseshoe conformation with mixed orientation maintained structural stability matching experimental observations. The 40:60 ratio is derived from fitting simulation data to cryo-EM density profiles (Figure 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The incorporation of GDGT lipids from the host into the AFV1 viral membrane is highly selective. While GDGT-4 is the dominant lipid species in the host membrane, GDGT-0 (which comprises only a few percent of host membrane lipids) is the dominant species in the viral envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are well-supported by direct lipid composition analysis via mass spectrometry (Figure 6). The striking difference in lipid distributions between host and viral membranes is clearly documented with quantitative data showing the selective enrichment of GDGT-0 in the virion despite its low abundance in the host.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C73",
+      "C74",
+      "C75",
+      "C90"
+    ],
+    "result": "The unusual viral envelope structure results from the extreme curvature of the viral capsid. GDGT-0 lipids are more flexible than cyclopentane-containing GDGTs and can better adopt horseshoe conformations that have lower free energy in highly curved membranes. Selective partitioning of GDGT lipids due to envelope curvature is hypothesized as the mechanism for GDGT-0 enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C73-C75, C90 present a mechanistic hypothesis that is well-supported by the structural data, lipid composition analysis, and cited theoretical work on lipid curvature energetics. The hypothesis logically connects the observed selective lipid enrichment with physical properties of the lipids and the extreme curvature of the capsid (~70 \u00c5 radius). While explicitly stated as a hypothesis, it is strongly supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The two AFV1 capsid proteins (MCP1 and MCP2) form a pseudo-symmetric heterodimer that resembles the symmetric homodimer in SIRV2, with both proteins interacting equivalently with DNA. Key structural differences include: (1) AFV1 N-terminal regions form helix-turn-helix motifs that fold back to cover DNA, while SIRV2 has a long kinked helix wrapping continuously around DNA; (2) AFV1's pseudo-2-fold axis is tilted 25.7\u00b0 from the helical axis, creating overall virion polarity, while SIRV2 has perpendicular 2-fold symmetry creating bipolar symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C58-C62 are strongly supported by high-resolution cryo-EM structural data (Figures 3d, 3e) at ~4.5 \u00c5 resolution. The structural comparisons between AFV1 and SIRV2 are direct and quantitative (e.g., the 25.7\u00b0 tilt angle). This finding contradicts a previous crystallographic model, but the cryo-EM data in the native virion context is more definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C48"
+    ],
+    "result": "AFV1 virions are significantly more flexible than SIRV2 virions, with helical pitch varying from 39-47 \u00c5 (versus fixed 42 \u00c5 in SIRV2). AFV1 has looser protein packing with 9.3 heterodimers per turn compared to 14.7 homodimers in SIRV2. The absence of tight inter-helical contacts in AFV1 allows virions to bend, extend, and compress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C41-C43, and C47-C48 are well-supported by cryo-EM data showing pitch variability (Figure 2) and structural analysis revealing differences in protein packing density. The causal relationship between looser packing and increased flexibility is a reasonable inference from the structural data, though direct mechanical measurements were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Due to looser protein packing, the AFV1 genome is not completely covered by protein (unlike SIRV2), making the lipid envelope necessary for genome protection in acidic environments. When the membrane is removed, virions become much more flexible, suggesting the membrane indirectly imparts rigidity by constraining the protein structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by structural comparisons between AFV1 and SIRV2 (C49), and direct cryo-EM observations of membrane-depleted virions showing increased flexibility (C51, Figure 1). The inference that the membrane provides necessary protection (C50) and indirectly imparts rigidity (C52) is logical given the structural data and environmental context, though the mechanism is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The cryo-EM reconstruction of AFV1 has a 'gold standard' FSC resolution of 4.1 \u00c5, though the authors estimate the actual resolution is approximately 4.5 \u00c5 based on comparison with the atomic model, with variable resolution across different regions of the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by standard FSC analysis (Figure 4) and critical self-assessment by the authors. The authors appropriately note that FSC may be overly optimistic due to strong DNA features and acknowledge resolution heterogeneity. The conservative estimate of ~4.5 \u00c5 based on model comparison is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "AFV1 has tighter DNA supercoiling (radius ~30 \u00c5) compared to SIRV2 (~60 \u00c5). The A-form DNA twist is 10.8 bp/turn in AFV1 versus 11.2 bp/turn in SIRV2, both bracketing the canonical 11 bp/turn value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by direct measurements from cryo-EM reconstructions. The DNA twist calculation for AFV1 (C40) is explicitly shown with the arithmetic, and the SIRV2 value (C39) is appropriately cited. These measurements are consistent with the overall structural analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Despite having linear dsDNA genomes of very different sizes (35,450 bp for SIRV2 vs 20,080 bp for AFV1), both viruses have virions of approximately the same length (~900 nm), which is explained by the different protein packing densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by cited genome size data and cryo-EM observations of virion length. The explanation connecting genome size differences to packing density differences is a logical inference from the structural data showing different numbers of dimers per helical turn.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Molecular dynamics simulations show that the AFV1 envelope maintains a stable structure with an ~8 \u00c5 water-filled gap between envelope and capsid, similar to a surface-supported membrane. The density in this gap matches the external solvent density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by both cryo-EM density observations and molecular dynamics simulations. The water gap is consistently observed in both experimental data and simulations, and the comparison to supported lipid bilayers is appropriately cited and reasonable given the structural features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Molecular dynamics simulations predicted that the membrane accounts for ~43% of the total virion mass, in excellent agreement with the ~40% estimate from cryo-EM density integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by independent calculations from two different methods (MD simulation and cryo-EM density integration) that converge on similar values (~43% vs ~40%). This agreement provides strong validation for both the structural model and the simulation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "All amino acids in the two AFV1 capsid proteins have been accounted for except 5 N-terminal residues in both MCP1 and MCP2. These missing residues would be too far from the membrane to contact it, and no density extending from protein to membrane is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by the atomic model building at ~4.5 \u00c5 resolution. The inference that the missing N-terminal residues cannot contact the membrane (C56) is reasonable given the structural model, and the absence of connecting density (C57) is a direct observation from the cryo-EM map.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Besides the canonical bacterial/eukaryotic membrane bilayer and archaeal monolayer, there is a third type of biological membrane: the viral horseshoe membrane layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by the comprehensive structural and biochemical characterization of the AFV1 membrane showing it is distinct from both bilayers and conventional monolayers. The horseshoe conformation with mixed lipid orientation represents a genuinely novel membrane architecture with biological function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The horseshoe lipid conformation described in AFV1 might be more general in enveloped viruses of archaea, as a similar GDGT-0 enrichment and membrane thinning was observed in the spindle-shaped virus SSV1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is appropriately stated as speculation but is supported by cited observations in SSV1 showing similar GDGT-0 enrichment and membrane thinning. While only two viral systems have been characterized, the parallel findings suggest this may be a broader phenomenon, warranting the cautious language used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C93"
+    ],
+    "result": "The AFV1 membrane can survive extreme conditions of temperature and pH. Archaeal lipids have been shown to resist phospholipases, temperature and pH extremes, and can survive autoclaving, giving the membrane many potential biotechnological applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C93 are supported by the natural habitat of the virus (80\u00b0C, pH 3) and cited literature on archaeal lipid properties. While direct experimental testing of the AFV1 membrane's resistance to these conditions is not presented, the inference is reasonable given the environmental context and known lipid properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The AFV1 membrane is most likely a two-dimensional fluid, so helical symmetrization or cylindrical averaging would not lose structural details of the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by the absence of ordered features in power spectra and the consistency between different averaging approaches (helical vs cylindrical). The inference that the membrane is fluid is reasonable given these observations and general membrane properties, though direct fluidity measurements were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "A positive Coulombic potential surrounds the negatively-charged phosphate backbones of the DNA in AFV1, as shown by the atomic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by Coulombic potential calculations from the atomic model shown in Figure 5. This is a standard computational analysis that follows logically from the protein structure and demonstrates appropriate DNA-protein electrostatic interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establishing that biological membranes are typically bilayers, archaeal membranes are monolayers, AFV1 is an enveloped archaeal virus, and that membrane remodeling in archaea and viral membrane acquisition from archaeal hosts are poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11-C23 represent established background knowledge appropriately cited from the literature. These claims provide necessary context for the study and accurately represent the state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Background claims about GDGT-0 being common in environmental samples, selective lipid incorporation in other viral systems, lipid flexibility affecting horseshoe formation, and prior in vitro observations of archaeal lipids forming U-shaped structures at air-water interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 and C87-C89 represent appropriately cited background knowledge from the literature that contextualizes the findings. These claims establish that horseshoe conformations have been observed in vitro and that lipid flexibility and curvature energetics are relevant to the AFV1 system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The lipid composition of Acidianus hospitalis is very similar to that of Sulfolobus solfataricus (which has a ~5 nm-thick membrane), and the spindle-shaped virus SSV1 has a membrane enriched in GDGT-0 that is thinner than the host membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by cited literature and the lipid analysis performed in this study. These comparisons provide important context showing that the phenomena observed in AFV1 may be more general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "A biological role for the horseshoe lipid conformation has not previously been suggested or found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a statement about the state of prior knowledge that is supported by the literature review. While horseshoe conformations had been observed in vitro, this study is the first to demonstrate a biological function for this conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C35"
+    ],
+    "result": "The outer diameter of the AFV1 virion is ~185 \u00c5, the nucleoprotein core diameter is ~135 \u00c5, and the buoyant density determined by CsCl gradient is consistent with other membrane-enveloped dsDNA viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C35 are supported by direct measurements from cryo-EM and cited buoyant density data. These basic structural parameters are well-determined and consistent with the overall structural model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The cryo-EM map and atomic model have been deposited in public databases (EMDB: EMD-8780, PDB: 5W7G).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are statements of data deposition that can be verified through the respective databases. This represents appropriate data sharing practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C26",
+      "C32",
+      "C33",
+      "C39",
+      "C44",
+      "C45",
+      "C60"
+    ],
+    "result": "Comparative structural parameters for SIRV2 cited from previous work, including helical pitch, membrane thickness, DNA twist, genome size, and dimer symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C32-C33, C39, C44-C45, and C60 represent appropriately cited data from previous structural work on SIRV2 that is used for comparison with AFV1. These citations appear accurate based on the referenced literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Multiple molecular dynamics simulations were performed of GDGT-0 lipids arranged cylindrically around the capsid assembly in different densities and orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 describes the computational methodology used and is supported by the detailed methods section describing the simulation setup and parameters. The systematic exploration of different lipid arrangements is appropriate for identifying the correct structural model.",
+    "result_type": "MINOR"
+  }
+]

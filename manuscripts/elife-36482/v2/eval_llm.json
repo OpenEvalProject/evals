@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The authors present a multispecies coalescent model for quantitative traits that incorporates genealogical discordance and enables evolutionary inferences across micro- and macroevolutionary scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe the core model presented in the manuscript. The model is theoretically derived (Equations 2-4), validated through simulations (Figures 4-8), and its ability to incorporate discordance is demonstrated throughout the results. The model represents a novel theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Under the coalescent model without discordance, expected covariances between species match those under Brownian motion, but expected variances are larger due to ancestral population variation not considered by traditional phylogenetic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 establish theoretical expectations under both models through mathematical derivations (Equations 1-4) and demonstrate agreement between theory and simulations (Figure 4). The distinction between variance and covariance behavior is clearly shown and explained through the 'deep coalescence' effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C57"
+    ],
+    "result": "Genealogical discordance causes increased covariance between non-sister species relative to sister species, with hemiplasy making covariances between different species pairs converge toward the same value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C38, and C57 describe the effect of discordance on trait covariances. This is demonstrated theoretically (Equation 4), validated through simulations (Figure 5a-b), and shown to occur even when concordant topologies remain most common (C39-C40). The convergence pattern is clearly illustrated in Figure 5b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Larger ancestral population sizes increase both variances and covariances through the 'deep coalescence' effect, which results from increased average gene tree height and is independent of discordance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe the deep coalescence effect with clear theoretical justification and empirical support from simulations (Figure 4a-b). The distinction between this effect and hemiplasy is explicitly stated and demonstrated, showing that both variances and covariances among lineages sharing history are affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C58"
+    ],
+    "result": "Unaccounted discordance leads to overestimation of evolutionary rates (\u03c3\u00b2) under Brownian motion models, with both deep coalescence and hemiplasy contributing to this bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41, C43-C47, and C58 demonstrate rate overestimation through simulations (Figure 6a, 6c). The contribution of both DC effect and hemiplasy is shown by comparing estimates with and without Pagel's \u03bb (Figure 6c), where \u03bb can only partially absorb the hemiplasy effect but cannot account for increased gene tree heights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C59"
+    ],
+    "result": "Unaccounted discordance decreases phylogenetic signal as measured by Pagel's \u03bb, with estimates declining as ILS increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42, and C59 describe the effect on phylogenetic signal, demonstrated through simulations showing decreasing \u03bb with increasing ILS (Figure 6b). The explanation that hemiplasy makes covariances less resemble those expected under the species tree is logically consistent with the covariance results (C36-C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49"
+    ],
+    "result": "Unaccounted discordance increases the false positive rate in phylogenetic ANOVA, with this effect independent of the number of loci controlling the trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48, and C49 demonstrate increased false positive rates through simulations (Figure 7). The trend is consistent across different numbers of loci and is explained by the increased covariances between non-sister species due to hemiplasy, making arbitrary groupings more likely to show spurious differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C49",
+      "C52"
+    ],
+    "result": "The number of loci controlling a quantitative trait does not affect the trends caused by discordance, with similar patterns observed across simulations with 5 to 100 loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C35, C49, and C52 consistently show that locus number is irrelevant to observed trends. This is demonstrated across multiple analyses (Figures 6, 7, 8) and is theoretically justified by the infinitesimal model logic where mutational effect sizes are scaled to maintain constant trait variance regardless of locus number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C60"
+    ],
+    "result": "Discordance affects discrete threshold traits by increasing incongruent trait patterns with higher ILS levels, with this effect independent of the number of underlying loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C50-C54, and C60 demonstrate effects on threshold traits through simulations (Figure 8). The increase in incongruent patterns and decrease in congruent patterns with ILS is clearly shown, and the independence from locus number is demonstrated. The threshold model application is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Simulations show good agreement between observed and expected variances and covariances under the coalescent model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 validates the theoretical model through simulation. Figures 4 and 5a show close agreement between expected values (from Equations 2-4) and observed values from simulations, providing empirical support for the mathematical derivations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The effects of hemiplasy were observed despite concordant topologies being most common and substitutions on discordant branches occurring in only a fraction of loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 emphasize the robustness of the hemiplasy effect. This is an important observation showing that even minority discordant gene trees can substantially affect trait evolution, supporting the broader applicability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "In the absence of ILS, the coalescent and Brownian motion models are equivalent for expected covariances but differ for expected variances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 summarize key theoretical findings demonstrated through mathematical derivations and simulations. This establishes the baseline relationship between the two models and is essential for understanding when they diverge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Using Pagel's \u03bb when estimating evolutionary rates can buffer the effect of hemiplasy by absorbing covariance changes through branch length adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 provides a practical recommendation supported by simulation results (Figure 6c). The analysis shows that \u03bb reduces but does not eliminate rate overestimation, as it cannot account for the deep coalescence effect. This is a useful methodological insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The effects of hemiplasy are expected to be greatest for species radiations due to short internode distances that promote ILS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 extend the findings to predict when hemiplasy effects will be most pronounced. This is logically consistent with coalescent theory and the simulation results, though it represents an extrapolation rather than direct empirical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Thinning species from analyses to minimize discordance can improve inference accuracy for molecular changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 cites prior work (Mendes and Hahn, 2016) to suggest a methodological approach. While not directly tested in this study, it is consistent with the findings and represents a reasonable recommendation based on the demonstrated effects of discordance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on phylogenetic comparative methods, gene tree discordance, ILS, and hemiplasy establishes the context and motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C20 provide background knowledge with appropriate citations. These establish the scientific context and are well-supported by the cited literature. They represent accurate summaries of established concepts rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "Simulations were conducted using the ms coalescent simulator, and parameter estimation was performed using the geiger package in R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C67, and C68 describe the computational methods with appropriate citations. The methods are standard and appropriate for the analyses conducted, though some details about reproducibility (e.g., random seeds, software versions) are not specified.",
+    "result_type": "MINOR"
+  }
+]

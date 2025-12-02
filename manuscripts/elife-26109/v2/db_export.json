@@ -1,0 +1,1730 @@
+{
+  "submission": {
+    "id": "a25dfa90-2ddd-4f3d-9053-702f5e30c42d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T18:55:55.008235Z",
+    "updated_at": "2025-12-01T18:55:55.008235Z"
+  },
+  "content": [
+    {
+      "id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "submission_id": "a25dfa90-2ddd-4f3d-9053-702f5e30c42d",
+      "content_type": "manuscript",
+      "content_text": "# PPP1R15A-mediated dephosphorylation of eIF2\u03b1 is unaffected by Sephin1 or Guanabenz\n\n## Authors\n\n- Ana Crespillo-Casado<sup>1</sup> ([ORCID: 0000-0002-7230-3188](https://orcid.org/0000-0002-7230-3188)) \u2020\n- Joseph E Chambers<sup>1</sup> ([ORCID: 0000-0003-4675-0053](https://orcid.org/0000-0003-4675-0053))\n- Peter M Fischer<sup>2</sup> ([ORCID: 0000-0002-5866-9271](https://orcid.org/0000-0002-5866-9271))\n- Stefan J Marciniak<sup>1</sup> ([ORCID: 0000-0001-8472-7183](https://orcid.org/0000-0001-8472-7183))\n- David Ron<sup>1</sup> ([ORCID: 0000-0002-3014-5636](https://orcid.org/0000-0002-3014-5636)) \u2020\n\n### Affiliations\n\n1. Cambridge Institute for Medical Research University of Cambridge Cambridge United Kingdom\n2. Division of Biomolecular Science and Medicinal Chemistry, School of Pharmacy University of Nottingham Nottingham United Kingdom\n3. Centre for Biomolecular Sciences University of Nottingham Nottingham United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDephosphorylation of translation initiation factor 2 (eIF2\u03b1) terminates signalling in the mammalian integrated stress response (ISR) and has emerged as a promising target for modifying the course of protein misfolding diseases. The [(o-chlorobenzylidene)amino]guanidines (Guanabenz and Sephin1) have been proposed to exert protective effects against misfolding by interfering with eIF2\u03b1-P dephosphorylation through selective disruption of a PP1-PPP1R15A holophosphatase complex. Surprisingly, they proved inert in vitro affecting neither stability of the PP1-PPP1R15A complex nor substrate-specific dephosphorylation. Furthermore, eIF2\u03b1-P dephosphorylation, assessed by a kinase shut-off experiment, progressed normally in Sephin1-treated cells. Consistent with its role in defending proteostasis, Sephin1 attenuated the IRE1 branch of the endoplasmic reticulum unfolded protein response. However, repression was noted in both wildtype and Ppp1r15a deleted cells and in cells rendered ISR-deficient by CRISPR editing of the Eif2s1 locus to encode a non-phosphorylatable eIF2\u03b1 (eIF2\u03b1S51A). These findings challenge the view that [(o-chlorobenzylidene)amino]guanidines restore proteostasis by interfering with eIF2\u03b1-P dephosphorylation.\n\n## Introduction\n\nProtein folding homeostasis (proteostasis) is achieved by balancing the rate of production, folding and protein degradation. Proteostasis is strongly influenced by the phosphorylation state of serine 51 of the \u03b1 subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) (Sonenberg and Hinnebusch, 2009). Diverse stress conditions activate kinases that phosphorylate eIF2\u03b1, resulting in attenuated rates of translation initiation of most mRNAs and increasing translation of a small group of mRNAs with special 5\u2032 untranslated regions (Hinnebusch, 2014). The latter encode potent transcription factors such as ATF4 that couple eIF2\u03b1 phosphorylation to the Integrated Stress Response (ISR) (Harding et al., 2003), a transcriptional and translational program that adapts cells to stress and participates in diverse biological processes such as memory, immunity and metabolism (Baird and Wek, 2012).\n\nSignalling in the ISR is terminated by eIF2\u03b1-P dephosphorylation. This requires the presence of a regulatory subunit, PPP1R15, to direct the catalytic, PP1 subunit, to its specific substrate. Two mammalian genes encode PPP1R15 regulatory subunits. Ppp1r15b (or CReP) encodes a constitutively expressed regulatory subunit (Jousse et al., 2003), whereas Ppp1r15a (or GADD34) encodes an ISR inducible regulatory subunit that contributes to a negative feed-back loop operative in the ISR (Brush et al., 2003; Ma and Hendershot, 2003; Novoa et al., 2001, 2003). A minimal rate of eIF2\u03b1-P dephosphorylation is an essential cellular function, as reflected in the severe phenotypes of Ppp1r15b mutation or deletion and in the very early lethality of compound Ppp1r15a;b deficient mice (Abdulkarim et al., 2015; Harding et al., 2009).\n\nInterestingly, whilst deletion of the inducible Ppp1r15a gene results in sluggish recovery of protein synthesis during the waning phase of stress (Kojima et al., 2003; Novoa et al., 2003), mice lacking any PPP1R15A-directed eIF2\u03b1-P dephosphorylation (homozygous Ppp1r15atm1Dron) are superficially indistinguishable from wildtype. Moreover, when challenged with tunicamycin, which causes unfolded protein stress in the endoplasmic reticulum by inhibiting N-linked glycosylation, homozygous Ppp1r15atm1Dron mice and cultured cells derived from them are relatively resistant to the toxin\u2019s lethal effects (Marciniak et al., 2004; Reid et al., 2016). This feature is plausibly attributed to sustained activity of the ISR in the Ppp1r15a mutant mice, which favours proteostasis by limiting the production of unfolded proteins under stress conditions (Boyce et al., 2005; Han et al., 2013).\n\nThe proteostasis-promoting features of interfering with PPP1R15A-mediated eIF2\u03b1-P dephosphorylation are also played out in the context of certain disease models associated with protein misfolding and proteotoxicity. Both the neuropathic phenotype associated with Schwann cell expression of a mutant misfolding-prone myelin constituent, P0S63\u2206, and a mutant superoxide dismutase expressed in motor neurones are ameliorated by a concomitant dephosphorylation-defective Ppp1r15atm1Dron mutation (D'Antonio et al., 2013; Wang et al., 2014), and similar amelioration of inflammatory-mediated central nervous system demyelination is observed in the Ppp1r15atm1Dron mice (Lin et al., 2008).\n\nThese features have led to an interest in the therapeutic potential of targeting PPP1R15-mediated eIF2\u03b1-P dephosphorylation with small molecule inhibitors. Early work led to discovery of salubrinal, a small molecule that increases levels of eIF2\u03b1-P and retards its dephosphorylation. However, salubrinal is only known to work in vivo and its mechanism of action remains unclear (Boyce et al., 2005). Limitations of in vitro assays for substrate-specific PPP1R15-mediated eIF2\u03b1-P dephosphorylation (see below) have all but precluded a biochemical approach to the problem, but a cell based search for proteostasis regulators suggested that the \u03b12 adrenergic blocker Guanabenz, [(o,o-dichlorobenzylidene)amino]guanidine, might exert its beneficial effects on proteotoxicity by interfering with eIF2\u03b1-P dephosphorylation (Tsaytler et al., 2011). This theme was extended further by the discovery of Sephin1, [(o-chlorobenzylidene)amino]guanidine, that had lost its \u03b12 adrenergic blocking activity but retained its proteostasis promoting properties (Das et al., 2015). Importantly, biochemical characterization of Guanabenz and Sephin1 suggested that both disrupt the complex between PPP1R15A and PP1, providing strong support for a mechanism of action that involves interfering with PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (Das et al., 2015), Figure 1C therein).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon representation of human PPP1R15A (GADD34). The minimal C-terminal peptide required for eIF2\u03b1-P dephosphorylation is outlined (\u2018active fragment\u2019) and key residues in the PP1 and G-actin binding regions are annotated. (B) Alignment of C-terminal active fragments of mammalian PPP1R15A and PPP1R15B (CREP) using ClustalX. Grey highlighted residues represent conserved or highly similar residues. Red asterisks highlight key residues that are analysed in further detail. (C) Image of Coomassie-stained PhosTag-SDS-PAGE on which phosphorylated (eIF2\u03b1P) and non-phosphorylated (eIF2\u03b10) forms of eIF2\u03b1 from 20 min dephosphorylation reactions were resolved. The composition of the reaction, PPP1R15A533-624 [80 nM], PPP1R15A325-636 [400 nM], PP1c [12.5 nM] and G-actin [750 nM] are noted above and the fraction of dephosphorylated eIF2\u03b1 is noted underneath each lane (%dP). The migration of molecular weight markers and G-actin are noted (the signal from the PPP1R15A and PP1c is undetectable on these gels).\n\nGenetic analysis reveals that a regulatory PPP1R15 subunit is essential for eIF2\u03b1-P dephosphorylation in vivo, and over-expression of either PPP1R15A or PPP1R15B or merely their conserved C-terminal portion, is sufficient to deregulate eIF2\u03b1-P dephosphorylation in vivo and inhibit the ISR (Brown et al., 1997; Brush et al., 2003; Jousse et al., 2003; Novoa et al., 2001). Though PPP1R15 regulatory subunits stably bind the catalytic subunit (PP1), the resulting binary complex is devoid of specificity towards eIF2\u03b1-P. However, G-actin joins the PPP1R15-PP1 binary complex as an ancillary subunit to form a ternary complex endowed with substrate-specific eIF2\u03b1-P directed phosphatase activity, both in cells (Chambers et al., 2015) and when constituted with pure components in vitro (Chen et al., 2015).\n\nTo explore in detail the mechanism of action of the [(o-chlorobenzylidene)amino]guanidines we reconstructed PPP1R15A-PP1-G-actin-mediated eIF2\u03b1-P dephosphorylation in vitro with pure components. Using mutants that interfere with complex formation and function we established the correlation of enzymatic activity with the kinetic parameters of complex formation to develop an assay responsive to the stability of the core PPP1R15-PP1 binary interaction; the proposed target of Guanabenz and Sephin1. The results of our inquiry, reported on below, question the role of destabilization of the eIF2\u03b1-P directed holophosphatase in the proteostatic effects of these compounds.\n\n## Results\n\n### In vitro assay for selective eIF2\u03b1-P dephosphorylation sensitive to the stability of the PPP1R15A-PP1 complex\n\nPPP1R15A/GADD34 is a protein of\u00a0>600 residues, but only the C-terminal 70 residues are necessary for substrate-specific dephosphorylation of eIF2\u03b1-P (Figure 1A). This active fragment is also the most conserved segment of the protein; both between homologues of PPP1R15A and with the paralogous PPP1R15B (Figure 1B). This region of the protein is natively unfolded (Yu et al., 2004), attaining its structure upon binding the PP1 catalytic and the G-actin ancillary subunits (Chen et al., 2015; Choy et al., 2015).\n\nFor structural studies we found it convenient to co-express PPP1R15 and PP1 in bacteria (Chen et al., 2015). However, the fixed 1:1 stoichiometry of the two subunits imparted by co-expression is unsuited to a detailed examination of the bimolecular affinities involved in complex formation or to the design of an assay sensitive to the stability of PPP1R15A-PP1 complex. To circumvent this limitation, we incorporated a highly soluble maltose-binding protein (MBP) moiety C-terminal to the natively-unstructured human PP1R15A active fragment. When expressed in E. coli as a fusion protein with a cleavable N-terminal glutathione S-transferase (GST) tag, GST-PPP1R15A-MBP remained soluble and when added as a purified protein in vitro (after cleavage of the GST), imparted eIF2\u03b1-P dephosphorylation activity to reactions containing purified PP1 and G-actin (Figure 1C, left panel). Moreover, the solubilizing MBP tag enabled recovery not only of a human PPP1R15A active fragment (residues 533\u2013624) but also a much larger N-terminally extended fragment (residues 325\u2013636). The minimal active fragment and the much longer N-terminally-extended PPP1R15A had similar activity in this assay (Figure 1C). Nonetheless the ability to purify a soluble, N-terminally extended PPP1R15A regulatory subunit expanded the possibilities to study more physiological models of PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (a point we shall return to below).\n\nWe quantified the dependence of eIF2\u03b1-P dephosphorylation rates on both the concentration of the regulatory human PPP1R15A subunit (EC50\u00a0=\u00a07 nM) and on the ancillary G-actin subunit (EC50\u00a0=\u00a013 nM) (Figure 2). The latter values agreed with our previous measurements of G-actin\u2019s stimulation of enzymatic activity (in an assay using the murine PPP1R15A) (Chen et al., 2015), whereas the EC50 of human PPP1R15A was within an order of magnitude of the affinity of human PPP1R15A for PP1, as measured by isothermal titration calorimetry (Choy et al., 2015) (see below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schema of the human PPP1R15A533-624 construct used. The C-terminal Maltose Binding Protein (MBP) component, which stabilizes the fusion protein, is noted. (B) Upper panel. Coomassie-stained PhosTag-SDS-PAGE tracking the dephosphorylation of eIF2\u03b1P to eIF2\u03b10 in 20 min dephosphorylation reactions constituted with eIF2\u03b1P [2 \u00b5M], PP1 [0.625 nM], G-actin [1.5 \u00b5M] and an escalating concentration of PPP1R15A533-624. Shown is a representative of three independent experiments performed. Lower panel: Semi-log10 plot of the initial velocity of eIF2\u03b1P dephosphorylation as a function of PPP1R15A533-624 concentration derived from three repeats (one shown above). The EC50 for PPP1R15A533-624 was calculated using the agonist fitting function on GraphPad Prism V7. (C) Upper panel. As in \u2018B\u2019 but dephosphorylation of eIF2\u03b1P to eIF2\u03b10 was carried out in the presence of a fixed concentration of PPP1R15A533-624 [50 nM] and an escalating concentration of G-actin. Shown is a representative of two independent experiments performed. Lower panel: Semi-log10 plot of initial velocity as a function of G-actin concentration derived from two repeats (one shown above).\n\nPrevious studies have identified mutations in PPP1R15 that abolish substrate-specific dephosphorylation in vitro and block PPP1R15\u2019s ability to repress the ISR, when expressed in vivo. The human PPP1R15AV556E mutation alters a key residue, part of the RVxF motif involved in binding of diverse regulatory subunits to PP1 (Egloff et al., 1997); its presence abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (Figure 3A). Two previously-identified mutations in the C-terminal extension of PPP1R15A - the portion that interacts with the G-actin ancillary subunit (human PPP1R15AW582A and PPP1R15AF592A) (Chen et al., 2015) - also abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (Figure 3B and C). These findings establish the dependence of the tripartite assay described above on features known to be important for PPP1R15 function.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig3-v2.jpg)\n\n**Figure 3.:** (A) Coomassie-stained PhosTag-SDS-PAGE tracking the dephosphorylation of eIF2\u03b1P to eIF2\u03b10 as in Figure 2 above, but with PP1[32 nM], G-actin [400 nM] and an escalating concentration of mutant human PPP1R15A(533-624)V556E. Shown is a representative of three independent experiments performed. The position of the mutation is provided in the schema above. The plot of initial velocity as a function of PPP1R15A(533-624)V556E derived from three repeats (one shown) is below the SDS-PAGE image. (B) As in \u2018A\u2019 above but using human PPP1R15A(533-624)W582A and G-actin [3.7 \u00b5M](Note: only the highest concentration of PPP1R15A was repeated three times). (C) As in \u2018A\u2019 above but using human PPP1R15A(533-624)F592A and G-actin [3.7 \u00b5M] (Note: only the highest concentration of PPP1R15A was repeated three times).\n\nA fourth mutation tested affects a residue whose counterpart in human PPP1R15BR658C results in a syndromatic form of diabetes mellitus. Consistent with the destabilizing effect of this mutation on PP1 binding (Abdulkarim et al., 2015), its presence in human PPP1R15AR578A resulted in a\u00a0~4 fold increase in EC50 for eIF2\u03b1-P dephosphorylation (Figure 4A). The mutation also affected the maximal stimulation afforded by human PPP1R15AR578A, as even at saturating concentrations of regulatory subunit, eIF2\u03b1-P dephosphorylation reactions assembled with the mutant were three times slower than those assembled with the wildtype (Figure 4B). The human PPP1R15AR578A mutation does not appear to have a major effect on the stability of the G-actin containing ternary complex, as the EC50 for G-actin (20 nM) was relatively unaffected (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig4-v2.jpg)\n\n**Figure 4.:** (A) Coomassie-stained PhosTag-SDS-PAGE tracking the dephosphorylation of eIF2\u03b1P in a 20 min reaction, as in Figure 2 and 3 above, but with an escalating concentration of mutant human PPP1R15A(533-624)R578A. Shown is a representative of three independent experiments performed. The position of the mutation is provided in the schema above the gel. The plot of initial velocity as a function of PPP1R15A(533-624)R578A derived from three repeats (one shown) is below the SDS-PAGE image. The EC50 for PPP1R15A(533-624)R578A was calculated using the agonist fitting curve in GraphPad Prism V7. (B) Time-course of eIF2\u03b1P dephosphorylation using a low concentration of PP1 [0.625 nM], saturating concentrations of G-actin [400 nM], and wildtype [100 nM] or mutant human PPP1R15A(533-624)R578A [100 nM in one assay and 200 nM in the two other assays]. Shown is a representative of three independent experiments performed. Below the gel is a plot of the fraction of substrate dephosphorylated as a function of time derived from three repeats (one shown). The slope of the reaction was derived by fitting the data to a linear model in GraphPad Prism V7. (C) As in \u2018A\u2019 above but with saturating concentration of PPP1R15A(533-624)R578A [100 nM] and escalating concentration of G-actin. Shown is a representative of three independent experiments performed. The plot of initial velocity as a function of G-actin derived from three repeats (one shown) is below the SDS-PAGE image. The EC50 for G-actin was calculated using the agonist fitting curve in GraphPad Prism V7.\n\n### Bio-Layer Interferometry measurement of the affinity of the holophosphatase components for each other\n\nThe features of the human PPP1R15AR578A mutant noted above suggest that the tripartite assay is sensitive not only to the affinity of the three components for one another but also to subtle structural features of the holophosphatase. To explore this issue further, we used Bio-Layer Interferometry (BLI) (Abdiche et al., 2008) to measure directly the affinity of the three components of the holophosphatase for each other. PPP1R15A533-624 was biotinylated on a single lysine residue of an AviTag (Fairhead and Howarth, 2015) added between the cleavable GST tag and PPP1R15A peptide (Figure 5A) and the biotinylated protein was immobilized on a streptavidin-derivatized BLI biosensor tip. The biotinylated PPP1R15A533-624 ligand showed a robust 1:1 bimolecular interaction, with pure PP1, yielding a koff\u00a0=\u00a00.21\u00a0\u00b1\u00a00.01 min\u22121 and a Kd\u00a0=\u00a020\u00a0\u00b1\u00a00.61 nM (Figure 5B). The higher affinity of PPP1R15 for PP1 observed here, compared to isothermal titration calorimetry (ITC) measurements of Choy et al. (2015) (Kd\u00a0=\u00a062\u00a0\u00b1\u00a014 nM) might reflect the contribution of contacts made by residues C-terminal to PPP1R15AL567, which are present in the construct used here, but absent from the one used in the ITC measurements (Choy et al., 2015). Cooperativity provided by G-actin (present in the enzymatic assay, but absent from the BLI experiment) and steric hindrance from probe components might have contributed to the 3\u20135 fold lower value of the PPP1R15A EC50 for eIF2\u03b1-P dephosphorylation in the enzymatic assay (7 nM, Figure 2B) compared to the Kd observed by BLI.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schema of the biotinylated human PPP1R15A533-624 immobilized onto the BLI biosensor tip. (B) Plot of Bio-Layer Interferometry (BLI) signal as a function of time in a representative experiment (repeated three times) in which immobilized PPP1R15A533-624 was reacted with PP1 [40 nM] in solution (blue trace). The fitting curve using \u2018association then dissociation\u2019 model in GraphPad Prism V7 is shown in red. Vertical dashed line marks the beginning of the dissociation phase. Table summarizes kinetic parameters extracted from fitting curves of three repeats of the experiment shown in left panel (mean \u00b1 standard deviation). (C) As in \u2018B\u2019 above, but the immobilized PPP1R15A533-624 was first exposed to PP1 [200 nM], before being exposed to a solution of both PP1 [200 nM] and G-actin [400 nM]. Shown is a representative of an experiment repeated three times.\n\nTo gauge the affinity of the ancillary G-actin subunit for the complex, we first assembled a binary complex between the biotinylated PPP1R15A533-624 ligand (described above) and a saturating concentration of PP1 and then measured the BLI signal induced by addition of G-actin. A robust association-dissociation signal was observed with purified G-actin (koff\u00a0=\u00a02.84\u00a0\u00b1\u00a00.11 min\u22121 and Kd\u00a0=\u00a0151\u00a0\u00b1\u00a014.3 nM) (Figure 5C).\n\nThe human PPP1R15AV556E mutation, affecting the RVxF motif, abolished all measureable association with PP1, but had no effect on the kinetics of G-actin binding. Conversely, the human PPP1R15AF592A mutation markedly enfeebled G-actin binding but had no effect on PP1 binding (Figure 6A and B). Together, these observations confirm the ability of PPP1R15A to engage PP1 and G-actin independently, via the N- and C-terminal parts of its active portion. Despite their strong detrimental effects on enzymatic activity (Figures 3C and 4), neither the PPP1R15AR578A nor the PPP1R15AW582A mutations had a major effect on the kinetics of PP1 or G-actin binding (Figure 6). Together, these observations suggest that the tripartite enzymatic assay is sensitive both to mutations that grossly interfere with complex stability (V556E and F592A) and to mutations that more subtly affect the structure of the complex (R578A and W582A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig6-v2.jpg)\n\n**Figure 6.:** (A) Plot of Bio-Layer Interferometry (BLI) signal as a function of time in a representative experiment (repeated three times) in which immobilized wildtype and indicated mutant PPP1R15A533-624 proteins were reacted with PP1 [40 nM] in solution (thick traces). The fitting curve using \u2018association then dissociation\u2019 model in GraphPad Prism V7 is shown in thin red line. Vertical dashed line marks the beginning of the dissociation phase. Table summarizes kinetic parameters extracted from fitting curves of three repeats of the experiment shown in left panel (mean \u00b1 standard deviation). (B) As in \u2018A\u2019 above, but the immobilized wildtype and mutant PPP1R15A533-624 probes were first reacted with PP1 [200 nM], before being exposed to a solution of both PP1 [200 nM] and G-actin [400 nM]. Shown is a representative of an experiment repeated three times.\n\n### No measureable effect of [(o-chlorobenzylidene)amino]guanidines on PPP1R15A-containing holophosphatases in vitro\n\nDas and colleagues previously reported that addition of 50 \u00b5M Sephin1 to tissue culture media disrupts the PPP1R15A-PP1 complex recovered from cells (Das et al., 2015). To determine if these observations correlate with an effect of Sephin1 on the complex formed in vitro between PPP1R15A533-624 and PP1, we sourced Sephin1 and confirmed its purity and identity by reverse phase HPLC and mass spectrometry (Figure 7A). When added to the BLI assay at a concentration of 50 \u00b5M (before exposure to PP1), Sephin1 had no measureable effect on either the association or dissociation phase of the assay (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig7-v2.jpg)\n\n**Figure 7.:** (A) From left to right: Absorbance trace (at 254 nm) of Sephin1 resolved by reverse-phase HPLC and mass spectra of the minor early (blue) peak eluting at 1.14 min and the major later eluting (green peak) at 1.83 min. The predicted structure, chemical formula and exact mass of Sephin1, are provided for reference. (B) Plot of BLI signal as a function of time of a representative experiment (repeated three times) performed with immobilized PPP1R15A533-624 (Ligand) and PP1 [40 nM] (Analyte). Where indicated, the analyte was mixed with Sephin1 [50 \u00b5M) which was then present during the binding phase of the experiment. (C) As in \u2018B\u2019 above but with biotinylated PP1 as the ligand and PPP1R15A533-624 as the analyte, in the absence or presence of Sephin1. (D) As in \u2018B\u2019 above but with biotinylated PP1 as the ligand and PPP1R15A325-636 as the analyte, in the absence or presence of Sephin1. (E) Table summarizing data extracted from fitting curves of three repeats of the experiments shown above (mean \u00b1 standard deviation).\n\nA biotinylated N-terminally extended PPP1R15A325-636, corresponding to the construct studied by Das and colleagues, proved unsuited as a ligand in the BLI experiment. To circumvent this problem we biotinylated PP1 and exploited it as a BLI ligand. Addition of either the minimal active fragment, human PPP1R15A533-624, or the longer human PPP1R15A325-636, gave rise to a robust BLI signal but addition of Sephin1 affected neither the association nor dissociation phase of the experiment (Figure 7C and D). The kinetics of the bimolecular PP1-PPP1R15A interaction were reproducibly different when one or the other was used as a ligand (summarized in Figure 7E). These may reflect different distorting effect of other elements of the BLI biosensor on the kinetics of dissociation when PP1 or PPP1R15A were used as ligands, and/or a contribution of the N-terminal repeats of PPP1R15A to its interactions with PP1, as suggested previously (Brush and Shenolikar, 2008). However, reproducible inertness in all three assays lends confidence to the conclusion that in this experimental system 50 \u00b5M Sephin1 does not directly interfere with assembly or stability of the PPP1R15A-PP1 complex.\n\nNext we sought to examine the effect of Sephin1 on the in vitro dephosphorylation activity of a tripartite eIF2\u03b1-P holophosphatase assembled with the N-terminally extended PPP1R15A325-636 (corresponding to the construct studied by Das and colleagues). As Sephin1 is proposed to inhibit eIF2\u03b1-P dephosphorylation by disrupting the binding of PPP1R15A to PP1, we sought to incorporate the PPP1R15A325-636 component at or below its EC50, thereby maximizing the prospects of detecting an inhibitory effect. Addition of purified PPP1R15A325-636 to PP1 and G-actin accelerated eIF2\u03b1-P dephosphorylation with an EC50 of 5\u201310 nM (Figure 8A). However, Sephin1 had no effect on the dephosphorylation reaction (Figure 8B), whilst tautomycin readily inhibited the reaction (IC50\u00a0=\u00a02.4 nM) confirming the sensitivity of the assay to a known inhibitor (Figure 8C). These observations were also confirmed in an assay set up with the corresponding murine PPP1R15A273-657 (Figure 8\u2014figure supplement 1A and B). The related compound Guanabenz also proved inert, even when added to the enzymatic assay at the high concentration of 50 \u00b5M (Figure 8D). Salubrinal, added at 12 \u00b5M (higher concentrations led to conspicuous precipitation) had a mild but highly reproducible inhibitory effect (Figure 8E, inhibition\u00a0= 22% \u00b1 2.045, unpaired t test, p<0.0001, n\u00a0=\u00a06). The weakness of salubrinal\u2019s inhibitory effect and the compound\u2019s tendency to precipitate at higher concentrations in the assay buffer frustrated our efforts to establish if inhibition was specific to the eIF2\u03b1-P directed ternary complex. Nonetheless these observations showcase the sensitivity of our assay to even weak inhibitors and strengthen the conclusion regarding Sephin1\u2019s inertness in the same assay.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig8-v2.jpg)\n\n**Figure 8.:** (A) Coomassie-stained PhosTag-SDS-PAGE tracking the dephosphorylation of eIF2\u03b1P in 20 min reactions constituted with PP1 [0.625 nM], G-actin [1.5 \u00b5M] and an escalating concentration of human PPP1R15A325-636. Shown is a representative of three independent experiments performed. A schema of the human PPP1R15A325-635 construct is shown above the gel. A semi-log10 plot of the initial velocity of eIF2\u03b1P dephosphorylation as a function of PPP1R15A325-636 concentration derived from three repeats of the experiment is shown below. The EC50 for PPP1R15A325-636 was calculated using agonist fitting function on GraphPad Prism V7. (B) As in \u2018A\u2019 above, but in the presence of a fixed concentration of PPP1R15A325-636 below the EC50 [2 nM] and escalating concentrations of Sephin1. Shown is a representative of the two independent experiments performed. Plot contains data from the two repeats. (C) As in \u2018B\u2019 above, but in the presence of an escalating concentrations of the PP1 active site inhibitor tautomycin (Tau). Shown is a representative of the two independent experiments performed. Plot contains data from the two repeats. (D) As above, triplicate reactions of eIF2\u03b1-P dephosphorylation conducted in the absence or presence of Sephin1 or the related compound, Guanabenz. (E) As in \u2018D\u2019 using Sephin1, salubrinal or tautomycin. Shown is a representative experiment, (of two repeats).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Coomassie-stained PhosTag-SDS-PAGE tracking the dephosphorylation of eIF2\u03b1P in 20 min reactions constituted with mouse PPP1R15A273-657 and escalating concentrations of Sephin1. A schema of the mouse PPP1R15A273-657 construct is shown above the gel and a semi-log10 plot of the initial velocity as a function of Sephin1 concentration is shown below.\u00a0(B) As in \u2018A\u2019 above, but in the presence of an escalating concentrations of the PP1 active site inhibitor tautomycin (Tau).\n\n### Sephin1 exerts proteostatic effects in vivo independently of PPP1R15A or the eIF2\u03b1-P-dependent integrated stress response\n\nSephin1\u2019s role as a proteostasis promoting agent was explored in cultured CHO-K1 cells containing reporters for both the ISR (CHOP::GFP)(Novoa et al., 2001) and the branch of the endoplasmic reticulum unfolded protein response (UPR) mediated by IRE1 (XBP1s::Turquoise)(Iwawaki et al., 2004; Sekine et al., 2016). Previous studies have emphasized the dominance of translational recovery in the physiological action of PPP1R15A, such that Ppp1r15aKO attenuates both the burden of protein misfolding (Marciniak et al., 2004) and the response to it (Reid et al., 2016). In keeping with these ideas and with the findings of Das and colleagues (Das et al., 2015), Sephin1 attenuated the activity of both UPR pathways in cells exposed to tunicamycin; an inhibitor of N-linked glycosylation, that promotes misfolding of newly-synthesized proteins (Figure 9A). Though observed only over a narrow concentration range of tunicamycin (Figure 9\u2014figure supplement 1A) and at relatively high concentrations of the drug (Figure 9\u2014figure supplement 1B), Sephin1\u2019s effects in this assay can be reconciled with a mechanism involving a net reduction of protein synthesis; as suggested by Das and colleagues. Sephin1 also inhibited induction of the ISR in response to histidinol (Figure 9B), an agent that interferes with tRNA charging and thereby activates the eIF2\u03b1 kinase GCN2 (Zhang et al., 2002) without affecting protein folding.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig9-v2.jpg)\n\n**Figure 9.:** (A) Two-dimensional plot of the fluorescence signals derived from CHO cells stably transduced with both a CHOP::GFP reporter (on the horizontal axis, Ex: 488 nm/ Em 530\u00a0\u00b1\u00a030 nm; reflecting mostly ISR activity) and a XBP1::Turquoise reporter (on the vertical axis, Ex: 405 nm/ Em 450\u00a0\u00b1\u00a050 nm; reflecting IRE1\u03b1 activity) analysed by flow cytometry. Color-coded signals from untreated cells (blue) or cells exposed to a low concentration of tunicamycin (0.2 \u00b5g/mL; 20 hr) alone (green) or together with Sephin1 (50 \u00b5M, red) are superimposed. Histograms of the distribution of the two reporter signals in the three cell populations are plotted on the corresponding axis and the mean \u00b1 CV (coefficient of variation) of the fluorescence intensity of the two reporters is depicted in the bar diagram to the right. (B) As in \u2018A\u2019 above, but the cells were exposed to histidinol, an ISR inducer that does not promote unfolded protein stress in the ER and does not activate the XBP1::Turquoise reporter. Shown is one of three independent experiments.\n\n![Figure 9\u2014figure supplement 1 .](https://cdn.elifesciences.org/articles/26109/elife-26109-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1 .:** (A) Histograms of distribution of the fluorescence intensity of the CHOP:GFP reporter (left panel) and XBP1s:turquoise reporter (right panel) in populations of untreated CHO cells and cells exposed for 20 hr to the indicated concentration of tunicamycin in the absence and presence of Sephin1 (50 \u00b5M) analysed by flow cytometry. (B) As in \u2018A\u2019 above but the cells were either untreated or exposed to a fixed concentration of tunicamycin (0.2 \u00b5g/mL) and varying concentrations of Sephin1.\n\nTo probe deeper into this matter, we exploited an in vivo assay that monitors eIF2\u03b1-P dephosphorylation in cells. In this kinase shut-off experiment (Chambers et al., 2015)(Figure 10A), cultured cells are first exposed to a brief, 30 min pulse of thapsigargin, which rapidly activates the eIF2\u03b1 kinase PERK and builds levels of eIF2\u03b1-P, and then exposed to a PERK kinase inhibitor (GSK260414A). The resulting decay in the eIF2\u03b1-P signal reflects its dephosphorylation. To minimize the contribution of other kinases to the eIF2\u03b1-P signal, the experiment was performed in cells lacking GCN2 (Chambers et al., 2015), which we inactivated in the CHO-K1 cells by CRISPR-Cas9 gene editing. Normally, the dephosphorylation of eIF2\u03b1-P is a rapid process, complete in 60 min (Figure 10B, lanes 2\u20136). It was markedly delayed by inclusion of jasplakinolide (Figure 10B lanes 7\u201310), which depletes the pool of G-actin (by promoting its oligomerization), thereby depriving the PPP1R15 subunits of an essential co-factor, as observed previously (Chambers et al., 2015).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig10-v2.jpg)\n\n**Figure 10.:** (A) Schema of the kinase shut-off experiment used to evaluate the decay of the eIF2\u03b1P signal in cells. Thapsigargin (300 nM) was added at t = \u221230 min to the media to activate PERK kinase and induce eIF2\u03b1 phosphorylation. Sephin1 (50 \u00b5M) was introduced either at t = \u221230 min (alongside thapsigargin, in the experiment shown in panel B below and in Figure 10\u2014figure supplement 1 panel C) or at t = \u2212300 min (Figure 10\u2014figure supplement 1 panel D). A PERK kinase inhibitor, PERKi/GSK260414A (2 \u00b5M), was added at t\u00a0=\u00a00 to visualize eIF2\u03b1P dephosphorylation at specified times. (B) Immunoblot of the time-dependent changes in the eIF2\u03b1P signal of compound-mutant Ppp1r15bKO; Gcn2KO CHO-K1 cells (clone #1) treated as in \u2018A\u2019. Where indicated, the cells were additionally exposed to Sephin1 (50 \u00b5M) or the actin-polymerizing agent Jasplakinolide (1 \u00b5M), which inhibits eIF2\u03b1P-dephosphorylation by sequestering G-actin. The immunoblot of eIF2\u03b1 (lower panel) serves as a loading control. Shown is a representative experiment repeated five times. (C) Plot of the eIF2\u03b1P signal (normalised to the value at t\u00a0=\u00a00 of the vehicle only (DMSO) sample) as a function of time derived from five independent experiments. The data have been fitted to an exponential decay curve (grey solid line for the vehicle and blue solid line for the Sephin1-treated sample). The exponential decay rate and the R2 of the fit are indicated.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** (A)\u00a0Schema of the procedure to create dual reporter (CHOP::GFP, XBP1s::Turquoise) compound mutant Gcn2KO;Ppp1r15bKO CHO-K1 cells using the CRISPR-Cas9 system. (B) Schema of the mutant alleles. The two coding exons of wildtype hamster Ppp1r15b are denoted as is the region encoding the PP1-binding RVxF motif (KVTF, in PPP1R15B) and the positions of the guide RNAs used to direct the Cas9-mediated double strand breaks. (C) Two-dimensional plot and histograms of the fluorescent signal of the CHOP::GFP and XBP1s::Turquoise reporters in compound Ppp1r15bKO; Gcn2KO CHO-K1 cells (clone #2). Where indicated, the cells were exposed to a low concentration of tunicamycin (0.2 \u00b5g/mL; 20 hr) alone or together with Sephin1 (50 \u00b5M). The mean \u00b1 CV (coefficient of variation) of the fluorescence intensity of the two reporters is displayed in the bar diagram. Shown is one of three independent experiments. (D) As in \u2018Figure 10B' but using Ppp1r15bKO; Gcn2KO (clone #2). (E) As in \u2018D\u2019 above, but Sephin1 pretreatment was extended to 5 hr, before the kinase shut-off procedure, and continued throughout. (F) As in \u2018D\u2019 above, but substituting tunicamycin (2.5 \u00b5g/mL; 2 hr) for thapsigargin as the PERK inducer. Shown is a representative experiment (of two repeats).\n\nTogether, PPP1R15A and PPP1R15B account for the bulk of eIF2\u03b1-P dephosphorylation activity of mammalian cells (Harding et al., 2009), but their relative contribution to the process in any given circumstance is unknown. Therefore, to adapt this assay to measure Sephin1\u2019s effect on PPP1R15A-mediated eIF2\u03b1-P dephosphorylation, it was essential to inactivate the gene encoding PPP1R15B, leaving PPP1R15A as the sole regulatory subunit of the eIF2\u03b1-P phosphatase. CRISPR-Cas9 mediated gene editing was used to create two different GCN2KO; Ppp1r15bKO compound-mutant CHO-K1 cells (Figure 10\u2014figure supplement 1A and B). As expected, the GCN2KO; Ppp1r15bKO compound-mutant CHO-K1 cells retained their responsiveness to Sephin1 (Figure 10\u2014figure supplement 1C). However, in this experimental system dependent solely on PPP1R15A, the time-dependent decline of the eIF2\u03b1-P signal (fitted to an exponential decay curve) yielded a time constant of 0.23 min\u22121 for the untreated and 0.19 min\u22121 for the Sephin1 treated sample, an insignificant difference (Figure 10B lanes 11\u201315, Figure 10\u2014figure supplement 1D and E and Figure 10C).\n\nTo mimic conditions used in the flow cytometry experiments (and those used by Das et al., 2015) kinase shut-off experiments were carried out on tunicamycin-treated cells (Figure 10\u2014figure supplement 1F). eIF2\u03b1-P dephosphorylation proceeded rapidly in tunicamycin-treated cells. However, Sephin1 had no inhibitory effect on the rate of dephosphorylation. This experiment reveals that under conditions in which Sephin1 exerts its proteostasis-promoting activities, it does not affect rates of eIF2a-P dephosphorylation.\n\nTo follow up on this matter, both copies of the gene encoding PPP1R15A were inactivated by CRISPR-Cas9 in the reporter containing CHO-K1 cells (Figure 11\u2014figure supplement 1A and B). Inactivation was confirmed by loss of the PPP1R15A signal in immunoblot of lysates from stressed mutant cells (Figure 11A). Sephin1 retained its ability to attenuate the response of both the XBP1s::Turquoise and the CHOP::GFP reporter in tunicamycin treated PPP1R15A null cells (Figure 11B). Similar observations were made in regard to the effect of Sephin1 in histidinol-treated cells (Figure 11C). These observations suggest that Sephin1 also exerts its proteostatic effect(s) in cells lacking PPP1R15A.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig11-v2.jpg)\n\n**Figure 11.:** (A) Immunoblot of endogenous PPP1R15A recovered by immunoprecipitation (using an anti-PPP1R15A antibody conjugated to Protein A Sepharose) from untreated and tunicamycin exposed parental cells and cells from two different Ppp1r15aKO CHO-K1 clones. The position of PPP1R15A is indicated and the immunoglobulin heavy-chain is marked with an asterisks. The immunoblot of eIF2\u03b1 (lower panel) serves as a loading control for the content of cellular protein in the lysates. (B) Two-dimensional plot and histograms of the fluorescent signal of the CHOP::GFP and XBP1s::Turquoise reporters in the two Ppp1r15aKO CHO-K1 clones. Where indicated, the cells were exposed to a low concentration of tunicamycin (0.2 \u00b5g/mL; 20 hr) alone or together with Sephin1 (50 \u00b5M). The mean \u00b1 CV (coefficient of variation) of the fluorescence intensity of the two reporters in each of the two clones is displayed in the bar diagram. Shown is one of three independent experiments. (C) As in \u2018C\u2019 above, but cells were exposed to histidinol. Shown is one of three independent experiments.\n\n![Figure 11\u2014figure supplement 1 .](https://cdn.elifesciences.org/articles/26109/elife-26109-fig11-figsupp1-v2.jpg)\n\n**Figure 11\u2014figure supplement 1 .:** (A) Schema of the procedure to create dual reporter (CHOP::GFP, XBP1s::Turquoise) Ppp1r15aKO CHO-K1 cells using the CRISPR-Cas9 system. (B) Schema of the mutant alleles. The two coding exons of wildtype hamster Ppp1r15a are denoted as is the region encoding the crucial RVxF motif (KVHF, in PPP1R15A) and the positions of the guide RNAs used to direct the Cas9-mediated double strand breaks.\n\nNext, we used CRISPR-Cas9-mediated homologous recombination to introduce a site-specific mutation into the Eif2s1 locus, to encode an ISR-blocking eIF2\u03b1S51Amutation in the endogenous gene (Figure 12A and B). Surprisingly, Sephin1 retained its ability to attenuate the XBP1s::Turquoise reporter in tunicamycin-treated eIF2\u03b1S51Amutant cells (Figure 12C). As CHOP activation is highly dependent on the ISR (Harding et al., 2000), activity of the CHOP::GFP reporter was strongly attenuated in mutant eIF2\u03b1S51Acells. Nonetheless, it is notable that residual activation of the reporter by tunicamycin (likely a consequence of ATF6 action at the CHOP promoter [Yoshida et al., 2000]), was also attenuated by Sephin1 (Figure 12C). These observations bring into question the primacy of the ISR in Sephin1\u2019s mechanism of action.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/26109/elife-26109-fig12-v2.jpg)\n\n**Figure 12.:** (A) Schematic representation of procedure used to create dual reporter (CHOP::GFP, XBP1s::Turquoise) Eif2s1S51A (eIF2\u03b1S51A) CHO-K1 cells using CRISPR-Cas9 system. (B) Immunoblot of CHO-K1 cell lysates using anti- eIF2\u03b1P (upper panel), anti- eIF2\u03b1 (middle panel) and anti-BiP (lower panel) antibodies. Two-fold more cell lysate was loaded onto lanes 5 and 6 to compensate for the lower eIF2\u03b1 content of the haploid mutant Eif2s1S51A cells. (C) Two-dimensional plot and histograms of the fluorescent signal of the CHOP::GFP and XBP1s::Turquoise reporters in the Eif2s1S51A CHO-K1 cells. Where indicated, the cells were exposed to a low concentration of tunicamycin (0.2 \u00b5g/mL; 20 hr) alone or together with Sephin1 (50 \u00b5M). The mean \u00b1 CV (coefficient of variation) of the fluorescence intensity of the two reporters in each of the two clones is displayed in the bar diagram. Shown is representative experiment of two independent experiments performed. Note the blunted expression of CHOP::GFP wrought by the ISR-defect imposed by the Eif2s1S51A mutation.\n\n## Discussion\n\nThe role of the eIF2\u03b1-P-dependent ISR in defending against unfolded protein stress is well supported by genetic and pharmacological experiments (Baird and Wek, 2012; Ron and Harding, 2007). By retarding its dephosphorylation, the primary consequence of eliminating PPP1R15A is to prolong the duration of the eIF2\u03b1-P signal in stress response scenarios (Kojima et al., 2003; Novoa et al., 2003) and to alter the repertoire of mRNA translation\u00a0(Reid et al., 2016). Therefore, the finding that cells and mice lacking PPP1R15A are relatively resistant to pharmacological and genetic models associated with unfolded protein stress in the endoplasmic reticulum (ER stress) has engendered a specific interest in targeting the PPP1R15A-containing phosphatase complex for inhibition, as a means for accessing the therapeutic potential of enhanced ISR signalling.\n\nSephin1 and Guanabenz, compounds previously proposed to exert their proteostatic effects by disrupting the essential PP1-PPP1R15A complex and inhibiting eIF2\u03b1-P dephosphorylation (Das et al., 2015) are found here to have no effect in in vitro enzymatic assays dependent on the formation of a PP1-PPP1R15A complex. Sephin1 likewise proved inert in a Bio-Layer Interferometry assay that measured directly the affinity of PPP1R15A and PP1 for one another. Furthermore, we find that Sephin1 does not interfere with eIF2\u03b1-P dephosphorylation in cells (as measured by a kinase shut-off experiment) and that Sephin1 retains its ability to attenuate the impact of a challenge to proteostasis even in cells lacking PPP1R15A, or in ISR-defective Eifs1S51A cells. These observations suggest that the previously-reported attenuation of the recovery of PP1 in complex with PPP1R15A, when both were purified from lysates of cells treated with Sephin1 was unlikely to be a direct consequence of Sephin1 interference with complex formation or of destabilization by Sephin1 of a pre-existing complex and also call into question the importance of any indirect disruption of the PP1-PPP1R15A complex that may occur in vivo and remain undetected by our assays.\n\nOur findings, questioning whether Sephin1 attains its proteostatic activity by inhibiting the PPP1R15A-containing eIF2\u03b1-P directed holophosphatase, and similar concerns raised by the Peti and Shenolikar labs (Choy et al., 2015), do nothing to diminish the attractiveness of PPP1R15A inhibition as a potential means for defending proteostasis. Similarly, there is nothing in our study to question the beneficial effects reported for Sephin1 in mouse models of neurodegeneration (Das et al., 2015) nor we do not challenge the enhanced susceptibility of Ppp1r15bKO cells to the [(o-chlorobenzylidene)amino]guanidine, Guanabenz (Tsaytler et al., 2011). However, our findings that Sephin1 exerts its effects in CHO-K1 cells lacking PPP1R15A or in ISR-defective Eifs1S51A cells raise doubts as to whether these phenomena were attained via inhibition of PPP1R15A or indeed modulation of the ISR.\n\nCrystal structures of the PPP1R15(A or B)-PP1 and the related PNUTS/PPP1R10-PP1 and spinophilin/PPP1R9B-PP1 complexes reveal that both the residues corresponding to human PPP1R15AV556 (of the RVxF motif) and the conserved arginine (human PPP1R15AR578) insert deeply into the surface of the PP1 subunit (Chen et al., 2015; Choy et al., 2014, 2015). The contrast between the dramatic effect of the PPP1R15AV556E mutation and the more modest effect of the human PPP1R15AR578A mutation on the PPP1R15A-PP1 complex may reflect a role for the former early in the pathway to complex assembly (a process that can be thought of as PPP1R15A folding on the surface of PP1). It is therefore possible that inhibitors of the eIF2\u03b1-P holophosphatase might disrupt complex assembly, without affecting the stability or activity of a preformed complex. However, Sephin1 is unlikely to belong to such a category, as it failed to exert an inhibitory effect on enzymatic activity or on the BLI signal even when added to pure PPP1R15A, before addition of PP1 and G-actin. But other compounds that remain to be found might selectively disrupt the assembly of the PPP1R15A-PP1 complex by binding to and stabilizing an intermediate step in its formation.\n\nSimilarly instructive is the human PPP1R15AW582A mutation, which eliminates all detectable selectivity of PPP1R15-holophosphatases for eIF2\u03b1-P (Chen et al., 2015)(and Figure 3B here) without affecting the kinetics of the bimolecular association of PPP1R15A with PP1 or G-actin. These features suggest that the side chain of W582 - a residue conserved throughout the PPP1R15 family - may have a special role in aligning PP1 and G-actin to form a composite surface with affinity for the substrate, without contributing measurably to the stability of the tripartite holophosphatase. That the side chain of single tryptophan residue can bias the complex towards activity (without affecting its stability), suggests the possibility that small molecules might access this allosteric mechanism and bias the tripartite holophosphatase towards or away from enzymatic activity without the need to disrupt an extensive protein-protein interface.\n\nSpecific cellular dephosphorylation events are notoriously difficult to target with small molecules (Sakoff and McCluskey, 2004). Here we presented evidence that the perception of Sephin1 as a milestone in overcoming that challenge may need re-thinking. However, features of the PPP1R15A-PP1-G-actin holophosphatase noted above suggest ways in which eIF2\u03b1-P dephosphorylation might indeed be selectively targeted by small molecules. In vitro assays for selective eIF2\u03b1-P dephosphorylation, such as the one described here, might prove useful in discovery of small molecules with such a mechanism of action.\n\n## Materials and methods\n\n### Plasmid construction\n\nDiverse cloning techniques were used to create the bacterial and mammalian expression vectors listed in Table 1. This table contains information about lab number, name, description and reference for each plasmid used.\n\n**Table 1.**\n Plasmids used.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Lab number</th>\n      <th>Lab name</th>\n      <th>Description</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>UK105</td>\n      <td>eIF2a-NM_pET30a</td>\n      <td>His6-tagged mouse eIF2a 1\u2013185 pET-30a(+)\"</td>\n      <td>PMID 15341733</td>\n    </tr>\n    <tr>\n      <td>UK168</td>\n      <td>PerkKD-pGEX4T-1</td>\n      <td>Bacterial expression plasmid for mouse PERK kinase domain</td>\n      <td>PMID 9930704</td>\n    </tr>\n    <tr>\n      <td>UK622</td>\n      <td>PGV_PP1G_1\u2013323_V1</td>\n      <td>Bacterial expression plasmid forfull-length PP1 phosphatase catalytic domain</td>\n      <td>PMID 25774600</td>\n    </tr>\n    <tr>\n      <td>UK1359</td>\n      <td>pSpCas9(BB)\u22122A-GFP</td>\n      <td>Mammalian expression of GFP-tagged Cas9 and single guide RNA to introduce double strand breaks (Addgene 48138)</td>\n      <td>PMID 24157548</td>\n    </tr>\n    <tr>\n      <td>UK1367</td>\n      <td>pSpCas9(BB)\u22122A-Puro</td>\n      <td>Mammalian expression of Puror-tagged Cas9 and single guide RNA to introduce double strand breaks (Addgene 48138)</td>\n      <td>PMID 24157549</td>\n    </tr>\n    <tr>\n      <td>UK1497</td>\n      <td>CHO_EIF2K4_guideA*_pSpCas9(BB)\u22122A-Puro</td>\n      <td>Puro-tagged CRISPR for targeting human CHO GCN2(EIF2K4) gene</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1507</td>\n      <td>CHO_Eif2s1_guideC_pSpCas9(BB)\u22122A-Puro</td>\n      <td>A single guide gRNA plasmid for eIF2a (EIF2S1) locus</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1599</td>\n      <td>CHO_PPP1R15A_guide1_pSpCas9(BB)\u22122A-GFP</td>\n      <td>A single guide gRNA plasmid for GADD34 locus</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1600</td>\n      <td>CHO_PPP1R15A_guide2_pSpCas9(BB)\u22122A-GFP</td>\n      <td>A single guide gRNA plasmid for GADD34 locus</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1610</td>\n      <td>pSpCas9(BB)\u22122A-mCherry_V2</td>\n      <td>modified pSpCas9(BB)\u22122A vector to express mCherry together with guide RNA and Cas9</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1645</td>\n      <td>GST_Myd116_273\u2013657_malE_pGEX_TEV</td>\n      <td>Bacterial expression of GST-mouse GADD34 273\u2013657 -MBP</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1677</td>\n      <td>huPPP1R15A_325_636_malE_pGEX_TEV</td>\n      <td>Bacterial expression of GST-human GADD34- MBP</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1881</td>\n      <td>EcBirA_WT_pGEX_TEV (MP1)</td>\n      <td>Bacterial expression of fastidious E. coli BirA biotin ligase (R118 intact)</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1897</td>\n      <td>mPP1G_1\u2013323_pGEX_TEV_AviTag (MP2)</td>\n      <td>Bacterial expression GST_TEV_AviTag_FL mPP1G with non-tempaled C-term LE</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1920</td>\n      <td>huPPP1R15A_533_624_malE_pGEX_TEV_AviTag (MP1)</td>\n      <td>Bacterial-expression plasmid for N-tern AviTagged human GADD34 533\u2013624</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1921</td>\n      <td>huPPP1R15A_325_636_malE_pGEX_TEV_AviTag (MP4)</td>\n      <td>Bacterial-expression plasmid for N-tern AviTagged human GADD34 325\u2013624</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1992</td>\n      <td>huPPP1R15A_I596A_533_624_malE_pGEX_TEV_AviTag</td>\n      <td>Bacterial-expression plasmid for N-term AviTagged human GADD34 533\u2013624, I596A mutation</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1993</td>\n      <td>huPPP1R15A_V556E_R578A_533_624_malE_pGEX_TEV_AviTag</td>\n      <td>Bacterial-expression plasmid for N-term AviTagged human GADD34 533\u2013624, v556e R578A mutation</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1994</td>\n      <td>huPPP1R15A_V556E_533_624_malE_pGEX_TEV_AviTag</td>\n      <td>Bacterial-expression plasmid for N-term AviTagged human GADD34 533\u2013624, v556e mutation</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK1995</td>\n      <td>huPPP1R15A_F592A_533_624_malE_pGEX_TEV_AviTag</td>\n      <td>Bacterial-expression plasmid for N-term AviTagged human GADD34 533\u2013624, F592A mutation</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK2081</td>\n      <td>CHO_PPP1R15B_guideA_pSpCas9(BB)\u22122A-mCherry_V2</td>\n      <td>guide targeting cgPPP1R15B (hamster CReP) gene 5' end of exon1</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>UK2082</td>\n      <td>CHO_PPP1R15B_guideB_pSpCas9(BB)\u22122A-mCherry_V2</td>\n      <td>guide targeting cgPPP1R15B (hamster CReP) gene 3' end of exon 1</td>\n      <td>This paper</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nActin was purified from rabbit muscle according to (Pardee and Spudich, 1982) as modified by (Chen et al., 2015).\n\nExpression plasmids for PPP1R15A (GADD34) variants contained ampicillin resistance marker, N-terminal GST tag and C-terminal maltose binding protein (MBP) tag (UK1677, UK1920)(Table 1). They were transformed into BL21 T7 Express lysY/Iq E. coli (C3013, New England Biolabs) and colonies that grew in LB-ampicillin plates (100 \u03bcg/ml ampicillin) were used to create a saturated over-night culture. This saturated culture was used to inoculate 2\u20134 Litres of LB media supplemented with 100 \u03bcg/ml ampicillin. The cultures were incubated at 37\u00b0C until OD600\u00a0=\u00a00.6\u20130.8. At this point, they were induced with 1 mM Isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) and cultured for 20 more hours at 18\u00b0C. It was followed by a centrifugation step to pellet bacteria and resuspension of the ice-cold pellets in 3\u20134 pellet volumes of lysis buffer (50 mM Tris pH 7.4, 500 mM NaCl, 1 mM MnCl2, 1 mM MgCl2, 1 mM tris(2-carboxyethyl)phosphine (TCEP), 100 \u03bcM phenylmethylsulfonyl fluoride (PMSF), 20 mTIU/ ml aprotinin, 2 \u03bcM leupeptin, and 2 \u03bcg/ml pepstatin in 10% glycerol). An EmulsiFlex-C3 homogenizer (Avestin, Inc, Ottawa, Ontario) was used to lyse the bacteria, which were then clarified in a JA-25.50 rotor (Beckman Coulter) at 33,000\u00d7g for 30 min at 4\u00b0C. These suspensions were bound to pre-equilibrated glutathione sepharose 4B beads (17-0756-05, GE Healthcare) for 1\u20132 hr at 4\u00b0C. Beads were transferred to a 10 mL column after being batch-washed with 20 bed volumes of lysis buffer. Proteins were eluted in glutathione elution buffer (50 mM Tris pH 7.4, 100 mM NaCl, 40 mM glutathione, 0.5 mM MnCl2, 0.5 mM TCEP, 10% glycerol), and cleaved with Tobacco Etch Virus protease (TEV) (12.5 \u03bcg TEV protease/mg protein) overnight at 4\u00b0C to remove the N-terminal GST tag. Cleaved proteins were bound to amylose beads (E8021S, New England Biolabs) for 1\u20132 hr at 4\u00b0C. Twenty/thirty bed volumes of lysis buffer were used to batch-wash the amylose beads, which were transferred to a 10 mL column and eluted with HEPES buffer (20 mM HEPES, 100 mM NaCl, 0.2 mM CaCl2, 0.2 mM ATP, 0.2 mM TCEP, 0.5 mM MnCl2, 100 \u03bcM PMSF, 20 mTIU/ ml aprotonin, 2 \u03bcM leupeptin, and 2 \u03bcg/ml pepstatin) and 10 mM maltose.\n\nPP1 (UK622) (Table 1) was purified as above, with the following modifications: LB media cultures were supplemented with MnCl2, after TEV cleavage proteins were buffer exchanged using a 2 mL desalting column in HEPES buffer and re-bound to glutathione sepharose 4B beads to remove free GST tag.\n\nPhosphorylated eIF2\u03b1 was encoded by an expression plasmid containing N-terminal His-Tag and kanamycin resistance marker (UK105) (Table 1). BL21 T7 Express lysY/Iq E. coli were co-transformed with this plasmid and a GST-Tagged PERK plasmid carrying ampicillin resistance marker (UK168)(Table 1). Colonies that grew in ampicillin (100 \u03bcg/ml) and kanamycin (50 \u03bcg/ml) LB-plates were used to create a saturated over-night cultured with which 2L of ampicillin and kanamycin LB were inoculated. Growth, induction and purification was as described for PPP1R15A, with the following changes: beads used were Ni-NTA (30230, Qiagen) to bind His-tag, lysis buffer contained 20 mM imidazole and elution buffer contained 500 mM imidazole instead of glutathione. This protein did not require TEV cleavage but an additional size exclusion chromatography step was included. A Superdex S200 (GE Healthcare) was used to gel filter the protein in 25 mM Tris, 100 mM NaCl, 0.1 mM EDTA, 1 mM DTT and 10% glycerol buffer.\n\nAll proteins were snap frozen and kept at \u221280\u00b0C in small aliquots. Final concentration of proteins was calculated from UV absorbance at 280 nm measurements in Nanodrop (Thermo Scientific,\u00a0UK) and based on their extinction coefficient values predicted by MacVector.\n\n### In vitro biotinylation reactions\n\nBiotin (B1595, Thermo Scientific) was added to the AviTagged specified proteins (encoded by UK1897, 1920, 1921, 1992, 1993, 1994, 1995)(Table 1) using BirA. BirA was amplified by PCR reaction from E. coli genomic DNA and inserted into an expression vector containing N-terminal GST (TEV cleavable) and ampicilin resistance marker (UK1881) (Table 1). This protein was purified following standard GST-tagged protocols, eluted in glutathione elution buffer, aliquoted and stored in this buffer. All proteins were biotinylated and its biotinylation was checked as described (Fairhead and Howarth, 2015)\n\nProteins in glutathione elution buffer were biotinylated and buffer exchanged into a HEPES buffer to remove excess of biotin that would interfere with the Bio-Layer Interferometry measurements.\n\n### In vitro dephosphorylation of eIF2\u03b1P\n\nDrugs\u00a0used:\u00a0Sephin1 (EN300-195090, Enamine), tautomycin (5805551, Calbiochem), Guanabenz (D6270, Sigma-Aldrich), salubrinal (Sal003, S4451, Sigma-Aldrich)\n\nDephosphorylation reactions were conducted as described (Chen et al., 2015). In summary, reactions were conducted by combining the different proteins for 20 min at 30\u00b0C whilst shaking at 500 rpm and were stopped by addition of Laemmli buffer. A fraction of the reactions were loaded into PhosTag SDS-PAGE, stained using Coomasie and scanned. ImageJ (NIH) was used to quantify signal intensity.\n\nEnzyme velocity, V was measured at substrate concentrations well below the enzyme\u2019s Km and in samples with less than 25% substrate depletion. Under these conditions, the instantaneous velocity (i.e. rate of substrate conversion to product per molecule of enzyme) is proportional to instantaneous substrate concentration and the equivalent velocity is obtained with the equation below, derived from the integrated rate equation for first order kinetics:\n\n$$\nVi=\\frac{ln\\frac{[S]_{0}}{[S]_{f}}\u2217[S]_{0}}{\u0394t\u2217[ENZ]}\n$$\n\nWhere Vi is the initial velocity (the instantaneous velocity at t\u00a0=\u00a00, with the dimensions of 1/t), $[s]_{0}$ and $[s]_{f}$ are, respectively, the substrate concentrations at the beginning and end of the reaction, $\u0394t$ is the time interval of the reaction and $[ENZ]$ is the concentration of enzyme. The \u2018agonist fitting\u2019 or \u2018inhibitor fitting\u2019 functions of GraphPad Prism V7 (RRID: SCR_002798) were used to analyze the effects of varying concentrations of reaction components on velocity.\n\n### Bio-Layer Interferometry (BLI) measurements\n\nProteins were diluted in HEPES buffer at the specified concentrations. Two-hundred microliters of each diluted protein preparation was placed in a 96 well plate (655209, Greiner). Streptavidin sensors (18\u20135019, ForteBio) were hydrated in this buffer for 2\u20135 min before the binding assay was performed. The plate was placed in the ForteBio Octet RED96 System for data acquisition which was performed at 25\u00b0 C at a constant orbital flow of 600 rpm. The binding assays consisted of the measurement of change in layer thickness (in nanometres) during a series of sequential steps. The sensor was equilibrated in the buffer (240 s) and the ligand (biotyninated protein) was loaded on the sensor. Ligand attachment to the sensor was checked by immersion of the sensor in buffer after loading (400\u20132000 s). Finally, association and dissociation of the proteins studied was analysed by soaking the sensor in analyte solutions and buffer, respectively. The duration of the ligand loading on the sensor was set to a specific time (600\u00a0s) or a specific value (2 nm displacement) depending on the experiment performed. The duration of the association and dissociation of the analyte to the ligand, was adjusted in order to capture bindings that had not reached equilibrium phase. Data analysis were performed using GraphPad V7 (RRID: SCR_002798) and curves were fitted to a receptor binding kinetics association then dissociation built-in model.\n\n### Gene editing\n\n#### Ppp1r15a mutant cells\n\nDual reporter CHOP::GFP, XBP1::Turquoise CHO-K1 cell line (clone S21 a derivative of RRID: CVCL_0214) (Sekine et al., 2015) were chosen to create Ppp1r15a knock out clones by CRISPR/Cas9 system (Ran et al., 2013). The identity of the S21 cells and their mutant derivatives has been confirmed by the persistence of the CHOP::GFP marker introduced into CHO-K1 cells (originally obtained from ATCC, catalogue number CCL-61) by the presence of proline auxotrophy and by genomic sequencing, which confirms them to be of Cricetulus griseus origin. Mycoplasma contamination is monitored frequently in our cell culture facility by cytoplasmic DAPI staining and by PCR\n\nCRISPy database (URL: http://staff.biosustain.dtu.dk/laeb/crispy/) was used to select single guide RNA sequences to target the PPP1R15A-encoding gene in exon 1 (upstream the PP1 binding motif). The two sequences selected were CRISPy Target ID 1668683 and 1671391 and duplex DNAs of the sequences were inserted into the pCas9-2A-GFP (UK1359) (Table 1) plasmid to create CHO_PPP1R15A_guide1_pSpCas9(BB)\u22122A-GFP (UK1599) and CHO_PPP1R15A_guide2_pSpCas9(BB)\u22122A-GFP (UK1600),(Table 1), respectively.\n\nCHO-K1 cells were transfected with either plasmid (UK1599 or UK1600) (Table 1) using Lipofectamine LTX (Invitrogen). Twenty-four hours later, cells were washed with PBS and resuspended in PBS containing 4 mM EDTA. A MoFlo Cell Sorter (Beckman Coulter) was used to individually sort GFP-positive cells (confirming plasmid transfection). Genomic analysis of the clones was performed using a PCR-based assay. Primers were designed to amplify the Ppp1r15a region targeted by the RNA guides. The reverse primer was labelled with 6-carboxyfluorescein (6-FAM) on the 5\u2019 end, to create fluorescently-labelled PCR products. The diluted PCR products were loaded on a 3130xl Genetic Analyzer (Applied Biosystems) and analysed using the Gene Mapper software (Applied Biosystems) to determine their length. Clones in which frame-shifting mutations were predicted by size of the PCR product, were sequenced. PPP1R15AKO(clone #1) (from Guide 1) was identified as compound heterozygous for two gene-disrupting alleles [1479_1492delGCTCAGGGTTGTCT/1491_1492ins (440n)] and PPP1R15AKO (clone #2) (from Guide 2) as homozygote [1588_1589insA]. All three alleles have a frame shift mutation 5\u2019 of the PP1 binding motif with no intervening AUG codon for in frame down-stream translation initiation of a fragment containing the PP1 binding motif.\n\n#### Eif2ak4 (GCN2); Ppp1r15b compound-mutant cells\n\nSame dual reporter CHOP::GFP, XBP1s::Turquoise CHO cell line (clone S21) was chosen to create compound-mutant GCN2KO; Ppp1r15bKO knock out clones by CRISPR/Cas9 system.\n\nA CRISPR guide was designed to target the region of exon 9 of Eif2ak4 (GCN2) that is upstream of the kinase domain. As previously described, a duplex DNA of CRISPy Target ID 1051489 was introduced in pCas9-2A-puro plasmid to create CHO_EIF2K4_guideA_pSpCas9(BB)\u22122A-Puro (UK1497) (Table 1). Cell sorting was based on loss of the ISR (lost of CHOP::GFP signal) upon Histidinol treatment. The Eif2ak4 genomic region from sorted cells was sequenced.\n\nThe GCN2KO clone selected was identified as homozygous for a 36019_36020insG InDel that encodes a truncated protein lacking the kinase domain.\n\nCRISPR guides were designed to target Ppp1r15b at either the 5\u2019 end (Guide A, CRISPy Target ID 1315067) or 3\u2019 end (Guide B, CRISPy Target ID 1315106) of exon1; both upstream of the catalytic KVxF motif spanning the junction of exons 1 and 2. Guide DNA duplexes for each target were introduced into pSpCas9(BB)\u22122A-mCherry_V2 (UK1610) (Table 1) to create CHO_PPP1R15B_guideA_pSpCas9(BB)\u22122A-mCherry_V2 (UK2081) and CHO_PPP1R15B_guideB_pSpCas9(BB)\u22122A-mCherry_V2 (UK2082) (Table 1). Positive CHO-K1 cell transfectants were sorted for mCherry expression by FACS. The Ppp1r15b genomic region from sorted cells was sequenced.\n\nThe selected clone targeted by guide A (clone #1) was heterozygous for a 45_52del and 48_49insC. The selected clone targeted by guide B (clone #2) was heterozygous for a 1724del and 1722_1725del (residue numbering based on NCBI Reference Sequence: NW_003614184.1). Both clones encode only truncated PPP1R15B proteins, each lacking the KVxF containing catalytic domain.\n\n(note: the existing anti-PPP1R15B sera do not recognize the hamster protein, hence confirmation of gene disruption was confined to genotypic analysis which revealed frame-shifting that precludes expression of the active C-terminal fragment).\n\n#### Eif2s1 (eIF2\u03b1) gene editing\n\nHigh fidelity homology directed repair (HDR) CRISPR/Cas9 system was used to create Ser51Ala mutation in eIF2\u03b1 in dual reporter CHOP::GFP, XBP1s::Turquoise CHO-K1 cell line (clone S21).\n\nDuplex DNAs of guide sequence [CRISPy Target ID: 1051485] was inserted into pCas9-2A-puro vector to create CHO_Eif2s1_guideC_pSpCas9(BB)\u22122A-Puro (UK1507) (Table 1). CHO cells were transfected with this plasmid and a 190 bp single-stranded DNA oligonucleotide (ssODN) that carried the desired mutation (Ser51Ala) and a PAM mutation (to abolish the Cas9 cleavage site in recombinant alleles). Cells that were CHOP::GFP negative upon histidinol treatment were single-cell sorted. The genotypic analysis of the selected clone showed that it is heterozygous, one allele contains the desired mutation [5307_T>G (Serine), 5321_C>T (PAM)] and the other allele has an insertion that produces a truncated version of the protein (5326_5327insT), thus the only functional copy of eIF2\u03b1 in this cell has the S51A mutation.\n\n### Flow cytometry analysis\n\nCHO cells were plated in six well plate at 3\u00b7105 cells/well density. Next day, they were treated for 20 hr with specified compounds. They were washed twice with PBS and suspended in PBS 4 mM EDTA to be evaluated by flow cytometry. Flow cytometry data were analyzed using FlowJo (FlowJo,LLC, RRID: SCR_008520) and GraphPad-Prism V7 (RRID: SCR_002798) was used to create bar graphs.\n\nReplicates of flow cytometry experiments were analysed using Stata 14 StataCorp. (2015. Stata Statistical Software: Release 14. College Station, TX: StataCorp LP, RRID: SCR_012763). The interaction between treatments and genotypes in the different repeats was modeled using linear regression. The model was used to test whether the effect of different treatments differed between the genotypes, allowing for different mean values of CHOP::GFP and XBP1s::Turquoise on each repeat. The analysis showed non-significant differences between genotypes. However, for each cell type, there were significant differences (p<0.02) between untreated cells versus stressed cells and also between the latter and cells co-treated with Sephin1.\n\n### Cell treatment, immunoprecipitation and immunoblot\n\nAntibodies\u00a0used:\u00a0rabbit anti-PPP1R15A (10449\u20131-AP, ProteinTech, RRID: AB_2168724), rabbit anti-eIF2\u03b1-P (ab32157, Abcam, RRID: AB_732117), chicken anti-BiP (Avezov et al., 2013), mouse anti-eIF2\u03b1 (Scorsone et al., 1987)\n\nDrugs\u00a0used:\u00a0tunicamycin (T2250, Melford), thapsigargin (586005, Calbiochem), L-Histidinol (228830010, Acros Organics), PERKi (Gift from GSK, GSK2606414A) Sephin1 (EN300-195090, Enamine)\n\nCHO-K1 cells were plated in 10 cm dishes until they reached 80% confluency, at which point they were treated with 2.5 \u03bcg/mL of tunicamycin or DMSO (vehicle) for 7 hr. Cells were washed twice with ice-cold PBS, scraped in presence of PBS with 1 mM EDTA and centrifuged at 376 g for 5 min at 4\u00b0C (5424 R, Eppendorf). Four pellet-volume of harvest buffer (10 mM HEPES pH 7.9, 50 mM NaCl, 0.1 mM EDTA, 0.5% Triton, 0.5 M Sucrose, 1 mM DTT, 4 \u03bcg/mL Aprotinin, 1 mM PMSF, 2 \u03bcg/mL Pepstatin, 17.5 mM \u03b2-Glycerophosphate, 10 mM Tetrasodium Pyrophosphate, 100 mM NaF) was used to lyse the cells. After 5\u201310 min of incubation on ice, samples were clarified at 21130 g for 15 min at 4\u00b0C (5424 R, Eppendorf). Protein quantification of the clarified supernatants was performed using Bradford method.\n\nFor immunoprecipitation, 15 \u03bcL Protein A-Sepharose beads (Zymed, 10\u20131042) per sample where preincubated with anti-PPP1R15A antibody. Equal amounts of protein extract (800 \u03bcg) were incubated with the beads over night rotating at 4\u00b0C. After four washes with 1 mL of TBS, 20 \u03bcL of 2X Laemmli loading buffer were added to the samples. Once incubated at 70\u00b0C, same volumes were loaded into a 10% SDS-PAGE gel and transferred to a PVDF membrane.\n\n### Kinase shut-off experiment to assess eIF2\u03b1-P dephosphorylation in vivo\n\nThe experimental procedure was adapted from (Chambers et al., 2015). Briefly, CHO cells (Gcn2-/-; Ppp1r15b-/-) were plated in 10 cm dishes at 40% confluency. Sixteen-twenty hours later, fresh media was added and cells were incubated for 2 hr. Sephin1 (50 \u03bcM) or DMSO was added to the media for either 30 min or 5 hr before application of thapsigargin (300 nM for 30 min) or tunicamycin (2.5 \u00b5g/mL for 2 hr) to induce stress by activation of PERK kinase. GSK2606414A [2 \u00b5M] was added to inhibit PERK. The PP1R15A-PP1-dependent decay of the eIF2\u03b1-P signal (by its dephosphorylation) was tracked by stopping the reaction at different time points by addition of ice-cold PBS. eIF2\u03b1-P and total eIF2\u03b1 were detected by immunoblot. ImageJ (NIH) was used to quantify signal intensity and one phase decay model was used (GraphPad-Prism V7, RRID: SCR_002798) to analyse the rate decay of eIF2\u03b1P dephosphorylation.\n\n### LC-UV-MS analysis\n\nA Shimadzu UFLCXR system coupled to an Applied Biosystems API2000 mass spectrometer was used. Column: Phenomenex Gemini-NX, 3 \u03bcm,110 \u00c5, C18, 50 \u00d7 2 mm (at 40\u00b0C). Mobile phase: solvent A: 0.1% formic acid in water; solvent B: 0.1% formic acid in acetonitrile. Gradient: pre-equilibration for 1 min at 5% solvent B in solvent A; then linear gradient 5\u201398% solvent B over 2 min, 98% B for 2 min, 98\u20135% B over 0.5 min, then 5% B for 1 min. Flow rate: 0.5 mL/min. Detector: UV detection at 254 nm (channel 1), 220 nm (channel 2). Mass spectrometer: positive ion mode.\n",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "f5428393-3f13-4643-819d-73971432e2fb",
+      "submission_id": "a25dfa90-2ddd-4f3d-9053-702f5e30c42d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vivek Malhotra, The Barcelona Institute of Science and Technology , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26109.020](https://doi.org/10.7554/eLife.26109.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"PPP1R15A-mediated eIF2\u03b1-P dephosphorylation is unaffected by [(o-chlorobenzylidene)amino]guanidines\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Vivek Malhotra as the Reviewing and Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviews are in agreement on the overall importance and the strength of your data. However, they have requested additional data to strengthen your arguments and to rule out the possibility that differences presented are because of the quality and types of approaches. We would like you to address the following concerns.\n\n1) The most direct comparison of assay type in your paper with those in Das et al. and Tsaytler et al. is the analysis of eIF2\u03b1, and even that is done in a different way \u2013 thapsigargin versus tunicamycin in the other studies. We realise that you use tunicamycin in the FACS assays, but why not perform a \"western blot\" experiment that duplicates as much as possible as in the previous published work.\n\n2) Another option would be to repeat the \"pull-down\" type of experiment done in Figure 3 of Tsaytler et al.\n\n3) Although not related to testing the effects of sephin 1, it would be good to know the effects of salubrinal \u2013 the drug that you have identified in your assays.\n\nWe hope you will be able to address these issues in a timely manner and submit a stronger revised manuscript. Please do not hesitate to contact us for clarifications and issues with the commentary and handling of your manuscript.\n",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0d92b413-9e8f-4de9-b694-81a83d0de493",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C1",
+      "claim": "Phosphorylation of serine 51 of the \u03b1 subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) strongly influences protein folding homeostasis (proteostasis).",
+      "claim_type": "EXPLICIT",
+      "source": "Protein folding homeostasis (proteostasis) is achieved by balancing the rate of production, folding and protein degradation. Proteostasis is strongly influenced by the phosphorylation state of serine 51 of the \u03b1 subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) (Sonenberg and Hinnebusch, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sonenberg and Hinnebusch, 2009, indicating prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "fc31a2bb-b37f-400a-9150-7f51ae36ee0c",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C2",
+      "claim": "Diverse stress conditions activate kinases that phosphorylate eIF2\u03b1, resulting in attenuated rates of translation initiation of most mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse stress conditions activate kinases that phosphorylate eIF2\u03b1, resulting in attenuated rates of translation initiation of most mRNAs and increasing translation of a small group of mRNAs with special 5\u2032 untranslated regions (Hinnebusch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hinnebusch, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "06d69c0e-22c1-42a6-b0b6-9a8e77dab0d7",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C3",
+      "claim": "eIF2\u03b1 phosphorylation increases translation of a small group of mRNAs with special 5\u2032 untranslated regions that encode potent transcription factors such as ATF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse stress conditions activate kinases that phosphorylate eIF2\u03b1, resulting in attenuated rates of translation initiation of most mRNAs and increasing translation of a small group of mRNAs with special 5\u2032 untranslated regions (Hinnebusch, 2014). The latter encode potent transcription factors such as ATF4 that couple eIF2\u03b1 phosphorylation to the Integrated Stress Response (ISR) (Harding et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hinnebusch, 2014 and Harding et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "fe0970bf-5345-4816-86d5-bd52ca84e270",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C4",
+      "claim": "Dephosphorylation of eIF2\u03b1-P requires the presence of a regulatory subunit, PPP1R15, to direct the catalytic PP1 subunit to its specific substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Signalling in the ISR is terminated by eIF2\u03b1-P dephosphorylation. This requires the presence of a regulatory subunit, PPP1R15, to direct the catalytic, PP1 subunit, to its specific substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text as a known requirement for eIF2\u03b1-P dephosphorylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "dff111ad-c88d-42de-8107-6154dba5ad5a",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C5",
+      "claim": "Two mammalian genes encode PPP1R15 regulatory subunits: Ppp1r15b (CReP) encoding a constitutively expressed subunit and Ppp1r15a (GADD34) encoding an ISR inducible subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Two mammalian genes encode PPP1R15 regulatory subunits. Ppp1r15b (or CReP) encodes a constitutively expressed regulatory subunit (Jousse et al., 2003), whereas Ppp1r15a (or GADD34) encodes an ISR inducible regulatory subunit that contributes to a negative feed-back loop operative in the ISR (Brush et al., 2003; Ma and Hendershot, 2003; Novoa et al., 2001, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published work (Jousse et al., 2003; Brush et al., 2003; Ma and Hendershot, 2003; Novoa et al., 2001, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "17ffa408-9954-435f-8101-7d3c53c8bada",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C6",
+      "claim": "A minimal rate of eIF2\u03b1-P dephosphorylation is an essential cellular function, as reflected in severe phenotypes of Ppp1r15b mutation or deletion and early lethality of compound Ppp1r15a;b deficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A minimal rate of eIF2\u03b1-P dephosphorylation is an essential cellular function, as reflected in the severe phenotypes of Ppp1r15b mutation or deletion and in the very early lethality of compound Ppp1r15a;b deficient mice (Abdulkarim et al., 2015; Harding et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Abdulkarim et al., 2015 and Harding et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "e5e5b7f8-0ae8-4920-a65f-72fedff1a79c",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C7",
+      "claim": "Mice lacking PPP1R15A-directed eIF2\u03b1-P dephosphorylation (homozygous Ppp1r15atm1Dron) are superficially indistinguishable from wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whilst deletion of the inducible Ppp1r15a gene results in sluggish recovery of protein synthesis during the waning phase of stress (Kojima et al., 2003; Novoa et al., 2003), mice lacking any PPP1R15A-directed eIF2\u03b1-P dephosphorylation (homozygous Ppp1r15atm1Dron) are superficially indistinguishable from wildtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text and supported by citations to Kojima et al., 2003 and Novoa et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "83c9707d-6971-4b43-8dc9-3a5afe38f8bd",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C8",
+      "claim": "Homozygous Ppp1r15atm1Dron mice and cultured cells derived from them are relatively resistant to tunicamycin's lethal effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when challenged with tunicamycin, which causes unfolded protein stress in the endoplasmic reticulum by inhibiting N-linked glycosylation, homozygous Ppp1r15atm1Dron mice and cultured cells derived from them are relatively resistant to the toxin's lethal effects (Marciniak et al., 2004; Reid et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Marciniak et al., 2004 and Reid et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "bedbfca1-7ed7-420d-9b90-ad982f40f048",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C9",
+      "claim": "Sustained activity of the ISR in Ppp1r15a mutant mice favours proteostasis by limiting the production of unfolded proteins under stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature is plausibly attributed to sustained activity of the ISR in the Ppp1r15a mutant mice, which favours proteostasis by limiting the production of unfolded proteins under stress conditions (Boyce et al., 2005; Han et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Boyce et al., 2005 and Han et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "6e4c7600-7f31-498f-bc91-2a30afd2a273",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C10",
+      "claim": "The neuropathic phenotype associated with Schwann cell expression of mutant P0S63\u2206 is ameliorated by a concomitant dephosphorylation-defective Ppp1r15atm1Dron mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the neuropathic phenotype associated with Schwann cell expression of a mutant misfolding-prone myelin constituent, P0S63\u2206, and a mutant superoxide dismutase expressed in motor neurones are ameliorated by a concomitant dephosphorylation-defective Ppp1r15atm1Dron mutation (D'Antonio et al., 2013; Wang et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to D'Antonio et al., 2013 and Wang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "4321a746-34cc-4200-b26a-649826f98e81",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C11",
+      "claim": "A mutant superoxide dismutase expressed in motor neurones is ameliorated by a concomitant dephosphorylation-defective Ppp1r15atm1Dron mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the neuropathic phenotype associated with Schwann cell expression of a mutant misfolding-prone myelin constituent, P0S63\u2206, and a mutant superoxide dismutase expressed in motor neurones are ameliorated by a concomitant dephosphorylation-defective Ppp1r15atm1Dron mutation (D'Antonio et al., 2013; Wang et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to D'Antonio et al., 2013 and Wang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "0ab26935-759c-4acb-baf7-7a47ce1a3c49",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C12",
+      "claim": "Inflammatory-mediated central nervous system demyelination is ameliorated in Ppp1r15atm1Dron mice.",
+      "claim_type": "EXPLICIT",
+      "source": "and similar amelioration of inflammatory-mediated central nervous system demyelination is observed in the Ppp1r15atm1Dron mice (Lin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lin et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "db4a967a-f05d-41f9-8083-8e7ca333ee58",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C13",
+      "claim": "Salubrinal is a small molecule that increases levels of eIF2\u03b1-P and retards its dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Early work led to discovery of salubrinal, a small molecule that increases levels of eIF2\u03b1-P and retards its dephosphorylation. However, salubrinal is only known to work in vivo and its mechanism of action remains unclear (Boyce et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Boyce et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "89d36c5f-5776-4aab-ab13-fd1e319f0583",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C14",
+      "claim": "Salubrinal only works in vivo and its mechanism of action remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, salubrinal is only known to work in vivo and its mechanism of action remains unclear (Boyce et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Boyce et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "8720aa4c-eeb2-45a3-8ad5-f51b83eb884d",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C15",
+      "claim": "Guanabenz exerts beneficial effects on proteotoxicity by interfering with eIF2\u03b1-P dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "but a cell based search for proteostasis regulators suggested that the \u03b12 adrenergic blocker Guanabenz, [(o,o-dichlorobenzylidene)amino]guanidine, might exert its beneficial effects on proteotoxicity by interfering with eIF2\u03b1-P dephosphorylation (Tsaytler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tsaytler et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "426265ee-fcc2-4664-af87-f5d4bf963ca4",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C16",
+      "claim": "Sephin1 lost its \u03b12 adrenergic blocking activity but retained its proteostasis promoting properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This theme was extended further by the discovery of Sephin1, [(o-chlorobenzylidene)amino]guanidine, that had lost its \u03b12 adrenergic blocking activity but retained its proteostasis promoting properties (Das et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Das et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "8961944b-eb22-45ee-994d-bfc72842aa5e",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C17",
+      "claim": "Guanabenz and Sephin1 disrupt the complex between PPP1R15A and PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, biochemical characterization of Guanabenz and Sephin1 suggested that both disrupt the complex between PPP1R15A and PP1, providing strong support for a mechanism of action that involves interfering with PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (Das et al., 2015), Figure 1C therein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Das et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "613f708d-c8cd-406e-8057-a4a349d20f80",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C18",
+      "claim": "A regulatory PPP1R15 subunit is essential for eIF2\u03b1-P dephosphorylation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic analysis reveals that a regulatory PPP1R15 subunit is essential for eIF2\u03b1-P dephosphorylation in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a result of genetic analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "ec357405-f654-481e-9555-d5de8318f651",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C19",
+      "claim": "Over-expression of either PPP1R15A or PPP1R15B or merely their conserved C-terminal portion is sufficient to deregulate eIF2\u03b1-P dephosphorylation in vivo and inhibit the ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "and over-expression of either PPP1R15A or PPP1R15B or merely their conserved C-terminal portion, is sufficient to deregulate eIF2\u03b1-P dephosphorylation in vivo and inhibit the ISR (Brown et al., 1997; Brush et al., 2003; Jousse et al., 2003; Novoa et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brown et al., 1997; Brush et al., 2003; Jousse et al., 2003; Novoa et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "5c788966-e4ac-46d9-8986-52e6fb4700f1",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C20",
+      "claim": "PPP1R15 regulatory subunits stably bind the catalytic subunit (PP1), but the resulting binary complex is devoid of specificity towards eIF2\u03b1-P.",
+      "claim_type": "EXPLICIT",
+      "source": "Though PPP1R15 regulatory subunits stably bind the catalytic subunit (PP1), the resulting binary complex is devoid of specificity towards eIF2\u03b1-P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "3735270e-b032-474d-bb3e-75983c0ef22e",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C21",
+      "claim": "G-actin joins the PPP1R15-PP1 binary complex as an ancillary subunit to form a ternary complex endowed with substrate-specific eIF2\u03b1-P directed phosphatase activity in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, G-actin joins the PPP1R15-PP1 binary complex as an ancillary subunit to form a ternary complex endowed with substrate-specific eIF2\u03b1-P directed phosphatase activity, both in cells (Chambers et al., 2015) and when constituted with pure components in vitro (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chambers et al., 2015 and Chen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "f349afe0-cd05-4e34-97a0-9e8d416fbf8e",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C22",
+      "claim": "G-actin joins the PPP1R15-PP1 binary complex as an ancillary subunit to form a ternary complex endowed with substrate-specific eIF2\u03b1-P directed phosphatase activity when constituted with pure components in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, G-actin joins the PPP1R15-PP1 binary complex as an ancillary subunit to form a ternary complex endowed with substrate-specific eIF2\u03b1-P directed phosphatase activity, both in cells (Chambers et al., 2015) and when constituted with pure components in vitro (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chambers et al., 2015 and Chen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "9b23ecde-ba0c-4a25-8f09-1197f035c057",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C23",
+      "claim": "Only the C-terminal 70 residues of PPP1R15A are necessary for substrate-specific dephosphorylation of eIF2\u03b1-P.",
+      "claim_type": "EXPLICIT",
+      "source": "PPP1R15A/GADD34 is a protein of >600 residues, but only the C-terminal 70 residues are necessary for substrate-specific dephosphorylation of eIF2\u03b1-P (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "dc946a18-e9be-464c-8393-89a05a7220f0",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C24",
+      "claim": "The C-terminal active fragment of PPP1R15A is the most conserved segment of the protein, both between homologues of PPP1R15A and with the paralogous PPP1R15B.",
+      "claim_type": "EXPLICIT",
+      "source": "This active fragment is also the most conserved segment of the protein; both between homologues of PPP1R15A and with the paralogous PPP1R15B (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and illustrated in Figure 1B showing sequence alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "c2042ad2-c68a-4b1a-9a6d-10c8fe6563dd",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C25",
+      "claim": "The C-terminal region of PPP1R15A is natively unfolded, attaining its structure upon binding the PP1 catalytic and the G-actin ancillary subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "This region of the protein is natively unfolded (Yu et al., 2004), attaining its structure upon binding the PP1 catalytic and the G-actin ancillary subunits (Chen et al., 2015; Choy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Yu et al., 2004; Chen et al., 2015; Choy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "c7a412b4-c68d-428f-b7a8-fb9db80bea87",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C27",
+      "claim": "The EC50 of human PPP1R15A for eIF2\u03b1-P dephosphorylation is 7 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the dependence of eIF2\u03b1-P dephosphorylation rates on both the concentration of the regulatory human PPP1R15A subunit (EC50 = 7 nM) and on the ancillary G-actin subunit (EC50 = 13 nM) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "8992fdde-4b50-4b09-96cb-8fe12ee7ad8d",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C28",
+      "claim": "The EC50 of G-actin for stimulation of eIF2\u03b1-P dephosphorylation is 13 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the dependence of eIF2\u03b1-P dephosphorylation rates on both the concentration of the regulatory human PPP1R15A subunit (EC50 = 7 nM) and on the ancillary G-actin subunit (EC50 = 13 nM) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "c9a2a75d-6672-487a-898a-4908d0207bf6",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C29",
+      "claim": "The EC50 of G-actin measured in this study agreed with previous measurements of G-actin's stimulation of enzymatic activity using murine PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter values agreed with our previous measurements of G-actin's stimulation of enzymatic activity (in an assay using the murine PPP1R15A) (Chen et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "45131348-8def-4b28-9336-87085726e48a",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C30",
+      "claim": "The EC50 of human PPP1R15A was within an order of magnitude of the affinity of human PPP1R15A for PP1, as measured by isothermal titration calorimetry.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the EC50 of human PPP1R15A was within an order of magnitude of the affinity of human PPP1R15A for PP1, as measured by isothermal titration calorimetry (Choy et al., 2015) (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Choy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "d6968677-869d-4514-9c83-1e9adff5a01b",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C31",
+      "claim": "The human PPP1R15AV556E mutation abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The human PPP1R15AV556E mutation alters a key residue, part of the RVxF motif involved in binding of diverse regulatory subunits to PP1 (Egloff et al., 1997); its presence abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 3A, with a citation to Egloff et al., 1997.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "fa80b1b6-a605-44da-ad01-d38eaae8a4f9",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C32",
+      "claim": "The human PPP1R15AW582A mutation abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two previously-identified mutations in the C-terminal extension of PPP1R15A - the portion that interacts with the G-actin ancillary subunit (human PPP1R15AW582A and PPP1R15AF592A) (Chen et al., 2015) - also abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 3B, with a citation to Chen et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "a75cb946-1380-472f-b964-d1b1edcd50fd",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C33",
+      "claim": "The human PPP1R15AF592A mutation abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two previously-identified mutations in the C-terminal extension of PPP1R15A - the portion that interacts with the G-actin ancillary subunit (human PPP1R15AW582A and PPP1R15AF592A) (Chen et al., 2015) - also abolished all PPP1R15A-mediated eIF2\u03b1-P dephosphorylation (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 3C, with a citation to Chen et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "ec2ae276-4c31-4d7c-922b-79dc8262414b",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C34",
+      "claim": "The human PPP1R15AR578A mutation resulted in a ~4 fold increase in EC50 for eIF2\u03b1-P dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth mutation tested affects a residue whose counterpart in human PPP1R15BR658C results in a syndromatic form of diabetes mellitus. Consistent with the destabilizing effect of this mutation on PP1 binding (Abdulkarim et al., 2015), its presence in human PPP1R15AR578A resulted in a ~4 fold increase in EC50 for eIF2\u03b1-P dephosphorylation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 4A, with a citation to Abdulkarim et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "4f86f425-e07f-49bc-abed-ab9d50540e38",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C35",
+      "claim": "At saturating concentrations of human PPP1R15AR578A, eIF2\u03b1-P dephosphorylation reactions were three times slower than those assembled with wildtype PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation also affected the maximal stimulation afforded by human PPP1R15AR578A, as even at saturating concentrations of regulatory subunit, eIF2\u03b1-P dephosphorylation reactions assembled with the mutant were three times slower than those assembled with the wildtype (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "a3c2c9be-b4f5-4bfa-adcf-1ce20c028573",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C36",
+      "claim": "The human PPP1R15AR578A mutation does not have a major effect on the stability of the G-actin containing ternary complex, as the EC50 for G-actin (20 nM) was relatively unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "The human PPP1R15AR578A mutation does not appear to have a major effect on the stability of the G-actin containing ternary complex, as the EC50 for G-actin (20 nM) was relatively unaffected (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "fe383d04-1ba4-4e66-b7d9-9a4f3e54c4aa",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C37",
+      "claim": "Biotinylated PPP1R15A533-624 showed a robust 1:1 bimolecular interaction with pure PP1, yielding a koff = 0.21 \u00b1 0.01 min\u22121 and a Kd = 20 \u00b1 0.61 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The biotinylated PPP1R15A533-624 ligand showed a robust 1:1 bimolecular interaction, with pure PP1, yielding a koff = 0.21 \u00b1 0.01 min\u22121 and a Kd = 20 \u00b1 0.61 nM (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "5011156a-4840-4e34-ae75-0cda3e867b2c",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C38",
+      "claim": "The higher affinity of PPP1R15 for PP1 observed by BLI compared to ITC measurements might reflect the contribution of contacts made by residues C-terminal to PPP1R15AL567.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher affinity of PPP1R15 for PP1 observed here, compared to isothermal titration calorimetry (ITC) measurements of Choy et al. (2015) (Kd = 62 \u00b1 14 nM) might reflect the contribution of contacts made by residues C-terminal to PPP1R15AL567, which are present in the construct used here, but absent from the one used in the ITC measurements (Choy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a possible explanation and supported by a citation to Choy et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "33c8093a-002f-4efa-9d24-dd180c471dc1",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C39",
+      "claim": "G-actin binds to the PPP1R15A-PP1 binary complex with a koff = 2.84 \u00b1 0.11 min\u22121 and Kd = 151 \u00b1 14.3 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "A robust association-dissociation signal was observed with purified G-actin (koff = 2.84 \u00b1 0.11 min\u22121 and Kd = 151 \u00b1 14.3 nM) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "a61a621e-464a-4be0-9dd6-05348fac7654",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C40",
+      "claim": "The human PPP1R15AV556E mutation abolished all measureable association with PP1, but had no effect on the kinetics of G-actin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The human PPP1R15AV556E mutation, affecting the RVxF motif, abolished all measureable association with PP1, but had no effect on the kinetics of G-actin binding. Conversely, the human PPP1R15AF592A mutation markedly enfeebled G-actin binding but had no effect on PP1 binding (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "2bec0e8f-e6eb-463f-aaa3-5bf648a536d5",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C41",
+      "claim": "The human PPP1R15AF592A mutation markedly enfeebled G-actin binding but had no effect on PP1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the human PPP1R15AF592A mutation markedly enfeebled G-actin binding but had no effect on PP1 binding (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "a99d237b-ca9f-4044-8c0c-b9fe254eb0c4",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C42",
+      "claim": "PPP1R15A can engage PP1 and G-actin independently, via the N- and C-terminal parts of its active portion.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations confirm the ability of PPP1R15A to engage PP1 and G-actin independently, via the N- and C-terminal parts of its active portion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "67901007-2dcf-442d-a03a-89e40cfd1314",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C43",
+      "claim": "Neither the PPP1R15AR578A nor the PPP1R15AW582A mutations had a major effect on the kinetics of PP1 or G-actin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their strong detrimental effects on enzymatic activity (Figures 3C and 4), neither the PPP1R15AR578A nor the PPP1R15AW582A mutations had a major effect on the kinetics of PP1 or G-actin binding (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "ebdcdbd5-a5cb-4183-8ef4-829c29be818d",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C44",
+      "claim": "The tripartite enzymatic assay is sensitive both to mutations that grossly interfere with complex stability (V556E and F592A) and to mutations that more subtly affect the structure of the complex (R578A and W582A).",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that the tripartite enzymatic assay is sensitive both to mutations that grossly interfere with complex stability (V556E and F592A) and to mutations that more subtly affect the structure of the complex (R578A and W582A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "f93fe657-770d-49d6-8771-16586abcc18c",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C45",
+      "claim": "Das and colleagues previously reported that addition of 50 \u00b5M Sephin1 to tissue culture media disrupts the PPP1R15A-PP1 complex recovered from cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Das and colleagues previously reported that addition of 50 \u00b5M Sephin1 to tissue culture media disrupts the PPP1R15A-PP1 complex recovered from cells (Das et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Das et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "0f8a4b8d-c2a9-41a5-b2be-d2db00ed0231",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C46",
+      "claim": "Sephin1 at 50 \u00b5M had no measureable effect on either the association or dissociation phase of the PPP1R15A-PP1 BLI assay.",
+      "claim_type": "EXPLICIT",
+      "source": "When added to the BLI assay at a concentration of 50 \u00b5M (before exposure to PP1), Sephin1 had no measureable effect on either the association or dissociation phase of the assay (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "4ff848a5-ba70-4aa3-9b87-e0583b48fd6c",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C47",
+      "claim": "Sephin1 at 50 \u00b5M did not affect the association or dissociation kinetics when biotinylated PP1 was used as the ligand and PPP1R15A533-624 as the analyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of either the minimal active fragment, human PPP1R15A533-624, or the longer human PPP1R15A325-636, gave rise to a robust BLI signal but addition of Sephin1 affected neither the association nor dissociation phase of the experiment (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "1a143b41-bcf2-4dc2-b7a6-045117ffb1f7",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C48",
+      "claim": "Sephin1 at 50 \u00b5M did not affect the association or dissociation kinetics when biotinylated PP1 was used as the ligand and PPP1R15A325-636 as the analyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of either the minimal active fragment, human PPP1R15A533-624, or the longer human PPP1R15A325-636, gave rise to a robust BLI signal but addition of Sephin1 affected neither the association nor dissociation phase of the experiment (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by BLI experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "75798a73-bedd-4cd0-988d-c2b1a7f2300d",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C49",
+      "claim": "In the BLI experimental system, 50 \u00b5M Sephin1 does not directly interfere with assembly or stability of the PPP1R15A-PP1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reproducible inertness in all three assays lends confidence to the conclusion that in this experimental system 50 \u00b5M Sephin1 does not directly interfere with assembly or stability of the PPP1R15A-PP1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conclusion drawn from the BLI experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "e2ff12be-7aff-44e7-b845-a583933f3315",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C50",
+      "claim": "Purified PPP1R15A325-636 added to PP1 and G-actin accelerated eIF2\u03b1-P dephosphorylation with an EC50 of 5\u201310 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of purified PPP1R15A325-636 to PP1 and G-actin accelerated eIF2\u03b1-P dephosphorylation with an EC50 of 5\u201310 nM (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "46cbf2e7-6fd5-4547-8774-609612a03750",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C51",
+      "claim": "Sephin1 had no effect on the in vitro eIF2\u03b1-P dephosphorylation reaction assembled with PPP1R15A325-636.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Sephin1 had no effect on the dephosphorylation reaction (Figure 8B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "745a75e3-07f0-4998-b2da-dff79d0e645c",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C52",
+      "claim": "Tautomycin readily inhibited the in vitro eIF2\u03b1-P dephosphorylation reaction with an IC50 = 2.4 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst tautomycin readily inhibited the reaction (IC50 = 2.4 nM) confirming the sensitivity of the assay to a known inhibitor (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "525a54ae-46ee-47cf-83a1-3adb848694a2",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C53",
+      "claim": "Guanabenz at 50 \u00b5M proved inert in the in vitro eIF2\u03b1-P dephosphorylation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The related compound Guanabenz also proved inert, even when added to the enzymatic assay at the high concentration of 50 \u00b5M (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "d8d045e0-9d1c-4811-b3bb-dd2e5606ec7b",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C54",
+      "claim": "Salubrinal at 12 \u00b5M had a mild but highly reproducible inhibitory effect on the in vitro eIF2\u03b1-P dephosphorylation reaction (inhibition = 22% \u00b1 2.045, p<0.0001, n = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Salubrinal, added at 12 \u00b5M (higher concentrations led to conspicuous precipitation) had a mild but highly reproducible inhibitory effect (Figure 8E, inhibition = 22% \u00b1 2.045, unpaired t test, p<0.0001, n = 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by experimental data shown in Figure 8E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "095d8001-205c-42e0-8549-792240f6b575",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C55",
+      "claim": "Sephin1 attenuated the activity of both UPR pathways (ISR and IRE1) in cells exposed to tunicamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with these ideas and with the findings of Das and colleagues (Das et al., 2015), Sephin1 attenuated the activity of both UPR pathways in cells exposed to tunicamycin; an inhibitor of N-linked glycosylation, that promotes misfolding of newly-synthesized proteins (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by flow cytometry data shown in Figure 9A, with a citation to Das et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "06697eaa-338e-42ce-a0c6-2ea5ec44cd53",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C56",
+      "claim": "Sephin1's effects in the tunicamycin assay were observed only over a narrow concentration range of tunicamycin and at relatively high concentrations of the drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Though observed only over a narrow concentration range of tunicamycin (Figure 9\u2014figure supplement 1A) and at relatively high concentrations of the drug (Figure 9\u2014figure supplement 1B), Sephin1's effects in this assay can be reconciled with a mechanism involving a net reduction of protein synthesis; as suggested by Das and colleagues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 9\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "89352212-34b7-42ba-839a-ea774faaea1f",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C57",
+      "claim": "Sephin1 inhibited induction of the ISR in response to histidinol.",
+      "claim_type": "EXPLICIT",
+      "source": "Sephin1 also inhibited induction of the ISR in response to histidinol (Figure 9B), an agent that interferes with tRNA charging and thereby activates the eIF2\u03b1 kinase GCN2 (Zhang et al., 2002) without affecting protein folding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by flow cytometry data shown in Figure 9B, with a citation to Zhang et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "db94a36b-f0c6-4240-a0e5-85f3c8736a87",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C58",
+      "claim": "In the kinase shut-off experiment, eIF2\u03b1-P dephosphorylation is normally complete in 60 min in GCN2KO; Ppp1r15bKO CHO-K1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Normally, the dephosphorylation of eIF2\u03b1-P is a rapid process, complete in 60 min (Figure 10B, lanes 2\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by immunoblot data shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "0cf0583d-aada-4e11-b66c-4636ebc96977",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C59",
+      "claim": "Jasplakinolide markedly delayed eIF2\u03b1-P dephosphorylation by depleting the pool of G-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "It was markedly delayed by inclusion of jasplakinolide (Figure 10B lanes 7\u201310), which depletes the pool of G-actin (by promoting its oligomerization), thereby depriving the PPP1R15 subunits of an essential co-factor, as observed previously (Chambers et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by immunoblot data shown in Figure 10B, with a citation to Chambers et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "6cb85dd9-df14-403c-9c3f-e2b4fc211e25",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C60",
+      "claim": "In GCN2KO; Ppp1r15bKO CHO-K1 cells dependent solely on PPP1R15A, the time-dependent decline of the eIF2\u03b1-P signal yielded a time constant of 0.23 min\u22121 for untreated and 0.19 min\u22121 for Sephin1 treated samples, an insignificant difference.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this experimental system dependent solely on PPP1R15A, the time-dependent decline of the eIF2\u03b1-P signal (fitted to an exponential decay curve) yielded a time constant of 0.23 min\u22121 for the untreated and 0.19 min\u22121 for the Sephin1 treated sample, an insignificant difference (Figure 10B lanes 11\u201315, Figure 10\u2014figure supplement 1D and E and Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by immunoblot and quantitative data shown in Figure 10B, Figure 10\u2014figure supplement 1D and E, and Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "62c68e8b-5e85-43b6-ba70-507252cc21f4",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C61",
+      "claim": "In tunicamycin-treated GCN2KO; Ppp1r15bKO CHO-K1 cells, eIF2\u03b1-P dephosphorylation proceeded rapidly and Sephin1 had no inhibitory effect on the rate of dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2\u03b1-P dephosphorylation proceeded rapidly in tunicamycin-treated cells. However, Sephin1 had no inhibitory effect on the rate of dephosphorylation. This experiment reveals that under conditions in which Sephin1 exerts its proteostasis-promoting activities, it does not affect rates of eIF2a-P dephosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by immunoblot data shown in Figure 10\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "b0beb5c9-65a4-4149-9b48-251e7111c2dd",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C62",
+      "claim": "Sephin1 retained its ability to attenuate the response of both the XBP1s::Turquoise and the CHOP::GFP reporter in tunicamycin treated PPP1R15A null cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Sephin1 retained its ability to attenuate the response of both the XBP1s::Turquoise and the CHOP::GFP reporter in tunicamycin treated PPP1R15A null cells (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by flow cytometry data shown in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "7bfa2e6d-a932-4c90-afda-ae75866e6c64",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C63",
+      "claim": "Sephin1 retained its ability to attenuate the response of both reporters in histidinol-treated PPP1R15A null cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were made in regard to the effect of Sephin1 in histidinol-treated cells (Figure 11C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by flow cytometry data shown in Figure 11C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "25b7c9b4-21ad-4cf8-aff7-6ba45b292ed1",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C64",
+      "claim": "Sephin1 exerts its proteostatic effect(s) in cells lacking PPP1R15A.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that Sephin1 also exerts its proteostatic effect(s) in cells lacking PPP1R15A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conclusion drawn from the experimental observations in PPP1R15A null cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "df87271d-53fb-43f1-b71c-16b7ae2e3b42",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C65",
+      "claim": "Sephin1 retained its ability to attenuate the XBP1s::Turquoise reporter in tunicamycin-treated eIF2\u03b1S51A mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Sephin1 retained its ability to attenuate the XBP1s::Turquoise reporter in tunicamycin-treated eIF2\u03b1S51Amutant cells (Figure 12C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by flow cytometry data shown in Figure 12C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "b75eab1f-78e3-4a68-bcac-551f4405b6cc",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C66",
+      "claim": "Activity of the CHOP::GFP reporter was strongly attenuated in mutant eIF2\u03b1S51A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As CHOP activation is highly dependent on the ISR (Harding et al., 2000), activity of the CHOP::GFP reporter was strongly attenuated in mutant eIF2\u03b1S51Acells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text and supported by a citation to Harding et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "0cf97159-f78e-44b8-a2cf-79eb3cf74e14",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C67",
+      "claim": "Residual activation of the CHOP::GFP reporter by tunicamycin in eIF2\u03b1S51A cells was attenuated by Sephin1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it is notable that residual activation of the reporter by tunicamycin (likely a consequence of ATF6 action at the CHOP promoter [Yoshida et al., 2000]), was also attenuated by Sephin1 (Figure 12C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by flow cytometry data shown in Figure 12C, with a citation to Yoshida et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "96d4ee34-eda3-48da-bb4e-3d51cd1e7d59",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C68",
+      "claim": "The findings bring into question the primacy of the ISR in Sephin1's mechanism of action.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations bring into question the primacy of the ISR in Sephin1's mechanism of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conclusion drawn from the experimental observations in eIF2\u03b1S51A cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "f719a9c6-2094-4df7-9073-676fb97b34a2",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C69",
+      "claim": "Sephin1 and Guanabenz proved inert in vitro affecting neither stability of the PP1-PPP1R15A complex nor substrate-specific dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, they proved inert in vitro affecting neither stability of the PP1-PPP1R15A complex nor substrate-specific dephosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract summarizing the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "f09a62a4-873b-43f3-94c7-9913aa1a9a5c",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C70",
+      "claim": "eIF2\u03b1-P dephosphorylation, assessed by a kinase shut-off experiment, progressed normally in Sephin1-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, eIF2\u03b1-P dephosphorylation, assessed by a kinase shut-off experiment, progressed normally in Sephin1-treated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract summarizing the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "a430650b-d986-479a-ac09-995fd10bc7fd",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C71",
+      "claim": "Sephin1 attenuated the IRE1 branch of the endoplasmic reticulum unfolded protein response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with its role in defending proteostasis, Sephin1 attenuated the IRE1 branch of the endoplasmic reticulum unfolded protein response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract summarizing the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "b2c14676-39c9-448e-8dce-32fa4ae6c01a",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C72",
+      "claim": "Sephin1's repression of the IRE1 branch was noted in both wildtype and Ppp1r15a deleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, repression was noted in both wildtype and Ppp1r15a deleted cells and in cells rendered ISR-deficient by CRISPR editing of the Eif2s1 locus to encode a non-phosphorylatable eIF2\u03b1 (eIF2\u03b1S51A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract summarizing the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "211a46e6-b962-43f4-84e9-a387f0882efa",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C73",
+      "claim": "Sephin1's repression of the IRE1 branch was noted in cells rendered ISR-deficient by CRISPR editing of the Eif2s1 locus to encode a non-phosphorylatable eIF2\u03b1 (eIF2\u03b1S51A).",
+      "claim_type": "EXPLICIT",
+      "source": "However, repression was noted in both wildtype and Ppp1r15a deleted cells and in cells rendered ISR-deficient by CRISPR editing of the Eif2s1 locus to encode a non-phosphorylatable eIF2\u03b1 (eIF2\u03b1S51A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract summarizing the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "1353a729-3084-43a0-8c86-64314290c611",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C74",
+      "claim": "The findings challenge the view that [(o-chlorobenzylidene)amino]guanidines restore proteostasis by interfering with eIF2\u03b1-P dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings challenge the view that [(o-chlorobenzylidene)amino]guanidines restore proteostasis by interfering with eIF2\u03b1-P dephosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as the main conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "c85fec8b-25e3-452c-ab14-08bd8d718599",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C75",
+      "claim": "The previously-reported attenuation of the recovery of PP1 in complex with PPP1R15A from lysates of cells treated with Sephin1 was unlikely to be a direct consequence of Sephin1 interference with complex formation or destabilization of a pre-existing complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the previously-reported attenuation of the recovery of PP1 in complex with PPP1R15A, when both were purified from lysates of cells treated with Sephin1 was unlikely to be a direct consequence of Sephin1 interference with complex formation or of destabilization by Sephin1 of a pre-existing complex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conclusion drawn from the in vitro experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "77043d9e-2fbe-45a0-a71e-5185f42b0814",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C76",
+      "claim": "The findings do not diminish the attractiveness of PPP1R15A inhibition as a potential means for defending proteostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings, questioning whether Sephin1 attains its proteostatic activity by inhibiting the PPP1R15A-containing eIF2\u03b1-P directed holophosphatase, and similar concerns raised by the Peti and Shenolikar labs (Choy et al., 2015), do nothing to diminish the attractiveness of PPP1R15A inhibition as a potential means for defending proteostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the discussion with a citation to Choy et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "6478e31e-b055-4ce7-b6d7-548041414a2a",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C77",
+      "claim": "The findings do not question the beneficial effects reported for Sephin1 in mouse models of neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there is nothing in our study to question the beneficial effects reported for Sephin1 in mouse models of neurodegeneration (Das et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the discussion with a citation to Das et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "875c4375-e31c-4eed-952d-c8a21379de15",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C78",
+      "claim": "The findings do not challenge the enhanced susceptibility of Ppp1r15bKO cells to Guanabenz.",
+      "claim_type": "EXPLICIT",
+      "source": "nor we do not challenge the enhanced susceptibility of Ppp1r15bKO cells to the [(o-chlorobenzylidene)amino]guanidine, Guanabenz (Tsaytler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the discussion with a citation to Tsaytler et al., 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "ba5bd9ab-1209-4c63-bceb-62887584029b",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C79",
+      "claim": "The findings that Sephin1 exerts its effects in CHO-K1 cells lacking PPP1R15A or in ISR-defective Eifs1S51A cells raise doubts as to whether these phenomena were attained via inhibition of PPP1R15A or modulation of the ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our findings that Sephin1 exerts its effects in CHO-K1 cells lacking PPP1R15A or in ISR-defective Eifs1S51A cells raise doubts as to whether these phenomena were attained via inhibition of PPP1R15A or indeed modulation of the ISR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the discussion as a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "48e8e11e-b6e2-4780-b46a-fc67f18739b8",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C80",
+      "claim": "The human PPP1R15AV556E mutation may have a role early in the pathway to complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The contrast between the dramatic effect of the PPP1R15AV556E mutation and the more modest effect of the human PPP1R15AR578A mutation on the PPP1R15A-PP1 complex may reflect a role for the former early in the pathway to complex assembly (a process that can be thought of as PPP1R15A folding on the surface of PP1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a possible explanation for the observed differences in mutation effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "fc4e0954-306a-478d-962d-496251ae4f29",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C81",
+      "claim": "Inhibitors of the eIF2\u03b1-P holophosphatase might disrupt complex assembly without affecting the stability or activity of a preformed complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that inhibitors of the eIF2\u03b1-P holophosphatase might disrupt complex assembly, without affecting the stability or activity of a preformed complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a speculation about possible mechanisms of inhibition.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "720696ba-cbb1-4aec-b26c-3e7e2fe0b4f4",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C82",
+      "claim": "Sephin1 is unlikely to selectively disrupt the assembly of the PPP1R15A-PP1 complex by binding to and stabilizing an intermediate step in its formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Sephin1 is unlikely to belong to such a category, as it failed to exert an inhibitory effect on enzymatic activity or on the BLI signal even when added to pure PPP1R15A, before addition of PP1 and G-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "72c9ad9c-7bb5-4300-9677-c24d495a9635",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C83",
+      "claim": "The side chain of W582 may have a special role in aligning PP1 and G-actin to form a composite surface with affinity for the substrate, without contributing measurably to the stability of the tripartite holophosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "These features suggest that the side chain of W582 - a residue conserved throughout the PPP1R15 family - may have a special role in aligning PP1 and G-actin to form a composite surface with affinity for the substrate, without contributing measurably to the stability of the tripartite holophosphatase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a speculation based on the observed properties of the W582A mutation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "98aed060-0ad4-4ec5-a7f4-1b71d0d95dd1",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C84",
+      "claim": "Small molecules might access an allosteric mechanism to bias the tripartite holophosphatase towards or away from enzymatic activity without disrupting an extensive protein-protein interface.",
+      "claim_type": "EXPLICIT",
+      "source": "That the side chain of single tryptophan residue can bias the complex towards activity (without affecting its stability), suggests the possibility that small molecules might access this allosteric mechanism and bias the tripartite holophosphatase towards or away from enzymatic activity without the need to disrupt an extensive protein-protein interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a speculation about potential drug design strategies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "b1400020-9eac-4230-913d-e5adea6087f4",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "claim_id": "C85",
+      "claim": "In vitro assays for selective eIF2\u03b1-P dephosphorylation might prove useful in discovery of small molecules that selectively target eIF2\u03b1-P dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro assays for selective eIF2\u03b1-P dephosphorylation, such as the one described here, might prove useful in discovery of small molecules with such a mechanism of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a speculation about the utility of the developed assay.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about the eIF2\u03b1 phosphorylation pathway, the ISR, and the role of PPP1R15A/B in eIF2\u03b1-P dephosphorylation, citing prior work showing that Ppp1r15a deletion confers resistance to proteotoxic stress and ameliorates disease models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are all supported by citations to prior published work and represent established background knowledge. These claims provide the scientific context for the current study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "ef2bf468-a522-4d3f-8f16-f1c1f15c3adf",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work identified small molecules (salubrinal, Guanabenz, Sephin1) proposed to modulate proteostasis, with Guanabenz and Sephin1 specifically suggested to disrupt the PPP1R15A-PP1 complex to inhibit eIF2\u03b1-P dephosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 accurately summarize prior published findings with appropriate citations (Boyce et al., 2005; Tsaytler et al., 2011; Das et al., 2015). These establish the prevailing hypothesis that the current study challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "7322ee64-0674-4db2-adca-5e1cc617e4c1",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript establishes that PPP1R15 regulatory subunits are essential for eIF2\u03b1-P dephosphorylation, that the C-terminal 70 residues of PPP1R15A are necessary and sufficient for activity, and that G-actin joins PPP1R15-PP1 to form an active ternary complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 are supported by multiple citations to prior work (Brown et al., 1997; Brush et al., 2003; Chambers et al., 2015; Chen et al., 2015; Choy et al., 2015) and provide essential mechanistic background for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "b65e0359-b5f0-4cce-80c3-d453653516f3",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors developed an in vitro reconstitution assay and measured EC50 values of 7 nM for human PPP1R15A and 13 nM for G-actin in stimulating eIF2\u03b1-P dephosphorylation, with values consistent with prior measurements and binding affinities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by experimental data shown in Figure 2. The EC50 values are internally consistent and agree with prior measurements (C29, C30), providing validation of the assay system. Statistical analysis appears appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "ca54b719-ceee-4fa5-a357-2481e4d6769e",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutations in PPP1R15A that disrupt PP1 binding (V556E) or G-actin binding (W582A, F592A) completely abolished eIF2\u03b1-P dephosphorylation activity in the in vitro assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by experimental data in Figures 3A-C. The complete loss of activity with these mutations validates the assay's sensitivity to known functional requirements and establishes positive controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "18101534-4aad-4b91-be36-754eab027911",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The PPP1R15AR578A mutation, corresponding to a disease-associated mutation in PPP1R15B, resulted in a ~4-fold increase in EC50 and 3-fold reduction in maximal activity, without major effects on G-actin binding (EC50 = 20 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by experimental data in Figures 4A-C. The mutation shows intermediate effects on activity while maintaining G-actin binding, demonstrating the assay can detect subtle structural perturbations distinct from gross stability defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "ece1b6a4-2132-4626-861b-91a9673cb3b6",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using Bio-Layer Interferometry, the authors measured direct binding kinetics: PPP1R15A533-624 binds PP1 with Kd = 20 \u00b1 0.61 nM, and G-actin binds the PPP1R15A-PP1 complex with Kd = 151 \u00b1 14.3 nM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by BLI data in Figures 5B-C. The measurements provide direct biophysical characterization of the holophosphatase assembly. C38 appropriately notes the higher affinity compared to prior ITC measurements and offers a reasonable structural explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "e891cfe8-9e84-403f-b30c-bc40209a830b",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BLI analysis of PPP1R15A mutants showed that V556E abolished PP1 binding without affecting G-actin binding, F592A abolished G-actin binding without affecting PP1 binding, while R578A and W582A had minimal effects on binding kinetics despite strong effects on enzymatic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by BLI data in Figure 6. The differential effects of mutations on binding versus activity demonstrate that the enzymatic assay is sensitive to both gross stability defects and subtle structural perturbations, validating its utility for inhibitor screening.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "4627aa79-aed5-4f05-a8d9-90a740a3c9f6",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sephin1 at 50 \u00b5M had no measurable effect on PPP1R15A-PP1 complex formation or stability in three different BLI assay configurations, contradicting prior reports that Sephin1 disrupts this complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by BLI data in Figure 7B-D. The experiments test multiple configurations (different ligands/analytes) and consistently show no effect of Sephin1. C45 appropriately cites the prior claim being tested (Das et al., 2015). The conclusion (C49) is appropriately cautious, noting this is specific to the in vitro system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "6afdd6db-516b-4bd3-923e-2a20ed9675db",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In the in vitro eIF2\u03b1-P dephosphorylation assay, Sephin1 and Guanabenz (50 \u00b5M) had no inhibitory effect, while tautomycin (IC50 = 2.4 nM) and salubrinal (12 \u00b5M, 22% inhibition) showed activity, confirming assay sensitivity to known inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by experimental data in Figures 8A-E. The positive controls (tautomycin, salubrinal) demonstrate assay sensitivity, strengthening the conclusion that Sephin1 and Guanabenz are truly inert in this system. Statistical analysis for salubrinal (p<0.0001, n=6) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "bf8d5881-d213-45b2-9404-f7d025c29cb1",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sephin1 attenuated both ISR (CHOP::GFP) and IRE1 (XBP1s::Turquoise) UPR reporters in cells treated with tunicamycin or histidinol, though effects with tunicamycin were observed only over a narrow concentration range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by flow cytometry data in Figures 9A-B and supplements. The cellular activity of Sephin1 is confirmed, consistent with prior reports (Das et al., 2015). C56 appropriately notes limitations in the tunicamycin dose-response, adding nuance to the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "094e6bac-e70f-40c8-be0a-96e3961e79e4",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In a kinase shut-off experiment using GCN2KO; Ppp1r15bKO CHO-K1 cells (dependent solely on PPP1R15A), Sephin1 had no effect on the rate of eIF2\u03b1-P dephosphorylation (decay constants: 0.23 vs 0.19 min\u207b\u00b9), even under tunicamycin stress conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by immunoblot data in Figure 10B-C and supplements. The kinase shut-off experiment provides a direct cellular measure of eIF2\u03b1-P dephosphorylation. The use of compound mutant cells (GCN2KO; Ppp1r15bKO) ensures specificity for PPP1R15A-mediated dephosphorylation. Jasplakinolide control (C59) validates the assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "21b5e39e-3765-4ed0-a81a-bbe654764d4a",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sephin1 retained its ability to attenuate both UPR reporters in PPP1R15A knockout cells treated with tunicamycin or histidinol, indicating that Sephin1 exerts proteostatic effects independently of PPP1R15A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by flow cytometry data in Figures 11B-C and immunoblot confirmation of PPP1R15A deletion in Figure 11A. This is a critical genetic experiment that directly challenges the proposed mechanism. The use of two independent knockout clones strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "294f4fe3-5b3e-4fbb-890c-bc833398c8c2",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Sephin1 attenuated the XBP1s::Turquoise reporter and residual CHOP::GFP activation in eIF2\u03b1S51A mutant cells (ISR-deficient), challenging the primacy of the ISR in Sephin1's mechanism of action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by flow cytometry data in Figure 12C and CRISPR strategy in Figure 12A-B. The eIF2\u03b1S51A mutation eliminates ISR signaling, yet Sephin1 retains activity. This is the most definitive genetic evidence against the proposed ISR-dependent mechanism. C66-C67 appropriately explain the reduced CHOP signal and residual ATF6-dependent activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "6a237fee-a041-41f8-8b79-73414174c69b",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study's main conclusion is that Sephin1 and Guanabenz do not inhibit eIF2\u03b1-P dephosphorylation in vitro or in cells, yet retain proteostatic activity in PPP1R15A-null and ISR-deficient cells, challenging the view that these compounds work by interfering with eIF2\u03b1-P dephosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74 summarize the main findings from the abstract and discussion. The conclusion is well-supported by the convergent evidence from in vitro assays (BLI, enzymatic), cellular kinase shut-off experiments, and genetic studies (PPP1R15A-KO, eIF2\u03b1S51A). The authors appropriately challenge the prevailing hypothesis while acknowledging what their findings do not question (C76-C78).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "90d55b16-14b0-45f3-8ef5-d6efcd0b199e",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that previously reported disruption of PPP1R15A-PP1 complexes in cell lysates by Sephin1 is unlikely due to direct interference with complex formation, and that Sephin1's effects in cells lacking PPP1R15A or ISR function raise doubts about the proposed mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C79 represent interpretive conclusions drawn from the experimental data. C75 is a reasonable inference from the negative in vitro results. C79 appropriately summarizes the implications of the genetic experiments. Both are cautiously worded and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "c5736e5b-58f6-4728-b9cf-0bad68168674",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors clarify that their findings do not diminish the attractiveness of PPP1R15A inhibition as a therapeutic strategy, do not question Sephin1's beneficial effects in mouse models, and do not challenge prior observations of Guanabenz effects in Ppp1r15bKO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are appropriately cautious statements in the discussion that clarify the scope of the findings. These acknowledge what the study does and does not challenge, with appropriate citations to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    },
+    {
+      "id": "7e1bf117-aedb-416d-adba-2fc9a08f2cc1",
+      "content_id": "32d20028-d983-4dba-8d13-f992f8262add",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate about potential mechanisms for selective inhibition of the eIF2\u03b1-P holophosphatase, including disruption of complex assembly versus preformed complexes, allosteric modulation via residues like W582, and the utility of their in vitro assay for inhibitor discovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C85 are explicitly speculative (noted in evidence_type as SPECULATION). While these represent reasonable hypotheses based on the structural and functional data, they are not tested experimentally in this study. C82 appropriately concludes that Sephin1 is unlikely to work via one proposed mechanism based on the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T18:55:55.008235Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0d92b413-9e8f-4de9-b694-81a83d0de493",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "fc31a2bb-b37f-400a-9150-7f51ae36ee0c",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "06d69c0e-22c1-42a6-b0b6-9a8e77dab0d7",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "fe0970bf-5345-4816-86d5-bd52ca84e270",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "dff111ad-c88d-42de-8107-6154dba5ad5a",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "17ffa408-9954-435f-8101-7d3c53c8bada",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "e5e5b7f8-0ae8-4920-a65f-72fedff1a79c",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "83c9707d-6971-4b43-8dc9-3a5afe38f8bd",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "bedbfca1-7ed7-420d-9b90-ad982f40f048",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "6e4c7600-7f31-498f-bc91-2a30afd2a273",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "4321a746-34cc-4200-b26a-649826f98e81",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "0ab26935-759c-4acb-baf7-7a47ce1a3c49",
+      "result_id": "2dec5f38-f97d-4bd3-b357-b1d55ae4674a"
+    },
+    {
+      "claim_id": "db4a967a-f05d-41f9-8083-8e7ca333ee58",
+      "result_id": "ef2bf468-a522-4d3f-8f16-f1c1f15c3adf"
+    },
+    {
+      "claim_id": "89d36c5f-5776-4aab-ab13-fd1e319f0583",
+      "result_id": "ef2bf468-a522-4d3f-8f16-f1c1f15c3adf"
+    },
+    {
+      "claim_id": "8720aa4c-eeb2-45a3-8ad5-f51b83eb884d",
+      "result_id": "ef2bf468-a522-4d3f-8f16-f1c1f15c3adf"
+    },
+    {
+      "claim_id": "426265ee-fcc2-4664-af87-f5d4bf963ca4",
+      "result_id": "ef2bf468-a522-4d3f-8f16-f1c1f15c3adf"
+    },
+    {
+      "claim_id": "8961944b-eb22-45ee-994d-bfc72842aa5e",
+      "result_id": "ef2bf468-a522-4d3f-8f16-f1c1f15c3adf"
+    },
+    {
+      "claim_id": "613f708d-c8cd-406e-8057-a4a349d20f80",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "ec357405-f654-481e-9555-d5de8318f651",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "5c788966-e4ac-46d9-8986-52e6fb4700f1",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "3735270e-b032-474d-bb3e-75983c0ef22e",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "f349afe0-cd05-4e34-97a0-9e8d416fbf8e",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "9b23ecde-ba0c-4a25-8f09-1197f035c057",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "dc946a18-e9be-464c-8393-89a05a7220f0",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "c2042ad2-c68a-4b1a-9a6d-10c8fe6563dd",
+      "result_id": "7322ee64-0674-4db2-adca-5e1cc617e4c1"
+    },
+    {
+      "claim_id": "c7a412b4-c68d-428f-b7a8-fb9db80bea87",
+      "result_id": "b65e0359-b5f0-4cce-80c3-d453653516f3"
+    },
+    {
+      "claim_id": "8992fdde-4b50-4b09-96cb-8fe12ee7ad8d",
+      "result_id": "b65e0359-b5f0-4cce-80c3-d453653516f3"
+    },
+    {
+      "claim_id": "c9a2a75d-6672-487a-898a-4908d0207bf6",
+      "result_id": "b65e0359-b5f0-4cce-80c3-d453653516f3"
+    },
+    {
+      "claim_id": "45131348-8def-4b28-9336-87085726e48a",
+      "result_id": "b65e0359-b5f0-4cce-80c3-d453653516f3"
+    },
+    {
+      "claim_id": "d6968677-869d-4514-9c83-1e9adff5a01b",
+      "result_id": "ca54b719-ceee-4fa5-a357-2481e4d6769e"
+    },
+    {
+      "claim_id": "fa80b1b6-a605-44da-ad01-d38eaae8a4f9",
+      "result_id": "ca54b719-ceee-4fa5-a357-2481e4d6769e"
+    },
+    {
+      "claim_id": "a75cb946-1380-472f-b964-d1b1edcd50fd",
+      "result_id": "ca54b719-ceee-4fa5-a357-2481e4d6769e"
+    },
+    {
+      "claim_id": "ec2ae276-4c31-4d7c-922b-79dc8262414b",
+      "result_id": "18101534-4aad-4b91-be36-754eab027911"
+    },
+    {
+      "claim_id": "4f86f425-e07f-49bc-abed-ab9d50540e38",
+      "result_id": "18101534-4aad-4b91-be36-754eab027911"
+    },
+    {
+      "claim_id": "a3c2c9be-b4f5-4bfa-adcf-1ce20c028573",
+      "result_id": "18101534-4aad-4b91-be36-754eab027911"
+    },
+    {
+      "claim_id": "fe383d04-1ba4-4e66-b7d9-9a4f3e54c4aa",
+      "result_id": "ece1b6a4-2132-4626-861b-91a9673cb3b6"
+    },
+    {
+      "claim_id": "5011156a-4840-4e34-ae75-0cda3e867b2c",
+      "result_id": "ece1b6a4-2132-4626-861b-91a9673cb3b6"
+    },
+    {
+      "claim_id": "33c8093a-002f-4efa-9d24-dd180c471dc1",
+      "result_id": "ece1b6a4-2132-4626-861b-91a9673cb3b6"
+    },
+    {
+      "claim_id": "a61a621e-464a-4be0-9dd6-05348fac7654",
+      "result_id": "e891cfe8-9e84-403f-b30c-bc40209a830b"
+    },
+    {
+      "claim_id": "2bec0e8f-e6eb-463f-aaa3-5bf648a536d5",
+      "result_id": "e891cfe8-9e84-403f-b30c-bc40209a830b"
+    },
+    {
+      "claim_id": "a99d237b-ca9f-4044-8c0c-b9fe254eb0c4",
+      "result_id": "e891cfe8-9e84-403f-b30c-bc40209a830b"
+    },
+    {
+      "claim_id": "67901007-2dcf-442d-a03a-89e40cfd1314",
+      "result_id": "e891cfe8-9e84-403f-b30c-bc40209a830b"
+    },
+    {
+      "claim_id": "ebdcdbd5-a5cb-4183-8ef4-829c29be818d",
+      "result_id": "e891cfe8-9e84-403f-b30c-bc40209a830b"
+    },
+    {
+      "claim_id": "f93fe657-770d-49d6-8771-16586abcc18c",
+      "result_id": "4627aa79-aed5-4f05-a8d9-90a740a3c9f6"
+    },
+    {
+      "claim_id": "0f8a4b8d-c2a9-41a5-b2be-d2db00ed0231",
+      "result_id": "4627aa79-aed5-4f05-a8d9-90a740a3c9f6"
+    },
+    {
+      "claim_id": "4ff848a5-ba70-4aa3-9b87-e0583b48fd6c",
+      "result_id": "4627aa79-aed5-4f05-a8d9-90a740a3c9f6"
+    },
+    {
+      "claim_id": "1a143b41-bcf2-4dc2-b7a6-045117ffb1f7",
+      "result_id": "4627aa79-aed5-4f05-a8d9-90a740a3c9f6"
+    },
+    {
+      "claim_id": "75798a73-bedd-4cd0-988d-c2b1a7f2300d",
+      "result_id": "4627aa79-aed5-4f05-a8d9-90a740a3c9f6"
+    },
+    {
+      "claim_id": "e2ff12be-7aff-44e7-b845-a583933f3315",
+      "result_id": "6afdd6db-516b-4bd3-923e-2a20ed9675db"
+    },
+    {
+      "claim_id": "46cbf2e7-6fd5-4547-8774-609612a03750",
+      "result_id": "6afdd6db-516b-4bd3-923e-2a20ed9675db"
+    },
+    {
+      "claim_id": "745a75e3-07f0-4998-b2da-dff79d0e645c",
+      "result_id": "6afdd6db-516b-4bd3-923e-2a20ed9675db"
+    },
+    {
+      "claim_id": "525a54ae-46ee-47cf-83a1-3adb848694a2",
+      "result_id": "6afdd6db-516b-4bd3-923e-2a20ed9675db"
+    },
+    {
+      "claim_id": "d8d045e0-9d1c-4811-b3bb-dd2e5606ec7b",
+      "result_id": "6afdd6db-516b-4bd3-923e-2a20ed9675db"
+    },
+    {
+      "claim_id": "095d8001-205c-42e0-8549-792240f6b575",
+      "result_id": "bf8d5881-d213-45b2-9404-f7d025c29cb1"
+    },
+    {
+      "claim_id": "06697eaa-338e-42ce-a0c6-2ea5ec44cd53",
+      "result_id": "bf8d5881-d213-45b2-9404-f7d025c29cb1"
+    },
+    {
+      "claim_id": "89352212-34b7-42ba-839a-ea774faaea1f",
+      "result_id": "bf8d5881-d213-45b2-9404-f7d025c29cb1"
+    },
+    {
+      "claim_id": "db94a36b-f0c6-4240-a0e5-85f3c8736a87",
+      "result_id": "094e6bac-e70f-40c8-be0a-96e3961e79e4"
+    },
+    {
+      "claim_id": "0cf0583d-aada-4e11-b66c-4636ebc96977",
+      "result_id": "094e6bac-e70f-40c8-be0a-96e3961e79e4"
+    },
+    {
+      "claim_id": "6cb85dd9-df14-403c-9c3f-e2b4fc211e25",
+      "result_id": "094e6bac-e70f-40c8-be0a-96e3961e79e4"
+    },
+    {
+      "claim_id": "62c68e8b-5e85-43b6-ba70-507252cc21f4",
+      "result_id": "094e6bac-e70f-40c8-be0a-96e3961e79e4"
+    },
+    {
+      "claim_id": "b0beb5c9-65a4-4149-9b48-251e7111c2dd",
+      "result_id": "21b5e39e-3765-4ed0-a81a-bbe654764d4a"
+    },
+    {
+      "claim_id": "7bfa2e6d-a932-4c90-afda-ae75866e6c64",
+      "result_id": "21b5e39e-3765-4ed0-a81a-bbe654764d4a"
+    },
+    {
+      "claim_id": "25b7c9b4-21ad-4cf8-aff7-6ba45b292ed1",
+      "result_id": "21b5e39e-3765-4ed0-a81a-bbe654764d4a"
+    },
+    {
+      "claim_id": "df87271d-53fb-43f1-b71c-16b7ae2e3b42",
+      "result_id": "294f4fe3-5b3e-4fbb-890c-bc833398c8c2"
+    },
+    {
+      "claim_id": "b75eab1f-78e3-4a68-bcac-551f4405b6cc",
+      "result_id": "294f4fe3-5b3e-4fbb-890c-bc833398c8c2"
+    },
+    {
+      "claim_id": "0cf97159-f78e-44b8-a2cf-79eb3cf74e14",
+      "result_id": "294f4fe3-5b3e-4fbb-890c-bc833398c8c2"
+    },
+    {
+      "claim_id": "96d4ee34-eda3-48da-bb4e-3d51cd1e7d59",
+      "result_id": "294f4fe3-5b3e-4fbb-890c-bc833398c8c2"
+    },
+    {
+      "claim_id": "f719a9c6-2094-4df7-9073-676fb97b34a2",
+      "result_id": "6a237fee-a041-41f8-8b79-73414174c69b"
+    },
+    {
+      "claim_id": "f09a62a4-873b-43f3-94c7-9913aa1a9a5c",
+      "result_id": "6a237fee-a041-41f8-8b79-73414174c69b"
+    },
+    {
+      "claim_id": "a430650b-d986-479a-ac09-995fd10bc7fd",
+      "result_id": "6a237fee-a041-41f8-8b79-73414174c69b"
+    },
+    {
+      "claim_id": "b2c14676-39c9-448e-8dce-32fa4ae6c01a",
+      "result_id": "6a237fee-a041-41f8-8b79-73414174c69b"
+    },
+    {
+      "claim_id": "211a46e6-b962-43f4-84e9-a387f0882efa",
+      "result_id": "6a237fee-a041-41f8-8b79-73414174c69b"
+    },
+    {
+      "claim_id": "1353a729-3084-43a0-8c86-64314290c611",
+      "result_id": "6a237fee-a041-41f8-8b79-73414174c69b"
+    },
+    {
+      "claim_id": "c85fec8b-25e3-452c-ab14-08bd8d718599",
+      "result_id": "90d55b16-14b0-45f3-8ef5-d6efcd0b199e"
+    },
+    {
+      "claim_id": "ba5bd9ab-1209-4c63-bceb-62887584029b",
+      "result_id": "90d55b16-14b0-45f3-8ef5-d6efcd0b199e"
+    },
+    {
+      "claim_id": "77043d9e-2fbe-45a0-a71e-5185f42b0814",
+      "result_id": "c5736e5b-58f6-4728-b9cf-0bad68168674"
+    },
+    {
+      "claim_id": "6478e31e-b055-4ce7-b6d7-548041414a2a",
+      "result_id": "c5736e5b-58f6-4728-b9cf-0bad68168674"
+    },
+    {
+      "claim_id": "875c4375-e31c-4eed-952d-c8a21379de15",
+      "result_id": "c5736e5b-58f6-4728-b9cf-0bad68168674"
+    },
+    {
+      "claim_id": "48e8e11e-b6e2-4780-b46a-fc67f18739b8",
+      "result_id": "7e1bf117-aedb-416d-adba-2fc9a08f2cc1"
+    },
+    {
+      "claim_id": "fc4e0954-306a-478d-962d-496251ae4f29",
+      "result_id": "7e1bf117-aedb-416d-adba-2fc9a08f2cc1"
+    },
+    {
+      "claim_id": "720696ba-cbb1-4aec-b26c-3e7e2fe0b4f4",
+      "result_id": "7e1bf117-aedb-416d-adba-2fc9a08f2cc1"
+    },
+    {
+      "claim_id": "72c9ad9c-7bb5-4300-9677-c24d495a9635",
+      "result_id": "7e1bf117-aedb-416d-adba-2fc9a08f2cc1"
+    },
+    {
+      "claim_id": "98aed060-0ad4-4ec5-a7f4-1b71d0d95dd1",
+      "result_id": "7e1bf117-aedb-416d-adba-2fc9a08f2cc1"
+    },
+    {
+      "claim_id": "b1400020-9eac-4230-913d-e5adea6087f4",
+      "result_id": "7e1bf117-aedb-416d-adba-2fc9a08f2cc1"
+    }
+  ],
+  "comparisons": []
+}

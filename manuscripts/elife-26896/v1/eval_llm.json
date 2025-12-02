@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors developed and validated an experimental system using MK2206-resistant Akt2-W80A to study ectopically expressed Akt without interference from endogenous Akt. The system allows selective inhibition of endogenous Akt with 1 \u00b5M MK2206 while preserving Akt2-W80A function, enabling quantitative assessment of Akt function downstream of insulin stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C43 collectively establish the methodological foundation. The dose-response data (C40-C42), insulin response validation (C43), and expression level controls (C30-C32) provide converging evidence that the system is functional and appropriate for studying Akt phosphorylation requirements. The resistance of Akt2-W80A to MK2206 is demonstrated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "AS160 phosphorylation is not linearly correlated with Akt regulation of Glut4 translocation. While Akt2-W80A fully rescued Glut4 translocation, it only partially rescued AS160 T642 phosphorylation, and complete inhibition of Glut4 translocation by MK2206 was accompanied by only partial inhibition of AS160 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 demonstrate a disconnect between AS160 phosphorylation and Glut4 translocation through multiple experimental approaches. The partial rescue of AS160 phosphorylation despite complete rescue of Glut4 translocation (C37-C39), and the dose-response mismatch (C44-C45) provide strong evidence. This challenges the assumption that AS160 phosphorylation is a reliable surrogate marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C28",
+      "C5"
+    ],
+    "result": "T309 phosphorylation by PDPK1 is required for insulin-stimulated Glut4 translocation, whereas S474 phosphorylation by mTORC2 is not required. The T309A mutation blocked Glut4 translocation while the S474A mutation fully supported it. These two phosphorylations are independent of one another in adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 provide strong evidence through loss-of-function mutagenesis. The T309A mutation blocks function (C48-C49) while S474A does not (C50), with proper expression controls (C51) and demonstration of phosphorylation independence (C52-C54). This is a core finding supported by multiple complementary experiments in Figures 3-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Akt activation of mTORC1, measured by S6 kinase phosphorylation, does not require S474 phosphorylation. The S474A mutant supported insulin-stimulated S6 kinase phosphorylation, while the T309A mutation blunted it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 demonstrate that S474 phosphorylation is dispensable for mTORC1 activation, consistent with the Glut4 translocation findings. The data show S474A supports S6K phosphorylation while T309A does not, establishing differential requirements. This extends the finding beyond Glut4 to another Akt-dependent pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The T309A and S474A mutants are not dominant-interfering with endogenous Akt function. Insulin-stimulated Glut4 translocation promoted by endogenous Akt was unaffected in adipocytes expressing either mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide an important control demonstrating that the observed loss-of-function phenotypes are not due to dominant-negative effects. This validates the interpretation that the mutants specifically lack function rather than interfering with endogenous Akt.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Pharmacological and genetic inhibition of PDPK1 and mTORC2 phenocopy the Akt2 phosphorylation mutants. Rictor knockdown (reducing S474 phosphorylation by ~80%) had no effect on Glut4 translocation, while PDPK1 inhibition blocked it in a dose-dependent manner correlated with reduced T309 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 provide orthogonal validation of the mutagenesis results using both genetic (Rictor knockdown) and pharmacological (GSK2334470) approaches. The convergence of multiple experimental strategies strengthens the conclusion that T309 but not S474 phosphorylation is required for Glut4 translocation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The S474D phosphomimetic mutation promotes constitutive Glut4 translocation by enhancing T309 phosphorylation through basal PDPK1 activity. The S474D-induced translocation was blocked by T309A mutation or PDPK1 inhibition, demonstrating that S474 phosphorylation itself is not required but can allosterically enhance T309 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 demonstrate that S474D acts by promoting T309 phosphorylation rather than directly driving Glut4 translocation. The constitutive T309 phosphorylation in S474D (C69) and the requirement for T309 and PDPK1 (C70-C71) support this mechanism. This provides insight into how S474 phosphorylation enhances Akt activity without being strictly required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The constitutively active E17K membrane-targeting mutation requires T309 phosphorylation but not S474 phosphorylation for Glut4 translocation. E17K-induced plasma membrane Glut4 was blocked by T309A mutation and PDPK1 inhibition but unaffected by S474A mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide independent validation using a naturally occurring oncogenic mutation. The E17K results parallel the S474D findings, reinforcing that constitutive membrane localization can drive Glut4 translocation through T309 phosphorylation alone, without requiring S474 phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C6"
+    ],
+    "result": "The HM domain is required for Glut4 translocation independent of S474 phosphorylation. Deletion of the HM domain blocked Glut4 translocation despite T309 phosphorylation. The HM domain could be functionally complemented in trans only when independently targeted to the plasma membrane via a PH domain fusion, and this complementation occurred without S474 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C86 demonstrate a phosphorylation-independent structural role for the HM domain. The domain deletion experiments (C78-C81), trans-complementation with PH-HM fusion (C82-C85), and lack of S474 phosphorylation in the functional complementation (C86) provide strong evidence for a non-phosphorylation-dependent function requiring membrane co-localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C7",
+      "C29"
+    ],
+    "result": "S474 phosphorylation is required for insulin-stimulated Glut1 translocation but not Glut4 translocation. In stable cell lines, Akt2-W80A-S474A supported full Glut4 translocation but showed reduced glucose uptake (70% of wild-type), which was attributed to loss of Glut1 translocation. Direct measurement showed Akt2-W80A supported ~2-fold Glut1 translocation while S474A did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 establish differential phosphorylation requirements for Glut1 vs Glut4. The glucose uptake discrepancy (C88), Glut1 translocation measurements (C91-C94), and requirement for both T309 and S474 (C95) provide converging evidence. This is a major finding revealing transporter-specific signaling requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The differential glucose uptake between Akt2-W80A and Akt2-W80A-S474A cells is due to reduced Glut1-mediated transport. Indinavir (a Glut4 inhibitor) reduced overall glucose uptake but did not affect the differential between the two cell lines, and Glut1 expression levels were unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 use pharmacological inhibition to dissect Glut4 vs Glut1 contributions to glucose uptake. The Indinavir experiment (C96-C97) provides strong evidence that the S474A defect is specifically in Glut1-mediated uptake, with proper controls for expression levels (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Glut1 translocation is independent of AS160, the principal Akt target for Glut4 translocation. The dominant-inhibitory AS160-4A mutant blocked Glut4 but not Glut1 translocation, demonstrating that Glut1 uses a distinct trafficking pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 establish pathway independence using a well-characterized dominant-negative approach. The selective inhibition of Glut4 but not Glut1 by AS160-4A (C102) provides clear evidence for distinct mechanisms, consistent with prior literature (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "S474 phosphorylation-dependent Glut1 translocation is not due to effects on general endocytic recycling. Insulin-stimulated transferrin receptor trafficking was independent of S474 phosphorylation, demonstrating a specific effect on Glut1 rather than global membrane recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 use transferrin receptor as a marker of general recycling to demonstrate specificity. The independence of transferrin receptor trafficking from S474 phosphorylation (C105) while Glut1 requires it establishes that this is a specific regulatory mechanism rather than a general effect on membrane dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "S474 phosphorylation is required for Glut1 translocation and glucose uptake in KP1 lung cancer cells expressing constitutively active KRAS-G12D. Insulin stimulated ~2-fold Glut1 translocation in cells expressing Akt2-W80A but not S474A, and basal glucose uptake was reduced in S474A-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 extend the Glut1 findings to a cancer cell line with oncogenic KRAS, demonstrating physiological relevance. The translocation data (C108-C109) and glucose uptake measurements (C111) in the context of constitutive PI3K/Akt signaling (C110) support a role for mTORC2-Akt-S474 in cancer cell glucose metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Insulin-regulated glucose uptake by adipocytes for whole body glucose homeostasis is independent of mTORC2 phosphorylation of Akt. T309 phosphorylation is required for Glut4 translocation and mTORC1 activation, but S474 phosphorylation is not required despite being robustly stimulated by insulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 synthesize the major findings regarding Glut4-mediated glucose homeostasis. The data from multiple experimental approaches (mutagenesis, inhibitors, knockdown) converge to support this conclusion, which has important implications for understanding insulin signaling in metabolic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C137",
+      "C8"
+    ],
+    "result": "mTORC2 phosphorylation of Akt S474 is required for Glut1 but not Glut4 translocation, revealing distinct physiologic programs. This phosphorylation-dependent substrate selection links mTORC2 to growth factor-stimulated glucose uptake in proliferative cells rather than insulin-regulated whole body glucose homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C137 synthesize the differential requirements for Glut1 vs Glut4, establishing a major conceptual advance in understanding Akt substrate selectivity. The independence from AS160 (C129-C130), general recycling (C131), and specific requirement for S474 (C132) support the conclusion that mTORC2 links Akt to distinct physiologic programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The finding that S474 phosphorylation is not required for Glut4 translocation is compatible with previous Rictor knockout studies showing reduced glucose uptake, suggesting the glucose uptake defect in those mice is not due to impaired Glut4 translocation but to other effects on glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C125 attempt to reconcile the current findings with prior literature. While the logic is sound (C124), the speculation about alternative mechanisms (C125) lacks direct experimental support. The prior studies did not definitively establish the mechanism of reduced glucose uptake (C123), leaving this interpretation plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Akt hyper-activation in cancer may enhance Glut1 plasma membrane expression through phospho-S474 control of Glut1 trafficking, potentially contributing to enhanced glycolytic metabolism. This suggests a role for mTORC2 in cancer metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C143 are largely speculative extrapolations from the KP1 cell data. While the KP1 results support a role for S474 in Glut1 regulation (C111-C112), the broader claims about cancer metabolism (C141, C143) are marked as speculation or inference and lack direct experimental validation in multiple cancer contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The PDPK1-Akt-mTORC2 positive feedforward loop is not required for all Akt-regulated pathways. S474A mutation did not affect Glut4 translocation or mTORC1 activation, demonstrating that feedforward regulation is pathway-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 place the findings in the context of known Akt regulatory mechanisms. The demonstration that S474A does not affect certain pathways (C146) provides evidence against universal requirement for the feedforward loop, though this is more of a negative result supporting pathway specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The HM domain is required for Akt activity in Glut4 translocation through a phosphorylation-independent mechanism. Deletion blocked signaling despite T309 phosphorylation, and functional complementation required membrane co-localization of the kinase and HM domains, occurring without S474 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 establish both phosphorylation-dependent and -independent roles for the HM domain. The domain deletion and trans-complementation experiments provide strong mechanistic insight into the modular nature of Akt function, with proper controls showing T309 phosphorylation occurs without the HM domain (C148).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Loss-of-function (T309A) and gain-of-function (S474D, E17K) mutations demonstrate that Akt activation is necessary and sufficient for Glut4 translocation. The constitutive activity of S474D and E17K without insulin suggests that basal PI3K/PDPK1 activity can support Akt activation, raising questions about whether growth factor stimulation determines the rate rather than the level of Akt activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C155 are well-supported by the mutagenesis data, but C156 is explicitly speculative. The observation that constitutive mutants are active basally is clear, but the mechanistic interpretation about kinetics vs. amplitude of activation is not directly tested and remains a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  }
+]

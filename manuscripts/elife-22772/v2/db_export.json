@@ -1,0 +1,2203 @@
+{
+  "submission": {
+    "id": "f760ce50-46d6-4b69-82b1-626d98e09b21",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:02:29.829207Z",
+    "updated_at": "2025-12-01T20:02:29.829207Z"
+  },
+  "content": [
+    {
+      "id": "57167111-0476-43fb-928b-7a231a105730",
+      "submission_id": "f760ce50-46d6-4b69-82b1-626d98e09b21",
+      "content_type": "manuscript",
+      "content_text": "# A multi-scale model for hair follicles reveals heterogeneous domains driving rapid spatiotemporal hair growth patterning\n\n## Authors\n\n- Qixuan Wang<sup>1</sup> ([ORCID: 0000-0003-2673-921X](https://orcid.org/0000-0003-2673-921X))\n- Ji Won Oh<sup>3</sup> ([ORCID: 0000-0001-5742-5120](https://orcid.org/0000-0001-5742-5120))\n- Hye-Lim Lee<sup>3</sup>\n- Anukriti Dhar<sup>3</sup>\n- Tao Peng<sup>1</sup>\n- Raul Ramos<sup>3</sup>\n- Christian Fernando Guerrero-Juarez<sup>3</sup>\n- Xiaojie Wang<sup>3</sup>\n- Ran Zhao<sup>3</sup>\n- Xiaoling Cao<sup>3</sup>\n- Jonathan Le<sup>3</sup>\n- Melisa A Fuentes<sup>3</sup>\n- Shelby C Jocoy<sup>3</sup>\n- Antoni R Rossi<sup>3</sup>\n- Brian Vu<sup>3</sup>\n- Kim Pham<sup>3</sup>\n- Xiaoyang Wang<sup>3</sup>\n- Nanda Maya Mali<sup>5</sup>\n- Jung Min Park<sup>5</sup>\n- June-Hyug Choi<sup>5</sup>\n- Hyunsu Lee<sup>10</sup>\n- Julien M D Legrand<sup>11</sup>\n- Eve Kandyba<sup>12</sup> ([ORCID: 0000-0002-9219-5284](https://orcid.org/0000-0002-9219-5284))\n- Jung Chul Kim<sup>7</sup>\n- Moonkyu Kim<sup>7</sup>\n- John Foley<sup>13</sup>\n- Zhengquan Yu<sup>8</sup> ([ORCID: 0000-0001-8696-2013](https://orcid.org/0000-0001-8696-2013))\n- Krzysztof Kobielak<sup>3</sup>\n- Bogi Andersen<sup>4</sup> ([ORCID: 0000-0001-7181-2768](https://orcid.org/0000-0001-7181-2768))\n- Kiarash Khosrotehrani<sup>11</sup>\n- Qing Nie<sup>1</sup> \u2020\n- Maksim V Plikus<sup>2</sup> ([ORCID: 0000-0002-8845-2559](https://orcid.org/0000-0002-8845-2559)) \u2020\n\n### Affiliations\n\n1. Department of Mathematics University of California Irvine United States\n2. Center for Complex Biological Systems University of California Irvine United States\n3. Department of Developmental and Cell Biology University of California Irvine United States\n4. Sue and Bill Gross Stem Cell Research Center University of California Irvine United States\n5. Department of Anatomy, School of Medicine Kyungpook National University Daegu Korea\n6. Biomedical Research Institute, Kyungpook National University Hospital Daegu, Korea\n7. Hair Transplantation Center Kyungpook National University Hospital Daegu, Korea\n8. Beijing Advanced Innovation Center for Food Nutrition and Human Health and State Key Laboratories for Agrobiotechnology College of Biological Sciences, China Agricultural University Beijing China\n9. Department of Burn Surgery The First Affiliated Hospital, Sun Yat-sen University Guangzhou China\n10. Department of Anatomy, School of Medicine Keimyung University Daegu Korea\n11. UQ Diamantina Institute, Experimental Dermatology Group, Translational Research Institute The University of Queensland Brisbane Australia\n12. Department of Pathology, Eli and Edythe Broad CIRM Center for Regenerative Medicine and Stem Cell Research University of Southern California Los Angeles United States\n13. Department of Dermatology Medical Sciences Program, Indiana University School of Medicine Bloomington United States\n14. Centre of New Technologies CeNT, University of Warsaw Warsaw Poland\n15. Departments of Medicine and Biological Chemistry University of California Irvine United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe control principles behind robust cyclic regeneration of hair follicles (HFs) remain unclear. Using multi-scale modeling, we show that coupling inhibitors and activators with physical growth of HFs is sufficient to drive periodicity and excitability of hair regeneration. Model simulations and experimental data reveal that mouse skin behaves as a heterogeneous regenerative field, composed of anatomical domains where HFs have distinct cycling dynamics. Interactions between fast-cycling chin and ventral HFs and slow-cycling dorsal HFs produce bilaterally symmetric patterns. Ear skin behaves as a hyper-refractory domain with HFs in extended rest phase. Such hyper-refractivity relates to high levels of BMP ligands and WNT antagonists, in part expressed by ear-specific cartilage and muscle. Hair growth stops at the boundaries with hyper-refractory ears and anatomically discontinuous eyelids, generating wave-breaking effects. We posit that similar mechanisms for coupled regeneration with dominant activator, hyper-refractory, and wave-breaker regions can operate in other actively renewing organs.\n\n## Introduction\n\nFeaturing prominent growth cycles, the hair follicle (HF) is a model system of choice for studying tissue regeneration. At the level of cellular activities, the hair growth cycle consists of three consecutive phases: anagen, phase of active proliferation; catagen, apoptotic involution phase; and telogen, relative quiescence phase (Al-Nuaimi et al., 2010; Paus and Foitzik, 2004; Schneider et al., 2009; Stenn and Paus, 2001). Cyclic regeneration is sustained by the bulge stem cells, located at the base of the permanent HF portion (Cotsarelis et al., 1990). During anagen initiation, signals from the niche, including the dermal papilla (DP), stimulate bulge stem cells and adjacent hair germ (HG) progenitors to proliferate (Enshell-Seijffers et al., 2010; Greco et al., 2009; Legrand et al., 2016). Activated progenitors generate all lower HF structures, including the outer root sheath (ORS) and hair matrix. During catagen, a widespread apoptotic program remodels the HF back toward a telogen state (Botchkarev et al., 2001b; Fessing et al., 2006; Foitzik et al., 2000; Lindner et al., 1997; Mesa et al., 2015). Conceptually, since the bulge produces downward migrating progeny (Hsu et al., 2011), it effectively serves as a progenitor source, while the matrix functions as a sink, and the ORS as a channel for progenitors transiting between them.\n\nThe signaling mechanisms that time these coordinated cellular activities during hair regeneration remain incompletely understood (Al-Nuaimi et al., 2014; Bernard, 2012; Lin et al., 2009; Paus et al., 1999). The putative \u2018hair cycle clock\u2019 is thought to be composed of one or several activator/inhibitor pairs acting to time key cycle phase transitions at set thresholds of their activities. Accordingly, cycle pace will depend on the speed at which activators and inhibitors reach their respective thresholds (Chen et al., 2015). Importantly, HFs exist as large populations and at least in the dorsal skin they interact to coordinate growth cycles (Hodgson et al., 2014; Plikus et al., 2011, Plikus and Chuong, 2008a, Plikus et al., 2008b). Such coordination implies that at least some of the activators and inhibitors should be present between HFs, in the so-called skin macro-environment. Previous work on dorsal skin indicates that BMP and WNT pathways constitute important components of the hair cycle clock. Indeed, defects in either of these pathways can dramatically change hair cycle progression (Botchkarev et al., 2001a; Botchkarev and Sharov, 2004; Choi et al., 2013; Enshell-Seijffers et al., 2010; Kandyba and Kobielak, 2014; Kandyba et al., 2013; Kobielak et al., 2003, 2007; Sharov et al., 2005, 2006), and ligands and antagonists for both pathways mediate macro-environmental coordination between HFs (Chen et al., 2014; Plikus et al., 2011; Plikus and Chuong, 2014). Additionally, FGF, PDGF, TGF\u03b2, TNF\u03b1 and other pathways can modulate hair cycle (Chen et al., 2015; Festa et al., 2011; Higgins et al., 2014; Ito et al., 2003; Kimura-Ueki et al., 2012; Leishman et al., 2013; Oshimori and Fuchs, 2012; Plikus, 2012; Rivera-Gonzalez et al., 2016). Importantly, the combined signaling activities for the above pathways partition the hair cycle in the dorsal skin into four functional phases, each with its distinct activator/inhibitor profile: propagating anagen (P), autonomous anagen (A), refractory telogen (R) and competent telogen (C) (Hodgson et al., 2014; Plikus and Chuong, 2014; Plikus et al., 2008b). Interactions between HFs enable hair regeneration across dorsal skin to self-organize into dynamic patterns. Critical for this self-organization are the following HF-to-HF interactions: P-phase HFs can induce neighboring C-phase HFs to enter anagen via diffusible activators, leading to hair growth coupling, while A-phase anagen or R-phase telogen HFs cannot couple due to high levels of inhibitors (Murray et al., 2012; Plikus et al., 2011; Plikus and Chuong, 2014; Plikus et al., 2008b). It remains unknown, however, whether this self-organization mechanism and its underlying WNT/BMP signaling activities is a general feature of all body skin or a special case for dorsal skin only.\n\nIntegrative understanding of large-scale hair regeneration requires a systems biology approach. Previous modeling on HFs include cellular automaton models (Halloy et al., 2000; Plikus et al., 2011), feedback-control model (Al-Nuaimi et al., 2012) and the FitzHugh-Nagumo (FHN)\u00a0excitable medium model (Murray et al., 2012). Here, we present a unified three-dimensional and stochastic modeling framework for the HF that captures: (i) activator/inhibitor signaling dynamics in a single HF, (ii) cyclic growth of a single HF, and (iii) coupling between multiple HFs through diffusive signals. Using this model, we reveal that skin as a whole behaves as a heterogeneous regenerative field, where: (a) dominant hair cycle waves start in the ventrum, (b) propagate dorsally in a bilateral pattern, (c) stop at the boundary with hyper-refractory ear skin, and (d) break at non-propagating anatomical landmarks, such as eyelids and ears. We also show that WNT and BMP serve as a universal activator/inhibitor signaling pair, whose varying activities underlie distinct hair regeneration dynamics in all anatomical locations studied. These results provide new understanding of how the entire skin of the animal manages all of its hair regeneration.\n\n## Results\n\n### A multi-scale model recapitulates a single growing HF, as well as HF-to-HF communication\n\nFirst, in modeling the geometry of a single HF, we considered four key expression sites for activator/inhibitor ligands, antagonists, and receptors along the HF axis: bulge, HG, matrix, and DP (Figure 1A). During the cycle, the bulge (assigned as Region I) remains relatively static, whereas the DP moves up and down along the HF axis. Also dynamic are the HG and matrix. The former only exists during telogen, while the latter only exists during anagen. The HG grows down to make matrix during anagen onset, whereas during catagen, the matrix collapses, and a new HG reforms. Simplistically, cyclic HG\u2192matrix\u2192HG dynamics are coordinated with the DP; thus, in the model we identify them jointly as Region II. Next, we considered that both regions produce signaling factors. Although a biological simplification, we assumed that Region I does so at a rather constant rate, while Region II shows distinct temporal dynamics (Appendix 2\u2014table 4). We also assumed that Region II is essential for sending hair cycle-promoting signal(s), while Region I is the primary signal target. In short, we hypothesized that the essential temporal molecular dynamics in the HF operate as follows: Region II generates a signaling ligand (L) gradient; Region I detects it and transmits it into ligand-bound receptors (LR) that then, through a series of intermediate signaling steps not captured in the model directly (such as activities of the downstream signaling pathways and involvement of additional cell populations), regulates cyclic HF growth (Figure 1A). The molecular signaling events, either activating or inhibitory, can be summarized as:(1)\u2202\u2202t[L]\u00a0=\u00a0Diffusion+Production+Reaction\u00a0of\u00a0L\u00a0and\u00a0R(2)\u2202\u2202t[LR]\u00a0=\u00a0Reaction\u00a0of\u00a0L\u00a0and\u00a0R\u00a0+Degradation\u00a0+Extra\u00a0Source\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22772/elife-22772-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic depiction of HF growth dynamics during telogen and anagen. Telogen and anagen HFs are shown on the left and in the center, respectively. In both hair cycle phases, Region I (purple) represents bulge and Region II (orange) represents DP with HG during telogen phase, and DP with matrix during anagen phase. On the right, schematic drawing of diffusive activator (Act. L. in green) and inhibitor (Inh. L. in red) interactions with their corresponding receptors (Act. R and Inh. R, not depicted) that form ligand-bond-receptors (Act. LR and Inh. LR) and their coupling with physical growth of the HF (blue) is shown. (B) Typical noise-free dynamics of the activator (green) and inhibitor (red) and cyclic HF growth (blue) are shown. X-axis is time in simulated days. Y-axis for activator and inhibitor shows simulated signaling levels, and for HF growth \u2013 simulated length of the HF. Grey area demarcates one modeled hair growth cycle. (C) The duration of ~anagen and ~telogen phases as the function of inhibitor signaling strengths. X-axis shows modeled inhibitor levels with \u20180\u2019 being an arbitrary baseline levels. Y-axis shows time in simulated days. Upon stronger inhibitory signaling (high Inh. L level) ~anagen shortens (yellow) and ~telogen lengthens (purple). The entire cycle (blue) becomes longer either with stronger or weaker inhibitory signaling. When inhibitory signaling becomes either very strong or very weak, the excitability of the system breaks down and HFs equilibrate in one state (grey regions). Also see Appendix 2\u2014tables 1, 2 and 4. (D\u2013E\u2019\u2019) A total of 236 putative activator genes (green) and 122 putative inhibitor genes (red) available from a whole skin microarray dataset were identified to recapitulate temporal dynamics of the simulated activator (D) and inhibitor (E), respectively. Multiple WNT pathway members are in the putative activator gene set (D\u2019, D\u2019\u2019), while BMP pathway members are among the putative inhibitor genes (E\u2019, E\u2019\u2019). See gene list in Dataset 1. For all genes log-transformed, zero-mean expression profile values were calculated using colorimetric ratio-scale algorithm as reported in (Lin et al., 2009).\n\nwhere L, R and LR stand for ligands, receptors, and ligand-bound receptors, respectively. In the dynamics of LR (Equation 2), the \u2018Extra Source\u2019 describes stochastic signaling effects due to noise, and potential signaling contributions from Region I (Appendix\u00a02-Governing equations for activators and inhibitors). As Equations 1 and 2 show, ligand-receptor interactions in the model take place only for the same signaling pathway, and no direct pathway cross-talk is set to occur. This, again, is a biological simplification. Recently, evidence for pathway interactions have emerged (Kandyba et al., 2013), and its effect is explored in Appendix\u00a02-Possible interactions between the activator and inhibitor pathways do not qualitatively alter the HF dynamics.\n\nOur model integrates key signaling features of the hair growth cycle: strong activator signals enhance HF growth, while strong inhibitor signals prevent it. We modeled HF growth through the spatial average of LR concentration differences between the levels of activator and inhibitor in Region I (Equation 7 in Appendix\u00a02-Modeling HF phases by concentration difference). We assumed the hair cycle has two critical \u2018checkpoints\u2019: (i) the event in late competent telogen, when production of activator starts to increase (Chen et al., 2014; Greco et al., 2009; Oshimori and Fuchs, 2012; Plikus et al., 2008b), and (ii) the event of anagen termination, when the HF starts to involute. Thus, our model recognizes two phases determined by these checkpoints: ~anagen, starting from the moment of activator amplification until anagen termination, and ~telogen, lasting until the next activator amplification event. In the context of the conventional hair growth cycle, ~anagen incorporates the late portion of competent telogen and the entire anagen, while ~telogen includes catagen, refractory telogen and the remainder of competent telogen (Plikus et al., 2011; Plikus and Chuong, 2014; Plikus et al., 2008b) (Appendix\u00a02-Modeling HF phases by concentration difference; Appendix 2\u2014figure 2).\n\nModel simulations produce several emergent behaviors. The cycle becomes autonomous \u2013 that is, it displays stable periodicity and excitability emerges naturally without a built-in \u2018clock\u2019 (Figure 1B). Cycling is maintained within a range of parameter values, allowing testing for various intrinsic and extrinsic signaling scenarios (Figure 1C). Associated with these dynamics are periodic changes in the system\u2019s geometry \u2013 the signaling source in Region II moves cyclically. Simulations indicate that the moving HF geometry in the model is critical, greatly contributing to the regulation of the cycle. In a single HF model, activator/inhibitor diffusion occurs only along the HF axis. When a HF population is modeled, hair-to-hair communication emerges naturally as ligand diffusion from neighbors supplements intrinsic HF ligand levels. As such, hair cycle pace depends on interactive signaling between neighboring HFs \u2013 a feature that we explore below.\n\n### HF cycling emerges from the growth-mediated coupling of activator and inhibitor\n\nOur model predicts that HF cycling occurs only within a certain range of signal strengths, that\u00a0is the excitable regime (Figure 1C, white region). Within this regime, activator and inhibitor are predicted to inversely modulate duration of both ~telogen and ~anagen phases. At certain, either too high or too low signal strengths, the excitability is predicted to break down and the HF is expected to enter a non-cycling state of equilibrium (Figure 1C, grey regions). For example, when inhibitor levels are very high, the HF is predicted to equilibrate in an extended telogen (Appendix 2\u2014figure 5A), while extended anagen is predicted for the opposite signaling condition (Appendix 2\u2014figure 5B).\n\nNext, we used bioinformatic and experimental approaches to validate the model\u2019s key prediction that the same activator or inhibitor pathway can inversely modulate telogen and anagen phase duration. Considering the established roles for BMP and WNT as respective inhibitor and activator pathways regulating telogen duration in the dorsal skin, we explored if they can also regulate anagen duration in the same skin region in a model-predicted fashion. First, we found that model-predicted temporal dynamics for inhibitor and activator during ~anagen (Figure 1D and 1E) match the actual anagen expression dynamics for multiple BMP and WNT pathway members established on a highly temporally resolved whole-tissue dorsal skin microarray dataset (Lin et al., 2009) (Figure 1D\u2013E\u2019\u2019; Appendix\u00a01-Identifying model predicted hair cycle activators and inhibitors). We also show that perturbing BMP (for details see Appendix\u00a01-Validating model-predicted roles for BMP signaling in hair cycle control) and WNT in transgenic mice (for details see Appendix\u00a01-Validating model-predicted roles for WNT signaling in hair cycle control) alters dorsal anagen phase duration and leads to hair length defects in a way that is consistent with the model\u2019s predictions. Overall, this data shows that our model generates biologically meaningful outcomes and that its predictive power is robust.\n\n### Model reveals skin is a heterogeneous regenerative field\n\nNext, we set out to explore novel aspects of hair regeneration at the population level. For this purpose, we modeled a linear array of HFs (i.e. two-dimensional organization; Appendix 2\u2014figure 4A) and a grid of HFs (i.e. three-dimensional organization; Appendix 2\u2014figure 4B). In both cases, the diffusion of activators and inhibitors accompanying each HF during growth naturally led to HF coupling (Appendix\u00a01-Validating model-predicted roles for BMP signaling in hair\u00a0cycle\u00a0control) and emergence of several known features of collective hair growth behavior, including spontaneous anagen initiation and anagen wave spreading (Appendix 2\u2014figures 11, 12). We then focused on the phenomenon of bilaterally symmetric hair growth that is prominent in young mice (Plikus et al., 2008b) yet remains unexplained. Conventionally, first anagen in the dorsal skin of newborn mice is considered synchronous. On the other hand, adult mice display fully asynchronous and asymmetric dorsal hair growth patterns (Chen et al., 2014; Plikus and Chuong, 2008a; Plikus et al., 2009). This, however, is preceded by prominent bilateral symmetry, which often persists into the fourth hair cycle (Plikus and Chuong, 2008a). We now show that in the three-dimensional model where all HFs are assumed to be identical, full asynchrony evolves within just one cycle, and bilateral symmetry cannot be achieved (Appendix\u00a02-Dorsal and ventral HF patterns; Appendix 2\u2014figures 11, 12; Appendix 2\u2014video 1). Therefore, we hypothesized that first anagen is inherently asynchronous as a result of spatially patterned HF development. Indeed, spatial distribution of early anagen HFs in the dorsal skin of newborn mice (Figure 2A\u2013D) reveals head-to-tail and subtle lateral-to-medial asynchronies. We modeled the impact of these asynchronies on hair growth pattern evolution. Simulations reproduced head-to-tail asynchrony (Appendix\u00a02-Dorsal and ventral HF patterns; Appendix 2\u2014figures 14, 15; Appendix 2\u2014video 3); however, it persisted for at least 10 cycles, which is far more than the 3\u20134 cycles observable in mice. Moreover, prominent bilateral symmetry failed to form.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22772/elife-22772-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013D) Analysis of the whole mount dorsal skin samples from P0 (n\u00a0=\u00a03) (A) and P1 WT mice (n\u00a0=\u00a03) (A\u2019) reveals subtle head-to-tail and lateral-to-medial hair cycle asynchronies. Asynchronies were inferred from examining the size of pigmented HFs. Larger HFs result from earlier anagen onset. (B) Heatmaps of skin samples from A and A\u2019 built based on black pixel density (reflecting pigmented anagen HFs). (C) Quantification of anagen HFs at different phases confirms head-to-tail pattern asynchrony. Morphological definition of anagen phases used for this analysis is provided at the bottom on the panel. (D) Analysis of the whole mount dorsal skin samples from P0 220bpMsx2-hsplacZ mice, where lacZ reporter activates in anagen HFs starting from phase IIIb, confirms head-to-tail asynchrony. (E, F) Modeling rapid hair growth pattern evolution in the context of two heterogeneous domains. (E) Schematic depiction of the modeling conditions with central Dorsal domain flanked by two lateral Ventral sub-domains with coupling between Dorsal and Ventral HFs. (F) Compared to Dorsal domain HFs, Ventral domain HFs were assigned with higher levels of total available activator and inhibitor receptors, allowing shorter ~anagen and ~telogen duration. Furthermore, hair cycle asynchrony was introduced into Dorsal domain to model the initial head-to-tail asynchrony. In simulations, interactions between HFs across domain boundaries result in bilateral symmetry during the second cycle (simulated time t68-78.5). Also, initial asynchrony breaks down in the cycle 3 (t130), and partial bilateral symmetry maintains into the late cycles (see Appendix 2\u2014video 4). Scale bars: A, A\u2019, D \u2013 5 mm. Images on A, A\u2019 and D are composites.\n\nWe note that the above and previous simulations (Murray et al., 2012; Plikus et al., 2011) were performed on homogenous HF populations, where all HFs are assumed to be identical. We then considered that novel patterns might develop upon interaction of two or more HF populations, whose activator/inhibitor signaling levels are inherently different. In principle, dorsal skin HFs can interact with HFs from other body regions, such as ventral skin, where hair cycle dynamics are potentially distinct. Because all skin is continuous and forms an approximation of a cylinder, we modeled it as an unrolled sheet, where two Ventral sub-domains flank a rectangular Dorsal domain (Figure 2E). For initial modeling conditions (Appendix\u00a02-Dorsal and ventral HF patterns), we considered that: (i) the first cycle on the dorsal skin has built-in head-to-tail asynchrony, and that (ii) ventral HFs develop with a 3-\u00a0to\u00a04-day delay relative to dorsal HFs (Appendix 1\u2014figures 7\u20139). Because ventral HFs are known to produce distinctly shorter hairs (Candille et al., 2004), in the model we assumed that they have faster cycle dynamics compared to dorsal HFs (Appendix\u00a02-Changes in the total amount of activator and inhibitor receptors\u00a0results in different sensitivity of ~anagen and ~telogen lengths to\u00a0signaling changes, Appendix\u00a02-Dorsal and ventral HF patterns; Appendix 2\u2014figures 8, 9). Indeed, in this configuration, our model readily reproduced patterns with aspects of bilateral symmetry already in the second cycle as the result of dominant waves spreading from the Ventral to the Dorsal domain (Figure 2F, t68-78.5). Importantly, after the second cycle, the effect of the initial built-in head-to-tail asynchrony started to disappear. Instead, the interaction between Ventral and Dorsal HFs continued to produce prominent bilateral symmetry in the third (Figures 2F, t130-145) and later cycles (Appendix 2\u2014video 4). Taken together, the model predicts that rapid hair growth pattern evolution requires interaction of two or more skin domains with distinct hair cycle parameters.\n\n### Ventral-dorsal interactions produce bilaterally symmetric hair growth patterns\n\nNext, we imaged Flash mice, whose luciferase reporter produces skin-specific WNT activity signal and allows to sensitively and non-invasively determine the location and percentage of anagen HFs across the entire body (Hodgson et al., 2014) (Figure 3A\u2013C). Luminescence levels were measured both dorsally and ventrally and mice were followed up until day P119, encompassing up to five hair growth cycles. Combined analysis from multiple mice reveals prominent phase advancement in ventral over dorsal anagen, specifically during the second, third, and fourth hair cycles (Figure 3B, blue area). Additionally, the spatial luminescence signal mapping reveals distinct ventral-to-dorsal anagen propagation with features of bilateral symmetry during second (Figure 3C; Appendix 1\u2014figure 6) and third cycles (Figure 3C\u2019), supporting the patterning mechanism predicted by the model (Figure 2F). We also mapped body-wide hair growth patterns on the basis of anagen HF pigmentation between days P0-P55 (Figure 3D\u2013G; Appendix 1\u2014figures 7\u201312). This analysis confirms ventral over dorsal anagen phase advancement starting from the second cycle and provides the following additional insights:\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22772/elife-22772-fig3-v2.jpg)\n\n**Figure 3.:** (A) Time-lapse bioluminescence in dorsal and ventral skin of the representative Flash mouse between days P5-P48. Bioluminescent signal is color-coded according to the colorimetric scale on the right. (B) Combined temporal dynamics (from 6 Flash mice) of the bioluminescent signal-based anagen measurements over four hair cycles (days P5-P119). Dorsal skin dynamics are in brown and ventral skin dynamics are in blue. Prominent temporal advancement of ventral over dorsal anagen initiation can be seen during second, third and fourth cycles (light blue areas). This advancement is accompanied by dominant ventral-to-dorsal anagen wave spreading. (C, C\u2019) Mapping of Flash-based anagen reveals ventral-to-dorsal hair growth wave propagation and bilateral pattern symmetry. New anagen areas for each time point are color-coded. Second anagen initiation is shown on panel C, and third anagen initiation on panel C\u2019. Also see Appendix 1\u2014figure 6. (D\u2013G) Hair growth distribution patterns on P17 (D), P21 (E), P39 (F) and P55 (G). Three mice were analyzed at each time point. Inverted whole mount skin samples from representative mice are shown. Schematic pattern maps are provided with color-coded anagen (green), catagen (yellow) and telogen (red) regions. Also see Appendix 1\u2014figures 7\u201312. (H, I) HF cycling dynamics in chin skin grafts remain faster compared to dorsal skin grafts. After transplantation, first anagen initiated similarly in both chin and dorsal skin grafts, however, second anagen initiated significantly faster in chin grafts. Representative chin and dorsal skin grafts are shown on (H). Combined temporal dynamics of skin grafts in anagen and telogen are shown on (I). Dorsal graft dynamics are in brown and chin graft dynamics are in blue. Temporal advancement of chin over dorsal second anagen initiation is highlighted with light blue color. Also see Appendix 1\u2014figure 13.\n\n(i) Ventrally, anagen phase is the shortest in the \u2018chin domain\u2019, ending around P10. It is longer in the \u2018ventral domain\u2019 proper, ending in the genital area around P14 and in the chest area around P17 (Figure 3D).\n\n(ii) Dorsally, anagen is the shortest in the \u2018cranial domain\u2019, ending around P14. In the \u2018dorsal domain\u2019 proper it ends as a head-to-tail wave between P15-P20 (Figure 3D; Appendix 1\u2014figures 10, 11).\n\n(iii) First ventral telogen is shorter than dorsal telogen. Second anagen initiates in the chin and ventral domains already between P21-24 and then spreads toward ventral-dorsal boundaries in form of two bilaterally symmetric waves (Figure 3E; Appendix 1\u2014figure 12). Second anagen also ends faster in the ventral skin, maintaining ventral-dorsal asynchrony and bilateral symmetry (Figure 3F).\n\n(iv) Third anagen initiates the fastest in the chin domain, as early as P42 (Figures 3G and 4H).\n\nWhen transplanted onto the back of pigmented SCID mice, chin skin grafts (n\u00a0=\u00a08) showed faster cycling compared to dorsal skin grafts (n\u00a0=\u00a08). While first post-transplantation anagen started with similar timing in both chin and dorsal grafts, consecutive anagen started significantly faster in chin grafts (Figure 3H and I; Appendix 1\u2014figure 13). Furthermore, in many instances, grafts induced anagen in the surrounding dorsal host skin. Taken together, these data support that dominant ventral-to-dorsal hair wave spreading drives rapid hair growth pattern evolution and bilateral symmetry. Underlying this behavior are faster hair growth cycle dynamics in chin and ventral HFs, a property that is partially maintained upon skin grafting.\n\nNext, we asked if faster hair cycle dynamics in chin and ventral domains correlate with distinct molecular dynamics in putative activators and inhibitors. We performed RNA-seq profiling of whole skin from chin, ventral and dorsal domains at six hair cycle time points: first (aka competent) telogen, early anagen, mid-anagen, late anagen, catagen and early second (aka refractory) telogen. Analysis revealed non-overlapping transcriptomic trajectories of the hair cycle between the three domains (Figure 4A\u2013B\u2019\u2019) and domain-specific expression patterns for multiple putative activator and inhibitor genes at all hair cycle time points (Appendix 1\u2014figures 14\u201319; Dataset 2). We then asked if refractory properties of early telogen differ between the domains. Differential gene expression analysis (Figure 4C\u2013D) revealed enrichment in chin and ventral domains for gene ontologies related to macrophage function and lipid storage, and enrichment in chin domain for muscle-related genes (Figure 4E). Consistently, chin skin shows more contractile cells around HFs, and chin and ventral skin have thicker dermal adipose tissue and substantially more CD11b+;F4/80+ macrophages as compared to dorsal skin (Appendix 1\u2014figures 20, 21). Furthermore, dorsal early telogen skin shows gene expression changes consistent with higher refractivity \u2013 it is enriched for several BMP ligands, and depleted for BMP antagonists and WNT ligands (Figure 4F). Consistently, in Axin2-lacZ WNT reporter mice, many more HFs with WNT-active DPs are seen in chin and ventral as compared to dorsal skin at P36 (Figure 4G; Appendix 1\u2014figure 22A). WNT activity increases in dorsal skin to the levels of ventral skin only by P42 (Figure 4H; Appendix 1\u2014figure 22B). Furthermore, in P42 BRE-gal BMP reporter mice, many more HFs with BMP-active bulges are seen in dorsal as compared to chin and ventral skin (Figure 4I; Appendix 1\u2014figure 22C). In Krt14-Wnt7a mice, spontaneous anagen initiation sites in dorsal skin overrun ventral-to-dorsal wave dominance (Figure 4J; Appendix 1\u2014figure 23). In contrast, in Krt14-Bmp4 mice, ventral-dorsal hair growth waves stall and asymmetric anagen patches form instead (Figure 4K). Together, this data confirms that lower refractivity and the underlying differences in BMP and WNT activities form the bases for ventral-dorsal hair growth dominance.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22772/elife-22772-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B\u2019\u2019) PCA analysis reveals largely non-overlapping transcriptomic trajectories across six hair cycle stages in chin (B), ventral (B\u2019) and dorsal domains (B\u2019\u2019). Combined, deconstructed PCA plots are shown with all data points marked as grey dots and domain-specific data points outlined and color-coded. Color-coding is based on the hair cycle timeline from Appendix 1\u2014figure 14A; transcriptomic trajectories are drawn with dark lines. (C) Deconstructed PCA plot for refractory (early second) telogen is shown with domain-specific data points highlighted and color-coded based on the schematic drawing on A. (D\u2013F) Analysis of refractory telogen data identified 1407 differentially expressed genes across the three domains (D), with each domain showing enrichment for distinct gene ontologies (E). Multiple putative hair cycle activator and inhibitor genes show domain-specific differential expression (F). Putative activators are in green and putative inhibitors are in red. For each gene, relative fold changes for ventral over chin and dorsal over chin expression levels are indicated. Genes that show cyclic expression patterns are highlighted with blue. See additional expression data analysis on Appendix 1\u2014figures 14\u201319 and in Dataset 2. Asterisk marks non-canonical WNT ligand.\u00a0(G, H) Analysis of Axin2-lacZ skin during second telogen reveals faster activation of WNT signaling in chin and ventral HFs over dorsal HFs. At P36 majority of HFs in chin and ventral skin have WNT-active DPs. In dorsal skin, the number of HFs with WNT-active DPs is low at P36, but increases by P42. (I) Analysis of P42 BRE-gal skin shows that many more dorsal HFs have BMP-active bulges as compared to chin and ventral HFs. Also see Appendix 1\u2014figure 22. (J) Overexpression of Wnt7a results in disruption of ventral-to-dorsal hair growth wave dominance and spontaneous anagen appears in the dorsal domain at P60. (K) Overexpression of Bmp4 results in stalled ventral-to-dorsal hair growth wave spreading and patchy, asymmetric hair growth at P57. Scale bars: G-I \u2013 200 um, J-K \u2013 500 um.\n\n### Ear pinna behaves as a hyper-refractory skin domain\n\nOur model also predicts conditions when hair cycling stops and HFs equilibrate in an extended telogen, such as due to high levels of inhibitors (Appendix\u00a02-Hyper-refractory domain; Appendix 2\u2014figure 5A, 16). We profiled mouse skin for the existence of such behavior and found ears to match such prediction. In the ear skin, HF morphogenesis begins between days P2-P4, and HFs remain in anagen until about P15 (Figure 5A). After first anagen, and for at least three months, they remain in an extended telogen, while at the same time dorsal HFs have already reached their third cycle (Figure 5B and C). Seldom, solitary anagen HFs can be found, but no coordinated hair growth waves, characteristic to other skin regions, are observed (Figure 5B, day P95). Moreover, anagen waves spreading from cranial skin could not propagate into ear skin (Figure 7E). These observations are consistent with the possibility that ear skin is hyper-refractory. Next, we examined ear HFs\u2019 responses to several potent anagen inducers: cyclosporin A (Maurer et al., 1997; Paus et al., 1989), smoothened agonist (SAG) (Paladini et al., 2005) and hair plucking (Chen et al., 2015). We show that while dorsal telogen HFs readily respond to cyclosporin A (Appendix 1\u2014figure 27B), ear HFs remain quiescent even 3\u00a0weeks after treatment (Figure 5F). Anagen can be induced in response to SAG; however, this response occurs late, after 3 weeks, and remains restricted to the medial side of the ear (Figure 5E). This is contrasted by rapid SAG-induced anagen in dorsal skin (Appendix 1\u2014figure 27A). Plucking induces anagen along the medial side of the ear; however, there is no anagen wave spreading into the unplucked region, a feature common in dorsal skin (Chen et al., 2015) (Figure 5D; Appendix 1\u2014figures 25A-B, 26). Furthermore, whole ear plucking experiments reveal very sparse anagen activation along the lateral side (Appendix 1\u2014figure 25C). These data demonstrate that physiologically, adult ear HFs equilibrate in a hyper-refractory telogen state, yet in principle remain capable of regenerative cycling in response to selective external stimuli.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22772/elife-22772-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) Morphogenesis and physiological cycling of ear HFs. (A) Analysis of ear tissue histology shows that developing HFs first appear on day P4, and progress toward mature anagen by P7. They enter catagen around P15 and first telogen by P17 (based on three mice for each time point). (B, C) Whole mount ear skin analyses show that ear HFs fail to enter second coordinated anagen and, instead, remain in an extended telogen. Seldom, isolated anagen HFs can be found (see P95 sample on B). Data are based on three mice for each time point. (D) HFs along medial side of the ear re-enter anagen after plucking (also see Appendix 1\u2014figure 25). Experiment is based on five mice for each time point analyzed. Representative ear skin image and accompanying heatmap is shown. Heatmap criteria are shown at the bottom. (E) Unlike in dorsal skin (see Appendix 1\u2014figure 27A), ear HFs poorly respond to topical SAG treatment. Anagen induction is limited to the medial edge of the ear. (F) Unlike in dorsal skin (see Appendix 1\u2014figure 27B), ear HFs fail to re-enter anagen in response to topical cyclosporin A treatment. Experiments on E and F are based on three mice for each time point analyzed. Representative ear skin images and accompanying heatmaps are shown. Scale bars: A \u2013 100 um.\n\nTo understand how ear HF hyper-refractivity relates to activator and inhibitor signaling levels, we compared on RNA-seq refractory telogen dorsal skin with telogen ear skin and, additionally, cartilage/muscle complex, a structure unique to ears. We show that, transcriptionally, these three tissue types are distinct (Figure 6A), containing large number of differentially expressed genes (Figure 6B; Dataset 3) enriched for distinct gene ontologies (Figure 6C). Analysis of the signaling pathways implicated in the hair cycle control revealed a number of differentially expressed WNT and BMP pathway ligands and antagonists (Figure 6D). Compared to dorsal skin, ear skin is enriched for transcripts for several WNT antagonists, including Dkkl1, Dkk2 and Sfrp2, as well as collagen Col17a1, implicated in HF stem cell maintenance (Matsumura et al., 2016). Cartilage/muscle complex is prominently enriched for Bmp5, and multiple WNT antagonists, including Frzb, Sfrp2, Sfrp5 and Wif1. Additionally, it showed upregulated expression of other known hair cycle inhibitors Fgf18 (Kimura-Ueki et al., 2012; Leishman et al., 2013) and Ctgf (Liu and Leask, 2013).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22772/elife-22772-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C) Transcriptomes of first telogen ear skin, first telogen dorsal skin and ear cartilage/muscle complex are distinct, as revealed by PCA analysis (A). They contain 1334 differentially expressed genes (B), spanning distinct gene ontologies (C). (D, E) These tissues show differential expression of multiple ligands and antagonists for several major signaling pathways, prominently WNT and BMP. Putative activators are in green and putative inhibitors are in red. For each gene, relative fold changes for ear skin over dorsal skin and cartilage/muscle complex over dorsal skin expression levels are indicated. Select genes are highlighted. (F, F\u2019) BRE-gal reporter reveals high BMP activity in telogen ear HFs and in the adjacent cartilage/muscle complex (n\u00a0=\u00a08). (G, G\u2019) Axin2-lacZ reporter reveals near absence of WNT activity in ear HFs and cartilage/muscle complex. Seldom, sites of dermal reporter activity can be found (n\u00a0=\u00a08). (H\u2013H\u2019\u2019) Compared to wild type mice (n\u00a0=\u00a04) (H), ears of Krt14-Noggin (n\u00a0=\u00a04) (H\u2019) and Krt14-Wnt7a mice (n\u00a0=\u00a04) (H\u2019\u2019) show prominent increases in spontaneous anagen frequency. Cumulative heatmaps from four individual ear samples are shown. Also see Appendix 1\u2014figure 28. Scale bars: F, G \u2013 500 um; F\u2019, G\u2019 \u2013 100 um.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22772/elife-22772-fig7-v2.jpg)\n\n**Figure 7.:** (A, B) Introduction of a non-propagating barrier (A) or an aperture (B) into the model produces simulations with distorted anagen spreading wave front (green). (C, E) Distortions in the geometry of hair growth waves are commonly seen in the head region at the boundaries with the hyper-refractory ears and eyelids, the physical breaks in the skin. Seldom, similar distorted patterns can be seen around limb skin (D). Hair growth patterns on C-E are accompanied by color-coded schematic drawings. Colors are defined at the bottom. Hair growth distortion patterns shown were documented in ten mice each.\n\nWe validated WNT and BMP changes from RNA-seq by studying relevant pathway reporters and measuring changes in ear hair cycling in mutant mouse models. Using Axin2-lacZ reporter mice, we show isolated sites of WNT activity in ear skin dermis, and a lack of activity in telogen HFs as well as in the cartilage and muscle (Figure 6G and G\u2019). Using BRE-gal reporter mice, we show high levels of BMP activity in telogen ear HFs (in the bulge), as well as in the cartilage and muscle (Figure 6F and F\u2019). Overexpression of the BMP antagonist Noggin in Krt14-Noggin mice partially rescued the hyper-refractory state \u2013 substantially more spontaneous anagen HFs can be found in Krt14-Noggin ears as compared to wild-type control (Figure 6H and H\u2019; Appendix 1\u2014figure 28B, D). Wnt7a overexpression in Krt14-Wnt7a mice also reactivated anagen in ear skin, albeit to a lesser extent compared to Noggin overexpression (Figure 6H\u2019\u2019; Appendix 1\u2014figure 28C, D). Together, these results support that hyper-refractivity of ear HFs depends on higher levels of BMP ligands and WNT antagonists, in part produced by the cartilage/muscle complex (Figure 6E).\n\n### Hair growth waves distort around hyper-refractory and hairless skin regions\n\nLastly, our model predicts that hair growth waves can form distorted patterns around non-propagating skin regions, such as hyper-refractory hair-bearing skin or hairless skin (Figure 7A and B; Appendix\u00a02-Hyper-refractory domain and Wave breaker; Appendix 2\u2014figure 17; Appendix 2\u2014video 5). We considered that pattern distortion could occur in the cranial skin at the boundaries with hyper-refractory ears and eyelids \u2013 naturally occurring physical breaks in the skin. Indeed, we observe that hair growth waves prominently break around the eyelids and ears \u2013 anagen waves propagate faster through the hair-bearing skin around the eyelids and ears, and then distort into the spaces in front of these anatomical structures (Figure 7C and E). Similar patterns are also observed for the ventral-to-dorsal hair growth wave around the limbs (Figure 7D). We conclude that distortions of hair growth waves around anatomical structures with temporary or permanent non-propagating properties contribute to rapid body-wide hair growth pattern evolution.\n\n## Discussion\n\n### Growth-regulated parallel signaling makes the HF an excitable medium\n\nPrevious mathematical models have recapitulated cycling of a single HF (Al-Nuaimi et al., 2012; Halloy et al., 2000) or in HF populations in two dimensions (Murray et al., 2012; Plikus et al., 2011). Here, we developed a multiscale model where coupling of activator and inhibitor signals with the movements of a HF in a three-dimensional space simulates cyclic growth and communication between neighboring HFs. In a single HF regime, our model faithfully predicts the effects that changes in WNT and BMP signaling can exert on the length of the anagen phase of the hair cycle.\n\nSimilar to the FHN generic excitable media model (Murray et al., 2012), our model also recapitulates several known population-level features of the HF system such as spontaneous hair growth initiation and hair wave spreading. Importantly, however, only our model allows incorporation of differential HF growth in space, a feature required for simulating heterogeneous skin properties such as interactions between skin domains with different hair cycle frequencies or the hair wave distortion effect. Thus, while the multiscale nature and non-linearity make our model more difficult to derive analytical results, its heterogeneous domain feature allows studying complex skin-wide hair growth dynamics (see Appendix 2-Comparison with FitzHugh-Nagumo (FHN) model).\n\n### HF morphogenesis across mouse skin is spatially asynchronous\n\nHair growth in newborn mice is commonly thought to occur simultaneously across the entire skin. In fact, we show that the first cycle is already distinctly patterned: at birth, anagen HFs in dorsal skin have head-to-tail and lateral-to-medial asynchronies, while first anagen entry by ventral HFs is delayed by approximately 3 days and proceeds as a concentric lateral-to-midline wave. Similarly delayed by 6 days are ear HFs. First anagen naturally follows the process of HF morphogenesis, which is known to be temporarily asynchronous, and to occur, at least in the dorsal skin, in three successive waves (reviewed in Clavel et al., 2012). Pattern-wise, development of HFs relies on reaction-diffusion (Sick et al., 2006) and on space-filling expansion-induction mechanisms (Cheng et al., 2014). Importantly, models for both mechanisms assume spatially synchronous HF morphogenesis. Our findings of spatial asynchrony of the first anagen indicate spatial asynchrony of HF morphogenesis. Future studies will be required to understand the modeling and signaling aspects of such phenomenon.\n\n### Hair cycle patterns evolve from the interaction of heterogeneous skin domains\n\nOur data reveal prominent regional differences in hair cycle dynamics and show that interaction between HFs across domain boundaries drives rapid evolution of complex hair growth patterns. Specifically, we show that during early postnatal cycles, chin and ventral domains become the dominant sources of skin-wide anagen waves. Such dominant behavior of chin and ventral domains is accompanied by distinct activity dynamics for WNT and BMP, putative hair cycle activators and inhibitors, respectively. Transgenic mouse studies further confirm the functional importance of differential WNT and BMP activities in setting distinct hair growth pace across discrete anatomical skin regions. Admittedly, an in-depth follow-up study will be necessary to identify and verify the major site-specific cellular sources for WNT and BMP ligands and antagonists.\n\nWe also show that ear skin behaves as a hyper-refractory domain, where telogen HFs are resistant to anagen-inducing stimuli and cannot participate in hair growth wave propagation. We reveal that such hyper-refractivity relates to high levels of BMP ligands and WNT antagonists, in part produced by the cartilage/muscle complex, a structure unique to the ear skin. Thus, novel behaviors can be produced by the cooption of signals from new tissue modules, rather than by the modification of preexisting ones. This finding parallels the modulatory effects of non-HF cell types on the dorsal skin hair cycle, including adipose progenitors (Festa et al., 2011; Rivera-Gonzalez et al., 2016), mature adipocytes (Plikus et al., 2008b), and resident macrophages (Castellana et al., 2014; Chen et al., 2015). Finally, we show that anatomically defined structures that cannot propagate hair growth waves, namely ears and eyelids, can generate a \u2018wave-breaker\u2019 effect. Similar distortion effects are likely to occur around other anatomical structures, such as the tail and genitals, and around skin defects, such as scars, and can jointly contribute to rapid hair growth pattern evolution.\n\nTaken together, our study reveals that the skin as a whole functions as a complex regenerative landscape with regions of fast, slow, and very slow hair renewal (Appendix 1\u2014figure 29). We show that this behavior produces a fur coat with variable hair density, which likely serves an adaptive role, such as in thermoregulation. Mechanistically, we show that the WNT/BMP activator/inhibitor signaling pair modulates hair regeneration in all skin regions studied. This suggests that the WNT/BMP \u2018molecular language\u2019 for hair growth is general, rather than a special case for a specific body site. Its generality allows for hair-to-hair communications to arise across anatomic domain boundaries, which, in turn, enables novel hair growth dynamics not obvious from prior work \u2013 fast cycling skin regions (such as chin skin) function as a kind of hair growth pacemaker. Furthermore, our findings on ear hair cycle expand the repertoire of tissues with signaling macro-environment function to include any closely-positioned anatomic structures with signaling properties, such as cartilage.\n\nWe posit that some of the newly found hair regeneration features can have analogs in other organs. For instance, dominant anatomically defined pacemakers are common in the electrically coupled muscle-based tissues, including heart and stomach, where they generate directional contractile rhythmicity. Other actively regenerating organs, such as the intestines and bone marrow, can likely contain anatomic regions of faster and slower regeneration and, conceivably, they can be coupled to work in coordination. Knowledge learned from the skin system in the current study can guide the search for regenerative landscapes in these and other organs. Because coordination principles observed in the skin may be universal, the likelihood of them operating in other organs is substantial despite prominent anatomical differences.\n\n## Materials and methods\n\n### Computational modeling\n\nThe modeling framework is based on a hybrid approach, with individual HFs modeled as an expanding or contracting one-dimensional line and with the diffusive molecules described in reaction-diffusion equations (Appendix 2, Equations 1\u20134). The latter are solved using a finite difference scheme with the standard central difference approximation on the diffusion (see Appendix\u00a02-1-dimensional (1D) HF model\u00a0to\u00a0Numerical methods in Appendix 2).\n\n### Experimental mouse models\n\nKrt14-Noggin (Plikus et al., 2004, 2005), Krt14-Bmp4 (Guha et al., 2004), Krt14-Cre;Wnt7bfl/fl (Kandyba and Kobielak, 2014), Krt14-Wnt7a (Plikus et al., 2011), Krt5-rtTA;tetO-Dkk1 (Chu et al., 2004), 220bpMsx2-hsplacZ reporter (Brugger et al., 2004), BRE(Bmp response element)-gal BMP reporter (Javier et al., 2012), Axin2-lacZ (Lustig et al., 2002), and Flash WNT reporter mice (Hodgson et al., 2014) were used. For Dkk1 induction, P30 Krt5-rtTA;tetO-Dkk1 mice were placed on 2 mg/ml Doxycycline-containing water ab libitum, and skin was collected at P44 for histology and at P50 for hair length measurements.\n\n### Skin grafting\n\n5 \u00d7 5 mm skin grafts from chin and dorsal domains of P21 C57BL/6J male mice were transplanted onto the dorsum of gender-matched pigmented P50 SCID recipients. At the time of grafting, donor skin was in first telogen and recipient skin was in second telogen.\n\n### Hair plucking\n\nIn dorsal skin, club hairs were plucked from 5 \u00d7 5 mm areas. In the ear pinna, plucking was done on the caudal skin. For quantitative plucking, approximately 500 club hairs we plucked along the medial ear side.\n\n### Topical drug treatment\n\nCyclosporin A: for the dorsal skin, 100 ul of Cyclosporin A solution (1, 5, and 10 mg/ml) was applied topically once a day for 7 days. For the ear pinna, caudal skin was treated with 100 ul of 10 mg/ml of Cyclosporin A once a day for 7 days. Smoothened agonist (SAG): for the dorsal skin, 120 uM of SAG in DMSO/acetone was applied topically once a day for 4 days as described (Paladini et al., 2005). For the ear pinna, caudal skin was treated with 25 ul of SAG solution once a day for 4 days.\n\n### Hair length measurements and club hair counting\n\nGuard, awl, auchene and zigzag club hair types were photographed, traced and calibrated using Adobe Illustrator software. See Appendix 1\u2014table 1. Club hair density was evaluated on whole-mount telogen skin samples that were pre-treated with 1 mg/mL Collagenase/Dispase and counterstained with hematoxylin.\n\n### Histology and immunohistochemistry\n\nHistology was performed on 4% PFA-fixed sections. For BRE-gal and Axin2-lacZ specimens, whole mount lacZ staining was performed first followed by histology. The primary antibodies used were rabbit anti-keratin Krt5 (1:250, Abcam, UK), rabbit anti-perilipin (1:750; Cell Signaling), rabbit anti-\u03b1SMA (1:200; Abcam). Actin was detected with phalloidin (Alexa Fluor 488; Molecular Probes).\n\n### Whole mount in vivo bioluminescence imaging\n\nWhole body imaging of Flash mice was performed as previously described (Hodgson et al., 2014). Briefly, mice were injected with 150 mg/kg of firefly D-luciferin substrate and imaged with the Xenogen IVIS Spectrum system.\n\n### FACS and analysis\n\nSecond telogen skin from C57BL/6J male mice was treated with Dispase to separate epidermis from dermis. Epidermis was digested with Accutase and dermis with Collagenase. Epidermal and dermal cell suspensions were combined and stained with anti-CD11b (eBioscience) and anti-F4/80 antibodies (eBioscience). Due to small tissue size, chin skin cells from three mice were combined for each experiment. FACS data were analyzed using FlowJo.\n\n### RNA-sequencing and analyses\n\nTotal RNA was isolated using the RNeasy Mini\u00a0Kit (Qiagen). RNA samples with RIN\u00a0>8.0 were considered for cDNA library preparation. Full-length cDNA library amplification and tagmentation was performed as previously described (Picelli et al., 2014). Libraries were multiplexed and sequenced as paired-end on an Illumina Next-Seq500 platform. Paired-end reads were aligned to the mouse genome (mm10/gencode.vM8) and quantified using the RNA-seq by Expectation-Maximization algorithm (RSEM) with standard parameters (version 1.2.25) (Li and Dewey, 2011). Samples were batch-effect corrected. EdgeR (version 3.14.0) was employed to identify differentially expressed genes (DEGs) across samples of interest. FPKM values were taken as inputs for PCA analysis and DEG analyses. Data is available at GEO: GSE85039.\n",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "334a59f4-165e-4f38-b876-ca1075e94f5d",
+      "submission_id": "f760ce50-46d6-4b69-82b1-626d98e09b21",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, Yale University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22772.093](https://doi.org/10.7554/eLife.22772.093)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"\u2018A multi-scale model for hair follicles reveals heterogeneous domains driving rapid spatiotemporal hair growth patterning\"\u2019 for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Fiona Watt as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe found that your manuscript describes an interesting phenomenon that mouse skin is composed of different anatomic regions that interact as heterogeneous excitable domains. The authors used thorough analysis of the whole body hair cycle dynamics coupled with novel mathematical modeling to explain the emergence of certain hair cycle patterns in mouse skin. Extensive mRNA profiling analysis offers some hints as to the molecular mechanisms behind some of the observed features. This work opens up a new angle to analyze and understand the nature of hair growth on the whole body scale, an important perspective not appreciated before.\n\nMajor comments to be addressed in a revised manuscript:\n\n1) In general, the reviewers thought that these results should be placed in a broader context with the authors' own work and that of others. First, what is the difference between this manuscript, Plikus et al., 2011 and the interaction between follicles that was recently explored by Chen et al., 2015? The authors make some comparisons in the Results section (subsection \u201c\u2018Model reveals skin is a heterogeneous excitable medium.\u201d\u2019) but this type of logic needs to come into the experimental design for the introduction and results. Second, the focus on Wnt and Bmp signaling seems redundant based on previous work from several labs. Third, the authors should discuss how a similar approach could benefit the study of other tissues?\n\n2) Often the text is written in a confusing manner. For instance, \"\u2018we scaled the model both into two (Appendix 2\u2014figure 4A) and three dimensions (Appendix 2\u2014figure 4B)\"\u2019 does not make sense to me. This lack of clarity makes Figure 1 and Figure 2 almost impossible to interpret.\n\n3) Figure 2A and B do not clearly show \"\u2018neck-to-tail asynchrony\"\u2019 in hair morphogenesis. Do the authors mean that the center is different from the left to right regions?\n\nIn Figure 2F the authors demonstrated a scenario of how bilaterally symmetric hair growth pattern could emerge. Even with the assumptive parameters they described in the text, it is not clear why the spread of anagen from dorsal-ventral only occurs in the posterior part of the ventral skin, such as from t=50 to t=62. Is it assumed that the anterior- posterior parts of the ventral skin are also different? Whether or not this is the case here, the authors should expand to explain this phenomenon because it affects the outcome of the entire model. In this manuscript the authors didn't address the anterior- posterior difference of the skin, but given the nature of this study, it would be helpful to clarify why the authors choose to do so.\n\n4) Figure 3 uses a Wnt reporter to examine hair cycling but it is unclear whether the luciferase signal is skin specific.\n\nThe result in Appendix 1 is highly interesting. It suggests the faster cycling nature of the chin skin is intrinsic, instead of relying on neighboring tissues in the chin like the cartilage in the ear. To drive the point home, it would help to do the Flash analysis on the chin graft and compare the dynamics of Wnt signaling in graft compared to native chin skin. Also this result should be moved to main figure because it serves as a strong justification to do subsequent RNA-seq analysis.\n\n5) The implication that the ventral skin initiates hair cycling is interesting and not fully tested experimentally in this manuscript.\n\n6) The hair follicle is certainly a good model to begin to examine these problems and the combination of experiment and modeling is very powerful. Could it apply to other large spread out tissues such as muscle, blood, bones, etc? Maybe this can be discussed. It is very interesting that the model predicts a sort of self-sufficiency of the regenerative process, in which, like a perpetuum mobile, it can keep going potentially without \"\u2018higher-order\"\u2019 control or even trigger from a systemic signal. Maybe this aspect can be emphasized.\n\n7) Given the amount of work the authors put in Figure 4, the message is surprisingly little, other than the description of very complicated and a little confusing dynamic expression patterns. The authors do have multiple genetic models used in this study that can help them sort out the functions of some of the signal pathways in defining the different anatomic domains. For instance in their K14-Noggin, K14-BMP4, K14Cre-Wnt7b fl/fl, K14-Wnt7a, K5trTA-teto-Dkk1 models, do the chin skin cycling frequencies change, do the ventral skin anagen duration change? The authors could choose at least 1 representative model of Wnt and BMP signal pathways to do this.\n\n8) In Figure 6H, the percentages of the ear follicles going into anagen in these transgenic models needs to be quantified. It will help address how dominant these signal pathways are in maintaining the quiescence of the ear skin.\n",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e90a2fe-5e5f-4e17-ae2f-921939c46768",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C1",
+      "claim": "The hair follicle (HF) growth cycle consists of three consecutive phases: anagen (active proliferation), catagen (apoptotic involution), and telogen (relative quiescence).",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of cellular activities, the hair growth cycle consists of three consecutive phases: anagen, phase of active proliferation; catagen, apoptotic involution phase; and telogen, relative quiescence phase (Al-Nuaimi et al., 2010; Paus and Foitzik, 2004; Schneider et al., 2009; Stenn and Paus, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature establishing the three-phase hair cycle model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "a6204ec1-18b0-430c-b982-4aed4f6f44f6",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C2",
+      "claim": "Cyclic regeneration of hair follicles is sustained by bulge stem cells located at the base of the permanent HF portion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic regeneration is sustained by the bulge stem cells, located at the base of the permanent HF portion (Cotsarelis et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cotsarelis et al., 1990, which established the role of bulge stem cells.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "33e62dd4-506d-49d7-8c94-a7a31a371ffa",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C3",
+      "claim": "During anagen initiation, signals from the dermal papilla (DP) stimulate bulge stem cells and hair germ (HG) progenitors to proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "During anagen initiation, signals from the niche, including the dermal papilla (DP), stimulate bulge stem cells and adjacent hair germ (HG) progenitors to proliferate (Enshell-Seijffers et al., 2010; Greco et al., 2009; Legrand et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies that established the role of DP signaling in anagen initiation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "7a97ead7-2271-4e5e-90b4-3993afc710ce",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C4",
+      "claim": "The bulge serves as a progenitor source, the matrix functions as a sink, and the ORS as a channel for progenitors transiting between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually, since the bulge produces downward migrating progeny (Hsu et al., 2011), it effectively serves as a progenitor source, while the matrix functions as a sink, and the ORS as a channel for progenitors transiting between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hsu et al., 2011 and represents a conceptual framework based on that work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "59cd1421-c3fb-4eff-9ade-b222c8cf479d",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C5",
+      "claim": "BMP and WNT pathways constitute important components of the hair cycle clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on dorsal skin indicates that BMP and WNT pathways constitute important components of the hair cycle clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by prior work referenced in the manuscript and is further supported by subsequent citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "924d1e30-a851-4d98-9cd0-0457b72f8d70",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C6",
+      "claim": "Defects in BMP or WNT pathways can dramatically change hair cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, defects in either of these pathways can dramatically change hair cycle progression (Botchkarev et al., 2001a; Botchkarev and Sharov, 2004; Choi et al., 2013; Enshell-Seijffers et al., 2010; Kandyba and Kobielak, 2014; Kandyba et al., 2013; Kobielak et al., 2003, 2007; Sharov et al., 2005, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies demonstrating effects of BMP and WNT pathway perturbations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "3d51d89a-f46f-4967-adf8-6b5b04794b4d",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C7",
+      "claim": "Ligands and antagonists for BMP and WNT pathways mediate macro-environmental coordination between HFs.",
+      "claim_type": "EXPLICIT",
+      "source": "and ligands and antagonists for both pathways mediate macro-environmental coordination between HFs (Chen et al., 2014; Plikus et al., 2011; Plikus and Chuong, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies that established the role of BMP and WNT ligands/antagonists in HF coordination.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "d7483d9b-db77-45ea-af88-04e93029aba1",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C8",
+      "claim": "The combined signaling activities for multiple pathways partition the hair cycle in dorsal skin into four functional phases: propagating anagen (P), autonomous anagen (A), refractory telogen (R) and competent telogen (C).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the combined signaling activities for the above pathways partition the hair cycle in the dorsal skin into four functional phases, each with its distinct activator/inhibitor profile: propagating anagen (P), autonomous anagen (A), refractory telogen (R) and competent telogen (C) (Hodgson et al., 2014; Plikus and Chuong, 2014; Plikus et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies that established the four-phase functional model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "d5dffbbf-4d31-432f-874c-f37870fb8128",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C9",
+      "claim": "P-phase HFs can induce neighboring C-phase HFs to enter anagen via diffusible activators, leading to hair growth coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Critical for this self-organization are the following HF-to-HF interactions: P-phase HFs can induce neighboring C-phase HFs to enter anagen via diffusible activators, leading to hair growth coupling, while A-phase anagen or R-phase telogen HFs cannot couple due to high levels of inhibitors (Murray et al., 2012; Plikus et al., 2011; Plikus and Chuong, 2014; Plikus et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to four studies that established HF-to-HF interaction mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "b7c3fcb6-c807-4d46-859a-5c922eba1e13",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C10",
+      "claim": "A-phase anagen or R-phase telogen HFs cannot couple due to high levels of inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Critical for this self-organization are the following HF-to-HF interactions: P-phase HFs can induce neighboring C-phase HFs to enter anagen via diffusible activators, leading to hair growth coupling, while A-phase anagen or R-phase telogen HFs cannot couple due to high levels of inhibitors (Murray et al., 2012; Plikus et al., 2011; Plikus and Chuong, 2014; Plikus et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to four studies that established HF-to-HF interaction mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "b752f6a5-9e38-462d-a123-4fd3742427d4",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C11",
+      "claim": "Coupling inhibitors and activators with physical growth of HFs is sufficient to drive periodicity and excitability of hair regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using multi-scale modeling, we show that coupling inhibitors and activators with physical growth of HFs is sufficient to drive periodicity and excitability of hair regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the modeling results presented in the manuscript, particularly in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "1bc3a95e-f8a2-4305-b50d-bcbb39562943",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C12",
+      "claim": "Mouse skin behaves as a heterogeneous regenerative field, composed of anatomical domains where HFs have distinct cycling dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Model simulations and experimental data reveal that mouse skin behaves as a heterogeneous regenerative field, composed of anatomical domains where HFs have distinct cycling dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by both model simulations and experimental data presented throughout the manuscript, particularly in Figures 2-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "20087778-aca8-444d-a6b1-09a7d94a37c2",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C13",
+      "claim": "Interactions between fast-cycling chin and ventral HFs and slow-cycling dorsal HFs produce bilaterally symmetric patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between fast-cycling chin and ventral HFs and slow-cycling dorsal HFs produce bilaterally symmetric patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and modeling results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "fc7a5509-048a-4e3e-bff0-592d2240cece",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C14",
+      "claim": "Ear skin behaves as a hyper-refractory domain with HFs in extended rest phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Ear skin behaves as a hyper-refractory domain with HFs in extended rest phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 5 showing extended telogen in ear HFs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "cafdb942-c029-4c5b-8a46-495be397b58f",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C15",
+      "claim": "Hyper-refractivity of ear skin relates to high levels of BMP ligands and WNT antagonists, in part expressed by ear-specific cartilage and muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Such hyper-refractivity relates to high levels of BMP ligands and WNT antagonists, in part expressed by ear-specific cartilage and muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data and reporter mouse studies presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "6defa077-75f0-4465-b16d-0c0b730fce32",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C16",
+      "claim": "Hair growth stops at the boundaries with hyper-refractory ears and anatomically discontinuous eyelids, generating wave-breaking effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Hair growth stops at the boundaries with hyper-refractory ears and anatomically discontinuous eyelids, generating wave-breaking effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations and modeling results presented in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "683f34f8-7040-4cf4-b65e-04257b01ef22",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C17",
+      "claim": "The model recognizes two phases determined by critical checkpoints: ~anagen and ~telogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model recognizes two phases determined by these checkpoints: ~anagen, starting from the moment of activator amplification until anagen termination, and ~telogen, lasting until the next activator amplification event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the modeling framework and is supported by the model description and Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "1323873e-64ae-43a0-aba8-c2dd94e334cf",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C18",
+      "claim": "The cycle becomes autonomous and displays stable periodicity and excitability without a built-in 'clock'.",
+      "claim_type": "EXPLICIT",
+      "source": "The cycle becomes autonomous \u2013 that is, it displays stable periodicity and excitability emerges naturally without a built-in 'clock' (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model simulations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "5645cc41-756e-4249-9f39-cfd4f5edb2ca",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C19",
+      "claim": "Cycling is maintained within a range of parameter values, allowing testing for various intrinsic and extrinsic signaling scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycling is maintained within a range of parameter values, allowing testing for various intrinsic and extrinsic signaling scenarios (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model simulations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "de53e36d-9e67-468b-a7c4-3e23c1817439",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C20",
+      "claim": "The moving HF geometry in the model is critical, greatly contributing to the regulation of the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations indicate that the moving HF geometry in the model is critical, greatly contributing to the regulation of the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model simulations and represents an inference from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "200dc7f2-6686-4065-9214-e74721593b29",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C21",
+      "claim": "HF cycling occurs only within a certain range of signal strengths, the excitable regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that HF cycling occurs only within a certain range of signal strengths, that is the excitable regime (Figure 1C, white region).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model predictions shown in Figure 1C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "0f7f0d90-ca9b-480e-b553-88fa418f7a79",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C22",
+      "claim": "Within the excitable regime, activator and inhibitor are predicted to inversely modulate duration of both ~telogen and ~anagen phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this regime, activator and inhibitor are predicted to inversely modulate duration of both ~telogen and ~anagen phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on model predictions and is supported by Figure 1C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "97637fe4-d551-455a-94d2-c9d74a02cc45",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C23",
+      "claim": "When inhibitor levels are very high, the HF is predicted to equilibrate in an extended telogen.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when inhibitor levels are very high, the HF is predicted to equilibrate in an extended telogen (Appendix 2\u2014figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model predictions shown in Appendix 2\u2014figure 5A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "ba736da8-e2ea-4aac-88b9-441ac5f5422b",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C24",
+      "claim": "Extended anagen is predicted when inhibitor levels are very low.",
+      "claim_type": "EXPLICIT",
+      "source": "while extended anagen is predicted for the opposite signaling condition (Appendix 2\u2014figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model predictions shown in Appendix 2\u2014figure 5B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "8f13f0b6-5162-40fd-881e-bee36326b9bb",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C25",
+      "claim": "Model-predicted temporal dynamics for inhibitor and activator during ~anagen match the actual anagen expression dynamics for multiple BMP and WNT pathway members.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that model-predicted temporal dynamics for inhibitor and activator during ~anagen (Figure 1D and 1E) match the actual anagen expression dynamics for multiple BMP and WNT pathway members established on a highly temporally resolved whole-tissue dorsal skin microarray dataset (Lin et al., 2009) (Figure 1D\u2013E''; Appendix 1-Identifying model predicted hair cycle activators and inhibitors).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of model predictions with microarray data shown in Figure 1D-E''.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "8cc4baea-24e4-49ed-8d88-77c8dfae79bd",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C26",
+      "claim": "Perturbing BMP and WNT in transgenic mice alters dorsal anagen phase duration and leads to hair length defects consistent with the model's predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that perturbing BMP (for details see Appendix 1-Validating model-predicted roles for BMP signaling in hair cycle control) and WNT in transgenic mice (for details see Appendix 1-Validating model-predicted roles for WNT signaling in hair cycle control) alters dorsal anagen phase duration and leads to hair length defects in a way that is consistent with the model's predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from transgenic mice described in the appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "3e0d6fc0-be0e-4128-b537-e575d44e5905",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C27",
+      "claim": "In a three-dimensional model where all HFs are assumed to be identical, full asynchrony evolves within just one cycle, and bilateral symmetry cannot be achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "We now show that in the three-dimensional model where all HFs are assumed to be identical, full asynchrony evolves within just one cycle, and bilateral symmetry cannot be achieved (Appendix 2-Dorsal and ventral HF patterns; Appendix 2\u2014figures 11, 12; Appendix 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model simulations shown in Appendix 2\u2014figures 11, 12 and video 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "78cbcb2e-8007-4437-ae20-b6579da54bdf",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C28",
+      "claim": "First anagen is inherently asynchronous as a result of spatially patterned HF development.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we hypothesized that first anagen is inherently asynchronous as a result of spatially patterned HF development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on the modeling results and is supported by subsequent experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "7e860918-49f1-4441-b102-c464a018aaaf",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C29",
+      "claim": "Spatial distribution of early anagen HFs in the dorsal skin of newborn mice reveals head-to-tail and subtle lateral-to-medial asynchronies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, spatial distribution of early anagen HFs in the dorsal skin of newborn mice (Figure 2A\u2013D) reveals head-to-tail and subtle lateral-to-medial asynchronies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "289dbe4c-a1c5-46b4-81a2-a8b796317502",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C30",
+      "claim": "Interactions between HFs across domain boundaries result in bilateral symmetry during the second cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulations, interactions between HFs across domain boundaries result in bilateral symmetry during the second cycle (simulated time t68-78.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by model simulations shown in Figure 2F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "1d93b52e-86da-4303-b8bd-6abe08962d93",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C31",
+      "claim": "The model predicts that rapid hair growth pattern evolution requires interaction of two or more skin domains with distinct hair cycle parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the model predicts that rapid hair growth pattern evolution requires interaction of two or more skin domains with distinct hair cycle parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction from the model based on simulation results shown in Figure 2F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "7d019585-0fe4-43d4-8062-0e3a3e9ed75d",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C32",
+      "claim": "Combined analysis from multiple Flash mice reveals prominent phase advancement in ventral over dorsal anagen during the second, third, and fourth hair cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined analysis from multiple mice reveals prominent phase advancement in ventral over dorsal anagen, specifically during the second, third, and fourth hair cycles (Figure 3B, blue area).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bioluminescence data from Flash mice shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "34c5c67b-0c9a-4535-a71a-9f531dc46115",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C33",
+      "claim": "Spatial luminescence signal mapping reveals distinct ventral-to-dorsal anagen propagation with features of bilateral symmetry during second and third cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the spatial luminescence signal mapping reveals distinct ventral-to-dorsal anagen propagation with features of bilateral symmetry during second (Figure 3C; Appendix 1\u2014figure 6) and third cycles (Figure 3C')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bioluminescence mapping data shown in Figure 3C and 3C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "d19dfb49-a059-4d0b-9a80-167d293e8a56",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C34",
+      "claim": "Ventrally, anagen phase is the shortest in the 'chin domain', ending around P10.",
+      "claim_type": "EXPLICIT",
+      "source": "Ventrally, anagen phase is the shortest in the 'chin domain', ending around P10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole mount skin analysis data described in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "d88eaefd-9968-4031-aac8-70a9b8441205",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C35",
+      "claim": "In the ventral domain proper, anagen is longer, ending in the genital area around P14 and in the chest area around P17.",
+      "claim_type": "EXPLICIT",
+      "source": "It is longer in the 'ventral domain' proper, ending in the genital area around P14 and in the chest area around P17 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole mount skin analysis data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "80f6db38-9205-4097-a952-ef7a03336d93",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C36",
+      "claim": "Dorsally, anagen is the shortest in the 'cranial domain', ending around P14.",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsally, anagen is the shortest in the 'cranial domain', ending around P14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole mount skin analysis data described in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "567bf79d-6240-49e0-b478-a16cf9d60782",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C37",
+      "claim": "In the dorsal domain proper, anagen ends as a head-to-tail wave between P15-P20.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'dorsal domain' proper it ends as a head-to-tail wave between P15-P20 (Figure 3D; Appendix 1\u2014figures 10, 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole mount skin analysis data shown in Figure 3D and Appendix 1\u2014figures 10, 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "f8df131e-c065-4c64-a024-6d1b83c52b49",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C38",
+      "claim": "First ventral telogen is shorter than dorsal telogen.",
+      "claim_type": "EXPLICIT",
+      "source": "First ventral telogen is shorter than dorsal telogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the timing data presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "018a77cb-07f9-48a4-9d68-2a7a6da7111d",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C39",
+      "claim": "Second anagen initiates in the chin and ventral domains between P21-24 and then spreads toward ventral-dorsal boundaries in form of two bilaterally symmetric waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Second anagen initiates in the chin and ventral domains already between P21-24 and then spreads toward ventral-dorsal boundaries in form of two bilaterally symmetric waves (Figure 3E; Appendix 1\u2014figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole mount skin analysis data shown in Figure 3E and Appendix 1\u2014figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "620f86dc-ab39-4a77-af89-5c9199e9aee4",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C40",
+      "claim": "Second anagen ends faster in the ventral skin, maintaining ventral-dorsal asynchrony and bilateral symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Second anagen also ends faster in the ventral skin, maintaining ventral-dorsal asynchrony and bilateral symmetry (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole mount skin analysis data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "221f9461-f512-47da-8474-ce1cc974c87f",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C41",
+      "claim": "Third anagen initiates the fastest in the chin domain, as early as P42.",
+      "claim_type": "EXPLICIT",
+      "source": "Third anagen initiates the fastest in the chin domain, as early as P42 (Figures 3G and 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole mount skin analysis data shown in Figures 3G and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "7a0bbe06-ce93-41b6-b15a-e02b747d5081",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C42",
+      "claim": "Chin skin grafts showed faster cycling compared to dorsal skin grafts when transplanted onto the back of pigmented SCID mice.",
+      "claim_type": "EXPLICIT",
+      "source": "When transplanted onto the back of pigmented SCID mice, chin skin grafts (n = 8) showed faster cycling compared to dorsal skin grafts (n = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by skin grafting experimental data shown in Figure 3H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "94cbb293-fe23-4136-968d-c3a64e558223",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C43",
+      "claim": "While first post-transplantation anagen started with similar timing in both chin and dorsal grafts, consecutive anagen started significantly faster in chin grafts.",
+      "claim_type": "EXPLICIT",
+      "source": "While first post-transplantation anagen started with similar timing in both chin and dorsal grafts, consecutive anagen started significantly faster in chin grafts (Figure 3H and I; Appendix 1\u2014figure 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by skin grafting experimental data shown in Figure 3H-I and Appendix 1\u2014figure 13.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "e424d3cb-f30a-4151-80a2-18fc4f86ab63",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C44",
+      "claim": "Faster hair cycle dynamics in chin and ventral domains is a property that is partially maintained upon skin grafting.",
+      "claim_type": "EXPLICIT",
+      "source": "Underlying this behavior are faster hair growth cycle dynamics in chin and ventral HFs, a property that is partially maintained upon skin grafting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the skin grafting experimental data shown in Figure 3H-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "56d8940b-ff39-4a8f-b2ff-3f0789642755",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C45",
+      "claim": "RNA-seq analysis revealed non-overlapping transcriptomic trajectories of the hair cycle between chin, ventral, and dorsal domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis revealed non-overlapping transcriptomic trajectories of the hair cycle between the three domains (Figure 4A\u2013B'')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data and PCA analysis shown in Figure 4A-B''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "b80ea6d3-7e86-472f-8ce1-aec15cea04b3",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C46",
+      "claim": "Chin, ventral, and dorsal domains show domain-specific expression patterns for multiple putative activator and inhibitor genes at all hair cycle time points.",
+      "claim_type": "EXPLICIT",
+      "source": "and domain-specific expression patterns for multiple putative activator and inhibitor genes at all hair cycle time points (Appendix 1\u2014figures 14\u201319; Dataset 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Appendix 1\u2014figures 14\u201319 and Dataset 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "70f0599a-f842-4222-bca1-df9eecadb8b1",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C47",
+      "claim": "Chin and ventral domains show enrichment for gene ontologies related to macrophage function and lipid storage during early telogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential gene expression analysis (Figure 4C\u2013D) revealed enrichment in chin and ventral domains for gene ontologies related to macrophage function and lipid storage",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential gene expression analysis shown in Figure 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "45eff9d4-e2c6-4d7e-a428-9fae55dc47ab",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C48",
+      "claim": "Chin domain shows enrichment for muscle-related genes during early telogen.",
+      "claim_type": "EXPLICIT",
+      "source": "and enrichment in chin domain for muscle-related genes (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential gene expression analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "700e874c-2520-40af-bde9-7981aa167902",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C49",
+      "claim": "Chin skin shows more contractile cells around HFs compared to dorsal skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, chin skin shows more contractile cells around HFs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological data shown in Appendix 1\u2014figures 20, 21.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "601fe7d0-19c3-44b9-b0f1-bad68fa6cb15",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C50",
+      "claim": "Chin and ventral skin have thicker dermal adipose tissue compared to dorsal skin.",
+      "claim_type": "EXPLICIT",
+      "source": "and chin and ventral skin have thicker dermal adipose tissue and substantially more CD11b+;F4/80+ macrophages as compared to dorsal skin (Appendix 1\u2014figures 20, 21).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological data shown in Appendix 1\u2014figures 20, 21.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "3fc58842-be77-4a97-9d7e-d309d5c8f708",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C51",
+      "claim": "Chin and ventral skin have substantially more CD11b+;F4/80+ macrophages compared to dorsal skin.",
+      "claim_type": "EXPLICIT",
+      "source": "and chin and ventral skin have thicker dermal adipose tissue and substantially more CD11b+;F4/80+ macrophages as compared to dorsal skin (Appendix 1\u2014figures 20, 21).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological and FACS data shown in Appendix 1\u2014figures 20, 21.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "cba7c04b-12a4-4b05-813b-1de083579f05",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C52",
+      "claim": "Dorsal early telogen skin shows gene expression changes consistent with higher refractivity, including enrichment for several BMP ligands and depletion for BMP antagonists and WNT ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, dorsal early telogen skin shows gene expression changes consistent with higher refractivity \u2013 it is enriched for several BMP ligands, and depleted for BMP antagonists and WNT ligands (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "95ebcc44-287e-42d9-9419-44d0cefc8570",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C53",
+      "claim": "In Axin2-lacZ WNT reporter mice, many more HFs with WNT-active DPs are seen in chin and ventral as compared to dorsal skin at P36.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in Axin2-lacZ WNT reporter mice, many more HFs with WNT-active DPs are seen in chin and ventral as compared to dorsal skin at P36 (Figure 4G; Appendix 1\u2014figure 22A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter mouse data shown in Figure 4G and Appendix 1\u2014figure 22A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "f712c10a-08fc-4aa8-a806-f0be510d6d78",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C54",
+      "claim": "WNT activity increases in dorsal skin to the levels of ventral skin by P42.",
+      "claim_type": "EXPLICIT",
+      "source": "WNT activity increases in dorsal skin to the levels of ventral skin only by P42 (Figure 4H; Appendix 1\u2014figure 22B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter mouse data shown in Figure 4H and Appendix 1\u2014figure 22B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "295d757c-bf40-4dee-85b2-dbe9348d8cfb",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C55",
+      "claim": "In P42 BRE-gal BMP reporter mice, many more HFs with BMP-active bulges are seen in dorsal as compared to chin and ventral skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in P42 BRE-gal BMP reporter mice, many more HFs with BMP-active bulges are seen in dorsal as compared to chin and ventral skin (Figure 4I; Appendix 1\u2014figure 22C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter mouse data shown in Figure 4I and Appendix 1\u2014figure 22C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "ac07cdd3-b69a-4b72-9d53-72b41930af20",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C56",
+      "claim": "In Krt14-Wnt7a mice, spontaneous anagen initiation sites in dorsal skin overrun ventral-to-dorsal wave dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "In Krt14-Wnt7a mice, spontaneous anagen initiation sites in dorsal skin overrun ventral-to-dorsal wave dominance (Figure 4J; Appendix 1\u2014figure 23).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transgenic mouse data shown in Figure 4J and Appendix 1\u2014figure 23.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "9bbdda7f-efc0-4cac-9347-f83442142bd6",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C57",
+      "claim": "In Krt14-Bmp4 mice, ventral-dorsal hair growth waves stall and asymmetric anagen patches form instead.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in Krt14-Bmp4 mice, ventral-dorsal hair growth waves stall and asymmetric anagen patches form instead (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transgenic mouse data shown in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "4b379672-33ad-451e-bbad-2086397eb999",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C58",
+      "claim": "Lower refractivity and the underlying differences in BMP and WNT activities form the bases for ventral-dorsal hair growth dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this data confirms that lower refractivity and the underlying differences in BMP and WNT activities form the bases for ventral-dorsal hair growth dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the combined experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "088d4ede-ecba-477d-8b9e-061e4adec8cd",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C59",
+      "claim": "In the ear skin, HF morphogenesis begins between days P2-P4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ear skin, HF morphogenesis begins between days P2-P4",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "63618c60-c8c6-43fa-80bb-d3b00aaf3b67",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C60",
+      "claim": "Ear HFs remain in anagen until about P15.",
+      "claim_type": "EXPLICIT",
+      "source": "and HFs remain in anagen until about P15 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological analysis data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "f28277e4-df3f-42be-8a04-f5df83f384a9",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C61",
+      "claim": "After first anagen, ear HFs remain in an extended telogen for at least three months.",
+      "claim_type": "EXPLICIT",
+      "source": "After first anagen, and for at least three months, they remain in an extended telogen, while at the same time dorsal HFs have already reached their third cycle (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole mount ear skin analysis data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "265d8fa1-5d97-47e8-b337-75539ce81b0c",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C62",
+      "claim": "Anagen waves spreading from cranial skin could not propagate into ear skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, anagen waves spreading from cranial skin could not propagate into ear skin (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "b47e6f78-3921-4820-9b21-a6e1b033e315",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C63",
+      "claim": "Dorsal telogen HFs readily respond to cyclosporin A treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that while dorsal telogen HFs readily respond to cyclosporin A (Appendix 1\u2014figure 27B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Appendix 1\u2014figure 27B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "9bdcbf02-c22d-45fd-928a-b9768ccdb7d0",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C64",
+      "claim": "Ear HFs remain quiescent even 3 weeks after cyclosporin A treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "ear HFs remain quiescent even 3 weeks after treatment (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "b72fbdee-ea58-4067-b628-dbed0c104fc5",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C65",
+      "claim": "Ear HFs can be induced to enter anagen in response to SAG, but this response occurs late, after 3 weeks, and remains restricted to the medial side of the ear.",
+      "claim_type": "EXPLICIT",
+      "source": "Anagen can be induced in response to SAG; however, this response occurs late, after 3 weeks, and remains restricted to the medial side of the ear (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "007426c0-3986-4020-8428-203d47d5e253",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C66",
+      "claim": "Dorsal skin shows rapid SAG-induced anagen.",
+      "claim_type": "EXPLICIT",
+      "source": "This is contrasted by rapid SAG-induced anagen in dorsal skin (Appendix 1\u2014figure 27A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Appendix 1\u2014figure 27A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "a4de19e5-2bc1-420f-a48e-6969d38e4825",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C67",
+      "claim": "Plucking induces anagen along the medial side of the ear, but there is no anagen wave spreading into the unplucked region.",
+      "claim_type": "EXPLICIT",
+      "source": "Plucking induces anagen along the medial side of the ear; however, there is no anagen wave spreading into the unplucked region, a feature common in dorsal skin (Chen et al., 2015) (Figure 5D; Appendix 1\u2014figures 25A-B, 26).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D and Appendix 1\u2014figures 25A-B, 26.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "47a15b3a-d30b-464c-b857-14649e1c592a",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C68",
+      "claim": "Whole ear plucking experiments reveal very sparse anagen activation along the lateral side.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, whole ear plucking experiments reveal very sparse anagen activation along the lateral side (Appendix 1\u2014figure 25C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Appendix 1\u2014figure 25C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "5f071256-b28c-4d03-869e-ae943136b616",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C69",
+      "claim": "Adult ear HFs equilibrate in a hyper-refractory telogen state physiologically, yet remain capable of regenerative cycling in response to selective external stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that physiologically, adult ear HFs equilibrate in a hyper-refractory telogen state, yet in principle remain capable of regenerative cycling in response to selective external stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the combined experimental data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "4daac57e-8d64-4530-bef3-305fd0708be5",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C70",
+      "claim": "Transcriptomes of first telogen ear skin, first telogen dorsal skin and ear cartilage/muscle complex are distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that, transcriptionally, these three tissue types are distinct (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq and PCA analysis data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "6e7dece5-22a8-4301-bbc7-0a7988e86d0b",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C71",
+      "claim": "Ear skin, dorsal skin, and cartilage/muscle complex contain 1334 differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "containing large number of differentially expressed genes (Figure 6B; Dataset 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq differential expression analysis shown in Figure 6B and Dataset 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "b6252d1a-ffc5-4f3a-b8fb-d26840541bf4",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C72",
+      "claim": "Ear skin, dorsal skin, and cartilage/muscle complex show enrichment for distinct gene ontologies.",
+      "claim_type": "EXPLICIT",
+      "source": "enriched for distinct gene ontologies (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "8dad8d95-4f25-4c11-9ecf-77c213cda5a7",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C73",
+      "claim": "Compared to dorsal skin, ear skin is enriched for transcripts for several WNT antagonists, including Dkkl1, Dkk2 and Sfrp2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to dorsal skin, ear skin is enriched for transcripts for several WNT antagonists, including Dkkl1, Dkk2 and Sfrp2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq differential expression analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "afc43a12-d9d7-41a7-a43e-5fc7b27b4360",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C74",
+      "claim": "Ear skin is enriched for collagen Col17a1, implicated in HF stem cell maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as collagen Col17a1, implicated in HF stem cell maintenance (Matsumura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data and a citation to Matsumura et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "baea5788-c1de-4f65-b75e-60bc70ab4f3d",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C75",
+      "claim": "Cartilage/muscle complex is prominently enriched for Bmp5.",
+      "claim_type": "EXPLICIT",
+      "source": "Cartilage/muscle complex is prominently enriched for Bmp5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq differential expression analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "acc0eadc-04d2-41ac-bb03-285d09024bb7",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C76",
+      "claim": "Cartilage/muscle complex is enriched for multiple WNT antagonists, including Frzb, Sfrp2, Sfrp5 and Wif1.",
+      "claim_type": "EXPLICIT",
+      "source": "and multiple WNT antagonists, including Frzb, Sfrp2, Sfrp5 and Wif1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq differential expression analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "fc5775b4-0b8f-4e7b-a8e8-a29e9c97ecd6",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C77",
+      "claim": "Cartilage/muscle complex showed upregulated expression of Fgf18, a known hair cycle inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it showed upregulated expression of other known hair cycle inhibitors Fgf18 (Kimura-Ueki et al., 2012; Leishman et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data and citations to studies establishing Fgf18 as a hair cycle inhibitor.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "273842c5-8032-43d3-9fa8-6a430b963366",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C78",
+      "claim": "Cartilage/muscle complex showed upregulated expression of Ctgf, a known hair cycle inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "and Ctgf (Liu and Leask, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data and a citation to Liu and Leask, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "b483a29c-b3c4-4368-b595-ae280c46e089",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C79",
+      "claim": "BRE-gal reporter reveals high BMP activity in telogen ear HFs and in the adjacent cartilage/muscle complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using BRE-gal reporter mice, we show high levels of BMP activity in telogen ear HFs (in the bulge), as well as in the cartilage and muscle (Figure 6F and F').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter mouse data shown in Figure 6F and F'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "02d0574b-dabf-4699-969b-9ad06723af0a",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C80",
+      "claim": "Axin2-lacZ reporter reveals isolated sites of WNT activity in ear skin dermis, and a lack of activity in telogen HFs as well as in the cartilage and muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Axin2-lacZ reporter mice, we show isolated sites of WNT activity in ear skin dermis, and a lack of activity in telogen HFs as well as in the cartilage and muscle (Figure 6G and G').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter mouse data shown in Figure 6G and G'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "c65c1acc-bb48-47b7-8397-da68848f51c8",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C81",
+      "claim": "Overexpression of the BMP antagonist Noggin in Krt14-Noggin mice partially rescued the hyper-refractory state, with substantially more spontaneous anagen HFs found compared to wild-type control.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of the BMP antagonist Noggin in Krt14-Noggin mice partially rescued the hyper-refractory state \u2013 substantially more spontaneous anagen HFs can be found in Krt14-Noggin ears as compared to wild-type control (Figure 6H and H'; Appendix 1\u2014figure 28B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transgenic mouse data shown in Figure 6H and H' and Appendix 1\u2014figure 28B, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "1d88c537-f164-4014-83b0-47a5ea0b37ef",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C82",
+      "claim": "Wnt7a overexpression in Krt14-Wnt7a mice reactivated anagen in ear skin, albeit to a lesser extent compared to Noggin overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt7a overexpression in Krt14-Wnt7a mice also reactivated anagen in ear skin, albeit to a lesser extent compared to Noggin overexpression (Figure 6H''; Appendix 1\u2014figure 28C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transgenic mouse data shown in Figure 6H'' and Appendix 1\u2014figure 28C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "270ed217-9501-426c-9b16-f728023644ef",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C83",
+      "claim": "Hyper-refractivity of ear HFs depends on higher levels of BMP ligands and WNT antagonists, in part produced by the cartilage/muscle complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results support that hyper-refractivity of ear HFs depends on higher levels of BMP ligands and WNT antagonists, in part produced by the cartilage/muscle complex (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a conclusion drawn from the combined experimental data presented in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "4ca681bc-b688-4354-901e-7b8ed7f3f5b5",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C84",
+      "claim": "The model predicts that hair growth waves can form distorted patterns around non-propagating skin regions, such as hyper-refractory hair-bearing skin or hairless skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, our model predicts that hair growth waves can form distorted patterns around non-propagating skin regions, such as hyper-refractory hair-bearing skin or hairless skin (Figure 7A and B; Appendix 2-Hyper-refractory domain and Wave breaker; Appendix 2\u2014figure 17; Appendix 2\u2014video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a prediction from the model shown in Figure 7A and B and Appendix 2\u2014figure 17.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "e8b00a64-5011-449b-8445-493c278af3ac",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C85",
+      "claim": "Hair growth waves prominently break around the eyelids and ears, with anagen waves propagating faster through the hair-bearing skin around these structures and then distorting into the spaces in front of them.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observe that hair growth waves prominently break around the eyelids and ears \u2013 anagen waves propagate faster through the hair-bearing skin around the eyelids and ears, and then distort into the spaces in front of these anatomical structures (Figure 7C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 7C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "6220939f-8e6a-436d-9a74-ad3fc9b53bdd",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C86",
+      "claim": "Similar wave distortion patterns are observed for the ventral-to-dorsal hair growth wave around the limbs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar patterns are also observed for the ventral-to-dorsal hair growth wave around the limbs (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "3f277ae3-c68e-447c-9b82-0a15146fd5b6",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C87",
+      "claim": "Distortions of hair growth waves around anatomical structures with temporary or permanent non-propagating properties contribute to rapid body-wide hair growth pattern evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that distortions of hair growth waves around anatomical structures with temporary or permanent non-propagating properties contribute to rapid body-wide hair growth pattern evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the combined experimental and modeling data presented in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "6e810752-be8f-47ea-bfc0-f7d358f57696",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C88",
+      "claim": "The multiscale model allows incorporation of differential HF growth in space, a feature required for simulating heterogeneous skin properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, only our model allows incorporation of differential HF growth in space, a feature required for simulating heterogeneous skin properties such as interactions between skin domains with different hair cycle frequencies or the hair wave distortion effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a key feature of the model and is supported by the modeling results throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "2bf8cfc8-b11c-45b5-b07d-2770b63ec7b5",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C89",
+      "claim": "First anagen entry by ventral HFs is delayed by approximately 3 days compared to dorsal HFs and proceeds as a concentric lateral-to-midline wave.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we show that the first cycle is already distinctly patterned: at birth, anagen HFs in dorsal skin have head-to-tail and lateral-to-medial asynchronies, while first anagen entry by ventral HFs is delayed by approximately 3 days and proceeds as a concentric lateral-to-midline wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations described in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "d4d231d8-1bd6-48b1-9e2b-b3b3404fd2c8",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C90",
+      "claim": "First anagen entry by ear HFs is delayed by 6 days compared to dorsal HFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly delayed by 6 days are ear HFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations described in the text and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "28574eeb-2c21-4a6c-8b0a-7197b3035db1",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C91",
+      "claim": "HF morphogenesis is spatially asynchronous.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings of spatial asynchrony of the first anagen indicate spatial asynchrony of HF morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the observed spatial asynchrony of first anagen.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "4b7455f2-acef-4e47-8cc3-6b51e218bbd5",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C92",
+      "claim": "During early postnatal cycles, chin and ventral domains become the dominant sources of skin-wide anagen waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that during early postnatal cycles, chin and ventral domains become the dominant sources of skin-wide anagen waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "4d8c2f0e-877f-4274-8e87-1268f9d402c2",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C93",
+      "claim": "Dominant behavior of chin and ventral domains is accompanied by distinct activity dynamics for WNT and BMP, putative hair cycle activators and inhibitors, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Such dominant behavior of chin and ventral domains is accompanied by distinct activity dynamics for WNT and BMP, putative hair cycle activators and inhibitors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq and reporter mouse data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "39b9944e-51cb-42b2-9952-1b1e6b51dd45",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C94",
+      "claim": "Transgenic mouse studies confirm the functional importance of differential WNT and BMP activities in setting distinct hair growth pace across discrete anatomical skin regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic mouse studies further confirm the functional importance of differential WNT and BMP activities in setting distinct hair growth pace across discrete anatomical skin regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by transgenic mouse data shown in Figure 4J-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "8144ea0d-7560-45e2-b85b-ee26390167fe",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C95",
+      "claim": "Novel behaviors can be produced by the cooption of signals from new tissue modules, rather than by the modification of preexisting ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, novel behaviors can be produced by the cooption of signals from new tissue modules, rather than by the modification of preexisting ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a general principle inferred from the finding that ear cartilage/muscle complex produces signals affecting ear HF behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "11e9b0d0-c0a0-4d5e-93c8-da80e0f8fcc9",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C96",
+      "claim": "Non-HF cell types can have modulatory effects on the dorsal skin hair cycle, including adipose progenitors, mature adipocytes, and resident macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding parallels the modulatory effects of non-HF cell types on the dorsal skin hair cycle, including adipose progenitors (Festa et al., 2011; Rivera-Gonzalez et al., 2016), mature adipocytes (Plikus et al., 2008b), and resident macrophages (Castellana et al., 2014; Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior studies establishing these modulatory effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "fbbbd88c-be80-4457-834a-c0d6b0e3c64d",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C97",
+      "claim": "The skin as a whole functions as a complex regenerative landscape with regions of fast, slow, and very slow hair renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our study reveals that the skin as a whole functions as a complex regenerative landscape with regions of fast, slow, and very slow hair renewal (Appendix 1\u2014figure 29).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a conclusion drawn from the combined experimental and modeling data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "3e0eede9-5217-4d8f-ac4c-1c8d7d5aaf4c",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C98",
+      "claim": "Variable hair density in the fur coat likely serves an adaptive role, such as in thermoregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this behavior produces a fur coat with variable hair density, which likely serves an adaptive role, such as in thermoregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting a potential adaptive function for the observed hair density variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "30c773fc-4c3f-46aa-9ebc-c60d053fb9cb",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C99",
+      "claim": "The WNT/BMP activator/inhibitor signaling pair modulates hair regeneration in all skin regions studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we show that the WNT/BMP activator/inhibitor signaling pair modulates hair regeneration in all skin regions studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from multiple skin regions shown throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "5e655cd1-0ff3-471a-baae-76da3f256fa7",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C100",
+      "claim": "The WNT/BMP 'molecular language' for hair growth is general, rather than a special case for a specific body site.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the WNT/BMP 'molecular language' for hair growth is general, rather than a special case for a specific body site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the observation that WNT/BMP signaling modulates hair regeneration across all studied skin regions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "13434f53-74c6-4965-8836-d7510f082391",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C101",
+      "claim": "The generality of the WNT/BMP molecular language allows for hair-to-hair communications to arise across anatomic domain boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Its generality allows for hair-to-hair communications to arise across anatomic domain boundaries, which, in turn, enables novel hair growth dynamics not obvious from prior work \u2013 fast cycling skin regions (such as chin skin) function as a kind of hair growth pacemaker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the combined experimental and modeling data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "c0778073-c6f8-406b-bce8-2e9d93c005ae",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C102",
+      "claim": "Fast cycling skin regions (such as chin skin) function as a kind of hair growth pacemaker.",
+      "claim_type": "EXPLICIT",
+      "source": "Its generality allows for hair-to-hair communications to arise across anatomic domain boundaries, which, in turn, enables novel hair growth dynamics not obvious from prior work \u2013 fast cycling skin regions (such as chin skin) function as a kind of hair growth pacemaker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing chin and ventral domains as dominant sources of anagen waves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "8cc1a07a-a601-4b85-94f6-48124b1634ac",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C103",
+      "claim": "The signaling macro-environment function can include any closely-positioned anatomic structures with signaling properties, such as cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our findings on ear hair cycle expand the repertoire of tissues with signaling macro-environment function to include any closely-positioned anatomic structures with signaling properties, such as cartilage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the finding that ear cartilage/muscle complex affects ear HF behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "74a2e36b-89d5-4bd0-ba61-41b1e148800e",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C104",
+      "claim": "Some of the newly found hair regeneration features can have analogs in other organs.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that some of the newly found hair regeneration features can have analogs in other organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting potential parallels in other organs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "281f3e11-696e-4ed5-9d42-92f6c9f54ddb",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C105",
+      "claim": "Dominant anatomically defined pacemakers are common in electrically coupled muscle-based tissues, including heart and stomach, where they generate directional contractile rhythmicity.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, dominant anatomically defined pacemakers are common in the electrically coupled muscle-based tissues, including heart and stomach, where they generate directional contractile rhythmicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws on established knowledge about pacemakers in muscle-based tissues.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "4cd200b9-d073-4dd4-8605-85418b8bfe5b",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C106",
+      "claim": "Other actively regenerating organs, such as the intestines and bone marrow, can likely contain anatomic regions of faster and slower regeneration that can be coupled to work in coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "Other actively regenerating organs, such as the intestines and bone marrow, can likely contain anatomic regions of faster and slower regeneration and, conceivably, they can be coupled to work in coordination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting potential parallels in other regenerating organs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "f22c898b-4f96-4636-84d3-ad48351c8f21",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C107",
+      "claim": "Knowledge learned from the skin system can guide the search for regenerative landscapes in other organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowledge learned from the skin system in the current study can guide the search for regenerative landscapes in these and other organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting potential applications of the findings to other organs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "9ccc0c36-fd22-44e9-b646-9d9406b3014c",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C108",
+      "claim": "Coordination principles observed in the skin may be universal and likely operate in other organs despite prominent anatomical differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Because coordination principles observed in the skin may be universal, the likelihood of them operating in other organs is substantial despite prominent anatomical differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting potential universality of the observed coordination principles.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "36cb28f2-cadc-4c8f-833a-d011abf9eb17",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C109",
+      "claim": "The modeling framework is based on a hybrid approach, with individual HFs modeled as an expanding or contracting one-dimensional line and with diffusive molecules described in reaction-diffusion equations.",
+      "claim_type": "EXPLICIT",
+      "source": "The modeling framework is based on a hybrid approach, with individual HFs modeled as an expanding or contracting one-dimensional line and with the diffusive molecules described in reaction-diffusion equations (Appendix 2, Equations 1\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational modeling approach used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "2c9615d8-da10-4806-b232-fe02bab8c4c4",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C110",
+      "claim": "Guard, awl, auchene and zigzag club hair types were measured for hair length analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Guard, awl, auchene and zigzag club hair types were photographed, traced and calibrated using Adobe Illustrator software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used for hair length measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "1a5c4fb7-f8ae-4696-978a-345604c05ae4",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "claim_id": "C111",
+      "claim": "RNA samples with RIN >8.0 were considered for cDNA library preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA samples with RIN >8.0 were considered for cDNA library preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the quality control criteria for RNA-seq sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40cc90d1-ac5e-49b6-b71f-4241b089789b",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A multiscale computational model coupling activator/inhibitor signaling with physical HF growth generates autonomous cyclic behavior with stable periodicity and excitability, without requiring a built-in 'clock'. The model predicts that HF cycling occurs only within an excitable regime of signal strengths, and that activator and inhibitor inversely modulate both anagen and telogen phase durations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C17-C24, and C109 collectively describe the computational model and its key predictions. The model simulations shown in Figure 1B-C demonstrate autonomous cycling and parameter-dependent phase durations. The hybrid modeling approach (C109) integrating reaction-diffusion equations with moving HF geometry (C20) is well-described and produces biologically plausible emergent behaviors. The model's predictions are internally consistent and form the foundation for subsequent experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "e5694f20-8d4e-4913-a6c6-bda87e63e849",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Model-predicted temporal dynamics for activator and inhibitor during anagen match actual expression dynamics of WNT and BMP pathway members in dorsal skin microarray data. Transgenic perturbation of BMP and WNT signaling alters anagen phase duration and hair length in a manner consistent with model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 provide experimental validation of the model. The comparison with microarray data (Figure 1D-E'') shows good correspondence between predicted and observed temporal dynamics. Transgenic mouse experiments (described in appendices) demonstrate that BMP and WNT perturbations affect anagen duration as predicted. This bidirectional validation (model-to-data and perturbation experiments) strongly supports the model's biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "c2bbdd34-b486-4ab0-89ad-c1563d047acf",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Modeling reveals that bilateral symmetry in hair growth patterns cannot arise from homogeneous HF populations but requires interaction between heterogeneous skin domains. Experimental data confirm that first anagen is spatially asynchronous with head-to-tail and lateral-to-medial patterns, and simulations show that domain interactions produce bilateral symmetry by the second cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 integrate modeling predictions with experimental observations. The model prediction that homogeneous HF populations cannot generate bilateral symmetry (C27, Appendix 2 figures) is supported by simulations. The experimental observation of first anagen asynchrony (C29, Figure 2A-D) validates the model assumption. The simulation showing bilateral symmetry emergence from domain interactions (C30, Figure 2F) is consistent with the hypothesis (C28) and prediction (C31). The logical flow from model to hypothesis to experimental validation is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "1beb448b-9cb3-438d-95dd-8324c0295cf5",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Body-wide mapping of hair growth patterns reveals that mouse skin consists of distinct anatomical domains with different hair cycle dynamics. Ventral and chin domains show faster cycling and become dominant sources of anagen waves that propagate dorsally in bilaterally symmetric patterns during postnatal cycles 2-4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41, C89-C90, and C92 describe comprehensive experimental mapping of hair growth patterns using Flash mice bioluminescence (Figure 3A-C) and whole mount skin analysis (Figure 3D-G). The data consistently show ventral-to-dorsal phase advancement across multiple cycles with quantitative timing for different domains. The sample sizes (n=6 Flash mice, n=3 mice per timepoint for whole mount) and multiple complementary approaches provide robust support. The bilaterally symmetric wave patterns are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "6ac23274-468c-4361-aa74-38e269221a93",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Skin grafting experiments demonstrate that faster hair cycle dynamics in chin skin compared to dorsal skin is a partially cell-autonomous property that persists after transplantation to a dorsal environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 describe skin grafting experiments (Figure 3H-I) with adequate sample sizes (n=8 grafts per condition). The data show that while first post-transplantation anagen timing is similar, subsequent cycles initiate significantly faster in chin grafts, supporting partial maintenance of intrinsic cycling properties. This is an important control demonstrating that domain differences are not solely due to positional cues. The conclusion of 'partial' maintenance (C44) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "d25d1306-685c-4d93-b838-59ed9941cc23",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA-seq analysis reveals that chin, ventral, and dorsal skin domains have distinct transcriptomic trajectories across the hair cycle, with domain-specific expression of putative activator and inhibitor genes. Chin and ventral domains show enrichment for macrophage, lipid storage, and muscle-related genes, while dorsal skin shows higher expression of BMP ligands and lower expression of BMP antagonists and WNT ligands during early telogen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 describe comprehensive RNA-seq analysis across three domains and six timepoints (Figure 4A-F). The PCA analysis (C45, Figure 4A-B'') clearly shows non-overlapping trajectories. Differential expression analysis identifies 1407 genes with domain-specific patterns (C46-C48, Figure 4C-E). The gene expression patterns for BMP/WNT pathways (C52, Figure 4F) are consistent with the proposed refractivity differences. Histological validation (C49-C51, Appendix 1 figures 20-21) supports the RNA-seq findings. The RNA quality control (RIN >8.0, C111) and analysis methods are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Reporter mice and transgenic perturbation experiments confirm that differential WNT and BMP pathway activities underlie distinct hair cycle dynamics across anatomical domains. Chin and ventral skin show earlier WNT activation and lower BMP activity compared to dorsal skin. WNT overexpression disrupts ventral-to-dorsal wave dominance while BMP overexpression stalls wave propagation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58, C93-C94 provide functional validation using reporter mice (Axin2-lacZ, BRE-gal) and transgenic models (Krt14-Wnt7a, Krt14-Bmp4). The reporter data (Figure 4G-I) show clear domain-specific differences in pathway activities with appropriate sample sizes (n=8 for reporters). The transgenic perturbations (Figure 4J-K) demonstrate functional consequences consistent with the model predictions. The integration of expression data, reporter activity, and functional perturbation provides strong support for the mechanistic role of WNT/BMP signaling in domain-specific hair cycle control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ear skin behaves as a hyper-refractory domain where HFs enter extended telogen after first anagen and remain quiescent for at least three months. Ear HFs show minimal response to anagen-inducing stimuli (cyclosporin A, SAG, plucking) that readily activate dorsal HFs, and anagen waves from adjacent cranial skin cannot propagate into ear skin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C59-C69 comprehensively characterize ear HF behavior through histology (Figure 5A), whole mount analysis (Figure 5B-C), and response to multiple anagen inducers (Figure 5D-F). The data consistently show extended telogen and hyper-refractivity across multiple experimental approaches. Sample sizes are adequate (n=3-5 mice per condition). The comparison with dorsal skin responses (C63, C66, Appendix 1 figure 27) provides important controls. The conclusion of hyper-refractivity (C69) is well-supported by the collective evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "04568b17-e8df-4a27-a19b-24671f85a3ce",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ear skin hyper-refractivity is associated with high levels of BMP ligands and WNT antagonists, in part produced by ear-specific cartilage and muscle. RNA-seq reveals 1334 differentially expressed genes between ear skin, dorsal skin, and cartilage/muscle complex, with enrichment for BMP ligands (Bmp5) and WNT antagonists (Frzb, Sfrp2, Sfrp5, Wif1) in cartilage/muscle. Reporter mice confirm high BMP activity and low WNT activity in ear HFs. Genetic overexpression of Noggin or Wnt7a partially rescues ear HF cycling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C70-C83 provide mechanistic explanation for ear hyper-refractivity through RNA-seq (Figure 6A-D), reporter mice (Figure 6F-G), and genetic rescue experiments (Figure 6H). The RNA-seq analysis identifies specific ligands and antagonists with substantial fold-changes. Reporter data (n=8 mice) confirm pathway activities at the cellular level. The genetic rescue experiments demonstrate functional causality, though the partial rescue (C81-C82) appropriately indicates that multiple factors contribute. The integration of expression, activity, and functional data provides strong mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "16b47837-24d4-4bd9-8b13-69ece784fe9c",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hair growth waves break and distort around anatomical structures with non-propagating properties, including hyper-refractory ears and anatomically discontinuous eyelids. Model simulations predict wave distortion around barriers, and experimental observations confirm distorted patterns around ears, eyelids, and limbs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C84-C87 describe wave-breaking phenomena through modeling (Figure 7A-B, Appendix 2 figure 17) and experimental observations (Figure 7C-E). The model predictions (C84) are validated by experimental data showing wave distortion around multiple anatomical structures (C85-C86). The documentation in 10 mice (stated in Figure 7 legend) provides adequate support. The conclusion (C87) appropriately integrates modeling and experimental findings. This represents a novel emergent property of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "ce77166a-96e1-46df-aaef-57430c26bcf9",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mouse skin functions as a heterogeneous regenerative field with regions of fast, slow, and very slow hair renewal. The WNT/BMP signaling pair modulates hair regeneration across all studied skin regions, representing a general 'molecular language' that enables cross-domain communication and allows fast-cycling regions to function as hair growth pacemakers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C97, C99-C102 represent the major integrative conclusions of the study. These are well-supported by the collective evidence from modeling (heterogeneous domain interactions), experimental mapping (domain-specific dynamics), molecular profiling (WNT/BMP expression patterns), and functional perturbations (transgenic mice). The concept of a 'general molecular language' (C100) is supported by consistent WNT/BMP involvement across all studied regions. The pacemaker concept (C102) is supported by the ventral-to-dorsal wave dominance data. These high-level conclusions appropriately synthesize the detailed findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "37ca2133-57c0-4fa4-a580-a1c85b449e58",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish the three-phase hair cycle model, the role of bulge stem cells, DP signaling in anagen initiation, the conceptual source-sink-channel framework, and the importance of BMP/WNT pathways in hair cycle control and HF-to-HF coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 represent established knowledge from prior literature, supported by multiple citations to foundational studies. These provide appropriate context for the current work. The citations appear accurate and relevant. These are background claims rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "67157b16-e3c7-4fa4-a497-32821b72e1e1",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The multiscale model uniquely allows incorporation of differential HF growth in space, enabling simulation of heterogeneous skin properties such as domain interactions and wave distortion effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 describes a key technical feature distinguishing this model from prior models (e.g., FHN model). This is supported by the successful simulation of heterogeneous domain interactions and wave distortion phenomena that could not be captured by homogeneous models. The claim is validated by the model's ability to reproduce experimentally observed patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "ee716d11-9473-4d18-b3e2-f583736316dc",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The spatial asynchrony of first anagen indicates that HF morphogenesis is spatially asynchronous.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is a logical inference from the observed first anagen asynchrony (C29). Since first anagen follows HF morphogenesis, the temporal asynchrony of anagen entry implies asynchronous morphogenesis. This is a reasonable inference, though direct observation of morphogenesis timing would provide stronger support. The authors appropriately note that future studies are needed to understand this phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "c2b29c0c-1f88-4391-9131-3a8d0ff47c2f",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Novel tissue behaviors can be produced by coopting signals from new tissue modules (such as cartilage) rather than modifying preexisting ones, expanding the repertoire of tissues with signaling macro-environment function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95 and C103 represent conceptual insights from the ear cartilage/muscle findings. The observation that ear-specific cartilage/muscle produces signals affecting HF behavior (C15, C83) supports this principle. This is a valid generalization from the specific findings, though it represents an interpretive framework rather than a directly tested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "e716eef2-8776-47a8-9611-d51d9fa41d71",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Non-HF cell types including adipose progenitors, mature adipocytes, and resident macrophages can have modulatory effects on dorsal skin hair cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 cites prior literature establishing modulatory roles for various cell types. This provides context for the current findings on cartilage/muscle effects. The citations appear appropriate. This is background information rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "7491ca5b-fcd3-4703-9d4d-503604760c31",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Variable hair density in the fur coat likely serves an adaptive role, such as in thermoregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C98 is speculative, proposing a potential adaptive function for the observed hair density variation. While plausible, no experimental evidence is provided to test this hypothesis. The claim is appropriately qualified with 'likely' but remains unsupported speculation. This represents a reasonable hypothesis for future investigation rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "0fe974d6-ea97-48ec-9093-e76b373483c1",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The hair regeneration features discovered in skin may have analogs in other organs. Dominant pacemakers exist in muscle-based tissues, and other regenerating organs like intestines and bone marrow may contain coupled regions of faster and slower regeneration. Coordination principles observed in skin may be universal across organs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C108 are speculative, proposing potential parallels in other organ systems. Claim C105 cites established knowledge about cardiac/gastric pacemakers, but C106-C108 are unsupported hypotheses. While these represent interesting directions for future research, they lack experimental support in the current study. The authors appropriately use qualifying language ('can likely', 'may be', 'can guide') indicating these are speculative proposals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    },
+    {
+      "id": "0494abbb-25a0-473f-bd74-1457a991d7dc",
+      "content_id": "57167111-0476-43fb-928b-7a231a105730",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Methodological details for hair length measurements and RNA-seq quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 describe experimental methods. These are straightforward methodological details that are appropriately documented. The RNA quality threshold (RIN >8.0) is standard for RNA-seq experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:02:29.829207Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b752f6a5-9e38-462d-a123-4fd3742427d4",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "683f34f8-7040-4cf4-b65e-04257b01ef22",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "1323873e-64ae-43a0-aba8-c2dd94e334cf",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "5645cc41-756e-4249-9f39-cfd4f5edb2ca",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "de53e36d-9e67-468b-a7c4-3e23c1817439",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "200dc7f2-6686-4065-9214-e74721593b29",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "0f7f0d90-ca9b-480e-b553-88fa418f7a79",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "97637fe4-d551-455a-94d2-c9d74a02cc45",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "ba736da8-e2ea-4aac-88b9-441ac5f5422b",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "36cb28f2-cadc-4c8f-833a-d011abf9eb17",
+      "result_id": "40cc90d1-ac5e-49b6-b71f-4241b089789b"
+    },
+    {
+      "claim_id": "8f13f0b6-5162-40fd-881e-bee36326b9bb",
+      "result_id": "e5694f20-8d4e-4913-a6c6-bda87e63e849"
+    },
+    {
+      "claim_id": "8cc4baea-24e4-49ed-8d88-77c8dfae79bd",
+      "result_id": "e5694f20-8d4e-4913-a6c6-bda87e63e849"
+    },
+    {
+      "claim_id": "3e0d6fc0-be0e-4128-b537-e575d44e5905",
+      "result_id": "c2bbdd34-b486-4ab0-89ad-c1563d047acf"
+    },
+    {
+      "claim_id": "78cbcb2e-8007-4437-ae20-b6579da54bdf",
+      "result_id": "c2bbdd34-b486-4ab0-89ad-c1563d047acf"
+    },
+    {
+      "claim_id": "7e860918-49f1-4441-b102-c464a018aaaf",
+      "result_id": "c2bbdd34-b486-4ab0-89ad-c1563d047acf"
+    },
+    {
+      "claim_id": "289dbe4c-a1c5-46b4-81a2-a8b796317502",
+      "result_id": "c2bbdd34-b486-4ab0-89ad-c1563d047acf"
+    },
+    {
+      "claim_id": "1d93b52e-86da-4303-b8bd-6abe08962d93",
+      "result_id": "c2bbdd34-b486-4ab0-89ad-c1563d047acf"
+    },
+    {
+      "claim_id": "7d019585-0fe4-43d4-8062-0e3a3e9ed75d",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "34c5c67b-0c9a-4535-a71a-9f531dc46115",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "d19dfb49-a059-4d0b-9a80-167d293e8a56",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "d88eaefd-9968-4031-aac8-70a9b8441205",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "80f6db38-9205-4097-a952-ef7a03336d93",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "567bf79d-6240-49e0-b478-a16cf9d60782",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "f8df131e-c065-4c64-a024-6d1b83c52b49",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "018a77cb-07f9-48a4-9d68-2a7a6da7111d",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "620f86dc-ab39-4a77-af89-5c9199e9aee4",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "221f9461-f512-47da-8474-ce1cc974c87f",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "2bf8cfc8-b11c-45b5-b07d-2770b63ec7b5",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "d4d231d8-1bd6-48b1-9e2b-b3b3404fd2c8",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "4b7455f2-acef-4e47-8cc3-6b51e218bbd5",
+      "result_id": "1beb448b-9cb3-438d-95dd-8324c0295cf5"
+    },
+    {
+      "claim_id": "7a0bbe06-ce93-41b6-b15a-e02b747d5081",
+      "result_id": "6ac23274-468c-4361-aa74-38e269221a93"
+    },
+    {
+      "claim_id": "94cbb293-fe23-4136-968d-c3a64e558223",
+      "result_id": "6ac23274-468c-4361-aa74-38e269221a93"
+    },
+    {
+      "claim_id": "e424d3cb-f30a-4151-80a2-18fc4f86ab63",
+      "result_id": "6ac23274-468c-4361-aa74-38e269221a93"
+    },
+    {
+      "claim_id": "56d8940b-ff39-4a8f-b2ff-3f0789642755",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "b80ea6d3-7e86-472f-8ce1-aec15cea04b3",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "70f0599a-f842-4222-bca1-df9eecadb8b1",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "45eff9d4-e2c6-4d7e-a428-9fae55dc47ab",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "700e874c-2520-40af-bde9-7981aa167902",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "601fe7d0-19c3-44b9-b0f1-bad68fa6cb15",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "3fc58842-be77-4a97-9d7e-d309d5c8f708",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "cba7c04b-12a4-4b05-813b-1de083579f05",
+      "result_id": "d25d1306-685c-4d93-b838-59ed9941cc23"
+    },
+    {
+      "claim_id": "95ebcc44-287e-42d9-9419-44d0cefc8570",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "f712c10a-08fc-4aa8-a806-f0be510d6d78",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "295d757c-bf40-4dee-85b2-dbe9348d8cfb",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "ac07cdd3-b69a-4b72-9d53-72b41930af20",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "9bbdda7f-efc0-4cac-9347-f83442142bd6",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "4b379672-33ad-451e-bbad-2086397eb999",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "4d8c2f0e-877f-4274-8e87-1268f9d402c2",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "39b9944e-51cb-42b2-9952-1b1e6b51dd45",
+      "result_id": "0217cf34-272f-4dd1-a9e7-ca6ce4afcb56"
+    },
+    {
+      "claim_id": "fc7a5509-048a-4e3e-bff0-592d2240cece",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "088d4ede-ecba-477d-8b9e-061e4adec8cd",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "63618c60-c8c6-43fa-80bb-d3b00aaf3b67",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "f28277e4-df3f-42be-8a04-f5df83f384a9",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "265d8fa1-5d97-47e8-b337-75539ce81b0c",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "b47e6f78-3921-4820-9b21-a6e1b033e315",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "9bdcbf02-c22d-45fd-928a-b9768ccdb7d0",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "b72fbdee-ea58-4067-b628-dbed0c104fc5",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "007426c0-3986-4020-8428-203d47d5e253",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "a4de19e5-2bc1-420f-a48e-6969d38e4825",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "47a15b3a-d30b-464c-b857-14649e1c592a",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "5f071256-b28c-4d03-869e-ae943136b616",
+      "result_id": "a88bb4ee-eb20-459e-ba05-9f39a1a90f97"
+    },
+    {
+      "claim_id": "cafdb942-c029-4c5b-8a46-495be397b58f",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "4daac57e-8d64-4530-bef3-305fd0708be5",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "6e7dece5-22a8-4301-bbc7-0a7988e86d0b",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "b6252d1a-ffc5-4f3a-b8fb-d26840541bf4",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "8dad8d95-4f25-4c11-9ecf-77c213cda5a7",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "afc43a12-d9d7-41a7-a43e-5fc7b27b4360",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "baea5788-c1de-4f65-b75e-60bc70ab4f3d",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "acc0eadc-04d2-41ac-bb03-285d09024bb7",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "fc5775b4-0b8f-4e7b-a8e8-a29e9c97ecd6",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "273842c5-8032-43d3-9fa8-6a430b963366",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "b483a29c-b3c4-4368-b595-ae280c46e089",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "02d0574b-dabf-4699-969b-9ad06723af0a",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "c65c1acc-bb48-47b7-8397-da68848f51c8",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "1d88c537-f164-4014-83b0-47a5ea0b37ef",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "270ed217-9501-426c-9b16-f728023644ef",
+      "result_id": "04568b17-e8df-4a27-a19b-24671f85a3ce"
+    },
+    {
+      "claim_id": "6defa077-75f0-4465-b16d-0c0b730fce32",
+      "result_id": "16b47837-24d4-4bd9-8b13-69ece784fe9c"
+    },
+    {
+      "claim_id": "4ca681bc-b688-4354-901e-7b8ed7f3f5b5",
+      "result_id": "16b47837-24d4-4bd9-8b13-69ece784fe9c"
+    },
+    {
+      "claim_id": "e8b00a64-5011-449b-8445-493c278af3ac",
+      "result_id": "16b47837-24d4-4bd9-8b13-69ece784fe9c"
+    },
+    {
+      "claim_id": "6220939f-8e6a-436d-9a74-ad3fc9b53bdd",
+      "result_id": "16b47837-24d4-4bd9-8b13-69ece784fe9c"
+    },
+    {
+      "claim_id": "3f277ae3-c68e-447c-9b82-0a15146fd5b6",
+      "result_id": "16b47837-24d4-4bd9-8b13-69ece784fe9c"
+    },
+    {
+      "claim_id": "1bc3a95e-f8a2-4305-b50d-bcbb39562943",
+      "result_id": "ce77166a-96e1-46df-aaef-57430c26bcf9"
+    },
+    {
+      "claim_id": "20087778-aca8-444d-a6b1-09a7d94a37c2",
+      "result_id": "ce77166a-96e1-46df-aaef-57430c26bcf9"
+    },
+    {
+      "claim_id": "fbbbd88c-be80-4457-834a-c0d6b0e3c64d",
+      "result_id": "ce77166a-96e1-46df-aaef-57430c26bcf9"
+    },
+    {
+      "claim_id": "30c773fc-4c3f-46aa-9ebc-c60d053fb9cb",
+      "result_id": "ce77166a-96e1-46df-aaef-57430c26bcf9"
+    },
+    {
+      "claim_id": "5e655cd1-0ff3-471a-baae-76da3f256fa7",
+      "result_id": "ce77166a-96e1-46df-aaef-57430c26bcf9"
+    },
+    {
+      "claim_id": "13434f53-74c6-4965-8836-d7510f082391",
+      "result_id": "ce77166a-96e1-46df-aaef-57430c26bcf9"
+    },
+    {
+      "claim_id": "c0778073-c6f8-406b-bce8-2e9d93c005ae",
+      "result_id": "ce77166a-96e1-46df-aaef-57430c26bcf9"
+    },
+    {
+      "claim_id": "9e90a2fe-5e5f-4e17-ae2f-921939c46768",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "a6204ec1-18b0-430c-b982-4aed4f6f44f6",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "33e62dd4-506d-49d7-8c94-a7a31a371ffa",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "7a97ead7-2271-4e5e-90b4-3993afc710ce",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "59cd1421-c3fb-4eff-9ade-b222c8cf479d",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "924d1e30-a851-4d98-9cd0-0457b72f8d70",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "3d51d89a-f46f-4967-adf8-6b5b04794b4d",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "d7483d9b-db77-45ea-af88-04e93029aba1",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "d5dffbbf-4d31-432f-874c-f37870fb8128",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "b7c3fcb6-c807-4d46-859a-5c922eba1e13",
+      "result_id": "37ca2133-57c0-4fa4-a580-a1c85b449e58"
+    },
+    {
+      "claim_id": "6e810752-be8f-47ea-bfc0-f7d358f57696",
+      "result_id": "67157b16-e3c7-4fa4-a497-32821b72e1e1"
+    },
+    {
+      "claim_id": "28574eeb-2c21-4a6c-8b0a-7197b3035db1",
+      "result_id": "ee716d11-9473-4d18-b3e2-f583736316dc"
+    },
+    {
+      "claim_id": "8144ea0d-7560-45e2-b85b-ee26390167fe",
+      "result_id": "c2b29c0c-1f88-4391-9131-3a8d0ff47c2f"
+    },
+    {
+      "claim_id": "8cc1a07a-a601-4b85-94f6-48124b1634ac",
+      "result_id": "c2b29c0c-1f88-4391-9131-3a8d0ff47c2f"
+    },
+    {
+      "claim_id": "11e9b0d0-c0a0-4d5e-93c8-da80e0f8fcc9",
+      "result_id": "e716eef2-8776-47a8-9611-d51d9fa41d71"
+    },
+    {
+      "claim_id": "3e0eede9-5217-4d8f-ac4c-1c8d7d5aaf4c",
+      "result_id": "7491ca5b-fcd3-4703-9d4d-503604760c31"
+    },
+    {
+      "claim_id": "74a2e36b-89d5-4bd0-ba61-41b1e148800e",
+      "result_id": "0fe974d6-ea97-48ec-9093-e76b373483c1"
+    },
+    {
+      "claim_id": "281f3e11-696e-4ed5-9d42-92f6c9f54ddb",
+      "result_id": "0fe974d6-ea97-48ec-9093-e76b373483c1"
+    },
+    {
+      "claim_id": "4cd200b9-d073-4dd4-8605-85418b8bfe5b",
+      "result_id": "0fe974d6-ea97-48ec-9093-e76b373483c1"
+    },
+    {
+      "claim_id": "f22c898b-4f96-4636-84d3-ad48351c8f21",
+      "result_id": "0fe974d6-ea97-48ec-9093-e76b373483c1"
+    },
+    {
+      "claim_id": "9ccc0c36-fd22-44e9-b646-9d9406b3014c",
+      "result_id": "0fe974d6-ea97-48ec-9093-e76b373483c1"
+    },
+    {
+      "claim_id": "2c9615d8-da10-4806-b232-fe02bab8c4c4",
+      "result_id": "0494abbb-25a0-473f-bd74-1457a991d7dc"
+    },
+    {
+      "claim_id": "1a5c4fb7-f8ae-4696-978a-345604c05ae4",
+      "result_id": "0494abbb-25a0-473f-bd74-1457a991d7dc"
+    }
+  ],
+  "comparisons": []
+}

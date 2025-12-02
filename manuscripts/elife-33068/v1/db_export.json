@@ -1,0 +1,1967 @@
+{
+  "submission": {
+    "id": "d0f577f2-f93c-4595-905e-6d88f932475f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:38:35.563464Z",
+    "updated_at": "2025-12-02T00:38:35.563464Z"
+  },
+  "content": [
+    {
+      "id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "submission_id": "d0f577f2-f93c-4595-905e-6d88f932475f",
+      "content_type": "manuscript",
+      "content_text": "# Ripply2 recruits proteasome complex for Tbx6 degradation to define segment border during murine somitogenesis\n\n## Authors\n\n- Wei Zhao<sup>1</sup>\n- Masayuki Oginuma<sup>1</sup>\n- Rieko Ajima<sup>1</sup>\n- Makoto Kiso<sup>1</sup>\n- Akemi Okubo<sup>1</sup>\n- Yumiko Saga<sup>1</sup> ([ORCID: 0000-0001-9198-5164](https://orcid.org/0000-0001-9198-5164)) \u2020\n\n### Affiliations\n\n1. Division of Mammalian Development National Institute of Genetics Mishima Japan\n2. Department of Biological Sciences, Graduate School of Science The University of Tokyo Tokyo Japan\n3. Mouse Research Supporting Unit National Institute of Genetics Mishima Japan\n4. Department of Genetics SOKENDAI Mishima Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe metameric structure in vertebrates is based on the periodic formation of somites from the anterior end of the presomitic mesoderm (PSM). The segmentation boundary is defined by the Tbx6 expression domain, whose anterior limit is determined by Tbx6 protein destabilization via Ripply2. However, the molecular mechanism of this process is poorly understood. Here, we show that Ripply2 directly binds to Tbx6 in cultured cells without changing the stability of Tbx6, indicating an unknown mechanism for Tbx6 degradation in vivo. We succeeded in reproducing in vivo events using a mouse ES induction system, in which Tbx6 degradation occurred via Ripply2. Mass spectrometry analysis of the PSM-fated ES cells revealed that proteasomes are major components of the Ripply2-binding complex, suggesting that recruitment of a protein-degradation-complex is a pivotal function of Ripply2. Finally, we identified a motif in the T-box, which is required for Tbx6 degradation independent of binding with Ripply2 in vivo.\n\n## Introduction\n\nThe transient expression of T-box transcriptional factors in limited groups of cells is a common process during embryogenesis for the determination and differentiation of special tissues such as in limb and heart development (Papaioannou, 2014; Wilson and Conlon, 2002). During somitogenesis, somites form periodically from the anterior end of the PSM toward the posterior direction every 2 hr, which coordinates a balance between maintenance of the PSM and differentiation of epithelial somites. The expression of Tbx6 starts from the progenitors of the posterior mesoderm and extends to the anterior part of presomitic mesoderm (PSM), then progressively regresses from the anterior edge of its expression domain when a new somite is formed. Tbx6 maintains the mesodermal properties of somite progenitor cells (Chapman and Papaioannou, 1998), but induces the expression of segmentation genes in the anterior PSM to establish the new somite boundary (Oginuma et al., 2008).\n\nThe temporal periodicity of somitogenesis is established in the posterior PSM via the function of a so-called molecular clock, which is operated by complex gene regulatory networks under the control of three major signaling pathways, Notch, FGF and Wnt (Hubaud and Pourqui\u00e9, 2014). The periodicity of this segmentation clock is translated into the activation of the segmentation gene Mesoderm posterior protein 2 (Mesp2) around the segmental border (Morimoto et al., 2005). Mesp2 expression is temporally regulated by Notch signaling, and spatially defined by Tbx6; both factors work positively and coordinate each other (Yasuhiko et al., 2006; Yasuhiko et al., 2008). The anterior limit of the Mesp2 mRNA expression domain is consistent with the Tbx6 anterior limit. Once translated, Mesp2 induces the expression of its target gene Ripply2, then Ripply2 suppresses Tbx6 protein, which results in the termination of Mesp2 transcription (Oginuma et al., 2008; Zhao et al., 2015). This Tbx6-Mesp2-Ripply2 reciprocal regulation is the spatial mechanism that successively defines the position of the next anterior border of Mesp2, by which the metronomic segmented somites with determined size are correctly generated (Morimoto et al., 2007; Takahashi et al., 2010). The activation/inactivation switch for Tbx6 is also a typical behavior among T\u2013box transcriptional factors, which play important roles in development during embryogenesis such as Tbx3 in ICM development (Davenport et al., 2003), Eomes in blastocytes (Ciruna and Rossant, 1999; Strumpf et al., 2005), and Tbx1, Tbx2, Eomes in limb development (Hancock et al., 1999).\n\nThe negative feedback loop of Ripply2-Tbx6 for the termination of Mesp2 activity during each somitic cycle is the fundamental process to create the spatial periodicity of the segmented somites in mice. Recently, both zebrafish ripply1/2 and mouse Ripply2 proteins were found to play a role in the degradation of T-box family factors (Wanglar et al., 2014; Zhao et al., 2015). Our previous study demonstrated that ectopic Ripply2 expression in the posterior PSM was sufficient for the destabilization of T-box factors- Tbx6 and T protein (Zhao et al., 2015). However, the molecular nature of Ripply2-mediated destabilization is poorly understood.\n\nIn this study, we found that Tbx6 and Ripply2 interacted with each other, but Tbx6 degradation never occurred in cultured cells, indicating that the PSM tissue is necessary for Tbx6 degradation. However, it is difficult to use PSM tissue from embryos for biochemical analyses because the population of Ripply2+ cells in the PSM is very low (only approximately 1000\u00a0~\u00a03000 cells/embryo, depending on somitic phases). Thus, we established an induction system for PSM-like cells (we refer to this system as the PSM-fated induction system) using mouse ES cells, by which we reproduced the Tbx6 expression/degradation in cultured cells. We used this system to search for factors interacting with Ripply2. We also used BAC-transgenic mice and chimera mice produced by CRISPR/Cas9 engineered Tbx6Tbx6-venus ES cells to examine the requirements of a motif in Tbx6 that is essential for degradation in vivo.\n\n## Results\n\n### Ripply2 directly interacted with Tbx6 but did not lead to destabilization of Tbx6 in cultured cells\n\nBased on our previous study demonstrating that Ripply2 expression is sufficient for inducing Tbx6 destabilization in mouse PSM tissue (Zhao et al., 2015), we presumed that Ripply2 and Tbx6 interacted directly, as reported for Zebrafish and Xenopus (Hitachi et al., 2009; Kawamura et al., 2008). The presence of a so-called Ripply homology domain (amino acids FPIQ), implicated in interaction with the T-box domain (Kawamura et al., 2008), suggested that mouse Ripply2 also has the ability to bind Tbx6. To examine their interaction, we co-transfected Myc-Ripply2 and FLAG-Tbx6 expressing constructs into HEK293T cells. The potential interaction was analyzed by immunoprecipitation using anti-FLAG antibody followed by western blotting with anti-Myc antibody. A strong association between FLAG-Tbx6 with Myc-Ripply2 was observed with HEK293T cell lysates (Figure 1A). To further explore whether the association between these two proteins is direct, we carried out an in vitro GST pull-down assay using bacterially expressed GST-Tbx6 and His-Ripply2 fusion proteins. GST-Tbx6 fusion protein, but not GST alone, was able to pull down His-Ripply2, indicating that Tbx6 directly interacts with Ripply2 (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig1-v1.jpg)\n\n**Figure 1.:** (A) Immunoprecipitation (IP) for examining Tbx6-Ripply2 interaction. DNA constructs for FLAG-Tbx6 was co-transfected with Myc-Ripply2 into HEK293T cells. IP was conducted using anti-FLAG beads, followed by western blotting for detecting FLAG-Tbx6 and Myc-Ripply2 by anti-FLAG and anti-Myc antibodies (N\u00a0=\u00a010). (B) GST pull-down assay to examine the direct interaction between Tbx6 and Ripply2. Purified His-Ripply2 protein was mixed with cell lysate of GST-Tbx6. Anti-Ripply2 antibody and anti-His antibody was used to detect His-Ripply2 signal (N\u00a0=\u00a02). (C) IP-western analyses to determine Tbx6 domain for Ripply2 interaction. DNA constructs for FLAG-Tbx6, FLAG-T-box, FLAG-Tbx6\u0394T-box or FLAG-1-T-box, were co-transfected with Myc-Ripply2 into HEK293T cells. IP was conducted using anti-FLAG beads, followed by western blotting for detecting FLAG-Tbx6 and Myc-Ripply2 by anti-FLAG and anti-Myc antibodies (N\u00a0=\u00a06). Arrows indicate protein bands showing expected molecular size. (D) IP for Tbx6 and mutant Ripply2. FLAG-Tbx6 was co-transfected with Myc-Ripply2\u0394FPIQ, Myc-Ripply2\u0394WRPW, or Myc-Ripply2 (wild-type) into the HEK293T cultured cells. Cell lysates were incubated with anti-FLAG beads. Western blotting was conducted using anti-FLAG and anti-Myc antibodies (N\u00a0=\u00a06). (E) Strategy for establishing the Tbx6-venus knock-in (KI) ES cell line. Tbx6 cDNA connected with the venus sequence replaced exon-1 via Cas9-aided homologous recombination. (F) Schematic diagram for the method of PSM differentiation. (G\u2013R) Time course change of Tbx6-venus protein expression in PSM-fated ES cells at 2 (G\u2013N), 3 (I\u2013P), or 4 (K\u2013R) days after the addition of either DMSO or CHIR99021 in culture medium. The Tbx6-venus signals were detected by anti-GFP antibody. (N\u00a0=\u00a02) Scale bar: 50 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The graph shows the representative results of luciferase activity of Mesp2 enhancer in the presence or absence of either NICD, Tbx6, Ripply2, or TLE1 in Cos7 cells. The Mesp2-luciferase reporter activity was strongly induced by the addition of Tbx6+\u00a0NICD, but did not demonstrate any significant change in the presence of Ripply2 and TLE1. Values represent means\u00a0\u00b1\u00a0SD. Asterisks indicate p<0.001; paired t-test with Tbx6\u00a0+NICD samples. (N\u00a0=\u00a02).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The expression of Tbx18 (Epicardium) and Tbx5 (Cardiomyocyte) in the control (N\u00a0=\u00a05) and Mesp1-Cre;CAG-floxed-lynmRFP-FLAG-Ripply2 (N\u00a0=\u00a05) mouse hearts at E10.5. Scale bar: 100 \u00b5m.\n\nNext, we asked whether the T-box is sufficient for Ripply2-binding by testing different constructs; one that expressed only the T-box domain (FLAG-T-box), one that expressed the C-terminal deleted Tbx6 (FLAG-1-T-box) and one that lacked the T-box domain (FLAG-Tbx6\u0394T-box). We found that the T-box domain alone was sufficient for association with Ripply2 and that other regions of Tbx6 were dispensable for this interaction (Figure 1C). We also generated Ripply2 mutants to test the requirement of the FPIQ tetrapeptide motif implicated in T-box binding (Myc-Ripply2\u0394FPIQ) and the WRPW motif, a known Groucho binding domain (Myc-Ripply2\u0394WRPW) (Hancock et al., 1999). We found that both these mutants lacked the ability to bind Tbx6 (Figure 1D), indicating that these conserved sequences are required for Ripply2-mediated Tbx6 suppression. In zebrafish and Xenopus, ripply family factors repress mesp by suppressing the transcriptional activity of tbx6 as a transcriptional-repressor together with the Groucho co-repressor (Kawamura et al., 2005; Kawamura et al., 2008; Kondow et al., 2007). However, the transcriptional activity of mouse Tbx6 was not influenced by mouse Ripply2 and TLE1 (homolog of Groucho in mouse) (Figure 1\u2014figure supplement 1).\n\nDespite Tbx6-Ripply2 interaction, Tbx6 was never destabilized in HEK293T cells even in the presence of Ripply2 (Figure 1A). In addition, the ectopic expression of Ripply2 in the cardiac mesoderm did not influence on the stability of T-box factors Tbx18 and Tbx5 in the heart (Figure 1\u2014figure supplement 2), which is different from the destabilizing effect of Ripply2 on Tbx6 and Brachyury (T) in the PSM. These results suggest that the PSM contains a specific factor(s) necessary for the destabilization of T-box factors.\n\n### Establishing the PSM-fated cell line using mouse ES cells\n\nTo reproduce the in vivo conditions for Tbx6 destabilization, we established a differentiation system for PSM from mouse ES cells. To monitor whether the cells differentiated to PSM, we introduced the Tbx6-venus fusion cDNA into the endogenous Tbx6 locus (Figure 1E) via CRISPR/Cas9-mediated homologous recombination (Feng et al., 2013). We obtained a recombinant ES cell line in which Tbx6-venus was homozygously knocked-in (KI), and used this ES cell line for further experiments.\n\nWe modified the conventional ES cell differentiation protocol (Chal et al., 2015; Zhao et al., 2014) to achieve efficient PSM differentiation. The dissociated feeder-free Tbx6Tbx6-venus/Tbx6-venus ES cells were cultured in differentiation-medium for 2 days to let the ES cells differentiate to the epiblast state. Then, PSM-fated differentiation was induced by treating the ES cells with 3 \u03bcM CHIR99021 (GSK inhibitor) for 2, 3, or 4 days (Figure 1F). Compared with ES cells treated with DMSO that exhibited almost no venus-positive cells, ES cells cultured with CHIR99021 exhibited Tbx6-venus expression from day\u00a02 to day\u00a04, as indicated by immunostaining with anti-GFP antibody (Figure 1G\u2013R). On day\u00a02, only weak Tbx6-venus signals were observed (Figure 1N). The expression of Tbx6-venus peaked at day\u00a03 (Figure 1P) and was maintained until day\u00a04 (Figure 1R).\n\n### Ripply2-mediated Tbx6 degradation in PSM-fated mouse ES cells\n\nAlthough we succeeded in inducing Tbx6-positive PSM-fated cells from ES cells, little endogenous Ripply2 expression was detected. We reasoned this to be because Ripply2 expression is induced transiently in the anterior PSM in vivo, which may be a very small population of PSM-fated ES cells. To test whether Ripply2-mediated Tbx6-degradation occurs in the PSM-fated ES cells, we used the Tet-On inducible gene expression system to induce Ripply2 expression upon Doxycycline (Dox) administration. To monitor the expression of both Ripply2 and Tbx6-venus, we designed TRE-mcherry-T2A-FLAG-Ripply2 in order to detect Ripply2 expression through mcherry expression by fluorescence and by anti-FLAG antibody. The construct was transfected into the Tbx6Tbx6-venus/Tbx6-venus ES cells (Figure 2A). The established Tbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2 ES cells were cultured and PSM differentiation was induced by treating with CHIR99021 for 3 days, followed by the addition of 1 \u03bcg/mL Dox to induce FLAG-Ripply2 (Figure 2B). We confirmed the strong induction of both mRNA and FLAG-Ripply2 protein at 12 hr after Dox addition in undifferentiated ES cells (Figure 2C). In PSM-fated differentiating ES cells, we found that the expression level of FLAG-Ripply2 reached the peak at 6 hr after induction by Dox (Figure 2D), along with a gradual decrease in Tbx6-venus expression from 3 to 12 hr after Dox treatment (Figure 2D and E\u2013N, Figure 2\u2014figure supplement 1A\u2013L). The disappearance of Tbx6-venus signal appeared to occur quickly in cells with strong Ripply2 signals and slower in areas where the Ripply2 expression level was low (Figure 2\u2014figure supplement 1A\u2013L). This Ripply2-dependent reduction in Tbx6 protein was suppressed by the inclusion of 10 \u03bcM MG132 (a proteasome inhibitor) (Figure 2O\u2013S, Figure 2\u2014figure supplement 2), and some Ripply2-Tbx6 double-positive cells were observed under the Dox+MG132+ conditions (arrows in Figure 2S\u2019). These data support the idea that Tbx6 destabilization occurred through the proteasome-mediated degradation pathway.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic representation of Tet-inducible Ripply2 in Tbx6-venus ES cells. (B) Schematic diagram for ES culture. Tbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2 ES cells were cultured under feeder-free conditions for 2 days, followed by culture with 3 \u03bcM CHIR99021 for 3 days, and were then treated with 1 \u03bcg/ml Dox with or without 10 \u03bcM MG132. (C) The expression of FLAG-Ripply2 mRNA (up) and protein (down) in Tbx6Tbx6-venus/Tbx6-venus ES cells with Dox treatment for 12 hr without PSM-induction. (D) Western blot analyses to monitor Tbx6-venus expression with or without FLAG-Ripply2 expression in PSM-fated ES cells (N\u00a0=\u00a05). The histogram shows the quantitation of GFP signal normalized by \u03b2-Tubulin signal. Asterisks indicate p<0.05, Double asterisks indicate p<0.01; paired t-test. (E\u2013S) Immunofluorescence of PSM-fated ES cells for the detection of Tbx6-venus and FLAG-Ripply2 after 6 hr incubation without Dox (E\u2013I), with Dox (J\u2013N), or with Dox and MG132 (O\u2013S, O\u2019\u2013S\u2019). (O\u2019\u2013S\u2019) are the magnified rectangle regions in (O\u2013S). Arrows indicate GFP-FLAG double-positive cells. (N\u00a0=\u00a03) Scale bar: 50 \u00b5m. (T) Schematic representation of Tet-inducible FLAG-Tbx6;HA-Ubiquitin or FLAG-Tbx6-T2A-Ripply2;HA-Ubiquitin in Tbx6Tbx6-venus/Tbx6-venus ES cells. (U) IP-western analyses of FLAG-Tbx6 immunoprecipitated with anti-FLAG beads from PSM-fated ES cells that expressed FLAG-tagged Tbx6 or FLAG-tagged Tbx6-T2A-Ripply2 with HA-tagged ubiquitin in the absence or presence of MG132 (N\u00a0=\u00a03).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Immunostaining using anti-GFP, anti-FLAG, and anti-Ripply2 antibodies for the detection of Tbx6-venus and FLAG-Ripply2 after 0 hr (A\u2013B), 1 hr (C\u2013D), 2 hr (E\u2013F), 3 hr (G\u2013H), 6 hr (I\u2013J) and 12 hr (K\u2013L) without (A,C,E,G,I) or with (B,D,F,H,J) Dox treatment. (N\u00a0=\u00a03) Scale bar: 50 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Immunostaining using anti-GFP, anti-FLAG, and anti-Ripply2 antibody for the detection of Tbx6-venus and FLAG-Ripply2 after treatment with Dox together without (A,C,E,G,I) or with (B,D,F,H,J) MG132 for 0 hr (A\u2013B), 1 hr (C\u2013D), 2 hr (E\u2013F), 3 hr (G\u2013H), 6 hr (I\u2013J) and 12 hr (K\u2013L). (N\u00a0=\u00a03) (M) The expression level of Ripply2 with or without MG132 for 0 hr, 1 hr, 2 hr, and 3 hr. Scale bar: 50 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** FLAG-Tbx6 was immunoprecipitated with anti-FLAG beads from undifferentiated and PSM-fated ES cells that expressed FLAG-tagged Tbx6 with HA-tagged ubiquitin in the presence or absence of Ripply2 and MG132. Western analyses were conducted with anti-FLAG and anti-ubiquitin antibodies.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Comparison of the expression patterns for Tbx6 protein between wild-type (A, B) and Smurf1/2 DKO mice (C, D). In Smurf1/2 DKO mice, the Tbx6 protein domain was not expanded anteriorly but had a clear boundary (C, D) similar with wild-type embryos (A, B). Embryos were fixed at E8.0. (A, C) are lateral view and (B), D) are dorsal view. Arrows indicate segmented somites.\n\nNext, to investigate whether Tbx6 is ubiquitinated in a Ripply2-dependent manner, we established Tet-inducible ES cell lines that expressed FLAG-Tbx6 or FLAG-Tbx6-T2A-Ripply2 with HA-tagged ubiquitin (Figure 2T). We prepared FLAG-Tbx6 via immunoprecipitation using an anti-FLAG antibody before and after PSM induction (Figure 2U, Figure 2\u2014figure supplement 3). We found several bands with higher molecular weight than FLAG-Tbx6 in the presence of MG132, and the intensity became lower in the presence of Ripply2 (Figure 2U), suggesting that these bands were ubiquitinated Tbx6. Ubiquitinated proteins, likely including Tbx6, were observed only in the presence of MG132. Although ubiquitinated Tbx6 was detected even in undifferentiated ES cells, the level of ubiquitination was found to be increased when ES cells were induced to PSM (Figure 2\u2014figure supplement 3). These results indicate that Tbx6 can be ubiquitinated even in the absence of Ripply2 in PSM-fated cells and Ripply2 is mainly involved in the degradation step. Regarding the E3 ubiquitin ligase, Smurf1 was reported to be involved in the Smad6-mediated Tbx6 degradation pathway (Chen et al., 2009). Therefore, we tested the possible involvement of Smurf, by analyzing Tbx6 expression in Smurf1/2-dKO embryos (Narimatsu et al., 2009). However, we did not observe any anterior expansion of Tbx6 expression (Figure 2\u2014figure supplement 4).\n\nTo clarify the necessity of Ripply2-Tbx6 interaction for Tbx6 degradation, we introduced a Tet-inducible Ripply2\u0394FPIQ construct lacking the conserved T-box binding tetrapeptide-FPIQ into Tbx6Tbx6-venus/Tbx6-venus ES cells (Figure 3A). As expected from our binding analysis demonstrating that the Tbx6-Ripply2\u0394FPIQ interaction was disrupted in HEK293T cultured cells (Figure 1D), Tbx6 degradation did not occur in the Tbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2\u0394FPIQ ES cells (Figure 3B). We also confirmed no interaction of Tbx6 and Ripply2\u0394FPIQ in PSM-fated ES cells (Figure 3C). The Ripply2 mutant lacking another conserved motif, WRPW, which is required for interaction with the Groucho transcriptional co-repressors TLE1 and TLE2 (Figure 3\u2014figure supplement 1), also failed to interact with Tbx6 in cultured cells (Figure 1D) and ES cells (Figure 3C). As such thereby Tbx6 degradation was also inhibited in PSM-fated ES cells (Figure 3B). The inability of both Ripply2\u0394FPIQ and Ripply2\u0394WRPW to degrade Tbx6 was confirmed by immunostaining the PSM-fated ES cells (Figure 3D\u2013M). We often observed Tbx6-venus positive signals in Ripply2-expressing cells (Figure 3H\u2013H\u2019, M\u2013M\u2019). These observations support the idea that degradation of Tbx6 protein depends on the accessibility of Ripply2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic presentation of Tet-inducible Ripply2\u0394FPIQ or Ripply2\u0394WRPW in Tbx6Tbx6-venus/Tbx6-venus ES cells. (B) Western blotting of Tbx6-venus in the absence or presence of FLAG-Ripply2\u0394FPIQ or FLAG-Ripply2\u0394WRPW in PSM-fated ES cells. Arrow: Tbx6-venus. The histogram shows the quantitation of GFP signal in Ripply2\u0394FPIQ induced cells (B\u2019:N\u00a0=\u00a05) and in FLAG-Ripply2\u0394WRPW induced cells (B\u2019\u2019:N\u00a0=\u00a06), normalized by \u03b2-Tubulin signal. (C) Co-immunoprecipitation of Tbx6-venus using the anti-FLAG antibody for FLAG-Ripply2 and the mutants. Tbx6-venus signal was detected using an anti-GFP antibody. Arrows: Tbx6-venus. (N\u00a0=\u00a05). (D\u2013M) Immunofluorescence of PSM-fated ES cells for the detection of Tbx6-venus and FLAG-Ripply2\u0394FPIQ or FLAG-Ripply2\u0394WRPW after 6 hr incubation with Dox. (H\u2019 and M\u2019) are the magnified rectangle regions in (H and M). Arrows indicate GFP-FLAG double-positive cells. (N\u00a0=\u00a03) Scale bar: 50 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** IP-western analyses for the interaction between Ripply2 and TLE1/2. Each Myc-tagged construct was transfected with the DNA construct expressing FLAG, FLAG-TLE1, or FLAG-TLE2 into HEK293T cells. The deletion of the tetrapeptide WRPW but not FPIQ in the Ripply2 protein destroyed its ability to bind with TLE1/2. (N\u00a0=\u00a03).\n\n### Ripply2 recruits proteasome complex in the Tbx6 degradation system\n\nTo understand the molecular pathway leading to the degradation of Tbx6 via Ripply2, we searched for proteins interacting with Ripply2 via Mass spectrometry analysis. We conducted immunoprecipitation using anti-FLAG antibody conjugated beads to isolate the Ripply2-Tbx6 complex that was formed in the Tbx6 expression/degradation ES cells system (Figure 4A). Expression of FLAG-Ripply2 and Tbx6-venus was observed in the input of Tbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2 ES cell lysate (Figure 4B left). After incubating with anti-FLAG beads, both FLAG-Ripply2 and Tbx6-venus protein in the lysate of FLAG-Ripply2 expressing ES cells was precipitated and the corresponding bands disappeared from the supernatant (Figure 4B middle, right). Then, we collected the protein complex by eluting the beads with 3xFLAG peptide, and the eluate was used for SDS-PAGE followed by silver staining (Figure 4C). Other than the band for FLAG-Ripply2 (Figure 4C arrowhead), we observed multiple bands that only existed in the FLAG-Ripply2 expressing panel but not in the control panel, indicating that some specific Ripply2-binding proteins were co-precipitated.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic diagram of PSM-fated ES culture used for immunoprecipitation. PSM-fated ES cells containing Tbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2 were incubated with Dox for 3 hr and the cell lysate was subjected to immunoprecipitation. (B) Western blotting showing Tbx6-venus and FLAG-Ripply2 in input (left), supernatant after reaction with beads (middle), and after elution with 3xFLAG peptide (right) with anti-GFP and anti-FLAG antibodies. (N\u00a0=\u00a04) (C) Silver staining of eluates from beads reacted with control and Tet-induced ES cells lysates. Arrowhead: band for FLAG-Ripply2 protein. (D) Proteasome subunit components specifically detected as Ripply2 interacting proteins. (E) ES cells cultured under several conditions according to the protocol shown in (A) were subjected to immunoprecipitation using anti-FLAG antibody, and interacting proteins were detected with anti-FLAG (Ripply2), anti-proteasome 20 S-1, 2, 3, 5, 6 and 7 subunits, and anti-proteasome 20S core subunit. (N\u00a0=\u00a02).\n\nAccording to mass spectrometry, Ripply2 recruited all subunit components of the 26S proteasome (Figure 4D; Supplementary file 1), which is known as the main pathway for the degradation of nuclear proteins (von Mikecz, 2006). The formation of the Ripply2-proteasome complex was further confirmed by FLAG-Ripply2 immunoprecipitation, followed by western blotting using two kinds of antibodies for proteasome 20S \u03b11, 2, 3, 5, 6 and 7 subunit or 20S core subunit (\u03b15/\u03b17, \u03b21, \u03b25, \u03b25i,\u03b27). The immunoprecipitation data showed that Ripply2 assembled the endogenous proteasome 20S subunit regardless of differentiation induction (Figure 4E). Although the antibody for the 20S core subunit was not sensitive enough to detect the endogenous subunits, it successfully detected the subunits accumulated with Ripply2 (Figure 4E). In the mass spectrometry result, we also found factors involved in ATP energy metabolism, which may indicate energy exhaustion by the proteasome complex during protein degradation. These results further support our idea that the function of Ripply2 for specific protein degradation is mediated through the proteasome pathway.\n\n### T-box dependent suppression of Tbx6 protein in vivo\n\nIn order to further our understanding of the mechanism of Tbx6 degradation, we aimed to identify the amino acid sequences of Tbx6 required for degradation in vivo. To achieve this, we first used BAC (bacterial artificial chromosome)-based transgenic F0 analyses. We introduced the venus-tag into the translational initiation site of Tbx6 and created BAC-venus, which expressed only venus protein under the control of the Tbx6 promoter (Figure 5A,B). We dissected embryos at E10.5, and confirmed that the expression of venus protein was stable and expanded to the anterior region beyond the segmentation point indicated by the arrow (N\u00a0=\u00a03. Figure 5B). We also introduced the venus-tag just before the Tbx6 termination codon to produce the Tbx6-venus fusion protein (Figure 5A,C). As expected, the transgene faithfully reproduced the endogenous expression pattern of Tbx6, in which the expression domain has a clear anterior border just before the segmental border in the anterior PSM (N\u00a0=\u00a03, Figure 5C), indicating that the Tbx6-fusion protein was degraded in the anterior PSM. We then inserted the venus-tag after and before the T-box domain to construct fusion proteins lacking only the C-terminal region (BAC-Tbx6\u0394C-venus: Figure 5A,D) or together with the T-box domain (BAC-Tbx6\u0394TC-venus: Figure 5A,E), respectively. Tbx6\u0394C-venus protein exhibited an expression pattern with a clear anterior border (N\u00a0=\u00a04, Figure 5D); however, the Tbx6\u0394TC-venus protein expanded to the anterior region (N\u00a0=\u00a02, Figure 5E). These results indicated that the T-box domain is necessary for degradation of Tbx6 protein. Next, to ask whether the T-box domain itself is sufficient for destabilization, we created BAC-T-box-venus, which expresses only the T-box domain fused with venus (Figure 5A,F). Interestingly, the expression of T-box-venus protein had a clear anterior border (N\u00a0=\u00a05, Figure 5F), demonstrating that the T-box region of Tbx6 is necessary and sufficient for degradation. Following immunoprecipitation, only the T-box but not other domains of Tbx6 led to the precipitation of Ripply2 (Figure 1C), suggesting that the T-box-dependent Tbx6 degradation is achieved through the interaction between T-box and Ripply2. Using the same method, we further found that the degradation occurred when the T-box was partially deleted until the 152th amino acid (aa) (Figure 5A,H, N\u00a0=\u00a04), but not when it was deleted up to the 124th aa (Figure 5A,G, N\u00a0=\u00a02), suggesting that the 124\u223c152 aa region may be essential for Tbx6 degradation in vivo.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig5-v1.jpg)\n\n**Figure 5.:** (A) Strategies to generate BAC constructs with venus-tag at different positions in the Tbx6 protein. The venus-tag was introduced in frame with either the translational initiation site (B, BAC-venus), translational termination site (C, BAC-Tbx6-venus), after T-box (D, BAC-Tbx6\u0394C-venus) or before the T-box (E, BAC-Tbx6\u0394TC-venus), after amino acid 124 within the T-box (G, BAC-Tbx61~124aa -venus, amino acid 152 (H, BAC-Tbx61~152aa -venus). A similar method was also used to generate a construct containing only the T-box with venus (F, BAC-T-box-venus). Black and green boxes indicate exons in the Tbx6 locus. Green ones correspond to the T-box region. (B\u2013H) Sections of E10.5 transgenic mouse embryos harboring each BAC construct were stained with anti-GFP antibody. Construct names and amino acid sequences included in the Tbx6-venus fusion-proteins are indicated in each panel. Green; venus signal. Gray; DAPI staining. Newly formed somite borders are indicated by white arrows. Numbers of GFP-positive embryos among transgenic embryos recovered are shown within each box. Scale bar: 100 \u00b5m.\n\nTo further examine the region necessary for Tbx6 degradation in vivo, we made chimeras that express Tbx6-venus fusion protein controlled by the endogenous Tbx6 promoter using the CRISPR/Cas9 system (Figure 6A). As Tbx6\u0394124-152aa-venus has no transcriptional activity (Figure 6\u2014figure supplement 1), we selected ES clones in which Tbx6-venus was heterozygously knocked-in and an endogenous Tbx6 allele was intact for chimera production (Tbx6Tbx6(\u0394124-152aa)-venus/+). We also used ES cells containing an intact Tbx6 gene fused with venus (Figure 1E: Tbx6Tbx6-venus/Tbx6-venus) as a positive control. We analyzed chimera embryos on embryonic day 10.5 (E10.5). The negative control, wild-type embryos, had only background signal for venus detection (N\u00a0=\u00a016, Figure 6B), whereas the positive control exhibited fluorescent signal with a sharp anterior limit as well as endogenous Tbx6 protein expression (N\u00a0=\u00a018, Figure 6C), suggesting Tbx6-venus as suitable to represent the expression of Tbx6 protein. Intriguingly, the Tbx6-venus signal in the chimera with Tbx6Tbx6(\u0394124-152aa)-venus/+ ES cells became stabilized and expanded anteriorly (N\u00a0=\u00a020, Figure 6D). We then conducted whole-mount triple immunostaining to compare the expression pattern of Tbx6-venus protein with endogenous Tbx6 protein by comparing the images using anti-GFP and anti-Tbx6 antibodies. It should be noted that the anti-Tbx6 antibody produced against the Tbx6 C-terminal peptide did not recognize the Tbx6-venus fusion protein. We confirmed that Tbx6-venus in chimera embryo with Tbx6Tbx6(\u0394124-152aa)-venus/+ ES cells had an expanded pattern (Figure 6E), whereas endogenous Tbx6 showed a clear anterior limit that was at the same position as the posterior expression domain of Ripply2 (Figure 6E\u2013H), indicating that endogenous Tbx6 but not mutant Tbx6 protein was degraded by Ripply2 in the chimera embryos. These observations demonstrated that the T-box, especially the aa125\u223c152 domain, plays a central role in the degradation of Tbx6 protein in vivo.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig6-v1.jpg)\n\n**Figure 6.:** (A) The strategy for generating Tbx6Tbx6(\u0394124-152aa)-venus/+ + cells. (B\u2013D) Whole-mount immunofluorescent image for venus signal of WT (B) and chimera embryos produced with Tbx6Tbx6-venus/Tbx6-venus (C), and Tbx6 Tbx6(\u0394124-152aa)-venus/+ (D) ES cells at E10.5. (E\u2013H) Whole-mount triple-immunostaining for the chimera embryo produced with Tbx6Tbx6(\u0394124-152aa)-venus/+ cells showing anti-GFP (E), anti-Ripply2 (F), and anti-Tbx6 (G), and the merged (H, Tbx6 and Ripply2) signals. Expanded GFP signal but not endogenous Tbx6 signal was observed in the chimera embryo with Tbx6Tbx6(\u0394124-152aa)-venus/+ cells. Arrow heads: anterior limit of the endogenous Tbx6/posterior limit of Ripply2. Scale bar: 100 \u00b5m. (I) Schematic presentation of Tbx6 constructs used for binding assays shown in (J) and (K). (J) IP-western analyses. Each FLAG-tagged Tbx6 construct was co-transfected with Myc-Ripply2 into HEK293T cells. The lysates were subjected to IP with anti-FLAG antibody, followed by western blot analyses. (N\u00a0=\u00a05) (K) GST-pull down assay. GST or GST-Tbx6\u0394124-152aa was incubated with purified His-Ripply2 and pulled down with Glutathione Sepharose, and then subjected to western blotting. His-Ripply2 was detected by anti-Ripply2 antibody. CBB: Coomassie Brilliant Blue staining. (N\u00a0=\u00a02).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33068/elife-33068-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Graph of luciferase activity driven by Mesp2 enhancer when nothing, NICD, Tbx6, Tbx6\u00a0+NICD, or Tbx6\u0394124~152aa\u00a0+\u00a0NICD was transfected into Cos7 cells. High luciferase activity was detected in the sample for Tbx6\u00a0+NICD but not in that for Tbx6\u0394124~152aa\u00a0+\u00a0NICD. Values represent means\u00a0\u00b1\u00a0SD.\n\nTo examine whether the stabilized version of Tbx6 was due to the loss of interaction with Ripply2, we generated several deletion forms of the Tbx6 protein similar with those used in the in vivo experiments and performed co-immunoprecipitation assay with Ripply2. As expected, when the C-terminal from the 124th amino acid was deleted from Tbx6 (Tbx61~124aa), the mutant protein failed to bind Ripply2 (Figure 6I\u2013J), but Tbx61~152aa succeeded in interacting with Ripply2 (Figure 6I\u2013J), suggesting that amino acids 125\u00a0~\u00a0152 contain the Ripply2-binding-motif in the T-box. However, we surprisingly found that the deletion of 125\u00a0~\u00a0152 aa (Tbx6\u0394124~152) did not affect the ability to form a complex with Ripply2 either in HEK293T immunoprecipitation analysis or in GST-pull-down assay (Figure 6I\u2013K), suggesting that although 125\u00a0~\u00a0152 aa has Ripply2-binding ability it is not the only Ripply2-binding motif in the T-box. Therefore, the stabilization of Tbx6\u0394124-152aa-venus in the chimera embryo was not due to disruption of Ripply2 association but perhaps to a special motif for degradation in the region of 125\u00a0~\u00a0152 aa.\n\n## Discussion\n\n### Recapitulation of Tbx6-degradation using the PSM-fated ES differentiation system\n\nThe T-box family of transcription factors play crucial roles throughout embryonic development and their expression patterns are strictly controlled via tissue specific context-dependent mechanisms. The activation/inactivation switch for Tbx6 via the expression of Ripply2 in the anterior PSM is a key issue for the determination of the segmental border during somitogenesis. However, it is almost impossible to assess the biochemical nature of the Ripply2-dependent Tbx6 degradation mechanism using in vivo samples because the segmental border is an ephemeral structure that contains only a small cell population. To solve this problem, we established a PSM-fated ES cell system, which can provide a similar environment to in vivo, and successfully reproduced the Tbx6 expression/degradation process using a very simple method. We introduced a venus tag just before the stop codon in the endogenous Tbx6 gene using a Cas9/CRISPR-mediated method to make the Tbx6-venus fusion protein, which enabled us to identify specific cells in the PSM, and importantly, allowed us to monitor Tbx6 protein stability during the differentiation process. Using this monitoring system, we observed the quick disappearance of Tbx6-venus signal upon Ripply2 expression. The reduction of Tbx6-venus occurred in a short time; the effective time was less than 2 hr, which is comparable with the time observed in in vivo somitogenesis. This system also allowed us to prepare Ripply2-interacting proteins required for Tbx6 degradation.\n\n### Ripply2 mainly functions as a factor involved in protein degradation in mice\n\nActivation and termination of transcription factor activity in specific tissues at an appropriate time is important during embryonic development. The termination of Mesp expression is a pivotal pathway in segmental border determination in mice, but the regulation cascade of Tbx6, Mesp and Ripply likely diverged during vertebrate evolution. Zebrafish tbx6 directly induces the expression of ripply without mediating mesp function, after which ripply1/2 in turn suppresses the expression of both tbx6 and mesp (Wanglar et al., 2014; Windner et al., 2015; Yabe et al., 2016). On the other hand, mouse Ripply2 requires Mesp2 for transcriptional activation in addition to Tbx6 (Dunty et al., 2008; Morimoto et al., 2007), and suppresses Mesp2 function through destabilization of Tbx6. Repression of transcriptional activity of T-box family transcriptional factors is a well-known function of Ripply family factors in zebrafish and Xenopus (Kawamura et al., 2005; Kawamura et al., 2008; Kondow et al., 2007). However, there is no evidence of a similar repression mechanism in mice, and we suggested the negative regulation in mouse to be mediated by the destabilization of T-box proteins (Oginuma et al., 2008; Zhao et al., 2015), arguing that Ripply factors are not completely functionally conserved within vertebrates. This study provided clear evidence that Ripply2 participates in Tbx6 protein degradation through the proteasome pathway. Proteomic screening of Ripply2-binding proteins from PSM-fated mouse ES cells identified all members of 26S proteasome subunits, and Ripply2-Tbx6 was able to form a complex through direct interaction, demonstrating that Ripply2 physically associates with the proteasome an\u03b2d targets Tbx6 protein to the proteasome for permanent inactivation by degradation. Ripply2-mediated Tbx6 degradation was interrupted by the proteasome inhibitor MG132. This result is in agreement with the in vivo discovery that the Tbx6 expression domain was elongated by one-somite-length with MG132 treatment for 2 hr (Oginuma et al., 2008).\n\nAlthough TLE1/2 are well-known Groucho family co-repressors and their expression was observed in mouse PSM tissue, mouse Tbx6 transcriptional activity was never affected when TLE1 and Ripply2 were co-transfected in an Mesp2 luciferase reporter system (Figure 1\u2014figure supplement 1). This raises the question of how TLE1/2 functions in mouse PSM tissue. We found that the Groucho-binding motif of Ripply2 is also required for binding to Tbx6, indicating that TLE1/2 may participate in the degradation of Tbx6 via protein-protein interaction. Mass spectrometry analysis also revealed TLE in the Ripply2-Tbx6 complex, possibly reflecting the involvement of TLE in Tbx6 degradation in the PSM, but its molecular function in protein degradation remains unclear.\n\nIt is of note that Ripply2 can recruit the 26S proteasome subunit in ES cells without PSM-induction (Figure 3E), even though the Ripply2-mediated T-box factor degradation was found to be a highly context-dependent event. Tbx6 degradation never occurred in cultured cells, and even in vivo, the Ripply2-mediated induction of T-box factor degradation occurred only in PSM tissue (Zhao et al., 2015) but not in other mesodermal tissue such as the heart (Figure 1\u2014figure supplement 2). This suggests that other than proteasomes, there are other factor(s), possibly cell-specific E3 ligases, that help to down-regulate Tbx6 in PSM tissue. Consistent with this observation, Tbx6 was ubiquitinated only at a low level in undifferentiated ES cells (Figure 2\u2014figure supplement 3). Once the ES cells were induced to PSM, the ubiquitination was accelerated even in the absence of Ripply2. This suggests that Ripply2 is not involved in the ubiquitination step and only in the degradation step of Tbx6, indicating that a PSM-specific E3 ligase must be induced and functions in Tbx6 ubiquitination. However, such a candidate protein was not included in our MASS analysis. Additional studies are needed to identify the responsible E3 ligase and/or unknown factor(s) involved in Tbx6 degradation in the PSM.\n\n### T-box is A conserved motif for recognition by Ripply2 during degradation\n\nThe T-box, which spans 180\u2013200 amino acid residues, is a relatively large domain for the requirement of well-known DNA binding functions, suggesting that other functions likely depend on the T-box. For example, the \u03b2-sheet structures can constitute protein-protein interfaces for binding of other factors. In our study, the T-box domain was confirmed to be necessary and sufficient for both Ripply2-binding and Tbx6 degradation. The T-box family factors are ancient in origin and present in all metazoans, calling into question whether Ripply-dependent destabilization is a general event for other T-box factors in other species. Besides Tbx6, other T-box family transcriptional factors, such as T (Brachyury), have also been found to be degraded by Ripply2 (Zhao et al., 2015). Zebrafish tbx6 protein has been reported to be destabilized via ripply1/2 expression (Wanglar et al., 2014). These studies support the idea that the T-box dependent degradation pathway is conserved among T-box family factors. The domain of 124\u00a0~\u00a0152 aa in the T-box was found to be necessary for Tbx6 degradation in our chimera mouse experiment. However, Tbx6\u0394124-152 did not lose its ability to bind Ripply2, indicating that this region regulates degradation not by Ripply2-Tbx6 interaction but through providing a critical protein degradation point, such as a ubiquitin-binding site. It has been reported that ubiquitin is usually attached to the \u03b5-amino group of lysine through an isopeptide bond (Hicke et al., 2005). However, no lysine residue or ubiquitin-binding domain was found in the 124\u00a0~\u00a0152 aa region. This means that this T-box region likely contains an unusual ubiquitylation site or a specific factor may be required for the degradation of T-box factors. There is much more to be learned about the co-factors in the degradation process of T-box factors to fully understand the tissue-specific developmental regulation mechanisms during embryogenesis. Research using PSM-fated ES cells offers a rich source of material that will lead to further understanding of these molecular mechanisms.\n\n## Materials and methods\n\n### The strategy to generate the expression vectors used for biochemical analyses\n\nThe wild-type Tbx6 (Oginuma et al., 2008) and Ripply2 (Morimoto et al., 2007) cDNA were cloned in vectors shown in Supplementary file 2. The mutant constructs of Tbx6 and Ripply2 were generated by methods shown in Supplementary file 3.\n\n### Cell lines\n\nIn this study, we used cultured cell lines HEK293T and Cos7, and several modified ES cell lines originated from TT2 ES cell lines (Yagi et al., 1993). These cell lines were free of mycoplasma based on MycoAlert Mycoplasma Detection Assay (Lonza,\u00a0TX,\u00a0USA).\n\n### Immunoprecipitation and western blot\n\nHEK293T cells, obtained from ATCC (Manassas, VA), were transiently transfected with DNA constructs via PEI (Polyethylenimine) (polysciences, Inc, PA, USA), and then incubated in DMEM supplemented with 10% fetal bovine serum for 24 hr before analysis.\n\nFor immunoprecipitation, cells were lysed in 50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 1 mM EDTA (pH 8.0), 0.5% Nonidet P-40, 1 mM dithiothreitol (DTT) and cOmplete\u00a0EDTA-free Protease Inhibitor Cocktail (Sigma-Aldrich,\u00a0Germany). Immunoprecipitation was performed as described previously (Lou et al., 2006). Briefly, the supernatants were incubated with 10 \u00b5l of anti-FLAG M2 affinity gel (Sigma,MO, USA) on a rotator at 4\u00b0C. After several washes, precipitates were boiled with 3\u00a0\u00d7\u00a0Sample buffer, separated by SDS-PAGE, and then subjected to western blotting analysis as described previously (Zhao et al., 2015). Western analysis was performed using the primary antibodies; rabbit anti-Myc antibody (1/5000, Sigma), mouse anti-FLAG (1/5000, Sigma), mouse anti-FLAG-HRP (1/3000, Sigma), rabbit anti-Ripply2 (1/1000), rabbit anti-GFP (1/2000, MBL,\u00a0JAPAN), mouse anti-Proteasome 20S \u03b11, 2, 3, 5, 6 &and 7 subunits (1/5000, Enzo Life Sciences,\u00a0NY,\u00a0USA), rabbit anti-Proteasome 20S core subunits (1/2000, Enzo Life Sciences), mouse anti-Mono- and polyubiquitinylated conjugates monoclonal antibody (FK2)\u2013HRP (1/1000, Enzo Life Sciences) and mouse anti-\u03b2-tubulin (1/5000, Sigma), followed by incubation with goat anti-rabbit IgG conjugated with HRP (1/5000, cell signaling,\u00a0MA,\u00a0USA) and donkey anti-mouse IgG conjugated with HRP (Jackson Immuno Research, PA, USA) as the secondary antibodies. Quantification of western blot analyses were conducted using Analyze Gel function of ImageJ software.\n\n### GST\u00a0pull-down assay\n\nHis-tagged Ripply2 and the mutant proteins were expressed in E. coli, BL21, and purified with TALON Metal Affinity Resin (BD Bioscience,\u00a0CA,\u00a0USA). The GST\u00a0pull-down method was described previously (Suzuki et al., 2012). Briefly, GST-tagged Tbx6 and the mutant proteins were expressed in the E. coli BL21 (DE3) strain and the bacterial pellets were sonicated in binding buffer (25 mM HEPES-KOH [pH 7.4], 150 mM NaCl, 0.1% NP-40, 1 mM DTT, 1 mM EDTA, 1 mM PMSF), and then spun at 15,000 rpm at 4\u00b0C. The supernatants were mixed with His-Ripply2 and mixed with 30 ml of glutathione-sepharose 4FF (GE Healthcare,\u00a0Sweden) followed by incubation for 2 hr. After extensive washing, precipitates were separated by SDS-PAGE and analyzed by western blotting with anti-Ripply2 antibody or by CBB staining.\n\n### Animals\n\nAll mice were handled and propagated in accordance with National Institute of Genetics (NIG) guidelines, and all experimental procedures were approved by the Committee for Animal Care and Use in NIG. Staging of animals was done by designating the day on which a copulatory plug was detected as E0.5 and the day of birth as P0.5. All mice used in this study were maintained in MCH background (CLEA Japan). The mouse lines used in this study were previously described: CAG-floxed lynmRFP fused with FLAG-Ripply2 (Zhao et al., 2015), Mesp1-Cre (Saga et al., 1999), Smurf1/2-DKO (Narimatsu et al., 2009).\n\n### Targeting strategy to generate Tbx6Tbx6-venus/Tbx6-venus, Tbx6 Tbx6(\u0394124-152aa)-venus/+ KI ES cells using the Cas9/CRISPR system\n\nTo construct the Tbx6-venus targeting vector, Tbx6 cDNA without a stop codon was ligated into the N-terminal of the venus (ATG removed)-pCS2+ vector, kindly provided by Atsushi Miyawaki (RIKEN). A 1 kb genomic DNA fragment of the 5' upstream region (LA) and 1 kb genomic DNA fragment from 3' downstream of the Cas9 target site of Tbx6 (RA) were ligated with Tbx6-venus in the pCS2 vector. For generating Tbx6 mutant targeting vectors, full-length Tbx6 cDNA was replaced with\u00a0Tbx6\u0394124~152aa in the Tbx6-venus-targeting vector.\n\nThe bicistronic expression vector expressing sgRNA and hCas9 mRNA (pX330) (Cong et al., 2013) was purchased from Addgene (Cambridge, MA) and a puromysinr cassette was inserted. The Cas9-target sequence designed for the Tbx6-intron-1 (5\u2019-caccGTGAGCGGTTGGATTGGCTC-3\u2019 and 5\u2019- aaacGAGCCAATCCAACCGCTCAC \u22123\u2019) was annealed and ligated in to the px330-puro vector. These vectors were introduced into TT2 ES cells (C57BL/6 (B6)/CBA) by transfection using Lipofectamine 2000 (Invitrogen). After selection using puromycin for 24\u201336 hr, resistant clones were isolated and their DNA was analyzed by PCR using primers, Tbx6-GL1: (5'\u2212CAGAGAGGGGACCTGGAATCC\u22123'), and Tbx6-R primer: (5'\u2212CTCGTGGATGGTACATGTTGTACCG\u22123') for the 5\u2019-terminal; NeoAL2 (5'\u2212GAAAGAACCAGCTGGGGCTCGAG\u22123'), and Tbx6-GR1: (5'\u2212GCCCCTTCACTCTCTCCATCCTAG\u22123') for the 3\u2019 terminal.\n\n### Introduction of Tet-on system in ES cells\n\nTo establish the Tet-inducible Ripply2, Tbx6, Tbx6-T2A-Ripply2-expression systems, a piggy bac transposon system was used as previously described (Li et al., 2013), pBase, CAG-promoter-driven rtTA and either pPB-CMV-mcherry-T2A-FLAG-Ripply2, pPB-CMV-mcherry-T2A-FLAG-Ripply2\u0394FPIQ, pPB-CMV-mcherry-T2A-FLAG-Ripply2\u0394WRPW, pPB-CMV-FLAG-Tbx6 or pPB-CMV-FLAG-Tbx6-T2A-Ripply2 vectors were transfected into the Tbx6-venus ES cells using Lipofectamine 2000. The ES cells were selected using neomycin. To detect ubiquitinated Tbx6, pPB-CMV-HA-Ubiquitin was additionally introduced into the Tbx6Tbx6-venus/Tbx6-venus ES cells containing either pPB-CMV-FLAG-Tbx6 or pPB-CMV-FLAG-Tbx6-T2A-Ripply2.\n\n### ES culture and PSM induction methods\n\nES cells containing homozygous Tbx6-venus knock-in alleles with Tet-inducible transgenes were cultured with feeder cells in ES medium (Yagi et al., 1993).\n\nFor PSM induction, the feeder cells were depleted and ES cells were cultured on gelatin\u2013coated culture dishes for western analysis, or on human fibronectin-coated coverglasses for immunostaining with differentiation medium (2% L-Glutamine (Life Technologies,\u00a0Brazil), 1xMEM NEAA (Life Technologies,\u00a0NY,\u00a0USA), 10\u00a0units/ml Penicillin 10 \u03bcg/ml Streptomycin (Life Technologies), 55 \u03bcM 2-Mercaptoethanol, 8 \u03bcg/ml Adenosine (SIGMA-Aldrich,\u00a0China), 7.3 \u03bcg/ml Cytidine (SIGMA-Aldrich) 8.5 \u03bcg/ml Guanosine (SIGMA-Aldrich), 2.4 \u03bcg/ml Thymidine (SIGMA-Aldrich), 7.3 \u03bcg/ml Uridine (SIGMA-Aldrich), and 10% FBS (SIGMA-Aldrich,\u00a0MI,\u00a0USA) in DMEM (Life Technologies,\u00a0UK) for 2 days, followed by culture with differentiation medium containing 3 \u03bcM CHIR99021 (Wako,\u00a0JAPAN) for 3 days. To induce the Tet-inducible expression system, 1 \u03bcg/mL Doxycycline (SIGMA-Aldrich, Switzerland) was added into the medium for varying periods.\n\n### Immunostaining\n\nImmunostaining for cultured cells was performed on cover glasses coated with human fibronectin. Cells was fixed by 4%PFA on ice for 10 min, then blocked using 3% skim milk, followed by incubating with primary antibodies; mouse-anti-FLAG(M2) (1/5000, Sigma), guinea pig anti-Ripply2 (1/100) (Zhao et al., 2015), and chick anti-GFP (1/400, Aves Labs,\u00a0Oregon, USA) at 4\u00b0C overnight and then incubated with secondary antibodies; Alexa Fluor 488-conjugated anti-rabbit antibody (1/800, Life Technologies,\u00a0Oregon,\u00a0USA), Alexa Fluor 594-conjugated anti-mouse antibody (1/800, Life Technologies), Cy5 conjugated anti-Guinea pig antibody. The methods used for whole mount immunostaining and section immunostaining are described in our previous reports (Zhao et al., 2015). Antibodies used in this study, anti-Tbx6 and anti-Ripply2, were described previously (White and Chapman, 2005; Zhao et al., 2015). For immunostaining of heart sections, we used rabbit-anti-TBX5 (H-70)(1/300, Santa Cruz Biotechnology,\u00a0CA,\u00a0USA), goat-anti-TBX18 (C-20) (1/300, Santa Cruz Biotechnology) as first antibodies. These sections were observed using FluoView FV1200 laser scanning confocal microscopy (Olympus).\n\n### Mass spectrometry for analyzing Ripply2-interacting proteins\n\nTbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2 ES cells were induced to undergo differentiation toward a PSM-fate by culturing with 3 \u03bcM CHIR99021, followed by 1 \u03bcg/mL Dox for 3 hr to induce the expression of FLAG-Ripply2. The lysate from PSM-fated ES cells was incubated with anti-FLAG beads overnight, and the beads were washed with washing-buffer (50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 1 mM EDTA (pH 8.0), 0.5% Nonidet P-40, 1 mM dithiothreitol (DTT)) for at least eight times, then the proteins interacting with FLAG-Ripply2 were collected by eluting with 150 \u03bcg/mL 3xFLAG peptide (SIGMA-Aldrich). The beads were spun down and the supernatant was applied to a gradient acrylamide gel (Bio-Rad,\u00a0USA). Mass spectrometry was conducted by the Riken Center for Developmental Biology.\n\n### Generation of BAC transgenic mice\n\nBAC DNA modifications were conducted using the \u03bb red recombination method as described previously (Datsenko and Wanner, 2000; Oginuma et al., 2008). Briefly, we utilized 70 nt primers with 50 nt of homology to the insert point of the Tbx6 gene and 20 nt of homology to the recombination vectors containing venus or T-box-venus followed by an FRT-flanked kanamycin resistance cassette (Figure 5A). The resulting PCR products were introduced into competent DH10 BAC (PR23-245M8) host cells containing PKD46, which carries the \u03bb recombination genes. The recombinants were characterized using specific PCR. The kanamycin resistance cassette was removed by introduction of a pCP20 plasmid containing temperature-sensitive FLP.\n\nTransgenic mice were generated by microinjection of each BAC vector into fertilized eggs. Microinjected eggs were then transferred into the oviducts of pseudopregnant foster mothers. The genotypes of the embryos were identified by PCR using yolk sac DNA.\n\n### Chimera analysis\n\nFor chimera production, two kinds of ES cells were used. One was control ES cells containing homozyogous Tbx6-venus in both Tbx6 alleles (Tbx6Tbx6-venus/Tbx6-venus) (Figure 1E) and the other was mutant ES cells containing Tbx6 (\u0394124\u00a0~\u00a0152 aa)-venus in a single Tbx6 locus (Tbx6Tbx6(\u0394124-152aa)-venus/+) (Figure 6). ES cells were aggregated with 8 cell stage embryos and the formed blastocysts were transferred into the uterus of a pseudopregnant foster mother the next day. After 8 days (corresponding to E10.5), embryos were recovered and examined for Tbx6-venus expression. Tbx6-venus positive embryos were fixed and processed for whole mount immunostaining using anti-GFP, anti-Ripply2, and anti-Tbx6 antibodies. The confocal images were obtained using Olympus FV1200.\n\n### Luciferase assay\n\nThe luciferase assay was performed as previously described (Yasuhiko et al., 2006). The vectors for control, NICD, Tbx6, Tbx6\u00a0+\u00a0NICD, and Tbx6\u0394124~152aa\u00a0+\u00a0NICD were transfected into Cos7 cells for 24 hr, respectively. The cell lysates were subjected to a luciferase assay using the Dual Luciferase System (Promega,\u00a0WI,\u00a0USA). The experiments were performed in triplicate for each assay.\n",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "9e0b8672-62aa-4923-a01d-42acc6813abb",
+      "submission_id": "d0f577f2-f93c-4595-905e-6d88f932475f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Margaret Buckingham, Institut Pasteur France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33068.024](https://doi.org/10.7554/eLife.33068.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ripply2 recruits proteasome complex for Tbx6 degradation to define segment border during murine somitogenesis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission..\n\nThe regular formation of somites, that takes place progressively on the anterior/posterior axis of the embryo, is a fascinating process. The segmentation boundaries between somites are primarily determined by the anterior border of the Tbx6 protein domain in the presomitic mesoderm (PSM). The authors had previously shown reciprocal regulation of Tbx6-Mesp2-Ripply1 in this context. In this manuscript they go on to examine the mechanisms that underlie the critical protein degradation of Tbx6 at this border, with a combination of biochemical approaches and a clever use of an in vitro ES cell system. This is an important and well executed study. However the authors should consider the following point:\n\nThe authors show that Ripply2 actually degrades Tbx6 proteins in PSM-like cells induced from ES cells. Although this is one of the highlights of this paper, the finding was predictable from previous work. On the other hand, the authors noticed another unexpected and interesting feature of Tbx6 degradation, namely that Tbx6 degradation does not occur ubiquitously, but is specific for the PSM cells. If the authors could show some additional data to explain a possible mechanism by which this specificity occurs, the impact of the paper would be increased.\n",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7d09b63d-01c9-41c7-ac93-a3d11d3a4667",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C1",
+      "claim": "Ripply2 directly binds to Tbx6 in cultured cells without changing the stability of Tbx6.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Ripply2 directly binds to Tbx6 in cultured cells without changing the stability of Tbx6, indicating an unknown mechanism for Tbx6 degradation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from immunoprecipitation and GST pull-down assays shown in Figure 1A and 1B, demonstrating direct interaction between Ripply2 and Tbx6 in cultured cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "f45fb72c-f83b-4380-9314-edd8dfb62266",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C2",
+      "claim": "Tbx6 degradation via Ripply2 was successfully reproduced using a mouse ES induction system.",
+      "claim_type": "EXPLICIT",
+      "source": "We succeeded in reproducing in vivo events using a mouse ES induction system, in which Tbx6 degradation occurred via Ripply2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing Tbx6-venus degradation upon Ripply2 induction in PSM-fated ES cells, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "520d6a31-a4d7-418c-ad61-fdf27adeca8a",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C3",
+      "claim": "Proteasomes are major components of the Ripply2-binding complex in PSM-fated ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analysis of the PSM-fated ES cells revealed that proteasomes are major components of the Ripply2-binding complex, suggesting that recruitment of a protein-degradation-complex is a pivotal function of Ripply2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data identifying all 26S proteasome subunits as Ripply2-interacting proteins, as shown in Figure 4D and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "001a03d9-05f9-4837-861f-38c10f6d5b6d",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C4",
+      "claim": "A motif in the T-box (amino acids 124-152) is required for Tbx6 degradation independent of binding with Ripply2 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we identified a motif in the T-box, which is required for Tbx6 degradation independent of binding with Ripply2 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by BAC transgenic and chimera experiments showing that deletion of amino acids 124-152 stabilizes Tbx6 protein without disrupting Ripply2 binding, as shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "ade146a6-c6bb-4be2-9825-845fe6c97f66",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C5",
+      "claim": "Tbx6 maintains the mesodermal properties of somite progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Tbx6 maintains the mesodermal properties of somite progenitor cells (Chapman and Papaioannou, 1998), but induces the expression of segmentation genes in the anterior PSM to establish the new somite boundary (Oginuma et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Chapman and Papaioannou, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "59f8aaca-4c48-4d5f-a766-427e624bfd31",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C6",
+      "claim": "Tbx6 induces the expression of segmentation genes in the anterior PSM to establish the new somite boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Tbx6 maintains the mesodermal properties of somite progenitor cells (Chapman and Papaioannou, 1998), but induces the expression of segmentation genes in the anterior PSM to establish the new somite boundary (Oginuma et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Oginuma et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "32178a06-a779-4494-a82c-bb005cb7015f",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C7",
+      "claim": "The segmentation clock periodicity is translated into the activation of the segmentation gene Mesp2 around the segmental border.",
+      "claim_type": "EXPLICIT",
+      "source": "The periodicity of this segmentation clock is translated into the activation of the segmentation gene Mesoderm posterior protein 2 (Mesp2) around the segmental border (Morimoto et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Morimoto et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "f7803d11-0dd2-4ef4-9cbd-d9136e116f48",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C8",
+      "claim": "Mesp2 expression is temporally regulated by Notch signaling and spatially defined by Tbx6.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesp2 expression is temporally regulated by Notch signaling, and spatially defined by Tbx6; both factors work positively and coordinate each other (Yasuhiko et al., 2006; Yasuhiko et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Yasuhiko et al., 2006 and 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b3791dfb-d9ed-472f-8f10-e68d394012dd",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C9",
+      "claim": "The anterior limit of the Mesp2 mRNA expression domain is consistent with the Tbx6 anterior limit.",
+      "claim_type": "EXPLICIT",
+      "source": "The anterior limit of the Mesp2 mRNA expression domain is consistent with the Tbx6 anterior limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the spatial relationship between Mesp2 and Tbx6 expression domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "87513000-79d8-4b15-aefc-1306975cd934",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C10",
+      "claim": "Mesp2 induces the expression of Ripply2, which then suppresses Tbx6 protein, resulting in the termination of Mesp2 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Once translated, Mesp2 induces the expression of its target gene Ripply2, then Ripply2 suppresses Tbx6 protein, which results in the termination of Mesp2 transcription (Oginuma et al., 2008; Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Oginuma et al., 2008 and Zhao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "229b43a2-af43-42f9-bcc5-96cb30ddea03",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C11",
+      "claim": "Zebrafish ripply1/2 and mouse Ripply2 proteins play a role in the degradation of T-box family factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, both zebrafish ripply1/2 and mouse Ripply2 proteins were found to play a role in the degradation of T-box family factors (Wanglar et al., 2014; Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Wanglar et al., 2014 and Zhao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "3bf90a69-3933-4127-a64d-e923fd374c22",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C12",
+      "claim": "Ectopic Ripply2 expression in the posterior PSM is sufficient for the destabilization of Tbx6 and T protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study demonstrated that ectopic Ripply2 expression in the posterior PSM was sufficient for the destabilization of T-box factors- Tbx6 and T protein (Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Zhao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "ffba7ddb-4acf-4d2f-be8b-7fb4a3b0ead7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C13",
+      "claim": "FLAG-Tbx6 strongly associates with Myc-Ripply2 in HEK293T cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong association between FLAG-Tbx6 with Myc-Ripply2 was observed with HEK293T cell lysates (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "ec8cbcc8-8ca8-465d-9882-9a1f31515f93",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C14",
+      "claim": "Tbx6 directly interacts with Ripply2 as demonstrated by GST pull-down assay.",
+      "claim_type": "EXPLICIT",
+      "source": "GST-Tbx6 fusion protein, but not GST alone, was able to pull down His-Ripply2, indicating that Tbx6 directly interacts with Ripply2 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GST pull-down assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "8b857aa1-55c5-4012-a01a-d95931af42ed",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C15",
+      "claim": "The T-box domain alone is sufficient for association with Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the T-box domain alone was sufficient for association with Ripply2 and that other regions of Tbx6 were dispensable for this interaction (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data with various Tbx6 deletion constructs shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "3705e20c-ce31-47f2-b138-380bcbb3967c",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C16",
+      "claim": "Ripply2\u0394FPIQ mutant lacks the ability to bind Tbx6.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both these mutants lacked the ability to bind Tbx6 (Figure 1D), indicating that these conserved sequences are required for Ripply2-mediated Tbx6 suppression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data with Ripply2 mutants shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "387a587e-b582-42ad-9438-aeb96312f1dc",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C17",
+      "claim": "Ripply2\u0394WRPW mutant lacks the ability to bind Tbx6.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both these mutants lacked the ability to bind Tbx6 (Figure 1D), indicating that these conserved sequences are required for Ripply2-mediated Tbx6 suppression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data with Ripply2 mutants shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "8a9f3cb7-03e2-4ca0-8f5e-f04fc09f8fe7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C18",
+      "claim": "The transcriptional activity of mouse Tbx6 is not influenced by mouse Ripply2 and TLE1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the transcriptional activity of mouse Tbx6 was not influenced by mouse Ripply2 and TLE1 (homolog of Groucho in mouse) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by luciferase reporter assay data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "6106ac78-5dea-4c29-a26e-a454a4c9576a",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C19",
+      "claim": "Tbx6 was never destabilized in HEK293T cells even in the presence of Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite Tbx6-Ripply2 interaction, Tbx6 was never destabilized in HEK293T cells even in the presence of Ripply2 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 1A showing stable Tbx6 levels despite Ripply2 co-expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "78ada457-828f-4daa-acba-bb4891a3b9b8",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C20",
+      "claim": "Ectopic expression of Ripply2 in the cardiac mesoderm does not influence the stability of T-box factors Tbx18 and Tbx5 in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ectopic expression of Ripply2 in the cardiac mesoderm did not influence on the stability of T-box factors Tbx18 and Tbx5 in the heart (Figure 1\u2014figure supplement 2), which is different from the destabilizing effect of Ripply2 on Tbx6 and Brachyury (T) in the PSM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "47fc92b6-cfc4-49b9-a0f0-a0743126bbe6",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C21",
+      "claim": "The PSM contains a specific factor(s) necessary for the destabilization of T-box factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the PSM contains a specific factor(s) necessary for the destabilization of T-box factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Tbx6 degradation occurs in PSM tissue but not in cultured cells or other tissues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "a7c8c802-8bd7-4057-988e-ac1803d0ac6f",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C22",
+      "claim": "ES cells cultured with CHIR99021 exhibited Tbx6-venus expression from day 2 to day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with ES cells treated with DMSO that exhibited almost no venus-positive cells, ES cells cultured with CHIR99021 exhibited Tbx6-venus expression from day 2 to day 4, as indicated by immunostaining with anti-GFP antibody (Figure 1G\u2013R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 1G-R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "9ba29c60-dcf4-47b6-a030-3ebfa38cf63f",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C23",
+      "claim": "The expression of Tbx6-venus peaked at day 3 of PSM induction.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Tbx6-venus peaked at day 3 (Figure 1P) and was maintained until day 4 (Figure 1R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 1P and 1R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "3d6d2114-567d-4872-a8db-d3f187762999",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C24",
+      "claim": "The expression level of FLAG-Ripply2 reached the peak at 6 hr after induction by Dox in PSM-fated differentiating ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In PSM-fated differentiating ES cells, we found that the expression level of FLAG-Ripply2 reached the peak at 6 hr after induction by Dox (Figure 2D), along with a gradual decrease in Tbx6-venus expression from 3 to 12 hr after Dox treatment (Figure 2D and E\u2013N, Figure 2\u2014figure supplement 1A\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "74040bd2-32f8-4c5f-83af-c9eb80f11f75",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C25",
+      "claim": "Tbx6-venus expression gradually decreased from 3 to 12 hr after Dox treatment in PSM-fated ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In PSM-fated differentiating ES cells, we found that the expression level of FLAG-Ripply2 reached the peak at 6 hr after induction by Dox (Figure 2D), along with a gradual decrease in Tbx6-venus expression from 3 to 12 hr after Dox treatment (Figure 2D and E\u2013N, Figure 2\u2014figure supplement 1A\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot and immunostaining data shown in Figure 2D, E-N, and Figure 2\u2014figure supplement 1A-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "0b216e2b-826f-47ba-95b3-51767d223556",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C26",
+      "claim": "Ripply2-dependent reduction in Tbx6 protein was suppressed by the inclusion of 10 \u03bcM MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "This Ripply2-dependent reduction in Tbx6 protein was suppressed by the inclusion of 10 \u03bcM MG132 (a proteasome inhibitor) (Figure 2O\u2013S, Figure 2\u2014figure supplement 2), and some Ripply2-Tbx6 double-positive cells were observed under the Dox+MG132+ conditions (arrows in Figure 2S').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 2O-S and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "e43fb8a6-bc43-4e56-847b-8e5067b50eae",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C27",
+      "claim": "Tbx6 destabilization occurs through the proteasome-mediated degradation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the idea that Tbx6 destabilization occurred through the proteasome-mediated degradation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that MG132, a proteasome inhibitor, prevents Tbx6 degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "2ca0ddc7-1057-4fe7-911f-afcc5d98684f",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C28",
+      "claim": "Ubiquitinated Tbx6 was detected in the presence of MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "We found several bands with higher molecular weight than FLAG-Tbx6 in the presence of MG132, and the intensity became lower in the presence of Ripply2 (Figure 2U), suggesting that these bands were ubiquitinated Tbx6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation and western blot data shown in Figure 2U.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "33f147e3-1a0c-4df6-bd3e-c9a9438944ad",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C29",
+      "claim": "Ubiquitinated proteins, likely including Tbx6, were observed only in the presence of MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitinated proteins, likely including Tbx6, were observed only in the presence of MG132.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by western blot data showing ubiquitinated proteins only when MG132 is present.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "f5ba1916-e34d-4077-a949-2771081264a3",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C30",
+      "claim": "Tbx6 can be ubiquitinated even in the absence of Ripply2 in PSM-fated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Tbx6 can be ubiquitinated even in the absence of Ripply2 in PSM-fated cells and Ripply2 is mainly involved in the degradation step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 2U and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "bd331cb3-7e52-4dad-83ad-a6f58d542b86",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C31",
+      "claim": "Ripply2 is mainly involved in the degradation step of Tbx6, not the ubiquitination step.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Tbx6 can be ubiquitinated even in the absence of Ripply2 in PSM-fated cells and Ripply2 is mainly involved in the degradation step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Tbx6 ubiquitination occurs without Ripply2, but degradation requires Ripply2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "358c5197-47fe-456d-ad06-b9b08c83ada0",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C32",
+      "claim": "The level of Tbx6 ubiquitination increased when ES cells were induced to PSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ubiquitinated Tbx6 was detected even in undifferentiated ES cells, the level of ubiquitination was found to be increased when ES cells were induced to PSM (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "7b8f3f33-3c32-4152-a508-e348b78dddc4",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C33",
+      "claim": "No anterior expansion of Tbx6 expression was observed in Smurf1/2-dKO embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any anterior expansion of Tbx6 expression (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "470be0dd-3c4c-423b-8854-80e62fd39af6",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C34",
+      "claim": "Tbx6 degradation did not occur in Tbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2\u0394FPIQ ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from our binding analysis demonstrating that the Tbx6-Ripply2\u0394FPIQ interaction was disrupted in HEK293T cultured cells (Figure 1D), Tbx6 degradation did not occur in the Tbx6Tbx6-venus/Tbx6-venus;mcherry-T2A-FLAG-Ripply2\u0394FPIQ ES cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "4cb3b4c0-0927-404d-899c-a353a63b2012",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C35",
+      "claim": "There is no interaction between Tbx6 and Ripply2\u0394FPIQ in PSM-fated ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed no interaction of Tbx6 and Ripply2\u0394FPIQ in PSM-fated ES cells (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "c8470f9a-8cd4-4084-bc22-603b16eefa9d",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C36",
+      "claim": "Ripply2\u0394WRPW failed to interact with Tbx6 in PSM-fated ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ripply2 mutant lacking another conserved motif, WRPW, which is required for interaction with the Groucho transcriptional co-repressors TLE1 and TLE2 (Figure 3\u2014figure supplement 1), also failed to interact with Tbx6 in cultured cells (Figure 1D) and ES cells (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "05e3fe5e-e4a9-4c52-93d8-80ed9c09926b",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C37",
+      "claim": "Tbx6 degradation was inhibited by Ripply2\u0394WRPW in PSM-fated ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As such thereby Tbx6 degradation was also inhibited in PSM-fated ES cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "511b8668-c991-4c13-8d86-92a882b1805c",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C38",
+      "claim": "Degradation of Tbx6 protein depends on the accessibility of Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support the idea that degradation of Tbx6 protein depends on the accessibility of Ripply2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Ripply2 mutants unable to bind Tbx6 cannot induce its degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "d287cac1-8bb2-415d-a589-ffb2aea7ef19",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C39",
+      "claim": "Ripply2 recruited all subunit components of the 26S proteasome according to mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "According to mass spectrometry, Ripply2 recruited all subunit components of the 26S proteasome (Figure 4D; Supplementary file 1), which is known as the main pathway for the degradation of nuclear proteins (von Mikecz, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 4D and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "6cbb2b68-1033-4eea-9767-3849febc70e7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C40",
+      "claim": "The 26S proteasome is the main pathway for the degradation of nuclear proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "According to mass spectrometry, Ripply2 recruited all subunit components of the 26S proteasome (Figure 4D; Supplementary file 1), which is known as the main pathway for the degradation of nuclear proteins (von Mikecz, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by von Mikecz, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "c6f1cb86-09f6-4dab-98b5-170246a9220c",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C41",
+      "claim": "Ripply2 assembled the endogenous proteasome 20S subunit regardless of differentiation induction.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunoprecipitation data showed that Ripply2 assembled the endogenous proteasome 20S subunit regardless of differentiation induction (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation and western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "c006fb37-fd83-4087-8ae5-0fb084c7e2c2",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C42",
+      "claim": "The function of Ripply2 for specific protein degradation is mediated through the proteasome pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further support our idea that the function of Ripply2 for specific protein degradation is mediated through the proteasome pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mass spectrometry and immunoprecipitation data showing Ripply2 interaction with proteasome components.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "5540b371-db5d-48fa-83b4-a00981f01bff",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C43",
+      "claim": "Venus protein expressed under the control of the Tbx6 promoter was stable and expanded to the anterior region beyond the segmentation point.",
+      "claim_type": "EXPLICIT",
+      "source": "We dissected embryos at E10.5, and confirmed that the expression of venus protein was stable and expanded to the anterior region beyond the segmentation point indicated by the arrow (N = 3. Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from BAC transgenic embryos shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "ceddbfd4-5b13-4327-9c05-2cacdce0b1d7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C44",
+      "claim": "Tbx6-venus fusion protein faithfully reproduced the endogenous expression pattern of Tbx6 with a clear anterior border.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the transgene faithfully reproduced the endogenous expression pattern of Tbx6, in which the expression domain has a clear anterior border just before the segmental border in the anterior PSM (N = 3, Figure 5C), indicating that the Tbx6-fusion protein was degraded in the anterior PSM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from BAC transgenic embryos shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "c4b47c94-b5e0-4495-a8cb-d9041f19d52e",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C45",
+      "claim": "Tbx6\u0394C-venus protein exhibited an expression pattern with a clear anterior border.",
+      "claim_type": "EXPLICIT",
+      "source": "Tbx6\u0394C-venus protein exhibited an expression pattern with a clear anterior border (N = 4, Figure 5D); however, the Tbx6\u0394TC-venus protein expanded to the anterior region (N = 2, Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from BAC transgenic embryos shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "4ff96443-6f93-497f-9bf7-ee5763584b7d",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C46",
+      "claim": "Tbx6\u0394TC-venus protein expanded to the anterior region.",
+      "claim_type": "EXPLICIT",
+      "source": "Tbx6\u0394C-venus protein exhibited an expression pattern with a clear anterior border (N = 4, Figure 5D); however, the Tbx6\u0394TC-venus protein expanded to the anterior region (N = 2, Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from BAC transgenic embryos shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "5b4c9b0b-d8ba-4d97-bed7-f5dd73f8f95a",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C47",
+      "claim": "The T-box domain is necessary for degradation of Tbx6 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that the T-box domain is necessary for degradation of Tbx6 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that deletion of the T-box domain prevents Tbx6 degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "43d0cfb1-69b3-4650-b0e6-89c6dc0e706b",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C48",
+      "claim": "The expression of T-box-venus protein had a clear anterior border.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the expression of T-box-venus protein had a clear anterior border (N = 5, Figure 5F), demonstrating that the T-box region of Tbx6 is necessary and sufficient for degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from BAC transgenic embryos shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "3f32f0c8-df3f-413d-ba2f-000d91e855b7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C49",
+      "claim": "The T-box region of Tbx6 is necessary and sufficient for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the expression of T-box-venus protein had a clear anterior border (N = 5, Figure 5F), demonstrating that the T-box region of Tbx6 is necessary and sufficient for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that the T-box domain alone is sufficient to confer degradation properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "a46ecb8e-286f-48d6-afa8-6efbf431c8be",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C50",
+      "claim": "Degradation occurred when the T-box was partially deleted until the 152nd amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same method, we further found that the degradation occurred when the T-box was partially deleted until the 152th amino acid (aa) (Figure 5A,H, N = 4), but not when it was deleted up to the 124th aa (Figure 5A,G, N = 2), suggesting that the 124\u223c152 aa region may be essential for Tbx6 degradation in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from BAC transgenic embryos shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "13c6951c-2b09-4941-82d4-45033a635898",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C51",
+      "claim": "Degradation did not occur when the T-box was deleted up to the 124th amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same method, we further found that the degradation occurred when the T-box was partially deleted until the 152th amino acid (aa) (Figure 5A,H, N = 4), but not when it was deleted up to the 124th aa (Figure 5A,G, N = 2), suggesting that the 124\u223c152 aa region may be essential for Tbx6 degradation in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from BAC transgenic embryos shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "71fc8d1b-9774-4ea3-b937-ecbc61c6ba73",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C52",
+      "claim": "The 124-152 aa region may be essential for Tbx6 degradation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same method, we further found that the degradation occurred when the T-box was partially deleted until the 152th amino acid (aa) (Figure 5A,H, N = 4), but not when it was deleted up to the 124th aa (Figure 5A,G, N = 2), suggesting that the 124\u223c152 aa region may be essential for Tbx6 degradation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential degradation patterns observed with different T-box deletions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "0c13017d-8afd-47ae-b464-f24bbc55c252",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C53",
+      "claim": "Tbx6-venus signal in chimera embryos with Tbx6Tbx6(\u0394124-152aa)-venus/+ ES cells became stabilized and expanded anteriorly.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the Tbx6-venus signal in the chimera with Tbx6Tbx6(\u0394124-152aa)-venus/+ ES cells became stabilized and expanded anteriorly (N = 20, Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data from chimera embryos shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "bf8cf643-dc45-45c3-bbab-1df0e4bf4566",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C54",
+      "claim": "Endogenous Tbx6 but not mutant Tbx6 protein was degraded by Ripply2 in the chimera embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that Tbx6-venus in chimera embryo with Tbx6Tbx6(\u0394124-152aa)-venus/+ ES cells had an expanded pattern (Figure 6E), whereas endogenous Tbx6 showed a clear anterior limit that was at the same position as the posterior expression domain of Ripply2 (Figure 6E\u2013H), indicating that endogenous Tbx6 but not mutant Tbx6 protein was degraded by Ripply2 in the chimera embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole-mount triple-immunostaining data shown in Figure 6E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "d126db26-9e1e-4158-91b2-a51693408cfa",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C55",
+      "claim": "The T-box, especially the aa125-152 domain, plays a central role in the degradation of Tbx6 protein in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations demonstrated that the T-box, especially the aa125\u223c152 domain, plays a central role in the degradation of Tbx6 protein in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the chimera and BAC transgenic experiments showing that this region is required for degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b861ba1e-c0fb-4f83-8218-33164ff233c6",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C56",
+      "claim": "Tbx61~124aa failed to bind Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when the C-terminal from the 124th amino acid was deleted from Tbx6 (Tbx61~124aa), the mutant protein failed to bind Ripply2 (Figure 6I\u2013J), but Tbx61~152aa succeeded in interacting with Ripply2 (Figure 6I\u2013J), suggesting that amino acids 125 ~ 152 contain the Ripply2-binding-motif in the T-box.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 6J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "0bef2a13-ff10-49a7-bf4d-e2328f4816c2",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C57",
+      "claim": "Tbx61~152aa succeeded in interacting with Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when the C-terminal from the 124th amino acid was deleted from Tbx6 (Tbx61~124aa), the mutant protein failed to bind Ripply2 (Figure 6I\u2013J), but Tbx61~152aa succeeded in interacting with Ripply2 (Figure 6I\u2013J), suggesting that amino acids 125 ~ 152 contain the Ripply2-binding-motif in the T-box.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 6J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "4b03c863-3959-4558-9a0d-0d0527185d87",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C58",
+      "claim": "Amino acids 125-152 contain the Ripply2-binding-motif in the T-box.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when the C-terminal from the 124th amino acid was deleted from Tbx6 (Tbx61~124aa), the mutant protein failed to bind Ripply2 (Figure 6I\u2013J), but Tbx61~152aa succeeded in interacting with Ripply2 (Figure 6I\u2013J), suggesting that amino acids 125 ~ 152 contain the Ripply2-binding-motif in the T-box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential binding patterns observed with different T-box deletions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "64ef421a-a736-4806-9543-b44dcde720e7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C59",
+      "claim": "The deletion of 125-152 aa (Tbx6\u0394124~152) did not affect the ability to form a complex with Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we surprisingly found that the deletion of 125 ~ 152 aa (Tbx6\u0394124~152) did not affect the ability to form a complex with Ripply2 either in HEK293T immunoprecipitation analysis or in GST-pull-down assay (Figure 6I\u2013K), suggesting that although 125 ~ 152 aa has Ripply2-binding ability it is not the only Ripply2-binding motif in the T-box.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation and GST pull-down data shown in Figure 6J and 6K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "49263055-9c33-48da-b1b2-da51fa6b2aee",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C60",
+      "claim": "Although 125-152 aa has Ripply2-binding ability, it is not the only Ripply2-binding motif in the T-box.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we surprisingly found that the deletion of 125 ~ 152 aa (Tbx6\u0394124~152) did not affect the ability to form a complex with Ripply2 either in HEK293T immunoprecipitation analysis or in GST-pull-down assay (Figure 6I\u2013K), suggesting that although 125 ~ 152 aa has Ripply2-binding ability it is not the only Ripply2-binding motif in the T-box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Tbx6\u0394124-152 can still bind Ripply2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "4ec69ccc-d0e3-4e28-aa67-ed9674943610",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C61",
+      "claim": "The stabilization of Tbx6\u0394124-152aa-venus in the chimera embryo was not due to disruption of Ripply2 association but perhaps to a special motif for degradation in the region of 125-152 aa.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the stabilization of Tbx6\u0394124-152aa-venus in the chimera embryo was not due to disruption of Ripply2 association but perhaps to a special motif for degradation in the region of 125 ~ 152 aa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Tbx6\u0394124-152 can bind Ripply2 but is not degraded.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "1b08c03b-897c-4723-943b-9b785851ca59",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C62",
+      "claim": "Ripply2 physically associates with the proteasome and targets Tbx6 protein to the proteasome for permanent inactivation by degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic screening of Ripply2-binding proteins from PSM-fated mouse ES cells identified all members of 26S proteasome subunits, and Ripply2-Tbx6 was able to form a complex through direct interaction, demonstrating that Ripply2 physically associates with the proteasome an\u03b2d targets Tbx6 protein to the proteasome for permanent inactivation by degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mass spectrometry data showing Ripply2 interaction with proteasome components and the observation that Tbx6 degradation is proteasome-dependent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b124fdaa-f784-4886-8c8d-8653cbf37817",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C63",
+      "claim": "Ripply2-mediated Tbx6 degradation was interrupted by the proteasome inhibitor MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripply2-mediated Tbx6 degradation was interrupted by the proteasome inhibitor MG132.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2O-S and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b6e0a9d4-9f41-4189-b19b-0b02329a0c54",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C64",
+      "claim": "The Tbx6 expression domain was elongated by one-somite-length with MG132 treatment for 2 hr in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in agreement with the in vivo discovery that the Tbx6 expression domain was elongated by one-somite-length with MG132 treatment for 2 hr (Oginuma et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Oginuma et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b5ceecca-663f-4ec5-9129-2482e48238d0",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C65",
+      "claim": "TLE1/2 are well-known Groucho family co-repressors and their expression was observed in mouse PSM tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Although TLE1/2 are well-known Groucho family co-repressors and their expression was observed in mouse PSM tissue, mouse Tbx6 transcriptional activity was never affected when TLE1 and Ripply2 were co-transfected in an Mesp2 luciferase reporter system (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about TLE1/2 and observation of their expression in PSM tissue.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "5cae2b55-9025-4003-ab46-199b4e45a4f7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C66",
+      "claim": "The Groucho-binding motif of Ripply2 is required for binding to Tbx6.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Groucho-binding motif of Ripply2 is also required for binding to Tbx6, indicating that TLE1/2 may participate in the degradation of Tbx6 via protein-protein interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 1D and Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "0fb8ab9b-3f6b-45ae-ac46-2c4a9f18162e",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C67",
+      "claim": "TLE1/2 may participate in the degradation of Tbx6 via protein-protein interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Groucho-binding motif of Ripply2 is also required for binding to Tbx6, indicating that TLE1/2 may participate in the degradation of Tbx6 via protein-protein interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observation that the WRPW motif (which binds TLE) is required for Tbx6 binding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "52014a71-9e91-4576-af1b-fb9c0854b620",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C68",
+      "claim": "Mass spectrometry analysis revealed TLE in the Ripply2-Tbx6 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analysis also revealed TLE in the Ripply2-Tbx6 complex, possibly reflecting the involvement of TLE in Tbx6 degradation in the PSM, but its molecular function in protein degradation remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "3566a642-ce17-4219-9a9a-72c94aeac5fc",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C69",
+      "claim": "Ripply2 can recruit the 26S proteasome subunit in ES cells without PSM-induction.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that Ripply2 can recruit the 26S proteasome subunit in ES cells without PSM-induction (Figure 3E), even though the Ripply2-mediated T-box factor degradation was found to be a highly context-dependent event.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoprecipitation data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "72739b9f-1055-40d1-965b-24f282946b74",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C70",
+      "claim": "Ripply2-mediated T-box factor degradation is a highly context-dependent event.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that Ripply2 can recruit the 26S proteasome subunit in ES cells without PSM-induction (Figure 3E), even though the Ripply2-mediated T-box factor degradation was found to be a highly context-dependent event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations that Tbx6 degradation occurs only in PSM tissue and not in other contexts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "c57a22f8-b3d1-4034-b768-8b20672d052d",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C71",
+      "claim": "There are other factor(s), possibly cell-specific E3 ligases, that help to down-regulate Tbx6 in PSM tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that other than proteasomes, there are other factor(s), possibly cell-specific E3 ligases, that help to down-regulate Tbx6 in PSM tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the observation that Tbx6 degradation is context-dependent and requires PSM-specific factors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "6b0ba974-dfef-47a6-842c-0c7983cc6345",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C72",
+      "claim": "A PSM-specific E3 ligase must be induced and functions in Tbx6 ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Ripply2 is not involved in the ubiquitination step and only in the degradation step of Tbx6, indicating that a PSM-specific E3 ligase must be induced and functions in Tbx6 ubiquitination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the observation that Tbx6 ubiquitination increases in PSM-fated cells even without Ripply2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "874e4c06-a3fe-423a-bc38-e8f8c4655da4",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C73",
+      "claim": "The T-box spans 180-200 amino acid residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The T-box, which spans 180\u2013200 amino acid residues, is a relatively large domain for the requirement of well-known DNA binding functions, suggesting that other functions likely depend on the T-box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the T-box domain structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "bd434781-963a-4037-ba77-39ebe2947473",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C74",
+      "claim": "The T-box domain was confirmed to be necessary and sufficient for both Ripply2-binding and Tbx6 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the T-box domain was confirmed to be necessary and sufficient for both Ripply2-binding and Tbx6 degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Figures 1C, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "2c5000e4-48bb-40bc-9a20-8b0a16b886ca",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C75",
+      "claim": "T (Brachyury) has been found to be degraded by Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides Tbx6, other T-box family transcriptional factors, such as T (Brachyury), have also been found to be degraded by Ripply2 (Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Zhao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "e6133270-9a18-4e78-b57c-47abc20b8a46",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C76",
+      "claim": "Zebrafish tbx6 protein has been reported to be destabilized via ripply1/2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish tbx6 protein has been reported to be destabilized via ripply1/2 expression (Wanglar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Wanglar et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "01004b61-8134-46e9-b955-fdff974f5833",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C77",
+      "claim": "The T-box dependent degradation pathway is conserved among T-box family factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies support the idea that the T-box dependent degradation pathway is conserved among T-box family factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from observations that multiple T-box factors are degraded via Ripply proteins across species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "398f565b-6e28-4e5b-8502-2aa78683adf9",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C78",
+      "claim": "The domain of 124-152 aa in the T-box was found to be necessary for Tbx6 degradation in chimera mouse experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The domain of 124 ~ 152 aa in the T-box was found to be necessary for Tbx6 degradation in our chimera mouse experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by chimera experiment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "702a30e9-8f2f-4f26-9489-e13f96c68242",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C79",
+      "claim": "Tbx6\u0394124-152 did not lose its ability to bind Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Tbx6\u0394124-152 did not lose its ability to bind Ripply2, indicating that this region regulates degradation not by Ripply2-Tbx6 interaction but through providing a critical protein degradation point, such as a ubiquitin-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunoprecipitation and GST pull-down data shown in Figure 6J and 6K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "12abf3b7-e608-4b04-b8cf-31ba9585fc93",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C80",
+      "claim": "The 124-152 aa region regulates degradation through providing a critical protein degradation point, such as a ubiquitin-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Tbx6\u0394124-152 did not lose its ability to bind Ripply2, indicating that this region regulates degradation not by Ripply2-Tbx6 interaction but through providing a critical protein degradation point, such as a ubiquitin-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the observation that this region is required for degradation but not for Ripply2 binding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "114179c7-22fe-4953-b7b5-38ee547151f6",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C81",
+      "claim": "No lysine residue or ubiquitin-binding domain was found in the 124-152 aa region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no lysine residue or ubiquitin-binding domain was found in the 124 ~ 152 aa region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis of the 124-152 aa region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "052305e3-1f93-44af-91e6-3773cce72e91",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C82",
+      "claim": "The 124-152 aa T-box region likely contains an unusual ubiquitylation site or a specific factor may be required for the degradation of T-box factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that this T-box region likely contains an unusual ubiquitylation site or a specific factor may be required for the degradation of T-box factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the observation that this region is required for degradation but lacks typical ubiquitination sites.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "ac4ff8f9-b32e-4500-ac3a-46dd664feb34",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C83",
+      "claim": "Somites form periodically from the anterior end of the PSM toward the posterior direction every 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "During somitogenesis, somites form periodically from the anterior end of the PSM toward the posterior direction every 2 hr, which coordinates a balance between maintenance of the PSM and differentiation of epithelial somites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about somitogenesis timing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "6636494e-dff1-418d-b7fd-c223976171f7",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C84",
+      "claim": "The expression of Tbx6 starts from the progenitors of the posterior mesoderm and extends to the anterior part of presomitic mesoderm (PSM).",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Tbx6 starts from the progenitors of the posterior mesoderm and extends to the anterior part of presomitic mesoderm (PSM), then progressively regresses from the anterior edge of its expression domain when a new somite is formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Tbx6 expression dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "baac28c8-c625-4774-9e83-b43e4f496f17",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C85",
+      "claim": "Tbx6 expression progressively regresses from the anterior edge of its expression domain when a new somite is formed.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Tbx6 starts from the progenitors of the posterior mesoderm and extends to the anterior part of presomitic mesoderm (PSM), then progressively regresses from the anterior edge of its expression domain when a new somite is formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Tbx6 expression dynamics during somitogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "4d68280c-5b31-40e1-9ea2-830a063130d1",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C86",
+      "claim": "The temporal periodicity of somitogenesis is established in the posterior PSM via the function of a molecular clock.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal periodicity of somitogenesis is established in the posterior PSM via the function of a so-called molecular clock, which is operated by complex gene regulatory networks under the control of three major signaling pathways, Notch, FGF and Wnt (Hubaud and Pourqui\u00e9, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Hubaud and Pourqui\u00e9, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "573a5af2-a3fb-4d4e-ad37-5b2d85f8e559",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C87",
+      "claim": "The molecular clock is operated by complex gene regulatory networks under the control of three major signaling pathways: Notch, FGF and Wnt.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal periodicity of somitogenesis is established in the posterior PSM via the function of a so-called molecular clock, which is operated by complex gene regulatory networks under the control of three major signaling pathways, Notch, FGF and Wnt (Hubaud and Pourqui\u00e9, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Hubaud and Pourqui\u00e9, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b46da23e-8216-430a-b994-1763b93d66c5",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C88",
+      "claim": "The Tbx6-Mesp2-Ripply2 reciprocal regulation successively defines the position of the next anterior border of Mesp2.",
+      "claim_type": "EXPLICIT",
+      "source": "This Tbx6-Mesp2-Ripply2 reciprocal regulation is the spatial mechanism that successively defines the position of the next anterior border of Mesp2, by which the metronomic segmented somites with determined size are correctly generated (Morimoto et al., 2007; Takahashi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Morimoto et al., 2007 and Takahashi et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "d734f4ea-7472-47f8-837b-0fec270fe04d",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C89",
+      "claim": "The negative feedback loop of Ripply2-Tbx6 for the termination of Mesp2 activity during each somitic cycle is the fundamental process to create the spatial periodicity of the segmented somites in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative feedback loop of Ripply2-Tbx6 for the termination of Mesp2 activity during each somitic cycle is the fundamental process to create the spatial periodicity of the segmented somites in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the regulatory mechanism of somitogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "79e0cdbb-0121-42eb-bcae-af697c2ae393",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C90",
+      "claim": "The segmentation boundary is defined by the Tbx6 expression domain, whose anterior limit is determined by Tbx6 protein destabilization via Ripply2.",
+      "claim_type": "EXPLICIT",
+      "source": "The segmentation boundary is defined by the Tbx6 expression domain, whose anterior limit is determined by Tbx6 protein destabilization via Ripply2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the role of Ripply2 in defining segment borders.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "0fa6d6d2-baa8-4893-97de-a4ce0e63dbe0",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C91",
+      "claim": "The population of Ripply2+ cells in the PSM is very low (only approximately 1000-3000 cells/embryo, depending on somitic phases).",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is difficult to use PSM tissue from embryos for biochemical analyses because the population of Ripply2+ cells in the PSM is very low (only approximately 1000 ~ 3000 cells/embryo, depending on somitic phases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge about the limited number of Ripply2-expressing cells in the PSM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "6e92419a-fe82-4cc6-a151-197c69d772b2",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C92",
+      "claim": "Zebrafish and Xenopus ripply family factors interact with the T-box domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We presumed that Ripply2 and Tbx6 interacted directly, as reported for Zebrafish and Xenopus (Hitachi et al., 2009; Kawamura et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Hitachi et al., 2009 and Kawamura et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "1c6b0c9d-dae8-48d2-a986-0f596c8e3795",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C93",
+      "claim": "The Ripply homology domain (amino acids FPIQ) is implicated in interaction with the T-box domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a so-called Ripply homology domain (amino acids FPIQ), implicated in interaction with the T-box domain (Kawamura et al., 2008), suggested that mouse Ripply2 also has the ability to bind Tbx6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Kawamura et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "87bfe133-0674-4d5d-a8e7-2ab5fa5ecc3b",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C94",
+      "claim": "In zebrafish and Xenopus, ripply family factors repress mesp by suppressing the transcriptional activity of tbx6 as a transcriptional-repressor together with the Groucho co-repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish and Xenopus, ripply family factors repress mesp by suppressing the transcriptional activity of tbx6 as a transcriptional-repressor together with the Groucho co-repressor (Kawamura et al., 2005; Kawamura et al., 2008; Kondow et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Kawamura et al., 2005, 2008 and Kondow et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "4354e57f-fec7-46e6-b318-b4beeac36607",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C95",
+      "claim": "Zebrafish tbx6 directly induces the expression of ripply without mediating mesp function.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish tbx6 directly induces the expression of ripply without mediating mesp function, after which ripply1/2 in turn suppresses the expression of both tbx6 and mesp (Wanglar et al., 2014; Windner et al., 2015; Yabe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Wanglar et al., 2014, Windner et al., 2015, and Yabe et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "987ed644-526a-4d92-8938-f67872d51d85",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C96",
+      "claim": "Mouse Ripply2 requires Mesp2 for transcriptional activation in addition to Tbx6.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, mouse Ripply2 requires Mesp2 for transcriptional activation in addition to Tbx6 (Dunty et al., 2008; Morimoto et al., 2007), and suppresses Mesp2 function through destabilization of Tbx6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies by Dunty et al., 2008 and Morimoto et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "e4951ca0-5cd1-4edb-ba65-a6c1404f09d0",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C97",
+      "claim": "Ripply factors are not completely functionally conserved within vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is no evidence of a similar repression mechanism in mice, and we suggested the negative regulation in mouse to be mediated by the destabilization of T-box proteins (Oginuma et al., 2008; Zhao et al., 2015), arguing that Ripply factors are not completely functionally conserved within vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Ripply functions differ between zebrafish/Xenopus and mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "c28b8674-af70-4e07-9ec6-e12d61b301a1",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C98",
+      "claim": "The Tbx6 expression domain was elongated by one-somite-length with MG132 treatment for 2 hr in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is in agreement with the in vivo discovery that the Tbx6 expression domain was elongated by one-somite-length with MG132 treatment for 2 hr (Oginuma et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study by Oginuma et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "ed9668e2-19e8-483c-881c-b76c10fc548b",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "claim_id": "C99",
+      "claim": "Tbx6\u0394124~152aa has no transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As Tbx6\u0394124-152aa-venus has no transcriptional activity (Figure 6\u2014figure supplement 1), we selected ES clones in which Tbx6-venus was heterozygously knocked-in and an endogenous Tbx6 allele was intact for chimera production (Tbx6Tbx6(\u0394124-152aa)-venus/+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by luciferase assay data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eb37f490-8a0c-408e-84b5-2078e012d167",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ripply2 directly binds to Tbx6 in cultured cells through the T-box domain, but this interaction does not lead to Tbx6 destabilization in HEK293T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 provide strong experimental evidence from immunoprecipitation and GST pull-down assays demonstrating direct Ripply2-Tbx6 interaction via the T-box domain. Claim C19 shows that despite this interaction, Tbx6 remains stable in cultured cells, indicating additional factors are required for degradation. The data from Figure 1A-C consistently support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "a3eacc99-c3d9-435e-8541-30421ac67955",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both the FPIQ and WRPW motifs in Ripply2 are required for Tbx6 binding and subsequent degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C34-C37 demonstrate through multiple experimental systems (HEK293T cells and PSM-fated ES cells) that deletion of either FPIQ or WRPW motifs abolishes Tbx6 binding and prevents degradation. The data from Figures 1D, 3B-C consistently support that both motifs are necessary for Ripply2 function in Tbx6 degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "bc5095fa-dcd1-4b13-9229-89d43df03352",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A PSM-fated ES cell differentiation system successfully recapitulates Tbx6 expression and Ripply2-mediated degradation observed in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 provide temporal data showing Tbx6-venus expression peaks at day 3 of PSM induction and decreases upon Ripply2 induction (3-12 hr post-Dox). The system reproduces the in vivo degradation kinetics, as shown in Figures 1G-R and 2D-N. This represents a successful experimental model for studying the degradation mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "6548310c-0857-4b60-ac38-5d0ebb4ec14b",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Tbx6 degradation occurs through the proteasome-mediated pathway, as demonstrated by MG132 inhibition experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 shows that MG132 (proteasome inhibitor) prevents Ripply2-dependent Tbx6 reduction. Claims C28-C29 demonstrate accumulation of ubiquitinated Tbx6 only in the presence of MG132. The data from Figures 2O-S and 2U provide consistent evidence that proteasome activity is required for Tbx6 degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "57e51970-1a12-413a-ab0c-6d47c8ee59dc",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ripply2 recruits the 26S proteasome complex to mediate Tbx6 degradation, as identified by mass spectrometry and confirmed by immunoprecipitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 reports mass spectrometry identification of all 26S proteasome subunits as Ripply2-interacting proteins (Figure 4D, Supplementary file 1). Claim C41 confirms this interaction by immunoprecipitation (Figure 4E). Claim C69 shows this interaction occurs even without PSM induction, though degradation is context-dependent. The convergent evidence strongly supports Ripply2's role in recruiting proteasomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "8f181187-0131-435b-9f06-08cf16031224",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tbx6 can be ubiquitinated independently of Ripply2 in PSM-fated cells, with ubiquitination levels increasing upon PSM induction, suggesting Ripply2 functions primarily in the degradation step rather than ubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C32 demonstrate through immunoprecipitation (Figures 2U, 2\u2014figure supplement 3) that Tbx6 ubiquitination occurs without Ripply2 and increases in PSM-fated cells. Claim C31 correctly infers that Ripply2 acts at the degradation step. However, claim C72 is speculative about a PSM-specific E3 ligase, which was not identified in the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "fac42935-5307-4cca-b5ae-ed643587dbb1",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The T-box domain is necessary and sufficient for Tbx6 degradation in vivo, with amino acids 124-152 being essential for this process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 provide systematic BAC transgenic data (Figure 5) showing that: (1) venus alone is stable (C43), (2) full-length Tbx6-venus is degraded (C44), (3) deletion of T-box prevents degradation (C45-C46), (4) T-box alone is sufficient for degradation (C48), and (5) deletion up to aa124 prevents degradation while deletion up to aa152 allows it (C50-C51). This comprehensive deletion analysis strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b255c366-dc96-4a2c-9e5a-322a4d5b451c",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chimera experiments confirm that amino acids 124-152 in the T-box are required for Tbx6 degradation in vivo, with mutant Tbx6\u0394124-152 remaining stable while endogenous Tbx6 is degraded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 demonstrate through chimera analysis (Figure 6D-H) that Tbx6\u0394124-152aa-venus is stabilized and expands anteriorly, while endogenous Tbx6 shows normal degradation at the Ripply2 boundary. This provides strong in vivo validation that the 124-152 aa region is essential for degradation. The chimera approach elegantly controls for developmental context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The 124-152 aa region is required for Tbx6 degradation but is not the sole Ripply2-binding motif, suggesting this region contains a degradation-specific motif independent of Ripply2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 show that Tbx6\u2081\u208b\u2081\u2082\u2084 cannot bind Ripply2 while Tbx6\u2081\u208b\u2081\u2085\u2082 can (Figure 6J). However, claim C59 demonstrates that Tbx6\u0394124-152 retains Ripply2 binding (Figure 6J-K), indicating multiple binding sites. Claims C61 and C79-C80 correctly infer that the 124-152 region functions in degradation independent of binding. The data support this conclusion, though the exact mechanism remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "6fa5c80b-7e98-431d-ab7d-ceba2b18f37c",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 124-152 aa region lacks typical lysine residues or ubiquitin-binding domains, suggesting it may contain an unusual ubiquitylation site or require a specific degradation factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C81 reports sequence analysis showing no lysine or ubiquitin-binding domains in the 124-152 region. Claim C82 speculates about unusual ubiquitylation sites or specific factors. While the sequence analysis is straightforward, the mechanistic interpretation is speculative without direct experimental evidence. Additional biochemical characterization would be needed to support these hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "dc31a646-bb05-4dca-9639-628e448943de",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ripply2-mediated T-box factor degradation is highly context-dependent, occurring specifically in PSM tissue but not in other tissues such as heart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 shows that ectopic Ripply2 in cardiac mesoderm does not affect Tbx18/Tbx5 stability (Figure 1\u2014figure supplement 2). Claims C21 and C70 correctly infer tissue-specificity. Claim C71 speculates about PSM-specific E3 ligases but lacks direct evidence. The tissue-specificity is well-documented, though the molecular basis remains incompletely understood.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "97b2a7e5-13ff-43b9-84cc-7b31c5eda41e",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Smurf1/2 E3 ligases are not responsible for Tbx6 degradation in the PSM, as Smurf1/2-dKO embryos show normal Tbx6 expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 reports that Smurf1/2-dKO embryos do not show anterior expansion of Tbx6 expression (Figure 2\u2014figure supplement 4), ruling out these E3 ligases as responsible for Tbx6 degradation. This is a clear negative result that helps narrow the search for the relevant E3 ligase. The sample size and controls appear adequate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "f570b85c-fcad-4354-bb5e-54c72d3483de",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TLE1/2 co-repressors do not affect Tbx6 transcriptional activity in mouse, but may participate in Tbx6 degradation through protein-protein interactions, as the WRPW motif is required for Tbx6 binding and TLE was detected in the Ripply2-Tbx6 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C18 shows no effect of Ripply2/TLE1 on Tbx6 transcriptional activity (Figure 1\u2014figure supplement 1). Claim C66 demonstrates WRPW is required for Tbx6 binding. Claim C68 reports TLE detection by mass spectrometry. However, claim C67 is speculative about TLE's role in degradation without direct functional evidence. The involvement of TLE remains unclear and requires additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "de970799-023e-47e0-92d8-afea8bd5fd5c",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tbx6\u0394124-152aa lacks transcriptional activity, necessitating the use of heterozygous knock-in ES cells for chimera experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 reports luciferase assay data (Figure 6\u2014figure supplement 1) showing Tbx6\u0394124-152aa has no transcriptional activity. This finding is important for experimental design, explaining why heterozygous rather than homozygous ES cells were used for chimera production. The data appear straightforward and the experimental logic is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing the somitogenesis regulatory network involving Tbx6, Mesp2, and Ripply2, based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C5-C10, C83-C90) summarize established knowledge about somitogenesis, the segmentation clock, and the Tbx6-Mesp2-Ripply2 regulatory network. All are supported by appropriate citations to prior work. These provide essential context for the current study but do not represent new findings. The citations appear accurate and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "18929a09-bd36-49a8-8d8c-140532e8e973",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work on Ripply-mediated degradation of T-box factors across species, establishing evolutionary context and mechanistic differences between zebrafish/Xenopus and mouse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C11-C12, C75-C77, C92-C97) summarize prior findings on Ripply function across species. All are supported by appropriate citations. Claims C94-C97 correctly note mechanistic differences between species (transcriptional repression in zebrafish/Xenopus vs. protein degradation in mouse). These provide important comparative context but represent prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    },
+    {
+      "id": "f9546245-a29d-4278-af77-44561fb23b56",
+      "content_id": "1f590093-228b-46ad-9c9d-bcf964454781",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Additional background claims about proteasome function, T-box domain structure, and prior MG132 experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide supporting background information: C40 (proteasome as main nuclear protein degradation pathway), C64/C98 (prior MG132 experiments), C73 (T-box domain size), and C91 (limited Ripply2+ cell numbers in PSM). All are appropriately cited or represent established knowledge. These support the rationale for the current study but are not new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:38:35.563464Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d09b63d-01c9-41c7-ac93-a3d11d3a4667",
+      "result_id": "eb37f490-8a0c-408e-84b5-2078e012d167"
+    },
+    {
+      "claim_id": "ffba7ddb-4acf-4d2f-be8b-7fb4a3b0ead7",
+      "result_id": "eb37f490-8a0c-408e-84b5-2078e012d167"
+    },
+    {
+      "claim_id": "ec8cbcc8-8ca8-465d-9882-9a1f31515f93",
+      "result_id": "eb37f490-8a0c-408e-84b5-2078e012d167"
+    },
+    {
+      "claim_id": "8b857aa1-55c5-4012-a01a-d95931af42ed",
+      "result_id": "eb37f490-8a0c-408e-84b5-2078e012d167"
+    },
+    {
+      "claim_id": "6106ac78-5dea-4c29-a26e-a454a4c9576a",
+      "result_id": "eb37f490-8a0c-408e-84b5-2078e012d167"
+    },
+    {
+      "claim_id": "3705e20c-ce31-47f2-b138-380bcbb3967c",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "387a587e-b582-42ad-9438-aeb96312f1dc",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "470be0dd-3c4c-423b-8854-80e62fd39af6",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "4cb3b4c0-0927-404d-899c-a353a63b2012",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "c8470f9a-8cd4-4084-bc22-603b16eefa9d",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "05e3fe5e-e4a9-4c52-93d8-80ed9c09926b",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "511b8668-c991-4c13-8d86-92a882b1805c",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "5cae2b55-9025-4003-ab46-199b4e45a4f7",
+      "result_id": "a3eacc99-c3d9-435e-8541-30421ac67955"
+    },
+    {
+      "claim_id": "f45fb72c-f83b-4380-9314-edd8dfb62266",
+      "result_id": "bc5095fa-dcd1-4b13-9229-89d43df03352"
+    },
+    {
+      "claim_id": "a7c8c802-8bd7-4057-988e-ac1803d0ac6f",
+      "result_id": "bc5095fa-dcd1-4b13-9229-89d43df03352"
+    },
+    {
+      "claim_id": "9ba29c60-dcf4-47b6-a030-3ebfa38cf63f",
+      "result_id": "bc5095fa-dcd1-4b13-9229-89d43df03352"
+    },
+    {
+      "claim_id": "3d6d2114-567d-4872-a8db-d3f187762999",
+      "result_id": "bc5095fa-dcd1-4b13-9229-89d43df03352"
+    },
+    {
+      "claim_id": "74040bd2-32f8-4c5f-83af-c9eb80f11f75",
+      "result_id": "bc5095fa-dcd1-4b13-9229-89d43df03352"
+    },
+    {
+      "claim_id": "0b216e2b-826f-47ba-95b3-51767d223556",
+      "result_id": "6548310c-0857-4b60-ac38-5d0ebb4ec14b"
+    },
+    {
+      "claim_id": "e43fb8a6-bc43-4e56-847b-8e5067b50eae",
+      "result_id": "6548310c-0857-4b60-ac38-5d0ebb4ec14b"
+    },
+    {
+      "claim_id": "2ca0ddc7-1057-4fe7-911f-afcc5d98684f",
+      "result_id": "6548310c-0857-4b60-ac38-5d0ebb4ec14b"
+    },
+    {
+      "claim_id": "33f147e3-1a0c-4df6-bd3e-c9a9438944ad",
+      "result_id": "6548310c-0857-4b60-ac38-5d0ebb4ec14b"
+    },
+    {
+      "claim_id": "b124fdaa-f784-4886-8c8d-8653cbf37817",
+      "result_id": "6548310c-0857-4b60-ac38-5d0ebb4ec14b"
+    },
+    {
+      "claim_id": "520d6a31-a4d7-418c-ad61-fdf27adeca8a",
+      "result_id": "57e51970-1a12-413a-ab0c-6d47c8ee59dc"
+    },
+    {
+      "claim_id": "d287cac1-8bb2-415d-a589-ffb2aea7ef19",
+      "result_id": "57e51970-1a12-413a-ab0c-6d47c8ee59dc"
+    },
+    {
+      "claim_id": "c6f1cb86-09f6-4dab-98b5-170246a9220c",
+      "result_id": "57e51970-1a12-413a-ab0c-6d47c8ee59dc"
+    },
+    {
+      "claim_id": "c006fb37-fd83-4087-8ae5-0fb084c7e2c2",
+      "result_id": "57e51970-1a12-413a-ab0c-6d47c8ee59dc"
+    },
+    {
+      "claim_id": "1b08c03b-897c-4723-943b-9b785851ca59",
+      "result_id": "57e51970-1a12-413a-ab0c-6d47c8ee59dc"
+    },
+    {
+      "claim_id": "3566a642-ce17-4219-9a9a-72c94aeac5fc",
+      "result_id": "57e51970-1a12-413a-ab0c-6d47c8ee59dc"
+    },
+    {
+      "claim_id": "f5ba1916-e34d-4077-a949-2771081264a3",
+      "result_id": "8f181187-0131-435b-9f06-08cf16031224"
+    },
+    {
+      "claim_id": "bd331cb3-7e52-4dad-83ad-a6f58d542b86",
+      "result_id": "8f181187-0131-435b-9f06-08cf16031224"
+    },
+    {
+      "claim_id": "358c5197-47fe-456d-ad06-b9b08c83ada0",
+      "result_id": "8f181187-0131-435b-9f06-08cf16031224"
+    },
+    {
+      "claim_id": "6b0ba974-dfef-47a6-842c-0c7983cc6345",
+      "result_id": "8f181187-0131-435b-9f06-08cf16031224"
+    },
+    {
+      "claim_id": "001a03d9-05f9-4837-861f-38c10f6d5b6d",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "5540b371-db5d-48fa-83b4-a00981f01bff",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "ceddbfd4-5b13-4327-9c05-2cacdce0b1d7",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "c4b47c94-b5e0-4495-a8cb-d9041f19d52e",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "4ff96443-6f93-497f-9bf7-ee5763584b7d",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "5b4c9b0b-d8ba-4d97-bed7-f5dd73f8f95a",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "43d0cfb1-69b3-4650-b0e6-89c6dc0e706b",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "3f32f0c8-df3f-413d-ba2f-000d91e855b7",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "a46ecb8e-286f-48d6-afa8-6efbf431c8be",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "13c6951c-2b09-4941-82d4-45033a635898",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "71fc8d1b-9774-4ea3-b937-ecbc61c6ba73",
+      "result_id": "fac42935-5307-4cca-b5ae-ed643587dbb1"
+    },
+    {
+      "claim_id": "0c13017d-8afd-47ae-b464-f24bbc55c252",
+      "result_id": "b255c366-dc96-4a2c-9e5a-322a4d5b451c"
+    },
+    {
+      "claim_id": "bf8cf643-dc45-45c3-bbab-1df0e4bf4566",
+      "result_id": "b255c366-dc96-4a2c-9e5a-322a4d5b451c"
+    },
+    {
+      "claim_id": "d126db26-9e1e-4158-91b2-a51693408cfa",
+      "result_id": "b255c366-dc96-4a2c-9e5a-322a4d5b451c"
+    },
+    {
+      "claim_id": "398f565b-6e28-4e5b-8502-2aa78683adf9",
+      "result_id": "b255c366-dc96-4a2c-9e5a-322a4d5b451c"
+    },
+    {
+      "claim_id": "b861ba1e-c0fb-4f83-8218-33164ff233c6",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "0bef2a13-ff10-49a7-bf4d-e2328f4816c2",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "4b03c863-3959-4558-9a0d-0d0527185d87",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "64ef421a-a736-4806-9543-b44dcde720e7",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "49263055-9c33-48da-b1b2-da51fa6b2aee",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "4ec69ccc-d0e3-4e28-aa67-ed9674943610",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "702a30e9-8f2f-4f26-9489-e13f96c68242",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "12abf3b7-e608-4b04-b8cf-31ba9585fc93",
+      "result_id": "31db50d1-6b5f-432b-ba3d-8cc16f8373ac"
+    },
+    {
+      "claim_id": "114179c7-22fe-4953-b7b5-38ee547151f6",
+      "result_id": "6fa5c80b-7e98-431d-ab7d-ceba2b18f37c"
+    },
+    {
+      "claim_id": "052305e3-1f93-44af-91e6-3773cce72e91",
+      "result_id": "6fa5c80b-7e98-431d-ab7d-ceba2b18f37c"
+    },
+    {
+      "claim_id": "78ada457-828f-4daa-acba-bb4891a3b9b8",
+      "result_id": "dc31a646-bb05-4dca-9639-628e448943de"
+    },
+    {
+      "claim_id": "47fc92b6-cfc4-49b9-a0f0-a0743126bbe6",
+      "result_id": "dc31a646-bb05-4dca-9639-628e448943de"
+    },
+    {
+      "claim_id": "72739b9f-1055-40d1-965b-24f282946b74",
+      "result_id": "dc31a646-bb05-4dca-9639-628e448943de"
+    },
+    {
+      "claim_id": "c57a22f8-b3d1-4034-b768-8b20672d052d",
+      "result_id": "dc31a646-bb05-4dca-9639-628e448943de"
+    },
+    {
+      "claim_id": "7b8f3f33-3c32-4152-a508-e348b78dddc4",
+      "result_id": "97b2a7e5-13ff-43b9-84cc-7b31c5eda41e"
+    },
+    {
+      "claim_id": "8a9f3cb7-03e2-4ca0-8f5e-f04fc09f8fe7",
+      "result_id": "f570b85c-fcad-4354-bb5e-54c72d3483de"
+    },
+    {
+      "claim_id": "b5ceecca-663f-4ec5-9129-2482e48238d0",
+      "result_id": "f570b85c-fcad-4354-bb5e-54c72d3483de"
+    },
+    {
+      "claim_id": "0fb8ab9b-3f6b-45ae-ac46-2c4a9f18162e",
+      "result_id": "f570b85c-fcad-4354-bb5e-54c72d3483de"
+    },
+    {
+      "claim_id": "52014a71-9e91-4576-af1b-fb9c0854b620",
+      "result_id": "f570b85c-fcad-4354-bb5e-54c72d3483de"
+    },
+    {
+      "claim_id": "ed9668e2-19e8-483c-881c-b76c10fc548b",
+      "result_id": "de970799-023e-47e0-92d8-afea8bd5fd5c"
+    },
+    {
+      "claim_id": "ade146a6-c6bb-4be2-9825-845fe6c97f66",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "59f8aaca-4c48-4d5f-a766-427e624bfd31",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "32178a06-a779-4494-a82c-bb005cb7015f",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "f7803d11-0dd2-4ef4-9cbd-d9136e116f48",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "b3791dfb-d9ed-472f-8f10-e68d394012dd",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "87513000-79d8-4b15-aefc-1306975cd934",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "ac4ff8f9-b32e-4500-ac3a-46dd664feb34",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "6636494e-dff1-418d-b7fd-c223976171f7",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "baac28c8-c625-4774-9e83-b43e4f496f17",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "4d68280c-5b31-40e1-9ea2-830a063130d1",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "573a5af2-a3fb-4d4e-ad37-5b2d85f8e559",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "b46da23e-8216-430a-b994-1763b93d66c5",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "d734f4ea-7472-47f8-837b-0fec270fe04d",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "79e0cdbb-0121-42eb-bcae-af697c2ae393",
+      "result_id": "b6b51e26-c996-4bd5-88cf-2ee5b3efb17c"
+    },
+    {
+      "claim_id": "229b43a2-af43-42f9-bcc5-96cb30ddea03",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "3bf90a69-3933-4127-a64d-e923fd374c22",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "2c5000e4-48bb-40bc-9a20-8b0a16b886ca",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "e6133270-9a18-4e78-b57c-47abc20b8a46",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "01004b61-8134-46e9-b955-fdff974f5833",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "6e92419a-fe82-4cc6-a151-197c69d772b2",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "1c6b0c9d-dae8-48d2-a986-0f596c8e3795",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "87bfe133-0674-4d5d-a8e7-2ab5fa5ecc3b",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "4354e57f-fec7-46e6-b318-b4beeac36607",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "987ed644-526a-4d92-8938-f67872d51d85",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "e4951ca0-5cd1-4edb-ba65-a6c1404f09d0",
+      "result_id": "18929a09-bd36-49a8-8d8c-140532e8e973"
+    },
+    {
+      "claim_id": "6cbb2b68-1033-4eea-9767-3849febc70e7",
+      "result_id": "f9546245-a29d-4278-af77-44561fb23b56"
+    },
+    {
+      "claim_id": "b6e0a9d4-9f41-4189-b19b-0b02329a0c54",
+      "result_id": "f9546245-a29d-4278-af77-44561fb23b56"
+    },
+    {
+      "claim_id": "874e4c06-a3fe-423a-bc38-e8f8c4655da4",
+      "result_id": "f9546245-a29d-4278-af77-44561fb23b56"
+    },
+    {
+      "claim_id": "0fa6d6d2-baa8-4893-97de-a4ce0e63dbe0",
+      "result_id": "f9546245-a29d-4278-af77-44561fb23b56"
+    },
+    {
+      "claim_id": "c28b8674-af70-4e07-9ec6-e12d61b301a1",
+      "result_id": "f9546245-a29d-4278-af77-44561fb23b56"
+    }
+  ],
+  "comparisons": []
+}

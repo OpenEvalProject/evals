@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The HTLV-1 provirus forms reproducible chromatin contacts with the host genome detected by q4C in 9 of 10 clones examined, with a median of 3 peaks per clone, ranging from 12.9 kb to 1.4 Mb from the provirus, with significantly more peaks downstream than upstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by the q4C data presented in Figure 1B-D and supplementary figures. The statistical analyses (chi-squared test for directional bias, Wilcoxon test for distance comparison) are appropriate and support the quantitative claims about peak distribution and distance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The chromatin contacts between the HTLV-1 provirus and host genome are monoallelic and occur exclusively in cis on the infected chromosome, as demonstrated by allelic imbalance analysis of heterozygous SNPs in q4C reads extending at least 4 Mb from the provirus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by the allelic imbalance analysis shown in Figure 2B-C and supplementary figures. The haplotype-specific analysis using heterozygous SNPs provides strong evidence for cis-specific contacts, though the 4 Mb range represents the limit of detection rather than a biological boundary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CTCF binding sites are significantly enriched at provirus-host chromatin contact sites, with ~50% of q4C peaks overlapping at least one CTCF-BS, preferentially in convergent or tandem orientation (80%), and the presence and number of CTCF-BS correlate with peak height and frequency of contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are well-supported by the integrated ChIP-seq and q4C analysis shown in Figure 3A-D. The statistical tests (Fisher's exact test, Wilcoxon test, Spearman's test, Pearson's correlation) are appropriate and demonstrate significant enrichment of CTCF-BS at contact sites. The orientation analysis is consistent with published literature on CTCF-mediated looping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C26"
+    ],
+    "result": "CRISPR-Cas9 knockout of the proviral CTCF binding site resulted in loss of 5 of 8 observed chromatin contacts, with 3 of the 5 lost contacts overlapping a CTCF-BS in the host genome, demonstrating that some chromatin contacts depend on CTCF binding to the provirus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C26 are supported by the CRISPR-Cas9 knockout experiments shown in Figure 3E-F. The functional validation in two different clones (ED and TBX4B) strengthens the conclusion. However, the fact that not all contacts were lost and some contacts lack CTCF-BS suggests additional mechanisms are involved, which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C27"
+    ],
+    "result": "The HTLV-1 provirus causes bidirectional transcriptional upregulation in the immediately flanking host genome in all clones examined, with predominant antisense transcription upstream and same-sense transcription downstream, where same-sense transcription is specific to clones with high plus-strand expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C27 are supported by the RNA-seq data shown in Figure 4A-D and supplementary figures. The bidirectional pattern is consistent across clones, and the correlation with Tax expression (Figure 4D) provides mechanistic insight. The analysis appropriately distinguishes between high and low Tax-expressing clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C28",
+      "C85"
+    ],
+    "result": "The HTLV-1 provirus causes clone-specific transcription at non-contiguous loci up to >300 kb from the integration site, including aberrant splicing producing putative novel transcripts, demonstrating that the provirus can alter transcription both within and between genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61, C28, and C85 are supported by the RNA-seq data showing non-contiguous transcription in specific clones (e.g., clone 8.8 with TBC1D4, clone 3.60 with SULT1B1) as shown in Figure 4B and supplementary figures. The splice junction analysis (Figure 4\u2014figure supplement 2) provides evidence for aberrant splicing. Each clone shows a unique pattern, supporting the clone-specific nature of these effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C86"
+    ],
+    "result": "Clone-specific transcripts are predominantly monoallelic and derived from the infected chromosome, as demonstrated by allelic imbalance analysis of heterozygous SNPs in RNA-seq reads, while non-upregulated transcripts show biallelic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C86 are supported by the haplotype-specific RNA-seq analysis shown in Figure 5A-D. The allelic imbalance analysis demonstrates that clone-specific upregulated transcripts are monoallelic (AI approaching 0.5) and derived from the infected chromosome, while shared transcripts are biallelic. The statistical analysis (Wilcoxon test, p=6.7\u00d710\u207b\u00b9\u00b2) is appropriate and highly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C29",
+      "C100"
+    ],
+    "result": "HTLV-1 causes insertional mutagenesis up to the megabase range in the host genome, with chromatin contacts extending to 1.4 Mb and affecting >10\u2074 persistently-maintained T-cell clones in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C29, and C100 are supported by the q4C data showing contacts up to 1.4 Mb (Figure 1D) combined with established knowledge that typical hosts carry 10\u2074-10\u2075 infected clones (C11). The conclusion about megabase-range insertional mutagenesis is a reasonable inference from the data, though the functional consequences require further investigation as the authors acknowledge (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C87",
+      "C99"
+    ],
+    "result": "Chromatin looping between the provirus and host genome is an important mechanism underlying the observed abnormal transcription at distant loci, distinguishing HTLV-1 from other retroviruses like MLV that exploit pre-existing chromatin loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C87, and C99 represent inferences based on the combined q4C and RNA-seq data showing both chromatin contacts and transcriptional changes at the same loci. The correlation between contacts and transcriptional changes, along with the monoallelic nature of both phenomena on the infected chromosome, provides strong support for this mechanistic interpretation. The comparison with MLV (C96-C98) appropriately contextualizes the novelty of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In clone TBX4B, HTLV-1 integration between exons of PNPLA resulted in clone-specific high expression of this gene both upstream and downstream of the integration site in the same sense as the proviral plus-strand, suggesting transcription driven by the proviral enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by the integration site data and RNA-seq analysis for clone TBX4B shown in Figure 3F. The observation of same-sense transcription upstream of the 5' LTR provides evidence for enhancer-driven transcription, though this remains an inference rather than direct demonstration of enhancer activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C80",
+      "C101"
+    ],
+    "result": "Each infected T-cell clone has a unique pattern of chromatin contacts and transcription that depends on the proviral integration site and the presence of nearby CTCF binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C80, and C101 are supported by the clone-specific patterns observed in both q4C and RNA-seq data across all 10 clones examined (Figure 1B-C, Figure 4A, supplementary figures). The correlation between CTCF-BS density and contact frequency (C45) supports the role of CTCF-BS location in determining clone-specific patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Since HTLV-1 infects 10\u2074-10\u2075 different T-cell clones in a typical host, each with the provirus at a different genomic location, the virus deregulates tens of thousands of host genes in a typical infected host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is a reasonable inference based on the demonstrated clone-specific transcriptional changes (multiple genes per clone) combined with established knowledge about the number of infected clones per host (C11). However, this represents an extrapolation from in vitro clones to the in vivo situation, and the actual number of deregulated genes per host would depend on factors not directly measured in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Not all host chromatin contact sites contain CTCF binding sites, and certain q4C peaks remained detectable after CTCF knockout, consistent with findings that other chromatin-associated proteins can also mediate chromatin looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by the data showing that ~50% of peaks lack CTCF-BS (C39) and that some peaks persist after CTCF knockout (Figure 3E-F). The interpretation that other proteins may be involved is appropriately cautious and supported by citations to relevant literature (Schoenfelder et al., 2015; Phanstiel et al., 2017; Beagan et al., 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background information on CTCF function, chromatin organization, HTLV-1 biology, and the historical context of insertional mutagenesis in HTLV-1 pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 represent established knowledge about CTCF, chromatin organization, and HTLV-1 biology, supported by appropriate citations to the literature. These claims provide essential context for the study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Previous work by the authors demonstrated that CTCF binds to the HTLV-1 provirus and showed a single CTCF-dependent chromatin loop in a long-term in vitro T cell line using 3C, raising the hypothesis that CTCF bound to the provirus can form abnormal chromatin loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 accurately describe prior work by the authors (Satou et al., 2016) that motivated the current study. The hypothesis is appropriately framed as arising from these prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C81",
+      "C82",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion of established knowledge about genome organization, chromatin looping, retroviral insertional mutagenesis, and comparison with other retroviruses including MLV and foamy virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71, C81-C82, C88-C89, C91-C97, C106-C112 represent established knowledge and appropriate contextualization of the findings within the broader literature. These claims are well-supported by citations and provide important context for interpreting the significance of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The HTLV-1 provirus is present in a single copy per cell in the clones studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by citation to prior work (Cook et al., 2012) and illustrated in Figure 2A. This is an important control establishing that the observed effects are due to a single proviral integration site per clone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The provirus makes preferential contacts in cis with host chromatin at distances of at least 4 Mb from the provirus, though contacts may extend beyond this distance limited by the sensitivity of the q4C technique.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is an inference based on the allelic bias in q4C data (Figure 2B), while C74 appropriately acknowledges technical limitations. The 4 Mb range represents the limit of detection rather than a biological boundary, which is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C90"
+    ],
+    "result": "Proposed mechanisms for transcriptional deregulation and speculation about CTCF function, with acknowledgment that further work is needed to test these hypotheses and investigate functional consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79, C102-C105, and C90 represent speculative mechanisms and hypotheses for future investigation. While these are reasonable inferences based on the data and established knowledge, they are explicitly presented as speculation or postulates requiring further testing. The authors appropriately acknowledge these as areas for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Speculation that chance integration of MLV at particular loci enabled the virus to exploit normal chromatin loops present in the mouse genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is a speculative inference about MLV mechanisms based on work by Sokol et al. (2014). While plausible, this represents speculation about another virus system rather than a finding from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "HTLV-1 has the potential to disrupt host gene expression in cis at both contiguous and non-contiguous sites, in addition to the generic effects of Tax on host gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by the RNA-seq data showing both contiguous and non-contiguous transcriptional changes. The distinction from Tax-mediated effects (C111-C112) is appropriate, as the observed effects are clone-specific rather than generic across all infected cells.",
+    "result_type": "MAJOR"
+  }
+]

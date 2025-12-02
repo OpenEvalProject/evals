@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Accumulation of yEVenus protein in yeast has a mild fitness impact under optimal conditions. When expressed from a single-copy plasmid, yEVenus shows no detectable fitness cost, while high-copy expression (constituting ~3.7% of total proteome) causes a small but significant 2.5% fitness disadvantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C13, C14, and C15 are well-supported by experimental data with appropriate statistical testing (t-tests with p-values reported). The PAGE analysis (C15) provides quantitative proteome fraction data, and fitness measurements are based on multiple technical and biological replicates with confidence intervals reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C30",
+      "C31",
+      "C56",
+      "C91"
+    ],
+    "result": "Genome-wide genetic interaction screen identified 184 genes that modulate protein burden, with functional enrichment in translation, transcriptional control, mitochondria-related processes, and protein folding. Deletion of specific chaperone genes (FES1, SSE1, YDJ1, STI1) caused 2-4 fold increases in fitness costs of yEVenus overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SGA screen results (C19-C21, C30-C31) are supported by systematic experimental data with appropriate statistical cutoffs (\u03b5 = -0.05, p<0.05). Functional enrichment analysis (C20, C91) is properly conducted using established methods (topGO, Fisher's exact test with FDR correction). The magnitude of chaperone effects (C21) is clearly demonstrated in Figure 1E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C85"
+    ],
+    "result": "Partial inhibition of translation elongation by cycloheximide treatment elevated protein burden. Sub-inhibitory concentration (0.18 \u00b5g/ml) of cycloheximide led to a 3.7-fold increase in protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by experimental data with appropriate statistical testing (t-test, p<0.001) and multiple replicates (4 technical \u00d7 17 biological). The mechanism (C85) is supported by established literature. Results are consistent with the genetic interaction findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C86",
+      "C87",
+      "C95"
+    ],
+    "result": "Transcription inhibition by mycophenolic acid and genetic inactivation of transcriptional elongation genes (HPR1, DST1, CDC73, ELP3) significantly increased protein burden. Sub-inhibitory MPA concentration (30 \u00b5g/ml) caused a two-fold increase in protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by experimental data with appropriate statistical testing (Mann Whitney U-test, p<0.001) and adequate replication. The mechanism (C86-C87) is supported by literature and known biochemistry. Genetic results (C95) from the SGA screen provide independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C88",
+      "C89"
+    ],
+    "result": "Protein burden depends on amino acid availability. Total depletion of non-essential amino acids resulted in a 2.5-fold increase in protein burden, and inactivation of amino acid metabolism genes (AAT2, BAT2, CYS3, PRS3, LEU3) influenced protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C88, and C89 are supported by both chemical perturbation experiments (C26, with t-test p<0.001) and genetic interaction data (C88). The inference that protein burden depends on amino acid availability (C89) is reasonable given the convergent evidence from both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The relative fitness cost of yEVenus overexpression was not affected by carbon source changes (glucose, galactose, raffinose), despite 27-32% reduction in absolute fitness on alternative carbon sources. The correlation between deletion strain fitness and genetic interaction strength was very weak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are well-supported by experimental data with appropriate statistical testing. The lack of correlation between carbon source and relative protein burden (C27) is properly tested (t-tests, p>0.05). The weak correlation between deletion fitness and interaction strength (C29, Figure 1F) argues against growth rate per se determining protein burden.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C67"
+    ],
+    "result": "Temperature stress substantially enhanced protein burden. Protein burden increased 2.8-fold at 40\u00b0C compared to 30\u00b0C. Temperature stress, elevated mistranslation rate, and chemical misfolding agents all enhanced protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C67 are supported by experimental data with appropriate statistical testing (t-test, p<0.001) and adequate replication. The mechanism (C37) is supported by established literature (Trotter et al., 2002). Results are consistent across multiple promoters (Figure 3\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Proteotoxic stress induced by azetidine-2-carboxylic acid (AZC) and impaired translation fidelity increased protein burden. Sub-lethal AZC (2.5 mM) caused >4-fold increase in protein burden, and genes controlling translation fidelity (CTK2, CTK3) showed negative genetic interactions with yEVenus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C41 are supported by experimental data with appropriate statistical testing. The mechanism of AZC action (C39) and function of CTK2/CTK3 (C40) are supported by established literature. The convergence of chemical and genetic evidence strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Protein burden elevated protein misfolding propensity in chaperone-deficient backgrounds but not in wild type. In chaperone deletion mutants (\u0394fes1, \u0394sse1, \u0394sti1, \u0394ydj1, \u0394pfd1, \u0394gim5, \u0394cpr7), aggregation frequency was 5-670% higher under protein burden compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by quantitative aggregation assay data using an established VHL-mCherry reporter method (C99-C101, Kaganovich et al., 2008). Statistical testing is reported with appropriate significance levels. The differential effect between wild type and mutants is clearly demonstrated and mechanistically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Co-immunoprecipitation identified 34 proteins binding to yEVenus, including five chaperone-related proteins. Notably, Sti1p and Ydj1p both bind yEVenus and were identified in the genetic interaction screen, and both are involved in activating Ssa proteins (Hsp70 complex components).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by LC-MS/MS co-IP data with appropriate filtering criteria (\u22652 peptides, \u22655% coverage, binding affinity score >2). The convergence of physical interaction (co-IP) and genetic interaction data for Sti1p and Ydj1p (C47) provides strong validation. The functional role (C48) is established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C78"
+    ],
+    "result": "Reciprocal co-IP revealed that protein burden disrupts Sti1p interaction network. Under high protein burden, Sti1p binding affinity decreased for 8 of 9 detected partners, including 70%, 75%, and 55% decreases for Ssa1p, Ssa2p, and Hsp90p respectively. yEVenus-Sti1p binding was detectable only under high protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by quantitative LC-MS/MS data comparing low and high protein burden conditions. The magnitude of binding affinity changes is substantial and the affected proteins (Ssa1p, Ssa2p, Hsp90p) are well-characterized Sti1p partners (C55, supported by multiple citations). The inference of partial complex disassociation (C78) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The fractional contribution of yEVenus to total proteome was not elevated in gene knock-out strains, and biomass-normalized fluorescence showed only very weak correlation (r=0.05) with genetic interaction strength. This indicates genetic interactions reflect changes in fitness cost rather than protein overexpression extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C92-C94 are supported by fluorescence measurements across the deletion collection with appropriate statistical analysis (Pearson correlation). The inference (C60, C94) that allocation models based solely on transcription/translation cannot fully account for protein burden is logical given the lack of correlation between yEVenus levels and interaction strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "Molecular chaperones, particularly the Hsp70-associated network, play a critical role in buffering protein burden. Hsp70-associated proteins (FES1, SSE1, YDJ1, STI1) are functionally related, regulate Ssa chaperone activity, and their deletion substantially elevated protein burden and caused protein aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C61-C65 are well-supported by established literature on Hsp70 function and regulation. The experimental findings (C63, C68) integrate genetic interaction data, aggregation assays, and co-IP results. The explanation for SSA gene absence from the screen (C66) based on functional redundancy is reasonable and supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C57",
+      "C58"
+    ],
+    "result": "Genes with mitochondria-related functions (mitochondrial translation, DNA replication, distribution, morphology) showed genetic interactions with yEVenus. Mutants with impaired mitochondria exhibit reduced respiratory growth and rely on less efficient ATP production, and mitochondria are involved in amino acid synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by SGA screen data. The mechanistic explanations (C57-C58) are reasonable inferences supported by established mitochondrial biology (C58 supported by Ahn and Metallo, 2015; Zong et al., 2016). However, the authors appropriately note that exact mechanisms require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C72"
+    ],
+    "result": "yEVenus has amino acid composition highly similar to yeast proteome (r=0.6477, p<0.01), is codon-optimized for yeast, and is not particularly prone to misfolding or toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C72 are supported by statistical analysis (C16) and established literature (C17, C72 citing Sheff and Thorn, 2004; Kafri et al., 2016). These properties justify the use of yEVenus as a model for studying protein burden independent of protein-specific toxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Deletion of RPI1, a Ras-cAMP pathway repressor, removed protein burden, showing positive genetic interaction with yEVenus overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by experimental data shown in Figure 1\u2014figure supplement 1C. However, the authors appropriately note that underlying mechanisms require further investigation. This represents an interesting but mechanistically unexplained observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Sti1p has >2-fold higher fraction of unstructured residues than proteome average and may be prone to promiscuous binding. Approximately half of Sti1p's interacting partners are involved in proteostasis maintenance, including Hsp70-Hsp90 complex members, Hsp104, proteasome subunits, and ubiquitin-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is based on data not shown in the manuscript, which is problematic for verification. Claims C82-C83 are supported by literature analysis (Cherry et al., 2012). The inference about fitness consequences (C84) is reasonable but speculative. The unstructured residue claim needs to be substantiated with actual data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Protein burden depends on genetic variation and environmental conditions, and the cellular capacity to tolerate fluctuations in genomic expression depends on genetic makeup. Fitness costs should vary extensively across microbial species in different environmental niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are reasonable inferences based on the study's demonstration of genetic and environmental variation in protein burden. However, C75-C76 are explicitly speculative extrapolations beyond the yeast system studied. The inference is logical but requires experimental validation in other species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "Promiscuous binding of Sti1p with globular proteins like yEVenus may have no functional consequences unless protein dosage exceeds a threshold. Highly expressed proteins may indirectly influence aggregation by binding chaperone network components, decreasing availability of active chaperones and increasing aggregation propensity during proteotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C79-C80 are explicitly speculative hypotheses based on the co-IP and aggregation data. While the speculation is reasonable and mechanistically plausible, these claims represent proposed mechanisms rather than demonstrated facts. The authors appropriately frame these as speculations requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior work established that protein production consumes 30-50% of cellular energy, protein burden is most relevant after environmental changes, growth impairment results from the production process rather than protein accumulation, and limiting factors vary across environments. The role of chaperone networks in protein burden remained unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 accurately summarize prior work with appropriate citations to established literature. Claim C10 correctly identifies the knowledge gap addressed by this study. These claims provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Genomic expression follows a power-law distribution with few highly expressed genes. Highly expressed genes contain cost-minimizing architectures, are under severe selective constraints to avoid misfolding/aggregation, and molecular chaperones can buffer damaging effects of protein mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C73 accurately summarize established literature with appropriate citations. These provide important context for interpreting the study's findings about chaperone roles in protein burden and the evolutionary constraints on highly expressed genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Genetic and chemical perturbations demonstrate that impairment of transcription, translation, and amino acid availability increase protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a valid summary statement integrating multiple experimental results from the study (genetic interactions, cycloheximide, mycophenolic acid, amino acid depletion). The convergent evidence from multiple approaches strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Mistranslation during protein synthesis promotes misfolding and aggregation, and reduction of translation fidelity should exacerbate fitness deficits from protein overproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by established literature (Lee et al., 2006; Yang et al., 2010; Paredes et al., 2012). Claim C98 is a reasonable inference supported by the identification of translation fidelity genes (CTK2, CTK3) in the genetic screen. The logic connecting mistranslation to protein burden is sound.",
+    "result_type": "MINOR"
+  }
+]

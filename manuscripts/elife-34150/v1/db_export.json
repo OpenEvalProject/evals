@@ -1,0 +1,2068 @@
+{
+  "submission": {
+    "id": "9e63d221-153f-4e6a-8872-961b23e78262",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:17:04.034585Z",
+    "updated_at": "2025-12-02T02:17:04.034585Z"
+  },
+  "content": [
+    {
+      "id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "submission_id": "9e63d221-153f-4e6a-8872-961b23e78262",
+      "content_type": "manuscript",
+      "content_text": "# A two-hybrid antibody micropattern assay reveals specific in cis interactions of MHC I heavy chains at the cell surface\n\n## Authors\n\n- Cindy Dirscherl<sup>1</sup> ([ORCID: 0000-0002-8973-2835](https://orcid.org/0000-0002-8973-2835))\n- Zeynep Hein<sup>1</sup> ([ORCID: 0000-0002-6335-8961](https://orcid.org/0000-0002-6335-8961))\n- Venkat Raman Ramnarayan<sup>1</sup>\n- Catherine Jacob-Dolan<sup>1</sup>\n- Sebastian Springer<sup>1</sup> ([ORCID: 0000-0002-5527-6149](https://orcid.org/0000-0002-5527-6149)) \u2020\n\n### Affiliations\n\n1. Department of Life Sciences and Chemistry Jacobs University Bremen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe demonstrate a two-hybrid assay based on antibody micropatterns to study protein-protein interactions at the cell surface of major histocompatibility complex class I (MHC I) proteins. Anti-tag and conformation-specific antibodies are used for individual capture of specific forms of MHC I proteins that allow for location- and conformation-specific analysis by fluorescence microscopy. The assay is used to study the in cis interactions of MHC I proteins at the cell surface under controlled conditions and to define the involved protein conformations. Our results show that homotypic in cis interactions occur exclusively between MHC I free heavy chains, and we identify the dissociation of the light chain from the MHC I protein complex as a condition for MHC I in cis interactions. The functional role of these MHC I protein-protein interactions at the cell surface needs further investigation. We propose future technical developments of our two-hybrid assay for further analysis of MHC I protein-protein interactions.\n\n## Introduction\n\nProtein-protein interactions are difficult to investigate, especially when they involve membrane proteins under physiological conditions, specific protein conformations or subpopulations, low affinities, or defined locations in the cell. Such challenges are not usually met by yeast two-hybrid screens and co-immunoprecipitation approaches; instead, they require technically demanding methods such as fluorescence resonance energy transfer (FRET) or fluorescence correlation spectroscopy, which only work in some cases.\n\nRecently, antibody-based capture assays on solid supports have been described that can be used in bait-prey experiments in live cells (L\u00f6chte et al., 2014; Schwarzenbacher et al., 2008; Weghuber et al., 2010). We now\u00a0demonstrate\u00a0an expansion\u00a0of this concept to characterize location- and conformation-specific protein-protein interactions in a novel two-hybrid assay read out by fluorescence microscopy\u00a0by using microprinted antibody patterns for the capture of bait proteins to spatially arrange them in the plasma membrane of live cells (Dirscherl and Springer, 2017) and to investigate their interaction with green fluorescent protein (GFP)-tagged prey proteins. The assay is universally applicable for the investigation of protein-protein interactions.\n\nIn this paper, we use this two-hybrid micropattern\u00a0assay to solve the long-standing question which forms of major histocompatibility complex class I (MHC I) proteins associate laterally (in cis) on the plasma membrane. MHC I proteins consist of a polymorphic transmembrane heavy chain (HC), the non-covalently bound light chain beta-2 microglobulin (\u03b22m), and a peptide of eight to ten amino acids. Assembly of HC, \u03b22m, and peptide takes place in the endoplasmic reticulum (ER), followed by transport to the cell surface, where MHC I proteins present the bound peptides to T cell receptors of cytotoxic T cells; they also bind inhibitory receptors on Natural Killer cells. MHC I antigen presentation is central to the cellular immune response of jawed vertebrates against viruses, intracellular parasites, and tumors.\n\nAt the cell surface, MHC I proteins exist in three different forms: the HC/\u03b22m/peptide trimers, the \u2018peptide-empty\u2019 HC/\u03b22m dimers derived from them by dissociation of the peptide, and the \u2018free\u2019 heavy chains derived from the dimers by dissociation of \u03b22m. While the lateral association of MHC I proteins has been observed before (Capps et al., 1993; Arosa et al., 2007; Lu et al., 2012; Matko et al., 1994), other researchers have not detected them (Sz\u00f6ll\u00f6si et al., 1989; Damjanovich et al., 1983; Liegler et al., 1991).\u00a0Optical methods have not provided conclusive evidence which of the three forms are interacting, and biochemical approaches have not clarified where in the cell the binding occurs (Capps et al., 1993; Matko et al., 1994). To add to the complexity, the HC/\u03b22m dimers and the free heavy chains have short half-lives in the cell, which complicates their analysis (Montealegre et al., 2015). For the study of the proposed functions of the MHC I protein-protein interactions\u00a0(endocytosis, synapse architecture, inflammatory response, receptor modulation; see the discussion), knowledge of location and conformation of the associated proteins is essential (Dixon-Salazar et al., 2014; Chen et al., 2017; Burian et al., 2016; Nizsal\u00f3czki et al., 2014; Mocs\u00e1r et al., 2016).\n\nOur work now shows conclusively that MHC I free heavy chains, but not HC/\u03b22m/peptide trimers or HC/\u03b22m dimers, associate\u00a0in\u00a0cis at the plasma membrane.\n\n## Results\n\n### H-2Kb and H-2Db are specifically captured by antibody micropatterns\n\nMembrane proteins on the surface of living cells can be captured into geometric shapes by antibodies that are printed on\u00a0to the substrate in micrometer-sized patterns (Figure 1A; [Dirscherl et al., 2017]). We reasoned that any protein that naturally interacts with a captured protein would also be recruited into the patterns, and that this might be used for a protein-protein interaction assay (Schwarzenbacher et al., 2008). We further reasoned that if we printed antibodies that recognize only certain forms of MHC I proteins, the interaction assay might be made specific for certain forms of MHC I proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34150/elife-34150-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic presentation of the capture assay. Cells transduced with Kb (red) fused to GFP (green) are incubated on the Y3 antibody micropatterns (anti Kb; magenta). Upon specific antibody-antigen interaction, Kb-GFP is captured on its extracellular epitope by the Y3 antibody pattern elements (see enlargement). (B) Printed antibodies are target-specific. Control experiments demonstrate that Kb-GFP is only captured by the anti-Kb antibody Y3 and not by an antibody specific for Db (27-11-13S). (C) Schematic displaying the different antibody epitopes on the Kb molecule. The Y3 epitope reacts specifically with residues of the \u03b12 helix of Kb-GFP whereas the anti-HA antibody recognizes the additional HA-tag that was N-terminally fused to Kb-GFP. (D) Surface Kb-GFP can be directly captured by the anti-Kb antibody Y3 or by the anti-HA antibody against the N-terminally tagged HA-Kb-GFP. Cells were transduced with Kb-GFP or HA-Kb-GFP and tested for specificity on Y3 or anti-HA antibody micropatterns. Y3 successfully captures both constructs, whereas HA only recognizes the HA-tagged molecules. Scale bar: 25 \u00b5m.\n\nWe first tested whether the two common \u03b22m-dependent monoclonal antibodies Y3 (which binds to two forms of the murine MHC I allotype H-2Kb,\u00a0or\u00a0Kb for short, namely the\u00a0KbHC/\u03b22m dimers and\u00a0KbHC/\u03b22m/peptide trimers[H\u00e4mmerling et al., 1982]) and 27-11-13S (which binds to two forms of the murine MHC I allotype H-2Db,\u00a0namely DbHC/\u03b22m dimers and DbHC/\u03b22m/peptide trimers [Ozato and Sachs, 1981]) were still specific for their target allotypes when used in the pattern capture assay. We inked poly(dimethylsiloxane) (PDMS) stamps with solutions of Y3 and 27-11-13S and printed them onto the surface of untreated glass coverslips. We then seeded human STF1 fibroblasts expressing C-terminal green fluorescent protein (GFP) fusions of either Kb or Db onto these coverslips and observed capture of Kb-GFP and Db-GFP by confocal laser scanning microscopy (Figure 1B). As anticipated, Kb-GFP was only captured with Y3, and Db only with 27-11-13S. We conclude that the printed \u03b22m-dependent antibodies still specifically recognize their target allotypes.\n\nIn addition\u00a0to\u00a0\u03b22m-dependent capture by Y3 or 27-11-13S, we wished to be able to capture MHC I proteins independently of their \u03b22m or peptide association. Thus, we next tested whether MHC I proteins can also be captured via an N-terminal (extracellular) influenza hemagglutinin (HA) epitope tag (Figure 1C, bottom). We printed patterns of the monoclonal anti-HA antibody 12CA5 and seeded STF1 cells expressing either a HA-Kb-GFP fusion construct or Kb-GFP, which lacked the HA epitope. As expected, only HA-Kb-GFP was captured, but not Kb-GFP (Figure 1D). The HA tag did not interfere with the capture of HA-Kb-GFP on Y3 antibody micropatterns (Figure 1D). We conclude that the anti-HA antibody can be used to specifically capture HA-tagged MHC I proteins.\n\n### Stabilizing effect of conformation-specific antibodies allows for differential patterning of Kb dimers and free heavy chains\n\nWe next sought to establish conditions in which KbHC/\u03b22m dimers, without peptide, are preferentially captured in the antibody patterns. In STF1 cells,\u00a0which lack TAP (the transporter associated with antigen processing) and thus cannot load MHC I proteins with high-affinity peptides in the ER (de la Salle et al., 1999),\u00a0such\u00a0dimers can be accumulated at the cell surface by incubation at 25\u00b0C (Ljunggren et al., 1990; Montealegre et al., 2015). These peptide-receptive KbHC/\u03b22m dimers can be detected by subsequent binding of fluorescently labeled peptide (Saini et al., 2013).\n\nWe therefore printed Y3 on glass coverslips, seeded STF1 cells expressing HA-Kb-GFP onto the patterns, and then incubated at 25\u00b0C overnight. Next morning, we added the Kb-specific peptide SIINFEKL(abbreviated\u00a0SL8) labeled with the TAMRA fluorophore (SL8TAMRA). We observed a striking patterned staining of the fluorescent peptide, which\u00a0demonstrates that peptide-receptive Kb/\u03b22m dimers had been captured in the patterns (Figure 2A, column 2). To show that binding of the peptide was specific, we pre-incubated the cells with unlabeled SIINFEKL peptide, which blocked SL8TAMRA binding (Figure 2A, column 3). Thus, we were able to capture KbHC/\u03b22m dimers into patterns and subsequently bind peptide to them.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34150/elife-34150-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cells expressing HA-Kb-GFP were captured on Y3 or anti-HA antibody micropatterns and incubated at 25 or 37\u00b0C to allow for the dissociation of \u03b22m. To identify the nature of the captured Kb-GFP population (green channel), specific fluorescent peptide SIINFEKL (SL8TAMRA; red channel) was added to the samples. Based on their ability to bind peptide, one can distinguish between the peptide-receptive KbHC/\u03b22m dimer and the Kb free heavy chains, which are incapable to bind peptide. (B) For further characterization of the captured HA-Kb-GFP on Y3 or anti-HA antibody micropatterns, immunostaining experiments were performed. Immunostaining of captured HA-Kb-GFP molecules with the anti-\u03b22m antibody (BBM.1Atto542) reveals dissociation of \u03b22m from anti-HA antibody micropatterns at 37\u00b0C (column 3). Addition of the specific ligand peptide SIINFEKL (SL8) during 37\u00b0C incubation prevents \u03b22m dissociation (column 4). Scale bars: 25 \u00b5m.\n\nWe then repeated the same experiment on patterns of anti-HA antibody, with the same result (Figure 2A, column 5). Thus, both Y3 and anti-HA antibodies captured peptide-receptive KbHC/\u03b22m dimers on the surface of the STF1 cells.\n\nWe next wished to dissociate \u03b22m from the captured KbHC/\u03b22m dimers in order to obtain patterned free heavy chains. At 37\u00b0C, dissociation of \u03b22m from KbHC/\u03b22m dimers occurs rapidly, whereas at 25\u00b0C, the rate of dissociation of \u03b22m is significantly reduced (Montealegre et al., 2015; Day et al., 1995). Thus, we repeated the above experiments on anti-HA and Y3 patterns, but before adding the SL8TAMRA peptide, we shifted the cells to 37\u00b0C for two to three hours. As expected, after incubation at 37\u00b0C, HA-Kb-GFP patterns showed no binding of SL8TAMRA (Figure 2A, column 4), which shows that the HA-captured MHC I proteins lost their peptide-binding capacity, probably due to the dissociation of \u03b22m. Very interestingly, HA-Kb-GFP captured with Y3 retained its ability to bind peptide at 37\u00b0C (Figure 2A, column 1). This suggests that the \u03b22m-dependent Y3 antibody stabilizes the KbHC/\u03b22m dimer complex to which it is bound by preventing the dissociation of \u03b22m, similar to the action of peptide (Townsend and Bodmer 1989).\n\nTo test the hypothesis that the lack of peptide binding of the Kb proteins that were captured by HA and incubated at 37\u00b0C was due to the loss of \u03b22m, we repeated the same experiment, but instead of adding fluorescent peptide, we fixed the cells and immuno-stained with the anti-\u03b22m antibody BBM.1 that\u00a0was\u00a0directly labeled with Atto 542 (BBM.1Atto542) (Figure 2B). As predicted, the Y3 micropatterns stained positive for \u03b22m at both temperatures (Figure 2B,\u00a0columns 1 and 2), whereas anti-HA micropatterns stained for \u03b22m only at 25\u00b0C (Figure 2B,\u00a0columns 3 and 5). When we added SIINFEKL to the cells on anti-HA-micropatterns before shifting them to 37\u00b0C, we observed that BBM.1Atto542 staining was restored in these samples (Figure 2B,\u00a0column 4). We conclude that captured Kb free heavy chains can be generated by inducing the dissociation of \u03b22m from KbHC/\u03b22m dimers captured on anti-HA patterns.\n\nTaken together, we are able to selectively hold three different forms of Kb on the surface of STF1 cells: free Kb\u00a0heavy chains (at 37\u00b0C on HA patterns), KbHC/\u03b22m dimers (at 25\u00b0C on anti-HA patterns, or at 25 or 37\u00b0C on Y3 patterns), and KbHC/\u03b22m/peptide trimers (by addition of peptide on anti-HA and Y3 patterns).\n\n### Antibody micropatterns reveal conformation-dependent in cis interactions of Kb free heavy chains\n\nSince we were able to distinguish the three different forms of Kb held in the patterns, we next investigated whether any of these forms associate in cis on the plasma membrane. For this, we designed a two-hybrid assay (Figure 3A): One Kb construct had an N-terminal HA tag but no GFP (HA-Kb), the other carried a C-terminal GFP but no HA tag (Kb-GFP). We reasoned that HA-Kb would be captured by the anti-HA antibodies, but the GFP pattern would only become detectable by microscopy if HA-Kb and Kb-GFP interacted together, since Kb-GFP alone is not captured by anti-HA micropatterns (Figure 1D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34150/elife-34150-fig3-v1.jpg)\n\n**Figure 3.:** (A) For the two-hybrid assay, cells were co-transduced with two Kb constructs: Kb with an N terminal HA tag (HA-Kb) and Kb-GFP (GFP fused to the cytoplasmic tail). (B) Cells were incubated on anti-HA or Y3 antibody micropatterns at different temperatures. Recruitment of Kb-GFP (green channel) to the anti-HA antibody micropatterns occurs specifically at 37\u00b0C and can be inhibited by addition of the SIINFEKL (SL8) peptide (column 3 and 4). The single chain mutant, scKb-GFP (which has \u03b22m covalently linked to the Kb heavy chain) is also not recruited to the antibody micropatterns (column 5). From top to bottom: Antibody micropatterns, Kb-GFP, phase contrast, and schematic representation. Scale bar: 25 \u00b5m. (C) For quantification of co-capture, the mean fluorescence intensities of Kb-GFP of the total cell and the areas of pattern elements were determined. The redistribution of Kb-GFP leads to increased fluorescence intensity levels in the areas of the pattern elements and is represented as an increase of the ratio of the fluorescence intensity of the pattern elements over the fluorescence intensity of the entire cell (see Materials and methods). The plot shows the mean (red)\u00a0\u00b1\u00a0SEM and the distribution of the calculated ratios from individual cells (black symbols; n (cells)\u00a0\u2265\u00a014) of\u00a0\u2265\u00a02 independent experiments (****: Significant difference, p<0.0001, two-tailed t-test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34150/elife-34150-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The stable cell line STF1/E3 HA-Kb was electroporated (*) with Kb-GFP and incubated overnight on anti-HA micropatterns and either left at 25\u00b0C or shifted to 37\u00b0C to allow for co-capture as described. Cells were then stained with the K4Atto633 peptide, which binds specifically to the E3 tag of the E3-HA-Kb construct, which was captured by its HA-tag on the anti-HA micropatterns. Scale bar: 25 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34150/elife-34150-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Co-transduced cells with E3-HA-Kb and Kb-GFP were incubated overnight on anti-HA micropatterns and either left at 25\u00b0C or shifted to 37\u00b0C to allow for co-capture as described. Cells were then incubated with SIINFEKLTAMRA (SL8TAMRA) peptide. Peptide binding was reduced in co-captured Kb at 37\u00b0C (columns 3 and 4), indicating that only free heavy chains interact in cis. Duplicates are shown. Scale bar: 25 \u00b5m.\n\nTo perform the experiment, we co-transduced STF1 cells with HA-Kb and Kb-GFP, seeded the cells on anti-HA micropatterns, and incubated them overnight at 25\u00b0C to accumulate KbHC/\u03b22m dimers of both Kb constructs at the cell surface. The next day, we either left them at 25\u00b0C or shifted them to 37\u00b0C and followed the patterning of the GFP fluorescence.\n\nWe observed strong co-patterning of both forms after 37\u00b0C incubation, suggesting that free heavy chains can interact in cis in the membrane (Figure 3B, column 3). When we inhibited dissociation of \u03b22m by addition of SIINFEKL peptide (Figure 3B,\u00a0column 4) or incubation at 25\u00b0C (Figure 3B,\u00a0column 6), co-patterning was abolished. (As a control, on Y3 patterns, in contrast, where both HA-Kb and Kb-GFP are directly bound by the antibody, strong patterning of Kb-GFP was visible even in the presence of SIINFEKL (Figure 3B,\u00a0columns 1 and 2)). These data show that Kb does not associate in cis as long as \u03b22m is bound.\n\nTo further test this conclusion, we co-transfected STF1 cells with HA-Kb and scKb-GFP, a single-chain construct in which the Kb heavy chain and \u03b22m are linked by a peptide linker such that \u03b22m cannot dissociate (Montealegre et al., 2015). As in the previous control experiment, no co-patterning was observed (Figure 3B,\u00a0column 5). These controls also demonstrated that the in cis interaction of the Kb free heavy chains was not simply induced by the GFP domain of the Kb-GFP fusion proteins.\n\nTo demonstrate that the non-fluorescent HA-Kb molecules were indeed present in the patterns together with Kb-GFP, we repeated the experiment in Figure 3B (column 3) with the construct E3-HA-Kb, in which an additional tag of a 21 amino acids (the E3 tag; see Materials and methods) is attached to the N terminus of HA-Kb. This tag specifically binds to the fluorescently labeled synthetic peptide, K4Atto633. After co-patterning of Kb-GFP was observed, we additionally stained with K4Atto633 and found close colocalization with Kb-GFP in the patterns (Figure 3\u2014figure supplement 1). We conclude that the free heavy chain of E3-HA-Kb is indeed captured on the patterns and then recruits the free heavy chain of Kb-GFP by an in cis interaction. We quantified this recruitment by measuring both the mean fluorescence intensity (MFI) of the entire cell and the MFI of the pattern elements in the micrographs of Figure 3B to standardize the increase in fluorescence signal on the pattern elements upon redistribution of Kb-GFP by its in cis interaction with HA-Kb (see Materials and methods and Figure 3C).\n\nTaken together, our data demonstrate that Kb free heavy chains, but not KbHC/\u03b22m dimers or KbHC/\u03b22m/peptide trimers, associate in cis in the plasma membrane of live cells.\n\nIn murine (and human) cells, up to six MHC I allotypes co-exist at the cell surface. We thus wished to investigate heterotypic in cis interactions between free heavy chains of Kb and Db. In an experiment with HA-Kb and Db-GFP performed in analogy to Figure 3B above, we observed weaker but still specific (initiated by the 37\u00b0C shift) recruitment of Db-GFP to the antibody pattern elements, indicating heterotypic in cis interactions between the two allotypes Kb and Db (data not shown).\n\n### In cis interactions of Kb confirmed by co-immunoprecipitation\n\nWe next tested this finding in a co-immunoprecipitation experiment, without the use of micropatterns. We used the same STF1 cells co-transfected with HA-Kb and Kb-GFP and incubated them at 25\u00b0C overnight to accumulate both Kb constructs at the cell surface. The cells were then shifted to 37\u00b0C for 15 min (the half-life of KbHC/\u03b22m dimers at the cell surface [Montealegre et al., 2015]) to dissociate \u03b22m and initiate co-localization. Then, the cells were trypsinized and lysed, and HA-Kb was immunoprecipitated with the anti-HA antibody. We found efficient co-precipitation of Kb-GFP with HA-Kb, which was abolished if SIINFEKL peptide was added to the cells during the 37\u00b0C incubation (Figure 4). Thus, just like in the micropattern assay, the peptide clearly inhibited the interaction, suggesting that only free heavy chains were co-precipitating.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34150/elife-34150-fig4-v1.jpg)\n\n**Figure 4.:** For co-immunoprecipitation, the same co-transduced cells from the previous experiment were used (STF1/HA-Kb and Kb-GFP). Cells were incubated at 25\u00b0C overnight to increase Kb cell surface levels and then shifted to 37\u00b0C to allow for the dissociation of \u03b22m from the Kb heavy chain. The SIINFEKL (SL8) peptide was added as control to inhibit \u03b22m dissociation (lanes 2 and 4). Cells were then lysed and successfully immunoprecipitated with an anti-HA antibody (bottom row). Immunoisolates and lysate control samples were analysed by western blotting by sequential staining with an anti-GFP antibody (top row) and an anti-HA antibody (bottom row). The Kb-GFP construct was specifically co-immunoprecipitated in the absence of peptide, similar to the result on antibody micropatterns (lane 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34150/elife-34150-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** For co-immunoprecipitation of cell surface proteins, stable STF1 cells co-transfected with E3-HA-Kb and Kb-GFP were used. Cells were incubated at 25\u00b0C overnight to enrich Kb cell surface levels and incubated in presence or absence of SIINFEKL (SL8) as indicated. For cell surface labeling, the biotinylated K4 peptide (K4biotin; binds to the extracellular E3 tag of E3-HA-Kb) was added and cells were shifted to 37\u00b0C to allow for \u03b22m dissociation as described. Cells were lysed and co-immunoprecipitated with neutravidin agarose binding to the biotinylated E3-HA-Kb cell surface population. The immunoisolates were then treated with EndoF1 as indicated to distinguish the cell surface population (EndoF1 resistant, top bands) from the intracellular population of isolated Kb molecules (EndoF1 sensitive Kb molecules, see asterisk). (A) Sequential Western blot analysis with an anti-GFP antibody (top row) and anti-HA antibody (bottom row) demonstrates that only free heavy chains co-precipitate (lane 1) with E3-HA-Kb. (B) Quantification of (A): The ratio of co-precipitated Kb-GFP to total protein amounts was quantified.\n\n## Discussion\n\nWe have developed antibody micropatterns into a novel two-hybrid assay for the detailed investigation of conformation-specific in cis interactions of our model protein, MHC I. The versatility of our assay with extracellular HA and intracellular GFP fusions supports a broad range of applications, especially in the study of specific protein-protein interactions that require investigation in the native environment of live cells. This two-hybrid assay circumvents the disadvantages of employing two different fluorescent proteins on the cytoplasmic tails of the proteins of interest (for example for FRET microscopy) that may be biased through unspecific interactions and aggregation of the fluorescent tags.\n\nThe example of MHC I proteins demonstrates the challenges of the functional analysis of protein-protein interactions and the limitations of conventional methods, which yield no information on the spatial resolution or the distinction of different protein conformations. Previous experiments with FRET have revealed cluster formation of antibody-labelled MHC I proteins at the cells surface, but the involvement of free heavy chains was only indirectly shown (Matko et al., 1994). Other studies involved co-immunoprecipitation experiments that revealed the existence of free heavy chain-dimers of different murine MHC I allotypes by pull-down with conformation-specific antibodies. However, it could not be excluded that the detected interactions were enhanced, or indeed caused, by detergents after cell lysis. Additional pulse-chase experiments confirmed that MHC I proteins associate after they have traversed the medial Golgi, but could not localize them to the cell surface (Capps et al., 1993).\n\nOur own co-immunoprecipitation experiments confirm these observations for the murine Kb allotype, but they also lack spatial resolution (Figure 4). The differential co-immunoprecipitation of surface-biotinylated MHC I proteins finally confirms the presence of protein-protein associations at the cell surface (Figure 4\u2014figure supplement 1), but even this method cannot entirely exclude the involvement of intracellular MHC I proteins.\n\nOur two-hybrid assay finally solves the questions of generation and location for MHC I protein-protein interactions. The assay principle has allowed us to establish a system in which we generate defined conformations of MHC I proteins. The results demonstrate that MHC I protein association depends on the generation of free heavy chains, and together with our previous work (Montealegre et al., 2015), they suggest that these free heavy chains originate from the captured empty KbHC/\u03b22m dimers at the cell surface upon dissociation of \u03b22m. By holding the dimers in the anti-HA patterns and triggering the dissociation of \u03b22m with the 37\u00b0C shift, we were able to show that in cis interactions are indeed happening at the cell surface (Figure 3B). Of course, it is possible that in addition, free heavy chains are generated elsewhere in the cell by \u03b22m dissociation, for example in endosomes, and that they might associate in these locations also.\n\nIs it possible that more than one kind of MHC I protein-protein interaction exists in cells? The MHC I clusters identified by the Yewdell and Edidin groups (Yewdell, 2006; Matko et al., 1994) contain peptide-bound MHC I proteins. Since our cells were TAP-deficient and thus contained no, or few, peptides for binding to MHC I proteins, we would not have seen the clusters observed by them. If, for example, the Yewdell clusters are formed in the ER then they would not even have formed in our system upon addition of external peptide.\n\nThe spatial organization of bait proteins in the plasma membrane allows for the quantification of co-captured proteins into the antibody pattern elements (Figure 3C). In our setup, we determined the distribution of prey proteins in control experiments as biological background (this corresponds to our background ratio of 1.1). This background includes also MHC I proteins that are co-captured on the antibody pattern elements before the temperature shift. Whether this background corresponds to pre-formed protein-protein interactions or a heterogeneous surface distribution was not tested and requires detailed analysis.\n\nFor MHC I in cis interactions at the cell surface, various functional roles have been proposed. They might be a means of accelerated disposal for free heavy chains, preventing re-binding of \u03b22m and peptide and perhaps leading to enhanced internalization and degradation in lysosomes (Montealegre et al., 2015). This hypothesis is supported by our finding that associated MHC I proteins do not bind peptide well (Figure 3\u2014figure supplement 2) and therefore probably do not interact with TCRs. They might be\u00a0in\u00a0trans ligands for NK cell receptors or similar proteins, perhaps signaling stress or activation states (Garcia-Beltran et al., 2016; Burian et al., 2016). We cannot entirely exclude that the associated MHC I proteins contain some KbHC/\u03b22m dimers that are peptide-receptive, as has been suggested for human MHC I oligomers (Bodn\u00e1r et al., 2003), but free heavy chains are clearly essential for in cis interactions, since single-chain KbHC/\u03b22m dimers do not associate (Figure 3A). Another possibility is that the associated free heavy chain might influence the surface levels of other proteins with which MHC I proteins are known to interact, such as APLP or insulin receptor, thereby mediating non-immunological functions of MHC I proteins (Tuli et al., 2008; Shatz, 2009; Dixon-Salazar et al., 2014). Our assay is a promising tool to extend the interaction studies for MHC I proteins by the proposed interaction partners.\n\nWe have shown here the formation of homotypic in cis interactions of the murine MHC I allotype Kb. Interestingly, previous work suggests that the tendency of in cis interactions varies among MHC I allotypes (Capps et al., 1993). Thus, it was hypothesized that those MHC I allotypes that do not associate are not internalized (by the accelerated disposal mechanism proposed above) and that they will bind exogenous peptides to provoke autoimmune reactions (Capps et al., 1993). This might be interesting in the case of those subtypes of HLA-B27 that are implicated in inflammatory autoimmune diseases such as spondyloarthropathies (Chen et al., 2017; Allen et al., 1999). For HLA-B*27:05, formation of heavy chain dimers at the cell surface, or in early endocytic compartments, was demonstrated to\u00a0occur\u00a0through a disulfide bond between the unpaired cysteine-67 residues. Since Kb does not have an unpaired cysteine in the extracellular domain, this\u00a0type of dimerization is not possible for\u00a0Kb. Still, the interesting possibility exists that the in\u00a0cis heavy chain associations\u00a0described by us\u00a0for\u00a0Kb might also occur with B*27:05 and might cause the formation of the\u00a0covalent B*27:05 dimers. We look forward to future investigations.\n\nDue its versatility, our assay allows for the development of a screen to test for the tendency of individual MHC\u00a0I\u00a0allotypes to associate with themselves, and with other allotypes. This may be extended to human MHC I proteins, whose empty dimers can be enriched at the cell surface by incubation with low-affinity dipeptide ligands (Saini et al., 2015), and even to the empty forms of HLA-F that were recently discovered to bind NK cell receptors (Garcia-Beltran et al., 2016; Burian et al., 2016). Consequently, by its application to the human system, this screening tool can be developed to investigate the correlation between cell surface protein-protein interactions and human autoimmune disease. Generation of anti-HA antibody micropatterns by microcontact printing on conventional glass coverslips makes this assay especially suitable for such high-throughput approaches.\n\nIn addition to its demonstrated application in the detection of conformation-dependent in cis interactions, the assay can be further developed towards more\u00a0detailed analysis. One possibility is the integration of conventional immunostaining for the identification of other proteins involved in the redistribution of co-captured proteins. For MHC I proteins, for\u00a0example,\u00a0observing the accumulation of adaptor proteins involved in endocytic processes (e.g. Rab proteins) on the pattern elements under condition of co-capture will contribute to understand the nature of MHCI protein endocytosis and the functional role of in cis interactions.\n\nAnother possible technical development is to combine the assay with fluorescence revovery after photobleaching (FRAP) measurements to test the dynamics of the interactions (i.e. dissociation and re-association). Such a combined two-hybrid-FRAP assay is potentially superior to conventional (FRET) experiments, since the enrichment of proteins in the pattern elements increases the abundance of the interaction partners and might\u00a0thus enable the detection of very weak interactions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (mus musculus)</td>\n      <td>H-2Kb</td>\n      <td>NCBI GenBank</td>\n      <td>NM_001001892.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (mus musculus)</td>\n      <td>H-2Db</td>\n      <td>NCBI GenBank</td>\n      <td>NM_010380.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (homo sapiens)</td>\n      <td>STF1</td>\n      <td>PMID:10074495</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (mus musculus)</td>\n      <td>STF1/Kb-GFP</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td rowspan=\"5\">Stable cell lines were generated by lentiviral transduction and antibiotic selection as described in PMID: 24806963.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (mus musculus)</td>\n      <td>STF1/Db-GFP</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (mus musculus)</td>\n      <td>STF1/E3 HA-Kb-GFP</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (mus musculus)</td>\n      <td>STF1/E3 HA-Kb +Kb-GFP</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Transfected\u00a0construct (mus musculus)</td>\n      <td>STF1/E3 HA-Kb +Kb-h\u03b22m-GFP (single chain)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Y3</td>\n      <td>PMID: 6181513</td>\n      <td>N/A</td>\n      <td rowspan=\"2\">Produced and purified in house\u00a0from hybridoma cells. 0.6 \u00b5g/\u00b5L for printing</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>27-11-13S</td>\n      <td>PMID: 6935293</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>12CA5 (Hemagglutinin; HA)</td>\n      <td>PMID: 6192445</td>\n      <td>N/A</td>\n      <td>Produced and purified in house from hybridoma cells 0.6 \u00b5g/\u00b5L for printing; 1:100 dilution of hybridoma supernatant for Western blotting.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>BBM.1</td>\n      <td>PMID: 91522</td>\n      <td>N/A</td>\n      <td>Produced and purified in house from hybridoma.\u00a00.1 \u00b5g/\u00b5L for staining.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-GFP</td>\n      <td>Abcam</td>\n      <td>Cat #: ab290, RRID:AB_303395</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit antisera against H-2Kb\u00a0and H-2Db</td>\n      <td>Charles River Laboratories</td>\n      <td>Rabbits were immunized with a peptide corresponding to residues 331\u2013349 of the cytoplasmic tail of both heavy chains</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-rabbit IgG-AP</td>\n      <td>Bio-Rad</td>\n      <td>Cat #: 170\u20136518, RRID:AB_11125338</td>\n      <td>1:10000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>donkey anti-mouse IgG Alexa Fluor 568</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat #: A10037, RRID:AB_2534013</td>\n      <td>1:400 for staining antibody micropatterns</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>puc2CL6Ipwo (lentiviral vector)</td>\n      <td>PMID: 21248040</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>puc2CL6IPwo/ Kb-GFP (plasmid)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td rowspan=\"2\">C-terminally GFP-tagged H-2Kb and H-2Db cDNA were cloned into the lentiviral vector via the XhoI and AgeI sites.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>puc2CL6IPwo/ Db-GFP (plasmid)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>puc2CL6IPwo/E3 -HA-Kb-GFP (plasmid)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td rowspan=\"3\">N-terminally E3-tagged and HA-tagged) H-2Kb (\u00b1GFP) cDNA were cloned into the lentiviral vector via the XhoI and AgeI sites.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>puc2CL6IPwo/ E3-HA-Kb (plasmid)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>puc2CL6IPwo/ E3-HA-Kb (plasmid)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>puc2CL6IPwo/Kb- h\u03b22m-GFP\u00a0(plasmid)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Cloning strategy of the single chain construct according to\u00a0PMID: 16049493</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>forward primer E3 tag</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>5\u00b4-ACTCAGACCCGCGCGGGCGAGATCG CAGCTCTGGAGAAGGAGATTGCCGCAT TGGAGAAGGAGATAGCGGCACTCGAG AAGTATCCATACGACGTCCC-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>reverse primer E3 tag</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>5`-GGGACGTCGTATGGATACTTCTCGA GTGCCGCTATCTCCTTCTCCAATGCGG CAATCTCCTTCTCCAGAGCTGCGAT CTCGCCCGCGCGGGTCTGAGT-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>forward primer HA tag (1/2)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>5`-CCGACTCAGACCCGCGCGGGCC CATATCCATACGACGTCCCACACTC GCTGAGGTATTTCGTCACC-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>forward primer HA tag (1/2)</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>5`-GGCCCATATCCATACGACGTCCCAG ATTATGCCGGCGGTGGACACTCGCTG AGGTATTTCGTCACC-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>reverse primer HA tag</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>5`-GGTGACGAAATACCTCAGCGAGTG TGGGACGTCGTATGGATATGGGCCCG CGCGGGTCTGAGTCGG-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>reverse primer HA tag</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>5`-GGTGACGAAATACCTCAGCGAGTG TCCACCGCCGGCATAATCTGGGACGTCG TATGGATATGGGCC-3\u00b4</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SIINFEKL peptide</td>\n      <td>GeneCust Ellange, Luxemburg</td>\n      <td>N/A</td>\n      <td>2 \u00b5M final concentration</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SIINFEKLTAMRA peptide</td>\n      <td>GeneCust Ellange, Luxemburg</td>\n      <td>N/A</td>\n      <td>2 \u00b5M final concentration</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>K4Atto 633 peptide</td>\n      <td>emc microcollections</td>\n      <td>N/A</td>\n      <td>25 nM final concentration</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>K4bio peptide</td>\n      <td>emc microcollections</td>\n      <td>N/A</td>\n      <td>200 nM final concentration</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 647 NHS ester</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat #: A37566</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Atto 542 NHS ester</td>\n      <td>ATTO-TEC,</td>\n      <td>Cat #: AD 542\u201331</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software,\u00a0algorithm</td>\n      <td>ImageJ</td>\n      <td>National Institutes of Health</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Photolithography\n\nSilicon master molds were prepared by semiconductor photolithography as described previously. See Dirscherl et al. (2017) for details.\n\n### PDMS stamps and antibody patterns\n\nPDMS stamps were generated from basic elastomer and curing agent (Sylgard 184 Silicone Elastomer Kit) from Dow Corning (Midland, USA) mixed in a 10:1 ratio. The prepared stamps were inked with the indicated antibody solutions and then placed on round microscopy glass coverslips (#1, 22 mm). See Dirscherl et al.\u00a0(2017) for details.\n\n### Patterning cell surface proteins\n\nCoverslips were placed into sterile 6-well plates. Cells were immediately seeded as indicated at a concentration of \u224850.000 cells per well and incubated on the antibody patterns. Usually, cells were incubated for 4\u20136 hr at 37\u00b0C for adhesion and then shifted to 25\u00b0C overnight to accumulate Kb molecules at the cell surface for a better signal-to-noise ratio of patterned Kb molecules. For co-capturing experiments, samples were then kept at 25\u00b0 C or shifted back to 37\u00b0C for 3\u20134 hr to allow for the dissociation of \u03b22m.\n\nFor each experiment fresh antibody micropatterns are generated, representing technical replicates. The experiments were individually repeated on different days at least three times and representative images are shown in the respective figures. For each experimental condition, at least triplicates were performed per experiment. In this setup, the individual cells seeded onto the antibody micropatterns represent the biological replicates.\n\n### Antibodies\n\nMouse monoclonal hybridoma supernatants Y3 (against the complex of Kb free heavy chain with \u03b22m (H\u00e4mmerling et al., 1982), 27-11-13S (against the complex of Db free heavy chain with \u03b22m (Ozato and Sachs, 1981), hemagglutinin (HA) 12CA5 (Niman et al., 1983), and BBM.1 (Brodsky et al., 1979) were described previously. Antibodies for immunoprecipitation were rabbit anti-GFP (Abcam ab290), rabbit antisera against H-2Kb and H-2Db (Charles River Laboratories, Kisslegg, Germany), and goat anti-rabbit IgG-AP conjugate (1706518, Biorad, Munich, Germany). Secondary antibody against the HA-antibody was donkey anti-mouse IgG Alexa Fluor 568 (a10037, Thermo Fisher Scientific, Darmstadt, Germany).\n\n### Dyes\n\nPurified antibodies were either labeled with the Alexa Fluor\u2212647 NHS ester (Y3, 27-11-13S and 12CA5) or with the Atto 542 NHS ester (BBM.1) according to the manufacturers\u00b4 protocols. Alexa Fluor\u2212647 NHS was obtained from Thermo Fisher Scientific (Darmstadt, Germany) and the Atto 542 NHS from ATTO-TEC (Siegen, Germany).\n\n### Peptides\n\nPeptides were synthesized by GeneCust (Ellange, Luxemburg) and emc microcollections (T\u00fcbingen, Germany) and purified by HPLC (90% purity). The Kb-specific peptide SL8 (SIINFEKL in the single-letter amino acid code) was labeled with the fluorescent dye 5\u2019-carboxytetramethylrhodamine (TAMRA) on the lysine side chain (avoiding interference with peptide binding to Kb) to give SIINFEKLTAMRA. Labeled and unlabeled peptides were added to the cells at a final concentration of 2 \u00b5M for 15\u201330 min at 37\u00b0C to detect peptide binding. Cells were then washed with phosphate buffered saline (PBS, 10 mM phosphate pH 7.5, 150 mM NaCl), fixed, and observed by confocal laser scanning microscopy (cLSM).\n\n### Cell lines and gene expression\n\nFor experiments, we used STF1 TAP-deficient human fibroblasts (kindly provided by Henri de la Salle, Etablissement de Transfusion Sanguine de Strasbourg, Strasbourg, France; see (de la Salle et al., 1999) for reference). These cells were chosen to make sure that only the murine allotype H-2Kb was investigated, without interference of other murine MHC I allotypes that might cross-react with the used antibodies. STF1 cells were authenticated by HLA haplotype genotyping; they were regularly tested for mycoplasma. The cells were stably transduced with Kb-GFP, Db-GFP, and E3-HA-Kb-GFP. Lentiviruses were produced and used for gene delivery as described previously (Hein et al., 2014). For co-capturing experiments, co-transduced STF1 cells were used. The cells were first selected with puromycin for E3-HA-Kb (the additional E3 tag (EIAALEK)3 is a 21 amino-acid long extracellular tag that was initially introduced for co-staining experiments). Cells were then transduced with the indicated Kb-GFP constructs and h\u03b22m where indicated and again selected with puromycin to obtain STF1/E3-HA-Kb+Kb GFP or STF1/E3-HA-Kb+Kb-h\u03b22m-GFP (single chain Kb, single chain construct in which the light chain \u03b22m is fused by a linker to the Kb heavy chain).\n\n### Staining with the K4 peptide\n\nThe K4 peptide was synthesized by emc microcollections (T\u00fcbingen, Germany). The E3-tag specific peptide K4\u00a0(Litowski and Hodges, 2002; Yano et al., 2008)\u00a0(a 28 amino-acid long peptide abbreviated as (KIAALKE)4 in the single-letter amino acid code) was labeled with an Atto 633 fluorophore at the N terminus. For co-staining experiments, cells were fixed with 3% paraformaldehyde (PFA), washed, and permeabilized with 0.1% Triton X-100. The K4Atto633 peptide was added to the cells at a final concentration of 25 nM in PBS and incubated for 5 min at RT to stain the transduced E3-HA-Kb construct.\n\n### Immunofluorescence stainings\n\nFor antibody co-staining experiments, cells were fixed with 3% PFA, washed and permeabilized with 0.1% Triton X-100 and stained with the respective antibodies.\n\n### Microscopy\n\nA confocal laser scanning microscope (LSM 510 Meta, Carl Zeiss Jena GmbH, Germany) equipped with argon and helium-neon lasers at 488, 543 and 633 nm was used. Images were recorded with a 63x Plan Apochromat oil objective (numerical aperture 1.4) at a resolution of 1596 \u00d7 1596 pixels. Data acquisition was performed with the LSM 510 META software, release 3.2 (Carl Zeiss Jena GmbH). During image acquisition, patterns and cells were imaged in the same focal plane at a pinhole of \u22481 Airy unit. Image analysis and processing were performed using ImageJ (National Institutes of Health, Bethesda, USA). Image processing comprises cropping, rotation and adjustment of brightness and contrast levels.\n\nGenerally, all cells on the antibody micropatterns were scanned by eye, and representative cells were chosen for image acquisition. Due to the range of expression levels, only cells with a moderate expression level were selected for evaluation. Only adhered cells were evaluated; cells with altered morphologies (e.g. apoptotic cells) were excluded.\n\n### Quantification of co-captured proteins\n\nTo compare the spatial distribution of Kb-GFP between the pattern elements and the pattern element interspaces, we determined the mean fluorescence intensity of GFP in the entire cell area and also for the areas on the pattern elements (ImageJ, National Institutes of Health, Bethesda, USA). The ratio of fluorescence intensity on pattern elements over total fluorescence intensity was calculated. Control experiments (peptide addition, incubation at 25\u00b0C and the single chain construct) gave a 1.1 ratio, and thus this was defined as the background signal. The co-capturing experiments usually showed a ratio of 1.3 (Figure 3C). For each condition,\u00a0\u2265\u00a014 cells of\u00a0\u2265\u00a02 individual experiments were used.\n\n### Co-immunoprecipitation\n\nFor co-immunoprecipitation with the anti-HA antibody, co-transduced (E3-HA-Kb+Kb-GFP) and selected STF1 cells were incubated at 25\u00b0C overnight. The next day, cells were incubated in presence or absence of 10 \u00b5M SL8 for 10 min at 25\u00b0C, then shifted to 37\u00b0C for 15 min, trypsinised and harvested. Cell pellets were lysed in native lysis buffer (50 mM Tris-Cl (pH 7.4), 150 mM NaCl, 5 mM EDTA, and 1% Triton X-100) for 1 hr at 4\u00b0C. After lysis, the supernatant was immunoprecipitated with the anti-HA antibody for 30 min at 4\u00b0C. Beads were washed and resuspended in Laemmli sample buffer (LSB) buffer and boiled at 95\u00b0C for 10 min. The immunoisolates were separated by SDS-PAGE and immunoblotted sequentially with an anti-GFP antibody and an anti-HA antibody. The experiment was performed three times.\n\nFor co-immunoprecipitation of the cell surface Kb molecules with the biotinylated K4 peptide (K4biotin), co-transduced (E3-HA-Kb+Kb-GFP) and selected STF1 cells were incubated at 25\u00b0C overnight. Next day, cells were incubated in presence or absence of 10 \u00b5M SL8 for 10 min at 25\u00b0C. E3-tagged Kb-molecules were labeled with K4biotin for 5 min at room temperature using 200 nM biotinylated K4 peptide. Following biotinylation, cells were placed at 37\u00b0C for 15 min to allow for co-capture. Cells were collected into native lysis buffer (50 mM Tris-Cl (pH 7.4), 150 mM NaCl, 5 mM EDTA, and 1% Triton X-100) by scraping and lysed for 45 min at 4\u00b0C. Biotinylated E3-HA-Kb (with K4biotin) was immunoprecipitated from post-nuclear supernatants using neutravidin-agarose beads (Thermo Fisher Scientific, Darmstadt Germany). Beads were washed in lysis buffer and wash buffer (50 mM Tris-Cl (pH 7.4), 150 mM NaCl, 5 mM EDTA, and 0.1% Triton X-100) and supplemented with endogylcosidase F1 for 2 hr at 37\u00b0C, or left untreated. Isolated proteins were retrieved from beads by boiling and separated by SDS-PAGE. Kb-GFP was detected by anti-GFP antiserum and E3-HA-Kb was detected by 12CA5 (anti-HA) following western blotting. The experiment was performed twice.\n",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "0ee7cb35-1c88-4fa9-af97-89b6e67f7636",
+      "submission_id": "9e63d221-153f-4e6a-8872-961b23e78262",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34150.013](https://doi.org/10.7554/eLife.34150.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A novel two-hybrid antibody micropattern assay reveals conformation-specific cell surface clustering of MHC I proteins\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Michael L Dustin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Arup Chakraborty as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers agreed that the use of micro contact printing to evaluate lateral interactions MHC class I proteins in situ was novel and presented a useful new approach to such problems. There was a consensus that the tool would be more powerful if the patterns were quantified and it was felt that this would be straight forward as the patterns are user defined and should be easy to segment and measure. This might allow application to weaker interactions where results may not as obvious.\n\nEssential revisions:\n\n1) Quantify imaging results and validate for this example. Given this signal to noise, how weak an association could be detected?\n\n2) We would strongly recommend not using the word cluster to describe the patterning of class I molecules with glass bound Abs. While this is clearly a useful technique, it is highly artificial, and for all we know, each \"cluster\" could be a single pair of co-localized Abs. Cluster has been used (appropriately) in the past to refer to spontaneously concentrated class I molecules, likely present in membrane domains that limit their ability to diffuse from each other. The use of cluster in the present study muddies the waters considerably, and will likely increase confusion, rather than the opposite.\n\n3) Is it possible to reverse the association of non-conformed Kb molecules by addition peptide and or \u03b22m?\n\n4) Subsection \u201cStabilizing effect of conformation-specific antibodies allows for differential patterning of Kb dimers and free heavy chains\u201d, first paragraph: regarding the use of TAP negative cells (whose original publication should be cited), Day et al., 1994, reported that TAP positive cells actually express more peptide receptive cell surface molecules, undermining the reasoning of these statements.\n\n5) \"So their endogenous class I molecules would not interfere with the Ab micropatterns\". This should be rephrased as it is not clear.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"A novel two-hybrid antibody micropattern assay reveals conformation-specific cell surface clustering of MHC I proteins\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The reviewers have opted to remain anonymous.\n\nSummary:\n\nThe original reviewers agree that you have provided a thoughtful response to essential revisions proposed, but still raise concerns about the current version that prevent it from being published in eLife. The reviewing editor has now carefully examined these remaining concerns including a review of the literature regarding in situ analysis of protein interactions using microcontact printing.\n\nEssential revisions:\n\n1) The current application of the method is thought to be of high value and provides significant biological insight. The method itself is too conceptually similar to earlier work from the Sch\u00fctz lab (which you have cited correctly) to be referred to as a \"novel\" assay and thus it is requested that you remove the word \"novel\" from the title and anywhere else in the manuscript this is claimed, unless you specifically identify the novel aspect. The reviewers acknowledge that you have literally created a \"two-hybrid\" version based on using the epitope tagged bait (hybrid 1) and the fluorescent tagged prey (hybrid 2), which Sch\u00fctz didn't fully realise, but they had already used the bait-prey terminology in their 2010 Jove paper, and conceptually it is too small an advance in terms of assay technology. They didn't need to make a first hybrid as they tested a transmembrane bait interacting with a cytoplasmic prey. But they have everything else you describe and more sophisticated analysis.\n\n2) While the reviewers appreciate that you define cluster in the context of this study, \"cluster\" with respect to MHC class I antigens has been previously defined and this needs to be respected within papers in this field to avoid confusion. It is also felt that with the ability to detect only a 10% steady state association with the current method (based on use of 1.1 as a threshold) that you apparently can't detect the earlier defined MHC class I clusters. But you are not saying these don't exist. A compromise would be to refer to the phenomenon you are studying as \"induced clusters\" throughout to distinguish them from previously described spontaneous clusters of MHC class I trimers, that you neglect due to your detection threshold. It is essential to clarify this or use a term not including \"cluster\".\n\n3) Proposed new title: \"A two-hybrid antibody micropattern assay reveals conformation-specific cell surface induced clustering of MHC I proteins\".\n\n4) You describe the quantitative threshold of 1.1 in the response to reviewers, but we couldn't find this in the paper. Please include in the Materials and methods the 1.1 threshold for defining an induced cluster in the system. It is not clear how the gap between 1.1 and 1.3 is defined as a grey zone in the rebuttal, but you should also mention this if you feel it is important to actually set the threshold at 1.3, although this is very close to your experimental result.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for choosing to send your work entitled \"A novel two-hybrid antibody micropattern assay reveals cell surface clustering of MHC I heavy chains\" for consideration at eLife. Your article has been reviewed by a Senior Editor and a Reviewing editor, and we are prepared to consider a revised submission with no guarantees of acceptance.\n\nThere is no editorial policy against use of \"novel\" in titles of eLife papers, but this has been infrequent \u2013 at around 0.2%. In the first decision letter the editors did override one reviewer in acknowledging that the approach was novel, but when the reviewer persisted in questioning this an editor went to the primary literature and looked at the precedents specifically to address this issue independently. As described in the second decision letter the opinion of the editors was then changed to agree with the reviewer that the core of the assay technology was well described earlier and that this assay is a novel application of an existing assay concept. Since this is too much information to convey in the title, the decision was to remove \"novel\" from the title and then explain the more nuanced novelty of this application in the text. The editors still ask that you remove novel from the title.\n\nThe second issue has to do with the definition of cluster and whether this is misleading in this context. The editors still ask that you change this terminology to avoid confusion and quantitative implications of the term. The interaction leading to a signal in this assay could be sub-stoichiometric, 1:1 or super-stiochiometric. The term cluster suggests groupings of greater than 1:1, because 1:1 would be called a dimer, and less than 1:1 would not be cluster. This method doesn't provide any information about stoichiometry, but just that it leads to co-localization of prey with the bait by fluorescence microscopy. The heavy chain interaction you are detecting may very well be a dimer, based on other literature, but this cannot be determined from this data. So describing the process as a cluster seems to be an over-interpretation. The bait and pray are simply co-localized at conventional visible light resolution. The authors should refer to co-localization, co-capture or enrichment to precisely describe what the assay detects as a ratio of on/off pattern as quantified in Figure 3?\n\nThe last issue was the baseline co-localization of prey with bait, which is described as generating a ratio of 1.1 of on/off pattern. This ratio was 1.3 for conditions leading to the empty MHC I heavy chains. Is 1.1 measured under conditions favoring the full heterotrimer of MHC I, peptide and \u03b22m, significantly different than 1.0? The quantification was new data added by the authors to Figure 3. This is where 10% came from. The authors may not have data to determine if 1.1 is significantly different than 1.0, but as a discussion point, they might discuss that the previously describe interactions of MHC I proteins on cells may be captured in this number, which would then be a biological background for this assay method and thus will impact its sensitivity. This would also put the relative magnitude of other forms of MHC clustering and this phenomenon in context. More experiments would be needed to sort this out- probably use of different controls to find proteins that are totally unaffected by capture of some of the MHC I molecules to the patterned antibodies. The authors are urged to put these aspects of this assay and earlier investigations of MHC I distribution on the cell surface in context as best they can.\n",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88ca6c71-f552-4d05-b12b-1aae966f09b1",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C1",
+      "claim": "A two-hybrid assay based on antibody micropatterns can be used to study protein-protein interactions at the cell surface of major histocompatibility complex class I (MHC I) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate a two-hybrid assay based on antibody micropatterns to study protein-protein interactions at the cell surface of major histocompatibility complex class I (MHC I) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data demonstrating the development and application of this assay throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "13a51cb4-bcd3-448d-9f18-d765cb41a2f5",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C2",
+      "claim": "Anti-tag and conformation-specific antibodies are used for individual capture of specific forms of MHC I proteins that allow for location- and conformation-specific analysis by fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-tag and conformation-specific antibodies are used for individual capture of specific forms of MHC I proteins that allow for location- and conformation-specific analysis by fluorescence microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript demonstrates this through experimental data showing capture of different MHC I forms using Y3, 27-11-13S, and anti-HA antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "c8d62d8e-19b6-4d25-9d2f-9ecb31bd6464",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C3",
+      "claim": "Homotypic in cis interactions occur exclusively between MHC I free heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that homotypic in cis interactions occur exclusively between MHC I free heavy chains, and we identify the dissociation of the light chain from the MHC I protein complex as a condition for MHC I in cis interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 3 and 4 showing co-capture and co-immunoprecipitation only under conditions where \u03b22m dissociates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "99884c03-ab02-43e8-bb72-6d0a65de8cd9",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C4",
+      "claim": "The dissociation of \u03b22m from the MHC I protein complex is a condition for MHC I in cis interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that homotypic in cis interactions occur exclusively between MHC I free heavy chains, and we identify the dissociation of the light chain from the MHC I protein complex as a condition for MHC I in cis interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data shows that interactions occur at 37\u00b0C (where \u03b22m dissociates) but not at 25\u00b0C or in the presence of peptide (which stabilizes \u03b22m binding).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "fcb08842-cacf-49f4-9c70-2c558bf6e905",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C5",
+      "claim": "Protein-protein interactions involving membrane proteins under physiological conditions, specific protein conformations or subpopulations, low affinities, or defined locations in the cell are difficult to investigate.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-protein interactions are difficult to investigate, especially when they involve membrane proteins under physiological conditions, specific protein conformations or subpopulations, low affinities, or defined locations in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field based on the technical challenges described.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "a77106af-5481-43d3-ab3e-76fbf8d08d3e",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C6",
+      "claim": "Yeast two-hybrid screens and co-immunoprecipitation approaches do not usually meet the challenges of investigating membrane protein interactions under physiological conditions with specific conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such challenges are not usually met by yeast two-hybrid screens and co-immunoprecipitation approaches; instead, they require technically demanding methods such as fluorescence resonance energy transfer (FRET) or fluorescence correlation spectroscopy, which only work in some cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about the limitations of conventional methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "e85d73df-18fb-4b10-b994-13609769160f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C7",
+      "claim": "Antibody-based capture assays on solid supports have been described that can be used in bait-prey experiments in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, antibody-based capture assays on solid supports have been described that can be used in bait-prey experiments in live cells (L\u00f6chte et al., 2014; Schwarzenbacher et al., 2008; Weghuber et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "b5ae7821-9bdc-4a53-b32b-65a339691148",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C8",
+      "claim": "MHC I proteins consist of a polymorphic transmembrane heavy chain (HC), the non-covalently bound light chain beta-2 microglobulin (\u03b22m), and a peptide of eight to ten amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "MHC I proteins consist of a polymorphic transmembrane heavy chain (HC), the non-covalently bound light chain beta-2 microglobulin (\u03b22m), and a peptide of eight to ten amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "ce55434c-80c0-4de7-841b-ff2b0c96a540",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C9",
+      "claim": "Assembly of HC, \u03b22m, and peptide takes place in the endoplasmic reticulum (ER), followed by transport to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly of HC, \u03b22m, and peptide takes place in the endoplasmic reticulum (ER), followed by transport to the cell surface, where MHC I proteins present the bound peptides to T cell receptors of cytotoxic T cells; they also bind inhibitory receptors on Natural Killer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about MHC I biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "a7d258f4-bf57-4669-9044-cceded44b232",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C10",
+      "claim": "MHC I proteins present bound peptides to T cell receptors of cytotoxic T cells at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly of HC, \u03b22m, and peptide takes place in the endoplasmic reticulum (ER), followed by transport to the cell surface, where MHC I proteins present the bound peptides to T cell receptors of cytotoxic T cells; they also bind inhibitory receptors on Natural Killer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "444b34ca-5691-4226-8c52-648271fd475a",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C11",
+      "claim": "MHC I proteins bind inhibitory receptors on Natural Killer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly of HC, \u03b22m, and peptide takes place in the endoplasmic reticulum (ER), followed by transport to the cell surface, where MHC I proteins present the bound peptides to T cell receptors of cytotoxic T cells; they also bind inhibitory receptors on Natural Killer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "3ad23eec-5f63-4393-8315-8ecbfd7b06ac",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C12",
+      "claim": "MHC I antigen presentation is central to the cellular immune response of jawed vertebrates against viruses, intracellular parasites, and tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "MHC I antigen presentation is central to the cellular immune response of jawed vertebrates against viruses, intracellular parasites, and tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of MHC I in immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "2d99ac56-5736-4340-9fbc-93079491633f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C13",
+      "claim": "At the cell surface, MHC I proteins exist in three different forms: the HC/\u03b22m/peptide trimers, the 'peptide-empty' HC/\u03b22m dimers, and the 'free' heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cell surface, MHC I proteins exist in three different forms: the HC/\u03b22m/peptide trimers, the 'peptide-empty' HC/\u03b22m dimers derived from them by dissociation of the peptide, and the 'free' heavy chains derived from the dimers by dissociation of \u03b22m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "db380856-cfe7-430c-b9fd-2e2435e4f156",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C14",
+      "claim": "Peptide-empty HC/\u03b22m dimers are derived from HC/\u03b22m/peptide trimers by dissociation of the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cell surface, MHC I proteins exist in three different forms: the HC/\u03b22m/peptide trimers, the 'peptide-empty' HC/\u03b22m dimers derived from them by dissociation of the peptide, and the 'free' heavy chains derived from the dimers by dissociation of \u03b22m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I dynamics at the cell surface.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "ffee13f2-a477-428f-b155-39cf5f00a231",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C15",
+      "claim": "Free heavy chains are derived from HC/\u03b22m dimers by dissociation of \u03b22m.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cell surface, MHC I proteins exist in three different forms: the HC/\u03b22m/peptide trimers, the 'peptide-empty' HC/\u03b22m dimers derived from them by dissociation of the peptide, and the 'free' heavy chains derived from the dimers by dissociation of \u03b22m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I dynamics at the cell surface.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "b6586748-eb79-43da-9056-071d9053fef2",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C16",
+      "claim": "The lateral association of MHC I proteins has been observed before.",
+      "claim_type": "EXPLICIT",
+      "source": "While the lateral association of MHC I proteins has been observed before (Capps et al., 1993; Arosa et al., 2007; Lu et al., 2012; Matko et al., 1994), other researchers have not detected them (Sz\u00f6ll\u00f6si et al., 1989; Damjanovich et al., 1983; Liegler et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "19ac45f6-0d53-40fe-aa50-6c9e06761efb",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C17",
+      "claim": "Some researchers have not detected lateral association of MHC I proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While the lateral association of MHC I proteins has been observed before (Capps et al., 1993; Arosa et al., 2007; Lu et al., 2012; Matko et al., 1994), other researchers have not detected them (Sz\u00f6ll\u00f6si et al., 1989; Damjanovich et al., 1983; Liegler et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "e4831bc3-bb76-4117-a88f-efd7a7da405f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C18",
+      "claim": "Optical methods have not provided conclusive evidence which of the three forms of MHC I are interacting.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical methods have not provided conclusive evidence which of the three forms are interacting, and biochemical approaches have not clarified where in the cell the binding occurs (Capps et al., 1993; Matko et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and represents a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "183eef25-6049-4ac0-84c8-868529e5b4f2",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C19",
+      "claim": "Biochemical approaches have not clarified where in the cell MHC I binding occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical methods have not provided conclusive evidence which of the three forms are interacting, and biochemical approaches have not clarified where in the cell the binding occurs (Capps et al., 1993; Matko et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "1c4239df-7359-49fa-bd2b-028ab28a60f4",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C20",
+      "claim": "HC/\u03b22m dimers and free heavy chains have short half-lives in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "To add to the complexity, the HC/\u03b22m dimers and the free heavy chains have short half-lives in the cell, which complicates their analysis (Montealegre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "75f0a186-f093-45dc-8e75-1cb414e994cf",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C21",
+      "claim": "Kb-GFP is only captured by the anti-Kb antibody Y3 and not by an antibody specific for Db (27-11-13S).",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments demonstrate that Kb-GFP is only captured by the anti-Kb antibody Y3 and not by an antibody specific for Db (27-11-13S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "804422ed-82fa-47d7-a708-84f6227f8c5f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C22",
+      "claim": "The Y3 epitope reacts specifically with residues of the \u03b12 helix of Kb-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The Y3 epitope reacts specifically with residues of the \u03b12 helix of Kb-GFP whereas the anti-HA antibody recognizes the additional HA-tag that was N-terminally fused to Kb-GFP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and represents established knowledge about the Y3 antibody.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f91e3ba5-3fe1-4c11-81de-59aee304e63a",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C23",
+      "claim": "The anti-HA antibody recognizes the HA-tag that was N-terminally fused to Kb-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The Y3 epitope reacts specifically with residues of the \u03b12 helix of Kb-GFP whereas the anti-HA antibody recognizes the additional HA-tag that was N-terminally fused to Kb-GFP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "9b2803ea-f864-4272-9cc9-74f524d6aedb",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C24",
+      "claim": "Y3 successfully captures both Kb-GFP and HA-Kb-GFP constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Y3 successfully captures both constructs, whereas HA only recognizes the HA-tagged molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "bc9e1d97-01e6-4ab3-ac2b-208561cf169e",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C25",
+      "claim": "The anti-HA antibody only recognizes HA-tagged molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Y3 successfully captures both constructs, whereas HA only recognizes the HA-tagged molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "49866770-e559-460c-ac5b-087df84ca8e6",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C26",
+      "claim": "STF1 cells lack TAP (the transporter associated with antigen processing).",
+      "claim_type": "EXPLICIT",
+      "source": "In STF1 cells, which lack TAP (the transporter associated with antigen processing) and thus cannot load MHC I proteins with high-affinity peptides in the ER (de la Salle et al., 1999), such dimers can be accumulated at the cell surface by incubation at 25\u00b0C (Ljunggren et al., 1990; Montealegre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the original characterization of STF1 cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "db77eb58-c4d8-42d5-9503-e2d025d89f44",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C27",
+      "claim": "STF1 cells cannot load MHC I proteins with high-affinity peptides in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "In STF1 cells, which lack TAP (the transporter associated with antigen processing) and thus cannot load MHC I proteins with high-affinity peptides in the ER (de la Salle et al., 1999), such dimers can be accumulated at the cell surface by incubation at 25\u00b0C (Ljunggren et al., 1990; Montealegre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents established knowledge about TAP-deficient cells.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "25924fa9-3108-4226-904d-83b280666fd9",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C28",
+      "claim": "Peptide-receptive KbHC/\u03b22m dimers can be accumulated at the cell surface by incubation at 25\u00b0C in STF1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In STF1 cells, which lack TAP (the transporter associated with antigen processing) and thus cannot load MHC I proteins with high-affinity peptides in the ER (de la Salle et al., 1999), such dimers can be accumulated at the cell surface by incubation at 25\u00b0C (Ljunggren et al., 1990; Montealegre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "9aa0c2fb-01c2-485a-9d24-8128b34e1a4a",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C29",
+      "claim": "Peptide-receptive KbHC/\u03b22m dimers can be detected by subsequent binding of fluorescently labeled peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "These peptide-receptive KbHC/\u03b22m dimers can be detected by subsequent binding of fluorescently labeled peptide (Saini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and demonstrated experimentally in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "c27bfabc-1873-470c-a100-8f9d0138f94c",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C30",
+      "claim": "Peptide-receptive Kb/\u03b22m dimers are captured in Y3 antibody patterns at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a striking patterned staining of the fluorescent peptide, which demonstrates that peptide-receptive Kb/\u03b22m dimers had been captured in the patterns (Figure 2A, column 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2A showing SL8TAMRA binding to patterned cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "2ebd2bbf-52af-4154-b931-57a81284e528",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C31",
+      "claim": "Pre-incubation with unlabeled SIINFEKL peptide blocks SL8TAMRA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "To show that binding of the peptide was specific, we pre-incubated the cells with unlabeled SIINFEKL peptide, which blocked SL8TAMRA binding (Figure 2A, column 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "0320c43d-5087-4baf-8f1b-bfed4e691cf6",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C32",
+      "claim": "Both Y3 and anti-HA antibodies capture peptide-receptive KbHC/\u03b22m dimers on the surface of STF1 cells at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both Y3 and anti-HA antibodies captured peptide-receptive KbHC/\u03b22m dimers on the surface of the STF1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2A showing peptide binding on both types of patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "9a1c15f3-ac56-498d-b600-3bf3938f0604",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C33",
+      "claim": "At 37\u00b0C, dissociation of \u03b22m from KbHC/\u03b22m dimers occurs rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "At 37\u00b0C, dissociation of \u03b22m from KbHC/\u03b22m dimers occurs rapidly, whereas at 25\u00b0C, the rate of dissociation of \u03b22m is significantly reduced (Montealegre et al., 2015; Day et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "4e19b428-8329-4507-8aec-832b572000ba",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C34",
+      "claim": "At 25\u00b0C, the rate of dissociation of \u03b22m from KbHC/\u03b22m dimers is significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "At 37\u00b0C, dissociation of \u03b22m from KbHC/\u03b22m dimers occurs rapidly, whereas at 25\u00b0C, the rate of dissociation of \u03b22m is significantly reduced (Montealegre et al., 2015; Day et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "cd9ee8fe-fae6-4f17-9418-8991bada95f8",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C35",
+      "claim": "After incubation at 37\u00b0C, HA-Kb-GFP patterns show no binding of SL8TAMRA.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, after incubation at 37\u00b0C, HA-Kb-GFP patterns showed no binding of SL8TAMRA (Figure 2A, column 4), which shows that the HA-captured MHC I proteins lost their peptide-binding capacity, probably due to the dissociation of \u03b22m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "7a6c9626-7f00-4a2c-b2d9-f89fdd94b77f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C36",
+      "claim": "HA-captured MHC I proteins lose their peptide-binding capacity at 37\u00b0C, probably due to the dissociation of \u03b22m.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, after incubation at 37\u00b0C, HA-Kb-GFP patterns showed no binding of SL8TAMRA (Figure 2A, column 4), which shows that the HA-captured MHC I proteins lost their peptide-binding capacity, probably due to the dissociation of \u03b22m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data and supported by knowledge about \u03b22m dissociation kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "051fa1e9-3046-43e8-b651-d3b9cbd9ba75",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C37",
+      "claim": "HA-Kb-GFP captured with Y3 retains its ability to bind peptide at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Very interestingly, HA-Kb-GFP captured with Y3 retained its ability to bind peptide at 37\u00b0C (Figure 2A, column 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2A showing continued SL8TAMRA binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "39f879f1-6d36-4311-a242-2d1ceedcb44a",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C38",
+      "claim": "The \u03b22m-dependent Y3 antibody stabilizes the KbHC/\u03b22m dimer complex by preventing the dissociation of \u03b22m.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the \u03b22m-dependent Y3 antibody stabilizes the KbHC/\u03b22m dimer complex to which it is bound by preventing the dissociation of \u03b22m, similar to the action of peptide (Townsend and Bodmer 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing peptide binding is maintained on Y3 patterns at 37\u00b0C, and supported by citation to similar peptide stabilization effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "3c58c825-9508-41da-a6f1-c51a498481d5",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C39",
+      "claim": "Y3 micropatterns stain positive for \u03b22m at both 25\u00b0C and 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, the Y3 micropatterns stained positive for \u03b22m at both temperatures (Figure 2B, columns 1 and 2), whereas anti-HA micropatterns stained for \u03b22m only at 25\u00b0C (Figure 2B, columns 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2B using BBM.1Atto542 staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "ebec06a7-9ba8-4c60-94d9-b034839a7d2f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C40",
+      "claim": "Anti-HA micropatterns stain for \u03b22m only at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, the Y3 micropatterns stained positive for \u03b22m at both temperatures (Figure 2B, columns 1 and 2), whereas anti-HA micropatterns stained for \u03b22m only at 25\u00b0C (Figure 2B, columns 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "73b4da3f-1df4-4c55-b7f9-e5f45da350a6",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C41",
+      "claim": "Addition of SIINFEKL to cells on anti-HA-micropatterns before shifting to 37\u00b0C restores BBM.1Atto542 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "When we added SIINFEKL to the cells on anti-HA-micropatterns before shifting them to 37\u00b0C, we observed that BBM.1Atto542 staining was restored in these samples (Figure 2B, column 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "a4704ff1-7149-45c4-8ce5-77be9bd8ef88",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C42",
+      "claim": "Captured Kb free heavy chains can be generated by inducing the dissociation of \u03b22m from KbHC/\u03b22m dimers captured on anti-HA patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that captured Kb free heavy chains can be generated by inducing the dissociation of \u03b22m from KbHC/\u03b22m dimers captured on anti-HA patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental data in Figure 2 showing loss of \u03b22m and peptide-binding capacity at 37\u00b0C on anti-HA patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6f90af32-49e1-4b4c-8228-930f8ac6cacf",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C43",
+      "claim": "Three different forms of Kb can be selectively held on the surface of STF1 cells: free Kb heavy chains (at 37\u00b0C on HA patterns), KbHC/\u03b22m dimers (at 25\u00b0C on anti-HA patterns, or at 25 or 37\u00b0C on Y3 patterns), and KbHC/\u03b22m/peptide trimers (by addition of peptide on anti-HA and Y3 patterns).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we are able to selectively hold three different forms of Kb on the surface of STF1 cells: free Kb heavy chains (at 37\u00b0C on HA patterns), KbHC/\u03b22m dimers (at 25\u00b0C on anti-HA patterns, or at 25 or 37\u00b0C on Y3 patterns), and KbHC/\u03b22m/peptide trimers (by addition of peptide on anti-HA and Y3 patterns).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the combined experimental data from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f43ee2cd-cc40-4201-831a-b3c5091e40b0",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C44",
+      "claim": "Recruitment of Kb-GFP to anti-HA antibody micropatterns occurs specifically at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of Kb-GFP (green channel) to the anti-HA antibody micropatterns occurs specifically at 37\u00b0C and can be inhibited by addition of the SIINFEKL (SL8) peptide (column 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6245a71f-2c16-4fbe-9883-41fea4098bad",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C45",
+      "claim": "Recruitment of Kb-GFP to anti-HA antibody micropatterns can be inhibited by addition of SIINFEKL peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of Kb-GFP (green channel) to the anti-HA antibody micropatterns occurs specifically at 37\u00b0C and can be inhibited by addition of the SIINFEKL (SL8) peptide (column 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "b63fd1db-2816-4ecb-9115-e43813266921",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C46",
+      "claim": "The single chain mutant scKb-GFP (which has \u03b22m covalently linked to the Kb heavy chain) is not recruited to anti-HA antibody micropatterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The single chain mutant, scKb-GFP (which has \u03b22m covalently linked to the Kb heavy chain) is also not recruited to the antibody micropatterns (column 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "79de0ae0-68d0-4dc0-91fa-84d68517551c",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C47",
+      "claim": "Kb does not associate in cis as long as \u03b22m is bound.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Kb does not associate in cis as long as \u03b22m is bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the lack of co-capture at 25\u00b0C, in the presence of peptide, or with single-chain constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "9fc4091a-1dce-4204-971d-b319410cfaae",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C48",
+      "claim": "The in cis interaction of Kb free heavy chains is not simply induced by the GFP domain of the Kb-GFP fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These controls also demonstrated that the in cis interaction of the Kb free heavy chains was not simply induced by the GFP domain of the Kb-GFP fusion proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the control experiments with peptide addition and single-chain constructs showing no interaction despite presence of GFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "670020e0-641b-43c4-a39e-3fbd120bcf92",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C49",
+      "claim": "The free heavy chain of E3-HA-Kb is captured on the patterns and recruits the free heavy chain of Kb-GFP by an in cis interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the free heavy chain of E3-HA-Kb is indeed captured on the patterns and then recruits the free heavy chain of Kb-GFP by an in cis interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the colocalization of K4Atto633 (binding E3-HA-Kb) and Kb-GFP in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "96818e9e-7c9e-4598-911f-c36d75d8095e",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C50",
+      "claim": "Kb free heavy chains, but not KbHC/\u03b22m dimers or KbHC/\u03b22m/peptide trimers, associate in cis in the plasma membrane of live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data demonstrate that Kb free heavy chains, but not KbHC/\u03b22m dimers or KbHC/\u03b22m/peptide trimers, associate in cis in the plasma membrane of live cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the combined experimental data from Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "abcc8dd9-4fa2-4e85-871f-06c02bad2273",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C51",
+      "claim": "In murine and human cells, up to six MHC I allotypes co-exist at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In murine (and human) cells, up to six MHC I allotypes co-exist at the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MHC I genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "3975ef94-0c5a-48d2-bc67-8c405887718c",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C52",
+      "claim": "Weaker but still specific recruitment of Db-GFP to antibody pattern elements occurs, indicating heterotypic in cis interactions between Kb and Db.",
+      "claim_type": "EXPLICIT",
+      "source": "In an experiment with HA-Kb and Db-GFP performed in analogy to Figure 3B above, we observed weaker but still specific (initiated by the 37\u00b0C shift) recruitment of Db-GFP to the antibody pattern elements, indicating heterotypic in cis interactions between the two allotypes Kb and Db (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as observed data, though the figure is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "82c19c19-66d1-43de-a71d-003638853401",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C53",
+      "claim": "Kb-GFP is efficiently co-precipitated with HA-Kb after 37\u00b0C incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found efficient co-precipitation of Kb-GFP with HA-Kb, which was abolished if SIINFEKL peptide was added to the cells during the 37\u00b0C incubation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6865c9c6-bff3-4d2b-a2ce-a40a00f30c19",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C54",
+      "claim": "Co-precipitation of Kb-GFP with HA-Kb is abolished if SIINFEKL peptide is added during 37\u00b0C incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found efficient co-precipitation of Kb-GFP with HA-Kb, which was abolished if SIINFEKL peptide was added to the cells during the 37\u00b0C incubation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "a499ddb0-1e4b-45d2-99fe-1d35257a5c63",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C55",
+      "claim": "Only free heavy chains co-precipitate in the co-immunoprecipitation experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, just like in the micropattern assay, the peptide clearly inhibited the interaction, suggesting that only free heavy chains were co-precipitating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the peptide inhibition data in the co-immunoprecipitation experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "7bac345d-df8e-460b-9371-77ab2b61e10e",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C56",
+      "claim": "The two-hybrid assay circumvents the disadvantages of employing two different fluorescent proteins on the cytoplasmic tails of proteins of interest that may be biased through unspecific interactions and aggregation of the fluorescent tags.",
+      "claim_type": "EXPLICIT",
+      "source": "This two-hybrid assay circumvents the disadvantages of employing two different fluorescent proteins on the cytoplasmic tails of the proteins of interest (for example for FRET microscopy) that may be biased through unspecific interactions and aggregation of the fluorescent tags.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "0f21504f-791a-4d5c-aa49-202fd229e819",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C57",
+      "claim": "Previous experiments with FRET have revealed cluster formation of antibody-labelled MHC I proteins at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments with FRET have revealed cluster formation of antibody-labelled MHC I proteins at the cells surface, but the involvement of free heavy chains was only indirectly shown (Matko et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "cd26b112-45dc-4ab1-8bc2-606924d1e59d",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C58",
+      "claim": "The involvement of free heavy chains in MHC I clusters was only indirectly shown in previous FRET experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments with FRET have revealed cluster formation of antibody-labelled MHC I proteins at the cells surface, but the involvement of free heavy chains was only indirectly shown (Matko et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "270b630e-90b2-47e8-b1bb-38aacebeb935",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C59",
+      "claim": "Co-immunoprecipitation experiments revealed the existence of free heavy chain-dimers of different murine MHC I allotypes by pull-down with conformation-specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies involved co-immunoprecipitation experiments that revealed the existence of free heavy chain-dimers of different murine MHC I allotypes by pull-down with conformation-specific antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "00c0b461-ed6f-46de-9ebf-cbedb95753ab",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C60",
+      "claim": "Previous co-immunoprecipitation experiments could not exclude that detected MHC I interactions were enhanced or caused by detergents after cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it could not be excluded that the detected interactions were enhanced, or indeed caused, by detergents after cell lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "d0be7ea4-99c4-4e4b-98b0-1b1659828f7b",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C61",
+      "claim": "Pulse-chase experiments confirmed that MHC I proteins associate after they have traversed the medial Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional pulse-chase experiments confirmed that MHC I proteins associate after they have traversed the medial Golgi, but could not localize them to the cell surface (Capps et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "a16e62ee-2a84-4f59-bf55-575226be52a5",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C62",
+      "claim": "Previous pulse-chase experiments could not localize MHC I protein associations to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional pulse-chase experiments confirmed that MHC I proteins associate after they have traversed the medial Golgi, but could not localize them to the cell surface (Capps et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "b5dc9a44-e3f0-487d-8610-8ef4cf4ba4dc",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C63",
+      "claim": "Co-immunoprecipitation experiments confirm the association of Kb allotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Our own co-immunoprecipitation experiments confirm these observations for the murine Kb allotype, but they also lack spatial resolution (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "28aab318-b00e-4414-be49-2f4ac16f7640",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C64",
+      "claim": "Co-immunoprecipitation experiments lack spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our own co-immunoprecipitation experiments confirm these observations for the murine Kb allotype, but they also lack spatial resolution (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "d69f876e-1c58-4917-b2ec-4200eff64207",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C65",
+      "claim": "Differential co-immunoprecipitation of surface-biotinylated MHC I proteins confirms the presence of protein-protein associations at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential co-immunoprecipitation of surface-biotinylated MHC I proteins finally confirms the presence of protein-protein associations at the cell surface (Figure 4\u2014figure supplement 1), but even this method cannot entirely exclude the involvement of intracellular MHC I proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "683ad925-028a-4e78-9720-95d06218c272",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C66",
+      "claim": "Differential co-immunoprecipitation of surface-biotinylated MHC I proteins cannot entirely exclude the involvement of intracellular MHC I proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential co-immunoprecipitation of surface-biotinylated MHC I proteins finally confirms the presence of protein-protein associations at the cell surface (Figure 4\u2014figure supplement 1), but even this method cannot entirely exclude the involvement of intracellular MHC I proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "3d9abb4f-8789-4dc2-ac82-802e4e0cd5a8",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C67",
+      "claim": "The two-hybrid assay solves the questions of generation and location for MHC I protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our two-hybrid assay finally solves the questions of generation and location for MHC I protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6f733d3b-1c64-4544-94fe-c259d2de93d3",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C68",
+      "claim": "MHC I protein association depends on the generation of free heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate that MHC I protein association depends on the generation of free heavy chains, and together with our previous work (Montealegre et al., 2015), they suggest that these free heavy chains originate from the captured empty KbHC/\u03b22m dimers at the cell surface upon dissociation of \u03b22m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental data showing interactions only occur when \u03b22m dissociates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "e598b10c-828c-4c18-ba94-c520aaa4af0f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C69",
+      "claim": "Free heavy chains originate from captured empty KbHC/\u03b22m dimers at the cell surface upon dissociation of \u03b22m.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate that MHC I protein association depends on the generation of free heavy chains, and together with our previous work (Montealegre et al., 2015), they suggest that these free heavy chains originate from the captured empty KbHC/\u03b22m dimers at the cell surface upon dissociation of \u03b22m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f255418a-3c53-4664-b4e9-4cf15479b721",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C70",
+      "claim": "In cis interactions are happening at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "By holding the dimers in the anti-HA patterns and triggering the dissociation of \u03b22m with the 37\u00b0C shift, we were able to show that in cis interactions are indeed happening at the cell surface (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental design and data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "cb28df97-79cb-49ca-8b02-032380ce8baa",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C71",
+      "claim": "It is possible that free heavy chains are generated elsewhere in the cell by \u03b22m dissociation, for example in endosomes, and might associate in these locations also.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, it is possible that in addition, free heavy chains are generated elsewhere in the cell by \u03b22m dissociation, for example in endosomes, and that they might associate in these locations also.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative possibility that cannot be ruled out.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f72dedbb-acb6-42c7-8102-75310e15ca96",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C72",
+      "claim": "MHC I clusters identified by the Yewdell and Edidin groups contain peptide-bound MHC I proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The MHC I clusters identified by the Yewdell and Edidin groups (Yewdell, 2006; Matko et al., 1994) contain peptide-bound MHC I proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "12033c07-03e5-4c8b-a253-636c72e7035b",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C73",
+      "claim": "The cells used in this study were TAP-deficient and thus contained no, or few, peptides for binding to MHC I proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our cells were TAP-deficient and thus contained no, or few, peptides for binding to MHC I proteins, we would not have seen the clusters observed by them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the known properties of STF1 cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "d846cb01-af53-4724-b31d-936368aee8e1",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C74",
+      "claim": "If the Yewdell clusters are formed in the ER, they would not have formed in the experimental system upon addition of external peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "If, for example, the Yewdell clusters are formed in the ER then they would not even have formed in our system upon addition of external peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative explanation for differences between studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6417ee74-0bf0-4116-b6d9-8f2e1ec147fd",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C75",
+      "claim": "The spatial organization of bait proteins in the plasma membrane allows for the quantification of co-captured proteins into the antibody pattern elements.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial organization of bait proteins in the plasma membrane allows for the quantification of co-captured proteins into the antibody pattern elements (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the quantification shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "1417d745-b4c8-4b23-b4ee-b3c0875974b5",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C76",
+      "claim": "The background ratio for protein distribution in control experiments is 1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "In our setup, we determined the distribution of prey proteins in control experiments as biological background (this corresponds to our background ratio of 1.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measured value from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "91db5e0e-f62f-4f0f-9d1d-9b92722a46b6",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C77",
+      "claim": "MHC I in cis interactions at the cell surface might be a means of accelerated disposal for free heavy chains.",
+      "claim_type": "EXPLICIT",
+      "source": "They might be a means of accelerated disposal for free heavy chains, preventing re-binding of \u03b22m and peptide and perhaps leading to enhanced internalization and degradation in lysosomes (Montealegre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative hypothesis supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "a4896dbe-1a95-433d-9f5f-106113f490bc",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C78",
+      "claim": "MHC I in cis interactions might prevent re-binding of \u03b22m and peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "They might be a means of accelerated disposal for free heavy chains, preventing re-binding of \u03b22m and peptide and perhaps leading to enhanced internalization and degradation in lysosomes (Montealegre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "38dba6d1-1c66-4dc9-bb5a-5f83478ae2a0",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C79",
+      "claim": "MHC I in cis interactions might lead to enhanced internalization and degradation in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "They might be a means of accelerated disposal for free heavy chains, preventing re-binding of \u03b22m and peptide and perhaps leading to enhanced internalization and degradation in lysosomes (Montealegre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative hypothesis supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "7bf3d3b1-dd02-4d67-8013-e1087839fb0c",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C80",
+      "claim": "Associated MHC I proteins do not bind peptide well.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by our finding that associated MHC I proteins do not bind peptide well (Figure 3\u2014figure supplement 2) and therefore probably do not interact with TCRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "837f0814-aa5e-4ca8-898d-4bf048e23c51",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C81",
+      "claim": "Associated MHC I proteins probably do not interact with TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by our finding that associated MHC I proteins do not bind peptide well (Figure 3\u2014figure supplement 2) and therefore probably do not interact with TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that associated MHC I proteins do not bind peptide well.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "4ac15f3f-70f9-47f7-81df-f7235b7cc216",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C82",
+      "claim": "Associated MHC I proteins might be in trans ligands for NK cell receptors or similar proteins, perhaps signaling stress or activation states.",
+      "claim_type": "EXPLICIT",
+      "source": "They might be in trans ligands for NK cell receptors or similar proteins, perhaps signaling stress or activation states (Garcia-Beltran et al., 2016; Burian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative hypothesis supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "0fa28b0b-20b3-40b4-a6c9-2f0b7d44226c",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C83",
+      "claim": "The associated MHC I proteins might contain some KbHC/\u03b22m dimers that are peptide-receptive.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot entirely exclude that the associated MHC I proteins contain some KbHC/\u03b22m dimers that are peptide-receptive, as has been suggested for human MHC I oligomers (Bodn\u00e1r et al., 2003), but free heavy chains are clearly essential for in cis interactions, since single-chain KbHC/\u03b22m dimers do not associate (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility that cannot be ruled out, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "5359b2ac-91f6-478a-a967-e77676130805",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C84",
+      "claim": "Free heavy chains are clearly essential for in cis interactions, since single-chain KbHC/\u03b22m dimers do not associate.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot entirely exclude that the associated MHC I proteins contain some KbHC/\u03b22m dimers that are peptide-receptive, as has been suggested for human MHC I oligomers (Bodn\u00e1r et al., 2003), but free heavy chains are clearly essential for in cis interactions, since single-chain KbHC/\u03b22m dimers do not associate (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data showing no association with single-chain constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "42551f5e-7eba-44fb-b155-ee52b2a9a005",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C85",
+      "claim": "Associated free heavy chains might influence the surface levels of other proteins with which MHC I proteins are known to interact, such as APLP or insulin receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that the associated free heavy chain might influence the surface levels of other proteins with which MHC I proteins are known to interact, such as APLP or insulin receptor, thereby mediating non-immunological functions of MHC I proteins (Tuli et al., 2008; Shatz, 2009; Dixon-Salazar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative hypothesis supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "b9ea4108-7c5b-47e7-a520-993e7daaceea",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C86",
+      "claim": "The assay is a promising tool to extend interaction studies for MHC I proteins by proposed interaction partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assay is a promising tool to extend the interaction studies for MHC I proteins by the proposed interaction partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion about the potential applications of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "0c44b0dc-4593-4270-be4e-4363e9d9e35f",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C87",
+      "claim": "The formation of homotypic in cis interactions of the murine MHC I allotype Kb has been shown.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown here the formation of homotypic in cis interactions of the murine MHC I allotype Kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the main finding, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "49ae7a33-8bdc-4bdc-8a68-2300b1e31cf2",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C88",
+      "claim": "Previous work suggests that the tendency of in cis interactions varies among MHC I allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, previous work suggests that the tendency of in cis interactions varies among MHC I allotypes (Capps et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "3c938119-cf02-4f0f-8e4e-01918de657ed",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C89",
+      "claim": "It was hypothesized that MHC I allotypes that do not associate are not internalized and will bind exogenous peptides to provoke autoimmune reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it was hypothesized that those MHC I allotypes that do not associate are not internalized (by the accelerated disposal mechanism proposed above) and that they will bind exogenous peptides to provoke autoimmune reactions (Capps et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis from previous work, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f6f7020e-bbfd-49b1-bd96-a6a546b92634",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C90",
+      "claim": "Subtypes of HLA-B27 are implicated in inflammatory autoimmune diseases such as spondyloarthropathies.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be interesting in the case of those subtypes of HLA-B27 that are implicated in inflammatory autoimmune diseases such as spondyloarthropathies (Chen et al., 2017; Allen et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f7b34483-3603-4f4a-89c7-a3fcc58d0322",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C91",
+      "claim": "For HLA-B*27:05, formation of heavy chain dimers at the cell surface or in early endocytic compartments was demonstrated to occur through a disulfide bond between the unpaired cysteine-67 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "For HLA-B*27:05, formation of heavy chain dimers at the cell surface, or in early endocytic compartments, was demonstrated to occur through a disulfide bond between the unpaired cysteine-67 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about HLA-B*27:05.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "ea7480d0-4841-4254-ab6b-78c195e3dba7",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C92",
+      "claim": "Kb does not have an unpaired cysteine in the extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Kb does not have an unpaired cysteine in the extracellular domain, this type of dimerization is not possible for Kb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as knowledge about Kb structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "02b5a26a-e301-4b59-b1b0-de556f27e07b",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C93",
+      "claim": "The in cis heavy chain associations described for Kb might also occur with B*27:05 and might cause the formation of the covalent B*27:05 dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the interesting possibility exists that the in cis heavy chain associations described by us for Kb might also occur with B*27:05 and might cause the formation of the covalent B*27:05 dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "159cdcec-850c-47d9-bc71-2f80008522fc",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C94",
+      "claim": "The assay allows for the development of a screen to test for the tendency of individual MHC I allotypes to associate with themselves and with other allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Due its versatility, our assay allows for the development of a screen to test for the tendency of individual MHC I allotypes to associate with themselves, and with other allotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "986f997d-9977-437f-bbb3-f3acb19abe2b",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C95",
+      "claim": "The assay may be extended to human MHC I proteins, whose empty dimers can be enriched at the cell surface by incubation with low-affinity dipeptide ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be extended to human MHC I proteins, whose empty dimers can be enriched at the cell surface by incubation with low-affinity dipeptide ligands (Saini et al., 2015), and even to the empty forms of HLA-F that were recently discovered to bind NK cell receptors (Garcia-Beltran et al., 2016; Burian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "3a473003-596a-4db6-b758-af2eea224d17",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C96",
+      "claim": "Empty forms of HLA-F were recently discovered to bind NK cell receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be extended to human MHC I proteins, whose empty dimers can be enriched at the cell surface by incubation with low-affinity dipeptide ligands (Saini et al., 2015), and even to the empty forms of HLA-F that were recently discovered to bind NK cell receptors (Garcia-Beltran et al., 2016; Burian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f85c5153-31be-4e92-a6a5-0466e43a8e8b",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C97",
+      "claim": "By application to the human system, this screening tool can be developed to investigate the correlation between cell surface protein-protein interactions and human autoimmune disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, by its application to the human system, this screening tool can be developed to investigate the correlation between cell surface protein-protein interactions and human autoimmune disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "a55354f9-0f36-4fa3-b3e9-b21d2957baf7",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C98",
+      "claim": "Generation of anti-HA antibody micropatterns by microcontact printing on conventional glass coverslips makes this assay especially suitable for high-throughput approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of anti-HA antibody micropatterns by microcontact printing on conventional glass coverslips makes this assay especially suitable for such high-throughput approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method based on its technical features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "22bf7803-bc36-49b4-a3f4-5cc9edb28dfd",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C99",
+      "claim": "The assay can be further developed by integrating conventional immunostaining for the identification of other proteins involved in the redistribution of co-captured proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is the integration of conventional immunostaining for the identification of other proteins involved in the redistribution of co-captured proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential technical development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6f17c5fa-b105-4aee-99ba-70b1b269d132",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C100",
+      "claim": "Observing the accumulation of adaptor proteins involved in endocytic processes on the pattern elements under conditions of co-capture will contribute to understanding the nature of MHC I protein endocytosis and the functional role of in cis interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For MHC I proteins, for example, observing the accumulation of adaptor proteins involved in endocytic processes (e.g. Rab proteins) on the pattern elements under condition of co-capture will contribute to understand the nature of MHCI protein endocytosis and the functional role of in cis interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "734db6fa-83dd-43c5-9c8b-580dbd30e088",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C101",
+      "claim": "The assay can be combined with fluorescence recovery after photobleaching (FRAP) measurements to test the dynamics of the interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possible technical development is to combine the assay with fluorescence revovery after photobleaching (FRAP) measurements to test the dynamics of the interactions (i.e. dissociation and re-association).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential technical development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "2c12e37b-21b7-4d3b-a00b-386305965015",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C102",
+      "claim": "A combined two-hybrid-FRAP assay is potentially superior to conventional FRET experiments because the enrichment of proteins in the pattern elements increases the abundance of interaction partners and might enable detection of very weak interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a combined two-hybrid-FRAP assay is potentially superior to conventional (FRET) experiments, since the enrichment of proteins in the pattern elements increases the abundance of the interaction partners and might thus enable the detection of very weak interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative advantage of the proposed method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "98847ff9-f117-438b-ab0c-e38e642b3691",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C103",
+      "claim": "Membrane proteins on the surface of living cells can be captured into geometric shapes by antibodies that are printed onto the substrate in micrometer-sized patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane proteins on the surface of living cells can be captured into geometric shapes by antibodies that are printed on to the substrate in micrometer-sized patterns (Figure 1A; [Dirscherl et al., 2017]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Figure 1A and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "39e7b7b3-48c7-4739-a135-14f97e71acf0",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C104",
+      "claim": "Any protein that naturally interacts with a captured protein would also be recruited into the patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that any protein that naturally interacts with a captured protein would also be recruited into the patterns, and that this might be used for a protein-protein interaction assay (Schwarzenbacher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the reasoning behind the assay design, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6f9739f8-eb46-4879-bf7c-0291f7a3874a",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C105",
+      "claim": "The Y3 antibody binds to two forms of H-2Kb: KbHC/\u03b22m dimers and KbHC/\u03b22m/peptide trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested whether the two common \u03b22m-dependent monoclonal antibodies Y3 (which binds to two forms of the murine MHC I allotype H-2Kb, or Kb for short, namely the KbHC/\u03b22m dimers and KbHC/\u03b22m/peptide trimers[H\u00e4mmerling et al., 1982]) and 27-11-13S (which binds to two forms of the murine MHC I allotype H-2Db, namely DbHC/\u03b22m dimers and DbHC/\u03b22m/peptide trimers [Ozato and Sachs, 1981]) were still specific for their target allotypes when used in the pattern capture assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the original characterization of the Y3 antibody.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "026fb4b7-5070-490f-a8ab-512d7be4ea70",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C106",
+      "claim": "The 27-11-13S antibody binds to two forms of H-2Db: DbHC/\u03b22m dimers and DbHC/\u03b22m/peptide trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested whether the two common \u03b22m-dependent monoclonal antibodies Y3 (which binds to two forms of the murine MHC I allotype H-2Kb, or Kb for short, namely the KbHC/\u03b22m dimers and KbHC/\u03b22m/peptide trimers[H\u00e4mmerling et al., 1982]) and 27-11-13S (which binds to two forms of the murine MHC I allotype H-2Db, namely DbHC/\u03b22m dimers and DbHC/\u03b22m/peptide trimers [Ozato and Sachs, 1981]) were still specific for their target allotypes when used in the pattern capture assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the original characterization of the 27-11-13S antibody.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "6a65c573-7a54-43d2-85b0-3a50e5fc09f5",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C107",
+      "claim": "Printed \u03b22m-dependent antibodies still specifically recognize their target allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the printed \u03b22m-dependent antibodies still specifically recognize their target allotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the specificity experiments in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "9a4928ed-ddc8-4efe-8103-1d5e7f5beb23",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C108",
+      "claim": "The anti-HA antibody can be used to specifically capture HA-tagged MHC I proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the anti-HA antibody can be used to specifically capture HA-tagged MHC I proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experiments in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "ad86895e-a531-4760-ba43-3b1fd9db7ef8",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C109",
+      "claim": "The HA tag does not interfere with the capture of HA-Kb-GFP on Y3 antibody micropatterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The HA tag did not interfere with the capture of HA-Kb-GFP on Y3 antibody micropatterns (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "5ba88535-2c5b-425f-88be-f4359716293b",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "claim_id": "C110",
+      "claim": "The half-life of KbHC/\u03b22m dimers at the cell surface is 15 minutes at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells were then shifted to 37\u00b0C for 15 min (the half-life of KbHC/\u03b22m dimers at the cell surface [Montealegre et al., 2015]) to dissociate \u03b22m and initiate co-localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a two-hybrid antibody micropattern assay that uses anti-tag (anti-HA) and conformation-specific antibodies (Y3, 27-11-13S) to capture specific forms of MHC I proteins on glass coverslips, enabling location- and conformation-specific analysis by fluorescence microscopy. The assay is based on the principle that proteins interacting with captured bait proteins will be recruited into the patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C21-C25 demonstrate the development and validation of the assay with appropriate controls showing antibody specificity (Figure 1). Claims C103-C109 provide the methodological foundation and validation that printed antibodies retain their specificity. The experimental data consistently shows specific capture of target proteins with appropriate negative controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors established conditions to selectively capture and stabilize three different forms of Kb on the cell surface: free heavy chains (at 37\u00b0C on anti-HA patterns), KbHC/\u03b22m dimers (at 25\u00b0C on anti-HA patterns or at any temperature on Y3 patterns), and KbHC/\u03b22m/peptide trimers (by peptide addition). The Y3 antibody stabilizes \u03b22m binding and prevents dissociation at 37\u00b0C, while anti-HA capture allows \u03b22m dissociation at 37\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C43 are well-supported by experimental data in Figure 2 using fluorescent peptide binding and anti-\u03b22m staining to distinguish different MHC I forms. The temperature-dependent \u03b22m dissociation is supported by prior literature (C33-C34), and the stabilizing effect of Y3 is demonstrated through peptide-binding assays and \u03b22m staining at different temperatures with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using the two-hybrid micropattern assay, the authors demonstrate that homotypic in cis interactions of MHC I occur exclusively between free heavy chains at the cell surface. Interactions require \u03b22m dissociation (triggered by 37\u00b0C shift) and are abolished by peptide addition (which stabilizes \u03b22m binding) or when using single-chain constructs where \u03b22m cannot dissociate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C44-C50 are strongly supported by Figure 3 data showing temperature-dependent co-capture that is specifically inhibited by peptide and absent with single-chain constructs. The experimental design elegantly controls for conformation by manipulating \u03b22m dissociation. Multiple independent controls (temperature, peptide, single-chain) converge on the same conclusion. Quantification in C75-C76 provides statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "5319817e-58b3-4a12-9f13-edac4c0e7a7e",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Co-immunoprecipitation experiments confirm that Kb-GFP associates with HA-Kb after 37\u00b0C incubation, and this interaction is abolished by SIINFEKL peptide addition. Surface biotinylation experiments further confirm these associations occur at the cell surface, though they cannot entirely exclude intracellular involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 and C63 are supported by Western blot data in Figure 4 showing peptide-sensitive co-precipitation. Claim C65 is supported by Figure 4\u2014figure supplement 1. These biochemical experiments corroborate the micropattern assay results, though as the authors acknowledge (C64, C66), co-IP lacks spatial resolution and cannot definitively exclude intracellular contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "ff76ba1d-52d1-4415-9673-b4d9ef3c7e27",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Heterotypic in cis interactions between Kb and Db free heavy chains were observed, though weaker than homotypic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 states that heterotypic interactions were observed but notes the data is not shown. Without the actual experimental data, the strength of this interaction and the specificity of the observation cannot be evaluated. This represents an incomplete result that requires the missing data for proper assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "d3796235-b391-4d99-89f6-b2708ae3f90a",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The two-hybrid assay resolves the location and generation of MHC I protein-protein interactions, demonstrating they occur at the cell surface and originate from captured empty KbHC/\u03b22m dimers upon \u03b22m dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by the combined experimental evidence from the micropattern assay (Figure 3) which spatially restricts interactions to the cell surface. Claim C69 is reasonably inferred from the experimental design where dimers are captured and then shifted to 37\u00b0C to trigger \u03b22m dissociation, though the authors appropriately acknowledge (C71) that additional intracellular generation cannot be ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "ad462554-e5a3-4edd-89e8-852f8e8e785a",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The two-hybrid micropattern assay offers advantages over conventional methods (FRET, co-IP) by avoiding fluorescent protein aggregation artifacts, enabling high-throughput screening on glass coverslips, and being extensible to other MHC I allotypes and human systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C86, C94-C95, and C98 describe methodological advantages that are logical inferences from the assay design and demonstrated capabilities. The assay does avoid dual fluorescent protein fusions (C56), uses standard glass coverslips suitable for high-throughput (C98), and the principle is generalizable (C94-C95). These are reasonable conclusions about the method's potential applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previous studies have reported conflicting results on MHC I lateral associations, with optical and biochemical methods unable to definitively determine which MHC I forms interact or where interactions occur. Prior work suggested variation in association tendency among allotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 and C57-C62 accurately summarize limitations of prior work based on appropriate citations. The authors correctly identify gaps in the literature that their work addresses. Claim C72 and C88 cite specific prior findings that are relevant to interpreting the current results. These background claims appear to accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "938c968f-4e6d-4d09-8f64-fe9f0ebac93c",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The spatial organization of bait proteins allows quantification of co-captured prey proteins, with a background ratio of 1.1 in control experiments and a ratio of ~1.3 in co-capture experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by the quantification shown in Figure 3C with statistical analysis (n\u226514 cells, p<0.0001). The method for quantification is described in Materials and Methods. The background ratio provides an appropriate baseline for interpreting co-capture results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "1594c3d5-7646-41be-b7bc-56bd499d4435",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Associated MHC I proteins do not bind peptide well and therefore probably do not interact with TCRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by experimental data in Figure 3\u2014figure supplement 2 showing reduced peptide binding to co-captured Kb. Claim C81 is a reasonable inference from C80, as peptide binding is required for TCR recognition. However, the inference could be strengthened with direct TCR binding experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose several speculative functional roles for MHC I in cis interactions including accelerated disposal, NK cell signaling, modulation of other protein interactions, and potential relevance to autoimmune disease. They also suggest future technical developments combining the assay with immunostaining or FRAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C79, C82-C83, C85, C89, C93, and C97 are explicitly speculative hypotheses about functional roles. Claims C99-C102 propose future technical developments. While these are reasonable hypotheses supported by citations where applicable, they represent speculation rather than demonstrated results. These should be clearly distinguished from the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    },
+    {
+      "id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738",
+      "content_id": "18f62139-ac03-4ee1-9668-758ee49c3e7a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about MHC I biology, structure, function, and the challenges of studying membrane protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C15, C51, C73, C90-C92, C96, and C110 represent established knowledge about MHC I biology and technical challenges in the field, supported by appropriate citations or stated as general knowledge. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:04.034585Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "88ca6c71-f552-4d05-b12b-1aae966f09b1",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "13a51cb4-bcd3-448d-9f18-d765cb41a2f5",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "75f0a186-f093-45dc-8e75-1cb414e994cf",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "804422ed-82fa-47d7-a708-84f6227f8c5f",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "f91e3ba5-3fe1-4c11-81de-59aee304e63a",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "9b2803ea-f864-4272-9cc9-74f524d6aedb",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "bc9e1d97-01e6-4ab3-ac2b-208561cf169e",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "98847ff9-f117-438b-ab0c-e38e642b3691",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "39e7b7b3-48c7-4739-a135-14f97e71acf0",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "6f9739f8-eb46-4879-bf7c-0291f7a3874a",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "026fb4b7-5070-490f-a8ab-512d7be4ea70",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "6a65c573-7a54-43d2-85b0-3a50e5fc09f5",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "9a4928ed-ddc8-4efe-8103-1d5e7f5beb23",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "ad86895e-a531-4760-ba43-3b1fd9db7ef8",
+      "result_id": "3ec300fe-c165-4821-a1a8-c554ff1cfbc1"
+    },
+    {
+      "claim_id": "49866770-e559-460c-ac5b-087df84ca8e6",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "db77eb58-c4d8-42d5-9503-e2d025d89f44",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "25924fa9-3108-4226-904d-83b280666fd9",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "9aa0c2fb-01c2-485a-9d24-8128b34e1a4a",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "c27bfabc-1873-470c-a100-8f9d0138f94c",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "2ebd2bbf-52af-4154-b931-57a81284e528",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "0320c43d-5087-4baf-8f1b-bfed4e691cf6",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "9a1c15f3-ac56-498d-b600-3bf3938f0604",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "4e19b428-8329-4507-8aec-832b572000ba",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "cd9ee8fe-fae6-4f17-9418-8991bada95f8",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "7a6c9626-7f00-4a2c-b2d9-f89fdd94b77f",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "051fa1e9-3046-43e8-b651-d3b9cbd9ba75",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "39f879f1-6d36-4311-a242-2d1ceedcb44a",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "3c58c825-9508-41da-a6f1-c51a498481d5",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "ebec06a7-9ba8-4c60-94d9-b034839a7d2f",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "73b4da3f-1df4-4c55-b7f9-e5f45da350a6",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "a4704ff1-7149-45c4-8ce5-77be9bd8ef88",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "6f90af32-49e1-4b4c-8228-930f8ac6cacf",
+      "result_id": "f3a938f4-4f6c-48b3-8800-9bc8c13f3d5e"
+    },
+    {
+      "claim_id": "c8d62d8e-19b6-4d25-9d2f-9ecb31bd6464",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "99884c03-ab02-43e8-bb72-6d0a65de8cd9",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "f43ee2cd-cc40-4201-831a-b3c5091e40b0",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "6245a71f-2c16-4fbe-9883-41fea4098bad",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "b63fd1db-2816-4ecb-9115-e43813266921",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "79de0ae0-68d0-4dc0-91fa-84d68517551c",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "9fc4091a-1dce-4204-971d-b319410cfaae",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "670020e0-641b-43c4-a39e-3fbd120bcf92",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "96818e9e-7c9e-4598-911f-c36d75d8095e",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "6f733d3b-1c64-4544-94fe-c259d2de93d3",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "f255418a-3c53-4664-b4e9-4cf15479b721",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "5359b2ac-91f6-478a-a967-e77676130805",
+      "result_id": "e3d3b711-9b3f-40cc-a07c-15c33a7e3353"
+    },
+    {
+      "claim_id": "82c19c19-66d1-43de-a71d-003638853401",
+      "result_id": "5319817e-58b3-4a12-9f13-edac4c0e7a7e"
+    },
+    {
+      "claim_id": "6865c9c6-bff3-4d2b-a2ce-a40a00f30c19",
+      "result_id": "5319817e-58b3-4a12-9f13-edac4c0e7a7e"
+    },
+    {
+      "claim_id": "a499ddb0-1e4b-45d2-99fe-1d35257a5c63",
+      "result_id": "5319817e-58b3-4a12-9f13-edac4c0e7a7e"
+    },
+    {
+      "claim_id": "b5dc9a44-e3f0-487d-8610-8ef4cf4ba4dc",
+      "result_id": "5319817e-58b3-4a12-9f13-edac4c0e7a7e"
+    },
+    {
+      "claim_id": "d69f876e-1c58-4917-b2ec-4200eff64207",
+      "result_id": "5319817e-58b3-4a12-9f13-edac4c0e7a7e"
+    },
+    {
+      "claim_id": "3975ef94-0c5a-48d2-bc67-8c405887718c",
+      "result_id": "ff76ba1d-52d1-4415-9673-b4d9ef3c7e27"
+    },
+    {
+      "claim_id": "3d9abb4f-8789-4dc2-ac82-802e4e0cd5a8",
+      "result_id": "d3796235-b391-4d99-89f6-b2708ae3f90a"
+    },
+    {
+      "claim_id": "e598b10c-828c-4c18-ba94-c520aaa4af0f",
+      "result_id": "d3796235-b391-4d99-89f6-b2708ae3f90a"
+    },
+    {
+      "claim_id": "7bac345d-df8e-460b-9371-77ab2b61e10e",
+      "result_id": "ad462554-e5a3-4edd-89e8-852f8e8e785a"
+    },
+    {
+      "claim_id": "b9ea4108-7c5b-47e7-a520-993e7daaceea",
+      "result_id": "ad462554-e5a3-4edd-89e8-852f8e8e785a"
+    },
+    {
+      "claim_id": "159cdcec-850c-47d9-bc71-2f80008522fc",
+      "result_id": "ad462554-e5a3-4edd-89e8-852f8e8e785a"
+    },
+    {
+      "claim_id": "986f997d-9977-437f-bbb3-f3acb19abe2b",
+      "result_id": "ad462554-e5a3-4edd-89e8-852f8e8e785a"
+    },
+    {
+      "claim_id": "a55354f9-0f36-4fa3-b3e9-b21d2957baf7",
+      "result_id": "ad462554-e5a3-4edd-89e8-852f8e8e785a"
+    },
+    {
+      "claim_id": "b6586748-eb79-43da-9056-071d9053fef2",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "19ac45f6-0d53-40fe-aa50-6c9e06761efb",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "e4831bc3-bb76-4117-a88f-efd7a7da405f",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "183eef25-6049-4ac0-84c8-868529e5b4f2",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "1c4239df-7359-49fa-bd2b-028ab28a60f4",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "0f21504f-791a-4d5c-aa49-202fd229e819",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "cd26b112-45dc-4ab1-8bc2-606924d1e59d",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "270b630e-90b2-47e8-b1bb-38aacebeb935",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "00c0b461-ed6f-46de-9ebf-cbedb95753ab",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "d0be7ea4-99c4-4e4b-98b0-1b1659828f7b",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "a16e62ee-2a84-4f59-bf55-575226be52a5",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "f72dedbb-acb6-42c7-8102-75310e15ca96",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "49ae7a33-8bdc-4bdc-8a68-2300b1e31cf2",
+      "result_id": "60d8da0e-dc11-449b-b92b-a8e18a75d0e0"
+    },
+    {
+      "claim_id": "6417ee74-0bf0-4116-b6d9-8f2e1ec147fd",
+      "result_id": "938c968f-4e6d-4d09-8f64-fe9f0ebac93c"
+    },
+    {
+      "claim_id": "1417d745-b4c8-4b23-b4ee-b3c0875974b5",
+      "result_id": "938c968f-4e6d-4d09-8f64-fe9f0ebac93c"
+    },
+    {
+      "claim_id": "7bf3d3b1-dd02-4d67-8013-e1087839fb0c",
+      "result_id": "1594c3d5-7646-41be-b7bc-56bd499d4435"
+    },
+    {
+      "claim_id": "837f0814-aa5e-4ca8-898d-4bf048e23c51",
+      "result_id": "1594c3d5-7646-41be-b7bc-56bd499d4435"
+    },
+    {
+      "claim_id": "91db5e0e-f62f-4f0f-9d1d-9b92722a46b6",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "a4896dbe-1a95-433d-9f5f-106113f490bc",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "38dba6d1-1c66-4dc9-bb5a-5f83478ae2a0",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "4ac15f3f-70f9-47f7-81df-f7235b7cc216",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "0fa28b0b-20b3-40b4-a6c9-2f0b7d44226c",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "42551f5e-7eba-44fb-b155-ee52b2a9a005",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "3c938119-cf02-4f0f-8e4e-01918de657ed",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "02b5a26a-e301-4b59-b1b0-de556f27e07b",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "f85c5153-31be-4e92-a6a5-0466e43a8e8b",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "22bf7803-bc36-49b4-a3f4-5cc9edb28dfd",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "6f17c5fa-b105-4aee-99ba-70b1b269d132",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "734db6fa-83dd-43c5-9c8b-580dbd30e088",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "2c12e37b-21b7-4d3b-a00b-386305965015",
+      "result_id": "c53ebf95-1c36-4ffe-abbe-c8b881bdcdbd"
+    },
+    {
+      "claim_id": "fcb08842-cacf-49f4-9c70-2c558bf6e905",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "a77106af-5481-43d3-ab3e-76fbf8d08d3e",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "e85d73df-18fb-4b10-b994-13609769160f",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "b5ae7821-9bdc-4a53-b32b-65a339691148",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "ce55434c-80c0-4de7-841b-ff2b0c96a540",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "a7d258f4-bf57-4669-9044-cceded44b232",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "444b34ca-5691-4226-8c52-648271fd475a",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "3ad23eec-5f63-4393-8315-8ecbfd7b06ac",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "2d99ac56-5736-4340-9fbc-93079491633f",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "db380856-cfe7-430c-b9fd-2e2435e4f156",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "ffee13f2-a477-428f-b155-39cf5f00a231",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "abcc8dd9-4fa2-4e85-871f-06c02bad2273",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "12033c07-03e5-4c8b-a253-636c72e7035b",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "f6f7020e-bbfd-49b1-bd96-a6a546b92634",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "f7b34483-3603-4f4a-89c7-a3fcc58d0322",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "ea7480d0-4841-4254-ab6b-78c195e3dba7",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "3a473003-596a-4db6-b758-af2eea224d17",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    },
+    {
+      "claim_id": "5ba88535-2c5b-425f-88be-f4359716293b",
+      "result_id": "d2e59377-9ba6-4c9b-b4d4-9adb0d804738"
+    }
+  ],
+  "comparisons": []
+}

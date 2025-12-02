@@ -1,0 +1,726 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors selected 11 mouse skeletal muscle tissues for study based on a Google poll of over 100 skeletal muscle researchers, cross-validated with PubMed citation counts to minimize selection bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe a reasonable methodology for tissue selection. The poll received >100 responses (C2) and was validated against PubMed citations (C4), providing convergent evidence for tissue selection. The approach is transparent and documented in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study collected 11 mouse skeletal muscles, representative smooth and cardiac muscles from mice, and EDL/soleus from male and female rats. Each sample included 6 biological replicates from 3 animals (18 total animals per sample), with whole muscle tissues dissected tendon-to-tendon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 clearly describe the experimental design. The arithmetic is correct (6 replicates \u00d7 3 animals = 18 total, C8-C9). The methodology is standard for muscle transcriptomics and adequately powered with 6 biological replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "RNA was purified and subjected to RNAseq, generating >200 million aligned reads per sample (>4.4 billion total). Empirical simulations showed saturation for exon detection, and biological replicates showed high reproducibility (median R\u00b2>0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 describe robust sequencing depth and quality metrics. The saturation analysis (C14, Figure 1-supplement 2) validates adequate coverage. High reproducibility (C15, R\u00b2>0.93) indicates technical quality. These are standard quality metrics for RNAseq studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Over 80% of genome-encoded transcripts are expressed in at least one skeletal muscle, with ~21,000 transcripts forming a core set expressed in all muscle types, presumably representing genes required for contractile force generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 present clear quantitative findings supported by Figure 1A-B. However, C18's interpretation that the core set represents 'minimal genes for contractile force' is speculative and not directly tested. The core finding is supported but the mechanistic interpretation is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "At stringent thresholds (q<10\u207b\u2076), 55.2% of mouse transcripts are differentially expressed among skeletal muscles. This was validated by qPCR on 10 genes, all of which replicated, along with internal controls for cardiac and smooth muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 present the central finding with appropriate validation. The statistical threshold is extremely stringent (C19), and independent qPCR validation of 10 genes with 100% replication (C21) strongly supports the RNAseq findings. This is a major result demonstrating extensive transcriptional diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Hierarchical clustering based on Euclidean distance revealed that skeletal muscles form two primary clusters, with smooth and cardiac tissues clustering separately. On average, 13% of transcripts differ between any two skeletal muscles (range: <1% to 36.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 describe clustering analyses with clear quantitative results. The methodology (Euclidean distance, hierarchical clustering) is standard. The observation that masseter clusters with limb muscles rather than tongue (C28) and FDB clusters with extraocular muscles (C29) are interesting biological findings supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Principal component analysis was performed to determine whether transcriptome diversity reflects muscle cell expression or cellular composition. PC1 accounts for ~80% of variance and separates skeletal muscles into two groups; PC2 accounts for ~8% and separates cardiac/smooth from skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 describe a critical analysis addressing potential confounding by non-muscle cells. The PCA approach is appropriate, and the variance explained by PC1 (80%) and PC2 (8%) is clearly stated with supporting figures. This analysis is essential for interpreting the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Correlation analysis between transcript expression and PC1 revealed that marker genes for non-muscle cells (endothelial: Pecam1 R\u00b2=0.56; stem cells: Vcam1 R\u00b2=0.37; fibroblasts: Ly6a R\u00b2=0.19; blood: Ptprc R\u00b2<0.01) show modest to weak correlations, suggesting some but not all diversity is due to cellular composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C52 systematically evaluate non-muscle cell contributions using established marker genes (C44). The R\u00b2 values show decreasing correlation from endothelial (0.56) to blood cells (<0.01), indicating differential but limited contribution of non-muscle cells. The interpretation (C52) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The top 10 genes most correlated with PC1 all encode characteristic skeletal muscle proteins unlikely from non-muscle cells. GO analysis of the top 100 PC1-correlated genes showed enrichment for 'muscle protein' (enrichment 6.58, FDR<10\u207b\u2074\u2076). Bidirectional correlations indicate PC1 reflects genuine muscle cell transcriptional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 provide strong evidence that observed diversity reflects muscle cell gene expression rather than contamination. The GO enrichment (C55) is highly significant, and bidirectional correlations (C56) argue against simple contamination. The conclusion (C58) is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "GO analysis of pairwise comparisons identified repeatedly enriched terms including sarcomere components (Z-disc, A-band, M-band), extracellular proteins (Integrin, Collagen, Fibronectin), and pathways for mitochondrial function, fatty acid metabolism, and neuromuscular junction assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe systematic GO analysis across all pairwise comparisons. The enriched terms are biologically coherent and consistent with known muscle biology. The consolidation approach (C60) is appropriate for identifying consistent patterns across multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "WGCNA co-expression analysis identified gene clusters differentiating smooth, cardiac, and skeletal muscle types. GO analysis of these clusters revealed enrichment in genes conventionally associated with respective muscle types, and genes specific for skeletal muscle, consistent with genuine muscle cell expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 describe WGCNA analysis with appropriate internal controls (C66-C67). The finding that co-expressed genes enrich for known muscle-specific functions (C67, C69) validates the approach. The conclusion (C70) is supported by converging evidence from multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Fiber type composition was quantified from Myh expression and validated against histological data. Clustering by Myh expression is grossly similar to global expression clustering, but important differences exist (e.g., diaphragm/FDB similarity by Myh but dissimilarity by global expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 test whether fiber type explains transcriptional diversity. The validation against histology (C74) strengthens the Myh-based quantification. The discrepancies between Myh-based and global clustering (C79-C80) are important findings indicating fiber type is insufficient to explain diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Using single-fiber microarray data, the authors found weak correlation between fiber-type-specific genes and Myh expression (fast twitch: median R\u00b2=0.132; slow twitch genes also showed low correlation). Fiber type contributes to but is insufficient to explain transcriptional diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 use external validation data (C81) to test fiber type contribution. The low correlations (C83-C85) are quantitative and clearly stated. The conclusion (C86) is appropriately cautious, acknowledging contribution but insufficiency. This is a key negative result ruling out a simple explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Hox gene expression was examined to test whether developmental history explains transcriptional diversity. Hox-based clustering differs markedly from global transcriptome clustering, with head/neck muscles clustering with cardiac tissues. Hox genes are insufficient to explain mRNA diversity among adult skeletal muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 test an alternative hypothesis about developmental origins. The Hox expression patterns (C90-C91) recapitulate developmental history (C93) but differ from global clustering (C92), leading to the conclusion that developmental history is also insufficient (C94). This is another important negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Many developmentally significant genes maintain expression in adult muscle, including Myf6 (skeletal-specific), Myod1/Myf5/Myog (at lower levels), Hotair (limb muscles), Pitx2 (extraocular), and Lhx2 (masseter). Their expression patterns suggest continued regulatory activity in adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104 document persistent expression of developmental regulators with tissue-specific patterns. The data are clearly presented in Figure 4B-E. However, the interpretation of 'continued regulatory activity' (C102) is speculative. The expression patterns are supported, but functional significance requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "IPA analysis predicted 20 transcription factors upstream of differentially expressed genes, with Smarca4 predicted in 9/11 tissues and ranking as most confident in 4 tissues. Given Smarca4's role in early muscle patterning, it is proposed as a candidate for establishing transcriptional specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C116 present computational predictions from IPA. While the predictions are clearly stated (C112-C113), IPA predictions are hypothesis-generating rather than definitive. The speculation about Smarca4 (C115) is reasonable given prior knowledge (C114) but requires experimental validation. This is appropriately framed as future work (C116).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Analysis of tissue-specific transcripts revealed a bimodal distribution, with most transcripts expressed evenly across tissues but ~5% showing nearly exclusive expression in single tissues. Many tissue-specific genes are in head/neck muscles, though examples exist in diaphragm and FDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C126 describe tissue-specific expression patterns. The bimodal distribution (C118) and quantification (~5%, C120) are clearly stated. Prior validation of Myh7 in soleus (C124) supports the approach. The caveat about independent validation (C125) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Manual examination of gapped reads identified hundreds to thousands of novel splicing events, mostly novel exon inclusion or constitutive exon exclusion. PCR and cloning validated two novel exons in Mylk4, which appear to be the predominant isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 describe discovery and validation of novel splicing. The validation approach (C130-C132) using PCR and cloning is appropriate. The conclusion that novel exons are predominant (C133) is based on RNAseq read depth comparison. This demonstrates the value of deep sequencing for transcript discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Cross-species comparison between mouse and rat showed moderate correlation (R\u00b2>0.6) despite different fiber type composition. The vast majority of genes differentially expressed between EDL and soleus changed in the same direction in both species, with consistent fold changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 demonstrate conservation across species. The moderate correlation (C138) despite fiber type differences (C136-C137) reinforces that tissue identity drives diversity (C139). The directional consistency (C140-C141) is strong evidence for conserved regulatory programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Sex differences showed minimal impact on differential expression between EDL and soleus, with <3% of transcripts differing between sexes. Most sex-differentially expressed genes were up-regulated in males, consistent with androgen response element involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 address sex as a potential confounding variable. The low percentage of sex-differential genes (C143) indicates sex is not a major driver of the observed diversity. The male bias (C144) and citation of prior work (C145) support the androgen hypothesis (C146), though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The study demonstrates considerable variance in gene expression among skeletal muscle tissues, contradicting assumptions of previous gene expression atlases. Differentially expressed genes are largely conserved between mice and rats, suggesting predictive value for related species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 summarize major conclusions. The variance finding (C149) is well-supported by extensive data. The contrast with prior atlases (C150) is valid given their single-tissue approach. The conservation finding (C147) supports broader applicability, though the speculation about other species (C148) requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Of ~23,000 mouse genes, >50% are differentially expressed among skeletal muscles. Of these, 3,370 have human disease orthologs and 556 encode drug targets, potentially contributing to differential disease susceptibility and pharmaceutical sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C156 translate findings to biomedical relevance. The quantification (C152-C154) is clear and based on established databases. However, the speculation about disease susceptibility and drug sensitivity (C155) requires experimental validation. The data provide a resource but not mechanistic proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Pkm isoforms are highly up-regulated in EDL compared to other muscles. Given Pkm's role in myotonic dystrophy pathology, EDL is predicted to be more sensitive to degeneration, consistent with mouse model data showing EDL is more susceptible than diaphragm or soleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C163 provide a specific example linking expression to disease. The Pkm expression data (C158) is clear. The disease mechanism (C157, C159-C160) is from cited literature. The prediction (C161) is logical, and the mouse model data (C163) provides independent support, though this is correlative rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C170"
+    ],
+    "result": "Kcnma1, the target of muscle relaxant chlorzoxazone, is expressed at comparable levels in most skeletal muscles and CNS, with >3-fold higher expression in extraocular muscles and soleus. Differential expression could influence drug efficacy or side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C170 provide another translational example. The expression data (C168) is clear from Figure 7C. The drug mechanism (C165-C167) is from literature. The speculation about differential drug sensitivity (C170) is reasonable but requires clinical validation. This illustrates potential utility of the resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C172",
+      "C173"
+    ],
+    "result": "Given that some drugs like glucocorticoids cause muscle wasting in specific muscle subsets, this dataset is proposed as a valuable resource for exploring mechanisms of differential drug sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C173 propose the dataset's utility. The glucocorticoid example (C172) is from literature. The speculation about resource value (C173) is reasonable given the comprehensive nature of the data, though actual utility depends on future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The study identifies 42 highly expressed (FPKM>10) differentially expressed genes encoding secreted proteins as candidate myokines. Vegfa is notably highly expressed (98th percentile) with ~10-fold variation between tissues. Given muscle comprises ~40% of body mass, muscle may be an under-appreciated source of circulating VEGF-A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C187 address myokine biology. The candidate identification (C177-C178) is data-driven. The Vegfa expression data (C181-C182) is clear. The speculation about muscle as a VEGF-A source (C186) is reasonable given expression levels and muscle mass (C185), but whether this has endocrine function (C187) requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "The study examined genes involved in synapse assembly, finding dozens expressed at high levels (FPKM>10), suggesting they are muscle-derived. Fbxo45, an E3 ligase involved in NMJ formation, shows differential expression and may play a conserved role in tissue-specific synapse assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C198 address regenerative medicine applications. The speculation about incomplete transcriptional programs (C190-C191) is reasonable given observed diversity. The synapse gene expression data (C193) supports muscle origin. The Fbxo45 example (C195-C197) is from literature, and the speculation about conserved function (C198) is reasonable but requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Animals were obtained at 10-12 weeks, housed under standard conditions with 12:12 light/dark cycles, and sacrificed at 14 weeks during ZT 2-5. Three animals were used per biological replicate. All procedures were AAALAC-compliant and IACUC-approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C208 describe animal husbandry and ethics. The methodology is standard and clearly documented. The timing control (ZT 2-5) is important for circadian-regulated genes. IACUC approval (C208) and AAALAC compliance (C207) are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "RNA was extracted using Trizol/chloroform, further purified with RNeasy columns, and pooled in equimolar amounts from three mice per replicate. RNA integrity was assessed by Bioanalyzer with all RINs >8.0 (median 9.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C214 describe RNA preparation. The methods are standard and appropriate. The pooling strategy (C212) increases biological representation but reduces ability to assess individual variation. High RIN values (C214) indicate excellent RNA quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "Libraries were prepared using Illumina TruSeq Stranded mRNA LT kit with 500ng input and 13 PCR cycles, validated by Bioanalyzer. Pilot sequencing used MiSeq; main sequencing used HiSeq 2500/3000. All reads were 50bp single-end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C220 describe library preparation and sequencing. The methods are standard for RNAseq. The use of stranded libraries (C215) preserves strand information. The 50bp single-end reads (C220) are adequate for transcript quantification though shorter than current standards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "Reads were aligned using RUM to mm10/rn5 genomes with UCSC gene models (Dec 2014). Alignment rates were 65-92% unique (\u226594.7% total). FPKMs were calculated from strand-specific unique reads, excluding mitochondrial reads from normalization to account for variable mitochondrial content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C221-C226 describe alignment and quantification. The alignment rates (C223-C224) are good. The exclusion of mitochondrial reads from normalization (C226) is appropriate given variable mitochondrial content in different muscles. The use of UCSC gene models from 2014 (C222) is somewhat dated but acceptable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "Biological replicates showed high reproducibility (R\u00b2~0.93) with internal control validation. Differential expression used one-way ANOVA on log-transformed FPKMs with Benjamini-Hochberg correction. Significance thresholds: q<0.01, fold-change>2.0, FPKM>1.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C227-C231 describe statistical analysis. The reproducibility (C227) is excellent. The ANOVA approach (C229) is appropriate for multi-group comparisons. The significance thresholds (C230) are reasonable, though the fold-change cutoff is somewhat arbitrary. The FPKM>1.0 threshold (C231) is standard.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236"
+    ],
+    "result": "Disease/drug associations were identified from DrugBank v5.0.9, DisGeNET, and IPA. Mouse-human orthologs were mapped using BiomaRt. Dendrograms used Euclidean distance with complete linkage clustering. Code is available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C232-C236 describe bioinformatics methods. The use of established databases (C232) is appropriate. The clustering methods (C234-C235) are standard. Code availability (C236) supports reproducibility, which is commendable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241"
+    ],
+    "result": "PCA used log-transformed FPKMs of transcripts with mean log2(FPKM+1)>1.0 in at least one tissue. Bootstrap analysis with 10,000 replicates estimated 99% confidence intervals. PC1 loadings were computed using R's cor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C237-C241 describe PCA methodology. The expression threshold (C238) is reasonable. The bootstrap approach (C239) with 10,000 replicates provides robust confidence estimates. The methods are clearly documented and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253"
+    ],
+    "result": "IPA v.43605602 analyzed 110 pairwise comparisons (FC>2, q<0.01) to predict upstream transcription factors. The top 25 TFs per tissue were recorded, and the 20 most common compiled. Networks were constructed using IPA's pathway designer with genes showing differential expression in \u22652 comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C242-C253 describe IPA analysis in detail. The methodology is clearly documented with specific version (C242) and parameters (C243-C245). The filtering criteria (C251) are reasonable. However, IPA predictions are computational and require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C254",
+      "C255",
+      "C256",
+      "C257",
+      "C258"
+    ],
+    "result": "DAVID 6.8 was used for GO analysis with background genes expressed in \u22651 skeletal muscle tissue, converted to ENSEMBL IDs. Enriched terms were filtered at fold enrichment>2 and FDR<0.05. For specific tissues, GO terms from 10 pairwise comparisons were pooled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C254-C258 describe GO analysis methodology. The use of appropriate background (C255) is critical for GO analysis. The filtering thresholds (C257) are standard. The pooling approach (C258) for tissue-specific analysis is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C259",
+      "C260",
+      "C261",
+      "C262"
+    ],
+    "result": "WGCNA 1.63 in R 3.3.3 detected trait-related modules using automatic network construction with soft-thresholding power 18 and minimum module size 30. Input was transcripts expressed in \u22651 of 17 tissues. External traits were specific tissues or four muscle categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C259-C262 describe WGCNA parameters. The methods are clearly documented with specific versions (C259) and parameters. The choice of soft-thresholding power (18) and minimum module size (30) are within typical ranges for WGCNA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C263",
+      "C264",
+      "C265",
+      "C266"
+    ],
+    "result": "Independent biological replicates were collected for validation. RT reactions used 500ng RNA with TaqMan reagents. qPCR used ABI TaqMan probes on Stratagene MX3005 with manufacturer's recommendations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C263-C266 describe validation experiments. The use of independent samples (C263) is appropriate for validation. The qPCR methodology (C265-C266) is standard. Specific probe IDs are provided (C266), supporting reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C267",
+      "C268",
+      "C269",
+      "C270",
+      "C271",
+      "C272",
+      "C273"
+    ],
+    "result": "Novel splicing events were identified from RUM's junctions_all.rum file, sorted by read count and manually curated. Validation used PCR with Clontech Takara kit, gel visualization, TOPO cloning, and Sanger sequencing. Primers were from IDT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C267-C273 describe novel splicing validation. The methodology is appropriate, progressing from computational identification (C267) through PCR validation (C269) to sequencing confirmation (C272). The manual curation step (C268) is important for quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C274",
+      "C275"
+    ],
+    "result": "Immunohistochemistry validation was attempted for tissue-specific genes using UPK1B (1:200) and BBOX1 (1:400) antibodies. Neither antibody is well-characterized for immunostaining, and experiments revealed no specific staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C274-C275 report a negative validation result. The transparency in reporting failed validation (C275) is commendable. The lack of well-characterized antibodies (C275) explains the negative result and highlights the need for alternative validation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C276",
+      "C277"
+    ],
+    "result": "All raw data and .bed files are available on GEO (GSE100505). Transcript-level expression values can be downloaded from MuscleDB (http://muscledb.org/), a web application built using the ExpressionDB platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C276-C277 describe data availability. Public deposition in GEO (C276) and creation of a dedicated web resource (C277) are excellent for reproducibility and community use. This significantly enhances the value of the study as a resource.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the biological context and motivation for the study by reviewing prior work on microbiota-immune interactions, particularly the role of Clostridia strains in Treg induction, and identifies the challenge of determining optimal bacterial consortia for therapeutic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 are all supported by appropriate citations to published literature and establish well-accepted background knowledge in the field. These claims provide the scientific rationale for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study identifies a gap in existing approaches: testing all possible subsets of 17 Treg-inducing Clostridia strains would require 131,071 experiments, which is experimentally infeasible, and no existing model can simultaneously predict microbiota dynamics and immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 correctly identify the computational challenge (C15 is mathematically correct: 2^17-1 = 131,071) and the gap in existing modeling approaches. These claims are well-supported by citations and logical reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C72",
+      "C74"
+    ],
+    "result": "The study presents a novel mathematical modeling framework that integrates microbiome ecological dynamics with immune response predictions to enable computational optimization of immune-stimulating bacterial combinations, representing the first successful application of observation-constrained in silico modeling to guide rational design of defined bacterial consortia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C72, and C74 describe the core methodological innovation of the study. The framework is demonstrated through experimental validation (C24, C60), supporting the claim of novelty. However, the claim of being 'first' (C74) should be interpreted cautiously as it depends on the specific definition of 'observation-constrained in silico modeling.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study uses 12 Treg-inducing Clostridia strains (excluding Strain 6 based on stability predictions) and generates new colonization data from 14 mice gavaged with three different 11-strain subsets selected based on 'keystoneness' analysis, with strain densities profiled by qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe the experimental design and data generation. The exclusion of Strain 6 (C27) is justified by prior modeling work. The selection of 11-strain subsets based on keystoneness (C31-C33) is a rational experimental design choice. Methods are appropriately detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study combines newly generated and previously published FACS data with colonization measurements, using simulated mono-colonization concentrations from a previously validated ecological model to compensate for missing measurements in prior experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C35-C38 describe the data integration strategy. The use of simulated mono-colonization data (C37) is justified by model validation (C38, C39), though this introduces model-dependency into the training data. This is a reasonable approach given data limitations but represents a potential source of circularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C38",
+      "C39",
+      "C110",
+      "C111"
+    ],
+    "result": "The microbiome ecological model demonstrates strong predictive capability for temporal dynamics of different strain subsets, with Spearman correlation coefficients ranging from 0.92 to 0.98 (p<10^-16) between observations and predictions across time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C38, C39, C110, and C111 describe model validation with quantitative metrics. The high correlation coefficients (C39) and highly significant p-values provide strong statistical support. Figure 3A-B visually confirms good agreement between predictions and observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "The microbiome-Treg mathematical model is based on generalized Lotka-Volterra equations extended to include microbial perturbations, with the assumption that steady-state CD4+ T-cell concentration is constant across mice with different microbiome compositions (justified for genetically similar mice and closely related Clostridia, but not for comparing colonized vs. non-colonized germ-free mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C42, C44-C45 describe the mathematical modeling framework. The gLV framework is well-established (C41), but the assumption of constant total T-cell density (C44) is a significant simplification. While the authors justify this for their specific experimental conditions (C44), they acknowledge it's not universally valid (C45). This assumption could affect the accuracy of predictions, particularly for extreme cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C47"
+    ],
+    "result": "The study infers each strain's individual contribution to the CD4+FOXP3+ Treg pool using L2-penalized least-square regression, achieving a normalized root-mean square deviation of 12% on left-out samples in cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C47 describe the parameter inference approach and its performance. The 12% RMSD (C47) indicates reasonable model fit. The use of cross-validation is appropriate for assessing generalization. However, the manuscript does not provide details on the number of folds or samples, which would be important for fully evaluating this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C48",
+      "C49"
+    ],
+    "result": "The Treg Induction Score (TrIS) was computed for all possible strain combinations, with 84% of 4,095 possible configurations being biologically meaningful and stable, and analysis showing that consortia of size seven already contain combinations that maximize Treg induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C48, and C49 describe the TrIS metric and computational screening results. The finding that 84% of combinations are stable (C48) is a computational result from the model. The observation that size-seven consortia maximize induction (C49) is an interesting finding shown in Figure 4A, though it's based on model predictions rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C124"
+    ],
+    "result": "High TrIS consortia show strong correlation with predicted total bacterial abundance (Spearman correlation 0.88, p<0.05) and are particularly enriched in Strain 27.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C124 describe correlations between TrIS and microbial features. The statistical significance is reported (C124), and the enrichment of Strain 27 (C51) is shown in Figure 4B and Figure 4\u2014figure supplement 1. These are model-based predictions that identify potential mechanistic features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "High-TrIS consortia are predicted to have significantly higher SCFA production than low-TrIS consortia (p<0.05 for all SCFAs by Welch t-test), based on scaling single-strain metabolic outputs by predicted abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe the SCFA enrichment analysis. The approach of scaling single-strain measurements by predicted abundances (C55) is reasonable but assumes additive effects without interactions. The statistical significance (C56) supports the prediction, though this is based on model predictions rather than direct measurements of the consortia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Experimental validation of five 4-strain consortia with varying predicted TrIS shows a significant Pearson correlation of 0.97 (p<0.01) between TrIS and observed CD4+FOXP3+ Treg percentage, with the H2 consortium showing 107% increase in immune activity relative to germ-free controls, and high-TrIS consortia successfully colonizing while low-TrIS consortia showed incomplete colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe the key experimental validation. The very high correlation (r=0.97, p<0.01, C60) between predicted and observed Treg induction is remarkable and strongly supports the model's predictive capability. The observation that colonization success correlates with TrIS (C61) validates the ecological component. However, the sample sizes vary (8 for H1/H2, 5 for M1/M2, 3 for L, C119-C121), with the low-TrIS group having only 3 replicates, which may limit statistical power for that comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Metabolic profiling shows significant acetic acid enrichment in H1 compared to both L and H2 (adjusted p<0.05), but not between H2 and L, with model-predicted acetate enrichment correlating well with observed acetic acid concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 describe metabolic validation results. The statistical analysis (C63-C65) shows partial agreement with predictions\u2014H1 is significantly enriched, but H2 is not significantly different from L (C65), which is inconsistent with the TrIS ranking. The correlation between predicted and observed acetate (C66) is described as 'well correlated' but no quantitative metric is provided. This suggests the metabolic predictions are less accurate than the Treg predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors acknowledge limitations of the gLV model (lack of higher-order interactions and saturation effects) and the assumption of constant T-cell density, noting that future measurements of total T-cell abundance would likely improve model accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 appropriately acknowledge model limitations. The gLV limitations (C75) are well-known in the field. The constant T-cell density assumption (C76) is a significant simplification that could affect predictions. The suggestion for future improvements (C77) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model trained on IQI mice data successfully predicted both Treg induction and acetate enrichment in C57BL/6 mice used for validation, suggesting consistency in functional outcomes across mouse strains in germ-free conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 address cross-strain generalization. The successful prediction across mouse strains (C79) is supported by prior work showing strain-independence of Treg induction (C78). This strengthens confidence in the model's generalizability, at least within germ-free contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors note that translation to therapeutic applications will require studies in non-germ-free settings to account for established flora and individual-specific microbiome features, and that treatment of autoimmune diseases may require simultaneous manipulation of multiple immune processes beyond Treg activation alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 appropriately discuss limitations for clinical translation and future directions. These are reasonable considerations about the gap between germ-free mouse models and clinical applications. The speculation about personalized approaches (C85) is appropriately framed as future potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The manuscript provides detailed methods for bacterial culture, mouse experiments, colonization profiling by qPCR, Treg quantification by FACS, and metabolite analysis by GC-MS, with appropriate ethical approvals and justification for experimental choices including mouse strain selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C123 describe experimental methods in detail. The methods appear rigorous and appropriate for the study objectives. Sample sizes (C119-C121) are consistent with prior work in the field. Ethical approvals are documented (C100, C123). The justification for using C57BL/6 mice (C117-C118) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C73"
+    ],
+    "result": "The authors propose that the framework could be extended to other immune-modulating applications such as cancer immunotherapy and could incorporate additional data types including metabolite profiling, other immune readouts, or transcriptome data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C73 are appropriately framed as speculative future applications. The extensibility to other immune phenotypes and data types is plausible given the modular nature of the framework, though these remain to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C76",
+      "C151"
+    ],
+    "result": "The authors developed a dual-beam two-photon microscope system that combines volumetric calcium imaging with 3D holographic photostimulation. The system uses an electrically tunable lens (ETL) for volumetric imaging and a spatial light modulator (SLM) coupled with galvanometric mirrors for a hybrid holographic photostimulation approach. The system achieves high targeting accuracy (0.59 \u00b1 0.54 \u03bcm axial, 0.82 \u00b1 0.65 \u03bcm lateral) and uses spectrally separated fluorophores (GCaMP6 at 940 nm, C1V1-mCherry at 1040 nm) to minimize cross-talk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C27, C76, and C151 collectively describe the microscope design and its technical specifications. The system's capabilities are well-documented with measurements of targeting accuracy (C19), PSF characteristics (C151), and spectral separation strategies (C25-C26). The technical implementation is supported by detailed descriptions and Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C95"
+    ],
+    "result": "The hybrid photostimulation approach can evoke single spikes with low average laser power (2.25-4.5 mW for 10-20 ms spirals) with latencies of 8.5-17.0 ms and jitter of 0.5-2.0 ms. Neural activity can also be evoked with stimulation durations as short as 1 ms using higher power (10-20 mW).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C95 describe the temporal characteristics of photostimulation-evoked responses. The data are supported by electrophysiological recordings (Figure 1G, Figure 1\u2014figure supplement 2) showing spike counts, latencies, and jitter measurements. The low power requirements and temporal precision are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C91",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "The hybrid photostimulation approach (combining holography with spiral scanning) requires approximately half the laser power of scanless approaches for stimulation durations above 5 ms. This power advantage is attributed to the temporal multiplexing strategy and long opsin decay constants. At 1 ms duration, the power advantage is not statistically significant (p=0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37, C91, C93-C94, and C96 describe the power efficiency comparison between hybrid and scanless approaches. The comparison is supported by experimental data (Figure 2, Figure 2\u2014figure supplement 1) with statistical analysis. The mechanistic explanation based on opsin photophysics (C34-C36) is reasonable and supported by citations. The limitation at short durations (C33, C37) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The system successfully photoactivated groups of pyramidal cells (3-27 neurons simultaneously) across three axial depths in layer 2/3 of V1 in anesthetized mice while simultaneously imaging at 6.67 vol/s. The majority of targeted cells (86 \u00b1 6%) showed clear calcium transients, and response rates remained high (82 \u00b1 9%) across different ensemble sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe the basic functionality of the 3D all-optical system. The results are supported by calcium imaging data (Figure 3) showing reliable photoactivation across multiple planes. The response rates are quantified with appropriate statistics, and the experimental protocol (8-11 trials per pattern) is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C55",
+      "C58"
+    ],
+    "result": "Nonspecific activation of non-targeted cells was observed during photostimulation, with probability increasing as distance from targeted cells decreased and as the number of simultaneously stimulated neurons increased. Under extreme conditions (480-962 ms stimulation), nonspecific activation was confined within 25 \u03bcm of targeted cells. In large-scale experiments, nonspecific activation was confined within 20 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48, C55, and C58 describe the spatial specificity limitations of the approach. The distance-dependent nonspecific activation is well-documented (Figure 3H, Figure 4F) with quantitative measurements. The authors appropriately note that these experiments used extremely long stimulation durations to represent worst-case scenarios (C47). Potential mechanisms are discussed (C46) and strategies for reduction are proposed (C48, C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C82"
+    ],
+    "result": "The system successfully photostimulated large groups of neurons in 3D in awake mice. With 300 mW total power and 95 ms activation time, more than 50 out of 83 targeted cells across a 480 \u00d7 480 \u00d7 150 \u03bcm\u00b3 volume were activated. In large-scale experiments (\u226540 target cells), 78 \u00b1 7% of cells in target ensembles were successfully activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 and C82 demonstrate the scalability of the approach to large neuronal populations. The results are supported by calcium imaging data (Figure 4, Figure 4\u2014figure supplement 1) showing successful activation of dozens of neurons simultaneously. The success rates are quantified and the experimental conditions are clearly described. This represents a significant technical achievement in terms of the number of neurons that can be simultaneously manipulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Some cells that could be photoactivated individually or in small ensembles failed to be activated when the number of target neurons increased, potentially due to feed-forward inhibition from activated interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 describes an observation, but C57 is explicitly labeled as a hypothesis. While the observation is documented, the mechanistic explanation remains speculative without direct experimental validation (e.g., blocking inhibition). This represents an interesting observation that requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C146"
+    ],
+    "result": "Photoactivation of somatostatin (SOM) interneurons (9 cells, 7 responding) in 3D during visual stimulation in awake mice significantly suppressed responses in 46% and 35% of pyramidal cells responding to horizontal and vertical gratings, respectively, and largely abolished orientation selectivity in highly selective cells. This demonstrates the utility of the approach for manipulating specific cell types in 3D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C69-C71, and C146 describe a functional demonstration of the all-optical approach. The experiment is well-designed with appropriate controls (visual stimuli with and without photostimulation). The results are supported by calcium imaging data (Figure 5) showing suppression of pyramidal cell responses and loss of orientation selectivity. The findings are consistent with prior work using different methods (C70), providing validation. This demonstrates the biological utility of the technical approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The use of a low-repetition-rate laser (200 kHz - 1 MHz) is a key strategy for reducing average power while maintaining high peak power for efficient two-photon excitation. This approach is particularly well-suited for opsins due to their long channel open times, allowing multiple ions to be conducted per photostimulation event. The optimal repetition rate depends on stimulation duration and opsin properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C108 explain the rationale for using low-repetition-rate lasers. The physical principles are sound (C98-C99) and the reasoning about opsin photophysics is well-supported by citations (C102-C104). The discussion of trade-offs at different stimulation durations (C105-C108) is appropriately nuanced. This represents a thoughtful technical design choice with clear mechanistic justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The first type of cross-talk (imaging laser activating C1V1) was minimized by using low imaging power and red-shifted C1V1. Cell-attached recordings showed a trend for increased firing rate with imaging power, but no significant difference was found under normal volumetric imaging conditions (typically <50 mW, up to 80 mW for deep layers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C121 address the issue of imaging laser-induced photoactivation. The strategy of using low imaging power is reasonable (C118), and the potential concern is acknowledged (C119). The electrophysiological validation (C120-C121, Figure 1\u2014figure supplement 3) provides direct evidence that cross-talk is minimal under typical experimental conditions. The caveat about weakly expressing indicators (C119) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The second type of cross-talk (photostimulation laser exciting GCaMP6) can cause background artifacts in calcium imaging, particularly with high GCaMP6 baseline or large numbers of targeted neurons. Multiple strategies were employed to address this, including narrow bandpass filters, frame deletion for short stimulations, mesh artifact suppression preprocessing for long stimulations, and CNMF-based background subtraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C137 describe the photostimulation-induced imaging artifacts and mitigation strategies. The problem is well-characterized (C128, Figure 1\u2014figure supplement 4), and multiple complementary solutions are presented (C124, C129-C130, C134-C136). The explanation of the mesh artifact origin (C131-C132) is physically sound. The effectiveness of the corrections is demonstrated (C133, C137). This represents a thorough approach to a technical challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Nonspecific activation could potentially be reduced by increasing the numerical aperture (currently limited to ~0.35 by 3 mm galvanometer mirrors), using somatic-restricted opsins, or through sparse expression. However, some nonspecific activation may occur through physiological synaptic connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C144 discuss potential strategies to reduce nonspecific activation. While the suggestions are reasonable (C138-C143), they represent future improvements rather than demonstrated results. The current limitation is clearly stated (C139), and the potential benefits are inferred rather than directly tested (C140-C141). The possibility of synaptic activation (C144) is speculative. These are valuable discussions for future work but do not constitute supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The hybrid strategy generates beamlets targeting neuron centroids via SLM, which are then spirally scanned by galvanometers. This approach is compared to alternative methods: full 3D holograms (which have decreased axial resolution and light contamination issues) and temporal focusing (which decouples axial from lateral extent but has been extended to 3D in recent reports).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 describe the hybrid strategy and compare it to alternatives. The description of the hybrid approach is clear (C84-C86), and the limitations of alternatives are well-documented with citations (C87-C90). This provides important context for understanding the design choices, though the actual performance comparisons are covered in other result groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "An electrically tunable lens (ETL) was chosen for volumetric imaging due to its low cost and good focusing performance. Alternative approaches exist (SLM, ultrasound lens, remote focusing, acousto-optic deflector), and future improvements could include replacing the ETL with a second SLM for multiplane imaging and adaptive optics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 explain the choice of ETL and discuss alternatives. The rationale is straightforward (C109), alternatives are appropriately cited (C110), and future improvements are reasonably suggested (C111). This represents a practical design decision with awareness of trade-offs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Two-photon calcium imaging combined with two-photon optogenetics has been demonstrated for 2D applications, but neural circuits are three-dimensional, making extension to 3D essential for systematic studies of microcircuit computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the motivation for the work. The utility of two-photon imaging (C1) and its combination with optogenetics (C2) are well-established by citations. The limitation to 2D (C3) and the 3D nature of circuits (C4) are factual. The inference that 3D methods are essential (C5) is reasonable given the context. This provides appropriate background and motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C73",
+      "C74",
+      "C75",
+      "C145",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The 3D all-optical method represents a significant advance in precision optogenetics, extending from planar to volumetric targeting and increasing the number of simultaneously photoactivated cells. The method could be useful for studying cell connectivity, ensemble organization, information processing, excitatory/inhibitory balance, and potentially for controlling behavior and treating neurological diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C13 describe demonstrated capabilities (SUPPORTED), while C73-C75, C145, C147-C150 are largely speculative about potential applications. The technical advances are real (C74-C75), but many of the proposed applications (C11, C73, C145, C147, C149-C150) represent future possibilities rather than demonstrated results. The demonstration with SOM cells (C12-C13) provides one concrete example, but the broader utility claims require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Holographic approaches using spatial light modulators are becoming common for multi-cell photostimulation, but the number of addressable neurons is limited by power budget and thermal considerations. The hybrid approach with low-repetition-rate laser addresses these limitations, and thermal effects on cell health are not expected under the stimulation conditions used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C83 provide context for the technical approach. The state of the field (C77) and SLM capabilities/limitations (C78-C80) are appropriately cited. The solution (C81) is described and demonstrated. The inference about thermal safety (C83) is reasonable given the intermittent stimulation pattern and is supported by citation, though direct measurement of temperature would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C72"
+    ],
+    "result": "Cortical interneurons are naturally sparse, highly connected to excitatory populations, and strongly modulate cortical activity. The effect of simultaneous stimulation of selective interneuron subsets with single-cell resolution has not been studied in detail with prior one-photon approaches. The two-photon approach could be useful for dissecting excitatory and inhibitory interactions in cortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 and C72 establish the rationale for the SOM cell experiments. The properties of interneurons (C59-C62) are well-established by citations. The gap in prior work (C63) is appropriately noted with citations. The potential utility (C72) is reasonable given the demonstrated capability with SOM cells. This provides good motivation for the specific application demonstrated.",
+    "result_type": "MINOR"
+  }
+]

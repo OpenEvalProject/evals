@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "OrgC is encoded within the S. Typhimurium SPI-1 T3SS gene cluster, is secreted by the T3SS, but its translocation into host cells could not be detected. Homologs of OrgC are found in several bacterial species with conserved T3SS gene cluster synteny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by citations to prior literature (C1, C2, C3) and sequence alignment data showing OrgC homologs in multiple species (C4). The evidence converges to establish OrgC as a conserved T3SS-associated protein that is secreted but not translocated into host cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C48"
+    ],
+    "result": "OrgC is an early substrate of the SPI-1 T3SS, co-secreted with inner rod and needle filament proteins and the regulatory protein InvJ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C48 are supported by Western blot data (Figure 1C, 1D) showing OrgC secretion in mutant strains that only secrete early substrates. The classification as an early substrate is consistent with established knowledge about T3SS substrate hierarchy and explains the lack of translocation into host cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "OrgC is required for efficient needle assembly initiation but does not influence needle elongation or length. The \u0394orgC mutant shows reduced secretion of middle/late substrates, increased secretion of early substrates (PrgI, PrgJ), reduced proportion of fully assembled needle complexes, but normal needle length distribution in assembled complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 are supported by multiple complementary experimental approaches: Western blots showing altered secretion profiles (C7, C8), bacterial clumping assays (C10), electron microscopy showing reduced needle numbers but normal lengths (C11, C12, C13), and quantitative analysis (Figure 2F-H). The convergence of these independent methods strongly supports the conclusion that OrgC affects needle initiation but not elongation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "OrgC secretion is necessary for its function. Non-secretable forms of OrgC (N-terminal deletion or MBP-tagged) cannot complement the \u0394orgC mutant phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by Western blot data showing non-secreted mutants (Figure 3A, B) and functional complementation assays (Figure 3C). The experimental design appropriately tests the requirement for secretion by disrupting the N-terminal secretion signal through deletion or blocking with MBP tag, both established methods for preventing T3SS secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Exogenously added purified OrgC can complement the \u0394orgC mutant phenotype in a manner dependent on the \u0394invJ mutation, PrgI, and a functional T3SS. Exogenous OrgC restores needle assembly, reduces early substrate secretion, and increases the proportion of fully assembled needle complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are supported by bacterial clumping assays (Figure 4A-D), Western blots (Figure 4E, G), and electron microscopy (Figure 4F, H, I) showing that purified OrgC added to culture media can restore function. The specificity controls (C21, C22) demonstrate that the effect requires specific genetic backgrounds and T3SS components, strengthening the conclusion that OrgC functions from an extracellular location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "OrgC directly interacts with the needle protein PrgI and facilitates needle filament assembly. Overexpression of PrgI can suppress the \u0394orgC phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C31 are supported by multiple independent methods: co-immunoprecipitation showing specific OrgC-PrgI interaction (Figure 5A), bacterial two-hybrid demonstrating direct interaction (Figure 5B), and genetic suppression by PrgI overexpression (Figure 5C). The convergence of biochemical, genetic, and biophysical evidence strongly supports the direct interaction and functional relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "OrgC significantly accelerates the polymerization of PrgI into needle filaments in vitro, reducing the time from ~120 min to ~30 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by dynamic light scattering data (Figure 5D) showing accelerated PrgI polymerization in the presence of OrgC. The quantitative measurements provide clear evidence of OrgC's effect on polymerization kinetics. However, the manuscript does not report replicates or statistical analysis of the DLS experiments, which would strengthen confidence in the magnitude of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "NMR titration experiments identify specific interaction sites between OrgC (residues 134-141) and PrgI (residues K37, S39, Q48, K66). The interaction occurs at fast exchange NMR timescale, suggesting micromolar binding affinity. The PrgI residues involved in OrgC binding show higher conservation in T3SSs that encode OrgC homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by NMR spectroscopy data (Figure 6A-E, supplements) showing chemical shift changes upon titration and sequence alignment data (Figure 6\u2014figure supplement 2). The NMR analysis follows established methods for mapping protein-protein interactions, and the interpretation of fast exchange kinetics is consistent with standard NMR principles. The evolutionary conservation analysis (C35) provides additional support for the functional importance of the identified residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Mutations in the OrgC-PrgI interaction interface abolish OrgC function. Deletions in OrgC residues 134-140 and mutations in PrgI residues Q48, S52, N55 reduce or eliminate complementation of the \u0394orgC phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by bacterial clumping assays (Figure 6F) and Western blots (Figure 6\u2014figure supplement 3) showing that mutations targeting the NMR-identified interface residues disrupt function. The mutagenesis validates the NMR mapping and demonstrates the functional importance of the interaction. However, the manuscript notes that PrgI mutants did not show altered secretion profiles (Figure 6\u2014figure supplement 4), suggesting the mutations may have subtle effects that are detectable only in sensitive assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The NMR structure of OrgC reveals a four-helix bundle core domain with the PrgI-binding region (residues 134-141) located in a flexible C-terminal loop. The PrgI-binding region is electronegative, complementing the electropositive surface on PrgI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by NMR structure determination data (Figure 7A-C, supplements) including chemical shift analysis, NOE restraints, and structure calculations. The manuscript provides appropriate structural statistics (Supplementary file 1) and deposited coordinates (PDB 6CJD). The electrostatic surface analysis (C44, C45) is consistent with the identified interaction residues and provides mechanistic insight into the binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C56"
+    ],
+    "result": "OrgC represents a unique fold with no structural homologs detected by DALI search. However, the central four-helix domain shows topological similarities to the D1 domain of flagellar capping protein FliD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, and C56 are supported by DALI database searches and structural comparisons (Figure 7\u2014figure supplement 4). The lack of significant structural homologs (C46) is appropriately qualified by noting the topological similarity to FliD D1 domain (C47, C56), which is relevant given the evolutionary relationship between T3SS and flagella. The comparison is based on topology rather than sequence similarity, which is appropriate for distantly related proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The authors hypothesize that OrgC nucleates initial PrgI polymerization and is subsequently discarded, explaining its absence from isolated needle complexes and needle tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49 and C50 are explicitly labeled as hypotheses/speculation by the authors. While the model is consistent with the experimental observations (reduced needle numbers but normal lengths, inability to detect OrgC in isolated complexes), it lacks direct experimental validation. The manuscript does not provide evidence showing OrgC at early stages of needle assembly or demonstrate its release during polymerization. Additional experiments such as time-resolved imaging or biochemical detection of OrgC release would be needed to support this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "OrgC function is reminiscent of but distinct from flagellar capping proteins. Unlike capping proteins, OrgC is required only for initiation (not elongation) of needle assembly and is not essential. Despite lacking sequence similarity, OrgC's core domain shows topological similarity to the D1 domain of capping proteins, suggesting OrgC may be equivalent to capping proteins lacking the 'plate' substructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 present a comparative analysis supported by the experimental data showing OrgC's specific role in initiation (C54, C55) and structural comparison (C56). The comparison to capping proteins is appropriate given the evolutionary relationship between T3SS and flagella. However, the hypothesis that OrgC is equivalent to capping proteins lacking the plate substructure (C57) is speculative and would benefit from additional structural or functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The T3SS needle diameter (8 nm) is significantly smaller than the flagellar filament (20 nm), which may explain differences in assembly mechanisms and accessory protein requirements. OrgC homologs are absent from several T3SSs, but needle proteins from T3SSs with OrgC homologs show conserved OrgC-binding residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 combine established structural knowledge (C58) with sequence analysis (C59, C60). The diameter comparison is well-established in the literature. The sequence conservation analysis (C60, Figure 6\u2014figure supplement 2) supports the functional importance of the OrgC-PrgI interaction. However, the inference that some T3SSs have evolved independence from accessory proteins (C59) is speculative and would require functional studies in those systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Background information on T3SS structure, function, and evolutionary relationship to flagella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 present established background knowledge about T3SS structure, assembly, and function, all supported by appropriate citations to prior literature. These claims provide context for the current work but do not represent novel findings.",
+    "result_type": "MINOR"
+  }
+]

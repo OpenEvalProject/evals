@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Experimental recordings from awake mice show that OB outputs are sustained throughout the sniff cycle while PCx responses are sparse and transient, peaking shortly after inhalation. This supports the transformation from a temporal code in OB to an ensemble code in PCx where early-active glomeruli preferentially define cortical responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide direct experimental evidence from simultaneous OB and PCx recordings (Figure 1) showing distinct temporal dynamics. Claims C34-C35 appropriately synthesize these observations with cited literature to conclude that early OB inputs preferentially shape PCx ensembles. The experimental data directly support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors developed a computational model of the OB-PCx circuit with 900 glomeruli (each with 25 mitral cells) providing input to 10,000 pyramidal cells, 1225 FFINs, and 1225 FBINs, with connectivity patterns approximating known anatomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 describe the model architecture in detail. The model structure is clearly specified with biologically-constrained parameters. While the model is simplified (e.g., single MTC population, random connectivity), the authors acknowledge these limitations and justify design choices based on experimental constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model produces spontaneous activity levels (2.8\u00b10.4% of cells active) and odor-evoked responses (14.1\u00b10.59% active at reference concentration) consistent with experimental observations, though trial-to-trial correlations are lower than experimentally measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 show the model recapitulates key experimental features with quantitative comparisons to literature. Claims C53-C55 acknowledge that correlation values are lower than experimental measurements and provide plausible explanations (gap junctions, broadly activated cells). The discrepancy is appropriately discussed rather than ignored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The model shows that early-activated glomeruli initiate a cascade where pyramidal cells receiving strong OB input spike first, recurrent excitation recruits additional pyramidal cells with moderate input, and FBINs are then recruited to truncate the response while maintaining odor-specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 describe the core mechanistic findings from the model (Figure 4). The cascade dynamics are well-characterized with clear temporal progression. The mechanism is internally consistent: early inputs drive initial spiking, recurrent excitation amplifies but remains subthreshold alone, and stronger FBIN recruitment prevents runaway excitation while preserving selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Removing recurrent circuitry from the model eliminates the transient peak response and causes pyramidal cell spiking to increase continuously throughout the sniff. Adding only FFI to the feedforward circuit does not restore the characteristic response dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe systematic circuit manipulations (Figure 4C, Figure 5\u2014supplement 1A) demonstrating that intracortical circuitry is necessary for key response features. The comparison between full and reduced circuits clearly establishes that FFI alone cannot account for temporal selectivity, supporting the importance of recurrent dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "FFI primarily controls the amplitude of the peak response in a subtractive manner, while pyramidal cell output is robust to FBI strength over a wide range, though extreme values cause runaway excitation or oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 describe systematic parameter variations (Figure 5) showing distinct roles for FFI and FBI. The robustness analysis is thorough, examining both inhibitory mechanisms across parameter ranges. The finding that FFI is subtractive while FBI provides divisive normalization is well-supported by the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Recurrent excitation is responsible for both early amplification and rapid truncation of the population response. Increasing recurrent excitation onto pyramidal cells enhances the upward slope to the peak, while increasing excitation onto FBINs modulates the downward slope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe systematic manipulation of recurrent excitation (Figure 6) with clear dissociation of effects on pyramidal cells versus FBINs. The bidirectional role of recurrent excitation (amplification and truncation) is well-demonstrated through parameter variations showing opposite effects on response dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In the full model, population spiking peaks at 34\u00b18.3 ms when only ~15% of glomeruli have been activated. Eliminating FFI shifts the peak slightly earlier (28\u00b14.5 ms), while removing recurrent excitation delays it substantially (139\u00b129 ms), demonstrating that recurrent excitation amplifies early inputs and discounts later inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 provide quantitative analysis (Figure 7) directly linking response timing to glomerular activation. The comparison across circuit manipulations clearly demonstrates the role of recurrent excitation in temporal selectivity. The statistics are appropriately reported with standard deviations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Response correlations for same-odor trials are lower when using only the first 50 ms (0.24\u00b10.019) versus full 200 ms (0.35\u00b10.010), but the signal-to-noise ratio (same/different odor correlations) nearly doubles for early responses, indicating that early cortical activity provides a more distinctive odor representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 provide quantitative analysis (Figure 7E-F) showing that early responses have better discriminability despite lower absolute correlations. The signal-to-noise ratio calculation appropriately captures the trade-off between correlation magnitude and selectivity. This supports the functional importance of early temporal filtering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The model shows concentration normalization: a 10-fold increase in active glomeruli (3% to 30%) produces only an 80% increase in responsive pyramidal cells (9.7\u00b10.40% to 17.3\u00b10.71%), with modest increases in total spikes and spikes per cell, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 demonstrate concentration invariance in the model (Figure 8B-E) with quantitative comparisons to experimental data. The normalization is substantial (10-fold input \u2192 1.8-fold output) and matches experimental observations. The statistics are appropriately reported with standard deviations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Eliminating FFI produces modest, uniform increases in responses across concentrations (subtractive effect), while removing recurrent excitation and FBI causes steep concentration-dependence (divisive effect). Recurrent excitation also amplifies responses at low concentrations, demonstrating bidirectional normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 systematically dissect normalization mechanisms (Figure 8C-D) through circuit manipulations. The distinction between subtractive (FFI) and divisive (recurrent/FBI) normalization is clearly demonstrated. The bidirectional normalization (amplification at low input, suppression at high input) is a key mechanistic insight well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A linear classifier trained at one concentration can accurately identify odors across concentrations when using only the first 50 ms of activity, but performance degrades at extreme concentrations when using full 200 ms responses. Early responses maintain better separation between same and different odor correlations across concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 demonstrate concentration-invariant odor recognition using decoding analysis (Figure 9A-B). The comparison between early (50 ms) and full (200 ms) responses clearly shows superior generalization for early activity. The mechanistic explanation (corruption by spontaneous activity at low concentrations, contamination by late inputs at high concentrations) is plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Population synchrony is highly sensitive to concentration: a 10-fold increase in active glomeruli produces a 5.7-fold increase in peak spike rate but only 1.8-fold increase in responsive cells. Peak rate and latency can be used to decode concentration, with combined features performing best, though timing variability increases at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 demonstrate multiplexed coding where concentration is encoded in temporal features (Figure 9C-F). The quantitative analysis shows population synchrony is more sensitive to concentration than ensemble size. Multiple decoding approaches are tested, with appropriate acknowledgment of performance trade-offs across concentration ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C119",
+      "C120",
+      "C121",
+      "C140",
+      "C141"
+    ],
+    "result": "The model demonstrates how PCx circuitry implements a multiplexed odor code where recurrent excitation amplifies early OB inputs and recruits feedback inhibition to suppress later inputs, producing concentration-robust ensemble representations of odor identity while encoding concentration through population synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C6, C119-C121, C140-C141 synthesize the main findings into a coherent mechanistic framework. The multiplexed coding strategy (ensemble for identity, temporal for intensity) is well-supported by the modeling results. The circuit mechanism (recurrent amplification + feedback suppression) is clearly demonstrated through systematic manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The model suggests that circuit motif (feedforward vs. feedback) determines functional role more than cell type, with recurrent excitation/FBI providing divisive gain control while FFI provides subtractive modulation. This motif may be particularly suited for normalizing temporal or latency-based codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 draw broader conclusions about circuit organization from the modeling results. The distinction between circuit motif and cell type is well-supported by the differential effects of FFI versus FBI despite similar implementation. The speculation about applicability to other temporal codes (C126) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The model makes several testable predictions: selective FFI blockade should produce additive increases without altering dynamics; FBI blockade should have multiplicative effects; reducing pyramidal output should increase and prolong responses and make them concentration-dependent; Connexin-36 knockout should increase trial-to-trial variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 derive specific experimental predictions from the model. These predictions follow logically from the mechanistic insights and are appropriately qualified as predictions rather than established facts. The predictions are testable with current experimental techniques (optogenetics, genetic knockouts).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The model does not recapitulate the biphasic PCx response observed experimentally, possibly because it does not distinguish mitral versus tufted cells or include centrifugal feedback from PCx to OB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 acknowledge a specific limitation of the model with plausible explanations. The authors appropriately identify what the model fails to capture and provide mechanistic hypotheses for the discrepancy. This transparent discussion of limitations strengthens rather than weakens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The model's focus on single-sniff responses is justified because trained rodents can discriminate odors within ~100 ms (one sniff), and early activity provides better concentration-invariant recognition because full responses are corrupted by spontaneous activity at low concentrations and late-responding glomeruli at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 justify the single-sniff modeling approach with behavioral evidence and provide mechanistic explanation for why early responses support better odor recognition. The justification is reasonable given the experimental literature, though the model cannot address multi-sniff dynamics or learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C19",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior work establishes that OB uses a temporal latency code for odor identity while PCx uses an ensemble code without additional spike timing information, representing a transformation from temporal to ensemble coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C8, C19, C23-C24 accurately summarize the experimental literature on OB and PCx coding strategies. The citations are appropriate and the characterization of the transformation problem is consistent with current understanding. This provides the scientific context motivating the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The model shows that only a small subset of PCx neurons need to receive suprathreshold OB input, with recurrent excitation recruiting additional cells that receive moderate but subthreshold input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is directly supported by the model dynamics shown in Figure 4B where cells receiving strong, moderate, and weak OB input show distinct recruitment patterns. This reconciles the sparse OB-to-PCx connectivity with the broader ensemble activation observed experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "The authors propose that the OB-to-PCx transformation represents a more general circuit motif for interpreting temporally structured input, noting that recurrent normalization is effective in other systems using phasic or time-varying input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C143 propose broader applicability of the circuit mechanism beyond olfaction. While C142 cites evidence from other systems, C143 is speculative. The proposal is reasonable but would require additional modeling or experimental work in other systems to validate. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The model simulates concentration changes by scaling glomerular onset latencies while preserving activation sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 describes the modeling approach for concentration, which is clearly implemented and justified by experimental observations (C95) showing that latencies decrease with concentration. This approach is reasonable though simplified, as it assumes perfect preservation of rank order across concentrations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C33",
+      "C34",
+      "C35",
+      "C64",
+      "C65"
+    ],
+    "result": "In controls, the anterior temporal lobe (ATL) serves as the major network hub for face processing, with the three ATL nodes ranked as the top 3 nodes by strength and connecting to both face and non-face selective nodes. In contrast, individuals with congenital prosopagnosia (CP) do not show this ATL hub dominance, with their top-ranked nodes instead located in the right inferior temporal gyrus and left lateral occipital cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C22, C33-C35, C64-C65 collectively demonstrate altered ATL connectivity in CP versus controls using ISFC analysis with appropriate statistical testing (permutation tests, FDR correction q<0.005). The node strength rankings (C34, C36) and network topology analysis (C33, C65) provide converging quantitative evidence. The analysis was conducted in an 'assumption-free fashion' using data-driven node definition from an independent localizer cohort (C19), strengthening the validity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C36",
+      "C37",
+      "C39",
+      "C45",
+      "C46",
+      "C47",
+      "C69"
+    ],
+    "result": "Individuals with CP exhibited hyper-connectivity in posterior regions of the visual cortex, particularly in the lateral occipital cortex (LOC) and inferior temporal cortex. This posterior hyper-connectivity showed a gradient pattern where more posterior regions had higher node strengths in CP compared to controls, and the top-ranked nodes in CP were predominantly located in these posterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C37, C39, C45-C47, C69 provide consistent evidence from multiple complementary analyses: significant edges in the CPs>controls contrast (C23), threshold analysis showing posterior localization (C37), Spearman correlations demonstrating the posterior gradient (C39: rs = -0.67 to -0.83, p=0.0003 to 0.01), and anatomical localization of top nodes (C45-C47). The convergence of these independent analytical approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The extent of posterior hyper-connectivity (ISFC values in the CPs>controls contrast) was significantly correlated with face recognition behavioral deficits. In a multivariate regression model, both group and ISFC values significantly predicted face recognition behavioral scores (R\u00b2=0.83, p<0.0001), with ISFC showing a positive association with behavioral performance (\u03b2=4.89, p=0.017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C30 demonstrate a brain-behavior relationship using appropriate statistical methods. The behavioral measures were validated (C25: r=0.71, p=0.0003 correlation between CFMT and famous faces) and combined using PCA (C26: 85.9% variance explained). The multivariate regression (C27-C29) shows both group and ISFC independently predict behavior with significant statistics and appropriate model fit (R\u00b2Adjusted=0.81). However, the positive association (C30) seems counterintuitive\u2014higher posterior connectivity predicts better performance\u2014which may warrant additional interpretation or could reflect compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Standard functional connectivity (FC) analysis revealed similar patterns of altered connectivity (reduced ATL connectivity in controls>CPs, increased posterior connectivity in CPs>controls) but, critically, FC values did not significantly predict behavioral face recognition scores in regression models, whereas ISFC values did. This demonstrates that ISFC captures stimulus-locked variance related to behavior that standard FC does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C48-C54 provide a methodological comparison showing ISFC superiority for brain-behavior relationships. Both methods detected group differences with FDR correction (C49, C51), but regression analyses showed only group effects were significant for FC (C52: both contrasts p<0.0001 for group, p>0.25 for FC), while ISFC showed significant connectivity-behavior relationships (C29: p=0.017). This validates the theoretical advantage of ISFC (filtering intrinsic noise) with empirical data. The comparison strengthens confidence in the ISFC findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The control group's face network showed face-specific dominance, with 80% of the top ten nodes being face-selective (significantly higher than the 35% base rate, \u03c7\u00b2=5.05, p=0.02). In contrast, the CP group showed no such face-selectivity enrichment in their top nodes (\u03c7\u00b2=1.25, p=n.s.).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate differential face-selectivity in network topology using appropriate chi-square tests comparing observed rates to base rates. The statistical significance for controls>CPs (C42: p=0.02) and lack thereof for CPs>controls (C44: p=n.s.) is clearly reported. However, the base rate calculation (35% = face nodes/total nodes) assumes independence, which may not hold in a functionally organized network. The 80% vs 35% difference is substantial and unlikely to be explained by this assumption alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Network topology showed an anterior-posterior gradient: in controls>CPs, more anterior regions (higher Y coordinates) had higher node strengths (rs=0.52 to 0.8, p=0.004 to 0.053), while in CPs>controls, more posterior regions had higher node strengths (rs=-0.67 to -0.83, p=0.0003 to 0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 quantify the anterior-posterior gradient using Spearman correlations across multiple bin divisions (10-21 bins). The opposite directionality and stronger significance for the CPs>controls contrast (C39: p=0.0003 to 0.01) versus controls>CPs (C38: p=0.004 to 0.053, with one marginally significant result at p=0.053 for 14 bins) is clearly documented. The robustness across different bin divisions strengthens the finding, though the choice of binning strategy could influence results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Stimulus-locked response patterns measured by ISFC were highly reliable in both CP and control groups, ruling out global signal-to-noise reduction in CP. Instead, the groups differed in network topology while maintaining reliable stimulus-locked activity, indicating that CP individuals process visual information in a systematic but altered fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 address a critical alternative explanation (global SNR reduction in CP) and rule it out based on the reliable ISFC patterns observed in CP (C55). The inference that reliable patterns indicate systematic processing (C56, C58) is logical. This strengthens the interpretation that observed differences reflect genuine reorganization rather than degraded signal quality. However, the manuscript does not provide quantitative SNR comparisons, relying instead on the presence of significant ISFC patterns as evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21"
+    ],
+    "result": "The inter-subject functional correlation (ISFC) method isolates stimulus-locked functional responses by correlating response profiles across participants' brains, filtering out intrinsic neural dynamics and non-neuronal artifacts that are uncorrelated across subjects. This substantially increases signal-to-noise ratio and permits fine-grained network construction even with small sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17, C20-C21 describe the ISFC methodology with appropriate citations to the methodological paper (Simony et al., 2016). The logical principle that uncorrelated noise across subjects cancels out (C14-C15) while stimulus-locked responses are shared (C16) is sound. The claim about increased SNR (C20) is supported by citation. However, C21's claim about small sample sizes is somewhat circular\u2014the current study uses n=10 per group, which is indeed small, but whether this is 'sufficient' depends on the effect sizes observed, which are not independently validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors propose that impaired ATL connectivity in CP may result in compensatory hyper-connectivity in posterior nodes (LOC, inferior temporal gyrus), which allows for rudimentary structural encoding of faces from immediate visual input but is insufficient for recognition and individuation of identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C68, C74-C75 present a mechanistic interpretation of the findings but are explicitly speculative (evidence_type includes SPECULATION). The compensatory hypothesis is plausible and supported by citations to relevant literature on ATL function (C59-C62, C71-C72) and behavioral profiles of CP (C73). However, the current study's cross-sectional design cannot establish causality (acknowledged in C76), and the positive correlation between posterior connectivity and behavioral performance (C30) could alternatively suggest that greater posterior connectivity is beneficial rather than merely compensatory. Additional longitudinal or interventional data would be needed to test this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study included 10 CP individuals (mean age 40.04\u00b115.03 years) who met strict diagnostic criteria (performance <2 SD below controls on \u22652 of 4 face recognition tests) and 10 age-matched controls (mean age 39.3\u00b113.4 years, p=0.84 for age difference). CP participants showed significant behavioral deficits on CFMT (t(15)=5.54, p<0.0005) and famous faces questionnaire (t(15)=6.09, p<0.0005). Network nodes were defined using an independent localizer cohort of 16 control subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C81-C90 describe participant characteristics and inclusion criteria with appropriate detail. The use of an independent localizer cohort (C19, C81) to define nodes is a strength that avoids circularity. The diagnostic criteria (C86: <2 SD on \u22652 of 4 tests) are clearly specified and validated with statistical tests (C89-C90). Age-matching is confirmed (C88). Sample size (n=10 per group) is small but justified by the rarity of CP and the high SNR of ISFC (C21). However, the CP group shows high age variability (18-62 years, SD=15.03) which could introduce heterogeneity, though this is not analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The experimental design used blocked presentation of face and building stimuli (10s blocks, 7 repetitions, 800ms per image) during fMRI scanning. Network nodes (n=415) were defined using seed-based correlation from FFA and LOC seeds (r>0.5 threshold), followed by Ward agglomeration clustering with a minimum size of 10 voxels. ISFC was calculated using leave-one-out correlation between each subject and the mean of the remaining 9 subjects, with statistical significance determined by permutation testing (10,000 iterations) and FDR correction (q<0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C103 provide detailed methodological information. The experimental design (C91-C96) is standard and appropriate. The node definition procedure (C97-C100) is clearly described with specific parameters (r>0.5 threshold, minimum 10 voxels, resulting in 415 nodes). The ISFC calculation (C101) and statistical testing (C102-C103) are appropriate, with stringent FDR correction (q<0.005, more stringent than typical q<0.05). The permutation testing with 10,000 iterations provides robust null distributions. However, some choices appear arbitrary (e.g., r>0.5 threshold, 10 voxel minimum, 500 cluster maximum) and sensitivity analyses are not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C70",
+      "C71",
+      "C72",
+      "C79"
+    ],
+    "result": "Prior literature establishes that CP individuals show normal activation in posterior face patches but reduced white matter connectivity to ATL, and that ATL is critical for person-specific information integration and familiar face recognition. The current ISFC findings validate previous atypical ATL connectivity findings in CP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C59-C63, C70-C72, C79 appropriately cite and summarize relevant prior literature. The citations support the claims about normal posterior activation (C5), reduced structural connectivity (C6), abnormal functional connectivity (C7), and ATL function (C59-C62). The claim that current results 'validate' previous findings (C79) is reasonable given the convergence with prior work, though 'validate' may be too strong\u2014'corroborate' or 'extend' might be more appropriate. The literature review appropriately contextualizes the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Standard functional connectivity (FC) combines stimulus-induced correlations, intrinsic neural fluctuations, and non-neuronal artifacts, which are difficult to separate given the strength of intrinsic fluctuations. This may result in group differences that are not sufficiently robust for whole-brain statistical correction. Face processing involves multiple distributed regions in humans and non-human primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 provide appropriate background on FC limitations (C8-C10) and the distributed nature of face processing (C11-C12), supported by relevant citations. These claims establish the rationale for using ISFC. The characterization of FC limitations is accurate and well-established in the literature. The consensus about distributed face processing (C11-C12) is well-supported by the cited studies. This background appropriately motivates the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The ATL nodes showed network properties consistent with 'connector hubs' (within-module weighted degree=4.63, participation coefficient=0.58), connecting to both face and non-face selective nodes. Based on standard graph theoretical definitions, the ATL differences between controls and CPs are not a priori face-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 apply standard graph theoretical metrics (within-module degree, participation coefficient) with appropriate citations to established definitions (Guimer\u00e0 and Nunes Amaral, 2005). The calculated values (C104) meet the criteria for 'connector hubs' (C105-C106: degree>2, participation coefficient 0.3-0.75). The inference that ATL differences are not face-specific (C107) is supported by the connectivity to both face and non-face nodes (C35). This analysis appropriately characterizes the network properties of the ATL hub.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "The authors acknowledge that CP individuals can detect faces despite recognition deficits, that the study cannot infer causality regarding anterior-posterior disconnection, and that it remains unresolved whether CP represents the lower end of normal variation or a distinct disorder. They claim this is the first demonstration of wide-scale network topological differences in CP and propose the approach may benefit studies of other neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C76-C78, C80 appropriately acknowledge limitations and contextualize the findings. The inability to infer causality (C76) is an important limitation of the cross-sectional design. The unresolved question about CP as continuum vs. distinct disorder (C77) is a legitimate ongoing debate in the field. The novelty claim (C78) appears reasonable given the comprehensive network approach, though 'first demonstration' should be verified against the literature. The proposal for broader application (C80) is appropriately speculative and supported by citations to other disorders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The authors hypothesized that higher ISFC values in posterior visual areas (LOC) should suffice for face representations driven by immediate visual input that do not necessarily enable recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C24 presents a hypothesis with citations to support the theoretical framework (Gainotti 2007, 2013; Fox et al., 2008). However, this is stated as a hypothesis to be tested rather than a result. The subsequent findings (C4, C29-C30) show a positive correlation between posterior ISFC and behavioral performance, which could be interpreted as supporting or contradicting this hypothesis depending on whether 'suffice for representations' means better or worse recognition. The relationship between the hypothesis and the empirical findings needs clearer articulation.",
+    "result_type": "MINOR"
+  }
+]

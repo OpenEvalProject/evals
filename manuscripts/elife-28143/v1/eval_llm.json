@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C49",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Two distinct populations of neurons in the PPC (primarily area 5b) were identified: 14/51 cells signaled distance-to-contact (DTC) and 15/51 cells signaled time-to-contact (TTC) with an approaching obstacle, regardless of which limb stepped over the obstacle first. These populations were anatomically intermixed throughout area 5b and the 5/7 border region, with both cell types found in each cat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of two distinct neuronal populations is well-supported by rigorous statistical analysis (one-way ANOVAs with p<0.01 threshold, C51-C52), clear separation in the modulation index (C58), and validation through bootstrapping (C59). The limb-independence (C5) and anatomical distribution (C55-C57) are documented with appropriate data. The sample size (51 cells analyzed from 67 total) is adequate for the statistical tests performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "TTC-related cells discharged when the obstacle was 300-1000 ms away, while DTC-related cells discharged when the obstacle was 20-40 cm away, corresponding to 1-2 steps before the obstacle. The staggered onset of cells within each population resulted in a progressive ramp increase in population discharge activity beginning 2-3 steps before the step over the obstacle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal and spatial characteristics of the two cell populations are clearly documented (C60-C61) with appropriate histograms (Figure 5E). The interpretation that these values correspond to 1-2 steps before the obstacle (C62) is reasonable given the experimental parameters. The population-level ramp discharge (C64-C65) is demonstrated in Figure 6 with adequate sample sizes (14 DTC and 15 TTC cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The visual dissociation task successfully dissociated DTC from TTC by slowing obstacle speed to 0.3 m/s while maintaining treadmill speed at 0.45 m/s. For the example DTC-related cell, discharge onset occurred at significantly different times between tasks (514\u00b1124 ms in matched vs 745\u00b1161 ms in visual dissociation, p<0.001) but at constant DTC, while TTC varied significantly. The opposite pattern was observed for TTC-related cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design effectively dissociates DTC and TTC (C21-C26), and the quantitative data for example cells are well-documented with appropriate statistics (C33-C38, C43-C48). The t-tests show significant differences (p<0.001 and p=0.002) for the matched vs visual dissociation comparison (C37-C38). The ANOVA results confirm the expected patterns for both DTC-related (C43-C45) and TTC-related (C46-C48) cells. However, the analysis relies heavily on example cells; population-level statistics would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Obstacle acceleration decreased the time to close the gap and consistently reversed the limb sequence. Most cells (18/20 DTC-related and 16/25 TTC-related conditions tested) maintained their relationship to DTC or TTC during acceleration. The onset of cell discharge was delayed during 1L acceleration (33/36 cells, 19/36 significant at p<0.05) but less frequently during earlier accelerations (2L and 2R conditions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acceleration manipulation provides a strong test of the DTC/TTC relationships (C71-C73). The example cell data clearly demonstrate maintained DTC relationships during acceleration (C74-C81). The population analysis shows that most cells maintained their DTC or TTC relationships (C88-C90), though the sample sizes for some acceleration conditions are small (e.g., 2/2 for 1R in DTC cells). The delayed onset during 1L acceleration is well-documented (C83-C84), and the timing-dependent effect (C87) is logical given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C122",
+      "C123"
+    ],
+    "result": "During obstacle acceleration, 73% of cells (49/67) showed increased discharge slope, with the largest changes in 1L and 2R conditions. Population discharge slope increased 3.3-fold during 1L acceleration and 2.9-fold during 2R acceleration compared to unperturbed trials. No slope change was observed for 2L acceleration, where acceleration occurred earlier than typical cell discharge onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased discharge slope during acceleration is well-documented at both single-cell (C91) and population levels (C92-C95). The quantification of slope increases (3.3x for 1L, 2.9x for 2R) is specific and appears to be based on population averages shown in Figure 9. The lack of slope change for 2L acceleration (C96) is consistent with the timing of acceleration relative to cell discharge onset. However, the interpretation that increased slope provides information about rate of gap closure (C97, C122-C123) is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C40",
+      "C41",
+      "C42",
+      "C124",
+      "C165",
+      "C166",
+      "C174",
+      "C175"
+    ],
+    "result": "All analyzed cells were limb-independent, discharging identically regardless of which limb stepped over the obstacle first. Cells were classified as step-advanced (discharge >200 ms before obstacle) rather than step-related, with no relationship between cell discharge onset and muscle activity in the step before the obstacle, but a significant relationship between discharge end and lead limb muscle activity during the step over.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limb-independence criterion is clearly defined (C166) and consistently applied as an inclusion criterion (C175). The demonstration that cells are not simply step-related is supported by the lack of correlation with muscle activity in preceding steps (C40) and the significant relationship with lead limb activity during the step over (C41). The generalization to all cells in the database (C42) is appropriate given that limb-independence was an inclusion criterion. The >200 ms threshold for step-advanced classification (C165, C174) is reasonable but somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C171",
+      "C172",
+      "C173",
+      "C176"
+    ],
+    "result": "The neuronal database consisted of 67 cells from two cats (37 from PCM7, 30 from PCM9), recorded from area 5b and the 5/7 border region, with 43/67 antidromically identified as layer V projection neurons. Cells were selected based on anatomical location, layer V identification, step-advanced discharge (>200 ms before obstacle), limb-independence, and minimum trial numbers (\u22655 unperturbed, \u22653 acceleration per condition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The database composition is clearly documented (C27-C31) with explicit inclusion criteria (C171-C173, C176). The antidromic identification of 43/67 cells as layer V neurons (C173) provides strong anatomical validation, with the remaining 24 cells recorded adjacent to identified cells. The inclusion criteria are appropriate for the study's goals. However, the sample size of only 2 cats is a limitation for generalizability, though both cats showed similar cell types (C57).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Population discharge onset occurred earlier in the visual dissociation task than the matched task for DTC-related cells, but at the same time for TTC-related cells. Peak discharge for both populations occurred just before or after the onset of gait modification. An early increase in DTC-related population discharge was observed 5-6 steps before the obstacle in the visual dissociation task, representing a tonic increase rather than an artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The task-dependent differences in population discharge onset (C66-C67) are consistent with the single-cell findings and clearly shown in Figure 6. The timing of peak discharge relative to gait modification (C68) is well-documented. The early increase in DTC-related discharge (C69-C70) is noted and attributed to a real phenomenon based on Figure 6\u2014figure supplement 1, though the functional significance of this early activity is not explored. The population analyses appropriately combine data from multiple cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Among the 51 cells analyzed, 6/51 showed significant effects of both DTC and TTC, and 16/51 showed non-significant effects of both variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These cells represent those that did not fit cleanly into the DTC or TTC categories based on the statistical criteria (p<0.01). The quantification is straightforward and the cells are appropriately identified in Figure 5C (green and gray squares). However, the functional significance of these cells is not explored, and they appear to be excluded from subsequent population analyses focused on the clearly defined DTC and TTC cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cells did not discharge purely to visual stimuli but were tuned to respond only when the obstacle was within a limited range of DTC or TTC. Cell discharge continued until the step over the obstacle, representing the starting point of a sensorimotor transformation for planning gait modification rather than a pure visual response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The interpretation that cells are not purely visual (C98) is reasonable given that discharge begins at specific DTC/TTC values rather than throughout obstacle visibility. The tuning to limited ranges (C101) is supported by the data in C60-C61. However, the claims about sensorimotor transformation (C104-C105, C111-C112) are interpretations rather than direct demonstrations. The study does not include experiments that would definitively distinguish sensory from motor planning signals, such as trials where visual information is removed or motor output is prevented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The staggered discharge pattern across cells would provide a means to continually monitor gap closure rate, facilitate detection of non-linearities in gap closure, and be necessary for estimating gaps with prey moving at unpredictable speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The staggered discharge pattern is well-documented (C106, supported by C63-C64), but the proposed functions (C107-C109) are speculative. While the interpretation is plausible and consistent with the data, the study does not directly test whether these cells actually monitor gap closure rate or detect non-linearities. The proposal about natural predator-prey situations (C109) is entirely speculative and extends beyond the experimental paradigm. These are reasonable hypotheses for future work but are not demonstrated by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Lesions of the PPC region result in an inability to appropriately place the plant limb in front of the obstacle, indicative of a planning error. In the absence of PPC information about obstacle location and gap closure rate, cats cannot determine where to position the leg or when to start the gait modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The lesion data (C113) is cited from prior work (Lajoie and Drew, 2007) rather than presented in this study. While the authors reference their previous discussion of why this represents a planning deficit (C114), the interpretation that the deficit specifically results from loss of DTC/TTC information (C115) is speculative. Lesions are not cell-type specific and would affect all PPC neurons in the region, not just the DTC and TTC cells identified here. The causal link between the specific cell populations described and the lesion deficit is inferred but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The progressive ramp increase in population discharge up to gait modification provides a signal indicating the imminent requirement to modify gait. The peak of activity represents a 'time of commitment' at which the cat initiates the gait modification, similar to ramp discharges observed in self-initiated movements and decision-making tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The ramp increase in population discharge is well-documented (C116, supported by C64-C65, Figure 6). The comparison to similar phenomena in other motor systems (C117, C119) is appropriate and well-cited. However, the interpretation that this represents a commitment signal (C121) is speculative. The study does not include experiments that would test this hypothesis, such as examining whether the peak discharge timing predicts movement onset variability or whether perturbations after peak discharge still result in gait modification. The analogy to decision-making tasks (C119-C120) is interesting but does not constitute evidence for this specific function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The limb-independence of PPC activity differs from one study suggesting limb-specific activity only after effector specification. This disparity likely reflects task differences: in the current task, the cat is walking and the lead limb is not pre-defined, making limb selection an emergent property rather than an instructed movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of limb-independent activity is well-supported by the current data (C124-C125). The comparison to Bernier et al. (2012) is appropriate (C125, C127), and the proposed explanation based on task differences (C126, C128-C129) is plausible. However, this remains speculative without direct experimental comparison. The interpretation that limb selection is an 'emergent property' (C129) is reasonable but not directly tested. Species differences (cat vs. primate) and area differences (5b vs. other PPC regions) could also contribute to the disparity but are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "A conceptual model proposes that gap closure information is integrated with limb state signals bilaterally, with the limb selected to step over the obstacle determined by which side wins the competition. Integration likely occurs in subcortical structures (basal ganglia or cerebellum) that receive projections from layer V PPC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a conceptual model (C130) and speculation (C132). While the model is illustrated in Figure 10 and is consistent with the data, it is not tested experimentally. The observation that all recorded cells are in layer V and project subcortically (C133) is supported, but the specific proposal about integration sites is speculative. The model provides a reasonable framework for future experiments but should not be considered a demonstrated result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The PPC contributes to visually guided locomotor gait modifications by constructing an estimation of object location relative to body state. The demonstration of DTC and TTC cell populations provides new insights into sensorimotor transformations underlying visually guided walking, with the PPC potentially having a privileged position in planning gait adjustments for navigating complex environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The main hypothesis (C1) is supported by the identification of DTC and TTC cells, but the claim that these cells 'construct an estimation' is an interpretation rather than a direct demonstration. The study successfully identifies neural correlates of gap closure (C2) and shows they are related to gait modification timing, but the causal role in 'constructing estimations' or 'initiating' gait modifications (C6) is not directly tested. The claims about novelty (C134-C135) are reasonable, but the proposal about the PPC's 'privileged position' (C136) extends beyond the data by citing navigation studies without directly linking those findings to the current results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Cats performed the obstacle avoidance task stereotypically, with DTC and TTC decreasing monotonically to ~0 at step onset. The obstacle became visible ~2 m (5-7 s, 10-12 steps) before the gait modification. Cats rarely hit the obstacle, even during late accelerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral characterization is well-documented with appropriate citations (C19) and clear descriptions of the temporal relationships (C20, C141-C142). The task parameters are precisely specified (C137-C140). The observation that cats rarely hit the obstacle (C138) demonstrates task proficiency and validates the experimental approach. This behavioral foundation is essential for interpreting the neural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Comprehensive methodological details are provided for surgical procedures, recording techniques, data acquisition, spike sorting, EMG analysis, statistical methods, and histological verification of recording locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are described in appropriate detail for reproducibility. Key strengths include: antidromic identification of layer V neurons (C146, C149), high sampling rates for spike discrimination (100 kHz, C154), motion tracking for DTC/TTC calculation (C155, C161), clear statistical criteria (C167-C169), and histological verification (C177-C179). The outlier removal procedure (C162-C163) is reasonable (2.5% of trials removed). The methods are generally rigorous, though some details about the bootstrapping procedure (C59) could be more explicit.",
+    "result_type": "MINOR"
+  }
+]

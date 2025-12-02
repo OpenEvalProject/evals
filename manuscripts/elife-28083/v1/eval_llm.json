@@ -1,0 +1,474 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "KEAP1 mutant (KPK) cells exhibit increased glutathione (GSH) production compared to wild-type (KP) cells, resulting from elevated expression of GSH synthesis enzymes Gclc and Gclm. This increased GSH corresponds with decreased ROS levels and enhanced resistance to oxidative stress, while maintaining similar basal growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are well-supported by experimental data shown in Figure 1 and supplementary figures. The increased GSH levels (C58), mechanistic link to Gclc/Gclm expression (C59), decreased ROS (C61), similar basal growth (C62), and enhanced oxidative stress resistance (C63) are all directly demonstrated with appropriate controls and statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "KPK cells demonstrate increased dependency on glutamine-derived glutamate compared to KP cells. Glutamine deprivation and glutaminase inhibition with CB-839 substantially suppress KPK cell proliferation while having minimal effects on KP cells, and CB-839 treatment reduces cellular glutathione levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by experimental data in Figure 1 and supplementary figures showing differential sensitivity to glutamine deprivation (C67), CB-839 sensitivity (C70), and reduced GSH after CB-839 treatment (C71). The conclusion that KEAP1 mutant cells depend on glutamine-derived glutamate for GSH synthesis (C72) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C82",
+      "C83"
+    ],
+    "result": "KPK cells exhibit paradoxically lower intracellular but higher extracellular glutamate levels compared to KP cells, with dramatically elevated expression of the xCT antiporter component Slc7a11. The authors hypothesize this reflects NRF2-driven glutamate export in exchange for cystine import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are directly supported by metabolite measurements in Figure 1E-F. The elevated Slc7a11 expression (C82) is confirmed by qPCR data in Figure 2B. The mechanistic hypothesis (C83) is reasonable given the known function of xCT, though it remains inferential. The data collectively support the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Inhibition of xCT with Erastin or genetic knockdown of Slc7a11 rescues the growth suppressive effects of glutamine deprivation and CB-839 treatment in KPK cells. Modulating extracellular glutamate or cystine concentrations also rescues CB-839 sensitivity, demonstrating that xCT/Slc7a11 expression is necessary for glutamine dependency in KEAP1 mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C95 are well-supported by multiple complementary experimental approaches shown in Figure 2. Pharmacological inhibition with Erastin (C84-C85, C87), manipulation of media glutamate/cystine (C89-C90), and genetic knockdown with two independent shRNAs (C91-C92) all converge on the same conclusion. The lack of additive effects (C93-C94) further supports the on-target mechanism. The conclusion (C95) is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "In vivo xenograft experiments demonstrate that CB-839 treatment suppresses tumor growth specifically in KPK tumors but not KP tumors, and genetic knockdown of Slc7a11 completely abrogates the CB-839 sensitivity of KPK tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by in vivo data in Figure 2G-H and supplementary figures. The genotype-specific response to CB-839 (C96) and the rescue by Slc7a11 knockdown (C97) are clearly demonstrated. The conclusion that KEAP1 mutations create a metabolic liability driven by Slc7a11 expression (C98) is well-supported by both in vitro and in vivo data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Antioxidant supplementation (trolox, NAC) fails to rescue glutamine deprivation or CB-839 sensitivity in KPK cells, while anaplerotic substrates (DMG, pyruvate) successfully rescue proliferation. Reducing GSH levels with BSO does not alter CB-839 sensitivity, indicating that sensitivity is due to defective anaplerosis rather than impaired antioxidant production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C113 are supported by experimental data in Figure 3 and supplementary figures. The differential rescue by anaplerotic substrates versus antioxidants is clearly demonstrated (C104-C111), and the BSO experiment (C113) provides additional support. The conclusion (C112) that sensitivity is due to anaplerotic defects rather than GSH synthesis is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "KPK cells exhibit basal defects in TCA cycle metabolism with reduced total levels of TCA cycle intermediates and decreased incorporation of glutamine-derived carbon into the TCA cycle. Supplementation with pyruvate or DMG restores TCA cycle metabolite levels to or above those in KP cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by metabolomics data in Figure 3C and stable isotope tracing in Figure 3E. The reduced TCA cycle intermediates (C115), rescue by anaplerotic substrates (C116), and decreased glutamine incorporation (C117) are all directly demonstrated. The conclusion about basal anaplerotic deficiency (C118) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "KPK cells have reduced basal oxygen consumption rates (OCR) compared to KP cells, consistent with decreased TCA cycle output. CB-839 treatment causes a more pronounced drop in OCR in KPK cells (-50.8%) versus KP cells (-21.6%), and this drop is rescued by co-treatment with DMG or pyruvate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C128 are supported by Seahorse respirometry data in Figure 3F-G. The reduced basal OCR (C120), differential CB-839 response (C124-C125), and rescue by anaplerotic substrates (C126) are clearly demonstrated. The conclusion about metabolic bottleneck (C127-C128) is well-supported by the convergent metabolomics and respirometry data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "CB-839 treatment enhances carbon flux through pyruvate carboxylase in both normal media conditions and when cells are supplemented with pyruvate, as demonstrated by stable isotope tracing experiments. This is consistent with prior findings showing increased pyruvate carboxylase flux in KP tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by stable isotope tracing data in Figure 3I-J showing increased M+1 citrate labeling from glucose and pyruvate tracers. The agreement with prior literature (C132) provides additional validation. The data support the conclusion that pyruvate carboxylase provides an alternative anaplerotic route.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "KEAP1 mutations result in basal defects in central carbon metabolism, with decreased TCA cycle intermediates and reduced glutamine-derived carbon contribution. This metabolic imbalance can be therapeutically exploited by glutaminase inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 represent a synthesis of the metabolic characterization data from multiple experiments (Figures 1-3). The basal metabolic defects (C133-C134) are well-documented through metabolomics and isotope tracing. The therapeutic conclusion (C135) is supported by the in vitro and in vivo CB-839 sensitivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Pharmacological NRF2 activation with KI696 is sufficient to induce CB-839 sensitivity in wild-type KP cells, mimicking the KEAP1 mutant phenotype. This sensitivity is rescued by anaplerotic substrates and modulation of extracellular glutamate/cystine, but not by antioxidants. Genetic activation of Slc7a11 with Gclc or Gclm using CRISPRa also induces CB-839 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 are supported by data in Figure 4B-D. The KI696-induced CB-839 sensitivity (C136) and rescue patterns (C137-C139) recapitulate the KEAP1 mutant phenotype. The CRISPRa experiments (C140) provide genetic validation. Together, these data demonstrate that NRF2 activation is sufficient to create glutamine dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Human KEAP1 wild-type lung cancer cells (H2009) respond to KI696 treatment with NRF2 nuclear accumulation, target gene upregulation, and increased GSH levels. These cells show strong synergistic response to co-treatment with CB-839 and KI696, which is rescued by anaplerotic substrates and glutamate/cystine modulation but not antioxidants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 are supported by data in Figure 4E-F and supplementary figures. The NRF2 activation (C141-C143) and CB-839 synergy (C144) are clearly demonstrated. The rescue patterns (C145-C147) match those observed in mouse cells, supporting the translational relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "KI696 treatment of wild-type KP cells reduces TCA cycle intermediates to levels equivalent to KPK cells and decreases mitochondrial respiration, which is further reduced by CB-839. These data demonstrate that NRF2 activation is sufficient to rewire cellular metabolism and induce glutamine dependency in both mouse and human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 are supported by metabolomics (Figure 4G) and respirometry (Figure 4H) data showing that pharmacological NRF2 activation recapitulates the KEAP1 mutant metabolic phenotype. The conclusion (C151) is well-supported by the convergent data from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "KEAP1 mutations predict sensitivity to CB-839 across multiple cancer types including melanoma, bone, colon, renal, squamous, and urinary tract cancers. Co-treatment with KI696 sensitizes KEAP1 wild-type cells to CB-839. The data suggest glutaminase is an attractive therapeutic target in KEAP1/NRF2 mutant cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are supported by data in Figure 5A-B showing CB-839 sensitivity across multiple KEAP1 mutant cancer types and KI696-mediated sensitization of wild-type cells. The therapeutic conclusions (C155-C157) are reasonable inferences from the data, though clinical validation would be needed. The result is well-supported by the preclinical data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C159",
+      "C208",
+      "C210"
+    ],
+    "result": "Small molecule NRF2 activators like KI696 render KEAP1 wild-type cells highly sensitive to glutaminase inhibition. The combination of glutaminase inhibitors with NRF2 activators could be an effective therapeutic strategy with broad application across KEAP1 mutant and wild-type cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159, C208, and C210 are supported by experimental data showing KI696 sensitizes wild-type cells to CB-839 across multiple cell lines (Figures 4-5). The therapeutic strategy (C210) is a reasonable inference from the data, though it remains speculative without clinical validation. The preclinical data strongly support the concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "NRF2-dependent metabolic alterations create a unique set of metabolic requirements in KEAP1 mutant cells that can be therapeutically exploited. The dependency on glutamine-derived glutamate is primarily due to defective TCA cycle anaplerosis rather than limited glutamate for antioxidant production, as glutaminase inhibition depletes limited glutamate stores and exacerbates basal TCA cycle defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C178 represent the central mechanistic conclusions of the study, synthesizing data from multiple experiments. The metabolic requirements (C166-C167), glutamine dependency (C175), primacy of anaplerotic defects (C176), and exacerbation by glutaminase inhibition (C177-C178) are all well-supported by the experimental data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "The decrease in intracellular glutamate availability for the TCA cycle in NRF2-activated cells occurs through active secretion via xCT/SLC7A11. The authors hypothesize this is driven by increased intracellular demand for cysteine, a key amino acid for NRF2-induced antioxidants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C184 is well-supported by the experimental data showing increased glutamate secretion, elevated Slc7a11 expression, and rescue by Slc7a11 knockdown or xCT inhibition. Claim C185 is presented as a hypothesis and is reasonable given the known function of xCT and the increased antioxidant production, though direct evidence for cysteine demand driving the process is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "The study provides mechanistic insight into how KEAP1 mutations rewire tumor metabolism and cause glutamine dependency, offering critical pre-clinical evidence supporting glutaminase inhibitor treatment in KEAP1 mutant patients. KEAP1 mutations predict CB-839 sensitivity across multiple cancer types regardless of tissue of origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C207 represent the translational conclusions of the study. The mechanistic insights (C204) are well-supported by the experimental data. The pre-clinical evidence (C205) is strong, though clinical validation is needed. The predictive value of KEAP1 mutations (C206-C207) is supported by data across multiple cancer types, though the sample size for some cancer types is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The introduction establishes the biological context for the study, including cancer cell metabolism, glutamine dependency, ROS production, the KEAP1/NRF2 pathway, and the prevalence of KEAP1 mutations in lung adenocarcinoma. These claims provide background knowledge and rationale for investigating metabolic vulnerabilities in KEAP1 mutant cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C47 are primarily background claims supported by citations to established literature. They provide the scientific context and rationale for the study. While these are not novel findings from this manuscript, they are accurately represented and appropriately cited, establishing the foundation for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors state their main findings: KEAP1 mutations drive glutamine dependency in mouse and human LUAD cells through decreased intracellular glutamate (via increased GSH synthesis and xCT-mediated export), leading to sensitivity to glutamine deprivation and glutaminase inhibition. Acute NRF2 activation recapitulates this phenotype, and the phenomenon occurs across multiple cancer types, highlighting the importance of genotype-based patient stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 represent the authors' summary of their main findings in the introduction. These claims are well-supported by the experimental data presented in the Results section. The claim about patient stratification (C57) is a reasonable inference from the data, though it requires clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C88",
+      "C102",
+      "C103",
+      "C119",
+      "C129",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C186"
+    ],
+    "result": "Various mechanistic and background claims about glutathione structure, glutamate metabolism, xCT function, TCA cycle, oxidative phosphorylation, and related metabolic pathways that provide context for interpreting the experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C64, C65, C75-C81, C88, C102-C103, C119, C129, C160-C163, C168-C172, C186) represent established biochemical knowledge that provides context for the study. They are accurately stated and provide necessary background for understanding the experimental results. While not novel findings, they are essential for interpreting the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C39",
+      "C106",
+      "C107",
+      "C173",
+      "C174",
+      "C179",
+      "C180",
+      "C185",
+      "C188",
+      "C198"
+    ],
+    "result": "Several speculative or inferential claims about potential consequences of the observed metabolic alterations, including effects on nutrient availability, transaminase activity, \u03b1KG-dependent dioxygenases, and tumor microenvironment signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39, C106-C107, C173-C174, C179-C180, C185, C188, and C198 are presented as hypotheses or speculative statements about potential consequences of the observed metabolic changes. While these are reasonable inferences based on the data and established biochemistry, they lack direct experimental validation in this study. They represent plausible mechanistic explanations and future research directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C197",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Additional background claims about CB-839 mechanism, prior findings on xCT/SLC7A11, ATF4-NRF2 crosstalk, tumor microenvironment, glutamine metabolism regulation, and previous studies on KEAP1 mutant tumor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C189-C192, C197, C199-C203 are background claims supported by citations to prior literature. They provide important context for interpreting the current findings and situating them within the existing literature. These claims are accurately represented and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "Modulating GSH levels pharmacologically or genetically was not sufficient to alter CB-839 sensitivity, but CRISPRa-mediated co-expression of Slc7a11 with Gclc or Gclm induced CB-839 sensitivity, though not as robustly as in KEAP1 mutant cells, suggesting incomplete recapitulation of the mutant phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C196 are supported by data in Figure 3 supplement 1D and Figure 4D. The negative result with GSH modulation alone (C193) and partial phenotype with CRISPRa (C194-C196) provide important mechanistic insights, suggesting that multiple NRF2 target genes contribute to the metabolic phenotype. The interpretation is reasonable and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The abstract summarizes the main findings: NRF2 activation in mouse or human cancer cells leads to increased glutamine dependency through increased glutamate consumption for GSH synthesis and glutamate secretion by xCT, limiting glutamate availability for the TCA cycle and creating a metabolic bottleneck that can be therapeutically exploited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C12 from the abstract accurately summarize the main experimental findings presented in the manuscript. These claims are well-supported by the data in Figures 1-5, including metabolomics, isotope tracing, functional assays, and in vivo experiments. The abstract provides an accurate high-level summary of the study's conclusions.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1793 @@
+{
+  "submission": {
+    "id": "9e5d1556-b84e-43a2-bea5-bae0434938d0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:43:46.171031Z",
+    "updated_at": "2025-12-01T20:43:46.171031Z"
+  },
+  "content": [
+    {
+      "id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "submission_id": "9e5d1556-b84e-43a2-bea5-bae0434938d0",
+      "content_type": "manuscript",
+      "content_text": "# Repression by PRDM13 is critical for generating precision in neuronal identity\n\n## Authors\n\n- Bishakha Mona<sup>1</sup>\n- Ana Uruena<sup>1</sup>\n- Rahul K Kollipara<sup>2</sup>\n- Zhenzhong Ma<sup>1</sup>\n- Mark D Borromeo<sup>1</sup>\n- Joshua C Chang<sup>1</sup>\n- Jane E Johnson<sup>1</sup> ([ORCID: 0000-0002-8605-2746](https://orcid.org/0000-0002-8605-2746)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience UT Southwestern Medical Center Dallas United States\n2. McDermott Center for Human Growth and Development UT Southwestern Medical Center Dallas United States\n3. Department of Pharmacology UT Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mechanisms that activate some genes while silencing others are critical to ensure precision in lineage specification as multipotent progenitors become restricted in cell fate. During neurodevelopment, these mechanisms are required to generate the diversity of neuronal subtypes found in the nervous system. Here we report interactions between basic helix-loop-helix (bHLH) transcriptional activators and the transcriptional repressor PRDM13 that are critical for specifying dorsal spinal cord neurons. PRDM13 inhibits gene expression programs for excitatory neuronal lineages in the dorsal neural tube. Strikingly, PRDM13 also ensures a battery of ventral neural tube specification genes such as Olig1, Olig2 and Prdm12 are excluded dorsally. PRDM13 does this via recruitment to chromatin by multiple neural bHLH factors to restrict gene expression in specific neuronal lineages. Together these findings highlight the function of PRDM13 in repressing the activity of bHLH transcriptional activators that together are required to achieve precise neuronal specification during mouse development.\n\n## Introduction\n\nThe process of progenitors undergoing cell fate decisions to determine specific cellular identity and tissue patterning is fundamental in the field of developmental biology. Neural development is an excellent model system to study cell fate processes to understand how neural restricted progenitors differentiate into diverse types of neurons through complex interactions of transcriptional activators and repressors. Multiple regulatory design principles involving combinations of transcription factors have emerged through studies from vertebrate and invertebrate model systems that have significant repercussions in determining and maintaining cell identity (Deneris and Hobert, 2014; Dessaud et al., 2008; Lai et al., 2016; Matise, 2013). During progenitor fate specification in the developing nervous system, extensive cross-repressive activities between TFs expressed in neighboring domains in the vertebrate neural tube provide bistable switches needed for generating precise cellular identities (Briscoe et al., 2000; Gowan et al., 2001; Muhr et al., 2001). An additional cell fate design principle was recently demonstrated in the generation of progenitor diversity and in terminal differentiation genes that involves the intersection of a broadly expressed transcriptional activator with progenitor-specific repressor proteins (Kerk et al., 2017; Kutejova et al., 2016; Nishi et al., 2015). In contrast, cell fate specification in the dorsal neural tube may represent a modification of these principles where the activity of progenitor-specific transcriptional activator proteins must be suppressed to limit expression of inappropriate genes. Here we identify the transcriptional repressor, PRDM13, as a critical factor in keeping ventral cell-type specification genes silenced in the dorsal neural tube, highlighting the importance of a balanced network of transcriptional activators and repressors for generating precision in neuronal identities throughout populations in the dorsal ventral axis of the neural tube.\n\nThe dorsal spinal cord functions as an essential center for integration of somatosensory information (Liu and Ma, 2011; Ross, 2011). Appropriate processing of this information requires the correct composition of neuronal subtypes, and regulated generation of this neuronal diversity relies on discrete patterns of expression of basic helix-loop-helix (bHLH) and homeodomain (HD) TFs (Lai et al., 2016) (Figure 1A). In the dorsal neural tube, genetic studies have identified the bHLH factors ASCL1 and PTF1A as promoters of excitatory and inhibitory neuronal fate, respectively (Glasgow et al., 2005; Gowan et al., 2001; Helms et al., 2005; Mizuguchi et al., 2006; Nakada et al., 2004). The bHLH TFs execute their function by directly promoting transcription of genes encoding HD TFs, as well as other genes for neuronal function (Borromeo et al., 2014). ASCL1 induces the excitatory neuron specification HD factors TLX1 and TLX3, while PTF1A induces the inhibitory neuron specification HD factor PAX2 (Batista and Lewis, 2008; Borromeo et al., 2014; Chang et al., 2013; Cheng et al., 2004; Cheng et al., 2005; Glasgow et al., 2005; Mizuguchi et al., 2006) (Figure 1B). These studies highlight the essential role bHLH TFs play in determining neuronal diversity in the dorsal spinal cord and serve to demonstrate some basic principles of cell fate specification. In order to drive a multipotent progenitor to a specific lineage, the bHLH TFs must be capable of promoting the fate-specific program while simultaneously suppressing the opposing transcriptional programs for alternative fates (Gowan et al., 2001; Helms et al., 2005). The all-or-nothing nature of this genetic switch is apparent in that gain or loss of function of either factor does not give rise to neurons of mixed identity. Since both ASCL1 and PTF1A function as transcriptional activators (Beres et al., 2006; Nakada et al., 2004), the mechanism for repression was discovered to be indirect, involving PTF1A increasing levels of the transcriptional repressor PRDM13 (Chang et al., 2013). Thus, a network of TFs including bHLH and PRDM factors control levels of HD factors that generate the necessary balance of excitatory and inhibitory neurons in the dorsal spinal cord that modulate somatosensory information processing (Figure 1A,B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig1-v1.jpg)\n\n**Figure 1.:** (A) Diagram of half an E10.5 neural tube highlighting expression domains of TFs used in this study. The ventricular zone containing neural progenitors (left) and differentiated neuronal populations (right) are shown. See (Lai et al., 2016) for a more comprehensive picture of the TFs patterning the neural tube at this stage. (B) Transcription factor network functioning in the dorsal neural tube generating inhibitory and excitatory neurons. (C) Prdm13 mRNA is restricted to the dorsal neural tube in mice at E11.5. (D\u2013E) Three different targeting strategies resulting in Prdm13GFP, Prdm13\u2206ZF, and Prdm13 \u2206115 mutant mouse strains. PCR on tail DNA with primers P1-P5 confirm the genotype of the mutant mice. Red box indicates an inserted stop codon. Yellow lines indicate individual ZFs. (F\u2013I) Immunofluorescence showing PRDM13 (magenta) in wildtype (WT) and Prdm13 mutant strains in E11.5 neural tube. (F\u2019\u2013I\u2019) Higher magnification including DAPI (green) to label nuclei. (J) Western blot from verifying loss of PRDM13 protein in neural tube of Prdm13GFP/GFP mutants and the expression of the mutant PRDM13 protein in Prdm13 \u2206115/\u2206115 mutants. PRDM13 detected in wildtype mouse neural tube and telencephalon are positive and negative controls, respectively. \u03b2actin is the loading control.\n\nPRDM13 is a transcriptional repressor present in progenitor domains of the dorsal but not the ventral neural tube from hindbrain regions to the spinal cord (Chang et al., 2013) (Figure 1C). It is a member of the PRDM family of proteins defined by an N-terminal PR domain and a varying number of C-terminal zinc-finger (ZF) domains (Hohenauer and Moore, 2012). PRDM factors function in a variety of cell lineages to promote cell proliferation and cell type specification (Bikoff et al., 2009; Eom et al., 2009; Huang et al., 1998; Ross et al., 2012). Mechanistically they rely on protein-protein and protein-DNA interactions through the PR and ZF domains to repress or activate transcription. The role of PRDM13 as a cell type specification factor has been demonstrated in neural tube (Chang et al., 2013) and retina (Watanabe et al., 2015). In retina, PRDM13 functions to specify subsets of retinal amacrine interneurons. Within the dorsal spinal cord, PRDM13 functions as a downstream effector of PTF1A to suppress the excitatory neuronal program within the inhibitory neuronal lineage. Several PRDM family members have been shown to have intrinsic histone methyltransferase activity mediated by the PR domain (Di Zazzo et al., 2013; Fog et al., 2012; Fumasoni et al., 2007; Hohenauer and Moore, 2012). PRDM13 has been suggested to have intrinsic histone methyltransferase activity, although the relevance of this in vivo remains unclear (Hanotel et al., 2014) since the overexpressed PRDM13 ZF domain is sufficient to specify inhibitory neurons in retina and neural tube (Chang et al., 2013; Watanabe et al., 2015).\n\nTo further probe the function of PRDM13 in spinal cord development, and to uncover molecular mechanisms that determine neuronal diversity, we generated multiple Prdm13 mutant mouse strains. In contrast to the previously reported Prdm13 mutant deleting exons 2 and 3 (Watanabe et al., 2015), Prdm13 mutant mice generated here are neonatal lethal and appear to reflect a null phenotype. Analysis of the neural tube phenotype confirms the role of PRDM13 in regulation of neuronal specification factors PAX2 for inhibitory neuronal lineages and TLX1/3 for excitatory neuronal lineages during early neurogenesis (Chang et al., 2013). However, unbiased approaches probing gene expression changes in mutant neural tubes reveal much broader roles for PRDM13 in neuronal specification. These include a negative feedback loop between PRDM13 and its activator, PTF1A, and a requirement for PRDM13 in direct suppression of multiple ventral neuronal-subtype specification transcription factors. Mechanistically, PRDM13 is bound to genomic regions overlapping those bound by neural bHLH factors, and PRDM13 represses the ability of these bHLH factors to activate enhancer driven reporters. Together, a model is presented for recruitment of PRDM13 to bHLH bound enhancers to ensure silencing of lineage inappropriate factors, a function that promotes precision in generating neuronal subtype specific fates.\n\n## Results\n\nTo understand the role PRDM13 plays in spinal cord development in vivo, and to uncover mechanistic insights into PRDM13 activity, we generated multiple mutant alleles of Prdm13 in mice. These include a GFP knockin (Prdm13GFP) that disrupts generation of PRDM13, and a deletion within exon 4, the genomic region that encodes the terminal three zinc fingers (ZFs) of PRDM13 (Prdm13\u0394ZF) (Figure 1D). This ZF domain is predicted to be essential for PRDM13 function because in overexpression assays this domain is sufficient to mimic the activity of the full-length protein, and overexpression of mutant PRDM13 variants that disrupt each ZF lose activity relative to wild type (Chang et al., 2013). The phenotypes observed in both Prdm13GFP and Prdm13\u0394ZF mutants are identical. Heterozygous animals are indistinguishable from wild-type littermates, but when homozygous for the mutant allele they die at birth, similar to the neonatal lethality seen in other mutants null for TFs that regulate neuronal differentiation and specification such as the bHLH factors ASCL1 and PTF1A (Glasgow et al., 2005; Guillemot and Joyner, 1993). PRDM13-specific antibodies generated to the C-terminal domain (Watanabe et al., 2015) do not detect protein in these mutants at E11.5 by Western blot or immunofluorescence (Figure 1F\u2013H,J). A third mutant was generated with a 115 bp deletion near the N-terminus that causes a frame shift (Prdm13\u2206115) (Figure 1E). Surprisingly, Prdm13\u2206115/\u2206115 survives into adulthood, similar to a previously reported Prdm13 mutant that deleted exons 2 and 3 that encodes much of the PR domain of the protein (Watanabe et al., 2015). Western analysis and immunohistochemistry reveal that a protein containing at least the C-terminal ZF domain is translated in Prdm13\u2206115 (Figure 1I,J). This mutant PRDM13 has sufficient function for normal survival (see Discussion). To uncover the requirement for PRDM13 in spinal cord development, we focused the remaining experiments on the Prdm13GFP and Prdm13\u0394ZF mutants.\n\nDorsal neuronal populations are defined largely by the combination of HD factors they express, and in E10.5 neural tube they are designated as dorsal interneurons 1\u20136 (dI1-dI6) (for review see [Lai et al., 2016]). Prdm13 was identified as an important specification gene in the dorsal neural tube required for the balance of inhibitory (PAX2+;LHX1/5+, dI4) interneurons and excitatory (TLX1/3+, dI5) interneurons in the chick neural tube (Chang et al., 2013). Overexpression of PRDM13 by electroporation into the chick neural tube led to a suppression of TLX1/3 and a subsequent increase in the number of PAX2+ cells. The latter is thought to be an indirect consequence of TLX1/3 function in repressing PAX2 (Chang et al., 2013; Cheng et al., 2004; Cheng et al., 2005). Support for these functions of PRDM13 is seen in Prdm13GFP and Prdm13\u0394ZF mutant embryos with the loss of PAX2+;LHX1/5+ dI4 neurons and an increase in TLX1/3+ dI5 neurons in the dorsal neural tube. At E10.5, antibodies specific for these factors were used to examine changes in the dorsal interneuron populations (Figure 2). A complete loss of dI4 (PAX2+;LHX1/5+) and an increase in dI3/5 (TLX1/3+) in both the Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes was seen at this stage. These phenotypes are identical to the Ptf1a null mouse (Figure 2G) (Glasgow et al., 2005), and are opposite to the Prdm13 overexpression phenotypes in the chick (Chang et al., 2013). Thus, these findings confirm PRDM13 functions as a repressor of the excitatory neuronal gene program within the inhibitory neuronal lineage in the dorsal neural tube.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C) PAX2 (green) and LHX1/5 (magenta) immunofluorescence show the loss of dI4 and decrease of dI2 interneurons in the Prdm13 mutants relative to WT at E10.5. (D\u2013F) TLX1/3 (cyan) immunofluorescence shows an increase in the number of dI3/5 interneurons in the Prdm13 mutants relative to WT. Scale bar: 50 \u00b5M. (G) Quantification reporting the number of dI2 (LHX1/5+;PAX2-), dI4 (PAX2+;LHX1/5+) and dI3/dI5 (TLX1/3+) cells per neural tube section in WT, Prdm13 mutants, and for comparison, Ptf1aCre nulls. Error bars indicate SEM. Student\u2019s t-test was used to determine significant differences relative to WT (***p<0.001, NS\u00a0=\u00a0not significant) (n\u00a0\u2265\u00a05 embryos for each genotype).\n\nThe Prdm13 mutant phenotype, however, does not completely mimic that seen for Ptf1a mutants in the dorsal neural tube. One important distinction is the marked reduction of the dI2 population (LHX1/5+; PAX2-) in the Prdm13 mutants that is not seen with the loss of Ptf1a (Figure 2). This is not unexpected given that there is Ptf1a-independent expression of Prdm13 that places it in a broader domain than that of Ptf1a (Chang et al., 2013) (Figure 1A). Another notable difference between the Prdm13 and Ptf1a mutants is detected at later stages of neural tube development. The Ptf1a mutants are striking in that there is essentially a complete loss of PAX2+ neurons in the dorsal spinal cord with a subsequent absence of GABAergic and glycinergic neuronal lineages (Glasgow et al., 2005) (Figure 3). Both Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes show only partial loss of PAX2+ cells dorsally at E12.5 and E16.5, markedly different from the absolute loss of PAX2 observed in the Ptf1aCRE/CRE null (Figure 3A\u2013G), and at earlier stages of neurogenesis (Figure 2). This partial loss of PAX2+ cells was accompanied by a modest increase in the number of TLX1/3+ cells in the Prdm13 mutants, which was not as dramatic as the increase seen in the Ptf1a null (Figure 3H). Consistent with only a partial loss of PAX2+\u00a0cells in the Prdm13 mutants, Gad1, required for synthesis of the inhibitory neurotransmitter GABA, is also only partially lost dorsally as seen by in situ hybridization at E16.5 (Figure 3I\u2013K). Again this contrasts to the complete loss of this marker in the Ptf1a null animals at these later stages (Glasgow et al., 2005). The partial loss of Gad1 dorsally in the absence of PRDM13 presumably reflects loss of the inhibitory neurons derived from the E10.5 dI4 PAX2+ population (Figure 2). Similarly, only a modest increase in Vglut2 (Slc17a6), a marker of excitatory neurons, is detected in the lateral region of the domain lacking Gad1 (Figure 3L\u2013N). These results highlight overlapping but distinct consequences to dorsal spinal cord development with the loss of PRDM13 versus its upstream regulator PTF1A.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig3-v1.jpg)\n\n**Figure 3.:** Transverse sections of mouse neural tube. (A\u2013C, E\u2013G) Immunofluorescence for PAX2 highlights the reduced numbers of PAX2 positive neurons in the dorsal neural tube in Prdm13 mutants compared to no PAX2+ neurons in Ptf1a mutants at E12.5 (A\u2013C) and E16.5 (E\u2013G). (A\u2019\u2013C\u2019) Higher magnification images of the red box highlighted (A\u2013C). (D,H) Quantification reporting the number of PAX2+\u00a0or TLX1/3+\u00a0cells per neural tube section in WT, Prdm13 mutants, and for comparison, Ptf1aCre nulls. Error bars indicate SEM. Student\u2019s t-test was used to determine significant differences relative to WT (***p<0.001) (n\u00a0\u2265\u00a08 for each genotype). Scale bar: 50 \u00b5M. (I\u2013N) In situ hybridizations for Gad1 mRNA (I\u2013K) shows the loss of inhibitory neurons in Prdm13 and Ptf1a mutants which is compensated by increase in excitatory neurons shown by Vglut2 (Slc17a6) mRNA (L-N arrowheads) at E16.5. Note the loss of dorsal Gad1 is more complete in the Ptf1a versus the Prdm13 mutants (J,K).\n\nTo discover additional PRDM13 functions in neural development, we identified differentially expressed genes (DEGs) in dorsal neural tube cells in the presence and absence of PRDM13. RNA-seq was performed on GFP+ cells isolated by fluorescence-activated cell sorting from E11.5 Prdm13GFP/+ versus Prdm13GFP/GFP neural tubes (Figure 4A, Table 1, and Supplementary file 1). 837 genes had greater than a 1.5-fold difference in expression and an FPKM\u00a0>1 in at least one of the conditions. Gene ontology (GO) analysis determined that a large number of the DEGs in the Prdm13 mutants play a role in cell proliferation, neuronal specification and cell cycle regulation (Supplementary file 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig4-v1.jpg)\n\n**Figure 4.:** (A) Strategy to determine transcriptional targets of PRDM13 in E11.5 neural tubes. Venn diagrams illustrate the number of PRDM13 bound sites from ChIP-Seq (220), the genes associated with these sites (384), the genes upregulated in neural tubes from Prdm13GFP/GFP versus Prdm13GFP/+ (455), and the genes downregulated in mutant neural tubes (356). The overlap represents PRDM13 targets (60) increased (54, p-value=1.26e-27) and decreased (6, p-value=0.16) in Prdm13 mutants relative to controls. (B) Genome tracks at the Tlx3 locus showing the RNA-Seq from Prdm13 mutants, the PRDM13 ChIP-Seq, and mammalian sequence conservation. The known enhancer of Tlx3 (eTlx3) is highlighted. (C) De novo motif enrichment in PRDM13 bound regions (150 bp around each peak summit) using HOMER package v4.2. The motif with the most enrichment is an Ebox found in 40% of the sites. (D) Heat map of the 220 PRDM13 (red) bound sites from ChIP-seq from E11.5 mouse neural tube. A subset of these regions is also bound by ASCL1 (blue) and/or PTF1A (green).\n\n**Table 1.**\n Select differentially expressed genes (DEG) in the dorsal neural tube of mouse Prdm13 mutants (Prdm13GFP/+ versus Prdm13GFP/GFP).Genes with associated PRDM13 ChIP-seq peaks in two of three experiments are bolded. See Supplementary files 1 and 3 for a full list of DEG and PRDM13 binding site coordinates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>TFs</th>\n      <th>Fold up in mutants</th>\n      <th>Neural related Factors</th>\n      <th>Fold up in mutants</th>\n      <th>TFs</th>\n      <th>Fold down in mutants</th>\n      <th>Neural related Factors</th>\n      <th>Fold down in mutants</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Olig2</td>\n      <td>1114</td>\n      <td>Calb2</td>\n      <td>7.3</td>\n      <td>Hmx2</td>\n      <td>6.8</td>\n      <td>Gad2</td>\n      <td>6.2</td>\n    </tr>\n    <tr>\n      <td>Olig1</td>\n      <td>217</td>\n      <td>Syt13</td>\n      <td>5.2</td>\n      <td>Pax2</td>\n      <td>6.3</td>\n      <td>Slc6a5</td>\n      <td>5.9</td>\n    </tr>\n    <tr>\n      <td>Prdm12</td>\n      <td>24</td>\n      <td>Slc1a3</td>\n      <td>4.4</td>\n      <td>Lhx1</td>\n      <td>5.7</td>\n      <td>Slc32a1</td>\n      <td>5.6</td>\n    </tr>\n    <tr>\n      <td>Tlx3</td>\n      <td>17</td>\n      <td>Frzb</td>\n      <td>4.2</td>\n      <td>Pax8</td>\n      <td>5.6</td>\n      <td>Nrxn3</td>\n      <td>5.4</td>\n    </tr>\n    <tr>\n      <td>Phox2b</td>\n      <td>17</td>\n      <td>Mfng</td>\n      <td>4.2</td>\n      <td>Hmx3</td>\n      <td>5.5</td>\n      <td>Cacna2d3</td>\n      <td>4.9</td>\n    </tr>\n    <tr>\n      <td>Otp</td>\n      <td>13</td>\n      <td>Slc17a6</td>\n      <td>4.1</td>\n      <td>Lhx5</td>\n      <td>4.4</td>\n      <td>Gad1</td>\n      <td>4.6</td>\n    </tr>\n    <tr>\n      <td>Phox2a</td>\n      <td>13</td>\n      <td>Ddc</td>\n      <td>3.9</td>\n      <td>Gsx2</td>\n      <td>3.4</td>\n      <td>Slc30a3</td>\n      <td>4.4</td>\n    </tr>\n    <tr>\n      <td>Shox2</td>\n      <td>12</td>\n      <td>Slc17a7</td>\n      <td>3.7</td>\n      <td>Skor2</td>\n      <td>3.3</td>\n      <td>Epha2</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>Lmx1b</td>\n      <td>12</td>\n      <td>Cbln2</td>\n      <td>3.5</td>\n      <td>Gbx2</td>\n      <td>2.9</td>\n      <td>Gria1</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>En1</td>\n      <td>5.1</td>\n      <td>Slc31a2</td>\n      <td>3.6</td>\n      <td>Foxd3</td>\n      <td>2.7</td>\n      <td>Robo4</td>\n      <td>2.9</td>\n    </tr>\n    <tr>\n      <td>Dlx3</td>\n      <td>5.1</td>\n      <td>Ntrk1</td>\n      <td>3.5</td>\n      <td>Mecom</td>\n      <td>2.6</td>\n      <td>Ret</td>\n      <td>2.9</td>\n    </tr>\n    <tr>\n      <td>Dbx1</td>\n      <td>4.8</td>\n      <td>Cbln1</td>\n      <td>3.4</td>\n      <td>Pax5</td>\n      <td>2.6</td>\n      <td>Robo3</td>\n      <td>2.7</td>\n    </tr>\n    <tr>\n      <td>Isl1</td>\n      <td>4.5</td>\n      <td>Slc15a2</td>\n      <td>3.2</td>\n      <td>Gsx1</td>\n      <td>2.3</td>\n      <td>Npy</td>\n      <td>2.6</td>\n    </tr>\n    <tr>\n      <td>Tlx1</td>\n      <td>4.3</td>\n      <td>Sncg</td>\n      <td>3.1</td>\n      <td>Nkx1.1</td>\n      <td>2.1</td>\n      <td>Slc7a5</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>Neurod4</td>\n      <td>3.8</td>\n      <td>Chrna4</td>\n      <td>3.1</td>\n      <td>Irx4</td>\n      <td>2.0</td>\n      <td>Slc7a1</td>\n      <td>2.3</td>\n    </tr>\n    <tr>\n      <td>Ptf1a</td>\n      <td>3.5</td>\n      <td>Ncald</td>\n      <td>3.0</td>\n      <td></td>\n      <td></td>\n      <td>Sez6</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>Neurog1</td>\n      <td>3.4</td>\n      <td>Lgr5</td>\n      <td>3.0</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pou4f1</td>\n      <td>3.0</td>\n      <td>Cacna2d1</td>\n      <td>3.0</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pou3f1</td>\n      <td>2.9</td>\n      <td>Kcnk2</td>\n      <td>2.8</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bhlhe22</td>\n      <td>2.8</td>\n      <td>Nrn1</td>\n      <td>2.8</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pou4f2</td>\n      <td>2.6</td>\n      <td>Chrna3</td>\n      <td>2.7</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Prdm13</td>\n      <td>2.6</td>\n      <td>Nphs1</td>\n      <td>2.6</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Id1</td>\n      <td>2.3</td>\n      <td>Chrnb4</td>\n      <td>2.5</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Id4</td>\n      <td>2.0</td>\n      <td>Kirrel2</td>\n      <td>2.4</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Neurog2</td>\n      <td>1.7</td>\n      <td>Nefm</td>\n      <td>2.3</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nWe also performed PRDM13 ChIP-Seq to identify candidate direct gene targets of PRDM13 to advance our mechanistic understanding of its function. To increase confidence in PRDM13 bound sites identified, we performed ChIP-seq experiments using three different antibodies (see Materials and methods), and used only those sites identified in at least two experiments. We identified 220 PRDM13 binding sites largely located at distal sites relative to the transcription start sites of genes. These targets included a known target of PRDM13, Tlx3 (Chang et al., 2013). The genome tracks for the Tlx3 locus showing RNA-Seq and ChIP-Seq data illustrate the increase in Tlx3 transcripts in the dorsal neural tube of Prdm13 mutants relative to wild type, and the binding of PRDM13 to a region\u00a0>20 kb 5\u2019 of Tlx3 (Figure 4B). This region was previously shown to drive expression of a reporter gene to the dI3/dI5 domains in the chick neural tube, identifying it as a Tlx3 enhancer (Chang et al., 2013).\n\nDe novo motif analysis failed to identify a novel binding motif unique to PRDM13, but PRDM13 bound sites were enriched for motifs for known neural TFs such as E-box (bHLH) (40%), Rfx (17%), Pdx (HD) (25%) and Sox (30%) motifs (Figure 4C). Indeed, almost half of the PRDM13 bound sites overlap with the E-box binding factors ASCL1 (15), PTF1A (48), or both (39) (Figure 4D). The lack of a unique binding motif is consistent with a model where PRDM13 is recruited to sites by other site-specific TFs.\n\nPRDM13 peak-to-gene associations were identified using GREAT (McLean et al., 2010), which identified 384 genes. GO analysis of these genes also showed enrichment for those that play a role in cell proliferation, neuronal specification and cell cycle regulation (Supplementary file 2). 60 putative direct targets of PRDM13 were identified by intersecting these genes with the DEGs identified in Prdm13GFP neural tubes (Figure 4A, Supplemental file 3). Consistent with the reported function of PRDM13 as a transcriptional repressor (Chang et al., 2013), mRNA levels for 54 of the putative targets are increased in Prdm13 mutants relative to controls (p-value=1.26e-27) whereas only six are decreased (p-value=0.16) (Figure 4A).\n\nThe genes controlled by PRDM13 are notable in multiple respects. First, the function for PRDM13 in repressing the gene expression program for the excitatory neuronal lineage dI5 as was shown in the chick neural tube (Chang et al., 2013) is evident in the Prdm13 mutants. For example, PRDM13 binds the Tlx3 enhancer and restricts its expression at E10.5/E11.5 (Figure 4B, eTlx3). Consistently, Tlx3 is elevated 17-fold, while Pax2 is reduced 6.3-fold in the absence of Prdm13 (Table 1). However, RNA-seq in the mutants also uncovered new functions for PRDM13, revealing a much broader function in restricting essential ventral neuronal subtype specification genes from being expressed in the dorsal neural tube (Table 1). The following experiments support these conclusions and probe mechanisms of PRDM13 activity in spinal cord development.\n\n### PRDM13 directly represses its upstream regulator Ptf1a through the Ptf1a auto-regulatory enhancer\n\nPtf1a was upregulated 3.5-fold by RNA-seq in the Prdm13 mutants relative to control (Table 1). To determine the pattern of this increase in expression we performed mRNA in situ hybridization and immunofluorescence for PTF1A. The increase in PTF1A is localized within its normal dorsal progenitor domain 4 (dP4) (Figure 5A\u2013F). Because PTF1A is a transcriptional activator of Prdm13 transcription (Chang et al., 2013) these data reveal a negative feedback loop between PRDM13 and PTF1A (Figure 5G) where the product of the activated gene (PRDM13) feeds back to repress transcription of its activator (Ptf1a) (Alon, 2007).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) In situ hybridization shows increase in Ptf1a mRNA in the Prdm13 mutant at E10.5 relative to wildtype. (C\u2013F) Immunofluorescence confirms the increased levels of PTF1A in Prdm13 mutants at E10.5 (D) and E12.5 (F). (G) The transcription network highlighting PRDM13 inhibition of its upstream regulator Ptf1a. (H) Genome tracks showing ChIP-Seq data for PRDM13 and PTF1A at the Ptf1a locus. The two PTF1A bound sites in the Ptf1a autoregulatory enhancer are highlighted. The sequence at the center of each PTF1A ChIP peak is shown with the Ebox and TCbox sites boxed, which make up the PTF1 trimer binding motif (shaded). (I\u2013L) Representative images from transverse sections of chick neural tubes co-electroporated with a GFP reporter driven by the 2.3kb-Ptf1a autoregulatory enhancer with the indicated expression vectors at HH13-14 and harvested 24 hr later. (I\u2019\u2013L\u2019) ASCL1 (magenta) is shown as reference for the dP3-dP5 domains. Antibodies to MYC-epitope tag for control or PTF1A, or to PRDM13 are used to show the electroporation efficiency and/or the ectopic expression of PTF1A or PRDM13 (insets). PTF1A induces reporter expression while PRDM13 represses both the endogenous enhancer activity as well as the induced expression driven by PTF1A. (M) Quantification of GFP intensity for experiments shown in (I\u2013L). Student t-test was used for significance relative to control except where indicated, *p<0.05, ***p<0.001. Error bars indicate SEM (n\u00a0\u2265\u00a08 embryos). (N\u2013O) Western blots using antibodies against MYC-tag or FLAG-tag showing FLAG-immunoprecipitates from HEK293 cells ectopically expressing indicated factors. FLAG-tagged PRDM13 pulls down MYC-tagged PTF1A but not the negative control HOOK3 or the E-proteins (E47, E12, HEB). ASCL1 and HOOK3 are positive and negative controls respectively. (P) Proposed model for PRDM13 inhibition of Ptf1a expression by abrogating Ptf1a autoregulation. PTF1A functions in a trimeric complex (PTF1) with an E-protein and RBPJ (Meredith et al., 2009). Specifics on how PRDM13 interacts with DNA and the complex are not known. Scale bar: 50 \u00b5M.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The two PTF1A bound sites in the Ptf1a autoregulatory enhancer are highlighted and a dot above the peak indicates if the site was called as significant. ChIP using PRDM13-Ab1 (ZF) and PRDM13-Ab2 (FL) was performed in wildtype neural tubes (ICR) while GFP ChIP was performed on Prdm13fusGFP/fusGFP neural tubes. Peaks significant in at least 2 out of 3 PRDM13 ChIPs were considered.\n\nPtf1a transcription is regulated through a 2.3 kb autoregulatory enhancer (e2.3Ptf1a) (Masui et al., 2008; Meredith et al., 2009) (Figure 5H). PTF1A binds and activates transcription through this enhancer in a trimeric transcription activator complex called PTF1 that comprises PTF1A, an E-protein, and RBPJ. Perturbations in the PTF1 trimer binding motifs (E-box plus a TC-box) cause a loss of enhancer activity in reporter assays in chick and in transgenic mice (Masui et al., 2008; Meredith et al., 2009). One possible mechanism for the negative feedback by PRDM13 is recruitment of PRDM13 to this Ptf1a autoregulatory enhancer resulting in blocking activity through this site. Indeed, ChIP-seq experiments demonstrate PRDM13 is bound to this enhancer region (Figure 5H and Figure 5\u2014figure supplement 1).\n\nWe next tested the ability of PRDM13 to regulate transcription through the Ptf1a autoregulatory enhancer using the chick electroporation assay and a GFP reporter under the control of the 2.3 kb Ptf1a autoregulatory enhancer (e2.3kb-Ptf1a::GFP) (Meredith et al., 2009). As was previously reported, this enhancer directs GFP expression to the Ptf1a domain in the dorsal neural tube and co-electroporation with a Ptf1a expression vector dramatically increases enhancer activity (Figure 5I\u2013J,M). In contrast, co-electroporation with a Prdm13 expression vector alone or along with that for Ptf1a blocks reporter activity completely (Figure 5K\u2013M). Finally, we show that PRDM13 and PTF1A interact, possibly forming a repressor complex, using co-IP assays with lysates from HEK293 cells transfected with FLAG-PRDM13 and MYC-PTF1A (Figure 5N). Because PRDM13 also interacts by co-IP with ASCL1 (Chang et al., 2013) (Figure 5O), we tested whether these interactions are mediated through an E-protein, the common heterodimeric partner for these bHLH factors. We detected no interaction between PRDM13 and the E-proteins E47 and E12 (2 isoforms of Tcf3), and HEB (Tcf12) (Figure 5O). We propose a model whereby PRDM13 directly inhibits Ptf1a transcription by interrupting PTF1A auto-regulation through binding with PTF1A to the Ptf1a autoregulatory enhancer (Figure 5P).\n\nThe increased PTF1A expression may be responsible for a difference detected between the Prdm13 and Ptf1a loss of function phenotypes in the second wave of neurogenesis in the dorsal neural tube (Figure 3).\n\n### PRDM13 excludes ventral neural tube specification factors from the dorsal neural tube\n\nExamination of the cohort of DEGs from the RNA-Seq analysis predictably revealed a number of transcription factors known to play a role in dorsal neural tube specification (i.e. PAX2, TLX1, TLX3, LHX1, LHX5, LMX1B, ISL1, POU4F1), as well as a number of neural related factors misregulated upon loss of PRDM13 (Table 1). Notably, several ventral transcription factors were ectopically expressed within the dorsal neural tube of the Prdm13 mutant (i.e. OLIG2, PRDM12, PHOX2A, PHOX2B, BHLHB5 (Bhlhe22)). The latter finding is striking because these ventral specification factors are restricted to the ventral neural tube. Three factors with the highest fold increase in the Prdm13 mutant are Olig1, Olig2 and Prdm12 (Table 1). We used these PRDM13 targets to probe the mechanisms by which PRDM13 represses ventral TFs.\n\n### PRDM13 blocks PTF1A activation of Olig2 in the dorsal neural tube\n\nOLIG2 is restricted to the motor neuron progenitor domain (pMN) in the ventral spinal cord at these early stages of neurogenesis, and it is required for specification of motor neurons (Mizuguchi et al., 2001; Novitch et al., 2001; Zhou et al., 2000) (Figure 1A). Upon loss of PRDM13, the linked genes Olig1 and Olig2 show striking ectopic dorsal expression within Prdm13GFP/GFP neural tubes (Table 1, 217-fold and 1114-fold, respectively). To determine the pattern of this increase in expression we performed immunofluorescence for OLIG2. The ectopic OLIG2 is localized just lateral to the progenitor domain in the dorsal neural tube (Figure 6A\u2013C). This aberrant expression of OLIG2 is not detected in the Ptf1a null even though there is a partial loss of PRDM13 in these mutants (Figure 6D). Co-labeling of OLIG2 with TLX1/3, PTF1A, and OLIG3 demonstrate the ectopic OLIG2 is restricted to the dI4 domain (Figure 6E\u2013H and Figure 6\u2014figure supplement 1). Notably, the ectopic OLIG2 expressing cells co-express TLX1/3 and PTF1A (Figure 6E\u2013H), factors that are never co-expressed during normal development, thus indicating a severe disruption of neuronal subtype identity in the dorsal neural tube.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013D) Immunofluorescence shows ectopic OLIG2 in the dorsal neural tube in Prdm13 but not Ptf1a mutants at E11.5. (E\u2013H) In the Prdm13 mutant, the PTF1A+ and TLX1/3+ cells are co-expressed with the ectopic OLIG2. (E\u2019\u2013H\u2019) High magnification of (E\u2013H) highlight the co-expression (white). (I) Genome tracks showing ChIP-Seq data from mouse neural tube tissue for PRDM13, PTF1A, and ASCL1 at the Olig2/Olig1 locus. The PRDM13 peaks are highlighted and a dot above the peak indicates if the site was called as significant (see Materials\u00a0and\u00a0methods). Regions e1Olig-e3Olig were tested in reporter assays. (J) The sequence at the center of the PRDM13 ChIP peaks contains a compound Ebox/TCbox with the proper spacing, which makes the PTF1 motif, is only present in e2Olig (shaded). (K\u2013N, P\u2013S) Representative images from transverse sections of chick neural tubes co-electroporated with e2Olig::GFP or e2Olig-PTF1Mut::GFP or e2Olig-allEboxMut::GFP reporter constructs and expression vectors as indicated at HH13-14 and harvested 24 hr later. Antibodies to MYC-epitope tag or PRDM13 (white) confirm the electroporation efficiency and the overexpression of the respective transcription factor. (K\u2013O) PRDM13 overexpression inhibits e2Olig::GFP expression. PTF1A is sufficient to induce e2Olig2::GFP, but this activity is repressed by PRDM13. (P\u2013T) e2Olig::GFP enhancer activity and its induction by PTF1A is lost when E-boxes that conform to the PTF1 motif or all Eboxes are mutated. (O,T) Quantification of GFP intensity for experiments shown in (K\u2013N, P\u2013S). (U,V) PRDM13 overexpression inhibits e1Olig::GFP and e3Olig::GFP expression while neither PTF1A or ASCL1 alter levels. Student\u2019s t-test was used for significance relative to control except where indicated, **p<0.01, ***p<0.001, ns\u00a0=\u00a0not significant. Error bars indicate SEM (n\u00a0\u2265\u00a08 embryos). (W) Model for how expression of the Olig locus is inhibited by PRDM13 in the dorsal neural tube. Loss of this inhibition in the Prdm13 mutant leads to PTF1A driven ectopic expression. Scale bar: 50 \u00b5M.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The PRDM13 peaks are highlighted and a dot above the peak indicates if the site was called as significant. ChIP using PRDM13-Ab1 (ZF) and PRDM13-Ab2 (FL) was performed in wildtype neural tubes while GFP ChIP was performed on Prdm13fusGFP/fusGFP neural tubes. Peaks significant in at least 2 out of 3 PRDM13 ChIPs were considered. (B) In the Prdm13\u0394ZF/\u0394ZF, the OLIG3+\u00a0cells are not co-expressed with the ectopic OLIG2. (C\u2013K) Representative images from transverse sections of chick neural tubes co-electroporated with e1Olig::GFP, e1OligEboxMut::GFP or e3Olig::GFP reporter constructs and expression vectors as indicated at HH13-14 and harvested 24 hr later. Antibodies to MYC-epitope tag or PRDM13 (white) confirm the electroporation efficiency and the overexpression of the respective transcription factor. PRDM13 overexpression inhibits e1Olig::GFP and e3Olig::GFP expression while neither PTF1A nor ASCL1 alter levels. Quantification is shown in Figure 6U,V. (G) Mutating the Ebox disrupts the activity of e1Olig::GFP.\n\nWe showed that PRDM13 localizes to a PTF1A bound enhancer and represses enhancer activity (Figure 5). To explore whether a similar mechanism is involved in regulating the linked genes Olig1 and Olig2, we identified three genomic regions surrounding the Olig genes bound by PRDM13 from ChIP-seq (Figure 6I and Figure 6\u2014figure supplement 1). All three of these sites, designated as e1Olig, e2Olig and e3Olig, are also bound by PTF1A and/or ASCL1. Of these three sites, only e2Olig contains the compound E-box/TC-box motifs that represent the site bound by the PTF1 trimeric complex (Figure 6J). We utilized the chick electroporation system to test the ability of each region to drive expression of a GFP reporter gene. All three regions directed expression of GFP in the neural tube, activity that was suppressed by PRDM13 (Figure 6K\u2013l,O,U,V and Figure 6\u2014figure supplement 1). We tested whether PTF1A or ASCL1 were sufficient to activate the Olig enhancers by co-electroporating them individually with each enhancer-reporter. e2Olig::GFP but not e1Olig::GFP or e3Olig::GFP was activated by PTF1A, and this activity was suppressed by PRDM13 (Figure 6M\u2013O and Figure 6\u2014figure supplement 1E,J). ASCL1 did not increase activity through these enhancers. Although these enhancers do not direct expression restricted to the endogenous Olig2 domain, reporters require E-boxes within the enhancers for activity (Figure 6P\u2013T and Figure 6\u2014figure supplement 1). Indeed, e2Olig::GFP enhancer activity and its induction by PTF1A is lost when E-boxes that conform to a PTF1 motif are mutated (Figure 6P,R).\n\nOur data suggest a model for the requirement for PRDM13 to restrict Olig1 and Olig2 expression to the ventral neural tube (Figure 6W). Transcriptional activators such as PTF1A can bind and activate transcription through an enhancer located between Olig1 and Olig2. However, the Olig genes are not expressed in the PTF1A domain in the dorsal neural tube because PRDM13 is also recruited to these sites to silence transcription. In this way, the Olig genes are restricted to the ventral neural tube.\n\n### PRDM13 represses Prdm12 in the dorsal neural tube via inhibition of NEUROG1 and NEUROG2\n\nPrdm12 is normally restricted to ventral progenitor domain 1 (p1) and is required for generation of V1 interneurons (Th\u00e9lie et al., 2015) (Figure 1A). Like Olig1 and Olig2, Prdm12 mRNA is strikingly upregulated in the Prdm13GFP/GFP mutants (Table 1, 24-fold). We verified the ectopic Prdm12 expression in Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes by mRNA in situ hybridization (Figure 7A\u2013C). This misregulation of Prdm12 is not detected in Ptf1a mutants (Figure 7D). Similar to the conclusions with regulation of the Olig genes, these findings demonstrate a role for PRDM13 in restricting Prdm12 to the ventral neural tube.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013D) In situ hybridization shows ectopic Prdm12 mRNA in the dorsal neural tube in Prdm13 mutants but not Ptf1a mutants at E11.5. (E) Genome tracks showing ChIP-Seq data from mouse neural tube tissue for PRDM13 and PTF1A at the Prdm12 locus. The PRDM13 peaks are highlighted and a dot above the peak indicates if the site was called as significant (see Materials and methods). Region e1 was tested in reporter assays. (F) The sequence at the center of the PRDM13 ChIP peak shows e1 has an Ebox. (G-I, O-R,) Representative images from transverse sections of chick neural tubes co-electroporated with e1Prdm12::GFP reporter constructs and expression vectors as indicated at HH13-14 and harvested 24 hr later. Antibodies to MYC-epitope tag or PRDM13 (white) confirm the electroporation efficiency and the overexpression of the respective transcription factor. (G) In situ hybridization shows endogenous cPrdm12. The dotted lines indicate the V1 domain. (G\u2013I) PRDM13 overexpression inhibits e1Prdm12::GFP expression whereas PTF1A has no effect. (O\u2013R) NEUROG1 and NEUROG2 induce e1Prdm12::GFP expression and this is inhibited by PRDM13. (J, S,) Quantification of GFP intensity from chick electroporation experiments. Student\u2019s t-test was used for significance relative to control except where indicated, **p<0.01, ***p<0.001, ns\u00a0=\u00a0not significant. Error bars indicate SEM (n\u00a0\u2265\u00a08 embryos). (K\u2013N) In situ hybridization shows ectopic Neurog1 and Neurog2 mRNA in the dorsal neural tube in the Prdm13 mutants at E10.5 relative to wildtype. (T) Western blot showing Co-IP of NEUROG1 and NEUROG2 by PRDM13 from HEK293 cells ectopically\u00a0expressing these factors. (U) Model for how Prdm12 expression is inhibited by PRDM13 in the dorsal neural tube. Loss of this inhibition in the Prdm13 mutant leads to NEUROG driven ectopic expression of Prdm12. Scale bar: 50 \u00b5M.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The PRDM13 peaks are highlighted and a dot above the peak indicates if the site was called as significant. ChIP using PRDM13-Ab1 (ZF) and PRDM13-Ab2 (FL) was performed in wildtype neural tubes while GFP ChIP was performed on Prdm13fusGFP/fusGFP neural tubes. Peaks significant in at least 2 out of 3 PRDM13 ChIPs were considered.\n\nTo determine if PRDM13 and PTF1A are directly regulating Prdm12, we analyzed the Prdm12 genomic region for sites bound by these factors. PRDM13 ChIP-seq identified a site, e1Prdm12, overlapping a binding site for PTF1A (Figure 7E and Figure 7\u2014figure supplement 1). e1Prdm12 contains an E-box, but no compound E-box/TC-box for the PTF1 trimer complex binding (Figure 7F). e1Prdm12::GFP directs reporter expression localized to the endogenous Prdm12 domain and is repressed by PRDM13 (Figure 7G,H,J). However, co-electroporation with Ptf1a had no effect (Figure 7I,J). This latter result is consistent with the lack of PTF1 trimer binding motif, which is the motif for the PTF1A activator complex (Hori et al., 2008; Meredith et al., 2009).\n\nIn contrast to the dI4 restricted ectopic expression seen with OLIG2, the ectopic expression of Prdm12 in the dorsal neural tube of the Prdm13 mutants was in a pattern reminiscent of two Ebox binding bHLH factors, NEUROG1 and NEUROG2, that are normally present in progenitors to the dI2 and dI6 domains as well as in the ventral neural tube (Gowan et al., 2001) (Figure 7K,M). Support for these bHLH factors being involved in the ectopic dorsal expression of Prdm12 was suggested by the RNA-seq data that showed both Neurog1 and Neurog2 as being increased in Prdm13GFP/GFP mutants (Table 1, 3.4- and 1.7-fold respectively). Indeed, mRNA in situ hybridization shows both of these factors increased in the dorsal neural tube of the Prdm13 mutants (Figure 7L,N). We co-electroporated expression constructs for Neurog1 and Neurog2 with the Prdm12 enhancer reporter e1Prdm12::GFP and found that both drive activity of the reporter, activity that is suppressed when Prdm13 is added (Figure 7O\u2013S). And finally, we show that PRDM13 interacts with NEUROG1 and NEUROG2 using co-IP assays with lysates from HEK293 cells transfected with these factors (Figure 7T).\n\nThese data demonstrate the requirement for PRDM13 to restrict Prdm12 expression to the ventral neural tube (Figure 7U). Transcriptional activators such as NEUROG1 and NEUROG2 can activate transcription through an enhancer located more than 25 kb upstream of Prdm12. In the absence of PRDM13, there is ectopic expression of Prdm12 in the dorsal neural tube, expression that may be a consequence of increased NEUROG1 and NEUROG2 combined with the loss of PRDM13.\n\n## Discussion\n\nThe ability to generate precise cell identities within an organ is a fundamental process in developmental biology. Central to this process in the developing nervous system are mechanisms that include combinatorial expression of TFs, and TF networks that rely on extensive feedforward and feedback mechanisms to direct cell-type specific gene transcription. To specify the neuronal subtypes in the dorsal spinal cord involved in somatosensory information processing, the transcriptional repressor PRDM13 plays a critical role. We demonstrate its importance in restricting expression of inappropriate regulatory TFs within the lineage that generates the inhibitory neurons of the dorsal spinal cord (summary Figure 8). Within the TF network, PRDM13 is a component of a negative feedback loop where the PTF1 trimeric complex activates transcription of Prdm13 then PRDM13 feeds back to repress transcription of Ptf1a, ensuring PTF1A is present only transiently during neural development. Furthermore, a primary mechanism for PRDM13 repression appears to be recruitment to chromatin sites bound by neural bHLH transcription activators, thus providing a molecular explanation for why localization of the bHLH activator does not always result in active gene transcription. Finally, this study demonstrates PRDM13 is required to restrict expression of multiple neuronal specification factors to the ventral neural tube to ensure precision in cell-fate identity in the dorsal spinal cord (Figure 8 and Figure 8\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig8-v1.jpg)\n\n**Figure 8.:** Three modes of PRDM13 repression that involve different neural bHLH factors (PTF1A, ASCL1, and NEUROG1/2) are diagrammed, as are the wildtype versus the Prdm13 mutant phenotypes in hemi segments of the E10.5/E11.5 neural tube. (A) PRDM13 represses transcription of its activator PTF1A in a negative feedback loop. (B) PRDM13 is central to the bistable fate switch between the PAX2+\u00a0dI4 inhibitory neurons and the TLX1/3+\u00a0dI5 excitatory neurons by repressing transcription of TLX3 via an ASCL1 regulated enhancer. (C) PRDM13 functions to exclude ventral neural tube specification factors from being transcribed in the dorsal neural tube.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25787/elife-25787-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** FPKM for each gene from the RNA-Seq is indicated in the top right corner.\n\n### The PRDM13 ZF domain is required for neural tube neuronal specification and survival\n\nPRDM13, like other PRDM family members, has a PR domain and multiple ZFs (Hohenauer and Moore, 2012). PR domains have homology to SET domains that have histone methyltransferase activity, and the ZFs can provide protein-protein and protein-DNA interactions. PRDM13 was shown to contain, or recruit, histone methyltransferase activity (Hanotel et al., 2014). Nevertheless, when tested in overexpression assays, truncated versions of the protein lacking the PR domain but containing the terminal three ZFs have similar activity as the full-length protein (Chang et al., 2013; Watanabe et al., 2015). In addition, a Prdm13 mutant mouse with the PR domain encoding exons 2 and 3 deleted (referred to here as Prdm13\u03942/3) survived to adulthood and exhibited a retinal phenotype (Watanabe et al., 2015). Although the neural tube was not examined in these mutants, they demonstrate the PR domain at least is not required for survival.\n\nThe Prdm13 mutants generated here, particularly the Prdm13\u0394ZF mutants, highlight the requirement for the C-terminal ZF domain for PRDM13 function in neuronal specification in the neural tube and survival of the animals. While both Prdm13GFP and Prdm13\u0394ZF lack PRDM13 expression and thus appear to be functional nulls, the Prdm13\u0394115 mutant produces homozygous offspring that live to adulthood with no notable neural tube defects. The Prdm13\u0394115 mutant with a 115 bp frameshift deletion upstream of the region encoding the PR domain was predicted to produce a non-functional truncated protein. Surprisingly, immunofluorescence and western analysis using an antibody targeting the C-terminus of the protein showed the presence of a mutant PRDM13 protein that was present at higher levels than the wildtype PRDM13. This suggests a variant PRDM13 is produced, possibly through an aberrant alternative translation start or splicing mechanism, that contains the ZF domain and has sufficient function for survival of the organism. Supporting this premise, the ZF domain has similar activity to the full-length protein in overexpression experiments in the chick neural tube and mouse retina (Chang et al., 2013; Watanabe et al., 2015). Although Prdm13\u03942/3 mice have a defect in specification of retinal amacrine interneurons, they survive to adulthood, similar to the Prdm13\u0394115 mutant. We postulate that the Prdm13\u03942/3 and Prdm13\u0394115 are hypomorphic alleles, and that the ZF domain encoded within exon four is produced in tissues that support survival. Further structural analysis of proteins made in these mutants in a specific tissue manner is required to dissect out the functions of the ZF and PR domains of PRDM13.\n\n### A regulatory feedback loop between PRDM13 and its transcriptional activator PTF1A\n\nPTF1A, essential for specification inhibitory neurons in various regions of the nervous system, directly induces transcription of Prdm13 in mice, chicken, and Xenopus (Chang et al., 2013; Hanotel et al., 2014; Meredith et al., 2013). PRDM13 in turn feedback inhibits its own expression as reported in Xenopus (Hanotel et al., 2014) and detected here in the mouse mutants (Table 1), and that of its activator Ptf1a. We previously identified an autoregulatory enhancer for Ptf1a located 13\u201314 kb 5\u2019 of the transcriptional start site (Masui et al., 2007; Masui et al., 2008; Meredith et al., 2009). This enhancer can direct expression of a GFP reporter gene in the correct domain in transgenic mice and in the chick neural tube. Here we show that PRDM13 binds the enhancer in vivo, co-immunoprecipitates with PTF1A, and can block the ability of PTF1A to activate the enhancer in a reporter assay. PTF1A functions as a transcriptional activator in a trimeric complex with an E-protein such as E47 or HEB and RBPJ (Beres et al., 2006; Hori et al., 2008). PRDM13 may disrupt the complex by displacing RBPJ, however, the precise mechanism has not been determined. The inhibition of Ptf1a by PRDM13 represents an incoherent feedback loop, a mechanism present in multiple TF networks (Alon, 2007). This mode of feedback inhibition modulates the auto-activation of Ptf1a that may be required for its transient expression in the developing nervous system.\n\n### PRDM13 is a repressor of neural bHLH factor activity\n\nNeural bHLH factors such as ASCL1, PTF1A, and NEUROG1/2 bind specific DNA motifs in the genome to regulate gene expression. These factors are transcriptional activators but they can be located near genes that are not transcribed in a given cell. For example, PTF1A is localized to sites around the Olig1/2 genes but these genes are not transcribed in the dorsal neural tube in the PTF1A domains. Why some genes are expressed and others are not in response to binding of the neural bHLH factors to regulatory regions near these genes was not clear. The neural bHLH factors studied here are referred to a class II bHLH factors as they are cell-type specific and form heterodimers with class I bHLH factors (E-proteins) for function (Murre et al., 1989). Class II bHLH activity can be inhibited by ID factors (Inhibitors of DNA binding) that have an HLH domain and can compete with the class II bHLH factors in binding to E-proteins but, without the basic region they do not bind DNA (Benezra et al., 1990). PRDM13 represents another mechanism for suppressing activity of these class II bHLH factors.\n\nWe propose a model whereby the neural bHLH factors bind target enhancers through E-box motifs, and if PRDM13 is at high enough levels in the cell, it can be recruited to these sites to silence transcription. Multiple lines of evidence support this model including results reported here for PTF1A and NEUROG1/2, and in Chang et al. (2013) for ASCL1. (1) PRDM13 and neural bHLH factors like ASCL1 and PTF1A are localized to the same sites in vivo as seen by ChIP-Seq from neural tubes. (2) PRDM13 and multiple class II bHLH factors, but not class I bHLH factors, co-immunoprecipitate. (3) Neural bHLH factors activate transcription through the identified regulatory regions in reporter assays while PRDM13 blocks this activity. (4) Loss of PRDM13 function in vivo results in ectopic expression of multiple bHLH regulated genes in the dorsal neural tube. (5) The primary binding motif identified by PRDM13 ChIP-Seq is an E-box, the motif for bHLH factors. While it is unclear how PRDM13 interacts with bHLH factors and the precise mechanism for specific repression, the findings presented here combined with previous reports provide strong support for PRDM13 interacting with and orchestrating repression of class II bHLH transcriptional activity. Support for the relevance of this mechanism beyond PRDM13 and the bHLH factors studied here has been shown for PRDM8, a PRDM factor closely related to PRDM13, and BHLHB5 in regulating gene expression for proper axon targeting (Ross et al., 2012).\n\nRoss et al. propose PRDM8 and BHLHB5 form a transcription repressor complex where BHLHB5 is the specific DNA binding factor that recruits PRDM8. In support of this model, PRDM8 does not bind DNA targets in the absence of BHLHB5 (Ross et al., 2012). Although not definitively demonstrated, we modeled PRDM13 similarly with it being recruited by bHLH transcription activators such as PTF1A, NEUROG1, NEUROG2, and ASCL1 (Figures 5\u20137, and [Chang et al., 2013]). Support for this comes from the primary motif in the PRDM13 bound regions being a bHLH binding motif (Figure 4). Nevertheless, the ZF domain is predicted to have DNA binding properties suggesting additional experiments testing this aspect of the model are required to determine if PRDM13 directly interacts with DNA in a site-specific manner or not.\n\nHow PRDM13 actually represses the activity of the neural bHLH factors is not clear. Some PRDM proteins function through intrinsic histone methyltransferase (HMT) activity dependent on the PR domain of the protein (Eom et al., 2009; Eram et al., 2014; Huang et al., 1998; Pinheiro et al., 2012; Wu et al., 2013; Wu et al., 2008). Those PRDM members that lack intrinsic HMT activity depend on the recruitment of histone modifying co-factors that are necessary for transcriptional repression (Bikoff et al., 2009; Chittka et al., 2012; Ross et al., 2012). PRDM13 has been demonstrated to have histone methyltransferase activity (Hanotel et al., 2014), however, whether this activity is intrinsic to the protein or is through recruitment of a methyltransferase is not clear. The mutant alleles discussed above suggest the PR domain may not be required for activity, at least for cell-type specification in the neural tube and processes required for survival. While our study provides a molecular pathway for repression directed by PRDM13, further study is needed to identify the mechanism of repression for this PRDM factor.\n\n### Dorsal spinal cord neurons require PRDM13 for repression of specification factors for ventral identity\n\nDecades of work have gone into defining progenitor domains and resulting neuronal populations in the developing spinal cord mainly by combinatorial TF expression of HD and bHLH factors (Lai et al., 2016). Repress of inappropriate gene expression programs in a lineage is critical to specify appropriate cell fate and provide precision in cell-type identify. Cross-repression between TFs is a major principle in setting up boundaries that delineate either progenitor domains or their resulting neurons. This premise was first observed in the ventral neural tube where neighboring progenitors were found to use HD factors to repress each other\u2019s\u2019 expression to generate discrete progenitor boundaries (Briscoe et al., 2000; Ericson et al., 1997). In the dorsal neural tube, cross-repression is also evident and has been shown to occur between bHLH factors (Glasgow et al., 2005; Gowan et al., 2001; Mizuguchi et al., 2006; Wildner et al., 2006). Until recently, the cross-repressive mechanisms elucidated in the developing neural tube have been limited to gene programs in neighboring progenitor populations. However, two recent studies of the ventral neural tube TFs NKX2.2, NKX6.1 and OLIG2 uncover broader programs of repression than previously appreciated and demonstrate that these transcription factors directly repress all alternative fates, including dorsal cell fate programs, in the ventral neural tube (Kutejova et al., 2016; Nishi et al., 2015). Thus, progenitor-specific transcriptional repressors limit the activity of broadly expressed transcriptional activators to generate progenitor diversity. This principle of cell-type specific repressors overcoming broader activation of genes for precision in cell identity is used in regulating expression of terminal differentiation genes as well (Kerk et al., 2017).\n\nHere we provide evidence for an additional variation of these models whereby the transcriptional repressor is broadly expressed and it limits inappropriate gene expression driven by progenitor-specific activators, the bHLH factors. PRDM13 is identified as a key transcriptional repressor of a whole battery of genes, not just those in domains adjacent to the domain giving rise to the dorsal inhibitory neurons, but also factors normally restricted to the ventral neural tube and required for neuronal identity in that region (Table 1) (Figure 8 and Figure 8\u2014figure supplement 1). PRDM13 repressor activity is required to limit the bHLH driven transcription of these ventral specification factors. In particular, we highlight OLIG2 and PRDM12, which are normally restricted to the ventral neural tube but in the Prdm13 mutants they are aberrantly present dorsally, altering the identity of these neurons. Taken together, PRDM13 is a transcriptional repressor essential in the dorsal spinal cord development to modulate the transcriptional activity of neural bHLH factors to generate precise neuronal identities.\n\n## Materials and methods\n\nFurther information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact Jane E. Johnson (jane.johnson@utsouthwestern.edu).\n\n### Mouse strains\n\nThe Prdm13GFP mutant and the Prdm13fusionGFP mouse model were developed using zinc-finger nuclease technology (Figure 1D). mRNA encoding two zinc-finger nuclease (ZFN) proteins targeting within the first exon of the Prdm13 gene (CACCAGCGTGAACGCTGActgctGCATCCCGGCTGGCT) were purchased from Sigma-Aldrich (St. Louis, MO, USA) and delivered by pronuclear injection into fertilized mouse eggs along with a donor plasmid. For Prdm13GFP mutant mice, the donor plasmid encoded GFP followed by a stop codon, and contained two homology regions each 750 bp in length to allow for homologous recombination of the insert into the Prdm13 locus (Figure 1D). Out of 35 potential founders, eight integrated the GFP coding region at the designed site as verified by sequencing the locus. Two independently generated strains were bred. Initial phenotypes were identical including 100% penetrance of P0 lethality and a loss of PAX2 in the dorsal neural tube at E10.5 in homozygous mutant mice. Subsequently, these strains were interbred for all experiments shown here. A similar donor plasmid without the stop codon was used to generate the Prdm13fusionGFP mouse that was used for ChIP-seq. Homozygous Prdm13fusionGFP mice live to adulthood and show no changes in PAX2 or TLX1/3 expression at E10.5 (data not shown). Mice were genotyped by PCR with 5\u2019-GCTGCTCCTGGTTCTGTCA-3\u2019, 5\u2019-CCTTTTCTCTGCTGCTCGTC-3\u2019 and 5\u2019-GCTGGAGTACAACTACAACAGCCA-3\u2019 (wild-type 313 bp; mutant 549 bp).\n\nThe Prdm13\u0394115 mutant line is a 115 bp deletion generated within the first exon of Prdm13 upon injection of the ZFN mRNA (chr4:21,612,669\u201321,612,783, mm10). Homozygous Prdm13\u0394115/ \u0394115 mice live to adulthood, and show no changes in PAX2 or TLX1/3 expression at E10.5. PCR genotyping used primers 5\u2019-GCTGCTCCTGGTTCTGTCA-3\u2019 and 5\u2019-CCTTTTCTCTGCTGCTCGTC-3\u2019 (wild-type 313 bp; mutant 198 bp) (Figure 1E).\n\nThe Prdm13\u0394ZF mutant mouse line was generated by pronuclear injection of CAS9 mRNA and two sgRNA targeting the 3\u2019 end of Prdm13 (Figure 1D). Out of 39 potential founders we obtained one line with a 454 bp deletion in the fourth exon of Prdm13 that results in a protein truncated at amino acid 602 and deletes the three C-terminal zinc-fingers of PRDM13, adding 25 nonsense amino acids in the terminal portion of the protein. Once bred to homozygosity these mice die at P0 and phenocopy all changes observed in the Prdm13GFP/GFP mutants at all developmental stages evaluated. Mice were PCR genotyped with 5\u2019-GATCGCCATGCACACACAGC-3\u2019 and 5\u2019-CAATGAAGCCCTTCTTGT-3\u2019 (wild-type 617 bp; mutant 207 bp). The Ptf1aCRE mouse line replaces the coding sequence for Ptf1a with that for Cre recombinase (Kawaguchi et al., 2002). Genotyping was performed as previously described (Glasgow et al., 2005).\n\nAll animal work was approved by the Institutional Animal Care and Use Committee at UT Southwestern. All mouse strains are maintained on a mixed background of ICR and C57Bl/6.\n\n### Tissue preparation, immunohistochemistry and in situ hybridization\n\nMouse embryos were dissected in ice-cold 0.1M sodium phosphate buffer pH 7.4 and fixed in 2% paraformaldehyde for 1 hr at 4\u00b0 C. For E16.5, spinal cords were dissected out of the embryo prior to fixation. Tissue was washed 3X in ice-cold 0.1M sodium phosphate buffer pH 7.4 for 15 min and sunk overnight in 30% sucrose in PBS for E10.5 and E11.5 embryos, 15% sucrose in PBS for E12.5 embryos and 30% sucrose in water for E16.5 embryos. Tissue was embedded in Tissue-Plus O.C.T. compound (Fisher Healthcare, Houston, TX, USA) and cryosectioned at 20 \u00b5m (E10.5-E11.5) and 30 \u00b5m (E12.5-E16.5) focusing on sections from the upper limb level.\n\nFor in ovo chick electroporation assays, fertilized White Leghorn eggs were obtained from the Texas A and M Poultry Department (College Station, TX, USA) and incubated for 48 hr at 37\u2070C. The supercoiled reporter plasmids were diluted to 1.5 mg/ml in H20/1X loading dye and injected into the lumen of the closed neural tube at stages HH13-15 along with either a pMiWIII-Myc epitope tagged vector serving as an electroporation control or a TF containing expression vector. The injected embryos were then electroporated with 5 pulses of 25 mV each for 50 msec with intervals of 100 msec. Embryos were harvested 48 hr later at stages HH22-23, fixed with 4% paraformaldehyde for 45 min, and processed for cryosectioning and immunofluorescence.\n\nImmunofluorescence was performed using the following antibodies: guinea pig anti-PRDM13 (1:1000, [Watanabe et al., 2015]), mouse anti-LHX1/5 (1:100, DSHB Hybridoma Product 4F2 deposited to the DSHB by Jessell, T.M./Brenner Morton, S.), rabbit anti-PAX2 (1:500, Invitrogen, Carlsbad, CA, USA, #71\u20136000), guinea pig anti-TLX1/3 (1:10000, [M\u00fcller et al., 2002]), guinea pig anti-PTF1A (1:10000, TX507 [Hori et al., 2008]), guinea pig anti OLIG3 (M\u00fcller et al., 2005), guinea pig anti BHLHB5 (Ross et al., 2012), rabbit anti-OLIG2 (1:1000, Millipore, Billerica, MA, USA, #AB9610), rabbit anti-OLIG2 (1:1000, [Wang et al., 2006]) and guinea pig anti-ASCL1 (1:10000, TX518 [Kim et al., 2008]). Imaging was performed with a ZEISS LSM 510 confocal microscope.\n\nIn situ hybridization was performed as previously described (Meredith et al., 2009). Probes used were mouse Prdm13 and Ptf1a (Chang et al., 2013), mouse Prdm12 (Th\u00e9lie et al., 2015), mouse Gad1 and Vglut2 (Slc17a6) (Cheng et al., 2004), mouse Otp, Phox2a and Phox2b (Gray et al., 2004), mouse Olig1 (Zhou and Anderson, 2002), chick Neurog1 and Neurog2 probes (gift from Jessell lab). The chick Prdm12 probe was generated starting from a pBSK+\u00a0cPrdm12 cDNA (EST BU233582). Probes for Ccbe1 and Mfng were generated by PCR from mouse neural tube cDNA. Imaging was performed with a Hamamatsu Nanozoomer 2.0HT digital slide scanner.\n\n### Generation of reporter constructs and expression vectors\n\nRegulatory elements bound by PRDM13 were cloned into the MCSIII GFP reporter cassette. This reporter cassette contains the \u03b2-globin minimal promoter, a nuclear localized fluorescence reporter, and the 3\u2019 cassette from the human growth hormone. Mammalian conservation from the UCSC genome browser was used to identify boundaries of the elements cloned. All regions were PCR amplified from ICR mouse DNA. Genomic coordinates for regions cloned are based on the mouse mm10 genome build and include e1Prdm12 (chr2:31,609,785\u201331,610,285), e2Prdm12 (chr2:31,640,634\u201331,641,503), e1Olig (chr16:91,140,306\u201391,140,968), e2Olig (chr16:91,246,035\u201391,247,122), e3Olig (chr16:91,333,568\u201391,335,428). E1Olig-EboxMut, e2Olig-PTF1Mut and e2Olig-allEboxMut were subcloned using gBlocks with E-box mutations (Integrated DNA Technologies, Coralville, IA, USA). KpnI/SpeI restriction sites were introduced on each end for cloning adjacent to the \u03b2-globin minimal promoter in the reporter cassette. The Ptf1a 2.3 kb enhancer reporters are as described (Meredith et al., 2009). TFs PRDM13, mycPTF1A, mycASCL1, mycNEUROG1, and NEUROG2 were expressed in the pMiWIII expression vector (Chang et al., 2013; Gowan et al., 2001; Matsunaga et al., 2001). All constructs were sequence verified and expression of the TFs confirmed by immunohistochemistry with antibodies to the myc tag or with TF-specific antibodies.\n\n### Co-immunoprecipitation assays and western blotting\n\nHEK293 cells were transfected using FuGENE six reagent (Promega, Madison, WI, USA) with pMiWIII (Matsunaga et al., 2001) expression vectors for mycHOOK3, mycPTF1A, mycASCL1, mycNEUROG1, mycE47, mycE12, mycHEB, and NEUROG2, or PRDM13FLAG in pCIG (Chang et al., 2013; Gowan et al., 2001; Hori et al., 2008), and total cell lysate was prepared with an IP lysis buffer (Thermo Fisher Scientific, Waltham, MA, USA) after 48 hr of incubation. A/G beads conjugated with anti-FLAG antibodies (Sigma-Aldrich, #A2220) were used for immunoprecipitation, and mouse anti-cMYC (1:1000, Santa Cruz Biotechnology, Dallas, TX, USA, #sc-789), mouse anti-FLAG M2 (1:1000, Sigma, #F3165), rabbit anti-NEUROG1 (1:500, T2925, [Gowan et al., 2001]), or rabbit anti-NEUROG2 (1:2000, T2923, Johnson lab generated, antigen was domain N-terminal to the bHLH domain of mouse NEUROG2) were used to probe the resulting Western blots. Some blots were stripped and reprobed. Western lightning plus-ECL (Perkin Elmer, Waltham, MA, USA) was used for luminescence signal detection. For detection of endogenous PRDM13, E11.5 mouse neural tubes or telencephalon tissue were collected from wild-type or Prdm13 mutant embryos, protein lysates prepared with RIPA lysis buffer, and Western blotted with anti-PRDM13 antibodies recognizing the C-terminal (685\u2013754 amino acids) (Watanabe et al., 2015). The HEK293 cells, originally from ATCC, have not recently been authenticated or tested for mycoplasma. These cells were used for co-immunoprecipitation of ectopic expression of epitope tagged proteins, internally controlled experiments not impacted by possible cell line misidentification.\n\n### mRNA isolation and RNA-Sequencing\n\nMouse neural tubes dissected from E11.5 Prdm13GFP embryos either heterozygous or homozygous for GFP were individually placed into cold DMEM/F12 and dissociated in 0.25% trypsin for 15 min at 37 degrees C. Trypsin activity was quenched with 2% fetal bovine serum, and GFP positive cells were purified from the resulting single cell suspension by fluorescence activated cell sorting (FACS). Total RNA from FACS isolated cells was extracted and purified with Mini RNA Isolation Kit (Zymo Research, Irvine, CA, USA). Genotypes were determined and RNA from 9 homozygous and 7 heterozygous embryos were combined, mRNA was purified, reverse transcribed and amplified for sequencing with Illumina\u2019s mRNA-Seq kit (Illumina, San Diego, CA, USA. Two independent libraries representing technical replicates were sequenced for each cell population.\n\nSequence reads from RNA-seq were assembled using mm10 refSeq gene annotation with Tophat2 (v.2.1.0) (Kim et al., 2013). Gene expression abundance was estimated by counting the number of reads that mapped to any exon of a given gene using featureCounts (v.1.5.0-p1) from subread package (Liao et al., 2014). Counted reads were normalized using the TMM method (Robinson and Oshlack, 2010) and differential expression analysis was performed using the edgeR package (v.3.6.8) (Robinson et al., 2010). For a gene to be called as differentially expressed, it required a p-value<0.05 and had to have an FPKM\u00a0>1 in either the mutant or control sample.\n\n### Chromatin immunoprecipitation, sequencing and qPCR\n\nPTF1A and ASCL1 ChIP-Seq were previously published (Castro et al., 2011; Meredith et al., 2013) (GSE55840). For PRDM13 ChIP-seq using PRDM13-Ab1 (ZF) and PRDM13-Ab2 (FL), neural tubes from multiple litters of E11.5 ICR embryos were collected, as were telencephalon from the same embryos as a negative control. E11.5 Prdm13fusionGFP embryos were used for GFP ChIP. ChIP was performed as previously described (Meredith et al., 2013). Notably, the PRDM13 ChIP \u2013 Ab2 (FL) was treated with formaldehyde along with the long-arm cross-linker, ethylene glycol-bis (succinimidyl succinate), to increase ChIP efficiency (Zeng et al., 2006). Libraries were made according to Illumina\u2019s ChIP-Seq DNA sample preparation protocol. Rabbit antibodies against PRDM13 were Johnson lab generated (PRDM13-Ab1 (ZF) PA6659, rabbit anti-PRDM13 and PRDM13-Ab2 (FL) TX970, rabbit anti-PRDM13). The antigens were bacterially expressed C-terminal domain of PRDM13 including amino acids 622 to 755 or full length protein, respectively.\n\nSequence reads for each sample were mapped to the mm10 genome assembly by using Bowtie2 (v.2.2.6) (Langmead and Salzberg, 2012). Mapped reads were filtered to remove low quality reads using samtools (v.1.2) (Li et al., 2009). Duplicate reads were removed using picard tools (v.1.119), and the remaining unique reads were normalized to 10 million reads. Peak calling was performed by HOMER (v.4.7) using an FDR cutoff of 0.001, a cumulative Poisson p-value of\u00a0<0.0001, and required a 4-fold enrichment of normalized sequence reads in the treatment sample over the control/input sample (3-fold was used for the GFP ChIP-seq). To determine PRDM13 specific peaks, we compared the PRDM13 bound sites identified in PRDM13 ChIP samples using three different antibodies. A common binding site between two samples was called when the peak summits of each sample were found within 150 bp of each other. We used PRDM13 bound sites that are shared in two out of three samples for all downstream analysis. We used a 150 bp distance cutoff for comparison of PRDM13 peaks with ASCL1 and PTF1A peaks. Distance to gene and gene annotations for ChIP-Seq peaks were obtained using GREAT v3.0 (McLean et al., 2010). GREAT assigns a gene to a binding region if the region falls within 5 kb 5\u2019 or 1 kb 3\u2019 of the transcription start site (basal region), with a maximum extension of 1000 kb in either direction. If the binding region falls within the basal region of multiple genes, then more than one assignment is made. All parameters were left at their default settings. De novo motif analysis was performed in 150 bp around the peak summit using findMotifsGenome module in HOMER (v.4.7). GO analysis was performed using ConsensusPathDB (Kamburov et al., 2013).\n\n### Quantification and statistical analysis\n\nIn sections from mouse embryos with cells labeled by immunofluorescence (Figures 2 and 3), quantification of cell number was assisted by ImageJ software on five or more embryos for each genotype (n\u00a0=\u00a0number of embryos, n\u00a0\u2265\u00a05, biological replicates). For analysis of GFP intensity in chick electroporation experiments (Figures 5\u20137), sections from at least eight different embryos (n\u00a0=\u00a0number of embryos, n\u00a0\u2265\u00a08, technical replicates) were analyzed and used for quantification. Only sections with confirmed electroporation across the dorsal ventral axis were used in the analysis. Mean GFP pixel intensity for enh::GFP expression was measured by ImageJ on the electroporated side of the neural tube with the background levels measured from the non-electroporated side subtracted. Significant differences between control and experimental samples in each case were calculated using a two-tailed two-sample unequal variance (homoscedastic) Student\u2019s t-test in Microsoft Excel. *p<0.05, **p<0.01, ***p<0.001, ns\u00a0=\u00a0not significant. Error bars indicate SEM. The enrichment of PRDM13 ChIP targets in the list of genes that showed significant expression change in mutant samples relative to controls was calculated using the hypergeometric test.\n\n### Data and software availability\n\nRNA-Seq and ChIP-Seq data generated here are available on the GEO database (GSE90938).\n",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "f69f1e91-275d-482e-8339-09800ca02578",
+      "submission_id": "9e5d1556-b84e-43a2-bea5-bae0434938d0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Susan L Ackerman, Howard Hughes Medical Institute, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25787.027](https://doi.org/10.7554/eLife.25787.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Repression by PRDM13 is critical for generating precision in neuronal identity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Diogo S Castro (Reviewer #1); John LR Rubenstein (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nThe described study utilizes newly generated null mutations in Prdm13 to investigate the function of this transcriptional regulator in the developing dorsal spinal cord. Resulting data supports previous findings that Prdm13 suppresses the fate of excitatory neurons in inhibitory lineages. By a combination of developmental and genomic assays, the authors demonstrate that the recruitment of PRDM13 to bHLH bound enhancers inhibits the expression of ventral transcription factors in the dorsal neural tube. While consistent with current models of neural tube patterning this study provides significant mechanistic insight into the Prdm13-mediated gene regulatory network that regulates neurogenesis in the dorsal spinal cord.\n\nWhile a carefully performed study, interpretation of the data would be further strengthened by additional analysis which must be adequately addressed in a revised manuscript.\n\n1) Prdm13 ChIP-seq peaks do not show enrichment for a specific motif but instead for several sequences recognized by various neural transcription factors, suggesting Prdm13 is indirectly recruited to DNA. Thus, it become even more important to check the specificity of the Prdm13 antibody. This should be done by validating a series of peaks (associated with the various DNA motifis) in chromatin from wild type and Prdm13 null embryos.\n\n2) In Figure 5, the activity of the e2 and e3 enhancer is not restricted to the olig2 domain. To confirm the specificity of the assay, the authors should make a point mutation in the binding motif and show that it abolishes the expression of GFP in the electroporated neural tube. This would demonstrate that the reporter activity is due to the activity of the regulatory region cloned, even if does not reflect the endogenous expression of the putative target gene.\n\n3) Although the authors conclude that \"these findings highlight the function of PRDM13 in repressing bHLH transcriptional activators\" which implicitly includes Ascl1, the manuscript does not provide an example of a validated Ascl1/Prdm13 target. The authors should rewrite the conclusion accordingly, so that it is not misleading.\n",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8b89c3b-eca5-4586-a63d-63a1453487d5",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C1",
+      "claim": "PRDM13 is a transcriptional repressor present in progenitor domains of the dorsal but not the ventral neural tube from hindbrain regions to the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "PRDM13 is a transcriptional repressor present in progenitor domains of the dorsal but not the ventral neural tube from hindbrain regions to the spinal cord (Chang et al., 2013) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Chang et al., 2013 and reference to Figure 1C showing expression pattern.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "96e433b7-8c0c-4c14-a744-854e6644a12f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C2",
+      "claim": "PRDM13 is a member of the PRDM family of proteins defined by an N-terminal PR domain and a varying number of C-terminal zinc-finger (ZF) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a member of the PRDM family of proteins defined by an N-terminal PR domain and a varying number of C-terminal zinc-finger (ZF) domains (Hohenauer and Moore, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hohenauer and Moore, 2012 describing PRDM family characteristics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "5477a40a-8df3-4196-9eec-dc04873cbddf",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C3",
+      "claim": "PRDM factors function in a variety of cell lineages to promote cell proliferation and cell type specification.",
+      "claim_type": "EXPLICIT",
+      "source": "PRDM factors function in a variety of cell lineages to promote cell proliferation and cell type specification (Bikoff et al., 2009; Eom et al., 2009; Huang et al., 1998; Ross et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations describing PRDM factor functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "cf147133-5810-4f29-a8d0-f71ec1d6b50f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C4",
+      "claim": "PRDM13 functions as a downstream effector of PTF1A to suppress the excitatory neuronal program within the inhibitory neuronal lineage in the dorsal spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the dorsal spinal cord, PRDM13 functions as a downstream effector of PTF1A to suppress the excitatory neuronal program within the inhibitory neuronal lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known function in the introduction, supported by subsequent experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "9eddcefb-b45a-4806-86e2-2b9408b5102e",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C5",
+      "claim": "Several PRDM family members have intrinsic histone methyltransferase activity mediated by the PR domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Several PRDM family members have been shown to have intrinsic histone methyltransferase activity mediated by the PR domain (Di Zazzo et al., 2013; Fog et al., 2012; Fumasoni et al., 2007; Hohenauer and Moore, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations describing histone methyltransferase activity of PRDM family members.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "aeb6f52d-46ea-49a2-937b-2a5deea2cbb7",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C6",
+      "claim": "PRDM13 has been suggested to have intrinsic histone methyltransferase activity, although the relevance of this in vivo remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "PRDM13 has been suggested to have intrinsic histone methyltransferase activity, although the relevance of this in vivo remains unclear (Hanotel et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hanotel et al., 2014, with acknowledgment of uncertainty about in vivo relevance.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "2419ffd6-7bef-4bd2-8c81-c41b93799ad6",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C7",
+      "claim": "The overexpressed PRDM13 ZF domain is sufficient to specify inhibitory neurons in retina and neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "since the overexpressed PRDM13 ZF domain is sufficient to specify inhibitory neurons in retina and neural tube (Chang et al., 2013; Watanabe et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chang et al., 2013 and Watanabe et al., 2015 describing overexpression experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "323c6acb-b25f-411e-a622-376dfd901da3",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C8",
+      "claim": "Prdm13GFP and Prdm13\u0394ZF mutant mice are neonatal lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterozygous animals are indistinguishable from wild-type littermates, but when homozygous for the mutant allele they die at birth, similar to the neonatal lethality seen in other mutants null for TFs that regulate neuronal differentiation and specification such as the bHLH factors ASCL1 and PTF1A (Glasgow et al., 2005; Guillemot and Joyner, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation from the mutant mice generated in this study, with comparison to other mutants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "28c67159-b1a6-411c-bc21-833007680090",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C9",
+      "claim": "PRDM13-specific antibodies do not detect protein in Prdm13GFP and Prdm13\u0394ZF mutants at E11.5 by Western blot or immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "PRDM13-specific antibodies generated to the C-terminal domain (Watanabe et al., 2015) do not detect protein in these mutants at E11.5 by Western blot or immunofluorescence (Figure 1F\u2013H,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot and immunofluorescence data shown in Figure 1F-H,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0108d065-8901-4d52-a64c-74e5e41c844f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C10",
+      "claim": "Prdm13\u2206115/\u2206115 mutant mice survive into adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Prdm13\u2206115/\u2206115 survives into adulthood, similar to a previously reported Prdm13 mutant that deleted exons 2 and 3 that encodes much of the PR domain of the protein (Watanabe et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from the mutant mice generated in this study, with comparison to previously reported mutant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "168e1ff4-7678-4981-bc4c-04487a7cc986",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C11",
+      "claim": "Western analysis and immunohistochemistry reveal that a protein containing at least the C-terminal ZF domain is translated in Prdm13\u2206115 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Western analysis and immunohistochemistry reveal that a protein containing at least the C-terminal ZF domain is translated in Prdm13\u2206115 (Figure 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot and immunohistochemistry data shown in Figure 1I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "e379fa62-687f-4a11-82ac-4ca4062f796f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C12",
+      "claim": "Prdm13GFP and Prdm13\u0394ZF mutant embryos show loss of PAX2+;LHX1/5+ dI4 neurons in the dorsal neural tube at E10.5.",
+      "claim_type": "EXPLICIT",
+      "source": "A complete loss of dI4 (PAX2+;LHX1/5+) and an increase in dI3/5 (TLX1/3+) in both the Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes was seen at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation supported by immunofluorescence data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "9a4c3a08-4317-4584-989a-ccf39c7f4a42",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C13",
+      "claim": "Prdm13GFP and Prdm13\u0394ZF mutant embryos show an increase in TLX1/3+ dI3/5 neurons in the dorsal neural tube at E10.5.",
+      "claim_type": "EXPLICIT",
+      "source": "A complete loss of dI4 (PAX2+;LHX1/5+) and an increase in dI3/5 (TLX1/3+) in both the Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes was seen at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation supported by immunofluorescence data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "fda95e33-e4de-464c-9a26-9a2937fb5bd4",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C14",
+      "claim": "The phenotypes of Prdm13GFP and Prdm13\u0394ZF mutants are identical to the Ptf1a null mouse at E10.5.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes are identical to the Ptf1a null mouse (Figure 2G) (Glasgow et al., 2005)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison stated in text and supported by quantification in Figure 2G and citation to Glasgow et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "1fdeed23-8a71-4b22-bb4b-a33e5e7a4834",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C15",
+      "claim": "PRDM13 functions as a repressor of the excitatory neuronal gene program within the inhibitory neuronal lineage in the dorsal neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these findings confirm PRDM13 functions as a repressor of the excitatory neuronal gene program within the inhibitory neuronal lineage in the dorsal neural tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental data showing loss of PAX2+ cells and increase in TLX1/3+ cells in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "dd420e13-1742-477b-a478-c15fdbe0538f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C16",
+      "claim": "Prdm13 mutants show a marked reduction of the dI2 population (LHX1/5+; PAX2-) that is not seen with the loss of Ptf1a.",
+      "claim_type": "EXPLICIT",
+      "source": "One important distinction is the marked reduction of the dI2 population (LHX1/5+; PAX2-) in the Prdm13 mutants that is not seen with the loss of Ptf1a (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation supported by quantification in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "645a750f-8393-4a01-85b4-feb543b504e6",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C17",
+      "claim": "Both Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes show only partial loss of PAX2+ cells dorsally at E12.5 and E16.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes show only partial loss of PAX2+ cells dorsally at E12.5 and E16.5, markedly different from the absolute loss of PAX2 observed in the Ptf1aCRE/CRE null (Figure 3A\u2013G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation supported by immunofluorescence data in Figure 3A-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "2e9cd8fb-fa7e-49a9-9407-c675cb7669e6",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C18",
+      "claim": "The partial loss of PAX2+ cells in Prdm13 mutants is accompanied by a modest increase in the number of TLX1/3+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial loss of PAX2+ cells was accompanied by a modest increase in the number of TLX1/3+ cells in the Prdm13 mutants, which was not as dramatic as the increase seen in the Ptf1a null (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation supported by quantification in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "ef1d3534-c08e-42b8-940a-8f33a2b1b4cc",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C19",
+      "claim": "Gad1 is only partially lost dorsally in Prdm13 mutants at E16.5, in contrast to the complete loss in Ptf1a null animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with only a partial loss of PAX2+ cells in the Prdm13 mutants, Gad1, required for synthesis of the inhibitory neurotransmitter GABA, is also only partially lost dorsally as seen by in situ hybridization at E16.5 (Figure 3I\u2013K). Again this contrasts to the complete loss of this marker in the Ptf1a null animals at these later stages (Glasgow et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation supported by in situ hybridization data in Figure 3I-K and citation to Glasgow et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "b71366a3-1761-44e1-a66c-049e34f6efe8",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C20",
+      "claim": "Only a modest increase in Vglut2 (Slc17a6) is detected in the lateral region of the domain lacking Gad1 in Prdm13 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only a modest increase in Vglut2 (Slc17a6), a marker of excitatory neurons, is detected in the lateral region of the domain lacking Gad1 (Figure 3L\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated observation supported by in situ hybridization data in Figure 3L-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "12363a40-be63-4d57-b68d-2235b4a334c9",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C21",
+      "claim": "837 genes had greater than a 1.5-fold difference in expression and an FPKM >1 in at least one of the conditions in RNA-seq comparing Prdm13GFP/+ versus Prdm13GFP/GFP neural tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "837 genes had greater than a 1.5-fold difference in expression and an FPKM >1 in at least one of the conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "895eb94d-1843-4523-87e7-93acb7389063",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C22",
+      "claim": "A large number of the differentially expressed genes in the Prdm13 mutants play a role in cell proliferation, neuronal specification and cell cycle regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis determined that a large number of the DEGs in the Prdm13 mutants play a role in cell proliferation, neuronal specification and cell cycle regulation (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from GO analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "4ff58e16-706f-46f3-8b17-157b7949f654",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C23",
+      "claim": "220 PRDM13 binding sites were identified by ChIP-seq, largely located at distal sites relative to the transcription start sites of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 220 PRDM13 binding sites largely located at distal sites relative to the transcription start sites of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated result from ChIP-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "605cdb89-63c4-4258-9f0f-6d79794a5dd6",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C24",
+      "claim": "PRDM13 binds to a region >20 kb 5' of Tlx3 that was previously shown to be a Tlx3 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome tracks for the Tlx3 locus showing RNA-Seq and ChIP-Seq data illustrate the increase in Tlx3 transcripts in the dorsal neural tube of Prdm13 mutants relative to wild type, and the binding of PRDM13 to a region >20 kb 5' of Tlx3 (Figure 4B). This region was previously shown to drive expression of a reporter gene to the dI3/dI5 domains in the chick neural tube, identifying it as a Tlx3 enhancer (Chang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data in Figure 4B and citation to Chang et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "01a79e52-f320-4ae2-9315-257528b9c5ef",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C25",
+      "claim": "The primary motif in PRDM13 bound regions is an E-box (bHLH binding motif) found in 40% of the sites.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo motif analysis failed to identify a novel binding motif unique to PRDM13, but PRDM13 bound sites were enriched for motifs for known neural TFs such as E-box (bHLH) (40%), Rfx (17%), Pdx (HD) (25%) and Sox (30%) motifs (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from de novo motif analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "fba9783e-180b-4ddb-a828-c883831d48b4",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C26",
+      "claim": "Almost half of the PRDM13 bound sites overlap with the E-box binding factors ASCL1, PTF1A, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, almost half of the PRDM13 bound sites overlap with the E-box binding factors ASCL1 (15), PTF1A (48), or both (39) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from comparison of ChIP-seq datasets shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "23a8302a-94a7-4faa-bec4-51caa558f8dd",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C27",
+      "claim": "The lack of a unique binding motif for PRDM13 is consistent with a model where PRDM13 is recruited to sites by other site-specific TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of a unique binding motif is consistent with a model where PRDM13 is recruited to sites by other site-specific TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the motif analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "977f15f8-f4f9-46d0-a0ce-b56c6c84712a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C28",
+      "claim": "60 putative direct targets of PRDM13 were identified by intersecting genes associated with PRDM13 ChIP-seq peaks with differentially expressed genes in Prdm13 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "60 putative direct targets of PRDM13 were identified by intersecting these genes with the DEGs identified in Prdm13GFP neural tubes (Figure 4A, Supplemental file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from intersection of ChIP-seq and RNA-seq datasets shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "55c504bd-2be1-4064-8a78-bd6ccd256c14",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C29",
+      "claim": "54 of the putative PRDM13 targets have increased mRNA levels in Prdm13 mutants relative to controls (p-value=1.26e-27).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the reported function of PRDM13 as a transcriptional repressor (Chang et al., 2013), mRNA levels for 54 of the putative targets are increased in Prdm13 mutants relative to controls (p-value=1.26e-27) whereas only six are decreased (p-value=0.16) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of RNA-seq data for genes with PRDM13 binding, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "e69c8aba-703d-4e18-8aab-0714a510bd3f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C30",
+      "claim": "Tlx3 is elevated 17-fold in the absence of Prdm13.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Tlx3 is elevated 17-fold, while Pax2 is reduced 6.3-fold in the absence of Prdm13 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from RNA-seq analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "49bed546-c75f-4c54-9eea-b0e2082102f0",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C31",
+      "claim": "Pax2 is reduced 6.3-fold in the absence of Prdm13.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Tlx3 is elevated 17-fold, while Pax2 is reduced 6.3-fold in the absence of Prdm13 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from RNA-seq analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "61cc81eb-572e-438f-a29b-933635072e89",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C32",
+      "claim": "Ptf1a was upregulated 3.5-fold by RNA-seq in the Prdm13 mutants relative to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Ptf1a was upregulated 3.5-fold by RNA-seq in the Prdm13 mutants relative to control (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from RNA-seq analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "96144938-b05c-4c4d-956e-5ecbd644b915",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C33",
+      "claim": "The increase in PTF1A in Prdm13 mutants is localized within its normal dorsal progenitor domain 4 (dP4).",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in PTF1A is localized within its normal dorsal progenitor domain 4 (dP4) (Figure 5A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from in situ hybridization and immunofluorescence shown in Figure 5A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "7069a32e-c32e-449d-991d-79e645b0cfb2",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C34",
+      "claim": "There is a negative feedback loop between PRDM13 and PTF1A where PRDM13 feeds back to repress transcription of Ptf1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Because PTF1A is a transcriptional activator of Prdm13 transcription (Chang et al., 2013) these data reveal a negative feedback loop between PRDM13 and PTF1A (Figure 5G) where the product of the activated gene (PRDM13) feeds back to repress transcription of its activator (Ptf1a) (Alon, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from the observation that Ptf1a is upregulated in Prdm13 mutants, combined with known activation of Prdm13 by PTF1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0a5548f7-78b5-452f-97cf-7f3cc95f50bd",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C35",
+      "claim": "PRDM13 is bound to the Ptf1a autoregulatory enhancer region by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ChIP-seq experiments demonstrate PRDM13 is bound to this enhancer region (Figure 5H and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from ChIP-seq analysis shown in Figure 5H and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "3008e5d8-a749-4656-862e-8297e9ed92c5",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C36",
+      "claim": "PRDM13 overexpression blocks GFP reporter activity driven by the 2.3 kb Ptf1a autoregulatory enhancer in chick electroporation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, co-electroporation with a Prdm13 expression vector alone or along with that for Ptf1a blocks reporter activity completely (Figure 5K\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays shown in Figure 5K-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "f83576db-5601-4df4-a44f-61ecb6ad0afe",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C37",
+      "claim": "PRDM13 and PTF1A interact as shown by co-IP assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that PRDM13 and PTF1A interact, possibly forming a repressor complex, using co-IP assays with lysates from HEK293 cells transfected with FLAG-PRDM13 and MYC-PTF1A (Figure 5N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from co-immunoprecipitation experiments shown in Figure 5N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "39350cc3-ce73-40f3-835a-36a0edfd9e23",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C38",
+      "claim": "PRDM13 interacts with ASCL1 by co-IP.",
+      "claim_type": "EXPLICIT",
+      "source": "Because PRDM13 also interacts by co-IP with ASCL1 (Chang et al., 2013) (Figure 5O)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from co-immunoprecipitation experiments shown in Figure 5O and cited from Chang et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "82172c9c-280c-47a8-8a59-58d8ba5c6554",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C39",
+      "claim": "PRDM13 does not interact with E-proteins E47, E12, and HEB by co-IP.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no interaction between PRDM13 and the E-proteins E47 and E12 (2 isoforms of Tcf3), and HEB (Tcf12) (Figure 5O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from co-immunoprecipitation experiments shown in Figure 5O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0763cc7c-de01-4f69-82f6-9c00c779be47",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C40",
+      "claim": "Olig1 and Olig2 show ectopic dorsal expression in Prdm13GFP/GFP neural tubes (217-fold and 1114-fold increase, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon loss of PRDM13, the linked genes Olig1 and Olig2 show striking ectopic dorsal expression within Prdm13GFP/GFP neural tubes (Table 1, 217-fold and 1114-fold, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from RNA-seq analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "f6937096-46c4-41b8-8f07-df60b1ae78ff",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C41",
+      "claim": "The ectopic OLIG2 in Prdm13 mutants is localized just lateral to the progenitor domain in the dorsal neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "The ectopic OLIG2 is localized just lateral to the progenitor domain in the dorsal neural tube (Figure 6A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from immunofluorescence shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "aeec84c9-0baa-4fb0-8217-ea77eebd08cf",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C42",
+      "claim": "Aberrant expression of OLIG2 is not detected in the Ptf1a null even though there is a partial loss of PRDM13 in these mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This aberrant expression of OLIG2 is not detected in the Ptf1a null even though there is a partial loss of PRDM13 in these mutants (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from immunofluorescence shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "9dd6377b-ae73-42d0-956a-c7cf53797475",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C43",
+      "claim": "The ectopic OLIG2 in Prdm13 mutants is restricted to the dI4 domain and co-expresses with TLX1/3 and PTF1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-labeling of OLIG2 with TLX1/3, PTF1A, and OLIG3 demonstrate the ectopic OLIG2 is restricted to the dI4 domain (Figure 6E\u2013H and Figure 6\u2014figure supplement 1). Notably, the ectopic OLIG2 expressing cells co-express TLX1/3 and PTF1A (Figure 6E\u2013H), factors that are never co-expressed during normal development, thus indicating a severe disruption of neuronal subtype identity in the dorsal neural tube.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from immunofluorescence shown in Figure 6E-H and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "afa19b2c-d368-48ed-9b1a-1a0686469373",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C44",
+      "claim": "PRDM13 ChIP-seq identified three genomic regions (e1Olig, e2Olig, e3Olig) surrounding the Olig genes bound by PRDM13.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore whether a similar mechanism is involved in regulating the linked genes Olig1 and Olig2, we identified three genomic regions surrounding the Olig genes bound by PRDM13 from ChIP-seq (Figure 6I and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from ChIP-seq analysis shown in Figure 6I and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "80c4e988-d1e2-4a0e-a36b-c27c357555ff",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C45",
+      "claim": "All three PRDM13 bound sites near Olig genes (e1Olig, e2Olig, e3Olig) are also bound by PTF1A and/or ASCL1.",
+      "claim_type": "EXPLICIT",
+      "source": "All three of these sites, designated as e1Olig, e2Olig and e3Olig, are also bound by PTF1A and/or ASCL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from comparison of ChIP-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0f3180df-a8bd-4fc5-875b-d92a0ed4615a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C46",
+      "claim": "Only e2Olig contains the compound E-box/TC-box motifs that represent the site bound by the PTF1 trimeric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these three sites, only e2Olig contains the compound E-box/TC-box motifs that represent the site bound by the PTF1 trimeric complex (Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from sequence analysis shown in Figure 6J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "713a21ed-d3e3-4fe4-8207-9d5873063bd6",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C47",
+      "claim": "All three regions (e1Olig, e2Olig, e3Olig) directed expression of GFP in the neural tube, and this activity was suppressed by PRDM13.",
+      "claim_type": "EXPLICIT",
+      "source": "All three regions directed expression of GFP in the neural tube, activity that was suppressed by PRDM13 (Figure 6K\u2013l,O,U,V and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays shown in Figure 6K-l,O,U,V and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "b16c6579-776b-4ecb-ace8-bff7215d0a76",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C48",
+      "claim": "e2Olig::GFP but not e1Olig::GFP or e3Olig::GFP was activated by PTF1A in chick electroporation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether PTF1A or ASCL1 were sufficient to activate the Olig enhancers by co-electroporating them individually with each enhancer-reporter. e2Olig::GFP but not e1Olig::GFP or e3Olig::GFP was activated by PTF1A, and this activity was suppressed by PRDM13 (Figure 6M\u2013O and Figure 6\u2014figure supplement 1E,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays shown in Figure 6M-O and Figure 6\u2014figure supplement 1E,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "3dbb187d-1bee-48ca-9fe1-f21eb87bfc92",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C49",
+      "claim": "ASCL1 did not increase activity through the Olig enhancers in chick electroporation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "ASCL1 did not increase activity through these enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from chick electroporation reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0467bf46-a240-4953-985e-79c678f54430",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C50",
+      "claim": "e2Olig::GFP enhancer activity and its induction by PTF1A is lost when E-boxes that conform to a PTF1 motif are mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, e2Olig::GFP enhancer activity and its induction by PTF1A is lost when E-boxes that conform to a PTF1 motif are mutated (Figure 6P,R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays with mutated enhancers shown in Figure 6P,R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "396203b6-13a0-4176-a52f-958d522d332a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C51",
+      "claim": "Prdm12 mRNA is strikingly upregulated in the Prdm13GFP/GFP mutants (24-fold increase).",
+      "claim_type": "EXPLICIT",
+      "source": "Like Olig1 and Olig2, Prdm12 mRNA is strikingly upregulated in the Prdm13GFP/GFP mutants (Table 1, 24-fold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from RNA-seq analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "8f2a57bc-6932-4e2b-884e-25108cd1ba93",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C52",
+      "claim": "Ectopic Prdm12 expression is verified in Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes by mRNA in situ hybridization.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified the ectopic Prdm12 expression in Prdm13GFP/GFP and Prdm13\u0394ZF/\u0394ZF neural tubes by mRNA in situ hybridization (Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from in situ hybridization shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "c2d54e3c-48bf-40c6-bb47-616c7505250c",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C53",
+      "claim": "Misregulation of Prdm12 is not detected in Ptf1a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This misregulation of Prdm12 is not detected in Ptf1a mutants (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from in situ hybridization shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "ee811fd9-0489-4197-aa64-420a5edf3472",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C54",
+      "claim": "PRDM13 ChIP-seq identified a site (e1Prdm12) overlapping a binding site for PTF1A near the Prdm12 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if PRDM13 and PTF1A are directly regulating Prdm12, we analyzed the Prdm12 genomic region for sites bound by these factors. PRDM13 ChIP-seq identified a site, e1Prdm12, overlapping a binding site for PTF1A (Figure 7E and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from ChIP-seq analysis shown in Figure 7E and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "869d2248-d5b1-4c45-8cc9-e072d63d67ed",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C55",
+      "claim": "e1Prdm12 contains an E-box, but no compound E-box/TC-box for the PTF1 trimer complex binding.",
+      "claim_type": "EXPLICIT",
+      "source": "e1Prdm12 contains an E-box, but no compound E-box/TC-box for the PTF1 trimer complex binding (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from sequence analysis shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "df472fde-9246-440c-a3da-bcc7a9c624e9",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C56",
+      "claim": "e1Prdm12::GFP directs reporter expression localized to the endogenous Prdm12 domain and is repressed by PRDM13.",
+      "claim_type": "EXPLICIT",
+      "source": "e1Prdm12::GFP directs reporter expression localized to the endogenous Prdm12 domain and is repressed by PRDM13 (Figure 7G,H,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays shown in Figure 7G,H,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "e359fba0-6e1a-4220-8617-0121af954388",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C57",
+      "claim": "Co-electroporation with Ptf1a had no effect on e1Prdm12::GFP reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-electroporation with Ptf1a had no effect (Figure 7I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays shown in Figure 7I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "8a905bdc-de40-49de-a34b-9d9101e6c15a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C58",
+      "claim": "Both Neurog1 and Neurog2 are increased in Prdm13GFP/GFP mutants (3.4- and 1.7-fold respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Support for these bHLH factors being involved in the ectopic dorsal expression of Prdm12 was suggested by the RNA-seq data that showed both Neurog1 and Neurog2 as being increased in Prdm13GFP/GFP mutants (Table 1, 3.4- and 1.7-fold respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from RNA-seq analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "45cccc70-3d36-4113-902c-ba80b276983a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C59",
+      "claim": "mRNA in situ hybridization shows both Neurog1 and Neurog2 increased in the dorsal neural tube of the Prdm13 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mRNA in situ hybridization shows both of these factors increased in the dorsal neural tube of the Prdm13 mutants (Figure 7L,N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from in situ hybridization shown in Figure 7L,N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "6cc89b2e-a0d6-4549-b4d7-f83506e1cc6c",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C60",
+      "claim": "Both NEUROG1 and NEUROG2 drive activity of the e1Prdm12::GFP reporter, and this activity is suppressed when Prdm13 is added.",
+      "claim_type": "EXPLICIT",
+      "source": "We co-electroporated expression constructs for Neurog1 and Neurog2 with the Prdm12 enhancer reporter e1Prdm12::GFP and found that both drive activity of the reporter, activity that is suppressed when Prdm13 is added (Figure 7O\u2013S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays shown in Figure 7O-S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "42fc51ac-480b-4212-bfd5-c9c5b83d7ef6",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C61",
+      "claim": "PRDM13 interacts with NEUROG1 and NEUROG2 using co-IP assays.",
+      "claim_type": "EXPLICIT",
+      "source": "And finally, we show that PRDM13 interacts with NEUROG1 and NEUROG2 using co-IP assays with lysates from HEK293 cells transfected with these factors (Figure 7T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from co-immunoprecipitation experiments shown in Figure 7T.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "048a5469-4b98-451b-8b9f-2cf7e8c2edea",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C62",
+      "claim": "The C-terminal ZF domain of PRDM13 is required for PRDM13 function in neuronal specification in the neural tube and survival of the animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The Prdm13 mutants generated here, particularly the Prdm13\u0394ZF mutants, highlight the requirement for the C-terminal ZF domain for PRDM13 function in neuronal specification in the neural tube and survival of the animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the phenotypes of different mutant alleles, particularly the lethality of Prdm13\u0394ZF mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "6e62f1bb-e02b-4aa5-9331-d38f0f488d2d",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C63",
+      "claim": "The Prdm13\u0394115 and Prdm13\u03942/3 mutants are hypomorphic alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the Prdm13\u03942/3 and Prdm13\u0394115 are hypomorphic alleles, and that the ZF domain encoded within exon four is produced in tissues that support survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the survival of these mutants and detection of protein containing the ZF domain.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "a90a0b86-26b1-4638-8f34-e6580ebd055d",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C64",
+      "claim": "PTF1A directly induces transcription of Prdm13 in mice, chicken, and Xenopus.",
+      "claim_type": "EXPLICIT",
+      "source": "PTF1A, essential for specification inhibitory neurons in various regions of the nervous system, directly induces transcription of Prdm13 in mice, chicken, and Xenopus (Chang et al., 2013; Hanotel et al., 2014; Meredith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chang et al., 2013; Hanotel et al., 2014; Meredith et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "23f0c3ff-4692-492e-b025-294e9730f749",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C65",
+      "claim": "PRDM13 feedback inhibits its own expression as reported in Xenopus and detected in mouse mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "PRDM13 in turn feedback inhibits its own expression as reported in Xenopus (Hanotel et al., 2014) and detected here in the mouse mutants (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hanotel et al., 2014 and RNA-seq data in Table 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0d43204a-4206-4a6c-8649-191ad4afe7a7",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C66",
+      "claim": "The inhibition of Ptf1a by PRDM13 represents an incoherent feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of Ptf1a by PRDM13 represents an incoherent feedback loop, a mechanism present in multiple TF networks (Alon, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Classification of the regulatory mechanism with citation to Alon, 2007.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "1b864f6d-40f4-40ec-a2bc-878687ce14ac",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C67",
+      "claim": "PRDM13 is localized to the same sites in vivo as seen by ChIP-Seq from neural tubes as neural bHLH factors like ASCL1 and PTF1A.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) PRDM13 and neural bHLH factors like ASCL1 and PTF1A are localized to the same sites in vivo as seen by ChIP-Seq from neural tubes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from ChIP-seq analysis comparing PRDM13, ASCL1, and PTF1A binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "30e0f5d3-ce71-4848-af1a-732802da6d2a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C68",
+      "claim": "PRDM13 and multiple class II bHLH factors, but not class I bHLH factors, co-immunoprecipitate.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) PRDM13 and multiple class II bHLH factors, but not class I bHLH factors, co-immunoprecipitate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from co-immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "f2174dab-4376-41da-bcb5-9f6fcaef018e",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C69",
+      "claim": "Neural bHLH factors activate transcription through identified regulatory regions in reporter assays while PRDM13 blocks this activity.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Neural bHLH factors activate transcription through the identified regulatory regions in reporter assays while PRDM13 blocks this activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from chick electroporation reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "78bd21c7-aefc-4781-9303-46069fc21092",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C70",
+      "claim": "Loss of PRDM13 function in vivo results in ectopic expression of multiple bHLH regulated genes in the dorsal neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) Loss of PRDM13 function in vivo results in ectopic expression of multiple bHLH regulated genes in the dorsal neural tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from RNA-seq and in situ hybridization in Prdm13 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "f715d344-8619-4fa1-8fa2-95771c2bcb81",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C71",
+      "claim": "The primary binding motif identified by PRDM13 ChIP-Seq is an E-box, the motif for bHLH factors.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) The primary binding motif identified by PRDM13 ChIP-Seq is an E-box, the motif for bHLH factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from de novo motif analysis of PRDM13 ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "6e9e4b93-8133-4a91-8001-41c32bccc3f7",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C72",
+      "claim": "PRDM8 and BHLHB5 form a transcription repressor complex where BHLHB5 is the specific DNA binding factor that recruits PRDM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Ross et al. propose PRDM8 and BHLHB5 form a transcription repressor complex where BHLHB5 is the specific DNA binding factor that recruits PRDM8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited model from Ross et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "dab31c5d-cf55-44fe-92d6-4e5f8527d3a9",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C73",
+      "claim": "PRDM8 does not bind DNA targets in the absence of BHLHB5.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, PRDM8 does not bind DNA targets in the absence of BHLHB5 (Ross et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited finding from Ross et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "51103460-4c86-4c38-a05d-91a2ef8a0c1d",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C74",
+      "claim": "PRDM13 is required to restrict expression of multiple neuronal specification factors to the ventral neural tube to ensure precision in cell-fate identity in the dorsal spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this study demonstrates PRDM13 is required to restrict expression of multiple neuronal specification factors to the ventral neural tube to ensure precision in cell-fate identity in the dorsal spinal cord (Figure 8 and Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary conclusion from the study supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "7be18d1a-a450-41df-a792-011d68a2081e",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C75",
+      "claim": "NKX2.2, NKX6.1 and OLIG2 directly repress all alternative fates, including dorsal cell fate programs, in the ventral neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two recent studies of the ventral neural tube TFs NKX2.2, NKX6.1 and OLIG2 uncover broader programs of repression than previously appreciated and demonstrate that these transcription factors directly repress all alternative fates, including dorsal cell fate programs, in the ventral neural tube (Kutejova et al., 2016; Nishi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited findings from Kutejova et al., 2016 and Nishi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "70bf17d7-6459-42ca-bdd4-dd16c98a9ae0",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C76",
+      "claim": "PRDM13 is a key transcriptional repressor of a whole battery of genes, including factors normally restricted to the ventral neural tube and required for neuronal identity in that region.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we provide evidence for an additional variation of these models whereby the transcriptional repressor is broadly expressed and it limits inappropriate gene expression driven by progenitor-specific activators, the bHLH factors. PRDM13 is identified as a key transcriptional repressor of a whole battery of genes, not just those in domains adjacent to the domain giving rise to the dorsal inhibitory neurons, but also factors normally restricted to the ventral neural tube and required for neuronal identity in that region (Table 1) (Figure 8 and Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary conclusion from the study supported by RNA-seq data in Table 1 and Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "9eebb968-dfb3-44de-b048-9f9409164238",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C77",
+      "claim": "OLIG2 and PRDM12 are normally restricted to the ventral neural tube but in the Prdm13 mutants they are aberrantly present dorsally, altering the identity of these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we highlight OLIG2 and PRDM12, which are normally restricted to the ventral neural tube but in the Prdm13 mutants they are aberrantly present dorsally, altering the identity of these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from immunofluorescence and in situ hybridization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "8201fd5e-f7b2-4a57-8c9f-84986b70fc91",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C78",
+      "claim": "PRDM13 is a transcriptional repressor essential in the dorsal spinal cord development to modulate the transcriptional activity of neural bHLH factors to generate precise neuronal identities.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, PRDM13 is a transcriptional repressor essential in the dorsal spinal cord development to modulate the transcriptional activity of neural bHLH factors to generate precise neuronal identities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the entire study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "5dc8c7cf-058c-4b8a-8ac6-6e941c50ac5e",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C79",
+      "claim": "PRDM13 inhibits gene expression programs for excitatory neuronal lineages in the dorsal neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "PRDM13 inhibits gene expression programs for excitatory neuronal lineages in the dorsal neural tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by data showing increased TLX1/3 in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "a3b1292e-ea37-4ab4-8c11-2f161cf99e81",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C80",
+      "claim": "PRDM13 ensures a battery of ventral neural tube specification genes such as Olig1, Olig2 and Prdm12 are excluded dorsally.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, PRDM13 also ensures a battery of ventral neural tube specification genes such as Olig1, Olig2 and Prdm12 are excluded dorsally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by RNA-seq and in situ hybridization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "08833a7f-489b-4ec1-b3ef-820218f1173f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C81",
+      "claim": "PRDM13 restricts gene expression in specific neuronal lineages via recruitment to chromatin by multiple neural bHLH factors.",
+      "claim_type": "EXPLICIT",
+      "source": "PRDM13 does this via recruitment to chromatin by multiple neural bHLH factors to restrict gene expression in specific neuronal lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by ChIP-seq data showing overlap with bHLH binding sites and co-IP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "cc6b6e09-20e0-42de-80d9-fb45789953da",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C82",
+      "claim": "ASCL1 induces the excitatory neuron specification HD factors TLX1 and TLX3.",
+      "claim_type": "EXPLICIT",
+      "source": "ASCL1 induces the excitatory neuron specification HD factors TLX1 and TLX3, while PTF1A induces the inhibitory neuron specification HD factor PAX2 (Batista and Lewis, 2008; Borromeo et al., 2014; Chang et al., 2013; Cheng et al., 2004; Cheng et al., 2005; Glasgow et al., 2005; Mizuguchi et al., 2006) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple citations and shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "12ddbab9-ead0-4b35-afad-81d851718495",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C83",
+      "claim": "PTF1A induces the inhibitory neuron specification HD factor PAX2.",
+      "claim_type": "EXPLICIT",
+      "source": "ASCL1 induces the excitatory neuron specification HD factors TLX1 and TLX3, while PTF1A induces the inhibitory neuron specification HD factor PAX2 (Batista and Lewis, 2008; Borromeo et al., 2014; Chang et al., 2013; Cheng et al., 2004; Cheng et al., 2005; Glasgow et al., 2005; Mizuguchi et al., 2006) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple citations and shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "051b9ae6-e17a-4619-ab13-3887ce7f8acd",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C84",
+      "claim": "PTF1A increases levels of the transcriptional repressor PRDM13.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both ASCL1 and PTF1A function as transcriptional activators (Beres et al., 2006; Nakada et al., 2004), the mechanism for repression was discovered to be indirect, involving PTF1A increasing levels of the transcriptional repressor PRDM13 (Chang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "7b4cd20c-65ce-4697-992f-f2dce62a5028",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C85",
+      "claim": "PRDM13 functions to specify subsets of retinal amacrine interneurons in retina.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of PRDM13 as a cell type specification factor has been demonstrated in neural tube (Chang et al., 2013) and retina (Watanabe et al., 2015). In retina, PRDM13 functions to specify subsets of retinal amacrine interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Watanabe et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "27348d18-f450-4bc4-8cc7-b93cb60c21ea",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C86",
+      "claim": "OLIG2 is restricted to the motor neuron progenitor domain (pMN) in the ventral spinal cord at early stages of neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "OLIG2 is restricted to the motor neuron progenitor domain (pMN) in the ventral spinal cord at these early stages of neurogenesis, and it is required for specification of motor neurons (Mizuguchi et al., 2001; Novitch et al., 2001; Zhou et al., 2000) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple citations and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "b0e56944-4cea-43f1-8f21-839adcc697e1",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C87",
+      "claim": "OLIG2 is required for specification of motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "OLIG2 is restricted to the motor neuron progenitor domain (pMN) in the ventral spinal cord at these early stages of neurogenesis, and it is required for specification of motor neurons (Mizuguchi et al., 2001; Novitch et al., 2001; Zhou et al., 2000) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0aa8ffdf-bc9c-449f-a09a-6eb4c489f9d8",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C88",
+      "claim": "Prdm12 is normally restricted to ventral progenitor domain 1 (p1) and is required for generation of V1 interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Prdm12 is normally restricted to ventral progenitor domain 1 (p1) and is required for generation of V1 interneurons (Th\u00e9lie et al., 2015) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Th\u00e9lie et al., 2015 and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "97b5af1b-97ac-476b-aba4-b7d6dc9ecf90",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C89",
+      "claim": "PTF1A functions in a trimeric complex with an E-protein and RBPJ.",
+      "claim_type": "EXPLICIT",
+      "source": "PTF1A functions in a trimeric complex (PTF1) with an E-protein and RBPJ (Meredith et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meredith et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "3074a944-8eb8-41da-bb68-7eb461d2cd15",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C90",
+      "claim": "The 2.3 kb Ptf1a autoregulatory enhancer can direct expression of a GFP reporter gene in the correct domain in transgenic mice and in the chick neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancer can direct expression of a GFP reporter gene in the correct domain in transgenic mice and in the chick neural tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known property of the enhancer, supported by previous work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "798ba2f0-dac2-4e6e-a8c8-1ad0a2855c0a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "claim_id": "C91",
+      "claim": "PTF1A co-electroporation dramatically increases Ptf1a autoregulatory enhancer activity in chick neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "As was previously reported, this enhancer directs GFP expression to the Ptf1a domain in the dorsal neural tube and co-electroporation with a Ptf1a expression vector dramatically increases enhancer activity (Figure 5I\u2013J,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from chick electroporation reporter assays shown in Figure 5I-J,M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "826d1c29-33b0-4b5b-8962-46e2a320e3cf",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The C-terminal zinc-finger (ZF) domain of PRDM13 is essential for its function in neuronal specification and animal survival. Prdm13GFP and Prdm13\u0394ZF mutants lacking the ZF domain are neonatal lethal and show no detectable PRDM13 protein, while Prdm13\u0394115 mutants that retain the ZF domain survive to adulthood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 provide direct experimental evidence from multiple mutant alleles showing that loss of the ZF domain results in lethality and loss of protein detection, while retention of the ZF domain (C10-C11) allows survival. The conclusion in C62 is well-supported by these observations. Claim C63 is appropriately labeled as speculation about the hypomorphic nature of certain alleles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "62ac5ffc-ba62-47a0-a5e9-f45ace22c844",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PRDM13 functions as a repressor of the excitatory neuronal gene program within the inhibitory neuronal lineage in the dorsal neural tube at E10.5. Loss of PRDM13 results in complete loss of PAX2+;LHX1/5+ dI4 inhibitory neurons and increased TLX1/3+ dI3/5 excitatory neurons, phenocopying Ptf1a null mutants, with the additional distinction of reduced dI2 populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 present consistent immunofluorescence data showing the loss of dI4 and increase in dI3/5 neurons in Prdm13 mutants at E10.5, with quantification in Figure 2G. The phenotype matches Ptf1a nulls except for the dI2 reduction (C16), which is appropriately noted as a distinction. The conclusion in C15 is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "ba4c877f-6b8f-416f-8695-0d5891464a7a",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At later developmental stages (E12.5-E16.5), Prdm13 mutants show only partial loss of PAX2+ inhibitory neurons and modest increases in TLX1/3+ excitatory neurons, contrasting with the complete loss observed in Ptf1a nulls. This partial phenotype is reflected in only partial loss of Gad1 and modest increases in Vglut2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 present consistent data from immunofluorescence and in situ hybridization at later developmental stages, with appropriate quantification and comparison to Ptf1a nulls. The partial phenotype at later stages contrasts with the complete loss at E10.5, suggesting temporal complexity in PRDM13 function that is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "21001a33-f0cb-4f40-a208-3fadfa363946",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Unbiased genomic approaches identified 837 differentially expressed genes in Prdm13 mutants and 220 PRDM13 binding sites by ChIP-seq. Integration of these datasets identified 60 putative direct targets, of which 54 show increased expression in mutants (p=1.26e-27), consistent with PRDM13 functioning as a transcriptional repressor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C28-C29 present results from RNA-seq and ChIP-seq with appropriate statistical analysis. The highly significant enrichment (p=1.26e-27) of upregulated genes among PRDM13 binding targets strongly supports the repressor function. The integration strategy is sound and the conclusions are appropriately conservative (\"putative\" targets).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "1082512c-f27f-4dec-87e4-c03d7b68d2fc",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PRDM13 lacks a unique DNA binding motif but is enriched at E-box motifs (40% of sites) and co-localizes with bHLH factors ASCL1 and PTF1A at nearly half of its binding sites, consistent with a model of recruitment by site-specific transcription factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 present motif analysis results showing E-box enrichment and overlap with bHLH factor binding sites (C26, C67). The inference that PRDM13 is recruited by other factors (C27) is reasonable given the lack of a unique motif and substantial overlap with known DNA-binding factors. This is further supported by co-IP data in other claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "511c4e19-9301-4d49-8491-838e67d1808f",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PRDM13 participates in a negative feedback loop with its activator PTF1A. Ptf1a is upregulated 3.5-fold in Prdm13 mutants, PRDM13 binds the Ptf1a autoregulatory enhancer, physically interacts with PTF1A, and blocks PTF1A-mediated activation of the enhancer in reporter assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 provide multiple lines of converging evidence: RNA-seq showing Ptf1a upregulation (C32), spatial localization by ISH/IF (C33), ChIP-seq showing PRDM13 binding to the Ptf1a enhancer (C35), functional repression in reporter assays (C36, C91), and physical interaction by co-IP (C37). The negative feedback loop model (C34, C66) is well-supported by this comprehensive dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "7650e201-bf39-460c-adfa-9dd0a15410bf",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PRDM13 restricts expression of the ventral specification factors Olig1 and Olig2 to the ventral neural tube. Loss of PRDM13 results in dramatic ectopic dorsal expression of OLIG2 (1114-fold increase) that co-expresses with TLX1/3 and PTF1A. PRDM13 binds three enhancer regions near the Olig genes, and PTF1A can activate the e2Olig enhancer through PTF1 binding motifs, which is blocked by PRDM13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C50 present a comprehensive analysis combining RNA-seq (C40), immunofluorescence showing ectopic OLIG2 and abnormal co-expression (C41-C43), ChIP-seq identifying binding sites (C44-C46), and functional validation in reporter assays (C47-C50). The E-box mutation experiments (C50) provide strong evidence for the mechanism. The dramatic fold-changes and multiple experimental approaches strongly support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "78252a24-07ba-4460-a6e3-beae318d3250",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PRDM13 restricts Prdm12 expression to the ventral neural tube through a mechanism involving NEUROG1 and NEUROG2. Prdm12 is upregulated 24-fold in Prdm13 mutants, PRDM13 binds an enhancer near Prdm12, and both NEUROG1 and NEUROG2 can activate this enhancer in a PRDM13-repressible manner. PRDM13 physically interacts with NEUROG1 and NEUROG2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C61 provide comprehensive evidence including RNA-seq (C51, C58), in situ validation (C52-C53, C59), ChIP-seq (C54-C55), reporter assays showing NEUROG-mediated activation and PRDM13 repression (C56-C57, C60), and co-IP demonstrating physical interaction (C61). The mechanism differs from Olig regulation (PTF1A-independent, C57) and involves different bHLH factors, demonstrating the versatility of PRDM13 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "d584ac09-51b0-4a04-ba4b-434a29f45ce0",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PRDM13 selectively interacts with class II bHLH factors (ASCL1, PTF1A, NEUROG1, NEUROG2) but not class I bHLH factors (E-proteins), and blocks the ability of class II bHLH factors to activate transcription through identified regulatory regions. Loss of PRDM13 results in ectopic expression of multiple bHLH-regulated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C68 present co-IP data showing selective interaction with class II but not class I bHLH factors. Claims C69-C70 demonstrate functional consequences in reporter assays and in vivo. The selectivity for class II factors is important mechanistically and is well-documented across multiple factors. This provides a unifying mechanism for PRDM13 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "392f0d8b-4391-4dab-af95-fd84010be5e9",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PRDM13 is required to restrict expression of multiple neuronal specification factors, including ventral factors like OLIG2 and PRDM12, to ensure precision in cell-fate identity in the dorsal spinal cord. PRDM13 functions by being recruited to chromatin by multiple neural bHLH factors to modulate their transcriptional activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C74, C76-C81) integrate findings from throughout the manuscript. They are well-supported by the comprehensive dataset including RNA-seq showing broad misregulation of ventral factors (Table 1), ChIP-seq showing co-localization with bHLH factors, co-IP showing physical interactions, and functional assays showing repression of bHLH-mediated activation. The model is appropriately supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "a5281276-68cb-4973-abb2-503841048d55",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PRDM13 is a member of the PRDM family of transcriptional repressors with a PR domain and zinc-finger domains, expressed in dorsal but not ventral neural tube progenitors. It functions downstream of PTF1A to suppress excitatory neuronal programs, and its ZF domain is sufficient for activity in overexpression assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide background information supported by appropriate citations and Figure 1C showing expression pattern. These claims establish the context for the study and are well-supported by prior literature. Claim C6 appropriately notes uncertainty about in vivo relevance of histone methyltransferase activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "18aa5c6d-3eef-4428-a027-41dde945e123",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PRDM13 binds to a known Tlx3 enhancer >20 kb upstream of the gene, and loss of PRDM13 results in 17-fold increase in Tlx3 and 6.3-fold decrease in Pax2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C30-C31 present ChIP-seq and RNA-seq data for a known PRDM13 target (Tlx3) that serves as a positive control validating the genomic approaches. The data are consistent with prior work (Chang et al., 2013) and support the repressor function of PRDM13.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "b7f6d7e2-0ad5-41d2-b5cc-024d43a3c557",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has shown that PRDM8 forms a repressor complex with BHLHB5 where BHLHB5 recruits PRDM8 to DNA, and that ventral neural tube factors NKX2.2, NKX6.1, and OLIG2 broadly repress alternative fates including dorsal programs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 and C75 cite prior literature to provide context for the current findings. These are appropriately cited and provide important background for understanding the significance of the PRDM13 mechanism and the broader principle of transcriptional repression in neural tube patterning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    },
+    {
+      "id": "0d761788-f648-4f60-bf3d-0ab433596eae",
+      "content_id": "39df34a5-f014-4c4b-b6f9-125424ed9e95",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on neural tube patterning: ASCL1 induces excitatory neuron factors TLX1/3, PTF1A induces inhibitory neuron factor PAX2 and activates PRDM13, OLIG2 is required for motor neuron specification, and PRDM12 is required for V1 interneuron generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 provide essential background on neural tube development supported by appropriate citations and Figure 1. These establish the developmental context and known regulatory relationships that frame the current study. All are well-supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:43:46.171031Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "323c6acb-b25f-411e-a622-376dfd901da3",
+      "result_id": "826d1c29-33b0-4b5b-8962-46e2a320e3cf"
+    },
+    {
+      "claim_id": "28c67159-b1a6-411c-bc21-833007680090",
+      "result_id": "826d1c29-33b0-4b5b-8962-46e2a320e3cf"
+    },
+    {
+      "claim_id": "0108d065-8901-4d52-a64c-74e5e41c844f",
+      "result_id": "826d1c29-33b0-4b5b-8962-46e2a320e3cf"
+    },
+    {
+      "claim_id": "168e1ff4-7678-4981-bc4c-04487a7cc986",
+      "result_id": "826d1c29-33b0-4b5b-8962-46e2a320e3cf"
+    },
+    {
+      "claim_id": "048a5469-4b98-451b-8b9f-2cf7e8c2edea",
+      "result_id": "826d1c29-33b0-4b5b-8962-46e2a320e3cf"
+    },
+    {
+      "claim_id": "6e62f1bb-e02b-4aa5-9331-d38f0f488d2d",
+      "result_id": "826d1c29-33b0-4b5b-8962-46e2a320e3cf"
+    },
+    {
+      "claim_id": "e379fa62-687f-4a11-82ac-4ca4062f796f",
+      "result_id": "62ac5ffc-ba62-47a0-a5e9-f45ace22c844"
+    },
+    {
+      "claim_id": "9a4c3a08-4317-4584-989a-ccf39c7f4a42",
+      "result_id": "62ac5ffc-ba62-47a0-a5e9-f45ace22c844"
+    },
+    {
+      "claim_id": "fda95e33-e4de-464c-9a26-9a2937fb5bd4",
+      "result_id": "62ac5ffc-ba62-47a0-a5e9-f45ace22c844"
+    },
+    {
+      "claim_id": "1fdeed23-8a71-4b22-bb4b-a33e5e7a4834",
+      "result_id": "62ac5ffc-ba62-47a0-a5e9-f45ace22c844"
+    },
+    {
+      "claim_id": "dd420e13-1742-477b-a478-c15fdbe0538f",
+      "result_id": "62ac5ffc-ba62-47a0-a5e9-f45ace22c844"
+    },
+    {
+      "claim_id": "645a750f-8393-4a01-85b4-feb543b504e6",
+      "result_id": "ba4c877f-6b8f-416f-8695-0d5891464a7a"
+    },
+    {
+      "claim_id": "2e9cd8fb-fa7e-49a9-9407-c675cb7669e6",
+      "result_id": "ba4c877f-6b8f-416f-8695-0d5891464a7a"
+    },
+    {
+      "claim_id": "ef1d3534-c08e-42b8-940a-8f33a2b1b4cc",
+      "result_id": "ba4c877f-6b8f-416f-8695-0d5891464a7a"
+    },
+    {
+      "claim_id": "b71366a3-1761-44e1-a66c-049e34f6efe8",
+      "result_id": "ba4c877f-6b8f-416f-8695-0d5891464a7a"
+    },
+    {
+      "claim_id": "12363a40-be63-4d57-b68d-2235b4a334c9",
+      "result_id": "21001a33-f0cb-4f40-a208-3fadfa363946"
+    },
+    {
+      "claim_id": "895eb94d-1843-4523-87e7-93acb7389063",
+      "result_id": "21001a33-f0cb-4f40-a208-3fadfa363946"
+    },
+    {
+      "claim_id": "4ff58e16-706f-46f3-8b17-157b7949f654",
+      "result_id": "21001a33-f0cb-4f40-a208-3fadfa363946"
+    },
+    {
+      "claim_id": "977f15f8-f4f9-46d0-a0ce-b56c6c84712a",
+      "result_id": "21001a33-f0cb-4f40-a208-3fadfa363946"
+    },
+    {
+      "claim_id": "55c504bd-2be1-4064-8a78-bd6ccd256c14",
+      "result_id": "21001a33-f0cb-4f40-a208-3fadfa363946"
+    },
+    {
+      "claim_id": "01a79e52-f320-4ae2-9315-257528b9c5ef",
+      "result_id": "1082512c-f27f-4dec-87e4-c03d7b68d2fc"
+    },
+    {
+      "claim_id": "fba9783e-180b-4ddb-a828-c883831d48b4",
+      "result_id": "1082512c-f27f-4dec-87e4-c03d7b68d2fc"
+    },
+    {
+      "claim_id": "23a8302a-94a7-4faa-bec4-51caa558f8dd",
+      "result_id": "1082512c-f27f-4dec-87e4-c03d7b68d2fc"
+    },
+    {
+      "claim_id": "1b864f6d-40f4-40ec-a2bc-878687ce14ac",
+      "result_id": "1082512c-f27f-4dec-87e4-c03d7b68d2fc"
+    },
+    {
+      "claim_id": "f715d344-8619-4fa1-8fa2-95771c2bcb81",
+      "result_id": "1082512c-f27f-4dec-87e4-c03d7b68d2fc"
+    },
+    {
+      "claim_id": "61cc81eb-572e-438f-a29b-933635072e89",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "96144938-b05c-4c4d-956e-5ecbd644b915",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "7069a32e-c32e-449d-991d-79e645b0cfb2",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "0a5548f7-78b5-452f-97cf-7f3cc95f50bd",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "3008e5d8-a749-4656-862e-8297e9ed92c5",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "f83576db-5601-4df4-a44f-61ecb6ad0afe",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "a90a0b86-26b1-4638-8f34-e6580ebd055d",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "23f0c3ff-4692-492e-b025-294e9730f749",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "0d43204a-4206-4a6c-8649-191ad4afe7a7",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "97b5af1b-97ac-476b-aba4-b7d6dc9ecf90",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "3074a944-8eb8-41da-bb68-7eb461d2cd15",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "798ba2f0-dac2-4e6e-a8c8-1ad0a2855c0a",
+      "result_id": "511c4e19-9301-4d49-8491-838e67d1808f"
+    },
+    {
+      "claim_id": "0763cc7c-de01-4f69-82f6-9c00c779be47",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "f6937096-46c4-41b8-8f07-df60b1ae78ff",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "aeec84c9-0baa-4fb0-8217-ea77eebd08cf",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "9dd6377b-ae73-42d0-956a-c7cf53797475",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "afa19b2c-d368-48ed-9b1a-1a0686469373",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "80c4e988-d1e2-4a0e-a36b-c27c357555ff",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "0f3180df-a8bd-4fc5-875b-d92a0ed4615a",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "713a21ed-d3e3-4fe4-8207-9d5873063bd6",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "b16c6579-776b-4ecb-ace8-bff7215d0a76",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "3dbb187d-1bee-48ca-9fe1-f21eb87bfc92",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "0467bf46-a240-4953-985e-79c678f54430",
+      "result_id": "7650e201-bf39-460c-adfa-9dd0a15410bf"
+    },
+    {
+      "claim_id": "396203b6-13a0-4176-a52f-958d522d332a",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "8f2a57bc-6932-4e2b-884e-25108cd1ba93",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "c2d54e3c-48bf-40c6-bb47-616c7505250c",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "ee811fd9-0489-4197-aa64-420a5edf3472",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "869d2248-d5b1-4c45-8cc9-e072d63d67ed",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "df472fde-9246-440c-a3da-bcc7a9c624e9",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "e359fba0-6e1a-4220-8617-0121af954388",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "8a905bdc-de40-49de-a34b-9d9101e6c15a",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "45cccc70-3d36-4113-902c-ba80b276983a",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "6cc89b2e-a0d6-4549-b4d7-f83506e1cc6c",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "42fc51ac-480b-4212-bfd5-c9c5b83d7ef6",
+      "result_id": "78252a24-07ba-4460-a6e3-beae318d3250"
+    },
+    {
+      "claim_id": "39350cc3-ce73-40f3-835a-36a0edfd9e23",
+      "result_id": "d584ac09-51b0-4a04-ba4b-434a29f45ce0"
+    },
+    {
+      "claim_id": "82172c9c-280c-47a8-8a59-58d8ba5c6554",
+      "result_id": "d584ac09-51b0-4a04-ba4b-434a29f45ce0"
+    },
+    {
+      "claim_id": "30e0f5d3-ce71-4848-af1a-732802da6d2a",
+      "result_id": "d584ac09-51b0-4a04-ba4b-434a29f45ce0"
+    },
+    {
+      "claim_id": "f2174dab-4376-41da-bcb5-9f6fcaef018e",
+      "result_id": "d584ac09-51b0-4a04-ba4b-434a29f45ce0"
+    },
+    {
+      "claim_id": "78bd21c7-aefc-4781-9303-46069fc21092",
+      "result_id": "d584ac09-51b0-4a04-ba4b-434a29f45ce0"
+    },
+    {
+      "claim_id": "51103460-4c86-4c38-a05d-91a2ef8a0c1d",
+      "result_id": "392f0d8b-4391-4dab-af95-fd84010be5e9"
+    },
+    {
+      "claim_id": "70bf17d7-6459-42ca-bdd4-dd16c98a9ae0",
+      "result_id": "392f0d8b-4391-4dab-af95-fd84010be5e9"
+    },
+    {
+      "claim_id": "9eebb968-dfb3-44de-b048-9f9409164238",
+      "result_id": "392f0d8b-4391-4dab-af95-fd84010be5e9"
+    },
+    {
+      "claim_id": "8201fd5e-f7b2-4a57-8c9f-84986b70fc91",
+      "result_id": "392f0d8b-4391-4dab-af95-fd84010be5e9"
+    },
+    {
+      "claim_id": "5dc8c7cf-058c-4b8a-8ac6-6e941c50ac5e",
+      "result_id": "392f0d8b-4391-4dab-af95-fd84010be5e9"
+    },
+    {
+      "claim_id": "a3b1292e-ea37-4ab4-8c11-2f161cf99e81",
+      "result_id": "392f0d8b-4391-4dab-af95-fd84010be5e9"
+    },
+    {
+      "claim_id": "08833a7f-489b-4ec1-b3ef-820218f1173f",
+      "result_id": "392f0d8b-4391-4dab-af95-fd84010be5e9"
+    },
+    {
+      "claim_id": "c8b89c3b-eca5-4586-a63d-63a1453487d5",
+      "result_id": "a5281276-68cb-4973-abb2-503841048d55"
+    },
+    {
+      "claim_id": "96e433b7-8c0c-4c14-a744-854e6644a12f",
+      "result_id": "a5281276-68cb-4973-abb2-503841048d55"
+    },
+    {
+      "claim_id": "5477a40a-8df3-4196-9eec-dc04873cbddf",
+      "result_id": "a5281276-68cb-4973-abb2-503841048d55"
+    },
+    {
+      "claim_id": "cf147133-5810-4f29-a8d0-f71ec1d6b50f",
+      "result_id": "a5281276-68cb-4973-abb2-503841048d55"
+    },
+    {
+      "claim_id": "9eddcefb-b45a-4806-86e2-2b9408b5102e",
+      "result_id": "a5281276-68cb-4973-abb2-503841048d55"
+    },
+    {
+      "claim_id": "aeb6f52d-46ea-49a2-937b-2a5deea2cbb7",
+      "result_id": "a5281276-68cb-4973-abb2-503841048d55"
+    },
+    {
+      "claim_id": "2419ffd6-7bef-4bd2-8c81-c41b93799ad6",
+      "result_id": "a5281276-68cb-4973-abb2-503841048d55"
+    },
+    {
+      "claim_id": "605cdb89-63c4-4258-9f0f-6d79794a5dd6",
+      "result_id": "18aa5c6d-3eef-4428-a027-41dde945e123"
+    },
+    {
+      "claim_id": "e69c8aba-703d-4e18-8aab-0714a510bd3f",
+      "result_id": "18aa5c6d-3eef-4428-a027-41dde945e123"
+    },
+    {
+      "claim_id": "49bed546-c75f-4c54-9eea-b0e2082102f0",
+      "result_id": "18aa5c6d-3eef-4428-a027-41dde945e123"
+    },
+    {
+      "claim_id": "6e9e4b93-8133-4a91-8001-41c32bccc3f7",
+      "result_id": "b7f6d7e2-0ad5-41d2-b5cc-024d43a3c557"
+    },
+    {
+      "claim_id": "dab31c5d-cf55-44fe-92d6-4e5f8527d3a9",
+      "result_id": "b7f6d7e2-0ad5-41d2-b5cc-024d43a3c557"
+    },
+    {
+      "claim_id": "7be18d1a-a450-41df-a792-011d68a2081e",
+      "result_id": "b7f6d7e2-0ad5-41d2-b5cc-024d43a3c557"
+    },
+    {
+      "claim_id": "cc6b6e09-20e0-42de-80d9-fb45789953da",
+      "result_id": "0d761788-f648-4f60-bf3d-0ab433596eae"
+    },
+    {
+      "claim_id": "12ddbab9-ead0-4b35-afad-81d851718495",
+      "result_id": "0d761788-f648-4f60-bf3d-0ab433596eae"
+    },
+    {
+      "claim_id": "051b9ae6-e17a-4619-ab13-3887ce7f8acd",
+      "result_id": "0d761788-f648-4f60-bf3d-0ab433596eae"
+    },
+    {
+      "claim_id": "7b4cd20c-65ce-4697-992f-f2dce62a5028",
+      "result_id": "0d761788-f648-4f60-bf3d-0ab433596eae"
+    },
+    {
+      "claim_id": "27348d18-f450-4bc4-8cc7-b93cb60c21ea",
+      "result_id": "0d761788-f648-4f60-bf3d-0ab433596eae"
+    },
+    {
+      "claim_id": "b0e56944-4cea-43f1-8f21-839adcc697e1",
+      "result_id": "0d761788-f648-4f60-bf3d-0ab433596eae"
+    },
+    {
+      "claim_id": "0aa8ffdf-bc9c-449f-a09a-6eb4c489f9d8",
+      "result_id": "0d761788-f648-4f60-bf3d-0ab433596eae"
+    }
+  ],
+  "comparisons": []
+}

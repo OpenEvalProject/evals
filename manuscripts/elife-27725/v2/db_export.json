@@ -1,0 +1,2051 @@
+{
+  "submission": {
+    "id": "de530ed1-0425-4a30-aeb1-8add5e039db3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:48:37.492859Z",
+    "updated_at": "2025-12-01T20:48:37.492859Z"
+  },
+  "content": [
+    {
+      "id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "submission_id": "de530ed1-0425-4a30-aeb1-8add5e039db3",
+      "content_type": "manuscript",
+      "content_text": "# The readability of scientific texts is decreasing over time\n\n## Authors\n\n- Pontus Plav\u00e9n-Sigray<sup>1</sup>\n- Granville James Matheson<sup>1</sup>\n- Bj\u00f6rn Christian Schiffler<sup>1</sup> ([ORCID: 0000-0003-2347-4965](https://orcid.org/0000-0003-2347-4965))\n- William Hedley Thompson<sup>1</sup> ([ORCID: 0000-0002-0533-6035](https://orcid.org/0000-0002-0533-6035)) \u2020\n\n### Affiliations\n\n1. Department of Clinical Neuroscience Karolinska Institutet Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nClarity and accuracy of reporting are fundamental to the scientific process. Readability formulas can estimate how difficult a text is to read. Here, in a corpus consisting of 709,577 abstracts published between 1881 and 2015 from 123 scientific journals, we show that the readability of science is steadily decreasing. Our analyses show that this trend is indicative of a growing use of general scientific jargon. These results are concerning for scientists and for the wider public, as they impact both the reproducibility and accessibility of research findings.\n\n## Introduction\n\nReporting science clearly and accurately is a fundamental part of the scientific process, facilitating both the dissemination of knowledge and the reproducibility of results. The clarity of written language can be quantified using readability formulas, which estimate how understandable written texts are (Flesch, 1948; Kincaid et al., 1975; Chall and Dale, 1995; Danielson, 1987; DuBay, 2004; \u0160tajner et al., 2012). Texts written at different times can vary in their readability: trends towards simpler language have been observed in US presidential speeches (Lim, 2008), novels (Danielson et al., 1992; Jatowt and Tanaka, 2012) and news articles (Stevenson, 1964). There are studies that have investigated linguistic trends within the scientific literature. One study showed an increase in positive sentiment (Vinkers et al., 2015), finding that positive words such as 'novel' have increased dramatically in scientific texts since the 1970s. A tentative increase in complexity has been reported in scientific texts in a limited dataset (Hayes, 1992), but the extent of this phenomenon and any underlying reasons for such a trend remain unknown.\n\nTo investigate trends in scientific readability over time, we downloaded 709,577 article abstracts from PubMed, from 123 highly cited journals selected from 12 fields of research (Figure 1A\u2013C). These journals cover general, biomedical and life sciences. This journal list included, among others, Nature, Science, NEJM, The Lancet, PNAS and JAMA (see Materials\u00a0and\u00a0methods and Supplementary file 1) and the publication dates ranged from 1881 to 2015. We quantified the reading level of each abstract using two established measures of readability: the Flesch Reading Ease (FRE; Flesch, 1948; Kincaid et al., 1975)\u00a0and the New Dale-Chall Readability Formula (NDC; Chall and Dale, 1995). The FRE is calculated using the number of syllables per word and the number of words in each sentence. The NDC is calculated using the number of words in each sentence and the percentage of 'difficult words'. Difficult words are defined as those words which do not belong to a predefined list of common words (see Materials\u00a0and\u00a0methods). Lower readability is indicated by a low FRE score or a high NDC score (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic depicting the major steps in the abstract extraction and analysis pipeline. Readability formulas are provided in full in Materials\u00a0and\u00a0methods. (B) Number of articles in the corpus published in each year. The color scale is logarithmic. (C) Starting year of each journal within the corpus. This corresponds to the first article in PubMed with an abstract. The color scale is linear. Source data for this figure is available in Figure 2\u2014source data 1.\n\n## Results\n\nThe primary research question was to examine how the readability of an article's abstract relates\u00a0to\u00a0its year of publication. We observed a strong decreasing trend of the average yearly FRE (r = -0.93, 95% CI [-0.95,-0.90], p <10-15) and a strong increasing trend of average yearly NDC (r = 0.93, 95% CI [0.91,0.95], p <10 -15) (Figure 2A\u2013E). Next, we examined the relationship between the components of the readability metrics and year of publication. The average number of syllables in each word (FRE component) and the percentage of difficult words (NDC component) showed pronounced increases over years (Figure 2F,G). Sentence length (FRE and NDC component) showed a steady increase with year after 1960 (Figure 2H), the period in which the majority of abstracts were published (Figure 1B). FRE and NDC were correlated with one another (r = -0.72, 95% CI [-0.72,-0.72], p <10-15) (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mean Flesch Reading Ease (FRE) readability for each year. Lower scores indicate less readability. (B) Mean New Dale-Chall (NDC) readability for each year. Higher scores indicate less readability. (C,D) Kernel density estimates displaying the readability (C: FRE, D: NDC) distribution of all abstracts for each year. Color scales are linear and represent relative density of scores within each year. (E) Relationship between FRE and NDC scores across all abstracts, depicted by a two-dimensional kernel density estimate. Axis limits are set to include at least 99% of the data. The color scale is exponential and represents the number of articles at each pixel. (F-H) Kernel density estimates displaying the components of the readability measures (F: syllable to word ratio; G: percentage of difficult words; H: word to sentence ratio) distribution of all abstracts for each year. Color scales are linear and represent relative density of values within each year. For kernel density plots over time (C,D,F,G,H), years with fewer than 10 abstracts are excluded to obtain accurate density estimates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Mean Flesch Reading Ease for each year. (B) Same as A but for New Dale-Chall.\n\nThe readability of individual abstracts was formally evaluated in relation to year of publication using a linear mixed effects model with journal as a random effect for both measures. The fixed effect of year was significantly related to FRE and NDC scores (Table 1). The average yearly trends combined with this statistical model reveal that the complexity of scientific writing is increasing with time. In order to explore whether this trend was consistent across all 12 selected fields, we extracted the slopes (random effects) from the mixed effects models for each journal. This showed that the trend of decreasing readability over time is not specific to any particular field, although there are differences in magnitude between fields (Figure 3). Further, only two journals out of 123 showed clear increases in FRE across time\u00a0(Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig3-v2.jpg)\n\n**Figure 3.:** The random slopes for each journal were extracted from the best fitting linear mixed effect model (M2) and summarized according to which field they belong to (The\u00a0error bars represent SE of the mean\u00a0slope). Since some journals belong to more than one field, some random slopes appear in more than one summary. The trend of decreasing readability is not specific to any one field. (A) Summaries of random slopes for Flesch Reading Ease. (B) Summaries of random slopes for New Dale-Chall.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The random slopes for each journal were extracted from the best fitting linear mixed effect model (M2) and plotted according to rank. The trend of decreasing readability is present in most journals, although a few show an absence of a trend, and fewer still show increasing readability. (A) Journal random slopes for Flesch Reading Ease. (B) Journal random slopes for New Dale-Chall.\n\n**Table 1.**\n Model fits for two different linear mixed effect models examining the relationship between readability scores and year.A null model (M0)\u00a0without year as a predictor is included as a baseline comparison. Lower dAIC and dBIC values indicate better model fit. FRE = Flesch Reading Ease; NDC = New Dale-Chall Readability Formula; M0 = Journal as random effect with varying intercepts; M1 = M0 with an added fixed effect of time; M2 = M1 with varying slopes for the random effect of journal; dAIC = difference in Akaike Information Criterion from the best fitting model (M2); dBIC = difference in Bayesian Information Criterion from the best fitting model (M2); df = Degrees of Freedom calculated using Satterthwaite approximation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Model</th>\n      <th>dAIC</th>\n      <th>dBIC</th>\n      <th>beta</th>\n      <th>CI 95%</th>\n      <th>t</th>\n      <th>df</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">FRE</td>\n      <td>M0</td>\n      <td>16008</td>\n      <td>15974</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>M1</td>\n      <td>5240</td>\n      <td>5217</td>\n      <td>-0.14</td>\n      <td>[-0.15, -0.14]</td>\n      <td>-104.2</td>\n      <td>709543</td>\n      <td>p &lt;10-15</td>\n    </tr>\n    <tr>\n      <td>M2</td>\n      <td>0</td>\n      <td>0</td>\n      <td>-0.19</td>\n      <td>[-0.22, -0.16]</td>\n      <td>-12.7</td>\n      <td>123</td>\n      <td>p &lt;10-15</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">NDC</td>\n      <td>M0</td>\n      <td>28593</td>\n      <td>28559</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>M1</td>\n      <td>4077</td>\n      <td>4054</td>\n      <td>0.014</td>\n      <td>[0.014, 0.014]</td>\n      <td>158.0</td>\n      <td>709559</td>\n      <td>p &lt;10-15</td>\n    </tr>\n    <tr>\n      <td>M2</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0.016</td>\n      <td>[0.015, 0.018]</td>\n      <td>20.5</td>\n      <td>117</td>\n      <td>p &lt;10-15</td>\n    </tr>\n  </tbody>\n</table>\n\nTo verify that the readability of abstracts was representative of the readability of the entire articles, we downloaded full text articles from six additional independent journals from which all articles were available in the PubMed Central Open Access Subset (Figure 4A). Although, as has previously been reported (Dronberger and Kowitz, 1975), abstracts are less readable than the full articles, there was a strong positive relationship between readability of the abstracts and the full texts (FRE: r = 0.60, 95% CI [0.60, 0.60], p\u00a0<10-15; NDC: r = 0.63, 95% CI [0.63, 0.63], p\u00a0<10-15, Figure 4B, Figure 4\u2014figure supplements 1 and 2). This implies that the increasing complexity of scientific writing generalizes to the full texts.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic depicting the major steps in the full text extraction and analysis pipeline. (B) Relationship between Flesch Reading Ease (FRE) scores of abstracts and full texts across the full text corpus, depicted by a two-dimensional kernel density estimate. The color scale is exponential and represents the number of articles at each pixel. Axis limits are set to include at least 99% of the data. For New Dale-Chall (NDC) scores, see Figure 4\u2014figure supplement 1. For each journal separately, see Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Relationship between New Dale-Chall Readability Formula scores of abstracts and full texts across the full text corpus, depicted by a two-dimensional kernel density estimate. Axis limits are set to include at least 99% of the data.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Relationship between both Flesch Reading Ease and New Dale-Chall Readability Formula scores of abstracts and full texts by journal, depicted by a two-dimensional kernel density estimate. Axis limits are set to include at least 99% of the data. Color scales are exponential and represent the number of articles at each pixel. FRE correlations (all p\u00a0<10-15): eLife r = 0.54, 95% CI [0.51, 0.57], PLoS ONE r = 0.61, 95% CI [0.61, 0.61], PLoS Med r = 0.52, 95% CI [0.48, 0.56], PLoS Biol r = 0.49, 95% CI [0.46, 0.52], Genome Biol r = 0.51, 95% CI [0.48, 0.53], BMC Biol r = 0.57, 95% CI [0.52, 0.61]. NDC correlations (all p<10-15): eLife r = 0.56, 95% CI [0.53, 0.59], PLoS ONE r = 0.64, 95% CI [0.64, 0.64], PLoS Med r = 0.56, 95% CI [0.52, 0.60], PLoS Biol r = 0.52, 95% CI [0.49, 0.55], Genome Biol r = 0.44, 95% CI [0.41, 0.47], BMC Biol r = 0.57, 95% CI [0.52, 0.61].\n\nThere could be a number of explanations for the observed trend in scientific readability. We formulated two plausible and testable hypotheses: (1) There is an increase in the number of co-authors over time (Figure 5A) (see also (Epstein, 1993; Drenth, 1998). If the number of co-authors correlates with readability, this underlies the observed effect (i.e. a case of 'too many cooks spoil the broth'). (2) An increase in a general scientific jargon is leading to a vocabulary which is almost exclusively used by scientists and less readable in general (i.e. a 'science-ese').\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig5-v2.jpg)\n\n**Figure 5.:** (A) Proportion of number of authors per year for all articles in the abstract corpus.\u00a0(B) Distributions of Flesch Reading Ease (FRE) scores for different numbers of authors (1-10). For New Dale-Chall (NDC), see Figure 5\u2014figure supplement 1A\u00a0(C) Mean FRE score for each year for different numbers of authors (1-10). For visualization purposes, bins with fewer than 10 abstracts are excluded. For NDC, see Figure 5\u2014figure supplement 1B. Source data for this figure is available in Figure 2\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Distributions of New Dale-Chall Readability Formula scores for different numbers of authors. (B) Mean New Dale-Chall Readability Formula score for each year for different numbers of authors.\n\nTo test the first hypothesis, we divided the data by the number of authors. More authors were associated with decreased readability (Figure 5B, Figure 5\u2014figure supplement 1A). However, we observed the same trend of decreasing readability across years regardless of the number of authors (Figure 5C, Figure 5\u2014figure supplement 1B). When we included the number of authors as a predictor in the linear mixed effects model, it was significantly related to readability, while the fixed effect of year remained significant (Table 2). We can therefore reject the hypothesis that the increase in the number of authors on scientific articles is responsible for the observed trend, although abstract readability does decrease with more authors.\n\n**Table 2.**\n Linear mixed effect models predicting readability scores by year and number of authors with journals as random effect.FRE = Flesch Reading Ease; NDC = New Dale-Chall Readability Formula; df = Degrees of Freedom calculated using Satterthwaite approximation. $*$ signifies that abstracts with only 1 to 10 authors are included in the model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Subset</th>\n      <th>n</th>\n      <th>Random Effect</th>\n      <th>beta</th>\n      <th>CI 95%</th>\n      <th>t</th>\n      <th>df</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">FRE</td>\n      <td rowspan=\"2\">Yes*</td>\n      <td rowspan=\"2\">652357</td>\n      <td>Year</td>\n      <td>-0.17</td>\n      <td>[-0.19, -0.14]</td>\n      <td>-11.3</td>\n      <td>122</td>\n      <td>p&lt;10-15</td>\n    </tr>\n    <tr>\n      <td>Authors</td>\n      <td>-0.24</td>\n      <td>[-0.26, -0.23]</td>\n      <td>-30.0</td>\n      <td>651832</td>\n      <td>p &lt;10-15</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">No</td>\n      <td rowspan=\"2\">707250</td>\n      <td>Year</td>\n      <td>-0.18</td>\n      <td>[-0.21, -0.15]</td>\n      <td>-12.3</td>\n      <td>123</td>\n      <td>p &lt;10-15</td>\n    </tr>\n    <tr>\n      <td>Authors</td>\n      <td>-0.07</td>\n      <td>[-0.08, -0.06]</td>\n      <td>-23.5</td>\n      <td>704922</td>\n      <td>p&lt;10-15</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">NDC</td>\n      <td rowspan=\"2\">Yes*</td>\n      <td rowspan=\"2\">652357</td>\n      <td>Year</td>\n      <td>0.014</td>\n      <td>[0.012, 0.015]</td>\n      <td>16.5</td>\n      <td>119</td>\n      <td>p&lt;10-15</td>\n    </tr>\n    <tr>\n      <td>Authors</td>\n      <td>0.033</td>\n      <td>[0.032, 0.034]</td>\n      <td>63.6</td>\n      <td>651516</td>\n      <td>p &lt;10-15</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">No</td>\n      <td rowspan=\"2\">707250</td>\n      <td>Year</td>\n      <td>0.016</td>\n      <td>[0.014, 0.017]</td>\n      <td>19.6</td>\n      <td>118</td>\n      <td>p &lt;10-15</td>\n    </tr>\n    <tr>\n      <td>Authors</td>\n      <td>0.008</td>\n      <td>[0.007, 0.008]</td>\n      <td>40.3</td>\n      <td>701014</td>\n      <td>p &lt;10-15</td>\n    </tr>\n  </tbody>\n</table>\n\nTo test the second hypothesis, we constructed a measure for in-group scientific vocabulary. We selected the 2,949 most common words which were not included in the NDC common word list from 12,000 abstracts sampled at random (see Materials\u00a0and\u00a0methods for procedure). This is analogous to a 'science-specific common word list'. This list also includes topics which have increased over time (e.g. 'gene') and subject-specific words (e.g. 'tumor'), which are not indicative of an in-group scientific vocabulary. We removed such words to create a general scientific jargon list (2,138 words; see Materials\u00a0and\u00a0methods and Supplementary file 2). While the percentage of common words from the NDC common word list decreased with year (r = \u22120.93, 95% CI [-0.93, -0.93], p\u00a0<10-15, Figure 6A), there was an increase in the percentage of science-specific common words (r = 0.90, 95% CI [0.90, 0.91], p\u00a0<10-15) and general scientific jargon (r = 0.96, 95% CI [0.95, 0.96], p\u00a0<10-15) (Figure 6A). Twelve general science jargon words are presented in Figure 6B. While one word ('appears') decreased with time, all the remaining examples show sharp increases over time. Taken together, this provides evidence in favor of the hypothesis that there is an increase in general scientific jargon which partially accounts for the decreasing readability.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/27725/elife-27725-fig6-v2.jpg)\n\n**Figure 6.:** (A) Mean percentage of words in abstracts per year included in three different lists: science-specific common words (green, 2,949 words), general scientific jargon (blue, 2,138 words) and NDC common words (red, 2,949 words). (B) Example general science jargon words taken from the general scientific jargon list. Mean percentage of each word\u2019s frequency in abstracts per year is shown.\n\n## Discussion\n\nFrom analyzing over 700,000 abstracts in 123 journals from the biomedical and life sciences, as well as general science journals, we have shown a steady decrease of readability over time in the scientific literature. It is important to put the magnitude of these results in context. A FRE score of 100 is designed to reflect the reading level of a 10-\u00a0to\u00a011-year old. A score between 0 and 30 is considered understandable by college graduates (Flesch, 1948; Kincaid et al., 1975). In 1960, 14% of the texts in our corpus had a FRE below 0. In 2015, this number had risen to 22%. In other words, more than a fifth of scientific abstracts now have a readability considered beyond college graduate level English. However, the absolute readability scores should be interpreted with some caution: scores can vary due to different media (e.g.\u00a0comics versus news articles; \u0160tajner et al., 2012) and education level thresholds can be imprecise (Stokes, 1978). We then validated abstract readability against full text readability, demonstrating that it is a suitable approximation for comparing main texts.\n\nWe investigated two possible reasons why this trend has occurred. First, we found that readability of abstracts correlates with the number of co-authors, but this failed to fully account for the trend through time. Second, we showed that there is an increase in general scientific jargon over years. These general science jargon words should be interpreted as words which scientists frequently use in scientific texts, and not as subject specific jargon. This finding is indicative of a progressively increasing in-group scientific language ('science-ese').\n\nAn alternative explanation for the main finding is that the cumulative growth of scientific knowledge makes an increasingly complex language necessary. This cannot be directly tested, but if this were to fully explain the trend, we would expect a greater diversity of vocabulary as science grows more specialized. While accounting for the original finding of the increase in difficult words and of syllable count, this would not explain the increase of general scientific jargon words (e.g. 'furthermore' or 'novel', Figure 6B). Thus, this possible explanation cannot fully account for our findings.\n\nLower readability implies less accessibility, particularly for non-specialists, such as journalists, policy-makers and the wider public. Scientific journalism offers a key role in communicating science to the wider public (Bubela et al., 2009) and scientific credibility can sometimes suffer when reported by journalists (Hinnant and Len-R\u00edos, 2009). Considering this, decreasing readability cannot be a positive development for efforts\u00a0to\u00a0accurately communicate\u00a0science to non-specialists. Further, amidst concerns that modern societies are becoming less stringent with actual truths, replaced with true-sounding 'post-facts' (Manjoo, 2011; Nordenstedt and Rosling, 2016) science should be advancing our most accurate knowledge. One way to achieve this is for science to maximize its accessibility to non-specialists.\n\nLower readability is also a problem for specialists (Hartley, 1994; Hartley and Benjamin, 1998; Hartley, 2003). This was explicitly shown by Hartley (1994) who demonstrated that rewriting scientific abstracts, to improve their readability, increased academics\u2019 ability to comprehend them. While science is complex, and some jargon is unavoidable (Knight, 2003), this does not justify the continuing trend that we have shown. It is also worth considering the importance of comprehensibility of scientific texts in light of the recent controversy regarding the reproducibility of science (Prinz et al., 2011; McNutt, 2014; Begley and Ioannidis, 2015; Nosek et al., 2015; Camerer et al., 2016). Reproducibility requires that findings can be verified independently. To achieve this, reporting of methods and results must be sufficiently understandable.\n\nReadability formulas are not without their limitations. They provide an estimate of a text\u2019s readability and should not be interpreted as a categorical measure of how well a text will be understood. For example, readability can be affected by text size, line spacing, the use of headers, as well as by the use of visual aids such as tables or graphs, none of which are captured by readability formulas (Hartley, 2013; Badarudeen and Sabharwal, 2010). Many semantic properties of texts are overlooked, including the complexity of ideas, the rhetorical structure and the overall coherence of the text (Bruce et al., 1981; Danielson, 1987; Zamanian and Heydari, 2012). Changing a text solely to improve readability scores does not automatically make a text more understandable (Duffy and Kabance, 1982; Redish, 2000).\n\nDespite the limitations of readability formulas, our study shows that recent scientific texts are, on average, less readable than older scientific texts. This trend was not specific to any one field, even though the size of this association varied across fields. Some fields also had a steeper decline in NDC scores, while less of a decline in FRE scores, and vice versa (Figure 3). Further research should explore possible reasons for these differences, as it may give clues on how to improve readability. For example, the adoption of structured abstracts which are known to assist readability (Hartley and Benjamin, 1998; Hartley, 2003) might lead to a less steep decline for some fields.\n\nWhat more can be done to reverse this trend? The emerging field of science communication deals with ways science can effectively communicate ideas to a wider audience (Treise and Weigold, 2002; Nielsen, 2013; Fischhoff, 2013). One suggestion from this field is to create accessible 'lay summaries', which have been implemented by some journals (Kuehne and Olden, 2015). Others have noted that scientists are increasing their direct communication with the general public through social media (Peters et al., 2014), and this trend could be encouraged. However, while these two suggestions may increase accessibility of scientific results, neither will reverse the readability trend of scientific texts. Another proposal is to make scientific communication a necessary part of undergraduate and graduate education (Brownell et al., 2013).\n\nScientists themselves can estimate their own readability in most word processing software. Further, while some journals aim for high readability, perhaps a more thorough review of article readability should be carried out by journals in the review process. Finally, in an era of data metrics, it is possible to assess a scientist\u2019s average readability, analogous to the h-index for citations (Hirsch, 2005). Such an 'r-index' could be considered an asset for those scientists who emphasize clarity in their writing.\n\n## Materials and methods\n\n### Journal selection\n\nWe aimed to obtain journals from which articles are highly cited from a representative selection of the biomedical and life sciences, as well as from journals which cover all fields of science, which were indexed on PubMed. Using the Thomson Reuters Research Front Maps (http://archive.sciencewatch.com/dr/rfm/) and the Thomson Reuters Journal Citation Reports, we selected 12 fields:\n\n'Multidisciplinary' accounts for journals which publish work from multiple fields, but which did not fit into any one category. 'Top (all fields)' refers to the journals which are most highly cited across all fields, i.e. which have the highest impact factor from the 2014 Thomson Reuters Journal Citation Reports. The 'Social Sciences, general' field within the biomedical and life sciences includes journals from the subfields of 'Health Care Sciences & Services' and 'Primary Health Care'. Journals were semi-automatically selected by querying the PubMed API using the R package RISmed (Kovalchik, 2016) according to the following criteria:\n\nFrom each of 11 of the fields, the 12 most highly cited journals were selected. The final field (Multidisciplinary) only contained six journals, as no more journals could be identified which met all inclusion criteria. Some journals exist in multiple fields, thus the number of journals (123) is below the possible maximum of 138 journals. See Supplementary file 1 for the journals and their field mappings.\n\nArticles were downloaded from PubMed between April 22, 2016 and May 15, 2016, and on June 12, 2017. The later download date was to correct for originally having only included 11 journals in one of the fields (when the data was first downloaded). The text of the abstract, journal name, title of article, PubMed IDs and publication year were extracted. Throughout the article, we only used data up to and including the year 2015.\n\n### Language preprocessing\n\nAbstracts downloaded from PubMed were preprocessed so that the words and syllables could be counted. TreeTagger (version 3.2 (Linux); (Schmid, 1994) was used to identify sentence endings and to remove non-words (e.g. numbers) and any remaining punctuation from the abstracts. Scientific texts contain numerous phrasings which TreeTagger did not parse adequately. We did three rounds of quality control where at least 200 preprocessed articles, sampled at random, were compared with their original texts. After identifying irregularities with the TreeTagger performance, regular expression heuristics were created to prepare the abstracts prior to using the TreeTagger algorithm. After the three rounds of quality control, the stripped abstracts contained only words with at least one syllable and periods to end sentences. Sentences containing only one word were ignored.\n\nThe heuristic rules after quality control rounds included: removing all abbreviations, adding spaces after periods when missing, adding a final period at the end of the abstract when missing, removing numbers that ended sentences, identifying sentences that end with 'etc.' and keeping the period, removing all single letter words except 'a', 'A' and 'I', removing nucleic acid sequences, replacing hyphens with a space, removing periods arising from the use of binomial nomenclature, and removing copyright and funding information. All preprocessing scripts are available at https://github.com/wiheto/readabilityinscience (Plav\u00e9n-Sigray et al., 2017; copy archived at https://github.com/elifesciences-publications/readabilityinscience). Examples of texts before and after preprocessing are presented in Supplementary file 3. We confirmed that the observed trends were not induced by the preprocessing steps by running the readability analysis presented in Figure 1D,E using the raw data (Figure 2\u2014figure supplement 1).\n\n### Language and readability metrics\n\nTwo well-established readability measures were used throughout the article: the Flesch Reading Ease (FRE) (Flesch, 1948; Kincaid et al., 1975) and the New Dale-Chall Readability Formula (NDC) (Chall and Dale, 1995). These measures use different language metrics: syllable count, sentence count, word count and percentage of difficult words. Two different readability metrics were chosen to ensure that the results were not induced by a single method. FRE was chosen due to its popularity and consistency with other readability metrics (Didegah and Thelwall, 2013), and because it has previously been applied to trends\u00a0over\u00a0time (Lim, 2008; Danielson et al., 1992; Jatowt and Tanaka, 2012; Stevenson, 1964). NDC was chosen since it is both well established and compares well with more recent methods for analyzing readability (Benjamin, 2012).\n\nCounting the syllables of a word was performed in a three step fashion. First, the word was required to have a vowel or a 'y' in it. Second, the word was queried against a dictionary that contained specified syllable counts using the natural language toolkit (NLTK) (version 3.2.2;\u00a0Bird et al., 2009). If there were multiple possible syllable counts for a given word, the longer alternative was chosen. Third, if the word was not in the dictionary, the number of vowels (excluding diphthongs) was counted. If a word ended in a 'y', this was counted as an additional syllable in this third step.\n\nWord count was calculated by counting all the words in the abstract that had at least one syllable. The number of sentences was calculated by counting the number of periods in the preprocessed abstracts.\n\nThe percentage of difficult words originated from (Chall and Dale, 1995), defined as words which do not belong to a list of common words. The 'NDC common word' list used here was taken from the NDC implementation in the textstat python package (https://github.com/shivam5992/textstat) which included 2,949 words (Supplementary file 2). This list excludes some words from the original NDC common word list (such as abbreviations, e.g. 'A.M.'; and double words, e.g. 'all right').\n\nFRE uses both the average number of syllables per word and the average number of words per sentence to estimate the reading level.\n\n$$\nFRE=206.835\u22121.015(\\frac{words}{sentences})\u221284.6(\\frac{syllables}{words})\n$$\n\nwhere 'words', 'sentences' and 'syllables' entail the number of each in the text, respectively.\n\nNDC scores are calculated by using the percentage of difficult words and the average sentence length of abstracts. While the NDC was originally calculated on 100 words due to computational limitations, we used the entire text.\n\n$$\nNDC={0.1579(\\frac{difficult}{words}\\times100)+0.0496(\\frac{words}{sentences})0.1579(\\frac{difficult}{words}\\times100)+0.0496(\\frac{words}{sentences})+3.6365if(\\frac{difficult}{words})>5if(\\frac{difficult}{words})\\leq5\n$$\n\nwhere 'words', and 'sentences' entail the number of each in the text, respectively. 'Difficult' is the number of words that are not present in the NDC common word list.\n\nWe have used two well-established readability formulas in our analysis. The application of readability formulas has previously been questioned (Duffy and Kabance, 1982; Redish and Selzer, 1985; Zamanian and Heydari, 2012) and modern alternatives have been proposed (see (Benjamin, 2012). However, NDC has been shown to perform comparably with these more modern methods (Benjamin, 2012).\n\n### Science-specific common word and general science jargon lists\n\nWe created two common word lists using\u00a0the abstracts in our dataset:\n\nScience-specific common words: Words frequently used by scientists which are not part of the NDC common word list. This contains units of measurement (e.g. 'mol'), subject-specific words (e.g. 'electrophoresis'), general science jargon words (e.g. 'moreover') and some proper nouns (e.g. 'european').\n\nGeneral science jargon: A subset of science-specific common words. These are non-subject-specific words that are frequently used by scientists. This list contains words with a variety of different linguistic functions (e.g. 'endogenous', 'contribute' and 'moreover'). General science jargon can be considered the basic vocabulary of a 'science-ese'. Science-ese is analogous to legalese, which is the general technical language used by legal professionals.\n\nTo construct the science-specific common word list, 12,000 articles were selected to identify words frequently used in the scientific literature. In order to avoid any recency bias, 2,000 articles were randomly selected from six different decades (starting at the 1960s). From these articles, the frequency of all words was calculated. After excluding words in the NDC common word list, the 2,949 most frequent words were selected. The number 2,949 was selected to be the same length as the NDC common word list.\n\nTo validate that this list is identifying a general scientific terminology, we created a verification list by performing the same steps as above on an additional independent set of 12,000 articles. Of the 2,949 words in the science-specific common word list, 90.95% of the words were present in the verification list (see Supplementary file 2 for both word lists). The 24,000 articles used in the derivation and verification of the lists were excluded from all further analysis.\n\nThe general scientific jargon list contained 2,138 words. It was created by manually filtering the science-specific common word list. All four co-authors went through the science-specific common word list and rated each word. The following guidelines were formulated to exclude words from being classed as general science jargon: (1) abbreviations, roman numerals, or units that survived preprocessing (e.g. 'mol'). (2) Field-specific words (e.g. 'hepatitis'). (3) Words whose frequency may be changing through time due to major discoveries (e.g. 'gene'). (4) Nouns and adjectives that refer to non-science objects and could be placed in a general easy word list (e.g. 'mouse', 'green', 'September'). Remaining words were classed as possible general science jargon word. After comparing each co-authors\u2019 ratings, the final list was created. The co-authors performed the ratings to identify jargon words independently. However, half way through the ratings there was a meeting to control that the guidelines were being performed in a similar way. In this meeting, the authors discussed examples from their ratings. Due to this, the ratings can not be classed as completely independent.\n\n### Comparison of full texts vs abstracts\n\nTo compare the readability of full texts and abstracts, we chose six journals from the PubMed Central Open Access Subset for which all full texts of articles were available under a Creative Commons or similar license. The journals were BMC Biology, eLife, Genome Biology, PLoS Biology, PLoS Medicine and PLoS ONE. None of them were a part of the original journal list which was used in the main analysis. They were selected as they all cover biomedicine and life sciences and as open access journals, we were legally allowed to bulk-download both abstracts and full texts. However, none of the included journals have existed for a long period of time (Supplementary file 4). As such, they cannot be said to represent the same time range covered by the 123 journals used in the main analysis. Custom scripts were written to extract the full text in the textfiles downloaded from each respective journal. In total, 143,957 articles were included in the full text analysis. Both article abstracts and full texts were preprocessed according to the procedure outlined above and readability measures were calculated.\n\n### Statistics\n\nAll statistical modeling\u00a0was performed in R version 3.3.2.\n\nWe evaluated the relationship between the readability of single abstracts and year of publication separately for FRE and NDC scores. The data can be viewed as hierarchically structured since abstracts belonging to different journals may differ in key aspects. In addition, journals span over different ranges of years (Figure 1C and Supplementary file 1). In order to account for this structure, we performed linear mixed effect modeling using the R-packages lme4 version 1.1-12 (Bates et al., 2014), and lmerTest version 2.0-33 (Kuznetsova et al., 2015) with maximum likelihood estimation. We compared different models of increasing complexity. The included models were as following: (M0) a null model in which readability score was predicted only by journal as random effect with varying intercepts; (M1) the same as M0, but with an added fixed effect of time; and (M2) the same as M1, but with varying slopes for the random effect of journal (Table 1). We selected the best fitting model as determined by the Akaike Information Criterion and the Bayesian Information Criterion.\n\nIn order to test that the trend was not explained by the increasing number of authors with year, we specified an additional model. It was identical to M2 above, but also included the number of authors as a second fixed effect. Some articles (n = 2,327) lacked author information, and were excluded from the analysis. This model was performed using two sets of the data: i) a subset including only articles with one to ten authors (n = 652,357), ii) a full dataset consisting of all articles with complete author information (n = 707,250) (Table 2). The motivation for (i) was that abstracts with many authors may bias the results.\n",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "f4f664fb-5f24-49e6-8ee7-2ebcf752c930",
+      "submission_id": "de530ed1-0425-4a30-aeb1-8add5e039db3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stuart King, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27725.028](https://doi.org/10.7554/eLife.27725.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The readability of scientific texts is decreasing over time\" for consideration as a Feature Article by eLife. Your article has been reviewed by two peer reviewers, Ralf Barkemeyer (Reviewer #1) and Christiaan Vinkers (Reviewer #2), and an Associate Features Editor, Stuart King.\n\nThe reviewers have discussed the reviews with one another and the Associate Features Editor has drafted this decision to help you prepare a revised submission. We hope you will be able to submit the revised version within two months.\n\nSummary\n\nThis manuscript \u2013 which first appeared as a preprint on bioRxiv \u2013 reports a decline in the readability of scientific texts meaning that, on average, papers published in recent decades are harder to read than those from over a century ago. Two possible explanations are tested: an increase in the number of authors per manuscript, and the wider use of uncommon language (referred to as \"general scientific jargon\"). All three reviewers agree that the manuscript is timely and relevant, and that it has the potential to make a clear contribution to the existing literature. The research design looks sound, and mainly builds on two well-established measures of readability. The analyses appear to be executed in a rigorous and transparent manner, and the authors generate a set of straightforward and intuitive but highly relevant findings. The reviewers hope that this manuscript will raise awareness, and encourage scientists and publishers to take readability into account when authoring or reviewing scientific papers.\n\nNevertheless, there are some issues that need to be addressed, and several revisions that would strengthen the manuscript. Most can be handled by editing the text to provide more details or clarity, or by improving the presentation of the figures. One will require a more fine-grained analysis of the data that is already available.\n\nEssential Revisions:\n\n1. Both of the readability formulas reported in the Materials and methods section contain mistakes. The constant in the Flesch Reading Ease (FRE) formula is incorrectly given as \"206.385\" instead of \"206.835\". The New Dale-Chall (NDC) Readability Formula is repeatedly missing the \"\u00d7 100\" that converts the fraction of \"difficult words\" to a percentage. The inequality symbols (i.e. > and {less than or equal to}) have also been transposed in the NDC formula meaning that, if followed as written, the scores would not be adjusted properly. From the data provided, it is clear that the correct NDC formula was used for the analyses. But we cannot check the FRE calculations because the \"syllable counts\" are missing from the data provided (see point 4). Please confirm that the correct FRE formula was used and fix the mistakes described above.\n\n2. The readability measures chosen appear plausible and test two complementary dimensions of readability. However, please provide some more justification as to why these two measures were chosen and not others.\n\n3. Please elaborate on the limitations of readability metrics in general, and those linked to text pre-processing. For example, visual aids are not captured even though they might improve comprehension; or the fact that FRE does not take into account parentheses and other ways of structuring text (which might also aid readability).\n\n4. The authors have agreed to make the data and scripts openly accessible, which is applaudable. However, the data provided with the full submission is missing the syllable counts. Please provide all the data needed to recreate the figures in this version of the manuscript. This also includes the analyses related to the full texts, number of authors, and \"general scientific jargon\". Please see the section on \"Source Data Files\" in eLife's author guide for more details.\n\n5. The current Figures 1 and 3are packed with data and somewhat difficult to follow. Please divide them each into two separate figures. For Figure 1, separate the summary graphics from the panels showing the main trends. For Figure 3, the data related to number of authors should be separated from that related to \"general scientific jargon\".\n\n6. The phrase \"high-impact journals\" is used without explanation. The specific meaning of the word \"impact\" in this context is unclear and could arguably be considered jargon. Please explain this phrase in the text or replace with a more accurate description like \"highly cited journals\".\n\n7. Please elaborate on the criteria used to select the \"six representative\" open-access journals for the full-text analysis. Please also provide information equivalent to that provided for the journals in the abstract-only analysis.\n\n8. As it stands now, the analysis remains at a very high level. Digging deeper into the existing data might reveal avenues to pursue to address the poor readability of scientific texts. Please report and discuss the trends in readability (or the average values) for the different journals and/or fields of research. For example, showing that articles in some journals are more readable than others might encourage someone to trace these differences back to specific editorial policies (word limits etc.) that could then be adopted more widely.\n\n9. The literature on science communication is extensive, covering both the underlying communication process as well as its implications. Please strengthen the manuscript's links to this literature; for example, by discussing to what extent is it necessary that non-specialists can read and understand scientific articles, given that mainstream media and other new outlets have been created to specifically focus on non-specialist audiences in this context. While the reviewers likely agree with the authors' line of argument, some more contextualization and justification would be helpful here.\n\n10. Please integrate the \"Supplementary methods\" into the \"Materials and methods\" section, to avoid the need to jump back and forth in the text. The sections on selecting journal fields and identifying \"candidate jargon\" would also benefit from being critically edited to improve clarity.\n\n11. On a related point, please define classifications like \"science-specific common words\" and \"candidate general science jargon\" more clearly, and then consistently use them throughout the text. As currently written, some readers would not recognize uncommon/formal words - such as \"novel\", \"robust\", \"moreover\" and \"therefore\" - as scientific jargon. It would also be helpful if the discussion on this topic were expanded.\n\n12. The FRE score of 48.2 for the submitted manuscript is respectable. However, please look for further opportunities to make the article easier to read, including ways that would not necessarily get picked up by the readability formulas referenced in the article. For example, while most English speakers are likely to know the verb \"understand\", fewer will be familiar with the adjective \"understandable\", and fewer still the noun \"understandability\" (which is used in the manuscript's abstract). Please consider using fewer nouns and more verbs throughout the abstract, main text and figure captions (e.g. \"Scientific abstracts have become harder to read over time\" rather than \"Readability of scientific abstracts decreases over time\".)\n",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "26bd68ca-54d3-47f9-982e-3b64a1490123",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C1",
+      "claim": "The corpus consists of 709,577 abstracts published between 1881 and 2015 from 123 scientific journals.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in a corpus consisting of 709,577 abstracts published between 1881 and 2015 from 123 scientific journals, we show that the readability of science is steadily decreasing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the size and composition of the corpus analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "bc6166a2-0ab7-482e-b877-f8d67ecae147",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C2",
+      "claim": "The readability of science is steadily decreasing over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in a corpus consisting of 709,577 abstracts published between 1881 and 2015 from 123 scientific journals, we show that the readability of science is steadily decreasing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding supported by the data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "0cb8a351-0baa-45e5-98ee-cfb694fe52dc",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C3",
+      "claim": "The decreasing readability trend is indicative of a growing use of general scientific jargon.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses show that this trend is indicative of a growing use of general scientific jargon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the data analysis of word usage patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "fc8ab6ba-f64a-4703-9c10-46ec01f1be69",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C4",
+      "claim": "Decreasing readability impacts both the reproducibility and accessibility of research findings.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are concerning for scientists and for the wider public, as they impact both the reproducibility and accessibility of research findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "c66e1722-a27e-4bb6-9b02-1d392aea79f0",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C5",
+      "claim": "Reporting science clearly and accurately is a fundamental part of the scientific process.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporting science clearly and accurately is a fundamental part of the scientific process, facilitating both the dissemination of knowledge and the reproducibility of results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific consensus about scientific communication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "e921b2b3-10b4-4226-a5fb-758870be06d5",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C6",
+      "claim": "Readability formulas can estimate how difficult a text is to read.",
+      "claim_type": "EXPLICIT",
+      "source": "The clarity of written language can be quantified using readability formulas, which estimate how understandable written texts are (Flesch, 1948; Kincaid et al., 1975; Chall and Dale, 1995; Danielson, 1987; DuBay, 2004; \u0160tajner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "33264d40-7176-490d-adff-8308f81591ae",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C7",
+      "claim": "Trends towards simpler language have been observed in US presidential speeches.",
+      "claim_type": "EXPLICIT",
+      "source": "Texts written at different times can vary in their readability: trends towards simpler language have been observed in US presidential speeches (Lim, 2008), novels (Danielson et al., 1992; Jatowt and Tanaka, 2012) and news articles (Stevenson, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lim, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "c6fb5d8d-dfcd-4daf-9bc4-02cf3191deb0",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C8",
+      "claim": "Trends towards simpler language have been observed in novels.",
+      "claim_type": "EXPLICIT",
+      "source": "Texts written at different times can vary in their readability: trends towards simpler language have been observed in US presidential speeches (Lim, 2008), novels (Danielson et al., 1992; Jatowt and Tanaka, 2012) and news articles (Stevenson, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Danielson et al., 1992 and Jatowt and Tanaka, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "723ea709-a59c-45de-9dcc-87c2f6c18e0f",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C9",
+      "claim": "Trends towards simpler language have been observed in news articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Texts written at different times can vary in their readability: trends towards simpler language have been observed in US presidential speeches (Lim, 2008), novels (Danielson et al., 1992; Jatowt and Tanaka, 2012) and news articles (Stevenson, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stevenson, 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "0ae9572d-71d1-4756-990d-f55c7d559e1e",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C10",
+      "claim": "There has been an increase in positive sentiment in scientific texts since the 1970s.",
+      "claim_type": "EXPLICIT",
+      "source": "One study showed an increase in positive sentiment (Vinkers et al., 2015), finding that positive words such as 'novel' have increased dramatically in scientific texts since the 1970s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Vinkers et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "4f83a6a4-7c3c-4962-85de-f54b5fd8695a",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C11",
+      "claim": "Positive words such as 'novel' have increased dramatically in scientific texts since the 1970s.",
+      "claim_type": "EXPLICIT",
+      "source": "One study showed an increase in positive sentiment (Vinkers et al., 2015), finding that positive words such as 'novel' have increased dramatically in scientific texts since the 1970s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Vinkers et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "5696cf02-f0a7-41bb-963c-f70fe60817b6",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C12",
+      "claim": "A tentative increase in complexity has been reported in scientific texts in a limited dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "A tentative increase in complexity has been reported in scientific texts in a limited dataset (Hayes, 1992), but the extent of this phenomenon and any underlying reasons for such a trend remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hayes, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "35161f8f-c2ab-4089-a599-bbb50f6c2e8e",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C13",
+      "claim": "The journals in the corpus cover general, biomedical and life sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "These journals cover general, biomedical and life sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the journals included in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "38bc094f-c876-4f6f-9b9c-237fe0cef0d8",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C14",
+      "claim": "The journal list included Nature, Science, NEJM, The Lancet, PNAS and JAMA among others.",
+      "claim_type": "EXPLICIT",
+      "source": "This journal list included, among others, Nature, Science, NEJM, The Lancet, PNAS and JAMA (see Materials and methods and Supplementary file 1) and the publication dates ranged from 1881 to 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific examples of journals included in the corpus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "f2f3bff8-9be3-42a1-81bc-4e9a5cb36d5e",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C15",
+      "claim": "The Flesch Reading Ease (FRE) is calculated using the number of syllables per word and the number of words in each sentence.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRE is calculated using the number of syllables per word and the number of words in each sentence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the FRE readability measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "dbdf26bb-0800-400b-af65-c1acefea3109",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C16",
+      "claim": "The New Dale-Chall Readability Formula (NDC) is calculated using the number of words in each sentence and the percentage of 'difficult words'.",
+      "claim_type": "EXPLICIT",
+      "source": "The NDC is calculated using the number of words in each sentence and the percentage of 'difficult words'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the NDC readability measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "849dfc04-b7b1-430c-8d23-09b9f3cf783b",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C17",
+      "claim": "Difficult words are defined as those words which do not belong to a predefined list of common words.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficult words are defined as those words which do not belong to a predefined list of common words (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines a key term used in the NDC readability measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "438028da-0e79-40fd-a55e-5a7801f20876",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C18",
+      "claim": "Lower readability is indicated by a low FRE score.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower readability is indicated by a low FRE score or a high NDC score (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explains how to interpret the FRE readability measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "d559d6cb-6975-4c7d-bfa2-177fb067ec4e",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C19",
+      "claim": "Lower readability is indicated by a high NDC score.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower readability is indicated by a low FRE score or a high NDC score (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explains how to interpret the NDC readability measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "19ecd81a-3775-4325-bd0e-f5b95ef3f72d",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C20",
+      "claim": "There is a strong decreasing trend of the average yearly FRE (r = -0.93, 95% CI [-0.95,-0.90], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong decreasing trend of the average yearly FRE (r = -0.93, 95% CI [-0.95,-0.90], p <10-15) and a strong increasing trend of average yearly NDC (r = 0.93, 95% CI [0.91,0.95], p <10 -15) (Figure 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "49d562a4-faff-47ce-9545-0cb1b2688c97",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C21",
+      "claim": "There is a strong increasing trend of average yearly NDC (r = 0.93, 95% CI [0.91,0.95], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong decreasing trend of the average yearly FRE (r = -0.93, 95% CI [-0.95,-0.90], p <10-15) and a strong increasing trend of average yearly NDC (r = 0.93, 95% CI [0.91,0.95], p <10 -15) (Figure 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "6ec4c2cc-5680-4b21-8cce-b842660fbf37",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C22",
+      "claim": "The average number of syllables in each word showed pronounced increases over years.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of syllables in each word (FRE component) and the percentage of difficult words (NDC component) showed pronounced increases over years (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8708e2ca-76dd-48cc-9d75-5b659eaa1618",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C23",
+      "claim": "The percentage of difficult words showed pronounced increases over years.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of syllables in each word (FRE component) and the percentage of difficult words (NDC component) showed pronounced increases over years (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8d0eff87-435a-4591-b9a8-6caff873c6fb",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C24",
+      "claim": "Sentence length showed a steady increase with year after 1960.",
+      "claim_type": "EXPLICIT",
+      "source": "Sentence length (FRE and NDC component) showed a steady increase with year after 1960 (Figure 2H), the period in which the majority of abstracts were published (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8c6c3e02-4306-4ed8-8411-e87162006a31",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C25",
+      "claim": "The majority of abstracts were published after 1960.",
+      "claim_type": "EXPLICIT",
+      "source": "Sentence length (FRE and NDC component) showed a steady increase with year after 1960 (Figure 2H), the period in which the majority of abstracts were published (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the distribution of articles shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "9605fc7a-dcc8-43dc-bc28-d3a0ae7b92d2",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C26",
+      "claim": "FRE and NDC were correlated with one another (r = -0.72, 95% CI [-0.72,-0.72], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "FRE and NDC were correlated with one another (r = -0.72, 95% CI [-0.72,-0.72], p <10-15) (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is supported by statistical analysis and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "50ae3d00-8d7d-4e5a-a038-981c080a41ce",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C27",
+      "claim": "The fixed effect of year was significantly related to FRE and NDC scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The fixed effect of year was significantly related to FRE and NDC scores (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the linear mixed effects model results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "cfff88f9-d5e8-46ac-8670-40238de3d031",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C28",
+      "claim": "The complexity of scientific writing is increasing with time.",
+      "claim_type": "EXPLICIT",
+      "source": "The average yearly trends combined with this statistical model reveal that the complexity of scientific writing is increasing with time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined analysis of yearly trends and statistical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "1bb346bc-6ce4-43ac-b496-7cb97d57ac97",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C29",
+      "claim": "The trend of decreasing readability over time is not specific to any particular field.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that the trend of decreasing readability over time is not specific to any particular field, although there are differences in magnitude between fields (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of random slopes across different fields shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "628141ff-117d-4123-b329-196d0ce5e4b7",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C30",
+      "claim": "There are differences in magnitude of the readability trend between fields.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that the trend of decreasing readability over time is not specific to any particular field, although there are differences in magnitude between fields (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of random slopes across different fields shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "cd75b351-a9d2-44f9-be92-9d4e43d8a267",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C31",
+      "claim": "Only two journals out of 123 showed clear increases in FRE across time.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, only two journals out of 123 showed clear increases in FRE across time (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "af4a67e3-5c0f-4e31-9d28-a54d89ffb7ba",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C32",
+      "claim": "Abstracts are less readable than the full articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, as has previously been reported (Dronberger and Kowitz, 1975), abstracts are less readable than the full articles, there was a strong positive relationship between readability of the abstracts and the full texts (FRE: r = 0.60, 95% CI [0.60, 0.60], p <10-15; NDC: r = 0.63, 95% CI [0.63, 0.63], p <10-15, Figure 4B, Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Dronberger and Kowitz, 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "89f75ecc-f4a2-41f7-9137-00dd81d18617",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C33",
+      "claim": "There is a strong positive relationship between readability of abstracts and full texts (FRE: r = 0.60, 95% CI [0.60, 0.60], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "Although, as has previously been reported (Dronberger and Kowitz, 1975), abstracts are less readable than the full articles, there was a strong positive relationship between readability of the abstracts and the full texts (FRE: r = 0.60, 95% CI [0.60, 0.60], p <10-15; NDC: r = 0.63, 95% CI [0.63, 0.63], p <10-15, Figure 4B, Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is supported by statistical analysis of full text data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "fa637cb7-6cb2-42fc-9d43-08a3aa970d21",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C34",
+      "claim": "There is a strong positive relationship between readability of abstracts and full texts (NDC: r = 0.63, 95% CI [0.63, 0.63], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "Although, as has previously been reported (Dronberger and Kowitz, 1975), abstracts are less readable than the full articles, there was a strong positive relationship between readability of the abstracts and the full texts (FRE: r = 0.60, 95% CI [0.60, 0.60], p <10-15; NDC: r = 0.63, 95% CI [0.63, 0.63], p <10-15, Figure 4B, Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is supported by statistical analysis of full text data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "6aee8e19-039c-453a-81c9-f3044d6aa115",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C35",
+      "claim": "The increasing complexity of scientific writing generalizes to the full texts.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the increasing complexity of scientific writing generalizes to the full texts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is drawn from the correlation between abstract and full text readability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "5c5f8721-877e-4a15-8c03-57a344e2321d",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C36",
+      "claim": "There is an increase in the number of co-authors over time.",
+      "claim_type": "EXPLICIT",
+      "source": "There could be a number of explanations for the observed trend in scientific readability. We formulated two plausible and testable hypotheses: (1) There is an increase in the number of co-authors over time (Figure 5A) (see also (Epstein, 1993; Drenth, 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A and citations to Epstein, 1993 and Drenth, 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "fcc48a3a-dd12-4592-9f4b-57111eb591d0",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C37",
+      "claim": "More authors were associated with decreased readability.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the first hypothesis, we divided the data by the number of authors. More authors were associated with decreased readability (Figure 5B, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data analysis shown in Figure 5B and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "f997a764-b48b-4de8-87be-f25df323a072",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C38",
+      "claim": "The same trend of decreasing readability across years was observed regardless of the number of authors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed the same trend of decreasing readability across years regardless of the number of authors (Figure 5C, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by data analysis shown in Figure 5C and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "54512108-06ed-4c1f-ad2c-79295881d69b",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C39",
+      "claim": "When the number of authors was included as a predictor in the linear mixed effects model, it was significantly related to readability.",
+      "claim_type": "EXPLICIT",
+      "source": "When we included the number of authors as a predictor in the linear mixed effects model, it was significantly related to readability, while the fixed effect of year remained significant (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the statistical model results shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "176f6b45-7f05-479c-8211-586bc58120b6",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C40",
+      "claim": "The fixed effect of year remained significant when the number of authors was included as a predictor.",
+      "claim_type": "EXPLICIT",
+      "source": "When we included the number of authors as a predictor in the linear mixed effects model, it was significantly related to readability, while the fixed effect of year remained significant (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the statistical model results shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "655655be-5087-4357-a656-0b3d35456873",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C41",
+      "claim": "The increase in the number of authors on scientific articles is not responsible for the observed readability trend.",
+      "claim_type": "EXPLICIT",
+      "source": "We can therefore reject the hypothesis that the increase in the number of authors on scientific articles is responsible for the observed trend, although abstract readability does decrease with more authors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the statistical analysis that controlled for number of authors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "c14b0e0e-05f4-45bb-9dcc-4cb0078bca84",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C42",
+      "claim": "Abstract readability decreases with more authors.",
+      "claim_type": "EXPLICIT",
+      "source": "We can therefore reject the hypothesis that the increase in the number of authors on scientific articles is responsible for the observed trend, although abstract readability does decrease with more authors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis of readability by number of authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "e20c8e13-4438-4cfc-9e2d-e8f120b08e22",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C43",
+      "claim": "The percentage of common words from the NDC common word list decreased with year (r = \u22120.93, 95% CI [-0.93, -0.93], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "While the percentage of common words from the NDC common word list decreased with year (r = \u22120.93, 95% CI [-0.93, -0.93], p <10-15, Figure 6A), there was an increase in the percentage of science-specific common words (r = 0.90, 95% CI [0.90, 0.91], p <10-15) and general scientific jargon (r = 0.96, 95% CI [0.95, 0.96], p <10-15) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by statistical analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "2d96cb07-a801-4f0f-abba-a6b9cf6d0ef6",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C44",
+      "claim": "There was an increase in the percentage of science-specific common words (r = 0.90, 95% CI [0.90, 0.91], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "While the percentage of common words from the NDC common word list decreased with year (r = \u22120.93, 95% CI [-0.93, -0.93], p <10-15, Figure 6A), there was an increase in the percentage of science-specific common words (r = 0.90, 95% CI [0.90, 0.91], p <10-15) and general scientific jargon (r = 0.96, 95% CI [0.95, 0.96], p <10-15) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by statistical analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "040543b4-bc44-4704-8ea2-93377980d19f",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C45",
+      "claim": "There was an increase in general scientific jargon (r = 0.96, 95% CI [0.95, 0.96], p <10-15).",
+      "claim_type": "EXPLICIT",
+      "source": "While the percentage of common words from the NDC common word list decreased with year (r = \u22120.93, 95% CI [-0.93, -0.93], p <10-15, Figure 6A), there was an increase in the percentage of science-specific common words (r = 0.90, 95% CI [0.90, 0.91], p <10-15) and general scientific jargon (r = 0.96, 95% CI [0.95, 0.96], p <10-15) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is supported by statistical analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "48a2c16e-9216-4664-b57e-ceb7cb4e12d7",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C46",
+      "claim": "There is evidence in favor of the hypothesis that there is an increase in general scientific jargon which partially accounts for the decreasing readability.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this provides evidence in favor of the hypothesis that there is an increase in general scientific jargon which partially accounts for the decreasing readability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the analysis of word usage patterns over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "efd6ab2a-a2ed-4bcd-baed-d7aa0d603e73",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C47",
+      "claim": "In 1960, 14% of the texts in the corpus had a FRE below 0.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1960, 14% of the texts in our corpus had a FRE below 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific data point from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "6e0279f5-9359-49af-8428-3f9a310faffe",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C48",
+      "claim": "In 2015, 22% of the texts in the corpus had a FRE below 0.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2015, this number had risen to 22%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific data point from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "4194743e-cec9-4bd6-93d4-7ed14e3151fc",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C49",
+      "claim": "More than a fifth of scientific abstracts now have a readability considered beyond college graduate level English.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, more than a fifth of scientific abstracts now have a readability considered beyond college graduate level English.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRE scores based on established readability thresholds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "5c34ad09-6925-4c6f-9639-0414d35c9019",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C50",
+      "claim": "A FRE score of 100 is designed to reflect the reading level of a 10- to 11-year old.",
+      "claim_type": "EXPLICIT",
+      "source": "A FRE score of 100 is designed to reflect the reading level of a 10- to 11-year old.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the established interpretation of FRE scores.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "df7c3c28-f02c-4164-83c2-2923b38e86a1",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C51",
+      "claim": "A FRE score between 0 and 30 is considered understandable by college graduates.",
+      "claim_type": "EXPLICIT",
+      "source": "A score between 0 and 30 is considered understandable by college graduates (Flesch, 1948; Kincaid et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the established interpretation of FRE scores, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "43840316-ade6-4c47-a942-9c70b52b858d",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C52",
+      "claim": "Readability scores can vary due to different media.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the absolute readability scores should be interpreted with some caution: scores can vary due to different media (e.g. comics versus news articles; \u0160tajner et al., 2012) and education level thresholds can be imprecise (Stokes, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This caveat is supported by a citation to \u0160tajner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "31718633-d24c-43a2-821d-6e051e845772",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C53",
+      "claim": "Education level thresholds for readability scores can be imprecise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the absolute readability scores should be interpreted with some caution: scores can vary due to different media (e.g. comics versus news articles; \u0160tajner et al., 2012) and education level thresholds can be imprecise (Stokes, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This caveat is supported by a citation to Stokes, 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "4f3340ad-6280-4fec-b819-57b8b95ee7da",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C54",
+      "claim": "Abstract readability is a suitable approximation for comparing main texts.",
+      "claim_type": "EXPLICIT",
+      "source": "We then validated abstract readability against full text readability, demonstrating that it is a suitable approximation for comparing main texts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the correlation analysis between abstracts and full texts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "24f41759-bbc8-409f-8670-3516e0ae7286",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C55",
+      "claim": "Lower readability implies less accessibility, particularly for non-specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower readability implies less accessibility, particularly for non-specialists, such as journalists, policy-makers and the wider public.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the implications of lower readability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "b3ba24b7-784e-4809-831a-f92660c99730",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C56",
+      "claim": "Scientific journalism offers a key role in communicating science to the wider public.",
+      "claim_type": "EXPLICIT",
+      "source": "Scientific journalism offers a key role in communicating science to the wider public (Bubela et al., 2009) and scientific credibility can sometimes suffer when reported by journalists (Hinnant and Len-R\u00edos, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bubela et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "e4f7308a-2784-4d50-bb1f-b6746d860d0e",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C57",
+      "claim": "Scientific credibility can sometimes suffer when reported by journalists.",
+      "claim_type": "EXPLICIT",
+      "source": "Scientific journalism offers a key role in communicating science to the wider public (Bubela et al., 2009) and scientific credibility can sometimes suffer when reported by journalists (Hinnant and Len-R\u00edos, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hinnant and Len-R\u00edos, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "02a307cf-59e4-42e4-a411-93844514dfc0",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C58",
+      "claim": "Decreasing readability cannot be a positive development for efforts to accurately communicate science to non-specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering this, decreasing readability cannot be a positive development for efforts to accurately communicate science to non-specialists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "1068dae4-e1d8-4b1c-9a21-1d98f52e4d09",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C59",
+      "claim": "Lower readability is a problem for specialists.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower readability is also a problem for specialists (Hartley, 1994; Hartley and Benjamin, 1998; Hartley, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hartley, 1994; Hartley and Benjamin, 1998; and Hartley, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8ef3b53e-c07d-43fe-a579-b71ed1ad29e6",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C60",
+      "claim": "Rewriting scientific abstracts to improve their readability increased academics' ability to comprehend them.",
+      "claim_type": "EXPLICIT",
+      "source": "This was explicitly shown by Hartley (1994) who demonstrated that rewriting scientific abstracts, to improve their readability, increased academics' ability to comprehend them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hartley, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "634ede42-f00b-474b-b496-dc13795bbb80",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C61",
+      "claim": "Some jargon is unavoidable in science.",
+      "claim_type": "EXPLICIT",
+      "source": "While science is complex, and some jargon is unavoidable (Knight, 2003), this does not justify the continuing trend that we have shown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Knight, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "7d10a978-3828-49dd-917b-bd13b901649a",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C62",
+      "claim": "Reproducibility requires that findings can be verified independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducibility requires that findings can be verified independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific consensus about reproducibility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "56b4c6f2-c047-4fb5-bded-7b3b40f12cd7",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C63",
+      "claim": "To achieve reproducibility, reporting of methods and results must be sufficiently understandable.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, reporting of methods and results must be sufficiently understandable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the requirements for reproducibility.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "d0fe1409-64d8-4178-a2a2-d3b9da016aba",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C64",
+      "claim": "Readability formulas provide an estimate of a text's readability and should not be interpreted as a categorical measure of how well a text will be understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Readability formulas are not without their limitations. They provide an estimate of a text's readability and should not be interpreted as a categorical measure of how well a text will be understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the interpretation of readability formulas.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "53ed8dd7-cb9f-436b-8484-e2837b97bd8c",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C65",
+      "claim": "Readability can be affected by text size, line spacing, the use of headers, as well as by the use of visual aids such as tables or graphs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, readability can be affected by text size, line spacing, the use of headers, as well as by the use of visual aids such as tables or graphs, none of which are captured by readability formulas (Hartley, 2013; Badarudeen and Sabharwal, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hartley, 2013 and Badarudeen and Sabharwal, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "071fa5a4-fe73-4b98-b552-b310b1d2a0af",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C66",
+      "claim": "Many semantic properties of texts are overlooked by readability formulas, including the complexity of ideas, the rhetorical structure and the overall coherence of the text.",
+      "claim_type": "EXPLICIT",
+      "source": "Many semantic properties of texts are overlooked, including the complexity of ideas, the rhetorical structure and the overall coherence of the text (Bruce et al., 1981; Danielson, 1987; Zamanian and Heydari, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bruce et al., 1981; Danielson, 1987; and Zamanian and Heydari, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "2b45aaa4-7cb1-4e0c-ad17-9b8bd44d8214",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C67",
+      "claim": "Changing a text solely to improve readability scores does not automatically make a text more understandable.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing a text solely to improve readability scores does not automatically make a text more understandable (Duffy and Kabance, 1982; Redish, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Duffy and Kabance, 1982 and Redish, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "86f7d46c-144d-46e8-ad5a-2fdea809b991",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C68",
+      "claim": "Recent scientific texts are, on average, less readable than older scientific texts.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the limitations of readability formulas, our study shows that recent scientific texts are, on average, less readable than older scientific texts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "bae8cdfb-b80a-4177-8ae9-6c72f25b90f0",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C69",
+      "claim": "The readability trend was not specific to any one field.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend was not specific to any one field, even though the size of this association varied across fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of random slopes across fields.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "c047e658-3678-4218-94ee-4e82ff391d33",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C70",
+      "claim": "The size of the readability association varied across fields.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend was not specific to any one field, even though the size of this association varied across fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of random slopes across fields.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "65502be1-0ae5-4209-9b9d-26592f9ab03c",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C71",
+      "claim": "Some fields had a steeper decline in NDC scores, while less of a decline in FRE scores, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Some fields also had a steeper decline in NDC scores, while less of a decline in FRE scores, and vice versa (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "cf98bef8-0851-4403-ab59-1b76872f0759",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C72",
+      "claim": "Structured abstracts are known to assist readability.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the adoption of structured abstracts which are known to assist readability (Hartley and Benjamin, 1998; Hartley, 2003) might lead to a less steep decline for some fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hartley and Benjamin, 1998 and Hartley, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "ee28b9c8-178e-469d-a86e-85a911332e96",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C73",
+      "claim": "The adoption of structured abstracts might lead to a less steep decline in readability for some fields.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the adoption of structured abstracts which are known to assist readability (Hartley and Benjamin, 1998; Hartley, 2003) might lead to a less steep decline for some fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about a potential intervention.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "9fe67776-9392-46a7-b010-6f0d5797920d",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C74",
+      "claim": "Some journals have implemented accessible 'lay summaries'.",
+      "claim_type": "EXPLICIT",
+      "source": "One suggestion from this field is to create accessible 'lay summaries', which have been implemented by some journals (Kuehne and Olden, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kuehne and Olden, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "6179116f-83ac-480d-9885-717299c7a619",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C75",
+      "claim": "Scientists are increasing their direct communication with the general public through social media.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have noted that scientists are increasing their direct communication with the general public through social media (Peters et al., 2014), and this trend could be encouraged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Peters et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "4fd23b05-a563-435f-8e81-8f2cee3c46dd",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C76",
+      "claim": "Creating lay summaries and using social media will not reverse the readability trend of scientific texts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while these two suggestions may increase accessibility of scientific results, neither will reverse the readability trend of scientific texts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the limitations of certain interventions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "80dd21c2-a196-4e66-a600-ba0139149176",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C77",
+      "claim": "Scientists can estimate their own readability in most word processing software.",
+      "claim_type": "EXPLICIT",
+      "source": "Scientists themselves can estimate their own readability in most word processing software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of available software tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "f53b3561-e153-4d5f-a892-431172afc4a6",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C78",
+      "claim": "The science-specific common word list contains 2,949 words.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected the 2,949 most common words which were not included in the NDC common word list from 12,000 abstracts sampled at random (see Materials and methods for procedure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for creating the science-specific common word list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "7c2f3a01-297b-4fa4-b2fa-5e6d625c6069",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C79",
+      "claim": "The general scientific jargon list contains 2,138 words.",
+      "claim_type": "EXPLICIT",
+      "source": "We removed such words to create a general scientific jargon list (2,138 words; see Materials and methods and Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for creating the general scientific jargon list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "022e9c71-3ae1-4ecb-981c-3768a17bb3a9",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C80",
+      "claim": "The word 'appears' decreased with time.",
+      "claim_type": "EXPLICIT",
+      "source": "While one word ('appears') decreased with time, all the remaining examples show sharp increases over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of specific jargon words.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "f28461ed-f8c5-4b1e-8918-60771a2b529f",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C81",
+      "claim": "All the remaining example jargon words (except 'appears') show sharp increases over time.",
+      "claim_type": "EXPLICIT",
+      "source": "While one word ('appears') decreased with time, all the remaining examples show sharp increases over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of specific jargon words shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "99defb8e-dcc3-4d79-a929-e70cc5714216",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C82",
+      "claim": "The journals were selected from 12 fields of research.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate trends in scientific readability over time, we downloaded 709,577 article abstracts from PubMed, from 123 highly cited journals selected from 12 fields of research (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology for journal selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "b426afca-18ef-4103-9b65-a4306e3107b3",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C83",
+      "claim": "The journals were highly cited.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate trends in scientific readability over time, we downloaded 709,577 article abstracts from PubMed, from 123 highly cited journals selected from 12 fields of research (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the selection criteria for the journals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "9b43d38f-bb69-490e-ab53-89b5dfaaf7aa",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C84",
+      "claim": "Full text articles were downloaded from six additional independent journals from the PubMed Central Open Access Subset.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that the readability of abstracts was representative of the readability of the entire articles, we downloaded full text articles from six additional independent journals from which all articles were available in the PubMed Central Open Access Subset (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology for the full text analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "b071e290-fdc9-4e5a-b438-a5da01b40e0a",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C85",
+      "claim": "In total, 143,957 articles were included in the full text analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 143,957 articles were included in the full text analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the full text analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "eb27532c-9602-49dd-b703-a50377ed41fe",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C86",
+      "claim": "90.95% of the words in the science-specific common word list were present in the verification list.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 2,949 words in the science-specific common word list, 90.95% of the words were present in the verification list (see Supplementary file 2 for both word lists).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the science-specific common word list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "76704908-83e4-408b-a70d-adeb1ec280b2",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C87",
+      "claim": "The 24,000 articles used in the derivation and verification of the word lists were excluded from all further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The 24,000 articles used in the derivation and verification of the lists were excluded from all further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision to avoid bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "64d17a4f-2d3d-4c42-b7e4-15b59d9705f1",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C88",
+      "claim": "TreeTagger was used to identify sentence endings and to remove non-words and any remaining punctuation from the abstracts.",
+      "claim_type": "EXPLICIT",
+      "source": "TreeTagger (version 3.2 (Linux); (Schmid, 1994) was used to identify sentence endings and to remove non-words (e.g. numbers) and any remaining punctuation from the abstracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the text preprocessing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "3beda235-f3cf-453a-ac80-038d057bf97c",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C89",
+      "claim": "The observed trends were not induced by the preprocessing steps.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the observed trends were not induced by the preprocessing steps by running the readability analysis presented in Figure 1D,E using the raw data (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validation is supported by analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8df52324-e88e-46c5-bdae-d08791388ade",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C90",
+      "claim": "The NDC common word list used included 2,949 words.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'NDC common word' list used here was taken from the NDC implementation in the textstat python package (https://github.com/shivam5992/textstat) which included 2,949 words (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source and size of the NDC common word list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8d3ce149-a698-408d-8a7e-9320d469a8d4",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C91",
+      "claim": "The NDC common word list excludes some words from the original NDC common word list such as abbreviations and double words.",
+      "claim_type": "EXPLICIT",
+      "source": "This list excludes some words from the original NDC common word list (such as abbreviations, e.g. 'A.M.'; and double words, e.g. 'all right').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modification to the original NDC common word list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "25199093-8625-4b09-bb77-8c256f812ecb",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C92",
+      "claim": "NDC has been shown to perform comparably with more modern readability methods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NDC has been shown to perform comparably with these more modern methods (Benjamin, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Benjamin, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "f061970a-035e-47f3-996e-cddd77c53b98",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C93",
+      "claim": "The six journals used for full text analysis were BMC Biology, eLife, Genome Biology, PLoS Biology, PLoS Medicine and PLoS ONE.",
+      "claim_type": "EXPLICIT",
+      "source": "The journals were BMC Biology, eLife, Genome Biology, PLoS Biology, PLoS Medicine and PLoS ONE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This lists the specific journals used in the full text analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "9ff153c9-92da-4809-81aa-70b1ba171203",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C94",
+      "claim": "None of the six journals used for full text analysis were part of the original journal list used in the main analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "None of them were a part of the original journal list which was used in the main analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the independence of the full text validation sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "6153599a-84fa-4f70-9482-7f2d214e3a18",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C95",
+      "claim": "None of the included journals in the full text analysis have existed for a long period of time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of the included journals have existed for a long period of time (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the full text analysis sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "dbbbe47b-72c2-45d4-9e05-30c0bfa44bf4",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C96",
+      "claim": "The six journals used for full text analysis cannot be said to represent the same time range covered by the 123 journals used in the main analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, they cannot be said to represent the same time range covered by the 123 journals used in the main analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the full text analysis sample.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "0e9a01b7-8463-414b-a44f-f9695fbb1078",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C97",
+      "claim": "Some articles (n = 2,327) lacked author information and were excluded from the author number analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Some articles (n = 2,327) lacked author information, and were excluded from the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data exclusion criteria for the author analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "8d71b9f2-81f6-4b32-93f4-a9c200342ef6",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C98",
+      "claim": "The model including authors was performed using a subset including only articles with one to ten authors (n = 652,357).",
+      "claim_type": "EXPLICIT",
+      "source": "This model was performed using two sets of the data: i) a subset including only articles with one to ten authors (n = 652,357), ii) a full dataset consisting of all articles with complete author information (n = 707,250) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology for the author analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "65d552dc-0f2b-4904-9c9d-25444bf165bd",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C99",
+      "claim": "The model including authors was performed using a full dataset consisting of all articles with complete author information (n = 707,250).",
+      "claim_type": "EXPLICIT",
+      "source": "This model was performed using two sets of the data: i) a subset including only articles with one to ten authors (n = 652,357), ii) a full dataset consisting of all articles with complete author information (n = 707,250) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology for the author analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "e04feef5-0b86-49e1-a1f5-4837801b74ac",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C100",
+      "claim": "The motivation for using only articles with one to ten authors was that abstracts with many authors may bias the results.",
+      "claim_type": "EXPLICIT",
+      "source": "The motivation for (i) was that abstracts with many authors may bias the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a methodological decision in the author analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "096205cd-4125-49db-b562-11c673e57438",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C101",
+      "claim": "12,000 articles were selected to identify words frequently used in the scientific literature.",
+      "claim_type": "EXPLICIT",
+      "source": "To construct the science-specific common word list, 12,000 articles were selected to identify words frequently used in the scientific literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for creating the science-specific common word list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "aca7b1a0-5304-4978-8193-0830e7db17ac",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C102",
+      "claim": "2,000 articles were randomly selected from six different decades starting at the 1960s to avoid recency bias.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to avoid any recency bias, 2,000 articles were randomly selected from six different decades (starting at the 1960s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling strategy to avoid bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "a56f0848-e816-4b27-83d9-b13bea66dd9d",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C103",
+      "claim": "The number 2,949 was selected to be the same length as the NDC common word list.",
+      "claim_type": "EXPLICIT",
+      "source": "The number 2,949 was selected to be the same length as the NDC common word list.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a methodological decision in creating the science-specific common word list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "23299e76-9c7b-488f-b938-7f7c05eee723",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C104",
+      "claim": "A verification list was created by performing the same steps on an additional independent set of 12,000 articles.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate that this list is identifying a general scientific terminology, we created a verification list by performing the same steps as above on an additional independent set of 12,000 articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation methodology for the science-specific common word list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "5b0c8989-19d5-4042-a516-91ddfe62f73f",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C105",
+      "claim": "All four co-authors went through the science-specific common word list and rated each word to create the general scientific jargon list.",
+      "claim_type": "EXPLICIT",
+      "source": "All four co-authors went through the science-specific common word list and rated each word.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for creating the general scientific jargon list.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "12edcfae-b4c4-4c4b-a45e-487d7c5730e5",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C106",
+      "claim": "The co-authors performed the ratings to identify jargon words independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-authors performed the ratings to identify jargon words independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rating methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "2154f1bc-8c9c-41d5-8f5f-7b1a875a251d",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "claim_id": "C107",
+      "claim": "The ratings cannot be classed as completely independent because the authors discussed examples halfway through the ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to this, the ratings can not be classed as completely independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the rating methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cafc214f-53b8-4122-8173-6bb0cb947e3f",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Scientific abstract readability has steadily decreased from 1881-2015 across 709,577 abstracts from 123 journals, as measured by both FRE (r=-0.93, p<10^-15) and NDC (r=0.93, p<10^-15) metrics. This decline is driven by increases in syllables per word, percentage of difficult words, and sentence length, with year as a significant predictor in mixed effects models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C28 provide converging statistical evidence from two independent readability metrics with very strong effect sizes and highly significant p-values. The mixed effects modeling (C27, Table 1) appropriately accounts for journal-level clustering. The large sample size (C1) and decomposition of readability components (C22-C24) strengthen the finding. However, the extremely narrow confidence intervals (e.g., [-0.72,-0.72] in C26) suggest potential underestimation of uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "c245c38b-befe-4f68-a427-882ae896418f",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The declining readability trend is not specific to any particular scientific field, though the magnitude varies across fields. Only 2 of 123 journals showed increasing readability over time, and all 12 fields examined showed the general declining pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by random slopes analysis from the mixed effects model (Figure 3), showing consistent negative trends across fields despite magnitude differences. The finding that only 2/123 journals bucked the trend (C31) provides strong evidence of generalizability. The statistical approach appropriately tests field-specific variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Abstract readability correlates positively with full-text readability (FRE: r=0.60, NDC: r=0.63, both p<10^-15) across 143,957 articles from six open-access journals, suggesting the abstract readability trend generalizes to full texts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C33-C34 show statistically significant correlations between abstract and full-text readability, claims C95-C96 acknowledge critical limitations: the validation journals are all recent open-access publications that don't cover the same temporal range (1881-2015) as the main analysis. The inference in C35 that trends generalize to full texts is therefore not directly tested across the historical timespan of interest. Additional validation with older full texts would be needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "While more co-authors is associated with decreased readability, the increase in co-author numbers over time does not explain the temporal readability decline. Year remains a significant predictor even after controlling for author number in mixed effects models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 demonstrate proper hypothesis testing: C37 shows the association between author number and readability, but C38-C40 show that controlling for this factor in the statistical model (Table 2) does not eliminate the year effect. The analysis was conducted on both restricted (1-10 authors) and full datasets (C98-C99), strengthening the conclusion. This appropriately rejects the 'too many cooks' hypothesis while acknowledging the independent effect of author number.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "98fe10eb-63f7-4d84-bbad-778e25df5057",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "General scientific jargon (non-subject-specific scientific vocabulary) has increased over time (r=0.96, p<10^-15), while common words decreased (r=-0.93, p<10^-15), providing evidence that growing use of 'science-ese' partially accounts for decreasing readability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 show strong statistical trends in word usage patterns. The methodology for creating jargon lists (C78-C79, C101-C106) involved validation (C86: 90.95% overlap) and temporal sampling to avoid recency bias (C102). However, C107 acknowledges the rating process wasn't completely independent, introducing potential subjectivity. The correlation between jargon increase and readability decline is clear, but causation is not definitively established\u2014this could reflect rather than cause the complexity increase. The evidence supports the hypothesis but with methodological caveats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "55d3c5c8-5675-4ba0-8814-14fb65070bba",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The proportion of abstracts with FRE scores below 0 (beyond college graduate reading level) increased from 14% in 1960 to 22% in 2015, meaning over one-fifth of scientific abstracts now exceed college graduate-level readability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 provide specific quantitative context for the magnitude of the readability decline using established FRE interpretation thresholds (C50-C51). The data points are clearly stated and follow logically from the main analysis. This effectively translates the statistical findings into practical implications about reading difficulty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "11e53ea0-ce5f-4fcc-b34a-8d920567a251",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The corpus includes 123 highly-cited journals from 12 fields covering general, biomedical, and life sciences, including major journals like Nature, Science, NEJM, The Lancet, PNAS, and JAMA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 and C82-C83 describe the journal selection methodology. The selection of highly-cited journals from diverse fields provides good coverage of scientific literature, though this sampling strategy may not represent lower-tier journals. The methodology is clearly documented and appropriate for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "1d6676c8-736b-489b-9aee-0b41e2729c0d",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two established readability metrics were used: Flesch Reading Ease (FRE, based on syllables/word and words/sentence) and New Dale-Chall (NDC, based on sentence length and percentage of difficult words not in a 2,949-word common word list). Text preprocessing using TreeTagger was validated to not induce the observed trends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 accurately describe well-established readability formulas. The preprocessing methodology (C88) and validation that preprocessing didn't create artifacts (C89) strengthen confidence in the results. Using two independent metrics (FRE and NDC) that showed correlated results (C26) provides methodological robustness. The NDC word list modifications (C90-C91) are documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors acknowledge important limitations of readability formulas: they provide estimates rather than categorical measures, can vary by media type, have imprecise education-level thresholds, and don't capture semantic properties like idea complexity, rhetorical structure, or visual aids. However, NDC performs comparably to more modern methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 and C64-C67 appropriately acknowledge well-documented limitations of readability formulas, supported by multiple citations. This demonstrates appropriate scientific caution in interpretation. Claim C92 provides justification for using NDC despite these limitations. These caveats are important for contextualizing the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "c09e1682-c978-4fa2-bc43-44b969adb648",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors argue that decreasing readability impacts both reproducibility (by reducing comprehensibility of methods/results) and accessibility (particularly for non-specialists like journalists and policymakers), representing negative developments for science communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C4, C55, and C58 make speculative assertions about impacts on reproducibility and accessibility that are not directly tested in this study. While C62-C63 correctly state that reproducibility requires understandable reporting, the causal link between the measured readability decline and actual reproducibility or accessibility outcomes is not empirically demonstrated. These are plausible implications but remain hypotheses requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established that readability formulas can quantify text difficulty, that other text types (presidential speeches, novels, news) have trended toward simpler language, that positive sentiment has increased in science, and that lower readability affects both specialists and non-specialists. Structured abstracts and lay summaries have been proposed as interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 and C32, C56-C57, C59-C61, C72, C74-C75 accurately cite prior literature to establish context. These are appropriately attributed to cited sources and provide relevant background for the current study. The citations appear accurate based on the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "58005a1d-2cee-42a7-871d-87ea3306810a",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The majority of abstracts in the corpus were published after 1960, and 24,000 articles used for word list derivation/verification were excluded from subsequent analyses to avoid bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by Figure 1B showing the temporal distribution. Claim C87 describes an appropriate methodological decision to prevent circular analysis by excluding the articles used to create the word lists from the main analysis. These are sound methodological practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    },
+    {
+      "id": "929223a4-eb7a-4e9b-8d89-6fc0483a8e99",
+      "content_id": "1b4b07e7-1389-401f-b3a5-098eaaed8a94",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that structured abstracts might reduce readability decline in some fields, but that lay summaries and social media communication won't reverse the trend in scientific texts themselves. They note that scientists can check readability using word processing software.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C76 are clearly marked as speculative suggestions about potential interventions and their limitations. These are reasonable inferences from the findings but are appropriately presented as hypotheses rather than tested conclusions. Claim C77 provides a practical observation about available tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:37.492859Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "26bd68ca-54d3-47f9-982e-3b64a1490123",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "bc6166a2-0ab7-482e-b877-f8d67ecae147",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "19ecd81a-3775-4325-bd0e-f5b95ef3f72d",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "49d562a4-faff-47ce-9545-0cb1b2688c97",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "6ec4c2cc-5680-4b21-8cce-b842660fbf37",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "8708e2ca-76dd-48cc-9d75-5b659eaa1618",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "8d0eff87-435a-4591-b9a8-6caff873c6fb",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "9605fc7a-dcc8-43dc-bc28-d3a0ae7b92d2",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "50ae3d00-8d7d-4e5a-a038-981c080a41ce",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "cfff88f9-d5e8-46ac-8670-40238de3d031",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "86f7d46c-144d-46e8-ad5a-2fdea809b991",
+      "result_id": "cafc214f-53b8-4122-8173-6bb0cb947e3f"
+    },
+    {
+      "claim_id": "1bb346bc-6ce4-43ac-b496-7cb97d57ac97",
+      "result_id": "c245c38b-befe-4f68-a427-882ae896418f"
+    },
+    {
+      "claim_id": "628141ff-117d-4123-b329-196d0ce5e4b7",
+      "result_id": "c245c38b-befe-4f68-a427-882ae896418f"
+    },
+    {
+      "claim_id": "cd75b351-a9d2-44f9-be92-9d4e43d8a267",
+      "result_id": "c245c38b-befe-4f68-a427-882ae896418f"
+    },
+    {
+      "claim_id": "bae8cdfb-b80a-4177-8ae9-6c72f25b90f0",
+      "result_id": "c245c38b-befe-4f68-a427-882ae896418f"
+    },
+    {
+      "claim_id": "c047e658-3678-4218-94ee-4e82ff391d33",
+      "result_id": "c245c38b-befe-4f68-a427-882ae896418f"
+    },
+    {
+      "claim_id": "65502be1-0ae5-4209-9b9d-26592f9ab03c",
+      "result_id": "c245c38b-befe-4f68-a427-882ae896418f"
+    },
+    {
+      "claim_id": "af4a67e3-5c0f-4e31-9d28-a54d89ffb7ba",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "89f75ecc-f4a2-41f7-9137-00dd81d18617",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "fa637cb7-6cb2-42fc-9d43-08a3aa970d21",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "6aee8e19-039c-453a-81c9-f3044d6aa115",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "4f3340ad-6280-4fec-b819-57b8b95ee7da",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "9b43d38f-bb69-490e-ab53-89b5dfaaf7aa",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "b071e290-fdc9-4e5a-b438-a5da01b40e0a",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "f061970a-035e-47f3-996e-cddd77c53b98",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "9ff153c9-92da-4809-81aa-70b1ba171203",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "6153599a-84fa-4f70-9482-7f2d214e3a18",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "dbbbe47b-72c2-45d4-9e05-30c0bfa44bf4",
+      "result_id": "e8e3b686-d5d9-4ad7-950a-cc8843bcf2f5"
+    },
+    {
+      "claim_id": "5c5f8721-877e-4a15-8c03-57a344e2321d",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "fcc48a3a-dd12-4592-9f4b-57111eb591d0",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "f997a764-b48b-4de8-87be-f25df323a072",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "54512108-06ed-4c1f-ad2c-79295881d69b",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "176f6b45-7f05-479c-8211-586bc58120b6",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "655655be-5087-4357-a656-0b3d35456873",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "c14b0e0e-05f4-45bb-9dcc-4cb0078bca84",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "0e9a01b7-8463-414b-a44f-f9695fbb1078",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "8d71b9f2-81f6-4b32-93f4-a9c200342ef6",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "65d552dc-0f2b-4904-9c9d-25444bf165bd",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "e04feef5-0b86-49e1-a1f5-4837801b74ac",
+      "result_id": "620d26e7-eca7-4584-9aa3-da7fab50d1f8"
+    },
+    {
+      "claim_id": "0cb8a351-0baa-45e5-98ee-cfb694fe52dc",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "e20c8e13-4438-4cfc-9e2d-e8f120b08e22",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "2d96cb07-a801-4f0f-abba-a6b9cf6d0ef6",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "040543b4-bc44-4704-8ea2-93377980d19f",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "48a2c16e-9216-4664-b57e-ceb7cb4e12d7",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "f53b3561-e153-4d5f-a892-431172afc4a6",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "7c2f3a01-297b-4fa4-b2fa-5e6d625c6069",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "022e9c71-3ae1-4ecb-981c-3768a17bb3a9",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "f28461ed-f8c5-4b1e-8918-60771a2b529f",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "eb27532c-9602-49dd-b703-a50377ed41fe",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "096205cd-4125-49db-b562-11c673e57438",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "aca7b1a0-5304-4978-8193-0830e7db17ac",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "a56f0848-e816-4b27-83d9-b13bea66dd9d",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "23299e76-9c7b-488f-b938-7f7c05eee723",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "5b0c8989-19d5-4042-a516-91ddfe62f73f",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "12edcfae-b4c4-4c4b-a45e-487d7c5730e5",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "2154f1bc-8c9c-41d5-8f5f-7b1a875a251d",
+      "result_id": "98fe10eb-63f7-4d84-bbad-778e25df5057"
+    },
+    {
+      "claim_id": "efd6ab2a-a2ed-4bcd-baed-d7aa0d603e73",
+      "result_id": "55d3c5c8-5675-4ba0-8814-14fb65070bba"
+    },
+    {
+      "claim_id": "6e0279f5-9359-49af-8428-3f9a310faffe",
+      "result_id": "55d3c5c8-5675-4ba0-8814-14fb65070bba"
+    },
+    {
+      "claim_id": "4194743e-cec9-4bd6-93d4-7ed14e3151fc",
+      "result_id": "55d3c5c8-5675-4ba0-8814-14fb65070bba"
+    },
+    {
+      "claim_id": "5c34ad09-6925-4c6f-9639-0414d35c9019",
+      "result_id": "55d3c5c8-5675-4ba0-8814-14fb65070bba"
+    },
+    {
+      "claim_id": "df7c3c28-f02c-4164-83c2-2923b38e86a1",
+      "result_id": "55d3c5c8-5675-4ba0-8814-14fb65070bba"
+    },
+    {
+      "claim_id": "35161f8f-c2ab-4089-a599-bbb50f6c2e8e",
+      "result_id": "11e53ea0-ce5f-4fcc-b34a-8d920567a251"
+    },
+    {
+      "claim_id": "38bc094f-c876-4f6f-9b9c-237fe0cef0d8",
+      "result_id": "11e53ea0-ce5f-4fcc-b34a-8d920567a251"
+    },
+    {
+      "claim_id": "99defb8e-dcc3-4d79-a929-e70cc5714216",
+      "result_id": "11e53ea0-ce5f-4fcc-b34a-8d920567a251"
+    },
+    {
+      "claim_id": "b426afca-18ef-4103-9b65-a4306e3107b3",
+      "result_id": "11e53ea0-ce5f-4fcc-b34a-8d920567a251"
+    },
+    {
+      "claim_id": "f2f3bff8-9be3-42a1-81bc-4e9a5cb36d5e",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "dbdf26bb-0800-400b-af65-c1acefea3109",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "849dfc04-b7b1-430c-8d23-09b9f3cf783b",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "438028da-0e79-40fd-a55e-5a7801f20876",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "d559d6cb-6975-4c7d-bfa2-177fb067ec4e",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "64d17a4f-2d3d-4c42-b7e4-15b59d9705f1",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "3beda235-f3cf-453a-ac80-038d057bf97c",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "8df52324-e88e-46c5-bdae-d08791388ade",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "8d3ce149-a698-408d-8a7e-9320d469a8d4",
+      "result_id": "1d6676c8-736b-489b-9aee-0b41e2729c0d"
+    },
+    {
+      "claim_id": "43840316-ade6-4c47-a942-9c70b52b858d",
+      "result_id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525"
+    },
+    {
+      "claim_id": "31718633-d24c-43a2-821d-6e051e845772",
+      "result_id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525"
+    },
+    {
+      "claim_id": "d0fe1409-64d8-4178-a2a2-d3b9da016aba",
+      "result_id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525"
+    },
+    {
+      "claim_id": "53ed8dd7-cb9f-436b-8484-e2837b97bd8c",
+      "result_id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525"
+    },
+    {
+      "claim_id": "071fa5a4-fe73-4b98-b552-b310b1d2a0af",
+      "result_id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525"
+    },
+    {
+      "claim_id": "2b45aaa4-7cb1-4e0c-ad17-9b8bd44d8214",
+      "result_id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525"
+    },
+    {
+      "claim_id": "25199093-8625-4b09-bb77-8c256f812ecb",
+      "result_id": "958ecc55-41b9-4dfb-8f1e-51f9b0985525"
+    },
+    {
+      "claim_id": "fc8ab6ba-f64a-4703-9c10-46ec01f1be69",
+      "result_id": "c09e1682-c978-4fa2-bc43-44b969adb648"
+    },
+    {
+      "claim_id": "24f41759-bbc8-409f-8670-3516e0ae7286",
+      "result_id": "c09e1682-c978-4fa2-bc43-44b969adb648"
+    },
+    {
+      "claim_id": "02a307cf-59e4-42e4-a411-93844514dfc0",
+      "result_id": "c09e1682-c978-4fa2-bc43-44b969adb648"
+    },
+    {
+      "claim_id": "7d10a978-3828-49dd-917b-bd13b901649a",
+      "result_id": "c09e1682-c978-4fa2-bc43-44b969adb648"
+    },
+    {
+      "claim_id": "56b4c6f2-c047-4fb5-bded-7b3b40f12cd7",
+      "result_id": "c09e1682-c978-4fa2-bc43-44b969adb648"
+    },
+    {
+      "claim_id": "e921b2b3-10b4-4226-a5fb-758870be06d5",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "33264d40-7176-490d-adff-8308f81591ae",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "c6fb5d8d-dfcd-4daf-9bc4-02cf3191deb0",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "723ea709-a59c-45de-9dcc-87c2f6c18e0f",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "0ae9572d-71d1-4756-990d-f55c7d559e1e",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "4f83a6a4-7c3c-4962-85de-f54b5fd8695a",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "5696cf02-f0a7-41bb-963c-f70fe60817b6",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "af4a67e3-5c0f-4e31-9d28-a54d89ffb7ba",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "b3ba24b7-784e-4809-831a-f92660c99730",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "e4f7308a-2784-4d50-bb1f-b6746d860d0e",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "1068dae4-e1d8-4b1c-9a21-1d98f52e4d09",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "8ef3b53e-c07d-43fe-a579-b71ed1ad29e6",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "634ede42-f00b-474b-b496-dc13795bbb80",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "cf98bef8-0851-4403-ab59-1b76872f0759",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "9fe67776-9392-46a7-b010-6f0d5797920d",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "6179116f-83ac-480d-9885-717299c7a619",
+      "result_id": "56acd0d1-72a3-42ce-a4bc-a25aef68213b"
+    },
+    {
+      "claim_id": "8c6c3e02-4306-4ed8-8411-e87162006a31",
+      "result_id": "58005a1d-2cee-42a7-871d-87ea3306810a"
+    },
+    {
+      "claim_id": "76704908-83e4-408b-a70d-adeb1ec280b2",
+      "result_id": "58005a1d-2cee-42a7-871d-87ea3306810a"
+    },
+    {
+      "claim_id": "ee28b9c8-178e-469d-a86e-85a911332e96",
+      "result_id": "929223a4-eb7a-4e9b-8d89-6fc0483a8e99"
+    },
+    {
+      "claim_id": "4fd23b05-a563-435f-8e81-8f2cee3c46dd",
+      "result_id": "929223a4-eb7a-4e9b-8d89-6fc0483a8e99"
+    },
+    {
+      "claim_id": "80dd21c2-a196-4e66-a600-ba0139149176",
+      "result_id": "929223a4-eb7a-4e9b-8d89-6fc0483a8e99"
+    }
+  ],
+  "comparisons": []
+}

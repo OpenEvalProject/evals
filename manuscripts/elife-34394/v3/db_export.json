@@ -1,0 +1,2027 @@
+{
+  "submission": {
+    "id": "698bbe42-ca73-4633-8f91-2b427d816665",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:47:52.372468Z",
+    "updated_at": "2025-12-01T23:47:52.372468Z"
+  },
+  "content": [
+    {
+      "id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "submission_id": "698bbe42-ca73-4633-8f91-2b427d816665",
+      "content_type": "manuscript",
+      "content_text": "# Acyl chain asymmetry and polyunsaturation of brain phospholipids facilitate membrane vesiculation without leakage\n\n## Authors\n\n- Marco M Manni<sup>1</sup>\n- Marion L Tiberti<sup>1</sup>\n- Sophie Pagnotta<sup>3</sup>\n- H\u00e9l\u00e8ne Barelli<sup>1</sup>\n- Romain Gautier<sup>1</sup>\n- Bruno Antonny<sup>1</sup> ([ORCID: 0000-0002-9166-8668](https://orcid.org/0000-0002-9166-8668)) \u2020\n\n### Affiliations\n\n1. Institut de Pharmacologie Mol\u00e9culaire et Cellulaire Universit\u00e9 C\u00f4te d\u2019Azur et CNRS Valbonne France\n2. Instituto Biofisika (UPV/EHU, CSIC) Leioa Spain\n3. Centre Commun de Microscopie Appliqu\u00e9e Universit\u00e9 C\u00f4te d\u2019Azur Nice France\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhospholipid membranes form cellular barriers but need to be flexible enough to divide by fission. Phospholipids generally contain a saturated fatty acid (FA) at position sn1 whereas the sn2-FA is saturated, monounsaturated or polyunsaturated. Our understanding of the impact of phospholipid unsaturation on membrane flexibility and fission is fragmentary. Here, we provide a comprehensive view of the effects of the FA profile of phospholipids on membrane vesiculation by dynamin and endophilin. Coupled to simulations, this analysis indicates that: (i) phospholipids with two polyunsaturated FAs make membranes prone to vesiculation but highly permeable; (ii) asymmetric sn1-saturated-sn2-polyunsaturated phospholipids provide a tradeoff between efficient membrane vesiculation and low membrane permeability; (iii) When incorporated into phospholipids, docosahexaenoic acid (DHA; omega-3) makes membranes more deformable than arachidonic acid (omega-6). These results suggest an explanation for the abundance of sn1-saturated-sn2-DHA phospholipids in synaptic membranes and for the importance of the omega-6/omega-3 ratio on neuronal functions.\n\n## Introduction\n\nAlthough it is common knowledge that polyunsaturated fatty acids (PUFAs) especially omega-3 FAs are important for health, the underlying mechanisms are not fully understood (Bazinet and Lay\u00e9, 2014; Marszalek and Lodish, 2005; Stillwell and Wassall, 2003). PUFAs act through three different states: as free molecules, as precursors of biological mediators, or as esters in membrane phospholipids. The third form results from the activity of acyl transferases, which selectively incorporate defined fatty acids into phospholipids (Harayama et al., 2014; Shindou et al., 2013). This allows cells to control the acyl chain profile of their phospholipids, which varies tremendously among organisms, tissues and cells, and even among organelles (Harayama et al., 2014; Hulbert, 2003; Shindou et al., 2013). Interestingly, the FA diversity in phospholipids applies mostly to the sn2 position of the glycerol backbone, hence resulting in asymmetric phospholipids containing a saturated FA at position sn1 and an unsaturated FA at position sn2 (Hanahan et al., 1960; Lands and Merkl, 1963; Tattrie, 1959; Yabuuchi and O'Brien, 1968).\n\nFor example, the brain is enriched in phospholipids with PUFAs, notably in the case of phosphatidylethanolamine (PE) and phosphatidylserine (PS) (Tam and Innis, 2006; Yabuuchi and O'Brien, 1968). Moreover, an interesting pattern has been detected in neurons, where the axon tip is enriched in phosphatidylcholine (PC) molecules containing arachidonate (AA or 20:4 omega-6) or docosahexaenoate (DHA or 22:6 omega-3) at the expense of less unsaturated PC species (Yang et al., 2012). Thus, phospholipids with PUFAs are found at very high concentration in synaptic vesicles, where they account for up to 70 mol% of the phospholipid pool (Takamori et al., 2006). Retinal discs also show very high concentrations of phospholipids containing PUFAs (Boesze-Battaglia and Schimmel, 1997; Rice et al., 2015). These striking enrichments suggest that the fatty acyl chain profile of phospholipids could impact on the properties of cellular membranes.\n\nWe previously showed that phospholipids with the sn2 PUFA DHA facilitate the membrane shaping and fission activities of dynamin and endophilin (Pinot et al., 2014). These proteins are involved in the formation of endocytic vesicles by assembling into spirals around the neck of membrane buds (Antonny et al., 2016; Boucrot et al., 2015; Farsad et al., 2001; Slepnev and De Camilli, 2000; Sundborger et al., 2011). Physical manipulations, molecular dynamics simulations and biochemical measurements revealed that DHA-containing phospholipids decrease membrane-bending rigidity by adapting their conformation to membrane curvature, hence providing an advantage for membrane deformation and fission by the dynamin endophilin complex (Pinot et al., 2014) in contrast to more rigid membranes, which are less prone to fission (Morlot et al., 2012). More generally, the flexibility of polyunsaturated phospholipids along the membrane normal (z direction) might soften various mechanical stresses in the membrane (Barelli and Antonny, 2016).\n\nThe activity of dynamin and endophilin was previously determined on extreme membrane compositions: the phospholipids were either saturated-monounsaturated (16:0-18:1) or saturated-DHA (18:0-22:6?3) (Pinot et al., 2014). However, others PUFAs are found in phospholipids (Harayama et al., 2014; Tam and Innis, 2006; Yabuuchi and O'Brien, 1968). The most common are 18:2 omega-6 (linoleate), 18:3 omega-3 (linolenate), and 20:4 omega-6 (arachidonate), which differ by the number of double bonds and their position along the chain (Figure 1A). Here, we present a comprehensive study of the impact of phospholipid unsaturation on the mechanical activities of dynamin and endophilin where we varied both the degree of FA unsaturation and the combination of FAs at position sn1 and sn2 of phospholipids considering that most natural phospholipids have an asymmetric FA distribution (Hanahan et al., 1960; Lands and Merkl, 1963; Tattrie, 1959; Yabuuchi and O'Brien, 1968). The analysis reveals that the combination of an sn1 saturated acyl chain and an sn2 polyunsaturated acyl chain solves the conundrum between making a membrane very permissive to vesiculation while maintaining a proper control of membrane permeability.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig1-v3.jpg)\n\n**Figure 1.:** (A) Principle of the experiments and chemical structure of the various phospholipid species used in this study. (B) Rate of GTP hydrolysis by dynamin (0.3 \u00b5M)\u00a0\u00b1endophilin (0.6 \u00b5M) with large liposomes (400 nm extrusion) containing phospholipids with symmetric (green) or asymmetric (red) acyl chains at positions sn1 and sn2 as shown in A. Data are mean\u00a0\u00b1\u00a0SD from three independent experiments. All lipid compositions are detailed in Supplementary file 1. (C) Electron microscopy analysis of 22:6-22:6 or 18:0-22:6 liposomes after incubation with dynamin (0.5 \u00b5M) and with GTP or GTP\u03b3S. With GTP\u03b3S, numerous dynamin spirals formed on 22:6-22:6 liposomes but not on 18:0-22:6 liposomes. With GTP, almost all 22:6-22:6 liposomes were transformed into very small (radius\u00a0<20 nm) structures, whereas large parental profiles were still abundant in the case of 18:0-22:6 liposomes. Scale bar, 200 nm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Time course of GTP hydrolysis by dynamin (0.3 \u00b5M) with large liposomes (400 nm extrusion) containing phospholipids with asymmetric (left panel) or symmetric (right panel) acyl chains at positions sn-1 and sn-2 as shown in Figure 1A. (B). Electron microscopy analysis of 22:6-22:6 or 18:0-22:6 liposomes after incubation with dynamin and with GTP or GTP\u03b3S. With GTP\u03b3S, numerous dynamin spirals formed and tubulated 22:6-22:6 liposomes but not in the presence of 18:0-22:6 liposomes. With GTP, dynamin extensively vesiculated 22:6-22:6 liposomes into very small (radius\u00a0<\u00a020 nm) structures, whereas large parental profiles were still abundant in the case of 18:0-22:6 liposomes. Scale bar, 500 nm. All lipid compositions are shown in Supplementary file 1.\n\n## Results\n\n### Comprehensive analysis of the effect of phospholipid unsaturation on dynamin GTPase activity\n\nGTP hydrolysis in the dynamin spiral occurs by a mutual nucleophilic attack between dynamin molecules from adjacent rungs (Chappie et al., 2011). Consequently, the rate of GTP hydrolysis depends on dynamin self-assembly and, in effect, increases from negligible values in solution where dynamin is not polymerized, to rates in the range of 2 to 5 s-1 on optimal membrane templates where dynamin forms spirals (Stowell et al., 1999). We reasoned that GTPase measurements should provide a robust, although indirect, assay to survey a comprehensive library of liposomes made of phospholipids of defined acyl chains for their permissibility to the mechanical activity of dynamin. Dynamin was purified from rat brain, which contains mostly the neuron-specific dynamin-1 isoform, which has a higher membrane curvature generating activity than dynamin-2, the ubiquitous isoform (Liu et al., 2011). This screen could also be performed in the presence of proteins that cooperate with dynamin (e.g. BAR domains). Thereafter, the most interesting membrane parameters could be further analyzed by more direct assays of dynamin mechanical activity (e.g. EM observations or assays with Giant Unilamellar Vesicles (GUVs)), which are difficult to standardize for large screens. This second round of analysis is important because conditions exist where dynamin readily self-assembles and undergoes fast GTP hydrolysis and yet does not efficiently promote membrane vesiculation (Neumann and Schmid, 2013; Stowell et al., 1999).\n\nWe prepared large unilamellar vesicles (extrusion 400 nm) made of five lipids: PC, PE, PS, phosphatidylinositol(4,5)bisphosphate (PI(4,5)P2) and cholesterol (Figure 1A). The relative amount of these lipids was kept constant and was chosen to be compatible with the recruitment of both dynamin, which interacts with PI(4,5)P2, and of BAR domain proteins, which interacts with negatively charged lipids (e.g. PS and PI(4,5)P2). However, PI(4,5)P2 was present at low density (1 mol %; close to physiological values) to amplify the need for other facilitating factors such as cooperation with endophilin and membrane flexibility. The only variable in the liposome formation was the acyl chain profile of PC, PE and PS, which accounted for 99% of total phospholipids. Using commercially available or custom lipids, we systematically changed the acyl chain profile in two ways (Supplementary file 1 and Figure 1A). First, we gradually increased the length and unsaturation level of both the sn1 and sn2 acyl chains of PC, PE and PS according to the series 14:0-14:0, 18:1-18:1 (omega-9), 18:2-18:2 (omega-6), 20:4-20:4 (omega-6), and 22:6-22:6 (omega-3). Considering that most physiological phospholipids have different acyl chains at positions sn1 and sn2 (Hanahan et al., 1960; Lands and Merkl, 1963; Tattrie, 1959; Yabuuchi and O'Brien, 1968), we performed a second series in which we maintained a saturated (18:0) acyl chain at position sn1 and solely changed the sn2 chain (18:0-18:1, 18:0-18:2, 18:0-20:4, 18:0-22:6). These asymmetric combinations are most frequent in mammalian lipids. The parallel increase in acyl chain length and unsaturation enabled all lipid mixtures to be fluid above 20\u00b0C (Huang, 2001).\n\nThe result of this comprehensive analysis is shown in Figure 1B (typical GTPase experiments are provided in Figure 1\u2014figure supplement 1A). Despite the identical composition of all liposomes in term of lipid polar head groups, the rate of GTP hydrolysis by dynamin varied up to 300-fold indicating that dynamin is very sensitive to the acyl chain content of the lipid membrane on which it acts. Two parameters emerged: acyl chain asymmetry and acyl chain unsaturation. First, the GTPase activity of dynamin increased dramatically (x 20) on membranes made of symmetric diunsaturated phospholipids compared to asymmetric saturated-unsaturated phospholipids. Second, the GTPase activity of dynamin increased with the unsaturated level of phospholipids (18:1\u00a0< 18:2 < 20:4 < 22:6), a trend that was observed in both symmetric and asymmetric phospholipid series.\n\n### Membranes with symmetric polyunsaturated phospholipids are highly permeable to solutes\n\nHow to explain the spectacular effect of symmetric diunsaturated phospholipids on the GTPase activity of dynamin? By negative staining electron microscopy, we observed that dynamin alone extensively deformed 22:6-22:6 liposomes, whereas 18:0-22:6 liposomes were largely unaffected (Figure 1C and Figure 1\u2014figure supplement 1B). The analysis was performed either in the presence of GTP\u03b3S, where dynamin self-assembles into stable spirals on membranes, or in the presence of GTP, where dynamin spirals further constrict to promote liposome vesiculation into round profiles of \u2248 20 nm in diameter. Liposomes containing phospholipids with two polyunsaturated acyl chains appeared exceptionally malleable as compared to liposomes made of phospholipids with one saturated and one polyunsatured acyl chain.\n\nDeformation of spherical liposomes is necessarily accompanied by a diminution of volume of the encapsulated solution. For example, the COPI coat is more efficient at making vesicles from liposomes that have been permeabilized with a pore-forming toxin (Manneville et al., 2008). Because a previous study reported that membranes made of 18:2-18:2-PC or 18:3-18:3 PC showed a two to three fold higher water permeability than membranes made of 18:0-18:1-PC or 18:0-18:2-PC (Olbrich et al., 2000), we suspected that membranes with dipolyunsaturated phospholipids might be very permissive to deformation by dynamin due to higher permeability.\n\nTo assess the permeability of our artificial membranes, we combined molecular dynamics simulations with various measurements. The simulations were performed at the all-atom scale on bilayers containing 2 \u00d7 144 phospholipids with the same composition as that used in the experiments. To evaluate water permeability, we determined the number of water molecules that visit the hydrophobic part of the membrane during a period of 100 ns (Figure 2A). These movements were subdivided into two classes: events in which the water molecule fully crosses the lipid bilayer; events in which the water molecule enters into the hydrophobic region of the bilayer and then exists on the same side. In saturated (14:0-14:0) membranes, only few water movements were detected. In membranes made of phospholipids with one unsaturated FA, the number of moving water molecules increased up to 10-fold with the level of acyl chain unsaturation (18:1\u00a0< 18:2 < 20:4 < 22:6) (Figure 2A). Importantly, membranes with phospholipids containing two unsaturated FA showed a further 2 to 3-fold increase in the number of moving water molecules as compared to membranes with asymmetric saturated-unsaturated phospholipids. This increase occurred whatever the acyl chain considered (e.g. 20:4-20:4 vs 18:0-20:4 or 22:6-22:6 vs 18:0-22:6).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig2-v3.jpg)\n\n**Figure 2.:** (A) Left: snapshot of a lipid bilayer with the same composition as that used in the dynamin GTPase assay. The red circle highlights a water molecule in the membrane hydrophobic region. Right: % of water molecules visiting the membrane hydrophobic region during a 100 ns simulation as a function of phospholipid acyl chain composition. (B) Hydratation of the interfacial region of the same liposomes as that used in Figure 1 as measured by the fluorescence of the push-pull pyrene dye PA. Left: typical emission fluorescence spectra. Right: emission wavelength as a function of phospholipid acyl chain composition. (C)\u00a0Dithionite-mediated NBD quenching assay. At t\u00a0=\u00a030 s, dithionite was added to the same liposomes as that used in the GTPase assay but also containing PE-NBD. The dotted line indicates 50% of quenching, which is the expected value if only externally orientated PE-NBD molecules are quenched by dithionite. At t\u00a0=\u00a0350 s, 0.1% Triton X-100 was added to allow the quenching of all PE-NBD molecules. Data on the right bar plot are mean\u00a0\u00b1variation from two independent experiments. (D) GUVs permeability measurements. GUVs containing the 55 mol % of the indicated polyunsaturated phospholipids were incubated with soluble Alexa488 and imaged by confocal microscopy. Data show all GUVs measured from six independent experiments and from two independent GUV preparations (large horizontal bar: mean; vertical bar SD). All lipid compositions are detailed in Supplementary file 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The experiment was performed in the presence of the same liposomes as that used in Figure 1 to determine the hydratation of the membrane interfacial region.All lipid compositions are shown in Supplementary file 1.\n\nIf membranes with symmetric polyunsaturated phospholipids are more hydrated than membranes with asymmetric saturated-unsaturated phospholipids, this should influence the fluorescence of polarity-sensitive dyes at the membrane interface. To investigate this possibility, we used a recently synthesized push-pull pyrene (PA). This probe, similarly to the popular probe Laurdan, changes its emission maximum as a function of membrane hydration and solvent relaxation, which are parameters linked to lipid order (Niko et al., 2016). PA showed a gradual red shift in emission when the number of double bonds in the sn2 acyl chain increased (18:0-18:1\u00a0< 18:0-18:2 < 18:0-20:4 < 18:0-22:6) (Figure 2B and Figure 2\u2014figure supplement 1). However, replacing asymmetric saturated-polyunsaturated phospholipids with dipolyunsaturated phospholipids caused a much larger red shift (Figure 2B and Figure 2\u2014figure supplement 1; e.g. 18:0-22:6\u00a0<<\u00a022:6-22:6), suggesting that duplication of the PUFA in phospholipids dramatically increased membrane hydration.\n\nConsidering the importance of maintaining ion gradients across biological membranes, we next assessed the permeability of our liposomes to the oxoanion dithionite ([S2O4]2-) by an NBD quenching assay. When added to liposomes, dithionite (MW\u00a0=\u00a0128 Da) immediately quenches the fraction of (C16:0-C16:0) PE-NBD that is present in the outer leaflet. This fraction is about 50% but varies depending on factors like membrane curvature or the presence of multi-lamellar liposomes (Kamal et al., 2009). Thereafter, dithionite slowly quenches the remaining PE-NBD molecules. This process occurs either by penetration of dithionite into the liposomes or because of PE-NBD flip-flop. Previous work established that dithionite entry is about 1000 times faster than lipid flip-flop (Armstrong et al., 2003). Therefore, the slow phase in PE-NBD quenching experiments should reflect dithionite permeability. Figure 2C shows that membrane permeability to dithionite modestly increased with the level of polyunsaturation in asymmetric phospholipids (18:0-18:1\u00a0< 18:0-18:2 < 18:0-20:4 < 18:0-22:6) and that liposomes with symmetric polyunsaturated phospholipids showed a\u00a0>\u00a010 fold higher permeability. This effect was particularly evident for 20:4-20:4 and 22:6-22:6 membranes: 95% of PE-NBD was quenched after 300 s incubation with dithionite as compared to 55\u201360% in the case of 20:4 and 18:0-22:6 membranes. Note that the liposomes used in the dithionite experiments were the same as that used in the dynamin experiments (see Figure 1B) to allow a direct comparison between the two assays. However, a drawback of liposomes obtained by extrusion through large pore size filters (here 400 nm), is the presence of multi-lamellar species (Kamal et al., 2009). For such species, dithionite has to cross several bilayers to fully quench all PE-NBD molecules. This effect probably explains why the second phase of PE-NBD quenching, although quite fast in the case of 20:4-20:4 and 22:6-22:6 liposomes, was not complete; a small percentage (\u2248 5%) of NBD signal remained unquenched after 300 s incubation (Figure 2C). Despite these limitations, these experiments suggest that the presence of two polyunsaturated acyl chains in phospholipids strongly compromise membrane impermeability to ions.\n\nLast, we visualized the permeability of GUVs to the large fluorescent solute Alexa A488 maleimide (MW\u00a0=\u00a0720 Da). This compound was added externally to the GUVs, which were imaged by fluorescence microscopy (Figure 2D). Again, the difference between symmetric and asymmetric polyunsaturated phospholipids was clear-cut. GUVs containing 55 mol% 22:6-22:6 phospholipids were about 10 times more permeable to Alexa A488 maleimide than GUVs containing 55 mol% 18:0-22:6 phospholipids.\n\nAltogether, these experiments revealed a remarkable correlation between the ability of dynamin alone to readily vesiculate membranes and the permeability of these membranes to water and even to large or charged solutes.\n\n### Dynamin GTPase activity on asymmetric saturated-polyunsaturated phospholipids\n\nIf membranes with symmetric diunsaturated phospholipids appear exceptionally prone to vesiculation by dynamin, their high permeability to ions and large solutes disqualify them for the formation of selective membrane barriers. The GTPase assay of Figure 1B and the membrane permeability experiments of Figure 2 suggest that asymmetric saturated-polyunsaturated phospholipids offer a compromise between low permeability and dynamin activity. Even though the intrinsic GTPase activity of dynamin on such liposomes was low, it increased about 10 times in the presence endophilin-A1 (Figure 1B).\n\nIn cells, endophilin works in close partnership with dynamin both through protein/protein interactions and through the ability of the two proteins to form membrane-deforming spirals (Boucrot et al., 2015; Farsad et al., 2001; Sundborger et al., 2011). The BAR domain of endophilin is followed by an SH3 domain, which interacts with the proline-rich region of dynamin leading to cooperative BAR/dynamin membrane recruitment\u00a0(Farsad et al., 2001; Meinecke et al., 2013; Sundborger et al., 2011). In addition, membrane deformation by BAR domains facilitates dynamin self-assembly, which by itself is a relatively weak membrane deforming protein and which preferentially self-assembles on pre-curved membranes (Neumann and Schmid, 2013; Roux et al., 2010), unless the membranes are particularly deformable as observed with symmetric unsaturated phospholipids (Figure 1C).\n\nThese considerations and the fact that asymmetric polyunsaturated phospholipids are much more frequent than symmetric ones in biological membranes prompted us to focus on reconstitutions in which both dynamin and endophilin were present and acted on membranes with asymmetric phospholipids. Under such conditions, the exact nature of the sn2 acyl chain appeared very important: significant differences in the dynamin GTPase activity were observed between acyl chain combinations that are chemically very close (e.g. 18:0-20:4 vs 18:0-22:6) (Figure 1A).\n\nTo better analyze these differences, we repeated the GTPase assay under conditions where we gradually increased the amount of asymmetric polyunsaturated phospholipids at the expense of 18:0-18:1 phospholipids (Figure 3). Two omega-3 combinations (18:0-18:3 and 18:0-22:6) and two omega-6 combinations (18:0-18:2 and 18:0-20:4) were included in the analysis to evaluate the importance of the double bond position. All polyunsaturated phospholipids facilitate dynamin GTPase activity. However, the effect of 18:0-22:6 phospholipids surpassed by 2 to 4-fold that observed with the less complex asymmetric polyunsaturated phospholipids (18:0-18:2, 18:0-18:3 and 18:0-20:4) (Figure 3). Dynamin GTPase activity plateau at about 60 mol% of 18:0-22:6 phospholipids, close to the amount of polyunsaturated lipids in synaptic vesicles (Takamori et al., 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig3-v3.jpg)\n\n**Figure 3.:** GTPase activity of dynamin (0.3 \u00b5M) in the presence of endophilin (0.6 \u00b5M) and with large liposomes (400 nm extrusion) containing increasing amounts of the indicated asymmetric polyunsaturated phospholipids at the expense of 18:0-18:1 phospholipids. Data are mean\u00a0\u00b1SD from three independent experiments. All lipid compositions are shown in Supplementary file 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) GTPase rate of dynamin (0.3 \u00b5M)\u00b1endophilin (0.6 \u00b5M) with large liposomes (400 nm extrusion) containing PS, PE, and PC with the indicated acyl chains, cholesterol and supplemented with 0% to 5% PIP2 at the expense of PC (see Supplementary file 1 for the exact lipid composition). (B) GTPase rate of dynamin (0.3 \u00b5M) in the absence of in the presence of endophilin (0.6 \u00b5M) or SNX9 (0.6 \u00b5M) and with liposomes of fixed polar head composition but different acyl chain profiles.\n\nTo check that the effect of asymmetric polyunsaturated phospholipids was not restricted to our particular conditions, we modified several parameters. First, we varied the % of PI(4,5)P2. In a background of 18:0-18:1 phospholipids, the GTPase activity of dynamin in the presence of endophilin was low and increased with the % of PI(4,5)P2 (from 0% to 5%; Figure 3\u2014figure supplement 1A). In a background of 18:0-18:2, 18:0-18:3 or 18:0-20:4 phospholipids, the GTPase activity was much higher and required not more than 1 mol% PI(4,5)P2. Strikingly, the activity of dynamin was almost maximal with 18:0-22:6 phospholipids even in the absence of PI(4,5)P2 (Figure 3\u2014figure supplement 1A). Next, we replaced endophilin by SNX9, another BAR-domain containing protein that interacts with dynamin. Both endophilin and SNX9 increased dynamin activity much more efficiently on membranes containing 18:0-22:6 phospholipids or 18:0-20:4 than 18:0-18:1 phospholipids (Figure 3\u2014figure supplement 1B). In addition, SNX9 was more efficient than endophilin for assisting dynamin activity in agreement with a previous study (Neumann and Schmid, 2013). All these experiments converge towards the same conclusions. First, all asymmetric saturated-polyunsaturated phospholipids favor dynamin GTPase activity, notably under conditions close to physiological conditions (low concentration of PI(4,5)P2, low protein concentration, cooperation with BAR-domain proteins). Second, docosahexaenoic acid (22:6), which is the most polyunsaturated species of the omega-3 family, surpasses all other tested species including arachidonate (20:4), the most polyunsaturated species of the omega-6 family.\n\n### Membrane fission by dynamin and endophilin is sensitive to the omega-6/omega-3 ratio\n\n18:0-20:4 and 18:0-22:6 phospholipids are abundant in specialized membranes (e.g. synaptic vesicles; Takamori et al., 2006). Considering the importance of the omega-6/omega-3 ratio for health, we next focused on these acyl chain combinations and used 18:0-18:1 membranes as negative control.\n\nBy transmission electron microscopy (TEM) we observed that both 18:0-20:4 and 18:0-22:6 liposomes but not 18:0-18:1 liposomes, became extensively deformed after incubation with dynamin, endophilin and GTP\u03b3S or GTP. With GTP\u03b3S, membrane tubulation dominated (Figure 4A). The tubes were surrounded by a protein spiral with a pitch of\u00a0~20 nm characteristic of the endophilin-dynamin complex (Farsad et al., 2001; Pinot et al., 2014; Sundborger et al., 2011) (Figure 4B and Figure 4\u2014figure supplement 1A). However, the tubes formed from 18:0-22:6 membranes were significantly thinner than the tubes formed from 18:0-20:4 membranes (Figure 4B). With GTP present, liposome vesiculation dominated (Figure 4A). The size distribution of the membrane profiles was different between 18:0-20:4 and 18:0-22:6 phospholipids (Figure 4C). With 18:0-20:4 phospholipids, there was a remaining peak of large membrane profiles (R\u00a0>\u00a050 nm), which coexisted with a peak of small vesicles (R\u00a0<\u00a050 nm). With 18:0-22:6 phospholipids, the liposomes were almost fully transformed into small vesicles. In addition, the vesicles formed from 18:0-22:6 membranes were slightly smaller than that formed from 18:0-20:4 membranes (Figure 4C). Note that after short incubation with GTP, some tubes were observed both with 18:0-20:4 and 18:0-22:6 liposomes (Figure 4\u2014figure supplement 1B). These tubes were not straight as with GTP\u03b3S but showed constrictions, suggesting snapshots in the process of membrane fission (black arrows in Figure 4\u2014figure supplement 1B)\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig4-v3.jpg)\n\n**Figure 4.:** (A) Electron micrographs of 18:0-18:1, 18:0-20:4 and 18:0-22:6 liposomes (400 nm extrusion) before or after incubation with dynamin (0.5 \u00b5M), endophilin (1 \u00b5M), and GTP or GTP\u03b3S (500 \u00b5M). Scale bar, 500 nm. (B\u2013C) Quantification of membrane tubulation (B) and vesiculation (C) from three independent experiments similar to that shown in A. In B, the tube radius and the protein spiral pitch was determined after 5 or 15 min incubations of the liposomes with dynamin, endophilin and GTP\u03b3 (see also\u00a0Figure 4\u2014figure supplement 1). In C, the size distribution of the membrane profiles was determined after 30 min incubation of the liposomes with dynamin, endophilin and GTP. All lipid compositions are showed in Supplementary file 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Illustration of the measurements used to quantify the effect of dynamin and endophilin on liposomes in TEM experiments. These include the tube radius, the pitch of the dynamin\u00a0+\u00a0endophilin spiral and the size of the circular profiles. (B) Electron micrographs of C18:0-C20:4 or C18:0-C22:6 liposomes (400-nm\u00a0extrusion) after 15 min incubation with dynamin (0.5 \u00b5M), endophilin (1 \u00b5M), and GTP or GTP\u03b3S (500 \u00b5M) at room temperature. Black arrows show membrane constructions; white arrows show tube breakages. Scale bar, 200 nm. All lipid compositions are shown in Supplementary file 1.\n\nConsidering the technical limitations caused by spontaneous membrane fission on TEM grids (Danino et al., 2004), we next performed a GUV shrinking assay (Meinecke et al., 2013). In these experiments, dynamin, endophilin and GTP were added to GUVs containing 55 mol% of polyunsaturated phospholipids, which were pre-stabilized in buffer at the reaction temperature (37\u00b0C). Dynamin, endophilin and GTP caused GUV consumption over time for both 18:0-20:4 and 18:0-22:6 membranes (Figure 5A) but not for the control GUVs that contained only 18:0-18:1 phospholipids (Figure 5\u2014figure supplement 1A and B). After 1 hr of incubation, the difference between 18:0-20:4 and 18:0 22:6 phospholipids was significant, as we detected a larger population of shrunk 18:0-22:6 GUVs and a higher amount of intact 18:0-20:4 GUVs (Figure 5B). The difference in GUV shrinking between 18:0-20:4 and 18:0-22:6 phospholipids was already evident after 15 min and increased over time (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig5-v3.jpg)\n\n**Figure 5.:** GUVs containing 18:0-20:4 or 18:0-22:6 phospholipids were incubated with dynamin (0.5 \u00b5M) and endophilin (1 \u00b5M) in presence of GTP (500 \u00b5M) for 60 min at 37\u00b0C. (A) Colored images showing overlays of the GUVs at time 0 (red) and after 60 min incubation (green). Note the collapse of the GUV containing 18:0-22:6 after 60 min incubation with the protein-nucleotide mixture. (B\u2013C) Quantification of the experiment shown in (A) showing the GUV shrinking distribution after 60 min and mean\u00a0\u00b1SD over the time. Data are obtained from\u00a0~100 GUVs from five independent preparations. All lipid compositions are showed in Supplementary file 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** GUVs containing the indicated amounts of C18:0-C18:1 were incubated with dynamin (0.5 \u00b5M) and endophilin (1 \u00b5M) in presence of GTP (500 \u00b5M) for 60 min at 37\u00b0C.\u00a0(A) The colored images show overlays of the GUVs at time 0 (red) and after 60 min incubation (green). No significant effect was detected on these GUVs as compared to GUVs with polyunsaturated phospholipids (see Figure 5). (B\u2013C) Quantification of the experiment shown in (A) showing the GUV shrinking distribution after 60 min and mean\u00a0\u00b1SD over the time. Data are obtained from\u00a0~20 GUVs from one preparation. Lipid composition is shown in Supplementary file 1.\n\n### Differences between asymmetric polyunsaturated phospholipids as captured by MD simulations\n\nTo better understand the advantage provided by asymmetric polyunsaturated phospholipids on membrane deformation and fission, we conducted MD simulations on lipid bilayers. In the coarse-grained mode, we considered large membrane patches and imposed a pulling force to deform them into a tube, which might undergo fission (Baoukina et al., 2012; Pinot et al., 2014) (Figure 6A and B). This approach is informative in terms of membrane mechanics, but the 1:4 scale of the MARTINI force field (one elementary bead for 3 to 4 bonded atoms) makes the depiction of the chemistry of polyunsaturated phospholipids quite imprecise. Nevertheless, we could construct PC bilayers in which acyl chains made of 4 or five beads approximate the series 18:0-18:1, 18:0-18:2, 18:0-20:4 and 18:0-22:6 (Figure 6A and B). In the all-atom mode, we considered membrane patches of 2 \u00d7 144 phospholipids with the same composition as that used in the experiments. This approach is limited to flat membranes but enables an accurate description of the slight chemical differences between polyunsaturated acyl chains (Figure 6C\u2013E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig6-v3.jpg)\n\n**Figure 6.:** (A) Top: snapshots at t\u00a0=\u00a0200 ns of tubes as pulled with a 200 KJ mol\u22121 nm\u22121 force from coarse-grained models of membranes with the indicated asymmetric polyunsaturated PC. Bottom: plot of L/R as a function of the pulling force. The tube geometry was analyzed at t\u00a0=\u00a0200 ns. (B) Top: snapshots of a tube pulling coarse-grained simulation (Force\u00a0=\u00a0250 KJ mol\u22121 nm\u22121) obtained from a membrane with 18:0-20:4 PC and showing elongation and fission. See also Video 1. Bottom: summary of all simulations. Elongation, fission (F) and breakage events (B) are indicated. In contrast to fission, a breakage event corresponds to a rupture at the level of the lipids where the pulling force is applied. (C\u2013F) Dynamics of the acyl chains of asymmetric polyunsaturated phospholipids from all-atom simulations. The analysis was performed on flat membrane patches with the same composition as that used in the experiments. (C) Velocity rate of the terminal CH3 group of the acyl chain along either the membrane normal (z velocity) or in the membrane plane (x-y velocity). (D) Frequency of acyl chain torsions as defined as conformations for which the acyl chain displays an angle\u00a0<100\u00b0. (E) Number of protrusions of the CH3 group above the glycerol group of phospholipids. Color code for coarse-grained simulations: grey: lipid polar head and glycerol; orange: acyl chain regions with double carbon bonds; yellow: acyl chain regions with single carbon bonds. Color code for all-atom simulations: Grey: lipid polar head; cyan: glycerol; yellow: sn1 or sn2 acyl chains.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0Comparison of an authentic fission event and a breakage event. In the first case, the membrane divides below the phospholipid patch (red) that endures the pulling force. In the second case, the membrane divides within the phospholipid patch (red) that endures the pulling force (B) Time course of tube pulling from coarse-grained models of membranes with asymmetric polyunsaturated phospholipids. Traces ending before 200 ns correspond to tubes that underwent breakage (B) or fission (F). See also Figure 6A\u2013B.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig6-figsupp2-v3.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34394/elife-34394-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Velocity rate of the terminal CH3 group of the acyl chains along the membrane normal (z velocity). For comparison, the values shown in Figure 6 for natural phospholipids have been reported. (B) Density profile of the acyl chains across the membrane bilayer. Also shown are the density profiles of the phosphate group, which were used to estimate the bilayer thickness. (C) Summary of the membrane tether pulling simulations. See also Video 2.\n\nFor all coarse-grained membranes tested, applying a constant force above a threshold of 175 kJ mol\u22121 nm\u22121 induced the formation of a tube, which grew by a fast protrusion phase followed by a linear phase as previously observed (Baoukina et al., 2012). Increasing the degree of phospholipid polyunsaturation (18:0-18:1\u00a0< 18:0-18:2 < 18:0-20:4 < 18:0-22:6) accelerated the linear phase and resulted in the formation of longer and thinner tubes (Figure 6A and Figure 6\u2014figure supplement 1A and B). Because the bending energy of a membrane tube is proportional to the ratio between tube length and radius (Eb = \u03c0\u039abL/R), we plotted L/R as a function of the applied force (Figure 6A). At t\u00a0=\u00a0200 ns and for F\u00a0=\u00a0200 KJ mol\u22121 nm\u22121, L/R\u00a0=\u00a06, 12, 16 and 20 nm/nm for 18:0-18:1, 18:0-18:2, 18:0-20:4 and 18:0-22:6 tubes, respectively. Considering that these tubes should have stored the same curvature energy, these changes in L/R suggested inverse changes in membrane bending rigidity: 18:0-18:2, 18:0-20:4 and 18:0-22:6 membranes had relative values of \u039ab equal to 50%,\u00a035% and 30% of \u039ab for 18:0-18:1 membranes, respectively.\n\nDuring the time of the simulations (200 ns), we observed fission events for some tubes formed from 18:0-20:4 and 18:0-22:6 membranes but not from 18:0-18:1 or 18:0-18:2 membranes (Figure 6B, Figure 6\u2014figure supplement 1A and Video 1). Although the number of simulations did not allow us to establish robust statistics, we noticed that the force threshold at which fission occurred was lower for 18:0-22:6 membranes than for 18:0-20:4 membranes (Figure 6B and Figure 6\u2014figure supplement 1B). Moreover, fission occurred sooner for 18:0-22:6 tubes as compared to 18:0-20:4 tubes. Thus, the coarse-grained simulations agreed well with the experiments: the propensity of membranes to undergo deformation and fission correlates with the unsaturation level of the phospholipid sn2 acyl chain.\n\n![Video 1.](https://cdn.elifesciences.org/articles/34394/elife-34394-video1.mp4.jpg)\n\nFor all-atom bilayers, we focused on parameters informative for the tendency of the phospholipid acyl chains to depart from the straight conformation. This tendency allows phospholipids to adopt different shapes and, consequently, to reduce the stress induced by membrane curvature (Pinot et al., 2014). We determined (i) the speed at which the terminal CH3 group moves along the membrane normal (z velocity) vs membrane plane (x velocity); (ii) the frequency of FA torsions (when the acyl chain displays an angle\u00a0<100\u00b0), (iii) the number of protrusions of the terminal CH3 group above the glycerol during 100 ns; and (iv) the density of lipid packing defects, that\u00a0is interfacial regions where aliphatic carbons are directly accessible to the solvent. Figure 6C\u2013E and Figure 6\u2014figure supplement 2 show that whatever the parameter considered, the calculated value always increased with the polyunsaturation level of the sn2 chain, with 22:6 clearly surpassing all other polyunsaturated FAs. In contrast, the behavior of the sn1 18:0 chain was relatively constant and appeared poorly dependent on the nature of the neighboring sn2 chain. Altogether, these various analyses show that the main effect of having an sn2 polyunsaturated chain in phospholipids is to increase the probability of fast movements of along the z-axis.\n\nTo determine whether the membrane features endowed by the polyunsaturated acyl chain depend on its esterification at position sn2 as observed in natural lipids, we performed molecular dynamics simulations on phospholipid bilayers in which we swapped the sn1 and sn2 acyl chains (Figure 6\u2014figure supplement 3). In all atom simulations, we observed that the rough features distinguishing the saturated and the polyunsaturated acyl chains remained after having permutated their position. These include z velocity, acyl chain torsions, and number of protrusions (Figure 6\u2014figure supplement 3A). However, measurements of the acyl chain density across the bilayer indicated that acyl chain swapping modified the mean position of the saturated and polyunsaturated acyl chains across the bilayer (Figure 6\u2014figure supplement 3B). This effect probably resulted from the tilted orientation of glycerol, which makes the sn1 and sn2 positions not equivalent in term of z coordinates. In natural phospholipids, the density profile of the sn1 saturated FA showed a peak in the bilayer center whereas the sn2 polyunsaturated FA showed a characteristic dip. This shift indicates that the sn1 saturated FA tail invaded the central region of the bilayer left vacant by the sn2 polyunsaturated FA, which goes up (Eldho et al., 2003). With swapped 22:6-18:0 phospholipids, this difference in density disappeared and the membrane appeared thinner than with natural 18:0-22:6 phospholipids (Figure 6\u2014figure supplement 3B). Thus, the relative esterification position of the saturated and polyunsaturated FAs in natural lipids facilitates compensatory z movements where the polyunsaturated FA explores the interfacial region while the saturated FA explores the bilayer center. In coarse-grained simulations, the propensity of the membrane to undergo tubulation and fission increased with the level of phospholipid polyunsaturation (18:1-18:0\u00a0<\u00a020:4-18:0 \u2248\u00a022:6-18:0), that\u00a0is the same trend as that observed on classical sn1-saturated-sn2-unsaturated membranes (Figure 6\u2014figure supplement 3C). In addition, acyl chain swapping did not significantly modify\u00a0membrane fission (Figure 6\u2014figure supplement 3C and Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/34394/elife-34394-video2.mp4.jpg)\n\n## Discussion\n\nAlthough a wealth of information is available on the interactions between endocytic proteins and specific lipids (Puchkov and Haucke, 2013), the role of the hydrophobic membrane matrix has been poorly investigated. In vivo, manipulating the acyltransferases that are responsible for the large differences in the acyl chain profile of differentiated cells is challenging and is just starting to emerge (Hashidate-Yoshida et al., 2015; Rong et al., 2015). In vitro, purified lipids are generally available from disparate sources (e.g. egg PC, brain PS), implying different acyl chain profiles. Synthetic lipids provide the best alternative but the most affordable ones generally display symmetric acyl chain combinations. This is exemplified by DOPS (18:1-18:1 PS), which has allowed spectacular advances in our understanding of the structure of the dynamin spiral (Chappie et al., 2011), but is very rare in mammalian membranes (Yabuuchi and O'Brien, 1968). Overall, the membrane templates on which dynamin and its partners have been studied are generally ill defined in terms of acyl chain profiles. Our comprehensive analysis indicates that acyl chain asymmetry and acyl chain polyunsaturation have major effects on the mechanical activity of dynamin.\n\nA few studies have established that polyunsaturated phospholipids considerably modify the properties of membranes (Armstrong et al., 2003; Eldho et al., 2003; Garcia-Manyes et al., 2010; Huang, 2001; Olbrich et al., 2000; Rawicz et al., 2000). For LUVs, a high dithionite permeability of membranes containing 18:3-18:3 phospholipids has been reported (Armstrong et al., 2003). For GUVs, micropipette manipulations indicate that the presence of at least one polyunsaturated acyl chain results in a drop of the membrane bending modulus whereas the presence of two polyunsaturated acyl chains causes a jump in water permeability (Olbrich et al., 2000; Rawicz et al., 2000). These pioneer studies were performed on membranes made of a single lipid (PC) with a limited combination of acyl chains and in the absence of mechanically active proteins. By using lipid mixtures covering a larger spectrum of acyl chain profiles and by including membrane shaping/fission proteins, our study underlines the importance of both phospholipid polyunsaturation and phospholipid acyl chain asymmetry in membrane mechanics.\n\nDepending on its acyl chain profile, a membrane can be either very resistant or very permissive to dynamin-mediated membrane vesiculation despite harboring the proper repertoire of polar head groups for protein recruitment. However, these manipulations can also cause large changes in membrane permeability. Our analysis uncovers a narrow chemical window that allows phospholipid membranes to be both highly deformable and still impermeable to small solutes. Membranes with asymmetric saturated-polyunsaturated phospholipids such as 18:0-20:4 or 18:0-22:6 phospholipids are much less leaky than membranes with symmetrical 20:4-20:4 or 22:6-22:6 phospholipids but can still be readily vesiculated by dynamin provided that BAR-domain proteins are present. Evidently, these features are advantageous for membranes such as synaptic membranes that undergo super-fast endocytosis (Watanabe and Boucrot, 2017). Furthermore, the fact that membranes with 18:0-22:6 phospholipids are systematically more permissive to the mechanical activity of dynamin and endophilin than membranes with 18:0-20:4 phospholipids is of interest given the importance of the omega-6/omega-3 ratio for health and notably for brain function.\n\nThe distinctive chemical feature of polyunsaturated acyl chains is the presence of saturated carbons (CH2) sandwiched between two unsaturated ones (=CH-CH2-CH=). Rotational freedom around these CH2 groups is exceptionally high as compared to rotation around the CH2 groups of monounsaturated or saturated acyl chains (Feller et al., 2002). Our MD simulations indicate that motions of the acyl chain along the normal of the membrane (z movements) increase in speed and in amplitude with the level acyl chain polyunsaturation (18:2\u00a0< 18:3 < 20:4 < 22:6). Such movements should allow phospholipids to readily adapt their conformation to membrane curvature (Barelli and Antonny, 2016; Pinot et al., 2014), hence explaining the gradual decrease in membrane bending rigidity. Concurrently, the presence of a neighboring saturated acyl chain should secure lipid packing and prevents the passage of small molecules. Whether this model also accounts for the facilitation of the fission step per se remains, however, difficult to assess. This step involves a change in membrane topology for which rare events such as protrusions of the terminal CH3 groups could be decisive as they could nucleate bilayer merging or favor friction effects by proteins (Simunovic et al., 2017).\n\nOther variations in the acyl chain content of mammalian phospholipids will deserve further investigations. First, we did not consider C22:5 acyl chains (omega-6 or omega-3), which are closer to C22:6 than C20:4 (Eldho et al., 2003). Although not abundant, C22:5 acyl chains are present in brain phospholipids (Yabuuchi and O'Brien, 1968). Second, we did not study the influence of the linkage between the acyl chains and glycerol. Plasmalogens, which form a large subclass of PE in the brain, harbor a sn1 saturated acyl chain that is bound to the glycerol through an ether-vinyl bond. Interestingly, ether-vinyl phospholipids considerably decrease the permeability of model membranes to ions because these lipids pack more tightly than their ester counterparts (Zeng et al., 1998). The influence of plasmalogens on membrane flexibility and fission remains to be investigated. Last, we only partially addressed the bias observed in natural phospholipids, where saturated and polyunsaturated acyl chains are preferentially esterified on different positions of the glycerol backbone (sn1 and sn2, respectively). Our simulations suggest that some general traits provided by the combination of one saturated acyl chain and one unsaturated acyl chain are preserved when the acyl chains are swapped between the sn1 and sn2 positions; notably the fact that membrane deformation and fission is facilitated by the level of polyunsaturation (18:1-18:0\u00a0<\u00a020:4-18:0 \u2248\u00a022:6-18:0). Testing this hypothesis by in vitro reconstitutions will require considerable efforts in lipid synthesis since swapped phospholipids are not commercially available.\n\nThe abilities to vesiculate and to act as selective barriers are two fundamental properties of cellular membranes. Without membrane vesiculation, a cell cannot divide; without selective permeability, it cannot control the concentration of its nutrients. Experiments aimed at mimicking the emergence of primitive membranes have illuminated how these properties need to be finally balanced. Single chain amphiphilic molecules (e.g. fatty acids), the most plausible building blocks for primitive membranes, can self-assemble into bilayers, which spontaneously vesiculate (Bruckner et al., 2009). However, these bilayers are very leaky to even large solutes (in the 103 Da range). Later, the shift from single chain to dual chain lipids has probably allowed primitive cells to reduce the general permeability of their membrane, thereby imposing an evolutionary pressure for the emergence of specialized transporters (Budin and Szostak, 2011). The experiments presented here suggest that phospholipids with one saturated and one polyunsaturated acyl chain, which are absent in many eukaryotes (e.g. yeast) but abundant in some highly differentiated cells (e.g. neurons, photoreceptors, sperm) provide a solution to an early dilemma in evolution: finding the right balance between efficient membrane vesiculation without loss in membrane permeability. Moreover, the fact that saturated-DHA (omega-3) phospholipids are systematically better for membrane vesiculation than many other saturated-polyunsaturated phospholipids, including saturated-arachidonate (omega-6), is informative considering the importance of the omega-6/omega-3 ratio for health.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1-stearoyl-2-oleoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-18:1 PC | 850467</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1-stearoyl-2-linoleoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-18:2 PC | 850468</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1-stearoyl-2-linolenoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td></td>\n      <td>18:0-18:3 PC Custom</td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1-stearoyl-2-arachidonoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-20:4 PC | 850469</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1-stearoyl-2-docosahexaenoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-22:6 PC | 850472</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1,2-dimyristoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 14:0 PC (DMPC) | 850345</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1,2-dioleoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:1 (\u03949-Cis) PC (DOPC) | 850375</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1,2-dilinoleoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:2 (Cis) PC (DLPC) | 850385</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1,2-diarachidonoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>20:4 (Cis) PC | 850397</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylcholine</td>\n      <td>1,2-didocosahexaenoyl-sn-glycero-3-phosphocholine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>22:6 (Cis) PC | 850400</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1-stearoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>18:0-18:1 PE | 850758</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1-stearoyl-2-linoleoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>18:0-18:2 PE | 850802</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1-stearoyl-2-linolenoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td></td>\n      <td>18:0-18:3 PE Custom</td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1-stearoyl-2-arachidonoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-20:4 PE | 850804</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1-stearoyl-2-docosahexaenoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-22:6 PE | 850806</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1,2-dimyristoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 14:0 PE | 850745</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:1 (\u03949-Cis) PE (DOPE) | 850725</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1,2-dilinoleoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:2 PE | 850755</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1,2-diarachidonoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 20:4 PE | 850800</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphoethanolamine</td>\n      <td>1,2-didocosahexaenoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 22:6 PE | 850797</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1-stearoyl-2-oleoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-18:1 PS | 840039</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1-stearoyl-2-linoleoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-18:2 PS | 840063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1-stearoyl-2-linolenoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td></td>\n      <td>18:0-18:3 PS Custom</td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1-stearoyl-2-arachidonoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-20:4 PS | 840064</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1-stearoyl-2-docosahexaenoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:0-22:6 PS | 840065</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1,2-dimyristoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 14:0 PS | 840033</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1,2-dioleoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:1 PS (DOPS) | 840035</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1,2-dilinoleoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 18:2 PS | 840040</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1,2-diarachidonoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 20:4 PS | 840066</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatidylserine</td>\n      <td>1,2-didocosahexaenoyl-sn-glycero-3-phospho-L-serine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Ref 22:6 PS | 840067</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein purification and labelling\n\nProteins were purified as described (Pinot et al., 2014; Stowell et al., 1999). Dynamin was purified from rat brain using a recombinant amphiphysin-2 SH3 domain as an affinity ligand. Brain extracts were incubated with 10 mg ml-1 glutathione-S-transferase-tagged amphiphysin-2 SH3 domain on glutathione\u2013agarose beads at 4\u00b0C. After extensive washing of the matrix in buffer A (100 mM NaCl, 20 mM HEPES, pH 7.3, 1 mM dithiothreitol (DTT)), dynamin was eluted in 3 ml buffer B (1.2 M NaCl, 20 mM HEPES, pH 6.5, 1 mM DTT), and dialysed overnight into 200 mM NaCl, 20 mM HEPES, 20% glycerol. Full-length mouse endophilin A1 in pGEX-6p1 (gift of A. Schmidt) was expressed in E coli for 3 hr at 37\u00b0C after induction with 1 mM IPTG. Cells were lysed in 50 mM Tris pH 7.4, 150 mM NaCl using a French press in the presence of antiproteases and spun at 40,000 rpm for 30 min at 4\u00b0C. The supernatant was incubated with glutathione-Sepharose 4B beads followed by extensive washes in lysis buffer. PreScission protease was directly added to the beads at 4\u00b0C overnight under gentle agitation to cleave the fusion protein. Endophilin was recovered in supernatant and further purified on a Superdex 200 column in 20 mM Tris pH 7.4, 300 mM KCl, 5 mM imidazole, 1 mM DTT.\n\n### Preparation of liposomes\n\nLipids were purchased from Avanti Polar Lipids as chloroform solutions (see Key resources table). These included the following species of phosphatidylcholine (PC), phosphatidylethanolamine (PE) and phosphatidylserine (PS): 14:0-14:0, 18:0-18:1, 18:1-18:1, 18:0-18:2, 18:2-18:2, 18:0-18:3, 18:0-20:4, 20:4-20:4, 18:0-22:6 and 22:6-22:6. Note that 18:0-18:3 phospholipid species were custom-made lipids from Avanti. Phosphatidylinositol (4,5)bisphosphate (PIP2) was from natural source (brain). Submicrometer liposomes used for biochemical experiments and for electron microscopy were prepared by extrusion. A lipid film containing phospholipids and cholesterol at the desired molar ratio (see Table S1-3 in supplementary file 1) was formed in a rotary evaporator and hydrated at a final lipid concentration of 1 mM in a freshly degassed HK buffer (50 mM Hepes pH 7.2, 120 mM K Acetate) supplemented with 1 mM DTT. The suspension was submitted to five cycles of freezing and thawing and stored at \u221220\u00b0C under argon to avoid lipid oxidation. Calibrated liposomes were obtained by extrusion through 400 or 100 nm polycarbonate filters using a hand extruder (Avanti Polar Lipids). The size distribution of the liposomes was determined by dynamic light scattering at a final concentration of 0.1 mM lipids in HK buffer. All liposome suspensions were used within 1\u20132 days after extrusion. Special care was taken to minimize lipid oxidation by using fleshly degassed buffer (supplemented with 1 mM DTT) and by storing the liposome suspensions under argon.\n\n### Preparation of GUVs\n\nGiant unilamellar vesicles were generated by electroformation as described (Pinot et al., 2014) with the following modifications. Lipid mixtures (0.5 mg/ml; see Table S4 in supplementary file 1) in chloroform were deposited on indium tin oxide coated glass slides at 50\u00b0C to prevent lipid de-mixing and dried under vacuum for 1 hr to remove all solvents. After this step, sucrose 250 mM osmotically equilibrated with buffers was added to the chamber. GUVs were electroformed (Angelova et al., 1992) with Vesicle Prep Pro (Nanion Technologies GmbH, Munich, Germany), applying an AC electric field with 3 V and 5 Hz for 218 min at 37\u00b0C.\n\n### GTPase assay\n\nGTP hydrolysis in dynamin was measured using a colorimetric assay (Leonard et al., 2005). The sample (60 \u00b5l) initially contained 400 nm extruded liposomes (0.1 mM) of defined composition (see Supplementary file 1) in HK buffer supplemented with 2.5 mM MgCl2, 1 mM DTT and 500 \u00b5M GTP. Just before measurement, endophilin (0.6 \u00b5M) was added and the reaction was initiated by the addition and mixing of 0.3 \u00b5M dynamin. At the indicated times (15, 45, 75, 120, 180, 240 and 360 s), aliquots (7.5 \u00b5l) were withdrawn and immediately mixed with a drop of EDTA (5 \u00b5l, 250 mM) in a 96 well plate. At the end of the experiment, 150 \u00b5l of a malachite green stock solution was added to each well and the absorbance at 650 nm was measured using a microplate reader and compared to that of a standard curve of phosphate (0\u2013200 \u00b5M) in order to determine the concentration of GTP hydrolyzed by dynamin.\n\n### Push-pull pyrene (PA) fluorescence on LUVs\n\nFluorescence spectra of the PA probe with liposomes was performed as described (Niko et al., 2016). The sample (600 \u00b5l) initially contained 0.1 mM extruded liposomes (100 nm) of defined composition (see Supplementary file 1). After 5 min incubation of the liposomes solution with 1 \u00b5M PA probe at 37\u00b0C, a fluorescence emission spectrum (450\u2013700 nm; bandwidth 1 nm) was recorded upon excitation at 430 nm (bandwidth 5 nm). All spectra were corrected for the corresponding blank (suspension of liposomes without the probe).\n\n### Dithionite-mediated NBD quenching assay\n\nThe extent of dithionite quenching of the NBD-labeled PE was performed as described (Angeletti and Nichols, 1998). Briefly, the sample (600 \u00b5l) that initially contained 400 nm extruded liposomes (0.1 mM) of defined composition (see Supplementary file 1) were let equilibrating in HK buffer 5 min at 37\u00b0C with 600 rpm stirring. After 30 s of fluorescence measurements (excitation 505 nm, bandwidth 1 nm; emission 540 nm, bandwidth 10 nm), NBD quenching was started by adding 10 mM dithionite and the reaction was followed during 5 min at 37\u00b0C with 600 rpm stirring. The percentage of NBD quenching was calculated by the equation: Quenching NBD (%) = (Fi \u2013 F0) / (FT \u2013 F0) x 100 where F0 corresponds to the fluorescence of the vesicles at time 0\u201330 s; Fi is the fluorescence after a certain period of incubation with dithionite, and FT is the maximum quenching that corresponds to the fluorescence value obtained after addition of 0.1% Triton X-100.\n\n### Electron microscopy\n\nMixtures containing liposomes, dynamin, endophilin and nucleotides were prepared in HK buffer supplemented with 2.5 mM MgCl2 and 1 mM DTT (final volume 50 \u00b5l). For the tubulation experiments in presence of the non-hydrolyzable analog GTP\u03b3S, vesicles were incubated for 5 or 15 min at room temperature. For the fission experiments in presence of GTP, vesicles were incubated for 30 min at room temperature. Thereafter, an EM grid was put on the protein-liposome mixture for 5 min, rinsed with a droplet of 100 mM Hepes (pH 7.0) for 1 min, and then stained with 1% uranyl acetate. The grid was observed in a JEOL JEM1400 transmission electron microscope equipped with a MORADA SIS camera. To determine the size distribution of the liposomes or of the protein-liposome profiles, 500 to 1000 profiles for each condition and from three independent experiments were analyzed using the ellipse tool of the NIH Image J software. The apparent radius was calculated as R=(A/\u03c0)1/2 where A is the apparent area of the profile. All experiments were performed with 0.5 \u00b5M dynamin, 1 \u00b5M endophilin, 500 \u00b5M nucleotide and 0.1 mM lipids.\n\n### GUV permeability and size assay\n\nGUV permeability was studied in 18:0-22:6 and 22:6-22:6 liposomes using a previously developed assay with some modifications (Jim\u00e9nez-Rojo et al., 2014). After GUVs stabilization soluble Alexa488 was externally added to follow the entrance of the probe over time. After 15 min incubation, vesicles were imaged by confocal microscopy and permeability was quantified using the following equation: Permeability (%)=Iin/Iex x 100 where Iin is the average of the fluorescence inside the individual GUV and Iex is the average of external fluorescence of the probe in solution.\n\nMembrane fission induced by dynamin and endophilin in the presence of GTP was followed indirectly by monitoring the size of GUVs over time since the vesicles produced by the proteins are too small to be optically resolved. We used a previously developed assay with some modifications (Meinecke et al., 2013). After GUVs stabilization, dynamin, endophilin and GTP were added and incubated for 1 hr at 37\u00b0C before and imaging by confocal microscopy. All experiments were performed with 0.5 \u00b5M dynamin, 1 \u00b5M endophilin, 500 \u00b5M nucleotide and 0.1 mM lipids. Shrinking percentage was calculated by the equation: Shrinking (%)=100 x A0/Ai where A0 is the vesicles area at time 0 and Ai is vesicles area after a defined period of incubation.\n\n### Molecular dynamics\n\nAll-atom simulations were performed with GROMACS 5 (Abraham et al., 2015) software and CHARMM36 (Klauda et al., 2010) force field. The various systems were built with the Charmm-Gui tool (Lee et al., 2016) with 33% Cholesterol, 1% PI(4,5)P2, and with 30% PS, 20% PE, and 16% PC, harboring defined acyl chains (18:0-18:1, 18:0-18:2, 18:0-18:3, 18:0-20:4, 18:0-22:6, 14:0-14:0, 18:2-18:2, 20:4-20:4, 22:6-22:6). Lipids not present in the Charmm-Gui database (18:0-18:2, 18:0-18:3, 18:2-18-2 and 22:6-22:6 and swapped lipids) were built by adding unsaturations to related lipids (i.e. 18:0-18:1, 18:1-18:1 or 22:1-22:1). Note that one of this lipid (18:0-18:2) is now present in the database and has the same topology as the one used here. The bilayers contained 2 \u00d7 144 phospholipids with counter ions to neutralize the system and with 120 mM NaCl.\n\nThe simulation parameters were those of Charmm-Gui under semi isotropic conditions within the NPT ensemble: x and y directions were coupled, whereas z direction was independent. Periodic boundaries applied to all directions. We first equilibrated the membranes for 200 ps using the standard Charmm-Gui six-step process during which constraints on lipids were gradually released. Next, an additional equilibration step was performed to equilibrate the TIP3P model of water. All simulations were equilibrated using the Berendsen thermostat and barostat at 303 K and 1 bar, respectively, except for 14:0-14:0 bilayers, which were equilibrated at 310 K. Lipids and water+ions were coupled separately.\n\nProduction runs were performed with the V-rescale thermostat at 303 K except for 14:0-14:0 bilayers (310 K). The Parrinello-Rahman thermostat was used to stabilize the pressure at 1 bar with a time constant of 5 ps and a compressibility of 4.5 \u00d7 10\u22125 bar\u22121 (Parrinello and Rahman, 1981). Again, lipids and water+ions were coupled separately. The time step was set at 2 fs. Bond lengths were constrained using the P-LINCS algorithm (Hess, 2008). Cutoff was fixed at 1.2 nm for the Lennard-Jones and electrostatic interactions. The smooth particle-mesh was used to evaluate the electrostatic interactions. Frames were saved every 10 ps.\n\nTrajectory analyses were performed from 400 ns simulations from which we discarded the first 100 ns in order to rule out processes that are not at equilibrium. The remaining 300 ns trajectory was divided in 3 blocks of 100 ns to determine the standard deviation. Frames were analyzed every 100 ps except for the velocity and permeability analysis for which we used 10 ps frames.\n\nCoarse-grained simulations were performed with GROMACS 4.5 (Hess et al., 2008) using the Martini force field (Wassenaar et al., 2015). The systems were built with the Charmm-Gui tool adapted to coarse-grained simulations (Qi et al., 2015). In all simulations, we varied the acyl chains composition while keeping the PC polar head constant. We used four lipids to approximate the asymmetric lipids 18:0-18:1, 18:0-18:2, 18:0-20:4, and 18:0-22:6. Note that the coarse-grained simplification does not distinguish C16:0 from C18:0, C20:4 from C20:5, and C22:6 from C22:5. We built coarse-grained models of swapped phospholipids from natural phospholipids having acyl chains of the same length. The systems contained 18 000 lipids and were solvated with a 100 nm thick layer of water.\n\nThe sytems were equilibrated with the standard Charmm-Gui six-step process. Production runs were performed with the V-rescale thermostat at 303K. The Berendsen barostat was used to stabilize the pressure at 1 bar with a time constant of 4ps and compressibility of 5 \u00d7 10\u20135 bar\u22121 (Berendsen et al., 1984). The different membranes were simulated under a semi-isotropic condition and the periodic boundaries were applied in all directions. Lipids and water/ions were coupled separately. The time step was fixed at 20 fs and the cutoff for the Lennard-Jones and electrostatic interactions was set at 1.2 nm. The smooth particle-mesh was used to evaluate the electrostatic interactions.\n\nTo simulate membrane deformation and fission, we applied a force perpendicular to the initially flat bilayer (Baoukina et al., 2012). The force (from 175 to 250 KJ mol\u22121 nm\u22121) was applied to the center of mass of a lipid patch of radius\u00a0=\u00a03 nm, in which lipids were restrained in the lateral (x,y) directions. The simulations were performed for 200 ns and were repeated two to three times under most conditions.\n\nFor further information on all molecular dynamics simulations, refer to the Gromacs mdp files (supplementary files 2 and 3).\n\n### Simulation analysis\n\nTo evaluate membrane permeability, we counted the number of water molecule(s) that have visited the center of membrane (corresponding to 65% of the thickness) during 100 ns time frames. These water molecules were separated in two classes: those that fully crossed the bilayer and those that entered the hydrophobic region and then exited from the same side. Results were normalized to the total number of water molecules. The velocity rate of the terminal methyl group of the acyl chains was calculated from the sum of distances traveled by each methyl group in the x or in the z direction every 10 ps. For protrusions, we calculated the number of events during 100 ns blocks where the CH3 terminal group of the acyl chain reached a z position above the central carbon of glycerol from the same lipid. An acyl chain torsion corresponds to an angle below 100\u00b0 between carbons that have relative positions of n-2, n and n+2 along the acyl chain. Packing defect analysis was performed as previously described (Vamparys et al., 2013). This membrane scanning procedure allows the detection of aliphatic atoms that are directly accessible to the solvent and that are either\u00a0<1 \u00c5 (shallow defect) or\u00a0>1 \u00c5 (deep defect) below the nearest glycerol.\n",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "332e334d-2441-477a-8788-b62e5277b611",
+      "submission_id": "698bbe42-ca73-4633-8f91-2b427d816665",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia Bassereau, Institut Curie France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34394.024](https://doi.org/10.7554/eLife.34394.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Saturated-docosahexaenoic phospholipids have an optimal acyl chain combination for membrane vesiculation without leakage\" for consideration by eLife. Your article has been favorably evaluated by Vivek Malhotra (Senior Editor) and three reviewers, one of whom, Patricia Bassereau (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nFirst, I would like to mention that both referees and myself appreciated your manuscript very much and the new perspectives it opens on the role of lipids in endo-exocytosis as well as in evolution. Indeed, this paper addresses an interesting issue in membrane biology \u2013 how can cell membranes be so flexible that they are able to vesiculate and divide without compromising their impermeability.\n\nPractically, the manuscript examines the effect of polyunsaturated fatty acyl chains in lipid membranes. A range of techniques were used to study the effects of varying the number and location of double bonds, the chain length, and the location of the polyunsaturated chains (sn1 vs. sn2), in particular a dynamin remodeling assay, membrane permeability probes, and molecular dynamics simulations. The study is a tour de force and complements the biochemical data with molecular dynamics analysis. The authors find that phospholipids with polyunsaturated chain at position sn2 strike an ideal compromise between membrane deformability and permeability. Their results nicely explain why natural membranes never contain symmetric PULs and provide a rationale for the relative abundance of polyunsaturated lipids, e.g., in neurons.\n\nEssential revisions:\n\nYour manuscript will be suitable for publication in eLife provided you can address the following rather straightforward issues.\n\n1) What happens when the polyunsaturated chain and the saturated one are swapped? So far, you only considered the polyunsaturated chain is at position sn2 and not sn1. This could be discussed further. We also leave you with the option of addressing this with simulations. This would nicely complement the work.\n\n2) Please provide more details on the MD simulations: the MD parameter input files (.mdp for GROMACS) could be included in the supplementary information, both for the all-atom and the coarse-grained simulations.\n\n3) The results of the dithionite quenching assay should be discussed in more detail (Figure 2C). It is surprising that the system rapidly plateaus at a value lower than 100% if the membrane is leaky to dithionite and not at 100%.\n",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2130574c-fe84-48b4-a613-7d424b126ade",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C1",
+      "claim": "Phospholipids generally contain a saturated fatty acid (FA) at position sn1 whereas the sn2-FA is saturated, monounsaturated or polyunsaturated.",
+      "claim_type": "EXPLICIT",
+      "source": "Phospholipids generally contain a saturated fatty acid (FA) at position sn1 whereas the sn2-FA is saturated, monounsaturated or polyunsaturated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about phospholipid structure, supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "a35e9198-54a6-452f-8b06-aaa237bc16aa",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C2",
+      "claim": "Phospholipids with two polyunsaturated FAs make membranes prone to vesiculation but highly permeable.",
+      "claim_type": "EXPLICIT",
+      "source": "phospholipids with two polyunsaturated FAs make membranes prone to vesiculation but highly permeable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from GTPase assays, electron microscopy, and permeability measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "c8825674-4b33-4abe-9ebd-6c2595010d23",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C3",
+      "claim": "Asymmetric sn1-saturated-sn2-polyunsaturated phospholipids provide a tradeoff between efficient membrane vesiculation and low membrane permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "asymmetric sn1-saturated-sn2-polyunsaturated phospholipids provide a tradeoff between efficient membrane vesiculation and low membrane permeability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing symmetric and asymmetric phospholipids in vesiculation and permeability assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "03a92c2f-f2ec-49a1-9e97-67c5c6315efc",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C4",
+      "claim": "When incorporated into phospholipids, docosahexaenoic acid (DHA; omega-3) makes membranes more deformable than arachidonic acid (omega-6).",
+      "claim_type": "EXPLICIT",
+      "source": "When incorporated into phospholipids, docosahexaenoic acid (DHA; omega-3) makes membranes more deformable than arachidonic acid (omega-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GTPase activity measurements, electron microscopy observations, and molecular dynamics simulations comparing 18:0-22:6 and 18:0-20:4 phospholipids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "2df4f8c5-274d-4810-8eb5-d31636e642ed",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C5",
+      "claim": "PUFAs act through three different states: as free molecules, as precursors of biological mediators, or as esters in membrane phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "PUFAs act through three different states: as free molecules, as precursors of biological mediators, or as esters in membrane phospholipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about PUFA function in biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "5008f35c-6d16-43f1-9dfb-f8bb709b9226",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C6",
+      "claim": "Acyl transferases selectively incorporate defined fatty acids into phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The third form results from the activity of acyl transferases, which selectively incorporate defined fatty acids into phospholipids (Harayama et al., 2014; Shindou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "14e49286-d7ff-4257-9745-121cc2aeea31",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C7",
+      "claim": "The acyl chain profile of phospholipids varies tremendously among organisms, tissues and cells, and even among organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows cells to control the acyl chain profile of their phospholipids, which varies tremendously among organisms, tissues and cells, and even among organelles (Harayama et al., 2014; Hulbert, 2003; Shindou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "8c543c98-9597-44e2-a04c-59523acf0612",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C8",
+      "claim": "The FA diversity in phospholipids applies mostly to the sn2 position of the glycerol backbone, resulting in asymmetric phospholipids containing a saturated FA at position sn1 and an unsaturated FA at position sn2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the FA diversity in phospholipids applies mostly to the sn2 position of the glycerol backbone, hence resulting in asymmetric phospholipids containing a saturated FA at position sn1 and an unsaturated FA at position sn2 (Hanahan et al., 1960; Lands and Merkl, 1963; Tattrie, 1959; Yabuuchi and O'Brien, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "d03f75aa-e807-495a-aeaf-4cacefc42b60",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C9",
+      "claim": "The brain is enriched in phospholipids with PUFAs, notably in the case of phosphatidylethanolamine (PE) and phosphatidylserine (PS).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the brain is enriched in phospholipids with PUFAs, notably in the case of phosphatidylethanolamine (PE) and phosphatidylserine (PS) (Tam and Innis, 2006; Yabuuchi and O'Brien, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "f4f62f07-6bf0-480e-bbd8-d31d5f154381",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C10",
+      "claim": "The axon tip is enriched in phosphatidylcholine (PC) molecules containing arachidonate (AA or 20:4 omega-6) or docosahexaenoate (DHA or 22:6 omega-3) at the expense of less unsaturated PC species.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, an interesting pattern has been detected in neurons, where the axon tip is enriched in phosphatidylcholine (PC) molecules containing arachidonate (AA or 20:4 omega-6) or docosahexaenoate (DHA or 22:6 omega-3) at the expense of less unsaturated PC species (Yang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "0731bec5-883b-4851-9e31-83a0e01bc91f",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C11",
+      "claim": "Phospholipids with PUFAs account for up to 70 mol% of the phospholipid pool in synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, phospholipids with PUFAs are found at very high concentration in synaptic vesicles, where they account for up to 70 mol% of the phospholipid pool (Takamori et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "018e2cc3-123d-4696-805d-75d4a5cbc414",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C12",
+      "claim": "Retinal discs show very high concentrations of phospholipids containing PUFAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal discs also show very high concentrations of phospholipids containing PUFAs (Boesze-Battaglia and Schimmel, 1997; Rice et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "bf8c74bb-3353-4b30-80b9-0523fc9072cc",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C13",
+      "claim": "Phospholipids with the sn2 PUFA DHA facilitate the membrane shaping and fission activities of dynamin and endophilin.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that phospholipids with the sn2 PUFA DHA facilitate the membrane shaping and fission activities of dynamin and endophilin (Pinot et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "9ae69aaf-661f-4280-9ad3-50c497135200",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C14",
+      "claim": "Dynamin and endophilin are involved in the formation of endocytic vesicles by assembling into spirals around the neck of membrane buds.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are involved in the formation of endocytic vesicles by assembling into spirals around the neck of membrane buds (Antonny et al., 2016; Boucrot et al., 2015; Farsad et al., 2001; Slepnev and De Camilli, 2000; Sundborger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "7e1fd2c6-7613-437c-89e3-71f82f5f48de",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C15",
+      "claim": "DHA-containing phospholipids decrease membrane-bending rigidity by adapting their conformation to membrane curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Physical manipulations, molecular dynamics simulations and biochemical measurements revealed that DHA-containing phospholipids decrease membrane-bending rigidity by adapting their conformation to membrane curvature, hence providing an advantage for membrane deformation and fission by the dynamin endophilin complex (Pinot et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "4ffaf589-f351-4864-954c-15ac0e78d89c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C16",
+      "claim": "More rigid membranes are less prone to fission.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast to more rigid membranes, which are less prone to fission (Morlot et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "e24e3d4e-0236-4e48-9ea3-69b7797b506d",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C17",
+      "claim": "The flexibility of polyunsaturated phospholipids along the membrane normal (z direction) might soften various mechanical stresses in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the flexibility of polyunsaturated phospholipids along the membrane normal (z direction) might soften various mechanical stresses in the membrane (Barelli and Antonny, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research by the authors.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "7df597b3-d9c0-4a2f-91c4-6348aff5989b",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C18",
+      "claim": "The rate of GTP hydrolysis by dynamin varied up to 300-fold depending on the acyl chain content of the lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the identical composition of all liposomes in term of lipid polar head groups, the rate of GTP hydrolysis by dynamin varied up to 300-fold indicating that dynamin is very sensitive to the acyl chain content of the lipid membrane on which it acts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from GTPase assays shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "1adcdd85-b18b-4c5c-8414-927c81613fc0",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C19",
+      "claim": "The GTPase activity of dynamin increased dramatically (x 20) on membranes made of symmetric diunsaturated phospholipids compared to asymmetric saturated-unsaturated phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the GTPase activity of dynamin increased dramatically (x 20) on membranes made of symmetric diunsaturated phospholipids compared to asymmetric saturated-unsaturated phospholipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from GTPase assays shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "095b6ffa-1370-4efc-b3f9-8f4f5e72e136",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C20",
+      "claim": "The GTPase activity of dynamin increased with the unsaturated level of phospholipids (18:1 < 18:2 < 20:4 < 22:6).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the GTPase activity of dynamin increased with the unsaturated level of phospholipids (18:1 < 18:2 < 20:4 < 22:6), a trend that was observed in both symmetric and asymmetric phospholipid series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from GTPase assays shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "5ff02102-c805-4c24-9211-618d55c09cdc",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C21",
+      "claim": "Dynamin alone extensively deformed 22:6-22:6 liposomes, whereas 18:0-22:6 liposomes were largely unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "By negative staining electron microscopy, we observed that dynamin alone extensively deformed 22:6-22:6 liposomes, whereas 18:0-22:6 liposomes were largely unaffected (Figure 1C and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy observations shown in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "e61b359f-eefc-4c19-8825-569a5f38c718",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C22",
+      "claim": "Membranes made of 18:2-18:2-PC or 18:3-18:3 PC showed a two to three fold higher water permeability than membranes made of 18:0-18:1-PC or 18:0-18:2-PC.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a previous study reported that membranes made of 18:2-18:2-PC or 18:3-18:3 PC showed a two to three fold higher water permeability than membranes made of 18:0-18:1-PC or 18:0-18:2-PC (Olbrich et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "2e826d23-43ac-45cc-8afc-ac7f3e298de0",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C23",
+      "claim": "In saturated (14:0-14:0) membranes, only few water movements were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In saturated (14:0-14:0) membranes, only few water movements were detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "a4be8a34-c045-4392-a8dd-3f7773650264",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C24",
+      "claim": "In membranes made of phospholipids with one unsaturated FA, the number of moving water molecules increased up to 10-fold with the level of acyl chain unsaturation (18:1 < 18:2 < 20:4 < 22:6).",
+      "claim_type": "EXPLICIT",
+      "source": "In membranes made of phospholipids with one unsaturated FA, the number of moving water molecules increased up to 10-fold with the level of acyl chain unsaturation (18:1 < 18:2 < 20:4 < 22:6) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "22b06d03-8c8b-4504-bb4d-ac7989a4cf49",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C25",
+      "claim": "Membranes with phospholipids containing two unsaturated FA showed a further 2 to 3-fold increase in the number of moving water molecules as compared to membranes with asymmetric saturated-unsaturated phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, membranes with phospholipids containing two unsaturated FA showed a further 2 to 3-fold increase in the number of moving water molecules as compared to membranes with asymmetric saturated-unsaturated phospholipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "f0d9c6ff-c697-420c-9b16-1ec2881fd09c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C26",
+      "claim": "Replacing asymmetric saturated-polyunsaturated phospholipids with dipolyunsaturated phospholipids caused a much larger red shift in PA fluorescence emission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, replacing asymmetric saturated-polyunsaturated phospholipids with dipolyunsaturated phospholipids caused a much larger red shift (Figure 2B and Figure 2\u2014figure supplement 1; e.g. 18:0-22:6 << 22:6-22:6), suggesting that duplication of the PUFA in phospholipids dramatically increased membrane hydration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence spectroscopy data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "53938bfd-fdb6-40f5-806e-d8643443514b",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C27",
+      "claim": "Liposomes with symmetric polyunsaturated phospholipids showed a > 10 fold higher permeability to dithionite than asymmetric phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2C shows that membrane permeability to dithionite modestly increased with the level of polyunsaturation in asymmetric phospholipids (18:0-18:1 < 18:0-18:2 < 18:0-20:4 < 18:0-22:6) and that liposomes with symmetric polyunsaturated phospholipids showed a > 10 fold higher permeability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NBD quenching assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "f6a65b9c-80fd-40e4-a273-82c6ac37962c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C28",
+      "claim": "GUVs containing 55 mol% 22:6-22:6 phospholipids were about 10 times more permeable to Alexa A488 maleimide than GUVs containing 55 mol% 18:0-22:6 phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "GUVs containing 55 mol% 22:6-22:6 phospholipids were about 10 times more permeable to Alexa A488 maleimide than GUVs containing 55 mol% 18:0-22:6 phospholipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GUV permeability measurements shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "f40cf80a-3af9-4001-9261-11e5b0f50351",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C29",
+      "claim": "There is a remarkable correlation between the ability of dynamin alone to readily vesiculate membranes and the permeability of these membranes to water and even to large or charged solutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these experiments revealed a remarkable correlation between the ability of dynamin alone to readily vesiculate membranes and the permeability of these membranes to water and even to large or charged solutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of vesiculation and permeability experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "9168acd2-cc51-4180-b2f2-09d5685e47dc",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C30",
+      "claim": "The intrinsic GTPase activity of dynamin on asymmetric saturated-polyunsaturated phospholipid liposomes increased about 10 times in the presence of endophilin-A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the intrinsic GTPase activity of dynamin on such liposomes was low, it increased about 10 times in the presence endophilin-A1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GTPase assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "a5078c53-f8b6-4e3f-bbb6-4457742a1bb7",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C31",
+      "claim": "Endophilin works in close partnership with dynamin both through protein/protein interactions and through the ability of the two proteins to form membrane-deforming spirals.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, endophilin works in close partnership with dynamin both through protein/protein interactions and through the ability of the two proteins to form membrane-deforming spirals (Boucrot et al., 2015; Farsad et al., 2001; Sundborger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "dc6a57d6-42f7-45fd-8564-7e4058a4cb7f",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C32",
+      "claim": "The BAR domain of endophilin is followed by an SH3 domain, which interacts with the proline-rich region of dynamin leading to cooperative BAR/dynamin membrane recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "The BAR domain of endophilin is followed by an SH3 domain, which interacts with the proline-rich region of dynamin leading to cooperative BAR/dynamin membrane recruitment (Farsad et al., 2001; Meinecke et al., 2013; Sundborger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "fde5351f-aab6-464c-842f-166de4cb3dfe",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C33",
+      "claim": "Membrane deformation by BAR domains facilitates dynamin self-assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, membrane deformation by BAR domains facilitates dynamin self-assembly, which by itself is a relatively weak membrane deforming protein and which preferentially self-assembles on pre-curved membranes (Neumann and Schmid, 2013; Roux et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "817f01ee-4990-4893-bdf8-a53b19461d2d",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C34",
+      "claim": "The effect of 18:0-22:6 phospholipids on dynamin GTPase activity surpassed by 2 to 4-fold that observed with the less complex asymmetric polyunsaturated phospholipids (18:0-18:2, 18:0-18:3 and 18:0-20:4).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effect of 18:0-22:6 phospholipids surpassed by 2 to 4-fold that observed with the less complex asymmetric polyunsaturated phospholipids (18:0-18:2, 18:0-18:3 and 18:0-20:4) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GTPase assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "ee8bdfdb-c1e7-4d36-8d1e-ec03e67ce1e2",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C35",
+      "claim": "Dynamin GTPase activity plateaus at about 60 mol% of 18:0-22:6 phospholipids, close to the amount of polyunsaturated lipids in synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin GTPase activity plateau at about 60 mol% of 18:0-22:6 phospholipids, close to the amount of polyunsaturated lipids in synaptic vesicles (Takamori et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GTPase assay data shown in Figure 3 and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "64c06ec3-a1b6-4f43-8d56-3c9d7fda5f11",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C36",
+      "claim": "The activity of dynamin was almost maximal with 18:0-22:6 phospholipids even in the absence of PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the activity of dynamin was almost maximal with 18:0-22:6 phospholipids even in the absence of PI(4,5)P2 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GTPase assay data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "3f64a2c2-0397-42e9-b89c-ab59fe903563",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C37",
+      "claim": "SNX9 was more efficient than endophilin for assisting dynamin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SNX9 was more efficient than endophilin for assisting dynamin activity in agreement with a previous study (Neumann and Schmid, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GTPase assay data shown in Figure 3\u2014figure supplement 1B and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "726a38b5-f913-4086-9627-2c28476d9102",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C38",
+      "claim": "All asymmetric saturated-polyunsaturated phospholipids favor dynamin GTPase activity, notably under conditions close to physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, all asymmetric saturated-polyunsaturated phospholipids favor dynamin GTPase activity, notably under conditions close to physiological conditions (low concentration of PI(4,5)P2, low protein concentration, cooperation with BAR-domain proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of GTPase assays under various conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "5930dec0-921f-4605-b035-30ea4484a498",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C39",
+      "claim": "Docosahexaenoic acid (22:6), which is the most polyunsaturated species of the omega-3 family, surpasses all other tested species including arachidonate (20:4), the most polyunsaturated species of the omega-6 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, docosahexaenoic acid (22:6), which is the most polyunsaturated species of the omega-3 family, surpasses all other tested species including arachidonate (20:4), the most polyunsaturated species of the omega-6 family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of GTPase assays comparing different polyunsaturated fatty acids.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "30b20ae2-ea38-439a-bae2-4cee3387f4a0",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C40",
+      "claim": "Both 18:0-20:4 and 18:0-22:6 liposomes but not 18:0-18:1 liposomes, became extensively deformed after incubation with dynamin, endophilin and GTP\u03b3S or GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "By transmission electron microscopy (TEM) we observed that both 18:0-20:4 and 18:0-22:6 liposomes but not 18:0-18:1 liposomes, became extensively deformed after incubation with dynamin, endophilin and GTP\u03b3S or GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electron microscopy observations shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "24235295-012d-4413-896c-58a587735df3",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C41",
+      "claim": "The tubes formed from 18:0-22:6 membranes were significantly thinner than the tubes formed from 18:0-20:4 membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the tubes formed from 18:0-22:6 membranes were significantly thinner than the tubes formed from 18:0-20:4 membranes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "b214945a-629c-4996-8ea5-5e7264664140",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C42",
+      "claim": "With 18:0-20:4 phospholipids, there was a remaining peak of large membrane profiles (R > 50 nm), which coexisted with a peak of small vesicles (R < 50 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "With 18:0-20:4 phospholipids, there was a remaining peak of large membrane profiles (R > 50 nm), which coexisted with a peak of small vesicles (R < 50 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electron microscopy size distribution analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "9ad105fd-0c05-464c-b4fa-5ad4128c28a5",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C43",
+      "claim": "With 18:0-22:6 phospholipids, the liposomes were almost fully transformed into small vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "With 18:0-22:6 phospholipids, the liposomes were almost fully transformed into small vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electron microscopy size distribution analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "f1c57c65-2627-4489-a80d-395c10a0e27d",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C44",
+      "claim": "The vesicles formed from 18:0-22:6 membranes were slightly smaller than that formed from 18:0-20:4 membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the vesicles formed from 18:0-22:6 membranes were slightly smaller than that formed from 18:0-20:4 membranes (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy size distribution analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "333d077e-33a6-4cc3-8c7d-60c2c05adc85",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C45",
+      "claim": "Dynamin, endophilin and GTP caused GUV consumption over time for both 18:0-20:4 and 18:0-22:6 membranes but not for the control GUVs that contained only 18:0-18:1 phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin, endophilin and GTP caused GUV consumption over time for both 18:0-20:4 and 18:0-22:6 membranes (Figure 5A) but not for the control GUVs that contained only 18:0-18:1 phospholipids (Figure 5\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GUV shrinking assay data shown in Figure 5A and Figure 5\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "6719b43c-1b4b-453c-9a78-ada421f3d376",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C46",
+      "claim": "After 1 hr of incubation, the difference between 18:0-20:4 and 18:0 22:6 phospholipids was significant, as a larger population of shrunk 18:0-22:6 GUVs and a higher amount of intact 18:0-20:4 GUVs were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "After 1 hr of incubation, the difference between 18:0-20:4 and 18:0 22:6 phospholipids was significant, as we detected a larger population of shrunk 18:0-22:6 GUVs and a higher amount of intact 18:0-20:4 GUVs (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GUV shrinking assay data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "d6a93350-37eb-4564-9440-013476a3d7e8",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C47",
+      "claim": "The difference in GUV shrinking between 18:0-20:4 and 18:0-22:6 phospholipids was already evident after 15 min and increased over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in GUV shrinking between 18:0-20:4 and 18:0-22:6 phospholipids was already evident after 15 min and increased over time (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GUV shrinking assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "86f9e06b-1d6b-46f2-a120-efdb9fe61e8b",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C48",
+      "claim": "Increasing the degree of phospholipid polyunsaturation (18:0-18:1 < 18:0-18:2 < 18:0-20:4 < 18:0-22:6) accelerated the linear phase of tube formation and resulted in the formation of longer and thinner tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the degree of phospholipid polyunsaturation (18:0-18:1 < 18:0-18:2 < 18:0-20:4 < 18:0-22:6) accelerated the linear phase and resulted in the formation of longer and thinner tubes (Figure 6A and Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coarse-grained molecular dynamics simulation data shown in Figure 6A and Figure 6\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "d000bb92-7b59-40e1-90b7-7f1fa23f349e",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C49",
+      "claim": "18:0-18:2, 18:0-20:4 and 18:0-22:6 membranes had relative values of \u039ab equal to 50%, 35% and 30% of \u039ab for 18:0-18:1 membranes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that these tubes should have stored the same curvature energy, these changes in L/R suggested inverse changes in membrane bending rigidity: 18:0-18:2, 18:0-20:4 and 18:0-22:6 membranes had relative values of \u039ab equal to 50%, 35% and 30% of \u039ab for 18:0-18:1 membranes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from coarse-grained molecular dynamics simulation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "bf6fd65d-65ab-4e25-bb02-7802e6c652a6",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C50",
+      "claim": "Fission events were observed for some tubes formed from 18:0-20:4 and 18:0-22:6 membranes but not from 18:0-18:1 or 18:0-18:2 membranes during 200 ns simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "During the time of the simulations (200 ns), we observed fission events for some tubes formed from 18:0-20:4 and 18:0-22:6 membranes but not from 18:0-18:1 or 18:0-18:2 membranes (Figure 6B, Figure 6\u2014figure supplement 1A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coarse-grained molecular dynamics simulation data shown in Figure 6B and Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "9f26fd0e-58ce-41c4-bbd0-0de184effed6",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C51",
+      "claim": "The force threshold at which fission occurred was lower for 18:0-22:6 membranes than for 18:0-20:4 membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the number of simulations did not allow us to establish robust statistics, we noticed that the force threshold at which fission occurred was lower for 18:0-22:6 membranes than for 18:0-20:4 membranes (Figure 6B and Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coarse-grained molecular dynamics simulation data shown in Figure 6B and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "01f0644b-5922-48dd-a374-e22589bff80e",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C52",
+      "claim": "Fission occurred sooner for 18:0-22:6 tubes as compared to 18:0-20:4 tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, fission occurred sooner for 18:0-22:6 tubes as compared to 18:0-20:4 tubes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by coarse-grained molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "780d7e50-cb2c-4bd9-8278-b748f9374b12",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C53",
+      "claim": "Whatever the parameter considered (z velocity, FA torsions, protrusions, packing defects), the calculated value always increased with the polyunsaturation level of the sn2 chain, with 22:6 clearly surpassing all other polyunsaturated FAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6C\u2013E and Figure 6\u2014figure supplement 2 show that whatever the parameter considered, the calculated value always increased with the polyunsaturation level of the sn2 chain, with 22:6 clearly surpassing all other polyunsaturated FAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by all-atom molecular dynamics simulation data shown in Figure 6C\u2013E and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "9b648c79-b47c-4e19-82f4-4a6e91168395",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C54",
+      "claim": "The behavior of the sn1 18:0 chain was relatively constant and appeared poorly dependent on the nature of the neighboring sn2 chain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the behavior of the sn1 18:0 chain was relatively constant and appeared poorly dependent on the nature of the neighboring sn2 chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by all-atom molecular dynamics simulation data shown in Figure 6C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "31114127-cf63-4eb1-b2d9-eed7c238b946",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C55",
+      "claim": "The main effect of having an sn2 polyunsaturated chain in phospholipids is to increase the probability of fast movements along the z-axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these various analyses show that the main effect of having an sn2 polyunsaturated chain in phospholipids is to increase the probability of fast movements of along the z-axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from all-atom molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "3b1782a7-1fe8-4be1-853e-29b2c67ece56",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C56",
+      "claim": "Acyl chain swapping modified the mean position of the saturated and polyunsaturated acyl chains across the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, measurements of the acyl chain density across the bilayer indicated that acyl chain swapping modified the mean position of the saturated and polyunsaturated acyl chains across the bilayer (Figure 6\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by all-atom molecular dynamics simulation data shown in Figure 6\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "ec618eb7-8793-4020-802c-bb9b1571a79f",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C57",
+      "claim": "The relative esterification position of the saturated and polyunsaturated FAs in natural lipids facilitates compensatory z movements where the polyunsaturated FA explores the interfacial region while the saturated FA explores the bilayer center.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the relative esterification position of the saturated and polyunsaturated FAs in natural lipids facilitates compensatory z movements where the polyunsaturated FA explores the interfacial region while the saturated FA explores the bilayer center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from all-atom molecular dynamics simulation data comparing natural and swapped phospholipids.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "af879f27-dc27-491f-9c55-42b5c99825f1",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C58",
+      "claim": "Acyl chain swapping did not significantly modify membrane fission in coarse-grained simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, acyl chain swapping did not significantly modify membrane fission (Figure 6\u2014figure supplement 3C and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coarse-grained molecular dynamics simulation data shown in Figure 6\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "c7cc8a94-ab88-40c1-9d38-42a25f0e9adf",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C59",
+      "claim": "Polyunsaturated phospholipids considerably modify the properties of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "A few studies have established that polyunsaturated phospholipids considerably modify the properties of membranes (Armstrong et al., 2003; Eldho et al., 2003; Garcia-Manyes et al., 2010; Huang, 2001; Olbrich et al., 2000; Rawicz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "6c076cfa-3899-4c6e-89c3-532d056f4df6",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C60",
+      "claim": "A high dithionite permeability of membranes containing 18:3-18:3 phospholipids has been reported for LUVs.",
+      "claim_type": "EXPLICIT",
+      "source": "For LUVs, a high dithionite permeability of membranes containing 18:3-18:3 phospholipids has been reported (Armstrong et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "658a73a6-e47d-4686-af40-7aea77950f1b",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C61",
+      "claim": "For GUVs, micropipette manipulations indicate that the presence of at least one polyunsaturated acyl chain results in a drop of the membrane bending modulus whereas the presence of two polyunsaturated acyl chains causes a jump in water permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "For GUVs, micropipette manipulations indicate that the presence of at least one polyunsaturated acyl chain results in a drop of the membrane bending modulus whereas the presence of two polyunsaturated acyl chains causes a jump in water permeability (Olbrich et al., 2000; Rawicz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "28ee7369-baae-4252-bfca-1809e477d9ca",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C62",
+      "claim": "Membranes with asymmetric saturated-polyunsaturated phospholipids such as 18:0-20:4 or 18:0-22:6 phospholipids are much less leaky than membranes with symmetrical 20:4-20:4 or 22:6-22:6 phospholipids but can still be readily vesiculated by dynamin provided that BAR-domain proteins are present.",
+      "claim_type": "EXPLICIT",
+      "source": "Membranes with asymmetric saturated-polyunsaturated phospholipids such as 18:0-20:4 or 18:0-22:6 phospholipids are much less leaky than membranes with symmetrical 20:4-20:4 or 22:6-22:6 phospholipids but can still be readily vesiculated by dynamin provided that BAR-domain proteins are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of vesiculation and permeability experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "f1f8531f-0fec-4291-991b-8526387224a6",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C63",
+      "claim": "The fact that membranes with 18:0-22:6 phospholipids are systematically more permissive to the mechanical activity of dynamin and endophilin than membranes with 18:0-20:4 phospholipids is of interest given the importance of the omega-6/omega-3 ratio for health and notably for brain function.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the fact that membranes with 18:0-22:6 phospholipids are systematically more permissive to the mechanical activity of dynamin and endophilin than membranes with 18:0-20:4 phospholipids is of interest given the importance of the omega-6/omega-3 ratio for health and notably for brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim combines experimental data with speculation about biological significance.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "34b794e7-2148-4d88-9a3e-6c92e1ec817f",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C64",
+      "claim": "The distinctive chemical feature of polyunsaturated acyl chains is the presence of saturated carbons (CH2) sandwiched between two unsaturated ones (=CH-CH2-CH=).",
+      "claim_type": "EXPLICIT",
+      "source": "The distinctive chemical feature of polyunsaturated acyl chains is the presence of saturated carbons (CH2) sandwiched between two unsaturated ones (=CH-CH2-CH=).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established chemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "c322bb2e-c4a1-41ec-94cc-98af32f6a63a",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C65",
+      "claim": "Rotational freedom around CH2 groups sandwiched between unsaturated carbons is exceptionally high as compared to rotation around the CH2 groups of monounsaturated or saturated acyl chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotational freedom around these CH2 groups is exceptionally high as compared to rotation around the CH2 groups of monounsaturated or saturated acyl chains (Feller et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "b1ef0e24-a3b7-4ebe-b148-8264c85951c4",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C66",
+      "claim": "Motions of the acyl chain along the normal of the membrane (z movements) increase in speed and in amplitude with the level acyl chain polyunsaturation (18:2 < 18:3 < 20:4 < 22:6).",
+      "claim_type": "EXPLICIT",
+      "source": "Our MD simulations indicate that motions of the acyl chain along the normal of the membrane (z movements) increase in speed and in amplitude with the level acyl chain polyunsaturation (18:2 < 18:3 < 20:4 < 22:6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "51ca15d5-59ba-453a-b209-f387c5fee216",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C67",
+      "claim": "Such movements should allow phospholipids to readily adapt their conformation to membrane curvature, hence explaining the gradual decrease in membrane bending rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such movements should allow phospholipids to readily adapt their conformation to membrane curvature (Barelli and Antonny, 2016; Pinot et al., 2014), hence explaining the gradual decrease in membrane bending rigidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from simulation data and supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "a0c6ede8-e4f5-4750-bfab-06576e94154c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C68",
+      "claim": "The presence of a neighboring saturated acyl chain should secure lipid packing and prevents the passage of small molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, the presence of a neighboring saturated acyl chain should secure lipid packing and prevents the passage of small molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of permeability experiments and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "39b736ab-07cd-48e5-9b50-d62924bdceb9",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C69",
+      "claim": "Plasmalogens, which form a large subclass of PE in the brain, harbor a sn1 saturated acyl chain that is bound to the glycerol through an ether-vinyl bond.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmalogens, which form a large subclass of PE in the brain, harbor a sn1 saturated acyl chain that is bound to the glycerol through an ether-vinyl bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about plasmalogen structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "28f2e181-16ca-47c3-8451-000757c6d43c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C70",
+      "claim": "Ether-vinyl phospholipids considerably decrease the permeability of model membranes to ions because these lipids pack more tightly than their ester counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ether-vinyl phospholipids considerably decrease the permeability of model membranes to ions because these lipids pack more tightly than their ester counterparts (Zeng et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "03a0f889-f5d2-4475-9efb-7835860d73af",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C71",
+      "claim": "Single chain amphiphilic molecules (e.g. fatty acids), the most plausible building blocks for primitive membranes, can self-assemble into bilayers, which spontaneously vesiculate.",
+      "claim_type": "EXPLICIT",
+      "source": "Single chain amphiphilic molecules (e.g. fatty acids), the most plausible building blocks for primitive membranes, can self-assemble into bilayers, which spontaneously vesiculate (Bruckner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "7803faab-230c-469b-a231-c31922eaa894",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C72",
+      "claim": "Bilayers made of single chain amphiphilic molecules are very leaky to even large solutes (in the 103 Da range).",
+      "claim_type": "EXPLICIT",
+      "source": "However, these bilayers are very leaky to even large solutes (in the 103 Da range).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the context of the cited research on primitive membranes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "830198f6-8432-425a-a818-e3d026c74d7d",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C73",
+      "claim": "The shift from single chain to dual chain lipids has probably allowed primitive cells to reduce the general permeability of their membrane, thereby imposing an evolutionary pressure for the emergence of specialized transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, the shift from single chain to dual chain lipids has probably allowed primitive cells to reduce the general permeability of their membrane, thereby imposing an evolutionary pressure for the emergence of specialized transporters (Budin and Szostak, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research and involves speculation about evolutionary processes.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "dcd1367f-9dfc-43aa-be9f-1c5a9e49fe51",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C74",
+      "claim": "Phospholipids with one saturated and one polyunsaturated acyl chain are absent in many eukaryotes (e.g. yeast) but abundant in some highly differentiated cells (e.g. neurons, photoreceptors, sperm).",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments presented here suggest that phospholipids with one saturated and one polyunsaturated acyl chain, which are absent in many eukaryotes (e.g. yeast) but abundant in some highly differentiated cells (e.g. neurons, photoreceptors, sperm) provide a solution to an early dilemma in evolution: finding the right balance between efficient membrane vesiculation without loss in membrane permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about lipid distribution in different organisms and cell types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "cd0beedf-180e-4c06-8f67-1fcab13e7a50",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C75",
+      "claim": "Phospholipids with one saturated and one polyunsaturated acyl chain provide a solution to finding the right balance between efficient membrane vesiculation without loss in membrane permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments presented here suggest that phospholipids with one saturated and one polyunsaturated acyl chain, which are absent in many eukaryotes (e.g. yeast) but abundant in some highly differentiated cells (e.g. neurons, photoreceptors, sperm) provide a solution to an early dilemma in evolution: finding the right balance between efficient membrane vesiculation without loss in membrane permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of all experiments in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "d2acc402-2d6e-465a-8871-9b30d8a7dfd4",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C76",
+      "claim": "Saturated-DHA (omega-3) phospholipids are systematically better for membrane vesiculation than many other saturated-polyunsaturated phospholipids, including saturated-arachidonate (omega-6).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that saturated-DHA (omega-3) phospholipids are systematically better for membrane vesiculation than many other saturated-polyunsaturated phospholipids, including saturated-arachidonate (omega-6), is informative considering the importance of the omega-6/omega-3 ratio for health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from GTPase assays, electron microscopy, and GUV shrinking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "09f0a762-8a94-4492-a7a2-2321968c5407",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C77",
+      "claim": "GTP hydrolysis in the dynamin spiral occurs by a mutual nucleophilic attack between dynamin molecules from adjacent rungs.",
+      "claim_type": "EXPLICIT",
+      "source": "GTP hydrolysis in the dynamin spiral occurs by a mutual nucleophilic attack between dynamin molecules from adjacent rungs (Chappie et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "30c02f29-4583-4a7d-8ab1-407545c87d7a",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C78",
+      "claim": "The rate of GTP hydrolysis depends on dynamin self-assembly and increases from negligible values in solution where dynamin is not polymerized, to rates in the range of 2 to 5 s-1 on optimal membrane templates where dynamin forms spirals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the rate of GTP hydrolysis depends on dynamin self-assembly and, in effect, increases from negligible values in solution where dynamin is not polymerized, to rates in the range of 2 to 5 s-1 on optimal membrane templates where dynamin forms spirals (Stowell et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "127a329f-4587-4675-98e8-fb3375fcf46a",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C79",
+      "claim": "Dynamin was purified from rat brain, which contains mostly the neuron-specific dynamin-1 isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin was purified from rat brain, which contains mostly the neuron-specific dynamin-1 isoform, which has a higher membrane curvature generating activity than dynamin-2, the ubiquitous isoform (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental methods and is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "86d417c9-419a-4e4e-b7f9-6ae79e3f5299",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C80",
+      "claim": "Dynamin-1 has a higher membrane curvature generating activity than dynamin-2, the ubiquitous isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamin was purified from rat brain, which contains mostly the neuron-specific dynamin-1 isoform, which has a higher membrane curvature generating activity than dynamin-2, the ubiquitous isoform (Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "a61aa980-cf47-4253-ba09-c099fa747c28",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C81",
+      "claim": "Conditions exist where dynamin readily self-assembles and undergoes fast GTP hydrolysis and yet does not efficiently promote membrane vesiculation.",
+      "claim_type": "EXPLICIT",
+      "source": "This second round of analysis is important because conditions exist where dynamin readily self-assembles and undergoes fast GTP hydrolysis and yet does not efficiently promote membrane vesiculation (Neumann and Schmid, 2013; Stowell et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "e96e4e19-ec43-4158-93e4-746c7ea0153b",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C82",
+      "claim": "Liposomes containing dipolyunsaturated phospholipids appeared exceptionally malleable as compared to liposomes made of phospholipids with one saturated and one polyunsatured acyl chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Liposomes containing phospholipids with two polyunsaturated acyl chains appeared exceptionally malleable as compared to liposomes made of phospholipids with one saturated and one polyunsatured acyl chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from electron microscopy observations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "85a88446-2f28-42f5-a43c-96237496a4c1",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C83",
+      "claim": "Deformation of spherical liposomes is necessarily accompanied by a diminution of volume of the encapsulated solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Deformation of spherical liposomes is necessarily accompanied by a diminution of volume of the encapsulated solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on geometric principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "ebed39c7-adc9-46c3-b5fb-dbbad27b4dfe",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C84",
+      "claim": "The COPI coat is more efficient at making vesicles from liposomes that have been permeabilized with a pore-forming toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the COPI coat is more efficient at making vesicles from liposomes that have been permeabilized with a pore-forming toxin (Manneville et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "7ebeb612-40f9-4d85-ab9d-c48dd861320b",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C85",
+      "claim": "Dithionite entry is about 1000 times faster than lipid flip-flop.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work established that dithionite entry is about 1000 times faster than lipid flip-flop (Armstrong et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "bc776a7d-d838-4013-a0e9-058fc9e6ffa5",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C86",
+      "claim": "The slow phase in PE-NBD quenching experiments should reflect dithionite permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the slow phase in PE-NBD quenching experiments should reflect dithionite permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the established knowledge that dithionite entry is much faster than lipid flip-flop.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "4af63ed2-2639-41ee-8899-286bbb2cb5f1",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C87",
+      "claim": "The tubes were surrounded by a protein spiral with a pitch of ~20 nm characteristic of the endophilin-dynamin complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubes were surrounded by a protein spiral with a pitch of ~20 nm characteristic of the endophilin-dynamin complex (Farsad et al., 2001; Pinot et al., 2014; Sundborger et al., 2011) (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy observations and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "9a2d102a-d2d7-4b3d-ba08-bb6369aa4efc",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C88",
+      "claim": "The propensity of membranes to undergo deformation and fission correlates with the unsaturation level of the phospholipid sn2 acyl chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the coarse-grained simulations agreed well with the experiments: the propensity of membranes to undergo deformation and fission correlates with the unsaturation level of the phospholipid sn2 acyl chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined results of coarse-grained simulations and experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "46ec6d0b-744d-4c8b-8f28-6e1e893e0c14",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C89",
+      "claim": "The rough features distinguishing the saturated and the polyunsaturated acyl chains remained after having permutated their position.",
+      "claim_type": "EXPLICIT",
+      "source": "In all atom simulations, we observed that the rough features distinguishing the saturated and the polyunsaturated acyl chains remained after having permutated their position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by all-atom molecular dynamics simulation data shown in Figure 6\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "d38845df-fb57-425c-b6b8-c8144dc05e09",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C90",
+      "claim": "With natural 18:0-22:6 phospholipids, the sn1 saturated FA showed a peak in the bilayer center whereas the sn2 polyunsaturated FA showed a characteristic dip.",
+      "claim_type": "EXPLICIT",
+      "source": "In natural phospholipids, the density profile of the sn1 saturated FA showed a peak in the bilayer center whereas the sn2 polyunsaturated FA showed a characteristic dip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by all-atom molecular dynamics simulation data shown in Figure 6\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "a9c16b56-5a42-4125-ac11-63979f90bd9e",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C91",
+      "claim": "The sn1 saturated FA tail invaded the central region of the bilayer left vacant by the sn2 polyunsaturated FA, which goes up.",
+      "claim_type": "EXPLICIT",
+      "source": "This shift indicates that the sn1 saturated FA tail invaded the central region of the bilayer left vacant by the sn2 polyunsaturated FA, which goes up (Eldho et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from simulation data and supported by a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "f3892a38-aca4-442b-b47b-48f630e50153",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C92",
+      "claim": "With swapped 22:6-18:0 phospholipids, the difference in density between saturated and polyunsaturated acyl chains disappeared and the membrane appeared thinner than with natural 18:0-22:6 phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "With swapped 22:6-18:0 phospholipids, this difference in density disappeared and the membrane appeared thinner than with natural 18:0-22:6 phospholipids (Figure 6\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by all-atom molecular dynamics simulation data shown in Figure 6\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "aa74d336-5ac4-4e50-97eb-2282d16b1396",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "claim_id": "C93",
+      "claim": "The propensity of the membrane to undergo tubulation and fission increased with the level of phospholipid polyunsaturation (18:1-18:0 < 20:4-18:0 \u2248 22:6-18:0) in coarse-grained simulations of swapped phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "In coarse-grained simulations, the propensity of the membrane to undergo tubulation and fission increased with the level of phospholipid polyunsaturation (18:1-18:0 < 20:4-18:0 \u2248 22:6-18:0), that is the same trend as that observed on classical sn1-saturated-sn2-unsaturated membranes (Figure 6\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coarse-grained molecular dynamics simulation data shown in Figure 6\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1f7628ea-6161-4460-94d0-86dae0833917",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Dynamin GTPase activity is highly sensitive to phospholipid acyl chain composition, varying up to 300-fold. Activity increases dramatically (20-fold) with symmetric diunsaturated phospholipids compared to asymmetric saturated-unsaturated phospholipids, and increases with unsaturation level (18:1 < 18:2 < 20:4 < 22:6) in both series.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are directly supported by experimental GTPase assay data shown in Figure 1B. The comprehensive screen across multiple lipid compositions with consistent methodology provides robust evidence for the sensitivity of dynamin to acyl chain composition. The quantitative measurements and clear trends support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "92004b11-6b80-49c8-99d6-8c7524b5d3ed",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dynamin alone extensively deforms liposomes containing symmetric dipolyunsaturated phospholipids (22:6-22:6) but not asymmetric saturated-polyunsaturated phospholipids (18:0-22:6), demonstrating exceptional malleability of symmetric compositions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C82 are supported by electron microscopy observations in Figure 1C and Figure 1\u2014figure supplement 1B. The visual evidence clearly shows differential membrane deformation between the two lipid compositions, supporting the conclusion about membrane malleability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "43585aa1-7404-4c6d-b791-c925c68c9eac",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Water permeability through membranes increases with acyl chain polyunsaturation, with symmetric diunsaturated phospholipids showing 2-3 fold higher water movement than asymmetric saturated-unsaturated phospholipids in molecular dynamics simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by all-atom molecular dynamics simulation data shown in Figure 2A. The simulations provide quantitative measurements of water molecule movements across different membrane compositions, with clear trends correlating polyunsaturation with increased permeability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "65915f7b-654a-49c4-a490-466c867c7601",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Membranes with symmetric dipolyunsaturated phospholipids show dramatically increased permeability (>10-fold) to ions and large solutes compared to asymmetric saturated-polyunsaturated phospholipids, as measured by fluorescence spectroscopy, dithionite quenching, and GUV permeability assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by multiple complementary experimental approaches (PA fluorescence, NBD quenching, GUV permeability) shown in Figures 2B-D. The convergence of evidence from different methodologies strengthens the conclusion about differential membrane permeability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "7e2d9fc3-0fbb-4454-ba79-b422993d60ce",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "There is a remarkable correlation between dynamin's ability to vesiculate membranes and membrane permeability to water and solutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by the combined results from vesiculation experiments (C18-C21) and permeability measurements (C23-C28). The correlation is evident across multiple lipid compositions and experimental approaches, though the mechanistic link requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "1ececaaa-24b7-42c8-be74-b3b066a80ec9",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Endophilin increases dynamin GTPase activity ~10-fold on asymmetric saturated-polyunsaturated phospholipid membranes, with 18:0-22:6 phospholipids showing 2-4 fold higher activity than other polyunsaturated species. Activity plateaus at ~60 mol% 18:0-22:6, matching synaptic vesicle composition, and is nearly maximal even without PI(4,5)P2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C34-C36 are supported by GTPase assay data in Figures 1B, 3, and 3\u2014figure supplement 1A. The systematic variation of lipid composition and protein components provides strong evidence for the specific effects of 18:0-22:6 phospholipids and endophilin cooperation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "b008e9d9-361d-4338-a08d-0cfd92bde075",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "All asymmetric saturated-polyunsaturated phospholipids favor dynamin GTPase activity under physiologically relevant conditions, with DHA (22:6, omega-3) surpassing all other polyunsaturated species including arachidonate (20:4, omega-6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by comprehensive GTPase assays under various conditions (varying PI(4,5)P2, protein concentrations, BAR-domain proteins) shown in Figures 1B, 3, and 3\u2014figure supplements. The consistent superiority of 22:6 across conditions strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "72f4442e-b611-4a78-be5e-17ed99062946",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dynamin and endophilin extensively deform 18:0-20:4 and 18:0-22:6 liposomes but not 18:0-18:1 liposomes. Tubes from 18:0-22:6 membranes are significantly thinner than those from 18:0-20:4 membranes, and vesiculation is more complete with 18:0-22:6, producing slightly smaller vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by transmission electron microscopy data in Figure 4A-C and Figure 4\u2014figure supplement 1. The quantitative measurements of tube dimensions and vesicle size distributions provide robust evidence for differential membrane deformation between omega-3 and omega-6 polyunsaturated phospholipids.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "19948f2c-ae74-413d-bb54-837463a52ab0",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dynamin, endophilin, and GTP cause GUV consumption over time for 18:0-20:4 and 18:0-22:6 membranes but not 18:0-18:1 controls. GUV shrinking is significantly greater for 18:0-22:6 than 18:0-20:4, evident after 15 min and increasing over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by GUV shrinking assay data in Figure 5A-C and Figure 5\u2014figure supplement 1. The time-course measurements and statistical analysis (p<0.001) provide strong evidence for differential vesiculation efficiency between omega-3 and omega-6 phospholipids.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "443f22c8-be56-471a-8f3b-1a4d52b0f1ec",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Coarse-grained molecular dynamics simulations show that increasing phospholipid polyunsaturation accelerates tube formation and produces longer, thinner tubes. Membrane bending rigidity decreases with polyunsaturation (18:0-18:2: 50%, 18:0-20:4: 35%, 18:0-22:6: 30% of 18:0-18:1). Fission events occur for 18:0-20:4 and 18:0-22:6 but not less unsaturated membranes, with lower force thresholds and faster fission for 18:0-22:6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by coarse-grained MD simulation data in Figure 6A-B and Figure 6\u2014figure supplement 1. The simulations provide mechanistic insights consistent with experimental observations, though the authors acknowledge limited statistics for fission events. The trends are clear despite this limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "c76e375e-7742-4a40-958c-7f4b108f6a26",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All-atom molecular dynamics simulations show that all measured parameters (z velocity, FA torsions, protrusions, packing defects) increase with sn2 chain polyunsaturation, with 22:6 surpassing all others. The sn1 18:0 chain behavior is relatively constant. The main effect of sn2 polyunsaturation is increased probability of fast z-axis movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by all-atom MD simulation data in Figure 6C-E and Figure 6\u2014figure supplement 2. Multiple complementary analyses converge on the same conclusion about the unique behavior of polyunsaturated chains, particularly 22:6, providing strong mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "0a5b5b32-9914-422d-a6a2-a4975f2fa3c9",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Acyl chain swapping modifies the mean position of saturated and polyunsaturated chains across the bilayer. Natural sn1-saturated-sn2-polyunsaturated positioning facilitates compensatory z movements where the polyunsaturated FA explores the interfacial region while the saturated FA explores the bilayer center. With swapped lipids, this density difference disappears and membranes appear thinner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C89-C92 are supported by all-atom MD simulation data in Figure 6\u2014figure supplement 3A-B. The density profile analysis provides clear evidence for the importance of natural acyl chain positioning, though the functional significance requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "0c13ccd4-0987-4b56-b456-72aca4ce522c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Acyl chain swapping does not significantly modify membrane fission in coarse-grained simulations, with the propensity for tubulation and fission still increasing with polyunsaturation level (18:1-18:0 < 20:4-18:0 \u2248 22:6-18:0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C93 are supported by coarse-grained MD simulation data in Figure 6\u2014figure supplement 3C. The results suggest that while natural positioning optimizes certain properties, the general trend of polyunsaturation facilitating membrane deformation is preserved regardless of acyl chain position.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "8e4096ba-055e-4d4a-83a4-6f66e7e9f4d6",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Asymmetric sn1-saturated-sn2-polyunsaturated phospholipids provide an optimal tradeoff between efficient membrane vesiculation and low membrane permeability. Membranes with these lipids are much less leaky than symmetric dipolyunsaturated phospholipids but can still be readily vesiculated by dynamin with BAR-domain proteins present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C62, and C75 represent the central conclusion of the manuscript, supported by the comprehensive integration of vesiculation experiments (C18-C47) and permeability measurements (C23-C28). The convergence of multiple experimental approaches and simulations provides strong support for this key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "48b8ccd8-2ed2-4bcb-af7d-3b14abc5627c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DHA (omega-3) incorporated into phospholipids makes membranes more deformable than arachidonic acid (omega-6), with 18:0-22:6 phospholipids systematically better for membrane vesiculation than other saturated-polyunsaturated phospholipids including 18:0-20:4. This difference is of interest given the importance of the omega-6/omega-3 ratio for health and brain function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39, C63, and C76 are supported by comprehensive experimental data from GTPase assays, electron microscopy, GUV shrinking experiments, and MD simulations (Figures 1-6). The consistent superiority of DHA across all assays provides strong evidence, though the health implications remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "fc075241-de14-4df6-8de4-7e32ba4c0d44",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MD simulations indicate that acyl chain z-movements increase in speed and amplitude with polyunsaturation (18:2 < 18:3 < 20:4 < 22:6), allowing phospholipids to adapt their conformation to membrane curvature and explaining decreased bending rigidity. Concurrently, the neighboring saturated acyl chain secures lipid packing and prevents passage of small molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by MD simulation data (Figure 6) and integrate well with experimental permeability measurements (Figure 2). The mechanistic explanation is consistent with all observations, though the specific role in preventing molecular passage is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "751f1ea7-2135-4e39-81e9-1769c25fa84b",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background knowledge claims about phospholipid structure, PUFA function, acyl transferases, and the distribution of polyunsaturated phospholipids in biological systems, particularly enrichment in brain, neurons, synaptic vesicles, and retinal discs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C12 represent established knowledge supported by appropriate citations to previous research. These provide essential context for the experimental work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "e6467930-caa0-4ac4-8bd0-0bb05464338e",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Previous work by the authors and others established that DHA-containing phospholipids facilitate dynamin and endophilin activity by decreasing membrane-bending rigidity through conformational adaptation to curvature, and that polyunsaturated phospholipid flexibility might soften various mechanical stresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 represent prior work cited to provide context for the current study. These are appropriately attributed to previous publications and provide the foundation for the comprehensive analysis presented here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "641e7a9b-128a-428b-9103-95d760c8e657",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Endophilin works in partnership with dynamin through protein-protein interactions and membrane-deforming spiral formation. The BAR domain is followed by an SH3 domain that interacts with dynamin's proline-rich region, and BAR domain membrane deformation facilitates dynamin self-assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 represent established knowledge about dynamin-endophilin interactions, appropriately cited to previous research. This background information is essential for interpreting the experimental results but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "1ac12348-3656-41c6-afdf-86a14c522e78",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background on dynamin GTPase mechanism, its dependence on self-assembly, the use of brain-purified dynamin-1 (which has higher curvature-generating activity than dynamin-2), and the distinction between GTPase activity and vesiculation efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 provide methodological context and background knowledge appropriately cited to previous research. These justify the experimental approach but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "bb7089db-4e07-48fb-847a-a3ae664965ee",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Previous studies established that polyunsaturated phospholipids considerably modify membrane properties, including increased water permeability for symmetric diunsaturated species and decreased bending modulus with polyunsaturated acyl chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C59-C61 represent prior work appropriately cited to provide context. These findings motivated the current comprehensive analysis but are not novel contributions of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "7f6a4642-18b5-4314-9832-c8f97e314a17",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "SNX9 was more efficient than endophilin for assisting dynamin activity, in agreement with a previous study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by GTPase assay data in Figure 3\u2014figure supplement 1B and confirmed by citation to previous research. This validates the experimental system but is not a primary focus of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "4a9db2f0-796f-4faa-a0ec-86f1830da772",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Methodological considerations: deformation of spherical liposomes requires volume reduction; permeabilized liposomes are more efficiently vesiculated; dithionite entry is ~1000\u00d7 faster than lipid flip-flop, so the slow phase in NBD quenching reflects dithionite permeability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 represent methodological knowledge and reasoning appropriately cited where applicable. These justify experimental interpretations but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "68f87e3e-de5e-457f-b7f1-668a2df36288",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Tubes formed by dynamin and endophilin show characteristic ~20 nm pitch spirals, and coarse-grained simulations agree with experiments that membrane deformation and fission propensity correlates with sn2 acyl chain unsaturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 are supported by electron microscopy (Figure 4B, Figure 4\u2014figure supplement 1A) and the integration of simulation and experimental data. These provide validation of the simulation approach and structural characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "44b5dd58-8caf-4430-943d-6c305ddab45f",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The distinctive chemical feature of polyunsaturated acyl chains is CH2 groups sandwiched between unsaturated carbons, which have exceptionally high rotational freedom compared to monounsaturated or saturated chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 represent established chemical knowledge appropriately cited. This provides the molecular basis for understanding polyunsaturated lipid behavior but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "153ff530-260e-4196-b1bb-b81605a72a85",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Plasmalogens (ether-vinyl phospholipids) form a large PE subclass in brain and considerably decrease membrane permeability to ions because they pack more tightly than ester counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 represent established knowledge appropriately cited. This is mentioned as a related but unexplored variation in phospholipid structure, not a finding of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "455dc5ec-acf2-47f6-aa3a-d2aac503af0c",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Evolutionary context: single-chain amphiphiles can form vesiculating but leaky bilayers; the shift to dual-chain lipids likely allowed primitive cells to reduce permeability, creating pressure for specialized transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 represent cited prior work on primitive membranes used to provide evolutionary context for the findings. The evolutionary interpretation is speculative but appropriately framed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    },
+    {
+      "id": "ea7ec006-4162-4b93-bb41-cd0946db5444",
+      "content_id": "6d3e91b5-e580-48c2-92b1-1488e956a677",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Phospholipids with one saturated and one polyunsaturated acyl chain are absent in many eukaryotes (e.g., yeast) but abundant in highly differentiated cells (e.g., neurons, photoreceptors, sperm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 represents established knowledge about lipid distribution across organisms and cell types. This provides important biological context for the significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:47:52.372468Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7df597b3-d9c0-4a2f-91c4-6348aff5989b",
+      "result_id": "1f7628ea-6161-4460-94d0-86dae0833917"
+    },
+    {
+      "claim_id": "1adcdd85-b18b-4c5c-8414-927c81613fc0",
+      "result_id": "1f7628ea-6161-4460-94d0-86dae0833917"
+    },
+    {
+      "claim_id": "095b6ffa-1370-4efc-b3f9-8f4f5e72e136",
+      "result_id": "1f7628ea-6161-4460-94d0-86dae0833917"
+    },
+    {
+      "claim_id": "5ff02102-c805-4c24-9211-618d55c09cdc",
+      "result_id": "92004b11-6b80-49c8-99d6-8c7524b5d3ed"
+    },
+    {
+      "claim_id": "e96e4e19-ec43-4158-93e4-746c7ea0153b",
+      "result_id": "92004b11-6b80-49c8-99d6-8c7524b5d3ed"
+    },
+    {
+      "claim_id": "2e826d23-43ac-45cc-8afc-ac7f3e298de0",
+      "result_id": "43585aa1-7404-4c6d-b791-c925c68c9eac"
+    },
+    {
+      "claim_id": "a4be8a34-c045-4392-a8dd-3f7773650264",
+      "result_id": "43585aa1-7404-4c6d-b791-c925c68c9eac"
+    },
+    {
+      "claim_id": "22b06d03-8c8b-4504-bb4d-ac7989a4cf49",
+      "result_id": "43585aa1-7404-4c6d-b791-c925c68c9eac"
+    },
+    {
+      "claim_id": "f0d9c6ff-c697-420c-9b16-1ec2881fd09c",
+      "result_id": "65915f7b-654a-49c4-a490-466c867c7601"
+    },
+    {
+      "claim_id": "53938bfd-fdb6-40f5-806e-d8643443514b",
+      "result_id": "65915f7b-654a-49c4-a490-466c867c7601"
+    },
+    {
+      "claim_id": "f6a65b9c-80fd-40e4-a273-82c6ac37962c",
+      "result_id": "65915f7b-654a-49c4-a490-466c867c7601"
+    },
+    {
+      "claim_id": "f40cf80a-3af9-4001-9261-11e5b0f50351",
+      "result_id": "7e2d9fc3-0fbb-4454-ba79-b422993d60ce"
+    },
+    {
+      "claim_id": "9168acd2-cc51-4180-b2f2-09d5685e47dc",
+      "result_id": "1ececaaa-24b7-42c8-be74-b3b066a80ec9"
+    },
+    {
+      "claim_id": "817f01ee-4990-4893-bdf8-a53b19461d2d",
+      "result_id": "1ececaaa-24b7-42c8-be74-b3b066a80ec9"
+    },
+    {
+      "claim_id": "ee8bdfdb-c1e7-4d36-8d1e-ec03e67ce1e2",
+      "result_id": "1ececaaa-24b7-42c8-be74-b3b066a80ec9"
+    },
+    {
+      "claim_id": "64c06ec3-a1b6-4f43-8d56-3c9d7fda5f11",
+      "result_id": "1ececaaa-24b7-42c8-be74-b3b066a80ec9"
+    },
+    {
+      "claim_id": "726a38b5-f913-4086-9627-2c28476d9102",
+      "result_id": "b008e9d9-361d-4338-a08d-0cfd92bde075"
+    },
+    {
+      "claim_id": "5930dec0-921f-4605-b035-30ea4484a498",
+      "result_id": "b008e9d9-361d-4338-a08d-0cfd92bde075"
+    },
+    {
+      "claim_id": "30b20ae2-ea38-439a-bae2-4cee3387f4a0",
+      "result_id": "72f4442e-b611-4a78-be5e-17ed99062946"
+    },
+    {
+      "claim_id": "24235295-012d-4413-896c-58a587735df3",
+      "result_id": "72f4442e-b611-4a78-be5e-17ed99062946"
+    },
+    {
+      "claim_id": "b214945a-629c-4996-8ea5-5e7264664140",
+      "result_id": "72f4442e-b611-4a78-be5e-17ed99062946"
+    },
+    {
+      "claim_id": "9ad105fd-0c05-464c-b4fa-5ad4128c28a5",
+      "result_id": "72f4442e-b611-4a78-be5e-17ed99062946"
+    },
+    {
+      "claim_id": "f1c57c65-2627-4489-a80d-395c10a0e27d",
+      "result_id": "72f4442e-b611-4a78-be5e-17ed99062946"
+    },
+    {
+      "claim_id": "333d077e-33a6-4cc3-8c7d-60c2c05adc85",
+      "result_id": "19948f2c-ae74-413d-bb54-837463a52ab0"
+    },
+    {
+      "claim_id": "6719b43c-1b4b-453c-9a78-ada421f3d376",
+      "result_id": "19948f2c-ae74-413d-bb54-837463a52ab0"
+    },
+    {
+      "claim_id": "d6a93350-37eb-4564-9440-013476a3d7e8",
+      "result_id": "19948f2c-ae74-413d-bb54-837463a52ab0"
+    },
+    {
+      "claim_id": "86f9e06b-1d6b-46f2-a120-efdb9fe61e8b",
+      "result_id": "443f22c8-be56-471a-8f3b-1a4d52b0f1ec"
+    },
+    {
+      "claim_id": "d000bb92-7b59-40e1-90b7-7f1fa23f349e",
+      "result_id": "443f22c8-be56-471a-8f3b-1a4d52b0f1ec"
+    },
+    {
+      "claim_id": "bf6fd65d-65ab-4e25-bb02-7802e6c652a6",
+      "result_id": "443f22c8-be56-471a-8f3b-1a4d52b0f1ec"
+    },
+    {
+      "claim_id": "9f26fd0e-58ce-41c4-bbd0-0de184effed6",
+      "result_id": "443f22c8-be56-471a-8f3b-1a4d52b0f1ec"
+    },
+    {
+      "claim_id": "01f0644b-5922-48dd-a374-e22589bff80e",
+      "result_id": "443f22c8-be56-471a-8f3b-1a4d52b0f1ec"
+    },
+    {
+      "claim_id": "780d7e50-cb2c-4bd9-8278-b748f9374b12",
+      "result_id": "c76e375e-7742-4a40-958c-7f4b108f6a26"
+    },
+    {
+      "claim_id": "9b648c79-b47c-4e19-82f4-4a6e91168395",
+      "result_id": "c76e375e-7742-4a40-958c-7f4b108f6a26"
+    },
+    {
+      "claim_id": "31114127-cf63-4eb1-b2d9-eed7c238b946",
+      "result_id": "c76e375e-7742-4a40-958c-7f4b108f6a26"
+    },
+    {
+      "claim_id": "3b1782a7-1fe8-4be1-853e-29b2c67ece56",
+      "result_id": "0a5b5b32-9914-422d-a6a2-a4975f2fa3c9"
+    },
+    {
+      "claim_id": "ec618eb7-8793-4020-802c-bb9b1571a79f",
+      "result_id": "0a5b5b32-9914-422d-a6a2-a4975f2fa3c9"
+    },
+    {
+      "claim_id": "46ec6d0b-744d-4c8b-8f28-6e1e893e0c14",
+      "result_id": "0a5b5b32-9914-422d-a6a2-a4975f2fa3c9"
+    },
+    {
+      "claim_id": "d38845df-fb57-425c-b6b8-c8144dc05e09",
+      "result_id": "0a5b5b32-9914-422d-a6a2-a4975f2fa3c9"
+    },
+    {
+      "claim_id": "a9c16b56-5a42-4125-ac11-63979f90bd9e",
+      "result_id": "0a5b5b32-9914-422d-a6a2-a4975f2fa3c9"
+    },
+    {
+      "claim_id": "f3892a38-aca4-442b-b47b-48f630e50153",
+      "result_id": "0a5b5b32-9914-422d-a6a2-a4975f2fa3c9"
+    },
+    {
+      "claim_id": "af879f27-dc27-491f-9c55-42b5c99825f1",
+      "result_id": "0c13ccd4-0987-4b56-b456-72aca4ce522c"
+    },
+    {
+      "claim_id": "aa74d336-5ac4-4e50-97eb-2282d16b1396",
+      "result_id": "0c13ccd4-0987-4b56-b456-72aca4ce522c"
+    },
+    {
+      "claim_id": "a35e9198-54a6-452f-8b06-aaa237bc16aa",
+      "result_id": "8e4096ba-055e-4d4a-83a4-6f66e7e9f4d6"
+    },
+    {
+      "claim_id": "c8825674-4b33-4abe-9ebd-6c2595010d23",
+      "result_id": "8e4096ba-055e-4d4a-83a4-6f66e7e9f4d6"
+    },
+    {
+      "claim_id": "28ee7369-baae-4252-bfca-1809e477d9ca",
+      "result_id": "8e4096ba-055e-4d4a-83a4-6f66e7e9f4d6"
+    },
+    {
+      "claim_id": "cd0beedf-180e-4c06-8f67-1fcab13e7a50",
+      "result_id": "8e4096ba-055e-4d4a-83a4-6f66e7e9f4d6"
+    },
+    {
+      "claim_id": "03a92c2f-f2ec-49a1-9e97-67c5c6315efc",
+      "result_id": "48b8ccd8-2ed2-4bcb-af7d-3b14abc5627c"
+    },
+    {
+      "claim_id": "5930dec0-921f-4605-b035-30ea4484a498",
+      "result_id": "48b8ccd8-2ed2-4bcb-af7d-3b14abc5627c"
+    },
+    {
+      "claim_id": "f1f8531f-0fec-4291-991b-8526387224a6",
+      "result_id": "48b8ccd8-2ed2-4bcb-af7d-3b14abc5627c"
+    },
+    {
+      "claim_id": "d2acc402-2d6e-465a-8871-9b30d8a7dfd4",
+      "result_id": "48b8ccd8-2ed2-4bcb-af7d-3b14abc5627c"
+    },
+    {
+      "claim_id": "b1ef0e24-a3b7-4ebe-b148-8264c85951c4",
+      "result_id": "fc075241-de14-4df6-8de4-7e32ba4c0d44"
+    },
+    {
+      "claim_id": "51ca15d5-59ba-453a-b209-f387c5fee216",
+      "result_id": "fc075241-de14-4df6-8de4-7e32ba4c0d44"
+    },
+    {
+      "claim_id": "a0c6ede8-e4f5-4750-bfab-06576e94154c",
+      "result_id": "fc075241-de14-4df6-8de4-7e32ba4c0d44"
+    },
+    {
+      "claim_id": "2130574c-fe84-48b4-a613-7d424b126ade",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "2df4f8c5-274d-4810-8eb5-d31636e642ed",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "5008f35c-6d16-43f1-9dfb-f8bb709b9226",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "14e49286-d7ff-4257-9745-121cc2aeea31",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "8c543c98-9597-44e2-a04c-59523acf0612",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "d03f75aa-e807-495a-aeaf-4cacefc42b60",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "f4f62f07-6bf0-480e-bbd8-d31d5f154381",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "0731bec5-883b-4851-9e31-83a0e01bc91f",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "018e2cc3-123d-4696-805d-75d4a5cbc414",
+      "result_id": "751f1ea7-2135-4e39-81e9-1769c25fa84b"
+    },
+    {
+      "claim_id": "bf8c74bb-3353-4b30-80b9-0523fc9072cc",
+      "result_id": "e6467930-caa0-4ac4-8bd0-0bb05464338e"
+    },
+    {
+      "claim_id": "9ae69aaf-661f-4280-9ad3-50c497135200",
+      "result_id": "e6467930-caa0-4ac4-8bd0-0bb05464338e"
+    },
+    {
+      "claim_id": "7e1fd2c6-7613-437c-89e3-71f82f5f48de",
+      "result_id": "e6467930-caa0-4ac4-8bd0-0bb05464338e"
+    },
+    {
+      "claim_id": "4ffaf589-f351-4864-954c-15ac0e78d89c",
+      "result_id": "e6467930-caa0-4ac4-8bd0-0bb05464338e"
+    },
+    {
+      "claim_id": "e24e3d4e-0236-4e48-9ea3-69b7797b506d",
+      "result_id": "e6467930-caa0-4ac4-8bd0-0bb05464338e"
+    },
+    {
+      "claim_id": "a5078c53-f8b6-4e3f-bbb6-4457742a1bb7",
+      "result_id": "641e7a9b-128a-428b-9103-95d760c8e657"
+    },
+    {
+      "claim_id": "dc6a57d6-42f7-45fd-8564-7e4058a4cb7f",
+      "result_id": "641e7a9b-128a-428b-9103-95d760c8e657"
+    },
+    {
+      "claim_id": "fde5351f-aab6-464c-842f-166de4cb3dfe",
+      "result_id": "641e7a9b-128a-428b-9103-95d760c8e657"
+    },
+    {
+      "claim_id": "09f0a762-8a94-4492-a7a2-2321968c5407",
+      "result_id": "1ac12348-3656-41c6-afdf-86a14c522e78"
+    },
+    {
+      "claim_id": "30c02f29-4583-4a7d-8ab1-407545c87d7a",
+      "result_id": "1ac12348-3656-41c6-afdf-86a14c522e78"
+    },
+    {
+      "claim_id": "127a329f-4587-4675-98e8-fb3375fcf46a",
+      "result_id": "1ac12348-3656-41c6-afdf-86a14c522e78"
+    },
+    {
+      "claim_id": "86d417c9-419a-4e4e-b7f9-6ae79e3f5299",
+      "result_id": "1ac12348-3656-41c6-afdf-86a14c522e78"
+    },
+    {
+      "claim_id": "a61aa980-cf47-4253-ba09-c099fa747c28",
+      "result_id": "1ac12348-3656-41c6-afdf-86a14c522e78"
+    },
+    {
+      "claim_id": "e61b359f-eefc-4c19-8825-569a5f38c718",
+      "result_id": "bb7089db-4e07-48fb-847a-a3ae664965ee"
+    },
+    {
+      "claim_id": "c7cc8a94-ab88-40c1-9d38-42a25f0e9adf",
+      "result_id": "bb7089db-4e07-48fb-847a-a3ae664965ee"
+    },
+    {
+      "claim_id": "6c076cfa-3899-4c6e-89c3-532d056f4df6",
+      "result_id": "bb7089db-4e07-48fb-847a-a3ae664965ee"
+    },
+    {
+      "claim_id": "658a73a6-e47d-4686-af40-7aea77950f1b",
+      "result_id": "bb7089db-4e07-48fb-847a-a3ae664965ee"
+    },
+    {
+      "claim_id": "3f64a2c2-0397-42e9-b89c-ab59fe903563",
+      "result_id": "7f6a4642-18b5-4314-9832-c8f97e314a17"
+    },
+    {
+      "claim_id": "85a88446-2f28-42f5-a43c-96237496a4c1",
+      "result_id": "4a9db2f0-796f-4faa-a0ec-86f1830da772"
+    },
+    {
+      "claim_id": "ebed39c7-adc9-46c3-b5fb-dbbad27b4dfe",
+      "result_id": "4a9db2f0-796f-4faa-a0ec-86f1830da772"
+    },
+    {
+      "claim_id": "7ebeb612-40f9-4d85-ab9d-c48dd861320b",
+      "result_id": "4a9db2f0-796f-4faa-a0ec-86f1830da772"
+    },
+    {
+      "claim_id": "bc776a7d-d838-4013-a0e9-058fc9e6ffa5",
+      "result_id": "4a9db2f0-796f-4faa-a0ec-86f1830da772"
+    },
+    {
+      "claim_id": "4af63ed2-2639-41ee-8899-286bbb2cb5f1",
+      "result_id": "68f87e3e-de5e-457f-b7f1-668a2df36288"
+    },
+    {
+      "claim_id": "9a2d102a-d2d7-4b3d-ba08-bb6369aa4efc",
+      "result_id": "68f87e3e-de5e-457f-b7f1-668a2df36288"
+    },
+    {
+      "claim_id": "34b794e7-2148-4d88-9a3e-6c92e1ec817f",
+      "result_id": "44b5dd58-8caf-4430-943d-6c305ddab45f"
+    },
+    {
+      "claim_id": "c322bb2e-c4a1-41ec-94cc-98af32f6a63a",
+      "result_id": "44b5dd58-8caf-4430-943d-6c305ddab45f"
+    },
+    {
+      "claim_id": "39b736ab-07cd-48e5-9b50-d62924bdceb9",
+      "result_id": "153ff530-260e-4196-b1bb-b81605a72a85"
+    },
+    {
+      "claim_id": "28f2e181-16ca-47c3-8451-000757c6d43c",
+      "result_id": "153ff530-260e-4196-b1bb-b81605a72a85"
+    },
+    {
+      "claim_id": "03a0f889-f5d2-4475-9efb-7835860d73af",
+      "result_id": "455dc5ec-acf2-47f6-aa3a-d2aac503af0c"
+    },
+    {
+      "claim_id": "7803faab-230c-469b-a231-c31922eaa894",
+      "result_id": "455dc5ec-acf2-47f6-aa3a-d2aac503af0c"
+    },
+    {
+      "claim_id": "830198f6-8432-425a-a818-e3d026c74d7d",
+      "result_id": "455dc5ec-acf2-47f6-aa3a-d2aac503af0c"
+    },
+    {
+      "claim_id": "dcd1367f-9dfc-43aa-be9f-1c5a9e49fe51",
+      "result_id": "ea7ec006-4162-4b93-bb41-cd0946db5444"
+    }
+  ],
+  "comparisons": []
+}

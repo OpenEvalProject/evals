@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C37",
+      "C38",
+      "C39",
+      "C84"
+    ],
+    "result": "Thalamocortical axon boutons in layers 3b/4 and L1 of mouse auditory cortex exhibit surprisingly heterogeneous frequency selectivity at the local scale (~90\u00d7100 \u00b5m), with neighboring boutons tuned to frequencies several octaves apart. The average co-tuning is approximately one octave, with L3b/4 showing slightly stronger co-tuning (0.93\u00b10.25 octaves) than L1 (1.15\u00b10.37 octaves).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C37-C39, and C84 are well-supported by two-photon calcium imaging data from multiple mouse strains (C57BL/6 and C57BL/6NTac.Cdh23753A>G) under both anesthetized and awake conditions. The quantitative measurements of co-tuning are backed by statistical analysis (p<0.001, Wilcoxon signed-rank test) and visual evidence in Figures 1D-J. The finding challenges the expectation of precise tonotopic organization at the local scale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Frequency gradients in thalamocortical input are apparent only at large spatial scales (hundreds of micrometers). While there is a statistically significant but very weak correlation between topographic distance and BF difference in both L1 (R=0.035) and L3b/4 (R=0.034), this relationship is not due to clustering of boutons from the same axon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C48-C50 are supported by statistical analysis of large datasets (>160,000 bouton pairs) showing weak but significant correlations (p<10^-45 for L3b/4, p<10^-63 for L1). The correlation persists when excluding same-BF pairs, ruling out axonal clustering as an artifact. Figure 2A visualizes this relationship. The finding demonstrates that tonotopy exists but is coarse at local scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C51",
+      "C60",
+      "C83",
+      "C100"
+    ],
+    "result": "Thalamocortical inputs to L1 and L3b/4 are tonotopically matched, with L1 input including collaterals from axons innervating L3b/4. The mean BF of L1 regions correlates strongly with that of L3b/4 regions immediately below (R=0.59-0.67), and both layers share similarly coarse tonotopic organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C25, C51, C60, C83, and C100 are well-supported by correlation analysis (Figure 2B, 3E) showing significant relationships between L1 and L3b/4 mean BFs (p=0.0002 for anesthetized, p=0.0013 for awake mice). Anatomical evidence (C75, C102) demonstrates columnar arrangement of MGBv axons traveling from middle layers to L1, providing structural basis for functional alignment. The consistency across experimental conditions strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C61"
+    ],
+    "result": "When imaging multiple regions over larger cortical areas (several hundred micrometers), the characteristic caudo-rostral low-to-high tonotopic gradient of mouse primary auditory cortex (A1) emerges in both L1 and L3b/4 inputs, with AAF showing the reverse gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C61 are supported by spatial mapping data shown in Figures 2C and 3F, demonstrating emergence of tonotopic gradients at larger scales. Microelectrode recordings (C62) confirmed that 18/20 imaging regions were in primary auditory areas, validating the anatomical localization. This finding reconciles local heterogeneity with global tonotopic organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C82",
+      "C87"
+    ],
+    "result": "The observed thalamocortical organization reflects almost exclusively the lemniscal projection from MGBv to primary auditory cortex. Non-lemniscal and paralaminar nuclei (MGBd, MGBm, SG, PIN, PP) provide minimal input to primary areas, with projections mainly targeting secondary auditory cortex (particularly A2) and subcortical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C67-C69, C74, C82, and C87 are strongly supported by anatomical experiments using CR-IRES-cre mice (Figures 4-5). The CR+ labeling specifically targeted non-lemniscal nuclei, showing sparse cortical projections and poor acoustic responses (C79-C81). MGBv projections were orders of magnitude more extensive (C74), and functional imaging yielded few FRAs from CR+ axons in primary areas (5/6 regions produced no FRAs). This comprehensive anatomical and functional characterization definitively establishes MGBv dominance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C102"
+    ],
+    "result": "MGBv axons travel from middle layers to L1 in columnar fashion, with individual MGBv neurons providing input to multiple cortical layers. This anatomical arrangement provides the structural basis for the tonotopic alignment between L1 and L3b/4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, C78, and C102 are supported by anatomical reconstructions shown in Figure 5C-D. The columnar arrangement is clearly visible in the inset of Figure 5C, and partial reconstruction of a single MGBv axon (Figure 5D) demonstrates multi-layer innervation. This finding is consistent with previous work in rabbits (C77, citing Cetas et al., 1999) and provides a mechanistic explanation for the functional alignment observed between layers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Similar patterns of heterogeneous thalamocortical organization were observed across two C57BL/6 strains (standard and Cdh23753A>G corrected) and across anesthetized and awake states, though the Cdh23753A>G strain showed broader BF distributions with more high-frequency representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C56-C59 are supported by comparative data in Figure 3. The Cdh23753A>G mice showed greater high-frequency representation (Figure 3A-B), consistent with correction of age-related hearing loss. Despite this difference, co-tuning values remained similar (~1 octave in both layers), and the tonotopic matching between L1 and L3b/4 persisted (R=0.67, p=0.0013). The consistency across conditions strengthens the generalizability of the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Within L3b/4, there is no relationship between imaging depth and co-tuning (R=0.14, p=0.41), suggesting that layer 4 is no more homogeneous than lower layer 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 are supported by correlation analysis with adequate sample size (n=36 regions). The lack of depth-dependent variation in co-tuning within L3b/4 (shown in Figure 1\u2014figure supplement 2) indicates that the heterogeneity is not simply a layer 3 vs layer 4 distinction. This finding is important for interpreting the functional organization of thalamorecipient layers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Overall BF distributions pooled across all regions showed slightly but significantly weaker co-tuning (L1: 1.29 octaves; L3b/4: 1.05 octaves) than individual imaged regions, indicating some spatial selectivity in frequency representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by statistical comparison (Wilcoxon signed-rank test, p=0.003 for L1, p=0.014 for L3b/4, n=36). The difference between local and global co-tuning provides quantitative evidence for spatial organization at larger scales, though the effect size is modest. This result helps reconcile local heterogeneity with the existence of tonotopic gradients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Level-averaged tuning curves of thalamocortical boutons could generally be well approximated by Gaussians, with dozens to hundreds of tone-responsive boutons recorded per 90\u00d7100 \u00b5m region (L1: 90.5\u00b164; L3b/4: 87\u00b184 boutons, median\u00b1IQR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by quantitative analysis shown in Figure 1\u2014figure supplement 1. The Gaussian fits had median R\u00b2 values of 0.67 (L1) and 0.74 (L3b/4), indicating good tuning quality. The sample sizes per region are substantial and well-documented. These methodological details support the validity of the frequency selectivity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Sparse labeling experiments revealed that MGBm/PIN provide extremely sparse input to auditory cortex (primarily L1), while PP projections do not enter auditory cortex at all, instead targeting subcortical structures (amygdala, striatum, midbrain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by anatomical data from sparse labeling experiments (Figure 5A-B) that transfected small numbers of neurons (12-53). The spatial distribution of labeled axons clearly shows minimal cortical input from MGBm/PIN and complete absence of cortical projections from PP. This anatomical specificity strengthens the conclusion that MGBv dominates cortical input.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "CR+ axon boutons from non-lemniscal nuclei responded poorly to acoustic stimulation, with very few frequency response areas obtained even in densely labeled secondary auditory cortex (A2: median 1\u00b13.5 FRAs per region, range 0-9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by functional imaging data from CR-IRES-cre mice. The quantitative results (5/6 primary areas produced no FRAs; median 1\u00b13.5 FRAs in A2) demonstrate poor acoustic responsiveness of non-lemniscal inputs. This functional characterization complements the anatomical findings and supports the conclusion that well-defined FRAs are predominantly a feature of MGBv projections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The overall BF distribution of thalamocortical inputs showed a pronounced bias toward frequencies near the center of the mouse hearing range, consistent with distributions reported in inferior colliculus and thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by data in Figures 1H-I and comparison with cited literature (C43-C45). The bias toward mid-range frequencies is consistent with known properties of the mouse auditory system. This finding validates that the imaging captured representative thalamic input and was not biased toward particular frequency ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Microelectrode recordings confirmed that the vast majority (18/20) of imaging regions in awake C57BL/6NTac.Cdh23753A>G mice were located in primary auditory cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by electrophysiological mapping data (Figure 3G) that provided independent validation of anatomical localization. This verification is important for interpreting the functional imaging results and ensuring that the observed organization reflects primary auditory cortex rather than secondary areas. The methodology is appropriate and the sample size adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C28",
+      "C89",
+      "C90",
+      "C113",
+      "C118"
+    ],
+    "result": "The authors speculate that the locally heterogeneous but globally tonotopic organization of thalamocortical projections may enable rapid contextual modulation of cortical frequency representations, provide a basis for broad spectral integration and experience-dependent plasticity, and explain findings such as widespread cortical activation from focal thalamic stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C27-C28, C89-C90, C113, and C118 are explicitly speculative interpretations of functional significance. While the speculation is reasonable and supported by citations to relevant literature (C89, C90, C114-C117), these claims represent hypotheses rather than demonstrated results. The authors appropriately use cautious language ('may be useful,' 'provides a potential basis,' 'is likely to be'). Testing these functional hypotheses would require additional experiments in behaving animals with manipulations of thalamocortical input.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The authors predict that recordings in behaving animals will likely reveal more pronounced differences between L1 and L3b/4 input, given that higher-order thalamic nuclei carry more motor and contextual signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is a speculative prediction based on findings in other sensory systems (C107). While the reasoning is sound, this remains an untested hypothesis. The current study was conducted in anesthetized or passively listening awake animals, which may not reveal the full functional differences between layers. This prediction appropriately identifies an important direction for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C53",
+      "C54",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C85",
+      "C88",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The manuscript provides extensive background on auditory system organization, tonotopy, thalamocortical connectivity, and relevant prior findings from the literature to contextualize the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C8-C21, C42-C45, C53-C54, C63-C66, C85, C88, C92-C99, C101, C103-C107, C109-C112, C114-C117) represent established knowledge or prior findings supported by appropriate citations. They provide necessary context for interpreting the novel findings. The citations appear appropriate and the characterization of prior work is generally accurate, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C22",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study employed in vivo two-photon calcium imaging of GCaMP6m-expressing thalamocortical axons in auditory cortex of anesthetized and awake mice, with appropriate ethical approval and using multiple mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C29-C32, and C119-C124 describe the methodology and are supported by detailed Methods section and Figure 1A. The approach is appropriate for measuring frequency selectivity of individual boutons, and the use of multiple strains and conditions strengthens the findings. The correlation between calcium transients and spiking (C32) is supported by citation to Petreanu et al., 2012. Sample sizes are clearly reported.",
+    "result_type": "MINOR"
+  }
+]

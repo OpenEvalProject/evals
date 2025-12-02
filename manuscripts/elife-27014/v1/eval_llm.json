@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C99"
+    ],
+    "result": "The African turquoise killifish is established as a naturally short-lived vertebrate model organism with a complex gut microbiota similar in taxonomic diversity to mammals, making it suitable for aging research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C34, and C99 collectively establish the turquoise killifish as a short-lived vertebrate with complex gut microbiota. The data in Figures 1A-B demonstrate bacterial diversity comparable to mammals (C31, C33-C34), supported by 16S rRNA sequencing. The characterization is well-documented with appropriate citations and comparative analyses across model organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C84",
+      "C85"
+    ],
+    "result": "Wild and laboratory turquoise killifish populations share a core microbiota, with wild populations showing higher diversity but laboratory fish recapitulating species-specific bacterial composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C84-C85 are supported by beta diversity analyses in Figures 2D-F showing laboratory fish contained within natural variation of wild populations. Shannon diversity (Figure 2C) confirms higher diversity in wild fish with appropriate statistical testing (Dunn Kruskal-Wallis, BH-adjusted p < 0.05).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Aging in turquoise killifish is characterized by decreased gut microbial diversity, with old fish showing reduced richness, loss of Firmicutes and Actinobacteria, and increased Proteobacteria dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C38-C45, C86-C89 are well-supported by alpha diversity analysis (Figure 3B showing significantly lower observed OTUs in old fish, Mann Whitney U test p < 0.001) and beta diversity analysis (Figure 3C, Adonis test p < 0.001). Phylum-level changes are supported by statistical testing (Kruskal-Wallis, p = 0.002 for Firmicutes, p = 0.013 for Actinobacteria) and visualized in Figure 3D cladogram.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C90",
+      "C91"
+    ],
+    "result": "Young fish gut microbiota is associated with beneficial metabolic functions (glycolysis, carbohydrate metabolism, DNA repair), while old fish microbiota is enriched for pathogenic functions including bacterial motility and virulence factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 and C90-C91 are supported by PICRUSt predicted metagenome function analysis shown in Figure 3E with LEfSe analysis (p < 0.001). The association between bacterial motility/flagellar assembly and virulence (C50) is appropriately cited. The functional predictions are consistent with the observed taxonomic shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C51",
+      "C52"
+    ],
+    "result": "Gut aging in turquoise killifish is associated with transcriptional changes: young fish show active proliferation signatures while old fish show increased inflammation and immune responses to pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C51-C52 are supported by RNA-Seq data and GO term enrichment analysis shown in Figures 3F-G and Figure 3\u2014figure supplement 2. The differential expression analysis identifies distinct signatures with appropriate statistical methods (n=4 per group), though sample size is modest for transcriptomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Transferring young gut microbiota to middle-aged killifish (Ymt) significantly extends lifespan compared to multiple control groups: 21% vs antibiotic-only (Abx), 41% vs same-age transfer (Omt), and 37% vs untreated controls (wt).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C54-C58 are strongly supported by survival analysis in Figure 4B with appropriate statistical testing (Logrank test with highly significant p-values: 5.89E-05, 5.08E-06, 4.04E-09). Multiple independent cohorts shown in Figure 4\u2014figure supplement 1D provide replication. The experimental design includes appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Young gut microbiota transfer delays age-dependent behavioral decline, with Ymt fish showing significantly higher locomotor activity at 16 weeks compared to control groups, resembling younger fish performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C59-C61 are supported by locomotor activity data in Figure 4C with appropriate statistical testing (Kruskal-Wallis chi-squared = 10.752, p = 0.00104 for age comparison; Dunn Kruskal-Wallis BH-adjusted p = 0.004 for Ymt vs controls). The behavioral assay provides an integrated measure of health status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Antibiotic treatment (VMNA cocktail) significantly reduced gut microbial content compared to pre-treatment levels in turquoise killifish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by bacterial load quantification data in Figure 4\u2014figure supplement 1B (n=10 pre- and post-treatment). The qPCR-based measurement normalized to input fecal material provides appropriate validation of the antibiotic depletion protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The timing of gut microbiota transfer is critical: young fish receiving old or young microbiota showed no lifespan differences, suggesting age-dependent host immune function determines susceptibility to dysbiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 and C102-C105 are supported by survival data in Figure 4\u2014figure supplement 1C, but claims C103-C105 are speculative interpretations. While the data show no effect of GM transfer to young fish, the mechanistic explanation involving immune function decline is not directly tested and remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Young gut microbiota transfer prevented age-associated decline in microbial diversity, with Ymt fish maintaining significantly higher bacterial richness at 16 weeks and clustering with young fish based on community structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62-C68 are supported by longitudinal microbiota analysis. Alpha diversity (Figure 5A, Dunn Kruskal-Wallis BH-adjusted p = 0.009) and beta diversity analyses (Figures 5B, 5\u2014figure supplement 1C-E) with appropriate statistical testing demonstrate maintenance of young-like microbiota. Hierarchical clustering (Figure 5C) confirms Ymt clustering with young fish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C74"
+    ],
+    "result": "Young gut microbiota transfer maintained enrichment of specific bacterial genera (Exiguobacterium, Planococcus, Propionigenium, Psychrobacter) that are characteristic of young fish and serve as hub bacteria in co-occurrence networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69-C70, C74 are supported by LEfSe analysis (Figure 5D cladogram), relative abundance data (Figure 5E boxplots), and network analysis (Figure 6C). The identification of these genera as hubs in young-like networks provides mechanistic insight into microbiota structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Bacterial network topology reflects host age in both fish and mice, with younger individuals having larger, more connected networks and fewer Proteobacteria connections, while older individuals show reduced network complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C75-C76 are supported by co-occurrence network analysis using SparCC (Figures 6A-C). The extension to mice using published data (Figure 6B inset) strengthens the generalizability. The network analysis methodology is appropriate for compositional microbiome data, though the biological interpretation of network topology requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "While young microbiota transfer reset gut bacterial composition, host gut transcriptomes clustered by chronological age, though specific pathways (defense response, hyaluronic acid metabolism, TOR pathway, cell adhesion) differed between Ymt and control groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by RNA-Seq analysis (Figures 7A-D). Cluster analysis shows age-based separation (Figure 7A), while differential expression reveals specific pathway differences (Figures 7B-D) with appropriate statistical testing (Fisher exact test, BH FDR = 0.1). The modest sample size (n=4 per group) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Hub bacterial genera shared between Ymt and young fish are highly correlated with host transcripts including Jak2 and ribosomal protein genes, which are associated with aging and longevity in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by OTU-transcript correlation analysis (Figures 7E, 7\u2014figure supplement 2) and appropriate citation for ribosomal protein association with longevity. The correlation matrix provides a valuable resource, though correlation does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C106"
+    ],
+    "result": "Differential expression of hyaluronic acid metabolism genes between Omt and Ymt groups may contribute to lifespan differences through effects on inflammation and immune response, while enhanced bacterial defense responses in Ymt may increase resistance to pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83 and C106 are speculative interpretations of the transcriptome data. While C83 is supported by citations linking hyaluronic acid metabolism to inflammation and cancer, and the differential expression is shown in Figures 7B-C, the causal connection to lifespan modulation is not established. These remain plausible hypotheses requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Key bacterial genera enriched in young fish (Exiguobacterium, Propionigenium, Planococcus, Psychrobacter) have metabolic capabilities to produce beneficial compounds including short-chain fatty acids, essential amino acids, and omega-fatty acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are based on established knowledge about these bacterial genera. While not directly demonstrated in this study, these are well-documented capabilities in the literature and provide plausible mechanisms for beneficial effects. Direct measurement of these metabolites would strengthen the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C100",
+      "C101",
+      "C107",
+      "C108"
+    ],
+    "result": "Young gut microbiota may extend lifespan through dual mechanisms: delaying dysbiosis and providing direct beneficial effects, potentially affecting host gut proliferation, differentiation, and ribosomal biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C100-C101, C107-C108 are speculative interpretations. While C101 is reasonably inferred from the observation that Ymt outlives Abx (supported by survival data), the mechanistic explanations in C98, C100, C107-C108 are hypothetical and not directly tested. These represent plausible models requiring further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context on aging pathways, environmental factors affecting lifespan, gut microbiota functions, and age-associated changes in microbiota composition across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C19 provide literature context and are appropriately supported by citations to published work. These establish the scientific background for the study but do not represent novel findings from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

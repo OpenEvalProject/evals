@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6"
+    ],
+    "result": "Two batches of gold nanorods (GNR-710 and GNR-860) were synthesized with distinct core sizes and aspect ratios, and coated with silica shells of approximately 35-39 nm thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, and C6 provide specific dimensional measurements for both GNR batches obtained from TEM characterization. The measurements include error estimates and are supported by imaging data in Figure 1a. The silica shell thicknesses are consistent with the design requirement stated in C4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Silica-coated GNRs were designed with NIR absorption properties and a 35 nm silica shell to preserve optical properties after cellular uptake, which is essential for photoacoustic detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 establish the design rationale supported by prior work (C4). Claims C10-C11 demonstrate through TEM and spectroscopic data that GNRs maintain their optical properties within cellular vesicles. Claim C12 explains the technical necessity of this preservation for spectral unmixing in photoacoustic imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Silica-coated GNRs showed minimal cytotoxicity, with cell viability remaining above 91% even at the highest tested concentration (O.D. = 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 provides quantitative viability data from triplicate measurements shown in Figure 1e. Claim C14 contextualizes these findings with previous work. The data demonstrate acceptable biocompatibility for the labeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A bi-cistronic lentiviral vector using an E2A element achieved superior co-expression of iRFP720 and firefly luciferase compared to an IRES-based vector, with 5-fold higher luciferase expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 describe the vector design and comparative performance data from IVIS imaging (Figure 2d,e). The E2A vector showed equivalent iRFP720 expression but 5-fold higher luciferase activity. Claim C18 adds subcellular localization information from immunocytochemistry. The quantitative comparison is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "After intracardiac injection into the left ventricle, GNR-labeled cells distributed to the head, liver, and kidney regions, with cells trapped in brain capillaries but not crossing the blood-brain barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe the injection methodology and physiological rationale. Claims C24-C27 report the observed biodistribution pattern confirmed by both bioluminescence and MSOT imaging (Figure 3), with support from prior literature for the distribution pattern and capillary trapping mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "GNR uptake did not affect the overall biodistribution behavior of cells, as demonstrated by identical bioluminescence patterns in cells with or without GNR labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 report a critical control experiment shown in Figure 3\u2014figure supplement 1, demonstrating that the labeling strategy does not alter cell behavior. This is essential for validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Spectral unmixing controls demonstrated high specificity of GNR detection, with no signal when incorrect spectra were applied and wavelength-specific intensity increases matching GNR absorption profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe rigorous control experiments (Figures 4 and 4\u2014figure supplement 1) demonstrating spectral specificity. Claim C32 notes the expected limitation that iRFP720 signal was insufficient for immediate post-injection detection due to cell dispersion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Massive cell death occurred within 24 hours post-injection, with only 15-22% of cells surviving at day 1 and less than 4% by day 5, which was not caused by GNR labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide quantitative bioluminescence data (Figure 5b) showing progressive cell loss. Claims C35-C36 contextualize this finding with prior literature and demonstrate through control experiments that GNR labeling was not responsible for cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "After 24 hours, GNR and bioluminescence signals diverged spatially, with GNRs accumulating in the liver while viable cells remained elsewhere, indicating hepatic clearance of GNRs from dead cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 describe the observed spatial divergence of signals in Figure 5a-c. Claims C41-C43 provide the mechanistic interpretation based on the different signal sources (GNRs vs. living cells) and known nanoparticle clearance pathways, supported by multiple citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Longitudinal MSOT imaging tracked GNR clearance from the liver, with photoacoustic signal decreasing by 47% at day 5 and 73% at day 25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide quantitative longitudinal data from Figure 5d demonstrating progressive clearance of GNRs from the liver over 25 days, validating the ability to monitor nanoparticle fate long-term.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "After initial cell death in primary distribution sites, surviving cells formed tumors at new locations starting around day 5, with signal intensity increasing over subsequent weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 describe the temporal progression from initial cell loss to tumor formation observed in bioluminescence imaging (Figure 6\u2014figure supplement 1). Claims C49-C50 provide context from prior literature about the tumorigenic potential of this cell line.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "MSOT imaging using iRFP720 expression enabled precise localization of multiple tumors throughout the body, with findings validated by ex vivo bioluminescence and fluorescence imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe the spectral basis for iRFP720 detection (Figure 6\u2014figure supplement 2). Claim C54 reports the identification of multiple tumors in specific anatomical locations from MSOT cross-sections (Figure 6b). Claims C55-C56 provide validation through ex vivo imaging (Figure 6c and 6\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "MSOT enabled longitudinal monitoring of tumor growth from very early stages, tracking a tumor from 1.2 mm diameter at day 13 to 3.3 mm at day 30, including morphological changes such as branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe detailed longitudinal tracking of tumor growth with specific size measurements at multiple timepoints (Figure 7). The spatial resolution of MSOT enabled detection of sub-millimeter tumors and morphological changes, demonstrating a key advantage of the technique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MSOT provided excellent longitudinal tumor monitoring from sub-millimeter stages, though some peripheral tumors and lung tumors could not be imaged due to technical limitations of the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 notes that GNRs were cleared and not used for tumor imaging. Claim C62 summarizes the overall capability demonstrated. Claims C63-C66 acknowledge specific technical limitations (nose cone positioning, air-tissue interfaces) while noting that bioluminescence could rule out lung involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The multimodal approach achieved high-resolution short-term cell tracking via GNR photoacoustic signals and long-term tumor monitoring via iRFP720, with bioluminescence providing sensitive validation of cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 synthesize the key findings demonstrating complementary roles of the labeling strategies. GNRs enabled immediate high-resolution detection of dispersed cells through spectral unmixing, while iRFP720 enabled long-term monitoring as cells clustered into tumors. Bioluminescence provided orthogonal validation throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The combined nanoparticle and genetic labeling strategy enabled tracking of both nanoparticle clearance (hepatobiliary pathway) and surviving cell fate (tumor formation) with superior spatial resolution compared to other optical imaging methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 summarize the temporal evolution of the two labeling strategies and their complementary information content. The divergence of signals over days revealed distinct fates for GNRs versus cells, with MSOT providing sub-millimeter spatial resolution for tumor detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The multimodal cell tracking approach enabled non-invasive monitoring of initial cell biodistribution at sub-organ resolution and detection of tumor formation from very early stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide high-level conclusions supported by the comprehensive imaging data throughout the manuscript. The combination of techniques achieved both high spatial resolution and high sensitivity across different temporal phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript establishes the biophysical rationale for the multimodal approach, including NIR optical window properties, luciferase characteristics, acoustic versus photon scattering, iRFP properties, and GNR extinction coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 provide established knowledge from the literature (all supported by citations) that justifies the choice of reporters and imaging modalities. These include the NIR optical window, luciferase properties, acoustic scattering advantages, iRFP absorption characteristics, and GNR extinction coefficients that are orders of magnitude higher than other contrast agents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C51"
+    ],
+    "result": "The manuscript establishes the complementary strengths and limitations of bioluminescence imaging (high sensitivity, poor spatial resolution) versus photoacoustic imaging (superior spatial resolution of 150 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C51 describe well-established properties of the two imaging modalities supported by citations. These technical characteristics justify the multimodal approach and explain why different modalities are optimal at different stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript establishes that while silica coating preserves GNR optical properties in harsh cellular environments, cell division and death dilute GNR signals, necessitating genetic reporters for long-term tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 cites prior work on silica shell protection. Claims C89-C90 provide logical reasoning for why nanoparticle labeling alone is insufficient for long-term tracking, motivating the dual-labeling strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The authors propose that this multimodal cell tracking approach could be widely applied for cancer and regenerative medicine research to monitor biodistribution, tumor formation, and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is a speculative statement about potential future applications. While the demonstrated capabilities support this possibility, the claim represents a prospective application rather than a demonstrated result. The generalizability to other cell types and disease models remains to be established.",
+    "result_type": "MINOR"
+  }
+]

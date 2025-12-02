@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The crystal structure of the CPSF160-WDR33 heterodimer was determined at 2.5 \u00c5 resolution, revealing that CPSF160 contains three WD40 beta-propeller domains (bP1, bP2, bP3) and a C-terminal helical domain (CTD) arranged in a compact tristar configuration. WDR33 contains a seven-bladed beta-propeller domain and an N-terminal domain (NTD) that is completely buried in a cavity formed by CPSF160 bP1 and bP3. The two proteins establish extensive interactions with ~6900 \u00c5\u00b2 of buried surface area, 45 hydrogen bonds, and 19 salt bridges, forming a tight heterodimeric scaffold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure determination is well-documented with appropriate crystallographic statistics (Rfree = 26.2%, 2.5 \u00c5 resolution) and multiple phasing methods (molecular replacement, Ta6Br12-SAD, sulfur-SAD). The structural features are directly observed in the electron density maps and quantified through standard structural analysis methods. The extensive interaction network is calculated from the atomic coordinates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A minimal CPSF complex containing full-length CPSF160, CPSF30, Fip1, and only the N-terminal WD40 domain of WDR33 (WDR33M1-K410) binds AAUAAA-containing RNA with sub-nanomolar affinity (KD = 0.65 \u00b1 0.09 nM) and shows >100-fold reduced affinity for mutant AAGAAA RNA, demonstrating that the C-terminal region of WDR33 is not necessary for high-affinity, specific AAUAAA recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence polarization binding data are quantitative with error estimates from replicate measurements. The >100-fold specificity difference between wild-type and mutant RNA provides strong evidence for sequence-specific recognition. The conclusion that the C-terminal region of WDR33 is dispensable is directly supported by the functional activity of the truncated construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Cross-linking mass spectrometry identified 54 inter-protein and 99 intra-protein cross-linked sites in the CPSF core complex, revealing distinct interaction patterns: Fip1 cross-links along the entire CPSF160 sequence, WDR33 cross-links to the middle region of CPSF160, and CPSF30 cross-links to the C-terminal region of CPSF160. Notably, lysine residues K46, K50, and K55 in the N-terminal region of WDR33 form a cross-linking hotspot interacting with CPSF160, all five CPSF30 zinc finger domains, and the conserved region of Fip1. Among mappable cross-links, 12 of 18 are consistent with the crystal structure (\u226435 \u00c5 distance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-linking data are analyzed with appropriate quality filters (xQuest score >30, ~10% FDR) and provide complementary information to the crystal structure. The agreement between 12/18 mappable cross-links and the structure is reasonable given that many cross-links originate from disordered regions. The identification of the WDR33 N-terminal hotspot is supported by multiple independent cross-links.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C119",
+      "C120"
+    ],
+    "result": "CPSF30 binds to the CPSF160-WDR33 heterodimer independently of Fip1, and the N-terminal ~60 residues of CPSF30 including the ZF1 domain are both necessary and sufficient for this interaction. Deletion of either the N-terminal ~60 residues or the N-terminal 34 residues upstream of ZF1 impairs binding, while these 34 residues alone are insufficient for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-precipitation experiments systematically test multiple CPSF30 truncation constructs and provide clear positive and negative controls. The necessity is demonstrated by loss of binding upon deletion, and sufficiency is shown by retention of binding with minimal constructs. The conclusions are directly supported by the gel-based binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C122"
+    ],
+    "result": "Fip1 is tethered to the CPSF complex via CPSF30, with both full-length Fip1 and a minimal conserved domain (Fip1CD, residues 130-195) requiring CPSF30 for interaction with CPSF160-WDR33. The zinc finger domains ZF4 and ZF5 of CPSF30 are necessary and sufficient for Fip1 interaction, with ZF4 contributing additional binding beyond ZF5. The conserved Fip1CD suggests this interaction mode is conserved in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-precipitation experiments with both insect cell-expressed and bacterially-expressed recombinant proteins provide convergent evidence. The systematic deletion analysis of CPSF30 domains clearly identifies ZF4-5 as the Fip1-binding region. The CPSF30-dependence of Fip1 binding is demonstrated by appropriate positive and negative controls. The conservation argument is supported by sequence alignment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C145",
+      "C160",
+      "C161"
+    ],
+    "result": "The CPSF30 ZF2 and ZF3 domains are critical determinants of AAUAAA recognition. Deletion of ZF3 results in >2000-fold reduction in AAUAAA binding, while deletion of ZF2 in the absence of ZF3 causes no further reduction, indicating ZF3 is essential and ZF2 requires ZF3 for function. Complexes lacking Fip1 and containing only CPSF30 ZF1-3 bind AAUAAA RNA with extremely high affinity (<100 pM), suggesting possible autoinhibition by ZF4-5 and/or Fip1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence polarization binding assays systematically test multiple CPSF30 truncation variants with quantitative measurements. The >2000-fold reduction upon ZF3 deletion provides strong evidence for its essential role. The observation that ZF2 alone (without ZF3) does not contribute to binding is clearly demonstrated by the lack of further reduction upon ZF2 deletion. The high affinity of minimal complexes is well-documented, though the autoinhibition mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The N-terminal lysine/arginine-rich motif of WDR33 (residues K46-K55) is a critical determinant of AAUAAA recognition. This motif is highly conserved in higher eukaryotes, cross-links to CPSF30 ZF2-3 domains, and contains positively charged residues. Mutations K46A/R47A and R49A/K50A reduce AAUAAA binding affinity by ~70-fold and ~25-fold respectively, without disrupting complex assembly. These mutations also reduce specificity for AAUAAA versus AAGAAA RNA. The CPSF160-WDR33 subcomplex retains substantial affinity and specificity for AAUAAA in the absence of CPSF30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of the WDR33 N-terminal motif is supported by multiple lines of evidence: sequence conservation, cross-linking data showing proximity to CPSF30 ZF2-3, and mutagenesis experiments. The mutations specifically impair RNA binding (25-70 fold reduction) without affecting complex assembly (demonstrated by size exclusion chromatography), providing strong evidence for direct involvement in RNA recognition. The quantitative binding data with both wild-type and mutant RNA demonstrate contributions to both affinity and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "The CPSF160-WDR33 heterodimer functions as the structural scaffold of the core CPSF complex, with WDR33's N-terminal region serving as an interaction hotspot positioned in close proximity to CPSF160, CPSF30, and Fip1. AAUAAA motif binding occurs at the CPSF160-WDR33 interface near the WDR33 N-terminus, where the N-terminal lysine/arginine-rich motif of WDR33 and the ZF2-3 domains of CPSF30 act synergistically to recognize the AAUAAA motif with subnanomolar affinity and high specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the combination of structural data (crystal structure showing the heterodimer interface), cross-linking data (identifying the WDR33 N-terminus as a hotspot), and functional data (mutagenesis and binding assays demonstrating synergistic contributions of WDR33 N-terminus and CPSF30 ZF2-3). The model is consistent with all experimental observations and provides a coherent mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The CPSF160-WDR33 heterodimer architecture is highly reminiscent of the DDB1-DDB2 DNA repair complex, suggesting distant evolutionary relationships. The yeast Cft1-Pfs2 subcomplex superimposes with human CPSF160-WDR33 with low RMSDs (2.56 \u00c5 for CPSF160/Cft1, 1.55 \u00c5 for WDR33/Pfs2), indicating the core CPSF scaffold is highly evolutionarily conserved between yeast and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons are quantitative (RMSD values) and based on standard structural alignment methods. The similarity to DDB1-DDB2 is clearly demonstrated by structural superposition. The conservation between yeast and human complexes is well-documented by the low RMSD values and supported by independent cryo-EM structure of the yeast complex. The evolutionary relationship inference is reasonable given the structural similarity despite low sequence identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "CPSF30 functions as a bridge linking the CPSF160-WDR33 heterodimer to Fip1, with the N-terminal ZF1 domain mediating CPSF160-WDR33 interaction and the C-terminal ZF4-5 domains recruiting Fip1. This organization is consistent with the yeast Cft1-Pfs2-Yth1-Fip1 complex structure and previous studies showing that deletion of the fifth zinc finger domain in yeast Yth1 impairs Fip1p/Pap1p interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bridging function of CPSF30 is directly demonstrated by the co-precipitation experiments showing that Fip1 requires CPSF30 for binding to CPSF160-WDR33. The domain mapping is clear from the systematic truncation analysis. The consistency with yeast data and the cryo-EM structure provides strong supporting evidence for conservation of this architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Fip1 is a peripheral subunit dispensable for specific AAUAAA recognition, with its conserved domain (Fip1CD) interacting with CPSF30 ZF4-5. This interaction mode is conserved across eukaryotes and enables recruitment of other polyadenylation factors including PAP and CStF. Given Fip1's intrinsic RNA-binding activity, the interaction may enable Fip1 to modulate polyA site definition, potentially important for its role in embryonic stem cell renewal and somatic cell reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The dispensability of Fip1 for AAUAAA recognition and the Fip1CD-CPSF30 interaction are well-supported by binding assays and co-precipitation experiments. The conservation argument is supported by sequence data. However, the functional roles in recruiting other factors and modulating polyA site definition are largely speculative and based on inference from conservation and prior literature rather than direct experimental evidence in this study. The connection to stem cell biology is particularly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The CPSF30 zinc knuckle (ZK) domain is not essential for core CPSF complex assembly, consistent with its absence in yeast Yth1. However, deletion of the ZK domain reduces cross-linking efficiency to AAUAAA RNA in vitro, suggesting it contributes to RNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dispensability for assembly is demonstrated by the functional activity of CPSF30 constructs lacking the ZK domain. The contribution to RNA binding is supported by prior cross-linking data (cited), though the precise role remains unclear. The consistency with yeast data strengthens the conclusion about non-essentiality for assembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C185"
+    ],
+    "result": "The difference in the N-termini of human WDR33 and yeast Pfs2p (presence vs. absence of the lysine/arginine-rich motif) might account for differences in polyA site definition between yeast (recognizing degenerate A-rich positioning elements) and mammals (requiring strict A(A/U)UAAA hexanucleotide).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation ('tempting to speculate') and lacks direct experimental evidence. While the correlation between the presence of the WDR33 N-terminal motif in mammals and stricter sequence specificity is intriguing, no experiments test whether the WDR33 N-terminal motif is responsible for the difference in specificity between yeast and mammalian systems. This would require gain-of-function or loss-of-function experiments in the respective organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "A cryo-EM structure of the human CPSF160-WDR33-CPSF30-Fip1 complex bound to AAUAAA RNA published during manuscript preparation revealed that both CPSF30 ZF2-3 domains and the WDR33 N-terminal region are responsible for sequence-specific AAUAAA recognition, in agreement with the structural and biochemical insights from this study. Together, these studies establish the structural framework for polyadenylation signal recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agreement between the independent cryo-EM structure and the current study's findings provides strong validation of the conclusions. The convergence of two independent structural and biochemical approaches on the same mechanism (synergistic recognition by CPSF30 ZF2-3 and WDR33 N-terminus) significantly strengthens confidence in the model. The claim about establishing a structural framework is reasonable given the comprehensive nature of the combined studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "CPSF30 ZF4-5 and/or Fip1 may play an autoinhibitory role within CPSF by sterically hindering accessibility of CPSF30 ZF2-3 domains to the AAUAAA motif, as suggested by increased affinity upon their removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation ('conceivable') to explain the unexpected observation that removal of CPSF30 ZF4-5 and Fip1 increases rather than decreases AAUAAA binding affinity. While the observation is well-documented, the autoinhibition mechanism is not directly tested. Alternative explanations (e.g., effects on protein stability, aggregation, or assay artifacts) are not ruled out. Direct structural or functional evidence for autoinhibition would be needed to support this claim.",
+    "result_type": "MINOR"
+  }
+]

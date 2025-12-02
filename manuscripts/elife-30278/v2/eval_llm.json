@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "MST2 linker autophosphorylation at T325, T336, and T378 inhibits MST2 activation in a feedback mechanism. Mutation of these sites (3TA or 7TA) dramatically increases T180 phosphorylation, demonstrating dual opposing functions: MOB1 recruitment and feedback inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C14 provide converging evidence from multiple experimental approaches (mutagenesis, phospho-specific antibodies, in vitro kinase assays) demonstrating that specific TM motifs mediate feedback inhibition. The data consistently show that removing these phosphorylation sites increases MST2 activation, and that phosphorylation occurs through autophosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "SLMAP FHA domain binds directly to phosphorylated MST2 linker (pT325, pT336, pT378) and recruits STRIPAK to promote PP2A-mediated dephosphorylation of pT180. MOB1 and SLMAP bind pT378 with similar affinities, suggesting competitive binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 demonstrate SLMAP-MST2 interaction through multiple approaches: co-IP experiments (C17-C19), in vitro binding assays (C21), and quantitative ITC measurements (C23-C24). The structural and biochemical data consistently support the model that SLMAP recruits STRIPAK to dephosphorylate MST2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Crystal structures of SLMAP FHA (1.08 \u00c5) and SLMAP FHA-pMST2 complex (1.55 \u00c5) reveal the molecular basis of phospho-threonine recognition. SLMAP FHA prefers the consensus sequence E/D-G-pT-M-x-R/K, with key binding residues R32, S52, and H55.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C38 present high-resolution structural data with appropriate validation through mutagenesis (C37-C38) and binding affinity measurements (C35). The structural analysis is rigorous and the consensus sequence prediction is validated by ITC data showing lower affinities for non-conforming peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "STRIPAK_SLMAP is a key negative regulator of Hippo signaling. SLMAP deletion or depletion leads to spontaneous activation of the Hippo pathway without contact inhibition, increased MST1/2 and downstream phosphorylation, cytoplasmic YAP localization, and reduced target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C50 provide comprehensive evidence from RNAi (C39-C42), CRISPR knockout (C44-C47), and rescue experiments (C48). Multiple readouts (phosphorylation, localization, gene expression) consistently demonstrate STRIPAK_SLMAP as a negative regulator. The phenotype is specific and can be rescued by wild-type but not mutant SLMAP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SAV1 is required for efficient MST1/2 activation during Hippo signaling in human cells. SAV1 knockout reduces LatB-induced phosphorylation of MST1/2, MOB1, LATS1/2, and YAP, and increases target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 demonstrate SAV1 requirement through CRISPR knockout experiments with multiple readouts (phosphorylation of pathway components and gene expression). The data show consistent reduction in pathway activation upon SAV1 deletion both with and without LatB treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SAV1 binding to MST2 does not directly stimulate MST2 kinase activity in vitro, suggesting SAV1 promotes MST1/2 activation through an indirect mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by in vitro kinase assays (Figure 3D) showing no stimulation of MST2 activity by SAV1 SARAH domain. This negative result is important for ruling out direct kinase activation and is consistent with the proposed indirect mechanism through STRIPAK antagonism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Crystal structure of MST2-SAV1 complex reveals that SAV1 SARAH and MST2 SARAH form a heterodimer (not heterotetramer), similar to MST2-RASSF5. SAV1 and RASSF5 bind mutually exclusively to MST2, with RASSFs antagonizing SAV function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 present structural data (2.95 \u00c5 resolution) showing the heterodimeric SARAH interaction. The structural similarity to MST2-RASSF5 and conservation of binding interfaces (C66-C67) support the conclusion of mutually exclusive binding. The interpretation is consistent with prior functional studies cited (C64-C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SAV1 WW domains, particularly WW2, mediate heterotetramerization of MST2-SAV1. WW2 forms a homodimer that brings two MST2-SAV1 heterodimers together. Systematic mutagenesis validates the MST2-SAV1 SARAH interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 combine structural data, mutagenesis (C70), AUC and gel filtration experiments (C72-C73, C76), and cellular validation (C77). The data consistently support WW2-mediated tetramerization. The observation that the ligand-binding site is buried in the WW2 dimer (C78) provides mechanistic insight into competing functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "SARAH-mediated binding and WW2 dimerization are both required for SAV1-induced MST2 activation. SAV1 stimulates MST2 activation through antagonizing STRIPAK_SLMAP, as SAV1 does not further activate the SLMAP-binding-deficient MST2 3TA mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C90 provide systematic domain deletion and mutagenesis analysis showing requirements for SARAH binding (C83-C85) and WW domains (C86-C87). The key observation that SAV1 does not further activate MST2 3TA (C81-C82) strongly supports the STRIPAK antagonism model. In vitro data (C88-C89) show WW domains enable MST2 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The N-terminal region of SAV1 (residues 1-90) is essential for MST2 activation in cells. SAV1 prevents pT180 dephosphorylation without disrupting STRIPAK_SLMAP binding to MST2. Membrane targeting alone cannot explain SAV1-dependent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C101 demonstrate through systematic N-terminal deletions (C91-C94) that residues 1-90 are critical. Co-IP experiments (C95-C96) show SAV1 does not disrupt STRIPAK binding, supporting a direct antagonism model. Subcellular fractionation (C99) shows proportional activation in cytosol and membrane, arguing against membrane targeting as the sole mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The N-terminal 90 residues of SAV1 directly bind PP2A A-C core and inhibit its phosphatase activity toward MST2 pT180 in vitro. SAV1 likely inhibits PP2A in the context of the SAV1-MST2-STRIPAK_SLMAP complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 demonstrate SAV1-PP2A interaction through co-IP (C102-C104), gel filtration (C106), and functional phosphatase inhibition assays (C107). The requirement for high concentrations in vitro (C109) appropriately leads to the conclusion that inhibition is context-dependent in vivo, likely requiring scaffolding by the full complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "MST2-SAV1 forms a complex with STRIPAK_SLMAP. SLMAP/SAV1 double knockout cells phenocopy SLMAP knockout cells, demonstrating that deletion of SLMAP bypasses SAV1 function and that a major function of SAV1 is to counteract STRIPAK_SLMAP suppression of MST activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 provide the critical genetic epistasis experiment showing SLMAP/SAV1 DKO phenocopies SLMAP KO (C114). This strongly supports the model that SAV1's primary function is STRIPAK antagonism. Co-IP data (C110, C113) show SAV1 can interact with STRIPAK components when bound to MST2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Integrated model: SAV1 promotes MST1/2 activation through two mechanisms: (1) forming an MST1/2-SAV1 heterotetramer via SARAH domains and WW2 dimerization that permits trans-autophosphorylation, and (2) directly inhibiting PP2A-mediated dephosphorylation of the MST1/2 activation loop through its N-terminal phosphatase-inhibitory domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123 synthesize the major findings into a coherent model supported by structural, biochemical, and cellular data presented throughout the manuscript. The dual mechanism (heterotetramer formation + PP2A inhibition) is supported by multiple independent lines of evidence from the grouped claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "In Drosophila, dRASSF promotes association between dSTRIPAK and Hippo, suggesting RASSF binding could provide an alternative mechanism for STRIPAK recruitment to inactivate MST1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 cites prior work (Ribeiro et al., 2010) but C125 is speculation about mammalian systems based on Drosophila data. While the speculation is reasonable given the structural similarity between RASSF and SAV binding to MST, no direct experimental evidence is provided in this manuscript to test whether mammalian RASSFs recruit STRIPAK.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "MOB1 can compete with SLMAP for binding to overlapping phospho-residues and enhance MST1/2 activation in a feed-forward mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is supported by ITC data (C24) showing similar binding affinities of MOB1 and SLMAP for pT378. The feed-forward mechanism is a reasonable inference from the competitive binding data and prior knowledge of MOB1 function, though direct competition experiments are not shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Deletion of SLMAP bypasses the requirement of SAV1 in Hippo pathway activation under normal growth conditions, providing conclusive evidence for SAV1-STRIPAK_SLMAP antagonism in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is directly supported by the genetic epistasis experiment (C114-C115) showing SLMAP/SAV1 DKO phenocopies SLMAP KO. This is strong genetic evidence for the antagonistic relationship and represents a key validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Not all SAV1 functions can be bypassed by SLMAP deletion, given the wide array of upstream stimuli that can activate the Hippo pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is speculation about additional SAV1 functions beyond STRIPAK antagonism. While reasonable given pathway complexity, this claim is not directly tested in the manuscript. The epistasis experiment only examines unstimulated cells, leaving open the possibility of additional SAV1 functions under different conditions.",
+    "result_type": "MINOR"
+  }
+]

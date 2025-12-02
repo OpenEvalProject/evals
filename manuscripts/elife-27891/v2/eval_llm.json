@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In 0-1 hr embryos, PABP forms two distinct complexes: one containing eIF4G and another containing ME31B, TRAL, and Cup but not eIF4G. Mass spectrometry, immunoprecipitation, and m7GDP pull-down experiments demonstrate that Cup, TRAL, and ME31B suffice to form a stable complex with cap-bound eIF4E and PABP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C43 provide converging evidence from multiple biochemical approaches (mass spectrometry, co-IP, western blots, m7GDP pull-downs) showing distinct PABP-containing complexes in early embryos versus S2 cells. The data consistently demonstrate that PABP associates with ME31B, Cup, and TRAL in early embryos but not in S2 cells, and that protein-protein interactions are sufficient for complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PABP and ME31B bind transcripts from nearly all expressed genes in 0-1 hr embryos, with strong positive correlation between their binding (rs = 0.62, p<10-15). In contrast, in S2 cells their binding is negatively correlated (rs = -0.44, p<10-15), indicating context-specific co-binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 present RIP-seq data with appropriate controls (Act5C enrichment >1000-fold) and validation by RT-qPCR. The transcriptome-wide binding analysis is statistically robust with large sample sizes (n>5000 genes) and highly significant correlations. The contrast between embryos and S2 cells supports the biochemical findings of complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In 0-1 hr embryos, ME31B binding negatively correlates with both poly(A)-tail length (rs = -0.38) and translational efficiency (rs = -0.29). After correcting for poly(A)-tail length, ME31B binding still negatively correlates with translation (corrected rs = -0.19), indicating independent regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 present statistically significant correlations with appropriate corrections for confounding variables. The partial correlation analysis (correcting for poly(A) tail length) demonstrates independent effects. The PABP enrichment analysis (C61-C63) provides additional mechanistic insight, though the interpretation relies on inferring two distinct PABP complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ME31B, TRAL, Cup, and EDC3 protein and mRNA levels decrease sharply during the MZT (by >10-fold), with the largest decrease between 1-2 hr and 2-3 hr. ME31B is 15-20 fold more abundant in 0-1 hr embryos than S2 cells. Other translation factors (eIF4E, eIF4G, PABP, HPat) remain stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by western blots with loading controls (FLAG-Fab) and RNA-seq data. Quantitative western blotting provides absolute abundance measurements. The specificity of degradation is demonstrated by comparing multiple proteins. However, the claim that proteins are \"specifically targeted\" (C70) is somewhat inferential, as the mechanism is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The PABP-Cup-TRAL-ME31B complex dissociates during the MZT, with reduced co-immunoprecipitation by 1-2 hr and loss of detectable interaction by 2-3 hr, despite continued presence of ME31B and TRAL proteins. This dissociation occurs earlier than the major protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by time-course co-IP experiments showing progressive loss of interactions. The temporal separation between complex dissociation (1-2 hr) and major protein degradation (2-3 hr) is clearly demonstrated. The conclusion that dissociation is \"possibly independent\" of degradation (C75) is appropriately cautious given the correlative nature of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In smg mutants, me31B, cup, and tral mRNAs are more abundant than in wild-type, but ME31B protein degradation during the MZT is unaffected, indicating distinct mechanisms for mRNA and protein clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by RNA-seq and western blot data from smg mutants. The observation that mRNA levels increase but protein degradation is unaffected provides clear evidence for distinct regulatory mechanisms. However, the analysis is limited to the first 3 hours due to developmental defects in smg mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In png50 mutants, ME31B, TRAL, and Cup protein levels fail to decline during the MZT, and the PABP-Cup-TRAL-ME31B complex persists until 4-5 hr. PNG kinase is required for both protein degradation and complex dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by western blots and co-IP experiments in png50 mutants showing persistent protein levels and complex interactions. The specificity is demonstrated by showing that HPat is still cleared (C81). However, the claim that PNG is required \"either directly or indirectly\" (C83-C84) appropriately acknowledges that the mechanism could be indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ME31B binding changes during the MZT, with binding in 0-1 hr embryos highly correlated with 1-2 hr (rs = 0.83) but more weakly with later time points (rs = 0.58). ME31B is preferentially recruited to SMG-bound and BRAT-bound transcripts during embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by RIP-seq time-course data with appropriate validation by RT-qPCR. The progressive change in binding patterns is statistically significant. The recruitment to SMG and BRAT targets (C89-C90) is demonstrated by K-S tests (p<10-15), though the mechanism is appropriately described as \"likely indirect\" (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "PABP binding changes during the MZT, with the correlation between PABP and ME31B binding decreasing from rs = 0.58 at 1-2 hr to rs = 0.15 at 4-5 hr. The relationship between PABP binding and poly(A)-tail length also weakens (rs = 0.16 by 3-4 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by PABP RIP-seq time-course data showing progressive changes in binding patterns and correlations. The decreasing correlation with ME31B binding is consistent with the co-IP data showing complex dissociation. The conclusion of \"substantial reorganization\" (C97-C98) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ME31B's regulatory impact changes during the MZT: early (0-1 hr) it correlates with translational repression (rs = -0.29) but not mRNA decay (rs = -0.02), while later (1-2 to 4-5 hr) it correlates with mRNA destabilization (rs = -0.24 to -0.55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by correlating ME31B binding with translational efficiency and mRNA stability across developmental time points. The temporal switch from translational repression to mRNA decay is clearly demonstrated with appropriate statistics. The interpretation that ME31B \"likely reduces translation\" early and \"is associated with\" decay later (C106-C107) is appropriately cautious about causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "In png50 mutants, ME31B binding still negatively correlates with translational efficiency (rs = -0.24), but there is no mRNA degradation between 0-1 hr and 2-3 hr (rs = 0.96 vs. 0.66 in wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by RIP-seq and RNA-seq data from png50 mutants. The persistence of translational repression but absence of mRNA decay provides strong evidence that PNG-dependent protein degradation is required for the switch to mRNA decay. This result supports the model that Cup degradation enables ME31B-mediated decay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "During the early Drosophila MZT, ME31B exists in complexes with eIF4E, Cup, TRAL, and PABP that are specific to oocytes and early embryos. Three major changes occur: reduction in Cup, TRAL, and ME31B levels; changes in ME31B-bound transcripts; and a shift from translational repression to mRNA destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 represent the main conclusions synthesizing multiple lines of evidence. All three major changes are well-supported by the data presented in earlier claims. The statement that the complex is \"likely specific to oocytes and early embryos\" (C111) is appropriately cautious and supported by the S2 cell comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose that high Cup, TRAL, and ME31B concentrations (4-7 \u03bcM) in early embryos drive complex assembly through protein-protein interactions, while later reductions require trans-factors for stable ME31B binding. Cup loss has the most dramatic effect due to its role in cap-ME31B interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C117 are largely hypothetical interpretations. The concentration estimates (C114) come from a cited study, and the sufficiency of protein-protein interactions (C115) is supported by the m7GDP pull-down data. However, the proposal that reductions lead to trans-factor dependence (C116) and that Cup loss is most important (C117) are reasonable inferences but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose a model where ME31B initially represses translation through Cup-mediated disruption of eIF4F, and after Cup destruction, ME31B promotes mRNA decay. They suggest Cup may stabilize ME31B-bound transcripts early, and its reduction is required for maternal transcript clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C124 present a mechanistic model that is consistent with the data but not directly proven. The hypothesis that Cup stabilizes transcripts (C120-C121) is supported by cited work in S2 cells and observations in other organisms (C122), but direct evidence in embryos is lacking. The png50 data (C109) support the model but have pleiotropic effects that complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors propose that ME31B's role in embryogenesis is evolutionarily conserved across species. They show that DDX6 (ME31B ortholog) mRNA decreases during zebrafish MZT in a Dicer-dependent manner, and cite evidence for similar regulation in C. elegans and Xenopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 are supported by re-analysis of published zebrafish data (C129-C130) and citations to studies in other organisms (C132-C133). The Dicer-dependence in zebrafish suggests miR-430 regulation (C131), which is a reasonable inference. However, the claim of evolutionary conservation (C126) is based on limited evidence and would benefit from more direct functional comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "PABP complexes without ME31B also change during the MZT. In early embryos, transcripts in these complexes bind more PABP with increasing tail length, but this relationship is lost by the end of the MZT. The authors speculate this causes the decoupling of poly(A)-tail length and translational efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 are supported by the PABP RIP-seq data showing changes in the relationship between PABP binding and poly(A)-tail length. The comparison to other cell types (C136) is supported by cited work. However, the speculation that this causes decoupling of tail length and translation (C137) is a reasonable hypothesis but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors provide extensive background on ME31B/DDX6/Dhh1 function, the link between translational repression and mRNA decay, and the maternal-to-zygotic transition. These claims establish the biological context and prior knowledge for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C27 are background claims supported by appropriate citations to the literature. These establish the known functions of ME31B and its orthologs, the Cup-TRAL-ME31B complex, and the biological context of the MZT. All claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The authors suggest that in vivo, additional mRNA sequences and proteins such as BRU1 or SMG may stabilize or enhance formation of the eIF4E-Cup-TRAL-ME31B complex on particular mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C44 is a reasonable hypothesis based on prior work (cited), but is not directly tested in this study. The mass spectrometry data (C29) showed BRU1 was absent and SMG was present at low levels, which somewhat contradicts the necessity of these factors for complex formation in early embryos.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Wnt1-Cre drives robust expression of GCaMP3 in all TPSCs of the early postnatal diaphragm, as demonstrated by TdTomato reporter expression in Schwann cells and immunohistochemical detection of GCaMP3 in S100-positive TPSCs at P7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the genetic tool used throughout the study. The Wnt1-Cre driver is validated by published literature (C1), TdTomato reporter expression confirms Cre activity in all Schwann cell types including TPSCs (C2), and immunohistochemistry demonstrates GCaMP3 expression specifically in TPSCs (C3). These converging lines of evidence strongly support the conclusion (C4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "TPSCs exhibit robust, quantifiable Ca2+ transients in response to high-frequency nerve stimulation with characteristic temporal dynamics (onset ~1.8s, peak ~2.9s after onset, 50% decay ~13.4s), though with substantial variability in onset timing across the diaphragm that does not correlate with muscle fiber contraction timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 characterize the basic Ca2+ imaging responses. The quantitative measurements (C7-C9) provide specific kinetic parameters with appropriate sample sizes (n=5, c=54). The observation of variable onset times (C12) is interesting, and the inference that this doesn't result from differential transmitter release (C14) is supported by the synchronous muscle contraction data (C13). The reduced response to repeated stimulation (C11) is consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "TPSC Ca2+ responses are dynamically modulated by stimulation pattern (phasic vs. tonic) and frequency, with phasic stimulation producing longer-duration responses, lower frequencies producing slower onset times, and a threshold between 5-10 Hz for reliable activation of all TPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C24 systematically characterize how TPSCs respond to different stimulation parameters. The comparison of phasic vs. tonic patterns (C15-C18) shows statistically significant differences in duration but not peak intensity (C16-C17), which is physiologically relevant. The frequency-response relationship (C19-C22) and duration-response relationship (C23-C24) establish important functional properties, though some data are noted as 'data not shown' which limits full evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Myelinating Schwann cells along phrenic nerve branches do not respond to nerve stimulation but can respond to bath-applied ATP or muscarine, with this differential responsiveness depending on location along the nerve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 establish an important control showing cell-type specificity of the responses. The lack of response in myelinating Schwann cells to nerve stimulation (C25) is consistent with prior literature (Jahromi et al., 1992). The ability of these cells to respond to exogenous agonists (C26) but not nerve stimulation suggests the issue is not GCaMP3 expression but rather access to endogenous neurotransmitter. The location-dependent differences (C27) add nuance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Activity-induced Ca2+ signaling in neonatal diaphragm TPSCs is mediated exclusively by P2Y1 receptor activation by nerve-derived adenine nucleotides (ATP/ADP), with responses dependent on release from intracellular stores. Muscarinic and nicotinic cholinergic mechanisms do not contribute under normal conditions due to cholinesterase activity, though they can be revealed by cholinesterase inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C50 establish the central mechanistic finding through converging pharmacological and genetic evidence. The complete blockade by P2Y1R antagonist MRS2500 (C36), genetic knockout (C38), and SERCA inhibitor CPA (C37) provide strong support. The control showing muscarine responses in P2ry1 mutants (C39-C40) rules out non-specific effects. The neostigmine experiments (C42-C45) elegantly explain why cholinergic mechanisms don't contribute under physiological conditions. The ligand specificity (C46-C49) further refines the mechanism. This is a comprehensive and well-controlled set of experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The gross morphological development of the NMJ, including NMJ number, size, innervation status, TPSC apposition, AChE expression, and ultrastructure, is unaffected in P2ry1 mutants at P7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 establish that the P2ry1 mutation does not cause gross developmental defects that could confound functional studies. Multiple structural parameters are examined (C51-C54), AChE expression is specifically validated with a highly specific antibody (C55), and electron microscopy confirms normal ultrastructure (C56). This comprehensive structural characterization is important for interpreting the functional deficits observed later. The conclusion (C57) is appropriately cautious, limiting the claim to P7 and the diaphragm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Presynaptic neurotransmitter release is unaffected in P2ry1 mutants, as evidenced by normal resting membrane potential, miniature EPP properties, and evoked EPP amplitudes during both basal and high-frequency stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 systematically rule out presynaptic defects through comprehensive electrophysiological analysis. The measurements of RMP (C58), mEPP frequency and kinetics (C59-C60), and evoked EPPs (C61-C62) all show no differences between genotypes with appropriate statistical testing. The inference about AChE expression (C64) is logical, combining the EPP duration data with established knowledge about AChE effects. This is important for localizing the functional deficit to the postsynaptic side.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "While basal muscle action potentials and the time to neural transmission failure are normal in P2ry1 mutants, the muscle APs themselves become altered during sustained high-frequency stimulation, with increased rise-to-peak time and reduced amplitude at the end of HFS trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 identify the specific functional deficit in P2ry1 mutants. Basal AP properties are normal (C65-C67), and the time to transmission failure is unchanged across all fatigue subtypes (C68), but AP kinetics deteriorate during HFS (C69-C70). The inference that the muscle AP itself is affected rather than neurotransmission (C71) is logical given the normal EPPs but altered APs. This is a key finding that localizes the deficit to postsynaptic excitability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "P2ry1 mutants exhibit enhanced muscle fatigue during nerve-stimulated contractions, with normal peak force but reduced ability to maintain force over time. This effect is observed with both genetic deletion and acute pharmacological blockade, and is specific to nerve stimulation rather than direct muscle stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 establish the functional consequence of impaired TPSC Ca2+ signaling. The fatigue measurements show normal peak contraction (C73) but enhanced fatigue (C74) with appropriate statistics (p<0.05, n=9). The pharmacological blockade experiment (C75-C76) demonstrates acute causality. The repeated stimulation experiments (C77-C78) show cumulative effects. Critically, the lack of effect with direct muscle stimulation (C79) localizes the deficit to the neuromuscular junction region. The conclusion (C80) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "All four muscle fiber subtypes are present at P7 in both P2ry1 WT and mutant mice, with no difference in the relative percentage of each subtype, ruling out altered fiber type composition as an explanation for enhanced fatigue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 address an important alternative explanation for the fatigue phenotype. The observation that all fiber types are present at P7 (C81) is interesting and contrasts with prior literature suggesting later development. The quantification showing no difference in fiber type distribution (C82) rules out a shift toward more fatigable fiber types as an explanation (C83). This is an important control, though the early presence of all fiber types at P7 is somewhat surprising and might warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Despite the role of TPSC Ca2+ responses in synapse elimination in other systems and the complete dependence of TPSC Ca2+ responses on P2Y1R signaling at P15, polyneuronal synapse elimination proceeds normally in P2ry1 mutants in the diaphragm, though enhanced fatigue persists at P15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 test whether TPSC Ca2+ signaling regulates synapse elimination. The background literature (C84-C87) establishes the rationale. The demonstration that P2Y1R dependence persists at P15 (C88) and that fatigue is still enhanced (C89-C90) shows the phenotype persists. However, the quantification of polyneuronal innervation at multiple timepoints (C91) shows no difference, leading to the conclusion that synapse elimination is normal (C92). This is a clear negative result that contrasts with CNS findings, which is scientifically valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "High-frequency stimulation raises extracellular K+ levels, which can mediate fatigue by depolarizing muscle membrane and inactivating Nav1.4 channels. Activity-induced Ca2+ signaling in TPSCs may protect against fatigue by regulating K+ uptake and perisynaptic [K+]o.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C97 establish the conceptual framework for the K+ hypothesis. C93-C96 are supported by prior literature (Cairns et al., 2015), but C97 is speculative ('may protect'). While the hypothesis is reasonable and well-motivated by the literature, it remains to be directly tested in the subsequent experiments. The speculation is appropriate for introducing the hypothesis but doesn't constitute evidence on its own.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "P2ry1 mutants show disproportionately enhanced fatigue in response to elevated extracellular K+ (10 mM), with enhanced depolarization of muscle cell resting membrane potential, suggesting that Ca2+ signaling in TPSCs modulates the response to elevated [K+]o.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 provide key evidence for the K+ hypothesis. The enhanced fatigue in high K+ (C98-C99) is dramatic, with mutants almost completely unable to contract after the second HFS bout. The electrophysiological measurements (C100-C101) show enhanced depolarization in mutants, providing a mechanistic link. The conclusions (C102-C103) are appropriately stated as inferences. However, the experiments don't directly measure [K+]o or K+ uptake, so the mechanism remains somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Elevated extracellular K+ (10 mM) induces robust Ca2+ responses in TPSCs through depolarization-induced release from intracellular stores, independent of nerve activity or extracellular Ca2+ influx, demonstrating that TPSCs can directly sense and respond to elevated [K+]o.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 establish a novel feedback mechanism. The observation of K+-induced Ca2+ responses (C104) is important. The controls ruling out indirect effects via nerve depolarization (C105) and demonstrating independence from extracellular Ca2+ (C106) but dependence on intracellular stores (C107) are well-designed. The electrophysiological measurements showing depolarization consistent with the Goldman-Katz equation (C108) and the inferences about K+ uptake (C109-C110) are logical. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "After repeated bouts of HFS, P2ry1 mutants and WT mice treated with MRS2500 show markedly reduced Ca2+ responses to elevated [K+]o, suggesting impaired K+ uptake. TPSC Ca2+ responses and K+ uptake appear to be positively regulated by nerve activity through both feedforward (neurotransmitter) and feedback ([K+]o) mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 provide the most direct evidence for impaired K+ handling in P2ry1 mutants. The reduced Ca2+ response to high K+ after HFS (C111-C112) in both genetic and pharmacological models is compelling. The inference about impaired K+ uptake (C113) is logical but indirect\u2014the study doesn't directly measure K+ uptake. The speculation about feedforward and feedback regulation (C115) is reasonable but goes beyond the data. The conclusion (C114) appropriately uses 'may contribute' rather than claiming definitive causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Activity-induced Ca2+ signaling in neonatal TPSCs is mediated by P2Y1R activation by nerve-derived adenine nucleotides and influences muscle fatigue by regulating perisynaptic [K+]o, affecting postsynaptic action potentials during sustained HFS without altering NMJ structure or presynaptic neurotransmitter release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 provide the overall summary of the study's main findings. These are well-supported by the comprehensive data presented throughout. The mechanistic model (C122) integrating P2Y1R signaling, Ca2+ responses, K+ regulation, and muscle fatigue is logical and supported by converging evidence, though some links remain indirect (e.g., K+ uptake is inferred rather than directly measured). The distinction between structural development (C117), presynaptic function (C118), and postsynaptic function (C119-C120) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "This study represents the first use of genetically encoded calcium indicators to study perisynaptic glia at the NMJ, with kinetics similar to prior dye-loading studies. The complete dependence of TPSC Ca2+ responses on a single GPCR (P2Y1R) is the most striking finding, with activity-induced responses mediated exclusively by adenine nucleotides despite multiple substances inducing Ca2+ signals when bath-applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 discuss the novelty and significance of the methodological and mechanistic findings. The novelty claim (C123) appears accurate. The validation against prior methods (C124) is important for establishing the technique's validity. The emphasis on P2Y1R exclusivity (C125-C126) is justified by the comprehensive pharmacological and genetic data. These are appropriate summary statements for the Discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The exclusive dependence on P2Y1R signaling in neonatal diaphragm TPSCs contrasts with adult TPSCs in other muscles, which respond to multiple neurotransmitters. This dependence persists at least until P15-P20 in the diaphragm, and cholinesterase-mediated prevention of muscarinic signaling likely persists into adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 discuss the developmental and muscle-specific aspects of the findings. The contrast with adult TPSCs (C127) is supported by prior literature. The speculation about developmental changes (C128-C129) is reasonable, and the data at P15-P20 (C130) support continued P2Y1R dependence. The inference about persistent cholinesterase function (C131) and the citation of adult BChE function (C132) are logical. These are appropriate Discussion points that contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The current results fail to support a role for TPSC Ca2+ responses in regulating presynaptic ACh release, contrasting with some prior studies. Instead, postsynaptic function is affected, with altered muscle APs and enhanced fatigue supporting impaired postsynaptic excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 discuss the contrast with prior literature on presynaptic effects. The negative result for presynaptic effects (C133) is well-supported by the EPP data. The citation of diaphragm plasticity (C134) argues against the absence of plasticity as an explanation. The comparison to astrocyte studies (C135) provides context. The positive findings for postsynaptic effects (C136-C138) are well-supported by the AP and fatigue data. This is an appropriate Discussion of how the findings relate to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "While the constitutive P2ry1 mutation could affect muscle directly, and prior studies show ATP can trigger Ca2+ release in muscle, the authors favor the interpretation that the effects are due to loss of P2Y1R in TPSCs rather than muscle, based on the lack of ATP-induced Ca2+ responses in muscle cells and the specific blockade by P2Y1R antagonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 address an important potential confound. The acknowledgment of the limitation (C139) is appropriate. The discussion of prior work showing muscle P2Y1R effects (C140-C141) is fair. The argument for TPSC-specific effects (C142) is reasonable based on the Myf5-GCaMP3 experiments and the pharmacological specificity, though a conditional knockout would provide more definitive evidence. This is an honest Discussion of alternative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The effects of HFS on muscle APs suggest dysregulated perisynaptic [K+]o in P2ry1 mutants. Intense exercise raises [K+]o to 10-14 mM, a level sufficient to cause fatigue, and the data indicate that enhanced fatigue in P2ry1 mutants results from elevated perisynaptic [K+]o due to impaired K+ buffering by TPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 synthesize the K+ hypothesis with supporting literature. The inference about dysregulated [K+]o (C143) is logical based on the AP changes. The citations about exercise-induced K+ elevation (C144) and its effects on fatigue (C145, though with a conflicting citation noted) provide physiological context. The conclusion (C146) is appropriately stated as an inference based on indirect evidence. The mechanism is plausible but would benefit from direct [K+]o measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "While astrocytes also show Ca2+ responses to elevated [K+]o, the mechanism differs: astrocytes use voltage-gated Ca2+ channels, whereas TPSCs use release from intracellular stores. Activity stimulates perisynaptic K+ uptake in TPSCs through both feedforward (neurotransmitter-initiated) and feedback ([K+]o-initiated) Ca2+ responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 compare the findings to astrocyte literature and propose a dual-regulation model. The contrast in mechanisms (C147-C149) is supported by the experimental data showing independence from extracellular Ca2+ but dependence on intracellular stores. The inference about dual regulation (C150) is logical based on the observation that both nerve-derived purines and elevated [K+]o induce Ca2+ responses. This is an interesting mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "K+ uptake by glia is well-established in multiple systems and can be mediated by various mechanisms including Kir channels, Na+/K+ ATPases, and Na+/K+/Cl- cotransporters. Genetic studies demonstrate the importance of these mechanisms, with different studies implicating Kir4.1 channels or Ca2+-dependent Na+/K+ ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 provide background on K+ uptake mechanisms in glia. These are well-supported by the cited literature and establish the biological plausibility of the proposed mechanism. The mention of Kir currents in nonmyelinating Schwann cells (C155) is particularly relevant. This background appropriately contextualizes the findings within the broader glial biology literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Beyond K+, other ions (Na+, H+) are dysregulated during muscle fatigue. While muscle itself has extensive ion regulation machinery, the importance of ionic homeostasis at the NMJ may require additional mechanisms such as those proposed for TPSCs, particularly given the restricted localization and depolarization sensitivity of Nav1.4 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C160 discuss the broader context of ion regulation at the NMJ. The mention of other dysregulated ions (C156) and astrocyte ion regulation (C157) provide context. The speculation about TPSCs regulating other ions (C158) is reasonable but unsupported. The discussion of muscle's own ion regulation capacity (C159) is fair, and the argument for additional NMJ-specific mechanisms (C160) is logical. These are appropriate Discussion points about the broader implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Nav1.4 channels are expressed at high levels in the depths of postsynaptic junctional folds and are sensitive to depolarization-induced inactivation, which may require enriched expression of [K+]o buffering proteins by TPSCs. Consistent with this, P2ry1 mutants did not show enhanced fatigue with direct muscle stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 propose a specific mechanism for why TPSC K+ buffering is important. The localization (C161) and depolarization sensitivity (C162) of Nav1.4 are supported by prior literature. The speculation about requiring TPSC K+ buffering (C163) is reasonable given the restricted localization. The observation that direct muscle stimulation doesn't enhance fatigue (C164) supports the idea that the deficit is specific to the NMJ region. This is a logical mechanistic proposal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "This study used P2ry1 mutant mice to explore the functional significance of activity-induced Ca2+ signals in perisynaptic glia, finding that loss of purinergic signaling alters postsynaptic function and enhances muscle fatigue, correlated with elevated [K+]o sensitivity. These mechanisms may represent translational targets for diseases with altered [K+]o, such as hyperkalemic periodic paralysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C167 provide the overall summary, which is well-supported by the comprehensive data. The speculation about translational implications (C168-C169) is reasonable given the findings, though it remains speculative. The background on hyperkalemic periodic paralysis (C170) is accurate. These are appropriate concluding statements that summarize the findings and suggest future directions.",
+    "result_type": "MINOR"
+  }
+]

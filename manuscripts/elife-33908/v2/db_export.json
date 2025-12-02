@@ -1,0 +1,2022 @@
+{
+  "submission": {
+    "id": "2982a2da-df37-404e-ade9-4899e913c992",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:37:24.347405Z",
+    "updated_at": "2025-12-01T23:37:24.347405Z"
+  },
+  "content": [
+    {
+      "id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "submission_id": "2982a2da-df37-404e-ade9-4899e913c992",
+      "content_type": "manuscript",
+      "content_text": "# Tandem riboswitches form a natural Boolean logic gate to control purine metabolism in bacteria\n\n## Authors\n\n- Madeline E Sherlock<sup>1</sup>\n- Narasimhan Sudarsan<sup>2</sup>\n- Shira Stav<sup>3</sup>\n- Ronald R Breaker<sup>1</sup> ([ORCID: 0000-0002-2165-536X](https://orcid.org/0000-0002-2165-536X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biophysics and Biochemistry Yale University New Haven United States\n2. Howard Hughes Medical Institute New Haven United States\n3. Molecular, Cellular and Developmental Biology Yale University New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGene control systems sometimes interpret multiple signals to set the expression levels of the genes they regulate. In rare instances, ligand-binding riboswitch aptamers form tandem arrangements to approximate the function of specific two-input Boolean logic gates. Here, we report the discovery of riboswitch aptamers for phosphoribosyl pyrophosphate (PRPP) that naturally exist either in singlet arrangements, or occur in tandem with guanine aptamers. Tandem guanine-PRPP aptamers can bind the target ligands, either independently or in combination, to approximate the function expected for an IMPLY Boolean logic gate to regulate transcription of messenger RNAs for de novo purine biosynthesis in bacteria. The existence of sophisticated all-RNA regulatory systems that sense two ancient ribonucleotide derivatives to control synthesis of RNA molecules supports the hypothesis that RNA World organisms could have managed a complex metabolic state without the assistance of protein regulatory factors.\n\n## Introduction\n\nA variety of riboswitch classes regulate gene expression in response to the binding of specific metabolite or inorganic ion ligands (Roth and Breaker, 2009; Serganov and Nudler, 2013; Sherwood and Henkin, 2016). Previously, 25 riboswitch classes were known that selectively respond to ligands that are chemical derivatives of RNA monomers or their precursors (McCown et al., 2017). This strong bias in favor of RNA-like ligands strengthens the hypothesis (Nelson and Breaker, 2017; Breaker, 2010) that many of the widely-distributed riboswitch classes are direct descendants from the RNA World \u2013 a time before genetically-encoded protein biosynthesis (Gilbert, 1986; Benner et al., 1989). If this speculation is generally correct, we can expect that some of the most abundant riboswitch classes remaining to be discovered also will regulate gene expression in response to the binding of other ancient RNA derivatives (Breaker, 2011).\n\nWith these considerations in mind, we evaluated the possible functions of variants of recently validated riboswitches for guanidine (Nelson et al., 2017). Collectively, guanidine-I riboswitches along with differently-functioning variants were originally called the ykkC orphan riboswitch candidate because no ligand had been identified (Barrick et al., 2004; Meyer et al., 2011). After removing guanidine-I riboswitches (subtype 1), which constituted\u00a0~70% of the original ykkC motif RNAs, we further separated the remaining collection of ykkC RNA variants (subtype 2). Upon further investigation of the RNA sequences, the phylogeny of organisms containing these RNAs, and the genes associated with each instance of the RNA, we concluded that ykkC subtype 2 RNAs were populated by multiple riboswitch classes that sensed distinct ligands.\n\nSubtype 2 representatives were sorted according to the gene located immediately downstream from the ykkC RNA motif to create revised consensus models for the RNAs within each gene association group. In some cases, additional conserved nucleotides were observed immediately 5\u00b4 and 3\u00b4 of the three hairpin structures (called P1, P2 and P3) that are characteristic of ykkC motif RNAs. This region located downstream of the guanidine binding site of subtype 1 RNAs were found to be unnecessary for guanidine-I riboswitches. In total, these distinct representatives were sorted into four candidate riboswitch classes called subtypes 2a through 2d.\n\nAll subtype 2 RNAs appear to be extremely similar because they share many of the same highly-conserved nucleotides and secondary structure features. We were fortunate to have high-resolution crystal structures (Reiss et al., 2017; Battaglia et al., 2017) of the guanidine-I riboswitch (subtype 1, Figure 1A) in hand when evaluating each of these variant subtypes. Nearly all highly-conserved nucleotides shared by ykkC RNAs are involved in forming tertiary contacts within the larger folded structure that positions other nucleotides to form the ligand-binding pocket. However, nucleotides that change identity and are characteristic of each subtype are almost exclusively found in close proximity to the known binding pocket of guanidine-I riboswitches (indicated by black asterisks in Figure 1A). For subtypes 2a, 2b, and 2c, we speculated that the additional stretches of conserved nucleotides preceding the P1 stem and following the P3 stem likely play a role in ligand recognition, or perhaps provide structural support for an expanded binding pocket. Unfortunately, because these nucleotides are not conserved in guanidine-I riboswitches, we do not currently have a good understanding of their 3D positioning relative to the rest of the aptamer.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig1-v2.jpg)\n\n**Figure 1.:** (A) Comparison of the consensus sequence and secondary structure models for the guanidine-I riboswitch aptamer (subtype 1, left) and the aptamers for ppGpp (subtype 2a, middle; ME Sherlock, N Sudarsan, RR Breaker, manuscript submitted), and PRPP (subtype 2b, right). For sequence alignments of the 257 unique PRPP riboswitch aptamers in Stockholm format, see Supplementary file 2. (B) Consensus sequence and secondary structure model for the 127 unique examples of adjacent guanidine-PRPP aptamers that form the corresponding tandem riboswitch architecture. For sequence alignments of the tandem guanine- PRPP riboswitch aptamers in Stockholm format, see Supplementary file 3. (C) Only genes in the purine biosynthetic pathway that are necessary for the production of adenosine nucleotides are commonly associated with PRPP riboswitches.\n\nIt quickly became clear that sequences associated with branched-chain amino acid metabolism appeared highly similar to those associated with glutamate synthases and natA transporters, and so these were collectively termed ykkC subtype 2a (Figure 1A). Shortly thereafter, these were experimentally verified as a riboswitch class that responds to the bacterial alarmone ppGpp (ME Sherlock, N Sudarsan, RR Breaker, manuscript submitted). Herein, we describe the function of ykkC subtype 2b RNAs (Figure 1A,B), whereas the ligands for subtype 2c and 2d RNAs have not yet been identified (see discussion).\n\nThree major clues were exploited to identify phosphoribosyl pyrophosphate (PRPP; 5-phospho-\u03b1-D-ribose 1-diphosphate) (Figure 1B) as the ligand for riboswitches represented by ykkC subtype 2b RNAs. First, representatives of this riboswitch class commonly associate with genes for de novo purine biosynthesis (Figure 1C). In addition, cytosine deaminase (codA), a gene involved in pyrimidine salvage that is known to be repressed by the purine guanine (Kilstrup et al., 1989), is also commonly located downstream of subtype 2b RNAs. These associated genes, which are either related to the production of purines or are regulated by a purine, suggested to us that the ligand would most likely be a compound related to purine metabolism.\n\nSecond, there are 257 examples of ykkC subtype 2b RNAs distributed throughout bacteria of the phylum Firmicutes. Of these, 127 examples occur in a tandem arrangement (Sudarsan et al., 2006) with a guanine aptamer (Mandal et al., 2003) located directly upstream (Figure 1B). Such tandem arrangements are likely to function in concert as two-input molecular logic gates (; Stoddard and Batey, 2006; Lee et al., 2010). Guanine riboswitches typically turn off expression of downstream purine biosynthesis genes when sufficient guanine is present (Mandal et al., 2003), while representatives of ykkC subtype 2b riboswitches were predicted to turn on expression of downstream genes. The physical arrangement of each aptamer in the tandem arrangement suggests that they share a single expression platform. Guanine binding to its aptamer likely would promote the formation of an adjoining intrinsic transcription terminator stem, which would halt transcription. In opposition, binding of ligand to the adjacent subtype 2b RNA would preclude terminator stem formation and thereby override the typical function of the guanine riboswitch. If this speculation is correct, then the ligand for subtype 2b RNAs should trigger cells to make more purines even when one of the major purine compounds, guanine, is plentiful.\n\nThird, we noticed that the consensus sequence and structural models for ppGpp riboswitch aptamers (subtype 2a) and subtype 2b RNAs are remarkably alike, including many similarities at the ligand binding site, suggesting that their ligands might also share some chemical features. Particularly notable was the observation that a long-range C-G base-pair present in guanidine-I riboswitches (Reiss et al., 2017; Battaglia et al., 2017) is absent in ppGpp riboswitches, but appears to again be present in subtype 2b RNAs. We speculated that the structural role of the G nucleotide missing in ppGpp aptamers might be performed by the guanine base of the ligand. However, because the highly-similar subtype 2b RNA retains this G nucleotide (indicated by a red asterisk in Figure 1A) in its aptamer, its ligand might resemble an apurinic version of ppGpp.\n\n## Results\n\n### Variant riboswitch aptamers selectively bind the nucleotide precursor phosphoribosyl pyrophosphate (PRPP)\n\nTo evaluate PRPP binding and riboswitch aptamer function, we examined a 106 nucleotide singlet aptamer arbitrarily derived from the purC gene of the bacterium Facklamia ignava (Figure 2A) by using in-line probing (Soukup and Breaker, 1999; Regulski and Breaker, 2008). This method takes advantage of the inherent chemical instability of phosphodiester linkages in unstructured regions of an RNA and the folding differences in aptamers brought about by ligand binding to provide details on riboswitch function.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sequence and secondary structure of the 106 nucleotide RNA derived from the purC gene of F. ignava. Data collected in B were used to determine regions of constant or reduced scission upon the addition of PRPP to in-line probing assays. Lowercase g indicates a guanosine nucleotide added to enable efficient transcription by T7 RNA polymerase. Arrowheads demark the approximate range of nucleotides with in-line probing data available as depicted in B. (B) Polyacrylamide gel electrophoresis (PAGE) analysis of the spontaneous RNA cleavage products generated during in-line probing of 5\u2032-32P-labeled 106 purC RNA. NR, T1 and \u2013OH represent RNA undergoing no reaction, partial digest with RNase T1 (cleaves after guanosine nucleotides), or partial digest under alkaline conditions (cleaves after every nucleotide), respectively. Bands corresponding to selected G residues are annotated. In-line probing experiments contained either no ligand (\u2013) or 1 mM of the compound indicated except guanine which was tested at 10 \u00b5M. Annotations 1 through 5identify prominent regions of the RNA that undergo structural stabilization in a PRPP-dependent manner. Data shown are representative of multiple experiments.\n\nThe 106 purC RNA construct exhibits structural modulation at highly conserved nucleotide positions upon the addition of PRPP (Figure 2B). In contrast, no structural modulation of the RNA is observed when the known ligands for the other ykkC subtypes (guanidine and ppGpp) or for the guanine riboswitch (guanine) are added. Importantly, the structural changes selectively brought about by PRPP largely occur in regions equivalent to those previously implicated in ligand binding by guanidine-I (Nelson et al., 2017; Reiss et al., 2017; Battaglia et al., 2017) and ppGpp riboswitch classes. This observation strongly suggests that these binding site nucleotides have changed to alter ligand specificity, and that PRPP is recognized by this converted binding pocket.\n\n### PRPP triggers riboswitch-mediated regulation of transcription termination\n\nDue to the well-characterized instability of the PRPP molecule (Dennis et al., 2000; Meola et al., 2003), especially under alkaline conditions and high Mg2+, PRPP extensively degrades into multiple breakdown products over the course of our binding experiments. As a result, in-line probing assays will not yield accurate dissociation constants. Therefore, to evaluate the effects of PRPP on riboswitch function, we performed single-turnover in vitro transcription termination experiments (Wickiser et al., 2005a), which involve briefer incubations under milder conditions.\n\nThe P3 helix of the PRPP aptamer (Figure 1A) is predicted to act as an antiterminator stem, which should increase the number of full-length mRNA transcripts when PRPP is bound. Transcription of a singlet PRPP riboswitch derived from the purB gene of Heliobacterium modesticaldum (Figure 3A) produces a greater yield of full-length RNA when PRPP is added to the reaction (Figure 3B). The concentration of PRPP necessary to achieve half maximal termination (T50) is less than 100 \u00b5M (Figure 3C and Figure 3\u2014figure supplement 1). In contrast, an RNA construct (M1) with disruptive mutations within the highly-conserved aptamer sequence yields the same fraction of terminated and full-length transcripts regardless of PRPP concentration (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sequence and secondary structure of the natural PRPP singlet riboswitch derived from the purB gene from H. modesticaldum. An alternative RNA structure is depicted in which the terminator stem forms followed by a U-rich tract, which only forms in the absence of PRPP. (B) PAGE analysis of a single-round transcription termination assay of WT and mutant H. modesticaldum purB riboswitches at the indicated ligand concentration. FL and T denote full length and terminated transcripts, respectively. Values for the fraction of full-length transcripts relative to the total transcription yield is listed for each reaction. (C) Plot of the fraction of full length WT H. modesticaldum purB RNA riboswitch transcripts contributing to the total number of transcripts (FL plus T) as a function of the logarithm (base 10) of the molar PRPP concentration. The concentration of PRPP required to cause half-maximal termination efficiency (T50) was determined by a sigmoidal curve fit (see METHODS). Inset: PAGE analysis of single round transcription termination assays of the WT H. modesticaldum purB RNA with either no ligand (\u2013) or PRPP ranging from 200 nM to 10 mM. Data for replicates of this transcription termination assay are presented in Figure 3\u2014figure supplement 1. (D) Reporter gene expression of WT and \u0394purF [BKE06490 (depicted) and BKK06490 (not shown)] B. subtilis cells containing wild-type (WT) or mutant (M2) H. modesticaldum purB riboswitch-lacZ reporter fusion constructs as described in A. Cells were grown in glucose minimal medium (GMM) containing 50 \u00b5g mL-1 X-gal.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** modesticaldum purB riboswitch construct. Assays are conducted as described for the data generated in Figure 3C. T50 values are estimated to be 40 \u03bcM (left) and 80 \u03bcM (right).\n\nImportantly, T50 values should not be considered equivalent to KD values. Riboswitches evaluated by transcription termination assays operate under kinetic limitations, whereas KD values established by in-line probing can reach thermodynamic equilibrium (Wickiser et al., 2005a; Wickiser et al., 2005b; Gilbert et al., 2006; Rieder et al., 2007). Thus, the KD for PRPP binding to the H. modesticaldum aptamer is likely to be far better than the T50 values we measured for the H. modesticaldum purB construct, which range between 40 and 90 \u00b5M (Figure 3C and Figure 3\u2014figure supplement 1).\n\n### In vivo regulation of gene expression by a PRPP riboswitch\n\nThe same singlet PRPP riboswitch sequence from H. modesticaldum (Figure 3A) was fused to lacZ in wild-type (WT) and \u0394purF Bacillus subtilis cells. Deletion of the purF gene, which encodes the enzyme that catalyzes the first committed step of de novo purine biosynthesis (Figure 1C), causes PRPP to accumulate when cells are starved for purines. Accordingly, the lacZ gene is expressed (blue) in glucose minimal medium in the \u0394purF strain, but not (clear) in the parental B. subtilis strain with a functional purF gene (Figure 3D).\n\nNotably, the cells range from completely clearto a robust blue under these two conditions, indicating that gene expression is fully suppressed when no ligand is present. Thus, the riboswitch appears to sample a much greater dynamic range for gene expression in vivo than is observed with in vitro transcription termination assays. A riboswitch-reporter fusion carrying a mutation (M2) in the terminator stem expresses lacZ under both conditions. These results demonstrate that PRPP accumulation in cells induce gene expression, which parallels our findings in vitro that PRPP binding by ykkC subtype 2b RNAs promotes transcription elongation (Figure 3B and Figure 3C).\n\n### Natural examples of tandem riboswitch aptamers for guanine and PRPP bind these ligands to induce mutually-exclusive structures\n\nWe next sought to characterize the tandem arrangement of the guanine and PRPP aptamers by in-line probing analysis of the 208 nucleotide RNA derived from the codA gene of Bacillus megaterium (Figure 4A). Each aptamer appears to independently fold to form its characteristic structure and each exhibits typical structural modulation (Figure 4B) upon addition of its cognate ligand as previously observed for singlet guanine (Mandal et al., 2003) or PRPP (Figure 2B) aptamers.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sequence and secondary structure of the 208 nucleotide RNA derived from the codA gene of B. megaterium. Data collected in B were used to determine regions of constant, increased, or reduced scission upon the addition of guanine or PRPP to in-line probing assays. Additional annotations are as described for Figure 4A. Note that the precise locations of regions experiencing strand scission are approximated after nucleotide 74, as guided by the related in-line probing data generated for the singlet PRPP aptamer depicted in Figure 2. (B) PAGE analysis of the spontaneous RNA cleavage products generated during in-line probing of 5\u2032-32P-labeled 208 codA RNA. Annotations are described in the legend of Figure 2B. In-line probing experiments contained either no ligand (\u2013), 1 mM PRPP or 10 \u00b5M guanine. Annotations 1 through 10 identify prominent regions of the RNA that undergo structural stabilization from either guanine or PRPP. Both gel images contain RNA from the same in-line probing reactions, but the gel in the image on the right was run for a longer time to increase resolution of the 3\u2032 region of the RNA, which contains the regions of the PRPP aptamer involved in ligand recognition.\n\nOnly the aptamer regions of the RNA were examined by these in-line probing experiments, but the logic gate function of the tandem riboswitch is accomplished through interactions between the two aptamers and the adjoining expression platform. Consequently, terminator and antiterminator stems are stabilized or destabilized depending on the relative concentrations of both guanine and PRPP.\n\nThe precise mechanism by which the guanine and PRPP aptamers work in opposition to control the formation of the terminator stem has yet to be fully experimentally evaluated. However, bioinformatic and in-line probing data already might provide clues regarding the structural interplay between the two aptamers. First, guanine aptamers are always located almost immediately adjacent to the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer in tandem arrangements (Figure 1B). Specifically, there are typically only 5 to 7 nucleotides separating the P1 stems of the guanine and PRPP aptamers, suggesting this juxtaposition is important for logic gate function. Second, the addition of PRPP to the tandem construct causes a reduction in spontaneous RNA cleavage within the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer (Figure 4B, region 5), whereas guanine addition causes this same region to experience a dramatic increase in scission. These results suggest that guanine binding to its aptamer destabilizes an important structural feature necessary for ligand binding by the PRPP aptamer. Thus, each aptamer might interfere with its neighboring aptamer upon ligand binding, perhaps by causing steric clashes due to their proximity. Additional experiments will need to be conducted to more fully evaluate this mechanistic hypothesis.\n\n### Boolean logic function by a riboswitch carrying tandem guanine and PRPP aptamers\n\nTo evaluate the proposed two-input logic gate function, the same guanine-PRPP tandem aptamer system including its associated expression platform from B. megaterium (Figure 5A) was subjected to in vitro transcription termination assays. Consistent with results from the singlet aptamer, the addition of PRPP increases the fraction of RNA transcripts that pass beyond the intrinsic terminator stem and reach full length (Figure 5B). Also as predicted, the addition of guanine causes an increase in the fraction of terminated transcripts. When both guanine and PRPP are at high levels, the predicted genetic override occurs, and the fraction of terminated products approaches zero.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig5-v2.jpg)\n\n**Figure 5.:** (A) Sequence and secondary structure of the tandem guanine-PRPP riboswitch derived from the codA gene of B. megaterium. An alternative RNA structure is depicted to include the terminator stem followed by a U-rich tract, which forms based on the relative abundance of each ligand. (B) PAGE analyses of single-round transcription termination assays of WT and various mutant B. megaterium codA tandem riboswitches in the presence or absence of the two ligands. FL and T denote full length and terminated transcripts, respectively. (C) Reporter gene expression of B. subtilis containing wild-type (WT) and mutant (M3 through M5) B. megaterium tandem riboswitch-lacZ reporter fusion constructs as described in (A). Cells were grown in rich (lysogeny broth) medium or glucose minimal medium (GMM) containing either no (\u2013) or 10 \u00b5M additional guanine (gua) and 50 \u00b5g mL-1 X-gal. (D) Plot of the fraction of full length B. megaterium codA tandem riboswitch transcripts contributing to the total number of transcripts as a function of both guanine and PRPP concentrations. Data shown are the average of three experiments (see Figure 5\u2014figure supplement 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Data for three separate transcription termination \u2018trials\u2019 are plotted for six conditions tested as noted in panel A. Panels (A) through (F) include the PRPP concentrations used in the assays in the lower left of each plot. Details are as described in the legend to Figure 5.\n\nSeparate and simultaneous mutations to each aptamer (constructs M3 through M5) confirm the OFF and ON function of the guanine and PRPP aptamers, respectively. Specifically, the mutations in M3 alter two highly-conserved nucleotides in the core of the guanine aptamer that are known to be essential for forming its ligand-binding core (Batey et al., 2004; Serganov et al., 2004). As expected, the addition of guanine does not increase transcription termination. Similarly, the mutations in M4 alter two highly-conserved nucleotides in PRPP aptamer, which we expect to disrupt PRPP binding. Again as expected, the amount of transcription termination product increases, and PRPP addition has no effect on the distribution of transcription products. Construct M5 combines the M3 and M4 mutations to generate an RNA that should fail to bind either ligand. Indeed, the M5 construct appears to be unaffected by the addition of either guanine or PRPP (Figure 5B). Similar results are observed in vivo when the WT and M3 through M5 tandem guanine-PRPP riboswitch constructs from B. megaterium were fused to the lacZ reporter gene and transformed into WT B. subtilis cells (Figure 5C).\n\nThe versatility of this tandem riboswitch system is best demonstrated by varying the concentrations of both guanine and PRPP in a series of in vitro transcription termination assays. The data from these reactions yields a 3D landscape demonstrating again that the relative concentrations of guanine and PRPP dictate the fraction of RNA transcripts that reach full length (Figure 5D). Thus, the tandem riboswitch arrangement permits cells to tune the expression levels of associated genes based on the relative concentrations of guanine and PRPP, such that high PRPP levels promote purine production despite the abundance of guanine, a prominent purine.\n\nAt the single molecule level, each riboswitch aptamer in this tandem construct favors either transcription termination or elongation based on the binding of its cognate ligand. In this regard, each RNA molecule carrying this tandem aptamer arrangement functions as a Boolean IMPLY logic gate. The truth table for an IMPLY logic gate (Figure 6A) indicates that gene expression should be on when neither ligand is present, and when PRPP is bound by the RNA \u2013 even when guanine is available. Finally, gene expression should be off when guanine is bound by the RNA, which should occur when guanine is abundant while PRPP is not. This regulatory pattern could be accomplished by the tandem RNA arrangement through formation of an antiterminator stem by alternative base pairing interactions between the two aptamers, similar to those observed for an allosterically-regulated tandem riboswitch-ribozyme described previously (Lee et al., 2010; Chen et al., 2011). Alternatively, as noted earlier, the aptamers might compete sterically due to the proximity of their conserved sequences and structures. Regardless of the precise mechanism, we hypothesize that an unoccupied PRPP aptamer permits formation of the terminator stem, whereas an occupied guanine aptamer destabilizes the PRPP aptamer. Additional detailed kinetic and structural studies will be necessary to reveal the precise molecular interactions that yield IMPLY gene control logic.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig6-v2.jpg)\n\n**Figure 6.:** (A) Tandem guanine and PRPP aptamers form an IMPLY logic gate to determine the state of downstream gene expression (express.). (B) Tandem S-adenosylmethionine (SAM) and adenosylcobalamin (AdoCbl) riboswitches form a NOR logic gate. (C) Tandem T box RNA and ppGpp riboswitches form an AND logic gate. The T box and ppGpp riboswitch elements can occur in either order.\n\nWhen transcription termination or gene expression is observed as the average output from a population of RNA constructs, the resulting data do not represent a perfect Boolean function because the output yields intermediate values between zero and maximal values. Whereas each of the individual RNAs operates as a binary logic gate that is either on or off, a population of these RNAs exceeds the function of an individual Boolean logic gate. Together, the output of the tandem riboswitch population functions more like a molecular rheostat to tune gene expression based on relative ligand concentrations, rather than as an all-or-nothing binary switch. Regardless, when ligand concentrations are at their extreme values, the output of the tandem system (Figure 5D) approaches the binary logic of an IMPLY gate.\n\n### The biological utility of the opposing guanine and PRPP signals evaluated by tandem riboswitch aptamers\n\nA situation in cells in which both guanine and PRPP are scarce would indicate an extremely starved state. Ordinarily, one might expect guanine and PRPP levels to be negatively correlated, such that an excess of guanine would deplete PRPP as a result of the synthesis of 5\u2032-guanosine monophosphate, and vice versa, either through de novo purine biosynthesis or the purine salvage pathway (Figure 1B). If true, then why is it necessary to form this complex tandem arrangement to override the gene control function of a guanine riboswitch? This apparent regulatory paradox is addressed in more detail below.\n\nDuring the stringent response in Firmicutes, nutrient starvation is signaled by the presence of uncharged tRNAs that activate the ppGpp synthase RelA (Geiger and Wolz, 2014). ppGpp synthesis causes GTP levels to drop and the transcriptional repressor CodY, which requires GTP and isoleucine to bind its target sites, to release and enable transcription of branched-chain amino acid (BCAA) biosynthesis genes (Sonenshein, 2005). The resulting increased ppGpp concentration promotes binding of this signaling molecule as an inhibitor of enzymes such as GuaB, GMK, and HprT (Figure 1C) to suppress GTP production (Kriel et al., 2012), causing both guanine and PRPP to accumulate.\n\nUnder these conditions the guanine-PRPP tandem riboswitch still turns on expression of its downstream genes, despite the mechanisms in place to keep GTP levels low. At first this appears counterintuitive, but the genes associated with the tandem riboswitch system only include those for catalyzing the steps of de novo purine synthesis up to the production of inosine monophosphate (IMP), the branch point between AMP and GMP production (Figure 1C). Thus, the riboswitch promotes AMP synthesis, but will not turn on genes specific for GDP or GTP synthesis that are already being inhibited by ppGpp. ATP is known to be present in elevated quantities during the stringent response because it is used as the initiating nucleotide for transcription of genes under the ppGpp superregulon, whereas rRNA transcripts utilize GTP as the initiating nucleotide to suppress protein production (Kr\u00e1sn\u00fd et al., 2008).\n\n### Expansion of natural Boolean logic devices made of RNA\n\nAs noted above, the guanine-PRPP tandem riboswitch arrangement at its functional limits most closely approximates an IMPLY logic gate (Figure 6A). This all-RNA system joins the NOR gate formed by tandem S-adenosylmethionine (SAM) and adenosylcobalamin (AdoCbl or coenzyme B12) riboswitches (Sudarsan et al., 2006) (Figure 6B) and the AND gate formed by tandem T box and ppGpp riboswitch RNAs (Figure 6C) as sophisticated regulatory RNAs that approximate Boolean logic functions.\n\nSimilarly, the tandem riboswitch-ribozyme arrangement formed by a c-di-GMP-II riboswitch and a group I self-splicing ribozyme senses both c-di-GMP and guanosine (or any of its 5\u00b4-phosphorylated derivatives) to approximate the function of a Boolean AND gate (Lee et al., 2010; Chen et al., 2011). In this example, one chemical input is sensed by a conventional riboswitch aptamer, whereas the second chemical input is sensed by the active site of a ribozyme. These more complex riboswitch and ribozyme arrangements are notable because they demonstrate how sensory and regulatory systems comprised entirely of RNA can perform sophisticated decision-making in modern cells.\n\n## Discussion\n\nMost experimentally validated riboswitch classes sense and respond to ligands originating from RNA metabolism pathways, and therefore it seemed reasonable to consider the likelihood that riboswitches for PRPP would exist. PRPP is an essential precursor for the modern biosynthesis of RNA monomers in organisms from all three domains of life, and is likely to have been important for the production of ribonucleotides very early in evolution. If PRPP was used by RNA World organisms to generate the building blocks of this major biopolymer, then RNA aptamers that selectively bound this biosynthetic precursor in ancient times might have persisted to serve as riboswitch aptamers in modern cells.\n\nIntriguingly, we had representatives of PRPP riboswitches on our list of riboswitch candidates over a decade ago (Barrick et al., 2004), but due to their striking similarity to riboswitches for guanidine (Nelson et al., 2017) and ppGpp, they were unusually difficult to identify and experimentally validate. Members of other riboswitch classes have previously been found to exhibit altered ligand specificities by accruing key mutations in nucleotides of their binding pockets. For example, guanine riboswitches have undergone one or a few key mutations to change their ligand specificity to adenine (Mandal and Breaker, 2004) or 2\u00b4-deoxyguanosine (Kim et al., 2007; Weinberg et al., 2017). Also, subtle binding site variants of FMN riboswitches appear to bind a closely related ligand (https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2011097027&recNum=27&docAn=US2011000204&queryString=(riboswitch)%2520&maxRec=179; Weinberg et al., 2017), and riboswitches for molybdenum cofactor (MoCo) are proposed to have modest binding site changes to alter their ligand specificity to bind tungsten cofactor (Regulski et al., 2008). In nearly all these previous examples, there are relatively small changes in the chemical structure of the ligand that need to be accommodated by the riboswitch binding pocket changes.\n\nFor the subtypes of ykkC motif RNAs whose ligands have been identified, the chemical differences in the ligands can be substantial. The ppGpp (subtype 2a) and PRPP (subtype 2b) riboswitch ligands differ by the presence or absence of a guanine nucleobase and by the location and number of phosphate moieties. Guanidinium, the ligand for guanidine-I (subtype 1) riboswitches is entirely distinct from PRPP, and this moiety forms only a portion of the purine ring of ppGpp. The ligands sensed by subtypes 2 c and 2d, which are associated with genes encoding nucleoside diphosphate linked to X (NUDIX) hydrolases of unknown specificity and a transporter of unknown function associated with phosphonate utilization (phn_DUF6), respectively, still remain to be discovered.\n\nThe consensus models of ykkC subtype 2c and 2d RNAs each have more prominent changes compared to subtype 2a versus 2b at nucleotide positions that are known to be involved in ligand recognition (Nelson et al., 2017; Reiss et al., 2017; Battaglia et al., 2017). Because the consensus model for subtype 2c RNAs has the most similarity to those for PRPP and ppGpp riboswitches, and the associated genes encode enzymes with various nucleotide substrates, we speculate that this candidate riboswitch class senses another nucleotide derivative.\n\nThe consensus model for subtype 2d RNAs has the most similarity to that for guanidine-I riboswitches and the phn_DUF6 transporter proteins whose expression they control fall into the same drug/metabolite transporter superfamily as guanidine transporters. Therefore, we propose that this unsolved candidate riboswitch class might sense a small, charged, toxic compound akin to guanidine. It will be interesting to compare the chemical structures of all of the ykkC family riboswitch ligands once those for the subtype 2c and 2d riboswitch candidates have been validated. Nonetheless, the collection of ykkC motif RNAs already demonstrates the ability of RNA to recognize a variety of distinct small molecules, all while utilizing the same general structural scaffold.\n\nFurthermore, the discovery of tandem guanine-PRPP riboswitches serve as additional demonstrations of how complex molecular devices can be formed purely from RNA. We should note here that the in vitro transcription data for the logic gate molecules (Figure 5B,C) represent the combined output of a population of RNA transcripts. Although the transcript length trends are as predicted for an IMPLY gate, these outputs do not match the perfect binary output states of the corresponding electronic logic gates. However, each individual RNA molecule indeed has a binary output just like an individual electronic logic gate. Each tandem riboswitch aptamer transcript is either terminated (OFF) or fully transcribed (ON), but the band intensities from analytical gel electrophoresis report on the results of the population of transcripts.\n\nThe outputs of the riboswitch logic gate can be further complicated by at least two issues. First, an individual transcript might fail to function properly, say by misfolding of an aptamer domain, such that it cannot respond to the presence of a ligand. This failure mode might help explain the imperfect yields of terminated and full-length transcripts observed when examining riboswitches by in vitro transcription assays. It seems likely that folding problems of RNAs prepared in vitro might be less prominent when the RNAs are produced by cells. This means that high levels of transcription read-through that is non-responsive to the absence of ligand are not evident in reporter gene assays because the riboswitch aptamers have evolved to fold properly and on a relevant timescale in the cellular milieu.\n\nSecond, the presence or absence of the two ligand inputs will change the function of the logic gate system at the individual transcript level, and therefore change the frequency of their choice of these two states rather than change the number of output states possible. Unlike electronic logic gates that use electrical current at only two values (off and on), ligand concentrations for riboswitches can be highly variable. Therefore, given the nature of ligand binding to receptors (each described by an equilibrium constant equation), differences in ligand concentrations will result in differences in the probabilities that the two riboswitch aptamers will be occupied. This occupancy distribution will be reflected in the transcriptional output of the RNA population, but each individual transcript still yields a binary output (terminated or full-length product) that is biased by the concentrations of ligands present.\n\nThe IMPLY gate described herein involves a riboswitch RNA with aptamers for the RNA nucleobase guanine and the RNA precursor PRPP. While tandem riboswitch systems have previously been described (Figure 6), the guanine-PRPP system is the only example of two tandem aptamers with different ligand specificities that share the same expression platform, allowing for a new type of logic function to be implemented. All of these RNA systems demonstrate complex chemical sensing and regulatory functions, which perhaps reflects the complexity of systems used for metabolite monitoring and biological regulation in ancient RNA World organisms. Furthermore, it seems likely that additional variations of two-input Boolean logic gates will be represented by tandem riboswitches that have yet to be discovered in modern cells.\n\n## Materials and methods\n\n### Chemicals and reagents\n\nChemicals were purchased from Sigma-Aldrich with the exceptions of phosphoribosyl pyrophosphate (Santa Cruz Biotech) and guanosine 5\u2032,3\u2032-bisdiphosphate (TriLink Biotech). [\u03b3-32P]-ATP and [\u03b1-32P]-UTP were purchased from Perkin Elmer and used within two weeks of receipt. Bulk chemicals were purchased from J.T. Baker and enzymes from New England Biolabs, unless otherwise noted. All solutions were prepared using deionized water (dH2O) and were either autoclaved or filter sterilized (using 0.22 \u00b5m filters, Millipore) prior to use. DNA oligonucleotides were purchased from Sigma-Aldrich and Integrated DNA Technologies. A list of oligonucleotides used in this study can be found in Supplementary file 1.\n\n### Bioinformatics analyses\n\nAdditional examples of ykkC motif RNAs were identified using Infernal 1.1 (Nawrocki and Eddy, 2013) to search RefSeq version 76 plus additional environmental microbial databases as described previously (Weinberg et al., 2015). Iterative searches for new sequences were performed based on the previously published alignment of ykkC subtype 2 RNAs (Nelson et al., 2017). These sequences were sorted by nucleotide identity at a specific position as previously indicated (Nelson et al., 2017) to exclude guanidine-I riboswitches, then further manually sorted by downstream gene association, as described above. This revealed 257 unique examples of subtype 2b RNAs (PRPP riboswitches), 127 of which are found in tandem with a guanine aptamer. The consensus sequence and secondary structure model was constructed using R2R software (Weinberg and Breaker, 2011).\n\n### RNA oligonucleotide preparation\n\nDouble-stranded DNA (dsDNA) templates for RNA transcription were produced either by extension of overlapping synthetic DNAs (Supplementary file 1) using SuperScript II reverse transcriptase (Thermo Fisher Scientific) for the F. ignava construct or by PCR from genomic DNA for B. megaterium construct. Primers were designed to contain a 5\u2032-terminal T7 RNA polymerase (T7 RNAP) promoter to enable transcription. The desired RNA constructs were prepared from these dsDNAs by in vitro transcription, purified, and subsequently 5\u2032 32P-labeled as previously described (Nelson et al., 2017; Sherlock et al., 2017).\n\n### RNA in-line probing analyses\n\nIn-line probing assays (Soukup and Breaker, 1999; Regulski and Breaker, 2008) were performed precisely as described previously (Nelson et al., 2017; Sherlock et al., 2017).\n\n### Single-round transcription termination assays\n\nDNA constructs for single-round in vitro transcription were designed to carry the riboswitch of interest spanning from the predicted natural transcription start site to 55 (H. modesticaldum construct) or 26 (B. megaterium construct) nucleotides following the terminator stem. The promoter from the B. subtilis lysC gene, which is compatible with E. coli RNA polymerase, was used for both in vitro transcription termination as well as the lacZ reporter experiments detailed below. Mutations were incorporated in the region of the B. megaterium construct before the guanine aptamer so that it contained no cytidines, while the H. modesticaldum construct was naturally cytidine-deficient. Synthetic double-stranded DNA templates were designed, purchased (Integrated DNA Technologies) and subsequently amplified by PCR for the H. modesticaldum constructs whereas constructs for the WT and M3 through M5 B. megaterium riboswitch were amplified from the plasmids containing those inserts for the reporter gene fusion, as described below.\n\nApproximately 2 pmol of the resulting, purified DNA template was added to a transcription initiation mixture (20 mM Tris-HCl [pH 7.5 at 23\u00b0C], 75 mM KCl, 5 mM MgCl2, 1 mM DTT, 10 \u00b5g mL\u22121 bovine serum albumin [BSA], 130 \u00b5M ApA dinucleotide, 1% glycerol, 0.04 U \u00b5L\u22121 E. coli RNA polymerase holoenzyme, 2.5 \u00b5M GTP, 2.5 \u00b5M ATP, and 1 \u00b5M UTP). Approximately 1 \u00b5Ci [\u03b1-32P]-UTP was added per 8 \u00b5L reaction and transcription was allowed to proceed at 37\u00b0C for 10 min, leading to formation of a stalled polymerase complex at the first cytidine nucleotide of each transcript. For each 8 \u00b5L transcription reaction, 1 \u00b5L of 10x elongation buffer (20 mM Tris-HCl [pH 7.5 at 23\u00b0C], 75 mM KCl, 5 mM MgCl2, 1 mM DTT, 2 mg mL\u22121 heparin, 1.5 mM ATP, 1.5 mM GTP, 1.5 mM CTP, and 250 \u00b5M UTP) as well as 1 \u00b5L of a 10x solution of the ligand of interest were added sequentially. Transcription reactions were then incubated at 37\u00b0C for an additional 60 min.\n\nThe transcription products were subsequently analyzed via denaturing (8\u00a0M\u00a0urea)\u00a010% PAGE and visualized using a phosphorimager (GE Healthcare Life Sciences). Fraction full length values were calculated by varying the ligand concentration in separate reactions and quantifying the changes in band intensity of both full length (FL) and terminated (T) transcription products using the formula (FL)/(FL\u00a0+T). The T50 values were determined by plotting the fraction FL as a function of the logarithm of ligand concentration and using a sigmoidal four parameter logistic fit in GraphPad Prism 7.\n\n### Riboswitch reporter assays\n\nRiboswitch-reporter constructs consisting of the B. subtilis lysC gene promoter and either the H. modesticaldum or B. megaterium riboswitch fused upstream of the E. coli lacZ gene were inserted into the vector pDG1661 as described previously (Sudarsan et al., 2003; Nelson et al., 2017) and integrated into the amyE locus of wild-type WT (1A1 strain 168 \u0394trp) or \u0394purF strains (BKE06490 [erythromycin resistant] and BKK06490 [kanamycin resistant]) obtained from the Bacillus Genetic Stock Center, The Ohio State University) B. subtilis (Meyer et al., 2011). The resulting transformed strains were verified to exhibit the expected resistance to chloramphenicol as well as kanamycin for the \u0394purF::kan strains. Additionally, each strain was confirmed to contain the desired riboswitch reporter sequence by colony PCR amplification followed by sequencing. For example, PCR amplification using primers flanking the purF locus followed by sequencing confirmed either the WT purF gene (WT strains) or kanamycin-resistance gene (\u0394purF::kan strains) as expected. Mutations were incorporated into the B. megaterium reporter construct by using Quikchange site-directed mutagenesis (Agilent Technologies).\n\nReporter experiments were performed by inoculating various B. subtilis strains into Lysogeny Broth (LB) with appropriate antibiotics and growing overnight at 37\u00b0C. For experiments with the singlet H. modesticaldum reporter, the bacteria were diluted into lysogeny broth (LB), grown for an additional 4\u20136 hr until culture growth was visible, centrifuged, supernatant removed, the resuspended in glucose minimal media (GMM). For experiments with the tandem B. megaterium reporter, bacteria were diluted directly into either LB or GMM, as indicated, and grown for 6 hr with or without supplemented guanine. Synthetic DNAs used in cloning are listed in Supplementary file 1.\n",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "e4ab75c2-dcf6-47e3-973d-1517a0773a33",
+      "submission_id": "2982a2da-df37-404e-ade9-4899e913c992",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33908.016](https://doi.org/10.7554/eLife.33908.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Tandem riboswitches form a natural Boolean logic gate to control purine metabolism in bacteria\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Timothy Nilsen as Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Ailong Ke (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThere was a consensus that this work reports a novel type of RNA-based logic gate that uses a regulatory mechanism distinct from previously described tandem riboswitches. The work was performed rigorously and all the reviewers felt that it was, in principle, suitable for publication in eLife. Since all of the points raised by the referees can be addressed by fairly minor textual changes, the entire reviews are included. Please address all comments.\n\nReviewer #1:\n\nThe manuscript by Sherlock et al. describes the function and mechanism of a riboswitch class that resembles the guanidine-I riboswitch in structure, but senses a different ligand, PRPP, to regulate the purine synthesis pathway. In the first half of the study, the specificity of these riboswitches for PRPP is proven through in-line probing analysis. This combined with transcription read-through assays and in vivo expression studies provides convincing evidence that these riboswitches only respond to PRPP and not guanidine. In the second part, the authors describe the IMPLY logic gate that PRPP riboswitches form in tandem with guanine riboswitches to regulate purine biosynthesis in starvation conditions. The regulatory properties of these tandem riboswitches in response to different ratios of PRPP and guanine is thoroughly characterized with in vitro and in vivo experiments. This is a novel type of RNA-based logic gate that utilizes a regulatory mechanism distinct from other tandem riboswitches described previously. Therefore, this work has significance to the riboswitch and RNA biology fields.\n\nOverall, the manuscript is polished with only a few areas needing some proof-reading, the conclusions are sound, and the significance qualifies it for the broad readership of eLife. There is a major point I would ask the authors to consider.\n\nWhile the authors convincingly show the regulatory effects of the guanine-PRPP tandem switch, the mechanism by which the two aptamers communicate to alter expression is not given. The authors suggest steric hindrance as a possible mechanism; would extending the linker between the guanine and PRPP domains change their regulatory outcome? Is it possible to make a mutant that retains binding activity in both aptamers, but loses the ability to repress transcription in response to guanine? Furthermore, the authors show in their in-line probing experiments that an AAAAA sequence between the guanine and PRPP domains has altered scission depending on if guanine or PRPP is present. Can the authors suggest a possible role for this sequence?\n\nReviewer #2:\n\nThis riboswitch-focused manuscript includes a full range of the methods that are typically used to validate new riboswitch classes; therefore, this represents a thorough validation of a new and important riboswitch class. It is particularly interesting as it discovers PRPP as the ligand for a subclass (ykkC-2b) of a previously identified riboswitch class.\n\nIt is a well-written manuscript, with a thorough Discussion and effective figures; I have no criticisms or substantive reservations with the manuscript as written. Therefore, the only real question is whether the manuscript warrants publication in eLife as opposed to other more specialty journals. A subset of the reasons that it does are as follows:\n\n- This manuscript is effectively a meaningful \"sequel\" to a prior publication, which suggested that some bacteria might use tandem riboswitches that respond to combinatorial inputs. The current manuscript reveals how these original tandem riboswitches function, and how they are likely to influence bacterial stress responses.\n\n- The model for the logic behind the tandem riboswitch (subsection \u201cExpansion of natural Boolean logic devices made of RNA\u201d) makes perfect sense. Moreover, it meaningfully contributes to the general understanding of the types of cellular responses that occur during ppGpp signaling.\n\n- While some riboswitch classes have been found to have members that respond to a ligand that is modestly different than is sensed by the overall riboswitch family, the \"ykkC\" riboswitch class is truly remarkable in this regard. This manuscript demonstrates that the evolutionary malleability of the \"ykkC\" structural scaffold is incredible, with subclasses that have been shown to respond to guanidinium, ppGpp, and now PRPP, and still with several more uncharacterized classes. This important data reveals that riboswitch classes must be carefully analyzed by bioinformatics techniques in order to try and identify meaningful subclasses. In other words, the emerging \"ykkC\" story serves as a precautionary reminder that one cannot assume that all members of a riboswitch class behave the exact same, without further bioinformatic or biochemical analysis.\n\n- This manuscript adds substantially to the discussion on how combinations of riboswitches can act as different types of Boolean logic gates. This is important for understanding the complex regulatory signals that underlie genetic regulation of biological functions in bacteria, but also because it helps set the stage for development of synthetic riboswitch RNAs.\n\nThe only mark against the manuscript is that it is unable to provide a molecular description of the exact mechanism of allosteric connectivity between the guanine and PRPP aptamers; however, I agree with the authors that this is well beyond the scope of this current manuscript.\n\nReviewer #3:\n\nThe study by Sherlock and coauthors presents several findings, which will be of interest to the broad readership of ELife. The first major finding is identification of a cognate ligand for a subtype of the orphan ykkC riboswitch. Surprisingly, this ligand, PRPP, is very different from guanidine, a ligand for another subtype of the same riboswitch type. Therefore, the PRPP and guanidine riboswitches are the first example of riboswitches that appear to share the same or very similar structures but recognize ligands with distinct physicochemical properties.\n\nAnother major finding is characterization of a tandem riboswitch arrangement involving guanine and PRPP sensors. Integration of the two sensors and a single expression platform results in a complex biological readout that approximates the Boolean IMPLY logic gate. Such tandem riboswitch arrangement adds to the growing collection of complex regulatory outputs from the RNA-only regulatory elements. The study is performed according to the highest standards of the Breaker laboratory and I do not have any major concerns.\n\nI would only recommend the authors to make additional analysis of the linker between guanine and PRPP sensors in the tandem riboswitches. The tandem riboswitch requires overlapping sequences of the sensors to participate in the formation of mutually exclusive ligand-binding structures in order to function as the IMPLY gate. While the majority of the linkers are short (\u22645 nt), as reflected in the consensus sequence, a number of them are longer than 5 nt, with ~20% being 7 nt long. The in-line probing experiments were performed on the riboswitch with a 6-nt linker, and while there was no sequence overlap between the sensors, formation of the PRPP sensor affected the 3' nucleotide of the guanine sensor, thereby explaining the IMPLY mechanism. With a 7-mer linker, the IMPLY mechanism may not be efficient and I wonder whether there is a simple explanation for having such outliers. Is the P1 helix of these riboswitches longer than 7 base pairs? If not, these riboswitches could be an interesting system to test in future studies, and the authors may comment on this observation.\n",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7d220fa0-19df-48c5-9c5f-2ae63bff496d",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C1",
+      "claim": "25 riboswitch classes were previously known that selectively respond to ligands that are chemical derivatives of RNA monomers or their precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, 25 riboswitch classes were known that selectively respond to ligands that are chemical derivatives of RNA monomers or their precursors (McCown et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCown et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "54efa946-96f8-4a6c-a7d0-7c6d335a77fe",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C2",
+      "claim": "The strong bias in favor of RNA-like ligands strengthens the hypothesis that many widely-distributed riboswitch classes are direct descendants from the RNA World.",
+      "claim_type": "EXPLICIT",
+      "source": "This strong bias in favor of RNA-like ligands strengthens the hypothesis (Nelson and Breaker, 2017; Breaker, 2010) that many of the widely-distributed riboswitch classes are direct descendants from the RNA World \u2013 a time before genetically-encoded protein biosynthesis (Gilbert, 1986; Benner et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nelson and Breaker, 2017; Breaker, 2010; Gilbert, 1986; Benner et al., 1989",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "2cdb0cdd-8b00-485b-a30b-8ca47565245a",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C3",
+      "claim": "Guanidine-I riboswitches constituted approximately 70% of the original ykkC motif RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing guanidine-I riboswitches (subtype 1), which constituted ~70% of the original ykkC motif RNAs, we further separated the remaining collection of ykkC RNA variants (subtype 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result of bioinformatic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "24090965-e1ed-40be-b064-b308b582610b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C4",
+      "claim": "ykkC subtype 2 RNAs were populated by multiple riboswitch classes that sensed distinct ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon further investigation of the RNA sequences, the phylogeny of organisms containing these RNAs, and the genes associated with each instance of the RNA, we concluded that ykkC subtype 2 RNAs were populated by multiple riboswitch classes that sensed distinct ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on bioinformatic analysis of sequences, phylogeny, and gene associations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "86042aff-49c8-489e-8db9-7956073a6279",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C5",
+      "claim": "Subtype 2 representatives were sorted into four candidate riboswitch classes called subtypes 2a through 2d.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these distinct representatives were sorted into four candidate riboswitch classes called subtypes 2a through 2d.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of bioinformatic sorting",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "4d34c9fc-9c27-4150-9152-5847d22cdc46",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C6",
+      "claim": "Nearly all highly-conserved nucleotides shared by ykkC RNAs are involved in forming tertiary contacts within the larger folded structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all highly-conserved nucleotides shared by ykkC RNAs are involved in forming tertiary contacts within the larger folded structure that positions other nucleotides to form the ligand-binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of crystal structures of guanidine-I riboswitch",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "109aac4d-f3d4-499a-9cb9-5859f87ac78f",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C7",
+      "claim": "Nucleotides that change identity and are characteristic of each subtype are almost exclusively found in close proximity to the known binding pocket of guanidine-I riboswitches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nucleotides that change identity and are characteristic of each subtype are almost exclusively found in close proximity to the known binding pocket of guanidine-I riboswitches (indicated by black asterisks in Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison with crystal structures and sequence analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "da80ad5f-f1c3-434e-8d76-e80702c9a62f",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C8",
+      "claim": "ykkC subtype 2a RNAs were experimentally verified as a riboswitch class that responds to the bacterial alarmone ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly thereafter, these were experimentally verified as a riboswitch class that responds to the bacterial alarmone ppGpp (ME Sherlock, N Sudarsan, RR Breaker, manuscript submitted).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to manuscript submitted",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "854dc221-919f-4745-862a-b92c4eab4310",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C9",
+      "claim": "Representatives of ykkC subtype 2b riboswitch class commonly associate with genes for de novo purine biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, representatives of this riboswitch class commonly associate with genes for de novo purine biosynthesis (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on bioinformatic analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "77de9e87-95dc-452e-9d71-aff4cfc061d4",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C10",
+      "claim": "Cytosine deaminase (codA), a gene involved in pyrimidine salvage, is known to be repressed by the purine guanine.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cytosine deaminase (codA), a gene involved in pyrimidine salvage that is known to be repressed by the purine guanine (Kilstrup et al., 1989), is also commonly located downstream of subtype 2b RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kilstrup et al., 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "f05721d4-272b-4e85-b6d0-a66f23129df3",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C11",
+      "claim": "There are 257 examples of ykkC subtype 2b RNAs distributed throughout bacteria of the phylum Firmicutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, there are 257 examples of ykkC subtype 2b RNAs distributed throughout bacteria of the phylum Firmicutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of bioinformatic search",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "03151729-396b-4ac9-ab53-e6415b8233c2",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C12",
+      "claim": "127 examples of ykkC subtype 2b RNAs occur in a tandem arrangement with a guanine aptamer located directly upstream.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 127 examples occur in a tandem arrangement (Sudarsan et al., 2006) with a guanine aptamer (Mandal et al., 2003) located directly upstream (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result of bioinformatic analysis shown in Figure 1B, with citations to Sudarsan et al., 2006 and Mandal et al., 2003",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "fe261ba1-15d5-4458-9ae0-6caa75f4bf6c",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C13",
+      "claim": "Tandem riboswitch arrangements are likely to function in concert as two-input molecular logic gates.",
+      "claim_type": "EXPLICIT",
+      "source": "Such tandem arrangements are likely to function in concert as two-input molecular logic gates (; Stoddard and Batey, 2006; Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Stoddard and Batey, 2006 and Lee et al., 2010",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "f9b741f8-378d-488d-9dbe-78129977a6c5",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C14",
+      "claim": "Guanine riboswitches typically turn off expression of downstream purine biosynthesis genes when sufficient guanine is present.",
+      "claim_type": "EXPLICIT",
+      "source": "Guanine riboswitches typically turn off expression of downstream purine biosynthesis genes when sufficient guanine is present (Mandal et al., 2003), while representatives of ykkC subtype 2b riboswitches were predicted to turn on expression of downstream genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mandal et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "6c9e5aea-0148-4a16-baf8-e331810ebf4e",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C15",
+      "claim": "Representatives of ykkC subtype 2b riboswitches were predicted to turn on expression of downstream genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Guanine riboswitches typically turn off expression of downstream purine biosynthesis genes when sufficient guanine is present (Mandal et al., 2003), while representatives of ykkC subtype 2b riboswitches were predicted to turn on expression of downstream genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from tandem arrangement and gene associations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "8f189f7e-dc00-4ea7-8faf-02911689cbc0",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C16",
+      "claim": "The consensus sequence and structural models for ppGpp riboswitch aptamers (subtype 2a) and subtype 2b RNAs are remarkably alike.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we noticed that the consensus sequence and structural models for ppGpp riboswitch aptamers (subtype 2a) and subtype 2b RNAs are remarkably alike, including many similarities at the ligand binding site, suggesting that their ligands might also share some chemical features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of consensus models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "03c631ea-db52-4d7b-814e-4bf94367fa77",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C17",
+      "claim": "A long-range C-G base-pair present in guanidine-I riboswitches is absent in ppGpp riboswitches.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly notable was the observation that a long-range C-G base-pair present in guanidine-I riboswitches (Reiss et al., 2017; Battaglia et al., 2017) is absent in ppGpp riboswitches, but appears to again be present in subtype 2b RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis with citations to Reiss et al., 2017 and Battaglia et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "f9791f85-3e3f-41cf-b20e-8c72b5a4b817",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C18",
+      "claim": "The 106 nucleotide purC RNA construct from F. ignava exhibits structural modulation at highly conserved nucleotide positions upon the addition of PRPP.",
+      "claim_type": "EXPLICIT",
+      "source": "The 106 purC RNA construct exhibits structural modulation at highly conserved nucleotide positions upon the addition of PRPP (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in-line probing data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "33e2cbb4-085c-499b-b47a-9769e0ceb28a",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C19",
+      "claim": "No structural modulation of the 106 purC RNA is observed when guanidine, ppGpp, or guanine are added.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no structural modulation of the RNA is observed when the known ligands for the other ykkC subtypes (guanidine and ppGpp) or for the guanine riboswitch (guanine) are added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by in-line probing data in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "5863c2cf-719f-4c8d-9399-600f06610fb6",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C20",
+      "claim": "The structural changes selectively brought about by PRPP largely occur in regions equivalent to those previously implicated in ligand binding by guanidine-I and ppGpp riboswitch classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the structural changes selectively brought about by PRPP largely occur in regions equivalent to those previously implicated in ligand binding by guanidine-I (Nelson et al., 2017; Reiss et al., 2017; Battaglia et al., 2017) and ppGpp riboswitch classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with known structures, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "bee0c9a7-3a6e-4fd3-887e-7e7034a15878",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C21",
+      "claim": "PRPP extensively degrades into multiple breakdown products over the course of binding experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the well-characterized instability of the PRPP molecule (Dennis et al., 2000; Meola et al., 2003), especially under alkaline conditions and high Mg2+, PRPP extensively degrades into multiple breakdown products over the course of our binding experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dennis et al., 2000 and Meola et al., 2003",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "01aafb47-e036-4961-a272-c77105e9a7b6",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C22",
+      "claim": "Transcription of a singlet PRPP riboswitch derived from the purB gene of H. modesticaldum produces a greater yield of full-length RNA when PRPP is added to the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription of a singlet PRPP riboswitch derived from the purB gene of Heliobacterium modesticaldum (Figure 3A) produces a greater yield of full-length RNA when PRPP is added to the reaction (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "3a3a25fb-0981-4b3d-85f6-f9bbadca2bef",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C23",
+      "claim": "The concentration of PRPP necessary to achieve half maximal termination (T50) for the H. modesticaldum purB construct is less than 100 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of PRPP necessary to achieve half maximal termination (T50) is less than 100 \u00b5M (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Determined from transcription termination assay data shown in Figure 3C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "376fd2c7-5f72-4ad3-968f-d8bac3ec7c83",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C24",
+      "claim": "An RNA construct (M1) with disruptive mutations within the highly-conserved aptamer sequence yields the same fraction of terminated and full-length transcripts regardless of PRPP concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an RNA construct (M1) with disruptive mutations within the highly-conserved aptamer sequence yields the same fraction of terminated and full-length transcripts regardless of PRPP concentration (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "b506f626-42da-49dd-8551-d8ab548b583a",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C25",
+      "claim": "T50 values should not be considered equivalent to KD values.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, T50 values should not be considered equivalent to KD values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about riboswitch kinetics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "bc0453dc-7b76-46ef-9dc1-05c72891ed1d",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C26",
+      "claim": "Riboswitches evaluated by transcription termination assays operate under kinetic limitations, whereas KD values established by in-line probing can reach thermodynamic equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Riboswitches evaluated by transcription termination assays operate under kinetic limitations, whereas KD values established by in-line probing can reach thermodynamic equilibrium (Wickiser et al., 2005a; Wickiser et al., 2005b; Gilbert et al., 2006; Rieder et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wickiser et al., 2005a; Wickiser et al., 2005b; Gilbert et al., 2006; Rieder et al., 2007",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "3524ea9d-5b49-40a7-b948-fd4a7872889b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C27",
+      "claim": "The KD for PRPP binding to the H. modesticaldum aptamer is likely to be far better than the T50 values measured, which range between 40 and 90 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the KD for PRPP binding to the H. modesticaldum aptamer is likely to be far better than the T50 values we measured for the H. modesticaldum purB construct, which range between 40 and 90 \u00b5M (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the difference between kinetic and thermodynamic measurements, with data from Figure 3C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "63cebb2b-994a-4e9b-a15d-d72ac4a2306e",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C28",
+      "claim": "Deletion of the purF gene causes PRPP to accumulate when cells are starved for purines.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the purF gene, which encodes the enzyme that catalyzes the first committed step of de novo purine biosynthesis (Figure 1C), causes PRPP to accumulate when cells are starved for purines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on known metabolic pathway shown in Figure 1C",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "556d8e01-2237-45cd-b09a-caec35d119f2",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C29",
+      "claim": "The lacZ gene is expressed in glucose minimal medium in the \u0394purF strain, but not in the parental B. subtilis strain with a functional purF gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the lacZ gene is expressed (blue) in glucose minimal medium in the \u0394purF strain, but not (clear) in the parental B. subtilis strain with a functional purF gene (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by reporter gene assay data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "f2ac0e78-a517-4d5d-b808-ade6375cd233",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C30",
+      "claim": "The riboswitch appears to sample a much greater dynamic range for gene expression in vivo than is observed with in vitro transcription termination assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the cells range from completely clearto a robust blue under these two conditions, indicating that gene expression is fully suppressed when no ligand is present. Thus, the riboswitch appears to sample a much greater dynamic range for gene expression in vivo than is observed with in vitro transcription termination assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of in vivo reporter data (Figure 3D) with in vitro transcription data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "89d04697-3d5e-45b2-8254-0beaab679b03",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C31",
+      "claim": "A riboswitch-reporter fusion carrying a mutation (M2) in the terminator stem expresses lacZ under both WT and \u0394purF conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A riboswitch-reporter fusion carrying a mutation (M2) in the terminator stem expresses lacZ under both conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by reporter gene assay data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "e05c56d4-0b33-48e6-9541-1ec366029205",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C32",
+      "claim": "PRPP accumulation in cells induces gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that PRPP accumulation in cells induce gene expression, which parallels our findings in vitro that PRPP binding by ykkC subtype 2b RNAs promotes transcription elongation (Figure 3B and Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in vivo reporter data (Figure 3D) and in vitro transcription data (Figure 3B and Figure 3C)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "8a998f7f-7442-400e-a3fa-b1100a3fd631",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C33",
+      "claim": "Each aptamer in the tandem guanine-PRPP arrangement appears to independently fold to form its characteristic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Each aptamer appears to independently fold to form its characteristic structure and each exhibits typical structural modulation (Figure 4B) upon addition of its cognate ligand as previously observed for singlet guanine (Mandal et al., 2003) or PRPP (Figure 2B) aptamers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in-line probing data shown in Figure 4B, with citation to Mandal et al., 2003",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "49ff2eee-52ab-469d-ab60-4a4cf7cc8636",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C34",
+      "claim": "There are typically only 5 to 7 nucleotides separating the P1 stems of the guanine and PRPP aptamers in tandem arrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, there are typically only 5 to 7 nucleotides separating the P1 stems of the guanine and PRPP aptamers, suggesting this juxtaposition is important for logic gate function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on bioinformatic analysis of tandem arrangements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "e4b9ae08-4afc-4ee0-95d6-c0cb65dc4cb5",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C35",
+      "claim": "The addition of PRPP to the tandem construct causes a reduction in spontaneous RNA cleavage within the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the addition of PRPP to the tandem construct causes a reduction in spontaneous RNA cleavage within the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer (Figure 4B, region 5), whereas guanine addition causes this same region to experience a dramatic increase in scission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in-line probing data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "ab8e9862-c687-421f-93ce-b9b5a7f6842d",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C36",
+      "claim": "Guanine addition causes the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer to experience a dramatic increase in scission.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the addition of PRPP to the tandem construct causes a reduction in spontaneous RNA cleavage within the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer (Figure 4B, region 5), whereas guanine addition causes this same region to experience a dramatic increase in scission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by in-line probing data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "adf1a8fe-5eff-4fc8-b800-5756849e621e",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C37",
+      "claim": "Guanine binding to its aptamer destabilizes an important structural feature necessary for ligand binding by the PRPP aptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that guanine binding to its aptamer destabilizes an important structural feature necessary for ligand binding by the PRPP aptamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from in-line probing data showing increased scission in PRPP aptamer region upon guanine addition",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "090ee632-767c-4f33-9b13-ec4c305c17b5",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C38",
+      "claim": "The addition of PRPP increases the fraction of RNA transcripts that pass beyond the intrinsic terminator stem and reach full length in the tandem guanine-PRPP riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with results from the singlet aptamer, the addition of PRPP increases the fraction of RNA transcripts that pass beyond the intrinsic terminator stem and reach full length (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "3406583c-6ac9-4ef4-8fb5-9b0786e67056",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C39",
+      "claim": "The addition of guanine causes an increase in the fraction of terminated transcripts in the tandem guanine-PRPP riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Also as predicted, the addition of guanine causes an increase in the fraction of terminated transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "3625b1c6-ad5f-48d8-a7b6-7879b034a297",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C40",
+      "claim": "When both guanine and PRPP are at high levels, the fraction of terminated products approaches zero in the tandem guanine-PRPP riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "When both guanine and PRPP are at high levels, the predicted genetic override occurs, and the fraction of terminated products approaches zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "b4ebfd5f-65ae-4cc7-864c-1c7ee29e06cc",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C41",
+      "claim": "Mutations in M3 alter two highly-conserved nucleotides in the core of the guanine aptamer that are known to be essential for forming its ligand-binding core.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the mutations in M3 alter two highly-conserved nucleotides in the core of the guanine aptamer that are known to be essential for forming its ligand-binding core (Batey et al., 2004; Serganov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Batey et al., 2004 and Serganov et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "325b6192-97f7-4dfa-9951-54831f7d1f39",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C42",
+      "claim": "The addition of guanine does not increase transcription termination in the M3 mutant construct.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the addition of guanine does not increase transcription termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 5B for M3 construct",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "4f10c1f3-2dd1-4d2d-a08d-bd87a5b1efa7",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C43",
+      "claim": "The mutations in M4 alter two highly-conserved nucleotides in PRPP aptamer, which are expected to disrupt PRPP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the mutations in M4 alter two highly-conserved nucleotides in PRPP aptamer, which we expect to disrupt PRPP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of conserved nucleotides and their role in ligand binding",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "ac6e0699-9fb6-486d-9847-44b29fa84f70",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C44",
+      "claim": "The M5 construct appears to be unaffected by the addition of either guanine or PRPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the M5 construct appears to be unaffected by the addition of either guanine or PRPP (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "0d1c7131-5556-42c0-92b3-478b6573d309",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C45",
+      "claim": "The relative concentrations of guanine and PRPP dictate the fraction of RNA transcripts that reach full length in the tandem riboswitch system.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from these reactions yields a 3D landscape demonstrating again that the relative concentrations of guanine and PRPP dictate the fraction of RNA transcripts that reach full length (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "26adbbb4-bdcc-406b-ad31-a90d0f997661",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C46",
+      "claim": "The tandem riboswitch arrangement permits cells to tune the expression levels of associated genes based on the relative concentrations of guanine and PRPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the tandem riboswitch arrangement permits cells to tune the expression levels of associated genes based on the relative concentrations of guanine and PRPP, such that high PRPP levels promote purine production despite the abundance of guanine, a prominent purine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcription termination assay data showing variable output based on ligand concentrations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "5d2b2d4a-34ee-419e-8de1-f493860dc82f",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C47",
+      "claim": "Each RNA molecule carrying the tandem guanine-PRPP aptamer arrangement functions as a Boolean IMPLY logic gate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, each RNA molecule carrying this tandem aptamer arrangement functions as a Boolean IMPLY logic gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the pattern of gene expression based on ligand presence/absence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "ac48d91d-bba7-4756-be31-fbdf93d34007",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C48",
+      "claim": "Gene expression should be on when neither ligand is present in the IMPLY logic gate formed by tandem guanine-PRPP aptamers.",
+      "claim_type": "EXPLICIT",
+      "source": "The truth table for an IMPLY logic gate (Figure 6A) indicates that gene expression should be on when neither ligand is present, and when PRPP is bound by the RNA \u2013 even when guanine is available.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the definition of IMPLY logic gate shown in Figure 6A",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "040a94c2-47c9-4238-b466-3042b5e60a51",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C49",
+      "claim": "Gene expression should be on when PRPP is bound by the RNA, even when guanine is available, in the IMPLY logic gate.",
+      "claim_type": "EXPLICIT",
+      "source": "The truth table for an IMPLY logic gate (Figure 6A) indicates that gene expression should be on when neither ligand is present, and when PRPP is bound by the RNA \u2013 even when guanine is available.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the definition of IMPLY logic gate shown in Figure 6A",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "f0001f00-a98a-454c-b624-8d033af1f024",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C50",
+      "claim": "Gene expression should be off when guanine is bound by the RNA while PRPP is not, in the IMPLY logic gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, gene expression should be off when guanine is bound by the RNA, which should occur when guanine is abundant while PRPP is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the definition of IMPLY logic gate",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "521740ad-7563-476f-b7de-1fee1627fef8",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C51",
+      "claim": "When transcription termination or gene expression is observed as the average output from a population of RNA constructs, the resulting data do not represent a perfect Boolean function because the output yields intermediate values.",
+      "claim_type": "EXPLICIT",
+      "source": "When transcription termination or gene expression is observed as the average output from a population of RNA constructs, the resulting data do not represent a perfect Boolean function because the output yields intermediate values between zero and maximal values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of population-level transcription data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "f3027827-dc38-48f6-9b06-2996bea1f2ed",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C52",
+      "claim": "Each of the individual RNAs in the tandem riboswitch system operates as a binary logic gate that is either on or off.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas each of the individual RNAs operates as a binary logic gate that is either on or off, a population of these RNAs exceeds the function of an individual Boolean logic gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of single-molecule behavior versus population behavior",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "6a024dda-28ea-45b9-a7c7-5df130f2d018",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C53",
+      "claim": "The output of the tandem riboswitch population functions more like a molecular rheostat to tune gene expression based on relative ligand concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the output of the tandem riboswitch population functions more like a molecular rheostat to tune gene expression based on relative ligand concentrations, rather than as an all-or-nothing binary switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the variable output observed at different ligand concentrations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "8a736163-7ded-42fe-a0ca-db16715f9401",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C54",
+      "claim": "When ligand concentrations are at their extreme values, the output of the tandem system approaches the binary logic of an IMPLY gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, when ligand concentrations are at their extreme values, the output of the tandem system (Figure 5D) approaches the binary logic of an IMPLY gate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcription termination assay data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "1e5cbd6e-9827-4a7a-be42-bb62637aac3e",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C55",
+      "claim": "During the stringent response in Firmicutes, nutrient starvation is signaled by the presence of uncharged tRNAs that activate the ppGpp synthase RelA.",
+      "claim_type": "EXPLICIT",
+      "source": "During the stringent response in Firmicutes, nutrient starvation is signaled by the presence of uncharged tRNAs that activate the ppGpp synthase RelA (Geiger and Wolz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Geiger and Wolz, 2014",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "defe0414-faf6-4823-8540-a21519a7d197",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C56",
+      "claim": "ppGpp synthesis causes GTP levels to drop and the transcriptional repressor CodY to release and enable transcription of branched-chain amino acid biosynthesis genes.",
+      "claim_type": "EXPLICIT",
+      "source": "ppGpp synthesis causes GTP levels to drop and the transcriptional repressor CodY, which requires GTP and isoleucine to bind its target sites, to release and enable transcription of branched-chain amino acid (BCAA) biosynthesis genes (Sonenshein, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sonenshein, 2005",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "7127f12f-79ed-4036-8277-3f354fa5c327",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C57",
+      "claim": "The resulting increased ppGpp concentration promotes binding of this signaling molecule as an inhibitor of enzymes such as GuaB, GMK, and HprT to suppress GTP production.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting increased ppGpp concentration promotes binding of this signaling molecule as an inhibitor of enzymes such as GuaB, GMK, and HprT (Figure 1C) to suppress GTP production (Kriel et al., 2012), causing both guanine and PRPP to accumulate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Kriel et al., 2012 and shown in Figure 1C",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "fc384854-a2cd-45ec-be5c-c9041aeaf251",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C58",
+      "claim": "ppGpp inhibition of GuaB, GMK, and HprT causes both guanine and PRPP to accumulate.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting increased ppGpp concentration promotes binding of this signaling molecule as an inhibitor of enzymes such as GuaB, GMK, and HprT (Figure 1C) to suppress GTP production (Kriel et al., 2012), causing both guanine and PRPP to accumulate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Kriel et al., 2012 and metabolic pathway shown in Figure 1C",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "43c9e92b-1b00-4ebf-85d2-05164014ea73",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C59",
+      "claim": "The genes associated with the tandem riboswitch system only include those for catalyzing the steps of de novo purine synthesis up to the production of inosine monophosphate (IMP).",
+      "claim_type": "EXPLICIT",
+      "source": "At first this appears counterintuitive, but the genes associated with the tandem riboswitch system only include those for catalyzing the steps of de novo purine synthesis up to the production of inosine monophosphate (IMP), the branch point between AMP and GMP production (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on bioinformatic analysis of gene associations shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "303b7b61-31ec-46e8-82bd-6342be0adbe5",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C60",
+      "claim": "The riboswitch promotes AMP synthesis, but will not turn on genes specific for GDP or GTP synthesis that are already being inhibited by ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the riboswitch promotes AMP synthesis, but will not turn on genes specific for GDP or GTP synthesis that are already being inhibited by ppGpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from gene associations and metabolic pathway",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "4e64c67b-95f7-46f1-ab37-863d2ba3b220",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C61",
+      "claim": "ATP is known to be present in elevated quantities during the stringent response because it is used as the initiating nucleotide for transcription of genes under the ppGpp superregulon.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP is known to be present in elevated quantities during the stringent response because it is used as the initiating nucleotide for transcription of genes under the ppGpp superregulon, whereas rRNA transcripts utilize GTP as the initiating nucleotide to suppress protein production (Kr\u00e1sn\u00fd et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kr\u00e1sn\u00fd et al., 2008",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "6f6514f2-97ea-4ccb-9601-7b059a9687d8",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C62",
+      "claim": "The guanine-PRPP tandem riboswitch arrangement at its functional limits most closely approximates an IMPLY logic gate.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, the guanine-PRPP tandem riboswitch arrangement at its functional limits most closely approximates an IMPLY logic gate (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on transcription termination assay data and logic gate analysis shown in Figure 6A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "a2f18214-6f38-45f6-b5d1-a35fd0a8ebbc",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C63",
+      "claim": "Tandem S-adenosylmethionine (SAM) and adenosylcobalamin (AdoCbl) riboswitches form a NOR gate.",
+      "claim_type": "EXPLICIT",
+      "source": "This all-RNA system joins the NOR gate formed by tandem S-adenosylmethionine (SAM) and adenosylcobalamin (AdoCbl or coenzyme B12) riboswitches (Sudarsan et al., 2006) (Figure 6B) and the AND gate formed by tandem T box and ppGpp riboswitch RNAs (Figure 6C) as sophisticated regulatory RNAs that approximate Boolean logic functions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Sudarsan et al., 2006 and shown in Figure 6B",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "0a452199-3157-4453-bd4c-f93e8a699bf6",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C64",
+      "claim": "Tandem T box and ppGpp riboswitch RNAs form an AND gate.",
+      "claim_type": "EXPLICIT",
+      "source": "This all-RNA system joins the NOR gate formed by tandem S-adenosylmethionine (SAM) and adenosylcobalamin (AdoCbl or coenzyme B12) riboswitches (Sudarsan et al., 2006) (Figure 6B) and the AND gate formed by tandem T box and ppGpp riboswitch RNAs (Figure 6C) as sophisticated regulatory RNAs that approximate Boolean logic functions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "28d7da7c-99d1-4e56-aa1e-f818e2310f2b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C65",
+      "claim": "The tandem riboswitch-ribozyme arrangement formed by a c-di-GMP-II riboswitch and a group I self-splicing ribozyme senses both c-di-GMP and guanosine to approximate the function of a Boolean AND gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the tandem riboswitch-ribozyme arrangement formed by a c-di-GMP-II riboswitch and a group I self-splicing ribozyme senses both c-di-GMP and guanosine (or any of its 5\u00b4-phosphorylated derivatives) to approximate the function of a Boolean AND gate (Lee et al., 2010; Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lee et al., 2010 and Chen et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "6a528759-1ed7-418f-9fe8-965b4def3b38",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C66",
+      "claim": "PRPP is an essential precursor for the modern biosynthesis of RNA monomers in organisms from all three domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "PRPP is an essential precursor for the modern biosynthesis of RNA monomers in organisms from all three domains of life, and is likely to have been important for the production of ribonucleotides very early in evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "da6e9fca-7006-4bc6-8403-bafa4856d765",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C67",
+      "claim": "PRPP is likely to have been important for the production of ribonucleotides very early in evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "PRPP is an essential precursor for the modern biosynthesis of RNA monomers in organisms from all three domains of life, and is likely to have been important for the production of ribonucleotides very early in evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from its essential role in modern organisms",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "94073b65-f691-441c-827f-a2dd43c539ef",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C68",
+      "claim": "Representatives of PRPP riboswitches were on the list of riboswitch candidates over a decade ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we had representatives of PRPP riboswitches on our list of riboswitch candidates over a decade ago (Barrick et al., 2004), but due to their striking similarity to riboswitches for guanidine (Nelson et al., 2017) and ppGpp, they were unusually difficult to identify and experimentally validate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barrick et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "4a1572d9-48f4-4a30-afbb-053b6e7453ab",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C69",
+      "claim": "PRPP riboswitches were unusually difficult to identify and experimentally validate due to their striking similarity to riboswitches for guanidine and ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we had representatives of PRPP riboswitches on our list of riboswitch candidates over a decade ago (Barrick et al., 2004), but due to their striking similarity to riboswitches for guanidine (Nelson et al., 2017) and ppGpp, they were unusually difficult to identify and experimentally validate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' experience with bioinformatic and experimental analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "33c6cec4-9d5d-47eb-b204-a1a6d067d51b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C70",
+      "claim": "Guanine riboswitches have undergone one or a few key mutations to change their ligand specificity to adenine.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, guanine riboswitches have undergone one or a few key mutations to change their ligand specificity to adenine (Mandal and Breaker, 2004) or 2\u00b4-deoxyguanosine (Kim et al., 2007; Weinberg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mandal and Breaker, 2004; Kim et al., 2007; Weinberg et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "ac12af12-5c90-44b9-94ad-2e6704dc1dca",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C71",
+      "claim": "Guanine riboswitches have undergone one or a few key mutations to change their ligand specificity to 2\u00b4-deoxyguanosine.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, guanine riboswitches have undergone one or a few key mutations to change their ligand specificity to adenine (Mandal and Breaker, 2004) or 2\u00b4-deoxyguanosine (Kim et al., 2007; Weinberg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2007 and Weinberg et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "2a9f8fa9-ddf1-4a9b-ad9a-87666bb28e80",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C72",
+      "claim": "Subtle binding site variants of FMN riboswitches appear to bind a closely related ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, subtle binding site variants of FMN riboswitches appear to bind a closely related ligand (https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2011097027&recNum=27&docAn=US2011000204&queryString=(riboswitch)%2520&maxRec=179; Weinberg et al., 2017), and riboswitches for molybdenum cofactor (MoCo) are proposed to have modest binding site changes to alter their ligand specificity to bind tungsten cofactor (Regulski et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by patent citation and citation to Weinberg et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "7a47bc43-e27e-45c8-a332-04c7722561bd",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C73",
+      "claim": "Riboswitches for molybdenum cofactor (MoCo) are proposed to have modest binding site changes to alter their ligand specificity to bind tungsten cofactor.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, subtle binding site variants of FMN riboswitches appear to bind a closely related ligand (https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2011097027&recNum=27&docAn=US2011000204&queryString=(riboswitch)%2520&maxRec=179; Weinberg et al., 2017), and riboswitches for molybdenum cofactor (MoCo) are proposed to have modest binding site changes to alter their ligand specificity to bind tungsten cofactor (Regulski et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Regulski et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "36058e1d-b275-4250-8cc6-f4390e581ea1",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C74",
+      "claim": "The ppGpp and PRPP riboswitch ligands differ by the presence or absence of a guanine nucleobase and by the location and number of phosphate moieties.",
+      "claim_type": "EXPLICIT",
+      "source": "The ppGpp (subtype 2a) and PRPP (subtype 2b) riboswitch ligands differ by the presence or absence of a guanine nucleobase and by the location and number of phosphate moieties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on chemical structures of the ligands",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "d0c7533d-bec1-4ec2-a516-1be025fbae28",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C75",
+      "claim": "Guanidinium forms only a portion of the purine ring of ppGpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Guanidinium, the ligand for guanidine-I (subtype 1) riboswitches is entirely distinct from PRPP, and this moiety forms only a portion of the purine ring of ppGpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on chemical structures",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "afbe1441-15df-4b75-abee-eb92e6aab1f4",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C76",
+      "claim": "The ligands sensed by ykkC subtypes 2c and 2d still remain to be discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligands sensed by subtypes 2 c and 2d, which are associated with genes encoding nucleoside diphosphate linked to X (NUDIX) hydrolases of unknown specificity and a transporter of unknown function associated with phosphonate utilization (phn_DUF6), respectively, still remain to be discovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as current state of knowledge",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "426c4e81-e55b-4665-9c9e-d508be8f7113",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C77",
+      "claim": "ykkC subtype 2c RNAs are associated with genes encoding nucleoside diphosphate linked to X (NUDIX) hydrolases of unknown specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligands sensed by subtypes 2 c and 2d, which are associated with genes encoding nucleoside diphosphate linked to X (NUDIX) hydrolases of unknown specificity and a transporter of unknown function associated with phosphonate utilization (phn_DUF6), respectively, still remain to be discovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on bioinformatic analysis of gene associations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "a2ae2d95-5cee-4aa6-9386-5151a5df3de7",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C78",
+      "claim": "ykkC subtype 2d RNAs are associated with a transporter of unknown function associated with phosphonate utilization (phn_DUF6).",
+      "claim_type": "EXPLICIT",
+      "source": "The ligands sensed by subtypes 2 c and 2d, which are associated with genes encoding nucleoside diphosphate linked to X (NUDIX) hydrolases of unknown specificity and a transporter of unknown function associated with phosphonate utilization (phn_DUF6), respectively, still remain to be discovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on bioinformatic analysis of gene associations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "587639dc-5985-430e-8ca8-0087f75856cc",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C79",
+      "claim": "The consensus model for subtype 2c RNAs has the most similarity to those for PRPP and ppGpp riboswitches.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the consensus model for subtype 2c RNAs has the most similarity to those for PRPP and ppGpp riboswitches, and the associated genes encode enzymes with various nucleotide substrates, we speculate that this candidate riboswitch class senses another nucleotide derivative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of consensus models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "a8b05092-005d-43b2-ac67-3659d331ca71",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C80",
+      "claim": "Subtype 2c candidate riboswitch class is speculated to sense another nucleotide derivative.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the consensus model for subtype 2c RNAs has the most similarity to those for PRPP and ppGpp riboswitches, and the associated genes encode enzymes with various nucleotide substrates, we speculate that this candidate riboswitch class senses another nucleotide derivative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on structural similarity and gene associations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "01e84461-4ab4-4126-b878-621f25ba98c9",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C81",
+      "claim": "The consensus model for subtype 2d RNAs has the most similarity to that for guanidine-I riboswitches.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus model for subtype 2d RNAs has the most similarity to that for guanidine-I riboswitches and the phn_DUF6 transporter proteins whose expression they control fall into the same drug/metabolite transporter superfamily as guanidine transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of consensus models",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "f4a34c6e-92f1-4f0f-8138-60d41f5b12f3",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C82",
+      "claim": "The phn_DUF6 transporter proteins controlled by subtype 2d RNAs fall into the same drug/metabolite transporter superfamily as guanidine transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus model for subtype 2d RNAs has the most similarity to that for guanidine-I riboswitches and the phn_DUF6 transporter proteins whose expression they control fall into the same drug/metabolite transporter superfamily as guanidine transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on protein family classification",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "5316ba45-b6dc-4c0b-b08d-bfde6fd4bdb5",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C83",
+      "claim": "Subtype 2d candidate riboswitch class is proposed to sense a small, charged, toxic compound akin to guanidine.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that this unsolved candidate riboswitch class might sense a small, charged, toxic compound akin to guanidine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed based on structural similarity to guanidine-I riboswitches and transporter family",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "5037a9ca-4396-408d-a59e-44120f922131",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C84",
+      "claim": "The collection of ykkC motif RNAs demonstrates the ability of RNA to recognize a variety of distinct small molecules, all while utilizing the same general structural scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the collection of ykkC motif RNAs already demonstrates the ability of RNA to recognize a variety of distinct small molecules, all while utilizing the same general structural scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the identification of multiple ligands for structurally similar ykkC variants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "d7a003a6-34d4-43b0-8f41-57422ecd1bb7",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C85",
+      "claim": "The in vitro transcription data for the logic gate molecules represent the combined output of a population of RNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "We should note here that the in vitro transcription data for the logic gate molecules (Figure 5B,C) represent the combined output of a population of RNA transcripts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Explanation of experimental data interpretation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "c525bef3-fccd-4cd3-bccd-9ac1d8dadfff",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C86",
+      "claim": "Each individual RNA molecule in the tandem riboswitch has a binary output just like an individual electronic logic gate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, each individual RNA molecule indeed has a binary output just like an individual electronic logic gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of single-molecule behavior",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "afb6cf60-14ff-4e34-a54b-ba0268af205b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C87",
+      "claim": "Each tandem riboswitch aptamer transcript is either terminated (OFF) or fully transcribed (ON).",
+      "claim_type": "EXPLICIT",
+      "source": "Each tandem riboswitch aptamer transcript is either terminated (OFF) or fully transcribed (ON), but the band intensities from analytical gel electrophoresis report on the results of the population of transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of transcription mechanism and gel electrophoresis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "1d7b4027-989b-4a40-924a-f419cd65e2ff",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C88",
+      "claim": "An individual transcript might fail to function properly by misfolding of an aptamer domain, such that it cannot respond to the presence of a ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "First, an individual transcript might fail to function properly, say by misfolding of an aptamer domain, such that it cannot respond to the presence of a ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed as a potential complication in riboswitch function",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "d66287b6-7dda-4211-a20d-ec29fff7957b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C89",
+      "claim": "Folding problems of RNAs prepared in vitro might be less prominent when the RNAs are produced by cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems likely that folding problems of RNAs prepared in vitro might be less prominent when the RNAs are produced by cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differences between in vitro and in vivo conditions",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "92febda0-bd2f-4e49-a5e0-cc575ef23554",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C90",
+      "claim": "The presence or absence of the two ligand inputs will change the function of the logic gate system at the individual transcript level.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the presence or absence of the two ligand inputs will change the function of the logic gate system at the individual transcript level, and therefore change the frequency of their choice of these two states rather than change the number of output states possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of ligand-receptor interactions",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "692eb005-26b4-4ae2-9c72-92ee5018824b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C91",
+      "claim": "Differences in ligand concentrations will result in differences in the probabilities that the two riboswitch aptamers will be occupied.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, given the nature of ligand binding to receptors (each described by an equilibrium constant equation), differences in ligand concentrations will result in differences in the probabilities that the two riboswitch aptamers will be occupied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established principles of ligand-receptor binding",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "0a344bf1-15ac-409f-9162-f76e0c1f2eca",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C92",
+      "claim": "The guanine-PRPP system is the only example of two tandem aptamers with different ligand specificities that share the same expression platform.",
+      "claim_type": "EXPLICIT",
+      "source": "While tandem riboswitch systems have previously been described (Figure 6), the guanine-PRPP system is the only example of two tandem aptamers with different ligand specificities that share the same expression platform, allowing for a new type of logic function to be implemented.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison with previously described tandem riboswitches shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "639c6650-acac-411a-80ce-dc7da2baef7b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C93",
+      "claim": "All tandem riboswitch RNA systems demonstrate complex chemical sensing and regulatory functions, which perhaps reflects the complexity of systems used for metabolite monitoring and biological regulation in ancient RNA World organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these RNA systems demonstrate complex chemical sensing and regulatory functions, which perhaps reflects the complexity of systems used for metabolite monitoring and biological regulation in ancient RNA World organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the complexity of modern riboswitch systems",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "79996e3d-e581-493d-a219-8bc8e71a871e",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C94",
+      "claim": "It seems likely that additional variations of two-input Boolean logic gates will be represented by tandem riboswitches that have yet to be discovered in modern cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it seems likely that additional variations of two-input Boolean logic gates will be represented by tandem riboswitches that have yet to be discovered in modern cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the discovery of multiple logic gate types already",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "da715150-3e9b-4c07-9740-a68b3a7ef801",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C95",
+      "claim": "Additional examples of ykkC motif RNAs were identified using Infernal 1.1 to search RefSeq version 76 plus additional environmental microbial databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional examples of ykkC motif RNAs were identified using Infernal 1.1 (Nawrocki and Eddy, 2013) to search RefSeq version 76 plus additional environmental microbial databases as described previously (Weinberg et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of bioinformatic methods with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "697d0d08-3fc0-4672-8ebe-f69ae028d41e",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C96",
+      "claim": "The P3 helix of the PRPP aptamer is predicted to act as an antiterminator stem.",
+      "claim_type": "EXPLICIT",
+      "source": "The P3 helix of the PRPP aptamer (Figure 1A) is predicted to act as an antiterminator stem, which should increase the number of full-length mRNA transcripts when PRPP is bound.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted based on structural model shown in Figure 1A and riboswitch mechanism",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "e05b9066-4c36-4e32-a07f-c0300f7ae578",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C97",
+      "claim": "The antiterminator stem should increase the number of full-length mRNA transcripts when PRPP is bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The P3 helix of the PRPP aptamer (Figure 1A) is predicted to act as an antiterminator stem, which should increase the number of full-length mRNA transcripts when PRPP is bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted based on known riboswitch mechanisms",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "e49afea1-4b7c-46a1-996b-5cb4d6aea526",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C98",
+      "claim": "Guanine aptamers are always located almost immediately adjacent to the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer in tandem arrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "First, guanine aptamers are always located almost immediately adjacent to the conserved nucleotides at the 5\u00b4 terminus of the PRPP aptamer in tandem arrangements (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on bioinformatic analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "c7cf826b-df0a-4482-b450-bdc1a2afeb7b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C99",
+      "claim": "The juxtaposition of guanine and PRPP aptamers is important for logic gate function.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, there are typically only 5 to 7 nucleotides separating the P1 stems of the guanine and PRPP aptamers, suggesting this juxtaposition is important for logic gate function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the conserved proximity of the two aptamers",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "b6561cc9-6439-41af-ad8e-ae96d0f7fc04",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "claim_id": "C100",
+      "claim": "Each aptamer might interfere with its neighboring aptamer upon ligand binding, perhaps by causing steric clashes due to their proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, each aptamer might interfere with its neighboring aptamer upon ligand binding, perhaps by causing steric clashes due to their proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesized based on in-line probing data and structural proximity",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a1c539e6-7cf6-4bb8-a3f5-59a7d3c024b6",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bioinformatic analysis of ykkC motif RNAs revealed that after removing guanidine-I riboswitches (~70% of original ykkC RNAs), the remaining subtype 2 RNAs could be sorted into four candidate riboswitch classes (subtypes 2a-2d) based on sequence analysis, phylogeny, and gene associations. Nucleotides distinguishing each subtype are located near the binding pocket, while highly-conserved nucleotides form tertiary contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 are well-supported by bioinformatic data and structural analysis. The classification is based on multiple lines of evidence including sequence conservation patterns, gene associations, and comparison with crystal structures of guanidine-I riboswitches (C6, C7). The 70% figure (C3) and sorting into four subtypes (C5) represent direct results from the computational analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "0dce051b-bb71-43cf-98db-26e10b388ab0",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ykkC subtype 2a RNAs were experimentally verified as ppGpp riboswitches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C8 relies solely on citation to a manuscript that was submitted but not yet published at the time of this work. Without access to the experimental validation in that manuscript, the evidence for this claim cannot be independently evaluated from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ykkC subtype 2b RNAs (257 examples in Firmicutes) associate with purine biosynthesis genes, with 127 examples occurring in tandem with guanine aptamers. The tandem arrangement suggests a two-input logic gate function where guanine riboswitches turn off purine biosynthesis genes while subtype 2b RNAs were predicted to turn them on. Structural similarity between subtype 2b and ppGpp riboswitches suggested similar ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C17 provide strong bioinformatic evidence for the identity and function of subtype 2b RNAs. The gene associations (C9, C10), distribution data (C11, C12), and structural comparisons (C16, C17) are well-documented. The prediction of opposing regulatory functions (C14, C15) is a reasonable inference from the tandem arrangement and known guanine riboswitch function, though experimental validation follows in subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "fab35eec-b7ca-44fb-b228-714cc44a6fed",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In-line probing experiments demonstrate that a 106 nucleotide purC RNA construct from F. ignava exhibits selective structural modulation in response to PRPP but not to guanidine, ppGpp, or guanine. The structural changes occur in regions equivalent to ligand-binding sites of guanidine-I and ppGpp riboswitches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are strongly supported by the in-line probing data shown in Figure 2B. The selective response to PRPP (C18, C19) and the location of structural changes in predicted binding regions (C20) provide compelling evidence for PRPP as the ligand. The negative controls with other ligands strengthen the specificity claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "aa91d56b-ec20-43aa-9a59-d83ba63c59a6",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transcription termination assays show that PRPP binding increases full-length transcript production from the H. modesticaldum purB riboswitch with a T50 less than 100 \u03bcM. A mutant construct (M1) with disrupted aptamer sequence shows no PRPP response. PRPP instability under assay conditions limits accurate KD determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are well-supported by the transcription termination data in Figure 3B-C. The PRPP-dependent increase in full-length transcripts (C22), T50 measurement (C23), and loss of response in the M1 mutant (C24) provide strong functional evidence. The acknowledgment of PRPP instability (C21) is appropriately cited and explains the choice of transcription assays over in-line probing for affinity measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "55d5a3f9-d275-4235-87c6-4b63a5e19bca",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "T50 values from transcription termination assays should not be equated with KD values because transcription assays operate under kinetic limitations while in-line probing reaches thermodynamic equilibrium. The true KD for PRPP binding is likely better than the measured T50 of 40-90 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are well-supported by established principles of riboswitch kinetics (C26 with appropriate citations) and represent a correct interpretation of the experimental limitations. The inference that KD is better than T50 (C27) is reasonable given the kinetic constraints of transcription assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "09939f2d-71b3-4453-a3c0-bcc34730e8c0",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vivo reporter assays in B. subtilis demonstrate that PRPP accumulation (induced by \u0394purF deletion) activates gene expression through the H. modesticaldum purB riboswitch. The riboswitch shows greater dynamic range in vivo than in vitro, with full suppression in the absence of ligand. A terminator stem mutant (M2) shows constitutive expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 are strongly supported by the reporter gene data in Figure 3D. The differential expression between WT and \u0394purF strains (C29), the greater dynamic range in vivo (C30), and the constitutive expression of the M2 mutant (C31) all provide compelling evidence for PRPP-dependent gene regulation in living cells. The metabolic logic connecting purF deletion to PRPP accumulation (C28) is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "a34f7206-4bef-4c18-b35e-764507084990",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In-line probing of the tandem guanine-PRPP riboswitch from B. megaterium shows that each aptamer independently folds and responds to its cognate ligand. The aptamers are separated by only 5-7 nucleotides. Guanine binding increases RNA cleavage at the 5' terminus of the PRPP aptamer while PRPP binding reduces it, suggesting that guanine binding destabilizes the PRPP aptamer structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are well-supported by the in-line probing data in Figure 4B and bioinformatic analysis. The independent folding and ligand response (C33), the conserved spacing (C34), and the opposing effects of the two ligands on RNA cleavage patterns (C35, C36) provide strong evidence for the proposed mechanism of aptamer interference (C37). The inference in C37 is reasonable given the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transcription termination assays of the tandem guanine-PRPP riboswitch show that PRPP increases full-length transcripts, guanine increases termination, and high levels of both ligands result in near-zero termination (genetic override). Mutations disrupting the guanine aptamer (M3) eliminate guanine response, mutations in the PRPP aptamer (M4) are predicted to disrupt PRPP binding, and combined mutations (M5) eliminate response to both ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 are strongly supported by the transcription termination data in Figure 5B. The ligand-dependent changes in transcript distribution (C38-C40) and the effects of specific mutations (C41-C44) provide compelling evidence for the two-input logic gate function. The M3 and M5 mutant data are shown, while the M4 prediction (C43) is reasonable based on the mutation strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "bdd23076-e7ba-4626-9573-0a35c9e66a12",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The tandem guanine-PRPP riboswitch functions as a Boolean IMPLY logic gate where gene expression is ON when neither ligand is present or when PRPP is bound (even with guanine present), and OFF when only guanine is bound. The relative concentrations of both ligands dictate transcript levels, allowing cells to tune gene expression and promote purine production even when guanine is abundant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are well-supported by the transcription data in Figure 5D showing the 3D landscape of transcript levels as a function of both ligand concentrations. The IMPLY logic gate characterization (C47-C50) accurately describes the observed behavior, and the biological interpretation (C46) is reasonable given the gene associations with purine biosynthesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "aee016ee-5210-41c7-baa9-057665a3fdc4",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "While population-level transcription data show intermediate values rather than perfect binary outputs, each individual RNA molecule operates as a binary logic gate (terminated or full-length). The population functions as a molecular rheostat tuning gene expression based on ligand concentrations, though at extreme ligand concentrations the output approaches binary IMPLY logic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 represent a sophisticated and accurate interpretation of the experimental data. The distinction between single-molecule binary behavior and population-level graded responses (C51-C53) is conceptually sound and well-explained. The observation that extreme ligand concentrations approach binary logic (C54) is supported by Figure 5D.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "During the stringent response in Firmicutes, ppGpp synthesis leads to GTP depletion and causes both guanine and PRPP to accumulate. The tandem riboswitch activates genes only for purine synthesis up to IMP (the branch point), promoting AMP synthesis while avoiding activation of GTP synthesis genes already inhibited by ppGpp. ATP levels remain elevated during stringent response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 provide a well-supported biological rationale for the tandem riboswitch system. The stringent response mechanism (C55-C58) is appropriately cited, the gene association analysis (C59) is supported by Figure 1C, and the metabolic logic (C60) is sound. The ATP elevation during stringent response (C61) is properly cited. This represents a coherent model integrating the riboswitch function with bacterial physiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "7eaea18f-fc7d-4907-a3c2-ce8a0bac5190",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The guanine-PRPP tandem riboswitch approximates an IMPLY logic gate, joining other RNA-based logic gates including the SAM-AdoCbl NOR gate, the T box-ppGpp AND gate, and the c-di-GMP-guanosine riboswitch-ribozyme AND gate as examples of sophisticated all-RNA regulatory systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are well-supported. The IMPLY gate characterization (C62) is backed by the experimental data, and the comparisons to other tandem riboswitch systems (C63-C65) are appropriately cited. This contextualizes the current work within the broader field of RNA-based logic gates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "44115e86-45cf-4021-b670-3d0bf80ad99b",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PRPP is an essential precursor for RNA monomer biosynthesis across all domains of life and was likely important early in evolution. PRPP riboswitches were on the candidate list over a decade ago but were difficult to identify due to their similarity to guanidine and ppGpp riboswitches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are well-supported. The essential role of PRPP (C66) is established biochemical knowledge, the evolutionary inference (C67) is reasonable, and the historical note about the candidate list (C68) is properly cited. The difficulty in identification (C69) is supported by the authors' experience and the structural similarities documented in the paper.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "a646a8af-6cd2-4d0c-88d9-54fd1b2f324e",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Other riboswitch classes have evolved altered ligand specificities through key mutations, including guanine riboswitches changing to bind adenine or 2'-deoxyguanosine, FMN riboswitch variants, and MoCo riboswitches proposed to bind tungsten cofactor. The ppGpp and PRPP ligands differ substantially in nucleobase presence and phosphate positions, while guanidinium forms only part of the ppGpp purine ring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 are well-supported by appropriate citations and represent accurate descriptions of riboswitch evolution and ligand chemistry. These claims provide important context for understanding how the ykkC family has diversified to recognize different ligands.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "2440c505-8c2a-4d9f-9e72-985454be60f3",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The ligands for ykkC subtypes 2c and 2d remain unknown. Subtype 2c RNAs associate with NUDIX hydrolases and are speculated to sense a nucleotide derivative based on structural similarity to PRPP and ppGpp riboswitches. Subtype 2d RNAs associate with phn_DUF6 transporters and are proposed to sense a small charged toxic compound similar to guanidine based on structural similarity to guanidine-I riboswitches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C83 appropriately distinguish between established facts (gene associations C77-C78, C81-C82) and speculations about ligand identity (C80, C83). The speculations are reasonable given the structural similarities and gene associations, and are clearly labeled as such. The acknowledgment that these ligands remain undiscovered (C76) is honest and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "36a60dfb-f922-4666-879a-b723f65fc2de",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The collection of ykkC motif RNAs demonstrates RNA's ability to recognize diverse small molecules using the same general structural scaffold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is well-supported by the identification of multiple ligands (guanidine, ppGpp, PRPP) for structurally similar ykkC variants. This represents an important conclusion about RNA's versatility in molecular recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "ea52b411-9401-4daf-9130-274c5c444064",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In vitro transcription data represent population-level outputs, but each individual RNA molecule has binary output (terminated or full-length). Potential complications include RNA misfolding (which may be less prominent in vivo) and ligand concentration effects on aptamer occupancy probabilities, which change the frequency of binary outcomes rather than creating intermediate states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C91 provide a sophisticated discussion of experimental interpretation. The distinction between single-molecule and population behavior (C85-C87) is conceptually sound, the discussion of potential complications (C88-C89) is appropriately speculative, and the explanation of ligand concentration effects (C90-C91) is based on established binding principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "ed9c3b26-3d13-4010-9177-59a3bae67427",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The guanine-PRPP system is unique among tandem riboswitches as the only example where two aptamers with different ligand specificities share the same expression platform. All tandem riboswitch systems demonstrate complex sensing and regulatory functions that may reflect RNA World organism complexity, and additional logic gate variations likely remain to be discovered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 are well-supported. The uniqueness of the guanine-PRPP system (C92) is supported by comparison with other tandem riboswitches shown in Figure 6. The speculation about RNA World complexity (C93) and future discoveries (C94) are reasonable and appropriately presented as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    },
+    {
+      "id": "e4fe5134-6e6c-433e-8e85-e5f5ca388c04",
+      "content_id": "d4d58b3c-e897-45f7-acfd-9d73958c4015",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Bioinformatic methods using Infernal 1.1 identified additional ykkC motif RNAs. The P3 helix is predicted to act as an antiterminator stem that increases full-length transcripts when PRPP is bound. In tandem arrangements, guanine aptamers are always located immediately adjacent (5-7 nucleotides) to the PRPP aptamer, suggesting this juxtaposition is important for logic gate function, possibly through steric interference upon ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100 are well-supported. The bioinformatic methods (C95) are appropriately cited, the antiterminator prediction (C96-C97) is based on structural models and known riboswitch mechanisms, and the observations about aptamer spacing (C98-C99) are supported by bioinformatic data. The steric interference hypothesis (C100) is appropriately speculative and based on the in-line probing data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:37:24.347405Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2cdb0cdd-8b00-485b-a30b-8ca47565245a",
+      "result_id": "a1c539e6-7cf6-4bb8-a3f5-59a7d3c024b6"
+    },
+    {
+      "claim_id": "24090965-e1ed-40be-b064-b308b582610b",
+      "result_id": "a1c539e6-7cf6-4bb8-a3f5-59a7d3c024b6"
+    },
+    {
+      "claim_id": "86042aff-49c8-489e-8db9-7956073a6279",
+      "result_id": "a1c539e6-7cf6-4bb8-a3f5-59a7d3c024b6"
+    },
+    {
+      "claim_id": "4d34c9fc-9c27-4150-9152-5847d22cdc46",
+      "result_id": "a1c539e6-7cf6-4bb8-a3f5-59a7d3c024b6"
+    },
+    {
+      "claim_id": "109aac4d-f3d4-499a-9cb9-5859f87ac78f",
+      "result_id": "a1c539e6-7cf6-4bb8-a3f5-59a7d3c024b6"
+    },
+    {
+      "claim_id": "da80ad5f-f1c3-434e-8d76-e80702c9a62f",
+      "result_id": "0dce051b-bb71-43cf-98db-26e10b388ab0"
+    },
+    {
+      "claim_id": "854dc221-919f-4745-862a-b92c4eab4310",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "77de9e87-95dc-452e-9d71-aff4cfc061d4",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "f05721d4-272b-4e85-b6d0-a66f23129df3",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "03151729-396b-4ac9-ab53-e6415b8233c2",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "fe261ba1-15d5-4458-9ae0-6caa75f4bf6c",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "f9b741f8-378d-488d-9dbe-78129977a6c5",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "6c9e5aea-0148-4a16-baf8-e331810ebf4e",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "8f189f7e-dc00-4ea7-8faf-02911689cbc0",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "03c631ea-db52-4d7b-814e-4bf94367fa77",
+      "result_id": "36e33b97-a94a-4795-a09e-e3d7239a8bdd"
+    },
+    {
+      "claim_id": "f9791f85-3e3f-41cf-b20e-8c72b5a4b817",
+      "result_id": "fab35eec-b7ca-44fb-b228-714cc44a6fed"
+    },
+    {
+      "claim_id": "33e2cbb4-085c-499b-b47a-9769e0ceb28a",
+      "result_id": "fab35eec-b7ca-44fb-b228-714cc44a6fed"
+    },
+    {
+      "claim_id": "5863c2cf-719f-4c8d-9399-600f06610fb6",
+      "result_id": "fab35eec-b7ca-44fb-b228-714cc44a6fed"
+    },
+    {
+      "claim_id": "bee0c9a7-3a6e-4fd3-887e-7e7034a15878",
+      "result_id": "aa91d56b-ec20-43aa-9a59-d83ba63c59a6"
+    },
+    {
+      "claim_id": "01aafb47-e036-4961-a272-c77105e9a7b6",
+      "result_id": "aa91d56b-ec20-43aa-9a59-d83ba63c59a6"
+    },
+    {
+      "claim_id": "3a3a25fb-0981-4b3d-85f6-f9bbadca2bef",
+      "result_id": "aa91d56b-ec20-43aa-9a59-d83ba63c59a6"
+    },
+    {
+      "claim_id": "376fd2c7-5f72-4ad3-968f-d8bac3ec7c83",
+      "result_id": "aa91d56b-ec20-43aa-9a59-d83ba63c59a6"
+    },
+    {
+      "claim_id": "b506f626-42da-49dd-8551-d8ab548b583a",
+      "result_id": "55d5a3f9-d275-4235-87c6-4b63a5e19bca"
+    },
+    {
+      "claim_id": "bc0453dc-7b76-46ef-9dc1-05c72891ed1d",
+      "result_id": "55d5a3f9-d275-4235-87c6-4b63a5e19bca"
+    },
+    {
+      "claim_id": "3524ea9d-5b49-40a7-b948-fd4a7872889b",
+      "result_id": "55d5a3f9-d275-4235-87c6-4b63a5e19bca"
+    },
+    {
+      "claim_id": "63cebb2b-994a-4e9b-a15d-d72ac4a2306e",
+      "result_id": "09939f2d-71b3-4453-a3c0-bcc34730e8c0"
+    },
+    {
+      "claim_id": "556d8e01-2237-45cd-b09a-caec35d119f2",
+      "result_id": "09939f2d-71b3-4453-a3c0-bcc34730e8c0"
+    },
+    {
+      "claim_id": "f2ac0e78-a517-4d5d-b808-ade6375cd233",
+      "result_id": "09939f2d-71b3-4453-a3c0-bcc34730e8c0"
+    },
+    {
+      "claim_id": "89d04697-3d5e-45b2-8254-0beaab679b03",
+      "result_id": "09939f2d-71b3-4453-a3c0-bcc34730e8c0"
+    },
+    {
+      "claim_id": "e05c56d4-0b33-48e6-9541-1ec366029205",
+      "result_id": "09939f2d-71b3-4453-a3c0-bcc34730e8c0"
+    },
+    {
+      "claim_id": "8a998f7f-7442-400e-a3fa-b1100a3fd631",
+      "result_id": "a34f7206-4bef-4c18-b35e-764507084990"
+    },
+    {
+      "claim_id": "49ff2eee-52ab-469d-ab60-4a4cf7cc8636",
+      "result_id": "a34f7206-4bef-4c18-b35e-764507084990"
+    },
+    {
+      "claim_id": "e4b9ae08-4afc-4ee0-95d6-c0cb65dc4cb5",
+      "result_id": "a34f7206-4bef-4c18-b35e-764507084990"
+    },
+    {
+      "claim_id": "ab8e9862-c687-421f-93ce-b9b5a7f6842d",
+      "result_id": "a34f7206-4bef-4c18-b35e-764507084990"
+    },
+    {
+      "claim_id": "adf1a8fe-5eff-4fc8-b800-5756849e621e",
+      "result_id": "a34f7206-4bef-4c18-b35e-764507084990"
+    },
+    {
+      "claim_id": "090ee632-767c-4f33-9b13-ec4c305c17b5",
+      "result_id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc"
+    },
+    {
+      "claim_id": "3406583c-6ac9-4ef4-8fb5-9b0786e67056",
+      "result_id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc"
+    },
+    {
+      "claim_id": "3625b1c6-ad5f-48d8-a7b6-7879b034a297",
+      "result_id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc"
+    },
+    {
+      "claim_id": "b4ebfd5f-65ae-4cc7-864c-1c7ee29e06cc",
+      "result_id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc"
+    },
+    {
+      "claim_id": "325b6192-97f7-4dfa-9951-54831f7d1f39",
+      "result_id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc"
+    },
+    {
+      "claim_id": "4f10c1f3-2dd1-4d2d-a08d-bd87a5b1efa7",
+      "result_id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc"
+    },
+    {
+      "claim_id": "ac6e0699-9fb6-486d-9847-44b29fa84f70",
+      "result_id": "c3c2edf4-d6a0-4ac3-b1d8-ad552debe8cc"
+    },
+    {
+      "claim_id": "0d1c7131-5556-42c0-92b3-478b6573d309",
+      "result_id": "bdd23076-e7ba-4626-9573-0a35c9e66a12"
+    },
+    {
+      "claim_id": "26adbbb4-bdcc-406b-ad31-a90d0f997661",
+      "result_id": "bdd23076-e7ba-4626-9573-0a35c9e66a12"
+    },
+    {
+      "claim_id": "5d2b2d4a-34ee-419e-8de1-f493860dc82f",
+      "result_id": "bdd23076-e7ba-4626-9573-0a35c9e66a12"
+    },
+    {
+      "claim_id": "ac48d91d-bba7-4756-be31-fbdf93d34007",
+      "result_id": "bdd23076-e7ba-4626-9573-0a35c9e66a12"
+    },
+    {
+      "claim_id": "040a94c2-47c9-4238-b466-3042b5e60a51",
+      "result_id": "bdd23076-e7ba-4626-9573-0a35c9e66a12"
+    },
+    {
+      "claim_id": "f0001f00-a98a-454c-b624-8d033af1f024",
+      "result_id": "bdd23076-e7ba-4626-9573-0a35c9e66a12"
+    },
+    {
+      "claim_id": "521740ad-7563-476f-b7de-1fee1627fef8",
+      "result_id": "aee016ee-5210-41c7-baa9-057665a3fdc4"
+    },
+    {
+      "claim_id": "f3027827-dc38-48f6-9b06-2996bea1f2ed",
+      "result_id": "aee016ee-5210-41c7-baa9-057665a3fdc4"
+    },
+    {
+      "claim_id": "6a024dda-28ea-45b9-a7c7-5df130f2d018",
+      "result_id": "aee016ee-5210-41c7-baa9-057665a3fdc4"
+    },
+    {
+      "claim_id": "8a736163-7ded-42fe-a0ca-db16715f9401",
+      "result_id": "aee016ee-5210-41c7-baa9-057665a3fdc4"
+    },
+    {
+      "claim_id": "1e5cbd6e-9827-4a7a-be42-bb62637aac3e",
+      "result_id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f"
+    },
+    {
+      "claim_id": "defe0414-faf6-4823-8540-a21519a7d197",
+      "result_id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f"
+    },
+    {
+      "claim_id": "7127f12f-79ed-4036-8277-3f354fa5c327",
+      "result_id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f"
+    },
+    {
+      "claim_id": "fc384854-a2cd-45ec-be5c-c9041aeaf251",
+      "result_id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f"
+    },
+    {
+      "claim_id": "43c9e92b-1b00-4ebf-85d2-05164014ea73",
+      "result_id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f"
+    },
+    {
+      "claim_id": "303b7b61-31ec-46e8-82bd-6342be0adbe5",
+      "result_id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f"
+    },
+    {
+      "claim_id": "4e64c67b-95f7-46f1-ab37-863d2ba3b220",
+      "result_id": "5cdc2a19-e883-46b2-bf00-c89c09d2f56f"
+    },
+    {
+      "claim_id": "6f6514f2-97ea-4ccb-9601-7b059a9687d8",
+      "result_id": "7eaea18f-fc7d-4907-a3c2-ce8a0bac5190"
+    },
+    {
+      "claim_id": "a2f18214-6f38-45f6-b5d1-a35fd0a8ebbc",
+      "result_id": "7eaea18f-fc7d-4907-a3c2-ce8a0bac5190"
+    },
+    {
+      "claim_id": "0a452199-3157-4453-bd4c-f93e8a699bf6",
+      "result_id": "7eaea18f-fc7d-4907-a3c2-ce8a0bac5190"
+    },
+    {
+      "claim_id": "28d7da7c-99d1-4e56-aa1e-f818e2310f2b",
+      "result_id": "7eaea18f-fc7d-4907-a3c2-ce8a0bac5190"
+    },
+    {
+      "claim_id": "6a528759-1ed7-418f-9fe8-965b4def3b38",
+      "result_id": "44115e86-45cf-4021-b670-3d0bf80ad99b"
+    },
+    {
+      "claim_id": "da6e9fca-7006-4bc6-8403-bafa4856d765",
+      "result_id": "44115e86-45cf-4021-b670-3d0bf80ad99b"
+    },
+    {
+      "claim_id": "94073b65-f691-441c-827f-a2dd43c539ef",
+      "result_id": "44115e86-45cf-4021-b670-3d0bf80ad99b"
+    },
+    {
+      "claim_id": "4a1572d9-48f4-4a30-afbb-053b6e7453ab",
+      "result_id": "44115e86-45cf-4021-b670-3d0bf80ad99b"
+    },
+    {
+      "claim_id": "33c6cec4-9d5d-47eb-b204-a1a6d067d51b",
+      "result_id": "a646a8af-6cd2-4d0c-88d9-54fd1b2f324e"
+    },
+    {
+      "claim_id": "ac12af12-5c90-44b9-94ad-2e6704dc1dca",
+      "result_id": "a646a8af-6cd2-4d0c-88d9-54fd1b2f324e"
+    },
+    {
+      "claim_id": "2a9f8fa9-ddf1-4a9b-ad9a-87666bb28e80",
+      "result_id": "a646a8af-6cd2-4d0c-88d9-54fd1b2f324e"
+    },
+    {
+      "claim_id": "7a47bc43-e27e-45c8-a332-04c7722561bd",
+      "result_id": "a646a8af-6cd2-4d0c-88d9-54fd1b2f324e"
+    },
+    {
+      "claim_id": "36058e1d-b275-4250-8cc6-f4390e581ea1",
+      "result_id": "a646a8af-6cd2-4d0c-88d9-54fd1b2f324e"
+    },
+    {
+      "claim_id": "d0c7533d-bec1-4ec2-a516-1be025fbae28",
+      "result_id": "a646a8af-6cd2-4d0c-88d9-54fd1b2f324e"
+    },
+    {
+      "claim_id": "afbe1441-15df-4b75-abee-eb92e6aab1f4",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "426c4e81-e55b-4665-9c9e-d508be8f7113",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "a2ae2d95-5cee-4aa6-9386-5151a5df3de7",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "587639dc-5985-430e-8ca8-0087f75856cc",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "a8b05092-005d-43b2-ac67-3659d331ca71",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "01e84461-4ab4-4126-b878-621f25ba98c9",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "f4a34c6e-92f1-4f0f-8138-60d41f5b12f3",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "5316ba45-b6dc-4c0b-b08d-bfde6fd4bdb5",
+      "result_id": "2440c505-8c2a-4d9f-9e72-985454be60f3"
+    },
+    {
+      "claim_id": "5037a9ca-4396-408d-a59e-44120f922131",
+      "result_id": "36a60dfb-f922-4666-879a-b723f65fc2de"
+    },
+    {
+      "claim_id": "d7a003a6-34d4-43b0-8f41-57422ecd1bb7",
+      "result_id": "ea52b411-9401-4daf-9130-274c5c444064"
+    },
+    {
+      "claim_id": "c525bef3-fccd-4cd3-bccd-9ac1d8dadfff",
+      "result_id": "ea52b411-9401-4daf-9130-274c5c444064"
+    },
+    {
+      "claim_id": "afb6cf60-14ff-4e34-a54b-ba0268af205b",
+      "result_id": "ea52b411-9401-4daf-9130-274c5c444064"
+    },
+    {
+      "claim_id": "1d7b4027-989b-4a40-924a-f419cd65e2ff",
+      "result_id": "ea52b411-9401-4daf-9130-274c5c444064"
+    },
+    {
+      "claim_id": "d66287b6-7dda-4211-a20d-ec29fff7957b",
+      "result_id": "ea52b411-9401-4daf-9130-274c5c444064"
+    },
+    {
+      "claim_id": "92febda0-bd2f-4e49-a5e0-cc575ef23554",
+      "result_id": "ea52b411-9401-4daf-9130-274c5c444064"
+    },
+    {
+      "claim_id": "692eb005-26b4-4ae2-9c72-92ee5018824b",
+      "result_id": "ea52b411-9401-4daf-9130-274c5c444064"
+    },
+    {
+      "claim_id": "0a344bf1-15ac-409f-9162-f76e0c1f2eca",
+      "result_id": "ed9c3b26-3d13-4010-9177-59a3bae67427"
+    },
+    {
+      "claim_id": "639c6650-acac-411a-80ce-dc7da2baef7b",
+      "result_id": "ed9c3b26-3d13-4010-9177-59a3bae67427"
+    },
+    {
+      "claim_id": "79996e3d-e581-493d-a219-8bc8e71a871e",
+      "result_id": "ed9c3b26-3d13-4010-9177-59a3bae67427"
+    },
+    {
+      "claim_id": "da715150-3e9b-4c07-9740-a68b3a7ef801",
+      "result_id": "e4fe5134-6e6c-433e-8e85-e5f5ca388c04"
+    },
+    {
+      "claim_id": "697d0d08-3fc0-4672-8ebe-f69ae028d41e",
+      "result_id": "e4fe5134-6e6c-433e-8e85-e5f5ca388c04"
+    },
+    {
+      "claim_id": "e05b9066-4c36-4e32-a07f-c0300f7ae578",
+      "result_id": "e4fe5134-6e6c-433e-8e85-e5f5ca388c04"
+    },
+    {
+      "claim_id": "e49afea1-4b7c-46a1-996b-5cb4d6aea526",
+      "result_id": "e4fe5134-6e6c-433e-8e85-e5f5ca388c04"
+    },
+    {
+      "claim_id": "c7cf826b-df0a-4482-b450-bdc1a2afeb7b",
+      "result_id": "e4fe5134-6e6c-433e-8e85-e5f5ca388c04"
+    },
+    {
+      "claim_id": "b6561cc9-6439-41af-ad8e-ae96d0f7fc04",
+      "result_id": "e4fe5134-6e6c-433e-8e85-e5f5ca388c04"
+    }
+  ],
+  "comparisons": []
+}

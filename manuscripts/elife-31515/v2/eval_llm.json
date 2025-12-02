@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors generated a high-resolution spatially resolved transcriptome dataset of the 2 dpf zebrafish heart using tomo-seq, containing expression information for ~13,000 genes across 40 sections of 10 \u03bcm thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C107-C110 collectively describe the tomo-seq methodology and resulting dataset. The experimental approach is well-documented with appropriate technical details, replication (three independent datasets), and selection criteria for the most robust dataset. The methodology is validated by prior publications and the data is made publicly available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Pearson correlation and hierarchical clustering analyses identified four distinct cardiac sub-compartments (outflow tract, ventricle, AV canal, and atrium) based on gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 describe computational analyses that successfully identified cardiac sub-compartments. The correlation analysis (Figure 1B) and hierarchical clustering (Figure 1C) provide converging evidence for spatial organization of gene expression. The analytical approach is appropriate and the results are consistent with known cardiac anatomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Expression patterns of known cardiac marker genes (myl7, nppa, vmhc, myh6, has2, bmp4, tbx2b) validated the spatial resolution of the tomo-seq dataset and confirmed the identity of cardiac sub-compartments including the sinoatrial region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 describe validation of the tomo-seq data using well-established cardiac markers. Each marker's expression pattern was confirmed by both tomo-seq traces and in situ hybridization (Figure 2), providing orthogonal validation. The spatial patterns match established knowledge of cardiac gene expression, supporting the technical validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Differential gene expression analysis identified 1143 genes with sub-compartment-specific expression: 99 in atrium, 196 in ventricle, 346 in AV canal, and 502 in sinoatrial region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 report the results of differential expression analysis with clear statistical thresholds (log2 FC >2, p<0.05). The numbers are explicitly stated and the data is made available (Figure 4\u2014source data 1). Selected genes were validated by in situ hybridization, confirming the computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Gene ontology analysis revealed enrichment of oxygen transport and tricarboxylic acid cycle genes in the ventricle, suggesting metabolic conversion to aerobic oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 describe GO term enrichment analysis and biological interpretation. The enrichment analysis is appropriate and the interpretation is reasonable given the known metabolic demands of the developing ventricle. However, C20 is an inference that would benefit from additional functional validation to be fully conclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Several genes related to cardiac myopathies (csrp3, rcan1a, tnnc2, myo1c, actn1) were identified among ventricle-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 identifies disease-relevant genes in the dataset. The genes are correctly identified as ventricle-specific and some are validated by in situ hybridization (Figure 4\u2014figure supplement 1A). The connection to cardiac myopathies is based on established literature, though the claim about 'value for identifying potential disease-causing genes' is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Gene ontology analysis of the sinoatrial region revealed enrichment of proepicardium development genes, hippo signaling components, and Wnt signaling pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe GO term enrichment results for the sinoatrial region. The enrichment analysis is appropriate and specific genes are identified (tbx5a, acvr1l, bmp4 for proepicardium; sav1, stk3, lats1/2 for hippo; csnk1a1, fzd2, fzd9b for Wnt). The Wnt pathway enrichment is particularly important as it leads to the main functional findings of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Lymphatic system-associated genes (lyve1a, prox1a, prox1b, nr2f1a, nr2f2, elmo1, foxj2) were expressed in the sinoatrial region, suggesting cardiac lymphatics may develop from the sinus venosus in zebrafish as in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C27 identify lymphatic markers in the sinoatrial region and infer similarity to mammalian development. While the gene expression data is clear (C25-C26), the inference about lymphatic development (C27) is speculative and based solely on gene expression patterns without functional validation or lineage tracing. The comparison to mammals (citing Klotz et al., 2015) is reasonable but not conclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The Wnt receptor fzd9b is expressed in the sinoatrial region while the Wnt inhibitor apcdd1l is absent from this region, suggesting local activation of Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe complementary expression patterns that support the hypothesis of localized Wnt activity. The expression of fzd9b is confirmed by both tomo-seq and in situ hybridization (Figure 4F), and the absence of apcdd1l from the sinoatrial region (Figure 4\u2014figure supplement 1B) provides additional support. The hypothesis (C35) is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Wnt/\u03b2-catenin signaling is activated in Isl1+ cardiac pacemaker cells, as demonstrated by co-expression of TCF:mCherry and Isl1:GFP reporters in the sinoatrial region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide direct evidence for Wnt activity in pacemaker cells using dual reporter lines. The confocal imaging (Figure 5A-D') clearly shows co-localization of the two reporters. The observation of TCF:mCherry in the AV canal (C37) serves as a positive control, as Wnt signaling is known to be active there. This is strong evidence for the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In isl1 mutants, Isl1-GFP+ cells are present in the sinoatrial region but lack Wnt/\u03b2-catenin activity, while Wnt activity is maintained in the AV canal, demonstrating that Wnt signaling in pacemaker cells depends on Isl1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe genetic epistasis experiments showing Isl1 is required for Wnt activation in pacemaker cells. The presence of Isl1-GFP+ cells in mutants (C41) with loss of TCF:mCherry specifically in these cells (C43) but not in the AV canal (C44) provides strong evidence for tissue-specific regulation. The conclusion (C45) is well-supported, though the inference about pacemaker specification vs. differentiation (C42) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Inhibition of Wnt/\u03b2-catenin signaling by Axin1 overexpression between 36-52 hpf significantly increased heart rate by 10-15% at 3 dpf while maintaining regular beating patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 describe the functional consequences of Wnt inhibition using a well-controlled TetON system. The increase in heart rate is statistically significant (Figure 6B-C), the beating remains regular (Figure 6\u2014figure supplement 1, videos), and the temporal requirement is clearly defined (Figure 6D). The experimental design with tissue-specific and temporally controlled manipulation is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Wnt/\u03b2-catenin signaling regulates parasympathetic but not sympathetic control of heart rate, as Axin1-overexpressing embryos failed to respond to carbachol but retained responsiveness to isoproterenol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe pharmacological experiments that dissect autonomic control. The differential response to carbachol (parasympathetic agonist) versus isoproterenol (sympathetic agonist) in Axin1-overexpressing embryos (Figure 6E-F) provides strong evidence for specific regulation of parasympathetic signaling. The experimental design with appropriate controls and paired measurements is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "At the embryonic stage examined, the heart lacks direct neural innervation but expresses the M2 muscarinic receptor (chrm2a) in the sinoatrial region, and Axin1 overexpression reduces chrm2a expression, indicating Wnt/\u03b2-catenin signaling acts at the receptor level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C58-C60 address the mechanism of autonomic control. The absence of neural innervation is demonstrated by immunohistochemistry (Figure 6\u2014figure supplement 2, C55), chrm2a expression is shown by in situ hybridization (Figure 6\u2014figure supplement 3A-B, C58), and reduction after Axin1 overexpression is documented (Figure 6\u2014figure supplement 3C, C59). The inference about receptor-level regulation (C60) is reasonable but described as 'slight reduction,' suggesting the effect may be modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C87",
+      "C88",
+      "C92"
+    ],
+    "result": "The authors propose a model where Isl1 has a central role in pacemaker cell differentiation and activates Wnt/\u03b2-catenin signaling, which has a more specific downstream role in establishing parasympathetic control of heart rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C87-C88, C92 describe the proposed mechanistic model (Figure 6G). The model integrates multiple lines of evidence: Isl1 requirement for Wnt activation (C45), Wnt's role in parasympathetic control (C54), and the temporal requirements (C48, C86). While the model is largely supported by the data, some aspects (particularly the distinction between Isl1's role in differentiation vs. Wnt's role in function) involve inference beyond the direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors hypothesize that Isl1 regulates factors essential for rhythmic membrane depolarizations, and that in isl1 mutants, the heart initially beats at low frequency due to spontaneous cardiomyocyte depolarization but stops when cardiomyocytes mature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 are explicitly stated as hypotheses and speculation to explain the isl1 mutant phenotype. While the reasoning is logical and consistent with the observed phenotypes (citing de Pater et al., 2009; Tessadori et al., 2012), these claims lack direct experimental support in the current manuscript. They represent a plausible model but require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The tomo-seq approach, which sections the entire heart at 10 \u03bcm resolution, likely enabled identification of more differentially expressed genes in rare cell types compared to previous murine heart transcriptome maps that used microdissection with single-cell RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C101-C103 compare the tomo-seq approach to previous studies. The technical description is accurate (C95), and the comparison to murine studies (C101-C103, citing DeLaughter et al., 2016; Li et al., 2016) is fair. The inference about advantages for rare cell types (C96, C103) is reasonable given the comprehensive sampling, though direct quantitative comparison is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "A limitation of the tomo-seq transcriptome map is that gene expression information is not cell-type specific, which can be resolved by additional in situ hybridizations or combining tomo-seq with single-cell mRNA sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 acknowledges an important limitation of the approach. This is an accurate assessment\u2014tomo-seq provides spatial but not cellular resolution. The suggested solutions (in situ hybridization, which the authors performed for validation, or combining with single-cell sequencing) are appropriate. This honest limitation does not diminish the value of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Wnt/\u03b2-catenin signaling plays different roles in the AV canal versus sinoatrial region: in the AV canal it regulates bmp4 and tbx2 expression independent of Isl1, while in the sinoatrial region it requires Isl1 for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 describe tissue-specific regulation of Wnt signaling. The differential regulation is supported by: (1) maintained Wnt activity in AV canal of isl1 mutants (C44), (2) absence of Isl1 expression in AV canal (C84, citing Hami et al., 2011; Tessadori et al., 2012), and (3) known Wnt regulation of bmp4/tbx2 in AV canal (C81, citing Verhoeven et al., 2011) but not in sinoatrial region (C82). The conclusion (C85) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Wnt/\u03b2-catenin signaling activity is required between 36 hpf and 52 hpf to regulate heart rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 describes the temporal requirement for Wnt signaling, demonstrated by time-course experiments with Axin1 induction (Figure 6D). The experimental design with multiple time points and measurement at a fixed endpoint (3 dpf) is appropriate. The temporal window corresponds to when TCF:mCherry reports active Wnt signaling in pacemaker cells, providing internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The spatially resolved transcriptome map provides opportunities to uncover novel mechanisms of cardiac development, and the identified Wnt-dependent mechanism for autonomic control could benefit efforts to create biological pacemakers, which currently lack parasympathetic control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 discuss the broader significance and potential applications. The value of the transcriptome map (C100) is demonstrated by the novel findings in the paper. The statement about current biological pacemakers lacking parasympathetic control (C99) is supported by citation (Protze et al., 2017). The potential application (C98) is reasonable speculation based on the findings, though it remains to be validated in biological pacemaker systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C40",
+      "C49",
+      "C50",
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C93",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The manuscript provides extensive background knowledge about zebrafish cardiac development, pacemaker cells, Wnt signaling, autonomic control, and the tomo-seq technique, citing appropriate literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C28-C32, C39-C40, C49-C50, C56-C57, C62-C80, C93, C104-C106 represent background knowledge and literature citations. These claims are well-supported by appropriate references and represent established knowledge in the field. They provide necessary context for the experimental work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

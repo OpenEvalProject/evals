@@ -1,0 +1,529 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C72",
+      "C79",
+      "C88",
+      "C94",
+      "C111",
+      "C180"
+    ],
+    "result": "The authors developed a theoretical framework that characterizes rank orders implying higher order epistasis using Dyck words, applicable to any gene interactions measured by linear forms. For two-locus systems, two-thirds of rank orders imply epistasis; for three-locus systems, 40% of rank orders imply three-way epistasis. The approach extends to partial orders and fitness graphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C72, C79, C88, C94, C111, and C180 collectively establish a complete theoretical characterization. The Dyck word criterion (C111) provides a computationally efficient test, and the enumeration results (C96, C97, C184) are mathematically derived. The theoretical framework is rigorously developed with proofs in the Materials and methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C82",
+      "C138",
+      "C143",
+      "C152",
+      "C154",
+      "C156",
+      "C161",
+      "C166"
+    ],
+    "result": "Higher order epistasis was detected in four diverse biological systems (HIV-1, Plasmodium vivax, Aspergillus niger, TEM \u03b2-lactamase) using only rank order or fitness graph information, without requiring precise fitness measurements. In HIV-1, positive three-way epistasis was found; in malaria, negative three-way epistasis was robust across drug concentrations; TEM-50 and Aspergillus niger fitness graphs implied higher order epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C82, C138, C143, C152, C154, C156, C161, and C166 demonstrate successful application of the method to empirical data. The HIV-1 analysis is particularly well-supported with 288 fitness measurements and validation against conventional statistical tests (C149, C193). The consistency across malaria drug concentrations (C157) strengthens the robustness claim. However, some systems have limited replication (e.g., Aspergillus niger with two-fold replication, C165).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "For biallelic systems, the fraction of rank orders and fitness graphs that imply epistasis was quantified: two-locus systems have 16/24 (67%) rank orders implying epistasis; three-locus systems have 40% of rank orders and 37% of fitness graphs implying higher order epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C184-C186 provide specific enumeration results that follow from the theoretical framework. These are combinatorial calculations verified computationally and mathematically. The fractions are correctly derived from Catalan numbers and Dyck word theory (Proposition 1, Corollary 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C104"
+    ],
+    "result": "Partial orders imply epistasis when all their total extensions (rank orders) imply epistasis. This principle applies to fitness graphs as a special case of partial orders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C101, and C104 establish a logical principle for extending results from rank orders to partial orders. This is a straightforward mathematical consequence: if all possible completions of a partial order have a property, the partial order itself has that property. The principle is correctly applied throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C132",
+      "C188",
+      "C210",
+      "C211"
+    ],
+    "result": "The rank order approach applies to diverse types of gene interactions measured by linear forms, including interaction coordinates, Walsh coefficients, circuits, Fourier coefficients, and measures of conditional and marginal epistasis. Rank orders can determine the sign of these interactions, establishing signed variants analogous to sign epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C127, C132, C188, C210, and C211 establish the generality of the approach. Theorem 3 proves that the method applies to any linear form with coefficients summing to zero (additive dependence relations). The specific fractions for different interaction types are derived (Corollary 4, 6). This generality is a key theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C149",
+      "C193"
+    ],
+    "result": "In the HIV-1 analysis, rank order methods detected about half of the over twenty interactions identified by conventional statistical approaches, while requiring much less information (rank orders vs. replicate fitness measurements).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149 and C193 compare the rank order method to conventional approaches. Table 2 shows that 11 of 20 circuit interactions were detected by rank orders and confirmed by Wilcoxon tests. The comparison is fair and demonstrates both the power and limitations of the method. The claim of requiring 'much less information' is justified since rank orders need only ordinal comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C172"
+    ],
+    "result": "Higher order epistasis correlates with more peaks and other features leading to complex evolutionary dynamics in three-locus fitness graphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C172 is supported by systematic analysis described in the Materials and methods (Section Graph theoretical aspects). The manuscript reports that graphs implying higher order epistasis have on average 1.8 sinks vs. 1.6 for all graphs, though this difference is modest. The correlation is demonstrated but the effect size is relatively small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The computational complexity of the algorithms is linear in the number of genotypes, with the most demanding task being reading the rank order from disk, and run time proportional to the number of non-zero coefficients in the linear form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136 and C137 describe computational properties. The linear complexity follows from the Dyck word test, which requires a single pass through the rank order. This is a straightforward consequence of the theoretical framework and is correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "For two-locus fitness graphs where genotype 00 has lowest fitness, graphs (b), (c), and (d) in Figure 3 imply epistasis, whereas graph (a) is compatible with additive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is directly demonstrated in Figure 3 and follows from the theoretical framework. Graph (a) has all arrows pointing up (toward higher fitness), which is compatible with additive fitness. The other graphs have arrows that violate this pattern, implying epistasis. This is a clear illustration of the theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C194",
+      "C195"
+    ],
+    "result": "The method can guide experimental design by suggesting which genotype comparisons would be most informative for detecting specific interactions, particularly useful for iterative fitness experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C194 and C195 describe a potential application to experimental design. While the logic is sound (the method can identify which comparisons are critical), this application is not demonstrated with empirical examples. The HIV-1 analysis suggests further experiments (comparing genotypes 000 and 100) but does not show the iterative process in action. This remains a plausible but unvalidated application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C203",
+      "C207"
+    ],
+    "result": "The methods may help detect higher order interactions in high-dimensional systems like GWAS, particularly when quantitative phenotype data is difficult to obtain but rank order information is more accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C203 and C207 propose applications to GWAS and other high-dimensional systems. While the theoretical framework could apply, no empirical validation in such systems is provided. The challenges of GWAS (high dimensionality, missing heritability) are acknowledged, but whether the method scales effectively or provides practical advantages in this context is speculative. The fraction of rank orders implying epistasis decreases with n, which may limit applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C182",
+      "C183"
+    ],
+    "result": "Theoretical results for handling large systems and a complete characterization of fitness graphs implying higher order epistasis would be desirable due to increasing computational complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C182 and C183 identify open problems and future directions. These are acknowledged limitations rather than results. The manuscript correctly notes that while algorithms are implemented for general partial orders, theoretical characterizations (especially for fitness graphs) remain incomplete. This is an honest assessment of the current state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C84"
+    ],
+    "result": "The manuscript establishes the biological and practical context: fitness is central to evolutionary biology but difficult to measure completely; epistasis is abundant; fitness is assumed additive in the absence of interactions; and various practical limitations motivate the need for methods that work with incomplete data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C16, C18-C22, and C84 establish background knowledge and assumptions. These are well-established facts in evolutionary biology and are appropriately cited or represent standard assumptions in the field. The motivation for the work is clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Pairwise fitness comparison data arise frequently in practice from various sources: competition experiments, summarized fitness measurements, fitness proxies, observational data from new environments, population frequencies, and computational inference. Such data can be represented as partial orders of genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C65 describe the types of data the method addresses and how they arise in practice. These descriptions are accurate and well-supported by citations (e.g., C57, C62). The mathematical representation as partial orders (C63) is standard in order theory. This establishes the practical relevance of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "The main advantage of the tools is that they can reveal gene interactions from types of data frequently generated in empirical studies (rank orders, fitness graphs, partial orders), addressing practical limitations in measuring fitness. The approach has potential for interpreting empirical data and relating higher order interactions to evolutionary dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C179 and C224-C226 summarize the utility and advantages of the methods. These are supported by the theoretical framework and empirical applications. The practical advantages are demonstrated through the HIV-1, malaria, TEM-lactamase, and Aspergillus niger analyses. The potential for relating interactions to evolutionary dynamics is partially demonstrated (C172) but remains an area for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "For bacterial populations under drug exposure, antimicrobial resistance is the dominating survival factor, making degree of resistance a good fitness proxy. However, epistasis in proxy data does not generally imply epistasis in the fitness landscape itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 discuss fitness proxies. C23 and C24 are reasonable biological assumptions about bacterial populations under drug selection. C25 is an important caveat supported by citation (Gong et al., 2013) and logical reasoning about non-linear transformations. This justifies the focus on rank orders, which may be preserved even when linearity is not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Epistatic interactions have been measured experimentally in various systems (E. coli, HIV-1, other viruses) using different approaches (standing variation, spontaneous mutations, site-directed mutagenesis, competition experiments). However, little is known about learning higher order interactions from fitness comparison data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 review prior work on measuring epistasis and identify a gap in knowledge. The citations to empirical studies (C26-C28, C32) are appropriate. The identification of the knowledge gap (C35) is accurate and motivates the current work. This provides good context for the contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The number of possible interactions grows rapidly with the number of loci, making exhaustive study feasible only for small systems. At human genome scale, studying all pairwise interactions would require hundreds of millions of experiments, while in yeast all pairwise and some three-way interactions have been measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe the combinatorial challenge of studying epistasis. The calculation for human genome scale (C37) is reasonable given the number of gene pairs. The contrast with yeast (C38, citing Costanzo et al., 2010) illustrates the practical limits. This motivates methods that work with incomplete data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Historically, higher order interactions were believed insignificant, but recent empirical findings suggest they are important in many systems. The topic has not been thoroughly investigated, partly due to lack of adequate methodology. Improved tools are necessary for more conclusive answers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 review the historical and current understanding of higher order epistasis. The citations to historical (C42: Crow and Kimura, 1970) and recent work (C44-C46) are appropriate. The identification of methodological gaps (C50) and need for improved tools (C51) motivates the current work. This provides good historical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Connections between rank orders, fitness graphs, and epistasis have been observed repeatedly. Weinreich et al. (2005) introduced sign epistasis, where the sign of a mutation's effect depends on genetic background, implying rank orders incompatible with additive fitness. The current work develops signed variants of other gene interactions, with sign epistasis as a model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71, C73-C75 establish the relationship to prior work on sign epistasis. The citations are appropriate and the connection is clearly articulated. The extension to signed variants of other interactions (C73, C74) is a natural generalization. The theoretical framework builds appropriately on this foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C153",
+      "C165"
+    ],
+    "result": "The empirical studies used different fitness measurement approaches: HIV-1 measured offspring in a single replication cycle (288 measurements with 5-214 replicates per genotype); malaria measured growth rates under pyrimethamine; Aspergillus niger measured linear mycelium growth rate with two-fold replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C153, and C165 describe the fitness measurement methods in the cited studies. These are accurate descriptions of the original studies' methods. The HIV-1 study has substantial replication, while Aspergillus niger has minimal replication (two-fold), which affects the robustness of conclusions for that system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C157",
+      "C162",
+      "C163"
+    ],
+    "result": "The consistency of negative three-way epistasis across pyrimethamine concentrations in malaria shows robustness. For TEM-lactamase, only FEP Cefepime (1 of 15 antibiotics) showed higher order epistasis, suggesting the epistatic fitness advantage of TEM-50 makes triple mutant populations more prone to resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157, C162, and C163 interpret the empirical findings. The consistency across drug concentrations (C157) does support robustness. The specificity to one antibiotic (C162) is an interesting finding. However, the interpretation about resistance evolution (C163) is somewhat speculative, as it depends on population dynamics not directly studied. The inference is reasonable but not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Additive fitness landscapes are single-peaked, while epistasis can create multiple peaks, potentially making evolutionary processes less predictable depending on factors like population size and mutation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C171 connect epistasis to evolutionary dynamics. C169 is a known property of additive landscapes. C170 and C171 are reasonable inferences about evolutionary dynamics, though they are somewhat general statements. The connection is illustrated with the Aspergillus niger example (four peaks), but detailed evolutionary modeling is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "Rank order-induced gene interactions can be regarded as analogues to sign epistasis. Further investigation has potential to relate global properties (peaks, trajectories) to local properties (fitness graphs), similar to results for sign epistasis. Sign epistasis is useful because it can be identified from two-locus subsystems only; some signed variants of other interactions are also local.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C220 discuss theoretical perspectives and future directions. The analogy to sign epistasis (C209) is appropriate. The potential to relate global and local properties (C212) is plausible given prior work on sign epistasis (cited). The locality of some signed interactions (C218) is a finding from the theoretical analysis. However, some claims (C219, C220) are speculative about future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C221",
+      "C223"
+    ],
+    "result": "Although applied only to fitness in this manuscript, the method can analyze any continuous phenotype of interest, such as drug resistance phenotype itself rather than as a fitness proxy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C221 and C223 describe the generality of the approach beyond fitness. This is a straightforward extension since the mathematical framework depends only on having an orderable phenotype, not specifically fitness. However, this generalization is not empirically demonstrated in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "Higher order interactions are particularly difficult to detect in high-dimensional systems like GWAS. Most diseases are polygenic, and accounting for genetic interactions may explain missing heritability. Several methods exist for detecting pairwise interactions in GWAS, but little is known about higher order interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C202 discuss the GWAS context. These are accurate statements about challenges in GWAS and the potential importance of epistasis for understanding heritability. The citation to Wei et al. (2014) for pairwise interaction methods is appropriate. This provides context for potential applications, though actual application to GWAS data is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C5",
+      "C124",
+      "C125",
+      "C204"
+    ],
+    "result": "The theory applies to all common types of gene interactions, and rank order approaches have capacity to reveal finer interactions beyond single quantities. The approach is flexible regarding the type of epistatic interaction analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C124, C125, and C204 assert the generality and flexibility of the approach. This is supported by the theoretical framework (Theorem 3) which applies to any linear form. The HIV-1 analysis demonstrates detection of multiple interaction types. The generality is a key strength of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C76",
+      "C78"
+    ],
+    "result": "Rank order arguments have been used for developing antimicrobial treatment strategies. The general case of arbitrary partial fitness orders has not been considered before.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by citations to relevant studies. Claim C78 identifies a gap that the manuscript addresses. These are accurate statements about prior work and the novelty of the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C89",
+      "C102",
+      "C103"
+    ],
+    "result": "One can always extend a partial order to a rank order (total order). Fitness graphs are an important subclass of partial orders where nodes represent genotypes and arrows connect mutational neighbors pointing toward higher fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C102, and C103 state mathematical facts about partial orders and define fitness graphs. C89 is a standard result from order theory. C102 and C103 accurately describe fitness graphs and their importance. These are correct foundational statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Gene interactions play a critical role in evolutionary processes, affecting features like peaks and accessible trajectories. The importance of higher order versus pairwise epistasis remains a central research topic. Progress requires adequate mathematical and statistical approaches in addition to empirical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 provide context about the importance of the research area. These are well-established views in evolutionary biology, supported by appropriate citations (C175). This effectively motivates the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C181"
+    ],
+    "result": "In principle, the approach applies to general partial orders, and algorithms have been implemented accordingly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C181 states that algorithms for general partial orders have been implemented. This is supported by the availability of software (https://github.com/gavruskin/fitlands). However, the manuscript notes that theoretical characterizations for general partial orders remain incomplete (C182), so the implementation is ahead of the theory in this respect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C191"
+    ],
+    "result": "The findings suggest that genetic interactions beyond two-way epistasis shape the fitness landscapes of the analyzed genetic systems and may play an important role in determining their evolutionary trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C191 is a summary interpretation of the empirical findings. It is supported by the detection of higher order epistasis in all four systems analyzed. However, the connection to evolutionary trajectories is somewhat speculative, as detailed evolutionary modeling was not performed. The claim is reasonable but represents an inference beyond what was directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C206"
+    ],
+    "result": "Huggins et al. (2007) explored circuits and their sign patterns for genotype data from the HapMap project in two ENCODE regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C206 cites prior work applying circuit analysis to human genetic data. This is an appropriate citation showing that similar approaches have been considered for GWAS-type data, supporting the potential applicability discussed in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

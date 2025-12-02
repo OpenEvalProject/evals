@@ -1,0 +1,1632 @@
+{
+  "submission": {
+    "id": "a455a7a8-00b9-4fd1-a557-ba89d54673b3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:31:48.529018Z",
+    "updated_at": "2025-12-01T21:31:48.529018Z"
+  },
+  "content": [
+    {
+      "id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "submission_id": "a455a7a8-00b9-4fd1-a557-ba89d54673b3",
+      "content_type": "manuscript",
+      "content_text": "# Mechanism of activation at the selectivity filter of the KcsA K+ channel\n\n## Authors\n\n- Florian T Heer<sup>1</sup>\n- David J Posson<sup>3</sup> ([ORCID: 0000-0002-6491-8238](https://orcid.org/0000-0002-6491-8238))\n- Wojciech Wojtas-Niziurski<sup>1</sup>\n- Crina M Nimigean<sup>3</sup> ([ORCID: 0000-0002-6254-4447](https://orcid.org/0000-0002-6254-4447)) \u2020\n- Simon Bern\u00e8che<sup>1</sup> ([ORCID: 0000-0002-6274-4094](https://orcid.org/0000-0002-6274-4094)) \u2020\n\n### Affiliations\n\n1. SIB Swiss Institute of Bioinformatics University of Basel Basel Switzerland\n2. Biozentrum University of Basel Basel Switzerland\n3. Department of Anesthesiology Weill Cornell Medical College New York United States\n4. Department of Physiology and Biophysics Weill Cornell Medical College New York United States\n5. Department of Biochemistry Weill Cornell Medical College New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPotassium channels are opened by ligands and/or membrane potential. In voltage-gated K+ channels and the prokaryotic KcsA channel, conduction is believed to result from opening of an intracellular constriction that prevents ion entry into the pore. On the other hand, numerous ligand-gated K+ channels lack such gate, suggesting that they may be activated by a change within the selectivity filter, a narrow region at the extracellular side of the pore. Using molecular dynamics simulations and electrophysiology measurements, we show that ligand-induced conformational changes in the KcsA channel removes steric restraints at the selectivity filter, thus resulting in structural fluctuations, reduced K+ affinity, and increased ion permeation. Such activation of the selectivity filter may be a universal gating mechanism within K+ channels. The occlusion of the pore at the level of the intracellular gate appears to be secondary.\n\n## Introduction\n\nIn voltage-gated potassium channels, the opening of an intracellular gate formed by a \u2018bundle-crossing\u2019 of the inner pore-lining helices is hypothesized to allow K ions to flow through the pore, down their electrochemical gradient (Yellen, 1998). A narrow section of the pore located towards the extracellular side of the membrane, called the selectivity filter because it allows the pore to select for K ions, has been proposed to play double duty as an inactivation gate: following a stimulus, the pore opens at the intracellular bundle-crossing and, in the continued presence of the stimulus, the selectivity filter changes its conformation to prevent further flux of K ions. Thus, in voltage-gated\u00a0K+\u00a0channels, the intracellular bundle-crossing of the pore-lining helices is believed to be the activation gate, while the selectivity filter is believed to be the inactivation gate. This gating mechanism is believed to be shared by a subset of K+\u00a0channels such as KcsA and inward rectifier channels (Phillips and Nichols, 2003; Cuello et al., 2010a; Cuello et al., 2010b; Uysal et al., 2011). However, functional experiments examining state-dependent accessibility of pore blockers (Contreras and Holmgren, 2006; Wilkens and Aldrich, 2006; Rapedius et al., 2012; Posson et al., 2013b; Posson et al., 2015) or thiol-modifying agents (Flynn and Zagotta, 2001; Zhou et al., 2011), have shown that in other channels the intracellular pore-lining helices no longer form a bundle crossing that obstructs K+ flux in the closed state, thus strongly implicating the selectivity filter as an activation gate (Flynn and Zagotta, 2001; Proks et al., 2003; Bruening-Wright et al., 2007; Klein et al., 2007; Contreras et al., 2008). This suggests that different K+\u00a0channels with high sequence and structural homology do not share a universal gating mechanism. Here, we challenge this statement based on our findings with KcsA, a structurally characterized model K+\u00a0channel, which was believed to activate by simple opening of the intracellular bundle-crossing gate. We find that this outward movement of the transmembrane helices in KcsA leads to a change in the selectivity filter from closed to conductive during channel activation. We thus propose that the selectivity filter is the main gate in KcsA.\n\nIon permeation through the selectivity filter of K+\u00a0channels has been investigated and described based on KcsA X-ray crystallography data (Morais-Cabral et al., 2001; Zhou et al., 2001) and molecular mechanics simulations (Aqvist and Luzhkov, 2000; Bern\u00e8che and Roux, 2001). The generally accepted model for permeation involves alternating states of the selectivity filter loaded with two or three ions separated by water molecules, low ion desolvation free energy at the filter entryway, and the occurrence of a knock-on transitional state in which two K ions come in close contact (Bern\u00e8che and Roux, 2001). Structures of KcsA are available with the inner helices in different configurations, making KcsA a good model to investigate ion permeation gating (Cuello et al., 2010a; Uysal et al., 2011). In the \u2018closed\u2019 KcsA structure, the inner helices are closed at the bundle crossing gate (Doyle et al., 1998; Zhou et al., 2001), while in the \u2018activated\u2019 KcsA crystal structures, the inner helices are wide open at the bundle crossing (Cuello et al., 2010b). Here, we analyze and compare the mobility of K+\u00a0ions within the selectivity filter in both the \u2018closed\u2019 and \u2018activated\u2019 states of KcsA.\n\n## Results\n\n### Relaxation of the selectivity filter is required for ion permeation\n\nWe performed free energy calculations in order to describe ion permeation through the selectivity filter of the \u2018closed\u2019 KcsA channel, which is thought to be stabilized in a conductive state (pdb entry 1K4C) (Zhou et al., 2001). The plot in Figure 1A shows a projection of the potential of mean force (PMF) as a color-coded energy map that varies as a function of the position of the three K ions along the channel axis. The reduced reaction coordinate Z12 corresponds to the center-of-mass of the two ions on the extra-cellular side, and Z3 to the innermost ion, relative to the center of mass of the selectivity filter. Thus, one can read directly from the plot the relative free energy of the filter configuration corresponding to any position of the three ions. As examples, the molecular structures of the key ion occupancy states corresponding to well and saddle points along the permeation pathway are illustrated. The PMF calculation, which was initiated with K ions in sites S0-S2-S4 separated by water molecules in S1 and S3, shows deep free energy wells of at least 6 kcal/mol, indicating high K+ binding affinity (Figure 1A). In disagreement with the assumption of a conducting filter, these calculations suggest that ion permeation is rather impeded. Our result did not depend on the initial ion configuration, as a PMF calculation started with K ions in sites S1-S3 and Cav (cavity) with water molecules in S2 and S4, reveals similar free energy wells about 7 kcal/mol deep (Figure 1\u2014figure supplement 1). Unlike the first PMF, this one shows the formation of a knock-on state achieved via the loss of the water molecule between the 2nd and 3rd ions. Similar occupancy states were observed by other groups who proposed mechanisms where ions in the filter are most often not separated by water molecules during permeation, the higher ion density resulting in greater ionic repulsion and current (Furini and Domene, 2009; K\u00f6pfer et al., 2014). However, comparison of the PMFs in Figure 1A and Figure 1\u2014figure supplement 1 shows that the loss of a water molecule did not significantly reduce the free energy barriers in our calculations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig1-v2.jpg)\n\n**Figure 1.:** (A) In the closed conformation (based on structure 1K4C), ions are tightly bound to the selectivity filter in states S1-S3-S5 or S0-S2-S4 with little ion movement due to high free energy barriers\u00a0>\u00a06 kcal/mol (B) In the open conformation (based on structure 3F5W), ion diffusion is possible due to low free energy barriers of 2\u20133 kcal/mol. A knock-on transition state (S1\u2013S3\u2013S4) is observed (identified by\u00a0(\u2217)). The reaction coordinate Z12 corresponds to the center-of-mass of the two outermost ions, and Z3 to the lower ion. Ion positions are defined relative to the center-of-mass of the backbone atoms of the selectivity filter core residues (Thr75-Val76-Gly77-Tyr78). Molecular structures illustrate two of the four channel subunits and for the key states, K ions and water molecules (green and red/white spheres, respectively) are shown with the selectivity filter backbone of residues Thr74 to Gly79.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** When an ion moves from the cavity to the S4 binding site, no water molecule is seen between this ion and the one in S3. The S4 binding site seems to be too small in volume and not flexible enough to hold both an ion and a water molecule, which is observed in the open structure.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) A network of water molecules found around the permeation pore stabilizes the collapsed, inactivated state of the selectivity filter. Water molecules bridge the subunits at the level of residues Val76 and Gly77. Removing, in all subunits, the water molecules indicated by the black arrows allow for the reorientation of the Val76/Gly77 amide plane. The canonical form of the selectivity filter is then spontaneously retrieved, as shown in (B). This construct was used for the calculation of the PMF presented in Figure 1B. For clarity, only three of the four subunits are shown. (C) A superimposition of the X-ray structure in the closed state (pdb entry 1K4C) and representative conformations taken from simulations shows that the selectivity filter deviated only slightly from the canonical structure. Yellow, closed structure (pdb entry 1K4C); orange, simulation of the closed structure; cyan and dark blue, simulation of the open structure; red, simulation of the closed structure using the CHARMM22 force field. The backbone atoms of residues 75 to 78 are shown.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The free energy map on the left is identical to the one presented in Figure 1B and describes the recruitment by the selectivity filter of an ion coming from the cavity. The map on the right describes the release of an ion from the selectivity filter to the external bulk. The reaction coordinates for this second PMF are Z1, the position along the channel axis of the outermost ion, and Z23, the position of the center-of-mass of the lower two ions, both in reference to the center-of-mass of the selectivity filter (residues 75 to 78). Note that when only two ions remain in the selectivity filter, state S2-S4 is favored. The entrance of a third ion in the cavity allows the transition to the S1-S3 state.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Each standard deviation map is calculated from an ensemble of five PMFs calculated on intervals of 100 ps.\n\nWe sought a different explanation for the slow K+ diffusion. We wondered whether the barriers to permeation we calculated were due to a non-permissive conformation of the KcsA selectivity filter, adopted when the channel\u2019s intracellular activation gate is \u2018closed\u2019. To explore this possibility, we next examined the free energy of ion movement through the selectivity filter of a KcsA channel with an \u2018open\u2019 intracellular gate. All KcsA \u2018open\u2019 states documented in the literature allow K+ access through the intracellular entryway but display a selectivity filter in a collapsed state, in agreement with functional data showing that KcsA inactivates within seconds after activation by protons (Chakrapani et al., 2011). Permeation is prohibited through such a collapsed filter conformation as rotation of the amide planes within the collapsed selectivity filter disrupt K ion binding and lead to new, stabilizing interactions of the amide planes with water molecules that intercalate between the subunits (Figure 1\u2014figure supplement 2A). Removal of these water molecules has been shown to facilitate recovery from inactivation and restore the \u2018conductive\u2019 form of the selectivity filter (Ostmeyer et al., 2013).\n\nTwo KcsA structures with an open bundle-crossing and collapsed selectivity filter (pdb entries 3F7V and 3F5W, with intracellular entryway diameters of 23 \u00c5 and 32 \u00c5, respectively) (Cuello et al., 2010b) were chosen for the preparation of simulations of an open KcsA channel. In line with the study of Ostmeyer et al., 2013, we prepared a conductive selectivity filter conformation using a simulation in which the tightly bound water molecules behind the selectivity filter were removed and K ions maintained at the canonical binding sites S1-S3-Cav or S0-S2-S4 using harmonic restraints (see Materials and methods). No direct restraints were applied to the selectivity filter itself in order to minimize the possibility of introducing artifactual structural changes in the channel. This procedure led to a selectivity filter nearly identical in structure with that of the closed state KcsA (Figure 1\u2014figure supplement 2B). The PMF calculation describing ion movement within the selectivity filter of the open state KcsA, based on the 3F5W structure and initiated with ions in sites S0-S2-S4, reveals small free energy barriers of 2 to 3 kcal/mol, conducive to ion permeation (Figure 1B). A PMF describing a complete permeation event (the entrance of a K ion on one side and the release of a K ion from the other side) is shown in Figure 1\u2014figure supplement 3. Compared to the above simulations using the closed KcsA structure (Figure 1A), these results indicate that a dramatic increase in K ion conductance occurs within the selectivity filter after the channel has switched from a conformation with the intracellular gate closed to one where it is open.\n\nIon permeation in the open state appears to be favored by increased fluctuations and slight enlargement of the selectivity filter. The histogram in Figure 2A, extracted from 20-ns long simulations of the open and closed states, shows that following the opening of the intracellular gate the selectivity filter adopts conformations that are up to 1 \u00c5 wider in diameter. This slight widening of the selectivity filter allows for a knock-on transition state in which two K ions accompanied by a water molecule (as opposed to one K+ and one water) occupy the S3 and S4 binding sites (state identified by (\u2217) in Figure 1B). The knock-on state is not strictly required for permeation and an alternative pathway, referred to as vacancy-diffusion, is also accessible (Figure 1B, dashed arrow). The vacancy-diffusion pathway involves that ions occupying the selectivity filter move first, leaving a vacant site that is filled by an incoming ion (Schumaker and MacKinnon, 1990; Bern\u00e8che and Roux, 2001).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig2-v2.jpg)\n\n**Figure 2.:** (A) The histogram shows the inter-subunit, adjacent (1) and opposite (2), distances between the C\u03b1 atoms of residues 75 to 78. In the open state of the channel (two independent simulations shown in blue and pink), the selectivity filter can reach conformations that are wider by up to 1 \u00c5 in comparison to the closed state (red and green lines). Simulations of the closed channel using the CHARMM22 force field resulted in broader distance distributions (dashed lines) than those obtained with CHARMM36 force field in both the closed and open states. (B) The inter-subunit distances between the center-of-mass of the C\u03b1 atoms of the upper pore helix (residues 62 to 65) show little changes between the closed and open states of the channel. By contrast, the distances increase by up to 1 \u00c5 at the level of the lower pore helix (residues 70 to 73). The closed channel with the CHARMM22 force field also displays longer distances at the level of the lower pore helix. Bottom and side views of the selectivity filter and the pore helix (PH) are shown with the upper and lower pore helix segments colored in blue and red, respectively. K ions are shown in green. (C) The histogram shows that the inter-subunit distances between the C\u03b1 atoms of the L40 residues, increase by about 1 \u00c5 upon opening of the intracellular gate. The CHARMM22 force field has no impact on the L40 distances in the closed channel. For both the open and closed states, two independent 20-ns long simulations were analyzed. The CHARMM22 simulation data were taken from Bern\u00e8che and Roux (2001).\n\nInterestingly, in a previous simulation work, permeation via both the knock-on and vacancy-diffusion pathways was observed despite the fact that those calculations were performed using a structure of KcsA in which the intracellular gate is closed (Bern\u00e8che and Roux, 2001). In those simulations, the fluctuations of the selectivity filter required for ion permeation were originating from the intrinsic flexibility of the protein main chain, which was overestimated by CHARMM22, a previous generation of the CHARMM force field (see section \u2018Force field and ion permeation\u2019 in Materials and methods). For comparison, the distance distribution in the selectivity filter of the closed state channel is also plotted for a simulation using the CHARMM22 force field (Figure 2A, dashed line). The plot shows fluctuations similar to those observed in the open channel using the current CHARMM36 force field. This new generation of force field notably contains a correction term for backbone dihedral angles developed on the basis of X-ray crystallographic data and quantum mechanical calculations of the protein backbone conformational energy (Mackerell et al., 2004; Best et al., 2012). The improved force field allows us to better understand how the fluctuations of the selectivity filter are actually controlled by allosteric interactions involving the transmembrane and pore helices.\n\nDeparting from the permeation mechanism described here where three ions, accompanied by waters, permeate the selectivity filter, K\u00f6pfer et al., 2014\u00a0suggested a hard knock-on mechanism in which ion permeation arises from the entrance of a fourth ion, excluding at the same time water molecules from the selectivity filter. The discrepancy between the two proposed permeation mechanisms is in part due to differences in the force field parameters defining the K+-carbonyl interaction, which result in much stronger ion binding affinity to the selectivity filter in the study by K\u00f6pfer et al. (see section \u2018Force field and ion permeation\u2019 in Materials and methods). However, it is important to consider that, as shown here, the ion binding affinity is essentially determined by the functional state of the selectivity filter. Simulations performed by Jensen et al. (2013) suggest that the activated state of the channel, which has the lowest ion binding affinity, is not susceptible to the effect of ion parameters. Their simulations of the Kv1.2/2.1 chimeric channel have shown that the ion force field has little influence on the permeation mechanism since parameters that yield different magnitudes of K+-carbonyl interaction still sustained similar mechanisms involving alternating ions and water molecules (Jensen et al., 2013). It remains unclear why permeation in the open KcsA channel appears to be susceptible to the ion force field while permeation in the Kv1.2/2.1 chimera is not (Jensen et al., 2013; K\u00f6pfer et al., 2014).\n\n### The outer helix is involved in activation gating\n\nAs shown in Figure 2B, the widening of the selectivity filter is associated with movement of the pore helix. Interestingly, only the lower part of the pore helix moves outward upon activation, while the upper part of the pore helix remains mostly unchanged. The lower pore helix segment is in direct contact with the outer transmembrane helix (TM1) at the level of residue L40 (Figure 3). The side chain of this leucine is within van der Waals distance from the side chains of Ser69 and Val70 at the bottom of the pore helix. The simulations reveal that the distances between the L40 alpha carbon (C\u03b1) atoms of opposing subunits increases by about 1 \u00c5 as the TM1s move outward upon opening of the intracellular gate (Figure 2C). It is this outward movement of TM1 at the level of L40 that gives the pore helix and the selectivity filter the required room to expand at the base and become conductive. This mechanism predicts that reducing the volume of the residue at position 40 by mutation to a smaller amino acid would similarly provide more space for the pore helix and selectivity filter to expand, and would make it easier for the filter to open and become conductive. Such a mutation would thus favor permeation by reducing the coupling between channel activation and selectivity filter opening. To test this hypothesis, we performed electrophysiological analysis of the L40A KcsA channel mutant.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig3-v2.jpg)\n\n**Figure 3.:** (A) vdW interactions of the individual residues of the TM1 and TM2 helices with the pore helix.\u00a0Residue Leu40 from TM1 forms the strongest interactions. Interactions involving Ser44 are also important, but this residue forms an intra-helix H-bond with the backbone of Leu40 and thus was not mutated. The interaction of Leu40 with the pore helix is along an axis directed toward the permeation pore, and can thus potentially impact on the pore size. Residues from TM2 also interact with the pore helix, but these interactions are not directed toward the pore, and thus were not further investigated. (B) Leu40 interacts with the bottom of the pore helix, mainly at the level of residues Ser69, and Val70.\n\nKcsA is a pH-dependent channel that activates upon binding of protons to at least two pH-sensor residues, H25 and E118 (Figure 4A) (Thompson et al., 2008; Posson et al., 2013a). We performed single channel recording in lipid bilayers to evaluate the effect of the L40A mutation on the pH-dependent gating of KcsA. For these experiments, we employed a routinely-used KcsA variant where inactivation was removed via the previously described E71A mutation (Cordero-Morales et al., 2006; Thompson et al., 2008; Posson et al., 2013a). Figure 4B shows that the L40A mutant is fully activated by protons, similar to the E71A control channel (open probability increases from 0 to 1 upon pH change), and with a similar pH at half activation (pH0.5=5.2, see Table 1). However, the mutant displayed a shallower proton dose response compared with the control channel, indicating a markedly decreased sensitivity to protons (Figure 4B), characterized by a lower Hill coefficient (Hill coefficient is\u00a0~2 for L40A compared to\u00a0~4.5 for the control channel, see Equation 1, Table 1). Importantly, the L40A mutant channel opened at a much lower proton concentration than the control channel (pH 6, Figure 4B\u2013C) and displayed intermediate activity over a range of proton concentrations, unlike the very steep H+-dependent activation displayed by the control channel (Figure 4C), suggestive of a channel whose opening is less strongly coupled to proton binding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig4-v2.jpg)\n\n**Figure 4.:** (A) The pH sensor residues, H25 and E118, are found on the intracellular side of the channel. Residues H25 and L40 both lie on the transmembrane helix TM1. (B) KcsA L40A open probability (Po) vs. pH from single channel recording (blue symbols) was fit to a model for pH-dependent gating (Equation 1, blue line). Data are the mean from 4 or 5 bilayers\u00a0\u00b1\u00a0sem. Previously reported dose response curves (Thompson et al., 2008) for the E71A control channel (dashed line), pH sensor mutants H25R (red) and E118A (green) are provided for comparison (Table 1). (C) Representative single channel traces at pH values 4 to 6 and 100 mV for the E71A (Control, left), E71A/L40A (center), and E71A/H25R (right) channels, illustrating that the L40A mutant, similar to H25R, opens at lower [H+] (pH 6 and 5.5) compared to E71A control. Traces were filtered offline (100 Hz) for display. The identity of the gates that open and close during the single-channel recordings is unknown.\n\n**Table 1.**\n Summary of Hill and pH-gating model fits for the KcsA mutants indicated.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutant*</th>\n      <th colspan=\"2\">Hill fit</th>\n      <th colspan=\"2\">pH sensor 1 (H25)</th>\n      <th colspan=\"2\">pH sensor 2 (E118)</th>\n      <th>Intrinsic gating</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>pH1/2 (\u00b1)</th>\n      <th>nH (\u00b1)</th>\n      <th>pKa1closed (\u00b1)</th>\n      <th>pKa1open (\u00b1)</th>\n      <th>pKa2closed (\u00b1)</th>\n      <th>pKa2open (\u00b1)</th>\n      <th>Lo (\u00b1)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E71A\u2020 control channel</td>\n      <td>5.3 (0.01)</td>\n      <td>4.4 (0.1)</td>\n      <td>4.8 (N/A)\u2021</td>\n      <td>7.6</td>\n      <td>5.0</td>\n      <td>6.2</td>\n      <td>2.5E-12 (0.3E-12)</td>\n    </tr>\n    <tr>\n      <td>L40A</td>\n      <td>5.2 (0.02)</td>\n      <td>1.9 (0.2)</td>\n      <td>7.6\u00a7</td>\n      <td>7.6</td>\n      <td>5.0</td>\n      <td>6.2</td>\n      <td>6.2E-4 (0.7E-4)</td>\n    </tr>\n    <tr>\n      <td>H25R\u2020</td>\n      <td>5.3 (0.02)</td>\n      <td>1.9 (0.2)</td>\n      <td>-</td>\n      <td>-</td>\n      <td>5.0 (0.1)</td>\n      <td>6.2 (0.1)</td>\n      <td>7E-4 (4E-4)</td>\n    </tr>\n    <tr>\n      <td>E118A\u2020</td>\n      <td>5.5 (0.03)</td>\n      <td>4.5 (2.8)</td>\n      <td>4.8</td>\n      <td>7.6</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1.1E-8 (0.1E-8)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*All mutants on the background of E71A.\u2020Data and fits from Refs. (Thompson et al., 2008) and (Posson et al., 2013a).\u2021Not applicable; no error given when the parameters were constrained (see Materials and methods).\u00a7The data were fit by abolishing the H25 pKa state-dependence, similar to the H25R mutant._\n\nIn order to interpret the effects of the L40A mutant on KcsA gating, we analyzed the pH-dependence with a model we previously used to characterize the effects of\u00a0mutations of channel residues directly involved in proton-sensing (Posson et al., 2013a). The gating behavior displayed by L40A was identical to that of H25R, a mutant designed to mimic constitutive protonation at histidine 25, the KcsA proton sensor where proton binding is most strongly coupled to channel opening (Figure 4B\u2013C) (Posson et al., 2013a). First, the mutation of H25 to arginine removed the proton binding sites at H25 that strongly and cooperatively contributed to the opening of the control channel, yielding a shallower dose-response for the mutant channel (Figure 4B). Second, the arginine substitution mimicked histidine protonation, which dramatically increased the intrinsic gating equilibrium ($L_{o}$) towards the open state (Equation 2, Table 1). Surprisingly, the L40A mutation displays a proton dose-response that is as shallow as H25R (Figure 4B), suggesting that the potency of the H25 sensor is diminished in this mutant by as much as removing the sensor altogether. In addition, the L40A channel begins to open at lower proton doses in much the same way as H25R (Figure 4C). We thus propose that the L40A mutation similarly favors channel opening both by increasing the intrinsic gating ($L_{o}$) compared to the E71A control and by altering the state-dependence of H25 protonation (see Materials and methods and Table 1). Both changes are necessary to fit the data and constitute the most parsimonious model to fit the gating behavior of the L40A mutant. We propose that these effects result from partial uncoupling of the bottom of the pore helix from the TM1 helix and from the protonation state of H25. A residue at a position equivalent to KcsA L40 was previously found to control permeation and open probability in another K channel, a Ca2+-activated K channel (KCa3.1) that gates at the selectivity filter (Garneau et al., 2014), suggesting a common mechanism.\n\nTo verify the impact of the L40A mutation on K+ permeation, we performed simulations of this mutant using the closed conformation (pdb entry 1K4C), as well as the 3F7V structure in which the main gate is open less widely than in 3F5W (Cuello et al., 2010b). For consistency with the electrophysiology experiments described above, these simulations used the E71A inactivation-removed mutant as control. The free energy calculations presented in Figure 5 combine data from independent automated umbrella sampling simulations initiated in different ion occupancy states, as detailed in Figure 5\u2014figure supplement 1. The PMFs of both Figure 5 and Figure 5\u2014figure supplement 1 lead to the following observations. In the closed conformation (1K4C) of the control channel, the state with 3 ions bound to the filter (S0-S2-S4) is overly stabilized in comparison to states with only 2 ions bound to the filter (S1-S3-Cav and S2-S4-Cav), with a free energy difference of about 11 kcal/mol. Free energy barriers of 6 to 10 kcal/mol are observed between the 2-ion and 3-ion states. The E71A/L40A mutant brings about fluctuations that reduce the ion binding affinity and the relative stability of the 3-ion state. The 2-ion states are stabilized by about 6 kcal/mol, and are thus more accessible. The free energy barriers along the permeation pathway are also reduced to 4\u20135 kcal/mol. In the partially open conformation (3F7V), the control channel shows reduced free energy barriers of about 4 kcal/mol. The L40A mutant further reduces the barriers by 1 to 2 kcal/mol, to 2\u20133 kcal/mol. For comparison, a PMF describing ion permeation in the E71A mutant of the fully open channel (3F5W) shows barriers of 3 kcal/mol (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig5-v2.jpg)\n\n**Figure 5.:** (A) The PMF calculations show that when the intracellular gate is closed (pdb entry 1K4C), ion diffusion is impeded in the control channel (E71A) with a free energy difference between the 3-ion (S0\u2013S2\u2013S4) and the 2-ion (S1-S3-Cav and S2-S4-Cav) states of about 11 kcal/mol, and free energy barriers of up to 9 kcal/mol between these states. The L40A mutation stabilizes the 2-ion states by about 6 kcal/mol and reduces the free energy barriers to 4\u20135 kcal/mol. (B) In the partially activated structure (pdb entry 3F7V), both constructs show reduced free energy barriers of 4 kcal/mol for the control and 2\u20133 kcal/mol for the L40A mutant. Each of the 4 PMFs shown here combines together data from two independent automated umbrella-sampling simulations initiated in states S1-S3-Cav and S0-S2-S4, respectively. Since the statistical error on the PMFs combined in this fashion might not be readily definable, we only present the statistical errors associated with the underlying individual PMFs (Figure 5\u2014figure supplement 1,\u00a04\u00a0and\u00a05). Despite this limitation, the combined PMFs shown here provide a convenient summary of the underlying calculations presented separately in Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The forward transition, from S1-S3-Cav to S0-S2-S4, is plotted on the left. The starting occupancy state is stated in parentheses (S1-S3-Cav) and identified by a star on the plots. On the right is shown the inverse transition, from S0-S2-S4 to S1-S3-Cav. In the case of the closed channel (A), the main impact of the L40A mutation is to make accessible the states in which only two ions are bound to the selectivity filter (states S1-S3-Cav and S2-S4-Cav). The closed structure has such a high ion-binding affinity that it over-stabilizes the state with three ions bound to the filter (S0\u2013S2\u2013S4). The L40A mutation adds fluctuations that reduce the binding affinity and the relative stability of the 3-ion state. In the partially activated channel (B), the main impact of the mutation is to reduce the free energy barrier along the permeation pathway. The free energy maps are presented as in Figure 1, and statistical errors are shown in Figure 5\u2014figure supplements 4 and 5.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The PMF is presented as in Figure 1.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Ion trajectories are shown for a simulation of the E71A/L40A double mutant in the partially activated conformation (pdb entry 3F7V) using a transmembrane voltage of 400 mV and an ion concentration of 800 mM KCl. The observed permeation events involved at most three ions bound to the selectivity filter with intercalated water molecules. K ion positions within the filter (Z coordinate with origin at the selectivity filter center of mass) are indicated in green, water molecules in blue, and the oxygen atoms defining the ion binding sites in red (from bottom to top: Thr75 OH, Thr75 O, Val76 O, Gly77 O, Tyr 78 O). The binding sites are indicated on the right side of the plot.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A, B) The sampling for the forward (initial state: S1-S3-cav) PMFs based on the partially activated structure (pdb entry 3F7V) presented in Figure 5\u2014figure supplement 1 has been split in 100 ps intervals. The PMFs calculated for such intervals are shown for the E71A (A) and E71A/L40A (B) constructs.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Each standard deviation map is calculated from an ensemble of five PMFs calculated on intervals of 100 ps.\n\nA simulation of the E71A/L40A mutant in the partially activated state (3F7V) was performed with an applied transmembrane voltage of 400 mV and an ion concentration of 800 mM KCl. The time-series analysis in Figure 5\u2014figure supplement 3 shows permeation events in which at most three ions are bound to the selectivity filter with accompanying water molecules, in agreement with the above PMFs and with previously proposed permeation models (Bern\u00e8che and Roux, 2001; Morais-Cabral et al., 2001). These results support the idea that the L40A mutation facilitates the activation of the channel by reducing the extent of the required conformational change and associated energy to reach the maximal open probability.\n\n## Discussion\n\nOur work on KcsA revealed a high ion binding affinity state of the selectivity filter that corresponds to a resting (closed) state in which the filter is stabilized, non-conducting but primed for ion conduction, while the intracellular gate is closed. Upon activation, in addition to the large motion of the inner TM2 helix that opens the intracellular gate, the reorientation of the outer TM1 helix releases steric restraints at the selectivity filter allowing ion conduction (Figure 6A). This is in agreement with the observation made by EPR experiments that the conducting state of the KcsA selectivity filter displays larger fluctuations than non-conducting states (Raghuraman et al., 2014). Such changes in the structural dynamics of the selectivity filter through activation could also explain the sub-conductance levels with altered selectivity detected by electrophysiology measurements in Shaker (Chapman et al., 1997; Zheng and Sigworth, 1997; Chapman and VanDongen, 2005). Our work shows how fluctuations at the selectivity filter have direct impact on its conductance and gating properties, and could potentially be affected by other signaling factors, e.g. temperature and membrane tension (Rodr\u00edguez et al., 1998; Clarke et al., 2010; Dong et al., 2015).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25844/elife-25844-fig6-v2.jpg)\n\n**Figure 6.:** (A) The superposition of the open and closed channel illustrates how the movement of the TM1 helices (arrow 1) allows for the displacement of the pore helix and slight expansion of the selectivity filter (arrow 2).\u00a0(B) The selectivity filter is found in three states (closed (resting), open, inactivated) that determine the functional state of the channel. The TM helices transmit to the selectivity filter the activation signal coming from a ligand- or voltage-dependent domain. The crossing of the TM helices on the intra-cellular side of the pore can form a steric barrier, but is not strictly essential to the function of K channels.\n\nThe central role played by the outer TM1 helix in KcsA activation potentially explains why residue H25, found at the intra-cellular end of TM1, was identified as the strongest pH sensor (Posson et al., 2013a). The corresponding helix in voltage-dependent channels is S5, which is directly connected to the voltage-sensor through a linker (S4-S5 linker). This linker is believed to interact directly with the S6 helix to open the channel at the intracellular \u2018bundle crossing\u2019. While S5 was generally thought to play little role in activation gating, it is plausible that the voltage-sensor exerts force on S5 and by doing so regulates the conductance of the selectivity filter through interactions with the pore helix, without necessarily engaging the S6 helix via the S4-S5 linker (Lees-Miller et al., 2009; Garg et al., 2013; Garneau et al., 2014). In support of this hypothesis, previous results by other groups showed that voltage activation can occur without an S4-S5 linker (L\u00f6rinczi et al., 2015) and that the S4-S5 linker in a subset of voltage-dependent channels does not directly engage the S6 helix (e.g. EAG channels (Whicher and MacKinnon, 2016)). This does not exclude that the inner TM helices may form, in KcsA and other channels (such as voltage-gated channels), a second steric barrier at the intracellular end of the pore. This model also fits the behavior of Ca2+-activated K+\u00a0channels, found to ultimately open and close at the selectivity filter, although the gating is accompanied by a large movement of the pore-lining inner helices not unlike that found in voltage-gated channels and KcsA, albeit less obstructive at the intracellular entryway (Posson et al., 2015).\n\nIn conclusion, our work contributes a unified gating mechanism for all K+\u00a0channels. We propose that the selectivity filter can be found in at least three different states that determine the functional states of the channel: a restrictive closed state, a dynamic and slightly expanded open state, and a pinched inactivated state (Figure 6B). Transitions between these functional states are controlled by the channel transmembrane domains that provide distant allosteric interactions between the selectivity filter and disparate regulatory sites such as voltage sensor and ligand binding domains (Panyi and Deutsch, 2006; Clarke et al., 2010; Cuello et al., 2010a; Wylie et al., 2014; Posson et al., 2015). Thus, we propose that the universal gate in K+\u00a0channels is the selectivity filter, whereas the pore-lining helices may undergo large motions that can lead to a secondary closure point at the intracellular bundle-crossing for a subset of K+\u00a0channels.\n\n## Materials and methods\n\n### Molecular simulation systems\n\nThe molecular membrane systems were built based on the X-ray structure of the KcsA channel in its high-[K+] closed conformation (pdb entry 1K4C) (Zhou et al., 2001) and the open inactivated structures (pdb entries 3F7V and 3F5W) (Cuello et al., 2010a). Helical turns were added to the transmembrane helices of the two open structures so that these helices have the same length in all constructs, each subunit containing residues 22 to 124. All residues were assigned their standard protonation state at pH 7, except Glu71, which was protonated. The E71A and L40A mutations were applied to the X-ray structures and a new system was built for each independent case. The systems were assembled using the CHARMM-GUI web-service (Jo et al., 2008) following a protocol developed by Woolf and Roux (Woolf and Roux, 1994; Wu et al., 2014). The protein channel, with its symmetry axis aligned along the Z-axis, was embedded in a lipid bilayer of about 130 dipalmitoylphosphocholine (DPPC) molecules in the case of WT, or dioleoylphosphocholine (DOPC) for E71A constructs. The number of ions in the bulk was adjusted to reproduce an ionic concentration of about 150 mM KCl and to obtain neutral systems, which typically yields a total of 19 cations and 31 anions. The resulting molecular systems each contained about 48,000 atoms.\n\nAll calculations were performed using the CHARMM software version c36 (Brooks et al., 2009). The all-atom potential energy function CHARMM36 (Best et al., 2012) was used for protein and phospholipids, and water molecules were modeled using the TIP3P potential (Jorgensen et al., 1983). The Lennard-Jones (NBFIX) parameters for the K+-carbonyl oxygen pair interactions were refined so that the solvation free energy of potassium in liquid N-methylacetamide (NMA), a model of the main chain of amino acids, is equal to that of potassium in water (Roux and Bern\u00e8che, 2002). The solvation free energy of K+ in liquid amide is not experimentally known, but by comparison with data available for similar organic solvents one would suggest a value of about \u22122 kcal/mol in reference to solvation in water (Marcus et al., 1988). Given the uncertainty on this value and that it is arguably small, it was decided in the context of the free energy calculations published in Bern\u00e8che and Roux (2001) to set the K+ solvation free energy in liquid amide and water equal. For consistency with this previous work, we maintained the same parameters for the current study. Periodic boundary conditions were applied and long-range electrostatic interactions were calculated using the Particle Mesh Ewald algorithm (Essmann et al., 1995). The molecular systems were equilibrated for about 400 ps with decreasing harmonic restraints applied to the protein atoms, the ions and the water molecules localized in the P-loop and the filter. All trajectories were generated with a timestep of 2 fs at constant normal pressure (1 Atm) controlled by an extended Lagrangian algorithm (Feller et al., 1995) and constant temperature (323.25 K) using a Nose-Hoover thermostat (Evans and Holian, 1985). In the simulations of the open E71A constructs, the conformation of the intracellular gate was maintained by a harmonic root-mean-square-deviation (RMSD) restraints (force constant of 10 kcal/mol\u2022\u00c5 with an offset of 0.1 \u00c5) applied to residues 22 to 38 and 100 to 124. Trajectories of 20 ns were produced for each system (some in two replicas), and were used for the distance analyses (Figure 2). For the simulation-illustrating ion permeation (Figure 5\u2014figure supplement 3), the E71A/L40A construct of the partially activated channel (pdb entry 3F7V) was used with an increase of the ion concentration to 800 mM KCl and the application of a transmembrane voltage of 400 mV across the simulation box along the Z-axis.\n\n### Modeling the open activated selectivity filter\n\nThe computational method used to prepare the open state channel is designed to mimic ion-mediated recovery from the inactivated selectivity filter state, as shown in Ostmeyer et al. (2013). Based on the 3F7V and 3F5W open inactivated structures, the collapsed selectivity filter was remodeled in the putative conducting conformation through equilibration runs of 400 ps in which water molecules were removed from the P-loop, and K+ ions were maintained in state S1-S3-Cav or S0-S2-S4 using harmonic restraints of 10 kcal/mol\u2022\u00c5. To accelerate the transition from the collapsed to the conductive conformation, the NBFIX correction to the ion-carbonyl interactions was not applied for this first phase of the equilibration, as in Ostmeyer et al. (2013). The systems were afterward further equilibrated by running simulations using the NBFIX correction to the ion-carbonyl interactions and without any restraint applied to the ions. The molecular systems obtained after 2 ns of simulations were used as initial coordinates for the PMF calculations.\n\n### Potential of mean force calculations\n\nThe 2D potential of mean force (PMF) calculations were performed using the self-learning adaptive umbrella sampling method (Wojtas-Niziurski et al., 2013). Starting from a single initial configuration, this self-learning approach automatically constructs simulation windows following the valleys of lower free energy. PMF calculations were initiated from the occupancy states S1-S3-Cav and S0-S2-S4 as specified in the text. The upper free energy limit for the creation of new windows was set to 12 kcal/mol. The reaction coordinates were defined as the distance along the pore axis (which is aligned with the Z axis) between an ion, or the center-of-mass of two ions, and the center of mass of the selectivity filter backbone (residues 75 to 79). Independent simulations of 600 ps were performed every 0.5 \u00c5 along these reaction coordinates using a biasing harmonic potential with a force constant of 20 kcal/mol\u2022\u00c52 and were unbiased using the weighted histogram analysis method (WHAM) (Kumar et al., 1992) with a grid spacing of 0.1 \u00c5 in both dimensions. The first 100 ps of sampling is considered as equilibration and is not included in the final PMF calculation. For each PMF, the reference free energy value is set to zero at the free energy minimum. The statistical error on the PMF calculations is calculated by subdividing the sampling in slices of 100 ps (Figure 5\u2014figure supplement 4). In a subsequent step, a free energy off-set is attributed to each interval PMF according to a least-square fit to the final PMF considering only the grid points for which the free energy is\u00a0<6 kcal/mol. Using the PMFs of the last five intervals as an ensemble, the standard deviation is calculated at every grid points (Figure 1\u2014figure supplement 4 and Figure 5\u2014figure supplement 5).\n\nThe PMFs presented in Figure 5 were obtained from the combined sampling of two independent automated umbrella-sampling simulations initiated in different ion occupancy states, respectively S1-S3-Cav and S0-S2-S4. The approach is similar to that routinely applied for combining forward- and backward-free energy perturbation simulations using the Bennett Acceptance Ratio (BAR) (Lu et al., 2003).\n\n### Force field and ion permeation\n\nAt odds with the results presented here, PMF calculations presented in Bern\u00e8che and Roux (2001) described diffusion limited ion permeation in the KcsA selectivity filter despite a closed intracellular gate. These free energy simulations were performed based on the 3.2 \u00c5 structure of the closed KcsA channel (pdb entry 1BL8) (Doyle et al., 1998) using CHARMM22, an earlier generation of the CHARMM force field (MacKerell et al., 1998). Since then, correction terms were added to the \u03a6,\u00a0\u03a8\u00a0backbone potential energy function in the CHARMM force field to better reproduce crystallographic data and quantum mechanic calculations (Mackerell et al., 2004). As documented by MacKerell and co-workers, these corrections, which are now included in the CHARMM36 force field (Best et al., 2012), led to a decrease of the backbone RMS fluctuations across all tested proteins (Mackerell et al., 2004). Thus, the CHARMM22 force field was biased toward higher backbone fluctuations, which favored ion permeation in simulations of the closed KcsA channel as reflected by the PMF calculations found in Bern\u00e8che and Roux (2001). The CHARMM36 force field, on the other hand, results in more limited fluctuations of the KcsA selectivity filter that are not sufficient to sustain ion permeation in the closed channel. Repeating the PMF calculation on the 1BL8 structure using the latest force field yielded essentially the same results as those obtained with the 1K4C structure, and thus the differences between those structures are not critical (data not shown). The fluctuations required for ion permeation are recovered when the intracellular gate of the channel opens. The CHARMM22 force field allowed for a description of the ion permeation mechanism in the selectivity filter of K+ channels. The CHARMM36 force field allows us to go further and explain how ion permeation is regulated.\n\nOur findings differ from those of K\u00f6pfer et al. (2014) who proposed a hard knock-on mechanism in which the binding of 4 ions to the selectivity filter is required for permeation to take place in the open KcsA channel, versus 3 ions intercalated with water molecules in our simulations. Although K\u00f6pfer and colleagues also have used the CHARMM36 force field, they have not, unlike us, applied a NBFIX correction to the interaction between K+ and backbone carbonyl oxygen atoms. This lead to a stronger K+-carbonyl interaction in their CHARMM36 simulations compared to ours, with a difference in K+ solvation-free energy in liquid amide of about 8 kcal/mol. For ion permeation to take place, the ion binding affinity to the selectivity filter needs to be compensated by the ion-ion\u00a0electrostatic repulsion. Thus, in the systems of Koepfer et al. (2014)K\u00f6pfer et al., 2014, the intrinsically higher ion-binding affinity requires a higher number of bound ions to promote ion permeation, impeding at the same time the entrance of water molecules into the selectivity filter.\n\n### Protein purification and reconstitution\n\nThe L40A mutation was made in a construct of the non-inactivating (Cordero-Morales et al., 2006) KcsA-E71A pQE60 by QuikChange mutagenesis (Agilent Technologies, Santa Clara, CA) and verified with sequencing. KcsA protein was expressed and purified as described previously (Heginbotham et al., 1999; Thompson et al., 2008; Posson et al., 2013a). Briefly, KcsA protein expression was induced in BL21 (DE3, Invitrogen,\u00a0Carlsbad,\u00a0CA) E. coli cells at 37\u00b0C in Luria-Bertani media with 500 \u03bcM IPTG. Cells were sonicated (Thermo\u00a0Fisher Scientific,\u00a0Waltham,\u00a0MA) in a suspension (100 mM KCl, 50 mM Tris, pH 7.5) and KcsA was extracted with 25 mM n-decyl maltoside (DM, Anatrace,\u00a0Maumee,\u00a0OH) and then purified from the clarified, soluble fraction in 100 mM KCl, 20 mM Tris, and 5 mM DM, pH 7.5 buffer using a Ni2+-affinity column (Novagen,\u00a0Merck,\u00a0Germany) and gel filtration (Superdex 200, GE Healthcare,\u00a0Chicago,\u00a0IL).\n\nKcsA was reconstituted into liposomes using protein to lipid ratios of 0.1\u20132.5 \u03bcg protein per mg of lipid (3:1 POPE: POPG, Avanti Polar Lipids,\u00a0Alabaster,\u00a0AL). Detergent was removed from protein-lipid mixtures using a gel filtration column (G50 fine, GE Healthcare) in buffer (400 mM KCl, 5 mM NMG, 20 mM Tris, pH 7.5). Liposome aliquots were flash-frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\n### Single-channel recording and analysis\n\nKcsA L40A/E71A channels were recorded and analyzed as described previously (Thompson et al., 2008; Posson et al., 2013a). Briefly, channel liposomes were fused to horizontal planar lipid bilayers (3:1 POPE: POPG in decane) and single channel currents were obtained using 70 mM KCl, 30 mM KOH, 10 mM MOPS, 10 mM succinate, and 10 mM Tris, pH adjusted using HCl to pH 7 for the cis (extracellular side) and pH 4\u20136 for the trans (cytoplasmic side). Single channel recordings of the KcsA L40A/E71A mutant established channel activity (conductance and open probability) similar to the previously studied E71A control channel at pH 4. Rare channels where this was not the case were excluded from the analysis. Subsequent perfusion of the cytoplasmic side to higher pH values was used to determine the pH-dependent gating.\n\nBilayers were voltage-clamped using an Axopatch 200B amplifier (Molecular Devices,\u00a0Sunnyvale,\u00a0CA) and current recordings were filtered at 2 kHz using a 4-pole Bessel filter, digitized at 25 kHz using a Digidata 1440A (Molecular Devices), and recorded in Clampex 10. Single channel open probabilities ($P_{o}$) were calculated using Clampfit 10 (Molecular Devices) and Po vs. pH data were fit in Origin (OriginLab,\u00a0Northampton,\u00a0MA) with the Hill equation (Equation 1):\n\n$$\nP_{o}=\\frac{P_{o}^{max}}{1+(\\frac{EC_{50}}{[H^{+}]})^{n_{H}}}=\\frac{P_{o}^{max}}{1+(10^{(pH\u2212pH_{1/2})})^{n_{H}}}\n$$\n\n$P_{o}^{max}$ is the maximal open probability, $EC_{50}$ is the proton concentration of half-activation (also represented by $pH_{1/2}$), $[H^{+}]$ is the proton concentration (also represented by $pH$), and $n_{H}$ is the Hill coefficient.\n\nThe $P_{o}$ vs. $pH$ data were also fit to a two proton-binding sites MWC model (Equation 2) (Posson et al., 2013a):\n\n$$\nP_{o}=\\frac{L_{o}(1+\\frac{[H^{+}]}{K_{a1}^{open}})^{4}(1+\\frac{[H^{+}]}{K_{a2}^{open}})^{4}}{L_{o}(1+\\frac{[H^{+}]}{K_{a1}^{open}})^{4}(1+\\frac{[H^{+}]}{K_{a2}^{open}})^{4}+(1+\\frac{[H^{+}]}{K_{a1}^{closed}})^{4}(1+\\frac{[H^{+}]}{K_{a2}^{closed}})^{4}}=\\frac{L_{o}(1+10^{(pK_{a1}^{open}\u2212pH)})^{4}(1+10^{(pK_{a2}^{open}\u2212pH)})^{4}}{L_{o}(1+10^{(pK_{a1}^{open}\u2212pH)})^{4}(1+10^{(pK_{a2}^{open}\u2212pH)})^{4}+(1+10^{(pK_{a1}^{closed}\u2212pH)})^{4}(1+10^{(pK_{a2}^{closed}\u2212pH)})^{4}}\n$$\n\n$L_{o}$ is the intrinsic gating equilibrium between open and closed in the absence of protons, [H+] is the proton concentration (also represented by $pH$), $K_{a}^{open}andK_{a}^{closed}$ are the acid dissociation constants for a proton sensor in the open and closed states, respectively (also represented by $pK_{a}^{open}andpK_{a}^{closed}$). Equation 2 contains two proton sensors that are labeled with subscripts 1 and 2. For the analysis of L40A/E71A, independent adjustment of $L_{o}$ or pH-sensor $pK_{a}$ values were not sufficient to adequately describe the data. Since the mutant dose response was very similar to that observed in the H25R mutant (Posson et al., 2013a) (Figure 4), we assumed that L40A altered both Lo and $pK_{a}^{closed}$. Using these two free parameters, the best fit resulted in an increased $L_{o}$ value and a loss of the H25 pH-sensor because the $pK_{a}^{closed}$ value climbed to a constrained maximum value equal to $pK_{a}^{open}$. Subsequently constraining $pK_{a}^{closed}$ resulted in a fit for $L_{o}$, the single free parameter. Model parameters for L40A and relevant pH-sensor mutants (Posson et al., 2013a) are summarized in Table 1.\n",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "6eb260aa-4540-449b-90d9-0cb0c552b6ad",
+      "submission_id": "a455a7a8-00b9-4fd1-a557-ba89d54673b3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25844.020](https://doi.org/10.7554/eLife.25844.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mechanism of Activation at the Selectivity Filter of the KcsA K+ Channel\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, Kenton Swartz, is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting manuscript advancing a provocative new idea about the gating mechanism of tetrameric cation channels. Decades of work on various proteins in this family demonstrate that for many members, such as the Shaker Kv channel, the internal pore functions as a gate to regulate ion permeation. In these instances, the selectivity filter in the external pore determines the species of ions that can permeate and functions as an inactivation gate to limit ion permeation as the channel inactivates in the continual presence of an activating stimuli. For some members, such as BK and CNG channels, the internal pore undergoes a conformational change in response to the activating stimuli but seems to not function as a barrier to ion permeation; in these instances, the selectivity filter has been proposed to function as the primary gate. Multiple structures have been solved of the KcsA potassium channel in closed and open states, showing that the internal pore indeed opens in response to protonation and that the selectivity enters what appears to be an inactivated conformation. Previous simulations from this group and others have suggested that the selectivity filter is capable of supporting ion permeation in channels with a closed internal pore. Based on computation investigations of the KcsA potassium channel using improved force fields, the authors now propose that the structure of the selectivity filter is not capable of supporting ion permeation in channels with a closed internal pore, and that opening of the internal pore articulates a subtle structural change in the filter to a conducting state. The idea they advance is that the filter fluctuates between non-conducting closed to conducting open and then to non-conducting inactivated states, and that outward movement of the TM1 helix articulates the closed to open structural change in the filter. They further propose that L40 in TM1 directly interacts with S69 and V70 at the bottom of the pore helix to couple movements of the internal pore with the closed-open change in the filter. When viewed with a perspective of everything that is known about gating of ion access to the pores of different channels in the family of tetrameric cation channels, they advance the idea that it is the selectivity filter that functions as a universal gate in all channels, and although movement of the internal pore is required to open the filter, it need not actually close to prevent ion permeation. The ideas advanced in this manuscript are fascinating and if true would represent a major advance in our understanding of gating in the large and diverse family of tetrameric cation channels. The following are issues that the authors need to address in revision.\n\nEssential revisions:\n\n1) The functional characterization of the L40A mutant needs to be enhanced and more rigorously presented. The authors fit the Po-pH relationship with a specific model wherein Lo increases, from which they conclude that opening is favored. This is not very convincing when one sees kinetics like those shown at pH 5.5 where both open and closed times appear to decrease. The authors need to show more data, including traces and both open and closed time distributions at different pH values, and do a better job of articulating what exactly can be learned from their analysis. Can the results only be interpreted as an increase in Lo? The authors should also mention the caveat that which gate(s) is(are) opening and closing during the single channel recordings is unclear.\n\n2) The authors should do a better job of describing their manipulations to the filter to make it conductive. The brief description in the second paragraph of the subsection \u201cRelaxation of the selectivity filter is required for ion permeation\u201d, says little and one must go to the methods for even a conceptual picture of what was done. How do we know the result is not some artificially widened or broken filter? We are told the filter is occupying space left open by the outward movement of L40 by TM1, but is there evidence for a stable open filter state, such as through time-dependent structural analysis?\n\n3) It is essential that the authors present simulations that explicitly demonstrate permeation events can occur at a reasonable rate through the water-mediated knock-on mechanism depicted in Figure 1B \u2013 when the channel is in the activated state hypothesized here (i.e. both at the intracellular gate and the filter), and when a reasonable membrane voltage is applied across the membrane. We appreciated that the focus of this study is not the mechanism of K+ permeation per se; however, the fact is that authors consider the feasibility of permeation as the reporter of the activation state, logically. E.g. the filter is said to be inactive in the closed state of KcsA (Figure 1A) because permeation appears unfeasible \u2013 for the specific mechanism considered in the PMF calculations. It is therefore key to show this is the relevant mechanism. We also appreciate that the PMF surface in Figure 1B is consistent with possibility of fast diffusion (in contrast to that in Figure 1A), but this calculation does not explicitly demonstrate that permeation events will be observed, or that they will proceed primarily though the mechanism that is evaluated in the PMF calculations. Our request stems from the apparent discrepancy between the results presented here and those previously reported by Koepfer et al. in Science 2014, 346 p352 \u2013 who do focus on the mechanism of K+ permeation. In that study, the authors consider a hypothetically conducting state of KcsA that is based on an open structure of the channel (PDB 3f5w), but with a selectivity filter re-modeled as in the closed state (1k4c). Our understanding is that here, Heer et al. consider this same hypothetical state, although we imagine the structures are not identical to begin with. Koepfer et al. do not compute PMF surfaces, and instead design their simulations to evaluate the rate of ion permeation across the channel under an applied membrane voltage \u2013 without imposing a specific mechanism, aside from the starting condition. The results that are relevant here are those obtained with the CHARMM36 forcefield \u2013 which is also used here. At ~300 mV Koepfer et al. observe no permeation events through a water-mediated knock-on mechanism akin to that studied in Figure 1B, where 2 ions occupy the filter (S1-S4 sites) at a time. Instead, Koepfer et al. report that permeation events occur when 4 ions occupy the filter, under larger voltages (~600 mV). The data and conclusions of this study implicit contradict the results of Koepfer et al., but the authors do not explicitly address this discrepancy \u2013 which, in our view, not only undermines the impact of this study, but will also add further confusion to the field. We therefore believe that it is essential that additional simulations be provided to more directly demonstrate that a water-mediated knock-on mechanism is indeed the primary permeation mechanism.\n\n4) What is striking in this manuscript is the abandonment of the past Nature paper by Berneche and Roux 2001, with recomputed calculations yielding very different answers. The low (1-2 kcal/mol) barriers for ion movement in 2001 and high (7 kcal/mol) barriers here in 2017 are explained loosely in terms of improved force fields, with reference to supplementary materials (being only general) glossing over a critical issue. If changes in protein force field in CHARMM are responsible for a slight change in positional distribution sufficient to eliminate conduction, then it is vital that the accuracy of those new terms for the particular selectivity filter secondary structure be explained. The authors could also compare distributions (like Figure 1A and 2A) between existing old and new force field simulations to show the difference.\n\n5) The identification of L40 in the communication of gate-filter change is interesting, but discussion of the subsequent simulations of this mutant focuses only on a partially activated state. The lacking effect on the closed state is dismissed. Surely, if L40 is important, the presumed non-conducting filter would become more flexible around S4 and reduce the barrier toward 2 kcal/mol. i.e. Why does Leu-Ala mutation not free up space behind the pore helix comparable to slight TM1 movement? Is it a matter of not sampling the change in short 20ns (or 600ns umbrella sampling) simulations?\n\n6) The authors set K+ water and liquid amide solvation free energies equal. KCl partitioning involves a 3.5 kcal/mol shift (Yu et al. 2010. JACS. 132:10847), and we might expect some difference for K+? DE Shaw (Jensen et al. 2013. J. Gen. Physiol. 141:619), and more recently de Groot et al., have explored the roles of K-carbonyl parameters, perhaps warranting more explanation for the choice, which could determine the barriers that distinguish conduction states. If you change the K+ \u2013 C=O interaction enough, you will change the mechanism altogether. But even small changes can alter the maps presented. How do we know what is right?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Mechanism of Activation at the Selectivity Filter of the KcsA K+ Channel\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, Kenton Swartz, is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors have done a good job revising the manuscript to address the reviewers' comments. As a result the manuscript has been greatly improved, and it is now considerably more accessible to the general reader. However there remain two concerns that must be addressed before the manuscript can be accepted for publication.\n\nThe first concern pertains to the length of the unbiased simulation (Figure 5\u2014figure supplement 3) provided in support of the water-mediated knock-on mechanism analyzed in the free-energy landscapes. Given that the applied potential is fairly large (400 mV) it is a concern that this simulation might simply reflect a perturbation of the KWKWK configuration assumed initially. This concern would be addressed if the trajectory was extended to reveal the permeation of K+ ions not initially bound to the selectivity filter.\n\nThe second issue pertains to the free-energy landscapes shown in Figure 5A \u2013 which derive from the combination of the 'forward' and 'backward' calculations described in Figure 5\u2014figure supplement 1. The extent to which these 'forward' and 'backward' free-energy surfaces differ from each other is problematic. This difference is arguably a good indicator of the statistical error of the calculations, and is typically much greater than the error inferred from the block analysis in Figure 5\u2014figure supplement 5. It can be therefore questioned whether the simulation data supports the conclusion that the L40A mutation reduces the free-energy barriers between the two ion configurations considered. It would be important that the authors demonstrate that the magnitude of this change exceeds the magnitude of the error, either through additional analysis of the existing data or, if necessary, with additional simulations.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Mechanism of Activation at the Selectivity Filter of the KcsA K+ Channel\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, Kenton Swartz, is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there are remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors have made additions with extended unbiased simulations, and a response to the concern about hysteresis. We will not discuss further the limited unbiased simulations as we believe they demonstrate, in a limited way, that conduction might occur with water mediation. But concern remains about the calculations to observe the effect of L40A mutation, which should be addressed, or at least presented in a way that more transparently reflects the possible uncertainties in those calculations.\n\nThe data in Figure 5 attempted to show that L40A mutation influences PMF barriers, and is thus important to the story. The authors volunteered separate simulations with S0-S2-S4 and S1-S3-Cav starting points, yielding free energy maps that differ by up to 7 kcal/mol, with very different shapes. Yet the authors just combined these trajectories into a single WHAM solution to yield Figure 5. When questioned about this, the authors added unconvincing statements in the caption to suggest that this has nothing to do with error. They just cite a past study that shows combination of different endpoint free energies using Bennett Acceptance Ratio (BAR) can lead to improvement (and note that their theory WHAM and BAR become the same in the limit of infinitesimal bin size; though that is not the case here). While it might be credible, in general, that one can extract some meaningful data from such combination of disparate histograms, it is misleading to write in this fashion, as that study has not been demonstrated to have similar extents of endpoint distribution overlap that could allow judgment of error here. The statements come across as if it has been shown for this current problem that it would not lead to error, which is not the case. In fact there is no guarantee that one can combine any endpoint calculations and expect the combination to be meaningful. If the authors are to argue this line, then they should be obliged to carry out analysis to demonstrate the resultant errors are indeed small, as currently they remain undetermined.\n\nWe have limited faith in the quantitative nature of the combined results in Figure 5. Without demonstration of the magnitude of the errors in the combined WHAM calculations, we cannot put a measure of confidence in the results for the effects of mutation. This is not the main result of the paper, but it is one interesting component. We suggest that the misleading comments be removed and replaced with statements about likely uncertainties based on the supplementary figure results.\n",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "576434f4-ddc9-447d-85a5-e9f424d958d5",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C1",
+      "claim": "Potassium channels are opened by ligands and/or membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Potassium channels are opened by ligands and/or membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about K+ channel activation mechanisms, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "6b701794-6341-4e01-891f-438b22a7b23a",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C2",
+      "claim": "In voltage-gated K+ channels and the prokaryotic KcsA channel, conduction is believed to result from opening of an intracellular constriction that prevents ion entry into the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In voltage-gated K+ channels and the prokaryotic KcsA channel, conduction is believed to result from opening of an intracellular constriction that prevents ion entry into the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view in the field prior to this study, based on established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "c75b288a-87f5-4f60-b762-2c8ec743c318",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C3",
+      "claim": "Numerous ligand-gated K+ channels lack an intracellular gate.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, numerous ligand-gated K+ channels lack such gate, suggesting that they may be activated by a change within the selectivity filter, a narrow region at the extracellular side of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior knowledge and citations in the field about ligand-gated K+ channels.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "1830bd1b-a2c6-4d55-be52-b57bec128eaa",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C4",
+      "claim": "Ligand-induced conformational changes in the KcsA channel removes steric restraints at the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Using molecular dynamics simulations and electrophysiology measurements, we show that ligand-induced conformational changes in the KcsA channel removes steric restraints at the selectivity filter, thus resulting in structural fluctuations, reduced K+ affinity, and increased ion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both molecular dynamics simulations and electrophysiology measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "6b0be2d2-4bf0-4e06-95ed-eff5c9f8c0de",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C5",
+      "claim": "Ligand-induced conformational changes in KcsA result in structural fluctuations at the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Using molecular dynamics simulations and electrophysiology measurements, we show that ligand-induced conformational changes in the KcsA channel removes steric restraints at the selectivity filter, thus resulting in structural fluctuations, reduced K+ affinity, and increased ion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulations showing increased fluctuations in the open state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "5a557a0a-a9ca-41e9-b039-657640951c43",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C6",
+      "claim": "Ligand-induced conformational changes in KcsA result in reduced K+ affinity at the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Using molecular dynamics simulations and electrophysiology measurements, we show that ligand-induced conformational changes in the KcsA channel removes steric restraints at the selectivity filter, thus resulting in structural fluctuations, reduced K+ affinity, and increased ion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by free energy calculations showing reduced ion binding affinity in the open state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "06c6ddfa-8473-4f14-9eb3-e87686c5a695",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C7",
+      "claim": "Ligand-induced conformational changes in KcsA result in increased ion permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using molecular dynamics simulations and electrophysiology measurements, we show that ligand-induced conformational changes in the KcsA channel removes steric restraints at the selectivity filter, thus resulting in structural fluctuations, reduced K+ affinity, and increased ion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by both PMF calculations and electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "55a6e898-bb0c-444d-8ba0-f5197289ff87",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C8",
+      "claim": "Activation of the selectivity filter may be a universal gating mechanism within K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Such activation of the selectivity filter may be a universal gating mechanism within K+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the findings in KcsA and inference about other K+ channels.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "e12d7925-17a5-4f49-bdfc-af54a78ea695",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C9",
+      "claim": "The occlusion of the pore at the level of the intracellular gate appears to be secondary.",
+      "claim_type": "EXPLICIT",
+      "source": "The occlusion of the pore at the level of the intracellular gate appears to be secondary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings that selectivity filter gating is the primary mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "c0d37c8f-266f-48db-9003-68cee950f70a",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C10",
+      "claim": "In voltage-gated K+ channels, the intracellular bundle-crossing is believed to be the activation gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in voltage-gated K+ channels, the intracellular bundle-crossing of the pore-lining helices is believed to be the activation gate, while the selectivity filter is believed to be the inactivation gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view in the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "5c46e13b-dcbf-462f-89c9-e7c1b6941b77",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C11",
+      "claim": "In voltage-gated K+ channels, the selectivity filter is believed to be the inactivation gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in voltage-gated K+ channels, the intracellular bundle-crossing of the pore-lining helices is believed to be the activation gate, while the selectivity filter is believed to be the inactivation gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view in the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "e46e6fe9-66ce-4e58-bee1-02ed5468c62d",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C12",
+      "claim": "The gating mechanism involving intracellular bundle-crossing activation and selectivity filter inactivation is believed to be shared by KcsA and inward rectifier channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This gating mechanism is believed to be shared by a subset of K+ channels such as KcsA and inward rectifier channels (Phillips and Nichols, 2003; Cuello et al., 2010a; Cuello et al., 2010b; Uysal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "a8797234-6b21-42e5-9110-c22943ab6652",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C13",
+      "claim": "In some K+ channels, the intracellular pore-lining helices do not form a bundle crossing that obstructs K+ flux in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, functional experiments examining state-dependent accessibility of pore blockers (Contreras and Holmgren, 2006; Wilkens and Aldrich, 2006; Rapedius et al., 2012; Posson et al., 2013b; Posson et al., 2015) or thiol-modifying agents (Flynn and Zagotta, 2001; Zhou et al., 2011), have shown that in other channels the intracellular pore-lining helices no longer form a bundle crossing that obstructs K+ flux in the closed state, thus strongly implicating the selectivity filter as an activation gate (Flynn and Zagotta, 2001; Proks et al., 2003; Bruening-Wright et al., 2007; Klein et al., 2007; Contreras et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to functional experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "6c8cb286-b9e6-468a-82b3-24c61d0fccef",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C14",
+      "claim": "In channels where the intracellular helices do not form an obstructive bundle crossing, the selectivity filter is strongly implicated as an activation gate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, functional experiments examining state-dependent accessibility of pore blockers (Contreras and Holmgren, 2006; Wilkens and Aldrich, 2006; Rapedius et al., 2012; Posson et al., 2013b; Posson et al., 2015) or thiol-modifying agents (Flynn and Zagotta, 2001; Zhou et al., 2011), have shown that in other channels the intracellular pore-lining helices no longer form a bundle crossing that obstructs K+ flux in the closed state, thus strongly implicating the selectivity filter as an activation gate (Flynn and Zagotta, 2001; Proks et al., 2003; Bruening-Wright et al., 2007; Klein et al., 2007; Contreras et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited functional experiments.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "7b5d5729-d006-475d-8080-04efca303f9e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C15",
+      "claim": "Ion permeation through the selectivity filter of K+ channels has been investigated based on KcsA X-ray crystallography data.",
+      "claim_type": "EXPLICIT",
+      "source": "Ion permeation through the selectivity filter of K+ channels has been investigated and described based on KcsA X-ray crystallography data (Morais-Cabral et al., 2001; Zhou et al., 2001) and molecular mechanics simulations (Aqvist and Luzhkov, 2000; Bern\u00e8che and Roux, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior crystallography studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "b585d724-176d-4f6d-9b50-bc6266957ded",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C16",
+      "claim": "The generally accepted model for permeation involves alternating states of the selectivity filter loaded with two or three ions separated by water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The generally accepted model for permeation involves alternating states of the selectivity filter loaded with two or three ions separated by water molecules, low ion desolvation free energy at the filter entryway, and the occurrence of a knock-on transitional state in which two K ions come in close contact (Bern\u00e8che and Roux, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge in the field, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "76cc8979-b32e-48d3-a21b-bf643d7ef259",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C17",
+      "claim": "The generally accepted permeation model involves low ion desolvation free energy at the filter entryway.",
+      "claim_type": "EXPLICIT",
+      "source": "The generally accepted model for permeation involves alternating states of the selectivity filter loaded with two or three ions separated by water molecules, low ion desolvation free energy at the filter entryway, and the occurrence of a knock-on transitional state in which two K ions come in close contact (Bern\u00e8che and Roux, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge in the field, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "8f0db961-ce6f-489e-a4eb-87027c84a370",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C18",
+      "claim": "The generally accepted permeation model involves the occurrence of a knock-on transitional state in which two K ions come in close contact.",
+      "claim_type": "EXPLICIT",
+      "source": "The generally accepted model for permeation involves alternating states of the selectivity filter loaded with two or three ions separated by water molecules, low ion desolvation free energy at the filter entryway, and the occurrence of a knock-on transitional state in which two K ions come in close contact (Bern\u00e8che and Roux, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge in the field, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "d9f356c2-8a8b-4674-9cd4-ddec01d541b4",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C19",
+      "claim": "In the 'closed' KcsA structure, the inner helices are closed at the bundle crossing gate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'closed' KcsA structure, the inner helices are closed at the bundle crossing gate (Doyle et al., 1998; Zhou et al., 2001), while in the 'activated' KcsA crystal structures, the inner helices are wide open at the bundle crossing (Cuello et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "76084f45-6e30-4837-8f87-59cf2cb551ce",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C20",
+      "claim": "In the 'activated' KcsA crystal structures, the inner helices are wide open at the bundle crossing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'closed' KcsA structure, the inner helices are closed at the bundle crossing gate (Doyle et al., 1998; Zhou et al., 2001), while in the 'activated' KcsA crystal structures, the inner helices are wide open at the bundle crossing (Cuello et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "781b8efb-6dba-46d3-b842-9aa2b61c9549",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C21",
+      "claim": "In the closed KcsA channel (pdb entry 1K4C), free energy calculations show deep free energy wells of at least 6 kcal/mol, indicating high K+ binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The PMF calculation, which was initiated with K ions in sites S0-S2-S4 separated by water molecules in S1 and S3, shows deep free energy wells of at least 6 kcal/mol, indicating high K+ binding affinity (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PMF calculations presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "cbd7cdac-4122-407c-97d1-b5f9389a7e62",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C22",
+      "claim": "Free energy calculations suggest that ion permeation is impeded in the closed KcsA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In disagreement with the assumption of a conducting filter, these calculations suggest that ion permeation is rather impeded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the PMF calculations showing high free energy barriers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "bfff8a5c-890c-4be7-9e8e-25a457bbfaf1",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C23",
+      "claim": "PMF calculations starting with K ions in sites S1-S3 and Cav reveal similar free energy wells about 7 kcal/mol deep.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result did not depend on the initial ion configuration, as a PMF calculation started with K ions in sites S1-S3 and Cav (cavity) with water molecules in S2 and S4, reveals similar free energy wells about 7 kcal/mol deep (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PMF calculations presented in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "d593b927-fa1d-46f7-a7ec-adf92375ef46",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C24",
+      "claim": "The loss of a water molecule between ions did not significantly reduce the free energy barriers in the closed KcsA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparison of the PMFs in Figure 1A and Figure 1\u2014figure supplement 1 shows that the loss of a water molecule did not significantly reduce the free energy barriers in our calculations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of PMF calculations in different figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "680e7790-c208-42bd-935f-6034ddad350f",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C25",
+      "claim": "In the open conformation (based on structure 3F5W), ion diffusion is possible due to low free energy barriers of 2\u20133 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The PMF calculation describing ion movement within the selectivity filter of the open state KcsA, based on the 3F5W structure and initiated with ions in sites S0-S2-S4, reveals small free energy barriers of 2 to 3 kcal/mol, conducive to ion permeation (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PMF calculations presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "7636195e-889d-44ee-8831-00d21107db5c",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C26",
+      "claim": "A dramatic increase in K ion conductance occurs within the selectivity filter after the channel has switched from closed to open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the above simulations using the closed KcsA structure (Figure 1A), these results indicate that a dramatic increase in K ion conductance occurs within the selectivity filter after the channel has switched from a conformation with the intracellular gate closed to one where it is open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of PMF calculations for closed and open states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "018b6bc9-1874-4e10-9392-4d3930aebec1",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C27",
+      "claim": "Following the opening of the intracellular gate, the selectivity filter adopts conformations that are up to 1 \u00c5 wider in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The histogram in Figure 2A, extracted from 20-ns long simulations of the open and closed states, shows that following the opening of the intracellular gate the selectivity filter adopts conformations that are up to 1 \u00c5 wider in diameter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by distance analysis from molecular dynamics simulations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "6e596b9c-c26b-420e-99eb-cd64ff882a1e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C28",
+      "claim": "The slight widening of the selectivity filter allows for a knock-on transition state in which two K ions accompanied by a water molecule occupy the S3 and S4 binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This slight widening of the selectivity filter allows for a knock-on transition state in which two K ions accompanied by a water molecule (as opposed to one K+ and one water) occupy the S3 and S4 binding sites (state identified by (\u2217) in Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the PMF calculations and structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "fc724978-a65c-4471-9ebf-fbccf5a87dd2",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C29",
+      "claim": "The knock-on state is not strictly required for permeation and an alternative vacancy-diffusion pathway is also accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "The knock-on state is not strictly required for permeation and an alternative pathway, referred to as vacancy-diffusion, is also accessible (Figure 1B, dashed arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the PMF showing multiple pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "9d597393-3700-4dfa-a1da-58b37b3fbb74",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C30",
+      "claim": "The vacancy-diffusion pathway involves ions occupying the selectivity filter moving first, leaving a vacant site that is filled by an incoming ion.",
+      "claim_type": "EXPLICIT",
+      "source": "The vacancy-diffusion pathway involves that ions occupying the selectivity filter move first, leaving a vacant site that is filled by an incoming ion (Schumaker and MacKinnon, 1990; Bern\u00e8che and Roux, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "af82b4f9-262b-447f-bffc-a0e2d024f2c2",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C31",
+      "claim": "In a previous simulation work using CHARMM22 force field, permeation via both knock-on and vacancy-diffusion pathways was observed despite the intracellular gate being closed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in a previous simulation work, permeation via both the knock-on and vacancy-diffusion pathways was observed despite the fact that those calculations were performed using a structure of KcsA in which the intracellular gate is closed (Bern\u00e8che and Roux, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "91965cdb-9eaf-46b5-9d9c-2b4e63fa895d",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C32",
+      "claim": "In previous simulations using CHARMM22, the fluctuations of the selectivity filter required for ion permeation were originating from the intrinsic flexibility of the protein main chain, which was overestimated by CHARMM22.",
+      "claim_type": "EXPLICIT",
+      "source": "In those simulations, the fluctuations of the selectivity filter required for ion permeation were originating from the intrinsic flexibility of the protein main chain, which was overestimated by CHARMM22, a previous generation of the CHARMM force field (see section 'Force field and ion permeation' in Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of force fields and their effects on simulations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "0c8b5a80-38a1-47dc-88bb-2eda3d4e1a28",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C33",
+      "claim": "The CHARMM36 force field contains a correction term for backbone dihedral angles developed on the basis of X-ray crystallographic data and quantum mechanical calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "This new generation of force field notably contains a correction term for backbone dihedral angles developed on the basis of X-ray crystallographic data and quantum mechanical calculations of the protein backbone conformational energy (Mackerell et al., 2004; Best et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the force field development papers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "39b158e0-6812-4872-914e-fde76196352e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C34",
+      "claim": "The widening of the selectivity filter is associated with movement of the pore helix.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2B, the widening of the selectivity filter is associated with movement of the pore helix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by distance analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "62372ca2-a731-4247-8425-5fc1e544241c",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C35",
+      "claim": "Only the lower part of the pore helix moves outward upon activation, while the upper part remains mostly unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only the lower part of the pore helix moves outward upon activation, while the upper part of the pore helix remains mostly unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on distance analysis from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "04f2c6f1-2e93-43b0-9384-7595bb1b51d8",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C36",
+      "claim": "The lower pore helix segment is in direct contact with the outer transmembrane helix (TM1) at the level of residue L40.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower pore helix segment is in direct contact with the outer transmembrane helix (TM1) at the level of residue L40 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "a5ac9632-38b7-4732-991b-b41ca2405782",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C37",
+      "claim": "The side chain of L40 is within van der Waals distance from the side chains of Ser69 and Val70 at the bottom of the pore helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The side chain of this leucine is within van der Waals distance from the side chains of Ser69 and Val70 at the bottom of the pore helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "55158345-7df7-4f28-8059-64c158e5c442",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C38",
+      "claim": "The distances between the L40 alpha carbon atoms of opposing subunits increases by about 1 \u00c5 as the TM1s move outward upon opening of the intracellular gate.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations reveal that the distances between the L40 alpha carbon (C\u03b1) atoms of opposing subunits increases by about 1 \u00c5 as the TM1s move outward upon opening of the intracellular gate (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by distance analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "c67cae52-b17f-4cd5-9855-9d67a7b856db",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C39",
+      "claim": "The outward movement of TM1 at the level of L40 gives the pore helix and the selectivity filter the required room to expand at the base and become conductive.",
+      "claim_type": "EXPLICIT",
+      "source": "It is this outward movement of TM1 at the level of L40 that gives the pore helix and the selectivity filter the required room to expand at the base and become conductive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations from simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "7ab9aed1-7bfb-47f8-b283-926d8a047d11",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C40",
+      "claim": "Reducing the volume of the residue at position 40 by mutation to a smaller amino acid would provide more space for the pore helix and selectivity filter to expand.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism predicts that reducing the volume of the residue at position 40 by mutation to a smaller amino acid would similarly provide more space for the pore helix and selectivity filter to expand, and would make it easier for the filter to open and become conductive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "eb71d939-e3ae-44c3-ab07-6aa5e40bd055",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C41",
+      "claim": "The L40A mutation would favor permeation by reducing the coupling between channel activation and selectivity filter opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mutation would thus favor permeation by reducing the coupling between channel activation and selectivity filter opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "4ebb216d-d27a-4f09-a0d5-7ef29d017a4f",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C42",
+      "claim": "KcsA is a pH-dependent channel that activates upon binding of protons to at least two pH-sensor residues, H25 and E118.",
+      "claim_type": "EXPLICIT",
+      "source": "KcsA is a pH-dependent channel that activates upon binding of protons to at least two pH-sensor residues, H25 and E118 (Figure 4A) (Thompson et al., 2008; Posson et al., 2013a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "d9ed721d-86a4-4e78-b036-7a966197ccd2",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C43",
+      "claim": "The L40A mutant is fully activated by protons, similar to the E71A control channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B shows that the L40A mutant is fully activated by protons, similar to the E71A control channel (open probability increases from 0 to 1 upon pH change), and with a similar pH at half activation (pH0.5=5.2, see Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "87a37062-88dc-4a56-99be-fe90271b5635",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C44",
+      "claim": "The L40A mutant displayed a shallower proton dose response compared with the control channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mutant displayed a shallower proton dose response compared with the control channel, indicating a markedly decreased sensitivity to protons (Figure 4B), characterized by a lower Hill coefficient (Hill coefficient is ~2 for L40A compared to ~4.5 for the control channel, see Equation 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "f6d2f085-cfeb-4615-b633-631c9df73dd8",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C45",
+      "claim": "The L40A mutant channel opened at a much lower proton concentration than the control channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the L40A mutant channel opened at a much lower proton concentration than the control channel (pH 6, Figure 4B\u2013C) and displayed intermediate activity over a range of proton concentrations, unlike the very steep H+-dependent activation displayed by the control channel (Figure 4C), suggestive of a channel whose opening is less strongly coupled to proton binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "b40cec21-5f38-4b59-9267-56944ff24886",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C46",
+      "claim": "The gating behavior displayed by L40A was identical to that of H25R.",
+      "claim_type": "EXPLICIT",
+      "source": "The gating behavior displayed by L40A was identical to that of H25R, a mutant designed to mimic constitutive protonation at histidine 25, the KcsA proton sensor where proton binding is most strongly coupled to channel opening (Figure 4B\u2013C) (Posson et al., 2013a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of electrophysiology data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "b8b64c20-608b-4982-abbe-1a27c8bbd01e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C49",
+      "claim": "The effects of L40A mutation result from partial uncoupling of the bottom of the pore helix from the TM1 helix and from the protonation state of H25.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these effects result from partial uncoupling of the bottom of the pore helix from the TM1 helix and from the protonation state of H25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "37e83cde-4b78-4997-bd76-9275ca7ff56a",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C50",
+      "claim": "A residue at a position equivalent to KcsA L40 was previously found to control permeation and open probability in a Ca2+-activated K channel (KCa3.1) that gates at the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "A residue at a position equivalent to KcsA L40 was previously found to control permeation and open probability in another K channel, a Ca2+-activated K channel (KCa3.1) that gates at the selectivity filter (Garneau et al., 2014), suggesting a common mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "98990b2e-d092-4bec-a27e-9cabdf624817",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C51",
+      "claim": "In the closed conformation (1K4C) of the control channel, the state with 3 ions bound to the filter (S0-S2-S4) is overly stabilized in comparison to states with only 2 ions bound to the filter, with a free energy difference of about 11 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closed conformation (1K4C) of the control channel, the state with 3 ions bound to the filter (S0-S2-S4) is overly stabilized in comparison to states with only 2 ions bound to the filter (S1-S3-Cav and S2-S4-Cav), with a free energy difference of about 11 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PMF calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "b8f5e72f-c5d8-4094-b959-80b7231f18c3",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C52",
+      "claim": "Free energy barriers of 6 to 10 kcal/mol are observed between the 2-ion and 3-ion states in the closed control channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Free energy barriers of 6 to 10 kcal/mol are observed between the 2-ion and 3-ion states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PMF calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "bf377463-e662-418a-af92-c5c43cedac18",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C53",
+      "claim": "The E71A/L40A mutant brings about fluctuations that reduce the ion binding affinity and the relative stability of the 3-ion state.",
+      "claim_type": "EXPLICIT",
+      "source": "The E71A/L40A mutant brings about fluctuations that reduce the ion binding affinity and the relative stability of the 3-ion state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PMF calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "73aa4094-0bdf-4657-bc15-e3ecda70a8ba",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C54",
+      "claim": "In the E71A/L40A mutant, the 2-ion states are stabilized by about 6 kcal/mol and are thus more accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2-ion states are stabilized by about 6 kcal/mol, and are thus more accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PMF calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "317ebfa0-b021-4e3c-8b6f-1a910939f6aa",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C55",
+      "claim": "In the E71A/L40A mutant, the free energy barriers along the permeation pathway are reduced to 4\u20135 kcal/mol in the closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The free energy barriers along the permeation pathway are also reduced to 4\u20135 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PMF calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "f9c7a985-6a0b-47f2-ae7c-aeee82f42e1b",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C56",
+      "claim": "In the partially open conformation (3F7V), the control channel shows reduced free energy barriers of about 4 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "In the partially open conformation (3F7V), the control channel shows reduced free energy barriers of about 4 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PMF calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "e2e3ce62-2d1e-4d7c-a467-95f90bfc461c",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C57",
+      "claim": "The L40A mutant further reduces the barriers by 1 to 2 kcal/mol in the partially open conformation, to 2\u20133 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The L40A mutant further reduces the barriers by 1 to 2 kcal/mol, to 2\u20133 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PMF calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "2e86ea72-648f-4f4e-a357-a0779e76039a",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C58",
+      "claim": "Permeation events in the E71A/L40A mutant involved at most three ions bound to the selectivity filter with accompanying water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-series analysis in Figure 5\u2014figure supplement 3 shows permeation events in which at most three ions are bound to the selectivity filter with accompanying water molecules, in agreement with the above PMFs and with previously proposed permeation models (Bern\u00e8che and Roux, 2001; Morais-Cabral et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulation data shown in Figure 5\u2014figure supplement 3 and citations to prior models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "941f8cd3-14bb-4b34-8084-28410f403665",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C59",
+      "claim": "The L40A mutation facilitates the activation of the channel by reducing the extent of the required conformational change and associated energy to reach the maximal open probability.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the idea that the L40A mutation facilitates the activation of the channel by reducing the extent of the required conformational change and associated energy to reach the maximal open probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation and electrophysiology data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "87bd0d3e-c0ba-4b5f-b3ec-6d590a431df2",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C60",
+      "claim": "The resting (closed) state of the selectivity filter corresponds to a high ion binding affinity state that is non-conducting but primed for ion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work on KcsA revealed a high ion binding affinity state of the selectivity filter that corresponds to a resting (closed) state in which the filter is stabilized, non-conducting but primed for ion conduction, while the intracellular gate is closed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the PMF calculations and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "e2460885-7465-4e21-817f-997c58f348a6",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C61",
+      "claim": "Upon activation, the reorientation of the outer TM1 helix releases steric restraints at the selectivity filter allowing ion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation, in addition to the large motion of the inner TM2 helix that opens the intracellular gate, the reorientation of the outer TM1 helix releases steric restraints at the selectivity filter allowing ion conduction (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the simulation data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "0ef00804-04c8-4f85-826b-689a0729c12d",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C62",
+      "claim": "The conducting state of the KcsA selectivity filter displays larger fluctuations than non-conducting states.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with the observation made by EPR experiments that the conducting state of the KcsA selectivity filter displays larger fluctuations than non-conducting states (Raghuraman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to EPR experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "abe64df9-47d5-4576-94eb-c78214773a4e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C63",
+      "claim": "Changes in the structural dynamics of the selectivity filter through activation could explain the sub-conductance levels with altered selectivity detected by electrophysiology measurements in Shaker.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes in the structural dynamics of the selectivity filter through activation could also explain the sub-conductance levels with altered selectivity detected by electrophysiology measurements in Shaker (Chapman et al., 1997; Zheng and Sigworth, 1997; Chapman and VanDongen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings and citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "73de1e35-9631-4d6f-b304-bf302f0978fe",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C64",
+      "claim": "Fluctuations at the selectivity filter have direct impact on its conductance and gating properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows how fluctuations at the selectivity filter have direct impact on its conductance and gating properties, and could potentially be affected by other signaling factors, e.g. temperature and membrane tension (Rodr\u00edguez et al., 1998; Clarke et al., 2010; Dong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the findings of the study and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "92255449-ad15-4d8e-b8d0-319893533957",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C65",
+      "claim": "The central role played by the outer TM1 helix in KcsA activation potentially explains why residue H25 was identified as the strongest pH sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "The central role played by the outer TM1 helix in KcsA activation potentially explains why residue H25, found at the intra-cellular end of TM1, was identified as the strongest pH sensor (Posson et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings and citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "5bfd670f-7b97-4916-bf9c-32209b256fb5",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C66",
+      "claim": "In voltage-dependent channels, the voltage-sensor may exert force on S5 and regulate the conductance of the selectivity filter through interactions with the pore helix, without necessarily engaging the S6 helix via the S4-S5 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "While S5 was generally thought to play little role in activation gating, it is plausible that the voltage-sensor exerts force on S5 and by doing so regulates the conductance of the selectivity filter through interactions with the pore helix, without necessarily engaging the S6 helix via the S4-S5 linker (Lees-Miller et al., 2009; Garg et al., 2013; Garneau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings and citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "5c59b122-c726-487b-9047-b38ddd6ba3f0",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C67",
+      "claim": "Voltage activation can occur without an S4-S5 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, previous results by other groups showed that voltage activation can occur without an S4-S5 linker (L\u00f6rinczi et al., 2015) and that the S4-S5 linker in a subset of voltage-dependent channels does not directly engage the S6 helix (e.g. EAG channels (Whicher and MacKinnon, 2016)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "d424cf11-06e0-4d5f-aff6-40dacc263b23",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C68",
+      "claim": "The inner TM helices may form a second steric barrier at the intracellular end of the pore in KcsA and other channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This does not exclude that the inner TM helices may form, in KcsA and other channels (such as voltage-gated channels), a second steric barrier at the intracellular end of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "0265b2bd-0858-4ac4-acb3-ae5e34064dde",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C69",
+      "claim": "The proposed model fits the behavior of Ca2+-activated K+ channels, found to ultimately open and close at the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "This model also fits the behavior of Ca2+-activated K+ channels, found to ultimately open and close at the selectivity filter, although the gating is accompanied by a large movement of the pore-lining inner helices not unlike that found in voltage-gated channels and KcsA, albeit less obstructive at the intracellular entryway (Posson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "741ec896-2471-44a4-af6a-1e85c7565faf",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C70",
+      "claim": "The selectivity filter can be found in at least three different states: a restrictive closed state, a dynamic and slightly expanded open state, and a pinched inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the selectivity filter can be found in at least three different states that determine the functional states of the channel: a restrictive closed state, a dynamic and slightly expanded open state, and a pinched inactivated state (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "919c9fc6-e160-4ae0-8f4d-70326696e78e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C71",
+      "claim": "Transitions between functional states of the selectivity filter are controlled by the channel transmembrane domains that provide distant allosteric interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Transitions between these functional states are controlled by the channel transmembrane domains that provide distant allosteric interactions between the selectivity filter and disparate regulatory sites such as voltage sensor and ligand binding domains (Panyi and Deutsch, 2006; Clarke et al., 2010; Cuello et al., 2010a; Wylie et al., 2014; Posson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the findings and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "01935125-7327-492c-b57b-75d9e437fd6a",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C72",
+      "claim": "The universal gate in K+ channels is the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the universal gate in K+ channels is the selectivity filter, whereas the pore-lining helices may undergo large motions that can lead to a secondary closure point at the intracellular bundle-crossing for a subset of K+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "481a91d2-c3b2-44f9-80b6-4c1e098a1987",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C73",
+      "claim": "The pore-lining helices may undergo large motions that can lead to a secondary closure point at the intracellular bundle-crossing for a subset of K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the universal gate in K+ channels is the selectivity filter, whereas the pore-lining helices may undergo large motions that can lead to a secondary closure point at the intracellular bundle-crossing for a subset of K+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "9f63fb89-f59b-4ee9-98a2-1ec714aea216",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C74",
+      "claim": "All residues were assigned their standard protonation state at pH 7, except Glu71, which was protonated.",
+      "claim_type": "EXPLICIT",
+      "source": "All residues were assigned their standard protonation state at pH 7, except Glu71, which was protonated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "cd7c19d2-d679-475f-b24e-f76e7a055457",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C75",
+      "claim": "The CHARMM22 force field was biased toward higher backbone fluctuations, which favored ion permeation in simulations of the closed KcsA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the CHARMM22 force field was biased toward higher backbone fluctuations, which favored ion permeation in simulations of the closed KcsA channel as reflected by the PMF calculations found in Bern\u00e8che and Roux (2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of force fields and their effects.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "34854e72-5d2a-45f7-aea2-e56cff6ecd50",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C76",
+      "claim": "The CHARMM36 force field results in more limited fluctuations of the KcsA selectivity filter that are not sufficient to sustain ion permeation in the closed channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The CHARMM36 force field, on the other hand, results in more limited fluctuations of the KcsA selectivity filter that are not sufficient to sustain ion permeation in the closed channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of simulation results with different force fields.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "6fa45875-1de7-4fd7-b9a3-fde8f85f62c2",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C77",
+      "claim": "K\u00f6pfer et al. proposed a hard knock-on mechanism in which the binding of 4 ions to the selectivity filter is required for permeation in the open KcsA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings differ from those of K\u00f6pfer et al. (2014) who proposed a hard knock-on mechanism in which the binding of 4 ions to the selectivity filter is required for permeation to take place in the open KcsA channel, versus 3 ions intercalated with water molecules in our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "3790a1b1-8419-4a6e-a0b9-8078b59e52d2",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "claim_id": "C78",
+      "claim": "K\u00f6pfer et al. did not apply a NBFIX correction to the interaction between K+ and backbone carbonyl oxygen atoms, leading to stronger K+-carbonyl interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although K\u00f6pfer and colleagues also have used the CHARMM36 force field, they have not, unlike us, applied a NBFIX correction to the interaction between K+ and backbone carbonyl oxygen atoms. This lead to a stronger K+-carbonyl interaction in their CHARMM36 simulations compared to ours, with a difference in K+ solvation-free energy in liquid amide of about 8 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of simulation methods with prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4fb491dc-94fc-4e42-9602-d6694836416e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In the closed KcsA channel (1K4C), PMF calculations reveal high K+ binding affinity with deep free energy wells (\u22656-7 kcal/mol) and high barriers to ion permeation, suggesting the selectivity filter is non-conductive in this state regardless of initial ion configuration or water molecule positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are consistently supported by PMF calculations shown in Figure 1A and Figure 1\u2014figure supplement 1. The data demonstrate high free energy barriers and deep binding wells in the closed state, with results independent of initial ion configuration. The computational methods are appropriately described and the conclusions are directly supported by the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "75cb3aae-ca6f-47e2-8a33-c5adb9fe5b98",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the open KcsA conformation (3F5W), the selectivity filter widens by up to 1 \u00c5 and exhibits low free energy barriers (2-3 kcal/mol), enabling ion permeation through both knock-on and vacancy-diffusion pathways, representing a dramatic increase in conductance compared to the closed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 are well-supported by PMF calculations (Figure 1B) and structural analysis (Figure 2A). The data show quantitative differences in free energy barriers and filter dimensions between open and closed states. The identification of multiple permeation pathways is supported by the PMF data, though the relative contributions of each pathway are not quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "b8100b4a-798b-4941-b66c-fa818ac01438",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The widening of the selectivity filter upon activation is mechanistically linked to outward movement of the lower pore helix, which is in direct van der Waals contact with TM1 at residue L40. The TM1 helices move outward by ~1 \u00c5 at L40 upon gate opening, providing space for the pore helix and selectivity filter to expand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by distance analysis from MD simulations (Figures 2B, 2C, 3). The structural observations are quantitative and consistent. However, C39 represents an inference about causality that, while reasonable, is not directly demonstrated\u2014the correlation between TM1 movement and filter expansion is shown, but the causal relationship is inferred rather than proven through perturbation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "68488a77-7663-42d9-bed6-02ba9863a604",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The proposed mechanism predicts that the L40A mutation would reduce steric constraints on the selectivity filter, facilitating channel opening by reducing coupling between intracellular gate activation and selectivity filter opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 represent predictions that are subsequently tested experimentally (C43-C46). The prediction is logical based on the structural mechanism proposed in C34-C39. The experimental validation of these predictions (discussed in subsequent results) provides retrospective support for these predictive claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "f6dc2082-d9a8-4be1-a7f4-278fd806ab62",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The L40A mutant is fully activated by protons with similar pH0.5 to control but displays a shallower dose-response (Hill coefficient ~2 vs ~4.5), opens at lower proton concentrations, and exhibits gating behavior identical to the H25R mutant, indicating reduced coupling between proton binding and channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are well-supported by electrophysiology data in Figure 4B-C and Table 1. The quantitative measurements of Po vs pH, Hill coefficients, and comparison to H25R are clearly presented. The data quality appears good with error estimates provided. The conclusion that L40A reduces coupling between proton binding and opening is supported by the functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "8d959303-7769-4a30-94c5-702dd7487ad7",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The effects of the L40A mutation result from partial uncoupling of the bottom of the pore helix from the TM1 helix and from the protonation state of H25.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by the integration of structural data (C34-C39) and functional data (C43-C46). The mechanistic interpretation is consistent with both the structural model and the observed gating phenotype. However, this remains an inference\u2014direct demonstration of the uncoupling would require additional structural or biophysical measurements of the L40A mutant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "31309b22-8519-493f-9a89-042f8501184c",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PMF calculations show that in the closed control channel, the 3-ion state is overstabilized (~11 kcal/mol) with high barriers (6-10 kcal/mol), while the L40A mutation stabilizes 2-ion states by ~6 kcal/mol and reduces barriers to 4-5 kcal/mol (closed) or 2-3 kcal/mol (partially open), facilitating ion permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are supported by PMF calculations shown in Figure 5 and supplements. The quantitative free energy differences are clearly presented. The comparison between control and L40A mutant in both closed and partially open states provides strong computational support for the proposed mechanism. Statistical errors are addressed in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "8173a676-9709-443c-96ff-7e3911b1555e",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Time-series analysis of the E71A/L40A mutant shows permeation events involving at most three ions with water molecules, consistent with PMF calculations and supporting that L40A facilitates activation by reducing the conformational change required to reach maximal open probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by simulation data (Figure 5\u2014figure supplement 3) and are consistent with the PMF calculations. The observation of 3-ion permeation with water molecules agrees with prior models and the current PMF data. C59 represents a reasonable inference integrating computational and experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "5eb13d4b-4aef-41c6-9f25-070ea3b2146b",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The selectivity filter exists in at least three functional states (restrictive closed, dynamic open, pinched inactivated) controlled by transmembrane domain movements that provide allosteric coupling to regulatory sites. The selectivity filter is proposed as the universal gate in K+ channels, with the intracellular bundle-crossing serving as a secondary gate in some channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C70-C73 represent the main conclusions integrating all findings. The three-state model (C70) is supported by the PMF data showing distinct energetic profiles for different conformations. The proposal of the selectivity filter as the universal gate (C72) is supported by the current data on KcsA and citations to prior work on other channels. However, the universality claim extends beyond the direct evidence and represents a broader hypothesis requiring validation across channel families.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "21e066e1-0dbd-47c2-af94-8646f7240046",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous simulations using CHARMM22 showed ion permeation in closed KcsA due to overestimated backbone flexibility, while CHARMM36 with improved backbone dihedral corrections produces more limited fluctuations insufficient for permeation in the closed state, better reflecting the actual gating mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 and C75-C76 are supported by comparison of force field effects and citations to prior work and force field development papers. The explanation for discrepancies with prior simulations is reasonable and well-documented. Figure 2A shows quantitative comparison of fluctuations between force fields. This represents important methodological context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "08af281e-ae61-4e46-9985-3d899d738c0f",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The current findings differ from K\u00f6pfer et al. (2014) who proposed a 4-ion hard knock-on mechanism, with the difference attributed to K\u00f6pfer et al. not applying NBFIX corrections, leading to stronger K+-carbonyl interactions (~8 kcal/mol difference in solvation free energy).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 appropriately acknowledge and explain differences with prior work. The explanation based on force field parameters is technically sound and supported by quantitative comparison of solvation free energies. This represents important context for understanding discrepancies in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "742cb40e-ce6c-4a2e-a69a-a433b89defaa",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A residue equivalent to KcsA L40 was previously found to control permeation and open probability in KCa3.1, a Ca2+-activated K+ channel that gates at the selectivity filter, suggesting a common mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by citation to prior work (Garneau et al., 2014). This provides independent validation of the importance of this structural position across different K+ channel families, strengthening the proposed mechanism's generality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "c2ea166c-d4ee-4438-a833-a5e48a57b6f5",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The conducting state of the KcsA selectivity filter displays larger fluctuations than non-conducting states, consistent with EPR experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by citation to EPR experiments (Raghuraman et al., 2014) and is consistent with the MD simulation results showing increased fluctuations in the open state. This provides experimental validation of a key prediction from the simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "69fa0a3e-b84c-40c5-aca3-5dc31affe99d",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Changes in selectivity filter structural dynamics through activation could explain sub-conductance levels with altered selectivity in Shaker and demonstrate that fluctuations directly impact conductance and gating properties, potentially affected by temperature and membrane tension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is speculative, extending the findings to explain phenomena in Shaker channels without direct evidence. Claim C64 is partially supported by the current work but the extension to other signaling factors (temperature, tension) is speculative and based only on citations. These represent reasonable hypotheses for future work but are not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "f21952da-a555-497b-80a7-767f198c17e0",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The central role of TM1 in KcsA activation potentially explains why H25 at the intracellular end of TM1 was identified as the strongest pH sensor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 represents a reasonable inference connecting the structural mechanism to prior functional data. The location of H25 on TM1 and its role as the strongest pH sensor (supported by citation) is consistent with the proposed mechanism where TM1 movement is critical for activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "f90f4252-4832-4e01-87c7-aa9b007d77db",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In voltage-dependent channels, the voltage sensor may regulate selectivity filter conductance through S5 interactions with the pore helix without necessarily engaging S6 via the S4-S5 linker, supported by evidence that voltage activation can occur without an S4-S5 linker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is speculative, extending the KcsA mechanism to voltage-gated channels. Claim C67 provides some support through citations but the connection to the current work remains indirect. This represents a plausible hypothesis but requires direct experimental validation in voltage-gated channels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "cf6f3d45-e0a1-498b-9fb1-e8e967ffc7a7",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The inner TM helices may form a second steric barrier at the intracellular end in KcsA and other channels, and the proposed model fits Ca2+-activated K+ channels that open and close at the selectivity filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is a reasonable speculation acknowledging that the intracellular gate may still play a role. Claim C69 is supported by citation to prior work on Ca2+-activated channels, providing some validation of the model's broader applicability beyond KcsA.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "eb8893fa-5e43-4666-9003-d84b1aa9789a",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background context establishing that K+ channels are opened by ligands/voltage, with traditional models proposing intracellular bundle-crossing as the activation gate and selectivity filter as inactivation gate, though some channels lack intracellular gates, implicating the selectivity filter in activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C10-C20 represent established knowledge and prior work, appropriately cited. These provide necessary context for understanding the significance of the current findings. The citations appear appropriate and the characterization of prior models is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "ff6d6324-a69b-4558-83f9-36ed79c4e833",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The main findings that ligand-induced conformational changes in KcsA remove steric restraints at the selectivity filter, resulting in structural fluctuations, reduced K+ affinity, and increased ion permeation, with selectivity filter activation potentially being a universal gating mechanism and intracellular gate occlusion being secondary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 represent the core findings supported by both MD simulations and electrophysiology (as detailed in other result groups). Claims C8-C9 represent broader conclusions that are reasonable inferences from the data but extend beyond what is directly demonstrated. The universality claim (C8) requires validation across more channel types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "ce5b6489-6373-4ea0-9349-fab1a5e72110",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The vacancy-diffusion pathway involves ions in the selectivity filter moving first, leaving a vacant site filled by an incoming ion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 describes an established permeation mechanism supported by citations. This provides context for interpreting the PMF calculations showing multiple permeation pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    },
+    {
+      "id": "b465a1e0-8737-43dc-8956-fd1a9d1569a2",
+      "content_id": "b7642e0a-fc43-42a7-a07d-2146a8bcc1ae",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Simulation setup used standard protonation states at pH 7 except for protonated Glu71.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 describes a methodological detail that is clearly stated and appropriate for the simulation conditions. This is important for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:31:48.529018Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "781b8efb-6dba-46d3-b842-9aa2b61c9549",
+      "result_id": "4fb491dc-94fc-4e42-9602-d6694836416e"
+    },
+    {
+      "claim_id": "cbd7cdac-4122-407c-97d1-b5f9389a7e62",
+      "result_id": "4fb491dc-94fc-4e42-9602-d6694836416e"
+    },
+    {
+      "claim_id": "bfff8a5c-890c-4be7-9e8e-25a457bbfaf1",
+      "result_id": "4fb491dc-94fc-4e42-9602-d6694836416e"
+    },
+    {
+      "claim_id": "d593b927-fa1d-46f7-a7ec-adf92375ef46",
+      "result_id": "4fb491dc-94fc-4e42-9602-d6694836416e"
+    },
+    {
+      "claim_id": "680e7790-c208-42bd-935f-6034ddad350f",
+      "result_id": "75cb3aae-ca6f-47e2-8a33-c5adb9fe5b98"
+    },
+    {
+      "claim_id": "7636195e-889d-44ee-8831-00d21107db5c",
+      "result_id": "75cb3aae-ca6f-47e2-8a33-c5adb9fe5b98"
+    },
+    {
+      "claim_id": "018b6bc9-1874-4e10-9392-4d3930aebec1",
+      "result_id": "75cb3aae-ca6f-47e2-8a33-c5adb9fe5b98"
+    },
+    {
+      "claim_id": "6e596b9c-c26b-420e-99eb-cd64ff882a1e",
+      "result_id": "75cb3aae-ca6f-47e2-8a33-c5adb9fe5b98"
+    },
+    {
+      "claim_id": "fc724978-a65c-4471-9ebf-fbccf5a87dd2",
+      "result_id": "75cb3aae-ca6f-47e2-8a33-c5adb9fe5b98"
+    },
+    {
+      "claim_id": "39b158e0-6812-4872-914e-fde76196352e",
+      "result_id": "b8100b4a-798b-4941-b66c-fa818ac01438"
+    },
+    {
+      "claim_id": "62372ca2-a731-4247-8425-5fc1e544241c",
+      "result_id": "b8100b4a-798b-4941-b66c-fa818ac01438"
+    },
+    {
+      "claim_id": "04f2c6f1-2e93-43b0-9384-7595bb1b51d8",
+      "result_id": "b8100b4a-798b-4941-b66c-fa818ac01438"
+    },
+    {
+      "claim_id": "a5ac9632-38b7-4732-991b-b41ca2405782",
+      "result_id": "b8100b4a-798b-4941-b66c-fa818ac01438"
+    },
+    {
+      "claim_id": "55158345-7df7-4f28-8059-64c158e5c442",
+      "result_id": "b8100b4a-798b-4941-b66c-fa818ac01438"
+    },
+    {
+      "claim_id": "c67cae52-b17f-4cd5-9855-9d67a7b856db",
+      "result_id": "b8100b4a-798b-4941-b66c-fa818ac01438"
+    },
+    {
+      "claim_id": "7ab9aed1-7bfb-47f8-b283-926d8a047d11",
+      "result_id": "68488a77-7663-42d9-bed6-02ba9863a604"
+    },
+    {
+      "claim_id": "eb71d939-e3ae-44c3-ab07-6aa5e40bd055",
+      "result_id": "68488a77-7663-42d9-bed6-02ba9863a604"
+    },
+    {
+      "claim_id": "d9ed721d-86a4-4e78-b036-7a966197ccd2",
+      "result_id": "f6dc2082-d9a8-4be1-a7f4-278fd806ab62"
+    },
+    {
+      "claim_id": "87a37062-88dc-4a56-99be-fe90271b5635",
+      "result_id": "f6dc2082-d9a8-4be1-a7f4-278fd806ab62"
+    },
+    {
+      "claim_id": "f6d2f085-cfeb-4615-b633-631c9df73dd8",
+      "result_id": "f6dc2082-d9a8-4be1-a7f4-278fd806ab62"
+    },
+    {
+      "claim_id": "b40cec21-5f38-4b59-9267-56944ff24886",
+      "result_id": "f6dc2082-d9a8-4be1-a7f4-278fd806ab62"
+    },
+    {
+      "claim_id": "b8b64c20-608b-4982-abbe-1a27c8bbd01e",
+      "result_id": "8d959303-7769-4a30-94c5-702dd7487ad7"
+    },
+    {
+      "claim_id": "98990b2e-d092-4bec-a27e-9cabdf624817",
+      "result_id": "31309b22-8519-493f-9a89-042f8501184c"
+    },
+    {
+      "claim_id": "b8f5e72f-c5d8-4094-b959-80b7231f18c3",
+      "result_id": "31309b22-8519-493f-9a89-042f8501184c"
+    },
+    {
+      "claim_id": "bf377463-e662-418a-af92-c5c43cedac18",
+      "result_id": "31309b22-8519-493f-9a89-042f8501184c"
+    },
+    {
+      "claim_id": "73aa4094-0bdf-4657-bc15-e3ecda70a8ba",
+      "result_id": "31309b22-8519-493f-9a89-042f8501184c"
+    },
+    {
+      "claim_id": "317ebfa0-b021-4e3c-8b6f-1a910939f6aa",
+      "result_id": "31309b22-8519-493f-9a89-042f8501184c"
+    },
+    {
+      "claim_id": "f9c7a985-6a0b-47f2-ae7c-aeee82f42e1b",
+      "result_id": "31309b22-8519-493f-9a89-042f8501184c"
+    },
+    {
+      "claim_id": "e2e3ce62-2d1e-4d7c-a467-95f90bfc461c",
+      "result_id": "31309b22-8519-493f-9a89-042f8501184c"
+    },
+    {
+      "claim_id": "2e86ea72-648f-4f4e-a357-a0779e76039a",
+      "result_id": "8173a676-9709-443c-96ff-7e3911b1555e"
+    },
+    {
+      "claim_id": "941f8cd3-14bb-4b34-8084-28410f403665",
+      "result_id": "8173a676-9709-443c-96ff-7e3911b1555e"
+    },
+    {
+      "claim_id": "87bd0d3e-c0ba-4b5f-b3ec-6d590a431df2",
+      "result_id": "5eb13d4b-4aef-41c6-9f25-070ea3b2146b"
+    },
+    {
+      "claim_id": "e2460885-7465-4e21-817f-997c58f348a6",
+      "result_id": "5eb13d4b-4aef-41c6-9f25-070ea3b2146b"
+    },
+    {
+      "claim_id": "741ec896-2471-44a4-af6a-1e85c7565faf",
+      "result_id": "5eb13d4b-4aef-41c6-9f25-070ea3b2146b"
+    },
+    {
+      "claim_id": "919c9fc6-e160-4ae0-8f4d-70326696e78e",
+      "result_id": "5eb13d4b-4aef-41c6-9f25-070ea3b2146b"
+    },
+    {
+      "claim_id": "01935125-7327-492c-b57b-75d9e437fd6a",
+      "result_id": "5eb13d4b-4aef-41c6-9f25-070ea3b2146b"
+    },
+    {
+      "claim_id": "481a91d2-c3b2-44f9-80b6-4c1e098a1987",
+      "result_id": "5eb13d4b-4aef-41c6-9f25-070ea3b2146b"
+    },
+    {
+      "claim_id": "af82b4f9-262b-447f-bffc-a0e2d024f2c2",
+      "result_id": "21e066e1-0dbd-47c2-af94-8646f7240046"
+    },
+    {
+      "claim_id": "91965cdb-9eaf-46b5-9d9c-2b4e63fa895d",
+      "result_id": "21e066e1-0dbd-47c2-af94-8646f7240046"
+    },
+    {
+      "claim_id": "0c8b5a80-38a1-47dc-88bb-2eda3d4e1a28",
+      "result_id": "21e066e1-0dbd-47c2-af94-8646f7240046"
+    },
+    {
+      "claim_id": "cd7c19d2-d679-475f-b24e-f76e7a055457",
+      "result_id": "21e066e1-0dbd-47c2-af94-8646f7240046"
+    },
+    {
+      "claim_id": "34854e72-5d2a-45f7-aea2-e56cff6ecd50",
+      "result_id": "21e066e1-0dbd-47c2-af94-8646f7240046"
+    },
+    {
+      "claim_id": "6fa45875-1de7-4fd7-b9a3-fde8f85f62c2",
+      "result_id": "08af281e-ae61-4e46-9985-3d899d738c0f"
+    },
+    {
+      "claim_id": "3790a1b1-8419-4a6e-a0b9-8078b59e52d2",
+      "result_id": "08af281e-ae61-4e46-9985-3d899d738c0f"
+    },
+    {
+      "claim_id": "37e83cde-4b78-4997-bd76-9275ca7ff56a",
+      "result_id": "742cb40e-ce6c-4a2e-a69a-a433b89defaa"
+    },
+    {
+      "claim_id": "0ef00804-04c8-4f85-826b-689a0729c12d",
+      "result_id": "c2ea166c-d4ee-4438-a833-a5e48a57b6f5"
+    },
+    {
+      "claim_id": "abe64df9-47d5-4576-94eb-c78214773a4e",
+      "result_id": "69fa0a3e-b84c-40c5-aca3-5dc31affe99d"
+    },
+    {
+      "claim_id": "73de1e35-9631-4d6f-b304-bf302f0978fe",
+      "result_id": "69fa0a3e-b84c-40c5-aca3-5dc31affe99d"
+    },
+    {
+      "claim_id": "92255449-ad15-4d8e-b8d0-319893533957",
+      "result_id": "f21952da-a555-497b-80a7-767f198c17e0"
+    },
+    {
+      "claim_id": "5bfd670f-7b97-4916-bf9c-32209b256fb5",
+      "result_id": "f90f4252-4832-4e01-87c7-aa9b007d77db"
+    },
+    {
+      "claim_id": "5c59b122-c726-487b-9047-b38ddd6ba3f0",
+      "result_id": "f90f4252-4832-4e01-87c7-aa9b007d77db"
+    },
+    {
+      "claim_id": "d424cf11-06e0-4d5f-aff6-40dacc263b23",
+      "result_id": "cf6f3d45-e0a1-498b-9fb1-e8e967ffc7a7"
+    },
+    {
+      "claim_id": "0265b2bd-0858-4ac4-acb3-ae5e34064dde",
+      "result_id": "cf6f3d45-e0a1-498b-9fb1-e8e967ffc7a7"
+    },
+    {
+      "claim_id": "576434f4-ddc9-447d-85a5-e9f424d958d5",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "6b701794-6341-4e01-891f-438b22a7b23a",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "c75b288a-87f5-4f60-b762-2c8ec743c318",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "c0d37c8f-266f-48db-9003-68cee950f70a",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "5c46e13b-dcbf-462f-89c9-e7c1b6941b77",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "e46e6fe9-66ce-4e58-bee1-02ed5468c62d",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "a8797234-6b21-42e5-9110-c22943ab6652",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "6c8cb286-b9e6-468a-82b3-24c61d0fccef",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "7b5d5729-d006-475d-8080-04efca303f9e",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "b585d724-176d-4f6d-9b50-bc6266957ded",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "76cc8979-b32e-48d3-a21b-bf643d7ef259",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "8f0db961-ce6f-489e-a4eb-87027c84a370",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "d9f356c2-8a8b-4674-9cd4-ddec01d541b4",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "76084f45-6e30-4837-8f87-59cf2cb551ce",
+      "result_id": "eb8893fa-5e43-4666-9003-d84b1aa9789a"
+    },
+    {
+      "claim_id": "1830bd1b-a2c6-4d55-be52-b57bec128eaa",
+      "result_id": "ff6d6324-a69b-4558-83f9-36ed79c4e833"
+    },
+    {
+      "claim_id": "6b0be2d2-4bf0-4e06-95ed-eff5c9f8c0de",
+      "result_id": "ff6d6324-a69b-4558-83f9-36ed79c4e833"
+    },
+    {
+      "claim_id": "5a557a0a-a9ca-41e9-b039-657640951c43",
+      "result_id": "ff6d6324-a69b-4558-83f9-36ed79c4e833"
+    },
+    {
+      "claim_id": "06c6ddfa-8473-4f14-9eb3-e87686c5a695",
+      "result_id": "ff6d6324-a69b-4558-83f9-36ed79c4e833"
+    },
+    {
+      "claim_id": "55a6e898-bb0c-444d-8ba0-f5197289ff87",
+      "result_id": "ff6d6324-a69b-4558-83f9-36ed79c4e833"
+    },
+    {
+      "claim_id": "e12d7925-17a5-4f49-bdfc-af54a78ea695",
+      "result_id": "ff6d6324-a69b-4558-83f9-36ed79c4e833"
+    },
+    {
+      "claim_id": "9d597393-3700-4dfa-a1da-58b37b3fbb74",
+      "result_id": "ce5b6489-6373-4ea0-9349-fab1a5e72110"
+    },
+    {
+      "claim_id": "9f63fb89-f59b-4ee9-98a2-1ec714aea216",
+      "result_id": "b465a1e0-8737-43dc-8956-fd1a9d1569a2"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C58"
+    ],
+    "result": "The contractile ring is organized into three distinct layers relative to the plasma membrane: a proximal layer (0-80 nm) containing membrane-binding scaffolds, formin, and myosin-II tail; an intermediate layer (80-160 nm) with accessory proteins and signaling components; and a distal layer (160-350 nm) containing F-actin, myosin motor domains, and crosslinkers. The ring extends 293 \u00b1 64 nm from the membrane into the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C21-C35, and C58 collectively demonstrate the layered architecture through fPALM measurements of 29 proteins. The spatial distributions are quantified with dcenter values and validated through dual-tagging experiments (C42-C43) and FRET analysis (C44-C48), providing converging evidence for the three-layer model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The fPALM imaging achieved 34-37 nm localization uncertainty and validated mCling-ATTO647N as an accurate plasma membrane marker that aligns with Acyl-mMaple3 at the cytosolic face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 demonstrate the technical validation of the imaging approach. The localization precision (C18) and membrane marker validation (C19-C20) are directly measured and provide the foundation for accurate distance measurements from the membrane.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Dual-tagging experiments confirm the spatial separation of contractile ring layers, with proteins from adjacent layers producing wider peaks and proteins from proximal and distal layers showing either very wide peaks or two resolvable peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide orthogonal validation of the layered architecture through dual-tagged strains. The observed peak widths match predictions based on individual protein localizations, confirming the spatial organization determined by single-protein measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "FRET experiments validate the extended orientation of F-BAR proteins and confirm distinct protein layers, with mCherry-Cdc15 showing FRET with membrane-proximal components while Cdc15-mCherry shows FRET with intermediate layer SH3-binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 demonstrate that FRET signals are specific to the orientation of fluorophore tags on Cdc15, supporting the extended conformation proposed from fPALM data. The specificity of FRET partners for N- versus C-terminal tags provides independent validation of the layered architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "F-BAR proteins contain unstructured central regions that may permit SH3 domains to extend ~100 nm inward to connect with interactors in the intermediate layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 is based on structural predictions and inference from spatial separation data. While the fPALM measurements show spatial separation of F-BAR and SH3 domains, the mechanism (unstructured regions allowing extension) is speculative and lacks direct structural evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Signaling proteins (kinases, phosphatases, GEFs, GAPs) localize to specific layers within the contractile ring, with most positioned appropriately to access their known substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 and C77-C79 demonstrate that signaling components are spatially organized within the ring layers. The localization of kinases like Sid2 and Pom1 near their substrates (C77-C79) supports functional organization, though the mechanism of localization is not fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C85"
+    ],
+    "result": "Components in the distal and intermediate layers (F-actin, Myo2 head, Myp2, Fic1, Cdc15 C-terminus, Spn3) are uniformly distributed along the ring circumference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C54, and C85 demonstrate uniform distribution of distal components through circumferential fPALM imaging and IDM analysis. The uniform F-actin distribution is consistent with electron microscopy studies (C49, C85), providing independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C81"
+    ],
+    "result": "Membrane-proximal domains of Cdc15 and Myo2 form regularly-spaced clusters (71-104 nm diameter), while Mid1 and Rng2 form larger, irregularly-spaced clusters (200 nm diameter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C81 demonstrate distinct clustering patterns for membrane-proximal proteins through circumferential fPALM imaging. The different cluster sizes and spacing patterns are quantified and suggest structural reorganization during ring maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cdc15 oligomerization is required for cluster formation but not for Mid1-dependent clustering, and oligomerization helps concentrate Cdc15 in the ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 demonstrate through mutant analysis that Cdc15 oligomerization drives its own clustering but is not required for Mid1-dependent organization. The oligomerization mutant shows both loss of clustering and increased ring width, supporting a role in Cdc15 concentration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The different clustering patterns of Cdc15/Myo2 versus Mid1/Rng2 indicate that node structures change as the ring develops from precursor nodes to mature ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is a reasonable inference from the observed differences in cluster size and regularity (C52-C53). The conclusion is supported by prior knowledge of Mid1 dissociation during constriction (C83) and changing protein stoichiometry (C84), though direct temporal imaging would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Cdc12 formin is positioned closer to the membrane than F-actin, suggesting F-actin is nucleated near the membrane but pulled upward by myosin motors and crosslinkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is supported by fPALM measurements showing Cdc12 termini closer to the membrane than F-actin. However, claim C70 is speculative inference about the mechanism. While consistent with the spatial data, direct evidence for F-actin being pulled upward is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Myo2 is oriented with its tail near the membrane and motor extended, implying a different organization than canonical bipolar filaments and suggesting motor-independent functions may reside in membrane-proximal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is well-supported by fPALM measurements and prior work on node organization. Claim C72 is a reasonable inference comparing to other systems. Claim C73 about motor-independent function is supported by citation but the localization of this function to membrane-proximal domains is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The contractile ring's layered architecture is similar to focal adhesions and cadherin junctions, with membrane-binding scaffolds (Mid1, Cdc15) linking to intermediate accessory proteins and ultimately to F-actin, though redundancy exists in membrane attachment mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 synthesize the structural findings with prior functional studies. The comparison to focal adhesions (C59) is supported by the similar layered organization. The functional importance of scaffolds (C60-C63) and the intermediate layer network (C64-C66) is supported by citations to genetic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Ring components organize into strata of ~150-200 nm thickness relative to the membrane and 120-220 nm width within the ring, with no significant correlation between width and distance from membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 quantify the geometric organization of ring components from \u03c3vert and \u03c3width parameters. These measurements provide important structural constraints for understanding ring architecture, though the functional significance of these dimensions is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The spatial layers correlate with temporal assembly order, with early components in the proximal layer forming a membrane-anchored scaffold, followed by intermediate layer recruitment, and F-actin held distally by myosin tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C92 propose a model linking spatial organization to assembly mechanism. While the correlation between layer position and assembly timing (C87-C88) is supported by comparing fPALM data to prior studies, the mechanistic claims about scaffold formation (C89), F-actin positioning by myosin tension (C91), and intermediate layer filling (C92) are largely speculative inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "mMaple3 was selected for its faster maturation time (49 min vs 330 min for mEos3.2) and small size (~5 nm) with short linker to minimize positional uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe the rationale for fluorophore selection. The maturation time comparison (C16) is supported by citation, and the size estimate (C17) is based on established knowledge of fluorescent protein dimensions. These choices are appropriate for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The F-actin layer thickness (~200 nm) measured by fPALM matches electron microscopy measurements in S. pombe and is comparable to animal cell contractile rings (250-500 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 validate the fPALM measurements against prior electron microscopy studies. The consistency between techniques (C67) and similarity to animal cells (C68) supports the biological relevance of the measurements and suggests conserved architectural principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The uniform distribution of Myo2 head domains contrasts with myosin-II stacks in animal cells, suggesting different organizational principles in S. pombe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a reasonable inference from the uniform distribution of Myo2 heads (C50) compared to clustered myosin organization in animal cells. The comparison is supported by citations, though the functional implications of this difference are not explored.",
+    "result_type": "MAJOR"
+  }
+]

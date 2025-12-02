@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors characterize the composition of mouse cortical neuropil, reporting approximately 1 synapse per \u00b5m\u00b3, 4 km of axons, 1 km of dendritic shafts, and 1 billion spines and synapses per cubic millimeter of gray matter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C6 provide consistent anatomical estimates for mouse cortex that are supported by citations to established literature (Figure 1b) and align with known neuroanatomical data. These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors establish that synapse detection has become a bottleneck in connectomics by comparing annotation times: manual neurite contouring (200-400 hr/mm) vs. synapse annotation (0.1 hr/\u00b5m\u00b3), with recent improvements in neurite reconstruction (50-fold faster via skeleton reconstruction, further 5-10-fold via improved visualization) making synapse detection the limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 provide a logical progression showing how improvements in neurite reconstruction methods have shifted the bottleneck to synapse detection. The estimates are supported by citations to prior work (C12-C15) and internal calculations (C9, C14). The conclusion (C16) follows logically from the comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors describe the technical challenges of synapse detection across different EM modalities: high-resolution EM (2-4 nm) is the gold standard, FIB-SEM (4-8 nm isotropic) is ideal but doesn't scale, while SBEM (10\u00d710\u00d730 nm\u00b3) scales to mm\u00b3 volumes but existing methods don't provide sufficient accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C28 establish the technical context and motivation for SynEM. These claims are well-supported by citations to foundational work (C17, C22-C25) and established knowledge about EM imaging modalities. The characterization of SBEM resolution (C27) and the inadequacy of existing methods (C28) are supported by data presented later in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors describe SynEM as an automated synapse detection method based on interface classification between segmented neuronal processes, using 11 texture features and 5 shape features computed over 7 asymmetric subvolumes (40, 80, 160 nm from interface), yielding 3224 features per interface and achieving 88% precision/recall for single synapses and 97% for binary connectomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 describe the SynEM methodology and are well-supported by detailed descriptions in the text, figures (Figure 2), and tables (Table 1). The approach is clearly documented with specific technical details about feature extraction and subvolume definitions. The performance claims (C30-C31) are primary findings supported by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors developed SynEM using a mouse L4 somatosensory cortex SBEM dataset (93\u00d760\u00d793 \u00b5m\u00b3, 11.24\u00d711.24\u00d728 nm\u00b3 voxels), with 75,383 annotated interfaces (1858 synaptic, 73,525 non-synaptic) split 80/20 for training/validation, implementing a classifier that outputs directional synapse scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 describe the dataset and training methodology. These are well-documented with specific numbers and procedures. The dataset description (C41-C42) and annotation statistics (C46-C47) are clearly stated. The classifier design (C43-C45) is supported by Figure 3a-c.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors iteratively improved SynEM performance from 70% (initial classifier) to 75% (extended features and subvolumes) to 87%/86% precision/recall (LogitBoost with directed labels) on the validation set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 document the development process with specific performance improvements at each stage. These are supported by Figure 3d and detailed descriptions of the methodological changes (Table 1, Figure 2b). The progression is logical and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "On an independent test set (5.8\u00d75.8\u00d77.2 \u00b5m\u00b3, 235 synapses, 20,319 non-synaptic interfaces), SynEM achieved 88% precision and recall overall, and 94% precision/89% recall on spine synapses (87% of total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 report the primary test set results. The test set is well-described (C51-C52) with detailed annotation procedures in Methods. The performance metrics (C53, C55) are clearly stated and supported by Figure 3e. The observation about spine synapses (C54-C55) is a valuable subanalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SynEM outperforms state-of-the-art methods on both SBEM data (3537 nm\u00b3 voxels) and ATUM data (270 nm\u00b3 voxels), and uniquely provides synapse detection, partner detection, and directionality in one step, unlike methods like Dorkenwald et al. 2017 which show performance drops when adding partner detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 establish SynEM's superiority over existing methods. The comparisons are supported by Figure 3f and supplementary figures, with appropriate citations. The advantage of combined detection (C60) is a valid technical point. However, the comparison would be stronger with direct head-to-head testing on identical datasets for all methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Analysis of SynEM errors revealed that 48 of 55 false positives and false negatives (87%) occurred at locations with SegEM segmentation errors, and correcting these segmentation errors resolved 46% of SynEM errors, suggesting that improved segmentation could further reduce errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 provide error analysis linking SynEM performance to segmentation quality. The specific numbers (C61-C62) are clearly stated and the inference (C63) is reasonable. This analysis provides valuable insight into the dependency on upstream segmentation quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Feature importance analysis showed that 378 of 3224 features contributed to classification, with the top 10 including newly added texture filters (int-var, local entropy) and shape features, and the most distinctive subvolumes being the large presynaptic, border, and small postsynaptic regions, confirming the importance of asymmetric feature aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 report feature importance analysis supported by Figure 4b and Table 2. The analysis validates the design choices (asymmetric subvolumes, new texture features) and is methodologically sound for boosted decision stump classifiers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SynEM is computationally efficient, processing the 384,592 \u00b5m\u00b3 dataset in 2.6 hours on a 480-core cluster, extrapolating to 279.9 days for a 1 mm\u00b3 dataset, comparable to segmentation time but much faster than manual annotation (10\u2075-10\u2076 hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 establish computational feasibility. The runtime measurement (C69) is concrete, and the extrapolation (C70) is a straightforward calculation. The comparison to manual annotation time is supported by earlier claims (Figure 1c). However, the code was not optimized, so actual performance could be better.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Using a statistical model based on multiple synapses per connection (1-8, mean 4.3\u00b11.4 for excitatory connections), the authors show that 97% neuron-to-neuron recall requires only 65.1% synapse recall, at which SynEM achieves 99.4% synapse precision, yielding 98.5% neuron-to-neuron precision at 97.1% recall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 present a statistical model for connectome-level performance. The model is based on published data about synapses per connection (C71-C72, supported by multiple citations and Supplementary file 2). The calculations (C73, C75) are clearly explained in Methods and supported by Figure 5c-e. The assumption of independence between synapse detections is reasonable but not validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "For inhibitory synapses, SynEM achieves 75% recall/82% precision on single synapses, but the higher number of synapses per inhibitory connection (~6) yields 98% recall/97% precision for neuron-to-neuron connections, with error rates <3% well below biological connectivity noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 extend the analysis to inhibitory connections with appropriate test data (171 synapses, 9430 interfaces). The performance is lower for single synapses but the connectome-level performance remains high due to multiple synapses per connection. The biological significance claim (C79) is supported by citations. The summary (C80) accurately reflects the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "SynEM was applied to a local cortical connectome of 104 axons and 100 postsynaptic processes, detecting 880 synapses distributed over 536 connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe a practical application of SynEM to a local connectome. The data is clearly presented in Figure 6 with appropriate methods description. This demonstrates SynEM's utility for real connectomics applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "SynEM detected 195,644 synapses in 192,296 \u00b5m\u00b3 of cortex, yielding a synapse density of 1.02 per \u00b5m\u00b3, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 validate SynEM's synapse density estimates against published data (Merch\u00e1n-P\u00e9rez et al., 2014). The consistency with prior work supports the biological validity of SynEM detections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SynEM-detected axon-spine interface sizes (0.263\u00b10.206 \u00b5m\u00b2, n=181) match distributions from higher-resolution data (de Vivo et al. 2017, p>0.5), indicating no bias toward larger synapses and validating detection in lower-resolution SBEM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide quantitative validation of synapse size distributions. The statistical comparison (C85-C86) uses appropriate tests (two-sample t-test on log-transformed data) and shows no significant difference from higher-resolution data. The inference about lack of size bias (C87) is well-supported by Figure 7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors conclude that SynEM achieves fully automated synapse detection with <3% error in binary connectomes, providing synapse location, size, partners, and direction without human interaction, removing synapse detection as a bottleneck in large-scale connectomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 summarize the main achievements. These conclusions are well-supported by the comprehensive experimental validation (test set performance, comparison to other methods, connectome-level analysis, biological validation). The <3% error claim is supported by the statistical modeling (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors discuss that while synapse detection is easier at high resolution (FIB-SEM, 4-8 nm isotropic), large-scale connectomics requires compromising resolution for speed, and SynEM's success on both high-resolution ATUM data and lower-resolution SBEM data indicates broad applicability of the segmentation-based interface classification approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 provide appropriate context for the technical trade-offs in connectomics. The discussion is supported by Figure 3f and citations. The inference about broad applicability (C93) is reasonable given the demonstrated performance on different modalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors discuss that while special fixation enhancing extracellular space simplifies synapse detection, SynEM's advantage is achieving fully automated detection in conventionally stained data where neurite contacts are frequent at non-synaptic sites, and such conventional data is widely used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 appropriately position SynEM relative to alternative approaches. The discussion of enhanced extracellular space methods (C94-C96) is supported by citation to Pallotto et al. 2015. The advantage of working with conventional data (C97-C98) is a valid point about practical applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose that in large-scale datasets (cubic millimeter), synapse classification can shift from single-synapse typing to axon-level classification based on somatic/dendritic features, since most inhibitory neurons are local and even incomplete axons provide dozens to hundreds of synapses for classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 present a forward-looking perspective on synapse classification in large datasets. The reasoning is sound and based on established knowledge of cortical anatomy (C100). This represents a conceptual contribution to how synapse typing could be approached in connectomics, though it's not experimentally validated in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The authors conclude that SynEM removes synapse detection as a bottleneck, making neurite reconstruction acceleration the key future challenge for connectomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 provide appropriate conclusions about the impact of this work. Given the demonstrated performance and the earlier analysis of annotation times, these conclusions are well-supported. The identification of neurite reconstruction as the next bottleneck follows logically.",
+    "result_type": "MAJOR"
+  }
+]

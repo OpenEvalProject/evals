@@ -1,0 +1,2069 @@
+{
+  "submission": {
+    "id": "a3093f97-5ddb-4823-81a3-1f2d54c0f9da",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:33:44.382955Z",
+    "updated_at": "2025-12-01T22:33:44.382955Z"
+  },
+  "content": [
+    {
+      "id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "submission_id": "a3093f97-5ddb-4823-81a3-1f2d54c0f9da",
+      "content_type": "manuscript",
+      "content_text": "# Diverse functions of homologous actin isoforms are defined by their nucleotide, rather than their amino acid sequence\n\n## Authors\n\n- Pavan Vedula<sup>1</sup> ([ORCID: 0000-0002-9914-0008](https://orcid.org/0000-0002-9914-0008))\n- Satoshi Kurosaka<sup>1</sup> ([ORCID: 0000-0002-4365-9003](https://orcid.org/0000-0002-4365-9003))\n- Nicolae Adrian Leu<sup>1</sup>\n- Yuri I Wolf<sup>2</sup>\n- Svetlana A Shabalina<sup>2</sup>\n- Junling Wang<sup>1</sup>\n- Stephanie Sterling<sup>1</sup>\n- Dawei W Dong<sup>1</sup>\n- Anna Kashina<sup>1</sup> ([ORCID: 0000-0002-0243-6866](https://orcid.org/0000-0002-0243-6866)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Sciences University of Pennsylvania Philadelphia United States\n2. National Center for Biotechnology Information National Institutes of Health Bethesda United States\n3. Institute for Biomedical Informatics Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\n\u03b2\u2010 and \u03b3\u2010cytoplasmic actin are nearly indistinguishable in their amino acid sequence, but are encoded by different genes that play non\u2010redundant biological roles. The key determinants that drive their functional distinction are unknown. Here, we tested the hypothesis that \u03b2- and \u03b3-actin functions are defined by their nucleotide, rather than their amino acid sequence, using targeted editing of the mouse genome. Although previous studies have shown that disruption of \u03b2-actin gene critically impacts cell migration and mouse embryogenesis, we demonstrate here that generation of a mouse lacking \u03b2-actin protein by editing \u03b2-actin gene to encode \u03b3-actin protein, and vice versa, does not affect cell migration and/or organism survival. Our data suggest that the essential in vivo function of \u03b2-actin is provided by the gene sequence independent of the encoded protein isoform. We propose that this regulation constitutes a global \u2018silent code\u2019 mechanism that controls the functional diversity of protein isoforms.\n\n## Introduction\n\nActin is an essential and abundant intracellular protein that plays a major role in developmental morphogenesis, muscle contraction, cell migration, and cellular homeostasis. Two of the closest related actin isoforms, non-muscle \u03b2-actin and \u03b3-actin, are ubiquitously expressed but encoded by different genes, producing nearly identical proteins except for four residues within their N-termini (Vandekerckhove and Weber, 1978). Notably, \u03b2-and \u03b3-actin mRNA coding sequences differ much more significantly, by nearly 13%, due to silent substitutions affecting approximately 40% of their codons (Erba et al., 1986). Recent evidence suggests that this difference in mRNA coding sequence affects translation dynamics of the two actin isoforms: \u03b2-actin is translated in bursts and accumulates faster than \u03b3-actin (Buxbaum et al., 2014; Zhang et al., 2010). Such faster translation results in their differential post-translational modification by arginylation, which targets only \u03b2- but not \u03b3-actin (Zhang et al., 2010). Thus, actin isoforms are differentially regulated via changes in their mRNA coding sequence that can affect their translation and post-translationally modified state.\n\nDespite their high similarity and abundance in the same cell types, \u03b2- and \u03b3-actin play distinct non-redundant biological roles. A body of evidence shows that these actins localize to different parts of the cell and tend to incorporate into different actin cytoskeletal structures (Dugina et al., 2009; Kashina, 2006; Otey et al., 1986). More definitively, several studies show that \u03b2-actin knockout in mice results in early embryonic lethality despite proportional up-regulation of other actin isoforms to compensate for the total actin dosage (Bunnell et al., 2011; Shawlot et al., 1998; Shmerling et al., 2005; Strathdee et al., 2008; Tondeleir et al., 2013, 2014), while \u03b3-actin knockout in mice has a much milder phenotype that does not interfere with animal survival during embryogenesis (Belyantseva et al., 2009; Bunnell and Ervasti, 2010). This lethality of \u03b2-actin knockout in mice can be rescued by a targeted knock-in of the \u03b2-actin cDNA (Tondeleir et al., 2012), suggesting that the coding region of this gene is far more important for organism\u2019s survival than any non-coding elements affected by the \u03b2-actin knockout. The underlying mechanisms conferring such functional differences to these two nearly identical protein isoforms are unknown.\n\nSeveral distinct features of the two actin isoforms have been proposed as the mechanism conferring unique roles to the two proteins. Some biochemical differences between \u03b2- and \u03b3-actin were observed in polymerization assays both in vitro and in vivo (Bergeron et al., 2010; Kapustina et al., 2016; M\u00fcller et al., 2013). In addition, \u03b2-actin mRNA, unlike \u03b3-actin mRNA, gets spatially targeted to the cell periphery via zipcode-mediated transport (Hill and Gunning, 1993; Kislauskis et al., 1997). Finally, \u03b2- and \u03b3-actin actin can differentially regulate gene expression of a subset of cytoskeleton proteins (Tondeleir et al., 2013, 2014). Despite these differences, no study to date has definitively identified the key functional determinants that confer unique functions to the mammalian actin isoforms in organism\u2019s survival, or determined whether these determinants reside at the amino acid level.\n\nHere, we used targeted editing of the mouse genome to test the hypothesis that \u03b2- and \u03b3-actin functions in vivo are defined by their nucleotide, rather than their amino acid sequence. Although previous studies have shown that disruption of the \u03b2-actin gene critically impacts embryonic development and organism survival (Bunnell et al., 2011; Shawlot et al., 1998; Shmerling et al., 2005; Strathdee et al., 2008; Tondeleir et al., 2013, 2014), we demonstrate here that editing of the \u03b2-actin coding sequence to encode \u03b3-actin protein without disruption of the rest of the \u03b2-actin gene does not affect mouse survival or produce a visible phenotype at the organismal or cellular level. This result shows that \u03b3-actin protein is functionally capable of substituting for \u03b2-actin in the absence of gene disruption. Thus, we demonstrate that the differences in in vivo functions of \u03b2- and \u03b3-actin actin are ultimately determined by their nucleotide rather than amino acid sequence.\n\n## Results\n\n### \u03b2-actin nucleotide sequence, rather than amino acid sequence, defines its essential role in vivo\n\nIt has been previously found that knockout of \u03b2-actin gene in mice, unlike \u03b3-actin, leads to early embryonic lethality \u2013 a result that definitively demonstrates its essential, non-redundant biological function (Bunnell et al., 2011). To test whether this essential function of \u03b2-actin is defined by its amino acid or nucleotide sequence, we used CRISPR/Cas9-mediated gene editing to introduce five point mutations into the native mouse \u03b2-actin gene (Actb), altering it to encode \u03b3-actin protein without changing any of the features of the rest of the gene sequence (\u2018beta-coded gamma actin\u2019, Figure 1A). We termed this edited gene Actbc-g, in which the native \u03b2-actin gene is nearly intact (with five point mutations within the first 10 codons) and contains the same promoter, as well as the same coding and non-coding elements, but the protein produced from this gene is identical to \u03b3-actin. The outcome is no \u03b2-actin protein at all, enabling us to definitively test whether \u03b2-actin amino acid sequence, or its nucleotide sequence, is responsible for its essential function in organism\u2019s survival. If intact \u03b2-actin amino acid sequence is required, the mutant mice would die in embryogenesis, similarly to the \u03b2-actin knockout mice (Bunnell et al., 2011; Shawlot et al., 1998; Shmerling et al., 2005; Strathdee et al., 2008; Tondeleir et al., 2013, 2014). If the nucleotide sequence also contributes, these mice would be expected to survive longer than the \u03b2-actin knockout mice and have an overall milder phenotype. Finally, if the nucleotide sequence is the sole determinant of \u03b2-actin function, these mice would have no phenotype at all.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig1-v3.jpg)\n\n**Figure 1.:** (A) CRISPR/Cas9 editing strategy used to generate Actbc-g mouse. (B) photos of Actbc-g E12.5 mouse embryos, with genotypes indicated. (C) photos of Actbc-g mice after gene editing, alone (top left) and next to age-matched (top right) and littermate wild type (WT) (bottom). Three mice from two different litters are shown. (D)\u00a0H&E-stained sagittal sections of the heads (top) and bodies (bottom) of littermate P0 wild type (WT) and Actbc-g mice. Scale bar, 1 mm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top left, genotyping strategy: editing of the N-terminal codons of the \u03b2-actin gene abolishes an EcoRV restriction site, enabling the screening of the edited gene variants by EcoRV digestion of the PCR-generated DNA fragments corresponding to the 5\u2032 of the actin sequence. Top right, PCR products before (top) and after (bottom) EcoRV digestion. Bottom, western blots of wild type, heterozygous, and Actbc-g mouse tail lysates with antibodies to \u03b2- and \u03b3- actin.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Screen shots from the Chromas sequence viewing software.\n\nThis gene editing strategy was successful, generating homozygous mouse mutants that contained no \u03b2-actin protein (Figure 1\u2014figure supplements 1\u20132). Strikingly, Actbc-g mice appeared completely healthy, viable, and fertile with no signs of deficiencies previously seen in any of the \u03b2-actin knockout mouse models. These mice did not exhibit any visible defects in embryogenesis (Figure 1B), and appeared healthy and normal at birth and throughout life (Figure 1C) (observed until approximately 8 months old by the time of the submission of this study for publication). These mice also had normal fertility, as evidenced by litter sizes from Actbc-g homozygous breeding pairs that averaged 6.4 pups per litter (\u00b10.38 SEM, n\u00a0=\u00a09), compared to the average litter size of 6.3 pups previously reported for their matching background wild type strain C57BL/6 (http://www.informatics.jax.org/silver/tables/table4-1.shtml). Thus, this result definitively proves that \u03b2-actin nucleotide sequence, rather than its amino acid sequence, determines the essential function of \u03b2-actin in vivo.\n\nTo test for possible milder defects in these mice, we analyzed the overall morphology and appearance of all major organs and body parts in newborn (P0) Actbc-g mice by sagittal sectioning and H&E staining, and found no overall differences or abnormalities between wild type and Actbc-g mice (Figure 1D), suggesting that the embryonic development in these mice occurs normally. Overall, Actbc-g mice appeared completely healthy and normal, suggesting that \u03b3-actin protein encoded by the \u03b2-actin gene is fully able to functionally substitute \u03b2-actin\u2019s essential role in mouse survival and health.\n\nTo confirm the replacement of \u03b2-actin protein in these mice with the \u03b3-actin protein, we performed quantitative western blots from several tissues where non-muscle actin isoforms are normally expressed at high levels, including brain, kidney, liver, and lungs (Figure 2). In all these tissues, loss of \u03b2-actin protein was accompanied by a prominent increase in \u03b3-actin, without overall changes in total actin levels (Figure 2 and Figure 2\u2014figure supplement 1). Corresponding changes were also seen on 2D gels from these tissues, run under shallow pH gradient to separate actin isoforms (Figure 2 and Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-v3.jpg)\n\n**Figure 2.:** Western blot analysis showing images (left) and quantifications (right) of whole tissue lysates from wild type (Actb+/+) and Actbcg mice. Fluorescence images obtained from the Odyssey gel imager are shown. For quantification, total fluorescence from the 43 kDa actin band was normalized to the loading control and to the actin level in the first lane for each blot. Error bars represent SEM, n\u00a0=\u00a03.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Western blots of wild type, heterozygous, and Actbc-g mouse brain lysates probed with antibodies to \u03b2- and \u03b3-actin and total actin (pan-actin). Mouse genotypes are indicated on top of each lane, and the antibodies used are listed below each blot.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp2-v3.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Top, genotyping strategy: editing of the N-terminal codons of the\u03b3- actin gene generates an EcoRV restriction site, enabling the screening of the edited gene variants by EcoRV digestion of the PCR-generated DNA fragments corresponding to the beginning of the actin sequence. Bottom, PCR products before (top) and after (bottom) EcoRV digestion.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Top, CRISPR/Cas9 editing strategy used to generate Actg1c-b mouse. Bottom left, photos of Actg1c-b mouse after gene editing, to age-matched wild type. Bottom right, H and E-stained sagittal sections of the heads (top) and bodies (bottom) of littermate wild type (WT) and Actg1c-b mice. Scale bar, 1 mm.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Western blots with the actin antibodies indicated on the left using tissue homogenates from wild type control and Actg1c-b mouse.\n\nWe also performed a reciprocal experiment, using CRISPR/Cas9 gene editing to edit the mouse \u03b3-actin gene to encode \u03b2-actin protein (\u2018gamma-coded beta actin\u2019 or \u03b3c-\u03b2-actin, Figure 2\u2014figure supplements 3\u20134). This strategy was only partially successful, resulting in replacement of the first three nucleotides to convert the N-terminal MEEE sequence of \u03b3-actin into the MDDD sequence of \u03b2-actin, while failing to achieve I/V substitution at codon 10. However, given that the full deletion of \u03b3-actin has a much milder phenotype than \u03b2-actin mouse knockout (Belyantseva et al., 2009; Bunnell et al., 2011; Bunnell and Ervasti, 2010), we did not pursue this further and analyzed the partially edited mouse instead. These Actg1c-b mice showed no detectable phenotype. At the same time, they showed disappearance of \u03b3-actin protein and a corresponding increase in \u03b2-actin-like protein by western blots (Figure 2\u2014figure supplement 5). These results suggest that \u03b3-actin in vivo functions, like \u03b2-actin, is also defined by its nucleotide, rather than amino acid sequence.\n\n### \u03b3-actin protein expressed off \u03b2-actin gene supports normal cell migration\n\nSince \u03b2-actin has been previously shown to play a major role in directional cell migration, and its knockout in cells leads to severe impairments in their actin cytoskeleton organization and their ability to migrate (Bunnell et al., 2011; Tondeleir et al., 2012), we next analyzed the actin cytoskeleton distribution and directional migration of mouse embryonic fibroblasts (MEF) derived from littermate wild type and Actbc-g mice. Despite the complete absence of \u03b2-actin protein in these cells, their actin cytoskeleton appeared similar to that of wild type cells. We detected no difference in F-actin levels in these cells (Figure 3), or in the morphology and appearance of the actin cytoskeleton (Figure 3 and Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig3-v3.jpg)\n\n**Figure 3.:** Top, quantification of total F-actin detected by Phalloidin-AlexaFluor488 staining of wild type (Actb+/+) and Actbc-g primary mouse embryonic fibroblasts. Numbers were averaged from 69 cells in WT and 76 cells in Actbc-g, obtained from two different primary cultures independently derived from two different littermate embryos for each set. Bottom, representative images of both cell types stained with Phalloidin-AlexaFluor488 or antibodies to both actin isoforms as indicated.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig4-v3.jpg)\n\n**Figure 4.:** Representative images of wild type (WT) and Actbc-g primary mouse embryonic fibroblasts stained with antibodies to both actin isoforms as indicated.\n\nTo test the ability of these cells to migrate, we performed wound healing assays to measure the overall migration rates of the cell monolayers in wild type and Actbc-g. We also measured the directionality of single cell migration on fibronectin-coated dishes. In both assays, no difference was observed between the two cell types (Figure 5 and Figure 5\u2014videos 1 and 2), confirming that the actin isoform substitution did not result in any significant changes in these cells\u2019 ability to migrate. Thus, our data definitively demonstrate that the essential function of \u03b2-actin in vivo is defined by its nucleotide, and not its amino acid sequence.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig5-v3.jpg)\n\n**Figure 5.:** Left, phase contrast images of the first (0\u2032) and last (600\u2032) frame taken from a representative time lapse videos of the WT and Actbc-g cells at the edge of a monolayer migrating into an infinite scratch wound. Overlay of the two frames is shown in the bottom row. Scale bar, 100 \u00b5m. Right top, quantification of the cell migration rate as \u03bcm2/min, WT: n\u00a0=\u00a028, Actbc-g: n\u00a0=\u00a029 averaged from two independently derived primary cultures for each set. See Supplemental Videos 1 and 2. Right bottom, quantification of cell directionality in single cell migration assays (calculated as persistence over time, WT: n\u00a0=\u00a049, Actbc-g: n\u00a0=\u00a050) suggests that single cell migration was not affected in Actbc-g cells.\n\n### Actin isoform coding sequences show dramatic differences in ribosome densities that correlate with their essential biological function\n\nWe have previously reported that \u03b2- and \u03b3-actin are differentially arginylated, due to differences in their mRNA nucleotide coding\u00a0sequences (arising via silent substitutions), which leads to different translation dynamics, and the resulting rates of their accumulation in cells (Buxbaum et al., 2014; Zhang et al., 2010). To assess the potential differences in translation dynamics between the actin isoforms, we analyzed the global ribosome profiling data for these genes (mouse Actb and Actg1, encoding non-muscle \u03b2- and \u03b3-actin, respectively) available at the GWIPS-Viz genome browser (http://gwips.ucc.ie;\u00a0Michel et al., 2014)\u00a0that aggregates the results of multiple ribosome profiling studies across genomes. Remarkably, composite data from 26 independently performed ribosome profiling studies from different mouse tissues show that the ribosome density on mouse \u03b2-actin mRNA is over a thousand fold higher than \u03b3-actin (average ribosome density over the first 150 codons: 1351.607 for \u03b2-actin versus 1.289 for \u03b3-actin, see also Table 1 and Supplementary file 1 and 2) . These data suggest that the translation dynamics of \u03b2-actin in vivo is dramatically different from that of \u03b3-actin. We next extended this analysis to the whole family of mouse actin genes and correlated the previously reported phenotypes resulting from mouse knockouts of different actin isoforms with the ribosome density number for each isoform (Table 1). This analysis shows that members of the actin family have vastly different ribosome densities, with \u03b2-actin being by far the highest, while \u03b3-enteric smooth muscle actin is by far the lowest (ribosome density 0.377), suggesting that the intracellular accumulation rate for these two proteins, as well as their translation dynamics, should be vastly different from each other. In support, they also have different mRNA structures in the coding region (Zhang et al., 2010, Supplementary file 3 and 4). Notably, the actin isoforms that tend to become up-regulated in different knockout models are typically those with the closest ribosome density to the isoform that had been knocked out (Table 1). It appears likely that the success of functional compensation may also be linked to this number, directly or indirectly. For instance, alpha skeletal and alpha smooth muscle actins appear to partially cross-compensate for each other, and these isoforms are also the second and third highest by ribosome density, after \u03b2-actin. \u03b1-cardiac actin completely rescues knockout of \u03b1-skeletal actin, which has the closest ribosome density. In contrast, loss of \u03b1-cardiac actin cannot be substituted for by \u03b3-enteric smooth muscle actin, which has a\u00a0~10 fold lower ribosome density. These results suggest the actin isoform with similar ribosome density can plausibly compensate for the loss of one of the isoforms. In agreement, given the orders of magnitude difference in ribosome density between \u03b2-actin and other actin isoforms, none of the other actin isoforms can compensate for the loss of \u03b2-actin. We propose that changes in ribosome density arising from silent substitutions in nucleotide sequence, affect translation dynamics and protein accumulation rates, which in turn regulate functional diversity of actins.\n\n### Silent substitutions in the coding sequence as a potential global regulator of homologous protein isoforms in eukaryotic genomes (\u2018silent code\u2019)\n\nWe next used sequence analysis and Ribo-seq data profiling to test whether this type of silent substitution dependent protein regulation may potentially be applicable to other closely related protein isoform families in the mouse genome. First, to identify all protein families encoding highly similar proteins, we searched the mouse genome for proteins that are over 90% identical both in length and in their amino acid sequence over their entire length, and are encoded by different genes. This search yielded 741 families in mouse, encoding nearly 4000 different open reading frames. Next, we compared ribosome density numbers for different protein isoforms within these families using published ribosome profiling data found on GWIPS-Viz genome browser, and sorted these families by the normalized standard deviation (SD) of difference between ribosome densities for different members within the family. We discarded those families in which the ribosome density on the highest translating gene was less than 1, suggesting that their relative abundance in the polysome fraction is negligible (e.g., the majority of olfactory receptors). In the resulting list, we selected the top 100 families with SD of ribosome densities of 1.4 and above and classified them by functions (Supplementary file 1). We also performed the same analysis in two other vertebrate genomes, human and zebrafish (Supplementary files 2 and 3) and cross-referenced the identity of the top families to each other.\n\nThe top families identified in these searches were similar in all three vertebrate genomes, and contained the actin family as one of the top hits. The other uniformly present top hits included multiple classes of histones and tubulins. Notably, similar analysis of D. melanogaster and C. elegans genomes (Supplementary files 4 and 5) also yielded actins, tubulins, and histones as the top hits. Thus, the occurrence of families of nearly identical proteins with vastly different ribosome densities may be broadly common in higher eukaryotes, supporting our idea that this feature may underlie their functional regulation.\n\nWe propose that posttranscriptional regulation of highly homologous proteins in seemingly redundant protein families through silent nucleotide-encoded translation dynamics constitutes a novel type of functional regulation that governs some of the most essential functions in eukaryotic genomes. We propose to term this regulation \u2018silent code\u2019, to reflect its origin in silent substitutions within the genetic code.\n\n## Discussion\n\nOur results demonstrate a novel determinant \u2013 silent substitutions in nucleotide sequence \u2013 that drives the differential functions of non-muscle actin isoforms, a mechanism potentially applicable to other members of the actin family and other highly similar proteins in eukaryotic genomes. In the case of non-muscle actins, our finding resolves decades of controversial studies and reconciles a body of seemingly contradictory results obtained in the attempts to address functional distinction between \u03b2- and \u03b3-actin (Bergeron et al., 2010; Dugina et al., 2009; Kapustina et al., 2016; Patrinostro et al., 2017). Our data demonstrate that the nucleotide sequence of the gene, rather than the amino acid sequence of the encoded isoform, determines the absolute requirement of \u03b2-actin for organism\u2019s survival.\n\nClosely related protein isoforms can exhibit functional differences which can be attributed to one or more of the following three sources. First, variations at the amino acid level can cause profound differences in protein function. Second, variations in mRNA properties due to differences in their coding sequence and UTR regions can strongly affect mRNA localization, stability, and translatability via secondary structure and codon usage. Finally, variations in gene intron sequences, promoter, and enhancer regions can contribute to the overall gene regulation, expression levels, and tissue specificity. Contribution of each of these levels to actin isoform function has been extensively investigated in prior studies. While \u03b2-actin and \u03b3-actin isoforms share a remarkable conservation at the amino acid level, with just four homologous amino changes at their N-termini, these two proteins have been shown to have slightly different polymerization kinetics (Bergeron et al., 2010) and to differentially interact with cofilin (Kapustina et al., 2016) and non-muscle myosin isoforms (M\u00fcller et al., 2013). At the level of mRNA, actin 3\u2032UTRs are isoform-specific and evolutionarily conserved, suggesting that they play important roles in vivo (Erba et al., 1986; Hill and Gunning, 1993). A plethora of literature elucidates the importance of \u03b2-actin 3\u2032UTR for the localization of the transcript (see, e.g. (Condeelis and Singer, 2005) for a comprehensive review). It has also been shown that \u03b3-actin mRNA induces a ribosome pausing event, resulting in its slower translation compared to \u03b2-actin, a mechanism that drives their differential arginylation (Zhang et al., 2010). An alternative poly A site in \u03b2-actin mRNA increases its translation levels (Ghosh et al., 2008). Finally, at the gene level, several studies point to roles of various regulatory elements in the actin isoforms. \u03b3-actin gene contains a unique and highly conserved intron III (Lloyd and Gunning, 1993), and an alternatively spliced exon 3a (Drummond and Friderici, 2013). \u03b2-actin exhibits both 3\u2032UTR-dependent (Lloyd and Gunning, 1993; Lyubimova et al., 1999) and 3\u2032UTR-independent (Lloyd et al., 1992; Schevzov et al., 1992) feedback regulation of gene expression.\n\nOur prior data showed that silent substitutions in \u03b2- and \u03b3-actin coding sequence, amounting to a 13% overall difference, confer changes in the rates of their accumulation in the cell, and in their posttranslational modifications\u00a0(Zhang et al., 2010). We show here, by analysis of publically deposited RiboSeq datasets, that \u03b2- and \u03b3-actin mRNAs dramatically differ in ribosome densities, suggesting vastly different translation dynamics and likely different accumulation rates in cells. We propose that these silent substitutions in the nucleotide coding sequence may be key determinants that drive \u03b2- and \u03b3-actin function. It is possible, however, that at the gene level additional non-coding elements and the untranslated regions (UTRs) of the actin mRNA may also contribute to the functional distinction between the actin isoforms. This possibility requires further investigation.\n\nRibosome profiling experiments show that among the 6 members of the actin family in mice, \u03b2-actin by far has the highest representation in the polysome fraction (Ingolia et al., 2009). We propose that this confers the cell with the ability to spatially and temporally fine tune translation of \u03b2-actin and the local and global rate of its intracellular accumulation (Buxbaum et al., 2014; Str\u00f6hl et al., 2017), and thus makes \u03b2-actin the most essential of the actin isoforms and cannot be compensated for when deleted. The nearly identical non-muscle \u03b3-actin appears to be more functionally redundant and can be largely compensated for by other actins that have similar ribosome densities (Perrin and Ervasti, 2010), Table 1, and Supplementary file 2 and 3). Our findings suggest that actin isoforms with similar ribosome densities and translation dynamics are more likely to compensate for each other\u2019s functions, while \u03b2-actin, with the highest-ribosome-density is unique in its functional significance. Elucidating the exact contribution of translation dynamics to actin isoform functions constitutes an exciting direction of future studies.\n\nOur result that targeted genome editing of mouse \u03b2-actin gene to encode for \u03b3-actin protein leads to no apparent phenotype proves for the first time that the major determinants of \u03b2-actin\u2019s essential function in vivo are encoded at the nucleotide level. Some of the existing data point to the possibility that this effect is mediated primarily or exclusively via the coding region, rather than the promoter, the UTR, or the intron sequences. Indeed, deletion of exons 2 and 3 of the \u03b2-actin gene that include \u03b2-actin translation initiation site but do not encompass the promoter region, UTR, or the non-coding elements in the rest of the gene leads to embryonic lethality (Bunnell et al., 2011). Notably, in Actb knockout mice other actin isoforms are up-regulated to compensate for the total actin dosage, but this promoter-mediated up-regulation is insufficient to rescue the phenotype of early embryonic lethality. At the same time, targeted insertion of the human \u03b2-actin coding sequence into this region rescues embryonic lethality in these mice, further supporting the idea that the coding sequence plays a key role (Tondeleir et al., 2012). Data from our group previously showed that coding sequence drives differences in actin\u2019s posttranslational modifications, one of the forms of functional actin regulation (Zhang et al., 2010). While these studies do not fully exclude a potential contribution of non-coding elements, especially those that may be located between exons 2 and 3 in the gene, they strongly support our hypothesis that the coding region is primarily responsible for the uniquely essential role of \u03b2-actin in vivo. Elucidating the underlying hierarchy of silent substitutions among other modes of regulation, would further our understating of the various levels of factors affecting the function of different actin isoforms.\n\nDespite the fact that non-muscle actin isoform genes have evolutionarily diverged\u00a0>100 million years ago, they have retained remarkable sequence conservation, far higher than what would be expected if the synonymous substitutions in their coding sequence were completely randomized (Erba et al., 1986). This is consistent with our idea that actin isoform coding sequence exists under additional evolutionary pressure, over and above the conservation of amino acid sequence. We propose that at least some of this pressure is aimed to maintain the divergent translation dynamics within the actin family, in order to drive their divergent functions.\n\nOur sequence analysis and data mining suggest that this mechanism of homologous protein regulation through \u2018silent code\u2019 may be globally applicable to multiple protein families throughout eukaryotic genomes. Notably, one of the top candidate families for this regulation in addition to actin \u2013 tubulin \u2013 is also a major cytoskeletal protein regulated by multiple posttranslational modifications. Some members of the tubulin family conceivably may be regulated via silent substitutions in their coding sequence affecting translation dynamics, like shown previously for non-muscle actins. While systematic mouse knockout data for the alpha and \u03b2\u2212 tubulin isoform families is not available, based on the analogy with the actin isoforms, we predict that tubulin \u03b2-V (Tubb5) is likely the most essential of the \u03b2\u2212 tubulin genes, whose knockout likely cannot be substituted by up-regulation of any other \u03b2\u2212 tubulin. Notably, the two members of the \u03b3\u2212 tubulin isoform family, Tubg1 and Tubg2, have been knocked out in mice, and appear to follow the same trend: knockout of Tubg1, the tubulin isoform with higher ribosome density, is embryonically lethal, while knockout of Tubg2 with the nearly 200 fold lower ribosome density is not (Yuba-Kubo et al., 2005). Further systematic analysis of knockouts of homologous isoforms would enable establishing the universality of the \u2018silent code\u2019.\n\n**Table 1.**\n Severity of the actin isoform knockout phenotypes and their cross-compensation for each other correlate with their ribosome density.See (Perrin and Ervasti, 2010) for the references on the isoform knockout data. * From heterozygotes (since homozygous knockout is embryonic lethal) and knockout MEFs. \u2020 Tissue specific upregulation of different isoforms See (Bunnell and Ervasti, 2010).Table 1\u2014source data 1.Composite ribosome profiling data for the actin gene family, plotted in logarithmic scale.Bottom panel shows the coarse curves for the data on top.Table 1\u2014source data 2.Ribosome profiling data for the individual members of the actin family, plotted in logarithmic scale.Table 1\u2014source data 3.Predictions of the secondary structures for \u03b2\u2212 and \u03b3\u2212 actin coding sequences.Plot shows distance in nucleotides (x axis, 0 indicates the first ATG of the coding sequence) versus free energy (y axis).Table 1\u2014source data 4Predictions for the initial regions of the \u03b2\u2212 and \u03b3\u2212 actin coding sequence, compared to their codon-switched versions.Plot shows distance in nucleotides (x axis, 0 indicates the first ATG of the coding sequence) versus free energy (y axis). \u03b2-coded \u03b3\u2212 actin mRNA is predicted to have a more relaxed structure around the translation initiation site, while being indistinguishable throughout the rest of the sequence.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Gene symbol</th>\n      <th>NCBI accession number, protein</th>\n      <th>NCBI accession number, mRNA</th>\n      <th>Composite ribosome density</th>\n      <th>Mouse knockout phenotype</th>\n      <th>Other actin isoforms upregulated upon knockout</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03b2-cytoplasmic actin</td>\n      <td>Actb</td>\n      <td>NP_031419</td>\n      <td>NM_007393</td>\n      <td>1351.607</td>\n      <td>Early embryonic lethality</td>\n      <td>Acta2; some Actg1*</td>\n    </tr>\n    <tr>\n      <td>\u03b1-smooth muscle actin</td>\n      <td>Acta2</td>\n      <td>NP_031418</td>\n      <td>NM_007392</td>\n      <td>53.781</td>\n      <td>Viable, with vascular contractility and blood pressure defects</td>\n      <td>Acta1</td>\n    </tr>\n    <tr>\n      <td>\u03b1-skeletal actin</td>\n      <td>Acta1</td>\n      <td>NP_033736</td>\n      <td>NM_009606</td>\n      <td>10.267</td>\n      <td>Muscle weakness; postnatal lethality</td>\n      <td>Acta2 and Actc1</td>\n    </tr>\n    <tr>\n      <td>\u03b1-cardiac actin</td>\n      <td>Actc1</td>\n      <td>NP_033738</td>\n      <td>NM_009608</td>\n      <td>3.872</td>\n      <td>Perinatal lethality</td>\n      <td>Acta2 and Acta1</td>\n    </tr>\n    <tr>\n      <td>\u03b3-cytoplasmic actin</td>\n      <td>Actg1</td>\n      <td>NP_033739</td>\n      <td>NM_009609</td>\n      <td>1.289</td>\n      <td>Viable, with growth defects and progressive deafness</td>\n      <td>Acta2, Actb, Acta1, and Actc1\u2020</td>\n    </tr>\n    <tr>\n      <td>\u03b3-enteric smooth muscle actin</td>\n      <td>Actg2</td>\n      <td>NP_033740</td>\n      <td>NM_009610</td>\n      <td>0.377</td>\n      <td>Unknown</td>\n      <td>Unknown</td>\n    </tr>\n  </tbody>\n</table>\n\n## Materials\u00a0and\u00a0methods\n\n### CRISPR/Cas9 mutagenesis and genotyping\n\nC57Bl/6 strain was used to generate the gene-edited mice. The donor females were super-ovulated using 5 IU of PMSG followed 48 hr later with 5 IU HCG, after which the females were mated immediately to C57Bl/6 studs. MEGAshort-script T7 transcription kit (Ambion Thermo Fisher Scientific, Waltham, MA) was used for in vitro transcription of small guide sgRNA (gctgcgctggtcgtcgacaaCGG, where CGG is the Protospacer Adjacent Motif, PAM) as per manufacturer\u2019s protocol. mMESSAGE mMACHINE T7 transcription kit (Ambion) was used to synthesize Cas9 mRNA. MEGAclear transcription clean up kit (Ambion Thermo Fisher Scientific) was used to purify the synthesized RNAs. About 20 hr post HCG, the CRISPR solution was injected into zygotes via pronuclear injection at a concertation of: Cas9 mRNA: 100 ng/\u00b5L, template DNA: 100 ng/\u00b5L, and gRNA: 50 ng/\u00b5L. The zygotes were further cultured overnight in KSOM media using a 5% CO2 incubator. All the embryos which successfully cleaved to the 2 cell stage were transferred into recipient females via oviduct transfer. A founder female that was mosaic for the mutation was derived and crossed with a wildtype male to derive heterozygotes. One male and female heterozygote from the F1 generation were crossed to produce F2 generation. Two separate litters from the F2 generation produced two wildtype females, five heterozygote males, one heterozygote female, and three homozygote males.\n\nTemplate DNA sequence:\n\n5\u2032CGGCTGTTGGCGGCCCCGAGGTGACTATAGCCTTCTTTTGTGTCTTGATAGTAGTTCGCCATGGAAGAGGAAATCGCTGCGCTGGTCATTGACAACGGCTCCGGCATGTGCAAAGCCGGCTTCGCGGGCGACGATGCTCCCCGGGCTGTA 3\u2032\n\nThe Actb gene has an EcoRV site which gets destroyed upon gene editing (Figure 1\u2014figure supplement 1). We utilized restriction digestion of a PCR product produced from the Actb gene to determine the genotype of the resulting mice. While wild type (Actb+/+) mice gave two bands: 600 bp and 300 bp upon EcoRV digestion, mice homozygous for the mutations (Actbc-g/Actbc-g) give a single band at 900 bp. PCR products from mice that are heterozygous for the mutation (Actb/Actbc-g) gave three bands upon EcoRV digestion (Figure 1\u2014figure supplement 1). The results were further verified by sequencing the 5\u2032 end of the Actb gene. In order to verify that \u03b2-actin protein was no longer produced, tail samples were lysed and a western blot was carried out using isoform-specific antibodies: mouse anti-\u03b2-actin (Clone 4C2, EMD Millipore, Burlington, MA, and Clone AC15, Sigma Aldrich, Burlington, MA), mouse anti-\u03b3-actin (Clone 2C3 EMD Millipore).\n\n### Cell culture\n\nPrimary Mouse Embryonic Fibroblasts (MEFs) were isolated from the back area of freshly euthanized E12.5 mouse embryos by tissue disruption and cultured in DMEM (Gibco) supplemented with 10% FBS (Gibco).\n\n### Cell migration assays and imaging\n\nCell migration was stimulated by making an infinite scratch wound. The cells were allowed to recover for a period of 2 hr before imaging. Migration rates were measured as the area covered by the edge of the wound in the field of view per unit time using Fiji (NIH, Bethesda, MD). For measurements of directionality in single cell migration assays, primary MEFs were cultured on glass bottom MatTek (Ashland, MA) dishes coated with 5 \u00b5g/ml Fibronectin at low cell densities. 2 hr after seeding, cells were imaged at 10 min intervals for 4 hr. Single cells were tracked using Metamorph Track Objects (Molecular Devices, Sunnyvale, CA) module. The obtained total displacement was divided by total distance of the track to obtain a directionality score shown in Figure 5. All images for these experiments were acquired on a Nikon Ti microscope with a 10X Phase objective and Andor iXon Ultra 888 EMCCD camera.\n\n### Immunofluorescence\n\nTo quantitate the amount of actin polymer, cells were seeded on coverslips in six well plates at 20,000 cells/well overnight and fixed in 4% (w/v) PFA at room temperature for 30 min. Cells were then stained with Phalloidin conjugated to AlexaFluor 594 (Molecular Probes, Eugene, OR). Images were acquired using Andor iXon Ultra 888 EMCCD camera at 40X and the total intensity of phalloidin per cell was measured using Metamorph (Molecular Devices).\n\n### Western blotting\n\nTissues from 2 month old Actb+/+ and Actbc-g/Actbc-g mice were collected and flash frozen in liquid nitrogen. Brain, Kidney, Liver and Lung tissues were ground and weighed. The samples were lysed directly in 4x SDS sample buffer (1:4 w/v). Equal volumes of the lysates loaded for SDS-PAGE and 2D gel electrophoresis. Following transfer of the gels, the blots were dried and stained with LI-COR REVRT Total protein stain as per manufacturer's protocol. Images were obtained using an Odyssey scan bed in the 700 nm channel. The blots were then blocked and incubated with primary antibodies for mouse anti-\u03b2-actin (Clone 4C2, EMD Millipore), mouse anti-\u03b3-actin (Clone 2C3, EMD Millipore), and rabbit anti-pan-actin (Cytoskeleton, Inc., Denver, CO). Secondary antibodies against mouse and rabbit conjugated to IRDye800 were used to probe the blots and images were acquired in the 800 nm channel using Odyssey scan bed. The total protein intensity was used to account for loading differences and the obtained signals were normalized to the first lane in the blot.\n\n2D gel analysis was performed by Kendrick Laboratories, Inc. (Madison, WI) as described by (Burgess-Cassler et al., 1989; O'Farrell, 1975) using shallow pH gradient for the first dimension to separate actin isoforms (pH 4\u20136, 4\u20138).\n\n### Sequence and ribosome profiling data analysis\n\nNCBI RefSeq mouse genome v. 10 was used for this analysis. GWIPS read density profiles for mouse chromosomes were mapped to the NCBI RefSeq CDS annotations to produce the profiles for mouse mRNAs. Characteristic ribosome density was computed as the average density in the 5\u2019 150 codons of the CDS.\n\nThe longest protein encoded in the same locus, as annotated in the genome, was collected from the same locus. Sequences were clustered at 90% identity over 90% of length using blastclust program (https://www.ncbi.nlm.nih.gov/pubmed/17993672).\n",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "37a94985-8935-4130-ad0c-95587d0fdf2d",
+      "submission_id": "a3093f97-5ddb-4823-81a3-1f2d54c0f9da",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pekka Lappalainen, University of Helsinki Finland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31661.029](https://doi.org/10.7554/eLife.31661.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Diverse functions of closely homologous actin isoforms are defined by their nucleotide, rather than their amino acid sequence\" for consideration by eLife. Your article has been favorably evaluated by Anna Akhmanova (Senior Editor) and three reviewers, one of whom, Pekka Lappalainen, is a member of our Board of Reviewing Editors. One of the other two reviewers, Peter Gunning, has also agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe mammalian non-muscle actin isoforms, \u03b2- and \u03b3-actin, are highly homologous, but yet they display different localization patterns and functions in cells. Moreover, \u03b2-actin deletion results in embryonic lethality and cannot be compensated by up-regulation of other actin isoforms. Recent studies by the Kashina lab revealed that only \u03b2-actin is arginylated in cells. Moreover, they demonstrated that differences in the nucleotide coding sequences, instead of amino acid sequences, between \u03b2- and \u03b3-actin actin isoforms are responsible for differences in their arginylation.\n\nHere, Vedula et al. generated knock-in mice to test whether the differences in the in vivo functions between \u03b2- and \u03b3-actin arise from differences in their nucleotide, rather than their amino acid sequences. Importantly, their data demonstrate that editing \u03b2-actin gene to encode \u03b3 actin does not result in detectable defects in animal development and survival, or in migration and cytoskeletal organization of MEFs isolated from the mutant embryos. These and other data presented in the manuscript propose that in highly homologous protein isoforms, including \u03b2- and \u03b3-actin and perhaps also histone and tubulin isoforms, the functional differences may arise from specific features of the nucleotide sequences that regulate translational dynamics, and hence affect post-translational modifications.\n\nMajority of the experiments presented in the manuscript appear very convincing and of good technical quality. However, the manuscript could be significantly improved by better presentation of the data, by performing some additional control experiments, and by refocusing the manuscript to the most important findings.\n\nEssential revisions:\n\n1) The claim that \u03b3-actin coded by the \u03b2-actin gene leads to no impact on organism survival needs some quantitative data, which can be derived from mouse breeding records. What is the comparative litter size of the different genotypes? While it would be unfair to ask for lifetime data, it would be helpful to have some data indicating the% survival out to 6 or 12 months. If such analysis cannot be performed, the authors should remove all conclusions concerning organism survival from the manuscript.\n\n2) The part of manuscript focusing on editing of \u03b3-actin gene to encode \u03b2-actin is not particularly informative. Not all amino acids were mutated (i.e. the protein is a \u03b2-\u03b3 actin hybrid) and the analysis of the phenotypes was superficial considering that the \u03b3-actin mutant mice display only rather mild phenotypes. Thus, these data should be either deleted from the manuscript, or the authors should carry out a much more detailed phenotypic analysis of the mice.\n\n3) The data on cell migration (since this is the process, where \u03b2-actin has been specifically implicated) could be solidified by further experiments. For example, Figure 3A shows a MEF from the \u03b2-c-\u03b3, which appears to have well defined lamellipodia at opposite poles of the cell. In addition, the \u03b2-c-\u03b3 cell in Figure 3B shows what appears to be thicker lamellipodia. This suggests that tracking single cell motility might reveal that the \u03b2-c-\u03b3 cells show a reduced persistence of directional movement; a manifestation of disrupted polarity. Similarly, the images in Figure 4. suggest that there is much more individual cell movement in the wild-type compared to the \u03b2-c-\u03b3 cells, which appear to move much more as a 'community'.\n\n4) The authors should extensively modify the 'Discussion' to better acknowledge previous biochemistry work on \u03b2- and \u03b3-actins, as well as to consider alternative explanations for their results.\n",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7bbf3b3-7e15-4841-a1f6-3e72befd6eb0",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C1",
+      "claim": "\u03b2-cytoplasmic actin and \u03b3-cytoplasmic actin are nearly indistinguishable in their amino acid sequence, differing by only four residues within their N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2\u2010 and \u03b3\u2010cytoplasmic actin are nearly indistinguishable in their amino acid sequence, but are encoded by different genes that play non\u2010redundant biological roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citation to Vandekerckhove and Weber, 1978 in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "f5e0a298-2108-44d8-8532-638c67b36993",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C2",
+      "claim": "\u03b2-actin and \u03b3-actin are encoded by different genes.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2\u2010 and \u03b3\u2010cytoplasmic actin are nearly indistinguishable in their amino acid sequence, but are encoded by different genes that play non\u2010redundant biological roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "d5d85670-6a48-4dcb-98e0-15f77db472a4",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C3",
+      "claim": "\u03b2-actin and \u03b3-actin play non-redundant biological roles.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2\u2010 and \u03b3\u2010cytoplasmic actin are nearly indistinguishable in their amino acid sequence, but are encoded by different genes that play non\u2010redundant biological roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by multiple citations throughout the manuscript regarding knockout phenotypes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "239c7759-66d5-4828-93ee-92323891ced6",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C4",
+      "claim": "\u03b2-actin and \u03b3-actin mRNA coding sequences differ by nearly 13% due to silent substitutions affecting approximately 40% of their codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, \u03b2-and \u03b3-actin mRNA coding sequences differ much more significantly, by nearly 13%, due to silent substitutions affecting approximately 40% of their codons (Erba et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by citation to Erba et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "b5ed73c0-b7f7-4500-9329-451f1d56b6b0",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C5",
+      "claim": "\u03b2-actin is translated in bursts and accumulates faster than \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence suggests that this difference in mRNA coding sequence affects translation dynamics of the two actin isoforms: \u03b2-actin is translated in bursts and accumulates faster than \u03b3-actin (Buxbaum et al., 2014; Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly and supported by citations to Buxbaum et al., 2014 and Zhang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "4566a7b2-95f7-4f2d-9e90-0fb1b25b8226",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C6",
+      "claim": "Faster translation of \u03b2-actin results in differential post-translational modification by arginylation, which targets only \u03b2- but not \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Such faster translation results in their differential post-translational modification by arginylation, which targets only \u03b2- but not \u03b3-actin (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by citation to Zhang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "fed6e4da-765c-4a3e-bd10-0cc4bcc8787f",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C7",
+      "claim": "\u03b2-actin and \u03b3-actin localize to different parts of the cell and tend to incorporate into different actin cytoskeletal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "A body of evidence shows that these actins localize to different parts of the cell and tend to incorporate into different actin cytoskeletal structures (Dugina et al., 2009; Kashina, 2006; Otey et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "bbc2c5e3-52a6-453e-9673-bc2478352258",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C8",
+      "claim": "\u03b2-actin knockout in mice results in early embryonic lethality despite proportional up-regulation of other actin isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "More definitively, several studies show that \u03b2-actin knockout in mice results in early embryonic lethality despite proportional up-regulation of other actin isoforms to compensate for the total actin dosage (Bunnell et al., 2011; Shawlot et al., 1998; Shmerling et al., 2005; Strathdee et al., 2008; Tondeleir et al., 2013, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by multiple citations to knockout studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "071947cc-6a65-4f2e-bd0d-cdf7c794ac94",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C9",
+      "claim": "\u03b3-actin knockout in mice has a much milder phenotype that does not interfere with animal survival during embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "while \u03b3-actin knockout in mice has a much milder phenotype that does not interfere with animal survival during embryogenesis (Belyantseva et al., 2009; Bunnell and Ervasti, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by citations to knockout studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "362e0c38-7469-4c18-bfd3-33aea0a5f01d",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C10",
+      "claim": "The lethality of \u03b2-actin knockout in mice can be rescued by a targeted knock-in of the \u03b2-actin cDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This lethality of \u03b2-actin knockout in mice can be rescued by a targeted knock-in of the \u03b2-actin cDNA (Tondeleir et al., 2012), suggesting that the coding region of this gene is far more important for organism's survival than any non-coding elements affected by the \u03b2-actin knockout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by citation to Tondeleir et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "1050b5cc-d22d-4da5-9812-d42183944e44",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C11",
+      "claim": "The coding region of the \u03b2-actin gene is more important for organism's survival than any non-coding elements affected by the \u03b2-actin knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "This lethality of \u03b2-actin knockout in mice can be rescued by a targeted knock-in of the \u03b2-actin cDNA (Tondeleir et al., 2012), suggesting that the coding region of this gene is far more important for organism's survival than any non-coding elements affected by the \u03b2-actin knockout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the rescue experiment cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "00acf2d0-1191-48ca-b6aa-7ce2a0fe9110",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C12",
+      "claim": "Some biochemical differences between \u03b2- and \u03b3-actin were observed in polymerization assays both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Some biochemical differences between \u03b2- and \u03b3-actin were observed in polymerization assays both in vitro and in vivo (Bergeron et al., 2010; Kapustina et al., 2016; M\u00fcller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "1bddb249-ec1b-4b5f-b75d-fb09c38f4387",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C13",
+      "claim": "\u03b2-actin mRNA, unlike \u03b3-actin mRNA, gets spatially targeted to the cell periphery via zipcode-mediated transport.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, \u03b2-actin mRNA, unlike \u03b3-actin mRNA, gets spatially targeted to the cell periphery via zipcode-mediated transport (Hill and Gunning, 1993; Kislauskis et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "984f8d2b-14ca-488d-b386-61c2830c71ce",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C14",
+      "claim": "\u03b2- and \u03b3-actin can differentially regulate gene expression of a subset of cytoskeleton proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, \u03b2- and \u03b3-actin actin can differentially regulate gene expression of a subset of cytoskeleton proteins (Tondeleir et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "0056066b-a64d-4e2e-a243-b038bf1abdf1",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C15",
+      "claim": "Editing of the \u03b2-actin coding sequence to encode \u03b3-actin protein without disruption of the rest of the \u03b2-actin gene does not affect mouse survival or produce a visible phenotype at the organismal or cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate here that editing of the \u03b2-actin coding sequence to encode \u03b3-actin protein without disruption of the rest of the \u03b2-actin gene does not affect mouse survival or produce a visible phenotype at the organismal or cellular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented in Figures 1-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "e858588a-9d80-4109-b3b4-6a043491cab3",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C16",
+      "claim": "\u03b3-actin protein is functionally capable of substituting for \u03b2-actin in the absence of gene disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that \u03b3-actin protein is functionally capable of substituting for \u03b2-actin in the absence of gene disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "d9307efe-c0e9-490a-8757-bec2743af14b",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C17",
+      "claim": "The differences in in vivo functions of \u03b2- and \u03b3-actin are ultimately determined by their nucleotide rather than amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we demonstrate that the differences in in vivo functions of \u03b2- and \u03b3-actin actin are ultimately determined by their nucleotide rather than amino acid sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "847c3b0d-9597-4545-a05e-6c27bc311689",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C18",
+      "claim": "CRISPR/Cas9-mediated gene editing was used to introduce five point mutations into the native mouse \u03b2-actin gene (Actb), altering it to encode \u03b3-actin protein.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this essential function of \u03b2-actin is defined by its amino acid or nucleotide sequence, we used CRISPR/Cas9-mediated gene editing to introduce five point mutations into the native mouse \u03b2-actin gene (Actb), altering it to encode \u03b3-actin protein without changing any of the features of the rest of the gene sequence ('beta-coded gamma actin', Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "d652b398-122c-4d6b-aef3-9d82912d7f42",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C19",
+      "claim": "The edited \u03b2-actin gene (Actbc-g) contains the same promoter, as well as the same coding and non-coding elements as the native gene, but produces \u03b3-actin protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We termed this edited gene Actbc-g, in which the native \u03b2-actin gene is nearly intact (with five point mutations within the first 10 codons) and contains the same promoter, as well as the same coding and non-coding elements, but the protein produced from this gene is identical to \u03b3-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "37392c2b-a4c8-4559-8a02-4037f4d6d404",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C20",
+      "claim": "Actbc-g mice appeared completely healthy, viable, and fertile with no signs of deficiencies previously seen in any of the \u03b2-actin knockout mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Actbc-g mice appeared completely healthy, viable, and fertile with no signs of deficiencies previously seen in any of the \u03b2-actin knockout mouse models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by observational data from the mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "47265997-5c3d-45d9-bd90-ac61a37a0f3a",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C21",
+      "claim": "Actbc-g mice did not exhibit any visible defects in embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice did not exhibit any visible defects in embryogenesis (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "e3c52f33-be19-449f-a6ae-1f8509ac8bff",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C22",
+      "claim": "Actbc-g mice appeared healthy and normal at birth and throughout life (observed until approximately 8 months old).",
+      "claim_type": "EXPLICIT",
+      "source": "and appeared healthy and normal at birth and throughout life (Figure 1C) (observed until approximately 8 months old by the time of the submission of this study for publication).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "2f202a81-181e-4484-b628-fe5d75e43ddb",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C23",
+      "claim": "Actbc-g mice had normal fertility, with litter sizes from homozygous breeding pairs averaging 6.4 pups per litter (\u00b10.38 SEM, n = 9).",
+      "claim_type": "EXPLICIT",
+      "source": "These mice also had normal fertility, as evidenced by litter sizes from Actbc-g homozygous breeding pairs that averaged 6.4 pups per litter (\u00b10.38 SEM, n = 9), compared to the average litter size of 6.3 pups previously reported for their matching background wild type strain C57BL/6 (http://www.informatics.jax.org/silver/tables/table4-1.shtml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "fd55b0c7-4f38-4b14-ae66-088fbd205364",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C24",
+      "claim": "The average litter size for wild type C57BL/6 mice is 6.3 pups.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to the average litter size of 6.3 pups previously reported for their matching background wild type strain C57BL/6 (http://www.informatics.jax.org/silver/tables/table4-1.shtml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a reference to published data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "aef9bf6d-e195-4656-aedd-0b6c8384a93e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C25",
+      "claim": "\u03b2-actin nucleotide sequence, rather than its amino acid sequence, determines the essential function of \u03b2-actin in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this result definitively proves that \u03b2-actin nucleotide sequence, rather than its amino acid sequence, determines the essential function of \u03b2-actin in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "c6d2045e-9754-49e1-ad7a-99c62cb4c95f",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C26",
+      "claim": "No overall differences or abnormalities were found between wild type and Actbc-g mice in the morphology and appearance of all major organs and body parts in newborn (P0) mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for possible milder defects in these mice, we analyzed the overall morphology and appearance of all major organs and body parts in newborn (P0) Actbc-g mice by sagittal sectioning and H&E staining, and found no overall differences or abnormalities between wild type and Actbc-g mice (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "cba597f2-abdd-4746-bb2b-cf8642f79db6",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C27",
+      "claim": "Embryonic development in Actbc-g mice occurs normally.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the embryonic development in these mice occurs normally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the histological analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "99978e4a-c89a-4f21-b622-8078f1ff89eb",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C28",
+      "claim": "In Actbc-g mice, loss of \u03b2-actin protein was accompanied by a prominent increase in \u03b3-actin, without overall changes in total actin levels in brain, kidney, liver, and lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "In all these tissues, loss of \u03b2-actin protein was accompanied by a prominent increase in \u03b3-actin, without overall changes in total actin levels (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figure 2 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "0aea40a2-4188-4184-8460-9bdf89979747",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C29",
+      "claim": "Corresponding changes in actin isoforms were seen on 2D gels from brain, kidney, liver, and lung tissues, run under shallow pH gradient to separate actin isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Corresponding changes were also seen on 2D gels from these tissues, run under shallow pH gradient to separate actin isoforms (Figure 2 and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "8e604be8-425a-44c8-8dfd-c655a8be1239",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C30",
+      "claim": "CRISPR/Cas9 gene editing was used to edit the mouse \u03b3-actin gene to encode \u03b2-actin protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed a reciprocal experiment, using CRISPR/Cas9 gene editing to edit the mouse \u03b3-actin gene to encode \u03b2-actin protein ('gamma-coded beta actin' or \u03b3c-\u03b2-actin, Figure 2\u2014figure supplements 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "1cc27d12-8935-4941-a296-4c7f6eff312e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C31",
+      "claim": "The \u03b3-actin gene editing strategy was only partially successful, resulting in replacement of the first three nucleotides to convert the N-terminal MEEE sequence of \u03b3-actin into the MDDD sequence of \u03b2-actin, while failing to achieve I/V substitution at codon 10.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy was only partially successful, resulting in replacement of the first three nucleotides to convert the N-terminal MEEE sequence of \u03b3-actin into the MDDD sequence of \u03b2-actin, while failing to achieve I/V substitution at codon 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the description of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "08cbfdaa-6f5c-4a8f-adf6-e1e72ed05e6c",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C32",
+      "claim": "Actg1c-b mice showed no detectable phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These Actg1c-b mice showed no detectable phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated based on observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "32e0dc84-553e-4ca4-803a-6a7b6458bd62",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C33",
+      "claim": "Actg1c-b mice showed disappearance of \u03b3-actin protein and a corresponding increase in \u03b2-actin-like protein by western blots.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, they showed disappearance of \u03b3-actin protein and a corresponding increase in \u03b2-actin-like protein by western blots (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "b600b93d-635e-4cbb-b16a-ed5e78a2637e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C34",
+      "claim": "\u03b3-actin in vivo functions, like \u03b2-actin, is also defined by its nucleotide, rather than amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that \u03b3-actin in vivo functions, like \u03b2-actin, is also defined by its nucleotide, rather than amino acid sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the Actg1c-b mouse data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "c00927bc-dbb6-4993-ab84-acdbda60a805",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C35",
+      "claim": "\u03b2-actin has been previously shown to play a major role in directional cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Since \u03b2-actin has been previously shown to play a major role in directional cell migration, and its knockout in cells leads to severe impairments in their actin cytoskeleton organization and their ability to migrate (Bunnell et al., 2011; Tondeleir et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "4806a302-218b-4ca9-9eec-6e7ad68aefa0",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C36",
+      "claim": "\u03b2-actin knockout in cells leads to severe impairments in their actin cytoskeleton organization and their ability to migrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Since \u03b2-actin has been previously shown to play a major role in directional cell migration, and its knockout in cells leads to severe impairments in their actin cytoskeleton organization and their ability to migrate (Bunnell et al., 2011; Tondeleir et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "019b7bf3-125e-4754-8101-ef5c5180b3ad",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C37",
+      "claim": "No difference in F-actin levels was detected between wild type and Actbc-g mouse embryonic fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no difference in F-actin levels in these cells (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "60316f29-318a-4f84-bda8-90664e6398fc",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C38",
+      "claim": "No difference in the morphology and appearance of the actin cytoskeleton was observed between wild type and Actbc-g mouse embryonic fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "or in the morphology and appearance of the actin cytoskeleton (Figure 3 and Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "3ccd87e2-8d0b-48d1-ba97-32eb8eab5ef2",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C39",
+      "claim": "No difference was observed in overall migration rates of cell monolayers between wild type and Actbc-g mouse embryonic fibroblasts in wound healing assays.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the ability of these cells to migrate, we performed wound healing assays to measure the overall migration rates of the cell monolayers in wild type and Actbc-g. We also measured the directionality of single cell migration on fibronectin-coated dishes. In both assays, no difference was observed between the two cell types (Figure 5 and Figure 5\u2014videos 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "7356f5d4-bf34-447f-b536-74deca12cc0e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C40",
+      "claim": "No difference was observed in the directionality of single cell migration on fibronectin-coated dishes between wild type and Actbc-g mouse embryonic fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the ability of these cells to migrate, we performed wound healing assays to measure the overall migration rates of the cell monolayers in wild type and Actbc-g. We also measured the directionality of single cell migration on fibronectin-coated dishes. In both assays, no difference was observed between the two cell types (Figure 5 and Figure 5\u2014videos 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "108b8372-b518-46d7-8967-542e269419c9",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C41",
+      "claim": "The actin isoform substitution did not result in any significant changes in the cells' ability to migrate.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming that the actin isoform substitution did not result in any significant changes in these cells' ability to migrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the migration assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "06ae6545-01b3-4a02-b38f-08a838031582",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C42",
+      "claim": "The ribosome density on mouse \u03b2-actin mRNA is over a thousand fold higher than \u03b3-actin (average ribosome density over the first 150 codons: 1351.607 for \u03b2-actin versus 1.289 for \u03b3-actin).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, composite data from 26 independently performed ribosome profiling studies from different mouse tissues show that the ribosome density on mouse \u03b2-actin mRNA is over a thousand fold higher than \u03b3-actin (average ribosome density over the first 150 codons: 1351.607 for \u03b2-actin versus 1.289 for \u03b3-actin, see also Table 1 and Supplementary file 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated with quantitative data from ribosome profiling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "109dded1-93ed-42ae-98eb-b2e401a9c1b7",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C43",
+      "claim": "The translation dynamics of \u03b2-actin in vivo is dramatically different from that of \u03b3-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the translation dynamics of \u03b2-actin in vivo is dramatically different from that of \u03b3-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the ribosome density data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "edd7211e-99d0-4073-be07-3784e3cbd803",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C44",
+      "claim": "Members of the actin family have vastly different ribosome densities, with \u03b2-actin being by far the highest, while \u03b3-enteric smooth muscle actin is by far the lowest (ribosome density 0.377).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that members of the actin family have vastly different ribosome densities, with \u03b2-actin being by far the highest, while \u03b3-enteric smooth muscle actin is by far the lowest (ribosome density 0.377)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated based on analysis of ribosome profiling data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "37eec61b-b1e5-4279-803f-fa7c30a701a5",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C45",
+      "claim": "The intracellular accumulation rate and translation dynamics for \u03b2-actin and \u03b3-enteric smooth muscle actin should be vastly different from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the intracellular accumulation rate for these two proteins, as well as their translation dynamics, should be vastly different from each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the ribosome density differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "12cd7f2c-f2ad-448f-9758-1441a21fa9bc",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C46",
+      "claim": "\u03b2-actin and \u03b3-enteric smooth muscle actin have different mRNA structures in the coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "In support, they also have different mRNA structures in the coding region (Zhang et al., 2010, Supplementary file 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation and reference to supplementary data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "c95e2e40-1395-409f-b1bf-afd2be99d062",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C47",
+      "claim": "The actin isoforms that tend to become up-regulated in different knockout models are typically those with the closest ribosome density to the isoform that had been knocked out.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the actin isoforms that tend to become up-regulated in different knockout models are typically those with the closest ribosome density to the isoform that had been knocked out (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the data in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "f637974e-a14e-44c4-9787-c903e24fdeb2",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C48",
+      "claim": "Alpha skeletal and alpha smooth muscle actins appear to partially cross-compensate for each other, and these isoforms are the second and third highest by ribosome density, after \u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, alpha skeletal and alpha smooth muscle actins appear to partially cross-compensate for each other, and these isoforms are also the second and third highest by ribosome density, after \u03b2-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of knockout data and ribosome density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "8b33df98-e59f-42c2-9068-14c6eefacd0c",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C49",
+      "claim": "\u03b1-cardiac actin completely rescues knockout of \u03b1-skeletal actin, which has the closest ribosome density.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-cardiac actin completely rescues knockout of \u03b1-skeletal actin, which has the closest ribosome density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of knockout data and ribosome density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "ece4c431-647f-4a16-9c32-dd673bbccfcd",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C50",
+      "claim": "Loss of \u03b1-cardiac actin cannot be substituted for by \u03b3-enteric smooth muscle actin, which has a ~10 fold lower ribosome density.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, loss of \u03b1-cardiac actin cannot be substituted for by \u03b3-enteric smooth muscle actin, which has a ~10 fold lower ribosome density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of knockout data and ribosome density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "2ecfa4a7-c87f-4ce6-9b38-d233ce910c6f",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C51",
+      "claim": "Actin isoforms with similar ribosome density can plausibly compensate for the loss of one of the isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest the actin isoform with similar ribosome density can plausibly compensate for the loss of one of the isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the analysis of knockout and ribosome density data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "474f6800-627f-4f12-955e-d5b584689c9f",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C52",
+      "claim": "Given the orders of magnitude difference in ribosome density between \u03b2-actin and other actin isoforms, none of the other actin isoforms can compensate for the loss of \u03b2-actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, given the orders of magnitude difference in ribosome density between \u03b2-actin and other actin isoforms, none of the other actin isoforms can compensate for the loss of \u03b2-actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the ribosome density analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "192f13f2-f3e1-469d-be9f-c04932fc561b",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C53",
+      "claim": "Changes in ribosome density arising from silent substitutions in nucleotide sequence affect translation dynamics and protein accumulation rates, which in turn regulate functional diversity of actins.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that changes in ribosome density arising from silent substitutions in nucleotide sequence, affect translation dynamics and protein accumulation rates, which in turn regulate functional diversity of actins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed mechanism based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "1789f9de-d4c2-42a2-8a9a-86612ae8077a",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C54",
+      "claim": "A search of the mouse genome for proteins that are over 90% identical both in length and in their amino acid sequence over their entire length, and are encoded by different genes, yielded 741 families encoding nearly 4000 different open reading frames.",
+      "claim_type": "EXPLICIT",
+      "source": "First, to identify all protein families encoding highly similar proteins, we searched the mouse genome for proteins that are over 90% identical both in length and in their amino acid sequence over their entire length, and are encoded by different genes. This search yielded 741 families in mouse, encoding nearly 4000 different open reading frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the bioinformatic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "8e64d79f-3205-4cfa-846c-dbe34be8d2cb",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C55",
+      "claim": "The top families with high standard deviation of ribosome densities identified in mouse, human, and zebrafish genomes were similar and included the actin family as one of the top hits.",
+      "claim_type": "EXPLICIT",
+      "source": "The top families identified in these searches were similar in all three vertebrate genomes, and contained the actin family as one of the top hits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "99051a71-78a9-48f5-997d-75b0ce32cd86",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C56",
+      "claim": "The other uniformly present top hits in mouse, human, and zebrafish included multiple classes of histones and tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "The other uniformly present top hits included multiple classes of histones and tubulins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "49efcdae-ae25-4951-b01f-79a4e343c49b",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C57",
+      "claim": "Analysis of D. melanogaster and C. elegans genomes also yielded actins, tubulins, and histones as the top hits.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, similar analysis of D. melanogaster and C. elegans genomes (Supplementary files 4 and 5) also yielded actins, tubulins, and histones as the top hits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "22664b21-9bbf-4113-984b-71b3f2e23b64",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C58",
+      "claim": "The occurrence of families of nearly identical proteins with vastly different ribosome densities may be broadly common in higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the occurrence of families of nearly identical proteins with vastly different ribosome densities may be broadly common in higher eukaryotes, supporting our idea that this feature may underlie their functional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the comparative genomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "8054fc2e-a189-43b4-b9f8-620e1c4f5592",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C59",
+      "claim": "Posttranscriptional regulation of highly homologous proteins in seemingly redundant protein families through silent nucleotide-encoded translation dynamics constitutes a novel type of functional regulation that governs some of the most essential functions in eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that posttranscriptional regulation of highly homologous proteins in seemingly redundant protein families through silent nucleotide-encoded translation dynamics constitutes a novel type of functional regulation that governs some of the most essential functions in eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed mechanism based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "4d2273fc-5a07-4f5e-bdb6-1643b10dc055",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C60",
+      "claim": "The proposed regulation mechanism is termed 'silent code', to reflect its origin in silent substitutions within the genetic code.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose to term this regulation 'silent code', to reflect its origin in silent substitutions within the genetic code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a proposed terminology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "92da4e21-c42a-485d-b180-ba5a66dbd022",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C61",
+      "claim": "Silent substitutions in nucleotide sequence are a novel determinant that drives the differential functions of non-muscle actin isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate a novel determinant \u2013 silent substitutions in nucleotide sequence \u2013 that drives the differential functions of non-muscle actin isoforms, a mechanism potentially applicable to other members of the actin family and other highly similar proteins in eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "7b76c755-0255-4fba-83e9-422d5634747b",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C62",
+      "claim": "The mechanism of silent substitutions driving differential functions is potentially applicable to other members of the actin family and other highly similar proteins in eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate a novel determinant \u2013 silent substitutions in nucleotide sequence \u2013 that drives the differential functions of non-muscle actin isoforms, a mechanism potentially applicable to other members of the actin family and other highly similar proteins in eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed extension of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "8b298e5b-08ad-4969-a3e1-f18bfa2391b7",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C63",
+      "claim": "The nucleotide sequence of the gene, rather than the amino acid sequence of the encoded isoform, determines the absolute requirement of \u03b2-actin for organism's survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that the nucleotide sequence of the gene, rather than the amino acid sequence of the encoded isoform, determines the absolute requirement of \u03b2-actin for organism's survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "a141e46f-d513-47eb-ab37-54b3f6fe3d97",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C64",
+      "claim": "\u03b2-actin and \u03b3-actin isoforms have slightly different polymerization kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03b2-actin and \u03b3-actin isoforms share a remarkable conservation at the amino acid level, with just four homologous amino changes at their N-termini, these two proteins have been shown to have slightly different polymerization kinetics (Bergeron et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "c87477f3-c4e2-492f-90fa-233afd1a432e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C65",
+      "claim": "\u03b2-actin and \u03b3-actin differentially interact with cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "and to differentially interact with cofilin (Kapustina et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "aee92b96-a8f8-4bae-83d8-49dceeb6b5e3",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C66",
+      "claim": "\u03b2-actin and \u03b3-actin differentially interact with non-muscle myosin isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "and non-muscle myosin isoforms (M\u00fcller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "d55b1cec-88d9-434c-bcb2-1c2bf5a6b0e4",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C67",
+      "claim": "Actin 3\u2032UTRs are isoform-specific and evolutionarily conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of mRNA, actin 3\u2032UTRs are isoform-specific and evolutionarily conserved, suggesting that they play important roles in vivo (Erba et al., 1986; Hill and Gunning, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "abd027e5-7d70-4d59-9c9b-ffd53890d7b0",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C68",
+      "claim": "\u03b2-actin 3\u2032UTR is important for the localization of the transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "A plethora of literature elucidates the importance of \u03b2-actin 3\u2032UTR for the localization of the transcript (see, e.g. (Condeelis and Singer, 2005) for a comprehensive review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "4f818eb3-42b3-4fe0-9366-82ea05495993",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C69",
+      "claim": "\u03b3-actin mRNA induces a ribosome pausing event, resulting in its slower translation compared to \u03b2-actin, a mechanism that drives their differential arginylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that \u03b3-actin mRNA induces a ribosome pausing event, resulting in its slower translation compared to \u03b2-actin, a mechanism that drives their differential arginylation (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "0ecf9a28-91a5-40dc-ae33-610ab4a360cc",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C70",
+      "claim": "An alternative poly A site in \u03b2-actin mRNA increases its translation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative poly A site in \u03b2-actin mRNA increases its translation levels (Ghosh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "3973dc61-bfb4-402f-b8bf-17101eaadb1c",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C71",
+      "claim": "\u03b3-actin gene contains a unique and highly conserved intron III.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-actin gene contains a unique and highly conserved intron III (Lloyd and Gunning, 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "58ab8008-a8bb-4ee2-92b0-1b8468d64293",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C72",
+      "claim": "\u03b3-actin gene contains an alternatively spliced exon 3a.",
+      "claim_type": "EXPLICIT",
+      "source": "and an alternatively spliced exon 3a (Drummond and Friderici, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "a6960021-a1ef-47f8-9ed5-134de21479af",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C73",
+      "claim": "\u03b2-actin exhibits both 3\u2032UTR-dependent and 3\u2032UTR-independent feedback regulation of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-actin exhibits both 3\u2032UTR-dependent (Lloyd and Gunning, 1993; Lyubimova et al., 1999) and 3\u2032UTR-independent (Lloyd et al., 1992; Schevzov et al., 1992) feedback regulation of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "ebbb114d-169c-4150-a7ba-589f5ddc063a",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C74",
+      "claim": "Among the 6 members of the actin family in mice, \u03b2-actin by far has the highest representation in the polysome fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome profiling experiments show that among the 6 members of the actin family in mice, \u03b2-actin by far has the highest representation in the polysome fraction (Ingolia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to ribosome profiling data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "fe022ea9-5073-4b07-b0c7-e9c42d461549",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C75",
+      "claim": "High ribosome density confers the cell with the ability to spatially and temporally fine tune translation of \u03b2-actin and the local and global rate of its intracellular accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this confers the cell with the ability to spatially and temporally fine tune translation of \u03b2-actin and the local and global rate of its intracellular accumulation (Buxbaum et al., 2014; Str\u00f6hl et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed mechanism with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "c43aaed4-3ba1-4c83-8c41-036a67015c3d",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C76",
+      "claim": "High ribosome density makes \u03b2-actin the most essential of the actin isoforms and cannot be compensated for when deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "and thus makes \u03b2-actin the most essential of the actin isoforms and cannot be compensated for when deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the ribosome density analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "522880c9-069d-4434-b804-5cac51768046",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C77",
+      "claim": "Non-muscle \u03b3-actin appears to be more functionally redundant and can be largely compensated for by other actins that have similar ribosome densities.",
+      "claim_type": "EXPLICIT",
+      "source": "The nearly identical non-muscle \u03b3-actin appears to be more functionally redundant and can be largely compensated for by other actins that have similar ribosome densities (Perrin and Ervasti, 2010), Table 1, and Supplementary file 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation and reference to data tables.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "ebcf4212-fc17-43d4-822a-b66440c0cdda",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C78",
+      "claim": "Actin isoforms with similar ribosome densities and translation dynamics are more likely to compensate for each other's functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that actin isoforms with similar ribosome densities and translation dynamics are more likely to compensate for each other's functions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "97cb6d7e-179a-4e25-b8ae-6b7bb88ec44b",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C79",
+      "claim": "\u03b2-actin, with the highest-ribosome-density is unique in its functional significance.",
+      "claim_type": "EXPLICIT",
+      "source": "while \u03b2-actin, with the highest-ribosome-density is unique in its functional significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "55c0371b-4b78-4abe-9914-769aa5bf1d38",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C80",
+      "claim": "Deletion of exons 2 and 3 of the \u03b2-actin gene that include \u03b2-actin translation initiation site but do not encompass the promoter region, UTR, or the non-coding elements in the rest of the gene leads to embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, deletion of exons 2 and 3 of the \u03b2-actin gene that include \u03b2-actin translation initiation site but do not encompass the promoter region, UTR, or the non-coding elements in the rest of the gene leads to embryonic lethality (Bunnell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "614c0a2b-20ae-4186-ab9a-01b3675ed9ee",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C81",
+      "claim": "In Actb knockout mice other actin isoforms are up-regulated to compensate for the total actin dosage, but this promoter-mediated up-regulation is insufficient to rescue the phenotype of early embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in Actb knockout mice other actin isoforms are up-regulated to compensate for the total actin dosage, but this promoter-mediated up-regulation is insufficient to rescue the phenotype of early embryonic lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous knockout studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "51ed238d-92ea-441c-8197-cba5477743f1",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C82",
+      "claim": "Targeted insertion of the human \u03b2-actin coding sequence into the \u03b2-actin gene region rescues embryonic lethality in \u03b2-actin knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, targeted insertion of the human \u03b2-actin coding sequence into this region rescues embryonic lethality in these mice, further supporting the idea that the coding sequence plays a key role (Tondeleir et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "a3e8cd10-8a52-4dcc-b5ea-39745f5247f8",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C83",
+      "claim": "Coding sequence drives differences in actin's posttranslational modifications, one of the forms of functional actin regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from our group previously showed that coding sequence drives differences in actin's posttranslational modifications, one of the forms of functional actin regulation (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work from the authors' group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "04472a8f-47e0-4e78-95d8-457f42b75761",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C84",
+      "claim": "The coding region is primarily responsible for the uniquely essential role of \u03b2-actin in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While these studies do not fully exclude a potential contribution of non-coding elements, especially those that may be located between exons 2 and 3 in the gene, they strongly support our hypothesis that the coding region is primarily responsible for the uniquely essential role of \u03b2-actin in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "b80ad21f-76e6-4c8d-afb3-d69ddc540179",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C85",
+      "claim": "Non-muscle actin isoform genes have evolutionarily diverged >100 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that non-muscle actin isoform genes have evolutionarily diverged >100 million years ago",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "2cd90498-6fca-428b-8e1e-3b7f5de65444",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C86",
+      "claim": "Non-muscle actin isoform genes have retained remarkable sequence conservation, far higher than what would be expected if the synonymous substitutions in their coding sequence were completely randomized.",
+      "claim_type": "EXPLICIT",
+      "source": "they have retained remarkable sequence conservation, far higher than what would be expected if the synonymous substitutions in their coding sequence were completely randomized (Erba et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "8f7eec80-9dbc-4d8b-b8ce-1d06fa157738",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C87",
+      "claim": "Actin isoform coding sequence exists under additional evolutionary pressure, over and above the conservation of amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our idea that actin isoform coding sequence exists under additional evolutionary pressure, over and above the conservation of amino acid sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the conservation data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "080384a6-f9d2-48ed-932c-0b6c9331a085",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C88",
+      "claim": "At least some of the evolutionary pressure on actin isoform coding sequence is aimed to maintain the divergent translation dynamics within the actin family, in order to drive their divergent functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that at least some of this pressure is aimed to maintain the divergent translation dynamics within the actin family, in order to drive their divergent functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "83e3afe5-13a6-461a-8b54-01e38886c7c0",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C89",
+      "claim": "Tubulin is one of the top candidate families for regulation through 'silent code' in addition to actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, one of the top candidate families for this regulation in addition to actin \u2013 tubulin \u2013 is also a major cytoskeletal protein regulated by multiple posttranslational modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the bioinformatic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "e5d2df62-3a05-4910-a712-5b48f3f21c08",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C90",
+      "claim": "Some members of the tubulin family conceivably may be regulated via silent substitutions in their coding sequence affecting translation dynamics, like shown previously for non-muscle actins.",
+      "claim_type": "EXPLICIT",
+      "source": "Some members of the tubulin family conceivably may be regulated via silent substitutions in their coding sequence affecting translation dynamics, like shown previously for non-muscle actins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on analogy with actins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "5eff03dc-f203-426f-9154-c4aa2c2576ae",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C91",
+      "claim": "Tubulin \u03b2-V (Tubb5) is likely the most essential of the \u03b2-tubulin genes, whose knockout likely cannot be substituted by up-regulation of any other \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "While systematic mouse knockout data for the alpha and \u03b2\u2212 tubulin isoform families is not available, based on the analogy with the actin isoforms, we predict that tubulin \u03b2-V (Tubb5) is likely the most essential of the \u03b2\u2212 tubulin genes, whose knockout likely cannot be substituted by up-regulation of any other \u03b2\u2212 tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction based on analogy with actins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "747a1e2c-47b9-4a7b-b60f-4b3754480174",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C92",
+      "claim": "Knockout of Tubg1, the tubulin isoform with higher ribosome density, is embryonically lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the two members of the \u03b3\u2212 tubulin isoform family, Tubg1 and Tubg2, have been knocked out in mice, and appear to follow the same trend: knockout of Tubg1, the tubulin isoform with higher ribosome density, is embryonically lethal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to knockout studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "18453bfd-2b9d-4a49-91df-d7c2b3c8091f",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C93",
+      "claim": "Knockout of Tubg2 with the nearly 200 fold lower ribosome density than Tubg1 is not embryonically lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "while knockout of Tubg2 with the nearly 200 fold lower ribosome density is not (Yuba-Kubo et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to knockout studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "909eceae-4ef9-4345-a3c3-fbecb91e30c1",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C94",
+      "claim": "C57Bl/6 strain was used to generate the gene-edited mice.",
+      "claim_type": "EXPLICIT",
+      "source": "C57Bl/6 strain was used to generate the gene-edited mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "fc3c7ed3-4b3d-4a30-8684-f36688aa5737",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C95",
+      "claim": "The Actb gene has an EcoRV site which gets destroyed upon gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "The Actb gene has an EcoRV site which gets destroyed upon gene editing (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the methods and shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "803746e5-0e8b-47f1-8d06-7e122c6f72ea",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C96",
+      "claim": "Restriction digestion of a PCR product produced from the Actb gene was utilized to determine the genotype of the resulting mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized restriction digestion of a PCR product produced from the Actb gene to determine the genotype of the resulting mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "424ccc80-ae67-4315-9953-7284e573339e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C97",
+      "claim": "Wild type (Actb+/+) mice gave two bands: 600 bp and 300 bp upon EcoRV digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "While wild type (Actb+/+) mice gave two bands: 600 bp and 300 bp upon EcoRV digestion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "65391e83-39e5-4185-a1b2-bb5ac2bcc32e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C98",
+      "claim": "Mice homozygous for the mutations (Actbc-g/Actbc-g) give a single band at 900 bp upon EcoRV digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "mice homozygous for the mutations (Actbc-g/Actbc-g) give a single band at 900 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "7b716f22-6425-4bbf-a968-b4f6e16300fc",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C99",
+      "claim": "PCR products from mice that are heterozygous for the mutation (Actb/Actbc-g) gave three bands upon EcoRV digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "PCR products from mice that are heterozygous for the mutation (Actb/Actbc-g) gave three bands upon EcoRV digestion (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the methods and shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "d874d0b1-84df-44de-9041-028821ef5468",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C100",
+      "claim": "Primary Mouse Embryonic Fibroblasts (MEFs) were isolated from the back area of freshly euthanized E12.5 mouse embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary Mouse Embryonic Fibroblasts (MEFs) were isolated from the back area of freshly euthanized E12.5 mouse embryos by tissue disruption and cultured in DMEM (Gibco) supplemented with 10% FBS (Gibco).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "b8b9edbb-71e1-480a-a02b-f6129566aa3a",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C101",
+      "claim": "NCBI RefSeq mouse genome v. 10 was used for the sequence and ribosome profiling data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "NCBI RefSeq mouse genome v. 10 was used for this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "ec640c87-c081-464d-9004-e4d755d83974",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C102",
+      "claim": "Characteristic ribosome density was computed as the average density in the 5' 150 codons of the CDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Characteristic ribosome density was computed as the average density in the 5' 150 codons of the CDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "85a77a0a-c0d0-4ca2-8a7a-8027c554fbe1",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "claim_id": "C103",
+      "claim": "Sequences were clustered at 90% identity over 90% of length using blastclust program.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences were clustered at 90% identity over 90% of length using blastclust program (https://www.ncbi.nlm.nih.gov/pubmed/17993672).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3281026d-aaf3-429b-a098-ec999d9233b7",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 editing of the mouse \u03b2-actin gene (Actb) to encode \u03b3-actin protein (Actbc-g) produces viable, fertile mice with no detectable phenotype, demonstrating that \u03b2-actin's essential function is determined by its nucleotide sequence rather than amino acid sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C25 and C63 collectively provide strong evidence for this major conclusion. The experimental design is sound (C18-C19), with proper controls and multiple phenotypic assessments (C20-C23, C26-C27). The observation period (8 months, C22) and fertility data (C23, n=9 litters) provide adequate support. However, the study would benefit from longer-term observation and more detailed physiological testing to rule out subtle phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "98501c31-acef-4e53-813b-efcf5f2e057e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Histological analysis of newborn Actbc-g mice shows normal morphology and appearance of all major organs and body parts, suggesting normal embryonic development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by H&E staining data shown in Figure 1D. However, the evaluation is qualitative rather than quantitative, and the analysis is limited to P0 mice. More detailed histological analysis at multiple developmental stages and quantitative morphometric analysis would strengthen this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "78c60aea-2981-489a-b264-842ec413e943",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Actbc-g mice, loss of \u03b2-actin protein is accompanied by increased \u03b3-actin levels without changes in total actin, as demonstrated by Western blots and 2D gel electrophoresis across multiple tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are well-supported by quantitative Western blot data (Figure 2) and 2D gel analysis across brain, kidney, liver, and lung tissues. The use of multiple complementary techniques and tissue types strengthens the conclusion. Sample size (n=3) is adequate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "474dc8c7-14d9-4f71-87f8-e7244033ce7a",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Reciprocal editing of the \u03b3-actin gene to encode \u03b2-actin protein (Actg1c-b) was partially successful, producing mice with no detectable phenotype and altered protein expression, suggesting \u03b3-actin function is also defined by nucleotide sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C34 describe an incomplete experiment. The editing was only partially successful (C31), achieving only 3 of 4 amino acid changes. While the mice show no phenotype (C32) and altered protein expression (C33), the incomplete editing limits the strength of the conclusion (C34). This result requires completion of the full editing to be definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "336a1649-c305-4a55-8869-c160dd594dd1",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mouse embryonic fibroblasts from Actbc-g mice show normal F-actin levels, cytoskeletal morphology, and migration capacity in both wound healing and single-cell migration assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by quantitative data from multiple assays (Figures 3-5). Sample sizes are adequate (n=69-76 cells for F-actin, n=28-29 for wound healing, n=49-50 for directionality). The use of complementary migration assays strengthens the conclusion. However, only one cell type was tested, limiting generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "534f5e27-cc75-4878-adf9-f745359fda6e",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ribosome profiling analysis reveals that \u03b2-actin mRNA has over 1000-fold higher ribosome density than \u03b3-actin (1351.607 vs 1.289), suggesting dramatically different translation dynamics. Actin family members show vastly different ribosome densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by analysis of 26 independent ribosome profiling studies (C42). The quantitative data are striking and consistent. However, the analysis is computational and relies on publicly available data. The claim about mRNA structure differences (C46) cites prior work and supplementary data but lacks detailed validation in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "ce055c99-bb7f-44fb-914d-30da5c1241dc",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Actin isoforms with similar ribosome densities can compensate for each other in knockout models, while \u03b2-actin's uniquely high ribosome density explains why other isoforms cannot compensate for its loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C52 present an interesting correlation between ribosome density and functional compensation based on literature knockout data (Table 1). However, this is correlative analysis of published data rather than direct experimental testing. The proposed mechanism (C51-C52) is logical but requires experimental validation. Alternative explanations for compensation patterns are not adequately addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "b1bb522e-a751-4ed0-8a86-3bb45e25bf0b",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Silent substitutions in nucleotide sequence affect ribosome density, translation dynamics, and protein accumulation rates, which regulate functional diversity of actins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 proposes a mechanistic model linking silent substitutions to function through translation dynamics. While supported by the ribosome profiling data and the Actbc-g mouse phenotype, direct experimental evidence for the causal chain (silent substitutions \u2192 ribosome density \u2192 translation dynamics \u2192 accumulation rates \u2192 function) is incomplete. The model is plausible but requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "791b6396-2b20-4b5f-a2bd-4a22f9f1c10f",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Genome-wide analysis identified 741 protein families in mouse with >90% amino acid identity, with actins, histones, and tubulins showing high variation in ribosome density across vertebrates and invertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 describe a systematic bioinformatic analysis across multiple species. The methodology is clearly described (C54, C103) and results are consistent across vertebrate genomes (C55-C56) and extend to invertebrates (C57). The conclusion about broad occurrence (C58) is well-supported by the comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "d3376406-0d3b-466b-bd36-431516cb5bb5",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose a 'silent code' mechanism whereby posttranscriptional regulation through silent nucleotide-encoded translation dynamics governs functional diversity of highly homologous protein families in eukaryotic genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62 present the overarching conceptual framework and terminology. While the Actbc-g mouse data strongly support the concept for \u03b2/\u03b3-actin (C61), the broader applicability to other protein families (C59, C62) remains speculative. The genome-wide analysis provides correlative support but lacks functional validation in other systems. The 'silent code' terminology (C60) is appropriate but the mechanism requires more extensive experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "d5e50d09-46cf-48fd-a5be-307cb9116931",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "\u03b2-actin and \u03b3-actin are nearly identical proteins (differing by 4 amino acids) encoded by different genes with non-redundant biological roles, but their mRNA coding sequences differ by ~13% due to silent substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the background context and are well-supported by cited literature (Vandekerckhove and Weber, 1978; Erba et al., 1986) and established knowledge in the field. These are foundational facts that frame the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "ace976b1-3713-4957-94b1-e09f3a5675b2",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "\u03b2-actin is translated in bursts and accumulates faster than \u03b3-actin, resulting in differential post-translational modification by arginylation that targets only \u03b2-actin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 cite prior work (Buxbaum et al., 2014; Zhang et al., 2010) establishing differential translation dynamics and post-translational modifications. These are established findings from the literature that provide mechanistic context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "f2c40d54-b1f5-491d-9e67-e89323b466b5",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "\u03b2-actin and \u03b3-actin localize to different cellular structures, and \u03b2-actin knockout causes embryonic lethality despite upregulation of other isoforms, while \u03b3-actin knockout has a milder phenotype. The lethality can be rescued by \u03b2-actin cDNA knock-in, suggesting the coding region is critical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 summarize well-established findings from multiple cited studies. The differential knockout phenotypes (C8-C9) and rescue experiment (C10) are key prior results that motivate the current study. Claim C11 is an inference from the rescue data that is reasonable but could have alternative explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "b89ca21a-f6ff-42db-af7e-20d63baef63b",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "\u03b2-actin and \u03b3-actin show biochemical differences in polymerization, differential mRNA localization via zipcode-mediated transport, and differential regulation of cytoskeleton protein gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 cite multiple prior studies documenting various differences between the isoforms. These establish that despite high similarity, the isoforms have distinct properties, providing context for understanding their non-redundant functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multiple regulatory mechanisms distinguish \u03b2-actin and \u03b3-actin, including differences in polymerization kinetics, protein interactions, 3'UTR-mediated regulation, mRNA localization, translation dynamics, and gene structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C73 comprehensively review prior literature on actin isoform regulation at protein, mRNA, and gene levels. These are well-cited established findings that provide important context for interpreting the current results. The discussion appropriately acknowledges multiple levels of regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "99785102-35d0-44a0-acc3-86fe54d512a7",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "\u03b2-actin has the highest ribosome density among actin isoforms, which enables fine-tuned spatial and temporal translation control, making it uniquely essential and non-compensatable, while \u03b3-actin is more functionally redundant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C79 integrate ribosome profiling data (C74, citing Ingolia et al., 2009) with proposed mechanisms (C75) and conclusions about essentiality (C76, C79). While C74 is supported by cited data, the mechanistic proposals (C75) and conclusions about compensation (C77-C79) are partially speculative. The logic is sound but requires more direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "7d441876-84f7-466d-9b98-f61e0495bbf4",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior studies show that deletion of \u03b2-actin exons 2-3 causes lethality despite upregulation of other isoforms, but insertion of \u03b2-actin coding sequence rescues lethality, supporting that the coding region is primarily responsible for \u03b2-actin's essential role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 synthesize prior literature (Bunnell et al., 2011; Tondeleir et al., 2012; Zhang et al., 2010) to build the argument that coding sequence is critical. The logic is sound and the cited studies are appropriate. Claim C84 appropriately acknowledges that non-coding elements cannot be fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "09baa3ec-8fb5-48fe-abf0-0063e29f9e4c",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Despite diverging >100 million years ago, actin isoform genes retain remarkable sequence conservation beyond what random synonymous substitutions would produce, suggesting evolutionary pressure to maintain divergent translation dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 cite established evolutionary data (Erba et al., 1986) and make a reasonable inference about evolutionary pressure. Claim C88 proposes a specific evolutionary mechanism, which is plausible given the data but remains speculative without direct evolutionary analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "914a742a-4905-4c23-973a-825d25058e88",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Tubulin family members show similar patterns of ribosome density variation, with knockout phenotypes correlating with ribosome density (Tubg1 knockout is lethal, Tubg2 knockout is not), suggesting the silent code mechanism may apply to tubulins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C93 extend the silent code concept to tubulins based on bioinformatic analysis (C89) and limited knockout data (C92-C93, citing Yuba-Kubo et al., 2005). The correlation is suggestive but the prediction about Tubb5 (C91) and the general mechanism (C90) remain speculative without direct experimental testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    },
+    {
+      "id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0",
+      "content_id": "94a080f6-309a-485f-8f93-2a6f5d865a5d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Methodological details for CRISPR/Cas9 editing, genotyping, cell culture, and bioinformatic analysis are provided.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C103 describe experimental methods. These are clearly stated and provide sufficient detail for reproducibility. The genotyping strategy using EcoRV digestion (C95-C99) is appropriate. The bioinformatic methods (C101-C103) are adequately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:33:44.382955Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0056066b-a64d-4e2e-a243-b038bf1abdf1",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "e858588a-9d80-4109-b3b4-6a043491cab3",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "d9307efe-c0e9-490a-8757-bec2743af14b",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "847c3b0d-9597-4545-a05e-6c27bc311689",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "d652b398-122c-4d6b-aef3-9d82912d7f42",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "37392c2b-a4c8-4559-8a02-4037f4d6d404",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "47265997-5c3d-45d9-bd90-ac61a37a0f3a",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "e3c52f33-be19-449f-a6ae-1f8509ac8bff",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "2f202a81-181e-4484-b628-fe5d75e43ddb",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "aef9bf6d-e195-4656-aedd-0b6c8384a93e",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "8b298e5b-08ad-4969-a3e1-f18bfa2391b7",
+      "result_id": "3281026d-aaf3-429b-a098-ec999d9233b7"
+    },
+    {
+      "claim_id": "c6d2045e-9754-49e1-ad7a-99c62cb4c95f",
+      "result_id": "98501c31-acef-4e53-813b-efcf5f2e057e"
+    },
+    {
+      "claim_id": "cba597f2-abdd-4746-bb2b-cf8642f79db6",
+      "result_id": "98501c31-acef-4e53-813b-efcf5f2e057e"
+    },
+    {
+      "claim_id": "99978e4a-c89a-4f21-b622-8078f1ff89eb",
+      "result_id": "78c60aea-2981-489a-b264-842ec413e943"
+    },
+    {
+      "claim_id": "0aea40a2-4188-4184-8460-9bdf89979747",
+      "result_id": "78c60aea-2981-489a-b264-842ec413e943"
+    },
+    {
+      "claim_id": "8e604be8-425a-44c8-8dfd-c655a8be1239",
+      "result_id": "474dc8c7-14d9-4f71-87f8-e7244033ce7a"
+    },
+    {
+      "claim_id": "1cc27d12-8935-4941-a296-4c7f6eff312e",
+      "result_id": "474dc8c7-14d9-4f71-87f8-e7244033ce7a"
+    },
+    {
+      "claim_id": "08cbfdaa-6f5c-4a8f-adf6-e1e72ed05e6c",
+      "result_id": "474dc8c7-14d9-4f71-87f8-e7244033ce7a"
+    },
+    {
+      "claim_id": "32e0dc84-553e-4ca4-803a-6a7b6458bd62",
+      "result_id": "474dc8c7-14d9-4f71-87f8-e7244033ce7a"
+    },
+    {
+      "claim_id": "b600b93d-635e-4cbb-b16a-ed5e78a2637e",
+      "result_id": "474dc8c7-14d9-4f71-87f8-e7244033ce7a"
+    },
+    {
+      "claim_id": "019b7bf3-125e-4754-8101-ef5c5180b3ad",
+      "result_id": "336a1649-c305-4a55-8869-c160dd594dd1"
+    },
+    {
+      "claim_id": "60316f29-318a-4f84-bda8-90664e6398fc",
+      "result_id": "336a1649-c305-4a55-8869-c160dd594dd1"
+    },
+    {
+      "claim_id": "3ccd87e2-8d0b-48d1-ba97-32eb8eab5ef2",
+      "result_id": "336a1649-c305-4a55-8869-c160dd594dd1"
+    },
+    {
+      "claim_id": "7356f5d4-bf34-447f-b536-74deca12cc0e",
+      "result_id": "336a1649-c305-4a55-8869-c160dd594dd1"
+    },
+    {
+      "claim_id": "108b8372-b518-46d7-8967-542e269419c9",
+      "result_id": "336a1649-c305-4a55-8869-c160dd594dd1"
+    },
+    {
+      "claim_id": "06ae6545-01b3-4a02-b38f-08a838031582",
+      "result_id": "534f5e27-cc75-4878-adf9-f745359fda6e"
+    },
+    {
+      "claim_id": "109dded1-93ed-42ae-98eb-b2e401a9c1b7",
+      "result_id": "534f5e27-cc75-4878-adf9-f745359fda6e"
+    },
+    {
+      "claim_id": "edd7211e-99d0-4073-be07-3784e3cbd803",
+      "result_id": "534f5e27-cc75-4878-adf9-f745359fda6e"
+    },
+    {
+      "claim_id": "37eec61b-b1e5-4279-803f-fa7c30a701a5",
+      "result_id": "534f5e27-cc75-4878-adf9-f745359fda6e"
+    },
+    {
+      "claim_id": "12cd7f2c-f2ad-448f-9758-1441a21fa9bc",
+      "result_id": "534f5e27-cc75-4878-adf9-f745359fda6e"
+    },
+    {
+      "claim_id": "c95e2e40-1395-409f-b1bf-afd2be99d062",
+      "result_id": "ce055c99-bb7f-44fb-914d-30da5c1241dc"
+    },
+    {
+      "claim_id": "f637974e-a14e-44c4-9787-c903e24fdeb2",
+      "result_id": "ce055c99-bb7f-44fb-914d-30da5c1241dc"
+    },
+    {
+      "claim_id": "8b33df98-e59f-42c2-9068-14c6eefacd0c",
+      "result_id": "ce055c99-bb7f-44fb-914d-30da5c1241dc"
+    },
+    {
+      "claim_id": "ece4c431-647f-4a16-9c32-dd673bbccfcd",
+      "result_id": "ce055c99-bb7f-44fb-914d-30da5c1241dc"
+    },
+    {
+      "claim_id": "2ecfa4a7-c87f-4ce6-9b38-d233ce910c6f",
+      "result_id": "ce055c99-bb7f-44fb-914d-30da5c1241dc"
+    },
+    {
+      "claim_id": "474f6800-627f-4f12-955e-d5b584689c9f",
+      "result_id": "ce055c99-bb7f-44fb-914d-30da5c1241dc"
+    },
+    {
+      "claim_id": "192f13f2-f3e1-469d-be9f-c04932fc561b",
+      "result_id": "b1bb522e-a751-4ed0-8a86-3bb45e25bf0b"
+    },
+    {
+      "claim_id": "1789f9de-d4c2-42a2-8a9a-86612ae8077a",
+      "result_id": "791b6396-2b20-4b5f-a2bd-4a22f9f1c10f"
+    },
+    {
+      "claim_id": "8e64d79f-3205-4cfa-846c-dbe34be8d2cb",
+      "result_id": "791b6396-2b20-4b5f-a2bd-4a22f9f1c10f"
+    },
+    {
+      "claim_id": "99051a71-78a9-48f5-997d-75b0ce32cd86",
+      "result_id": "791b6396-2b20-4b5f-a2bd-4a22f9f1c10f"
+    },
+    {
+      "claim_id": "49efcdae-ae25-4951-b01f-79a4e343c49b",
+      "result_id": "791b6396-2b20-4b5f-a2bd-4a22f9f1c10f"
+    },
+    {
+      "claim_id": "22664b21-9bbf-4113-984b-71b3f2e23b64",
+      "result_id": "791b6396-2b20-4b5f-a2bd-4a22f9f1c10f"
+    },
+    {
+      "claim_id": "8054fc2e-a189-43b4-b9f8-620e1c4f5592",
+      "result_id": "d3376406-0d3b-466b-bd36-431516cb5bb5"
+    },
+    {
+      "claim_id": "4d2273fc-5a07-4f5e-bdb6-1643b10dc055",
+      "result_id": "d3376406-0d3b-466b-bd36-431516cb5bb5"
+    },
+    {
+      "claim_id": "92da4e21-c42a-485d-b180-ba5a66dbd022",
+      "result_id": "d3376406-0d3b-466b-bd36-431516cb5bb5"
+    },
+    {
+      "claim_id": "7b76c755-0255-4fba-83e9-422d5634747b",
+      "result_id": "d3376406-0d3b-466b-bd36-431516cb5bb5"
+    },
+    {
+      "claim_id": "c7bbf3b3-7e15-4841-a1f6-3e72befd6eb0",
+      "result_id": "d5e50d09-46cf-48fd-a5be-307cb9116931"
+    },
+    {
+      "claim_id": "f5e0a298-2108-44d8-8532-638c67b36993",
+      "result_id": "d5e50d09-46cf-48fd-a5be-307cb9116931"
+    },
+    {
+      "claim_id": "d5d85670-6a48-4dcb-98e0-15f77db472a4",
+      "result_id": "d5e50d09-46cf-48fd-a5be-307cb9116931"
+    },
+    {
+      "claim_id": "239c7759-66d5-4828-93ee-92323891ced6",
+      "result_id": "d5e50d09-46cf-48fd-a5be-307cb9116931"
+    },
+    {
+      "claim_id": "b5ed73c0-b7f7-4500-9329-451f1d56b6b0",
+      "result_id": "ace976b1-3713-4957-94b1-e09f3a5675b2"
+    },
+    {
+      "claim_id": "4566a7b2-95f7-4f2d-9e90-0fb1b25b8226",
+      "result_id": "ace976b1-3713-4957-94b1-e09f3a5675b2"
+    },
+    {
+      "claim_id": "fed6e4da-765c-4a3e-bd10-0cc4bcc8787f",
+      "result_id": "f2c40d54-b1f5-491d-9e67-e89323b466b5"
+    },
+    {
+      "claim_id": "bbc2c5e3-52a6-453e-9673-bc2478352258",
+      "result_id": "f2c40d54-b1f5-491d-9e67-e89323b466b5"
+    },
+    {
+      "claim_id": "071947cc-6a65-4f2e-bd0d-cdf7c794ac94",
+      "result_id": "f2c40d54-b1f5-491d-9e67-e89323b466b5"
+    },
+    {
+      "claim_id": "362e0c38-7469-4c18-bfd3-33aea0a5f01d",
+      "result_id": "f2c40d54-b1f5-491d-9e67-e89323b466b5"
+    },
+    {
+      "claim_id": "1050b5cc-d22d-4da5-9812-d42183944e44",
+      "result_id": "f2c40d54-b1f5-491d-9e67-e89323b466b5"
+    },
+    {
+      "claim_id": "00acf2d0-1191-48ca-b6aa-7ce2a0fe9110",
+      "result_id": "b89ca21a-f6ff-42db-af7e-20d63baef63b"
+    },
+    {
+      "claim_id": "1bddb249-ec1b-4b5f-b75d-fb09c38f4387",
+      "result_id": "b89ca21a-f6ff-42db-af7e-20d63baef63b"
+    },
+    {
+      "claim_id": "984f8d2b-14ca-488d-b386-61c2830c71ce",
+      "result_id": "b89ca21a-f6ff-42db-af7e-20d63baef63b"
+    },
+    {
+      "claim_id": "a141e46f-d513-47eb-ab37-54b3f6fe3d97",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "c87477f3-c4e2-492f-90fa-233afd1a432e",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "aee92b96-a8f8-4bae-83d8-49dceeb6b5e3",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "d55b1cec-88d9-434c-bcb2-1c2bf5a6b0e4",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "abd027e5-7d70-4d59-9c9b-ffd53890d7b0",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "4f818eb3-42b3-4fe0-9366-82ea05495993",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "0ecf9a28-91a5-40dc-ae33-610ab4a360cc",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "3973dc61-bfb4-402f-b8bf-17101eaadb1c",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "58ab8008-a8bb-4ee2-92b0-1b8468d64293",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "a6960021-a1ef-47f8-9ed5-134de21479af",
+      "result_id": "6a7fe5b4-0527-4ddf-afae-a976f1cf1aac"
+    },
+    {
+      "claim_id": "ebbb114d-169c-4150-a7ba-589f5ddc063a",
+      "result_id": "99785102-35d0-44a0-acc3-86fe54d512a7"
+    },
+    {
+      "claim_id": "fe022ea9-5073-4b07-b0c7-e9c42d461549",
+      "result_id": "99785102-35d0-44a0-acc3-86fe54d512a7"
+    },
+    {
+      "claim_id": "c43aaed4-3ba1-4c83-8c41-036a67015c3d",
+      "result_id": "99785102-35d0-44a0-acc3-86fe54d512a7"
+    },
+    {
+      "claim_id": "522880c9-069d-4434-b804-5cac51768046",
+      "result_id": "99785102-35d0-44a0-acc3-86fe54d512a7"
+    },
+    {
+      "claim_id": "ebcf4212-fc17-43d4-822a-b66440c0cdda",
+      "result_id": "99785102-35d0-44a0-acc3-86fe54d512a7"
+    },
+    {
+      "claim_id": "97cb6d7e-179a-4e25-b8ae-6b7bb88ec44b",
+      "result_id": "99785102-35d0-44a0-acc3-86fe54d512a7"
+    },
+    {
+      "claim_id": "55c0371b-4b78-4abe-9914-769aa5bf1d38",
+      "result_id": "7d441876-84f7-466d-9b98-f61e0495bbf4"
+    },
+    {
+      "claim_id": "614c0a2b-20ae-4186-ab9a-01b3675ed9ee",
+      "result_id": "7d441876-84f7-466d-9b98-f61e0495bbf4"
+    },
+    {
+      "claim_id": "51ed238d-92ea-441c-8197-cba5477743f1",
+      "result_id": "7d441876-84f7-466d-9b98-f61e0495bbf4"
+    },
+    {
+      "claim_id": "a3e8cd10-8a52-4dcc-b5ea-39745f5247f8",
+      "result_id": "7d441876-84f7-466d-9b98-f61e0495bbf4"
+    },
+    {
+      "claim_id": "04472a8f-47e0-4e78-95d8-457f42b75761",
+      "result_id": "7d441876-84f7-466d-9b98-f61e0495bbf4"
+    },
+    {
+      "claim_id": "b80ad21f-76e6-4c8d-afb3-d69ddc540179",
+      "result_id": "09baa3ec-8fb5-48fe-abf0-0063e29f9e4c"
+    },
+    {
+      "claim_id": "2cd90498-6fca-428b-8e1e-3b7f5de65444",
+      "result_id": "09baa3ec-8fb5-48fe-abf0-0063e29f9e4c"
+    },
+    {
+      "claim_id": "8f7eec80-9dbc-4d8b-b8ce-1d06fa157738",
+      "result_id": "09baa3ec-8fb5-48fe-abf0-0063e29f9e4c"
+    },
+    {
+      "claim_id": "080384a6-f9d2-48ed-932c-0b6c9331a085",
+      "result_id": "09baa3ec-8fb5-48fe-abf0-0063e29f9e4c"
+    },
+    {
+      "claim_id": "83e3afe5-13a6-461a-8b54-01e38886c7c0",
+      "result_id": "914a742a-4905-4c23-973a-825d25058e88"
+    },
+    {
+      "claim_id": "e5d2df62-3a05-4910-a712-5b48f3f21c08",
+      "result_id": "914a742a-4905-4c23-973a-825d25058e88"
+    },
+    {
+      "claim_id": "5eff03dc-f203-426f-9154-c4aa2c2576ae",
+      "result_id": "914a742a-4905-4c23-973a-825d25058e88"
+    },
+    {
+      "claim_id": "747a1e2c-47b9-4a7b-b60f-4b3754480174",
+      "result_id": "914a742a-4905-4c23-973a-825d25058e88"
+    },
+    {
+      "claim_id": "18453bfd-2b9d-4a49-91df-d7c2b3c8091f",
+      "result_id": "914a742a-4905-4c23-973a-825d25058e88"
+    },
+    {
+      "claim_id": "909eceae-4ef9-4345-a3c3-fbecb91e30c1",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "fc3c7ed3-4b3d-4a30-8684-f36688aa5737",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "803746e5-0e8b-47f1-8d06-7e122c6f72ea",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "424ccc80-ae67-4315-9953-7284e573339e",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "65391e83-39e5-4185-a1b2-bb5ac2bcc32e",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "7b716f22-6425-4bbf-a968-b4f6e16300fc",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "d874d0b1-84df-44de-9041-028821ef5468",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "b8b9edbb-71e1-480a-a02b-f6129566aa3a",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "ec640c87-c081-464d-9004-e4d755d83974",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    },
+    {
+      "claim_id": "85a77a0a-c0d0-4ca2-8a7a-8027c554fbe1",
+      "result_id": "a5cf0230-3abc-4e6c-b078-22108a3f50a0"
+    }
+  ],
+  "comparisons": []
+}

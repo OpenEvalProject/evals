@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Mitochondrial stress induced by \u0394OTC overexpression or ND75 knockdown activates a transcriptional response enriched for stress signaling, chaperones/proteases, and innate immune genes. This response is specific to mitochondrial stress and not triggered by heat shock or ER-UPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively demonstrate a specific mitochondrial stress response through RNAseq and qPCR validation (C1-C2), with appropriate specificity controls comparing heat shock and ER-UPR (C4). The overlap analysis (C1) and functional enrichment (C2-C3) provide converging evidence for a core UPRmt signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C22"
+    ],
+    "result": "The transcriptional response to mitochondrial stress in Drosophila requires PGAM5, ASK1, JNK, Relish, and FoxO. Genetic disruption of any component blocks induction of both antimicrobial peptides and classical UPRmt genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 and C22 provide systematic genetic evidence using RNAi knockdowns and null mutants showing each pathway component is required for the stress response. The data include both AMP reporters (C8-C13) and classical UPRmt genes (C14), demonstrating pathway completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C34"
+    ],
+    "result": "The PGAM5-ASK1-JNK pathway mediating mitochondrial stress responses is distinct from canonical Toll and Imd immune pathways and does not contribute to lifespan extension through improved immune function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 show that disrupting the mitochondrial stress pathway does not affect canonical pathogen responses, while C34 integrates multiple lines of evidence (antibiotic treatment, axenic conditions, pathogen resistance, microbiome analysis) demonstrating immune activation is not responsible for longevity effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "\u0394OTC expression does not induce apoptosis, though PGAM5 null flies show elevated baseline apoptosis consistent with prior reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by TUNEL assay data and appropriate citation to previous work. This control experiment rules out apoptosis as a confounding mechanism for the observed stress responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "ROS production is not required for mitochondrial stress-induced AMP expression, as blocking mitochondrial ROS or overexpressing antioxidants does not affect the response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 use both pharmacological ROS inhibitors and genetic antioxidant overexpression to demonstrate ROS-independence. The experiments appropriately cite methodology and provide converging negative results ruling out direct ROS-mediated ASK1 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C65"
+    ],
+    "result": "Developmental \u0394OTC expression extends Drosophila lifespan by 21% (median) and 14% (maximum), while adult-only expression has no effect, demonstrating developmental timing is necessary and sufficient for longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C65 present lifespan data with appropriate controls showing developmental specificity. The consistent extension across multiple experiments and comparison to C. elegans findings strengthen the conclusion about developmental timing requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C66",
+      "C72"
+    ],
+    "result": "PGAM5 and FoxO are required for lifespan extension by developmental mitochondrial stress, with both null mutants showing loss of longevity benefits and reduced survival during developmental stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide genetic loss-of-function evidence in both lifespan and developmental survival assays. The data demonstrate both PGAM5 and FoxO are necessary for the longevity phenotype, with FoxO showing stronger developmental survival defects consistent with its downstream role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Lifespan extension by developmental mitochondrial stress occurs independently of the microbiome, as shown by experiments with antibiotics, axenic conditions, and lack of changes in pathogen resistance or microbiome composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 systematically rule out microbiome contributions using multiple complementary approaches: antibiotic treatment (C29), axenic rearing (C30), pathogen resistance assays (C31), CFU quantification (C32), and 16S sequencing (C33). The convergence of negative results strongly supports microbiome-independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Developmental \u0394OTC expression reduces adult triglyceride levels in a PGAM5-dependent manner without affecting NAD/NADH ratios or mitochondrial content, consistent with FoxO-mediated metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 characterize metabolic phenotypes with appropriate controls. The PGAM5-dependence of TAG reduction (C38) links the metabolic change to the identified signaling pathway, while negative results for NAD/NADH and MitoTracker rule out general mitochondrial dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C68"
+    ],
+    "result": "Developmental \u0394OTC expression induces FoxO nuclear translocation in larval fat bodies that persists into adulthood in a PGAM5-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C68 use immunohistochemistry to demonstrate FoxO activation during development and persistence in adults. The PGAM5-dependence (C40) links FoxO activation to the upstream signaling pathway, providing a mechanistic connection to longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Persistent FoxO activation requires JNK activity during development, as shown by pharmacological and genetic JNK inhibition. Adult-only mitochondrial stress produces transient but not lasting FoxO activation, explaining the lack of lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 demonstrate developmental timing requirements for persistent FoxO activation using both JNK inhibitor (C42) and dominant-negative genetics (C43). The comparison to adult treatment (C44-C45) directly links persistent FoxO activation to longevity outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C69"
+    ],
+    "result": "Developmental mitochondrial stress induces acute metabolic gene expression in larvae, but only a small subset of genes (predominantly chaperones and FoxO targets) remain upregulated in adults in a PGAM5-dependent manner. Many of these persistently induced chaperones have been previously implicated in lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C69 use RNAseq to identify persistently upregulated genes with appropriate PGAM5 null controls. The identification of FoxO target chaperones with prior longevity associations provides mechanistic insight, though the reliance on literature citations for lifespan effects of individual genes is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C70"
+    ],
+    "result": "Persistent FoxO activation after developmental stress is independent of insulin signaling but can be reversed by high-protein diet through mTORC1 activation. Rapamycin prevents this reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 and C70 use starvation/refeeding experiments and dietary manipulations to dissect FoxO regulation. The sucrose diet control (C54) rules out insulin signaling, while the high-protein diet and rapamycin experiments (C55-C56) implicate mTORC1 in a novel regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "mTORC1 and GCN-2 regulate persistent FoxO activation, with TSC1/2 overexpression sufficient to induce FoxO nuclear localization and GCN-2 acting downstream of mTORC1 to promote FoxO activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 use genetic manipulations (TSC1 RNAi, TSC1/2 overexpression, GCN-2 overexpression/RNAi) to establish an mTORC1-GCN-2-FoxO regulatory axis. The epistasis experiment with rapamycin and GCN-2 RNAi (C61) supports the proposed pathway order.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C71"
+    ],
+    "result": "High-protein diet throughout adulthood completely abolishes lifespan extension from developmental \u0394OTC expression, consistent with the requirement for persistent FoxO activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C71 demonstrate that dietary intervention can override developmental programming. This result directly links the molecular mechanism (FoxO activation) to the physiological outcome (longevity) and has important translational implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Acute \u0394OTC expression for 24 hours mildly improves oral infection resistance but does not affect humoral infection resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by infection survival data, though the speculation about insufficient AMP induction for humoral infections is not directly tested. The differential effects on oral vs. humoral infection suggest route-specific immune modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The manuscript contextualizes findings within established UPRmt literature across species, citing prior work on transcriptional responses, metabolic reconfiguration, epigenetic regulation, and developmental timing requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C95 represent background knowledge and literature citations that appropriately frame the current work. These claims rely on cited references and established knowledge rather than new experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Prior literature establishes PGAM5 as a mitochondrial phosphatase that interacts with ASK1 and PINK1, regulates cell death pathways, and is cleaved upon loss of membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 summarize prior work on PGAM5 with appropriate citations. These background claims provide context for the current findings but do not represent new experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Recent work in C. elegans has identified roles for histone methylation and chromatin remodeling in UPRmt-mediated longevity, though UPRmt reporters correlate poorly with longevity outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 cite recent literature on epigenetic mechanisms and limitations of UPRmt reporters. These provide important context for interpreting the current findings about persistent gene expression changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Prior work has shown that the UPRmt triggers innate immunity, FoxO can induce Relish signaling, rapamycin activates the UPRmt, and mTORC1 regulates longevity through FOXO in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 cite relevant prior work that supports the plausibility of the current findings and provides comparative context across species. These background claims appropriately frame the discussion.",
+    "result_type": "MINOR"
+  }
+]

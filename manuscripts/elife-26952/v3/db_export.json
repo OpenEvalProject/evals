@@ -1,0 +1,2247 @@
+{
+  "submission": {
+    "id": "538af7cf-de0e-44fa-8165-fd065ed399a2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:57:28.485868Z",
+    "updated_at": "2025-12-01T20:57:28.485868Z"
+  },
+  "content": [
+    {
+      "id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "submission_id": "538af7cf-de0e-44fa-8165-fd065ed399a2",
+      "content_type": "manuscript",
+      "content_text": "# PGAM5 promotes lasting FoxO activation after developmental mitochondrial stress and extends lifespan in Drosophila\n\n## Authors\n\n- Martin Borch Jensen<sup>1</sup> ([ORCID: 0000-0002-8875-0345](https://orcid.org/0000-0002-8875-0345))\n- Yanyan Qi<sup>1</sup>\n- Rebeccah Riley<sup>1</sup>\n- Liya Rabkina<sup>1</sup>\n- Heinrich Jasper<sup>1</sup> ([ORCID: 0000-0002-6014-4343](https://orcid.org/0000-0002-6014-4343)) \u2020\n\n### Affiliations\n\n1. Buck Institute for Research on Aging Novato United States\n2. Immunology Discovery Genentech South San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mitochondrial unfolded protein response (UPRmt) has been associated with long lifespan across metazoans. In Caenorhabditis elegans, mild developmental mitochondrial stress activates UPRmt reporters and extends lifespan. We show that similar developmental stress is necessary and sufficient to extend Drosophila lifespan, and identify Phosphoglycerate Mutase 5 (PGAM5) as a mediator of this response. Developmental mitochondrial stress leads to activation of FoxO, via Apoptosis Signal-regulating Kinase 1 (ASK1) and Jun-N-terminal Kinase (JNK). This activation persists into adulthood and induces a select set of chaperones, many of which have been implicated in lifespan extension in flies. Persistent FoxO activation can be reversed by a high-protein diet in adulthood, through mTORC1 and GCN-2 activity. Accordingly, the observed lifespan extension is prevented on a high-protein diet and in FoxO-null flies. The diet-sensitivity of this pathway has important implications for interventions that seek to engage the UPRmt to improve metabolic health and longevity.\n\n## Introduction\n\nA wide range of studies in genetically accessible model systems have led to the realization that aging is a malleable process, responsive to both genetic and pharmacological interventions. An integrated view of the aging process has emerged from these efforts, spurred by the identification of a select group of biological processes and pathways that drive, influence, and regulate the physical decline characteristic of the aging process (Kennedy et al., 2014; L\u00f3pez-Ot\u00edn et al., 2013). Many of these pathways involve mitochondria: either through their role in metabolism (L\u00f3pez-Ot\u00edn et al., 2016), as a source of reactive oxygen species (Balaban et al., 2005), or as signaling hubs (Chandel, 2015).\n\nIn recent years, the mitochondrial unfolded protein response (UPRmt) has emerged as a unifying mechanism for several of these pathways (Jensen and Jasper, 2014). As the name implies, the UPRmt is a conserved cellular mechanism that serves to restore proteostasis in mitochondria. The response was first described in mammalian cells more than a decade ago (Martinus et al., 1996; Zhao et al., 2002) and has since been studied primarily in Caenorhabditis elegans. In worms, strong evidence suggests that the UPRmt is involved in delaying aging and promoting adult lifespan (Baker et al., 2012; Durieux et al., 2011; Houtkooper et al., 2013; Merkwirth et al., 2016; Mouchiroud et al., 2013; Tian et al., 2016; Yang and Hekimi, 2010). This work has revealed the UPRmt to be reminiscent of, but distinct from, the cytoplasmic (heat shock) and endoplasmic reticulum unfolded protein responses (Baker et al., 2012; Haynes et al., 2007; 2010). Through the UPRmt, mitochondrial stress induces a nuclear transcriptional response that promotes the expression of a group of mitochondrial chaperones and proteases (Aldridge et al., 2007; Yoneda et al., 2004). The primary transcription factor in C. elegans is ATFS-1, which is regulated by membrane potential-dependent import into and degradation in mitochondria (Nargund et al., 2012). Mitochondrial stress blocks this import and ATFS-1 instead moves to the nucleus, where it interacts with DVE-1 and UBL-5 to turn on the transcriptional response (Benedetti et al., 2006; Haynes et al., 2007). In addition to proteostatic elements, this response includes a metabolic reconfiguration to increase glycolytic capacity while restoring oxidative phosphorylation (Nargund et al., 2015). Meanwhile, a separate branch of the UPRmt mediates a general downregulation of translation, through GCN-2 and eIF2\u03b1 (Baker et al., 2012).\n\nEvidence for the evolutionary conservation of the UPRmt has emerged in recent years. In mice, perturbation of mitochondrial translation has been implicated in long lifespan (Houtkooper et al., 2013), and recent findings have revealed the conservation of the ATFS-1 regulated transcriptional response (mediated by ATF5 in mice (Fiorese et al., 2016)). In Drosophila, a UPRmt-like response was first described in a paradigm where a misfolding ornithine transcarbamylase (\u0394OTC) was overexpressed, resulting in upregulation of mitochondrial chaperones and induction of mitophagy (Pimenta de Castro et al., 2012). Furthermore, knocking down electron transport chain (ETC) components has been shown to extend lifespan and to induce the UPRmt (Copeland et al., 2009; Owusu-Ansah et al., 2013). However, the signaling pathway mediating UPRmt activation in Drosophila remains to be clarified. ETC knockdown results in induction of the insulin signaling inhibitor ImpL2, and promotes the expression of target genes of the insulin-regulated transcription factor Forkhead Box O (FoxO) (Owusu-Ansah et al., 2013). FoxO activation is a well-established lifespan-extending condition, yet its involvement and specific regulation in this context remain to be established (Kappeler et al., 2008; Kenyon et al., 1993; Kimura et al., 1997; Selman et al., 2008; Tatar et al., 2001).\n\nActivation of the UPRmt has also been implicated in the lifespan-extending effects of various drugs, including resveratrol (Houtkooper et al., 2013), rapamycin (Houtkooper et al., 2013) and NAD precursors (Mouchiroud et al., 2013). Nevertheless, it is not clear which cellular consequences of the UPRmt contribute to organismal health, nor whether resistance to a particular type of stress underlies lifespan extension by the UPRmt. Indeed, the generic view that stimulating this response invariably leads to longer life has been called into question (Bennett et al., 2014). Understanding how conserved elements of UPRmt signaling connect to longevity pathways will be useful in resolving this contention.\n\nAn interesting observation from both fly and worm studies is that lifespan extension by the UPRmt is contingent upon its activation during development (Durieux et al., 2011; Owusu-Ansah et al., 2013). This is consistent with earlier observations that lifespan extension by disrupting the ETC in some cases require developmental treatment (Copeland et al., 2009; Dillin et al., 2002; Rea et al., 2007). An important step toward understanding this lasting effect came from work in worms, in which the UPRmt leads to changes in histone methylation and chromatin organization (Merkwirth et al., 2016; Tian et al., 2016). The H3K27 demethylases jmjd-1.2 and \u22123.1 were found to be required for UPRmt activation and lifespan extension, while the histone methylase met-2 is required for induction of most UPRmt genes. This effect involves global chromatin condensation, while opening up specific sites for occupation by DVE-1 (Tian et al., 2016). The loci thus revealed have yet to be characterized, so the lasting cellular changes and longevity pathways influenced by these epigenetic mechanisms remain unclear.\n\nHere, we have explored the signaling pathway regulating the transcriptional response to mitochondrial proteostatic stress in Drosophila, and have identified a role for persistent FoxO activation in promoting longevity after developmental mitochondrial stress. We find that Phosphoglycerate Mutase 5 (PGAM5) is required to activate a pathway that includes ASK1, JNK, Relish and FoxO and promotes protective gene expression in response to mitochondrial stress. Activation of this pathway during development leads to persistent FoxO activation and increased expression of chaperones in adult flies, and is required for longevity. We further find that lasting FoxO activation is sensitive to dietary conditions, as it can be abolished by elevated protein intake and elevated mTORC1 and GCN-2 activity. Our findings identify a new diet-sensitive pathway of lifespan regulation by mitochondrial stress. Since the identified pathway components are evolutionarily conserved, we anticipate that these results inform our understanding of similar interactions in vertebrate systems, including humans.\n\n## Results\n\n### Acute mitochondrial stress upregulates proteostatic, immune and stress signaling pathways through PGAM5- and JNK-dependent FoxO activation\n\nTo gain an overview of the gene expression changes induced by the UPRmt in Drosophila, we sequenced mRNA extracted from adult female thoracic tissue after 24 hr of mitochondrial stress. We induced mitochondrial stress ubiquitously, using GeneSwitch for temporal control, either by overexpressing a misfolding variant of the human mitochondrial enzyme ornithine transcarbamylase (\u0394OTC) (Pimenta de Castro et al., 2012) or by knocking down the ETC complex I component ND75 (Owusu-Ansah et al., 2013). 23% of the \u0394OTC-induced genes and 15% of the genes downregulated by \u0394OTC expression were co-regulated by both conditions, and we propose that these genes compose a core UPRmt in Drosophila (Figure 1a). The main functional categories enriched among the induced genes were: several stress signaling pathways, chaperones and proteases, and the innate immune system (Figure 1b). Activation of immune responses is broad in this case, encompassing target genes of both the Toll and Imd pathways.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig1-v3.jpg)\n\n**Figure 1.:** (A) Mitochondrial proteostatic stress was triggered by overexpression of a misfolding mitochondrial protein (\u0394OTC) or knockdown of the complex I subunit ND75, as previously reported. The ubiquitous DaGS::GeneSwitch driver was activated for 24 hr at day 7 of adulthood, and female thoracic tissue collected for RNAseq analysis. Venn and bar diagrams show genes upregulated 3-fold/downregulated 2-fold with both treatments relative to controls, and with control FKPM\u00a0>\u00a010. Full raw data found in Supplementary File 1. (B) Gene Ontology analysis of the shared stress response; upregulated genes include chaperones, stress pathways, and antimicrobial peptides/innate immune genes. Redundant GO terms were trimmed using REVIGO. (C) Mitochondrial proteostatic stress response genes from RNAseq analysis verify by qPCR and are not activated by heat shock or induction of the ER-UPR through RNAi of Hrd1. p-values for \u0394OTC\u00a0\u00b1\u00a0RU486 are 0.109, 0.130, 0.255 and 0.008. (D) Knocking down the transcription factors FoxO or Relish, or the JNK kinase, during \u0394OTC expression blocks induction of response genes. The kinase ASK1 and the mitochondrial membrane protein PGAM5 are also required for the mitochondrial proteostatic stress response. See supplementary for verification of additional UPRmt genes. p-values relative to \u0394OTC\u00a0+\u00a0RU are (left to right)<0.0001,<0.0001,<0.0001,<0.0001,<0.0001, 0.0185 and 0.9888; 0.002,<0.0001,<0.0001, and\u00a0<0.0001. (E) Proposed signaling pathway for immune activation by mitochondrial proteostatic stress. All error bars are SEM of 3+\u00a0independent experiments. ANOVA with Dunnett\u2019s multiple comparisons test; *p<0.05, **p<0.01, then each *=0.1 x.. 200 \u00b5M RU486 was used in all experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) In accord with previous studies, 5 days of mitochondrial proteostatic stress (here by \u0394OTC expression) leads to induction of specific UPRmt chaprones and proteases. This induction in not observed in PGAM5 null flies (B), with simultaneous knockdown of bsk/JNK (C), or in FoxO null flies (D), demonstrating that the identified pathway is part of the UPRmt in Drosophila. RNA was extracted from female thoracic tissue, at 7 days of age. All error bars are SEM of three technical replicates; *p<0.05, **p<0.01, then each *=0.1 x. 200 \u00b5M RU486 was used in all experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Acute adult \u0394OTC expression for 24 hr mildly improves resistance to pathogenic Pseudomonas aeruginosa, administered by feeding a sucrose solution (left). Resistance to humoral infections, by abdominal pricking, is not improved (right). (B) Induction of antimicrobial peptide genes by pathogen exposure is not affected by disrupting UPRmt signaling, by knockdown of either ASK1 or PGAM5 for 24 hr pre-infection. (C) Quantification of muscle apoptosis as measured by the TUNEL assay, normalized to tissue area as determined by phalloidin staining. PGAM5 null flies show higher levels of apoptosis, but neither WT nor PGAM5 nulls show an increase in apoptosis after 24 hr \u0394OTC expression.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Induction of antimicrobial peptides by \u0394OTC expression is not affected by blocking mitochondrial ROS production, using inhibitors specific for either site IQ or site IIIQo (see text for references on these compounds). (B) Reducing ROS by overexpression of the antioxidant enzyme catalase does not affect FoxO activation by developmental \u0394OTC expression. (C) Overexpressing either catalase or thioredoxin peroxidase 1 (jafrac1) have no effect on persistent FoxO activation in adult flies following developmental \u0394OTC expression. Error bars are SEM of two independent experiments; *p<0.05, **p<0.01, then each *=0.1 x. 200 \u00b5M RU486 used in all experiments.\n\nWe confirmed the induction of several immune genes by quantitative real-time PCR (qPCR), and further demonstrated that transcriptional induction of these genes was specifically triggered by mitochondrial stress and not by conditions that trigger the cytoplasmic- (heat shock) or endoplasmic reticulum (loss of ER-associated degradation after knockdown of Hrd1, (Bordallo et al., 1998)) unfolded protein responses (Figure 1c). We also used qPCR to confirm that \u0394OTC expression leads to induction of mitochondrial chaperones and proteases associated with the UPRmt, under conditions used in earlier studies (Figure 1\u2014figure supplement 1a). As further confirmation of immune activation, we tested the ability to fight off pathogenic bacteria introduced either orally or by abdominal pricking, following 24 hr of \u0394OTC expression. Resistance to oral infection was mildly increased, while the speed by which flies succumb to humoral infection was unaffected; we speculate that this may be because the modest induction of immune genes is not sufficient to clear bacteria introduced directly to the hemolymph (Figure 1\u2014figure supplement 2a). Initial experiments confirmed these phenotypes in both male and female flies (data not shown), and we opted to use females for all following experiments.\n\nActivation of a transcriptional program that includes immune response genes by the UPRmt has previously been noted in worms, where both immune and proteostatic gene induction is dependent on the ATFS-1 transcription factor (Nargund et al., 2012; Pellegrino et al., 2014). Since a homologous mediator of the response to mitochondrial stress in flies had not been described, we set out to identify transcription factors that could mediate the UPRmt in this organism. We performed a targeted RNAi screen of transcription factors known to regulate immune and stress genes. Of the two methods initially used to induce the mitochondrial proteostatic stress, we opted to use \u0394OTC for further experiments to minimize potential secondary effects of inducing ETC dysfunction. Because of its robust, specific and stable induction, we focused on the expression of the antimicrobial peptide metchnikowin (Mtk) as a reporter of mitochondrial stress. Knocking down the transcription factors foxo and Relish/NF-\u03baB, but not jun or kayak/Fos, strongly suppressed Mtk induction (Figure 1d), consistent with upregulation of several FoxO target genes in our RNAseq data (Figure 1a). Because RNAseq further suggested activation of the c-Jun N-terminal kinase (JNK) pathway, and since JNK has been reported to regulate FoxO (Wang et al., 2005), we asked whether knocking down the Drosophila JNK basket (bsk) would prevent Mtk induction. Indeed, Mtk induction by mitochondrial stress was significantly impaired in bsk loss-of-function conditions (Figure 1d).\n\nWe next explored mechanisms by which mitochondrial stress could activate JNK. One of the JNK-activating kinases, Apoptosis Signaling Kinase 1 (ASK1), had been reported to interact with and be activated by the mitochondrial Serine/Threonine phosphatase Phosphoglycerate Mutase 5 (PGAM5) (Takeda et al., 2009). Knocking down ASK1 and PGAM5 blocked induction of Mtk after mitochondrial stress, suggesting that PGAM5, ASK1, and JNK are components of a pathway responsible for transducing mitochondrial stress to downstream transcription factors (Figure 1d). The lack of Mtk induction in PGAM5 homozygous null mutants (PGAM51/1) experiencing mitochondrial stress confirmed this finding (Figure 1d). To determine whether this pathway indeed represented UPRmt signaling, we tested and confirmed that its disruption also blocks induction of classical UPRmt genes such as hsp60 and hsp10 (Figure 1\u2014figure supplement 1b\u2013d).\n\nWe then asked whether PGAM5 or ASK1 also play a role in canonical pathways for antimicrobial peptide (AMP) induction, and measured induction of Mtk following exposure to the pathogenic Pseudomonas entomophila. Ubiquitously knocking down either PGAM5 or ASK1 had no effect on this response (Figure 1\u2014figure supplement 2b), suggesting that the pathway mediating AMP induction in response to mitochondrial stress is distinct from the canonical Toll and Imd pathways.\n\nBecause PGAM5 has been reported to regulate apoptosis (Ishida et al., 2012; Wang et al., 2012), we further investigated whether \u0394OTC-induced stress signaling was the result of increased apoptosis. Although PGAM5 null flies showed higher baseline levels of apoptosis, in line with previous reports (Ishida et al., 2012), \u0394OTC expression stress did not induce apoptosis in our experiments (Figure 1\u2014figure supplement 2c).\n\nSince ASK1 can be activated by redox signaling (Saitoh et al., 1998), we also tested whether mitochondrial reactive oxygen species (ROS) production was required for transcriptional activation of AMPs. We blocked mitochondrial ROS production from sites on complexes I and III of the ETC using previously characterized compounds (Brand et al., 2016; Orr et al., 2013) but did not see any effect on Mtk induction after mitochondrial stress (Figure 1\u2014figure supplement 3a). Along these lines, overexpression of the antioxidant enzymes Catalase and jafrac1/Trx-1 during developmental \u0394OTC expression does not affect acute or lasting FoxO activation (Figure 1\u2014figure supplement 3b & c). This suggests that direct activation of ASK1 by ROS is not the basis of \u0394OTC-mediated AMP induction.\n\nTogether, these data indicate that the transcriptional response to mitochondrial unfolded proteins in flies is mediated by a pathway involving PGAM5 and ASK1, as well as JNK, Relish and FoxO (Figure 1e).\n\n### Mitochondrial proteostatic stress does not induce longevity via improved adult immune function, or via changes to the microbiome\n\nIn both flies and worms, the UPRmt has been reported to extend lifespan when activated during development (Durieux et al., 2011; Owusu-Ansah et al., 2013). To confirm this observation in our system, we used the ubiquitous RU486-inducible daughterless GeneSwitch (DaGS) driver to express \u0394OTC throughout larval development only, and measured adult lifespan. As shown in Figure 2a,g\u2014figure\u00a0supplement\u00a02, this treatment consistently extended maximum and median lifespan. Confirming observations in C. elegans, \u0394OTC expression limited to adulthood did not lead to extended lifespan (Figure 2b). To determine whether the pathway we identified in the experiments described above is required for this longevity effect, we assessed lifespan in PGAM5 homozygous null flies (Figure 2c). The absence of PGAM5 prevented lifespan extension after developmental \u0394OTC expression, suggesting that the protective effects responsible for lifespan extension are downstream of PGAM5. In line with this, the adult lifespan of FoxO double heterozygous null flies was significantly reduced after developmental \u0394OTC expression (Figure 2d). Both PGAM5 and especially FoxO nulls also showed reduced survival through larval development when subjected to mitochondrial proteostatic stress (Figure 2\u2014figure supplement 1). This suggests that FoxO activity plays an integral part in promoting resilience to mitochondrial stress in these conditions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig2-v3.jpg)\n\n**Figure 2.:** (A) Expressing \u0394OTC throughout larval development extends median and maximal adult lifespan by 21/14%, respectively. RU486 at 200 \u00b5M does not affect lifespan in genetic control flies. (B) Expressing \u0394OTC throughout adulthood does not extend lifespan. (C) Null mutants for the mitochondrial protein PGAM5 do not live longer following developmental \u0394OTC expression. (D) Null mutants for FoxO do not live longer following developmental \u0394OTC expression. These flies also showed strongly reduced survival through developmental mitochondrial stress (see supplementary). (E) Flies given antibiotics throughout adulthood still show lifespan extension by developmental \u0394OTC expression. (F) Flies raised in a sterile environment from egg stage still show lifespan extension by developmental \u0394OTC expression. (G) Statistical analysis of lifespan experiments. Each graph contains data pooled from 2\u00a0+\u00a0independent experiments. Individual experiments, mortality graphs and life tables are shown in Supplement 4 and File 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Null mutants for FoxO show significantly impaired survival during larval development when exposed to mitochondrial proteostatic stress. Survival of PGAM5 null flies was affected, but less severely. Error bars are SEM of three independent experiments; *p<0.05, **p<0.01, then each *=0.1 x. 200 \u00b5M RU486 used in all experiments.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Individual experiments comprising the curves presented in Figure 2, for (A) developmental \u0394OTC expression, (B) developmental \u0394OTC expression in a PGAM5 null background, (C) developmental \u0394OTC expression in a FoxO null background, including a simultaneous control experiment of developmental \u0394OTC expression in wild type flies as a positive control for lifespan exptension (bottom). (D) Developmental \u0394OTC expression in flies fed antibiotics throughout adulthood, and (E) developmental \u0394OTC expression in flies raised in sterile conditions.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Resistance to pathogenic P. aeruginosa, administered orally, is not changes in adult flies following developmental \u0394OTC expression. (B) Commensal bacteria were quantified in early (7\u00a0d), mid (31\u00a0d) and late life (54\u00a0d), by plating intestinal extracts on non-selective plates. No significant difference is seen after developmental \u0394OTC expression. (C) Microbiome composition was evaluated by 16S sequencing at 7 and 31 days. Again, no significant differences in distribution of genii was introduced by developmental \u0394OTC expression.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Age-specific mortality (\u00b5x) was estimated as \u00b5x = -ln(px), where px is the probability of an individual alive during the previous interval surviving to interval x. As deaths were counted thrice weekly, mortality was binned to intervals of five days. Data matches lifespan curves in Figures 2 and 5: (A) Developmental \u0394OTC expression, (B) adult \u0394OTC expression, (C) developmental \u0394OTC expression in a PGAM5 null background, (D) developmental \u0394OTC expression in a FoxO null background, (E) developmental \u0394OTC expression in flies fed antibiotics throughout adulthood, (F) developmental \u0394OTC expression in flies raised in sterile conditions, and (G) developmental \u0394OTC expression with adult flies receiving a high-protein diet. See Supplementary file 2 for complete life tables.\n\nIn worms, the UPRmt also induces the expression of immune genes (Pellegrino et al., 2014), but it has not been explored whether UPRmt-induced longevity is a result of improved immune function. Since our data showed that the pathway responsible for activating immune-response genes during mitochondrial stress is also required for longevity, we hypothesized that the UPRmt might extend lifespan by improving the ability to fight off infections and/or by altering the microbiome. To test this hypothesis, we repeated our lifespan experiments in two conditions where flies are not exposed to microbes; in one condition, eggs were washed in bleach (HClO) to eliminate microbes, then transferred to a sterile hood and reared on autoclaved food throughout development and adult life. In the second condition, we added a cocktail of antibiotics shown to eliminate all culturable strains of the microbiome (Li et al., 2016) to the food of adult flies. Both conditions prevent pathogen exposure and eliminate the adult microbiome, while the first condition further prevents the formation of a larval microbiome. In both cases, we observed increased median and maximal lifespan after developmental \u0394OTC expression, just as in flies reared normally (Figure 2e\u2013f). Larval \u0394OTC expression also did not affect pathogen resistance at day 7 of adulthood (Figure 2\u2014figure supplement 3a). We further analyzed the intestinal microbiome load (as assessed by colony-forming units, CFUs) at different points of life after developmental \u0394OTC expression, and found no significant difference relative to controls (Figure 2\u2014figure supplement 3b). To test effects on microbiome composition, we performed 16S sequencing in young and old flies after developmental \u0394OTC expression, and similarly found no major changes relative to controls (Figure 2\u2014figure supplement 3c). Altogether, these data indicate that activation of the immune system following developmental \u0394OTC expression does not contribute to the observed increase in adult longevity.\n\n### Developmental mitochondrial proteostatic stress affects the metabolic state of adult flies and leads to persistent FoxO activation in the fat body\n\nTo further explore potential physiological mechanisms conferring lasting protective effects of developmental mitochondrial stress, we assessed whether metabolism in adult flies is affected (Figure 3, Figure 3\u2014figure supplement 1). We first tested the ratio of NAD/NADH, as a measure of mitochondrial function, but did not detect changes in adults after developmental \u0394OTC expression (Figure 3a). We also did not see changes in MitoTracker intensity in muscle tissue from adults after developmental \u0394OTC expression (Figure 3\u2014figure supplement 1a). However, we found that expressing \u0394OTC during development leads to reduced triglyceride (TAGs) concentrations (relative to total protein) in adult flies (Figure 3b); this phenotype is consistent with activation of FoxO, which is known to induce lipases and increase fat metabolism (Karpac et al., 2013). PGAM5 null mutants did not show a decrease in TAG levels, supporting the notion that this metabolic shift results from UPRmt signaling.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig3-v3.jpg)\n\n**Figure 3.:** (A) Developmental \u0394OTC expression does not affect the ratio of NAD/NADH in adult flies. (B) Developmental \u0394OTC expression lowers steady-state triglyceride levels in adult flies, consistent with fat body FoxO activation. In PGAM5 null flies this effect is not seen. p-values are 0.011 and 0.567. (C) \u0394OTC expression throughout development leads to increased nuclear localization of FoxO in the fat body of third instar larvae. This effect is neutralized in PGAM5 null larvae. p-values are\u00a0<0.0001 and 0.0001. (D) Adult fat bodies show persistent nuclear FoxO localization after developmental stress. Flies were dissected 7 days after eclosion, with no adult \u0394OTC expression. p-values are 0.002 and 0.002. (E) Larval and lasting FoxO translocation by the mitochondrial stress can be blocked by simultaneously administering the JNK inhibitor SP600125 (far left and left). p-values are 0.001 and\u00a0<0.0001;<0.0001 and 0.0002. Similarly, 24 hr mitochondrial stress in adult flies leads to FoxO translocation, which is blocked by simultaneous expression of dominant negative bsk/JNK (right). p-values are\u00a0<0.0001 and<0.0001. In contrast to developmental treatment, FoxO activation induced by adult \u0394OTC expression does not persist 1 week after treatment is stopped (far right). p-values are\u00a0<0.0001 and 0.96. All error bars are SEM from two independent experiments. Student\u2019s t-test (B) or ANOVA with dunnett\u2019s multiple comparisons (A, C\u2013E); *p<0.05, **p<0.01, then each *=0.1 x. 200 \u00b5M RU486 used in all experiments. .\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Developmental \u0394OTC expression does not change mitochondrial content/membrane potential, as determined by relative intensity of MitoTracker to intensity normalized to DAPI. (B) Developmental \u0394OTC expression leads to a slight increase in adult whole body glycogen stores, normalized to total protein. This effect is reversed in PGAM5 null flies. Adult whole body glucose levels in both wild type and PGAM5 null flies. (C) Adult body weight is reduced in both wild type and PGAM5 null flies after developmental \u0394OTC expression. (D) Adult wing size is similarly reduced in both wild type and PGAM5 null flies after developmental \u0394OTC expression. (E) Food intake is not affected in adult flies after developmental or acute \u0394OTC expression, as determined by the CAFE liquid feeding assay.\n\nThe fat body is a major metabolic organ in Drosophila, and we have previously shown that JNK activation in the larval fat body leads to nuclear translocation and activation of FoxO (Wang et al., 2005). We therefore used immunohistochemistry to explore the dynamics of FoxO localization in the fat body in response to mitochondrial stress. \u0394OTC expression during development strongly induced nuclear translocation of FoxO in late L3 larval fat bodies (Figure 3c). Again, this was not evident in PGAM5 null mutant larvae. FoxO is a known regulator of stress responses and organismal lifespan, but in order to directly promote longevity in response to developmental UPRmt, FoxO would have to remain active during adulthood. To test this, we imaged adult fat bodies one week after eclosion and found that flies retained nuclear-localized FoxO after developmental \u0394OTC expression (Figure 3d). We next tested whether this lasting effect on FoxO was dependent on JNK activity during development, by adding the JNK inhibitor SP600125 to the larval food. This treatment inhibited both larval and adult translocation of FoxO to the nucleus (Figure 3e, left). To confirm that this was due to specific inhibition of JNK/bsk, we also used genetic tools to block this pathway. Developmental expression of dominant negative bsk (bskDN) was lethal, but expressing bskDN simultaneously with \u0394OTC in adult flies limited FoxO nuclear translocation (Figure 3e).\n\nSince developmental activation is crucial for UPRmt-mediated longevity ((Durieux et al., 2011) and Figure 2b), we tested whether the lasting effect on FoxO depends on the timing of \u0394OTC expression. We expressed \u0394OTC for 24 hr on day 3 of adulthood, which lead to acute but not lasting nuclear translocation of FoxO (Figure 3e, right). The absence of a persistent response to mitochondrial stress after adult treatment adults is consistent with the lack of lifespan extension in these conditions (Figure 2b). Our results suggest that the persistent activation of FoxO in response to the developmental activation of the UPRmt is the mechanism by which developmental but not adult mitochondrial stress can extend lifespan.\n\n### Heat-shock proteins are persistently upregulated in adult flies after developmental stress\n\nTo test this hypothesis, we then explored the transcriptional consequences of developmentally activated, persistent FoxO activation in adults. We performed RNA sequencing of fat bodies from both larvae acutely expressing \u0394OTC, and 7-day-old adults that had experienced larval \u0394OTC expression. To distinguish the specific transcriptional response responsible for longevity from more general adaptations to mitochondrial stress, we performed this experiment in both wild type and PGAM5 null mutant larvae and adult flies. We observed a large number of upregulated genes in the acutely stressed larvae (Figure 4a; using a minimum baseline FPKM value of 10 and a cutoff of 3-fold induction relative to controls). These genes were predominantly involved in energy metabolism, and showed considerable overlap between the wild type and PGAM5 null mutant data sets. Only a small number of these (predominantly heat-shock and stress response genes) remained upregulated in adult flies. Notably, none of the genes induced persistently in wild-type flies remained induced in PGAM5 nulls (Figure 4b,c). These genes include twelve chaperones, some of which are FoxO targets (Donovan and Marr, 2016; Wang et al., 2003) and have previously been shown to extend lifespan when upregulated (Liao et al., 2008; Morrow et al., 2004; Tatar et al., 1997; Wang et al., 2003; Zhao et al., 2005). The only non-chaperone-encoding genes in this list (Tsp42E and Obp99) are also regulated by FoxO and are involved in lifespan regulation (Alic et al., 2014; Bai et al., 2013). Additional FoxO targets, such as peroxiredoxin 3 (Chiribau et al., 2008), were also upregulated in adults following developmental \u0394OTC expression, but fell below our 3-fold cutoff. Similarly, targets that are negatively regulated by FoxO were found to be downregulated in response to developmental mitochondrial stress (Supplementary File 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig4-v3.jpg)\n\n**Figure 4.:** (A) Venn diagram shows genes upregulated\u00a0\u22653 x in fat bodies from third instar larvae undergoing mitochondrial proteostatic stress relative to untreated controls, where control FKMP\u00a0\u226510. We separate genes whose upregulation depends on the identified stress signaling pathway (red) from those induced by other means (green), by comparing the transcriptional profile of PGAM5 null mutant larvae. Bar graphs show overrepresented Gene Ontology terms within each group of genes, showing mainly metabolic changes. Redundant GO terms were trimmed using REVIGO. (B) Venn diagram shows genes whose expression levels are persistently upregulated\u00a0\u22653 x after developmental stress. All these genes were dependent on functional UPRmt signaling (i.e. not induced in PGAM5 nulls). Most of these genes correspond to heat-shock proteins. (C) Expression of the persistently upregulated genes is shown for all conditions, with FoxO target genes highlighted in red. Several of these have been shown to extend lifespan when overexpressed (see text). Full raw data found in Suppl. File 1. 200 \u00b5M RU486 was used.\n\n### Persistent FoxO activation and lifespan are diet-dependent and regulated by mTORC1 and GCN-2 activity\n\nTo identify the biological mechanism promoting persistent FoxO activation, we first analyzed potential post-translational modifications of FoxO. It was previously reported that nicotinamide adenine dinucleotide (NAD+) precursors activate the UPRmt in worms, via the deacetylase sir-2.1 (Mouchiroud et al., 2013). Knocking down Sirt2 (the fly homologue of sir-2.1 and SIRT1) during developmental \u0394OTC expression, however, did not affect FoxO nuclear localization, and neither Sir2 overexpression nor supplementation with the NAD precursor nicotinamide riboside were sufficient to induce nuclear translocation of FoxO (Figure 5\u2014figure supplement 1b\u2013d). Drosophila FoxO can also be regulated by HDAC4 (Wang et al., 2011), but knocking down this deacetylase during developmental \u0394OTC expressionalso did not affect FoxO localization (Figure 5\u2014figure supplement 1e).\n\nWe next asked whether lasting FoxO activation was the result of nutrient response signaling. FoxO activity is regulated by insulin signaling, in flies mediated by the Drosophila Insulin-like Peptide (dilp) family (Kannan and Fridell, 2013). During starvation, reduced availability of dILPs promotes FoxO nuclear translocation in the fat body, by reducing insulin receptor and protein kinase B activities. Upon refeeding, this signaling network is reset, promoting FoxO translocation to the cytoplasm. To test whether reduced insulin signaling activity was carried over from developmental stress into adulthood, we performed starvation and refeeding experiments on these flies. As shown in Figure 5a, FoxO translocates to the nucleus after developmental \u0394OTC expression. After 9 hours of starvation (only water was offered to flies), the fat body of both stressed and control flies exhibit nuclear FoxO. 24 hr of refeeding resets this activation in control flies, but FoxO remained nuclear in flies that had experienced developmental stress. We were also unable to detect changes in transcription of dilp2, \u22123,\u20136 and \u22128 during/after \u0394OTC expression. Further supporting the idea that the mitochondrial proteostatic stress affects FoxO independently of insulin signaling, switching flies to a diet of pure sucrose (5% in water) for 5 days did not abolish the persistent nuclear localization of FoxO caused by developmental \u0394OTC expression (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig5-v3.jpg)\n\n**Figure 5.:** (A) Adult flies show nuclear localization of FoxO after developmental \u0394OTC expression. After 9 hr of wet starvation, FoxO is nuclear in treated and untreated flies alike. 24 hr of refeeding returns FoxO to the cytoplasm in untreated flies, but does not reset the effect of developmental stress. p-values are (pre to starved) 0.517 and 0.031, (starved to refed) 0.723 and 0.001. (B) FoxO nuclear localization following developmental stress is reset by 5 days on a high-protein diet, but not a pure sucrose diet. Feeding rapamycin at 200 \u00b5M to inhibit mTORC1 with the high-protein diet blocks this effect. p-values are (\u00b1RU) 0.007, (+RU vs diets) 0.790, 0.915,<0.0001 and 0.338, (HPD\u00a0\u00b1\u00a0rapa) 0.001. (C) Knocking down TSC1 during developmental \u0394OTC expression blocks persistent activation of FoxO in adults (left). Conversely, overexpressing the mTORC1 inhibitors TSC1 and two in adult flies is sufficient to change FoxO localization absent mitochondrial stress (right). p-values are\u00a0<0.0001 and 0.0027. (D) Knocking down GCN-2 during developmental \u0394OTC expression is sufficient to block persistent FoxO activation (left). p-values are 0.0005 and 0.0006. Overexpressing the GCN-2 kinase in larvae produces FoxO nuclear localization similar to the effect of mitochondrial stress (right). p-values are (\u0394OTC vs UAS-GCN2) 0.703 and (UAS-GCN2\u00a0\u00b1RU)<0.0001. (E) Inhibiting mTOR with 200 \u00b5M rapamycin is sufficient to induce nuclear FoxO localization. This effect is blocked by RNAi of GCN-2, suggesting a downstream role for this kinase. p-values are 0.032 and 0.602. (F) Developmental \u0394OTC expression does not extend lifespan when flies are fed a high-protein diet throughout adulthood, consistent with a requirement for persistent FoxO activity. All error bars are SEM from 2\u00a0+\u00a0independent experiments. ANOVA with Tukey\u2019s (A-B) or dunnett\u2019s (D) post-hoc, or student\u2019s t-test (C and E); *p<0.05, **p<0.01, then each *=0.1 x. 200 \u00b5M RU486 used in all experiments.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Absolute levels of NAD\u00a0+\u00a0are not increased by developmental \u0394OTC expression. (B) Knocking down the Sir2 deacetylase during developmental \u0394OTC expression does not prevent FoxO activation in the larval fat body. (C) Overexpressing the Sir2 deacetylase in not sufficient to activate FoxO activation in the larval fat body. D) Supplementing the NAD precursor nicotinamide riboside does not lead to FoxO activation in the larval fat body. (E) Knocking down the histone deacetylase HDAC4 during developmental \u0394OTC expression does not prevent FoxO activation in the larval fat body.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Knocking down TSC1 to activate mTORC1 during development \u0394OTC expression strongly reduces survival, beyond the effect of the individual treatments. This fits with the observation that mTORC1 activity blocks FoxO activation (Figure 5), which is required for survival through developmental stress (Figure 2\u2014figure supplement 1). Error bars are SEM of three independent experiments; *p<0.05, **p<0.01, then each *=0.1 x. 200 \u00b5M RU486 used in all experiments.\n\nHowever, flies switched to an alternate diet containing\u00a0~5 x higher protein levels than control food showed a nearly complete loss of nuclear FoxO in the fat body after 5 days (Figure 5b). To test whether this high-protein diet affects FoxO localization through the main amino-acid-sensing pathway mTORC1, we repeated this experiment with supplementation of the mTORC1 inhibitor rapamycin at 200 \u00b5M. This prevented the loss of nuclear FoxO (Figure 5b), suggesting that mTORC1 activation can override the persistent nuclear translocation of FoxO produced by developmental \u0394OTC expression. In support of this role for mTORC1, activating mTORC1 during developmental stress (by RNAi of its inhibitor TSC1) prevents lasting FoxO activation (Figure 5c, left), while reducing developmental survival in the same manner as FoxO deficiency (Figure 5\u2014figure supplement 2). Furthermore, simultaneous over-expression of TSC1 and 2 to inhibit mTORC1 activity in adult flies is sufficient to promote nuclear translocation of FoxO (Figure 5c, right). mTORC1 activity has previously been reported to inhibit the FoxA ortholog Fork Head by preventing its nuclear localization (B\u00fclow et al., 2010). This involves signaling through the protein kinase GCN-2, which has previously been implicated in the UPRmt in C. elegans (Baker et al., 2012). Indeed, overexpression of GCN-2 was sufficient to induce nuclear localization of FoxO, while knocking down GCN-2 during developmental \u0394OTC expression abrogates the lasting effect on FoxO (Figure 5d). To test whether GCN-2 acts downstream of mTORC1 in this context, we knocked down GCN-2 in flies treated with rapamycin and observed a reduction in nuclear FoxO (Figure 5e).\n\nBecause FoxO activity is required for lifespan extension (Figure 2d) and a high-protein diet erases the persistent FoxO activation seen after developmental \u0394OTC expression (Figure 5b), we hypothesized that adult diet would affect the longevity effects of mitochondrial proteostatic stres. To test this hypothesis, we repeated our lifespan experiment with developmental \u0394OTC expression but switched flies to the high-protein diet after eclosion. The high-protein diet reduced the lifespan of the control group relative to our standard fly food, consistent with previous literature, but also completely abolished the lifespan extension normally induced by \u0394OTC expression (Figure 5f). This supports our proposed pathway for lifespan extension, and suggests diet as an important regulator of beneficial UPRmt effects.\n\n## Discussion\n\nOur data identify a signaling pathway that responds to mitochondrial proteostatic stress through the phosphatase PGAM5, leading to activation of JNK and FoxO. This results in the FoxO- and Rel-mediated induction of immune, antioxidant and metabolic gene expression, as well as of genes encoding heat shock proteins. When activated during development, FoxO remains active throughout life, inducing a select group of genes that extend lifespan. Interestingly, this activity is subject to regulation by GCN-2/mTORC1-dependent nutrient sensing, providing a clue for how diet may interfere with lifespan extending stress signaling mechanisms (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26952/elife-26952-fig6-v3.jpg)\n\nOur genetic studies suggest a pathway of UPRmt activation from the mitochondrial membrane protein PGAM5, through ASK1 and JNK, to the FoxO transcription factor. FoxO increases the expression of Relish, and thereby induces antimicrobial peptide expression. Persistent activation of FoxO also leads to lasting upregulation of chaperones, which improves proteostasis and extends lifespan. Meanwhile, sensing of amino acids can activate mTORC1 and GCN-2, which negate the persistent activation of FoxO and block lifespan extension.\n\nPGAM5 has not been fully characterized but plays a role in regulating cell death pathways in flies and cultured cells (Ishida et al., 2012; Wang et al., 2012; Zhuang et al., 2013). It has been reported to localize to either the inner (Lo and Hannink, 2008) or outer mitochondrial membrane, where it is cleaved upon loss of membrane potential (Sekine et al., 2012). While a member of the PGAM family based on sequence, it displays phosphatase rather than mutase activity in culture (Takeda et al., 2009). PGAM5 also interacts with the mitophagy factor PINK1, and loss of PGAM5 rescues the muscle degeneration phenotype of dPINK1 mutant flies (Imai et al., 2010). Loss of PGAM5 inhibits mitophagy in vitro, and leads to Parkinson\u2019s-like symptoms in mice (Lu et al., 2014). Regulation of mitophagy by PGAM5 may depend on its interaction with the PARL protease, which is normally responsible for cleaving PINK1 to prevent mitophagy of healthy mitochondria (Sekine et al., 2012). Indeed, induction of the UPRmt in HeLa cells has been reported to trigger PINK1 accumulation, Parkin recruitment and mitophagy (Jin and Youle, 2013). In our experiments, PGAM5 does not seem to regulate longevity directly by stimulating apoptosis, however, suggesting a more complicated biological role for this phosphatase. It is tempting to speculate that it may act as a rheostat to dictate whether mitochondrial stress results in UPRmt activation, mitophagy, or cell death. Further exploration of the intra-mitochondrial signals that activate PGAM5, as well as its immediate downstream partners, should be interesting topics for future studies of mitochondrial stress.\n\nThe importance of developmental activation of the UPRmt for lifespan extension was previously observed in studies exploring this mitochondrial stress response and the response to ETC dysfunction in C. elegans and Drosophila (Copeland et al., 2009; Dillin et al., 2002; Durieux et al., 2011; Rea et al., 2007). Our findings confirm this and identify persistent FoxO activation and FoxO-induced gene expression as associated with the lasting benefits of developmental mitochondrial stress in the adult organism. Two recent papers have identified a role for the UPRmt in regulating histone methylation and chromatin remodeling (Merkwirth et al., 2016; Tian et al., 2016). The studies show that demethylase activity during developmental UPRmt is required for lifespan extension, and that atfs-1 acts synergistically with these epigenetic changes. It will be interesting to explore the interplay between elevated FoxO activity and demethylase-regulated chromatin accessibility in future studies.\n\nThe hypothesis that a combination of signaling and epigenetic changes are required for UPRmt longevity could help explain recent reports that commonly used UPRmt reporters in C. elegans correlate poorly with longevity (Bennett et al., 2014; Ren et al., 2015): the UPRmt likely involves several pathways, which can also be activated by other stimuli. However, a crucial combination of signaling and epigenetic changes could be induced by specific types of mitochondrial stress. This would prompt caution about using a single gene reporter as a measure of \u2018UPRmt activation\u2019 and suggest using multiple assays to determine its role in each biological process. To our knowledge, this is the first report of an organism other than C. elegans showing improved longevity from UPRmt activation that does not involve direct ETC disruption. This lends support to the UPRmt as a conserved longevity mechanism, which overlaps with but is not fully explained by ETC function.\n\nOur work also provides further support for the observation that the UPRmt triggers the innate immune system (Pellegrino et al., 2014) and shows that this feature is conserved outside of C. elegans. As in worms, this activation provides acute resistance to infection in flies, but we find that immune function is not responsible for the effects of the UPRmt on longevity. The activation of antimicrobial gene expression in response to FoxO activation is not surprising, as it has previously been reported that the FoxO transcription factor can induce the expression of antimicrobial peptides independently of classical innate immune pathways in response to starvation (Becker et al., 2010). Moreover, we have shown previously that FoxO activation in the larval Drosophila fat body can induce Relish/NF-\u03baB signaling by stimulating Rel expression (Karpac et al., 2011). Our data indicate that mitochondrial proteostatic stress activates this FoxO/Relish cassette, but that the FoxO-dependent upregulation of chaperones in adult flies is likely responsible for lifespan extension.\n\nOur results are also consistent with reports that the UPRmt can be activated by rapamycin (Houtkooper et al., 2013) and identify high-protein diet as a critical intervention that activates mTORC1 and overrides the positive effects of developmental mitochondrial stress. It was also previously reported that NAD precursors and sirt-2.1 activate the UPRmt and extend lifespan in a daf-16/FOXO-dependent manner (Mouchiroud et al., 2013). Our experiments did not suggest a role for NAD precursors or Sirt2 in regulating the Drosophila UPRmt, but it remains possible that exploring different sirtuins or dietary conditions could reveal such a role. This is especially true in light of the observed effect of diet on UPRmt activity and lifespan extension. The regulation of FoxO by amino acid sensing/mTORC1 rather than insulin signaling is surprising, but is supported by a previous observation that mTORC1 activity regulates longevity in C. elegans through activation of daf-16/FOXO (Robida-Stubbs et al., 2012).\n\nThese findings thus reveal a critical vulnerability of developmental UPRmt-mediated physiological changes that promote longevity: they can be erased by a high-protein diet. If the observed mTORC1-induced signaling interactions are conserved in vertebrates, this has important implications for the development of interventions that aim to engage the UPRmt to increase metabolic health and extend health- or lifespan.\n\n## Materials\u00a0and\u00a0methods\n\n### Drosophila stocks\n\nThe following lines were obtained from the Bloomington Drosophila Stock Center: w1118, y1 w1, Da::GS, tub::GS, PGAM5 RNAi (#34744), ASK1 RNAi (#32646), foxo21 (J\u00fcnger et al., 2003), foxo\u039494 (Slack et al., 2011), bskDN (#6409).\n\nThe following lines were obtained from the Vienna Drosophila RNAi Center: Hrd1 RNAi (#6870), PGAM5 RNAi (#51657), ASK1 RNAi (#110228), TSC1 RNAi (#110811), bsk RNAi (#34138), foxo RNAi (#30556).\n\nThe following lines were gifts from other labs: UAS-\u0394OTC (Martins lab, Pimenta de Castro et al., 2012), PGAM51 (Ichijo lab, Imai et al., 2010), jun and fos RNAi (Bohmann lab, Hyun et al., 2006)), UAS-GCN-2 and GCN-2 RNAi (Leopold lab, Bjordal et al., 2014), UAS-TSC1 and TSC2 (Tatar lab, Hwangbo et al., 2004), ND75 and Rel RNAi (Perrimon lab, Agaisse et al., 2003; Owusu-Ansah et al., 2013)\n\n### Fly husbandry and demographics\n\nStandard fly food was prepared with the following recipe: 1 l distilled water, 13 g agar, 22 g molasses, 65 g malt extract, 18 g brewer\u2019s yeast, 80 g corn flour, 10 g soy flour, 6.2 ml propionic acid, 2 g methyl-p-benzoate in 7.3 ml of EtOH. High-protein food was prepared with the following recipe: 1 l distilled water, 10 g agar, 80 g brewer\u2019s yeast, 20 g yeast extract, 20 g peptone, 51 g sucrose, 6.2 ml propionic acid, 2 g methyl-p-benzoate in 7.3 ml of EtOH (Musselman et al., 2011). 100% sucrose diet is 50 g/l sucrose in water. For GeneSwitch experiments, 86 mg RU486 was additionally dissolved in the EtOH for 200 \u00b5M final concentration. For antibiotic experiments, 50 mg of the following antibiotics were added during food preparation: ampicillin, tetracycline, erythromycin, kanamycin. For axenic experiments, fly food bottles were autoclaved at 121\u00b0C for 30 min, and 1 ml EtOH\u00a0\u00b15 mg RU486 added after cooling, previously determined to yield a final concentration of 200 \u00b5M (Biteau et al., 2010). Eggs laid over a 24 hr period were collected and sterilized for 3 min in 2.7% sodium hypochlorite, then washed twice with sterile, distilled water for 1 min and transferred to sterile bottles in a laminar flow hood. Eclosed flies were kept on sterilized food in the flow hood. Flies were maintained at 25\u00b0C and 65% humidity, on a 12 hr light/dark cycle, unless otherwise indicated. For lifespan experiments, up to 30 flies per vial were flipped thrice weekly, with dead flies counted visually.\n\n### Immunostaining and microscopy\n\nFat bodies were dissected from adult females or from third instar larvae pre-wandering. Tissue was fixed at room temperature for 45 min in 100 mM glutamic acid, 25 mM KCl, 20 mM MgSO4, 4 mM Sodium Phosphate, 1 mM MgCl2, 4% formaldehyde. Washes were done in PBS with 0.5% BSA, 0.1% Triton X-100 at 4\u00b0C. Primary incubation was done overnight 4\u00b0C using a rabbit N-terminal FoxO antibody (RRID:AB_2569227, gifted from O. Puig) at 1:500. Secondary antibodies were from Jackson Immunoresearch. TUNEL staining was performed using In Situ Cell Death Detection Kit (Roche). DNA was stained using Hoechst, and tissue mounted on slides using Mowiol mounting medium (Sigma). Imaging was done on a Zeiss LSM700 confocal microscope at 40x magnification.\n\n### NAD/metabolism assays\n\nAll assays were done on samples of five whole flies/larvae. NAD and NADH levels were quantified from whole flies using the NAD/NADH Quantitation Colorimetric kit from BioVision. Glucose and glycogen were quantified using the Glucose (HK) Assay kit from Sigma. Lipids were quantified with the Triglyceride LiquiColor kit from Stanbio. Protein levels were quantified with the BCA assay.\n\n### Infection\n\nP. entomophila and P. aeruginosa were cultured in LB medium for 16 hr at 37\u00b0C and 10 hr at 30\u00b0C, respectively. For oral infections, flies were starved for 2 hr before treatment. 6 mL culture was pelleted at 5000 g for 10 min, then resuspended in 500 uL 5% sucrose and added to a vial containing Whatman filter paper. 20 flies per vial were maintained at 29\u00b0C, and deaths tracked daily or twice daily. 100 uL 5% sucrose was added to the vials each day. For humeral infections, a tungsten needle was dipped in 30x concentrated culture and flies were pricked in the periphery of the abdomen. They were then transferred to normal food vials. Negative controls were fed/pricked with 5% sucrose alone.\n\n### RNA extraction and quantitative RT-PCR analysis\n\nMuscle tissue was isolated by removal of head, abdomen, wings, legs and intestine from fly thoraces. Fat bodies were manually isolated from fixed abdomens/larvae. 5\u20138 flies were used per sample, and total RNA was extracted from using Trizol (Life Sciences) according to manufacturer\u2019s protocol. cDNA was synthesized using Superscript III (Life Sciences). Results represent four biological samples, each with triplicate technical repeats. Real-time PCR was performed using SsoAdvanced Universal SYBR Green Supermix (Bio-Rad) on a Bio-Rad Real-Time CFX96 system. Expression levels were calculated as \u0394\u0394Ct normalized to RP49.\n\n### RNA sequencing\n\nMuscle or fat body tissue was isolated and RNA extracted as described above, using 15 flies per sample. TruSeq RNA Library Prep Kit (Illumina) was used to prepare libraries, and sequencing was performed on an Illumina MiSeq system. Raw data were analyzed with the Tuxedo suite (RRID:SCR_013194) and reads were mapped to Drosophila genome release 5.2. Expression was recorded as FPKM: fragments per kilo-base per million reads.\n\n### Statistics and bioinformatics\n\nSignificance in two-condition experiments was evaluated by student\u2019s t-test. Multiple condition experiments were evaluated by one-way ANOVA, with Dunnett\u2019s post-hoc comparing to induced sample or Tukey\u2019s post-hoc when multiple conditions are compared. Gene Ontology analysis of RNAseq experiments was done at flymine.org, using REVIGO (RRID:SCR_005825) to trim redundant terms (Allowed similarity: Medium).\n\n### CAFE assay\n\nFeeding rates were quantified by the CAFE assay (Ja et al., 2007), measuring consumption of a 5% w/v sucrose solution accessible from a capillary tube. Each vial contained 10 flies per vial, and evaporation was measured with an empty vial. Consumption was measured at 8\u201312 hr intervals and normalized to uL/fly/hr.\n\n### 16S sequencing\n\nFlies were washed in 70% EtOH for 60 s to kill external bacteria, and intestines dissected out in sterile PBS. Ten guts were collected per sample. Commensal genomic DNA was extracted using UltraClean Microbial DNA Isolation Kit (MO BIO). This DNA was used as template for limited cycle PCR with primers targeting V3/V4 regions (Forward 5\u2019-CCTACGGGNGGCWGCAG-3\u2019 and Reverse 5\u2019-GACTACHVGGGTATCTAATCC \u22123\u2019) to generate a 16S metagenomic sequencing library. The following reaction conditions were used: 94\u00b0C for 5 min, followed by 30 cycles of 94\u00b0C for 1 min, 48\u00b0C for 2 min, and 72\u00b0C for 2 min, and a final extension at 72\u00b0C for 5 min. Illumina Miseq paired-end (2 \u00d7 300 bp) sequencing was performed and Miseq Reporter Software was used for primary analysis and classification based on Greengenes database (RRID:SCR_002830).\n\n### Commensal quantification\n\nIntestines were dissected out as described above, pooled in groups of 10 and crushed with a motorized pestle. These samples were diluted 1000x and plated on non-selective LB Amp plates. Sterile PBS was used as a negative control. Colonies were counted after 60 hr at 30\u00b0C.\n\n### Primers used\n\nRP49 F: 5\u2019-TCCTACCAGCTTCAAGATGAC-3\u2019\n\nRP49 R: 5\u2019-CAGGTTGTGCACCAGGAACT-3\u2019\n\nMetchnikowin F: 5\u2019-AATCAATTCCCGCCACCGAG-3\u2019\n\nMetchnikowin R: 5\u2019-GACCCGGTCTTGGTTGGTTA-3\u2019\n\nDrosomycin F: 5\u2019-CGTGAGAACCTTTTCCAATATGAT-3\u2019\n\nDrosomycin R: 5\u2019-TCCCAGGACCACCAGCAT-3\u2019\n\nTurandot A F: 5\u2019-GCACCCAGGAACTACTTGACATCT-3\u2019\n\nTurandot A R: 5\u2019-GACCTCCCTGAATCGGAACTC-3\u2019\n\nRelish F: 5\u2019-ACAGCCCACATTCCCATCAG-3\u2019\n\nRelish R: 5\u2019-GAGCCGCACCTGGTTCAA-3\u2019\n\nHsp60 F: 5\u2019-GACCAGATCGAGGACACCAC-3\u2019\n\nHsp60 R: 5\u2019- GCCGAGTTTCTGATCCTCGTTG-3\u2019\n\nHsc70-5 F: 5\u2019-CTGCGTTACAAGTCCGGTGA \u22123\u2019\n\nHsc70-5 R: 5\u2019- GCAGCACATTAAGACCAGCG-3\u2019\n\nHsp10 F: 5\u2019-CCCGCATCTAGCGAGAATAG \u22123\u2019\n\nHsp10 R: 5\u2019-CTCCTTTCGTCTTGGTCAGC \u22123\u2019\n\nClpX F: 5\u2019-AAAATGCTCGAAGGCACAGT \u22123\u2019\n\nClpX R: 5\u2019-TTGAGACGACGTGCGATAAG \u22123\u2019\n",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "18144e1f-8132-499d-854f-97eb7f4daf5a",
+      "submission_id": "538af7cf-de0e-44fa-8165-fd065ed399a2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Utpal Banerjee, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26952.024](https://doi.org/10.7554/eLife.26952.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"PGAM5 promotes lasting FoxO activation after developmental mitochondrial stress and extends lifespan in Drosophila\" for consideration by eLife. Your article has been favorably evaluated by Jonathan Cooper (Senior Editor) and three reviewers, one of whom, Utpal Banerjee, is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Edward Owusu-Ansah (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and appreciate the importance of the findings and the overall quality of the data. The summary of these reviews and discussions are summarised below by the Reviewing Editor.\n\nA set of specific issues raised by the reviewers that we believe can be addressed by new experiments and/or rewriting the manuscript are summarized below as \"other concerns\". However, there is one major issue that needs special attention. During the post-review discussions, the reviewers unanimously agree that the data lack direct evidence for a sustained FOXO activation (which, as the title suggests, is central to the conclusions derived from this work).\n\nSummary:\n\nIn this paper Jensen et al. investigate how mitochondrial dysfunction during Drosophila development leads to a stress response that has lasting effects on the flies, most notably on extension of lifespan. The authors characterize the steps that signal mitochondrial dysfunction to modulate nuclear gene expression, using an immune response gene as an output. In adult flies that were subjected to mitochondrial stress during development, a subset of stress response genes are expressed (even though the original stimulus is removed); it is proposed that these genes (all FoxO targets) mediate lifespan extension. The lasting effects of developmental mitochondrial dysfunction can be reversed through exposure to a high protein diet during adulthood.\n\nEssential revisions:\n\n(major concerns):\n\nThe key weakness regards the study's (implied) inference on the role of lasting FoxO activation as the longevity mechanism. Epistasis analysis is needed to test this idea.\n\nThe important required study is to conduct mtUPR (in any way) in FoxO-null epistasis. Alternatively, the authors could test the effect of co-expression of the OTC construct and RNAi to FoxO, using the gene-switch system. This approach allows the genotype without RU to serve as its own co-isogenic control. One needs to measure the longevity of the OTC expression alone, using geneswitch again, to confirm there is a longevity benefit in that period. And, one should do the same by driving the FoxO RNAi with the same geneswitch (which should do very little to the survival).\n\nEssential revisions:\n\n(other concerns):\n\n1) Are phenotypes due to a UPRmt stress response per se? How much is due to a more general response caused by mitochondrial dysfunction. This is unclear because of the nature of mitochondrial stressors. ND75 knockdown will cause mitochondrial dysfunction (possibly affecting ATP, Ca2+, ROS, NADH, NAD+ etc.). The \u0394OTC mutant in flies also severely impacts mitochondrial function (ATP, oxygen consumption etc.). Therefore, it is not clear that a UPRmt or some other type of mitochondrial stress response is being studied. Presumably studies in worms, where chaperone up-regulation has clear linkage to UPRmt provides the inspiration, but this is not yet in flies. For example, \u0394OTC causes ETC dysfunction in flies (Pimenta de Castro et al. 2012). If this is not true for this system, then some functional data are required, or the description of the model should be modified.\n\n2) Is the PGAM5/ASK/JNK signaling pathway a bona fide UPRmt pathway (analogous to the ATFS-1)? If a chaperone important in the UPRmt response affecting proteostasis directly was chosen as a marker rather than a gene involved in the immune response, then the relation of this new signaling pathway to UPRmt could be better assessed. Either a more specific UPRmt output marker should be used, or discussion of UPRmt should be reserved for the Discussion.\n\n3) In the same vein, it is unclear whether the canonical markers of the UPRmt, such as Hsp60, Hsp10, mortalin (mt-Hsp70) and the ClpP protease are induced under the conditions used to activate the UPRmt in this study. The authors should comment on this, and provide a possible explanation for this apparent disparity.\n\n4) The exact dosages of RU456 used in the gene-switch experiments should be listed in the figure legends.\n\n5) The link between UPRmt and longevity is not yet settled, and while this work provides important advancements, the authors will do well to tone down the enthusiasm with which they link expression of the OTC construct with UPRmt induction. OTC induces other genes as well (such as antimicrobial peptides). Therefore several bold statements such as the subheading \"UPRmt-mediated longevity is not caused by improved adult immune function, or by changes to the microbiome\" and \"Developmental UPRmt affects the metabolic state of adult flies and leads to persistent FoxO\" or (based on point 1 above), \"Of the two methods initially used to induce the UPRmt, we opted to use \u0394OTC for further experiments to avoid potential secondary effects of inducing ETC dysfunction\" should be modified to reflect the fact that the results observed are due to OTC expression and not necessarily all due to the UPRmt.\n\n6) ADaGSxOTC itself yields less than 50% eclosion. Survivors of this cohort may live longer because of frailty selection: weak larvae that would produce shorter-lived adults do not eclose. Some rescue-type data (Figure 2C) argues against this potential confound, but the evidence is thin.\n\n7) UPRmt induced in adults activates FoxO, but such cohorts are not long-lived when RU is constantly applied. That FoxO is only transiently activated when RU is given for just one week is not a satisfactory explanation.\n\n8) The data with HPD is unclear. Presumably, HPD resets both this TF and the lifespan, and this is used to infer causality between the induced longevity and FoxO activation. But in the sole survival experiment to this point (Figure 5F), the shape of the plots is a concern: they are too linear, suggesting that age-independent mortality is the overriding cause of death. This can mask any potential impact on age-dependent mortality; and there are no data to rule this out (or in). Perhaps the HPD is toxic, and all flies die for reasons besides aging. There are no other data to address the relevance of activated FoxO (by any of the interesting, observed mechanisms) as relevant to the larval UPRmt impact on adult longevity.\n",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "174a46fc-77f7-4a45-8a9d-2a6e52718515",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C1",
+      "claim": "Mitochondrial stress induced by \u0394OTC overexpression or ND75 knockdown results in 23% overlap of upregulated genes and 15% overlap of downregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "23% of the \u0394OTC-induced genes and 15% of the genes downregulated by \u0394OTC expression were co-regulated by both conditions, and we propose that these genes compose a core UPRmt in Drosophila (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAseq data presented in Figure 1a showing Venn diagrams of gene overlap between the two mitochondrial stress conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "09c3c0ae-8df4-48ef-afd7-fa3edcafc833",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C2",
+      "claim": "The main functional categories enriched among genes induced by mitochondrial stress are stress signaling pathways, chaperones and proteases, and the innate immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The main functional categories enriched among the induced genes were: several stress signaling pathways, chaperones and proteases, and the innate immune system (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Gene Ontology analysis of RNAseq data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "d0338bf4-d15b-4b33-be6b-7fb4b9cd8bc3",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C3",
+      "claim": "Mitochondrial stress activates immune responses broadly, encompassing target genes of both the Toll and Imd pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of immune responses is broad in this case, encompassing target genes of both the Toll and Imd pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of RNAseq data showing upregulation of immune genes from multiple pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "64a50940-d33b-4ffd-8044-f3ee62068193",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C4",
+      "claim": "Induction of antimicrobial peptide genes by mitochondrial stress is specific and not triggered by heat shock or ER-UPR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the induction of several immune genes by quantitative real-time PCR (qPCR), and further demonstrated that transcriptional induction of these genes was specifically triggered by mitochondrial stress and not by conditions that trigger the cytoplasmic- (heat shock) or endoplasmic reticulum (loss of ER-associated degradation after knockdown of Hrd1, (Bordallo et al., 1998)) unfolded protein responses (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1c comparing gene induction under different stress conditions, with citation to Bordallo et al., 1998 for ER-UPR methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "55ce4d4b-42d6-4e35-923e-da706840ef1d",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C5",
+      "claim": "\u0394OTC expression leads to induction of mitochondrial chaperones and proteases associated with the UPRmt.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used qPCR to confirm that \u0394OTC expression leads to induction of mitochondrial chaperones and proteases associated with the UPRmt, under conditions used in earlier studies (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "088301a4-24d1-4631-bb9c-7d1f52bc10ab",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C6",
+      "claim": "Acute \u0394OTC expression for 24 hr mildly improves resistance to oral infection with pathogenic Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance to oral infection was mildly increased, while the speed by which flies succumb to humoral infection was unaffected; we speculate that this may be because the modest induction of immune genes is not sufficient to clear bacteria introduced directly to the hemolymph (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by infection survival data shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "0d25e0b4-288e-45fd-bb37-acfb9ead948c",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C7",
+      "claim": "Acute \u0394OTC expression does not affect resistance to humoral infection with Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance to oral infection was mildly increased, while the speed by which flies succumb to humoral infection was unaffected; we speculate that this may be because the modest induction of immune genes is not sufficient to clear bacteria introduced directly to the hemolymph (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by infection survival data shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "e4628926-bb1b-405f-a6d8-fe5186f3a1c9",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C8",
+      "claim": "Knocking down FoxO blocks induction of metchnikowin by mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down the transcription factors foxo and Relish/NF-\u03baB, but not jun or kayak/Fos, strongly suppressed Mtk induction (Figure 1d), consistent with upregulation of several FoxO target genes in our RNAseq data (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1d showing reduced Mtk expression with FoxO knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ecf80eaa-b811-421d-97d2-99574ba545f6",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C9",
+      "claim": "Knocking down Relish blocks induction of metchnikowin by mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down the transcription factors foxo and Relish/NF-\u03baB, but not jun or kayak/Fos, strongly suppressed Mtk induction (Figure 1d), consistent with upregulation of several FoxO target genes in our RNAseq data (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1d showing reduced Mtk expression with Relish knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "083bad32-32aa-41a5-9ce9-6cde0f10f797",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C10",
+      "claim": "Knocking down JNK/bsk blocks induction of metchnikowin by mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Mtk induction by mitochondrial stress was significantly impaired in bsk loss-of-function conditions (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1d showing reduced Mtk expression with bsk knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "af14a224-9b9a-4bac-a59a-8115da0dafc2",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C11",
+      "claim": "Knocking down ASK1 blocks induction of metchnikowin by mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down ASK1 and PGAM5 blocked induction of Mtk after mitochondrial stress, suggesting that PGAM5, ASK1, and JNK are components of a pathway responsible for transducing mitochondrial stress to downstream transcription factors (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1d showing reduced Mtk expression with ASK1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ec3c8c76-89c5-4e98-9772-dc83b245ea00",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C12",
+      "claim": "Knocking down PGAM5 blocks induction of metchnikowin by mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down ASK1 and PGAM5 blocked induction of Mtk after mitochondrial stress, suggesting that PGAM5, ASK1, and JNK are components of a pathway responsible for transducing mitochondrial stress to downstream transcription factors (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1d showing reduced Mtk expression with PGAM5 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "46c66ba8-8aab-4ad2-b250-3a3f92c0e8e4",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C13",
+      "claim": "PGAM5 homozygous null mutants do not show induction of metchnikowin after mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of Mtk induction in PGAM5 homozygous null mutants (PGAM51/1) experiencing mitochondrial stress confirmed this finding (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1d showing lack of Mtk induction in PGAM5 null mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "fe1b0320-5b3c-45c6-a440-63dfa3386751",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C14",
+      "claim": "Disruption of the PGAM5-ASK1-JNK pathway blocks induction of classical UPRmt genes such as hsp60 and hsp10.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether this pathway indeed represented UPRmt signaling, we tested and confirmed that its disruption also blocks induction of classical UPRmt genes such as hsp60 and hsp10 (Figure 1\u2014figure supplement 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1\u2014figure supplement 1b-d showing reduced expression of UPRmt genes when the pathway is disrupted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "07809b3d-e3a6-4a9c-9c38-d9d990807a6e",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C15",
+      "claim": "Knocking down PGAM5 or ASK1 does not affect induction of antimicrobial peptides following exposure to pathogenic Pseudomonas entomophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitously knocking down either PGAM5 or ASK1 had no effect on this response (Figure 1\u2014figure supplement 2b), suggesting that the pathway mediating AMP induction in response to mitochondrial stress is distinct from the canonical Toll and Imd pathways.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1\u2014figure supplement 2b showing normal AMP induction after pathogen exposure despite PGAM5 or ASK1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "13f7d123-c796-4abb-a6fc-40acbc5c0113",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C16",
+      "claim": "The pathway mediating AMP induction in response to mitochondrial stress is distinct from the canonical Toll and Imd pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitously knocking down either PGAM5 or ASK1 had no effect on this response (Figure 1\u2014figure supplement 2b), suggesting that the pathway mediating AMP induction in response to mitochondrial stress is distinct from the canonical Toll and Imd pathways.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that disrupting the mitochondrial stress pathway does not affect canonical immune responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "7778a3d8-8473-42e5-a80b-fd9f2a4b9ebd",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C17",
+      "claim": "PGAM5 null flies show higher baseline levels of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PGAM5 null flies showed higher baseline levels of apoptosis, in line with previous reports (Ishida et al., 2012), \u0394OTC expression stress did not induce apoptosis in our experiments (Figure 1\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TUNEL assay data in Figure 1\u2014figure supplement 2c and cited previous work by Ishida et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "c0f97386-f856-4f0f-91f0-c82bd94e94b7",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C18",
+      "claim": "\u0394OTC expression does not induce apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PGAM5 null flies showed higher baseline levels of apoptosis, in line with previous reports (Ishida et al., 2012), \u0394OTC expression stress did not induce apoptosis in our experiments (Figure 1\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TUNEL assay data in Figure 1\u2014figure supplement 2c showing no increase in apoptosis after \u0394OTC expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "f37949d3-7c49-4ef4-8110-1e71c76273ab",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C19",
+      "claim": "Blocking mitochondrial ROS production from complexes I and III does not affect metchnikowin induction after mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We blocked mitochondrial ROS production from sites on complexes I and III of the ETC using previously characterized compounds (Brand et al., 2016; Orr et al., 2013) but did not see any effect on Mtk induction after mitochondrial stress (Figure 1\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 1\u2014figure supplement 3a and cited methodology from Brand et al., 2016 and Orr et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "e6695bf0-2df5-45ec-ab95-9064218ed212",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C20",
+      "claim": "Overexpression of catalase or jafrac1/Trx-1 during developmental \u0394OTC expression does not affect acute or lasting FoxO activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, overexpression of the antioxidant enzymes Catalase and jafrac1/Trx-1 during developmental \u0394OTC expression does not affect acute or lasting FoxO activation (Figure 1\u2014figure supplement 3b & c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FoxO localization data in Figure 1\u2014figure supplement 3b and 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "a2acc3e8-4c7c-4817-9890-f9602ddcd168",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C21",
+      "claim": "Direct activation of ASK1 by ROS is not the basis of \u0394OTC-mediated AMP induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that direct activation of ASK1 by ROS is not the basis of \u0394OTC-mediated AMP induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experiments showing that blocking ROS or overexpressing antioxidants does not affect the response.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "36c930c1-4134-4494-9339-49760190a4f3",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C22",
+      "claim": "The transcriptional response to mitochondrial unfolded proteins in flies is mediated by a pathway involving PGAM5, ASK1, JNK, Relish and FoxO.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that the transcriptional response to mitochondrial unfolded proteins in flies is mediated by a pathway involving PGAM5 and ASK1, as well as JNK, Relish and FoxO (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the collective genetic and molecular data presented in Figure 1 and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "61d9becf-1b0c-4736-8161-44d1713cb0af",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C23",
+      "claim": "Expressing \u0394OTC throughout larval development extends median adult lifespan by 21% and maximal lifespan by 14%.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this observation in our system, we used the ubiquitous RU486-inducible daughterless GeneSwitch (DaGS) driver to express \u0394OTC throughout larval development only, and measured adult lifespan. As shown in Figure 2a,g\u2014figure supplement 2, this treatment consistently extended maximum and median lifespan.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lifespan data shown in Figure 2a and Figure 2g showing 21% and 14% increases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "d89d6a25-7b2f-465d-bbfe-1fab37a06c9c",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C24",
+      "claim": "\u0394OTC expression limited to adulthood does not extend lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming observations in C. elegans, \u0394OTC expression limited to adulthood did not lead to extended lifespan (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lifespan data in Figure 2b and comparison to C. elegans observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "eb8ee449-395e-4c2c-8c7f-94922f7b0bbe",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C25",
+      "claim": "The absence of PGAM5 prevents lifespan extension after developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether the pathway we identified in the experiments described above is required for this longevity effect, we assessed lifespan in PGAM5 homozygous null flies (Figure 2c). The absence of PGAM5 prevented lifespan extension after developmental \u0394OTC expression, suggesting that the protective effects responsible for lifespan extension are downstream of PGAM5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lifespan data in Figure 2c showing no lifespan extension in PGAM5 null flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "c44b1bec-9137-47d8-91aa-30488db293fe",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C26",
+      "claim": "FoxO double heterozygous null flies show significantly reduced adult lifespan after developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, the adult lifespan of FoxO double heterozygous null flies was significantly reduced after developmental \u0394OTC expression (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lifespan data in Figure 2d showing reduced lifespan in FoxO heterozygous null flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "27523abd-0b03-43a1-aa0f-191ff67f4943",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C27",
+      "claim": "PGAM5 and FoxO nulls show reduced survival through larval development when subjected to mitochondrial proteostatic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Both PGAM5 and especially FoxO nulls also showed reduced survival through larval development when subjected to mitochondrial proteostatic stress (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by larval survival data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "44940b50-817e-4f3c-8dda-ba19e30f4fa9",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C28",
+      "claim": "FoxO activity plays an integral part in promoting resilience to mitochondrial stress during development.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that FoxO activity plays an integral part in promoting resilience to mitochondrial stress in these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that FoxO null flies show reduced survival during developmental stress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "39bc5ebf-5612-4455-ac98-16f3989d00b7",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C29",
+      "claim": "Flies given antibiotics throughout adulthood still show lifespan extension by developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, we observed increased median and maximal lifespan after developmental \u0394OTC expression, just as in flies reared normally (Figure 2e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lifespan data in Figure 2e showing lifespan extension in antibiotic-treated flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "535e1ba1-3bb5-4f54-bd2d-5e7d1bde5367",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C30",
+      "claim": "Flies raised in sterile conditions from egg stage still show lifespan extension by developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, we observed increased median and maximal lifespan after developmental \u0394OTC expression, just as in flies reared normally (Figure 2e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lifespan data in Figure 2f showing lifespan extension in axenic flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "d8edea3a-c295-428b-b45d-aea93c2d908f",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C31",
+      "claim": "Larval \u0394OTC expression does not affect pathogen resistance at day 7 of adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval \u0394OTC expression also did not affect pathogen resistance at day 7 of adulthood (Figure 2\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by infection survival data in Figure 2\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "2b955e42-9832-4862-b7a4-8cc91562a648",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C32",
+      "claim": "Developmental \u0394OTC expression does not significantly affect intestinal microbiome load at different points of life.",
+      "claim_type": "EXPLICIT",
+      "source": "We further analyzed the intestinal microbiome load (as assessed by colony-forming units, CFUs) at different points of life after developmental \u0394OTC expression, and found no significant difference relative to controls (Figure 2\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU quantification data in Figure 2\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "abe2810c-14cd-4abd-a860-14c60986f539",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C33",
+      "claim": "Developmental \u0394OTC expression does not cause major changes in microbiome composition in young and old flies.",
+      "claim_type": "EXPLICIT",
+      "source": "To test effects on microbiome composition, we performed 16S sequencing in young and old flies after developmental \u0394OTC expression, and similarly found no major changes relative to controls (Figure 2\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 16S sequencing data in Figure 2\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "439c3a4d-39ab-4238-b45d-d66874f9e568",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C34",
+      "claim": "Activation of the immune system following developmental \u0394OTC expression does not contribute to the observed increase in adult longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data indicate that activation of the immune system following developmental \u0394OTC expression does not contribute to the observed increase in adult longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experiments showing lifespan extension occurs even without microbiome and without changes to pathogen resistance or microbiome composition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "277e7b6a-f3b0-4e75-b4a1-2c77e2a659d2",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C35",
+      "claim": "Developmental \u0394OTC expression does not affect the ratio of NAD/NADH in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested the ratio of NAD/NADH, as a measure of mitochondrial function, but did not detect changes in adults after developmental \u0394OTC expression (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NAD/NADH ratio measurements in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "2f3fa27d-6dab-4875-a676-097e871d9532",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C36",
+      "claim": "Developmental \u0394OTC expression does not change MitoTracker intensity in adult muscle tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We also did not see changes in MitoTracker intensity in muscle tissue from adults after developmental \u0394OTC expression (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by MitoTracker intensity measurements in Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "f22f2ea4-96e6-4fa2-a48e-1f8067d5d185",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C37",
+      "claim": "Expressing \u0394OTC during development leads to reduced triglyceride concentrations in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that expressing \u0394OTC during development leads to reduced triglyceride (TAGs) concentrations (relative to total protein) in adult flies (Figure 3b); this phenotype is consistent with activation of FoxO, which is known to induce lipases and increase fat metabolism (Karpac et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by triglyceride measurement data in Figure 3b and cited work by Karpac et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "e8a70995-c8e6-4bfd-9be0-7f14c013e32b",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C38",
+      "claim": "PGAM5 null mutants do not show a decrease in TAG levels after developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "PGAM5 null mutants did not show a decrease in TAG levels, supporting the notion that this metabolic shift results from UPRmt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from triglyceride data showing no change in PGAM5 nulls, supporting the role of UPRmt signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "4750770b-e300-4f47-85db-48cf2018e686",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C39",
+      "claim": "\u0394OTC expression throughout development leads to increased nuclear localization of FoxO in the fat body of third instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394OTC expression during development strongly induced nuclear translocation of FoxO in late L3 larval fat bodies (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 3c showing FoxO nuclear localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "569fb21d-efa9-4867-ad1b-716f6b5350ec",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C40",
+      "claim": "PGAM5 null mutant larvae do not show FoxO nuclear translocation after developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, this was not evident in PGAM5 null mutant larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunohistochemistry data showing lack of FoxO nuclear localization in PGAM5 null larvae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "c20711b1-dbc6-4cab-804f-be76f99305c2",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C41",
+      "claim": "Flies retain nuclear-localized FoxO in adult fat bodies one week after eclosion following developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we imaged adult fat bodies one week after eclosion and found that flies retained nuclear-localized FoxO after developmental \u0394OTC expression (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 3d showing persistent FoxO nuclear localization in adults.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "a877cb69-a776-44d1-aa83-c229e6e2b172",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C42",
+      "claim": "Adding the JNK inhibitor SP600125 to larval food inhibits both larval and adult FoxO nuclear translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested whether this lasting effect on FoxO was dependent on JNK activity during development, by adding the JNK inhibitor SP600125 to the larval food. This treatment inhibited both larval and adult translocation of FoxO to the nucleus (Figure 3e, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 3e showing reduced FoxO nuclear localization with SP600125 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "f98da880-e73e-44fd-8581-8313c1ca83cd",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C43",
+      "claim": "Expressing dominant negative bsk simultaneously with \u0394OTC in adult flies limits FoxO nuclear translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental expression of dominant negative bsk (bskDN) was lethal, but expressing bskDN simultaneously with \u0394OTC in adult flies limited FoxO nuclear translocation (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 3e showing reduced FoxO nuclear localization with bskDN expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "c1c94e58-13c7-4abb-b3d1-5ce0c9bcc8f1",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C44",
+      "claim": "\u0394OTC expression for 24 hr on day 3 of adulthood leads to acute but not lasting nuclear translocation of FoxO.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed \u0394OTC for 24 hr on day 3 of adulthood, which lead to acute but not lasting nuclear translocation of FoxO (Figure 3e, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 3e showing FoxO localization after adult treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "378bef14-7720-4229-aa45-15cdd8f25a90",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C45",
+      "claim": "The absence of a persistent response to mitochondrial stress after adult treatment is consistent with the lack of lifespan extension in these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of a persistent response to mitochondrial stress after adult treatment adults is consistent with the lack of lifespan extension in these conditions (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred by comparing the lack of persistent FoxO activation with the lack of lifespan extension after adult treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "735eb22c-cc5a-47f3-bd69-4dab5011755c",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C46",
+      "claim": "The persistent activation of FoxO in response to developmental UPRmt activation is the mechanism by which developmental but not adult mitochondrial stress can extend lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the persistent activation of FoxO in response to the developmental activation of the UPRmt is the mechanism by which developmental but not adult mitochondrial stress can extend lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the collective observations about timing-dependent FoxO activation and lifespan extension.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "e25c34be-9115-493a-bdb0-aa2eb975083c",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C47",
+      "claim": "A large number of genes are upregulated in larvae acutely expressing \u0394OTC, predominantly involved in energy metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a large number of upregulated genes in the acutely stressed larvae (Figure 4a; using a minimum baseline FPKM value of 10 and a cutoff of 3-fold induction relative to controls). These genes were predominantly involved in energy metabolism, and showed considerable overlap between the wild type and PGAM5 null mutant data sets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAseq data in Figure 4a showing upregulated genes and their functional categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "59b3cca2-299b-4586-93b3-25c6701a8649",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C48",
+      "claim": "Only a small number of genes induced by acute larval stress remain upregulated in adult flies, predominantly heat-shock and stress response genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a small number of these (predominantly heat-shock and stress response genes) remained upregulated in adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNAseq data comparing larval and adult gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ef51c6db-f609-41be-91d0-6345e42de320",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C49",
+      "claim": "None of the genes induced persistently in wild-type flies remain induced in PGAM5 nulls.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, none of the genes induced persistently in wild-type flies remained induced in PGAM5 nulls (Figure 4b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAseq data in Figure 4b and 4c comparing wild-type and PGAM5 null flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "f9ea95a5-7765-4077-af52-44f3caf4dd26",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C50",
+      "claim": "Persistently upregulated genes include twelve chaperones, some of which are FoxO targets and have been shown to extend lifespan when upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes include twelve chaperones, some of which are FoxO targets (Donovan and Marr, 2016; Wang et al., 2003) and have previously been shown to extend lifespan when upregulated (Liao et al., 2008; Morrow et al., 2004; Tatar et al., 1997; Wang et al., 2003; Zhao et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNAseq data and multiple citations to previous work on FoxO targets and lifespan extension.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "e9295280-246b-42a6-9a85-5c4f5a4f7b15",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C51",
+      "claim": "The only non-chaperone-encoding genes persistently induced (Tsp42E and Obp99) are regulated by FoxO and involved in lifespan regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The only non-chaperone-encoding genes in this list (Tsp42E and Obp99) are also regulated by FoxO and are involved in lifespan regulation (Alic et al., 2014; Bai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNAseq data and citations to Alic et al., 2014 and Bai et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b1445802-f60f-4cf6-9385-12d9e3153585",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C52",
+      "claim": "FoxO translocates to the nucleus after developmental \u0394OTC expression and remains nuclear after 9 hours of starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5a, FoxO translocates to the nucleus after developmental \u0394OTC expression. After 9 hours of starvation (only water was offered to flies), the fat body of both stressed and control flies exhibit nuclear FoxO.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5a showing FoxO localization under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b53c42f1-bcfb-424a-8b14-4a62dbe5c6a6",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C53",
+      "claim": "24 hr of refeeding resets FoxO activation in control flies but not in flies that experienced developmental stress.",
+      "claim_type": "EXPLICIT",
+      "source": "24 hr of refeeding resets this activation in control flies, but FoxO remained nuclear in flies that had experienced developmental stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunohistochemistry data showing differential FoxO localization after refeeding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b4f99a85-5671-47db-8d4f-4e66f0ec6986",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C54",
+      "claim": "Switching flies to a pure sucrose diet for 5 days does not abolish persistent nuclear localization of FoxO caused by developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting the idea that the mitochondrial proteostatic stress affects FoxO independently of insulin signaling, switching flies to a diet of pure sucrose (5% in water) for 5 days did not abolish the persistent nuclear localization of FoxO caused by developmental \u0394OTC expression (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5b showing FoxO localization on different diets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "80bf2349-b5d5-4531-b5f1-112a224e7ad0",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C55",
+      "claim": "Flies switched to a high-protein diet for 5 days show nearly complete loss of nuclear FoxO in the fat body after developmental \u0394OTC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, flies switched to an alternate diet containing ~5 x higher protein levels than control food showed a nearly complete loss of nuclear FoxO in the fat body after 5 days (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5b showing FoxO localization on high-protein diet.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "9c2935be-f499-4f09-a95d-a6784c2c4f07",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C56",
+      "claim": "Supplementation with rapamycin at 200 \u00b5M prevents the loss of nuclear FoxO on high-protein diet.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this high-protein diet affects FoxO localization through the main amino-acid-sensing pathway mTORC1, we repeated this experiment with supplementation of the mTORC1 inhibitor rapamycin at 200 \u00b5M. This prevented the loss of nuclear FoxO (Figure 5b), suggesting that mTORC1 activation can override the persistent nuclear translocation of FoxO produced by developmental \u0394OTC expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5b showing FoxO localization with rapamycin treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "aced16db-f5d9-4690-b288-389db23a023d",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C57",
+      "claim": "Activating mTORC1 during developmental stress by RNAi of TSC1 prevents lasting FoxO activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this role for mTORC1, activating mTORC1 during developmental stress (by RNAi of its inhibitor TSC1) prevents lasting FoxO activation (Figure 5c, left), while reducing developmental survival in the same manner as FoxO deficiency (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5c and survival data in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "6c8a850b-5169-4d6f-a335-ba9db28cbd61",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C58",
+      "claim": "Simultaneous over-expression of TSC1 and TSC2 to inhibit mTORC1 activity in adult flies is sufficient to promote nuclear translocation of FoxO.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, simultaneous over-expression of TSC1 and 2 to inhibit mTORC1 activity in adult flies is sufficient to promote nuclear translocation of FoxO (Figure 5c, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5c showing FoxO localization with TSC1/2 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "87c78d08-4568-4705-9055-05f6d3e29e54",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C59",
+      "claim": "Overexpression of GCN-2 is sufficient to induce nuclear localization of FoxO.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, overexpression of GCN-2 was sufficient to induce nuclear localization of FoxO, while knocking down GCN-2 during developmental \u0394OTC expression abrogates the lasting effect on FoxO (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5d showing FoxO localization with GCN-2 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "010f8aa6-033d-469a-a16c-7c4228b1d76a",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C60",
+      "claim": "Knocking down GCN-2 during developmental \u0394OTC expression abrogates the lasting effect on FoxO.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, overexpression of GCN-2 was sufficient to induce nuclear localization of FoxO, while knocking down GCN-2 during developmental \u0394OTC expression abrogates the lasting effect on FoxO (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5d showing loss of FoxO nuclear localization with GCN-2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "3416c68b-85ee-4608-95fd-7bb6d5ab7c8d",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C61",
+      "claim": "Knocking down GCN-2 in flies treated with rapamycin reduces nuclear FoxO.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether GCN-2 acts downstream of mTORC1 in this context, we knocked down GCN-2 in flies treated with rapamycin and observed a reduction in nuclear FoxO (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data in Figure 5e showing FoxO localization with combined rapamycin and GCN-2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "dff3a008-c930-4b49-9f65-b93d49db2791",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C62",
+      "claim": "Developmental \u0394OTC expression does not extend lifespan when flies are fed a high-protein diet throughout adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we repeated our lifespan experiment with developmental \u0394OTC expression but switched flies to the high-protein diet after eclosion. The high-protein diet reduced the lifespan of the control group relative to our standard fly food, consistent with previous literature, but also completely abolished the lifespan extension normally induced by \u0394OTC expression (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by lifespan data in Figure 5f showing no lifespan extension on high-protein diet.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "d23397fd-4df8-4e7c-bd46-38115905db99",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C63",
+      "claim": "The UPRmt has been associated with long lifespan across metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial unfolded protein response (UPRmt) has been associated with long lifespan across metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the UPRmt across different organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "cde57750-3d9f-47f2-9077-e1ae0d4882d5",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C64",
+      "claim": "In Caenorhabditis elegans, mild developmental mitochondrial stress activates UPRmt reporters and extends lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caenorhabditis elegans, mild developmental mitochondrial stress activates UPRmt reporters and extends lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established findings in C. elegans research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "cf882b77-6377-43bf-9a5e-d3ba1bbad86e",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C65",
+      "claim": "Developmental mitochondrial stress is necessary and sufficient to extend Drosophila lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that similar developmental stress is necessary and sufficient to extend Drosophila lifespan, and identify Phosphoglycerate Mutase 5 (PGAM5) as a mediator of this response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the lifespan experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "09d5a285-4682-4063-879b-85d84e3e8bbd",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C66",
+      "claim": "PGAM5 is a mediator of the response to developmental mitochondrial stress that extends lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that similar developmental stress is necessary and sufficient to extend Drosophila lifespan, and identify Phosphoglycerate Mutase 5 (PGAM5) as a mediator of this response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genetic experiments showing PGAM5 is required for lifespan extension.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b12f6436-8c00-4af6-9171-850165be7a50",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C67",
+      "claim": "Developmental mitochondrial stress leads to activation of FoxO via ASK1 and JNK.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental mitochondrial stress leads to activation of FoxO, via Apoptosis Signal-regulating Kinase 1 (ASK1) and Jun-N-terminal Kinase (JNK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genetic and molecular experiments showing the pathway components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "36632100-3e5b-48d7-a890-53cdb9859c97",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C68",
+      "claim": "FoxO activation persists into adulthood after developmental mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation persists into adulthood and induces a select set of chaperones, many of which have been implicated in lifespan extension in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunohistochemistry data showing persistent FoxO nuclear localization in adults.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "1c63ffd6-6206-4593-8bb2-cc99ce85df18",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C69",
+      "claim": "Persistent FoxO activation induces a select set of chaperones, many of which have been implicated in lifespan extension in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation persists into adulthood and induces a select set of chaperones, many of which have been implicated in lifespan extension in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNAseq data and citations to previous lifespan studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "64d8f34f-4569-40a5-8e6d-891bd983d3f2",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C70",
+      "claim": "Persistent FoxO activation can be reversed by a high-protein diet in adulthood through mTORC1 and GCN-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistent FoxO activation can be reversed by a high-protein diet in adulthood, through mTORC1 and GCN-2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunohistochemistry data showing loss of FoxO nuclear localization on high-protein diet and with mTORC1/GCN-2 manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "21700f3a-69ed-4878-ba09-d36e77e3897e",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C71",
+      "claim": "The observed lifespan extension is prevented on a high-protein diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the observed lifespan extension is prevented on a high-protein diet and in FoxO-null flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lifespan data showing no extension on high-protein diet.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "cda332ac-37f5-4100-bb5c-5b4d802b097b",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C72",
+      "claim": "The observed lifespan extension is prevented in FoxO-null flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the observed lifespan extension is prevented on a high-protein diet and in FoxO-null flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by lifespan data showing no extension in FoxO null flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "2573d8fd-e022-46fa-be2d-91dfe9925dc4",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C73",
+      "claim": "The UPRmt was first described in mammalian cells more than a decade ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The response was first described in mammalian cells more than a decade ago (Martinus et al., 1996; Zhao et al., 2002) and has since been studied primarily in Caenorhabditis elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Martinus et al., 1996 and Zhao et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "29adce12-d73c-484a-b1df-f2f91d4c6f8f",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C74",
+      "claim": "In C. elegans, strong evidence suggests that the UPRmt is involved in delaying aging and promoting adult lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "In worms, strong evidence suggests that the UPRmt is involved in delaying aging and promoting adult lifespan (Baker et al., 2012; Durieux et al., 2011; Houtkooper et al., 2013; Merkwirth et al., 2016; Mouchiroud et al., 2013; Tian et al., 2016; Yang and Hekimi, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on multiple citations to C. elegans studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "c3a683fa-ac10-4637-b725-66af49d6f5a4",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C75",
+      "claim": "The UPRmt is reminiscent of, but distinct from, the cytoplasmic (heat shock) and endoplasmic reticulum unfolded protein responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This work has revealed the UPRmt to be reminiscent of, but distinct from, the cytoplasmic (heat shock) and endoplasmic reticulum unfolded protein responses (Baker et al., 2012; Haynes et al., 2007; 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Baker et al., 2012 and Haynes et al., 2007, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "791bbde3-dc37-4421-a579-5d3b93d6f798",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C76",
+      "claim": "Through the UPRmt, mitochondrial stress induces a nuclear transcriptional response that promotes the expression of mitochondrial chaperones and proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the UPRmt, mitochondrial stress induces a nuclear transcriptional response that promotes the expression of a group of mitochondrial chaperones and proteases (Aldridge et al., 2007; Yoneda et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Aldridge et al., 2007 and Yoneda et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "5c371756-4fd5-4523-8027-80cd363c13a2",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C77",
+      "claim": "The primary transcription factor in C. elegans UPRmt is ATFS-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary transcription factor in C. elegans is ATFS-1, which is regulated by membrane potential-dependent import into and degradation in mitochondria (Nargund et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Nargund et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "5859a010-407a-4379-bcc4-eba801f3b7ad",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C78",
+      "claim": "Mitochondrial stress blocks ATFS-1 import and ATFS-1 instead moves to the nucleus where it interacts with DVE-1 and UBL-5 to turn on the transcriptional response.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial stress blocks this import and ATFS-1 instead moves to the nucleus, where it interacts with DVE-1 and UBL-5 to turn on the transcriptional response (Benedetti et al., 2006; Haynes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Benedetti et al., 2006 and Haynes et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "8678fdcf-7721-4dfc-8b58-432dfbde1486",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C79",
+      "claim": "The UPRmt response includes a metabolic reconfiguration to increase glycolytic capacity while restoring oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to proteostatic elements, this response includes a metabolic reconfiguration to increase glycolytic capacity while restoring oxidative phosphorylation (Nargund et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Nargund et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b12a128f-9c5f-4a53-9591-ee46066dfc24",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C80",
+      "claim": "A separate branch of the UPRmt mediates a general downregulation of translation through GCN-2 and eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, a separate branch of the UPRmt mediates a general downregulation of translation, through GCN-2 and eIF2\u03b1 (Baker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Baker et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "475fa3eb-96bf-4f05-9d0c-aee616428085",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C81",
+      "claim": "In mice, perturbation of mitochondrial translation has been implicated in long lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, perturbation of mitochondrial translation has been implicated in long lifespan (Houtkooper et al., 2013), and recent findings have revealed the conservation of the ATFS-1 regulated transcriptional response (mediated by ATF5 in mice (Fiorese et al., 2016)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Houtkooper et al., 2013 and Fiorese et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "09621490-12ff-4982-8992-f5e0ece92dc5",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C82",
+      "claim": "The ATFS-1 regulated transcriptional response is conserved in mice and mediated by ATF5.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, perturbation of mitochondrial translation has been implicated in long lifespan (Houtkooper et al., 2013), and recent findings have revealed the conservation of the ATFS-1 regulated transcriptional response (mediated by ATF5 in mice (Fiorese et al., 2016)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Fiorese et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "95728051-f6f2-4ab5-905e-17fc171ff7b5",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C83",
+      "claim": "In Drosophila, a UPRmt-like response was first described in a paradigm where misfolding ornithine transcarbamylase (\u0394OTC) was overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, a UPRmt-like response was first described in a paradigm where a misfolding ornithine transcarbamylase (\u0394OTC) was overexpressed, resulting in upregulation of mitochondrial chaperones and induction of mitophagy (Pimenta de Castro et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Pimenta de Castro et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "536745db-ba52-4cf3-8704-9bca7bd0c09d",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C84",
+      "claim": "Knocking down electron transport chain components extends lifespan and induces the UPRmt in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knocking down electron transport chain (ETC) components has been shown to extend lifespan and to induce the UPRmt (Copeland et al., 2009; Owusu-Ansah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Copeland et al., 2009 and Owusu-Ansah et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "f4303289-7bc2-460c-8e75-1c48bed67544",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C85",
+      "claim": "ETC knockdown results in induction of the insulin signaling inhibitor ImpL2 in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "ETC knockdown results in induction of the insulin signaling inhibitor ImpL2, and promotes the expression of target genes of the insulin-regulated transcription factor Forkhead Box O (FoxO) (Owusu-Ansah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Owusu-Ansah et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "c7a585b3-804c-4ddb-b3b3-399b3f060654",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C86",
+      "claim": "FoxO activation is a well-established lifespan-extending condition.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxO activation is a well-established lifespan-extending condition, yet its involvement and specific regulation in this context remain to be established (Kappeler et al., 2008; Kenyon et al., 1993; Kimura et al., 1997; Selman et al., 2008; Tatar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on multiple citations to studies on FoxO and lifespan.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "60718417-0119-4ee7-8dd4-0ed2ea5413f2",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C87",
+      "claim": "Activation of the UPRmt has been implicated in the lifespan-extending effects of resveratrol.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the UPRmt has also been implicated in the lifespan-extending effects of various drugs, including resveratrol (Houtkooper et al., 2013), rapamycin (Houtkooper et al., 2013) and NAD precursors (Mouchiroud et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Houtkooper et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "d1b481c5-6709-4301-a2b4-91f6b0ffce55",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C88",
+      "claim": "Activation of the UPRmt has been implicated in the lifespan-extending effects of rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the UPRmt has also been implicated in the lifespan-extending effects of various drugs, including resveratrol (Houtkooper et al., 2013), rapamycin (Houtkooper et al., 2013) and NAD precursors (Mouchiroud et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Houtkooper et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "6ed0097c-bbee-4b03-8de1-c6a0e7e69f00",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C89",
+      "claim": "Activation of the UPRmt has been implicated in the lifespan-extending effects of NAD precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the UPRmt has also been implicated in the lifespan-extending effects of various drugs, including resveratrol (Houtkooper et al., 2013), rapamycin (Houtkooper et al., 2013) and NAD precursors (Mouchiroud et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Mouchiroud et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "0cc32315-55b3-479d-8a64-6c322bc83aab",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C90",
+      "claim": "Lifespan extension by the UPRmt is contingent upon its activation during development in both flies and worms.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting observation from both fly and worm studies is that lifespan extension by the UPRmt is contingent upon its activation during development (Durieux et al., 2011; Owusu-Ansah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Durieux et al., 2011 and Owusu-Ansah et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "d2e0b5fa-aac8-4d5a-8323-142041fe2653",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C91",
+      "claim": "Lifespan extension by disrupting the ETC in some cases requires developmental treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with earlier observations that lifespan extension by disrupting the ETC in some cases require developmental treatment (Copeland et al., 2009; Dillin et al., 2002; Rea et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Copeland et al., 2009, Dillin et al., 2002, and Rea et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "03d8a1f8-db01-4bef-b722-dbf96937d2a7",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C92",
+      "claim": "In worms, the UPRmt leads to changes in histone methylation and chromatin organization.",
+      "claim_type": "EXPLICIT",
+      "source": "An important step toward understanding this lasting effect came from work in worms, in which the UPRmt leads to changes in histone methylation and chromatin organization (Merkwirth et al., 2016; Tian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Merkwirth et al., 2016 and Tian et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "149b0e78-4c5f-4d71-a677-364a07a1a21c",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C93",
+      "claim": "The H3K27 demethylases jmjd-1.2 and jmjd-3.1 are required for UPRmt activation and lifespan extension in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The H3K27 demethylases jmjd-1.2 and \u22123.1 were found to be required for UPRmt activation and lifespan extension, while the histone methylase met-2 is required for induction of most UPRmt genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established findings in C. elegans research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "80de8a9c-c2de-44dc-8d89-129c2946897e",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C94",
+      "claim": "The histone methylase met-2 is required for induction of most UPRmt genes in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The H3K27 demethylases jmjd-1.2 and \u22123.1 were found to be required for UPRmt activation and lifespan extension, while the histone methylase met-2 is required for induction of most UPRmt genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established findings in C. elegans research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "96bb1211-7414-41c1-bbf6-fbfb56a748c0",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C95",
+      "claim": "The UPRmt effect in C. elegans involves global chromatin condensation while opening up specific sites for occupation by DVE-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect involves global chromatin condensation, while opening up specific sites for occupation by DVE-1 (Tian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Tian et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ebe4dfeb-71bd-4044-b7f9-24b6c55f4267",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C96",
+      "claim": "PGAM5 has been reported to interact with and activate ASK1.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the JNK-activating kinases, Apoptosis Signaling Kinase 1 (ASK1), had been reported to interact with and be activated by the mitochondrial Serine/Threonine phosphatase Phosphoglycerate Mutase 5 (PGAM5) (Takeda et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Takeda et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "495b3e96-887e-4882-9407-94c74e9c847a",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C97",
+      "claim": "PGAM5 plays a role in regulating cell death pathways in flies and cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PGAM5 has not been fully characterized but plays a role in regulating cell death pathways in flies and cultured cells (Ishida et al., 2012; Wang et al., 2012; Zhuang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Ishida et al., 2012, Wang et al., 2012, and Zhuang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ba4f890f-db62-4627-bca9-d74e914f1d15",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C98",
+      "claim": "PGAM5 is cleaved upon loss of membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported to localize to either the inner (Lo and Hannink, 2008) or outer mitochondrial membrane, where it is cleaved upon loss of membrane potential (Sekine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Lo and Hannink, 2008 and Sekine et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "1fc22a49-a28d-401e-a8fd-c47d8a101488",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C99",
+      "claim": "PGAM5 displays phosphatase rather than mutase activity in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "While a member of the PGAM family based on sequence, it displays phosphatase rather than mutase activity in culture (Takeda et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Takeda et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "2f93dd32-49e0-4990-b65c-ccc6b1d79adb",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C100",
+      "claim": "PGAM5 interacts with the mitophagy factor PINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "PGAM5 also interacts with the mitophagy factor PINK1, and loss of PGAM5 rescues the muscle degeneration phenotype of dPINK1 mutant flies (Imai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Imai et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "f6b1fa12-b94d-443b-8d27-d98857dff864",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C101",
+      "claim": "Loss of PGAM5 rescues the muscle degeneration phenotype of dPINK1 mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "PGAM5 also interacts with the mitophagy factor PINK1, and loss of PGAM5 rescues the muscle degeneration phenotype of dPINK1 mutant flies (Imai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Imai et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "3d89ffc6-c276-43bd-98cd-8b3a66fc9352",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C102",
+      "claim": "Loss of PGAM5 inhibits mitophagy in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of PGAM5 inhibits mitophagy in vitro, and leads to Parkinson's-like symptoms in mice (Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Lu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "4896eda1-fdf9-42e3-92d4-307f31805f85",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C103",
+      "claim": "Loss of PGAM5 leads to Parkinson's-like symptoms in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of PGAM5 inhibits mitophagy in vitro, and leads to Parkinson's-like symptoms in mice (Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Lu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "5023e987-c379-4b96-871f-85c3766bbd5f",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C104",
+      "claim": "Induction of the UPRmt in HeLa cells triggers PINK1 accumulation, Parkin recruitment and mitophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, induction of the UPRmt in HeLa cells has been reported to trigger PINK1 accumulation, Parkin recruitment and mitophagy (Jin and Youle, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Jin and Youle, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "5933543f-6cc3-4f4a-9820-8d61b553dad4",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C105",
+      "claim": "Two recent papers have identified a role for the UPRmt in regulating histone methylation and chromatin remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent papers have identified a role for the UPRmt in regulating histone methylation and chromatin remodeling (Merkwirth et al., 2016; Tian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Merkwirth et al., 2016 and Tian et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b81b760b-6529-427b-9736-4340db391ffd",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C106",
+      "claim": "Demethylase activity during developmental UPRmt is required for lifespan extension in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies show that demethylase activity during developmental UPRmt is required for lifespan extension, and that atfs-1 acts synergistically with these epigenetic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established findings in C. elegans research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ad04447a-5710-4bf7-87ad-75d77945ae06",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C107",
+      "claim": "ATFS-1 acts synergistically with epigenetic changes during the UPRmt in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies show that demethylase activity during developmental UPRmt is required for lifespan extension, and that atfs-1 acts synergistically with these epigenetic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established findings in C. elegans research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "d8648a8b-9d4d-4fc8-bf07-8ca8a6a9ad37",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C108",
+      "claim": "Commonly used UPRmt reporters in C. elegans correlate poorly with longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothesis that a combination of signaling and epigenetic changes are required for UPRmt longevity could help explain recent reports that commonly used UPRmt reporters in C. elegans correlate poorly with longevity (Bennett et al., 2014; Ren et al., 2015): the UPRmt likely involves several pathways, which can also be activated by other stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citations to Bennett et al., 2014 and Ren et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ce42a1b5-e606-4ebd-b2bc-a9d23af104be",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C109",
+      "claim": "The UPRmt triggers the innate immune system in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also provides further support for the observation that the UPRmt triggers the innate immune system (Pellegrino et al., 2014) and shows that this feature is conserved outside of C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Pellegrino et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "7a9309a1-8f01-4c0a-bdfa-e210e419e7c1",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C110",
+      "claim": "FoxO activation in the larval Drosophila fat body can induce Relish/NF-\u03baB signaling by stimulating Rel expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we have shown previously that FoxO activation in the larval Drosophila fat body can induce Relish/NF-\u03baB signaling by stimulating Rel expression (Karpac et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Karpac et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "1c48edc3-1959-486e-8d7e-3f7c27f6b365",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C111",
+      "claim": "The UPRmt can be activated by rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are also consistent with reports that the UPRmt can be activated by rapamycin (Houtkooper et al., 2013) and identify high-protein diet as a critical intervention that activates mTORC1 and overrides the positive effects of developmental mitochondrial stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Houtkooper et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "a9700755-9e52-4fba-82fa-7ab34ef3643e",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C112",
+      "claim": "NAD precursors and sirt-2.1 activate the UPRmt and extend lifespan in a daf-16/FOXO-dependent manner in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also previously reported that NAD precursors and sirt-2.1 activate the UPRmt and extend lifespan in a daf-16/FOXO-dependent manner (Mouchiroud et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Mouchiroud et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "72f0306e-609d-4730-a877-40ba4cddf49b",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "claim_id": "C113",
+      "claim": "mTORC1 activity regulates longevity in C. elegans through activation of daf-16/FOXO.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of FoxO by amino acid sensing/mTORC1 rather than insulin signaling is surprising, but is supported by a previous observation that mTORC1 activity regulates longevity in C. elegans through activation of daf-16/FOXO (Robida-Stubbs et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to Robida-Stubbs et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c271a111-0d8d-48e5-aa0b-4b58eb774641",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mitochondrial stress induced by \u0394OTC overexpression or ND75 knockdown activates a transcriptional response enriched for stress signaling, chaperones/proteases, and innate immune genes. This response is specific to mitochondrial stress and not triggered by heat shock or ER-UPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 collectively demonstrate a specific mitochondrial stress response through RNAseq and qPCR validation (C1-C2), with appropriate specificity controls comparing heat shock and ER-UPR (C4). The overlap analysis (C1) and functional enrichment (C2-C3) provide converging evidence for a core UPRmt signature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The transcriptional response to mitochondrial stress in Drosophila requires PGAM5, ASK1, JNK, Relish, and FoxO. Genetic disruption of any component blocks induction of both antimicrobial peptides and classical UPRmt genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14 and C22 provide systematic genetic evidence using RNAi knockdowns and null mutants showing each pathway component is required for the stress response. The data include both AMP reporters (C8-C13) and classical UPRmt genes (C14), demonstrating pathway completeness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "26481e08-dae1-495b-8453-ccb54598cca4",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The PGAM5-ASK1-JNK pathway mediating mitochondrial stress responses is distinct from canonical Toll and Imd immune pathways and does not contribute to lifespan extension through improved immune function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 show that disrupting the mitochondrial stress pathway does not affect canonical pathogen responses, while C34 integrates multiple lines of evidence (antibiotic treatment, axenic conditions, pathogen resistance, microbiome analysis) demonstrating immune activation is not responsible for longevity effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "bace589d-1b07-415c-8cda-c137b33ea712",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "\u0394OTC expression does not induce apoptosis, though PGAM5 null flies show elevated baseline apoptosis consistent with prior reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 are supported by TUNEL assay data and appropriate citation to previous work. This control experiment rules out apoptosis as a confounding mechanism for the observed stress responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "88ac36dc-e107-454b-b368-e791d05332be",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ROS production is not required for mitochondrial stress-induced AMP expression, as blocking mitochondrial ROS or overexpressing antioxidants does not affect the response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 use both pharmacological ROS inhibitors and genetic antioxidant overexpression to demonstrate ROS-independence. The experiments appropriately cite methodology and provide converging negative results ruling out direct ROS-mediated ASK1 activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "5b721ec8-3aab-4cbd-8ef9-073acf7d513b",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Developmental \u0394OTC expression extends Drosophila lifespan by 21% (median) and 14% (maximum), while adult-only expression has no effect, demonstrating developmental timing is necessary and sufficient for longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 and C65 present lifespan data with appropriate controls showing developmental specificity. The consistent extension across multiple experiments and comparison to C. elegans findings strengthen the conclusion about developmental timing requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "6cfb25bd-3f11-46f5-a652-bb3c0395e71e",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PGAM5 and FoxO are required for lifespan extension by developmental mitochondrial stress, with both null mutants showing loss of longevity benefits and reduced survival during developmental stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 provide genetic loss-of-function evidence in both lifespan and developmental survival assays. The data demonstrate both PGAM5 and FoxO are necessary for the longevity phenotype, with FoxO showing stronger developmental survival defects consistent with its downstream role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "f03e5994-19d7-49d7-8f2d-5336c03f2c20",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lifespan extension by developmental mitochondrial stress occurs independently of the microbiome, as shown by experiments with antibiotics, axenic conditions, and lack of changes in pathogen resistance or microbiome composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 systematically rule out microbiome contributions using multiple complementary approaches: antibiotic treatment (C29), axenic rearing (C30), pathogen resistance assays (C31), CFU quantification (C32), and 16S sequencing (C33). The convergence of negative results strongly supports microbiome-independence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "ab3fd59a-7e37-4f48-afc4-6ef34b336647",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Developmental \u0394OTC expression reduces adult triglyceride levels in a PGAM5-dependent manner without affecting NAD/NADH ratios or mitochondrial content, consistent with FoxO-mediated metabolic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 characterize metabolic phenotypes with appropriate controls. The PGAM5-dependence of TAG reduction (C38) links the metabolic change to the identified signaling pathway, while negative results for NAD/NADH and MitoTracker rule out general mitochondrial dysfunction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "95b9c68f-c23d-4a97-a163-4f171b7e193c",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Developmental \u0394OTC expression induces FoxO nuclear translocation in larval fat bodies that persists into adulthood in a PGAM5-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C68 use immunohistochemistry to demonstrate FoxO activation during development and persistence in adults. The PGAM5-dependence (C40) links FoxO activation to the upstream signaling pathway, providing a mechanistic connection to longevity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "107509f9-a93b-4208-85de-fba74b6e9ada",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Persistent FoxO activation requires JNK activity during development, as shown by pharmacological and genetic JNK inhibition. Adult-only mitochondrial stress produces transient but not lasting FoxO activation, explaining the lack of lifespan extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 demonstrate developmental timing requirements for persistent FoxO activation using both JNK inhibitor (C42) and dominant-negative genetics (C43). The comparison to adult treatment (C44-C45) directly links persistent FoxO activation to longevity outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b5296d79-047b-4d66-ac9d-9b25a46e8333",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Developmental mitochondrial stress induces acute metabolic gene expression in larvae, but only a small subset of genes (predominantly chaperones and FoxO targets) remain upregulated in adults in a PGAM5-dependent manner. Many of these persistently induced chaperones have been previously implicated in lifespan extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 and C69 use RNAseq to identify persistently upregulated genes with appropriate PGAM5 null controls. The identification of FoxO target chaperones with prior longevity associations provides mechanistic insight, though the reliance on literature citations for lifespan effects of individual genes is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "8f0fcd9f-9b87-41bc-b24e-64473ee3c4a5",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Persistent FoxO activation after developmental stress is independent of insulin signaling but can be reversed by high-protein diet through mTORC1 activation. Rapamycin prevents this reversal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 and C70 use starvation/refeeding experiments and dietary manipulations to dissect FoxO regulation. The sucrose diet control (C54) rules out insulin signaling, while the high-protein diet and rapamycin experiments (C55-C56) implicate mTORC1 in a novel regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "2fdbde56-6dbc-4930-9168-a175b8995c4a",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "mTORC1 and GCN-2 regulate persistent FoxO activation, with TSC1/2 overexpression sufficient to induce FoxO nuclear localization and GCN-2 acting downstream of mTORC1 to promote FoxO activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 use genetic manipulations (TSC1 RNAi, TSC1/2 overexpression, GCN-2 overexpression/RNAi) to establish an mTORC1-GCN-2-FoxO regulatory axis. The epistasis experiment with rapamycin and GCN-2 RNAi (C61) supports the proposed pathway order.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "60deb002-0059-4a74-97c8-eec726d6d40b",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "High-protein diet throughout adulthood completely abolishes lifespan extension from developmental \u0394OTC expression, consistent with the requirement for persistent FoxO activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C71 demonstrate that dietary intervention can override developmental programming. This result directly links the molecular mechanism (FoxO activation) to the physiological outcome (longevity) and has important translational implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "928ddc3b-6662-4002-b3c9-7a3395db570c",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Acute \u0394OTC expression for 24 hours mildly improves oral infection resistance but does not affect humoral infection resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 are supported by infection survival data, though the speculation about insufficient AMP induction for humoral infections is not directly tested. The differential effects on oral vs. humoral infection suggest route-specific immune modulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within established UPRmt literature across species, citing prior work on transcriptional responses, metabolic reconfiguration, epigenetic regulation, and developmental timing requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C95 represent background knowledge and literature citations that appropriately frame the current work. These claims rely on cited references and established knowledge rather than new experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior literature establishes PGAM5 as a mitochondrial phosphatase that interacts with ASK1 and PINK1, regulates cell death pathways, and is cleaved upon loss of membrane potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C104 summarize prior work on PGAM5 with appropriate citations. These background claims provide context for the current findings but do not represent new experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "0f447fe0-02a8-4dc3-8d27-13b67feb77dc",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Recent work in C. elegans has identified roles for histone methylation and chromatin remodeling in UPRmt-mediated longevity, though UPRmt reporters correlate poorly with longevity outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108 cite recent literature on epigenetic mechanisms and limitations of UPRmt reporters. These provide important context for interpreting the current findings about persistent gene expression changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    },
+    {
+      "id": "17a8c2aa-9775-4945-ab68-cc8111d1c78f",
+      "content_id": "3b7ffa18-325a-4f16-9fcc-6fb119aa6803",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior work has shown that the UPRmt triggers innate immunity, FoxO can induce Relish signaling, rapamycin activates the UPRmt, and mTORC1 regulates longevity through FOXO in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C113 cite relevant prior work that supports the plausibility of the current findings and provides comparative context across species. These background claims appropriately frame the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:57:28.485868Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "174a46fc-77f7-4a45-8a9d-2a6e52718515",
+      "result_id": "c271a111-0d8d-48e5-aa0b-4b58eb774641"
+    },
+    {
+      "claim_id": "09c3c0ae-8df4-48ef-afd7-fa3edcafc833",
+      "result_id": "c271a111-0d8d-48e5-aa0b-4b58eb774641"
+    },
+    {
+      "claim_id": "d0338bf4-d15b-4b33-be6b-7fb4b9cd8bc3",
+      "result_id": "c271a111-0d8d-48e5-aa0b-4b58eb774641"
+    },
+    {
+      "claim_id": "64a50940-d33b-4ffd-8044-f3ee62068193",
+      "result_id": "c271a111-0d8d-48e5-aa0b-4b58eb774641"
+    },
+    {
+      "claim_id": "55ce4d4b-42d6-4e35-923e-da706840ef1d",
+      "result_id": "c271a111-0d8d-48e5-aa0b-4b58eb774641"
+    },
+    {
+      "claim_id": "e4628926-bb1b-405f-a6d8-fe5186f3a1c9",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "ecf80eaa-b811-421d-97d2-99574ba545f6",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "083bad32-32aa-41a5-9ce9-6cde0f10f797",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "af14a224-9b9a-4bac-a59a-8115da0dafc2",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "ec3c8c76-89c5-4e98-9772-dc83b245ea00",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "46c66ba8-8aab-4ad2-b250-3a3f92c0e8e4",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "fe1b0320-5b3c-45c6-a440-63dfa3386751",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "36c930c1-4134-4494-9339-49760190a4f3",
+      "result_id": "81cb94aa-c5ab-4021-a95b-e38f8d8b8375"
+    },
+    {
+      "claim_id": "07809b3d-e3a6-4a9c-9c38-d9d990807a6e",
+      "result_id": "26481e08-dae1-495b-8453-ccb54598cca4"
+    },
+    {
+      "claim_id": "13f7d123-c796-4abb-a6fc-40acbc5c0113",
+      "result_id": "26481e08-dae1-495b-8453-ccb54598cca4"
+    },
+    {
+      "claim_id": "439c3a4d-39ab-4238-b45d-d66874f9e568",
+      "result_id": "26481e08-dae1-495b-8453-ccb54598cca4"
+    },
+    {
+      "claim_id": "7778a3d8-8473-42e5-a80b-fd9f2a4b9ebd",
+      "result_id": "bace589d-1b07-415c-8cda-c137b33ea712"
+    },
+    {
+      "claim_id": "c0f97386-f856-4f0f-91f0-c82bd94e94b7",
+      "result_id": "bace589d-1b07-415c-8cda-c137b33ea712"
+    },
+    {
+      "claim_id": "f37949d3-7c49-4ef4-8110-1e71c76273ab",
+      "result_id": "88ac36dc-e107-454b-b368-e791d05332be"
+    },
+    {
+      "claim_id": "e6695bf0-2df5-45ec-ab95-9064218ed212",
+      "result_id": "88ac36dc-e107-454b-b368-e791d05332be"
+    },
+    {
+      "claim_id": "a2acc3e8-4c7c-4817-9890-f9602ddcd168",
+      "result_id": "88ac36dc-e107-454b-b368-e791d05332be"
+    },
+    {
+      "claim_id": "61d9becf-1b0c-4736-8161-44d1713cb0af",
+      "result_id": "5b721ec8-3aab-4cbd-8ef9-073acf7d513b"
+    },
+    {
+      "claim_id": "d89d6a25-7b2f-465d-bbfe-1fab37a06c9c",
+      "result_id": "5b721ec8-3aab-4cbd-8ef9-073acf7d513b"
+    },
+    {
+      "claim_id": "cf882b77-6377-43bf-9a5e-d3ba1bbad86e",
+      "result_id": "5b721ec8-3aab-4cbd-8ef9-073acf7d513b"
+    },
+    {
+      "claim_id": "eb8ee449-395e-4c2c-8c7f-94922f7b0bbe",
+      "result_id": "6cfb25bd-3f11-46f5-a652-bb3c0395e71e"
+    },
+    {
+      "claim_id": "c44b1bec-9137-47d8-91aa-30488db293fe",
+      "result_id": "6cfb25bd-3f11-46f5-a652-bb3c0395e71e"
+    },
+    {
+      "claim_id": "27523abd-0b03-43a1-aa0f-191ff67f4943",
+      "result_id": "6cfb25bd-3f11-46f5-a652-bb3c0395e71e"
+    },
+    {
+      "claim_id": "44940b50-817e-4f3c-8dda-ba19e30f4fa9",
+      "result_id": "6cfb25bd-3f11-46f5-a652-bb3c0395e71e"
+    },
+    {
+      "claim_id": "09d5a285-4682-4063-879b-85d84e3e8bbd",
+      "result_id": "6cfb25bd-3f11-46f5-a652-bb3c0395e71e"
+    },
+    {
+      "claim_id": "cda332ac-37f5-4100-bb5c-5b4d802b097b",
+      "result_id": "6cfb25bd-3f11-46f5-a652-bb3c0395e71e"
+    },
+    {
+      "claim_id": "39bc5ebf-5612-4455-ac98-16f3989d00b7",
+      "result_id": "f03e5994-19d7-49d7-8f2d-5336c03f2c20"
+    },
+    {
+      "claim_id": "535e1ba1-3bb5-4f54-bd2d-5e7d1bde5367",
+      "result_id": "f03e5994-19d7-49d7-8f2d-5336c03f2c20"
+    },
+    {
+      "claim_id": "d8edea3a-c295-428b-b45d-aea93c2d908f",
+      "result_id": "f03e5994-19d7-49d7-8f2d-5336c03f2c20"
+    },
+    {
+      "claim_id": "2b955e42-9832-4862-b7a4-8cc91562a648",
+      "result_id": "f03e5994-19d7-49d7-8f2d-5336c03f2c20"
+    },
+    {
+      "claim_id": "abe2810c-14cd-4abd-a860-14c60986f539",
+      "result_id": "f03e5994-19d7-49d7-8f2d-5336c03f2c20"
+    },
+    {
+      "claim_id": "277e7b6a-f3b0-4e75-b4a1-2c77e2a659d2",
+      "result_id": "ab3fd59a-7e37-4f48-afc4-6ef34b336647"
+    },
+    {
+      "claim_id": "2f3fa27d-6dab-4875-a676-097e871d9532",
+      "result_id": "ab3fd59a-7e37-4f48-afc4-6ef34b336647"
+    },
+    {
+      "claim_id": "f22f2ea4-96e6-4fa2-a48e-1f8067d5d185",
+      "result_id": "ab3fd59a-7e37-4f48-afc4-6ef34b336647"
+    },
+    {
+      "claim_id": "e8a70995-c8e6-4bfd-9be0-7f14c013e32b",
+      "result_id": "ab3fd59a-7e37-4f48-afc4-6ef34b336647"
+    },
+    {
+      "claim_id": "4750770b-e300-4f47-85db-48cf2018e686",
+      "result_id": "95b9c68f-c23d-4a97-a163-4f171b7e193c"
+    },
+    {
+      "claim_id": "569fb21d-efa9-4867-ad1b-716f6b5350ec",
+      "result_id": "95b9c68f-c23d-4a97-a163-4f171b7e193c"
+    },
+    {
+      "claim_id": "c20711b1-dbc6-4cab-804f-be76f99305c2",
+      "result_id": "95b9c68f-c23d-4a97-a163-4f171b7e193c"
+    },
+    {
+      "claim_id": "36632100-3e5b-48d7-a890-53cdb9859c97",
+      "result_id": "95b9c68f-c23d-4a97-a163-4f171b7e193c"
+    },
+    {
+      "claim_id": "a877cb69-a776-44d1-aa83-c229e6e2b172",
+      "result_id": "107509f9-a93b-4208-85de-fba74b6e9ada"
+    },
+    {
+      "claim_id": "f98da880-e73e-44fd-8581-8313c1ca83cd",
+      "result_id": "107509f9-a93b-4208-85de-fba74b6e9ada"
+    },
+    {
+      "claim_id": "c1c94e58-13c7-4abb-b3d1-5ce0c9bcc8f1",
+      "result_id": "107509f9-a93b-4208-85de-fba74b6e9ada"
+    },
+    {
+      "claim_id": "378bef14-7720-4229-aa45-15cdd8f25a90",
+      "result_id": "107509f9-a93b-4208-85de-fba74b6e9ada"
+    },
+    {
+      "claim_id": "735eb22c-cc5a-47f3-bd69-4dab5011755c",
+      "result_id": "107509f9-a93b-4208-85de-fba74b6e9ada"
+    },
+    {
+      "claim_id": "e25c34be-9115-493a-bdb0-aa2eb975083c",
+      "result_id": "b5296d79-047b-4d66-ac9d-9b25a46e8333"
+    },
+    {
+      "claim_id": "59b3cca2-299b-4586-93b3-25c6701a8649",
+      "result_id": "b5296d79-047b-4d66-ac9d-9b25a46e8333"
+    },
+    {
+      "claim_id": "ef51c6db-f609-41be-91d0-6345e42de320",
+      "result_id": "b5296d79-047b-4d66-ac9d-9b25a46e8333"
+    },
+    {
+      "claim_id": "f9ea95a5-7765-4077-af52-44f3caf4dd26",
+      "result_id": "b5296d79-047b-4d66-ac9d-9b25a46e8333"
+    },
+    {
+      "claim_id": "e9295280-246b-42a6-9a85-5c4f5a4f7b15",
+      "result_id": "b5296d79-047b-4d66-ac9d-9b25a46e8333"
+    },
+    {
+      "claim_id": "1c63ffd6-6206-4593-8bb2-cc99ce85df18",
+      "result_id": "b5296d79-047b-4d66-ac9d-9b25a46e8333"
+    },
+    {
+      "claim_id": "b1445802-f60f-4cf6-9385-12d9e3153585",
+      "result_id": "8f0fcd9f-9b87-41bc-b24e-64473ee3c4a5"
+    },
+    {
+      "claim_id": "b53c42f1-bcfb-424a-8b14-4a62dbe5c6a6",
+      "result_id": "8f0fcd9f-9b87-41bc-b24e-64473ee3c4a5"
+    },
+    {
+      "claim_id": "b4f99a85-5671-47db-8d4f-4e66f0ec6986",
+      "result_id": "8f0fcd9f-9b87-41bc-b24e-64473ee3c4a5"
+    },
+    {
+      "claim_id": "80bf2349-b5d5-4531-b5f1-112a224e7ad0",
+      "result_id": "8f0fcd9f-9b87-41bc-b24e-64473ee3c4a5"
+    },
+    {
+      "claim_id": "9c2935be-f499-4f09-a95d-a6784c2c4f07",
+      "result_id": "8f0fcd9f-9b87-41bc-b24e-64473ee3c4a5"
+    },
+    {
+      "claim_id": "64d8f34f-4569-40a5-8e6d-891bd983d3f2",
+      "result_id": "8f0fcd9f-9b87-41bc-b24e-64473ee3c4a5"
+    },
+    {
+      "claim_id": "aced16db-f5d9-4690-b288-389db23a023d",
+      "result_id": "2fdbde56-6dbc-4930-9168-a175b8995c4a"
+    },
+    {
+      "claim_id": "6c8a850b-5169-4d6f-a335-ba9db28cbd61",
+      "result_id": "2fdbde56-6dbc-4930-9168-a175b8995c4a"
+    },
+    {
+      "claim_id": "87c78d08-4568-4705-9055-05f6d3e29e54",
+      "result_id": "2fdbde56-6dbc-4930-9168-a175b8995c4a"
+    },
+    {
+      "claim_id": "010f8aa6-033d-469a-a16c-7c4228b1d76a",
+      "result_id": "2fdbde56-6dbc-4930-9168-a175b8995c4a"
+    },
+    {
+      "claim_id": "3416c68b-85ee-4608-95fd-7bb6d5ab7c8d",
+      "result_id": "2fdbde56-6dbc-4930-9168-a175b8995c4a"
+    },
+    {
+      "claim_id": "dff3a008-c930-4b49-9f65-b93d49db2791",
+      "result_id": "60deb002-0059-4a74-97c8-eec726d6d40b"
+    },
+    {
+      "claim_id": "21700f3a-69ed-4878-ba09-d36e77e3897e",
+      "result_id": "60deb002-0059-4a74-97c8-eec726d6d40b"
+    },
+    {
+      "claim_id": "088301a4-24d1-4631-bb9c-7d1f52bc10ab",
+      "result_id": "928ddc3b-6662-4002-b3c9-7a3395db570c"
+    },
+    {
+      "claim_id": "0d25e0b4-288e-45fd-bb37-acfb9ead948c",
+      "result_id": "928ddc3b-6662-4002-b3c9-7a3395db570c"
+    },
+    {
+      "claim_id": "d23397fd-4df8-4e7c-bd46-38115905db99",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "cde57750-3d9f-47f2-9077-e1ae0d4882d5",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "2573d8fd-e022-46fa-be2d-91dfe9925dc4",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "29adce12-d73c-484a-b1df-f2f91d4c6f8f",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "c3a683fa-ac10-4637-b725-66af49d6f5a4",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "791bbde3-dc37-4421-a579-5d3b93d6f798",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "5c371756-4fd5-4523-8027-80cd363c13a2",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "5859a010-407a-4379-bcc4-eba801f3b7ad",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "8678fdcf-7721-4dfc-8b58-432dfbde1486",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "b12a128f-9c5f-4a53-9591-ee46066dfc24",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "475fa3eb-96bf-4f05-9d0c-aee616428085",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "09621490-12ff-4982-8992-f5e0ece92dc5",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "95728051-f6f2-4ab5-905e-17fc171ff7b5",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "536745db-ba52-4cf3-8704-9bca7bd0c09d",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "f4303289-7bc2-460c-8e75-1c48bed67544",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "c7a585b3-804c-4ddb-b3b3-399b3f060654",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "60718417-0119-4ee7-8dd4-0ed2ea5413f2",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "d1b481c5-6709-4301-a2b4-91f6b0ffce55",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "6ed0097c-bbee-4b03-8de1-c6a0e7e69f00",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "0cc32315-55b3-479d-8a64-6c322bc83aab",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "d2e0b5fa-aac8-4d5a-8323-142041fe2653",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "03d8a1f8-db01-4bef-b722-dbf96937d2a7",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "149b0e78-4c5f-4d71-a677-364a07a1a21c",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "80de8a9c-c2de-44dc-8d89-129c2946897e",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "96bb1211-7414-41c1-bbf6-fbfb56a748c0",
+      "result_id": "78d3c4f1-3bd2-4767-a238-f1a46e26d273"
+    },
+    {
+      "claim_id": "ebe4dfeb-71bd-4044-b7f9-24b6c55f4267",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "495b3e96-887e-4882-9407-94c74e9c847a",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "ba4f890f-db62-4627-bca9-d74e914f1d15",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "1fc22a49-a28d-401e-a8fd-c47d8a101488",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "2f93dd32-49e0-4990-b65c-ccc6b1d79adb",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "f6b1fa12-b94d-443b-8d27-d98857dff864",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "3d89ffc6-c276-43bd-98cd-8b3a66fc9352",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "4896eda1-fdf9-42e3-92d4-307f31805f85",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "5023e987-c379-4b96-871f-85c3766bbd5f",
+      "result_id": "b3bb6dcd-bc2a-4313-a4fd-47a284d56e32"
+    },
+    {
+      "claim_id": "5933543f-6cc3-4f4a-9820-8d61b553dad4",
+      "result_id": "0f447fe0-02a8-4dc3-8d27-13b67feb77dc"
+    },
+    {
+      "claim_id": "b81b760b-6529-427b-9736-4340db391ffd",
+      "result_id": "0f447fe0-02a8-4dc3-8d27-13b67feb77dc"
+    },
+    {
+      "claim_id": "ad04447a-5710-4bf7-87ad-75d77945ae06",
+      "result_id": "0f447fe0-02a8-4dc3-8d27-13b67feb77dc"
+    },
+    {
+      "claim_id": "d8648a8b-9d4d-4fc8-bf07-8ca8a6a9ad37",
+      "result_id": "0f447fe0-02a8-4dc3-8d27-13b67feb77dc"
+    },
+    {
+      "claim_id": "ce42a1b5-e606-4ebd-b2bc-a9d23af104be",
+      "result_id": "17a8c2aa-9775-4945-ab68-cc8111d1c78f"
+    },
+    {
+      "claim_id": "7a9309a1-8f01-4c0a-bdfa-e210e419e7c1",
+      "result_id": "17a8c2aa-9775-4945-ab68-cc8111d1c78f"
+    },
+    {
+      "claim_id": "1c48edc3-1959-486e-8d7e-3f7c27f6b365",
+      "result_id": "17a8c2aa-9775-4945-ab68-cc8111d1c78f"
+    },
+    {
+      "claim_id": "a9700755-9e52-4fba-82fa-7ab34ef3643e",
+      "result_id": "17a8c2aa-9775-4945-ab68-cc8111d1c78f"
+    },
+    {
+      "claim_id": "72f0306e-609d-4730-a877-40ba4cddf49b",
+      "result_id": "17a8c2aa-9775-4945-ab68-cc8111d1c78f"
+    }
+  ],
+  "comparisons": []
+}

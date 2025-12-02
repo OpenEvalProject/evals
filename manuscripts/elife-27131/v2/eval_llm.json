@@ -1,0 +1,446 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed LocScale, a general procedure that utilizes prior model information to iteratively compute map representations better suited for interpretation and atomic model refinement. The procedure optimizes map contrast by local amplitude scaling against an atomic structure and implicitly accounts for differences in local resolution. Testing on six cryo-EM structures demonstrated that local sharpening increases interpretability of density maps, particularly in cases of resolution variation, and facilitates model building and atomic model refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe the core LocScale method and its validation. The method is clearly defined (C32-C34), and testing on six diverse cryo-EM structures (TRPV1, \u03b2-galactosidase, \u03b3-secretase, ribosome-EF-Tu complex, 20S proteasome, RNA polymerase III) provides substantial empirical support for improved interpretability and facilitation of model building (C35-C36). The experimental validation across multiple test cases with different characteristics supports the generality of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using a 2D test image, the authors demonstrate that the appearance of map features depends on the relative magnitude of frequency components, not just their presence. They show that tile-based local amplitude scaling against a local reference better restores high-resolution contrast including directional amplitude components compared to global scaling or exponential falloff approximation, and should be preferred for contrast restoration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 present a systematic demonstration using a 2D test image (Figure 1A-E) showing progressive improvement from random noise amplitudes (C39) through exponential scaling (C42-C43) to reference-based scaling (C44) and finally tile-based local scaling (C46). The visual evidence in Figure 1 and the logical progression of experiments provide strong support for the conclusion that local amplitude scaling is superior (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Analysis of four deposited 3D cryo-EM densities (TRPV1, \u03b3-secretase, \u03b2-galactosidase, Pol III) reveals that locally determined B-factors vary across the maps, with local resolution variations in addition to steep amplitude decay. Estimating B-factors by Guinier fitting is error-prone (R\u00b2 0.6-0.9), and locally adjusted sharpening levels may be required to optimally represent density features in maps with significant local resolution variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by quantitative analysis shown in Figure 1F-H and Figure 1\u2014figure supplement 1. The local FSC calculations (C48), mapped B-factors (C49), and R\u00b2 values from Guinier fitting (C50) provide empirical evidence. The conclusion about the need for locally adjusted sharpening (C51) follows logically from the demonstrated variation, though it represents an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Comparison of LocScale with three other sharpening methods (global B-factor, local Guinier B-factor, UNSHARP masking) on TRPV1 demonstrates that while all methods enhance interpretability, LocScale and UNSHARP contain lower peripheral noise than local Guinier methods. LocScale displays the expected smooth falloff towards high frequencies without overrepresentation of high frequencies or attenuation of low frequencies, and provides robust sharpening across all map regions simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are supported by systematic comparison shown in Figure 2C-F. Visual inspection (C54-C55, C59-C61) is complemented by quantitative analysis of radial amplitude profiles (C56-C58). The conclusion that reference-based local amplitude scaling is superior (C62) is well-supported by the comparative data, though some assessments rely on qualitative visual inspection which introduces subjectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "LocScale maps improve interpretability of cryo-EM maps by eliminating sharpening artifacts and optimally restoring local map contrast. For Pol III, LocScale eliminates artifacts from incorrect amplitude scaling present in the deposited map. For TRPV1, LocScale reveals more clearly resolved \u03b1-helical pitch and well-defined side chain densities, improving visibility of high-resolution features while dampening noise in lower resolution regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by visual comparisons in Figure 3A-B showing specific improvements in two test cases. The identification of artifacts in deposited maps (C64) and improved features in LocScale maps (C65-C66) are demonstrated with clear before/after comparisons. The general conclusion about improved interpretability (C68) is supported by these examples, though limited to two structures in this specific analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The LocScale procedure does not transfer phase information from the model to scaled density maps, only using radially averaged model amplitudes to correct experimental Fourier amplitudes. Experiments with F436A and V440W mutants, poly-alanine models, and coordinate perturbations (2.5-50 \u00c5 r.m.s.d.) demonstrate that observed density features result from enhanced contrast rather than coordinate bias, though map contrast decreases with increasing coordinate perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 address the critical concern of model bias through systematic experiments shown in Figure 3C-D and Figure 3\u2014figure supplement 1A. The mutant experiments (C71-C72) provide strong negative controls, the poly-alanine test (C73) demonstrates robustness to missing side chain information, and coordinate perturbation experiments (C74-C75) show the method works even with highly perturbed models. The conclusion that features arise from contrast enhancement rather than bias (C76) is well-supported by these complementary experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "LocScale sharpening requires good estimates of atomic B-factors for best performance, though it is sufficiently robust to produce improved maps even without refined B-factors. Atomic B-factors correlate with local resolution when refinement proceeds robustly. Incorrectly estimated B-factors (underestimated at periphery or overestimated at core) lead to suboptimal density representation, while correctly estimated B-factor distributions result in locally adapted sharpening and optimized contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are supported by systematic B-factor manipulation experiments shown in Figure 3\u2014figure supplement 2. The correlation between B-factors and local resolution (C79, Figure 3\u2014figure supplement 1G-H) provides validation. The effects of incorrect B-factors (C80-C81) and correct B-factors (C83) are clearly demonstrated. The conclusion about robustness (C78) is supported but the statement about 'best performance' (C77) could benefit from more quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Systematic testing of window sizes from 8 to 60 pixels (9.7-73 \u00c5) for TRPV1 reveals that window sizes of 25-35 \u00c5 best represent expected features. Map kurtosis peaks between 22-30 \u00c5, corresponding to the range where Debye effects are strongest. An optimal window size can be chosen that maximizes map kurtosis and Debye effect contrast by reflecting the effective distance of local B-factor correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by systematic window size analysis shown in Figure 3\u2014figure supplement 3. Visual inspection (C84) is complemented by quantitative kurtosis measurements (C85) that correlate with Debye effects in Guinier plots. The conclusion about optimal window size (C86) is well-supported by the convergence of visual assessment and kurtosis measurements, providing an objective criterion for parameter selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The LocScale procedure can be integrated into an iterative workflow with model building and refinement, where the LocScale density with enhanced local contrast serves as an improved target map that can be iterated until convergence. The iterative approach can assist in extending models to regions where no reference was initially available, as demonstrated with TRPV1 where density extended at least half the window size beyond the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 describe the iterative workflow (Figure 4A) and demonstrate model extension capability (Figure 4B). The TRPV1 example (C89-C91) provides proof-of-concept that the method can work with incomplete models. However, only one example of model extension is shown, and the claim that sharpening is 'approximately correct' (C91) is somewhat qualitative. The workflow is clearly described and demonstrated but could benefit from more extensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "For \u03b2-galactosidase, the LocScale map appears less noisy than the deposited map while preserving high-resolution details. In the V728-H735 region, the deposited map shows fragmented density precluding confident modeling, while the LocScale map reveals a clear backbone trace showing the deposited coordinates are incompatible with the density. Rebuilding using the LocScale map produces a conformation in closer agreement with the 1.6 \u00c5 crystal structure than the deposited model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by detailed analysis of \u03b2-galactosidase shown in Figure 5A-F and Figure 5\u2014figure supplement 1. The comparison with the high-resolution crystal structure (PDB 4ttg) provides independent validation (C97). The identification of errors in the deposited model (C94-C95) and successful correction (C96) demonstrate practical utility. The convergence after two LocScale iterations (Figure 5\u2014figure supplement 1F) supports the iterative workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The LocScale map for \u03b3-secretase revealed additional density contrast at 9 out of 11 N-glycosylation sites, permitting modeling of glycan extensions beyond deposited chains. Additionally, interpretable density at four previously unreported N-linked glycosylation sites was revealed, allowing building of the glycan base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by visual evidence in Figure 5G-K showing improved glycosylation site density. The identification of four new glycosylation sites (C99) represents a significant biological finding enabled by improved map quality. However, the authors note they refrained from building extensions at some sites due to ambiguous chemical identity, showing appropriate caution. The claims are well-supported by the visual evidence provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A notable benefit of LocScale maps is that all parts can be simultaneously visualized at a single threshold level. For the ribosome EF-Tu complex, LocScale maps allow visualization of amino acid and nucleotide densities at a single threshold simultaneously. The most significant differences between overall and locally sharpened maps are observed in maps with large resolution variations, such as RNA Pol III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by visual demonstrations in Figure 6 and Figure 6\u2014figure supplement 1. The ribosome example (C101) clearly shows simultaneous visualization of protein and RNA at single threshold, addressing a practical challenge in map interpretation. The observation about resolution variation (C102) is supported by the Pol III example. These represent practical advantages for model building workflows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "For TRPV1 and Pol III, LocScale maps provided enhanced contrast in regions of previously fragmented and weak density. The LocScale maps allowed rebuilding of loop regions and side chains in TRPV1 and confident placement of predicted secondary structure elements in previously less interpretable parts of the Pol III C82 subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by detailed examples in Figure 7A-F showing specific improvements in model building. The TRPV1 loop region (C104) and Pol III C82 helix (C105) provide concrete examples of improved interpretability enabling model correction. These demonstrate practical utility for structure determination, though the examples are limited to specific regions of two structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Quantitative refinement statistics show that overall real-space correlation improved by 3-6% for models refined against LocScale maps when measured against deposited EMDB entries, with largest improvements for TRPV1 and Pol III. Improved EMRinger and Molprobity scores for all models refined with LocScale maps indicate better density fit is not achieved at the expense of model distortions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by quantitative data in Table 1 and Figure 7\u2014figure supplement 1. The 3-6% improvement in real-space correlation (C106) is modest but consistent across all test cases. The correlation with resolution variation (C107) is logical. The improved validation scores (C108-C109) provide important evidence that improvements are genuine rather than overfitting. The statistical support is solid, though effect sizes are relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Comparison with local resolution-filtered (LocRes) maps shows that LocRes maps partially compensate for artifacts from uniform sharpening in reconstructions with significant resolution variation, whereas LocScale maps consistently provide additional detail. Local contrast optimization by LocScale sharpening results in atomic models with improved overall density fit and good stereochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by comparison data in Figure 7\u2014figure supplement 2 and Tables 1-2. The comparison with LocRes provides important context showing LocScale offers advantages beyond simple local filtering (C110-C111). The conclusion about improved models (C112) is supported by refinement statistics across multiple test cases. This addresses the important question of whether benefits come from filtering or amplitude scaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The LocScale method uses prior information from an atomic reference model that improves progressively during alternating refinement and sharpening rounds. The method is generally applicable to any cryo-EM structure interpretable with an atomic model, requiring only density map and coordinates without tuning parameters. By applying amplitude scaling locally, LocScale maps represent high-resolution signal more accurately throughout the map, acting as an optimized adaptive low-pass filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 summarize the LocScale method and its advantages. The general applicability (C114) is supported by successful application to six diverse test cases. The claim about no tuning parameters is somewhat overstated given the window size parameter, though default values work well. The characterization as an adaptive filter (C117) is a useful conceptual description. The comparison with local Guinier scaling (C118) is supported by Figure 2 comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "LocScale amplitude scaling explicitly accounts for the characteristic local profile of amplitude falloff due to specific structural properties of secondary structure motifs (Debye effects), which can differ markedly from simple exponential decay. The magnitude of Debye effects positively correlates with kurtosis, which represents a map quality indicator for cryo-EM densities. Using six examples, iterative LocScale contrast restoration consistently facilitates interpretability and accuracy over resolutions between 2 and 8 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 are supported by analysis in Figure 2F, Figure 2\u2014figure supplement 1, and testing across six structures. The explicit accounting for Debye effects (C120) is a key theoretical advantage over exponential sharpening. The correlation between Debye effects and kurtosis (C121-C122) provides a quantitative quality metric. The consistent performance across 2-8 \u00c5 resolution range (C123) demonstrates broad applicability, well-supported by the diverse test cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "LocScale maps facilitate visualization of detail in nucleic acid structures. Reference scaling results in a map where phosphate backbone and nucleotides can be visualized simultaneously with comparable detail at equivalent thresholds, facilitating model building.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by the ribosome EF-Tu complex example in Figure 6. The ability to visualize RNA and protein at single threshold (C125) addresses a practical challenge in mixed protein-RNA structures. However, only one example is shown, limiting the generality of the conclusion. The claim is supported but could benefit from additional examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "LocScale presents a form of model-based density improvement distinct from crystallographic density modification. The amplitude component is modified to conform to prior expectations from a reference model, while the phase component remains unchanged. Reference coordinate bias is not present because the method is restricted to scaling against a radial average. For cases with incomplete models or moderate errors, the radial amplitude profile provides a good initial estimate of mass density distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 address important methodological distinctions and potential concerns. The distinction from crystallographic density modification (C126-C127) is clearly articulated. The argument against coordinate bias (C128) is supported by the mutant and perturbation experiments (C71-C76). The claim about incomplete models (C129) is supported by Figure 3E-F and Figure 3\u2014figure supplement 1A-E. These claims effectively address potential criticisms of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Uniformly sharpened or globally scaled maps, optionally with local resolution filtering, are appropriate starting targets for initial model building and refinement of coordinates and B-factors. Once B-factor estimates are obtained, LocScale maps provide locally optimized contrast and facilitate further refinement. Benefits of sharpening are confirmed for LocScale maps, likely because locally optimized sharpening levels result in improvements over all map areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 provide practical workflow recommendations supported by the iterative refinement results and comparison with prior work. The recommendation for initial refinement (C130) is reasonable given the B-factor requirement. The benefits of LocScale after initial refinement (C131) are supported by the refinement statistics. The reconciliation with conflicting prior reports (C132) is supported by citations and the comprehensive validation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Cryo-EM maps degrade in quality towards the particle periphery due to algorithmic limitations and true structural flexibility expected to be more prominent at the periphery. The LocScale procedure takes local filtering further by optimizing contrast through local amplitude scaling against an atomic reference model. In six test cases, contrast improvements were particularly apparent in regions of increased flexibility such as peripheral subunits, flexible loops, and partial occupancy sites, resulting in a single map displaying structural information optimally for all areas simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 contextualize the LocScale approach within known cryo-EM limitations and demonstrate its advantages. The degradation at periphery (C133-C134) is well-established. The distinction from local filtering (C135) is supported by comparison with LocRes. The observation about flexible regions (C136) is supported by examples across six structures. The conclusion about simultaneous optimal display (C137) is supported by the single-threshold visualization examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The LocScale procedure requires a large number of parameters and poses a risk of overfitting. The implementation has two built-in safety features: (1) the radial amplitude profile is estimated from a restrained model refinement procedure that can be assessed for overfitting, and (2) the chosen window size ensures radial averaging over extended regions, leading to implicit correlations between scale factors. Consequently, the two fitted parameters are kept locally restrained, reducing overfitting risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 address the important concern of overfitting in a method with many parameters. The acknowledgment of risk (C138) shows appropriate caution. The two safeguards (C139-C141) are clearly described and represent reasonable approaches to mitigate overfitting. The FSC validation with independent half-maps (Figure 7\u2014figure supplement 1B) provides empirical support that overfitting is not occurring. The argument is logical and supported by validation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The agreement of B-factor and local resolution estimated on a per-residue basis can be used as a low-level assessment tool for robustness of atomic B-factor refinement. In the test cases investigated, atomic B-factor refinement works acceptably up to ~8 \u00c5 resolution. Therefore, LocScale sharpening is expected to work best for near-atomic resolution cryo-EM reconstructions that allow reliable coordinate refinement including B-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 provide practical guidance on method applicability. The B-factor/resolution correlation as a validation tool (C143) is supported by Figure 3\u2014figure supplement 1G-H. The ~8 \u00c5 limit (C144) is based on empirical testing. The conclusion about optimal application range (C145) follows logically from the B-factor requirement. These represent reasonable practical limitations based on the validation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "Inspection of FSCref curves often displays notable disagreement between FSCref and half-map FSCs at low resolution despite good real-space density correlations, indicating that additional efforts are required to accurately model molecular structure factors including solvent contributions and more sophisticated B-factor models for concerted molecular motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 is supported by FSCref analysis and citations to relevant literature on structure factor modeling. The observation of disagreement at low resolution is documented, and the interpretation about need for better modeling is reasonable. However, this represents a limitation/future direction rather than a core result of the current work. The claim is supported but represents an ancillary observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "For the future of cryo-EM, atomic models will likely become more tightly integrated into the structure determination process. Up-stream parts such as orientation search may benefit from efforts that aim at iteratively improving both density map and atomic model, analogous to X-ray crystallography procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C148 are explicitly speculative ('tempting to speculate', 'may also benefit') about future developments. While the speculation is reasonable given the success of LocScale, these are not results of the current work but rather forward-looking statements. No evidence is provided to support these future applications. These should be considered speculation rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "The LocScale procedure results in more faithful density representations and overcomes previous shortcomings in dealing with maps displaying considerable resolution variation. The approach is expected to benefit a wide range of cryo-EM structures and will facilitate atomic model interpretation of the rapidly growing number of high-resolution cryo-EM density maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 provide summary conclusions. The claim about more faithful representations and overcoming resolution variation issues (C149) is well-supported by the comprehensive validation across six diverse structures. The expectation of broad benefit (C150) is reasonable extrapolation from the demonstrated results, though it contains some speculative elements about future impact. The core claims are supported by the body of evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The introduction establishes the context for the LocScale method by reviewing the history and current state of cryo-EM, the importance of atomic model building and refinement, differences between cryo-EM and crystallographic refinement, resolution estimation methods, and current limitations in map sharpening and interpretation. This background motivates the need for new approaches to optimize sharpening and better integrate model refinement with map interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 provide background context supported by extensive citations to established literature. These claims accurately represent the state of the field and identify genuine limitations in current approaches. The historical context (C1-C3), methodological descriptions (C7-C13), and identification of limitations (C15-C17, C27, C30-C31) are well-supported by citations and represent accurate characterizations of the field. This background appropriately motivates the development of LocScale.",
+    "result_type": "MINOR"
+  }
+]

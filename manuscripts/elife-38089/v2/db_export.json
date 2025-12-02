@@ -1,0 +1,1773 @@
+{
+  "submission": {
+    "id": "4c9ef9d0-e50d-4dc2-b350-2f49cf0b136a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:40:00.230059Z",
+    "updated_at": "2025-12-02T01:40:00.230059Z"
+  },
+  "content": [
+    {
+      "id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "submission_id": "4c9ef9d0-e50d-4dc2-b350-2f49cf0b136a",
+      "content_type": "manuscript",
+      "content_text": "# Receptor-mediated dimerization of JAK2 FERM domains is required for JAK2 activation\n\n## Authors\n\n- Ryan D Ferrao<sup>1</sup>\n- Heidi JA Wallweber<sup>1</sup>\n- Patrick J Lupardus<sup>1</sup> ([ORCID: 0000-0002-8662-074X](https://orcid.org/0000-0002-8662-074X)) \u2020\n\n### Affiliations\n\n1. Department of Structural Biology Genentech, Inc. South San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCytokines and interferons initiate intracellular signaling via receptor dimerization and activation of Janus kinases (JAKs). How JAKs structurally respond to changes in receptor conformation induced by ligand binding is not known. Here, we present two crystal structures of the human JAK2 FERM and SH2 domains bound to Leptin receptor (LEPR) and Erythropoietin receptor (EPOR), which identify a novel dimeric conformation for JAK2. This 2:2 JAK2/receptor dimer, observed in both structures, identifies a previously uncharacterized receptor interaction essential to dimer formation that is mediated by a membrane-proximal peptide motif called the \u2018switch\u2019 region. Mutation of the receptor switch region disrupts STAT phosphorylation but does not affect JAK2 binding, indicating that receptor-mediated formation of the JAK2 FERM dimer is required for kinase activation. These data uncover the structural and molecular basis for how a cytokine-bound active receptor dimer brings together two JAK2 molecules to stimulate JAK2 kinase activity.\n\n## Introduction\n\nJanus kinases (JAKs) are a family of multi-domain non-receptor tyrosine kinases responsible for pleiotropic regulatory effects on growth, development, immune and hematopoietic signaling (Leonard and O'Shea, 1998). The JAK family consists of four conserved members, including JAK1, JAK2, JAK3, and TYK2, which are differentially activated in response to cytokine and interferon stimulation. JAKs are constitutively bound to the intracellular domains of their cognate cytokine signaling receptors, and are activated after cytokine-mediated dimerization or rearrangement of these receptors establishes a productive receptor signaling complex (Haan et al., 2006). The canonical JAK signaling pathway initiates with kinase trans-autophosphorylation, followed by phosphorylation of receptor intracellular domains, recruitment and phosphorylation of STAT transcription factors, and translocation of active STAT dimers to the nucleus to initiate transcription of target genes. In the quarter century since their discovery, the JAKs and their cognate cytokines and receptors have emerged as critical drug targets for immune disorders as well as cancer (Kontzias et al., 2012; Liu et al., 2013).\n\nJAKs share a conserved four domain structure, with each domain playing a distinct and understood role in JAK function. The C-terminal half of the archetypical JAK contains hallmark tandem pseudokinase and kinase domains, with the C-terminal tyrosine kinase domain essential for its enzymatic activity, and the pseudokinase playing a role in regulation of the kinase domain (Saharinen et al., 2000; Saharinen and Silvennoinen, 2002). At the N-terminus, sequential FERM and SH2 domains are responsible for distinct receptor interactions. The FERM domain is itself made up of three subdomains, including a ubiquitin-like fold (F1), an acyl CoA-binding protein-like domain (F2), and a Plextrin Homology (PH)-like fold (F3). These three domains form an interwoven cloverleaf-like structure and are closely associated with the SH2 domain to form a receptor binding holodomain (Ferrao and Lupardus, 2017). Prior structures of the FERM\u2013SH2 module have identified several receptor peptide-binding sites within the FERM\u2013SH2, including a \u2018box1' binding site on the FERM F2 subdomain, and a second \u2018box2'-binding site on the SH2 domain (Wallweber et al., 2014; Ferrao et al., 2016; Zhang et al., 2016).\n\nJAK2 is in many ways the prototypical member of the JAK family, with an essential signaling role for cytokines and interferons involved growth and energy homeostasis (HGH, Leptin), hematopoiesis (GMCSF, EPO, TPO, IL-3), immunity and allergy (IL-12, IL-23, IL-5), and antiviral responses (IFN\u03b3) (Babon et al., 2014). JAK2 ablation in mice results in embryonic lethality due to disruption of erythropoiesis in utero (Neubauer et al., 1998), underlying a critical need for JAK2 signaling in the development of the hematopoietic system. JAK2 is also a proto-oncogene, with constitutively\u00a0activating pseudokinase mutations such as V617F shown to drive a subset of myelo- and lympho-proliferative disorders (Vainchenker and Constantinescu, 2013).\n\nAs the diversity of JAK2-dependent cytokines suggests, JAK2 activity can result from ligation of a number of homodimeric and heterodimeric pairs of signaling receptors. While JAK2-activating heterodimeric pairs are found in both the class I and class II cytokine receptor families (Ihle et al., 1995; Wang et al., 2009), receptors that utilize JAK2 in a homodimeric assembly are a smaller group and fall into two class I subfamilies: the growth hormone family (Ihle et al., 1995) and the \u2018tall\u2019 receptor family (Wang et al., 2009). Erythropoietin receptor (EPOR) is emblematic of the first group, and includes a canonical extracellular cytokine binding homology region (CHR) motif consisting of tandem FNIII-like domains that form a 2:1 complex with a single EPOR molecule (Syed et al., 1998). In the tall receptor family, only gp130 and the leptin receptor (LEPR) have the ability to homodimerize in response to cytokine binding (Waters and Brooks, 2015). Gp130 and LEPR contain six and seven Ig/FNIII-like domains, respectively, and require two cytokines (i.e. IL-6 or LEPR) for assembly of the signaling homodimer (Boulanger and Garcia, 2004; Mancour et al., 2012).\n\nWhile cytokine-induced dimerization of dispersed monomeric receptors is the canonical model of cytokine signaling, mounting evidence suggests that at least a subset of receptors can exist in a pre-dimerized state, and that conformational shifts in the transmembrane (TM) helices are a switch that initiates JAK activation (Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013). If cytokine-induced conformational change in the receptor dimer is indeed the trigger for JAK activation, we hypothesized that these changes may produce a dimeric JAK conformation that brings together the kinase domains to initiate trans-phosphorylation and downstream signaling. We therefore set out to structurally characterize the JAK2 FERM\u2013SH2 bound to peptides from homodimeric signaling receptors, with the goal of capturing the membrane-proximal domains of JAK2 in an activated dimeric state.\n\n## Results\n\n### Crystal structures of the JAK2 FERM-SH2 bound to EPOR and LEPR\n\nJAK FERM\u2013SH2 domains have been successfully crystallized with their receptors by either fusing the JAK-binding receptor fragment to the C-terminus of the SH2 domain (Wallweber et al., 2014; Zhang et al., 2016), or by co-expression of GST-receptor fusion proteins with the JAK FERM\u2013SH2 (Ferrao et al., 2016). To obtain structures of JAK2 with a homodimeric receptor, we utilized both methods across a number of receptors to identify the best possible samples for crystallography, with the goal of having a representative structure from both class I receptor subfamilies, the growth hormone family and the tall receptor family. Ultimately, we identified two receptors, EPOR and LEPR (Figure 1A), that produced well-behaved complexes with JAK2 for crystallization trials. For the JAK2/EPOR complex, fusion of the cytoplasmic box1 and box2 containing fragment of EPOR (Ser273-Cys338) to the C-terminus of the human JAK2 FERM\u2013SH2 (Asp36-Thr514) resulted in a protein complex that was stable and purified to high yield. During the final stages of purification, this JAK2/EPOR fusion spontaneously crystallized at neutral pH. To decrease the rate of spontaneous nucleation and allow for further concentration for crystallization trials, the pH was lowered to pH 5.5 and the protein subjected to crystallization screening. For crystallization of JAK2 with LEPR, we generated a LEPR construct containing the predicted Box1 and Box2 domains (Ser863-Glu933) with an N-terminal GST fusion tag and a TEV protease site for co-expression with the JAK2 FERM\u2013SH2. Following TEV cleavage to remove GST, the JAK2/LEPR complex was purified, concentrated, and subjected to crystallization screening. Ultimately, we were able to obtain complete native datasets for JAK2/EPOR and JAK2/LEPR that diffracted to 2.65 and 2.83 \u00c5, respectively (Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic representation of erythropoietin receptor (EPOR) and leptin receptor (LEPR) bound to JAK2. Each receptor binds to JAK2 via a box1 interaction with the FERM domain, and a box2 interaction with the SH2 domain. (b,c) The crystal structures of EPOR and LEPR bound to JAK2 at 2.65 and 2.83 \u00c5 respectively. (b) Cartoon representation of residues 279 to 335 of EPOR bound to JAK2 FERM\u2013SH2. JAK2 is shown in blue, and EPOR shown in orange. (c) Cartoon representation of residues 866 to 885 of LEPR bound to JAK2. JAK2 is shown in blue, and LEPR shown in yellow.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Alignment (centered on box1 motif) of intracellular domains of cytokine receptors from the homodimeric/growth hormone and gp130 subfamilies. Sequences start just C-terminal from the transmembrane domain, and end just after the predicted box2 motif. (b) Cartoon depiction of the JAK2/LEPR structure, showing the A and B chains (blue) dimerized with symmetry-related chains A\u2019 and B\u2019 (teal). Electron density for LEPR (contoured at 1.0\u03c3) is shown in magenta. (c) Cartoon depiction of JAK2/EPOR structure, showing the dimer composed of the A chain (blue) and B chain (teal). In the JAK2/EPOR assymetric unit, there is also a second dimer (C and D chains) that is not shown for clarity. Electron density for EPOR (contoured at 1.0\u03c3) is shown in magenta. (d) Alignment of the JAK2/LEPR A-A\u2019 and B-B\u2019 dimers. The A and B chains were aligned to generate the figure. (e) Alignment of the JAK2/EPOR A-B and C-D (chains are blue and teal, respectively) dimers. The A and C chains were aligned to generate the figure.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>JAK2/EPOR</th>\n      <th>JAK2/LEPR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td>ALS 5.0.1</td>\n      <td>SSRL 12\u20132</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>C2</td>\n      <td>P6522</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>178.49, 114.88, 179.82</td>\n      <td>263.87, 263.87, 101.08</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 93.2, 90</td>\n      <td>90, 90, 120</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>48.44\u20132.65 (2.74\u20132.65)</td>\n      <td>43.19\u20132.83 (2.93\u20132.83)</td>\n    </tr>\n    <tr>\n      <td>Rsym or Rmerge</td>\n      <td>0.073 (0.865)</td>\n      <td>0.105 (1.60)</td>\n    </tr>\n    <tr>\n      <td>I / \u03c3I</td>\n      <td>13.1 (1.3)</td>\n      <td>21.8 (2.0)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.5 (97.9)</td>\n      <td>99.6 (99.5)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>3.4 (3.3)</td>\n      <td>13.4 (13.7)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.99 (0.63)</td>\n      <td>0.99 (0.80)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>48.44\u20132.65 (2.75\u20132.65)</td>\n      <td>43.19\u20132.83 (2.93\u20132.83)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>104,921 (10,233)</td>\n      <td>49,498 (4853)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.222/0.260</td>\n      <td>0.228/0.241</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td>16599</td>\n      <td>7601</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>16454</td>\n      <td>7569</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>N/A</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>145</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td>71.32</td>\n      <td>106.19</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>71.48</td>\n      <td>106.30</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>N/A</td>\n      <td>104.80</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>53.65</td>\n      <td>74.23</td>\n    </tr>\n    <tr>\n      <td>R.M.S. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.003</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.85</td>\n      <td>0.63</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values in parentheses are for highest-resolution shell._\n\nThe overall structure of the JAK2 FERM\u2013SH2 module in both structures is similar to the \u2018apo\u2019 JAK2 FERM\u2013SH2 structure (McNally et al., 2016), with a root mean\u00a0square deviation (RMSD) for both structures of approximately 0.5 \u00c5 over 333 C\u03b1 atoms (Figure 1B\u2013C). The FERM domain adopts the expected tri-lobed architecture, comprised of three subdomains known as F1, F2, and F3. The SH2 domain of JAK2 packs against the F1 and F3 subdomains and is held in place by an elongated linker between the F3 and SH2 domains as well as a linker C-terminal to the SH2 domain. For the EPOR complex with JAK2, unambiguous electron density was present for both the box1 and box2 motifs of the EPOR receptor, along with a novel 22 residue segment in between box1 and box2 that we call the \u2018interbox\u2019 motif (Figure 1B). In all, the model contains EPOR residues 279 to 335. For the LEPR complex with JAK2, electron density was visible for residues 866 to 885, which includes the box1 motif as well as several residues N-terminal to the box1 (Figure 1C). Weak electron density for a LEPR interbox motif as well as the box2 was visible, but the quality of the density was too poor to build an acceptable model (Figure 1\u2014figure supplement 1).\n\n### EPOR and LEPR interactions with the JAK2 FERM\n\nThe box1 motif of class I cytokine receptors is defined by a conserved \u03c6-Pro-X-Pro motif shared by nearly all family members (Figure 2A and Figure 1\u2014figure supplement 1). The EPOR and LEPR box1 motifs begin with similar aliphatic residues (EPOR Ile286 and LEPR Val875), followed by the shared Pro-X-Pro motif that places both proline residues into a groove formed by the F2-\u03b12 and F2-\u03b13 of JAK2 (Figure 2B\u2013C). Downstream of the \u03c6-Pro-X-Pro motif, there is a short pseudo-helical turn in both EPOR and LEPR, positioning either EPOR Ser291 or LEPR Asn880 to hydrogen bond with JAK2 Glu176. Additional interactions are picked up between EPOR Phe293 or LEPR Trp883, which share a hydrophobic interaction surface on JAK2 near Leu184 and Phe240.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig2-v2.jpg)\n\n**Figure 2.:** (a) Alignment of the intracellular receptor sequences of human EPOR and LEPR that interact with JAK2. Sequences begin at the first residue after termination of the transmembrane domain. Sequences were aligned using the \u03c6-Pro-X-Pro motif as an anchor sequence. (b\u2013e) Detailed views of interactions between JAK2 and (b) EPOR box1, (c) LEPR box1, (d) EPOR interbox region, and (e) EPOR box2. EPOR and LEPR are colored in orange and yellow, respectively, with amino acid side chains shown as sticks. JAK2 is colored blue, with amino acid side chains shown as sticks. Key residues are labeled for reference.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a\u2013c) Cartoon models comparing the box1-binding sites in the (a) apo JAK2 (PDB 4Z32), (b) JAK2/EPOR, and (c) JAK2/LEPR structures, all shown from the same perspective. The JAK2 cartoon model is shown in dark blue, with key JAK2 residues are shown as sticks in teal. EPOR is shown in orange, and LEPR is shown in yellow. (d\u2013e) Cartoon models comparing the (d) JAK2/EPOR box1 interaction to the (e) JAK1/IFNLR1 box1 interaction (PDB 5IXD). JAK2 is shown in blue with grey transparent surface displayed, with EPOR shown in orange. JAK1 is shown in green with grey transparent surface displayed, and IFNLR1 shown in magenta. Key receptor and JAK residues are labeled and shown as stick models. JAK2 F236 and JAK1 F247 are highlighted.\n\nComparison of these receptor-bound JAK2 structures to the apo JAK2 FERM\u2013SH2 structure (McNally et al., 2016) identifies a number of side chain rotamer movements within the F2 subdomain that accompany receptor binding (Figure 2\u2014figure supplement 1). Further comparison of the EPOR and LEPR class I receptor peptides bound to JAK2 with the structure of IFNLR class II receptor peptide bound to JAK1 (Ferrao et al., 2016; Zhang et al., 2016) shows that the receptor-binding interface is similar between JAK1 and JAK2, with some notable differences (Figure 2\u2014figure supplement 1). Interestingly, the interaction site on JAK2 for the first box1 proline residue in EPOR and LEPR is occupied by IFNLR Trp257 in the JAK1 structure, while a rotamer shift in JAK1 Phe247 (equivalent to JAK2 Phe236) that facilitates interaction with IFNLR1 Pro264 would prohibit binding of the \u03c6-Pro-X-Pro motif (Figure 2\u2014figure supplement 1). Given JAK1 is capable of binding some \u03c6-Pro-X-Pro containing Class I receptors, the plasticity observed in the JAK1 and JAK2 F2 subdomain suggests significant rotamer adjustments may accompany binding to different classes of cytokine receptors.\n\nIn our JAK2/EPOR structure, we also find that the EPOR interbox region contributes a previously undescribed 22-residue folded mini-domain C-terminal to the JAK2/EPOR interaction (Figure 2D). The core of the interbox domain is a 2.5 turn alpha helix that packs several hydrophobic sidechains (Phe104, Trp307, and Leu308) against the JAK2 F2-\u03b14 helix. At the center of the interbox domain lies Trp307, which interacts with nearby residues within the helix as well as Phe293 and Leu296 at the C-terminus of the box1 motif. At the terminus of the helix, Asp312 forms a salt bridge with JAK2 Lys253, followed by a tandem tryptophan motif (Trp316/317) that occupies two different conformations within the asymmetric unit of the crystal. After this tandem tryptophan motif, we see a 10 residue stretch of amino acids that make only tangential contact with JAK2. Contact is regained with JAK2 at Pro328, followed by the binding of Leu331 and Val333 into the canonical box2 binding groove on the SH2 domain (Figure 2E), originally described for the TYK2/IFNAR1 interaction (Wallweber et al., 2014).\n\n### The EPOR and LEPR \u2018switch\u2019 motif residues bridge a JAK2 dimer\n\nAlthough the JAK2/EPOR and JAK2/LEPR complexes crystallized in two distinct crystal forms (Table 1), similarities were immediately evident after analysis of packing interactions between JAK2 monomers in the crystal lattices. The JAK2/EPOR asymmetric unit contained four JAK2 and four EPOR molecules. Each asymmetric unit contained two nearly identical dimeric 2:2 JAK2/EPOR complexes (Figure 1\u2014figure supplement 1) oriented around a pseudo-symmetric two-fold axis. The two JAK2 molecules interact through reciprocal contacts between the FERM F2 and F3 subdomains, with each receptor bridging a constitutively\u00a0bound F2 subdomain to an opposing F3 subdomain (Figure 3A\u2013B). For JAK2/LEPR, each asymmetric unit contained two JAK2 and two LEPR molecules, with each independent JAK2/LEPR monomer involved in an interaction with a crystallographic symmetry mate in a neighboring unit cell (Figure 1\u2014figure supplement 1). These intermolecular packing contacts generate two nearly identical and symmetric 2:2 receptor/JAK dimer complexes that are topologically similar to the JAK2/EPOR dimer (Figure 3C\u2013D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig3-v2.jpg)\n\n**Figure 3.:** (a) Top and (b) side views of the JAK2/EPOR dimer displayed as a cartoon model, with JAK2 monomers shown in blue and teal, and EPOR shown in orange. Inset box in (b) shows a close-up view of the EPOR switch residues Ile282 and Trp283, shown as stick models. Box1 residue Pro287 is also shown for reference. (c) Top and (d) side views of the JAK2/LEPR dimer displayed as cartoon models, with JAK2 monomers shown in blue and teal as in (a) and (b), and with LEPR shown in yellow. As in (b), the inset box shows a close-in view of the LEPR switch residues 870\u2013872, displayed as stick models. Pro876 from the LEPR box1 sequence is also shown for reference.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** To highlight the switch/F3 interaction, cartoon depictions of (a) EPOR residues Ile262 and Trp263 and (b) LEPR residues Leu870, Phe871, and Trp872 interacting with the second JAK2 F3 subdomain are shown. JAK2 is shown in light blue as a cartoon model with stick sidechains, and a grey transparent surface. EPOR and LEPR are shown in orange and yellow, respectively, with the key sidechains shown as stick models. (c) A comparable view of homodimeric interaction between Focal Adhesion Kinase FERM F3 residue Trp266 and an opposing F3 subdomain is displayed. The FAK F3 subdomain is shown in purple as a cartoon with stick sidechains displayed, and the interacting F3 loop containing Trp266 is shown as a light pink cartoon, with Trp266 shown as a stick model. (d) The bridged dimer interaction seen between chain A and chain B in the JAK2/EPOR assymetric unit are shown. For the JAK2 on the left, shown in light teal, grey transparent surface is also displayed to better highlight the boundaries between the JAK2 molecules. EPOR is shown in orange, with key residues labeled and shown as green stick models. (e) A similar interaction interface for JAK2/LEPR chain A and its symmetry related molecule are shown. Only one interface is shown because the second is a symmetry related mirror image. JAK2 is shown as in (d), with LEPR shown in yellow with key residues labeled and highlighted in green as stick models.\n\nThe EPOR and LEPR fragments co-crystallized with JAK2 were designed to begin immediately after the transmembrane domain, and in both cases, residues within this membrane proximal receptor segment bridge the interaction with the second JAK2 molecule in the dimer. For EPOR, this segment has been previously branded the \u2018switch\u2019 region, with several residues within the segment required for JAK activation (Constantinescu et al., 2001; Huang et al., 2001). Both the JAK2/EPOR and JAK2/LEPR crystal structures show that this switch region interaction is mediated by hydrophobic residues inserting into the same pocket on the PH-like F3 subdomain of the JAK2 FERM. In addition, the switch residues in EPOR and LEPR are similarly positioned in sequence just N-terminal to the box1 motif (Figure 2A), an area that is highly enriched in aromatic residues in other cytokine receptors (Figure 1\u2014figure supplement 1). For EPOR, the key switch region contact residues are Ile282 and Trp283 (Figure 3B), and for LEPR the key contact residues are Leu870, Phe871, and Trp872 (Figure 3D). The receptor-binding pocket on the F3 subdomain is created by the intersection of the \u03b21-\u03b24 sheet and \u03b27 strand, and is lined on one side by a \u03b23 strand tryptophan residue (JAK2 Trp298) that is conserved among JAK family members (Figure 3\u2014figure supplement 1). EPOR Ile282 and Trp283 insert directly into this F3 pocket, while for LEPR Leu870 inserts into the pocket and Trp872 makes an edge-face \u03c0-\u03c0 interaction with the opposite face of JAK2 Trp298. This pocket on the PH-like F3 subdomain is also the conserved interaction site for inositol phosphate headgroups in a number of classical PH domains (Lemmon, 2007), and facilitates dimerization of Focal Adhesion Kinase (FAK) FERM domains via a topologically similar tryptophan-mediated interaction (Brami-Cherrier et al., 2014) (Figure 3\u2014figure supplement 1).\n\nWhile the contact sites for the EPOR and LEPR switch residues on the JAK2 F3 subdomain are similar, the contacts between the JAK2 F2 and F3 subdomains are unique between the two complexes. This is primarily due to the different contact angles for each complex, with each JAK2 in the EPOR complex opposed at approximately 120\u00b0, versus each JAK2 in the LEPR complex opposed at approximately 180\u00b0 (Figure 3B,D). In the JAK2/EPOR complex the one significant contact between JAK2 molecules is a salt bridge between Glu173 in F2 \u03b12 helix, and Arg300 in the opposing F3 \u03b23 strand (Figure 3\u2014figure supplement 1). In the JAK2/LEPR structure, there are a number of contacts between the F2 and F3 subdomains (Figure 3\u2014figure supplement 1). Instead of forming a salt bridge with the opposing JAK2 F2, Arg300 is folded back and forms an intra-domain ionic pairing with F3 Glu274. JAK2 F3 Asp313 forms a polar contact with the backbone amide of F2 His172, and the sidechains of His172 and His222 in the F2 subdomain intercalate into the interface between LEPR and the two JAK2 molecules (Figure 3\u2014figure supplement 1). These differing JAK2 F2/F3 dimer contacts in the EPOR and LEPR structures highlight the permissiveness of the JAK2\u2013JAK2 interface, and suggest the driving force for dimerization is receptor-mediated contact with the opposing JAK2 molecule. Importantly, this dimeric JAK2/receptor conformation was only observed in the context of a crystal lattice formed at high-protein concentration, and we were unable to reconstitute this dimer in solution. This is likely due to a low-affinity between the soluble JAK FERM\u2013SH2/receptor monomers, which would normally encounter one another in the context of a membrane tethered and conformationally restricted receptor dimer.\n\n### The switch motif is dispensable for JAK2 binding, but essential for STAT phosphorylation\n\nBased on prior studies suggesting that the switch region is essential for signaling but not JAK binding (Constantinescu et al., 2001; Huang et al., 2001; Haan et al., 2002), we hypothesized that the JAK dimers observed in our crystal structures represent functional signaling complexes, with switch-mediated dimer formation required for JAK activation. To first interrogate the role of LEPR switch residues on binding to JAK2, we utilized BioLayer Interferometry (BLI) to alanine-scan the interaction between JAK2 and biotinylated LEPR peptides generated by in vitro translation. Wild-type LEPR peptide bound to JAK2 with an equilibrium affinity constant (KD) of 18.7\u00a0\u00b1\u00a01.3 \u03bcM (Figure 4 and Figure 4\u2014figure supplement 1). When alanine point mutations in box1 residues Pro876, Pro878, Asn880, and Trp883 were tested, we found these mutations strongly reduced the affinity of JAK2 for LEPR. Yet when we tested alanine mutations in juxtamembrane residues between Lys869 and Asp874, including the switch contact residues Phe871 and Trp872, these peptides retained affinity for JAK2. These results indicate that the switch residues in LEPR are not required for JAK2 binding. We also attempted to perform these experiments on EPOR, but were unable to obtain appropriate levels of in vitro translation of EPOR or sufficiently solubilize synthesized EPOR peptides in aqueous buffer for BLI assays (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig4-v2.jpg)\n\n**Figure 4.:** Biolayer Interferometry was used to measure equilibrium affinity constants (KD) for the binding of in vitro translated human LEPR (residues 863\u2013933) containing the listed mutations to wild-type JAK2 FERM\u2013SH2 protein (residues 36\u2013514). The KD\u00a0\u00b1\u00a0standard error of three replicate experiments is represented as a bar graph.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) SDS-PAGE gel of in vitro translated receptor peptides. EPOR and LEPR lanes are highlighted in red. (b\u2013c) Affinity plots used to calculate steady state affinity (KD) values for the interaction between JAK2 and biotinylated LEPR peptides (residues 863\u2013933) that contained alanine mutations as the listed positions. Circles and error bars depict the mean response\u00a0\u00b1\u00a0SEM for three independent experiments. The\u00a0\u00b1\u00a0value associated with each calculated KD is a measure of how well that parameter is defined by the model fitting procedure for that dataset. (d) Raw sensorgram data for representative JAK2/LEPR BLI experiments.\n\nWe then tested the effect of switch region and box1 alanine mutations on JAK2 activity in the murine Ba/F3 cell line. Stably transfected Ba/F3 cells expressing the murine leptin receptor (LEPR) or erythropoietin receptor (EPOR) were generated with mutations in the switch region or box1 motif. Importantly, human and murine EPOR and LEPR share 100% identity in the switch and box1 regions, with slightly altered residue numbering (Figure 5\u2014figure supplement 1). Each cell line was assayed for surface expression of EPOR and LEPR by flow cytometry, and expression of both wild-type and mutant receptors was similar for all cell lines (Figure 5\u2014figure supplement 1). Cells were then starved, stimulated with EPO or LEPR, and assayed for STAT5 or STAT3 phosphorylation by phospho-flow cytometry. Cells expressing wild-type EPOR exhibited increased levels of phosphorylated STAT5 (pSTAT5) when stimulated with EPO (Figure 5A), and likewise, stimulation of cells expressing wild-type LEPR with leptin resulted in increased levels of phosphorylated STAT3 (pSTAT3) (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig5-v2.jpg)\n\n**Figure 5.:** (a,b) Stable Ba/F3 cell lines expressing wild-type, full length mouse EPOR or LEPR were generated and analyzed for STAT phosphorylation by flow cytometry after stimulation with EPO or leptin. (a) Representative plots comparing phospho-STAT5 staining of parental Ba/F3 cells or Ba/F3 cells expressing EPOR. Cells were stimulated with 1 nM mouse EPO for 15 min before fixation, staining, and analysis. (b) Representative plots comparing phospho-STAT3 staining of parental Ba/F3 cells or Ba/F3 cells expressing LEPR. Cells were stimulated with 100 pM mouse Leptin for 4 hr prior to fixation, staining, and analysis. (c) Analysis of STAT5 phosphorylation by flow cytometry for EPOR wild-type, switch region, and box1 mutants, stimulated with 1 nM EPO as in (a). Mean levels of STAT5 phosphorylation were assessed in three separate experiments, with wild-type signal representing 100% in all three experiments. (d) Analysis of STAT3 phosphorylation by flow cytometry for LEPR wild-type, switch region, and box1 mutants, stimulated with 100 pM Leptin, as in (b). Mean levels of STAT3 phosphorylation was assessed in three separate experiments, with wild-type signal representing 100% in all three experiments. Error bars represent standard error of the mean (SEM).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Alignment of human and mouse sequences for EPOR and LEPR. Note the numbering differences for mouse versus human (minus one residue for EPOR and minus two residues for LEPR). Residues in the switch region and box1, which are mutated in our experiments, are completely conserved between human and mouse. (b\u2013c) Receptor surface staining for stable cell lines expressing (b) EPOR variants and (c) LEPR variants. Plots represent cumulative events (Y axis) at or below a given staining level (X axis). (d) Representative raw flow cytometry histograms showing the phospho-STAT5 (EPOR) or phospho-STAT3 (LEPR) staining in unstimulated cells (black trace) or cells stimulated with cytokine (red trace) as described in Materials and methods.\n\nAs expected, when cells expressing box1 mutations in EPOR (P286A/P288A) or LEPR (P874A, P874A/P876A, W881A) were stimulated with EPO or Leptin, STAT phosphorylation was drastically reduced (Figure 5C\u2013D and Figure 5\u2014figure supplement 1). We then tested cell lines containing alanine mutations across the membrane-proximal region N-terminal to box1, including the JAK2 switch residues in EPOR and LEPR (Ile281/Trp282 and Leu868/Phe869/Trp870, respectively) along with solvent-facing residues both N- and C-terminal to these contact sites. When switch residues Ile281 and Trp282 in EPOR were mutated, there was a significant drop in pSTAT5 phosphorylation, with an even stronger defect seen in the double Ile281/Trp282 to alanine mutant (Figure 5C). Non-contact residues Gln279 and Lys280 did not appreciably affect STAT5 phosphorylation, and mutation of Pro283 had only a minor effect. For LEPR, mutation of switch residues Phe869 and Trp870 reduced STAT3 phosphorylation more than 50%, while the double mutation of Phe869 and Trp870 to alanine reduced signaling to levels equivalent to those seen for box1 mutants (Figure 5D). Mutation of switch residue Leu868, which is also a contact residue, had a less substantial effect on STAT3 phosphorylation when compared to Phe869 and Trp870. Mutation of solvent-facing LEPR residues Lys867 or Asp871 had only a minor effect on STAT3 phosphorylation. Based on these experiments, we conclude that interactions between EPOR and LEPR switch region residues and the JAK2 FERM F3 subdomain on an opposing JAK2 molecule are required for STAT phosphorylation, indicating that our structures represent active JAK2-receptor dimer complexes.\n\n## Discussion\n\nBased on the studies presented here, we propose a model by which receptor-mediated intracellular dimerization of the JAK2 FERM\u2013SH2 domains (Figure 6A) positions both JAK2 molecules in a conformation that enables activation of the kinase domains (Figure 6B). This model assumes that the C-terminus of the FERM\u2013SH2 is facing the cytoplasmic side, so that the linked pseudokinase/kinase module would not sterically clash with the membrane (Figure 6B). The distances between the structurally resolved C-termini (residue Asn515) of the dimerized JAK2 FERM\u2013SH2 domains in complex with EPOR and LEPR are 27 and 46 \u00c5, respectively (Figure 6\u2014figure supplement 1), indicating that the two SH2-linked pseudokinase domains would be close together upon dimerization. Given the short length of the linker between the JAK2 SH2 and pseudokinase (approximately 20 residues), this close apposition could produce a conformation capable of disrupting a pseudokinase/kinase auto-inhibitory complex (Lupardus et al., 2014; Shan et al., 2014) and permit trans-phosphorylation of the kinase activation loops to fully activate signaling. Currently, the transition of a JAK pseudokinase/kinase complex from an autoinhibited to active form is not well understood, but disruption of a trans-autoinhibited JAK2 pseudokinase/kinase dimer is also a possibility (Brooks et al., 2014; Varghese et al., 2014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig6-v2.jpg)\n\n**Figure 6.:** (a) Schematic diagram showing a top view of the JAK2/EPOR dimer, with the EPOR switch regions engaged and transmembrane (TM) domains displayed. (b) Schematic representation of the activation of JAK2 upon EPO-induced EPOR TM rearrangement and JAK2 dimerization.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38089/elife-38089-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) An \u2018underside\u2019 view of the JAK2/EPOR (left) and JAK2/LEPR (right) dimers to illustrate the distance between the C-termini (residue 515) of the two JAK2 SH2 domains. Each JAK2 is shown as a cartoon and colored in rainbow from N terminus (blue) to C-terminus (red). EPOR and LEPR are shown as orange and yellow surfaces, respectively. (b) \u2018Top\u2019 views of JAK2/EPOR (left) and JAK2/LEPR (right) to illustrate the distance between EPOR Trp283 residues or LEPR Trp872 residues in the two dimers. JAK2 monomers are colored in dark and light blue, and EPOR and LEPR are colored in orange and yellow, as above.\n\nOur studies performed in stably transfected Ba/F3 cells show that disruption of the JAK2/EPOR or JAK2/LEPR dimer interfaces by mutation of the receptor switch residues renders the associated JAK2 molecules inactive, while mutation of these same\u00a0residues (at least for JAK2/LEPR) does not significantly alter the\u00a0in vitro\u00a0receptor affinity for JAK2. The ability of these switch mutations to\u00a0\u2018decouple\u2019\u00a0downstream STAT phosphorylation from JAK2/receptor binding is key evidence supporting the functional relevance of the dimeric JAK/receptor conformations seen in our structures. While STAT phosphorylation is generally regarded as a marker of JAK activation, it remains an indirect measure of JAK kinase activity. However, our data corroborate results published by Constantinescu and colleagues that describe the EPOR/JAK2 interaction (Constantinescu et al., 2001;\u00a0Huang et al., 2001). In these studies, it was shown that mutation of EPOR switch region residues Ile257 and Trp258 was able to disconnect EPO-dependent JAK2 phosphorylation and cell growth from JAK2-dependent EPOR cell surface expression. Another study using IL5R-gp130 receptor chimeras to assess JAK1 activation demonstrated that mutation of a switch region tryptophan from the gp130 intracellular domain (Trp562) disrupted JAK1 signaling, yet did not affect JAK1 co-immunprecipitation with the chimeric receptor (Haan et al., 2002). These parallel results, obtained in three receptor systems utilizing two different JAKs, firmly substantiate the hypothesis that juxtamembrane switch residues play a key role in JAK activation.\n\nThe FERM domain is a remarkably prolific protein-protein interaction module (Ferrao and Lupardus, 2017), and the identification of new cytokine receptor interactions with the JAK2 PH-like (F3) subdomain adds to this compendium. The switch residue binding site on the F3 subdomain is typically recognized as the binding pocket for phosphatidyl-inositol triphosphate (PIP3) headgroups in PH domain-containing kinases such as AKT and BTK (Baraldi et al., 1999; Thomas et al., 2002). In addition, Focal Adhesion Kinase, which contains a FERM domain, has also been shown to depend on its F3 subdomain to mediate dimerization and activation (Brami-Cherrier et al., 2014). FAK dimerization is mediated by symmetric exchange of tryptophan (Trp266) residues found in the F3 \u03b21/\u03b22 loop, with each tryptophan sidechain interacting with the opposite PH-like domain in a similar manner to EPOR and LEPR switch residues (Figure 3\u2014figure supplement 1). Given the key role of the PH domains in function of a number of kinases, disruption of PH-mediated interactions by small molecule inhibitors has been proposed as a potential approach for inhibition (Miao et al., 2010). The mechanistic insights described here suggest targeting the switch-binding pocket on a JAK PH-like domain could be a novel approach for pharmacological inhibition of JAK signaling.\n\nCytokine-mediated reorientation of receptor transmembrane (TM) sequences into a specific \u2018activated\u2019 conformation has previously been suggested as an important trigger for JAK signaling (Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013; Brown et al., 2005; Staerk et al., 2011). Recent studies of growth hormone receptor (GHR) suggest that growth hormone binding induces a transition from a parallel to a crossed-over TM dimer conformation which physically separates the JAK2-binding receptor box1 sequences (Brooks et al., 2014). Other work on EPOR and the thrombopoietin receptor (TPOR) has also suggested that TM dimer tilt angle may play a role in cytokine-induced JAK2 activation (Defour et al., 2013; Seubert et al., 2003). In our structures, we find a C\u03b1-C\u03b1 distance between the switch tryptophan residues in the EPOR (Trp283) and LEPR (Trp872) dimers of approximately 45 \u00c5 (Figure 6\u2014figure supplement 1), suggesting a parallel TM dimer may not be sufficient to bridge the distance between these two interaction sites. Instead, a specific ligand-induced crossed-over or asymmetric TM dimer conformation could trigger switch region binding to the opposing F3 subdomain, and subsequent formation of the JAK2 dimer as we see in our structures. The requirement of a specific TM conformation for maximal JAK activation can also help explain data obtained using receptor dimerization methods such as antibodies (Li et al., 2013; Kai et al., 2008; M\u00fcller-Newen et al., 2000; Zhang et al., 2012), peptides (Livnah et al., 1996), diabodies (Moraga et al., 2015; Nakano et al., 2009), and engineered cytokines (Moraga et al., 2017; Rafei et al., 2007). While these non-natural means of dimerization do engage JAK signaling pathways, JAK kinase activity, as measured by receptor or STAT phosphorylation, is rarely induced at the same maximal levels seen for the native ligands. These findings correlate with studies that show that JAK activation is sensitive, but not entirely disrupted, by changing the juxtamembrane peptide length by adding alanine residues (Constantinescu et al., 2001; Greiser et al., 2002). Atypical TM conformations produced using surrogate dimerizing agents could plausibly alter the structure and kinetics of JAK dimer formation, producing unique levels of JAK activation and varied downstream signaling outputs (Moraga et al., 2015, 2017; Syed et al., 1998).\n\nA number of studies on the EPOR/JAK2 and gp130/JAK1 systems have suggested that the receptor juxtamembrane region takes on a specific helical conformation important for maximal JAK activation (Constantinescu et al., 2001; Seubert et al., 2003; Li et al., 2014; Greiser et al., 2002). While we do not see a helical conformation for the juxtamembrane peptides in our EPOR or LEPR structures, the receptor peptides used in our studies do not include a TM segment, which would likely anchor the juxtamembrane helices in place. The movement of a rigid pair of TM/juxtamembrane helices following cytokine engagement remains a plausible means for a ligand-bound receptor to enforce a specific conformation compatible with the JAK2 dimeric complexes presented here. While our structures cannot fully refute alternative scenarios such as a requirement for the switch residues in \u2018active state\u2019 dimerization of the receptor juxtamembrane regions, the evidence provided by our two dimeric JAK2 structures with similar architecture along with supporting functional data strongly suggests the presence of a JAK2 dimer in the context of an active cytokine receptor complex. A high-resolution structure of an active JAK-bound receptor signaling complex in the membrane will be required to fully describe the interplay between JAK and receptor subunits.\n\nIn our two structures, we see the JAK2/EPOR and JAK2/LEPR dimers interface at different angles. Currently, we are unable to ascertain whether these differing angles are due to crystal packing or are a result of differences in the receptor sequences between EPOR and LEPR. Regardless, the flexibility of the JAK2\u2013JAK2 interface seen in these two examples suggests that contact between the two JAKs is not required for dimerization and that the receptor switch residues instead drive dimer formation. Given that most cytokine receptor signaling dimers consist not of homodimeric pairs, but instead involve two unique receptor chains uniting two unique JAKs (i.e. JAK1/JAK2), a lack of specific contacts between the dimerized JAKs may be a feature to preserve the modularity of the JAK system. Receptor-driven dimerization would allow for receptor sequence variation to fine-tune JAK dimer formation and binding affinity to regulate kinase signaling strength. Our working model presented here further illuminates the inherent modularity and flexibility found in the JAK-coupled receptor systems, which underlies their propagation and success as key signaling nodes in higher eukaryotes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identification</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Mus musculus)</td>\n      <td>Erythropoietin</td>\n      <td>R and D systems</td>\n      <td>959-ME</td>\n      <td>Concentration (1 nM)</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Mus musculus)</td>\n      <td>Leptin</td>\n      <td>R and D systems</td>\n      <td>498-OB</td>\n      <td>Concentration (100 pM)</td>\n    </tr>\n    <tr>\n      <td>Antibody (Capra aegagrus)</td>\n      <td>Anti-human leptin receptor polyclonal antibody</td>\n      <td>R and D systems</td>\n      <td>AF497</td>\n      <td>Concentration (12.5 ng/uL)</td>\n    </tr>\n    <tr>\n      <td>Antibody (Equus africanus)</td>\n      <td>NorthernLights NL637- conjugated anti-goat monoclonal secondary antibody</td>\n      <td>R and D systems</td>\n      <td>NL002</td>\n      <td>Dilution (1:200)</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Mus musculus)</td>\n      <td>Epo-Fc fusion</td>\n      <td>Abcam</td>\n      <td>ab170076</td>\n      <td>Concentration (12.5 ng/uL)</td>\n    </tr>\n    <tr>\n      <td>Antibody (Mus musculus)</td>\n      <td>Anti-human phospho-Stat3 monoclonal antibody</td>\n      <td>eBioscience/ ThermoFisher</td>\n      <td>17-9033-41</td>\n      <td>Dilution (1:40)</td>\n    </tr>\n    <tr>\n      <td>Antibody (Mus musculus)</td>\n      <td>Anti-human phospho-Stat5 monoclonal antibody</td>\n      <td>eBioscience/ ThermoFisher</td>\n      <td>25-9010-42</td>\n      <td>Dilution (1:40)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Ni-NTA Superflow resin</td>\n      <td>Qiagen</td>\n      <td>30430</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Glutathione Sepharose 4B resin</td>\n      <td>GE healthcare</td>\n      <td>17075605</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 200 Hi-load 16/60 column</td>\n      <td>GE healthcare</td>\n      <td>28989335</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDTA-free protease inhibitors</td>\n      <td>Roche</td>\n      <td>11836170001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BirA biotinylation kit</td>\n      <td>Avidity</td>\n      <td>BirA500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuikChange II XL Site-Directed Mutagenesis Kit</td>\n      <td>Agilent</td>\n      <td>200522</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ExiProgen ProXpress PCR Template Kit</td>\n      <td>Bioneer</td>\n      <td>K-7400</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ExiProgen EC1 Protein Synthesis Kit</td>\n      <td>Bioneer</td>\n      <td>EK-77161</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RPMI-1640</td>\n      <td>produced in house</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM</td>\n      <td>produced in house</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1X Antibiotic- Antimycotic</td>\n      <td>Gibco</td>\n      <td>15240062</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1% NEAA</td>\n      <td>Gibco</td>\n      <td>11140050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TrypLE Express</td>\n      <td>Gibco</td>\n      <td>12604013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FugeneHD</td>\n      <td>Promega</td>\n      <td>E2311</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Retro-X Concentrator</td>\n      <td>Clontech/Takara</td>\n      <td>631456</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>polybrene</td>\n      <td>Millipore</td>\n      <td>TR-1003-G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Flow Cytometry Staining Buffer</td>\n      <td>ThermoFisher</td>\n      <td>00-4222-26</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody (Rattus norvegicus)</td>\n      <td>anti-mouse CD16/CD32 monoclonal antibody (BD Fc Block)</td>\n      <td>BD Bioscience</td>\n      <td>553141</td>\n      <td>Dilution (1:200)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IC-fixation buffer</td>\n      <td>ThermoFisher</td>\n      <td>00-8222-49</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nTo generate the single-chain JAK2/EPOR construct, an insert containing human EPOR box1/box2 (Ser273 to Cys338) linked to the\u00a0C-terminus of human JAK2 (Asp36 to Thr514) with an 8xGly-Ser linker was cloned into a pAC-based vector in frame with an N-terminal His6-TEV tag. Single-chain JAK2/EPOR baculovirus was then used to infect T.ni cells for 48 hr at 27\u00b0C. For the JAK2/LEPR complex, human JAK2 FERM\u2013SH2 (Asp36 to Thr514) with an N-terminal His6-TEV tag and human LEPR box1/box2 (Ser863 to Glu933) with a TEV cleavable N-terminal GST tag were cloned into pAC-based insect cell expression vectors. To obtain the JAK2/LEPR complex, Sf9 cells were co-infected with JAK2 and LEPR baculoviruses and grown for 72 hr at 27\u00b0C.\n\nTo purify the JAK2/EPOR single chain, insect cells were harvested by centrifugation and resuspended in lysis buffer containing 50 mM Hepes pH 7.2, 500 mM NaCl, 10% glycerol, 1 mM TCEP and 20 mM imidazole supplemented with benzonase and EDTA-free protease inhibitor tablets (Roche). All subsequent steps were carried out at 4\u00b0C. Resuspended cells were homogenized, lysed by sonication, and subjected to centrifugation at 26,000 RCF. Lysate was incubated with Ni-NTA Agarose resin (Qiagen) in batch for 1 hr. Resin was recovered by centrifugation at 800 RCF, applied to a gravity column and washed with lysis buffer. Samples were eluted with lysis buffer supplemented with 300 mM imidazole. After IMAC elution, JAK2/EPOR was applied to a Superdex 200 Hi-load 16/600 equilibrated in SEC buffer (20 mM Hepes pH 7.2, 500 mM NaCl, 10% glycerol, 1 mM TCEP). Fractions containing JAK2-EPOR were pooled and the His6 tag was cleaved overnight with TEV. The sample was then applied to Ni-NTA Agarose resin and washed with SEC buffer. Cleaved JAK2-EPOR eluted from the resin in SEC buffer supplemented with 40 mM imidazole. The sample was then concentrated and subjected to a final SEC run on a Superdex 200 Increase 10/300 equilibrated in either 10 mM Hepes pH 7.2, 200 mM NaCl, 1 mM TCEP, or 10 mM Citric acid pH 5.5, 200 mM NaCl, 1 mM TCEP. The protein was concentrated to 7 mg/mL for crystallography.\n\nFor purification of His-tagged JAK2 co-expressed with GST-LEPR, cells were harvested by centrifugation and resuspended in lysis buffer containing 50 mM Tris pH 8.5, 300 mM NaCl, 10% glycerol, 1 mM TCEP, 5 mM imidazole, and supplemented with PMSF, benzonase, and EDTA-free protease inhibitor tablets (Roche). Resuspended cells were homogenized, lysed by microfluidization, incubated with 0.2% CHAPS at 4\u00b0C for 1 hr, and subjected to centrifugation at 26,000 RCF. All subsequent steps were carried out at 4\u00b0C. Filtered lysate was incubated with Ni-NTA Superflow resin (Qiagen) in batch for 1 hr. Resin was recovered by centrifugation at 800 RCF, applied to a gravity column and washed with lysis buffer supplemented with 25 mM imidazole. Samples were eluted with lysis buffer supplemented with 300 mM imidazole. After IMAC elution, samples were concentrated and purified on a Superdex 200 Hi-load 16/600 column equilibrated in SEC buffer (25 mM Tris pH 8.5, 300 mM NaCl, 10% glycerol, 2 mM TCEP). Fractions containing JAK2/LEPR were pooled and tags cleaved overnight with TEV protease. Cleaved sample was applied to Ni-NTA Superflow resin and eluted with SEC buffer containing 40 mM imidazole. Eluted protein was applied to Glutathione Sepharose 4B resin (GE Healthcare) for removal of free GST. JAK2/LEPR was subjected to a final SEC run on a Superdex 200 Hi-load 16/600 column equilibrated in 25 mM Tris pH 8.5, 200 mM NaCl, 2% glycerol, 1 mM TCEP, followed by centrifugal concentration to 9 mg/ml for crystallography.\n\nFor Apo JAK2, the lysis and IMAC purification steps were performed as described for the JAK2/EPOR single chain construct. The IMAC elution was then applied to a Superdex 200 Hi-load 16/600 equilibrated in 20 mM Hepes pH 7.2, 500 mM NaCl, 1 mM TCEP. Fractions containing JAK2 were pooled and concentrated to 250 \u00b5M. Protein was supplemented with BSA, Tween-20, and Arginine pH 7.0 to final concentrations of 1 mg/mL, 0.05%, and 200 mM, respectively.\n\n### Protein crystallization\n\nSingle-chain JAK2/EPOR purified into a final buffer of 10 mM Hepes pH 7.2, 200 mM NaCl and 1 mM TCEP was highly insoluble, with near complete precipitation observed upon concentration. Upon further inspection with phase contrast light microscopy, the precipitation was determined to be crystalline in nature. These microcrystals were pelleted by centrifugation and dissolved by addition of 100 mM Citric acid pH 5.5. Lowering the pH enabled concentration of the protein to 7 mg/mL. After sparse matrix screening, a single initial hit was obtained in 100 mM Tris pH 8.5, 8% PEG8000. Subsequent preparations of JAK2/EPOR were subjected to final SEC in 10 mM Na Citrate pH 5.5, 200 mM NaCl, 1 mM TCEP to reduce spontaneous crystallization during purification. Diffraction quality crystals were obtained by microseeding, using the Seedbead kit (Hampton Research) into 100 mM Tris pH 7.6, 2\u20134% PEG8000. Crystals were cryoprotected in mother liquor supplemented with 30% ethylene glycol.\n\nFor crystallization of the JAK2/LEPR complex, protein was concentrated to 9 mg/mL in final SEC buffer. Diffraction quality JAK2/LEPR crystals were obtained in 0.1 M MES pH 6.5, 0.2 M MgCl2, 5\u201310% PEG4000, and 10% ethylene glycol using microseeding and PEG4000 dehydration up to 10% PEG4000. Crystals were cryoprotected in mother liquor with a final concentration of 25% ethylene glycol.\n\n### Data collection and structure determination\n\nData for JAK2/EPOR was collected at ALS beamline 5.0.1, and data for JAK2/LEPR was collected at SSRL beamline 12\u20132. All data were collected under cryo-cooled conditions (100K) and processed with with XDS and XSCALE (Kabsch, 2010). Both structures were solved by molecular replacement with the program PHASER (McCoy et al., 2007) using JAK2 FERM\u2013SH2 coordinates (McNally et al., 2016) as a search model (PDB: 4Z32). Both structures were refined by iterative rounds of simulated annealing, coordinate, and B-factor refinement using the Phenix package (Adams et al., 2010), followed by model building and adjustment using COOT (Emsley and Cowtan, 2004). The JAK2/EPOR model was refined at 2.65 \u00c5 to final R/Rfree statistics of 22.5/26.3%. Ramachandran statistics calculated by MolProbity (Davis et al., 2007) indicate that 96.4% of residues are in favored conformations. The final JAK2/EPOR model contains the following residues: JAK2 chain A (residues 35\u2013277, 283\u2013332, 336\u2013515) and EPOR chain N (residues 279\u2013335); JAK2 chain B (residues 37\u2013277, 281\u2013330, 337\u2013515) and EPOR chain O (residues 279\u2013317, 324\u2013335); JAK2 chain C (residues 35\u2013136, 140\u2013277, 283\u2013331, 337\u2013441, 447\u2013515) and EPOR chain M (residues 279\u2013322); JAK2 chain D (residues 34\u2013136, 140\u2013277, 283\u2013330, 337\u2013415, 423\u2013439, 449\u2013465, 470\u2013481, 498\u2013514) and EPOR chain P (residues 276\u2013322). The JAK2/LEPR model was refined at 2.83 \u00c5 to final R/Rfree statistics of 22.8/24.1%. Ramachandran statistics calculated by MolProbity (Davis et al., 2007) indicate that 95.6% of residues are in favored conformations. The final JAK2/LEPR model contains the following residues: JAK2 chain A (residues 38\u201347, 50\u2013103, 110\u2013276, 282\u2013329, 338\u2013515) and LEPR chain C (residues 866\u2013885); JAK2 chain B (residues 41\u201347, 51\u2013103, 110\u2013240, 244\u2013275, 284\u2013329, 339\u2013487, 490\u2013514) and LEPR chain D (residues 868\u2013885). Coordinates and structure factors have been deposited into the RCSB database as PDB ID 6E2Q (JAK2/EPOR) and PDB ID 6E2P (JAK2/LEPR). Structural figures were prepared with PyMOL (http://www.pymol.org/). Structural superpositions were carried out using the SSM algorithm from SUPERPOSE (Maiti et al., 2004).\n\n### In vitro translation (IVT) of receptor peptides\n\nConstructs encoding the cytoplasmic domain of various human cytokine receptors predicted to contain the Box1 and Box2 motifs were generated synthetically in the pIDT-SMART vector (IDT Technologies). Domain boundaries were as follows: EPOR (273-338), GHR (288-352), LEPR (863-933), IFNGR2 (272\u2013337), GMCSFR (347-400), PRLR (259-319), TSLPR (253-318), IL5R (363-420), IL23R (377-447), IL3RA (326-378), GP130 (642-700), IFNLR1 (250\u2013299). Mutant LEPR vectors were produced using the QuikChange II XL site-directed mutagenesis kit (Agilent). Templates for IVT were generated from these constructs by two rounds of PCR using the ExiProgen ProXpress PCR Template Kit. Each construct contained an N-terminal Avi tag and a C-terminal His6 tag. IVT was carried out using the ExiProgen EC1 Protein Synthesis Kit supplemented with 1.5 \u03bcg BirA (Avidity) and 33.5 \u03bcL 500 \u03bcM Biotin.\n\n### BioLayer interferometry\n\nProducts from IVT reactions were immobilized directly onto streptavidin biosensors. Apo JAK2 was purified according to the protocol described above. All JAK2 assays were performed in 20 mM Hepes pH 7.2, 500 mM NaCl, 1 mM TCEP, 1 mg/mL BSA, 0.05% Tween-20, 200 mM Arginine pH 7.0. Assays were performed in triplicate on an Octet Red384 (ForteBio) and double referenced against the buffer signal and a reference sensor. All LEPR peptide variants were loaded onto SA biosensors to a response of 0.5 nm. Binding of each LEPR variant to JAK2 was measured at JAK2 concentrations of 100.0, 33.3, 11.1, 3.70, 1.23, 0.41, and 0.14 \u03bcM. JAK2 association and dissociation steps were both 60 s, and in both cases rapid equilibrium was achieved. Double referenced response values at equilibrium were plotted as a function of concentration and fit to a global one site-specific binding model with a shared Rmax in Prism (Graphpad Software).\n\n### Ba/F3 stable cell line generation\n\nThe mouse Ba/F3 cell line used in these studies was obtained from the Genentech in house cell repository (gCELL). Prior to batch release, the cells tested negative for mycoplasma and cross-species contamination. Ba/F3 cells were cultured in RPMI-1640 supplemented with 10% heat inactivated FBS, 2 mM Glutamine, 1X Antibiotic-Antimycotic (Gibco), 10 mM Hepes pH 7.2, and 10 ng/ml IL-3. Ba/F3 cells were grown to a maximum density of 2.0 \u00d7 106 cells/mL and split to a density 0.1 \u00d7 106 cells/mL. 293 T cells were grown in DMEM supplemented with 10% FBS, 1% NEAA (Gibco), 2 mM Glutamine, 10 mM Hepes pH 7.2, and 1X Antibiotic-Antimycotic. At 80% confluence, 293 T cells were dissociated using TrypLE Express (Gibco). Both cell lines were grown in the presence of 5% CO2 at 37\u00b0C in cell culture flasks (Corning). Retroviral constructs encoding for WT murine Lepr (Met1-Val1162) or murine Epor (Met1-Ser507) with a C-terminal 3xFLAG tag were synthesized and cloned into the MigR1 vector. Mutations were obtained using the QuikChange II XL Site-Directed Mutagenesis Kit (Agilent). FuGENE HD (Promega) was used to transfect 25 \u03bcg of DNA at a 4:1 MigR1: pCL-eco ratio into 7 \u00d7 106 293 T cells plated in a T150 flask 24 hr prior. Supernatant containing virus was harvested 72 hr post-transfection, precipitated using Retro-X Concentrator (Clontech) and resuspended in 2 mL Ba/F3 media. Concentrated viral supernatant was added to 1.4 \u00d7 106 Ba/F3 cells in a total volume of 4 mL and supplemented with 6 \u00b5g/ml polybrene (Millipore). Transduced cells were bulk sorted based on GFP expression with a FACSAria (BD Biosciences) and collected into Ba/F3 conditioned media filtered through a 0.22 \u00b5m membrane.\n\n### Surface receptor staining\n\nSurface expression of Lepr was assayed by staining cells using a mouse leptin receptor antibody (R and D Systems, AF497) followed by a NorthernLights NL637-conjugated secondary antibody (R and D Systems, NL002). Surface expression of Epor was assayed using an Epo-Fc fusion (Abcam) labeled with NHS-Cy5 (Sigma). 1 \u00d7 106 Ba/F3 cells expressing Epor or Lepr variants were washed 3x and resuspended in eBioscience Flow Cytometry Staining Buffer (ThermoFisher). Prior to all staining steps, the cells were blocked with anti-mouse BD Fc Block (BD Bioscience) for 30 min on ice. Cells were then incubated with murine Lepr antibody or Cy5-Epo-Fc fusion (2.5 \u03bcg/106 cells) for 30 min on ice. For Lepr expressing cells, this was followed by another 3x wash in flow cytometry staining buffer, reblocking with anti-mouse BD Fc Block, and a 30 min incubation with NL637-conjugated secondary antibody. All samples were subjected to a final 3x wash and resuspension in 300 uL flow cytometry staining buffer. Surface staining was analyzed using an Accuri C6 flow cytometer.\n\n### Stat3/Stat5 phospho-flow cytometry\n\nFor the Lepr/Stat3 assay, 5 \u00d7 106 cells expressing wild-type or mutant Lepr receptor were washed 3x with PBS and incubated with 100 pM mouse Leptin (R and D Systems, 498-OB) in the absence of FBS and IL-3 for 4 hr at 37\u00b0C. For the Epor/Stat5 assay, 5 \u00d7 106 cells expressing wild-type or mutant Epor were starved of FBS and IL-3 for 4 hr at 37\u00b0C followed by stimulation with 1 nM mouse Erythropoietin (R and D Systems, 959-ME) for 15 min. After incubation with Leptin or Erythropoietin, cells were immediately fixed with 3 mL IC-fixation buffer (Thermo-Fisher) for 30 min at room temperature, spun down, and resuspended in 1 mL ice cold methanol. Cells were permeabilized by the addition of 1 mL ice cold methanol and 30 min incubation at 4\u00b0C. Fixed cells were stored overnight in methanol at \u221220\u00b0C. The next day, cells were pelleted, methanol removed, and cells resuspended and washed 2X in Flow Cytometry Staining buffer (Thermo-Fisher). After the second wash, cells were resuspended in staining buffer, and blocked with 1 \u00b5L Mouse BD Fc Block (BD Bioscience) for 10 min at room temperature. Cells were then stained with 5 \u00b5L of phospho-Stat3 antibody (pStat3/APC, eBioscience) or phospho-Stat5 antibody (pStat5/PE-Cy7, eBioscience) for 60 min at room temperature in the dark. Cells were washed 3X and resuspended in flow cytometry staining buffer followed by analysis using an Accuri C6 flow cytometer (BD). To account for nonspecific staining, an unstimulated control was run alongside each experiment. The average fluorescence signal of the unstimulated cells was subtracted from the average signal of the cytokine-stimulated cells, followed by normalization to the wild-type variant. All assay steps were performed in triplicate.\n",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "457050ac-206d-4b9a-8395-5f2751e80355",
+      "submission_id": "4c9ef9d0-e50d-4dc2-b350-2f49cf0b136a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38089.021](https://doi.org/10.7554/eLife.38089.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Receptor-mediated dimerization of JAK2 FERM domains is required for JAK2 activation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Yibing Shan as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jeffrey J Babon (Reviewer #2); Stefan Constantinescu (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors report two crystal structures of the JAK2 FERM/SH2 domains, one with fragments of Leptin receptor (LEPR) bound and another with fragments of Erythropoietin receptor (EPOR) bound. Although homologous FERM/SH2 structures have been reported, these structures are the first of the prototypical JAK2 protein. The authors propose that the crystal dimers they captured, in which the FERM domains are cross-linked by the juxtamembrane region of the receptors, reflect the functional dimer structures in JAK2 signaling. Consistent with this notion, it was shown that mutations at LEPR juxtamembrane region abates JAK2 signaling but does not disrupt JAK2-LEPR binding. The reviewers think these results are potentially highly important, given that there is no clear structural understanding of JAK2 activation and this is the first plausible proposal with support from crystallographic data.\n\nEssential revisions:\n\nThe reviewers raised several points that need to be addressed, which mostly concern the Discussion.\n\n1) While this study offers elegant structural validation of previous functional studies which first proposed this switch motif in EPOR, as well as demonstrating that a single EPOR binds both JAK2 FERM domains within a JAK2 dimer, it is not clear whether this crystal structure necessarily represents a fully active structure, as claimed in the Discussion (fourth paragraph), or some intermediate dimer between fully active and inactive. Without including the kinase and pseudokinase domains, it is not obvious whether this arrangement of receptor and JAK is the same when the pseudokinase domain inhibits the kinase domain or not. It would be useful to explain in the last paragraph of the Introduction how the authors envisage intracellular changes in JAK2 conformation that are required to transition two JAK2 kinases to an active state.\n\n2) The JAK2 SH2-JH2 linker is about four times as long as stated here (Discussion, first paragraph), maybe this increased inter-domain flexibility would change the model of KD/psKD auto-inhibitory complex described in this paragraph? Alternatively perhaps the authors referred to the short nJH2-JH1 linker.\n\n3) This model implies a membrane orientation of the FERM/SH2 domains by which the prominently positively charged C-terminal helical subdomain of FERM will not be in an ideal position to contact the membrane; in the meantime, the extensive regions of the FERM/SH2 domains will be in membrane contact without much sign of positive electrostatic property. This raises question as to whether this dimer represents the stable active state of JAK2.\n\n4) There could be other interpretations for the mutagenesis date at the receptor's juxtamembrane region. For instance, one alternative scenario could be that the receptor juxtamembrane regions are dimerized in the active state, and the mutations disrupt the dimerization. Excluding such possibilities would be beyond the scope of this manuscript, but they should be acknowledged and discussed.\n",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d757a1ee-dbab-4ff5-9010-8dc3b4e9dfc7",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C1",
+      "claim": "Janus kinases (JAKs) are a family of multi-domain non-receptor tyrosine kinases responsible for pleiotropic regulatory effects on growth, development, immune and hematopoietic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Janus kinases (JAKs) are a family of multi-domain non-receptor tyrosine kinases responsible for pleiotropic regulatory effects on growth, development, immune and hematopoietic signaling (Leonard and O'Shea, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Leonard and O'Shea, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "63a811f6-1032-47e3-af76-078f5b4cd1cc",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C2",
+      "claim": "The JAK family consists of four conserved members: JAK1, JAK2, JAK3, and TYK2.",
+      "claim_type": "EXPLICIT",
+      "source": "The JAK family consists of four conserved members, including JAK1, JAK2, JAK3, and TYK2, which are differentially activated in response to cytokine and interferon stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the JAK family composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "90624c8b-9eb4-4d07-b4dc-c3ad3694e653",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C3",
+      "claim": "JAKs are constitutively bound to the intracellular domains of their cognate cytokine signaling receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "JAKs are constitutively bound to the intracellular domains of their cognate cytokine signaling receptors, and are activated after cytokine-mediated dimerization or rearrangement of these receptors establishes a productive receptor signaling complex (Haan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Haan et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "e31417f9-19fb-4c61-809e-2e07178e9139",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C4",
+      "claim": "JAKs are activated after cytokine-mediated dimerization or rearrangement of receptors establishes a productive receptor signaling complex.",
+      "claim_type": "EXPLICIT",
+      "source": "JAKs are constitutively bound to the intracellular domains of their cognate cytokine signaling receptors, and are activated after cytokine-mediated dimerization or rearrangement of these receptors establishes a productive receptor signaling complex (Haan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Haan et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "62042f61-d167-4ccd-a119-83c7a232a814",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C5",
+      "claim": "The canonical JAK signaling pathway initiates with kinase trans-autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical JAK signaling pathway initiates with kinase trans-autophosphorylation, followed by phosphorylation of receptor intracellular domains, recruitment and phosphorylation of STAT transcription factors, and translocation of active STAT dimers to the nucleus to initiate transcription of target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established canonical JAK signaling pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "652e9ae8-982b-4272-9a6c-b0de371b8877",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C6",
+      "claim": "JAKs and their cognate cytokines and receptors have emerged as critical drug targets for immune disorders and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the quarter century since their discovery, the JAKs and their cognate cytokines and receptors have emerged as critical drug targets for immune disorders as well as cancer (Kontzias et al., 2012; Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kontzias et al., 2012 and Liu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "c1fdbf9d-0063-435b-b18e-c217f61b450b",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C7",
+      "claim": "JAKs share a conserved four domain structure.",
+      "claim_type": "EXPLICIT",
+      "source": "JAKs share a conserved four domain structure, with each domain playing a distinct and understood role in JAK function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about JAK protein architecture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "7a8d1983-7124-4bbd-865a-82481b53a318",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C8",
+      "claim": "The C-terminal tyrosine kinase domain is essential for JAK enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal half of the archetypical JAK contains hallmark tandem pseudokinase and kinase domains, with the C-terminal tyrosine kinase domain essential for its enzymatic activity, and the pseudokinase playing a role in regulation of the kinase domain (Saharinen et al., 2000; Saharinen and Silvennoinen, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Saharinen et al., 2000 and Saharinen and Silvennoinen, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "cb184fb0-3a1d-4325-8703-5b2f32008976",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C9",
+      "claim": "The pseudokinase domain plays a role in regulation of the kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal half of the archetypical JAK contains hallmark tandem pseudokinase and kinase domains, with the C-terminal tyrosine kinase domain essential for its enzymatic activity, and the pseudokinase playing a role in regulation of the kinase domain (Saharinen et al., 2000; Saharinen and Silvennoinen, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Saharinen et al., 2000 and Saharinen and Silvennoinen, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "7ec49854-b243-4be1-8c35-ce6105cdbbb0",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C10",
+      "claim": "The FERM domain is made up of three subdomains: F1 (ubiquitin-like fold), F2 (acyl CoA-binding protein-like domain), and F3 (Plextrin Homology-like fold).",
+      "claim_type": "EXPLICIT",
+      "source": "The FERM domain is itself made up of three subdomains, including a ubiquitin-like fold (F1), an acyl CoA-binding protein-like domain (F2), and a Plextrin Homology (PH)-like fold (F3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established structural organization of the FERM domain.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "788e0992-20d5-4629-acf9-55280d16ee14",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C11",
+      "claim": "The three FERM subdomains form an interwoven cloverleaf-like structure and are closely associated with the SH2 domain to form a receptor binding holodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "These three domains form an interwoven cloverleaf-like structure and are closely associated with the SH2 domain to form a receptor binding holodomain (Ferrao and Lupardus, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ferrao and Lupardus, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "cb2ad2d5-d320-422b-a0e2-53bf84d04d03",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C12",
+      "claim": "Prior structures of the FERM\u2013SH2 module have identified a 'box1' binding site on the FERM F2 subdomain.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior structures of the FERM\u2013SH2 module have identified several receptor peptide-binding sites within the FERM\u2013SH2, including a 'box1' binding site on the FERM F2 subdomain, and a second 'box2'-binding site on the SH2 domain (Wallweber et al., 2014; Ferrao et al., 2016; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wallweber et al., 2014; Ferrao et al., 2016; Zhang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "97554e49-c7a0-4dfa-9398-65895fa09f00",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C13",
+      "claim": "Prior structures of the FERM\u2013SH2 module have identified a 'box2'-binding site on the SH2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior structures of the FERM\u2013SH2 module have identified several receptor peptide-binding sites within the FERM\u2013SH2, including a 'box1' binding site on the FERM F2 subdomain, and a second 'box2'-binding site on the SH2 domain (Wallweber et al., 2014; Ferrao et al., 2016; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wallweber et al., 2014; Ferrao et al., 2016; Zhang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "cf25609d-0ac6-48bc-9c22-4d7a719f6346",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C14",
+      "claim": "JAK2 has an essential signaling role for cytokines and interferons involved in growth and energy homeostasis, hematopoiesis, immunity and allergy, and antiviral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "JAK2 is in many ways the prototypical member of the JAK family, with an essential signaling role for cytokines and interferons involved growth and energy homeostasis (HGH, Leptin), hematopoiesis (GMCSF, EPO, TPO, IL-3), immunity and allergy (IL-12, IL-23, IL-5), and antiviral responses (IFN\u03b3) (Babon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Babon et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "80c82168-fcab-4876-bba9-e321f5248c62",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C15",
+      "claim": "JAK2 ablation in mice results in embryonic lethality due to disruption of erythropoiesis in utero.",
+      "claim_type": "EXPLICIT",
+      "source": "JAK2 ablation in mice results in embryonic lethality due to disruption of erythropoiesis in utero (Neubauer et al., 1998), underlying a critical need for JAK2 signaling in the development of the hematopoietic system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Neubauer et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "a57f9f75-51e6-4d56-b05e-0e6700a328bb",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C16",
+      "claim": "JAK2 is a proto-oncogene with constitutively activating pseudokinase mutations such as V617F shown to drive a subset of myelo- and lympho-proliferative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "JAK2 is also a proto-oncogene, with constitutively activating pseudokinase mutations such as V617F shown to drive a subset of myelo- and lympho-proliferative disorders (Vainchenker and Constantinescu, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Vainchenker and Constantinescu, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "04a208fd-f0f1-4190-ae9c-8f12b5cefeed",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C17",
+      "claim": "Erythropoietin receptor (EPOR) contains a canonical extracellular cytokine binding homology region (CHR) motif consisting of tandem FNIII-like domains that form a 2:1 complex with a single EPOR molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Erythropoietin receptor (EPOR) is emblematic of the first group, and includes a canonical extracellular cytokine binding homology region (CHR) motif consisting of tandem FNIII-like domains that form a 2:1 complex with a single EPOR molecule (Syed et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Syed et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "4395d8b2-e173-4a4b-9b06-fe206fb6776c",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C18",
+      "claim": "Gp130 and LEPR contain six and seven Ig/FNIII-like domains, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp130 and LEPR contain six and seven Ig/FNIII-like domains, respectively, and require two cytokines (i.e. IL-6 or LEPR) for assembly of the signaling homodimer (Boulanger and Garcia, 2004; Mancour et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Boulanger and Garcia, 2004 and Mancour et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "36dc5313-f440-40b5-b0c2-c4b2f56c5abf",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C19",
+      "claim": "Gp130 and LEPR require two cytokines for assembly of the signaling homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp130 and LEPR contain six and seven Ig/FNIII-like domains, respectively, and require two cytokines (i.e. IL-6 or LEPR) for assembly of the signaling homodimer (Boulanger and Garcia, 2004; Mancour et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Boulanger and Garcia, 2004 and Mancour et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "b92b337a-27ff-470c-bcf0-ec79f1b1049b",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C20",
+      "claim": "Mounting evidence suggests that at least a subset of receptors can exist in a pre-dimerized state.",
+      "claim_type": "EXPLICIT",
+      "source": "While cytokine-induced dimerization of dispersed monomeric receptors is the canonical model of cytokine signaling, mounting evidence suggests that at least a subset of receptors can exist in a pre-dimerized state, and that conformational shifts in the transmembrane (TM) helices are a switch that initiates JAK activation (Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "c8c46415-6ceb-48d3-a6c0-ea0d30bebdc7",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C21",
+      "claim": "Conformational shifts in the transmembrane (TM) helices are a switch that initiates JAK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While cytokine-induced dimerization of dispersed monomeric receptors is the canonical model of cytokine signaling, mounting evidence suggests that at least a subset of receptors can exist in a pre-dimerized state, and that conformational shifts in the transmembrane (TM) helices are a switch that initiates JAK activation (Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "0c3051af-5d38-40a4-bed2-ba7a3495bbf6",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C22",
+      "claim": "Crystal structures of the JAK2 FERM-SH2 bound to EPOR and LEPR were obtained at 2.65 and 2.83 \u00c5 resolution, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, we were able to obtain complete native datasets for JAK2/EPOR and JAK2/LEPR that diffracted to 2.65 and 2.83 \u00c5, respectively (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "a71a5fa2-007b-46b6-a2af-9d4be7da13de",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C23",
+      "claim": "The overall structure of the JAK2 FERM\u2013SH2 module in both EPOR and LEPR structures is similar to the 'apo' JAK2 FERM\u2013SH2 structure, with an RMSD of approximately 0.5 \u00c5 over 333 C\u03b1 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structure of the JAK2 FERM\u2013SH2 module in both structures is similar to the 'apo' JAK2 FERM\u2013SH2 structure (McNally et al., 2016), with a root mean square deviation (RMSD) for both structures of approximately 0.5 \u00c5 over 333 C\u03b1 atoms (Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural comparison data and reference to McNally et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "c2e89557-423c-4f9b-bb0a-eb5f91a35213",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C24",
+      "claim": "For the EPOR complex with JAK2, unambiguous electron density was present for both the box1 and box2 motifs of the EPOR receptor, along with a novel 22 residue segment in between box1 and box2 called the 'interbox' motif.",
+      "claim_type": "EXPLICIT",
+      "source": "For the EPOR complex with JAK2, unambiguous electron density was present for both the box1 and box2 motifs of the EPOR receptor, along with a novel 22 residue segment in between box1 and box2 that we call the 'interbox' motif (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystallographic data and reference to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "2f89183c-d07f-4242-beea-780af2fa0f9e",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C25",
+      "claim": "The JAK2/EPOR model contains EPOR residues 279 to 335.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, the model contains EPOR residues 279 to 335.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the structural model data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "66abc464-4a86-4c3f-85bb-2c17300a09be",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C26",
+      "claim": "For the LEPR complex with JAK2, electron density was visible for residues 866 to 885, which includes the box1 motif as well as several residues N-terminal to the box1.",
+      "claim_type": "EXPLICIT",
+      "source": "For the LEPR complex with JAK2, electron density was visible for residues 866 to 885, which includes the box1 motif as well as several residues N-terminal to the box1 (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystallographic data and reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "b7ee0fe8-17f2-40ee-b37d-b062c669ed9d",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C27",
+      "claim": "The box1 motif of class I cytokine receptors is defined by a conserved \u03c6-Pro-X-Pro motif shared by nearly all family members.",
+      "claim_type": "EXPLICIT",
+      "source": "The box1 motif of class I cytokine receptors is defined by a conserved \u03c6-Pro-X-Pro motif shared by nearly all family members (Figure 2A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence analysis data shown in Figure 2A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "92d00ca6-09dd-474d-be3c-446645d31dc6",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C28",
+      "claim": "The EPOR and LEPR box1 motifs begin with similar aliphatic residues (EPOR Ile286 and LEPR Val875), followed by the shared Pro-X-Pro motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The EPOR and LEPR box1 motifs begin with similar aliphatic residues (EPOR Ile286 and LEPR Val875), followed by the shared Pro-X-Pro motif that places both proline residues into a groove formed by the F2-\u03b12 and F2-\u03b13 of JAK2 (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 2B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "51bd1740-6b11-4820-9404-2c17651b4d7a",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C29",
+      "claim": "The EPOR interbox region contributes a previously undescribed 22-residue folded mini-domain C-terminal to the JAK2/EPOR interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In our JAK2/EPOR structure, we also find that the EPOR interbox region contributes a previously undescribed 22-residue folded mini-domain C-terminal to the JAK2/EPOR interaction (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "672bf78d-50b4-4deb-8e47-4544c90f6890",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C30",
+      "claim": "The core of the EPOR interbox domain is a 2.5 turn alpha helix that packs several hydrophobic sidechains (Phe104, Trp307, and Leu308) against the JAK2 F2-\u03b14 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of the interbox domain is a 2.5 turn alpha helix that packs several hydrophobic sidechains (Phe104, Trp307, and Leu308) against the JAK2 F2-\u03b14 helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis of the interbox domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "a0b50e56-ae8a-4435-b644-540df3379669",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C31",
+      "claim": "The JAK2/EPOR asymmetric unit contained four JAK2 and four EPOR molecules forming two nearly identical dimeric 2:2 JAK2/EPOR complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The JAK2/EPOR asymmetric unit contained four JAK2 and four EPOR molecules. Each asymmetric unit contained two nearly identical dimeric 2:2 JAK2/EPOR complexes (Figure 1\u2014figure supplement 1) oriented around a pseudo-symmetric two-fold axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystallographic data and reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "476a71bd-e759-4f2d-8f9a-19db8626052e",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C32",
+      "claim": "The two JAK2 molecules interact through reciprocal contacts between the FERM F2 and F3 subdomains, with each receptor bridging a constitutively bound F2 subdomain to an opposing F3 subdomain.",
+      "claim_type": "EXPLICIT",
+      "source": "The two JAK2 molecules interact through reciprocal contacts between the FERM F2 and F3 subdomains, with each receptor bridging a constitutively bound F2 subdomain to an opposing F3 subdomain (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 3A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "acfe1d97-bf47-41d5-9f0c-5a2d13077c17",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C33",
+      "claim": "For JAK2/LEPR, each asymmetric unit contained two JAK2 and two LEPR molecules, with each independent JAK2/LEPR monomer involved in an interaction with a crystallographic symmetry mate in a neighboring unit cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For JAK2/LEPR, each asymmetric unit contained two JAK2 and two LEPR molecules, with each independent JAK2/LEPR monomer involved in an interaction with a crystallographic symmetry mate in a neighboring unit cell (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystallographic data and reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "a3ce238a-ad10-4f93-8640-5c8a39b3fb65",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C34",
+      "claim": "The JAK2/LEPR intermolecular packing contacts generate two nearly identical and symmetric 2:2 receptor/JAK dimer complexes that are topologically similar to the JAK2/EPOR dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "These intermolecular packing contacts generate two nearly identical and symmetric 2:2 receptor/JAK dimer complexes that are topologically similar to the JAK2/EPOR dimer (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural comparison data shown in Figure 3C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "50000fbb-dc4e-46f8-9254-6daeb04a8e8b",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C35",
+      "claim": "For EPOR, the key switch region contact residues are Ile282 and Trp283.",
+      "claim_type": "EXPLICIT",
+      "source": "For EPOR, the key switch region contact residues are Ile282 and Trp283 (Figure 3B), and for LEPR the key contact residues are Leu870, Phe871, and Trp872 (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "c067ade1-0ba1-4834-ad7b-bccc5c11a8b0",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C36",
+      "claim": "For LEPR, the key switch region contact residues are Leu870, Phe871, and Trp872.",
+      "claim_type": "EXPLICIT",
+      "source": "For EPOR, the key switch region contact residues are Ile282 and Trp283 (Figure 3B), and for LEPR the key contact residues are Leu870, Phe871, and Trp872 (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "145f889c-4a71-4c22-b22b-1a734ecd70af",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C37",
+      "claim": "The receptor-binding pocket on the F3 subdomain is created by the intersection of the \u03b21-\u03b24 sheet and \u03b27 strand, and is lined on one side by a \u03b23 strand tryptophan residue (JAK2 Trp298) that is conserved among JAK family members.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptor-binding pocket on the F3 subdomain is created by the intersection of the \u03b21-\u03b24 sheet and \u03b27 strand, and is lined on one side by a \u03b23 strand tryptophan residue (JAK2 Trp298) that is conserved among JAK family members (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis and reference to Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "374eea44-e4f6-4b6c-bc02-668a27ece541",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C38",
+      "claim": "The pocket on the PH-like F3 subdomain is the conserved interaction site for inositol phosphate headgroups in a number of classical PH domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This pocket on the PH-like F3 subdomain is also the conserved interaction site for inositol phosphate headgroups in a number of classical PH domains (Lemmon, 2007), and facilitates dimerization of Focal Adhesion Kinase (FAK) FERM domains via a topologically similar tryptophan-mediated interaction (Brami-Cherrier et al., 2014) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lemmon, 2007 and Brami-Cherrier et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "7ede91e3-0805-4e53-a678-67e6be0f7137",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C39",
+      "claim": "The pocket on the PH-like F3 subdomain facilitates dimerization of Focal Adhesion Kinase (FAK) FERM domains via a topologically similar tryptophan-mediated interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This pocket on the PH-like F3 subdomain is also the conserved interaction site for inositol phosphate headgroups in a number of classical PH domains (Lemmon, 2007), and facilitates dimerization of Focal Adhesion Kinase (FAK) FERM domains via a topologically similar tryptophan-mediated interaction (Brami-Cherrier et al., 2014) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Brami-Cherrier et al., 2014 and reference to Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "653fdaf1-f587-402d-8c3a-cd742da1ab56",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C40",
+      "claim": "Each JAK2 in the EPOR complex is opposed at approximately 120\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "This is primarily due to the different contact angles for each complex, with each JAK2 in the EPOR complex opposed at approximately 120\u00b0, versus each JAK2 in the LEPR complex opposed at approximately 180\u00b0 (Figure 3B,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis shown in Figure 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "ca9badad-92c4-462a-8c56-f249ff1deb03",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C41",
+      "claim": "Each JAK2 in the LEPR complex is opposed at approximately 180\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "This is primarily due to the different contact angles for each complex, with each JAK2 in the EPOR complex opposed at approximately 120\u00b0, versus each JAK2 in the LEPR complex opposed at approximately 180\u00b0 (Figure 3B,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis shown in Figure 3B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "213359b3-1897-4a90-b5d0-9cc0e92d7626",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C42",
+      "claim": "In the JAK2/EPOR complex, one significant contact between JAK2 molecules is a salt bridge between Glu173 in F2 \u03b12 helix and Arg300 in the opposing F3 \u03b23 strand.",
+      "claim_type": "EXPLICIT",
+      "source": "In the JAK2/EPOR complex the one significant contact between JAK2 molecules is a salt bridge between Glu173 in F2 \u03b12 helix, and Arg300 in the opposing F3 \u03b23 strand (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "0f580ddd-a2c2-4623-97c4-97bbde5820fa",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C43",
+      "claim": "Wild-type LEPR peptide bound to JAK2 with an equilibrium affinity constant (KD) of 18.7 \u00b1 1.3 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type LEPR peptide bound to JAK2 with an equilibrium affinity constant (KD) of 18.7 \u00b1 1.3 \u03bcM (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by BioLayer Interferometry data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "6dfb923c-6a37-4f6b-9fb7-a5cbd310557e",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C44",
+      "claim": "Alanine point mutations in LEPR box1 residues Pro876, Pro878, Asn880, and Trp883 strongly reduced the affinity of JAK2 for LEPR.",
+      "claim_type": "EXPLICIT",
+      "source": "When alanine point mutations in box1 residues Pro876, Pro878, Asn880, and Trp883 were tested, we found these mutations strongly reduced the affinity of JAK2 for LEPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by BioLayer Interferometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "02481b72-a5a8-483f-9731-e3e2547ac7e5",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C45",
+      "claim": "Alanine mutations in LEPR juxtamembrane residues between Lys869 and Asp874, including the switch contact residues Phe871 and Trp872, retained affinity for JAK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet when we tested alanine mutations in juxtamembrane residues between Lys869 and Asp874, including the switch contact residues Phe871 and Trp872, these peptides retained affinity for JAK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by BioLayer Interferometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "d686b8ca-43af-426a-ae3b-2222a0fbf396",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C46",
+      "claim": "The switch residues in LEPR are not required for JAK2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the switch residues in LEPR are not required for JAK2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the BioLayer Interferometry data showing retained affinity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "c0b4ab40-a17b-433e-9575-66fa17162d08",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C47",
+      "claim": "Human and murine EPOR and LEPR share 100% identity in the switch and box1 regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, human and murine EPOR and LEPR share 100% identity in the switch and box1 regions, with slightly altered residue numbering (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "6b3c6b64-4fc8-4874-a0bf-bc9291a325ec",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C48",
+      "claim": "Cells expressing wild-type EPOR exhibited increased levels of phosphorylated STAT5 (pSTAT5) when stimulated with EPO.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing wild-type EPOR exhibited increased levels of phosphorylated STAT5 (pSTAT5) when stimulated with EPO (Figure 5A), and likewise, stimulation of cells expressing wild-type LEPR with leptin resulted in increased levels of phosphorylated STAT3 (pSTAT3) (Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "79dc8d37-5527-43e7-8318-2b7be0f0686e",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C49",
+      "claim": "Stimulation of cells expressing wild-type LEPR with leptin resulted in increased levels of phosphorylated STAT3 (pSTAT3).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing wild-type EPOR exhibited increased levels of phosphorylated STAT5 (pSTAT5) when stimulated with EPO (Figure 5A), and likewise, stimulation of cells expressing wild-type LEPR with leptin resulted in increased levels of phosphorylated STAT3 (pSTAT3) (Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "91ca1322-c1be-4c24-bc20-9761ba4b47f8",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C50",
+      "claim": "When cells expressing box1 mutations in EPOR (P286A/P288A) or LEPR (P874A, P874A/P876A, W881A) were stimulated with EPO or Leptin, STAT phosphorylation was drastically reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when cells expressing box1 mutations in EPOR (P286A/P288A) or LEPR (P874A, P874A/P876A, W881A) were stimulated with EPO or Leptin, STAT phosphorylation was drastically reduced (Figure 5C\u2013D and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data shown in Figure 5C\u2013D and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "ccc4423c-fdd5-4fed-809e-4ae58be7c7ec",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C51",
+      "claim": "When EPOR switch residues Ile281 and Trp282 were mutated, there was a significant drop in pSTAT5 phosphorylation, with an even stronger defect seen in the double Ile281/Trp282 to alanine mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "When switch residues Ile281 and Trp282 in EPOR were mutated, there was a significant drop in pSTAT5 phosphorylation, with an even stronger defect seen in the double Ile281/Trp282 to alanine mutant (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "4248e5b3-679a-4846-b4af-04185b880acb",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C52",
+      "claim": "Non-contact residues EPOR Gln279 and Lys280 did not appreciably affect STAT5 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-contact residues Gln279 and Lys280 did not appreciably affect STAT5 phosphorylation, and mutation of Pro283 had only a minor effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "2300c20b-922c-46e2-8c7d-dd8096bfbe21",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C53",
+      "claim": "For LEPR, mutation of switch residues Phe869 and Trp870 reduced STAT3 phosphorylation more than 50%, while the double mutation of Phe869 and Trp870 to alanine reduced signaling to levels equivalent to those seen for box1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "For LEPR, mutation of switch residues Phe869 and Trp870 reduced STAT3 phosphorylation more than 50%, while the double mutation of Phe869 and Trp870 to alanine reduced signaling to levels equivalent to those seen for box1 mutants (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "bf386f64-b15c-46db-8ebb-478cf19c6e9f",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C54",
+      "claim": "Mutation of LEPR switch residue Leu868 had a less substantial effect on STAT3 phosphorylation when compared to Phe869 and Trp870.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of switch residue Leu868, which is also a contact residue, had a less substantial effect on STAT3 phosphorylation when compared to Phe869 and Trp870.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "b65397b4-3433-410f-bd68-83d5cb5790f1",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C55",
+      "claim": "Mutation of solvent-facing LEPR residues Lys867 or Asp871 had only a minor effect on STAT3 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of solvent-facing LEPR residues Lys867 or Asp871 had only a minor effect on STAT3 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phospho-flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "33722f3c-2701-4fed-a24d-4b4bc13837c6",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C56",
+      "claim": "Interactions between EPOR and LEPR switch region residues and the JAK2 FERM F3 subdomain on an opposing JAK2 molecule are required for STAT phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these experiments, we conclude that interactions between EPOR and LEPR switch region residues and the JAK2 FERM F3 subdomain on an opposing JAK2 molecule are required for STAT phosphorylation, indicating that our structures represent active JAK2-receptor dimer complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mutagenesis and phospho-flow cytometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "6b61541d-dc92-4cc4-b3b1-652c6f7b9aac",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C57",
+      "claim": "The structures represent active JAK2-receptor dimer complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these experiments, we conclude that interactions between EPOR and LEPR switch region residues and the JAK2 FERM F3 subdomain on an opposing JAK2 molecule are required for STAT phosphorylation, indicating that our structures represent active JAK2-receptor dimer complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mutagenesis and phospho-flow cytometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "a767e6c3-dfa6-4222-9efa-7aa8ff4c1d6f",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C58",
+      "claim": "Receptor-mediated intracellular dimerization of the JAK2 FERM\u2013SH2 domains positions both JAK2 molecules in a conformation that enables activation of the kinase domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the studies presented here, we propose a model by which receptor-mediated intracellular dimerization of the JAK2 FERM\u2013SH2 domains (Figure 6A) positions both JAK2 molecules in a conformation that enables activation of the kinase domains (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on the structural and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "348848b8-3e1c-437a-ae20-30db340274fd",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C59",
+      "claim": "The distances between the structurally resolved C-termini (residue Asn515) of the dimerized JAK2 FERM\u2013SH2 domains in complex with EPOR and LEPR are 27 and 46 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The distances between the structurally resolved C-termini (residue Asn515) of the dimerized JAK2 FERM\u2013SH2 domains in complex with EPOR and LEPR are 27 and 46 \u00c5, respectively (Figure 6\u2014figure supplement 1), indicating that the two SH2-linked pseudokinase domains would be close together upon dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural measurements shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "a98ad84f-6002-4166-82ac-870bb6ae4ec1",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C60",
+      "claim": "The two SH2-linked pseudokinase domains would be close together upon dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The distances between the structurally resolved C-termini (residue Asn515) of the dimerized JAK2 FERM\u2013SH2 domains in complex with EPOR and LEPR are 27 and 46 \u00c5, respectively (Figure 6\u2014figure supplement 1), indicating that the two SH2-linked pseudokinase domains would be close together upon dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural distance measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "95171f8f-6af5-4d0b-8e29-9716efe0926f",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C61",
+      "claim": "This close apposition could produce a conformation capable of disrupting a pseudokinase/kinase auto-inhibitory complex and permit trans-phosphorylation of the kinase activation loops to fully activate signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the short length of the linker between the JAK2 SH2 and pseudokinase (approximately 20 residues), this close apposition could produce a conformation capable of disrupting a pseudokinase/kinase auto-inhibitory complex (Lupardus et al., 2014; Shan et al., 2014) and permit trans-phosphorylation of the kinase activation loops to fully activate signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference based on structural data and citations to Lupardus et al., 2014 and Shan et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "c62b347a-41ac-4d14-b9a0-c32fa6e600ca",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C62",
+      "claim": "Disruption of the JAK2/EPOR or JAK2/LEPR dimer interfaces by mutation of the receptor switch residues renders the associated JAK2 molecules inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies performed in stably transfected Ba/F3 cells show that disruption of the JAK2/EPOR or JAK2/LEPR dimer interfaces by mutation of the receptor switch residues renders the associated JAK2 molecules inactive, while mutation of these same residues (at least for JAK2/LEPR) does not significantly alter the in vitro receptor affinity for JAK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the Ba/F3 cell functional assays and BLI binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "b0b4f9c9-1a45-400c-96f9-7293fd9d6482",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C63",
+      "claim": "Mutation of LEPR switch residues does not significantly alter the in vitro receptor affinity for JAK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies performed in stably transfected Ba/F3 cells show that disruption of the JAK2/EPOR or JAK2/LEPR dimer interfaces by mutation of the receptor switch residues renders the associated JAK2 molecules inactive, while mutation of these same residues (at least for JAK2/LEPR) does not significantly alter the in vitro receptor affinity for JAK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the BLI binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "32c3a4f9-222e-4dc5-a02a-bc44445e8a22",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C64",
+      "claim": "The ability of switch mutations to 'decouple' downstream STAT phosphorylation from JAK2/receptor binding is key evidence supporting the functional relevance of the dimeric JAK/receptor conformations seen in the structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of these switch mutations to 'decouple' downstream STAT phosphorylation from JAK2/receptor binding is key evidence supporting the functional relevance of the dimeric JAK/receptor conformations seen in our structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the combined binding and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "0b2df7a1-a460-443c-b9c1-62aca1546782",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C65",
+      "claim": "Mutation of EPOR switch region residues Ile257 and Trp258 was able to disconnect EPO-dependent JAK2 phosphorylation and cell growth from JAK2-dependent EPOR cell surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data corroborate results published by Constantinescu and colleagues that describe the EPOR/JAK2 interaction (Constantinescu et al., 2001; Huang et al., 2001). In these studies, it was shown that mutation of EPOR switch region residues Ile257 and Trp258 was able to disconnect EPO-dependent JAK2 phosphorylation and cell growth from JAK2-dependent EPOR cell surface expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Constantinescu et al., 2001 and Huang et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "6333826a-c12d-4fd5-a014-cd9079d17dbb",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C66",
+      "claim": "Mutation of a switch region tryptophan from the gp130 intracellular domain (Trp562) disrupted JAK1 signaling, yet did not affect JAK1 co-immunprecipitation with the chimeric receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study using IL5R-gp130 receptor chimeras to assess JAK1 activation demonstrated that mutation of a switch region tryptophan from the gp130 intracellular domain (Trp562) disrupted JAK1 signaling, yet did not affect JAK1 co-immunprecipitation with the chimeric receptor (Haan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Haan et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "18dabbbe-c791-441d-aff1-4b08d289e2ee",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C67",
+      "claim": "The switch residue binding site on the F3 subdomain is typically recognized as the binding pocket for phosphatidyl-inositol triphosphate (PIP3) headgroups in PH domain-containing kinases such as AKT and BTK.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch residue binding site on the F3 subdomain is typically recognized as the binding pocket for phosphatidyl-inositol triphosphate (PIP3) headgroups in PH domain-containing kinases such as AKT and BTK (Baraldi et al., 1999; Thomas et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Baraldi et al., 1999 and Thomas et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "78acd822-bd77-4640-9fbe-de60aecb8506",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C68",
+      "claim": "Focal Adhesion Kinase has been shown to depend on its F3 subdomain to mediate dimerization and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Focal Adhesion Kinase, which contains a FERM domain, has also been shown to depend on its F3 subdomain to mediate dimerization and activation (Brami-Cherrier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Brami-Cherrier et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "84d00159-0dd7-4bba-b9c5-42cee1b09a3f",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C69",
+      "claim": "FAK dimerization is mediated by symmetric exchange of tryptophan (Trp266) residues found in the F3 \u03b21/\u03b22 loop, with each tryptophan sidechain interacting with the opposite PH-like domain in a similar manner to EPOR and LEPR switch residues.",
+      "claim_type": "EXPLICIT",
+      "source": "FAK dimerization is mediated by symmetric exchange of tryptophan (Trp266) residues found in the F3 \u03b21/\u03b22 loop, with each tryptophan sidechain interacting with the opposite PH-like domain in a similar manner to EPOR and LEPR switch residues (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "1298447f-117e-4e4f-a006-c0b5d5e8be59",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C70",
+      "claim": "Targeting the switch-binding pocket on a JAK PH-like domain could be a novel approach for pharmacological inhibition of JAK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanistic insights described here suggest targeting the switch-binding pocket on a JAK PH-like domain could be a novel approach for pharmacological inhibition of JAK signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference based on the structural findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "91d618d6-4eee-448e-9bec-c8ff7503d7c3",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C71",
+      "claim": "Cytokine-mediated reorientation of receptor transmembrane (TM) sequences into a specific 'activated' conformation has been suggested as an important trigger for JAK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokine-mediated reorientation of receptor transmembrane (TM) sequences into a specific 'activated' conformation has previously been suggested as an important trigger for JAK signaling (Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013; Brown et al., 2005; Staerk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Seubert et al., 2003; Brooks et al., 2014; Matthews et al., 2011; Defour et al., 2013; Brown et al., 2005; Staerk et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "2e540554-d519-4d6d-a23f-e56651f0b9d0",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C72",
+      "claim": "Growth hormone binding induces a transition from a parallel to a crossed-over TM dimer conformation which physically separates the JAK2-binding receptor box1 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies of growth hormone receptor (GHR) suggest that growth hormone binding induces a transition from a parallel to a crossed-over TM dimer conformation which physically separates the JAK2-binding receptor box1 sequences (Brooks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Brooks et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "f545492f-321c-4c2a-8f9a-9aa009c47053",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C73",
+      "claim": "There is a C\u03b1-C\u03b1 distance between the switch tryptophan residues in the EPOR (Trp283) and LEPR (Trp872) dimers of approximately 45 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structures, we find a C\u03b1-C\u03b1 distance between the switch tryptophan residues in the EPOR (Trp283) and LEPR (Trp872) dimers of approximately 45 \u00c5 (Figure 6\u2014figure supplement 1), suggesting a parallel TM dimer may not be sufficient to bridge the distance between these two interaction sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural measurements shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "9a810b3a-6042-4db8-9822-ecb20dac0359",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C74",
+      "claim": "A parallel TM dimer may not be sufficient to bridge the distance between the two switch interaction sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structures, we find a C\u03b1-C\u03b1 distance between the switch tryptophan residues in the EPOR (Trp283) and LEPR (Trp872) dimers of approximately 45 \u00c5 (Figure 6\u2014figure supplement 1), suggesting a parallel TM dimer may not be sufficient to bridge the distance between these two interaction sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural distance measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "8b7d9723-8e67-46f3-bc31-4fee061d4059",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C75",
+      "claim": "A specific ligand-induced crossed-over or asymmetric TM dimer conformation could trigger switch region binding to the opposing F3 subdomain, and subsequent formation of the JAK2 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a specific ligand-induced crossed-over or asymmetric TM dimer conformation could trigger switch region binding to the opposing F3 subdomain, and subsequent formation of the JAK2 dimer as we see in our structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "7644bec7-447a-450a-9b1a-ae842c82e961",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C76",
+      "claim": "Non-natural means of receptor dimerization using antibodies, peptides, diabodies, and engineered cytokines rarely induce JAK kinase activity at the same maximal levels seen for native ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "While these non-natural means of dimerization do engage JAK signaling pathways, JAK kinase activity, as measured by receptor or STAT phosphorylation, is rarely induced at the same maximal levels seen for the native ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies using various dimerization methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "3651a5ce-62ae-4424-a21b-545e07a3647a",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C77",
+      "claim": "JAK activation is sensitive, but not entirely disrupted, by changing the juxtamembrane peptide length by adding alanine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings correlate with studies that show that JAK activation is sensitive, but not entirely disrupted, by changing the juxtamembrane peptide length by adding alanine residues (Constantinescu et al., 2001; Greiser et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Constantinescu et al., 2001 and Greiser et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "7ead2bce-8ca5-4cc2-a470-67759a79bd0e",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C78",
+      "claim": "The receptor juxtamembrane region has been suggested to take on a specific helical conformation important for maximal JAK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies on the EPOR/JAK2 and gp130/JAK1 systems have suggested that the receptor juxtamembrane region takes on a specific helical conformation important for maximal JAK activation (Constantinescu et al., 2001; Seubert et al., 2003; Li et al., 2014; Greiser et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Constantinescu et al., 2001; Seubert et al., 2003; Li et al., 2014; Greiser et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "51bc6f16-c6a3-438f-9e36-3e38e3f1a53f",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C79",
+      "claim": "The JAK2/EPOR and JAK2/LEPR dimers interface at different angles.",
+      "claim_type": "EXPLICIT",
+      "source": "In our two structures, we see the JAK2/EPOR and JAK2/LEPR dimers interface at different angles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "f2f32156-2b4b-44a1-a2f4-18146dbdd38a",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C80",
+      "claim": "The flexibility of the JAK2\u2013JAK2 interface suggests that contact between the two JAKs is not required for dimerization and that the receptor switch residues instead drive dimer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the flexibility of the JAK2\u2013JAK2 interface seen in these two examples suggests that contact between the two JAKs is not required for dimerization and that the receptor switch residues instead drive dimer formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural observations of different dimer angles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "b57b8c2f-b0a3-4f9e-ad6f-190ea6d09db7",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C81",
+      "claim": "A lack of specific contacts between the dimerized JAKs may be a feature to preserve the modularity of the JAK system.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that most cytokine receptor signaling dimers consist not of homodimeric pairs, but instead involve two unique receptor chains uniting two unique JAKs (i.e. JAK1/JAK2), a lack of specific contacts between the dimerized JAKs may be a feature to preserve the modularity of the JAK system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "7dd263d5-c270-4904-999b-ccc34d4ceffb",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C82",
+      "claim": "Receptor-driven dimerization would allow for receptor sequence variation to fine-tune JAK dimer formation and binding affinity to regulate kinase signaling strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor-driven dimerization would allow for receptor sequence variation to fine-tune JAK dimer formation and binding affinity to regulate kinase signaling strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference based on the structural and functional findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "9d5ada22-e002-4f3c-98ee-6afc5e9cd92c",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C83",
+      "claim": "The dimeric JAK2 conformation was only observed in the context of a crystal lattice formed at high-protein concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this dimeric JAK2/receptor conformation was only observed in the context of a crystal lattice formed at high-protein concentration, and we were unable to reconstitute this dimer in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "1e576c2f-1dcf-46fc-b4ba-2d3c5a215872",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C84",
+      "claim": "The inability to reconstitute the JAK2 dimer in solution is likely due to a low-affinity between the soluble JAK FERM\u2013SH2/receptor monomers, which would normally encounter one another in the context of a membrane tethered and conformationally restricted receptor dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to a low-affinity between the soluble JAK FERM\u2013SH2/receptor monomers, which would normally encounter one another in the context of a membrane tethered and conformationally restricted receptor dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference to explain the experimental observation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "e759eabb-f112-47da-bde0-7e03de4eece6",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C85",
+      "claim": "The crystal structure of JAK2/EPOR was solved by molecular replacement using JAK2 FERM\u2013SH2 coordinates (PDB: 4Z32) as a search model.",
+      "claim_type": "EXPLICIT",
+      "source": "Both structures were solved by molecular replacement with the program PHASER (McCoy et al., 2007) using JAK2 FERM\u2013SH2 coordinates (McNally et al., 2016) as a search model (PDB: 4Z32).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the crystallographic method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "bdba93a2-6555-4435-9979-4434e8fa24a6",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C86",
+      "claim": "The JAK2/EPOR model was refined at 2.65 \u00c5 to final R/Rfree statistics of 22.5/26.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "The JAK2/EPOR model was refined at 2.65 \u00c5 to final R/Rfree statistics of 22.5/26.3%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports crystallographic refinement statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "edad64b3-cd89-478a-a9e3-556f063f38df",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C87",
+      "claim": "96.4% of residues in the JAK2/EPOR model are in favored Ramachandran conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Ramachandran statistics calculated by MolProbity (Davis et al., 2007) indicate that 96.4% of residues are in favored conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports model quality statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "f2cc295c-080a-4364-bd00-f51bfdec1473",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C88",
+      "claim": "The JAK2/LEPR model was refined at 2.83 \u00c5 to final R/Rfree statistics of 22.8/24.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "The JAK2/LEPR model was refined at 2.83 \u00c5 to final R/Rfree statistics of 22.8/24.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports crystallographic refinement statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "6e3bb175-9e91-4ef8-aa51-3f80d1028b56",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "claim_id": "C89",
+      "claim": "95.6% of residues in the JAK2/LEPR model are in favored Ramachandran conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Ramachandran statistics calculated by MolProbity (Davis et al., 2007) indicate that 95.6% of residues are in favored conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports model quality statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Crystal structures of JAK2 FERM-SH2 bound to EPOR and LEPR were solved at 2.65 \u00c5 and 2.83 \u00c5 resolution, respectively. The structures reveal that the JAK2 FERM-SH2 module is similar to the apo structure, with EPOR showing electron density for box1, box2, and a novel 22-residue 'interbox' motif, while LEPR shows density for box1 and juxtamembrane residues. Both structures exhibit good refinement statistics and model quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 and C85-C89 provide comprehensive crystallographic data including resolution, electron density maps, refinement statistics (R/Rfree), and Ramachandran statistics. The structural similarity to apo JAK2 (C23) and identification of the novel interbox motif (C24) are well-documented with appropriate references to figures and prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "69f7335d-85a2-45c8-baf0-af323281d6e8",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The box1 motif of class I cytokine receptors is defined by a conserved \u03c6-Pro-X-Pro motif. In both EPOR and LEPR structures, the box1 motifs bind to the JAK2 F2 subdomain through this conserved motif. Additionally, the EPOR structure reveals a previously undescribed 22-residue interbox domain containing a 2.5 turn alpha helix that packs hydrophobic sidechains against the JAK2 F2-\u03b14 helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by structural data shown in Figures 2A-D. The conserved \u03c6-Pro-X-Pro motif is documented across receptor families (C27), and the specific interactions for EPOR and LEPR are detailed with structural evidence (C28). The novel interbox domain discovery (C29-C30) is a significant structural finding backed by crystallographic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "ee36c197-6908-4d89-9997-c6a029d998ad",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both JAK2/EPOR and JAK2/LEPR crystal structures reveal 2:2 dimeric complexes where two JAK2 molecules interact through reciprocal contacts between FERM F2 and F3 subdomains. The receptor switch region residues (EPOR Ile282/Trp283 and LEPR Leu870/Phe871/Trp872) bridge the interaction by binding to the opposing JAK2 F3 subdomain. The two structures show different dimer angles (120\u00b0 for EPOR vs 180\u00b0 for LEPR), with distinct JAK2-JAK2 contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C42 describe the dimeric architecture observed in both crystal structures with detailed structural evidence from Figures 3A-D and supplementary figures. The identification of switch region residues and their binding to the F3 subdomain is well-documented. The different dimer angles and JAK2-JAK2 contacts are supported by structural measurements and comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "5c21df5a-f6ad-4ad3-86ef-a0dc15ba0b40",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BioLayer Interferometry experiments show that wild-type LEPR binds JAK2 with a KD of 18.7 \u00b1 1.3 \u03bcM. Alanine mutations in box1 residues (Pro876, Pro878, Asn880, Trp883) strongly reduce binding affinity, while mutations in switch region residues (Phe871, Trp872) retain affinity for JAK2, indicating that switch residues are not required for JAK2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by BLI data shown in Figure 4 and supplementary figures. The quantitative binding measurements (C43) and systematic mutagenesis data (C44-C45) provide clear evidence that box1 residues are critical for binding while switch residues are not (C46). This is a key finding that distinguishes binding from activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "724751d0-839e-4bd1-9565-6d3f2aa09155",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Phospho-flow cytometry experiments in Ba/F3 cells show that wild-type EPOR and LEPR receptors induce STAT5 and STAT3 phosphorylation upon cytokine stimulation. Box1 mutations drastically reduce STAT phosphorylation. Critically, mutations in switch region residues (EPOR Ile281/Trp282 and LEPR Phe869/Trp870) significantly reduce STAT phosphorylation, while non-contact residues have minimal effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 present comprehensive functional validation data from phospho-flow cytometry experiments shown in Figure 5. The systematic mutagenesis of switch and box1 residues, combined with quantitative STAT phosphorylation measurements, provides strong evidence that switch residues are required for signaling. The sequence conservation between human and mouse (C47) validates the experimental system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "11b0de11-abf4-4c66-8b69-285cf4807035",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The combined structural and functional data demonstrate that interactions between receptor switch region residues and the JAK2 FERM F3 subdomain on an opposing JAK2 molecule are required for STAT phosphorylation but not for JAK2 binding. This decoupling of binding from activation provides key evidence that the crystal structures represent active JAK2-receptor dimer complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C62-C64 synthesize the binding (BLI) and functional (phospho-flow) data to support the conclusion that the dimeric structures represent active complexes. The ability to decouple binding from activation through switch mutations (C62-C64) is particularly compelling evidence. This integration of structural and functional data strongly supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "35e9eec3-b78b-44b5-abf5-541161142f73",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A mechanistic model is proposed where receptor-mediated dimerization of JAK2 FERM-SH2 domains positions the two JAK2 molecules such that their C-termini (Asn515) are 27 \u00c5 (EPOR) or 46 \u00c5 (LEPR) apart, bringing the SH2-linked pseudokinase domains into close proximity. This proximity could disrupt the pseudokinase/kinase auto-inhibitory complex and enable trans-phosphorylation of kinase activation loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C61 present a mechanistic model based on structural measurements (C59) and inference (C60-C61). While the distance measurements are supported by data (Figure 6 supplement), the proposed mechanism of pseudokinase/kinase disruption (C61) is speculative and relies on citations to prior work. The model is plausible but lacks direct experimental validation of the proposed conformational changes and their effects on kinase activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "fc777933-7e20-4154-acc2-6fa4126eb5d5",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior studies by Constantinescu and colleagues on EPOR/JAK2 and studies on gp130/JAK1 chimeras showed that mutation of switch region residues disconnected JAK phosphorylation and signaling from receptor binding, corroborating the current findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 cite prior work (Constantinescu et al., 2001; Huang et al., 2001; Haan et al., 2002) that supports the functional importance of switch residues. These citations provide independent validation of the current findings across multiple receptor systems and JAK family members.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "408702c9-6f01-4aa8-8fed-ee516acc08d3",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The switch residue binding pocket on the JAK2 F3 subdomain is structurally similar to the PIP3 binding site in classical PH domains and to the dimerization interface in Focal Adhesion Kinase (FAK) FERM domains, which also uses tryptophan-mediated interactions for dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C67-C69 are supported by citations to prior structural work (Lemmon, 2007; Baraldi et al., 1999; Thomas et al., 2002; Brami-Cherrier et al., 2014) and structural comparisons shown in Figure 3 supplement. The identification of this conserved binding pocket across different protein families provides important structural context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "100411da-5bff-4304-b33e-8825fb7a1c4f",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Targeting the switch-binding pocket on the JAK F3 subdomain could be a novel approach for pharmacological inhibition of JAK signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is a speculative inference about potential therapeutic applications. While the structural findings provide a rational basis for this suggestion, no experimental validation of small molecule inhibitors or druggability assessment is provided. This represents a future direction rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "07d1f16a-f08b-4019-bf4e-681fe9de8971",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ~45 \u00c5 distance between switch tryptophan residues in the EPOR and LEPR dimers suggests that a parallel transmembrane (TM) dimer may not be sufficient to bridge this distance. Instead, a ligand-induced crossed-over or asymmetric TM dimer conformation could trigger switch region binding and JAK2 dimer formation, consistent with prior studies showing TM reorientation is important for JAK activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C75 integrate structural measurements (C73) with prior work on TM dynamics (C71-C72) to propose a model for receptor activation. While the distance measurement is supported (Figure 6 supplement), the proposed TM conformational mechanism (C74-C75) is speculative. The model is consistent with prior work but lacks direct experimental validation of TM conformations in the context of these structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "646603b4-fb19-4899-aa51-550b8e9171d9",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Non-natural receptor dimerization methods (antibodies, peptides, diabodies, engineered cytokines) rarely induce maximal JAK activation compared to native ligands. JAK activation is sensitive to juxtamembrane peptide length changes, and prior studies suggest the juxtamembrane region adopts a specific helical conformation important for maximal activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by citations to multiple prior studies examining artificial dimerization methods and juxtamembrane structure-function relationships (Constantinescu et al., 2001; Greiser et al., 2002; Seubert et al., 2003; Li et al., 2014). These observations provide context for understanding the specificity of cytokine-induced activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "3a9ef976-3f06-48da-9b17-299aedbe87ee",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The JAK2/EPOR and JAK2/LEPR dimers interface at different angles, suggesting flexibility in the JAK2-JAK2 interface. This flexibility indicates that direct JAK-JAK contacts are not required for dimerization and that receptor switch residues drive dimer formation. This lack of specific JAK-JAK contacts may preserve modularity of the JAK system, allowing receptor sequence variation to fine-tune signaling strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 are supported by structural comparisons showing different dimer angles (C79, Figure 3). The inference that receptor-driven dimerization provides modularity (C80-C82) is logical given the structural observations and the diversity of JAK-receptor pairings in biology. However, C81-C82 contain speculative elements about evolutionary design principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "1472895d-0601-4ba9-8bda-f4ba2e6dd368",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The dimeric JAK2 conformation was only observed in crystal lattices at high protein concentration and could not be reconstituted in solution, likely due to low affinity between soluble JAK FERM-SH2/receptor monomers that would normally be membrane-tethered and conformationally restricted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 acknowledge an important limitation of the structural studies. The inability to observe the dimer in solution (C83) is an experimental observation, and the proposed explanation involving membrane tethering (C84) is a reasonable inference. This limitation is appropriately discussed and does not invalidate the functional validation in cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    },
+    {
+      "id": "a47a94c0-16b4-425b-8647-fe0d70a35515",
+      "content_id": "1b3fe3c3-21f7-4d07-8ecc-84a94557c7b4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction provides established background on JAK family structure, function, signaling mechanisms, and biological importance, including the four-domain architecture, canonical signaling pathway, receptor binding sites, and the role of JAK2 in development and disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 present well-established background information supported by appropriate citations to prior literature. These claims provide necessary context for the study but do not represent novel findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:40:00.230059Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c3051af-5d38-40a4-bed2-ba7a3495bbf6",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "a71a5fa2-007b-46b6-a2af-9d4be7da13de",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "c2e89557-423c-4f9b-bb0a-eb5f91a35213",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "2f89183c-d07f-4242-beea-780af2fa0f9e",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "66abc464-4a86-4c3f-85bb-2c17300a09be",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "e759eabb-f112-47da-bde0-7e03de4eece6",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "bdba93a2-6555-4435-9979-4434e8fa24a6",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "edad64b3-cd89-478a-a9e3-556f063f38df",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "f2cc295c-080a-4364-bd00-f51bfdec1473",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "6e3bb175-9e91-4ef8-aa51-3f80d1028b56",
+      "result_id": "e2f1672b-5ff2-40d6-a3c6-e71b10c39fa3"
+    },
+    {
+      "claim_id": "b7ee0fe8-17f2-40ee-b37d-b062c669ed9d",
+      "result_id": "69f7335d-85a2-45c8-baf0-af323281d6e8"
+    },
+    {
+      "claim_id": "92d00ca6-09dd-474d-be3c-446645d31dc6",
+      "result_id": "69f7335d-85a2-45c8-baf0-af323281d6e8"
+    },
+    {
+      "claim_id": "51bd1740-6b11-4820-9404-2c17651b4d7a",
+      "result_id": "69f7335d-85a2-45c8-baf0-af323281d6e8"
+    },
+    {
+      "claim_id": "672bf78d-50b4-4deb-8e47-4544c90f6890",
+      "result_id": "69f7335d-85a2-45c8-baf0-af323281d6e8"
+    },
+    {
+      "claim_id": "a0b50e56-ae8a-4435-b644-540df3379669",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "476a71bd-e759-4f2d-8f9a-19db8626052e",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "acfe1d97-bf47-41d5-9f0c-5a2d13077c17",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "a3ce238a-ad10-4f93-8640-5c8a39b3fb65",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "50000fbb-dc4e-46f8-9254-6daeb04a8e8b",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "c067ade1-0ba1-4834-ad7b-bccc5c11a8b0",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "145f889c-4a71-4c22-b22b-1a734ecd70af",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "653fdaf1-f587-402d-8c3a-cd742da1ab56",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "ca9badad-92c4-462a-8c56-f249ff1deb03",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "213359b3-1897-4a90-b5d0-9cc0e92d7626",
+      "result_id": "ee36c197-6908-4d89-9997-c6a029d998ad"
+    },
+    {
+      "claim_id": "0f580ddd-a2c2-4623-97c4-97bbde5820fa",
+      "result_id": "5c21df5a-f6ad-4ad3-86ef-a0dc15ba0b40"
+    },
+    {
+      "claim_id": "6dfb923c-6a37-4f6b-9fb7-a5cbd310557e",
+      "result_id": "5c21df5a-f6ad-4ad3-86ef-a0dc15ba0b40"
+    },
+    {
+      "claim_id": "02481b72-a5a8-483f-9731-e3e2547ac7e5",
+      "result_id": "5c21df5a-f6ad-4ad3-86ef-a0dc15ba0b40"
+    },
+    {
+      "claim_id": "d686b8ca-43af-426a-ae3b-2222a0fbf396",
+      "result_id": "5c21df5a-f6ad-4ad3-86ef-a0dc15ba0b40"
+    },
+    {
+      "claim_id": "c0b4ab40-a17b-433e-9575-66fa17162d08",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "6b3c6b64-4fc8-4874-a0bf-bc9291a325ec",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "79dc8d37-5527-43e7-8318-2b7be0f0686e",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "91ca1322-c1be-4c24-bc20-9761ba4b47f8",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "ccc4423c-fdd5-4fed-809e-4ae58be7c7ec",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "4248e5b3-679a-4846-b4af-04185b880acb",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "2300c20b-922c-46e2-8c7d-dd8096bfbe21",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "bf386f64-b15c-46db-8ebb-478cf19c6e9f",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "b65397b4-3433-410f-bd68-83d5cb5790f1",
+      "result_id": "724751d0-839e-4bd1-9565-6d3f2aa09155"
+    },
+    {
+      "claim_id": "33722f3c-2701-4fed-a24d-4b4bc13837c6",
+      "result_id": "11b0de11-abf4-4c66-8b69-285cf4807035"
+    },
+    {
+      "claim_id": "6b61541d-dc92-4cc4-b3b1-652c6f7b9aac",
+      "result_id": "11b0de11-abf4-4c66-8b69-285cf4807035"
+    },
+    {
+      "claim_id": "c62b347a-41ac-4d14-b9a0-c32fa6e600ca",
+      "result_id": "11b0de11-abf4-4c66-8b69-285cf4807035"
+    },
+    {
+      "claim_id": "b0b4f9c9-1a45-400c-96f9-7293fd9d6482",
+      "result_id": "11b0de11-abf4-4c66-8b69-285cf4807035"
+    },
+    {
+      "claim_id": "32c3a4f9-222e-4dc5-a02a-bc44445e8a22",
+      "result_id": "11b0de11-abf4-4c66-8b69-285cf4807035"
+    },
+    {
+      "claim_id": "a767e6c3-dfa6-4222-9efa-7aa8ff4c1d6f",
+      "result_id": "35e9eec3-b78b-44b5-abf5-541161142f73"
+    },
+    {
+      "claim_id": "348848b8-3e1c-437a-ae20-30db340274fd",
+      "result_id": "35e9eec3-b78b-44b5-abf5-541161142f73"
+    },
+    {
+      "claim_id": "a98ad84f-6002-4166-82ac-870bb6ae4ec1",
+      "result_id": "35e9eec3-b78b-44b5-abf5-541161142f73"
+    },
+    {
+      "claim_id": "95171f8f-6af5-4d0b-8e29-9716efe0926f",
+      "result_id": "35e9eec3-b78b-44b5-abf5-541161142f73"
+    },
+    {
+      "claim_id": "0b2df7a1-a460-443c-b9c1-62aca1546782",
+      "result_id": "fc777933-7e20-4154-acc2-6fa4126eb5d5"
+    },
+    {
+      "claim_id": "6333826a-c12d-4fd5-a014-cd9079d17dbb",
+      "result_id": "fc777933-7e20-4154-acc2-6fa4126eb5d5"
+    },
+    {
+      "claim_id": "374eea44-e4f6-4b6c-bc02-668a27ece541",
+      "result_id": "408702c9-6f01-4aa8-8fed-ee516acc08d3"
+    },
+    {
+      "claim_id": "7ede91e3-0805-4e53-a678-67e6be0f7137",
+      "result_id": "408702c9-6f01-4aa8-8fed-ee516acc08d3"
+    },
+    {
+      "claim_id": "18dabbbe-c791-441d-aff1-4b08d289e2ee",
+      "result_id": "408702c9-6f01-4aa8-8fed-ee516acc08d3"
+    },
+    {
+      "claim_id": "78acd822-bd77-4640-9fbe-de60aecb8506",
+      "result_id": "408702c9-6f01-4aa8-8fed-ee516acc08d3"
+    },
+    {
+      "claim_id": "84d00159-0dd7-4bba-b9c5-42cee1b09a3f",
+      "result_id": "408702c9-6f01-4aa8-8fed-ee516acc08d3"
+    },
+    {
+      "claim_id": "1298447f-117e-4e4f-a006-c0b5d5e8be59",
+      "result_id": "100411da-5bff-4304-b33e-8825fb7a1c4f"
+    },
+    {
+      "claim_id": "91d618d6-4eee-448e-9bec-c8ff7503d7c3",
+      "result_id": "07d1f16a-f08b-4019-bf4e-681fe9de8971"
+    },
+    {
+      "claim_id": "2e540554-d519-4d6d-a23f-e56651f0b9d0",
+      "result_id": "07d1f16a-f08b-4019-bf4e-681fe9de8971"
+    },
+    {
+      "claim_id": "f545492f-321c-4c2a-8f9a-9aa009c47053",
+      "result_id": "07d1f16a-f08b-4019-bf4e-681fe9de8971"
+    },
+    {
+      "claim_id": "9a810b3a-6042-4db8-9822-ecb20dac0359",
+      "result_id": "07d1f16a-f08b-4019-bf4e-681fe9de8971"
+    },
+    {
+      "claim_id": "8b7d9723-8e67-46f3-bc31-4fee061d4059",
+      "result_id": "07d1f16a-f08b-4019-bf4e-681fe9de8971"
+    },
+    {
+      "claim_id": "7644bec7-447a-450a-9b1a-ae842c82e961",
+      "result_id": "646603b4-fb19-4899-aa51-550b8e9171d9"
+    },
+    {
+      "claim_id": "3651a5ce-62ae-4424-a21b-545e07a3647a",
+      "result_id": "646603b4-fb19-4899-aa51-550b8e9171d9"
+    },
+    {
+      "claim_id": "7ead2bce-8ca5-4cc2-a470-67759a79bd0e",
+      "result_id": "646603b4-fb19-4899-aa51-550b8e9171d9"
+    },
+    {
+      "claim_id": "51bc6f16-c6a3-438f-9e36-3e38e3f1a53f",
+      "result_id": "3a9ef976-3f06-48da-9b17-299aedbe87ee"
+    },
+    {
+      "claim_id": "f2f32156-2b4b-44a1-a2f4-18146dbdd38a",
+      "result_id": "3a9ef976-3f06-48da-9b17-299aedbe87ee"
+    },
+    {
+      "claim_id": "b57b8c2f-b0a3-4f9e-ad6f-190ea6d09db7",
+      "result_id": "3a9ef976-3f06-48da-9b17-299aedbe87ee"
+    },
+    {
+      "claim_id": "7dd263d5-c270-4904-999b-ccc34d4ceffb",
+      "result_id": "3a9ef976-3f06-48da-9b17-299aedbe87ee"
+    },
+    {
+      "claim_id": "9d5ada22-e002-4f3c-98ee-6afc5e9cd92c",
+      "result_id": "1472895d-0601-4ba9-8bda-f4ba2e6dd368"
+    },
+    {
+      "claim_id": "1e576c2f-1dcf-46fc-b4ba-2d3c5a215872",
+      "result_id": "1472895d-0601-4ba9-8bda-f4ba2e6dd368"
+    },
+    {
+      "claim_id": "d757a1ee-dbab-4ff5-9010-8dc3b4e9dfc7",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "63a811f6-1032-47e3-af76-078f5b4cd1cc",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "90624c8b-9eb4-4d07-b4dc-c3ad3694e653",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "e31417f9-19fb-4c61-809e-2e07178e9139",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "62042f61-d167-4ccd-a119-83c7a232a814",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "652e9ae8-982b-4272-9a6c-b0de371b8877",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "c1fdbf9d-0063-435b-b18e-c217f61b450b",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "7a8d1983-7124-4bbd-865a-82481b53a318",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "cb184fb0-3a1d-4325-8703-5b2f32008976",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "7ec49854-b243-4be1-8c35-ce6105cdbbb0",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "788e0992-20d5-4629-acf9-55280d16ee14",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "cb2ad2d5-d320-422b-a0e2-53bf84d04d03",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "97554e49-c7a0-4dfa-9398-65895fa09f00",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "cf25609d-0ac6-48bc-9c22-4d7a719f6346",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "80c82168-fcab-4876-bba9-e321f5248c62",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "a57f9f75-51e6-4d56-b05e-0e6700a328bb",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "04a208fd-f0f1-4190-ae9c-8f12b5cefeed",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "4395d8b2-e173-4a4b-9b06-fe206fb6776c",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "36dc5313-f440-40b5-b0c2-c4b2f56c5abf",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "b92b337a-27ff-470c-bcf0-ec79f1b1049b",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    },
+    {
+      "claim_id": "c8c46415-6ceb-48d3-a6c0-ea0d30bebdc7",
+      "result_id": "a47a94c0-16b4-425b-8647-fe0d70a35515"
+    }
+  ],
+  "comparisons": []
+}

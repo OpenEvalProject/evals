@@ -1,0 +1,1941 @@
+{
+  "submission": {
+    "id": "69bdcd6d-fd47-4a61-abec-dca838c42f48",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:10:15.166616Z",
+    "updated_at": "2025-12-02T01:10:15.166616Z"
+  },
+  "content": [
+    {
+      "id": "7308695c-c966-4c33-8d52-04204f924317",
+      "submission_id": "69bdcd6d-fd47-4a61-abec-dca838c42f48",
+      "content_type": "manuscript",
+      "content_text": "# A synthetic peptide that prevents cAMP regulation in mammalian hyperpolarization-activated cyclic nucleotide-gated (HCN) channels\n\n## Authors\n\n- Andrea Saponaro<sup>1</sup> ([ORCID: 0000-0001-5035-5174](https://orcid.org/0000-0001-5035-5174))\n- Francesca Cantini<sup>2</sup> ([ORCID: 0000-0003-0526-6732](https://orcid.org/0000-0003-0526-6732))\n- Alessandro Porro<sup>1</sup>\n- Annalisa Bucchi<sup>1</sup>\n- Dario DiFrancesco<sup>1</sup>\n- Vincenzo Maione<sup>4</sup> ([ORCID: 0000-0002-8229-6612](https://orcid.org/0000-0002-8229-6612))\n- Chiara Donadoni<sup>1</sup>\n- Bianca Introini<sup>1</sup>\n- Pietro Mesirca<sup>5</sup>\n- Matteo E Mangoni<sup>5</sup> ([ORCID: 0000-0002-8892-3373](https://orcid.org/0000-0002-8892-3373))\n- Gerhard Thiel<sup>7</sup>\n- Lucia Banci<sup>2</sup>\n- Bina Santoro<sup>9</sup> ([ORCID: 0000-0002-4277-1992](https://orcid.org/0000-0002-4277-1992))\n- Anna Moroni<sup>1</sup> ([ORCID: 0000-0002-1860-406X](https://orcid.org/0000-0002-1860-406X)) \u2020\n\n### Affiliations\n\n1. Department of Biosciences University of Milan Milan Italy\n2. Department of Chemistry University of Florence Florence Italy\n3. Magnetic Resonance Center University of Florence Florence Italy\n4. Interuniversity Consortium for Magnetic Resonance of Metalloproteins Sesto Fiorentino Italy\n5. Institut de G\u00e9nomique Fonctionnelle CNRS, INSERM F-34094, Universit\u00e9 de Montpellier Montpellier France\n6. Laboratory of Excellence Ion Channels Science and Therapeutics Valbonne France\n7. Department of Biology TU-Darmstadt Darmstadt Germany\n8. Institute of Neurosciences, Consiglio Nazionale delle Ricerche, Florence, Italy\n9. Department of Neuroscience Columbia University New York United States\n10. Institute of Biophysics Consiglio Nazionale delle Ricerche Milan Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nBinding of TRIP8b to the cyclic nucleotide binding domain (CNBD) of mammalian hyperpolarization-activated cyclic nucleotide-gated (HCN) channels prevents their regulation by cAMP. Since TRIP8b is expressed exclusively in the brain, we envisage that it can be used for orthogonal control of HCN channels beyond the central nervous system. To this end, we have identified by rational design a 40-aa long peptide (TRIP8bnano) that recapitulates affinity and gating effects of TRIP8b in HCN isoforms (hHCN1, mHCN2, rbHCN4) and in the cardiac current If in rabbit and mouse sinoatrial node cardiomyocytes. Guided by an NMR-derived structural model that identifies the key molecular interactions between TRIP8bnano and the HCN CNBD, we further designed a cell-penetrating peptide (TAT-TRIP8bnano) which successfully prevented \u03b2-adrenergic activation of mouse If leaving the stimulation of the L-type calcium current (ICaL) unaffected. TRIP8bnano represents a novel approach to selectively control HCN activation, which yields the promise of a more targeted pharmacology compared to pore blockers.\n\n## Introduction\n\nHyperpolarization-activated cyclic nucleotide-gated (HCN1-4) channels are the molecular correlate of the If/Ih current, which plays a key role in controlling several higher order physiological functions, including dendritic integration and intrinsic rhythmicity both in cardiac and neuronal cells (Robinson and Siegelbaum, 2003). Unique among the voltage-gated ion channel superfamily, HCN channels are modulated by the direct binding of cAMP to their cyclic nucleotide binding domain (CNBD). Binding of the cyclic nucleotide increases the channel open probability upon hyperpolarization via conformational changes in the CNBD that are propagated to the pore through the C-linker domain (DiFrancesco and Tortora, 1991; Wainger et al., 2001; Zagotta et al., 2003).\n\nIn addition to cAMP, HCN channels are regulated by TRIP8b, a brain-specific auxiliary (\u03b2) subunit, which modulates two independent features of the channel, namely trafficking and gating (Santoro et al., 2009; Zolles et al., 2009). For this dual regulation, TRIP8b binds HCN channels through two distinct sites: via the tetratricopeptide repeat (TPR) domain, which interacts with the last three amino acids (SNL) of HCN channels and regulates their trafficking; and via the TRIP8bcore domain, which interacts with the CNBD and antagonizes the effect of cAMP on the voltage dependency of the channel (Santoro et al., 2011; Han et al., 2011; Hu et al., 2013).\n\nHere, we focus our attention on the specific action of TRIP8b in preventing cAMP regulation of HCN channels. Given the brain-specific localization of TRIP8b, we posit that a TRIP8b-derived peptide drug, able to reproduce the effect of the full length protein on HCN channel gating, can be developed for orthogonal selective regulation of HCN in cells/tissues in which TRIP8b is not expressed. cAMP-dependent modulation of HCN channels underlies distinct roles of cAMP in heart rate regulation (DiFrancesco, 1993) and development of peripheral neuropathic pain (Emery et al., 2012; Herrmann et al., 2017), which can be dissected by using a TRIP8b-based tool. In this regard, peptide-based drugs (2\u201350 aa long) are emerging as a fascinating application area as they open new therapeutic possibilities with an advantage over small molecules in terms of specificity and affinity for the target (Fosgerau and Hoffmann, 2015; Henninot et al., 2018). To this end, we searched for the minimal peptide that binds to the CNBD and recapitulates the gating effect of full length TRIP8b in three HCN isoforms (HCN1, HCN2 and HCN4) and in the native If current. In previous studies, we identified the core portion of TRIP8b (TRIP8bcore, 80 aa long) that interacts with the\u00a0HCN CNBD and prevents cAMP modulation in full length channels (Santoro et al., 2011; Hu et al., 2013;\u00a0Saponaro et al., 2014). A recent paper (Lyman et al., 2017) reported an even shorter binding sequence of TRIP8b (37 aa). However, this peptide, which was identified by progressive truncation of TRIP8bcore, failed to reproduce the binding affinity of the starting construct. Moreover, evidence for activity of this peptide on HCN currents is lacking. In the present study, we adopted a structure-driven rational design approach to engineer a 40-aa long peptide, TRIP8bnano, that efficiently prevents cAMP regulation of HCN channels. The rational design of this peptide, based on secondary structure predictions and on NMR data of TRIP8bcore, was supported by an NMR-based 3D model structure of the complex formed by the TRIP8bnano peptide and CNBD of the\u00a0human HCN2 channel isoform. This structural information identifies crucial interactions between the two partners and explains both direct (Han et al., 2011; DeBerg et al., 2015;\u00a0Bankston et al., 2017) and indirect (allosteric) (Hu et al., 2013; Saponaro et al., 2014)\u00a0modes of competition between TRIP8b and cAMP for binding to the CNBD. The evidence that TRIP8bnano establishes all relevant interactions with the CNBD is reflected by the finding that, contrary to shorter core sequences (Lyman et al., 2017), it binds to the isolated CNBD with the same affinity as TRIP8bcore and acts with even higher efficacy than TRIP8bcore in preventing cAMP modulation of full length HCN channels (Hu et al., 2013). In pacemaker myocytes of the sino-atrial node (SAN), TRIP8bnano equally prevented cAMP stimulation of native f-channels leading to a 30% reduction in spontaneus firing rate.\n\nTo develop TRIP8bnano as a membrane permeable drug, we linked it with the positively charged TAT sequence (Herce et al., 2014). TAT-TRIP8bnano was tested in SAN pacemaker myocytes where its addition to the extracellular buffer prevented adrenergic stimulation of the If current leaving the activation of the L-type calcium current (ICaL) unaffected. Our study opens the possibility of selective in vivo control of the cAMP-dependent facilitation of HCN channel opening, by local supply of TAT-TRIP8bnano peptide.\n\n## Results\n\nWe have previously shown that TRIP8bcore (residues 223\u2013303 of mouse TRIP8b splice variant 1a4, hereafter TRIP8b) interacts with two elements of the isolated CNBD protein fragment from HCN channels (residues 521\u2013672 of human HCN2, hereafter CNBD): the C-helix and the N-bundle loop, a sequence connecting helix E\u2019 of the C-linker with helix A of the CNBD (Saponaro et al., 2014). Biochemical assays confirmed that each of these two elements, that\u00a0is, the N-bundle loop and C-helix, is necessary but not sufficient for binding (Saponaro et al., 2014).\n\nTo understand the interaction in atomic detail, we used solution NMR spectroscopy to characterize the structural properties of the CNBD - TRIP8bcore complex. However, the NMR spectra of TRIP8bcore showed very few signals. In order to improve the quality of the NMR spectra, we reduced the length of the TRIP8b fragment by progressively removing residues at the N- and C-termini with no predicted secondary structure. The truncated peptides were then tested for CNBD binding activity by isothermal titration calorimetry (ITC). We thus identified a 40-aa peptide (TRIP8bnano, comprising residues 235\u2013275 of TRIP8b, Figure 1A) with a binding KD of 1.5\u00a0\u00b1\u00a00.1 \u00b5M, a value similar to the KD of 1.2\u00a0\u00b1\u00a00.1 \u00b5M obtained with TRIP8bcore (Figure 1B). TRIP8bnano was therefore employed for all subsequent NMR experiments, resulting in a remarkable improvement in the spectral quality and sample stability.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig1-v2.jpg)\n\n**Figure 1.:** (A) Primary sequence of TRIP8bnano. Amino acid numbering refers to full length mouse TRIP8b (1a4). (B) Binding of TRIP8bcore and TRIP8bnano to purified His6-MBP-CNBD measured by Isothermal titration calorimetry (ITC). Upper panel, heat changes (\u03bccal/sec) during successive injections of 8 \u03bcL of the corresponding TRIP8b peptide (200 \u03bcM) into the chamber containing His6-MBP-CNBD (20 \u03bcM). Lower panel, binding curve obtained from data displayed in the upper panel. The peaks were integrated, normalized to TRIP8b peptide concentration, and plotted against the molar ratio (TRIP8b peptide/His6-MBP-CNBD). Solid line represents a nonlinear least-squares fit to a single-site binding model, yielding, in the present examples, a KD\u00a0=\u00a01.2\u00a0\u00b1\u00a00.1 \u03bcM for TRIP8bcore and KD\u00a0=\u00a01.4\u00a0\u00b1\u00a00.1 \u03bcM for TRIP8bnano. (C) Evidence for TRIP8bnano folding upon CNBD binding based on the superimposition of the [1H, 15N] heteronuclear single quantum coherence (HSQC) NMR spectrum of CNBD-free TRIP8bnano (black) and CNBD-bound TRIP8bnano (red). The latter experiment was performed at the molar ratio ([CNBD]/[TRIP8bnano])=3. The backbone amide (HN) signals of the residues of CNBD-bound TRIP8bnano are labelled in red. (D) (Top) Ribbon representation of the 10 lowest energy conformers of TRIP8bnano bound to CNBD used for in silico modelling of CNBD-TRIP8bnano complex. The unfolded regions at the N- and C-termini of the construct (residues 235\u2013237 and 270\u2013275) are omitted for clarity. (Bottom) Chemical Shift Index (CSI, calculated using TALOS+) plotted as a function of the residue number of TRIP8bnano bound to CNBD. Positive values represent helical propensity.\n\n### Structural characterization of TRIP8bnano bound to CNBD\n\nThe comparison of the 1H-15N HSQC spectra of TRIP8bnano with and without CNBD bound shows that the peptide folds upon interaction with the CNBD. Thus, the 1H-15N HSQC spectrum of TRIP8bnano without CNBD shows a limited 1H resonance dispersion, characteristic of unstructured proteins (Dyson and Wright, 2004), while a larger number of well-dispersed amide signals appear in the spectrum of the CNBD-bound form (Figure 1C). Importantly, we were now able to assign the backbone chemical shift resonances of TRIP8bnano bound to the CNBD. The \u03c6 and \u03c8 dihedral angles obtained from the NMR assignment indicate that the peptide displays two \u03b1-helices (stretch L238-E250 named helix N and stretch T253-R269 named helix C) when bound to CNBD. The helices are separated by two amino acids; three and six residues at the N- and C- termini, respectively, are unstructured (Figure 1D).\n\n### Structural characterization of CNBD bound to TRIP8bnano\n\nNMR-analysis of the CNBD fragment bound to TRIP8bnano revealed that the interaction with the peptide does not affect the overall fold of the protein. Thus, the CNBD adopts the typical fold of the cAMP-free state, in line with previous evidence that this is the form bound by TRIP8b (Saponaro et al., 2014;\u00a0DeBerg et al., 2015) More specifically, the secondary structure elements of the cAMP-free CNBD are all conserved in the TRIP8bnano\u2013bound CNBD (Figure 2). This finding generally agrees with a previous double electron-electron resonance (DEER) analysis of the CNBD - TRIP8b interaction, which showed that TRIP8b binds to a conformation largely similar to the cAMP-free state (DeBerg et al., 2015). Despite the overall agreement with the DEER study, the NMR data also reveal a new and unexpected feature of TRIP8b binding to the CNBD. Indeed, our results show that TRIP8bnano binding to the CNBD induces a well-defined secondary structure of the distal region of the C-helix (Figure 2). This means that the distal region of the C-helix (residues 657\u2013662), which is unstructured in the free form of the CNBD (Saponaro et al., 2014;\u00a0Lee and MacKinnon, 2017), extends into a helical structure upon ligand binding irrespectively of whether the ligand is cAMP (Puljung and Zagotta, 2013; Saponaro et al., 2014; Lee and MacKinnon, 2017)\u00a0or TRIP8b (Figure 2). In contrast, and very differently from cAMP, which directly contacts the P-helix in the Phosphate Binding cassette (PBC) and causes its folding (Saponaro et al., 2014;\u00a0Lee and MacKinnon, 2017), the NMR data show that TRIP8bnano binding to the CNBD does not induce P-helix formation (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig2-v2.jpg)\n\n**Figure 2.:** (A) (Top) comparison of secondary structure elements of cAMP-free CNBD (Saponaro et al., 2014), cAMP-bound CNBD (Zagotta et al., 2003) and cAMP-free CNBD bound to TRIP8bnano (this study). Secondary structure elements are indicated by arrows (\u03b2-strands) and cylinders (\u03b1-helices) and labeled. The loop between \u03b26 and \u03b27 constitutes the Phosphate Binding Cassette (PBC). The elements that fold upon binding of cAMP and TRIP8bnano are shown in red. (Bottom) Chemical Shift Index (CSI, calculated using TALOS+) plotted as a function of the residue number of CNBD bound to TRIP8bnano. Positive values represent helical propensity, while negative values represent strands. (B) Ribbon representation of the 10 lowest energy conformers of CNBD bound to TRIP8bnano used for in silico modeling of CNBD - TRIP8bnano complex. Secondary structure elements are coloured in light gray and labeled. Loop regions are colored in dark gray. The distal region of the C-helix (residues 657\u2013662), which is unfolded in the free form of the CNBD (Saponaro et al., 2014) and folds upon TRIP8bnano binding, is coloured in red. The unfolded regions at the N- and C-termini of the construct (residues 521\u2013532 and 663\u2013672 respectively) are omitted for clarity.\n\n### Modeling the CNBD - TRIP8bnano complex\n\nDespite the significant improvement in sample stability and NMR spectra quality achieved upon TRIP8bnano binding, we were still unable to assign the side chains of both proteins in the complex and thus could not solve the solution structure of the complex by the canonical NMR procedure. We therefore built a model (Figure 3) of the CNBD - TRIP8bnano complex by docking the two NMR-derived structures described above using the Haddock program (a detailed description of how the respective structures were generated is provided in Materials and methods and Figure 3\u2014source data 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig3-v2.jpg)\n\n**Figure 3.:** (A) Ribbon representation of the complex where CNBD is in gray and TRIP8bnano is in orange. Helix N (N) and helix C (C) of TRIP8bnano are labeled. C-helix of CNBD (\u03b1C) is labeled, while N-bundle loop is colored in yellow. Positively charged residues of C-helix CNBD (blue) and negatively charged residues of TRIP8bnano (red) involved in salt bridges are shown as sticks and labeled. N547 of the N-bundle loop (yellow) and D252 of TRIP8bnano (orange) are shown as sticks and labeled. (B) Close view of K665 and K666 of CNBD that interact, respectively, with E265 and E264 of TRIP8bnano. C-helix (\u03b1C) of CNBD, and Helix C (C) of TRIP8bnano are labeled. (C) Close view of R650 of CNBD that is positioned between E240 and E241 of TRIP8bnano. C-helix (\u03b1C) of CNBD, and Helix N (N) of TRIP8bnano are labeled. (D) Close view of N547 of N-bundle loop that forms a hydrogen bond (red dashed line) with D252 of TRIP8bnano. Helix E\u2019 (\u03b1E') and C-helix (\u03b1C) of CNBD, and Helix N (N) of TRIP8bnano are labeled.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Combined chemical shift variations of NMR signals between CNBD unbound and TRIP8bnano-bound state. Combined chemical shift variations are calculated from the experimental 1H and 15N chemical shift changes (\u0394\u03b4(1H) and \u0394\u03b4 (15N), respectively) between the corresponding peaks in the two forms, through the following equation (Garrett et al., 1997): $\\Delta\\partial^{combined}=\\sqrt{\\frac{\\Delta\\partial1_{H}^{2}+\\frac{1}{25}\\Delta\\partial15N^{2}}{2}}$. Residues experiencing intermediate exchange regime (whose NMR signal becomes broad beyond detection upon addition of TRIP8bnano) are shown in grey. The horizontal dotted line indicates the average value plus one standard deviation. Residues above the line were set as \u2018active\u2019 in the docking calculation described in the text (see Materials and methods).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The clusters obtained can be grouped in two classes, shown here, on the basis of the position of helix N of TRIP8bnano (N) relative to the CNBD. In the left representative structure, helix N is oriented in a way that allows E241 to interact with R650 of C-helix. In the right representative structure, E240 - E241 interact with N547 of CNBD. In all clusters K665 or K666 of CNBD establish a contact with either E264 or E265 of TRIP8bnano. The structural elements of CNBD are labeled: \u03b1E\u2019, \u03b1A and \u03b1C. Helices N and C of TRIP8bnano are labeled.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Dissociation constant (KD) of the interaction between the indicated CNBD and TRIP8bnano peptides were measured by means of Isothermal Titration Calorimetry (ITC). CNBD WT - TRIP8bnano WT (black filled circle)=1.4\u00a0\u00b1\u00a00.1 \u00b5M; CNBD K665E - TRIP8bnano WT (grey filled circle)=6\u00a0\u00b1\u00a00.3 \u00b5M; CNBD K666E - TRIP8bnano WT (grey filled circle)=9.9\u00a0\u00b1\u00a00.8 \u00b5M; CNBD WT - TRIP8bnano E64K (purple filled circle)=4.8\u00a0\u00b1\u00a00.2 \u00b5M; CNBD WT - TRIP8bnano E65K (purple filled circle)=6\u00a0\u00b1\u00a00.5 \u00b5M; CNBD R650E - TRIP8bnano WT (red filled circle)=9.6\u00a0\u00b1\u00a00.7 \u00b5M; CNBD WT - TRIP8bnano E40R (green filled circle)=5\u00a0\u00b1\u00a00.3 \u00b5M; CNBD WT - TRIP8bnano E41R (green filled circle)=3.8\u00a0\u00b1\u00a00.2 \u00b5M; CNBD N547D - TRIP8bnano WT (blue filled circle)=11\u00a0\u00b1\u00a00.9 \u00b5M; CNBD WT - TRIP8bnano D52N (orange filled circle)=3.4\u00a0\u00b1\u00a00.1 \u00b5M. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of experiments (N)\u00a0\u2265\u00a03. KD values of all tested combinations are statistically different from the KD of CNBD WT for TRIP8bnano WT (*p\u22640.05; **p<0.01). Statistical analysis performed with ANOVA, followed by post-hoc Tukey test. Dashed black vertical line indicates the KD of WT peptides.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Residues R662 and K665 of CNBD C-helix (\u03b1C) which interact with cAMP (left, [Lolicato et al., 2011]) and TRIP8bnano (right, this study) are represented as blue sticks and labeled. TRIP8bnano residues E250 and D257 interacting with R662 and residue E265 interacting with K665 are shown in red sticks and labeled.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Note that in mouse HCN2 N520D corresponds to N547D in human HCN2 (used in our structural studies). (A) Representative whole-cell HCN2 currents recorded, at the indicated voltages (\u221270,\u00a0\u201380, -90,\u00a0\u2013130 mV) in HEK 293 T cells transfected with WT and N520D mutant, in the absence and presence of 5 \u00b5M cAMP in the pipette. (B) Mean activation curves obtained from the tail currents in (A) and other recordings in control solution (filled circle) and in the presence of cAMP (open circles), with HCN2 wt (black) and N547D mutant. Data were fitted to a Boltzmann equation (solid and dotted lines) (see Materials\u00a0and\u00a0methods). (C) Half activation potential (V1/2) values derived from Boltzmann equation fitting. HCN2 WT (black filled circle) V1/2 = -95.9 \u00b1 0.3 mV; HCN2 WT\u00a0+\u00a05 \u00b5M cAMP (black open circle) V1/2 = 85.2 \u00b1 0.4 mV; HCN2 N520D (red filled circle) V1/2 = -96.8 \u00b1 0.2 mV; HCN2 N520D\u00a0+\u00a05 \u00b5M cAMP (red open circle) V1/2 = -91.2 \u00b1 0.2 mV. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of experiments (N)\u00a0\u2265\u00a06. Statistical analysis performed with two-way ANOVA, followed by post-hoc Tukey test (p<0.001) showed that wt and mutant channel are identical and that the cAMP-induced shifts are different.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Superimposition of the [1H, 15N] HSQC spectra of CNBD wt (black) and CNBD N547D mutant (red).\n\nIn order to define the active residues (ambiguous interaction restraints) on the CNBD we used the chemical shift perturbation values as described in Figure 3\u2014figure supplement 1. For TRIP8bnano, we defined as active a stretch of residues, E239-E243, previously identified as critical for the interaction (Santoro et al., 2011). Output clusters of this first molecular docking calculation (settings can be found in Materials and methods) were further screened for TRIP8bnano orientations in agreement with a previous DEER analysis, which placed TRIP8b residue A248 closer to the proximal portion and TRIP8b residue A261 closer to the distal portion of the CNBD C-helix (DeBerg et al., 2015). Remarkably, in all clusters selected in this way, residues E264 or E265 in TRIP8b were found to interact with residues K665 or K666 of the CNBD (Figure 3\u2014figure supplement 2). This finding was notable, because we previously identified K665/K666 as being critical for TRIP8b interaction in a biochemical binding assay (Saponaro et al., 2014). We thus proceeded to individually mutate each of these four positions, and test their effect on binding affinity through ITC. As expected, reverse charge mutations K665E or K666E (CNBD) as well as E264K or E265K (TRIP8bnano) each strongly reduced the CNBD/TRIP8bnano binding affinity (Figure 3\u2014figure supplement 3).\n\nBased on these observations, we performed a second molecular docking calculation, including E264 and E265 as additional active residues for TRIP8bnano. This procedure resulted in the model shown in Figure 3, which represents the top-ranking cluster for energetic and scoring function (Figure 3\u2014source data 2) and was fully validated by mutagenesis analysis as described below. Scrutiny of the model shows that TRIP8bnano binds to both the C-helix and the N-bundle loop (Figure 3A). Binding to the C-helix is mainly guided by electrostatic interactions between the negative charges on TRIP8bnano, and the positive charges on the CNBD (Figure 3A). As shown in Figure 3B, the model highlights a double saline bridge (K665 and K666 of CNBD with E265 and E264 of TRIP8bnano) in line with the ITC results described above (Figure 3\u2014figure supplement 3). Of note, the contribution of residue R662 to the binding is also consistent with previous experiments showing residual TRIP8b interaction in a CNBD deletion mutant ending at position 663 (Saponaro et al., 2014). Our modeling data suggest that, upon folding of the distal portion of the C-helix, the side chains of residues R662 and K665 face to the inside when contacting cAMP, but face to the outside when binding TRIP8b (Figure 3\u2014figure supplement 4). This indicates that cAMP and TRIP8b directly compete for the binding to the distal region of C-helix.\n\nIn addition to clarifying the role of residues in the distal portion of the CNBD C-helix, the model also highlights a second important cluster of electrostatic interactions, with R650 in the proximal portion of the CNBD C-helix contacting E240 and E241 in helix N of TRIP8bnano (Figure 3C). To confirm the contribution of these residues, we reversed charges and tested each residue mutation for binding in ITC. The results in Figure 3\u2014figure supplement 3 show that R650E caused a more than six-fold reduction in binding affinity for TRIP8bnano, with smaller but significant effects seen also for E240R and E241R.\n\nA third important contact highlighted by the model is the interaction between N547 in the N-bundle loop of the CNBD and D252 in the link between helix N and helix C of TRIP8bnano (Figure 3D). We tested this potential interaction by disrupting the expected hydrogen bond between N547 and the carboxyl group of the negative residue (D252) in TRIP8bnano. The asparagine in CNBD was mutated into aspartate (N547D) to generate an electrostatic repulsion for D252, and the carboxyl group in D252 of TRIP8bnano was removed by mutation into asparagine (D252N). As predicted, N547D greatly reduced binding to TRIP8b in ITC assays (Figure 3\u2014figure supplement 3), with a smaller but significant effect observed also for D252N (Figure 3\u2014figure supplement 3). These results confirm and extend our previous finding that the N-bundle loop contributes in a substantial manner to the binding of TRIP8b (Saponaro et al., 2014). To understand the mechanism\u00a0for the allosteric effect of TRIP8b on cAMP binding, which has been\u00a0postulated on the basis of electrophysiological and structural data (Hu et al., 2013; Saponaro et al., 2014), we further tested by ITC the affinity of the N547D CNBD mutant for cAMP. Somewhat surprisingly, the affinity of the mutant is much lower than that of the wt (N547D KD\u00a0=\u00a05.5\u00a0\u00b1\u00a00.4 \u00b5M (n\u00a0=\u00a03) vs. wt KD\u00a0=\u00a01.4\u00a0\u00b1\u00a00.1 \u00b5M (n\u00a0=\u00a03)). Moreover, we measured a reduced sensitivity to cAMP also in patch clamp experiments where addition of 5 \u03bcM cAMP caused a right shift in the V1/2 of the mutant HCN2 channel of only 5 mV while the wt channel shifted by 12 mV (Figure 3\u2014figure supplement 5). To exclude that the N547D mutation affects the overall structure of the CNBD, we performed the NMR (1H-15N HSQC spectrum) analysis of the N547D CNBD mutant. Our data show that the protein is appropriately folded (Figure 3\u2014figure supplement 6). In conclusion, since the N-bundle loop does not directly contact any of the residues of the cAMP binding pocket, these findings underscore a previously unaddressed role of the N-bundle loop in allosterically modulating cAMP binding to the CNBD (see Discussion).\n\n### TRIP8bnano as a tool for the direct regulation of native HCN currents\n\nNext, we asked whether the relatively short TRIP8bnano could be used to block cAMP-dependent modulation of HCN channels by delivering the peptide to full length channels. To this end, we dialyzed TRIP8bnano into the cytosol of HEK 293 T cells transfected either with HCN1, HCN2, or HCN4 channels. The peptide was added (10 \u00b5M) in the recording pipette together with a non-saturating concentration of cAMP (5 \u00b5M for HCN2, 1 \u00b5M for HCN4) expected to induce a\u00a0~\u00a010 mV rightward shift in the half-activation potential (V1/2) of the channels (Figure 4). No cAMP was added in the case of HCN1, because, in HEK 293 T cells, this isoform is already fully shifted to the right by the endogenous cAMP and does not respond further (Figure 4\u2014figure supplement 1). Indeed, it is possible to induce a\u00a0~10 mV left shift in HCN1 V1/2 by introducing the mutation R549E that prevents cAMP binding to the CNBD (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig4-v2.jpg)\n\n**Figure 4.:** (A-C) Representative whole-cell HCN4, HCN2 and HCN1 currents recorded, at the indicated voltages, with control solution or with cAMP (1 \u03bcM for HCN4 and 5 \u03bcM for HCN2) or with\u00a0cAMP\u00a0+\u00a010 \u00b5M TRIP8bnano in the patch pipette (for HCN1, 10 \u00b5M TRIP8bnano only\u00a0was added). (D-F) Mean activation curves measured from HCN4, HCN2 and HCN1 in control solution (open circles), cAMP (filled circles), cAMP\u00a0+TRIP8bnano, or TRIP8bnano only in the case of HCN1\u00a0(filled triangles). Solid and dashed lines indicate Boltzmann fitting to the data (see Materials and methods). (G) Half activation potential (V1/2) values of HCN4 (blue), HCN2 (black) HCN1 (red) in control solution (open circle), cAMP (filled circle) and cAMP\u00a0+TRIP8bnano, or TRIP8bnano only in the case of HCN1 (filled triangle). HCN4, control\u00a0=\u00a0\u2212102.8\u00a0\u00b1\u00a00.3 mV; HCN4\u00a0+1 \u00b5M cAMP\u00a0=\u00a0\u221289.2\u00a0\u00b1\u00a00.6 mV; HCN4\u00a0+1 \u00b5M cAMP\u00a0+10 \u00b5M TRIP8bnano\u00a0=\u00a0\u2212102.1\u00a0\u00b1\u00a00.6 mV, HCN4\u00a0+1 \u00b5M cAMP in the patch pipette\u00a0+10 \u00b5M TRIP8bnano in the bath solution\u00a0=\u00a0\u221291.7\u00a0\u00b1\u00a00.3 mV; HCN2, control\u00a0=\u00a0\u221293.7\u00a0\u00b1\u00a00.3 mV; HCN2\u00a0+5 \u00b5M cAMP\u00a0=\u00a0\u221283.5\u00a0\u00b1\u00a00.3 mV; HCN2\u00a0+5 \u00b5M cAMP\u00a0+10 \u00b5M TRIP8bnano\u00a0=\u00a0\u221294.5\u00a0\u00b1\u00a00.6 mV; HCN1, control\u00a0=\u00a0\u221272.8\u00a0\u00b1\u00a00.2 mV; HCN1\u00a0+10 \u00b5M TRIP8bnano = \u221282\u00a0\u00b1\u00a00.5 mV. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N)\u00a0\u2265\u00a011. There is no significant difference between the controls and the addition of TRIP8bnano with (HCN4, HCN2) or without (HCN1) cAMP in the pipette. No significant difference was observed following\u00a0the addition of TRIP8bnano in the bath. Statistical analysis performed with two-way ANOVA, followed by post-hoc Tukey test (p<0.001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Currents were measured at the indicated voltages (- 50,\u201360, \u221270,\u2013120 mV), from HEK 293 T cells with control solution or with 15 \u03bcM cAMP in the patch pipette. (B) Mean activation curves obtained from tail currents were fitted to a Boltzmann equation (see Materials and methods). (C) Half activation potential (V1/2) determined from Boltzmann fitting. HCN1 WT (black filled circle)=\u221272.7\u00a0\u00b1\u00a00.2 mV; HCN1 WT\u00a0+\u00a0cAMP (black open circle)=\u221273.1\u00a0\u00b1\u00a00.3 mV; HCN1 R549E (red filled circle)=\u221280.4\u00a0\u00b1\u00a00.2 mV; HCN1 R549E\u00a0+\u00a0cAMP (red open circle) = \u221281\u00a0\u00b1\u00a00.3 mV. Note that in human HCN1, used here, R549E corresponds to mouse HCN1\u00a0R538E used in Chen et al. (2001). Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of experiments (N)\u00a0\u2265\u00a08. Wt values are significantly different from mutant. Statistical analysis performed with two-way ANOVA, followed by post-hoc Tukey test (p<0.001).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N)\u00a0=\u00a05.\n\nFigure 4A\u2013C show representative current traces recorded at four given voltages, in control solution,\u00a0cAMP, and\u00a0cAMP\u00a0+10 \u00b5M TRIP8bnano\u00a0(HCN4 and HCN2) or\u00a0+10 \u00b5M TRIP8bnano\u00a0only\u00a0(HCN1) in the patch pipette. Already from a visual comparison of the most positive voltage at which the current appears measurable, it is evident that TRIP8bnano counteracts the activating effect of cAMP on the voltage-dependent gating. In the case of HCN1, the effect of TRIP8bnano can be observed without added cAMP for the aforementioned reasons. Figure 4D\u2013F show the mean channel activation curves obtained from the above and other experiments. Fitting the Boltzmann equation to the\u00a0data (solid and dashed lines of Figure 4D\u2013F, see Materials and methods for equation) yielded the half-activation potential values (V1/2) plotted in Figure 4G. The addition of TRIP8bnano prevents the cAMP-induced right shift of about 13 mV in HCN4 (V1/2 = -102.8,\u00a0\u201389.2, \u2212102.1 mV, for control,\u00a0cAMP and\u00a0cAMP\u00a0+\u00a0TRIP8bnano, respectively), and of about 11 mV in HCN2 (V1/2 = -93.7,\u00a0\u201383.5, \u221294.5 mV, for control,\u00a0cAMP and\u00a0cAMP\u00a0+\u00a0TRIP8bnano, respectively). In HCN1, TRIP8bnano induced a left shift in V1/2\u00a0of about 10 mV (from \u2013 72.8 to \u221282 mV) which is comparable to that induced by the R549E mutation (from \u221272.7 to \u221280.4 mV) (Figure 4\u2014figure supplement 1).\n\nFigure 4G also shows the result of a control experiment performed on HCN4 where 10 \u00b5M TRIP8bnano was added to the extracellular medium (TRIP8bnano bath) in order to test if the peptide was able to cross the cell membrane (current traces and activation curves not shown). The V1/2 value, which is similar to that of cAMP alone (\u221291.7 vs. \u221289.2 mV), confirmed that TRIP8bnano peptide affects channel gating only if added to the intracellular solution presumably because it does not diffuse through the cell membrane.\n\nIt is worth noting that TRIP8bnano prevents other related effects of cAMP activation in HCN channels, such as the acceleration of activation kinetics (Wainger et al., 2001) and, for HCN2 only, the increase in maximal current (Chen et al., 2007; Hu et al., 2013). For example, the activation kinetics (\u03c4on) of HCN4 measured at \u2212120 mV was: control\u00a0=\u00a02\u00a0\u00b1\u00a00.2 s,\u00a01\u00a0\u03bcM\u00a0cAMP\u00a0=\u00a01.2\u00a0\u00b1\u00a00.1 s,\u00a01\u00a0\u03bcM\u00a0cAMP\u00a0+ 10\u00a0\u03bcM TRIP8bnano\u00a0=\u00a02\u00a0\u00b1\u00a00.3 s (Figure 4\u2014figure supplement 2). Moreover, Figure 4B clearly shows that TRIP8bnano fully prevented the increase in maximal current in HCN2.\n\nBased on these results, we reckoned the peptide may be employed as a regulatory tool for native If/Ih currents. As proof of principle, we tested whether TRIP8bnano can modulate the frequency of action potential firing in SAN myocytes. In these cells, If is key contributor of the diastolic depolarization phase of the pacemaker action potential cycle. Moreover, the autonomic nervous system modulates the frequency of action potential firing by changing intracellular cAMP levels, which in turn acts on f-HCN channel open probability (DiFrancesco, 1993). We thus recorded the native If current in acutely isolated rabbit SAN myocytes with and without 10 \u00b5M TRIP8bnano in the pipette solution (Figure 5A). Figure 5B shows that the averaged If activation curve measured in presence of TRIP8bnano is significantly shifted to hyperpolarized voltages compared to the control. This indicates that the peptide is displacing the binding of endogenous cAMP to native HCN channels. Moreover, when the experiment was repeated in the presence of 1 \u00b5M cAMP, TRIP8bnano prevented the typical cAMP-dependent potentiation of the native If current (Figure 5B). In light of these results, we tested whether TRIP8bnano is also able to modulate cardiac automaticity by antagonizing basal cAMP. The data in Figure 5C show that TRIP8bnano indeed significantly decreased the rate of action potential firing in single SAN cells. Strikingly, the observed 30% decrease in action potential rate corresponds to the effect induced by physiological concentrations of acetylcholine (DiFrancesco et al., 1989).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative whole-cell If currents recorded, at the indicated voltages, in the control solution and in the presence of 10 \u03bcM TRIP8bnano, without (top) and with 1 \u03bcM cAMP in the pipette (bottom). (B) Mean If activation curves were measured using a two-step protocol (see Materials and methods) in control (filled circles) or in the presence of: 1 \u00b5M cAMP (open circles); 10 \u00b5M TRIP8bnano (filled squares); 1 \u00b5M cAMP\u00a0+10 \u00b5M TRIP8bnano (open squares). Ligands were added in the patch pipette. Half activation potential (V1/2) of If activation curves measured in control\u00a0=\u00a0\u221264.1\u00a0\u00b1\u00a00.4 mV or in the presence of: 1 \u00b5M cAMP\u00a0=\u00a0\u221259.9\u00a0\u00b1\u00a00.4 mV; 10 \u00b5M TRIP8bnano\u00a0=\u00a0\u221267.7\u00a0\u00b1\u00a00.4 mV; 1 \u00b5M cAMP\u00a0+10 \u00b5M TRIP8bnano\u00a0=\u00a0\u221267.6\u00a0\u00b1\u00a00.7 mV. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N) was\u00a0\u226515. V1/2 values are significantly different between each other\u2019s whit the exception of V1/2 obtained in the presence TRIP8bnano and cAMP\u00a0+TRIP8 bnano. Statistical analysis performed with two-way ANOVA, followed by post-hoc Bonferroni test (*p<0.05) (C) (Left) Representative recordings of single SAN cell spontaneous activity in control and in the presence of 10 \u00b5M TRIP8bnano. (Right) Mean spontaneous rate (Hz) recorded in control solution\u00a0=\u00a03.65\u00a0\u00b1\u00a00.29 Hz and in the presence of 10 \u00b5M TRIP8bnano added to the pipette\u00a0=\u00a02.69\u00a0\u00b1\u00a00.27 Hz. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N) was\u00a0\u22657. Statistical analysis performed with t test (*p<0.05).\n\nTo conclusively prove that the inhibition of the native If current was specifically due to TRIP8bnano rather than caused by the dilution of the cellular content following whole cell configuration, we created a TAT version of TRIP8bnano (hereafter TAT-TRIP8bnano). Indeed, the TAT sequence allows the entry of biomolecules into a cell via endocytosis and/or direct translocation across the plasma membrane, thus leaving the cytosolic content unaltered (Guidotti et al., 2017).\n\nWe therefore tested whether both TRIP8bnano and TAT-TRIP8bnano were able to selectively inhibit the \u03b2-adrenergic stimulation of If current, while leaving the potentiation of L-type Ca2+ current (ICa,L) unaltered. To this end, we recorded either the native If or ICa,L current from cardiomyocytes acutely isolated from mouse sinoatrial node (SAN) in the presence and in the absence of 10 \u00b5M TRIP8bnano or TAT-TRIP8bnano, before and after stimulation with 100 nM isoproterenol (ISO), a \u03b2-adrenergic receptor agonist (Figure 6). Strikingly, TRIP8bnano prevented the isoproterenol-induced increase of If current density, both when the peptide was added in the recording pipette solution (Figure 6A and B), and when it was used in the TAT version added to the bath (Figure 6A and C). The specificity of TRIP8bnano for If current was confirmed by the absent inhibition of basal ICa,L (Figure 6D). In addition, we failed to record a significant difference in the isoproterenol-stimulated increase of the ICaL current density between the control condition and 10 \u00b5M TRIP8bnano (Figure 6E) or TAT-TRIP8bnano (Figure 6F) conditions. To test whether the TAT-TRIP8bnano effect described above was exclusively due to TRIP8bnano peptide, we repeated the experiments with a scrambled version of the peptide (TAT- (SCRAMBLED) TRIP8bnano) to exclude that the effect could be due to the TAT sequence (Figure 6\u2014figure supplement 1). We failed to observe a significant reduction in the responsiveness of If to isoproterenol in the presence of TAT- (SCRAMBLED) TRIP8bnano confirming that prevention of cAMP induced f- current stimulation was specific of the TRIP8bnano sequence.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative examples of If recordings at \u221295 mV in control conditions (top), in 10 \u00b5M TRIP8bnano dialyzed cell (middle) and in cells perfused with 10 \u00b5M TAT-TRIP8bnano (bottom), before (black trace) and after (red trace) application of ISO 100 nM. The voltage-clamp protocol used for recordings is shown above current traces. (B) Mean normalized If current density recorded at \u221295 mV in absence and in presence of 10 \u00b5M TRIP8bnano in the patch pipette, before (open bars) and after (filled bars) 100 nM ISO perfusion. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N)\u00a0\u2265\u00a06. Statistical analysis performed with two-way ANOVA test, followed by Sidak multiple comparisons test (**p<0.01). (C) Mean normalised If current density recorded at \u221295 mV in control solution or in the solution containing 10 \u00b5M TAT-TRIP8bnano, in absence (open bars) and in the presence (filled bars) of 100 nM ISO. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N)\u00a0\u2265\u00a08. Statistical analysis performed with two-way ANOVA test, followed by Sidak multiple comparisons test (****p<0.0001). (D) Representative examples of ICa,L recordings at \u221210 mV in control conditions (top), in 10 \u00b5M TRIP8bnano dialyzed cell (middle) and in cells perfused with 10 \u00b5M TAT-TRIP8bnano (bottom), before (black trace) and after (red trace) application of ISO 100 nM. The voltage-clamp protocol used for recordings is shown above current traces. (E) Mean normalized ICa,L current density recorded at \u221210 mV in absence and in presence of 10 \u00b5M TRIP8bnano in the patch pipette, before (open bars) and after (filled bars) 100 nM ISO perfusion. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N)\u00a0\u2265\u00a08. Statistical analysis performed with two-way ANOVA test, followed by Sidak multiple comparisons test (***p<0.001; ****p<0.0001). (F) Mean normalized ICa,L current density recorded at \u221210 mV in control solution or in the solution containing 10 \u00b5M TAT-TRIP8bnano, in absence (open bars) and in the presence (filled bars) of 100 nM ISO. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N)\u00a0\u2265\u00a07. Statistical analysis performed with two-way ANOVA test, followed by Sidak multiple comparison test (**p<0.01; ***p<0.001).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35753/elife-35753-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Representative examples of If recordings (at \u221295 mV) in TAT-(SCRAMBLED)TRIP8bnano (top) or in TAT-TRIP8bnano (bottom) incubated cells. The voltage-clamp protocol used for recordings is shown above current traces. (B) Mean normalized If current density recorded at \u221295 mV in the presence of 10 \u00b5M TAT- (SCRAMBLED) TRIP8bnano or TAT-TRIP8bnano, before (open bars) and after (filled bars) 100 nM isoprenaline (ISO) perfusion. Data are presented as mean\u00a0\u00b1\u00a0SEM. Number of cells (N)\u00a0\u2265\u00a011. Statistical analysis performed with two-way ANOVA test, followed by Sidak multiple comparisons test (****p<0.0001).\n\n## Discussion\n\n### TRIP8b-CNBD complex\n\nIn this study, we have identified the minimal binding peptide that reproduces the effects of TRIP8b on HCN channel gating. The peptide is 40 aa long and binds the HCN CNBD with high affinity (KD\u00a0=\u00a01.4 \u03bcM). By solving the NMR structures of TRIP8bnano and HCN CNBD in the bound form, we generated a structural model of their complex. The model provides detailed information on this protein-protein interaction at the atomic level with implications on their physiological function. The data show that the minimal binding unit of TRIP8b, TRIP8bnano, folds in two helices upon binding and suggest that this region is intrinsically disordered when it is not bound. The model structurally validates previous indirect evidence, which suggested that TRIP8b binds to two discrete elements of the CNBD: the N-bundle loop and the C-helix (Saponaro et al., 2014). The complex forms by electrostatic interactions, which are spread throughout the contact surface. As a consequence of the interaction with TRIP8bnano, the C-helix of CNBD increases in length, a behavior previously observed in the case of cAMP binding (Puljung and Zagotta, 2013). This portion of C-helix includes the two residues R662 and K665 engaged in salt bridge formation with respectively E250/D257 and E264 of TRIP8bnano. It is important to note that these two cationic residues are also involved in cAMP binding (Zagotta et al., 2003; Zhou and Siegelbaum, 2007;\u00a0Lolicato et al., 2011). The finding that TRIP8b and cAMP share the same binding sites on the C-helix provides a solid molecular explanation for functional data, which imply a competition between the two regulators (Han et al., 2011; DeBerg et al., 2015;\u00a0Bankston et al., 2017). Another study, however, has indicated that a direct competition model cannot fully explain the mutually antagonistic effect of the two ligands (Hu et al., 2013). Specifically, the fact that the inhibitory effect of TRIP8b on channel activity persists even at saturating cAMP concentrations advocated an allosteric component in the regulation mechanism. Our data, showing that the N547D mutation in the N-bundle loop controls cAMP affinity in the binding pocket support the conclusion that the N-bundle loop allosterically controls cAMP binding. This is not surprising, given its crucial role of mechanically transducing to the pore the cAMP binding event within the CNBD (Saponaro et al., 2014).\n\nThe structural model also explains why a previously identified peptide selected by Lyman et al. (2017) failed to reproduce the binding affinity of the TRIP8bcore for the CNBD. This 37 aa long fragment is lacking one important contact residue, namely E240,\u00a0which, in our model, forms a salt bridge with R650 of the CNBD. The loss of one crucial interaction is presumably the reason for the major decrease in affinity (about 20 times lower) reported for this peptide.\n\n### TRIP8bnano as a tool for modulating native If currents\n\nIn functional assays, we showed that TRIP8bnano binds the HCN channel CNBD with high affinity and fully abolishes the cAMP effect in all tested isoforms (HCN1, 2 and 4).\n\nGiven the small size of the peptide (<5 kDa), TRIP8bnano is a good candidate for in vivo delivery into intact cells. As a proof of concept, we fused TRIP8bnano to an internalization sequence, the TAT peptide (YGRKKRRQRRRGG). This arginine-rich Cell Penetrating Peptide (CPP) from HIV has been used in several studies as a vehicle for the delivery of large molecules across the plasma membrane (Guidotti et al., 2017). In our case, the challenge was to construct a TAT-fusion protein, which would be efficiently delivered in the cell without compromising TRIP8bnano function. Indeed, covalent conjugation of a CPP may negatively affect both the function of the cargo, and the cell-penetrating efficacy of the CPP-peptide chimera (Kristensen et al., 2016). The design of the construct was greatly supported by the detailed knowledge of the electrostatic interactions with the target protein CNBD, provided by the NMR model structure. This structure suggested that the polycationic TAT sequence would be best linked to the N-terminus of TRIP8bnano to avoid interference with the cationic residues of CNBD, mainly located in the distal region of C-helix, which are crucial for the binding of the peptide. From test experiments with the TAT-TRIP8bnano peptide in SAN myocytes, we can conclude that this strategy was successful in that: (i) the peptide is efficiently delivered inside the cells; (ii) it is kept in its active conformation; (iii) the TAT sequence did not damage cell membranes and did not interfere with the basic features of If and ICa,L currents; (iv) the modification did not affect the proteolytic stability of the TRIP8bnano peptide at least in the time frame of our experiments (30 min to 1 hr).\n\nIn conclusion, we successfully used the miniaturized TRIP8bnano peptide to selectively control native If currents and the rate of spontaneous firing in SAN myocytes. Unlike channel blockers, which inhibit ionic currents, the peptide only interferes with the cAMP-based regulation of HCN channels, while leaving basal HCN functions unaltered. In addition and in contrast to even the most selective blockers, it is selective for HCN and it does not interfere with other cAMP-modulated channels present in the SAN, such as L-type Ca2+ channels. Collectively, this makes TRIP8bnano a promising tool in targeted therapeutic interventions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type species</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>HCN1</td>\n      <td>Xention Ltd. (Cambridge, UK)</td>\n      <td>NM_021072.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (mouse)</td>\n      <td>HCN2</td>\n      <td>PMID:\u00a011331358</td>\n      <td>NM_008226.2</td>\n      <td>Laboratory of Steven A. Siegelbaum</td>\n    </tr>\n    <tr>\n      <td>Gene (rabbit)</td>\n      <td>HCN4</td>\n      <td>PMID: 10212270</td>\n      <td>NM_001082707.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (mouse)</td>\n      <td>TRIP8b</td>\n      <td>PMID:\u00a019555649</td>\n      <td></td>\n      <td>Laboratory of Steven A. Siegelbaum</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>DH5\u03b1</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>Stbl2</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Male or female C57BL/6J mice</td>\n      <td>The Jackson Laboratory</td>\n      <td>RRID:MGI:5653012</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Oryctolagus cuniculus)</td>\n      <td>New Zealand white female rabbits</td>\n      <td>Envigo</td>\n      <td>ID strain:HsdOkd:NZW</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK 293T</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0063</td>\n      <td>Tested negative for mycoplasma</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Mus musculus)</td>\n      <td>Isolated adult Sinoatrial node (SAN) cardiomyocytes</td>\n      <td>PMID: 11557233</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Oryctolagus cuniculus)</td>\n      <td>Isolated adult Sinoatrial node (SAN) cardiomyocytes</td>\n      <td>PMID: 2432247</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-52b (plasmid)</td>\n      <td>EMD Millipore</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>modified pET-24b (plasmid)</td>\n      <td>Laboratory of Daniel L. Minor, Jr.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA 3.1 (plasmid)</td>\n      <td>Clontech Laboratories</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCI (plasmid)</td>\n      <td>Promega</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8bnano (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by PCR and cloning; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8bnano (E240R) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of TRIP8bnano wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8bnano (E241R) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of TRIP8bnano wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8bnano (E264K) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of TRIP8bnano wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8bnano\u00a0(E265K) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of TRIP8bnano wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8bnano (D252N) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of TRIP8bnano wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8bcore (cDNA)</td>\n      <td>PMID: 25197093</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>human HCN2 CNBD (cDNA)</td>\n      <td>PMID: 25197093</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>human HCN2 CNBD (N547D) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of human HCN2 CNBD wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>human HCN2 CNBD (K665E) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of human HCN2 CNBD wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>human HCN2 CNBD (K666E) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of human HCN2 CNBD wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>human HCN2 CNBD (R650E) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of human HCN2 CNBD wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>human HCN1 (cDNA)</td>\n      <td>Xention Ltd. (Cambridge, UK)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TRIP8b (1a4) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by PCR and cloning; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mouse HCN2 (cDNA)</td>\n      <td>Laboratory of Steven A. Siegelbaum</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>rabbit HCN4 (cDNA)</td>\n      <td>PMID: 10212270</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mouse HCN2 (N520D) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of mouse HCN2 wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>human HCN1 (R549E) (cDNA)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Made by site-directed mutagenesis of human HCN1 wt; see Constructs</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TAT-TRIP8bnano (YGRKKRRQRRRGG- NHSLEEEFERAKAAVESTEFWDKMQA EWEEMARRNWISEN)</td>\n      <td>CASLO ApS</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TAT-(SCRAMBLED)TRIP8bnano (YGRKKRRQRRRGG-RNEAEAAE VAQKDMINERARTHEFEWESWE MWENLSESFK)</td>\n      <td>CASLO ApS</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuickChange Lightning Site- Directed Mutagenesis Kit</td>\n      <td>Agilent</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Thermo Scientific TurboFect Transfection Reagent</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Adenosine 3', 5'-cyclic monophosphate (cAMP)</td>\n      <td>SIGMA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampfit 10.5/10.7</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CYANA-2.1</td>\n      <td>L. A. Systems, Inc.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>AMBER 12.0</td>\n      <td>http://pyenmr.cerm.unifi.it/ access/index/amps-nmr</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HADDOCK2.2</td>\n      <td>www.wenmr.eu</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Constructs\n\nThe cDNA fragment encoding residues 235\u2013275 (TRIP8bnano) of mouse TRIP8b (splice variant 1a4) was cloned into pET-52b (EMD Millipore) downstream of a Strep (II) tag sequence, while the cDNA fragment encoding residues 521\u2013672 of human HCN2 (HCN2 CNBD) was cloned, in a previous study, into a modified pET-24b downstream of a double His6-maltose-binding protein (MBP) (Saponaro et al., 2014). The cDNA encoding full-length human HCN1 channel and mouse TRIP8b (1a4) were cloned into the mammalian expression vector pcDNA 3.1 (Clontech Laboratories), while mouse HCN2 channel and rabbit HCN4 channel were cloned into the mammalian expression vector pCI (Promega). Mutations were generated by site-directed mutagenesis (QuikChange site-directed mutagenesis kit; Agilent Technologies) and confirmed by sequencing.\n\n### Preparation of proteins\n\nThe HCN2 CNBD WT and mutant proteins, as well as the TRIP8bcore and TRIP8bnano proteins (WT and mutants) were produced and purified following the procedure previously described (Saponaro et al., 2014).\n\n### Structure calculation of the cAMP-free human HCN2 CNBD in complex with TRIP8bnano and vice versa\n\nNMR experiments were acquired on Bruker Avance III 950, 700 and 500 MHz NMR spectrometers equipped with a TXI-cryoprobe at 298 K. The acquired triple resonance NMR experiments for the assignment of backbone resonances of cAMP-free HCN2 CNBD (CNBD hereafter) in complex with TRIP8bnano and vice versa are summarized in\u00a0Figure 3-source data 1. 15N, 13C\u2019, 13C\u03b1, 13C\u03b2, and H\u03b1 chemical shifts were used to derive \u03d5 and \u03c8 dihedral angles by TALOS\u00a0+\u00a0program (Cornilescu et al., 1999) for both CNBD and TRIP8bnano. For TRIP8bnano, CYANA-2.1 structure calculation (G\u00fcntert and Buchner, 2015) was performed using 68 \u03d5 and \u03c8 dihedral angles and 40 backbone hydrogen bonds as input. For CNBD, CYANA-2.1 structure calculation was performed using 108 \u03d5 and \u03c8 dihedral angles, combined with the NOEs obtained in our previous determination of the cAMP-free form of the CNBD (Saponaro et al., 2014) for those regions not affected by the interaction with TRIP8bnano. The 10 conformers of TRIP8bnano and CNBD with the lowest residual target function values were subjected to restrained energy minimization with AMBER 12.0 (Case, 2012) (http://pyenmr.cerm.unifi.it/access/index/amps-nmr) and used as input in docking calculations.\n\n### Docking calculations\n\nDocking calculations were performed with HADDOCK2.2 implemented in the WeNMR/West-Life GRID-enabled web portal (www.wenmr.eu). The docking calculations are driven by ambiguous interaction restraints (AIRs) between all residues involved in the intermolecular interactions (Dominguez et al., 2003). Active residues of the CNBD were defined as the surface exposed residues (at least 50% of solvent accessibility), which show chemical shift perturbation upon TRIP8bnano binding.\n\nThe assignment of the CNBD bound to TRIP8bnano allowed to highlight the residues of CNBD whose backbone featured appreciable Combined Chemical Shift Perturbation (CSP) (Figure 3\u2014figure supplement 1). The combined CSP (\u0394HN) is given by the equation \u0394HN={((HNfree\u2212HNbound)2+((Nfree\u2212Nbound)/5)2)/2}\u00bd (Garrett et al., 1997).\n\nPassive residues of CNBD were defined as the residues close in space to active residues and with at least 50% solvent accessibility.\n\nIn the case of TRIP8bnano, the conserved stretch E239-E243, located in helix N, was defined as active region in a first docking calculation, while all the other solvent accessible residues of the peptide were defined as passive. This docking calculation generated several clusters. A post-docking filter step allowed us to select those clusters having an orientation of TRIP8bnano bound to CNBD in agreement with a DEER study on the CNBD - TRIP8bnano interaction (DeBerg et al., 2015). The selected clusters grouped in two classes on the basis of the orientation of helix N of TRIP8bnano (N) relative to CNBD (Figure 3\u2014figure supplement 2. A second docking calculation was subsequently performed introducing also residues E264-E265, located in helix C of TRIP8bnano as active residues. The active residues for CNBD were the same used for the first calculation. For this second HADDOCK calculation, 14 clusters were obtained and ranked according to their HADDOCK score. Among them only four clusters showed both an orientation of TRIP8bnano bound to CNBD in agreement with the DEER study (DeBerg et al., 2015) and the involvement of E239-E243 stretch of TRIP8bnano in the binding to CNBD. These clusters were manually analyzed and subjected to a per-cluster re-analysis following the protocol reported in http://www.bonvinlab.org/software/haddock2.2/analysis/#reanal. From this analysis, it resulted that the top-ranking cluster, i.e. the one with the best energetic and scoring functions, has a conformation in agreement with mutagenesis experiments (Figure 3\u2014figure supplement 3). Energy parameters (van der Waals energy, electrostatic energy, desolvation energy, and the penalty energy due to violation of restraints) for this complex model are reported in Figure 3\u2014source data 2.\n\nBoth docking calculations were performed using 10 NMR conformers of both the CNBD and the TRIP8bnano structures calculated as described above. In the TRIP8bnano structures the unfolded N- and C-terminal regions were removed, while in the CNBD structures only the unfolded N-terminal region was removed. This is because the C-terminal region of the CNBD is known to comprise residues involved in TRIP8bnano binding (Saponaro et al., 2014). Flexible regions of the proteins were defined based on the active and passive residues plus two preceding and following residues. The residue solvent accessibility was calculated with the program NACCESS (Hubbard and Hornton, 1993). In the initial rigid body docking calculation phase, 5000 structures of the complex were generated, and the best 400 in terms of total intermolecular energy were further submitted to the semi-flexible simulated annealing and a final refinement in water. Random removal of the restraints was turned off. The number of flexible refinement steps was increased from the default value of 500/500/1000/1000 to 2000/2000/2000/4000. The final 400 structures were then clustered using a cutoff of 5.0 \u00c5 of RMSD to take into consideration the smaller size of protein-peptide interface.\n\n### Electrophysiology of HEK 293 T cells\n\nHEK 293 T cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (Euroclone) supplemented with 10% fetal bovine serum (Euroclone), 1% Pen Strep (100 U/mL of penicillin and 100 \u00b5g/ml of streptomycin), and stored in a 37\u00b0C humidified incubator with 5% CO2. The plasmid containing cDNA of wild-type and mutant HCN1, HCN2 and HCN4 channels (1 \u00b5g) was co-transfected for transient expression into HEK 293 T cells with a plasmid containing cDNA of Green Fluorescent Protein (GFP) (1.3 \u00b5g). For co-expression with TRIP8b (1a-4), HEK 293 T cells were transiently transfected with wild-type (wt) and/or mutant human HCN1 cDNA (1 \u00b5g), wt TRIP8b (1a-4) cDNA (1 \u00b5g) and cDNA of Green Fluorescent Protein (GFP) (0.3 \u00b5g).\n\nOne day after transfection, GFP-expressing cells were selected for patch-clamp experiments in whole-cell configuration. The experiments were conducted at R.T. The pipette solution in whole cell experiments contained: 10 mM NaCl, 130 mM KCl, 1 mM egtazic acid (EGTA), 0.5 mM MgCl2, 2 mM ATP (Mg salt) and 5 mM HEPES\u2013KOH buffer (pH 7.4). The extracellular bath solution contained 110 mM NaCl, 30 mM KCl, 1.8 mM CaCl2, 0.5 mM MgCl2 and 5 mM HEPES\u2013KOH buffer (pH 7.4).\n\nTRIP8bnano was added (10 \u00b5M) to the pipette solution. cAMP was added at different concentration to the pipette solution depending on the HCN isoform used: 0 \u00b5M for HCN1, 5 \u00b5M for HCN2 and 1 \u00b5M for HCN4.\n\nWhole-cell measurements of HCN channels were performed using the following voltage clamp protocol depending on the HCN isoform measured: for HCN1, holding potential was \u201330 mV (1 s), with steps from \u201320 mV to \u2013120 mV (10 mV interval, 3.5 s) and tail currents recorded at \u201340 mV (3 s); for HCN2, holding potential was \u201330 mV (1 s), with steps from \u201340 mV to \u2013130 mV (10 mV interval, 5 s) and tail currents recorded at \u221240 mV (5 s); for HCN4, holding potential was \u201330 mV (1 s), steps from \u201330 mV to \u2013165 mV (15 mV interval, 4.5 s) and tail currents were recorded at \u221240 mV (5 s). Current voltage relations and activation curves were obtained by the above activation and deactivation protocols and analyzed by the Boltzmann equation, see data analysis.\n\n### Isolation and electrophysiology of rabbit sinoatrial node cells\n\nAnimal protocols conformed to the guidelines of the care and use of laboratory animals established by Italian and European Directives (D. Lgs n\u00b0 2014/26, 2010/63/UE). New Zealand white female rabbits (0.8\u20131.2 kg) were anesthetized (xylazine 5 mg/Kg, i.m.), and euthanized with an overdose of sodium thiopental (i.v.); hearts were quickly removed, and the SAN region was isolated and cut in small pieces. Single SAN cardiomyocytes were isolated following an enzymatic and mechanical procedure as previously described (DiFrancesco et al., 1986). Following isolation, cells were maintained at 4\u00b0C in Tyrode solution: 140 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5.5 mM D-glucose, 5 mM HEPES-NaOH (pH 7.4).\n\nFor patch clamp experiments cells were placed in a chamber on an inverted microscope and experiments were performed in the whole-cell configuration at 35 \u00b1 0.5\u00b0C. The pipette solution contained: 10 mM NaCl, 130 mM KCl, 1 mM egtazic acid (EGTA), 0.5 mM MgCl2, and 5 mM HEPES\u2013KOH buffer (pH 7.2). The If current was recorded from single cells superfused with Tyrode solution with 1 mM BaCl2, and 2 mM MnCl2.\n\nIf activation curves were obtained using a two-step protocol in which test voltage steps (from \u221230 to \u2212120 mV, 15 mV interval) were applied from a holding potential of \u221230 mV and were followed by a step to \u2212125 mV. Test steps had variable durations so as to reach steady \u2013state activation at all voltages. Analysis was performed with the Boltzmann equation (see data analysis).\n\nIn current-clamp studies, spontaneous action potentials were recorded from single cells superfused with Tyrode solution, and rate was measured from the interval between successive action potential. When indicated cAMP (1 \u00b5M) and/or nanoTRIP8b (10 \u00b5M) were added to the pipette solution.\n\n### Isolation and electrophysiology of mouse sinoatrial node cells\n\nMice were killed by cervical dislocation under general anesthesia consisting of 0.01 mg/g xylazine (2% Rompun; Bayer AG), 0.1 mg/g ketamine (Imalg\u00e8ne; Merial) and 0.04 mg/g of Na-pentobarbital (Euthanasol VET, Laboratoire TVM, Lempdes, France), and beating hearts were quickly removed. The SAN region was excised in warmed (35\u00b0C) Tyrode\u2019s solution containing: 140 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 1 mM Hepes-NaOH (pH\u00a0=\u00a07.4), and 5.5 mM D-glucose and cut in strips. Strips were then transferred into a \u2018low-Ca2+-low-Mg2+\u2019 solution containing: 140 mM NaCl; 5.4 mM KCl, 0.5 mM MgCl2, 0.2 mM CaCl2, 1.2 mM KH2PO4, 50 mM taurine, 5.5 mM D-glucose, 1 mg/ml bovine serum albumin (BSA), 5 mM Hepes-NaOH (pH\u00a0=\u00a06.9).\n\nTissue was digested by adding Liberase TH (0.15 mg/ml, Roche Diagnostics GmbH, Mannheim, Germany), elastase (1.9 U/ml, Worthington, Lakewood). Digestion was carried out for a variable time of 15\u201318 min at 35\u00b0C. Tissue strips were then washed and transferred into a modified \u2018Kraftbr\u00fche\u2019 (KB) medium containing: 70 mM L-glutamic acid, 20 mM KCl, 80 mM KOH, (\u00b1) 10 mM D- b-OH-butyric acid; 10 mM KH2PO4, 10 mM taurine, 1 mg/ml BSA and 10 mM Hepes-KOH (pH\u00a0=\u00a07.4).\n\nSingle SAN cells were isolated by manual agitation in KB solution at 35\u00b0C for 30\u201350 s.\n\nCellular automaticity was recovered by re-adapting the cells to a physiological extracellular Ca2+ concentration by addition of a solution containing: 10 mM NaCl, 1.8 mM CaCl2 and normal Tyrode solution containing BSA (1 mg/ml). The final storage solution contained: 100 mM NaCl, 35 mM KCl, 1.3 mM CaCl2, 0.7 mM MgCl2, 14 mM L-glutamic acid, (\u00b1) 2 mM D-b-OH-butyric acid, 2 mM KH2PO4, 2 mM taurine, 1 mg/ml BSA, (pH\u00a0=\u00a07.4). Cells were then stored at room temperature until use. All chemicals were from SIGMA (St Quentin Fallavier, France).\n\nFor electrophysiological recording, SAN cells in the storage solution were harvested in special custom-made recording plexiglas chambers with glass bottoms for proper cell attachment and mounted on the stage of an inverted microscope (Olympus IX71) and perfused with normal Tyrode solution. The recording temperature was 36\u00b0C. We used the whole-cell variation of the patch-clamp technique to record cellular ionic currents, by employing a Multiclamp 700B (Axon Instruments Inc., Foster USA) patch clamp amplifier. Recording electrodes were fabricated from borosilicate glass, by employing a WZ DMZ-Universal microelectrode puller (Zeitz-Instruments Vertriebs GmbH, Martinsried, Germany).\n\nIf was recorded under standard whole-cell configuration during perfusion of standard Tyrode\u2019s containing 2 mM BaCl2 to block IK1. Patch-clamp pipettes were filled with an intracellular solution containing: 130 mM KCl, 10 mM NaCl, 1 mM EGTA, 0.5 mM MgCl2 and 5 mM HEPES (pH 7.2).\n\nFor recording of L-type Ca2+ currents, pipette solution contained: 125 mM CsOH, 20 mM tetraethylammonium chloride (TEA-Cl), 1.2 mM CaCl2, 5 mM Mg-ATP, 0.1 mM Li2-GTP, 5 mM EGTA and 10 mM HEPES (pH 7.2 with aspartate). 30 \u00b5M TTX (Latoxan, Portes l\u00e8s Valence, France) to block INa was added to external solution containing: 135 mM tetraethylammonium chloride (TEA-Cl), 4 mM CaCl2,10 mM 4-amino-pyridine, 1 mM MgCl2, 10 mM HEPES and 1 mg/ml Glucose (pH 7.4 with TEA-OH).\n\nElectrodes had a resistance of about 3 M\u03a9. Seal resistances were in the range of 2\u20135 G\u03a9. 10 \u00b5M TRIPb8nano was added to pipette solution. 10 \u00b5M TAT-TRIPb8nano was added in cell storage solution for at least 30 min before patch clamp recording.\n\n### TAT-peptides\n\nTAT-TRIP8bnano (YGRKKRRQRRRGG-NHSLEEEFERAKAAVESTEFWDKMQAEWEEMARRNWISEN, TAT sequence is shown in bold type) and TAT-(SCRAMBLED)TRIP8bnano (YGRKKRRQRRRGG-RNEAEAAEVAQKDMINERARTHEFEWESWEMWENLSESFK, TAT sequence is shown in bold type) were purchased from CASLO ApS. TAT-peptides were dissolved in Milliq water (1.5 mM) and added to the petri dish at the final concentration (10 \u00b5M) 30 min before current recordings. During the patch clamp experiments, cells were perfused with standard Tyrode with 2 mM BaCl2 (see above) without the peptides. Recordings from the same petri dish were performed over a time window of 10 to 60 min in peptide-free solution\n\n### Data analysis\n\nData were acquired at 1 kHz using an Axopatch 200B amplifier and pClamp10.5 or 10.7 software (Axon Instruments). Data were analyzed off-line using Clampfit 10.5 or 10.7 (Molecular Devices) and Origin 2015 or 16 (OriginLab Corp., Northampton MA). Activation curves were analyzed by the Boltzmann equation, y\u00a0=\u00a01/{1\u00a0+\u00a0exp[(V\u2212V1/2)/s]}, where y is fractional activation, V is voltage, V1/2 half-activation voltage, and s the inverse slope factor (mV) (DiFrancesco, 1999). Mean activation curves were obtained by fitting individual curves from each cell to the Boltzmann equation and then averaging all curves obtained. Activation time constants (\u03c4on) were obtained by fitting a single exponential function,\n\nI=I0 exp(-t/\u03c4) to current traces recorded at the indicated voltages.\n\n### Ethics statement\n\nExperiments on rabbit SAN cells were performed using left-over cells obtained during experiments approved by the Animal Welfare Body of the University of Milan and by the Italian Ministry of Health (license n.1127/2015-PR). Animal procedures were conformed to the guidelines of the care and use of laboratory animals established by Italian and European Directives (D. Lgs n\u00b0 2014/26, 2010/63/UE).\n\nMouse primary pacemaker cells were isolated from adult C57BL/6J mice as previously described (Mangoni and Nargeot, Cardiovasc Res 2001), in accordance with the Guide for the Care and Use of Laboratory Animals (eighth edition, 2011), published by the US National Institute of Health and European directives (2010/63/EU). The protocol was approved by the ethical committee of the University of Montpellier and the French Ministry of Agriculture (protocol N\u00b0: 2017010310594939).\n",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "3a57d3f1-6067-42bd-bac1-97677a91d4cd",
+      "submission_id": "69bdcd6d-fd47-4a61-abec-dca838c42f48",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, J.W. Goethe-University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35753.021](https://doi.org/10.7554/eLife.35753.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structure-guided design of a synthetic peptide for orthogonal control of HCN channels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Volker D\u00f6tsch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Catherine Proenza (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript entitled \"Structure-guided design of a synthetic peptide for orthogonal control of HCN channels,\" by Moroni et al. investigates a novel, rationally engineered polypeptide for the control of HCN channels in vivo. The group utilized an endogenous regulator of HCN channels (TRIP8b) to design their 40 amino acid functional regulator (TRIP8bnano). This peptide antagonizes the binding of cAMP to the HCN channels. The group proceeds to use isothermal calorimetry, NMR spectroscopy and reverse charge mutations to define the interaction sites and structure between HCN channels and the TRIP8bnano. Finally, the group uses the TRIP8bnano to modulate HCN channels and their resulting currents in both HEK 293 cells and in rabbit and mouse SAN cells. Of particular interest therapeutically, the TAT internalization sequence was used for application of the TRIP8bnano to a portion of the rabbit SAN cells. This work is important as specific modulation of If has potential utility therapeutically, especially when compared to current ion channel pore blockers.\n\nEssential revisions:\n\n1) What is the justification for utilizing reverse charge mutations as opposed to alanine mutation? It seems like a reverse charge mutation biases the system toward less interaction between the HCN and TRIP8bnano.\n\n2) Is there any data on how long the TRIP8bnano is able to maintain an effect in vivo?\n\n3) In the Discussion it is stated that the TRIP8bnano is entirely specific for HCN channels. Is this too strong of an assertion? Is there any data regarding off target effects on non-ion channel targets?\n\n4) Include legends in some of the figures for clarification. (Figure 4B, Figure 5B).\n\n5) The peptide experiments should be supported by controls using scrambled peptides. This is particularly important for charged TAT peptides, which can have non-specific effects.\n\n6) Related to this, what is the evidence that the TAT-fused peptide indeed translocates into the cell? Have control experiments with the non-TAT-fused peptide been performed? These should not be able to penetrate the cell.\n",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f608284e-77af-4703-bc9f-2b475e90115b",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C1",
+      "claim": "TRIP8b binding to the CNBD of mammalian HCN channels prevents their regulation by cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of TRIP8b to the cyclic nucleotide binding domain (CNBD) of mammalian hyperpolarization-activated cyclic nucleotide-gated (HCN) channels prevents their regulation by cAMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact that forms the basis for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "2facb577-ab08-4f9b-ba44-5bc01f151c9f",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C2",
+      "claim": "TRIP8b is expressed exclusively in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TRIP8b is expressed exclusively in the brain, we envisage that it can be used for orthogonal control of HCN channels beyond the central nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "826a388e-2d54-4285-a6a0-8dea4babb50f",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C3",
+      "claim": "A 40-aa long peptide (TRIP8bnano) recapitulates affinity and gating effects of TRIP8b in HCN isoforms (hHCN1, mHCN2, rbHCN4).",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have identified by rational design a 40-aa long peptide (TRIP8bnano) that recapitulates affinity and gating effects of TRIP8b in HCN isoforms (hHCN1, mHCN2, rbHCN4) and in the cardiac current If in rabbit and mouse sinoatrial node cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "ae84ef5c-64fc-4366-a28b-28797bca65b4",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C4",
+      "claim": "TRIP8bnano recapitulates affinity and gating effects of TRIP8b in the cardiac current If in rabbit and mouse sinoatrial node cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have identified by rational design a 40-aa long peptide (TRIP8bnano) that recapitulates affinity and gating effects of TRIP8b in HCN isoforms (hHCN1, mHCN2, rbHCN4) and in the cardiac current If in rabbit and mouse sinoatrial node cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 5 and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "61b339ce-0907-4687-9334-475cada0044f",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C5",
+      "claim": "TAT-TRIP8bnano successfully prevented \u03b2-adrenergic activation of mouse If leaving the stimulation of the L-type calcium current (ICaL) unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by an NMR-derived structural model that identifies the key molecular interactions between TRIP8bnano and the HCN CNBD, we further designed a cell-penetrating peptide (TAT-TRIP8bnano) which successfully prevented \u03b2-adrenergic activation of mouse If leaving the stimulation of the L-type calcium current (ICaL) unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "87853171-5f53-4ea0-ac1d-5b81b20550bb",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C6",
+      "claim": "TRIP8bnano represents a novel approach to selectively control HCN activation.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIP8bnano represents a novel approach to selectively control HCN activation, which yields the promise of a more targeted pharmacology compared to pore blockers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "42aa53c0-5160-44c6-b15b-bb73280e6d8c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C7",
+      "claim": "HCN channels are the molecular correlate of the If/Ih current.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperpolarization-activated cyclic nucleotide-gated (HCN1-4) channels are the molecular correlate of the If/Ih current, which plays a key role in controlling several higher order physiological functions, including dendritic integration and intrinsic rhythmicity both in cardiac and neuronal cells (Robinson and Siegelbaum, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "07c1f23a-141d-495a-bc4f-d5bf0c02135c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C8",
+      "claim": "If/Ih current plays a key role in controlling dendritic integration and intrinsic rhythmicity in cardiac and neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperpolarization-activated cyclic nucleotide-gated (HCN1-4) channels are the molecular correlate of the If/Ih current, which plays a key role in controlling several higher order physiological functions, including dendritic integration and intrinsic rhythmicity both in cardiac and neuronal cells (Robinson and Siegelbaum, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "fd6fb28d-6e92-4c0c-b7ae-580bbe21d141",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C9",
+      "claim": "HCN channels are modulated by the direct binding of cAMP to their cyclic nucleotide binding domain (CNBD).",
+      "claim_type": "EXPLICIT",
+      "source": "Unique among the voltage-gated ion channel superfamily, HCN channels are modulated by the direct binding of cAMP to their cyclic nucleotide binding domain (CNBD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "366bdfa0-8496-4c7e-b0da-10732314433a",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C10",
+      "claim": "Binding of cAMP increases the channel open probability upon hyperpolarization via conformational changes in the CNBD that are propagated to the pore through the C-linker domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of the cyclic nucleotide increases the channel open probability upon hyperpolarization via conformational changes in the CNBD that are propagated to the pore through the C-linker domain (DiFrancesco and Tortora, 1991; Wainger et al., 2001; Zagotta et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "91275efd-68cb-4153-841c-02c560aafab8",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C11",
+      "claim": "TRIP8b is a brain-specific auxiliary (\u03b2) subunit that modulates HCN channel trafficking and gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to cAMP, HCN channels are regulated by TRIP8b, a brain-specific auxiliary (\u03b2) subunit, which modulates two independent features of the channel, namely trafficking and gating (Santoro et al., 2009; Zolles et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "2c3b135b-58ac-45d9-9fa5-a8ad760b0a2a",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C12",
+      "claim": "TRIP8b binds HCN channels through two distinct sites: the TPR domain and the TRIP8bcore domain.",
+      "claim_type": "EXPLICIT",
+      "source": "For this dual regulation, TRIP8b binds HCN channels through two distinct sites: via the tetratricopeptide repeat (TPR) domain, which interacts with the last three amino acids (SNL) of HCN channels and regulates their trafficking; and via the TRIP8bcore domain, which interacts with the CNBD and antagonizes the effect of cAMP on the voltage dependency of the channel (Santoro et al., 2011; Han et al., 2011; Hu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "49cdc4b0-16c7-4cee-bbb5-a94ff87444e2",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C13",
+      "claim": "The TPR domain of TRIP8b interacts with the last three amino acids (SNL) of HCN channels and regulates their trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "For this dual regulation, TRIP8b binds HCN channels through two distinct sites: via the tetratricopeptide repeat (TPR) domain, which interacts with the last three amino acids (SNL) of HCN channels and regulates their trafficking; and via the TRIP8bcore domain, which interacts with the CNBD and antagonizes the effect of cAMP on the voltage dependency of the channel (Santoro et al., 2011; Han et al., 2011; Hu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "17188992-8a36-4f4e-819c-fc8a57fa6b01",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C14",
+      "claim": "The TRIP8bcore domain interacts with the CNBD and antagonizes the effect of cAMP on the voltage dependency of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "For this dual regulation, TRIP8b binds HCN channels through two distinct sites: via the tetratricopeptide repeat (TPR) domain, which interacts with the last three amino acids (SNL) of HCN channels and regulates their trafficking; and via the TRIP8bcore domain, which interacts with the CNBD and antagonizes the effect of cAMP on the voltage dependency of the channel (Santoro et al., 2011; Han et al., 2011; Hu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "4f3dd3a7-66ae-4004-b8b9-5506374bc714",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C15",
+      "claim": "cAMP-dependent modulation of HCN channels underlies distinct roles of cAMP in heart rate regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "cAMP-dependent modulation of HCN channels underlies distinct roles of cAMP in heart rate regulation (DiFrancesco, 1993) and development of peripheral neuropathic pain (Emery et al., 2012; Herrmann et al., 2017), which can be dissected by using a TRIP8b-based tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "328e61eb-1fb4-4420-9923-11597633dd5f",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C16",
+      "claim": "cAMP-dependent modulation of HCN channels underlies development of peripheral neuropathic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "cAMP-dependent modulation of HCN channels underlies distinct roles of cAMP in heart rate regulation (DiFrancesco, 1993) and development of peripheral neuropathic pain (Emery et al., 2012; Herrmann et al., 2017), which can be dissected by using a TRIP8b-based tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "a06f5601-dc1d-4d34-a342-a46adc2f53bf",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C17",
+      "claim": "Peptide-based drugs (2\u201350 aa long) open new therapeutic possibilities with an advantage over small molecules in terms of specificity and affinity for the target.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, peptide-based drugs (2\u201350 aa long) are emerging as a fascinating application area as they open new therapeutic possibilities with an advantage over small molecules in terms of specificity and affinity for the target (Fosgerau and Hoffmann, 2015; Henninot et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "4bdc0f35-017d-4214-bc7a-f0b513359f7c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C18",
+      "claim": "TRIP8bcore (80 aa long) interacts with the HCN CNBD and prevents cAMP modulation in full length channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, we identified the core portion of TRIP8b (TRIP8bcore, 80 aa long) that interacts with the HCN CNBD and prevents cAMP modulation in full length channels (Santoro et al., 2011; Hu et al., 2013; Saponaro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous work by the authors with citations to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "03ebc414-de90-4d6b-84eb-5ba99a96b509",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C19",
+      "claim": "A 37 aa peptide identified by Lyman et al. (2017) failed to reproduce the binding affinity of TRIP8bcore.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent paper (Lyman et al., 2017) reported an even shorter binding sequence of TRIP8b (37 aa). However, this peptide, which was identified by progressive truncation of TRIP8bcore, failed to reproduce the binding affinity of the starting construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "2b293e6c-f5a6-4d5b-aeca-2db1f908985f",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C20",
+      "claim": "Evidence for activity of the 37 aa peptide identified by Lyman et al. (2017) on HCN currents is lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, evidence for activity of this peptide on HCN currents is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "9d8e7dd1-8148-4dbb-a18c-6b819c098da7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C21",
+      "claim": "TRIP8bcore interacts with two elements of the isolated CNBD protein fragment from HCN channels: the C-helix and the N-bundle loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that TRIP8bcore (residues 223\u2013303 of mouse TRIP8b splice variant 1a4, hereafter TRIP8b) interacts with two elements of the isolated CNBD protein fragment from HCN channels (residues 521\u2013672 of human HCN2, hereafter CNBD): the C-helix and the N-bundle loop, a sequence connecting helix E' of the C-linker with helix A of the CNBD (Saponaro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous work by the authors with a citation to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "6b043653-e2de-4b63-a8f7-245876a815df",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C22",
+      "claim": "Each of the N-bundle loop and C-helix is necessary but not sufficient for TRIP8bcore binding to CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical assays confirmed that each of these two elements, that is, the N-bundle loop and C-helix, is necessary but not sufficient for binding (Saponaro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous work by the authors with a citation to support it.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "089df7f9-f31b-4890-ac75-026641955998",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C23",
+      "claim": "TRIP8bnano comprises residues 235\u2013275 of TRIP8b.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus identified a 40-aa peptide (TRIP8bnano, comprising residues 235\u2013275 of TRIP8b, Figure 1A) with a binding KD of 1.5 \u00b1 0.1 \u00b5M, a value similar to the KD of 1.2 \u00b1 0.1 \u00b5M obtained with TRIP8bcore (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "3f3a4fb9-c62e-4023-a8c0-4f0ebfaa77b7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C24",
+      "claim": "TRIP8bnano has a binding KD of 1.5 \u00b1 0.1 \u00b5M for CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus identified a 40-aa peptide (TRIP8bnano, comprising residues 235\u2013275 of TRIP8b, Figure 1A) with a binding KD of 1.5 \u00b1 0.1 \u00b5M, a value similar to the KD of 1.2 \u00b1 0.1 \u00b5M obtained with TRIP8bcore (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "44ff73d8-d2b0-41b7-b04f-c62a0f748c75",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C25",
+      "claim": "TRIP8bcore has a binding KD of 1.2 \u00b1 0.1 \u00b5M for CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus identified a 40-aa peptide (TRIP8bnano, comprising residues 235\u2013275 of TRIP8b, Figure 1A) with a binding KD of 1.5 \u00b1 0.1 \u00b5M, a value similar to the KD of 1.2 \u00b1 0.1 \u00b5M obtained with TRIP8bcore (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "3a714fda-392f-45c5-aad8-4e091dbf79a7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C26",
+      "claim": "TRIP8bnano folds upon interaction with the CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of the 1H-15N HSQC spectra of TRIP8bnano with and without CNBD bound shows that the peptide folds upon interaction with the CNBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by NMR spectroscopy as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "360573f7-1679-4959-86d0-16cdc0369626",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C27",
+      "claim": "TRIP8bnano displays two \u03b1-helices (stretch L238-E250 named helix N and stretch T253-R269 named helix C) when bound to CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c6 and \u03c8 dihedral angles obtained from the NMR assignment indicate that the peptide displays two \u03b1-helices (stretch L238-E250 named helix N and stretch T253-R269 named helix C) when bound to CNBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from NMR data as shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "ac4ad6b1-ccd6-4346-b3b5-667cb54a9422",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C28",
+      "claim": "Three and six residues at the N- and C- termini of TRIP8bnano, respectively, are unstructured when bound to CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The helices are separated by two amino acids; three and six residues at the N- and C- termini, respectively, are unstructured (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from NMR data as shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "c39db683-74ec-4b06-98c9-8ba795d56af5",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C29",
+      "claim": "The interaction with TRIP8bnano does not affect the overall fold of the CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR-analysis of the CNBD fragment bound to TRIP8bnano revealed that the interaction with the peptide does not affect the overall fold of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from NMR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "e258b835-816b-4986-8a60-a0e447edc756",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C30",
+      "claim": "The CNBD adopts the typical fold of the cAMP-free state when bound to TRIP8bnano.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the CNBD adopts the typical fold of the cAMP-free state, in line with previous evidence that this is the form bound by TRIP8b (Saponaro et al., 2014; DeBerg et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from NMR analysis and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "25e83942-c203-4d0d-aff3-a3f1aa9cd390",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C31",
+      "claim": "TRIP8bnano binding to the CNBD induces a well-defined secondary structure of the distal region of the C-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our results show that TRIP8bnano binding to the CNBD induces a well-defined secondary structure of the distal region of the C-helix (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from NMR analysis as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "c42a4c08-9ab3-4a69-8e27-bd8ac2dc83af",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C32",
+      "claim": "The distal region of the C-helix (residues 657\u2013662) is unstructured in the free form of the CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the distal region of the C-helix (residues 657\u2013662), which is unstructured in the free form of the CNBD (Saponaro et al., 2014; Lee and MacKinnon, 2017), extends into a helical structure upon ligand binding irrespectively of whether the ligand is cAMP (Puljung and Zagotta, 2013; Saponaro et al., 2014; Lee and MacKinnon, 2017) or TRIP8b (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "1e8545c6-06e9-4705-9545-9c91695983fb",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C33",
+      "claim": "The distal region of the C-helix extends into a helical structure upon binding of either cAMP or TRIP8b.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the distal region of the C-helix (residues 657\u2013662), which is unstructured in the free form of the CNBD (Saponaro et al., 2014; Lee and MacKinnon, 2017), extends into a helical structure upon ligand binding irrespectively of whether the ligand is cAMP (Puljung and Zagotta, 2013; Saponaro et al., 2014; Lee and MacKinnon, 2017) or TRIP8b (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from NMR analysis and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "6cdbf368-46fc-4581-b4fb-58ea18831086",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C34",
+      "claim": "TRIP8bnano binding to the CNBD does not induce P-helix formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and very differently from cAMP, which directly contacts the P-helix in the Phosphate Binding cassette (PBC) and causes its folding (Saponaro et al., 2014; Lee and MacKinnon, 2017), the NMR data show that TRIP8bnano binding to the CNBD does not induce P-helix formation (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from NMR analysis as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "336c8b0a-f45e-4195-99c6-bae73736bcd5",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C35",
+      "claim": "cAMP directly contacts the P-helix in the Phosphate Binding cassette (PBC) and causes its folding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and very differently from cAMP, which directly contacts the P-helix in the Phosphate Binding cassette (PBC) and causes its folding (Saponaro et al., 2014; Lee and MacKinnon, 2017), the NMR data show that TRIP8bnano binding to the CNBD does not induce P-helix formation (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "121841e1-36c0-4c4a-8fbd-aafe6383e3c2",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C36",
+      "claim": "TRIP8bnano binds to both the C-helix and the N-bundle loop of the CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Scrutiny of the model shows that TRIP8bnano binds to both the C-helix and the N-bundle loop (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural model in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "553f796a-3c99-4459-88df-d3f9afdfb0b7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C37",
+      "claim": "Binding of TRIP8bnano to the C-helix is mainly guided by electrostatic interactions between the negative charges on TRIP8bnano and the positive charges on the CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding to the C-helix is mainly guided by electrostatic interactions between the negative charges on TRIP8bnano, and the positive charges on the CNBD (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural model in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "c2d8ffcb-f2e4-4ff8-b167-a9aaaca3292d",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C38",
+      "claim": "K665 and K666 of CNBD form a double saline bridge with E265 and E264 of TRIP8bnano.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, the model highlights a double saline bridge (K665 and K666 of CNBD with E265 and E264 of TRIP8bnano) in line with the ITC results described above (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural model in Figure 3B and validated by ITC experiments in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "dd380d17-3ca6-4de6-b7f9-ba48f61be087",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C39",
+      "claim": "Reverse charge mutations K665E or K666E (CNBD) strongly reduced the CNBD/TRIP8bnano binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, reverse charge mutations K665E or K666E (CNBD) as well as E264K or E265K (TRIP8bnano) each strongly reduced the CNBD/TRIP8bnano binding affinity (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "2e0c9cdc-c3a4-4941-a674-01849903b3d8",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C40",
+      "claim": "Reverse charge mutations E264K or E265K (TRIP8bnano) strongly reduced the CNBD/TRIP8bnano binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, reverse charge mutations K665E or K666E (CNBD) as well as E264K or E265K (TRIP8bnano) each strongly reduced the CNBD/TRIP8bnano binding affinity (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "8e46215b-366f-40fe-8e69-778c6cec70d7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C41",
+      "claim": "Upon folding of the distal portion of the C-helix, the side chains of residues R662 and K665 face to the inside when contacting cAMP, but face to the outside when binding TRIP8b.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling data suggest that, upon folding of the distal portion of the C-helix, the side chains of residues R662 and K665 face to the inside when contacting cAMP, but face to the outside when binding TRIP8b (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural model in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "e67d183f-ba76-47e8-b1ba-68068c26e335",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C42",
+      "claim": "cAMP and TRIP8b directly compete for the binding to the distal region of C-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that cAMP and TRIP8b directly compete for the binding to the distal region of C-helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model showing that both ligands interact with the same residues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "2084d9fb-59a6-466b-9bbb-5732c05e6b8c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C43",
+      "claim": "R650 in the proximal portion of the CNBD C-helix contacts E240 and E241 in helix N of TRIP8bnano.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to clarifying the role of residues in the distal portion of the CNBD C-helix, the model also highlights a second important cluster of electrostatic interactions, with R650 in the proximal portion of the CNBD C-helix contacting E240 and E241 in helix N of TRIP8bnano (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural model in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "87638416-4bdf-496d-8866-14737d30eda8",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C44",
+      "claim": "R650E caused a more than six-fold reduction in binding affinity for TRIP8bnano.",
+      "claim_type": "EXPLICIT",
+      "source": "The results in Figure 3\u2014figure supplement 3 show that R650E caused a more than six-fold reduction in binding affinity for TRIP8bnano, with smaller but significant effects seen also for E240R and E241R.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "6f1d38c4-bea3-46bf-a823-e287ff487ec7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C45",
+      "claim": "E240R and E241R mutations caused smaller but significant reductions in binding affinity for CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The results in Figure 3\u2014figure supplement 3 show that R650E caused a more than six-fold reduction in binding affinity for TRIP8bnano, with smaller but significant effects seen also for E240R and E241R.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "f60f4930-c3de-41fe-8802-5606bea08045",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C46",
+      "claim": "N547 in the N-bundle loop of the CNBD interacts with D252 in the link between helix N and helix C of TRIP8bnano.",
+      "claim_type": "EXPLICIT",
+      "source": "A third important contact highlighted by the model is the interaction between N547 in the N-bundle loop of the CNBD and D252 in the link between helix N and helix C of TRIP8bnano (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural model in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "3cf9ebda-eddc-4c1a-8c60-3100bf7e8d76",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C47",
+      "claim": "N547D greatly reduced binding to TRIP8bnano.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, N547D greatly reduced binding to TRIP8b in ITC assays (Figure 3\u2014figure supplement 3), with a smaller but significant effect observed also for D252N (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "a159ac61-26a6-4250-ba70-d38d5aae9b3b",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C48",
+      "claim": "D252N caused a smaller but significant reduction in binding to CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, N547D greatly reduced binding to TRIP8b in ITC assays (Figure 3\u2014figure supplement 3), with a smaller but significant effect observed also for D252N (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by ITC as shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "8f6224aa-e2e1-48d7-99c0-83d79fa61407",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C49",
+      "claim": "The N-bundle loop contributes in a substantial manner to the binding of TRIP8b.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm and extend our previous finding that the N-bundle loop contributes in a substantial manner to the binding of TRIP8b (Saponaro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by the mutagenesis data and is consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "f9cbc23c-22b9-4c66-92c6-ea549211a061",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C50",
+      "claim": "The affinity of the N547D CNBD mutant for cAMP is much lower than that of the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Somewhat surprisingly, the affinity of the mutant is much lower than that of the wt (N547D KD = 5.5 \u00b1 0.4 \u00b5M (n = 3) vs. wt KD = 1.4 \u00b1 0.1 \u00b5M (n = 3)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ITC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "1bd54d87-d06e-424e-853d-1b2815e0d76d",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C51",
+      "claim": "Addition of 5 \u03bcM cAMP caused a right shift in the V1/2 of the N547D mutant HCN2 channel of only 5 mV while the wt channel shifted by 12 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we measured a reduced sensitivity to cAMP also in patch clamp experiments where addition of 5 \u03bcM cAMP caused a right shift in the V1/2 of the mutant HCN2 channel of only 5 mV while the wt channel shifted by 12 mV (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "ca2c4de5-1bdc-461a-b691-7bcee151d2d2",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C52",
+      "claim": "The N547D CNBD mutant is appropriately folded.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude that the N547D mutation affects the overall structure of the CNBD, we performed the NMR (1H-15N HSQC spectrum) analysis of the N547D CNBD mutant. Our data show that the protein is appropriately folded (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by NMR analysis as shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "fcc7ef72-48fc-4d5f-a24a-cda31ac0d704",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C53",
+      "claim": "The N-bundle loop allosterically modulates cAMP binding to the CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, since the N-bundle loop does not directly contact any of the residues of the cAMP binding pocket, these findings underscore a previously unaddressed role of the N-bundle loop in allosterically modulating cAMP binding to the CNBD (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis data showing that N547D affects cAMP binding without directly contacting the cAMP binding pocket.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "515ab9c9-71bb-4169-90e7-9928a6cecf89",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C54",
+      "claim": "TRIP8bnano prevents the cAMP-induced right shift in V1/2 of about 13 mV in HCN4.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of TRIP8bnano prevents the cAMP-induced right shift of about 13 mV in HCN4 (V1/2 = -102.8, \u201389.2, \u2212102.1 mV, for control, cAMP and cAMP + TRIP8bnano, respectively), and of about 11 mV in HCN2 (V1/2 = -93.7, \u201383.5, \u221294.5 mV, for control, cAMP and cAMP + TRIP8bnano, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "ddec9a66-e00b-42d1-ad7e-653c729b4ded",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C55",
+      "claim": "TRIP8bnano prevents the cAMP-induced right shift in V1/2 of about 11 mV in HCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of TRIP8bnano prevents the cAMP-induced right shift of about 13 mV in HCN4 (V1/2 = -102.8, \u201389.2, \u2212102.1 mV, for control, cAMP and cAMP + TRIP8bnano, respectively), and of about 11 mV in HCN2 (V1/2 = -93.7, \u201383.5, \u221294.5 mV, for control, cAMP and cAMP + TRIP8bnano, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "59ed42ec-7770-4751-966c-540fedda05c7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C56",
+      "claim": "In HCN1, TRIP8bnano induced a left shift in V1/2 of about 10 mV (from \u2013 72.8 to \u221282 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "In HCN1, TRIP8bnano induced a left shift in V1/2 of about 10 mV (from \u2013 72.8 to \u221282 mV) which is comparable to that induced by the R549E mutation (from \u221272.7 to \u221280.4 mV) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "4fa05027-92a1-414f-b72e-3217fb82b84a",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C57",
+      "claim": "The R549E mutation in HCN1 induced a left shift in V1/2 from \u221272.7 to \u221280.4 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In HCN1, TRIP8bnano induced a left shift in V1/2 of about 10 mV (from \u2013 72.8 to \u221282 mV) which is comparable to that induced by the R549E mutation (from \u221272.7 to \u221280.4 mV) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "e8d17ba3-f14d-4bb6-8676-e54c5c5c6327",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C58",
+      "claim": "TRIP8bnano peptide affects channel gating only if added to the intracellular solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The V1/2 value, which is similar to that of cAMP alone (\u221291.7 vs. \u221289.2 mV), confirmed that TRIP8bnano peptide affects channel gating only if added to the intracellular solution presumably because it does not diffuse through the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by a control experiment where TRIP8bnano was added to the extracellular medium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "0d954dd6-33d4-44ae-92b6-bb787046c01c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C59",
+      "claim": "TRIP8bnano prevents the acceleration of activation kinetics induced by cAMP in HCN channels.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that TRIP8bnano prevents other related effects of cAMP activation in HCN channels, such as the acceleration of activation kinetics (Wainger et al., 2001) and, for HCN2 only, the increase in maximal current (Chen et al., 2007; Hu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by patch clamp experiments and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "d70754e4-139c-4795-888b-d79d57fdadc1",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C60",
+      "claim": "TRIP8bnano prevents the increase in maximal current induced by cAMP in HCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that TRIP8bnano prevents other related effects of cAMP activation in HCN channels, such as the acceleration of activation kinetics (Wainger et al., 2001) and, for HCN2 only, the increase in maximal current (Chen et al., 2007; Hu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by patch clamp experiments as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "d77291a6-8ee7-4c82-a9d4-408bcf5e4768",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C61",
+      "claim": "The activation kinetics (\u03c4on) of HCN4 measured at \u2212120 mV was: control = 2 \u00b1 0.2 s, 1 \u03bcM cAMP = 1.2 \u00b1 0.1 s, 1 \u03bcM cAMP + 10 \u03bcM TRIP8bnano = 2 \u00b1 0.3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the activation kinetics (\u03c4on) of HCN4 measured at \u2212120 mV was: control = 2 \u00b1 0.2 s, 1 \u03bcM cAMP = 1.2 \u00b1 0.1 s, 1 \u03bcM cAMP + 10 \u03bcM TRIP8bnano = 2 \u00b1 0.3 s (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "f8be0b6e-c78e-4b5c-a55b-d53c9e8035b4",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C62",
+      "claim": "If is a key contributor of the diastolic depolarization phase of the pacemaker action potential cycle in SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, If is key contributor of the diastolic depolarization phase of the pacemaker action potential cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "310edc9d-ccd0-4f09-accb-edb30dc7e827",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C63",
+      "claim": "The autonomic nervous system modulates the frequency of action potential firing in SAN myocytes by changing intracellular cAMP levels, which in turn acts on f-HCN channel open probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the autonomic nervous system modulates the frequency of action potential firing by changing intracellular cAMP levels, which in turn acts on f-HCN channel open probability (DiFrancesco, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "5b87cc44-1ed3-47f0-adbd-ccda2535f0e3",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C64",
+      "claim": "The averaged If activation curve measured in presence of TRIP8bnano is significantly shifted to hyperpolarized voltages compared to the control in rabbit SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5B shows that the averaged If activation curve measured in presence of TRIP8bnano is significantly shifted to hyperpolarized voltages compared to the control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "d9225e13-95fe-4e41-8558-36f930fed8c4",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C65",
+      "claim": "TRIP8bnano is displacing the binding of endogenous cAMP to native HCN channels in rabbit SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the peptide is displacing the binding of endogenous cAMP to native HCN channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the shift in the If activation curve.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "249143b2-7211-42b4-80e1-2cc86e6842f4",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C66",
+      "claim": "TRIP8bnano prevented the typical cAMP-dependent potentiation of the native If current in rabbit SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when the experiment was repeated in the presence of 1 \u00b5M cAMP, TRIP8bnano prevented the typical cAMP-dependent potentiation of the native If current (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "088f941f-cab0-4703-b581-e6b5c5ac150c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C67",
+      "claim": "TRIP8bnano significantly decreased the rate of action potential firing in single rabbit SAN cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The data in Figure 5C show that TRIP8bnano indeed significantly decreased the rate of action potential firing in single SAN cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by current clamp experiments as shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "1cbe69e4-63b2-4f55-b482-ed14fdc3d7aa",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C68",
+      "claim": "The 30% decrease in action potential rate induced by TRIP8bnano corresponds to the effect induced by physiological concentrations of acetylcholine.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the observed 30% decrease in action potential rate corresponds to the effect induced by physiological concentrations of acetylcholine (DiFrancesco et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "af04fc84-181b-4bef-a4fd-539be0cd4531",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C69",
+      "claim": "The TAT sequence allows the entry of biomolecules into a cell via endocytosis and/or direct translocation across the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the TAT sequence allows the entry of biomolecules into a cell via endocytosis and/or direct translocation across the plasma membrane, thus leaving the cytosolic content unaltered (Guidotti et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to support it.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "5a86c837-6c60-42f8-87f1-5b1578a351c2",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C70",
+      "claim": "TRIP8bnano prevented the isoproterenol-induced increase of If current density when added in the recording pipette solution in mouse SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, TRIP8bnano prevented the isoproterenol-induced increase of If current density, both when the peptide was added in the recording pipette solution (Figure 6A and B), and when it was used in the TAT version added to the bath (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "c04980bf-cebd-4830-a663-035c014e384c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C71",
+      "claim": "TAT-TRIP8bnano prevented the isoproterenol-induced increase of If current density when added to the bath in mouse SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, TRIP8bnano prevented the isoproterenol-induced increase of If current density, both when the peptide was added in the recording pipette solution (Figure 6A and B), and when it was used in the TAT version added to the bath (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 6A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "c9e316d2-c681-41dd-9ed5-08ecfe2fe1bf",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C72",
+      "claim": "TRIP8bnano did not inhibit basal ICa,L in mouse SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of TRIP8bnano for If current was confirmed by the absent inhibition of basal ICa,L (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "1d7ff122-ff54-4a24-8748-50b1b37dd0f3",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C73",
+      "claim": "There was no significant difference in the isoproterenol-stimulated increase of the ICaL current density between the control condition and 10 \u00b5M TRIP8bnano in mouse SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we failed to record a significant difference in the isoproterenol-stimulated increase of the ICaL current density between the control condition and 10 \u00b5M TRIP8bnano (Figure 6E) or TAT-TRIP8bnano (Figure 6F) conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "07c07c36-371d-442a-b12c-67e5f67c4ac5",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C74",
+      "claim": "There was no significant difference in the isoproterenol-stimulated increase of the ICaL current density between the control condition and 10 \u00b5M TAT-TRIP8bnano in mouse SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we failed to record a significant difference in the isoproterenol-stimulated increase of the ICaL current density between the control condition and 10 \u00b5M TRIP8bnano (Figure 6E) or TAT-TRIP8bnano (Figure 6F) conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "acc997cc-35cd-4700-b4f6-c93d7165b56e",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C75",
+      "claim": "TAT-(SCRAMBLED)TRIP8bnano failed to significantly reduce the responsiveness of If to isoproterenol in mouse SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We failed to observe a significant reduction in the responsiveness of If to isoproterenol in the presence of TAT- (SCRAMBLED) TRIP8bnano confirming that prevention of cAMP induced f- current stimulation was specific of the TRIP8bnano sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by patch clamp experiments as shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "f882c717-45a0-4f0a-98c1-d939be77aabe",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C76",
+      "claim": "Prevention of cAMP induced f-current stimulation was specific of the TRIP8bnano sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We failed to observe a significant reduction in the responsiveness of If to isoproterenol in the presence of TAT- (SCRAMBLED) TRIP8bnano confirming that prevention of cAMP induced f- current stimulation was specific of the TRIP8bnano sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison between TAT-TRIP8bnano and TAT-(SCRAMBLED)TRIP8bnano.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "2910187d-3cd0-4ad0-b7ff-0334d7b991dc",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C77",
+      "claim": "The minimal binding unit of TRIP8b, TRIP8bnano, folds in two helices upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that the minimal binding unit of TRIP8b, TRIP8bnano, folds in two helices upon binding and suggest that this region is intrinsically disordered when it is not bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from NMR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "27234028-b9d5-4896-9f1d-239408e15059",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C78",
+      "claim": "TRIP8bnano is intrinsically disordered when it is not bound to CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that the minimal binding unit of TRIP8b, TRIP8bnano, folds in two helices upon binding and suggest that this region is intrinsically disordered when it is not bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the NMR data showing limited resonance dispersion in the unbound form.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "32d75145-caf9-4504-a24f-a33db4e41413",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C79",
+      "claim": "The model structurally validates previous indirect evidence that TRIP8b binds to two discrete elements of the CNBD: the N-bundle loop and the C-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The model structurally validates previous indirect evidence, which suggested that TRIP8b binds to two discrete elements of the CNBD: the N-bundle loop and the C-helix (Saponaro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation of previous work by the structural model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "4b365bd0-17ab-4042-9d8b-c1325257d43a",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C80",
+      "claim": "As a consequence of the interaction with TRIP8bnano, the C-helix of CNBD increases in length.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of the interaction with TRIP8bnano, the C-helix of CNBD increases in length, a behavior previously observed in the case of cAMP binding (Puljung and Zagotta, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from NMR analysis and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "42130729-9e1a-4cc4-a56f-fd49874c9ae0",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C81",
+      "claim": "The finding that TRIP8b and cAMP share the same binding sites on the C-helix provides a solid molecular explanation for functional data, which imply a competition between the two regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that TRIP8b and cAMP share the same binding sites on the C-helix provides a solid molecular explanation for functional data, which imply a competition between the two regulators (Han et al., 2011; DeBerg et al., 2015; Bankston et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model and is consistent with previous functional studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "7a302e02-1d86-4ddd-9be6-55a4886a4137",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C82",
+      "claim": "A direct competition model cannot fully explain the mutually antagonistic effect of TRIP8b and cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study, however, has indicated that a direct competition model cannot fully explain the mutually antagonistic effect of the two ligands (Hu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "df7c0be7-f70c-4c45-a221-3f087f8878cc",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C83",
+      "claim": "The inhibitory effect of TRIP8b on channel activity persists even at saturating cAMP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the fact that the inhibitory effect of TRIP8b on channel activity persists even at saturating cAMP concentrations advocated an allosteric component in the regulation mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding that supports an allosteric mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "cf820348-0139-4192-b578-cefa349404d5",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C84",
+      "claim": "The N547D mutation in the N-bundle loop controls cAMP affinity in the binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, showing that the N547D mutation in the N-bundle loop controls cAMP affinity in the binding pocket support the conclusion that the N-bundle loop allosterically controls cAMP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by ITC and patch clamp experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "14eef81e-ec66-4550-9cef-8b4099d457cf",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C85",
+      "claim": "The N-bundle loop allosterically controls cAMP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, showing that the N547D mutation in the N-bundle loop controls cAMP affinity in the binding pocket support the conclusion that the N-bundle loop allosterically controls cAMP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis data showing that N547D affects cAMP binding without directly contacting the cAMP binding pocket.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "f3d7f2f1-5768-4892-88f1-69b7fd16f371",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C86",
+      "claim": "The 37 aa long fragment identified by Lyman et al. (2017) is lacking one important contact residue, namely E240.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural model also explains why a previously identified peptide selected by Lyman et al. (2017) failed to reproduce the binding affinity of the TRIP8bcore for the CNBD. This 37 aa long fragment is lacking one important contact residue, namely E240, which, in our model, forms a salt bridge with R650 of the CNBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model and comparison with the peptide sequence from Lyman et al. (2017).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "e17cd6b0-2219-439d-839b-142139dbf6d3",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C87",
+      "claim": "The loss of E240 is presumably the reason for the major decrease in affinity (about 20 times lower) reported for the 37 aa peptide by Lyman et al. (2017).",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of one crucial interaction is presumably the reason for the major decrease in affinity (about 20 times lower) reported for this peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model and the binding data from Lyman et al. (2017).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "e0fd460e-f56b-4612-8f0b-043b33c0049e",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C88",
+      "claim": "TRIP8bnano binds the HCN channel CNBD with high affinity and fully abolishes the cAMP effect in all tested isoforms (HCN1, 2 and 4).",
+      "claim_type": "EXPLICIT",
+      "source": "In functional assays, we showed that TRIP8bnano binds the HCN channel CNBD with high affinity and fully abolishes the cAMP effect in all tested isoforms (HCN1, 2 and 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by patch clamp experiments as shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "c42f870e-5320-481e-8670-3f55b7f5026a",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C89",
+      "claim": "The polycationic TAT sequence would be best linked to the N-terminus of TRIP8bnano to avoid interference with the cationic residues of CNBD.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure suggested that the polycationic TAT sequence would be best linked to the N-terminus of TRIP8bnano to avoid interference with the cationic residues of CNBD, mainly located in the distal region of C-helix, which are crucial for the binding of the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design decision based on the structural model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "1f9f6b97-1133-4ad3-9b9e-428bc0a0b445",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C90",
+      "claim": "The TAT-TRIP8bnano peptide is efficiently delivered inside the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From test experiments with the TAT-TRIP8bnano peptide in SAN myocytes, we can conclude that this strategy was successful in that: (i) the peptide is efficiently delivered inside the cells; (ii) it is kept in its active conformation; (iii) the TAT sequence did not damage cell membranes and did not interfere with the basic features of If and ICa,L currents; (iv) the modification did not affect the proteolytic stability of the TRIP8bnano peptide at least in the time frame of our experiments (30 min to 1 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional experiments in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "eaf8fc35-e535-4daa-bdf2-572f12bd7e7e",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C91",
+      "claim": "TAT-TRIP8bnano is kept in its active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "From test experiments with the TAT-TRIP8bnano peptide in SAN myocytes, we can conclude that this strategy was successful in that: (i) the peptide is efficiently delivered inside the cells; (ii) it is kept in its active conformation; (iii) the TAT sequence did not damage cell membranes and did not interfere with the basic features of If and ICa,L currents; (iv) the modification did not affect the proteolytic stability of the TRIP8bnano peptide at least in the time frame of our experiments (30 min to 1 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional experiments in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "0f9294f2-5af4-41da-b369-ac294cdcb083",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C92",
+      "claim": "The TAT sequence did not damage cell membranes and did not interfere with the basic features of If and ICa,L currents.",
+      "claim_type": "EXPLICIT",
+      "source": "From test experiments with the TAT-TRIP8bnano peptide in SAN myocytes, we can conclude that this strategy was successful in that: (i) the peptide is efficiently delivered inside the cells; (ii) it is kept in its active conformation; (iii) the TAT sequence did not damage cell membranes and did not interfere with the basic features of If and ICa,L currents; (iv) the modification did not affect the proteolytic stability of the TRIP8bnano peptide at least in the time frame of our experiments (30 min to 1 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional experiments in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "aa1db825-3e13-43e9-8950-7a51145cd35c",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C93",
+      "claim": "The TAT modification did not affect the proteolytic stability of the TRIP8bnano peptide at least in the time frame of 30 min to 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "From test experiments with the TAT-TRIP8bnano peptide in SAN myocytes, we can conclude that this strategy was successful in that: (i) the peptide is efficiently delivered inside the cells; (ii) it is kept in its active conformation; (iii) the TAT sequence did not damage cell membranes and did not interfere with the basic features of If and ICa,L currents; (iv) the modification did not affect the proteolytic stability of the TRIP8bnano peptide at least in the time frame of our experiments (30 min to 1 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional experiments in Figure 6 showing sustained activity over the experimental time frame.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "61057dd9-a1c6-4000-9b01-56b3094602c0",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C94",
+      "claim": "TRIP8bnano selectively controls native If currents and the rate of spontaneous firing in SAN myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we successfully used the miniaturized TRIP8bnano peptide to selectively control native If currents and the rate of spontaneous firing in SAN myocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional experiments in Figure 5 and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "9674195c-1aab-4002-b033-5efe38108ac1",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C95",
+      "claim": "Unlike channel blockers, TRIP8bnano only interferes with the cAMP-based regulation of HCN channels, while leaving basal HCN functions unaltered.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike channel blockers, which inhibit ionic currents, the peptide only interferes with the cAMP-based regulation of HCN channels, while leaving basal HCN functions unaltered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional experiments showing that TRIP8bnano prevents cAMP effects without affecting basal channel properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "1132297c-331f-4f14-9970-1b4231ed62fa",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C96",
+      "claim": "TRIP8bnano is selective for HCN and does not interfere with other cAMP-modulated channels present in the SAN, such as L-type Ca2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition and in contrast to even the most selective blockers, it is selective for HCN and it does not interfere with other cAMP-modulated channels present in the SAN, such as L-type Ca2+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the functional experiments in Figure 6 showing no effect on ICa,L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "01fdb5f9-d168-4c76-991c-1cb5a08d4080",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "claim_id": "C97",
+      "claim": "TRIP8bnano is a promising tool in targeted therapeutic interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, this makes TRIP8bnano a promising tool in targeted therapeutic interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e54ea080-f011-4429-a235-4942eb184add",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TRIP8bnano, a 40-amino acid peptide (residues 235-275 of TRIP8b), binds to the HCN2 CNBD with a KD of 1.5 \u00b1 0.1 \u00b5M, which is similar to the binding affinity of the longer TRIP8bcore (KD = 1.2 \u00b1 0.1 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are well-supported by ITC measurements shown in Figure 1B. The binding affinities are quantitatively determined with error estimates, and the similarity between TRIP8bnano and TRIP8bcore binding is clearly demonstrated. The experimental approach is appropriate for measuring protein-peptide interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "704185e0-31ef-4f52-9e9a-e8b1cdf46257",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TRIP8bnano is intrinsically disordered when unbound but folds into two \u03b1-helices (helix N: L238-E250 and helix C: T253-R269) upon binding to the CNBD, with unstructured termini.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C77-C78 are supported by NMR spectroscopy data (Figure 1C-D). The comparison of HSQC spectra between bound and unbound states clearly shows folding upon binding. The secondary structure determination from dihedral angles is a standard NMR approach. The inference of intrinsic disorder from limited resonance dispersion is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "5b6de8ef-b2e1-4e08-a32d-2b9aa498afe3",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TRIP8bnano binding induces folding of the distal C-helix region (residues 657-662) of the CNBD but does not induce P-helix formation, and the CNBD maintains its cAMP-free state conformation overall.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by NMR analysis (Figure 2) and are consistent with previous structural studies. The finding that TRIP8bnano induces C-helix folding but not P-helix folding is a novel observation that distinguishes TRIP8b binding from cAMP binding. The structural characterization is thorough and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The structural model reveals that TRIP8bnano binds to both the C-helix and N-bundle loop of the CNBD through multiple electrostatic interactions, including key salt bridges (K665/K666-E264/E265, R650-E240/E241) and hydrogen bonds (N547-D252), which are validated by mutagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C49, C79 are well-supported by the combination of NMR-derived structural modeling (Figure 3) and extensive mutagenesis validation (Figure 3\u2014figure supplement 3). Each predicted interaction was tested by reverse charge or disruptive mutations, and all showed significant reductions in binding affinity. The convergence of structural and functional data provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "6704fda7-a6bb-456f-a1ee-945f0baef87d",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TRIP8b and cAMP directly compete for binding to the distal region of the C-helix, as residues R662 and K665 face inward when binding cAMP but outward when binding TRIP8b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C81 are supported by structural modeling (Figure 3\u2014figure supplement 4) and are consistent with previous functional studies showing competition. The structural explanation for the competition is logical and provides molecular detail for previously observed functional antagonism. However, this is based on modeling rather than direct experimental observation of both complexes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "0c1d4fc4-d72e-46a0-ab37-cb3e9f9d74f1",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The N547D mutation in the N-bundle loop reduces cAMP binding affinity (KD increases from 1.4 to 5.5 \u00b5M) and reduces cAMP-induced voltage shift (from 12 mV to 5 mV), demonstrating that the N-bundle loop allosterically modulates cAMP binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53, C84-C85 are supported by ITC and patch-clamp data (Figure 3\u2014figure supplement 5-6). The N547D mutation affects cAMP binding without directly contacting the cAMP binding pocket, providing strong evidence for allosteric modulation. The NMR control showing proper folding of the mutant rules out structural artifacts. This is an important mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "2683b18b-d78b-4e2c-91b0-5257f7d12c31",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TRIP8bnano fully prevents cAMP-induced voltage shifts in all three HCN isoforms tested: ~13 mV in HCN4, ~11 mV in HCN2, and ~10 mV left shift in HCN1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C88 are well-supported by patch-clamp experiments (Figure 4). The data show complete reversal of cAMP effects across multiple HCN isoforms with appropriate controls and statistical analysis. The consistency across isoforms strengthens the conclusion. Sample sizes appear adequate (N\u226511).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "519e6352-d330-4fc1-86f5-e2ba1c912086",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TRIP8bnano affects channel gating only when added intracellularly and prevents other cAMP-mediated effects including acceleration of activation kinetics and increase in maximal current (HCN2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by control experiments and kinetic analysis (Figure 4, Figure 4\u2014figure supplement 2). The extracellular control confirms membrane impermeability. The prevention of kinetic effects and current increase demonstrates comprehensive antagonism of cAMP effects beyond voltage-dependence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "678b774f-806f-4196-815b-e05e18836c3b",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In rabbit SAN myocytes, TRIP8bnano shifts the If activation curve to hyperpolarized voltages, prevents cAMP-dependent potentiation, and reduces spontaneous firing rate by 30%, comparable to physiological acetylcholine effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by patch-clamp and current-clamp experiments in native cardiac cells (Figure 5). The functional effects on native channels and cardiac automaticity demonstrate physiological relevance. The comparison to acetylcholine provides important context, though the cited reference is from 1989 and experimental conditions may differ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "41c71033-2f0f-46ce-9479-ceabd1f63a52",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TAT-TRIP8bnano is cell-permeable, maintains activity, and selectively prevents \u03b2-adrenergic stimulation of If in mouse SAN myocytes without affecting ICa,L, as demonstrated by comparison with scrambled control peptide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76, C90-C93 are well-supported by experiments in mouse SAN myocytes (Figure 6, Figure 6\u2014figure supplement 1). The TAT-fusion strategy is validated by bath application experiments, and selectivity is demonstrated by lack of effect on ICa,L. The scrambled peptide control is critical and shows specificity. Statistical analysis is appropriate with adequate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "e987a63a-fcc2-47bb-aa32-d1ccbc3cf2d8",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The structural model explains why the 37-aa peptide from Lyman et al. (2017) had reduced affinity: it lacks E240, which forms a critical salt bridge with R650 of the CNBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by the structural model and mutagenesis data showing the importance of E240 (Figure 3C, Figure 3\u2014figure supplement 3). The R650E mutation caused >6-fold reduction in binding. This provides a rational explanation for the previous study's findings, though direct testing of the Lyman peptide would strengthen the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "44efa792-3892-49d9-9b4a-9e47827b6a0b",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TRIP8bnano binding causes the C-helix of CNBD to increase in length, similar to cAMP binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by NMR analysis and is consistent with previous structural studies of cAMP binding. The parallel between TRIP8bnano and cAMP effects on C-helix structure is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "9ed61f92-4bdf-4a32-bc98-686768fcdeb5",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The TAT sequence was linked to the N-terminus of TRIP8bnano to avoid interference with cationic residues in the distal C-helix of CNBD that are crucial for binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is a rational design decision based on the structural model showing that key binding residues (K665, K666) are at the C-terminal end of TRIP8bnano. The success of the TAT-TRIP8bnano construct validates this design choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "36b6efe1-3f46-450a-99d0-d328fab00fd7",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TRIP8bnano represents a novel, selective approach to control HCN channel cAMP regulation without affecting basal function or other cAMP-modulated channels, making it a promising therapeutic tool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C97 are supported by the comprehensive functional characterization showing selectivity for HCN over ICa,L and selective antagonism of cAMP effects while preserving basal function. However, C97 regarding therapeutic promise is somewhat speculative as it requires additional in vivo validation, pharmacokinetic studies, and assessment of potential off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "3a95497b-364e-4d84-ba31-7283fc0b9318",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge claims about HCN channels, TRIP8b, cAMP regulation, and previous studies establish the context for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C22, C32, C35, C62-C63, C69, C82-C83 represent established knowledge from the literature with appropriate citations. These provide necessary background but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "e6b7cbaa-4fad-4bdd-835a-48ec181cc55a",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TRIP8bnano recapitulates TRIP8b effects in HCN isoforms and cardiac If, and TAT-TRIP8bnano selectively prevents \u03b2-adrenergic activation of If, representing a novel approach for targeted HCN pharmacology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 summarize the main findings of the study. These are well-supported by the comprehensive experimental data across multiple systems (recombinant channels, native cardiac cells, multiple species). The claim of novelty (C6) is justified by the unique properties of the peptide compared to existing HCN blockers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    },
+    {
+      "id": "286bdc89-e192-4e3e-9391-8d5d99275a60",
+      "content_id": "7308695c-c966-4c33-8d52-04204f924317",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The R549E mutation in HCN1 induces a left shift in V1/2 from \u221272.7 to \u221280.4 mV, comparable to TRIP8bnano effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by patch-clamp data (Figure 4\u2014figure supplement 1). This control mutation that prevents cAMP binding produces similar effects to TRIP8bnano, validating the mechanism of action. The comparison strengthens the interpretation of TRIP8bnano effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:10:15.166616Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "089df7f9-f31b-4890-ac75-026641955998",
+      "result_id": "e54ea080-f011-4429-a235-4942eb184add"
+    },
+    {
+      "claim_id": "3f3a4fb9-c62e-4023-a8c0-4f0ebfaa77b7",
+      "result_id": "e54ea080-f011-4429-a235-4942eb184add"
+    },
+    {
+      "claim_id": "44ff73d8-d2b0-41b7-b04f-c62a0f748c75",
+      "result_id": "e54ea080-f011-4429-a235-4942eb184add"
+    },
+    {
+      "claim_id": "3a714fda-392f-45c5-aad8-4e091dbf79a7",
+      "result_id": "704185e0-31ef-4f52-9e9a-e8b1cdf46257"
+    },
+    {
+      "claim_id": "360573f7-1679-4959-86d0-16cdc0369626",
+      "result_id": "704185e0-31ef-4f52-9e9a-e8b1cdf46257"
+    },
+    {
+      "claim_id": "ac4ad6b1-ccd6-4346-b3b5-667cb54a9422",
+      "result_id": "704185e0-31ef-4f52-9e9a-e8b1cdf46257"
+    },
+    {
+      "claim_id": "2910187d-3cd0-4ad0-b7ff-0334d7b991dc",
+      "result_id": "704185e0-31ef-4f52-9e9a-e8b1cdf46257"
+    },
+    {
+      "claim_id": "27234028-b9d5-4896-9f1d-239408e15059",
+      "result_id": "704185e0-31ef-4f52-9e9a-e8b1cdf46257"
+    },
+    {
+      "claim_id": "c39db683-74ec-4b06-98c9-8ba795d56af5",
+      "result_id": "5b6de8ef-b2e1-4e08-a32d-2b9aa498afe3"
+    },
+    {
+      "claim_id": "e258b835-816b-4986-8a60-a0e447edc756",
+      "result_id": "5b6de8ef-b2e1-4e08-a32d-2b9aa498afe3"
+    },
+    {
+      "claim_id": "25e83942-c203-4d0d-aff3-a3f1aa9cd390",
+      "result_id": "5b6de8ef-b2e1-4e08-a32d-2b9aa498afe3"
+    },
+    {
+      "claim_id": "c42a4c08-9ab3-4a69-8e27-bd8ac2dc83af",
+      "result_id": "5b6de8ef-b2e1-4e08-a32d-2b9aa498afe3"
+    },
+    {
+      "claim_id": "1e8545c6-06e9-4705-9545-9c91695983fb",
+      "result_id": "5b6de8ef-b2e1-4e08-a32d-2b9aa498afe3"
+    },
+    {
+      "claim_id": "6cdbf368-46fc-4581-b4fb-58ea18831086",
+      "result_id": "5b6de8ef-b2e1-4e08-a32d-2b9aa498afe3"
+    },
+    {
+      "claim_id": "121841e1-36c0-4c4a-8fbd-aafe6383e3c2",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "553f796a-3c99-4459-88df-d3f9afdfb0b7",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "c2d8ffcb-f2e4-4ff8-b167-a9aaaca3292d",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "dd380d17-3ca6-4de6-b7f9-ba48f61be087",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "2e0c9cdc-c3a4-4941-a674-01849903b3d8",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "2084d9fb-59a6-466b-9bbb-5732c05e6b8c",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "87638416-4bdf-496d-8866-14737d30eda8",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "6f1d38c4-bea3-46bf-a823-e287ff487ec7",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "f60f4930-c3de-41fe-8802-5606bea08045",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "3cf9ebda-eddc-4c1a-8c60-3100bf7e8d76",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "a159ac61-26a6-4250-ba70-d38d5aae9b3b",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "8f6224aa-e2e1-48d7-99c0-83d79fa61407",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "32d75145-caf9-4504-a24f-a33db4e41413",
+      "result_id": "d2a40047-4d6f-4bc9-8f78-f0e23dbcb460"
+    },
+    {
+      "claim_id": "8e46215b-366f-40fe-8e69-778c6cec70d7",
+      "result_id": "6704fda7-a6bb-456f-a1ee-945f0baef87d"
+    },
+    {
+      "claim_id": "e67d183f-ba76-47e8-b1ba-68068c26e335",
+      "result_id": "6704fda7-a6bb-456f-a1ee-945f0baef87d"
+    },
+    {
+      "claim_id": "42130729-9e1a-4cc4-a56f-fd49874c9ae0",
+      "result_id": "6704fda7-a6bb-456f-a1ee-945f0baef87d"
+    },
+    {
+      "claim_id": "f9cbc23c-22b9-4c66-92c6-ea549211a061",
+      "result_id": "0c1d4fc4-d72e-46a0-ab37-cb3e9f9d74f1"
+    },
+    {
+      "claim_id": "1bd54d87-d06e-424e-853d-1b2815e0d76d",
+      "result_id": "0c1d4fc4-d72e-46a0-ab37-cb3e9f9d74f1"
+    },
+    {
+      "claim_id": "ca2c4de5-1bdc-461a-b691-7bcee151d2d2",
+      "result_id": "0c1d4fc4-d72e-46a0-ab37-cb3e9f9d74f1"
+    },
+    {
+      "claim_id": "fcc7ef72-48fc-4d5f-a24a-cda31ac0d704",
+      "result_id": "0c1d4fc4-d72e-46a0-ab37-cb3e9f9d74f1"
+    },
+    {
+      "claim_id": "cf820348-0139-4192-b578-cefa349404d5",
+      "result_id": "0c1d4fc4-d72e-46a0-ab37-cb3e9f9d74f1"
+    },
+    {
+      "claim_id": "14eef81e-ec66-4550-9cef-8b4099d457cf",
+      "result_id": "0c1d4fc4-d72e-46a0-ab37-cb3e9f9d74f1"
+    },
+    {
+      "claim_id": "515ab9c9-71bb-4169-90e7-9928a6cecf89",
+      "result_id": "2683b18b-d78b-4e2c-91b0-5257f7d12c31"
+    },
+    {
+      "claim_id": "ddec9a66-e00b-42d1-ad7e-653c729b4ded",
+      "result_id": "2683b18b-d78b-4e2c-91b0-5257f7d12c31"
+    },
+    {
+      "claim_id": "59ed42ec-7770-4751-966c-540fedda05c7",
+      "result_id": "2683b18b-d78b-4e2c-91b0-5257f7d12c31"
+    },
+    {
+      "claim_id": "e0fd460e-f56b-4612-8f0b-043b33c0049e",
+      "result_id": "2683b18b-d78b-4e2c-91b0-5257f7d12c31"
+    },
+    {
+      "claim_id": "e8d17ba3-f14d-4bb6-8676-e54c5c5c6327",
+      "result_id": "519e6352-d330-4fc1-86f5-e2ba1c912086"
+    },
+    {
+      "claim_id": "0d954dd6-33d4-44ae-92b6-bb787046c01c",
+      "result_id": "519e6352-d330-4fc1-86f5-e2ba1c912086"
+    },
+    {
+      "claim_id": "d70754e4-139c-4795-888b-d79d57fdadc1",
+      "result_id": "519e6352-d330-4fc1-86f5-e2ba1c912086"
+    },
+    {
+      "claim_id": "d77291a6-8ee7-4c82-a9d4-408bcf5e4768",
+      "result_id": "519e6352-d330-4fc1-86f5-e2ba1c912086"
+    },
+    {
+      "claim_id": "5b87cc44-1ed3-47f0-adbd-ccda2535f0e3",
+      "result_id": "678b774f-806f-4196-815b-e05e18836c3b"
+    },
+    {
+      "claim_id": "d9225e13-95fe-4e41-8558-36f930fed8c4",
+      "result_id": "678b774f-806f-4196-815b-e05e18836c3b"
+    },
+    {
+      "claim_id": "249143b2-7211-42b4-80e1-2cc86e6842f4",
+      "result_id": "678b774f-806f-4196-815b-e05e18836c3b"
+    },
+    {
+      "claim_id": "088f941f-cab0-4703-b581-e6b5c5ac150c",
+      "result_id": "678b774f-806f-4196-815b-e05e18836c3b"
+    },
+    {
+      "claim_id": "1cbe69e4-63b2-4f55-b482-ed14fdc3d7aa",
+      "result_id": "678b774f-806f-4196-815b-e05e18836c3b"
+    },
+    {
+      "claim_id": "5a86c837-6c60-42f8-87f1-5b1578a351c2",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "c04980bf-cebd-4830-a663-035c014e384c",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "c9e316d2-c681-41dd-9ed5-08ecfe2fe1bf",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "1d7ff122-ff54-4a24-8748-50b1b37dd0f3",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "07c07c36-371d-442a-b12c-67e5f67c4ac5",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "acc997cc-35cd-4700-b4f6-c93d7165b56e",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "f882c717-45a0-4f0a-98c1-d939be77aabe",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "1f9f6b97-1133-4ad3-9b9e-428bc0a0b445",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "eaf8fc35-e535-4daa-bdf2-572f12bd7e7e",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "0f9294f2-5af4-41da-b369-ac294cdcb083",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "aa1db825-3e13-43e9-8950-7a51145cd35c",
+      "result_id": "41c71033-2f0f-46ce-9479-ceabd1f63a52"
+    },
+    {
+      "claim_id": "f3d7f2f1-5768-4892-88f1-69b7fd16f371",
+      "result_id": "e987a63a-fcc2-47bb-aa32-d1ccbc3cf2d8"
+    },
+    {
+      "claim_id": "e17cd6b0-2219-439d-839b-142139dbf6d3",
+      "result_id": "e987a63a-fcc2-47bb-aa32-d1ccbc3cf2d8"
+    },
+    {
+      "claim_id": "4b365bd0-17ab-4042-9d8b-c1325257d43a",
+      "result_id": "44efa792-3892-49d9-9b4a-9e47827b6a0b"
+    },
+    {
+      "claim_id": "c42f870e-5320-481e-8670-3f55b7f5026a",
+      "result_id": "9ed61f92-4bdf-4a32-bc98-686768fcdeb5"
+    },
+    {
+      "claim_id": "61057dd9-a1c6-4000-9b01-56b3094602c0",
+      "result_id": "36b6efe1-3f46-450a-99d0-d328fab00fd7"
+    },
+    {
+      "claim_id": "9674195c-1aab-4002-b033-5efe38108ac1",
+      "result_id": "36b6efe1-3f46-450a-99d0-d328fab00fd7"
+    },
+    {
+      "claim_id": "1132297c-331f-4f14-9970-1b4231ed62fa",
+      "result_id": "36b6efe1-3f46-450a-99d0-d328fab00fd7"
+    },
+    {
+      "claim_id": "01fdb5f9-d168-4c76-991c-1cb5a08d4080",
+      "result_id": "36b6efe1-3f46-450a-99d0-d328fab00fd7"
+    },
+    {
+      "claim_id": "f608284e-77af-4703-bc9f-2b475e90115b",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "2facb577-ab08-4f9b-ba44-5bc01f151c9f",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "42aa53c0-5160-44c6-b15b-bb73280e6d8c",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "07c1f23a-141d-495a-bc4f-d5bf0c02135c",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "fd6fb28d-6e92-4c0c-b7ae-580bbe21d141",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "366bdfa0-8496-4c7e-b0da-10732314433a",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "91275efd-68cb-4153-841c-02c560aafab8",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "2c3b135b-58ac-45d9-9fa5-a8ad760b0a2a",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "49cdc4b0-16c7-4cee-bbb5-a94ff87444e2",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "17188992-8a36-4f4e-819c-fc8a57fa6b01",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "4f3dd3a7-66ae-4004-b8b9-5506374bc714",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "328e61eb-1fb4-4420-9923-11597633dd5f",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "a06f5601-dc1d-4d34-a342-a46adc2f53bf",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "4bdc0f35-017d-4214-bc7a-f0b513359f7c",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "03ebc414-de90-4d6b-84eb-5ba99a96b509",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "2b293e6c-f5a6-4d5b-aeca-2db1f908985f",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "9d8e7dd1-8148-4dbb-a18c-6b819c098da7",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "6b043653-e2de-4b63-a8f7-245876a815df",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "c42a4c08-9ab3-4a69-8e27-bd8ac2dc83af",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "336c8b0a-f45e-4195-99c6-bae73736bcd5",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "f8be0b6e-c78e-4b5c-a55b-d53c9e8035b4",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "310edc9d-ccd0-4f09-accb-edb30dc7e827",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "af04fc84-181b-4bef-a4fd-539be0cd4531",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "7a302e02-1d86-4ddd-9be6-55a4886a4137",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "df7c0be7-f70c-4c45-a221-3f087f8878cc",
+      "result_id": "3a95497b-364e-4d84-ba31-7283fc0b9318"
+    },
+    {
+      "claim_id": "826a388e-2d54-4285-a6a0-8dea4babb50f",
+      "result_id": "e6b7cbaa-4fad-4bdd-835a-48ec181cc55a"
+    },
+    {
+      "claim_id": "ae84ef5c-64fc-4366-a28b-28797bca65b4",
+      "result_id": "e6b7cbaa-4fad-4bdd-835a-48ec181cc55a"
+    },
+    {
+      "claim_id": "61b339ce-0907-4687-9334-475cada0044f",
+      "result_id": "e6b7cbaa-4fad-4bdd-835a-48ec181cc55a"
+    },
+    {
+      "claim_id": "87853171-5f53-4ea0-ac1d-5b81b20550bb",
+      "result_id": "e6b7cbaa-4fad-4bdd-835a-48ec181cc55a"
+    },
+    {
+      "claim_id": "4fa05027-92a1-414f-b72e-3217fb82b84a",
+      "result_id": "286bdc89-e192-4e3e-9391-8d5d99275a60"
+    }
+  ],
+  "comparisons": []
+}

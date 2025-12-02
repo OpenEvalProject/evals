@@ -1,0 +1,1532 @@
+{
+  "submission": {
+    "id": "23a24d5a-6449-4ef9-a475-9a40b8efdf46",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:42:14.026372Z",
+    "updated_at": "2025-12-01T23:42:14.026372Z"
+  },
+  "content": [
+    {
+      "id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "submission_id": "23a24d5a-6449-4ef9-a475-9a40b8efdf46",
+      "content_type": "manuscript",
+      "content_text": "# CRISPR-based herd immunity can limit phage epidemics in bacterial populations\n\n## Authors\n\n- Pavel Payne<sup>1</sup> ([ORCID: 0000-0002-2711-9453](https://orcid.org/0000-0002-2711-9453)) \u2020\n- Lukas Geyrhofer<sup>3</sup> ([ORCID: 0000-0002-8043-2975](https://orcid.org/0000-0002-8043-2975))\n- Nicholas H Barton<sup>2</sup>\n- Jonathan P Bollback<sup>1</sup> ([ORCID: 0000-0002-4624-4612](https://orcid.org/0000-0002-4624-4612)) \u2020\n\n### Affiliations\n\n1. Institute of Integrative Biology University of Liverpool Liverpool United Kingdom\n2. Institute of Science and Technology Austria Klosterneuburg Austria\n3. Department of Chemical Engineering Technion - Israel Institute of Technology Haifa Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nHerd immunity, a process in which resistant individuals limit the spread of a pathogen among susceptible hosts has been extensively studied in eukaryotes. Even though bacteria have evolved multiple immune systems against their phage pathogens, herd immunity in bacteria remains unexplored. Here we experimentally demonstrate that herd immunity arises during phage epidemics in structured and unstructured Escherichia coli populations consisting of differing frequencies of susceptible and resistant cells harboring CRISPR immunity. In addition, we develop a mathematical model that quantifies how herd immunity is affected by spatial population structure, bacterial growth rate, and phage replication rate. Using our model we infer a general epidemiological rule describing the relative speed of an epidemic in partially resistant spatially structured populations. Our experimental and theoretical findings indicate that herd immunity may be important in bacterial communities, allowing for stable coexistence of bacteria and their phages and the maintenance of polymorphism in bacterial immunity.\n\n## Introduction\n\nThe term \u2018herd immunity\u2019 has been used in a variety of ways by different authors (see Fine et al., 2011). Here, we define it as a phenomenon where a fraction of resistant individuals in a population reduces the probability of transmission of a pathogen among the susceptible individuals. Furthermore, if the fraction of resistant individuals in a population is sufficiently large the spread of a pathogen is suppressed. Experimental research into the phenomenon has focused mostly on mammals (Jeltsch et al., 1997; Mariner et al., 2012), birds (van Boven et al., 2008; Meister et al., 2008), and invertebrates (Konrad et al., 2012; Wang et al., 2013). In human populations the principles of herd immunity were employed to limit epidemics of pathogens through vaccination programs (Fine et al., 2011), which in the case of smallpox lead to its eradication between 1959 and 1977 (Fenner, 1993).\n\nAlongside advances in vaccination programs, the formalization of a general theory of herd immunity was developed. The theory is based on a central parameter, $R_{0}$, which describes the fitness of the pathogen, as measured by the number of subsequent cases that arise from one infected individual in a population (for a historical review of $R_{0}$ see [Heesterbeek, 2002]). Thus, $R_{0}$ indicates the epidemic spreading potential in a population. Given $R_{0}$ the herd immunity threshold is defined as,\n\n$$\nH=\\frac{R_{0}-1}{R_{0}},\n$$\n\nwhich determines the required minimum fraction of resistant individuals needed to halt the spread of an epidemic. $R_{0}$ and subsequently also $H$ are affected by the specific details of transmission and the contact rate among individuals (Grassly and Fraser, 2008). Many theoretical studies have addressed the influence of some of these details, in particular maternal immunity (Anderson and May, 1992-08), age at vaccination (Anderson and May, 1982; Nokes and Anderson, 1988), age related or seasonal differences in contact rates (Schenzle, 1984; Anderson and May, 1985; Yorke et al., 1979), social structure (Fox et al., 1971), geographic heterogeneity (Anderson and May, 1984; Lloyd and May, 1996; Real and Biek, 2007), and the underlying contact network of individuals (Ferrari et al., 2006).\n\nInterestingly, little work has focused on the potential role of herd immunity in microbial systems which contain a number of immune defense systems and have an abundance of phage pathogens. These defenses vary in their potential to provide herd immunity as they target various stages of the phage life cycle, from adsorption to replication and lysis. Early defense mechanisms include the prevention of phage adsorption by blocking of phage receptors (Nordstr\u00f6m and Forsgren, 1974), production of an extracellular matrix (Hammad, 1998; Sutherland et al., 2004), or the excretion of competitive inhibitors (Destoumieux-Garz\u00f3n et al., 2005). Alongside these bacteria have evolved innate immune systems that target phage genomes for destruction. These include host restriction-modification systems (RMS) (Blumenthal and Cheng, 2002), argonaute-based RNAi-like systems (Swarts et al., 2014), and bacteriophage-exclusion (BREX) systems (Goldfarb et al., 2015). In addition to innate systems, bacteria have evolved an adaptive immune system called CRISPR-Cas (clustered regularly interspaced short palindromic repeat) (Sorek et al., 2013). In order for any of these immune systems to provide herd immunity, they must prevent further spread of the pathogen. Therefore, unless the phage particles degrade in the environment at a timescale comparable to the phage adsorption rate, the immune system must provide a \u2018sink\u2019 for the infectious particles reducing the average number of successful additional infections below one. Unlike the early defense mechanisms that may simply prevent an infection but not the further reproduction of infectious particles, the RMS, BREX, argonaute-based RNAi-like, and the CRISPR-Cas systems degrade foreign phage DNA after it is injected into the cell, and thus continue to remove phage particles from the environment, which increases their potential to provide herd immunity. In order for herd immunity to arise, the population must also be polymorphic for immunity, which can be achieved if immunity is plasmid borne. In addition to this, the CRISPR-Cas system is unique in that it is adaptive allowing cells to acquire immunity upon infection (see Figure 1A,B and C), which can lead to polymorphism in immunity even if the system is chromosomal.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig1-v3.jpg)\n\n**Figure 1.:** The CRISPR/Cas system provides immunity to phages and its main features can be described by three distinct stages. (A) Acquisition. When a cell gets infected by a phage, a protospacer on the invading phage DNA (indicated as a red bar) is recognized by Cas1 and Cas2. The protospacer is cleaved out and ligated to the leader end (proximal to the Cas genes) of the CRISPR array as a newly acquired spacer (red diamond). (B) Processing. The CRISPR array is transcribed as a Pre-crRNA and processed by Cas9 (assisted by RNaseIII and trans\u2013activating RNA, not shown) into mature crRNAs. (C) Interference. Mature crRNAs associate with Cas9 proteins to form interference complexes which are guided by sequence complementarity between the crRNAs and protospacers to cleave invading DNA of phages whose protospacers have been previously incorporated into the CRISPR array. (D) A truncated version of the CRISPR system on a low copy plasmid, which was used in this study lacks cas1 and cas2 genes and was engineered to target a protospacer on the T7 phage chromosome to provide Escherichia coli cells with immunity to the phage. The susceptible strain contains the same plasmid except the spacer does not target the T7 phage chromosome.\n\nIn addition to immune system-specific factors, the reproductive rate of phage depends strongly on the physiology of the host bacterium (Hadas et al., 1997), and the underlying effective contact network which may vary greatly in bacterial populations depending on the details of their habitat. Thus, herd immunity will be influenced by the physiological state of the bacteria and the mobility of the phage in the environment through passive diffusion and movement of infected individuals. Taken together these details call into question the applicability of the traditional models of herd immunity from vertebrates to phage-bacterial systems. Thus, experimental investigation and further development of extended models that take into account the specifics of microbial systems are required.\n\nTo investigate under which conditions herd immunity may arise in bacterial populations, we constructed an experimental system consisting of T7 phage and bacterial strains susceptible and resistant to it. Our experimental system can be characterized by the following features. First, we used two strains of Escherichia coli, one with an engineered CRISPR-based immunity to the T7 phage, and the other lacking it (Figure 1D). Second, we examined the dynamics of the phage spread in different environments \u2013 spatially structured and without structure. Furthermore, we developed and analyzed a spatially explicit model of our experimental system to determine the biologically relevant parameters necessary for bacterial populations to exhibit herd immunity.\n\n## Results\n\n### Properties of resistant individuals\n\nWe engineered a resistant E. coli strain by introducing the CRISPR-Cas Type II system from Streptococcus pyogenes with a spacer targeting the T7 phage genome (see Material and Methods). We further characterized the ability of the system to confer resistance to the phage. We find a significant level of resistance as measured by the probability of cell burst when exposed to T7 (Figure 2A). However, resistance is not fully penetrant as approximately 1 in 1000 resistant cells succumb to infection. In addition, we observe that as phage load increases (multiplicity of infection, MOI) the probability that a cell bursts increases (Figure 2A). In order to determine the herd immunity threshold in our experimental system, we constructed the resistant strain such that upon infection the cell growth is halted, yet the cell still adsorbs and degrades phages (Figure 2B,C). This feature is important as it prevents the action of frequency dependent selection which in naturally growing populations will favor the resistant strain until its frequency reaches the herd immunity threshold. Thus, in our system if the frequency of the resistant strain is below the herd immunity threshold, the resistant cells remain below the threshold and are unable to stop the epidemic and the whole population collapses. In contrast, if the frequency of resistant individuals in the population is above the herd immunity threshold, the resistant individuals provide complete herd immunity and the population survives. These properties allow us to quantify the expanding epidemic in both liquid media and on bacterial lawns (without and with spatial structure, respectively) using high throughput techniques. Specifically, it allows us to control for the complex dynamics of the system arising from frequency dependent selection and simultaneous changes in the physiological states of the cells (growth rates depending on the nutrient concentrations) and phage (burst size, latent period depending on the cell\u2019s physiology).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig2-v3.jpg)\n\n**Figure 2.:** (A) The probability that a resistant cell bursts, relative to a susceptible cell, at three different initial multiplicities of infection (MOI). The probability that a resistant cell bursts at MOI 1000 is significantly higher than at MOI 10 (p = $0.019$, $t_{4}$ = $3.031$) or at MOI 100 (p = $0.022$, $t_{5}$ = $2.674$). The error bars show the standard deviations from the mean. Note that this measure is not a widely used \u2019efficiency of plating\u2019 but it determines the probability of burst of single resistant cells (see Materials and methods for details). (B) The number of colony forming units (CFUs) post phage challenge (see Materials and methods). The mean number of CFUs after the bacterial cultures were exposed to the phage is not significantly different between susceptible and resistant strains at MOI 10 (p = $0.239$, $t_{22}$ = $0.721$) and (C) at MOI 100 (p = $0.27$, $t_{30}$ = $1.124$), indicating that the resistant cells\u2019 growth is halted after the cells are infected by a phage. The error bars show the standard deviations from the mean. There were no detectable CFUs in either susceptible or resistant cell cultures at MOI 1000. It should be noted that the indicated MOI values do not correspond to the average number of phages that adsorb to cells in the experiments. For MOI 10 we estimated the mean number of phages per cell as $0.229$ and for MOI 100 as 0.988 (see Materials and methods for details). It was impossible to determine the mean for MOI 1000 as there were no detectable CFUs under such conditions. The data presented in this figure can be found in Figure 2\u2014source data 1.\n\nIt should be noted that our model does not reflect this artificial property \u2013 it assumes that resistant bacteria keep growing after successfully overcoming a phage infection (see Equation (2d)). This discrepancy, however, does not affect the model prediction of the herd immunity threshold in our experimental system for the following reason: time scale of an epidemic spread through a population (double exponential phage growth) is substantially shorter than the time scale of bacterial population growth (exponential growth). Therefore, whether or not an epidemic is established does not depend on later dynamics of frequencies of resistant and susceptible individuals in the population, it only depends on the initial conditions. Similarly, the model correctly captures the dynamics of an epidemic in spatially structured populations as the phage spreads radially and in every time-point the epidemic front encounters a naive population with a constant ratio of resistant to susceptible individuals.\n\n### Herd immunity in populations without spatial structure\n\nTo understand the influence of spatial population structure, or lack thereof, we first measured the probability of population survival (i.e., whether the cultures are cleared or not) in well mixed liquid environments (no spatial structure) consisting of differing proportions of resistant to susceptible individuals and T7 phage. When the percentage of resistant individuals is in excess of 99.6% all 16 replicate populations survive a phage epidemic (i.e., show no detectable difference in growth profiles to the phage free controls; Figure 3). Populations with 99.2% and 98.4% resistant individuals show intermediate probabilities of survival \u2013 10 out of 16 replicate populations and 4 out of 16 replicate populations survive, respectively (Figure 3). The likely explanation as to why some populations survive and others collapse is due to the stochastic nature of phage adsorption after inoculation: If the population composition is close to the herd immunity threshold a stochastic excess of phage particles adsorbing to susceptible cells may trigger an epidemic, whereas if chance increases the number of phages adsorbing to resistant individuals, the epidemic is suppressed. However, when populations have fewer than 96.9% resistant individuals all 16 replicate populations fail to survive and collapse under the epidemic (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig3-v3.jpg)\n\n**Figure 3.:** Fraction of surviving populations at $18\u2062h$ post phage infection.Bacterial populations consisting of various fractions of resistant to susceptible individuals infected with $\u224850$ phages, corresponding to a multiplicity of infection (MOI) of $\u224810^{-4}$, designed to resemble an epidemic initiated by the burst size from one infected individual (see Table 2 for burst size estimates). Each population phage challenge is replicated $16$ times. The solid dark green line shows the model prediction, Equation 4, for the herd immunity threshold ($H$), given latent period ($\\lambda$), bacterial growth rate ($\\alpha$), and phage burst size ($\\beta$). Shaded area indicates $\\pm1$ standard deviation. The data presented in this figure can be found in Figure 3\u2014source data 1.\n\nAs mentioned in the introduction, phage and bacterial physiology may affect the herd immunity threshold. To test this we altered bacterial growth by reducing the concentration of nutrients in the medium by mixing LB broth with 1X M9 salts in different ratios (Figure 4), which concurrently alters the T7 phage\u2019s latent period and burst size (Figure 5A,B and Table 1). Indeed, we observe as bacterial growth rates decline the fraction of resistant individuals necessary for population survival decreases (Figure 5C). When the populations are grown in a 50% diluted growth medium, the fraction of resistant individuals required for a 100% probability of survival is 99.2%; when the fraction of resistant individuals is 75% or less populations go extinct. In a 20% growth medium the fraction of resistant individuals required for survival decreases to 96.9%, while the fraction when all replicates collapse to 50%.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig4-v3.jpg)\n\n**Figure 4.:** (A) Trajectory of population size on agar plates over time. For modeling, we assume two states of growth (dashed brown curve): first, the bacterial population grows exponential until the time $T_{depl}$, when nutrients are depleted. From this time on, growth rate is assumed to be zero and the population saturates at a maximal size $B^{final}$. Experimental observations fit this proposed growth curve to a very good extent. After all, half of all nutrients are used up in the last generation indicating that the switch between growth and no-growth should be fast. (B) Growth rates of bacteria in diluted medium follow closely Monod\u2019s empirical law, given by expression Equation 9. Fit parameters are found to be $\\alpha_{max}\u22480.720\u2062h^{-1}$ and $K_{c}\u22480.257$ (with the latter in dimensionless units as dilution of LB medium), see also Table 1. The data presented in this figure can be found in Figure 4\u2014source data 1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig5-v3.jpg)\n\n**Figure 5.:** (A) Phage burst size ($\\beta$) change as a function of nutrient concentrations. (B) Latent period ($\\lambda$) increase across the range of nutrient concentrations. Values for $\\beta$ and $\\lambda$ are given in Table 2. (C) Population survival analysis upon phage challenge as a function of the fraction of resistant cells and the intrinsic growth rate (nutrient availability, $N$). Bacteria survive the phage infection (full circles), collapse (empty circles), or exhibit both outcomes (circled dots) in the $16$ to $18$ replicates, done in $3$ independent batches. Light green errorbars at investigated dilutions of LB show the expected value and its standard deviation of $H\u2062(\\alpha)$, Equation 5, with standard error propagation of the measured $\\beta$, $\\lambda$ and $\\alpha$. In order to interpolate herd immunity to dilutions $N$ not probed in experiments (dark green line), we use a second order polynomial in $N$ to fit the data for both $\\beta/\\lambda$ and $\\beta$, which excellently matches the average measurements (a naive linear fit displays non-negligible deviations and non-sensical negative values). In addition, the dependence $\\alpha=\\alpha\u2062(N)$ is obtained by numerically inverting the Monod growth rate dependence, see Equation 9. The data presented in this figure can be found in Figure 5\u2014source data 1 and Figure 5\u2014source data 2.\n\n**Table 1.**\n Estimated parameters for bacterial growth using Monod kinetics.Undiluted LB medium ($N=1$) is assumed to have $15\u2062m\u2062g/m\u2062l$ nutrients ($10\u2062m\u2062g/m\u2062l$ Tryptone, $5\u2062m\u2062g/m\u2062l$ yeast extract). The full dataset is shown in Figure 4.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Estimate</th>\n      <th>Units</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0.720\u2062(\u00b1\u20090.011)</td>\n      <td>[h-1]</td>\n      <td>\u03b1max</td>\n    </tr>\n    <tr>\n      <td>0.257\u2062(\u00b1\u20090.012)</td>\n      <td>Dilution N of LB [0\u2062\u2026\u20621]</td>\n      <td>Kc</td>\n    </tr>\n  </tbody>\n</table>\n\nFrom the experimental observations of the herd immunity threshold values we infer the phage $R_{0}$ using Equation 1. In an undiluted growth medium the phage $R_{0}$ falls between 32 and 256 and decreases to between 4 and 128 in 50% and between 2 and 32 in 20% nutrient medium. These data indicate that bacterial populations can exhibit herd immunity in homogeneous liquid environments. However, bacteria typically live in spatially structured environments such as surfaces, biofilms or micro-colonies, therefore we extended our experiments to consider the potential impact of spatially structured populations.\n\n### Herd immunity in spatially structured populations\n\nIn order to discern the role, if any, spatial structure plays in herd immunity we conducted a set of experiments in spatially structured bacterial lawns on agar plates. Spatially structured bacterial populations provide a more fine grained measure of herd immunity, compared to the population survival assays done in liquid culture. On bacterial lawns, phages spread radially from a single infectious phage particle and the radius of plaque growth on different proportions of resistant to susceptible individuals can be easily quantified. In addition, these data allow for estimating the speed of the epidemic wave front in these different regimes using real-time imaging (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig6-v3.jpg)\n\n**Figure 6.:** (A) Example of plaque morphology and size change over $48$ hours for populations with 50% resistant cells (top) and a control with 100% susceptible cells (bottom). (B) Mean plaque size area through time. Colors indicate the different fraction of resistant individuals (color coding as in panel C). Note the distinct two phases of plaque growth \u2013 initially, phage grow fast with exponentially growing bacteria but slow once the nutrients are depleted ($\u2248$10 hr). The plaque radius is reduced, relative to 100% susceptible population, even when only a small fraction of resistant individuals are in the population. (C) Final plaque radius at 48 $h\u2062p\u2062i$. Green line shows the prediction from the model for the plaque radius $r$. Grey numbers indicate the number of plaques measured. Error bars indicate the standard deviations. The data presented in this figure can be found in Figure 6\u2014source data 1.\n\nWe observe a decline in the number of plaque forming units (see Appendix 2\u2014figure 1) and a significant decrease in final plaque sizes as the proportion of resistant individuals in the populations increases (Figure 6B,C). A reduction in the final plaque size compared to a fully susceptible population was statistically significant with as few as 10% resistant individuals in a population ($p=0.004$, $t_{53}$ = $2.744$). In order to determine the effect of resistant individuals during the earlier phase of bacterial growth (until the bacterial density on the agar plate reaches saturation; Figure 4A), we analyze the velocities of plaque growth between 0 and 24 hr post inoculation ($h\u2062p\u2062i$). We find that the speed is significantly reduced after $11\u2062h\u2062p\u2062i$ when the population consists of as few as 10% of resistant individuals ($p=0.0317$, $t_{32}$ = $1.923$). As the fraction of resistant individuals further increases, the speed declines significantly at earlier and earlier time points: $6\u2062h\u2062p\u2062i$ with 20% ($p=0.0392$, $t_{62}$ = $1.79$), and $5.67\u2062h\u2062p\u2062i$ with 30% ($p=0.0286$, $t_{53}$ = $1.943$). In fact, when the fraction of resistant individuals exceeds 40%, the reduction in the speed of the spread is statistically significant immediately after the plaques are visually detectable (Figure 7). It should be noted that all populations with such low percentages of resistant individuals in liquid environment collapsed, indicating that spatial structure plays a role in herd immunity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig7-v3.jpg)\n\n**Figure 7.:** (A) Speed of expanding phage epidemics for all population compositions is initially high, before it drops once nutrients are depleted at around $10\u2062h\u2062p\u2062i$ (hours post infection). (B) Plaque speed significance. Comparing speeds of plaque spread with the 100% susceptible control. Linear regression of a sliding window spanning 4 hours of the radius sizes was calculated for all individual plaques and all compositions of the populations between $t_{0}$ and $t_{24}$. Slopes of the linear regressions for all compositions of the populations were compared using a two-sided heteroscedastic t-test against the 100% susceptible dataset. The data presented in this figure can be found in Figure 7\u2014source data 1.\n\nThe results presented in this and the previous section would allow us to use Equation 1 to infer a value for $R_{0}$ from the observed threshold between surviving and collapsing bacterial populations, Figures 3,5. We also observe that herd immunity is strongly influenced by spatial organization of the population, Figure 6. How the exact value of $H$ (and subsequently the \u2018classical\u2019 epidemiological parameter $R_{0}$) is affected by various factors such as bacterial growth rate, phage burst size and latent period is, however, difficult to resolve experimentally. Similarly, quantification of the effect of spatial structure is hardly achievable solely by experimental investigation. In order to disentangle the roles of all the factors mentioned above, we proceed with development and analysis of a mathematical model of the experimental system.\n\n### Modelling bacterial herd immunity\n\nWe developed a model of phage growth that takes several physiological processes into account: bacterial growth during the experiment, bacterial mortality due to phage infection, and phage mortality due to bacterial immunity. Furthermore, we use the previously reported observation that phage burst size $\\beta$ and latent period $\\lambda$ depend strongly on the bacterial growth rate $\\alpha$ (see Table 1).\n\nThe main processes in our model system can be defined by the following set of reactions,\n\n$$\n(2a)B_{s}+yN\u27f6\\alpha2B_{s},(2b)B_{r}+yN\u27f6\\alpha2B_{r},(2c)B_{s}+P\u27f6A(B_{s}P)\u27f61/\\lambda\\betaP,(2d)B_{r}+P\u27f6A(B_{r}P){\u27f6fastB_{r},\u27f6slow\\betaP.\n$$\n\nSusceptible ($B_{s}$) and resistant ($B_{r}$) cells grow at a rate $\\alpha$ (no significant difference in growth rate between strains, $\\alpha\u2062(B_{s})=0.551\\pm0.045\u2062h^{-1}$, $\\alpha\u2062(B_{r})=0.535\\pm0.023\u2062h^{-1},t_{70}=1.867,p=0.066$), Equation 2, by using an amount $y$ of the nutrients $N$. Phage infection first involves adsorption to host cells, Equation 2c and Equation 2d, with the adsorption term $A$ specified below. Infected susceptible bacteria produce on average $\\beta$ phage with a rate inversely proportional to the average latency $\\lambda$. In contrast, resistant bacteria either survive by restricting phage DNA via their CRISPR-Cas immune system or \u2013 less likely \u2013 succumb to the phage infection. However, when the MOI is large even resistant cells become susceptible to lysis resulting in the release of phage progeny (see Figure 2) (Westra et al., 2015; Chabas et al., 2016).\n\nIn our system, bacteria eventually deplete the available nutrients, $N(t>T_{depl})=0$, resulting in the cessation of growth. This decline in bacterial growth affects phage growth \u2013 latency increases and burst size decreases, such that phage reproduction declines dramatically (see Table 2). We define the critical time point at which cells transition from exponential growth to stationary phase as,\n\n$$\nT_{depl}\u2248\\frac{1}{\\alpha}\u2062log\u2061(\\frac{B_{\u221e}}{B_{0}}).\n$$\n\n**Table 2.**\n Estimated parameters for phage growth.See also Figure 5A,B.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Medium</th>\n      <th>Dilution</th>\n      <th>Latent period</th>\n      <th>Burst size</th>\n      <th>Burst size/hour</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>N</td>\n      <td>\u03bb[m\u2062i\u2062n]</td>\n      <td>\u03b2</td>\n      <td>\u03b2/\u03bb[h-1]</td>\n    </tr>\n    <tr>\n      <td>LB 0</td>\n      <td>0.0</td>\n      <td>101.1\u00a0(\u00b110.9)</td>\n      <td>3.0\u00a0(\u00b11.9)</td>\n      <td>1.8\u00a0(\u00b11.1)</td>\n    </tr>\n    <tr>\n      <td>LB 20</td>\n      <td>0.2</td>\n      <td>43.4\u00a0(\u00b13.9)</td>\n      <td>3.0\u00a0(\u00b11.9)</td>\n      <td>16.6\u00a0(\u00b16.0)</td>\n    </tr>\n    <tr>\n      <td>LB 50</td>\n      <td>0.5</td>\n      <td>40.0\u00a0(\u00b13.0)</td>\n      <td>35.6\u00a0(\u00b116.4)</td>\n      <td>53.4\u00a0(\u00b124.9)</td>\n    </tr>\n    <tr>\n      <td>LB 100</td>\n      <td>1.0</td>\n      <td>36.1\u00a0(\u00b16.1)</td>\n      <td>85.6\u00a0(\u00b147.3)</td>\n      <td>142.1\u00a0(\u00b182.1)</td>\n    </tr>\n  </tbody>\n</table>\n\nHere, $B_{0}$ and $B_{\u221e}$ are the initial and final bacterial densities, respectively. In the initial exponential growth phase, our estimates from experimental data for growth parameters are $\\alpha=0.63\u2062h^{-1}$, $\\beta=85.6\u2062phages/cell$ and $\\lambda=0.60\u2062h$, for bacteria and phages, respectively (Tables 1 and 2). After time $T_{depl}$, bacterial growth rate is set to zero ($\\alpha=0$) and phage growth is reduced to $\\beta_{depl}=3.0\u2062phages/cell$ and $\\lambda_{depl}=1.69\u2062h$. Such a two state model \u2013 constant growth rate while nutrients are present and no growth after depletion \u2013 describes the observed population trajectories in experiments sufficiently well (see Figure 4).\n\n### Modelling herd immunity in populations without structure\n\nAn important parameter for estimating herd immunity is the fraction $S$ of susceptible bacteria in the population. As a first estimate, a phage infection spreads in well mixed bacterial cultures if $\\betaS>1$, which leads to a continuous chain of infections: the product of burst size $\\beta$ of phage particles and the probability $S$ of infecting a susceptible host has to be larger than one. As a first approximation, one could identify $R_{0}$ with the burst size $\\beta$, which is compatible with the observed herd immunity thresholds when inverting Equation 1.\n\nHowever, the growing bacterial population could outgrow the phage population if the former reproduces faster (e.g., in the case of RNA coliphages, van Duin, 1988), which introduces deviations from the simple relation between $R_{0}$ and $H$ as shown in Equation 1. We capture this dynamical effect in a correction to the previous estimate as $\\betaS>1+\\lambda\\alpha$ (see Materials and methods): more phages have to be produced for the chain of infections to persist in growing populations. The correction $\\frac{\\lambda}{1/\\alpha}$ is the ratio of generation times of phages over bacteria \u2013 usually, such a correction is very small for non-microbial hosts and can be neglected. Ultimately, herd immunity is achieved if the threshold defined by $H=1-S_{c}$ is exceeded, with $S_{c}$ the critical value in the inequality above. Rearranging, we obtain an expression for the herd immunity threshold\n\n$$\nH=\\frac{\\beta-1-\\lambda\u2062\\alpha}{\\beta}.\n$$\n\nThis estimate of $H$ coincides to a very good extent with the population compositions of susceptible and resistant bacteria where we observe the transition from surviving and collapsed populations in experiments (see Figure 3). Moreover, simulations presented in the Appendix (section Simulation of recovery rate) show a range in the bacterial population composition with non-monotonic trajectories for $B_{s}$ and $B_{r}$ (see Appendix 1\u2014figure 1B), which is comparable to the range in composition we find in both outcomes, that\u00a0is, some surviving and some collapsing populations in experiments. For such parameter choices, stochastic effects could then decide the observed fates of bacteria. As presented above, the herd immunity threshold changes when the bacterial cultures grow in a diluted growth medium. In a set of independent experiments we measured bacterial growth rate $\\alpha$, phage burst size $\\beta$ and phage latent period $\\lambda$ under such conditions (see Figure 4B and Table 2). From these data we estimated the dependence of the phage burst size on the bacterial growth rate, $\\beta\u2062(\\alpha)$, using a numerical quadratic fit (Figure 5A). Similarly, we estimated the dependence of the phage latent period on the bacterial growth rate, $\\lambda\u2062(\\alpha)$ (Figure 5B). Using these estimates we calculated the expected growth rate\u2013dependent herd immunity threshold\n\n$$\nH\u2062(\\alpha)=\\frac{\\beta\u2062(\\alpha)-1-\\lambda\u2062(\\alpha)\u2062\\alpha}{\\beta\u2062(\\alpha)},\n$$\n\nwhich gives a very good prediction of the shift in the herd immunity threshold to lower values for slower growing populations (green line in Figure 5C). This verification of our model shows that it correctly captures the dependence of the herd immunity threshold on bacterial and phage growth parameters.\n\nThe deviations from the herd immunity threshold depicted by the green area in Figure 3 and green error bars in Figure 5C are derived from uncertainty in measurements in $\\beta$, $\\lambda$ and $\\alpha$. The inherent stochasticity of the adsorption process thus provides additional uncertainty, which is not captured by the depicted error bars. This additional stochasticity can explain wider transition zone in experiments with slower growing populations (dilution 0.5 and 0.2), because the fate of the population is more prone to stochastic effects as the phage replication rate is slower than in a fast growing population. This stochastic effect might be reduced by larger phage inocula. This could, however, also shift the observed transition between collapsing and surviving populations towards higher frequencies of resistant bacteria (and away from the actual herd immunity threshold) as protection by the immune system is less effective with increasing number of phages per cell (see Figure 2A).\n\n### Modelling herd immunity in spatially structured populations\n\nThe dynamics of phage spread differ between growth in unstructured (e.g., liquid) and structured (e.g., plates) populations. In order to quantify the effect of spatial structure in a population, we extend our model to include a spatial dimension. In structured populations growth is a radial expansion of phages defined by the plaque radius $r$ and the expansion speed $v$, for which several authors have previously derived predictions (Kaplan et al., 1981; Yin and McCaskill, 1992; You and Yin, 1999; Fort and M\u00e9ndez, 2002a; Ortega-Cejas et al., 2004; Abedon and Culler, 2007; Mitarai et al., 2016).\n\nWe assume phage movement can be captured by a diffusion process characterized with a diffusion constant $D$, which we estimate in independent experiments as $D=1.17(\\pm0.26)\u22c510^{\u22122}\u00a0mm^{2}/h$ (see Materials and methods, Figure 8). However, we assume that only phages disperse and bacteria are immobile as the rate of bacterial diffusion does not influence the expanding plaque on timescales relevant in the experiment. Adsorption of phages on bacteria is modeled with an adsorption constant $\\delta^{\u22c6}$.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/32035/elife-32035-fig8-v3.jpg)\n\n**Figure 8.:** (A), (B) Phage are slowly expanding on agar which can be observed via their fluorescence. Pictures are taken $5\u2062h$ apart. (C) The diffusion constant $D$ can be estimated as best-fit parameter in a heat kernel$K(D)$ propagates the fluorescence profile $L^{(t)}$ at time $t$ forward (via a convolution to \u201csmear\u201d out the signal) to the profile $L^{(t+\u0394\u2062t)}$ at the next measured time point. The difference between the expected change and the actual profile is quantified as total squared deviation, see Equation 10, which we minimize to obtain $D$. Consequently, we can estimate the diffusion constant as $D\u22481.17\u22c510^{-2}\u2062m\u2062m^{2}/h$. The green line uses this estimated parameter $D$ and shows the change between the profile at $t=10\u2062h$ (orange line) and the profile at $t=15\u2062h$ (light brown line), assuming diffusive spread of phages. See Materials and methods for more information.\n\nTaking these considerations together, allows to write a reaction-diffusion dynamics for growth of phages $P$ on the growing bacterial population as\n\n$$\n\\partial_{t}\u2061P=D\u2062\\partial_{x}^{2}\u2061P+\\delta^{\u22c6}\u2062(\\beta\u2062S-1-\\lambda\u2062\\alpha)\u2062P.\n$$\n\nThe first term accounts for the diffusive spread of phages, while the second term describes phage growth. This second term includes the correction $\\lambda\u2062\\alpha$ which arises due reproduction of bacteria, derived in the unstructured liquid case.\n\nThe spreading infection will sweep across the bacterial lawn with the following speed\n\n$$\nv=2\u2062\\sqrt{D\u2062\\delta^{\u22c6}}\u2062\\sqrt{\\beta\u2062S-1-\\lambda\u2062\\alpha},\n$$\n\nwhich is computed in more details in the Materials and methods. This expression Equation 7 indicates that the population composition crucially influences the spreading speed at much lower fractions of resistant bacteria than the herd immunity threshold Equation 4, where phage expansion stops completely. Consequently, the resulting plaque radius $r$ decays with increasing fractions of resistants and reaches zero at $H$. A prediction for $r$ can be obtained by integrating Equation 7 over time.\n\nIn our (simplified) model, time-dependence of the speed only enters via the fraction of susceptibles $S$, which is assumed to stay at the initial $S_{0}$ value until it encounters the epidemic wave of phages. Furthermore, we use the experimental observation that plaque expansion ceases upon depletion of nutrients, coinciding with a cessation of bacterial growth. This leads to the approximation $r\u2248v\u2062T_{depl}$, with $T_{depl}$ given by Equation 3. Using this expression we estimated the adsorption constant $\\delta^{\u22c6}$ from the growth experiments as it is difficult in practice to measure on plates. The green line in Figure 6B is the best fit, yielding the value $\\delta^{\u22c6}=4.89\u2062(\\pm0.19)\u22c510^{-2}\u2062bacteria/phage\u2062h$ for the adsorption constant.\n\nOur results for spatially structured populations allows us to speculate on a general epidemiological question: If an infection is not stopped by herd immunity in a partially structured population, by how much is its spread slowed down? By generalizing Equation 7 we can derive a relative expansion speed, compared to a fully susceptible population,\n\n$$\nv_{rel}=\\sqrt{1-\\frac{1-S}{H}}.\n$$\n\nThis expression, Equation 8, is devoid of any (explicit) environmental conditions, which are not already contained in the herd immunity threshold $H$ itself. Thus, it could apply to any pathogen-host system. Ultimately, this relative speed approaches zero with a universal exponent of $1/2$, when the fraction of resistant individuals $1-S$ approaches the herd immunity threshold $H$. However, a few caveats exist when using Equation 8, as several conditions have to be fulfilled: Obviously, a pathogen is expected not to spread in a population exhibiting complete herd immunity \u2013 the relative speed should only hold for populations below the herd immunity threshold. Moreover, if dispersal cannot be described by diffusion, but rather dominated by large jumps (Hallatschek and Fisher, 2014), the diffusion approach we used for traveling waves is not applicable, and thus also renders Equation 8 inadequate.\n\nAn increase in the number of long range jumps of phages can be considered as a transition between the two cases we treated here \u2013 spatially explicit dynamics on plates and completely mixed populations in liquid culture, respectively. Potential long range jumps of phages can be mediated by host cells moving distances that the phages cannot achieve on their own. In such cases, dispersal of the phages is a convolution of movement of their hosts with their own ability to spread locally. These long range jumps would therefore increase the overall expansion speed and area of the epidemic. We expect that in our setup bacterial motility does not substantially contribute to phage spread because (i) bacteria become motile only in late exponential/early stationary phase (Amsler et al., 1993) when phage reproduction drops to very low levels, and (ii) the soft agar concentration used in our experiments ($\u22480.525%$) effectively blocks bacterial motility (Croze et al., 2011). However, we would not expect that long range jumps change the herd immunity threshold $H\u2062(\\alpha)$ itself. Spread of pathogens still stops when the fraction of susceptible hosts $S$ is small such that $\\betaS<1+\\lambda\\alpha$, and will continue as long as $\\betaS>1+\\lambda\\alpha$ is fulfilled.\n\n## Discussion\n\nThe spread of a pathogen may be halted or slowed by resistant individuals in a population and thus provide protection to susceptible individuals. This process, known as herd immunity, has been extensively studied in a wide diversity of higher organisms (Jeltsch et al., 1997; Mariner et al., 2012; van Boven et al., 2008; Meister et al., 2008; Konrad et al., 2012; Wang et al., 2013). However, the role of this process has largely been ignored in microbial communities. To delve into this we set out to determine under what conditions, if any, herd immunity might arise during a phage epidemic in bacterial populations as it could have profound implications for the ecology of bacterial communities.\n\nWe show that herd immunity can occur in phage-bacterial communities and that it strongly depends on bacterial growth rates and spatial population structure. Average growth rates of bacteria in the wild have been estimated as substantially slower than in the laboratory (generation time is $\u2248$7.4 fold longer [Gibson et al., 2017]), a condition that we have shown to facilitate herd immunity. Furthermore, bacterial populations in the wild are also highly structured, as bacteria readily form micro-colonies or biofilms (Hall-Stoodley et al., 2004) and grow in spatially heterogeneous environments such as soil or the vertebrate gut (Fierer and Jackson, 2006), a second condition we have shown to facilitate herd immunity. These suggest that herd immunity may be fairly prevalent in low nutrient communities such as soil and oligotrophic marine environments.\n\nIn an evolutionary context, herd immunity may also impact the efficacy of selection as the selective advantage of a resistance allele will diminish as the frequency of the resistant allele in a population approaches the herd immunity threshold, $H$. This has two important implications. First, while complete selective sweeps result in the reduction of genetic diversity at linked loci, herd immunity may lead to only partial selective sweeps in which some diversity is maintained. Second, herd immunity has a potential to generate and maintain polymorphism at immunity loci, as has been shown for genes coding for the major histocompatibility complex (MHC) (Wills and Green, 1995). Polymorphism in CRISPR spacer contents have been demonstrated in various bacterial (Tyson and Banfield, 2008; Sun et al., 2016; Kuno et al., 2014) and Archaeal (Held et al., 2010) populations and communities (Pride et al., 2011; Zhang et al., 2013; Andersson and Banfield, 2008). While these studies primarily explain polymorphisms in CRISPR spacer content as a result of rapid simultaneous independent acquisition of new spacers, we suggest that observed polymorphisms may result from frequency-dependent selection on resistance loci arising from herd immunity. In such a case, herd immunity is likely to maintain existing polymorphism in CRISPR spacer content in $1-H$ fraction of the population, unless the current major variant goes to fixation due to drift. However, considering the large population sizes of bacteria, drift is unlikely to have a strong effect, allowing herd immunity to maintain a large fraction of immunity polymorphism.\n\nIt has also been suggested that herd immunity might favor coexistence between hosts and their pathogens (Hamer, 1906), which can lead to cycling in pathogen incidence and proportions of resistant and susceptible individuals over time, e.g., in measles before the era of vaccination (Fine, 1993). This cycling is caused by the birth of susceptible individuals, which, once their proportion exceeds the epidemic threshold ($1-H$), lead to recurring epidemics. CRISPR-based immunity is, however, heritable meaning that descendants of resistant bacteria remain resistant. One might speculate that analogous cycling in phage epidemics may occur if immunity is costly. In turn, a computer simulation study of coevolution of Streptococcus thermophilus and its phage found both cycling and stable coexistence of different CRISPR spacer mutants and phage strains (Childs et al., 2014). The extent to which herd immunity facilitates maintenance of CRISPR spacer polymorphism and coexistence with phage requires further experimental and theoretical investigation.\n\nWe also developed a mathematical model and show how the herd immunity threshold $H$ (Equation 4) depends on the phage burst size $\\beta$ and latent period $\\lambda$, and on the bacterial growth rate $\\alpha$. This dependence arises as phages have to outgrow the growing bacterial population, as host and pathogen have similar generation times in our microbial setting. In addition to these parameters, we also describe how the speed $v$ (Equation 7) of a phage epidemic in spatially structured populations depends on phage diffusion constant $D$, phage adsorption rate $\\delta^{\u22c6}$, and the fraction of resistant and susceptible individuals in the population. All of which are likely to vary in natural populations. We also derived the relative speed of spread for partially resistant populations, as measured relative to a fully susceptible population, and show that it can be parametrized solely with the herd immunity threshold $H$ (Equation 8). This relative speed of the spread of an epidemic should be applicable to any spatially structured host population where the spread of the pathogen can be approximated by diffusion. Both our experiments and the modelling show that even when the fraction of resistant individuals in the population is below the herd immunity threshold the expansion of an epidemic can be substantially slowed, relative to a fully susceptible population.\n\nIn conclusion, we have presented an experimental model system and the connected theory that can be usefully applied to both microbial and non-microbial systems. Our theoretical framework can be useful for identifying critical parameters, such as $H$ (and to some extent $R_{0}$), from the relative speed of an epidemic expansion in partially resistant populations so long as the process of pathogen spread can be approximated by diffusion. This approximation has been shown to be useful in such notable cases as rabies in English foxes (Murray et al., 1986), potato late blight (Scherm, 1996), foot and mouth disease in feral pigs (Pech and McIlroy, 1990), and malaria in humans (Gaudart et al., 2010).\n\n## Materials and methods\n\n**Key resources table**\n Table of key strains, reagents and software used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>gene (Streptococcus pyogenes SF370)</td>\n      <td>cas9</td>\n      <td>National Center for Biotechnology Information</td>\n      <td>NCBI:NC_002737.2; gene_ID:901176; RRID:SCR_006472</td>\n      <td>Gene symbol SPy_1046</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Escherichia coli)</td>\n      <td>E. coli K12 MG1655</td>\n      <td>Own collection</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Bacteriophage T7)</td>\n      <td>E. coli bacteriophage T7</td>\n      <td>ATCC Collection</td>\n      <td>ATCC:BAA-1025-B2; RRID:SCR_001672</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pCas9</td>\n      <td>Addgene Vector Database</td>\n      <td>Addgene:42876; RRID:SCR_005907</td>\n      <td>pCas9 plasmid was a gift from Luciano Marraffini</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pCas9T7resistant</td>\n      <td>this paper</td>\n      <td>NA</td>\n      <td>Plasmid derived from pCas9</td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>PureYield Plasmid Miniprep System</td>\n      <td>Promega</td>\n      <td>Promega:A1223; RRID:SCR_006724</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Chloramphenicol</td>\n      <td>Sigma-Aldrich</td>\n      <td>Sigma-Aldrich:C0378-5G; RRID:SCR_008988</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>PerkinElmer Volocity v6.3</td>\n      <td></td>\n      <td>RRID:SCR_002668</td>\n      <td>Volocity 3D Image Analysis Software</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Fiji v1.0</td>\n      <td>doi: 10.1038/nmeth.2019</td>\n      <td>RRID:SCR_002285</td>\n      <td>Image processing package of ImageJ</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>RStudio 1.0.153</td>\n      <td></td>\n      <td>RRID:SCR_000432</td>\n      <td>Software for the R statistical computing</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Python 3.6.3</td>\n      <td></td>\n      <td>RRID:SCR_008394</td>\n      <td>Python programming language</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Model source code</td>\n      <td>doi: 10.5281/zenodo.1038582</td>\n      <td>RRID:SCR_004129</td>\n      <td>Zenodo repository</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental methods\n\n#### Engineering resistance\n\nOligonucleotides AAACTTCGGGAAGCACTTGTGGAAG and AAAACTTCCACAAGTGCTTCCCGAA were ordered from Sigma-Aldrich, annealed and ligated into pCas9 plasmid (pCas9 was a gift from Luciano Marraffini, Addgene plasmid #42876) carrying a Streptococcus pyogenes truncated CRISPR type II system and conferring chloramphenicol resistance. For the detailed protocol see (Jiang et al., 2013). The oligonucleotides were chosen so that the CRISPR system targets an overlap of phage T7 genes 4A and 4B. Therefore, the CRISPR system allows the gene 0.7, coding for a protein which inhibits the RNA polymerase of the cell, to be expressed before the T7 DNA gets cleaved (Garc\u00eda and Molineux, 1995). The subsequent growth of the cells is halted and phage replication is inhibited. The plasmid was electroporated into Escherichia coli K12 MG1655 (F- lambda- ilvG- rfb-50 rph-1). The T7 wildtype phage was used in all experiments.\n\n#### Efficiency of the CRISPR-Cas system\n\nEfficiency of the engineered CRISPR-Cas system was tested using the following protocol: Overnight cultures grown in LB containing 25 $\\mu\u2062g/m\u2062l$ chloramphenicol were diluted 1 in 10 in the same medium, cells were infected with the T7 phage (MOI 10, 100, and 1000) and incubated for $15\u2062min$ in $30^{\u2218}\u2062C$. Cells were spun down for 2 min in room temperature at $21130\u2062g$. Supernatant was discarded and the cell pellet was resuspended in 950 $\\mu\u2062l$ of 1X Tris-HCl buffer containing 0.4% ($\u2248227\u2062\\mu\u2062M$) ascorbic acid pre-warmed to $43^{\u2218}\u2062C$ and incubated in this temperature for 3 min to deactivate free phage particles (Murata and Kitagawa, 1973). Cultures were serially diluted and plated using standard plaque assay protocol on a bacterial lawn of susceptible cells to detect bursting infected cells. The supernatant was tested for free phage particles, which were not detected in the corresponding dilutions used for plaque counting. Each experiment was replicated three or four times (MOI 10 three times, MOI 100 four times and MOI 1000 three times) while samplings from each treatment were performed in quadruplicates. The probability that a resistant cell bursts was calculated as a ratio of bursting resistant to bursting susceptible cells for each experiment (means of corresponding quadruplicates). All LB agar plates and soft agar used throughout this study was supplemented with 25 $\\mu\u2062g/m\u2062l$ chloramphenicol. These CRISPR-Cas system efficiencies at different MOIs were tested if they are statistically different from each other using two-tailed unequal variances t-test at 0.05 confidence level using RStudio (R Core Team, 2013).\n\n#### Determining the mean number of phages per cell\n\nThe cultures that were plated using standard plaque assays in the \u201cEfficiency of the CRISPR-Cas system\u201d experiment were also plated on LB agar plates containing 25 $\\mu\u2062g/m\u2062l$ chloramphenicol to determine the number of surviving CFUs. The numbers of bursting and surviving susceptible cells were subsequently used to determine the actual mean number of adsorbed phages per cell. The fraction of susceptible cells surviving the phage challenge experiment was assumed to correspond to the Poisson probability that a cell does not encounter any phage, which was than used to determine the mean of the Poisson distribution, which corresponds to the mean number of phages per cell.\n\n#### Herd immunity in a liquid culture\n\nHerd immunity in a liquid culture was tested in 200 $\\mu\u2062l$ of LB broth supplemented with 25 $\\mu\u2062g/m\u2062l$ chloramphenicol in Nunclon flat bottom 96 well plate in a Bio-Tek Synergy H1 Plate reader. Bacterial cultures were diluted 1 in 1000 and mixed in the following ratios of resistant to susceptible cells: 50:50, 75:25, 87.5:12.5, 93.75:6.25, 96.88:3.13, 98.44:1.56, 99.22:0.78, 99.61:0.39, 99.8:0.2, 99.9:0.1, 99.95:0.05, 100:0 %. T7 phage was added at a multiplicity of infection (MOI) of $\u224810^{-4}$ ($\u224850$ plaque forming units ($p\u2062f\u2062u$) per culture) to resemble an epidemic initiated by the burst size from one infected cell and the cultures were monitored at an optical density 600 nm for 18 hours post inoculation ($h\u2062p\u2062i$). Each population composition was replicated 16 times. Herd immunity in diluted LB was measured in LB broth mixed with 1X M9 salts in ratios 1:1 (50% LB) and 1:4 (20% LB) using the same protocol as for 100% LB broth. Each population composition was replicated 18 times.\n\n#### Time-lapse imaging of plaque growth\n\nSoft LB agar (0.7%) containing 25 $\\mu\u2062g/m\u2062l$ chloramphenicol was melted and 3 $m\u2062l$ were poured into glass test tubes heated to $43^{\u2218}\u2062C$ in a heating block. After the temperature equilibrated, 0.9 $m\u2062l$ of a bacterial culture consisting of resistant and susceptible cells (ratios 10% \u2013 100% of susceptible cells, 10% increments) were diluted 1 in 10 and added to the tubes. Then, 100 $\\mu\u2062l$ of bacteriophage stock, diluted such that there would be $\u2248$10 plaques per plate, was added to the solution. Tubes were vortexed thoroughly and poured as an overlay on LB agar plates containing 25 $\\mu\u2062g/m\u2062l$ chloramphenicol. The plates were placed on scanners (Epson Perfection V600 Photo Scanner) and scanned every 20 minutes in \u201dWide Transparency mode\u201c for 48 hours in $30^{\u2218}\u2062C$. A total of 3 scanners were employed with a total of 12 plates, plus a no phage control plate and 100% resistant control outside the scanners (see Appendix figure 3). No plaques were detected in the 100% resistant controls. Time-lapse images were used to calculate the increase of individual plaque areas using image analysis software PerkinElmer Volocity v6.3 and Fiji v1.0 (Schindelin et al., 2012).\n\n#### Bacterial growth on soft agar\n\nGrowth rate of susceptible bacteria in soft LB agar (0.7%) was measured by sampling from a petri dish with a soft agar overlay with bacteria prepared in the same way as the plaque assays except an absence of the phage. Sampling was performed in spatially randomized quadruplicates at the beginning of the experiment and subsequently after 2, 4, 6, 8, 10, 12, 14, 16, 24, 32, 40, and 48 hours using sterile glass Pasteur pipettes (Fisherbrand art.no.: FB50251). Samples were blown out from the Pasteur pipette using an Accu-jet pro pipettor into 1 $m\u2062l$ of M9 buffer pre-warmed to $43^{\u2218}\u2062C$, vortexed for 15 seconds and incubated for 10 minutes in $43^{\u2218}\u2062C$ with two more vortexing steps after 5 and 10 minutes of incubation. Samples were serially diluted and plated on LB agar plates containing 25 $\\mu\u2062g/m\u2062l$ chloramphenicol. How bacterial densities change over time, measured as $C\u2062F\u2062U/m\u2062l$, is shown in Figure 4A.\n\n#### Bacterial growth rates in liquid culture\n\nNutrient-dependent growth rate of susceptible bacteria was measured in Nunclon flat bottom 96 well plate in Bio-Tek Synergy H1 Plate reader in $30^{\u2218}\u2062C$. Overnight LB cultures were diluted 1:200 in media consisting of LB broth mixed with 1X M9 salts in ratios 10:90, 20:80, 30:70, 40:60, 50:50, 60:40, 70:30, 80:20, 90:10 and 100:0. Final volume was 200 $\\mu\u2062l$. Optical density at 600 nm was measured every 10 min. Every treatment was replicated eight times. Natural logarithm of the optical density values was calculated to determine the growth rate using a maximal slope of a linear regression of a sliding window spanning 90 min.\n\nThe resulting growth rates for various nutrient concentrations fit well with Monod\u2019s growth kinetics,\n\n$$\n\\alpha=\\alpha_{max}\u2062\\frac{N}{K_{c}+N}.\n$$\n\nResults for the two fitting parameters, $\\alpha_{max}$ and $K_{c}$, are listed in Table 1. The whole dataset, including the fit, is displayed in Figure 4B.\n\nTest for a difference in growth rates of resistant and susceptible bacteria was done in LB broth in the same manner as nutrient-dependent growth rate measurements. Two-sample t-test was performed on acquired growth rate data at 0.05 confidence level using RStudio (R Core Team, 2013).\n\nAll growth media used in growth rate measurements were supplemented with 25 $\\mu\u2062g/m\u2062l$ chloramphenicol.\n\n#### Phage burst sizes\n\nPhage burst sizes in bacteria growing at different growth rates were measured by one-step phage growth experiments in LB mixed with 1X M9 salts in the following ratios 0:100, 20:80, 50:50 and 100:0. The burst sizes were calculated as the ratio of average number of plaques before burst to average number of plaques after burst. Consecutive samplings before and after burst were used for the calculation if they were not significantly different from each other (two sided t-test, $p>0.05$). All experiments were performed in triplicates.\n\n#### Phage latent periods\n\nPhage latent periods were determined from the phage burst size experiments as the time interval between the first and the last significantly different consecutive sampling between those used for phage burst size calculations.\n\n#### Speed of phage expansion\n\nThe speed of the phage expansion was measured as difference in radii of plaques over time. Statistical tests allowed to infer that the reduction of expansion speed is significant already for small deviations from the $100%$ susceptible control experiment, as described and shown in Figure 7.\n\n#### Phage diffusion in soft agar\n\nSoft M9 salts soft agar (0.5%) was supplemented with SYBR safe staining (final conc. 1%) and poured into glass cuvettes (VWR type 6040-OG) to fill $\u223c2\u2062c\u2062m$ of the cuvette height. After soft agar solidification, the same stained soft agar was supplemented with T7 phage particles to a final concentration $10^{11}\u2062pfu/ml$ and poured on top of the agar without phages. The cuvettes were monitored in $30^{\u2218}\u2062C$ every hour for 40 hours at the SYBR safe emission spectrum peak wave length $524\u2062n\u2062m$ illuminated with the SYBR safe excitation spectrum peak wave length $509\u2062n\u2062m$. The diffusion constant was estimated as the best fit parameter for the spread of fluorescent phages through the soft agar over time.\n\nFirst we computed the luminosity $L_{i}$ of fluorescence (a gray-scale value defined as $L=0.2126\u2062R+0.7152\u2062G+0.0722\u2062B$ from the RGB image) as average over the width of the cuvette for pixel row $i$, and corrected the profiles of luminosity $L_{i}$ by subtracting the background value. This background value was estimated as a linear fit at the end of the profile without phages, where only the gray value of the agar was measured. Moreover, in our setup luminosity seems to saturate at values above $\u223c0.4$ where it does not have a simple linear dependence on fluorescence anymore: diffusion would lead to a decrease of the signal behind the inflection point of the profile and increase after the inflection point, but images only show increasing profiles \u2013 the bulk density does not decay. Thus, any estimate should only take the part of the profile that is below the threshold value of $0.4$ into account (see Figure 8).\n\nThe diffusion constant $D$ itself was estimated as the minimal value of the total squared deviation of the convoluted profile $L^{(t)}$ (at time $t$) with a heat kernel $K\u2062(D)$ compared to the profile $L^{(t+1)}$ at time $t+1$,\n\n$$\nD=\u27e8minD\u2062\\sumi((\\sumj\\frac{e^{-(i-j)^{2}/4\u2062D}}{\\sqrt{4\u2062\\pi\u2062D}}\u2062L_{j}^{(t)})-L_{i}^{(t+1)})^{2}\u27e9.\n$$\n\nSuch a convolution with the heat kernel $K_{i\u2062j}\u2062(D)=(4\u2062\\pi\u2062D)^{-1/2}\u2062exp\u2061(-(i-j)^{2}/4\u2062D)$ assumes that the only change in the profile is due to diffusion for a time span of length $1$ with $i$ and $j$ indices of pixels. Thus, expression Equation 10 estimates the diffusion constant in units of $pixel^{2}/frame$, where frame is the time difference between two images. Several estimates are averaged over different snapshots in the whole experiment that spans $40\u2062h$ in intervals of $1\u2062h$ each.\n\nThe final estimate in appropriate units is\n\n$$\nD\u22481.17(\\pm0.26)\u22c510^{\u22122}\u00a0mm^{2}/h,\n$$\n\nwhich is in agreement with previous measures of phage diffusion (Stent and Wollman, 1952; Bayer and DeBlois, 1974; Briandet et al., 2008).\n\n### Modelling\n\n#### Phage growth\n\nIn the main text we stated that relevant processes for phages growing on bacteria are given by the set of reactions Equation 2. In the following, we will analyze an extended version of our model, which takes all these processes into account. We try to justify our approximations and explain the reasoning behind leaving parts of the full model out. While reactions for single bacteria or phages are inherently stochastic in nature, we assume that the involved numbers are large enough such that the dynamics can be described with deterministic differential equations for the populations. Furthermore, reaction rates are identified with the inverse of the average time scale of the process. Thus, the full model is given by the coupled differential equations,\n\n$$\n(12a)\u2202_{t}B_{s}\u00a0=\\alphaB_{s}\u2212A[B_{s},P|B_{s},B_{r}],(12b)\u2202_{t}B_{r}\u00a0=\\alphaB_{r}\u2212A[B_{r},P|B_{s},B_{r}]+\u03c1I_{r},(12c)\u2202_{t}I_{s}\u00a0=A[B_{s},P|B_{s},B_{r}]\u2212(1/\\lambda)I_{s},(12d)\u2202_{t}I_{r}\u00a0=A[B_{r},P|B_{s},B_{r}]\u2212(1/\\lambda)I_{r}\u2212\u03c1I_{r},(12e)\u2202_{t}P\u00a0=(\\beta/\\lambda)(I_{s}+I_{r})\u2212\\sumi\\in{s,r}A[B_{i},P|B_{s},B_{r}]\u2212\\sumi\\in{s,r}A[I_{i},P|I_{s},I_{r}],(12f)\u2202_{t}N\u00a0=\u2212\\alpha/y(B_{s}+B_{r}).\n$$\n\nBoth bacterial populations $B_{i}$, $i\\in{s,r}$, grow with rate $\\alpha$ and decay via adsorption of phages $A[B_{i},P|B_{s},B_{r}]$, an expression that is specified below. Infected populations $I_{i}$ gain numbers by adsorption and decrease via bursting. Resistant bacteria also can recover from their infected state with a recovery rate $\u03c1$. Phages grow by bursting cells, and lose numbers by adsorption to the various bacterial populations. Moreover, explicit dynamics for nutrients is considered, which are drained by each grown cell inversely proportional to the yield $Y$, the conversion factor between nutrient concentration and cell numbers. Essentially, this last equation acts as a timer, when we switch from abundant resources to the depleted state: all growth parameters change significantly upon nutrient depletion. Nevertheless, despite the possible deviations, we assume depletion time is given by the simple estimate Equation 3 and only treat the two possible states of abundant and depleted nutrients.\n\nAdsorption of phages, given by the term $A[B_{i},P|B_{s},B_{r}]$, can be influenced by the whole distribution of populations within the culture. In liquid medium, a common assumption is that this term is proportional to the concentrations of both the phages and cells (Weitz, 2016),\n\n$$\nA[B_{i},P|B_{s},B_{r}]=\\deltaB_{i}P,\n$$\n\nwith an adsorption constant $\\delta$. This expression assumes constant mixing of the population and relatively short contact times between phages and bacteria. In general, this system of equations is akin to Lotka-Volterra dynamics, which has been analyzed in great detail, eg. (Hofbauer and Sigmund, 1998; Nowak, 2006).\n\nFor our ensuing analysis, we neglect the population of infected resistant bacteria $I_{r}$. Upon examining Equation 12 we find that most cells to leave their infected state by reducing phage DNA via CRISPR/Cas instead of bursting if $\u03c1\u226b1/\\lambda$. If furthermore $\u03c1\u226b\\delta\u2062P$, which is true at least in the initial stages of the experiment, essentially all infected resistant bacteria immediately recover from a phage infection. Consequently, with both conditions, the resistant infected bacteria tend to vanish, $I_{r}\u21920$, and their dynamics can be neglected. Only in the Appendix (section Simulation of recovery rate) we release this assumption to explicitly cover the full dynamics of Equation 12 in simulations to estimate values for $\u03c1$.\n\n#### Exponentially growing bacteria lead to double exponential phage growth\n\nFor convenience, we transform the populations to the total bacterial density $B=B_{s}+B_{r}$ and introduce the fraction of susceptible cells $S=B_{s}/B$. The crucial assumption for the remainder of this section is that phages burst immediately after infection, $\\lambda=0$, such that we can ignore all infected populations. While not a very biological condition, it allows to analyze the model in more detail. Using these simplifications, we obtain\n\n$$\n(14a)\u2202_{t}B\u00a0=(\\alpha\u2212\\deltaSP)B,(14b)\u2202_{t}S\u00a0=\u2212S(1\u2212S)\\deltaP,(14c)\u2202_{t}P\u00a0=(\\betaS\u22121)\\deltaBP.\n$$\n\nIf we assume that in initial stages of phage growth the number of phages is small, ie. $\\delta\u2062P\u226a\\alpha\u223c\ud835\udcaa\u2062(1\u2062h^{-1})$, the dynamics of bacteria and the fraction of susceptibles simplify to $\\partial_{t}\u2061B=\\alpha\u2062B$ and $\\partial_{t}\u2061S=0$. Note that this term $\\delta\u2062P$ also occurs in the linear phage dynamics, where it cannot be neglected. In this instance, we need to view $\\delta\u2062B$ as a coefficient, which is likely much larger initially. This set of simplified equations can be solved in closed form,\n\n$$\n(15a)S(t)\u00a0=S_{0},(15b)B(t)\u00a0=B_{0}exp\u2061(\\alphat),(15c)P(t)\u00a0=P_{0}exp\u2061((S_{0}\\beta\u22121)\\deltaB_{0}(exp\u2061(\\alphat)\u22121)/\\alpha).\n$$\n\nThe structure of phage dynamics is particularly important here \u2013 it exhibits a double-exponential dependence on time $t$, which is a very fast, almost explosive, growth. Such double-exponential growth leads to very large population sizes within a short amount of time (but after an extended initial delay). This general behavior of the solution is independent of the actual growth rate of phages, which only has to be positive. Thus, inspecting the exponent in Equation 15 yields the condition\n\n$$\n\\betaS_{0}>1\n$$\n\nfor phage growth to be positive. Incidentally, relation Equation 16 is the naive estimate for the number of successful additional infections arising from a single burst. The double exponential time-dependence is central for our arguing that the dynamics can be described by threshold phenomena, given by conditions like Equation 16: Usually, phages are negligible in the dynamics until they grow fast enough to large enough size, such that it is too late for the bacterial population to deal with the overwhelming phage population.\n\nAn important question in the context of these solutions is whether nutrients run out before this double-exponential growth of phages occurs. Hence, we compute the time $T_{\\delta}$ defined as when phages reach a population of $P\u2062(T_{\\delta})=1/\\delta$ assuming phages grow as Equation 15 until then. After $T_{\\delta}$ the assumptions that allowed to obtain Equation 15 are not valid anymore. Inverting Equation 15 for time leads to\n\n$$\nT_{\\delta}=\\frac{1}{\\alpha}\u2062log\u2061(1+\\frac{\\alpha\u2062log\u2061(1/\\delta\u2062P_{0})}{(\\beta\u2062S_{0}-1)\u2062\\delta\u2062B_{0}}).\n$$\n\nSubsequently, we can compare this estimate $T_{\\delta}$ to the depletion time $T_{depl}=(1/\\alpha)\u2062log\u2061(B_{\u221e}/B_{0})$. When rearranging the inequality $T_{depl}>T_{\\delta}$ in terms of the (initial) fraction of susceptibles $S_{0}$, we obtain\n\n$$\n\\betaS_{0}>1+\\frac{\\alphalog\u2061(1/\\deltaP_{0})}{\\delta(B_{\u221e}\u2212B_{0})}.\n$$\n\nThis expression Equation 18 is a condition for phages to reach \u201clarge\u201d population sizes before nutrients are depleted by bacteria. The final population density $B_{\u221e}$ usually fulfills $\\delta\u2062B_{\u221e}/\\alpha\u226b1$, such that the correction given by the second term of Equation 18 can be considered small. Thus, if phages grow ($\\betaS_{0}>1$), they also grow very fast with a double-exponential time-dependence and reach a considerably large population size before bacteria stop multiplying (for almost all parameter values).\n\n#### Extending analysis to finite burst times\n\nThe analysis above only treated the case $\\lambda\u21920$. However, we reported that the latency time $\\lambda$ increases significantly when bacterial growth rate $\\alpha$ declines, see Table 2. Considering finite latency times entails dealing with an infected bacterial population $I$. (However, we identify $I\u2261I_{s}$ and set $I_{r}=0$.)\n\nTo this end, note that we can rearrange Equation 12 to $(1+\\lambda\u2062\\partial_{t})\u2062I=\\lambda\u2062\\delta\u2062S\u2062B\u2062P$ using the adsorption model in Equation 13. Hence, we can use the differential operator $(1+\\lambda\u2062\\partial_{t})$ and apply it directly to Equation 12e to reduce the dependence on $I$ in this equation at the cost of introducing higher order derivatives. In particular, we obtain\n\n$$\n\\lambda\u2062\\partial_{t}^{2}\u2061P+(1+\\lambda\u2062\\delta\u2062B)\u2062\\partial_{t}\u2061P+\\delta\u2062B\u2062(\\beta\u2062S-1-\\lambda\u2062\\alpha)\u2062P=0,\n$$\n\nwhere we also inserted $\\partial_{t}\u2061B\u2248\\alpha\u2062B$ in the last term, as we aim again for a solution at initial times where $\\delta\u2062P\u226a\\alpha$. The effects of the limit $\\lambda\u21920$ are directly observable \u2013 no terms are undefined in this limit. In particular, we find that equation Equation 19 and $\\lambda=0$ lead directly to the dynamics of phages we just analyzed above, obtaining solution Equation 15.\n\nIn principle, Equation 19 is a hyperbolic reaction-diffusion-equation, which is known to occur upon transformation (or approximation) of time-delayed differential equations (Fort and M\u00e9ndez, 2002b). For initial times we can use the solutions $B\u2062(t)=B_{0}\u2062exp\u2061(\\alpha\u2062t)$ and $S\u2062(t)=S_{0}$. To proceed, we introduce the auxiliary variable\n\n$$\nz\u2062(t)=-\\delta\u2062B_{0}\u2062exp\u2061(\\alpha\u2062t)/\\alpha,\n$$\n\nand assume $P\u2062(z)$ as a function of this new variable $z$. We need to transform the differential operators of time derivatives, and obtain $\\partial_{t}=\\frac{\\partial\u2061z\u2062(t)}{\\partial\u2061t}\u2062\\partial_{z}=\\alpha\u2062z\u2062\\partial_{z}$ and $\\partial_{t}^{2}=(\\alpha\u2062z\u2062\\partial_{z})\u2062(\\alpha\u2062z\u2062\\partial_{z})=\\alpha^{2}\u2062(z\u2062\\partial_{z}+z^{2}\u2062\\partial_{z}^{2})$. Inserting these expressions in Equation 19 and multiplying the whole equation with $(\\alpha^{2}\u2062\\lambda\u2062z)^{-1}$ yields the dynamics for phages,\n\n$$\n0=z\u2062\\partial_{z}^{2}\u2061P\u2062(z)+(b-z)\u2062\\partial_{z}\u2061P\u2062(z)-a\u2062P\u2062(z),\n$$\n\nwhere the two extant constants are $a=1-(\\beta\u2062S_{0}-1)/(\\lambda\u2062\\alpha)$ and $b=1+1/(\\lambda\u2062\\alpha)$. Equation 21 is called 'Kummer\u2019s equation' with confluent hypergeometric functions $F11$ as solutions (Abramowitz and Stegun, 1964, pg. 504),\n\n$$\nP\u2062(z)=A\u2062F11\u2062(a,b;z)+B\u2062z^{1-b}\u2062F11\u2062(a-b+1,2-b;z).\n$$\n\nThe two integration constants $A$ and $B$ can be determined via the initial conditions $P(t=0)=P_{0}$ and $(\\partial_{t}P)(t=0)=-\\deltaB_{0}P_{0}$. Using these conditions, the shape of the solution is again similar to before with $\\lambda=0$ (double exponential time-dependence), although $\\lambda>0$ introduces some skew. The most important aspect of this solution Equation 22 is to compute the parameter combination where it switches from a decreasing to increasing function over time. A careful analysis reveals that at the parameter value $a=0$ the behavior of the solution changes. Consequently, we find the condition for growing phage populations,\n\n$$\n\\betaS_{0}>1+\\lambda\\alpha,\n$$\n\nwhich is a non-trivial extension including finite latency times $\\lambda$.\n\nNote, however, that this relation Equation 23 does not indicate a correction to the general epidemiological parameter $R_{0}$, which can be identified with $\\beta$ in our model. Rather, it shows that a growing bacterial population requires the phage population to grow even faster for a continuous chain of infections in an epidemic. The term $\\lambda\u2062\\alpha$ denotes the ratio of generation times of pathogen over host, which in most cases is small and negligible compared to $1$. For bacteria and phages, however, which have similar generation times, such a correction is needed to describe the effects of growing host population sizes. In contrast, many other epidemiological models assume the host population size constant and only pathogens are increasing (or decreasing) in number.\n\nWhile our result Equation 23 suggest that it also should hold in the limit $\\alpha\u21920$, it might not necessarily be so. This specific limit is actually quite important for the time when nutrients are depleted in the experiments. However, at several instances in the calculations above we implied a positive $\\alpha>0$. The most important of these is the transformation to $z\u2062(t)=-\\delta\u2062B\u2062(t)/\\alpha$, which actually exhibits two problems: dividing by $\\alpha$ should not be allowed and $B\u2062(t)$ is essentially constant and cannot serve as a variable in a differential equation. We also neglected the second term in $\\partial_{t}\u2061B=(\\alpha-\\delta\u2062S\u2062P)\u2062B$ throughout our calculation. For $\\alpha=0$ this second term is dominant in bacterial dynamics and would generate non-linear phage dynamics if inserted for $\\partial_{t}\u2061B$ right before stating Equation 19. However, we expect that albeit the process will run very slow, and might not be measurable in experiments, the simple condition $\\betaS_{0}>1$ could indicate phage expansion and bacterial decay.\n\n### Growth of phages on plated bacterial lawn\n\nSpatial modelling of phage expansion has produced several predictions for how plaque radius $r$ and expansion speed $v$ are influenced by experimentally adjustable parameters (Kaplan et al., 1981; Yin and McCaskill, 1992; You and Yin, 1999; Fort and M\u00e9ndez, 2002a; Ortega-Cejas et al., 2004; Abedon and Culler, 2007; Mitarai et al., 2016). Here, we try to use a minimal model to estimate these two observables, based on the considerations of previous sections.\n\nOne of the main complications arises from the fact that all densities in Equation 12 have a spatial dimension in addition to their time dependence, $B_{i}=B_{i}\u2062(x\u2192,t)$, $i\\in{s,r}$. As explained in the main text we only consider phage diffusion, heterogeneities in all other densities are generated only by phage growth. The additional spatial dimension imposes a particular contact network between phages and bacteria, which are not entirely random encounters anymore: One can expect that the size of the bacterial neighborhood $B^$ phages are able to explore is only slightly determined by the actual density $B$, and can be assumed constant for most of the experiment, $B^\u2062(B)\u2248c\u2062o\u2062n\u2062s\u2062t$. Consequently, the adsorption term can be written in the following way,\n\n$$\nA[B_{i},P|B_{s},B_{r}]=\\delta^{\u22c6}\\frac{B_{i}}{B_{s}+B_{r}}P,i\\in{s,r},\n$$\n\nwhich only depends on the relative frequencies of bacterial strains. The adsorption constant $\\delta^{\u22c6}$ is both the rate of adsorption and inter-host transit time as determined by the diffusion constant $D$. Thus, one can expect the formal dependence $\\delta^{\u22c6}=\\delta^{\u22c6}\u2062(D,B^\u2062(B))$. For our particular experimental setup, however, $\\delta^{\u22c6}$ will be treated as a constant. This adsorption term Equation 24 leads to the dynamics of phages\n\n$$\n\\partial_{t}\u2061P=D\u2062\\nabla^{2}\u2061P+G\u2062[P,S],\n$$\n\nwhere we collected all contributions to phage growth in $G\u2062[P,S]$ and added the spatial diffusion term $D\u2062\\nabla^{2}\u2061P$. For simplicity, we consider only expansion in a single dimension ($\\nabla^{2}\u2261\\partial_{x}^{2}$), which has been found to coincide well with the dynamics of plaque growth (Yin and McCaskill, 1992). The growth term for phages is then defined as,\n\n$$\nG\u2062[P,S]=\\delta^{\u22c6}\u2062(S\u2062\\beta-1-\\lambda\u2062\\alpha)\u2062P,\n$$\n\nwhere we also consider the correction $\\lambda\u2062\\alpha$ obtained from the analysis in liquid culture. Due to the different absorption dynamics on plates, however, this correction might be a slight overestimate of the actual term that accounts for bacterial growth. Reaction-diffusion equations similar to Equation 25 have been first analyzed about 80 years ago (Fisher, 1937; Kolmogorov et al., 1991) and since then treated extensively, e.g. (Murray, 2002; van Saarloos, 2003). They admit a traveling wave solution \u2013 here, this corresponds to phages sweeping over an uninfected bacterial lawn. In general, the asymptotic expansion speed for the traveling wave solutions is given by the following expression,\n\n$$\nv=2\\sqrt{D(\u2202_{P}G)[0,S]}=2\\sqrt{D\\delta^{\u22c6}}\\sqrt{S\\beta\u22121\u2212\\lambda\\alpha}.\n$$\n\nOnly the linearized growth rate of phages at very low densities is relevant for the expansion speed, $\\partial_{P}G[P=0,S]$. Thus, the fraction of susceptible individuals $S$ should be unchanged from its initial value $S_{0}$. It should be noted, that only for $S_{0}\\beta>1+\\lambda\\alpha$ does Equation 27 remain valid, otherwise we have $v=0$. Such a scenario is relevant when nutrients are depleted and phage growth parameters changes to $\\beta_{depl}$ and $\\lambda_{depl}$.\n\nThe expression for the expansion speed also shows the need for the spatial adsorption model in Equation 24, in contrast to the liquid case Equation 13. If adsorption would directly depend on the bacterial density $B$, the additional linear dependence on $B$ in Equation 26 would lead to an exponentially increasing speed during the experiment. This is in clear contradiction to experimental observations.\n\nThe density of phages behind the expanding front is large and as previously noted at large MOIs the CRISPR-Cas system fails to provide effective immunity (see section Materials and methods and appendix Infection load and efficiency of the CRISPR/Cas system). However, in comparison to an un-structured environment (e.g., liquid) the structured environment effectively limits transit of phage from within a plaque to the expanding front: The combined effect of growth and diffusion usually generates a much faster expansion of phages during plaque formation, than diffusion alone. Only when nutrients are depleted, can pure diffusion processes explain the slow decrease in speed observed in experiments (see Figure 7A). Our model assumes a sharp drop to $v=0$ at $T_{depl}$ for small $S$.\n\nIn order to derive an expression for the plaque radius $r$, we integrate the expansion speed Equation 7 over time, $r\u2062(t)=\\int_{0}^{t}d\u2062t^{\u2032}\u2062v\u2062(t^{\u2032})$. Employing the simplification that only two values of phage growth are necessary to describe the dynamics \u2013 before $T_{depl}$ phages grow normally with $\\beta$ and $\\lambda$, after $T_{depl}$ phage growth changes to $\\beta_{depl}$ and $\\lambda_{depl}$ \u2013 we can evaluate the integral for the radius directly, arriving at,\n\n$$\nr(t)={2t\\sqrt{D\\delta^{\u22c6}}\\sqrt{S\\beta\u22121\u2212\\lambda\\alpha},0<t<T_{depl},2\\sqrt{D\\delta^{\u22c6}}(T_{depl}\\sqrt{S\\beta\u22121\u2212\\lambda\\alpha}+(t\u2212T_{depl})\\sqrt{S\\beta_{depl}\u22121}),T_{depl}<t.\n$$\n\nUsing this expression we estimated the adsorption constant $\\delta^{\u22c6}$ from the growth experiments as it difficult to measure in practice. This estimate is done for radii exactly at the time of nutrient depletion $T_{depl}$, and excluding the control experiment with only susceptible cells.\n\nPredictions of our model show a discrepancy from experimental results on plates after depletion. We independently estimated $\\beta_{depl}=3.0$, which results in $H_{depl}=(\\beta_{depl}-1)/\\beta_{depl}\u22480.67$. Thus, all experiments with $S>0.33$ should exhibit expanding plaques after nutrients are depleted. In the experimental setup plaques stop expanding in all mixtures of resistant to susceptible cells ($S\\leq0.9$), which would correspond to $\\beta_{depl}<1.1$. This value is, however, still within experimental accuracy of our estimates of $\\beta_{depl}$.\n",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "cd324f6c-1cac-47f6-a5da-40c31a909c88",
+      "submission_id": "23a24d5a-6449-4ef9-a475-9a40b8efdf46",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32035.034](https://doi.org/10.7554/eLife.32035.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"CRISPR-based herd immunity limits phage epidemics in bacterial populations\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom Richard A Neher is a member of our Board of Reviewing Editors and the evaluation has been overseen by and Arup Chakraborty as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Timothy Cooper (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents a mathematical model and a set of experiments examining how CRISPR-Cas mediated immunity to phage infection can result in herd immunity preventing the spread of the pathogen. The experiments are performed both in well-mixed liquid culture as well as in structured environments on agar. The critical herd immunity thresholds and the plaque radii follow model predictions as the parameters of the system as varied. All reviewers appreciated the elegant combination of experiments and theory, but we would like the authors to address the following points:\n\nEssential revisions:\n\n1) The system is set up such that resistant cells don't grow once infected. We would like to see the importance of this assumption discussed. How would model predictions change if cells kept growing? How important is rapid degradation of phage by resistant cells?\n\n2) We would like to encourage the authors to move some derivations presented in Materials and methods section to the Results section. While detailed algebra is better kept in the Materials and methods section, additional mathematical details would help readers appreciate the theoretical results without having to jump back and forth to the Materials and methods section.\n\n3) The experiments are started with a small inoccula which result in a broad crossover at the herd immunity threshold. Is the observed stochasticity consistent with that expected from a small founder population? Or are there additional sources of stochasticity? Would the transition in Figure 4C be sharper if larger inoccula had been used? What is the nature of the error bars in Figure 3 and Figure 4C? Do they quantify uncertainty in the parameter measurements or the stochasticity of the dynamics?\n\n4) There is a sophisticated body of theory on pathogen spreading with long range jumps (e.g. Hallatschek and Fisher, 2014). Can you provide some intuition/discussion how the spreading and herd immunity thresholds change as dispersal goes from 2D diffusion to occasional long-range jumps ultimately to the well-mixed case?\n\n5) It is mentioned in the Abstract that herd immunity might facilitate coexistence between susceptible and resistant variants. This possibility is mentioned again in the discussion in one sentence but not elaborated on. While it seems obvious that selection for resistant variants is reduced when the pathogen can no longer spread due to herd immunity, it is not obvious that this herd immunity results in stable coexistence. Resistant variants would still sweep to high frequencies in areas with high pathogen load. How would a cost of resistance change the model behavior?\n\nThe quantitative model the authors parameterized with experiments could be used to investigate many of these points in greater detail. If the model for example predicted the width of the cross-over at the herd immunity threshold correctly, such comparisons would increase confidence in both the model and the experimental system. Furthermore, the model could be used to assess robustness to assumptions like growth arrest and rapid phage degradation.\n",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "448ccb0c-c4d0-4359-88fd-36edf8108f0f",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C1",
+      "claim": "Herd immunity arises during phage epidemics in structured Escherichia coli populations consisting of differing frequencies of susceptible and resistant cells harboring CRISPR immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we experimentally demonstrate that herd immunity arises during phage epidemics in structured and unstructured Escherichia coli populations consisting of differing frequencies of susceptible and resistant cells harboring CRISPR immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a main finding of the experimental work, supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "11ff535b-c250-488c-8af3-fd2ca12728c7",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C2",
+      "claim": "Herd immunity arises during phage epidemics in unstructured Escherichia coli populations consisting of differing frequencies of susceptible and resistant cells harboring CRISPR immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we experimentally demonstrate that herd immunity arises during phage epidemics in structured and unstructured Escherichia coli populations consisting of differing frequencies of susceptible and resistant cells harboring CRISPR immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a main finding of the experimental work, supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "254186a6-9225-4f7a-95a5-cc63f6c3aeaa",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C3",
+      "claim": "Herd immunity in bacterial populations is affected by spatial population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we develop a mathematical model that quantifies how herd immunity is affected by spatial population structure, bacterial growth rate, and phage replication rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the mathematical model, which is supported by both experimental data and theoretical analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "afa1c10f-a047-40f3-8ffb-ab518b5846be",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C4",
+      "claim": "Herd immunity in bacterial populations is affected by bacterial growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we develop a mathematical model that quantifies how herd immunity is affected by spatial population structure, bacterial growth rate, and phage replication rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the mathematical model, which is supported by both experimental data and theoretical analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "ee66a949-04ab-40bb-9fc1-2b21b58460b1",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C5",
+      "claim": "Herd immunity in bacterial populations is affected by phage replication rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we develop a mathematical model that quantifies how herd immunity is affected by spatial population structure, bacterial growth rate, and phage replication rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the mathematical model, which is supported by both experimental data and theoretical analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "d38987b0-2090-4de8-be5c-a56476139afe",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C6",
+      "claim": "Herd immunity may be important in bacterial communities, allowing for stable coexistence of bacteria and their phages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental and theoretical findings indicate that herd immunity may be important in bacterial communities, allowing for stable coexistence of bacteria and their phages and the maintenance of polymorphism in bacterial immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an implication of the findings in the abstract, based on inference from the experimental and theoretical results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "5273d719-74d4-4f4b-9005-4c8bf4d7ef3b",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C7",
+      "claim": "Herd immunity may be important in bacterial communities, allowing for the maintenance of polymorphism in bacterial immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental and theoretical findings indicate that herd immunity may be important in bacterial communities, allowing for stable coexistence of bacteria and their phages and the maintenance of polymorphism in bacterial immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an implication of the findings in the abstract, based on inference from the experimental and theoretical results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "46094c75-4b22-4f1a-a391-aefd7e452f61",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C8",
+      "claim": "Experimental research into herd immunity has focused mostly on mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental research into the phenomenon has focused mostly on mammals (Jeltsch et al., 1997; Mariner et al., 2012), birds (van Boven et al., 2008; Meister et al., 2008), and invertebrates (Konrad et al., 2012; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research on mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "216dcd91-65f0-4b6e-9868-c6531bc2ab6f",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C9",
+      "claim": "Experimental research into herd immunity has focused mostly on birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental research into the phenomenon has focused mostly on mammals (Jeltsch et al., 1997; Mariner et al., 2012), birds (van Boven et al., 2008; Meister et al., 2008), and invertebrates (Konrad et al., 2012; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research on birds.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "07a177ed-3fdc-4932-a548-55d3f9d74c79",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C10",
+      "claim": "Experimental research into herd immunity has focused mostly on invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental research into the phenomenon has focused mostly on mammals (Jeltsch et al., 1997; Mariner et al., 2012), birds (van Boven et al., 2008; Meister et al., 2008), and invertebrates (Konrad et al., 2012; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research on invertebrates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "80430413-c271-4f15-971f-ae95d53aa6ae",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C11",
+      "claim": "The principles of herd immunity were employed to limit epidemics of pathogens through vaccination programs in human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In human populations the principles of herd immunity were employed to limit epidemics of pathogens through vaccination programs (Fine et al., 2011), which in the case of smallpox lead to its eradication between 1959 and 1977 (Fenner, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fine et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "6b94a188-d311-4bd2-a8be-f35d5e91aec5",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C12",
+      "claim": "Vaccination programs employing herd immunity principles led to the eradication of smallpox between 1959 and 1977.",
+      "claim_type": "EXPLICIT",
+      "source": "In human populations the principles of herd immunity were employed to limit epidemics of pathogens through vaccination programs (Fine et al., 2011), which in the case of smallpox lead to its eradication between 1959 and 1977 (Fenner, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fenner, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "91a47283-4959-414a-a4b3-bdb6e7d23b51",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C17",
+      "claim": "Little work has focused on the potential role of herd immunity in microbial systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, little work has focused on the potential role of herd immunity in microbial systems which contain a number of immune defense systems and have an abundance of phage pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the state of the field, implicitly supported by the lack of citations to such work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "4c95b25e-dda2-47a7-b034-628489dab205",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C18",
+      "claim": "Bacteria have evolved multiple immune defense systems against phage pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, little work has focused on the potential role of herd immunity in microbial systems which contain a number of immune defense systems and have an abundance of phage pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about bacterial immune systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "517952a2-c3aa-4311-b976-81b4d2dd7d3c",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C19",
+      "claim": "Bacteria have evolved early defense mechanisms that include the prevention of phage adsorption by blocking of phage receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Early defense mechanisms include the prevention of phage adsorption by blocking of phage receptors (Nordstr\u00f6m and Forsgren, 1974), production of an extracellular matrix (Hammad, 1998; Sutherland et al., 2004), or the excretion of competitive inhibitors (Destoumieux-Garz\u00f3n et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Nordstr\u00f6m and Forsgren, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "cdc5c5c3-b34b-422c-9d82-5019de00f9a5",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C20",
+      "claim": "Bacteria have evolved early defense mechanisms that include production of an extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Early defense mechanisms include the prevention of phage adsorption by blocking of phage receptors (Nordstr\u00f6m and Forsgren, 1974), production of an extracellular matrix (Hammad, 1998; Sutherland et al., 2004), or the excretion of competitive inhibitors (Destoumieux-Garz\u00f3n et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hammad, 1998 and Sutherland et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "a437a4fe-f356-4999-a8ee-b8bbbbd2f8cb",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C21",
+      "claim": "Bacteria have evolved early defense mechanisms that include the excretion of competitive inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Early defense mechanisms include the prevention of phage adsorption by blocking of phage receptors (Nordstr\u00f6m and Forsgren, 1974), production of an extracellular matrix (Hammad, 1998; Sutherland et al., 2004), or the excretion of competitive inhibitors (Destoumieux-Garz\u00f3n et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Destoumieux-Garz\u00f3n et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "c0644377-ef40-46cf-aaf1-bfd87e4fb76f",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C22",
+      "claim": "Bacteria have evolved innate immune systems that include host restriction-modification systems (RMS).",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside these bacteria have evolved innate immune systems that target phage genomes for destruction. These include host restriction-modification systems (RMS) (Blumenthal and Cheng, 2002), argonaute-based RNAi-like systems (Swarts et al., 2014), and bacteriophage-exclusion (BREX) systems (Goldfarb et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Blumenthal and Cheng, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "98e60380-f9c9-496f-aef7-ea08b113d32a",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C23",
+      "claim": "Bacteria have evolved innate immune systems that include argonaute-based RNAi-like systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside these bacteria have evolved innate immune systems that target phage genomes for destruction. These include host restriction-modification systems (RMS) (Blumenthal and Cheng, 2002), argonaute-based RNAi-like systems (Swarts et al., 2014), and bacteriophage-exclusion (BREX) systems (Goldfarb et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Swarts et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "396989ff-76c8-4fdd-bccd-6b0349abc334",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C24",
+      "claim": "Bacteria have evolved innate immune systems that include bacteriophage-exclusion (BREX) systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside these bacteria have evolved innate immune systems that target phage genomes for destruction. These include host restriction-modification systems (RMS) (Blumenthal and Cheng, 2002), argonaute-based RNAi-like systems (Swarts et al., 2014), and bacteriophage-exclusion (BREX) systems (Goldfarb et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Goldfarb et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "b12278a3-9611-4100-a8b1-3bbcb3443c92",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C25",
+      "claim": "Bacteria have evolved an adaptive immune system called CRISPR-Cas.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to innate systems, bacteria have evolved an adaptive immune system called CRISPR-Cas (clustered regularly interspaced short palindromic repeat) (Sorek et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sorek et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "675e30d4-d047-4044-9777-29e89be70d34",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C26",
+      "claim": "For immune systems to provide herd immunity, they must prevent further spread of the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "In order for any of these immune systems to provide herd immunity, they must prevent further spread of the pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical requirement for herd immunity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "13aa1176-784a-45c0-a7e6-255e22b0b229",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C27",
+      "claim": "The RMS, BREX, argonaute-based RNAi-like, and CRISPR-Cas systems degrade foreign phage DNA after it is injected into the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the early defense mechanisms that may simply prevent an infection but not the further reproduction of infectious particles, the RMS, BREX, argonaute-based RNAi-like, and the CRISPR-Cas systems degrade foreign phage DNA after it is injected into the cell, and thus continue to remove phage particles from the environment, which increases their potential to provide herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about these immune systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "534c7426-a20e-4889-9c7b-9cd4e5146cb4",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C28",
+      "claim": "The RMS, BREX, argonaute-based RNAi-like, and CRISPR-Cas systems continue to remove phage particles from the environment, which increases their potential to provide herd immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the early defense mechanisms that may simply prevent an infection but not the further reproduction of infectious particles, the RMS, BREX, argonaute-based RNAi-like, and the CRISPR-Cas systems degrade foreign phage DNA after it is injected into the cell, and thus continue to remove phage particles from the environment, which increases their potential to provide herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the mechanism of action of these immune systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "31d2d21f-64f7-4bbc-a796-4db82468af3b",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C29",
+      "claim": "The CRISPR-Cas system is adaptive allowing cells to acquire immunity upon infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this, the CRISPR-Cas system is unique in that it is adaptive allowing cells to acquire immunity upon infection (see Figure 1A,B and C), which can lead to polymorphism in immunity even if the system is chromosomal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge about CRISPR-Cas and is illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "5bed0685-64fb-4edb-afce-6214cede00ff",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C30",
+      "claim": "The CRISPR-Cas system can lead to polymorphism in immunity even if the system is chromosomal.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this, the CRISPR-Cas system is unique in that it is adaptive allowing cells to acquire immunity upon infection (see Figure 1A,B and C), which can lead to polymorphism in immunity even if the system is chromosomal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the adaptive nature of CRISPR-Cas.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "11733b5a-6718-4c45-b8db-6c81039c9de0",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C31",
+      "claim": "The reproductive rate of phage depends strongly on the physiology of the host bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to immune system-specific factors, the reproductive rate of phage depends strongly on the physiology of the host bacterium (Hadas et al., 1997), and the underlying effective contact network which may vary greatly in bacterial populations depending on the details of their habitat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hadas et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "0eca9fd8-9c8c-444a-badd-c29be2a9b855",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C32",
+      "claim": "The reproductive rate of phage depends on the underlying effective contact network which may vary greatly in bacterial populations depending on the details of their habitat.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to immune system-specific factors, the reproductive rate of phage depends strongly on the physiology of the host bacterium (Hadas et al., 1997), and the underlying effective contact network which may vary greatly in bacterial populations depending on the details of their habitat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about factors affecting phage reproduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "a44b8ed9-343b-46d6-996c-c7536a9fc0d6",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C33",
+      "claim": "A resistant E. coli strain was engineered by introducing the CRISPR-Cas Type II system from Streptococcus pyogenes with a spacer targeting the T7 phage genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We engineered a resistant E. coli strain by introducing the CRISPR-Cas Type II system from Streptococcus pyogenes with a spacer targeting the T7 phage genome (see Material and Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental construction of the resistant strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "6d0b4124-06fd-4248-a78c-c99bd7f808d9",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C34",
+      "claim": "The engineered CRISPR-Cas system confers a significant level of resistance to T7 phage as measured by the probability of cell burst when exposed to T7.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a significant level of resistance as measured by the probability of cell burst when exposed to T7 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental finding and is shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "c493e3d4-d20b-4a34-a4be-c0cb7329ad38",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C35",
+      "claim": "Resistance conferred by the engineered CRISPR-Cas system is not fully penetrant as approximately 1 in 1000 resistant cells succumb to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, resistance is not fully penetrant as approximately 1 in 1000 resistant cells succumb to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "ad02a1b2-859c-43d3-8976-46bcaa94dbc9",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C36",
+      "claim": "As phage load increases (multiplicity of infection, MOI) the probability that a resistant cell bursts increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observe that as phage load increases (multiplicity of infection, MOI) the probability that a cell bursts increases (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation and is shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "a889f699-7b57-43e3-b034-b760d8d3b035",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C37",
+      "claim": "Upon infection, the resistant strain's cell growth is halted, yet the cell still adsorbs and degrades phages.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to determine the herd immunity threshold in our experimental system, we constructed the resistant strain such that upon infection the cell growth is halted, yet the cell still adsorbs and degrades phages (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a property of the engineered resistant strain and is shown in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "250fff34-f49c-4cd0-89a7-38ad3f0d7f5d",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C43",
+      "claim": "When the percentage of resistant individuals is in excess of 99.6% all 16 replicate populations survive a phage epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "When the percentage of resistant individuals is in excess of 99.6% all 16 replicate populations survive a phage epidemic (i.e., show no detectable difference in growth profiles to the phage free controls; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental result and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "b9c9170b-b0f5-4e45-a5af-c780102b7d8b",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C44",
+      "claim": "Populations with 99.2% resistant individuals show intermediate probabilities of survival with 10 out of 16 replicate populations surviving.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations with 99.2% and 98.4% resistant individuals show intermediate probabilities of survival \u2013 10 out of 16 replicate populations and 4 out of 16 replicate populations survive, respectively (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental result and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "55eca52b-27f4-4dc1-87e5-486229c236e7",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C45",
+      "claim": "Populations with 98.4% resistant individuals show intermediate probabilities of survival with 4 out of 16 replicate populations surviving.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations with 99.2% and 98.4% resistant individuals show intermediate probabilities of survival \u2013 10 out of 16 replicate populations and 4 out of 16 replicate populations survive, respectively (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental result and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "6114410b-815d-4bb2-a2ea-6b1dd91058ea",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C46",
+      "claim": "When populations have fewer than 96.9% resistant individuals all 16 replicate populations fail to survive and collapse under the epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when populations have fewer than 96.9% resistant individuals all 16 replicate populations fail to survive and collapse under the epidemic (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental result and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "9db8b098-4e77-4447-9470-0f10116dde66",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C47",
+      "claim": "Bacterial growth was altered by reducing the concentration of nutrients in the medium by mixing LB broth with 1X M9 salts in different ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this we altered bacterial growth by reducing the concentration of nutrients in the medium by mixing LB broth with 1X M9 salts in different ratios (Figure 4), which concurrently alters the T7 phage's latent period and burst size (Figure 5A,B and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental manipulation and is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "ce81ff83-5f04-466a-8bb5-3ed6a241818e",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C48",
+      "claim": "Reducing the concentration of nutrients in the medium concurrently alters the T7 phage's latent period and burst size.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this we altered bacterial growth by reducing the concentration of nutrients in the medium by mixing LB broth with 1X M9 salts in different ratios (Figure 4), which concurrently alters the T7 phage's latent period and burst size (Figure 5A,B and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation and is shown in Figures 5A, 5B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "5a682f09-9fe2-484a-954a-69e8125c4245",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C49",
+      "claim": "As bacterial growth rates decline the fraction of resistant individuals necessary for population survival decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observe as bacterial growth rates decline the fraction of resistant individuals necessary for population survival decreases (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation and is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "0139c753-14b4-4281-9251-0088fe487b54",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C50",
+      "claim": "When populations are grown in a 50% diluted growth medium, the fraction of resistant individuals required for a 100% probability of survival is 99.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "When the populations are grown in a 50% diluted growth medium, the fraction of resistant individuals required for a 100% probability of survival is 99.2%; when the fraction of resistant individuals is 75% or less populations go extinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "ebed7a23-9134-4504-b6c9-a7e7d2b57535",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C51",
+      "claim": "When populations are grown in a 50% diluted growth medium and the fraction of resistant individuals is 75% or less, populations go extinct.",
+      "claim_type": "EXPLICIT",
+      "source": "When the populations are grown in a 50% diluted growth medium, the fraction of resistant individuals required for a 100% probability of survival is 99.2%; when the fraction of resistant individuals is 75% or less populations go extinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "814f247f-144f-4aa8-882c-a8166c38a642",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C52",
+      "claim": "In a 20% growth medium the fraction of resistant individuals required for survival decreases to 96.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "In a 20% growth medium the fraction of resistant individuals required for survival decreases to 96.9%, while the fraction when all replicates collapse to 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "8f164f12-b712-488c-93a3-4595f81de281",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C53",
+      "claim": "In a 20% growth medium the fraction of resistant individuals when all replicates collapse is 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "In a 20% growth medium the fraction of resistant individuals required for survival decreases to 96.9%, while the fraction when all replicates collapse to 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "4a011dbe-466b-42b9-9edb-b9998ba97d41",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C57",
+      "claim": "A decline in the number of plaque forming units is observed as the proportion of resistant individuals in the populations increases.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a decline in the number of plaque forming units (see Appendix 2\u2014figure 1) and a significant decrease in final plaque sizes as the proportion of resistant individuals in the populations increases (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation and is shown in Appendix 2\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "8cbd4bb7-3595-45b7-bda8-587d4204c13c",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C58",
+      "claim": "A significant decrease in final plaque sizes is observed as the proportion of resistant individuals in the populations increases.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a decline in the number of plaque forming units (see Appendix 2\u2014figure 1) and a significant decrease in final plaque sizes as the proportion of resistant individuals in the populations increases (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation and is shown in Figures 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "0b3f6b5f-f592-4985-96ee-94598c1805b5",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C63",
+      "claim": "When the fraction of resistant individuals exceeds 40%, the reduction in the speed of the spread is statistically significant immediately after the plaques are visually detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when the fraction of resistant individuals exceeds 40%, the reduction in the speed of the spread is statistically significant immediately after the plaques are visually detectable (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an experimental observation and is shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "6900e1cd-1927-4a7d-9a87-c41e4006f571",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C64",
+      "claim": "All populations with low percentages of resistant individuals (below 40%) in liquid environment collapsed, indicating that spatial structure plays a role in herd immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that all populations with such low percentages of resistant individuals in liquid environment collapsed, indicating that spatial structure plays a role in herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from comparing the liquid and plate experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "3ab5638d-05fd-4a7a-a4a6-b38d5475174d",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C65",
+      "claim": "Herd immunity is strongly influenced by spatial organization of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe that herd immunity is strongly influenced by spatial organization of the population, Figure 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "19b01408-cca8-42ad-b607-dba8243357c2",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C73",
+      "claim": "Herd immunity can occur in phage-bacterial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that herd immunity can occur in phage-bacterial communities and that it strongly depends on bacterial growth rates and spatial population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion from the experimental and theoretical work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "705e7708-5ff2-4a27-a621-20105ad8438c",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C74",
+      "claim": "Herd immunity in phage-bacterial communities strongly depends on bacterial growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that herd immunity can occur in phage-bacterial communities and that it strongly depends on bacterial growth rates and spatial population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion from the experimental and theoretical work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "73b09d42-4ef3-4f1f-bb56-ac3e3e6ac377",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C75",
+      "claim": "Herd immunity in phage-bacterial communities strongly depends on spatial population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that herd immunity can occur in phage-bacterial communities and that it strongly depends on bacterial growth rates and spatial population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion from the experimental and theoretical work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "b1dc7cf9-1cc7-4eac-8603-1cc4f00e4c4c",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C78",
+      "claim": "Bacterial populations in the wild are highly structured, as bacteria readily form micro-colonies or biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bacterial populations in the wild are also highly structured, as bacteria readily form micro-colonies or biofilms (Hall-Stoodley et al., 2004) and grow in spatially heterogeneous environments such as soil or the vertebrate gut (Fierer and Jackson, 2006), a second condition we have shown to facilitate herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hall-Stoodley et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "ae3fd673-767c-4b6c-947d-9a5dfe822bfb",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C79",
+      "claim": "Bacteria grow in spatially heterogeneous environments such as soil or the vertebrate gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bacterial populations in the wild are also highly structured, as bacteria readily form micro-colonies or biofilms (Hall-Stoodley et al., 2004) and grow in spatially heterogeneous environments such as soil or the vertebrate gut (Fierer and Jackson, 2006), a second condition we have shown to facilitate herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fierer and Jackson, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "8dc7d75e-fe7b-4c1a-bf50-ea6f1a337ce8",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C80",
+      "claim": "Spatial structure in bacterial populations facilitates herd immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bacterial populations in the wild are also highly structured, as bacteria readily form micro-colonies or biofilms (Hall-Stoodley et al., 2004) and grow in spatially heterogeneous environments such as soil or the vertebrate gut (Fierer and Jackson, 2006), a second condition we have shown to facilitate herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "03930e5e-917d-4bde-ba18-4d64b179a160",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C81",
+      "claim": "Herd immunity may be fairly prevalent in low nutrient communities such as soil and oligotrophic marine environments.",
+      "claim_type": "EXPLICIT",
+      "source": "These suggest that herd immunity may be fairly prevalent in low nutrient communities such as soil and oligotrophic marine environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "51f443b4-fdaa-442d-a736-3a9202dc4b17",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C83",
+      "claim": "While complete selective sweeps result in the reduction of genetic diversity at linked loci, herd immunity may lead to only partial selective sweeps in which some diversity is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while complete selective sweeps result in the reduction of genetic diversity at linked loci, herd immunity may lead to only partial selective sweeps in which some diversity is maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the evolutionary implications of herd immunity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "b10198ac-72ef-4f2f-a275-fb1d8bdda634",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C84",
+      "claim": "Herd immunity has a potential to generate and maintain polymorphism at immunity loci, as has been shown for genes coding for the major histocompatibility complex (MHC).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, herd immunity has a potential to generate and maintain polymorphism at immunity loci, as has been shown for genes coding for the major histocompatibility complex (MHC) (Wills and Green, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wills and Green, 1995.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "e7f0d694-65d3-4097-8e85-a719aa12bcd5",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C85",
+      "claim": "Polymorphism in CRISPR spacer contents have been demonstrated in various bacterial populations and communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphism in CRISPR spacer contents have been demonstrated in various bacterial (Tyson and Banfield, 2008; Sun et al., 2016; Kuno et al., 2014) and Archaeal (Held et al., 2010) populations and communities (Pride et al., 2011; Zhang et al., 2013; Andersson and Banfield, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "64fd7652-acab-4d45-81d4-025a6168565e",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C86",
+      "claim": "Polymorphism in CRISPR spacer contents have been demonstrated in various Archaeal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphism in CRISPR spacer contents have been demonstrated in various bacterial (Tyson and Banfield, 2008; Sun et al., 2016; Kuno et al., 2014) and Archaeal (Held et al., 2010) populations and communities (Pride et al., 2011; Zhang et al., 2013; Andersson and Banfield, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Held et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "44be25b3-e2e1-48df-bd7f-d0c305345f23",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C87",
+      "claim": "Observed polymorphisms in CRISPR spacer content may result from frequency-dependent selection on resistance loci arising from herd immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "While these studies primarily explain polymorphisms in CRISPR spacer content as a result of rapid simultaneous independent acquisition of new spacers, we suggest that observed polymorphisms may result from frequency-dependent selection on resistance loci arising from herd immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about an alternative explanation for observed polymorphisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "8e9a3264-d64b-4e6d-a863-936da9e6491d",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C89",
+      "claim": "Considering the large population sizes of bacteria, drift is unlikely to have a strong effect, allowing herd immunity to maintain a large fraction of immunity polymorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, considering the large population sizes of bacteria, drift is unlikely to have a strong effect, allowing herd immunity to maintain a large fraction of immunity polymorphism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference based on population genetics principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "c4bba304-e739-4a7f-9fb3-f5e10e18346a",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C90",
+      "claim": "Herd immunity might favor coexistence between hosts and their pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that herd immunity might favor coexistence between hosts and their pathogens (Hamer, 1906), which can lead to cycling in pathogen incidence and proportions of resistant and susceptible individuals over time, e.g., in measles before the era of vaccination (Fine, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hamer, 1906 and Fine, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "19461e59-7150-4067-91da-274f21dd443d",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C91",
+      "claim": "Herd immunity can lead to cycling in pathogen incidence and proportions of resistant and susceptible individuals over time, e.g., in measles before the era of vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that herd immunity might favor coexistence between hosts and their pathogens (Hamer, 1906), which can lead to cycling in pathogen incidence and proportions of resistant and susceptible individuals over time, e.g., in measles before the era of vaccination (Fine, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fine, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "b6f37326-e220-48f5-a5f8-50edce4281ed",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C92",
+      "claim": "A computer simulation study of coevolution of Streptococcus thermophilus and its phage found both cycling and stable coexistence of different CRISPR spacer mutants and phage strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, a computer simulation study of coevolution of Streptococcus thermophilus and its phage found both cycling and stable coexistence of different CRISPR spacer mutants and phage strains (Childs et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Childs et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "bb578b32-fef1-4c72-98b3-99bd4ff7d2cc",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C100",
+      "claim": "When the MOI is large even resistant cells become susceptible to lysis resulting in the release of phage progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the MOI is large even resistant cells become susceptible to lysis resulting in the release of phage progeny (see Figure 2) (Westra et al., 2015; Chabas et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation supported by Figure 2 and citations to Westra et al., 2015 and Chabas et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "782bc57e-0f0c-481d-82f5-d358124d5caa",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C104",
+      "claim": "The two state model (constant growth rate while nutrients are present and no growth after depletion) describes the observed population trajectories in experiments sufficiently well.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a two state model \u2013 constant growth rate while nutrients are present and no growth after depletion \u2013 describes the observed population trajectories in experiments sufficiently well (see Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from comparing model predictions to experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "e470a856-c3df-4096-8a0d-7e3873fa4411",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C110",
+      "claim": "The model correctly captures the dependence of the herd immunity threshold on bacterial and phage growth parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "This verification of our model shows that it correctly captures the dependence of the herd immunity threshold on bacterial and phage growth parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from comparing model predictions to experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "29704cc9-42e7-4c75-bf1d-13572b73e387",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C111",
+      "claim": "The inherent stochasticity of the adsorption process provides additional uncertainty not captured by the depicted error bars.",
+      "claim_type": "EXPLICIT",
+      "source": "The inherent stochasticity of the adsorption process thus provides additional uncertainty, which is not captured by the depicted error bars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about sources of uncertainty in the experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "eeab905b-5a23-4ded-b815-1aa608fd7c0c",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C112",
+      "claim": "The fate of the population is more prone to stochastic effects as the phage replication rate is slower than in a fast growing population.",
+      "claim_type": "EXPLICIT",
+      "source": "This additional stochasticity can explain wider transition zone in experiments with slower growing populations (dilution 0.5 and 0.2), because the fate of the population is more prone to stochastic effects as the phage replication rate is slower than in a fast growing population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference to explain experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "a8afebe6-2dc7-4d8e-8f36-01f80d16109c",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C116",
+      "claim": "At large MOIs the CRISPR-Cas system fails to provide effective immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of phages behind the expanding front is large and as previously noted at large MOIs the CRISPR-Cas system fails to provide effective immunity (see section Materials and methods and appendix Infection load and efficiency of the CRISPR/Cas system).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "6f3fd5f5-7c38-4ce8-8767-8c0a614c5281",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C117",
+      "claim": "The structured environment effectively limits transit of phage from within a plaque to the expanding front.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in comparison to an un-structured environment (e.g., liquid) the structured environment effectively limits transit of phage from within a plaque to the expanding front: The combined effect of growth and diffusion usually generates a much faster expansion of phages during plaque formation, than diffusion alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the effect of spatial structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "e256e201-a5bf-4493-9ab3-f63a90eee251",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C118",
+      "claim": "When nutrients are depleted, pure diffusion processes can explain the slow decrease in speed observed in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Only when nutrients are depleted, can pure diffusion processes explain the slow decrease in speed observed in experiments (see Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of experimental observations shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "2788c3dc-aa96-47c3-a8ae-4f0857c4156d",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "claim_id": "C120",
+      "claim": "Predictions of the model show a discrepancy from experimental results on plates after depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions of our model show a discrepancy from experimental results on plates after depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the model's limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "94005cba-bc48-43a3-9f3a-27280d4e9d0f",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors engineered a resistant E. coli strain using a CRISPR-Cas Type II system from S. pyogenes targeting T7 phage. This system confers significant but incomplete resistance (~1 in 1000 resistant cells succumb to infection), with resistance decreasing at higher MOI. Upon infection, resistant cells halt growth but continue to adsorb and degrade phages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 describe the construction and characterization of the resistant strain with consistent experimental evidence shown in Figure 2. The MOI-dependent resistance (C36) and the engineered property of growth arrest with continued phage adsorption (C37) are well-documented and critical for the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "121f087e-9fb6-43d6-bcba-c7196d0ee11a",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In liquid culture without spatial structure, populations with >99.6% resistant individuals all survive phage epidemics, while populations with <96.9% resistant individuals all collapse. Intermediate frequencies (98.4-99.2% resistant) show stochastic outcomes with some populations surviving and others collapsing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 present clear experimental results from liquid culture experiments with 16 replicates per condition, shown in Figure 3. The sharp transition around 97-99% resistant individuals and the stochastic outcomes at intermediate frequencies are well-documented and statistically robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Reducing nutrient concentration by diluting LB medium alters bacterial growth rate and concurrently changes T7 phage latent period and burst size. As bacterial growth rates decline, the fraction of resistant individuals necessary for population survival decreases from 99.2% (50% LB) to 96.9% (20% LB) for complete survival, and from 75% to 50% for complete collapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 describe systematic experiments varying nutrient concentration with clear results shown in Figures 4 and 5, and Tables 1 and 2. The relationship between growth rate and herd immunity threshold is well-established experimentally with multiple replicates and appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "fe2236d1-44b5-4705-bf82-c3ca0ca6904e",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In spatially structured populations on agar plates, increasing proportions of resistant individuals significantly reduce plaque size and expansion speed. Even 10% resistant individuals significantly reduce final plaque size, and 40% resistant individuals significantly slow expansion speed immediately after plaques are detectable. Populations with <40% resistant individuals that collapse in liquid culture can survive on plates, demonstrating that spatial structure facilitates herd immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58, C63-C65 present experimental results from plaque assays with statistical analysis shown in Figures 6 and 7. The comparison between liquid and structured environments (C64) provides strong evidence for the role of spatial structure. Statistical significance is properly assessed with appropriate tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "26f99699-443d-435b-ac21-b2786da4bdad",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Herd immunity arises during phage epidemics in both structured and unstructured E. coli populations consisting of differing frequencies of susceptible and CRISPR-immune resistant cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C73 represent the central finding of the manuscript, supported by the comprehensive experimental results in both liquid culture (C43-C46) and on plates (C57-C65). The experimental design with engineered strains and multiple conditions provides robust evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "56196941-d7a0-4952-9aaf-57192d10ec88",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A mathematical model quantifies how herd immunity is affected by spatial population structure, bacterial growth rate, and phage replication rate. Herd immunity in phage-bacterial communities strongly depends on these factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C74-C75 describe the mathematical modeling results. The model (Equations 4-7) successfully predicts experimental observations across different growth conditions (Figure 5C) and spatial structures (Figure 6C), with parameters estimated from independent measurements (Tables 1-2, Figure 8).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "99c57d5c-e827-4962-88f9-6efc0640410d",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The two-state model (exponential growth until nutrient depletion, then no growth) describes observed population trajectories sufficiently well and correctly captures the dependence of the herd immunity threshold on bacterial and phage growth parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104 and C110 assess model validity. Figure 4 shows good agreement between the two-state model and experimental bacterial growth. Figure 5C demonstrates that the model predictions for herd immunity thresholds match experimental observations across different nutrient conditions with appropriate error propagation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "9f1244eb-3cf5-4655-a6c1-421642f6c0b0",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At large MOI, even resistant cells become susceptible to lysis and the CRISPR-Cas system fails to provide effective immunity, resulting in release of phage progeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100 and C116 describe MOI-dependent resistance failure, supported by Figure 2A showing increased burst probability at higher MOI and cited literature (Westra et al., 2015; Chabas et al., 2016). This is an important limitation of the CRISPR-based immunity system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "f6e63741-c0c1-44c7-a0d5-7d75e127c50b",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The inherent stochasticity of the phage adsorption process provides additional uncertainty not captured by error bars. This stochasticity can explain the wider transition zone in experiments with slower growing populations, as the fate of populations is more prone to stochastic effects when phage replication is slower.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C112 provide a reasonable explanation for the wider transition zones observed in diluted media experiments (Figure 5C). The inference is logical given the stochastic nature of adsorption and the reduced phage replication rates at lower growth rates, though direct experimental evidence for this specific mechanism is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "ad9c8d36-466d-4056-820a-4a472aa20137",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structured environments effectively limit phage transit from within plaques to the expanding front compared to unstructured environments. After nutrient depletion, pure diffusion processes can explain the slow decrease in expansion speed observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C118 provide mechanistic explanations for spatial structure effects. The inference about limited transit in structured environments is logical and consistent with the observed differences between liquid and plate experiments. Figure 7A supports the interpretation about diffusion-limited spread after depletion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "fb1e5783-c6c5-4d54-acd6-17bce65f0c76",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model predictions show a discrepancy from experimental results on plates after nutrient depletion, with the model predicting continued expansion at higher susceptible fractions than observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C120 acknowledges a limitation of the model. The authors note that the independently measured \u03b2_depl=3.0 predicts expansion should continue at S>0.33, but experiments show plaques stop expanding at S\u22640.9. This honest assessment of model limitations is appropriate, though the discrepancy remains within experimental uncertainty of \u03b2_depl.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "be806094-ad33-4a9b-aeeb-87e1b7b1e59f",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Herd immunity may be important in bacterial communities, allowing for stable coexistence of bacteria and phages and maintenance of polymorphism in bacterial immunity. Spatial structure facilitates herd immunity, and herd immunity may be prevalent in low-nutrient environments like soil and oligotrophic marine environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6-C7, C80-C81 extrapolate from the experimental findings to natural bacterial communities. While the experimental evidence supports herd immunity in the laboratory system, the claims about natural communities (C6-C7, C81) are speculative. The inference about spatial structure (C80) is better supported by the experimental comparison between liquid and plate experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "e086a3f9-502a-4d1b-94eb-cc01baade710",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Herd immunity may lead to partial rather than complete selective sweeps, maintaining genetic diversity. It has potential to generate and maintain polymorphism at immunity loci. Observed CRISPR spacer polymorphisms may result from frequency-dependent selection arising from herd immunity rather than only from rapid independent spacer acquisition. Large bacterial population sizes make drift unlikely to eliminate this polymorphism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C84, C87, C89 present evolutionary implications of herd immunity. While the logic is sound and C84 cites MHC polymorphism as an analogy, these claims are largely speculative regarding bacterial populations. The experimental system was specifically designed to prevent frequency-dependent selection (growth arrest upon infection), so direct evidence for these evolutionary dynamics is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "1e7acae6-1a27-439f-a0c0-b61c17c99c06",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior experimental research on herd immunity has focused mostly on mammals, birds, and invertebrates. Vaccination programs employing herd immunity principles led to smallpox eradication (1959-1977). Little work has focused on herd immunity in microbial systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12, C17 provide background context supported by appropriate citations. The claim about limited work on microbial herd immunity (C17) is supported by the absence of citations to such work and provides motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "169c1d28-480d-46ad-ba9e-f3b444353763",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bacteria have evolved multiple immune defense systems against phages, including early defenses (receptor blocking, extracellular matrix, competitive inhibitors) and systems that degrade phage DNA (RMS, argonaute-based RNAi-like, BREX, CRISPR-Cas). These DNA-degrading systems continue to remove phage particles from the environment, increasing their potential to provide herd immunity. CRISPR-Cas is unique as an adaptive system that can lead to immunity polymorphism. Phage reproductive rate depends on host physiology and the contact network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C32 provide essential background on bacterial immune systems, all supported by appropriate citations to the literature. The logical inference that DNA-degrading systems have greater potential for herd immunity (C28) is reasonable. These claims establish the biological context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    },
+    {
+      "id": "ffceefe7-98bd-45f4-a420-c850727f1091",
+      "content_id": "33b99e46-8111-4dc3-908f-dc290d3e703a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Bacterial populations in nature are highly structured (biofilms, micro-colonies) and grow in spatially heterogeneous environments (soil, gut). CRISPR spacer polymorphism has been demonstrated in various bacterial and archaeal populations. Herd immunity might favor host-pathogen coexistence and can lead to cycling in pathogen incidence, as observed in measles and in computational studies of S. thermophilus-phage coevolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79, C85-C86, C90-C92 provide relevant background supported by appropriate citations. These establish that the conditions shown to facilitate herd immunity in the experiments (spatial structure, polymorphism) are relevant to natural bacterial populations, strengthening the broader significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:42:14.026372Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a44b8ed9-343b-46d6-996c-c7536a9fc0d6",
+      "result_id": "94005cba-bc48-43a3-9f3a-27280d4e9d0f"
+    },
+    {
+      "claim_id": "6d0b4124-06fd-4248-a78c-c99bd7f808d9",
+      "result_id": "94005cba-bc48-43a3-9f3a-27280d4e9d0f"
+    },
+    {
+      "claim_id": "c493e3d4-d20b-4a34-a4be-c0cb7329ad38",
+      "result_id": "94005cba-bc48-43a3-9f3a-27280d4e9d0f"
+    },
+    {
+      "claim_id": "ad02a1b2-859c-43d3-8976-46bcaa94dbc9",
+      "result_id": "94005cba-bc48-43a3-9f3a-27280d4e9d0f"
+    },
+    {
+      "claim_id": "a889f699-7b57-43e3-b034-b760d8d3b035",
+      "result_id": "94005cba-bc48-43a3-9f3a-27280d4e9d0f"
+    },
+    {
+      "claim_id": "250fff34-f49c-4cd0-89a7-38ad3f0d7f5d",
+      "result_id": "121f087e-9fb6-43d6-bcba-c7196d0ee11a"
+    },
+    {
+      "claim_id": "b9c9170b-b0f5-4e45-a5af-c780102b7d8b",
+      "result_id": "121f087e-9fb6-43d6-bcba-c7196d0ee11a"
+    },
+    {
+      "claim_id": "55eca52b-27f4-4dc1-87e5-486229c236e7",
+      "result_id": "121f087e-9fb6-43d6-bcba-c7196d0ee11a"
+    },
+    {
+      "claim_id": "6114410b-815d-4bb2-a2ea-6b1dd91058ea",
+      "result_id": "121f087e-9fb6-43d6-bcba-c7196d0ee11a"
+    },
+    {
+      "claim_id": "9db8b098-4e77-4447-9470-0f10116dde66",
+      "result_id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48"
+    },
+    {
+      "claim_id": "ce81ff83-5f04-466a-8bb5-3ed6a241818e",
+      "result_id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48"
+    },
+    {
+      "claim_id": "5a682f09-9fe2-484a-954a-69e8125c4245",
+      "result_id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48"
+    },
+    {
+      "claim_id": "0139c753-14b4-4281-9251-0088fe487b54",
+      "result_id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48"
+    },
+    {
+      "claim_id": "ebed7a23-9134-4504-b6c9-a7e7d2b57535",
+      "result_id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48"
+    },
+    {
+      "claim_id": "814f247f-144f-4aa8-882c-a8166c38a642",
+      "result_id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48"
+    },
+    {
+      "claim_id": "8f164f12-b712-488c-93a3-4595f81de281",
+      "result_id": "6ab1ddeb-3311-4b96-b440-fa3c58fa5b48"
+    },
+    {
+      "claim_id": "4a011dbe-466b-42b9-9edb-b9998ba97d41",
+      "result_id": "fe2236d1-44b5-4705-bf82-c3ca0ca6904e"
+    },
+    {
+      "claim_id": "8cbd4bb7-3595-45b7-bda8-587d4204c13c",
+      "result_id": "fe2236d1-44b5-4705-bf82-c3ca0ca6904e"
+    },
+    {
+      "claim_id": "0b3f6b5f-f592-4985-96ee-94598c1805b5",
+      "result_id": "fe2236d1-44b5-4705-bf82-c3ca0ca6904e"
+    },
+    {
+      "claim_id": "6900e1cd-1927-4a7d-9a87-c41e4006f571",
+      "result_id": "fe2236d1-44b5-4705-bf82-c3ca0ca6904e"
+    },
+    {
+      "claim_id": "3ab5638d-05fd-4a7a-a4a6-b38d5475174d",
+      "result_id": "fe2236d1-44b5-4705-bf82-c3ca0ca6904e"
+    },
+    {
+      "claim_id": "448ccb0c-c4d0-4359-88fd-36edf8108f0f",
+      "result_id": "26f99699-443d-435b-ac21-b2786da4bdad"
+    },
+    {
+      "claim_id": "11ff535b-c250-488c-8af3-fd2ca12728c7",
+      "result_id": "26f99699-443d-435b-ac21-b2786da4bdad"
+    },
+    {
+      "claim_id": "19b01408-cca8-42ad-b607-dba8243357c2",
+      "result_id": "26f99699-443d-435b-ac21-b2786da4bdad"
+    },
+    {
+      "claim_id": "254186a6-9225-4f7a-95a5-cc63f6c3aeaa",
+      "result_id": "56196941-d7a0-4952-9aaf-57192d10ec88"
+    },
+    {
+      "claim_id": "afa1c10f-a047-40f3-8ffb-ab518b5846be",
+      "result_id": "56196941-d7a0-4952-9aaf-57192d10ec88"
+    },
+    {
+      "claim_id": "ee66a949-04ab-40bb-9fc1-2b21b58460b1",
+      "result_id": "56196941-d7a0-4952-9aaf-57192d10ec88"
+    },
+    {
+      "claim_id": "705e7708-5ff2-4a27-a621-20105ad8438c",
+      "result_id": "56196941-d7a0-4952-9aaf-57192d10ec88"
+    },
+    {
+      "claim_id": "73b09d42-4ef3-4f1f-bb56-ac3e3e6ac377",
+      "result_id": "56196941-d7a0-4952-9aaf-57192d10ec88"
+    },
+    {
+      "claim_id": "782bc57e-0f0c-481d-82f5-d358124d5caa",
+      "result_id": "99c57d5c-e827-4962-88f9-6efc0640410d"
+    },
+    {
+      "claim_id": "e470a856-c3df-4096-8a0d-7e3873fa4411",
+      "result_id": "99c57d5c-e827-4962-88f9-6efc0640410d"
+    },
+    {
+      "claim_id": "bb578b32-fef1-4c72-98b3-99bd4ff7d2cc",
+      "result_id": "9f1244eb-3cf5-4655-a6c1-421642f6c0b0"
+    },
+    {
+      "claim_id": "a8afebe6-2dc7-4d8e-8f36-01f80d16109c",
+      "result_id": "9f1244eb-3cf5-4655-a6c1-421642f6c0b0"
+    },
+    {
+      "claim_id": "29704cc9-42e7-4c75-bf1d-13572b73e387",
+      "result_id": "f6e63741-c0c1-44c7-a0d5-7d75e127c50b"
+    },
+    {
+      "claim_id": "eeab905b-5a23-4ded-b815-1aa608fd7c0c",
+      "result_id": "f6e63741-c0c1-44c7-a0d5-7d75e127c50b"
+    },
+    {
+      "claim_id": "6f3fd5f5-7c38-4ce8-8767-8c0a614c5281",
+      "result_id": "ad9c8d36-466d-4056-820a-4a472aa20137"
+    },
+    {
+      "claim_id": "e256e201-a5bf-4493-9ab3-f63a90eee251",
+      "result_id": "ad9c8d36-466d-4056-820a-4a472aa20137"
+    },
+    {
+      "claim_id": "2788c3dc-aa96-47c3-a8ae-4f0857c4156d",
+      "result_id": "fb1e5783-c6c5-4d54-acd6-17bce65f0c76"
+    },
+    {
+      "claim_id": "d38987b0-2090-4de8-be5c-a56476139afe",
+      "result_id": "be806094-ad33-4a9b-aeeb-87e1b7b1e59f"
+    },
+    {
+      "claim_id": "5273d719-74d4-4f4b-9005-4c8bf4d7ef3b",
+      "result_id": "be806094-ad33-4a9b-aeeb-87e1b7b1e59f"
+    },
+    {
+      "claim_id": "8dc7d75e-fe7b-4c1a-bf50-ea6f1a337ce8",
+      "result_id": "be806094-ad33-4a9b-aeeb-87e1b7b1e59f"
+    },
+    {
+      "claim_id": "03930e5e-917d-4bde-ba18-4d64b179a160",
+      "result_id": "be806094-ad33-4a9b-aeeb-87e1b7b1e59f"
+    },
+    {
+      "claim_id": "51f443b4-fdaa-442d-a736-3a9202dc4b17",
+      "result_id": "e086a3f9-502a-4d1b-94eb-cc01baade710"
+    },
+    {
+      "claim_id": "b10198ac-72ef-4f2f-a275-fb1d8bdda634",
+      "result_id": "e086a3f9-502a-4d1b-94eb-cc01baade710"
+    },
+    {
+      "claim_id": "44be25b3-e2e1-48df-bd7f-d0c305345f23",
+      "result_id": "e086a3f9-502a-4d1b-94eb-cc01baade710"
+    },
+    {
+      "claim_id": "8e9a3264-d64b-4e6d-a863-936da9e6491d",
+      "result_id": "e086a3f9-502a-4d1b-94eb-cc01baade710"
+    },
+    {
+      "claim_id": "46094c75-4b22-4f1a-a391-aefd7e452f61",
+      "result_id": "1e7acae6-1a27-439f-a0c0-b61c17c99c06"
+    },
+    {
+      "claim_id": "216dcd91-65f0-4b6e-9868-c6531bc2ab6f",
+      "result_id": "1e7acae6-1a27-439f-a0c0-b61c17c99c06"
+    },
+    {
+      "claim_id": "07a177ed-3fdc-4932-a548-55d3f9d74c79",
+      "result_id": "1e7acae6-1a27-439f-a0c0-b61c17c99c06"
+    },
+    {
+      "claim_id": "80430413-c271-4f15-971f-ae95d53aa6ae",
+      "result_id": "1e7acae6-1a27-439f-a0c0-b61c17c99c06"
+    },
+    {
+      "claim_id": "6b94a188-d311-4bd2-a8be-f35d5e91aec5",
+      "result_id": "1e7acae6-1a27-439f-a0c0-b61c17c99c06"
+    },
+    {
+      "claim_id": "91a47283-4959-414a-a4b3-bdb6e7d23b51",
+      "result_id": "1e7acae6-1a27-439f-a0c0-b61c17c99c06"
+    },
+    {
+      "claim_id": "4c95b25e-dda2-47a7-b034-628489dab205",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "517952a2-c3aa-4311-b976-81b4d2dd7d3c",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "cdc5c5c3-b34b-422c-9d82-5019de00f9a5",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "a437a4fe-f356-4999-a8ee-b8bbbbd2f8cb",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "c0644377-ef40-46cf-aaf1-bfd87e4fb76f",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "98e60380-f9c9-496f-aef7-ea08b113d32a",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "396989ff-76c8-4fdd-bccd-6b0349abc334",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "b12278a3-9611-4100-a8b1-3bbcb3443c92",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "675e30d4-d047-4044-9777-29e89be70d34",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "13aa1176-784a-45c0-a7e6-255e22b0b229",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "534c7426-a20e-4889-9c7b-9cd4e5146cb4",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "31d2d21f-64f7-4bbc-a796-4db82468af3b",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "5bed0685-64fb-4edb-afce-6214cede00ff",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "11733b5a-6718-4c45-b8db-6c81039c9de0",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "0eca9fd8-9c8c-444a-badd-c29be2a9b855",
+      "result_id": "169c1d28-480d-46ad-ba9e-f3b444353763"
+    },
+    {
+      "claim_id": "b1dc7cf9-1cc7-4eac-8603-1cc4f00e4c4c",
+      "result_id": "ffceefe7-98bd-45f4-a420-c850727f1091"
+    },
+    {
+      "claim_id": "ae3fd673-767c-4b6c-947d-9a5dfe822bfb",
+      "result_id": "ffceefe7-98bd-45f4-a420-c850727f1091"
+    },
+    {
+      "claim_id": "e7f0d694-65d3-4097-8e85-a719aa12bcd5",
+      "result_id": "ffceefe7-98bd-45f4-a420-c850727f1091"
+    },
+    {
+      "claim_id": "64fd7652-acab-4d45-81d4-025a6168565e",
+      "result_id": "ffceefe7-98bd-45f4-a420-c850727f1091"
+    },
+    {
+      "claim_id": "c4bba304-e739-4a7f-9fb3-f5e10e18346a",
+      "result_id": "ffceefe7-98bd-45f4-a420-c850727f1091"
+    },
+    {
+      "claim_id": "19461e59-7150-4067-91da-274f21dd443d",
+      "result_id": "ffceefe7-98bd-45f4-a420-c850727f1091"
+    },
+    {
+      "claim_id": "b6f37326-e220-48f5-a5f8-50edce4281ed",
+      "result_id": "ffceefe7-98bd-45f4-a420-c850727f1091"
+    }
+  ],
+  "comparisons": []
+}

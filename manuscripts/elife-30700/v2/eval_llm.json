@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Human IRE1\u03b1 cLD binds peptides with characteristic amino acid preferences, favoring aromatic residues (Cys, Tyr, Trp) and Arg while disfavoring acidic residues (Asp, Glu), with affinities in the 5-30 \u00b5M range. These preferences differ from BiP, allowing IRE1 to recognize distinct regions of unfolded proteins. The minimum binding peptide length is 12 amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C36-C43, C143-C145 are well-supported by peptide array data (Figure 2A-B), fluorescence anisotropy measurements (Figure 2C-F), and statistical analysis (p<0.05). The binding preferences are quantitatively characterized, truncation analysis systematically defines minimal binding requirements, and the complementarity with BiP is demonstrated experimentally. The data quality and reproducibility appear robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "hIRE1\u03b1 cLD binds full-length unfolded proteins (CH1 domain, staphylococcal nuclease \u0394131\u0394) with similar affinities (21-30 \u00b5M) as peptides, suggesting single binding sites. A tandem repeat peptide (MPZ1-N-2X) shows ~20-fold higher affinity (0.456 \u00b5M) due to avidity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by microscale thermophoresis (Figure 2G) and fluorescence anisotropy (Figure 2H, supplement 2) measurements. The similar affinities between peptides and full-length proteins support the single-site binding model. The avidity interpretation for MPZ1-N-2X is validated by subsequent NMR and AUC experiments showing it doesn't require oligomerization (C88-C89). However, the K1/2 values should be interpreted cautiously as the authors note these don't reflect true Kd due to conformational equilibria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "NMR spectroscopy reveals that hIRE1\u03b1 cLD is dynamic in solution and undergoes conformational changes upon peptide binding. Chemical shift perturbations map to the \u03b2-sheet floor (Ile124, Ile128, Thr159Ile), \u03b1B helix (Ile263), and \u03b2-sandwich (Ile52), with similar patterns for peptides and unfolded proteins (CH1). This suggests allosteric coupling from the binding site to oligomerization interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C63 are supported by methyl-TROSY NMR experiments (Figures 3-4) showing reproducible chemical shift perturbations upon peptide binding. The assignment strategy using site-directed mutagenesis is rigorous. The broad linewidths indicating conformational dynamics are appropriately interpreted. The similar perturbation patterns for different peptides and CH1 protein strengthen the conclusion of a common binding mechanism. The allosteric coupling interpretation is reasonable given the spatial distribution of affected residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Paramagnetic relaxation enhancement (PRE) NMR experiments with spin-labeled peptide localize peptide binding to the center of the MHC-like groove, with Leu186Ile showing the strongest effect. Residues Ile128 and Ile263 that showed chemical shift changes are further from the binding site, confirming they respond through allosteric mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by PRE NMR data (Figure 5) showing distance-dependent signal attenuation. The normalization for surface accessibility is methodologically sound. The mapping to the MHC-like groove is consistent with the structural model and provides direct spatial information complementing the chemical shift data. The distinction between direct binding effects and allosteric changes is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "hIRE1\u03b1 cLD exists in concentration-dependent oligomeric equilibria, forming discrete dimers at low concentrations (1-2.5 \u00b5M) and gradually assembling into tetramers and higher oligomers at NMR concentrations (25-75 \u00b5M). Peptide binding stabilizes dimers and promotes formation of larger oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C112-C114 are supported by AUC sedimentation velocity experiments (Figure 6A-C) and size exclusion chromatography (Figure 6 supplement 1A). The concentration-dependent behavior is systematically characterized. The peptide-induced oligomerization is clearly demonstrated. This differs from yeast IRE1 which shows more precipitous oligomerization, representing a species-specific difference that is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Oligomerization induces conformational changes in hIRE1\u03b1 cLD affecting the \u03b1B helix (Ile263), \u03b2-sandwich (Ile52), and \u03b2-sheet floor (Ile124, Ile128), as detected by concentration-dependent NMR chemical shift changes. This suggests oligomeric hIRE1\u03b1 cLD adopts an active conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by NMR experiments comparing hIRE1\u03b1 cLD at different concentrations (Figure 6D-E). The chemical shift changes upon oligomerization affecting similar regions as peptide binding support the allosteric coupling model. However, the inference that oligomeric hIRE1\u03b1 displays \"higher affinity for unfolded protein ligands\" (C75) is not directly tested and represents an interpretation rather than a demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Chemical cross-linking coupled with mass spectrometry identifies five abundant inter-molecular cross-links (Lys120\u2022120, Lys53\u2022347, Lys53\u2022349, Lys53\u2022351, Lys265\u2022351). Four cross-links map to a putative IF2L oligomerization interface involving residues not resolved in the crystal structure (aa 347-351). Threading hIRE1\u03b1 sequence onto the yeast structure satisfies distance constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by cross-linking/MS data (Figure 7A, Table 1) showing reproducible cross-links absent in monomeric controls. The distance constraints (\u226428-33 \u00c5) are appropriate for BS3 cross-linker. The structural modeling based on threading is reasonable given the sequence conservation and cross-link compatibility. However, the model remains a prediction requiring validation. The involvement of unresolved regions (V307-Y358) in IF2L is a key insight but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The IF2L mutant (WLLI359-362\u2192GSGS359-362) prevents oligomerization while retaining peptide binding affinity similar to wild-type (K1/2 = 5.4 \u00b5M for MPZ1-N, 0.95 \u00b5M for MPZ1-N-2X). NMR shows the mutant retains peptide-induced allosteric changes, demonstrating that peptide binding and oligomerization are mechanistically separable. The avidity effect of MPZ1-N-2X does not require oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C83-C94 are well-supported by multiple complementary experiments: AUC showing loss of oligomerization (Figure 7D), fluorescence anisotropy showing retained binding (Figure 7E), and NMR showing preserved allosteric coupling (Figure 7F-G). This is a critical control demonstrating that the mutation specifically disrupts oligomerization without affecting the peptide-binding site or allosteric mechanism. The conclusion that dimers are the functional unit for peptide binding is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The IF2L mutant expressed at physiological levels in IRE1\u03b1\u2212/\u2212/IRE1\u03b2\u2212/\u2212 MEFs fails to splice XBP1 mRNA, shows no phosphorylation, and does not form foci upon ER stress, demonstrating that lumenal domain oligomerization is essential for IRE1 function in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C95-C100 are supported by cell-based assays showing loss of function for the IF2L mutant: Western blots (Figure 8A-B), XBP1 splicing assays (Figure 8C), and confocal microscopy (Figure 8D). The expression levels are appropriately matched to wild-type. The complete loss of activity (no splicing, no phosphorylation, no foci) provides strong evidence that oligomerization is necessary for function. This validates the physiological relevance of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C125"
+    ],
+    "result": "The authors propose a unified model where unfolded protein binding to the MHC-like groove induces conformational changes that stabilize an open state compatible with IF2L formation, leading to oligomerization and activation. This mechanism is conserved from yeast to mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C101-C103, C107, C125 represent the overarching mechanistic model supported by the collective evidence: peptide binding (C1, C36-C48), conformational changes (C53-C63), peptide localization to groove (C64-C67), oligomerization (C68-C75), interface identification (C76-C82), separation of binding and oligomerization (C83-C94), and cellular validation (C95-C100). The model is well-supported by converging lines of evidence. The claim of conservation from yeast to mammals is justified by the mechanistic similarities despite structural differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on the UPR and IRE1: IRE1 is the most conserved UPR sensor, exists as \u03b1 and \u03b2 isoforms in mammals, oligomerizes upon ER stress, and activates XBP1 splicing and RIDD. The mechanism of mammalian IRE1 activation has been controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C16 provide established background knowledge supported by appropriate citations. These contextual claims are well-documented in the literature and accurately represent the state of the field. The controversy mentioned (C6) is the central question addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior structural and functional studies of yeast and human IRE1 revealed key differences: yeast IRE1 has an MHC-like groove and IF2L interface essential for activation, while human IRE1\u03b1 crystal structure shows a closed groove and \u03b1B helix blocking IF2L formation. These differences led to competing direct vs. indirect (BiP-mediated) activation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C32 accurately summarize prior work with appropriate citations. The structural differences between yeast and human IRE1 are well-documented. The description of competing models is fair and sets up the central question. The refutation of the BiP model in yeast (C32) is correctly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors hypothesize that crystal structures represent snapshots of conformational states, and that human and yeast IRE1 may use a common mechanism with the human structure representing a 'closed' state that can transition to an 'open' state for peptide binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C35 represent the authors' hypothesis motivating the study. While C33 (crystal structures as snapshots) is general knowledge, C34-C35 are speculative predictions tested by the subsequent experiments. The hypothesis is reasonable but these claims themselves are not directly supported evidence\u2014they are the premise being tested. The subsequent results (C1-C103) provide support for this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The proposed mechanism involves lumenal domain oligomerization juxtaposing cytosolic kinase domains for trans-autophosphorylation, followed by RNase domain activation. Impairment of lumenal oligomerization diminishes both RNase and kinase activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is directly supported by the IF2L mutant data showing loss of both XBP1 splicing (RNase) and phosphorylation (kinase) (C96-C97). Claim C104 is a mechanistic inference based on known IRE1 structure-function relationships and the oligomerization data, supported by citations. The coupling of lumenal and cytosolic events is well-established in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose that BiP modulates IRE1 activity by tuning oligomerization equilibrium rather than being the primary regulator, with unfolded proteins exerting synergistic effects by freeing IRE1 from BiP and inducing oligomerization through direct binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C108-C110 represent a proposed model for BiP's role that reconciles existing data with the new findings. While C106 (BiP release upon ER stress) is established, C108-C110 are speculative interpretations not directly tested in this study. The model is plausible and consistent with yeast data (cited), but lacks direct experimental validation in the current work. This represents an important hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that the \u03b1B helix may hinder oligomerization in the closed state, and peptide binding allosterically releases this inhibition. The conformational change may allow the \u03b2-propeller to contact the flexible region (V307-Y358) forming IF2L, with the \u03b1B helix potentially contributing additional contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111, C115-C120 represent structural speculation about the conformational mechanism. While C111 (yeast vs. human oligomerization differences) and C112 (human concentration-dependent oligomerization) are supported by data, C115-C120 are mechanistic proposals not directly validated. The \u03b1B helix's role is inferred from its structural position and the oligomerization data, but the specific conformational changes are not directly observed. C120 (symmetry mate contacts) provides some structural support but crystal contacts may not reflect physiological interfaces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Structural analysis suggests the groove's chemical properties (aromatic residues, negative charge) complement the binding peptides (aromatics, arginines). Opening the groove by ~6 \u00c5 exposes more hydrophobicity. A 12-mer peptide can fit the 39 \u00c5 groove in extended conformation, ensuring preferential binding of unfolded polypeptides, similar to Hsp70 recognition principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C130 combine structural analysis (C121, C123) with experimental data (C122, C126) and geometric calculations (C128). The chemical complementarity (C122) is supported by the peptide binding preferences (C36-C37). The 12-mer minimum length (C126) is experimentally determined (C42). The geometric fit calculation (C128) is straightforward. The comparison to Hsp70 (C130) is appropriate and well-cited. However, C127 (anchor residues) is speculative analogy to MHC without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "hIRE1\u03b1 cLD and BiP bind partially overlapping but distinct peptide sets, with IRE1 showing lower affinity (5-30 \u00b5M) than BiP (~7 \u00b5M for CH1). This difference may set a higher threshold for UPR activation and allow IRE1 to compete with abundant BiP. Polypeptides with multiple IRE1 binding sites could show higher affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 are supported by peptide array comparisons (C143-C145, Figure 2), affinity measurements (C38-C45, C133-C134), and the MPZ1-N-2X avidity data (C47, C136). The distinct binding preferences are experimentally demonstrated. The evolutionary interpretation (C135) is reasonable speculation. The comparison to BiP affinities uses appropriate literature values. The inference about competition (C132) is logical given the distinct preferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "IRE1 dysfunction contributes to various diseases (cancer, metabolic disorders, neurodegenerative diseases). The findings suggest novel pharmacological approaches targeting IRE1's groove to develop agonists or antagonists for therapeutic intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C138 are established knowledge well-supported by citations. However, C139-C142 are speculative proposals for future drug development. While the mechanistic insights could inform drug design, no actual drug screening or development is presented. These represent reasonable future directions but are not supported by data in this study. The speculation is appropriate for a Discussion section but should not be considered validated results.",
+    "result_type": "MINOR"
+  }
+]

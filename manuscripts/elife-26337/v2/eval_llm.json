@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors developed an experimental system for two-photon calcium imaging of piriform cortex neurons in anesthetized mice using AAV-GCaMP6s and an automated cell segmentation algorithm, enabling simultaneous monitoring of 100-400 neurons per imaging site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 describe a well-established experimental pipeline with appropriate technical details. The automated segmentation algorithm is documented in supplementary materials (C4-C5), and the quantitative yield of 100-400 neurons per site (C6) is consistent with the imaging approach described. The methodology is standard for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Odor stimulation elicited sparse, partially overlapping responses in piriform neurons, with 20% showing increased fluorescence and 11% showing decreased fluorescence. Most responding neurons exhibited narrow tuning, though many displayed high trial-to-trial variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 present quantitative characterization of piriform responses supported by imaging data (Figure 1). The statistics (20% activated, 11% suppressed) are clearly stated with standard deviations across 6 imaging sites and 1706 neurons, providing adequate sample size. The observation of trial-to-trial variability is documented in Figure 1e.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Despite substantial overlap between odor response patterns (inter-odorant correlation 0.44\u00b10.08), a linear classifier achieved 94% accuracy in identifying odors when pooling across imaging sites and 71% accuracy at individual sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 demonstrate that odor identity can be decoded from piriform activity patterns. The correlation analysis (C13-C14) and classification results (C15-C17) are quantitatively reported with appropriate cross-validation (leave-one-out). The high classification accuracy despite pattern overlap is a key finding supported by the data in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Classification accuracy rises slowly after odor onset (reaching high accuracy within 0.5s), remains above chance for several seconds post-stimulus, and shows temporal dynamics suggesting dynamic rearrangement of odor representations with distinct early, sustained, and late components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 describe temporal dynamics of odor coding. The slow rise (C18) is appropriately attributed to GCaMP6s kinetics (C19). The persistent above-chance classification (C20) and temporal specificity experiments (C22-C23) support the interpretation of dynamic representations (C24-C25). However, C19 is an inference rather than direct measurement of indicator kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Odor-responsive piriform neurons show no spatial clustering and are randomly distributed across imaging sites, with odor identity information homogeneously distributed and decodable from local ensembles without topographic organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 address spatial organization using nearest neighbor index analysis (C27) showing no significant clustering (p>0.05 at all sites). The homogeneous distribution is further supported by local ensemble analysis (C29) and consistency across sites (C30). The statistical approach is appropriate and the conclusion of random spatial organization is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Increasing odor concentration from 0.01% to 1% moderately increased the fraction of activated and suppressed neurons (decreasing population sparseness), but did not systematically broaden individual neuron tuning, with lifetime sparseness distributions maintained across concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 characterize concentration-dependent responses with appropriate statistics (mixed-effect ANOVA, C34). The observation that population sparseness decreases (C35) while individual neuron tuning distributions are maintained (C37) is an important finding supported by quantitative data from 13 imaging sites and 2935 neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Piriform response patterns decorrelate substantially with increasing odor concentration, with correlations dropping from 0.53 (10-fold change) to 0.36 (100-fold change), making responses to the same odor at different concentrations as dissimilar as responses to different odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 demonstrate concentration-dependent decorrelation with clear quantitative measures and statistical significance (mixed-effect ANOVA, p<0.01, C39). The gradual decorrelation (C40-C41) and conclusion that patterns are not concentration-invariant (C42-C43) are well-supported by the correlation analysis shown in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ANOVA identified that 10.4\u00b14.5% of piriform neurons (30.1% of odor-selective neurons) exhibit concentration-invariant responses across a 100-fold concentration range, with responses remaining highly correlated (0.57-0.60) across concentrations and clustering by odor identity rather than concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe identification of concentration-invariant neurons using appropriate statistical methods (ANOVA with p<0.01 threshold). The validation through correlation analysis (C48) and PCA clustering (C49) supports the identification. However, the false positive rate analysis in methods suggests ~1% FPR, meaning at least 9.4% are true positives, which is still substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Concentration-invariant neurons accurately decode odor identity across concentration changes, performing similarly to generic neurons for 10-fold changes but significantly better (63.5% vs 19.2%, p<0.01) for 100-fold concentration changes in generalization tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate functional significance of concentration-invariant neurons through generalization learning with appropriate statistics (Mann-Whitney test with FDR correction). The superior performance at 100-fold concentration changes (C51) is statistically significant and biologically meaningful, supporting the main conclusion (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The concentration-invariant subnetwork shows relative stability, with 19.2% identified across 10-fold (vs 100-fold) concentration ranges and 22% concentration-invariant for at least one odor pair, though with some modulation by stimulus complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 test the robustness of concentration-invariant neuron identification. The stability analysis across different concentration ranges (C53) and stimulus complexities (C54-C55) appropriately characterizes the limitations and context-dependence of the finding. The conclusion of relative stability (C56) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Concentration-invariant neurons do not differ from generic neurons in response kinetics, amplitude, or trial-to-trial variability, and show no spatial clustering (11/13 sites indistinguishable from random, 2/13 moderately clustered).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 characterize concentration-invariant neurons, finding no distinguishing features in response properties (C57, p>0.05) or spatial organization (C59-C60). The statistical analysis using nearest neighbor index is appropriate. The conclusion (C61) that these neurons are similar to others except for concentration-invariance is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Olfactory bulb mitral/tufted cells show significantly fewer concentration-invariant neurons (5.2\u00b15.9%) compared to piriform cortex (10.4\u00b14.5%, p<0.01), with concentration-invariance in the bulb not significantly above chance (p=0.073) but significantly above chance in piriform (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 compare olfactory bulb and piriform cortex using consistent methodology. The statistical comparison (C66) is significant, and bootstrap analysis (C68-C69) demonstrates that piriform but not bulb shows above-chance concentration-invariance. The subsampling analysis (C67) addresses potential sampling bias. However, the use of GCaMP3 for bulb vs GCaMP6s for cortex may introduce technical confounds that could underestimate bulb concentration-invariance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Concentration-invariant neurons are overrepresented in piriform cortex but not olfactory bulb, suggesting that concentration-invariant subnetworks for odor identity emerge in cortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 present the main conclusion that concentration-invariance emerges in cortex. While the statistical comparison supports overrepresentation in cortex (C76), the causal claim of emergence (C77) is an inference. The different calcium indicators (GCaMP3 vs GCaMP6s) and anesthesia effects on bulb vs cortex could contribute to observed differences. Additional experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study confirms prior hypotheses that odor information is encoded by spatially distributed piriform ensembles without topographic organization, providing robust evidence through spatial analysis that extracellular recordings cannot provide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 contextualize findings within prior literature. The confirmation of distributed coding (C80) is well-supported by the spatial analysis (C27-C30). The comparison to extracellular recordings (C81-C82) appropriately highlights the unique contribution of imaging for revealing spatial organization (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Key findings are consistent between this study (anesthetized) and Bolding & Franks (awake): narrow tuning, high trial-to-trial variability, substantial pattern overlap, less sparse representations than previously thought, and lack of concentration-invariance in population responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 compare findings across experimental conditions (anesthetized vs awake). The consistency of key features (C84-C87) despite methodological differences (C88) strengthens confidence in the main findings. However, this relies on appropriate citation of the companion manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Anesthesia affects olfactory processing by eliminating sniff modulation, altering olfactory bulb activity, and potentially causing incomplete normalization at high concentrations, with more neurons recruited at high concentrations in anesthetized vs awake mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 discuss anesthesia effects based on literature (C94, C96-C99) and current observations (C95, C100). The interpretation that normalization is incomplete under anesthesia (C101) is reasonable given the cited evidence about cortical feedback (C102). This appropriately qualifies the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose that odor identity and intensity are separately represented in distinct piriform subpopulations, with ~30% of odor-selective neurons providing concentration-invariant identity representations while other ensembles encode concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 present the main theoretical proposal. This is well-supported by the empirical findings of concentration-invariant neurons (C46-C52) and their superior generalization performance (C51). The proposal (C111, C114) is appropriately framed as a model rather than proven mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors speculate that concentration-invariant neurons may correspond to distinct cell types (semilunar vs pyramidal cells) with different connectivity patterns, potentially routing odor identity vs intensity information to different downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C123 propose cellular mechanisms based on literature about piriform cell types (C116-C121). While the speculation is reasonable and grounded in known anatomy (C121-C123), there is no direct evidence linking concentration-invariance to specific cell types. This is appropriately presented as speculation (C115, C120, C122, C123) but requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

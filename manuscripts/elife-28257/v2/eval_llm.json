@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "BioID-tagged dynein and dynactin subunits (IC2 and p62) were successfully incorporated into their respective complexes and used to identify proximal proteins including known activators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 demonstrate that IC2-BioID and p62-BioID were incorporated into dynein/dynactin complexes (51% and 47% respectively) and identified all dynein subunits, dynactin subunits, and known activators BICD2, HOOK1, HOOK3, and BICD1. The experimental design (C85-C88) and structural positioning (C89) support the validity of this approach. The data from immunoprecipitations, gel filtration, and mass spectrometry provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "BioID provides spatial information about the dynein/dynactin complex and can identify activators from multiple dynein and dynactin subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 show that IC1/IC2 detected more dynactin subunits than LIC1/LIC2, consistent with structural models (C91-C92). Multiple subunits (IC1, IC2, LIC1, LIC2, p62) identified activators (C26, C28). The identification of T-complex and prefoldin as IC-specific hits (C93-C95) validates the approach. The spatial resolution and consistency with cryo-EM structures support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A secondary screen identified ninein (NIN) and ninein-like (NINL) as new dynein activators, while girdin and daple showed modest activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The secondary screen (C29-C34) identified coiled-coil proteins that co-immunoprecipitated dynein/dynactin (C31). NIN and NINL exhibited robust processive motility in single-molecule assays (C35-C36), comparable to positive controls BICD2 and HOOK3. Girdin and daple showed only modest activation (C37). The screening strategy was rational and the motility data provide strong functional evidence for NIN/NINL as activators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "NIN and NINL activate dynein/dynactin motility in reconstituted assays with purified components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 demonstrate that purified NIN and NINL activated and co-migrated with dynein/dynactin in three-color TIRF microscopy, meeting the gold standard for activator validation (C97). BICD2 positive control showed expected behavior (C38, C98), and dynein/dynactin without activator was largely stationary (C40). The use of purified components eliminates concerns about co-purifying factors and provides definitive evidence for activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "N- and C-terminal BioID fusions of activators reveal spatially distinct protein interactions, with N-termini interacting with dynein and C-termini with other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 show that C-terminal datasets had more hits than N-terminal datasets. Only 4/225 N-terminal proteins were shared across activator families, with 3 being dynein subunits (C44-C45, C100), while 21/547 C-terminal proteins were shared (C46). No dynein subunits were in C-terminal datasets (C101). This spatial segregation is consistent with known activator architecture (C42) and demonstrates BioID's ability to report on domain organization (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C68",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C103",
+      "C104"
+    ],
+    "result": "Each dynein activator has multiple candidate cargos based on C-terminal interactome analysis, suggesting activators provide the first layer of cargo specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 show each activator had dozens of C-terminal specific hits representing candidate cargos. GO analysis revealed activator-specific enrichments: BICD2 for actin structures (C48, C53), HOOK3 for clathrin vesicles and kinesins (C49, C54-C55), and NIN/NINL for microtubule minus ends (C50, C56). Activators within families showed more overlap than between families (C51-C52). The limited number of activators relative to known cargos (C79) and GO analysis (C81) support the proposal that activators provide initial cargo specificity but additional factors are needed (C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "BioID identified known activator-cargo interactions and revealed that HOOK3 interacts with kinesin KIF1C at its C-terminus and dynein at its N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 show BioID identified known interactions (FHF complex proteins with HOOK1/3, RANBP2 with BICD2, MICAL3 with NINL), validating the approach. Claims C63-C64 and C110-C113 demonstrate that HOOK3 interacts with KIF1C and FAM160A2 at its C-terminus and dynein at its N-terminus, confirmed by both BioID and immunoprecipitation. This spatial segregation was validated by independent methods, providing strong evidence for the specificity of BioID.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C109"
+    ],
+    "result": "HOOK3 may represent a new class of dynein activator that can recruit both dynein and the opposite polarity motor KIF1C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is explicitly speculative. While the interaction between HOOK3 and KIF1C is demonstrated (C63, C110), and studies in fungi have linked dynein, Hook, and kinesin (C109), the functional significance of simultaneous recruitment of opposite polarity motors is not tested. Additional experiments would be needed to determine if HOOK3 can simultaneously bind both motors and what functional consequences this has for cargo transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C96"
+    ],
+    "result": "Girdin and daple are candidate dynein/dynactin activators that require further validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 explicitly identifies girdin and daple as candidates rather than confirmed activators. While they co-immunoprecipitate dynein/dynactin (C31), they showed only modest activation in motility assays (C37). The authors acknowledge that purified dynein/dynactin can occasionally show processive runs without activators (C96), making interpretation difficult. Additional factors such as post-translational modifications (C76) or longer constructs may be required. The Hook-related nature (C74-C75) and related protein gipie's interaction with dynein (C77) support candidacy but not confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "NIN and NINL localize to the centrosome, are involved in microtubule nucleation, and their activation of dynein suggests they control recruitment to the centrosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by citations to published literature establishing NIN/NINL localization, function, and prior interaction with dynein/dynactin. Claim C72 is a reasonable inference based on the demonstrated ability of NIN/NINL to activate dynein (C36, C39, C99) combined with their known localization. Claim C73 provides additional support from published literature. The inference is logical but represents a hypothesis requiring direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C90"
+    ],
+    "result": "Known activators Spindly and RAB11FIP3 were not identified in the screen due to cell-type specific expression or cell cycle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 provides a reasonable explanation for why Spindly was not identified, supported by citations showing it regulates mitotic-specific functions (C90) and the use of unsynchronized cells. Claim C23 explains RAB11FIP3's absence with citation and expression data (Table 1). These are logical explanations for negative results, though they represent inferences rather than direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C66"
+    ],
+    "result": "BioID is an effective method for identifying dynein activators and reporting on spatial organization of the dynein/dynactin/activator complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are summary conclusions (C41, C66) supported by the collective experimental results. The identification of NIN/NINL as new activators (C4, C36, C39) demonstrates the method's utility for activator discovery. The spatial information from N- vs C-terminal tagging (C43-C46, C100-C102) and consistency with structural models (C25, C91-C92) demonstrate spatial reporting capability. These conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background knowledge about dynein function, activator requirements, and limitations of sequence-based activator identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C16) represent established knowledge in the field, supported by citations to published literature. They provide context for the study but are not novel findings. The claims about the state of knowledge (C3, C16) accurately reflect the field prior to this work and motivate the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Supporting observations about activator properties, sequence relationships, and cross-detection in BioID datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide supporting details: known interactions from literature (C80, C105, C107-C109, C114), sequence analysis (C106, C115), structural knowledge (C115-C116), and cross-detection patterns (C117-C121). Claims C119-C121 show BICD1/BICD2 and HOOK1/HOOK3 were detected in each other's datasets but NIN/NINL were not, consistent with known heterodimerization of HOOK proteins (C117) but not BICD proteins (C118). These observations support the main findings but are not primary results.",
+    "result_type": "MINOR"
+  }
+]

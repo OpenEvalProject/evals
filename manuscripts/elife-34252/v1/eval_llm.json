@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PreHC without release factors predominantly adopts the non-rotated (N) state with FRET efficiency of 0.73 \u00b1 0.01, with a small fraction in the rotated (R) state (0.52 \u00b1 0.02). This distribution is independent of the tRNA identity or peptide length (fMet vs dipeptides).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by smFRET data in Figure 1A and Figure 1\u2014figure supplement 1, showing consistent FRET distributions across different tRNA and peptide conditions. The measurements are replicated across three independent datasets with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RF1 stabilizes PreHC and PostHC in the N state more effectively than RF2. RF1(GAQ) binding to PreHC stabilizes the N state, and this stabilization is independent of peptide release. RF2 shows higher R state populations and more dynamic behavior than RF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C44 are supported by FRET histograms in Figures 1B-F and Figure 1\u2014figure supplement 3. The data clearly show differential effects of RF1 vs RF2 on ribosome conformation, with RF1 more strongly favoring the N state. Time-resolved measurements confirm these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RF1 and RF1(GAQ) bind stably to PreHC and PostHC with dissociation rates below detection limit (<0.2 s\u207b\u00b9), while RF2 dissociates more rapidly (koff = 0.8-1.3 s\u207b\u00b9). Peptide hydrolysis has minimal effect on RF1 or RF2 dissociation in the absence of RF3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 are supported by FRET measurements between labeled release factors and L11-Cy3 ribosomes (Figure 2). The labeled factors retain full biochemical activity and methylation (Figure 2\u2014figure supplements 1-2). Dissociation rates are measured from time traces with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "RF3 is essential for RF1 recycling but not for RF2 recycling. RF3 addition to RF2-containing complexes increases ribosome dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by peptide hydrolysis turnover assays (Figure 2\u2014figure supplement 3A) showing RF1 requires RF3 for efficient turnover while RF2 can turnover without RF3. FRET data (Figure 2\u2014figure supplement 3B-E) confirm increased dynamics with RF3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RF3-GTP binding to PreHC shifts the equilibrium toward the R state and induces dynamic N-R transitions. RF3 promotes formation of a short-lived L1-closed state with tRNA in P/E-like conformation. RF3 dissociates rapidly from PreHC (koff = 5.9 \u00b1 1.1 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are supported by smFRET data using S6/L9 labels (Figure 3A) and tRNA-L1 labels (Figure 3B). Kinetic analysis shows L1 closure/opening (6.0 s\u207b\u00b9) is faster than subunit rotation (2.2 s\u207b\u00b9), indicating loose coupling. RF3 dissociation rates are measured from RF3-Cy5/L11-Cy3 FRET (Figure 3C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RF3-GTP binding to PostHC stabilizes the R state while allowing L1-tRNA transitions between P/E and P/P conformations. RF3 dissociation from PostHC (koff = 5.4 \u00b1 1.3 s\u207b\u00b9) is independent of peptide release and faster than GTP hydrolysis, indicating RF3 dissociation does not require GTP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 are supported by FRET measurements on PostHC with RF3 (Figure 3D-F). The similar dissociation rates from PreHC and PostHC demonstrate independence from peptide release. Comparison with published GTP hydrolysis rates supports the conclusion that dissociation is independent of GTP hydrolysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In PreHC with both RF1(GAQ) and RF3, the N and R states are nearly equally populated with rapid reversible transitions (kN\u2192R = 5.9 s\u207b\u00b9, kR\u2192N = 2.9 s\u207b\u00b9). RF1 stabilizes RF3 binding (RF3 koff decreases from 5.9 to 1.3 s\u207b\u00b9), and RF3 alters RF1 position relative to L11. Subunit rotation occurs while both factors are bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 are supported by comprehensive FRET measurements in Figure 4A-D showing subunit rotation, RF1 binding, and RF3 binding. The biphasic dwell time distributions and rate measurements demonstrate that rotation is faster than factor dissociation, proving both factors can remain bound during rotation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In PostHC with RF1 and RF3, the R state is enriched with rapid N-R transitions. Peptide release causes RF1 to change position relative to L11 (FRET efficiency changes from 0.50 to 0.67) and accelerates RF1 dissociation from <0.3 s\u207b\u00b9 to 1.3 s\u207b\u00b9. RF3 position is affected by RF1 presence but not by peptide release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by FRET measurements on PostHC* (puromycin-treated) and PostHC (RF1-generated) with both factors (Figure 4E-L). The change in FRET efficiency and dissociation rates clearly demonstrate the effect of peptide release on RF1 but not RF3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "RF1 stabilizes RF3 binding on both PreHC and PostHC, while RF3 destabilizes RF1 binding only after peptide release. Peptide release is a major determinant for RF1 but not RF3 dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 summarize the differential effects observed in Figure 4. The data clearly show RF3 dissociation rates decrease in RF1 presence, while RF1 dissociation rates increase with RF3 only after peptide release, supporting the asymmetric relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Using apidaecin (Api) to trap RF1 on PostHC in the N state, RF3 can still dissociate (koff = 1.2 s\u207b\u00b9) without subunit rotation, demonstrating that RF3 dissociation is independent of ribosome conformational state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by experiments in Figure 5 using Api to prevent RF1 dissociation and trap the complex in N state. RF3 still dissociates at normal rates, proving dissociation is independent of rotation. Controls show Api doesn't affect RF3-induced R state formation in absence of RF1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "GTP hydrolysis is not required for RF1 recycling but is necessary for RF3 recycling. At substoichiometric RF1 and RF3, peptide release requires GTP. At excess RF3, RF1 recycling occurs with GTP, GTP\u03b3S, GDPNP, or RF3(H92A)-GTP. Apo-RF3 and RF3-GDP are inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by peptide hydrolysis turnover assays in Figure 6A-B. The differential requirements at substoichiometric vs saturating RF3 concentrations clearly demonstrate that GTP hydrolysis is needed for RF3 recycling but not RF1 recycling. Multiple nucleotide analogs were tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "RF3-GDPNP can induce R state formation but dissociates slowly from PostHC* without RF1 (koff = 0.34 s\u207b\u00b9). In the presence of RF1, RF3-GDPNP dissociates as rapidly as RF3-GTP, indicating GTP hydrolysis is only essential for RF3 dissociation from termination complexes lacking RF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 are supported by FRET measurements with GDPNP in Figure 6C-F and Figure 6\u2014figure supplement 2. The differential dissociation rates in presence vs absence of RF1 clearly demonstrate the context-dependent role of GTP hydrolysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "RF3-GDP and apo-RF3 do not induce R state formation in PreHC or PostHC-RF1 complexes and do not produce detectable FRET signals with L11, suggesting they bind transiently without engaging at the L11 binding site unless GTP is bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by FRET histograms in Figure 6\u2014figure supplement 1 showing no R state formation with RF3-GDP or apo-RF3, and by the absence of RF3-L11 FRET signals. The interpretation is consistent with published nucleotide exchange data cited in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Each release factor has distinct effects on ribosome conformation and dynamics. RF1 stabilizes the static N state with L1-open conformation. RF2 is more dynamic with higher R state populations and can dissociate from both PreHC and PostHC with less dependence on RF3 than RF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 summarize the differential behaviors observed throughout the study (Figures 1-2, Figure 7A-B). The comprehensive FRET data, dissociation rate measurements, and turnover assays consistently demonstrate these distinct properties of RF1 vs RF2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "RF3-GTP shifts ribosome conformational distribution toward R state. PreHC-RF3 is dynamic while PostHC-RF3 is stabilized in R state. After peptide release, RF1/RF2 with RF3 shift ribosome conformations to intermediate dynamics (2-6 s\u207b\u00b9) compared to absence of factors (0.5-2.6 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by FRET data in Figures 3-4 and summarized in Figure 7A. The rate measurements from dwell time analysis (Supplementary file 1) quantitatively support the increased dynamics in presence of both factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "RF1 dissociation from the static N state is very slow. RF3 accelerates RF1 dissociation and increases ribosome dynamics, but dynamic transitions alone are insufficient. Peptide release causes RF1 conformational change relative to L11 but is also insufficient alone. RF1 dissociation requires concerted action of RF3 (stimulating rotation) and peptide release (allowing RF1 rearrangement).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 are supported by the comprehensive kinetic analysis in Figures 2-4. The slow dissociation without RF3, acceleration with RF3, and further acceleration after peptide release demonstrate the requirement for both factors. The FRET efficiency changes document the conformational rearrangement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "RF3 dissociation is independent of peptide release and ribosome dynamics but is affected by RF1/RF2 presence, which stabilizes RF3 binding and alters its position. RF3 can dissociate from N state without GTP hydrolysis when RF1 is present. The order of RF1 and RF3 dissociation is random due to similar rates. When RF1 dissociates first, GTP hydrolysis completes RF3 recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 are supported by the similar RF3 dissociation rates from PreHC and PostHC (Figure 3), dissociation from Api-trapped N state complexes (Figure 5), and experiments with GDPNP (Figure 6). The similar dissociation rates of RF1 and RF3 from PostHC support the random order conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Translation termination is a stochastic process where subunit rotation, peptide release, conformational changes, and GTP hydrolysis together drive RF1 and RF3 dissociation. However, these movements are kinetically uncoupled - dissociation rates and rotation rates are independent but individually defined by complex dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 represent the overarching mechanistic conclusion supported by the entire dataset. The lack of tight coupling is demonstrated by rotation rates being faster than dissociation rates (Figure 4), and RF3 dissociating from static N state (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The proposed model for RF1-dependent termination involves two likely pathways: RF1 binding followed by peptide release and RF3 recruitment, or simultaneous RF1 and RF3-GTP binding followed by peptide release. The resulting PostHC-RF1-RF3-GTP complex undergoes rapid N-R transitions, factors change positions, and both dissociate rapidly. Multiple conformations, dynamics, and loose coupling characterize RF1-dependent termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 present the mechanistic model (Figure 7C) synthesizing all observations. The model is well-supported by the comprehensive kinetic and structural data showing dynamic transitions, conformational changes, and factor dissociation patterns throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The GTP-bound form of RF3 is required to stimulate ribosome dynamics and RF1 dissociation. At cellular nucleotide concentrations, most RF3 is in GTP form due to moderate affinity differences. Apo-RF3 is rapidly converted to RF3-GTP, making the apo-RF3-ribosome complex only a transient intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 are supported by the lack of activity of RF3-GDP and apo-RF3 (Figure 6\u2014figure supplement 1) and by published affinity measurements cited in the text. The inference about cellular conditions is reasonable given the 10-fold higher GTP concentration and rapid GTP binding rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "GTP hydrolysis or authentic GTP-bound form is required to release RF3 arrested on ribosomes without RF1. A hypothesis is proposed that RF3 can form either an initial binding complex (rapid dissociation) or an engaged complex (requires GTP hydrolysis for dissociation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C151 is supported by the slow dissociation of RF3-GDPNP from PostHC without RF1 (Figure 6E). However, C152 is explicitly labeled as a hypothesis to explain the data. The biphasic behavior predicted by this model is not directly observed, and alternative explanations (conformational effects of GDPNP) are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "RF3 is an unusual GTPase differing from other translational GTPases (EF-G, EF-Tu, IF2) where GTP hydrolysis is coupled to key reaction steps. Instead, RF3's GTP hydrolysis acts as a rescue mechanism to release RF3 from complexes lacking RF1, which is realistic given RF3's higher cellular abundance than RF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 represent a mechanistic interpretation supported by the differential requirement for GTP hydrolysis depending on RF1 presence (Figure 6). The comparison to other GTPases is based on established knowledge, and the cellular abundance argument is supported by citation to proteomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "The rate of GTP hydrolysis by RF3 is similar with fM-Stop and fMFTI-Stop termination contexts. However, the length of nascent peptide and nature of P-site tRNA may attenuate ribosome dynamics in more complex systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is supported by citation to previous work. Claim C157 is appropriately presented as speculation about potential limitations of the minimal model system, acknowledging that more complex nascent chains might behave differently. This is a reasonable caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background knowledge about release factor functions, stop codon recognition, GGQ motif catalytic activity, RF3 as a GTPase, and previous structural/biochemical findings on termination complexes and RF3 nucleotide binding properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C27 represent established knowledge from the literature, properly cited throughout the introduction. These provide the scientific context for the current study and are appropriately referenced to primary sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The main findings stated in the abstract: termination complexes with RF1-RF3 or RF2-RF3 are dynamic and fluctuate between N and R states; each factor has distinct effects; RF1 dissociation depends on peptide release and RF3 while RF2 dissociates spontaneously; RF3 binds as GTP and can dissociate without GTP hydrolysis from RF1-containing complexes but is stalled without RF1 when GTP hydrolysis is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 represent the key findings summarized in the abstract, which are comprehensively supported by the experimental data presented throughout the manuscript (Figures 1-6). These are the major conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "PostHC* (puromycin-treated) without factors shows two FRET states (0.5 and 0.7) with reversible N-R transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by FRET histogram (Figure 1D) and time traces (Figure 1\u2014figure supplement 1B) showing the bimodal distribution and dynamic transitions. This establishes the baseline behavior of PostHC for comparison with factor-bound states.",
+    "result_type": "MINOR"
+  }
+]

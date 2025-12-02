@@ -1,0 +1,164 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36"
+    ],
+    "result": "The authors collected kinematic data from 52 species (120 observations) from YouTube clips and lab videos, identifying two groups: Group 1 (high duty factor ~0.8, phase 40-50%, including reptiles, amphibians, and some mammals) and Group 2 (lower duty factor 0.6-0.75, phase at or below 25%, typical mammals). A regression line relating duty factor to phase was calculated (phase % = 130 DF - 66), and phases above 80% were noted as rarely observed in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C32, C36 provide consistent observational data with clear groupings shown in Figure 1 and Table 1. The authors explicitly state the data are illustrative rather than comprehensive (C26), appropriately limiting the scope. The regression analysis (C29) and observational patterns (C27, C28, C30) are directly supported by the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A numerical model using sinusoidal force waveforms predicts that at duty factors above 0.75, work is minimized at phases of 50% and 0/100%, while at duty factors below 0.75, work is minimized at phases of 25%/75%. This transition occurs because at high duty factors, limb forces combine such that peak center of mass forces are temporally separated from peak limb forces, reversing the optimal phasing strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe the basic model and its primary predictions, which are clearly shown in Figure 2A and explained mechanistically in Figure 3. The model assumptions are explicitly stated (C54-C59), and the geometric/mechanical explanations (C50-C51) provide physical justification for the numerical results. The transition at DF=0.75 is demonstrated both numerically and mechanistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C73"
+    ],
+    "result": "Adding fore-aft bias (net forward impulses from hindlimbs, rearward from forelimbs) shifts optimal phases lower, and adding small medial impulses further tips the cost surface to favor lower phases while making phases >80% uneconomical. The advantage of near-25% versus near-75% phase only becomes apparent when medial impulses are included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C73 describe progressive model refinements shown in Figures 2C and 2D. The effects are demonstrated numerically and explained geometrically in Figure 4C-D. The authors provide clear mechanistic explanations for why these additions shift the cost landscape, with the medial impulse effect being particularly important for distinguishing between symmetric phase options.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C64",
+      "C68",
+      "C83"
+    ],
+    "result": "The work minimization model successfully accounts for limb phasing strategies in Group 1 animals (slow, high duty factor animals including reptiles and hippos) and Group 2 animals (normal medium to large mammals), providing a unified mechanical explanation across extreme phylogenetic distances (300 million years), vast size ranges (500,000-fold mass difference), and diverse muscle properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C64, C68, C83 represent the main conclusion that the model explains observed phasing patterns. The model predictions (C48-C49, C52-C53) align well with the observed data for Groups 1 and 2 (C27-C28, C31, C36) as shown in Figure 2C-D. The mechanistic explanations (C50-C51, C60-C63) provide physical justification. The phylogenetic and size diversity (C69-C71) strengthens the generality of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "For suspended locomotion in sloths, the model predicts a reversed relationship between duty factor and phase compared to terrestrial quadrupeds: phases near 25% at high duty factors and near 50% at lower duty factors. This prediction matches published sloth data across a range of speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C44 describe the sloth case, which is supported by cited data (Nyakatura et al., 2010) and model predictions shown in Figure 2B. The mechanistic explanation (Figure 4B) demonstrates why reversing the horizontal force profile (tension vs. compression) reverses the optimal phasing relationship. This represents a strong test of the model's predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The model does not fully explain primate limb phasing (~75% phase), which does not match the global work minimum. However, primate phasing approaches a local minimum with only slightly higher cost, suggesting that while energetics may contribute, other factors (possibly related to arboreal locomotion on unstable substrates) are required to fully explain primate gait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C74-C76 acknowledge a limitation of the purely energetic model for primates. The authors appropriately recognize that primate phasing is near but not at the global minimum (shown in Figure 2D), suggesting energetics play a role but are not the sole determinant. The speculation about alternative explanations (C76) is appropriately cautious and supported by citations. This honest assessment of model limitations strengthens the overall work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C30",
+      "C45",
+      "C53"
+    ],
+    "result": "Phases predicted by the model to be particularly costly (especially >80%) have not been reported in nature, providing negative evidence supporting the model's predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C30, C45, C53 describe the absence of high-phase gaits in nature, which aligns with model predictions of high cost for these phases. This represents a form of negative evidence that supports the model. The observation is clearly stated in Figure 1 and the text, though the authors appropriately note this is based on available literature and their survey.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Ontogenetic data from macaques show that young individuals use high duty factors with phases near 50%, juveniles adopt both horse-like and primate-like phases while avoiding the previous phase, and adults adopt purely primate-like phases. The model successfully predicts the avoidance of phases around 40% at low duty factors during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe macaque ontogeny data from Hildebrand (1967) that fits model predictions well, as shown in Figure 5. The model correctly predicts which phases are avoided during development (C81), even though it cannot fully explain the adult primate phase (acknowledged in C74-C76). This developmental trajectory provides additional support for the model's explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose that near-trotting phases (40-50%) observed in human infants during quadrupedal crawling may be adaptive from a work minimization perspective rather than reflecting neural immaturity, drawing parallels to toddler bipedal gait development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 present an alternative interpretation of infant gait patterns based on the model's predictions. While the model provides a plausible energetic explanation for infant phasing patterns, this remains speculative (C86 is explicitly speculative). The authors appropriately frame this as an alternative hypothesis rather than a definitive conclusion, but no direct evidence is provided to test this interpretation against the neural development hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The model makes several simplifying assumptions: limb forces and timing are independent of phasing, limb work is costly with no energy transfer between limbs, no elastic energy recovery, no attempt to explain duty factor selection, and no consideration of lateral bending or tail/belly contact. The model is acknowledged to fail at very low speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 explicitly state the model's assumptions and limitations. The authors are appropriately transparent about these simplifications, noting where the model is expected to work (moderate speeds) and where it fails (very low speeds, C58). This transparency is essential for proper interpretation of the results and represents good scientific practice.",
+    "result_type": "MINOR"
+  }
+]

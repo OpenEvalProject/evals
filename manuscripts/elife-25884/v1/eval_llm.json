@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C51"
+    ],
+    "result": "The study used relative evolutionary rate (RER) methods to analyze 18,980 protein-coding genes across four independently evolved subterranean mammal lineages (star-nosed mole, cape golden mole, naked mole-rat, and blind mole-rat) compared to aboveground mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 and C51 establish the methodological framework and study design. The phylogenetic independence of the four subterranean lineages (C46) is well-supported by Figure 1A, and the scope of analysis (C51) is clearly documented. This provides a solid foundation for detecting convergent evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C56",
+      "C58",
+      "C60",
+      "C61",
+      "C117"
+    ],
+    "result": "Vision-related genes showed strong convergent acceleration in subterranean mammals, with 55 mole-accelerated genes identified at FDR 15%, including 17 of the top 30 being eye-specific. The LIM2 gene exemplifies this pattern with statistically significant acceleration (p=0.00084) across all four subterranean species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide strong statistical evidence for LIM2 acceleration with appropriate Mann-Whitney U testing. Claims C52, C56, C58, C60-C61 demonstrate the breadth and specificity of vision gene enrichment with multiple lines of evidence including functional annotations and precision-recall analysis (Figure 3). The convergence across independent lineages strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "Mole-accelerated genes showed highly significant functional enrichment for vision-related GO categories (15 categories at FDR 15%), while control species showed no such enrichment, and mole-decelerated genes showed minimal functional enrichment despite being more numerous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C63-C64 provide clear statistical evidence with appropriate FDR correction. The control analysis (C62, C64) strengthens the conclusion by demonstrating specificity to subterranean adaptation. Claim C67 appropriately notes the contrast between accelerated and decelerated gene sets, though the biological interpretation could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C119"
+    ],
+    "result": "Most mole-accelerated vision genes evolved under relaxed constraint rather than positive selection, with only 1 of 55 genes (KRTAP17-1) showing evidence of positive selection (dN/dS > 1). Almost all accelerated genes rejected models of uniform constraint in favor of subterranean-specific relaxation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide clear codon model analysis results using appropriate PAML methods. The finding that only one gene shows positive selection (C69) while most show relaxed constraint is well-supported by the statistical tests. Claim C71 adds supporting evidence through genetic lesions. However, the power to detect positive selection may be limited by sample size and divergence times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C120"
+    ],
+    "result": "Skin-related genes, particularly keratins (KRT9, KRT12, KRT81), showed convergent acceleration in subterranean species. KRT9 loss may lead to footpad hyperproliferation beneficial for tunneling, supported by mouse knockout and human disease phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 provide evidence for keratin gene acceleration and pseudogenization. However, claim C77 is explicitly speculative about functional consequences. While the mouse (C75) and human (C76) data provide supporting context, the direct link to tunneling adaptation (C77-C78) remains inferential. The POMP association (C79) adds supporting evidence but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Three subunits of Type IV collagen (COL4A4, COL4A5, COL4A3) showed significant mole-acceleration (average more accelerated than 71% of genes, p=0.0342), with COL4A4 showing evidence of positive selection, while other basal lamina components like laminins were not accelerated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide statistical evidence for Type IV collagen acceleration with appropriate Mann-Whitney U testing. The specificity to collagen versus laminins (C84) strengthens the finding. However, the p-value of 0.0342 (C83) is modest and the biological significance of this selective acceleration requires further investigation. The positive selection evidence for COL4A4 (C80) is noted but details are in supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Lens and retina genes showed strong acceleration (84% and 82% more accelerated than background, p<10^-5), while cornea and iris genes did not, suggesting selective relaxation of sensory functions while maintaining protective functions. Eye-specific developmental genes showed acceleration while pleiotropic developmental genes did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 provide strong statistical evidence with highly significant p-values and clear tissue-specific patterns shown in Figure 5. The interpretation (C90-C91) is logical given that some species retain exposed eyes. Claims C92-C93 appropriately distinguish between pleiotropic and eye-specific developmental genes. The correlation between tissue-specificity and acceleration (C85) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Eye-specific enhancers of PAX6 showed convergent acceleration in subterranean mammals, with the three most accelerated regions overlapping known retina-specific and lens-specific enhancers, while enhancers active in non-eye tissues (EI enhancer, pancreas enhancer) did not show acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 demonstrate strong overlap between accelerated regions and known eye-specific enhancers with appropriate citations. The negative controls (C101-C103) showing no acceleration in pleiotropic enhancers strengthen the conclusion. Claim C104 appropriately identifies novel candidate enhancers. However, C95-C96 are explicitly hypotheses, and functional validation of the accelerated enhancers is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "A genome-wide scan of conserved non-coding elements near transcription factors identified 17 convergently accelerated elements at FDR 10%, with 14 of 17 (82%) near eye developmental genes, representing significant enrichment (p=0.001 for elements, p=0.0016 for unique genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide clear statistical evidence with appropriate hypergeometric testing and FDR correction. The enrichment near eye developmental genes is highly significant. However, the study design comparing 20 eye genes to 20 control genes may limit generalizability, and functional validation of these elements is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "FANTOM5 eye enhancers showed significant enrichment among mole-accelerated elements, with 15 of 62 accelerated enhancers (24%) being eye-specific, representing significant enrichment (p=0.006) compared to control species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 provide independent validation using an orthogonal dataset (FANTOM5). The statistical evidence is appropriate with hypergeometric testing. Figure 7B clearly shows the enrichment pattern. This strengthens the overall conclusion about eye enhancer acceleration, though the modest enrichment (15/62) suggests many accelerated enhancers have other functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C144"
+    ],
+    "result": "Several aboveground mammals (armadillo, shrews, bats, thirteen-lined ground squirrel) showed visual gene acceleration comparable to subterranean species, correlating with their documented visual regression or unusual visual systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 are well-supported by Figure 8 and appropriate citations to previous literature documenting visual phenotypes. This extends the findings beyond strictly subterranean species and validates the method's ability to detect visual system changes. However, the analysis is descriptive and would benefit from formal statistical testing of the correlation between visual phenotype and gene acceleration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Accelerated genes include many associated with congenital eye diseases, including crystallin genes linked to cataracts and ciliopathy genes, suggesting these represent novel candidate genes for ocular disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 identify disease-associated genes among accelerated genes with appropriate citations. However, claim C5 and C126 are explicitly speculative about clinical relevance. The logic that genes under relaxed constraint in moles might be disease genes in humans is reasonable but requires validation. The connection between evolutionary acceleration and disease causation needs empirical support.",
+    "result_type": "MINOR"
+  }
+]

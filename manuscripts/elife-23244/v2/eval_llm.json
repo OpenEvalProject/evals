@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PINCR is a p53-regulated lncRNA that is strongly induced (~100-fold) after DNA damage. The authors identified PINCR through microarray analysis of three colorectal cancer cell lines treated with Nutlin-3, validated its induction by qRT-PCR, and demonstrated direct p53 regulation through ChIP-seq, ChIP-qPCR, and luciferase reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24-C38 collectively provide strong evidence that PINCR is a direct p53 target induced by DNA damage. The identification through microarray (C24-C28), validation by qRT-PCR (C30, C32-C33), demonstration of p53 binding by ChIP-seq and ChIP-qPCR (C34-C35), and functional validation by luciferase assays (C36-C37) provide converging lines of evidence supporting this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PINCR is characterized as a nuclear lncRNA with low coding potential, expressed at approximately 13-27 molecules per HCT116 cell after DNA damage and less than one molecule per cell without damage. The transcript structure matches annotation and is conserved among primates but not between human and mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 provide comprehensive characterization of PINCR using multiple approaches including PhyloCSF analysis (C39), subcellular fractionation (C40), RNA-seq (C41), RT-PCR (C42), and quantification by two independent methods (C43-C45). The convergence of multiple experimental approaches supports the characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Targeted deletion of PINCR in colorectal cancer cells impairs G1 arrest and increases apoptosis after DNA damage. PINCR-KO cells show substantially impaired G1 arrest as early as 24 hr after DOXO treatment and increased apoptosis at 48 and 72 hr. The phenotype is rescued by reintroduction of PINCR for apoptosis but not G1 arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C62 demonstrate clear phenotypic effects of PINCR deletion on G1 arrest and apoptosis. However, the incomplete rescue (C50-C51) raises questions about the specificity of the phenotype. The authors speculate about reasons for incomplete rescue (C52-C53), but these remain unresolved. The lack of G1 arrest rescue despite apoptosis rescue suggests additional complexity that is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PINCR loss results in hypersensitivity to multiple chemotherapeutic drugs, with the strongest effect observed for 5-FU which induces the highest G1 arrest. The phenotype is observed in both HCT116 and SW48 cells, and the extent of PINCR induction does not determine the likelihood of cell death versus G1 arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C75 demonstrate that PINCR loss causes hypersensitivity to chemotherapeutic drugs across multiple cell lines (C69-C71) and multiple drugs (C63-C68). The observation that hypersensitivity correlates with G1 arrest capacity (C66) and is independent of PINCR induction levels (C72-C74) provides mechanistic insight. The data are consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of PINCR substantially reduces tumor growth (7-10-fold) in xenograft models. PINCR-KO tumors show significantly decreased Ki67-positive cells, suggesting reduced tumor volume is due to inhibition of cell proliferation rather than increased apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 provide in vivo validation of PINCR's prosurvival function. The xenograft data (C76-C79) show substantial reduction in tumor growth, and immunohistochemical analysis (C80-C82) provides mechanistic insight suggesting the effect is primarily through reduced proliferation. The data are consistent with the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Loss of PINCR does not alter global p53 signaling but affects the induction of a subset of p53 targets. GSEA analysis shows the p53 pathway is the top upregulated pathway in both PINCR-WT and PINCR-KO cells, but the normalized enrichment score is lower in PINCR-KO cells. Eleven direct p53 targets including BTG2, GPX1, and RRM2B show less pronounced induction in PINCR-KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 demonstrate that PINCR selectively regulates a subset of p53 targets without affecting global p53 signaling. The GSEA analysis (C83-C84, C87) and microarray data (C85-C86, C88) provide strong evidence for this selective regulation. The identification of specific targets is supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The PINCR-regulated genes BTG2, RRM2B, and GPX1 are known to regulate G1 arrest and cell survival after DNA damage. Knockdown of these genes recapitulates the effects of PINCR depletion, with increased apoptosis observed for all three genes and reduced G1 arrest for GPX1. p21 expression is not altered upon loss of PINCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 establish the functional relevance of PINCR target genes through literature support (C89-C91) and experimental validation (C92-C97). The knockdown experiments (C95-C96) demonstrate that depletion of these genes phenocopies PINCR loss, supporting their role as mediators of PINCR function. The use of p21 as a negative control (C92-C94) strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Loss of PINCR impairs the induction of BTG2, GPX1, and RRM2B mRNAs and reduces p53 binding to their p53 response elements. PINCR does not directly bind to p53. Knockdown of PINCR using ASOs recapitulates the effects observed in PINCR-KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 demonstrate that PINCR regulates target gene expression through effects on p53 binding (C98-C99) but not through direct p53 interaction (C100). The validation using ASOs (C101-C103) confirms that the effects are due to loss of PINCR RNA rather than genomic alterations. The observation of decreased colony formation in untreated conditions after knockdown but not knockout (C104) suggests potential compensatory mechanisms during long-term genetic deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Matrin 3 is identified as a PINCR-interacting protein through RNA pulldown and mass spectrometry. Matrin 3 shows the strongest enrichment (8-fold untreated, 16-fold after DOXO) in PINCR pulldowns. PINCR contains six Matrin 3 binding motifs that are significantly enriched compared to the transcriptome. The PINCR-Matrin 3 interaction is validated by multiple approaches including pulldowns with nuclear extracts, recombinant protein, and RIP from crosslinked cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 provide strong evidence for PINCR-Matrin 3 interaction through multiple independent approaches: mass spectrometry (C107), motif analysis (C108-C109), pulldowns with nuclear extracts and recombinant protein (C110), and RIP from crosslinked cells (C111-C112). The use of p21 mRNA as a negative control (C112) demonstrates specificity. The convergence of multiple experimental approaches strongly supports this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Matrin 3 is a downstream effector of PINCR that mediates the induction of BTG2, GPX1, and RRM2B but not G1 arrest. Epistasis analysis shows that Matrin 3 knockdown increases apoptosis in PINCR-WT but not PINCR-KO cells, indicating that virtually all apoptotic effects of Matrin 3 after DNA damage are dependent on PINCR. Matrin 3 levels and subcellular localization are unchanged after 5-FU treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 establish Matrin 3 as a downstream effector of PINCR through epistasis analysis (C113-C116) and demonstrate its role in regulating PINCR target genes (C117-C118). The epistasis data provide strong evidence for a linear pathway where PINCR acts upstream of Matrin 3. The observation that Matrin 3 does not mediate G1 arrest (C115) suggests additional PINCR-dependent mechanisms for this phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Matrin 3 interacts with p53 and associates with the p53 response elements of BTG2, GPX1, and RRM2B in a PINCR-dependent manner. The p53-Matrin 3 interaction is RNase and DNase resistant, indicating a protein-protein complex. Loss of PINCR impairs Matrin 3 binding to the p53RE of these genes but not p21. Matrin 3 does not control p53 occupancy at the p53RE in the promoters of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 demonstrate that Matrin 3 forms a protein-protein complex with p53 (C121-C122) and associates with specific p53 response elements in a PINCR-dependent manner (C123-C126). The observation that Matrin 3 knockdown does not affect p53 binding (C127-C128) suggests that Matrin 3 acts downstream of p53 recruitment, possibly affecting transcriptional activation rather than DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Analysis of Hi-C and ChIP-seq data indicates potential chromatin looping between enhancer and promoter regions of PINCR target genes BTG2, GPX1, and RRM2B. The enhancers contain weak p53 binding regions without canonical p53 response elements, suggesting indirect p53 association, while promoters contain strong p53 binding with canonical p53REs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C138 use publicly available Hi-C and ChIP-seq data to infer chromatin looping between enhancers and promoters of PINCR target genes. The analysis identifies insulated neighborhoods with appropriate CTCF and cohesin signals (C132), and distinguishes between strong p53 binding at promoters with canonical p53REs (C133, C137) and weak p53 binding at enhancers without canonical p53REs (C134, C138). This bioinformatic analysis provides a framework for understanding PINCR's mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Matrin 3 associates with the enhancer regions of BTG2, GPX1, and RRM2B in a PINCR-dependent manner. Loss of PINCR or knockdown of Matrin 3 significantly reduces p53 binding to these enhancer regions. These results indicate a role for Matrin 3 and PINCR in facilitating p53 association with enhancers and provide evidence of chromatin looping between enhancers and promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C144 provide experimental validation of the chromatin looping model through ChIP-qPCR experiments. The data show PINCR-dependent Matrin 3 binding to enhancers (C139-C140) and PINCR/Matrin 3-dependent p53 binding to enhancers (C141-C142). These results support a model where PINCR recruits Matrin 3 to enhancers, which in turn facilitates p53 association with enhancers to regulate target gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Using a novel S1-tagging approach, the authors demonstrate that endogenous PINCR associates with the p53RE and enhancers of BTG2, GPX1, and RRM2B in a Matrin 3-dependent manner. PINCR-S1 shows stronger association with enhancers than promoters, and this association is dramatically reduced upon knockdown of Matrin 3 or p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C158 describe a novel S1-tagging approach to identify endogenous PINCR targets. The validation that PINCR-S1 behaves like endogenous PINCR (C145-C147) and does not alter target gene expression (C148-C150) supports the utility of this approach. The pulldown experiments (C151-C155) demonstrate specific association with target gene enhancers and promoters, and the dependence on Matrin 3 (C155, C157) supports the proposed mechanism. This is a key technical advance that provides direct evidence for PINCR's association with target genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C174",
+      "C176"
+    ],
+    "result": "PINCR and Matrin 3 act as coactivators of p53 on a subset of p53 targets. The induction of BTG2, GPX1, and RRM2B is mediated by chromatin looping between Matrin 3 bound to enhancer regions and p53 bound to p53REs in promoters. PINCR recruits Matrin 3 to enhancers of PINCR-dependent p53 target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170, C174, and C176 synthesize the mechanistic findings into a coherent model. The model is supported by multiple lines of evidence: PINCR-Matrin 3 interaction (C107-C112), Matrin 3-p53 interaction (C121-C122), PINCR-dependent Matrin 3 binding to enhancers (C139-C140), and direct evidence of PINCR association with enhancers (C153-C155). The model provides a mechanistic explanation for how PINCR regulates a subset of p53 targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C173",
+      "C175"
+    ],
+    "result": "The authors developed a new approach using CRISPR/Cas9 to knock-in an S1 tag at the 3' end of PINCR, enabling determination of PINCR association with specific genomic regions by qPCR following streptavidin pulldowns from crosslinked cells. This method has the potential to identify genome-wide targets of PINCR and other lncRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173 and C175 describe a novel methodological advance. The successful implementation of this approach (C173) and its validation (C145-C158) demonstrate its utility. The speculation about its potential for genome-wide target identification (C175) is reasonable based on the successful application to specific targets, though this remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "PINCR is unique from other recently characterized p53-regulated lncRNAs. Unlike LED and Linc-475 which prevent entry into mitosis, PINCR-KO cells arrest in G2 phase. Unlike lincRNA-p21, LED, Linc-475, and DINO which regulate p53 or p21 levels, PINCR regulates BTG2, GPX1, and RRM2B without altering p53 or p21 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C164 compare PINCR to other p53-regulated lncRNAs based on published literature (C160, C162-C163) and the current findings (C161, C164). The comparisons are supported by the data showing that PINCR-KO cells arrest in G2 (C47-C48, C55) and that p53 and p21 levels are unchanged (C85-C86, C92-C94). These comparisons establish PINCR's unique mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims about p53 function, lncRNAs, and the state of knowledge in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23 provide background information about p53 function, lncRNAs, and the state of the field. These claims are supported by citations to established literature and represent generally accepted knowledge in the field. They provide context for the study but do not constitute novel findings.",
+    "result_type": "MINOR"
+  }
+]

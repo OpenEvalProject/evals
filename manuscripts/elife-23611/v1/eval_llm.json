@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Draper is robustly upregulated in VNC ensheathing glia, but not astrocytes, after peripheral nerve injury. Various injury paradigms (wing removal, leg ablation, decapitation) elicit Draper upregulation in corresponding neuropil regions within 24 hours. Ensheathing glial-specific Draper knockdown eliminates this response, while astrocyte-specific knockdown does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C26-C29 collectively demonstrate Draper upregulation in VNC ensheathing glia after injury through immunostaining (Figure 1c, 2b-e) and Q-PCR (Figure 3c). The cell-type specificity is confirmed by genetic manipulation showing ensheathing glia, but not astrocytes, are responsible for the Draper response. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Draper is required for clearance of degenerating axons in the VNC. Gr22c gustatory axons undergo Wallerian degeneration after injury (blocked by Wlds), and degenerating axons persist in draper mutants 48 hours post-injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by imaging data (Figure 3a) showing complete clearance of Gr22c axons in controls, protection by Wlds (confirming Wallerian degeneration), and persistence of debris in draper mutants. This extends prior findings from the olfactory system to the VNC, demonstrating a conserved role for Draper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "AP-1 and STAT92E transcriptional activity is induced in VNC glia after peripheral nerve injury. Reporter activation (TRE-eGFP, 10XSTAT92E-dGFP, dee7-Gal4) and draper-I transcript upregulation occur within hours of injury, suggesting common transcriptional programs throughout the adult nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 are supported by reporter activation data (Figure 3b) and Q-PCR showing draper-I upregulation (Figure 3c). The temporal dynamics and spatial specificity of reporter activation are well-documented. The inference of common transcriptional programs (C41, C44) is reasonable given parallel responses in VNC and olfactory system, though direct comparative analysis is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RNA-seq analysis of injured VNC tissue identified 306 differentially expressed genes (\u22652-fold, adj. p<0.01), including known innate immunity pathway components (JNK/AP-1, Toll pathway) and 27% of previously identified glial injury-response genes. Q-PCR validation showed high correlation (r=0.860, p=0.003) with RNA-seq results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe the RNA-seq methodology and validation. The technical quality metrics are appropriate (85.2% mapping, 41.2% to exons), statistical analysis is rigorous (Benjamini-Hochberg correction), and Q-PCR validation demonstrates strong correlation. The identification of known pathway components (C51-C53) validates the approach. One caveat is that 9/10 genes validated by Q-PCR (C54), suggesting some false positives may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "MMP-1 is robustly upregulated (~12-fold by RNA-seq) in both VNC and olfactory system after axotomy. MMP-1 protein increases are detected by immunostaining and Western blot, with spatial overlap with ensheathing glial membranes. The same genes (Hairy, MMP-1, Ets21C) are upregulated in both VNC and central brain after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C60-C68 demonstrate MMP-1 upregulation through multiple complementary methods: RNA-seq (C56), immunostaining (C60-C61, C66-C67), Western blot (C62), and Q-PCR (C63-C64). The spatial localization to ensheathing glia (C61) and conservation across CNS regions (C63-C65) are well-supported. The inference of common transcriptional cascades (C65) is reasonable given the parallel responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "MMP-1 is specifically induced in ensheathing glia, not astrocytes or neurons, following ORN injury in a Draper-dependent manner. MMP-1 colocalizes with ensheathing glial membranes but not astrocytic membranes or uninjured axons. The MMP-1-LacZ reporter overlaps with STAT92E and AP-1 reporters in ensheathing glia, and ensheathing glial-specific Draper knockdown completely blocks MMP-1 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C82-C85 establish the cellular source of MMP-1 through colocalization studies (Figure 6a-d) and genetic manipulation (Figure 8c-d). The MMP-1-LacZ reporter data (C82-C83) provide transcriptional evidence, and the complete block of MMP-1 by ensheathing glial-specific Draper RNAi (C84) strongly supports the conclusion. The cell-type specificity is rigorously demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MMP-1 upregulation after axotomy requires Draper, STAT92E, and AP-1 (kayak/Jra). MMP-1 induction is completely blocked in draper mutants in both VNC and olfactory system. Glial-specific knockdown of STAT92E, kayak, or Jra significantly inhibits MMP-1 induction after maxillary nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 demonstrate the signaling pathway upstream of MMP-1 through genetic loss-of-function experiments. The complete block in draper mutants (C71-C72, Figure 7a-b) and significant reduction with STAT92E/AP-1 knockdown (C74-C78, Figure 7c-f) are well-documented. The inference that Draper activates MMP-1 via STAT92E/AP-1 (C79) is supported by the epistasis data, though direct mechanistic evidence is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "MMP-1 is required for proper glial membrane expansion and infiltration after axotomy. In control flies, MMP-1 and glial membranes shift from the antennal lobe periphery (day 1) to central regions (day 3). MMP-1 RNAi significantly reduces glial membrane expansion at day 1 and prevents the normal shift in glial membrane distribution pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 demonstrate MMP-1's role in glial dynamics through quantitative imaging (Figure 9a-c, Figure 9\u2014figure supplement 2). The temporal progression of MMP-1 localization (C87-C88) and the significant reduction in membrane expansion with MMP-1 RNAi (C89) are well-documented. The altered membrane distribution pattern (C90-C91) provides additional functional evidence, though the quantification method (line scans) could be more rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "MMP-1 is essential for injury-induced cytoskeletal remodeling in ensheathing glia. Phalloidin staining mirrors glial membrane expansion and MMP-1 expression, shifting from periphery (day 1) to central antennal lobe (day 3). Ensheathing glial MMP-1 RNAi strongly attenuates phalloidin staining increases at both time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 link MMP-1 to actin cytoskeleton remodeling through phalloidin staining (Figure 10a-c). The temporal and spatial correlation between phalloidin, glial membranes, and MMP-1 (C93-C94) is well-documented. The significant reduction in phalloidin staining with MMP-1 RNAi (C95) supports a functional role. However, the authors acknowledge they cannot rule out non-autonomous effects on other cell types, which is an appropriate caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "MMP-1 is essential for timely clearance of degenerating axons. Significantly more OR85e axonal debris persists in MMP-1 RNAi flies 3 days after injury. TIMP overexpression (which inhibits MMP-1) also delays axon clearance. These results suggest Draper-dependent MMP-1 activation is required for ensheathing glia to invade neuropil and clear axonal debris.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 demonstrate MMP-1's role in debris clearance through quantification of GFP-labeled axons (Figure 11a-e). The increased debris in MMP-1 RNAi flies (C97) and TIMP-overexpressing flies (C99) provide complementary genetic evidence. The inference that MMP-1 is required for glial infiltration and clearance (C100) is well-supported by the combined data on membrane expansion (C89) and debris clearance (C97, C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The VNC injury assay reveals upregulation of genes implicated in innate immunity in other phagocytic cell types, validating it as a model for glial immune responses. However, the dataset likely contains some neuronal transcripts because glial-specific isolation was not used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by the RNA-seq data showing upregulation of known innate immunity genes (Figure 4c-d). Claim C104 is an acknowledged limitation based on the experimental design. The authors appropriately recognize this caveat, which affects interpretation but does not invalidate the major findings. The validation of known pathways (C103) suggests the glial signal is strong despite potential neuronal contamination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C109",
+      "C111"
+    ],
+    "result": "MMP-1 represents the first injury-responsive gene downstream of Draper/MEGF10 (aside from draper itself), suggesting a broader Draper/STAT92E/AP-1 transcriptional program. This cascade is proposed as an evolutionarily conserved module of innate glial immunity. This work is the first to couple Draper to a transcriptional cascade promoting extracellular matrix remodeling and glial motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C109, C111 represent the conceptual advance of the work. The identification of MMP-1 as a Draper/STAT92E/AP-1 target (C80) is well-supported by the genetic data (C71-C79). The inference of a broader transcriptional program (C81) is reasonable but speculative\u2014only one target gene is identified. The evolutionary conservation (C109) is supported by literature citations showing MMP regulation by these pathways in other organisms. The novelty claim (C111) appears accurate based on the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose a model where released MMP-1 remodels the extracellular matrix to facilitate glial infiltration, but acknowledge they cannot exclude alternative mechanisms such as MMP-1 cleaving factors on degenerating axons to promote fragmentation or release secondary ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C117 are explicitly presented as models/speculation by the authors. While the ECM remodeling model (C116) is consistent with known MMP functions and the observed phenotypes, direct evidence for ECM cleavage or specific substrates is lacking. The alternative model (C117) is appropriately acknowledged as a possibility. These are reasonable hypotheses for future work but are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The adult VNC contains similar classes of glia (pan-glial, astrocyte, ensheathing) that can be discretely labeled and manipulated with glial subtype-specific genetic drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by imaging data showing distinct labeling patterns with repo-Gal4, alrm-Gal4, and TIFR-Gal4 (Figure 2a). The patterns recapitulate those in the central brain, establishing the VNC as a suitable model system. This is a methodological validation that enables the subsequent cell-type-specific experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C30",
+      "C36",
+      "C37",
+      "C42",
+      "C101",
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C112",
+      "C113",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128"
+    ],
+    "result": "Background claims establishing the conservation of glial responses to injury across species, the role of JAK/STAT and JNK/AP-1 pathways, Wallerian degeneration in Drosophila, glial subtypes, Draper function, and MMP biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16, C21-C24, C30, C36-C37, C42, C101-C102, C105-C108, C110, C112-C113, C118-C121, C123-C126, C128 are background/context claims supported by citations to published literature or general knowledge. These establish the scientific context and rationale for the study. They are appropriately cited and generally accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C86"
+    ],
+    "result": "Background on MMP function: MMPs are proteases involved in ECM remodeling, cell migration, and cancer metastasis. Mammals have >23 partially redundant MMP genes, while Drosophila has only two (MMP-1 secreted, MMP-2 GPI-anchored). MMPs can proteolytically target ECM molecules and influence cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C86 provide background on MMP biology, supported by citations to published literature. These establish the rationale for studying MMP-1 in Drosophila as a simpler genetic system. The information is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "NinjurinA (NinjA) was upregulated in the VNC injury RNA-seq screen, suggesting a potential mechanistic connection between MMP-1 and NinjA in glial responses to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is directly supported by the RNA-seq data (Figure 4d). This is presented as an interesting observation for future investigation, connecting to the known developmental role of MMP-1 in cleaving NinjA (C118-C119). The speculation about a mechanistic connection is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "High levels of MMP activity or expression could contribute to maladaptive wiring after acute injury and in disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is explicitly speculative, presented as a concern based on the findings. While the potential for detrimental effects is plausible given the role of MMPs in synaptic remodeling (C124-C126), this is not tested in the current study. This is appropriately framed as a consideration for future work.",
+    "result_type": "MINOR"
+  }
+]

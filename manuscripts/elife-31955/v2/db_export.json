@@ -1,0 +1,1498 @@
+{
+  "submission": {
+    "id": "cd287692-9567-445f-b809-80f821fc388f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:18:33.512956Z",
+    "updated_at": "2025-12-02T00:18:33.512956Z"
+  },
+  "content": [
+    {
+      "id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "submission_id": "cd287692-9567-445f-b809-80f821fc388f",
+      "content_type": "manuscript",
+      "content_text": "# A comprehensive and quantitative exploration of thousands of viral genomes\n\n## Authors\n\n- Gita Mahmoudabadi<sup>1</sup> ([ORCID: 0000-0002-8812-7246](https://orcid.org/0000-0002-8812-7246))\n- Rob Phillips<sup>1</sup> ([ORCID: 0000-0003-3082-2809](https://orcid.org/0000-0003-3082-2809)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering California Institute of Technology Pasadena United States\n2. Department of Applied Physics California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe complete assembly of viral genomes from metagenomic datasets (short genomic sequences gathered from environmental samples) has proven to be challenging, so there are significant blind spots when we view viral genomes through the lens of metagenomics. One approach to overcoming this problem is to leverage the thousands of complete viral genomes that are publicly available. Here we describe our efforts to assemble a comprehensive resource that provides a quantitative snapshot of viral genomic trends \u2013 such as gene density, noncoding percentage, and abundances of functional gene categories \u2013 across thousands of viral genomes. We have also developed a coarse-grained method for visualizing viral genome organization for hundreds of genomes at once, and have explored the extent of the overlap between bacterial and bacteriophage gene pools. Existing viral classification systems were developed prior to the sequencing era, so we present our analysis in a way that allows us to assess the utility of the different classification systems for capturing genomic trends.\n\n## Introduction\n\nThere are an estimated 1031 virus-like particles inhabiting our planet, outnumbering all cellular life forms (Suttle, 2005; Wigington et al., 2016). Despite their presence in astonishing numbers and their impact on the population dynamics and evolutionary trajectories of their hosts, our quantitative knowledge of trends in the genomic properties of viruses remains largely limited with many of the key quantities used to characterize these genomes either scattered across the literature or unavailable altogether. This is in contrast to the growing ability exhibited in resources such as the BioNumbers database (Milo et al., 2010) to assemble in one curated collection the key numbers that characterize cellular life forms. Our goal has been to complement these databases of key numbers of cell biology (Milo et al., 2010; Phillips et al., 2012; Milo and Phillips, 2015; Phillips and Milo, 2009) with corresponding data from viruses. With the advent of high-throughput sequencing technologies, recent studies have enabled genomic and metagenomic surveys of numerous natural habitats, untethering us from the organisms we know and love and giving us access to a sea of genomic data from novel organisms (Paez-Espino et al., 2016). Such advances allow us to appreciate the genomic diversity that is a hallmark of viral genomes (Paez-Espino et al., 2016; Edwards and Rohwer, 2005; Rohwer and Thurber, 2009; Simmonds et al., 2017; Simmonds, 2015; Mokili et al., 2012) and now make it possible to assemble some of the key numbers of virology.\n\nIn contrast to cellular genomes, which are universally coded in the language of double-stranded DNA (dsDNA), genomes of viruses are remarkably versatile. Viral genomes can be found as single or double-stranded versions of DNA and RNA, packaged in segments or as one piece, and present in both linear and circular forms. Additionally, based on their rapid infectious cycles, large burst sizes, and often highly error-prone replication, viruses collectively survey a large genomic sequence space, and comprise a great portion of the total genomic diversity hosted by our planet (Kristensen et al., 2010; Hendrix, 2003). Recently, through a large study of metagenomic sequences, the known viral sequence space was increased by an order of magnitude (Paez-Espino et al., 2016), and much more of the viral \u201cdark matter\u201d likely remains unexplored (Youle et al., 2012).\n\nIn analyzing an increasing spectrum of sequence data, we are faced with a considerable challenge that is unique to viruses, namely, how to find those features within viral genomes that might reveal hidden aspects of their evolutionary history. To put this challenge in perspective, when analyzing non-viral data, universal markers from the ribosomal RNA such as 16S sequences are used to classify newly discovered organisms and to locate them on the evolutionary tree of life (Hug et al., 2016). Virus genomes on the other hand are highly divergent and possess no\u00a0such universally shared sequences (Kristensen et al., 2011).\n\nIn the absence of universal genomic markers, viruses have historically been classified based on a variety of attributes, perhaps most notably morphological characteristics, proposed in 1962 by the International Committee on Taxonomy of Viruses or ICTV (King et al., 2011), or based on the different ways by which they produce mRNA, proposed by David Baltimore in 1971 (Baltimore, 1971;\u00a0Figure 1). The ICTV classifies viruses into seven orders: Herpesvirales, large eukaryotic double-stranded DNA viruses; Caudovirales, tailed double-stranded DNA viruses typically infecting bacteria; Ligamenvirales, linear double-stranded viruses infecting archaea; Mononegavirales, nonsegmented negative (or antisense) strand single-stranded RNA viruses of plants and animals; Nidovirales, positive (or sense) strand single-stranded RNA viruses of vertebrates; Picornavirales, small positive strand single-stranded RNA viruses infecting plants, insects, and animals; and finally, the Tymovirales, monopartite positive single-stranded RNA viruses of plants. In addition to these orders, there are ICTV families, some of which have not been assigned to an ICTV order. Only those ICTV viral families with more than a few members present in our dataset are explored.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig1-v2.jpg)\n\n**Figure 1.:** (A) The Baltimore classification divides all viruses into seven groups based on how the viral mRNA is produced. DNA strands are denoted in red (+ssDNA in darker shade of red than -ssDNA). Similarly RNA strands are denoted in green (+ssRNA in darker shade of green than -ssRNA). In the case of Baltimore groups 1,2,6, and 7, the genome either is or is converted to dsDNA, which is then converted to mRNA through the action of DNA-dependent RNA polymerase. In the case of Baltimore groups 3,\u00a04 and 5, the genome is or is converted to +ssRNA, which is mRNA, through the action of RNA-dependent RNA polymerase. (B) Nucleotide type classification divides viruses based on their genomic material into DNA and RNA viruses. Baltimore viral groups 1, 2, and 7 are all considered DNA viruses, and the remaining viral groups are considered RNA viruses. (C) Host Domain classification groups viruses based on the host domain that they infect. Three groups are formed: eukaryotic, bacterial and archaeal viruses.\n\nThe Baltimore classification groups viruses into seven categories (Figure 1): double-stranded DNA viruses (Group I); single-stranded DNA viruses (Group II); double-stranded RNA viruses (Group III); positive single-stranded RNA viruses (Group IV); negative single-stranded RNA viruses (Group V); positive single-stranded RNA viruses with DNA intermediates (Group VI), commonly known as retroviruses; and, the double-stranded DNA retroviruses (Group VII).\n\nGiven the prevalence of these viral classification systems in the categorization of viruses today, it is worth remembering that their inception predates the sequencing of the first genome in 1976. With the fastest and cheapest rates of sequencing available to date, we live at an opportune moment to explore viral genomic properties and evaluate these existing classification systems in light of the growing body of sequence information.\n\nIn addition to the ICTV and the Baltimore classifications we used a simple classification system based on the host domain information, and divided viruses into bacterial, archaeal and eukaryotic viruses (Figure 1). The underpinning motivation behind this kind of classification is the Coevolution Hypothesis (Mahy and Van Regenmortel, 2010; Forterre, 2010). Viruses are obligate organisms unable to survive without their host, and as a corollary it is hypothesized that they have coevolved with their hosts as the hosts diverged over billions of years to form the three domains of life (Mahy and Van Regenmortel, 2010; Forterre, 2010). A possible piece of supporting evidence for this hypothesis is that there are to date no reported infections of hosts from one domain by viruses of another observed. We also explored a minimal classification system that divides the virus world into two groups based on their nucleotide type (RNA and DNA), here termed \u201cNucleotide Type\u201d classification (Figure 1). This classification is introduced as a simplified version of the Baltimore classification system. In practice, we have assigned Baltimore groups 1, 2 and 7 to the DNA viral category, and the remaining Baltimore groups to the RNA viral category.\n\nAlthough many viruses are uncharacterized, at the time of the analysis of the data presented here, there were 4,378 completed genomes available from the NCBI viral genomes resource (Brister et al., 2015) (data acquired in August, 2015). However, large-scale analyses of genomic properties for these viruses are generally unavailable. This stands in stark contrast to the in-depth analyses performed on partially assembled viral genomes or viral contigs derived from metagenomic studies (Paez-Espino et al., 2016; Roux et al., 2016). Although these studies have uncovered many important aspects of viral ecology with relatively little bias in sampling, they are limited by the fact that metagenomic studies typically do not result in the full assembly of genomes. An interesting example that illustrates the difficulty of complete genome assembly from metagenomic studies is the crAssphage genome, which despite taking prominent fractions of reads across various metagenomic datasets, had gone undetected and remained unassembled (Dutilh et al., 2014). However, recent methods to counter these limitations provide a promising future for the use of metagenomic datasets in capturing complete genomes from complex environments (Marbouty et al., 2017; Nielsen et al., 2014).\n\nWithout complete viral genomes, it would be difficult to develop systematic understanding of key aspects of viral genomic architecture. To address this problem at least in part, we set out to provide a large-scale analysis of various genomic metrics measured from existing complete viral genomes. To perform a comprehensive analysis, we first explored the diversity of known viruses and their hosts within the NCBI database (see Materials and methods). We then created distributions on a number of metrics, namely genome length, gene length, gene density, percentage of noncoding DNA (or RNA), functional gene category abundances, and gene order. We have provided brief introductions to these metrics in the following subsections.\n\n### Viral genome length, gene length and gene density\n\nGenomes are replete with information about an organism\u2019s past and present. A central and revealing piece of information is the genome length. As more and more complete genomes have become available, we have learned that genome lengths of cellular organisms vary quite extensively, specifically by six orders of magnitude (Phillips et al., 2012; Alberts et al., 2002). Because these studies focused on cellular organisms, and because genome length information is generally inaccessible through metagenomic studies, large-scale analyses that systematically capture viral genome length distributions in light of different classification systems and in relation to other genomic parameters are lacking. One such genomic parameter is the number of genes that are encoded per genome, also referred to as gene density (Keller and Feuillet, 2000; Hou et al., 2012). Another set of missing distributions involves gene lengths, and here too, it is important to see how they vary across different viral classification categories.\n\n### The noncoding percentages of viral genomes\n\nOne of the most surprising discoveries of the past several decades was the rich and enormous diversity of noncoding DNA in the human genome (Elgar and Vavouri, 2008). Though originally thought of as \u201cjunk DNA\u201d, the noncoding regions of our genomes were later shown to be of great functional importance. Noncoding DNA is an umbrella term for very different elements, for example functional RNAs such as micro RNAs (miRNA), regulatory elements such as promoters and enhancers, as well as transposons and pseudogenes.\n\nMoreover, genomes vary widely in their noncoding percentages. While multicellular eukaryotic genomes such as plants and vertebrates have 50% or more of their genomes filled with noncoding regions, single-cell eukaryotic genomes have 25-50% of their genomes present as noncoding regions and prokaryotic genomes have even lower percentages of noncoding DNA, generally 15 to 20% (Mattick and Makunin, 2006; Morris, 2012; Mattick, 2004). Hence, the noncoding percentage of the genome is thought to correlate with the phenotypic complexity of the organism, and consequently, much of the investigation into noncoding fractions of genomes has been focused on higher eukaryotes. However, the discovery of the bacterial immunity against phages and other sources of foreign DNA, otherwise known as CRISPR/Cas system (Clustered Regularly Interspaced Short Palindromic Repeats), as well as the discovery of a new class of antibiotics targeting bacterial noncoding DNA (Howe et al., 2015) demonstrate the level of biotechnological impact and scientific insight that the study of noncoding elements in bacteria can provide. Even less is known about the noncoding fraction of viral genomes.\n\nThe literature on viral noncoding DNA or RNA is relatively sparse but highly intriguing. The first viral noncoding RNAs were discovered in adenoviruses, dsDNA viruses that infect humans, and were ~160 base pairs long (Reich et al., 1966; Tycowski et al., 2015; Steitz et al., 2011). These sequences were shown responsible for viral evasion of host immunity by inhibition of protein kinase R- a cellular protein responsible for the inactivation of viral protein synthesis (Mathews and Shenk, 1991). In ovine herpesvirus, miRNAs have been shown to maintain viral latency (Riaz et al., 2014). These are just several examples in which viral noncoding elements have been shown to enable viral escape from host immunity, as well as regulate viral life-cycle and viral persistence (Tycowski et al., 2015). Despite many interesting studies exploring the topic of cellular noncoding DNA (Mattick and Makunin, 2006; Morris, 2012; Mattick, 2004), there are no studies, to our knowledge, that reveal the statistics of noncoding percentage of viral genomes.\n\n### Viral functional gene categories\n\nThere are detailed studies on the counts of cellular genes belonging to each broad functional category (Molina and van Nimwegen, 2009; Grilli et al., 2012). These studies have helped us better understand the scaling of functional categories across different clades of organisms. In fact there was an intriguing conclusion that for prokaryotic genomes, there exists a universal organization which governs the relative number of genes in each category (Molina and van Nimwegen, 2009). Such depictions of viral genomes, however, are largely lacking. Thus, we set out to better understand how viral genes are distributed across different functional categories and how these distributions might differ across various viral groups.\n\n### Viral genome organization\n\nViral genome organization is a topic that has great depth but limited breadth. There exist highly detailed genome-wide diagrams that illustrate the location, direction, and predicted function of viral genes, which are then compared to similar illustrations from a small number of viral genomes (Labont\u00e9 et al., 2015; Casjens et al., 2005; Marinelli et al., 2012; Br\u00fcssow and Hendrix, 2002). While this highly detailed approach is indispensible for studying individual viruses, a simplified illustration of genome organization is a requirement of any high-throughput visualization and comparison of genomes. The latter approach could help us uncover general rules governing genomic organization, in the same way that synteny, or conserved gene order, has been used to compare animal genomes (Telford and Copley, 2011; Jaillon et al., 2004) and genomes of RNA viruses infecting invertebrates (Shi et al., 2016).\n\n## Results\n\n### Exploring the NCBI viral database\n\nWe used the largest available dataset of completed viral genomes available from the National Center for Biotechnology Information (NCBI) viral genomes resource (Brister et al., 2015), containing a total of 4,378 complete viral genomes at the time of data acquisition (August, 2015). After implementing several manual and programmed steps towards curating the data, a total of 2,399 viruses (excluding satellite viruses) could be associated with a host using NCBI\u2019s documentation (see Materials and methods). These viruses were included for further analysis, and unless noted otherwise, will constitute our dataset in this study. By examining these viruses through different classifications (Figure 2), it is clear that they are largely DNA viruses (Figure 2B4), and more specifically, they are primarily double-stranded DNA (dsDNA) viruses (Figure 2C4). This is in contrast to the RNA viruses in this database, which are mostly single-stranded (Figure 2B4 and Figure 2C4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig2-v2.jpg)\n\n**Figure 2.:** (A) Percentage of viruses infecting hosts from the three domains of life. 1) Eukaryotic, 2) bacterial and 3) archaeal viromes are further classified according to the (B) Nucleotide Type, (C) Baltimore, and D) ICTV classification systems. (E) Distributions of host phyla (or supergroups) infected by the (1) eukaryotic, (2) bacterial, and (3) archaeal viruses is shown. As in the case of\u00a0panel F, the host taxonomic identification is derived from the NCBI Taxonomy database (see Materials and methods). (F) Histograms of the number of known viruses infecting host species. Median and mean number of viruses infecting a host species is provided in each plot. The full-range of x-values for the bacterial and eukaryotic histograms extends beyond n=20 (see virusHostHistograms.ipynb in our GitHub repository [Mahmoudabadi, 2018]). Further exploration of the largest fraction of the eukaryotic virome (i.e. animal viruses) is shown in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The x-axis corresponds to the number of viruses infecting each host group. In a recursive fashion, the host group with the largest number of known viruses is further zoomed in on (host groups infected by only a few known viruses are not shown). The host classification was obtained from the NCBI taxonomic database.\n\nWe further observed that eukaryotes host nearly an equal number of DNA and RNA viruses (Figure 2B1). In contrast to prokaryotes, which are predominantly host to viruses with double-stranded genomes, eukaryotes are host to a higher number of viruses with single-stranded genomes. Why are double-stranded DNA viruses, despite their high prevalence in the bacterial and archaeal world, only the third largest group of viruses infecting eukaryotes in this database? One explanation proposed is the physical separation of transcriptional processes from the cytoplasm by way of the eukaryotic nucleus (Koonin et al., 2015). This physical separation is thought to impose an additional barrier for DNA viruses in gaining access to the host\u2019s transcriptional environment.\n\nMore than half of viruses with complete genomes have not been assigned to any viral orders under the ICTV classification (Figure 2D4). About one third of all known viruses are assigned to the Caudovirales order, while the other orders are in the minority. The vast majority of the bacterial viruses are categorized as part of the Cauodvirales order (Figure 2D2), but the majority of archaeal and eukaryotic viruses remain unassigned to any order.\n\nBefore any further exploration of this dataset, we aimed to assess its diversity and possible sources of bias (Figure 2E\u2013F). It was immediately clear, for example, that archaeal viruses were heavily under-sampled. In contrast, bacterial viruses infect hosts from a diverse array of bacterial phyla (Figure 2E2). However, even for bacterial viruses, there are host phyla whose viruses are entirely missing from the database, for example Synergistes and Acidobacteria, whose members are typically unculturable soil bacteria. Given that the isolation and characterization of archaeal and bacterial viruses has traditionally been dependent on the culturing of their hosts, the majority of viruses with unculturable hosts remain unexplored. Moreover, the eukaryotic viruses in the database infect hosts primarily from the Viridiplantae or the Opisthokonta supergroups (Figure 2E1). Among Viridiplantae, the majority of hosts belong to the Streptophytina group (land plants), and within the Opisthokonta supergroup, the majority of viruses are metazoan. We further examine the distribution of viruses from the Opisthokonta supergroup in Figure 2\u2014figure supplement 1.\n\nWe continued to explore host diversity at a finer resolution and mapped out the number of viruses that infect each host species (Figure 2F). As expected, organisms such as Staphylococcus aureus, Escherichia coli, and Solanum lycopersicum, which are host species with either medical, research or agricultural relevance, have many known viruses and are outliers in the skewed distributions shown in Figure 2F. However, the median number of viruses known to infect a eukaryotic or a prokaryotic host species is approximately 1 (Figure 2F). This signifies that even for host species that are already represented in our collection, the number of known viruses is likely an underestimate considering the larger numbers of viruses known to infect the more heavily studied host species.\n\n### Viral genome lengths, gene lengths, gene densities\n\nGenome lengths for all fully sequenced viral genomes varied widely by three orders of magnitude (Figure 3A, Table 1). According to the Host Domain classification, prokaryotic viruses tend to have longer genomes than eukaryotic viruses (Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1). However, this difference can be better explained by the Nucleotide Type classification, as the median RNA virus genome length is four times shorter than the median DNA virus genome length. Thus, the comparison between prokaryotic and eukaryotic viral genome lengths is confounded by the fact that the prokaryotic virome, as represented by this database, is primarily composed of DNA viruses, whereas the eukaryotic virome is only half comprised of DNA viruses (Figure 2C4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig3-v2.jpg)\n\n**Figure 3.:** (A) Box plots of genome lengths (Log10) across all viruses included in our dataset (top), further partitioned based on the Baltimore classification categories (bottom). The number of viruses included in each group is denoted by N.\u00a0(B) A closer examination of dsDNA and ssDNA viral genome lengths through the overlay of Host Domain and ICTV classification systems. Distributions of genome lengths associated with eukaryotic, bacterial and archaeal viruses are shown in salmon, blue, and teal, respectively. ICTV viral families with only a few members are omitted. Distributions of genome lengths across different classification systems along with various statistics are shown in Figure 3\u2014figure supplement 1. and Figure 3\u2014source data 1. Note that the bimodal distribution of eukaryotic ssDNA viruses, which also appears in the next figure, arises from the Begomoviruses, which are plant viruses with circularized monopartite and bipartite genomes (Melgarejo et al., 2013). (C) Median gene length is plotted against the number of genes for each genome for all genomes in our dataset, color-coded according to different classification systems. (D) Number of genes per genome length (gene density) for dsDNA viruses based on the overlay of Host Domain (bottom) and ICTV family classification categories (top) (Pearson correlations and their statistical significance, two-tailed t-test P values, are denoted).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Histograms are grouped according to four viral classification systems: (A) Baltimore classification, (B) Nucleotide type classification, (C) Host Domain Classification, and D) ICTV classification. Instead of showing absolute viral counts on the y-axis, the counts are normalized by the total number of viruses in each viral category (the total counts of viruses in each category is denoted as N inside the plots). The mean of each distribution is denoted as a dot on the boxplots. The relevant statistics for each distribution is provided in Figure 3\u2014source data 1. In each histogram the number of bins and their width is set by Freedman-Diaconis rule (Reich et al., 1966).\n\n**Table 1.**\n Viral genomic statistics based upon different classification systems.Only median values are reported in this table. Genome length data is rounded to the nearest kilobase. N corresponds to the number of viruses from which data is obtained.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Classification</th>\n      <th>N</th>\n      <th>Genome length (kb)</th>\n      <th>Percent noncoding (DNA/RNA)</th>\n      <th>Median gene length (bases)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Host Domain</td>\n      <td>Eukaryotic Viruses</td>\n      <td>1384</td>\n      <td>8</td>\n      <td>10</td>\n      <td>1055</td>\n    </tr>\n    <tr>\n      <td>Bacteria Viruses</td>\n      <td>969</td>\n      <td>43</td>\n      <td>9</td>\n      <td>408</td>\n    </tr>\n    <tr>\n      <td>Archaea Viruses</td>\n      <td>46</td>\n      <td>24</td>\n      <td>10</td>\n      <td>400</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">Baltimore</td>\n      <td>Group I (dsDNA)</td>\n      <td>1211</td>\n      <td>44</td>\n      <td>9</td>\n      <td>429</td>\n    </tr>\n    <tr>\n      <td>Group II (ssDNA)</td>\n      <td>431</td>\n      <td>3</td>\n      <td>14</td>\n      <td>588</td>\n    </tr>\n    <tr>\n      <td>Group III (dsRNA)</td>\n      <td>123</td>\n      <td>8</td>\n      <td>8</td>\n      <td>2291</td>\n    </tr>\n    <tr>\n      <td>Group IV (+ssRNA)</td>\n      <td>482</td>\n      <td>9</td>\n      <td>5</td>\n      <td>2366</td>\n    </tr>\n    <tr>\n      <td>Group V (-ssRNA)</td>\n      <td>101</td>\n      <td>12</td>\n      <td>7</td>\n      <td>1353</td>\n    </tr>\n    <tr>\n      <td>Group VI (ssRNA-RT)</td>\n      <td>14</td>\n      <td>8</td>\n      <td>16</td>\n      <td>1799</td>\n    </tr>\n    <tr>\n      <td>Group VII (dsDNA-RT)</td>\n      <td>37</td>\n      <td>8</td>\n      <td>11</td>\n      <td>558</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Nucleotide Type</td>\n      <td>DNA Viruses</td>\n      <td>1679</td>\n      <td>38</td>\n      <td>10</td>\n      <td>444</td>\n    </tr>\n    <tr>\n      <td>RNA Viruses</td>\n      <td>720</td>\n      <td>9</td>\n      <td>6</td>\n      <td>2072</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">ICTV (orders)</td>\n      <td>Caudovirales</td>\n      <td>879</td>\n      <td>44</td>\n      <td>9</td>\n      <td>408</td>\n    </tr>\n    <tr>\n      <td>Herpesvirales</td>\n      <td>55</td>\n      <td>159</td>\n      <td>19</td>\n      <td>1107</td>\n    </tr>\n    <tr>\n      <td>Ligamenvirales</td>\n      <td>11</td>\n      <td>37</td>\n      <td>12</td>\n      <td>372</td>\n    </tr>\n    <tr>\n      <td>Mononegavirales</td>\n      <td>71</td>\n      <td>12</td>\n      <td>8</td>\n      <td>1266</td>\n    </tr>\n    <tr>\n      <td>Nidovirales</td>\n      <td>35</td>\n      <td>27</td>\n      <td>3</td>\n      <td>672</td>\n    </tr>\n    <tr>\n      <td>Picornavirales</td>\n      <td>89</td>\n      <td>8</td>\n      <td>11</td>\n      <td>7056</td>\n    </tr>\n    <tr>\n      <td>Tymovirales</td>\n      <td>73</td>\n      <td>8</td>\n      <td>4</td>\n      <td>693</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Combinations of different classifications</td>\n      <td>All Eukaryotic dsDNA viruses</td>\n      <td>271</td>\n      <td>33</td>\n      <td>11</td>\n      <td>990</td>\n    </tr>\n    <tr>\n      <td>All Bacterial dsDNA viruses</td>\n      <td>899</td>\n      <td>44</td>\n      <td>9</td>\n      <td>408</td>\n    </tr>\n    <tr>\n      <td>All Archaeal dsDNA viruses</td>\n      <td>41</td>\n      <td>28</td>\n      <td>10</td>\n      <td>396</td>\n    </tr>\n    <tr>\n      <td>All Eukaryotic ssDNA viruses</td>\n      <td>375</td>\n      <td>3</td>\n      <td>14</td>\n      <td>732</td>\n    </tr>\n    <tr>\n      <td>All Bacterial ssDNA viruses</td>\n      <td>51</td>\n      <td>7</td>\n      <td>14</td>\n      <td>348</td>\n    </tr>\n  </tbody>\n</table>\n\nWith respect to viral genome lengths, the Baltimore classification seems to offer the most explanatory power. Knowing whether a viral genome is DNA- or RNA-based already provides a strong indication about viral genome length, especially for RNA viruses where the standard deviation is just a few kilobases (Figure 3\u2014source data 1). However, by distinguishing between ssDNA, dsDNA and dsDNA-RT viruses, the Baltimore classification offers a more complete view of genome length distributions compared to the binary Nucleotide Type classification (Figure 3A). Across all Baltimore groups, dsDNA viruses have genome lengths that have the largest standard deviation, however considering the limited range of genome lengths associated with other Baltimore groups, it is very likely that a larger viral genome will be composed of dsDNA (Figure 3A). We provide a more detailed view of genome length distributions by layering different classification systems, first applying the Baltimore classification, followed by the Host Domain and the ICTV family classifications (Figure 3B, Figure 3\u2014source data 1). Finally, it is worth noting that capsid dimension, surprisingly, does not seem to correlate with viral genome size, and to different degrees, many viruses are shown to under-utilize the capsid volume (Brandes and Linial, 2016).\n\nIn viewing the relationship between median gene length and number of genes per viral genome (Figure 3C), two different coding strategies become apparent. Namely, compared to DNA viruses, RNA viruses exhibit a large range of gene lengths. This trend is at least in part reflective of the challenges faced by RNA viruses when encountering the requirements of their host\u2019s translational machinery (Firth and Brierley, 2012). For example, many of the RNA genomes we examined closely contained genes that encode polyproteins, ribosomal slippage (frame-shifting) or codon read-through events, among other non-canonical translational mechanisms.\n\nAs in the case of genome lengths, by examining only the ICTV or the Host Domain classifications it would be difficult to draw meaningful conclusions about the observed patterns, and in the case of the Host Domain classification, our conclusions would be confounded by the disproportionate ratio of RNA to DNA viruses that are known to infect each host domain in this database. However, the layering of these classification systems offers new insights, which we will discuss in the following paragraphs.\n\nWe follow others (Keller and Feuillet, 2000; Hou et al., 2012) in defining the gene density of a genome as the number of genes divided by the genome length (Figure 3D). We further partitioned dsDNA viruses according to the Host Domain and subsequently the ICTV (family) classifications. We observed a strong linear correlation between dsDNA viral genome lengths and the number of genes encoded by these genomes (Figure 3D). The mean (and median) gene densities for bacterial, archaeal and eukaryotic dsDNA viral genomes are approximately 1.4, 1.6 and 0.9 genes per kilo basepairs. As illustrated by the slopes of the regression lines, as well as through a nonparametric statistical test performed on eukaryotic and bacterial dsDNA viral gene densities (one-sided Mann-Whitney U test, P<10-5), bacterial dsDNA viruses have significantly higher gene densities than their eukaryotic counterparts in this database.\n\nA closer examination of median gene lengths more clearly reveals the significantly longer gene lengths of RNA viruses compared to DNA viruses (one-sided Mann-Whitney U test, P<10-5) (Figure 4, Table 1). By focusing on DNA viruses, and further dividing these viruses based on Baltimore, Host Domain and ICTV (family) classifications, we arrive at an interesting trend. Namely, eukaryotic viruses, whether dsDNA or ssDNA, have significantly longer gene lengths compared to bacterial viruses from the same Baltimore classification category (Figure 4, Figure 4\u2014source data 1) (one-sided Mann-Whitney U test, P<10-5). This trend follows what we see across cellular genomes, since prokaryotic genes and proteins are shown to be significantly shorter than eukaryotic ones (Milo and Phillips, 2015; Brocchieri and Karlin, 2005).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig4-v2.jpg)\n\n**Figure 4.:** Instead of showing absolute viral counts on\u00a0y-axes, the counts are normalized by the total number of viruses in each viral category (denoted as N inside each plot). The mean of each distribution is denoted as a dot on the boxplot. For all histograms, bin numbers and bin widths are systematically decided by the Freedman-Diaconis rule (Reich et al., 1966). Viral schematics on the right of the figure are modified from ViralZone (Hulo et al., 2011). Key statistics describing these distributions can be found in Table 1 and Figure 4\u2014source data 1.\n\n### Noncoding percentages of viral genomes\n\nSo far we have primarily focused on the coding fractions of viral genomes. Thus, we created distributions of noncoding percentage of viral genomes (see Materials and methods, Figure 5, Table 1, Figure 5\u2014source data 1). In general, DNA viral genomes contain about 10% noncoding regions which is even lower than the noncoding percentage of bacterial genomes (Mattick and Makunin, 2006; Morris, 2012). With a median noncoding percentage of just 6%, RNA viral genomes have significantly lower noncoding percentage compared to DNA viruses in this database (one-sided Mann-Whitney U Test, P<10-5). A notable exception to the RNA viral group is the ssRNA-RT with a median noncoding percentage of 16%. Interestingly, both retroviral groups had relatively high noncoding DNA percentages. This is likely due to the presence of defunct retroviral genes. For example, the Xenopus laevis endogenous retrovirus (NCBI taxon ID 204873) belonging to the ssRNA-RT group has a noncoding percentage of 93%. This high noncoding percentage can be explained by the fact that this virus genome contains three pseudogenes previously coding for env, pol and gag proteins.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig5-v2.jpg)\n\n**Figure 5.:** The counts of viruses are normalized by the total number of viruses in each viral category (denoted as N inside each plot). The mean of each distribution is denoted as a dot on the boxplot. For all histograms, bin numbers and bin widths are systematically decided by the Freedman-Diaconis rule (Reich et al., 1966). Viral schematics are modified from ViralZone (Hulo et al., 2011). Key statistics describing these distributions can be found in Table 1 and Figure 5\u2014source data 1.\n\n### Viral functional gene categories\n\nWe categorized viral genes according to several major functional categories, including structural genes such as capsid and tail genes, metabolic genes, informational genes, which we define as those involved in replication, transcription or translation of the viral genetic code, among other categories (Figure 6, see Materials and methods). In addition to the fraction of viral genes that we were able to assign to these functional categories, there still remains what we will refer to as an \u201cunlabeled\u201d fraction that is comprised of hypothetical genes or genes with poor annotation (see Materials and methods). When reporting the relative abundance of different functional gene categories, we will normalize the number of genes belonging to each functional category by the total number of labeled genes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig6-v2.jpg)\n\n**Figure 6.:** (A) Abundances of functional gene categories across 8 viral groups normalized to the number of labeled genes in each viral group (the total number of genes in each viral group is shown above the panel, and in brackets are the number of labeled genes for each viral group). (B) Abundances of functional gene subcategories across 8 viral groups: RNA, ssDNA, and dsDNA viral groups (top plot); eukaryotic and bacterial dsDNA viral groups (middle); Siphoviridae, Myoviridae, and Podoviridae viral groups (bottom). A few examples of the types of genes contained as part of each functional subcategory are provided.\n\nRNA, dsDNA and ssDNA viruses, despite differences in the detailed categorization of their genes (Figure 6B) share similar general features (Figure 6A). For example, across all three viral groups, roughly half of all genes are structural. Similarly, dsDNA viruses of eukaryotes and bacteria in this database, in contrast to having different genomic properties and morphologies surprisingly have very similar distribution of gene functional category and subcategory abundances. The major difference between these two viral groups, as expected from our knowledge of viral morphologies, is that a larger portion of eukaryotic dsDNA viral genes are envelope and matrix genes, whereas a greater portion of bacterial dsDNA genes are portal and tail-associated genes. By further zooming in on bacterial dsDNA viruses, it is again interesting to see that Myoviridae, Siphoviridae, and Podoviridae viral groups, with their different morphologies and wide range of hosts, having very similar functional gene category abundances even at the level of subcategories.\n\n### Viral genome organization\n\nTo explore viral genome organization we developed a coarse-grained method for visualizing a large number of genomes in one snapshot. We first defined genome organization as the order in which genes appear across a genome. We then symbolized each gene by a letter, indifferent to the gene\u2019s length or its orientation on the genome. Genes with similar functions are grouped and are represented by the same letter (Figure 7). Therefore each viral genome, analogous to a nucleotide sequence, is compactly described by a sequence of letters that represent its gene order (Figure 7), which we will refer to as the gene order sequence. Because we aimed to study gene order sequences across different viral groups, we focused on genes whose functions are universally required, namely structural genes. textFile-1.txt (see our GitHub repository) provides the structural gene order sequences for all viruses (see Materials and methods for filters applied), though the script developed can be modified to visualize the placement of any number of genes or user-defined gene groups.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig7-v2.jpg)\n\n**Figure 7.:** Each genome is summarized by a sequence of letters, with each letter corresponding to a gene, positioned in the order that it appears on the genome. As an example, the gene order sequence for Salmonella phage FSL SP-004 is shown. Note the letters shown serve to only denote genes with similar functions. Structural genes are assigned colors, whereas other genes are denoted in black. Across all three panels, each row corresponds to the gene order sequence for a given virus, and thus, the length of the sequence denotes the number of genes within a given genome. The left two columns accompanying each panel provide further information on hosts and viral morphologies. Panel A, B, and C, represent gene order patterns A, B, and C, respectively. Geneious global alignment (Steitz et al., 2011) was used to align gene order sequences (see Materials and methods). Refer to Figure 7\u2014figure supplement 1 to see the percent identity heat maps of terminases (large and small subunits) across dsDNA bacterial viruses.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The sidebars denote the host phylum for each bacteriophage sequence.\n\nFurthermore, by focusing on bacterial dsDNA viruses present in the NCBI viral database, we were able to identify the most common gene order patterns across this virome (see Materials and methods). One particular gene order pattern and its variations exist across various types of dsDNA bacterial viruses. We will refer to it as gene order pattern A (Figure 7A). In pattern A, gene packaging, portal and capsid-related genes are mostly tightly clustered and are followed by tail-associated genes. Interestingly, this pattern occurs at the beginning of the genome for some viruses, and for others it seems to have been shifted further down on the genome. Pattern A occurs across viruses from five different host phyla. The other two most common gene order patterns (patterns B and C) occur across viruses with more limited host range and morphologies.\n\nBeyond their order in the genome, we wondered to what extent are bacteriophage proteins from taxonomically similar hosts similar to each other in sequence? In an attempt to address this question, we analyzed sequences from two structural proteins in dsDNA bacteriophages, namely terminase large subunit and small subunit, which are used in the packaging of DNA inside capsids and represent some of the more clearly annotated bacteriophage proteins. Amino acid sequences were aligned using Clustal-Omega (Arndt et al., 2016) and the sequence similarity percentages are shown as heat maps (Figure 7\u2014figure supplement 1). The host phylum information is color-code. As can be seen from this figure, bacteriophages infecting hosts from the same phylum do not necessarily have more similar terminase sequences. In the cases where there is a similarity between terminase sequences, it is primarily from bacteriophages infecting the same host species.\n\nTo provide more information on the genomic organization of dsDNA bacteriophages, we examined attachment site positions, length distributions, and sequence diversity. Attachment sites are locations of site-specific recombination that lysogenic phages use to insert their DNA into the host genome (See Materials and methods). Among the several hundred dsDNA bacteriophages that were included in this analysis, we found roughly a quarter to have putative attachment sites. We found that the median attachment site length is 13 base pairs (Figure 8A). The left attachment start position in the genome is located at ~2 kb (this is the median of left attachment site start positions across all genomes analyzed). The right attachment site median position is located at ~40 kb. (Figure 8B). Figure 8C demonstrates the same data but normalized by the genome length.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig8-v2.jpg)\n\n**Figure 8.:** (A) Histogram of attachment site length. (B) Histogram of attachment site start positions (left attachment: blue, right attachment: red). (C) Histogram of attachment site start positions normalized by the genome length. (D) Percent sequence similarity matrix across attachment sites. (E) Attachment site locations along viral genomes (left attachment: blue, right attachment: red). Figure 8\u2014source data 1 demonstrates several bacteriophages shown in panel E with similar or identical attachment site sequences.\n\nTo examine attachment site sequence diversity, we used Clustal-Omega (Sievers et al., 2011) for creating a sequence alignment. Figure 8D is a heat map of the percent sequence similarity scores. Figure 8E demonstrates left (blue) and right (red) attachment sites in phage genomes. Note, the genomes are shown according to their order in Figure 8D. While the vast majority of attachment sites are very diverse in sequence, as shown by regions of low similarity in the heat map, there are a number of viruses that have identical putative attachment site sequences (Figure 8\u2014source data 1, Materials and methods). Perhaps not surprisingly, these phages are largely those infecting different strains of the same host species. Phages infecting hosts outside of the same species seem more likely to have dissimilar attachment site sequences.\n\n### Shedding some light on viral \u201chypothetical\u201d proteins\n\nAs demonstrated in the previous sections, proteins annotated as hypothetical or putative form more than half of all proteins associated with dsDNA bacteriophages. In an attempt to learn more about these proteins, we used BLASTP to query all ~88,000 dsDNA bacteriophage proteins against the NCBI Refseq protein database (limited to bacteria) (See Materials and methods). The purpose of this exercise was to use the annotations of bacterial homologs to viral proteins to gain better understanding of what the function of each bacteriophage hypothetical protein might be.\n\nA homologous relationship was defined as a match with BLASTP E-value score < 10-10. The closest bacterial homolog to each bacteriophage protein (i.e. the match with the lowest E-value) was collected. Not all bacteriophage proteins had a bacterial homolog, at least not one that is currently in the NCBI database. However, a surprisingly large number did have bacterial homologs, and we have collected these proteins along with other useful information in textFile-2.txt (see our GitHub repository). This dataset is in part visualized in Figure 9.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig9-v2.jpg)\n\n**Figure 9.:** The numbers reported correspond to the number of dsDNA bacteriophage proteins (rounded to the nearest thousand).\n\nMost bacterial homologs of hypothetical phage proteins were also annotated as hypothetical proteins. However, a few thousand hypothetical phage proteins could be assigned to putative annotation based on the annotation of their bacterial homologs (See Materials and methods). Interestingly, we were able to match even more bacterial hypothetical proteins to a putative annotation based on the annotations of their bacteriophage protein homologs. Although, this method can certainly be helpful in filling some of the gaps in protein annotations, it is only as good as the annotations and the convention we establish for describing proteins. Unfortunately, a considerable number of annotations are currently either too specialized or too vague to be helpful.\n\n### The extent of overlap between viral and cellular gene pools\n\nOne of the defining features of viruses is their reliance on their host organisms. It is well known that the interactions between viruses and cells often result in the exchange of genetic information. To explore the extent to which the viral and cellular gene pools overlap, we used BLASTP to search for bacterial proteins that are homologous to dsDNA bacteriophage proteins (see Materials and methods). Overall, each of the ~900 dsDNA bacteriophage genomes we examined encoded at least one protein that was homologous to a bacterial protein.\n\nTo systematically examine the extent of homology between bacteriophage and bacterial proteins, we calculated the number of proteins per bacteriophage genome with homology to a bacterial protein, and divided this number by the total number of proteins encoded by the bacteriophage genome. In Figure 10\u2014figure supplement 1 (left), we demonstrate the histogram of the fraction of homologous proteins per bacteriophage genome. Based on the median fraction of homologous proteins, we can conclude that 7 out of every 10 bacteriophage proteins exhibit homology to a bacterial protein. This suggests that there is a significant overlap between the two gene pools.\n\nThere are multiple mechanisms by which a bacterial protein and a bacteriophage protein could exhibit homology. The most trivial, conceptually, is when the same protein is registered as part of both a bacterial genome and a bacteriophage genome, as it would be for a prophage protein. In the case of prophages, we would expect to see a high fraction of bacteriophage proteins per genome that are homologous to bacterial proteins since their genomes should at some point in time be embedded in their hosts\u2019 genomes.\n\nThus, to examine the contribution from prophages, we implemented several filters to identify probable prophage genomes (see Materials and methods). Based on these filters, 173 genomes were identified. These genomes were primarily contributing to the large spike in the left histogram in Figure 10\u2014figure supplement 1. To evaluate these filters, we performed a literature search for the first 20 bacteriophage genomes in the list and found that the majority were, in fact, experimentally identified as temperate phages. Because we could not find a database that contained a list of all experimentally verified prophages and their lytic relatives to compare our predictions to, we did not exclude these genomes from further analysis.\n\nA non-trivial mechanism by which bacteriophages and bacteria can exhibit homologous proteins is via gene exchanges over evolutionary time-scales. Interestingly, the closest homolog to a bacteriophage protein is not always found in its host genome. In fact there can be large taxonomic distance (Figure 10) between the host and the bacterium containing the closest homolog. We depict this distance by categorizing bacteriophage proteins based on the organism in which their closest homolog was found (see inscribed circles in Figure 10). If they were found in the same species of bacteria as the host, then these proteins are placed in the most inner circle, whereas if they were found in the same phylum, the proteins are placed in the outer most circle.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig10-v2.jpg)\n\n**Figure 10.:** All circles are drawn to scale with respect to the number of proteins (N) that they each represent. Note, the number of proteins denoted at each taxonomic layer includes proteins in lower taxonomic layers. For example, the 20,000 figure denoted at the genus layer already includes the 11,000 proteins shown at the species layer. N values are rounded to the nearest thousand. Histograms of the fraction of proteins with bacterial homologs per bacteriophage genome are shown in Figure 10\u2014figure supplement 1.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig10-figsupp1-v2.jpg)\n\nWe can see from Figure 10 that there is a 26% chance that the closest homolog to a bacteriophage protein appears in a\u00a0member of its host species. This chance is raised to 84% when more broadly assuming that the homolog will appear in a\u00a0bacterium that is at least in the same phylum as the host\u00a0(Figure 10). The chance value is calculated by dividing the number of proteins in a given taxonomic layer by the total number of proteins in the analysis.\n\nMoreover,\u00a0an interesting facet of this dataset becomes apparent when we examine the quality of the match between a bacteriophage protein and its closest bacterial homolog as a\u00a0function of the taxonomic distance between the bacteriophage host and the bacterium containing the homolog. We used the bit score as a measure of quality of the match. The bit score is a BLAST output and a similarity measure that is independent of database size or the query sequence length. It identifies the size of a database required for finding\u00a0the same quality match by chance. Naturally, the higher the bit score, the better is the match.\n\nWe can see that there is a significant decrease in the median bit score as we move from the \u201csame species\u201d layer to the \u201csame genus\u201d layer and finally to the \u201csame phylum\u201d\u00a0layer (Figure 11). Thus, the closer (taxonomically) the host is to the bacterium containing the homolog, the better the match between the bacteriophage protein and its bacterial homolog. We think there are interesting phage-host co-evolutionary implications that can be concluded from this data analysis and data visualization method, and hope to shed further light on these hypotheses in the future.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig11-v2.jpg)\n\n**Figure 11.:** Histograms are created according to the proteins belonging to three different layers corresponding to an increasing taxonomic distance between the host organism and the bacterium containing the closest homolog. (A) When the host and the homolog-containing bacterium belong to the same species, the median bit score is significantly higher (one sided Mann-Whitney U test, P<0.001) than it is for those that are only part of the same genus. (B) Similarly, when comparing proteins from the \u201csame species\u201d layer to the \u201csame phylum\u201d layer, the median bit score is significantly higher for the \u201csame species\u201d layer (one sided Mann-Whitney U test, P<0.001). Note that for each layer, when comparing the \u201csame species\u201d to the \u201csame genus\u201d layers, we are comparing the 11,000 proteins in the \u201csame species\u201d layer to the 9,000 proteins from the \u201csame genus\u201d layer that do not also belong to the \u201csame species\u201d layer. The same principle applies when we are comparing the \u201csame species\u201d layer to the \u201csame phylum\u201d layer. Distributions of bacteriophage proteins with homologs from a different phylum than their host phylum are shown in Figure 11\u2014figure supplement 1.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig11-figsupp1-v2.jpg)\n\n**Figure 11\u2014figure supplement 1.:** These proteins are categorized based on their host\u2019s phylum (top), and then based on the phylum where their closest homolog appears (bottom). There are 26 different phyla that bacterial homologs appear in, however, only the ones containing the highest number of homologs are annotated for visual clarity.\n\nWhile the majority of homologs belong to members of the same phylum as the host, there is still a 16% chance that the closest bacterial homolog to a bacteriophage protein actually appears in a\u00a0bacterium from a different phylum than the host. To further examine these cross-phyla associations, we map the distribution of bacteriophage proteins as a function of the host phylum. Then, we zoom in on the bacterial phyla containing the homologs (Figure 11\u2014figure supplement 1). By far, the most number of cross-phyla homologs are shared between bacteriophages infecting Proteobacteria and bacteria from the Firmicutes phylum. It would be interesting to explore in the future the underlying cause of the relatively large number of homologs that exist between microbial members of the Firmicutes and Proteobacteria phyla.\n\n## Discussion\n\nOur primary motivation for conducting a large-scale study of viral genomes was to provide the distributions of key numbers that characterize viral genomes. However, it is important to note that while the NCBI viral database represents a large collection of complete viral genomes, it still represents a small fraction of the total viral diversity in nature. In light of the striking genomic trends observed across different viral groups, future studies are needed to re-examine these trends as our databases grow in size with greater focus on several underrepresented groups such as archaeal viruses and bacterial RNA viruses. To that point, upon re-examining the NCBI viral database in 2018, we were surprised to find that eventhough\u00a0the database has almost doubled in size, the increase has disproportionately favored the already well-represented viral groups.\u00a0Thus,\u00a0the underrepresented groups continue to be underrepresented.\n\nOur second motivation for conducting this study was to compare different viral classification systems. Because viral classification systems were constructed prior to the emergence of sequencing, we were interested to see how well they can describe genomic trends. Based on a comparison of classification systems across various genomic metrics, the Baltimore classification and in some cases its more minimal form (Nucleotide Type classification) seem to provide the clearest explanation for the observed trends. We suspect that this is due to the Baltimore classification\u2019s discernment of RNA, ssDNA and dsDNA genomes, which have striking physical differences.\n\nThe greater stability of dsDNA compared to RNA (Lindahl, 1993) and ssDNA is thought to be an important factor in the observed variations in genome lengths. The 2\u2019-hydroxyl group in RNA makes it more susceptible to hydrolysis events and cleavage of the backbone compared to DNA. It has been shown that for bacteria and viruses, the mutation rate and the genome length are inversely correlated (Drake, 1991; Sanju\u00e1n et al., 2010), and it is therefore hypothesized that the lack of proofreading mechanisms in RNA replication and the resulting higher mutation rates compared to DNA replication (Sanju\u00e1n et al., 2010) imposes length limits on RNA viral genomes. In support of the suspected link between mutation rates and genome length, it has been shown that long RNA viruses (above 20 kb) contain 3\u2019-5\u2019 exonuclease, which is a homolog of the DNA-proofreading enzymes (Lauber et al., 2013).\n\nSimilarly, the hydrolysis of cytosine into uracil occurs two orders of magnitude faster in ssDNA genomes than in dsDNA genomes (Frederico et al., 1990). This may explain the high mutation rates of ssDNA viruses, which is within the range of RNA viral mutation rates, despite using error-correcting host polymerases to replicate. In contrast to genome length in which ssDNA and RNA viruses have similar distributions, it was interesting to see that ssDNA viruses are actually more similar to dsDNA viruses in terms of their gene lengths and noncoding percentages.\n\nWhile the Baltimore classification serves as a meaningful coarse-grained classification system, it is historically animal virus centric and will benefit from being expanded to include subcategories discerning of bacterial and archaeal viruses. As shown\u00a0by gene length distributions (Figure 4), the additional layer of categorization provided by the Host Domain classification offers new insight. For example, dsDNA and ssDNA viruses of eukaryotes have much longer gene lengths compared to their prokaryotic counterparts- an observation that may be hinting at the coevolution of host and viral genomes and proteomes since the eukaryotic genes and proteins are also shown to be significantly longer than prokaryotic ones (Brocchieri and Karlin, 2005; Zhang, 2000; Tiessen et al., 2012). It is well known that certain eukaryotic viral genomes, similar to their hosts\u2019 genomes, contain genes with introns (Himmelspach et al., 1995; Barksdale and Baker, 1995; Ge and Manley, 1990), which may explain the longer median gene length for eukaryotic viruses. In fact mRNA splicing was discovered for the first time in a study of adenovirus mRNA expression (Flint et al., 2000). Virus proteomes are also shown to be tuned to their hosts\u2019 proteomes by having similar codon usage and amino acid preferences (Bahir et al., 2009). However, future studies are needed to further ascertain the mechanisms responsible for the differences in eukaryotic and prokaryotic viral gene lengths.\n\nThe ICTV classification, which is used perhaps more than any other classification system to describe bacterial and archaeal viruses offers some supporting data (e.g. viral morphology or in some cases host information), perhaps as the final layer of classification. However, it is limited by the fact that it leaves many viruses unclassified and, more importantly, that it lacks truly systematic classification criteria. As our exploration of viruses shifts its basis from culturing of viruses to sequencing of viruses from their natural habitats, morphological data is likely to become more and more scarce. As a result, ICTV will need to adapt its classification system to operate exclusively on genomic data, a viewpoint that is broadly shared by many experts in the field (Simmonds et al., 2017).\n\nIn this work, we have described our attempt at providing a comprehensive and quantitative view of fully sequenced viral genomes. Similar to earlier work on biological numeracy, as exemplified by the BioNumbers database (Milo et al., 2010), we have identified a number of interesting trends associated with viral genomes that will be helpful in gaining a broad overview of vastly different viral groups and their interactions with their hosts.\n\n## Materials and methods\n\n### Data acquisition, data curation, and statistical analysis\n\nAll genomic data was retrieved from the NCBI Genome FTP server (retrieved in\u00a0August 2015) (Brister et al., 2015). Matching viruses to their hosts was done by parsing ASN files from the NCBI Genome FTP server while searching for the term \u201cnat-host\u201d. All other taxonomic data, including host and viral lineages, was retrieved from NCBI\u2019s Taxonomy database using the NCBI Taxa class of the ETE Toolkit (Huerta-Cepas et al., 2010). Once we had the \u201cnat-host\u201d name of organisms in English, we retrieved their taxids using ETE Toolkit. These were in turn used to identify the host\u2019s taxonomic lineage. Viruses with complete genomes were identified by searching the assembly reports of the NCBI Genome FTP server for assemblies labeled \u201cComplete Genome\u201d, then using the associated FTP address to download the _assembly_stats.txt files and _protein.faa files. Only viruses that could be matched to a host were included for further analysis. Additionally, various quality checks were manually performed to ensure that viruses with improper annotations were excluded from further analysis. For example, we found viruses and hosts with incomplete or incorrect taxonomic information, and excluded these viruses from further analysis. The list of excluded viruses can be found in our code (see next sub-section). Outliers are not excluded from our analysis. We attempt to dampen their effect by focusing on median values rather than the mean (Table 1). Given the presence of a few skewed distributions, we primarily used the Mann-Whitney U test for statistical analysis so we could avoid the assumption of normality.\n\n### Data availability\n\nWe have compiled all input data, output files, and scripts (Jupyter notebooks) used to write this manuscript in a GitHub repository (https://github.com/gitamahm/VirologyByTheNumbers) (Mahmoudabadi, 2018). viromePieChartsVF.ipynb and virusHostHistogramsVF.ipynb were used to create Figure 2. The scripts for Figure 3 through Figure 5 can be found in genomeLengthsVF.ipynb, geneLengthsVF.ipynb, and percentNoncodingVF.ipynb, respectively. The code for Figure 6 and Figure 7 is provided in geneOrderAndGeneAbundanceVF.ipynb. viralAttachmentSites.ipynb is used to create Figure 8 and viralBacterialBlast.ipynb is used to create (Figures 9\u201311 and their supplementary figures).\n\nAll supplementary text files can also be found in this repository. Supplementary textFile-1.txt displays the gene order sequences for all viruses whose genomes contained at least 15% labeled genes. Letters I, C, E, and Q correspond to capsid-related, portal-related, tail-related, and genome packaging-related genes, respectively. All other genes are denoted by the letter A. Supplementary textFile-2.txt contains the list of top BLASTP matches for bacteriophage proteins that had bacterial protein homologs (the top match is considered\u00a0as the match with the lowest E-value). Supplementary textFile-3.txt provides the annotations of bacterial homologs of hypothetical bacteriophage proteins. Supplementary textFile-4.txt contains the annotations of bacteriophage homologs of hypothetical bacterial proteins.\n\n### Genome length and gene densities\n\nGenome lengths were extracted from\u00a0.ptt files and _assembly_stats.txt files for viruses. The\u00a0.ptt files were parsed to find \u201ccomplete genome - 1.\u201d which is followed by the length of the genome. For segmented genomes, the total length of the segments is reported as the genome length. The number of protein-coding genes, which was used in calculating gene densities, was found by parsing\u00a0.faa files . For gene length histograms, we first obtained the gene lengths for each virus, and then created a histogram based on the median gene length associated with each virus. To systematically\u00a0determine the number of bins needed for each histogram, we employed the Freedman-Diaconis' rule (Freedman and Diaconis, 1981).\n\n### Noncoding DNA/RNA percentages\n\nTo extract the percent of the genome that is noncoding, we could not merely subtract the lengths of the genes from the length of the genome, as this would not take overlapping genes into account. Instead, we used the\u00a0.ptt files to identify where each gene began and ended in the genome, then added all indices between protein-coding genes to a set. We then could subtract the size of this set from the genome length to arrive at the number of noncoding bases, which is then turned into a percentage.\n\n### Decomposition of viral genes into functional categories\n\nTo obtain the abundance of various gene functional categories, we collected the COG product annotations (Tatusov et al., 2000) accompanying each gene from\u00a0.ptt file(s) provided for each virus. Based on the most frequent COG product names, we constructed a dictionary of search terms to query viral genes and measure the abundance of various functional categories (by measuring abundance, we are referring to the number of genes that belong to a given functional category). To determine the most common search terms, we derived the unique set of COG product annotations for different viromes. We used the annotations shared between viromes to exclude problematic search terms with multiple meanings. As a result we avoided search terms with multiple functional associations such as \u201cgp41\u201d, which in the context of HIV signifies a transmembrane glycoprotein, and in the context of Mycobacterium phage Bxb1 denotes a 3\u2019-5\u2019 exonuclease involved in DNA replication.\n\nWhile the dictionary constructed contains many key words that capture essential gene functional categories common to many viruses, it does not account for COG annotations that are non-descriptive (e.g. \u201cphage protein\u201d or \u201cZ protein\u201d). Additionally, there is typically a large number of genes that code for \u201chypothetical proteins\u201d. Together, these two fractions make up the unlabeled component, which we do not include for further analysis. Despite the limitations introduced by these unlabeled genes, there are still a large number of genes (~105) that are included in our analysis. In constructing the relative abundances of different gene functional categories (Figure 6), we divide the abundance of a gene functional category by the total number of labeled genes (denoted at the top of Figure 6.A for each viral group).\n\n### Gene order\n\nIn visualizing gene order we employed a similar search strategy to the one explained in the previous section. To detect potentially conserved patterns in gene order across vastly different viral genomes, we searched only for structural genes as they are essential to any virus. We used\u00a0.ptt files to determine gene order since they contain the beginning and end indices of genes. The code developed uses\u00a0.ptt files as input, and outputs a string of characters per viral genome, which we have referred to as the gene order sequence. Each character represents a viral gene in the order that it appears on the genome (without distinguishing between the strand of DNA on which the gene is located). All genes belonging to the same functional category, for example all tail-related genes, are represented by the same character. All unlabeled genes (i.e. non-structural, hypothetical, or poorly annotated genes) are also represented by the same character. Each gene order sequence, analogous to a nucleotide sequence, can be aligned against other gene order sequences by existing alignment software.\n\nThough it would be ideal to calculate a pairwise distance matrix between gene order sequences and to quantitatively define a gene order pattern based on gene order sequence similarity (akin to defining an Operational Taxonomic Unit), this effort would require the development of appropriate alignment algorithms and inference methods fit to process gene order sequences. In the meantime, we used existing alignment software as a guide and grouped gene order sequences based on generally shared features.\n\nWe used Geneious software (Kearse et al., 2012) to align gene order sequences using global alignment with free end gaps and identity cost matrix (with default gap open and extension penalties). Using Geneious global alignment as a guide, we further manually improved the alignment by aligning a widely shared sub-pattern, for example the portal/neck genes in pattern A or the capsid and tail characters in pattern C, without introducing any gaps. This step was necessary because any alignment algorithm will aim to maximize the alignment between unlabeled genes, unable to distinguish between these characters and the more meaningful characters corresponding to labeled structural genes. Moreover, because of the high fraction of genes that have \u201chypothetical protein\u201d COG annotation, we had to impose filters to extract gene order sequences that are not entirely composed of unlabeled genes. To generate the alignments shown in Figure 7, we imposed that at least 15% of characters in a gene order sequence have to correspond to labeled genes, and that the gene order sequence has to be at least 40 characters long. For the gene order sequences shown in textFile-1.txt (see GitHub repository) the sequence order length limit was not imposed.\n\n### Bacteriophage attachment sites\n\nTo explore bacteriophage attachment sites, we used the PHASTER program to obtain putative attachment sites (Arndt et al., 2016). Using phage genome accession numbers and the PHASTER URL API, we obtained information regarding attachment site sequence and location. We analyzed and visualized this data using our own set of scripts, which can be found in the attachmentSites.ipynb notebook. When comparing attachment site sequences, we selected phage pairs with 100% similarity across their alignment. We also imposed that the alignment length should be at least 8 bp (which is more than half of the median attachment site length). Figure 8\u2014source data 1 depicts phages that met these criteria.\n\n### BLASTing dsDNA bacteriophage proteins against bacterial proteins\n\nMultithreaded BLASTP on this database was a computationally intensive process, requiring over 8900 core hours. Using custom scripts in R, taxID results from each protein queried were linked to complete lineages using NCBI taxdump and NCBItax2lin (available via https://github.com/zyxue/ncbitax2lin). A list of hypothetical bacteriophage proteins and their closest bacterial homologs are provided in textFile-3.txt (see our GitHub repository). Similarly the hypothetical bacterial proteins along with the annotations of their closest bacteriophage homologs are provided in textFile-4.txt. The closest homologs are determined based on the match with the lowest E-value. A match was taken into account only if it had an E-value < 10-10.\n\n### Identifying putative prophage genomes\n\nWe suspected that prophage proteins would have a high percent identity to their bacterial homologs, and therefore, we first filtered proteins with less than 50% identity to their bacterial homologs. We then selected only proteins with bacterial homologs if the bacterium containing the homolog was the same species as the bacteriophage host. Finally, we required that at least half of the proteins per bacteriophage genome meet the conditions described above for the bacteriophage to be identified as a potential prophage. The reason we did not impose stricter filters was so that we could also identify any lytic relatives of prophages, since their proteins would also be perceived homologous to bacterial proteins, but only because of their homology to prophage proteins.\n",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "0edd1b95-e22b-4ffe-be6f-6e8e28ab9d77",
+      "submission_id": "cd287692-9567-445f-b809-80f821fc388f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arup K Chakraborty, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31955.027](https://doi.org/10.7554/eLife.31955.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Viral Genomes by the Numbers: A Comprehensive, Quantitative Exploration of Thousands of Viruses\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Arup Chakraborty as the Reviewing Editor and Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Richard A Neher (Reviewer #1); Markus Covert (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour paper provides a valuable summary of genomic features of viruses in the spirit of previous papers and collections by the senior author on \"numbers in biology\". Such an assessment is timely and would seem to be likely to yield insights of potentially broad interest. You characterize genome length, gene length, gene density, portions of the genome not coding for proteins, and gene order. Among other interesting details, the paper makes a strong argument at the beginning about the limitations of metagenomic analysis and about the utility of studying whole genomes. We appreciated the thorough quantification of several physical metrics, and one figure in particular which showed the organization of viral genomes in relation to each other \u2013 which is likely to have great potential for interesting discoveries. You also investigate the degree to which different classification schemes explain statistical trends in quantitative characters.\n\nBased on our consultation and the reviews summarized below, we propose that you consider one of two possible paths forward.\n\n1) Address the specific points below and the comments provided for the second path forward, if the paper is to be considered as a resource.\n\n- Provide all relevant files to make the scripts usable.\n\n- Update the analysis/data bank with genomes that have become available since. The archea set is tiny, and the phage set small. Many additional genomes have likely become available since. Update could be selectively with genomes from underrepresented categories (e.g. from 10.7554/eLife.08490).\n\n- Provide a web interface, or something similar, to access the data/analysis.\n\n2) Alternatively, if you cannot address the points above easily, we would be happy to consider publication of your valuable contribution as a \"feature article\", provided you are able to address most of the points below.\n\n- While the Baltimore classification system stratifies genomic features well, it is quite animal virus centric. Are there better systems for phages/archael viruses?\n\n- Given the paper's mention of viral dark matter, the fraction of putative viral genes in the database that are not annotated seems important. An attempt to classify them (e.g. BLASTing them against the host's genome, see also the next comment) would also be recommended.\n\n- While this may be prohibitive, one could explore the correlation between viral genome size with virus size if the physical size for the viruses is present in the database.\n\n- Comparative analysis of the location and sequence of any known attachment sites.\n\nExploration of the host context could be very helpful to the paper. For example, the authors could identify, categorize and locate host genes in the viral genome. A similar analysis was recently done in bacteria (https://www.nature.com/articles/s41467-017-00808-w) and led to very surprising results. An additional suggestion might be to quantify the sequence similarity of viral structural elements within and between host categories (i.e. # of nucleotides and aa different after alignment, etc.).\n\n- The language of the paper should be modified to make it clear that the statistical quantification reflects properties of the database, not what is present in natural environments. While the database contains a significant ~2500 viruses, this is in fact a small number in comparison to species present in natural environments. A good example of how this can skew perceptions of abundance is found in Young et al. (http://www.pnas.org/content/113/37/10400.full), where they showed 91% of sequencing reads arose from just 7 viral contigs. We recommend that you include some mention of this in the Discussion.\n",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "039f7928-4f26-4bd1-bebe-c84d39175d0f",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C1",
+      "claim": "There are an estimated 10^31 virus-like particles inhabiting our planet, outnumbering all cellular life forms.",
+      "claim_type": "EXPLICIT",
+      "source": "There are an estimated 1031 virus-like particles inhabiting our planet, outnumbering all cellular life forms (Suttle, 2005; Wigington et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Suttle, 2005; Wigington et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "74e68d44-ca27-4226-b6e4-8b4897642795",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C2",
+      "claim": "Viral genomes can be found as single or double-stranded versions of DNA and RNA, packaged in segments or as one piece, and present in both linear and circular forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral genomes can be found as single or double-stranded versions of DNA and RNA, packaged in segments or as one piece, and present in both linear and circular forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about viral genome diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "5ebb1df7-7a82-4e25-816a-7a4449f6f5dd",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C3",
+      "claim": "Viruses collectively survey a large genomic sequence space and comprise a great portion of the total genomic diversity hosted by our planet.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, based on their rapid infectious cycles, large burst sizes, and often highly error-prone replication, viruses collectively survey a large genomic sequence space, and comprise a great portion of the total genomic diversity hosted by our planet (Kristensen et al., 2010; Hendrix, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Kristensen et al., 2010; Hendrix, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "980c4df2-1e9b-4d10-903c-96061005b161",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C4",
+      "claim": "Through a large study of metagenomic sequences, the known viral sequence space was increased by an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, through a large study of metagenomic sequences, the known viral sequence space was increased by an order of magnitude (Paez-Espino et al., 2016), and much more of the viral \"dark matter\" likely remains unexplored (Youle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Paez-Espino et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "aa1438b6-686b-470e-92f7-62cfbf745c0f",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C5",
+      "claim": "Virus genomes are highly divergent and possess no universally shared sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus genomes on the other hand are highly divergent and possess no such universally shared sequences (Kristensen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Kristensen et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "188e15a0-0819-40d5-b063-cc5ce3a0f640",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C6",
+      "claim": "The ICTV classifies viruses into seven orders: Herpesvirales, Caudovirales, Ligamenvirales, Mononegavirales, Nidovirales, Picornavirales, and Tymovirales.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICTV classifies viruses into seven orders: Herpesvirales, large eukaryotic double-stranded DNA viruses; Caudovirales, tailed double-stranded DNA viruses typically infecting bacteria; Ligamenvirales, linear double-stranded viruses infecting archaea; Mononegavirales, nonsegmented negative (or antisense) strand single-stranded RNA viruses of plants and animals; Nidovirales, positive (or sense) strand single-stranded RNA viruses of vertebrates; Picornavirales, small positive strand single-stranded RNA viruses infecting plants, insects, and animals; and finally, the Tymovirales, monopartite positive single-stranded RNA viruses of plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ICTV classification system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "9330fa5f-4336-4775-b6b5-bac0e0f54fe3",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C7",
+      "claim": "The Baltimore classification divides all viruses into seven groups based on how the viral mRNA is produced.",
+      "claim_type": "EXPLICIT",
+      "source": "The Baltimore classification groups viruses into seven categories (Figure 1): double-stranded DNA viruses (Group I); single-stranded DNA viruses (Group II); double-stranded RNA viruses (Group III); positive single-stranded RNA viruses (Group IV); negative single-stranded RNA viruses (Group V); positive single-stranded RNA viruses with DNA intermediates (Group VI), commonly known as retroviruses; and, the double-stranded DNA retroviruses (Group VII).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "f0148876-eae1-4e46-bff2-3a0b7ea217f3",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C8",
+      "claim": "The inception of the ICTV and Baltimore classification systems predates the sequencing of the first genome in 1976.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the prevalence of these viral classification systems in the categorization of viruses today, it is worth remembering that their inception predates the sequencing of the first genome in 1976.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about the timeline of viral classification systems relative to genome sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "84cc9813-0106-4eb6-9328-5c3da6943972",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C9",
+      "claim": "At the time of the analysis, there were 4,378 completed genomes available from the NCBI viral genomes resource.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many viruses are uncharacterized, at the time of the analysis of the data presented here, there were 4,378 completed genomes available from the NCBI viral genomes resource (Brister et al., 2015) (data acquired in August, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data acquired from the NCBI viral genomes resource in August 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "77bd88b9-327c-44e0-b0f2-582c029c5aed",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C10",
+      "claim": "A total of 2,399 viruses could be associated with a host using NCBI's documentation after data curation.",
+      "claim_type": "EXPLICIT",
+      "source": "After implementing several manual and programmed steps towards curating the data, a total of 2,399 viruses (excluding satellite viruses) could be associated with a host using NCBI's documentation (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data processing and curation performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "fc42c432-8eec-4679-af5b-5ad2de03e132",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C11",
+      "claim": "The viruses in the NCBI database are largely DNA viruses, and more specifically, primarily double-stranded DNA (dsDNA) viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining these viruses through different classifications (Figure 2), it is clear that they are largely DNA viruses (Figure 2B4), and more specifically, they are primarily double-stranded DNA (dsDNA) viruses (Figure 2C4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "fcbc8e53-3d7f-4670-8e53-89046314124c",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C12",
+      "claim": "RNA viruses in the NCBI database are mostly single-stranded.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to the RNA viruses in this database, which are mostly single-stranded (Figure 2B4 and Figure 2C4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "906bd286-c52f-406f-9f87-533a67a13702",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C13",
+      "claim": "Eukaryotes host nearly an equal number of DNA and RNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed that eukaryotes host nearly an equal number of DNA and RNA viruses (Figure 2B1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 2B1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "a490b936-cc77-4263-a2fd-9f3b5597ab38",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C14",
+      "claim": "Prokaryotes are predominantly host to viruses with double-stranded genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to prokaryotes, which are predominantly host to viruses with double-stranded genomes, eukaryotes are host to a higher number of viruses with single-stranded genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "a3ca951b-4519-40b7-8a21-b9e014f430bc",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C15",
+      "claim": "The physical separation of transcriptional processes from the cytoplasm by the eukaryotic nucleus is thought to impose an additional barrier for DNA viruses in gaining access to the host's transcriptional environment.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation proposed is the physical separation of transcriptional processes from the cytoplasm by way of the eukaryotic nucleus (Koonin et al., 2015). This physical separation is thought to impose an additional barrier for DNA viruses in gaining access to the host's transcriptional environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Koonin et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "06b7ee4f-1e29-426d-9dc4-06f15bcf299c",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C16",
+      "claim": "More than half of viruses with complete genomes have not been assigned to any viral orders under the ICTV classification.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of viruses with complete genomes have not been assigned to any viral orders under the ICTV classification (Figure 2D4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 2D4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "b3c8e57c-4c01-4db0-8f96-c5f2eddfd06a",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C17",
+      "claim": "About one third of all known viruses are assigned to the Caudovirales order.",
+      "claim_type": "EXPLICIT",
+      "source": "About one third of all known viruses are assigned to the Caudovirales order, while the other orders are in the minority.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "336a151c-c3cf-4497-9fc5-f1e8bc4e66cf",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C18",
+      "claim": "The vast majority of bacterial viruses are categorized as part of the Caudovirales order.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of the bacterial viruses are categorized as part of the Cauodvirales order (Figure 2D2), but the majority of archaeal and eukaryotic viruses remain unassigned to any order.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 2D2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "f0a2e55e-2096-4975-ba68-14a9714c97ef",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C19",
+      "claim": "Archaeal viruses are heavily under-sampled in the NCBI database.",
+      "claim_type": "EXPLICIT",
+      "source": "It was immediately clear, for example, that archaeal viruses were heavily under-sampled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "91562386-0aa1-4bcb-b1a0-cc03d4bc63f5",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C20",
+      "claim": "Bacterial viruses infect hosts from a diverse array of bacterial phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, bacterial viruses infect hosts from a diverse array of bacterial phyla (Figure 2E2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 2E2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "d2a8db76-3679-46da-9ad6-7e359e7ba2d2",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C21",
+      "claim": "The median number of viruses known to infect a eukaryotic or a prokaryotic host species is approximately 1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the median number of viruses known to infect a eukaryotic or a prokaryotic host species is approximately 1 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "7ca4146f-178e-457d-a7df-df07eaad2299",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C22",
+      "claim": "Genome lengths for all fully sequenced viral genomes varied widely by three orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome lengths for all fully sequenced viral genomes varied widely by three orders of magnitude (Figure 3A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 3A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "0f4a2caa-4dbe-400d-851f-748705ef5cfe",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C23",
+      "claim": "The median RNA virus genome length is four times shorter than the median DNA virus genome length.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this difference can be better explained by the Nucleotide Type classification, as the median RNA virus genome length is four times shorter than the median DNA virus genome length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "f3d5c95a-7e01-435e-9acf-cf6e73a8bfb7",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C24",
+      "claim": "RNA viruses exhibit a large range of gene lengths compared to DNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In viewing the relationship between median gene length and number of genes per viral genome (Figure 3C), two different coding strategies become apparent. Namely, compared to DNA viruses, RNA viruses exhibit a large range of gene lengths.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "ee43d5b0-7a6f-4bfc-b3c4-16a33370f7d3",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C25",
+      "claim": "Many RNA genomes contain genes that encode polyproteins, ribosomal slippage (frame-shifting) or codon read-through events, among other non-canonical translational mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is at least in part reflective of the challenges faced by RNA viruses when encountering the requirements of their host's translational machinery (Firth and Brierley, 2012). For example, many of the RNA genomes we examined closely contained genes that encode polyproteins, ribosomal slippage (frame-shifting) or codon read-through events, among other non-canonical translational mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis and supported by a citation (Firth and Brierley, 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "5c4c840c-134c-404f-9711-46a7ad1aaf22",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C26",
+      "claim": "A strong linear correlation exists between dsDNA viral genome lengths and the number of genes encoded by these genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong linear correlation between dsDNA viral genome lengths and the number of genes encoded by these genomes (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "b9b2a8a5-38e9-4844-bb00-d8fa2b985a52",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C27",
+      "claim": "The mean (and median) gene densities for bacterial, archaeal and eukaryotic dsDNA viral genomes are approximately 1.4, 1.6 and 0.9 genes per kilo basepairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean (and median) gene densities for bacterial, archaeal and eukaryotic dsDNA viral genomes are approximately 1.4, 1.6 and 0.9 genes per kilo basepairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "7a42e334-dc41-4490-8e4d-358c17415636",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C28",
+      "claim": "Bacterial dsDNA viruses have significantly higher gene densities than their eukaryotic counterparts in the NCBI database.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated by the slopes of the regression lines, as well as through a nonparametric statistical test performed on eukaryotic and bacterial dsDNA viral gene densities (one-sided Mann-Whitney U test, P<10-5), bacterial dsDNA viruses have significantly higher gene densities than their eukaryotic counterparts in this database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of data (Mann-Whitney U test, P<10-5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "92800679-db00-4257-aa76-a514d4e7dc7e",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C29",
+      "claim": "RNA viruses have significantly longer gene lengths compared to DNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "A closer examination of median gene lengths more clearly reveals the significantly longer gene lengths of RNA viruses compared to DNA viruses (one-sided Mann-Whitney U test, P<10-5) (Figure 4, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on statistical analysis of data shown in Figure 4 and Table 1 (Mann-Whitney U test, P<10-5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "a414037b-2d24-45ce-a5e8-fe2ccb102d64",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C30",
+      "claim": "Eukaryotic viruses, whether dsDNA or ssDNA, have significantly longer gene lengths compared to bacterial viruses from the same Baltimore classification category.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, eukaryotic viruses, whether dsDNA or ssDNA, have significantly longer gene lengths compared to bacterial viruses from the same Baltimore classification category (Figure 4, Figure 4\u2014source data 1) (one-sided Mann-Whitney U test, P<10-5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on statistical analysis of data shown in Figure 4 (Mann-Whitney U test, P<10-5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "f2ae9e65-5ac0-4a22-8a7d-c90b5bcd2df7",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C31",
+      "claim": "Prokaryotic genes and proteins are significantly shorter than eukaryotic ones.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend follows what we see across cellular genomes, since prokaryotic genes and proteins are shown to be significantly shorter than eukaryotic ones (Milo and Phillips, 2015; Brocchieri and Karlin, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Milo and Phillips, 2015; Brocchieri and Karlin, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "278e8970-b7f5-46d0-9f07-aa0374edbb91",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C32",
+      "claim": "DNA viral genomes contain about 10% noncoding regions, which is even lower than the noncoding percentage of bacterial genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, DNA viral genomes contain about 10% noncoding regions which is even lower than the noncoding percentage of bacterial genomes (Mattick and Makunin, 2006; Morris, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis and supported by citations (Mattick and Makunin, 2006; Morris, 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "f1783bc9-ea2f-4267-a316-ab46f6f9c10c",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C33",
+      "claim": "RNA viral genomes have a median noncoding percentage of 6%, which is significantly lower than DNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "With a median noncoding percentage of just 6%, RNA viral genomes have significantly lower noncoding percentage compared to DNA viruses in this database (one-sided Mann-Whitney U Test, P<10-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of data (Mann-Whitney U Test, P<10-5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "d3e89c23-119f-4486-bc3f-f0575712936d",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C34",
+      "claim": "Both retroviral groups (ssRNA-RT and dsDNA-RT) have relatively high noncoding DNA percentages.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable exception to the RNA viral group is the ssRNA-RT with a median noncoding percentage of 16%. Interestingly, both retroviral groups had relatively high noncoding DNA percentages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "e2ae9612-1f54-4cd8-a948-ad655667ac9f",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C35",
+      "claim": "The Xenopus laevis endogenous retrovirus has a noncoding percentage of 93%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Xenopus laevis endogenous retrovirus (NCBI taxon ID 204873) belonging to the ssRNA-RT group has a noncoding percentage of 93%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis of a specific virus genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "0297cd13-c762-47f1-af95-bf4ac5e0b97e",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C36",
+      "claim": "RNA, dsDNA and ssDNA viruses share similar general features in terms of functional gene category abundances, with roughly half of all genes being structural.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA, dsDNA and ssDNA viruses, despite differences in the detailed categorization of their genes (Figure 6B) share similar general features (Figure 6A). For example, across all three viral groups, roughly half of all genes are structural.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "89423114-80dd-44c1-b5ee-ab7506aa3773",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C37",
+      "claim": "dsDNA viruses of eukaryotes and bacteria have very similar distribution of gene functional category and subcategory abundances.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, dsDNA viruses of eukaryotes and bacteria in this database, in contrast to having different genomic properties and morphologies surprisingly have very similar distribution of gene functional category and subcategory abundances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "6155b562-39ea-453b-b878-deb1ed251680",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C38",
+      "claim": "Myoviridae, Siphoviridae, and Podoviridae viral groups have very similar functional gene category abundances even at the level of subcategories.",
+      "claim_type": "EXPLICIT",
+      "source": "By further zooming in on bacterial dsDNA viruses, it is again interesting to see that Myoviridae, Siphoviridae, and Podoviridae viral groups, with their different morphologies and wide range of hosts, having very similar functional gene category abundances even at the level of subcategories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "8a29d814-3fa9-468b-bb31-2b50f963ad7b",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C39",
+      "claim": "One particular gene order pattern (pattern A) and its variations exist across various types of dsDNA bacterial viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by focusing on bacterial dsDNA viruses present in the NCBI viral database, we were able to identify the most common gene order patterns across this virome (see Materials and methods). One particular gene order pattern and its variations exist across various types of dsDNA bacterial viruses. We will refer to it as gene order pattern A (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "2bad48c9-b316-44e5-bc8a-2d6273cf8196",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C40",
+      "claim": "In gene order pattern A, gene packaging, portal and capsid-related genes are mostly tightly clustered and are followed by tail-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In pattern A, gene packaging, portal and capsid-related genes are mostly tightly clustered and are followed by tail-associated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "f5806f15-acfc-4608-b118-2cdf312f0761",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C41",
+      "claim": "Gene order pattern A occurs across viruses from five different host phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "Pattern A occurs across viruses from five different host phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "206d2e0a-3993-456d-b5f4-9e71f674719b",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C42",
+      "claim": "Among several hundred dsDNA bacteriophages analyzed, roughly a quarter have putative attachment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the several hundred dsDNA bacteriophages that were included in this analysis, we found roughly a quarter to have putative attachment sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "1062ac58-96b8-4e79-aa9c-c5679b20d0e5",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C43",
+      "claim": "The median attachment site length is 13 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the median attachment site length is 13 base pairs (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "51ab4bbb-b4ed-4b1f-88ac-5fa43cf42498",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C44",
+      "claim": "The left attachment start position in the genome is located at ~2 kb (median).",
+      "claim_type": "EXPLICIT",
+      "source": "The left attachment start position in the genome is located at ~2 kb (this is the median of left attachment site start positions across all genomes analyzed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "a21ae5a6-1e43-4ed6-99b1-9fb89a6426f2",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C45",
+      "claim": "The right attachment site median position is located at ~40 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The right attachment site median position is located at ~40 kb. (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "45c3b204-20d0-4adb-9aa7-ae48b8b4d090",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C46",
+      "claim": "Each of the ~900 dsDNA bacteriophage genomes examined encoded at least one protein that was homologous to a bacterial protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, each of the ~900 dsDNA bacteriophage genomes we examined encoded at least one protein that was homologous to a bacterial protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on BLASTP analysis of bacteriophage proteins against bacterial proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "c81963ca-2d2e-4453-94dd-2a29a8e292e4",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C47",
+      "claim": "Based on the median fraction of homologous proteins, 7 out of every 10 bacteriophage proteins exhibit homology to a bacterial protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the median fraction of homologous proteins, we can conclude that 7 out of every 10 bacteriophage proteins exhibit homology to a bacterial protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "63882af0-a48e-423d-b8f6-7d162d5699f4",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C48",
+      "claim": "There is a 26% chance that the closest homolog to a bacteriophage protein appears in a member of its host species.",
+      "claim_type": "EXPLICIT",
+      "source": "We can see from Figure 10 that there is a 26% chance that the closest homolog to a bacteriophage protein appears in a member of its host species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "6bb5fdd7-eccf-49fb-ba3f-d507f1040346",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C49",
+      "claim": "There is an 84% chance that the closest homolog to a bacteriophage protein will appear in a bacterium that is at least in the same phylum as the host.",
+      "claim_type": "EXPLICIT",
+      "source": "This chance is raised to 84% when more broadly assuming that the homolog will appear in a bacterium that is at least in the same phylum as the host (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "8857d731-06ae-48c5-84d9-79e44a3b6d23",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C50",
+      "claim": "There is a significant decrease in the median bit score as the taxonomic distance between the host and the bacterium containing the homolog increases.",
+      "claim_type": "EXPLICIT",
+      "source": "We can see that there is a significant decrease in the median bit score as we move from the \"same species\" layer to the \"same genus\" layer and finally to the \"same phylum\" layer (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "b009a298-f604-464d-a098-43b07f036fd7",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C51",
+      "claim": "The closer (taxonomically) the host is to the bacterium containing the homolog, the better the match between the bacteriophage protein and its bacterial homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the closer (taxonomically) the host is to the bacterium containing the homolog, the better the match between the bacteriophage protein and its bacterial homolog.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "8e2c3a5a-9de6-47dd-ba5d-aca447dd11f9",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C52",
+      "claim": "There is a 16% chance that the closest bacterial homolog to a bacteriophage protein appears in a bacterium from a different phylum than the host.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of homologs belong to members of the same phylum as the host, there is still a 16% chance that the closest bacterial homolog to a bacteriophage protein actually appears in a bacterium from a different phylum than the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "4c59a99b-adec-45a2-93e2-c64a71508bed",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C53",
+      "claim": "The most number of cross-phyla homologs are shared between bacteriophages infecting Proteobacteria and bacteria from the Firmicutes phylum.",
+      "claim_type": "EXPLICIT",
+      "source": "By far, the most number of cross-phyla homologs are shared between bacteriophages infecting Proteobacteria and bacteria from the Firmicutes phylum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "3a1194cd-1059-41be-8a8f-42b869b5f44a",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C54",
+      "claim": "The NCBI viral database has almost doubled in size between 2015 and 2018, but the increase has disproportionately favored the already well-represented viral groups.",
+      "claim_type": "EXPLICIT",
+      "source": "To that point, upon re-examining the NCBI viral database in 2018, we were surprised to find that eventhough the database has almost doubled in size, the increase has disproportionately favored the already well-represented viral groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis comparing the NCBI database in 2015 and 2018.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "19823544-8b7e-4384-9a9d-a0dee2114e03",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C55",
+      "claim": "The Baltimore classification and its more minimal form (Nucleotide Type classification) provide the clearest explanation for observed genomic trends across various metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a comparison of classification systems across various genomic metrics, the Baltimore classification and in some cases its more minimal form (Nucleotide Type classification) seem to provide the clearest explanation for the observed trends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data analysis across multiple genomic metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "c6ca6d30-42d9-442d-b210-d4ec90f3304a",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C56",
+      "claim": "The greater stability of dsDNA compared to RNA and ssDNA is thought to be an important factor in the observed variations in genome lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "The greater stability of dsDNA compared to RNA (Lindahl, 1993) and ssDNA is thought to be an important factor in the observed variations in genome lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Lindahl, 1993) and represents a hypothesis about genome length variation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "d44ea349-927d-4a98-bdd6-8bf9dc4158c4",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C57",
+      "claim": "The 2'-hydroxyl group in RNA makes it more susceptible to hydrolysis events and cleavage of the backbone compared to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2'-hydroxyl group in RNA makes it more susceptible to hydrolysis events and cleavage of the backbone compared to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about RNA structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "b936f6c9-b0c8-4b43-b594-cf1fc4101692",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C58",
+      "claim": "For bacteria and viruses, the mutation rate and the genome length are inversely correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that for bacteria and viruses, the mutation rate and the genome length are inversely correlated (Drake, 1991; Sanju\u00e1n et al., 2010), and it is therefore hypothesized that the lack of proofreading mechanisms in RNA replication and the resulting higher mutation rates compared to DNA replication (Sanju\u00e1n et al., 2010) imposes length limits on RNA viral genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Drake, 1991; Sanju\u00e1n et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "1fde0029-2f16-4750-bbc7-a80fe134c24e",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C59",
+      "claim": "Long RNA viruses (above 20 kb) contain 3'-5' exonuclease, which is a homolog of the DNA-proofreading enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the suspected link between mutation rates and genome length, it has been shown that long RNA viruses (above 20 kb) contain 3'-5' exonuclease, which is a homolog of the DNA-proofreading enzymes (Lauber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Lauber et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "2671342f-6b68-4a8d-9b5f-83a70457553c",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C60",
+      "claim": "The hydrolysis of cytosine into uracil occurs two orders of magnitude faster in ssDNA genomes than in dsDNA genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the hydrolysis of cytosine into uracil occurs two orders of magnitude faster in ssDNA genomes than in dsDNA genomes (Frederico et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Frederico et al., 1990).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "7fd74eeb-22f4-4b19-99bc-c7323e457ec1",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C61",
+      "claim": "The mutation rates of ssDNA viruses are within the range of RNA viral mutation rates, despite using error-correcting host polymerases to replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain the high mutation rates of ssDNA viruses, which is within the range of RNA viral mutation rates, despite using error-correcting host polymerases to replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data and literature about mutation rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "9a35dee2-7a8f-42ac-8f56-93a6d23c2660",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C62",
+      "claim": "Certain eukaryotic viral genomes, similar to their hosts' genomes, contain genes with introns.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that certain eukaryotic viral genomes, similar to their hosts' genomes, contain genes with introns (Himmelspach et al., 1995; Barksdale and Baker, 1995; Ge and Manley, 1990), which may explain the longer median gene length for eukaryotic viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Himmelspach et al., 1995; Barksdale and Baker, 1995; Ge and Manley, 1990).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "71d97df2-b430-42a2-87b7-502dffdf42f5",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C63",
+      "claim": "mRNA splicing was discovered for the first time in a study of adenovirus mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact mRNA splicing was discovered for the first time in a study of adenovirus mRNA expression (Flint et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Flint et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "f63945fd-fd7b-4b8a-88aa-61068b52fe07",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C64",
+      "claim": "Virus proteomes are tuned to their hosts' proteomes by having similar codon usage and amino acid preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus proteomes are also shown to be tuned to their hosts' proteomes by having similar codon usage and amino acid preferences (Bahir et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Bahir et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "5ee12b29-6632-4d8a-b191-739409e59991",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C65",
+      "claim": "The ICTV classification leaves many viruses unclassified and lacks truly systematic classification criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is limited by the fact that it leaves many viruses unclassified and, more importantly, that it lacks truly systematic classification criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of the ICTV classification system presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "b71e0b53-84c7-4cfa-b33d-bbef6c71c308",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C66",
+      "claim": "As viral sequencing shifts from culturing to sequencing from natural habitats, morphological data is likely to become more scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "As our exploration of viruses shifts its basis from culturing of viruses to sequencing of viruses from their natural habitats, morphological data is likely to become more and more scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference about future trends in virology.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "9c39e403-3bbf-4d2e-8af7-389427c8aff4",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C67",
+      "claim": "The ICTV will need to adapt its classification system to operate exclusively on genomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, ICTV will need to adapt its classification system to operate exclusively on genomic data, a viewpoint that is broadly shared by many experts in the field (Simmonds et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Simmonds et al., 2017) and represents a prediction about future classification systems.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "50df1adc-1387-4a4c-be45-a2b7c4ad861a",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C68",
+      "claim": "All genomic data was retrieved from the NCBI Genome FTP server in August 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "All genomic data was retrieved from the NCBI Genome FTP server (retrieved in August 2015) (Brister et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data source and acquisition date.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "4c9dc768-06b8-4f27-849b-ab95278d5613",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C69",
+      "claim": "Matching viruses to their hosts was done by parsing ASN files from the NCBI Genome FTP server while searching for the term 'nat-host'.",
+      "claim_type": "EXPLICIT",
+      "source": "Matching viruses to their hosts was done by parsing ASN files from the NCBI Genome FTP server while searching for the term \"nat-host\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used for data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "e38d6c10-2fac-45ca-aeaf-70418f82ee12",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C70",
+      "claim": "The Freedman-Diaconis rule was employed to systematically determine the number of bins needed for each histogram.",
+      "claim_type": "EXPLICIT",
+      "source": "To systematically determine the number of bins needed for each histogram, we employed the Freedman-Diaconis' rule (Freedman and Diaconis, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical method used for data visualization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "7956182b-bb10-41c6-a34c-4160b7f920b7",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C71",
+      "claim": "173 genomes were identified as probable prophage genomes based on implemented filters.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these filters, 173 genomes were identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis using specific filters described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "73aa726e-ed14-4a6d-8e55-6e6d6b6057cc",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "claim_id": "C72",
+      "claim": "The majority of the first 20 bacteriophage genomes identified by prophage filters were experimentally identified as temperate phages based on literature search.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate these filters, we performed a literature search for the first 20 bacteriophage genomes in the list and found that the majority were, in fact, experimentally identified as temperate phages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on literature validation of computational predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "38308558-f052-4aaa-910f-ec22b3a60974",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors characterized the NCBI viral genome database (August 2015) containing 4,378 complete genomes, of which 2,399 could be associated with hosts. The database is dominated by DNA viruses (particularly dsDNA), with significant underrepresentation of archaeal viruses and biases toward medically/agriculturally relevant hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C21 provide a comprehensive characterization of the dataset composition and biases. The data curation methodology is described (C10, C68-C69), and multiple figures support the compositional analysis (C11-C21). The identification of sampling biases (C19, C21) is appropriately acknowledged and strengthens the interpretation of subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "568847df-2ca4-4025-999d-088c64364b17",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Viral genome lengths vary by three orders of magnitude, with RNA viruses having median genome lengths four times shorter than DNA viruses. RNA viruses exhibit larger gene length ranges and employ non-canonical translational mechanisms. dsDNA viruses show strong linear correlation between genome length and gene number, with bacterial dsDNA viruses having significantly higher gene densities than eukaryotic counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 are well-supported by quantitative data in Figure 3 and Table 1, with appropriate statistical testing (Mann-Whitney U test, P<10^-5 for C28). The mechanistic explanation for RNA virus gene length variation (C25) is supported by both data analysis and literature citation. The linear correlation for dsDNA viruses (C26) is clearly demonstrated with regression analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "154ac086-11b6-4e8c-b0bd-f74b38e72626",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNA viruses have significantly longer median gene lengths than DNA viruses. Within DNA viruses, eukaryotic viruses (both dsDNA and ssDNA) have significantly longer gene lengths than bacterial viruses from the same Baltimore classification category, paralleling the pattern observed in cellular genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by statistical analysis (Mann-Whitney U test, P<10^-5) shown in Figure 4 and Table 1. The comparison to cellular genome patterns (C31) is appropriately cited and provides biological context. The statistical rigor and consistency across multiple classification systems strengthen these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "4a41df28-7f38-4267-8cb8-f87219e005fe",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DNA viral genomes contain approximately 10% noncoding regions, lower than bacterial genomes. RNA viruses have even lower noncoding percentages (median 6%), with the exception of retroviruses (ssRNA-RT and dsDNA-RT) which have relatively high noncoding percentages, potentially due to defunct retroviral genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by quantitative data in Figure 5 and Table 1, with statistical testing (Mann-Whitney U test, P<10^-5 for C33). The specific example of Xenopus laevis endogenous retrovirus (C35) with 93% noncoding DNA provides concrete validation. The mechanistic explanation for retroviral exceptions is reasonable given the presence of pseudogenes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "a961048b-5601-46a5-8c49-f398aafcc9a4",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Despite differences in genomic properties and morphologies, RNA, dsDNA, and ssDNA viruses share similar functional gene category abundances, with approximately half of all genes being structural. Eukaryotic and bacterial dsDNA viruses, as well as different bacteriophage families (Myoviridae, Siphoviridae, Podoviridae), show remarkably similar distributions of functional gene categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by data in Figure 6 showing functional gene category distributions. The convergence of functional organization across diverse viral groups is clearly demonstrated. However, the analysis is limited by the large fraction of unlabeled/hypothetical genes, which could affect the conclusions if these genes have systematic functional biases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "5881ab7a-651b-4f5d-86fc-fe029b413ae6",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A conserved gene order pattern (pattern A) exists across various dsDNA bacterial viruses from five different host phyla, characterized by tightly clustered packaging, portal, and capsid-related genes followed by tail-associated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by the gene order analysis shown in Figure 7A. The methodology for identifying gene order patterns is described, though the manual curation step introduces some subjectivity. The conservation across multiple host phyla (C41) suggests functional or evolutionary significance, though the mechanism is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "5bbb78a9-5416-4199-849d-d17869a45188",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Among several hundred dsDNA bacteriophages analyzed, approximately 25% have putative attachment sites with a median length of 13 base pairs. The left attachment site is typically located at ~2 kb and the right attachment site at ~40 kb in the genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by data in Figure 8A-B. The use of PHASTER for attachment site prediction is appropriate, though the computational predictions would benefit from more extensive experimental validation beyond the 20 genomes checked (C72). The positional data provides useful genomic organization information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All ~900 dsDNA bacteriophage genomes examined encoded at least one protein homologous to a bacterial protein, with a median of 70% of bacteriophage proteins showing bacterial homology. There is a 26% chance the closest homolog appears in the host species, rising to 84% for the same phylum. Homology quality (bit score) decreases significantly with increasing taxonomic distance, with the most cross-phyla homologs shared between Proteobacteria phages and Firmicutes bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 are well-supported by BLASTP analysis with appropriate E-value cutoff (10^-10) and statistical testing. Figure 10-11 clearly demonstrate the taxonomic patterns. The bit score analysis (C50-C51) provides quantitative support for the relationship between taxonomic distance and sequence similarity. The prophage confounding factor is acknowledged and addressed (C71-C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "6cd8b782-0c98-489c-a14c-431cf5fa4ff9",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The NCBI viral database nearly doubled between 2015 and 2018, but growth disproportionately favored already well-represented groups. The Baltimore classification (and its simplified Nucleotide Type form) provides the clearest explanation for observed genomic trends across various metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by the authors' re-examination of the database, though specific quantitative data is not provided. Claim C55 is supported by the comprehensive comparison across multiple genomic metrics throughout the manuscript (Figures 2-6), showing that Baltimore classification consistently explains variance better than ICTV or Host Domain classifications alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "d6de5a41-072f-4506-a93c-875b5a5ab1cd",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The greater stability of dsDNA compared to RNA and ssDNA is proposed as an important factor in genome length variation. RNA's 2'-hydroxyl group increases susceptibility to hydrolysis. The inverse correlation between mutation rate and genome length, combined with lack of proofreading in RNA replication, may impose length limits on RNA viral genomes. Long RNA viruses (>20 kb) contain 3'-5' exonuclease. ssDNA viruses have mutation rates similar to RNA viruses despite using host polymerases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 synthesize literature-supported mechanisms (C57-C60 with appropriate citations) with the observed data patterns. The biochemical basis (C57) is established knowledge. The hypothesis linking mutation rates to genome length (C58-C59) is well-supported by citations. The inference about ssDNA mutation rates (C61) is reasonable given the cited hydrolysis data (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "2a7ff341-92e9-45e6-850b-5811eceda7d7",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Certain eukaryotic viral genomes contain genes with introns, similar to their hosts. mRNA splicing was first discovered in adenovirus. Virus proteomes are tuned to host proteomes through similar codon usage and amino acid preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by appropriate literature citations and provide mechanistic context for the observed gene length differences between eukaryotic and prokaryotic viruses. These are well-established findings from prior work that appropriately contextualize the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "62ce9598-757b-4e40-8879-6bbe17013a77",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ICTV classification leaves many viruses unclassified and lacks systematic classification criteria. As viral sequencing shifts from culturing to metagenomic approaches, morphological data will become scarcer, requiring ICTV to adapt to operate exclusively on genomic data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by the data showing >50% of viruses unclassified (C16) and the comparative analysis throughout the manuscript. The prediction about future trends (C66-C67) is reasonable and supported by citation to expert consensus (Simmonds et al., 2017). This represents informed speculation based on current trends.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "d9df2ede-010e-43a8-acde-4dba55b62a69",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors describe their data acquisition and analysis methodology, including retrieval from NCBI (August 2015), host matching procedures, histogram binning using Freedman-Diaconis rule, and identification of 173 probable prophage genomes with validation showing the majority of tested cases were experimentally confirmed temperate phages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 describe methodological details that are appropriately documented. The prophage filter validation (C72) is limited to 20 genomes but shows good performance. The methods are generally reproducible given the provided GitHub repository, though some manual curation steps may be difficult to replicate exactly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "10d389d1-88f6-4944-a5ac-6f43bbf970c7",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Viruses are extremely abundant (~10^31 particles), exhibit remarkable genomic diversity (DNA/RNA, single/double-stranded, segmented/non-segmented, linear/circular), survey large sequence space, and lack universally shared sequences unlike cellular life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are well-established facts from virology supported by appropriate citations to prior work. These provide essential background context for the study but are not novel findings from this manuscript. The claims accurately represent current knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "30935ff7-c6c3-4616-9404-340bb32c8849",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The ICTV classification system divides viruses into seven orders based on morphological and host characteristics. The Baltimore classification divides viruses into seven groups based on mRNA production pathways. Both classification systems predate the first genome sequencing in 1976.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 accurately describe established viral classification systems. These are factual descriptions of existing taxonomic frameworks that provide necessary context for evaluating their utility in the genomic era. The historical context (C8) is accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    },
+    {
+      "id": "dac96540-1cd7-44b9-ac9f-e3e41269cfad",
+      "content_id": "a3d574e1-7ee1-45f8-bc51-db55ff55200c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The physical separation of transcriptional processes from the cytoplasm by the eukaryotic nucleus is proposed to impose an additional barrier for DNA viruses accessing the host's transcriptional environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is appropriately cited (Koonin et al., 2015) and provides a mechanistic hypothesis for the observed pattern of DNA vs RNA virus distribution in eukaryotes (C13-C14). This represents an established hypothesis from the literature used to interpret the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:18:33.512956Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "84cc9813-0106-4eb6-9328-5c3da6943972",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "77bd88b9-327c-44e0-b0f2-582c029c5aed",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "fc42c432-8eec-4679-af5b-5ad2de03e132",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "fcbc8e53-3d7f-4670-8e53-89046314124c",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "906bd286-c52f-406f-9f87-533a67a13702",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "a490b936-cc77-4263-a2fd-9f3b5597ab38",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "06b7ee4f-1e29-426d-9dc4-06f15bcf299c",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "b3c8e57c-4c01-4db0-8f96-c5f2eddfd06a",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "336a151c-c3cf-4497-9fc5-f1e8bc4e66cf",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "f0a2e55e-2096-4975-ba68-14a9714c97ef",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "91562386-0aa1-4bcb-b1a0-cc03d4bc63f5",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "d2a8db76-3679-46da-9ad6-7e359e7ba2d2",
+      "result_id": "38308558-f052-4aaa-910f-ec22b3a60974"
+    },
+    {
+      "claim_id": "7ca4146f-178e-457d-a7df-df07eaad2299",
+      "result_id": "568847df-2ca4-4025-999d-088c64364b17"
+    },
+    {
+      "claim_id": "0f4a2caa-4dbe-400d-851f-748705ef5cfe",
+      "result_id": "568847df-2ca4-4025-999d-088c64364b17"
+    },
+    {
+      "claim_id": "f3d5c95a-7e01-435e-9acf-cf6e73a8bfb7",
+      "result_id": "568847df-2ca4-4025-999d-088c64364b17"
+    },
+    {
+      "claim_id": "ee43d5b0-7a6f-4bfc-b3c4-16a33370f7d3",
+      "result_id": "568847df-2ca4-4025-999d-088c64364b17"
+    },
+    {
+      "claim_id": "5c4c840c-134c-404f-9711-46a7ad1aaf22",
+      "result_id": "568847df-2ca4-4025-999d-088c64364b17"
+    },
+    {
+      "claim_id": "b9b2a8a5-38e9-4844-bb00-d8fa2b985a52",
+      "result_id": "568847df-2ca4-4025-999d-088c64364b17"
+    },
+    {
+      "claim_id": "7a42e334-dc41-4490-8e4d-358c17415636",
+      "result_id": "568847df-2ca4-4025-999d-088c64364b17"
+    },
+    {
+      "claim_id": "92800679-db00-4257-aa76-a514d4e7dc7e",
+      "result_id": "154ac086-11b6-4e8c-b0bd-f74b38e72626"
+    },
+    {
+      "claim_id": "a414037b-2d24-45ce-a5e8-fe2ccb102d64",
+      "result_id": "154ac086-11b6-4e8c-b0bd-f74b38e72626"
+    },
+    {
+      "claim_id": "f2ae9e65-5ac0-4a22-8a7d-c90b5bcd2df7",
+      "result_id": "154ac086-11b6-4e8c-b0bd-f74b38e72626"
+    },
+    {
+      "claim_id": "278e8970-b7f5-46d0-9f07-aa0374edbb91",
+      "result_id": "4a41df28-7f38-4267-8cb8-f87219e005fe"
+    },
+    {
+      "claim_id": "f1783bc9-ea2f-4267-a316-ab46f6f9c10c",
+      "result_id": "4a41df28-7f38-4267-8cb8-f87219e005fe"
+    },
+    {
+      "claim_id": "d3e89c23-119f-4486-bc3f-f0575712936d",
+      "result_id": "4a41df28-7f38-4267-8cb8-f87219e005fe"
+    },
+    {
+      "claim_id": "e2ae9612-1f54-4cd8-a948-ad655667ac9f",
+      "result_id": "4a41df28-7f38-4267-8cb8-f87219e005fe"
+    },
+    {
+      "claim_id": "0297cd13-c762-47f1-af95-bf4ac5e0b97e",
+      "result_id": "a961048b-5601-46a5-8c49-f398aafcc9a4"
+    },
+    {
+      "claim_id": "89423114-80dd-44c1-b5ee-ab7506aa3773",
+      "result_id": "a961048b-5601-46a5-8c49-f398aafcc9a4"
+    },
+    {
+      "claim_id": "6155b562-39ea-453b-b878-deb1ed251680",
+      "result_id": "a961048b-5601-46a5-8c49-f398aafcc9a4"
+    },
+    {
+      "claim_id": "8a29d814-3fa9-468b-bb31-2b50f963ad7b",
+      "result_id": "5881ab7a-651b-4f5d-86fc-fe029b413ae6"
+    },
+    {
+      "claim_id": "2bad48c9-b316-44e5-bc8a-2d6273cf8196",
+      "result_id": "5881ab7a-651b-4f5d-86fc-fe029b413ae6"
+    },
+    {
+      "claim_id": "f5806f15-acfc-4608-b118-2cdf312f0761",
+      "result_id": "5881ab7a-651b-4f5d-86fc-fe029b413ae6"
+    },
+    {
+      "claim_id": "206d2e0a-3993-456d-b5f4-9e71f674719b",
+      "result_id": "5bbb78a9-5416-4199-849d-d17869a45188"
+    },
+    {
+      "claim_id": "1062ac58-96b8-4e79-aa9c-c5679b20d0e5",
+      "result_id": "5bbb78a9-5416-4199-849d-d17869a45188"
+    },
+    {
+      "claim_id": "51ab4bbb-b4ed-4b1f-88ac-5fa43cf42498",
+      "result_id": "5bbb78a9-5416-4199-849d-d17869a45188"
+    },
+    {
+      "claim_id": "a21ae5a6-1e43-4ed6-99b1-9fb89a6426f2",
+      "result_id": "5bbb78a9-5416-4199-849d-d17869a45188"
+    },
+    {
+      "claim_id": "45c3b204-20d0-4adb-9aa7-ae48b8b4d090",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "c81963ca-2d2e-4453-94dd-2a29a8e292e4",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "63882af0-a48e-423d-b8f6-7d162d5699f4",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "6bb5fdd7-eccf-49fb-ba3f-d507f1040346",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "8857d731-06ae-48c5-84d9-79e44a3b6d23",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "b009a298-f604-464d-a098-43b07f036fd7",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "8e2c3a5a-9de6-47dd-ba5d-aca447dd11f9",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "4c59a99b-adec-45a2-93e2-c64a71508bed",
+      "result_id": "bf1cc0fb-26e4-4d85-a0c3-fcb9b7dee0e6"
+    },
+    {
+      "claim_id": "3a1194cd-1059-41be-8a8f-42b869b5f44a",
+      "result_id": "6cd8b782-0c98-489c-a14c-431cf5fa4ff9"
+    },
+    {
+      "claim_id": "19823544-8b7e-4384-9a9d-a0dee2114e03",
+      "result_id": "6cd8b782-0c98-489c-a14c-431cf5fa4ff9"
+    },
+    {
+      "claim_id": "c6ca6d30-42d9-442d-b210-d4ec90f3304a",
+      "result_id": "d6de5a41-072f-4506-a93c-875b5a5ab1cd"
+    },
+    {
+      "claim_id": "d44ea349-927d-4a98-bdd6-8bf9dc4158c4",
+      "result_id": "d6de5a41-072f-4506-a93c-875b5a5ab1cd"
+    },
+    {
+      "claim_id": "b936f6c9-b0c8-4b43-b594-cf1fc4101692",
+      "result_id": "d6de5a41-072f-4506-a93c-875b5a5ab1cd"
+    },
+    {
+      "claim_id": "1fde0029-2f16-4750-bbc7-a80fe134c24e",
+      "result_id": "d6de5a41-072f-4506-a93c-875b5a5ab1cd"
+    },
+    {
+      "claim_id": "2671342f-6b68-4a8d-9b5f-83a70457553c",
+      "result_id": "d6de5a41-072f-4506-a93c-875b5a5ab1cd"
+    },
+    {
+      "claim_id": "7fd74eeb-22f4-4b19-99bc-c7323e457ec1",
+      "result_id": "d6de5a41-072f-4506-a93c-875b5a5ab1cd"
+    },
+    {
+      "claim_id": "9a35dee2-7a8f-42ac-8f56-93a6d23c2660",
+      "result_id": "2a7ff341-92e9-45e6-850b-5811eceda7d7"
+    },
+    {
+      "claim_id": "71d97df2-b430-42a2-87b7-502dffdf42f5",
+      "result_id": "2a7ff341-92e9-45e6-850b-5811eceda7d7"
+    },
+    {
+      "claim_id": "f63945fd-fd7b-4b8a-88aa-61068b52fe07",
+      "result_id": "2a7ff341-92e9-45e6-850b-5811eceda7d7"
+    },
+    {
+      "claim_id": "5ee12b29-6632-4d8a-b191-739409e59991",
+      "result_id": "62ce9598-757b-4e40-8879-6bbe17013a77"
+    },
+    {
+      "claim_id": "b71e0b53-84c7-4cfa-b33d-bbef6c71c308",
+      "result_id": "62ce9598-757b-4e40-8879-6bbe17013a77"
+    },
+    {
+      "claim_id": "9c39e403-3bbf-4d2e-8af7-389427c8aff4",
+      "result_id": "62ce9598-757b-4e40-8879-6bbe17013a77"
+    },
+    {
+      "claim_id": "50df1adc-1387-4a4c-be45-a2b7c4ad861a",
+      "result_id": "d9df2ede-010e-43a8-acde-4dba55b62a69"
+    },
+    {
+      "claim_id": "4c9dc768-06b8-4f27-849b-ab95278d5613",
+      "result_id": "d9df2ede-010e-43a8-acde-4dba55b62a69"
+    },
+    {
+      "claim_id": "e38d6c10-2fac-45ca-aeaf-70418f82ee12",
+      "result_id": "d9df2ede-010e-43a8-acde-4dba55b62a69"
+    },
+    {
+      "claim_id": "7956182b-bb10-41c6-a34c-4160b7f920b7",
+      "result_id": "d9df2ede-010e-43a8-acde-4dba55b62a69"
+    },
+    {
+      "claim_id": "73aa726e-ed14-4a6d-8e55-6e6d6b6057cc",
+      "result_id": "d9df2ede-010e-43a8-acde-4dba55b62a69"
+    },
+    {
+      "claim_id": "039f7928-4f26-4bd1-bebe-c84d39175d0f",
+      "result_id": "10d389d1-88f6-4944-a5ac-6f43bbf970c7"
+    },
+    {
+      "claim_id": "74e68d44-ca27-4226-b6e4-8b4897642795",
+      "result_id": "10d389d1-88f6-4944-a5ac-6f43bbf970c7"
+    },
+    {
+      "claim_id": "5ebb1df7-7a82-4e25-816a-7a4449f6f5dd",
+      "result_id": "10d389d1-88f6-4944-a5ac-6f43bbf970c7"
+    },
+    {
+      "claim_id": "980c4df2-1e9b-4d10-903c-96061005b161",
+      "result_id": "10d389d1-88f6-4944-a5ac-6f43bbf970c7"
+    },
+    {
+      "claim_id": "aa1438b6-686b-470e-92f7-62cfbf745c0f",
+      "result_id": "10d389d1-88f6-4944-a5ac-6f43bbf970c7"
+    },
+    {
+      "claim_id": "188e15a0-0819-40d5-b063-cc5ce3a0f640",
+      "result_id": "30935ff7-c6c3-4616-9404-340bb32c8849"
+    },
+    {
+      "claim_id": "9330fa5f-4336-4775-b6b5-bac0e0f54fe3",
+      "result_id": "30935ff7-c6c3-4616-9404-340bb32c8849"
+    },
+    {
+      "claim_id": "f0148876-eae1-4e46-bff2-3a0b7ea217f3",
+      "result_id": "30935ff7-c6c3-4616-9404-340bb32c8849"
+    },
+    {
+      "claim_id": "a3ca951b-4519-40b7-8a21-b9e014f430bc",
+      "result_id": "dac96540-1cd7-44b9-ac9f-e3e41269cfad"
+    }
+  ],
+  "comparisons": []
+}

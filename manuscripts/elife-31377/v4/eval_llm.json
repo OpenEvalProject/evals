@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C101"
+    ],
+    "result": "MyDDosomes rapidly assemble within minutes of TLR4 stimulation. Using single-molecule TIRF microscopy, the authors observed that GFP-MyD88 was diffusely distributed in unstimulated cells but formed macromolecular complexes within 3 minutes of LPS (500 nM) stimulation. The tagged MyD88-GFP construct was validated to signal properly in both HEK cells and macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21, C22, and C101 are well-supported by direct imaging data (Figure 1A) and functional validation assays (Figure 1\u2014figure supplement 1). The temporal dynamics of MyDDosome formation are clearly documented with appropriate controls demonstrating that the tagged construct retains biological activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C78"
+    ],
+    "result": "MyDDosomes contain approximately 6 MyD88 molecules based on fluorescence intensity analysis. The signal intensity of MyD88 complexes was approximately three times that of dimeric GFP, which correlates with the 6 MyD88 molecules observed in crystal structures of the MyDDosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C78 are supported by quantitative fluorescence intensity measurements (Figure 1B) compared to a dimeric GFP standard under identical illumination conditions. The correlation with known crystal structure stoichiometry provides independent validation, though the intensity-based quantification has inherent uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "MyDDosomes exhibit dynamic behavior with three distinct fates: persistence, rapid internalization (within 30 seconds), or slow disappearance (3 minutes). The slow disappearance suggests MyDDosomes can disaggregate to terminate signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by live cell imaging data (Figure 1A, 1F) showing the temporal dynamics of MyDDosome behavior. The inference about disaggregation as a signaling termination mechanism (C26) is reasonable based on the observed kinetics, though direct biochemical evidence for disaggregation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Formation of 'super' MyDDosomes (two MyDDosomes coalescing) occurs in response to LPS stimulation, with more forming at higher LPS concentrations. No super MyDDosomes were observed with the partial agonist CRX555, suggesting MyDDosome size relates to signaling efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by intensity analysis data (Figure 1G) showing dose-dependent formation of larger MyDDosome structures with LPS but not CRX555. The inference about signaling efficiency (C30) is reasonable given the correlation with agonist strength, though direct functional measurements linking size to signaling output would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C7"
+    ],
+    "result": "The number of MyDDosomes formed depends on ligand concentration and type. LPS (500 nM) induced rapid formation of many MyDDosomes peaking at 5 minutes, while lower LPS concentrations (50 nM) or CRX555 formed fewer MyDDosomes in the same timeframe, indicating that signaling strength depends on MyDDosome number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C7 are well-supported by quantitative imaging data (Figures 1C-E) with statistical significance (p<0.05). The dose-response relationship is clearly demonstrated across multiple ligand concentrations and different agonist types, providing strong evidence for the number-dependent signaling model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C102"
+    ],
+    "result": "TLR4 exists in dynamic equilibrium between monomers and dimers on the cell surface. In unstimulated cells, TLR4 populations were 78\u00b13% monomeric and 22\u00b13% dimeric. LPS stimulation increased dimer formation at 5 minutes, which then rapidly decreased, presumably due to receptor internalization. Low LPS concentrations or CRX555 did not significantly change dimer levels. The HaloTagged TLR4 construct was validated to signal properly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C102 are supported by photobleaching analysis data (Figure 2B) and functional validation (Figure 2\u2014figure supplement 1). The quantitative measurements of monomer/dimer ratios are rigorous, though the authors acknowledge they cannot determine labeling efficiency, which may lead to underestimation of dimer populations. The inference about internalization (C39) is supported by citation to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C41"
+    ],
+    "result": "TLR4/MD2 activation leads only to formation of heterotetramers, not higher order oligomers. No clusters of TLR4 were observed with any ligand, indicating higher order oligomerization is unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C41 are supported by the absence of higher-order photobleaching steps in the single-molecule analysis (Figure 2). The negative result is convincing given the sensitivity of the photobleaching approach to detect oligomers, though the authors acknowledge potential underestimation due to unknown labeling efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C42"
+    ],
+    "result": "The TLR4 antagonist RSLA significantly reduces TLR4 dimer formation below baseline levels, suggesting it stabilizes the TLR4/MD2 heterodimer and prevents constitutive tetramer formation. This is consistent with in vitro studies showing antagonists do not induce heterotetrameric complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C42 are supported by photobleaching data (Figure 2B(iv)) showing reduced dimers with RSLA treatment and consistent with cited literature on antagonist behavior. The inference about heterodimer stabilization (C44) is reasonable given the data, though direct structural evidence would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "TLR4 activation involves a two-step mechanism requiring both ectodomain dimerization and TIR domain interactions. The Pro712His TLR4 mutant, which cannot signal or recruit MyD88, showed similar monomer/dimer ratios to wild-type in unstimulated cells but reduced dimer formation upon LPS stimulation. This indicates LPS binding to the mutant stabilizes heterodimers but inhibits active tetramer formation, demonstrating that both ectodomain and TIR domain dimerization must occur synergistically for receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are well-supported by photobleaching data comparing wild-type and Pro712His mutant TLR4 (Figure 2B(v)), with the mutant properties established by cited literature. The two-step activation model (C51) is a reasonable inference from the data, though the authors note an alternative explanation involving rapid removal of inactive receptors cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C74"
+    ],
+    "result": "Molecular dynamics simulations reveal ligand-dependent conformational changes in TLR4/MD2. With Lipid A bound, the complex remains close to the crystal structure with minor rotational motions but no C-terminal separation. Without ligand, MD2 shifts up to ~10\u00c5 from its TLR4 partner, large lateral C-terminal fluctuations occur, backbone flexibility increases ~50-60%, and ~60% of buried surface area is lost. These data support a two-step activation model where ligand binding causes structural changes that bring TLR4 C-termini into close apposition for TIR dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 and C74 are supported by molecular dynamics simulation data (Figure 2D, Figure 2\u2014figure supplements 2-3, Supplementary file 1) using established force fields and appropriate analysis methods. The simulations provide mechanistic insight consistent with experimental observations, though they represent computational predictions that would benefit from experimental structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "LPS induces dose-dependent NF-\u03baB nuclear translocation with kinetics correlating to ligand concentration. High LPS doses induced rapid translocation (fastest peak at 20 minutes), while low LPS or CRX555 showed delayed translocation and reduced TNF\u03b1-mCherry reporter expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by live cell imaging data (Figure 3A-C) showing clear dose-response relationships. The 20-minute peak time (C63) is validated by comparison to cited EMSA studies. The quantitative single-cell analysis provides robust evidence for graded responses to different agonist strengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C9"
+    ],
+    "result": "The speed of MyDDosome assembly determines signaling strength. Statistical analysis showed TNF\u03b1-mCherry production significantly correlated with the speed of NF-\u03baB translocation, and peak timing of NF-\u03baB translocation correlated with both magnitude of translocation and TNF\u03b1 reporter expression. These kinetics suggest signal strength is partially determined by how rapidly a critical number of MyDDosomes form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 and C9 are supported by statistical correlation analysis of single-cell data (Figure 3D-E) showing significant relationships between MyDDosome formation kinetics and downstream signaling outcomes. The correlative nature of the data is appropriate, though the inference about causality (C69) would be strengthened by perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C10",
+      "C11"
+    ],
+    "result": "There is a stoichiometric mismatch between activated TLR4 receptors and MyDDosomes. TLR4 dimers have two MyD88 binding sites while MyDDosomes contain ~6 MyD88 molecules. This mismatch, combined with the transient nature of MyDDosomes, indicates activated TLR4 transiently nucleates MyDDosome assembly rather than forming stable stoichiometric complexes, and this assembly process is uncoupled from receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C76-C79, C10, and C11 are supported by the combination of photobleaching data showing TLR4 exists only as monomers/dimers, fluorescence intensity data showing ~6 MyD88 per MyDDosome, and kinetic data showing transient MyDDosome dynamics. The nucleation model is a reasonable inference from these observations and is supported by cited literature on similar mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C100"
+    ],
+    "result": "Partial agonists produce graded responses by forming fewer MyDDosomes more slowly than full agonists. CRX555 formed fewer MyDDosomes more slowly than LPS, leading to slower NF-\u03baB translocation and smaller cellular responses. Surprisingly, only a small number of MyDDosomes are needed for full signaling, with the difference between full and partial agonism determined by MyDDosome number and formation speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 and C100 are well-supported by comparative data across Figures 1 and 3 showing clear differences between LPS and CRX555 in MyDDosome formation kinetics and downstream signaling. The conclusion about small numbers being sufficient (C88) is supported by the observation that relatively few MyDDosomes trigger robust responses, though absolute quantification of the threshold would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C97"
+    ],
+    "result": "Graded TLR4 responses are controlled by ligand binding kinetics. The equilibrium between agonist/partial agonist and TLR4 dimers determines response magnitude, with agonists having faster on-rates or slower off-rates (higher affinity) than partial agonists. Affinity is the mechanism for obtaining graded responses by stabilizing TLR4 dimers to different extents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C91, and C97 represent mechanistic interpretations and speculation about binding kinetics that are not directly measured in this study. While the model is consistent with the observed dose-response data and is biophysically reasonable, no direct measurements of on-rates, off-rates, or binding affinities are provided. This remains a plausible hypothesis requiring validation through binding kinetics experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C96",
+      "C99"
+    ],
+    "result": "TLR4 signaling occurs at the single-molecule level with preformed receptor dimers. In the absence of ligand, TLR4/MD2 exists in dynamic equilibrium between heterodimers and heterotetramers. LPS binding stabilizes the tetrameric form and initiates conformational changes leading to signal transduction. Receptor dimers must be stabilized by agonist to signal, with agonists stabilizing low numbers of preformed dimers that nucleate short-lived MyDDosome complexes subsequently removed from the cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C96, and C99 represent the main mechanistic conclusions synthesizing data from photobleaching, imaging, and molecular dynamics studies. These conclusions are well-supported by the collective experimental evidence, though some aspects (particularly C71 about LPS stabilization) are inferred rather than directly demonstrated. The single-molecule nature of signaling is convincingly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C83",
+      "C84"
+    ],
+    "result": "The findings explain how the oncogenic MyD88 L265P mutation causes disease. This mutation, commonly found in B-cell lymphomas and Waldenstrom's macroglobulinemia, assembles MyDDosomes spontaneously without receptor activation, causing constitutive NF-\u03baB activation that acts as a pro-survival signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C83, and C84 are supported by the study's findings on MyDDosome assembly being uncoupled from receptor activation, combined with extensive cited literature on the L265P mutation. The authors appropriately use their mechanistic insights to explain existing knowledge about this oncogenic mutation, though they do not directly study the mutant in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Rapid MyDDosome dissociation from TLR4 is likely coupled to receptor internalization, providing a mechanism for sequential activation of MyD88 and TRIF signals from cell surface and endosomes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C82 are supported by the observed rapid dynamics of MyDDosomes and the timing of TLR4 dimer reduction (C39), with additional support from cited literature on TLR4 trafficking. The inference about sequential signaling compartmentalization is reasonable given the kinetics observed, though direct demonstration of TRIF pathway activation from endosomes is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The MyDDosome assembly mechanism is similar to that proposed for the pyrin domain of ASC nucleating NLRP3 inflammasomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is a reasonable comparison to cited literature on inflammasome assembly mechanisms. The nucleation-based assembly model observed for MyDDosomes shares conceptual similarities with ASC/NLRP3, though the authors do not provide direct comparative data. This represents appropriate contextualization of their findings within the broader SMOC literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98"
+    ],
+    "result": "TLR4 and TCR signaling share common features. Both require small numbers of receptors for activation (10 TCRs for T-cells, similar for TLR4), show graded responses, occur at the single-molecule level, and form larger signaling complexes from single-molecule events leading to signal amplification. For TCR, self/non-self discrimination is based on MHC-ligand affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 and C98 represent appropriate comparisons between TLR4 and TCR signaling systems based on the current study's data and cited TCR literature. The parallels drawn are reasonable and help contextualize the findings, though the comparison is conceptual rather than based on direct experimental comparison between the two systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on SMOCs and the biological context. SMOCs like the MyDDosome assemble during infection to coordinate inflammatory signaling. Current models suggest SMOC assembly creates activation thresholds for digital all-or-none responses, yet TLR activation by diverse microbes induces variable inflammation from mild to severe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C14-C20 represent established background knowledge from the field, appropriately cited and used to frame the study's motivation. These claims set up the apparent paradox between digital SMOC assembly models and graded inflammatory responses that the study addresses. The background is accurately presented based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Current models of TLR4 signaling based on structural analysis suggest the TLR4/MD2 co-receptor assembles into heterotetramers when bound to LPS, inducing TIR domain dimerization, and this complex acts as a scaffold for recruiting Mal/TIRAP and MyD88 to form a membrane-associated signalosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 accurately represent existing models from the literature that the study tests and refines. These claims appropriately describe the prevailing view of TLR4 signaling that the authors' data challenge, particularly regarding the stable signalosome model. The background is well-cited and accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Structurally related antagonists like Eritoran or RSLA bind TLR4/MD2 but do not induce heterotetrameric complex formation in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 represents established knowledge from cited structural and biochemical studies. This background information is used appropriately to interpret the authors' findings with RSLA (C43-C44) and is consistent with the literature on TLR4 antagonists.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Previous molecular modeling suggested that binding of different ligands causes conformational changes in MD2 that may be linked to receptor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 appropriately cites prior computational work that motivated the authors' molecular dynamics studies. This represents accurate representation of previous literature used to contextualize the current computational analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Background on TLR8 activation mechanism. TLR8 ECDs exist as stable inactive preformed dimers in the absence of ligand, and agonist binding causes conformational rearrangement bringing C-termini closer together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 accurately represent cited literature on TLR8 structure and activation. This background is appropriately used to draw parallels with the TLR4 activation mechanism revealed by the authors' molecular dynamics simulations (C74).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The crystal structure of heterotetrameric TLR4/MD2 might represent an inactive transition state corresponding to the first step of the concerted activation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is speculative reinterpretation of existing crystal structures based on the authors' data. While this interpretation is consistent with their two-step activation model and molecular dynamics results, it remains a hypothesis about what the crystal structure represents. The use of 'might' appropriately indicates uncertainty, but experimental validation of this interpretation is not provided.",
+    "result_type": "MINOR"
+  }
+]

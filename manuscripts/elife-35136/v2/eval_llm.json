@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C50",
+      "C51",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors developed an automated high-resolution imaging platform (VAST-SDCM) by coupling a commercially available zebrafish delivery system with a spinning disk confocal microscope. The platform achieved 83% success rate imaging all myelinating glial cells in 4 dpf zebrafish larvae in approximately 60 seconds using a 10X objective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C98-C99 provide specific quantitative performance metrics (83% success rate, 60s imaging time, 849nm pixel size) that are consistent across multiple claims. The technical specifications are clearly documented with supporting figures (Figure 1), and the success rate is reasonable for an automated system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors developed an automated image analysis pipeline for quantifying oligodendrocyte cell number that includes automated ROI selection and cell counting. The automated ROI specification excluded only 1.2 cells per animal on average (C54), and 2D maximum intensity projections yielded cell counts equivalent to 3D stereological counts (33.3 vs 35.4, p=0.61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation data (C52-C54) demonstrate that the automated methods are accurate compared to gold-standard manual approaches. The statistical comparison (p=0.61) appropriately shows no significant difference between 2D and 3D counting methods. Performance metrics (C102-C104) show dramatic time savings (3.5 min vs 34 hr for 288 animals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C68"
+    ],
+    "result": "The imaging platform successfully detected increases in oligodendrocyte number following treatment with the positive control compound SKP2-C25 at 2 \u03bcM. Time-lapse imaging revealed that SKP2-C25 increases OPC proliferation between 2-3 dpf, leading to a larger pool of OPCs that differentiate by default.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 provide converging evidence from multiple approaches (automated imaging, time-lapse microscopy, electron microscopy from C56). The mechanistic explanation (C58-C60) is supported by direct observation of increased OPC proliferation and is consistent with prior work (C59 cites Almeida et al., 2018). This validates the platform's sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C105"
+    ],
+    "result": "The authors screened 146 unique compounds targeting epigenetic and post-translational modifications at 2 \u03bcM and identified 14 compounds with significant effects on oligodendrocyte number (5 increasing, 9 decreasing). The screen achieved 80% success rate from fish loading through automated analysis, with automated and manually-adjusted analyses identifying the same hit compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the screen identified hits (C69-C71), there are significant concerns about reproducibility. The positive control SKP2-C25 only returned as significant in 1 of 2 screening runs (C72), and screening duration affected results (C73). The authors acknowledge these limitations and discuss the narrow concentration windows of efficacy. The 80% success rate (C105) means actual n was ~9, meeting the power calculation (C64), but the false negative rate raises concerns about the robustness of the screening conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Three novel compounds were validated as increasing oligodendrocyte number: splitomicin (73% increase, p=0.0001), C646 (73% increase, p=0.0001), and GSK-J5 (41% increase, p=0.003). NU9056 was identified as a likely false positive as it failed to show effects in concentration-response validation (C87). All validated compounds were lethal at 10-20 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concentration-response validation (C86-C88, Figure 6) appropriately distinguishes true hits from false positives. The effect sizes are substantial and statistically significant with appropriate p-values. The identification of NU9056 as a false positive (C87) demonstrates appropriate skepticism and validation. The consistency of effects across multiple concentrations for splitomicin, C646, and GSK-J5 supports their validity as hits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Region-specific analysis revealed that the second of five tiles along the spinal cord was most sensitive to changes in oligodendrocyte number, with all five hit compounds showing significant increases in this region. The authors propose that single-tile imaging would be sufficient for future screens and would increase throughput from 40 to 85 animals per hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 presents clear data showing regional sensitivity differences (Figure 7E, Supplementary file 3). The inference that single-tile imaging would suffice (C90) is reasonable given that all hits were detected in this region. The throughput calculation (C91) is straightforward and references Table 1. This represents a practical optimization based on empirical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "An automated fluorescence intensity assay detected significant increases in myelination following splitomicin treatment (2-4 \u03bcM, p\u22640.0023). This was validated by transmission electron microscopy showing ~1.8-fold increase in myelinated axon number (9.8\u00b14.3 vs 18\u00b12.6, p=0.0065).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence intensity measurements (C92) are validated by the gold-standard electron microscopy (C93), providing strong orthogonal confirmation. The statistical significance is appropriate, and the effect size is substantial. The authors note the fluorescence changes were \"difficult to subjectively appreciate by eye,\" highlighting the value of automated quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Splitomicin treatment of rat primary oligodendrocyte cultures increased MBP+ oligodendrocyte number and Ki67+/Olig2+ proliferating cells, indicating that the compound's effects are conserved in mammals and operate through increased OPC proliferation followed by differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 present clear experimental data from mammalian cultures (Figure 9). The mechanistic interpretation (C96) is a reasonable inference from the Ki67/Olig2 data showing increased proliferation. The conclusion about conservation across species (C97) is supported by the parallel effects in zebrafish and rat. However, the statistical test used (Kruskal-Wallis with Dunn's) is appropriate for non-normally distributed data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors claim the VAST-SDCM platform is flexible and broadly applicable to diverse biological processes in zebrafish, with capabilities for dual-channel imaging, photo-ablation/activation, time-lapse microscopy, and fish recovery for downstream analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the technical capabilities are described (C120-C122), these claims about broad applicability (C8, C49) are largely prospective and not demonstrated in this manuscript. The platform was only tested for oligodendrocyte imaging. The statement that \"up to minutes long time-lapse microscopy could, in principle, be carried out\" (C121) is speculative. These are reasonable extrapolations from the system's capabilities, but lack empirical validation for other biological processes.",
+    "result_type": "MINOR"
+  }
+]

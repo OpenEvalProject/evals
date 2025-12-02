@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors determined a 3.2 \u00c5 resolution cryo-EM structure of Vps4 bound to an ESCRT-III peptide substrate using improved microscope instrumentation and image processing methods. The structure was obtained from 82,225 particles after extensive 2D and 3D classification, with appropriate validation metrics including FSC curves, cross-validation, and model refinement statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C107-C112 collectively document the cryo-EM data collection, processing, and validation procedures. The 3.2 \u00c5 resolution is supported by gold-standard FSC curves (C1, C109), appropriate sample size (C109), proper data collection parameters (C107-C108), and validated refinement statistics including MolProbity and EMRinger scores (Table 1). The methods are sufficiently detailed and follow standard cryo-EM practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The ESCRT-III peptide adopts a \u03b2-strand conformation in the structure with specific phi and psi angles characteristic of extended \u03b2-strands. The peptide is clearly defined in the density map except for the first two acidic side chains (D1, E2), which show weak density consistent with typical cryo-EM behavior of carboxylates. The peptide orientation was validated by building and refining the structure in both orientations, with the assigned orientation showing superior correlation coefficients and EMRinger scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C49-C53 provide converging evidence for the peptide conformation and orientation. The \u03b2-strand assignment is supported by measured dihedral angles (C2, C53), clear density for most residues (C49), and rigorous validation comparing forward and reverse orientations using quantitative metrics (C51-C52). The weak density for carboxylates is appropriately explained by citations to literature (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Adjacent Vps4 subunits make equivalent interactions with successive substrate dipeptides through two distinct classes of side chain binding pockets (class I and class II) formed primarily by pore loop 1 residues K205, W206, and M207. Odd-numbered peptide residues bind in class I pockets formed by W206 residues sandwiching substrate side chains, while even-numbered residues bind in class II pockets formed by M207 residues. All pockets of each class are essentially identical, and their exposure to the solvated pore allows accommodation of polar side chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C54-C65 provide detailed structural evidence for the dipeptide binding mechanism. The two classes of pockets are clearly defined with specific residue compositions (C56, C58), the alternating binding pattern is documented (C54-C55), and the structural equivalence of pockets within each class is demonstrated (C64). The interpretation of how polar residues are accommodated (C65) is reasonable given the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The NH groups of even-numbered ESCRT-III peptide residues form hydrogen bonds with the main chain oxygen of Vps4 K205, with distances of 3.1-3.5 \u00c5 in the assigned orientation compared to 3.4-4.5 \u00c5 in the reversed orientation. These hydrogen bonds may help define substrate orientation by optimally positioning ESCRT-III side chains in their binding pockets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 document specific hydrogen bonding interactions with measured distances from the refined model (C66-C68). The shorter distances in the assigned orientation compared to the reversed orientation provide additional support for the peptide directionality. The functional interpretation (C69) is reasonable though speculative, appropriately qualified with 'may help.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The six Vps4 subunits form a closed ring with six Vta1 VSL domains at the periphery and a single ESCRT-III peptide in the central pore. Subunits A-E form a helix with approximately 60\u00b0 rotation and 6.3 \u00c5 translation between adjacent subunits, with subunit E deviating slightly from the helical symmetry of A-D. Subunit F is disengaged from adjacent subunits and substrate, appearing to transition between helix ends, and shows weak density along with peripheral features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the overall architecture directly observed in the cryo-EM reconstruction. The helical parameters are measured from structural data (C25), the deviation of subunit E is noted with appropriate citation (C26), and the weak density for subunit F and peripheral features is a direct observation (C28). The interpretation of subunit F transitioning (C27) is reasonable given its structural state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Nucleotides bind at subunit interfaces with the \u03b2-phosphate and BeFx contacting arginine fingers (R288, R289) from the following subunit. ADP\u00b7BeFx mimics ATP binding at subunits A-C, while subunits D-E appear to bind ADP, and subunit F may be empty. Nucleotide coordination is similar across subunits and resembles other ATPases. The hinge angle between large and small domains does not change substantially with nucleotide state (120-122\u00b0), contradicting earlier proposals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe nucleotide binding states observed in the structure. The coordination geometry is directly observed (C29), nucleotide assignments are based on density interpretation (C30-C32), and hinge angles are measured from the structure (C34). The authors appropriately acknowledge uncertainty in distinguishing ADP from ADP\u00b7BeFx at some sites (C32, C37) and note that higher resolution may be needed for absolute certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The AB, BC, and CD interfaces are extensive and similar, with large domain contacts between adjacent subunits. The DE interface shows an ~8\u00b0 rotation of subunit E but maintains similar contacts. Small domain-large domain contacts remain more consistent across interfaces than large domain contacts, particularly at the FA interface. This interaction may help maintain hexameric assembly during the reaction cycle while ATP hydrolysis disrupts large domain contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 describe subunit interface characteristics measured from the structure. The interface similarities and differences are documented with specific measurements (C36, C41), and the structural observations are sound (C39-C40). The functional interpretations about maintaining hexameric assembly (C42-C43) are reasonable inferences from the structural data, appropriately qualified as speculative (C43 uses 'may help').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The small domain-large domain interface is the major lattice contact in all 22 crystallographically unique Vps4 crystal structures. Archaeal Vps4 crystal contacts resemble the FA/AB/BC/CD/DE interface, while eukaryotic contacts overlap with the EF interface. These differences correlate with the presence of the \u03b2 domain and Vta1 cofactor in eukaryotes but not archaea, supporting the interpretation that Vta1 promotes formation and maintenance of the closed helical substrate-binding assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 present a comparative analysis of crystal structures with appropriate citations (C45-C46). The correlation between structural features and phylogenetic distribution (C47) is a valid observation. The interpretation about Vta1's role (C48) is a reasonable inference from the structural comparisons, though it remains an interpretation rather than direct experimental proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The structure supports a 'conveyor belt' model of translocation in which subunit configurations transition around the hexameric ring. ATP binding allows subunit F to join the helix and engage substrate at the leading end, while ATP hydrolysis and release at the lagging end promotes subunit E transition and substrate release. Each step translocates two amino acids and hydrolyzes one ATP. The model explains the importance of pore loop residues and binding pockets, as substrate residues maintain their conformation while being translocated through the helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C7 and C70-C78, C113-C116 present a detailed mechanistic model based on the structural observations. While the model is internally consistent and explains the structural features well (C77-C78), it remains a proposed mechanism inferred from a single structural snapshot rather than direct observation of the dynamic process. The authors appropriately acknowledge this is their interpretation ('we envision,' C70) and note the specific state captured (C115). However, the model requires validation through additional experiments such as time-resolved studies, mutagenesis, or biochemical assays to directly test the proposed mechanism. The stoichiometry prediction (C76) and functional interpretations are reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Sequence alignment of classic clade AAA+ ATPases shows conservation of the first two pore loop 1 residues that contact substrate (Vps4 K205, W206). W206 is always W, F, or Y (all capable of sandwiching substrate), K205 is usually K or sometimes M (both can flank class I pockets), and M207 is more variable but typically hydrophobic. G208 is invariant, presumably because it adopts phi angles (~81-85\u00b0) favored only for glycine and helps define the pore loop conformation. Pore loop 2 residues are less conserved and typically disordered in other structures, consistent with their lack of distinctive substrate contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 present a sequence conservation analysis with functional interpretation. The conservation patterns are documented through sequence alignment (C88), and the functional interpretations for conserved residues (C89-C91) are reasonable given the structural observations. The explanation for G208 invariance (C92-C93) is well-supported by the structural constraints. The correlation between pore loop 2 variability and lack of specific function (C94-C95) is a valid inference from comparative structural analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The Vps4 structure superimposes closely with recently reported structures of VAT, HSP104, ClpB, and YME1 determined with substrate bound, as well as multiple other classic clade AAA+ ATPases visualized without substrate. Notable exceptions include p97 and CDC48, which display rotational rather than helical symmetry, and ClpX and HslU, which are not classic clade members but share similarities with Vps4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 present structural comparisons with appropriate citations to the compared structures. The close superposition with other AAA+ ATPases (C96, C98) supports the generality of the structural features observed in Vps4. The noted exceptions (C99-C100) are appropriately documented with citations. However, the claim about YME1 (C97) notes that coordinates were not available during manuscript preparation, limiting the depth of comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The proposed mechanism is consistent with reports that other AAA+ ATPases bind a maximum of 3-4 ATP molecules and is analogous to mechanisms of E1 helicase and Rho translocase. However, biochemical analyses of ClpX and HslU have shown that a single active ATPase subunit can drive translocation at reduced efficiency, arguing for stochastic mechanisms. The authors propose that inactive subunits might diffuse through the helical cycle, potentially reconciling sequential and stochastic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 appropriately cite consistency with other systems, but claims C101-C103 acknowledge an alternative stochastic mechanism supported by biochemical data. The proposed reconciliation (C102-C103) is speculative ('may allow,' 'might drive') and lacks experimental support. This represents an unresolved tension between the sequential model proposed from the structure and biochemical evidence for stochastic mechanisms. Additional experiments would be needed to test whether the proposed reconciliation is correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The structure reveals details of substrate interactions through a repeating array of dipeptide binding sites with the ESCRT-III peptide in a unique orientation. It supports a sequential mechanism and explains the ability to translocate polypeptides with little sequence specificity. The authors identify testing the generality of these observations and their applicability to other AAA+ ATPases as important future priorities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 appropriately summarize the structural findings and their mechanistic implications. The acknowledgment of future work needed (C106) is appropriate and demonstrates scientific rigor. However, the support for the sequential mechanism (C105) should be considered in light of the uncertain evaluation of the mechanistic model (claims C5-C7, C70-C78) and the alternative stochastic mechanisms discussed (C101-C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript provides extensive background on the ESCRT pathway, Vps4 structure and function, and the AAA+ ATPase family, all supported by appropriate citations to previous literature. This includes the biological roles of ESCRT-III and Vps4, the structural organization of Vps4, previous cryo-EM structures, competing mechanistic models, and the classification and characteristics of AAA+ ATPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C23 and C81-C87 present background information appropriately supported by citations to previous literature. These claims establish the context for the current work and accurately represent prior knowledge in the field. The citations appear appropriate and the characterizations of previous work are consistent with the cited sources.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "RNA-seq analysis of dorsal spinal cord from Smo cKO embryos revealed 363 differentially expressed genes, including a 3.68-fold increase in Shisa2, while core PCP genes (Fzd3, Celsr3, Vangl2) showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from RNA-seq showing Shisa2 upregulation in Smo cKO while PCP genes remain unchanged. The experimental design is appropriate, with proper controls and validation of Smo knockout (C5). Statistical significance is reported (q-values), and gene ontology analysis supports functional relevance (C4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "In situ hybridization confirmed that Shisa2 mRNA is specifically upregulated in Lhx2high dI1 commissural neurons in Smo cKO, suggesting Shh-Smo signaling regulates Shisa2 expression during midline crossing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 provide spatial validation of the RNA-seq findings using in situ hybridization combined with immunohistochemistry. The cell-type-specific localization to Lhx2high dI1 neurons strengthens the conclusion that Shh-Smo signaling regulates Shisa2 in commissural neurons during the relevant developmental window.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Shisa2 interacts with Fzd3 and reduces the glycosylated forms of Fzd3, with the major co-immunoprecipitated form being unmodified Fzd3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 demonstrate protein-protein interaction through co-immunoprecipitation with appropriate negative control (IR\u03b2, C11). The biochemical characterization of Fzd3 modification states is supported by western blot data showing three distinct bands. The specificity of the Shisa2-Fzd3 interaction and its effect on glycosylation is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Shisa2 reduces Fzd3 cell surface expression by retaining it in the ER, blocking its trafficking to the Golgi and plasma membrane, thereby inhibiting Wnt/PCP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 provide multiple lines of evidence: surface biotinylation assays (C16), specificity controls (C17), and immunocytochemistry showing ER colocalization (C18-C19). The mechanistic conclusion (C20-C21) is well-supported by the convergent data, though the final inference about PCP signaling inhibition is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Fzd3 has two glycosylation sites (N42 in CRD and N356 in extracellular loop II), with N356 being more critical for cell surface trafficking than N42.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 identify glycosylation sites through mutagenesis and biochemical analysis. The differential importance of N356 vs N42 is demonstrated by surface biotinylation showing complete loss of surface Fzd3 with N356Q mutation (C27) versus partial reduction with N42Q (C26). Glycoprotein isolation confirms these are bona fide glycosylation sites (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Fzd3 glycosylation is reduced in Smo cKO dorsal spinal cord in vivo, demonstrating that Shh-Smo signaling regulates Fzd3 glycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide in vivo validation using glycoprotein isolation from dorsal spinal cord tissue. The data directly demonstrate reduced Fzd3 glycosylation in Smo cKO, linking the genetic manipulation to the biochemical phenotype. This bridges the cell culture findings to the physiological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Forced expression of Shisa2 in commissural neurons causes randomized turning along the A-P axis after midline crossing (54.3% correct vs 85.9% in controls), demonstrating that Shisa2 downregulation is necessary for proper axon guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 use gain-of-function experiments in ex utero electroporation/open-book cultures. The quantitative data show a significant reduction in correct anterior turning with Shisa2 overexpression. Sample sizes are adequate (8 embryos per condition), and the conclusion about necessity is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "FGFR inhibition with LY2874455 does not affect A-P guidance of commissural axons, indicating FGFR activity is not required for anterior turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 address a potential confound since Shisa proteins can bind FGFRs. The pharmacological inhibition effectively suppresses FGFR phosphorylation (C35) but does not affect axon guidance (C36), ruling out FGFR involvement. This control strengthens the specificity of the Shisa2-Fzd3 mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Shisa2 knockdown causes Vangl2-dependent precocious anterior turning before midline crossing, demonstrating that Shisa2 prevents premature activation of Wnt-PCP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 provide loss-of-function evidence with two independent shRNAs, rescue experiments (C42), and epistasis analysis with Vangl2 knockdown (C45). The double knockdown preventing precocious turning (C45) strongly supports the mechanistic link to PCP signaling (C46). The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Shisa2 knockdown increases Fzd3 protein levels on the surface of commissural neuron growth cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide direct evidence in primary neurons that Shisa2 regulates Fzd3 surface expression in the relevant cell type. The immunocytochemistry data with quantification (12-15 growth cones analyzed) validates the cell culture findings in the physiological context of commissural neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Conditional knockout of Wntless in the floor plate causes randomized turning of commissural axons along the A-P axis (38.7% correct vs 85.6% in controls), providing genetic evidence that floor-plate-secreted Wnts are essential A-P guidance cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 provide definitive genetic evidence for Wnt involvement using conditional Wls knockout. The specificity of Cre expression is validated (C52), Wls knockout is confirmed (C53), and potential confounds from patterning defects are ruled out (C54-C56). The dramatic guidance phenotype (C58) strongly supports the conclusion (C59). This addresses a long-standing gap in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Shh-Smo signaling reduces Shisa2 mRNA levels, which inhibits Fzd3 glycosylation and trafficking, thereby controlling the timing of Wnt/PCP signaling activation during commissural axon guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 synthesize the major findings into a coherent model. Each component is supported by the experimental data: Shh regulation of Shisa2 (C60, from C1-C9), Shisa2 inhibition of Fzd3 (C61, from C10-C31), and functional consequences for axon guidance (C62-C63, from C32-C48). The model integrates multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose that Shh in the floor plate signals retrogradely to commissural neuron cell bodies to inhibit Shisa2 expression, allowing Fzd3 trafficking and Wnt/PCP signaling activation in growth cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C67 present a speculative model for how Shh signaling is spatially organized. While C64-C65 cite prior work on Shh localization and properties, the retrograde signaling mechanism (C66-C67) is proposed but not directly tested. The model is plausible given the data but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Wls is required for A-P guidance of commissural axons, providing genetic evidence for Wnt involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 summarizes the key finding from the Wls cKO experiments (detailed in C49-C59). This represents a major contribution to the field by providing the first genetic evidence for Wnt function in vertebrate axon guidance, overcoming the challenge of Wnt family redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "The regulatory link between Shh and PCP signaling may be important in other developmental processes beyond axon guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C86, C87, and C90 speculate about broader implications of the findings. While the speculation is reasonable given that both Shh and PCP signaling are widely used in development, no data are provided to support these broader claims. These represent hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Background on commissural axon guidance: axons are guided by Netrin1 to the midline, then switch responsiveness to repellents and Wnts for A-P turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide established background from prior literature with appropriate citations. These claims contextualize the current study but do not represent new findings. The citations to recent work (C72) update the understanding of Netrin1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C85",
+      "C89"
+    ],
+    "result": "This study identifies Shh as a midline switch for Wnt/PCP signaling through regulation of Shisa2 and Fzd3 trafficking, linking Shh to non-canonical Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C85, and C89 summarize the main conceptual advance of the study. The conclusion is well-supported by the experimental data and represents a novel mechanistic link between two major signaling pathways. The distinction from canonical Wnt signaling (C89) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The 8-hour midline crossing time provides sufficient time for Shisa2 downregulation and Fzd3 trafficking, making this switch mechanism optimal for PCP signaling activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 propose that the timing of the molecular switch matches the time required for midline crossing. While C75 cites previous observations, the inference about optimality (C77) is speculative. Direct measurements of Shisa2 protein turnover and Fzd3 trafficking kinetics would be needed to support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Shh acts as a switch for growth cone responsiveness to both Wnts (current study) and Semaphorins (previous work), coordinating multiple guidance responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 integrate the current findings with previous work from the same lab. The conclusion that Shh coordinates multiple guidance switches is supported by the combined evidence, though the Semaphorin mechanism (PKA inhibition) differs from the Wnt mechanism (Shisa2 regulation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Multiple switch mechanisms have been proposed at the midline in different systems, involving transcriptional regulation, signal modulation, and ligand distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 review prior work on midline switch mechanisms with appropriate citations. These provide context for the current findings but do not represent new results. The review is accurate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "A regulatory link between Shh, Tbx2/Tbx3, Shisa3, and canonical Wnt signaling has been observed in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 cites recent work showing a different Shh-Shisa-Wnt regulatory link. This contextualizes the current findings and highlights the distinction between canonical and non-canonical Wnt signaling regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The mechanism by which Shh-Smo signaling regulates Shisa2 mRNA levels (direct transcriptional target vs. posttranscriptional regulation) remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 acknowledge limitations of the current study. The authors appropriately note that the mechanism linking Shh-Smo to Shisa2 regulation is not determined, leaving this as an open question for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "N42 and N356 are glycosylation sites in Fzd3, with N356 being more crucial for surface expression and potentially important for PCP component interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 characterize the functional importance of the two glycosylation sites. The experimental evidence strongly supports N42 and N356 as glycosylation sites (C93) and the differential importance of N356 (C96). The speculation about N42's role in Wnt binding (C94) and N356's role in PCP interactions (C97) is reasonable but untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Conditional knockout of Wls provides the first genetic evidence that Wnts are key A-P guidance cues for commissural axons in vertebrates, overcoming the challenge of Wnt family redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 highlight the significance of the Wls cKO experiments. The approach of targeting the common Wnt secretion machinery (C100) elegantly addresses the redundancy problem (C99). The complete loss of A-P directionality (C101) strongly supports the conclusion that Wnts are essential guidance cues (C102).",
+    "result_type": "MAJOR"
+  }
+]

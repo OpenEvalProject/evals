@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "During adult aging in Drosophila, H3K27me3 levels increase genome-wide, but unlike development where H3K27me3 shows dramatic gain/loss at specific loci, adult aging exhibits epigenetic drift characterized by maintained peak profiles but reduced selectivity, with inter-peak genes gaining relatively more H3K27me3 (36-48%) than peak genes (9-13%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by ChIP-seq data with appropriate quantitative analysis including bootstrapping and statistical testing (wilcoxon signed-rank test, p<2.2e-16). The contrast between developmental dynamics (C3) and adult aging patterns (C2, C4, C5) is clearly demonstrated with multiple biological replicates and consistent methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "PRC2 double mutants show enhanced H3K27me3 reduction and lifespan extension compared to single mutants, with selective reduction of only H3K27me2/3 while preserving global H3K27me3 occupancy patterns (Pearson correlation \u22650.77). In young PRC2 mutants, H3K27me3 signals coalesce into peak regions, and age-associated H3K27me3 drift observed in wild-type is dampened in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by multiple lines of evidence including western blots, lifespan assays (log-rank test, p<0.001), ChIP-seq with correlation analysis, and bootstrapping analysis. The preservation of global patterns while reducing overall levels (C10) combined with dampened age-associated drift (C12) provides mechanistic insight into PRC2 mutant phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "RNA-seq analysis reveals that PRC2 mutants show upregulation of glycolytic genes (particularly Tpi and Pgi across muscle and head tissues) and downregulation of oxidation-reduction genes. Conversely, wild-type aging is associated with transcriptional decline of genes involved in carbohydrate metabolism, energy production, and specifically glycolysis/gluconeogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by RNA-seq data from multiple biological replicates with appropriate statistical analysis (DESeq, p<0.05), GO analysis, and WGCNA network analysis. The consistency of Tpi and Pgi upregulation across tissue types (C15) and the complementary age-associated decline in WT (C16-C17) strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Genetic manipulation of H3K27me3 levels through utx deletion (increasing H3K27me3) or PRC1 mutation demonstrates that glycolytic gene expression inversely correlates with H3K27me3 levels. utx null mutants show increased H3K27me3, shortened lifespan (~70% of WT), and decreased Tpi and Pgi expression, while PRC1 mutants show increased expression of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by complementary genetic approaches with appropriate controls. Western blot, ChIP-qPCR, qRT-PCR, and lifespan data (log-rank test, p<0.001) consistently demonstrate the inverse relationship between H3K27me3 levels and glycolytic gene expression, with utx mutants providing a critical gain-of-function validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Untargeted metabolomics and 13C-glucose metabolic flux analysis demonstrate that lactate levels (indicator of anaerobic glycolysis) decrease with age in WT but are elevated in PRC2 mutants, while citric acid cycle metabolites remain unchanged. Age-associated decline in glycolytic metabolites is partially reversed by PRC2-deficiency (78% vs 50% retention at 30d).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by two independent metabolomic approaches (untargeted and 13C-flux) with appropriate statistical testing (wilcoxon rank-sum test) and multiple biological replicates (n=8-10). The specificity for glycolysis (C28, C29) rather than citric acid cycle strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "PRC2 mutants show increased pyruvate, ATP, NADH/NAD+ ratio, and GSH/(GSH+GSSG) ratio compared to age-matched WT, while glucose levels and NADPH/NADP+ ratio remain unchanged or slightly decreased. These metabolites decline with age in WT but are elevated in PRC2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by specific metabolite assays with appropriate statistical testing (student t-test) and biological replicates (n=3). The pattern of changes (increased glycolytic products and redox state without changes in glucose or PPP indicators) is internally consistent and supports enhanced glycolytic flux rather than general metabolic activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "PRC2 mutants exhibit improved adult fitness phenotypes including better climbing mobility at 30d (though similar at 3d) and substantially enhanced resistance to oxidative stress (H2O2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by functional assays with appropriate statistical testing (student t-test for climbing, log-rank test p<0.001 for oxidative stress) and adequate sample sizes (n=100 for stress, n=10 biological replicates for climbing). The age-specificity of the climbing phenotype (C37) strengthens the connection to aging mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Genetic reduction of glycolytic genes (Tpi or Pgi) in PRC2 mutant backgrounds partially mitigates the longevity and fitness benefits, including reduced lifespan extension, attenuated oxidative stress resistance, decreased climbing mobility, and reduced ATP, NADH/NAD+, and GSH/(GSH+GSSG) ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by genetic epistasis experiments with appropriate controls showing that heterozygous glycolytic gene mutations alone have minimal effects. The consistency across two independent genes (Tpi and Pgi) and multiple phenotypes (lifespan, stress resistance, mobility, metabolites) provides strong evidence for the causal role of glycolysis in PRC2-mediated longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Western blot analysis demonstrates that Tpi and Pgi protein levels decrease modestly with age in WT flies but are upregulated in PRC2 mutants, consistent with changes in H3K27me3 levels and mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by western blot data with quantification and appropriate statistical testing (student t-test, n=3 biological replicates). The protein-level validation is important for confirming that transcriptional changes translate to functional changes, though the magnitude of change is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Transgenic overexpression of both Tpi and Pgi genes in wild-type flies is sufficient to stimulate glycolysis (elevated pyruvate, ATP, NADH/NAD+) and improve aging phenotypes including extended lifespan, enhanced locomotion, and increased oxidative stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by gain-of-function experiments using genomic transgenes with appropriate controls (single transgenes show modest effects). The sufficiency of glycolytic gene overexpression to recapitulate PRC2 mutant phenotypes provides strong evidence for the causal role of glycolysis in longevity, though other mechanisms may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C82"
+    ],
+    "result": "The study proposes that epigenetic drift of H3K27me3 during aging, characterized by loss of fidelity in modification patterns, contributes to aging by impairing glycolytic gene transcription and metabolism, and that PRC2-deficiency extends lifespan by stimulating glycolysis and maintaining metabolic health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 and C82 represent the main conclusions synthesized from multiple experimental results. The model is well-supported by the convergence of epigenomic, transcriptomic, metabolomic, and phenotypic data, along with genetic epistasis experiments. However, these are interpretive claims that integrate multiple findings rather than direct experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Perturbing glycolysis diminishes pro-lifespan benefits of PRC-deficiency, while transgenic increase of glycolytic genes in wild-type extends longevity, establishing glycolysis as both necessary and sufficient for the longevity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 summarize the genetic epistasis (C39-C42) and gain-of-function (C47-C48) experiments. The necessity and sufficiency framework is well-supported by the experimental data, though the partial nature of the effects (C39 shows partial mitigation) suggests additional mechanisms may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C86"
+    ],
+    "result": "The authors speculate that age-associated DNA damage may reduce epigenetic fidelity through feed-forward interactions between DNA damage and changes in complexes controlling epigenetic markings, citing examples from other organisms where DNA damage or loss of other methyltransferases affects H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83 and C86 are explicitly speculative (\"One possible reason\", \"may be due to\") and supported only by citations to work in other organisms (C84-C85). No direct evidence for DNA damage or its role in H3K27me3 drift is provided in this study. This represents a plausible hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose that modulating H3K27me3 may reprogram bioenergetic decline during aging to reduce cellular damage, and that the reversible nature of epigenetic pathways offers a potential therapeutic strategy against age-associated decline and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are speculative extrapolations about therapeutic potential. While the study demonstrates effects in Drosophila, translation to therapeutic applications requires substantial additional work including validation in mammals, understanding of tissue-specific effects, and assessment of intervention strategies. These represent future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1821 @@
+{
+  "submission": {
+    "id": "3f6ea986-be98-4bf0-9d17-03fba0e5b9e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:43:33.540881Z",
+    "updated_at": "2025-12-02T00:43:33.540881Z"
+  },
+  "content": [
+    {
+      "id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "submission_id": "3f6ea986-be98-4bf0-9d17-03fba0e5b9e7",
+      "content_type": "manuscript",
+      "content_text": "# FBXL19 recruits CDK-Mediator to CpG islands of developmental genes priming them for activation during lineage commitment\n\n## Authors\n\n- Emilia Dimitrova<sup>1</sup> ([ORCID: 0000-0001-5669-1240](https://orcid.org/0000-0001-5669-1240))\n- Takashi Kondo<sup>2</sup>\n- Angelika Feldmann<sup>1</sup>\n- Manabu Nakayama<sup>3</sup>\n- Yoko Koseki<sup>2</sup>\n- Rebecca Konietzny<sup>4</sup>\n- Benedikt M Kessler<sup>4</sup>\n- Haruhiko Koseki<sup>2</sup> ([ORCID: 0000-0001-8424-5854](https://orcid.org/0000-0001-8424-5854))\n- Robert J Klose<sup>1</sup> ([ORCID: 0000-0002-8726-7888](https://orcid.org/0000-0002-8726-7888)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Oxford Oxford United Kingdom\n2. Laboratory for Developmental Genetics RIKEN Center for Integrative Medical Sciences Yokohama Japan\n3. Department of Technology Development Kazusa DNA Research Institute Kisarazu Japan\n4. Nuffield Department of Medicine TDI Mass Spectrometry Laboratory, Target Discovery Institute, University of Oxford Oxford United Kingdom\n5. CREST Japan Science and Technology Agency Kawaguchi Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nCpG islands are gene regulatory elements associated with the majority of mammalian promoters, yet how they regulate gene expression remains poorly understood. Here, we identify FBXL19 as a CpG island-binding protein in mouse embryonic stem (ES) cells and show that it associates with the CDK-Mediator complex. We discover that FBXL19 recruits CDK-Mediator to CpG island-associated promoters of non-transcribed developmental genes to prime these genes for activation during cell lineage commitment. We further show that recognition of CpG islands by FBXL19 is essential for mouse development. Together this reveals a new CpG island-centric mechanism for CDK-Mediator recruitment to developmental gene promoters in ES cells and a requirement for CDK-Mediator in priming these developmental genes for activation during cell lineage commitment.\n\n## Introduction\n\nMulticellular development relies on the formation of cell-type-specific gene expression programmes that support differentiation. At the most basic level, these expression programmes are defined by cell signaling pathways that control how transcription factors bind DNA sequences in gene regulatory elements and shape RNA polymerase II (RNAPolII)-based transcription from the core gene promoter (reviewed in [Spitz and Furlong, 2012]). In eukaryotes, the activity of RNAPolII is also regulated by a large multi-subunit complex, Mediator, which can directly interact with transcription factors at gene regulatory elements and with RNAPolII at the gene promoter to modulate transcriptional activation. The Mediator complex functions through regulating pre-initiation complex formation and controlling how RNAPolII initiates, pauses, and elongates. Therefore, Mediator is central to achieving appropriate transcription from gene promoters (reviewed in [Allen and Taatjes, 2015; Malik and Roeder, 2010]).\n\nIn mammalian genomes, CpG dinucleotides are pervasively methylated and this epigenetically maintained DNA modification is generally associated with transcriptional inhibition, playing a central role in silencing of repetitive and parasitic DNA elements (Klose and Bird, 2006; Sch\u00fcbeler, 2015). Most gene promoters, however, are embedded in short elements with elevated CpG dinucleotide content, called CpG islands, which remain free of DNA methylation (Bird et al., 1985; Illingworth and Bird, 2009; Larsen et al., 1992). Interestingly, mammalian cells have evolved a DNA-binding domain, called a ZF-CxxC domain, which can recognize CpG dinucleotides when they are non-methylated (Lee et al., 2001; Voo et al., 2000). This endows ZF-CxxC domain-containing proteins with the capacity to recognize and bind CpG islands throughout the genome (Blackledge et al., 2010; Thomson et al., 2010). There are 12 mammalian proteins encoding a ZF-CxxC domain, most of which are found in large chromatin modifying complexes that post-translationally modify histone proteins to regulate gene expression from CpG islands (Long et al., 2013a). This has led to the proposal that CpG islands may function through chromatin modification to affect transcription (Blackledge et al., 2013).\n\nOne of the first characterised ZF-CxxC domain-containing proteins was lysine-specific demethylase 2A (KDM2A) (Blackledge et al., 2010). KDM2A is a JmjC-domain-containing histone lysine demethylase that removes histone H3 lysine 36 mono- and di- methylation (H3K36me1/2) from CpG islands (Blackledge et al., 2010; Tsukada et al., 2006). Like DNA methylation, H3K36me1/me2 is found throughout the genome and is thought to be repressive to gene transcription (Carrozza et al., 2005; Keogh et al., 2005; Peters et al., 2003). Therefore, it was proposed that KDM2A counteracts H3K36me2-dependent transcriptional inhibition at CpG island-associated gene promoters (Blackledge et al., 2010). Sequence-based homology searches revealed that KDM2A has two paralogues in vertebrates, KDM2B and FBXL19 (Katoh and Katoh, 2004). KDM2B, like KDM2A, binds to CpG islands and can function as a histone demethylase for H3K36me1/2 via its JmjC domain (Farcas et al., 2012; He et al., 2008). However, unlike KDM2A, it physically associates with the polycomb repressive complex 1 (PRC1) to control how transcriptionally repressive polycomb chromatin domains form at a subset of CpG island-associated genes (Blackledge et al., 2014; Farcas et al., 2012; He et al., 2013; Wu et al., 2013). These observations have suggested that, despite extensive similarity between KDM2A and KDM2B and some functional redundancy in histone demethylation, individual KDM2 paralogues have evolved unique functions. FBXL19 remains the least well characterized and most divergent of the KDM2 paralogues. Unlike KDM2A and KDM2B, it lacks a JmjC domain and, therefore, does not have demethylase activity (Long et al., 2013a). Previous work on FBXL19 has suggested that it plays a role in a variety of cytoplasmic processes that affect cell proliferation, migration, apoptosis, TGF\u03b2 signalling, and regulation of the innate immune response (Dong et al., 2014; Wei et al., 2013; Zhao et al., 2013; Zhao et al., 2012). More recently, it has also been proposed to have a nuclear function as a CpG island-binding protein (Lee et al., 2017), but its role in the nucleus still remains poorly defined.\n\nHere, we investigate the function of FBXL19 in mouse embryonic stem (ES) cells and show that it is predominantly found in the nucleus where it localizes in a ZF-CxxC-dependent manner to CpG island promoters. Biochemical purification of FBXL19 revealed an association with the CDK-containing Mediator complex and we discover that FBXL19 can target CDK-Mediator to chromatin. Conditional removal of the CpG island-binding domain of FBXL19 in ES cells leads to a reduction in the occupancy of CDK8 at CpG islands associated with inactive developmental genes. FBXL19 and CDK-Mediator appear to play an important role in priming genes for future expression, as these genes are not appropriately activated during ES cell differentiation when the CpG island-binding capacity of FBXL19 is abolished or CDK-Mediator is disrupted. Consistent with an important role for FBXL19 in supporting normal developmental gene expression, removal of the ZF-CxxC domain of FBXL19 leads to perturbed development and embryonic lethality in mice. Together, our findings uncover an interesting new mechanism by which CDK-Mediator is recruited to gene promoters in ES cells and demonstrate a requirement for FBXL19 and CDK-Mediator in priming developmental gene expression during cell lineage commitment.\n\n## Results\n\n### FBXL19 is enriched in the nucleus and binds CpG islands via its ZF-CxxC domain\n\nFBXL19 shares extensive sequence similarity and domain architecture with the other KDM2 paralogues which are predominantly nuclear proteins (Figure 1A, [Blackledge et al., 2010; Farcas et al., 2012]), yet the function of FBXL19 has largely been described in the context of cytoplasmic processes (Dong et al., 2014; Wei et al., 2013; Zhao et al., 2013; Zhao et al., 2012). Therefore, we first examined the subcellular distribution of FBXL19 to understand whether it was unique amongst KDM2 paralogues in localizing to the cytoplasm. To achieve this, we generated a mouse ES cell line expressing epitope-tagged FBXL19 (FS2-FBXL19) and carried out immuno-fluorescent staining. This revealed that FBXL19 was almost exclusively nuclear (Figure 1B). When we carried out subcellular biochemical fractionation, FBXL19 was also enriched in the nuclear fractions in agreement with the immuno-fluorescent staining (Figure 1C). Importantly, FBXL19 was found not only in the soluble nuclear extract but also in the insoluble nuclear pellet, which contains chromatin-bound factors (Figure 1C). This suggested that FBXL19 may associate with chromatin, like other ZF-CxxC domain-containing proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic illustrating KDM2 protein domain architecture. (B) Immuno-fluorescent staining for FS2-FBXL19 in ES cells. (C) ES cell fractionation and Western blot for factors enriched in the nucleus (TBP), the cytoplasm (CUL1), and FS2-FBXL19. Ponceau S staining indicates protein loading. Cyto \u2013 cytoplasmic fraction, NE \u2013 soluble nuclear extract, NP \u2013 insoluble nuclear pellet. The asterisk indicates a non-specific band. (D) Screen shots showing ChIP-seq traces for KDM2B, KDM2A and FS2-FBXL19. BioCAP is included to indicate the location of non-methylated DNA and computationally predicted CpG islands (CGIs) are illustrated above. (E) Heatmaps showing enrichment of KDM2 proteins over a 5 kb region centred on non-methylated islands identified by BioCAP (NMIs) (n\u00a0=\u00a027698), sorted by decreasing BioCAP signal. BioCAP is shown for comparison. (F) A scatter plot showing the Spearman correlation between FS2-FBXL19 ChIP-seq signal and BioCAP signal at NMIs. (G) A schematic illustrating the FS2-FBXL19 transgenes. (H) A screen shot showing ChIP-seq traces for WT FS2-FBXL19 and ZF-CxxC FS2-FBXL19 mutants as in G. EV indicates empty vector control. (I) A metaplot analysis of WT FS2-FBXL19 and ZF-CxxC FS2-FBXL19 mutants over FBXL19 peaks.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Alignment of the KDM2 protein ZF-CxxC domains. Pink indicates the location of cysteine residues that coordinate Zn2+ binding in the ZF-CxxC domain. The conserved lysine K49 within the CpG-binding KQ motif (green) in FBXL19 is indicated in red. (B\u2013C) A scatterplot showing the Spearman correlation between KDM2A or KDM2B and BioCAP at NMIs. (D) A Venn diagram showing the overlap between FS2-FBXL19 peaks (n\u00a0=\u00a011322) and NMIs (n\u00a0=\u00a027698). (E) Western blot analysis showing expression of wild-type (WT) FS2-FBXL19, \u0394CxxC FS2-FBXL19 and ZF-CxxC-mutant (K49A) FS2-FBXL19 from nuclear extracts of the respective stable ES cell lines. (F) ChIP-qPCR for WT and mutant FS2-FBXL19 enrichment at gene promoters. Error bars show SEM of three biological replicates. (G) Heatmap analysis at NMI peaks (n\u00a0=\u00a027698), showing ChIP-seq data for BioCAP, WT FS2-FBXL19 and ZF-CxxC mutants over a 5 kb region centred on the NMI, sorted by decreasing BioCAP signal.\n\nBased on the nuclear localization of FBXL19 and the fact that it encodes a highly conserved ZF-CxxC domain (Figure 1\u2014figure supplement 1A), we set out to determine whether FBXL19 is a CpG island-binding protein. To achieve this, we carried out chromatin immunoprecipitation followed by massively parallel sequencing (ChIP-seq) for epitope-tagged FBXL19 and compared its binding profile with those we have previously generated for KDM2A and KDM2B in mouse ES cells (Blackledge et al., 2014; Farcas et al., 2012). A visual examination of FBXL19 ChIP-seq signal revealed that it was highly enriched at both computationally predicted CpG islands and genomic regions that contain BioCAP signal, an experimental measure of non-methylated DNA (Blackledge et al., 2012) (Figure 1D). We then identified all non-methylated CpG islands (NMIs) using BioCAP data (n\u00a0=\u00a027698) (Long et al., 2013b) and extended our analysis across the genome. We observed that FBXL19 ChIP-seq signal at NMIs was highly similar to that of KDM2A and KDM2B (Figure 1E). Furthermore, FBXL19 ChIP-seq signal correlated well with the density of non-methylated CpG dinucleotides in NMIs, similarly to KDM2A and KDM2B, (Figure 1F and Figure 1\u2014figure supplement 1B,C), and almost all FBXL19-occupied sites fell within NMIs (Figure 1\u2014figure supplement 1D). Together these findings demonstrate that FBXL19 is a nuclear protein that binds to CpG islands, an observation supported by a recent independent study (Lee et al., 2017).\n\nKDM2A and KDM2B rely on defined residues in their ZF-CxxC domain to recognize non-methylated cytosine and bind CpG islands (Blackledge et al., 2010; Farcas et al., 2012). To determine whether the association of FBXL19 with CpG islands is dependent on this domain, we generated ES cell lines expressing either a mutant version of FBXL19, in which a key lysine residue was substituted to alanine (K49A, Figure 1\u2014figure supplement 1A) to disrupt the recognition of non-methylated CpGs, or a truncated version of FBXL19, where the ZF-CxxC domain was deleted (\u0394CXXC) (Figure 1G). Importantly, the expression levels of wild type (WT) and mutant FBXL19 transgenes were highly similar (Figure 1\u2014figure supplement 1E). We then carried out ChIP-seq for epitope-tagged FBXL19 in these cell lines and compared the binding profiles of the mutant FBXL19 to that of WT FBXL19 (Figure 1H). This revealed a near complete loss of FBXL19 binding to chromatin when the ZF-CxxC domain was deleted and a slightly less dramatic effect in the K49A mutant (Figure 1H,I, and Figure 1\u2014figure supplement 1F,G). Together, these observations demonstrate that binding of FBXL19 to CpG islands relies on an intact and functional ZF-CxxC domain.\n\n### FBXL19 interacts with the CDK-Mediator complex in ES cells\n\nOur ChIP-seq analyses demonstrated that FBXL19 is targeted to CpG islands in a manner that is highly similar to KDM2A and KDM2B (Figure 1). Although KDM2A and KDM2B localise to the same genomic regions and show a high degree of sequence conservation, they associate with different proteins (Farcas et al., 2012). This raised the interesting possibility that FBXL19 might also have unique interaction partners. To investigate this, we affinity-purified epitope-tagged FBXL19 from ES cell nuclear extract and identified associated proteins by mass spectrometry (AP-MS) (Figure 2A, Figure 2\u2014figure supplement 1A, and Figure 2\u2014source data 1). This revealed that FBXL19 interacts with SKP1, a known F-box-binding protein that also associates with KDM2A and KDM2B (Bai et al., 1996; Farcas et al., 2012), and the nuclear proteasome activator PSME3 (W\u00f3jcik et al., 1998). Interestingly, we also identified multiple subunits of the Mediator complex that appeared to interact with FBXL19 in a sub-stoichiometric manner (Figure 2A,B). Biochemical purifications of Mediator have identified two distinct assemblies (Liu et al., 2001; Mittler et al., 2001; Taatjes et al., 2002). The first is characterized by the presence of the MED26 subunit which associates with the middle region of Mediator and this form of the complex interacts with RNAPolII (N\u00e4\u00e4r et al., 2002; Paoletti et al., 2006; Sato et al., 2004; Takahashi et al., 2011). Alternatively, a kinase module, composed of CDK8/CDK19, MED12/12L, MED13/13L, and CCNC, can bind to Mediator in a manner which is mutually exclusive with MED26 (Taatjes et al., 2002). Interestingly, our FBXL19 purification identified subunits of the kinase-containing Mediator complex (CDK-Mediator), but not MED26 or RNAPolII (Figure 2). This suggests that FBXL19 interacts preferentially with CDK-Mediator, however, we cannot exclude the possibly it may also interact with MED26-Mediator. CDK8 and its paralogue CDK19 share 77% amino acid identity (89% similarity) (Audetat et al., 2017; Galbraith et al., 2013; Sato et al., 2004; Tsutsui et al., 2008) and four out of the five peptides identified by mass spectrometry were common between the two proteins (data not shown). Therefore, it is likely that FBXL19 is able to interact with both CDK8- and CDK19-containing Mediator complexes. Importantly, interaction with CDK-Mediator was also evident when we performed affinity-purification of endogenous FBXL19 (Figure 2\u2014figure supplement 1B\u2013D). However, reciprocal immunopurifications of MED12 and CDK8 failed to yield detectable FBXL19 by western blot (Figure 2\u2014figure supplement 1D). This is in agreement with our mass spectrometry analysis, which indicated that the association of FBXL19 with CDK-Mediator is sub-stoichiometric, and suggests that this interaction is likely weak, as opposed to stable, inside\u00a0cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig2-v2.jpg)\n\n**Figure 2.:** (A) A heatmap representing the empirically modified protein abundance index (emPAI) of identified FBXL19-interacting proteins by affinity purification mass spectrometry (AP-MS). Data shown is an average of two biological replicates. The location of the identified Mediator components within the holocomplex is summarised on the right and in (B). (B) A schematic representation of the identified FBXL19-interacting proteins. Subunits of the CDK-Mediator complex not identified by AP-MS are shown in white. (C) Western blot analysis of FS2-FBXL19 and control purifications (EV) probed with the indicated antibodies.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) A representative silver-stained gel for FS2-FBXL19 purification and an empty vector control (EV) purification. Asterisk identifies the band corresponding to FS2-FBXL19 protein. (B) In order to visualize FBXL19 protein by western blot in Figure 2\u2014figure supplement 1D and Figure 4B, the Fbxl19 gene was tagged by T7 knock-in in Fbxl19fl/fl ES cells using the CRISPR Cas9 system. A schematic representation of the generation of the C-terminal T7 knock-in Fbxl19 is shown. HA1/2 indicate the homology arms of the targeting construct. (C) Western blot analysis of the expression of T7-FBXL19 from nuclear extract of the generated T7 knock-in ES cell line. (D) Western blot analysis of endogenous co-immunoprecipitation (IP) of FBXL19, CDK8 and MED12 from ES cell nuclear extracts. A control IP using a non-specific antibody (\u03b1-\u0397\u0391) was included. (E) A schematic illustration of the different FS2-FBXL19 truncation mutants and Western blot analysis of purification of FS2-FBXL19 mutants from HEK293T cells probed with the indicated antibodies. (F) Western blot analysis of FS2-FBXL19 and control purifications (EV) probed with the indicated antibodies. (G) Western blot analysis of histone extracts generated from Fbxl19fl/fl (WT) and Fbxl19\u0394CXXC (OHT) ES cells probed with two different antibodies recognizing ubiquitylated H2B K120 (H2Bub1). H4 was used as a loading control. (H) Western blot analysis of nuclear extracts from HEK293T cells transiently transfected with empty vector (EV) or Flag-FBXL19-expressing vector without (-) or following MG132 treatment (+). Blots were probed with the indicated antibodies. TBP was used as loading control.\n\nWe next wanted to determine which region of FBXL19 is required for interaction with CDK-Mediator. To do so, we transiently expressed full length FBXL19 or versions of FBXL19 with individual domains removed and performed affinity purification followed by western blot analysis. Intact FBXL19 and a version with the ZF-CxxC domain removed interacted with CDK-Mediator, whereas removing the F-box domain resulted in a loss of this interaction (Figure 2\u2014figure supplement 1E). Therefore, FBXL19 relies on its F-box, and not its capacity to bind non-methylated DNA, for its association with CDK-Mediator.\n\nBased on a candidate approach, it was recently reported that FBXL19 could interact the RNF20/40 E3 ubiquitin ligase in ES cells and regulate histone H2B lysine 120 ubiquitylation (H2BK120ub1) (Lee et al., 2017). In our unbiased biochemical purification of FBXL19, we did not identify an interaction with RNF20/40 by AP-MS or by western blot analysis (Figure 2A and Figure 2\u2014figure supplement 1F). Furthermore, we failed to observe any relationship between the ability of FBXL19 to associate with CpG islands and the levels of H2BK120ub1 (Figure 2\u2014figure supplement 1G). Therefore, the relevance of this proposed interaction remains unclear.\n\nFBXL19 contains conserved F-box and leucine-rich repeat (LRR) domains. F-box proteins are known to function as scaffolds and substrate recognition modules for the SKP1-Cullin-F-box (SCF) protein complexes that ubiquitylate proteins for degradation by the proteasome (Skaar et al., 2014; Skowyra et al., 1997). Based on the association of FBXL19 with SKP1 and PSME3, we speculated that FBXL19 might function as a SCF substrate-selector for CDK-Mediator, as has previously been observed for the related F-box-containing protein FBW7 (Davis et al., 2013). Interestingly, however, in our FBXL19 purifications, we did not detect the SCF complex components CUL1 and RBX1/2, which are required for ubiquitin E3 ligase activity (Skaar et al., 2014) (Figure 2A). Nevertheless, we investigated in more detail whether FBXL19 might regulate CDK-Mediator protein levels. Treatment of ES cells with the proteasome inhibitor MG132, which sequesters SCF substrates on their substrate selector, did not lead to elevated levels of Mediator subunits in FBXL19 purifications as identified by AP-MS (unpublished observation). In addition, transient overexpression of FBXL19 did not cause an appreciable reduction in CDK-Mediator protein (Figure 2\u2014figure supplement 1H). Based on these observations, we conclude that FBXL19 does not function as a SCF substrate selector for CDK-Mediator. This raised the interesting possibility that FBXL19 may function in a proteasome-independent manner with CDK-Mediator at CpG islands.\n\n### FBXL19 recruits CDK-Mediator to chromatin\n\nIt has previously been shown that transcription factors can recruit the Mediator complex to enhancers and gene promoters (Poss et al., 2013), yet the complement of mechanisms by which Mediator is targeted to chromatin remains very poorly defined. Given that FBXL19 does not appear to regulate CDK-Mediator protein levels, we hypothesized that it might instead function to recruit CDK-Mediator to chromatin. To test this possibility, we took advantage of a synthetic system we have developed to nucleate proteins de novo on chromatin and test their capacity to recruit additional factors (Blackledge et al., 2014). Fusion of the Tet repressor DNA-binding domain (TetR) to FBXL19 allowed the recruitment of FBXL19 to a short array of Tet repressor DNA binding sites (TetO), engineered into a single site on mouse chromosome 8 ([Blackledge et al., 2014], Figure 3A). To determine whether FBXL19 was sufficient to recruit CDK-Mediator to chromatin, we stably expressed TetR or the TetR-FBXL19 fusion protein in the TetO array-containing ES cell line (Figure 3\u2014figure supplement 1A). We then carried out ChIP for CDK-Mediator subunits (Figure 3B). Consistent with our biochemical observations (Figure 2), when we examined the binding of CDK8 and MED12 over the TetO array, we observed an enrichment in the TetR-FBXL19 line. Furthermore, binding of MED4, which is part of the core Mediator complex, was also evident at the TetO array (Figure 3B). This suggests that FBXL19 may be sufficient to recruit a holo-CDK-Mediator complex, in keeping with its biochemical co-purification with multiple components of both the CDK module and core Mediator complex (Figure 2). Importantly, stable expression of TetR-KDM2A and TetR-KDM2B did not lead to CDK8 recruitment, indicating that this activity is unique to FBXL19 (Figure 3\u2014figure supplement 1B). Further work will be required to determine the dynamics with which individual Mediator components are recruited to chromatin by FBXL19 as well as the precise composition of such complexes. Together these observations demonstrate that FBXL19 interacts specifically with the CDK-Mediator and can recruit this complex de novo to chromatin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig3-v2.jpg)\n\n**Figure 3.:** (A) A schematic representation of the integration site of the TetO array. (B) ChIP-qPCR analysis of the binding of the indicated proteins across the TetO array in TetR only (top) and TetR-FBXL19 (bottom) ES cell lines. The x-axis indicates the spatial arrangement of the qPCR amplicons with respect to the center of the TetO array (in kb). Error bars represent SEM of three biological replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Western blot analysis of the expression of the TetR-fusion proteins from nuclear extracts of the respective cell lines. BRG1 was probed as a loading control. (B) ChIP-qPCR analysis of the binding of the indicated proteins across the TetO array (distance from center shown) in TetR-KDM2A (top) and TetR-KDM2B (bottom) ES cell lines. The x-axis indicates the spatial arrangement of the qPCR amplicons with respect to the center of the TetO array (in kb). Error bars represent SEM of three biological replicates.\n\n### FBXL19 is required for appropriate CDK8 occupancy at a subset of CpG island-associated promoters\n\nFBXL19 binds specifically to CpG islands (Figure 1) and can recruit CDK-Mediator to an artificial binding site on chromatin (Figure 3). This raised the interesting possibility that FBXL19 may help to recruit CDK-Mediator to CpG islands in ES cells. To examine this, we first performed CDK8 ChIP-seq in ES cells and compared it to FBXL19 ChIP-seq. Unlike FBXL19, CDK8 occupancy was not restricted to CpG islands (Figure 4\u2014figure supplement 1A), with only 67.5% of CDK8 peaks overlapping with NMIs and CDK8 binding showing a limited correlation with BioCAP signal (Spearman correlation \u2013 0.48, Figure 4\u2014figure supplement 1B). This is in line with previous studies demonstrating that the Mediator complex is recruited to both enhancers and gene promoters (Kagey et al., 2010; Malik and Roeder, 2010). Interestingly, however, we observed enrichment of CDK8 at FBXL19 peaks (Figure 4\u2014figure supplement 1C) with 89.4% of FBXL19 peaks overlapping with CDK8 peaks and NMIs (Figure 4\u2014figure supplement 1D) raising the possibility that FBXL19 may contribute to its occupancy at these sites. To directly test this, we developed an ES cell system in which the exon encoding the ZF-CxxC domain of FBXL19 is flanked by loxP sites (Fbxl19fl/fl) (Figure 4\u2014figure supplement 1E) and which expresses tamoxifen-inducible ERT2-Cre recombinase. Upon addition of tamoxifen (OHT), the ZF-CxxC-encoding exon is excised, yielding a form of FBXL19 that lacks the ZF-CxxC domain (FBXL19\u0394CXXC) (Figure 4A,B, and Figure 4\u2014figure supplement 1F) and can, therefore, no longer bind CpG islands (Figure 1). This model cell system allows us to specifically examine the CpG island-associated functions of FBXL19 without affecting its other proposed roles (Dong et al., 2014; Wei et al., 2013; Zhao et al., 2013; Zhao et al., 2012). Following removal of the ZF-CxxC domain of FBXL19, we observed some reductions in FBXL19 protein levels (Figure 4B), but importantly CDK8 levels were unaffected (Figure 4\u2014figure supplement 1G). Using this conditional Fbxl19\u0394CXXC ES cell line, we then examined CDK8 occupancy on chromatin by ChIP-seq before and after OHT treatment. Genome-wide profiling of CDK8 in Fbxll19\u0394CXXC ES cells did not reveal widespread alterations in CDK8 binding (Figure 4C left and Figure 4\u2014figure supplement 1H), indicating that FBXL19 is not the central determinant driving CDK8 recruitment to most of its binding sites in the genome. Intriguingly, however, a more detailed site-specific analysis revealed a subset of CDK8 target sites that displayed significant alteration in CDK8 occupancy (Figure 4C,D, and Figure 4\u2014figure supplement 1H). In keeping with a potential role for FBXL19 in CDK8 recruitment, the majority of the affected sites showed reduced CDK8 binding (n\u00a0=\u00a0783) (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig4-v2.jpg)\n\n**Figure 4.:** (A) A schematic illustrating how addition of OHT (4-hydroxytamoxifen) leads to the generation of Fbxl19\u0394CXXC ES cells. (B) Western blot analysis of an OHT-treatment time course in the Fbxl19fl/fl ES cell line. Hours of treatment are shown. FBXL19 protein was C-terminally tagged with a T7 epitope (Figure 2\u2014figure supplement 1B, C) to allow for Western blot detection with an anti-T7 antibody. FBXL19 runs as a doublet that shifts in size following deletion of the CxxC domain. TBP was probed as a loading control. (C) Metaplots showing CDK8 enrichment in Fbxl19fl/fl ES cells (WT) and Fbxl19\u0394CXXC ES cells (OHT) at all CDK8 peaks (left), peaks showing decreased CDK8 occupancy (\u2191, middle) and peaks showing increased CDK8 occupancy (\u2193, right). The number of total peaks in each group is indicated. p-values denote statistical significance calculated by Wilcoxon rank sum test comparing ChIP-seq read counts between WT and OHT samples across a 1.5-kbp interval flanking the center of CDK8 peaks. (D) Screen shots showing ChIP-seq traces for CDK8 in wild type Fbxl19fl/fl ES cells (WT) and Fbxl19\u0394CXXC ES cells (OHT). BioCAP and FS2-FBXL19 tracks are given for comparison. Left \u2013 CDK8 peaks showing reduced CDK8 binding in Fbxl19\u0394CXXC ES cells; Right \u2013 CDK8 peaks showing increased CDK8 binding in Fbxl19\u0394CXXC ES cells (indicated with rectangles). (E) Boxplots showing log2 fold change (log2FC) of CDK8 ChIP-seq signal (RPKM) at all CDK8 peaks (n\u00a0=\u00a024273), and those with reduced CDK8 (n\u00a0=\u00a0783, \u2193) and increased CDK8 (n\u00a0=\u00a0379, \u2191). p-values were calculated using a Wilcoxon rank sum test. (F) Boxplots showing the\u00a0size of CDK8 peaks as in (E). p-values were calculated using a Wilcoxon rank sum test. (G) Venn diagrams representing the overlap between CDK8 peaks and super enhancers (SE) at CDK8 peaks as in (E). Percent overlap of all SEs is indicated. (H) A metaplot (left) showing BioCAP enrichment at CDK8 peaks as in (E) and boxplot quantification (right) of BioCAP RPKM levels. p-Values calculated using Wilcoxon rank sum test are indicated. (I) A metalplot (left) showing FS2-FBXL19 enrichment at CDK8 peaks as in (E) and boxplot quantification (right) of FS2-FBXL19 RPKM levels. p-values calculated using Wilcoxon rank sum test are indicated.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A Venn diagram showing the overlap between CDK8 peaks (n\u00a0=\u00a024273) and NMIs (n\u00a0=\u00a027698). (B) A scatter plot showing Spearman correlation between CDK8 signal and BioCAP at NMIs. (C) Heatmaps showing enrichment of CDK8, FS2-FBXL19 and BioCAP at FBXL19 peaks (n\u00a0=\u00a011322) sorted by decreasing FBXL19 signal. (D) A Venn diagram showing the overlap between FBXL19 peaks (n\u00a0=\u00a011322), CDK8 peaks (n\u00a0=\u00a024273), and NMIs (n\u00a0=\u00a027698). Percent overlap of all FBXL19 peaks is shown. (E) A schematic of the Fbxl19fl/fl allele showing the location of the loxP sites. Treatment with tamoxifen (OHT) results in Cre-mediated deletion of the second exon, encoding for the ZF-CxxC domain but leaving the rest of the gene and protein intact. (F) RT-qPCR of FBXL19 expression in Fbxl19fl/fl ES cells before (WT) and following tamoxifen treatment (OHT). Primers specific for the ZF-CxxC and LRR domains were used. Expression is relative to expression in WT ES cells. Error bars show SEM of three biological experiments. (G) A Western blot analysis of the expression of Mediator subunits in Fbxl19fl/fl (WT) and Fbxl19\u0394CXXC (OHT) ES cells. HDAC1 and TBP were probed as loading controls. (H) Heatmaps showing enrichment of CDK8 in Fbxl19fl/fl (WT) and Fbxl19\u0394CXXC (OHT), FS2-FBXL19 and BioCAP signal at ATAC peaks divided based on change in CDK8 binding in Fbxl19\u0394CXXC ES cells as in Figure 4E. The mean of the enrichment for each group is shown above the heatmaps. Left: zoomed heatmaps for ATAC peaks associated with a decrease (\u2193) or an increase (\u2191) in CDK8 binding and a differential heatmap representing log2 fold change of CDK8 signal between OHT and WT samples at the differential peaks. (I) Percent overlap between CDK8 peaks (as in Figure 4E) and transcription start sites of genes (TSS, left) or FBXL19 peaks (right). (J) Metaplots showing enrichment of FS2-FBXL19, BioCAP and CDK8 ChIPseq signal at all CDK8 peaks (left), FBXL19-bound CDK8 peaks (FBXL19+, middle) and nonFBXL19 CDK8 peaks (FBXL19-, right). Peaks were divided based on change in CDK8 binding in Fbxl19\u0394CXXC ES cells as in Figure 4E.\n\nUpon closer examination of sites with reduced CDK8 occupancy in Fbxll19\u0394CXXC ES cells, we discovered that they tended to coincide with broad regions of CDK8 enrichment (Figure 4E,F), a feature often associated with super-enhancers (Whyte et al., 2013). However, a comparison of these sites to the location of super-enhancers in mouse ES cells indicated that these were distinct (Figure 4G). Instead, sites displaying reduction in CDK8 occupancy coincided with broad regions of non-methylated DNA (Figure 4D,H, and Figure 4\u2014figure supplement 1H), tended to be associated with gene promoters (Figure 4\u2014figure supplement 1I), and had elevated levels of FBXL19 (Figure 4I and Figure 4\u2014figure supplement 1H,I,J). Together, these observations suggest that although binding of CDK8 to most of its target sites in the genome is achieved independently of FBXL19, a subset of broad CpG island-associated gene promoters appear to rely on FBXL19 for appropriate CDK8 occupancy.\n\n### FBXL19 targets CDK8 to promoters of silent developmental genes in ES cells\n\nDespite associating widely with CpG island gene promoters, FBXL19 appears to play a very specific role in maintaining appropriate CDK8 occupancy at a particular subset of broad CpG island-associated promoters (Figure 4). We were therefore curious to know whether something distinguishes these gene promoters from other FBXL19-bound promoters, where FBXL19 does not contribute appreciably to CDK8 occupancy (Figure 4\u2014figure supplement 1H). To achieve this, we initially performed gene ontology (GO) analysis (Huang et al., 2009) on the genes with reduced CDK8 levels at their promoters in Fbxl19\u0394CXXC ES cells. Interestingly, this revealed that these genes were strongly enriched for developmental processes (Figure 5A) in agreement with our previous discovery that broad CpG islands are an evolutionary conserved feature of developmentally regulated genes (Long et al., 2013b). In contrast, genes associated with an increased binding of CDK8 did not show any significant GO term enrichment (unpublished observation). GO analysis of the genes associated with unchanged CDK8 levels revealed terms for a broad range of basic molecular processes in line with a general role for Mediator in transcriptional regulation (Figure 5\u2014figure supplement 1E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig5-v2.jpg)\n\n**Figure 5.:** (A) Gene ontology analysis of genes associated with a decrease in CDK8 binding (n\u00a0=\u00a0673).(B) A boxplot showing expression levels (log2FPKM) of CDK8-bound genes in wild-type ES cells. CDK8-associated genes are divided based on CDK8 binding in Fbxl19\u0394CXXC ES cells: all CDK8-bound (n\u00a0=\u00a015161), reduced CDK8 (n\u00a0=\u00a0673, \u2193), and increased CDK8 binding (n\u00a0=\u00a0255, \u2191). p-values were calculated using a Wilcoxon rank sum test. (C) A boxplot showing the change in gene expression (log2 fold change) observed by 4sU RNA-seq of CDK8-associated genes (as in B) following RA treatment. p-values were calculated using a Wilcoxon rank sum test. (D) A boxplot comparing gene expression levels (log2FPKM) of all (n\u00a0=\u00a019310) and FBXL19-bound (FBXL19+, n\u00a0=\u00a011368) genes separated by low (all genes n\u00a0=\u00a07417; FBXl19+\u00a0genes n\u00a0=\u00a02031) and high expression levels (all genes n\u00a0=\u00a011893, FBXl19+\u00a0genes n\u00a0=\u00a09337) in ES cells (based on Figure 5\u2014figure supplement 1B). (E) A boxplot showing CDK8 enrichment at all and FBXL19-bound genes separated by expression level as in (D). (F) A boxplot showing change in CDK8 binding at the TSSs of all and FBXL19-bound genes divided by expression level as in (D). p-values were calculated using a Wilcoxon rank sum test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Metaplots showing enrichment of H3K27me3 (left) and H3K4me3 (right) ChIPseq signal at all (top), reduced (\u2193) and increased (\u2191) CDK8 peaks. (B) Heatmaps showing enrichment of CDK8, H3K27me3 and H3K4me3 ChIPseq signal at H3K27me3 peaks (n\u00a0=\u00a05588) divided by overlap with CDK8 peaks (CDK8\u00a0+n\u00a0=\u00a03637, CDK8- n\u00a0=\u00a01950) sorted by decreasing H3K27me3 signal. Distance from the peak center is shown. (C) Volcano plots showing alterations in expression (log2 fold change) comparing ES cells and RA-treated cells. Genes that rely on FBXL19 for normal CDK8 binding in the ES cells state are plotted. Top: reduced levels of CDK8 (red, n\u00a0=\u00a0673 of which 203 genes are significantly induced by RA and 55 genes are ES-specific). Bottom: increased levels of CDK8 (green, n\u00a0=\u00a0255 of which 28 genes are significantly induced by RA and 26 genes are ES-specific). (D) Genes for Figure 5D\u2013F were separated into two categories (low and high expression) based on FPKM value cut-off represented by the dashed line. (E) Gene ontology analysis of the genes associated with unchanged CDK8 levels in FBXL19\u0394CxxC ES cells (n\u00a0=\u00a014767).\n\nIn pluripotent mouse ES cells, many developmental genes are inactive and only become expressed as cells commit to more differentiated lineages (Boyer et al., 2006). Importantly, the genes that exhibited reductions in CDK8 binding in Fbxl19\u0394CXXC cells were expressed at significantly lower levels than most other genes in ES cells (Figure 5B). Previous work has identified a subset of poised but inactive developmental genes in ES cells that are proposed to exist in a bivalent chromatin state characterized by the co-occurrence of histone H3 lysine 4 and 27 methylation (H3K4/K27me) (Bernstein et al., 2006; Mikkelsen et al., 2007). Therefore, we examined whether sites that rely on FBXL19 for normal CDK8 binding also corresponded to bivalent regions in ES cells. We found that these regions are enriched for H3K27me3 (Figure 5\u2014figure supplement 1A) and have elevated H3K4me3 compared to other H3K27me3-modified sites that lack CDK8 (Figure 5\u2014figure supplement 1B). Therefore, sites that rely on FBXL19 for normal CDK8 binding and correspond to silent developmental gene promoters are also bivalent. To ask whether these genes are induced during cell lineage commitment, we compared their expression levels in ES cells and following retinoic acid (RA) treatment which induces differentiation (Figure 6\u2014figure supplement 1B,C). This clearly demonstrated that the genes which rely on FBXL19 for appropriate CDK8 binding in the ES cell state can become transcriptionally activated during stem cell lineage commitment (Figure 5C).\n\nThe observation that FBXL19 appears to be important for CDK8 occupancy at largely inactive genes was intriguing given that previous work characterizing Mediator function has usually focussed on its activity at actively transcribed or induced genes (reviewed in [Poss et al., 2013]). We therefore set out to examine the relationship between FBXL19, CDK8 and gene expression in more detail. We first separated all promoters based on expression of their\u00a0associated genes (Figure 5D and Figure 5\u2014figure supplement 1D). We observed that CDK8 occupancy was in general linked to gene activity (Figure 5E), in agreement with previous reports (Alarc\u00f3n et al., 2009; Bancerek et al., 2013; Donner et al., 2010; Donner et al., 2007; Fryer et al., 2004; Galbraith et al., 2013). However, at FBXL19-bound gene promoters, CDK8 occupancy was similar in both the lowly and highly expressed subsets of genes (Figure 5E). Importantly, CDK8 occupancy at promoters of lowly expressed genes was reduced in Fbxl19\u0394CXXC ES cells (Figure 5F). Therefore, these observations reveal that CDK8 is enriched at promoters of inactive or lowly expressed genes in ES cells and its binding is dependent on recognition of CpG islands by FBXL19.\n\n### Removing the CpG island-binding domain of FBXL19 results in a failure to induce developmental genes during ES cell differentiation\n\nFBXL19 appears to play a role in recruiting CDK8 to a class of genes that are repressed in the ES cell state and become activated during cell linage commitment (Figure 5). However, it remained unclear whether FBXL19 is required for the activation of these developmental genes. To address this question, we induced differentiation of Fbxl19fl/fl and Fbxl19\u0394CXXC ES cells with RA (Figure 6A) and compared the expression of several genes which showed reduced CDK8 binding in Fbxl19\u0394CXXC ES cells (Figure 6B). We observed no significant differences in the expression of these genes in wild-type Fbxl19fl/fl and Fbxl19\u0394CXXC ES cells where these genes are silent. Strikingly, however, following RA treatment, Fbxl19\u0394CXXC cells failed to induce these genes appropriately (Figure 6B). Similarly, developmental genes were not appropriately induced during embryoid body differentiation of Fbxl19\u0394CXXC ES cells (Figure 6\u2014figure supplement 1A). Importantly, this demonstrates that FBXL19 is required for the appropriate activation of developmental gene expression during cell lineage commitment.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig6-v2.jpg)\n\n**Figure 6.:** (A) A schematic illustrating the OHT treatment and differentiation approach. (B) RT-qPCR gene expression analysis of genes showing decreased CDK8 binding in Fbxl19\u0394CXXC ES cells before (ESC) and after RA induction. Expression is relative to the average of two house-keeping genes. Error bars show SEM of three biological replicates, asterisks represent statistical significance calculated by Student T-test: *p<0.05, **p<0.01, ***p<0.001. (C) Volcano plots showing differential expression (log2 fold change) comparing WT and Fbxl19\u0394CXXC cells in the ES cell (top) and RA-induced state (bottom). Differentially expressed genes (log2FC\u00a0<\u00a0\u22120.5 or log2FC\u00a0>\u00a00.5, padj\u00a0<0.1) are shown in red. The number of genes considered to be significantly altered in expression are indicated. (D) Gene ontology analysis of genes with decreased expression in Fbxl19\u0394CXXC ES cells following RA treatment (n\u00a0=\u00a0552). (E) A boxplot indicating the expression level (FPKM) based on 4sU RNA-seq in wild-type ES cells of the gene groupings in (C): n.c. genes n\u00a0=\u00a017869 (no significant\u00a0change), up genes\u00a0=\u00a0889, down genes\u00a0=\u00a0552. p-values calculated using a Wilcoxon rank sum test are indicated. (F) A boxplot indicating the log2 fold change in gene expression of the gene groupings in (E) upon RA differentiation of ES cells. p-values calculated using a Wilcoxon rank sum test are indicated. (G) A boxplot indicating the change in CDK8 binding (log2FC) at the promoters of the gene groupings in (E) in ES cells. p-values calculated using a Wilcoxon rank sum test are indicated.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) RT-qPCR gene expression analysis of developmental genes during an embryoid body differentiation time course. Expression is relative to an average of two house-keeping genes. Error bars represent SEM of three biological replicates. (B) A volcano plot showing differential expression (log2 fold change) comparing ES cells and RA-induced cells. Differentially expressed genes (log2FC\u00a0<\u00a0\u22120.5 or log2FC\u00a0>\u00a00.5, padj\u00a0<0.05) are shown in red. The number of genes considered to be significantly different in expression are indicated. (C) Gene ontology analysis of the genes induced following RA treatment (n\u00a0=\u00a04051). (D) Gene ontology analysis of the up-regulated genes in Fbxl19\u0394CXXC cells following RA treatment (n\u00a0=\u00a0889). (E) Expression changes of CDK8-target genes (log2 fold change) in Fbxl19\u0394CXXC cells compared to WT cells in ES cells (ESC, left) and following RA treatment (right). Genes are divided based on the changes in CDK8 binding in Fbxl19\u0394CXXC ES cells - all CDK8 peaks (n\u00a0=\u00a015161), reduced CDK8 peaks (n\u00a0=\u00a0673,\u00a0\u2193) and increased CDK8 peaks (n\u00a0=\u00a0255, \u2191). p-values were calculated using a Wilcoxon rank sum test.\n\nTo understand the extent to which genes are not appropriately induced during differentiation of Fbxl19\u0394CXXC ES cells, we examined ongoing transcription in both the ES cell state and after RA-mediated differentiation using short time-scale 4-thiouridine-based labeling and RNA sequencing (4sU RNA-seq) (Figure 6A). We observed a significant number of genes that become induced upon RA treatment in wild-type cells (n\u00a0=\u00a04051) (Figure 6\u2014figure supplement 1B and Figure 6\u2014source data 1). GO term analysis confirmed that these genes are associated with ES cell differentiation and early embryonic development (Figure 6\u2014figure supplement 1C). We then used differential gene expression analysis to compare transcription in Fbxl19fl/fl and Fbxl19\u0394CXXC cells (Figure 6C and Figure 6\u2014source data 1). While very few significant changes in gene expression were observed in the ES cell state, following RA-induced differentiation we identified a large number of genes (n\u00a0=\u00a0552) that had significantly lower expression levels in Fbxl19\u0394CXXC cells (Figure 6C). This is consistent with our results when examining individual genes (Figure 6B and Figure 6\u2014figure supplement 1A) and with a recent study where the expression of a selection of genes was examined following FBXL19 knock-down (Lee et al., 2017). GO analysis revealed that the set of genes that were not appropriately activated were associated with genes involved in developmental processes (Figure 6D and Figure 6\u2014source data 1), unlike genes with increased expression (n\u00a0=\u00a0889) which were not associated with these processes (Figure 6\u2014figure supplement 1D and Figure 6\u2014source data 1). It is possible that the observed increases in gene expression in Fbxl19\u0394CXXC cells following RA induction result from secondary effects or as of yet unidentified roles of FBXL19 in inhibiting gene expression. Nevertheless, consistent with our analysis of FBXL19-dependent CDK8 occupancy at promoters of developmental genes (Figure 5B,C), genes not appropriately induced were lowly expressed in wild-type ES cells (Figure 6E) and tended to become activated following RA induction (Figure 6F). Importantly, these genes exhibited a reduction in CDK8 binding in Fbxl19\u0394CXXC ES cells (Figure 6G and Figure 6\u2014figure supplement 1E), supporting the idea that FBXL19 recruits CDK8 to this subset of CpG island-associated developmental genes and that this may prime these genes for activation during differentiation.\n\n### FBXL19 target genes rely on CDK-Mediator for activation during differentiation\n\nGiven that FBXL19 is required for CDK8 occupancy at the promoters of a series of silent developmental genes and for their activation during differentiation (Figures 5 and 6), we hypothesized that FBXL19 may prime these genes for future activation through the activity of CDK-Mediator. To address this interesting possibility, we developed a system to conditionally remove MED13 and its closely related paralogue MED13L in ES cells (Med13/13lfl/fl ERT2-Cre ES cells) (Figure 7A and Figure 7\u2014figure supplement 1A). We chose to inactivate MED13/13L as it has previously been shown to physically link the CDK-kinase module to the core Mediator complex and underpin the formation of a functional CDK-Mediator (Knuesel et al., 2009; Tsai et al., 2013). Treatment of the Med13/13lfl/fl ES cells with OHT resulted in a loss of MED13 and MED13L protein (MED13/13L KO) and reduced levels of the other subunits of the CDK-kinase module (Figure 7B). Importantly, removal of MED13/13L also led to a loss of CDK8 binding to chromatin (Figure 7C) but did not have an appreciable effect on the expression of FBXL19 target genes in the ES cell state (Figure 7D). We next induced differentiation of the MED13/13L KO cells with RA (Figure 7A). Importantly, when we then analysed the expression of a series of genes that rely on FBXL19 for activation during differentiation (Figure 7D), we observed that these genes also failed to appropriately induce in MED13/13L KO cells (Figure 7D). Together this suggests that FBXL19, via its association with CpG islands, recognises a subset of silent developmental genes in ES cells in order to recruit the CDK-Mediator complex and prime these genes for future activation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig7-v2.jpg)\n\n**Figure 7.:** (A) A schematic illustrating the OHT treatment to generate MED13/13L KO ES cells and differentiation approach. (B) Western blot analysis showing the efficiency of MED13/13 knock-out upon 96 hr OHT treatment of Med13/13lfl/fl ES cells. Suz12 was blotted as a loading control. (C) ChIP-qPCR showing CDK8 enrichment in WT and MED13/13L KO ES cells. Enrichment is relative to gene desert control region. Error bars show standard deviation of two biological replicates. (D) RT-qPCR gene expression analysis in WT and MED13/13L KO ES cells before and after RA induction. Expression was normalized to the expression of the PolIII-transcribed gene tRNA-Lys and is represented as relative to WT ES cells (for pluripotency genes) or RA-treated WT cells (for differentiation markers). Error bars show SEM of three biological replicates, asterisks represent statistical significance calculated by Student T-test: *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A schematic representation of the strategy used to generate a MED13/13 l double conditional ERT2-Cre ES cell line. LoxP sites flanking exons 7 and 8 of Med13 and Med13l were inserted using CRISPR-Cas9 mediated targeting. Treatment with tamoxifen (OHT) results in deletion of exons 7 and 8.\n\n### Ablating the capacity of FBXL19 to bind CpG islands causes embryonic lethality\n\nOur results suggest that FBXL19 contributes to gene activation during cell lineage commitment via recognition of CpG islands and recruitment of the CDK-Mediator complex. Given that Fbxl19\u0394CXXC cells display impaired gene activation in our in vitro differentiation model, we asked whether the inability of FBXL19 to bind and function at CpG islands could also affect mouse development. In order to address this, we generated Fbxl19\u0394CXXC mutant mice by crossing Fbxl19fl/fl animals with animals constitutively expressing Cre recombinase. From these crosses, we failed to obtain any viable Fbxl19\u0394CXXC homozygous offspring, indicating that removal of the ZF-CxxC domain of FBXL19 leads to embryonic lethality (Figure 8A). We then investigated at which stage Fbxl19\u0394CXXC homozygous embryos were affected and found homozygous embryos were observed at normal Mendelian ratios until 10.5 days postcoitum (dpc) (Figure 8A). At 9.5 dpc, gross embryonic morphology appeared to be intact but at 10.5 dpc (Figure 8B) the embryos exhibited a clear growth retardation and showed, to varying extents, reduced elongation of the trunk, hypomorphic limb buds and cephalic region. This included undeveloped facial mesenchyme, including defects in maxillary and mandibular components of first branchial arches (indicated by yellow and red arrows in Figure 8B, respectively), and hypomorphic cardiac mesenchyme. Some living Fbxl19\u0394CXXC homozygous embryos, characterized by a beating heart, were observed at 12.5 dpc but they were of similar size and external appearance to 10.5 dpc mutant embryos suggesting that normal development had ceased by this point. Together our findings demonstrate that FBXL19, and its ability to recognize CpG islands, is essential for normal mouse embryonic development.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/37084/elife-37084-fig8-v2.jpg)\n\n**Figure 8.:** (A) After crossing heterozygotes, the number of live embryos (9.5 dpc or 10.5 dpc) or newborn pups with the indicated genotypes is indicated with the percentages shown in parentheses. (B) The morphological changes in 10.5 dpc Fbxl19CXXC\u0394/\u0394 embryos are indicated. Lateral views of wild-type (wt), together with heterozygous (Fbxl19CXXC\u0394/+) and homozygous (Fbxl19CXXC\u0394/\u0394) mutants are shown. Maxillary and mandibular components of first branchial arches are indicated by yellow and red arrows, respectively.\n\n## Discussion\n\nHere, we discover that FBXL19 recognizes CpG islands throughout the genome in a ZF-CxxC-dependent manner (Figure 1). Unlike other ZF-CxxC proteins which associate with chromatin-modifying complexes, we show that FBXL19 interacts with the CDK-Mediator complex (Figure 2). This uncovers an unexpected link between CpG islands and a complex that regulates gene expression through interfacing with the transcriptional machinery. We demonstrate that FBXL19 can recruit CDK-Mediator to chromatin (Figure 3) and, via recognition of CpG islands, plays an interesting role in supporting CDK8 occupancy at a subset of promoters associated with developmental genes, which are inactive in ES cells (Figure 4 and Figure 5). At these CpG islands, FBXL19 and CDK-Mediator function to prime the associated genes for activation during ES cell differentiation (Figure 6 and Figure 7). Consistent with an important role of FBXL19 in supporting normal developmental gene expression, removal of the ZF-CxxC domain of FBXL19 leads to perturbed development and embryonic lethality in mice (Figure 8). Together these new discoveries reveal that CpG islands and FBXL19 can interface with CDK-Mediator to orchestrate normal gene expression during lineage commitment.\n\nPreviously, another F-box protein, FBW7, was shown to function as an E3 ubiquitin ligase substrate selector for the MED13/13L subunit of CDK-Mediator and to regulate its stability through proteasomal degradation (Davis et al., 2013). By controlling CDK-Mediator abundance, one could envisage how this might shape Mediator function in gene expression. FBXL19 also encodes an F-box domain and associates with SKP1, a central component of SCF E3 ubiquitin ligase complexes. However, we do not find evidence that FBXL19 regulates CDK-Mediator stability via the proteasome (Figure 2\u2014figure supplement 1H). Instead, we discover that FBXL19 can recruit CDK-Mediator to chromatin and, more specifically, to CpG islands via its ZF-CxxC domain to support gene activation. Although we currently do not know the defined subunits and surfaces in CDK-Mediator that FBXL19 interacts with, our biochemical experiments indicate that this relies on an intact F-box domain in FBXL19 (Figure 2\u2014figure supplement 1E). It is tempting to speculate that FBXL19 could interact directly with MED13/13L given their recognition by the related F-box protein, Fbw7 (Davis et al., 2013). Nevertheless, a key observation in our work is that FBXL19 appears to have functionally diverged from other F-box proteins during vertebrate evolution by acquiring a DNA-binding domain that allows it to recruit proteins to chromatin, instead of targeting them for ubiquitylation. This general feature is shared with the FBXL19 paralogue, KDM2B, which associates with and recruits the PRC1 complex to CpG islands (Farcas et al., 2012; He et al., 2013; Wu et al., 2013). In agreement with our observations, a large-scale proteomics screen previously suggested that an interaction between FBXL19 and Mediator may also exist in cancer cells (Tan et al., 2013). Given that CDK8 can function as an oncogene (Adler et al., 2012; Firestein et al., 2008; Morris et al., 2008), it will be interesting to understand whether FBXL19 plays a role in targeting CDK-Mediator to CpG islands in non-embryonic tissues, and whether this activity may promote CDK8-driven tumorigenesis.\n\nIndividual Mediator subunits have been shown to interact with DNA-binding transcription factors that recruit the Mediator complex to specific DNA sequences in regulatory elements and support gene expression (Black et al., 2006; Blazek et al., 2005; Fondell et al., 1996; Malik and Roeder, 2010). In part, Mediator is thought to achieve this by bridging enhancer elements to the core gene promoter and RNAPolII (Allen and Taatjes, 2015; Jeronimo et al., 2016; Petrenko et al., 2016). However, in mammals these proposed mechanisms are extrapolated from studying only a subset of transcription factors and genes. Therefore, the defined mechanisms that shape Mediator occupancy on chromatin remain very poorly understood. Here, we provide evidence for a completely new gene promoter-associated CDK-Mediator targeting mechanism that relies on FBXL19 and CpG island recognition. Surprisingly, although FBXL19 localizes broadly to CpG islands throughout the genome (Figure 1), we only observed a reliance on FBXL19 for CDK8 binding at a subset of sites (Figure 4). Similarly, KDM2B binds broadly to CpG islands, yet has a specificity in shaping PRC1 recruitment and polycomb repressive chromatin domain formation at a subset of developmental genes in mouse ES cells (Farcas et al., 2012). We have previously suggested that this could result from ZF-CxxC domain-containing proteins broadly sampling CpG islands, with their activity or affinity for certain sites being shaped by local gene activity or chromatin environment (Klose et al., 2013). In keeping with these general ideas, FBXL19 is required for appropriate CDK8 binding at bivalent genes in ES cells (Figure 5\u2014figure supplement 1A,B). In future work, it will be important to understand whether this unique chromatin state and/or the absence of transcriptional activity at these sites define the requirement for FBXL19 in CDK8 recruitment, or whether FBXL19 targeting occurs at most CpG islands sites but is masked through redundancy with transcription factor and gene activity-dependent targeting modalities.\n\nHistorically, CDK-Mediator has been associated with gene repression (Akoulitchev et al., 2000; Chi et al., 2001; Elmlund et al., 2006; Hengartner et al., 1998; Knuesel et al., 2009; Pavri et al., 2005). Therefore, we were not surprised to observe that CDK8 occupied the promoters of repressed developmental genes in ES cells. While abrogating the CpG island-binding activity of FBXL19 or deletion of MED13/13L resulted in reduced CDK8 binding at these sites, it did not lead to an appreciable effect on gene expression in the ES cell state (Figure 6 and Figure 6\u2014figure supplement 1C,D). This suggests that CDK-Mediator is not required for the repression of these genes in ES cells. Instead, these genes fail to properly activate during differentiation (Figure 6, Figure 6\u2014figure supplement 1, and Figure 7D). These observations are in line with several reports that support the idea that CDK-Mediator is also involved in gene activation (Alarc\u00f3n et al., 2009; Donner et al., 2007; Hirst et al., 1999; Donner et al., 2010; Galbraith et al., 2013). Therefore, in the context of mouse ES cells, we propose that CDK-Mediator may be required to prime silent developmental genes for future gene activation through a mechanism that relies on the recognition of CpG island promoters by FBXL19. This priming could contribute to gene activation during differentiation through one of the several mechanisms by which CDK-Mediator has been proposed to affect gene transcription, including regulating RNAPolII pre-initiation complex assembly, polymerase pausing/elongation, or through mediating long range interactions with distal regulatory elements (Allen and Taatjes, 2015; Belakavadi and Fondell, 2010; Donner et al., 2010; Galbraith et al., 2013; Kagey et al., 2010). Clearly, understanding the defined mechanism by which FBXL19-dependent CDK-Mediator recruitment supports normal gene activation during differentiation remains an important question for future work.\n\nOur finding that FBXL19 can target CDK8 to gene promoters and that this is required to prime the expression of developmental genes during ES cell differentiation is conceptually reminiscent of recent work in yeast and human systems which suggested that CDK8 is required for appropriate re-induction of inducible genes following an initial activation stimulus (D'Urso et al., 2016). In this study, CDK8 was found to associate with the promoters of inducible genes following initial activation, even in the absence of appreciable ongoing gene transcription, thereby acting as a form of transcriptional memory (D'Urso et al., 2016). Interestingly, this requirement for CDK8 in normal gene activation appears shared in the context of our developmental gene induction paradigm. However, we find that, in the case of developmental genes, previous gene activation may not be required for the recruitment of CDK8. Instead, this could be achieved by FBXL19 directly recognising and targeting CDK8 to CpG islands. Therefore, we prefer to view this as priming as opposed to memory. Nevertheless, collectively these observations point to an important role for CDK-Mediator binding to gene promoters prior to activation and as a way of supporting subsequent gene induction. This provides new evidence that the roles of CDK-Mediator in gene regulation are more complicated than simply conveying activation signals to RNAPolII through recruitment by transcription factors and suggests the\u00a0complex\u00a0may have evolved to play a unique role in regulating gene expression in stem cells and during development.\n\n## Materials and methods\n\n### Cell culture\n\nMouse ES cells were cultured on gelatine-coated dishes in DMEM (Thermo Fisher\u00a0scientific) supplemented with 15% fetal bovine serum (BioSera), L-Glutamine, beta-mercaptoethanol, non-essential amino acids, penicillin/streptomycin (Thermo Fisher\u00a0scientific) and 10 ng/mL leukemia-inhibitory factor. Fbxl19fl/fl ES cells were treated with 800 nM 4-hydroxytamoxifen (Sigma) for 96 hr in order to delete the ZF-CxxC domain. For RA differentiation of ES cells, 2.5 \u00d7 104 cells/cm2 were allowed to attach to gelatinised dishes (~12 hr) and treated with 1 \u00b5M retinoic acid (Sigma-Aldrich) in EC-10 medium (DMEM supplemented with 10% fetal bovine serum, L-Glutamine, beta-mercaptoethanol, non-essential amino acids and penicillin/streptomycin) for 72 hr. For embryonic body differentiation, 2 \u00d7 106 cells were plated on non-adhesive 10 cm dishes in EC-10 medium and cultured for the indicated days. For generation of stable cell lines, E14 ES cells were transfected using Lipofectamine 2000 (Thermo Fisher\u00a0scientific) following manufacturer\u2019s instructions. Stably transfected cells were selected for 10 days using 1 \u03bcg/ml puromycin and individual clones were isolated and expanded in the presence of puromycin to maintain the transgene expression. TOT2N E14 cells used for TetR targeting experiments were previously described (Blackledge et al., 2014). 293 T cells were cultured in EC-10 media. Transient overexpression of FBXL19 was performed by transfecting 293 T cells using Lipofectamine 2000 (Thermo Fisher\u00a0scientific) followed by selection with 400 ng/\u03bcl G418 for 48 hr. Proteasome inhibition was performed for 4 hr using 10 \u00b5M MG132 inhibitor (Sigma-Aldrich). All cell lines generated and grown in the Klose and Koseki labs were routinely tested for mycoplasma infection.\n\n### Generation of Fbxl19\u0394CXXC conditional knock-out mouse\n\nThe targeting construct was generated from C57BL6/J mouse genomic sequence spanning mm9 chromosome 7: 134,888,487\u2013134,895,358 containing the exons 1 to 6 of Fbxl19 genomic region. Recombination was carried out by Gateway system (Life Technologies). One of the loxP sequences was inserted at mm9 chr7:134,891,537, and FRT flanked PGK-neo was inserted at mm9 chr7:134,892,000 together with an additional loxP sequence. The targeting construct was electroporated into M1 ES cells to obtain targeted insertion. Clones of targeted ES cells were aggregated with eight-cell embryos to generate the targeted mouse line. The Fbxl19fl/fl line was generated by removal of the PGK-neo marker gene by mating the targeted mice with mice expressing FLP recombinase. These Fbxl19fl/fl mice were further mated with mice harboring the ROSA26-CreErt2 locus to generate Fbxl19fl/fl:ROSA26-CreErt2+/- mice, from which the Fbxl19fl/fl ES cells used in this study were derived.\n\n### Generation of Med13/13lfl/fl conditional knock-out\u00a0ES cells line\n\nIn order to generate a conditional Med13/13lfl/fl ES cell line, we inserted loxP sites downstream of exons 7\u00a0and upstream of exons 8 of the Med13 and Med13l genes. The targeting constructs for the insertion of each loxP site were designed to have 150 bp homology arms flanking the loxP site and to carry a mutated PAM sequence to prevent retargeting by the Cas9 enzyme. The targeting constructs were purchased from GeneArt Gene Synthesis (Thermo\u00a0Fisher scientific). The pSpCas9(BB)\u22122A-Puro(PX459)-V2.0 vector was obtained by Addgene (#62988). sgRNAs were designed to specifically target the desired genomic region for each loxP insertion (http://crispor.tefor.net/crispor.py) and were cloned into the Cas9 vector as previously described (Ran et al., 2013). ES cells that express the ERT2-Cre recombinase from the ROSA26 locus (ROSA26:ERT2-Cre) were used. First, the downstream loxP sites for Med13 and Med13l were targeted. ROSA26:ERT2-Cre ES cells were transiently co-transfected with 1 \u03bcg of each Cas9-sgRNA plasmid and 3.5 \u03bcg of each targeting construct using Lipofectamine 3000 (Thermo\u00a0Fischer Scientific). Successfully transfected ES cells were selected for 48 hr with 1 \u03bcg/ml puromycin. Individual clones were screened by genotyping PCR to identify correctly targeted homozygous clones. A clone homozygous for both Med13 and Med13l LoxP1 sites was then used to target the upstream loxP sites using the same transfection protocol and screening strategy. Correct loxP targeting was verified by sequencing of the genomic region surround the loxP sites.\n\n### DNA constructs\n\nFor generation of FBXL19 expression constructs, the full length, \u0394CxxC or \u0394F-box cDNA of mouse Fbxl19 (IMAGE ID 6401846, Source Bioscience) was PCR amplified and inserted into a pCAG-IRES-FS2 vector (Farcas et al., 2012) via ligation-independent cloning (LIC). Mutation of the ZF-CxxC domain of FBXL19 (K49A) was generated via site-directed mutagenesis using the Quikchange mutagenesis XL kit (Stratagene). To generate TetR-FBXL19 fusion expression plasmid, Fbxl19 cDNA was cloned into pCAG-FS2-TetR (Blackledge et al., 2014) via LIC. For transient overexpression in 293 T cells, full length FBXL19 cDNA was cloned into pcDNA3-2xFlag vector by conventional cloning. All plasmids were sequence-verified by sequencing.\n\n### Nuclear extract preparation and immunoprecipitation\n\nCells were harvested by scraping in PBS at 4\u00b0C, resuspended in 10x pellet volume (PV) of Buffer A (10 mM Hepes pH 7.9, 1.5 mM MgCl2, 10 mM KCl, 0.5 mM DTT, 0.5 mM PMSF, cOmplete protease inhibitor cocktail (Roche)) and incubated for 10 min at 4\u00b0C with slight agitation. After centrifugation, the cell pellet was resuspended in 3x PV Buffer A containing 0.1% NP-40 and incubated for 10 min at 4\u00b0C with slight agitation. Nuclei were recovered by centrifugation and the soluble nuclear fraction was extracted for 1 hr at 4\u00b0C with slight agitation using 1x PV Buffer C (10 mM Hepes pH 7.9, 400 mM NaCl, 1.5 mM MgCl2, 26% glycerol, 0.2 mM EDTA, cOmplete protease inhibitor cocktail). Protein concentration was measured using Bradford assay.\n\nFor small-scale co-immunoprecipitation, 600 \u00b5g of nuclear extract was diluted in BC150 buffer (50 mM Hepes pH 7.9, 150 mM KCl, 0.5 mM EDTA, 0.5 mM DTT, cOmplete protease inhibitor cocktail). Samples were incubated with the respective antibodies and 25U benzonase nuclease overnight at 4\u00b0C. Protein A agarose beads (RepliGen) were blocked for 1 hr\u00a0at 4\u00b0C in Buffer BC150 containing 1% fish skin gelatine (Sigma) and 0.2 mg/ml BSA (NEB). The blocked beads were added to the samples and incubated for 4 hr at 4\u00b0C. Washes were performed using BC150 containing 0.02% NP-40. The beads were resuspended in 2x SDS loading buffer and boiled for 5 min to elute the immunoprecipitated complexes.\n\nPurification of FBXL19-FS2 was performed using StrepTactin resin (IBA) as previously described with the exception of the wash buffer used (20 mM Tris pH 8.0, 150 mM NaCl, 0.2% NP-40, 1 mM DTT, 5% glycerol, cOmplete protease inhibitor cocktail) (Farcas et al., 2012). Between 10\u00a0and\u00a015 mg of nuclear extract was used for each large scale purification. The samples were treated with 75 U/mL benzonase nuclease (Novagen) in order to disrupt nucleic-acid-mediated interactions.\n\n### Mass spectrometry\n\nSamples from FBXL19-FS2 affinity purifications were subjected to in-solution trypsin digestion and mass spectrometry analysis was performed as described previously (Farcas et al., 2012). Two biological replicates were performed. A control EV purification was included in each replicate. An interaction with identified proteins was only considered significant if absent from the EV data.\n\n### Antibodies\n\nAntibodies used for IP were rabbit anti-MED12 (A300-774A, Bethyl laboratories), rabbit anti-CDK8 (A302-500A, Bethyl laboratories), rabbit anti-HA (3724, Cell Signaling Technology). A polyclonal antibody against FBXL19 was prepared in-house by rabbit immunisation (PTU/BS Scottish National Blood Transfusion Service) with a recombinant peptide encoding for amino acids 137\u2013336 of mouse FBXL19 protein. The FBXL19 peptide antigen was coupled to Affigel 10 resin (BioRad) and the antibody was affinity-purified and concentrated.\n\nAntibodies used for Western blot analysis were mouse anti-Flag M2 (F1804, Sigma-Aldrich), mouse anti-SKP1 (sc-5281, Santa Cruz), goat anti-CDK8 (sc-1521, Santa Cruz), rabbit anti-MED12 (A300-774A, Bethyl laboratories), rabbit anti-MED13L (A302-420A, Bethyl laboratories), rabbit anti-MED13 (GTX129674, Genetex), rabbit anti-MED1, (A300-793A, Bethyl laboratories), rabbit anti-MED26 (A302-370A, Bethyl laboratories), rabbit anti-T7 (13246, Cell Signaling Technology), rabbit anti-TBP (ab818, Abcam), rabbit anti-RNF20 (11974, Cell Signaling Technology), rabbit anti-ubiquityl-Histone H2B (Lys120) (5546, Cell Signaling Technology), and mouse anti-ubiquityl-Histone H2B (Lys120) (05\u20131312, Millipore).\n\n### Generation of T7-FBXL19 ES cell line\n\nAs the FBXL19 antibody failed to work reliably for Western blot analysis, we generated an Fbxl19fl/fl ES cell line in which the endogenous Fbxl19 gene is tagged with a 3xT7-2xStrepII tag by CRISPR/Cas9 knock-in (Figure 2\u2014figure supplement 1B).\u00a0This allowed us to determine the efficiency of the OHT treatment and endogenous IPs. The tag was synthesised by GeneArt (ThermoFischer Scientific) and the targeting construct was generated by PCR amplification to introduce roughly 150 bp homology arms flanking the 3xT7-2xStrepII tag. The PCR product was cloned into pGEM-T Easy Vector (Promega). The pSpCas9(BB)\u22122A-Puro vector was obtained by Addgene (#48139). A sgRNA was designed to overlap with the stop codon of the Fbxl19 gene (http://crispr.mit.edu/) and cloned into the Cas9 vector as previously described (Ran et al., 2013). Fbxl19fl/fl ES cells were transiently co-transfected with 1 \u03bcg of Cas9-sgRNA plasmid and 3.5 \u03bcg of targeting construct using Lipofectamine 3000 (ThermoFischer Scientific). Successfully transfected ES cells were selected for 48 hr with 1 \u03bcg/ml puromycin. Individual clones were screened by Western blot and genotyping PCR to identify homozygous targeted clones.\n\n### Chromatin immunoprecipitation\n\nChromatin immunoprecipitation was performed as described previously (Farcas et al., 2012) with slight modifications. Cells were fixed for 45 min with 2 mM DSG (Thermo scientific) in PBS and 12.5 min with 1% formaldehyde (methanol-free, Thermo scientific). Reactions were quenched by the addition of glycine to a final concentration of 125 \u00b5M. After cell lysis and chromatin extraction, chromatin was sonicated using a BioRuptor Pico sonicator (Diagenode), followed by centrifugation at 16,000\u00a0\u00d7\u00a0g for 20 min at 4\u00b0C. 200 \u00b5g chromatin diluted in ChIP dilution buffer (1% Triton-X100, 1 mM EDTA, 20 mM Tris-HCl (pH 8.0), 150 mM NaCl) was used per IP. Chromatin was precleared with protein A Dynabeads blocked with 0.2 mg/ml BSA and 50 \u00b5g/ml yeast tRNA and incubated with the respective antibodies overnight at 4\u00b0C. Antibody-bound chromatin was purified using blocked protein A Dynabeads for 3 hr at 4\u00b0C. ChIP washes were performed as described previously (Farcas et al., 2012). ChIP DNA was eluted in ChIP elution buffer (1% SDS, 100 mM NaHCO3) and reversed cross-linked overnight at 65\u00b0C with 200 mM NaCl and RNase A (Sigma). The reverse cross-linked samples were treated with 20 \u03bcg/ml Proteinase K and purified using ChIP DNA Clean and Concentrator kit (Zymo research).\n\nThe antibodies used for ChIP experiments were rabbit anti-FS2 (Farcas et al., 2012), rabbit anti-CDK8 (A302-500A, Bethyl laboratories), rabbit anti-MED12 (A300-774A, Bethyl laboratories), mouse anti-MED4 (PRC-MED4-16, DSHB), rabbit anti-SKP1 (12248, Cell Signaling Technology), rabbit anti-KDM2A (Farcas et al., 2012), rabbit anti-KDM2B (Farcas et al., 2012).\n\n### ChIP-sequencing\n\nAll ChIP-seq experiments were carried out in biological duplicates. ChIP-seq libraries for FS2-FBXL19 ChIP were prepared using the NEBNext Fast DNA fragmentation and library preparation kit for Ion Torrent (NEB, E6285S) following manufacturer\u2019s instructions. Briefly, 30\u201340 ng ChIP or input DNA material was used. Libraries were size-selected for 250 bp fragments using 2% E-gel SizeSelect gel (Thermo scientific) and amplified with 6 PCR cycles or used without PCR amplification. Templates were generated with Ion PI Template OT2 200 kit v3 and Ion PI Sequencing 200 kit v3, or with Ion PI IC 200 kit (Thermo scientrific). Libraries were sequenced on the Ion Proton Sequencer using Ion PI chips v2 (Thermo scientific).\n\nChIP-seq libraries for CDK8 ChIP were prepared using the NEBNext Ultra DNA Library Prep Kit, and sequenced as 40 bp paired-end reads on Illumina NextSeq500 platform using NextSeq 500/550 (75 cycles).\n\n### Reverse transcription and gene expression analysis\n\nTotal RNA was isolated using TRIzol reagent (Thermo scientific) following manufacturer\u2019s instructions and cDNA was synthesized from 400 ng RNA using random primers and ImProm-II Reverse Transcription system kit (Promega). RT-qPCR was performed using SensiMix SYBR mix (Bioline). Idh1 and Atp6IP1 genes were used as house-keeping controls.\n\n### 4sU-labeling of nascent RNA transcripts\n\nFor labeling of nascent RNA transcripts, cells were grown in 15 cm culture dishes. Labeling was performed for 20 min at 37\u00b0C by the addition of 50 mM 4-thiouridine (T4509, Sigma) to the culture medium. After the incubation, the medium was removed and RNA was isolated using TRIzol reagent (Thermo scientific) following manufacturer\u2019s instructions. The total RNA was treated with TURBO DNA-free kit (Ambion, Thermo scientific) in order to remove contaminating genomic DNA. 300 \u00b5g RNA was biotinylated using 600 \u00b5g Biotin-HPDP (21341, Pierce, Thermo scientific) in Biotinylation buffer (100 mM Tris-HCl pH 7.4, 10 mM EDTA). The reaction was carried out for one and half hour on a rotor at room temperature. Unincorporated Biotin-HPDP was removed by chloroform/isoamylalcohol (24:1, Sigma) wash followed by isopropanol precipitation of the biotinylated RNA. Labeled biotinylated RNA was isolated using \u00b5Macs Streptavidin Kit (130-074-101, Miltenyi) following manufacturer\u2019s instructions and purified using RNeasy MinElute Cleanup kit (Qiagen). The quality of the RNA was confirmed using the RNA pico Bioanalyser kit (Agilent).\n\n### 4sU RNA sequencing\n\nUp to 1 \u00b5g purified 4sU-labelled RNA was used to prepare libraries for 4sU-RNA-seq. Ribosomal RNA was removed using NEBNext rRNA Depletion Kit and libraries were prepared using NEBNext Ultra Directional RNA Library Prep Kit for Illumina (NEB) following manufacturer\u2019s instructions. Library quality was assessed using the High-sensitivity DS DNA Bioanalyser kit (Agilent) and the concentration was measured by quantitative PCR using KAPA Library quantification standards for Illumina (KAPA Biosystems). All 4sU RNA-seq experiments were carried out in biological triplicates. 4sU RNA-seq libraries were sequenced as 80 paired-end reads on Illumina NextSeq500 platform using NextSeq 500/550 High Output Kit v2 (150 cycles).\n\n### Analysis of high-throughput sequencing\n\nSequencing reads were aligned to the mouse genome (mm10) using bowtie2 (Langmead and Salzberg, 2012) with the \u2018--no-mixed\u2019 and \u2018--no-discordant\u2019 options. Reads that mapped more than once to the genome were discarded. For 4sU RNA-seq analysis, rRNA reads were initially removed by aligning the data to mouse rRNA genomic sequences (GenBank: BK000964.3) using bowtie2. The rRNA-depleted reads were next aligned against mm10 genome using the STAR RNA-seq aligner (Dobin et al., 2013). To improve mapping of nascent, intronic sequences, a second alignment step with bowtie2 was included using the reads which failed to map using STAR. PCR duplicates were removed using samtools (Li et al., 2009). Biological replicates were randomly downsampled to the same number of reads for each individual replicate and merged for visualisation. Bigwig files were generated using MACS2 (Zhang et al., 2008) and visualised using the using the UCSC Genome Browser (Raney et al., 2014).\n\nPeak calling was performed using the MACS2 function with the \u2018-broad\u2019 option using the biological replicates with matched input (Zhang et al., 2008). Peaks mapping to a custom \u2018blacklist\u2019 of artificially high genomic regions were discarded. Only peaks called in both replicates were considered. Differential analysis of CDK8 binding was done using DiffReps (Shen et al., 2013) and the called differential regions were overlapped with CDK8 peaks. Changes in binding of log2FC less than \u22120.5 or more than 0.5 with adjusted p-value below 0.05 were considered significant.\n\nDifferential expression analysis was performed using the DESeq2 package (Love et al., 2014), version 1.6.3, with R version 3.1.1. Counts were quantified using the summarizeOverlaps() function in R in the mode \u2018Union\u2019 and inter.feature\u00a0=\u00a0FALSE. Genes with an adjusted p-value of below 0.1 and a fold change of at least 1.5 were considered differentially expressed. Statistical analysis was performed using two-sample Wilcoxon rank sum test. Gene ontology analysis was done using DAVID 6.8 (Huang et al., 2009). For CDK8 differentially\u00a0bound peaks, all CDK8 peaks were provided as background. For misregulated genes analysis, all RefSeq genes were provided as background. ATAC peaks were obtained from King and Klose (2017).\n\n### Accession numbers\n\nChIP-seq and RNA-seq data from the present study are available to download at GSE98756. Previously published studies used for analysis include mouse ES cell BioCAP (GSE43512, [Long et al., 2013b]), Kdm2B ChIP-seq (GSE55698, [Blackledge et al., 2014]), Kdm2A ChIP-seq (GSE41267, [Farcas et al., 2012]), H3K27me3 ChIP-seq (GSE83135, [Rose et al., 2016]), H3K4me3 ChIP-seq (GSE93538, [Brown et al., 2017]).\n",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "28266618-2e65-4be1-920f-9bc406d03aa8",
+      "submission_id": "3f6ea986-be98-4bf0-9d17-03fba0e5b9e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaqu\u00edn M Espinosa, University of Colorado School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37084.036](https://doi.org/10.7554/eLife.37084.036)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"FBXL19 recruits CDK8-Mediator to CpG islands and primes developmental genes for activation during lineage commitment\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editor and the evaluation has been overseen by a Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this letter to crystallize our concerns going forward. The work presented was deemed important and interesting but key issues reduced enthusiasm for the manuscript considerably. Given that these revisions are substantial and likely to take a significant amount of time, we are currently declining the present version of the paper. That said, if you feel you can successfully address all the concerns raised, we will be open to consider a revised submission, which would be treated as a de novo submission but sent to the same editors and, if possible, referees for re-assessment.\n\nSummary:\n\nThe reviewers considered the manuscript to be strong, reporting a thorough characterization of FBXL19, the least-well studied of three proteins that contain a ZF-CxxC domain. The authors demonstrate that over-expressed FBXL19 accumulates in the nucleus, and that a majority of its genome-wide binding is at sites associated with CpG islands. Affinity purification of FS2-tagged FBXL19 indicated a physical association with CDK8-containing Mediator complex, and a TetR-FBXL19 fusion protein was able to recruit CDK8 to a chromosomally-integrated artificial TetO array, suggesting that FBXL19 can recruit CDK8 to chromatin. Conditional deletion of the ZF-CxxC domain of FBXL19 led to reduction of CDK8 binding at CpG islands in ES cells. Many of these sites are associated with silent developmental genes that are no longer activated during ES cell differentiation in the FBXL19 mutants. Finally, deletion of the ZF-CxxC domain was shown to be embryonic lethal in mice. Together, these findings suggest that FBXL19 may prime developmental genes for subsequent activation during differentiation, possibly involving recruitment of CDK8. Overall, this represents an interesting finding and potentially a novel role for CDK8. However, concerns about the degree to which this represents a significant advance over previous FBXL19 studies, some missing controls, and a lack of a direct test of CDK8 requirement for expression of these genes resulted in lessened enthusiasm for this manuscript.\n\nThe reviewers discussed these concerns and summarized their critiques into the following points.\n\nEssential revisions:\n\n1) A key conclusion of the manuscript is that CDK8-Mediator is required for induction of developmental genes regulated by FBXL19, but this is actually not proven in the manuscript. The authors should deplete CDK8 (and/or CDK19, see comment #2 below) and test for the impact on induction of FBXL19-dependent genes.\n\n2) Throughout the paper, the authors refer to CDK8-Mediator. Given that there are two paralog kinases associated with the Mediator complex, CDK8 and CDK19, the authors should test for the presence of CDK19 and clarify whether the interaction is exclusive to CDK8-containing complexes or not. In Figure 2A, are the CDK8 peptides identified unique to CDK8 or could they map to CDK19 as well? In Figure 2C, please add western blot for CDK19. As for point #1 above, is CDK19 required for control of FBXL19-regulated genes? Additionally, the authors should demonstrate that in the \"EV\" control lane, at the similar molecular weight, these candidate hits didn't show up in the cut gel, or at least with significantly less numbers of peptides.\n\n3) If the ZF-CxxC mediates the interaction between FBXL19 and chromatin, then which functional domain(s) on FBXL19 bind to CDK8-Mediator complex? Lee et al., claimed that the F-box is critical for the interaction between FBXL19 and RNF20. Does the same protein structure bind to CDK8?\n\n4) Most of the findings are based on overexpression of FBXL19 \u2013 what is the level relative to endogenous FBXL19? High-level over-expression could drive nuclear accumulation and other observations (including Figure 3). Authors should provide data demonstrating the degree of overexpression produced in the key experiments.\n\n5) FBXL19 binding to CpG islands and its requirement in ES differentiation has been described previously: (https://www.ncbi.nlm.nih.gov/pubmed/28453857) \"Our genome-wide target mapping unveils the preferential occupancy of Fbxl19 on CpG island-containing promoters [\u2026]\" \"Moreover, we reveal that Fbxl19 is critical for proper differentiation of ES cells [\u2026]\" With respect to this, the authors should clarify the novelty of their results presented in the current manuscript.\n\n6) The conclusion that FBXL19 does not appear to regulate CDK8-Mediator levels is not fully supported by the data. Figure 2\u2014figure supplement 1H needs to be repeated so that CDK8 bands are not over-exposed as there does appear to be a change in amount/mobility when overexpressed -/+ MG132. Furthermore, there seems to be a noticeable increase of MED12 protein upon FBXL19 overexpression, which was even more obvious when cells were treated with MG132.\n\n7) In Figure 4, CDK8 recruitment has only been tested for the FBXL19 ZF-CxxC deletion -is this recapitulated for depletion of the whole protein? Given that Figure 4B appears to show a decrease in the levels of the deletion protein this is an important point to verify.\n\n8) The authors need to show that OHT treatment of the delCxxC ES line leads to reduced binding of FBXL19 in conditions used for CDK8 ChIPseq -several genes would be ok -these same genes should be used to validate CDK8 CHIPseq signal.\n\n9) Supplemental tables with differential gene expression results should be provided -or at least working gene lists used to reach the conclusions in the manuscript. Full GO enrichment results should be included as supplementary tables so that specific gene lists can be examined.\n\n10) Various figure panels are missing statistical tests: Figure 4C needs statistical tests, e.g. KS/Wilcoxon -See Figure 4E; Figure 4G needs statistical tests; Figure 4H and 4I need boxplots and need statistical tests eg KS/Wilcoxon as for E/F; Figure 4H-J should include FBXL19-bound groups; Figure 6B,E,F need statistical tests.\n\n11) It is very nice that the authors showed that genome-wide chromatin binding of FBXL19 was completely lost when the ZF-CxxC domain was deleted or mutated. To further confirm that it is indeed this ZF-CxxC domain mediating interaction with the non-methylated CpG islands, some controls are necessary. For example, in Figure 1\u2014figure supplement 1D, the authors showed that almost all of the FBXL19 binding sites are overlapped with NMIs locations, with only 93 exceptions. Then are the signals at these 93 sites also changed in the FBXL19 mutant ChIPSeq data? When the cell DNA methylation levels are modulated, will the binding pattern of FBXL19 changed accordingly?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"FBXL19 recruits CDK-Mediator to CpG islands of developmental genes priming them for activation during lineage commitment\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by James Manley as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe revised manuscript by Dimitrova et al., is an excellent report describing the characterization of FBXL19, a member of the ZF-CxxC domain-containing family of proteins, and its role in recruiting CDK-Mediator to developmental genes in stem cells.\n\nAs for other members of this family, the authors show that FBXL19 recognizes unmethylated CpGs in a ZF-CxxC-dependent manner. Unlike the lysine demethylases KDM2A and KDM2B in this protein family, FBXL19 lacks a JMJ-C domain. Instead, the authors report that FBXL19 interacts with the CDK-Mediator complex. The authors then embark on an experimental tour-de-force to demonstrate that FBXL19 is required for recruitment of CDK-Mediator to a subset of genes containing CpG islands in ES cells, mostly genes involved in lineage commitment. Interestingly, these genes are transcribed at low levels in ES cells when bound by FBXL19 and CDK-Mediator, but their induction is compromised in the absence of FBXL19. This indicates that FBXL19-CDK8-Mediator is required to 'prime' these genes in ES cells and their subsequent induction upon differentiation stimuli. Finally, the authors demonstrate that FBXL19 depletion is embryonic lethal. Overall, the manuscript is very well written, and the data is of excellent quality.\n\nThis is a new submission of a paper that was originally reviewed by the same referees and found to be lacking data to support some of the key conclusions. The Senior Editor opened up the possibility of a new submission without a precise timeline and the authors have taken the opportunity to address the major concerns raised in the original review. The referees are now supportive of publication of a revised manuscript addressing the following issues:\n\nEssential revisions:\n\n1) In AP-MS (Figure 2A), what is the background value of emPAI? Are there any other FBXL19-interacting proteins that show significantly high levels of emPAI in the list? How significant are the components of CDK-Mediator complex represented in all the hits?\n\n2) In Figure 3, the authors demonstrated that FBXL19 was able to recruit CDK-Mediator complex, such as CDK8 and MED12, to artificially designed chromatin regions. What about CXXC-domain or F-box deletion mutants in this assay?\n\n3) In Figure 4B, it is not very clear which band(s) are exactly indicated as full-length FBXL19 and which one(s) are CXXC deletion? Why are there double bands? Did the author use T7 antibody to detect the endogenously introduced protein?\n\n4) In Figure 4C, what proportions of each group of CDK8 binding sites overlap with FBXL19? In theory, the author expects to see that CDK8 sites showing binding intensity changes upon tamoxifen treatment would tend to overlap more with FBXL19.\n\n5) In Figure 4\u2014figure supplement 1C, please use a Venn Diagram to show directly the number of peaks of CDK8, FBXI19 and NMI overlapping with each other. This would be more straightforward.\n\n6 In Figure 5, please perform the same GSEA or functional annotation analysis on genes that are associated with unchanged CDK8 binding sites upon FBXL19 CXXC-domain deletion.\n\n7) In Figure 6B, what is the result for genes that are associated with increased CDK8 binding signals in FBXL19 CXXC-domain deletion mutant upon RA-induced differentiation?\n\n8) In Figure 6C, even though the authors claimed that those upregulated genes (889) in FBXL19 CXXC-domain deletion mutant upon RA treatment were not involved in developmental processes, it is still interesting to find that significantly more genes were activated upon CXXC-domain deletion. What explanation can the authors provide for this finding?\n\n9) In Figure 7, the authors claim that FBXL19 relies on CDK-mediator complex to activate the specific set of developmental genes. Is it possible to test this hypothesis in the FBXL19 CXXC-deletion system they established in Figure 6? In wild-type ESC, depletion of MED13 will have similar effects as FBXL19 CXXC deletion, whereas in FBXL19 mutant, the effects would be much alleviated?\n\n10) In Figure 8, why did heterozygous deletion of FBXL19 CXXC-domain show even better developmental status than the wild type?\n\n11) The authors demonstrated that the CXXC-domain mediates the binding of FBXL19 at NMIs, where F-Box mediates its interaction with the CDK-Mediator complex. What about CDK8 chromatin binding or gene expression patterns upon F-Box deletion of FBXL19? Will the authors see the same results as what they found in CXXC-domain deletion mutant?\n",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d6417e45-223c-4003-b655-a2dfbfc7884c",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C1",
+      "claim": "FBXL19 is a CpG island-binding protein in mouse embryonic stem (ES) cells",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify FBXL19 as a CpG island-binding protein in mouse embryonic stem (ES) cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data showing FBXL19 enrichment at CpG islands (Figure 1D-F) and experimental validation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "51c71446-6755-4551-8d1d-1f471d75fd54",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C2",
+      "claim": "FBXL19 associates with the CDK-Mediator complex",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify FBXL19 as a CpG island-binding protein in mouse embryonic stem (ES) cells and show that it associates with the CDK-Mediator complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by affinity purification mass spectrometry (AP-MS) data (Figure 2A) and co-immunoprecipitation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "797b4a85-e0a3-4e56-bc47-a7b4c7d5cfb2",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C3",
+      "claim": "FBXL19 recruits CDK-Mediator to CpG island-associated promoters of non-transcribed developmental genes",
+      "claim_type": "EXPLICIT",
+      "source": "We discover that FBXL19 recruits CDK-Mediator to CpG island-associated promoters of non-transcribed developmental genes to prime these genes for activation during cell lineage commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data showing reduced CDK8 occupancy at developmental gene promoters in FBXL19\u0394CXXC cells (Figure 4) and TetO array recruitment experiments (Figure 3)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "380f0855-87b4-464b-aeac-e13d1116c476",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C4",
+      "claim": "FBXL19 primes developmental genes for activation during cell lineage commitment",
+      "claim_type": "EXPLICIT",
+      "source": "We discover that FBXL19 recruits CDK-Mediator to CpG island-associated promoters of non-transcribed developmental genes to prime these genes for activation during cell lineage commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 4sU RNA-seq data showing impaired gene activation during differentiation in FBXL19\u0394CXXC cells (Figure 6)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "1ee0d1ab-fd0e-474c-8415-a52e009e28f2",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C5",
+      "claim": "Recognition of CpG islands by FBXL19 is essential for mouse development",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that recognition of CpG islands by FBXL19 is essential for mouse development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by embryonic lethality observed in Fbxl19\u0394CXXC homozygous mice (Figure 8)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "16a4e79d-e1f2-46a0-91cb-0397825641d5",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C6",
+      "claim": "FBXL19 is predominantly found in the nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that FBXL19 was almost exclusively nuclear (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescent staining (Figure 1B) and subcellular fractionation (Figure 1C)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "44f36065-10a0-462d-86ad-b7e68287296f",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C7",
+      "claim": "FBXL19 associates with chromatin",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, FBXL19 was found not only in the soluble nuclear extract but also in the insoluble nuclear pellet, which contains chromatin-bound factors (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by subcellular fractionation showing FBXL19 in the insoluble nuclear pellet",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "8602da6e-a64b-4df3-b6bb-ec7835533056",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C8",
+      "claim": "FBXL19 binds to CpG islands in a manner highly similar to KDM2A and KDM2B",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that FBXL19 ChIP-seq signal at NMIs was highly similar to that of KDM2A and KDM2B (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data comparing FBXL19, KDM2A, and KDM2B binding patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "7196ed2c-45f6-4e62-840a-74cc2a229582",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C9",
+      "claim": "FBXL19 ChIP-seq signal correlates with the density of non-methylated CpG dinucleotides in NMIs",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, FBXL19 ChIP-seq signal correlated well with the density of non-methylated CpG dinucleotides in NMIs, similarly to KDM2A and KDM2B, (Figure 1F and Figure 1\u2014figure supplement 1B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis between FBXL19 ChIP-seq and BioCAP signal",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "06eb6d4a-bdc6-48c1-bcf2-e30d27aa47ed",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C10",
+      "claim": "Almost all FBXL19-occupied sites fall within NMIs",
+      "claim_type": "EXPLICIT",
+      "source": "and almost all FBXL19-occupied sites fell within NMIs (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis between FBXL19 peaks and NMIs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "24668eb9-75d6-4e84-ad16-76fcac778b56",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C11",
+      "claim": "The association of FBXL19 with CpG islands is dependent on its ZF-CxxC domain",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a near complete loss of FBXL19 binding to chromatin when the ZF-CxxC domain was deleted and a slightly less dramatic effect in the K49A mutant (Figure 1H,I, and Figure 1\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data comparing wild-type and mutant FBXL19",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "3d66297b-8f5e-4e19-8723-fcd8f4699922",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C12",
+      "claim": "FBXL19 interacts with SKP1",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that FBXL19 interacts with SKP1, a known F-box-binding protein that also associates with KDM2A and KDM2B (Bai et al., 1996; Farcas et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by AP-MS data (Figure 2A) and Western blot validation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "70709a3c-5a68-4938-ad6d-bd3dd79c573e",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C13",
+      "claim": "FBXL19 interacts with the nuclear proteasome activator PSME3",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that FBXL19 interacts with SKP1, a known F-box-binding protein that also associates with KDM2A and KDM2B (Bai et al., 1996; Farcas et al., 2012), and the nuclear proteasome activator PSME3 (W\u00f3jcik et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by AP-MS data (Figure 2A)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "3ced54e4-aa6b-4ffe-84af-4a66bb5c948c",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C14",
+      "claim": "FBXL19 interacts with multiple subunits of the Mediator complex in a sub-stoichiometric manner",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also identified multiple subunits of the Mediator complex that appeared to interact with FBXL19 in a sub-stoichiometric manner (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AP-MS data showing Mediator subunits with low emPAI values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "46fd2f77-dcc0-4bd0-a170-986077f89884",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C15",
+      "claim": "FBXL19 purification identified subunits of the kinase-containing Mediator complex (CDK-Mediator), but not MED26 or RNAPolII",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our FBXL19 purification identified subunits of the kinase-containing Mediator complex (CDK-Mediator), but not MED26 or RNAPolII (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AP-MS data showing presence of CDK-Mediator subunits and absence of MED26 and RNAPolII",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a1609f9e-a29b-40b7-a436-b2d23735cf05",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C16",
+      "claim": "FBXL19 interacts preferentially with CDK-Mediator",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that FBXL19 interacts preferentially with CDK-Mediator, however, we cannot exclude the possibly it may also interact with MED26-Mediator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from AP-MS data showing CDK-Mediator subunits but not MED26",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "b27ffe5a-d213-4a6a-a433-5e51bed56cf8",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C17",
+      "claim": "FBXL19 is likely able to interact with both CDK8- and CDK19-containing Mediator complexes",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that FBXL19 is able to interact with both CDK8- and CDK19-containing Mediator complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mass spectrometry data showing peptides common between CDK8 and CDK19",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "dd9e5f80-af4d-4a21-a3eb-7c73523a97de",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C18",
+      "claim": "The association of FBXL19 with CDK-Mediator is sub-stoichiometric and likely weak",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with our mass spectrometry analysis, which indicated that the association of FBXL19 with CDK-Mediator is sub-stoichiometric, and suggests that this interaction is likely weak, as opposed to stable, inside cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from failure to detect FBXL19 in reciprocal immunopurifications and low emPAI values in AP-MS",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "ae09417f-0ff2-436e-b07b-0b2589be93e1",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C19",
+      "claim": "FBXL19 relies on its F-box domain for association with CDK-Mediator",
+      "claim_type": "EXPLICIT",
+      "source": "Intact FBXL19 and a version with the ZF-CxxC domain removed interacted with CDK-Mediator, whereas removing the F-box domain resulted in a loss of this interaction (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by affinity purification experiments with FBXL19 truncation mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a6d066b2-7f3b-4ece-8455-66be6e2b66e4",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C20",
+      "claim": "FBXL19 does not interact with RNF20/40 E3 ubiquitin ligase in unbiased biochemical purification",
+      "claim_type": "EXPLICIT",
+      "source": "In our unbiased biochemical purification of FBXL19, we did not identify an interaction with RNF20/40 by AP-MS or by western blot analysis (Figure 2A and Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by absence of RNF20/40 in AP-MS data and Western blot validation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "6c8a0b8b-ea88-454f-af69-358a35fb30fa",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C21",
+      "claim": "There is no relationship between the ability of FBXL19 to associate with CpG islands and the levels of H2BK120ub1",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we failed to observe any relationship between the ability of FBXL19 to associate with CpG islands and the levels of H2BK120ub1 (Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis of H2BK120ub1 levels in wild-type and FBXL19\u0394CXXC cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "967ab491-a8e6-435d-86a2-7e4da82bf353",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C22",
+      "claim": "FBXL19 does not function as a SCF substrate selector for CDK-Mediator",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, we conclude that FBXL19 does not function as a SCF substrate selector for CDK-Mediator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from absence of CUL1 and RBX1/2 in FBXL19 purifications and lack of effect on CDK-Mediator protein levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "ccba3eca-7bd6-462d-8874-ca9757c65488",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C23",
+      "claim": "FBXL19 is sufficient to recruit CDK-Mediator to chromatin",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our biochemical observations (Figure 2), when we examined the binding of CDK8 and MED12 over the TetO array, we observed an enrichment in the TetR-FBXL19 line.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data showing CDK8 and MED12 enrichment at TetO array in TetR-FBXL19 cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "e1878045-94d6-4f47-a7f5-b1aea357789c",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C24",
+      "claim": "FBXL19 may be sufficient to recruit a holo-CDK-Mediator complex",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, binding of MED4, which is part of the core Mediator complex, was also evident at the TetO array (Figure 3B). This suggests that FBXL19 may be sufficient to recruit a holo-CDK-Mediator complex",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ChIP-qPCR data showing enrichment of both CDK-Mediator and core Mediator subunits at TetO array",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "c5640533-6882-4e95-a4b2-1a6e4ab71d8f",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C25",
+      "claim": "TetR-KDM2A and TetR-KDM2B do not lead to CDK8 recruitment",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, stable expression of TetR-KDM2A and TetR-KDM2B did not lead to CDK8 recruitment, indicating that this activity is unique to FBXL19 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data showing lack of CDK8 enrichment at TetO array in TetR-KDM2A and TetR-KDM2B cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "d98ff7d4-d2c6-43ab-89e8-d3ba4116631b",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C26",
+      "claim": "CDK8 occupancy is not restricted to CpG islands",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike FBXL19, CDK8 occupancy was not restricted to CpG islands (Figure 4\u2014figure supplement 1A), with only 67.5% of CDK8 peaks overlapping with NMIs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CDK8 ChIP-seq data and overlap analysis with NMIs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "f662a3c8-de3f-4a59-8459-1d42ff4ec5fe",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C27",
+      "claim": "CDK8 binding shows a limited correlation with BioCAP signal",
+      "claim_type": "EXPLICIT",
+      "source": "with only 67.5% of CDK8 peaks overlapping with NMIs and CDK8 binding showing a limited correlation with BioCAP signal (Spearman correlation \u2013 0.48, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis between CDK8 ChIP-seq and BioCAP signal",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "1f1fc6aa-4bd2-4448-8843-d348f9f7529f",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C28",
+      "claim": "89.4% of FBXL19 peaks overlap with CDK8 peaks and NMIs",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, we observed enrichment of CDK8 at FBXL19 peaks (Figure 4\u2014figure supplement 1C) with 89.4% of FBXL19 peaks overlapping with CDK8 peaks and NMIs (Figure 4\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis between FBXL19 peaks, CDK8 peaks, and NMIs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "46c7d848-b077-4b12-959e-56e599f557f2",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C29",
+      "claim": "Removal of the ZF-CxxC domain of FBXL19 leads to some reductions in FBXL19 protein levels",
+      "claim_type": "EXPLICIT",
+      "source": "Following removal of the ZF-CxxC domain of FBXL19, we observed some reductions in FBXL19 protein levels (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis showing reduced FBXL19 protein in FBXL19\u0394CXXC cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "093524d8-984e-42db-91c5-c9005b9e8f59",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C30",
+      "claim": "CDK8 levels are unaffected by removal of the ZF-CxxC domain of FBXL19",
+      "claim_type": "EXPLICIT",
+      "source": "but importantly CDK8 levels were unaffected (Figure 4\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis showing unchanged CDK8 protein levels in FBXL19\u0394CXXC cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "b53f9254-1086-4e8f-b023-52ed76ab0c58",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C31",
+      "claim": "FBXL19 is not the central determinant driving CDK8 recruitment to most of its binding sites in the genome",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide profiling of CDK8 in Fbxll19\u0394CXXC ES cells did not reveal widespread alterations in CDK8 binding (Figure 4C left and Figure 4\u2014figure supplement 1H), indicating that FBXL19 is not the central determinant driving CDK8 recruitment to most of its binding sites in the genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CDK8 ChIP-seq data showing limited genome-wide changes in FBXL19\u0394CXXC cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "e21c3d94-6ea9-4f55-8f6b-121cd596d8ac",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C32",
+      "claim": "A subset of CDK8 target sites display significant alteration in CDK8 occupancy in FBXL19\u0394CXXC cells",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, however, a more detailed site-specific analysis revealed a subset of CDK8 target sites that displayed significant alteration in CDK8 occupancy (Figure 4C,D, and Figure 4\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential binding analysis of CDK8 ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "9382e8c9-421f-4d54-8f9d-3cb7ebcf886a",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C33",
+      "claim": "The majority of CDK8 sites affected by FBXL19 deletion showed reduced CDK8 binding (n = 783)",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with a potential role for FBXL19 in CDK8 recruitment, the majority of the affected sites showed reduced CDK8 binding (n = 783) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential binding analysis showing 783 sites with reduced CDK8 binding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a9bf7a4f-ff82-4bd0-99ff-cfe40f3d27c4",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C34",
+      "claim": "Sites with reduced CDK8 occupancy in Fbxll19\u0394CXXC ES cells tend to coincide with broad regions of CDK8 enrichment",
+      "claim_type": "EXPLICIT",
+      "source": "Upon closer examination of sites with reduced CDK8 occupancy in Fbxll19\u0394CXXC ES cells, we discovered that they tended to coincide with broad regions of CDK8 enrichment (Figure 4E,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of CDK8 peak size at differential sites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "87803560-62b7-48c3-80b1-29a3b1dcecea",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C35",
+      "claim": "Sites with reduced CDK8 occupancy are distinct from super-enhancers",
+      "claim_type": "EXPLICIT",
+      "source": "However, a comparison of these sites to the location of super-enhancers in mouse ES cells indicated that these were distinct (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis between CDK8 differential sites and super-enhancers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "93949238-8a14-470f-a4b4-85e38b836fed",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C36",
+      "claim": "Sites displaying reduction in CDK8 occupancy coincide with broad regions of non-methylated DNA",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, sites displaying reduction in CDK8 occupancy coincided with broad regions of non-methylated DNA (Figure 4D,H, and Figure 4\u2014figure supplement 1H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BioCAP signal analysis at CDK8 differential sites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "c771c698-8310-4bed-90d7-aade3710aa5b",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C37",
+      "claim": "Sites with reduced CDK8 occupancy tend to be associated with gene promoters",
+      "claim_type": "EXPLICIT",
+      "source": "tended to be associated with gene promoters (Figure 4\u2014figure supplement 1I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis between CDK8 differential sites and transcription start sites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a65db0d6-c8c1-4de9-ab1d-5a3707befccf",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C38",
+      "claim": "Sites with reduced CDK8 occupancy have elevated levels of FBXL19",
+      "claim_type": "EXPLICIT",
+      "source": "and had elevated levels of FBXL19 (Figure 4I and Figure 4\u2014figure supplement 1H,I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FBXL19 ChIP-seq signal analysis at CDK8 differential sites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "402756d6-4549-4e76-aa95-a89580cba4ad",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C39",
+      "claim": "Genes with reduced CDK8 levels at their promoters in Fbxl19\u0394CXXC ES cells are strongly enriched for developmental processes",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this revealed that these genes were strongly enriched for developmental processes (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene ontology analysis of genes associated with reduced CDK8 binding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "94a58fb3-733c-4d45-936f-03c5ca09d649",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C40",
+      "claim": "Broad CpG islands are an evolutionary conserved feature of developmentally regulated genes",
+      "claim_type": "EXPLICIT",
+      "source": "in agreement with our previous discovery that broad CpG islands are an evolutionary conserved feature of developmentally regulated genes (Long et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "8b24b4ff-842a-4301-be01-024c5aa24afc",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C41",
+      "claim": "Genes associated with reduced CDK8 binding are expressed at significantly lower levels than most other genes in ES cells",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the genes that exhibited reductions in CDK8 binding in Fbxl19\u0394CXXC cells were expressed at significantly lower levels than most other genes in ES cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq expression analysis of genes associated with differential CDK8 binding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "621375fb-c194-4aba-9879-3f533fc85aca",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C42",
+      "claim": "Sites that rely on FBXL19 for normal CDK8 binding are enriched for H3K27me3",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these regions are enriched for H3K27me3 (Figure 5\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by H3K27me3 ChIP-seq analysis at CDK8 differential sites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a095d659-08c1-4838-826f-a8b4901583bc",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C43",
+      "claim": "Sites that rely on FBXL19 for normal CDK8 binding have elevated H3K4me3 compared to other H3K27me3-modified sites that lack CDK8",
+      "claim_type": "EXPLICIT",
+      "source": "and have elevated H3K4me3 compared to other H3K27me3-modified sites that lack CDK8 (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by H3K4me3 ChIP-seq analysis at H3K27me3 peaks with and without CDK8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "02804359-4ddb-44d6-b577-e93de84b86cc",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C44",
+      "claim": "Sites that rely on FBXL19 for normal CDK8 binding correspond to silent developmental gene promoters that are bivalent",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, sites that rely on FBXL19 for normal CDK8 binding and correspond to silent developmental gene promoters are also bivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from H3K27me3 and H3K4me3 ChIP-seq data at CDK8 differential sites",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a94574ed-8817-4da3-b12a-d813d1408cd1",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C45",
+      "claim": "Genes that rely on FBXL19 for appropriate CDK8 binding in the ES cell state can become transcriptionally activated during stem cell lineage commitment",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly demonstrated that the genes which rely on FBXL19 for appropriate CDK8 binding in the ES cell state can become transcriptionally activated during stem cell lineage commitment (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 4sU RNA-seq data comparing ES cells and RA-treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "2ae139a4-0385-4197-8e74-c5c6df2b2064",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C46",
+      "claim": "CDK8 occupancy is in general linked to gene activity",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that CDK8 occupancy was in general linked to gene activity (Figure 5E), in agreement with previous reports (Alarc\u00f3n et al., 2009; Bancerek et al., 2013; Donner et al., 2010; Donner et al., 2007; Fryer et al., 2004; Galbraith et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CDK8 ChIP-seq analysis at genes with different expression levels and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "443cbbd0-ac57-45e0-862f-c37b12373b22",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C47",
+      "claim": "At FBXL19-bound gene promoters, CDK8 occupancy is similar in both lowly and highly expressed subsets of genes",
+      "claim_type": "EXPLICIT",
+      "source": "However, at FBXL19-bound gene promoters, CDK8 occupancy was similar in both the lowly and highly expressed subsets of genes (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CDK8 ChIP-seq analysis at FBXL19-bound genes with different expression levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a644f072-b167-4996-8cb6-673cc205c143",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C48",
+      "claim": "CDK8 occupancy at promoters of lowly expressed genes is reduced in Fbxl19\u0394CXXC ES cells",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CDK8 occupancy at promoters of lowly expressed genes was reduced in Fbxl19\u0394CXXC ES cells (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential CDK8 binding analysis at genes with different expression levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "205cd74b-124d-4b41-9a24-86c02a415cb9",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C49",
+      "claim": "CDK8 is enriched at promoters of inactive or lowly expressed genes in ES cells and its binding is dependent on recognition of CpG islands by FBXL19",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these observations reveal that CDK8 is enriched at promoters of inactive or lowly expressed genes in ES cells and its binding is dependent on recognition of CpG islands by FBXL19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from CDK8 ChIP-seq and differential binding analysis at genes with different expression levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "72e01cfe-a35c-4f52-aac1-152dbd1c624c",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C50",
+      "claim": "No significant differences in expression of developmental genes are observed in wild-type Fbxl19fl/fl and Fbxl19\u0394CXXC ES cells where these genes are silent",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant differences in the expression of these genes in wild-type Fbxl19fl/fl and Fbxl19\u0394CXXC ES cells where these genes are silent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RT-qPCR data comparing gene expression in wild-type and FBXL19\u0394CXXC ES cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "3102bc4a-4575-4488-a5a1-981c982d7e40",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C51",
+      "claim": "Following RA treatment, Fbxl19\u0394CXXC cells fail to induce developmental genes appropriately",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, following RA treatment, Fbxl19\u0394CXXC cells failed to induce these genes appropriately (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data comparing gene expression in wild-type and FBXL19\u0394CXXC cells after RA treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "e50eb14d-a102-4081-a911-c52cdec2eeb6",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C52",
+      "claim": "Developmental genes are not appropriately induced during embryoid body differentiation of Fbxl19\u0394CXXC ES cells",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, developmental genes were not appropriately induced during embryoid body differentiation of Fbxl19\u0394CXXC ES cells (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data during embryoid body differentiation time course",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "7fc426a8-3dbb-4329-a21b-432a6206b662",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C53",
+      "claim": "FBXL19 is required for the appropriate activation of developmental gene expression during cell lineage commitment",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this demonstrates that FBXL19 is required for the appropriate activation of developmental gene expression during cell lineage commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from RT-qPCR and 4sU RNA-seq data showing impaired gene activation in FBXL19\u0394CXXC cells during differentiation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "99bee176-41ee-48e0-a764-92041c3c980a",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C56",
+      "claim": "Genes that are not appropriately activated in FBXL19\u0394CXXC cells are associated with developmental processes",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis revealed that the set of genes that were not appropriately activated were associated with genes involved in developmental processes (Figure 6D and Figure 6\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene ontology analysis of down-regulated genes in FBXL19\u0394CXXC cells after RA treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "fb94548e-77cb-4ec3-b7c9-a9043cd519ad",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C57",
+      "claim": "Genes not appropriately induced in FBXL19\u0394CXXC cells are lowly expressed in wild-type ES cells",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, consistent with our analysis of FBXL19-dependent CDK8 occupancy at promoters of developmental genes (Figure 5B,C), genes not appropriately induced were lowly expressed in wild-type ES cells (Figure 6E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression analysis of differentially expressed genes in wild-type ES cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "f08da8e4-6f5e-45c7-bdf4-6292552b1b13",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C58",
+      "claim": "Genes not appropriately induced in FBXL19\u0394CXXC cells tend to become activated following RA induction",
+      "claim_type": "EXPLICIT",
+      "source": "and tended to become activated following RA induction (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression analysis comparing ES cells and RA-treated cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "348820db-4ab9-4f45-acc8-26b8b53a54b2",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C59",
+      "claim": "Genes not appropriately induced in FBXL19\u0394CXXC cells exhibit a reduction in CDK8 binding in Fbxl19\u0394CXXC ES cells",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these genes exhibited a reduction in CDK8 binding in Fbxl19\u0394CXXC ES cells (Figure 6G and Figure 6\u2014figure supplement 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CDK8 ChIP-seq analysis at differentially expressed genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "7343841f-1da8-4ab5-b071-826920acd381",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C60",
+      "claim": "Treatment of Med13/13lfl/fl ES cells with OHT results in a loss of MED13 and MED13L protein",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the Med13/13lfl/fl ES cells with OHT resulted in a loss of MED13 and MED13L protein (MED13/13L KO) and reduced levels of the other subunits of the CDK-kinase module (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis showing loss of MED13/13L protein",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "47b1ba1f-cc00-4e42-9f40-6bbc2298c41e",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C61",
+      "claim": "Removal of MED13/13L leads to reduced levels of other subunits of the CDK-kinase module",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the Med13/13lfl/fl ES cells with OHT resulted in a loss of MED13 and MED13L protein (MED13/13L KO) and reduced levels of the other subunits of the CDK-kinase module (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot analysis showing reduced levels of CDK-kinase module subunits",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "19d8c332-1854-4990-87de-85b23a7bea70",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C62",
+      "claim": "Removal of MED13/13L leads to a loss of CDK8 binding to chromatin",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, removal of MED13/13L also led to a loss of CDK8 binding to chromatin (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data showing reduced CDK8 enrichment in MED13/13L KO cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "755f56a7-5060-44ea-983d-0cc27191f2a7",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C63",
+      "claim": "Removal of MED13/13L does not have an appreciable effect on the expression of FBXL19 target genes in the ES cell state",
+      "claim_type": "EXPLICIT",
+      "source": "but did not have an appreciable effect on the expression of FBXL19 target genes in the ES cell state (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data comparing gene expression in wild-type and MED13/13L KO ES cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "75273d7d-e5b0-4dca-b8e8-62ea33b1f0be",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C64",
+      "claim": "Genes that rely on FBXL19 for activation during differentiation fail to appropriately induce in MED13/13L KO cells",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we then analysed the expression of a series of genes that rely on FBXL19 for activation during differentiation (Figure 7D), we observed that these genes also failed to appropriately induce in MED13/13L KO cells (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data comparing gene expression in wild-type and MED13/13L KO cells after RA treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "3db9dbb1-197c-4cbf-9511-c5a027e2d1e9",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C65",
+      "claim": "FBXL19, via its association with CpG islands, recognizes a subset of silent developmental genes in ES cells to recruit the CDK-Mediator complex and prime these genes for future activation",
+      "claim_type": "EXPLICIT",
+      "source": "Together this suggests that FBXL19, via its association with CpG islands, recognises a subset of silent developmental genes in ES cells in order to recruit the CDK-Mediator complex and prime these genes for future activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from combined data showing FBXL19-dependent CDK8 recruitment and requirement for both FBXL19 and MED13/13L for gene activation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "48a88433-d493-4ddc-b2ad-a7a90443a903",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C66",
+      "claim": "Removal of the ZF-CxxC domain of FBXL19 leads to embryonic lethality",
+      "claim_type": "EXPLICIT",
+      "source": "From these crosses, we failed to obtain any viable Fbxl19\u0394CXXC homozygous offspring, indicating that removal of the ZF-CxxC domain of FBXL19 leads to embryonic lethality (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by absence of viable homozygous offspring from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "be392cdf-4411-4b9b-ada8-09c857a82025",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C67",
+      "claim": "Fbxl19\u0394CXXC homozygous embryos are observed at normal Mendelian ratios until 10.5 days postcoitum (dpc)",
+      "claim_type": "EXPLICIT",
+      "source": "We then investigated at which stage Fbxl19\u0394CXXC homozygous embryos were affected and found homozygous embryos were observed at normal Mendelian ratios until 10.5 days postcoitum (dpc) (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping data from embryos at different developmental stages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "9ac994ba-b2b8-45db-803a-69b9a9ccc156",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C68",
+      "claim": "At 9.5 dpc, gross embryonic morphology of Fbxl19\u0394CXXC homozygous embryos appears to be intact",
+      "claim_type": "EXPLICIT",
+      "source": "At 9.5 dpc, gross embryonic morphology appeared to be intact but at 10.5 dpc (Figure 8B) the embryos exhibited a clear growth retardation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morphological examination of embryos at 9.5 dpc",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "ab5a13ef-5069-4c89-abee-5adff2097f19",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C69",
+      "claim": "At 10.5 dpc, Fbxl19\u0394CXXC homozygous embryos exhibit clear growth retardation and developmental defects",
+      "claim_type": "EXPLICIT",
+      "source": "At 9.5 dpc, gross embryonic morphology appeared to be intact but at 10.5 dpc (Figure 8B) the embryos exhibited a clear growth retardation and showed, to varying extents, reduced elongation of the trunk, hypomorphic limb buds and cephalic region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morphological examination of embryos at 10.5 dpc",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "72202a20-dd54-43da-bfdc-30f6e72bd902",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C70",
+      "claim": "Fbxl19\u0394CXXC homozygous embryos show defects in maxillary and mandibular components of first branchial arches",
+      "claim_type": "EXPLICIT",
+      "source": "This included undeveloped facial mesenchyme, including defects in maxillary and mandibular components of first branchial arches (indicated by yellow and red arrows in Figure 8B, respectively)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morphological examination of embryos at 10.5 dpc",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "0127230f-4721-4651-82a5-6ce3dc44ff01",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C71",
+      "claim": "Fbxl19\u0394CXXC homozygous embryos show hypomorphic cardiac mesenchyme",
+      "claim_type": "EXPLICIT",
+      "source": "and hypomorphic cardiac mesenchyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by morphological examination of embryos at 10.5 dpc",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "4660690a-3afd-40dd-8fae-603689c6a4d8",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C72",
+      "claim": "Some living Fbxl19\u0394CXXC homozygous embryos are observed at 12.5 dpc but they are of similar size and external appearance to 10.5 dpc mutant embryos",
+      "claim_type": "EXPLICIT",
+      "source": "Some living Fbxl19\u0394CXXC homozygous embryos, characterized by a beating heart, were observed at 12.5 dpc but they were of similar size and external appearance to 10.5 dpc mutant embryos suggesting that normal development had ceased by this point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by morphological examination of embryos at 12.5 dpc",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "517105c9-f191-4e94-a3ee-3577f6042faf",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C73",
+      "claim": "FBXL19 and its ability to recognize CpG islands is essential for normal mouse embryonic development",
+      "claim_type": "EXPLICIT",
+      "source": "Together our findings demonstrate that FBXL19, and its ability to recognize CpG islands, is essential for normal mouse embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from embryonic lethality and developmental defects in Fbxl19\u0394CXXC mice",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a3539bf0-ca3f-417b-98d8-8570b693655d",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C74",
+      "claim": "CpG dinucleotides are pervasively methylated in mammalian genomes",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian genomes, CpG dinucleotides are pervasively methylated and this epigenetically maintained DNA modification is generally associated with transcriptional inhibition, playing a central role in silencing of repetitive and parasitic DNA elements (Klose and Bird, 2006; Sch\u00fcbeler, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a0f1b079-c57f-4b9b-857c-c27bc2ca3de9",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C75",
+      "claim": "DNA methylation is generally associated with transcriptional inhibition",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian genomes, CpG dinucleotides are pervasively methylated and this epigenetically maintained DNA modification is generally associated with transcriptional inhibition, playing a central role in silencing of repetitive and parasitic DNA elements (Klose and Bird, 2006; Sch\u00fcbeler, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "e5c0c4b4-debd-4723-a66c-f8ec312ffac5",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C76",
+      "claim": "Most gene promoters are embedded in CpG islands which remain free of DNA methylation",
+      "claim_type": "EXPLICIT",
+      "source": "Most gene promoters, however, are embedded in short elements with elevated CpG dinucleotide content, called CpG islands, which remain free of DNA methylation (Bird et al., 1985; Illingworth and Bird, 2009; Larsen et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "6cadb4be-ee68-4720-aa26-a9f1cc5be9fd",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C77",
+      "claim": "The ZF-CxxC domain can recognize CpG dinucleotides when they are non-methylated",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mammalian cells have evolved a DNA-binding domain, called a ZF-CxxC domain, which can recognize CpG dinucleotides when they are non-methylated (Lee et al., 2001; Voo et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "d96f581d-160f-4df9-8587-04cc804375ba",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C78",
+      "claim": "ZF-CxxC domain-containing proteins have the capacity to recognize and bind CpG islands throughout the genome",
+      "claim_type": "EXPLICIT",
+      "source": "This endows ZF-CxxC domain-containing proteins with the capacity to recognize and bind CpG islands throughout the genome (Blackledge et al., 2010; Thomson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "89781faf-c0d0-49a1-bcdb-427ea3b339b3",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C79",
+      "claim": "There are 12 mammalian proteins encoding a ZF-CxxC domain",
+      "claim_type": "EXPLICIT",
+      "source": "There are 12 mammalian proteins encoding a ZF-CxxC domain, most of which are found in large chromatin modifying complexes that post-translationally modify histone proteins to regulate gene expression from CpG islands (Long et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "852de81e-65dc-4ae8-9f02-c9027dda31c5",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C80",
+      "claim": "KDM2A is a JmjC-domain-containing histone lysine demethylase that removes H3K36me1/2 from CpG islands",
+      "claim_type": "EXPLICIT",
+      "source": "KDM2A is a JmjC-domain-containing histone lysine demethylase that removes histone H3 lysine 36 mono- and di- methylation (H3K36me1/2) from CpG islands (Blackledge et al., 2010; Tsukada et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "2936429d-ec3d-4565-872e-3cc92dba4e00",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C81",
+      "claim": "H3K36me1/me2 is found throughout the genome and is thought to be repressive to gene transcription",
+      "claim_type": "EXPLICIT",
+      "source": "Like DNA methylation, H3K36me1/me2 is found throughout the genome and is thought to be repressive to gene transcription (Carrozza et al., 2005; Keogh et al., 2005; Peters et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "c8195c2c-96ba-4f96-b187-54ca4770fb15",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C82",
+      "claim": "KDM2A has two paralogues in vertebrates: KDM2B and FBXL19",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence-based homology searches revealed that KDM2A has two paralogues in vertebrates, KDM2B and FBXL19 (Katoh and Katoh, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "594600a6-3ee4-410e-a3ff-13634604e3c1",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C83",
+      "claim": "KDM2B binds to CpG islands and can function as a histone demethylase for H3K36me1/2",
+      "claim_type": "EXPLICIT",
+      "source": "KDM2B, like KDM2A, binds to CpG islands and can function as a histone demethylase for H3K36me1/2 via its JmjC domain (Farcas et al., 2012; He et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "5418563f-bf71-4dbb-99bd-0ecc568a1c95",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C84",
+      "claim": "KDM2B physically associates with PRC1 to control how transcriptionally repressive polycomb chromatin domains form at a subset of CpG island-associated genes",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike KDM2A, it physically associates with the polycomb repressive complex 1 (PRC1) to control how transcriptionally repressive polycomb chromatin domains form at a subset of CpG island-associated genes (Blackledge et al., 2014; Farcas et al., 2012; He et al., 2013; Wu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "febe9ea6-4e74-4fca-9fcb-82b44dd954e6",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C85",
+      "claim": "FBXL19 lacks a JmjC domain and does not have demethylase activity",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike KDM2A and KDM2B, it lacks a JmjC domain and, therefore, does not have demethylase activity (Long et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature and domain architecture analysis",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "affd414a-b0b5-40c4-b7cb-15749034c4ef",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C86",
+      "claim": "Multicellular development relies on the formation of cell-type-specific gene expression programmes",
+      "claim_type": "EXPLICIT",
+      "source": "Multicellular development relies on the formation of cell-type-specific gene expression programmes that support differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "cf06194e-ec54-4037-a693-b689edcda991",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C88",
+      "claim": "Individual Mediator subunits interact with DNA-binding transcription factors that recruit the Mediator complex to specific DNA sequences",
+      "claim_type": "EXPLICIT",
+      "source": "Individual Mediator subunits have been shown to interact with DNA-binding transcription factors that recruit the Mediator complex to specific DNA sequences in regulatory elements and support gene expression (Black et al., 2006; Blazek et al., 2005; Fondell et al., 1996; Malik and Roeder, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "e270f178-7689-4337-ac2c-df633f643e01",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C89",
+      "claim": "CDK8 and CDK19 share 77% amino acid identity (89% similarity)",
+      "claim_type": "EXPLICIT",
+      "source": "CDK8 and its paralogue CDK19 share 77% amino acid identity (89% similarity) (Audetat et al., 2017; Galbraith et al., 2013; Sato et al., 2004; Tsutsui et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "5a645f20-1c8c-47af-a8f4-26b0227cc29a",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C90",
+      "claim": "MED13/13L physically links the CDK-kinase module to the core Mediator complex",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to inactivate MED13/13L as it has previously been shown to physically link the CDK-kinase module to the core Mediator complex and underpin the formation of a functional CDK-Mediator (Knuesel et al., 2009; Tsai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "67644b62-4497-466a-ae80-4e9f65070927",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C91",
+      "claim": "CDK-Mediator has been associated with gene repression",
+      "claim_type": "EXPLICIT",
+      "source": "Historically, CDK-Mediator has been associated with gene repression (Akoulitchev et al., 2000; Chi et al., 2001; Elmlund et al., 2006; Hengartner et al., 1998; Knuesel et al., 2009; Pavri et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "0a790137-573a-456f-ae46-db125fba7ef7",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C92",
+      "claim": "Several reports support the idea that CDK-Mediator is also involved in gene activation",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are in line with several reports that support the idea that CDK-Mediator is also involved in gene activation (Alarc\u00f3n et al., 2009; Donner et al., 2007; Hirst et al., 1999; Donner et al., 2010; Galbraith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a35ab87b-a7e1-4143-a671-b536a6b13f3e",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C93",
+      "claim": "CDK8 is required for appropriate re-induction of inducible genes following an initial activation stimulus in yeast and human systems",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that FBXL19 can target CDK8 to gene promoters and that this is required to prime the expression of developmental genes during ES cell differentiation is conceptually reminiscent of recent work in yeast and human systems which suggested that CDK8 is required for appropriate re-induction of inducible genes following an initial activation stimulus (D'Urso et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "c81005d4-296c-41e6-b05e-d2acf2ae92ec",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C94",
+      "claim": "CDK8 associates with the promoters of inducible genes following initial activation, acting as a form of transcriptional memory",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, CDK8 was found to associate with the promoters of inducible genes following initial activation, even in the absence of appreciable ongoing gene transcription, thereby acting as a form of transcriptional memory (D'Urso et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "3dd6b88c-9838-4fc6-91d1-0c6aa4be83be",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C95",
+      "claim": "Many developmental genes are inactive in pluripotent mouse ES cells and only become expressed as cells commit to more differentiated lineages",
+      "claim_type": "EXPLICIT",
+      "source": "In pluripotent mouse ES cells, many developmental genes are inactive and only become expressed as cells commit to more differentiated lineages (Boyer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "b5f1ae25-55ad-4669-8a6f-0d5c1b9153e3",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C96",
+      "claim": "A subset of poised but inactive developmental genes in ES cells are proposed to exist in a bivalent chromatin state characterized by co-occurrence of H3K4me and H3K27me",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has identified a subset of poised but inactive developmental genes in ES cells that are proposed to exist in a bivalent chromatin state characterized by the co-occurrence of histone H3 lysine 4 and 27 methylation (H3K4/K27me) (Bernstein et al., 2006; Mikkelsen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "c246c80d-0b51-4d39-b0ed-bed8944aa16f",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C97",
+      "claim": "FBW7 functions as an E3 ubiquitin ligase substrate selector for the MED13/13L subunit of CDK-Mediator",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, another F-box protein, FBW7, was shown to function as an E3 ubiquitin ligase substrate selector for the MED13/13L subunit of CDK-Mediator and to regulate its stability through proteasomal degradation (Davis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "85a08c6b-6c1f-4b5b-aa15-fb25860056d8",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "claim_id": "C98",
+      "claim": "CDK8 can function as an oncogene",
+      "claim_type": "EXPLICIT",
+      "source": "Given that CDK8 can function as an oncogene (Adler et al., 2012; Firestein et al., 2008; Morris et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "81a95889-0a87-43ca-8b57-d3c616082165",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FBXL19 is a nuclear protein that binds to CpG islands throughout the genome in a ZF-CxxC domain-dependent manner, with binding patterns highly similar to KDM2A and KDM2B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C11 collectively demonstrate that FBXL19 localizes to the nucleus (C6, C7), binds CpG islands genome-wide (C1, C8-C10), and requires its ZF-CxxC domain for this binding (C11). The evidence includes immunofluorescence, subcellular fractionation, ChIP-seq data, and mutational analysis, providing strong converging support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FBXL19 associates with the CDK-Mediator complex through its F-box domain in a sub-stoichiometric manner, preferentially interacting with CDK-Mediator rather than MED26-Mediator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12-C19 are supported by AP-MS data (C14, C15), co-immunoprecipitation experiments (C2), and domain deletion studies (C19). The sub-stoichiometric nature (C14, C18) and preferential CDK-Mediator interaction (C15, C16) are well-documented, though the authors acknowledge the interaction may be weak (C18).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "a496e0d3-743a-4fc6-86f8-f25578802b56",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FBXL19 does not interact with RNF20/40 E3 ubiquitin ligase, does not affect H2BK120ub1 levels, and does not function as a SCF substrate selector for CDK-Mediator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 are supported by negative results from AP-MS, Western blot analysis, and the absence of SCF complex components in FBXL19 purifications. These findings contradict a previous report and clarify FBXL19's mechanism of action, though they are based on absence of evidence rather than positive demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "efe69abc-68f5-454a-954a-9fa3ea1e05c2",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FBXL19 is sufficient to recruit CDK-Mediator to chromatin, an activity unique to FBXL19 among KDM2 family members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by TetO array recruitment experiments showing enrichment of CDK8, MED12, and MED4 at the array in TetR-FBXL19 cells (C23, C24), while TetR-KDM2A and TetR-KDM2B do not recruit CDK8 (C25). This synthetic system provides direct evidence for FBXL19's recruitment activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FBXL19 is required for appropriate CDK8 occupancy at a specific subset of broad CpG island-associated gene promoters, but not for CDK8 binding genome-wide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C38 are supported by CDK8 ChIP-seq in wild-type and FBXL19\u0394CXXC cells. The data show that while CDK8 binds broadly (C26, C27), FBXL19 is specifically required at a subset of sites (C31-C33) characterized by broad CpG islands (C34, C36), promoter localization (C37), and high FBXL19 levels (C38). The differential binding analysis is statistically robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FBXL19 targets CDK8 to promoters of silent, bivalent developmental genes in ES cells that become activated during differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C49 are supported by gene ontology analysis (C39), expression profiling (C41, C45), and chromatin state analysis (C42-C44). The data demonstrate that FBXL19-dependent CDK8 sites are enriched at lowly expressed developmental genes with bivalent chromatin marks that can be activated during differentiation. The correlation between CDK8 binding and gene expression at FBXL19-bound sites (C47, C48) is particularly compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "b5b27597-6362-4b30-9fc5-b3885d310e18",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FBXL19 is required for appropriate activation of developmental genes during ES cell differentiation, with genes failing to induce properly in FBXL19\u0394CXXC cells following RA treatment or embryoid body differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53, C56-C59 are supported by RT-qPCR and 4sU RNA-seq data showing no expression differences in ES cells (C50) but significant impairment in gene activation during differentiation (C51, C52). The differentially expressed genes are enriched for developmental processes (C56), lowly expressed in ES cells (C57), and show reduced CDK8 binding (C59), linking FBXL19's recruitment function to gene activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "282d3746-6ca9-4074-8630-a69df3b38879",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CDK-Mediator is required for activation of FBXL19 target genes during differentiation, as demonstrated by conditional deletion of MED13/13L.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are supported by Western blot analysis showing loss of MED13/13L and reduced CDK-kinase module subunits (C60, C61), loss of CDK8 chromatin binding (C62), and RT-qPCR showing impaired gene activation during differentiation (C64) without effects in ES cells (C63). This provides functional validation that CDK-Mediator mediates FBXL19's priming activity (C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "aa9871bf-7803-4af8-b773-286671fe0743",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Removal of the ZF-CxxC domain of FBXL19 leads to embryonic lethality with developmental defects appearing around 10.5 dpc, demonstrating that FBXL19's CpG island recognition is essential for mouse development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 are supported by genetic crosses showing absence of viable homozygous offspring (C66), normal Mendelian ratios until 10.5 dpc (C67), and morphological analysis revealing growth retardation and developmental defects at 10.5 dpc (C68-C72). The in vivo phenotype validates the functional importance of FBXL19's CpG island binding activity observed in cell culture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on CpG islands, DNA methylation, ZF-CxxC domains, and the KDM2 protein family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C85 provide established background knowledge supported by appropriate citations to the literature. These claims contextualize the study but do not represent novel findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on Mediator complex function, CDK-Mediator, developmental gene regulation, and related F-box proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C98 provide established background knowledge supported by appropriate citations. These claims contextualize the findings regarding FBXL19's interaction with CDK-Mediator and its role in developmental gene regulation but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    },
+    {
+      "id": "ec400910-6eef-4f1c-978b-bfc0555369dd",
+      "content_id": "c556a11a-24ec-4c74-b7e6-b75db8825b9d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Removal of the ZF-CxxC domain leads to reduced FBXL19 protein levels but does not affect CDK8 protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by Western blot analysis. This is an important control showing that the observed effects on CDK8 binding are not due to changes in CDK8 protein abundance, though the reduction in FBXL19 protein could potentially complicate interpretation of the binding studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:43:33.540881Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d6417e45-223c-4003-b655-a2dfbfc7884c",
+      "result_id": "81a95889-0a87-43ca-8b57-d3c616082165"
+    },
+    {
+      "claim_id": "16a4e79d-e1f2-46a0-91cb-0397825641d5",
+      "result_id": "81a95889-0a87-43ca-8b57-d3c616082165"
+    },
+    {
+      "claim_id": "44f36065-10a0-462d-86ad-b7e68287296f",
+      "result_id": "81a95889-0a87-43ca-8b57-d3c616082165"
+    },
+    {
+      "claim_id": "8602da6e-a64b-4df3-b6bb-ec7835533056",
+      "result_id": "81a95889-0a87-43ca-8b57-d3c616082165"
+    },
+    {
+      "claim_id": "7196ed2c-45f6-4e62-840a-74cc2a229582",
+      "result_id": "81a95889-0a87-43ca-8b57-d3c616082165"
+    },
+    {
+      "claim_id": "06eb6d4a-bdc6-48c1-bcf2-e30d27aa47ed",
+      "result_id": "81a95889-0a87-43ca-8b57-d3c616082165"
+    },
+    {
+      "claim_id": "24668eb9-75d6-4e84-ad16-76fcac778b56",
+      "result_id": "81a95889-0a87-43ca-8b57-d3c616082165"
+    },
+    {
+      "claim_id": "51c71446-6755-4551-8d1d-1f471d75fd54",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "3d66297b-8f5e-4e19-8723-fcd8f4699922",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "70709a3c-5a68-4938-ad6d-bd3dd79c573e",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "3ced54e4-aa6b-4ffe-84af-4a66bb5c948c",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "46fd2f77-dcc0-4bd0-a170-986077f89884",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "a1609f9e-a29b-40b7-a436-b2d23735cf05",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "b27ffe5a-d213-4a6a-a433-5e51bed56cf8",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "dd9e5f80-af4d-4a21-a3eb-7c73523a97de",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "ae09417f-0ff2-436e-b07b-0b2589be93e1",
+      "result_id": "d3182959-e65e-46ab-81c0-9de0b7b6a3da"
+    },
+    {
+      "claim_id": "a6d066b2-7f3b-4ece-8455-66be6e2b66e4",
+      "result_id": "a496e0d3-743a-4fc6-86f8-f25578802b56"
+    },
+    {
+      "claim_id": "6c8a0b8b-ea88-454f-af69-358a35fb30fa",
+      "result_id": "a496e0d3-743a-4fc6-86f8-f25578802b56"
+    },
+    {
+      "claim_id": "967ab491-a8e6-435d-86a2-7e4da82bf353",
+      "result_id": "a496e0d3-743a-4fc6-86f8-f25578802b56"
+    },
+    {
+      "claim_id": "ccba3eca-7bd6-462d-8874-ca9757c65488",
+      "result_id": "efe69abc-68f5-454a-954a-9fa3ea1e05c2"
+    },
+    {
+      "claim_id": "e1878045-94d6-4f47-a7f5-b1aea357789c",
+      "result_id": "efe69abc-68f5-454a-954a-9fa3ea1e05c2"
+    },
+    {
+      "claim_id": "c5640533-6882-4e95-a4b2-1a6e4ab71d8f",
+      "result_id": "efe69abc-68f5-454a-954a-9fa3ea1e05c2"
+    },
+    {
+      "claim_id": "d98ff7d4-d2c6-43ab-89e8-d3ba4116631b",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "f662a3c8-de3f-4a59-8459-1d42ff4ec5fe",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "1f1fc6aa-4bd2-4448-8843-d348f9f7529f",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "b53f9254-1086-4e8f-b023-52ed76ab0c58",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "e21c3d94-6ea9-4f55-8f6b-121cd596d8ac",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "9382e8c9-421f-4d54-8f9d-3cb7ebcf886a",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "a9bf7a4f-ff82-4bd0-99ff-cfe40f3d27c4",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "87803560-62b7-48c3-80b1-29a3b1dcecea",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "93949238-8a14-470f-a4b4-85e38b836fed",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "c771c698-8310-4bed-90d7-aade3710aa5b",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "a65db0d6-c8c1-4de9-ab1d-5a3707befccf",
+      "result_id": "5cd230d9-50d6-40fb-9ed5-90578a2f6a39"
+    },
+    {
+      "claim_id": "402756d6-4549-4e76-aa95-a89580cba4ad",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "94a58fb3-733c-4d45-936f-03c5ca09d649",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "8b24b4ff-842a-4301-be01-024c5aa24afc",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "621375fb-c194-4aba-9879-3f533fc85aca",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "a095d659-08c1-4838-826f-a8b4901583bc",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "02804359-4ddb-44d6-b577-e93de84b86cc",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "a94574ed-8817-4da3-b12a-d813d1408cd1",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "2ae139a4-0385-4197-8e74-c5c6df2b2064",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "443cbbd0-ac57-45e0-862f-c37b12373b22",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "a644f072-b167-4996-8cb6-673cc205c143",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "205cd74b-124d-4b41-9a24-86c02a415cb9",
+      "result_id": "5b1d3445-ca1b-4edd-b44a-f2218dd7648d"
+    },
+    {
+      "claim_id": "72e01cfe-a35c-4f52-aac1-152dbd1c624c",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "3102bc4a-4575-4488-a5a1-981c982d7e40",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "e50eb14d-a102-4081-a911-c52cdec2eeb6",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "7fc426a8-3dbb-4329-a21b-432a6206b662",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "99bee176-41ee-48e0-a764-92041c3c980a",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "fb94548e-77cb-4ec3-b7c9-a9043cd519ad",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "f08da8e4-6f5e-45c7-bdf4-6292552b1b13",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "348820db-4ab9-4f45-acc8-26b8b53a54b2",
+      "result_id": "b5b27597-6362-4b30-9fc5-b3885d310e18"
+    },
+    {
+      "claim_id": "7343841f-1da8-4ab5-b071-826920acd381",
+      "result_id": "282d3746-6ca9-4074-8630-a69df3b38879"
+    },
+    {
+      "claim_id": "47b1ba1f-cc00-4e42-9f40-6bbc2298c41e",
+      "result_id": "282d3746-6ca9-4074-8630-a69df3b38879"
+    },
+    {
+      "claim_id": "19d8c332-1854-4990-87de-85b23a7bea70",
+      "result_id": "282d3746-6ca9-4074-8630-a69df3b38879"
+    },
+    {
+      "claim_id": "755f56a7-5060-44ea-983d-0cc27191f2a7",
+      "result_id": "282d3746-6ca9-4074-8630-a69df3b38879"
+    },
+    {
+      "claim_id": "75273d7d-e5b0-4dca-b8e8-62ea33b1f0be",
+      "result_id": "282d3746-6ca9-4074-8630-a69df3b38879"
+    },
+    {
+      "claim_id": "3db9dbb1-197c-4cbf-9511-c5a027e2d1e9",
+      "result_id": "282d3746-6ca9-4074-8630-a69df3b38879"
+    },
+    {
+      "claim_id": "48a88433-d493-4ddc-b2ad-a7a90443a903",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "be392cdf-4411-4b9b-ada8-09c857a82025",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "9ac994ba-b2b8-45db-803a-69b9a9ccc156",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "ab5a13ef-5069-4c89-abee-5adff2097f19",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "72202a20-dd54-43da-bfdc-30f6e72bd902",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "0127230f-4721-4651-82a5-6ce3dc44ff01",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "4660690a-3afd-40dd-8fae-603689c6a4d8",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "517105c9-f191-4e94-a3ee-3577f6042faf",
+      "result_id": "aa9871bf-7803-4af8-b773-286671fe0743"
+    },
+    {
+      "claim_id": "a3539bf0-ca3f-417b-98d8-8570b693655d",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "a0f1b079-c57f-4b9b-857c-c27bc2ca3de9",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "e5c0c4b4-debd-4723-a66c-f8ec312ffac5",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "6cadb4be-ee68-4720-aa26-a9f1cc5be9fd",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "d96f581d-160f-4df9-8587-04cc804375ba",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "89781faf-c0d0-49a1-bcdb-427ea3b339b3",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "852de81e-65dc-4ae8-9f02-c9027dda31c5",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "2936429d-ec3d-4565-872e-3cc92dba4e00",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "c8195c2c-96ba-4f96-b187-54ca4770fb15",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "594600a6-3ee4-410e-a3ff-13634604e3c1",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "5418563f-bf71-4dbb-99bd-0ecc568a1c95",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "febe9ea6-4e74-4fca-9fcb-82b44dd954e6",
+      "result_id": "5c83f5e4-6ed5-47b5-aceb-46ef21e9a7e5"
+    },
+    {
+      "claim_id": "affd414a-b0b5-40c4-b7cb-15749034c4ef",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "cf06194e-ec54-4037-a693-b689edcda991",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "e270f178-7689-4337-ac2c-df633f643e01",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "5a645f20-1c8c-47af-a8f4-26b0227cc29a",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "67644b62-4497-466a-ae80-4e9f65070927",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "0a790137-573a-456f-ae46-db125fba7ef7",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "a35ab87b-a7e1-4143-a671-b536a6b13f3e",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "c81005d4-296c-41e6-b05e-d2acf2ae92ec",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "3dd6b88c-9838-4fc6-91d1-0c6aa4be83be",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "b5f1ae25-55ad-4669-8a6f-0d5c1b9153e3",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "c246c80d-0b51-4d39-b0ed-bed8944aa16f",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "85a08c6b-6c1f-4b5b-aa15-fb25860056d8",
+      "result_id": "c9514330-54fc-4caf-bbe8-5d9b51c8b476"
+    },
+    {
+      "claim_id": "46c7d848-b077-4b12-959e-56e599f557f2",
+      "result_id": "ec400910-6eef-4f1c-978b-bfc0555369dd"
+    },
+    {
+      "claim_id": "093524d8-984e-42db-91c5-c9005b9e8f59",
+      "result_id": "ec400910-6eef-4f1c-978b-bfc0555369dd"
+    }
+  ],
+  "comparisons": []
+}

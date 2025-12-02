@@ -1,0 +1,1612 @@
+{
+  "submission": {
+    "id": "1654065b-fa39-4299-8851-e96cbd49695a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:21:32.583472Z",
+    "updated_at": "2025-12-02T01:21:32.583472Z"
+  },
+  "content": [
+    {
+      "id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "submission_id": "1654065b-fa39-4299-8851-e96cbd49695a",
+      "content_type": "manuscript",
+      "content_text": "# JNK signaling triggers spermatogonial dedifferentiation during chronic stress to maintain the germline stem cell pool in the Drosophila testis\n\n## Authors\n\n- Salvador C Herrera<sup>1</sup>\n- Erika A Bach<sup>1</sup> ([ORCID: 0000-0002-5997-4489](https://orcid.org/0000-0002-5997-4489)) \u2020\n\n### Affiliations\n\n1. New York University School of Medicine New York United States\n2. Helen L. and Martin S. Kimmel Center for Stem Cell Biology New York University School of Medicine New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nExhaustion of stem cells is a hallmark of aging. In the Drosophila testis, dedifferentiated germline stem cells (GSCs) derived from spermatogonia increase during lifespan, leading to the model that dedifferentiation counteracts the decline of GSCs in aged males. To test this, we blocked dedifferentiation by mis-expressing the differentiation factor bag of marbles (bam) in spermatogonia while lineage-labeling these cells. Strikingly, blocking bam-lineage dedifferentiation under normal conditions in virgin males has no impact on the GSC pool. However, in mated males or challenging conditions, inhibiting bam-lineage dedifferentiation markedly reduces the number of GSCs and their ability to proliferate and differentiate. We find that bam-lineage derived GSCs have significantly higher proliferation rates than sibling GSCs in the same testis. We determined that Jun N-terminal kinase (JNK) activity is autonomously required for bam-lineage dedifferentiation. Overall, we show that dedifferentiation provides a mechanism to maintain the germline and ensure fertility under chronically stressful conditions.\n\n## Introduction\n\nA robust stem cell pool is critical to the maintenance of highly proliferative tissues during an organism\u2019s lifetime. Adult tissue stem cells typically reside in niches, anatomically defined as microenvironments that support their \u2018stemness\u2019 and promote their proliferation, resulting in some daughter cells that retain stem cell characteristics and some that begin differentiation (Morrison and Spradling, 2008; Blanpain et al., 2014; Spradling et al., 2011). Depletion or reduction of stem cells results in tissue atrophy, and the exhaustion of stem cell function is a hallmark of aging (L\u00f3pez-Ot\u00edn et al., 2013; Wang and Jones, 2011). Thus, the mechanisms that maintain stem cells during an individual\u2019s lifespan are of critical importance to understanding the relationship between stem cells and aging and to develop therapies against aging-related clinical conditions like infertility and Parkinson\u2019s.\n\nThe stem cell pool is dynamic and responds to insults, including injury and starvation in both invertebrate and mammalian model organisms (Angelo and Van Gilst, 2009; Tetteh et al., 2016; van Es et al., 2012; Yang and Yamashita, 2015; McLeod et al., 2010; Li and Jasper, 2016). Recently, dedifferentiation has emerged as a conserved mechanism underlying the replenishment of the stem cell pool after stem cell depletion (Merrell and Stanger, 2016). In the mouse intestine, extensive radiation ablates Lgr5-positive crypt stem cells and lineage-tracing experiments revealed that secretory cells dedifferentiate into Lgr5-positive stem cells following this insult (van Es et al., 2012). In the Drosophila intestine, complete starvation induces the loss of all intestinal stem cells, and polyploid enterocyte cells undergo a reduction in ploidity (called amitosis) and transform into intestinal stem cells (Lucchetta and Ohlstein, 2017). In Drosophila gonads, after forced differentiation of all germline stem cells (GSCs), differentiating spermatogonia revert to the stem cell state and become functional GSCs (Brawley and Matunis, 2004; Kai and Spradling, 2004; Sheng et al., 2009). While these previous studies showed that dedifferentiation indeed occurs after acute insults or injuries, they did not address its functional significance in these events. Here, we test the functional importance of dedifferentiation through a new genetic approach. We have developed a genetic technique to indelibly mark the cells undergoing dedifferentiation, while at the same time functionally inhibiting the process.\n\nWe used the Drosophila testis for these studies because of the powerful genetic techniques available in this organism and the broad knowledge about the biology of this organ and its various cell types. In this tissue, approximately 8\u201314 GSCs reside in a quiescent niche (Greenspan et al., 2015). GSCs adhere to niche cells and undergo oriented mitosis, resulting in one daughter cell that retains the stem cell state and remains in contact with the niche (Figure 1A). The other GSC daughter cell (the gonialblast) is physically displaced from the niche. After encapsulation by somatic support cells, this latter daughter cell begins differentiation through four rounds of mitotic divisions with incomplete cytokinesis, resulting in 2-, 4-, 8- and 16-cell spermatogonial cysts, the lattermost of which undergoes meiosis to produce 64 spermatids. At the 4- and 8-cell cyst stage, germ cells express bag of marbles (bam), which is necessary and sufficient for their differentiation (Sheng et al., 2009; G\u00f6nczy et al., 1997). The testis niche also supports a somatic stem cell population called cyst stem cells (CySCs) that produces somatic support cells, which exit the cell cycle and ensheath differentiating GSC daughter cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the Drosophila testis. Germline stem cells (GSCs) undergo differentiation through several rounds of mitotic divisions with incomplete cytokinesis (the cells remain connected through a structure, the fusome). During the transition from 4- to 8-cell stage, cells acquire the expression of the differentiation factor bam. Germline cells at these stages can undergo dedifferentiation returning to a stem cell state. (B\u2013E) Representative images of the testis stem cell niche in control bam-Gal4, UAS-LacZ (bam\u00a0>\u00a0LacZ, B, C) or bam-Gal4, UAS-bam (bam\u00a0>\u00a0bam, D, E), where we blocked bam-lineage dedifferentiation at 0 days and 45 days under normal aging conditions. The bam lineage is labeled in green, the germline (Vasa) is red and the niche (FasIII) is blue. Each GSC is outlined by a dashed line. There are no GSCs derived from the bam lineage in the control or bam\u00a0>\u00a0bam testis at 0 days (B, D). At day 45, the control contains bam-lineage positive GSCs (indicating that they arose through dedifferentiation) (C, arrows). However, at the same age, there are no bam-lineage positive GSCs in the bam\u00a0>\u00a0bam testis, demonstrating the efficacy of our technique (E). (F) Percentage of bam-lineage dedifferentiated GSCs in bam\u00a0>\u00a0LacZ (gray bars) and bam\u00a0>\u00a0bam (red bars) testes at 0 and 45 days. The proportion of bam-lineage GSCs significantly increases in the control bam\u00a0>\u00a0LacZ at 45 days, while this value remains unchanged in bam\u00a0>\u00a0bam flies. (G) Relative number of GSCs at 0 and 45 days (see Materials and methods for details). In control bam\u00a0>\u00a0LacZ testes (gray bars), the relative number of GSCs declines from 0 to 45 days. If bam-lineage dedifferentiation contributes to the maintenance of a robust GSC pool during aging, we predict that blocking dedifferentiation would enhance the decline in total GSC number. However, there is no statistical difference between the control and bam\u00a0>\u00a0bam genotypes at 45 days. Scale bars represent 10 \u00b5m. Bars on charts represent mean\u00a0\u00b1\u00a0SE.\u00a0*p<0.05, ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** GSCs undergo four rounds of mitotic divisions, and the 4- to 8-cell spermatogonia activate the bam-Gal4 driver. This Gal4 drives expression of UAS-bam, resulting in the production of more Bam differentiation factor in these cells. This ectopic Bam prevents dedifferentiation (\u20181\u2019). For controls, UAS-bam is replaced by a UAS-LacZ. Concomitantly, bam-Gal4 also drives the expression of Flippase (Flp), which then recombines irreversibly the ubiP63E-FRT-stop-FRT-GFP cassette (\u20182\u2019). This indelibly labels with GFP bam-lineage cells and allows the tracking of bam-lineage dedifferentiated GSCs.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013A\u201d) bam-Gal4 driving the expression ubiP63E-FRT-stop-FRT-GFP lineage tracing cassette marker (A\u2019) and of UAS-RFP for real-time expression analysis (A\u201d) in 0 day-old flies. Note the absence of bam-lineage-positive (i.e., dedifferentiated) cells among the GSCs (dotted lines) in contact with the niche (asterisk). (B\u2013B\u201d) The same analysis as in (A) but for 45-day-old unmated flies. Note the presence of bam-lineage-positive (i.e., dedifferentiated) cells among the GSCs (arrow) actively proliferating and giving rise to spermatogonial cysts (bracket). Note also that the bam-lineage-positive GSC has become negative for real-time expression of bam-Gal4, as it does not express RFP (B\u201d). (C\u2013C\u201d) Example of spurious somatic real-time expression of bam in somatic support cells (CySCs, arrows) at 0 days. Scale bars represent 20 \u00b5m.\n\nDuring aging, the population of GSCs declines such that at 50 days of adulthood\u00a0~35% of GSCs are lost from the niche and the remaining GSCs have reduced proliferation (Boyle et al., 2007; Wallenfang et al., 2006). The 35% reduction in the GSC pool in aged males is much smaller than predicted. The average half-life of a GSC is 14 days, and for a testis with 10 GSCs at day 0 of adulthood, there should be\u00a0<1 GSC at 50 days (Boyle et al., 2007; Wallenfang et al., 2006). In other words, the reduction in the total GSC pool should be more than 90% at 50 days. This discrepancy in predicted vs observed size of the GSC pool raised the possibility that a mechanism such as spermatogonial dedifferentiation could be responsible for the apparent resistance of the GSC pool to the deleterious effects of aging (Wang and Jones, 2011; Wallenfang et al., 2006; Cheng et al., 2008). However, to date no study has tested this hypothesis by specifically inhibiting dedifferentiation in spermatogonia.\n\nCertain genetic manipulations (transient removal of responses to niche signals or transient mis-expression of the key differentiation factor bam) cause all GSCs to differentiate. However, upon silencing of these triggers, spermatogonia break apart, migrate back to the niche, outcompete the resident CySCs and become functional GSCs by transducing JAK/STAT signals and repressing bam expression (Brawley and Matunis, 2004; Sheng et al., 2009; Sheng and Matunis, 2011). Interestingly, these studies revealed that the 8-cell spermatogonial cyst is the oldest stage still competent to dedifferentiate. bam-lineage labeling analysis of 4- and 8-cell spermatogonial cysts revealed that the proportion of dedifferentiated cells in the GSC pool increases with aging; in 50 day old males,\u00a0~40% of the GSCs are derived from bam-lineage spermatogonia that dedifferentiated (Cheng et al., 2008).\n\nHere, we have developed a methodology that enabled us to inhibit specifically dedifferentiation of bam-expressing, 4- and 8-cell spermatogonial cysts without apparent side effects, while at the same time lineage-tracing these cells. This has allowed us to address the long-term effects of dedifferentiation. Surprisingly and contrary to predictions, we find that bam-lineage dedifferentiation is not required to maintain the GSC pool during aging under normal laboratory conditions. However, it is critical to maintain a robust GSC pool under chronically stressful conditions. Our methodology also allows the identification of dedifferentiated GSCs from their non-dedifferentiated siblings, facilitating the comparison of their characteristics. We find that bam-lineage dedifferentiated GSCs have a higher proliferative rate compared to their sibling GSCs in the same testis. Finally, we show that Jun N-terminal kinase (JNK) signaling is activated in germ cells during recovery from stress. By inhibiting JNK activity in bam-expressing spermatogonia, we demonstrate that this pathway is essential for dedifferentiation of these cells.\n\n## Results\n\n### Dedifferentiation of bam-lineage cells does not protect the GSC pool during aging under standard conditions\n\nIn order to study the contribution of dedifferentiation to the maintenance of the GSC pool, we lineage-traced spermatogonial cells. Similar to a previous study (Cheng et al., 2008), we used a bam-Gal4 line, expressed specifically in 4- and 8-cell spermatogonial cysts, to drive UAS-Flippase (Flp) expression, and this Flp in turn excises an FRT-stop-FRT from the ubiP63E-FRT-stop-FRT-GFP cassette (Evans et al., 2009). After recombination, GFP becomes an indelible marker of differentiating germ cells that had expressed bam-Gal4, and GFP persists even if the cell turns off the bam promoter. Since transient germline mis-expression of bam is sufficient to induce germline differentiation (Sheng et al., 2009; Ohlstein and McKearin, 1997), we speculated that mis-expression of additional Bam protein in these bam-Gal4-positive spermatogonia (referred to as bam\u00a0>\u00a0bam) should prevent them from undergoing dedifferentiation (Figure 1\u2014figure supplement 1). As a control and to maintain similar titration of the Gal4 protein, we mis-expressed a neutral construct UAS-LacZ by bam-Gal4 in a second set of flies (referred to as bam\u00a0>\u00a0LacZ). For reasons unknown to us but also observed by another group (Cheng et al., 2008), some somatic support cells are labeled for real-time and lineage bam expression (Figure 1B and Figure 1\u2014figure supplement 2C). We note that this methodology will likely not label all dedifferentiating germ cells, as it has been speculated that gonialblasts and 2-cell spermatogonia can revert to become GSCs. We also note that the efficiency of Flp is not 100%, and so we are not labeling all bam-lineage cells. In this study, we refer to\u00a0GFP-positive germ cells as \u2018bam-lineage positive\u2019 and \u2018dedifferentiated\u2019, and GFP-negative germ cells as \u2018bam-lineage negative\u2019 and \u2018wild type siblings\u2019.\n\nWe first analyzed the role of dedifferentiation in control bam\u00a0>\u00a0LacZ and experimental bam\u00a0>\u00a0bam males during standard aging conditions, that\u00a0is, maintaining flies at a low density, in the absence of females and on standard food. In control flies, we observed a significant increase in the percentage of GFP-positive GSCs derived from dedifferentiated bam-lineage spermatogonia, from 7.0% in young flies to 21.6% in 45-day-old males (Figure 1B,C,F), consistent with a prior study (Cheng et al., 2008). As expected, GFP-positive germ cells lose bam expression in the process of reverting to a GSC identity (Figure 1\u2014figure supplement 2A\u2013B\u2019\u2019). However, bam mis-expression in the bam lineage effectively blocked lineage dedifferentiation, as there was no significant increase in the percentage of lineage-dedifferentiated GSCs in aged males, from 3.3% in young flies to 3.6% in 45-day-old flies (Figure 1D,E,F). These results demonstrate that bam mis-expression is an effective way to prevent dedifferentiation.\n\nPrior work has shown that the number of GSCs decreases slightly during aging under normal laboratory conditions, and this has led to the model that dedifferentiation provides a means to offset normal GSC loss during lifespan (Wang and Jones, 2011; Wallenfang et al., 2006; Cheng et al., 2008). If this hypothesis is correct, we would expect a further reduction in GSC number after bam mis-expression by bam-Gal4. Because the starting number of GSCs varies from strain to strain, we compared the relative number of GSCs between bam\u00a0>\u00a0LacZ and bam\u00a0>\u00a0bam flies. To our surprise, we found that the relative number of GSCs decreases significantly by 10% after 45 days in both genotypes (from 10.4 to 9.4 cells in bam\u00a0>\u00a0LacZ, and from 7.9 to 7.1 cells in bam\u00a0>\u00a0bam) (Figure 1G and Supplementary file 1). Furthermore, we did not observe any notable differences between aged bam\u00a0>\u00a0LacZ and aged bam\u00a0>\u00a0bam testes, as all stages of spermatogenesis appeared similar between the two genotypes (see Figure 4A\u2013B and G\u2013H). We note, however, that due to the fact that some of the bam-expressing cells might not undergo recombination (due to incomplete Flp efficiency), we cannot rule out the possibility that unlabeled cells may dedifferentiate and help to maintain the GSC pool under normal laboratory conditions. Additionally, prior work has shown that symmetric renewal, whereby a gonialblast swivels to gain direct access to the niche, occurs at low levels in testes from wild type males (Sheng and Matunis, 2011). It is possible that by blocking bam-lineage dedifferentiation, we are shifting the equilibrium towards symmetric renewal, but live imaging will be needed to test this hypothesis. Nevertheless, although unexpected and contrary to our predictions, our results strongly suggest that dedifferentiation of the bam-lineage does not play an important role in maintaining the GSC pool during aging under normal laboratory conditions.\n\n### bam-lineage dedifferentiation accelerates the recovery of the GSC pool after starvation\n\nWe speculated that dedifferentiation could be vital during challenging life conditions, such as starvation. Previous work has shown that 6\u201315 days of protein deprivation (also generally referred to in the literature as \u2018starvation\u2019) causes a 25% reduction in total GSC number (Yang and Yamashita, 2015; McLeod et al., 2010). Furthermore, the number of GSCs recovered to original levels after 5 days of refeeding on standard food (McLeod et al., 2010). We hypothesized that the recovery of GSCs during refeeding could result from dedifferentiating spermatogonia. To test this model, we subjected bam > LacZ flies to 15 days of protein starvation, followed by a 9-day time course of refeeding (Figure 2A). We assessed the proportion of dedifferentiated GSCs at the end of the starvation period and at different time points during the refeeding phase. Similar to these prior reports, we observed a 33% decrease in the relative number of GSCs after starvation (10.4 at 0 days and 7.0 after 15 days of starvation) and a full recovery of the GSC pool after 5 days of refeeding (Figure 2B,B\u2019 and Supplementary file 1). In accordance with previous studies, we found that after the 15-day protein starvation period, the percentage of dedifferentiated GSCs did not increase compared to day 0 (compare Figure 2A\u2013G and [Yang and Yamashita, 2015; McLeod et al., 2010]). However, after the 5 day refeeding period, this proportion significantly increased from 4.2% at day 0 after refeeding to 19.7% at day five after refeeding and did not increase further after longer refeeding times (Figure 2A and Supplementary file 1). We note that this increase in dedifferentiation during the refeeding period strongly correlates with the recovery in the size of the GSC pool (Figure 2B\u2019, gray dashed line).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig2-v2.jpg)\n\n**Figure 2.:** (A) 9-day time course of the proportion of bam-lineage dedifferentiated GSCs during refeeding following 15 days of starvation in control bam\u00a0>\u00a0LacZ testes. (B) The total number of GSCs in bam\u00a0>\u00a0LacZ testes at 0 days prior to starvation and refeeding. (B\u2019) Using the same data set as in (A), we counted the average\u00a0total number of GSCs in all testes at each time point (dashed line). We then analyzed this data set according to whether bam-lineage dedifferentiated GSCs were present (light blue line) or absent (dark blue line). We observed two key features. First, there were significantly more total GSCs at nearly every time point in testes that contained bam-lineage dedifferentiated GSCs (light blue line). Second, the original 0 day total GSC number was recovered much faster in testes with bam-lineage GSCs, at 3 days of refeeding. By contrast, testes lacking bam-lineage GSCs required 7 days to fully recover the GSC pool (dark blue line). (C\u2013F) Examples of testes from control bam\u00a0>\u00a0LacZ (C,D) and bam\u00a0>\u00a0bam (E,F) flies at 0 days and after 15 days of starvation and 5 days of refeeding. The bam lineage is labeled in green, the germline (Vasa) is red and the niche (FasIII) is blue. GSCs are outlined by the dashed line. There are no GSCs derived from bam-lineage germ cells in the control or bam\u00a0>\u00a0bam testis at 0 days (C,E). After 15 days starvation and 5 days refeeding, the control contains GSCs positive for the bam-lineage (D, arrows). However, at the same time point, there are no bam-lineage positive GSCs in the bam\u00a0>\u00a0bam testis (F). (G) Proportion of bam-lineage cells in the GSC pool in the aforementioned genotypes and time points. After starvation and refeeding, there is a significant reduction in the proportion of bam-lineage GSCs in bam\u00a0>\u00a0bam testes (red bar) compared to the control (gray bar). (H) Relative number of GSCs after 0, 3 or 5 days of refeeding following starvation. Light blue line indicates control bam\u00a0>\u00a0LacZ testes containing bam-lineage GSCs, whereas the dark blue line represents control testes lacking bam-lineage dedifferentiation. The red line represents bam\u00a0>\u00a0bam testes where dedifferentiation was blocked. Note that blocking dedifferentiation (red line) significantly delays the recovery of the GSC pool compared to testes with bam-lineage dedifferentiation (light blue line), in a manner similar to what happens in the control testes lacking dedifferentiated GSCs (dark blue line). Scale bars represent 10 \u00b5m. Bars on charts represent mean\u00a0\u00b1SE. *p<0.05, **p<0.01, ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Centrosome orientation in GSCs in testes from bam\u00a0>\u00a0LacZ control males was assessed at day 0, at 45 days fed and unmated, after 15 days of starvation and 5 days of refeeding, and after 4 cycles of starvation, refeeding and mating. Testes were stained with an antibody to \u03b3-Tubulin, which marks the centrosome. At day 0, the rate of centrosome mis-orientation was significantly higher in bam-lineage GSCs (green bar) compared to lineage-negative GSCs (gray bar). However, in all of the other conditions, there was no statistical difference between these two types of GSCs with respect to centrosome mis-orientation. N\u00a0=\u00a057, 49, 47, and 50 testes scored, respectively. **p<0.01.\n\nAmong the bam\u00a0>\u00a0LacZ controls, we observed variable numbers of bam-lineage dedifferentiated GSCs per testis. Most testes contained both GFP-negative wild type and GFP-positive dedifferentiated GSCs at the niche, however, some testes did not contain any dedifferentiated GSCs and some testes contained all dedifferentiated GSCs. We hypothesized that testes with more dedifferentiated GSCs had a faster recovery of the GSC pool after starvation and refeeding. Comparing testes with at least one dedifferentiated GSC (Figure 2B\u2019, light blue line) to those with 0 dedifferentiated GSCs (Figure 2B\u2019, dark blue line), we found that the former fully recovered the pool of GSCs after 3 days, while the latter required significantly longer, up to 7 days. Although we cannot exclude other variables such as germ cell death, GSC loss, and GSC gain through symmetric renewal, this correlation strongly suggests that bam-lineage dedifferentiation accelerates the recovery of the GSC pool under challenging conditions.\n\nThus, we hypothesized that preventing dedifferentiation using bam\u00a0>\u00a0bam flies would mimic this delay in recovery of the GSC pool observed in control flies lacking dedifferentiation. In bam\u00a0>\u00a0bam testes, the proportion of dedifferentiated GSCs did not increase (0% at day 0 after refeeding and 1.8% at day 5 after refeeding), in contrast to the bam\u00a0>\u00a0LacZ controls (Figure 2C\u2013G and Supplementary file 1). Indeed, we observed that blocking dedifferentiation (i.e., bam\u00a0>\u00a0bam) retards the recovery of the GSC pool in a similar manner to control bam\u00a0>\u00a0LacZ testes devoid of bam-lineage dedifferentiation (Figure 2H, compare red to dark blue line). Compared to bam\u00a0>\u00a0LacZ testes with dedifferentiated GSCs, both bam\u00a0>\u00a0bam testes and bam\u00a0>\u00a0LacZ testes lacking dedifferentiated GSCs were significantly delayed in the recovery of the GSC pool (Figure 2H, compare red and dark blue lines to the light blue line). Centrosome mis-orientation in GSCs increases during aging and after irradiation (Cheng et al., 2008). We found that both dedifferentiated GSCs and their \u2018wild type\u2019 siblings displayed equally high rates (~35\u201340%) of centrosome mis-orientation after starvation and refeeding (Figure 2\u2014figure supplement 1, third set of bars), similar to maximal rate of 40% reported in a previous study (Cheng et al., 2008). These results suggest that centrosome mis-orientation was not specific to bam-lineage dedifferentiated GSCs. Taken together, these results suggest that dedifferentiation of the bam-lineage promotes recovery of the GSC pool after challenging conditions.\n\n### bam-lineage dedifferentiation preserves both the GSC pool and spermatogenesis during chronic challenging conditions\n\nOur results suggest a functional role of dedifferentiation in maintaining a robust GSC pool during transient insults or challenging conditions. We further speculated that dedifferentiation could have additional biological roles when such conditions become chronic. We wondered whether males always housed with (and presumably mating with) females could force GSCs in the testis to cope with a higher demand for sperm production and thus accelerate the age-related reduction of the GSC pool. We note that while mating is a normal physiological event, it is stressful as mating significantly decreases both male and female lifespans (Branco et al., 2017; Fowler and Partridge, 1989). However, little is known about the effects of mating on the GSC pool in males. To determine this, we monitored\u00a0the mitotic index in unmated vs continuously mated bam\u00a0>\u00a0LacZ males after 15 days of adulthood. We found significantly more GSCs in M-phase in testes from mated males compared to age-matched unmated males (Figure 3\u2014figure supplement 1A and Supplementary file 2). We next assessed if both GFP-negative wild type and GFP-positive dedifferentiated GSCs in these two conditions had similar M-phase distribution. Indeed, in mated males there were more wild type and dedifferentiated GSCs in M-phase compared to unmated males (Figure 3\u2014figure supplement 1B and Supplementary file 2). These data suggest that there is a systemic or non-autonomous effect of mating on GSC proliferation.\n\nIn a second set of experiments, we addressed whether mating increased dedifferentiation of the bam lineage. We aged bam\u00a0>\u00a0LacZ and bam\u00a0>\u00a0bam flies for 45 days in the constant presence of wild type OregonR females. The rate of dedifferentiation in control bam\u00a0>\u00a0LacZ testes significantly increased from 7.0% at 0 days to 30.8% at 45 days when males are housed with females (Figure 3\u2014figure supplement 1C and Supplementary file 1). As expected, the rate of dedifferentiation upon mating does not increase in bam\u00a0>\u00a0bam flies (Figure 3\u2014figure supplement 1C and Supplementary file 1). Moreover, while the relative number of GSCs is not diminish in testes from mated bam\u00a0>\u00a0lacZ controls, suggesting the pool is preserved, it is significantly (18%) smaller in mated bam\u00a0>\u00a0bam flies (Figure 3\u2014figure supplement 1D and Supplementary file 1). Therefore, bam-lineage dedifferentiation is important in maintaining the size of the GSC pool under mating conditions. This result is in contrast to that obtained in unmated conditions (see Figure 1G).\n\nSince both GSC proliferation and bam-lineage dedifferentiation are significantly increased upon mating, we speculated that this would affect GSC dynamics in the niche by increasing GSC turnover. Specifically we hypothesized that neutral GSC clones should be lost more frequently in testes from mated males compared to unmated ones. To test this, we generated neutral MARCM clones that expressed GFP but were otherwise wild type and measured clone residency in the niche at 2 days post clone induction (dpci) to establish clone induction frequency and at 15 dpci to monitor clone retention. As expected, clones were generated at equal frequency in both unmated and mated conditions (Figure 3\u2014figure supplement 1E, first set of bars). However, at 15 dpci, there was a significant difference in clone retention with fewer clones retained in mated testes (Figure 3\u2014figure supplement 1E, second set of bars). These results are consistent with the model in which increased proliferation of GSCs and outcompetition of resident GSCs by dedifferentiating germline cells alter stem cell dynamics in the testis niche.\n\nAfter establishing the stressful effects of starvation and mating, we designed an aging protocol that might resemble sub-optimal conditions faced by flies in the wild, including intermittent access to food and to mating partners. This protocol consists of cycles of 6 days of protein starvation, which is sufficient to induce a significant reduction in the GSC pool (Yang and Yamashita, 2015), followed of 4 days of refeeding. In each cycle, during the last 2 days of the 4 days of refeeding, we added virgin females to the vials, which were subsequently removed for the next cycle. Our 10-day cycle of starvation and refeeding allowed us to accommodate 4 cycles of challenging conditions (see Materials and methods).\n\nIn control testes, after 4 cycles of starvation, refeeding and mating, we observed a significant increase in the rate of bam-lineage dedifferentiation, from 6.9% at day 0% to 43.9% at day 41 (Figure 3A,B,E and Supplementary file 1). As expected in bam\u00a0>\u00a0bam testes, the rate of dedifferentiation was completely blocked, 3.3% at day 0% to 2.1% at day 41 (Figure 3C,D,E and Supplementary file 1). Importantly, when we blocked dedifferentiation, the relative number of GSCs was significantly reduced by 33% compared to the controls after four cycles (Figure 3F and Supplementary file 1). These results indicate that, under these chronic challenging conditions, bam-lineage dedifferentiation is important to preserve the GSC pool.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013D) Representative images of the testis stem cell niche in control bam\u00a0>\u00a0LacZ (A,B) and bam\u00a0>\u00a0bam (C,D) testes at 0 days (A,C) and after 4 cycles of starvation, refeeding and mating (B,D). The bam lineage is labeled in green, the germline (Vasa) is red and the niche (FasIII) is blue. GSCs are outlined by the dashed line. After four cycles, bam\u00a0>\u00a0LacZ testes contain several bam-lineage GSCs (B, arrows). In the same conditions, bam\u00a0>\u00a0bam testes have fewer GSCs and none of them are dedifferentiated (D). (E) Proportion of bam-lineage GSCs in the indicated genotypes and conditions. The proportion of bam-lineage GSCs soars to nearly 50% in control testes (gray bars), and this process is completely abrogated in bam\u00a0>\u00a0bam testes (red bars). (F) The relative number of GSCs in control bam\u00a0>\u00a0LacZ and bam\u00a0>\u00a0bam testes. After 4 cycles of challenging conditions, there is a significant decline (33%) in the GSC pool in testes where dedifferentiation is prevented. Scale bars represent 10 \u00b5m. Bars represent mean\u00a0\u00b1\u00a0SE. ****p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Percentage of phospho-Histone3 (pH3)-positive GSCs in testes from unmated or mated males after 15 days of adulthood. There are significantly more pH3-positive GSCs in testes from mated males compared to unmated males. See Supplementary file 2 for the number of GSCs and testes analyzed. (B) Percentage of pH3-positive bam-lineage GSCs and pH3-positive lineage-negative GSCs in testes from (A). There are significantly more pH3-positive GSCs in both lineages in testes from mated males compared to those from unmated males. (C) Percentage of bam-lineage GSCs in bam\u00a0>\u00a0LacZ (gray bars) and bam\u00a0>\u00a0bam (red bars) testes at 0 and 45 day-old males reared continuously with females (referred to as \u2018mated\u2019). The proportion of bam-lineage GSCs significantly increases in the control (bam\u00a0>\u00a0LacZ) mated males, while this value remains unchanged in bam\u00a0>\u00a0bam flies. (D) Relative number of GSCs in bam\u00a0>\u00a0LacZ (gray bars) and bam\u00a0>\u00a0bam (red bars) males at 0 day and at 45 days after being reared continuously with females. There is a significant difference between these two genotypes, with fewer GSCs in the bam\u00a0>\u00a0bam flies, when males are continuously mating. (E) Clone retention rates at 2 and 15 days post clone induction (dpci) in testes from unmated (light gray bars) or mated (dark gray bars) males. As expected, neutral MARCM clones were generated at equal frequency in both unmated and mated conditions as assessed by the 2 dpci time point. However, at 15 dpci, there was a significant difference in clone retention with fewer clones retained in testes from mated males. Bars represent mean\u00a0\u00b1\u00a0SE. *p<0.05, **p<0.01,****p<0.0001.\n\nWe speculated that the reduced number of GSCs in testes lacking bam-Gal4 lineage dedifferentiation might impact spermatogenesis. Indeed, after 2 and 4 cycles of starvation and refeeding, bam\u00a0>\u00a0bam testes were thinner and appeared to lack cells in intermediate stages of spermatogenesis (Figure 4B,D,F) when compared to matched bam\u00a0>\u00a0lacZ controls (Figure 4A,C,E). This phenotype is specific to chronic challenging conditions, because testes from 45 day old, fed and unmated flies displayed no apparent differences between the two genotypes (Figure 4G,H). We quantified the number of early-stage spermatogonia in the two genotypes: goniablasts (or 1-cell), 2-cell, 4-cell and 8-cell cysts. At 0 days, the number of gonia at each stage is indistinguishable between bam\u00a0>\u00a0LacZ and bam\u00a0>\u00a0bam flies (Figure 4I and Supplementary file 3), while as noted above, the absolute number of GSCs was distinct between the two genotypes. However, after 4 cycles of starvation, refeeding and mating, the number of gonia was significantly reduced up to 33% at each gonial stage when dedifferentiation was blocked (Figure 4J and Supplementary file 3). The reduced number of gonia in bam\u00a0>\u00a0bam testes is unlikely to be a direct result of the bam mis-expression, as the bam-Gal4 line used is only active in the 4- and 8-cell stage, and bam-Gal4 activity disappears once the cells have dedifferentiated (Figure 1\u2014figure supplement 2). Instead, we observed a decrease in all the stages of spermatogenesis, including the pre-meiotic cysts, with a low-magnification inspection (Figure 4A\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013H) Representative images of control bam\u00a0>\u00a0LacZ (A,C,E,G) and bam\u00a0>\u00a0bam (B,D,F,H) testes at 0 days (A,B), after 2 (C,D) or 4 (E,F) cycles of challenging conditions or in 45-day-old fed unmated males (G,H). The bam lineage is labeled in green and the germline (Vasa) is red. Note when preventing dedifferentiation and subjecting the animals to challenging conditions, the testes appear involuted, and visual inspection revealed fewer transit-amplifying spermatogonia and fewer pre-meiotic spermatocytes (D,F). These phenotypes were not observed in 45-day-old fed unmated bam\u00a0>\u00a0bam testes (H), indicating that they do not arise simply as a result of aging. (I\u2013J) Quantification of the number of GSCs and 1-, 2-, 4- and 8-cell spermatogonial cysts at 0 days (I) and after 4 cycles of challenging conditions (J) in bam\u00a0>\u00a0LacZ (gray line) and bam\u00a0>\u00a0bam (red line) males. Spermatogonial staging was determined using an antibody to \u03b1Spectrin, which marks the fusome/spectrosome. After four cycles, there were significantly fewer spermatogonia of each class in testes where dedifferentiation was inhibited (bam\u00a0>\u00a0bam). Scale bars represent 200 \u00b5m. Data points represent mean\u00a0\u00b1SE. **p<0.01, ***p<0.001, ****p<0.0001.\n\n### bam-lineage dedifferentiated GSCs are more proliferative than their siblings\n\nThe reduced number of gonia in bam\u00a0>\u00a0bam testes after four cycles (Figure 4J) could result from the reduced GSC pool in these testes (Figure 3F). However, an alternative explanation is that bam\u00a0>\u00a0bam testes lack the dedifferentiated GSCs found in control bam\u00a0>\u00a0lacZ testes and that these dedifferentiated GSCs have a higher proliferation rate than \u2018wild type\u2019 siblings and produced more gonial offspring. To assess whether bam-lineage dedifferentiated GSCs are more proliferative than their lineage-negative, wild type siblings, we directly compared the number of offspring of GFP-positive GSCs to those from GFP-negative GSCs in the same bam\u00a0>\u00a0lacZ control testis. We divided the number of spermatogonia at each stage by the number of labeled GSCs that were producing them. This experiment is analogous to a clonal analysis, but here we scored the contribution of an entire type of GSC rather than of a single GSC. Strikingly, we observed that after 4 cycles of starvation, dedifferentiated GSCs contribute up to 45% more offspring than their wild type siblings in the same testis (Figure 5A and Supplementary file 3). Additionally, we directly measured proliferation by scoring the proportion of GSCs positive for the S-phase marker EdU and the M-phase marker phospho-Histone3 (pH3). We found that there were significantly more bam-lineage positive GSCs in S-phase and in M-phase compared to bam-lineage negative GSCs (Figure 5B,C). Centrosome mis-orientation in GSCs slows the rate of proliferation during aging (Cheng et al., 2008). However, both bam-lineage-positive and lineage-negative GSCs had equally high rates of centrosome mis-orientation after 4 cycles of starvation and refeeding (Figure 2\u2014figure supplement 1, fourth set of bars). These data suggest that in some challenging conditions, factors independent of centrosome orientation may regulate GSC proliferation rates.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig5-v2.jpg)\n\n**Figure 5.:** (A) Relative contribution to 1-, 2- or 4-cell spermatogonial cysts of bam-lineage GSCs (green line) and lineage-negative sibling GSCs (black line) in the same bam\u00a0>\u00a0LacZ testis (see Materials and methods for details). bam-lineage GSCs have significantly more spermatogonial offspring than lineage-negative sibling GSCs. (B) EdU incorporation in bam-lineage GSCs (green bar) and lineage-negative sibling GSCs (gray bar) in the same bam\u00a0>\u00a0LacZ testis. There are significantly more EdU-positive lineage-positive GSCs than EdU-positive lineage-negative sibling GSCs. (C) pH3 labeling in bam-lineage GSCs (green bar) and lineage-negative sibling GSCs (gray bar) in the same bam\u00a0>\u00a0LacZ testis. There are significantly more pH3-positive bam-lineage GSCs than pH3-positive lineage-negative sibling GSCs. The raw data are presented in the chart below the graph. Data points represent mean\u00a0\u00b1SE. *p<0.05, **p<0.01.\n\n### The JNK pathway is necessary for bam-lineage spermatogonial dedifferentiation\n\nWe reasoned that JNK signaling could be promoting spermatogonial dedifferentiation because of its established roles in cellular reprogramming and stress responses. An evolutionarily conserved kinase cascade, the JNK pathway plays essential roles in regeneration of numerous organs, including imaginal discs and intestine, and can trigger changes in cell identity and transdifferentiation (Jiang et al., 2009; Berganti\u00f1os et al., 2010; Herrera et al., 2013; Smith-Bolton et al., 2009; Sun and Irvine, 2014; Herrera and Morata, 2014; Lee et al., 2005; Gettings et al., 2010). JNK signaling is activated in a variety of stress responses; it is detected in the somatic support cells in the testis during protein starvation and contributes non-autonomously to the maintenance of the GSC pool (Yang and Yamashita, 2015).\n\nWe were unable to detect real-time JNK activity reporters puckered (puc)-LacZ (Mart\u00edn-Blanco et al., 1998) or TRE-GFP (Chatterjee and Bohmann, 2012) in the germline during or after starvation (data not shown). Since the frequency of dedifferentiation is on average 2.2 GSCs per testis during 5 days of refeeding (Supplementary file 1), the chances for detecting this JNK activation are low, especially if it is transient and/or if only low levels are required. For this reason, we decided to use a more sensitive assay: lineage labeling of puc-Gal4-positive cells. puc is a transcriptional target and repressor of the pathway (Mart\u00edn-Blanco et al., 1998). Similar to the bam-Gal4 lineage labeling, Flp under the control of puc-Gal4 recombines an ubiP63E-FRT-stop-FRT-GFP cassette so that cells that have expressed puc in the past, even at low levels, will become permanently labeled by GFP (genotype: puc\u00a0>\u00a0GFP). Two puc-Gal4 lines with independent origins were used for these experiments (see Materials and methods), showing similar results.\n\nAt 0 days old, testes from puc\u00a0>\u00a0GFP males had GFP expression in a fraction of hub cells. However, GFP expression was largely absent from somatic cyst cells and the germline, with 20% and 12% of testes, respectively, labeled at 0 days in fed conditions (Figure 6A,F,F\u2019). Testes from puc\u00a0>\u00a0GFP males that were maintained under fed conditions and aged for 15 or 20 days showed a similar trend of low rates of labeling (Figure 6B,C,F,F\u2019). After 15 days of protein starvation, 51% of puc\u00a0>\u00a0GFP testes displayed GFP labeling of somatic cyst cells, while GFP expression in the germline was observed in less than 11% of the cases (Figure 6D,F,F\u2019). This increase of JNK signaling in the somatic cells after starvation is consistent with a previous study (Yang and Yamashita, 2015). After 15 days of starvation and 5 of refeeding, 82% of puc\u00a0>\u00a0GFP testes had GFP labeling of somatic cells, and 55% now displayed germline labeling as well, including GSCs (Figure 6E\u2013F\u2019). These results indicate that germline cells acquire JNK activity specifically during the refeeding phase, when the burst of dedifferentiation takes place (Figure 2A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013E) Representative images of testes where puckeredE69 (puc)-Gal4 was lineage-traced at 0 days fed (A), 15 days fed (B), 20 days fed (C), after 15 days starved (D) and after 15 days starved and 5 days refed (E). Under fed conditions, puc-lineage cells were restricted to some niche cells (asterisk) (A\u2013C). After 15 days of starvation, most testes had puc-lineage labeling of somatic cells (quantified in F) (D). Only during the refeeding phase were puc-lineage germline cells observed (quantified in F) (E). Arrows in E mark puc-lineage-positive GSCs and the bracket in E marks puc-lineage-positive spermatogonia. (F, F\u2019) Graphs indicating the percentage of testes that had pucE69-Gal4- (F) or puc-IT.Gal4- (F\u2019) lineage positive somatic cells (light gray bars) or germline cells including GSCs (dark gray bars) at the time points indicated in A-E, as well as at 2 and 3 days of refeeding in (F). (G\u2013J) Representative images of the testis stem cell niche in control bam-Gal4, UAS-LacZ (bam\u00a0>\u00a0LacZ, G, H) or bam-Gal4, UAS-puc (bam\u00a0>\u00a0puc, I, J), where we blocked JNK signaling, at 0 days (G,I) of after 15 days of starvation and 5 days of refeeding (H,J). The bam lineage is labeled in green, the germline (Vasa) is red and the niche (FasIII) is blue. GSCs are outlined by the dashed line. There are no GSCs derived from the bam-lineage cells in the control or bam\u00a0>\u00a0puc testes at 0 days (G, I). After starvation and refeeding, the control (bam\u00a0>\u00a0LacZ) contains GSCs positive for the bam-lineage (indicating that they arose through dedifferentiation) (H, arrow). However, under the same conditions, there are no bam-lineage positive GSCs in the bam\u00a0>\u00a0puc testis (J), indicating that JNK signaling is required for dedifferentiation. (K) Quantification of the rate of bam-lineage dedifferentiation among GSCs in controls (gray bars) and after repressing the JNK pathway with either UAS-puc (blue bars) or a dominant negative form of basket (UAS-bskK53R) (purple bars). Both transgenes are able to block dedifferentiation, mimicking the effects of bam mis-expression. Scale bars in A-E represent 20 \u00b5m, while in G-J they represent 10 \u00b5m. Bars in the graphs represent mean\u00a0\u00b1SE. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Different planes of a 20 \u03bcm z-stack of a testis from a puc\u00a0>\u00a0GFP male after 15 days of starvation and 3 days of refeeding. Each plane is 1.0 \u03bcm thick. The cells of the fragmenting germ cyst are labeled 1\u20134 with \u20181\u2019 being the cell at the niche (the presumed GSC) and \u20182\u2019, \u20183\u2019 and \u20184\u2019 being the remaining cells that are not at the niche. The first row of the figure is a 3D model generated in Paint3D to illustrate the position of the plane in the z-stack as well as the position of the fragmenting germ cyst in the stack. (A\u2013H) The puc-lineage is marked in green; FasIII, which marks the niche, and \u03b1Spectrin, which marks spectrosomes/fusomes, are labeled in red; Vasa, which labels the germline, is in blue. (B) shows the puc\u00a0>\u00a0GFP labeled GSC (cell \u20181\u2019) at the niche. (C) shows the dot fusome (arrow) of cell \u20181\u2019. (D\u2013H) show the remaining three puc\u00a0>\u00a0GFP germ cells of the fragmented 4-cell spermatogonia (labeled \u20182\u2019, \u20183\u2019 and \u20184\u2019). The dot fusome of cell \u20182\u2019 is shown in (D, arrow). The dot fusome of cell \u20183\u2019 is shown in (G, arrow). The dot fusome of cell \u20184\u2019 is shown in (H, arrow).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013B) Confocal slice of a bam\u00a0>\u00a0puc (A) or a bam\u00a0>\u00a0bskDN (labelled K53R) (B) testis after 15 days of starvation and 5 days of refeeding. Note the presence of pre-meiotic spermatocytes (lower bracket), indicating that mis-expression of puc or bskDN does not block the transition from transit-amplifying spermatogonia to pre-meiotic spermatocytes. The bam-lineage is marked in green; FasIII, which marks the niche is in blue; and Vasa, which labels the germline, is in red. Upper bracket indicates the bam-Gal4 expression domain, while the lower bracket indicates the position of spermatocytes.\n\nWe analyzed germline labeling at 2 and 3 days post refeeding to gain insight into how spermatogonial cysts dedifferentiate (Figure 6F). Because prior work has documented fragmenting of 4- and 8-cell gonia prior to dedifferentiation into GSCs (Brawley and Matunis, 2004; Sheng et al., 2009; Cheng et al., 2008; Sheng and Matunis, 2011), we predicted that we would observe a majority of testes with only gonia but not GSCs labeled with puc\u00a0>\u00a0GFP at these time points. Of the 97 testes scored at 2 and 3 days post refeeding, 17 (17.5%) had germline labeling (defined as any GSC, 1-, 2-, 4-, 8- and/or 16-cell gonia expressing puc\u00a0>\u00a0GFP). Of these 17 testes, most (n\u00a0=\u00a015) had at least 1 GSC labeled as well as various gonia; only two testes had gonia but no GSCs labeled. We speculate that high number of cases where an entire germline lineage is labeled results from the considerable time (>24 hr) required to activate puc, recombine the lineage-tracing cassette and induce GFP expression. Our observations are consistent with JNK-activated gonia breaking apart and liberating gonial cells to dedifferentiate into GSCs. However, we cannot rule out the possibility that during refeeding JNK signaling is directly activated in resident GSCs that have not dedifferentiated. In support of our model that spermatogonia fragment and revert to the GSC state after autonomous JNK activation, we observed one testis at 3 days of refeeding where a 4-cell gonia labeled with puc\u00a0>\u00a0GFP appeared to fragment into a 3-cell gonia and a GSC at the niche (Figure 6\u2014figure supplement 1). Each germ cell in the 3-cell gonia had a dot spectrosome, characteristic of fragmenting germ cells during dedifferentiation and very early germ cells (GSCs and gonialblasts) in wild type (Cheng et al., 2008; de Cuevas et al., 1997).\n\nTo functionally test the relevance of JNK activity in spermatogonial dedifferentiation, we blocked its activity in the bam-Gal4 lineage by mis-expressing the JNK inhibitor puc or a dominant negative form of the JNK basket (bsk). Concomitantly, we lineage traced bam-Gal4 cells. If JNK activity is necessary for dedifferentiation, we predict that blocking its activity would reduce dedifferentiation upon refeeding. Indeed, after one cycle of starvation and refeeding, the increase in bam-lineage GSCs was no longer detectable in bam\u00a0>\u00a0puc or bam\u00a0>\u00a0bskDN testes compared with bam\u00a0>\u00a0LacZ controls (Figure 6G\u2013K). We note that neither mis-expression of puc nor bskDN appears to adversely affect germ cell differentiation as robust spermatogonia and spermatocytes expressing puc or bskDN survive and continue to progress towards meiotic stages (Figure 6\u2014figure supplement 2). Taken together, these results indicate that JNK pathway activity is autonomously necessary for germline cells to undergo dedifferentiation.\n\n## Discussion\n\nWhile spermatogonial dedifferentiation increases during aging (this study and (Cheng et al., 2008)), the biological role of this process has remained unknown. Surprisingly, through a combination of genetic methodologies, we demonstrate that dedifferentiation of the bam lineage plays no role in maintaining the GSC pool during aging under standard conditions (abundant food and no females). Instead, we find that under normal but stressful conditions such as mating or under challenging conditions such as starvation and refeeding, dedifferentiation is important for both the quick recovery of the GSC pool in the short term and the preservation of the stem cell number in the long term. These results lead us to propose that bam-lineage dedifferentiation is akin to a regenerative response aimed to preserve the number of gonadal stem cells under adverse situations but is dispensable under optimal life conditions. This model is consistent with previous results demonstrating an increase in dedifferentiation after damage induced by irradiation (Tetteh et al., 2016; van Es et al., 2012; Cheng et al., 2008). Furthermore, our results suggest that spermatogonial cysts can fragment and the liberated germ cells migrate back to the niche to become functional GSCs, similar what was observed upon regeneration of the germline after GSC depletion (Figure 7 and [Brawley and Matunis, 2004; Sheng et al., 2009]). Since germ cells from fragmented cysts have to compete against resident GSCs as well as resident somatic stem cells in order to re-occupy the niche, germ cells that successfully dedifferentiate must have increased competitive properties, which are currently not understood. Future work using live imaging will be needed to uncover the dynamics of this process.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36095/elife-36095-fig7-v2.jpg)\n\n**Figure 7.:** Top left, under normal conditions, GSCs divide and their offspring undergo normal differentiation into spermatogonia. Top right, under challenging conditions like starvation, there is a significant reduction in the number of GSCs and their offspring. Bottom, during the recovery phase, JNK signaling is triggered in spermatogonia (number 1), these cysts break apart and the germ cells dedifferentiate into GSCs (number 2). Dedifferentiated GSCs have higher proliferation rates than their wild type sibling GSCs and produce more offspring (number 3).\n\nOur results reveal a critical role of the JNK pathway in spermatogonial dedifferentiation. We have detected its activation during the refeeding phase after starvation and have proven its requirement in promoting this phenomenon (Figure 7). As mentioned above, we show that dedifferentiation is critical to maintaining a robust GSC pool during challenging conditions and as such is similar to a regenerative response. Recently, several studies have demonstrated the importance of the JNK pathway for proliferation, for triggering other signaling pathways, and for cellular reprogramming during regenerative events in imaginal discs (Berganti\u00f1os et al., 2010; Herrera et al., 2013; Smith-Bolton et al., 2009; Sun and Irvine, 2014; Herrera and Morata, 2014; Lee et al., 2005). It is unclear what JNK signaling regulates during spermatogonial dedifferentiation, but this phenomenon involves some of the features of regeneration, particularly reprogramming which reverts the cell identity to \u2018stemness\u2019. Taken together with our results, these studies suggest that JNK activity may be a universal feature of regenerative responses in Drosophila whether it is to reconstruct an appendage or recover a pool of stem cells.\n\nSimilar to our results, two previous studies did not detect bam-lineage-traced, dedifferentiated GSC in the testis during protein starvation (Yang and Yamashita, 2015; McLeod et al., 2010). Therefore, there is consensus in the field that germline dedifferentiation does not occur during starvation. Our work shows that dedifferentiation occurs during the refeeding period with the maximal percentage of dedifferentiated GSCs being observed only after 5 days. We note that another group did not observe dedifferentiation during the refeeding period. However, they only scored this event at 2 days after refeeding and not at later time points (McLeod et al., 2010). We think the discrepancy between our studies is due to the different lengths of the refeeding period.\n\nOne caveat of our results is the possibility that spurious activity of bam-Gal4 in GSCs could be forcing the recombination of the GFP flip-out cassette and thus marking them indistinguishably from truly dedifferentiated cells. There are, however, three arguments against this being responsible for the increase in bam-lineage labeled GSCs: (1) we failed to detect real time expression of bam-Gal4 in GSCs (Figure 1\u2014figure supplement 2); (2) preventing dedifferentiation (bam\u00a0>\u00a0bam) blocked the increase in labeled GSCs in every scenario we tested; and (3) under challenging conditions, the GFP-positive GSCs were demonstratively more proliferative than their unlabeled siblings, a result that is inconsistent with spurious labeling.\n\nAnother caveat of our experiments is that the extent of dedifferentiation may be underscored because our labeling methodology precludes us from lineage-tracing very early germ cells; the driver we used (bam-Gal4) is restricted to 4- and 8-cell spermatogonia and does not label gonialblasts (i.e., 1-cell) and 2-cell spermatogonia. To the best of our knowledge, there are no Gal4 lines specific to the lattermost cell types and at the same time excluded from GSCs. This limitation makes it impossible for us to track dedifferentiation of gonialblasts and 2-cell spermatogonia and likely causes undersampling of all dedifferentiation events. We note that examples of dedifferentiation from 2-cell gonia have been documented by live imaging (Sheng and Matunis, 2011); this study also showed that \u2018symmetric renewal\u2019 occurs when the gonialblast of a GSC-gonialblast pair swivels into the niche resulting in two stem cell offspring instead of 1 stem cell and 1 differentiating offspring. \u2018Reversion\u2019 occurs when spermatogonial cysts break apart and germ cells return to the niche to become functional GSCs (Sheng and Matunis, 2011). Both symmetric renewal and reversion could be at play in challenging conditions and may underscore why, following one cycle of starvation, the GSC pool does indeed recover albeit in a delayed fashion even when dedifferentiation is blocked (Figure 2B\u2019).\n\nThe inability to track dedifferentiation of gonialblasts and 2-cell gonia, combined with the less than 100% efficiency of Flp/FRT, may underlie the increased mis-oriented centrosomes in bam-lineage negative GSCs under a variety of conditions tested here. Although we observed a significantly higher proportion of bam-lineage GSCs with mis-oriented centrosomes compared to lineage-negative GSCs at day 0, there was no statistically significant difference between these two populations after 45 days of \u2018normal\u2019 aging (Figure 2\u2014figure supplement 1), consistent with a prior report (Cheng et al., 2008). Additionally, we assessed mis-oriented centrosomes after challenging conditions like 1 cycle of starvation and refeeding and 4 cycles of challenging conditions and found no difference in bam-lineage positive vs negative GSCs (Figure 2\u2014figure supplement 1). It is possible that the lineage-negative GSCs are in fact dedifferentiated from gonialblasts and 2 cell gonia. While we cannot experimentally test this hypothesis, if both types of GSCs were in fact derived from dedifferentiated gonia, this\u00a0could account\u00a0for the roughly equal rates of mis-oriented centrosomes in both pools (Figure 2\u2014figure supplement 1).\n\nDespite similarly high rates of centrosome mis-orientation in bam-lineage dedifferentiated GSCs and lineage-negative siblings, the former proliferate faster. This result was unexpected, as it has been reported that dedifferentiated GSCs have decreased proliferation rates due to increased centrosome mis-orientation (Cheng et al., 2008). We speculate that downstream effectors of JNK signaling could be responsible for this increased cycling. The transient activity of JNK in germline cells that dedifferentiate could elicit a change in the epigenetic landscape by modulating Polycomb-group (Pc-g) and trithorax-group (trx-g) genes, as has been shown in several regenerative contexts (Herrera and Morata, 2014; Lee et al., 2005; Roumengous et al., 2017). Such epigenetic changes, possibly downstream of JNK/Pc-g or JNK/trx-g, may endow dedifferentiated GSCs with increased proliferation compared to their wild type siblings. For example, potential cell reprogramming of dedifferentiated GSCs may \u2018refresh\u2019 a stem cell\u2019s genetic landscape, compared with its wild type siblings that may have acquired genetic damage or imprinting. Future experiments will be necessary to directly test these hypotheses.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>Oregon-R (Ore)R</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>stock number: 5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>Ubi-p63E(FRT.STOP)Stinger</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>stock number: 28282</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>UAS-RedStinger</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>stock number: 28281</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>UAS-LacZ</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>stock number: 3955</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>UAS-bskK53R</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>stock number: 9311</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>pucE69-Gal4</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>stock number: 6762</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>puc-IT.Gal4</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>stock number: 63509</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>UAS-puc</td>\n      <td>pmid: 9472024</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>bam-Gal4:VP16</td>\n      <td>pmid: 12571107</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>UAS-bam:GFP</td>\n      <td>pmid: 12571107</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>FRT40A</td>\n      <td>pmid: 26807580</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>ywhsFlp112; tubGal80,FRT40A</td>\n      <td>pmid: 26807580</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti\u2010Vasa</td>\n      <td>Santa Cruz</td>\n      <td>catalog number: dC-13</td>\n      <td>\u20181:200\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-Fas3</td>\n      <td>DHSB</td>\n      <td>catalog number: 3A9</td>\n      <td>\u20181:50\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-\u03b1-Spectrin</td>\n      <td>DSHB</td>\n      <td>catalog number: 7G10</td>\n      <td>\u20181:50\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-\u03b3Tubulin</td>\n      <td>Sigma</td>\n      <td>catalog number: T6557</td>\n      <td>\u20181:100\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>5\u2010ethynyl\u20102\u2032 \u2010deoxyuridine (EdU)</td>\n      <td>Invitrogen</td>\n      <td>catalog number: C10340</td>\n      <td>\u20181:50\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-phospho Histone H3-Ser10</td>\n      <td>Millipore</td>\n      <td>catalog number: #06\u2013570</td>\n      <td>\u20181:200\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji-ImageJ</td>\n      <td>pmid: 22743772</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Photoshop</td>\n      <td>Adobe</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Excel</td>\n      <td>Microsoft</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Paint3D</td>\n      <td>Microsoft</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Drosophila stocks\n\nThe following fly stocks were obtained from the Bloomington Drosophila Stock Center (BDSC): Oregon-R (Ore)R, Ubi-p63E(FRT.STOP)Stinger, UAS-RedStinger, UAS-LacZ, UAS-bskK53R, pucE69-Gal4, puc-IT.Gal4. Additionally, we used the following fly stocks: UAS-puc (Mart\u00edn-Blanco et al., 1998); bam-Gal4:VP16 (Chen and McKearin, 2003); UAS-bam:GFP (Chen and McKearin, 2003); FRT40A and y, w, hs-Flp112; tub-Gal80, FRT40A (Amoyel et al., 2016).\n\n### Antibodies\n\nThe primary antibodies used were: goat anti\u2010Vasa (Santa Cruz, 1:200), mouse anti-FasIII (Developmental Studies Hybridoma Bank (DSHB), 1:50), mouse anti-\u03b1-Spectrin (DSHB, 1:50), mouse anti-\u03b3Tubulin (Sigma, 1:100), rabbit anti-phospho-Histone3-Ser10 (Millipore, 1:200). 5\u2010ethynyl\u20102\u2032\u2010deoxyuridine (EdU, Invitrogen) labeling was carried out as previously described (Amoyel et al., 2014).\n\n### Aging conditions\n\nIn all the experiments, flies were raised at 25\u00b0C. For standard aging conditions, virgin males were collected and kept isolated from females. Flies were kept in vials with food at a density of 20 males per vial (1-inch width) and transferred into fresh new vials every 2 days.\n\nFlies were maintained on standard fly food. For starvation (protein deprivation) periods, males were transferred into vials with 10% sucrose/1% agar, replaced by fresh ones every 2 days.\n\nFor aging in the presence of females (mated males), a maximum of 20 males were placed in the same vial with 40 young (no older than 1 week) wild type (Oregon-R) virgin females. Flies were transferred to new vials every 2 days, and the females were replaced by new young virgins every 2 weeks.\n\nFor aging in challenging conditions, we subjected flies to a regime of cycles of the following composition: 6 days of protein deprivation, followed by 2 days of refeeding in standard food and two additional days of refeeding in standard food in the presence of virgin wild type Oregon-R females in a 2:1 ratio of females to males. At the end of each cycle, females were discarded. For the last cycle, we extended the refeeding time one extra day, so the refeeding phase encompassed 5 days instead of 4, in order to collect testes with a degree of recovery comparable to the single-cycle experiments.\n\n### Data analysis and statistics\n\nWe scored a cell as a GSC if it met these conditions: (1) it is Vasa-positive (Vasa is expressed only in germline cells in the testis); (2) it is a single cell that is not part of a spermatogonial cyst; (3) it makes direct contact with the niche (FasIII-positive cells). In some experiments, the second criterion was evaluated by assessing the presence of dot fusomes when stained with \u03b1-Spectrin, as this is a hallmark of GSCs.\n\nIn the course of our experiments, we realized that distinct genotypes have a different number of GSCs at 0 days (see Figure 4I for example). To compare total GSCs in each genotype over time, we normalized the total number of GSCs at each time point to that of the start (i.e., day 0). For this reason, most of the data are shown as \u2018relative GSC number\u2019, thus enabling direct comparisons between genotypes after the same treatment.\n\nThe percentage of dedifferentiation is calculated as (1) the proportion of GFP-positive (i.e., bam-lineage-positive) GSCs divided by the total number of GSCs in each individual testis and (2) each testis in a particular genotype was averaged.\n\nThe number of cysts at each stage in Figures 4I, J and 5A was scored using the \u03b1-Spectrin antibody, which labels the fusome that connects all the cells in a spermatogonium.\n\nThe percentage of GSCs with mis-oriented centrosomes was calculated by means of an established methodology (Cheng et al., 2008).\n\nImages were acquired on a Zeiss LSM 510 confocal microscope. Image analysis and quantifications were performed with Fiji-ImageJ (Schindelin et al., 2012) and Adobe Photoshop software. Fisher\u2019s exact tests were used for Figures 5B, C and 6F\u2013F\u2019 and Figure 3\u2014figure supplement 1A,B,E. The rest of the statistical tests were performed with Student\u2019s t tests. Data were analyzed with Microsoft Excel and GraphPad Prism. A summary of results, including averages and sample sizes is included in Supplementary file 1\u20133. Paint3D was used in Figure 6\u2014figure supplement 1 to illustrate the position of the confocal slice in the z-stack as well as to indicate the position of the fragmenting germ cyst.\n",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "76faec0b-98fc-417f-bc3f-94ebc5388f56",
+      "submission_id": "1654065b-fa39-4299-8851-e96cbd49695a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yukiko M Yamashita, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36095.021](https://doi.org/10.7554/eLife.36095.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"JNK triggers dedifferentiation during chronic stress to maintain the germline stem cell pool in the Drosophila testis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Yukiko M Yamashita as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Marianne Bronner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Michael Buszczak (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs is provided below in reviewers' individual comments, all felt that this study provides significant insights into biological significance of dedifferentiation, warranting publication in eLife. However, there are several issues that need to be addressed prior to acceptance. Since reviewers' individual comments are not conflicting and in agreement, we decided to provide full review comments as is such that the authors can see the full spectrum of the basis of our discussion.\n\nThe outline of essential revisions we ask is the following:\n\n1) There are strong concluding statements throughout the manuscript that are not necessarily backed up by the experimental evidence. (Also, there are several cases where the authors make rather strong statements in the Results, only to back off of them in the Discussion. These should be removed.)\n\n- There are several concerns regarding Bam-gal4-mediated lineage tracing of dedifferentiated GSCs. Although Bam-gal4-mediated lineage tracing indeed marks dedifferentiation, it does not mark all of dedifferentiated cells, because 2-cell SGs do not express bam-gal4. However, 2-cell SGs are considered to dedifferentiate more than 4- and 8-cell SGs due to their proximity to the niche. Thus, one would have to assume that there are many more dedifferentiated GSCs that are negative for lineage-marker than those positive for lineage-marker. Throughout the Results section, the authors do not sufficiently acknowledge this (highly likely) possibility, and draw strong conclusions, essentially assuming that all of linage-negative cells have never undergone dedifferentiation. This includes their conclusions of 1) centrosome misorientation does not correlate with dedifferentiation. 2) dedifferentiated GSCs proliferate faster. These overstatements/ over-interpretations have to be corrected.\n\n2) Dedifferentiation and re-differentiation are likely a dynamic process, and simple lineage tracing may not be sufficient to draw some conclusions described in this manuscript. Especially, the reviewer felt that it is not yet convincing to rely on lineage tracing (and counting clone number) to measure the activity of GSCs. It is equally conceivable that dedifferentiation causes fragmentation of the cysts, creating multiple 'clones' by fragmentation (thus, higher number of marked clones may not reflect higher proliferation rate). The authors would need additional evidence to make a point that dedifferentiated GSCs are more proliferative \u2013 ideally live imaging, or additional cell cycle markers such as mitotic index. If such experiments cannot be conducted to obtain conclusive results, the authors should not make such a statement.\n\n3) In regards to the puc>GFP lineage tracing, the authors should present a time course to show whether labeled cells always originate from 4-cell and 8-cell cysts, as opposed to GSCs, GBs, and 2-cell cysts.\n\nReviewer #1:\n\nIn this manuscript, Herrera and Bach reports an exciting study that examines the biological significance of dedifferentiation in Drosophila testis. They used an elegant genetic technique to block dedifferentiation (however, note that this blockade of differentiation is not expected to be complete, see below) and found that dedifferentiation is required to maintain the GSC pool under 'challenging' conditions such as protein starvation. They further show that JNK pathway regulates dedifferentiation. The experiments are conducted to a high standard, supporting an exciting conclusion. I have several comments to be addressed prior to publication (they must be addressed, thus fall into 'major' comments, but they are quite straightforward to address).\n\n- bam-gal4 mediated experiments can only manipulate 4-cell spermatogonia and later, excluding the contribution of dedifferentiation from gonialblasts and 2-cell spermatogonia from testing (and those earlier SGs are considered to be more prone to dedifferentiation). Therefore, I suggest the authors to be cautious in stating 'dedifferentiation is not required under unchallenged conditions'. Their results demonstrate that the dedifferentiation from 4/8 SGs do not contribute to GSC maintenance during aging under 'normal' conditions. This clarification does not decrease the impact of this work, but I think it is important to mention throughout the text.\n\n- Subsection \u201cDedifferentiation accelerates the recovery of the GSC pool after starvation\u201d, last paragraph: the authors state that both native and dedifferentiated GSCs have equally high frequency of centrosome misorientation. Again this comes back to the point of 'GSCs dedifferentiated from gonialblast or 2-cell SGs'. Indeed, our prior work (Cheng et al., 2008) observed that centrosome misorientation increase during aging even in 'unmarked' GSCs (not marked by bam-gal4 lineage tracing) and we speculated in this paper that this may reflect dedifferentiation from GB or 2 cell SGs (the centrosome misorientation is speculated to result from not having the original mother centrosome, which would be true with dedifferentiation from GB or 2 cell SGs). I think it is important to acknowledge the likely contribution of GB and 2-SG in dedifferentiation (especially because they are considered to be more prone to dedifferentiation compared to 4 or 8 SGs).\n\n- In Figure 3 they show that presence of female impact dedifferentiation, and reveals the need of dedifferentiation (bam>bam flies decrease GSC pool). This is exciting (and I rather consider this as 'physiological condition' as flies in wild are supposed to be mating, than not mating at all in specific laboratory condition). I wonder if constantly supplying virgin females might further reveal the importance of dedifferentiation. They add virgin females in 'challenging' conditions (repeated cycle of starvation and mating etc. in Figure 4), but 'encountering virgin females periodically' should not be considered a challenge (it's physiological), and examining the impact of such a condition might reveal 'physiological role' of dedifferentiation.\n\n- Figure 5: EdU incorporation cannot be used as a measure of cell cycle on its own, unless combined with mitotic index, because high EdU can simply mean that many cells are spending more time in S phase (instead of cycling faster).\n\n- Discussion starts by stating 'dedifferentiation plays no role under standard aging conditions', which is an overstatement in my opinion because their experimental scheme cannot test the contribution of dedifferentiation from GB and 2 cell SG. They only discuss this possibility in the middle of Discussion, whereas they have never discussed this important possibility until this point. The authors should acknowledge this much earlier and fully integrate this possibility in the interpretation of their results starting in the Results section.\n\n-Figure 4 title: typo, \u201ccomprised\u201d should be compromised.\n\nReviewer #2:\n\nThis paper describes an investigation into the role of dedifferentiation in maintaining the GSC pool in Drosophila testes during chronically stressful conditions. Using a clever technique for genetically manipulating partially differentiated germ cells, the authors find that dedifferentiation of germ cells that have reached the bam(+) stage are important for replenishing the GSC pool following chronic starvation or continuous mating. They also show that dedifferentiated GSCs have increased rates of proliferation relative to GSCs that have not been derived from a bam(+) germ cell, and that JNK signaling is upregulated during chronic stress and required for efficient dedifferentiation. In general, I think their observations are novel and will be of broad interest. I also think that the data provide strong support for the central claims of the paper.\n\nReviewer #3:\n\nIn this manuscript, Herrera and Bach examine how the dedifferentiation of developing germ cells helps to maintain the germline stem cell pool in the Drosophila testis. The authors use a FLP-out lineage tracing system and over-express bam to block normal differentiation. They find dedifferentiation contributes little to the GSC pool in well-fed virgin males. By contrast, dedifferentiation does impact GSC numbers under \"challenging\" conditions, including mating and starvation. The authors provide evidence that GSCs arising from dedifferentiated cells are more active than their wild-type GSC siblings and that the JNK pathway is necessary for germ cell dedifferentiation in specific contexts.\n\nThe authors make several strong conclusions which are not necessarily supported by the data. In the Abstract, the authors write \"Strikingly, blocking dedifferentiation under normal laboratory conditions has no impact on the GSC pool.\" Again, in the Results they state \"Although unexpected and contrary to our predictions, these results preclude an important role for dedifferentiation of the bam-Gal4 lineage in maintaining the GSC pool during aging under normal laboratory conditions.\" I think the authors should be much more explicit in the description of the conditions they are testing in both cases. They should clearly state that this observation is made in testes from unmated/virgin males, since I would consider mating a \"normal\" activity of male Drosophila. In regards to this experiment, the authors should also investigate or cite the relevant literature that describes how GSCs behave in unmated males. Are they as proliferative as those from mated males? Are they lost at the same rate (which should be assayed through clonal analysis)? If GSCs in unmated males are simply less active and are maintained for longer periods of time, the observed result is exactly what one would expect. Although the authors do mention the possibility in their discussion, making this statement in the Abstract ignores the possibility that two and four cell cysts (pre-bam expressing cells) dedifferentiate in unmated males. Examining centrosome orientation (which they use in later experiments) and live cell imaging could help clarify whether no dedifferentiation is occurring in these samples.\n\nThe authors draw the conclusion that dedifferentiation accelerates the recovery of the GSC pool after starvation. This conclusion is based on the observation that testes which have at least 1 bam-GAL4 marked GSC \"fully recovered\" the pool of GSCs in 3 days, as opposed to those that have 0 dedifferentiated GSCs, which recovered the GSC pool in 7 days. This is a correlation, and the authors should characterize this phenotype in greater depth before making any firm conclusions. For example, the rate and levels of dedifferentiation may be exactly the same in both samples, but different testes may exhibit differences in cell death or GSC loss, in addition to any number of other variables, such as GSC proliferation and symmetric renewal. Again, live cell imaging may provide a more complete picture of how these cells are behaving in different circumstances.\n\nThe authors observe that dedifferentiated GSCs and their wild-type siblings display the same level of centrosome mis-orientation. This appears to be directly at odds with Cheng et al. Do the authors make this observation in all cases of dedifferentiation, or only in those testes from males subjected to starvation and refeeding? Further discussion of differences between this study and previous work is warranted.\n\nThe authors observe that dedifferentiated GSCs are more proliferative than their wild-type siblings based on the numbers of GFP positive cells within the testes. However, one cannot be certain that a particular labeled cell/cyst originated from a dedifferentiated GSC as opposed to a cyst that is in the process of breaking down. Dedifferentiation and redifferentiation may be a constant dynamic process. Do the authors have evidence that dedifferentiating cysts have to take on GSC identity before producing differentiating progeny? Again, the observation that dedifferentiated GSCs proliferate at a higher rate than wild-type cells contradicts previous studies. I would like to see live cell imaging that shows higher rates of cell division in the dedifferentiated GSCs and/or additional cell cycle/mitotic markers.\n\nIn regards to the puc>GFP lineage tracing, the authors should present a time course to show whether labeled cells always originate from 4-cell and 8-cell cysts, as opposed to GSCs, GBs, and 2-cell cysts?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"JNK triggers dedifferentiation during chronic stress to maintain the germline stem cell pool in the Drosophila testis\" for further consideration at eLife. Your revised article has been favorably evaluated by Marianne Bronner (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe reviewers appreciate that the authors addressed most of concerns raised during the first round of the review. Reviewer #3 raised a few points that other reviewers agreed to be important points. These points can be simply addressed by textual changes, and we would like the authors to edit the text to reflect on those points. After that, the reviewing editor should be able to editorially accept the manuscript.\n\nReviewer #2:\n\nThe authors have addressed my concerns and I think the paper is now ready for publication.\n\nReviewer #3:\n\nThe authors have addressed many of my previous concerns. I have just a couple of points that need further clarification.\n\nThe authors state: \"Prior work has shown that the number of GSCs decreases slightly during aging under normal laboratory conditions, and this has led to the model that dedifferentiation provides a means to offset normal GSC loss during lifespan (Wang and Jones, 2011; Wallenfang, Nayak and DiNardo, 2006; Cheng et al., 2008). If this hypothesis is correct, we would expect a further reduction in GSC number after bam mis-expression by bam-Gal4.\". They then present data that shows GSC numbers do not drop further when dedifferentiation is blocked, opposite from their expectations.\n\nPrevious results from the Matunis lab have shown that GSCs can undergo symmetric renewal. Perhaps blocking dedifferentiation forces the testis to use this alternative mechanism for maintaining GSC numbers. This does not necessarily mean that dedifferentiation does not play a role in maintaining GSC numbers in older flies. By blocking dedifferentiation, one may be shifting the equilibrium towards this and other potential mechanisms to maintain GSC numbers.\n\nThe authors go on to write \"Although unexpected and contrary to our predictions, these results strongly suggest an important role for dedifferentiation of the bam-Gal4 lineage in maintaining the GSC pool during aging under normal laboratory conditions.\" This conclusion seems at odds with the data that precedes it. Indeed, in the abstract the authors state \"blocking bam-lineage dedifferentiation under normal conditions in virgin males has no impact on the GSC pool.\" Perhaps the authors could rephrase their concluding sentence in the Results section and mention the aforementioned alternative mechanisms.\n\nThe paper is entitled \"JNK triggers dedifferentiation during chronic stress to maintain the germline stem cell pool in the Drosophila testis\" The authors state in the final paragraph of the Results section- \"To functionally test the relevance of JNK activity in spermatogonial dedifferentiation, we blocked its activity in the bam-Gal4 lineage by mis-expressing the JNK inhibitor puc or a dominant negative form of the JNK basket (bsk). Concomitantly, we lineage traced bam-Gal4 cells. If JNK activity is necessary for dedifferentiation, we predict that blocking its activity would reduce dedifferentiation upon refeeding. Indeed, after one cycle of starvation and refeeding, the increase in bam-lineage GSCs was no longer detectable in bam>puc or bam>bskDN testes compared with bam>LacZ controls (Figure 6G-K). Taken together, these results indicate that JNK pathway activity is autonomously necessary for germline cells to undergo dedifferentiation.\"\n\nCan the authors clarify whether cells expressing puc or basketDN survive and continue to differentiate? I do see bam-lineage positive cyst in Figure 6J, which partially speaks to this point. The worry is that over-expression of puc or bskDN reduces germ cell viability, which could interfere with the interpretation of the data.\n",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f2d45a80-8c76-48c5-8ab8-dabca2aa4a09",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C1",
+      "claim": "Exhaustion of stem cells is a hallmark of aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Exhaustion of stem cells is a hallmark of aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Abstract and Introduction, supported by citations to L\u00f3pez-Ot\u00edn et al., 2013 and Wang and Jones, 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "bd2d119c-8416-4477-9036-0c64d6fff8f3",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C2",
+      "claim": "In the Drosophila testis, dedifferentiated germline stem cells (GSCs) derived from spermatogonia increase during lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila testis, dedifferentiated germline stem cells (GSCs) derived from spermatogonia increase during lifespan, leading to the model that dedifferentiation counteracts the decline of GSCs in aged males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a premise for the study, supported by prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "0eb7e2e2-fdcf-493c-a40f-68e2e396ef7f",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C3",
+      "claim": "Blocking bam-lineage dedifferentiation under normal conditions in virgin males has no impact on the GSC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, blocking bam-lineage dedifferentiation under normal conditions in virgin males has no impact on the GSC pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Abstract and supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "6e5ff3eb-ee95-4fe0-9204-847fc99c38f1",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C4",
+      "claim": "In mated males or challenging conditions, inhibiting bam-lineage dedifferentiation markedly reduces the number of GSCs and their ability to proliferate and differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in mated males or challenging conditions, inhibiting bam-lineage dedifferentiation markedly reduces the number of GSCs and their ability to proliferate and differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Abstract and supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "cecf921e-3195-41e7-86d9-8d6332c2c018",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C5",
+      "claim": "bam-lineage derived GSCs have significantly higher proliferation rates than sibling GSCs in the same testis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that bam-lineage derived GSCs have significantly higher proliferation rates than sibling GSCs in the same testis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "f5fd4bc0-4055-458f-b4ac-35c5bc3d2df2",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C6",
+      "claim": "Jun N-terminal kinase (JNK) activity is autonomously required for bam-lineage dedifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that Jun N-terminal kinase (JNK) activity is autonomously required for bam-lineage dedifferentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Abstract and supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "130a9fd6-ad2a-4bcd-adfe-d09a565967e0",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C7",
+      "claim": "Dedifferentiation provides a mechanism to maintain the germline and ensure fertility under chronically stressful conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we show that dedifferentiation provides a mechanism to maintain the germline and ensure fertility under chronically stressful conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the Abstract, supported by the experimental findings throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "765c6df3-835c-440e-b025-e9054e4b708c",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C8",
+      "claim": "Adult tissue stem cells typically reside in niches, anatomically defined as microenvironments that support their 'stemness' and promote their proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult tissue stem cells typically reside in niches, anatomically defined as microenvironments that support their 'stemness' and promote their proliferation, resulting in some daughter cells that retain stem cell characteristics and some that begin differentiation (Morrison and Spradling, 2008; Blanpain et al., 2014; Spradling et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "a55be098-daf8-4204-8896-ba5c2c476d26",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C9",
+      "claim": "Depletion or reduction of stem cells results in tissue atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion or reduction of stem cells results in tissue atrophy, and the exhaustion of stem cell function is a hallmark of aging (L\u00f3pez-Ot\u00edn et al., 2013; Wang and Jones, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d997346c-0f13-4759-ae5f-89b14b8eca81",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C10",
+      "claim": "The stem cell pool is dynamic and responds to insults, including injury and starvation in both invertebrate and mammalian model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The stem cell pool is dynamic and responds to insults, including injury and starvation in both invertebrate and mammalian model organisms (Angelo and Van Gilst, 2009; Tetteh et al., 2016; van Es et al., 2012; Yang and Yamashita, 2015; McLeod et al., 2010; Li and Jasper, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "eaff122d-05bb-4592-9768-f952c8a830e8",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C11",
+      "claim": "Dedifferentiation has emerged as a conserved mechanism underlying the replenishment of the stem cell pool after stem cell depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, dedifferentiation has emerged as a conserved mechanism underlying the replenishment of the stem cell pool after stem cell depletion (Merrell and Stanger, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "530ac39d-44b8-4f12-87c5-17ea8920d94e",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C12",
+      "claim": "In the mouse intestine, extensive radiation ablates Lgr5-positive crypt stem cells and lineage-tracing experiments revealed that secretory cells dedifferentiate into Lgr5-positive stem cells following this insult.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse intestine, extensive radiation ablates Lgr5-positive crypt stem cells and lineage-tracing experiments revealed that secretory cells dedifferentiate into Lgr5-positive stem cells following this insult (van Es et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Introduction, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "b02f465a-8274-4ad9-961e-351d48a73d9f",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C13",
+      "claim": "In the Drosophila intestine, complete starvation induces the loss of all intestinal stem cells, and polyploid enterocyte cells undergo a reduction in ploidity (called amitosis) and transform into intestinal stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila intestine, complete starvation induces the loss of all intestinal stem cells, and polyploid enterocyte cells undergo a reduction in ploidity (called amitosis) and transform into intestinal stem cells (Lucchetta and Ohlstein, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Introduction, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "0b2fb64e-cb6b-429c-92c2-44db7458ad04",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C14",
+      "claim": "In Drosophila gonads, after forced differentiation of all germline stem cells (GSCs), differentiating spermatogonia revert to the stem cell state and become functional GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila gonads, after forced differentiation of all germline stem cells (GSCs), differentiating spermatogonia revert to the stem cell state and become functional GSCs (Brawley and Matunis, 2004; Kai and Spradling, 2004; Sheng et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Introduction, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "7aba3402-8c33-4a43-9f36-ca5c3aa253a2",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C15",
+      "claim": "Approximately 8\u201314 GSCs reside in a quiescent niche in the Drosophila testis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this tissue, approximately 8\u201314 GSCs reside in a quiescent niche (Greenspan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "b6204bb1-1c9d-434d-8b73-18277ce1d907",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C16",
+      "claim": "GSCs adhere to niche cells and undergo oriented mitosis, resulting in one daughter cell that retains the stem cell state and remains in contact with the niche.",
+      "claim_type": "EXPLICIT",
+      "source": "GSCs adhere to niche cells and undergo oriented mitosis, resulting in one daughter cell that retains the stem cell state and remains in contact with the niche (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge in the Introduction and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "bb061c28-e83b-4b6d-9799-170da3ed977e",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C17",
+      "claim": "At the 4- and 8-cell cyst stage, germ cells express bag of marbles (bam), which is necessary and sufficient for their differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 4- and 8-cell cyst stage, germ cells express bag of marbles (bam), which is necessary and sufficient for their differentiation (Sheng et al., 2009; G\u00f6nczy et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "569d487c-5716-4118-9230-e789693ba901",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C18",
+      "claim": "During aging, the population of GSCs declines such that at 50 days of adulthood ~35% of GSCs are lost from the niche and the remaining GSCs have reduced proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "During aging, the population of GSCs declines such that at 50 days of adulthood ~35% of GSCs are lost from the niche and the remaining GSCs have reduced proliferation (Boyle et al., 2007; Wallenfang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "bbc23cde-1322-44ca-bec1-1785cd4445b7",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C19",
+      "claim": "The average half-life of a GSC is 14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The average half-life of a GSC is 14 days, and for a testis with 10 GSCs at day 0 of adulthood, there should be <1 GSC at 50 days (Boyle et al., 2007; Wallenfang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "77659fb4-3a1b-4d5e-9c84-6063f03c74f0",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C20",
+      "claim": "The 8-cell spermatogonial cyst is the oldest stage still competent to dedifferentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these studies revealed that the 8-cell spermatogonial cyst is the oldest stage still competent to dedifferentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Introduction, referencing previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "7a3437ad-0235-410c-9706-feaa467d9698",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C21",
+      "claim": "In 50 day old males, ~40% of the GSCs are derived from bam-lineage spermatogonia that dedifferentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "bam-lineage labeling analysis of 4- and 8-cell spermatogonial cysts revealed that the proportion of dedifferentiated cells in the GSC pool increases with aging; in 50 day old males, ~40% of the GSCs are derived from bam-lineage spermatogonia that dedifferentiated (Cheng et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Introduction, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "1e28cc59-7ae9-4af3-800a-93ba40078c87",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C22",
+      "claim": "bam mis-expression in the bam lineage effectively blocked lineage dedifferentiation, as there was no significant increase in the percentage of lineage-dedifferentiated GSCs in aged males.",
+      "claim_type": "EXPLICIT",
+      "source": "However, bam mis-expression in the bam lineage effectively blocked lineage dedifferentiation, as there was no significant increase in the percentage of lineage-dedifferentiated GSCs in aged males, from 3.3% in young flies to 3.6% in 45-day-old flies (Figure 1D,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "ea5c478d-bbe6-48a8-a939-bf2e60ea5721",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C23",
+      "claim": "The relative number of GSCs decreases significantly by 10% after 45 days in both bam > LacZ and bam > bam genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, we found that the relative number of GSCs decreases significantly by 10% after 45 days in both genotypes (from 10.4 to 9.4 cells in bam > LacZ, and from 7.9 to 7.1 cells in bam > bam) (Figure 1G and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "24ee51d2-4a57-4535-bd4e-fb1bf35f0aa6",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C24",
+      "claim": "Dedifferentiation of the bam-lineage does not play an important role in maintaining the GSC pool during aging under normal laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, although unexpected and contrary to our predictions, our results strongly suggest that dedifferentiation of the bam-lineage does not play an important role in maintaining the GSC pool during aging under normal laboratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "73a2fb12-2594-4ce4-b3c2-301135ffd007",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C25",
+      "claim": "6\u201315 days of protein deprivation causes a 25% reduction in total GSC number.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that 6\u201315 days of protein deprivation (also generally referred to in the literature as 'starvation') causes a 25% reduction in total GSC number (Yang and Yamashita, 2015; McLeod et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Results section, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "9f2f7789-7bf2-4b74-8261-cbb4aedc74ae",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C26",
+      "claim": "The number of GSCs recovered to original levels after 5 days of refeeding on standard food.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the number of GSCs recovered to original levels after 5 days of refeeding on standard food (McLeod et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Results section, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "c7c6a717-64f7-4ac5-88e0-383ccdab1b92",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C27",
+      "claim": "After the 5 day refeeding period, the proportion of dedifferentiated GSCs significantly increased from 4.2% at day 0 after refeeding to 19.7% at day five after refeeding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after the 5 day refeeding period, this proportion significantly increased from 4.2% at day 0 after refeeding to 19.7% at day five after refeeding and did not increase further after longer refeeding times (Figure 2A and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "fba97a79-8ce6-4d61-8151-558b3cf14782",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C28",
+      "claim": "Testes with at least one dedifferentiated GSC fully recovered the pool of GSCs after 3 days, while those with 0 dedifferentiated GSCs required significantly longer, up to 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing testes with at least one dedifferentiated GSC (Figure 2B', light blue line) to those with 0 dedifferentiated GSCs (Figure 2B', dark blue line), we found that the former fully recovered the pool of GSCs after 3 days, while the latter required significantly longer, up to 7 days.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 2B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "ce90fa1a-d673-411c-9b4b-73c3e7aec7fe",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C29",
+      "claim": "Blocking dedifferentiation retards the recovery of the GSC pool in a similar manner to control bam > LacZ testes devoid of bam-lineage dedifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that blocking dedifferentiation (i.e., bam > bam) retards the recovery of the GSC pool in a similar manner to control bam > LacZ testes devoid of bam-lineage dedifferentiation (Figure 2H, compare red to dark blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "c9917ee1-9400-4a57-8232-9964c0161206",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C30",
+      "claim": "Dedifferentiation of the bam-lineage promotes recovery of the GSC pool after challenging conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that dedifferentiation of the bam-lineage promotes recovery of the GSC pool after challenging conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "dd123f51-f642-4e01-b4ae-dc1a0f1cd05d",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C31",
+      "claim": "There were significantly more GSCs in M-phase in testes from mated males compared to age-matched unmated males.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significantly more GSCs in M-phase in testes from mated males compared to age-matched unmated males (Figure 3\u2014figure supplement 1A and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "f548b0df-676c-4038-b04a-eb54b447ed55",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C32",
+      "claim": "The rate of dedifferentiation in control bam > LacZ testes significantly increased from 7.0% at 0 days to 30.8% at 45 days when males are housed with females.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of dedifferentiation in control bam > LacZ testes significantly increased from 7.0% at 0 days to 30.8% at 45 days when males are housed with females (Figure 3\u2014figure supplement 1C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "16b5433f-6baa-40c6-b54d-b8b80f1500d0",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C33",
+      "claim": "While the relative number of GSCs is not diminished in testes from mated bam > lacZ controls, it is significantly (18%) smaller in mated bam > bam flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while the relative number of GSCs is not diminish in testes from mated bam > lacZ controls, suggesting the pool is preserved, it is significantly (18%) smaller in mated bam > bam flies (Figure 3\u2014figure supplement 1D and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d1dc6ff6-b6b5-4e35-99fe-9f98b66e9e8f",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C34",
+      "claim": "bam-lineage dedifferentiation is important in maintaining the size of the GSC pool under mating conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, bam-lineage dedifferentiation is important in maintaining the size of the GSC pool under mating conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "301a74e9-216d-40fb-99ee-e54ea4b759ff",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C35",
+      "claim": "At 15 dpci, there was a significant difference in clone retention with fewer clones retained in mated testes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at 15 dpci, there was a significant difference in clone retention with fewer clones retained in mated testes (Figure 3\u2014figure supplement 1E, second set of bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "fbb8e22d-0bc9-4e00-b542-392aad5ca022",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C36",
+      "claim": "After 4 cycles of starvation, refeeding and mating, there was a significant increase in the rate of bam-lineage dedifferentiation in control testes, from 6.9% at day 0% to 43.9% at day 41.",
+      "claim_type": "EXPLICIT",
+      "source": "In control testes, after 4 cycles of starvation, refeeding and mating, we observed a significant increase in the rate of bam-lineage dedifferentiation, from 6.9% at day 0% to 43.9% at day 41 (Figure 3A,B,E and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 3A,B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "de15bc26-1481-4894-9cfd-c4ce4a6140e3",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C37",
+      "claim": "When dedifferentiation was blocked, the relative number of GSCs was significantly reduced by 33% compared to the controls after four cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we blocked dedifferentiation, the relative number of GSCs was significantly reduced by 33% compared to the controls after four cycles (Figure 3F and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "958b743a-c180-4816-abd1-7c59e66d2654",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C38",
+      "claim": "Under chronic challenging conditions, bam-lineage dedifferentiation is important to preserve the GSC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, under these chronic challenging conditions, bam-lineage dedifferentiation is important to preserve the GSC pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "828f5e9f-d9f8-42cc-978a-6c8e301f5339",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C39",
+      "claim": "After 2 and 4 cycles of starvation and refeeding, bam > bam testes were thinner and appeared to lack cells in intermediate stages of spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, after 2 and 4 cycles of starvation and refeeding, bam > bam testes were thinner and appeared to lack cells in intermediate stages of spermatogenesis (Figure 4B,D,F) when compared to matched bam > lacZ controls (Figure 4A,C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by images in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "1258f8ca-cd63-49fa-a034-3e89f3bea054",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C40",
+      "claim": "After 4 cycles of starvation, refeeding and mating, the number of gonia was significantly reduced up to 33% at each gonial stage when dedifferentiation was blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after 4 cycles of starvation, refeeding and mating, the number of gonia was significantly reduced up to 33% at each gonial stage when dedifferentiation was blocked (Figure 4J and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "48c64d86-bed1-4dd5-a59a-72b2654e43d9",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C41",
+      "claim": "After 4 cycles of starvation, dedifferentiated GSCs contribute up to 45% more offspring than their wild type siblings in the same testis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed that after 4 cycles of starvation, dedifferentiated GSCs contribute up to 45% more offspring than their wild type siblings in the same testis (Figure 5A and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d8d17f43-ac6a-47e2-bb73-662f3f6865db",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C42",
+      "claim": "There were significantly more bam-lineage positive GSCs in S-phase and in M-phase compared to bam-lineage negative GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there were significantly more bam-lineage positive GSCs in S-phase and in M-phase compared to bam-lineage negative GSCs (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "56333768-d7d7-4102-b6b8-66c4b5ef8d14",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C43",
+      "claim": "JNK signaling plays essential roles in regeneration of numerous organs, including imaginal discs and intestine, and can trigger changes in cell identity and transdifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "An evolutionarily conserved kinase cascade, the JNK pathway plays essential roles in regeneration of numerous organs, including imaginal discs and intestine, and can trigger changes in cell identity and transdifferentiation (Jiang et al., 2009; Berganti\u00f1os et al., 2010; Herrera et al., 2013; Smith-Bolton et al., 2009; Sun and Irvine, 2014; Herrera and Morata, 2014; Lee et al., 2005; Gettings et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Results section, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "edf3ae18-d5aa-4f35-9328-9f6aacb1c937",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C44",
+      "claim": "JNK signaling is detected in the somatic support cells in the testis during protein starvation and contributes non-autonomously to the maintenance of the GSC pool.",
+      "claim_type": "EXPLICIT",
+      "source": "JNK signaling is activated in a variety of stress responses; it is detected in the somatic support cells in the testis during protein starvation and contributes non-autonomously to the maintenance of the GSC pool (Yang and Yamashita, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Results section, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "77778a0f-f32b-4a27-ad5d-db3f83ee447f",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C45",
+      "claim": "After 15 days of protein starvation, 51% of puc > GFP testes displayed GFP labeling of somatic cyst cells, while GFP expression in the germline was observed in less than 11% of the cases.",
+      "claim_type": "EXPLICIT",
+      "source": "After 15 days of protein starvation, 51% of puc > GFP testes displayed GFP labeling of somatic cyst cells, while GFP expression in the germline was observed in less than 11% of the cases (Figure 6D,F,F').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 6D,F,F'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "0f3e3810-dbb0-4b53-b1b5-38c48d63d767",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C46",
+      "claim": "After 15 days of starvation and 5 of refeeding, 82% of puc > GFP testes had GFP labeling of somatic cells, and 55% now displayed germline labeling as well, including GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "After 15 days of starvation and 5 of refeeding, 82% of puc > GFP testes had GFP labeling of somatic cells, and 55% now displayed germline labeling as well, including GSCs (Figure 6E\u2013F').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 6E-F'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "9071b02c-56f5-41dd-a7ea-cd828a93640a",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C47",
+      "claim": "Germline cells acquire JNK activity specifically during the refeeding phase, when the burst of dedifferentiation takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that germline cells acquire JNK activity specifically during the refeeding phase, when the burst of dedifferentiation takes place (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "4dd0e9a1-105c-4dd6-b645-cd23ed0d5f95",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C48",
+      "claim": "After one cycle of starvation and refeeding, the increase in bam-lineage GSCs was no longer detectable in bam > puc or bam > bskDN testes compared with bam > LacZ controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, after one cycle of starvation and refeeding, the increase in bam-lineage GSCs was no longer detectable in bam > puc or bam > bskDN testes compared with bam > LacZ controls (Figure 6G\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 6G-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "25685c0f-acaa-4488-87e8-f2e3a78d4c10",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C49",
+      "claim": "JNK pathway activity is autonomously necessary for germline cells to undergo dedifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that JNK pathway activity is autonomously necessary for germline cells to undergo dedifferentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "63a61eb0-fb18-4ef0-9a4a-db9dc95335fd",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C50",
+      "claim": "Dedifferentiation of the bam lineage plays no role in maintaining the GSC pool during aging under standard conditions (abundant food and no females).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, through a combination of genetic methodologies, we demonstrate that dedifferentiation of the bam lineage plays no role in maintaining the GSC pool during aging under standard conditions (abundant food and no females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the Discussion section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "5a21c78c-55cd-448e-b3cc-f73e6d56598f",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C51",
+      "claim": "Under normal but stressful conditions such as mating or under challenging conditions such as starvation and refeeding, dedifferentiation is important for both the quick recovery of the GSC pool in the short term and the preservation of the stem cell number in the long term.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we find that under normal but stressful conditions such as mating or under challenging conditions such as starvation and refeeding, dedifferentiation is important for both the quick recovery of the GSC pool in the short term and the preservation of the stem cell number in the long term.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the Discussion section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d9928119-631c-406e-a26a-c84b24467615",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C52",
+      "claim": "bam-lineage dedifferentiation is akin to a regenerative response aimed to preserve the number of gonadal stem cells under adverse situations but is dispensable under optimal life conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results lead us to propose that bam-lineage dedifferentiation is akin to a regenerative response aimed to preserve the number of gonadal stem cells under adverse situations but is dispensable under optimal life conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed in the Discussion section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "3bc77274-bda4-43de-876e-35475a37fc9c",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C53",
+      "claim": "Spermatogonial cysts can fragment and the liberated germ cells migrate back to the niche to become functional GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results suggest that spermatogonial cysts can fragment and the liberated germ cells migrate back to the niche to become functional GSCs, similar what was observed upon regeneration of the germline after GSC depletion (Figure 7 and [Brawley and Matunis, 2004; Sheng et al., 2009]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion stated in the Discussion section, based on the experimental data and prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "719d438c-854a-4361-933a-c233fbc83a56",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C54",
+      "claim": "JNK activity may be a universal feature of regenerative responses in Drosophila whether it is to reconstruct an appendage or recover a pool of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our results, these studies suggest that JNK activity may be a universal feature of regenerative responses in Drosophila whether it is to reconstruct an appendage or recover a pool of stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion stated in the Discussion section, based on the experimental data and prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "7ebbbc9c-35ee-44ae-9410-fe5830fad24b",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C55",
+      "claim": "Germline dedifferentiation does not occur during starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our results, two previous studies did not detect bam-lineage-traced, dedifferentiated GSC in the testis during protein starvation (Yang and Yamashita, 2015; McLeod et al., 2010). Therefore, there is consensus in the field that germline dedifferentiation does not occur during starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consensus in the Discussion section, supported by citations and the current study's data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "32189768-b621-46a6-8a89-60fb3ee671d3",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C56",
+      "claim": "Dedifferentiation occurs during the refeeding period with the maximal percentage of dedifferentiated GSCs being observed only after 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that dedifferentiation occurs during the refeeding period with the maximal percentage of dedifferentiated GSCs being observed only after 5 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Discussion section, based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "986ccb7c-a316-48a2-9c38-5e43bc07aaa7",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C57",
+      "claim": "Both symmetric renewal and reversion could be at play in challenging conditions and may underscore why, following one cycle of starvation, the GSC pool does indeed recover albeit in a delayed fashion even when dedifferentiation is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Both symmetric renewal and reversion could be at play in challenging conditions and may underscore why, following one cycle of starvation, the GSC pool does indeed recover albeit in a delayed fashion even when dedifferentiation is blocked (Figure 2B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation stated in the Discussion section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "21126625-2c98-4807-bc10-1e3b218f7976",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C58",
+      "claim": "Transient activity of JNK in germline cells that dedifferentiate could elicit a change in the epigenetic landscape by modulating Polycomb-group (Pc-g) and trithorax-group (trx-g) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that downstream effectors of JNK signaling could be responsible for this increased cycling. The transient activity of JNK in germline cells that dedifferentiate could elicit a change in the epigenetic landscape by modulating Polycomb-group (Pc-g) and trithorax-group (trx-g) genes, as has been shown in several regenerative contexts (Herrera and Morata, 2014; Lee et al., 2005; Roumengous et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation stated in the Discussion section, supported by citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "60724c57-bce4-4617-a368-5f7457afd88d",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C59",
+      "claim": "Potential cell reprogramming of dedifferentiated GSCs may 'refresh' a stem cell's genetic landscape, compared with its wild type siblings that may have acquired genetic damage or imprinting.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, potential cell reprogramming of dedifferentiated GSCs may 'refresh' a stem cell's genetic landscape, compared with its wild type siblings that may have acquired genetic damage or imprinting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation stated in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "c36ff1a3-e2fa-432c-ab9b-0f49c768aa43",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C60",
+      "claim": "In control flies, there was a significant increase in the percentage of GFP-positive GSCs derived from dedifferentiated bam-lineage spermatogonia, from 7.0% in young flies to 21.6% in 45-day-old males.",
+      "claim_type": "EXPLICIT",
+      "source": "In control flies, we observed a significant increase in the percentage of GFP-positive GSCs derived from dedifferentiated bam-lineage spermatogonia, from 7.0% in young flies to 21.6% in 45-day-old males (Figure 1B,C,F), consistent with a prior study (Cheng et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 1B,C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "f2710a76-b312-4db2-9a6a-2f81fc94097d",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C61",
+      "claim": "GFP-positive germ cells lose bam expression in the process of reverting to a GSC identity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GFP-positive germ cells lose bam expression in the process of reverting to a GSC identity (Figure 1\u2014figure supplement 2A\u2013B'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 1\u2014figure supplement 2A\u2013B''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "a0c52d01-d394-4fa9-a5dd-8806123a0f83",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C62",
+      "claim": "At 0 days, the starting number of GSCs was 10.4 cells in bam > LacZ and 7.9 cells in bam > bam.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, we found that the relative number of GSCs decreases significantly by 10% after 45 days in both genotypes (from 10.4 to 9.4 cells in bam > LacZ, and from 7.9 to 7.1 cells in bam > bam) (Figure 1G and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "46554f61-d7ea-4f0e-8b16-c9e657eb2253",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C63",
+      "claim": "After 15 days of protein starvation, there was a 33% decrease in the relative number of GSCs (10.4 at 0 days and 7.0 after 15 days of starvation).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to these prior reports, we observed a 33% decrease in the relative number of GSCs after starvation (10.4 at 0 days and 7.0 after 15 days of starvation) and a full recovery of the GSC pool after 5 days of refeeding (Figure 2B,B' and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 2B,B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "a4174038-3afa-47cb-996e-d7e5d74f1a67",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C64",
+      "claim": "After the 15-day protein starvation period, the percentage of dedifferentiated GSCs did not increase compared to day 0.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous studies, we found that after the 15-day protein starvation period, the percentage of dedifferentiated GSCs did not increase compared to day 0 (compare Figure 2A\u2013G and [Yang and Yamashita, 2015; McLeod et al., 2010]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 2A-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "3188821f-1d2c-4a50-b831-f6bb7af99cee",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C65",
+      "claim": "At day 0, the rate of centrosome mis-orientation was significantly higher in bam-lineage GSCs compared to lineage-negative GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 0, the rate of centrosome mis-orientation was significantly higher in bam-lineage GSCs (green bar) compared to lineage-negative GSCs (gray bar).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in Figure 2\u2014figure supplement 1 caption and supported by data in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "9af16de3-b6d4-46af-88b5-c414b95e16e3",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C66",
+      "claim": "After 45 days fed and unmated, there was no statistical difference between bam-lineage GSCs and lineage-negative GSCs with respect to centrosome mis-orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in all of the other conditions, there was no statistical difference between these two types of GSCs with respect to centrosome mis-orientation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in Figure 2\u2014figure supplement 1 caption and supported by data in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "a857dde5-62be-4060-9ab2-c4ba2623d49a",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C67",
+      "claim": "There were significantly more GSCs in M-phase in both wild type and dedifferentiated GSCs in testes from mated males compared to unmated males.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in mated males there were more wild type and dedifferentiated GSCs in M-phase compared to unmated males (Figure 3\u2014figure supplement 1B and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "16e180c7-5ec1-4541-a886-6e893c29f725",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C68",
+      "claim": "Mating increases dedifferentiation of the bam lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second set of experiments, we addressed whether mating increased dedifferentiation of the bam lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested in the Results section, supported by the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "cabb0f05-0139-4807-abf2-bd981adfc4dc",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C70",
+      "claim": "Increased proliferation of GSCs and outcompetition of resident GSCs by dedifferentiating germline cells alter stem cell dynamics in the testis niche.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the model in which increased proliferation of GSCs and outcompetition of resident GSCs by dedifferentiating germline cells alter stem cell dynamics in the testis niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "4e031ea5-d757-40df-9fe1-650235fc0d61",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C71",
+      "claim": "At 0 days, the number of gonia at each stage is indistinguishable between bam > LacZ and bam > bam flies.",
+      "claim_type": "EXPLICIT",
+      "source": "At 0 days, the number of gonia at each stage is indistinguishable between bam > LacZ and bam > bam flies (Figure 4I and Supplementary file 3), while as noted above, the absolute number of GSCs was distinct between the two genotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d3e18aa1-d729-49d1-9bc2-6e5e7d931d51",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C72",
+      "claim": "The reduced number of gonia in bam > bam testes is unlikely to be a direct result of the bam mis-expression, as the bam-Gal4 line used is only active in the 4- and 8-cell stage, and bam-Gal4 activity disappears once the cells have dedifferentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced number of gonia in bam > bam testes is unlikely to be a direct result of the bam mis-expression, as the bam-Gal4 line used is only active in the 4- and 8-cell stage, and bam-Gal4 activity disappears once the cells have dedifferentiated (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "922149ea-2d12-4780-882b-27f703703a17",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C73",
+      "claim": "Both bam-lineage-positive and lineage-negative GSCs had equally high rates of centrosome mis-orientation after 4 cycles of starvation and refeeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Centrosome mis-orientation in GSCs slows the rate of proliferation during aging (Cheng et al., 2008). However, both bam-lineage-positive and lineage-negative GSCs had equally high rates of centrosome mis-orientation after 4 cycles of starvation and refeeding (Figure 2\u2014figure supplement 1, fourth set of bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "0d4403ed-0aa7-42a5-8d74-0f1b3c9ab1f3",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C74",
+      "claim": "In some challenging conditions, factors independent of centrosome orientation may regulate GSC proliferation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that in some challenging conditions, factors independent of centrosome orientation may regulate GSC proliferation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section, based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "be967265-8f71-449c-87f9-1e9a11b38e59",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C75",
+      "claim": "At 0 days old, testes from puc > GFP males had GFP expression in a fraction of hub cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 0 days old, testes from puc > GFP males had GFP expression in a fraction of hub cells. However, GFP expression was largely absent from somatic cyst cells and the germline, with 20% and 12% of testes, respectively, labeled at 0 days in fed conditions (Figure 6A,F,F').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 6A,F,F'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "da68d32a-5551-4efe-ae8f-57780ed11ab4",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C76",
+      "claim": "Of the 97 testes scored at 2 and 3 days post refeeding, 17 (17.5%) had germline labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 97 testes scored at 2 and 3 days post refeeding, 17 (17.5%) had germline labeling (defined as any GSC, 1-, 2-, 4-, 8- and/or 16-cell gonia expressing puc > GFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "b68bed3a-9626-4f20-9278-e93d083b0b3f",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C77",
+      "claim": "Of the 17 testes with germline labeling, most (n = 15) had at least 1 GSC labeled as well as various gonia; only two testes had gonia but no GSCs labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 17 testes, most (n = 15) had at least 1 GSC labeled as well as various gonia; only two testes had gonia but no GSCs labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d6c430ad-7241-4bf2-85fb-51294326b2ce",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C78",
+      "claim": "One testis at 3 days of refeeding showed a 4-cell gonia labeled with puc > GFP that appeared to fragment into a 3-cell gonia and a GSC at the niche.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of our model that spermatogonia fragment and revert to the GSC state after autonomous JNK activation, we observed one testis at 3 days of refeeding where a 4-cell gonia labeled with puc > GFP appeared to fragment into a 3-cell gonia and a GSC at the niche (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "7cdc0390-4e1b-4f1a-8069-53d8360458b2",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C79",
+      "claim": "Neither mis-expression of puc nor bskDN appears to adversely affect germ cell differentiation as robust spermatogonia and spermatocytes expressing puc or bskDN survive and continue to progress towards meiotic stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that neither mis-expression of puc nor bskDN appears to adversely affect germ cell differentiation as robust spermatogonia and spermatocytes expressing puc or bskDN survive and continue to progress towards meiotic stages (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding stated in the Results section and supported by data in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "b07bbb41-7e21-4721-b0d9-ed9cf5c981b6",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C80",
+      "claim": "Germ cells that successfully dedifferentiate must have increased competitive properties, which are currently not understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Since germ cells from fragmented cysts have to compete against resident GSCs as well as resident somatic stem cells in order to re-occupy the niche, germ cells that successfully dedifferentiate must have increased competitive properties, which are currently not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section, based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "58e2b0a4-2555-4706-bbb6-5061c8a54389",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C81",
+      "claim": "Mating significantly decreases both male and female lifespans.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that while mating is a normal physiological event, it is stressful as mating significantly decreases both male and female lifespans (Branco et al., 2017; Fowler and Partridge, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Results section, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "a0aa2491-8b47-413e-8c00-936c022edf95",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C82",
+      "claim": "The Drosophila testis niche supports a somatic stem cell population called cyst stem cells (CySCs) that produces somatic support cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The testis niche also supports a somatic stem cell population called cyst stem cells (CySCs) that produces somatic support cells, which exit the cell cycle and ensheath differentiating GSC daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "35b16e7d-1b7f-4628-9f17-ce4983c9505c",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "claim_id": "C83",
+      "claim": "Certain genetic manipulations cause all GSCs to differentiate, but upon silencing of these triggers, spermatogonia break apart, migrate back to the niche, outcompete the resident CySCs and become functional GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain genetic manipulations (transient removal of responses to niche signals or transient mis-expression of the key differentiation factor bam) cause all GSCs to differentiate. However, upon silencing of these triggers, spermatogonia break apart, migrate back to the niche, outcompete the resident CySCs and become functional GSCs by transducing JAK/STAT signals and repressing bam expression (Brawley and Matunis, 2004; Sheng et al., 2009; Sheng and Matunis, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work in the Introduction, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6e47ee7a-d093-46ce-8196-034075d3722c",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Under normal laboratory conditions (abundant food, no females), blocking bam-lineage dedifferentiation has no impact on the GSC pool during aging. While dedifferentiation increases from 7.0% to 21.6% in controls over 45 days, blocking it does not further reduce GSC numbers beyond the normal 10% decline observed in both control and experimental groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22, C23, C24, C50, C60, and C62 collectively demonstrate that bam mis-expression effectively blocks dedifferentiation (C22) and that this blockade has no significant effect on GSC pool maintenance under standard aging conditions (C23, C24). The data in Figure 1G shows equivalent GSC decline in both genotypes, directly supporting the conclusion that dedifferentiation is dispensable under optimal conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "6e432012-305c-48c0-ba2c-185b59e4c655",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dedifferentiation occurs specifically during the refeeding phase after starvation, not during starvation itself. Testes with dedifferentiated GSCs recover the GSC pool faster (3 days) than those without (7 days), and blocking dedifferentiation delays recovery similar to control testes lacking dedifferentiated GSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, C29, C30, C56, C63, and C64 provide converging evidence that dedifferentiation is temporally restricted to refeeding (C27, C56, C64) and functionally accelerates GSC pool recovery (C28, C29). The data in Figures 2A, 2B', and 2H demonstrate both the timing and functional importance of dedifferentiation during recovery from acute stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Under chronic challenging conditions (mating and/or repeated starvation cycles), bam-lineage dedifferentiation is essential for maintaining the GSC pool. Mating increases GSC proliferation and dedifferentiation rates, and blocking dedifferentiation under these conditions significantly reduces GSC numbers by 18-33%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31-C38, C51, C67-C68 demonstrate that chronic stress conditions increase both GSC proliferation (C31, C67) and dedifferentiation rates (C32, C36), and that blocking dedifferentiation significantly impairs GSC pool maintenance (C33, C37). The data in Figures 3 and Figure 3\u2014figure supplement 1 provide strong experimental support for the functional importance of dedifferentiation under chronic stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "3068d207-b1ad-4206-9cff-4a032029f44f",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Blocking dedifferentiation under chronic challenging conditions reduces not only GSC numbers but also the number of differentiating spermatogonia at all stages (1-, 2-, 4-, and 8-cell cysts) by up to 33%, resulting in thinner testes with fewer intermediate-stage cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C40, C71, and C72 show that the effects of blocking dedifferentiation extend beyond GSCs to affect all stages of spermatogenesis (C40, C71). The visual and quantitative data in Figure 4 demonstrate reduced spermatogonial numbers at all stages after chronic stress when dedifferentiation is blocked, and C72 provides reasoning that this is not a direct effect of bam mis-expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d8600956-dd7f-4d34-bd50-2aedacef639b",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dedifferentiated GSCs have significantly higher proliferation rates than their wild-type sibling GSCs in the same testis, contributing up to 45% more offspring. This increased proliferation occurs despite equally high rates of centrosome mis-orientation in both GSC types, suggesting centrosome-independent regulation of proliferation under challenging conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41, C42, C73, and C74 demonstrate that dedifferentiated GSCs are more proliferative than their siblings through multiple measures: offspring contribution (C41), S-phase labeling (C42), and M-phase labeling (C42). The observation that both GSC types have similar centrosome mis-orientation rates (C73) yet different proliferation rates (C74) is well-supported by data in Figures 5 and Figure 2\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "JNK pathway activity is autonomously required for bam-lineage dedifferentiation. JNK activity is detected in germline cells specifically during the refeeding phase after starvation, and blocking JNK signaling in the bam-lineage prevents dedifferentiation without affecting normal germ cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C45-C49, C75-C79 provide strong evidence for JNK requirement in dedifferentiation through lineage tracing (C45, C46, C75-C77), temporal correlation (C47), functional blockade experiments (C48, C49), and observation of fragmenting cysts (C78). The data in Figure 6 demonstrate both the timing of JNK activation and its functional necessity, while C79 shows that JNK inhibition does not block normal differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "a25ff2ad-465a-4e4e-b87c-33d78b3184cc",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that dedifferentiation functions as a regenerative response to maintain the germline under chronically stressful conditions, involving cyst fragmentation, cell migration to the niche, and JNK-mediated cellular reprogramming. This mechanism may represent a universal feature of regenerative responses in Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C52, C53, C54, and C80 synthesize the experimental findings into a coherent model. While C54 and C80 contain speculative elements about universal mechanisms and competitive properties, the core conclusion (C7, C52) that dedifferentiation maintains the germline under stress is well-supported by the collective experimental evidence. The model of cyst fragmentation (C53) is supported by both current data (C78) and prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "d0dd2460-8d14-4bb9-a5c9-8f8aa8e211d6",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mating increases GSC turnover in the niche, as demonstrated by reduced neutral clone retention at 15 days post-induction in mated versus unmated males. This is consistent with a model where increased proliferation and dedifferentiation alter stem cell dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C70 demonstrate increased GSC dynamics during mating through neutral MARCM clone analysis. The data in Figure 3\u2014figure supplement 1E shows equal clone induction but differential retention, supporting the conclusion that mating increases GSC turnover. This result is consistent with the increased proliferation and dedifferentiation observed under mating conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "694faac6-edd8-4f55-8979-864c8afc9784",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There is consensus in the field, supported by the current study and prior work, that germline dedifferentiation does not occur during starvation itself. Previous studies showed that 6-15 days of protein deprivation causes a 25% reduction in GSC number, which recovers after 5 days of refeeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C25, and C26 establish the context from prior literature that is confirmed by the current study. The consensus that dedifferentiation does not occur during starvation (C55) is supported by multiple studies including the current work (C64), and the recovery dynamics (C25, C26) provide the foundation for the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "0a15f90b-9cb6-4c33-a901-4c8202b8b8c8",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dedifferentiated GSCs lose bam expression as they revert to stem cell identity. At day 0, bam-lineage GSCs have significantly higher rates of centrosome mis-orientation compared to lineage-negative GSCs, but this difference disappears under other conditions tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C65, and C66 describe characteristics of dedifferentiated GSCs. The loss of bam expression (C61) is expected and confirmed by Figure 1\u2014figure supplement 2. The centrosome mis-orientation data (C65, C66) in Figure 2\u2014figure supplement 1 show an initial difference that disappears, though the interpretation of this finding is complex given the caveats discussed in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "26a16d44-8e05-4ae9-8f83-1bc82ac86030",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that symmetric renewal and reversion may both contribute to GSC pool recovery, and that JNK signaling may induce epigenetic changes through Polycomb-group and trithorax-group genes, potentially 'refreshing' the genetic landscape of dedifferentiated GSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57, C58, and C59 are explicitly speculative (as acknowledged in the text) and propose mechanisms that are not directly tested in the current study. While these hypotheses are reasonable based on the data and prior literature (C58 cites relevant work), they require future experimental validation. The speculation about symmetric renewal (C57) attempts to explain why GSC recovery occurs even when dedifferentiation is blocked, but this remains untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    },
+    {
+      "id": "7b0af1fd-77a2-46d3-a188-b750f36187ad",
+      "content_id": "32d1a172-a4ab-4d11-b5e3-7c9525cdb2e3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context through established knowledge about stem cell aging, the Drosophila testis system, dedifferentiation in various tissues, and JNK signaling in regeneration. This includes the hallmarks of aging, GSC biology, prior observations of dedifferentiation, and the role of JNK in regenerative responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C21, C43-C44, C81-C83 provide the established knowledge foundation for the study. These claims are appropriately cited and represent accurate summaries of prior work. They establish the rationale for the current study by documenting that dedifferentiation increases with age (C2, C21) and occurs in various contexts (C12-C14), setting up the key question of whether it functionally maintains the GSC pool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:21:32.583472Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0eb7e2e2-fdcf-493c-a40f-68e2e396ef7f",
+      "result_id": "6e47ee7a-d093-46ce-8196-034075d3722c"
+    },
+    {
+      "claim_id": "1e28cc59-7ae9-4af3-800a-93ba40078c87",
+      "result_id": "6e47ee7a-d093-46ce-8196-034075d3722c"
+    },
+    {
+      "claim_id": "ea5c478d-bbe6-48a8-a939-bf2e60ea5721",
+      "result_id": "6e47ee7a-d093-46ce-8196-034075d3722c"
+    },
+    {
+      "claim_id": "24ee51d2-4a57-4535-bd4e-fb1bf35f0aa6",
+      "result_id": "6e47ee7a-d093-46ce-8196-034075d3722c"
+    },
+    {
+      "claim_id": "63a61eb0-fb18-4ef0-9a4a-db9dc95335fd",
+      "result_id": "6e47ee7a-d093-46ce-8196-034075d3722c"
+    },
+    {
+      "claim_id": "c36ff1a3-e2fa-432c-ab9b-0f49c768aa43",
+      "result_id": "6e47ee7a-d093-46ce-8196-034075d3722c"
+    },
+    {
+      "claim_id": "a0c52d01-d394-4fa9-a5dd-8806123a0f83",
+      "result_id": "6e47ee7a-d093-46ce-8196-034075d3722c"
+    },
+    {
+      "claim_id": "c7c6a717-64f7-4ac5-88e0-383ccdab1b92",
+      "result_id": "6e432012-305c-48c0-ba2c-185b59e4c655"
+    },
+    {
+      "claim_id": "fba97a79-8ce6-4d61-8151-558b3cf14782",
+      "result_id": "6e432012-305c-48c0-ba2c-185b59e4c655"
+    },
+    {
+      "claim_id": "ce90fa1a-d673-411c-9b4b-73c3e7aec7fe",
+      "result_id": "6e432012-305c-48c0-ba2c-185b59e4c655"
+    },
+    {
+      "claim_id": "c9917ee1-9400-4a57-8232-9964c0161206",
+      "result_id": "6e432012-305c-48c0-ba2c-185b59e4c655"
+    },
+    {
+      "claim_id": "32189768-b621-46a6-8a89-60fb3ee671d3",
+      "result_id": "6e432012-305c-48c0-ba2c-185b59e4c655"
+    },
+    {
+      "claim_id": "46554f61-d7ea-4f0e-8b16-c9e657eb2253",
+      "result_id": "6e432012-305c-48c0-ba2c-185b59e4c655"
+    },
+    {
+      "claim_id": "a4174038-3afa-47cb-996e-d7e5d74f1a67",
+      "result_id": "6e432012-305c-48c0-ba2c-185b59e4c655"
+    },
+    {
+      "claim_id": "6e5ff3eb-ee95-4fe0-9204-847fc99c38f1",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "dd123f51-f642-4e01-b4ae-dc1a0f1cd05d",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "f548b0df-676c-4038-b04a-eb54b447ed55",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "16b5433f-6baa-40c6-b54d-b8b80f1500d0",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "d1dc6ff6-b6b5-4e35-99fe-9f98b66e9e8f",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "fbb8e22d-0bc9-4e00-b542-392aad5ca022",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "de15bc26-1481-4894-9cfd-c4ce4a6140e3",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "958b743a-c180-4816-abd1-7c59e66d2654",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "5a21c78c-55cd-448e-b3cc-f73e6d56598f",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "a857dde5-62be-4060-9ab2-c4ba2623d49a",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "16e180c7-5ec1-4541-a886-6e893c29f725",
+      "result_id": "14e427c8-b6fd-4c1f-acd3-e1ffa51e0474"
+    },
+    {
+      "claim_id": "828f5e9f-d9f8-42cc-978a-6c8e301f5339",
+      "result_id": "3068d207-b1ad-4206-9cff-4a032029f44f"
+    },
+    {
+      "claim_id": "1258f8ca-cd63-49fa-a034-3e89f3bea054",
+      "result_id": "3068d207-b1ad-4206-9cff-4a032029f44f"
+    },
+    {
+      "claim_id": "4e031ea5-d757-40df-9fe1-650235fc0d61",
+      "result_id": "3068d207-b1ad-4206-9cff-4a032029f44f"
+    },
+    {
+      "claim_id": "d3e18aa1-d729-49d1-9bc2-6e5e7d931d51",
+      "result_id": "3068d207-b1ad-4206-9cff-4a032029f44f"
+    },
+    {
+      "claim_id": "cecf921e-3195-41e7-86d9-8d6332c2c018",
+      "result_id": "d8600956-dd7f-4d34-bd50-2aedacef639b"
+    },
+    {
+      "claim_id": "48c64d86-bed1-4dd5-a59a-72b2654e43d9",
+      "result_id": "d8600956-dd7f-4d34-bd50-2aedacef639b"
+    },
+    {
+      "claim_id": "d8d17f43-ac6a-47e2-bb73-662f3f6865db",
+      "result_id": "d8600956-dd7f-4d34-bd50-2aedacef639b"
+    },
+    {
+      "claim_id": "922149ea-2d12-4780-882b-27f703703a17",
+      "result_id": "d8600956-dd7f-4d34-bd50-2aedacef639b"
+    },
+    {
+      "claim_id": "0d4403ed-0aa7-42a5-8d74-0f1b3c9ab1f3",
+      "result_id": "d8600956-dd7f-4d34-bd50-2aedacef639b"
+    },
+    {
+      "claim_id": "f5fd4bc0-4055-458f-b4ac-35c5bc3d2df2",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "77778a0f-f32b-4a27-ad5d-db3f83ee447f",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "0f3e3810-dbb0-4b53-b1b5-38c48d63d767",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "9071b02c-56f5-41dd-a7ea-cd828a93640a",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "4dd0e9a1-105c-4dd6-b645-cd23ed0d5f95",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "25685c0f-acaa-4488-87e8-f2e3a78d4c10",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "be967265-8f71-449c-87f9-1e9a11b38e59",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "da68d32a-5551-4efe-ae8f-57780ed11ab4",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "b68bed3a-9626-4f20-9278-e93d083b0b3f",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "d6c430ad-7241-4bf2-85fb-51294326b2ce",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "7cdc0390-4e1b-4f1a-8069-53d8360458b2",
+      "result_id": "7d2a6261-7ac3-405e-a1f3-7297731fa0fe"
+    },
+    {
+      "claim_id": "130a9fd6-ad2a-4bcd-adfe-d09a565967e0",
+      "result_id": "a25ff2ad-465a-4e4e-b87c-33d78b3184cc"
+    },
+    {
+      "claim_id": "d9928119-631c-406e-a26a-c84b24467615",
+      "result_id": "a25ff2ad-465a-4e4e-b87c-33d78b3184cc"
+    },
+    {
+      "claim_id": "3bc77274-bda4-43de-876e-35475a37fc9c",
+      "result_id": "a25ff2ad-465a-4e4e-b87c-33d78b3184cc"
+    },
+    {
+      "claim_id": "719d438c-854a-4361-933a-c233fbc83a56",
+      "result_id": "a25ff2ad-465a-4e4e-b87c-33d78b3184cc"
+    },
+    {
+      "claim_id": "b07bbb41-7e21-4721-b0d9-ed9cf5c981b6",
+      "result_id": "a25ff2ad-465a-4e4e-b87c-33d78b3184cc"
+    },
+    {
+      "claim_id": "301a74e9-216d-40fb-99ee-e54ea4b759ff",
+      "result_id": "d0dd2460-8d14-4bb9-a5c9-8f8aa8e211d6"
+    },
+    {
+      "claim_id": "cabb0f05-0139-4807-abf2-bd981adfc4dc",
+      "result_id": "d0dd2460-8d14-4bb9-a5c9-8f8aa8e211d6"
+    },
+    {
+      "claim_id": "7ebbbc9c-35ee-44ae-9410-fe5830fad24b",
+      "result_id": "694faac6-edd8-4f55-8979-864c8afc9784"
+    },
+    {
+      "claim_id": "73a2fb12-2594-4ce4-b3c2-301135ffd007",
+      "result_id": "694faac6-edd8-4f55-8979-864c8afc9784"
+    },
+    {
+      "claim_id": "9f2f7789-7bf2-4b74-8261-cbb4aedc74ae",
+      "result_id": "694faac6-edd8-4f55-8979-864c8afc9784"
+    },
+    {
+      "claim_id": "f2710a76-b312-4db2-9a6a-2f81fc94097d",
+      "result_id": "0a15f90b-9cb6-4c33-a901-4c8202b8b8c8"
+    },
+    {
+      "claim_id": "3188821f-1d2c-4a50-b831-f6bb7af99cee",
+      "result_id": "0a15f90b-9cb6-4c33-a901-4c8202b8b8c8"
+    },
+    {
+      "claim_id": "9af16de3-b6d4-46af-88b5-c414b95e16e3",
+      "result_id": "0a15f90b-9cb6-4c33-a901-4c8202b8b8c8"
+    },
+    {
+      "claim_id": "986ccb7c-a316-48a2-9c38-5e43bc07aaa7",
+      "result_id": "26a16d44-8e05-4ae9-8f83-1bc82ac86030"
+    },
+    {
+      "claim_id": "21126625-2c98-4807-bc10-1e3b218f7976",
+      "result_id": "26a16d44-8e05-4ae9-8f83-1bc82ac86030"
+    },
+    {
+      "claim_id": "60724c57-bce4-4617-a368-5f7457afd88d",
+      "result_id": "26a16d44-8e05-4ae9-8f83-1bc82ac86030"
+    },
+    {
+      "claim_id": "f2d45a80-8c76-48c5-8ab8-dabca2aa4a09",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "bd2d119c-8416-4477-9036-0c64d6fff8f3",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "765c6df3-835c-440e-b025-e9054e4b708c",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "a55be098-daf8-4204-8896-ba5c2c476d26",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "d997346c-0f13-4759-ae5f-89b14b8eca81",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "eaff122d-05bb-4592-9768-f952c8a830e8",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "530ac39d-44b8-4f12-87c5-17ea8920d94e",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "b02f465a-8274-4ad9-961e-351d48a73d9f",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "0b2fb64e-cb6b-429c-92c2-44db7458ad04",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "7aba3402-8c33-4a43-9f36-ca5c3aa253a2",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "b6204bb1-1c9d-434d-8b73-18277ce1d907",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "bb061c28-e83b-4b6d-9799-170da3ed977e",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "569d487c-5716-4118-9230-e789693ba901",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "bbc23cde-1322-44ca-bec1-1785cd4445b7",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "77659fb4-3a1b-4d5e-9c84-6063f03c74f0",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "7a3437ad-0235-410c-9706-feaa467d9698",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "56333768-d7d7-4102-b6b8-66c4b5ef8d14",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "edf3ae18-d5aa-4f35-9328-9f6aacb1c937",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "58e2b0a4-2555-4706-bbb6-5061c8a54389",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "a0aa2491-8b47-413e-8c00-936c022edf95",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    },
+    {
+      "claim_id": "35b16e7d-1b7f-4628-9f17-ce4983c9505c",
+      "result_id": "7b0af1fd-77a2-46d3-a188-b750f36187ad"
+    }
+  ],
+  "comparisons": []
+}

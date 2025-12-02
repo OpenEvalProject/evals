@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C27"
+    ],
+    "result": "Participants demonstrated exceptional tactile edge orientation acuity during object manipulation, achieving alignment accuracy better than 3\u00b0 for infinite edges and 11\u00b0 for 2 mm edges, substantially outperforming previous perceptual studies (10-20\u00b0 for long edges, 90\u00b0 for 2 mm edges) and matching visual performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C10-C12, C17-C18, and C27 collectively provide strong experimental evidence for superior tactile acuity during manipulation. The data show statistically significant effects (C16), specific quantitative measurements with error bars (C17-C18), and direct comparisons to both prior perceptual work (C5) and visual performance (C11). The experimental design is sound with appropriate controls and sample sizes (N=10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C77"
+    ],
+    "result": "Tactile edge orientation information was extracted and processed remarkably quickly, with participants initiating appropriate dial rotation within ~200 ms of initial contact, and the added ~130 ms in tactile versus visual trials represents the time required for tactile processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C28-C31, and C40 provide converging experimental evidence for rapid tactile processing. The 200 ms rotation onset time is directly measured (C28), occurs during force increase (C29-C30), and is independent of edge length (C31). The inference about ~130 ms processing time (C77) is reasonable based on comparison with visual trials, though this assumes no other differences between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Edge length systematically affected alignment performance: shorter edges increased errors through both increased wrong-direction rotations and poorer displacement scaling, with a threshold of ~2 mm for 75% correct direction discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C19-C25 provide detailed statistical evidence (F-statistics, p-values) for systematic effects of edge length on multiple performance measures. The data show both main effects and interactions (C25), with appropriate statistical tests. The 2 mm threshold (C21) is derived using standard psychophysical criteria. The analysis appropriately separates direction errors from scaling errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Alignment accuracy was independent of rotation onset time, rotation duration, and trial duration, and the presence of sub-movements (44% of trials) did not improve performance, suggesting information was extracted rapidly at initial contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 provide statistical evidence from ANCOVA analyses showing no relationship between timing variables and accuracy across all participants. The sub-movement analysis (C37-C39) includes appropriate statistical tests (repeated measures ANOVA). These null results are important for understanding the temporal dynamics of tactile processing and support the interpretation in C40.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Tactile and visual pointer-alignment performance were remarkably similar in accuracy (2.9\u00b0 vs 2.1\u00b0) and kinematics, with the main difference being faster rotation onset in visual trials (70 ms vs 200 ms) due to pre-programming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 provide comprehensive comparison between tactile and visual conditions with appropriate statistical tests. The small but significant difference in accuracy (C42) is well-characterized, and the kinematic similarities (C47-C50) are documented across multiple measures. The interpretation of faster visual onset (C43) as reflecting pre-programming is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "A follow-up experiment with 50 initial orientations (instead of 6) confirmed that participants did not learn discrete responses but used analog tactile information, showing similar accuracy (2.7\u00b0 vs 2.9\u00b0) to the main experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides direct experimental evidence ruling out a discrete response strategy. The statistical comparison (F1,18=1.19, p=0.29) appropriately shows no significant difference. This control experiment strengthens the interpretation that participants genuinely processed edge orientation information rather than categorizing among learned responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A computational model with heterogeneous receptive fields containing subfields outperformed a uniform receptive field model and matched human performance, with the performance advantage growing for shorter edges (6.4\u00b0 difference for infinite edges, 28.4\u00b0 for 1 mm edges).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 present modeling results that support the subfield hypothesis. The model performance (C58) matches experimental data, the comparison between models (C59-C60) is systematic, and the edge-length dependency (C60) provides specific predictions. However, the model makes simplifying assumptions and the discrimination criterion (5% change in population) is somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose that first-order tactile neurons with branching anatomy and multiple subfields enable superior edge orientation processing through a coincidence code, where different edge orientations activate different subsets of neurons with intermingled subfields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C15, C53-C57, C96-C97 present an anatomically-grounded theoretical proposal. The anatomical facts about branching (C14, C53) and subfields (C15, C54) are well-cited. However, the specific mechanism (C56-C57, C97) remains speculative. The proposal is plausible and consistent with the data, but direct neural evidence for this coding scheme during the task is lacking. The model (C58-C61) provides computational support but not physiological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The superior tactile acuity in manipulation versus perception tasks may reflect multiple factors including active versus passive touch, reduced memory demands, task-dependent sensory processing, and differences between motor and perceptual pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C8-C9, C62, C65-C76 discuss potential explanations for the discrepancy with prior perceptual studies. While the prior work is accurately cited (C8-C9) and multiple plausible mechanisms are discussed with appropriate citations (C70-C76), these remain speculative explanations (C66-C67). The manuscript appropriately acknowledges uncertainty about which factors are most important. Direct experimental tests of these mechanisms are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The lack of effect of edge length on rotation onset time, contrasting with typical perceptual studies, suggests that critical tactile information was acquired from dynamic neural responses during initial contact force increase rather than from sustained responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide a coherent interpretation of the timing data. The experimental finding (C79) is well-supported and contrasts appropriately with perceptual literature (C80). The inference about dynamic responses (C81) is reasonable given the timing and is supported by citation to prior work on neural responses (C83). However, direct neural recordings during the task would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The tactile and visual tasks are comparable because both primarily assess movement planning accuracy, with limited online control available in either condition, though some contribution from slowly adapting neurons during rotation cannot be fully excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide justification for the tactile-visual comparison. The reasoning about comparable information availability (C84-C85) is sound given the experimental design. The analysis of tactile information reference frames (C86) and apparatus properties (C87) is appropriate. The acknowledgment of uncertainty (C88) is scientifically appropriate, though this possibility seems unlikely given the null results in C34-C36.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The observed tactile acuity represents hyperacuity, exceeding predictions from Shannon-Nyquist sampling based on receptive field spacing (~1 mm), with the 4 mm edge showing 0.21 mm spatial resolution, challenging prevailing models based on Gaussian receptive fields and rate coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 appropriately contextualize the findings within the hyperacuity literature. The calculation (C92) correctly shows performance exceeding receptor spacing. The comparison to prevailing models (C94-C95) is well-cited. The inference that true sensitivity exceeds measured performance (C89-C90) is reasonable given identified noise sources. This provides strong motivation for the alternative model proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors speculate that heterogeneous receptive fields with subfields may represent an optimal solution to spatial constraints in the peripheral nervous system, potentially leveraging compressed sensing principles to overcome convergence bottlenecks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100 present interesting theoretical speculation connecting tactile neural architecture to information theory and compressed sensing. While the compressed sensing literature is appropriately cited (C99), the application to tactile processing (C100) remains speculative. The evolutionary/functional argument (C98) is plausible but not directly tested. These ideas could motivate future work but lack empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C63",
+      "C64"
+    ],
+    "result": "Tactile edge orientation processing is critical for dexterous manipulation, and the ~2 mm threshold corresponds to the smallest manipulable objects in everyday tasks like jewelry clasps and buttons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C63-C64 provide appropriate context and ecological validity for the findings. The importance of tactile information for manipulation (C1, C7) is well-established and cited. The connection between the 2 mm threshold (C63) and real-world object dimensions (C64) is reasonable and provides functional interpretation, though the claim about minimum button/clasp dimensions (C64) is presented as general knowledge without specific citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Rotation duration increased with required rotation amplitude, with this effect modulated by edge length, such that shorter edges yielding smaller displacements also yielded shorter durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 describe kinematic relationships in the data with appropriate statistical support mentioned in the text (main effects and interaction). This is a straightforward descriptive finding about movement kinematics that is well-supported by the data shown in Figure 3e.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C78"
+    ],
+    "result": "The fast tactile processing observed (~130 ms) is consistent with the automaticity of tactile signals in other manipulation contexts like grasp stability and touch-guided reaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C78 appropriately contextualize the speed findings within the broader manipulation literature. The comparison to other rapid tactile processes is well-cited (C78). This provides important context showing the current findings fit within established understanding of sensorimotor control, though it is primarily interpretive rather than presenting new data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Rabies virus (RV) tracing from the mOT reveals widespread inputs from olfactory and reward-related brain regions. RV-labeled neurons were found in the olfactory bulb (OB), piriform cortex (PCX), entorhinal cortex, VTA, hippocampus, and dorsal raphe. In the VTA, approximately 55.32% of RV-labeled neurons were TH-positive dopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are supported by RV tracing data shown in Figure 1. The anatomical tracing demonstrates direct inputs to the mOT from both olfactory and reward systems. The quantification of TH-positive neurons (C37) provides specific evidence for dopaminergic input from the VTA. However, claims C31, C35, and C36 note 'data not shown,' which slightly weakens the evidence but does not contradict the overall result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The VTA-mOT dopaminergic projection is activated by diverse naturalistic rewards. Fiber photometry recordings in DAT-Cre mice showed significant increases in GCaMP fluorescence during sucrose consumption (p<0.001, n=6), food pellet consumption (p<0.001, n=5), and social interaction (p<0.001, n=6). The pathway showed higher responses to rewarding stimuli (sucrose) compared to aversive stimuli (quinine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are well-supported by fiber photometry data in Figure 2. The experiments used appropriate controls (EmGFP-expressing mice), reported statistical significance with p-values, and tested multiple reward modalities. The finding that male-female and male-male social interactions produced similar responses (C41) strengthens the conclusion about general social reward encoding. Sample sizes are adequate (n=5-6) for this type of in vivo recording.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "mOT neurons are activated by diverse odor stimulations including isoamyl acetate, carvone, citral, and geraniol, as measured by fiber photometry in C57BL/6 mice expressing GCaMP6s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by fiber photometry data shown in Figure 2\u2014figure supplement 2B. The experiment demonstrates that mOT neurons respond to olfactory stimuli, consistent with the mOT's known role in olfactory processing. However, the manuscript does not provide quantitative analysis or statistical comparisons between odors, which limits the depth of interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Optogenetic manipulation of the VTA-mOT dopaminergic pathway is specific and functional. In DAT-Cre mice, 94.39% of ChR2-mCherry+ neurons in the VTA co-expressed TH. Blue light at 20 Hz reliably evoked action potentials in ChR2-expressing neurons. Optical stimulation of VTA-mOT terminals increased c-fos expression in the OT (p=0.040), NAc (p=0.006), and PCX (p=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by immunohistochemistry (Figure 3C-E), electrophysiology (Figure 3\u2014figure supplement 1B), and c-fos expression data (Figure 3F). The high specificity of ChR2 expression to dopaminergic neurons (94.39%) validates the optogenetic approach. The c-fos data demonstrate functional activation of downstream targets, though the mechanism of PCX activation (direct vs. indirect) is not established. Statistical tests are appropriate with reported p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Optogenetic activation of the VTA-mOT dopaminergic projection produces real-time place preference. ChR2-expressing mice showed 76.55\u00b11.25% preference for the light-paired chamber compared to 50.22\u00b15.27% in mCherry controls (p=0.001, n=7 per group).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by RTPP behavioral data in Figure 3I-K. The experiment includes appropriate controls (mCherry-only expressing mice), adequate sample sizes (n=7), and shows statistically significant differences. The control group's ~50% preference indicates no inherent chamber bias. This demonstrates that VTA-mOT pathway activation is sufficient to drive reward-related behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Optogenetic activation of the VTA-mOT dopaminergic projection overcomes innate center avoidance in an open field. ChR2-expressing mice (n=7) showed dramatically increased center exploration after the first training day (p=0.017 for entry and duration), with mice overcoming avoidance within ~6 minutes. Preference increased across training days and persisted 24 hours after the last light stimulation (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by iClass behavioral data in Figure 4. The experiment demonstrates that VTA-mOT pathway activation can override innate aversive responses, a strong test of rewarding efficacy. The temporal analysis (C52) and persistence of the effect (C53) strengthen the conclusion. Control mice showed no such effects. However, the manuscript does not discuss potential confounds such as locomotor effects of optogenetic stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Pairing optogenetic activation of the VTA-mOT pathway with neutral or aversive odors generates odor preference. ChR2-expressing mice showed increased investigation time for geraniol paired with light stimulation compared to unpaired carvone (p=0.012, n=8). Similarly, pairing with the aversive odor TMT increased investigation time to levels equivalent to the preferred sesame butter (p=0.049 vs. controls, n=8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by odor-preference test data in Figure 5C-D. The experiments demonstrate that artificial activation of the VTA-mOT pathway is sufficient to generate odor preference and even reverse innate aversion. Controls showed no preference changes. The use of initially neutral (geraniol/carvone) and innately valenced (TMT/sesame butter) odor pairs strengthens the conclusions. Sample sizes are adequate (n=8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Pharmacological blockade of D1 and D2 dopamine receptors in the mOT prevents optogenetically-induced odor preference formation. Administration of SCH-23390 and raclopride abolished preference for the light-paired odor (p=0.757, n=6), while saline-treated mice showed significant preference (p=0.027, n=6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by receptor antagonist experiments in Figure 5F. This demonstrates that local dopamine signaling in the mOT is necessary for odor preference formation, ruling out effects from activation of passing fibers or upstream VTA neurons projecting elsewhere. The use of both D1R and D2R antagonists is appropriate given the mixed receptor expression in mOT. However, the manuscript does not specify whether antagonists were administered bilaterally or report verification of drug diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "VTA dopaminergic neurons projecting to the mOT and NAc are largely distinct populations. Dual rabies virus tracing showed only 1.65% co-labeling of VTA neurons projecting to both the mOT and NAc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is based on dual RV tracing data in Figure 6. While the low co-labeling rate (1.65%) suggests distinct populations, this interpretation has significant limitations. The authors acknowledge that RV infection efficiency may be incomplete, potentially underestimating co-innervation. Additionally, the authors note that RV infection can reduce endogenous protein expression, which may affect TH detection. The claim that 'it may not be common' for VTA neurons to co-innervate both regions is appropriately cautious but requires validation with alternative methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "CAV-mediated retrograde targeting from the mOT labels a specific subset of VTA dopaminergic neurons. mCherry-positive cells represented 37.20% of total VTA dopaminergic neurons, and 90.86% of mCherry-labeled cells co-expressed TH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by immunohistochemistry data in Figure 7E-F and Figure 7\u2014figure supplement 1. The high specificity of mCherry expression to TH+ neurons (90.86%) validates the CAV-Cre approach for targeting mOT-projecting VTA dopaminergic neurons. The observation that only 37.20% of VTA dopaminergic neurons project to the mOT indicates pathway specificity. This is higher than the RV-based estimate (55.32% in C37), which the authors attribute to reduced TH expression following RV infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Chemogenetic inactivation of mOT-projecting VTA dopaminergic neurons disrupts established odor preference and impairs learning of new odor-reward associations. After Go-no go training, CNO-mediated inactivation eliminated conditioned odor preference but left odor discrimination intact. When inactivated during training on a new odor pair, learning efficiency was significantly reduced (66.17% vs. 91.00% accuracy in controls, p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by chemogenetic inactivation experiments in Figure 7G-H. The dissociation between odor preference (disrupted) and odor discrimination (intact) is particularly important, demonstrating that the pathway is specifically involved in reward-related aspects of odor processing rather than basic sensory discrimination. The impairment in learning new associations (C62) suggests the pathway is necessary for establishing new odor-reward contingencies. However, the manuscript notes that incomplete inactivation or compensation by other pathways cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Optogenetic inhibition of the VTA-mOT dopaminergic projection during odor-food associative learning prevents odor preference formation. Control mice showed significant preference for the S+ odor after learning (52.43\u00b15.32% to 67.78\u00b13.40%, p=0.018, n=6), while eNpHR-expressing mice with light inhibition showed no preference change (51.82\u00b12.66% to 57.07\u00b13.06%, p=0.134, n=6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by optogenetic inhibition experiments in Figure 8D. This experiment addresses a potential confound from the CAV-Cre experiments (C60-C62) by using bilateral optogenetic inhibition in DAT-Cre mice, ensuring more complete and temporally precise pathway inactivation. The results demonstrate that the VTA-mOT pathway is necessary for naturalistic odor-reward learning, not just artificially induced preferences. Sample sizes are adequate (n=6 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C93"
+    ],
+    "result": "The VTA-mOT dopaminergic pathway is both sufficient and necessary for odor preference formation and mediates diverse reward-related preferences. Optogenetic activation generates preferences for space, location, and odors (both neutral and aversive). Dopamine receptor blockade in the mOT prevents preference formation, and inactivation of mOT-projecting VTA neurons eliminates established preferences and impairs reward-based learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching result integrates multiple experimental approaches (fiber photometry, optogenetic activation/inhibition, pharmacology, chemogenetics) across claims C3-C12 and C65-C68, C93. The convergent evidence from gain-of-function (optogenetic activation) and loss-of-function (receptor antagonists, chemogenetic/optogenetic inhibition) experiments strongly supports the conclusion. The pathway's involvement in multiple preference modalities (spatial, odor) suggests a general role in reward-based learning. However, the manuscript acknowledges that the precise downstream mechanisms in the mOT remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establish that the mOT is positioned at the intersection of olfactory and reward systems, receiving inputs from olfactory structures and dopaminergic innervation from the VTA. The mOT is more involved in reward and addiction than the lateral OT and mediates drug self-administration more robustly than the NAc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C29 are background knowledge supported by citations to previous literature. These claims establish the rationale for investigating the VTA-mOT pathway. While the authors appropriately cite prior work, they do not critically evaluate potential limitations or contradictions in the literature. The claim that the mOT mediates self-administration 'more robustly' than the NAc (C29) is based on specific drug studies and may not generalize to all rewards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Discussion claims contextualize findings within existing literature on VTA dopaminergic projections, striatal function, and reward learning. The authors note that VTA projections show target-dependent responses, that D1R and D2R have opposing effects on neuronal excitability, and that the striatum plays important roles in reward learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C92 are discussion points supported by citations to previous literature. These claims appropriately contextualize the current findings and acknowledge gaps in knowledge (e.g., differences between mOT and NAc, mechanisms of odor preference formation). However, the discussion could more critically address potential alternative explanations for the observed effects, such as the role of non-dopaminergic VTA neurons or indirect pathways through other brain regions.",
+    "result_type": "MINOR"
+  }
+]

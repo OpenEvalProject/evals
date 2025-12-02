@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C27",
+      "C28"
+    ],
+    "result": "The destabilizing domain (DD) derived from E. coli dihydrofolate reductase can control protein stability in Drosophila in a ligand-inducible manner. When DD is fused to GFP, the fusion protein is degraded by the proteasome in the absence of trimethoprim (TMP), but stabilized when TMP is present, resulting in robust, reversible, and dose-dependent control of protein levels with a large dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 and C27-C28 collectively demonstrate that the DD system functions in Drosophila as it does in other organisms. The experimental data (C5, C6) showing TMP-dependent GFP expression, combined with citations to prior work (C1, C2, C3, C7) and demonstration of dose-dependency and reversibility (C28), provide strong converging evidence for this core result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C107"
+    ],
+    "result": "The DD system is maximally effective during larval (44-fold), early pupal (19-fold), and adult stages (27-fold), with reduced effectiveness during late pupal stages (5-fold) when flies do not feed. Statistical analysis confirms significant differences between TMP and solvent conditions across all developmental stages tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 and C107 provide quantitative data with statistical support showing stage-dependent effectiveness of the DD system. The reduced effectiveness during late pupal stages is logically explained by lack of feeding (C12, C14), and all differences are statistically significant (C107). The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C108"
+    ],
+    "result": "The DD system is broadly compatible with different binary expression systems (GAL4/UAS, LexA/LexAop) and effective across multiple cell types, showing 4-64 fold differences between TMP and solvent conditions. Different cell types show variable effectiveness, with sensory neurons showing the largest differences (45-fold), likely due to differences in proteasome activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 and C108 demonstrate broad applicability across cell types and expression systems with statistical support. The observation of cell-type-specific differences (C18, C19) and the inference about proteasome activity (C20) are reasonable given the mechanism. The compatibility with LexA/LexAop (C22) extends the utility beyond GAL4 systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C74"
+    ],
+    "result": "The DD system exhibits dose-dependent induction (0-5 mM TMP) with maximum expression at 1 mM TMP (34-45 fold over control), reaches plateau within 36 hours of TMP feeding, and shows rapid reversibility with 73% reduction in GFP within 24 hours of TMP withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C74 provide detailed kinetic characterization with quantitative data. The dose-response, time-course, and reversibility experiments are well-designed and provide clear evidence for the dynamic range and temporal control of the system. The data support the claimed advantages over existing systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35"
+    ],
+    "result": "Feeding adult flies with 1 mM TMP does not affect survival, locomotion speed, or odor localization ability, and flies raised on 0-10 mM TMP throughout development show equal survival to adulthood, demonstrating that 1 mM TMP can induce saturation-level expression without observable behavioral or survival side effects in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C35 provide comprehensive toxicity and behavioral assessment data. Multiple independent behavioral assays (locomotion, odor localization) and survival measurements across different life stages support the conclusion that 1 mM TMP is well-tolerated in adults. The data are consistent and address important practical concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "TMP causes dose-dependent developmental delays, with 1 mM TMP delaying eclosion by approximately one day (11.2 vs 10.2 days) and 10 mM TMP causing a more severe delay (15.3 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, and C36 provide quantitative data on developmental timing with error estimates. The dose-dependent effect is clear and statistically supported. This represents an important limitation of the system during development, though it does not affect adult applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51"
+    ],
+    "result": "Fusion of DD to GAL80 creates a TMP-inducible system for temporal control of GAL4-dependent gene expression. GAL80-DD suppresses GAL4-driven GFP expression in a TMP-dependent manner, with GFP expression increasing 24-72 hours after TMP withdrawal, enabling temporal control of gene transcription and manipulation of neuronal circuit function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 and C51 demonstrate successful engineering of GAL80-DD with appropriate controls and time-course data. The mechanism is well-established (C37), the TMP-dependence is clearly shown (C38, C39), and the temporal dynamics are characterized (C40-C44). The inference about GAL80-DD inactivation kinetics (C45) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GAL80-DD can be used to manipulate neuronal activity and behavior, as demonstrated by TMP-dependent restoration of CO2 avoidance through suppression of tetanus toxin expression in Gr21a-expressing sensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide a clear behavioral demonstration of GAL80-DD functionality. The use of CO2 avoidance as a readout is well-established (C47), and the TMP-dependent behavioral rescue with appropriate controls (C50) provides strong evidence for the utility of this tool in circuit manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "FLP-DD enables dose-dependent control of recombination frequency, with TMP concentration (0.01-1 mM) determining the number of labeled neurons. At baseline (no TMP), 42% of brain hemispheres show single-cell labeling, enabling high-efficiency sparse labeling for connectomics applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 establish the utility of FLP-DD for sparse labeling with clear dose-response data (C55, C56) and bilateral symmetry (C57). The single-cell labeling frequency (C58) is quantified and demonstrates practical utility. The background knowledge about FLP applications (C52-C54) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "FLP-DD enables temporal refinement of genetic intersections by restricting FLP activity to specific developmental stages through TMP feeding. Adult-only TMP feeding limits GFP expression to DA1 lateral projection neurons (the true adult overlap), while developmental TMP feeding produces broader patterns due to premature recombination. Higher TMP concentrations (10 mM) during larval stages can compensate for potential TMP decline during metamorphosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C72 demonstrate sophisticated temporal control of genetic intersections with appropriate controls and validation. The discrepancy between overlap and intersection patterns (C61-C64) is well-documented, and the solution using FLP-DD with adult-only TMP feeding (C65) is clearly demonstrated. The speculation about TMP decline (C69) is supported by analogy to RU486 systems (C70) and addressed experimentally (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C78"
+    ],
+    "result": "The DD system provides advantages over existing tools including: independent axis of control compatible with existing reagents, ability to combine with GAL4 lines for temporally refined RNAi or silencing screens, and significantly lower cost (150-fold less than RU486 or quinic acid at working concentrations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75, and C78 summarize key advantages supported by the experimental demonstrations throughout the paper. The compatibility claim (C73) is supported by data with multiple binary systems, the screening utility (C75) is a reasonable inference from the GAL80-DD results, and the cost comparison (C78) is factual.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The DD system has limitations including: requirement for active proteasome and TMP accessibility in target cells, potential for high residual expression in cells with low proteasome activity, reduced effectiveness during late pupal stages due to lack of feeding, and approximately 24-hour timescale for activation/inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 provide honest assessment of system limitations. The mechanistic limitations (C79, C80) are logical inferences from how the system works. The late pupal limitation (C83) is supported by experimental data (C11). The temporal resolution estimate (C85) is based on the kinetics data. The recommendation for validation (C84) is appropriate given the limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C109"
+    ],
+    "result": "DMSO at concentrations greater than 0.1% severely affects larval survival, and trimethoprim is an antibiotic, requiring appropriate controls to rule out effects of gut microbes on phenotypes of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, and C109 identify important technical considerations. The DMSO toxicity (C87, C109) is based on experimental observations and led to protocol modifications. The antibiotic property of TMP (C88) is established knowledge and the recommendation for controls is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "GAL80-DD is the first construct allowing small molecule control of GAL80 activity in vivo. While GAL80ts may be preferable for experiments requiring low background expression, GAL80-DD provides an alternative for experiments disrupted by temperature manipulations. An RU486-inducible FLP (Flp-Switch) was previously developed using a different mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide appropriate context and comparison to existing tools. The novelty claim (C89) is based on literature knowledge, the comparison to GAL80ts (C90) acknowledges trade-offs, and the citation of Flp-Switch (C91) provides relevant prior art. These claims appropriately position the work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The DD technology has potential applications beyond those demonstrated, including: control of membrane proteins (ion channels, GPCRs), knock-in to endogenous proteins via genome editing or MiMIC sites, fusion to effector genes for inducible silencing or genome editing, temporal analysis of gene expression (e.g., circadian rhythms), and use as a proteasome activity sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C99 are largely speculative about future applications (C94, C95, C97, C98, C99). While some are supported by prior work with membrane proteins (C93), most represent untested hypotheses. The suggestions are reasonable given the demonstrated functionality, but lack experimental validation in this study. These represent promising directions for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Existing temporal control systems have limitations including: temperature effects on fly physiology and behavior that may prevent phenotype detection, GAL80ts incompatibility with most driver lines (LexA, QF, split-GAL4) lacking the GAD domain, requirement for new transgenic stocks for chemical-dependent tools, and RU486 causing developmental lethality with pan-neuronal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide context for why new tools are needed. The temperature effects (C100) and RU486 toxicity (C105) are supported by citations. The GAL80ts incompatibility (C102, C103) and requirement for new stocks (C104) are based on established knowledge about these systems. These claims appropriately motivate the development of the DD system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C81"
+    ],
+    "result": "The degradation kinetics of DD fusion proteins are likely faster than native proteins upon TMP withdrawal, potentially offering fast temporal control for reversible gene expression experiments. It may be possible to reduce residual expression by co-expressing protein degradation machinery components, analogous to Dicer co-expression enhancing RNAi efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C77, and C81 are speculative (C76, C77) or suggest untested approaches (C81). While the speculation about faster degradation kinetics is reasonable given the mechanism, it lacks direct experimental comparison to native protein degradation. The suggestion about co-expressing degradation machinery (C81) is based on analogy but untested. These represent hypotheses rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "A recent study demonstrated that TMP can regulate activity of the yeast I-SceI endonuclease in Drosophila larvae expressing I-SceI-DD fusion protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is a straightforward citation to prior work (Janssen et al., 2016) that demonstrated DD functionality in Drosophila with a different protein. This provides relevant context showing that the DD approach had been used in flies before, though the current study represents a much more comprehensive characterization and development of practical tools.",
+    "result_type": "MINOR"
+  }
+]

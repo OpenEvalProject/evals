@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Untreated human utricles maintained in culture retain hair cells with characteristic morphology and supporting cells, though hair cell density varies with age and some deterioration occurs after 28 days in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are supported by immunolabeling (myosin VIIa), SEM, and TEM data showing hair cells with organized bundles, supporting cells with microvilli, and appropriate cellular architecture. The observations of variability in hair cell density and some deterioration at 28 days are appropriately documented with microscopy evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Gentamicin treatment (2 mM for 48 hr) effectively ablates the majority of hair cells from human utricles through apoptosis and extrusion, with supporting cells closing lesions and no spontaneous regeneration observed over 21 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C59 are well-supported by multiple lines of evidence including quantitative cell counts (5.26\u00b11.48 cells/10000\u00b5m\u00b2 at 2-4 days post-gentamicin, declining to 1.4\u00b10.31 at 11-21 days), immunolabeling for activated caspase 3, TEM showing apoptotic bodies and pyknotic nuclei, and SEM showing supporting cell surfaces. The experimental design successfully creates a hair cell-depleted epithelium as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Adenoviral transduction with Ad2-ATOH1-GFP efficiently transduces supporting cells in human vestibular tissue and generates significantly more myosin VIIa-positive cells (14.54\u00b13.68 per 10000\u00b5m\u00b2) compared to gentamicin-only controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C71 are supported by GFP expression data showing efficient transduction, co-labeling with SOX2 confirming supporting cell identity, detection of ATOH1 protein, and quantitative analysis showing statistically significant increase in myosin VIIa+ cells. The observation that not all GFP+ cells express ATOH1 and vice versa (C63-C64) is appropriately noted and may reflect independent CMV promoters or detection sensitivity issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TAPI-1 treatment generates myosin VIIa-positive cells but significantly less efficiently than ATOH1 transduction, with the combination of ATOH1+TAPI-1 unexpectedly producing fewer cells than ATOH1 alone. Age is not a confounding factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 are supported by quantitative cell counting data and statistical analysis (p<0.05) showing TAPI-1 generates significantly more myoVIIa+ cells than gentamicin-only controls but fewer than ATOH1 transduction. The unexpected finding that ATOH1+TAPI-1 produces fewer cells than ATOH1 alone (C76) is appropriately documented. Age analysis (C80-C81) appropriately rules out age as a confounding variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "ATOH1-transduced cells develop bushy microvillar projections and some hair cell-like morphological features but lack organized hair bundles, cuticular plates, and synaptic specializations, indicating incomplete differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92 are well-supported by SEM and TEM data showing cells with elongated microvilli, some with central kinocilium-like projections, actin-containing projections on myosin VIIa+ cells, but absence of organized hair bundles, cuticular plates, and synaptic ribbons. The conclusion of incomplete differentiation (C92) is appropriately inferred from the morphological evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "RNA-seq analysis identified 494 significantly differentially expressed genes following ATOH1 transduction, including 18 transcription factors and 5 chromatin modifiers, with ATOH1 among the most highly overexpressed (70-286 fold) and validation by qRT-PCR confirming the trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C103 are supported by RNA-seq data with appropriate statistical thresholds (\u22652-fold change, p<0.05 across three comparisons) and qRT-PCR validation of five genes showing concordant trends. The identification of specific transcription factors and chromatin modifiers is documented in Table 1. The analysis appropriately uses multiple control comparisons to ensure robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "ATOH1 transduction upregulates 335 of 1375 putative hair cell markers searched, including 19 that reached statistical significance and several known ATOH1 downstream targets, supporting incomplete hair cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by RNA-seq data analysis with appropriate citations to prior work defining hair cell markers (Cai et al., 2015; Shin et al., 2013). The finding that MYO7A is overexpressed but not statistically significant (C107) and that >150 additional markers show consistent but non-significant upregulation (C108) appropriately acknowledges limitations. The conclusion of incomplete differentiation (C110) is appropriately inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Enrichment analysis reveals significant upregulation of genes involved in muscle processes (actin, myosin, troponin) and enrichment of TCF3 and MEF2A/B transcription factor binding sites, suggesting partial activation of hair cell bundle formation programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C120 are supported by enrichment analysis using ToppGene Suite with appropriate statistical thresholds (FDR<0.01). The observation that most enriched genes encode low abundance transcripts (C113) appropriately tempers interpretation. The identification of TCF3 as a known ATOH1 co-factor (C115) is properly cited. However, the speculation about hair cell bundle formation (C112, C119) is appropriately marked as inference/speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Supporting cells from adult human vestibular tissue (mean age 50.4 years) retain plasticity and capacity for conversion to hair cell-like cells regardless of donor age, as evidenced by maintained repair functions and successful experimental conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C136 are supported by the experimental results showing successful conversion in older adults, maintained supporting cell functions (lesion closure, apoptotic body removal), and appropriate citations to prior work. The inference that conversion capacity is maintained throughout life (C134) is reasonably drawn from the data. However, C122 about genetic variations is appropriately marked as speculation, and C128 about age not affecting supporting cell activities is an inference from the current study's observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "ATOH1 transduction is more effective than TAPI-1 or other \u03b3-secretase inhibitors (DAPT, LY411575) at generating myosin VIIa-positive cells in human tissue, with age not being a confounding factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C139 are supported by comparative experimental data. However, C142 regarding DAPT and LY411575 is based on a small number of studies that the authors acknowledge is insufficient for definitive conclusions. The speculation about higher concentrations being needed in human tissue (C143) is appropriately marked but lacks supporting data. More systematic dose-response studies would be needed to support these claims definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Generated cells resemble hair cell-like cells from other systems but lack full differentiation, with GFI1 identified as a key missing transcription factor downstream of ATOH1 and POU4F3 that may be necessary for complete hair cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C157 are supported by morphological comparisons to prior work (Ronaghi et al., 2014; Walters et al., 2017), RNA-seq data showing absence of expected developmental cascade genes (C148), and appropriate citations regarding GFI1's role in hair cell development (Hertzano et al., 2004; Wallis et al., 2003; Costa et al., 2015). The identification of GFI1 as a candidate gene (C156) is appropriately inferred from the data and prior literature. The conclusion that additional factors are required (C147) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Human vestibular supporting cells can be efficiently transduced with Ad2 and AAV vectors, potentially enabling other genetic manipulations for therapeutic interventions, with \u03b1v\u03b25 integrin expression possibly underlying efficient adenoviral transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 are supported by GFP expression data and appropriate citations (Kesser et al., 2007; Landegger et al., 2017). The inference about potential for other genetic manipulations (C160) is reasonable. However, C162 regarding integrin expression is based on unpublished RT-PCR data, and C163 about this being the basis for efficient transduction is appropriately marked as speculation. The integrin expression claim would benefit from published validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Not all GFP-expressing cells express ATOH1 and vice versa, possibly due to independent CMV promoters driving the two genes at different levels or timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 are supported by immunolabeling observations. The explanation involving independent CMV promoters (C166) is appropriately marked as speculation and represents a reasonable hypothesis, though alternative explanations (e.g., antibody sensitivity, temporal dynamics) are not fully explored. This is a minor technical observation that doesn't substantially affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Generated myosin VIIa-positive cells cluster together rather than showing the normal mosaic pattern of hair and supporting cells, suggesting that lateral inhibition signaling pathways may not be properly active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 are supported by microscopy observations showing abnormal clustering. The speculation about inactive lateral inhibition pathways (C169) is appropriately marked and represents a reasonable hypothesis given the known role of Notch signaling in establishing the mosaic pattern. However, this remains speculative without direct testing of Notch pathway activity in the generated cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "ATOH1 transduction demonstrates plasticity of human vestibular epithelia and generates cells with partial hair cell characteristics, showing potential for regenerating damaged epithelium and offering possible therapeutic intervention for balance disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170, C173-C180 summarizing the main findings are well-supported by the experimental data. However, the therapeutic claims (C171-C172) are marked as speculation and represent a significant leap from the current findings. The generated cells lack organized hair bundles, cuticular plates, synaptic specializations, and full gene expression profiles. Without evidence of functional mechanotransduction, synaptic connectivity, or in vivo efficacy, the therapeutic potential remains highly uncertain. Additional work demonstrating functional hair cells would be required to support therapeutic claims.",
+    "result_type": "MAJOR"
+  }
+]

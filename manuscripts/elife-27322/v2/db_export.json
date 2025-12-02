@@ -1,0 +1,1807 @@
+{
+  "submission": {
+    "id": "9cf89a95-2063-41c6-8e7b-bba5d6635004",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:17:23.693402Z",
+    "updated_at": "2025-12-01T19:17:23.693402Z"
+  },
+  "content": [
+    {
+      "id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "submission_id": "9cf89a95-2063-41c6-8e7b-bba5d6635004",
+      "content_type": "manuscript",
+      "content_text": "# Structure analyses reveal a regulated oligomerization mechanism of the PlexinD1/GIPC/myosin VI complex\n\n## Authors\n\n- Guijun Shang<sup>1</sup>\n- Chad A Brautigam<sup>2</sup>\n- Rui Chen<sup>1</sup>\n- Defen Lu<sup>4</sup>\n- Jes\u00fas Torres-V\u00e1zquez<sup>5</sup>\n- Xuewu Zhang<sup>1</sup> ([ORCID: 0000-0002-3634-6711](https://orcid.org/0000-0002-3634-6711)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology University of Texas Southwestern Medical Center Dallas United States\n2. Department of Biophysics University of Texas Southwestern Medical Center Dallas United States\n3. Department of Microbiology University of Texas Southwestern Medical Center Dallas United States\n4. Department of Molecular Biology University of Texas Southwestern Medical Center Dallas United States\n5. Department of Cell Biology Skirball Institute of Biomolecular Medicine New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe GIPC family adaptor proteins mediate endocytosis by tethering cargo proteins to the myosin VI motor. The structural mechanisms for the GIPC/cargo and GIPC/myosin VI interactions remained unclear. PlexinD1, a transmembrane receptor that regulates neuronal and cardiovascular development, is a cargo of GIPCs. GIPC-mediated endocytic trafficking regulates PlexinD1 signaling. Here, we unravel the mechanisms of the interactions among PlexinD1, GIPCs and myosin VI by a series of crystal structures of these proteins in apo or bound states. GIPC1 forms a domain-swapped dimer in an autoinhibited conformation that hinders binding of both PlexinD1 and myosin VI. PlexinD1 binding to GIPC1 releases the autoinhibition, promoting its interaction with myosin VI. GIPCs and myosin VI interact through two distinct interfaces and form an open-ended alternating array. Our data support that this alternating array underlies the oligomerization of the GIPC/Myosin VI complexes in solution and cells.\n\n## Introduction\n\nGIPC1 (GAIP interacting protein, C-terminus 1) and its two paralogs GIPC2 and GIPC3 are universal adaptor proteins that bind and regulate vesicular trafficking of many transmembrane proteins (Katoh, 2013). Based on the cargo proteins it interacts with, GIPC1 is also named syndecan-4 binding protein (Synectin), Neuropilin-1-interacting protein (NIP), insulin-like growth factor-1 receptor interacting protein (IIP1), GLUT1 C-terminal binding protein (GLUT1CBP), M-SemF cytoplasmic domain-associated protein (SEMCAP-1) and Tax-interacting protein 2 (TIP2) (Bunn et al., 1999; Cai and Reed, 1999; Gao et al., 2000; Ligensa et al., 2001; Rousset et al., 1998; Wang et al., 1999). GIPCs contribute to the endocytosis process by tethering the cargo proteins on endocytic vesicles to the motor protein myosin VI (Bunn et al., 1999; Naccache et al., 2006; Reed et al., 2005). Myosin VI is the only known actin-based motor that walks toward the minus/pointed end of actin filaments and therefore is specialized at transporting endocytic vesicles inward from the cell cortex (Spudich and Sivaramakrishnan, 2010; Sweeney and Houdusse, 2007). Myosin VI and GIPCs also contribute to earlier steps of endocytosis, including facilitating the formation of clathrin-coated pits and clustering ligand-bound cell surface receptors into the pits (Hasson, 2003). Another function of the GIPC/myosin VI complex is to act as an anchor on the cell surface. This function is critical for maintaining the structural integrity of stereocilia in the inner ear, and many mutations of GIPC3 or myosin VI have been found to cause familial hearing loss (Katoh, 2013).\n\nGIPCs contain a central PDZ (PSD-95, Dlg and ZO-1) domain that mediates the interaction with the C-terminal PDZ-binding motif (PBM) in cargo proteins. While the general rules of specificity in PDZ/PBM interactions are well understood (Ye and Zhang, 2013), the mechanisms by which GIPCs distinguish their cargo proteins from many proteins containing similar PBMs were unclear. The PDZ domain in GIPCs is flanked by a N-terminal GIPC-homology 1 (GH1) domain and a C-terminal GH2 domain (Katoh, 2013). The GH1 and GH2 domains are unique to the GIPC family and lack obvious sequence similarity to other proteins. The GH1 and PDZ domains together mediate oligomerization of GIPCs (Bunn et al., 1999; Gao et al., 2000; Jeanneteau et al., 2004; Kedlaya et al., 2006; Reed et al., 2005). The mechanisms of the oligomerization and its role in the regulation of GIPCs remained unclear. The GH2 domain mediates the interaction with myosin VI (Naccache et al., 2006; Reed et al., 2005). Cargo binding to the PDZ domain in GIPC1 promotes the interaction with myosin VI, suggesting that the two binding events in GIPCs are regulated and communicate with each other through a steric or allosteric mechanism (Naccache et al., 2006).\n\nMyosin VI contains a motor domain, an IQ motif domain, a coiled-coil region, and a C-terminal cargo-binding (CBD) domain. The motor activity of myosin VI is normally suppressed by autoinhibition, which can be released by binding of adaptor proteins through a mechanism that is poorly understood (French et al., 2017). An \u2018RRL\u2019 (single-letter amino acid code) motif between the coiled-coil and CBD in myosin VI is critical for binding to GIPCs (He et al., 2016; Spudich et al., 2007; Wollscheid et al., 2016), but the mode of the interaction was unknown. Processive walking of myosin VI along actin filaments requires its dimerization, mediated by both the coiled-coil and binding of adaptor proteins (Masters and Buss, 2017; Park et al., 2006; Phichith et al., 2009; Spudich et al., 2007; Yu et al., 2009). Larger oligomers of myosin VI have been implicated in coordinated long-distance runs over dense and interlaced actin networks (Sivaramakrishnan and Spudich, 2009). Hence, oligomerized GIPCs may play a role in both releasing the autoinhibition and promoting the oligomerization of myosin VI, but the underlying mechanisms were unclear.\n\nThe transmembrane receptor PlexinD1 contains a C-terminal \u2018SEA\u2019 motif that constitutes a PBM and interacts with GIPC1 (Gay et al., 2011). The plexin family proteins are the major receptors for the guidance molecules semaphorins. Semaphorin-activated plexin primarily transduces repulsive guidance signal that is critical for the development of the nervous and cardiovascular systems (Tran et al., 2007). Semaphorin binding induces the formation of the active dimer of plexin (Janssen et al., 2010; Liu et al., 2010; Nogi et al., 2010). The dimerization activates the GTPase-activating protein (GAP) domain in the plexin cytoplasmic region (referred to as plexincyto thereafter), which transduces the signal by switching off the small GTPase Rap (He et al., 2009; Wang et al., 2013; Wang et al., 2012). Plexincyto also contains a Juxtamembrane segment (JM-segment) and a Rho GTPase Binding Domain (RBD) that both play regulatory roles in signaling (Bell et al., 2011; He et al., 2009; Tong et al., 2007, 2009). Semaphorin-stimulated endocytosis of plexin contributes to the repulsive guidance function (Fournier et al., 2000; Tojima et al., 2010). A recent study has shown that GIPC1-mediated endocytic trafficking and sorting of Sema3E-activated PlexinD1 play important regulatory roles in PlexinD1 signaling (Burk et al., 2017).\n\nStructures of plexins, the PDZ domain of GIPC2 (PDB ID: 3GGE) and the GIPC-binding region in myosin VI have been reported previously (Bell et al., 2011; He et al., 2016, 2009; Tong et al., 2009; Wang et al., 2013; Wang et al., 2012; Wollscheid et al., 2016). However, structures of full-length GIPCs and their complexes with either cargos or myosin VI are not available, hindering our understanding of the mechanisms underlying GIPC functions. In this study, we present comprehensive structural analyses of PlexinD1cyto, GIPCs and myosin VI in the apo and bound states. The structures and associated mutational analyses elucidate the structural basis and regulation mechanisms for the interaction between PlexinD1 and GIPC1. In addition, the structures reveal an unanticipated mechanism for high-order oligomerization of GIPCs and myosin VI, which may underlie the clustering on the plasma membrane and efficient endocytic transport of PlexinD1 and other cargo proteins by GIPCs and myosin VI.\n\n## Results\n\n### Structure of GIPC1 in the dimeric and autoinhibited state\n\nWe crystallized the GH1-PDZ-GH2 domains of mouse GIPC1 and determined its X-ray crystal structure to 1.9 \u00c5 resolution (Figure 1, Figure 1\u2014figure supplement 1 and Table 1). The structure of the PDZ domain of GIPC1 is similar to that of the isolated PDZ domain of GIPC2 (PDB ID: 3GGE), featuring a typical PDZ fold with five \u03b2-strands and two \u03b1-helices (Figure 1C). The GH1 domain adopts an ubiquitin-like fold composed of four \u03b2-strands and one \u03b1-helix, although it lacks obvious sequence similarity to ubiquitin (Figure 1C and Figure 1\u2014figure supplement 2). The GH2 domain forms a four-helix globular fold (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain structure of mouse GIPC1 and cartoon representation of the overall architecture of the domain-swapped dimer. The color scheme for one subunit in the dimer of the cartoon representation is the same as in the domain structure. The other subunit is colored gray. (B) Two orthogonal views of the GIPC1 structure. The dotted lines indicate the disordered portion of the linker between the PDZ and GH2 domains. The color scheme is the same as in (A). (C) Expanded views of the individual domains.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The sigma-A weighted 2Fo-Fc map for helix \u03b11 and loop(\u03b11- \u03b12) in the GIPC1-GH2 domain is shown, contoured at 1.0 sigma.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The secondary structure and domain boundary assignments are based on the apo-GIPC1 structure. Residue numbering is based on mouse GIPC1. The GH1, PDZ, PDZ-GH2 linker and GH2 domains are denoted by background color of yellow, orange, light green and magenta, respectively. The black circles and stars highlight key residues in binding interfaces I and II for myosin VI-HCBD that were tested by mutational analyses. h, human; m, mouse.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>GIPC1</th>\n      <th>PlexinD1</th>\n      <th>PlexinD1/ GIPC1 complex</th>\n      <th>GIPC1-GH2/ myosin VI-HCBD complex</th>\n      <th>GIPC2-GH2/ myosin VI-HCBD complex</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P21</td>\n      <td>P21</td>\n      <td>P6122</td>\n      <td>I222</td>\n      <td>C2</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>45.4, 77.6, 80.3</td>\n      <td>69.9, 164.5, 84.3</td>\n      <td>99.8, 99.8, 531.9</td>\n      <td>115.0, 164.1, 171.8</td>\n      <td>171.8, 53.2, 122.8</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90.00, 89.95, 90.00</td>\n      <td>90.00, 99.47, 90.00</td>\n      <td>90.00, 90.00, 120.00</td>\n      <td>90.00, 90.00, 90.00</td>\n      <td>90.00 108.23 90.00</td>\n    </tr>\n    <tr>\n      <td>Content of the asymmetric unit</td>\n      <td>GIPC1 dimer, 1</td>\n      <td>PlexinD1, 2</td>\n      <td>PlexinD1, 1; GIPC1, 1</td>\n      <td>GH2, 5; HCBD, 5</td>\n      <td>GH2, 5; HCBD, 5</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50.0\u20131.90 (1.93\u20131.90)*</td>\n      <td>50.0\u20132.70 (2.75\u20132.70)</td>\n      <td>50.0\u20133.20 (3.26\u20133.20)</td>\n      <td>50.0\u20133.5 (3.56\u20133.50)</td>\n      <td>50\u20133.6 (3.66\u20133.60)</td>\n    </tr>\n    <tr>\n      <td>Rsym (%)</td>\n      <td>6.2 (56.1)</td>\n      <td>7.2 (38.8)</td>\n      <td>14.1 (81.9)</td>\n      <td>15.7(&gt;100)</td>\n      <td>15.9 (47.2)</td>\n    </tr>\n    <tr>\n      <td>Rpim(%)</td>\n      <td>3.4 (31.9)</td>\n      <td>4.2 (23.1)</td>\n      <td>4.1 (36.8)</td>\n      <td>7.4 (49.3)</td>\n      <td>7.9 (27.2)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3</td>\n      <td>21.3 (2.1)</td>\n      <td>29.9 (3.4)</td>\n      <td>17.5 (2.0)</td>\n      <td>10.3 (1.6)</td>\n      <td>11.0 (2.7)</td>\n    </tr>\n    <tr>\n      <td>CC1/2#</td>\n      <td>0.782</td>\n      <td>0.922</td>\n      <td>0.679</td>\n      <td>0.653</td>\n      <td>0.859</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>100.0 (100.0)</td>\n      <td>99.4 (96.8)</td>\n      <td>100.0 (100.0)</td>\n      <td>98.1 (97.0)</td>\n      <td>98.7 (95.4)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>4.1 (4.0)</td>\n      <td>3.9 (3.6)</td>\n      <td>12.0 (5.6)</td>\n      <td>6.1 (6.0)</td>\n      <td>4.7 (3.7)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>40.1\u20131.9 (1.95\u20131.90)</td>\n      <td>37.1\u20132.7 (2.77\u20132.70)</td>\n      <td>48.0\u20133.2 (3.28\u20133.20)</td>\n      <td>47.1\u20133.5 (3.60\u20133.50)</td>\n      <td>42.9\u20133.6 (3.79\u20133.60)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>40623</td>\n      <td>47171</td>\n      <td>26781</td>\n      <td>18708</td>\n      <td>9763</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (%)</td>\n      <td>13.6 (19.4)/17.5 (24.8)</td>\n      <td>21.5 (31.8)/25.6 (36.9)</td>\n      <td>17.9 (29.3)/21.6 (32.4)</td>\n      <td>18.7 (26.8)/24.0 (32.3)</td>\n      <td>21.3 (26.6)/27.8 (37.6)</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>4120</td>\n      <td>8092</td>\n      <td>5416</td>\n      <td>4858</td>\n      <td>4590</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>0</td>\n      <td>0</td>\n      <td>35</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>645</td>\n      <td>98</td>\n      <td>19</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>21.9</td>\n      <td>80.0</td>\n      <td>57.8</td>\n      <td>70.4</td>\n      <td>57.8</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td></td>\n      <td></td>\n      <td>115.2</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>33.5</td>\n      <td>61.0</td>\n      <td>25.7</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.006</td>\n      <td>0.003</td>\n      <td>0.005</td>\n      <td>0.007</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.9276</td>\n      <td>0.617</td>\n      <td>0.834</td>\n      <td>0.823</td>\n      <td>0.603</td>\n    </tr>\n    <tr>\n      <td>Ramanchandran plot</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>96.5</td>\n      <td>96.2</td>\n      <td>96.7</td>\n      <td>94.1</td>\n      <td>96.2</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>3.5</td>\n      <td>3.6</td>\n      <td>3.2</td>\n      <td>5.9</td>\n      <td>3.7</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0</td>\n      <td>0.2</td>\n      <td>0.1</td>\n      <td>0</td>\n      <td>0.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Numbers in parenthesis are for the highest resolution shell.# CC1/2 values shown are for the highest resolution shell._\n\nA prominent feature of the GIPC1 structure is that two molecules in the asymmetric unit form a domain-swapped dimer (Figure 1). The domain swap is the result of an exchange of the last \u03b2-strand between the two GH1 domains (Figure 1C). The segment N-terminal to the last \u03b2-strand of one GH1 domain meets its counterpart of the other GH1 domain, making extensive intermolecular interactions at the dimer interface. The extension N-terminal to the GH1 domain also contributes to the dimer interface. Due to the domain swap, the PDZ domain from one molecule is located in close proximity to the GH1 domain of the dimer partner. The two domains form an integrated structural module through extensive interactions, further stabilizing the architecture of the GIPC1 dimer. The overall shape of the dimeric GH1-PDZ module resembles a canoe with the two GH1 domains at the middle and the two PDZ domains curving upwards at each end. The PBM-binding groove between helix \u03b12 and strand \u03b22 in the PDZ domain is placed at the concave upper face of the canoe-like dimer (Figure 1). This dimeric configuration provides a structural basis for the previously reported self-association of GIPC1 (Bunn et al., 1999; Gao et al., 2000; Jeanneteau et al., 2004; Kedlaya et al., 2006; Reed et al., 2005). The high degree of sequence similarity in the GIPC family suggests that GIPC2 and GIPC3 also form similar domain-swapped dimers (Figure 1\u2014figure supplement 2).\n\nThe C-terminal portion (residues 236\u2013257) of the PDZ-GH2 linker is well structured and contains two short \u03b2-strands, which together with a small segment in GH1 forms a small three-stranded \u03b2-sheet (Figures 1 and 2A). However,\u00a0the N-terminal portion (residues 219\u2013235) of the linker is disordered, making the connection between the PDZ and linker of the two subunits in the dimer ambiguous. We tentatively assigned the connection as shown in Figure 1A and B, in which the span of the disordered region in the linker is\u00a0~20 \u00c5. Based on this assignment, one linker-GH2 packs against the GH1 domain from the same subunit as well as the PDZ domain from the other subunit. The alternative connection is less likely but possible, as the gap of\u00a0~40 \u00c5 in this configuration can be spanned by the 17-residue disordered linker region. The GH2 domain wedges itself between the PDZ-GH2 linker and the PDZ domain, reminiscent of a passenger sitting in the canoe formed by the dimeric GH1-PDZ modules. Notably, the loop between helices \u03b11 and \u03b12 in the GH2 domain partially occupies the PBM-binding groove in the PDZ domain (Figure 2B). Conversely, the PDZ domain blocks one face on the GH2 domain that binds myosin VI (as defined by the structures of the GH2/myosin VI complexes below). The apo-GIPC1 structure therefore represents an autoinhibited conformation that hinders binding to both PBM-containing cargo proteins and myosin VI.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig2-v2.jpg)\n\n**Figure 2.:** (A) Interactions of the linker with the GH1 and GH2 domains. (B) Interaction between the GH2 and PDZ domains. The loop between helices \u03b11 and \u03b12 in the GH2 domain that partially blocks the PBM binding site is labeled \u2018loop(\u03b11-\u03b12)\u2019 and highlighted in cyan.\n\n### Structure of the PlexinD1/GIPC1 complex\n\nThe JM segment in plexincyto is relatively flexible and can adopt multiple conformations for regulating plexin activity (Bell et al., 2011; He et al., 2009; Pascoe et al., 2015; Tong et al., 2009; Wang et al., 2013). While full-length PlexinD1cyto failed to crystallize, we crystallized and determined the structures of a construct with the JM segment truncated (still referred to as PlexinD1cyto for simplicity), both in the apo-form (to 2.7 \u00c5 resolution) and in complex with GIPC1 (to 3.2 \u00c5 resolution) (Figure 3, Figure 3\u2014figure supplement 1 and Table 1). The overall structure of apo-PlexinD1cyto are similar to other plexincyto structures reported previously (Figure 3B) (Bell et al., 2011; He et al., 2009; Pascoe et al., 2015; Tong et al., 2009; Wang et al., 2013). The RBD forms an independent ubiquitin-like domain that packs against one side of the GAP domain. The two GAP-homology regions (C1 and C2) fold together to form the GAP domain (Figure 3A and B). The GAP domain of plexins contains a regulatory element referred to as the activation segment, which toggles between the closed inactive and open active conformations under the control of plexin dimerization (Wang et al., 2013). The activation segment in the PlexinD1cyto structure appears partially open (Figure 3B), although it was crystallized in the monomeric state. The relatively high basal GAP activity of PlexinD1 may be due to this propensity of the activation segment to adopt the open conformation (Wang et al., 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig3-v2.jpg)\n\n**Figure 3.:** (A) Domain structure of mouse PlexinD1. The extracellular and transmembrane regions in PlexinD1 are omitted. The crystallization construct includes the regions denoted by the solid boxes. The single-letter amino acid sequence of the PBM is shown. (B) Comparison of the structures of apo-PlexinD1cyto and PlexinD1cyto from the PlexinD1cyto/GIPC1 complex. (C) Two orthogonal views of the PlexinD1cyto/GIPC1 complex structure. The dotted lines in green indicate the connection to the membrane by the transmembrane and juxtamembrane (JM) regions of PlexinD1. The linker-GH2 domains in GIPC1, invisible in the structures, are drawn as cartoons. Plx, Plexin.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The sigma-A weighted 2Fo-Fc maps are contoured at 1.0 sigma.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Many crystals were collected, washed with the crystallization buffer three times and analyzed by SDS-PAGE. PlexinD1cyto (~66 kDa) and GIPC1 (~36 kDa) ran at their respective expected molecular weight, demonstrating that both proteins were intact in crystals.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The two structures are superimposed on the PDZ domain on the left. The red arrows indicate the conformational difference at the other end of the dimer. The PDZ-GH2 linker and GH2 domain in the apo-GIPC1 structure are omitted for clarity.\n\nThe structure of PlexinD1cyto in complex with GIPC1 is similar to apo-PlexinD1cyto, except in the C-terminal tail that binds GIPC1 (Figure 3B and Figure 3\u2014figure supplement 1; see details below). The entire PDZ-GH2 linker and GH2 domain of GIPC1 in the PlexinD1cyto/GIPC1 complex are invisible in the electron-density map. A gel analysis shows that the GIPC1 protein is intact in crystals (Figure 3\u2014figure supplement 2), suggesting that the linker-GH2 domains are present but completely disordered in the PlexinD1/GIPC1 complex structure. As mentioned above, the PDZ and GH2 domains mutually inhibit each other in the autoinhibited apo-structure of GIPC1. Binding of PlexinD1 to GIPC1 is expected to dislodge the GH2 domain from its autoinhibitory interaction with the PDZ domain, rendering the GH2 domain and the PDZ-GH2 linker conformationally flexible in relation to the GH1-PDZ module (Figure 3C). As a result, the GH2 domain can more readily interact with myosin VI, which explains the enhanced recruitment of myosin VI by GIPC1 when GIPC1 is bound to cargo proteins as reported previously (Naccache et al., 2006).\n\nThe GH1 and PDZ domains of GIPC1 in the PlexinD1/GIPC1 complex are well structured and form the same domain-swapped dimer as apo-GIPC1 (Figure 3C). The curvature of the canoe-shaped dimer is, however, different in the two structures, suggesting that the dimer interface between the two GH1 domains has a certain degree of plasticity (Figure 3\u2014figure supplement 3). The variation of the dimer interface in the PlexinD1cyto/GIPC1 complex structure could result from the loss of the interfacial interactions made by the PDZ-GH2 linker present in the apo-GIPC1 structure. The two PlexinD1cyto molecules are placed at the opposite sides of the GIPC1 dimer and do not contact each other (Figure 3C). Simple modeling shows that the 2:2 PlexinD1/GIPC1 complex is compatible with full-length PlexinD1 in lipid membrane interacting with GIPC1 in the cytosol, which can use its flexibly attached GH2 domain to recruit myosin VI (Figure 3C).\n\nIn the apo-PlexinD1cyto structure, the C-terminal tail region (residues 1916\u20131925) constitutes the C-terminal part of the last helix in the GAP domain, except for the last two residues (Glu1924 and Ala1925) which are disordered (Figure 3B and Figure 3\u2014figure supplement 1). In contrast, the tail segment in the PlexinD1cyto/GIPC1 complex adopts an ordered, extended conformation (Figure 3B and Figure 3\u2014figure supplement 1). As expected, the PBM interacts with the PDZ domain in GIPC1 in the typical PBM/PDZ-binding mode, where the PBM forms a short \u03b2-strand to pack in an anti-parallel fashion with strand \u03b22 in the PDZ domain (Figure 4A) (Ye and Zhang, 2013). The sidechain of the very C-terminal residue (Ala1925) in the PBM is buried in the hydrophobic pocket between helix \u03b12 and strand \u03b22 of the PDZ domain, while its carbonyl group interacts with the backbone atoms of Leu143 and Gly144 in the PDZ domain. Ser1923 and Glu1924 in the PBM contribute to the specific binding by interacting with His191 and Thr146/Arg159 respectively in the PDZ domain. In addition to these canonical PBM/PDZ interactions, GIPC1 makes extensive contacts with other residues in the C-terminal tail as well as the two preceding helices of PlexinD1, resulting in a large interface with the total buried surface area of 2072 \u00c52 (Figure 4A). Notably, Ile1918 and Y1919 in the tail of PlexinD1 plug into a hydrophobic pocket formed at the junction between the GH1 and PDZ domain. Glu1920, Cys1921 and Tyr1922 in the PlexinD1 tail are sandwiched between the PlexinD1 GAP domain and GIPC1, making additional Van der Waals and polar interactions. Most residues involved in these interactions are highly conserved in PlexinD1 from different species but divergent in other plexin family members (Figure 4B), supporting the functional relevance of these interactions (Burk et al., 2017; Gay et al., 2011). These additional interactions likely enhance the affinity and specificity between PlexinD1 and GIPC1. This dual binding mode is analogous to the interaction between class B plexins and PDZ-RhoGEF where the secondary interface significantly increases the binding affinity (Pascoe et al., 2015). A superimposition of the PlexinD1cyto/GIPC1 complex with apo-GIPC1 shows that the GH2 domain sterically clashes with PlexinD1 (Figure 4C), supporting the notion that the GH2 domain in apo-GIPC1 is autoinhibitory and must dissociate before PlexinD1 can bind.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig4-v2.jpg)\n\n**Figure 4.:** (A) Detailed views of the interfaces. The top right panel highlights the packing interactions between the PlexinD1-PBM and GIPC1. The I1918/Y1919 motif in the PMB is accommodated by a hydrophobic pocket between the GH1 and PDZ domains in GIPC1. The lower right panel shows detailed interactions between the PlexinD1-PBM and GIPC1. The lower left panel shows the additional interface between the PlexinD1-GAP domain and the GIPC1-PDZ domain. (B) Sequence alignment of the C-terminal region of PlexinD1 from different species and other plexin family members. Residue numbers are based on mouse PlexinD1. (C) Superimposition of the structures of the PlexinD1cyto/GIPC1 complex and apo-GIPC1 based on the PDZ domain. It is evident that the GIPC1-GH2 domain in the apo-GIPC1 structure clashes with PlexinD1 bound to GIPC1. Plx, Plexin.\n\n### Structure and oligomerization of the GH2/myosin VI complex\n\nThe \u2018RRL\u2019 motif in myosin VI is critical for the interaction with GIPC1 (Spudich et al., 2007), but the precise GIPC-binding region was not mapped. We purified various segments of mouse myosin VI containing the \u2018RRL\u2019 motif fused with glutathione sulfur transferase (GST). While longer constructs tended to degrade, the GST-fusion of a conserved 45-residue segment (residues 1052\u20131096, \u2018HCBD\u2019 in Figure 5A; residue numbers based on the short isoform of myosin VI) was stable and interacted with the GH2 domains from all three GIPCs (See below). These observations are consistent with two recent studies showing that this region in myosin VI forms a compact helical domain and is sufficient for GIPC1 binding (He et al., 2016; Wollscheid et al., 2016). Here, we refer to the 1052\u20131096 region of myosin VI the helical cargo-binding domain (HCBD) to distinguish it from the C-terminal canonical CBD. We determined the crystal structures of the myosin VI-HCBD in complex with the GH2 domain from GIPC1 and GIPC2, respectively (Figure 5 and Figure 5\u2014figure supplement 1 and Table 1). The two structures are highly similar (Figure 5B and C), and the following discussions will refer to the GIPC1-GH2/myosin VI complex unless otherwise stated.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig5-v2.jpg)\n\n**Figure 5.:** (A) Domain structure of mouse myosin VI. The HCBD is drawn larger than its proportion. (B) Structure of the GIPC1-GH2/myosin VI-HCBD complex. The five GH2/HCBD units in the asymmetric unit are shown. The N- and C-termini of one HCBD are labeled. Interfaces I and II between the GIPC1-GH2 and myosin VI-HCBD domains are displayed in detail in the two expanded views, respectively. (C) Overall structure of the GIPC2-GH2/myosin VI-HCBD complex. The five GH2/HCBD units in the asymmetric unit are shown. (D) Superimposition of one GH2/HCBD unit to the apo-GIPC1 structure. The superimposition is based on the GH2 domain. For clarity, only one GH2 and PDZ from the apo-GIPC1 structure are shown. It is evident that the PDZ domain in the apo-GIPC1 structure clashes with the myosin VI-HCBD bound to interface I of the GH2 domain.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The sigma-A weighted 2Fo-Fc maps are contoured at 1.0 sigma.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** In each, one chain of alternating GH2 (pink) and HCBD (olive) are highlighted. Three asymmetric units (each containing 5 GH2/HCBD pairs) are displayed for each structure.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) The five unique copies of the HCBD in the asymmetric unit of the crystal of the GIPC1-GH2/myosin VI-HCBD complex are superimposed. This operation led to well alignment of all the GH2 domains bound to these HCBD molecules, highlighting the fact that all the HCBD molecules in the crystal interact with the GIPC1-GH2 domain in the same modes through either interface I or II. (B) The same superimposition as in (A) was applied to the GIPC2-GH2/myosin VI-HCBD structure, showing that both interfaces I and II are highly similar to those in the GIPC1-GH2/myosin VI-HCBD structure.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** The structure of the longer version of myosin VI (PDB ID: 2N12) is superimposed to the HCBD in the GIPC1-GH2/myosin VI-HCBD complex. The two molecules of the GH2 domain, interacting with the HCBD through interfaces I and II, respectively, are shown. The insert helix (red) clashes severely with the GH2 domain bound at interface II, and with that bound at interface I to a lesser extent.\n\nThe HCBD of myosin VI adopts the same two-helix conformation as seen in the recent NMR structure (PDB ID: 2N10), with the \u2018RRL\u2019 motif located at the center of the second helix (Figure 5B) (He et al., 2016; Wollscheid et al., 2016). The GH2 domain of GIPC1 in complex with the myosin VI-HCBD is similar to that in the apo-GIPC1 structure. There are five copies of both myosin VI-HCBD and GIPC1-GH2 molecules in each asymmetric unit, arranged in an alternating pattern (Figure 5B). The group of five HCBD and GH2 domains repeats itself in the neighboring unit cell, yielding a continuous array of alternating HCBD and GH2 that extends throughout the crystal (Figure 5\u2014figure supplement 2A). Considering one GH2/HCBD pair as a unit, the neighboring units in the array are related roughly by a five-fold right-handed rotational symmetry and a\u00a0~22 \u00c5 translation. The GIPC2-GH2/myosin VI structure forms the same alternating array, despite being crystallized in a different condition and space group (Figure 5C and Figure 5\u2014figure supplement 2B). The recurrence of this repeating array argues strongly that this arrangement captures the oligomeric interaction mode between GIPCs and myosin VI that is relevant to function, rather than being a crystal packing artifact. The alternative arrays mediated by the bivalent interactions seen here suggest an unanticipated mechanism for high-order oligomerization of the GIPC/myosin VI complex. The oligomer may collect multiple myosin VI molecules to enhance the processive transport of endocytic vesicles on actin filaments, as suggested by the observation that multiple myosin VI dimers attached to the same cargo can coordinate their movements to drive long-distance runs over interlaced actin networks (Sivaramakrishnan and Spudich, 2009). Previous studies have suggested that GIPC1 and myosin VI contribute to clustering of cell surface receptors into clathrin-coated pits at the initial stage of endocytosis in certain cell types, particularly those with microvilli (Hasson, 2003). In such cells, high-order oligomerization of GIPC1 and myosin VI may make this process more efficient. The anchoring function of the GIPC3/myosin VI complex for stereocilia in the inner ear may also benefit from the enhanced mechanical strength provided by the high-order oligomerization (Sweeney and Houdusse, 2007).\n\nDue to the fivefold rotational symmetry, GH2 molecules in the GH2/HCBD oligomer assume five different orientations (Figure 5B and C). Considering both the structures of the PlexinD1cyto/GIPC1 and GH2/HCBD complexes in the context of the lipid membrane, the\u00a0~40 residue flexible PDZ-GH2 linker in GIPCs can readily bridge the distance between the PlexinD1-bound PDZ domain and the GH2 domain in the GH2/HCBD oligomer regardless of the relative orientation of the GH2 domain. Likewise, the predicted flexible regions surrounding the HCBD in myosin VI allow differently oriented HCBDs in the oligomer to connect to the motor domains walking on one or multiple actin filaments. Oligomerization with combinations of translational and rotational symmetries is also seen in the kinase domains of the EGF receptor and the endoplasmic reticulum (ER) stress sensor IRE1, which are transmembrane proteins located on the plasma and ER membrane, respectively (Huang et al., 2016; Korennykh et al., 2009). In these cases, the flexibility in various linkers has also been proposed to allow differently oriented kinase molecules to converge at the membrane surface and connect to the transmembrane region of the proteins.\n\n### Interactions in the two interfaces between the GIPC-GH2 and myosin VI-HCBD domains\n\nThe bivalent interactions between the GIPC-GH2 and myosin VI-HCBD are mediated by two distinct interfaces (Figure 5B and Figure 5\u2014figure supplement 3). Interface I involves the two loops in the GIPC-GH2 domain, one between helices \u03b11 and \u03b12 and the other between helices \u03b13 and \u03b14 (Figure 5B). These two loops interact with Arg1084 and Arg1085 in the \u2018RRL\u2019 motif on one side of the second helix in the myosin VI-HCBD. In addition, hydrophobic residues such as Val1088, Tyr1089 and Trp1092 on the same side of the second helix in the myosin VI-HCBD dock on the hydrophobic patch formed by Tyr275, Met276, Ile278, Leu283, Phe311, etc. in the GIPC1-GH2 domain. Interface I is further expanded by the first helix and the N-terminal extension in the myosin VI-HCBD. Interface II is formed on the opposite side of the HCBD with helix \u03b14 and the N-terminal end of helix \u03b13 in the GIPC1-GH2 domain (Figure 5B). Tyr1059 and Leu1086 (the \u2018L\u2019 in the \u2018RRL\u2019 motif) in the myosin VI-HCBD are sandwiched between interfaces I and II. Phe1082 and Leu1086 from the myosin VI-HCBD and Pro297, Phe319, Trp322 and Gly323 from the GIPC1-GH2 domain together form the hydrophobic core of interface II. There are\u00a0also several charge- and hydrogen bond-mediated interactions. Interfaces I and II bury\u00a0~1300 and\u00a0~1100 \u00c52 solvent accessible surface area, respectively. The two interfaces in the GIPC2-GH2/HCBD complex structure are highly similar to those in the GIPC1-GH2/HCBD complex (Figure 5\u2014figure supplement 3).\n\nAs mentioned above, the loop between helices \u03b11 and \u03b12 in the GH2 domain blocks the PBM-binding site on the PDZ domain in the apo-GIPC1 structure (Figure 2B). Conversely, the inter-domain interaction prevents this loop from forming interface I with HCBD in myosin VI (Figure 5D). Therefore, the apo-GIPC1 structure represents the state in which the PDZ and GH2 domains mutually inhibit each other. Interface II in the GH2 domain in the autoinhibited structure of GIPC1 is open for interacting with myosin VI. It is unclear at present whether and how the interface-II-mediated interaction is regulated.\n\nThe HCBD region in myosin VI also binds several other adaptor proteins, including optineurin, NDP52 and T6BP, and K63-linked ubiquitin chains (He et al., 2016; Tumbarello et al., 2013). Alternative splicing generates several isoforms of myosin VI. The longer isoform contains an insert N-terminal to the HCBD, which switches the binding specificity of myosin VI from adaptors such as GIPC1 to clathrin (Wollscheid et al., 2016). In the NMR structure of the myosin VI longer isoform (PDB ID: 2N12), a part of the insert forms a helix and packs against the HCBD. A comparison with our GIPC1-GH2/myosin VI-HCBD structure shows that the insert helix interferes with the GH2/HCBD interaction via both interfaces I and II (Figure 5\u2014figure supplement 4). These analyses refine our understanding of the structural basis for the different binding specificities between the myosin VI short and long isoforms (Wollscheid et al., 2016).\n\n### Mutational analyses of the interactions among PlexinD1, GIPCs and myosin VI\n\nWe carried out pull-down experiments using GST-fusion of the myosin VI-HCBD to examine the interactions among PlexinD1, GIPC1 and myosin VI (Figure 6). As expected, GST-HCBD was able to pull-down GIPC1 but not PlexinD1cyto (Figure 6A). The pull-down of GIPC1 by GST-HCBD is probably primarily mediated by interface II, which is not blocked in the autoinhibited conformation of GIPC1. Mixing the three proteins allowed GST-HCBD to pull-down both GIPC1 and PlexinD1cyto. Notably, the presence of Plexincyto increased the amount of GIPC1 pulled-down substantially. These results are consistent with previous observations and our structure model in which cargo binding releases the autoinhibition in GIPC1, leading to enhanced interaction with the HCBD of myosin VI (Naccache et al., 2006). We also conducted the same experiments with GIPC2 and GIPC3. The results were similar, except that the enhancement of GIPC2 binding to GST-HCBD caused by PlexinD1 is more pronounced. These results support the notion that the autoinhibited structure of GIPC1 represents a conserved regulation mechanism of the GIPC family.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig6-v2.jpg)\n\n**Figure 6.:** (A) Pull-down of GIPC1, GIPC2 and GIPC3 by GST-HCBD in the absence or presence of PlexinD1cyto. (B) Effects of mutations in PlexinD1 and GIPC1 on the interactions among PlexinD1cyto, GIPC1 and myosin VI-HCBD. PlxD1, PlexinD1cyto.\n\nWe used the three-protein pull-down experiments to examine the interface between PlexinD1 and GIPC1 (Figure 6B). Truncation of the three C-terminal residues in the PBM of PlexinD1 (\u0394SEA) virtually abolished the interaction with GIPC1. Mutating Ile1918 and Tyr1919 in PlexinD1 (I1918A/Y1919A), which occupy the hydrophobic pocket between GH1 and PDZ in GIPC1 (Figure 4A), reduced the binding to GIPC1 substantially (Figure 6B). Conversely, a mutation of Gly114 in GIPC1 (G114Y), located at the edge of the hydrophobic packet that accommodates the Ile1918/Tyr1919 motif in PlexinD1 (Figure 4A), also reduced the PlexinD1/GIPC1 interaction (Figure 6B). These results confirm that the C-terminal \u2018SEA\u2019 motif in PlexinD1 is essential for the binding to GIPC1, and the additional interface beyond the canonical PBM/PDZ interface also contributes the PlexinD1/GIPC interaction.\n\n### Oligomerization of the GIPC1-GH2/myosin VI-HCBD complex in solution\n\nWe examined the solution behavior of GIPC1-GH2 and the myosin VI-HCBD both alone and in complex using sedimentation velocity analytical ultracentrifugation (AUC). The GIPC1-GH2 domain at 30 \u03bcM displayed a standardized sedimentation coefficient (s20,w-value) of\u00a0~1.3 S, corresponding to a monomeric species of\u00a0~8 kDa (Figure 7\u2014figure supplement 1A). The s20,w-value of the myosin VI-HCBD (~5 kDa) at 20 \u03bcM was 0.9 S, also consistent with a monomeric species (Figure 7\u2014figure supplement 1A). When mixed at a 1:1 molar ratio, the proteins appeared to form multiple complexes (Figure 7\u2014figure supplement 1A). We characterized these by examining the weighted-average sedimentation coefficient (s20,ww) of the entire range of species observed between 1.5 and 6 S. As the overall concentration was increased, the s20,ww also rose, consistent with the formation of higher\u00a0order species (Figure 7A). When practicable, multi-signal methods (Balbo et al., 2005) were used to confirm that both proteins participated in these complexes in an approximate 1:1 molar ratio (Figure 7\u2014figure supplement 1B and C). However, we observed no species with s20,w-values greater than\u00a0~4.8\u00a0S (Figure 7\u2014figure supplement 1A), and the increase in s20,ww ceased at concentrations higher than 150 \u03bcM (Figure 7A). Based on hydrodynamic estimates, 4.8 S could represent a 5:5 complex between the GH2 and HCBD. The observation of an apparent maximum s20,ww-value was unexpected, given the potential of the open-ended GH2/HCBD complex to form infinite oligomers. One possible explanation for this phenomenon is that the formation of very long, linear polymers could be inhibited by the pressures induced by ultracentrifugation (Harrington and Kegeles, 1973; Marcum and Borisy, 1978).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig7-v2.jpg)\n\n**Figure 7.:** (A) Analytical ultracentrifugation (AUC) of the GH2, HCBD and their complexes. The dots in the top-left panel show the $s_{20,w}^{w}$-values of the wild-type GH2/HCBD complex at concentrations as indicated on the X-axis. Other panels describe the effects of mutating interfacial residues in the GH2 on the $s_{20,w}^{w}$-value of the GH2/HCBD complex (150 \u03bcM). The red and orange dashed lines indicate the s20,w-values of the GH2 domain at 30 \u03bcM and the HCBD at 20 \u03bcM, respectively. The black dashed line indicates the $s_{20,w}^{w}$-value of the wild-type complex at 150 \u03bcM. (B) AUC of the linker-GH2 and its complex with the HCBD. The top panel describes the titration analogous to the top left panel of (A). The bottom panel shows the effects of interfacial mutations in the linker-GH2 on the $s_{20,w}^{w}$-value of the linker-GH2/HCBD complex (150 \u03bcM). The HCBD at 150 \u03bcM sedimented as a major monomeric and minor dimeric species as shown in Figure 7\u2014figure supplement 1. The s20,w-value of the monomeric species is indicated by the orange dashed lines. The s20,w-value of the linker-GH2 (red dashed line) is the same at both 38 \u03bcM and 200 \u03bcM. The black dashed line indicates the $s_{20,w}^{w}$-value of the wild-type complex at 150 \u03bcM.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) The interaction of the GIPC1-GH2 and myosin VI-HCBD studied by AUC. Shown are c(s) distributions, colored as indicated in the inset. The concentrations of the complex given represent those of the equimolar mixtures of the GH2 and HCBD. All distributions have been normalized by the respective areas under the curves. (B) Multi-signal sedimentation velocity (MSSV) analysis of the GH2/HCBD mixture at 30 \u03bcM. The areas under the ck(s) distributions represent the concentrations of the respective mixture components. The molar ratio of GH2:HCBD sedimenting faster than 1 S is 1:1. (C) MSSV analysis of the GH2/HCBD mixture at 150 \u03bcM. The molar ratio of GH2:HCBD in the region of 1.5\u20136 S is 1.1:1. (D) AUC analysis of the linker-GH2/HCBD titration. Data are presented in the same fashion as in (A). (E) Comparison of linker-GH2 sedimentation at low and high concentrations. (F) Comparison of HCBD sedimentation at low and high concentrations. Note that the experiment of the HCBD at 20 \u03bcM was conducted under low-salt conditions (150 mM NaCl), while the 150 \u03bcM sample contained 500 mM NaCl.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Mixing the linker-GH2 and HCBD in a buffer containing 150 mM NaCl led to precipitation. Adding NaCl to the final concentration of 500 mM re-solubilized the linker-GH2/HCBD complex.\n\nWe designed mutations to test the contributions of both interfaces I and II to the oligomerization. We chose to mutate the GH2 of GIPC1 because most of the residues in the myosin VI-HCBD are located in close proximity to both interfaces I and II, due to the small size of the HCBD. We made a number of GH2 mutants with single mutations in either interface I (Y275A, M276E and I278Q) or II (F319S and G323Q). The results showed that these mutations led to decreased $s_{20,w}^{w}$-values of the GH2/HCBD complex (Figure 7A), implying that the mutations disrupted oligomer formation. We combined the single mutations to generate a number of double, triple and quadruple mutants of the GIPC1-GH2 domain. The combined mutations further decreased the $s_{20,w}^{w}$-values of the complex, and in some cases virtually eliminated complex formation (Figure 7A).\n\nWe also tested the interaction of the myosin VI-HCBD with a linker-GH2 construct of GIPC1 that contains both the PDZ-GH2 linker and GH2 domain. Surprisingly, mixing the linker-GH2 and HCBD led to heavy precipitation (Figure 7\u2014figure supplement 2). The precipitation is unlikely due to denaturation of the proteins, as it could be reversed by increasing the salt concentration from 150 mM to 500 mM. These observations, reminiscent of the reversible precipitation of IRE1 due to the high-order oligomerization (Korennykh et al., 2009), suggest that the PDZ-GH2 linker promotes the polymerization of the myosin VI-HCBD/GIPC1-GH2 complex. We analyzed the linker-GH2 and its complex with the HCBD by AUC, with 500 mM salt in the buffer to prevent precipitation. The linker-GH2 protein sedimented as a monomer at both 38 \u03bcM and 200 \u03bcM, with a s20,w-value value of\u00a0~1.4\u00a0S\u00a0(Figure 7\u2014figure supplement 1D and E). The HCBD at 150 \u03bcM under the same condition sedimented predominantly as a monomer (s20,w-value of 0.9 S), and a minor dimer peak (s20,w-value of 1.6 S) (Figure 7\u2014figure supplements 1D and 2F). Similar to the GH2/HCBD complex, the average sizes of the linker-GH2/HCBD complex increased as a function of concentration, with the largest observed s20,w-value of\u00a0~5.5 S (Figure 7B and Figure 7\u2014figure supplement 1D). This value is slightly higher than that observed for the GH2/HCBD mixture at the same concentration, which could be due to the larger mass of the linker-GH2 construct and/or the formation of higher\u00a0order oligomers. We introduced some double, triple and quadruple mutations as described above to the linker-GH2 construct. These mutations virtually eliminated the complex formation between the linker-GH2 and HCBD (Figure 7B).\n\nThese results together demonstrate that GIPC1-GH2 and myosin VI-HCBD form high-order oligomers in solution, and both interfaces I and II as seen in our crystal structures are required for the oligomerization. The PDZ-GH2 linker in GIPC1 appears to enhance the oligomerization, but the precise mechanism by which it does so remains unclear at present.\n\n### Oligomerization of Sema3E/PlexinD1, GIPC1 and myosin VI in cells\n\nTo analyze the interactions among PlexinD1, GIPC1 and myosin VI in mammalian cells, we generated COS-7 cells stably expressing full-length mouse PlexinD1 (Figure 8\u2014figure supplement 1). These cells were then transiently co-transfected with myosin VI and GIPC1. In these cells, a fraction of PlexinD1 was incompletely processed and remained in the ER or Golgi apparatus (Figure 8\u2014figure supplement 1B). To selectively image fully processed PlexinD1 molecules, we treated the cells with the Sema3E ligand labeled with Alexa Fluor-555 and used it as a proxy for PlexinD1. Sema3E/PlexinD1, GIPC1 and myosin VI co-localized very well and formed large puncta in cells expressing wild-type PlexinD1 (Figure 8). In cells expressing PlexinD1(\u0394SEA), GIPC1 and myosin VI also formed puncta together, but Sema3E did not localize to these puncta (Figure 8). There is virtually no large puncta with Sema3E/PlexinD1, GIPC1 and myosin VI co-localized in these cells. Replacing wild-type GIPC1 with the G323Q mutant, which disrupts interface II in the GH2 domain for myosin VI, also abolished formation of large puncta of co-localized Sema3E/PlexinD1, GIPC1 and myosin VI (Figure 8). These results support the notion that Sema3E, PlexinD1, GIPC1 and myosin VI can form high-order oligomers in cells, which is dependent on both the PlexinD1/GIPC1 interaction and the linear oligomerization of the GIPC1/myosin VI complex.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig8-v2.jpg)\n\n**Figure 8.:** (A) Representative fluorescence images of cells. Arrow heads highlight large puncta in which Sema3E/PlexinD1 (red), GIPC1 (purple) and myosin VI (green) co-localize. Nuclei were stained with DAPI (blue). Scale bar, 5 \u00b5m. Images shown are representative from three independent samples of each group. (B) Quantification of puncta in each group of cells. Puncta larger than 1 \u00b5m2 and containing Sema3E/PlexinD1, GIPC1 and myosin VI are counted for 20 cells from each group. Each dot in the plot represents one cell. Mean and standard deviations are shown as the blue and magenta bars, respectively. p-Values are determined by two-tailed Student\u2019s t-test.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Staining of cells with Sema3E, the ligand of PlexinD1, fused to alkaline phosphatase (See Materials\u00a0and\u00a0methods for details). Cell surface expression levels of PlexinD1(WT) and PlexinD1(\u0394SEA), as reflected by staining darkness of cells, are similar. (B) Confocal image of whole cell distribution of PlexinD1(WT) as detected with anti-PlexinD1 immuno-staining. The image shows that a portion of PlexinD1 did not reach the cell surface and remained in the peri-nuclear region.\n\n## Discussion\n\nLigand-induced activation of cell surface receptors often leads to their endocytosis. The primary function of GIPCs in this process is to tether the receptors on uncoated endocytic vesicles to myosin VI, which transports the vesicles to fuse with early endosomes (Katoh, 2013). Our structural analyses reveal how the GIPC proteins are autoinhibited, and how they are activated upon binding of PlexinD1 or other cargos and consequently interact with myosin VI (Figure 9). The autoinhibition of both GIPCs and myosin VI (French et al., 2017) helps suppress their interaction in the absence of cargo proteins, avoiding futile ATP consumption and walking of myosin VI. The linear array of the GIPC/myosin VI complex formed through their mutual bivalent binding provides an elegant mechanism for myosin VI oligomerization. PlexinD1 and many other GIPC-binding cell surface receptors undergo ligand-induced dimerization, which combined with the dimeric nature of GIPCs can potentially crosslink the GIPC/myosin VI linear oligomer into large two-dimensional assemblies (Figure 9). Such assemblies may be more efficient in performing the cellular functions of myosin VI, including clustering cargos to clathrin-coated pits, endocytic vesicle transport and maintenance of stereocilia in the inner ear. There is evidence that myosin V also forms large oligomers for processive transport (Chung and Takizawa, 2010; Krementsova et al., 2011). Oligomerization of myosin adds another instance to the increasingly prevalent higher\u00a0order assemblies involved in a variety of cellular processes (Wu and Fuxreiter, 2016).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig9-v2.jpg)\n\n**Figure 9.:** Unbound GIPCs adopt the autoinhibited conformation (left). Binding of cargo such as PlexinD1 to GIPCs releases the autoinhibition, promoting their interaction with myosin VI and formation of the linear oligomer (right). The black dashed lines indicate that the oligomer can extend further, and multiple such oligomers can assemble into two-dimensional arrays. The transmembrane and extracellular regions of PlexinD1 are omitted for clarity.\n\nThe crystal structures presented here provide a framework for understanding how mutations in PlexinD1, GIPCs and myosin VI lead to diseases. Many germ-line mutations in GIPC3 and myosin VI are causatively associated with hereditary deafness (Ahmed et al., 2003; Ammar-Khodja et al., 2015; Avraham et al., 1995; Charizopoulou et al., 2011; Melchionda et al., 2001; Rehman et al., 2011; Siddiqi et al., 2014). Mapping the GIPC3 mutations to the crystal structure of apo-GIPC1 suggest that many of the mutations likely destabilize the GIPC3 protein or disrupt the interaction with myosin VI (Table 2 and Figure 10). Deafness caused by these mutations is therefore likely due to loss of the anchoring function of the GIPC3/myosin VI complex in stereocilia. Dysregulation of receptor tyrosine kinases such as Vascular Endothelial Factor Receptor two and Insulin-like Growth Factor-1 Receptor can lead to cancer. GIPC-mediated endocytosis and intracellular transport are important aspects of signal regulation of these receptors (Katoh, 2013). Some somatic mutations in GIPCs found in human cancer (Katoh, 2013) also map to structural elements that are important for the protein stability or the interaction with myosin VI (Table 2 and Figure 10).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/27322/elife-27322-fig10-v2.jpg)\n\n**Figure 10.:** The structure is shown in the same view and color scheme as in the right panel of Figure 1B. The mutations listed in Table 2 are mapped to the colored subunit in the dimer.\n\n**Table 2.**\n Structural mapping of disease-associated mutations in GIPCs.\u00a0Listed mutations are based on (Ammar-Khodja et al., 2015; Katoh, 2013). HNSCC, head and neck squamous cell carcinoma. Mutations are mapped to GIPC1 based on the sequence alignment of GIPC1, 2 and 3 as shown in Figure 1\u2014figure supplement 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Mutation</th>\n      <th>Disease</th>\n      <th>Corresponding residue in GIPC1</th>\n      <th>Location and function of the mutated residue</th>\n      <th>Possible effect of the mutation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GIPC1</td>\n      <td>F319L</td>\n      <td>HNSCC</td>\n      <td>F319</td>\n      <td>GH2, Interface II for myosin VI</td>\n      <td>Weaken binding to myosin VI</td>\n    </tr>\n    <tr>\n      <td>GIPC2</td>\n      <td>F74Y</td>\n      <td>Colorectal cancer</td>\n      <td>F90</td>\n      <td>GH1, Hydrophobic core</td>\n      <td>Destabilize the structure</td>\n    </tr>\n    <tr>\n      <td>GIPC2</td>\n      <td>G102E</td>\n      <td>Ovarian cancer</td>\n      <td>G118</td>\n      <td>GH1, Domain-swapped dimer Interface</td>\n      <td>Destabilize the structure</td>\n    </tr>\n    <tr>\n      <td>GIPC3</td>\n      <td>M88I</td>\n      <td>Familial hearing loss</td>\n      <td>M109</td>\n      <td>GH1, Inter-domain interface with PDZ</td>\n      <td>Destabilize the structure</td>\n    </tr>\n    <tr>\n      <td>GIPC3</td>\n      <td>G94D</td>\n      <td>Familial hearing loss</td>\n      <td>G115</td>\n      <td>GH1, autoinhibitory interface with GH2, Part of the hydrophobic pocket accommodating the I1918/Y1919 motif in PlexinD1</td>\n      <td>Disrupt the autoinhibited state, Weaken cargo binding</td>\n    </tr>\n    <tr>\n      <td>GIPC3</td>\n      <td>H170N</td>\n      <td>Familial hearing loss</td>\n      <td>H191</td>\n      <td>PDZ, Key PBM binding residue</td>\n      <td>Weaken cargo binding</td>\n    </tr>\n    <tr>\n      <td>GIPC3</td>\n      <td>T221I</td>\n      <td>Familial hearing loss</td>\n      <td>T242</td>\n      <td>PDZ/GH2 Linker, Autoinhibitory interface with GH2</td>\n      <td>Alter the autoinhibited state</td>\n    </tr>\n    <tr>\n      <td>GIPC3</td>\n      <td>M255K</td>\n      <td>Familial hearing loss</td>\n      <td>M276</td>\n      <td>GH2, Autoinhibitory interface with PDZ, Interface I for myosin VI</td>\n      <td>Alter the autoinhibited state, weaken binding to myosin VI</td>\n    </tr>\n    <tr>\n      <td>GIPC3</td>\n      <td>G256D</td>\n      <td>Familial hearing loss</td>\n      <td>G277</td>\n      <td>GH2, Autoinhibitory interface with PDZ Interface I for myosin VI</td>\n      <td>Alter the autoinhibited state, weaken binding to myosin VI</td>\n    </tr>\n    <tr>\n      <td>GIPC3</td>\n      <td>L262R</td>\n      <td>Familial hearing loss</td>\n      <td>L283</td>\n      <td>GH2, Autoinhibitory interface with PDZ, Interface I for myosin VI</td>\n      <td>Alter the autoinhibited state, weaken binding to myosin VI</td>\n    </tr>\n  </tbody>\n</table>\n\nWhile other plexin family members are not known to bind GIPCs (Burk et al., 2017; Gay et al., 2011), some of them form holo-receptors with Neuropilin 1 or 2, which contains a PBM that interacts with GIPCs (Cai and Reed, 1999). In Drosophila, class A plexin forms a holo-receptor with the receptor guanylyl cyclase Gyc76C, which binds GIPC1 and facilitates plexin-mediated motor axon guidance (Chak and Kolodkin, 2014). GIPCs therefore can use diverse mechanisms to regulate plexin signaling. Intriguingly, the PBM of PlexinD1 is in principle available for binding GIPCs constitutively, raising the question whether and how the plexin/GIPC interaction is regulated. One potential mechanism for regulating the interaction in PlexinD1 may be phosphorylation of conserved Tyr1919 and Ser1923, which would likely prevent GIPC binding based on the PlexinD1/GIPC1 complex structure. Interestingly, the sequence context of Tyr1919 resembles the consensus phosphorylation site for the Src family kinases (Gay et al., 2011). Future studies will determine the potential role of PlexinD1 phosphorylation on the formation of the PlexinD1/GIPC1 complex.\n\n## Materials and methods\n\n### Protein expression and purification\n\nThe coding regions for mouse PlexinD1cyto with (residues 1297\u20131925) and without the JM-segment (residues 1339\u20131925), mouse GIPC1 GH1-PDZ-GH2 version 1 (residues 52\u2013333), GIPC1 GH1-PDZ-GH2 version 2 (residues 52\u2013327), GIPC1 linker-GH2 (residues 217\u2013333), GIPC1 GH2 (residues 258\u2013333), mouse GIPC2 GH1-PDZ-GH2 (residues 40\u2013314), GIPC2 GH2 (residues 238\u2013314) and mouse GIPC3 GH1-PDZ-GH2 (residues 20\u2013307) were sub-cloned into a modified pET-28a vector (Novagen). Mutations were introduced by polymerase chain reaction-based mutagenesis. Proteins expressed using these constructs contain an N-terminal His6-tag and human rhinovirus 3C protease cleavage site. Proteins were overexpressed in the bacterial strain BL21(DE3) and purified by Ni2+ ion affinity chromatography. The His6-tag was removed by treatment with the 3C protease. Proteins were further purified using ion-exchange and gel filtration chromatography. The GH1-PDZ-GH2 domains of GIPC1 showed two peaks on gel filtration chromatography, presumably corresponding to the dimer and monomer, respectively. The monomeric proteins were unstable and precipitated when concentrated. The dimeric proteins were collected and concentrated for subsequent experiments. GIPC2 and GIPC3 both ran as a single peak corresponding to the dimer species. The coding region for the HCBD of mouse myosin VI (residues 1052\u20131096; residues numbers based on the short version myosin VI, GeneBank number BC144917) was inserted into the pGEX-6p-1 vector (GE healthcare,\u00a0Pittsburgh,\u00a0PA). The GST-HCBD fusion protein was overexpressed in BL21(DE3) and purified using glutathione affinity chromatography followed by gel filtration. To produce the HCBD of myosin VI without the GST moiety, the fusion protein was treated with the 3C protease and GST was removed by passing through a glutathione affinity column. All the proteins were concentrated using Amicon concentrators (Millipore,\u00a0Billerica,\u00a0MA) and stored at \u221280\u00b0C before use.\n\nThe coding region for mouse Sema3E (residues 1\u2013678) with a C-terminal His8-tag was cloned into the pEZT-BM vector and expressed as a secreted protein in HEK293S-GnTI\u2212 cells (ATCC, catalogue #CRL-3022; not independently authenticated) by using the BacMam system (Morales-Perez et al., 2016). The protein was captured by using Ni2+-NTA beads from the culture medium and further purified by gel filtration chromatography. Sema3E was labeled with Alexa Fluor-555 (Invitrogen,\u00a0Waltham,\u00a0MA) according to the manufacture\u2019s instruction. Briefly, Sema3E in phosphate buffered saline (PBS) at 10 mg/ml was incubated with amine-reactive Alexa Fluor-555 for 1 hr at room temperature. Sema3E conjugated with Alexa Fluor-555 was purified by gel filtration chromatography, concentrated and stored at \u221280\u00b0C. Alkaline phosphatase-tagged Sema3E (AP-Sema3E) was expressed in transiently transfected HEK293T cells (ATCC,\u00a0Manassas,\u00a0VA, catalogue #CRL-3216; not independently authenticated) as described previously (He et al., 2009).\n\n### Crystallization and structure determination\n\nInitial crystallization trials were carried out in 96-well plates using the sitting-drop vapor diffusion method at 20\u00b0C. Crystallization conditions were optimized in 24-well plates using the hanging-drop vapor diffusion method. For crystallizing the PlexinD1cyto/GIPC1, GIPC1-GH2/myosin VI-HCBD and GIPC2-GH2/myosin VI-HCBD complexes, the interacting proteins were mixed at an equimolar ratio and subjected to crystallization screens directly. The optimized crystallization condition for PlexinD1 (residues 1333\u20131925, 10 mg/ml) included 0.1 M imidazole (pH 7.8) and 15% (w/v) PEG8000. The condition for GIPC1 (residues 52\u2013327, 5 mg/ml) included 0.2 M Li2SO4, 0.1 M HEPES pH 7.5 and 25% (w/v) PEG3350. The condition for the complex (5 mg/ml) between PlexinD1 and GIPC1 (residues 52\u2013333) was 0.1 M Bis-Tris pH 5.5 and 2 M (NH4)2SO4. The condition for the GIPC1-GH2(258\u2013333)/myosin VI-HCBD(1052\u20131094) complex (15 mg/ml) was 0.1 M Bis-Tris pH 6.0 and 2 M (NH4)2SO4. The condition for the GIPC2-GH2(238\u2013314)/myosin VI-HCBD(1052\u20131094) complex (15 mg/ml) was 0.1 M MES pH 6.5% and 10% (w/v) PEG20000. Crystals were cryo-protected in the crystallization buffers supplemented with 20% (v/v) ethylene glycol or glycerol, and flash-cooled in liquid nitrogen before data collection. Diffraction data were collected at 100 K on beamline 19ID at the Advanced Photon Sources (Argonne National Laboratory,\u00a0Argonne,\u00a0IL). The data were processed by using the HKL2000 software package (Otwinowski and Minor, 1997).\n\nAll the structures were solved by molecular replacement (MR) using Phaser in the Phenix software package (Adams et al., 2010; McCoy et al., 2007). The structure of PlexinD1cyto was solved using the PlexinA3cyto structure (PDB ID: 3IG3) with the JM-segment removed as the search model. The PlexinD1cyto structure was then used as the search model to obtain the initial phases for the PlexinD1cyto/GIPC1 complex structure, which generated an electron-density map that showed clear features of the PDZ domain. The PDZ domain of GIPC2 (PDB ID: 3GGE) was manually placed into the density map using the program Coot (Emsley and Cowtan, 2004). Subsequent iterative model building and refinement using Phenix and Coot, respectively, allowed the GH1 domain of GIPC1 to be built and refined. While the GH2 domain was present in the protein used for crystallization, it was completely disordered and invisible in the electron-density map.\n\nThe individual GH1 and PDZ domains from the PlexinD1cyto/GIPC1 complex structure were used as the search models to solve the structure of apo-GIPC1. The initial electron-density map showed weak features of the GH2 domain, which were improved through iterative manual model building in Coot, automatic building using the Autobuild module and refinement with the Refine module in Phenix. Despite the high resolution (1.9 \u00c5), the Rfree remained above 30% after many rounds of refinement. Analyses of the diffraction data with the Xtriage module in Phenix suggested that the diffraction data were twinned with the twin operator of (h, -k, -l). Refinement with the twin operator applied in Phenix led to the final model with Rfreeof\u00a0~\u00a017.5%. The refined twin fraction is\u00a0~33%. The GH2 domain from the refined apo-GIPC1 structure was then used as the search model to solve the structures of HCBD of myosin VI in complex with GIPC1-GH2 and GIPC2-GH2, respectively. For both structures, the electron-density maps calculated from the five protomers of GH2 in the asymmetric units were clear enough to allow the HCBD of myosin VI to be modeled via manual building in Coot and Autobuild in Phenix.\n\nData collection and refinement statistics are listed in the Table 1. Model quality was checked by using MolProbity (Chen et al., 2010). The structure figures were generated in Pymol (http://www.pymol.org/).\n\n### Pull-down assays with purified proteins\n\nThe GST fusion protein of HCBD of myosin VI was incubated with GIPC1, GIPC2 or GIPC3 in the absence or presence of PlexinD1cyto(with JM) in the pull-down buffer containing 10 mM Tris (pH 8.0), 150 mM NaCl and 1 mM DTT at room temperature for 30 min before the pull-down experiments. The concentrations of the individual proteins in the initial 20 \u03bcl mix were all at 1 \u03bcM. The same conditions were used for incubating the mutants. To perform the pull-down experiments, 20 \u03bcl washed glutathione beads were added and incubated for an additional 30 min at room temperature. Beads were pelleted and washed with 1 ml of the pull-down buffer three times. Proteins remaining on the beads were extracted with standard SDS-PAGE loading buffer containing 1% (w/v) SDS, resolved in SDS-PAGE and stained with Coomassie blue R250.\n\n### Analytical ultracentrifugation\n\nFor ultracentrifugation experiments of the GH2-C-terminal protein of GIPC1 (residues 258\u2013333) and its complex with the HCBD of myosin VI, the centrifugation buffer contained 10 mM Tris (pH 8.0), 150 mM NaCl and 1 mM TCEP. The complex between the linker-GH2-C-terminal protein and HCBD precipitated heavily in this buffer. Therefore, for the ultracentrifugation experiments with linker-GH2-C-terminal, the concentration of NaCl in the buffer was increased to 500 mM. The individual proteins and protein complexes (at 1:1 molar ratio) at various concentrations were prepared and incubated overnight at 20\u00b0C. The samples (~400 \u03bcl) were loaded into the \u2018sample\u2019 side of dual-sectored charcoal-filled Epon centerpieces, while the \u2018reference\u2019 sectors were loaded with the centrifugation buffer of the same volume. Filled cells were loaded into a An50Ti rotor and equilibrated for 2 hr under vacuum in a Beckman Coulter Optima XL-I ultracentrifuge at 4\u00b0C prior to centrifugation. Data were acquired at 50,000 rpm at 4\u00b0C via absorbance at 305 nm and interference optics. Data were analyzed using the c(s) methodology in the program SEDFIT (Schuck, 2000). Multi-signal analyses were carried out in SEDPHAT\u00a0(Balbo et al., 2005). All figures featuring c(s) distributions were rendered with the program GUSSI (Brautigam, 2015).\n\n### Fluorescence imaging of cells\n\nThe cDNAs of full-length mouse PlexinD1(WT) and PlexinD1(\u0394SEA) were inserted into the Lentiviral vector pTY with the Elongation Factor 1a (EF1a) promoter (Clontech, Mountain View, CA). The constructs were transfected into HEK293T cells to generate Lentiviruses, which were used to infect COS-7 cells (ATCC, catalogue #CRL-1651). Cells were not independently authenticated, but checked by 4,6-Diamidino-2-phenylindole (DAPI) staining to ensure no microplasma contamination. Cells were cultured in DMEM medium (Invitrogen) supplemented with 1% (V/V) penicillin/streptomycin and 10% (V/V) FBS with 5% CO2 at 37\u00b0C. Blasticidin (10 \u00b5g/ml) was used to select for infected COS-7 cells stably expressing either PlexinD1(WT) or PlexinD1(\u0394SEA). Cell surface expression of the PlexinD1 proteins was confirmed by staining with AP-Sema3E (2 nM) as described previously (He et al., 2009), except that Sema3E treatment was conducted on ice for 15 min to prevent cell collapse and endocytosis. Whole cell distribution of PlexinD1 was detected by immune-staining with an anti-PlexinD1 antibody (Abcam, San Francisco, CA, catalogue #ab96313) and an Alexa-555-labeled goat anti-rabbit secondary antibody (Invitrogen, catalogue #A-21428). Cells were imaged with a 40X objective and a CCD camera mounted on a Nikon A1R confocal microscope. The excitation and emission wavelengths were 555 nm and 572 nm, respectively.\n\nTo analyze the co-localization of Plexin D1 with GIPC1 and myosin VI, human myosin VI short version (GeneBank number U90236.2) was inserted into pEGFP-C3 (Clontech) for expression of N-terminal GFP-fused myosin VI. GIPC1 wild-type and the G323Q mutant were cloned into pcDNA3.1 (Invitrogen) with a C-terminal HA-tag. The myosin VI plasmid was co-transfected with the GIPC1 wild-type or the G323Q mutant plasmid with Fugene 6 (Promega,\u00a0Fitchburg,\u00a0WI) into the PlexinD1-expressing COS-7 cells described above. Twenty-four hours after transfection, cells were treated with 15 nM Alexa Fluor-555-labelled Sema3E for 12 min at 37\u00b0C. Cells were permeabilized with 0.05% (w/v) saponin for 10 min and non-specific binding sites were blocked by Quenching buffer (0.01% (w/v) saponin, 2% (w/v) BSA, 0.1% (w/v) lysine in PBS, pH7.4) for 30 min. HA-tagged GIPC1 was stained with a chicken anti-HA antibody (Novus,\u00a0Littleton,\u00a0CO, catalogue #NB600-361) and an Alexa Fluor 647-labelled goat anti-chicken antibody (Invitrogen, catalogue #1806124). Cells were imaged with a 60 \u00d7 1.4 numerical aperture objective and a CCD camera mounted on a Nikon A1R confocal microscope. Z-stacks were obtained and collapsed into 2D images. Excitation wavelengths used were 405 nm (for DAPI), 488 nm (for GFP-myosin VI), 555 nm (for Alexa Fluor-555 labeled Sema3E) and 647 nm (for GIPC1 stained with Alexa Fluor-647-labeled antibody). The corresponding emission wavelengths were 421 nm, 519 nm, 572 nm and 665 nm, respectively.\n",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "cf7a221f-f038-4205-88b6-6094d49aad49",
+      "submission_id": "9cf89a95-2063-41c6-8e7b-bba5d6635004",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27322.037](https://doi.org/10.7554/eLife.27322.037)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structure analyses reveal a regulated oligomerization mechanism of the PlexinD1/GIPC/myosin VI complex\" for consideration by eLife. Your article has been favorably evaluated by Philip Cole (Senior Editor) and three reviewers, one of whom, Suzanne Pfeffer (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nGIPCs comprise a family of adaptor proteins that link semaphorin signalling via plexin receptors to cellular transport via myosin VI motors. Previous work has elucidated structures of the cytosolic portions of plexins, but the molecular mechanisms how GIPCs couple plexin receptors with myosin motors have remained enigmatic. Here, Shang et al. present a comprehensive structural analysis revealing the molecular mechanisms of GIPC auto-inhibition and activation. In particular, they report the first full length crystal structure of a GIPC showing a domain swapped dimer that is auto-inhibited by intra- and intermolecular interactions. The structure of GIPC bound to a cytosolic plexinD1 fragment reveals the mechanism how auto-inhibitory restraints in GIPC are released. Furthermore, the structure of the GIPC-GH2 domain in complex with a helical fragment of myosin VI uncovers an unexpected mechanism how GIPC clusters myosin VI motors. The structural work is supported by some rather basic biochemical and cell-based experiments. The current manuscript describes a spectacular, high quality structural analysis that could easily be included in several publications. The structure-based functional analyses are not as exhaustive as the structural work, but essentially confirm the main implications of the structures.\n\n1) The reviewers agree that the text can be improved.\n\n2) The authors must show a gel to determine if degradation has taken place in the crystals (subsection \u201cStructure of the PlexinD1/GIPC1 complex\u201d, second paragraph).\n\n3) General electron density must be shown throughout (probably in supplementary information).\n\n4) And quantitation of the micrographs is required.\n\nReviewer #1:\n\n1) Subsection \u201cStructure of the PlexinD1/GIPC1 complex\u201d, second paragraph. It should not be hard to rule out \"degradation\" in the crystal to make this conclusion stronger. Please check this by running a gel.\n\n2) The light microscopy needs quantitation \u2013 number of puncta per cell, number cells counted. If staining is diffuse (not diffused) that can also be represented as overall fluorescence intensity per micron squared or other metric.\n\n3) The Introduction is clearly written but please improve the discussion to explain the order of events that might lead to MyoVI recruitment. (1, ligand binding, dimerization etc.). Explain the events that would uninhibit GIPC1 etc. Propose models for how this might work, to guide next experiments. At the end of the Introduction, please spell out explicitly which partial structures were already determined and how this study builds on those structures. While mentioned in the text, this will help the reader better appreciate how this work builds on previous work of others.\n\n4) There are a large number of acronyms used throughout the text \u2013 where possible, please refer to domains by including the protein from which they derive. Otherwise the text is very challenging for those not studying these particular proteins. Example, the first sentence of the subsection \u201cInteractions in the two interfaces between the GH2 and HCBD domains\u201d should read GIPC1 GH2 with MyoVI HCBD; subsection \u201cStructure and oligomerization of the GH2/myosin VI complex\u201d, first paragraph \u2013 at least refer to \"HCBD\" so the reader knows where to look. If possible, add name of protein above bars in Figures 1\u20133 to help the reader.\n\n5) Saponin is not saponine.\n\nReviewer #2:\n\n1) One claim in the Abstract and the work, that I worry about is that whilst a domain swapped dimer is undoubtedly present, whether the inhibition is in trans or cis is dependent on modelling of a linker segment invisible in the electron density and therefore I would say precarious. The manuscript certainly needs to point this out and show this and I think present the other obvious possibility i.e. be fairer to an alternative model, which does not detract from the work nor its meaning or 'publishability 'in eLife.\n\n2) Subsection \u201cStructure of GIPC1 in the dimeric and autoinhibited state\u201d, third paragraph \u2013 inhibition in trans. I think one suggestion of a distance as determining whether inhibition is cis or trans is not acceptable. The linker could go 50\u00c5 or so if fully extended so both the 20\u00c5 and 40\u00c5 possibilities work. I don't think it matters for the impact of the paper or the biology which is true in vivo, or indeed if it is the same as the situation in the crystal but I feel it should be pointed out as a possibility. It would be good to show some support for the model. The phrase \"autoinhibited conformation that hinders binding to both PBM-containing cargo proteins and myo6\" should be supported with experimental data \u2013 pull downs to show weaker binding would be obvious and would improve this section greatly \u2013 or soften the text.\n\n3) Subsection \u201cStructure of the PlexinD1/GIPC1 complex\u201d, third paragraph. Again, the phrase \"supporting the notion that\u2026\" is not really acceptable. Showing the competition should be relatively trivial in a pull-down experiment and this could and should be done I think.\n\n4) Subsection \u201cStructure of the PlexinD1/GIPC1 complex\u201d, last paragraph. Figure 2C panels are very small and cluttered and difficult to understand. Please make bigger and/or simpler.\n\n5) Subsection \u201cStructure and oligomerization of the GH2/myosin VI complex\u201d, second paragraph. Why do the authors believe that myo6 and GIPC polymerisation is needed to cluster receptors in CCPs in initial stages of CME? Which receptors? Clathrin and its associated adapters, mainly AP2, do this efficiently in vivo and in vitro so why the need to invoke myo6/GIPC in it and in any case this would only work for a very small subset of receptors. I also fail to see how this tallies with quantitative mass spec data such as Borner and Robinson showing that there is hardly any of either GIPC and myo6 in CCPs/CCVs. The long-distance runs of endocytic vesicles over actin presumably occur after CCV uncoating and the clathrin/adapter coat would block this interaction with large actin filaments. I think that this whole section of the model needs rethinking and rewriting.\n\nReviewer #3:\n\nFigure 4 should be quantified from 2-3 repetitions, some quantification of the co-localization in Figure 6 would also be desirable.\n\nFigure 5, dashed lines for GH2, HCBD, linker GH2: If I understand correctly, these lines are based on a single measurement at a low protein concentration (30 \u00b5M for GH2, 20 \u00b5M for HCBD)? It would be important to determine additional sedimentation values for the isolated GH2, HCBD and linker GH2 domains at the same high protein concentrations as used for the complex to confirm that these proteins do not aggregate on their own at high protein concentrations.\n\nFigure 5\u2014figure supplement 1A. I am not an AUC expert, but I found the normalization of the traces to the highest value quite confusing. Why not normalize the traces to the total area under the curves for a better comparison of the fraction size of each peak? When looking at the majority of the traces, discrete s20 species are apparent. Can these be assigned to monomers, dimers, trimers, tetramers and pentamers? Is the weighted average sedimentation coefficient really the best means to analyze AUC runs with such distinct species?\n\nFigure 6: 'In these cells, a fraction of PlexinD1 was incompletely processed and remained in the ER or Golgi apparatus.' What is this assumption based on? Please provide the data.\n\nGenerally: I find it important if the method of structure solution (e.g. molecular replacement with what?), the diffraction limit of the crystals and the Rwork/Rfree are shortly mentioned for every structure referred to in the manuscript to immediately provide a measure of the quality of the structure, without having to refer to the data collection table.\n\nFigure 1: The GIPC structure has several completely new features that should be more thoroughly described and analysed. Please enlarge the figures as much as possible that details can be better recognized. Please provide a topology plot (with all secondary structure elements labelled) of the dimeric GIPC structure to better understand the domain architecture, organization and the domain swap of GIPC. In the supplement, please provide structural comparisons of the GH1 and GH2 domains to related domains in other proteins (e.g. ubiquitin, etc.) to better describe their structural relationships. Also, a one sentence description of the PDZ domain architecture should be included in the text. In the close-ups, please label the indicated residues and indicate more secondary structure element, N and C-termini and use colors that have contrast (for example, a light green secondary structure on a yellow surface is not suited). In printouts, it is generally difficult to recognize much below semi-transparent surfaces, especially in small figures as those in the manuscript. Why not use a proper surface representation with some more contrast and provide additional figures to specifically show residues involved in intra- and intermolecular interactions (ideally with a minimum of additional secondary structure elements in the background \u2013 better remove it instead of fading it out). Include properly labelled surface conservation plots of the domains to better visualize which contact areas are conserved and which are not.\n\nDiscuss the domain swap: Would a monomeric GIPC be stable or would the removal of one monomer lead to a collapse of the GH1 domain? Is there a structural possibility to envisage a monomeric GIPC, e.g. one without domain swap, for example, when the polypeptide chain is newly synthesized?\n\nFigure 2. Although the structure of the plexin cytoplasmic domain has been described before, it still would be helpful for the casual reader to properly describe the domain architectures of the crystallized constructs here. For example, mention that the GAP domain is constituted from C1 and C2 and has a fold related to RasGAPs. Describe in more detail which structures of plexins have been determined before and how do they compare to the current structure. Add 'mouse PlexinD1' in Figure 2A, indicate the boundaries of the crystallized construct below, indicate in Figure 2B which structure is the apo and which the GIPC-bound form (the figure should be self-explanatory without reading the legend). Use separate colors for the C1, RBD, C2 domains, indicate the binding sites for small GTPases (are they accessible in these structures for small G protein binding?), indicate N- and C-termini of the construct. Label the tail segments. In the close-ups of Figure 2C, it is hard to recognize anything, the interacting residues in the GH1 and PDZ domain are almost invisible: Remove any non-essential detail (for example, the electron densities in the left figures), better concentrate on visualizing the contacts instead. Indicate relevant additional secondary structure elements, show surface conservation plots in the supplement to visualize whether interacting residues are conserved in plexins and GIPCs. Properly label Figure 2F to indicate which constructs have been superimposed.\n\nFrom an aesthetical point of view: The secondary structure representations in the Figure 2C close-up look ugly: The two helices of the PlxD1 on the left should be separated by a short loop, and the two strands of the PDZ domain look twisted and weird. Manually re-assign secondary structure elements in pymol and chose another, higher quality strand representation in pymol.\n\nFigure 3: I would recommend to first describe the two assembly interfaces in detail in the text and then refer to the higher order assembly, it is rather confusing and counter-intuitive as it is now. Again, the involved amino acids are difficult to recognize in the semi-transparent surface representation in Figure 3B \u2013 either remove the surface or provide two separate figures.\n\nPlease provide superpositions of all five GH2-HCBD complex in the ASU in the supplement (including the complex that links the two ASUs). Are they really completely identical? Any structure-based hypothesis why oligomerization in AUC stops at the tetramer/pentamer level? For example, would a related closed tetrameric/pentameric assembly be possible (with some minor reorientation of the assembly sites)?\n\nIt is distracting that the mutagenesis data appear at the end of the results, whereas the residues participating in the assembly are described much earlier. The authors may consider including the mutagenesis/AUC data immediately after describing the relevant structural data. For example, some AUC data of Figure 5 would neatly fit below Figure 3. Figure 4, Figure 6 and some AUC data from Figure 5 may be merged in one coherent figure describing the assembly of the Plexin-GIPC-myosin complex.\n\nFigure 5 bottom: Please provide the exact amino acid exchanges of all mutants (numbers) in the figure, not in the legend.\n\nFigure 3\u2014figure supplement 1: Very nice figure, but difficult to recognize on a black background. Why not chose different colors for neighboring ASUs (at least for the colored filament) to better visualize how the continuous filament is formed by adjacent ASUs.\n\nFigure 7: Please label the individual domains of GIPC in the figure (ideally with the corresponding domain colors). Discuss: How do the GIPC-PlxD1 hetero-tetramers relate to the GIPC-myosin oligomer? Do the authors envisage a further 3D cross-linking by the combination of tetramers and oligomers or could the tetramers assemble along the oligomeric GIPC-myosin filament?\n\nTable 1: Please indicate in addition the contents of the ASU, e.g. 1 dimeric GIPC complex, 2 GIPC/plexin dimers, etc.\n\nTable 2: Please provide an additional main figure showing the site of disease-related mutations in the auto-inhibited or liganded GIPC structure and discuss the implications in more detail. This information is most relevant for many medical researchers.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structure analyses reveal a regulated oligomerization mechanism of the PlexinD1/GIPC/myosin VI complex\" for further consideration at eLife. Your revised article has been favorably evaluated by Philip Cole as the Senior Editor, and Suzanne Prefer as the Reviewing Editor, and is essentially ready to be accepted by eLife.\n\nRegarding the text in response to Comment 5 of reviewer #2: for greater precision, we request the following edit to the text, \"Previous studies have suggested that GIPC1 and myosin VI contribute to clustering of cell surface receptors into clathrin-coated pits at the initial stage of endocytosis IN CERTAIN CELL TYPES, particularly those with microvilli (Hasson, 2003). In such cells, high-order oligomerization of GIPC1 and myosin VI may make this process more efficient.\"\n",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3dcb196-d76a-4c60-873e-20ba730b24c3",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C1",
+      "claim": "GIPC1 forms a domain-swapped dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent feature of the GIPC1 structure is that two molecules in the asymmetric unit form a domain-swapped dimer (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by X-ray crystal structure determination at 1.9 \u00c5 resolution showing two molecules in the asymmetric unit forming a domain-swapped dimer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "6c6102b9-a801-41c5-afa2-99ec0fd1e88a",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C2",
+      "claim": "The domain swap in GIPC1 results from an exchange of the last \u03b2-strand between the two GH1 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The domain swap is the result of an exchange of the last \u03b2-strand between the two GH1 domains (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data from the crystal structure showing the exchange of the last \u03b2-strand.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "801931f6-e37b-4105-9c3c-a764e3d221ee",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C3",
+      "claim": "The GH1 domain adopts an ubiquitin-like fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The GH1 domain adopts an ubiquitin-like fold composed of four \u03b2-strands and one \u03b1-helix, although it lacks obvious sequence similarity to ubiquitin (Figure 1C and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural analysis showing the fold composition and comparison with ubiquitin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "3385e003-82c1-4130-8d01-be5208554ceb",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C4",
+      "claim": "The GH2 domain forms a four-helix globular fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The GH2 domain forms a four-helix globular fold (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "766f1258-39d7-4a9f-b41f-1d047c2f770b",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C5",
+      "claim": "The PDZ domain in GIPCs is flanked by a N-terminal GIPC-homology 1 (GH1) domain and a C-terminal GH2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The PDZ domain in GIPCs is flanked by a N-terminal GIPC-homology 1 (GH1) domain and a C-terminal GH2 domain (Katoh, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature and confirmed by structural data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "8acc9789-59eb-4b1e-a947-716187efd15b",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C6",
+      "claim": "The structure of the PDZ domain of GIPC1 is similar to that of the isolated PDZ domain of GIPC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the PDZ domain of GIPC1 is similar to that of the isolated PDZ domain of GIPC2 (PDB ID: 3GGE), featuring a typical PDZ fold with five \u03b2-strands and two \u03b1-helices (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with previously determined structure (PDB ID: 3GGE).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "163f00c7-8d3d-4bf1-a4c2-4df2132f5072",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C7",
+      "claim": "The loop between helices \u03b11 and \u03b12 in the GH2 domain partially occupies the PBM-binding groove in the PDZ domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the loop between helices \u03b11 and \u03b12 in the GH2 domain partially occupies the PBM-binding groove in the PDZ domain (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing the spatial relationship between GH2 and PDZ domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "c588652e-5d6e-4b57-bcd7-9090f6dbaa65",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C8",
+      "claim": "The PDZ domain blocks one face on the GH2 domain that binds myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the PDZ domain blocks one face on the GH2 domain that binds myosin VI (as defined by the structures of the GH2/myosin VI complexes below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of apo-GIPC1 structure with GH2/myosin VI complex structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "df936ca0-b08f-4612-88eb-ece33f8787d2",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C9",
+      "claim": "The apo-GIPC1 structure represents an autoinhibited conformation that hinders binding to both PBM-containing cargo proteins and myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "The apo-GIPC1 structure therefore represents an autoinhibited conformation that hinders binding to both PBM-containing cargo proteins and myosin VI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing mutual blocking of binding sites and functional assays showing enhanced binding upon cargo binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "f3a7a5b0-2603-4a52-8f49-bd1caf6f9923",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C10",
+      "claim": "The entire PDZ-GH2 linker and GH2 domain of GIPC1 in the PlexinD1cyto/GIPC1 complex are invisible in the electron-density map.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire PDZ-GH2 linker and GH2 domain of GIPC1 in the PlexinD1cyto/GIPC1 complex are invisible in the electron-density map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystallographic data showing no electron density for these regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "f5c4550b-f36b-48de-ac2b-de57ff41cebd",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C11",
+      "claim": "The GIPC1 protein is intact in crystals of the PlexinD1/GIPC1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A gel analysis shows that the GIPC1 protein is intact in crystals (Figure 3\u2014figure supplement 2), suggesting that the linker-GH2 domains are present but completely disordered in the PlexinD1/GIPC1 complex structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SDS-PAGE analysis of dissolved crystals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "47b97f67-7a21-411e-876f-0dc441b70dcb",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C12",
+      "claim": "Binding of PlexinD1 to GIPC1 is expected to dislodge the GH2 domain from its autoinhibitory interaction with the PDZ domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of PlexinD1 to GIPC1 is expected to dislodge the GH2 domain from its autoinhibitory interaction with the PDZ domain, rendering the GH2 domain and the PDZ-GH2 linker conformationally flexible in relation to the GH1-PDZ module (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural comparison and the observation that the GH2 domain is disordered in the PlexinD1/GIPC1 complex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "36296e10-084f-476e-a939-2561fad1a572",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C13",
+      "claim": "PlexinD1 binding releases the autoinhibition in GIPC1, leading to enhanced interaction with myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the GH2 domain can more readily interact with myosin VI, which explains the enhanced recruitment of myosin VI by GIPC1 when GIPC1 is bound to cargo proteins as reported previously (Naccache et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data and previous functional studies showing enhanced myosin VI recruitment.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0a326a47-aafd-4dcc-a997-df9ab660b729",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C14",
+      "claim": "The GH1 and PDZ domains of GIPC1 in the PlexinD1/GIPC1 complex form the same domain-swapped dimer as apo-GIPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The GH1 and PDZ domains of GIPC1 in the PlexinD1/GIPC1 complex are well structured and form the same domain-swapped dimer as apo-GIPC1 (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural comparison of the two crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "7dd84d9e-6598-400b-8b70-17986efa1927",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C15",
+      "claim": "The curvature of the canoe-shaped dimer is different in the PlexinD1/GIPC1 complex compared to apo-GIPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The curvature of the canoe-shaped dimer is, however, different in the two structures, suggesting that the dimer interface between the two GH1 domains has a certain degree of plasticity (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural comparison showing conformational differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "68f67194-d618-4626-9aca-181a5d2557bc",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C16",
+      "claim": "The two PlexinD1cyto molecules are placed at the opposite sides of the GIPC1 dimer and do not contact each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The two PlexinD1cyto molecules are placed at the opposite sides of the GIPC1 dimer and do not contact each other (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data from the PlexinD1/GIPC1 complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "bfa8b7b6-5339-42dc-a09f-4925c272cf00",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C17",
+      "claim": "In the apo-PlexinD1cyto structure, the C-terminal tail region constitutes the C-terminal part of the last helix in the GAP domain, except for the last two residues which are disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "In the apo-PlexinD1cyto structure, the C-terminal tail region (residues 1916\u20131925) constitutes the C-terminal part of the last helix in the GAP domain, except for the last two residues (Glu1924 and Ala1925) which are disordered (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data from the apo-PlexinD1cyto crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "972aacc8-400b-4f0a-8f47-8ddadf1933ed",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C18",
+      "claim": "In the PlexinD1cyto/GIPC1 complex, the tail segment adopts an ordered, extended conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the tail segment in the PlexinD1cyto/GIPC1 complex adopts an ordered, extended conformation (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data from the PlexinD1/GIPC1 complex crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "2916f783-950a-4490-99b7-47bb8bfd1e5c",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C19",
+      "claim": "The PBM interacts with the PDZ domain in GIPC1 in the typical PBM/PDZ-binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the PBM interacts with the PDZ domain in GIPC1 in the typical PBM/PDZ-binding mode, where the PBM forms a short \u03b2-strand to pack in an anti-parallel fashion with strand \u03b22 in the PDZ domain (Figure 4A) (Ye and Zhang, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data and comparison with known PBM/PDZ interactions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "e81a9b2c-3fd5-4573-89a1-5a4a34f2d88b",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C20",
+      "claim": "The sidechain of the very C-terminal residue (Ala1925) in the PBM is buried in the hydrophobic pocket between helix \u03b12 and strand \u03b22 of the PDZ domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The sidechain of the very C-terminal residue (Ala1925) in the PBM is buried in the hydrophobic pocket between helix \u03b12 and strand \u03b22 of the PDZ domain, while its carbonyl group interacts with the backbone atoms of Leu143 and Gly144 in the PDZ domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing specific interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "2b505647-21a5-44dd-b2a1-1b8369e7f9f6",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C21",
+      "claim": "GIPC1 makes extensive contacts with other residues in the C-terminal tail as well as the two preceding helices of PlexinD1, resulting in a large interface with the total buried surface area of 2072 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these canonical PBM/PDZ interactions, GIPC1 makes extensive contacts with other residues in the C-terminal tail as well as the two preceding helices of PlexinD1, resulting in a large interface with the total buried surface area of 2072 \u00c52 (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural analysis and surface area calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "12ef58e5-cdfa-414c-9940-288e7054a74c",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C22",
+      "claim": "Ile1918 and Y1919 in the tail of PlexinD1 plug into a hydrophobic pocket formed at the junction between the GH1 and PDZ domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Ile1918 and Y1919 in the tail of PlexinD1 plug into a hydrophobic pocket formed at the junction between the GH1 and PDZ domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing specific interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "8afa2cdf-fa5b-4dc3-8a1f-9d63149dbe91",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C23",
+      "claim": "Most residues involved in the PlexinD1/GIPC1 interactions are highly conserved in PlexinD1 from different species but divergent in other plexin family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Most residues involved in these interactions are highly conserved in PlexinD1 from different species but divergent in other plexin family members (Figure 4B), supporting the functional relevance of these interactions (Burk et al., 2017; Gay et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment analysis and citations to functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "587c94b4-e2c8-4271-90a0-e2a0a9c86076",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C24",
+      "claim": "The additional interactions beyond the canonical PBM/PDZ interface likely enhance the affinity and specificity between PlexinD1 and GIPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "These additional interactions likely enhance the affinity and specificity between PlexinD1 and GIPC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing extensive interactions and comparison with other PDZ/PBM interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "f14206fe-9689-47ce-af15-260227062177",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C25",
+      "claim": "The dual binding mode between PlexinD1 and GIPC1 is analogous to the interaction between class B plexins and PDZ-RhoGEF.",
+      "claim_type": "EXPLICIT",
+      "source": "This dual binding mode is analogous to the interaction between class B plexins and PDZ-RhoGEF where the secondary interface significantly increases the binding affinity (Pascoe et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with previously reported structure and functional data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0ed67cef-4444-4d5a-b55b-1d8f973b7258",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C26",
+      "claim": "The GH2 domain in apo-GIPC1 sterically clashes with PlexinD1 when superimposed with the PlexinD1/GIPC1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A superimposition of the PlexinD1cyto/GIPC1 complex with apo-GIPC1 shows that the GH2 domain sterically clashes with PlexinD1 (Figure 4C), supporting the notion that the GH2 domain in apo-GIPC1 is autoinhibitory and must dissociate before PlexinD1 can bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural superimposition showing steric clashes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "9de0bc72-d1c3-438e-b1e3-98a851c3e114",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C27",
+      "claim": "The HCBD of myosin VI adopts the same two-helix conformation as seen in the recent NMR structure (PDB ID: 2N10).",
+      "claim_type": "EXPLICIT",
+      "source": "The HCBD of myosin VI adopts the same two-helix conformation as seen in the recent NMR structure (PDB ID: 2N10), with the 'RRL' motif located at the center of the second helix (Figure 5B) (He et al., 2016; Wollscheid et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with previously determined NMR structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "18fb5596-0634-4c9a-80e3-e1b73f321455",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C28",
+      "claim": "There are five copies of both myosin VI-HCBD and GIPC1-GH2 molecules in each asymmetric unit, arranged in an alternating pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "There are five copies of both myosin VI-HCBD and GIPC1-GH2 molecules in each asymmetric unit, arranged in an alternating pattern (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystallographic data showing the asymmetric unit composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "9a60a06c-35a7-4366-8b76-c064cce57d38",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C29",
+      "claim": "The group of five HCBD and GH2 domains repeats itself in the neighboring unit cell, yielding a continuous array of alternating HCBD and GH2 that extends throughout the crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "The group of five HCBD and GH2 domains repeats itself in the neighboring unit cell, yielding a continuous array of alternating HCBD and GH2 that extends throughout the crystal (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystallographic analysis of crystal packing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "69cf595c-89fc-49a9-ad44-3e1bd9177de3",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C30",
+      "claim": "The neighboring units in the GH2/HCBD array are related roughly by a five-fold right-handed rotational symmetry and a ~22 \u00c5 translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering one GH2/HCBD pair as a unit, the neighboring units in the array are related roughly by a five-fold right-handed rotational symmetry and a ~22 \u00c5 translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystallographic analysis of the repeating unit arrangement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "5d0b11e9-a6e9-4a5d-b729-6928340d3488",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C31",
+      "claim": "The GIPC2-GH2/myosin VI structure forms the same alternating array as the GIPC1-GH2/myosin VI structure, despite being crystallized in a different condition and space group.",
+      "claim_type": "EXPLICIT",
+      "source": "The GIPC2-GH2/myosin VI structure forms the same alternating array, despite being crystallized in a different condition and space group (Figure 5C and Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystallographic data from two independent structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "d9406098-99b3-4cbf-874b-41957e4cf920",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C32",
+      "claim": "The recurrence of the repeating array in two different crystal forms argues strongly that this arrangement captures the oligomeric interaction mode between GIPCs and myosin VI that is relevant to function.",
+      "claim_type": "EXPLICIT",
+      "source": "The recurrence of this repeating array argues strongly that this arrangement captures the oligomeric interaction mode between GIPCs and myosin VI that is relevant to function, rather than being a crystal packing artifact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observation of the same arrangement in two independent crystal structures and functional considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "3e23e4a8-f858-4d6c-872d-17c78e9cdc36",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C33",
+      "claim": "The oligomer may collect multiple myosin VI molecules to enhance the processive transport of endocytic vesicles on actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "The oligomer may collect multiple myosin VI molecules to enhance the processive transport of endocytic vesicles on actin filaments, as suggested by the observation that multiple myosin VI dimers attached to the same cargo can coordinate their movements to drive long-distance runs over interlaced actin networks (Sivaramakrishnan and Spudich, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data and citation to previous functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "ad0b0335-16f7-4779-895a-538492ed1683",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C34",
+      "claim": "High-order oligomerization of GIPC1 and myosin VI may make the clustering of cell surface receptors into clathrin-coated pits more efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "In such cells, high-order oligomerization of GIPC1 and myosin VI may make this process more efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing oligomerization and functional considerations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "fe509c27-a38a-4771-b379-2205da068080",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C35",
+      "claim": "The bivalent interactions between the GIPC-GH2 and myosin VI-HCBD are mediated by two distinct interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The bivalent interactions between the GIPC-GH2 and myosin VI-HCBD are mediated by two distinct interfaces (Figure 5B and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing two separate binding interfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "ce5e3c07-96ac-4ab9-9506-f96e55b5689d",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C36",
+      "claim": "Interface I involves the two loops in the GIPC-GH2 domain, one between helices \u03b11 and \u03b12 and the other between helices \u03b13 and \u03b14.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface I involves the two loops in the GIPC-GH2 domain, one between helices \u03b11 and \u03b12 and the other between helices \u03b13 and \u03b14 (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural data showing the specific regions involved in interface I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "cdbb3666-60f2-40c3-ab6c-3f61175056dd",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C37",
+      "claim": "Interface I buries ~1300 \u00c52 solvent accessible surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "Interfaces I and II bury ~1300 and ~1100 \u00c52 solvent accessible surface area, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by surface area calculations from structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "424fc354-7ae1-4904-bbb8-a6f44bb362b3",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C38",
+      "claim": "Interface II buries ~1100 \u00c52 solvent accessible surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "Interfaces I and II bury ~1300 and ~1100 \u00c52 solvent accessible surface area, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by surface area calculations from structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "46818f90-f97c-4ede-9cf9-54592760fa0e",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C39",
+      "claim": "The two interfaces in the GIPC2-GH2/HCBD complex structure are highly similar to those in the GIPC1-GH2/HCBD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The two interfaces in the GIPC2-GH2/HCBD complex structure are highly similar to those in the GIPC1-GH2/HCBD complex (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural comparison of the two complex structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "272b9297-2ade-4c94-a4a8-feb447546a5e",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C40",
+      "claim": "The inter-domain interaction in apo-GIPC1 prevents the loop between helices \u03b11 and \u03b12 in the GH2 domain from forming interface I with HCBD in myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the inter-domain interaction prevents this loop from forming interface I with HCBD in myosin VI (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural comparison showing steric hindrance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "52839490-4dd3-475e-a1ed-3753fc9b2665",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C41",
+      "claim": "Interface II in the GH2 domain in the autoinhibited structure of GIPC1 is open for interacting with myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface II in the GH2 domain in the autoinhibited structure of GIPC1 is open for interacting with myosin VI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural analysis showing that interface II is not blocked in the autoinhibited state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "8792e61f-7228-47f4-a28a-1418890a255e",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C42",
+      "claim": "GST-HCBD was able to pull-down GIPC1 but not PlexinD1cyto.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GST-HCBD was able to pull-down GIPC1 but not PlexinD1cyto (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "1db63098-f90d-4ffe-8148-52badffda7d4",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C43",
+      "claim": "Mixing PlexinD1cyto, GIPC1, and GST-HCBD allowed GST-HCBD to pull-down both GIPC1 and PlexinD1cyto.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixing the three proteins allowed GST-HCBD to pull-down both GIPC1 and PlexinD1cyto.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "f11b669d-456b-4ce4-a17f-c54c3ce21bfe",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C44",
+      "claim": "The presence of PlexinD1cyto increased the amount of GIPC1 pulled-down by GST-HCBD substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the presence of Plexincyto increased the amount of GIPC1 pulled-down substantially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data showing increased GIPC1 binding in the presence of PlexinD1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "60e1e1ad-f33c-4a1c-b353-86ead624ace1",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C45",
+      "claim": "The enhancement of GIPC2 binding to GST-HCBD caused by PlexinD1 is more pronounced than for GIPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were similar, except that the enhancement of GIPC2 binding to GST-HCBD caused by PlexinD1 is more pronounced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data comparing GIPC1 and GIPC2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "482fde3e-ff21-45a0-854b-cf23f3c853a5",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C46",
+      "claim": "Truncation of the three C-terminal residues in the PBM of PlexinD1 (\u0394SEA) virtually abolished the interaction with GIPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Truncation of the three C-terminal residues in the PBM of PlexinD1 (\u0394SEA) virtually abolished the interaction with GIPC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data with the PlexinD1 \u0394SEA mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "a4d868d3-d7ce-4c5c-8bbb-8020780e22ca",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C47",
+      "claim": "Mutating Ile1918 and Tyr1919 in PlexinD1 (I1918A/Y1919A) reduced the binding to GIPC1 substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating Ile1918 and Tyr1919 in PlexinD1 (I1918A/Y1919A), which occupy the hydrophobic pocket between GH1 and PDZ in GIPC1 (Figure 4A), reduced the binding to GIPC1 substantially (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data with the PlexinD1 I1918A/Y1919A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "f12c107b-d08a-48f0-b1d7-6d6363dc77ec",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C48",
+      "claim": "A mutation of Gly114 in GIPC1 (G114Y) reduced the PlexinD1/GIPC1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a mutation of Gly114 in GIPC1 (G114Y), located at the edge of the hydrophobic packet that accommodates the Ile1918/Tyr1919 motif in PlexinD1 (Figure 4A), also reduced the PlexinD1/GIPC1 interaction (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assay data with the GIPC1 G114Y mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "d4a1df87-fa58-434a-a5e0-d1a361d496c2",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C49",
+      "claim": "The GIPC1-GH2 domain at 30 \u03bcM displayed a standardized sedimentation coefficient (s20,w-value) of ~1.3 S, corresponding to a monomeric species of ~8 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "The GIPC1-GH2 domain at 30 \u03bcM displayed a standardized sedimentation coefficient (s20,w-value) of ~1.3 S, corresponding to a monomeric species of ~8 kDa (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "8c717dd0-39ad-4e79-a96e-de93fcdfe75e",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C50",
+      "claim": "The s20,w-value of the myosin VI-HCBD (~5 kDa) at 20 \u03bcM was 0.9 S, consistent with a monomeric species.",
+      "claim_type": "EXPLICIT",
+      "source": "The s20,w-value of the myosin VI-HCBD (~5 kDa) at 20 \u03bcM was 0.9 S, also consistent with a monomeric species (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "c10c7dcf-4fe8-4abe-a9fe-1aa70cb3128d",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C51",
+      "claim": "When GIPC1-GH2 and myosin VI-HCBD were mixed at a 1:1 molar ratio, the proteins appeared to form multiple complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "When mixed at a 1:1 molar ratio, the proteins appeared to form multiple complexes (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data showing multiple species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "c67975cb-c6bc-4ea8-8a4c-077606d3aa14",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C52",
+      "claim": "As the overall concentration of the GH2/HCBD complex was increased, the s20,ww also rose, consistent with the formation of higher order species.",
+      "claim_type": "EXPLICIT",
+      "source": "As the overall concentration was increased, the s20,ww also rose, consistent with the formation of higher order species (Figure 7A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data at different concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0f93c5fa-256b-4569-93cd-983d6cc84541",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C53",
+      "claim": "No species with s20,w-values greater than ~4.8 S were observed for the GH2/HCBD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed no species with s20,w-values greater than ~4.8 S (Figure 7\u2014figure supplement 1A), and the increase in s20,ww ceased at concentrations higher than 150 \u03bcM (Figure 7A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "1b8a47f4-b9f1-4fb9-85c3-0c43020523c8",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C54",
+      "claim": "4.8 S could represent a 5:5 complex between the GH2 and HCBD based on hydrodynamic estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on hydrodynamic estimates, 4.8 S could represent a 5:5 complex between the GH2 and HCBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by hydrodynamic calculations based on AUC data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "a70acf07-862b-4cf4-b8f2-412e539788c3",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C55",
+      "claim": "The formation of very long, linear polymers of the GH2/HCBD complex could be inhibited by the pressures induced by ultracentrifugation.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this phenomenon is that the formation of very long, linear polymers could be inhibited by the pressures induced by ultracentrifugation (Harrington and Kegeles, 1973; Marcum and Borisy, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous studies on polymer behavior under centrifugation and inference from the observed data.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "81dbdd3d-e5f1-400f-b319-73b263e1b142",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C59",
+      "claim": "Mixing the linker-GH2 and HCBD led to heavy precipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, mixing the linker-GH2 and HCBD led to heavy precipitation (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by visual observation of precipitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "59d8d5c3-bde9-4784-9f41-af7a5aea7588",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C60",
+      "claim": "The precipitation of the linker-GH2/HCBD complex could be reversed by increasing the salt concentration from 150 mM to 500 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "The precipitation is unlikely due to denaturation of the proteins, as it could be reversed by increasing the salt concentration from 150 mM to 500 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observation that precipitation is reversible with salt addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "b22fc13c-daab-4a2e-8aa7-b5d88fdf4f9e",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C61",
+      "claim": "The PDZ-GH2 linker in GIPC1 appears to enhance the oligomerization of the GIPC1/myosin VI complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations, reminiscent of the reversible precipitation of IRE1 due to the high-order oligomerization (Korennykh et al., 2009), suggest that the PDZ-GH2 linker promotes the polymerization of the myosin VI-HCBD/GIPC1-GH2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by precipitation behavior and comparison with IRE1 oligomerization.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "c394539f-2b3a-4d4e-bb57-19b414ccebc4",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C62",
+      "claim": "The linker-GH2 protein sedimented as a monomer at both 38 \u03bcM and 200 \u03bcM, with a s20,w-value of ~1.4 S.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker-GH2 protein sedimented as a monomer at both 38 \u03bcM and 200 \u03bcM, with a s20,w-value value of ~1.4 S (Figure 7\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "09c886e8-482c-4494-a6bb-725313c05a6d",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C63",
+      "claim": "The HCBD at 150 \u03bcM under high salt conditions sedimented predominantly as a monomer (s20,w-value of 0.9 S), and a minor dimer peak (s20,w-value of 1.6 S).",
+      "claim_type": "EXPLICIT",
+      "source": "The HCBD at 150 \u03bcM under the same condition sedimented predominantly as a monomer (s20,w-value of 0.9 S), and a minor dimer peak (s20,w-value of 1.6 S) (Figure 7\u2014figure supplements 1D and 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "b19b0778-17dd-4c66-86e6-b6e387c9d931",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C64",
+      "claim": "The average sizes of the linker-GH2/HCBD complex increased as a function of concentration, with the largest observed s20,w-value of ~5.5 S.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the GH2/HCBD complex, the average sizes of the linker-GH2/HCBD complex increased as a function of concentration, with the largest observed s20,w-value of ~5.5 S (Figure 7B and Figure 7\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data at different concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "a036df9a-7857-4635-a345-b2e79a02d20d",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C65",
+      "claim": "GIPC1-GH2 and myosin VI-HCBD form high-order oligomers in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together demonstrate that GIPC1-GH2 and myosin VI-HCBD form high-order oligomers in solution, and both interfaces I and II as seen in our crystal structures are required for the oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analytical ultracentrifugation data and mutational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "dd23b2bd-b2fa-4ba6-868a-76e5c9fbc9c6",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C66",
+      "claim": "Both interfaces I and II as seen in the crystal structures are required for the oligomerization of GIPC1-GH2 and myosin VI-HCBD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together demonstrate that GIPC1-GH2 and myosin VI-HCBD form high-order oligomers in solution, and both interfaces I and II as seen in our crystal structures are required for the oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutational analysis showing that disruption of either interface reduces oligomerization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "16941c6e-5e0a-47dd-8544-40d061564f43",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C67",
+      "claim": "Sema3E/PlexinD1, GIPC1 and myosin VI co-localized very well and formed large puncta in cells expressing wild-type PlexinD1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sema3E/PlexinD1, GIPC1 and myosin VI co-localized very well and formed large puncta in cells expressing wild-type PlexinD1 (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence microscopy imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "084f382a-78ee-4088-83b9-efc09c543be0",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C68",
+      "claim": "In cells expressing PlexinD1(\u0394SEA), GIPC1 and myosin VI formed puncta together, but Sema3E did not localize to these puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing PlexinD1(\u0394SEA), GIPC1 and myosin VI also formed puncta together, but Sema3E did not localize to these puncta (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence microscopy imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "b0a52da4-f322-4c1a-b2fd-a5c2c1ab5c40",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C69",
+      "claim": "There are virtually no large puncta with Sema3E/PlexinD1, GIPC1 and myosin VI co-localized in cells expressing PlexinD1(\u0394SEA).",
+      "claim_type": "EXPLICIT",
+      "source": "There is virtually no large puncta with Sema3E/PlexinD1, GIPC1 and myosin VI co-localized in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence microscopy imaging data and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "df0418d7-9134-4c5b-a76f-6a776a37bc42",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C70",
+      "claim": "Replacing wild-type GIPC1 with the G323Q mutant abolished formation of large puncta of co-localized Sema3E/PlexinD1, GIPC1 and myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacing wild-type GIPC1 with the G323Q mutant, which disrupts interface II in the GH2 domain for myosin VI, also abolished formation of large puncta of co-localized Sema3E/PlexinD1, GIPC1 and myosin VI (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence microscopy imaging data and quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "c1aa5126-332e-4bb7-a2be-07da53719b2d",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C71",
+      "claim": "Sema3E, PlexinD1, GIPC1 and myosin VI can form high-order oligomers in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that Sema3E, PlexinD1, GIPC1 and myosin VI can form high-order oligomers in cells, which is dependent on both the PlexinD1/GIPC1 interaction and the linear oligomerization of the GIPC1/myosin VI complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence microscopy data showing co-localization and dependence on specific interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "74e526e0-0b2b-46f7-b756-e3c4aab88379",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C72",
+      "claim": "The formation of high-order oligomers of Sema3E, PlexinD1, GIPC1 and myosin VI in cells is dependent on both the PlexinD1/GIPC1 interaction and the linear oligomerization of the GIPC1/myosin VI complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that Sema3E, PlexinD1, GIPC1 and myosin VI can form high-order oligomers in cells, which is dependent on both the PlexinD1/GIPC1 interaction and the linear oligomerization of the GIPC1/myosin VI complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fluorescence microscopy data showing that disruption of either interaction abolishes large puncta formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0307bfcf-3029-4f41-9ab4-7cb751195f8f",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C73",
+      "claim": "GIPC1 and its two paralogs GIPC2 and GIPC3 are universal adaptor proteins that bind and regulate vesicular trafficking of many transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "GIPC1 (GAIP interacting protein, C-terminus 1) and its two paralogs GIPC2 and GIPC3 are universal adaptor proteins that bind and regulate vesicular trafficking of many transmembrane proteins (Katoh, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "ad230b7d-a5f5-40a7-b5bf-5b9a1f35c12d",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C74",
+      "claim": "GIPCs contribute to the endocytosis process by tethering the cargo proteins on endocytic vesicles to the motor protein myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "GIPCs contribute to the endocytosis process by tethering the cargo proteins on endocytic vesicles to the motor protein myosin VI (Bunn et al., 1999; Naccache et al., 2006; Reed et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "d716cee6-0ba4-411b-9a15-aab6a513d85a",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C75",
+      "claim": "Myosin VI is the only known actin-based motor that walks toward the minus/pointed end of actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin VI is the only known actin-based motor that walks toward the minus/pointed end of actin filaments and therefore is specialized at transporting endocytic vesicles inward from the cell cortex (Spudich and Sivaramakrishnan, 2010; Sweeney and Houdusse, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "d44e72ef-942e-418f-913d-7b09f11e1741",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C76",
+      "claim": "Myosin VI and GIPCs contribute to earlier steps of endocytosis, including facilitating the formation of clathrin-coated pits and clustering ligand-bound cell surface receptors into the pits.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin VI and GIPCs also contribute to earlier steps of endocytosis, including facilitating the formation of clathrin-coated pits and clustering ligand-bound cell surface receptors into the pits (Hasson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "8b4fc8f9-373e-494b-833a-6f273f67a821",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C77",
+      "claim": "The GIPC/myosin VI complex acts as an anchor on the cell surface, which is critical for maintaining the structural integrity of stereocilia in the inner ear.",
+      "claim_type": "EXPLICIT",
+      "source": "Another function of the GIPC/myosin VI complex is to act as an anchor on the cell surface. This function is critical for maintaining the structural integrity of stereocilia in the inner ear, and many mutations of GIPC3 or myosin VI have been found to cause familial hearing loss (Katoh, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "d72928f7-3bc1-49d0-8365-6e9bc26387b4",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C78",
+      "claim": "Many mutations of GIPC3 or myosin VI have been found to cause familial hearing loss.",
+      "claim_type": "EXPLICIT",
+      "source": "This function is critical for maintaining the structural integrity of stereocilia in the inner ear, and many mutations of GIPC3 or myosin VI have been found to cause familial hearing loss (Katoh, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0b5f650f-5c1a-4105-a58d-05dcf0cec72c",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C79",
+      "claim": "GIPCs contain a central PDZ domain that mediates the interaction with the C-terminal PDZ-binding motif (PBM) in cargo proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "GIPCs contain a central PDZ (PSD-95, Dlg and ZO-1) domain that mediates the interaction with the C-terminal PDZ-binding motif (PBM) in cargo proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of GIPC structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "c2c4c447-d70c-48d3-ac9a-6fbc2f1c9488",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C80",
+      "claim": "The GH1 and PDZ domains together mediate oligomerization of GIPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The GH1 and PDZ domains together mediate oligomerization of GIPCs (Bunn et al., 1999; Gao et al., 2000; Jeanneteau et al., 2004; Kedlaya et al., 2006; Reed et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "7278038a-f7a3-4f3d-ab49-1a2650097a30",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C81",
+      "claim": "The GH2 domain mediates the interaction with myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "The GH2 domain mediates the interaction with myosin VI (Naccache et al., 2006; Reed et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "7caf2ee6-30e8-46aa-a344-5f1fcf9efff3",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C82",
+      "claim": "Cargo binding to the PDZ domain in GIPC1 promotes the interaction with myosin VI.",
+      "claim_type": "EXPLICIT",
+      "source": "Cargo binding to the PDZ domain in GIPC1 promotes the interaction with myosin VI, suggesting that the two binding events in GIPCs are regulated and communicate with each other through a steric or allosteric mechanism (Naccache et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "64d9193d-59f8-4474-b68d-60e9734ac2d5",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C83",
+      "claim": "The motor activity of myosin VI is normally suppressed by autoinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor activity of myosin VI is normally suppressed by autoinhibition, which can be released by binding of adaptor proteins through a mechanism that is poorly understood (French et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "b9814acd-062c-436a-b238-756f367dd2aa",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C84",
+      "claim": "An 'RRL' motif between the coiled-coil and CBD in myosin VI is critical for binding to GIPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "An 'RRL' (single-letter amino acid code) motif between the coiled-coil and CBD in myosin VI is critical for binding to GIPCs (He et al., 2016; Spudich et al., 2007; Wollscheid et al., 2016), but the mode of the interaction was unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "65707b1a-3904-4ec4-ab3e-ac5a7dbe6533",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C85",
+      "claim": "Processive walking of myosin VI along actin filaments requires its dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Processive walking of myosin VI along actin filaments requires its dimerization, mediated by both the coiled-coil and binding of adaptor proteins (Masters and Buss, 2017; Park et al., 2006; Phichith et al., 2009; Spudich et al., 2007; Yu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "30a285ce-289b-4bc9-a910-65ace4a74f29",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C86",
+      "claim": "Larger oligomers of myosin VI have been implicated in coordinated long-distance runs over dense and interlaced actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger oligomers of myosin VI have been implicated in coordinated long-distance runs over dense and interlaced actin networks (Sivaramakrishnan and Spudich, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "b15b9da5-33dd-44f3-bdaa-a5f231815370",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C87",
+      "claim": "PlexinD1 contains a C-terminal 'SEA' motif that constitutes a PBM and interacts with GIPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane receptor PlexinD1 contains a C-terminal 'SEA' motif that constitutes a PBM and interacts with GIPC1 (Gay et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "38dd9ca8-0dee-4b9d-98bf-4fe58cb58d2f",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C88",
+      "claim": "Semaphorin binding induces the formation of the active dimer of plexin.",
+      "claim_type": "EXPLICIT",
+      "source": "Semaphorin binding induces the formation of the active dimer of plexin (Janssen et al., 2010; Liu et al., 2010; Nogi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "02f2d22a-b952-4397-854c-a149aec82a67",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C89",
+      "claim": "The dimerization of plexin activates the GTPase-activating protein (GAP) domain in the plexin cytoplasmic region.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimerization activates the GTPase-activating protein (GAP) domain in the plexin cytoplasmic region (referred to as plexincyto thereafter), which transduces the signal by switching off the small GTPase Rap (He et al., 2009; Wang et al., 2013; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0d250bc5-6a35-4fb8-bd4e-008b7d898a8a",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C90",
+      "claim": "Semaphorin-stimulated endocytosis of plexin contributes to the repulsive guidance function.",
+      "claim_type": "EXPLICIT",
+      "source": "Semaphorin-stimulated endocytosis of plexin contributes to the repulsive guidance function (Fournier et al., 2000; Tojima et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "da0fc0ab-de71-43bf-a057-7d271aec1c62",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C91",
+      "claim": "GIPC1-mediated endocytic trafficking and sorting of Sema3E-activated PlexinD1 play important regulatory roles in PlexinD1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has shown that GIPC1-mediated endocytic trafficking and sorting of Sema3E-activated PlexinD1 play important regulatory roles in PlexinD1 signaling (Burk et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "42b2a395-3bcb-4a04-80de-578829d04384",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C92",
+      "claim": "The high degree of sequence similarity in the GIPC family suggests that GIPC2 and GIPC3 also form similar domain-swapped dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The high degree of sequence similarity in the GIPC family suggests that GIPC2 and GIPC3 also form similar domain-swapped dimers (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment analysis and structural similarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "05e9845f-fe8b-4238-822a-bc6ae1a4000b",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C93",
+      "claim": "The autoinhibited structure of GIPC1 represents a conserved regulation mechanism of the GIPC family.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that the autoinhibited structure of GIPC1 represents a conserved regulation mechanism of the GIPC family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pull-down assays showing similar behavior for GIPC1, GIPC2, and GIPC3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "5afecef4-8915-42a5-a67c-1df74000e0b5",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "claim_id": "C94",
+      "claim": "The alternating array of GH2 and HCBD underlies the oligomerization of the GIPC/Myosin VI complexes in solution and cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support that this alternating array underlies the oligomerization of the GIPC/Myosin VI complexes in solution and cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystal structures, AUC data, and cell imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1f74b1d9-3995-4cf7-b4a1-b9651c04eec7",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GIPC1 forms a domain-swapped dimer with a GH1 domain adopting an ubiquitin-like fold, a PDZ domain with typical PDZ fold, and a GH2 domain forming a four-helix globular fold. The domain swap results from exchange of the last \u03b2-strand between two GH1 domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by high-resolution (1.9 \u00c5) X-ray crystallography data showing the domain-swapped dimer structure and detailed structural features of each domain. The structural data is internally consistent and compared with known structures (e.g., GIPC2 PDZ domain).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "2dad50f5-72a6-4fda-b0d2-70dd7f2d40cb",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The apo-GIPC1 structure represents an autoinhibited conformation where the GH2 domain partially occupies the PBM-binding groove in the PDZ domain, and the PDZ domain blocks the myosin VI binding face on the GH2 domain. Interface II in GH2 remains accessible for myosin VI interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C40-C41 are supported by structural data showing mutual blocking of binding sites in the apo-GIPC1 structure. The autoinhibition model is further validated by functional pull-down assays (C42-C45) showing enhanced myosin VI binding in the presence of PlexinD1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the PlexinD1/GIPC1 complex structure, the PDZ-GH2 linker and GH2 domain are disordered despite the protein being intact, indicating that PlexinD1 binding releases autoinhibition and renders the GH2 domain flexible. The GH1-PDZ domains maintain the domain-swapped dimer with some conformational plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 are supported by crystallographic data (3.2 \u00c5 resolution) showing disorder of the GH2 domain and SDS-PAGE confirming protein integrity. The release of autoinhibition is consistent with the structural model and functional data showing enhanced myosin VI recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "f5e02723-a755-460f-8b56-325a298283c5",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PlexinD1 binds GIPC1 through both canonical PBM/PDZ interactions and extensive additional contacts involving the C-terminal tail and preceding helices, burying 2072 \u00c5\u00b2 surface area. The I1918/Y1919 motif plugs into a hydrophobic pocket at the GH1-PDZ junction. These interactions are conserved in PlexinD1 across species but divergent in other plexins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C26 are well-supported by detailed structural analysis at 3.2 \u00c5 resolution, sequence conservation analysis, and mutational validation (C46-C48). The dual binding mode is analogous to class B plexin/PDZ-RhoGEF interactions, providing additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "588e1cd4-e803-4d9a-8d68-8cd677cc4ea2",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GIPC-GH2 and myosin VI-HCBD form an alternating array in crystal structures, with five copies of each in the asymmetric unit arranged with approximate five-fold rotational symmetry and ~22 \u00c5 translation. This arrangement is observed in both GIPC1 and GIPC2 complexes despite different crystallization conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 are strongly supported by two independent crystal structures (GIPC1-GH2/HCBD and GIPC2-GH2/HCBD) showing the same alternating array despite different space groups and crystallization conditions. The recurrence argues against crystal packing artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0f6281e4-78b9-4ab3-b756-b3d333b6eeb0",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The GIPC-GH2 and myosin VI-HCBD interact through two distinct interfaces: Interface I involves loops between \u03b11-\u03b12 and \u03b13-\u03b14 in GH2 (burying ~1300 \u00c5\u00b2), and Interface II involves helix \u03b14 and N-terminal \u03b13 in GH2 (burying ~1100 \u00c5\u00b2). Both interfaces are highly similar between GIPC1 and GIPC2 complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are supported by detailed structural analysis showing two distinct binding interfaces with calculated buried surface areas. The similarity between GIPC1 and GIPC2 complexes provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pull-down assays demonstrate that PlexinD1 enhances GIPC1 binding to myosin VI-HCBD. The PBM (\u0394SEA) is essential for GIPC1 binding, and mutations in the I1918/Y1919 motif or G114Y in GIPC1 substantially reduce binding. Similar results are observed for GIPC2 and GIPC3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 are supported by systematic pull-down experiments validating the structural model. The mutational analysis confirms the importance of specific interfaces identified in the crystal structures, and the conservation across GIPC family members supports the generality of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "23634894-3582-409b-8461-5f327fe3e38a",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analytical ultracentrifugation shows that GIPC1-GH2 and myosin VI-HCBD form concentration-dependent higher-order oligomers in solution, with maximum observed s20,w of ~4.8 S (potentially representing a 5:5 complex). Mutations disrupting either interface I or II reduce oligomerization, demonstrating both interfaces are required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54, C65-C66 are supported by systematic AUC experiments at multiple concentrations and comprehensive mutational analysis. The data consistently show oligomerization dependent on both interfaces, validating the structural model. However, the maximum oligomer size is limited, possibly due to ultracentrifugation pressure effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "7dd52d59-b327-4726-9236-3fa27b10ce39",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The formation of very long linear polymers of the GH2/HCBD complex could be inhibited by pressures induced by ultracentrifugation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 is speculative, based on citations to previous studies of polymer behavior under centrifugation. While this is a plausible explanation for the observed maximum s20,w value, it is not directly tested and remains a hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "0622eda7-9aad-4b3b-8a33-f2ef7f43d683",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The linker-GH2/HCBD complex shows enhanced oligomerization compared to GH2/HCBD, evidenced by heavy precipitation at 150 mM NaCl that is reversible at 500 mM NaCl. AUC at high salt shows concentration-dependent oligomerization with maximum s20,w of ~5.5 S, suggesting the PDZ-GH2 linker promotes polymerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are supported by precipitation observations and AUC data at high salt concentrations. The reversible precipitation behavior is reminiscent of IRE1 oligomerization, providing a precedent. However, the precise mechanism by which the linker enhances oligomerization remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "d348b738-5f5d-4a6e-b509-955a0bc7dd93",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Fluorescence microscopy shows that Sema3E/PlexinD1, GIPC1, and myosin VI co-localize and form large puncta in cells expressing wild-type PlexinD1. Disruption of either the PlexinD1/GIPC1 interaction (\u0394SEA) or GIPC1/myosin VI interface II (G323Q) abolishes large puncta formation, demonstrating that high-order oligomerization depends on both interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are supported by systematic fluorescence microscopy with appropriate controls and quantification. The dependence on both PlexinD1/GIPC1 and GIPC1/myosin VI interactions validates the structural and biochemical findings in a cellular context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "5694c415-c36e-440d-a03e-96585faa93d6",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The oligomer may collect multiple myosin VI molecules to enhance processive transport of endocytic vesicles, and high-order oligomerization may make clustering of cell surface receptors into clathrin-coated pits more efficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C34 are speculative functional interpretations based on structural data and citations to previous studies. While plausible and supported by precedent, these specific functional roles are not directly tested in this study and require further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "fe1fc3f9-be51-4e88-8520-095141f8b286",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The high degree of sequence similarity suggests GIPC2 and GIPC3 form similar domain-swapped dimers, and the autoinhibited structure represents a conserved regulation mechanism across the GIPC family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 are supported by sequence alignment analysis and pull-down assays showing similar behavior for GIPC1, GIPC2, and GIPC3. The crystal structure of GIPC2-GH2/myosin VI complex provides additional structural validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "9f6ff5bf-8434-4939-8915-bba791552e36",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The alternating array of GH2 and HCBD underlies the oligomerization of GIPC/myosin VI complexes in solution and cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by convergent evidence from crystal structures (two independent structures showing the same array), AUC data (concentration-dependent oligomerization requiring both interfaces), and cell imaging (large puncta formation dependent on both interactions).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    },
+    {
+      "id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586",
+      "content_id": "47824d9c-b661-47b7-8908-284c4a745c33",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on GIPC family proteins, myosin VI, and PlexinD1, including their domain structures, known functions in endocytosis, roles in disease, and previous structural and functional characterization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C91 represent established knowledge from the literature, supported by appropriate citations. These provide context for the current study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:17:23.693402Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e3dcb196-d76a-4c60-873e-20ba730b24c3",
+      "result_id": "1f74b1d9-3995-4cf7-b4a1-b9651c04eec7"
+    },
+    {
+      "claim_id": "6c6102b9-a801-41c5-afa2-99ec0fd1e88a",
+      "result_id": "1f74b1d9-3995-4cf7-b4a1-b9651c04eec7"
+    },
+    {
+      "claim_id": "801931f6-e37b-4105-9c3c-a764e3d221ee",
+      "result_id": "1f74b1d9-3995-4cf7-b4a1-b9651c04eec7"
+    },
+    {
+      "claim_id": "3385e003-82c1-4130-8d01-be5208554ceb",
+      "result_id": "1f74b1d9-3995-4cf7-b4a1-b9651c04eec7"
+    },
+    {
+      "claim_id": "766f1258-39d7-4a9f-b41f-1d047c2f770b",
+      "result_id": "1f74b1d9-3995-4cf7-b4a1-b9651c04eec7"
+    },
+    {
+      "claim_id": "8acc9789-59eb-4b1e-a947-716187efd15b",
+      "result_id": "1f74b1d9-3995-4cf7-b4a1-b9651c04eec7"
+    },
+    {
+      "claim_id": "163f00c7-8d3d-4bf1-a4c2-4df2132f5072",
+      "result_id": "2dad50f5-72a6-4fda-b0d2-70dd7f2d40cb"
+    },
+    {
+      "claim_id": "c588652e-5d6e-4b57-bcd7-9090f6dbaa65",
+      "result_id": "2dad50f5-72a6-4fda-b0d2-70dd7f2d40cb"
+    },
+    {
+      "claim_id": "df936ca0-b08f-4612-88eb-ece33f8787d2",
+      "result_id": "2dad50f5-72a6-4fda-b0d2-70dd7f2d40cb"
+    },
+    {
+      "claim_id": "272b9297-2ade-4c94-a4a8-feb447546a5e",
+      "result_id": "2dad50f5-72a6-4fda-b0d2-70dd7f2d40cb"
+    },
+    {
+      "claim_id": "52839490-4dd3-475e-a1ed-3753fc9b2665",
+      "result_id": "2dad50f5-72a6-4fda-b0d2-70dd7f2d40cb"
+    },
+    {
+      "claim_id": "f3a7a5b0-2603-4a52-8f49-bd1caf6f9923",
+      "result_id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144"
+    },
+    {
+      "claim_id": "f5c4550b-f36b-48de-ac2b-de57ff41cebd",
+      "result_id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144"
+    },
+    {
+      "claim_id": "47b97f67-7a21-411e-876f-0dc441b70dcb",
+      "result_id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144"
+    },
+    {
+      "claim_id": "36296e10-084f-476e-a939-2561fad1a572",
+      "result_id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144"
+    },
+    {
+      "claim_id": "0a326a47-aafd-4dcc-a997-df9ab660b729",
+      "result_id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144"
+    },
+    {
+      "claim_id": "7dd84d9e-6598-400b-8b70-17986efa1927",
+      "result_id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144"
+    },
+    {
+      "claim_id": "68f67194-d618-4626-9aca-181a5d2557bc",
+      "result_id": "bb75252c-c60e-4e3b-bcdf-c55ede98b144"
+    },
+    {
+      "claim_id": "bfa8b7b6-5339-42dc-a09f-4925c272cf00",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "972aacc8-400b-4f0a-8f47-8ddadf1933ed",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "2916f783-950a-4490-99b7-47bb8bfd1e5c",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "e81a9b2c-3fd5-4573-89a1-5a4a34f2d88b",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "2b505647-21a5-44dd-b2a1-1b8369e7f9f6",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "12ef58e5-cdfa-414c-9940-288e7054a74c",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "8afa2cdf-fa5b-4dc3-8a1f-9d63149dbe91",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "587c94b4-e2c8-4271-90a0-e2a0a9c86076",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "f14206fe-9689-47ce-af15-260227062177",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "0ed67cef-4444-4d5a-b55b-1d8f973b7258",
+      "result_id": "f5e02723-a755-460f-8b56-325a298283c5"
+    },
+    {
+      "claim_id": "9de0bc72-d1c3-438e-b1e3-98a851c3e114",
+      "result_id": "588e1cd4-e803-4d9a-8d68-8cd677cc4ea2"
+    },
+    {
+      "claim_id": "18fb5596-0634-4c9a-80e3-e1b73f321455",
+      "result_id": "588e1cd4-e803-4d9a-8d68-8cd677cc4ea2"
+    },
+    {
+      "claim_id": "9a60a06c-35a7-4366-8b76-c064cce57d38",
+      "result_id": "588e1cd4-e803-4d9a-8d68-8cd677cc4ea2"
+    },
+    {
+      "claim_id": "69cf595c-89fc-49a9-ad44-3e1bd9177de3",
+      "result_id": "588e1cd4-e803-4d9a-8d68-8cd677cc4ea2"
+    },
+    {
+      "claim_id": "5d0b11e9-a6e9-4a5d-b729-6928340d3488",
+      "result_id": "588e1cd4-e803-4d9a-8d68-8cd677cc4ea2"
+    },
+    {
+      "claim_id": "d9406098-99b3-4cbf-874b-41957e4cf920",
+      "result_id": "588e1cd4-e803-4d9a-8d68-8cd677cc4ea2"
+    },
+    {
+      "claim_id": "fe509c27-a38a-4771-b379-2205da068080",
+      "result_id": "0f6281e4-78b9-4ab3-b756-b3d333b6eeb0"
+    },
+    {
+      "claim_id": "ce5e3c07-96ac-4ab9-9506-f96e55b5689d",
+      "result_id": "0f6281e4-78b9-4ab3-b756-b3d333b6eeb0"
+    },
+    {
+      "claim_id": "cdbb3666-60f2-40c3-ab6c-3f61175056dd",
+      "result_id": "0f6281e4-78b9-4ab3-b756-b3d333b6eeb0"
+    },
+    {
+      "claim_id": "424fc354-7ae1-4904-bbb8-a6f44bb362b3",
+      "result_id": "0f6281e4-78b9-4ab3-b756-b3d333b6eeb0"
+    },
+    {
+      "claim_id": "46818f90-f97c-4ede-9cf9-54592760fa0e",
+      "result_id": "0f6281e4-78b9-4ab3-b756-b3d333b6eeb0"
+    },
+    {
+      "claim_id": "8792e61f-7228-47f4-a28a-1418890a255e",
+      "result_id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39"
+    },
+    {
+      "claim_id": "1db63098-f90d-4ffe-8148-52badffda7d4",
+      "result_id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39"
+    },
+    {
+      "claim_id": "f11b669d-456b-4ce4-a17f-c54c3ce21bfe",
+      "result_id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39"
+    },
+    {
+      "claim_id": "60e1e1ad-f33c-4a1c-b353-86ead624ace1",
+      "result_id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39"
+    },
+    {
+      "claim_id": "482fde3e-ff21-45a0-854b-cf23f3c853a5",
+      "result_id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39"
+    },
+    {
+      "claim_id": "a4d868d3-d7ce-4c5c-8bbb-8020780e22ca",
+      "result_id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39"
+    },
+    {
+      "claim_id": "f12c107b-d08a-48f0-b1d7-6d6363dc77ec",
+      "result_id": "027cbdfc-5ae4-4cc0-81ab-32eb3b7eaf39"
+    },
+    {
+      "claim_id": "d4a1df87-fa58-434a-a5e0-d1a361d496c2",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "8c717dd0-39ad-4e79-a96e-de93fcdfe75e",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "c10c7dcf-4fe8-4abe-a9fe-1aa70cb3128d",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "c67975cb-c6bc-4ea8-8a4c-077606d3aa14",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "0f93c5fa-256b-4569-93cd-983d6cc84541",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "1b8a47f4-b9f1-4fb9-85c3-0c43020523c8",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "a036df9a-7857-4635-a345-b2e79a02d20d",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "dd23b2bd-b2fa-4ba6-868a-76e5c9fbc9c6",
+      "result_id": "23634894-3582-409b-8461-5f327fe3e38a"
+    },
+    {
+      "claim_id": "a70acf07-862b-4cf4-b8f2-412e539788c3",
+      "result_id": "7dd52d59-b327-4726-9236-3fa27b10ce39"
+    },
+    {
+      "claim_id": "81dbdd3d-e5f1-400f-b319-73b263e1b142",
+      "result_id": "0622eda7-9aad-4b3b-8a33-f2ef7f43d683"
+    },
+    {
+      "claim_id": "59d8d5c3-bde9-4784-9f41-af7a5aea7588",
+      "result_id": "0622eda7-9aad-4b3b-8a33-f2ef7f43d683"
+    },
+    {
+      "claim_id": "b22fc13c-daab-4a2e-8aa7-b5d88fdf4f9e",
+      "result_id": "0622eda7-9aad-4b3b-8a33-f2ef7f43d683"
+    },
+    {
+      "claim_id": "c394539f-2b3a-4d4e-bb57-19b414ccebc4",
+      "result_id": "0622eda7-9aad-4b3b-8a33-f2ef7f43d683"
+    },
+    {
+      "claim_id": "09c886e8-482c-4494-a6bb-725313c05a6d",
+      "result_id": "0622eda7-9aad-4b3b-8a33-f2ef7f43d683"
+    },
+    {
+      "claim_id": "b19b0778-17dd-4c66-86e6-b6e387c9d931",
+      "result_id": "0622eda7-9aad-4b3b-8a33-f2ef7f43d683"
+    },
+    {
+      "claim_id": "16941c6e-5e0a-47dd-8544-40d061564f43",
+      "result_id": "d348b738-5f5d-4a6e-b509-955a0bc7dd93"
+    },
+    {
+      "claim_id": "084f382a-78ee-4088-83b9-efc09c543be0",
+      "result_id": "d348b738-5f5d-4a6e-b509-955a0bc7dd93"
+    },
+    {
+      "claim_id": "b0a52da4-f322-4c1a-b2fd-a5c2c1ab5c40",
+      "result_id": "d348b738-5f5d-4a6e-b509-955a0bc7dd93"
+    },
+    {
+      "claim_id": "df0418d7-9134-4c5b-a76f-6a776a37bc42",
+      "result_id": "d348b738-5f5d-4a6e-b509-955a0bc7dd93"
+    },
+    {
+      "claim_id": "c1aa5126-332e-4bb7-a2be-07da53719b2d",
+      "result_id": "d348b738-5f5d-4a6e-b509-955a0bc7dd93"
+    },
+    {
+      "claim_id": "74e526e0-0b2b-46f7-b756-e3c4aab88379",
+      "result_id": "d348b738-5f5d-4a6e-b509-955a0bc7dd93"
+    },
+    {
+      "claim_id": "3e23e4a8-f858-4d6c-872d-17c78e9cdc36",
+      "result_id": "5694c415-c36e-440d-a03e-96585faa93d6"
+    },
+    {
+      "claim_id": "ad0b0335-16f7-4779-895a-538492ed1683",
+      "result_id": "5694c415-c36e-440d-a03e-96585faa93d6"
+    },
+    {
+      "claim_id": "42b2a395-3bcb-4a04-80de-578829d04384",
+      "result_id": "fe1fc3f9-be51-4e88-8520-095141f8b286"
+    },
+    {
+      "claim_id": "05e9845f-fe8b-4238-822a-bc6ae1a4000b",
+      "result_id": "fe1fc3f9-be51-4e88-8520-095141f8b286"
+    },
+    {
+      "claim_id": "5afecef4-8915-42a5-a67c-1df74000e0b5",
+      "result_id": "9f6ff5bf-8434-4939-8915-bba791552e36"
+    },
+    {
+      "claim_id": "0307bfcf-3029-4f41-9ab4-7cb751195f8f",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "ad230b7d-a5f5-40a7-b5bf-5b9a1f35c12d",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "d716cee6-0ba4-411b-9a15-aab6a513d85a",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "d44e72ef-942e-418f-913d-7b09f11e1741",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "8b4fc8f9-373e-494b-833a-6f273f67a821",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "d72928f7-3bc1-49d0-8365-6e9bc26387b4",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "0b5f650f-5c1a-4105-a58d-05dcf0cec72c",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "c2c4c447-d70c-48d3-ac9a-6fbc2f1c9488",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "7278038a-f7a3-4f3d-ab49-1a2650097a30",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "7caf2ee6-30e8-46aa-a344-5f1fcf9efff3",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "64d9193d-59f8-4474-b68d-60e9734ac2d5",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "b9814acd-062c-436a-b238-756f367dd2aa",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "65707b1a-3904-4ec4-ab3e-ac5a7dbe6533",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "30a285ce-289b-4bc9-a910-65ace4a74f29",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "b15b9da5-33dd-44f3-bdaa-a5f231815370",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "38dd9ca8-0dee-4b9d-98bf-4fe58cb58d2f",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "02f2d22a-b952-4397-854c-a149aec82a67",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "0d250bc5-6a35-4fb8-bd4e-008b7d898a8a",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    },
+    {
+      "claim_id": "da0fc0ab-de71-43bf-a057-7d271aec1c62",
+      "result_id": "b3ccd2c4-0846-4e50-9449-b4187ffd2586"
+    }
+  ],
+  "comparisons": []
+}

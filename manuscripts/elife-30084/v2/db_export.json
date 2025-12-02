@@ -1,0 +1,1580 @@
+{
+  "submission": {
+    "id": "6fb11ffe-1289-40ec-8557-fe61e19a5fc1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:08:21.144443Z",
+    "updated_at": "2025-12-01T22:08:21.144443Z"
+  },
+  "content": [
+    {
+      "id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "submission_id": "6fb11ffe-1289-40ec-8557-fe61e19a5fc1",
+      "content_type": "manuscript",
+      "content_text": "# Ribosome surface properties may impose limits on the nature of the cytoplasmic proteome\n\n## Authors\n\n- Paul E Schavemaker<sup>1</sup>\n- Wojciech M \u015amigiel<sup>1</sup> ([ORCID: 0000-0002-1868-8689](https://orcid.org/0000-0002-1868-8689))\n- Bert Poolman<sup>2</sup> ([ORCID: 0000-0002-1455-531X](https://orcid.org/0000-0002-1455-531X)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Groningen Groningen Netherlands\n2. Groningen Biomolecular Sciences and Biotechnology Institute University of Groningen Groningen Netherlands\n3. Zernike Institute for Advanced Materials University of Groningen Groningen Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nMuch of the molecular motion in the cytoplasm is diffusive, which possibly limits the tempo of processes. We studied the dependence of protein mobility on protein surface properties and ionic strength. We used surface-modified fluorescent proteins (FPs) and determined their translational diffusion coefficients (D) in the cytoplasm of Escherichia coli, Lactococcus lactis and Haloferax volcanii. We find that in E. coli D depends on the net charge and its distribution over the protein, with positive proteins diffusing up to 100-fold slower than negative ones. This effect is weaker in L. lactis and Hfx. volcanii due to electrostatic screening. The decrease in mobility is probably caused by interaction of positive FPs with ribosomes as shown in in vivo diffusion measurements and confirmed in vitro with purified ribosomes. Ribosome surface properties may thus limit the composition of the cytoplasmic proteome. This finding lays bare a paradox in the functioning of prokaryotic (endo)symbionts.\n\n## Introduction\n\nMany processes in biological cells depend on interactions between macromolecules (proteins and nucleic acids) and thus on the ability of these macromolecules to find each other by translational diffusion. This is especially important in prokaryotes because of the virtual absence of active mechanisms of cytoplasmic transport. It is clear that macromolecules need to diffuse for cells to function. To what extent the actual rate of this diffusion matters depends on the process under consideration and is in many cases unknown. For Brownian diffusion the rate of movement is characterized entirely by the diffusion coefficient, D. The exact value of the diffusion coefficient is important to the rate of a process only if it is diffusion limited, e.g. if the necessary conformational changes in an enzyme are faster than the diffusion of reactants. Arbitrarily lowering a diffusion coefficient, e.g. by osmotic stress, can make a process diffusion limited. Examples of diffusion-limited processes are binding of tRNA complexes to the ribosome, which leads to limitation in cell growth (Klumpp et al., 2013); and the binding of barstar to barnase, which we know to be diffusion limited because the proteins are designed to have an increased association rate by electrostatic interactions (Vijayakumar et al., 1998). Because protein diffusion is influenced by the environment, we need to determine diffusion coefficients in the context of the cell.\n\nThe cytoplasm of cells is not only crowded with macromolecules (van den Berg et al., 2017) but also consists of various types of nucleic acids and\u00a0>1000 types of protein (see proteome analysis below); though only 50 protein types make up 85% of the cytoplasmic proteome of E. coli (McGuffee et al., 2010). Various studies report on the presence of weak and nonspecific interactions between these components. NMR studies on proteins, either in the E. coli cytoplasm (Crowley et al., 2011; Ye et al., 2013) or cell lysates (Latham and Kay, 2013), reveal that there are weak interactions between E. coli proteins and proteins cytochrome c, ubiquitin, and calmodulin. In a computational study on protein interactions it was found that in E. coli more highly expressed proteins are constrained in evolution to be less sticky (Levy et al., 2012), suggesting that nonspecific interactions are common and consequential. The transient macromolecular interactions in vivo, resulting from molecular evolution, are referred to as the quinary structure of proteins (McConkey, 1982), and we discriminate these from the more generic nonspecific interactions that occur between molecules without coevolved interfaces.\n\nIn this study we set out to study the diffusion coefficients of proteins as a function of their surface properties and thus probe the boundary conditions for the generic nonspecific interactions. Our interest in this was piqued by four datasets from the literature. The first is the scattering of diffusion coefficients in the E. coli cytoplasm around a common downward trend when they are plotted against protein molecular weight; the dataset suggests that not only size (and shape) matter (Mika and Poolman, 2011). Second, the diffusion coefficient of GFP is faster in the cytoplasm of osmotically-adapted E. coli cells than in osmotically-upshifted cells, even at similar cytoplasmic macromolecule volume fraction (Konopka et al., 2009). Third, the diffusion coefficient of GFP drops much faster with cell volume (after an osmotic upshift) in Lactococcus lactis than in E. coli (Mika et al., 2014). Fourth, the slowing of diffusion in metabolic energy-depleted cells suggests changes in the dynamic structure of the cytoplasm (Parry et al., 2014; Joyner et al., 2016; Munder et al., 2016). In all four cases differential interactions of proteins with their surroundings may play a role, which are grounded in the surface properties of the macromolecules. Besides (possibly) giving insight into these four phenomena, studying the dependence of mobility on protein surface properties adds to our general quantitative understanding of diffusion; complementing studies on the relation between diffusion coefficients and protein size (Mika and Poolman, 2011; Mika et al., 2014; Kumar et al., 2010; Nenninger et al., 2010; Mika et al., 2010), diffusion coefficients and macromolecular crowding (Konopka et al., 2009; Mika et al., 2014; Mika et al., 2010; Konopka et al., 2006; van den Bogaart et al., 2007), and the dynamic structure of the cytoplasm (Spitzer and Poolman, 2009; Spitzer and Poolman, 2013).\n\nHere, we use a set of GFP variants with a net charge that ranges from \u221230 to\u00a0+25; we also studied two variants of\u00a0+11 GFP that differ in the distribution of the charge over the surface. All diffusion coefficients were determined by fluorescence recovery after photo-bleaching (FRAP). We study these proteins in the bacteria Escherichia coli and Lactococcus lactis and the archaeon Haloferax volcanii. These three organisms differ in their cytoplasmic ionic strength as shown by measurements on the dominant cation, K+: E. coli (0.2 M) (Shabala et al., 2009), L. lactis (0.8 M) (Poolman et al., 1987) (note: L. lactis used to be called Streptococcus cremoris), and Hfx. volcanii (2.1 M) (P\u00e9rez-Fillol and Rodr\u00edguez-Valera, 1986); these values are dependent on environmental conditions, but the differences in potassium ion concentration likely report the differences in ionic strength in these prokaryotes. The difference in ionic strength between E. coli and L. lactis is also reflected in the higher turgor pressure of L. lactis (Mika et al., 2014).\n\n## Results\n\n### GFP net charge affects its diffusion coefficient in E. coli\n\nWe performed fluorescence recovery after photo-bleaching (FRAP; see Figure 1a,b) to determine the diffusion coefficients of surface-modified variants of GFP in the E. coli cytoplasm. We determined the diffusion coefficient of the \u221230,\u00a0\u20137, 0,\u00a0+7,\u00a0+11b,\u00a0+15 and\u00a0+25 variants of GFP; see Figure 1c for structural models. The numbers indicate the net charge; the \u2018b\u2019 in\u00a0+11b GFP refers to the distribution of the charge over the surface and will be discussed in more detail below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig1-v2.jpg)\n\n**Figure 1.:** (a)\u00a0Data from a FRAP experiment. The zero time point is recorded immediately after the bleach. The red line marks the region along which the recovery is analyzed. (b) Fluorescence intensity along the red line in time, for data (left) and the fit to that data (right). The data is fitted with a numerical variant of the 1D diffusion equation. From the fit we obtain the diffusion coefficient. (c) Structural models of the surface-modified GFP variants, based on the superfolder GFP structure (PDBID:2B3P). The colors indicate the charge. The images were generated using UCSF Chimera (Pettersen et al., 2004) and MSMS package (Sanner et al., 1996).\u00a0(d) Histograms of diffusion coefficients of GFP variants in E. coli over a population of cells. For comparison, the histogram for the \u221230 GFP variant is shown in white in every plot. P-values are reported in Supplementary file 1C.\n\nFor each variant we measured the diffusion coefficients on cells from at least three independent cultures, and for each cell we obtained a single diffusion coefficient. For each GFP variant we plotted the histogram of diffusion coefficients over the population of cells (Figure 1d). The \u221230,\u00a0\u20137 and 0 variants of GFP all have the same mean diffusion coefficient of 10\u201311 \u00b5m2/s (for table of mean diffusion coefficients see Supplementary file 1B). At\u00a0+7 GFP the diffusion coefficients start to drop, down to a mean value of 0.14 \u00b5m2/s for\u00a0+25 GFP.\n\nFor the\u00a0+15 and+25 GFP variants we observed heterogeneous fluorescence in some cells. This ranged from a somewhat higher fluorescence at the poles to a clear ring around the outskirts of the cells (Figure 2\u2014figure supplement 1a). For\u00a0+15 GFP we were able to get rid of the heterogeneities by inducing for a shorter period of time. For\u00a0+25 GFP, we excluded cells with extreme heterogeneities (see Figure 2\u2014figure supplement 1a). The cells with only slightly inhomogeneous fluorescence had similar diffusion coefficients to cells with homogeneous fluorescence and were included in the data (Figure 2\u2014figure supplement 1b). The heterogeneities are probably due to exclusion of large complexes (+25 GFP forming clusters of ribosomes) from the nucleoid (see below).\n\nWhy does the diffusion coefficient drop with net positive charge? The first thing to realize is that almost nothing in the cytoplasm of the E. coli cell truly stands still. The membrane rearranges itself continuously and the DNA has some diffusive motion and rearranges itself during the cell cycle. If\u00a0+25 GFP would stick to another average sized protein it would not move more slowly than the combination of the two can diffuse. If\u00a0+25 GFP were to bind some bigger complex, like \u03b2-galactosidase (~500 kDa) with a diffusion coefficient of\u00a0~1 \u00b5m2/s, it would diffuse with a similar rate as \u03b2-galactosidase.\n\nBased on a census of elements present in E. coli cells this means that for\u00a0+25 GFP to diffuse with a diffusion coefficient as low as 0.14 \u00b5m2/s it needs to bind to membrane proteins, DNA and/or ribosome-mRNA complexes. For membrane proteins with 12\u201314 transmembrane helices in E. coli and L. lactis, D is 0.02\u20130.03 \u00b5m2/s (Mika et al., 2014; Kumar et al., 2010). Describing the motion of DNA with a diffusion coefficient is somewhat of a stretch, as its parts do not move freely, but apparent values of 0.000035\u20130.00007 \u00b5m2/s have been reported (Reyes-Lamothe et al., 2008). In fast growing cells, we expect ribosomes and mRNA to be associated most of the time (Sanamrad et al., 2014), and D is 0.04 \u00b5m2/s when a one-component model is used for fitting the data (Bakshi et al., 2012). In another study free and bound ribosomes were discriminated and D values of 0.40 (~15%) and 0.055 \u00b5m2/s (~85%) were found (Sanamrad et al., 2014). So membrane proteins, DNA and ribosomes-mRNA all have diffusion coefficients low enough to cause the drop in mobility of\u00a0+25 GFP. Fluorescence images show that most, if not all, fluorescence is located in the cytoplasm, leaving DNA and/or ribosome-mRNA as the most likely (major) binding partners. We cannot rule out that some of the GFP binds to the membrane but we did not find evidence for it in our images of E. coli cells.\n\n### Cytoplasmic ion concentrations counteract the drop in diffusion coefficient\n\nWe also determined diffusion coefficients of the GFP variants in L. lactis and Hfx. volcanii (Figure 2 and Supplementary file 1B). For L. lactis the mean diffusion coefficient of \u22127 GFP (6.2 \u00b5m2/s) is lower than for E. coli (10 \u00b5m2/s). However, D drops less with positive net charge so that for\u00a0+25 GFP the mean diffusion coefficient is higher in L. lactis (0.61 \u00b5m2/s) than in E. coli (0.14 \u00b5m2/s). This can be explained by the higher cytoplasmic ionic strength of L. lactis, reducing the affinity of positive GFPs to hypothetical negatively-charged binding partners. For Hfx. volcanii the drop in diffusion coefficient is even less steep, with the mean diffusion coefficient dropping from 5.5 \u00b5m2/s, for \u22127 GFP, to 1.9 \u00b5m2/s, for\u00a0+25 GFP. The shallower drop in diffusion coefficient with net positive charge as compared to both L. lactis and E. coli can again be explained by a difference in ionic strength. Another possible contribution to the high\u00a0+25 GFP diffusion coefficient in Hfx. volcanii is the presence of more negative proteins than in E. coli and L. lactis, which may titrate GFP away from its slower binding partner (see proteome analysis below). We also note that in Hfx. volcanii the diffusion coefficient of \u221230 GFP is higher than of \u22127 GFP, 10 \u00b5m2/s compared to 5.5 \u00b5m2/s, which may be caused by a less negative binding partner for GFP in Hfx. volcanii than in E. coli.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig2-v2.jpg)\n\n**Figure 2.:** (a)\u00a0Example FRAP data for E. coli and Hfx. volcanii cells expressing\u00a0+25 GFP. We chose cells of comparable size so that the diffusion rate can be compared visually. (b) The GFP diffusion coefficient plotted against its net charge in all three organisms. The points indicate medians and the error bars show the interquartile range. P-values are reported in Supplementary file 1C. (c) Histograms of GFP diffusion coefficients for the \u22127 and\u00a0+25 variants in all three organisms.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Pictures of E. coli and Hfx. volcanii (in box with solid border) with different degrees of heterogeneity in the distribution of fluorescence. (B) Comparison of diffusion coefficients of\u00a0+25 GFP in E. coli cells with a homogeneous (top) and a somewhat heterogeneous (bottom) distribution of fluorescence.\n\n### The effect of osmotic upshift on protein diffusion in E. coli\n\nNext, we determined the diffusion coefficient of \u221230,\u00a0\u20137,\u00a0+15 and\u00a0+25 GFP in E. coli after resuspending the cells in medium with a higher osmolality. It is known that the GFP diffusion coefficient drops drastically after an osmotic upshift (Konopka et al., 2009; Mika et al., 2014; Mika et al., 2010). We now observe what happens after combining two causes for slowed diffusion: osmotic upshift (increased crowding) and protein surface charge. The cells were grown at an osmolality of 0.28 Osm and resuspended in media of 0.55 or 1.2 Osm (adjusted with NaCl). In 0.55 Osm medium the diffusion coefficients did not change much (Figure 3a and Supplementary file 1B), similar to what was observed before for wildtype GFP (Konopka et al., 2009). In 1.2 Osm medium the diffusion coefficients of all variants dropped (Figure 3a and Supplementary file 1B). The degree of the drop is 56-, 28-, 16-, and 7-fold (between medians) for \u221230,\u00a0\u20137,\u00a0+15 and\u00a0+25, respectively, and this difference may be a consequence of the increased cytoplasmic ion concentration that accompanies the osmotic upshift. Thus, the fold-change is less for the positive proteins because the electrostatic screening may compensate partly for the increased crowding effect.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0GFP diffusion coefficients as a function of their net charge and degree of osmotic stress in E. coli. The points indicate medians and the error bars show the interquartile range. Discs: E. coli cells resuspended in medium with the same osmolality as the growth medium (0.28 Osm); data from Figure 2b. Squares: cells resuspended in 0.55 Osm; Diamonds: cells resuspended in 1.2 Osm. P-values are reported in Supplementary file 1C. (b) Microscopy images of \u22127 GFP fluorescence of cells resuspended in 0.28 Osm (left panel) and 1.2 Osm medium osmolality (right panel). Red arrows indicate invaginations which appear after rapid osmotic upshift. Scale bars are 1 \u00b5m. (c) Histogram of diffusion coefficients for\u00a0+11a (grey bars) and\u00a0+11b GFP (white bars) in E. coli, measured at growth osmolality (0.28 Osm). The FRAP data only includes cells with homogeneous fluorescence. P-values are reported in Supplementary file 1C. (d) Structural models of\u00a0+11a and\u00a0+11b GFP variants. The colors indicate the charge distribution; the same protein faces are shown.\n\n### The distribution of surface charge affects the diffusion coefficient in E. coli\n\nFor \u221230,\u00a0\u20137, 0,\u00a0+7,\u00a0+11b,\u00a0+15 and\u00a0+25 GFP, the charge is distributed more or less equally over the surface of the protein. We also determined how a more localized charge affects the diffusion. The +11a variant of GFP has the positive charge unequally distributed, compared to\u00a0+11b GFP (Figure 3d). We determined diffusion coefficients for the +11a and +11b variants by FRAP. Histograms of the diffusion coefficients over populations of cells are shown in Figure 3c. The mean diffusion coefficient of\u00a0+11b GFP is 2.7 \u00b5m2/s and that of\u00a0+11a GFP is 0.76 \u00b5m2/s (Supplementary file 1B). So, it clearly matters how the net charge is distributed over the GFP surface. For\u00a0+11a GFP we also see heterogeneous distributions, similar to\u00a0+15 and\u00a0+25 GFP, which could be prevented by inducing for a shorter amount of time.\n\n### The\u00a0+25 GFP variant does not co-localize with DNA\n\nTo find out whether the positive GFP variants are bound to DNA or ribosomes-mRNA or both, we first determined the co-localization between GFP and DNA. We expressed\u00a0+25 GFP in E. coli, labelled the nucleoid with DRAQ-5 and shrunk the nucleoid with chloramphenicol. We compared the fluorescence profile, along the length of the cells, of\u00a0+25 GFP with that of DRAQ-5 (Figure 4a and Figure 4\u2014figure supplement 1). In all cells the distribution of\u00a0+25 GFP matched the dimensions of the cells. In nine cells (Figure 4\u2014figure supplement 1a\u2013i) out of 46 the nucleoid had shrunk and in all these cells\u00a0+\u00a025 GFP did not co-localize with DNA. In some cells\u00a0+\u00a025 GFP was occluded from the DNA, which has been seen before for ribosomes (Bakshi et al., 2012). In the other cells the nucleoid did not shrink and the DNA and\u00a0+25 GFP overlapped (see Figure 4\u2014figure supplement 1j\u2013p). We conclude that DNA is not the major binding partner for\u00a0+25 GFP.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0Co-localization of\u00a0+25 GFP and DNA in E. coli. The plots indicate the fluorescence profile for\u00a0+25 GFP (black) and DNA (grey) along the length of the cell, averaged over a 5 pixel wide band. The images show the corresponding cells in the\u00a0+25 GFP, DRAQ-5 (DNA) and T-PMT channels. The T-PMT image corresponds to the transmitted excitation light during the recording of the fluorescence (it is equivalent to a bright-field image). (b) Diffusion of\u00a0+25 GFP in E. coli in the presence and absence of mRNA. At time point zero, DMSO\u00a0+\u00a0rifampicin (yellow) or DMSO only (blue) was added to the cells. The squares and diamonds indicate different replicates. The dashed line indicates the diffusion coefficient of the 30S ribosome after the addition of rifampicin. At the transition from the shaded region to the white region,\u00a0>75% of the mRNA is gone.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** DRAQ-5 reports on the presence of DNA. The T-PMT image is constructed from the transmitted excitation light during the recording of the fluorescence (it is equivalent to a bright-field image). The plots indicate the fluorescence profile for\u00a0+25 GFP (black) and DNA (grey) along the length of the cell, averaged over a five pixel wide band.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** To create DNA free regions, E. coli cells were elongated by adding cephalexin, and DNA was condensed by treating the cells with chloramphenicol. (a) Example of a FRAP experiment on treated cells. The line along which the recovery was analyzed was drawn over the highly fluorescent middle part of the cell. (b) Examples of E. coli cells after treatment with cephalexin, chloramphenicol and DRAQ-5. DRAQ-5 visualized DNA and the T-PMT is equivalent to a bright field image. (c) Comparison of histograms of \u22127 and\u00a0+25 GFP diffusion coefficients in DNA-containing (same data as in Figure 1d; top panel) and DNA-free regions (bottom panel). (d) Diffusion coefficients of \u22127 and\u00a0+25 GFP in treated cells as a function of time. The zero time point indicates when the cells are resuspended in DRAQ-5 free medium right before the FRAP measurements. Each point corresponds to a single cell. Discs, squares, diamonds and triangles indicate different replicates.\n\n### DNA is not needed for the decrease of\u00a0+25 GFP diffusion rate\n\nNext, we determined if DNA affects the mobility of\u00a0+25 GFP by analyzing the diffusion of \u22127 and\u00a0+25 GFP in DNA-free regions of E. coli cells. We created DNA free regions large enough for FRAP measurements by first treating cells with cephalexin, to elongate the cells, and then with chloramphenicol, to shrink the nucleoid. We visualize the position of DNA by adding DRAQ-5. Only a fraction of the cells had enough GFP fluorescence for FRAP and sufficient DRAQ-5 fluorescence for visualizing the position of DNA, and these were analyzed (Figure 4\u2014figure supplement 2a and b). We find that for both \u22127 and\u00a0+25 GFP the diffusion coefficient has dropped after treatment of the cells with cephalexin and chloramphenicol (Figure 4\u2014figure supplement 2c and d). There is a big difference between the mean diffusion coefficient of \u22127 and\u00a0+25 GFP after treatment and in the absence of DNA (35-fold). A similar difference between \u22127 and\u00a0+25 GFP\u00a0was found in cells that were not treated and in the presence of DNA (85-fold). This shows that the drop in\u00a0+25 GFP diffusion rate is not dependent on DNA. Both \u22127 and\u00a0+25 GFP are somewhat excluded from DNA (nucleoid) but the effect is largest for\u00a0+25 GFP; this is another piece of evidence suggesting that\u00a0+25 GFP binds to ribosome-mRNA and not to DNA.\n\n### +25 GFP binds ribosome-mRNA\n\nIt has been shown that the 30S ribosomal subunit in E. coli increases its diffusion coefficient, from 0.04 \u00b5m2/s to 0.6 \u00b5m2/s, after treatment with rifampicin (Bakshi et al., 2012). Rifampicin stops transcription and after adding it to E. coli cells the pool of mRNA plummets, with 90% of the mRNAs having a half time of less than 8 min (Bernstein et al., 2002). We determined the diffusion coefficient of\u00a0+25 GFP in E. coli as a function of time after the addition of rifampicin and compared this to the situation without rifampicin (Figure 4b).\n\nWe found that after treatment with rifampicin, the diffusion coefficient of\u00a0+25 GFP increases for 20 min and then levels off. This coincides with the time needed to degrade most of the mRNA. Importantly, the diffusion coefficient after 20 min of rifampicin treatment is close to the value of the 30S and presumably the 50S subunit. We also find that the fluorescence of\u00a0+25 GFP expressing cells becomes more homogenous after rifampicin treatment. Together, these findings indicate that the positive GFP variants bind to ribosomes, and that this is the major cause for their slow diffusion. We can\u2019t rule out that some\u00a0+25 GFP binds to mRNA, but it is not a major contributor to the decrease of\u00a0+25 GFP diffusion coefficient. With reasonable confidence we also put aside two other hypotheses: (i) differential partitioning of negative and positive GFPs in different cytoplasmic phases; and (ii) formation of big clusters of positive GFPs with negative proteins. Finally, we find that the variation in diffusion coefficient between cells is smaller in the presence than in the absence of rifampicin, suggesting that part of the spread in the diffusion relates to ongoing transcription.\n\n### Co-localization on sucrose gradients shows that\u00a0+25 GFP binds predominantly to ribosomes\n\nTo substantiate our in vivo findings on the binding of positive GFPs to ribosomes, we determined whether \u22127 and\u00a0+25 GFP co-localize with ribosomes and/or DNA on a sucrose gradient. For this experiment we used (ribosome containing) lysates of \u22127 or\u00a0+25 GFP expressing E. coli cells. The cell lysates were 200\u2013300 times diluted relative to the cytoplasmic contents. The contents of the lysates were separated by centrifugation on a linear sucrose gradient and we determined the presence of the GFPs, by fluorescence spectroscopy, in fractions taken along the length of the gradient. We also determined the presence of ribosomes by electron microscopy. We observed a clear difference in the position of \u22127 and\u00a0+25 GFP along the gradient, with the peak of the\u00a0+25 GFP distribution coinciding with the presence of ribosomes (Figure 5a and c). We do not know the exact DNA content of the lysates, so we performed two more experiments in which we added pure DNA to the\u00a0+25 GFP cell lysates before separating their contents on sucrose gradients. We used a DNA/ribosome ratio that is comparable (0.02 g/L DNA, experiment 1), or five times higher to that in the cell (0.12 g/L DNA, experiment 2) (Milo and Phillips, 2015). The position of DNA along the gradient was determined in a separate experiment in which only the pure DNA was added to a sucrose gradient. Even at the highest concentration of DNA,\u00a0+25 GFP co-localizes with ribosomes and not with DNA (Figure 5b). From the combination of sucrose gradient experiments and our in vivo studies described above, we conclude that\u00a0+25 GFP binds predominantly to ribosomes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0Comparison of fluorescence profiles of sucrose gradient centrifugation experiments performed on E. coli cell lysates containing either \u22127 or\u00a0+25 GFP. The majority of \u22127 GFP is present in the loaded sample (fractions 1 and 2), while\u00a0+25 GFP peaks at fractions 4\u20135, corresponding to 15\u201318% (w/v) sucrose. The fluorescence signals were normalized to the highest value, because the absolute fluorescence of\u00a0+25 GFP is lower than that of \u22127 GFP. (b) Comparison of fluorescence (and absorption) profiles of sucrose gradient centrifugation experiments performed on purified DNA (0.2 g/L), and E. coli cell lysates containing\u00a0+25 GFP with or without additional DNA. (c) Transmission electron microscopy images of uranyl acetate-stained fractions from the cell lysate containing sucrose gradients. Fraction one lacks distinct large structures, whereas fraction 10 shows large aggregates. Ribosomes, spheres of around 25\u201330 nm diameter, are visible and peak in fraction 5. The scale bar is 100 nm. (d) Elution profiles on a Sephadex 200 of pure ribosomes, ribosomes with\u00a0+25 GFP, and ribosomes with 1.8x as much\u00a0+25 GFP, measured as absorbance at 280 nm (e) Fluorescence imaging of tubes containing ribosomes, \u22127 GFP, ribosomes mixed with \u22127 GFP,\u00a0+25 GFP, and ribosomes mixed with\u00a0+25 GFP. The indicated fluorescent pellet appears after centrifuging the samples. The tube containing only ribosomes is not visible due to lack of fluorescence. (f) Elution profiles of ribosomes,\u00a0+25 GFP, and ribosomes mixed with\u00a0+25 GFP, measured as fluorescence at 510 nm; the excitation wavelength was 488 nm. The higher fluorescence of ribosomes mixed with\u00a0+25 GFP is accompanied by decrease in absorbance at 280 nm; (g) Elution profiles of ribosomes, \u22127 GFP, and ribosomes mixed with \u22127 GFP, measured as fluorescence at 510 nm; the excitation wavelength was 488 nm. Unlike for\u00a0+25 GFP, when ribosomes are mixed with \u22127 GFP the absorbance at 280 nm remains the same (data not shown).\n\n### Purified\u00a0+25 GFP associates and aggregates with purified ribosomes\n\nWe also determined if purified ribosomes are able to bind purified\u00a0+25 or \u22127 GFP by analyzing solutions of ribosomes mixed with GFPs with size-exclusion chromatography (SEC). At physiological salt concentrations (Shabala et al., 2009) we observe that upon mixing ribosomes and\u00a0+25 GFP, aggregates are formed (Figure 5e). These aggregates are not seen when \u22127 GFP is mixed with ribosomes. In the SEC experiment, the association of ribosomes and\u00a0+25 GFP results in a decrease of the 280 nm absorbance peak at around 10 mL, because the aggregates are removed by centrifugation (Figure 5d). This effect scales with increasing\u00a0+25 GFP concentration. In line with these observations on binding of\u00a0+25 GFP to ribosomes, we observe an increase in the fluorescence at the ribosome elution volume when we mix ribosomes and\u00a0+25 GFP (Figure 5f). The control experiment with \u22127 GFP shows that the anionic protein does not bind to ribosomes and elutes on SEC at around 17.5 ml (Figure 5g). From these results we conclude that\u00a0+25 GFP indeed associates with ribosomes in vitro.\n\n## Discussion\n\n### The fraction of GFP variants bound to ribosomes in E. coli, L. lactis and Hfx. volcanii\n\nThe diffusion coefficient of GFP in cells is a function of free and bound GFP. If the exchange between these two states is longer than the time of the FRAP measurement one will observe two populations. If the two states exchange on a timescale much shorter than the time of the FRAP measurement the diffusion can be described by a single diffusion coefficient (Deff):\n\n$$\nD_{eff}=\u00a0f_{free}\u00a0D_{free}+(1\u2212f_{free})\u00a0D_{bound}\n$$\n\nWe used Equation (1) to calculate the fraction of free GFP for each of the GFP variants in E. coli, L. lactis and Hfx. volcanii (see Materials\u00a0and\u00a0methods for derivation of Equation (1)). We made a number of assumptions: (1) the exchange between free and bound state is much faster than the FRAP measurement; (Vijayakumar et al., 1998) the highest diffusion coefficient of all variants in a given organism reflects the free state of GFP; (3) GFPs bind solely to ribosomes; (4) the total number of binding sites on all ribosomes is higher than the number of GFPs; (Crowley et al., 2011) the decrease of diffusion coefficient with net positive charge has the same origin in all three organisms; and, finally (6) the ribosome diffusion coefficient is the same in all three organisms. Justifications for these assumptions are described in the Materials and methods section. The results are shown in Figure 6\u2014figure supplement 1. From the analysis we conclude that even in Hfx. volcanii, with its high internal ion concentration, a major fraction (0.81) of\u00a0+25 GFP is still bound to ribosomes.\n\nNext, we estimated the dissociation constant (Kd) of the association between GFP and ribosomes. For E. coli, under our growth conditions, the number of ribosomes per \u00b5m3 is about 17000 (Vendeville et al., 2011), which corresponds to a concentration of 10 \u00b5M. GFP probably binds to the RNA that is exposed on the surface of the ribosome and probably does so nonspecifically. The ribosome has a diameter of 20 nm, which yields a surface area of 1260 nm2, assuming a spherical shape. About half of this surface area is RNA so we end up with 630 nm2. The diameter of GFP is 3.5 nm, giving a 9.6 nm2 cross section. Dividing the ribosome RNA surface area by the GFP cross section gives a maximal number of binding sites of 66. This means that the concentration of binding sites is 660 \u00b5M. To calculate Kd we use:\n\n$$\nf_{bound}=\\frac{[binding\u00a0site]}{K_{d}+[binding\u00a0site]}\n$$\n\nThis equation is valid when the number of binding sites is significantly higher than the number of GFPs. Using a fraction of bound\u00a0+25 GFP of 0.99 in E. coli, we obtain Kd\u00a0=\u00a06.7 \u00b5M. If we make the assumption that the concentration of ribosomes in L. lactis and Hfx. volcanii is the same as in E. coli, then the Kd for binding of\u00a0+25 GFP to a ribosome binding site is 65 \u00b5M for L. lactis and 155 \u00b5M for Hfx. volcanii.\n\n### The relation between diffusion coefficient, GFP net charge and ionic strength\n\nIn this section we seek to explain: (i) the relation between Deff and cytoplasmic ionic strength; and (ii) the relation between Deff and net charge of GFP. To explain (i) we first compare our values to literature data on electrostatic interactions between proteins in dilute solution. To make the comparison possible we relate Kd, rather than Deff, to ionic strength. In Figure 6a we plot the Kd versus ionic strength of the interaction between barnase and barstar (Schreiber and Fersht, 1993), colicinE9 and Im9 (Wallis et al., 1995), and different forms of thrombin and hirudin (Stone et al., 1989).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig6-v2.jpg)\n\n**Figure 6.:** (a)\u00a0The dependence of dissociation coefficients on ionic strength for protein binding pairs barnase-barstar, colicinE9-Im9, and different variants of hirudin binding to thrombin. The data from the literature was in the form of $k_{on}$and $k_{off}$ and we used $K_{D}=\\frac{k_{off}}{k_{on}}$ to determine the affinity constants. For the thrombin-hirudin interactions we show fits with a combination of Equations (3) and (4). The black part spans the data, the grey part is an extrapolation. The charge on hirudin decreases from the bottom to the top line (at the black part). (b) The dependence of dissociation coefficients on ionic strength for\u00a0+25 GFP. The black line is a fit with a combination of Equations (3) and (4). (c) Same data as in (b) but with the non-ionic contribution to the binding free energy fixed at zero during fitting. (d) The dependence of diffusion coefficient on GFP net charge for E. coli. The line is a fit with Equation 5. We did not include\u00a0+11a GFP because of its different charge distribution. (e) The dependence of diffusion coefficient on GFP net charge for Hfx. volcanii. The line is a fit with Equation 5.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Using the data from Figure 2b we calculated the fraction of GFP bound to ribosomes. a) The fraction of free GFP variants as a function of ribosome diffusion coefficient. b) The fraction of free GFP variants as a function of GFP net charge.\n\nThe ionic strength dependence of the interaction of\u00a0+25 GFP with ribosomes (recorded in E. coli, L. lactis and Hfx. volcanii; Figure 6b) is similar to that of the three protein pairs in dilute solutions (Figure 6a); the Kd increases with ionic strength and levels off at higher ionic strength. To get more insight into the interaction we applied a semi-empirical equation that was successfully used to describe the (partly) electrostatic interaction between the proteins thrombin and hirudin (Stone et al., 1989):\n\n$$\n\u0394G_{b}^{^{\u2218}}=\u0394G_{nio}^{^{\u2218}}+\u0394G_{io0}^{^{\u2218}}\\frac{e^{\u2212C_{1}\\sqrt{I}}}{1+C_{1}\\sqrt{I}}\n$$\n\nThis equation was derived from Debye-H\u00fcckel theory and was subsequently modified to account for behavior at higher ionic strength. Here $\u0394G_{b}^{^{\u2218}}$is the total binding energy, $\u0394G_{nio}^{^{\u2218}}$ is the binding energy due to non-ionic interactions, $\u0394G_{io0}^{^{\u2218}}$ is the binding energy due to electrostatic interactions in the absence of ions, $C_{1}$ is a parameter that depends on the distance between charges and the screening effects that are not due to ions, and $I$ is the ionic strength. To apply Equation 3 we need to relate the $K_{D}$ and $\u0394G_{b}^{^{\u2218}}$:\n\n$$\nK_{D}=e^{\\frac{\u0394G_{b}^{^{\u2218}}}{RT}}\n$$\n\nWe fitted the\u00a0+25 GFP interaction data with a combination of Equations (3) and (4) and obtained the following parameter values: $\u0394G_{nio}^{^{\u2218}}$= \u221220 400 J mol\u22121, $\u0394G_{io0\u00a0}^{^{\u2218}}$= \u221228 900 J mol\u22121, and $C_{1}$ = 1.53. We had expected that the non-ionic interaction free energy would be close to zero, but if we impose this conditions the fit becomes bad (Figure 6c). The bending off at higher ionic strengths depends on $\u0394G_{io0}^{^{\u2218}}$ being negative; we expect $\u0394G_{io0}^{^{\u2218}}$ to be negative given the electrostatic attraction between positive GFP and negatively-charged surfaces of the ribosomes.\n\nThe second phenomenon we explain is the relation between Deff and the surface charge of GFP. In the work describing the hirudin-thrombin interaction a number of charge variants of hirudin were used (Stone et al., 1989). The $\u0394G_{io0\u00a0}^{^{\u2218}}$depended linearly on the number of charges. This is expected from Coulombs law, assuming that non-linearities do not arise from charge screening. In the rest of the analysis we assume that $\u0394G_{io0\u00a0}^{^{\u2218}}$indeed depends linearly on the charge and we write: $\u0394G_{io0\u00a0}^{^{\u2218}}=\u0394G_{pc\u00a0}^{^{\u2218}}\\timescharge$, where $\u0394G_{pc\u00a0}^{^{\u2218}}$is the free energy change per charge. We can now combine this with Equations (1), (2), (3), and (4) to obtain:\n\n$$\nD_{eff}=(1\u2212\\frac{[binding\u00a0site]}{[binding\u00a0site]+e^{\\frac{\u0394G_{nio}^{^{\u2218}}+\u0394G_{pc\u00a0}^{^{\u2218}}charge\\frac{exp(\u2212C_{1}\\sqrt{I})}{1+C_{1}\\sqrt{I}}}{RT}}})(D_{free}\u2212D_{bound})+D_{bound}\n$$\n\nWe used this equation to fit the data for E. coli and Hfx. volcanii. We set $D_{free}$ = 10 \u00b5m2/s, $D_{bound}$ = 0.04 \u00b5m2/s (ribosome diffusion coefficient), $[bindingsite]$ = 660 \u00b5M, $T$ = 293 K, $R$ = 8.314 J K\u22121 mol\u22121 (gas constant), and $I$ = 0.2 M for E. coli and $I$ = 2.1 M for Hfx. volcanii. We are left with three fitting parameters: $\u0394G_{nio}^{^{\u2218}}$, $\u0394G_{pc\u00a0}^{^{\u2218}}$, and $C_{1}$. The fits are shown in Figure 6d and e (see Supplementary file 1D for fitting parameters). The model fits the data well; this is more telling for E. coli than it is for Hfx. volcanii, as the data covers more of the curve. The upper bound for the diffusion coefficient is set by free diffusion and the lower bound by the diffusion of the ribosome. When we use a log scale to represent the diffusion coefficient we see a linear dependence of diffusion coefficient with net charge from 0 to\u00a0+25 (for E. coli). Thus, under the assumption that $\u0394G_{io0}^{^{\u2218}}$ depends linearly on the number of charges the model reproduces the linear dependence between the upper and lower bound. Again, we needed to include a non-ionic interaction for a proper fit. There is a discrepancy between the parameter values of the fits shown in Figure 6b,d and e (see Supplementary file 1D). This may be caused by the assumptions made above not holding up. Together the results for the relation between Kd and ionic strength, and Deff and GFP charge, show that the binding of GFP to ribosomes can be described by electrostatic interactions and screening by small ions on top of a base non-ionic interaction component.\n\n### Proteome analysis reveals potentially slow proteins\n\nTo determine the consequences of our findings we analyzed the proteomes of E. coli, L. lactis and Hfx. volcanii and four (endo)symbiotic bacteria. We determine (i) how a protein will diffuse in light of the composition of the proteome, for which we need to know both the net charges and the abundances of all proteome components; and (ii) how the ribosomes affect the diffusion of the proteome constituents, for which we need to know the net charge of the proteins. We determined the distributions of pI values and net charges for all proteins in the genome and for only cytoplasmic proteins, in E. coli, L. lactis and Hfx. volcanii (Figure 7a). We also determined the distribution of pI values and net charges for cytoplasmic proteins in E. coli taking into account protein copy numbers (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig7-v2.jpg)\n\n**Figure 7.:** The histograms show the number of genes that encode proteins with given pI and net charge. We show distributions over all genes (left panels) and over genes that encode cytoplasmically localized proteins (right panels). (a) E. coli, L. lactis, and Hfx. volcanii; (b) the two symbionts, Buchnera aphidicola and Wiggleworthia glossinidia brevipalpis, that have the most positive proteomes (from the four symbionts that we analysed). We used gene ontology annotations from the UniProt database to find the cytoplasmic proteins. In all cases we assumed a pH of 7.5 for calculating the net charge. The symbionts were selected based on pI profiles from (Kiraga et al., 2007).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a)\u00a0Histograms of the number of genes that encode proteins with given pI (left panel) or net charge (right panel) that are located in the cytoplasm of E. coli. (b) Histograms of the number of protein copies with given pI (left panel) or net charge (right panel) that are located in the cytoplasm of a single E. coli cell. We used a pH of 7.5 to calculate the net charge.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Histograms of number of genes that encode for proteins with given pI and net charge. Left panel: the whole proteome; right panel: cytoplasmic proteome. In all cases we assumed a pH of 7.5 for calculating the net charge.\n\nFrom the pI distributions it is clear that in all three organisms the majority of cytoplasmic proteins is acidic and thus negatively charged at the physiological internal pH of 7.5; for internal pH values we refer to (Slonczewski et al., 1981; Zilberstein et al., 1982; Wilks and Slonczewski, 2007) for E. coli (see also BNID 105980 and BNID 106518) (Milo et al., 2010), and (Poolman et al., 1987) for L. lactis. The protein net charge distributions of E. coli and L. lactis go up to a value of\u00a0+25, irrespective of whether we take the gene-based distributions or protein copy numbers (for E. coli), or whether we take the full or cytoplasmic proteome. The net charge distribution of Hfx. volcanii stops at about 0. In E. coli 35 cytoplasmic proteins have a net charge higher than\u00a0+10. These consist of 18 ribosomal, 9 RNA-associated, 5 DNA-associated and 3 uncharacterized proteins. For L. lactis, with seven cytoplasmic proteins that have a net charge bigger than\u00a0+10, the breakdown is similar. The only Hfx. volcanii protein with a net charge bigger than 0 is a ribonuclease, rnp4, with a net charge of\u00a0+6. Thus, all three organisms essentially have no \u2018free\u2019 positive cytoplasmic proteins.\n\nThe drop in diffusion coefficient with increased positive charge may partly explain why the proteome is mostly negative in E. coli, L. lactis and Hfx. volcanii. Positive proteins not only diffuse slowly but their binding to ribosomes might also inhibit protein synthesis, that is, by affecting the assembly or the activity of ribosomes. As mentioned, there are 18 ribosomal proteins in E. coli that have a net charge of more than\u00a0+10. If the findings on GFP are transferable to ribosomal proteins, then these ribosomal proteins experience a drop in diffusion coefficient of more than 5-fold. The most extreme cases, RplT and RplB, with net charges of\u00a0+24 and\u00a0+31, would have a drop in diffusion coefficient of 100-fold. The fact that ribosomal proteins themselves are positively charged potentially limits the rate of assembly of new ribosomes. The reason is that ribosomal proteins that have just been synthesized bind nonspecifically to the surfaces of fully assembled ribosomes, and this causes slow diffusion, lower effective protein concentrations and may affect the functioning of ribosomes. An implication of our findings is that the synthesis of cationic ribosomal proteins and the assembly of ribosomes should be highly coordinated and preferably be modular to minimize unwanted side-effects of nonspecific interactions (Davis et al., 2016).\n\nA high positive net charge is not a guarantee for binding to the ribosome. One could imagine a positive protein that is disordered before binding but ordered upon binding. The reduction in entropy reduces the binding affinity, which in turn causes the diffusion coefficient to be high. Another option is that the surface shapes don\u2019t match even if the net charges are complementary. This would also lower the affinity and increase the diffusion coefficient.\n\nA conundrum is encountered when we look at the proteomes of the bacteria Buchnera aphidicola, Blochmannia floridanus, Onion yellows phytoplasma, and Wigglesworthia glossinidia brevipalpis. All four organisms are (endo)symbionts of plants or insects and have small genomes: 572\u2013730 protein-encoding genes. All of these have very basic proteomes (Figure 7b and Figure 7\u2014figure supplement 2). It is unclear how these organisms are able to deal with, or avoid, slow diffusion and ribosomes getting swarmed with positive proteins.\n\n### A few general points on diffusion and binding\n\nA protein can diffuse only as slow as the combination of this protein and the slowest component it binds to in the cell. This is described by Equation (1), which can be rewritten in the following way:\n\n$$\nD_{eff}=\u00a0f_{free}\u00a0(D_{free}\u2212\u00a0D_{bound})+\u00a0D_{bound}\n$$\n\nIf we fill in $f_{free}$ = 0 we get $D_{eff}=$$D_{bound}$ and if we fill in $f_{free}$ = 1 we get $D_{eff}=D_{free}$; the black lines in Figure 8. If we fill in $D_{bound}$ = 0 we get $D_{eff}=f_{free}D_{free}$, i.e. after some point $D_{eff}$ becomes independent of$D_{bound}$; this is illustrated by the grey lines in Figure 8. In more concrete terms: 99% binding of\u00a0+25 GFP to ribosomes ($D_{ribo}$=0.04 \u00b5m2/s) leads to the same diffusion coefficient as 99% binding to DNA ($D_{DNA}$=0.000035\u20130.00007 \u00b5m2/s).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/30084/elife-30084-fig8-v2.jpg)\n\n**Figure 8.:** All lines are generated with Equation (6) and$D_{free}$\u00a0=\u00a010 \u00b5m2/s.\n\n### Conclusion\n\nWe find that the diffusion coefficients of proteins in the cytoplasm of E. coli depend on their net charge and the distribution of charge over the protein surface, with positive proteins moving up to 100-fold slower. The diffusion becomes even slower when cells are exposed to an osmotic upshift. In L. lactis and Hfx. volcanii the slowdown in diffusion with increasing positive surface charge is less than in E. coli due to electrostatic screening. The decrease in diffusion coefficient is mainly caused by binding of positive proteins to ribosomes, with KD values on the order of \u00b5M; this shows that non-selected interactions need not be weak. Ribosome surface properties may thus limit the composition of the cytoplasmic proteome. These findings are of general value due to the universal presence of ribosomes in cells. Application of these findings to bacterial (endo)symbionts lays bare a paradox in the functioning of these cells.\n\n## Materials and methods\n\n### Strains used\n\nWe use E. coli strain MG1655 (Blattner et al., 1997). The GFP variants, \u221230,\u00a0\u20137, 0,\u00a0+7,\u00a0+11a,\u00a0+11b,\u00a0+15, and\u00a0+25, were all expressed from an L-arabinose inducible promoter on a pBAD vector with an ampicillin-resistance selection marker. We obtained the genes for \u221230,\u00a0\u20137,\u00a0+15, and\u00a0+25 from David Liu\u2019s lab at Harvard, and nucleotide sequences of\u00a0+7,\u00a0+11a,\u00a0+11b from David Thompson. See (McNaughton et al., 2009) for \u221230,\u00a0\u20137,\u00a0+15, and\u00a0+25 GFP; see (Thompson et al., 2012a) for\u00a0+7,\u00a0+11a and\u00a0+11b. We designed the 0 GFP ourselves. All GFP variants have an N-terminal histag. For all GFP variants amino acid sequences are available in Supplementary file 1A.\n\nWe used Lactococcus lactis strain NZ9000 (Linares et al., 2010), which contains the nisR and nisK genes which in the presence of the inducer, nisin A, switches on the expression of genes from the nisA promoter (Kuipers et al., 1998). We cloned the coding segments for the his-tagged versions of \u221230, \u22127,\u00a0+15 and\u00a0+25 GFP behind the nisA promoter in the pNZ8048 vector (Kuipers et al., 1998). The expression levels of \u221230 GFP were too low for FRAP analysis.\n\nWe used Hfx. volcanii strain H1895 (Strillinger et al., 2016). We expressed the GFP variants, \u221230,\u00a0\u20137,\u00a0+15, and\u00a0+25, from the pTA1228 plasmid, which has a tryptophan-inducible promoter (Brendel et al., 2014). The amino acid sequences are the same as for E. coli and L. lactis. We optimized the nucleotide sequence for Hfx. volcanii by making the codon frequency in the GFP variants the same as for protein coding genes on the Hfx. volcanii chromosome. We constructed the pTA1228 bearing the genes for GFP variants in E. coli, and transformed the final plasmids in Hfx. volcanii by protocols described in the Halohandbook (Holmes et al., 2008). We obtained the strain, plasmid and the codon usage table from Thorsten Allers (University of Nottingham,\u00a0UK).\n\n### Preparation of E. coli for FRAP\n\nFor each experiment we took a glycerol stock of E. coli with one of the GFP variants and stabbed it with a pipette tip to obtain a small amount of cells. These we deposited in 4 mL LB medium containing 0.2 % v/v glycerol and 100 \u00b5g/mL ampicillin. We incubated the culture at 30\u00b0C, with 200 rpm shaking. The next day we took 8 \u00b5L of the LB culture to inoculate 4 mL MBM containing 0.2 % v/v glycerol and 100 \u00b5g/mL ampicillin. The composition of MBM, MOPS based medium, can be found in (Neidhardt et al., 1974). We adjusted the osmolality of MBM to 0.28 Osm with NaCl. Osmolalities were measured with an Osmomat 030 cryoscopic osmometer (Gonotec, Berlin,\u00a0Germany). For the \u221230 GFP variant we also added 0.4% L-arabinose (from a 20 % w/v stock in MilliQ), to induce protein expression. Again we incubated at 30\u00b0C, with 200 rpm shaking. The next morning the cultures had reached an OD600 between 0.6\u20131.6, which were diluted to an OD600 of 0.18\u20130.25. At the moment of dilution we also induced the expression of \u22127 GFP, with 0.1 % w/v L-arabinose, and 0,\u00a0+7 and\u00a0+11b GFP, with 0.4 % w/v L-arabinose. We incubated the cultures for a further 2\u20134 hr, to obtain an OD600 of 0.4\u20130.5, and then performed the FRAP measurements. To avoid aggregation, the\u00a0+11a,\u00a0+15 and\u00a0+25 GFP variants were induced with 0.4 % w/v L-arabinose 1\u20132 hr before the FRAP measurements. For each GFP variant the experiment was repeated at least three times.\n\n### Preparation of L. lactis for FRAP\n\nFor each experiment we took a glycerol stock from the \u221280\u00b0C freezer and stabbed it with a pipette tip to obtain a small amount of cells. These cells were deposited in 4 mL of growth medium in a culturing tube. The growth medium was CDM in all cases; the formulation of the chemically defined medium (CDM) is given in the supplement of (Mika et al., 2014), where it is referred to as CDMRP. There is one difference, here we also added L-proline (0.68 g/L, final concentration). We include glucose (1 % w/v), as a carbon and energy source, and chloramphenicol (5 \u00b5g/mL), to maintain the plasmids. We incubated the cultures at 30\u00b0C, without shaking (L. lactis grows semi-anaerobically). In the morning of the next day about 100 uL of culture was added to 4 mL of fresh CDM, to yield an OD600 of about 0.1. Simultaneously, we added 4 uL of nisin A solution (filtered supernatant from a L. lactis NZ9700 culture). The cultures were incubated at 30\u00b0C. We used the cultures for FRAP measurements at an OD600 of 0.38\u20130.46. We diluted the cultures to keep them from overgrowing. For each GFP variant the experiment was repeated 2\u20133 times.\n\n### Preparation of Hfx. volcanii for FRAP\n\nFor each experiment we took 2\u20133 colonies of Hfx. volcanii, expressing \u221230,\u00a0\u20137,\u00a0+15, or\u00a0+25 GFP, from an Hv-YPC agarose plate and suspended these in 4 mL Hv-YPC medium (Holmes et al., 2008). We incubated the cultures at 42\u00b0C, with 200 rpm shaking. The next morning we diluted the culture to an OD600 of 0.2\u20130.3 and at the same time added 4 mM L-tryptophan, to induce expression of the GFP variants. We incubated the cultures for 2\u20133 hr at 42\u00b0C, with 200 rpm shaking, before using the cells for FRAP measurements. At the time of the measurements the OD600 was 0.3\u20130.5. For each GFP variant the experiment was repeated three times.\n\n### Determination of diffusion coefficients\n\nWe performed fluorescence recovery after photo-bleaching (FRAP; see Figure 1a,b) on a LSM710 Zeiss confocal laser scanning microscope (Zeiss, Oberkochen, Germany), following a method originally described in\u00a0(Elowitz et al., 1999). Our implementation of this method is described in (Mika et al., 2014). We started with an overview image containing many cells, from which picked cells that are lying flat, are not undergoing cell division and have no neighbors that would obscure the analysis. We take a high resolution close-up of the cell and its immediate surroundings to see if the cell is fit for measurements. For FRAP we programmed the microscope to take three images, then photo bleach the GFP at one of the cell poles and finally record the recovery of the fluorescence over time. We recorded all images with a 488 nm laser; the same laser was used for bleaching but at a higher power.\n\nFor E. coli we did the FRAP measurements as follows. We took 400 \u00b5L culture and resuspended those cells twice in 300 \u00b5L MBM*. MBM* did not have glycerol or ampicillin and has Na+ instead of K+. The osmolality of the MBM* was either 0.28, 0.55 or 1.2 Osm. We adjusted the osmolality of the resuspension medium with NaCl. After we resuspended the cells we pipetted 4 \u00b5L of these cells on a cover slide. To make sure the E. coli cells didn\u2019t move we used (3-aminopropyl)triethoxysilane (APTES)-treated cover slides. The slides were prepared as follows. First we cleaned them by sonicating for 1 hr in 5 M KOH, rinsing 10 times with MilliQ and blowing off the remaining MilliQ with pressurized nitrogen. We then deposited the slides in acetone that contained 2 % v/v (3-aminopropyl)triethoxysilane. We incubated for 5 min at room temperature, removed the acetone and APTES and rinsed the slides 10 times with MilliQ. Again, the remaining MilliQ was blown off with pressurized nitrogen. After putting our cells on the APTES slide we put an object slide on top, for stability, and put the whole on the microscope stage. The stage temperature was maintained at 30\u00b0C. We used the slide for no longer than 20 min after depositing the cells. For \u221230,\u00a0\u20137 and 0 GFP under normal conditions, that is, no osmotic upshift, we recorded images at 50 time points and with 8 \u00d7 8 pixels, with a 4 ms exposure time and no extra time between exposures. For the positive GFP variants, and for the FRAP experiments after osmotic upshift (slower diffusion), we recorded images at a 100 time points, with 16 \u00d7 16 pixels, and a 8 ms exposure and a 8\u2013100 ms time step between the start subsequent exposures.\n\nFor L. lactis we pipetted 4 uL culture on a cover slide. We put an object slide on top, for stability, and the whole was put on the stage of the microscope (maintained at 30\u00b0C). We made sure that the cells didn\u2019t move by using cover slides that were sonicated for 1 hr in 5 M KOH, rinsed 10 times with MilliQ and dried by blowing of the remaining MilliQ with pressurized nitrogen. We used cover slides for no longer than 20 min after depositing cells, and cultures for no longer than 1 hr after reaching an OD600 of 0.38\u20130.46. We recorded the images in 8 \u00d7 10 pixels and with an exposure time of 5\u201337 ms, short for \u22127 GFP and long for\u00a0+25 GFP. For each cell we recorded the whole FRAP measurement in 50 images, without extra time between exposures.\n\nFor Hfx. volcanii we pipetted 4 \u00b5L culture on a cover slide (non-treated). Then a patch of 1% agar in 18% SW was put on top, to immobilize the cells (see the Halohandbook (Holmes et al., 2008) for the composition of SW). We then put the sample on the microscope stage. The stage temperature was maintained at 30\u00b0C. After a couple of minutes the cells stopped moving and we performed our FRAP measurements. We imaged for 20 min on a single sample. We recorded the images in 16 \u00d7 16 pixels with an exposure time of 8 ms and a time step, the time between the start of subsequent exposures, of 8\u201320 ms. For\u00a0+15 and+25 GFP we see clear aggregates in some cells (Figure 2\u2014figure supplement 1a). We did not include these cells in the FRAP measurements.\n\nOverall about 10% of the analyzed cells were too noisy and/or did not show a bleached area, so that a diffusion coefficient could not be determined. Those cells were excluded from the analysis. For the FRAP results of \u221230 GFP (1.2 Osm shock), \u22127 GFP and 0 GFP in E. coli we excluded around 20% of the cells. For 0 GFP this was necessary because the fluorescence level was too low in a fraction of the cells; for \u221230 (shock) and \u22127 GFP the apparent diffusion was too fast for detection. When we include the excluded cells we obtain the following medians: 0.28 \u00b5m2/s for \u221230 GFP (shock), 11.3 \u00b5m2/s for \u22127 GFP and 9.8 \u00b5m2/s for 0 GFP. This can be compared to the values 0.18, 10 and 8.6 \u00b5m2/s reported in Supplementary file 1B.\n\n### Co-localization of\u00a0+25 GFP and DNA in E. coli\n\nWe grew E. coli, containing\u00a0+25 GFP, in a culturing tube with 4 mL EZ; a rich defined growth medium (Teknova, Hollister, CA, USA), to which we added glycerol (0.2 % v/v), as a carbon and energy source, and ampicillin (100 \u00b5g/mL), to maintain the plasmid. We used EZ medium because the chloramphenicol didn\u2019t condense the DNA in cells grown in MBM. The culture was incubated at 30\u00b0C, with 200 rpm shaking for aeration. The next morning we used 200 uL of this culture to inoculate 4 mL of fresh EZ medium. We incubated the culture for 1 hr before adding 0.1% (w/v) L-arabinose, to induce the expression of\u00a0+25 GFP. After another hour of incubation, at an OD600 of 0.5\u20130.6, we added DRAQ-5 (2 \u00b5M), to visualize the DNA, and chloramphenicol (200 \u00b5g/mL), to condense the DNA (Bakshi et al., 2012; Chai et al., 2014). We imaged these cells between 1 and 1.5 hr after adding the DRAQ-5 and chloramphenicol, for which we deposited 10 uL culture on an APTES cover slide, prepared as described above, put an object slide on top and put the whole on the microscope stage. We performed all measurements at 30\u00b0C. We focused on a 200 \u00b5m x 200 \u00b5m area, containing\u00a0~200 cells, and recorded an image in the 488 (+25 GFP) and 633 (DNA) channels and used an exposure time of 3.3 s. We also recorded the transmitted excitation light to obtain a bright-field image. We picked the cells used for analysis from the transmission image to avoid bias. We selected cells that were lying flat and in focus.\n\n### Diffusion coefficients in DNA-free regions\n\nWe did FRAP measurements on \u22127 and\u00a0+25 GFP in DNA free regions in E. coli. The cells were grown in a culturing tube with 4 mL LB medium, containing glycerol (0.2 % v/v), as a carbon and energy source, and ampicillin (100 \u00b5g/mL), to maintain the plasmid. We incubated the culture overnight at 37\u00b0C, with 200 rpm shaking. We used LB medium, and incubated at 37\u00b0C, to get elongated cells in a reasonable time window upon cephalexin treatment (see below). The next day we made two new cultures, 4 mL LB (same composition as above), by adding 4 \u00b5L or 16 \u00b5L of overnight culture. We incubated these cultures at 37\u00b0C, with 200 rpm shaking. At an OD600 between 0.19\u20130.26 we added L-arabinose (0.1\u20130.2 % w/v), to induce GFP expression, and cephalexin (25 \u00b5g/mL), to elongate the cells (Chai et al., 2014). After a further two hours of incubation we added chloramphenicol (200 \u00b5g/mL), to condense the DNA (Chai et al., 2014), and DRAQ-5 (10 \u00b5M), to stain the DNA. The concentration of DRAQ-5 is above the minimum inhibitory concentration, 5 \u00b5M, for growth of E. coli MG1655 in EZ medium (Bakshi et al., 2012); at lower concentrations of DRAQ-5 the DNA did not stain properly. After a further 30\u201370 min incubation we took 200\u2013400 \u00b5L of culture and resuspended the culture twice in 200 \u00b5L LB (with 0.2 % v/v glycerol, 100 \u00b5g/mL ampicillin and 200 \u00b5g/mL chloramphenicol), to get rid of the DRAQ-5 background fluorescence. We used the following stock solutions: 20 % w/v L-arabinose in MilliQ, 1 mg/mL cephalexin in MilliQ, 20 mg/mL chloramphenicol in ethanol, and 200 \u00b5M DRAQ-5 in MilliQ.\n\nWe deposited 4 \u00b5L of the sample on an APTES cover slide, put an object slide on top and put the whole on the microscope stage. The microscope stage temperature was maintained at 37\u00b0C. The cells were on the stage for no longer than 1 hr. We measured the diffusion coefficients of \u22127 and\u00a0+25 GFP in these treated cells by the same method as before. The exception is that we do not draw the line for FRAP analysis from pole to pole. We draw it either to where DNA blocks movement of GFP (see Figure 4\u2014figure supplement 2a) or far enough away from the bleach. It is important that the boundary conditions that are used in the analysis are still satisfied, meaning no transfer of particles over the ends of the line. We also make sure to only measure at places where there is no DNA present. We recorded the recovery in 150 time points with 750 ms exposure time for\u00a0+25 GFP and 23\u201330 ms for \u22127 GFP. There was no additional time between exposures. The experiment was performed twice for both \u22127 and\u00a0+25 GFP.\n\n### Diffusion coefficients in the presence and absence of mRNA\n\nWe performed FRAP measurements over time of\u00a0+25 GFP expressing E. coli cells with and without rifampicin treatment. The cells were grown in a tube with 4 mL LB (with 0.2 % v/v glycerol and 100 \u00b5g/mL ampicillin). We incubated the culture overnight at 30\u00b0C, with 200 rpm shaking. The next day we used 8 \u00b5L of the overnight culture to inoculate a 4 mL MBM culture (with 0.2 % v/v glycerol and 100 \u00b5g/mL ampicillin). Again we incubated the culture at 30\u00b0C, with 200 rpm shaking. The next morning, depending on the OD600, the cultures were diluted with more MBM or allowed to continue growing. When the culture reached an OD600 of 0.17\u20130.23 the production of\u00a0+25 GFP was induced by adding 0.4 % w/v L-arabinose (from a 20 % w/v in MilliQ stock). At OD600 of 0.30\u20130.34 we took 198 \u00b5L culture and added either 2 \u00b5L DMSO (control) or 2 \u00b5L DMSO with 50 mg/mL rifampicin (for a final concentration of 0.5 mg/mL). After mixing we deposited 4 \u00b5L sample on an APTES cover slide, put an object slide on top and the put the whole on the microscope stage. The stage was maintained at 30\u00b0C for the duration of the experiment. We measured the diffusion coefficients by FRAP and recorded the time for each measurement. We did each FRAP measurement on a unique cell. The replicates represent separate cultures on the day of the FRAP measurements.\n\n### Sucrose gradient centrifugation of E. coli cell lysates and purified DNA\n\nFor each experiment on E. coli cell lysates, with E. coli expressing either \u22127 or\u00a0+25 GFP, we deposited a small amount of cells from a glycerol stock into 4 mL LB medium (containing 0.2 % v/v glycerol and 100 \u00b5g/mL ampicillin). We incubated the cultures at 30\u00b0C with 200 rpm shaking overnight. The next day we took 20 \u00b5L of the LB culture to inoculate 10 mL MBM (0.28 Osm, osmolality adjusted with NaCl, containing 0.2 % v/v glycerol and 100 \u00b5g/mL ampicillin). Again we incubated overnight. The next morning the cultures had reached an OD600 between 0.8\u20131.3, and were diluted to an OD600 of 0.1\u20130.16 in 50 mL of fresh medium in a 250 mL flask. We added 0.4% (w/v) L-arabinose to induce protein expression. We incubated the cultures for 3.5\u20134 hr, to obtain an OD600 of 0.25\u20130.37. We centrifuged 44 mL of each culture at 5250 g, 20 min, 4\u00b0C. From this point onward we did all the work on ice and used cooled buffers. Pellets were suspended in 1 mL of resuspension buffer (20 mM Tris-HCl pH 7.5, 15 mM magnesium acetate, 100 mM ammonium acetate plus 6 mM 2-mercaptoethanol), resulting in around 200\u2013300 fold dilution of cytoplasmic content. To calculate the dilution we assumed a cytoplasmic volume 0.5 fL (Taheri-Araghi et al., 2015) and 8\u00a0\u00d7\u00a0108 cells in 1 mL of culture of OD600 of 1. To each tube containing the suspension we added around 0.2 mg of 106 \u03bcm glass beads (Sigma, St. Louis, MO, USA) and lysed the cells using two repetitions of 50 Hz oscillation for 5 min (TissueLyser LT, QIAGEN, Venlo, The Netherlands). We cooled the sample on ice in between repetitions. We added PMSF (100 mM in isopropanol stock) to the lysates to a final concentration of 1 mM. Then the lysates were centrifuged at 9000 g, for 2 min at 4\u00b0C. We took the supernatant and centrifuged it at 9000 g for 15 min at 4\u00b0C. We layered 800 \u03bcL of the resulting supernatant onto 8 mL of linear 10\u201340% sucrose gradient. The sucrose solutions contained 1 mM PMSF and were prepared with the resuspension buffer. We centrifuged the gradients using a swing-out rotor (SW 32.1 Ti, Beckman, Brea, CA, USA) at 125 000 g for 80 min at 4\u00b0C as described previously (Maki et al., 2000; Puri et al., 2014). We recorded a fluorescence profile over the sucrose gradient by dividing the gradient in 600 \u03bcL fractions, and measuring the fluorescence intensity for each fraction in a Jasco FP-8300 fluorimeter. We excited with 488 nm and recorded the emission from 500 to 600 nm (in 5 nm intervals). For the analysis we used the fluorescence emission at 510 nm. To correct for background fluorescence, we acquired spectra of 10, 20, 30% and 40% sucrose in resuspension buffer with 1 mM PMSF. A linear fit of the 510 nm emission intensities was used to calculate sucrose-caused background values for each fraction. For lysates of E. coli expressing \u22127 and\u00a0+25 GFP the experiment was carried out two times.\n\nFor the samples containing DNA, we dissolved salmon testes DNA in autoclaved MQ to a final concentration of 1 mg/mL. The DNA was added to the cell lysates directly after the second centrifugation step; the sample was incubated for around 30 min on ice, before layering it onto the sucrose gradient. To determine the fractionation profile of DNA we layered 0.2 mg/ml DNA onto the linear sucrose gradient, except that the 2-mercaptoethanol and PMSF were omitted. The collected fractions were diluted 1:1 in 20 mM Tris-HCl pH 7.5, 15 mM magnesium acetate, 100 mM ammonium acetate. We determined DNA levels by measuring the absorbance of each fraction from 200 to 340 nm with 5 nm intervals, using Cary 100 Bio UV-VIS spectrometer. To correct for background absorption we measured fractions of pure MQ sample treated in the same way. For lysates of E. coli expressing\u00a0+25 GFP with addition of DNA the experiment was carried out once for each DNA concentration; the DNA control experiment was also done once.\n\n### Electron microscopy\n\nWe dialyzed the fractionated cell lysate samples in pre-cooled 20 mM Tris-HCl pH 7.5, 15 mM magnesium acetate, 100 mM ammonium acetate for 1 hr to remove the sucrose. The samples were pipetted on glow-discharged carbon-coated copper grids, excess liquid was removed by blotting and the grids were stained with 2% uranyl acetate. EM was performed on a Tecnai T20 electron microscope (FEI, Eindhoven, The Netherlands) operated at 200 kV, images were acquired with a 4000 SP 4K slow-scan CCD camera (Gatan, Pleasanton, CA, USA) as described previously (Puri et al., 2014).\n\n### Purification of ribosomes\n\nThe protocol for isolating ribosomes is based on (Blaha et al., 2000) and (Moazed et al., 1986). For the isolation of ribosomes we used E. coli MC1061 cells. These cells harbor a pBAD vector (Fulyani et al., 2013). A small amount of cells from a glycerol stock was deposited into 30 mL of LB medium containing 100 \u00b5g/mL ampicillin in a 100 mL flask. We incubated the cultures at 37\u00b0C overnight with 200 RPM shaking. The next day we inoculated two cultures of 1 L fresh medium in 5 L flasks with 10 mL of the overnight culture each. We grew the cultures for 2\u20133 hr, until an OD600 of 0.66\u20130.81. We centrifuged the cultures at 6000 g, 10 min, 4\u00b0C in a JLA-9.1000 rotor (Beckman). From this point onward we did all the work on ice and used cooled buffers. Pellets were suspended in 10\u201320 mL of resuspension buffer (20 mM HEPES-NaOH pH 7.5, 10 mM MgCl2, 30 mM ammonium acetate, 150 mM KCl, 10 mM NaCl, 6 mM 2-mercaptoethanol, 1 mM PMSF). About 10 \u00b5g/mL of DNase I (Sigma) was added to the cell suspension. Cells were lysed by sonication for 12 min with cycling on and off every 5 s. We used the Vibra-Cell VCX 130 sonicator (Sonics,\u00a0Newtown, CT,\u00a0USA) with 6 mm diameter probe at 70% amplitude, and we cooled the tube in an ethanol-ice bath. The lysates were centrifuged at around 30,000 g, 1 hr, 4\u00b0C in a MLA-80 rotor (Beckman). The top part of the supernatant (4 out of 6 mL in the tube) was carefully pipetted into clean centrifugation tubes. The supernatant was centrifuged at around 110,000 g, 17 hr, 4\u00b0C in a MLA-80 rotor. We discarded the supernatant, leaving an opaque, white-yellowish pellet. The pellet was washed gently with 1 mL of SEC buffer (20 mM HEPES-NaOH pH 7.5, 10 mM MgCl2, 30 mM ammonium acetate, 150 mM KCl, 10 mM NaCl, 6 mM 2-mercaptoethanol). Then, we gently added 0.8\u20131.6 mL of SEC buffer onto the pellet and nutated for 1 hr at 4\u00b0C. The resulting suspension was centrifuged at 20,000 g, 7 min, 4\u00b0C to pellet the aggregates. We purified the resulting supernatant on a SEC setup (AKTA,\u00a0GE Healthcare, Chicago, IL, USA, equipped with 1260 Infinity FLD fluorescence detector, Agilent, Santa Clara, CA, USA), using a Superdex 200 10/300 GL (GE Healthcare) column and SEC buffer as eluent. Three peak A280 fractions were pooled, resulting in 1.5 mL of purified ribosomes. We measured absorbance at 260 and 280 nm, using a NanoDrop ND-1000 (Thermofisher, Waltham, MA, USA) spectrophotometer. Reported A280 values varied between 0.27 and 1.08 at 1 mm light path, depending on the replicate, the amount of buffer used for resuspension of the ribosome pellet and the volume loaded into the SEC setup. A260/A280 ratio of replicates was constant at around 1.9. From now on, all mentioned absorbance values are reported with a 1 mm light path.\n\n### Purification of \u22127 and\u00a0+25 GFP\n\nThe protocol for isolating \u22127 and\u00a0+25 GFPs is based on (Thompson et al., 2012b). For the purification of GFPs we used E. coli MG1655 strains containing pBAD bearing the gene for either \u22127 or\u00a0+25 GFP. We deposited a small amount of cells in 30 mL of LB with 100 \u00b5g/mL ampicillin in a 100 mL flask for \u22127 GFP, and in 100 mL of medium in a 500 mL flask for\u00a0+25 GFP. The cultures were incubated at 37\u00b0C overnight with 200 RPM shaking. The next day we inoculated 2 L and 6 L of fresh medium for \u22127 and\u00a0+25 GFP, respectively, by adding 10 mL of overnight culture to 1 L of medium in a 5 L flask. At the time of inoculation, the protein expression was induced by adding L-arabinose to final concentration of 0.4 % w/v. We incubated the cultures at 30\u00b0C, 200 RPM for about 3 hr. We centrifuged the cultures at 6000 g, 10 min, 4\u00b0C in a JLA-9.1000 rotor. From this point onward we did all the work on ice and used cooled buffers. We suspended the pellets in GFP resuspension buffer (50 mM potassium phosphate pH 7.5, 2 M NaCl, 1 mM MgCl2, 20 mM imidazole) at around 5\u201310 mL of GFP resuspension buffer per 1 L of culture. About 10 \u00b5g/mL of DNase I and about 10 \u00b5g/mL of RNase A (Sigma) were added to the cell suspension. Cells were lysed by sonication, for 12 min with cycling on and off every 5 s. We used Vibra-Cell VCX 130 sonicator (Sonics), with 6 mm diameter probe at 70% amplitude, and cooled the tube in an ethanol-ice bath. Immediately after the sonication, we added EDTA to a final concentration of 0.5 mM. We centrifuged the lysate at around 20,000 g, 20 min, 4\u00b0C in a JA-25.50 rotor (Beckman). We collected the supernatants and added Ni Sepharose 6 Fast Flow (GE Healthcare) resin, corresponding to 2 mL of column volume, to\u00a0+25 and \u22127 GFP isolates each. The supernatants with the column material were nutated for 45 min at 4\u00b0C. Then we put the suspensions into columns, and washed each with 20 column volumes of GFP equilibration buffer (50 mM potassium phosphate pH 7.5, 2 M NaCl, 20 mM imidazole), then with 20 column volumes of GFP wash buffer (50 mM potassium phosphate pH 7.5, 2 M NaCl, 50 mM imidazole). The proteins were eluted with GFP elution buffer (50 mM potassium phosphate pH 7.5, 2 M NaCl, 500 mM imidazole), and around 1 mL of the highest intensity fractions were pooled. We then added EDTA to each pool to a final concentration of 5 mM. Purified \u22127 and\u00a0+25 GFP were centrifuged at 20,000 g, 7 min, 4\u00b0C to pellet possible aggregates. We purified the resulting supernatant on a SEC setup (GE Healthcare AKTA equipped with Agilent 1260 Infinity FLD fluorescence detector), using Superdex 200 10/300 GL (GE Healthcare) column and SEC buffer (20 mM HEPES-NaOH pH 7.5, 10 mM MgCl2, 30 mM ammonium acetate, 150 mM KCl, 10 mM NaCl, 6 mM 2-mercaptoethanol) as running buffer. We pooled three fractions with the highest 510 nm emission at 488 nm excitation into 1.5 mL of purified GFP solution for \u22127 and\u00a0+25 GFP each. We measured the absorbance at 280 nm, using a NanoDrop ND-1000 (Thermofisher,\u00a0Bleiswijk,\u00a0NL) spectrophotometer. Reported A280 values were around 0.015 for \u22127 GFP and 0.022 for\u00a0+25 GFP, with little variation between replicates. Both \u22127 and\u00a0+25 GFP solutions were visibly green.\n\n### Analytical SEC experiments\n\nDuring preliminary experiments we noticed aggregation occurring while mixing\u00a0+25 GFP with ribosomes at low dilution of the SEC purification pools. The aggregation was reproducible throughout all replicates. Despite the aggregation not being visible by naked eye, we were still able to see a pellet after centrifugation when imaging the fluorescence of the tubes (Figure 5e). Through trial-and-error we established that mixing ribosomes at A280\u00a0=\u00a00.14 and+25 GFP at A280\u00a0=\u00a00.0013 results in no aggregation (visible by naked eye after centrifugation at 20,000 g, 7 min, 4\u00b0C), while producing a peak at 280 nm for ribosomes when run again on SEC.\n\nFor the main experiments ribosomes and GFPs were diluted in SEC buffer to A280\u00a0=\u00a00.14 and A280\u00a0=\u00a00.0013, respectively, in a total volume of 0.8 mL. The solutions were then centrifuged at 20000 g, 7 min, 4\u00b0C to pellet aggregates. In the cases where we mixed ribosomes with \u22127 or\u00a0+25 GFP, the GFP was added to the ribosome solution. The solutions were incubated on ice for 10 min before centrifugation. We collected the supernatant and ran 0.6 mL immediately on SEC (GE Healthcare AKTA equipped with Agilent 1260 Infinity FLD fluorescence detector), using Superdex 200 10/300 GL (GE Healthcare) column and SEC buffer as running buffer, while monitoring absorption at 280 nm and emission at 510 nm with 488 excitation. The centrifugation tubes and remaining solution were imaged for fluorescence using the LAS-3000 (Fujifilm,\u00a0Tokyo,\u00a0Japan) imager. We performed all these measurements twice. Additionally, for\u00a0+25 GFP we ran a ribosome/GFP mixture with a 1.8x higher GFP concentration (A280\u00a0=\u00a00.0024) that exhibited clear aggregation.\n\n### Computational analysis of proteomes\n\nWe made histograms of the distributions of pI and net charge of all proteins encoded by the genomes of E.\u00a0coli, L. lactis and Hfx. volcanii. All protein sequence data was retrieved from UniProt (Bateman et al., 2015). For E. coli we used a K12 strain (proteome ID: UP000000318), for L. lactis we used strain MG1363 (proteome ID: UP000000364) and for Hfx. volcanii we used strain DS2 (proteome ID: UP000008243). The L. lactis MG1363 strain is the parent strain of L. lactis NZ9000 that we used for FRAP (Linares et al., 2010). The Hfx. volcanii DS2 is the parent strain of Hfx. volcanii H1895 (Strillinger et al., 2016). We calculated the pI of each protein based on its amino acid sequence using the Isoelectric Point Calculator by Kozlowski (Kozlowski, 2016). We modified the program to allow for net charge calculations; the pI and net charge values we report are based on the IPC_protein pKa dataset of the Isoelectric Point Calculator. To calculate the net charge we used a pH of 7.5. To get the distributions in the cytoplasm we took only those proteins that have gene ontology labels cytoplasm and cytosol in the uniprot database(GO:0005737 and GO:0005829). For E. coli this yielded 1406 proteins (compared to 4254 proteins in the full genome), for L. lactis 253 (2383), and for Hfx. volcanii 177 (3987). For E. coli we also made pI and net charge distributions in which protein copy numbers are taken into account. To do this we took copy number data from Schmidt et al. (Schmidt et al., 2016). Specifically, we took the abundance data for E. coli BW25113 cultured in M9 glycerol.\n\nWe also made histograms of the distributions of pI and net charge of all proteins encoded by the genomes of Buchnera aphidicola (proteome ID: UP000001806), Blochmannia floridanus (proteome ID: UP000002192), Onion yellows phytoplasma (proteome ID: UP000002523), and Wiggleworthia glossinidia brevipalpis (proteome ID: UP000000562). For Buchnera the cytoplasmic fraction contained 190 proteins (compared to 572 proteins in the full genome), for Blochmannia 156 (583), for phytoplasma 87 (730), and Wigglesworthia 158 (617).\n\n### Calculation of protein charge\n\nTo calculate the charge of the GFP variants we counted the number of Asp, Glu, Lys and Arg residues, used the pKa values of all (de)protonatable residues and used the Henderson-Hasselbalch equation to calculate the net charge. Results of these calculations give net charge 1\u20132 higher than net charge calculated using the modified IPC and the IPC_protein pKa dataset (\u221231.1,\u00a0\u20138.2, \u22121.3,\u00a0+5.6,\u00a0+9.5,\u00a0+9.5,\u00a0+13.6,\u00a0+23.5 for \u221230,\u00a0\u20137, 0,\u00a0+7,\u00a0+11a,\u00a0+11b,\u00a0+15 and\u00a0+25 GFP respectively). In reality, ions can specifically bind to proteins and thereby change the base net charge (i.e. before any ionic screening effects occur) (Filoti et al., 2015). This is especially true for anions (Filoti et al., 2015), which could affect our (quantitative) interpretation. Two examples: bovine serum albumin (measured charge, \u221213.8; calculated charge, \u221218.3) (Filoti et al., 2015) and hen egg white lysozyme (measured charge,\u00a0+5.1; calculated charge,\u00a0+11) (Gokarn et al., 2011); the actual values depend on the type(s) of ion(s) present (Gokarn et al., 2011). We also assumed that each residue of a particular type (e.g. all aspartates) have the same pKa independent of context. To take ion binding and context dependent pKa values into account would be a whole study in itself.\n\n### Derivation of Equation 1\n\nFor diffusion in one dimension the probability density for the position of a particle after time, $t$, is given by:\n\n$$\np(x)=\u00a0\\frac{N}{\\sqrt{4\\piDt}}e^{\u2212\\frac{x^{2}}{4Dt}}\n$$\n\nHere $x$ is the position, $p(x)$ is the probability as a function of $x$, $N$ is a normalization factor, $D$ is the diffusion coefficient, and $t$ is the time step. When the particle is free it moves with diffusion coefficient $D_{free}$ and when bound with $D_{bound}$. The particle goes back and forth between free and bound states a number of times in a certain period of time, $\u0394t$. Because the motion in each time step is independent of the other time steps, we can sum all time steps and distances travelled for the free state and we can do the same for the bound state. We end up with two equations like Equation 7 but in one we have $D=D_{free}$ and $t\u00a0=\u00a0f_{free}\u0394t$ and in the other $D=D_{bound}$ and $t=(1-f_{free})\u0394t$, with $f_{free}$ being the fraction of time that the particle is free. To get the probability density for the position of the particle after time step, $\u0394t$, we convolute the two equations. A convolution of a Gaussian function leads to another Gaussian in the following way:\n\n$$\nf(x)\u2217g(x)=\u00a0\\frac{N}{\\sqrt{2\\pi}\\sigma_{f}}e^{\u2212\\frac{x^{2}}{2\\sigma_{f}^{2}}}\u2217\\frac{N}{\\sqrt{2\\pi}\\sigma_{g}}e^{\u2212\\frac{x^{2}}{2\\sigma_{g}^{2}}}=\u00a0\\frac{N}{\\sqrt{2\\pi(\\sigma_{f}^{2}+\\sigma_{g}^{2})}}e^{\u2212\\frac{x^{2}}{2(\\sigma_{f}^{2}+\\sigma_{g}^{2})}}\n$$\n\nHere, $*$, is the symbol for a convolution. By comparing Equations 7 and 8 we can see that $\\sigma_{f}^{2}=2D_{free}f_{free}\u0394t$ and $\\sigma_{g}^{2}=2D_{bound}(1\u2212f_{free})\u0394t$. We can also define an effective diffusion coefficient, $D_{eff}$, such that $\\sigma_{f}^{2}+\\sigma_{g}^{2}=\u00a02D_{eff}\u0394t$. Combining the last results and dividing by $2\u0394t$ we obtain Equation 1.\n\nThis derivation depends on six assumptions, as described in the discussion. The justification for these assumptions are as follows. We assumed that (1) the exchange between free and bound state is much faster than the FRAP measurement. This is justified because we did not observe two-component recovery in the FRAP data. We assumed that (2) the highest diffusion coefficient of all variants in a given organism reflects the free state of GFP; justified by the fact that for E. coli the GFP diffusion coefficient levels off towards more negative charge. We assumed that (3) GFPs bind solely to ribosomes; this we have shown experimentally. We assumed that (4) the total number of binding sites on all ribosomes is higher than the number of GFPs. The first justification is that the number of binding sites is about 106 and it is unlikely that we express that many GFPs because the cell only has about 3 \u00d7 106 total proteins. The second justification is that 99% of\u00a0+25 GFP appears to be bound, meaning that there are enough binding sites to bind all GFPs. We assumed that (5) the decrease of diffusion coefficient with net positive charge has the same origin in all three organisms. This assumption is plausible because all three organisms have ribosomes, and assuming the same cause for slow diffusion is the most parsimonious. Finally, we assumed that (6) the ribosome diffusion coefficient is the same in all three organisms. Here the justification is that for all three organisms \u22127 GFP diffusion coefficients are similar, suggesting similar crowding, for E. coli and L. lactis the diffusion coefficient are similar also for a big protein complex (Mika et al., 2014). The consequence for violating assumption one is that there is no Deff to speak of and the whole calculation becomes irrelevant. The consequence for violating assumptions 2, 3, 5, and 6 is that the numerical values coming out of the equation will be different, with the severity of the error depending on the difference in diffusion coefficients. The consequence of violating assumption four is that there will be free GFP irrespective of affinity as there are no more binding sites to fill.\n",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "befcae25-a557-4471-9f05-08c360e3ad57",
+      "submission_id": "6fb11ffe-1289-40ec-8557-fe61e19a5fc1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Victor Sourjik, Max Planck Institute for Terrestrial Microbiology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30084.035](https://doi.org/10.7554/eLife.30084.035)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ribosome surface properties impose limits on the nature of the cytoplasmic proteome\" for consideration by eLife. Your article has been favorably evaluated by Ian Baldwin (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Conrad W Mullineaux (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn their manuscript \"Ribosome surface properties impose limits on the nature of the cytoplasmic proteome\" the authors have measured diffusion of a set of GFP variants with different net charge in the bacterial cytoplasm. They show that the positively charged proteins diffuse much slower than the negative ones and propose that this behavior arises from protein binding to the negatively charged ribosomes. The authors further hypothesize that such binding to ribosomes imposes evolutionary selection against positively charged cytoplasmic proteins in bacteria, possibly explaining why such proteins are rare. Finally, they discuss the case of several endosymbiotic bacteria, which apparently contain a much larger fraction of positively charged proteins. The findings of the manuscript have potentially fundamental biological importance.\n\nEssential revisions:\n\nThe reviewers raised several concerns related to the analysis and interpretation of the data and suggested additional experiments in order to further support authors' conclusions. These concerns must be addressed before the manuscript can be accepted.\n\n1) Although binding to ribosomes is a plausible explanation for the observed slow diffusion of the positively charged GFP variants, it should be further confirmed by direct measurements of protein binding to purified ribosomes, using for example ITC. You should perform these experiments with both positively and negatively charged GFP constructs under well-defined physiological conditions of pH and ionic strength.\n\n2) Further evidence is required to rule out that the slower diffusion of positively charged proteins is not due to their binding to mRNA. This could also be done using in vitro experiments as described above.\n\n3) The discussion of protein charge distribution in endosymbionts is too long and speculative, as the authors have no experimental data for these species to support their hypothesis. This discussion should be substantially shortened.\n\n4) The claim made in the title of the manuscript may be too strong, since the authors could not directly prove that binding to ribosomes was indeed the main reason for evolutionary selection against positively charged proteins. Toning down the title to something like \"Ribosome surface properties likely impose limits on the nature of the cytoplasmic proteome\" as well as rephrasing of the Abstract seem appropriate.\n\nReviewer #1:\n\nThe manuscript by Schavemaker et al. describes vary interesting observation that positively charged GFP variants show much slower diffusion in bacterial cytoplasm. This finding is novel, and it potentially has fundamental biological importance. Authors further propose that this effect could be explained by the binding of positively charged proteins to ribosomes. However, there are several serious issues related to the analysis and interpretation of the data that need to be addressed before the manuscript could be considered for publication.\n\n1) The central claim of the manuscript is that slower diffusion of the positively charged GFP is primarily due to its binding to the surface of ribosomes. In this context, I find the interpretation of Figure 4A questionable. Authors show that treatment with rifampicin results in faster diffusion of +25 GFP, although even upon such treatment the diffusion coefficient remains well below one of -30 GFP. As far as I understand their logic, the authors assume that this increase is due to dissociation of ribosomes bound to +25 GFP from mRNA (which becomes degraded upon rifampicin treatment). Couldn't the same effect be explained by binding of +25 GFP to mRNA itself? This would not rule out that binding to ribosomes is an important factor in limiting diffusion positively charged proteins in bacteria. But unless the authors can exclude direct binding to mRNA, it may have as much effect as the binding to ribosomes, meaning that the title and the Abstract should be formulated more cautiously.\n\n2) Subsection \u201cGFP variants and histograms of diffusion coefficients of surface modified variants of GFP in Escherichia coli\u201d, end of last paragraph. The authors state that they did not find association of +25 GFP with the membrane, without presenting any evidence. What I find worrying is that, in Figure 2\u2014figure supplement 1, in some \"very heterogeneous\" cells +25 GFP appears to localize to the cell periphery, which might indicate binding to the membrane. Although such cells were excluded from further analysis, I think it is possible that even in cells without obvious peripheral localization some membrane binding occurs \u2013 unless the authors have some direct evidence that +25 GFP does not bind to the membrane.\n\n3) In using the equation 1 that describes diffusion with binding, the authors make a number of assumptions. Although the assumptions are clearly specified (and plausible), I think it would be important to justify these assumptions more explicitly (e.g., assumption #1) and mention how would violation of these assumptions affect the conclusions.\n\n4) Figures 2 and 3: why is GFP with zero charge not shown?\n\nReviewer #2:\n\nI enjoyed reading this paper, which introduces a really fresh and exciting approach to thinking about the factors that influence the effective viscosity of the cytoplasm. The idea that the majority of bacterial cytoplasmic proteins could be negatively charged to minimise interaction with ribosomes and maximise their rates of diffusion was a revelation to me. The paper reports an incisive series of experiments that provide convincing evidence that positive surface charge slows diffusion in the cytoplasm and this effect is at least largely due to interaction with ribosomes bound to RNA. The paper is well-written, and the data are well-presented. However, the authors do need to calculate p- values to confirm significant differences between the diffusion coefficients for different GFP variants and under different conditions. Otherwise the only part of the manuscript that I found unsatisfactory was the discussion of the positively-charged proteome of 4 endosymbiotic species (Abstract; Figure 7\u2014figure supplement 2, subsection \u201cProteome analysis reveals potentially slow proteins\u201d, last two paragraphs). This section raises far more questions than it answers. Here there is no accompanying data in whether cytoplasmic protein diffusion actually is slower in these species, whether the cytoplasmic pH or ionic strength is different, or whether or not the positive proteome is a general feature of endosymbionts (what about mitochondria and chloroplasts too?). And are there non-endosymbiotic bacteria out there with a positively-charged proteome? I would recommend reducing this section to a brief comment that are certain exceptions to the rule of a predominantly negatively-charged cytoplasmic proteome, that deserve further investigation in future.\n\nReviewer #3:\n\nIn this study, the authors have estimated the lateral diffusion coefficients (D) of a set of surface modified GFPs and have shown that in E. coli D depends on the net charge and its distribution over the protein. They show that the positively charged proteins diffuse much slower than the negative ones and this behavior probably arise from their nonspecific association to the negatively charged ribosomes in the cytoplasm. Thus they claim that the presence of limited number of positively charged proteins in E. coli is most probably for avoiding their crowding on the ribosome \u2013 the protein synthesis machinery of the cell. The study is certainly interesting and makes a big claim, but some results need to be clarified and established by additional experiments in order to make such conclusion.\n\n1) The nucleoid occlusion of +25 GFP is not obvious in majority of the cells shown in the Figure 4\u2014figure supplement 1. Why is it so?\n\n2) Also, only 9 out of 46 cells (only 20%) showed shrinking of the nucleoid upon Chl treatment. This is somewhat strange and can be certainly improved. 1.5 h incubation may be too long; different time period of incubation should be tried to obtain higher fraction of the cells with typical chloramphenicol features.\n\n3) The ribosomal association of the +25 GFP is shown by co-sedimentation with the ribosomes in sucrose gradient analysis. Further the Kd has been determined by indirect method as 6.7 uM. Since this data is the key to the whole study, I strongly recommend that they validate it with other method such as ITC. In fact, the authors should subject all their GFP constructs to ITC analysis for estimating affinity to the (purified) ribosomes and plot the Kd values against the net charge of the GFPs. This will allow better establishment of a link with the proteome analysis already presented here.\n\n4) The title of the article must be changed to match the exact finding of the study. It makes an exaggerated claim that the surface property of the ribosome limits the nature of the cytoplasmic proteome, for which the authors have no direct evidence whatsoever! It will require evolution experiments where changing surface charge of the ribosome will allow spontaneous inclusion of the positive charge in various proteins. It is not even discussed adequately and mentioned in the Abstract with uncertainty 'Ribosome surface properties MAY thus limit\u2026..'.\n\n5) The referencing is not done properly. For ribosomal nucleoid exclusion, and also, for changes in the cell shape, ribosome and nucleoid distribution due to chloramphenicol and cephalexin treatment the authors should refer to Chai et al., JBC, 2014.\n",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "20ddfcfe-051a-4ce0-99f6-492ee2037250",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C1",
+      "claim": "Protein mobility in the cytoplasm depends on protein surface properties and ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied the dependence of protein mobility on protein surface properties and ionic strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main research question stated in the abstract, supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "f25e0fd3-39b1-48af-b1d4-67f8b217b310",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C2",
+      "claim": "In E. coli, the translational diffusion coefficient (D) depends on the net charge and its distribution over the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in E. coli D depends on the net charge and its distribution over the protein, with positive proteins diffusing up to 100-fold slower than negative ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP measurements shown in Figures 1 and 3, demonstrating the relationship between charge and diffusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "c21b0226-14c1-4f54-a3f5-65ca9c94578e",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C3",
+      "claim": "Positive proteins diffuse up to 100-fold slower than negative ones in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in E. coli D depends on the net charge and its distribution over the protein, with positive proteins diffusing up to 100-fold slower than negative ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from FRAP data comparing -30 GFP (10-11 \u00b5m\u00b2/s) to +25 GFP (0.14 \u00b5m\u00b2/s) in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "3cef72e1-220b-432d-bf0c-0b770bf5195e",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C4",
+      "claim": "The effect of charge on protein diffusion is weaker in L. lactis and Hfx. volcanii due to electrostatic screening.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is weaker in L. lactis and Hfx. volcanii due to electrostatic screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparative FRAP measurements across three organisms shown in Figure 2, correlated with their different ionic strengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "cc42b6fd-a69b-47c1-b010-ec7189b1a688",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C5",
+      "claim": "The decrease in mobility of positive proteins is caused by interaction with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in mobility is probably caused by interaction of positive FPs with ribosomes as shown in in vivo diffusion measurements and confirmed in vitro with purified ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by rifampicin experiments (Figure 4b), sucrose gradient co-localization (Figure 5a-c), and in vitro binding assays (Figure 5d-g).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "41ad434e-9077-4ba5-adcf-3cc43b3a5e31",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C6",
+      "claim": "Ribosome surface properties may limit the composition of the cytoplasmic proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome surface properties may thus limit the composition of the cytoplasmic proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that positive proteins bind to ribosomes and diffuse slowly, combined with proteome analysis showing predominantly negative proteins (Figure 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "613c86f5-5496-413d-8db1-9abace0a1125",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C7",
+      "claim": "E. coli has a cytoplasmic K+ concentration of 0.2 M.",
+      "claim_type": "EXPLICIT",
+      "source": "These three organisms differ in their cytoplasmic ionic strength as shown by measurements on the dominant cation, K+: E. coli (0.2 M) (Shabala et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Shabala et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "0f7f5202-9d4e-4e79-a9d5-c95f02781836",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C8",
+      "claim": "L. lactis has a cytoplasmic K+ concentration of 0.8 M.",
+      "claim_type": "EXPLICIT",
+      "source": "L. lactis (0.8 M) (Poolman et al., 1987)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Poolman et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "7578033f-9c8d-4596-bbf3-a7e224f3c3a5",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C9",
+      "claim": "Hfx. volcanii has a cytoplasmic K+ concentration of 2.1 M.",
+      "claim_type": "EXPLICIT",
+      "source": "Hfx. volcanii (2.1 M) (P\u00e9rez-Fillol and Rodr\u00edguez-Valera, 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference P\u00e9rez-Fillol and Rodr\u00edguez-Valera, 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "6b5dfba4-dd16-40c9-a922-75fadfd8021d",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C10",
+      "claim": "The -30, -7, and 0 variants of GFP all have the same mean diffusion coefficient of 10-11 \u00b5m\u00b2/s in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u221230, \u20137 and 0 variants of GFP all have the same mean diffusion coefficient of 10\u201311 \u00b5m2/s (for table of mean diffusion coefficients see Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "a92e3ac3-ca95-444d-be6c-56e039c04724",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C11",
+      "claim": "The mean diffusion coefficient of +25 GFP in E. coli is 0.14 \u00b5m\u00b2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "down to a mean value of 0.14 \u00b5m2/s for +25 GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP and shown in Figure 1d and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "5a627d0a-d77b-438a-b799-86b0f9cf9714",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C12",
+      "claim": "For +25 GFP to diffuse with a coefficient as low as 0.14 \u00b5m\u00b2/s, it needs to bind to membrane proteins, DNA, and/or ribosome-mRNA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a census of elements present in E. coli cells this means that for +25 GFP to diffuse with a diffusion coefficient as low as 0.14 \u00b5m2/s it needs to bind to membrane proteins, DNA and/or ribosome-mRNA complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of +25 GFP diffusion coefficient with known diffusion coefficients of cellular components.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "8906a78a-8010-444f-96c9-8d58ff44b28a",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C13",
+      "claim": "Membrane proteins with 12-14 transmembrane helices in E. coli and L. lactis have D = 0.02-0.03 \u00b5m\u00b2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For membrane proteins with 12\u201314 transmembrane helices in E. coli and L. lactis, D is 0.02\u20130.03 \u00b5m2/s (Mika et al., 2014; Kumar et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature references Mika et al., 2014 and Kumar et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "0c0e6d12-fa5b-4b6b-afc5-d0b34132525b",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C14",
+      "claim": "DNA in E. coli has apparent diffusion coefficient values of 0.000035-0.00007 \u00b5m\u00b2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Describing the motion of DNA with a diffusion coefficient is somewhat of a stretch, as its parts do not move freely, but apparent values of 0.000035\u20130.00007 \u00b5m2/s have been reported (Reyes-Lamothe et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Reyes-Lamothe et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "cc3d8cd1-adba-4b58-a61a-ac9aab243ed8",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C15",
+      "claim": "Ribosome-mRNA complexes in E. coli have a diffusion coefficient of 0.04 \u00b5m\u00b2/s when a one-component model is used.",
+      "claim_type": "EXPLICIT",
+      "source": "In fast growing cells, we expect ribosomes and mRNA to be associated most of the time (Sanamrad et al., 2014), and D is 0.04 \u00b5m2/s when a one-component model is used for fitting the data (Bakshi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature references Sanamrad et al., 2014 and Bakshi et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "18c00f6b-591d-4c37-b0c3-b6a4734983bc",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C16",
+      "claim": "Free ribosomes have D = 0.40 \u00b5m\u00b2/s (~15%) and bound ribosomes have D = 0.055 \u00b5m\u00b2/s (~85%).",
+      "claim_type": "EXPLICIT",
+      "source": "In another study free and bound ribosomes were discriminated and D values of 0.40 (~15%) and 0.055 \u00b5m2/s (~85%) were found (Sanamrad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Sanamrad et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "c21405a8-a62b-4ad6-babb-26f7d9416748",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C17",
+      "claim": "The mean diffusion coefficient of -7 GFP in L. lactis (6.2 \u00b5m\u00b2/s) is lower than in E. coli (10 \u00b5m\u00b2/s).",
+      "claim_type": "EXPLICIT",
+      "source": "For L. lactis the mean diffusion coefficient of \u22127 GFP (6.2 \u00b5m2/s) is lower than for E. coli (10 \u00b5m2/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP and shown in Figure 2 and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "06c122eb-6228-45be-bad7-c1499b5fbf06",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C18",
+      "claim": "The mean diffusion coefficient of +25 GFP is higher in L. lactis (0.61 \u00b5m\u00b2/s) than in E. coli (0.14 \u00b5m\u00b2/s).",
+      "claim_type": "EXPLICIT",
+      "source": "However, D drops less with positive net charge so that for +25 GFP the mean diffusion coefficient is higher in L. lactis (0.61 \u00b5m2/s) than in E. coli (0.14 \u00b5m2/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP and shown in Figure 2 and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "8239139b-bb01-44a1-ae30-1cd254b073d2",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C19",
+      "claim": "The higher cytoplasmic ionic strength of L. lactis reduces the affinity of positive GFPs to negatively-charged binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained by the higher cytoplasmic ionic strength of L. lactis, reducing the affinity of positive GFPs to hypothetical negatively-charged binding partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of diffusion data across organisms with different ionic strengths.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "9d53e01a-99e8-4962-a2d2-cc45bd517ab3",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C20",
+      "claim": "In Hfx. volcanii, the mean diffusion coefficient drops from 5.5 \u00b5m\u00b2/s for -7 GFP to 1.9 \u00b5m\u00b2/s for +25 GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "For Hfx. volcanii the drop in diffusion coefficient is even less steep, with the mean diffusion coefficient dropping from 5.5 \u00b5m2/s, for \u22127 GFP, to 1.9 \u00b5m2/s, for +25 GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP and shown in Figure 2 and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "83aa8f59-6d9a-4034-ada7-dbc45eb4a044",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C21",
+      "claim": "In Hfx. volcanii, the diffusion coefficient of -30 GFP (10 \u00b5m\u00b2/s) is higher than that of -7 GFP (5.5 \u00b5m\u00b2/s).",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that in Hfx. volcanii the diffusion coefficient of \u221230 GFP is higher than of \u22127 GFP, 10 \u00b5m2/s compared to 5.5 \u00b5m2/s, which may be caused by a less negative binding partner for GFP in Hfx. volcanii than in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP and shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "0262cef9-73c8-4679-9a87-2c5de5f16869",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C22",
+      "claim": "After osmotic upshift to 1.2 Osm, the diffusion coefficients of all GFP variants in E. coli dropped.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1.2 Osm medium the diffusion coefficients of all variants dropped (Figure 3a and Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP after osmotic upshift, shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "5552809a-cd82-4956-b242-b69ec0b3ada5",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C23",
+      "claim": "The fold-change in diffusion coefficient after osmotic upshift to 1.2 Osm is 56-fold for -30 GFP, 28-fold for -7 GFP, 16-fold for +15 GFP, and 7-fold for +25 GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of the drop is 56-, 28-, 16-, and 7-fold (between medians) for \u221230, \u20137, +15 and +25, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from FRAP measurements before and after osmotic upshift, shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "f76e3126-433d-4f93-97b1-b9bb5c1663dc",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C24",
+      "claim": "The fold-change in diffusion is less for positive proteins because electrostatic screening may partly compensate for the increased crowding effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the fold-change is less for the positive proteins because the electrostatic screening may compensate partly for the increased crowding effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that positive proteins show smaller fold-changes in diffusion after osmotic upshift.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "20c3f514-e7d0-458f-ae5e-3f4f71b6833f",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C25",
+      "claim": "The mean diffusion coefficient of +11b GFP is 2.7 \u00b5m\u00b2/s and that of +11a GFP is 0.76 \u00b5m\u00b2/s in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean diffusion coefficient of +11b GFP is 2.7 \u00b5m2/s and that of +11a GFP is 0.76 \u00b5m2/s (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by FRAP, shown in Figure 3c and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "1a508502-d0e2-48b9-b0f4-b8faf6ae3050",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C26",
+      "claim": "The distribution of charge over the GFP surface affects the diffusion coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "So, it clearly matters how the net charge is distributed over the GFP surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing +11a and +11b GFP variants with the same net charge but different charge distributions, shown in Figure 3c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "66ec4746-d710-4c03-9045-9316487c3025",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C27",
+      "claim": "+25 GFP does not co-localize with DNA in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In nine cells (Figure 4\u2014figure supplement 1a\u2013i) out of 46 the nucleoid had shrunk and in all these cells + 25 GFP did not co-localize with DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by fluorescence microscopy with DRAQ-5 DNA staining and chloramphenicol treatment, shown in Figure 4a and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "fead4ea7-b520-40d2-a137-d68647428076",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C28",
+      "claim": "DNA is not the major binding partner for +25 GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that DNA is not the major binding partner for +25 GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on co-localization experiments showing +25 GFP does not follow DNA distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "9c8b4d9e-5516-43d9-933b-89c97b40a489",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C29",
+      "claim": "The drop in +25 GFP diffusion rate is not dependent on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the drop in +25 GFP diffusion rate is not dependent on DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by FRAP measurements in DNA-free regions showing similar differences between -7 and +25 GFP, shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "deb1fcf0-e531-4921-9948-e79979f7d2d5",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C30",
+      "claim": "After treatment with rifampicin, the diffusion coefficient of +25 GFP increases for 20 min and then levels off.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that after treatment with rifampicin, the diffusion coefficient of +25 GFP increases for 20 min and then levels off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured by time-course FRAP after rifampicin addition, shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "f9cbcabe-849b-4696-b1f5-f36cd3f12363",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C31",
+      "claim": "The diffusion coefficient of +25 GFP after 20 min of rifampicin treatment is close to the value of the 30S ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the diffusion coefficient after 20 min of rifampicin treatment is close to the value of the 30S and presumably the 50S subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown in Figure 4b where +25 GFP diffusion coefficient approaches the dashed line indicating 30S ribosome diffusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "de18ed03-3cc1-419b-aa62-203242fe5120",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C32",
+      "claim": "The positive GFP variants bind to ribosomes, and this is the major cause for their slow diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings indicate that the positive GFP variants bind to ribosomes, and that this is the major cause for their slow diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from rifampicin experiments, co-localization studies, and in vitro binding assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "aca9c68c-fc61-4449-bbf3-d5139ef931bd",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C33",
+      "claim": "+25 GFP co-localizes with ribosomes on sucrose gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a clear difference in the position of \u22127 and +25 GFP along the gradient, with the peak of the +25 GFP distribution coinciding with the presence of ribosomes (Figure 5a and c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sucrose gradient centrifugation with fluorescence detection and electron microscopy, shown in Figure 5a and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "f18cac96-2bfe-47b4-9ab9-9c3d4f5e34dd",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C34",
+      "claim": "Even at the highest concentration of DNA tested, +25 GFP co-localizes with ribosomes and not with DNA on sucrose gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at the highest concentration of DNA, +25 GFP co-localizes with ribosomes and not with DNA (Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by sucrose gradient experiments with added purified DNA, shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "4d713b67-e079-417a-b6b9-4b1280443ad6",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C35",
+      "claim": "+25 GFP binds predominantly to ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "From the combination of sucrose gradient experiments and our in vivo studies described above, we conclude that +25 GFP binds predominantly to ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from multiple lines of evidence including sucrose gradients, rifampicin experiments, and DNA-free region studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "54ed1d49-afc9-4532-ba0a-acc3ef951976",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C36",
+      "claim": "Purified +25 GFP associates and aggregates with purified ribosomes at physiological salt concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "At physiological salt concentrations (Shabala et al., 2009) we observe that upon mixing ribosomes and +25 GFP, aggregates are formed (Figure 5e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by size-exclusion chromatography and fluorescence imaging of purified components, shown in Figure 5d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "804b22f2-4090-48d8-9021-7c5556be2b85",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C37",
+      "claim": "-7 GFP does not bind to ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The control experiment with \u22127 GFP shows that the anionic protein does not bind to ribosomes and elutes on SEC at around 17.5 ml (Figure 5g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by size-exclusion chromatography showing no change in elution profile when -7 GFP is mixed with ribosomes, shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "136be4a4-c101-4f06-91fc-87fc1459939b",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C38",
+      "claim": "In E. coli under the growth conditions used, the number of ribosomes per \u00b5m\u00b3 is about 17000, corresponding to a concentration of 10 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "For E. coli, under our growth conditions, the number of ribosomes per \u00b5m3 is about 17000 (Vendeville et al., 2011), which corresponds to a concentration of 10 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Vendeville et al., 2011 and converted to concentration.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "6cd0c7c9-dd24-423f-a938-2d8e473ba091",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C39",
+      "claim": "The ribosome has a diameter of 20 nm and a surface area of 1260 nm\u00b2, with about half being RNA (630 nm\u00b2).",
+      "claim_type": "EXPLICIT",
+      "source": "The ribosome has a diameter of 20 nm, which yields a surface area of 1260 nm2, assuming a spherical shape. About half of this surface area is RNA so we end up with 630 nm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from known ribosome dimensions using geometric assumptions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "a497005e-48e4-44c6-9005-55f28136956d",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C40",
+      "claim": "The maximal number of GFP binding sites on a ribosome is 66.",
+      "claim_type": "EXPLICIT",
+      "source": "The diameter of GFP is 3.5 nm, giving a 9.6 nm2 cross section. Dividing the ribosome RNA surface area by the GFP cross section gives a maximal number of binding sites of 66.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from geometric considerations of ribosome RNA surface area and GFP cross-sectional area.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "9328b651-d3a9-42e7-81cd-b05e311a4fa4",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C41",
+      "claim": "The Kd for binding of +25 GFP to a ribosome binding site is 6.7 \u00b5M in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a fraction of bound +25 GFP of 0.99 in E. coli, we obtain Kd = 6.7 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the fraction of bound GFP and the concentration of binding sites using equilibrium binding equations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "ce81d782-9d0c-44d4-95a7-b7b975c4c8f6",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C42",
+      "claim": "The Kd for binding of +25 GFP to a ribosome binding site is 65 \u00b5M for L. lactis and 155 \u00b5M for Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "If we make the assumption that the concentration of ribosomes in L. lactis and Hfx. volcanii is the same as in E. coli, then the Kd for binding of +25 GFP to a ribosome binding site is 65 \u00b5M for L. lactis and 155 \u00b5M for Hfx. volcanii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from diffusion data assuming similar ribosome concentrations across organisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "7f8dc88b-1076-46f0-b08e-36f0521f9817",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C43",
+      "claim": "The binding of +25 GFP to ribosomes can be described by electrostatic interactions and screening by small ions on top of a base non-ionic interaction component.",
+      "claim_type": "EXPLICIT",
+      "source": "Together the results for the relation between Kd and ionic strength, and Deff and GFP charge, show that the binding of GFP to ribosomes can be described by electrostatic interactions and screening by small ions on top of a base non-ionic interaction component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by fitting the data with Debye-H\u00fcckel-based equations (Equations 3-5) shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "4f40c5ee-f5b6-4617-82f1-d0e899225c46",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C44",
+      "claim": "In all three organisms (E. coli, L. lactis, Hfx. volcanii), the majority of cytoplasmic proteins is acidic and thus negatively charged at physiological internal pH of 7.5.",
+      "claim_type": "EXPLICIT",
+      "source": "From the pI distributions it is clear that in all three organisms the majority of cytoplasmic proteins is acidic and thus negatively charged at the physiological internal pH of 7.5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by proteome analysis shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "fe3a7672-abf5-4d21-9be6-3a08644dcc01",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C45",
+      "claim": "In E. coli, 35 cytoplasmic proteins have a net charge higher than +10, consisting of 18 ribosomal, 9 RNA-associated, 5 DNA-associated and 3 uncharacterized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli 35 cytoplasmic proteins have a net charge higher than +10. These consist of 18 ribosomal, 9 RNA-associated, 5 DNA-associated and 3 uncharacterized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by computational proteome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "9dada1ae-5610-4427-9199-e86171bf6972",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C46",
+      "claim": "All three organisms (E. coli, L. lactis, Hfx. volcanii) essentially have no 'free' positive cytoplasmic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, all three organisms essentially have no 'free' positive cytoplasmic proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from proteome analysis showing that highly positive proteins are associated with ribosomes, RNA, or DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "5c30b4e9-9d93-47d6-aaca-b14f27d6d3ef",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C47",
+      "claim": "The drop in diffusion coefficient with increased positive charge may partly explain why the proteome is mostly negative in E. coli, L. lactis and Hfx. volcanii.",
+      "claim_type": "EXPLICIT",
+      "source": "The drop in diffusion coefficient with increased positive charge may partly explain why the proteome is mostly negative in E. coli, L. lactis and Hfx. volcanii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of diffusion data and proteome analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "4ffaa660-02d6-4ac1-a431-1f31a4df8c53",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C48",
+      "claim": "Positive proteins not only diffuse slowly but their binding to ribosomes might also inhibit protein synthesis by affecting the assembly or activity of ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive proteins not only diffuse slowly but their binding to ribosomes might also inhibit protein synthesis, that is, by affecting the assembly or the activity of ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the observed binding of positive proteins to ribosomes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "66f84131-5ec2-478c-be97-711a4ca8fa80",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C49",
+      "claim": "Ribosomal proteins RplT and RplB in E. coli have net charges of +24 and +31, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The most extreme cases, RplT and RplB, with net charges of +24 and +31, would have a drop in diffusion coefficient of 100-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined from proteome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "9c2badfa-44a8-42c5-b4db-78ee5e9ecb3d",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C50",
+      "claim": "The synthesis of cationic ribosomal proteins and the assembly of ribosomes should be highly coordinated and preferably be modular to minimize unwanted side-effects of nonspecific interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "An implication of our findings is that the synthesis of cationic ribosomal proteins and the assembly of ribosomes should be highly coordinated and preferably be modular to minimize unwanted side-effects of nonspecific interactions (Davis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that positive ribosomal proteins would bind nonspecifically to assembled ribosomes, with citation to Davis et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "75089ea9-e454-44ee-9361-5b940c35fc22",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C51",
+      "claim": "Buchnera aphidicola, Blochmannia floridanus, Onion yellows phytoplasma, and Wigglesworthia glossinidia brevipalpis are (endo)symbionts with small genomes of 572-730 protein-encoding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A conundrum is encountered when we look at the proteomes of the bacteria Buchnera aphidicola, Blochmannia floridanus, Onion yellows phytoplasma, and Wigglesworthia glossinidia brevipalpis. All four organisms are (endo)symbionts of plants or insects and have small genomes: 572\u2013730 protein-encoding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined from proteome database analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "90362dee-880f-46bb-9dd7-dae8af287ff8",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C52",
+      "claim": "The four symbiotic bacteria (Buchnera aphidicola, Blochmannia floridanus, Onion yellows phytoplasma, Wigglesworthia glossinidia brevipalpis) have very basic proteomes.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these have very basic proteomes (Figure 7b and Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by proteome analysis shown in Figure 7b and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "ae9c553e-1ad0-44fd-bb65-d1be3b0ae426",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C53",
+      "claim": "It is unclear how symbiotic bacteria with basic proteomes are able to deal with, or avoid, slow diffusion and ribosomes getting swarmed with positive proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear how these organisms are able to deal with, or avoid, slow diffusion and ribosomes getting swarmed with positive proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a paradox identified by the authors based on their findings and proteome analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "168797e7-d261-4098-80eb-15de96f1e347",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C54",
+      "claim": "A protein can diffuse only as slow as the combination of this protein and the slowest component it binds to in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A protein can diffuse only as slow as the combination of this protein and the slowest component it binds to in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle described by Equation (1) and illustrated in Figure 8.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "004d4c41-e542-453a-bd7a-14caefd3576f",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C56",
+      "claim": "The diffusion coefficient of GFP is faster in the cytoplasm of osmotically-adapted E. coli cells than in osmotically-upshifted cells, even at similar cytoplasmic macromolecule volume fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the diffusion coefficient of GFP is faster in the cytoplasm of osmotically-adapted E. coli cells than in osmotically-upshifted cells, even at similar cytoplasmic macromolecule volume fraction (Konopka et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Konopka et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "2b95628c-71df-458e-be6d-786118e2aebe",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C57",
+      "claim": "The diffusion coefficient of GFP drops much faster with cell volume (after an osmotic upshift) in Lactococcus lactis than in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the diffusion coefficient of GFP drops much faster with cell volume (after an osmotic upshift) in Lactococcus lactis than in E. coli (Mika et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Mika et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "16e882b3-467a-4ec1-bb95-e1f4e692b169",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C58",
+      "claim": "The slowing of diffusion in metabolic energy-depleted cells suggests changes in the dynamic structure of the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the slowing of diffusion in metabolic energy-depleted cells suggests changes in the dynamic structure of the cytoplasm (Parry et al., 2014; Joyner et al., 2016; Munder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature references Parry et al., 2014; Joyner et al., 2016; Munder et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "6e804de2-51b1-4b51-a27c-ee8e7af2d78b",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C59",
+      "claim": "Binding of tRNA complexes to the ribosome is a diffusion-limited process that leads to limitation in cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of diffusion-limited processes are binding of tRNA complexes to the ribosome, which leads to limitation in cell growth (Klumpp et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Klumpp et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "8434e4fc-25f3-46bf-86cf-6cc408f5d365",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C60",
+      "claim": "The binding of barstar to barnase is diffusion limited because the proteins are designed to have an increased association rate by electrostatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "and the binding of barstar to barnase, which we know to be diffusion limited because the proteins are designed to have an increased association rate by electrostatic interactions (Vijayakumar et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Vijayakumar et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "24e53298-db32-48b6-abfd-056cdb1bbc72",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C61",
+      "claim": "Only 50 protein types make up 85% of the cytoplasmic proteome of E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "though only 50 protein types make up 85% of the cytoplasmic proteome of E. coli (McGuffee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference McGuffee et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "622c20c8-fde3-4f63-9359-ae8072a52b93",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C62",
+      "claim": "NMR studies reveal that there are weak interactions between E. coli proteins and proteins cytochrome c, ubiquitin, and calmodulin.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR studies on proteins, either in the E. coli cytoplasm (Crowley et al., 2011; Ye et al., 2013) or cell lysates (Latham and Kay, 2013), reveal that there are weak interactions between E. coli proteins and proteins cytochrome c, ubiquitin, and calmodulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature references Crowley et al., 2011; Ye et al., 2013; Latham and Kay, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "f5e8d2c2-d571-4a6d-90da-04d1cc0e9130",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C63",
+      "claim": "In E. coli, more highly expressed proteins are constrained in evolution to be less sticky.",
+      "claim_type": "EXPLICIT",
+      "source": "In a computational study on protein interactions it was found that in E. coli more highly expressed proteins are constrained in evolution to be less sticky (Levy et al., 2012), suggesting that nonspecific interactions are common and consequential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Levy et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "459cc01b-880c-4892-933a-cf26236da0a3",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C64",
+      "claim": "The 30S ribosomal subunit in E. coli increases its diffusion coefficient from 0.04 \u00b5m\u00b2/s to 0.6 \u00b5m\u00b2/s after treatment with rifampicin.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the 30S ribosomal subunit in E. coli increases its diffusion coefficient, from 0.04 \u00b5m2/s to 0.6 \u00b5m2/s, after treatment with rifampicin (Bakshi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Bakshi et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "a043302f-d5ac-4c0b-81b5-ef12adf8aec0",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C65",
+      "claim": "After adding rifampicin to E. coli cells, the pool of mRNA plummets, with 90% of the mRNAs having a half time of less than 8 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Rifampicin stops transcription and after adding it to E. coli cells the pool of mRNA plummets, with 90% of the mRNAs having a half time of less than 8 min (Bernstein et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature reference Bernstein et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "0dea70d6-1d88-478f-b280-eba9fdea5936",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C66",
+      "claim": "The fluorescence of +25 GFP expressing cells becomes more homogenous after rifampicin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that the fluorescence of +25 GFP expressing cells becomes more homogenous after rifampicin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed during rifampicin time-course experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "e2b1189f-2754-4910-9ed4-f5ab4ed64ab8",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C67",
+      "claim": "The variation in diffusion coefficient between cells is smaller in the presence than in the absence of rifampicin.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we find that the variation in diffusion coefficient between cells is smaller in the presence than in the absence of rifampicin, suggesting that part of the spread in the diffusion relates to ongoing transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in rifampicin experiments shown in Figure 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "57dbce0d-d936-40cc-965f-68297389d0bf",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C68",
+      "claim": "In E. coli, there is a big difference (35-fold) between the mean diffusion coefficient of -7 and +25 GFP in DNA-free regions after treatment with cephalexin and chloramphenicol.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a big difference between the mean diffusion coefficient of \u22127 and +25 GFP after treatment and in the absence of DNA (35-fold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by FRAP in DNA-free regions, shown in Figure 4\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "e8322d2b-a50c-4a20-944f-72169700fc5d",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C69",
+      "claim": "A similar difference (85-fold) between -7 and +25 GFP was found in cells that were not treated and in the presence of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar difference between \u22127 and +25 GFP was found in cells that were not treated and in the presence of DNA (85-fold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from FRAP data in untreated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "44c8491a-3c2b-4f3d-a604-b82358a65f67",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C70",
+      "claim": "+25 GFP is somewhat excluded from DNA (nucleoid), with the effect being largest for +25 GFP compared to -7 GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Both \u22127 and +25 GFP are somewhat excluded from DNA (nucleoid) but the effect is largest for +25 GFP; this is another piece of evidence suggesting that +25 GFP binds to ribosome-mRNA and not to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in fluorescence images and co-localization experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "9cc3ef58-40a0-4388-9114-37af8fbff279",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C71",
+      "claim": "In Hfx. volcanii, even with its high internal ion concentration, a major fraction (0.81) of +25 GFP is still bound to ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "From the analysis we conclude that even in Hfx. volcanii, with its high internal ion concentration, a major fraction (0.81) of +25 GFP is still bound to ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated using Equation (1) from diffusion data, shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "cab1d1d7-7582-4740-897b-4c027e03fb0a",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C72",
+      "claim": "GFP probably binds to the RNA that is exposed on the surface of the ribosome and probably does so nonspecifically.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP probably binds to the RNA that is exposed on the surface of the ribosome and probably does so nonspecifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the electrostatic nature of the interaction and the negatively charged RNA surface.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "3f58d033-1ae3-4859-a5eb-9a6d36c88dd6",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C73",
+      "claim": "The concentration of ribosome binding sites in E. coli is 660 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the concentration of binding sites is 660 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from ribosome concentration (10 \u00b5M) and number of binding sites per ribosome (66).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "7ce3d514-a802-4fed-9421-faced28496d5",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C74",
+      "claim": "The fraction of bound +25 GFP in E. coli is 0.99.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a fraction of bound +25 GFP of 0.99 in E. coli, we obtain Kd = 6.7 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from diffusion data using Equation (1).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "0d5d00a6-f7a4-4e87-bee9-6f374eed0221",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C75",
+      "claim": "The ionic strength dependence of the interaction of +25 GFP with ribosomes is similar to that of barnase-barstar, colicinE9-Im9, and thrombin-hirudin protein pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The ionic strength dependence of the interaction of +25 GFP with ribosomes (recorded in E. coli, L. lactis and Hfx. volcanii; Figure 6b) is similar to that of the three protein pairs in dilute solutions (Figure 6a); the Kd increases with ionic strength and levels off at higher ionic strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing the data in Figure 6a and 6b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "3a6f46f9-ee1f-456b-8f11-a23bc86067b6",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C76",
+      "claim": "A non-ionic interaction component is needed for proper fitting of the +25 GFP-ribosome binding data.",
+      "claim_type": "EXPLICIT",
+      "source": "We had expected that the non-ionic interaction free energy would be close to zero, but if we impose this conditions the fit becomes bad (Figure 6c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing fits with and without non-ionic component in Figure 6b and 6c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "40505306-a832-4b3a-920d-82a0436bf0f1",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "claim_id": "C77",
+      "claim": "When using a log scale to represent the diffusion coefficient, there is a linear dependence of diffusion coefficient with net charge from 0 to +25 in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "When we use a log scale to represent the diffusion coefficient we see a linear dependence of diffusion coefficient with net charge from 0 to +25 (for E. coli).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown in Figure 6d where the data points follow a linear trend on a log scale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7ed956c3-836b-49fa-918c-01ef7ba7c19f",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In E. coli, protein diffusion coefficients depend on net charge, with positive proteins diffusing up to 100-fold slower than negative ones. Negatively charged GFP variants (-30, -7, 0) all diffuse at 10-11 \u00b5m\u00b2/s, while +25 GFP diffuses at only 0.14 \u00b5m\u00b2/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C11 provide direct FRAP measurements showing the charge-dependent diffusion effect in E. coli. The 100-fold difference is quantitatively supported by comparing -30 GFP (10-11 \u00b5m\u00b2/s) to +25 GFP (0.14 \u00b5m\u00b2/s), as shown in Figure 1d. The data are internally consistent and statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "8ecf12c1-9053-4620-8b83-f532afa88756",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The effect of charge on protein diffusion is weaker in L. lactis and Hfx. volcanii compared to E. coli, which correlates with their higher cytoplasmic ionic strengths (0.8 M and 2.1 M K+ respectively, versus 0.2 M in E. coli). This is attributed to electrostatic screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C7-C9, C17-C21 demonstrate that higher ionic strength organisms show reduced charge-dependent diffusion effects. The ionic strength values are cited from literature (C7-C9), and the diffusion measurements across organisms (Figure 2) show the expected trend. The electrostatic screening explanation (C19) is a reasonable inference from established biophysical principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "696676a3-a41e-47f5-9d2f-a32266447f14",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Osmotic upshift to 1.2 Osm decreases diffusion coefficients of all GFP variants in E. coli, but the fold-change is smaller for positive proteins (7-fold for +25 GFP) than negative proteins (56-fold for -30 GFP), likely due to compensating electrostatic screening from increased ion concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by FRAP measurements shown in Figure 3a. The differential response to osmotic stress based on charge is quantitatively documented. The interpretation that electrostatic screening compensates for crowding effects in positive proteins (C24) is a reasonable inference, though alternative mechanisms are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "11e46a31-82e1-40ed-b77c-7d54fe2792bb",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The spatial distribution of charge on the protein surface affects diffusion coefficient. Two GFP variants with the same net charge (+11) but different charge distributions show different diffusion coefficients: +11b GFP (2.7 \u00b5m\u00b2/s) versus +11a GFP (0.76 \u00b5m\u00b2/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by FRAP measurements comparing +11a and +11b variants (Figure 3c-d). The ~3.5-fold difference in diffusion despite identical net charge demonstrates that charge distribution matters. This is a well-controlled comparison that isolates the effect of charge distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "3ded843a-b4ae-4c0e-bb9e-7742ce6f4ddc",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "+25 GFP does not co-localize with DNA and the drop in diffusion rate is not dependent on DNA. FRAP measurements in DNA-free regions show similar fold-differences between -7 and +25 GFP (35-fold) as in DNA-containing regions (85-fold).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29, C68-C70 are supported by multiple experimental approaches: DRAQ-5 co-localization studies (Figure 4a, Figure 4-supplement 1) and FRAP in DNA-free regions created by cephalexin/chloramphenicol treatment (Figure 4-supplement 2). The consistency across methods strengthens the conclusion that DNA is not the major binding partner.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "After rifampicin treatment, which depletes mRNA, the diffusion coefficient of +25 GFP increases over 20 minutes and plateaus at a value close to that of the 30S ribosomal subunit (0.04 \u00b5m\u00b2/s), indicating that positive GFP variants bind to ribosomes and this is the major cause of their slow diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C64-C67 are supported by time-course FRAP experiments after rifampicin addition (Figure 4b). The timing of diffusion increase matches mRNA degradation kinetics (C65), and the final diffusion coefficient matches literature values for ribosomal subunits (C64). The reduced cell-to-cell variation after rifampicin treatment (C67) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "486e9756-1b79-4e60-bb0e-6517b4b2c4ce",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "+25 GFP binds predominantly to ribosomes, as demonstrated by co-localization on sucrose gradients. Even at high DNA concentrations (5x physiological), +25 GFP co-localizes with ribosomes and not with DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by sucrose gradient centrifugation experiments with fluorescence detection and electron microscopy (Figure 5a-c). The DNA competition experiments (C34, Figure 5b) strengthen the conclusion by showing that even excess DNA does not shift +25 GFP away from the ribosome fractions. Multiple complementary methods support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "3723ac98-b0b2-427a-a7a9-4eea91851dca",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Purified +25 GFP associates and aggregates with purified ribosomes at physiological salt concentrations in vitro, while -7 GFP does not bind to ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by size-exclusion chromatography and fluorescence imaging of purified components (Figure 5d-g). The formation of aggregates with +25 GFP but not -7 GFP provides direct biochemical evidence for charge-dependent ribosome binding. The in vitro system validates the in vivo observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "17c5856c-6360-44d7-88b6-86715caa8fa5",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Kd for +25 GFP binding to ribosome binding sites is estimated as 6.7 \u00b5M in E. coli, 65 \u00b5M in L. lactis, and 155 \u00b5M in Hfx. volcanii, based on geometric calculations of binding sites (66 per ribosome) and diffusion-based estimates of bound fractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C42, C73-C74 involve multiple assumptions and calculations. While the geometric reasoning for binding site number (C39-C40) is reasonable, the Kd calculations depend on several unverified assumptions: (1) ribosome concentration is the same across organisms (C42), (2) all binding sites are equivalent, (3) GFP binds nonspecifically to RNA surface. The fraction bound (0.99 for +25 GFP in E. coli, C74) is calculated rather than directly measured. These estimates provide useful order-of-magnitude values but have significant uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "dad250be-0a98-42d8-98f6-febe1981749f",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The binding of +25 GFP to ribosomes can be described by electrostatic interactions and ionic screening on top of a base non-ionic interaction component, as demonstrated by fitting data with Debye-H\u00fcckel-based equations. The ionic strength dependence is similar to known protein-protein interaction pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C75-C77 are supported by fitting experimental data to theoretical models (Figure 6). The comparison to barnase-barstar, colicinE9-Im9, and thrombin-hirudin pairs (C75) provides validation. The requirement for a non-ionic component (C76) is demonstrated by comparing fits with and without this term. The linear dependence on log scale (C77) is consistent with the model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "8c4babc4-5226-44eb-92b6-08bdfd5700e0",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In E. coli, L. lactis, and Hfx. volcanii, the majority of cytoplasmic proteins are negatively charged at physiological pH 7.5. In E. coli, only 35 cytoplasmic proteins have net charge >+10, and these are ribosomal, RNA-associated, or DNA-associated proteins. The drop in diffusion with positive charge may partly explain why proteomes are mostly negative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by computational proteome analysis (Figure 7a). The identification of highly positive proteins and their functional associations (C45) is data-driven. The inference that slow diffusion constrains proteome composition (C47) is reasonable but represents a hypothesis rather than direct demonstration of causality. The correlation is clear, but other evolutionary pressures may also contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "39a5bf9b-2c6c-47e5-9674-cad1674632f1",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Positive ribosomal proteins (e.g., RplT with +24 charge and RplB with +31 charge) would experience 100-fold drops in diffusion coefficient if free in the cytoplasm. This implies that synthesis of cationic ribosomal proteins and ribosome assembly should be highly coordinated and modular to minimize nonspecific interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are logical inferences from the experimental data. The net charges of ribosomal proteins (C49) are determined from proteome analysis. The predicted diffusion slowdown is extrapolated from the GFP data. The conclusion about coordinated synthesis (C50) is a reasonable inference supported by citation to Davis et al., 2016, though it represents a hypothesis about cellular strategy rather than direct experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "06f53add-b07e-4f4e-a2bb-ee244a01dbfc",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Four symbiotic bacteria (Buchnera aphidicola, Blochmannia floridanus, Onion yellows phytoplasma, Wigglesworthia glossinidia brevipalpis) with small genomes (572-730 genes) have very basic proteomes, creating a paradox: it is unclear how these organisms avoid slow diffusion and ribosomes being swarmed with positive proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by proteome database analysis (Figure 7b, Figure 7-supplement 2). The identification of basic proteomes in symbionts is data-driven. The paradox (C53) is a legitimate scientific question raised by the findings, though no resolution is provided. This represents an important observation that challenges the generality of the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "a810c27a-100e-438b-ba22-13c5af4be8d6",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The decrease in mobility of positive proteins is caused by interaction with ribosomes, and ribosome surface properties may limit the composition of the cytoplasmic proteome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 synthesize multiple lines of evidence: rifampicin experiments (C30-C32), sucrose gradients (C33-C35), in vitro binding (C36-C37), and proteome analysis (C44-C47). The convergence of in vivo, in vitro, and computational approaches strongly supports the conclusion that ribosomes are the major binding partner. The broader implication for proteome composition (C6) is a reasonable inference but represents a hypothesis about evolutionary constraint.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "f2864536-7eb3-4912-9048-d2f7ec3d5cc0",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "For +25 GFP to diffuse as slowly as 0.14 \u00b5m\u00b2/s in E. coli, it must bind to slow-moving cellular components: membrane proteins (D = 0.02-0.03 \u00b5m\u00b2/s), DNA (D = 0.000035-0.00007 \u00b5m\u00b2/s), or ribosome-mRNA complexes (D = 0.04 \u00b5m\u00b2/s for one-component model, or D = 0.055 \u00b5m\u00b2/s for bound ribosomes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 provide a logical framework for interpreting the slow diffusion of +25 GFP. The diffusion coefficients for cellular components are cited from literature (C13-C16). The reasoning that +25 GFP must bind to one of these slow components (C12) is sound, though it does not definitively identify which component. This analysis motivated the subsequent experiments that identified ribosomes as the binding partner.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "62b42250-4ea2-4a70-9d2d-14a93068edc2",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A protein can only diffuse as slowly as the combination of the protein and the slowest component it binds to. Even in Hfx. volcanii with high ionic strength (2.1 M K+), 81% of +25 GFP is still bound to ribosomes. GFP probably binds nonspecifically to RNA exposed on the ribosome surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is a theoretical principle correctly described by Equation 1 and illustrated in Figure 8. Claim C71 is calculated from diffusion data using this equation, though it depends on assumptions about ribosome diffusion coefficients. Claim C72 is a reasonable speculation about the binding mechanism based on the electrostatic nature of the interaction, though direct structural evidence is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    },
+    {
+      "id": "70147d6b-a91c-4f34-ace7-87a2864c67e9",
+      "content_id": "c96a2922-30d4-4c76-8300-03a33c6c537f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Literature context: Previous studies showed that GFP diffusion is faster in osmotically-adapted versus upshifted E. coli cells, drops faster with cell volume in L. lactis than E. coli, and slows in energy-depleted cells. Diffusion-limited processes include tRNA-ribosome binding and barstar-barnase binding. The cytoplasm contains weak nonspecific interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 are all cited from literature and provide context for the current study. These are appropriately referenced and accurately represent prior work. They establish the motivation for studying charge-dependent diffusion and provide comparison points for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:08:21.144443Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "20ddfcfe-051a-4ce0-99f6-492ee2037250",
+      "result_id": "7ed956c3-836b-49fa-918c-01ef7ba7c19f"
+    },
+    {
+      "claim_id": "f25e0fd3-39b1-48af-b1d4-67f8b217b310",
+      "result_id": "7ed956c3-836b-49fa-918c-01ef7ba7c19f"
+    },
+    {
+      "claim_id": "c21b0226-14c1-4f54-a3f5-65ca9c94578e",
+      "result_id": "7ed956c3-836b-49fa-918c-01ef7ba7c19f"
+    },
+    {
+      "claim_id": "6b5dfba4-dd16-40c9-a922-75fadfd8021d",
+      "result_id": "7ed956c3-836b-49fa-918c-01ef7ba7c19f"
+    },
+    {
+      "claim_id": "a92e3ac3-ca95-444d-be6c-56e039c04724",
+      "result_id": "7ed956c3-836b-49fa-918c-01ef7ba7c19f"
+    },
+    {
+      "claim_id": "3cef72e1-220b-432d-bf0c-0b770bf5195e",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "613c86f5-5496-413d-8db1-9abace0a1125",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "0f7f5202-9d4e-4e79-a9d5-c95f02781836",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "7578033f-9c8d-4596-bbf3-a7e224f3c3a5",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "c21405a8-a62b-4ad6-babb-26f7d9416748",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "06c122eb-6228-45be-bad7-c1499b5fbf06",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "8239139b-bb01-44a1-ae30-1cd254b073d2",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "9d53e01a-99e8-4962-a2d2-cc45bd517ab3",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "83aa8f59-6d9a-4034-ada7-dbc45eb4a044",
+      "result_id": "8ecf12c1-9053-4620-8b83-f532afa88756"
+    },
+    {
+      "claim_id": "0262cef9-73c8-4679-9a87-2c5de5f16869",
+      "result_id": "696676a3-a41e-47f5-9d2f-a32266447f14"
+    },
+    {
+      "claim_id": "5552809a-cd82-4956-b242-b69ec0b3ada5",
+      "result_id": "696676a3-a41e-47f5-9d2f-a32266447f14"
+    },
+    {
+      "claim_id": "f76e3126-433d-4f93-97b1-b9bb5c1663dc",
+      "result_id": "696676a3-a41e-47f5-9d2f-a32266447f14"
+    },
+    {
+      "claim_id": "20c3f514-e7d0-458f-ae5e-3f4f71b6833f",
+      "result_id": "11e46a31-82e1-40ed-b77c-7d54fe2792bb"
+    },
+    {
+      "claim_id": "1a508502-d0e2-48b9-b0f4-b8faf6ae3050",
+      "result_id": "11e46a31-82e1-40ed-b77c-7d54fe2792bb"
+    },
+    {
+      "claim_id": "66ec4746-d710-4c03-9045-9316487c3025",
+      "result_id": "3ded843a-b4ae-4c0e-bb9e-7742ce6f4ddc"
+    },
+    {
+      "claim_id": "fead4ea7-b520-40d2-a137-d68647428076",
+      "result_id": "3ded843a-b4ae-4c0e-bb9e-7742ce6f4ddc"
+    },
+    {
+      "claim_id": "9c8b4d9e-5516-43d9-933b-89c97b40a489",
+      "result_id": "3ded843a-b4ae-4c0e-bb9e-7742ce6f4ddc"
+    },
+    {
+      "claim_id": "57dbce0d-d936-40cc-965f-68297389d0bf",
+      "result_id": "3ded843a-b4ae-4c0e-bb9e-7742ce6f4ddc"
+    },
+    {
+      "claim_id": "e8322d2b-a50c-4a20-944f-72169700fc5d",
+      "result_id": "3ded843a-b4ae-4c0e-bb9e-7742ce6f4ddc"
+    },
+    {
+      "claim_id": "44c8491a-3c2b-4f3d-a604-b82358a65f67",
+      "result_id": "3ded843a-b4ae-4c0e-bb9e-7742ce6f4ddc"
+    },
+    {
+      "claim_id": "deb1fcf0-e531-4921-9948-e79979f7d2d5",
+      "result_id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5"
+    },
+    {
+      "claim_id": "f9cbcabe-849b-4696-b1f5-f36cd3f12363",
+      "result_id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5"
+    },
+    {
+      "claim_id": "de18ed03-3cc1-419b-aa62-203242fe5120",
+      "result_id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5"
+    },
+    {
+      "claim_id": "459cc01b-880c-4892-933a-cf26236da0a3",
+      "result_id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5"
+    },
+    {
+      "claim_id": "a043302f-d5ac-4c0b-81b5-ef12adf8aec0",
+      "result_id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5"
+    },
+    {
+      "claim_id": "0dea70d6-1d88-478f-b280-eba9fdea5936",
+      "result_id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5"
+    },
+    {
+      "claim_id": "e2b1189f-2754-4910-9ed4-f5ab4ed64ab8",
+      "result_id": "534f2e08-5a4c-45fb-b9fa-73de0fa128e5"
+    },
+    {
+      "claim_id": "aca9c68c-fc61-4449-bbf3-d5139ef931bd",
+      "result_id": "486e9756-1b79-4e60-bb0e-6517b4b2c4ce"
+    },
+    {
+      "claim_id": "f18cac96-2bfe-47b4-9ab9-9c3d4f5e34dd",
+      "result_id": "486e9756-1b79-4e60-bb0e-6517b4b2c4ce"
+    },
+    {
+      "claim_id": "4d713b67-e079-417a-b6b9-4b1280443ad6",
+      "result_id": "486e9756-1b79-4e60-bb0e-6517b4b2c4ce"
+    },
+    {
+      "claim_id": "54ed1d49-afc9-4532-ba0a-acc3ef951976",
+      "result_id": "3723ac98-b0b2-427a-a7a9-4eea91851dca"
+    },
+    {
+      "claim_id": "804b22f2-4090-48d8-9021-7c5556be2b85",
+      "result_id": "3723ac98-b0b2-427a-a7a9-4eea91851dca"
+    },
+    {
+      "claim_id": "136be4a4-c101-4f06-91fc-87fc1459939b",
+      "result_id": "17c5856c-6360-44d7-88b6-86715caa8fa5"
+    },
+    {
+      "claim_id": "6cd0c7c9-dd24-423f-a938-2d8e473ba091",
+      "result_id": "17c5856c-6360-44d7-88b6-86715caa8fa5"
+    },
+    {
+      "claim_id": "a497005e-48e4-44c6-9005-55f28136956d",
+      "result_id": "17c5856c-6360-44d7-88b6-86715caa8fa5"
+    },
+    {
+      "claim_id": "9328b651-d3a9-42e7-81cd-b05e311a4fa4",
+      "result_id": "17c5856c-6360-44d7-88b6-86715caa8fa5"
+    },
+    {
+      "claim_id": "ce81d782-9d0c-44d4-95a7-b7b975c4c8f6",
+      "result_id": "17c5856c-6360-44d7-88b6-86715caa8fa5"
+    },
+    {
+      "claim_id": "3f58d033-1ae3-4859-a5eb-9a6d36c88dd6",
+      "result_id": "17c5856c-6360-44d7-88b6-86715caa8fa5"
+    },
+    {
+      "claim_id": "7ce3d514-a802-4fed-9421-faced28496d5",
+      "result_id": "17c5856c-6360-44d7-88b6-86715caa8fa5"
+    },
+    {
+      "claim_id": "7f8dc88b-1076-46f0-b08e-36f0521f9817",
+      "result_id": "dad250be-0a98-42d8-98f6-febe1981749f"
+    },
+    {
+      "claim_id": "0d5d00a6-f7a4-4e87-bee9-6f374eed0221",
+      "result_id": "dad250be-0a98-42d8-98f6-febe1981749f"
+    },
+    {
+      "claim_id": "3a6f46f9-ee1f-456b-8f11-a23bc86067b6",
+      "result_id": "dad250be-0a98-42d8-98f6-febe1981749f"
+    },
+    {
+      "claim_id": "40505306-a832-4b3a-920d-82a0436bf0f1",
+      "result_id": "dad250be-0a98-42d8-98f6-febe1981749f"
+    },
+    {
+      "claim_id": "4f40c5ee-f5b6-4617-82f1-d0e899225c46",
+      "result_id": "8c4babc4-5226-44eb-92b6-08bdfd5700e0"
+    },
+    {
+      "claim_id": "fe3a7672-abf5-4d21-9be6-3a08644dcc01",
+      "result_id": "8c4babc4-5226-44eb-92b6-08bdfd5700e0"
+    },
+    {
+      "claim_id": "9dada1ae-5610-4427-9199-e86171bf6972",
+      "result_id": "8c4babc4-5226-44eb-92b6-08bdfd5700e0"
+    },
+    {
+      "claim_id": "5c30b4e9-9d93-47d6-aaca-b14f27d6d3ef",
+      "result_id": "8c4babc4-5226-44eb-92b6-08bdfd5700e0"
+    },
+    {
+      "claim_id": "4ffaa660-02d6-4ac1-a431-1f31a4df8c53",
+      "result_id": "39a5bf9b-2c6c-47e5-9674-cad1674632f1"
+    },
+    {
+      "claim_id": "66f84131-5ec2-478c-be97-711a4ca8fa80",
+      "result_id": "39a5bf9b-2c6c-47e5-9674-cad1674632f1"
+    },
+    {
+      "claim_id": "9c2badfa-44a8-42c5-b4db-78ee5e9ecb3d",
+      "result_id": "39a5bf9b-2c6c-47e5-9674-cad1674632f1"
+    },
+    {
+      "claim_id": "75089ea9-e454-44ee-9361-5b940c35fc22",
+      "result_id": "06f53add-b07e-4f4e-a2bb-ee244a01dbfc"
+    },
+    {
+      "claim_id": "90362dee-880f-46bb-9dd7-dae8af287ff8",
+      "result_id": "06f53add-b07e-4f4e-a2bb-ee244a01dbfc"
+    },
+    {
+      "claim_id": "ae9c553e-1ad0-44fd-bb65-d1be3b0ae426",
+      "result_id": "06f53add-b07e-4f4e-a2bb-ee244a01dbfc"
+    },
+    {
+      "claim_id": "cc42b6fd-a69b-47c1-b010-ec7189b1a688",
+      "result_id": "a810c27a-100e-438b-ba22-13c5af4be8d6"
+    },
+    {
+      "claim_id": "41ad434e-9077-4ba5-adcf-3cc43b3a5e31",
+      "result_id": "a810c27a-100e-438b-ba22-13c5af4be8d6"
+    },
+    {
+      "claim_id": "5a627d0a-d77b-438a-b799-86b0f9cf9714",
+      "result_id": "f2864536-7eb3-4912-9048-d2f7ec3d5cc0"
+    },
+    {
+      "claim_id": "8906a78a-8010-444f-96c9-8d58ff44b28a",
+      "result_id": "f2864536-7eb3-4912-9048-d2f7ec3d5cc0"
+    },
+    {
+      "claim_id": "0c0e6d12-fa5b-4b6b-afc5-d0b34132525b",
+      "result_id": "f2864536-7eb3-4912-9048-d2f7ec3d5cc0"
+    },
+    {
+      "claim_id": "cc3d8cd1-adba-4b58-a61a-ac9aab243ed8",
+      "result_id": "f2864536-7eb3-4912-9048-d2f7ec3d5cc0"
+    },
+    {
+      "claim_id": "18c00f6b-591d-4c37-b0c3-b6a4734983bc",
+      "result_id": "f2864536-7eb3-4912-9048-d2f7ec3d5cc0"
+    },
+    {
+      "claim_id": "168797e7-d261-4098-80eb-15de96f1e347",
+      "result_id": "62b42250-4ea2-4a70-9d2d-14a93068edc2"
+    },
+    {
+      "claim_id": "9cc3ef58-40a0-4388-9114-37af8fbff279",
+      "result_id": "62b42250-4ea2-4a70-9d2d-14a93068edc2"
+    },
+    {
+      "claim_id": "cab1d1d7-7582-4740-897b-4c027e03fb0a",
+      "result_id": "62b42250-4ea2-4a70-9d2d-14a93068edc2"
+    },
+    {
+      "claim_id": "004d4c41-e542-453a-bd7a-14caefd3576f",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    },
+    {
+      "claim_id": "2b95628c-71df-458e-be6d-786118e2aebe",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    },
+    {
+      "claim_id": "16e882b3-467a-4ec1-bb95-e1f4e692b169",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    },
+    {
+      "claim_id": "6e804de2-51b1-4b51-a27c-ee8e7af2d78b",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    },
+    {
+      "claim_id": "8434e4fc-25f3-46bf-86cf-6cc408f5d365",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    },
+    {
+      "claim_id": "24e53298-db32-48b6-abfd-056cdb1bbc72",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    },
+    {
+      "claim_id": "622c20c8-fde3-4f63-9359-ae8072a52b93",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    },
+    {
+      "claim_id": "f5e8d2c2-d571-4a6d-90da-04d1cc0e9130",
+      "result_id": "70147d6b-a91c-4f34-ace7-87a2864c67e9"
+    }
+  ],
+  "comparisons": []
+}

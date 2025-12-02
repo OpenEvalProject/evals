@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "SE directly associates with specific regions in the Arabidopsis genome in a transcription- and CBC-dependent manner. ChIP-seq identified 1012 high-confidence SE binding sites enriched in WT compared to se-1 mutants, validated by ChIP-qPCR. SE peaks were primarily located in exonic regions and near transcriptional start sites, often covering entire genes. Cordycepin treatment reduced SE association with target genes, indicating RNA-dependence. Mutations in CBP20 completely blocked SE chromatin association, and CBP20 itself associated with SE targets in a SE-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21 provide converging experimental evidence from ChIP-seq (C10), ChIP-qPCR validation (C11), genomic localization analysis (C13-C14), motif enrichment (C15), cordycepin treatment (C16-C17), and cbp20 mutant analysis (C18-C21). The use of se-1 as a negative control, multiple biological replicates, and orthogonal validation methods strengthen the conclusions. The RNA-dependence and CBC-dependence are well-supported by appropriate experimental controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "SE preferentially associates with intronless genes rather than MIRNA genes. Only 9 of 325 MIRNA genes were bound by SE (p=0.8), while SE mainly associated with protein-coding gene loci. Unexpectedly, 46.3% of SE peaks were associated with intronless genes, and SE target genes possessed significantly fewer introns than average Arabidopsis genes, with only 10.2% containing more than five introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are well-supported by ChIP-seq data analysis with appropriate statistical testing (hypergeometric test for MIRNA genes, C22). The quantitative analysis of intron numbers (C24-C26) and statistical comparison with genome-wide distributions (C25) provide strong evidence. The finding contradicts the initial hypothesis that SE would associate with intron-rich genes for splicing regulation, making this a particularly robust and surprising result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Genes with no or few introns exhibit lower expression levels across developmental stages and stress responses in multiple plant species. Analysis of stress-responsive genes in Arabidopsis, rice, maize, and soybean showed that genes whose expression changes in response to stress contain fewer introns than average genes, suggesting a trade-off between gene expression strength and responsiveness during stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by comprehensive analysis across multiple plant species and stress conditions, providing strong comparative evidence. However, C31 (the trade-off prediction) is more speculative and represents an inference rather than direct experimental evidence. The cross-species conservation strengthens the biological significance, though the mechanistic basis for the trade-off requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SE target genes, particularly intronless genes, are expressed at significantly higher levels than non-targets and are highly transcriptionally active. SE-bound intronless genes showed higher expression than non-SE targets, with SE targets containing one or two introns showing even higher expression. SE target genes were enriched for active histone marks (H3K9ac, H3K18ac, H3K23ac) and showed higher pol II occupancy, indicating that high expression is achieved at the transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 are well-supported by multiple orthogonal datasets including gene expression analysis (C32-C34), histone modification ChIP data (C36), and pol II ChIP-seq (C38). The convergence of evidence from chromatin marks, pol II occupancy, and expression levels provides strong support for transcriptional regulation. The statistical significance is demonstrated across multiple comparisons, though the inference about transcriptional mechanism (C39) could benefit from additional direct measurements of transcription rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SE is necessary to maintain high expression levels of its intronless target genes but not for their stress-dependent induction. RNA-seq showed significant downregulation of SE target genes in se-1 mutants, confirmed by RT-qPCR in se-3 mutants. Cold stress induced SE-bound genes in both WT and se mutants, but expression levels were lower in se-1 under both stress and non-stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by RNA-seq (C40) and RT-qPCR validation in two independent se mutant alleles (C42), strengthening the conclusions. The stress experiments (C44-C46) appropriately distinguish between basal expression and stress induction. However, the use of hypomorphic rather than null alleles (which are lethal, C2) limits the interpretation of SE's full requirement. The conclusion that SE affects basal expression but not induction (C46) is well-supported by the data showing parallel induction in mutants and WT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C83"
+    ],
+    "result": "SE/ARS2 function in regulating intronless genes might be conserved across eukaryotes. Genes downregulated in Drosophila ars2 mutants contained significantly fewer introns compared to all Drosophila genes, similar to observations in Arabidopsis se mutants. The only suggested direct target of human ARS2, SOX2, is also an intronless gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47 and C48 provide suggestive evidence from Drosophila and human systems, but the conservation claim (C49, C83) is speculative. The Drosophila analysis (C47) is based on published transcriptome data and shows a similar pattern, but this is correlative rather than demonstrating direct ARS2 binding to intronless genes. The human evidence (C48) relies on a single gene example. Direct ChIP or binding studies in these organisms would be needed to establish functional conservation. The speculation is reasonable but requires substantial additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SE positively regulates transcription of its target intronless genes by promoting association of paused and elongating pol II with chromatin. Pol II occupancy was lower at all examined loci in se mutants compared to WT, which was not due to changes in pol II protein levels. SE had no apparent influence on RNA stability. All pol II isoforms (including Ser5P and Ser2P) associated to a lesser extent in se mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are well-supported by pol II ChIP-qPCR experiments at multiple loci (C50, C55) with appropriate controls including Western blot for pol II levels (C52) and RNA stability assays (C53). The use of phosphorylation-specific antibodies (C55) provides mechanistic insight into the transcriptional stage affected. The inference that SE promotes pol II association (C51, C56) is well-supported by the data, though the precise molecular mechanism remains to be elucidated. The experiments appropriately distinguish between effects on pol II recruitment versus RNA stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SE physically interacts with Ser5- and Ser2-phosphorylated pol II complexes during transcriptional pausing and elongation to enhance expression of intronless genes. Mass spectrometry identified SE peptides in pol II Ser5P and Ser2P immunoprecipitations. Co-immunoprecipitation experiments in Arabidopsis and cauliflower verified these interactions. Super-resolution microscopy (Airyscan and SOFI) showed that SE, pol II Ser5P, and pol II Ser2P form nuclear speckles, with a subfraction of SE co-localizing with pol II speckles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are strongly supported by multiple orthogonal approaches: mass spectrometry (C57), co-IP in two plant species (C60), and two independent super-resolution microscopy techniques (C61-C62). The convergence of biochemical and imaging evidence provides robust support for physical interaction. The inference about functional timing (pausing and elongation, C59, C65) is well-supported by the phosphorylation-specific nature of the interactions, as Ser5P and Ser2P are established markers of these transcriptional stages. The partial co-localization (C62-C63) is consistent with SE acting on a subset of genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "SE bound to 8.5% of described AGO1 target genes, indicating that the majority of SE target genes are not bound by AGO1, though SE and AGO1 might simultaneously bind and regulate a small set of target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by comparison of SE and AGO1 ChIP-seq datasets with appropriate quantification. However, C68 is speculative, suggesting a possibility rather than demonstrating co-regulation. The small overlap is well-documented, but functional significance of the overlap and whether SE and AGO1 act cooperatively, antagonistically, or independently at these loci requires additional experiments. This represents an interesting observation that warrants follow-up but does not constitute a major finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SE may interact with both activators and repressors of transcription at specific loci. The SE interactor CPL1 interacts with transcription factors and acts as a transcriptional repressor, suggesting SE might interact with repressors. Some SE targets are upregulated in se mutants, suggesting SE can execute repressive functions at some gene loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C71 are supported by citations to prior work on CPL1, but C70 and C72 are speculative inferences. The observation that some SE targets are upregulated in se mutants (C73) provides direct evidence for potential repressive function (C74), but this represents a minority of targets and could reflect indirect effects. The dual activator/repressor model is plausible but requires direct mechanistic investigation, including identification of which factors recruit SE to specific loci and how SE switches between activation and repression modes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on SE/ARS2 function: SE is an essential, conserved RNA processing factor important for plant development, with null alleles being lethal. SE/ARS2 functions in miRNA processing, splicing, 3'-end formation, ncRNA biogenesis, RNA transport and stability, and transcriptional activation. SE/ARS2 functions in conjunction with the CBC complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 summarize established prior knowledge supported by multiple citations. These are background claims that contextualize the current work rather than novel findings. The citations appear appropriate and the claims accurately represent the cited literature. This provides necessary context for understanding the novelty of the current findings regarding SE's role in regulating intronless genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "General principles about intronless genes and intron function: Intronless genes are present in all eukaryotic genomes and fulfill important functions. Intron splicing increases proteome complexity, promotes RNA stability, and enhances transcription, but extends the time required for gene expression. Additional regulatory mechanisms likely exist to coordinate expression of intronless genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77, and C78 represent established scientific knowledge appropriately cited or referenced. Claim C76 is a reasonable inference based on the widespread presence and functional importance of intronless genes, though it is somewhat speculative. These claims provide important conceptual framework for the study but are not novel findings. They appropriately motivate the investigation of SE's role in intronless gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Summary of main findings: SE associates with more than 1000 mainly intronless genes in a transcription-dependent manner. Chromatin-bound SE interacts with paused and elongating pol II complexes and promotes their association with intronless target genes. Stress-responsive genes contain few introns, negatively affecting expression strength, but some genes circumvent this via SE-dependent transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 accurately summarize the major findings supported by the experimental data presented in the manuscript. These summary claims integrate multiple lines of evidence from ChIP-seq, gene expression analysis, pol II occupancy studies, and protein interaction experiments. The claims appropriately distinguish between direct observations (C79-C81) and mechanistic interpretations (C82). This represents a coherent synthesis of the study's main conclusions.",
+    "result_type": "MAJOR"
+  }
+]

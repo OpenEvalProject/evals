@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C68",
+      "C75",
+      "C76"
+    ],
+    "result": "Aversive stimuli (foot-shocks and air-puffs) excite approximately 50% of LHb neurons with rapid onset (~60 ms) and phasic duration (~100 ms), and this excitation is temporally correlated with escape behaviors. The LHb activity is specific to aversive stimuli and not simply locomotion, as rotarod-induced movement does not produce similar calcium transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C12, C68, C75-C76 provide converging evidence from multiple methodologies (fiber photometry, single-unit electrophysiology, behavioral tracking) showing that aversive stimuli drive LHb excitation with specific temporal dynamics and that this activity correlates with escape behavior. The control experiment with rotarod (C10) strengthens the specificity of the finding by ruling out locomotion as a confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Foot-shock-driven excitation of LHb neurons is mediated by glutamatergic signaling, as local infusion of glutamate receptor antagonists (NBQX and AP5) diminishes the foot-shock response without altering baseline firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 demonstrate through pharmacological manipulation that glutamate receptors are necessary for the foot-shock response in LHb neurons. The specificity is supported by the lack of effect on baseline activity (C14), indicating the antagonists specifically block evoked responses rather than causing general suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C61"
+    ],
+    "result": "Foot-shock-driven excitation of LHb neurons requires glutamatergic input from the lateral hypothalamus (LH\u2192LHb) but not from the midbrain ventral tegmental area (VTA\u2192LHb). Chemogenetic silencing of LH\u2192LHb projections significantly reduces foot-shock responses, while silencing VTA\u2192LHb has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C26, C27, C28, and C61 provide consistent evidence from chemogenetic silencing experiments (DREADDi) and retrograde tracing with optogenetic tagging that LH\u2192LHb, but not VTA\u2192LHb, mediates foot-shock-evoked LHb excitation. The pathway-specific manipulation with local CNO infusion provides strong causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C62"
+    ],
+    "result": "Both VTA\u2192LHb and LH\u2192LHb projections are glutamatergic and optogenetic activation of either pathway is sufficient to produce place aversion in behaving mice, though only LH\u2192LHb is necessary for foot-shock-evoked LHb excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C62 demonstrate through optogenetics and slice electrophysiology that both pathways can drive aversive behavior when artificially activated, establishing sufficiency. However, the necessity experiments (C3, C4, C26, C27) show differential roles, with only LH\u2192LHb being required for naturalistic foot-shock responses. This dissociation between sufficiency and necessity is appropriately acknowledged in the discussion (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C74"
+    ],
+    "result": "CNO application to DREADDi-expressing LH\u2192LHb terminals reduces optogenetically-evoked excitatory postsynaptic currents by approximately 50% and increases paired-pulse ratios, confirming presynaptic inhibition of glutamate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, and C74 provide validation of the DREADDi approach used in subsequent in vivo experiments. The reduction in EPSC amplitude and increase in paired-pulse ratio are consistent with presynaptic inhibition of neurotransmitter release, supporting the mechanistic interpretation of the chemogenetic silencing experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "LHb neurons projecting to different midbrain targets show spatial organization within the LHb, with LHb\u2192GABA neurons located laterally and LHb\u2192DA and LHb\u21925HT neurons located medially. LH\u2192LHb synapses show differential connectivity rates: ~89% to GABA neurons, ~79% to DA neurons, and ~56% to 5HT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 and C70-C72 are supported by rabies tracing and electrophysiology data showing anatomical organization and connectivity patterns. The use of cell-type-specific Cre lines and monosynaptic rabies tracing provides strong evidence for the spatial and connectivity organization described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C65"
+    ],
+    "result": "LH\u2192LHb synapses onto LHb neurons projecting to midbrain GABA cells show predominant excitatory drive, with lower I-GABA/I-AMPA ratios and larger maximal I-AMPA compared to LHb neurons projecting to DA or 5HT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C38, and C65 demonstrate through quantitative electrophysiology that LH\u2192LHb-to-GABA neurons receive stronger excitatory input relative to inhibitory input compared to other LHb output neurons. The statistical comparisons of I-GABA/I-AMPA ratios and maximal I-AMPA provide quantitative support for this circuit-level organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Chemogenetic silencing of the LH\u2192LHb pathway impairs aversion-driven escape behaviors in both foot-shock shuttle box and looming visual stimulus tests, without affecting general locomotion or pain perception. This demonstrates the necessity of LH\u2192LHb signaling for escape behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C43, C45-C46 provide behavioral evidence across multiple paradigms (shuttle box, looming test) that LH\u2192LHb is necessary for escape behavior. The control experiments showing no effect on open field locomotion (C42) or hot-plate latency (C43) rule out general motor or sensory deficits. The lack of effect when silencing VTA\u2192LHb (C41) provides pathway specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "LH\u2192LHb neurons directly synapse onto both serotonin (5HT) and dopamine (DA) neurons in the midbrain, in addition to GABA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by rabies tracing and electrophysiology data (Figure 3A-B) showing connectivity to multiple midbrain cell types. This demonstrates the anatomical complexity of LHb output organization beyond the LHb\u2192GABA\u2192DA disinhibition circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "LH\u2192LHb control of midbrain GABA neurons may lead to aversion-driven dopamine inhibition through a disinhibitory circuit mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is explicitly speculative (\"may lead to\") and represents an inference from circuit connectivity rather than direct demonstration. While the anatomical and electrophysiological data support strong LH\u2192LHb\u2192GABA connectivity, the functional consequence for dopamine neuron activity during aversive stimuli was not directly measured in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Foot-shock excited LHb neurons exhibit characteristic irregular and low bursty firing patterns compared to non-excited neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by electrophysiological characterization showing significant differences in firing rate, spikes in burst percentage, and coefficient of variation between foot-shock excited and non-excited neurons (Figure 1\u2014figure supplement 2D with statistical comparisons).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Approximately 78% of LHb-projecting LH neurons are excited by foot-shocks, as determined by retrograde labeling and optogenetic tagging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by data in Figure 2\u2014figure supplement 3D showing 11 out of 14 retrogradely-labeled and opto-tagged LH neurons responded to foot-shocks. This provides evidence that the majority of LH neurons projecting to LHb are responsive to aversive stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript contextualizes the current findings within established knowledge about LHb function, its inputs from LH and mVTA, its outputs to midbrain monoaminergic systems, and the broader neurocircuitry of aversion and escape behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C47-C60 represent background knowledge and literature citations that appropriately contextualize the study. These claims are supported by the cited literature and represent accurate summaries of prior work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The study describes a neural circuit (LH\u2192LHb) that is instrumental for escaping threats and suggests future investigations into cell-type specificity and synaptic adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a summary statement supported by the collective findings of the study. The characterization of the LH\u2192LHb circuit's role in escape behavior is well-supported by the data, and the suggestion for future work is appropriate given the scope of the current findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The study used male C57Bl/6J mice (wild-type and various Cre lines) aged 4-12 weeks, housed in groups of 5 with ad libitum food and water.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are methodological details clearly stated in the Materials and Methods section. These are factual descriptions of the experimental subjects and housing conditions.",
+    "result_type": "MINOR"
+  }
+]

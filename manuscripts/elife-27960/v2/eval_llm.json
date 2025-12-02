@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Ionizing radiation induces dramatic spermatogonial (SG) death in Drosophila testis, with death peaking at 3-6 hours post-irradiation and preferentially affecting 16-SG stage cysts. All SGs within a cyst die synchronously as detected by Lysotracker staining, and this pattern holds across different radiation doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 are well-supported by experimental data shown in Figures 1B-C and supplementary figures. The temporal dynamics, stage-specific sensitivity, and synchronous death pattern are consistently demonstrated across multiple radiation doses with appropriate controls and replicates (n\u226517 testes in triplicate).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Radiation-induced SG death is a germ cell-intrinsic response, independent of somatic cyst cell apoptosis, contrasting with starvation-induced SG death which depends on cyst cell apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by experimental data in Figure 1\u2014figure supplement 1 showing that inhibiting cyst cell apoptosis (via Diap1 expression) does not suppress radiation-induced SG death, unlike starvation-induced death. This provides clear evidence for a germ cell-intrinsic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "16-SG cysts exhibit remarkable sensitivity to ionizing radiation with a non-linear dose-response, quickly plateauing at ~3 dying cysts per testis, contrasting sharply with the linear dose-response observed in somatic wing imaginal disc cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are strongly supported by dose-response data in Figure 1D showing distinct non-linear kinetics for 16-SGs (R\u00b2=0.958 non-linear vs R\u00b2=0.635 linear) compared to linear response in wing disc cells (R\u00b2=0.999 linear). The comparison is appropriate and demonstrates germline-specific hypersensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "At low radiation doses (\u2264100 rad), only a subset of SGs within 16-SG cysts exhibit detectable \u03b3-H2Av (DNA damage marker), yet all 16 cells within the cyst become Lysotracker-positive and die. The fraction of \u03b3-H2Av-positive cells increases linearly with dose, while Lysotracker staining shows all-or-none pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are well-supported by data in Figure 2A-C showing the discordance between linear DNA damage induction (\u03b3-H2Av) and all-or-none cell death (Lysotracker). This is a critical observation supporting the shared death signal hypothesis, with adequate sample sizes (n=43-102 cysts per dose).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Disruption of the fusome (via \u03b1-spectrin RNAi or hts mutants) compromises the all-or-none mode of SG death, resulting in cysts with mixed Lysotracker-positive and -negative cells, and reduces overall SG death frequency in response to radiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are strongly supported by experimental data in Figure 3C-D and G-H showing partial cyst death in fusome mutants across multiple radiation doses, with statistical significance (p<0.0001-0.2468 by chi-squared test). The use of two independent fusome disruption methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C93",
+      "C94"
+    ],
+    "result": "Fusome mutants maintain ring canals (as evidenced by Pavarotti-GFP staining) despite disrupted synchronized death, indicating that the fusome itself, rather than physical cytoplasmic openings, mediates intracyst communication of death signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C93-C94 are supported by data in Figure 3\u2014figure supplement 2 showing intact ring canal structures in fusome mutants. This is an important mechanistic distinction, though the inference about fusome-specific signaling versus passive diffusion through ring canals could benefit from additional functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Somatic follicle cells of the egg chamber, which are connected by ring canals without a fusome, die individually (not synchronously) and display a linear dose-response to radiation, contrasting with germ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by data in Figure 3\u2014figure supplement 3 showing individual Dcp-1-positive follicle cells and linear dose-response (R\u00b2=0.927-0.999). This provides important negative control evidence that connectivity alone is insufficient for synchronized death, supporting the fusome-specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mutants of mitochondrial cell death pathway components HtrA2/Omi and EndoG disrupt the all-or-none mode of SG death at all radiation doses tested, showing mixed Lysotracker-positive and -negative cells within cysts, similar to fusome mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by experimental data in Figure 4A-D showing disrupted all-or-none death in both HtrA2/Omi and EndoG mutants across multiple doses. The use of heterozygous and transheterozygous conditions with appropriate controls strengthens the genetic evidence. Sample sizes are adequate (n\u226537-73 cysts).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "While p53 and mnk/chk2 mutants broadly suppress SG death at both high and low radiation doses, they maintain the all-or-none pattern of death within cysts, indicating these factors contribute to overall DNA damage response but not to the germline-specific synchronized death mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by data in Figure 5A-E showing reduced overall death but preserved all-or-none pattern in mutants. This is an important negative result that helps distinguish general DNA damage response from the connectivity-mediated mechanism. Statistical analysis shows significant suppression (p<0.05) with adequate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mnk/Chk2 and p53 are barely detected or only slightly upregulated in germ cells following low-dose radiation (100 rad), and robust p53 reporter expression occurs only at 24 hours after high-dose radiation, much later than peak SG death (3-6 hours), indicating these factors are unlikely to mediate the all-or-none death response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by immunofluorescence and reporter data in Figure 5\u2014figure supplements 1-2. The temporal mismatch between p53 activation and SG death, combined with the mutant phenotype data, provides converging evidence that these canonical DNA damage response factors do not drive the germline-specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The sensitivity of SG cysts to radiation correlates positively with their connectivity level (16-SG > 8-SG > 4-SG > 2-SG), while single-celled gonialblasts (GBs) exhibit a linear dose-response similar to somatic cells, demonstrating that connectivity itself confers increased DNA damage sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are strongly supported by dose-response data in Figure 6A showing progressive increase in sensitivity with connectivity. The linear response of unconnected GBs (R\u00b2=0.920 linear vs 0.980 non-linear) is particularly compelling evidence that individual germ cells lack intrinsic hypersensitivity, and that connectivity is the key determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C87"
+    ],
+    "result": "The main conclusion: In the Drosophila testis, intercellular connectivity mediated by the fusome serves as a mechanism that confers high sensitivity to DNA damage by enabling synchronized death of entire spermatogonial cysts even when only a subset of cells exhibit detectable damage, through sharing of death-promoting signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (claims C3-C8, C23-C25, C87) is well-supported by the convergence of multiple lines of evidence: (1) all-or-none death despite partial damage, (2) fusome requirement for synchronized death, (3) correlation between connectivity and sensitivity, (4) mitochondrial death pathway involvement, and (5) distinction from canonical DNA damage response. The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The survival of some SGs in fusome mutants demonstrates that cells without detectable \u03b3-H2Av are not sufficiently damaged to die on their own, and their death in wild-type can be attributed to shared death signals from damaged sibling cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 represent a critical logical inference supported by the fusome mutant data. The observation that blocking intercellular communication allows survival of cells without detectable damage strongly argues against autonomous death of each cell and supports the shared signal model. This is a well-reasoned interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C92",
+      "C96"
+    ],
+    "result": "The authors speculate that HtrA2/Omi and EndoG (or their downstream molecules/signals) are shared among SGs via the fusome to trigger synchronized death, similar to the fusome's known role in cell cycle synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C92, and C96 are explicitly speculative. While the involvement of these mitochondrial factors is demonstrated, direct evidence for their intercellular transfer via the fusome is lacking. The speculation is reasonable given the known biology, but requires future experimental validation (e.g., live imaging of protein movement, cell-specific rescue experiments).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In Drosophila early embryos and C. elegans germline, where cells share cytoplasm but lack a fusome, damaged nuclei die individually without synchronized death, suggesting that physical openness alone is insufficient for synchronized death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by citations to previous literature (Lettre et al., 2004; Takada et al., 2003). These comparative examples from other systems strengthen the argument that the fusome has a specific role beyond simple cytoplasmic continuity. However, the authors rely on prior work rather than generating new data in these systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Individual germ cells do not have an intrinsically different DNA damage response that accounts for their high sensitivity, as evidenced by the linear dose-response of unconnected gonialblasts similar to somatic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is well-supported by the gonialblast dose-response data in Figure 6A. This is an important finding that challenges assumptions about germline-intrinsic hypersensitivity and supports the connectivity-based mechanism. However, the claim is somewhat overstated\u2014it shows germ cells don't necessarily have different responses, but doesn't exclude the possibility of additional germline-specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors speculate that connectivity-based increase in DNA damage sensitivity may be an evolutionarily conserved mechanism to achieve differential sensitivity between soma and germline without altering intrinsic damage response pathways, protecting genome integrity for the next generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 are explicitly speculative about evolutionary implications and broader significance. While the speculation is logical and well-reasoned, it lacks direct experimental support. Testing these ideas would require comparative studies across species and evolutionary analyses, which are beyond the scope of this work but represent important future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establishing that germ cells in many organisms develop as interconnected cysts and have high sensitivity to DNA damage, with the biological significance of male germ cell connectivity during pre-meiotic spermatogenesis and the mechanism of germline DNA damage sensitivity remaining unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C22 represent well-established background knowledge supported by appropriate citations to previous literature. These claims accurately frame the knowledge gaps that motivate the current study. The citations appear appropriate and the characterization of the field is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on Drosophila testis development and previous findings on starvation-induced SG death, which is non-apoptotic and mediated by somatic cyst cell apoptosis that breaks the blood-testis barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 accurately describe established Drosophila testis biology and cite the authors' previous work appropriately. This background is essential for understanding the experimental system and contrasting radiation-induced versus starvation-induced death mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C50",
+      "C51",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background on molecular markers and mechanisms: \u03b3-H2Av as a DSB marker, the fusome as a germline-specific organelle mediating intracyst signaling, and the non-apoptotic, mitochondria-dependent nature of germ cell death involving HtrA2/Omi and EndoG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C50-C51, and C63-C67 accurately describe established molecular biology supported by appropriate citations. These provide necessary context for interpreting the experimental results. The characterization of these factors is consistent with the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Methodological details: young flies (0-2 days old) were used, radiation was delivered using 137Cs or x-ray sources at specified dose rates, and the biological effectiveness of these sources is comparable at lower doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe methodological details that are clearly stated and appropriately validated (C105 cites Fu et al., 1979 and includes experimental verification). The methods are sufficiently detailed for reproducibility, though some additional details are in the full Methods section.",
+    "result_type": "MINOR"
+  }
+]

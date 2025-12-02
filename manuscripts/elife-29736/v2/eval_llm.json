@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors successfully engineered a CDK9 analog-sensitive (CDK9as) human Raji B cell line using CRISPR-Cas9, which allows for rapid and specific CDK9 inhibition with 1-NA-PP1. The mutation does not affect CDK9 protein levels, and the inhibitor is specific to the mutant cells without affecting wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 provide converging evidence from multiple experimental approaches (CRISPR-Cas9 engineering, Western blot, growth assays, and specificity controls) that collectively demonstrate successful generation of a functional CDK9as cell line. The data in Figure 1\u2014figure supplement 2 supports all claims with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C72"
+    ],
+    "result": "TT-seq monitoring of CDK9 inhibition reveals reduced RNA synthesis at gene beginnings with a median response of 58%, defining a response window of 23 kbp that corresponds to an average elongation velocity of 2.3 kbp/min, consistent with previous estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C72 are well-supported by highly reproducible TT-seq data (Spearman correlation = 1.0) shown in Figures 1B-E and 2A-B. The calculated elongation velocity agrees with multiple prior studies (C30), providing external validation. The response window methodology is clearly defined and visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Gene-specific elongation velocities vary systematically with genomic features: significantly higher in genes with longer first introns, positively correlated with nucleosome density, and negatively correlated with DNA-RNA hybrid stability, CpG density, and topoisomerase occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by statistical testing (Wilcoxon rank sum test, p<1.916\u00d710\u207b\u00b9\u00b9 for C31) and correlation analyses shown in Figures 2D and 2\u2014figure supplement 1C. The finding about introns is consistent with prior work (Jonkers et al., 2014), providing additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C73"
+    ],
+    "result": "mNET-seq identifies pause sites in 84% of transcription units, distributed around a maximum ~84 bp downstream of the TSS, with enrichment for G/C-C/G dinucleotides, a conserved cytosine at the RNA 3'-end, and a minimum in DNA-RNA hybrid melting temperature immediately downstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C73 are supported by highly reproducible mNET-seq data (Spearman correlation = 0.93) with clear sequence motif analysis (Figure 3B, Figure 3\u2014figure supplement 1B) and thermodynamic calculations (Figure 3C). The convergence of sequence and structural features at pause sites provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "A weak DNA-RNA hybrid in the active center of Pol II destabilizes the elongation complex and could be a major determinant for establishing the paused state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 is supported by citation to Kireeva et al., 2000 for the destabilization effect, but the proposal that this is a 'major determinant' for pausing is speculative. While the observed minimum in melting temperature (C40) is consistent with this hypothesis, causality is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Multi-omics integration of TT-seq and mNET-seq data yields productive initiation frequencies (mean 2.7 polymerases cell\u207b\u00b9min\u207b\u00b9) and pause durations (range of minutes) that vary between genes. Strongly CDK9-responding genes show significantly longer pause durations and lower initiation frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by the integration of two independent high-quality datasets (TT-seq and mNET-seq) with appropriate statistical testing (Wilcoxon rank sum test, p<10\u207b\u00b9\u00b2). The pause durations are consistent with prior literature in mouse and Drosophila (C44), providing cross-species validation. The methodology for deriving these parameters is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C2",
+      "C54"
+    ],
+    "result": "Human genes exhibit a 'pause-initiation limit': a robust anti-correlation between initiation frequency and pause duration with an upper boundary for their combinations. Genes with shorter pausing show higher initiation frequencies and more RNA synthesis, demonstrating that pause duration generally limits productive transcription initiation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C2, and C54 represent the central finding of the paper, supported by multiple lines of evidence: (1) scatter plot analysis showing anti-correlation (Figure 4D), (2) independent validation using alternative calculation methods (Figure 4\u2014figure supplement 2), (3) randomization controls showing the relationship is not spurious (Figure 4\u2014figure supplement 2D,F), and (4) consistency with theoretical predictions from Ehrensberger et al., 2013. The convergence of independent measurements and controls strongly supports this major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CDK9 inhibition significantly reduces labeled RNA between the TSS and pause site and decreases productive initiation frequencies. Because CDK9 specifically targets paused Pol II and not initiating polymerase, this demonstrates that pausing limits initiation (not vice versa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by statistically significant TT-seq data (Wilcoxon rank sum test, p<10\u207b\u00b9\u2076) shown in Figures 5A-C. The directionality argument (C52-C53) is logically sound given the known specificity of CDK9 for paused Pol II. However, the assumption that CDK9 does not affect initiation at all should be stated more cautiously, as indirect effects cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CDK9 inhibition increases mNET-seq signal at gene beginnings and decreases it in gene bodies, indicating reduced Pol II release from pause sites. Quantitative analysis confirms that CDK9 inhibition significantly increases pause duration and decreases initiation frequency at human genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by mNET-seq data before and after CDK9 inhibition (Figure 6A-D) with strong statistical significance (Wilcoxon rank sum test, p<10\u207b\u00b9\u2076). The interpretation that increased signal at pause sites reflects longer residence time is reasonable, though alternative explanations (e.g., increased polymerase recruitment) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "CDK9 activity decreases pause duration and increases productive initiation frequency, thereby stimulating release of paused polymerase and activating transcription by increasing the number of transcribing polymerases and mRNA synthesis per time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are well-supported by the combined CDK9 inhibition experiments showing opposite effects when CDK9 is inhibited (increased pause duration C59, decreased initiation frequency C60). The mechanistic interpretation (C5) logically follows from the data, though it is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Genes with longer pause durations show more RNA secondary structure in the 5'-region (both in vivo and in silico) and enrichment for hypermethylated CpG islands upstream of the pause site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by statistically significant comparisons (Wilcoxon rank sum test, p<10\u207b\u00b9\u2076) using DMS-seq data for RNA structure (Figure 7A, Figure 7\u2014figure supplement 1A) and Bisulfite-seq data for DNA methylation (Figure 7B). The finding about CpG methylation is consistent with Hendrix et al., 2008.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C6"
+    ],
+    "result": "Genes that respond strongly to CDK9 inhibition show higher tendency to establish long-range chromatin interactions (Hi-C data), suggesting that CDK9 activity is associated with chromatin interactions and that enhancers may influence the pause-initiation limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is supported by Hi-C data shown in Figure 7C, but the interpretation that this reflects enhancer-promoter interactions influencing pause release (C6, C64) is speculative. The correlation is observed, but causality and mechanism are not established. The authors appropriately note this is consistent with prior ideas but do not claim to have proven the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Interactions of an enhancer with its target promoter can stimulate Pol II pause release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is presented as consistent with prior literature (Ghavi-Helm et al., 2014; Rahl et al., 2010) and the Hi-C observation (C63), but no direct experimental evidence for this mechanism is provided in the current study. This remains a plausible but unproven hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The pause-initiation limit model predicts two modes of gene activation: genes below the limit may be activated by increasing initiation frequency without changing pause duration, while genes at the limit require decreased pause duration to enable higher initiation frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are logical predictions that follow directly from the established pause-initiation limit (C48, C54). While these are not experimentally tested in the current work, they represent reasonable mechanistic hypotheses derived from the data. Future experimental validation would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose that pause-controlled initiation evolved because mutations in the promoter-proximal region can change pause duration and limit initiation without compromising core promoter initiation capacity, potentially enabling evolution of genes that remain highly inducible but can be efficiently downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are speculative evolutionary explanations not supported by experimental data in this study. While the logic is plausible given the observed pause-initiation limit, these claims about evolutionary origins and advantages require comparative evolutionary analysis or other evidence not provided here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C75",
+      "C76"
+    ],
+    "result": "The finding that promoter-proximal pausing limits transcription initiation frequency is consistent with a concurrent study in Drosophila (Shao and Zeitlinger, 2017) and is likely a general feature of metazoan gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C75-C76 appropriately contextualize the current findings with the Shao and Zeitlinger, 2017 study. The authors correctly note both the consistency in general conclusions and the differences in approaches (multi-omics vs. occupancy-based, human vs. Drosophila, specific CDK9 inhibition vs. small molecules). The generalization to metazoans (C70) is reasonable given observations in two distant species but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The fraction of Pol II enzymes that terminate within the pause window is low, as indicated by TT-seq simulation analysis and consistent with previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by simulation analysis (Figure 4\u2014figure supplement 1) showing that the observed TT-seq patterns are consistent with low termination rates in the pause window. This is also consistent with Henriques et al., 2013. The simulation approach is appropriate for testing this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Paused Pol II sterically interferes with initiation, and structural modeling reveals that a paused polymerase positioned up to around 50 bp downstream of the TSS could interfere with formation of the Pol II initiation complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by structural modeling (Figure 1\u2014figure supplement 1) using current structural information for the transcription machinery. The 50 bp distance estimate is used consistently throughout the analysis to define the 'pause-initiation limit' boundary. While the modeling is based on static structures and may not capture all dynamic aspects, it provides a reasonable structural basis for the steric interference hypothesis originally proposed by Ehrensberger et al., 2013.",
+    "result_type": "MINOR"
+  }
+]

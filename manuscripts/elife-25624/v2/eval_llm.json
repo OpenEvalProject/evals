@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "AG treatment at 10X MIC arrests Mtb growth at 6 hr with killing observed after 12 hr. Transcriptomic analysis revealed 481 genes induced and 461 genes repressed, with network analysis showing cell wall processes (including PG biosynthesis, \u03b2-lactamase regulation) and intermediary metabolism/respiration as the most enriched functional categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 provide convergent evidence from time-course growth data (C15-C16), microarray analysis (C17-C18), and network analysis (C19-C23) showing AG's effects on cell wall and metabolic processes. The data are internally consistent and appropriately analyzed with statistical thresholds (\u22652 fold, p\u22640.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "AG treatment induces a metabolic shift in Mtb characterized by down-regulation of energetically efficient respiratory complexes (NADH dehydrogenase I, ATP-synthase) and TCA cycle genes, with concurrent up-regulation of less efficient respiratory pathways (NDH, cytochrome bd oxidase) and glycolytic/glyoxylate pathways including icl1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are directly supported by expression data shown in Figure 2. Claim C28 appropriately cites prior literature linking icl1 to drug tolerance via redox homeostasis, providing context for the observed induction. The metabolic reprogramming pattern is consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "AG treatment induces oxidative stress response genes including ROS detoxifying enzymes, antioxidant buffers, Fe-S cluster repair systems, and redox sensors. WhiB4, which functions as a negative regulator of antioxidant genes in place of the non-functional OxyR, is significantly down-regulated (~5-fold by qRT-PCR) in response to AG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 are supported by expression data (Figure 2) and citations to prior work establishing WhiB4's regulatory role (C30-C32). The qRT-PCR validation (C33) addresses the modest microarray signal and provides statistical significance (p\u22640.001). Iron homeostasis disruption (C34-C36) is consistent with oxidative stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Approximately 60% of genes regulated by MSH and EGT show altered expression in response to AG, and ~30% overlap exists between AG and oxidant (CHP) treatment transcriptomes, with similar regulation of \u03b2-lactam tolerance and redox-metabolism genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by comparative transcriptomic analysis (Figure 2\u2014figure supplements 2-3, supplementary file 1C). The overlap percentages are clearly stated and the comparison appropriately identifies shared pathways, supporting the connection between AG treatment and oxidative stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "AG treatment induces oxidative stress in Mtb as evidenced by increased ROS (3-fold DCFDA fluorescence at 3-6 hr), superoxide generation (HPLC detection of 2-OH-E+), and elevated NADH/NAD+ ratio at 24 hr coinciding with killing. The antioxidant thiourea provides dose-dependent protection against AG toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 provide multiple independent lines of evidence for AG-induced oxidative stress using complementary methods (NADH/NAD+ ratio, DCFDA fluorescence, HPLC for superoxide, thiourea protection). The temporal relationship between oxidative stress (early) and NADH/NAD+ disruption (late, 24 hr) is clearly established. Data are shown with appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AG treatment causes modest oxidative shifts in intramycobacterial EMSH in vitro and significant increases in oxidized subpopulations inside macrophages. Importantly, oxidative stress precedes bacterial killing, with EMSH oxidation observed at 6 hr when survival is minimally affected, while ~100-fold CFU decline occurs at 24-36 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 use the Mrx1-roGFP2 biosensor to demonstrate temporal separation between oxidative stress (early, 6 hr) and killing (late, 24-36 hr) both in vitro and during infection. The inference that oxidative stress precedes and is not a consequence of killing (C52) is logically supported by the temporal data (C51). Flow cytometry and CFU data are appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "MSH-deficient Msm strains (\u0394mshA) show 3-10 fold higher inhibition by Amox/Clav combinations compared to wild-type. Msm strains lacking other redox defense components (\u0394mtr, \u0394katG, \u0394sigH) also show increased susceptibility (2-fold reduced MICs), while Msm\u0394mshD remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by Alamar blue assays (Figure 5A-B) and MIC determinations (Table 1). The differential effect of \u0394mshD (C56) vs \u0394mshA (C53-C54) is appropriately interpreted as compensation by alternative thiols (Suc-MSH, formyl-MSH). The data consistently link redox capacity to AG tolerance across multiple genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Manipulation of MSH levels in Mtb directly affects AG tolerance: mshA overexpression shifts EMSH from -275\u00b13 mV to -300\u00b15 mV and confers better tolerance, while Mtb\u0394mshA (EMSH >-240 mV) shows severe growth decline upon AG treatment. Complementation restores wild-type tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 establish a clear dose-response relationship between MSH levels, EMSH, and AG tolerance using genetic manipulation (deletion, overexpression, complementation). EMSH measurements validate the redox state changes, and CFU data (Figure 5C) demonstrate the functional consequences. The complementation control (C62) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "whiB4 expression is significantly repressed in Mtb\u0394mshA (-2.94\u00b10.22 fold) and restored in mshA-OE (-1.08\u00b10.09 fold) and mshA-comp (-1.16\u00b10.08 fold) strains, indicating WhiB4 regulation is linked to MSH-dependent redox status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by qRT-PCR data (Figure 6\u2014figure supplement 1) showing clear correlation between MSH status and whiB4 expression. The data support a regulatory connection between MSH and WhiB4, though the mechanistic details are not fully elucidated. Statistical analysis appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mtb\u0394whiB4 shows extensive transcriptional reprogramming upon AG treatment (495 genes induced, 423 repressed) with elevated expression of \u03b2-lactam tolerance determinants (blaR 8.43-fold, blaC 2.23-fold, PG biosynthesis genes, PBPs), enhanced antioxidant capacity, and increased alternate respiration. Mtb\u0394whiB4 cells show altered PG deposition along the entire cell body and are marginally longer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 are supported by microarray data (supplementary file 2A), qRT-PCR validation (Figure 6\u2014figure supplement 2), expression heatmaps (Figure 6B-G), and confocal microscopy (Figure 6\u2014figure supplement 3). The data consistently show Mtb\u0394whiB4 has enhanced capacity for AG tolerance through multiple mechanisms. The statistical thresholds (\u22651.5 fold, p\u22640.05) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Mtb\u0394whiB4 robustly maintains intramycobacterial EMSH upon AG treatment both in vitro and inside macrophages, while Atc-induced WhiB4 overexpression causes significant oxidative shift in EMSH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by biosensor measurements (Figure 7) under both culture conditions. The data demonstrate WhiB4's role in regulating redox homeostasis during AG stress. The use of the Mrx1-roGFP2 biosensor provides direct, real-time measurement of EMSH changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Oxidized apo-WhiB4 binds blaC/blaR promoter DNA in a concentration-dependent manner, while reduced apo-WhiB4 shows significantly reversed binding. Competition assays confirm specificity. In vitro transcription assays show oxidized apo-WhiB4 inhibits blaC transcription while reduced form restores normal transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by EMSA data (Figure 8A-B, Figure 8\u2014figure supplement 1) and in vitro transcription assays (Figure 8D). The redox-dependent DNA binding is clearly demonstrated, and competition experiments (C77-C78) establish specificity. The functional consequence on transcription (C79-C80) validates the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "\u03b2-lactamase activity is ~70% higher in Mtb\u0394whiB4 and ~30% lower in whiB4-OE compared to wild-type. DTT pretreatment of whiB4-OE largely restores BlaC activity to Mtb\u0394whiB4 levels, while diamide has no further effect, confirming redox-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by nitrocefin hydrolysis assays (Figure 8E-F). The DTT/diamide experiments (C83-C84) provide strong evidence for redox-dependent regulation by demonstrating that reducing oxidized WhiB4 disulfides relieves repression. The data are consistent with the EMSA and transcription results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Mtb\u0394whiB4 displays 4-8 fold higher MICs against \u03b2-lactams (but not INH/RIF), while WhiB4 overexpression confers 2-4 fold greater sensitivity. Mtb\u0394whiB4 requires 4-8 fold higher clavulanate concentrations for inhibition compared to wild-type and whiB4-OE strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by MIC data (Table 2) and Alamar blue assays (Figure 9A). The specificity for \u03b2-lactams (C86) and the dose-response relationship with clavulanate (C88) are consistent with WhiB4's regulation of \u03b2-lactamase. The data directly link WhiB4 levels to AG susceptibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Drug-resistant clinical isolates (SDR, MDR, XDR) overexpressing WhiB4 show 2-4 fold increased sensitivity to Amox/Clav combinations compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by Alamar blue assays in multiple drug-resistant clinical strains (Figure 9B-E). This demonstrates the therapeutic potential of WhiB4 manipulation across different resistance backgrounds, though the mechanism may be complex in strains with multiple resistance determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In mouse infection models, WhiB4 overexpression enhances AG efficacy (~38-fold CFU decline at 4 weeks for H37Rv, significant reduction for XDR strain MYC 431), while Mtb\u0394whiB4 shows increased or maintained bacillary load despite AG treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by in vivo CFU data (Figure 9F-G). The mouse experiments demonstrate physiological relevance of WhiB4's role in AG tolerance. However, the modest effect of AG on wild-type Mtb (~7-fold reduction) and the complexity of in vivo drug pharmacokinetics should be considered. Sample size (n=3) is relatively small for animal studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C94",
+      "C95",
+      "C96",
+      "C108"
+    ],
+    "result": "WhiB4 is identified as a key determinant linking cytoplasmic redox potential to \u03b2-lactam resistance in Mtb. WhiB4 coordinates \u03b2-lactamase activity in a redox-dependent manner and serves as a transcriptional regulator of both genetic determinants of resistance (\u03b2-lactamase) and physiological changes associated with drug tolerance (redox balance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C94-C96, and C108 represent the central conclusions of the manuscript, synthesizing evidence from multiple experimental approaches (computational, biochemical, genetic, biosensor studies). The claims are well-supported by the collective data showing WhiB4's redox-dependent DNA binding, regulation of blaC/blaR, control of antioxidant systems, and effects on AG susceptibility in vitro and in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establishing that Mtb expresses BlaC \u03b2-lactamase mediating \u03b2-lactam resistance, that Ambler class A \u03b2-lactamases are susceptible to clavulanate inhibition, and that \u03b2-lactam/clavulanate combinations (AG, meropenem/Clav) show activity against Mtb in vitro and in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14 are appropriately cited to prior literature and represent established knowledge in the field. These provide necessary context for the current work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Discussion claims contextualizing findings within prior literature on drug tolerance mechanisms, including roles of TCA cycle modulation, respiratory switching, ROS generation by antibiotics, MSH protection, WhiB4 properties, and general tolerance mechanisms (ppGpp, TA modules, SoxRS, WhiB7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C30-C32, C97-C107, C112, C115-C117, C120-C122 appropriately cite prior literature to contextualize the current findings. These claims are supported by the cited references and represent accurate summaries of established knowledge, though they are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C118",
+      "C119",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Mechanistic model claims proposing that oxidized apo-WhiB4 represses blaR/blaC expression, loss of WhiB4 derepresses BlaR leading to BlaI cleavage and blaC induction, and that WhiB4 and MSH function together in a redox-regulatory loop to coordinate \u03b2-lactam tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C114, C118-C119, C123-C125 synthesize experimental data into a mechanistic model. The core biochemical findings (C109-C110) are directly supported by EMSA and transcription data. The proposed mechanisms involving BlaI (C111, C114) are reasonable inferences based on known BlaR-BlaI regulation and the expression data, though direct demonstration of BlaI cleavage is not shown. The WhiB4-MSH regulatory loop (C124-C125) is a logical inference from the expression data but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Cytochrome bd oxidase and ATP synthase genes showed higher expression in Mtb\u0394whiB4 upon AG treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is directly supported by expression data and is consistent with BlaI's known binding to these promoters (C112). This observation supports the proposed regulatory model linking WhiB4 to BlaI-regulated genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Prediction that compounds targeting oxidative damage remediation, ROS elevation, respiration inhibition, or ATP homeostasis could potentiate \u03b2-lactam/\u03b2-lactamase inhibitor combinations against Mtb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C126 is a speculative prediction based on the study's findings and cited examples of relevant compounds. While the prediction is logical given the demonstrated importance of redox homeostasis in AG tolerance, it represents a hypothesis for future testing rather than a demonstrated result. The cited compounds provide precedent but do not validate the prediction.",
+    "result_type": "MINOR"
+  }
+]

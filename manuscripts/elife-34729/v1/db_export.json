@@ -1,0 +1,1548 @@
+{
+  "submission": {
+    "id": "61f1c6b0-9ac1-47cd-98e7-130328ab8281",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:09:55.312549Z",
+    "updated_at": "2025-12-02T01:09:55.312549Z"
+  },
+  "content": [
+    {
+      "id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "submission_id": "61f1c6b0-9ac1-47cd-98e7-130328ab8281",
+      "content_type": "manuscript",
+      "content_text": "# Computational design of thermostabilizing point mutations for G protein-coupled receptors\n\n## Authors\n\n- Petr Popov<sup>1</sup>\n- Yao Peng<sup>3</sup>\n- Ling Shen<sup>3</sup>\n- Raymond C Stevens<sup>1</sup>\n- Vadim Cherezov<sup>1</sup>\n- Zhi-Jie Liu<sup>3</sup>\n- Vsevolod Katritch<sup>1</sup> ([ORCID: 0000-0003-3883-4505](https://orcid.org/0000-0003-3883-4505)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences University of Southern California, Los Angeles Los Angeles United States\n2. Moscow Institute of Physics and Technology Dolgoprudny Russia\n3. iHuman Institute ShanghaiTech University Shanghai China\n4. School of Life Science and Technology ShanghaiTech University Shanghai China\n5. Department of Chemistry University of Southern California, Los Angeles Los Angeles United States\n6. Bridge Institute University of Southern California, Los Angeles Los Angeles United States\n7. Insititute of Molecular and Clinical Medicine Kunming Medical University Kunming China\n\n\u2020 Corresponding author\n\n## Abstract\n\nEngineering of GPCR constructs with improved thermostability is a key for successful structural and biochemical studies of this transmembrane protein family, targeted by 40% of all therapeutic drugs. Here we introduce a comprehensive computational approach to effective prediction of stabilizing mutations in GPCRs, named CompoMug, which employs sequence-based analysis, structural information, and a derived machine learning predictor. Tested experimentally on the serotonin 5-HT2C receptor target, CompoMug predictions resulted in 10 new stabilizing mutations, with an apparent thermostability gain ~8.8\u00b0C for the best single mutation and ~13\u00b0C for a triple mutant. Binding of antagonists confers further stabilization for the triple mutant receptor, with total gains of ~21\u00b0C as compared to wild type apo 5-HT2C. The predicted mutations enabled crystallization and structure determination for the 5-HT2C receptor complexes in inactive and active-like states. While CompoMug already shows high 25% hit rate and utility in GPCR structural studies, further improvements are expected with accumulation of structural and mutation data.\n\n## Introduction\n\nG-protein coupled receptors (GPCRs) represent the largest family of transmembrane proteins, which is involved in regulation of all major physiological functions and comprises more than 25% of established therapeutic targets (Lagerstr\u00f6m and Schi\u00f6th, 2008; Rask-Andersen et al., 2014). However, high conformational flexibility and low thermostability of these receptors have always presented major challenges for their structural, biophysical, and biochemical characterization. With exception of visual rhodopsin, structural characterization of all other 50 GPCRs so far required substantial efforts in protein engineering to design GPCR constructs suitable for crystallization (Cherezov et al., 2007; Warne et al., 2009; Chun et al., 2012; Katritch et al., 2013; Stevens et al., 2013; P\u00e1ndy-Szekeres et al., 2018). The design typically involves truncations of N- and C- termini, replacements of flexible loops and/or termini with soluble fusion domains (Chun et al., 2012), stabilizing co-crystallization partners (Zhang et al., 2015), and in many cases introduction of one or more point mutations (reviewed in (Heydenreich et al., 2015)).\n\nPoint mutations have shown to be especially important for thermostabilizing GPCR and making them amenable for structure-based drug design applications, which involve receptor co-crystallization with typically low-affinity hit or lead compounds. For example, point mutations were used to thermostabilize \u03b21-adrenergic (ADRB1) and A2A adenosine (A2AAR) receptors in both agonist and antagonist bound states, resulting in more than a dozen structures for each receptor including co-crystals with ligands in a micromolar affinity range (Moukhametzianov et al., 2011; Christopher et al., 2013; Warne et al., 2008; Warne et al., 2011). In the case of thermostabilized A2AAR, structural and biophysical characterization of initial hits led to structure-based discovery and optimization of preclinical candidates for Parkinson disease (Langmead et al., 2012). Moreover, thermostabilized GPCR constructs can streamline biochemical characterization of ligand binding in sensor-based high-throughput screening (HTS) (reviewed in (Kumari et al., 2015)) and measurements of ligand-binding kinetics by surface plasmon resonance (SPR) (Christopher et al., 2013; Congreve et al., 2011; Rich et al., 2009).\n\nHowever, currently employed experimental identification of stabilizing mutations by alanine scanning (Errey et al., 2015) or directed evolution approaches (Egloff et al., 2014; Schlinkmann et al., 2012) is a very resource consuming process, and only a few GPCRs have been successfully stabilized so far (reviewed in (Vaidehi et al., 2016)). Furthermore, stabilizing mutations obtained by these methods have shown very limited transferability between different GPCRs (Heydenreich et al., 2015; Serrano-Vega and Tate, 2009), requiring extensive stabilization campaigns to be performed for each individual receptor.\n\nComputational approaches could provide a cost- and time-effective alternative for GPCR stabilization. The already existing in silico prediction tools for soluble proteins (Kumar et al., 2006; Khan and Vihinen, 2010), however, are not effective for GPCRs because they do not take into account peculiarities of the 7-transmembrane (7TM) nature of the receptors. At the same time, although some of the recently developed GPCR-specific methodologies can be successful in explaining known experimentally-derived mutations (Vaidehi et al., 2016; Bhattacharya et al., 2014), their success in prediction of new stabilizing mutations has been limited so far, and has not resulted yet in successfully solved crystal structures of new GPCRs.\n\nIn this study, we present a set of complementary approaches for predicting stabilizing mutations in GPCRs combined into a CompoMug tool (COMputational Predictions Of MUtations in GPCRs). CompoMug consists of four modules: knowledge-based, sequence-based, structure-based, and machine-learning-based, taking maximum advantage of accumulated structural and biophysical data. We applied CompoMug to identify stabilizing point mutations for the 5-HT2C receptor, which is an important pharmacological target for the treatment of obesity and neuropsychiatric disorders. Experimental assessment showed that 10 out of the 39 predicted mutations improved stability of the receptor by more than 1.5\u00b0C, and one mutation resulted in increase of the apparent melting temperature by up to\u00a0~8.8 \u00b1 1.3\u00b0C, which is among the highest reported improvements in thermostability by a single point mutation in GPCRs. Moreover, combinations of two or three mutations led to even higher thermostability gains, some of which were compatible with both agonist and antagonist binding. Finally, the mutants predicted by CompoMug allowed for the determination of two 5-HT2C crystal structures in both agonist-bound and antagonist-bound complexes. The CompoMug provides a computational platform for thermostabilization of other GPCRs and can be further evolved with an accumulation of experimental mutation data.\n\n## Computational\u00a0methods\n\nCompoMug consists of four modules: knowledge-based, sequence-based, structure-based, and machine-learning-based, - combining several approaches to compose a list of the candidate point mutations, which can improve the stability of a GPCR. The general workflow of CompoMug is presented in Figure 1. Below we describe each of the modules in details.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34729/elife-34729-fig1-v1.jpg)\n\n**Figure 1.:** The method comprises four modules to predict stabilizing point mutations. The knowledge-based and sequence-based modules operate with only the sequence information about the target receptor, while the structure-based and machine-learning-based modules operate with the structural information. ML \u2013 machine learning; MSAs \u2013 multiple sequence alignments.\n\n### Knowledge-based module\n\nThe knowledge-based module employs a short list of established point mutations that have been already shown to improve stability and helped to solve structures for multiple GPCRs. Although in general stabilizing point mutations are not transferable across different GPCRs (Serrano-Vega and Tate, 2009), several specific mutations located in structurally or functionally conserved sites have shown increased chances to be beneficial for multiple receptors. Such known point mutations, listed in Table 1, could be good candidates for new GPCR targets, even for those with relatively low homology to solved GPCRs. For example, the mutation of a residue in position 3.41 to Trp (X3.41W, where X stands for any residue, and superscript shows GPCRdb numbering (Isberg et al., 2015)), first identified in the \u03b22 adrenergic receptor (Roth et al., 2008), has been now tested in more than 20 receptors by the GPCR Network (Stevens et al., 2013) and has shown to increase stability for several of them, helping to solve crystal structures for at least six receptors so far. The list also includes mutations that target residues in the sodium binding pocket, e.g. D2.50N, S3.39A, and D7.49N mutations (Kruse et al., 2012; Fenalti et al., 2014; Katritch et al., 2014). Sodium ions play an important role in class A GPCR signaling (Katritch et al., 2014), and, therefore, modifications in the sodium-binding site, e.g. by D7.49N mutation, can decouple ligand binding from conformational changes in the intracellular side of the receptor (Katritch et al., 2014; Massink et al., 2015). Such decoupling apparently reduces conformational heterogeneity of the receptors, resulting in thermostabilization of some receptors, like A2AAR (White et al., 2018), and facilitating their structure determination, especially in complexes with agonists (see Table 1). Note, that while currently only a few mutations in class A can be classified as transferrable \u2018knowledge-based\u2019, the list may continue to grow with an accumulation of additional knowledge on mutations, and also expand to include specific transferrable mutations in other GPCR classes. Algorithmically, we implemented the knowledge-based module as a simple procedure, which checks mutations from Table 1, and assigns score 1.0 if the mutation is potentially applicable (i.e. the wild type residue in the target GPCR corresponds to a residue in Table 1), and 0.0 otherwise.\n\n**Table 1.**\n Knowledge-based transferable point mutations in Class A.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Position</th>\n      <th>Mutation</th>\n      <th>Role</th>\n      <th>Receptor (PDB ID)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2.50</td>\n      <td>D-&gt;N</td>\n      <td>Sodium pocket</td>\n      <td>AA2AR (5WF5)</td>\n    </tr>\n    <tr>\n      <td>3.39</td>\n      <td>S-&gt;A</td>\n      <td>Sodium pocket</td>\n      <td>AA2AR (5WF6)</td>\n    </tr>\n    <tr>\n      <td>3.40</td>\n      <td>I-&gt;V, A</td>\n      <td>P-I-F microswitch motif</td>\n      <td>ADRB1 (4BVN), APJ (5VBL)</td>\n    </tr>\n    <tr>\n      <td>3.41</td>\n      <td>X-&gt;W</td>\n      <td>stabilization of TM3, TM4, TM5 interface</td>\n      <td>5HT2B (4IB4), 5HT1B (4IAR), ADRB1 (5A8E), ADRB2 (3NY8), CXCR4 (3ODU), DRD3 (3PBL)</td>\n    </tr>\n    <tr>\n      <td>3.49</td>\n      <td>D,G-&gt;A</td>\n      <td>DRY motif</td>\n      <td>FFAR1 (5TZR), NTR1 (4XES)</td>\n    </tr>\n    <tr>\n      <td>5.58</td>\n      <td>Y-&gt;A</td>\n      <td>Conserved activation microswitch</td>\n      <td>FFAR1 (5TZR), ADRB1 (4BVN)</td>\n    </tr>\n    <tr>\n      <td>6.37</td>\n      <td>L-&gt;A</td>\n      <td>Interferes with DRY motif function</td>\n      <td>AA2AR (5IU4), NTR1 (4GRV)</td>\n    </tr>\n    <tr>\n      <td>7.49</td>\n      <td>D-&gt;N</td>\n      <td>Sodium pocket</td>\n      <td>P2RY1 (4XNV), P2Y12 (4PXZ)</td>\n    </tr>\n  </tbody>\n</table>\n\n_X\u00a0=\u00a0any residue_\n\n### Sequence-based module\n\nThe sequence-based module looks for residues of the target receptor that deviate from a standard conservation pattern in an evolutionarily related group of GPCRs, e.g. receptor orthologs, a subfamily or a branch of the GPCR tree. We hypothesized that such residues in GPCRs are more likely to be destabilizing, and restoring conserved amino acids in such positions might result in receptor stabilization. In CompoMug, the \u2018deviation score\u2019 for an amino acid residue is estimated based on multiple sequence alignment (MSA) of evolutionary related homologous sequences:\n\n$$\nScore_{k}^{aa}=\\frac{C_{k}^{max}\u2212C_{k}^{aa}}{N_{MSA}}\u2212\\frac{C_{k}^{aa}}{C_{k}^{max}},\n$$\n\nwhere $N_{MSA}$ is the total number of sequences in the MSA, $C_{k}^{max}$ is the number of sequences with the most conserved amino acid residue at the position k, and $C_{k}^{aa}$ is the number of sequences that have the same residue aa as the target sequence in this position. As one can see from Equation 1, the first term is the highest when the target sequence has the most infrequent amino acid in the position k, that\u00a0is, it approaches 1, when $C_{k}^{aa}=1$ and $C_{k}^{max}\u2248N_{MSA}$. The second term penalizes the position k if it lacks a dominating conserved amino acid at the position, that\u00a0is, the penalty is increased as $C_{k}^{max}$\u00a0is decreased. The total score varies from -1.0 to 1.0, where maximum score 1.0 is ascribed to a deviating amino acid in a super-conserved position (e.g. x.50 in GPCRs). In other words, the preference is given to mutations of rarely observed amino acids in the otherwise highly conserved positions. Figure 2A and B schematically show the score computation given an MSA. Apparently, any conservation-related score depends on the set of sequences used to construct the MSA. For example, orthologs share very high sequence similarity with respect to the target GPCR resulting in a few, but usually very clear deviation patterns. On the other hand, comparison with GPCR sequences from different branches has a much more complex conservation pattern that may result in many false positive candidates. To capture the sequence deviations at different levels of GPCR hierarchy, we composed several sets of sequences to construct various MSAs. Specifically, we used five MSAs: (1) ortholog sequences corresponding to the species variations of the target receptor, (2) sequences corresponding to the common sub-family (sequence identity for the TM regions >40%), (3) sequences corresponding to the common GPCR branch (sequence identity for the TM regions >30%), (4) sequences corresponding to the whole non-olfactory class A GPCR (Rios et al., 2015), and (5) sequences corresponding to the crystallized receptors. MSAs were generated with the structure-based alignment tool of the GPCRdb (Isberg et al., 2015), and in case of the whole class A alignment updated using MAFFT software (Katoh and Frith, 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34729/elife-34729-fig2-v1.jpg)\n\n**Figure 2.:** (A) Example of an MSA for orthologs of 5HT2 receptors, residues colored according to their chemical properties. (B) Computed scoring matrix from the MSA_5HT2 in the sequence-based module (C) Example of the scoring matrices for five different MSAs. (D) Combined net scoring matrix. Each position is colored according to the score, from blue (minimal score) to red (maximal score).\n\nAlthough the last MSA is not directly related to the evolutionary variation, it may contain information relevant for the GPCR stability and propensity for crystallization. At the same time, the MSA for whole class A GPCR would capture rare variations in the most conserved residue positions of class A, including N1.50, D(E)R3.50Y, FxxxCWxP6.50 and NP7.50xxY. Given all five MSAs, we computed positional scores for each MSA, as well as the global score as the average of the individual MSA scores. In a special case of non-conserved Gly residues, we multiplied the \u2018deviation score\u2019 by factor of 2, to account for Gly usually destabilizing effect on \u03b1-helical secondary structure in the transmembrane helices of the receptor. Figure 2 schematically shows the workflow of the sequence-based module applied to the 5-HT2C receptor.\n\n### Structure-based module\n\nThe structure-based module is focused on identifying pairs of residues, which could form a salt bridge (also called ionic lock) when replaced with charged amino acids, or disulfide bonds when replaced with cysteines. Such ionic locks and covalent bonds can help to restrict the conformational flexibility of the receptor and improve stability. A successful use of the structure-based approach requires an accurate 3D structural model, which can be derived based on the close homology with a known crystallographic structure. In this study, structural models were obtained using the template-based homology modeling implemented in ICM-Pro v.3.8 molecular modeling suite (molsoft.com), followed by the backbone regularization and exhaustive Monte-Carlo side-chain refinement in internal coordinates. To predict potential ionic locks in the structural model, the search is performed for pairs of residues that satisfy the following criteria: i) residues are separated in sequence by at least five residues to exclude pairs of residues belonging to the same \u03b1-helix, ii) side chains point toward each other and do not point to the lipid membrane, iii) residue\u2019s C\u03b2-C\u03b2 distance lies in the range from 7.0 \u00c5 to 10.0 \u00c5, and iv) mutations of residues to at least one of four charged pairs (E-K, E-R, D-K, D-R) improve predicted free energy of the receptor after thorough local conformational optimization of the mutants (Equation 2)\n\n$$\nE_{folded}^{mut}\u2212E_{unfolded}^{mut}<E_{folded}^{wt}\u2212E_{unfolded}^{wt}\n$$\n\nWe used energy calculation implemented in the Molsoft ICM-Pro v.3.8. software (molsoft.com). The structural model of the mutant type was obtained by mutation of a given residue followed by Monte Carlo sampling of the flexible side chains for the mutated residue and the neighboring residues. Then the free energy of the unfolded and folded states for the wild and mutant types was approximated by a sum of the empirically derived residue-specific energies.\n\nIn order to predict stabilizing disulfide bonds in the receptor, we first employed the DbD software (Craig and Dombkowski, 2013) to obtain the initial list of candidates. DbD scans all pairs of residues in a protein and selects those\u00a0that satisfy geometrical parameters of the disulfide bond, when replaced with cysteines. The geometrical parameters, e.g. $\u03c73$ angle and $C_{\\beta}-C_{\\beta}$ distance, were obtained from analysis of protein structures in PDB. Given the DbD predictions, the final list of candidates was derived using the energy criterion implemented in ICM-Pro (see Equation 2). Figure 3 schematically represents the structure-based module.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34729/elife-34729-fig3-v1.jpg)\n\n**Figure 3.:** (A) Design of an Asp-Lys ionic lock by the point mutation of an Ala residue. (B) Design of a disulfide bridge by the double mutation of Ala residues..\n\n### Machine learning module\n\nWith the accumulation of experimental data on the stability of GPCR mutants, it becomes feasible to derive powerful prediction models using machine learning techniques. Our prediction model is derived using (i) a training benchmark, composed from site-specific mutations performed on GPCRs with known structure, (ii) a feature vector, consisting of structure-based and energy-based descriptors, which reflect important changes in the protein upon a point mutation, and (iii) a support vector machine method as implemented in the libsvm package (Chang and Lin, 2011). Each of these steps is described below in details.\n\n#### Training benchmark\n\nTo compose the training benchmark we used available alanine scanning mutagenesis data for three GPCR receptors: neurotensin receptor NTS1 (Shibata et al., 2009), A2A adenosine receptor (Magnani et al., 2008), and \u03b21 adrenergic receptor ADRB1 (Serrano-Vega et al., 2008). Point mutations that improve thermostability of these receptors were used as positive examples, while reverse mutations were used as negative examples for training. Further, in order to expand the training benchmark, we considered the remaining alanine mutations, that\u00a0is, those which were not reported as stabilizing, as negative examples. It is worth to note that such assumptions may introduce some false negative examples into the training set, because some of the alanine mutations were filtered out due to the lower expression level, rather than due to a decrease in the receptor stability. Overall, the training benchmark consists of 79 stabilizing point mutations and 923 non-stabilizing point mutations.\n\n#### Feature vector\n\nGiven the training set, we projected each point mutation as a vector onto a feature space, where the coordinates of the feature vector encode information relevant to a change in the receptor stability upon introducing the point mutation. To compose a feature vector, we used characteristics of three different types. Namely, for wild type and mutated residues we used sequence-based characteristics, which could be extracted from the primary structure of the protein (hydrophobicity, polarity, charge, side chain volume, solvent-accessible area, polarizability), structure-based characteristics, which could be extracted from the secondary and the tertiary structures of the protein (number of polar, charged, hydrophobic, and aromatic contacts, residue exposure, contact area, void volume, relative accessible solvent area), and energy-based characteristics, which could be extracted from the tertiary structures of the protein given the force-field (potential of mean force, electrostatic, van der Waals, solvation, hydrogen bond, and total energies). To obtain a structural model of a mutant type we mutated a given residue and performed Monte Carlo minimization with flexible side chains of the mutated residue and its neighboring residues, keeping the rest of the receptor rigid, using the Molsoft ICM-Pro v.3.8. software (molsoft.com). To calculate components of the feature vector we used built-in functions of ICM-Pro.\n\n#### Support Vector Machine classifier\n\nFeature vectors computed for each point mutation in the training benchmark are then combined into the feature matrix. Each entry in the feature matrix is labeled with\u00a0+1, if the corresponding point mutation stabilizes receptor, or \u22121 otherwise. Given this mapping of point mutations into the feature space, one can construct a hypersurface which separates\u00a0+1 feature vectors from \u22121 feature vectors, using the support vector machine (SVM) approach. We used the libsvm package libraries (Chang and Lin, 2011) to accomplish this task. There are two free parameters in this classification problem. Namely, the regularization parameter C, which is a tradeoff between the misclassification and \u2018smoothness\u2019 of the separating hypersurface, and the kernel parameter \u03b3, which corresponds to the variance of the radial basis function. Optimal values for these parameters were defined using the two-fold cross-validation procedure (see below). Figure 4 schematically represents the machine-learning-based module.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34729/elife-34729-fig4-v1.jpg)\n\n**Figure 4.:** (A) Example of structural models for the wild-type and mutant-type receptor. (B) Schematic representation of the point mutations mapped into the feature space. (C) Schematic representation of the prediction model as the separation curve in the feature space. (D) The net scoring matrix calculated with respect to the weights of the prediction models (blue and red colors correspond to the lowest and highest scores, respectively).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34729/elife-34729-fig5-v1.jpg)\n\n**Figure 5.:** (A) The cross-validation grid for the parameters C and $\\gamma$. Pairs of C and $\\gamma$ of the top 4 prediction models are depicted with green numbered circles. (B) Estimated true (TPR) and false (FPR) positive rates for the derived prediction models along with prediction weight, which is added to score of a point mutation.\n\n#### Cross-validation of the machine learning classifier\n\nTo validate the machine learning classifier the data set was randomly split into two parts: the training part, which consists of 65% of the training set, and the validation part, which consists of the remaining 35%. Each subset was adjusted to retain the ratio of the\u00a0+1 feature vectors, corresponding to stabilizing point mutations, and \u22121 feature vectors, corresponding to non-stabilizing point mutations. To optimize the performance of the algorithm, we scanned values of the two free parameters (C and \u03b3) on a grid [0.0, 50.0]\u00d7[0.0, 50.0] with a step size of 0.2 for both parameters, thus, yielded 250*250\u00a0=\u00a062,500 different prediction models. Then for each prediction model, we calculated the positive predictive value (PPV), which is the ratio of true positive rate (TPR) and the sum of true positive and false positive rates (FPR) predictions:\n\n$$\nPPV=\\frac{TPR}{TPR+FPR}\n$$\n\nWe repeated this procedure 10 times and scored parameters, based on the rank of each pair (rank one corresponds to the maximum PPV) in each cross-validation run:\n\n$$\nScore(C,\\gamma)=\\sumj=110\\frac{Rank(PPV_{i}^{j})}{max_{i}Score(C,\\gamma)_{i}}\n$$\n\nWe identified four pairs of parameters C and \u03b3 in different grid regions, which resulted in approximately the same low score, but provided different expected true positive and false negative rates (see Figure 5).\n\nFinally, we re-derived four prediction models on the whole training set using the obtained parameters C and \u03b3. The estimated TPR and FPR for each derived prediction model are presented in Figure 5B. As one can see we chose prediction models with different TPR and FPR. The reason for that is to control the number of output predictions (note that \u2018all \u22121\u2019 model, that\u00a0is, model that treats all point mutations as non-stabilizing, has perfect FPR, while 'all\u00a0+1' model, that\u00a0is, model that treats all point mutations as stabilizing has perfect TPR). For example, the first prediction model outputs only a few predictions, but with high confidence, in contrast to the fourth prediction model, which outputs more predictions, but also increases the number of false positive ones. The total score of a point mutation is, thus, weighted according to the prediction model.\n\n### Post processing\n\nGiven the output predictions from each module, we then filtered out point mutations that may affect ligand binding. For this purpose, we analyzed GPCR-ligand interactions in solved GPCR structures (Munk et al., 2016) and excluded residue positions that appear in the binding pocket in more than five different class A GPCR structures. We also did not consider predictions in the less conserved regions that lack secondary structure, e.g. loops and N/C \u2013 termini, since the modeling accuracy for these regions is much lower, compared to the transmembrane alpha-helical core.\n\n### Experimental methods\n\n#### Protein construct\n\nThe sequence of the human 5-HT2CR gene was synthesized by GenScript. The modified thermostabilized apocytochrome b562RIL (BRIL) as a fusion partner was inserted into the receptor\u2019s third intracellular loop (IL3) at L246 and M300 of the human 5-HT2CR gene, using overlapping PCR. The construct was further optimized by truncation of N-terminal residues 1\u201339 and C-terminal residues 393\u2013458. The \u0394N-5-HT2C-BRIL-\u0394C DNA was subcloned into a modified pFastBac1 vector for expression in Spodoptera frugiperda (Sf9) cells. The chimera sequence has a haemagglutinin (HA) signal sequence followed by a FLAG tag at the N-terminus, a PreScission protease site, and a 10\u00a0\u00d7\u00a0His tag at the C-terminus. Rationally designed point mutations were engineered into the 5-HT2CR gene by standard QuickChange PCR.\n\n#### Protein expression in Bac-to-Bac baculovirus expression system\n\nThe Bac-to-Bac Baculovirus Expression System (Invitrogen) was used to generate high-titer recombinant baculovirus (>109 viral particles per ml). Recombinant baculovirus was produced by transfecting recombinant bacmids (2.5\u20135 \u03bcg) into Spodoptera frugiperda (Sf9) cells (2.5 ml, density of 106 cells per ml) using 5 \u03bcl of X-tremeGENE HP DNA Transfection Reagent (Roche) and Transfection Medium (Expression Systems). After 4 d of shaking at 27\u00b0C, P0 viral stock (~109 virus particles per ml) was harvested as the supernatant of the cell suspension to produce high-titer viral stock. Viral titers were analyzed by flow cytometry on cells stained with gp64-PE antibody (Expression Systems). 5-HT2CR was expressed by infecting Sf9 cells at a cell density of 2\u20133\u00a0\u00d7\u00a0106 cells per ml with P1 virus at MOI (multiplicity of infection) of 5. Cells were harvested by centrifugation 48 hr post infection and stored at \u221280\u00b0C for future use.\n\n#### Protein purification\n\nThawed insect cells were disrupted in a hypotonic buffer containing 10 mM MgCl2, 20 mM KCl, 10 mM HEPES (pH 7.5) and EDTA-free complete protease inhibitor cocktail tablets (Roche). The isolated raw membranes were extensively washed by twice repeated centrifugation at 40000 rpm for 30 min at 4\u00b0C in the same hypotonic buffer. Subsequently, soluble and membrane associated proteins were removed in a high osmotic buffer containing 10 mM MgCl2, 20 mM KCl, 1.0 M NaCl, 10 mM HEPES (pH 7.5) and EDTA-free complete protease inhibitor cocktail tablets (three times). Purified membranes were flash-frozen in liquid nitrogen and stored at \u221280\u00b0C for further use. Purified membranes were thawed at room temperature and incubated in the presence of 50 \u03bcM ligand and protease inhibitor cocktail at 4\u00b0C for 2 hr. The membranes were incubated with 1.0 mg/ml iodoacetamide (Sigma) for 30 min and were solubilized in the buffer containing 50 mM HEPES (pH 7.5), 1% (w/v) n-dodecyl-beta-D-maltopyranoside (DDM, Anatrace), 0.2% (w/v) cholesterol hemisuccinate (CHS, Sigma-Aldrich) and 150 mM NaCl, at 4\u00b0C for 2.5 hr. The solubilized 5-HT2CR proteins in the supernatant were isolated by high-speed centrifugation (Beckman), and then incubated at 4\u00b0C overnight with TALON IMAC resin (Clontech), 800 mM NaCl and 20 mM imidazole as the final buffer concentration. The resin was washed with 10 column volumes of washing buffer I containing 50 mM HEPES (pH 7.5), 0.1% (w/v) DDM, 0.02% (w/v) CHS, 800 mM NaCl, 10% (v/v) glycerol, 20 mM imidazole, 50 \u03bcM ligand (only for the ligand binding case), and six column volumes of washing buffer II containing 50 mM HEPES (pH 7.5), 0.02% (w/v) DDM, 0.004% (w/v) CHS, 500 mM NaCl, 10% (v/v) glycerol and 50 \u03bcM ligand (only for the ligand binding case) without imidazole. The protein was eluted using four column volumes of elution buffer containing 50 mM HEPES (pH 7.5), 0.02% (w/v) DDM, 0.004% (w/v) CHS, 500 mM NaCl, 10% (v/v) glycerol, 250 mM imidazole and 50 \u03bcM ligand (only for the ligand binding case). The 5-HT2CR protein sample was concentrated to\u00a0~10 mg/ml using a 100 kDa cutoff concentrator (Sartorius). The protein yield and monodispersity were measured by analytical size-exclusion chromatography, aSEC (Agilent).\n\n#### Protein Stability conducted by CPM Assays\n\nProtein thermostability was measured by a microscale fluorescent thermal stability assay as previously detailed (Alexandrov et al., 2008). For thermostability assay, CPM (N-([4-(7-diethylamino-4-methyl-3-coumarinyl) phenyl] maleimide) dye was dissolved in DMSO at 4 mg/ml as stock solution and diluted 1:20 in buffer (25 mM HEPES, pH 7.5, 500 mM NaCl, 5% (v/v) glycerol, 0.01% (w/v) DDM, 0.002% (w/v) CHS) before use. 1 \u03bcl of diluted CPM was added to the same buffer with approximately 0.5\u20132 \u03bcg 5-HT2C receptor in a final volume of 50 \u03bcl. The thermal denaturation assay was performed in a Rotor-Gene realtime PCR cycler (Qiagen). The excitation wavelength was 365 nm and the emission wavelength was 460 nm. All assays were performed over a temperature range from 25\u00b0C to 95\u00b0C using a temperature range rate 2.0 \u00b0C/min. The stability data were processed with GraphPad Prism.\n\n## Results\n\n### Limited benchmarking with alanine scanning data\n\nThe initial training set benchmarking of the CompoMug prediction algorithms was performed with the alanine scanning data available for neurotensin receptor NTS1 (Shibata et al., 2009), adenosine receptor AA2AR (Magnani et al., 2008), and \u03b21 adrenergic receptor ADRB1 (Serrano-Vega et al., 2008; Heydenreich et al., 2015). Due to the nature of the experimental data, such comparison is limited to only X to A (where X is any residue) and A to L point mutations, and the benchmark employed only sequence-based and machine learning modules. For each receptor, we kept top 40 predicted single point mutations and compared the results with the experimental alanine data for the three receptors (see Supplementary file 1). For the human AA2AR, turkey ADRB1, and rat NTS1 receptors CompoMug successfully predicts 20, 11, and 9 stabilizing mutations out of 39, 18, and 20 reported mutations in the transmembrane region, suggesting about 50% recall rate in this initial benchmark.\n\n### Application of CompoMug to the 5-HT2C receptor\n\nTo test the algorithms in a real case of a blind predictions for a new target prospective screening, we applied CompoMug to predict stabilizing point mutations for the serotonin 5-HT2C receptor. The 5-HT2C receptor is widely expressed within the central and the peripheral nervous systems and appears to play a prominent role in psychiatric disorders. Thus, obtaining the structure of this receptor could help for better understanding and treatment of the pathophysiology of obesity\u00a0and psychiatric disorders including schizophrenia, anxiety, and depression (Wacker et al., 2013)(Peng et al., 2018).\n\nTo select candidates for point mutations we used the knowledge-based, sequence-based, structure-based and machine-learning modules of CompoMug as described in\u00a0Computational\u00a0Methods. In the sequence-based module, we composed five different MSAs (see Supplementary file 2): orthologs of 5-HT2C receptor, orthologs of all 5-Hydroxytryptamine GPCRs, aminergic receptors (human only), crystallized receptors (class A only), and class A alignment (non-olfactory) (Rios et al., 2015). For the structure-based module, we first constructed the 5-HT2C homology model based on the structure of the 5-HT2B receptor (PDB ID 4IB4) (Wacker et al., 2013). These two serotonin receptor subtypes share 62% of identical residues in the 7TM region (49% for the full sequence). This structural model was also used to generate 239*19\u00a0=\u00a04541 models (considering 239 residues in the TM regions and 19 possible amino acid substitutions) with conformationally optimized point mutations as the input for the machine-learning-based module, followed by the score assignment with the derived prediction models. After the post-processing procedure, a list of 39 mutations from different modules was selected for experimental testing, as presented in Table 2 Note, that several mutations were predicted by more than one module.\n\n**Table 2.**\n Predicted CompoMug point mutations for 5-HT2C and results of experimental testing.Mutations shown\u00a0as\u00a0bold\u00a0improved aSEC and/or thermostability by more than 1.5 oC ;\u00a0shown\u00a0as\u00a0italic\u00a0had\u00a0low protein yield or strong\u00a0aggregation, Tm not measured.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutation</th>\n      <th>CompoMug module</th>\n      <th>aSEC* quality</th>\n      <th>Tm (oC)\u00a0\u00b1\u00a0SEM</th>\n      <th>\u0394Tm (C)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td></td>\n      <td></td>\n      <td>50.4\u00a0\u00b1\u00a00.8</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>I621.41V</td>\n      <td>Sequence-based</td>\n      <td>~</td>\n      <td></td>\n      <td>\u22120.7</td>\n    </tr>\n    <tr>\n      <td>G691.48A</td>\n      <td>Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22121.4</td>\n    </tr>\n    <tr>\n      <td>D992.50N</td>\n      <td>Knowledge-based</td>\n      <td>-</td>\n      <td></td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>H8512.51E</td>\n      <td>Structure-based</td>\n      <td>N/A</td>\n      <td></td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>G1032.54A</td>\n      <td>Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22124.4</td>\n    </tr>\n    <tr>\n      <td>Y1253.23K</td>\n      <td>Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22122.0</td>\n    </tr>\n    <tr>\n      <td>Y1253.23V</td>\n      <td>Sequence-based</td>\n      <td>~</td>\n      <td></td>\n      <td>\u22120.7</td>\n    </tr>\n    <tr>\n      <td>M1433.41W</td>\n      <td>Knowledge-based</td>\n      <td>-</td>\n      <td></td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>R1573.55T</td>\n      <td>Machine-learning and Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22121.8</td>\n    </tr>\n    <tr>\n      <td>R1573.55Q</td>\n      <td>Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22122.0</td>\n    </tr>\n    <tr>\n      <td>T1694.40K</td>\n      <td>Sequence-based</td>\n      <td>+</td>\n      <td></td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>A1714.42L</td>\n      <td>Machine-learning</td>\n      <td>~</td>\n      <td>52.3\u00a0\u00b1\u00a01.2</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>I1724.43A</td>\n      <td>Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>1.1</td>\n    </tr>\n    <tr>\n      <td>I1724.43F</td>\n      <td>Sequence-based</td>\n      <td>~</td>\n      <td></td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>G1844.55A</td>\n      <td>Machine-learning</td>\n      <td>+</td>\n      <td>51.9\u00a0\u00b1\u00a00.1</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td>N203ECL2D</td>\n      <td>Structure-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22122.6</td>\n    </tr>\n    <tr>\n      <td>F2205.45I</td>\n      <td>Machine-learning</td>\n      <td>~</td>\n      <td></td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>F2245.48Y</td>\n      <td>Machine-learning and Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22123.3</td>\n    </tr>\n    <tr>\n      <td>C2355.59F</td>\n      <td>Sequence-based</td>\n      <td>~</td>\n      <td></td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>L2365.60R</td>\n      <td>Machine-learning and Sequence-based</td>\n      <td>N/A</td>\n      <td></td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>V2405.64A</td>\n      <td>Sequence-based</td>\n      <td>+</td>\n      <td>52.4\u00a0\u00b1\u00a00.5</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>V2405.64S</td>\n      <td>Sequence-based</td>\n      <td>+</td>\n      <td></td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>G3146.38A</td>\n      <td>Machine-learning-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22124.0</td>\n    </tr>\n    <tr>\n      <td>L3336.57V</td>\n      <td>Machine-learning and Sequence-based</td>\n      <td>+</td>\n      <td>53.7\u00a0\u00b1\u00a00.6</td>\n      <td>3.3</td>\n    </tr>\n    <tr>\n      <td>K3487.32A</td>\n      <td>Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22124.4</td>\n    </tr>\n    <tr>\n      <td>C3607.45N</td>\n      <td>Sequence-based</td>\n      <td>+</td>\n      <td>59.2\u00a0\u00b1\u00a00.5</td>\n      <td>8.8</td>\n    </tr>\n    <tr>\n      <td>G3627.47L</td>\n      <td>Sequence-based</td>\n      <td>+</td>\n      <td>52.3\u00a0\u00b1\u00a00.7</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>G3627.47A</td>\n      <td>Sequence-based</td>\n      <td>+</td>\n      <td>54.3\u00a0\u00b1\u00a00.7</td>\n      <td>3.9</td>\n    </tr>\n    <tr>\n      <td>L3707.55D</td>\n      <td>Structure-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22122.3</td>\n    </tr>\n    <tr>\n      <td>K3738.48E</td>\n      <td>Structure-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22120.4</td>\n    </tr>\n    <tr>\n      <td>I3748.49D</td>\n      <td>Structure-based</td>\n      <td>+</td>\n      <td>53.9\u00a0\u00b1\u00a00.8</td>\n      <td>3.5</td>\n    </tr>\n    <tr>\n      <td>I3748.49T</td>\n      <td>Sequence-based</td>\n      <td>+</td>\n      <td>54.1\u00a0\u00b1\u00a00.9</td>\n      <td>3.7</td>\n    </tr>\n    <tr>\n      <td>Y3758.50F</td>\n      <td>Sequence-based</td>\n      <td>-</td>\n      <td></td>\n      <td>\u22122.4</td>\n    </tr>\n    <tr>\n      <td>N3818.56R</td>\n      <td>Sequence-based</td>\n      <td>~</td>\n      <td></td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>T671.46C/G1032.54C</td>\n      <td>Structure-based</td>\n      <td>-</td>\n      <td></td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>V741.53C/A962.47C</td>\n      <td>Structure-based</td>\n      <td>-</td>\n      <td></td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>A872.38C/A1714.42C</td>\n      <td>Structure-based</td>\n      <td>~</td>\n      <td></td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>A982.49C/A1403.38C</td>\n      <td>Structure-based</td>\n      <td>~</td>\n      <td>52.8\u00a0\u00b1\u00a01.0</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>T3697.54C/Y3758.50C</td>\n      <td>Structure-based</td>\n      <td>N/A</td>\n      <td></td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n_*aSEC quality is denoted as improved (+), unchanged (~), and degraded (-) as compared to the base construct apo receptor._\n\n### Experimental testing of individual CompoMug mutations\n\nA total of 39 mutations predicted by CompoMug (see Table 2) were tested on the apo 5-HT2C receptor, using the base construct with N- and C- termini truncations and BRIL fusion as described in Experimental\u00a0Assays section. The optimal insertion position for BRIL, as well as C- and N-terminal truncations were determined experimentally starting from the WT construct (without mutations), as described in the structural paper (Peng et al., 2018). For each point mutation, the receptor was expressed in a modified pFastBac1 vector in sf9 insect cells, and the aSEC and CPMs profiles were measured for the unliganded receptor (apo) to quantify its thermostability. Point mutations\u00a0that decreased the receptor expression yield or stability, or for which we could not accurately measure the apparent melting temperature, or did not affect the stability of the protein were disregarded from further experiments. The Tm measurements were repeated for the 10 stabilizing mutations that improved expression and increased apparent melting temperature by at least 1.5\u00b0C (bold\u00a0rows in Table 2). The most remarkable effect was observed for the C3607.45N point mutation predicted with the sequence-based module, which increased the thermostability of the receptor by 8.8 \u00b1 1.3\u00b0C in the initial CPM assays. Other mutations showed a moderate effect on thermostability, increasing the apparent melting temperature by 1.5\u20133.9\u00b0C.\u00a0Six out of ten mutations are substitutions to the hydrophobic residues (A, L, or V), three point mutations are substitutions to the polar or charged residues (T, N, or D), and one double mutation corresponds to an engineered disulfide bridge (see Table 2). We also observed that improvements in aSEC and thermostability were well correlated, meaning that point mutations augmented both aSEC quality and apparent melting temperature.\n\n### Design and testing of combined mutations\n\nAfter testing single mutations, we devised a list of potentially additive double and triple combinations of point mutations, all of them including the C3607.45N mutation. Specifically, we first tested the C3607.45N mutation in combinations with all other mutations, as well as double mutation C3607.45N-G3627.47A in combination with other mutants. These double and triple combinations were tested for the apo receptor and the receptor in complex with different 5-HT2C binding ligands, including an agonist ergotamine and five different antagonists.\n\nAs Figure 6 shows (see Figure 6\u2014source data 1 for raw data), the tested combinations further improve thermostability of apo receptor, with the maximal observed increase in Tm reaching\u00a0~13\u00b0C for the triple mutation C3607.45N, G3627.47A, A1714.42L. Moreover, binding of antagonist mesulergine improved thermostability of this triple mutant by additional\u00a0~8\u00b0C, resulting in a total of 21\u00b0C increase in Tm, as compared to the apo base receptor construct. Interestingly, this same triple mutation was destabilized by binding of agonist ergotamine as compared to the apo mutant. In general, while the C3607.45N point mutation makes most substantial contribution to the stability of the apo and agonist-bound receptor, the addition of most other point mutations (except for V2405.64A) predominantly stabilizes the antagonist-bound receptor conformation, which was previously less amenable to crystallization. The biggest contrast between agonist and antagonist bound state thermostability (~16\u00b0C) was observed for the quadruple mutant construct with an engineered disulfide bond (C3607.45N, G3627.47A, A982.49C/A1403.38C), suggesting that the introduction of the rigid covalent link between the TM2 and TM3 fixes receptor in the inactive conformational state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34729/elife-34729-fig6-v1.jpg)\n\n**Figure 6.:** In apo form or in complex with an agonist (ergotamine) or antagonists (doxepin, ritanserin, clozapine, mesulergine, and SB228357). Light colored bars highlight the reference temperatures for the base construct, the full color bars show the additional effect of mutations on these complexes. The expected error for each measurement does not exceed\u00a01.2\u00b0C.\n\n### Predicted mutations enable crystallization and structure determination of 5-HT2C complexes\n\nThe predicted stabilizing point mutations made it possible to obtain first crystals of the 5-HT2C receptor in complex with an antagonist, as well as to improve the diffraction of the agonist-bound crystals from\u00a0>4 \u00c5 to\u00a0<3.0 \u00c5, as described in our recent paper\u00a0(Peng et al., 2018). The predicted mutations were introduced in the context of an available 5-HT2C construct that included optimized fusion partner and N-, C- termini truncations. In this context, multiple combinations of CompoMug-derived mutants resulted in diffracting crystals of the 5-HT2C receptor. At the same time, the single C3607.45N mutation was found as sufficient to solve structures in complex with agonist ergotamine (at 3.0 \u00c5 resolution), as well as antagonist ritanserin (at 2.7 \u00c5), which is the first antagonist-bound structure of a serotonin receptor\u00a0(Peng et al., 2018).\n\n### Structural analysis of the predicted thermostabilizing mutations in 5-HT2C\n\nDetermination of the crystallographic structure of the 5-HT2C receptor (Peng et al., 2018) now allows more detailed analysis of the stabilizing nature of the discovered by CompoMug mutations. The mutations were modeled based on the atomic structure of the 5-HT2C receptor as shown in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34729/elife-34729-fig7-v1.jpg)\n\n**Figure 7.:** Each mutated residue and its neighboring residues are represented as sticks and wires, respectively.\n\nFor example, the A1714.42 residue, located at the intracellular side of TM4, is surrounded by hydrophobic side chains of Y902.41, F912.42, I1754.46, and its replacement with a longer Leu side chain could form more favorable hydrophobic contacts. The G1844.55 in the middle of TM4 is exposed to the lipid membrane and does not form any contacts with the side chains, and its replacement with Ala could have a stabilizing effect on the \u03b1-helix conformation and more favorable hydrophobic contacts with the lipid environment. The V2405.64 residue does not form any specific contacts and it is located close to the membrane intracellular boundary, so the V2405.64A mutation may reduce unfavorable contacts with predominantly charged and polar lipid headgroups in this environment. The L3336.57 residue points to the membrane and does not form any specific contacts with the neighboring side chains, and the L3336.57V might improve stability by forming more favorable hydrophobic contacts with lipids.\n\nThe C3607.45 amino acid is rarely observed at the 7.45 position, and it is known that N7.45 plays important role in the sodium coordination as a part of the sodium binding pocket (Katritch et al., 2014; Liu et al., 2012). Thus, the C3607.45N point mutation restores the conserved residue in the sodium binding pocket and improves the stability of the receptor. Given that this point mutation was necessary to obtain the crystallographic structures of the 5-HT2C receptor in both agonist-bound and antagonist-bound conformations, while D992.50N was detrimental, the integrity of the sodium binding pocket in 5-HT2C receptor apparently plays an important role for the overall receptor stability. The G3627.47 residue is partially exposed to the lipid environment, thus both the G3627.47L/A point mutations improve the stability of the receptor by stabilizing the secondary structure of TM7 and ameliorating hydrophobic interactions with the membrane environment. The I3748.49 residue is surrounded by positively charged K83ICL1, K3738.48, R3768.51, and R3778.52 side chains, so the I3748.49D/T point mutations may form salt bridges or polar interactions resulting in improved stability of the receptor. Finally, the double mutant A982.49C/A1403.38C can form a disulfide bridge between TM2 and TM3, apparently fixing the inactive conformation of the receptor. The latter observation is corroborated by the highest differential in thermostability between antagonist and agonist bound states measured for the combination construct containing the A982.49C/A1403.38C mutant (Figure 6).\n\n## Discussion\n\nHere we introduced a new comprehensive CompoMug approach for the prediction of stabilizing mutations in GPCRs and demonstrated its first application. In the 5-HT2C case, CompoMug achieved a very high success rate of 25% for mutations with substantial, more than 1.5\u00b0C, improvement in Tm values, which is 5 to 15 times higher than corresponding hit rates found in the experimental alanine mutagenesis approach for the adenosine or endothelin type B receptors (Lebon et al., 2011; Okuta et al., 2016). The CompoMug predictions resulted in the discovery of 10 new stabilizing mutations and enabled the structure determination of the 5-HT2C receptor in complexes with an agonist and an antagonist. Importantly, our first results suggest that each module of CompoMug is important and can additively contribute to the discovery of key stabilizing mutations. Below we discuss strengths and limitations of the individual CompoMug modules and how they can be further improved with an accumulation of structural and mutation data for the GPCR family.\n\nKnowledge-based is the most established and straightforward approach, which directly copies some of the well-described mutations that already proved beneficial in crystallization of several GPCRs. However, while the mutations in the knowledge-based list are considered the most transferable at least within class A GPCR, they still often fail to give any substantial gain in stability as it happened in the 5-HT2C case for the D992.50N and M1433.41W mutations tested. Moreover, even in those cases when some of such known transferable mutants are beneficial, they may be not sufficient to get the optimal crystallization construct, nor to\u00a0drive thermostability to the point required for structure-based drug design applications. Ongoing accumulation of mutation results for more GPCRs, e.g. discovered by other modules, may allow to add some additional mutations to the knowledge-based module. For example, X3.41-\u00a0>\u00a0W mutation was initially discovered based on a sequence analysis and structure-based energy evaluations (Roth et al., 2008). At the same time, the recently discovered mutations in the functionally conserved sites (Table 1), e.g. in the P-I-F motif, DRY motif or sodium site (Katritch et al., 2014), apparently remove the key \u2018gears\u2019 from the activation mechanism, thus confining receptor to the inactive state and reducing conformational heterogeneity of the system, which can be beneficial for both thermostabilization and crystallization. In this respect, the sodium site residues provide the most opportunities, as it has several highly conserved sodium- and water-coordinating side chains that can be mutated.\n\nThe sequence-based module is fast and does not require structural knowledge. More than half of the\u00a0tested point mutations (23 out of 39) came\u00a0from the sequence-based module, with 6 of them yielding increased thermostability of the receptor, and 8 of them showing neutral effect. One of the advantages of this module is that mutation candidates have a lower probability to damage the receptor, because the candidate amino acid naturally occurs in other GPCRs. Moreover, in the particular case of 5-HT2C receptor, the highest improvement in thermostability was observed for the C3607.45N point mutation predicted by the sequence-based module. Similar idea of using deviations in the residue conservation pattern as a potential target for mutation has been used by Chen et al to stabilize a variant of the ADRB1 receptor (Chen et al., 2012), though its application was limited to the cases of unusual polar or charged residues. In this study, we used an empirical score that is applicable to all types of residues and allows to quantify the predictions (see Equation1). The score can be further optimized, for example, one can add specific weights with respect to MSAs, e.g. species variation may have a higher impact on the score compared to the common GPCR branch variation. A regression analysis required to adjust the optimal weights for the alignments, however would require further accumulation of additional stability data for GPCRs.\n\nThe structure-based module employs detailed information about residue interactions, and can potentially be highly predictive. In the 5-HT2C test case, nine tested point mutations were selected using the structure-based module, and two of them (I3748.49D and A982.49C/A1403.38C) increased the apparent melting temperature of the receptor. Importantly, the structure-based module can be very effective in differentiating between active and inactive state stabilizing conformations, and indeed the A982.49C/A1403.38C disulfide bond 5-HT2C was shown to exclusively stabilize antagonist-bound complexes, but destabilize an agonist-bound complex (Figure 6). Previously, possibility to differentially stabilize GPCRs in agonist or antagonist-bund states was shown by experimental alanine mutagenesis study for the A2A receptor (Magnani et al., 2008). The structure-based module can do it very effectively, however, it requires a high-quality structural model, due to the high sensitivity of disulfide bonds, ionic locks and the corresponding energy terms to the receptor conformation. An increasing structural coverage of GPCR family, including both active- and inactive-state conformations will, in turn, allow more accurate models, improving performance and applicability of the structure-based module.\n\nThe machine-learning-based (ML) module allows to identify stabilizing point mutations overlooked\u00a0by the other modules, since it uses complex feature vectors trained on previously obtained experimental data on mutations, rather than pure sequence or structural information. The machine learning, however, makes the resulting point mutations to be more difficult to interpret. We used eight point mutations selected by this module, of which four point mutations also showed high scores in the sequence-based module. Three of the ML point mutations improved the thermostability of the receptor. This module critically depends not only on the structural model, but also on the training set. For the current study, we used the available alanine mutations data, thus, its prediction power for the residues other than alanine can be limited. This situation will improve with an accumulation of novel stability data, including both experimental results coming from full receptor scanning and incorporation of mutations predicted by CompoMug in more than a dozen GPCRs.\n\nBy design, the four CompoMug modules are based on different principles and use different types of input information, so they are expected to complement each other, rather than overlap. Indeed, our results suggest that most of the successful mutations for 5-HT2C were predicted by only one of the modules, and overlap in module predictions did not correlate with improved chances for the successful mutation, at least in this test case. Moreover, some of the trends in different modules can be opposite. For example, some of the specific knowledge-based mutations of highly conserved residues (e.g. D2.50N), can render the receptor dysfunctional, but at the same time help its stability (White et al., 2018). On the other hand, the sequence-based module is based on a premise that residues deviating from the local conservation pattern are likely to be destabilizing. There is no contradiction here, as the evolutionary selection acted differently on different GPCR sites, in some positions selecting for general stability, but in other positions preserving conformationally unstable, but functionally critical residues.\n\nThe CompoMug tool is being applied to a number of GPCR targets, showing consistently high hit rates and helping structure determination of several GPCRs, including non-class A receptors (unpublished results). In principle, structure-based and sequence-based modules of CompoMug in their current form can be also applied to other membrane proteins families. The feature set of the machine-learning-based module may also have a more general utility, however, the model would require retraining on mutation stability data for the target family, where available.\n\n### Conclusions\n\nIn this study, we present CompoMug - a computational tool to predict stabilizing point mutations in GPCRs. The four modules of CompoMug synergistically use different types of information on known transferable mutations, natural sequence variations, structural interactions, and machine learning of a large dataset of GPCR mutations, respectively, to maximize success rate of predictions. Applied to the 5-HT2C receptor, CompoMug helped us to identify as many as 10 stabilizing mutations (25% hit rate), supporting the importance of all four modules. One of the predicted mutations, C3607.45N, improved the apparent melting temperature of the apo 5-HT2C receptor by 8.8 \u00b1 1.3\u00b0C. Moreover, a triple mutant C3607.45N, G3627.47A, A1714.42L had its thermostability improved by as much as\u00a0~13\u00b0C, as compared to the base construct apo receptor. Moreover, this C3607.45N mutation in the optimal fusion construct yielded crystal structures of the 5-HT2C receptor in two distinct conformations, agonist-bound active like and antagonist-bound inactive. CompoMug is being applied to other receptors of the GPCR family, and performance of its modules can be further improved via the feedback loop with newly generated experimental data.\n",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "9c38fb62-0205-4f9e-ba82-9d47e18cdfce",
+      "submission_id": "61f1c6b0-9ac1-47cd-98e7-130328ab8281",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34729.018](https://doi.org/10.7554/eLife.34729.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rational Design of Thermostabilizing Point Mutations for G-Protein Coupled Receptors\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Dmitry Veprintsev (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript describes a computational approach to the thermostabilisation of GPCRs. Prediction of thermo-stabilizing mutations is highly desirable because GPCRs that cannot be crystallized, are probably too unstable, and adding thermo-stabilizing mutations would make structure determination possible. The authors use the 5HT2c receptor as their target, because the structure had not been determined, and also there are close 5HT receptor homologs whose structures have been published (and therefore provide the best possible start for computational modelling). The program devised (CompoMug) is unique in that it takes into account four sources of information, whereas previous computational approaches normally considered only one. The four modules, knowledge-based, sequence-based, structure-based and machine learning, independently predicted point mutations that would thermo-stabilize the 5HT2c receptor. Sometimes, more than one module predicted the same mutation, but usually there was little overlap between the predictions. A total of 39 mutations were computationally predicted as being thermo-stabilizing, so these were expressed and purified, and the thermo-stability tested experimentally in the presence or absence of various ligands. Ten of the mutations (25%) were found to be thermo-stabilizing and were combined to make a triple mutant that was highly expressed and stable, and the structure was subsequently determined (accompanying manuscript).\n\nThere are two key features that sets this paper apart from previously published papers on predicting thermo-stabilizing mutations. Firstly, this manuscript considers and compares four different sources of information for predicting thermo-stabilizing mutations. Secondly, the predicted mutations were shown to be useful in generating a structure (reported in a separate paper). We appreciate that other GPCR structures have been published containing thermo-stabilizing mutations, but in many instances the authors have been less than candid about the approaches used to predict the mutations.\n\nEssential revisions:\n\n1) There are two numbers quoted for improved thermo-stability that are used throughout the paper to extol the virtues of the approaches developed, namely a 9\u02daC increase for a single mutation (C360N) and a 19\u02daC increase for a triple mutant. It appears that these numbers came from the graph in Figure 6 where the \u0394Tm is plotted for each of the constructs. However, the comparison is being made to the apo receptor, so the bar that gives the 9\u02daC increase is a C360N mutant receptor bound to ritanserin. The apo receptor containing the C360N mutation appears to have a \u0394Tm of 4\u02daC. However, this does not correspond to the data in Table 2 where the same mutation is shown with an apparent Tm increase of 8.6\u02daC. There cannot be two different numbers given for the same data. The 19\u02daC increase in apparent Tm seems to be of the mesulergine-bound mutant compared to the apo receptor. If it was compared to the wild type receptor bound to mesulergine, then the Tm difference would be about 5\u02daC lower. If the apo receptor is compared, the triple mutant would be about 10\u02daC more stable than the parental receptor. This graph needs to be re-drawn so that the increase in Tm is calculated between the parental receptor and mutant receptor when bound to the same ligand. This will give a true reflection on the improvement in apparent Tm. Secondly, all the actual Tms measured to create the data in Figure 6 must be included as a table in supplementary (or in the text). It is still worth putting in the bar graph as depicted in Figure 6, because it shows the absolute scale of thermo-stability and is therefore most useful in assessing the possibility of crystallizing a given mutant with a particular ligand. Error bars should also be put on both graphs.\n\n2) The claims of Tm increases throughout the manuscript must be changed in the light of point 1.\n\n3) The computational methods should be made available as scripts and/or web-server so that others can apply them to systems of interest.\n\n4) It was unclear whether the method is transferable to other GPCRs. For generality, we recommend: (a) that the authors \"retrospectively\" predict stabilizing mutations used in crystal structures published by Heptares, and/or (b) that the authors implement their computational method (no additional experiments needed) to at least five other GPCRs of known structure and provide tables of suggested point mutations. Without this, the paper stands on only one example, although it claims a general method. We stress this point because two of the four modules the authors implement (knowledge based and structure based) may substantially narrow the scope.\n\n5) In addition, the authors should include a brief discussion of potential applications of this algorithm to other classes of \u03b1-helical membrane proteins.\n\n6) The authors claim that 25% hit rate is high. What are they comparing to? Alanine scan is obviously much lower, but structure based and especially consensus-based approaches have shown success rates of ~50% in soluble proteins.\n\n7) Equation 1 is difficult to understand. It's essentially a way to quantify whether positions diverge from the family sequence consensus. We recommend carefully rephrasing the explanation of this equation taking care to correctly label the indices for each term (for instance, it seems that Cmax should be Ckmax).\n\n8) The sequence alignment can have a dramatic effect on prediction success, especially in divergent sequence families like GPCRs. Could the authors provide more details about sequence cutoffs and sources of information for the sequences? Ideally, they would provide the sequence ID of each sequence that went into each of the MSAs they used.\n",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "226b3693-c1eb-4fb9-b55b-e3a076410990",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C1",
+      "claim": "GPCRs represent the largest family of transmembrane proteins involved in regulation of all major physiological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "G-protein coupled receptors (GPCRs) represent the largest family of transmembrane proteins, which is involved in regulation of all major physiological functions and comprises more than 25% of established therapeutic targets (Lagerstr\u00f6m and Schi\u00f6th, 2008; Rask-Andersen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lagerstr\u00f6m and Schi\u00f6th, 2008 and Rask-Andersen et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "1a3064fb-30e1-4640-b6fd-91102c353b8b",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C2",
+      "claim": "GPCRs comprise more than 25% of established therapeutic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "G-protein coupled receptors (GPCRs) represent the largest family of transmembrane proteins, which is involved in regulation of all major physiological functions and comprises more than 25% of established therapeutic targets (Lagerstr\u00f6m and Schi\u00f6th, 2008; Rask-Andersen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lagerstr\u00f6m and Schi\u00f6th, 2008 and Rask-Andersen et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "fe7881c5-7f65-4a82-8644-4b54cbd7a358",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C3",
+      "claim": "High conformational flexibility and low thermostability of GPCRs present major challenges for their structural, biophysical, and biochemical characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, high conformational flexibility and low thermostability of these receptors have always presented major challenges for their structural, biophysical, and biochemical characterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established understanding in the GPCR field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "d5ff59d2-9adb-4de3-959e-9dbd8dbc1325",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C4",
+      "claim": "With exception of visual rhodopsin, structural characterization of all other 50 GPCRs required substantial efforts in protein engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "With exception of visual rhodopsin, structural characterization of all other 50 GPCRs so far required substantial efforts in protein engineering to design GPCR constructs suitable for crystallization (Cherezov et al., 2007; Warne et al., 2009; Chun et al., 2012; Katritch et al., 2013; Stevens et al., 2013; P\u00e1ndy-Szekeres et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to structural studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "6869c4b7-4b8b-407e-b6a8-2f703b1474b2",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C5",
+      "claim": "Point mutations have shown to be especially important for thermostabilizing GPCRs and making them amenable for structure-based drug design applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations have shown to be especially important for thermostabilizing GPCR and making them amenable for structure-based drug design applications, which involve receptor co-crystallization with typically low-affinity hit or lead compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge in GPCR structural biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "bbb5607c-aa3b-4790-b7c0-e4d7c24f2448",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C6",
+      "claim": "Point mutations were used to thermostabilize \u03b21-adrenergic and A2A adenosine receptors in both agonist and antagonist bound states, resulting in more than a dozen structures for each receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, point mutations were used to thermostabilize \u03b21-adrenergic (ADRB1) and A2A adenosine (A2AAR) receptors in both agonist and antagonist bound states, resulting in more than a dozen structures for each receptor including co-crystals with ligands in a micromolar affinity range (Moukhametzianov et al., 2011; Christopher et al., 2013; Warne et al., 2008; Warne et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple structural studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "cef9535d-6b20-4e65-8093-2a993a3c767d",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C7",
+      "claim": "Structural and biophysical characterization of thermostabilized A2AAR led to structure-based discovery and optimization of preclinical candidates for Parkinson disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of thermostabilized A2AAR, structural and biophysical characterization of initial hits led to structure-based discovery and optimization of preclinical candidates for Parkinson disease (Langmead et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Langmead et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "96009bea-17ff-4889-8675-4af00c7241b3",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C8",
+      "claim": "Currently employed experimental identification of stabilizing mutations by alanine scanning or directed evolution approaches is a very resource consuming process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, currently employed experimental identification of stabilizing mutations by alanine scanning (Errey et al., 2015) or directed evolution approaches (Egloff et al., 2014; Schlinkmann et al., 2012) is a very resource consuming process, and only a few GPCRs have been successfully stabilized so far (reviewed in (Vaidehi et al., 2016)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental methods and reviews",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "c8e1b198-a213-41d1-a8fc-ee475c7060a0",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C9",
+      "claim": "Stabilizing mutations obtained by experimental methods have shown very limited transferability between different GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, stabilizing mutations obtained by these methods have shown very limited transferability between different GPCRs (Heydenreich et al., 2015; Serrano-Vega and Tate, 2009), requiring extensive stabilization campaigns to be performed for each individual receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Heydenreich et al., 2015 and Serrano-Vega and Tate, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "84535bf2-5a04-4e13-95b9-b5a948cf7e57",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C10",
+      "claim": "Existing in silico prediction tools for soluble proteins are not effective for GPCRs because they do not take into account peculiarities of the 7-transmembrane nature of the receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The already existing in silico prediction tools for soluble proteins (Kumar et al., 2006; Khan and Vihinen, 2010), however, are not effective for GPCRs because they do not take into account peculiarities of the 7-transmembrane (7TM) nature of the receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and logical inference about structural differences",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "dc824794-4d9d-4ba2-be87-e1a4a56bc539",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C11",
+      "claim": "Recently developed GPCR-specific methodologies have not resulted yet in successfully solved crystal structures of new GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, although some of the recently developed GPCR-specific methodologies can be successful in explaining known experimentally-derived mutations (Vaidehi et al., 2016; Bhattacharya et al., 2014), their success in prediction of new stabilizing mutations has been limited so far, and has not resulted yet in successfully solved crystal structures of new GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent methodologies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "2f927582-aca0-4599-8dd5-17195ae7f73f",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C12",
+      "claim": "CompoMug consists of four modules: knowledge-based, sequence-based, structure-based, and machine-learning-based.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we present a set of complementary approaches for predicting stabilizing mutations in GPCRs combined into a CompoMug tool (COMputational Predictions Of MUtations in GPCRs). CompoMug consists of four modules: knowledge-based, sequence-based, structure-based, and machine-learning-based, taking maximum advantage of accumulated structural and biophysical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the method in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "77d611ae-d979-4eb8-bd90-58221bf86446",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C13",
+      "claim": "CompoMug was applied to identify stabilizing point mutations for the 5-HT2C receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied CompoMug to identify stabilizing point mutations for the 5-HT2C receptor, which is an important pharmacological target for the treatment of obesity and neuropsychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the experimental application",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "016e5679-2477-4401-baa1-b0e83108e652",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C14",
+      "claim": "The 5-HT2C receptor is an important pharmacological target for the treatment of obesity and neuropsychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied CompoMug to identify stabilizing point mutations for the 5-HT2C receptor, which is an important pharmacological target for the treatment of obesity and neuropsychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about 5-HT2C receptor",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "de002dd8-17fb-4f30-a77b-bbfdccdf142e",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C15",
+      "claim": "Experimental assessment showed that 10 out of the 39 predicted mutations improved stability of the 5-HT2C receptor by more than 1.5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental assessment showed that 10 out of the 39 predicted mutations improved stability of the receptor by more than 1.5\u00b0C, and one mutation resulted in increase of the apparent melting temperature by up to ~8.8 \u00b1 1.3\u00b0C, which is among the highest reported improvements in thermostability by a single point mutation in GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "6f914a0a-b0fb-4f53-8040-c465c8447eaf",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C16",
+      "claim": "One mutation resulted in increase of the apparent melting temperature by up to ~8.8 \u00b1 1.3\u00b0C, which is among the highest reported improvements in thermostability by a single point mutation in GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental assessment showed that 10 out of the 39 predicted mutations improved stability of the receptor by more than 1.5\u00b0C, and one mutation resulted in increase of the apparent melting temperature by up to ~8.8 \u00b1 1.3\u00b0C, which is among the highest reported improvements in thermostability by a single point mutation in GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and comparison to literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "3aaa417c-6048-4e06-b3f7-9b3d2f7c67dc",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C17",
+      "claim": "Combinations of two or three mutations led to even higher thermostability gains, some of which were compatible with both agonist and antagonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, combinations of two or three mutations led to even higher thermostability gains, some of which were compatible with both agonist and antagonist binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "422a7a99-4c8d-465f-ba0c-cfe8466c01ec",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C18",
+      "claim": "The mutants predicted by CompoMug allowed for the determination of two 5-HT2C crystal structures in both agonist-bound and antagonist-bound complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the mutants predicted by CompoMug allowed for the determination of two 5-HT2C crystal structures in both agonist-bound and antagonist-bound complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "edbcc9a6-3525-4f3f-8970-c95c467f3a76",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C19",
+      "claim": "CompoMug already shows high 25% hit rate and utility in GPCR structural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While CompoMug already shows high 25% hit rate and utility in GPCR structural studies, further improvements are expected with accumulation of structural and mutation data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental results (10 out of 39 mutations)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "11563e58-5265-44f9-b459-e712578e4c37",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C20",
+      "claim": "The X3.41W mutation was first identified in the \u03b22 adrenergic receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the mutation of a residue in position 3.41 to Trp (X3.41W, where X stands for any residue, and superscript shows GPCRdb numbering (Isberg et al., 2015)), first identified in the \u03b22 adrenergic receptor (Roth et al., 2008), has been now tested in more than 20 receptors by the GPCR Network (Stevens et al., 2013) and has shown to increase stability for several of them, helping to solve crystal structures for at least six receptors so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Roth et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "bf16e014-ea69-4de3-a6e8-33b5ed30e620",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C21",
+      "claim": "The X3.41W mutation has been tested in more than 20 receptors by the GPCR Network and has shown to increase stability for several of them.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the mutation of a residue in position 3.41 to Trp (X3.41W, where X stands for any residue, and superscript shows GPCRdb numbering (Isberg et al., 2015)), first identified in the \u03b22 adrenergic receptor (Roth et al., 2008), has been now tested in more than 20 receptors by the GPCR Network (Stevens et al., 2013) and has shown to increase stability for several of them, helping to solve crystal structures for at least six receptors so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stevens et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "aca1788e-707b-4403-9598-3d14955830f2",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C22",
+      "claim": "The X3.41W mutation helped to solve crystal structures for at least six receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the mutation of a residue in position 3.41 to Trp (X3.41W, where X stands for any residue, and superscript shows GPCRdb numbering (Isberg et al., 2015)), first identified in the \u03b22 adrenergic receptor (Roth et al., 2008), has been now tested in more than 20 receptors by the GPCR Network (Stevens et al., 2013) and has shown to increase stability for several of them, helping to solve crystal structures for at least six receptors so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stevens et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "23f39bfe-042c-43d3-8644-969598b6b65b",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C23",
+      "claim": "Sodium ions play an important role in class A GPCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium ions play an important role in class A GPCR signaling (Katritch et al., 2014), and, therefore, modifications in the sodium-binding site, e.g. by D7.49N mutation, can decouple ligand binding from conformational changes in the intracellular side of the receptor (Katritch et al., 2014; Massink et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Katritch et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "3d1edf92-3ca8-481b-acc1-c74c8617acc4",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C24",
+      "claim": "Modifications in the sodium-binding site can decouple ligand binding from conformational changes in the intracellular side of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium ions play an important role in class A GPCR signaling (Katritch et al., 2014), and, therefore, modifications in the sodium-binding site, e.g. by D7.49N mutation, can decouple ligand binding from conformational changes in the intracellular side of the receptor (Katritch et al., 2014; Massink et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Katritch et al., 2014 and Massink et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "dfd81f8b-9ea5-4c5b-ae8e-7162064bd635",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C26",
+      "claim": "The training benchmark consists of 79 stabilizing point mutations and 923 non-stabilizing point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the training benchmark consists of 79 stabilizing point mutations and 923 non-stabilizing point mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the training data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "45b2964d-77b3-442d-bb9f-2e52713191f6",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C27",
+      "claim": "For the human AA2AR, turkey ADRB1, and rat NTS1 receptors CompoMug successfully predicts 20, 11, and 9 stabilizing mutations out of 39, 18, and 20 reported mutations in the transmembrane region.",
+      "claim_type": "EXPLICIT",
+      "source": "For the human AA2AR, turkey ADRB1, and rat NTS1 receptors CompoMug successfully predicts 20, 11, and 9 stabilizing mutations out of 39, 18, and 20 reported mutations in the transmembrane region, suggesting about 50% recall rate in this initial benchmark.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "f7ae199b-0d3f-434a-a628-cb84add6fa92",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C28",
+      "claim": "CompoMug suggests about 50% recall rate in the initial benchmark with alanine scanning data.",
+      "claim_type": "EXPLICIT",
+      "source": "For the human AA2AR, turkey ADRB1, and rat NTS1 receptors CompoMug successfully predicts 20, 11, and 9 stabilizing mutations out of 39, 18, and 20 reported mutations in the transmembrane region, suggesting about 50% recall rate in this initial benchmark.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the prediction results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "5cdc25f5-f020-4aec-a422-8e50ee5bd045",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C29",
+      "claim": "A total of 39 mutations predicted by CompoMug were tested on the apo 5-HT2C receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 39 mutations predicted by CompoMug (see Table 2) were tested on the apo 5-HT2C receptor, using the base construct with N- and C- termini truncations and BRIL fusion as described in Experimental Assays section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "807db6a0-23e2-4cb8-ace1-37b18e6df441",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C30",
+      "claim": "The C3607.45N point mutation increased the thermostability of the 5-HT2C receptor by 8.8 \u00b1 1.3\u00b0C in the initial CPM assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The most remarkable effect was observed for the C3607.45N point mutation predicted with the sequence-based module, which increased the thermostability of the receptor by 8.8 \u00b1 1.3\u00b0C in the initial CPM assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental CPM assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "794509de-eed6-4d26-a9bf-a02962b7f713",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C31",
+      "claim": "Other mutations showed a moderate effect on thermostability, increasing the apparent melting temperature by 1.5\u20133.9\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Other mutations showed a moderate effect on thermostability, increasing the apparent melting temperature by 1.5\u20133.9\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "a04819f5-5dfc-4412-8404-b9903ef1ab3a",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C32",
+      "claim": "Six out of ten successful mutations are substitutions to the hydrophobic residues (A, L, or V).",
+      "claim_type": "EXPLICIT",
+      "source": "Six out of ten mutations are substitutions to the hydrophobic residues (A, L, or V), three point mutations are substitutions to the polar or charged residues (T, N, or D), and one double mutation corresponds to an engineered disulfide bridge (see Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "7c8a7d57-4648-4e27-871d-f3b31ea8e1dd",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C33",
+      "claim": "Three point mutations are substitutions to the polar or charged residues (T, N, or D).",
+      "claim_type": "EXPLICIT",
+      "source": "Six out of ten mutations are substitutions to the hydrophobic residues (A, L, or V), three point mutations are substitutions to the polar or charged residues (T, N, or D), and one double mutation corresponds to an engineered disulfide bridge (see Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "a2bc6133-e882-4b06-9a99-9be323e92012",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C34",
+      "claim": "One double mutation corresponds to an engineered disulfide bridge.",
+      "claim_type": "EXPLICIT",
+      "source": "Six out of ten mutations are substitutions to the hydrophobic residues (A, L, or V), three point mutations are substitutions to the polar or charged residues (T, N, or D), and one double mutation corresponds to an engineered disulfide bridge (see Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "5ba8197c-a41c-408a-9f6c-8b3bbf2efd03",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C35",
+      "claim": "Improvements in aSEC and thermostability were well correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that improvements in aSEC and thermostability were well correlated, meaning that point mutations augmented both aSEC quality and apparent melting temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "280a4012-cce1-4ae4-8fa6-4f6ab226ba45",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C36",
+      "claim": "The maximal observed increase in Tm for combined mutations reached ~13\u00b0C for the triple mutation C3607.45N, G3627.47A, A1714.42L.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 6 shows (see Figure 6\u2014source data 1 for raw data), the tested combinations further improve thermostability of apo receptor, with the maximal observed increase in Tm reaching ~13\u00b0C for the triple mutation C3607.45N, G3627.47A, A1714.42L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "da5fa96e-b611-4961-92b1-1e66a77f52bc",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C37",
+      "claim": "Binding of antagonist mesulergine improved thermostability of the triple mutant by additional ~8\u00b0C, resulting in a total of 21\u00b0C increase in Tm, as compared to the apo base receptor construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, binding of antagonist mesulergine improved thermostability of this triple mutant by additional ~8\u00b0C, resulting in a total of 21\u00b0C increase in Tm, as compared to the apo base receptor construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "d5d0dbeb-d5f4-49f0-a6ed-3081806067db",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C38",
+      "claim": "The triple mutation C3607.45N, G3627.47A, A1714.42L was destabilized by binding of agonist ergotamine as compared to the apo mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this same triple mutation was destabilized by binding of agonist ergotamine as compared to the apo mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "60a699cb-9aa9-4967-b6fc-0b33f0ddfe72",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C39",
+      "claim": "The C3607.45N point mutation makes most substantial contribution to the stability of the apo and agonist-bound receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, while the C3607.45N point mutation makes most substantial contribution to the stability of the apo and agonist-bound receptor, the addition of most other point mutations (except for V2405.64A) predominantly stabilizes the antagonist-bound receptor conformation, which was previously less amenable to crystallization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "6b42a9a3-9884-41cc-ac88-3f6672c2b4ff",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C40",
+      "claim": "The addition of most other point mutations (except for V2405.64A) predominantly stabilizes the antagonist-bound receptor conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, while the C3607.45N point mutation makes most substantial contribution to the stability of the apo and agonist-bound receptor, the addition of most other point mutations (except for V2405.64A) predominantly stabilizes the antagonist-bound receptor conformation, which was previously less amenable to crystallization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "957bc713-5d78-4d83-8577-2974b4f46f63",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C41",
+      "claim": "The biggest contrast between agonist and antagonist bound state thermostability (~16\u00b0C) was observed for the quadruple mutant construct with an engineered disulfide bond (C3607.45N, G3627.47A, A982.49C/A1403.38C).",
+      "claim_type": "EXPLICIT",
+      "source": "The biggest contrast between agonist and antagonist bound state thermostability (~16\u00b0C) was observed for the quadruple mutant construct with an engineered disulfide bond (C3607.45N, G3627.47A, A982.49C/A1403.38C), suggesting that the introduction of the rigid covalent link between the TM2 and TM3 fixes receptor in the inactive conformational state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "d2be25eb-fa69-40ba-ae3d-c8f3142fc056",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C42",
+      "claim": "The introduction of the rigid covalent link between the TM2 and TM3 fixes receptor in the inactive conformational state.",
+      "claim_type": "EXPLICIT",
+      "source": "The biggest contrast between agonist and antagonist bound state thermostability (~16\u00b0C) was observed for the quadruple mutant construct with an engineered disulfide bond (C3607.45N, G3627.47A, A982.49C/A1403.38C), suggesting that the introduction of the rigid covalent link between the TM2 and TM3 fixes receptor in the inactive conformational state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and structural knowledge",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "dab6e3ce-de73-4fe8-9b4c-1d39ce5ada76",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C43",
+      "claim": "The predicted stabilizing point mutations made it possible to obtain first crystals of the 5-HT2C receptor in complex with an antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted stabilizing point mutations made it possible to obtain first crystals of the 5-HT2C receptor in complex with an antagonist, as well as to improve the diffraction of the agonist-bound crystals from >4 \u00c5 to <3.0 \u00c5, as described in our recent paper (Peng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peng et al., 2018",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "a2b72e87-bb44-4b59-8918-2f32210970b4",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C44",
+      "claim": "The predicted mutations improved the diffraction of the agonist-bound crystals from >4 \u00c5 to <3.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted stabilizing point mutations made it possible to obtain first crystals of the 5-HT2C receptor in complex with an antagonist, as well as to improve the diffraction of the agonist-bound crystals from >4 \u00c5 to <3.0 \u00c5, as described in our recent paper (Peng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peng et al., 2018",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "e75aefb8-b930-4604-9763-4d001cd6d9f2",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C45",
+      "claim": "The single C3607.45N mutation was sufficient to solve structures in complex with agonist ergotamine (at 3.0 \u00c5 resolution), as well as antagonist ritanserin (at 2.7 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the single C3607.45N mutation was found as sufficient to solve structures in complex with agonist ergotamine (at 3.0 \u00c5 resolution), as well as antagonist ritanserin (at 2.7 \u00c5), which is the first antagonist-bound structure of a serotonin receptor (Peng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peng et al., 2018",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "3430044d-4fbf-4554-915b-3f915ebd15b1",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C46",
+      "claim": "The ritanserin-bound 5-HT2C structure is the first antagonist-bound structure of a serotonin receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the single C3607.45N mutation was found as sufficient to solve structures in complex with agonist ergotamine (at 3.0 \u00c5 resolution), as well as antagonist ritanserin (at 2.7 \u00c5), which is the first antagonist-bound structure of a serotonin receptor (Peng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peng et al., 2018",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "5605b7d4-caea-4f37-879b-03821eebba45",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C47",
+      "claim": "The A1714.42L mutation could form more favorable hydrophobic contacts with surrounding residues.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the A1714.42 residue, located at the intracellular side of TM4, is surrounded by hydrophobic side chains of Y902.41, F912.42, I1754.46, and its replacement with a longer Leu side chain could form more favorable hydrophobic contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis of the crystal structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "8d031a52-0038-4d22-86ec-3e225be3d610",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C48",
+      "claim": "The G1844.55A mutation could have a stabilizing effect on the \u03b1-helix conformation and more favorable hydrophobic contacts with the lipid environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The G1844.55 in the middle of TM4 is exposed to the lipid membrane and does not form any contacts with the side chains, and its replacement with Ala could have a stabilizing effect on the \u03b1-helix conformation and more favorable hydrophobic contacts with the lipid environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis and knowledge of helix stability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "fc5adc14-7634-44d2-9d68-1e2d2a7f7e3b",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C49",
+      "claim": "The V2405.64A mutation may reduce unfavorable contacts with predominantly charged and polar lipid headgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "The V2405.64 residue does not form any specific contacts and it is located close to the membrane intracellular boundary, so the V2405.64A mutation may reduce unfavorable contacts with predominantly charged and polar lipid headgroups in this environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis and knowledge of lipid-protein interactions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "59702319-e29f-4de5-ad89-e7ca81fcfca1",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C50",
+      "claim": "The L3336.57V mutation might improve stability by forming more favorable hydrophobic contacts with lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The L3336.57 residue points to the membrane and does not form any specific contacts with the neighboring side chains, and the L3336.57V might improve stability by forming more favorable hydrophobic contacts with lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "744b7768-569e-447f-b82f-f34908e7c53d",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C51",
+      "claim": "N7.45 plays important role in the sodium coordination as a part of the sodium binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The C3607.45 amino acid is rarely observed at the 7.45 position, and it is known that N7.45 plays important role in the sodium coordination as a part of the sodium binding pocket (Katritch et al., 2014; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Katritch et al., 2014 and Liu et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "0ca77dd0-787d-42d2-95af-3e4ea72ec862",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C52",
+      "claim": "The C3607.45N point mutation restores the conserved residue in the sodium binding pocket and improves the stability of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C3607.45N point mutation restores the conserved residue in the sodium binding pocket and improves the stability of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis and experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "5b1d8f3d-ab83-4851-92aa-f224ce588197",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C53",
+      "claim": "The integrity of the sodium binding pocket in 5-HT2C receptor plays an important role for the overall receptor stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that this point mutation was necessary to obtain the crystallographic structures of the 5-HT2C receptor in both agonist-bound and antagonist-bound conformations, while D992.50N was detrimental, the integrity of the sodium binding pocket in 5-HT2C receptor apparently plays an important role for the overall receptor stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "2c1a8696-5e11-4109-9502-050fc714dbb8",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C54",
+      "claim": "The G3627.47L/A point mutations improve the stability of the receptor by stabilizing the secondary structure of TM7 and ameliorating hydrophobic interactions with the membrane environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The G3627.47 residue is partially exposed to the lipid environment, thus both the G3627.47L/A point mutations improve the stability of the receptor by stabilizing the secondary structure of TM7 and ameliorating hydrophobic interactions with the membrane environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "637b5eb1-a67b-4c82-b0ca-f921a727f182",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C55",
+      "claim": "The I3748.49D/T point mutations may form salt bridges or polar interactions resulting in improved stability of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The I3748.49 residue is surrounded by positively charged K83ICL1, K3738.48, R3768.51, and R3778.52 side chains, so the I3748.49D/T point mutations may form salt bridges or polar interactions resulting in improved stability of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "63da3292-2d7f-4d5a-9d9a-b189ace411b0",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C56",
+      "claim": "The double mutant A982.49C/A1403.38C can form a disulfide bridge between TM2 and TM3, apparently fixing the inactive conformation of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the double mutant A982.49C/A1403.38C can form a disulfide bridge between TM2 and TM3, apparently fixing the inactive conformation of the receptor. The latter observation is corroborated by the highest differential in thermostability between antagonist and agonist bound states measured for the combination construct containing the A982.49C/A1403.38C mutant (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis and supported by experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "533db1ca-8831-4005-9bfb-4b847fe301ab",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C57",
+      "claim": "CompoMug achieved a very high success rate of 25% for mutations with substantial, more than 1.5\u00b0C, improvement in Tm values.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 5-HT2C case, CompoMug achieved a very high success rate of 25% for mutations with substantial, more than 1.5\u00b0C, improvement in Tm values, which is 5 to 15 times higher than corresponding hit rates found in the experimental alanine mutagenesis approach for the adenosine or endothelin type B receptors (Lebon et al., 2011; Okuta et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental results and compared to literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "e9fc46f5-e35b-484e-ad53-a67b89339062",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C58",
+      "claim": "CompoMug's success rate is 5 to 15 times higher than corresponding hit rates found in the experimental alanine mutagenesis approach for the adenosine or endothelin type B receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 5-HT2C case, CompoMug achieved a very high success rate of 25% for mutations with substantial, more than 1.5\u00b0C, improvement in Tm values, which is 5 to 15 times higher than corresponding hit rates found in the experimental alanine mutagenesis approach for the adenosine or endothelin type B receptors (Lebon et al., 2011; Okuta et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with literature data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "9c2b7019-2748-4fce-a9d0-f6a28cb0d013",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C59",
+      "claim": "Each module of CompoMug is important and can additively contribute to the discovery of key stabilizing mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our first results suggest that each module of CompoMug is important and can additively contribute to the discovery of key stabilizing mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from analysis of results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "f2b4f3cb-7ed0-4503-bc3b-2e5e925da446",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C60",
+      "claim": "More than half of the tested point mutations (23 out of 39) came from the sequence-based module.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of the tested point mutations (23 out of 39) came from the sequence-based module, with 6 of them yielding increased thermostability of the receptor, and 8 of them showing neutral effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "b51080c2-8602-40d4-a38e-11b824e6957e",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C61",
+      "claim": "Six mutations from the sequence-based module yielded increased thermostability of the receptor, and 8 of them showed neutral effect.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of the tested point mutations (23 out of 39) came from the sequence-based module, with 6 of them yielding increased thermostability of the receptor, and 8 of them showing neutral effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "f357cbb9-21e4-4772-9ad5-7580462e4a0f",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C62",
+      "claim": "The highest improvement in thermostability was observed for the C3607.45N point mutation predicted by the sequence-based module.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the advantages of this module is that mutation candidates have a lower probability to damage the receptor, because the candidate amino acid naturally occurs in other GPCRs. Moreover, in the particular case of 5-HT2C receptor, the highest improvement in thermostability was observed for the C3607.45N point mutation predicted by the sequence-based module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "609a8368-8483-4950-bd51-988b5e678b44",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C63",
+      "claim": "Nine tested point mutations were selected using the structure-based module, and two of them increased the apparent melting temperature of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 5-HT2C test case, nine tested point mutations were selected using the structure-based module, and two of them (I3748.49D and A982.49C/A1403.38C) increased the apparent melting temperature of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "9c19d315-e4fb-48da-ac43-278d222df025",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C64",
+      "claim": "The structure-based module can be very effective in differentiating between active and inactive state stabilizing conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the structure-based module can be very effective in differentiating between active and inactive state stabilizing conformations, and indeed the A982.49C/A1403.38C disulfide bond 5-HT2C was shown to exclusively stabilize antagonist-bound complexes, but destabilize an agonist-bound complex (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "396105ef-aef9-41ec-b3b2-c877a6d3a5c5",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C65",
+      "claim": "The A982.49C/A1403.38C disulfide bond exclusively stabilizes antagonist-bound complexes, but destabilizes an agonist-bound complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the structure-based module can be very effective in differentiating between active and inactive state stabilizing conformations, and indeed the A982.49C/A1403.38C disulfide bond 5-HT2C was shown to exclusively stabilize antagonist-bound complexes, but destabilize an agonist-bound complex (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "5608714e-445b-462c-bbbf-d538df4fa1cf",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C66",
+      "claim": "Possibility to differentially stabilize GPCRs in agonist or antagonist-bound states was previously shown by experimental alanine mutagenesis study for the A2A receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, possibility to differentially stabilize GPCRs in agonist or antagonist-bund states was shown by experimental alanine mutagenesis study for the A2A receptor (Magnani et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Magnani et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "056ac527-076a-4c3a-a78f-a8a45a0591a5",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C67",
+      "claim": "Eight point mutations were selected by the machine learning module.",
+      "claim_type": "EXPLICIT",
+      "source": "We used eight point mutations selected by this module, of which four point mutations also showed high scores in the sequence-based module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "a71d79c7-5efa-48a7-91e1-907a50a71189",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C68",
+      "claim": "Four point mutations from the machine learning module also showed high scores in the sequence-based module.",
+      "claim_type": "EXPLICIT",
+      "source": "We used eight point mutations selected by this module, of which four point mutations also showed high scores in the sequence-based module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "1a9fddc1-f214-4f88-9d4d-51050b8d7939",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C69",
+      "claim": "Three of the machine learning point mutations improved the thermostability of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the ML point mutations improved the thermostability of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "6c49bcb6-7b7b-4d7d-bcac-4e7dfa29ba6e",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C70",
+      "claim": "Most of the successful mutations for 5-HT2C were predicted by only one of the modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our results suggest that most of the successful mutations for 5-HT2C were predicted by only one of the modules, and overlap in module predictions did not correlate with improved chances for the successful mutation, at least in this test case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "7686226d-e9a9-49b3-8050-3e33a68eef5c",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C71",
+      "claim": "Overlap in module predictions did not correlate with improved chances for the successful mutation in the 5-HT2C test case.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our results suggest that most of the successful mutations for 5-HT2C were predicted by only one of the modules, and overlap in module predictions did not correlate with improved chances for the successful mutation, at least in this test case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "d83adefc-199b-41ff-9417-8686d91dc563",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C72",
+      "claim": "CompoMug is being applied to a number of GPCR targets, showing consistently high hit rates and helping structure determination of several GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CompoMug tool is being applied to a number of GPCR targets, showing consistently high hit rates and helping structure determination of several GPCRs, including non-class A receptors (unpublished results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ongoing work",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "fa303713-bdbb-4321-9e09-1d3e81471d71",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C73",
+      "claim": "Structure-based and sequence-based modules of CompoMug can be applied to other membrane proteins families.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, structure-based and sequence-based modules of CompoMug in their current form can be also applied to other membrane proteins families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "1b5e7927-13da-4441-a55d-e5247d79a621",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C74",
+      "claim": "CompoMug predictions resulted in 10 new stabilizing mutations for the 5-HT2C receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we present CompoMug - a computational tool to predict stabilizing point mutations in GPCRs. The four modules of CompoMug synergistically use different types of information on known transferable mutations, natural sequence variations, structural interactions, and machine learning of a large dataset of GPCR mutations, respectively, to maximize success rate of predictions. Applied to the 5-HT2C receptor, CompoMug helped us to identify as many as 10 stabilizing mutations (25% hit rate), supporting the importance of all four modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "a5b4f37e-c478-45f0-8aa5-eee087f0e9f0",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C75",
+      "claim": "A triple mutant C3607.45N, G3627.47A, A1714.42L had its thermostability improved by as much as ~13\u00b0C, as compared to the base construct apo receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a triple mutant C3607.45N, G3627.47A, A1714.42L had its thermostability improved by as much as ~13\u00b0C, as compared to the base construct apo receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "98863946-b732-435a-8882-10cae30c0007",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C76",
+      "claim": "The C3607.45N mutation in the optimal fusion construct yielded crystal structures of the 5-HT2C receptor in two distinct conformations, agonist-bound active like and antagonist-bound inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this C3607.45N mutation in the optimal fusion construct yielded crystal structures of the 5-HT2C receptor in two distinct conformations, agonist-bound active like and antagonist-bound inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "e0bb867a-60b0-493f-8ee4-8710dcb41098",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "claim_id": "C77",
+      "claim": "Performance of CompoMug modules can be further improved via the feedback loop with newly generated experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "CompoMug is being applied to other receptors of the GPCR family, and performance of its modules can be further improved via the feedback loop with newly generated experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future improvements",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CompoMug, a four-module computational tool for predicting stabilizing GPCR mutations, achieved a 25% hit rate (10/39 mutations) when applied to 5-HT2C receptor, with the best single mutation (C360^7.45N) improving thermostability by 8.8 \u00b1 1.3\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C16, C19, C29, C30, and C74 provide converging experimental evidence with quantified thermostability measurements and clear success metrics. The 25% hit rate is directly calculated from experimental data (10 successful mutations out of 39 tested), and the C360^7.45N mutation shows reproducible, substantial thermostability improvement with reported error bars.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "1cad842c-fc8d-42a1-ad67-2092c323d614",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Combining predicted mutations yielded additive thermostability improvements, with the triple mutant (C360^7.45N, G362^7.47A, A171^4.42L) showing ~13\u00b0C improvement in apo form and ~21\u00b0C total improvement when bound to antagonist mesulergine, though agonist ergotamine destabilized this same mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, C38, and C75 are supported by experimental CPM assay data shown in Figure 6, demonstrating clear additive effects and ligand-dependent stabilization patterns. The differential stabilization by agonist versus antagonist provides mechanistic insight into conformational state preferences, though the manuscript notes expected error does not exceed 1.2\u00b0C without providing individual measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "ed3badd0-bf0b-4692-9346-b8007de62271",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CompoMug-predicted mutations enabled crystallization and structure determination of 5-HT2C receptor in both agonist-bound (ergotamine, 3.0 \u00c5) and antagonist-bound (ritanserin, 2.7 \u00c5) states, with the single C360^7.45N mutation sufficient for both structures, representing the first antagonist-bound serotonin receptor structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C43-C46, and C76 are supported by citation to Peng et al., 2018, which describes the structural work. The improvement from >4 \u00c5 to <3.0 \u00c5 resolution for agonist-bound crystals and successful antagonist-bound crystallization demonstrate clear utility of the predictions, though the structural paper is cited rather than fully presented here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "55879626-961b-4350-9def-1bca88766ca3",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CompoMug's 25% success rate for mutations improving Tm by >1.5\u00b0C is 5-15 times higher than hit rates from experimental alanine mutagenesis approaches for adenosine or endothelin type B receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C58 are supported by comparison with published alanine scanning data (Lebon et al., 2011; Okuta et al., 2016). The 25% hit rate is directly calculated from experimental results (10/39), and the comparison to literature values provides appropriate context, though the comparison is across different receptor systems which may have inherent differences in mutagenesis success rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "cd629c0a-1b7a-4e08-912c-9900c27b32ba",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In benchmark testing on three GPCRs with known alanine scanning data (AA2AR, ADRB1, NTS1), CompoMug successfully predicted 20/39, 11/18, and 9/20 stabilizing mutations respectively, suggesting approximately 50% recall rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 are supported by comparison with published experimental data. However, this benchmark is limited to alanine mutations only (X\u2192A and A\u2192L), which restricts the generalizability of the recall rate estimate. The 50% recall is reasonable given the constraints, but the benchmark does not test the full predictive capability of CompoMug for all mutation types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "b49f5280-30cc-4d86-a00f-9e3d7764c5a6",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among the 10 successful mutations, 6 were substitutions to hydrophobic residues (A, L, V), 3 to polar/charged residues (T, N, D), and 1 was an engineered disulfide bridge, with improvements in aSEC quality correlating well with thermostability gains of 1.5-3.9\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 provide descriptive analysis of the experimental results with clear categorization of mutation types. The correlation between aSEC quality and thermostability is stated as an observation from the data, though no quantitative correlation coefficient is provided. The characterization is straightforward and supported by Table 2 data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "3041d697-1c6e-487a-9b73-6681b403c9b5",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The C360^7.45N mutation contributes most substantially to apo and agonist-bound stability, while additional mutations predominantly stabilize antagonist-bound conformations, with the quadruple mutant containing engineered disulfide A98^2.49C/A140^3.38C showing the largest agonist-antagonist differential (~16\u00b0C), suggesting it fixes the inactive state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C56 are supported by experimental data in Figure 6 showing differential thermostability across ligand-bound states. The interpretation that the disulfide bridge fixes the inactive conformation is reasonable given the structural location between TM2 and TM3 and the large differential stabilization, though this is somewhat inferential rather than directly demonstrated through structural or functional assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "92c2149e-5f3e-4e59-884e-0eb408335436",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structural analysis of the crystallized 5-HT2C receptor reveals that successful mutations improve stability through mechanisms including enhanced hydrophobic contacts (A171^4.42L, G184^4.55A, L333^6.57V), reduced unfavorable lipid interactions (V240^5.64A), restoration of the conserved sodium binding pocket (C360^7.45N), helix stabilization (G362^7.47L/A), and formation of new ionic interactions (I374^8.49D/T).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C55 provide post-hoc structural rationalizations based on the solved crystal structure. While these explanations are plausible and consistent with structural biology principles, they are largely inferential and not experimentally validated. The manuscript uses tentative language ('could form', 'may reduce', 'might improve'), indicating these are hypotheses rather than demonstrated mechanisms. No mutagenesis studies were performed to test these specific mechanistic proposals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of module contributions shows that each CompoMug module (knowledge-based, sequence-based, structure-based, machine-learning) independently contributes successful predictions: sequence-based (6/23 successful), structure-based (2/9 successful including state-selective mutations), and machine-learning (3/8 successful), with most successful mutations predicted by only one module and no correlation between module overlap and success rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C71 provide detailed analysis of which modules contributed successful predictions, supported by experimental data in Table 2. The observation that module overlap did not correlate with success is explicitly stated for the 5-HT2C case (C70, C71), though this is based on a single test case and may not generalize. The finding that different modules contribute non-overlapping predictions supports the multi-module design, though statistical testing of module performance differences is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "c7624bc4-17f7-44e8-b822-e8870cfe8f1a",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The machine learning training benchmark consists of 79 stabilizing and 923 non-stabilizing point mutations from three GPCRs (NTS1, AA2AR, ADRB1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 directly describes the training data composition. However, the manuscript notes that non-stabilizing mutations include alanine mutations not reported as stabilizing, which may introduce false negatives if some were filtered due to low expression rather than reduced stability. This limitation is acknowledged but could affect model training quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "e9c4f35b-046c-4c9c-93c1-97aa4dc15128",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CompoMug is being applied to additional GPCR targets with consistently high hit rates, helping structure determination of several GPCRs including non-class A receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 describes ongoing unpublished work without providing data, success rates, or specific examples. While this suggests broader applicability, it cannot be evaluated without the actual results. This is a statement of work in progress rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "c28228e6-6247-4f82-af52-67bbdfc1a9c3",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CompoMug's structure-based and sequence-based modules can potentially be applied to other membrane protein families, and performance can be further improved through feedback loops with newly generated experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73 and C77 are speculative statements about future applications and improvements. C73 notes that 'in principle' the modules could be applied to other families but provides no validation. C77 discusses potential improvements but does not demonstrate them. These are reasonable prospects but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GPCRs represent the largest transmembrane protein family comprising >25% of therapeutic targets, but their high conformational flexibility and low thermostability present challenges for structural characterization, requiring protein engineering including point mutations for all ~50 solved GPCR structures except rhodopsin. Current experimental approaches (alanine scanning, directed evolution) are resource-intensive with limited transferability, while existing computational tools for soluble proteins or GPCR-specific methods have not yet enabled new GPCR structure determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 and C14 establish the background and motivation, supported by appropriate citations to the GPCR literature. These are well-established facts in the field rather than novel findings. The characterization of existing methods' limitations (C8-C11) is supported by citations and provides appropriate context for the new method, though some statements are somewhat general.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "9842d3f7-18ab-4617-aa58-dd01ad27c5af",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The X3.41W mutation, first identified in \u03b22 adrenergic receptor, has been tested in >20 receptors and helped solve structures for at least six receptors. Sodium binding site mutations can decouple ligand binding from intracellular conformational changes, reducing conformational heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 describe established knowledge about transferable mutations and sodium site function, supported by appropriate citations (Roth et al., 2008; Stevens et al., 2013; Katritch et al., 2014; Massink et al., 2015). These provide context for the knowledge-based module but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    },
+    {
+      "id": "018bd411-a491-4c6c-bb3e-6a7f1f408deb",
+      "content_id": "93b64ece-fb5c-458b-9b8f-3fb6e58aa0e2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Differential stabilization of GPCRs in agonist versus antagonist-bound states was previously demonstrated for A2A receptor by experimental alanine mutagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 cites prior work (Magnani et al., 2008) establishing precedent for state-selective stabilization. This provides context for the structure-based module's capability but is not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:09:55.312549Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2f927582-aca0-4599-8dd5-17195ae7f73f",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "77d611ae-d979-4eb8-bd90-58221bf86446",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "de002dd8-17fb-4f30-a77b-bbfdccdf142e",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "6f914a0a-b0fb-4f53-8040-c465c8447eaf",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "edbcc9a6-3525-4f3f-8970-c95c467f3a76",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "5cdc25f5-f020-4aec-a422-8e50ee5bd045",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "807db6a0-23e2-4cb8-ace1-37b18e6df441",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "1b5e7927-13da-4441-a55d-e5247d79a621",
+      "result_id": "19da219d-b8e5-46f8-9f05-52e5a5fb860b"
+    },
+    {
+      "claim_id": "280a4012-cce1-4ae4-8fa6-4f6ab226ba45",
+      "result_id": "1cad842c-fc8d-42a1-ad67-2092c323d614"
+    },
+    {
+      "claim_id": "da5fa96e-b611-4961-92b1-1e66a77f52bc",
+      "result_id": "1cad842c-fc8d-42a1-ad67-2092c323d614"
+    },
+    {
+      "claim_id": "d5d0dbeb-d5f4-49f0-a6ed-3081806067db",
+      "result_id": "1cad842c-fc8d-42a1-ad67-2092c323d614"
+    },
+    {
+      "claim_id": "a5b4f37e-c478-45f0-8aa5-eee087f0e9f0",
+      "result_id": "1cad842c-fc8d-42a1-ad67-2092c323d614"
+    },
+    {
+      "claim_id": "422a7a99-4c8d-465f-ba0c-cfe8466c01ec",
+      "result_id": "ed3badd0-bf0b-4692-9346-b8007de62271"
+    },
+    {
+      "claim_id": "dab6e3ce-de73-4fe8-9b4c-1d39ce5ada76",
+      "result_id": "ed3badd0-bf0b-4692-9346-b8007de62271"
+    },
+    {
+      "claim_id": "a2b72e87-bb44-4b59-8918-2f32210970b4",
+      "result_id": "ed3badd0-bf0b-4692-9346-b8007de62271"
+    },
+    {
+      "claim_id": "e75aefb8-b930-4604-9763-4d001cd6d9f2",
+      "result_id": "ed3badd0-bf0b-4692-9346-b8007de62271"
+    },
+    {
+      "claim_id": "3430044d-4fbf-4554-915b-3f915ebd15b1",
+      "result_id": "ed3badd0-bf0b-4692-9346-b8007de62271"
+    },
+    {
+      "claim_id": "98863946-b732-435a-8882-10cae30c0007",
+      "result_id": "ed3badd0-bf0b-4692-9346-b8007de62271"
+    },
+    {
+      "claim_id": "533db1ca-8831-4005-9bfb-4b847fe301ab",
+      "result_id": "55879626-961b-4350-9def-1bca88766ca3"
+    },
+    {
+      "claim_id": "e9fc46f5-e35b-484e-ad53-a67b89339062",
+      "result_id": "55879626-961b-4350-9def-1bca88766ca3"
+    },
+    {
+      "claim_id": "45b2964d-77b3-442d-bb9f-2e52713191f6",
+      "result_id": "cd629c0a-1b7a-4e08-912c-9900c27b32ba"
+    },
+    {
+      "claim_id": "f7ae199b-0d3f-434a-a628-cb84add6fa92",
+      "result_id": "cd629c0a-1b7a-4e08-912c-9900c27b32ba"
+    },
+    {
+      "claim_id": "794509de-eed6-4d26-a9bf-a02962b7f713",
+      "result_id": "b49f5280-30cc-4d86-a00f-9e3d7764c5a6"
+    },
+    {
+      "claim_id": "a04819f5-5dfc-4412-8404-b9903ef1ab3a",
+      "result_id": "b49f5280-30cc-4d86-a00f-9e3d7764c5a6"
+    },
+    {
+      "claim_id": "7c8a7d57-4648-4e27-871d-f3b31ea8e1dd",
+      "result_id": "b49f5280-30cc-4d86-a00f-9e3d7764c5a6"
+    },
+    {
+      "claim_id": "a2bc6133-e882-4b06-9a99-9be323e92012",
+      "result_id": "b49f5280-30cc-4d86-a00f-9e3d7764c5a6"
+    },
+    {
+      "claim_id": "5ba8197c-a41c-408a-9f6c-8b3bbf2efd03",
+      "result_id": "b49f5280-30cc-4d86-a00f-9e3d7764c5a6"
+    },
+    {
+      "claim_id": "60a699cb-9aa9-4967-b6fc-0b33f0ddfe72",
+      "result_id": "3041d697-1c6e-487a-9b73-6681b403c9b5"
+    },
+    {
+      "claim_id": "6b42a9a3-9884-41cc-ac88-3f6672c2b4ff",
+      "result_id": "3041d697-1c6e-487a-9b73-6681b403c9b5"
+    },
+    {
+      "claim_id": "957bc713-5d78-4d83-8577-2974b4f46f63",
+      "result_id": "3041d697-1c6e-487a-9b73-6681b403c9b5"
+    },
+    {
+      "claim_id": "d2be25eb-fa69-40ba-ae3d-c8f3142fc056",
+      "result_id": "3041d697-1c6e-487a-9b73-6681b403c9b5"
+    },
+    {
+      "claim_id": "63da3292-2d7f-4d5a-9d9a-b189ace411b0",
+      "result_id": "3041d697-1c6e-487a-9b73-6681b403c9b5"
+    },
+    {
+      "claim_id": "5605b7d4-caea-4f37-879b-03821eebba45",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "8d031a52-0038-4d22-86ec-3e225be3d610",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "fc5adc14-7634-44d2-9d68-1e2d2a7f7e3b",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "59702319-e29f-4de5-ad89-e7ca81fcfca1",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "744b7768-569e-447f-b82f-f34908e7c53d",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "0ca77dd0-787d-42d2-95af-3e4ea72ec862",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "5b1d8f3d-ab83-4851-92aa-f224ce588197",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "2c1a8696-5e11-4109-9502-050fc714dbb8",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "637b5eb1-a67b-4c82-b0ca-f921a727f182",
+      "result_id": "92c2149e-5f3e-4e59-884e-0eb408335436"
+    },
+    {
+      "claim_id": "9c2b7019-2748-4fce-a9d0-f6a28cb0d013",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "f2b4f3cb-7ed0-4503-bc3b-2e5e925da446",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "b51080c2-8602-40d4-a38e-11b824e6957e",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "f357cbb9-21e4-4772-9ad5-7580462e4a0f",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "609a8368-8483-4950-bd51-988b5e678b44",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "9c19d315-e4fb-48da-ac43-278d222df025",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "396105ef-aef9-41ec-b3b2-c877a6d3a5c5",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "056ac527-076a-4c3a-a78f-a8a45a0591a5",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "a71d79c7-5efa-48a7-91e1-907a50a71189",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "1a9fddc1-f214-4f88-9d4d-51050b8d7939",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "6c49bcb6-7b7b-4d7d-bcac-4e7dfa29ba6e",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "7686226d-e9a9-49b3-8050-3e33a68eef5c",
+      "result_id": "c34d13ba-e1d9-4bb5-b9c0-250a07a69caa"
+    },
+    {
+      "claim_id": "dfd81f8b-9ea5-4c5b-ae8e-7162064bd635",
+      "result_id": "c7624bc4-17f7-44e8-b822-e8870cfe8f1a"
+    },
+    {
+      "claim_id": "d83adefc-199b-41ff-9417-8686d91dc563",
+      "result_id": "e9c4f35b-046c-4c9c-93c1-97aa4dc15128"
+    },
+    {
+      "claim_id": "fa303713-bdbb-4321-9e09-1d3e81471d71",
+      "result_id": "c28228e6-6247-4f82-af52-67bbdfc1a9c3"
+    },
+    {
+      "claim_id": "e0bb867a-60b0-493f-8ee4-8710dcb41098",
+      "result_id": "c28228e6-6247-4f82-af52-67bbdfc1a9c3"
+    },
+    {
+      "claim_id": "226b3693-c1eb-4fb9-b55b-e3a076410990",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "1a3064fb-30e1-4640-b6fd-91102c353b8b",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "fe7881c5-7f65-4a82-8644-4b54cbd7a358",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "d5ff59d2-9adb-4de3-959e-9dbd8dbc1325",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "6869c4b7-4b8b-407e-b6a8-2f703b1474b2",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "bbb5607c-aa3b-4790-b7c0-e4d7c24f2448",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "cef9535d-6b20-4e65-8093-2a993a3c767d",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "96009bea-17ff-4889-8675-4af00c7241b3",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "c8e1b198-a213-41d1-a8fc-ee475c7060a0",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "84535bf2-5a04-4e13-95b9-b5a948cf7e57",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "dc824794-4d9d-4ba2-be87-e1a4a56bc539",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "016e5679-2477-4401-baa1-b0e83108e652",
+      "result_id": "334ecf6d-f795-4067-b11e-bb8a1c8d5bd5"
+    },
+    {
+      "claim_id": "11563e58-5265-44f9-b459-e712578e4c37",
+      "result_id": "9842d3f7-18ab-4617-aa58-dd01ad27c5af"
+    },
+    {
+      "claim_id": "bf16e014-ea69-4de3-a6e8-33b5ed30e620",
+      "result_id": "9842d3f7-18ab-4617-aa58-dd01ad27c5af"
+    },
+    {
+      "claim_id": "aca1788e-707b-4403-9598-3d14955830f2",
+      "result_id": "9842d3f7-18ab-4617-aa58-dd01ad27c5af"
+    },
+    {
+      "claim_id": "23f39bfe-042c-43d3-8644-969598b6b65b",
+      "result_id": "9842d3f7-18ab-4617-aa58-dd01ad27c5af"
+    },
+    {
+      "claim_id": "3d1edf92-3ca8-481b-acc1-c74c8617acc4",
+      "result_id": "9842d3f7-18ab-4617-aa58-dd01ad27c5af"
+    },
+    {
+      "claim_id": "5608714e-445b-462c-bbbf-d538df4fa1cf",
+      "result_id": "018bd411-a491-4c6c-bb3e-6a7f1f408deb"
+    }
+  ],
+  "comparisons": []
+}
